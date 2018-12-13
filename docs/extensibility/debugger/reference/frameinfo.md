@@ -1,5 +1,5 @@
 ---
-title: FRAMEINFO |Microsoft 文档
+title: FRAMEINFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4080a0d868f154136b11058abdf29948a353b0ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ed3ddbbbffb6e1a92e4c5038fad8f901ecf303e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834021"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 描述一个堆栈帧。  
@@ -65,7 +65,7 @@ public struct FRAMEINFO {
   
 ## <a name="members"></a>成员  
  m_dwValidFields  
- 中的标志的组合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)指定填充的字段的枚举。  
+ 中的标志的组合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)枚举，用于指定哪些字段填充。  
   
  m_bstrFuncName  
  与此堆栈帧关联的函数名称。  
@@ -74,37 +74,37 @@ public struct FRAMEINFO {
  与此堆栈帧关联的返回类型。  
   
  m_bstrArgs  
- 与此堆栈帧关联的函数自变量。  
+ 与此堆栈帧关联的函数的参数。  
   
  m_bstrLanguage  
- 实现该函数的语言。  
+ 在其中实现该函数使用的语言。  
   
  m_bstrModule  
  与此堆栈帧关联的模块名称。  
   
  m_addrMin  
- 最小的物理堆栈地址中。  
+ 最小物理堆栈地址中。  
   
  m_addrMAX  
- 最大的物理堆栈地址中。  
+ 最大物理堆栈地址中。  
   
  m_pFrame  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)对象，表示此堆栈帧。  
   
  m_pFrame  
- [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)表示包含此堆栈帧的模块的对象。  
+ [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)对象，表示包含此堆栈帧的模块。  
   
  m_fHasDebugInfo  
  非零 (`TRUE`) 如果给定范围中存在的调试信息。  
   
  m_fHasDebugInfo  
- 非零 (`TRUE`) 如果堆栈帧是与将不再有效的代码相关联。  
+ 非零 (`TRUE`) 将不再有效的代码与关联的堆栈帧时。  
   
  m_fHasDebugInfo  
- 非零 (`TRUE`) 如果堆栈帧由会话调试管理器 (SDM)。  
+ 非零 (`TRUE`) 如果会话调试管理器 (SDM) 进行批注的堆栈帧。  
   
 ## <a name="remarks"></a>备注  
- 此结构传递给[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)方法填充的。 此结构也包含在列表中包含[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)接口即，反过来，通过调用[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)方法。  
+ 此结构传递给[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)要填充的方法。 此结构也包含在一个列表，其中包含在[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)接口，反过来，通过调用将返回该值[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -113,7 +113,7 @@ public struct FRAMEINFO {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   

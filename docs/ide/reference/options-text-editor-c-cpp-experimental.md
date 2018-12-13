@@ -13,16 +13,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ddb535a61b654297c8b7d93ac13e1161725d769
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 3f5ddf5a42199c8097e982c6ddd8e559185787fb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234629"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672335"
 ---
 # <a name="options-text-editor-cc-experimental"></a>选项, 文本编辑器, C/C++, 实验
 
-通过更改这些选项，你可以在用 C 或 C++ 进行编程时更改与 IntelliSense 和浏览数据库有关的行为。 这些功能实际上是实验性的，且可能会在 Visual Studio 将来版本中进行修改或删除。 本主题介绍 Visual Studio 2017 中的各选项。 有关 Visual Studio 2015 的信息，请参阅[“选项”->“文本编辑器”->“C/C++”->“实验”](https://msdn.microsoft.com/library/mt591979.aspx)
+通过更改这些选项，你可以在用 C 或 C++ 进行编程时更改与 IntelliSense 和浏览数据库有关的行为。 这些功能实际上是实验性的，且可能会在 Visual Studio 将来版本中进行修改或删除。 本主题介绍 Visual Studio 2017 中的各选项。 对于 Visual Studio 2015，请在目录上方的选择器中选择“2015”。
 
 若要访问此属性页，请按 **Control+Q**，激活 `Quick Launch`，然后键入“实验”。 在键入前几个字母后，快速启动将查找该页面。 此外，还可以选择**工具 | 选项**，依次展开“文本编辑器”和“C/C++”，再选择“实验”。
 
@@ -57,4 +57,4 @@ Visual Studio 2017 版本 15.3 及更高版本：此功能当前被称为“启�
 ## <a name="see-also"></a>请参阅
 
 - [设置语言特定的编辑器选项](../../ide/reference/setting-language-specific-editor-options.md)
-- [在 C++ 中重构（VC 博客）](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [在 C++ 中重构（VC 博客）](https://blogs.msdn.microsoft.com/vcblog/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview/)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText |Microsoft 文档
+title: IDebugDocumentText2::GetText |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b5adaccf5a74119ee5e697c9dfd7b7ad46d6151
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe2b5ef3804c4ccfafbf164a8eb144e7822a6fdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905501"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
-从文档中的指定位置检索文本。  
+从文档中的指定位置检索的文本。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,13 +47,13 @@ int GetText(
   
 #### <a name="parameters"></a>参数  
  `pos`  
- [in]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)结构，指示要检索的文本的位置。  
+ [in]一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)结构，指示要检索的文本的位置。  
   
  `cMaxChars`  
- [in]最大的要检索的文本的字符数。  
+ [in]最大文本要检索的字符数。  
   
  `pText`  
- [在中，out]指向的缓冲区，则若要使用所需的文本填充的指针。 此缓冲区必须能够至少包含`cMaxChars`宽字符数。  
+ [in、 out]指向要填充所需的文本的缓冲区的指针。 此缓冲区必须至少包含`cMaxChars`宽字符数。  
   
  `pcNumChars`  
  [out]返回实际检索的字符的数。  
@@ -100,6 +100,6 @@ namespace Mynamespace
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

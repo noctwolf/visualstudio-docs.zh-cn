@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_ADDRESS |Microsoft 文档
+title: BP_LOCATION_CODE_ADDRESS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6d0972b4e326cabd00341db685a0b73c8c104c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd694d88348a13aefa1dfd7851c6897523009919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930032"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 描述在代码中的一个地址断点的位置。  
@@ -38,7 +38,7 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
   
 ## <a name="members"></a>成员  
  `bstrContext`  
- 断点的上下文，通常一个方法或函数的名称，作为调用堆栈上看到。  
+ 该断点的上下文，通常显示调用堆栈上的方法或函数名称。  
   
  `bstrModuleUrl`  
  包含断点的模块的 URL。  
@@ -47,10 +47,10 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
  包含断点的函数的名称。  
   
  `bstrAddress`  
- 断点，该表达式计算器才能将其绑定到的分析的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象。  
+ 所需断点，以将其绑定到的表达式计算器通过分析它的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象。  
   
 ## <a name="remarks"></a>备注  
- 此结构是的成员[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)作为联合的一部分的结构。  
+ 此结构是的成员[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)结构作为联合的一部分。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -59,7 +59,7 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

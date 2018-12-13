@@ -1,19 +1,19 @@
 ---
 title: 在 Unity 中使用 .NET 4.x
-author: dantogno
-ms.author: v-davian
+author: therealjohn
+ms.author: johmil
 ms.date: 08/29/2018
 ms.topic: conceptual
 ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: ee124d97ab423bf3e60d640908fbfaf056cdfb3b
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 294f3efe5e541a316a8bb90da07d75e9319e7983
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43224824"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027362"
 ---
 # <a name="using-net-4x-in-unity"></a>在 Unity 中使用 .NET 4.x
 
@@ -30,15 +30,15 @@ ms.locfileid: "43224824"
 
 若要启用 .NET 4.x 脚本运行时，请执行以下步骤：
 
-1. 通过选择“编辑”>“项目设置”>“播放机”，在 Unity 检查器中打开 PlayerSettings。
+1. 通过选择“Edit > Project Settings > Player”，在 Unity Inspector中打开 PlayerSettings。
 
-1. 在“配置”标题下，单击“脚本运行时版本”下拉列表，然后选择“.NET 4.x 等效”。 系统会提示重启 Unity。
+1. 在“Configuration”标题下，单击“Scripting Runtime Version”下拉列表，然后选择“.NET 4.x Equivalent”。 系统会提示重启 Unity。
 
 ![选择 .NET 4.x 等效项](media/vstu_scripting-runtime-version.png)
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>在 .NET 4.x 和 .NET Standard 2.0 配置文件之间进行选择
 
-一旦切换到 .NET 4.x 等效脚本运行时，可使用 PlayerSettings 中的下拉菜单指定“API 兼容级别”（“编辑”>“项目设置”>“播放机”）。 有两种选项：
+一旦切换到 .NET 4.x 等效脚本运行时，可使用 PlayerSettings 中的下拉菜单指定“Api Compatibility Level”（“Edit > Project Settings > Player”）。 有两种选项：
 
 * **.NET Standard 2.0**。 此配置文件与 .NET Foundation 发布的 [.NET Standard 2.0 配置文件](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)匹配。 Unity 建议新项目使用 .NET Standard 2.0。 它比 .NET 4.x 小，有利于尺寸受限的平台。 此外，Unity 承诺在 Unity 支持的所有平台上支持此配置文件。
 
@@ -58,7 +58,7 @@ ms.locfileid: "43224824"
 
 每次打开 Unity 项目时 Visual Studio 都会为其重新生成 .csproj 和 .sln 文件。 因此，无法直接在 Visual Studio 中添加程序集引用，因为它们将在重新打开项目时丢失。 相反，必须使用名为 mcs.rsp 的特殊文本文件：
 
-1. 在 Unity 项目的根资产目录中创建名为 mcs.rsp 的新文本文件。
+1. 在 Unity 项目的根Assets目录中创建名为 mcs.rsp 的新文本文件。
 
 1. 在空文本文件的第一行，输入：`-r:System.Net.Http.dll`，然后保存文件。 可将“System.Net.Http.dll”替换为可能缺少引用的任何包含的程序集。
 
@@ -74,7 +74,7 @@ ms.locfileid: "43224824"
 
 1. 浏览 NuGet 以查找要添加的兼容包（.NET Standard 2.0 或 .NET 4.x）。 此示例演示将 [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/)（一种用于处理 JSON 的常见包）添加到 .NET Standard 2.0 项目中。
 
-1. 单击“下载”按钮：
+1. 单击“Download”按钮：
 
     ![“下载”按钮](media/vstu_nuget-download.png)
 
@@ -82,11 +82,11 @@ ms.locfileid: "43224824"
 
 1. 在 zip 文件中，导航到 lib/netstandard2.0 目录并复制 Newtonsoft.Json.dll 文件。
 
-1. 在 Unity 项目的根资产文件夹中，创建一个名为“Plugins”的新文件夹。 插件是 Unity 中的特殊文件夹名称。 有关详细信息，请参阅 [Unity 文档](https://docs.unity3d.com/Manual/Plugins.html)。
+1. 在 Unity 项目的根资产文件夹中，创建一个名为“Plugins”的新文件夹。 Plugins是 Unity 中的特殊文件夹名称 有关详细信息，请参阅 [Unity 文档](https://docs.unity3d.com/Manual/Plugins.html)。
 
 1. 将 Newtonsoft.Json.dll 文件粘贴到 Unity 项目的“Plugins”目录中。
 
-1. 在 Unity 项目的“资产”目录中创建名为 link.xml 的文件，并添加以下 XML。  此操作将确保 Unity 的字节码去除过程在导出到 IL2CPP 平台时不会删除必要的数据。  虽然此步骤专用于此库，但在处理其他以类似方式使用反射的库时可能会遇到问题。  有关详细信息，请参阅有关此主题的 [Unity 文档](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
+1. 在 Unity 项目的“Assets”目录中创建名为 link.xml 的文件，并添加以下 XML。  此操作将确保 Unity 的字节码去除过程在导出到 IL2CPP 平台时不会删除必要的数据。  虽然此步骤专用于此库，但在处理其他以类似方式使用反射的库时可能会遇到问题。  有关详细信息，请参阅有关此主题的 [Unity 文档](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
 
     ```xml
     <linker>
@@ -159,7 +159,7 @@ Debug.Log($"Player health: {Health}");
 
 ### <a name="expression-bodied-members"></a>Expression-Bodied 成员
 
-使用 .NET 4.x 运行时中可用的较新 C# 语法，[Lambda 表达式](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)可替换函数主体，使它们更为简洁：
+使用 .NET 4.x 运行时中提供的新的 C# 语法，[Lambda 表达式](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)可替换函数主体，使它们更为简洁：
 
 ```csharp
 // .NET 3.5
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 将游戏导出到 iOS 等平台时，Unity 将使用其 IL2CPP 引擎将 IL“转换”为 C++ 代码，然后使用目标平台的本机编译器进行编译。 在此方案中，有几个不支持的 .NET 功能，例如反射的部分内容和使用 `dynamic` 关键字。 虽然可在自己的代码中使用这些功能，但使用第三方 DLL 和 SDK 时可能会遇到问题，这些 DLL 和 SDK 并非使用 Unity 和 IL2CPP 编写。 有关此主题的详细信息，请参阅 Unity 站点上的[脚本限制](https://docs.unity3d.com/Manual/ScriptingRestrictions.html)文档。
 
-此外，如以上 Json.NET 示例中所述，Unity 将尝试在 IL2CPP 导出过程中去除未使用的代码。  虽然这通常不是问题，但对于使用反射的库，它可能会意外地删除在导出时无法确定而在运行时可能被调用的属性或方法。  若要解决这些问题，请将 link.xml 文件添加到特定项目中，该项目包含不运行去除过程的程序集和命名空间的列表。  有关完整详细信息，请参阅[有关字节码去除的 Unity 文档](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
+此外，如之前 Json.NET 示例中所述，Unity 将尝试在 IL2CPP 导出过程中裁剪掉未使用的代码。  虽然这通常不是问题，但对于使用反射的库，它可能会意外地删除在导出时无法确定是否被调用而在运行时可能被调用的属性或方法。  若要解决这些问题，请添加一个 link.xml 文件到项目中，该文件中包含的程序集和命名空间列表不会执行裁剪过程。  有关完整详细信息，请参阅[有关字节码裁剪的 Unity 文档](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
 
 ## <a name="net-4x-sample-unity-project"></a>.NET 4.x 示例 Unity 项目
 

@@ -1,7 +1,7 @@
 ---
 title: Python 交互式窗口 (REPL)
 description: 如何在 Visual Studio 中使用 Python 代码的交互窗口 (REPL) 进行快速代码开发。
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2eeffea641fd6d571b8b682aebab7f7d0ff83a41
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8146e43a51e4d1634cbba78d789a3ef8cff99f95
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499063"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219921"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 交互窗口
 
@@ -82,7 +82,7 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 | --- | --- |
 | `$$` | 插入注释，用于注释会话中的代码。 |
 | `$attach` | 将 Visual Studio 调试器附加到 REPL 窗口进程以启用调试。 |
-| `$cls`, `$clear` | 清除编辑器窗口的内容，使历史记录和执行上下文保持不变。 |
+| `$cls`， `$clear` | 清除编辑器窗口的内容，使历史记录和执行上下文保持不变。 |
 | `$help` | 显示命令列表，或有关特定命令的帮助。 |
 | `$load` | 从文件加载命令并执行，直到完成。 |
 | `$mod` | 将当前范围切换为指定模块名称。 |

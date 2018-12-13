@@ -1,5 +1,5 @@
 ---
-title: 选择上下文对象 |Microsoft 文档
+title: 选择上下文对象 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,37 +14,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04ccc4a57ac7af144c134761119433b7533e9bec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f09bcb260f4edd09045f860ed08d951622e54a5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913158"
 ---
 # <a name="selection-context-objects"></a>选择上下文对象
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 使用全局选择上下文对象来确定在 IDE 中应显示的内容。 在 IDE 中的每个窗口可以推送到全局选择上下文自己选择上下文对象。 该窗口拥有焦点时，IDE 窗口中的值更新全局选择上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 使用的全局选择上下文对象来确定在 IDE 中应显示的内容。 在 IDE 中的每个窗口可以有其自己选择上下文对象推送到全局选定内容上下文。 当该窗口具有焦点时，IDE 使用一个窗口中的值更新全局选定内容上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。  
   
- 每个窗口框架或在 IDE 中的站点具有一个称为服务<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>。 由你放置在该窗口框架的 VSPackage 创建的对象必须调用`QueryService`方法以获取指向<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>接口。  
+ 每个窗口框架或 IDE 中的站点有一个名为服务<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>。 由你放置在窗口框架的 VSPackage 创建的对象必须调用`QueryService`方法以获取一个指向<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>接口。  
   
- 框架窗口可以保留部分可能会传播到全局选择上下文将在启动时从其选择上下文信息。 此功能可用于工具窗口可能具有以开头的空的选择。  
+ 框架窗口可以保留其选择上下文信息将在启动时传播到全局选定内容上下文的部分。 此功能非常有用的可能要开始针对空的所选的工具窗口。  
   
  修改 Vspackage 可以监视的全局选择上下文触发器事件。 Vspackage 可以通过实现来执行以下任务`IVsTrackSelectionEx`和<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>接口：  
   
--   更新层次结构中当前处于活动状态的文件。  
+- 更新层次结构中当前处于活动状态的文件。  
   
--   监视器更改为某些类型的元素。 例如，如果你的 VSPackage 使用特殊**属性**窗口中，你可以监视活动中的更改**属性**窗口，然后重新启动你的帐户在需要时。  
+- 监视器更改为某些类型的元素。 例如，如果你的 VSPackage 使用特殊**属性**窗口中，你可以监视处于活动状态的更改**属性**窗口，然后重新启动你在需要时。  
   
- 按以下顺序显示选定内容跟踪的典型的过程。  
+  按以下顺序显示了典型的选定内容跟踪过程。  
   
-1.  IDE 从新打开的窗口检索所选内容上下文，并将其放在全局选择上下文中。 如果选择上下文使用 HIERARCHY_DONTPROPAGATE 或 SELCONTAINER_DONTPROPAGATE，该信息都不会传播到全局上下文中。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。  
+1.  IDE 从新打开的窗口检索选定内容上下文，并将其放入全局选定内容上下文。 如果选定内容上下文使用 HIERARCHY_DONTPROPAGATE 或 SELCONTAINER_DONTPROPAGATE，该信息不会传播到全局上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。  
   
-2.  通知事件会传播至任何请求它们的 VSPackage。  
+2.  通知事件广播到任何请求它们的 VSPackage。  
   
-3.  VSPackage 作用于它接收通过执行活动，例如更新层次结构中，重新激活一个工具或其他类似的任务的事件。  
+3.  VSPackage 作用于它执行活动，例如更新层次结构中，重新激活一款工具，或者其他类似任务接收的事件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>   
- [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)   
- [选择和 IDE 中的货币](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
+ [在 Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)   
+ [所选内容和 IDE 中的货币](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [项目类型](../../extensibility/internals/project-types.md)

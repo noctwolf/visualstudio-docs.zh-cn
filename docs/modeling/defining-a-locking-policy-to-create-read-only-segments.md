@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828671"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定义锁定策略以创建只读段
-不可变性 API[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK 允许程序对锁定部分或全部域特定语言 (DSL) 模型，以便它可以读取但不是会更改。 无法使用此只读选项，例如，以便用户可以请求添加批注并查看 DSL 模型的同事，但可以禁止这些更改原始。
+Visual Studio 可视化和建模 SDK 的不可变性 API 允许程序锁定部分或全部域特定语言 (DSL) 模型，以便它可以读取但不是会更改。 无法使用此只读选项，例如，以便用户可以请求添加批注并查看 DSL 模型的同事，但可以禁止这些更改原始。
 
  此外，作为 DSL，作者可以定义*锁定策略。* 锁定策略定义哪些锁是允许、 不允许，或强制。 例如，当发布 DSL 时，您可以鼓励第三方开发人员能够扩展使用的新命令。 但也可以使用锁定策略以防止其更改模型的指定部分的只读状态。
 
@@ -71,14 +71,14 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>锁值
  可以在应用商店、 分区或单独的模型元素上设置锁。 锁是`Flags`枚举： 可以使用其值进行组合&#124;。
 
--   ModelElement 锁始终包含其分区锁。
+- ModelElement 锁始终包含其分区锁。
 
--   锁分区始终包含在存储区的锁。
+- 锁分区始终包含在存储区的锁。
 
- 无法设置锁分区上或存储并在同一时间禁用某个元素上的锁。
+  无法设置锁分区上或存储并在同一时间禁用某个元素上的锁。
 
 |“值”|这意味着如果`IsLocked(Value)`为 true|
-|-----------|------------------------------------------|
+|-|-|
 |无|没有限制。|
 |属性|不能更改域属性的元素。 这不适用于生成的域类在关系中的角色的属性。|
 |添加|不能在分区中创建新元素和链接或存储。<br /><br /> 不适用于`ModelElement`。|
@@ -142,7 +142,6 @@ namespace Company.YourDsl.DslPackage // Change
       return Environment.UserName == "aUser"
            ? proposedLocks : Locks.All;
     }
-
 ```
 
  若要确保用户始终可以删除元素，即使其他代码调用 `SetLocks(Lock.Delete):`

@@ -9,31 +9,31 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 403b85ba7c5fc45a2809f695ce038a4e1576c93a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d2c58579cce95c3117aa7653d62733f4e297bcc4
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382534"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966461"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>演练：调试访问模型的文本模板
 当您修改或在域特定语言解决方案中添加文本模板时，可能会收到错误，当引擎转换模板源代码或对其进行编译生成的代码。 下面的演练演示了一些可以执行的操作来调试文本模板。
 
 > [!NOTE]
->  详细了解文本模板一般情况下，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 有关调试文本模板的详细信息，请参阅[演练： 调试文本模板](http://msdn.microsoft.com/Library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)。
+>  详细了解文本模板一般情况下，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 有关调试文本模板的详细信息，请参阅[演练： 调试文本模板](debugging-a-t4-text-template.md)。
 
 ## <a name="creating-a-domain-specific-language-solution"></a>创建域特定语言解决方案
  在此过程中，你创建域特定语言解决方案具有以下特征：
 
--   名称： DebuggingTestLanguage
+- 名称： DebuggingTestLanguage
 
--   解决方案模板： 最小语言
+- 解决方案模板： 最小语言
 
--   文件扩展名：.ddd
+- 文件扩展名：.ddd
 
--   公司名称： Fabrikam
+- 公司名称： Fabrikam
 
- 有关创建域特定语言解决方案的详细信息，请参阅[如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+  有关创建域特定语言解决方案的详细信息，请参阅[如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 ## <a name="creating-a-text-template"></a>创建文本模板
  将文本模板添加到你的解决方案。

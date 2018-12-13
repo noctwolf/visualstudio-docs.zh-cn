@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3cdffcb5d71d5caac11cbbb0882b79526862bffa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919322"
 ---
 # <a name="develop-tests-from-a-model"></a>基于模型开发测试
 可以使用要求模型和体系结构模型来帮助组织系统及其组件的测试。 这种做法有助于确保你测试了对于用户和其他利益干系人而言非常重要的要求，并可帮助你在要求发生变化时快速更新测试。 如果你使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，还可以维护模型和测试之间的链接。
@@ -59,19 +59,19 @@ ms.locfileid: "44279851"
 
 ###### <a name="to-link-tests-to-a-use-case"></a>将测试链接到用例
 
-1.  在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，创建一个要 求并使测试套件基于该需求。
+1. 在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，创建一个要 求并使测试套件基于该需求。
 
-     所创建的要求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作项。 它可以是用户情景、要求或用例工作项，具体取决于项目在 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中使用的过程模板。 有关详细信息，请参阅[有关敏捷工具和敏捷项目管理](/azure/devops/boards/backlogs/overview?view=vsts)。
+    所创建的要求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作项。 它可能是用户情景、 要求或用例工作项，具体取决于你的项目使用与 Team Foundation 的过程模板。 有关详细信息，请参阅[有关敏捷工具和敏捷项目管理](/azure/devops/boards/backlogs/overview?view=vsts)。
 
-2.  将要求工作项链接到模型中的一个或多个用例。
+2. 将要求工作项链接到模型中的一个或多个用例。
 
-     在用例图中，右键单击一个用例，然后单击**链接到工作项**。
+    在用例图中，右键单击一个用例，然后单击**链接到工作项**。
 
-3.  添加到测试套件（即验证用例的测试用例）。
+3. 添加到测试套件（即验证用例的测试用例）。
 
- 通常，每个用户情景或要求工作项将链接到模型中的多个用例，且每个用例将链接到多个用户情景或要求。 这是因为，每个用户情景或需求包括一组开发多个用例的任务。 例如，你可以在项目的早期迭代中开发基本用户情景，客户可以从用户情景的目录中选择项并进行提交。 在后期迭代中，情景可以是用户在完成订单时支付的款项以及供应商在发送货物后收到的金额。  每个情景都向“订货”用例的后置条件中添加一个子句。
+   通常，每个用户情景或要求工作项将链接到模型中的多个用例，且每个用例将链接到多个用户情景或要求。 这是因为，每个用户情景或需求包括一组开发多个用例的任务。 例如，你可以在项目的早期迭代中开发基本用户情景，客户可以从用户情景的目录中选择项并进行提交。 在后期迭代中，情景可以是用户在完成订单时支付的款项以及供应商在发送货物后收到的金额。  每个情景都向“订货”用例的后置条件中添加一个子句。
 
- 可以将后置条件的子句写入用例图上的单独注释，从而创建从要求到这些子句的单独链接。 可以将每个注释链接到要求工作项，并将注释链接到关系图上的用例。
+   可以将后置条件的子句写入用例图上的单独注释，从而创建从要求到这些子句的单独链接。 可以将每个注释链接到要求工作项，并将注释链接到关系图上的用例。
 
 ### <a name="base-tests-on-the-requirements-types"></a>使测试基于要求类型
  需求模型的类型（即类、接口和枚举）依据用户对其业务的考虑和传达方式来描述概念和关系。 不包括仅与系统的内部设计有关的类型。
@@ -130,7 +130,7 @@ Assert (countAfter == countBefore = 1);
 
  从测试的角度来看，可以将需求模型看做是测试的简略形式。 因此，在整个项目中维护测试和模型之间的关系非常重要。
 
-##  <a name="Attaching"></a> 附加到模型元素的测试用例
+## <a name="Attaching"></a> 附加到模型元素的测试用例
  如果你的项目使用 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]，则你可以将测试链接到模型中的元素。 这样你便可以快速找到受要求中的更改影响的测试，并且可帮助你跟踪要求的实现程度。
 
  你可以将测试链接到所有类型的元素。 以下是一些示例。
@@ -147,15 +147,15 @@ Assert (countAfter == countBefore = 1);
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>将测试链接到模型元素或关系
 
-1.  在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，创建一个要 求并使测试套件基于该需求。
+1. 在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，创建一个要 求并使测试套件基于该需求。
 
-     所创建的要求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作项。 它可以是用户情景、要求或用例工作项，具体取决于项目在 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中使用的过程模板。 有关详细信息，请参阅[有关敏捷工具和敏捷项目管理](/azure/devops/boards/backlogs/overview?view=vsts)。
+    所创建的要求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作项。 它可能是用户情景、 要求或用例工作项，具体取决于你的项目使用与 Team Foundation 的过程模板。 有关详细信息，请参阅[有关敏捷工具和敏捷项目管理](/azure/devops/boards/backlogs/overview?view=vsts)。
 
-2.  将要求工作项链接到模型中的一个或多个元素。
+2. 将要求工作项链接到模型中的一个或多个元素。
 
-     在建模图中，右键单击元素、 注释或关系，然后单击**链接到工作项**。
+    在建模图中，右键单击元素、 注释或关系，然后单击**链接到工作项**。
 
-3.  添加到测试套件（即验证模型元素中表示的需求的测试用例）。
+3. 添加到测试套件（即验证模型元素中表示的需求的测试用例）。
 
 ## <a name="see-also"></a>请参阅
 

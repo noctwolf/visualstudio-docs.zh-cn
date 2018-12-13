@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c38eb732a6e431804070505ecbd01e869c34ca
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 76be049c670fb91911be70132b459cad5e5183bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079867"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902459"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何： 指定部署更新的其他位置
 你可以安装你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]最初从 CD 或文件共享，应用程序，但应用程序必须检查在 Web 上找到的定期更新。 可以部署清单中指定更新的备用位置，以便你的应用程序在初始安装后可从 Web 自行更新。  
@@ -46,16 +46,16 @@ ms.locfileid: "39079867"
   
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>通过使用 Mage.exe 指定更新的其他位置  
   
-1.  打开.NET Framework 命令提示符。  
+1. 打开.NET Framework 命令提示符。  
   
-2.  设置使用以下命令更新位置。 在此示例中， *HelloWorld.exe.application*是路径你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]始终具有.application 扩展名，应用程序清单和*http://adatum.com/Update/Path*是该的URL[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]将检查应用程序更新。  
+2. 设置使用以下命令更新位置。 在此示例中， *HelloWorld.exe.application*是路径你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]始终具有.application 扩展名，应用程序清单和*<http://adatum.com/Update/Path>* 是该的URL[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]将检查应用程序更新。  
   
-     **Mage-更新 HelloWorld.exe.application ProviderUrl http://adatum.com/Update/Path**  
+    **Mage-更新 HelloWorld.exe.application ProviderUrl http://adatum.com/Update/Path**  
   
-3.  保存该文件。  
+3. 保存该文件。  
   
-    > [!NOTE]
-    >  现在需要重新签署文件所用*Mage.exe*。 有关详细信息，请参阅[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+   > [!NOTE]
+   >  现在需要重新签署文件所用*Mage.exe*。 有关详细信息，请参阅[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  如果从脱机媒体 CD，如安装应用程序并在计算机处于联机状态，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]首先检查由指定的 URL`<deploymentProvider>`部署清单，以确定是否更新位置包含的最新版本中的标记应用程序。 如果是这样，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]从初始安装目录中，而不是安装应用程序直接从那里，并且公共语言运行时 (CLR) 确定应用程序的信任级别使用`<deploymentProvider>`。 如果计算机处于脱机状态，或`<deploymentProvider>`无法访问，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]从 CD、 和 CLR 安装授予信任取决于安装点; 对于 CD 安装，这意味着你的应用程序接收完全信任。 所有后续更新都将继承该信任级别。  

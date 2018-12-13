@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2823933e4792dd6127ffbd4b1bfe5dfe1b71a0c
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 71667a9d00dd1935e8eaeb281c5f0c6834208702
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547539"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244393"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228：不要发行未发布的资源格式
+
 |||
 |-|-|
 |TypeName|DoNotShipUnreleasedResourceFormats|
@@ -32,13 +33,13 @@ ms.locfileid: "45547539"
 |是否重大更改|非重大更改|
 
 ## <a name="cause"></a>原因
- 资源文件采用的版本生成[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，当前不支持。
+ 使用当前不支持的.NET framework 版本生成的资源文件。
 
 ## <a name="rule-description"></a>规则说明
- 通过使用的预发布版本生成的资源文件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可能无法用于受支持的.NET Framework 版本。
+ 通过使用预发行版本的.NET Framework 生成的资源文件可能不是可由支持的.NET Framework 版本。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要解决此规则的冲突，生成使用受支持的版本资源[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k。
+ 若要修复与此规则的冲突，生成使用支持的.NET Framework 版本的资源。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。

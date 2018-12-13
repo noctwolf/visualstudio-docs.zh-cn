@@ -10,18 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 0dc31bef7a7d2e91599cdc25be4f98445beda67f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380639"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896739"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：为 Web 性能测试编辑器创建自定义 HTTP 正文编辑器
 
 可创建自定义内容编辑器，通过它来编辑 Web 服务请求的字符串主体内容或二进制主体内容，例如 SOAP、REST、asmx、wcf、RIA 和其他 Web 服务请求类型。
 
- 可以实现以下类型的编辑器：
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+可以实现以下类型的编辑器：
 
 -   **字符串内容编辑器** 此编辑器是使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 接口实现的。
 
@@ -33,31 +35,31 @@ ms.locfileid: "39380639"
 
 ### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>使用 Windows 控件库项目创建用户控件
 
-1.  在 Visual Studio 中的“文件”菜单上，选择“新建”，然后选择“项目”。
+1. 在 Visual Studio 中的“文件”菜单上，选择“新建”，然后选择“项目”。
 
-     随即显示“新建项目”对话框。
+    随即显示“新建项目”对话框。
 
-2.  在“已安装的模板”下，根据编程喜好选择“Visual Basic”或“Visual C#”，然后选择“Windows”。
+2. 在“已安装的模板”下，根据编程喜好选择“Visual Basic”或“Visual C#”，然后选择“Windows”。
 
-    > [!NOTE]
-    > 此示例使用 Visual C#。
+   > [!NOTE]
+   > 此示例使用 Visual C#。
 
-3.  在模板列表中，选择“Windows 窗体控件库”。
+3. 在模板列表中，选择“Windows 窗体控件库”。
 
-4.  在“名称”文本框中，键入名称（例如 `MessageEditors`），并选择“确定”。
+4. 在“名称”文本框中，键入名称（例如 `MessageEditors`），并选择“确定”。
 
-    > [!NOTE]
-    > 此示例使用 MessageEditors。
+   > [!NOTE]
+   > 此示例使用 MessageEditors。
 
-     项目将添加到新解决方案中，设计器中将显示一个名为 UserControl1.cs 的 <xref:System.Windows.Forms.UserControl>。
+    项目将添加到新解决方案中，设计器中将显示一个名为 UserControl1.cs 的 <xref:System.Windows.Forms.UserControl>。
 
-5.  从“工具箱”的“公共控件”类别下，将 <xref:System.Windows.Forms.RichTextBox> 拖动到 UserControl1 的曲面上。
+5. 从“工具箱”的“公共控件”类别下，将 <xref:System.Windows.Forms.RichTextBox> 拖动到 UserControl1 的曲面上。
 
-6.  选择 <xref:System.Windows.Forms.RichTextBox> 控件右上角的操作标记标志符号（![智能标记字形](../test/media/vs_winformsmttagglyph.gif)），然后选择“在父容器中停靠”。
+6. 选择 <xref:System.Windows.Forms.RichTextBox> 控件右上角的操作标记标志符号（![智能标记字形](../test/media/vs_winformsmttagglyph.gif)），然后选择“在父容器中停靠”。
 
-7.  在解决方案资源管理器中，右键单击“Windows 窗体库”项目，然后选择“属性”。
+7. 在解决方案资源管理器中，右键单击“Windows 窗体库”项目，然后选择“属性”。
 
-8.  在“属性”中，选择“应用程序”选项卡。
+8. 在“属性”中，选择“应用程序”选项卡。
 
 9. 在“目标框架”下拉列表中，选择“.NET Framework 4”。
 
@@ -95,9 +97,9 @@ ms.locfileid: "39380639"
 
 18. 添加以下属性，以允许在 RichTextBox1 中获取和设置文本。 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 接口将使用 EditString，<xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 将使用 EditByteArray：
 
-   ```csharp
-   public String EditString
-   {
+    ```csharp
+    public String EditString
+    {
        get
        {
            return this.richTextBox1.Text;
@@ -106,10 +108,10 @@ ms.locfileid: "39380639"
        {
            this.richTextBox1.Text = value;
        }
-   }
+    }
 
-   public byte[] EditByteArray
-   {
+    public byte[] EditByteArray
+    {
        get
        {
            return System.Convert.FromBase64String(richTextBox1.Text);
@@ -118,8 +120,8 @@ ms.locfileid: "39380639"
        {
            richTextBox1.Text = System.Convert.ToBase64String(value, 0, value.Length);
        }
-   }
-   ```
+    }
+    ```
 
 ## <a name="add-a-class-to-the-windows-control-library-project"></a>向 Windows 控件库项目中添加类
 

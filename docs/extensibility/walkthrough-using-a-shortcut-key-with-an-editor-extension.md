@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb4788e872e18d5db9c6d7c4452defc415290188
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d009351efdd36e0d415d0e2e457f7974608ab665
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566559"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886489"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>演练： 使用快捷键与编辑器扩展
 您可以在编辑器扩展中响应键盘快捷方式。 下面的演练演示如何使用快捷键将视图修饰添加到文本视图。 本演练基于视区修饰编辑器模板，并且可以使用添加修饰 + 字符。  
@@ -28,21 +28,21 @@ ms.locfileid: "39566559"
   
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>创建托管可扩展性框架 (MEF) 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`KeyBindingTest`。  
+1. 创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `KeyBindingTest`。  
   
-2.  编辑器文本修饰项模板添加到项目并将其命名`KeyBindingTest`。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
+2. 编辑器文本修饰项模板添加到项目并将其命名`KeyBindingTest`。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
-3.  添加以下引用，并设置**CopyLocal**到`false`:  
+3. 添加以下引用，并设置**CopyLocal**到`false`:  
   
-     Microsoft.VisualStudio.Editor  
+    Microsoft.VisualStudio.Editor  
   
-     Microsoft.VisualStudio.OLE.Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.visualstudio.shell.14.0 的引用  
+    Microsoft.visualstudio.shell.14.0 的引用  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+    Microsoft.VisualStudio.TextManager.Interop  
   
- 在 KeyBindingTest 类文件中，更改到 PurpleCornerBox 的类名。 使用左边距中显示灯泡进行其他相应的更改。 在构造函数，从修饰层的名称更改**KeyBindingTest**到**PurpleCornerBox**:  
+   在 KeyBindingTest 类文件中，更改到 PurpleCornerBox 的类名。 使用左边距中显示灯泡进行其他相应的更改。 在构造函数，从修饰层的名称更改**KeyBindingTest**到**PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
@@ -64,7 +64,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 
  命令筛选器是实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>，用于处理该命令通过实例化修饰。  
   
-1.  添加一个类文件并将其命名`KeyBindingCommandFilter`。  
+1.  添加一个类文件并将其命名为 `KeyBindingCommandFilter`。  
   
 2.  添加下面的 using 语句。  
   
@@ -204,73 +204,73 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 
 该命令处理程序的实现<xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>，用于处理该命令通过实例化修饰。  
   
-1.  添加一个类文件并将其命名`KeyBindingCommandHandler`。  
+1. 添加一个类文件并将其命名为 `KeyBindingCommandHandler`。  
   
-2.  添加下面的 using 语句。  
+2. 添加下面的 using 语句。  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Commanding;
-    using Microsoft.VisualStudio.Text.Editor;
-    using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
-    using Microsoft.VisualStudio.Utilities;
-    using System.ComponentModel.Composition;   
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Commanding;
+   using Microsoft.VisualStudio.Text.Editor;
+   using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
+   using Microsoft.VisualStudio.Utilities;
+   using System.ComponentModel.Composition;   
+   ```  
   
-3.  名为 KeyBindingCommandHandler 的类应继承自`ICommandHandler<TypeCharCommandArgs>`，并将其作为导出<xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+3. 名为 KeyBindingCommandHandler 的类应继承自`ICommandHandler<TypeCharCommandArgs>`，并将其作为导出<xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
   
-    ```csharp  
-    [Export(typeof(ICommandHandler))]
-    [ContentType("text")]
-    [Name("KeyBindingTest")]
-    internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
-    ```  
+   ```csharp  
+   [Export(typeof(ICommandHandler))]
+   [ContentType("text")]
+   [Name("KeyBindingTest")]
+   internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
+   ```  
   
-4.  添加命令处理程序的显示名称：  
+4. 添加命令处理程序的显示名称：  
   
-    ```csharp  
-    public string DisplayName => "KeyBindingTest";
-    ```  
+   ```csharp  
+   public string DisplayName => "KeyBindingTest";
+   ```  
     
-5.  实现`GetCommandState()`方法，如下所示。 此命令处理程序处理核心编辑器 TYPECHAR 命令，因为它可以委派启用到核心编辑器命令。
+5. 实现`GetCommandState()`方法，如下所示。 此命令处理程序处理核心编辑器 TYPECHAR 命令，因为它可以委派启用到核心编辑器命令。
   
-    ```csharp  
-    public CommandState GetCommandState(TypeCharCommandArgs args)
-    {
-        return CommandState.Unspecified;
-    } 
-    ```  
+   ```csharp  
+   public CommandState GetCommandState(TypeCharCommandArgs args)
+   {
+       return CommandState.Unspecified;
+   } 
+   ```  
   
-6.  实现`ExecuteCommand()`方法，使其向视图添加紫色框中，如果一个加号 (**+**) 键入字符。 
+6. 实现`ExecuteCommand()`方法，使其向视图添加紫色框中，如果一个加号 (**+**) 键入字符。 
   
-    ```csharp  
-    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
-    {
-        if (args.TypedChar == '+')
-        {
-            bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
-                "KeyBindingTextAdorned", out bool adorned) && adorned;
-            if (!alreadyAdorned)
-            {
-                new PurpleCornerBox((IWpfTextView)args.TextView);
-                args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
-            }
-        }
+   ```csharp  
+   public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
+   {
+       if (args.TypedChar == '+')
+       {
+           bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
+               "KeyBindingTextAdorned", out bool adorned) && adorned;
+           if (!alreadyAdorned)
+           {
+               new PurpleCornerBox((IWpfTextView)args.TextView);
+               args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
+           }
+       }
 
-        return false;
-    }
-    ```  
- 7. 将从修饰层定义复制*KeyBindingTestTextViewCreationListener.cs*的文件*KeyBindingCommandHandler.cs* ，然后删除*KeyBindingTestTextViewCreationListener.cs*文件：
+       return false;
+   }
+   ```  
+   7. 将从修饰层定义复制*KeyBindingTestTextViewCreationListener.cs*的文件*KeyBindingCommandHandler.cs* ，然后删除*KeyBindingTestTextViewCreationListener.cs*文件：
  
-    ```csharp  
-    /// <summary>
-    /// Defines the adornment layer for the adornment. This layer is ordered
-    /// after the selection layer in the Z-order.
-    /// </summary>
-    [Export(typeof(AdornmentLayerDefinition))]
-    [Name("PurpleCornerBox")]
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
-    private AdornmentLayerDefinition editorAdornmentLayer;    
-    ```  
+   ```csharp  
+   /// <summary>
+   /// Defines the adornment layer for the adornment. This layer is ordered
+   /// after the selection layer in the Z-order.
+   /// </summary>
+   [Export(typeof(AdornmentLayerDefinition))]
+   [Name("PurpleCornerBox")]
+   [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
+   private AdornmentLayerDefinition editorAdornmentLayer;    
+   ```  
 
 ## <a name="make-the-adornment-appear-on-every-line"></a>使显示在每个行上修饰  
 

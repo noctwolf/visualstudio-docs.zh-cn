@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc824c11bca3202ecce915144909b527a2f6946a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2ead4834f1d29baff099eedbf464c1ba6344ca6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639548"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950194"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>管理解决方案中的项目加载
 Visual Studio 解决方案可以包含大量的项目。 默认 Visual Studio 行为是打开解决方案时，次加载解决方案中的所有项目并不允许用户访问任何项目，直到所有这些已完成加载为止。 当项目加载过程将持续时间超过两分钟时，被显示一个进度栏显示加载的项目数量以及项目总数。 用户可以在具有多个项目的解决方案中使用时，卸载项目，但此过程也有一些缺点： 已卸载的项目不是作为重新生成解决方案命令，并关闭 IntelliSense 类型的说明和的成员项目不会显示。  
@@ -77,20 +77,20 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="detect-and-manage-solution-and-project-loading"></a>检测和管理解决方案和项目加载  
  若要检测的项目和解决方案加载状态，请调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A>使用以下值：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`将返回`true`解决方案和所有项目已加载，否则如果`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`将返回`true`解决方案和所有项目已加载，否则如果`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`将返回`true`如果一批项目当前正在加载在后台，否则`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`将返回`true`如果一批项目当前正在加载在后台，否则`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`将返回`true`如果一批项目当前正在加载同步由于用户命令或其他显式负载，否则`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`将返回`true`如果一批项目当前正在加载同步由于用户命令或其他显式负载，否则`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>:`var`将返回`true`解决方案当前正在关闭，否则如果`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>:`var`将返回`true`解决方案当前正在关闭，否则如果`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>:`var`将返回`true`当前正在打开解决方案，否则如果`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>:`var`将返回`true`当前正在打开解决方案，否则如果`false`。  
   
- 您还可以确保项目和解决方案加载通过调用以下方法之一：  
+  您还可以确保项目和解决方案加载通过调用以下方法之一：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>： 调用此方法会强制加载完毕，该方法将返回解决方案中的项目。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>： 调用此方法会强制加载完毕，该方法将返回解决方案中的项目。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>： 调用此方法会强制在项目`guidProject`加载完毕，该方法返回。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>： 调用此方法会强制在项目`guidProject`加载完毕，该方法返回。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>： 调用此方法会强制中的项目`guidProjectID`加载完毕，该方法返回。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>： 调用此方法会强制中的项目`guidProjectID`加载完毕，该方法返回。  

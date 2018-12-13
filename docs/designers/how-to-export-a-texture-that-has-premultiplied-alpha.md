@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb23d64e7b90fd094b432acd3ba37c90dcc0d84
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: c39d7ae466f48bed8bd6fe4c53662c0c8b3c801e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855516"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>如何：导出包含自左乘的 Alpha 的纹理
+
 图像内容管道可从源图像生成预乘 Alpha 纹理。 这些纹理比不包含预乘 alpha 的纹理更易于使用且更可靠。
 
- 本文档演示了这些活动：
+本文档演示了这些活动：
 
 -   将源映像配置为由图像内容管道进行处理。
 
@@ -39,12 +40,12 @@ ms.locfileid: "38977415"
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>创建使用预乘 Alpha 的纹理
 
-1.  从基本纹理开始。 加载现有图像文件，或根据[如何：创建基本纹理](../designers/how-to-create-a-basic-texture.md)所述，创建一个纹理。
+1. 从基本纹理开始。 加载现有图像文件，或根据[如何：创建基本纹理](../designers/how-to-create-a-basic-texture.md)所述，创建一个纹理。
 
-2.  配置纹理文件，使其由图像内容管道进行处理。 在“解决方案资源管理器”中，打开纹理文件的快捷菜单，然后选择“属性”。 在“配置属性” > “常规”页上，将“项目类型”属性设置为“图像内容管道”。 请确保将“内容”属性设置为“是”，并且将“从生成中排除”设置为“否”，然后选择“应用”按钮。 将出现“图像内容管道”配置属性页。
+2. 配置纹理文件，使其由图像内容管道进行处理。 在“解决方案资源管理器”中，打开纹理文件的快捷菜单，然后选择“属性”。 在“配置属性” > “常规”页上，将“项目类型”属性设置为“图像内容管道”。 请确保将“内容”属性设置为“是”，并且将“从生成中排除”设置为“否”，然后选择“应用”按钮。 将出现“图像内容管道”配置属性页。
 
-3.  配置图像内容管道，生成预乘 Alpha。 在“配置属性” > “图像内容管道” > “常规”页上，将“转换为预乘 Alpha 格式”属性设置为“是 (/generatepremultipliedalpha)”。
+3. 配置图像内容管道，生成预乘 Alpha。 在“配置属性” > “图像内容管道” > “常规”页上，将“转换为预乘 Alpha 格式”属性设置为“是 (/generatepremultipliedalpha)”。
 
-4.  选择“确定”  按钮。
+4. 选择“确定”  按钮。
 
- 生成项目后，图像内容管道将源图像从工作格式转换为指定的输出格式，其中包括将图像转换为预乘 Alpha 格式，该结果将复制到项目的输出目录中。
+   生成项目后，图像内容管道将源图像从工作格式转换为指定的输出格式，其中包括将图像转换为预乘 Alpha 格式，该结果将复制到项目的输出目录中。

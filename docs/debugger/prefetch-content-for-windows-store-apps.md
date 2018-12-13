@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d511934dc185ed6dac8034ee3e149391b2dd185e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 72c4b305152694e8d3664b54aef3477d2f8b1fec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281541"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854580"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>调试 UWP 应用使用 Visual Studio 中的预提取的内容
   
@@ -30,13 +30,13 @@ ms.locfileid: "44281541"
 ## <a name="to-force-preloading-of-contentprefetcher-specified-resources"></a>强制预加载 ContentPrefetcher 指定的资源  
  此过程假定你已在应用程序项目中设置 ContentPrefetcher 功能并指定预加载的内容 URI。 若要在指定资源为新的或已修改时强制预加载内容，您需要启动和停止应用程序，在选择之前**触发 Windows 应用商店应用预提取**命令。 先运行应用程序以注册 URI。 **触发 Windows 应用商店应用预提取**命令然后将强制 ContentPrefetcher 下载此内容并将其添加到缓存。 在应用程序的后续运行中，你可以假定已预加载此内容。  
   
-1.  启动应用程序以将预提取内容 URI 注册到应用程序。 上**调试**菜单中，选择**开始调试**(键盘快捷键： F5)。  
+1. 启动应用程序以将预提取内容 URI 注册到应用程序。 上**调试**菜单中，选择**开始调试**(键盘快捷键： F5)。  
   
-2.  上**调试**菜单中，选择**停止调试**(键盘快捷键： Shift + F5)。  
+2. 上**调试**菜单中，选择**停止调试**(键盘快捷键： Shift + F5)。  
   
-3.  上**调试**菜单中，选择**其他调试目标**，然后选择**触发 Windows 应用商店应用预提取**。  
+3. 上**调试**菜单中，选择**其他调试目标**，然后选择**触发 Windows 应用商店应用预提取**。  
   
- 现在可以利用预提取的 Web 资源来调试、测试或分析应用程序。  
+   现在可以利用预提取的 Web 资源来调试、测试或分析应用程序。  
   
 > [!NOTE]
 >  当你添加或修改指定的 Web 内容时，请重复上述步骤。  

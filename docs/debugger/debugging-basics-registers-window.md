@@ -19,14 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14f43e8708573a2fdd11a1c667a69bc1767ecda3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0219418b754c93b8e5e50997ede73e0611ed496a
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278824"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257051"
 ---
-# <a name="about-the-registers-window-in-visual-studio"></a>有关 Visual Studio 中的寄存器窗口
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>有关 Visual Studio 中的寄存器窗口 (C#，c + +、 Visual Basic 中， F#)
+
 **注册**窗口才中启用了地址级调试**选项**对话框中，**调试**节点。  
   
  寄存器是处理器（CPU）中的特殊区域，用于存储处理器需要当前处理的少量数据。 编译或解释源代码时会生成一些指令，这些指令根据需要将数据从内存移动到寄存器或反之。 相对于访问内存数据，访问寄存器数据非常快。那些允许处理器将数据保留在寄存器并多次访问的代码，比起那些需要处理器不断加载和卸载寄存器的代码执行速度快得多。 为了方便编译器将数据保存在寄存器中并实现其他优化，应避免使用全局变量而尽可能地依靠局部变量。 称以此方式编写的代码具有良好的引用局部性。 在某些语言中，如 C/C++ 中，程序员可以声明寄存器变量，它告诉编译器在所有时间尽可能地将该变量保留在寄存器中。 有关详细信息，请参阅[Register 关键字](https://msdn.microsoft.com/library/5b66905a-2f7f-4918-bb55-5e66d4bc50f9)。  

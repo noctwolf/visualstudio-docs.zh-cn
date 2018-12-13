@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8d76c6f7d28b990d133780c25577cab4e8c3cad
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 68940d6e48f1f3a3e51017e1cc838976735de104
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930201"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>创建业务数据连接模型
   可以创建业务数据连接 (BDC) 模型，也可以使用 Visual Studio 自定义现有 BDC 模型。 每个 SharePoint 项目可以包含一个模型。 有关详细信息，请参阅[将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。  
@@ -57,13 +57,13 @@ ms.locfileid: "36326029"
 ## <a name="add-an-existing-model"></a>添加现有模型
  您可以导入已通过使用其他工具，例如 SharePoint 设计器的模型。 您可以选择现有模型导入在以下情况下你的项目：  
   
--   若要自定义已部署到 SharePoint 服务器场的模型。  
+- 若要自定义已部署到 SharePoint 服务器场的模型。  
   
--   若要打包并部署到多个 SharePoint 服务器场的现有模型。  
+- 若要打包并部署到多个 SharePoint 服务器场的现有模型。  
   
- 在任一情况下，导入的模型中定义的 LOB 系统不会受到影响，并将继续按预期方式工作。 若要将现有模型添加到 SharePoint 项目，请使用 Visual Studio**添加现有项**对话框。 有关详细信息，请参阅[如何： 将现有 BDC 模型文件添加到 SharePoint 项目](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)。  
+  在任一情况下，导入的模型中定义的 LOB 系统不会受到影响，并将继续按预期方式工作。 若要将现有模型添加到 SharePoint 项目，请使用 Visual Studio**添加现有项**对话框。 有关详细信息，请参阅[如何： 将现有 BDC 模型文件添加到 SharePoint 项目](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)。  
   
- 您可以通过选择中的一个选项添加到导入的模型类型的.NET Framework 程序集的 LOB 系统**添加.NET 程序集 LobSystem**。 这使你可以编写自定义代码和设计器用于定义导入模型的元数据。  
+  您可以通过选择中的一个选项添加到导入的模型类型的.NET Framework 程序集的 LOB 系统**添加.NET 程序集 LobSystem**。 这使你可以编写自定义代码和设计器用于定义导入模型的元数据。  
   
 ## <a name="related-topics"></a>相关主题
   

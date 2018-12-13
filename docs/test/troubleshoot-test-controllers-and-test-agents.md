@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中对测试控制器和测试代理进行故障排除
+title: 测试控制器和测试代理的故障排除
 ms.date: 10/20/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f0dc115feb15ef8b698aea0f311404b2b3f2e4ec
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 274585d864393877b225fe6231c1f775342620f6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382098"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894737"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>负载测试中测试控制器和测试代理的故障排除策略
 
 本文介绍在 Visual Studio 中使用测试控制器和测试代理时可能遇到的一些常见问题。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>无法在测试代理计算机上收集性能计数器
 

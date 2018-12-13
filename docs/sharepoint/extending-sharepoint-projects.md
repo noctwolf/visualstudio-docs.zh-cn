@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76648e128db23415d6a986a7d0087968c549bd13
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 56e714f910a2421a909cba6714e65d21b66991ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835834"
 ---
 # <a name="extend-sharepoint-projects"></a>扩展 SharePoint 项目
   如果想要自定义 SharePoint 项目的项目级功能，请创建一个项目扩展。 例如，可以添加自定义项目属性中，或对用户开发 Visual Studio 中的 SharePoint 解决方案时引发的项目级事件做出响应。  
@@ -32,11 +32,11 @@ ms.locfileid: "36326003"
   
  在创建项目扩展时，还可以向 SharePoint 项目添加了以下功能：  
   
--   添加快捷菜单项。 打开中的 SharePoint 项目节点的快捷菜单时显示的菜单项**解决方案资源管理器**通过右键单击节点或选择它，然后选择**Shift** + **F10**密钥。 有关详细信息，请参阅[如何： 将快捷菜单项添加到 SharePoint 项目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)。  
+- 添加快捷菜单项。 打开中的 SharePoint 项目节点的快捷菜单时显示的菜单项**解决方案资源管理器**通过右键单击节点或选择它，然后选择**Shift** + **F10**密钥。 有关详细信息，请参阅[如何： 将快捷菜单项添加到 SharePoint 项目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)。  
   
--   添加自定义属性。 属性将出现在**属性**窗口中选择的 SharePoint 项目中时**解决方案资源管理器**。 有关详细信息，请参阅[如何： 将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。  
+- 添加自定义属性。 属性将出现在**属性**窗口中选择的 SharePoint 项目中时**解决方案资源管理器**。 有关详细信息，请参阅[如何： 将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。  
   
- 有关演示如何创建、 部署和测试项目扩展的演练，请参阅[演练： 创建 SharePoint 项目扩展](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)。  
+  有关演示如何创建、 部署和测试项目扩展的演练，请参阅[演练： 创建 SharePoint 项目扩展](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)。  
   
 ## <a name="understand-the-relationship-between-project-extensions-and-project-instances"></a>了解项目扩展和项目实例之间的关系
  该扩展时创建的项目扩展，请加载任何类型的 SharePoint 项目中打开时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 包含多个 SharePoint 项目模板，如列表定义、 内容类型和事件接收器。 但是，没有一个 SharePoint 项目类型。 在显示的项目类型**新的项目**对话框是捆绑在一起的一个或多个 SharePoint 项目项的模板。 由于只有一个 SharePoint 项目类型，扩展为一个项目创建适用于所有 SharePoint 项目。 例如，不能请创建一个扩展，仅适用于**内容类型**项目。  

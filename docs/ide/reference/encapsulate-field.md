@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 316c1f4a6927805c75feee143f92a8e31ac4dc20
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c6594521774ca7e4fe91bc47776c4f0c4a489a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945241"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942915"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>“封装字段”重构
 
@@ -41,20 +41,20 @@ ms.locfileid: "31945241"
 
    - C#：
 
-    ![突出显示的代码 - C#](media/encapsulate-highlight-cs.png)
+       ![突出显示的代码 - C#](media/encapsulate-highlight-cs.png)
 
    - Visual Basic：
 
-    ![突出显示的代码 - Visual Basic](media/encapsulate-highlight-vb.png)
+       ![突出显示的代码 - Visual Basic](media/encapsulate-highlight-vb.png)
 
-1. 接下来，执行以下操作之一：
+2. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl+R”，然后按“Ctrl+E”。  （请注意，键盘快捷方式可能因所选的配置文件而有所不同。）
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口选择任意一个“封装字段”项。
+      - 按“Ctrl+R”，然后按“Ctrl+E”。  （请注意，键盘快捷方式可能因所选的配置文件而有所不同。）
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口选择任意一个“封装字段”项。
    - **鼠标**
-     - 选择“编辑 > 重构> 封装字段”。
-     - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口选择任意一个“封装字段”项。
+      - 选择“编辑 > 重构> 封装字段”。
+      - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口选择任意一个“封装字段”项。
 
    选择 | 描述
    --------- | -----------
@@ -68,11 +68,11 @@ ms.locfileid: "31945241"
 
    - C#：
 
-    ![“封装属性”的结果 - C#](media/encapsulate-result-cs.png)
+      ![“封装属性”的结果 - C#](media/encapsulate-result-cs.png)
 
    - Visual Basic：
 
-    ![“封装属性”的结果 - Visual Basic](media/encapsulate-result-vb.png)
+      ![“封装属性”的结果 - Visual Basic](media/encapsulate-result-vb.png)
 
 ## <a name="see-also"></a>请参阅
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa287570213e6238d0a8dffc9f6e70367b133591
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: ced442c0fafc47b5cdae1568dbbfb6df7c2f2f50
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204422"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948383"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用规则集对代码分析规则进行分组
 
@@ -58,10 +58,15 @@ ms.locfileid: "39204422"
 > [!TIP]
 > 更轻松地[编辑规则集](../code-quality/working-in-the-code-analysis-rule-set-editor.md)中的图形**规则集编辑器**比手动。
 
+## <a name="specify-a-rule-set-for-a-project"></a>指定为项目设置的规则
+
 规则集为项目指定由**CodeAnalysisRuleSet** Visual Studio 项目文件中的属性。 例如：
 
 ```xml
-<CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
 ```
 
 ## <a name="see-also"></a>请参阅

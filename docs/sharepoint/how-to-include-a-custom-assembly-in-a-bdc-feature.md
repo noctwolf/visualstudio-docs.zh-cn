@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa210047a65870806877e1d22e08fc1f2b9bc010
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e685c3003fa77814217716fc886589e4a2633429
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118476"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294664"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>如何： 在 BDC 功能中包含自定义程序集
   你的项目可以从同一解决方案中的其他项目引用程序集。 但是，您必须添加这些程序集到项目的功能文件通过使用**分配引用的程序集 Lobsystem 到**对话框。  
@@ -45,7 +45,7 @@ ms.locfileid: "37118476"
 4.  在中**选择的程序集**列表中，选择自定义程序集。  
   
     > [!NOTE]  
-    >  程序集只能出现在**分配引用的程序集 Lobsystem 到**对话框中，如果你已添加对包含程序集的项目的引用。 有关详细信息，请参阅[如何： 添加或删除引用通过使用添加引用对话框](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+    >  程序集只能出现在**分配引用的程序集 Lobsystem 到**对话框中，如果你已添加对包含程序集的项目的引用。 有关详细信息，请参阅[如何： 添加或删除引用通过使用添加引用对话框](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 5.  在**引用属性**组中，打开为显示列表**LobSystem 范围**属性中，选择的方法，使用自定义程序集，然后选择 LOB 系统**确定**按钮。  
   

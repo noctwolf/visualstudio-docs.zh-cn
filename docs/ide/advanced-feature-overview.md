@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 2017 的高级功能
+titleSuffix: ''
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: bd351ef1bf6b1e5eee16451e554d6cae94c60127
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282520"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159394"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 的功能
 
-[Visual Studio IDE 概述](../ide/visual-studio-ide.md)主题提供 Visual Studio 的基本简介。 本文介绍的功能可能更适合经验丰富的开发人员或已熟练掌握 Visual Studio 的人员。
+[Visual Studio IDE 概述](../get-started/visual-studio-ide.md)一文提供 Visual Studio 的基本简介。 本文介绍的功能可能更适合经验丰富的开发人员或已熟练掌握 Visual Studio 的人员。
 
 ## <a name="modular-installation"></a>模块化安装
 
@@ -100,19 +101,19 @@ Visual Studio 中的 **SQL Server 对象资源管理器**提供类似于 SQL Ser
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>管理源代码并与他人协作
 
-可以在任意提供商（包括 GitHub）托管的 Git 存储库中管理源代码。 或者，使用 [Visual Studio Team Services (VSTS)](/vsts/index) 管理整个项目的代码、Bug 和工作项。 若要详细了解如何在 Visual Studio 中使用团队资源管理器管理 Git 存储库，请参阅[开始使用 Git 和 Team Services (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio)。 Visual Studio 还内置有其他源代码管理功能。 若要了解详细信息，请参阅 [Visual Studio 2017 中的新 Git 功能（博文）](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/)。
+可以在任意提供商（包括 GitHub）托管的 Git 存储库中管理源代码。 或者，使用 [Azure DevOps Services](/azure/devops/index) 管理整个项目的代码、Bug 和工作项。 若要详细了解如何在 Visual Studio 中使用团队资源管理器管理 Git 存储库，请参阅[开始使用 Git 和 Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio)。 Visual Studio 还内置有其他源代码管理功能。 若要了解详细信息，请参阅 [Visual Studio 2017 中的新 Git 功能（博文）](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/)。
 
-Visual Studio Team Services 是一种基于云的服务，用于承载软件项目和启用团队中的协作。 VSTS 支持 Git 和 Team Foundation 源控件系统以及 Scrum、CMMI 和 Agile 开发方法。 Team Foundation 版本控制 (TFVC) 采用单一的集中式服务器存储库来跟踪文件和调整它的版本。 本地更改始终签入到中央服务器，其他开发人员可在此处获得最新的更改。
+Azure DevOps Services 是基于云的服务，用于规划、托管、自动化和部署软件以及在团队中实现协作。 Azure DevOps Services 支持 Git 存储库（分布式版本控制）和 Team Foundation 版本控制（集中式版本控制），以及用于版本控制系统中存储的代码的持续生成和发布 (CI/CD) 的管道。 Azure DevOps Services 还支持 Scrum、CMMI 和敏捷开发方法。
 
 Team Foundation Server (TFS) 是 Visual Studio 的应用程序生命周期管理中心。 它使用单个解决方案，使开发过程中涉及的所有人均可参与该开发过程。 TFS 对于管理异类团队和项目也非常有用。
 
-如果网络中已经具有 Visual Studio Team Services 帐户或 Team Foundation Server，则可通过 Visual Studio 中的“团队资源管理器”窗口连接。 可在此窗口中将代码签入（出）源控件、管理工作项、启动生成以及访问团队聊天室和工作区。 可以从“快速启动”框，或者从“视图” > “团队资源管理器”或“团队” > “管理连接”的主菜单中打开“团队资源管理器”。
+如果网络中已经具有 Azure DevOps 组织或 Team Foundation Server，则可通过 Visual Studio 中的“团队资源管理器”窗口连接。 可在此窗口中将代码签入（出）源控件、管理工作项、启动生成以及访问团队聊天室和工作区。 可以从“快速启动”框，或者从“视图” > “团队资源管理器”或“团队” > “管理连接”的主菜单中打开“团队资源管理器”。
 
-下图展示了 VSTS 中托管的解决方案的“团队资源管理器”窗口。
+下图展示了 Azure DevOps Services 中托管的解决方案的“团队资源管理器”窗口。
 
 ![Visual Studio 团队资源管理器](../ide/media/vs2017_teamexplorer.png)
 
-还可以自动执行生成过程以生成团队中的开发人员签入到版本控制的代码。 例如，您可以在夜间或每次签入此代码时生成一个或多个项目。 有关详细信息，请参阅[生成和发布（VSTS 和 TFS）](/vsts/build-release/index)。
+还可以自动执行生成过程以生成团队中的开发人员签入到版本控制的代码。 例如，您可以在夜间或每次签入此代码时生成一个或多个项目。 有关详细信息，请参阅 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
 
 ## <a name="extend-visual-studio"></a>扩展 Visual Studio
 
@@ -126,5 +127,5 @@ Team Foundation Server (TFS) 是 Visual Studio 的应用程序生命周期管理
 
 ## <a name="see-also"></a>请参阅
 
-- [Visual Studio IDE 概述](../ide/visual-studio-ide.md)
+- [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017 中的新增功能](../ide/whats-new-in-visual-studio.md)

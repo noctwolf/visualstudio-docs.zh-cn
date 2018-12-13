@@ -27,16 +27,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb699b02723e88454f26f4b897cfd7ba3ff46592
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425120"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349044"
 ---
 # <a name="understand-build-configurations"></a>了解生成配置
 
 您可以存储不同的解决方案配置和项目属性以便在各种生成中使用。 若要创建、选择、修改或删除配置，可以使用“配置管理器”。 若要打开它，请在菜单栏上选择“生成” > “配置管理器”，或在“快速启动”框中键入“配置”。 也可以使用“标准”工具栏上的“解决方案配置”列表，选择配置或打开“配置管理器”。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中生成配置](/visualstudio/mac/configurations)。
 
 > [!NOTE]
 > 如果在工具栏上找不到解决方案配置设置且无法访问“配置管理器”，[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 开发设置可能适用。 有关详细信息，请参阅[如何：在应用 Visual Basic 开发者设置后管理配置](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。
@@ -92,3 +95,4 @@ ms.locfileid: "32425120"
 - [解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)
 - [C/C++ 生成参考](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)
+- [生成配置 (Visual Studio for Mac)](/visualstudio/mac/configurations)

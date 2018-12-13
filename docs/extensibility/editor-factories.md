@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07c94dda2a04ca1b69c2dbfd59b0df575f1b6c73
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 9f4dc0eca2c74161abb9cc4afe3917a160a18422
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933126"
 ---
 # <a name="editor-factories"></a>编辑器工厂
 编辑器工厂创建编辑器对象，并将其放在窗口框架中，称为物理视图。 它创建的文档数据和创建编辑器和设计器所需的文档视图对象。 创建 Visual Studio 核心编辑器和任何标准编辑器需要编辑器工厂。 也可以使用编辑器工厂创建的自定义编辑器。  
@@ -46,13 +46,13 @@ ms.locfileid: "39638054"
 ## <a name="the-editor-factory-registration-process"></a>编辑器工厂注册过程  
  Visual Studio 加载使用编辑器工厂编辑器时，将发生以下过程：  
   
-1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目系统调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。  
+1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目系统调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。  
   
-2.  此方法返回编辑器工厂。 Visual Studio 而延迟加载编辑器的包，但是，直到项目系统实际上需要在编辑器。  
+2. 此方法返回编辑器工厂。 Visual Studio 而延迟加载编辑器的包，但是，直到项目系统实际上需要在编辑器。  
   
-3.  当项目系统需要在编辑器时，Visual Studio 会调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>，返回的文档视图和文档数据对象的专用的方法。  
+3. 当项目系统需要在编辑器时，Visual Studio 会调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>，返回的文档视图和文档数据对象的专用的方法。  
   
-4.  如果编辑器工厂使用由 Visual Studio 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>返回文档数据对象，文档视图对象中，Visual Studio 文档窗口、 置于文档视图对象，然后创建到正在运行文档中的一个条目文档数据对象表 (RDT)。  
+4. 如果编辑器工厂使用由 Visual Studio 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>返回文档数据对象，文档视图对象中，Visual Studio 文档窗口、 置于文档视图对象，然后创建到正在运行文档中的一个条目文档数据对象表 (RDT)。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   

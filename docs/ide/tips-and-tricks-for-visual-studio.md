@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 键盘快捷方式
-ms.date: 06/21/2017
+title: 键盘快捷键
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a420876ca53f5d3cb407d759ebbc9bb430f7a5ad
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: a2b2c520a98d1bc3fa9d162889794ed1524d7d82
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32065060"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062265"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的键盘快捷方式
 
@@ -22,6 +22,9 @@ ms.locfileid: "32065060"
 
 > [!TIP]
 > 此处列出的快捷方式只介绍一部分可用的键盘快捷方式。 有关更完整的列表，请参阅 [默认键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中的常用键盘快捷方式](/visualstudio/mac/keyboard-shortcuts)。
 
 ## <a name="window-management"></a>窗口管理
 
@@ -59,7 +62,7 @@ ms.locfileid: "32065060"
 |||
 |-|-|
 |快速查找|Ctrl+F|
-|快速查找下一个结果|**Enter**|
+|快速查找下一个结果|Enter|
 |快速查找上一个结果|Shift+Enter|
 |快速查找展开下拉列表|Alt+向下键|
 |取消查找|**Esc**|
@@ -73,6 +76,11 @@ ms.locfileid: "32065060"
 
 |命令|快捷键|适用版本|
 |-|-|-|
+|转到全部|Ctrl + T|
+|转到最近使用的文件|**Ctrl**+**T**,**R**|
+|多脱字号多个插入点|**Ctrl**+**Alt**+**单击**|
+|多脱字号添加匹配选择|**Shift**+**Alt**+**Ins**|
+|设置文档的格式|**Ctrl**+**K**,**D**|Visual Studio 2017 版本 15.8|
 |IntelliSense 建议模式|Ctrl+Alt+空格键（切换）||
 |强制显示 IntelliSense|Ctrl+J||
 |快速操作|Ctrl+.||
@@ -95,6 +103,9 @@ ms.locfileid: "32065060"
 |在多个“查看定义”窗口之间导航|**Ctrl**+**Alt**+**-** 和 **Ctrl**+**Alt**+**=**||
 |在多个查看结果之间导航|**F8** 和 **Shift**+**F8**||
 |在“代码编辑器”窗口和“查看定义”窗口之间切换|Shift+Esc||
+|转到封闭块|**Ctrl**+**Alt**+**向上键**|
+|转到下一个/上一个问题|**Alt**+**PgUp**/**PgDn**|
+|上下文导航菜单|**Alt**+**`**|
 
 ## <a name="toolbars"></a>工具栏
 
@@ -113,7 +124,7 @@ ms.locfileid: "32065060"
 |停止调试|Shift+F5|
 |重新启动调试|Ctrl+Shift+F5|
 |逐过程|**F10**|
-|逐语句|**F11**|
+|逐语句|F11|
 |跳出|Shift+F11|
 |运行到光标处|Ctrl+F10|
 |设置下一语句|Ctrl+Shift+F10|
@@ -127,5 +138,6 @@ ms.locfileid: "32065060"
 ## <a name="see-also"></a>请参阅
 
 - [辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)
-- [键盘快捷方式（VSTS 和 TFS）](/vsts/collaborate/keyboard-shortcuts)
-- [Visual Studio tips and tricks blog](http://blogs.msdn.com/b/zainnab)（Visual Studio 提示和技巧博客）
+- [键盘快捷方式（Azure DevOps Services 和 TFS）](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
+- [Visual Studio tips and tricks blog](https://blogs.msdn.microsoft.com/zainnab/)（Visual Studio 提示和技巧博客）
+- [Visual Studio for Mac 中的常用键盘快捷方式](/visualstudio/mac/keyboard-shortcuts)

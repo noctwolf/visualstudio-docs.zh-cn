@@ -2,7 +2,7 @@
 title: 在 Visual Studio 中使用 C# 创建 ASP.NET Core web 应用
 description: 了解如何在 Visual Studio 中使用 C# 和 ASP.NET Core 逐步创建简单的 Hello World Web 应用。
 ms.custom: mvc
-ms.date: 07/20/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,22 +14,34 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: db8dc29af0ccd77d2a0e201056012c726854f85c
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 4f074e118d942aee2d56c30efea6854d4a0cc35e
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054352"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244406"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
 在这篇关于如何使用 Visual Studio 的 5-10 分钟简介中，将使用 ASP.NET 项目模板和 C# 编程语言创建一个简单的“Hello World”Web 应用。
 
+## <a name="before-you-begin"></a>在开始之前
+
+### <a name="install-visual-studio"></a>安装 Visual Studio
+
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
+
+### <a name="update-visual-studio"></a>更新 Visual Studio
+
+如果已经安装 Visual Studio，请确保运行的是最新版本。 有关如何更新安装的详细信息，请参阅[将 Visual Studio 2017 更新到最新版本](../install/update-visual-studio.md)页面。
+
+### <a name="choose-your-theme-optional"></a>选择主题（可选）
+
+本快速入门教程包含使用深色主题的屏幕截图。 如果没有深色主题但想要使用，请参阅[个性化设置 Visual Studio IDE 和编辑器](quickstart-personalize-the-ide.md)页面，了解具体方法。
 
 ## <a name="create-a-project"></a>创建项目
 
-首先，创建一个 ASP.NET Core web 应用程序项目。 项目类型随附了用于创建 Web 应用的全部模板文件，无需添加任何内容！
+首先，将创建 ASP.NET Core web 应用程序项目。 项目类型随附了用于创建 Web 应用的全部模板文件，无需添加任何内容！
 
 1. 打开 Visual Studio 2017。
 
@@ -40,7 +52,7 @@ ms.locfileid: "43054352"
    ![创建面向 C# 的新 ASP.NET Core Web 应用程序项目](../ide/media/csharp-aspnet-choose-template-name-file.png)
 
    > [!NOTE]
-   > 如果没有看到“.NET Core”项目模板类别，请选择左侧窗格中的“打开 Visual Studio 安装程序”链接。
+   > 如果没有看到“.NET Core”项目模板类别，请选择左侧窗格中的“打开 Visual Studio 安装程序”链接。 （根据你的显示设置，进行滚动以便查看。）
    >
    > ![从“新建项目”对话框中打开 Visual Studio 安装程序](../ide/media/open-visual-studio-installer.png)
    >
@@ -50,7 +62,12 @@ ms.locfileid: "43054352"
    >
    > （你可能需要关闭 Visual Studio，然后才能继续安装新的工作负载。）
 
-1. 在“新建 ASP.NET Core Web 应用程序”对话框中，验证“ASP.NET Core 2.0”是否显示在顶部下拉菜单中。 然后，选择“Web 应用程序”，并选择“确定”。
+1. 在“新建 ASP.NET Core Web 应用程序”对话框中，从顶部下拉菜单中选择“ASP.NET Core 2.0”或更高版本。
+
+   > [!NOTE]
+   > 如果没有看到“ASP.NET Core 2.0”或更高版本，请确保你运行的是最新版本的 Visual Studio 。 有关如何更新安装的详细信息，请参阅[将 Visual Studio 2017 更新到最新版本](../install/update-visual-studio.md)页面。
+
+1. 接下来，选择“Web 应用程序”，然后选择“确定”。
 
    ![“新建 ASP.NET Core Web 应用程序”对话框](../ide/media/quickstart-aspnet-core20.png)
 
@@ -91,7 +108,7 @@ ms.locfileid: "43054352"
 1. 按 Ctrl+F5 运行此应用，并在 Web 浏览器中打开它。
 
    > [!NOTE]
-   > 如果看到内容为“无法连接到 Web 服务器‘IIS Express’”的错误消息，请关闭 Visual Studio，再使用右键单击菜单或上下文菜单中的“以管理员身份运行”选项打开它。 然后，再次运行应用。
+   > 如果收到错误消息“无法连接到 Web 服务器 "IIS Express"”，或者收到提及 SSL 证书的错误消息，请关闭 Visual Studio。 接下来，使用右击菜单或上下文菜单中的“以管理员身份运行”选项打开 Visual Studio。 然后，再次运行应用。
 
 1. 在网页的顶部，选择“关于”。
 
@@ -114,4 +131,4 @@ ms.locfileid: "43054352"
 
 ## <a name="see-also"></a>请参阅
 
-[使用 Visual Studio 将 Web 应用发布到 Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+[使用 Visual Studio 将 Web 应用发布到 Azure App Service](../deployment/quickstart-deploy-to-azure.md)

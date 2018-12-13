@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a72a5cb07f39f8d2acaec59e5da5a66a30293453
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258215"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904669"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>演练： 更新的图表中使用单选按钮的文档
   此演练演示如何使用 Microsoft Office Word 文档级自定义中的单选按钮，为用户提供在文档中选择图表样式的选项。  
@@ -30,15 +30,15 @@ ms.locfileid: "35258215"
   
  本演练阐释了以下任务：  
   
--   在文档级项目中，在设计时向文档中添加图表。  
+- 在文档级项目中，在设计时向文档中添加图表。  
   
--   通过将单选按钮添加到用户控件来对它们进行分组。  
+- 通过将单选按钮添加到用户控件来对它们进行分组。  
   
--   在选择了某个选项时更改图表样式。  
+- 在选择了某个选项时更改图表样式。  
   
- 若要查看已完成的示例，请参阅 Word 控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
+  若要查看已完成的示例，请参阅 Word 控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  

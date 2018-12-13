@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_INFO |Microsoft 文档
+title: EXCEPTION_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c48772ed5835daeff9d47773e6e48526993fa425
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bbefc02a05d03dc966c05941ca08c05cce0a5a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103414"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947895"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
-描述的异常或由正在调试的程序引发的运行时错误。  
+描述异常或引发由正在调试的程序的运行时错误。  
   
 ## <a name="syntax"></a>语法  
   
@@ -51,10 +51,10 @@ public struct EXCEPTION_INFO {
   
 ## <a name="members"></a>成员  
  pProgram  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)表示发生了异常的程序的对象。  
+ [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)对象，表示发生了异常的程序。  
   
  bstrProgramName  
- 发生了异常的程序名称。  
+ 发生了异常的程序的名称。  
   
  bstrExceptionName  
  异常的名称。  
@@ -63,13 +63,13 @@ public struct EXCEPTION_INFO {
  异常或运行时错误标识代码。  
   
  dwState  
- 取值范围为[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)定义异常状态的枚举。  
+ 中的值[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)枚举，用于定义异常的状态。  
   
  guidType  
- GUID 语言标识符，`guidLang`或`guidEng`。  
+ GUID 的语言标识符，即`guidLang`或`guidEng`。  
   
 ## <a name="remarks"></a>备注  
- 此结构传递作为参数传递给[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)和[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)方法。 此结构还传递给[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)方法填充的。  
+ 此结构作为参数传递给[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)并[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)方法。 此结构还传递给[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)要填充的方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -78,7 +78,7 @@ public struct EXCEPTION_INFO {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

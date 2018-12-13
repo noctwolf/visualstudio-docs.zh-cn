@@ -1,21 +1,21 @@
 ---
+title: 开发数据解决方案
+description: 了解用于在 Visual Studio 中开发数据方案的各种工具，包括 .NET Framework 工具、SQL Server Data Tools、Azure Data Lake、Azure HDInsight 和 Azure 流分析。
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
-title: 在 Visual Studio 中使用数据工具开发数据解决方案
-description: 了解 Visual Studio 中的数据解决方案工具。
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87a928f1d987d496bee40c4236f53b5e14cb034d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 866737bc91615663df59856b8d06b457ad47c15f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691061"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159680"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>在 Visual Studio 中使用数据工具开发数据解决方案
 
@@ -33,7 +33,7 @@ ms.locfileid: "34691061"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>了解 Visual Studio 和 .NET Framework 工具和 API 支持，开发数据应用程序</h3>
+                        <h3>了解 Visual Studio 和 .NET Framework 工具与 API 对开发数据应用程序的支持</h3>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ ms.locfileid: "34691061"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>了解如何设计、 部署和维护的数据库与 SQL Server Data Tools</h3>
+                        <h3>了解如何通过 SQL Server Data Tools 设计、部署和维护数据库</h3>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,6 @@ ms.locfileid: "34691061"
 
 ---
 
-<hr>
 <h2>参考</h2>
 
 <ul class="panelContent cardsW">
@@ -126,7 +125,7 @@ ms.locfileid: "34691061"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Accessing data in Visual Studio></p>
+                        <p><Access data in Visual Studio></p>
                     </div>
                 </div>
             </div>

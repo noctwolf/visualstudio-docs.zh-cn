@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4aa8aa820330264357341948a468d58d98c86056
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853970"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>错误： 调试并不&#39;t 可能由于系统上启用了内核调试器
 调试托管代码时，你可能会收到以下错误消息：  
@@ -34,27 +34,27 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
  在您尝试调试托管代码时，将出现此消息：  
   
--   在已在调试模式下启动的 [!INCLUDE[win7](../debugger/includes/win7_md.md)] 或 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 系统上。  
+- 在已在调试模式下启动的 [!INCLUDE[win7](../debugger/includes/win7_md.md)] 或 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 系统上。  
   
--   应用程序使用 CLR 版本 2.0、3.0 或 3.5。  
+- 应用程序使用 CLR 版本 2.0、3.0 或 3.5。  
   
 ## <a name="solution"></a>解决方案  
   
 #### <a name="to-fix-this-problem"></a>修复此问题  
   
--   将应用程序升级为使用 CLR 版本 4.0 或 4.5  
+- 将应用程序升级为使用 CLR 版本 4.0 或 4.5  
   
-     - 或 -  
+   - 或 -  
   
--   禁用内核调试，并在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中进行调试。  
+- 禁用内核调试，并在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中进行调试。  
   
-     - 或 -  
+   - 或 -  
   
--   使用内核调试器而不是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 进行调试。  
+- 使用内核调试器而不是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 进行调试。  
   
-     - 或 -  
+   - 或 -  
   
--   在内核调试器中，禁用用户模式异常。  
+- 在内核调试器中，禁用用户模式异常。  
   
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>在当前会话中禁用内核调试  
   

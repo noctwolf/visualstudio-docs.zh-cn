@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 543763049a297a41d2c424da378d486f910f5e1a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b2bda5a9f5d569057455af9e31fb5d6852c9881e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815489"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708：标识符不应仅以大小写进行区分
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldDifferByMoreThanCase|
@@ -43,7 +44,7 @@ ms.locfileid: "45552053"
  选择时就与其他标识符的比较不区分大小写的方式是唯一的名称。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。 库可能不能使用所有可用语言中[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 不禁止显示此规则发出的警告。 库可能不是在.NET Framework 中的所有可用语言中可用。
 
 ## <a name="example-of-a-violation"></a>冲突的示例
  下面的示例演示了此规则的冲突。

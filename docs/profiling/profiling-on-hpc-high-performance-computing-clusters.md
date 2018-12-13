@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: aefdd145abce513e5311d4572a9da64105226b3b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842369"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>对 HPC（高性能计算）群集进行分析
 
@@ -40,7 +40,7 @@ ms.locfileid: "34267840"
 
 - 在 HPC 计算节点上安装 [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 以及分析工具的独立版本。 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 和独立探查器的安装程序都位于 Visual Studio 安装介质上。 **注意** 安装 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 后，必须重新启动计算机，然后才能安装分析工具。
 
- 若要在活动 HPC 计算节点上安装 [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 和独立分析工具并对群集计算机启用分析，请按照以下步骤操作：
+  若要在活动 HPC 计算节点上安装 [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 和独立分析工具并对群集计算机启用分析，请按照以下步骤操作：
 
 1. 打开随 HPC 包安装的命令提示符窗口。
 
@@ -52,11 +52,11 @@ ms.locfileid: "34267840"
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
-|||
-|-|-|
-|*%HeadNode%*|群集的头节点的名称。|
-|*%FxPath%*|[!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 安装程序的路径。 在 Visual Studio 安装介质上，路径是：WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|
-|*%ProfilerPath%*|分析工具安装程序的独立版本的路径。 在 Visual Studio 安装介质上，路径是：Standalone Profiler\x64\vs_profiler.exe|
+| | |
+|------------------| - |
+| *%HeadNode%* | 群集的头节点的名称。 |
+| *%FxPath%* | [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 安装程序的路径。 在 Visual Studio 安装介质上，路径是：WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%ProfilerPath%* | 分析工具安装程序的独立版本的路径。 在 Visual Studio 安装介质上，路径是：Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>对 HPC 计算节点进行分析
 
@@ -68,9 +68,9 @@ ms.locfileid: "34267840"
 
 3. 在向导的第二页上，选择要分析的应用程序。
 
-    - 若要分析当前在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 中打开的项目，请选择“一个或多个可用项目”选项，然后从列表中选择项目名。
+   - 若要分析当前在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 中打开的项目，请选择“一个或多个可用项目”选项，然后从列表中选择项目名。
 
-    - 若要分析不在打开的项目中的二进制文件，请选择“可执行文件(.EXE 文件)”选项。
+   - 若要分析不在打开的项目中的二进制文件，请选择“可执行文件(.EXE 文件)”选项。
 
 4. 单击 **“下一步”**。
 
@@ -137,16 +137,17 @@ ms.locfileid: "34267840"
 
 ### <a name="advanced-properties"></a>高级属性
 
-|属性|描述|
-|--------------|-----------------|
-|**项目名称**|当前 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 项目或解决方案的名称。|
-|**探查器停止时进行清理**|为 true 时，删除已部署到执行目录的二进制文件。 在此步骤中不会删除用户程序创建的文件和目录。 如果执行目录和部署目录是由 IDE 创建的，则 IDE 会尝试删除它们，但是如果它们包含不是由 IDE 部署的文件，则 IDE 不会执行此操作。|
-|**其他要部署的文件**|指定要在计算节点上部署的任何其他文件的分号分隔列表。 可以单击省略号按钮 (**...**) 以使用对话框选择多个文件。|
-|**Mpiexec 命令**|指定启动 MPI 应用程序的应用程序。 默认值为 **mpiexec.exe**|
-|**Mpiexec 参数**|指定要传递到 mpiexec.exe 命令的参数。|
-|**该群集中的所请求的节点**|指定群集中要在其上运行应用程序的节点数。|
-|**部署 CRT 文件**|为 true 时，在群集上部署 C/C++ 运行时。|
-|**分析前脚本**|指定在分析会话启动之前要在本地开发计算机上运行的脚本的路径和文件名。|
-|**分析前脚本参数**|指定要传递到分析前脚本的参数。|
-|**分析后脚本**|指定在分析会话结束之后要在本地开发计算机上运行的脚本的路径和文件名。|
-|**分析后脚本参数**|指定要传递到分析后脚本的参数。|
+| 属性 | 描述 |
+|---------------------------------------| - |
+| **项目名称** | 当前 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 项目或解决方案的名称。 |
+| **探查器停止时进行清理** | 为 true 时，删除已部署到执行目录的二进制文件。 在此步骤中不会删除用户程序创建的文件和目录。 如果执行目录和部署目录是由 IDE 创建的，则 IDE 会尝试删除它们，但是如果它们包含不是由 IDE 部署的文件，则 IDE 不会执行此操作。 |
+| **其他要部署的文件** | 指定要在计算节点上部署的任何其他文件的分号分隔列表。 可以单击省略号按钮 (**...**) 以使用对话框选择多个文件。 |
+| **Mpiexec 命令** | 指定启动 MPI 应用程序的应用程序。 默认值为 **mpiexec.exe** |
+| **Mpiexec 参数** | 指定要传递到 mpiexec.exe 命令的参数。 |
+| **该群集中的所请求的节点** | 指定群集中要在其上运行应用程序的节点数。 |
+| **部署 CRT 文件** | 为 true 时，在群集上部署 C/C++ 运行时。 |
+| **分析前脚本** | 指定在分析会话启动之前要在本地开发计算机上运行的脚本的路径和文件名。 |
+| **分析前脚本参数** | 指定要传递到分析前脚本的参数。 |
+| **分析后脚本** | 指定在分析会话结束之后要在本地开发计算机上运行的脚本的路径和文件名。 |
+| **分析后脚本参数** | 指定要传递到分析后脚本的参数。 |
+

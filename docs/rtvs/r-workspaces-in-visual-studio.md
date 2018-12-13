@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 859e44c912ed98a50d5127675eb2c1bed699ede6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 11b5086c934b433d4e28095c1d50471ea44e15a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235208"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919294"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>控制 R 代码在工作区中的运行位置
 
@@ -37,7 +37,7 @@ ms.locfileid: "36235208"
 
 本地工作区列表显示所有安装在计算机上的 R 解释器。 
 
-Visual Studio 启动时，会尝试通过搜索 *HKEY_LOCAL_MACHINE\Software\R-Core\* 注册表项自动检测已安装的所有 R 版本。 由于仅在启动时执行此检查，因此安装新的 R 解释器时需要重启 Visual Studio。
+启动时，Visual Studio 会尝试浏览 HKEY_LOCAL_MACHINE\Software\R-Core\\ 注册表项，以自动检测已安装的所有 R 版本。 由于仅在启动时执行此检查，因此安装新的 R 解释器时需要重启 Visual Studio。
 
 RTVS 可能无法检测以非标准方式（例如，仅仅将文件复制到文件夹，而不是运行安装程序）安装的 R 解释器。 在这种情况下，请按下列步骤手动创建新的本地 R 工作区：
 

@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS |Microsoft 文档
+title: BP_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 481dd21287ba3ca68c2abc61412785fc0151788d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fba22042f5b12cfb9140e93e9e7efbeb0342328
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904162"
 ---
 # <a name="bpflags"></a>BP_FLAGS
-提供可用于设置断点时指定的附加信息的可选标志。  
+提供了可用于设置一个断点时指定的附加信息的可选标志。  
   
 ## <a name="syntax"></a>语法  
   
@@ -49,15 +49,15 @@ public enum enum_BP_FLAGS {
  不指定任何断点标志。  
   
  BP_FLAG_MAP_DOCPOSITION  
- 指定的调试引擎 (DE) 应映射使用文档位置断点。 这是仅适用于面向脚本的源代码文件，如 Active Server Pages (ASP) 中设置断点。  
+ 指定调试引擎 (DE) 应映射使用的文档位置断点。 这是仅适用于面向脚本的源代码文件，如 Active Server Pages (ASP) 中设置断点。  
   
  BP_FLAG_DONT_STOP  
- 指定的调试引擎中，应处理断点，但的调试引擎最终应停止存在 (即， [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)不应发送事件对象)。 此标志用于主要与跟踪点一起使用。  
+ 指定调试引擎中，应处理断点，但是，调试引擎最终应接着往下看 (即[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)事件对象不应在发送)。 此标志用于主要与跟踪点一起使用。  
   
 ## <a name="remarks"></a>备注  
- 用于`dwFlags`的成员[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)和[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构。  
+ 用于`dwFlags`的成员[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)并[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构。  
   
- 这些值可以与按位组合`OR`。  
+ 可能的按位组合这些值`OR`。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -66,7 +66,7 @@ public enum enum_BP_FLAGS {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   

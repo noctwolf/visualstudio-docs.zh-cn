@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc429e0d1d4afab5aa85387c228b981486796d08
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: dfeb65cd23b14949857faf4253dfec3ec85f5b20
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638080"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889381"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函数
 此函数会提示用户输入项目路径，这是一个字符串，它仅对源代码管理插件有意义。 当用户是，将调用：  

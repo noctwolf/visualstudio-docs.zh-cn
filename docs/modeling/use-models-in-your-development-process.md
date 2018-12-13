@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d780f8ab293a9503f3c2c8675e4de1e3584b28
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 25debac1e5f2e977e5dd36ec8b4a083a1a362d1b
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623828"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967215"
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 
@@ -48,7 +48,7 @@ ms.locfileid: "42623828"
 
 ## <a name="use-models-with-other-artifacts"></a>将模型与其他项目使用
 
-一个模型本身并不是需求规范或体系结构。 它是一个工具，用于更清楚地表达的事物某些方面，但不是所有软件设计过程中所需的全部概念都可以表达出来。 因此，模型应当与其他通信方法一起使用，如 OneNote 页面或段落、Microsoft Office 文档、[!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中的工作项，或项目文件室墙上的粘滞便笺。 除了最后一项，所有这些对象类型都可以链接到模型的元素部分。
+一个模型本身并不是需求规范或体系结构。 它是一个工具，用于更清楚地表达的事物某些方面，但不是所有软件设计过程中所需的全部概念都可以表达出来。 因此应与通信，如 OneNote 页面或段落、 Microsoft Office 文档、 工作项，在 Team Foundation 或项目文件室墙上的粘滞便笺中的其他方式一起使用的模型。 除了最后一项，所有这些对象类型都可以链接到模型的元素部分。
 
 通常与模型一起使用的其他方面的规范包括以下内容。 具体取决于项目的大小和样式，你可以使用这些方面中的几个，也可以根本不适用它们：
 
@@ -88,7 +88,7 @@ ms.locfileid: "42623828"
 
 - 每次迭代接近结束时，举办一次需求研讨会，以详细定义将在下个迭代中开发的需求或用户情景。 邀请能够确定优先级的用户和业务利益干系人，以及开发人员和系统测试员。 允许用三个小时为一个 2 周的迭代定义需求。
 
-- 该研讨会的目标是使每个人就下个迭代结束时将完成的内容达成一致。 将模型用作一种工具来帮助阐明需求。 该研讨会的输出是一个迭代积压工作：即 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中的开发任务列表和 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 中的测试套件。
+- 该研讨会的目标是使每个人就下个迭代结束时将完成的内容达成一致。 将模型用作一种工具来帮助阐明需求。 该研讨会的输出是一个迭代积压工作： 即，在 Team Foundation 和测试套件中的开发任务的列表[!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]。
 
 - 在需求研讨会中，仅在你需要为开发任务确定估计值的范围内讨论设计。 否则，请保持讨论用户可以直接体验的系统行为。 保持需求模型与体系结构模型分开。
 
@@ -96,7 +96,7 @@ ms.locfileid: "42623828"
 
 ### <a name="link-model-to-work-items"></a>将模型链接到工作项
 
-需求研讨会结束后，请详细说明需求模型的的详细信息，并将模型链接到开发任务。 你可以通过将 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中的工作项链接到模型中的元素来实现此操作。
+需求研讨会结束后，请详细说明需求模型的的详细信息，并将模型链接到开发任务。 可以通过将 Team Foundation 中的工作项链接到模型中的元素来执行此操作。
 
 你可以将任意元素链接到工作项，但最有用的元素如下所示：
 
@@ -123,7 +123,7 @@ ms.locfileid: "42623828"
 不同类型的关系图可用于描述不同抽象级别的设计。 许多关系图类型可用于多个级别。 此表显示可以如何使用每种类型的关系图。
 
 |设计级别|关系图类型|
-|------------------|-------------------|
+|-|-|
 |业务流程<br /><br /> 了解将在其中使用你的系统的上下文有助于你了解用户对系统的需求。|-概念类图描述了业务流程中使用的业务概念。|
 |用户需求<br /><br /> 用户对系统的需求的定义。|的可以在单独的文档中描述业务规则和服务质量要求。|
 |高级设计<br /><br /> 系统的整体结构：主要组件以及它们如何结合在一起。|-依赖项关系图介绍了如何将系统组织成相互依赖的部件。 您可以验证程序代码对依赖项关系图，以确保它符合体系结构。|
@@ -132,15 +132,15 @@ ms.locfileid: "42623828"
 ## <a name="external-resources"></a>外部资源
 
 |**类别**|**链接**|
-|------------------|---------------|
+|-|-|
 |**视频**|![视频链接](../data-tools/media/playvideo.gif) [MSDN 如何实现视频： 如何创建和使用 UML 模型和关系图 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif)[第 9 频道： Visual Studio 2010 中的 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif) [MSDN 如何实现系列： UML 工具和扩展性 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**论坛**|- [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 可视化和建模 SDK （DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**论坛**|- [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 可视化和建模 SDK（DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**博客**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**技术文章和日志**|[MSDN 体系结构中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 体系结构工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>请参阅
 
-- [在敏捷开发中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [在敏捷开发中使用模型](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [为应用程序创建模型](../modeling/create-models-for-your-app.md)
 - [建立用户需求模型](../modeling/model-user-requirements.md)
 - [应用体系结构建模](../modeling/model-your-app-s-architecture.md)

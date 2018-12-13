@@ -11,33 +11,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7620922bad8f35186beb4086dd3c24a98ada6d34
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7d0605798f5970411fa315d309807dc6f1f7a0cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872351"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>演练： 创建视图修饰、 命令和设置 （列参考线）
 您可以扩展 Visual Studio 文本/代码编辑器与命令和查看效果。 本文介绍如何开始使用常用扩展功能，列参考线。 列参考线是以可视方式浅色文本编辑器的视图，以帮助您管理您的代码与特定的列宽度上绘制的线条。 具体而言，格式化的代码非常重要的示例包括在文档中，博客文章或 bug 报告。  
   
  在此演练中，您：  
   
--   创建一个 VSIX 项目  
+- 创建一个 VSIX 项目  
   
--   添加编辑器视图修饰  
+- 添加编辑器视图修饰  
   
--   添加对保存和获取 （何处进行绘图列参考线和它们的颜色） 的设置的支持  
+- 添加对保存和获取 （何处进行绘图列参考线和它们的颜色） 的设置的支持  
   
--   添加命令 （添加/删除列参考线，将其颜色设置）  
+- 添加命令 （添加/删除列参考线，将其颜色设置）  
   
--   将命令放在编辑菜单和文本文档上下文菜单  
+- 将命令放在编辑菜单和文本文档上下文菜单  
   
--   添加调用 Visual Studio 命令窗口中的命令支持  
+- 添加调用 Visual Studio 命令窗口中的命令支持  
   
- 您可以试用版本的列参考线功能使用此 Visual Studio 库[扩展](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)。  
+  您可以试用版本的列参考线功能使用此 Visual Studio 库[扩展](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。  
   
- **请注意**： 在本演练中，你将粘贴非常高的代码到几个文件生成的 Visual Studio 扩展模板。 但是，本演练将很快引用与其他扩展插件示例的 github 上的已完成的解决方案。 因为它可以真正命令图标而不是使用 generictemplate 图标已完成的代码略有不同。  
+  **请注意**： 在本演练中，你将粘贴非常高的代码到几个文件生成的 Visual Studio 扩展模板。 但是，本演练将很快引用与其他扩展插件示例的 github 上的已完成的解决方案。 因为它可以真正命令图标而不是使用 generictemplate 图标已完成的代码略有不同。  
   
 ## <a name="get-started"></a>入门  
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它包含作为 Visual Studio 安装程序中的可选功能。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
@@ -45,21 +45,21 @@ ms.locfileid: "39499986"
 ## <a name="set-up-the-solution"></a>设置解决方案  
  首先，创建一个 VSIX 项目，添加编辑器视图修饰，，然后添加的命令 （其中添加 VSPackage 以拥有该命令）。 基本体系结构如下所示：  
   
--   创建了文本视图创建侦听器`ColumnGuideAdornment`每个视图的对象。 此对象侦听有关视图更改事件或更改设置，根据需要更新或重绘列的指导。  
+- 创建了文本视图创建侦听器`ColumnGuideAdornment`每个视图的对象。 此对象侦听有关视图更改事件或更改设置，根据需要更新或重绘列的指导。  
   
--   没有`GuidesSettingsManager`用于处理读取和写入从 Visual Studio 设置存储。 设置管理器还具有用于更新支持的用户命令的设置的操作 （添加列、 删除列、 更改颜色）。  
+- 没有`GuidesSettingsManager`用于处理读取和写入从 Visual Studio 设置存储。 设置管理器还具有用于更新支持的用户命令的设置的操作 （添加列、 删除列、 更改颜色）。  
   
--   如果有用户命令是必需的 VSIP 包，但它是仅初始化命令实现对象的样板代码。  
+- 如果有用户命令是必需的 VSIP 包，但它是仅初始化命令实现对象的样板代码。  
   
--   没有`ColumnGuideCommands`运行用户的对象的命令和命令中声明为挂接命令处理程序 *.vsct*文件。  
+- 没有`ColumnGuideCommands`运行用户的对象的命令和命令中声明为挂接命令处理程序 *.vsct*文件。  
   
- **VSIX**。 使用**文件 &#124;新增功能 ...** 命令以创建项目。 选择**扩展性**节点下的**C#** 左侧的导航窗格中，然后选择**VSIX 项目**右窗格中。 输入的名称**ColumnGuides** ，然后选择**确定**创建项目。  
+  **VSIX**。 使用**文件 &#124;新增功能 ...** 命令以创建项目。 选择**扩展性**节点下的**C#** 左侧的导航窗格中，然后选择**VSIX 项目**右窗格中。 输入的名称**ColumnGuides** ，然后选择**确定**创建项目。  
   
- **查看修饰**。 在解决方案资源管理器中的项目节点上按右指针按钮。 选择**添加&#124;新建项...** 命令，将添加的新视图修饰项。 选择**扩展&#124;编辑器**左侧的导航窗格中，然后选择**编辑器视区修饰**右窗格中。 输入的名称**ColumnGuideAdornment**作为项命名，并选择**添加**以将其添加。  
+  **查看修饰**。 在解决方案资源管理器中的项目节点上按右指针按钮。 选择**添加&#124;新建项...** 命令，将添加的新视图修饰项。 选择**扩展&#124;编辑器**左侧的导航窗格中，然后选择**编辑器视区修饰**右窗格中。 输入的名称**ColumnGuideAdornment**作为项命名，并选择**添加**以将其添加。  
   
- 您可以看到这个项模板添加到项目 （以及引用和等等） 的两个文件： **ColumnGuideAdornment.cs**并**ColumnGuideAdornmentTextViewCreationListener.cs**。 这些模板在视图上绘制一个紫色矩形。 在以下部分中，将更改几个行中的视图创建侦听器和的内容替换为**ColumnGuideAdornment.cs**。  
+  您可以看到这个项模板添加到项目 （以及引用和等等） 的两个文件： **ColumnGuideAdornment.cs**并**ColumnGuideAdornmentTextViewCreationListener.cs**。 这些模板在视图上绘制一个紫色矩形。 在以下部分中，将更改几个行中的视图创建侦听器和的内容替换为**ColumnGuideAdornment.cs**。  
   
- **命令**。 在中**解决方案资源管理器**，按右指针按钮上的项目节点。 选择**添加&#124;新建项...** 命令，将添加的新视图修饰项。 选择**扩展&#124;VSPackage**左侧的导航窗格中，然后选择**自定义命令**右窗格中。 输入的名称**ColumnGuideCommands**作为项命名，并选择**添加**。 多个引用，除了添加的命令和包还添加了**ColumnGuideCommands.cs**， **ColumnGuideCommandsPackage.cs**，和**ColumnGuideCommandsPackage.vsct**. 在以下部分中，您将为第一个和最后一个文件，以定义和实现命令的内容。  
+  **命令**。 在中**解决方案资源管理器**，按右指针按钮上的项目节点。 选择**添加&#124;新建项...** 命令，将添加的新视图修饰项。 选择**扩展&#124;VSPackage**左侧的导航窗格中，然后选择**自定义命令**右窗格中。 输入的名称**ColumnGuideCommands**作为项命名，并选择**添加**。 多个引用，除了添加的命令和包还添加了**ColumnGuideCommands.cs**， **ColumnGuideCommandsPackage.cs**，和**ColumnGuideCommandsPackage.vsct**. 在以下部分中，您将为第一个和最后一个文件，以定义和实现命令的内容。  
   
 ## <a name="set-up-the-text-view-creation-listener"></a>设置文本视图创建侦听器  
  打开*ColumnGuideAdornmentTextViewCreationListener.cs*在编辑器中。 For Visual Studio 创建文本视图时，此代码将实现一个处理程序。 有控制处理程序根据视图的特征的调用时的特性。  
@@ -1349,7 +1349,7 @@ private int GetApplicableColumn(EventArgs e)
 ## <a name="finished-code-project"></a>完成的代码项目  
  很快将 Visual Studio 扩展性示例的 github 项目和已完成的项目会在那里。 若要在这种情况存在点，将更新这篇文章。 已完成的示例项目可能具有不同的 guid，将有不同的位图条命令图标。  
   
- 您可以试用版本的列参考线功能使用此 Visual Studio 库[扩展](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)。  
+ 您可以试用版本的列参考线功能使用此 Visual Studio 库[扩展](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。  
   
 ## <a name="see-also"></a>请参阅  
  [在编辑器内](../extensibility/inside-the-editor.md)   

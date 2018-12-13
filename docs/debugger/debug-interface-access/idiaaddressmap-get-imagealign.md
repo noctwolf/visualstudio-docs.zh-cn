@@ -1,5 +1,5 @@
 ---
-title: 'Idiaaddressmap:: Get_imagealign |Microsoft 文档'
+title: 'Idiaaddressmap:: Get_imagealign |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd085e59606b1e8598359636208cf308ff0b711d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 409b33953d6674066eff9570288de2e3912bdab3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908821"
 ---
 # <a name="idiaaddressmapgetimagealign"></a>IDiaAddressMap::get_imageAlign
 检索当前的图像对齐方式。  
@@ -40,7 +40,7 @@ HRESULT get_imageAlign (
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 映像已加载并创建映像的方式，具体取决于特定内存边界对齐。 对齐方式通常是在 1、 2、 4、 8、 16、 32 或 64 字节边界上。 可以通过调用设置的图像对齐方式[idiaaddressmap:: Put_imagealign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)方法。  
+ 如何加载并创建映像时，具体取决于特定的内存边界对齐图像。 对齐方式通常是 1、 2、 4、 8、 16、 32 或 64 字节边界上。 可以通过调用设置的图像对齐方式[idiaaddressmap:: Put_imagealign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)方法。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   

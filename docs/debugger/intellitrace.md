@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace |Microsoft Docs
 ms.custom: ''
-ms.date: 07/18/2017
+ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bddba938360b56b0ed86d4aca35aa963cdd7a84
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: e2ee2e3662e550e013b2f8436cc32ee9585a419d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321014"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825409"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -45,18 +45,18 @@ ms.locfileid: "44321014"
 
 |||
 |-|-|
-|**调试我的应用程序使用 IntelliTrace:**<br /><br /> -向我显示过去的事件。<br />-显示我调用与过去的事件的信息。<br />-保存我的 IntelliTrace 会话。<br />控制 IntelliTrace 收集的数据。|- [演练： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [历史调试](../debugger/historical-debugging.md)<br />- [使用 IntelliTrace 后退查看快照](../debugger/how-to-use-intellitrace-step-back.md)|
+|**调试我的应用程序使用 IntelliTrace:**<br /><br /> -向我显示过去的事件。<br />-显示我调用与过去的事件的信息。<br />-保存我的 IntelliTrace 会话。<br />控制 IntelliTrace 收集的数据。|- [检查使用 IntelliTrace 的上一个应用程序状态](../debugger/view-historical-application-state.md)<br />- [演练： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [历史调试](../debugger/historical-debugging.md)|
 |**测试管理器中的测试会话期间收集 IntelliTrace 数据**|- [收集在手动测试中的更多诊断数据](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**从已部署应用程序收集 IntelliTrace 数据**|- [使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**开始调试从 IntelliTrace 日志文件 （.iTrace 文件）。**|- [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)|
 
 ## <a name="IntelliTraceSupport"></a> 哪些应用可以使用 IntelliTrace 进行调试？
 
-|||
-|-|-|
-|**支持**|的使用.NET Framework 2.0 或更高版本 Visual Basic 和 Visual C# 应用程序。<br/>你可以调试大多数应用程序，包括 ASP.NET、Microsoft Azure、Windows 窗体、WCF、WPF、Windows 工作流、SharePoint 2010、SharePoint 2013 和 64 位应用。<br/>若要调试 SharePoint 应用程序使用 IntelliTrace，请参阅[演练： 调试 SharePoint 应用程序通过使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要调试 IntelliTrace 使用 Microsoft Azure 应用程序，请参阅[调试已发布的云服务使用 IntelliTrace 和 Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。|
-|**有限的支持**|.NET Core 和 ASP.NET Core 应用某些仅事件 （MVC 控制器、 ADO.NET 和 HTTPClicent 事件） 中支持本地调试。 .NET Core 或 ASP.NET Core 应用不支持独立收集器。<br />的实验证明 F # 应用程序<br />-UWP 应用仅支持事件|
-|**不支持**|-C + +、 其他语言和脚本<br />-Windows 服务、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]应用|
+| | |
+|---------------------| - |
+| **完全支持** | 的使用.NET Framework 2.0 或更高版本 Visual Basic 和 Visual C# 应用程序。<br/>你可以调试大多数应用程序，包括 ASP.NET、Microsoft Azure、Windows 窗体、WCF、WPF、Windows 工作流、SharePoint 2010、SharePoint 2013 和 64 位应用。<br/>若要调试 SharePoint 应用程序使用 IntelliTrace，请参阅[演练： 调试 SharePoint 应用程序通过使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要调试 IntelliTrace 使用 Microsoft Azure 应用程序，请参阅[调试已发布的云服务使用 IntelliTrace 和 Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。 |
+| **有限的支持** | -面向 Windows 支持查看快照使用 IntelliTrace 后退本机应用。 支持唯一的调试器和异常事件。<br />.NET Core 和 ASP.NET Core 应用某些仅事件 （MVC 控制器、 ADO.NET 和 HTTPClicent 事件） 中支持本地调试。 .NET Core 或 ASP.NET Core 应用不支持独立收集器。<br />的实验证明 F # 应用程序<br />-UWP 应用仅支持事件 |
+| **不支持** | -其他语言和脚本<br />-Windows 服务、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)]应用 |
 
 > [!NOTE]
 > 如果你想要调试已在运行的进程，您可以仅收集 IntelliTrace 事件 （没有调用信息）。 您可以将附加到本地计算机上的 32 位或 64 位进程。 不收集发生之前附加到进程的事件。
@@ -77,7 +77,7 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
 - IIS 上托管的 ASP.NET Web 应用程序，或使用 Microsoft Monitoring Agent（单独使用或与 System Center 2012 一起使用）时在部署中运行的 SharePoint 2010 和 SharePoint 2013 应用程序。 请参阅[使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)并[监视使用 Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx)。
 
- 下面是一些示例，说明 IntelliTrace 如何帮助你进行调试：
+  下面是一些示例，说明 IntelliTrace 如何帮助你进行调试：
 
 - 你的应用程序损坏了一个数据文件，但是你不知道此事件的发生位置。
 
@@ -111,11 +111,11 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
      默认情况下，有助于提高性能，IntelliTrace 不记录调试器事件每个可能值。 而是记录以下值：
 
-    - 中的值**局部变量**窗口。 保持**局部变量**窗口打开状态以查看这些值。
+  - 中的值**局部变量**窗口。 保持**局部变量**窗口打开状态以查看这些值。
 
-    - 中的值**自动**窗口才**自动**窗口处于打开状态
+  - 中的值**自动**窗口才**自动**窗口处于打开状态
 
-    - 在将鼠标指针移到源窗口中的变量的上方以查看其值时显示的数据提示中的值。 IntelliTrace 不收集固定数据提示中的值。
+  - 在将鼠标指针移到源窗口中的变量的上方以查看其值时显示的数据提示中的值。 IntelliTrace 不收集固定数据提示中的值。
 
     启用 IntelliTrace 事件和快照模式下，IntelliTrace 将快照应用程序的进程在每个调试器**断点**并**步骤**事件。 这将记录中的值**局部变量**，**自动**，并**观看**windows，而不考虑各个窗口是否是打开。 此外会收集任何固定的数据提示中的值。
 
@@ -149,7 +149,7 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
 可以配置 IntelliTrace 以捕获每个断点处的快照和调试器单步执行事件。 IntelliTrace 记录在每个快照，可查看复杂变量，并可对表达式求值的完整的应用程序状态。
 
-请参阅[查看快照使用 IntelliTrace 后退](../debugger/how-to-use-intellitrace-step-back.md)。
+请参阅[检查上一应用程序状态使用 IntelliTrace](../debugger/view-historical-application-state.md)。
 
 **收集函数调用信息**
 

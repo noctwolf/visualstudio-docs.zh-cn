@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::SetNextStatement |Microsoft 文档
+title: IDebugThread2::SetNextStatement |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e59d4087e44458ecd49efd5d7be9f45e68c6da2b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfc2afb15dbacde1eb0a96178d2769365deb4e31
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119528"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893782"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 将当前指令指针设置为给定的代码上下文。  
@@ -43,24 +43,24 @@ int SetNextStatement (
   
 #### <a name="parameters"></a>参数  
  `pStackFrame`  
- 留待将来使用;设置为 null 值。  
+ 保留供将来使用;设置为 null 值。  
   
  `pCodeContext`  
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)对象，描述将要执行的代码位置和其上下文。  
+ [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)对象，描述要执行的代码位置和其上下文。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示其他可能的值。  
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了其他可能的值。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|下一个语句不能为更深入地帧堆栈上的堆栈帧中。|  
-|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|下一条语句与堆栈中的任何帧无关。|  
-|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|一些调试引擎不能设置在出现异常之后的下一个语句。|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|下一条语句不能为帧堆栈上更深入的堆栈帧中。|  
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|下一条语句不是堆栈中任何帧与相关联。|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|某些调试引擎不能设置在出现异常之后的下一个语句。|  
   
 ## <a name="remarks"></a>备注  
- 指令指针指示的下一步的指令或语句，以执行。 若要重试代码的源代码行，或若要强制执行继续在另一个函数，例如，使用此方法。  
+ 指令指针指示的下一步的指令或语句，以执行。 若要重试源代码的行，或若要强制执行以继续在另一个函数，例如，使用此方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

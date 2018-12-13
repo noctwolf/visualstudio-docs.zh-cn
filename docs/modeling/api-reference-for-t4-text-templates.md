@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ea0b136659b57b8430a355b4e231423c5e55b2b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5770cc071e8d981b3410db6165b5bf1ed6ef350
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946096"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833994"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>T4 文本模板的 API 参考
 
@@ -23,7 +23,7 @@ ms.locfileid: "31946096"
 ## <a name="namespaces"></a>命名空间
 
 |命名空间|目标|
-|---------------|-------------|
-|<xref:Microsoft.VisualStudio.TextTemplating>|包含文本模板转换功能的类。 文本模板转换引擎集成到 Visual Studio 中，并将文本模板文件转换为生成的文本输出文件。|
-|<xref:Microsoft.VisualStudio.TextTemplating.Modeling>|提供与 UML 模型和域特定语言，例如访问相关的转换功能的文本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus。|
-|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|提供对中的文本模板化服务的访问[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。|
+|-|-|
+|<xref:Microsoft.VisualStudio.TextTemplating>|包含用于文本模板转换功能的类。 文本模板转换引擎集成到 Visual Studio 中，并将文本模板文件转换为生成的文本输出文件。|
+|<xref:Microsoft.VisualStudio.TextTemplating.Modeling>|提供文本与 UML 模型和特定于域的语言，如 Visual Studio ModelBus 访问相关的转换功能。|
+|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|提供对 Visual Studio 中的文本模板化服务的访问。|

@@ -8,15 +8,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 dev_langs:
-- csharp
+- CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc6ee94cbebb1cb35dd524017f22bd8ab3812468
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: b3a231aafce69bfeeaff7defee6d5f85c7ffc8b2
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124952"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896596"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>将变量声明移动到引用附近
 
@@ -37,9 +37,9 @@ ms.locfileid: "44124952"
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“移动声明至引用附近”。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“移动声明至引用附近”。
    - **鼠标**
-     - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“移动声明至引用附近”。
+      - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“移动声明至引用附近”。
 
 1. 对更改感到满意时，按 Enter 或单击菜单中的修复，即可提交所做的更改。
 

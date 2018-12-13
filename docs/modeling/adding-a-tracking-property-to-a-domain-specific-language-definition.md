@@ -13,77 +13,78 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: aec41a7ad2c93d9ad5762f8e4c7e67ea93704f1f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0417507323a627753bc62e50b424c37b547d4dad
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953856"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967475"
 ---
-# <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>将跟踪属性添加到的域特定语言定义
+# <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>向域特定语言定义中添加跟踪属性
 
-本演练演示如何向域模型中添加跟踪属性。
+本演练演示如何将跟踪属性添加到域模型。
 
-A*跟踪域*属性是的属性，用户可以更新，但具有一个默认值，通过使用其他域属性或元素的值来计算。
+一个*跟踪域*属性是用户可以更新，但具有一个默认值，通过使用其他域属性或元素的值计算的属性。
 
-例如，在域特定语言工具 （DSL 工具），属性的域类具有一个默认值，通过使用域类，而是用户的名称来计算的显示名称可以在设计时更改的值或其重置为计算值。
+例如，在域特定语言工具 （DSL 工具），域类的属性具有默认值通过使用域类中，而是用户的名称的显示名称可以在设计时更改值或其重置为计算的值。
 
-在本演练中，你将创建具有跟踪具有基于模型的默认 Namespace 属性的默认值的属性的 Namespace 的域特定语言 (DSL)。 有关跟踪属性的详细信息，请参阅[定义跟踪属性](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。
+在本演练中，创建域特定语言 (DSL) 具有 Namespace 跟踪基于模型的默认 Namespace 属性的默认值的属性。 有关跟踪属性的详细信息，请参阅[定义跟踪属性](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。
 
--   跟踪属性描述符 DSL 工具支持。 但是，DSL 设计器不能用于将跟踪属性添加到一种语言。 因此，你必须添加自定义代码以定义和实现跟踪属性。
+- 跟踪属性说明符 DSL 工具支持。 但是，在 DSL 设计器不能用于向语言添加跟踪属性。 因此，必须添加自定义代码来定义和实现的跟踪属性。
 
- 跟踪属性有两种状态： 跟踪，并更新用户。 跟踪属性具有以下功能：
+  跟踪属性有两种状态： 跟踪，并更新用户。 跟踪属性具有以下功能：
 
--   当跟踪状态中，跟踪属性的值计算，且值更新为模型更改中的其他属性。
+- 中的跟踪状态，当计算跟踪属性的值，和的值更新为模型更改中的其他属性。
 
--   在更新时由用户状态时，跟踪属性的值保留为其用户上次设置的属性的值。
+- 当在更新用户状态的跟踪属性的值将保留到的用户上次设置该属性的值。
 
--   在**属性**窗口中，**重置**命令属性是在更新后才可以启用跟踪属性通过用户状态。 **重置**命令将跟踪属性设置为跟踪状态。
+- 在中**属性**窗口中，**重置**命令对于在更新属性时，仅启用了跟踪属性的用户状态。 **重置**命令的跟踪属性设置为跟踪状态。
 
--   在**属性**窗口中，当跟踪属性处于跟踪状态，其值显示在正则字体。
+- 在中**属性**以常规字体显示窗口中，当跟踪属性处于跟踪状态，其值。
 
--   在**属性**窗口中，跟踪属性为在更新时由用户状态，以粗体显示其值。
+- 在中**属性**窗口中，在更新跟踪属性时通过用户状态，以粗体显示其值。
 
 ## <a name="prerequisites"></a>系统必备
 
-在开始本演练之前，您必须首先安装这些组件：
+在开始本演练之前，必须首先安装这些组件：
 
-|||
+
+| | |
 |-|-|
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
 
 ## <a name="create-the-project"></a>创建项目
 
 1.  创建域特定语言设计器项目。 将其命名为 `TrackingPropertyDSL`。
 
-2.  在**域特定语言设计器向导**，设置以下选项：
+2.  在中**域特定语言设计器向导**，设置以下选项：
 
     1.  选择**MinimalLanguage**模板。
 
-    2.  使用域特定语言中，默认名称`TrackingPropertyDSL`。
+    2.  使用域特定语言的默认名称`TrackingPropertyDSL`。
 
-    3.  设置到的模型文件的扩展名`trackingPropertyDsl`。
+    3.  设置到的模型文件的扩展名为`trackingPropertyDsl`。
 
-    4.  用于模型文件的默认模板图标。
+    4.  模型文件使用默认模板图标。
 
-    5.  设置到的产品的名称`Product Name`。
+    5.  设置到产品的名称`Product Name`。
 
-    6.  设置为公司的名称`Company Name`。
+    6.  设置为公司名称`Company Name`。
 
-    7.  默认值用于在解决方案中，项目的根命名空间`CompanyName.ProductName.TrackingPropertyDSL`。
+    7.  使用解决方案中项目的根命名空间的默认值`CompanyName.ProductName.TrackingPropertyDSL`。
 
-    8.  允许向导为你的程序集创建强名称密钥文件。
+    8.  允许向导为您的程序集创建强名称密钥文件。
 
-    9. 查看该解决方案的详细信息，然后单击**完成**创建 DSL 定义项目。
+    9. 查看解决方案的详细信息，然后单击**完成**创建 DSL 定义项目。
 
 ## <a name="customize-the-default-dsl-definition"></a>自定义默认 DSL 定义
- 在此部分中，你自定义 DSL 定义以包含以下项：
+ 在本部分中，您自定义 DSL 定义中包含以下各项：
 
--   跟踪模型的每个元素的属性的 Namespace。
+-   跟踪每个元素的模型属性的 Namespace。
 
--   模型的每个元素的布尔 IsNamespaceTracking 属性。 此属性将指示跟踪属性是否跟踪状态或处于已更新的用户状态。
+-   一个布尔 IsNamespaceTracking 属性，为模型的每个元素的。 此属性将指示跟踪属性是否在跟踪状态或已更新的用户状态。
 
 -   该模型默认 Namespace 属性。 此属性将用于计算 Namespace 跟踪属性的默认值。
 
@@ -91,79 +92,79 @@ A*跟踪域*属性是的属性，用户可以更新，但具有一个默认值�
 
 ### <a name="to-add-the-domain-properties"></a>若要添加的域属性
 
-1.  在 DSL 设计器中，右键单击**ExampleModel**域类，指向**添加**，然后单击**DomainProperty**。
+1.  在 DSL 设计器中，右键单击**ExampleModel**域类中，依次指向**添加**，然后单击**DomainProperty**。
 
     1.  命名新属性`DefaultNamespace`。
 
-    2.  在**属性**窗口中为新的属性中，设置**默认值**到`DefaultNamespace`，并设置**类型**到**字符串**。
+    2.  在中**属性**窗口中的为新属性，设置**默认值**到`DefaultNamespace`，并设置**类型**到**字符串**。
 
-2.  到**ExampleModel**域类中，添加名为的域属性`CustomElements`。
+2.  向**ExampleModel**域类中，添加名为的域属性`CustomElements`。
 
-     在**属性**窗口中为新的属性中，设置**类型**到**计算**。
+     在中**属性**窗口中的为新属性，设置**种类**到**计算**。
 
-3.  到**ExampleElement**域类中，添加名为的域属性`Namespace`。
+3.  向**ExampleElement**域类中，添加名为的域属性`Namespace`。
 
-     在**属性**窗口中为新的属性中，设置**是可浏览**到**False**，并设置**类型**到**CustomStorage**.
+     在中**属性**窗口中的为新属性，设置**是可浏览**到**False**，并设置**类型**到**CustomStorage**.
 
-4.  到**ExampleElement**域类中，添加名为的域属性`IsNamespaceTracking`。
+4.  向**ExampleElement**域类中，添加名为的域属性`IsNamespaceTracking`。
 
-     在**属性**窗口中为新的属性中，设置**是可浏览**到**False**，将其设置**默认值**到`true`，并设置**类型**到**布尔**。
+     中**属性**窗口中的为新属性，设置**是可浏览**到**False**，将**Default Value**到`true`，并设置**类型**到**布尔**。
 
-### <a name="to-update-the-diagram-elements-and-dsl-details"></a>若要更新的图表元素和 DSL 详细信息
+### <a name="to-update-the-diagram-elements-and-dsl-details"></a>若要更新的关系图元素和 DSL 详细信息
 
-1.  在 DSL 设计器中，右键单击**ExampleShape**几何形状，指向**添加**，然后单击**文本修饰器**。
+1.  在 DSL 设计器中，右键单击**ExampleShape**几何形状，依次指向**添加**，然后单击**文本修饰器**。
 
     1.  命名新文本修饰器`NamespaceDecorator`。
 
-    2.  在**属性**窗口中的文本修饰器，设置**位置**到**InnerBottomLeft**。
+    2.  在中**属性**窗口中的文本修饰器，设置**位置**到**InnerBottomLeft**。
 
-2.  在 DSL 设计器中，选择连接的行**ExampleElement**类到**ExampleShape**形状。
+2.  在 DSL 设计器中，选择连接的线**ExampleElement**类来**ExampleShape**形状。
 
-    1.  在**DSL 详细信息**窗口中，选择**修饰器地图**选项卡。
+    1.  在中**DSL 详细信息**窗口中，选择**修饰器映射**选项卡。
 
-    2.  在**修饰符**列表中，选择**NamespaceDecorator**，选中其复选框，然后在**显示属性**列表中，选择**Namespace**.
+    2.  在中**修饰器**列表中，选择**NamespaceDecorator**，选中其复选框，然后在**显示属性**列表中，选择**Namespace**.
 
-3.  在**DSL 资源管理器**，展开**域类**文件夹中，右键单击**ExampleElement**节点，，然后单击**添加新域类型描述符**.
+3.  在中**DSL 资源管理器**，展开**域类**文件夹中，右键单击**ExampleElement**节点，并单击**添加新域类型描述符**.
 
     1.  展开**ExampleElement**节点，然后选择**自定义类型描述符 （域类型描述符）** 节点。
 
-    2.  在**属性**域类型描述符，窗口中将设置**自定义编码**到**True**。
+    2.  在中**属性**窗口中的域类型描述符，将**自定义编码**到**True**。
 
-4.  在**DSL 资源管理器**，选择**Xml 序列化行为**节点。
+4.  在中**DSL 资源管理器**，选择**Xml 序列化行为**节点。
 
-    1.  在**属性**窗口中，设置**自定义 Post 负载**到**True**。
+    1.  在中**属性**窗口中，将**自定义发布加载**到**True**。
 
 ## <a name="transform-templates"></a>转换模板
 
-现在，你已为 DSL 定义的域类和属性，可以验证，DSL 定义可以转换正确重新生成你的项目的代码。
+现在，已经为你的 DSL 定义的域类和属性，可以验证，DSL 定义经过转换可以正确地重新生成你的项目的代码。
 
 1.  上**解决方案资源管理器**工具栏上，单击**转换所有模板**。
 
-2.  系统将重新生成解决方案的代码，并将保存 DslDefinition.dsl。 有关 XML 格式的定义文件的信息，请参阅[DslDefinition.dsl 文件](../modeling/the-dsldefinition-dsl-file.md)。
+2.  系统将重新生成解决方案的代码，并将保存 DslDefinition.dsl。 有关定义文件的 XML 格式的信息，请参阅[DslDefinition.dsl 文件](../modeling/the-dsldefinition-dsl-file.md)。
 
-## <a name="create-files-for-custom-code"></a>为自定义代码中创建文件
+## <a name="create-files-for-custom-code"></a>为自定义代码创建文件
 
-当转换所有模板时，系统将生成的 Dsl 和 DslPackage 项目中定义你的域特定语言的源代码。 以便你可以避免干扰生成的文本，不同于生成的代码文件的文件中编写自定义代码。
+当转换所有模板时，系统将生成在 Dsl 和 DslPackage 项目中定义特定于域的语言的源代码。 这样可以避免干扰生成的文本，不同于生成的代码文件的文件中编写自定义代码。
 
-用于维护值和跟踪属性的状态，必须提供代码。 若要帮助你区分你自定义代码与生成的代码，并避免命名冲突的文件，将自定义代码文件放置在一个单独的子文件夹。
+用于维护的值和跟踪属性的状态，必须提供代码。 若要帮助你区分从生成的代码中，自定义代码并避免命名冲突的文件，将你的自定义代码的文件放在单独的子文件夹中。
 
-1.  在**解决方案资源管理器**，右键单击**DSL**项目，指向**添加**，然后单击**新文件夹**。 将新文件夹命名`CustomCode`。
+1.  在中**解决方案资源管理器**，右键单击**DSL**项目，指向**添加**，然后单击**新文件夹**。 将新文件夹命名为`CustomCode`。
 
-2.  右键单击新**自定义代码**文件夹，指向**添加**，然后单击**新项**。
+2.  右键单击新**独特**文件夹，指向**添加**，然后单击**新项**。
 
-3.  选择**代码文件**设置模板，**名称**到`NamespaceTrackingProperty.cs`，然后单击**确定**。
+3.  选择**代码文件**模板，将**名称**到`NamespaceTrackingProperty.cs`，然后单击**确定**。
 
      创建 NamespaceTrackingProperty.cs 文件并将其打开以进行编辑。
 
 4.  在文件夹中，创建以下的代码文件： `ExampleModel.cs,``HelperClasses.cs`， `Serialization.cs`，和`TypeDescriptor.cs`。
 
-5.  在**DslPackage**项目中，还创建`CustomCode`文件夹，并向其中添加`Package.cs`代码文件。
+5.  在中**DslPackage**项目中，还创建`CustomCode`文件夹，并向其添加`Package.cs`代码文件。
 
-## <a name="add-helper-classes-to-support-tracking-properties"></a>添加帮助器类以支持跟踪属性
+## <a name="add-helper-classes-to-support-tracking-properties"></a>添加帮助器类，以支持跟踪属性
 
-到 HelperClasses.cs 文件中，添加`TrackingHelper`和`CriticalException`类，如下所示。 将引用这些类稍后在本演练。
+HelperClasses.cs 文件中，添加`TrackingHelper`和`CriticalException`类，如下所示。 将引用这些类在此演练的后面。
 
-1.  将以下代码添加到 HelperClasses.cs 文件中。
+1.  将以下代码添加到 HelperClasses.cs 文件。
 
     ```csharp
     using System;
@@ -243,13 +244,13 @@ A*跟踪域*属性是的属性，用户可以更新，但具有一个默认值�
 实现`GetCustomProperties`方法的类型描述符`ExampleModel`域类。
 
 > [!NOTE]
-> DSL 工具生成的自定义类型描述符的代码`ExampleModel`调用`GetCustomProperties`; 但是，DSL 工具也不会生成实现该方法的代码。
+> DSL 工具生成的自定义类型描述符的代码`ExampleModel`调用`GetCustomProperties`; 但是，DSL 工具不会生成实现该方法的代码。
 
-定义此方法将创建跟踪 Namespace 跟踪属性的属性描述符。 此外，提供跟踪属性的属性允许**属性**窗口以正确显示属性。
+定义此方法将创建跟踪的跟踪属性的 Namespace 属性描述符。 此外，跟踪属性提供属性使**属性**窗口以正确显示属性。
 
 ### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>若要修改 ExampleModel 域类的类型描述符
 
-1.  将以下代码添加到 TypeDescriptor.cs 文件中。
+1.  将以下代码添加到 TypeDescriptor.cs 文件。
 
     ```csharp
     using System;
@@ -309,9 +310,9 @@ A*跟踪域*属性是的属性，用户可以更新，但具有一个默认值�
 
 ## <a name="adding-custom-code-for-the-package"></a>包中添加自定义代码
 
-生成的代码定义的类型说明提供程序 ExampleElement 域类;但是，你必须添加代码以指示 DSL 以使用此类型描述提供程序。
+生成的代码定义 ExampleElement 域类; 的类型说明提供程序但是，必须添加代码以指示要使用此类型说明提供程序的 DSL。
 
-1.  将以下代码添加到 Package.cs 文件中。
+1.  将以下代码添加到 Package.cs 文件。
 
     ```csharp
     using System.ComponentModel;
@@ -334,22 +335,22 @@ A*跟踪域*属性是的属性，用户可以更新，但具有一个默认值�
     }
     ```
 
-## <a name="add-custom-code-for-the-model"></a>模型中添加自定义代码
+## <a name="add-custom-code-for-the-model"></a>添加自定义代码模型
 
 实现`GetCustomElementsValue`方法`ExampleModel`域类。
 
 > [!NOTE]
-> DSL 工具生成的代码`ExampleModel`调用`GetCustomElementsValue`; 但是，DSL 工具也不会生成实现该方法的代码。
+> DSL 工具生成的代码`ExampleModel`调用`GetCustomElementsValue`; 但是，DSL 工具不会生成实现该方法的代码。
 
-定义`GetCustomElementsValue`方法提供逻辑的计算的 CustomElements 属性`ExampleModel`。 此方法对数进行计数`ExampleElement`具有跟踪属性，它具有用户更新的值，并返回一个字符串，表示此计数为模型中的总元素的比例 Namespace 的域类。
+定义`GetCustomElementsValue`方法提供逻辑的 CustomElements 计算属性`ExampleModel`。 此方法进行计数的`ExampleElement`具有跟踪属性有一个用户更新的值，并返回一个字符串，表示此计数为模型中的总元素的一定比例 Namespace 的域类。
 
 此外，添加`OnDefaultNamespaceChanged`方法`ExampleModel`，并重写`OnValueChanged`方法`DefaultNamespacePropertyHandler`嵌套的类`ExampleModel`调用`OnDefaultNamespaceChanged`。
 
-因为 DefaultNamespace 属性用于计算跟踪属性，Namespace`ExampleModel`必须通知所有`ExampleElement`DefaultNamespace 的值已更改的域类。
+因为 DefaultNamespace 属性用于计算跟踪属性，Namespace`ExampleModel`必须通知所有`ExampleElement`DefaultNamespace 值已更改的域类。
 
-### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>若要修改的属性处理程序跟踪的属性
+### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>若要修改的属性处理程序被跟踪属性
 
-1.  将以下代码添加到 ExampleModel.cs 文件中。
+1.  将以下代码添加到 ExampleModel.cs 文件。
 
     ```csharp
     using System.Linq;
@@ -416,16 +417,16 @@ A*跟踪域*属性是的属性，用户可以更新，但具有一个默认值�
 
 添加`CalculateNamespace`方法`ExampleElement`域类。
 
-定义此方法提供逻辑的计算的 CustomElements 属性`ExampleModel`。 此方法对数进行计数`ExampleElement`具有跟踪是在更新的属性的 Namespace 的域类通过用户状态，并返回表示此计数为模型中的总元素的比例的字符串。
+定义此方法提供逻辑的 CustomElements 计算属性`ExampleModel`。 此方法进行计数的`ExampleElement`具有 Namespace 跟踪是在更新的属性的域类通过用户状态，并返回一个字符串，表示此计数为模型中的总元素的一定比例。
 
-此外，将添加存储和方法来获取和设置的 Namespace 自定义存储属性`ExampleElement`域类。
+此外，添加的存储和方法来获取和设置的 Namespace 自定义存储属性`ExampleElement`域类。
 
 > [!NOTE]
-> DSL 工具生成的代码`ExampleModel`调用 get 和 set 方法; 但是，DSL 工具不会生成实现的方法的代码。
+> DSL 工具生成的代码`ExampleModel`调用 get 和 set 方法; 但是，DSL 工具不会生成实现方法的代码。
 
-### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>若要添加自定义类型描述符方法
+### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>若要添加的自定义类型描述符的方法
 
-1.  将以下代码添加到 NamespaceTrackingProperty.cs 文件中。
+1.  将以下代码添加到 NamespaceTrackingProperty.cs 文件。
 
     ```csharp
     using System;
@@ -585,14 +586,14 @@ A*跟踪域*属性是的属性，用户可以更新，但具有一个默认值�
 
 ## <a name="add-custom-code-to-support-serialization"></a>添加自定义代码以支持序列化
 
-添加代码以支持自定义后负载行为对于 XML 序列化。
+添加代码以支持 XML 序列化自定义的后期加载行为。
 
 > [!NOTE]
 > DSL 工具生成调用的代码`OnPostLoadModel`和`OnPostLoadModelAndDiagram`方法; 但是，DSL 工具不会生成实现这些方法的代码。
 
-### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>若要添加代码以支持自定义的后加载行为
+### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>若要添加代码以支持自定义的后期加载行为
 
-1.  将以下代码添加到 Serialization.cs 文件中。
+1.  将以下代码添加到 Serialization.cs 文件。
 
     ```csharp
     using System;
@@ -716,45 +717,45 @@ A*跟踪域*属性是的属性，用户可以更新，但具有一个默认值�
 
 ## <a name="test-the-language"></a>测试语言
 
-下一步是生成并运行 DSL 设计器中的新实例[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]以便你可以验证是否跟踪属性是否正常工作。
+下一步是生成并运行 DSL 设计器中的新实例[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，以便您可以验证跟踪属性工作正常。
 
-1.  上**生成**菜单上，单击**重新生成解决方案**。
+1. 上**构建**菜单上，单击**重新生成解决方案**。
 
-2.  在“调试”菜单上，单击“启动调试”。
+2. 在“调试”菜单上，单击“启动调试”。
 
-     实验性生成[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]打开**调试**解决方案，其中包含一个空的测试文件。
+    实验性生成[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]将打开**调试**解决方案，其中包含一个空测试文件。
 
-3.  在**解决方案资源管理器**，双击 Test.trackingPropertyDsl 文件以在设计器中打开它，然后单击设计图面。
+3. 在中**解决方案资源管理器**，双击 Test.trackingPropertyDsl 文件以在设计器中打开它，然后单击设计图面。
 
-     请注意，在**属性**关系图中，窗口**默认 Namespace**属性是**DefaultNamespace**，和**自定义元素**属性是**0/0**。
+    请注意，在**属性**关系图中，窗口**Default Namespace**属性是**DefaultNamespace**，和**自定义元素**属性是**0/0**。
 
-4.  拖动**ExampleElement**元素从**工具箱**到关系图图面。
+4. 拖动**ExampleElement**从元素**工具箱**到关系图图面。
 
-5.  在**属性**元素中，选择窗口**元素 Namespace**属性，并将值从**DefaultNamespace**到**OtherNamespace**。
+5. 在**属性**窗口中的元素，选择**元素 Namespace**属性，并将值从**DefaultNamespace**到**OtherNamespace**。
 
-     请注意，值**元素 Namespace**现在以粗体显示。
+    请注意，值**元素 Namespace**现在以粗体显示。
 
-6.  在**属性**窗口中，右键单击**元素 Namespace**，然后单击**重置**。
+6. 在中**属性**窗口中，右键单击**元素 Namespace**，然后单击**重置**。
 
-     属性的值更改为**DefaultNamespace**，和值显示在正则字体。
+    属性的值更改为**DefaultNamespace**，并以常规字体显示值。
 
-     右键单击**元素 Namespace**试。 **重置**现在已禁用命令，因为该属性是当前在其跟踪状态。
+    右键单击**元素 Namespace**试。 **重置**现已禁用命令，因为该属性目前是在其跟踪状态。
 
-7.  将另一个**ExampleElement**从**工具箱**到关系图图面，并更改其**元素 Namespace**到**OtherNamespace**。
+7. 将另一个**ExampleElement**从**工具箱**到关系图图面，并更改其**元素 Namespace**到**OtherNamespace**。
 
-8.  单击设计图面。
+8. 单击设计图面。
 
-     在**属性**为关系图的值的窗口**自定义元素**现**1/2**。
+    在中**属性**窗口中为关系图的值**自定义元素**现在**1/2**。
 
-9. 更改**默认 Namespace**从图表的**DefaultNamespace**到**NewNamespace**。
+9. 更改**默认 Namespace**从关系图**DefaultNamespace**到**NewNamespace**。
 
-     **Namespace**的第一个元素曲目**默认 Namespace**属性，而**Namespace**第二个元素保持其用户更新值**OtherNamespace**。
+     **Namespace**的第一个元素跟踪**Default Namespace**属性，而**Namespace**第二个元素保持其用户更新值**OtherNamespace**。
 
 10. 保存的解决方案，然后关闭实验性生成。
 
 ## <a name="next-steps"></a>后续步骤
 
-如果你打算使用多个跟踪属性，或在多个 DSL 中实现跟踪属性，可以创建文本模板生成的常见代码，以支持每个跟踪属性。 文本模板的详细信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。
+如果你打算使用多个跟踪属性，或在多个 DSL 中实现跟踪属性，可以创建文本模板生成支持每个跟踪属性的常用代码。 有关文本模板的详细信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。
 
 ## <a name="see-also"></a>请参阅
 

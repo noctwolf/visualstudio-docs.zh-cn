@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f49e2e9e23f19a4346080b0e59435128e33849d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833182"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>演练： 使用内容控件创建模板
   本演练演示如何创建使用内容控件在 Microsoft Office Word 模板中创建可重用结构化内容的文档级自定义项。  
@@ -35,17 +35,17 @@ ms.locfileid: "35670608"
   
  本演练阐释了以下任务：  
   
--   在设计时创建包含 Word 模板中内容控件的表格。  
+- 在设计时创建包含 Word 模板中内容控件的表格。  
   
--   以编程方式填充组合框内容控件和下拉列表内容控件。  
+- 以编程方式填充组合框内容控件和下拉列表内容控件。  
   
--   阻止用户编辑指定表格。  
+- 阻止用户编辑指定表格。  
   
--   将表格添加到模板的构建基块集合。  
+- 将表格添加到模板的构建基块集合。  
   
--   创建一个内容控件来显示模板中的可用构建基块。  
+- 创建一个内容控件来显示模板中的可用构建基块。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -68,31 +68,31 @@ ms.locfileid: "35670608"
   
 ### <a name="to-create-the-employee-table"></a>创建员工表  
   
-1.  在 Word 模板中承载[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]设计器中的，在功能区中，单击**插入**选项卡。  
+1. 在 Word 模板中承载[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]设计器中的，在功能区中，单击**插入**选项卡。  
   
-2.  在中**表**组中，单击**表**，并插入包含两个列和四行的表。  
+2. 在中**表**组中，单击**表**，并插入包含两个列和四行的表。  
   
-3.  在第一列中键入文本，使之类似于以下列：  
+3. 在第一列中键入文本，使之类似于以下列：  
   
-    ||  
-    |-|  
-    |**员工姓名**|  
-    |**雇佣日期**|  
-    |**标题**|  
-    |**图片**|  
+   ||  
+   |-|  
+   |**员工姓名**|  
+   |**雇佣日期**|  
+   |**标题**|  
+   |**图片**|  
   
-4.  单击第二列中的第一个单元格 (旁边**员工姓名**)。  
+4. 单击第二列中的第一个单元格 (旁边**员工姓名**)。  
   
-5.  在功能区上，单击 **“开发人员”** 选项卡。  
+5. 在功能区上，单击 **“开发人员”** 选项卡。  
   
-    > [!NOTE]  
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何： 在功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+   > [!NOTE]  
+   >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何： 在功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
-6.  在中**控件**组中，单击**文本**按钮![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")添加<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>到第一个单元格。  
+6. 在中**控件**组中，单击**文本**按钮![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")添加<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>到第一个单元格。  
   
-7.  单击第二列中的第二个单元格 (旁边**雇佣日期**)。  
+7. 单击第二列中的第二个单元格 (旁边**雇佣日期**)。  
   
-8.  在中**控件**组中，单击**日期选取器**按钮![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl")添加<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>到第二个单元格。  
+8. 在中**控件**组中，单击**日期选取器**按钮![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl")添加<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>到第二个单元格。  
   
 9. 单击第二列中的第三个单元格 (旁边**标题**)。  
   
@@ -107,27 +107,27 @@ ms.locfileid: "35670608"
   
 ### <a name="to-create-the-customer-feedback-table"></a>创建客户反馈表  
   
-1.  在 Word 模板中，更早版本，添加的员工表之后的一行中单击，然后按**Enter**添加一个新段落。  
+1. 在 Word 模板中，更早版本，添加的员工表之后的一行中单击，然后按**Enter**添加一个新段落。  
   
-2.  在功能区中，单击**插入**选项卡。  
+2. 在功能区中，单击**插入**选项卡。  
   
-3.  在中**表**组中，单击**表**，并插入包含两个列和三行的表。  
+3. 在中**表**组中，单击**表**，并插入包含两个列和三行的表。  
   
-4.  在第一列中键入文本，使之类似于以下列：  
+4. 在第一列中键入文本，使之类似于以下列：  
   
-    ||  
-    |-|  
-    |**客户名称**|  
-    |**满意度**|  
-    |**注释**|  
+   ||  
+   |-|  
+   |**客户名称**|  
+   |**满意度**|  
+   |**注释**|  
   
-5.  单击第二列的第一个单元格 (旁边**Customer Name**)。  
+5. 单击第二列的第一个单元格 (旁边**Customer Name**)。  
   
-6.  在功能区上，单击 **“开发人员”** 选项卡。  
+6. 在功能区上，单击 **“开发人员”** 选项卡。  
   
-7.  在中**控件**组中，单击**文本**按钮![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")添加<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>到第一个单元格。  
+7. 在中**控件**组中，单击**文本**按钮![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")添加<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>到第一个单元格。  
   
-8.  单击第二列的第二个单元格 (旁边**满意度**)。  
+8. 单击第二列的第二个单元格 (旁边**满意度**)。  
   
 9. 在中**控件**组中，单击**下拉列表**按钮![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl")添加<xref:Microsoft.Office.Tools.Word.DropDownListContentControl>到第二个单元格。  
   

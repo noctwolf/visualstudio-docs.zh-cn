@@ -1,20 +1,21 @@
 ---
 layout: LandingPage
-title: 使用 Visual Studio 分析应用 | Microsoft Docs
+title: 通过分析来评估应用性能 | Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来分析应用程序、服务和工具的性能。
+ms.custom: seodec18
 ms.topic: landing-page
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 1ebb16dab1e997809df80b6e67771a30347c6ab9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 972e4b8b58229786d403451ddfd7a49a3fe4d6a0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267681"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065540"
 ---
-# <a name="profiling-in-visual-studio"></a>Visual Studio 中的分析
+# <a name="measure-app-performance-in-visual-studio"></a>在 Visual Studio 中评估应用性能
 
 分析和诊断工具有助于诊断内存和 CPU 使用率以及其他应用程序级别问题。 这些工具可用于累积一段时间内在调试器中运行应用程序的数据（例如变量值、函数调用和事件）。 可以查看代码执行期间不同点的应用程序状态。 
 

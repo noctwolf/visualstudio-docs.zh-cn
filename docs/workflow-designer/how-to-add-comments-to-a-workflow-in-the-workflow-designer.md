@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0555968f67d804060437df272927aa3ee89c730c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 43b17390f077238a6874784f186eb8add3819f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883290"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>如何：在工作流设计器中给工作流添加备注
 
@@ -49,13 +49,13 @@ ms.locfileid: "39379944"
 
 ## <a name="displaying-an-annotation-in-an-activitys-designer"></a>在活动设计器中显示批注
 
-1.  与活动设计器，它具有批注显示在活动外，单击**Pin**中批注装饰器图标。
+1. 与活动设计器，它具有批注显示在活动外，单击**Pin**中批注装饰器图标。
 
    该批注显示在活动的设计器中。 在下面的屏幕快照中，活动设计器中显示批注“工作流中的开始活动”。
 
    ![活动设计器中显示的注释](../workflow-designer/media/annotationindesigner.png)
 
-1. 若要显示的批注之外的活动设计器，请将鼠标悬停在活动的设计器中的批注区域，然后单击**Unpin**图标
+2. 若要显示的批注之外的活动设计器，请将鼠标悬停在活动的设计器中的批注区域，然后单击**Unpin**图标
 
    ![活动的设计器外显示批注](../workflow-designer/media/annotationoutsidedesigner.png)
 

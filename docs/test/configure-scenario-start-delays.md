@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 30a19e786894a9722e6843a5c1c69cdf1f038e58
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e3c090fbcbc1a322574a5b0eca06ce917594348b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297812"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896544"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>配置负载测试中的方案启动延迟
 
@@ -24,6 +24,8 @@ ms.locfileid: "36297812"
 例如，如果需要一个方案开始生成另一个方案所使用的项，则可能希望使用“延迟开始时间”属性。 可延迟该要使用生成项的方案以使生成项的方案能填充某些数据。
 
 再如，可能有一个方案只在当天的某个特定时间运行。 因此，您希望延迟该方案的开始时间以对此进行模拟。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-delay-start-time-of-a-scenario"></a>指定方案的延迟开始时间
 

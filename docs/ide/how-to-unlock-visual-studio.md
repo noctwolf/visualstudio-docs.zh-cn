@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a85e2d8f057a84b56553e8592b3f6a5e390690a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0f77fb6bb22c82fb8f3bb0b3bf2a7a32a9be559
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943113"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542372"
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何：解锁 Visual Studio
 
@@ -27,14 +27,14 @@ ms.locfileid: "31943113"
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>使用在线订阅解锁 Visual studio 的步骤
 
-使用 MSDN 或者与 Microsoft 帐户、工作或学校帐户相关联的 Visual Studio Team Service 订阅解锁 Visual Studio：
+使用与 Microsoft 帐户或者工作或学校帐户相关联的 Visual Studio 订阅或 Azure DevOps 组织解锁 Visual Studio：
 
 1. 单击 IDE 右上角的“登录”按钮（或转到“文件” > “帐户设置”，打开“帐户设置”对话框，然后单击"登录"按钮）。
 
-1. 对 Microsoft 帐户、工作或学校帐户输入凭据。 Visual Studio 将查找 Visual Studio 订阅或与帐户相关联的 Visual Studio Team Services 订阅。
+1. 对 Microsoft 帐户、工作或学校帐户输入凭据。 Visual Studio 将查找与帐户相关联的 Visual Studio 订阅或 Azure DevOps 组织。
 
 > [!IMPORTANT]
-> 当连接到“团队资源管理器”工具窗口的 Visual Studio Team Services 帐户时，Visual Studio 将自动查找相关联的在线订阅。 当连接到 Visual Studio Team Services 帐户时，可以使用 Microsoft 和工作或学校帐户登录。 如果该用户帐户有在线订阅，则 Visual Studio 将自动为你解锁 IDE。
+> 当连接到“团队资源管理器”工具窗口的 Azure DevOps 组织时，Visual Studio 将自动查找相关联的在线订阅。 当连接到 Azure DevOps 组织时，可以使用 Microsoft 帐户和工作或学校帐户登录。 如果该用户帐户有在线订阅，则 Visual Studio 将自动为你解锁 IDE。
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>使用产品密钥解锁 Visual Studio
 

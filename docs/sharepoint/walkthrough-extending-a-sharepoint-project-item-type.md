@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 756486daa709efd6ce1ff697d6d190bb7f4a2e34
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626141"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295717"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>演练： 扩展 SharePoint 项目项类型
   可以使用**业务数据连接模型**项目项以在 SharePoint 中创建业务数据连接 (BDC) 服务的模型。 默认情况下，通过使用此项目项，创建模型时模型中的数据是不向用户显示。 此外必须在 SharePoint 以使用户能够查看的数据创建外部列表。  
@@ -42,24 +42,24 @@ ms.locfileid: "42626141"
 ## <a name="prerequisites"></a>系统必备  
  需要要完成本演练的开发计算机上安装以下组件：  
   
--   支持的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。  
+- 支持的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。  
   
--   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用**VSIX 项目**中此 SDK 来创建 VSIX 包来部署项目项模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用**VSIX 项目**中此 SDK 来创建 VSIX 包来部署项目项模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 了解以下概念很有帮助，但不是必需，若要完成本演练：  
+  了解以下概念很有帮助，但不是必需，若要完成本演练：  
   
--   中的 BDC 服务[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]。 有关详细信息，请参阅[BDC 体系结构](http://go.microsoft.com/fwlink/?LinkId=177798)。  
+- 中的 BDC 服务[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]。 有关详细信息，请参阅[BDC 体系结构](http://go.microsoft.com/fwlink/?LinkId=177798)。  
   
--   BDC 模型的 XML 架构。 有关详细信息，请参阅[BDC 模型基础结构](http://go.microsoft.com/fwlink/?LinkId=177799)。  
+- BDC 模型的 XML 架构。 有关详细信息，请参阅[BDC 模型基础结构](http://go.microsoft.com/fwlink/?LinkId=177799)。  
   
 ## <a name="create-the-projects"></a>创建项目
  若要完成本演练中，您需要创建两个项目：  
   
--   若要创建要部署项目项扩展的 VSIX 包一个 VSIX 项目。  
+- 若要创建要部署项目项扩展的 VSIX 包一个 VSIX 项目。  
   
--   一个用于实现项目项扩展的库项目。  
+- 一个用于实现项目项扩展的库项目。  
   
- 首先演练创建项目。  
+  首先演练创建项目。  
   
 #### <a name="to-create-the-vsix-project"></a>若要创建 VSIX 项目  
   
@@ -164,7 +164,7 @@ ms.locfileid: "42626141"
   
 1.  在中**解决方案资源管理器**，在 GenerateExternalDataLists 项目中，打开 source.extension.vsixmanifest 文件中的快捷菜单，然后选择**打开**。  
   
-     Visual Studio 清单编辑器中打开该文件。 在 source.extension.vsixmanifest 文件是 extension.vsixmanifest 文件的基础所需的所有 VSIX 包。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 参考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+     Visual Studio 清单编辑器中打开该文件。 在 source.extension.vsixmanifest 文件是 extension.vsixmanifest 文件的基础所需的所有 VSIX 包。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 参考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
 2.  在中**产品名称**框中，输入**外部数据列表生成器**。  
   
@@ -179,7 +179,7 @@ ms.locfileid: "42626141"
 6.  在中**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
+    >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。  
   
 7.  在中**源**列表中，选择**当前解决方案中的项目**。  
   

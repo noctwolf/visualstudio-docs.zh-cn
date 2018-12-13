@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: eb9fb268ec98d60dcea46a8802592261493e4b56
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 02cf41daa9bea74e62ceb96f7c6227982bfcad84
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776166"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967345"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件处理程序在模型外部传播更改
 
-在可视化和建模 SDK，你可以定义存储事件处理程序将更改传播到应用商店中，如非存储变量、 文件、 模型中其他存储，或其他外部资源[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]扩展。 存储的事件处理程序在其中触发事件发生在事务结束后执行。 它们还可在撤消或重做操作。 因此，应用商店与规则不同，存储事件是最适用于更新商店外的值。 .NET 与事件不同，存储事件处理程序注册为侦听到类： 无需注册每个实例的单独处理程序。 有关如何选择不同的方式来处理更改之间的详细信息，请参阅[对的响应并传播更改](../modeling/responding-to-and-propagating-changes.md)。
+在可视化和建模 SDK，可以定义存储事件处理程序将更改传播到存储，例如非存储变量、 文件、 其他存储或其他 Visual Studio 扩展中的模型外的资源。 存储的事件处理程序在其中触发事件发生在事务结束后执行。 它们还可在撤消或重做操作。 因此，应用商店与规则不同，存储事件是最适用于更新商店外的值。 .NET 与事件不同，存储事件处理程序注册为侦听到类： 无需注册每个实例的单独处理程序。 有关如何选择不同的方式来处理更改之间的详细信息，请参阅[对的响应并传播更改](../modeling/responding-to-and-propagating-changes.md)。
 
 图形表面和其他用户界面控件是可以由存储事件的外部资源的示例。
 
@@ -173,7 +173,7 @@ private static void AlbumTitleAdjuster(object sender,
 每个事件类型对应于 Store.EventManagerDirectory 中的集合。 可以添加或移除事件处理程序在任何时候，但通常要将文档加载时添加它们。
 
 |`EventManagerDirectory` 属性名称|时执行|
-|-------------------------------------------|-------------------|
+|-|-|
 |ElementAdded|创建域类、 域关系、 形状、 连接符或关系图的实例。|
 |ElementDeleted|模型元素已从存储的元素目录中删除，不再源或目标的任何关系。 元素不实际从内存中删除，但会保留在以后撤消。|
 |ElementEventsBegun|外部事务结束时调用。|
@@ -189,6 +189,6 @@ private static void AlbumTitleAdjuster(object sender,
 ## <a name="see-also"></a>请参阅
 
 - [响应并传播更改](../modeling/responding-to-and-propagating-changes.md)
-- [示例代码： 电路图](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [示例代码： 电路图](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

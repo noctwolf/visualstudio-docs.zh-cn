@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73267319733dd6e31b21a0a47796f9766250bb89
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 51be3e86f1f19cc3701dd456b3085d3e8993b7a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915550"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 架构参考
 提供一个命令表编译器架构元素，其中包含允许的子元素和属性为每个。  
@@ -36,11 +36,11 @@ ms.locfileid: "39586829"
   
  必须通过使用符号名称定义的所有 GUID 和 ID 值。 这些名称可能定义标头文件中或在 VSCT\<符号 > 部分。 符号名称必须是本地的包括通过\<Include > 元素，或所引用的\<Extern > 元素。 从在指定的标头文件中导入符号名称\<Extern > 元素，如果它遵循的简单的模式 #define 符号值。 值可能是另一个符号，只要以前定义该符号。 GUID 定义必须遵循 OLE 或 c + + 格式。 ID 值可能是十进制数字或 0x，前面的十六进制数字，如以下代码行中所示：  
   
--   {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
+- {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
--   {0x6d484634、 0xe53d、 0x4a2c，{0xad、 0xcb，0x55、 0x14，0x5c、 0x93，0x62，0xc8}}  
+- {0x6d484634、 0xe53d、 0x4a2c，{0xad、 0xcb，0x55、 0x14，0x5c、 0x93，0x62，0xc8}}  
   
- 可以使用 XML 注释，但往返的图形用户界面 (GUI) 工具可能会放弃它们。 内容\<批注 > 元素都保证进行维护而不考虑格式。  
+  可以使用 XML 注释，但往返的图形用户界面 (GUI) 工具可能会放弃它们。 内容\<批注 > 元素都保证进行维护而不考虑格式。  
   
 ## <a name="schema-hierarchy"></a>架构层次结构  
  .Vsct 文件具有以下主要元素。  

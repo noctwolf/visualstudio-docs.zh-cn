@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: acb786a4182a79a4133e2d94000ab5f7693bade3
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180436"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894659"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>编辑测试组合模型以指定运行测试的虚拟用户的概率
 
 测试组合模型指定虚拟用户在负载测试方案中运行指定测试的概率。 这样可以更逼真地模拟负载。 应用程序可以有多个工作流而不是只得有一个，这样可以更逼真地模拟最终用户与应用程序的交互方式。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="test-mix-model-options"></a>测试组合模型选项
 
@@ -37,7 +39,7 @@ ms.locfileid: "39180436"
 ## <a name="tasks"></a>任务
 
 |任务|相关主题|
-|-----------|-----------------------|
+|-|-----------------------|
 |为负载测试指定测试组合：创建负载测试时，可以在“新建负载测试向导”中指定负载测试的设置。 在“新建负载测试向导”中，选择要添加到初始方案中的现有 Web 测试和单元测试。 将测试添加到方案中之后，为方案指定测试组合。<br /><br /> 使用负载建模选项可更准确地预测正在进行负载测试的网站或应用程序的预期实际使用情况。 执行这种操作很重要，因为未基于准确负载模型的负载测试会生成误导性结果。|-   [模拟网站或应用程序的预期实际使用情况](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |编辑测试组合模型：使用“负载测试编辑器”可以更改负载测试方案，使其使用测试组合模型之一。||
 |**为用户控制节奏的测试组合模型配置节奏延迟：** 如果负载测试方案配置为使用“基于用户节奏测试组合模型”，则可指定希望的配置分布节奏延迟的方式。|-   [如何：在使用用户节奏测试组合模型时对节奏延迟应用分布](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|

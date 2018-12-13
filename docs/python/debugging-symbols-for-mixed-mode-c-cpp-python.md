@@ -1,7 +1,7 @@
 ---
 title: Python/C++ 混合模式调试的符号
 description: Visual Studio 如何为完整的混合模式 C++ 和 Python 调试提供加载符号的功能。
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c626bbe213ee81b8a79b55213d02bd69cc55470f
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 62e3727b36e6ba3231ee12388e1be5bde40d080a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341707"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062685"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>安装用于 Python 解释器的调试符号
 
@@ -51,7 +51,7 @@ Visual Studio 可能会在需要符号的时候（通常是在启动混合模式
 如果单独下载符号，请按照以下步骤使 Visual Studio 找到符号。 如果通过 Python 3.5 或更高版本的安装程序安装符号，Visual Studio 会自动找到它们。
 
 1. 选择“工具” > “选项”菜单，然后导航到“调试” > “符号”。
-    
+
 1. 选择工具栏上的“添加”按钮（见下文），输入在其中展开了下载的符号的文件夹位置（即 python.pdb 所在的文件夹，例如 c:\python34\Symbols，如下所示），然后选择“确定”。 
 
     ![混合模式调试器符号选项](media/mixed-mode-debugging-symbols.png)
@@ -71,24 +71,27 @@ Visual Studio 可能会在需要符号的时候（通常是在启动混合模式
 | 3.4.2 | [32 位](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64 位](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |
 | 3.4.1 | [32 位](https://www.python.org/ftp/python/3.4.1/python-3.4.1-pdb.zip) - [64 位](https://www.python.org/ftp/python/3.4.1/python-3.4.1.amd64-pdb.zip) |
 | 3.4.0 | [32 位](https://www.python.org/ftp/python/3.4.0/python-3.4.0-pdb.zip) - [64 位](https://www.python.org/ftp/python/3.4.0/python-3.4.0.amd64-pdb.zip) |
-| 3.3.5 | [32 位](http://www.python.org/ftp/python/3.3.5/python-3.3.5-pdb.zip) - [64 位](http://www.python.org/ftp/python/3.3.5/python-3.3.5.amd64-pdb.zip) |
-| 3.3.4 | [32 位](http://python.org/ftp/python/3.3.4/python-3.3.4-pdb.zip) - [64 位](http://python.org/ftp/python/3.3.4/python-3.3.4.amd64-pdb.zip) |
-| 3.3.3 | [32 位](http://python.org/ftp/python/3.3.3/python-3.3.3-pdb.zip) - [64 位](http://python.org/ftp/python/3.3.3/python-3.3.3.amd64-pdb.zip) |
-| 3.3.2 | [32 位](http://python.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64 位](http://python.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
-| 3.3.1 | [32 位](http://python.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64 位](http://python.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
-| 3.3.0 | [32 位](http://python.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64 位](http://python.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
+| 3.3.5 | [32 位](https://www.python.org/ftp/python/3.3.5/python-3.3.5-pdb.zip) - [64 位](https://www.python.org/ftp/python/3.3.5/python-3.3.5.amd64-pdb.zip) |
+| 3.3.4 | [32 位](https://www.python.org/ftp/python/3.3.4/python-3.3.4-pdb.zip) - [64 位](https://www.python.org/ftp/python/3.3.4/python-3.3.4.amd64-pdb.zip) |
+| 3.3.3 | [32 位](https://www.python.org/ftp/python/3.3.3/python-3.3.3-pdb.zip) - [64 位](https://www.python.org/ftp/python/3.3.3/python-3.3.3.amd64-pdb.zip) |
+| 3.3.2 | [32 位](https://www.python.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64 位](https://www.python.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
+| 3.3.1 | [32 位](https://www.python.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64 位](https://www.python.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
+| 3.3.0 | [32 位](https://www.python.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64 位](https://www.python.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
+| 2.7.15 | [32 位](https://www.python.org/ftp/python/2.7.15/python-2.7.15-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64-pdb.zip) |
+| 2.7.14 | [32 位](https://www.python.org/ftp/python/2.7.14/python-2.7.14-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64-pdb.zip) |
+| 2.7.13 | [32 位](https://www.python.org/ftp/python/2.7.13/python-2.7.13-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64-pdb.zip) |
+| 2.7.12 | [32 位](https://www.python.org/ftp/python/2.7.12/python-2.7.12-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.12/python-2.7.12.amd64-pdb.zip) |
 | 2.7.11 | [32 位](https://www.python.org/ftp/python/2.7.11/python-2.7.11-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.11/python-2.7.11.amd64-pdb.zip) |
 | 2.7.10 | [32 位](https://www.python.org/ftp/python/2.7.10/python-2.7.10-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.10/python-2.7.10.amd64-pdb.zip) |
 | 2.7.9 | [32 位](https://www.python.org/ftp/python/2.7.9/python-2.7.9-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64-pdb.zip) |
 | 2.7.8 | [32 位](https://www.python.org/ftp/python/2.7.8/python-2.7.8-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.8/python-2.7.8.amd64-pdb.zip) |
 | 2.7.7 | [32 位](https://www.python.org/ftp/python/2.7.7/python-2.7.7-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.7/python-2.7.7.amd64-pdb.zip) |
-| 2.7.6 | [32 位](http://python.org/ftp/python/2.7.6/python-2.7.6-pdb.zip) - [64 位](http://python.org/ftp/python/2.7.6/python-2.7.6.amd64-pdb.zip) |
-| 2.7.5 | [32 位](http://python.org/ftp/python/2.7.5/python-2.7.5-pdb.zip) - [64 位](http://python.org/ftp/python/2.7.5/python-2.7.5.amd64-pdb.zip) |
-| 2.7.4 | [32 位](http://python.org/ftp/python/2.7.4/python-2.7.4-pdb.zip) - [64 位](http://python.org/ftp/python/2.7.4/python-2.7.4.amd64-pdb.zip) |
-| 2.7.3 | [32 位](http://python.org/ftp/python/2.7.3/python-2.7.3-pdb.zip) - [64 位](http://python.org/ftp/python/2.7.3/python-2.7.3.amd64-pdb.zip) |
-| 2.7.2 | [32 位](http://python.org/ftp/python/2.7.2/python-2.7.2-pdb.zip) - [64 位](http://python.org/ftp/python/2.7.2/python-2.7.2.amd64-pdb.zip) |
-| 2.7.1 | [32 位](http://python.org/ftp/python/2.7.1/python-2.7.1-pdb.zip) - [64 位](http://python.org/ftp/python/2.7.1/python-2.7.1.amd64-pdb.zip) |
-
+| 2.7.6 | [32 位](https://www.python.org/ftp/python/2.7.6/python-2.7.6-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.6/python-2.7.6.amd64-pdb.zip) |
+| 2.7.5 | [32 位](https://www.python.org/ftp/python/2.7.5/python-2.7.5-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.5/python-2.7.5.amd64-pdb.zip) |
+| 2.7.4 | [32 位](https://www.python.org/ftp/python/2.7.4/python-2.7.4-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.4/python-2.7.4.amd64-pdb.zip) |
+| 2.7.3 | [32 位](https://www.python.org/ftp/python/2.7.3/python-2.7.3-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.3/python-2.7.3.amd64-pdb.zip) |
+| 2.7.2 | [32 位](https://www.python.org/ftp/python/2.7.2/python-2.7.2-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.2/python-2.7.2.amd64-pdb.zip) |
+| 2.7.1 | [32 位](https://www.python.org/ftp/python/2.7.1/python-2.7.1-pdb.zip) - [64 位](https://www.python.org/ftp/python/2.7.1/python-2.7.1.amd64-pdb.zip) |
 
 ## <a name="enthought-canopy"></a>Enthought Canopy
 

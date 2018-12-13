@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894464"
 ---
 # <a name="navigate-code"></a>导航代码
 
@@ -65,10 +65,10 @@ Visual Studio 提供了许多用于在编辑器中导航代码的方法。 本�
 
 在解决方案中查找对选定元素的所有引用。 可以使用此操作检查大型重构可能的副作用，或者验证“死”代码。 按 **F8** 可在结果之间跳转。 有关详细信息，请参阅[在代码中查找引用](finding-references.md)。
 
-输入        | 函数
+输入 | 函数
 ------------ | ---
 **键盘** | 将文本游标放置在类型名称内部的某个位置，然后按 Shift+F12
-**鼠标**    | 从上下文菜单中选择“查找所有引用”
+**鼠标** | 从上下文菜单中选择“查找所有引用”
 
 ## <a name="reference-highlighting"></a>引用突出显示
 
@@ -104,37 +104,37 @@ Visual Studio 提供了许多用于在编辑器中导航代码的方法。 本�
 
 通过“转到定义”，可转到所选元素的定义。 有关详细信息，请参阅[转到定义和查看定义](../ide/go-to-and-peek-definition.md)。
 
-输入        | 函数
+输入 | 函数
 ------------ | ---
 **键盘** | 将文本游标放置在类型名称内部的某个位置，然后按 **F12**
-**鼠标**    | 右键单击类型名称，然后选择“转到定义”，或者按 Ctrl 并单击类型名称（这是 Visual Studio 2017 版本 15.4 的新功能）
+**鼠标** | 右键单击类型名称，然后选择“转到定义”，或者按 Ctrl 并单击类型名称（这是 Visual Studio 2017 版本 15.4 的新功能）
 
 ## <a name="peek-definition"></a>查看定义
 
 “查看定义”会在窗口中显示所选元素的定义，用户无需离开在代码编辑器中的当前位置。 有关详细信息，请参阅[如何：使用“查看定义”查看和编辑代码](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)和[“转到定义”和“查看定义”](../ide/go-to-and-peek-definition.md)。
 
-输入        | 函数
+输入 | 函数
 ------------ | ---
 **键盘** | 将文本游标放置在类型名称内部的某个位置，然后按 Alt+F12
-**鼠标**    | 右键单击类型名称，选择“查看定义”，或者按 Ctrl 并单击类型名称（如果已选中“在速览视图中打开定义”选项）
+**鼠标** | 右键单击类型名称，选择“查看定义”，或者按 Ctrl 并单击类型名称（如果已选中“在速览视图中打开定义”选项）
 
 ## <a name="go-to-implementation"></a>转到实现
 
 使用“转到实现”，可从一个基类或类型导航到其实现。 如果有多个实现，则可以看到它们在“查找符号结果”窗口中列出：
 
-输入        | 函数
+输入 | 函数
 ------------ | ---
 **键盘** | 将文本游标放置在类型名称内部的某个位置，然后按 Ctrl+F12
-**鼠标**    | 右键单击类型名称，再选择“转到实现”。
+**鼠标** | 右键单击类型名称，再选择“转到实现”。
 
 ## <a name="call-hierarchy"></a>调用层次结构
 
 可以在[“调用层次结构”窗口](../ide/reference/call-hierarchy.md)中查看方法的调用方和被调用方：
 
-输入        | 函数
+输入 | 函数
 ------------ | ---
 **键盘** | 将文本游标放置在类型名称内部的某个位置，然后按 Ctrl+K、Ctrl+T
-**鼠标**    | 右键单击成员名称并选择“查看调用层次结构”
+**鼠标** | 右键单击成员名称并选择“查看调用层次结构”
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>“下一个方法”和“上一个方法”命令 (Visual Basic)
 

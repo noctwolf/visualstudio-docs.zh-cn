@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetObjectForVisualizer |Microsoft 文档
+title: IEEVisualizerDataProvider::GetObjectForVisualizer |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994632a0883d45e550d519deb3288b959691e080
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af233b7a4a7fe482ce258811c8a2833f335ae1f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861535"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
-此方法获取表示此可视化工具的对象。  
+此方法获取该对象表示此可视化工具。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,15 +41,15 @@ int GetObjectForVisualizer(
   
 #### <a name="parameters"></a>参数  
  `ppObject`  
- [out]表示此可视化工具对象  
+ [out]此可视化工具所表示的对象  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- `GetObjectForVisualizer` 允许返回对象的缓存的版本。 如果调用方想要确保该对象是最新的则它将调用[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)。  
+ `GetObjectForVisualizer` 允许返回对象的缓存的版本。 如果调用方想要确保该对象是最新版本，则它将调用[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
  [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumStaticLocals |Microsoft 文档
+title: IDebugMethodField::EnumStaticLocals |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 761e696cd774e0414b58c9d2a9f1482d298489f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 35474156ec43fb9e1e44117e44430b27a6e1b383
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905085"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
-创建静态局部变量的方法的枚举数。  
+创建方法的静态局部变量的枚举器。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,15 +41,15 @@ int EnumStaticLocals(
   
 #### <a name="parameters"></a>参数  
  `ppLocals`  
- [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象表示的静态局部变量的列表。 如果没有静态局部变量，则返回 null 值。  
+ [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，表示静态局部变量的列表。 如果没有静态局部变量，则返回 null 值。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK，则返回 S_FALSE，如果没有静态局部变量。 否则，返回错误代码。  
+ 如果成功，则返回 S_OK 或如果没有静态局部变量，则返回 S_FALSE。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 每个元素都[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示不同类型的静态局部变量的对象。 调用[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)要确定哪种类型的静态本地对象表示完全每个对象的方法。  
+ 每个元素均[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象，表示不同类型的静态局部变量。 调用[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)来确定完全什么类型的静态本地对象表示的每个对象的方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

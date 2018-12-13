@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEx2::Attach |Microsoft 文档
+title: IDebugProgramEx2::Attach |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c58f576a0126472ad60ceeb5fc5289b668bd54dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ac2e86c25f9f74b7be4b9606e6e1ec721743878
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116043"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906905"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
-附加到某个程序的会话。  
+将会话附加到的程序。  
   
 ## <a name="syntax"></a>语法  
   
@@ -46,22 +46,22 @@ int Attach(
   
 #### <a name="parameters"></a>参数  
  `pCallback`  
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)对象，表示附加的调试引擎将发送到事件的回调函数。  
+ [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)对象，表示附加的调试引擎将事件发送到回调函数。  
   
  `dwReason`  
- [in]取值范围为[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)说明原因的附加操作的枚举。  
+ [in]中的值[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)介绍了在附加操作的原因的枚举。  
   
  `pSession`  
- [in]一个值，唯一标识会话的附加到的程序。  
+ [in]一个值，唯一标识将附加到程序的会话。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则返回错误代码。 此方法应返回`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`如果程序已连接。  
+ 如果成功，则返回`S_OK`; 否则返回错误代码。 此方法应返回`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`如果程序已附加。  
   
 ## <a name="remarks"></a>备注  
- 包含的程序的端口可以使用中的值`pSession`来确定哪些会话尝试附加到程序。 例如，如果端口允许只有一个调试会话才能一次附加到进程，可以确定端口是否同一个会话已附加到进程中的其他程序。  
+ 包含的程序的端口可以使用中的值`pSession`以确定哪个会话正在尝试将附加到该程序。 例如，如果一个端口允许只有一个调试会话以一次附加到进程，该端口可以确定是否同一个会话已附加到进程中其他程序。  
   
 > [!NOTE]
->  接口中进行传递`pSession`是仅视为 cookie，用于唯一标识会话调试管理器附加到此程序; 的值上提供的接口的方法都正常工作。  
+>  接口传入`pSession`仅视为 cookie 中，用于唯一标识会话调试管理器将附加到此程序; 的值上提供的接口的方法不起作用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

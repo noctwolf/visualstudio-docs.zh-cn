@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: cf07f939a9ce15d2ebca7afb0ee37695fa5fbf98
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692296"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220593"
 ---
 # <a name="concurrency-visualizer-markers"></a>并发可视化工具标记
 在并发可视化工具中，标记是代表应用事件的图标。  通常，应用生成这些事件是为了指定应用程序中的阶段或匹配项。  事件可以由应用或应用所使用的库和运行时生成。  
@@ -43,21 +43,21 @@ ms.locfileid: "34692296"
 ## <a name="known-sources-of-markers"></a>已知的标记源  
  只要某些约束，任何 ETW 提供程序都可以生成标记。 您可以配置并发可视化工具，使之侦听其他的标记事件源。 默认情况下，它将侦听这些事件源：  
   
--   [并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)  
+- [并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)  
   
--   [任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
+- [任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
   
--   [数据流](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
+- [数据流](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
   
--   [并行 LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
+- [并行 LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
   
--   [并发运行时](/cpp/parallel/concrt/concurrency-runtime)  
+- [并发运行时](/cpp/parallel/concrt/concurrency-runtime)  
   
--   [方案标记支持](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [方案标记支持](/previous-versions/visualstudio/visual-studio-2010/dd984115\(v\=vs.100\))  
   
--   [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
+- [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
   
- 使用[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框中的“标记”选项卡，可以控制是否在并发可视化工具中显示来自不同源的标记，也可以根据重要性和类别来筛选标记。  
+  使用[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框中的“标记”选项卡，可以控制是否在并发可视化工具中显示来自不同源的标记，也可以根据重要性和类别来筛选标记。  
   
 ## <a name="markers-from-eventsource"></a>来自 EventSource 的标记  
  并发可视化工具还可以显示 EventSource 事件。  有关详细信息，请参阅[将 EventSource 事件作为标记可视化](../profiling/visualizing-eventsource-events-as-markers.md)。  

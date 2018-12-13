@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 834edb926142637a250cf4a695d5d1d54e103977
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 236d9a0be82885bdf8040c97601429279e74dd15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499473"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949638"
 ---
 # <a name="create-options-pages"></a>创建选项页
 在中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]托管的包框架类派生自<xref:Microsoft.VisualStudio.Shell.DialogPage>扩展[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE，方法是添加**选项**页下**工具**菜单。  
@@ -47,17 +47,17 @@ ms.locfileid: "39499473"
 ## <a name="implement-dialogpage-class"></a>实现 dialogpage 派生类  
  对象提供的 VSPackage 的实现<xref:Microsoft.VisualStudio.Shell.DialogPage>的派生的类型可以利用以下继承的功能：  
   
--   默认用户界面窗口。  
+- 默认用户界面窗口。  
   
--   一个默认持久性机制可用，或者如果<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>应用于类，或者如果<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A>属性设置为`true`为<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>应用于类。  
+- 一个默认持久性机制可用，或者如果<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>应用于类，或者如果<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A>属性设置为`true`为<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>应用于类。  
   
--   自动化的支持。  
+- 自动化的支持。  
   
- 一个对象，实现的最低要求**工具选项**页上使用<xref:Microsoft.VisualStudio.Shell.DialogPage>是添加了公共属性。  
+  一个对象，实现的最低要求**工具选项**页上使用<xref:Microsoft.VisualStudio.Shell.DialogPage>是添加了公共属性。  
   
- 如果作为正确注册的类**工具选项**页上提供程序，则其公共属性是可在上找到**选项**部分**工具**菜单中的窗体属性网格。  
+  如果作为正确注册的类**工具选项**页上提供程序，则其公共属性是可在上找到**选项**部分**工具**菜单中的窗体属性网格。  
   
- 可以重写所有这些默认的功能。 例如，若要创建更复杂的用户界面需要仅重写的默认实现<xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>。  
+  可以重写所有这些默认的功能。 例如，若要创建更复杂的用户界面需要仅重写的默认实现<xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>。  
   
 ## <a name="example"></a>示例  
  下面是将选项页的简单"Hello world"实现。 将以下代码添加到默认项目由与 Visual Studio 包模板创建**菜单命令**选项处于选中状态充分地演示选项页的功能。  

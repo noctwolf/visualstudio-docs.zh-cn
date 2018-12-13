@@ -1,7 +1,7 @@
 ---
-title: 如何： 响应中实时调试器 |Microsoft Docs
+title: 禁用在实时调试器 |Microsoft Docs
 ms.custom: ''
-ms.date: 05/23/17
+ms.date: 05/23/18
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,41 +13,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3f565d8bb58ae290b0b569bb61d4cb57e8edaa
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 147e16bab14a6a038622804cf9c57e5fdc92bf02
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179770"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382774"
 ---
-# <a name="how-to-respond-to-the-just-in-time-debugger"></a>如何： 响应中实时调试器
+# <a name="disable-the-just-in-time-debugger"></a>禁用在实时调试器 
 
-请参阅实时中时应执行的操作调试程序对话框的依赖于要执行操作：
+实时调试器对话框中可能会打开正在运行的应用，在发生错误时，并阻止该应用程序继续。 
 
-#### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>如果你想要解决或调试错误 （Visual Studio 用户）
+实时调试器提供的选项以启动 Visual Studio 来调试错误。 您必须具有[Visual Studio](http://visualstudio.microsoft.com)或另一个选定的调试器安装以查看有关错误的详细的信息或尝试对其进行调试。 
 
-- 您必须具有[安装 Visual Studio](http://visualstudio.microsoft.com)若要查看有关错误的详细的信息，并尝试对其进行调试。 有关详细信息，请参阅[使用实时调试器进行调试](../debugger/debug-using-the-just-in-time-debugger.md)。 如果您不能解决该错误并修复应用程序，请联系应用的所有者，以解决该错误。
+如果你是 Visual Studio 用户，并想要尝试调试错误，请参阅[使用实时调试器进行调试](../debugger/debug-using-the-just-in-time-debugger.md)。 如果无法修复此错误，或想要保留打开实时调试器，你可以[禁用在实时调试从 Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling)。 
 
-#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>如果你想要防止出现实时调试器对话框
+如果必须安装 Visual Studio，但不是能再执行操作，可能需要[禁用在实时调试从 Windows 注册表](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry)。 
 
-您可以采取措施来防止实时中使其不显示调试器对话框。 如果应用程序处理错误，可以正常运行应用程序。
+如果您尚未安装 Visual Studio，可以阻止在实时调试通过禁用脚本调试或服务器端调试。 
 
-1. （web 应用）如果想要运行 web 应用，可以禁用脚本调试。
+- 如果您正在尝试运行 web 应用，禁用脚本调试：
+  
+  在 Windows 中**Control Panel** > **网络和 Internet** > **Internet 选项**，选择**禁用脚本调试 （Internet 资源管理器）** 并**禁用脚本调试 （其他）**。 确切的步骤和设置取决于您的 Windows 和你的浏览器版本。
+  
+  ![JIT Internet 选项](../debugger/media/jitinternetoptions.png "JIT internet 选项")
+  
+- 如果要承载在 IIS 中的 ASP.NET web 应用，请禁用服务器端调试：
 
-    对于 Internet Explorer 或 Edge，禁用脚本调试在 Internet 选项对话框中。 可以访问这些设置，从**Control Panel** > **网络和 Internet** > **Internet 选项**(确切步骤取决于你Windows 和你的浏览器的版本）。
+  1. 在 IIS 管理器**功能视图**下**ASP.NET**部分中，双击 **.NET 编译**，或选择它，然后选择**打开功能**中**操作**窗格。 
+  1. 下**行为** > **调试**，选择**False**。 步骤是在较旧版本的 IIS 不同。
 
-    ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
+禁用在实时调试后，应用程序可能能够处理错误和正常运行。 
 
-    然后重新打开在其中找到错误的网页。 如果更改此设置不能解决此问题，请联系以解决此问题的 web 应用程序所有者。
+如果应用程序仍然具有未处理的错误，可能会看到错误消息，或应用程序可能会崩溃或挂起。 修复该错误之前，应用程序不会正常运行。 你可以尝试以与应用程序的所有者联系并要求他们修复此错误。
 
-3. （visual Studio 用户）如果已安装的 Visual Studio （或如果你有它以前安装，并将其删除），[禁用在实时调试](../debugger/debug-using-the-just-in-time-debugger.md)并尝试再次运行该应用。
-
-    > [!IMPORTANT]
-    > 如果禁用中实时调试并且应用程序时遇到未经处理的异常 （错误），您将相反，看到标准错误对话框或应用程序会崩溃或挂起。 错误修复 （由你或应用的所有者） 之前，不会正常运行应用程序。
-
-2. （ASP.NET 和 IIS）如果托管在 IIS 中的 ASP.NET Web 应用，则禁用服务器端调试。
-
-    在 IIS 管理器中，右键单击服务器节点，然后选择**切换到功能视图**。 在 ASP.NET 部分中，选择 **.NET 编译**，并确保你选择**False**为 （步骤会有所不同，在较旧版本的 IIS） 的调试行为。
-
-## <a name="see-also"></a>请参阅
- [调试器基础知识](../debugger/getting-started-with-the-debugger.md)

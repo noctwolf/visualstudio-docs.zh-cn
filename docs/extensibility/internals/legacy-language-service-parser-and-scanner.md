@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52fb199af53d0fbbf30c0ae0dc6a2ad7083e4971
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d4ca98b5e4f991e795af95e479fa57a38ca2b57a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234642"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912040"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>旧版语言服务分析器和扫描程序
 分析器是语言服务的核心。 托管包框架 (MPF) 语言类需要一个语言分析器，以选择要显示的代码有关的信息。 分析器将文本分隔成词法标记，然后确定这些令牌的类型和功能。  
@@ -59,11 +59,11 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>类型的分析器  
  语言服务分析器不与同一编译器的过程中使用的分析器相同。 但是，这种类型的分析器需要编译器分析程序相同的方式使用扫描仪和分析器。  
   
--   扫描程序用于标识类型的令牌。 语法突出显示和快速标识令牌类型，可以触发其他操作，例如，大括号匹配使用此信息。 此扫描程序由<xref:Microsoft.VisualStudio.Package.IScanner>接口。  
+- 扫描程序用于标识类型的令牌。 语法突出显示和快速标识令牌类型，可以触发其他操作，例如，大括号匹配使用此信息。 此扫描程序由<xref:Microsoft.VisualStudio.Package.IScanner>接口。  
   
--   一个分析器用于描述的功能和范围的令牌。 确定语言元素，如方法、 变量、 参数和声明，并提供了成员和基于上下文的方法签名的列表，在 IntelliSense 操作中使用此信息。 此分析器还用于查找匹配的语言元素对，例如，大括号和括号。 通过访问此分析器<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>中的方法<xref:Microsoft.VisualStudio.Package.LanguageService>类。  
+- 一个分析器用于描述的功能和范围的令牌。 确定语言元素，如方法、 变量、 参数和声明，并提供了成员和基于上下文的方法签名的列表，在 IntelliSense 操作中使用此信息。 此分析器还用于查找匹配的语言元素对，例如，大括号和括号。 通过访问此分析器<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>中的方法<xref:Microsoft.VisualStudio.Package.LanguageService>类。  
   
- 您如何实现为语言服务扫描器和分析器是取决于您。 提供了多个资源，用于描述分析器的工作原理以及如何编写您自己的分析程序。 此外，多个免费和商用产品都可在创建一个分析器的帮助。  
+  您如何实现为语言服务扫描器和分析器是取决于您。 提供了多个资源，用于描述分析器的工作原理以及如何编写您自己的分析程序。 此外，多个免费和商用产品都可在创建一个分析器的帮助。  
   
 ### <a name="the-parsesource-parser"></a>ParseSource 分析器  
  与不同的编译器 （其中令牌转换为某种形式的可执行代码） 的一部分使用的分析器，原因有多种不同，在许多不同的上下文中，可以调用语言服务分析器。 如何实现在这种方法<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>中的方法<xref:Microsoft.VisualStudio.Package.LanguageService>类是由您决定。 务必要记住的<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>可能会在后台线程上调用方法。  

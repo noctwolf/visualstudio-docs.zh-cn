@@ -1,6 +1,6 @@
 ---
-title: 如何：更改编辑器中的字体和颜色
-ms.date: 11/04/2016
+title: 更改编辑器字体和颜色
+ms.date: 11/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -16,27 +16,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 2894039fc963ef089d0a1551d8b8afc7713edd4f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447812"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894542"
 ---
-# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：更改编辑器中的字体和颜色
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>如何：在 Visual Studio 2017 中更改编辑器中的字体和颜色
+
 在“代码编辑器”中，可以更改默认字体、调整字体大小以及更改不同文本“显示项”的前景色和背景色。 更改字体设置时，请牢记以下信息：
 
--   “字体”和“大小”设置适用于所有 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 编辑器中的所有文本元素。
+- “字体”和“大小”设置适用于所有 Visual Studio 编辑器中的所有文本元素。
 
--   固定宽度字体的名称以粗体列出。
+- 固定宽度字体的名称以粗体列出。
 
--   可以为每种文本元素类型设置“项前景”、“项背景”和“粗体”选项。 例如，如果更改“注释”和“书签”的颜色，并为它们选择“粗体”，其他类型的文本元素不会受影响。
+- 可以为每种文本元素类型设置“项前景”、“项背景”和“粗体”选项。 例如，如果更改“注释”和“书签”的颜色，并为它们选择“粗体”，其他类型的文本元素不会受影响。
 
-> [!NOTE]
-> 显示的对话框和菜单命令可能与“帮助”中的描述不同，具体取决于现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
-
-
-### <a name="to-change-the-default-font-face-size-and-colors"></a>更改默认字体、字体大小和颜色
+## <a name="change-the-default-font-face-size-and-colors"></a>更改默认字体、字体大小和颜色
 
 1.  从“工具”菜单中选择“选项”，并在“环境”文件夹中选择“字体和颜色”。
 
@@ -49,13 +46,13 @@ ms.locfileid: "34447812"
 4.  在“显示项”中选择合适的项，然后修改“项前景”和“项背景”选项。
 
     > [!TIP]
-    >  单击“使用默认值”重置默认设置。
+    > 单击“使用默认值”重置默认设置。
 
 5.  单击 **“确定”**。
 
 ## <a name="see-also"></a>请参阅
 
 - [自定义编辑器](../../ide/customizing-the-editor.md)
-- [“选项”对话框 ->“文本编辑器”](../../ide/reference/text-editor-options-dialog-box.md)
+- [文本编辑器的“选项”对话框](../../ide/reference/text-editor-options-dialog-box.md)
 - [代码编辑器功能](../../ide/writing-code-in-the-code-and-text-editor.md)
-- [如何：更改字体和颜色](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [如何：在 Visual Studio 中更改字体和颜色](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

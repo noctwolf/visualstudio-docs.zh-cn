@@ -1,7 +1,7 @@
 ---
 title: Python 的混合模式调试
 description: 如何在 Visual Studio 中同时调试 C++ 和 Python，包括在环境之间单步执行、查看值和计算表达式。
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 2038f681578c3410b8b4dc1fe67552064e0e2d93
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008429"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607830"
 ---
 # <a name="debug-python-and-c-together"></a>一起调试 Python 和 C++
 
@@ -104,7 +104,7 @@ Visual Studio 2017（版本 15.5 及更高版本）支持通过 C/C++ 项目进�
 
 ### <a name="step-between-python-and-native-code"></a>在 Python 和本机代码之间进行单步执行
 
-使用单步执行 (F11) 或单步跳出 (Shift+F11) 命令时，混合模式调试器会正确处理代码类型间的更改。 例如，当 Python 调用在 C 中实现的类型的方法时，对该方法的调用进行的单步执行将在实现该方法的本机函数开头处停止。 当本机代码调用导致调用 Python 代码的某些 Python API 函数时也一样。 例如，对最初在 Python 中定义的函数值进行的单步执行 `PyObject_CallObject` 将在 Python 函数的开头处停止。 通过 [ctype](http://docs.python.org/3/library/ctypes.html) 从 Python 调用的本机函数也支持从 Python 到本机的单步执行。
+使用单步执行 (F11) 或单步跳出 (Shift+F11) 命令时，混合模式调试器会正确处理代码类型间的更改。 例如，当 Python 调用在 C 中实现的类型的方法时，对该方法的调用进行的单步执行将在实现该方法的本机函数开头处停止。 当本机代码调用导致调用 Python 代码的某些 Python API 函数时也一样。 例如，对最初在 Python 中定义的函数值进行的单步执行 `PyObject_CallObject` 将在 Python 函数的开头处停止。 通过 [ctype](https://docs.python.org/3/library/ctypes.html) 从 Python 调用的本机函数也支持从 Python 到本机的单步执行。
 
 ### <a name="pyobject-values-view-in-native-code"></a>本机代码中的 PyObject 值视图
 
@@ -137,7 +137,7 @@ Visual Studio 2017（版本 15.5 及更高版本）支持通过 C/C++ 项目进�
 
 但是对于 Python 2.x，每个对象类型通常将其标头声明为内联字段的集合，并且在 C/C++ 代码中的类型系统级别的自定义创作类型和 `PyObject` 之间没有任何关联。 若要为此类自定义类型启用“[Python 视图]”节点，请在 [Python 工具安装目录](installing-python-support-in-visual-studio.md#install-locations)中编辑 PythonDkm.natvis 文件，然后为 C 构造或 C++ 类在 XML 中添加其他元素。
 
-其他（更优）选项为遵循 [PEP 3123](http://www.python.org/dev/peps/pep-3123/) 并使用显式 `PyObject ob_base;` 字段而非 `PyObject_HEAD`，但因为向后兼容性的原因，因此不可能总是采用这种选项。
+其他（更优）选项为遵循 [PEP 3123](https://www.python.org/dev/peps/pep-3123/) 并使用显式 `PyObject ob_base;` 字段而非 `PyObject_HEAD`，但因为向后兼容性的原因，因此不可能总是采用这种选项。
 
 ### <a name="native-values-view-in-python-code"></a>Python 代码中的本机值视图
 

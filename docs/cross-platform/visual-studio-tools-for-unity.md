@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 14949313b0e44dd7e86480177c56819d3fdb22f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fa0884f024c51c76c6ed5e5d748c65e767b70d9d
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775086"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027466"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 
@@ -50,7 +50,7 @@ Visual Studio Tools for Unity 支持用户期望从 Visual Studio 中获得的�
 
 ### <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 
-Visual Studio for Mac 还支持 Unity 项目。 有关详细信息，请参阅 [Visual Studio for Mac Tools for Unity 文档](https://docs.microsoft.com/en-us/visualstudio/mac/unity-tools)。
+Visual Studio for Mac 还支持 Unity 项目。 有关详细信息，请参阅 [Visual Studio for Mac Tools for Unity 文档](/visualstudio/mac/unity-tools)。
 
 ## <a name="next-steps"></a>后续步骤
 

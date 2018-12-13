@@ -1,5 +1,5 @@
 ---
-title: CODE_PATH |Microsoft 文档
+title: CODE_PATH |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c88737638b20eafdef0ef84f5c45e494cf39607
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9618d28aeadaa85d97e9018fdf57ee8952ac3fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920256"
 ---
 # <a name="codepath"></a>CODE_PATH
-描述的方法或函数的调用。  
+介绍的方法或函数调用。  
   
 ## <a name="syntax"></a>语法  
   
@@ -46,10 +46,10 @@ public struct CODE_PATH {
  代码路径的名称。  
   
  pCode  
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)标识在此处的代码以单步执行函数的对象。  
+ [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)单步执行函数代码中何处标识的对象。  
   
 ## <a name="remarks"></a>备注  
- 此结构用于实现单步执行函数。 [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)从当前正在调试的程序中的位置返回所有调用。 此结构表示一个此类调用。  
+ 此结构用于实现单步执行函数。 [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)返回从当前正在调试的程序中的位置的所有调用。 此结构表示一个此类调用。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -58,7 +58,7 @@ public struct CODE_PATH {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)

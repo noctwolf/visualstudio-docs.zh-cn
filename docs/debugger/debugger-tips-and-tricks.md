@@ -1,7 +1,7 @@
 ---
-title: 提示和 Visual Studio 调试器中的技巧
+title: 提示和技巧在调试器中
 description: 了解有关的一些鲜为人知的功能支持的 Visual Studio 调试器
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
-ms.translationtype: MT
+ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612722"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055220"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 中调试器的工作效率提示和技巧
 
@@ -32,7 +32,7 @@ ms.locfileid: "45612722"
 
 ![固定数据提示](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>编辑代码并继续调试 （C#、 VB、 c + +）
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>编辑代码并继续调试 (C#，VB、 c + +)
 
 在 Visual Studio 支持的大多数语言中，可以编辑在调试会话的中间代码，并继续调试。 若要使用此功能，请单击到你的代码使用光标在暂停时在调试器中，请编辑按**F5**， **F10**，或**F11**继续调试。
 
@@ -60,12 +60,12 @@ ms.locfileid: "45612722"
 
 ![将执行指针移至](../debugger/media/dbg-tour-move-the-execution-pointer.gif "将执行指针移动")
 
-通过更改执行流，可以执行某些操作，如测试不同的代码执行路径或重新运行代码，而无需重新启动调试器。
+通过更改执行流，你可以进行测试不同代码执行路径或重新运行代码等操作，而无需重启调试器。
 
 > [!WARNING]
-> 通常需要谨慎使用此功能，并查看工具提示中的警告。 您也可能会看到其他警告。 移动指针不能还原到以前的应用程序状态应用程序。
+> 通常你需要小心使用此功能，工具提示中会出现警告。 你也可能会看到其他警告。 移动指针不能还原到以前的应用程序状态应用程序。
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>跟踪范围外的对象 （C#、 Visual Basic）
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>跟踪范围外的对象 (C#，Visual Basic)
 
 很容易地查看变量使用调试器窗口等**监视**窗口。 但是，当变量超出作用域中时才**监视**窗口中，您可能会注意到它将灰显。在某些应用方案中，甚至当变量超出作用域是，并且可能想要密切关注变量的值可能会更改 （例如，变量可能会收到垃圾回收）。 可以通过创建用于在对象 ID 来跟踪变量**监视**窗口。
 
@@ -145,7 +145,7 @@ ms.locfileid: "45612722"
 
 有关详细信息，请参阅[网络使用情况](../profiling/network-usage.md)。
 
-## <a name="modules_window"></a> 更深入了解如何将调试器附加到您的应用程序
+## <a name="modules_window"></a> 更深入了解如何将调试器附加到您的应用程序 (C#，c + +、 Visual Basic 中， F#)
 
 若要附加到正在运行的应用，调试器将加载为想要调试的应用的确切相同内部版本生成的符号 (.pdb) 文件。 在某些情况下，符号文件的一些知识非常有用。 你可以检查 Visual Studio 将使用的符号文件的加载**模块**窗口。
 

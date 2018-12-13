@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 397147bdc5c6ae11c06bfaa47667ad24aa53e2dc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835146"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>演练： 创建使用 C# 或 Visual Basic SDK
 在本演练中，将了解如何使用 Visual C# 创建一个简单的数学库 SDK，然后打包 SDK 作为 Visual Studio 扩展 (VSIX)。 将完成以下过程：  
@@ -31,29 +31,29 @@ ms.locfileid: "39497870"
   
 ##  <a name="createClassLibrary"></a> 若要创建 SimpleMath Windows 运行时组件  
   
-1.  在菜单栏上依次选择**文件** > **新建** > **新项目**。  
+1. 在菜单栏上依次选择**文件** > **新建** > **新项目**。  
   
-2.  在模板列表中，展开**Visual C#** 或**Visual Basic**，选择**Windows 应用商店**节点，然后选择**Windows 运行时组件**模板。  
+2. 在模板列表中，展开**Visual C#** 或**Visual Basic**，选择**Windows 应用商店**节点，然后选择**Windows 运行时组件**模板。  
   
-3.  在中**名称**框中，指定**SimpleMath**，然后选择**确定**按钮。  
+3. 在中**名称**框中，指定**SimpleMath**，然后选择**确定**按钮。  
   
-4.  在中**解决方案资源管理器**，打开快捷菜单**SimpleMath**项目节点，然后选择**属性**。  
+4. 在中**解决方案资源管理器**，打开快捷菜单**SimpleMath**项目节点，然后选择**属性**。  
   
-5.  重命名**Class1.cs**到**Arithmetic.cs**并更新它，以匹配下面的代码：  
+5. 重命名**Class1.cs**到**Arithmetic.cs**并更新它，以匹配下面的代码：  
   
-     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
-     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
+    [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
+    [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
   
-6.  在中**解决方案资源管理器**，打开快捷菜单**解决方案 SimpleMath**节点，然后选择**Configuration Manager**。  
+6. 在中**解决方案资源管理器**，打开快捷菜单**解决方案 SimpleMath**节点，然后选择**Configuration Manager**。  
   
-     **Configuration Manager**对话框随即打开。  
+    **Configuration Manager**对话框随即打开。  
   
-7.  在中**活动解决方案配置**列表中，选择**发行**。  
+7. 在中**活动解决方案配置**列表中，选择**发行**。  
   
-8.  在**配置**列中，确认**SimpleMath**行设置为**版本**，然后选择**关闭**按钮以接受更改。  
+8. 在**配置**列中，确认**SimpleMath**行设置为**版本**，然后选择**关闭**按钮以接受更改。  
   
-    > [!IMPORTANT]
-    >  SDK for SimpleMath 组件包括只有一个配置。 此配置中必须是发布版本，或使用该组件的应用程序不会通过认证[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]。  
+   > [!IMPORTANT]
+   >  SDK for SimpleMath 组件包括只有一个配置。 此配置中必须是发布版本，或使用该组件的应用程序不会通过认证[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]。  
   
 9. 在中**解决方案资源管理器**，打开快捷菜单**SimpleMath**项目节点，然后选择**生成**。  
   
@@ -93,7 +93,7 @@ ms.locfileid: "39497870"
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```
 
@@ -105,7 +105,7 @@ ms.locfileid: "39497870"
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```  
   
@@ -154,23 +154,23 @@ ms.locfileid: "39497870"
   
 ##  <a name="createSample"></a> 创建示例应用程序使用类库  
   
-1.  在菜单栏上依次选择**文件** > **新建** > **新项目**。  
+1. 在菜单栏上依次选择**文件** > **新建** > **新项目**。  
   
-2.  在模板列表中，展开**Visual C#** 或**Visual Basic**，然后选择**Windows 应用商店**节点。  
+2. 在模板列表中，展开**Visual C#** 或**Visual Basic**，然后选择**Windows 应用商店**节点。  
   
-3.  选择**空白应用**模板，将项目命名**ArithmeticUI**，然后选择**确定**按钮。  
+3. 选择**空白应用**模板，将项目命名**ArithmeticUI**，然后选择**确定**按钮。  
   
-4.  在中**解决方案资源管理器**，打开快捷菜单**ArithmeticUI**项目，，然后选择**添加** > **引用**.  
+4. 在中**解决方案资源管理器**，打开快捷菜单**ArithmeticUI**项目，，然后选择**添加** > **引用**.  
   
-5.  在引用类型的列表中，展开**Windows**，然后选择**扩展**。  
+5. 在引用类型的列表中，展开**Windows**，然后选择**扩展**。  
   
-6.  在细节窗格中，选择**简单数学 SDK**扩展。  
+6. 在细节窗格中，选择**简单数学 SDK**扩展。  
   
-     有关 SDK 的其他信息将出现。 你可以选择**详细信息**链接以打开http://www.msdn.microsoft.com，如在本演练前面在 SDKManifest.xml 文件中指定。  
+    有关 SDK 的其他信息将出现。 你可以选择**详细信息**链接以打开 https://msdn.microsoft.com/，如在本演练前面在 SDKManifest.xml 文件中指定。  
   
-7.  在中**引用管理器**对话框中，选择**简单数学 SDK**复选框，，然后选择**确定**按钮。  
+7. 在中**引用管理器**对话框中，选择**简单数学 SDK**复选框，，然后选择**确定**按钮。  
   
-8.  在菜单栏上依次选择**视图** > **对象浏览器**。  
+8. 在菜单栏上依次选择**视图** > **对象浏览器**。  
   
 9. 在中**浏览**列表中，选择**简单的数学运算**。  
   
@@ -239,9 +239,9 @@ ms.locfileid: "39497870"
   
      将显示正确的结果。  
   
- 已成功创建并使用扩展 SDK。  
+    已成功创建并使用扩展 SDK。  
   
 ## <a name="see-also"></a>请参阅  
  [演练： 创建使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [演练： 创建使用 JavaScript SDK](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [演练： 创建使用 JavaScript SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
  [创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)

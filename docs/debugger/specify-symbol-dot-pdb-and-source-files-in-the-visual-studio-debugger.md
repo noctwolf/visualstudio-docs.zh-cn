@@ -1,7 +1,7 @@
 ---
 title: 在调试器中指定符号 (.pdb) 和源文件 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/05/2017
+ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,236 +29,240 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
-ms.translationtype: MT
+ms.openlocfilehash: 35eb141850770a20b78020c57868a7fb2ff3bf90
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612735"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389171"
 ---
-# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件
-程序数据库 (.pdb) 文件，也称为符号文件，将映射为类、 方法和其他代码在你的项目的已编译可执行文件中使用的标识符为源代码中创建的标识符。 .pdb 文件还可以将源代码中的语句映射到可执行文件中的执行指令。 调试器使用此信息来确定两个关键信息：
+# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件 (C#，c + +、 Visual Basic 中， F#)
 
-* 源文件和行号，要在 Visual Studio IDE 中显示的名称
-* 在可执行文件在时设置一个断点处停止的位置
+程序数据库 (*.pdb*) 文件，也称为符号文件将标识符映射和编译应用到相应的标识符的项目的源代码中的语句和中的说明。 
 
-符号文件还包含源文件的原始位置以及（可选）源服务器的位置（可从中检索源文件）。
+从标准调试生成配置与 Visual Studio IDE 生成项目时，编译器会创建相应的符号文件。 此外可以[在代码中设置符号选项](#compiler-symbol-options)。 
+
+*.Pdb*文件保存调试和项目进行增量链接您的应用程序的调试配置的状态信息。 使用 Visual Studio 调试器 *.pdb*文件，以确定两个关键信息进行调试时：
+
+* 源文件名和行号显示在 Visual Studio IDE 中。
+* 若要针对某个断点停止在应用中的位置。
+
+符号文件还显示源文件，和 （可选） 服务器来检索从它们的位置。
   
+调试器仅加载 *.pdb*完全匹配的文件 *.pdb*生成应用时创建的文件 (即，原始 *.pdb*文件或副本)。 此确切的重复项是必需的因为即使代码本身未更改，可更改应用的布局。 有关详细信息，请参阅 [为什么 Visual Studio 要求调试器符号文件必须与同时生成的二进制文件完全匹配？](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+
 > [!TIP]
-> 如果你想要项目源代码之外调试代码，如 Windows 代码或第三方代码项目调用，则必须指定.pdb （和 （可选） 的外部代码的源文件） 的位置，这些文件需要与 t 的内部版本完全匹配他可执行文件。 
+> 若要调试项目源代码，之外的代码，如 Windows 代码或第三方代码项目调用，必须指定的外部代码的位置 *.pdb*文件 （和 （可选） 在源代码文件），其必须完全匹配应用程序中生成。 
 
-##  <a name="how-can-i-manage-symbol-files-while-debugging"></a>调试时如何管理符号文件？ 
-
-**模块**窗口可以告知调试器将视为用户代码，或我的代码和符号加载模块的状态以及代码模块。 此外可以使用此窗口进行调试时加载符号。 有关详细信息，请参阅[更深入了解如何将调试器附加到您的应用程序](../debugger/debugger-tips-and-tricks.md#modules_window)。
- 
-##  <a name="BKMK_Find_symbol___pdb__files"></a> 在其中 does 调试器搜索符号文件？ 
-  
-1.  在 DLL 或可执行文件中指定的位置。  
-  
-     （默认情况下，如果你在计算机上已生成 DLL 或可执行文件，则链接器会将关联的 .pdb 文件的完整路径和文件名放入 DLL 或可执行文件中。 调试器首先会检查在 DLL 或可执行文件内指定的位置中是否存在符号文件。 这很有帮助，因为你的计算机上始终有可供已编译代码使用的符号。）  
-  
-2.  DLL 或可执行文件所在的文件夹中存在的.pdb 文件。
-
-3. 任何位置[调试器选项中指定](#BKMK_Specify_symbol_locations_and_loading_behavior)为符号文件。 
-  
-    * 所有本地符号缓存文件夹。  
-  
-    * 任何网络、 internet 或本地符号服务器和指定，如 Microsoft 符号服务器 （如果启用） 的位置。 
+## <a name="symbol-file-locations-and-loading-behavior"></a>符号文件位置和加载行为
 
 > [!NOTE]
-> 在 Visual Studio 2012 之前，在远程设备上调试托管的代码时，需要将符号文件放置在远程计算机上。 从 Visual Studio 2012 开始，所有符号文件都必须位于本地计算机上或在一个位置[调试器选项中指定](#BKMK_Specify_symbol_locations_and_loading_behavior)。  
+> 调试在远程设备上的托管的代码时，所有符号文件都必须位于本地计算机上或在一个位置[调试器选项中指定](#BKMK_Specify_symbol_locations_and_loading_behavior)。  
   
-##  <a name="BKMK_Why_do_symbol_files_need_to_exactly_match_the_executable_files_"></a> 为什么符号文件需要与可执行文件完全匹配？  
-调试器只会为可执行文件加载与该可执行文件生成之时所创建的 .pdb 文件完全匹配的 .pdb 文件（即该 .pdb 文件必须是原始 .pdb 文件或其副本）。 由于除了创建正确且高效的代码的主要任务之外，编译器的编译速度也得到了优化，因此可执行文件的实际布局可更改，即使代码本身未更改也是如此。 有关详细信息，请参阅 [为什么 Visual Studio 要求调试器符号文件必须与同时生成的二进制文件完全匹配？](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
-  
-##  <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a> 配置调试器符号文件和符号加载行为的查找位置
- 当调试 Visual Studio IDE 中的项目时，调试器会自动加载符号文件位于项目目录中。 您可以指定备选搜索路径和符号服务器为 Microsoft、 Windows、 或中的第三方组件**工具 > 选项 > 调试 > 符号**。 此外可以指定希望调试器自动加载符号的特定模块。 之后，你可以在主动进行调试时手动更改这些设置。  
-  
-1.  在 Visual Studio 中打开**工具 > 选项 > 调试 > 符号**页。  
-  
-     ![工具&#45;选项&#45;调试&#45;符号页](../debugger/media/dbg_tools_options_symbols.gif "DBG_Tools_Options_Symbols")  
-  
-2.  选择的文件夹![工具&#47;选项&#47;调试&#47;符号文件夹图标](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon")图标。 **“符号文件(.pdb)位置”** 框中将显示可编辑的文本。  
-  
-3.  键入符号服务器或符号位置的 URL 或目录路径。 语句结束有助于找到正确的格式。
+当调试 Visual Studio IDE 中的项目时，调试器会自动加载位于项目文件夹中的符号文件。 
 
-    可以使用**Ctrl + 向上**并**Ctrl + 向下键**更改符号位置的加载顺序。 按**F2**编辑 URL 或目录路径。
-  
-4.  若要改进符号加载性能，请在路径中键入符号可由 **“在此目录下缓存符号”** 框中的符号服务器复制的本地目录，或可将符号复制到其中的本地目录。  
-  
-    > [!NOTE]
-    >  不要将符号缓存放入受保护文件夹（例如，C:\Windows 文件夹或其子文件夹之一）。 而应使用可读写的文件夹。  
-  
-    > [!NOTE]
-    >  对于 c + + 项目，如果 _NT_SYMBOL_PATH 环境变量集，它将替代下设置的值**在此目录下缓存符号**。
+调试器还搜索符号文件位于以下位置：
 
-### <a name="specify-symbol-loading-behavior"></a>指定符号加载行为 
+1. 在 DLL 或可执行文件中指定的位置 (*.exe*) 文件。  
+   
+   默认情况下，如果已生成 DLL 或 *.exe*文件在计算机上，链接器将放的完整路径和文件名关联 *.pdb* DLL 中的文件或 *.exe*文件。 调试器将检查以查看在该位置中是否存在符号文件。  
+   
+2. 与 DLL 相同的文件夹或 *.exe*文件。
+   
+3. 指定符号文件的调试器选项中任何位置。 若要添加并启用符号位置，请参阅[配置符号位置和加载选项](#BKMK_Specify_symbol_locations_and_loading_behavior)。 
+   
+   - 任何本地符号缓存文件夹。  
   
-你可指定开始调试时要从 **“符号文件(.pdb)位置”** 框位置自动加载的文件。 始终加载项目目录中的符号文件。  
+   - 如果选择，指定网络、 internet 或本地符号服务器和位置，例如 Microsoft 符号服务器。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可以从实现的符号服务器下载调试符号文件`symsrv`协议。 [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols)并[的 Windows 调试工具](/windows-hardware/drivers/debugger/index)是可以使用符号服务器的两个工具。
+      
+     可以使用符号服务器包括：  
+      
+     **公共 Microsoft 符号服务器**： 若要调试到系统 DLL 或第三方库的调用期间发生的故障，您通常需要系统 *.pdb*文件。 系统 *.pdb*文件包含 Windows Dll 符号 *.exe*文件和设备驱动程序。 您可以获取符号的 Windows 操作系统、 MDAC、 IIS、 ISA 和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]从公共 Microsoft 符号服务器。 
+      
+     **符号服务器内部网络上或在本地计算机上**： 你的团队或公司可以从外部源创建符号服务器，你自己的产品，并为符号的缓存。 你自己的计算机上可能具有符号服务器。 
+      
+     **第三方符号服务器**： 第三方提供商的 Windows 应用程序和库可以在 internet 上提供到符号服务器的访问。 
+    
+     > [!WARNING]
+     > 如果使用公共 Microsoft 符号服务器以外的符号服务器，请确保符号服务器及其路径是可信任。 由于符号文件可以包含任意可执行代码，则可以会面临安全威胁。  
+
+<a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>
+### <a name="configure-symbol-locations-and-loading-options"></a>配置符号位置和加载选项
+
+上**工具** > **选项** > **调试** > **符号**页上，你可以：
+
+- 指定并选择为 Microsoft、 Windows 或第三方组件的搜索路径和符号服务器。
+- 指定没有或不希望调试器自动加载符号的模块。
+- 主动进行调试时更改这些设置。 请参阅[调试时管理符号](#manage-symbols-while-debugging)。 
   
-1.  选择 **“除排除模块之外的所有模块”** 来为所有模块（除了你在选择 **“指定排除的模块”** 链接时指定的模块之外）加载所有符号。  
+**若要指定符号位置和加载选项：**
+
+1. 在 Visual Studio 中打开**工具** > **选项** > **调试** > **符号**（或**调试** > **选项** > **符号**)。  
+   
+   ![工具&#45;选项&#45;调试&#45;符号页](media/dbg-options-symbols.png "工具&#45;选项&#45;调试&#45;符号页")  
+   
+2. 下**符号文件 (.pdb) 位置**，
+   - 若要使用**Microsoft 符号服务器**，选中该复选框。  
+   
+   - 若要添加新的符号服务器位置，
+     1. 选择**+** 工具栏中的符号。 
+     1. 在文本字段中键入符号服务器或符号位置的 URL 或文件夹路径。 语句结束有助于找到正确的格式。
+     
+     >[!NOTE]
+     >搜索指定的文件夹。 必须添加任何子文件夹，你想要搜索的项。  
+   
+   - 若要添加新的 VSTS 符号服务器位置， 
+     1. 选择![工具&#47;选项&#47;调试&#47;符号新服务器图标](media/dbg_tools_options_foldersicon.png "工具&#45;选项&#45;调试&#45;符号新服务器图标")工具栏中的图标。 
+     1. 在中**连接到 VSTS 符号服务器**对话框中，选择一个可用的符号服务器，然后选择**Connect**。  
+   
+   - 若要更改符号位置的加载顺序，请使用**Ctrl**+**向上**并**Ctrl**+**向下**，或**向上**并**向下**箭头图标。 
+   - 若要编辑 URL 或路径，请双击该注册表项，或选择它并按**F2**。  
+   - 要移除的项，选择它，并选择**-** 图标。
   
-2.  选择 **“仅指定的模块”** 选项，然后选择 **“指定模块”** 来列出要自动加载其符号文件的模块。 其他模块的符号文件被忽略。  
+3. （可选）若要改进符号加载性能下**在此目录下缓存符号**，可以复制符号服务器的本地文件夹路径到符号的类型。  
   
-### <a name="specify-additional-symbol-options"></a>指定其他符号选项 
+   > [!NOTE]
+   > 未将本地符号缓存放在受保护的文件夹，例如 C:\Windows 或子文件夹。 而应使用可读写的文件夹。  
   
-此外可以设置以下选项在**工具 > 选项 > 调试 > 常规**页：  
+   > [!NOTE]
+   > 对于 c + + 项目，如果有`_NT_SYMBOL_PATH`环境变量集，它将重写下设置的值**在此目录下缓存符号**。
   
-**加载 DLL 导出 （仅限本机）**  
+4. 指定希望调试器将从加载的模块**符号文件 (.pdb) 位置**启动时。  
   
-选定后，加载 DLL 导出表。 处理 Windows 消息、Windows 过程 (WindowProc)、COM 对象、封送或不具有其符号的任何 DLL 时，DLL 导出表中的符号信息将很有用。 读取 DLL 导出信息会占用一些系统开销。 因此，默认情况下此功能被禁用。  
+   -  选择**加载所有模块，除非排除**（默认） 加载所有符号的符号文件位置，除非专门排除的模块中的所有模块。 若要排除某些模块，请选择**指定排除的模块**，选择**+** 图标，键入要排除，并选择的模块的名称**确定**。  
   
-若要查看 DLL 导出表中的可用符号，请使用 `dumpbin /exports`。 符号可用于任何 32 位系统 DLL。 从 `dumpbin /exports` 输出中，可以查看到精确的函数名，包括非字母数字字符。 这对于在函数上设置断点很有用。 DLL 导出表中的函数名在调试器的其他位置似乎被截断了。 调用将按调用顺序列出，当前函数（嵌套最深的函数）位于顶端。 有关详细信息，请参阅 [dumpbin /exports](/cpp/build/reference/dash-exports)。  
+   -  若要加载符号文件位置从指定的模块，请选择**负载仅指定的模块**。 选择**指定包含的模块**，选择**+** 图标，键入要包括，，然后选择的模块的名称**确定**。 未加载其他模块的符号文件。  
   
-###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> 使用符号服务器查找不在你的本地计算机上的符号文件  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可从实现 symsrv 协议的符号服务器下载调试符号文件。 [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) 和 [Windows 调试工具](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) 是可实现符号服务器的两个工具。 在 VS **“选项”** 对话框中指定要使用的符号服务器。  
+5. 选择“确定”。
+
+## <a name="other-symbol-options-for-debugging"></a>用于调试的其他符号选项
   
- 可供使用的符号服务器包括：  
+你可以选择中的其他符号选项**工具** > **选项** > **调试** > **常规**(或**调试** > **选项** > **常规**):  
+
+- **加载 dll 导出(限本机)**  
   
- **Microsoft 公共符号服务器**  
+  C/c + +，加载 DLL 导出表。 有关详细信息，请参阅[DLL 导出表](#use-dumpbin-exports)。 读取 DLL 导出信息占用一些系统开销，因此加载导出表处于关闭状态默认情况下。 此外可以使用`dumpbin /exports`C/c + + 生成命令行中。  
   
- 若要调试在调用系统 DLL 或第三方库时出现的故障，通常需要使用系统 .pdb 文件，这些文件包含表示 Windows DLL、EXE 以及设备驱动程序的符号。 你可从 Microsoft 公共符号服务器获取这些符号。 除了 MDAC、IIS、ISA 和 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]之外，Microsoft 公共符号服务器为 Windows 操作系统提供符号。  
+- **启用地址级调试**和**显示反汇编源代码不可用**  
   
- 若要使用 Microsoft 符号服务器，请选择 **“调试”** 菜单上的 **“选项和设置”** ，然后选择 **“符号”**。 选择 **“Microsoft 符号服务器”**。  
+  找不到源文件或符号文件时，始终显示反汇编。  
   
- **内部网络或本地计算机上的符号服务器**  
+  ![选项&#47;调试&#47;常规反汇编选项](../debugger/media/dbg_options_general_disassembly_checkbox.png "选项&#47;调试&#47;常规反汇编选项")  
+  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a>
+- **启用源服务器支持**  
   
- 你的团队或公司可为你自己的产品创建符号服务器，并作为外部源符号的缓存。 你自己的计算机上可能具有符号服务器。 你可在 VS **“选项”**/**“符号”** / **“符号”**。  
+  使用源服务器来帮助调试在应用程序时在本地计算机上没有源代码或 *.pdb*文件与源代码不匹配。 源服务器接受文件请求并从源代码管理返回的实际文件。 源服务器运行通过使用名为的 DLL *srcsrv.dll*读取应用程序的 *.pdb*文件。 *.Pdb*文件包含指向源代码存储库，以及用来从存储库检索源代码的命令。 
   
- **第三方符号服务器**  
+  可以限制命令的*srcsrv.dll*可从应用程序的执行 *.pdb*通过列出的允许的命令在名为的文件中的文件*srcsrv.ini*。 位置*srcsrv.ini*所在的同一文件夹中的文件*srcsrv.dll*并*devenv.exe*。  
   
- Windows 应用程序和库的第三方提供程序可提供对 Internet 上的符号服务器的访问。 你还可在 **“选项”**/**“符号”** 页上输入这些符号服务器的 URL。  
+  >[!IMPORTANT]
+  >任意命令都可以在应用中的嵌入 *.pdb*文件中，因此请确保将你想要执行到命令*srcsrv.ini*文件。 任何尝试执行不在“srcsvr.ini”文件中的命令都将导致出现一个确认对话框。 有关更多信息，请参见 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 
+  >
+  >未对命令参数执行任何验证，因此请慎用受信任的命令。 例如，如果列表中，你*cmd.exe*在你*srcsrv.ini*，恶意用户可能会在上指定参数*cmd.exe*那样会使危险。  
   
-> [!NOTE]
->  如果使用 Microsoft 公共符号服务器以外的符号服务器，请确保该符号服务器及其路径是可信任的。 由于符号文件可以包含任意可执行代码，因此你可能面临安全威胁。  
+  选择此项和所需的子项目。 **允许源服务器中的部分信任程序集 （仅限托管）** 并**始终运行不受信任的源服务器命令并且不再提示**会增加安全风险。  
   
-###  <a name="BKMK_Find_and_load_symbols_while_debugging"></a> 调试时查找并加载符号  
- 只要调试器处于中断模式，你就可以为之前被调试器选项排除的或编译器无法找到的模块加载符号。 可以从调用堆栈窗口、模块窗口、局部变量窗口、自动窗口和所有监视窗口的快捷菜单中加载符号。 如果调试器在没有可用符号或源文件的代码中中断，则将显示一个文档窗口。 在此可以找到所缺文件的相关信息，并采取相应措施来查找并加载它们。
+  ![启用源服务器选项](../debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")  
+
+## <a name="compiler-symbol-options"></a>编译器符号选项  
+
+从使用标准 Visual Studio IDE 生成项目时**调试**生成配置时，c + + 和托管的编译器创建适当的符号文件为你的代码。 此外可以在代码中设置编译器选项。 
+
+### <a name="cc-options"></a>C/C++ 选项 
+
+- *VC\<x >.pdb*并*\<项目 >.pdb*文件
   
- **使用未加载任何符号的文档页查找符号**  
+  一个 *.pdb*文件时生成与创建 C/c + + [/ZI 或 /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format)。 在中[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，则[/Fd](/cpp/build/reference/fd-program-database-file-name)选项名称 *.pdb*编译器创建的文件。 当你创建的项目中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]使用 IDE **/Fd**选项设置为创建 *.pdb*名为文件*\<项目 >.pdb*。  
   
- 调试器可通过多种方式中断没有可用符号的代码：  
+  如果生成 C/c + + 应用程序使用生成文件，并指定 **/ZI**或 **/Zi**而无需使用 **/Fd**，则编译器会创建两个 *.pdb*文件：  
   
-1.  单步执行代码。  
+  - VC\<x >.pdb，其中 \<x >表示 Visual C++ 版本，例如 VC11.pdb 
+    
+    *VC\<x >.pdb*文件存储为单独的对象文件中，所有调试信息并驻留在项目生成文件所在的同一目录中。 每次创建对象文件时，C/c + + 编译器都会将合并到的调试信息*VC\<x >.pdb*。 因此，即使每个源文件包含公共头文件，如 *\<windows.h >*，一次，而不是每个对象文件中存储这些标头中的 typedef。 插入的信息包括类型信息，但不包括函数定义等符号信息。  
   
-2.  通过断点或异常中断代码。  
+  - *\<项目 >.pdb* 
+    
+    *\<项目 >.pdb*文件将存储项目的所有调试信息 *.exe*文件，并驻留在*\debug*子目录。 \<project.pdb文件包含完整的调试信息（包括函数原型），而不仅仅是在 VC\<x>.pdb中找到的类型信息。 
   
-3.  切换到其他线程。  
+  这两个*VC\<x >.pdb*并*\<项目 >.pdb*文件允许增量更新。 链接器还将嵌入到的路径 *.pdb*中的文件 *.exe*或 *.dll*它创建的文件。  
   
-4.  通过在“调用堆栈”窗口中双击帧来更改堆栈帧。  
+- <a name="use-dumpbin-exports"></a>DLL 导出表
   
- 出现上述事件之一时，调试器将显示 **“未加载任何符号”** 页来帮助你查找和加载必需的符号。  
+  使用`dumpbin /exports`若要查看 DLL 导出表中可用的符号。 DLL 导出表中的符号化信息也可用于处理 Windows 消息、 Windows 过程 (Windowproc)、 COM 对象、 封送处理，或不具有符号的任何 DLL。 符号可用于任何 32 位系统 DLL。 调用将按调用顺序列出，当前函数（嵌套最深的函数）位于顶端。 
   
- ![没有未加载符号页](../debugger/media/dbg_nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
+  通过阅读`dumpbin /exports`输出，您所见的确切函数名称，包括非字母数字字符。 查看确切的函数名称可用于设置断点的函数，因为可以在调试器中其他位置截断函数名称。 有关详细信息，请参阅 [dumpbin /exports](/cpp/build/reference/dash-exports)。  
   
--   若要更改搜索路径，请选择未选定的路径或选择 **“新建”** ，然后输入新路径。 选择 **“加载”** 以再次搜索路径，并在找到符号文件时加载符号文件。  
+### <a name="net-framework-options"></a>.NET Framework 选项 
   
--   选择**浏览并查找**_可执行文件名称_**...** 重写任何符号选项并重试搜索路径。 如果找到符号文件，或显示了文件资源管理器供你手动选择符号文件，则加载符号文件。  
+使用生成 **/debug**来创建 *.pdb*文件。 可以使用 **/debug:full** 或 **/debug:pdbonly**生成应用程序。 使用 **/debug:full** 进行生成可以生成可调试的代码。 使用 /debug:pdbonly 进行生成可以生成 .pdb 文件，但不会生成通知 JIT 编译器调试信息可用的 `DebuggableAttribute`。 如果想为不希望其成为可调试的发布版本生成 .pdb文件，请使用 /debug:pdbonly。 有关详细信息，请参阅 [/debug（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)或 [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)。  
   
--   选择**更改符号设置...** 以显示**调试** > **符号**VS 选项对话框的页。  
+### <a name="web-applications"></a>Web 应用程序  
   
--   选择 **“查看反汇编”** 可在新窗口中显示一次反汇编。  
-  
--   若要在未找到源文件或符号文件的情况下始终显示反汇编，请选择 **“选项”** 对话框链接，然后选择 **“启用地址级调试”** 和 **“源代码不可用时显示反汇编”**。  
-  
-     ![选项&#47;调试&#47;常规反汇编选项](../debugger/media/dbg_options_general_disassembly_checkbox.png "DBG_Options_General_disassembly_checkbox")  
-  
- **从快捷菜单更改符号选项**  
-  
- 当你处于中断模式时，可查找并加载调用堆栈窗口、模块窗口、局部变量窗口、自动窗口和所有监视窗口中显示的项的符号。 在窗口中选择一个项，打开快捷菜单，然后选择下列选项之一：  
+设置*web.config*的 ASP.NET 应用程序，以调试模式下的文件。 调试模式将导致 ASP.NET 为动态生成的文件生成符号，并允许调试器附加到 ASP.NET 应用程序。 Visual Studio 自动完成此设置时开始调试，如果从 web 项目模板创建你的项目。  
+
+##  <a name="manage-symbols-while-debugging"></a>调试时管理符号 
+
+可以使用**模块**，**调用堆栈**，**局部变量**，**自动**，或任何**监视**窗口加载符号或调试时更改符号选项。 有关详细信息，请参阅[更深入了解如何将调试器附加到您的应用程序](../debugger/debugger-tips-and-tricks.md#modules_window)。
+
+### <a name="use-the-modules-window"></a>使用模块窗口
+
+在调试期间，**模块**窗口显示了调试器将视为用户代码，或我的代码和其符号加载状态的代码模块。 此外可以监视符号加载状态、 加载符号，并更改符号选项在**模块**窗口。
+
+**若要监视或调试时更改符号位置或选项：**
+
+1. 若要打开**模块**窗口中的，调试时，选择**调试** > **Windows** > **模块**。 
+1. 在中**模块**窗口中，右键单击**符号状态**或**符号文件**标头或任何模块。 
+1. 在上下文菜单中，选择下列选项之一：  
   
 |选项|描述|  
 |------------|-----------------|  
-|**加载符号**|尝试从上指定的位置加载符号**调试**/**符号**页**选项**对话框。 如果无法找到符号文件，则将启动文件资源管理器，以便你能够指定要搜索的新位置。|  
-|**符号加载信息**|显示已加载符号文件的位置或调试器无法查找文件时已搜索位置的信息。|  
-|**符号设置...**|此时将打开**调试**/**符号**页上，在 vs**选项**对话框。|  
-|**始终自动加载**|将符号文件添加到由调试器自动加载的文件列表中。|  
+|**加载符号**|将显示为具有已跳过，找不到或未加载符号的模块。 尝试从上指定的位置加载符号**选项** > **调试** > **符号**页。 如果找不到或未加载符号文件，将启动**文件资源管理器**以便可以指定要搜索的新位置。|  
+|**符号加载信息**|显示加载的符号文件的位置或调试器无法找到该文件时已搜索的位置。|  
+|**符号设置**|此时将打开**选项** > **调试** > **符号**页上，在可以编辑和添加符号位置。|  
+|**始终自动加载**|将所选的符号文件添加到由调试器自动加载的文件的列表。|  
+
+### <a name="use-the-no-symbols-loadedno-source-loaded-pages"></a>使用 Loaded/No 源未加载任何符号页
+
+调试器中断没有可用符号或源文件文件的代码，有多种：  
+
+-  单步执行代码。  
+-  中断代码通过断点或异常。  
+-  切换到不同的线程。  
+-  中双击帧来更改堆栈帧**调用堆栈**窗口。  
+   
+在此情况下，调试器将显示**未加载任何符号**或**未加载任何源**页面，帮助你查找和加载必需的符号或源。  
   
-###  <a name="BKMK_Set_compiler_options_for_symbol_files"></a> 为符号文件设置编译器选项  
- 当你从 VS IDE 生成项目并使用标准 **“调试”** 生成配置时，C++ 和托管编译器将为你的代码创建相应的符号文件。 也可在命令行上设置编译器选项以创建符号文件。  
+ ![没有未加载符号页](../debugger/media/dbg-nosymbolsloaded.png "DBG_NoSymbolsLoaded")  
   
- **C++ 选项**  
+**若要使用的符号未加载任何文档页来帮助查找并加载缺少符号：**  
   
- 程序数据库 (.pdb) 文件保存调试和项目状态信息，使用这些信息可以对程序的调试配置进行增量链接。 使用 [/ZI 或 /Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) （适用于 C/C++）生成时，将创建 .pdb 文件。  
+-   若要更改搜索路径，请选择未选定的路径，或选择**新的路径**或**新建 VSTS 路径**并输入或选择一个新的路径。 选择**加载**以再次搜索路径并加载符号文件，如果找到，则为。  
+-   若要重写任何符号选项并重试搜索路径，请选择**浏览并查找\<可执行文件名称 >**。 如果找到，则将加载符号文件或**文件资源管理器**打开，以便您可以手动选择符号文件。  
+-   若要打开**选项** > **调试** > **符号**页上，选择**更改符号设置**。  
+-   若要在新窗口中一次显示反汇编，请选择**查看反汇编**，或选择**选项对话框**设置选项以找不到源文件或符号文件时始终显示反汇编。 
+-   若要搜索的位置和结果显示，请展开**符号加载信息**。 
+
+如果调试器在找到 *.pdb*文件在执行其中一个选项，并可以检索使用中的信息的源文件之后 *.pdb*文件，它显示的源。 否则，将显示**未加载任何源**的页面，介绍的问题，可能会解决此问题的操作的链接。
+
+**若要将源文件搜索路径添加到解决方案：**
   
- 在 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]中， [/Fd](/cpp/build/reference/fd-program-database-file-name) 选项命名由编译器创建的 .pdb 文件。 使用向导在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中创建项目时， **/Fd** 选项将设置为创建一个名为 *project*.pdb 的 文件 .pdb 文件。  
-  
- 如果使用生成文件生成 C/C++ 应用程序，并指定 **/ZI** 或 **/Zi** 而不指定 **/Fd**，则最终将生成两个 .pdb 文件：  
-  
--   VC*x*.pdb，其中 *x* 表示 Visual C++ 的版本，例如 VC11.pdb。 该文件存储各个 OBJ 文件的所有调试信息并与项目生成文件驻留在同一个目录中。  
-  
--   project.pdb   该文件存储 .exe 文件的所有调试信息。 对于 C/C++，它驻留在 \debug 子目录中。  
-  
- 每当创建 OBJ 文件时，C/C++ 编译器都会将调试信息合并到 VC*x*.pdb 中。 插入的信息包括类型信息，但不包括函数定义等符号信息。 因此，即使每个源文件包含公共头文件，如\<windows.h >，而不是每个 OBJ 文件中只有一次存储这些标头中的 typedef。  
-  
- 链接器将创建 project.pdb，它包含项目的 EXE 文件的调试信息。 project.pdb 文件包含完整的调试信息（包括函数原型），而不仅仅是在 VC*x*.pdb 中找到的类型信息。 这两个 .pdb 文件都允许增量更新。 链接器还在其创建的 .exe 或 .dll 文件中嵌入 .pdb 文件的路径。  
-  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器使用 EXE 或 DLL 文件中的 .pdb 文件的路径查找 project.pdb 文件。 如果调试器在该位置无法找到 .pdb 文件或者路径无效（例如，如果项目已移至另一台计算机），则调试器将搜索包含 EXE 的路径以及在 **“选项”** 对话框（**“调试”** 文件夹， **“符号”** 节点）中指定的符号路径。 调试器将不会加载与所调试的可执行文件不匹配的 .pdb 文件。 如果调试器无法找到 .pdb 文件，则将显示 **“查找符号”** 对话框，这将允许你搜索符号或向搜索路径添加其他位置。  
-  
- **.NET Framework 选项**  
-  
- 程序数据库 (.pdb) 文件保存调试和项目状态信息，使用这些信息可以对程序的调试配置进行增量链接。 使用 **/debug**进行生成时，将创建一个 .pdb 文件。 可以使用 **/debug:full** 或 **/debug:pdbonly**生成应用程序。 使用 **/debug:full** 进行生成可以生成可调试的代码。 使用 **/debug:pdbonly** 进行生成可以生成 .pdb 文件，但是不会生成通知 JIT 编译器调试信息可用的 `DebuggableAttribute` 。 如果想为不希望其成为可调试的发布版本生成 .pdb 文件，请使用 **/debug:pdbonly** 。 有关详细信息，请参阅 [/debug (C# Compiler Options)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) 或 [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)。  
-  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器使用 EXE 或 DLL 文件中的 .pdb 文件的路径查找 project.pdb 文件。 如果调试器无法在该位置找到.pdb 文件，或者该路径无效，调试器将先搜索包含 EXE 的路径，然后搜索 **“选项”** 对话框中指定的符号路径。 该路径通常是 **“符号”** 节点中的 **“调试”** 文件夹。 调试器将不会加载与所调试的可执行文件不匹配的 .pdb 文件。 如果调试器无法找到 .pdb 文件，则将显示 **“查找符号”** 对话框，这将允许你搜索符号或向搜索路径添加其他位置。  
-  
- **Web 应用程序**  
-  
- 一定要把你的应用程序配置文件 (Web.config) 设为调试模式。 调试模式将导致 ASP.NET 为动态生成的文件生成符号，并允许调试器附加到 ASP.NET 应用程序。 Visual Studio 自动完成此设置时开始调试，如果从 Web 项目模板创建你的项目。  
-  
-##  <a name="BKMK_Find_source_files"></a> 查找源文件  
-  
-###  <a name="BKMK_Where_the_debugger_searches_for_source_files"></a> 调试器搜索源文件的位置  
- 调试器在下列位置查找源文件：  
-  
-1.  在启动调试器的 Visual Studio 实例的 IDE 中打开的文件。  
-  
-2.  在 Visual Studio 实例中打开的解决方案中的文件。  
-  
-3.  中指定的目录**常见属性**/**调试源文件**中解决方案的属性页。 （在“解决方案资源管理器” 中，选择该解决方案节点，右键单击，然后选择“属性” 。 )  
-  
-4.  模块的 .pdb 的源信息。 这可能是生成模块时源文件的位置，也可能是源服务器的命令。  
-  
-###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> 查找并加载源文件使用的 Source/No 符号未加载任何页  
- 当调试器在源文件不可用的位置中断执行时，它将显示 **“未加载任何源”** 或 **“未加载任何符号”** 页，这些页可帮助你查找源文件。 当调试器无法找到可执行文件的符号 (.pdb) 文件来完成搜索时，将显示 **“未加载任何符号”** 。 “无符号”页将提供用于搜索文件的选项。 如果找到.pdb，执行选项之一并调试程序可以检索源文件使用的符号文件中的信息后，源将显示。 否则，将显示描述问题的 **“未加载任何源”** 页。 此页将显示选项链接，这些链接可执行可以解决问题的操作。  
-  
-###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> 将源文件搜索路径添加到解决方案  
- 你可指定网络或本地目录来搜索源文件。  
-  
-1.  在解决方案资源管理器中选择解决方案，然后从快捷菜单中选择 **“属性”** 。  
-  
-2.  在 **“公共属性”** 节点下，选择 **“调试源文件”**。  
-  
-3.  单击该文件夹![工具&#47;选项&#47;调试&#47;符号文件夹图标](../debugger/media/dbg_tools_options_foldersicon.png "DBG_Tools_Options_FoldersIcon")图标。 可编辑文本将显示在 **“包含源代码的目录”** 列表中。  
-  
-4.  添加要搜索的路径。  
-  
- 请注意，只搜索指定的目录。 你必须为要搜索的任何子目录添加项。  
-  
-###  <a name="BKMK_Use_source_servers"></a> 使用源服务器  
- 如果本地计算机上没有源代码，或者 .pdb 文件与源代码不匹配，则可使用源服务器来帮助调试应用程序。 源服务器接受文件请求并返回实际的文件。 源服务器通过名为 srcsrv.dll 的 DLL 文件运行。 源服务器读取应用程序的 .pdb 文件，该文件包含指向源代码存储库的指针，以及用于从该存储库检索源代码的命令。 你可以限制允许从应用程序的 .pdb 文件执行的命令，方法是在名为 srcsrv.ini 的文件内列出允许的命令，该文件必须与 srcsrv.dll 和 devenv.exe 位于同一个目录中。  
-  
-> [!IMPORTANT]
->  任意命令都可嵌入应用程序的 .pdb 文件中，因此请确保在 srcsrv.ini 文件中仅放入要执行的命令。 任何尝试执行不在 srcsvr.ini 文件中的命令都将导致出现一个确认对话框。 有关更多信息，请参见 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 未对命令参数执行任何验证，因此请慎用受信任的命令。 例如，如果你信任 cmd.exe，恶意用户则可能会指定使该命令变得危险的参数。  
-  
- **启用源服务器的使用**  
-  
-1.  确保你在编译时采用了上一节中介绍的安全措施。  
-  
-2.  在 **“工具”** 菜单上，选择 **“选项”**。  
-  
-     这将显示 **“选项”** 对话框。  
-  
-3.  在 **“调试”** 节点下，选择 **“常规”**。  
-  
-4.  选择 **“启用源服务器支持”** 复选框。  
-  
-     ![启用源服务器选项](../debugger/media/dbg_options_general_enablesrcsrvr_checkbox.png "DBG_Options_General_EnableSrcSrvr_checkbox")  
-  
-5.  （可选）选择所需的子选项。  
-  
-     请注意， **“允许源服务器中的部分信任程序集(仅限托管)”** 和 **“始终运行不受信任的源服务器命令并且不再提示”** 都会增大上述安全风险。  
-  
+可以指定调试器搜索源文件的位置，并从搜索中排除特定文件。
+
+1. 选择中的解决方案**解决方案资源管理器**，然后选择**属性**图标中，按**Alt**+**Enter**，或右键单击并选择**属性**。
+   
+1. 选择**调试源文件**。
+   
+1. 下**目录包含源代码**，键入或选择要搜索的源位置。 使用**新行**图标以添加更多位置**向上**并**下**箭头图标，用于进行重新排序，或**X**图标以将其删除。
+   
+   >[!NOTE]
+   >调试器将搜索指定的目录。 你必须为要搜索的任何子目录添加项。
+   
+1. 下**看起来不为这些源文件**，键入的源代码文件，以从搜索中排除的名称。 
+   
+1. 选择**确定**或**应用**。
+
+
 ## <a name="see-also"></a>请参阅  
 [了解符号文件和 Visual Studio 符号设置](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[.NET 远程符号加载 Visual Studio 2012 和 2013年中的更改](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)
+[Visual Studio 2012 和 2013 中的 .NET 远程符号加载更改](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

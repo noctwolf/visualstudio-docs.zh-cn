@@ -18,21 +18,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0affe931e5b85d32acdc95fecaa50f3b7f2fe8f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: f8f7371418df19ec8452334641c7c9414328e557
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175694"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305008"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>如何： 连接到服务中的数据
+# <a name="how-to-connect-to-data-in-a-service"></a>如何：连接到服务中的数据
 
 通过运行从服务返回的数据将应用程序连接[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)，然后选择**服务**上**选择数据源类型**页。
 
-在向导完成，服务引用添加到你的项目，并可立即在[数据源窗口](add-new-data-sources.md)。
+在向导完成，服务引用添加到你的项目，并可立即在[数据源窗口](add-new-data-sources.md#data-sources-window)。
 
 > [!NOTE]
-> 在显示的项**数据源**窗口都依赖于该服务返回的信息。 某些服务可能没有提供足够的信息供**数据源配置向导**创建可绑定的对象。 例如，如果该服务返回的非类型化数据集，显示任何项中**数据源窗口**完成该向导时。 这是因为非类型化数据集不提供架构，所以该向导没有足够的信息来创建数据源。
+> “数据源”**窗口中显示的项取决于该服务返回的信息。 某些服务可能没有为“数据源配置向导”**创建可绑定的对象提供足够的信息。 例如，如果该服务返回的非类型化数据集，显示任何项中**数据源**完成该向导时的窗口。 这是因为非类型化数据集不提供架构，所以该向导没有足够的信息来创建数据源。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -53,7 +53,7 @@ ms.locfileid: "39175694"
 
 6.  单击 **“完成”**。
 
-     数据源添加到**数据源**窗口。
+     ** 数据源随即添加到{2&gt;“数据源”&lt;2}窗口中。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -62,4 +62,4 @@ ms.locfileid: "39175694"
 ## <a name="see-also"></a>请参阅
 
 - [将 WPF 控件绑定到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
-- [在 Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

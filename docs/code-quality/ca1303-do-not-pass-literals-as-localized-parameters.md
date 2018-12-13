@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bd26eecb1fba0aea266daf26eb071b8c29165ec
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8716a16ea3b141e7c5053e526d92531d0a77bc1e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546754"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859401"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303：不要将文本作为本地化参数传递
 
@@ -38,7 +38,7 @@ ms.locfileid: "45546754"
 |是否重大更改|非重大更改|
 
 ## <a name="cause"></a>原因
- 一种方法将字符串作为参数传递给构造函数或方法中的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]类库和字符串应该是可本地化。
+ 一种方法将字符串作为参数传递给构造函数或.NET Framework 类库中的方法，该字符串应该是可本地化。
 
  文本字符串作为值传递给参数或属性和一个或多个以下情况下为 true 时，会引发此警告：
 

@@ -13,16 +13,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 50d677eec2a88f2470a7a329c4cf9e2b85f065da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6c45a8abceacb1d566ca5aba382e7955f1c2601e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177352"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895556"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用编码的 UI 测试编辑器编辑编码的 UI 测试
 
 通过编码的 UI 测试编辑器，可轻松修改编码的 UI 测试。 使用编码的 UI 测试编辑器，可以查找、查看和编辑测试方法和 UI 操作的属性。 此外，你还可以使用 UI 控件图查看和编辑其对应的控件。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **要求**
 
@@ -74,7 +76,7 @@ ms.locfileid: "39177352"
 
 若要修改 UI 操作的属性，在 **“UI 操作”** 窗格中，展开包含你想要为其编辑属性的 UI 操作的测试方法，选择 UI 操作，然后通过“属性”窗口修改属性。
 
-例如，如果服务器不可用，并且 UI 操作与指示“转到网页 'http://Contoso1/default.aspx'”的 Web 浏览器关联，则可以将 URL 更改为 `'http://Contoso2/default.aspx'`。
+例如，如果服务器不可用，并且 UI 操作与指示“转到网页 '<http://Contoso1/default.aspx>'”的 Web 浏览器关联，则可以将 URL 更改为 `'http://Contoso2/default.aspx'`。
 
 ![控件属性](../test/media/codeduitestcontrolprop.png)
 

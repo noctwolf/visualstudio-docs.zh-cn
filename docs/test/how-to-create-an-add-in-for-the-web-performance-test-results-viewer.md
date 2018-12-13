@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: dbff48696a7fe10266a2c72fc3a3d9fb0e9ba81d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381102"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896040"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>如何：为 Web 性能测试结果查看器创建 Visual Studio 外接程序
 
@@ -28,7 +28,9 @@ ms.locfileid: "39381102"
 
 此外，还需要添加对位于 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies 文件夹中的 LoadTestPackage DLL 的引用。
 
--   若要扩展“Web 性能测试结果查看器”的 UI，必须创建 Visual Studio 加载项和用户控件。 下面的过程说明如何创建加载项、用户控件以及如何实现扩展“Web 性能测试结果查看器”的 UI 所需的类。
+若要扩展“Web 性能测试结果查看器”的 UI，必须创建 Visual Studio 加载项和用户控件。 下面的过程说明如何创建加载项、用户控件以及如何实现扩展“Web 性能测试结果查看器”的 UI 所需的类。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>创建或打开包含 ASP.NET Web 应用程序、Web 性能和负载测试项目的解决方案
 
@@ -49,28 +51,28 @@ ms.locfileid: "39381102"
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>使用“外接程序向导”创建外接程序
 
-1.  在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新项目”。
+1. 在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新项目”。
 
-     随即显示“新建项目”对话框。
+    随即显示“新建项目”对话框。
 
-2.  在“已安装的模板”下，展开“其他项目类型”并选择“扩展性”。
+2. 在“已安装的模板”下，展开“其他项目类型”并选择“扩展性”。
 
-3.  在模板列表中，选择“Visual Studio 外接程序”。
+3. 在模板列表中，选择“Visual Studio 外接程序”。
 
-4.  在“名称”下，键入外接程序的名称。 例如“WebPerfTestResultsViewerAddin”。
+4. 在“名称”下，键入外接程序的名称。 例如“WebPerfTestResultsViewerAddin”。
 
-5.  选择 **“确定”**。
+5. 选择 **“确定”**。
 
-     此时 Visual Studio“外接程序向导”将启动。
+    此时 Visual Studio“外接程序向导”将启动。
 
-6.  选择“下一步”。
+6. 选择“下一步”。
 
-7.  在“选择编程语言”页上，选择要用于编写外接程序的编程语言。
+7. 在“选择编程语言”页上，选择要用于编写外接程序的编程语言。
 
-    > [!NOTE]
-    > 本主题使用 Visual C# 编写代码示例。
+   > [!NOTE]
+   > 本主题使用 Visual C# 编写代码示例。
 
-8.  在“选择应用程序主机”页上，选择“Visual Studio”并清除“Visual Studio 宏”。
+8. 在“选择应用程序主机”页上，选择“Visual Studio”并清除“Visual Studio 宏”。
 
 9. 选择“下一步”。
 
@@ -96,18 +98,18 @@ ms.locfileid: "39381102"
 
      在完成下面的创建将由此 WebPerfTestResultsViewerAddin 项目引用的用户控件的过程后，将向 Connect.cs 文件添加代码。
 
- 创建了外接程序后，必须先向 Visual Studio 注册此外接程序，然后才能在“外接程序管理器”中激活它。 使用具有 .addin 文件扩展名的 XML 文件来执行此操作。
+    创建了外接程序后，必须先向 Visual Studio 注册此外接程序，然后才能在“外接程序管理器”中激活它。 使用具有 .addin 文件扩展名的 XML 文件来执行此操作。
 
- .addin 文件描述了 Visual Studio 在外接程序管理器中显示外接程序所需的信息。 启动 Visual Studio 时，它会查找 .addin 文件位置，获取任何可用的 .addin 文件。 如果找到相应文件，则会读取 XML 文件，并向“外接程序管理器”提供在单击外接程序进行启动时所需的信息。
+    .addin 文件描述了 Visual Studio 在外接程序管理器中显示外接程序所需的信息。 启动 Visual Studio 时，它会查找 .addin 文件位置，获取任何可用的 .addin 文件。 如果找到相应文件，则会读取 XML 文件，并向“外接程序管理器”提供在单击外接程序进行启动时所需的信息。
 
- 使用外接程序向导创建外接程序时，会自动创建一个 .addin 文件。
+    使用外接程序向导创建外接程序时，会自动创建一个 .addin 文件。
 
 ### <a name="add-in-file-locations"></a>外接程序文件位置
 
 外接程序向导会自动创建 .addin 文件的两个副本，如下所示：
 
 |**.Addin 文件位置**|**说明**|
-|------------------------------|----------------------------|---------------------|
+|-|----------------------------|-|
 |根项目文件夹|用于部署外接程序项目。 包含在项目中以方便编辑，并使用本地路径安装以进行 XCopy 式部署。|
 |外接程序文件夹|用于在调试环境中运行外接程序。 应该始终指向当前生成配置的输出路径。|
 

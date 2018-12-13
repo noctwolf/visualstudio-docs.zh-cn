@@ -19,16 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384287"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349684"
 ---
 # <a name="install-visual-studio-2017"></a>安装 Visual Studio 2017
 
 欢迎以全新方式安装 Visual Studio！ 最新版本方便你更轻松地选择并仅安装所需功能。 此外，我们还减少了 Visual Studio 的最小内存需求量，使其安装速度变得更快，对系统的影响更小。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[安装 Visual Studio for Mac](/visualstudio/mac/installation)。
 
 想要详细了解此版本的其他新增功能？ 请参阅我们的[发行说明](/visualstudio/releasenotes/vs2017-relnotes)。
 
@@ -63,11 +66,11 @@ ms.locfileid: "44384287"
 
 1. 在“下载”文件夹中，双击与下列文件之一匹配或类似的引导程序文件：
 
-  * 对于 Visual Studio Enterprise，请运行 **vs_enterprise.exe**
-  * 对于 Visual Studio Professional，请运行 **vs_professional.exe**
-  * 对于 Visual Studio Community，请运行 **vs_community.exe**  <br><br>
+   * 对于 Visual Studio Enterprise，请运行 **vs_enterprise.exe**
+   * 对于 Visual Studio Professional，请运行 **vs_professional.exe**
+   * 对于 Visual Studio Community，请运行 **vs_community.exe**  <br><br>
 
-  如果收到用户帐户控制通知，请单击“是”。
+   如果收到用户帐户控制通知，请单击“是”。
 
 2. 我们会要求确认 Microsoft [许可条款](https://visualstudio.microsoft.com/license-terms/)和 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。 单击 **“继续”**。
 
@@ -79,7 +82,7 @@ ms.locfileid: "44384287"
 
 1. 在“安装 Visual Studio”屏幕中找到所需的工作负载。
 
- ![从 Visual Studio 2017 设置对话框中选择工作负载](../install/media/install-visual-studio-community.png)
+   ![从 Visual Studio 2017 设置对话框中选择工作负载](../install/media/install-visual-studio-community.png)
 
      例如，选择“.NET 桌面开发”工作负载。 它附带默认核心编辑器，该编辑器针对超过 20 种语言提供基本代码编辑支持，能够打开和编辑任意文件夹中的代码（而无需使用项目），还提供集成的源代码管理。
 
@@ -130,15 +133,17 @@ ms.locfileid: "44384287"
 
 ## <a name="step-8---start-developing"></a>第 8 步 - 开始开发
 
-1. Visual Studio 安装完成后，单击“启动”按钮，[开始使用 Visual Studio 进行开发](../ide/get-started-developing-with-visual-studio.md)。
+1. 在 Visual Studio 安装完成后，单击“启动”按钮，开始使用 Visual Studio 进行开发。
 
 2. 单击“文件”，然后单击“新建项目”。
 
-3. 选择一种项目类型。 <br><br>
-   例如，若要[生成 C++ 应用](../ide/getting-started-with-cpp-in-visual-studio.md)，请单击“已安装”，展开“Visual C++”，然后选择要生成的 C++ 项目类型。 <br><br>
-   若要[生成 C# 应用](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)，请单击“已安装”，展开“Visual C#”，然后选择要生成的 C# 项目类型。
+3. 选择一种项目类型。
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
+   例如，若要[生成 C++ 应用](../ide/getting-started-with-cpp-in-visual-studio.md)，请单击“已安装”，展开“Visual C++”，再选择要生成的 C++ 项目类型。
+
+   若要[生成 C# 应用](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)，请单击“已安装”，展开“Visual C#”，再选择要生成的 C# 项目类型。
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>请参阅
 
@@ -147,4 +152,4 @@ ms.locfileid: "44384287"
 * [卸载 Visual Studio 2017](uninstall-visual-studio.md)
 * [创建 Visual Studio 2017 的脱机安装](create-an-offline-installation-of-visual-studio.md)
 * [使用命令行参数安装 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [设置和安装 Visual Studio for Mac](/visualstudio/mac/installation)
+* [安装 Visual Studio for Mac](/visualstudio/mac/installation)

@@ -1,5 +1,5 @@
 ---
-title: ATTACH_REASON |Microsoft 文档
+title: ATTACH_REASON |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dc7736f9210ef15cec8cece45d7899cc116a334
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e2e103a345a3a064afb96cc7861bd3394da3a0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861613"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
-指定的调试引擎 (DE) 若要将附加到程序节点的原因。  
+指定调试引擎 (DE) 的原因，若要将附加到程序节点。  
   
 ## <a name="syntax"></a>语法  
   
@@ -49,13 +49,13 @@ public enum enum_ATTACH_REASON {
  将附加，因为进程当前处于调试模式。  
   
  ATTACH_REASON_LAUNCH  
- 将附加，因为进程已启动。  
+ 将附加，因为启动进程。  
   
  ATTACH_REASON_USER  
- 由于用户请求附加。  
+ 由于用户请求而将附加。  
   
 ## <a name="remarks"></a>备注  
- 作为参数传递给使用这些值[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)和[附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)方法。  
+ 这些值用作参数[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)并[附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -64,7 +64,7 @@ public enum enum_ATTACH_REASON {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

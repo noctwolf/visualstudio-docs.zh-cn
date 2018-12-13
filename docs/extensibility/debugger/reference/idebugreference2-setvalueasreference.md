@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsReference |Microsoft 文档
+title: IDebugReference2::SetValueAsReference |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ce62358df758b7f4cf3ef0883cf0ac457aaf1f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 96245b7089ddef7d465d01203ca8b540c618b05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122582"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820247"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-设置从另一个引用的引用的值。 留待将来使用。  
+设置引用的另一个引用值。 留待将来使用。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,19 +47,19 @@ int SetValueAsReference (
   
 #### <a name="parameters"></a>参数  
  `rgpArgs`  
- [in]数组[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象用于确定如何设置引用值。  
+ [in]一个数组[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象用于确定如何设置引用值。  
   
  `dwArgCount`  
  [in]数组中引用的数目。  
   
  `pValue`  
- [in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)要根据其设置的属性值的对象。  
+ [in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象从其设置属性值。  
   
  `dwTimeout`  
- [in]以毫秒为单位，从此方法返回前等待的最长时间。 使用`INFINITE`无限期等待。  
+ [in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。  
   
 ## <a name="return-value"></a>返回值  
  始终返回 `E_NOTIMPL`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

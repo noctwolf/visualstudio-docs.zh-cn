@@ -1,26 +1,26 @@
 ---
-title: Visual Studio 中的开发者测试工具
+title: 开发人员测试工具
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5cb0899296aa24aa41c0caa2b808b02f27dc80be
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 396bbfdb915d0e3ecc31f516d60eab80cca6a421
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302921"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295145"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>开发人员测试工具、方案和功能
 
-使用单元测试维持代码正常运行。 Visual Studio 提供各种功能强大的工具和技术供开发人员在测试应用程序时使用：
+使用单元测试维持代码正常运行。 Visual Studio 提供各种功能强大的工具和技术供开发人员在测试应用程序时使用。
 
 ## <a name="avoid-regressions-and-achieve-code-coverage-with-intellitest"></a>通过 IntelliTest 避免回归并实现代码覆盖率
 
@@ -31,16 +31,14 @@ ms.locfileid: "36302921"
 ![操作中的 IntelliTest](media/devtest-intellitest.png)
 
 * [Visual Studio 的 IntelliTest 简介](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20IntelliTest%20with%20Visual%20Studio%20Enterprise%202015.docx)
-* [IntelliTest – One test to rule them all](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)（IntelliTest - 一个测试掌控所有情况）
+* [IntelliTest – One test to rule them all](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)（IntelliTest - 一个测试掌控所有情况）
 * [IntelliTest 视频](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
 * [IntelliTest 入门](generate-unit-tests-for-your-code-with-intellitest.md)
 * [IntelliTest 参考手册](intellitest-manual/index.md)
 
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>通过编码的 UI 和 Selenium 进行用户界面测试
 
-通过最适用的或社区批准的 UI 测试来测试用户界面 (UI)。
-编码的 UI 测试提供了一种方法来创建完全自动化的测试，用来验证应用程序用户界面的功能和行为。
-它们可在各种技术（包括基于 XAML 的 UWP 应用、浏览器应用和 SharePoint 应用）中自动进行 UI 测试。
+通过最适用的或社区批准的 UI 测试来测试用户界面 (UI)。 编码的 UI 测试提供了一种方法来创建完全自动化的测试，用来验证应用程序用户界面的功能和行为。 它们可在各种技术（包括基于 XAML 的 UWP 应用、浏览器应用和 SharePoint 应用）中自动进行 UI 测试。
 
 无论选择最适用的编码 UI 测试还是使用 Selenium 进行的基于泛型浏览器的 UI 测试，Visual Studio 均提供所有所需的工具。
 
@@ -60,21 +58,19 @@ ms.locfileid: "36302921"
 
 代码覆盖率是使用测试资源管理器运行测试方法时的一个选项。 结果表将显示在各个程序集、类和方法中运行的代码的百分比。 此外，源编辑器将显示已测试的代码。
 
-![使用 Visual Studio Team Services 和 Team Foundation Server 进行测试](media/devtest-codecoverage.png)
-
-* [使用代码覆盖率确定所测试的代码量](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [使用代码覆盖率确定正在测试的代码量](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [使用 Visual Studio（实验室）进行单元测试、代码覆盖率分析和代码克隆分析](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [自定义代码覆盖率分析](customizing-code-coverage-analysis.md)
 
-## <a name="unit-testing-with-any-framework-using-the-high-performance-test-explorer"></a>通过使用高性能测试资源管理器的任何框架进行单元测试
+## <a name="test-explorer"></a>测试资源管理器
 
-测试资源管理器帮助开发人员创建、管理单元测试并从中获得最大的好处。
+“测试资源管理器”可帮助开发人员创建、管理和运行单元测试。
 
 ![Visual Studio 测试资源管理器](media/devtest-testexplorer.png)
 
 * [单元测试入门](unit-test-your-code.md)
 * [使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)
-* [编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)
+* [测试资源管理器常见问题解答](test-explorer-faq.md)
 * [安装第三方单元测试框架](install-third-party-unit-test-frameworks.md)
 
 Visual Studio 也可扩展，并支持第三方单元测试适配器，如 NUnit 和 xUnit.net。 此外，通过帮助识别在语义上类似的代码块（这可能是常见 bug 修复或重构的备选项），代码克隆功能还同时可以获得高质量的软件。
@@ -84,6 +80,7 @@ Visual Studio 也可扩展，并支持第三方单元测试适配器，如 NUnit
 ## <a name="see-also"></a>请参阅
 
 * [单元测试入门](getting-started-with-unit-testing.md)
-* [Speed up unit test execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)（在 Team Foundation Server 中加快单元测试执行）
-* [并行和区分上下文的单元测试执行](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
+* [Speed up unit test execution in Team Foundation Server](https://blogs.msdn.microsoft.com/devops/2015/07/30/speeding-up-unit-test-execution-in-tfs/)（在 Team Foundation Server 中加快单元测试执行）
+* [并行和区分上下文的单元测试执行](https://blogs.msdn.microsoft.com/devops/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [使用 Visual Studio（实验室）进行单元测试、代码覆盖率分析和代码克隆分析](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
+* [编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)

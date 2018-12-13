@@ -19,30 +19,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: beada30e45ce2d46500654bca5051bd51db02d66
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: b7dd1723d9d92d9bc1b667cc3fddbc3ea297d8b8
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151959"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389119"
 ---
-# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>如何： 自动递增 ClickOnce 发布版本
-发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序中，更改`Publish Version`属性使此应用程序作为更新发布。 默认情况下，Visual Studio 会自动增大`Revision`数`Publish Version`每次您发布应用程序。  
-  
- 您可以禁用此行为上**发布**页**项目设计器**。  
-  
+# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>如何：自动递增 ClickOnce 发布版本
+
+发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序中，更改`Publish Version`属性使此应用程序作为更新发布。 默认情况下，Visual Studio 会自动增大`Revision`数`Publish Version`每次您发布应用程序。
+
+您可以禁用此行为上**发布**页**项目设计器**。
+
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
-  
-### <a name="to-disable-automatically-incrementing-the-publish-version"></a>若要禁用自动递增发布版本  
-  
-1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
-  
-2.  单击**发布**选项卡。  
-  
-3.  在中**发布版本**部分中，清除**自动递增每个版本的修订号**复选框。  
-  
-## <a name="see-also"></a>请参阅  
- [如何： 设置 ClickOnce 发布版本](../deployment/how-to-set-the-clickonce-publish-version.md)   
- [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
+
+## <a name="to-disable-automatically-incrementing-the-publish-version"></a>若要禁用自动递增发布版本
+
+1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
+
+2.  单击“发布”选项卡。
+
+3.  在中**发布版本**部分中，清除**自动递增每个版本的修订号**复选框。
+
+## <a name="see-also"></a>请参阅
+
+- [如何：设置 ClickOnce 发布版本](../deployment/how-to-set-the-clickonce-publish-version.md)
+- [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)
+- [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

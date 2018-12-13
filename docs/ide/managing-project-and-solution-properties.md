@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96581fbaff9c2ddc85fbb92d73096f2a369d4c7b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 77ac77ca999ef627c0f3c9e763b7e5799b97d679
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746307"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349239"
 ---
 # <a name="manage-project-and-solution-properties"></a>管理项目和解决方案属性
 
@@ -25,6 +25,9 @@ ms.locfileid: "34746307"
 在项目树本身，.NET 项目也可能具有一个属性节点。
 
 ![解决方案资源管理器树中的属性节点](../ide/media/vs2015_props_se.png)
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[管理解决方案和项目属性 (Visual Studio for Mac)](/visualstudio/mac/managing-solutions-and-project-properties)。
 
 ## <a name="project-properties"></a>项目属性
 
@@ -56,3 +59,4 @@ C++ 和 JavaScript 项目对于管理项目属性有不同的用户界面。 此
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)
+- [管理解决方案和项目属性 (Visual Studio for Mac)](/visualstudio/mac/managing-solutions-and-project-properties)

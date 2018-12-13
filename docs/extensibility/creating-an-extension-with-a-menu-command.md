@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc2f4464915a1f251c08f3de5741a82ed9d7efbd
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 539ab866056b97f7054dda1843870dcfdd4379d9
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498605"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248132"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>使用菜单命令创建扩展
 本演练演示如何创建一个扩展按钮可启动记事本的菜单命令。  
@@ -55,23 +55,15 @@ ms.locfileid: "39498605"
 2.  查找专用 FirstCommand 构造函数。 这是命令挂接到命令服务和命令处理程序指定的位置。 将命令处理程序的名称更改为 StartNotepad，按如下所示：  
   
     ```csharp  
-    private FirstCommand(Package package)  
+    private FirstCommand(AsyncPackage package, OleMenuCommandService commandService)  
     {  
-        if (package == null)  
-        {  
-            throw new ArgumentNullException(nameof(package));  
-        }  
-  
-        this.package = package;  
-  
-         OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
-        if (commandService != null)  
-        {  
-            CommandID menuCommandID = new CommandID(CommandSet, CommandId);  
-            // Change to StartNotepad handler.  
-            MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);  
-            commandService.AddCommand(menuItem);  
-        }  
+        this.package = package ?? throw new ArgumentNullException(nameof(package));
+        commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
+
+        CommandID menuCommandID = new CommandID(CommandSet, CommandId);
+        // Change to StartNotepad handler.
+        MenuCommand menuItem = new MenuCommand(this.StartNotepad, menuCommandID);
+        commandService.AddCommand(menuItem);
     }  
     ```  
   
@@ -118,20 +110,20 @@ ms.locfileid: "39498605"
 ## <a name="next-steps"></a>后续步骤  
  本演练说明了仅执行与 Visual Studio 扩展的一小部分。 下面是一个可以在 Visual Studio 扩展中执行哪些 （合理方便地） 操作的简短列表：  
   
-1.  您可以执行许多其他操作使用简单的菜单命令：  
+1. 您可以执行许多其他操作使用简单的菜单命令：  
   
-    1.  添加自己的图标：[将图标添加到菜单命令](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  添加自己的图标：[将图标添加到菜单命令](../extensibility/adding-icons-to-menu-commands.md)  
   
-    2.  更改菜单命令的文本：[更改菜单命令的文本](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  更改菜单命令的文本：[更改菜单命令的文本](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-    3.  将菜单快捷方式添加到命令：[将键盘快捷方式绑定到菜单项](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  将菜单快捷方式添加到命令：[将键盘快捷方式绑定到菜单项](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2.  添加不同类型的命令、 菜单和工具栏：[扩展菜单和命令](../extensibility/extending-menus-and-commands.md)  
+2. 添加不同类型的命令、 菜单和工具栏：[扩展菜单和命令](../extensibility/extending-menus-and-commands.md)  
   
-3.  添加工具窗口和扩展内置的 Visual Studio 工具窗口：[扩展和自定义工具窗口](../extensibility/extending-and-customizing-tool-windows.md)  
+3. 添加工具窗口和扩展内置的 Visual Studio 工具窗口：[扩展和自定义工具窗口](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4.  添加 IntelliSense、 代码建议和其他功能到现有代码编辑器：[扩展编辑器和语言服务](../extensibility/extending-the-editor-and-language-services.md)  
+4. 将 IntelliSense、 代码建议和其他功能添加到现有的代码编辑器：[将编辑器和语言服务扩展](../extensibility/extending-the-editor-and-language-services.md)  
   
-5.  将选项和属性页和用户设置添加到你的扩展：[扩展属性和属性窗口](../extensibility/extending-properties-and-the-property-window.md)和[扩展用户设置和 Ooptions](../extensibility/extending-user-settings-and-options.md)  
+5. 将选项和属性页和用户设置添加到您的扩展插件：[扩展属性和属性窗口](../extensibility/extending-properties-and-the-property-window.md)和[扩展用户设置和 Ooptions](../extensibility/extending-user-settings-and-options.md)  
   
- 其他类型的扩展需要更多工作，如创建新的项目类型 ([扩展项目](../extensibility/extending-projects.md))，创建新的编辑器类型 ([创建自定义编辑器和设计器](../extensibility/creating-custom-editors-and-designers.md))，或实现你独立 shell 中的扩展： [Visual Studio 独立 shell](../extensibility/visual-studio-isolated-shell.md)
+   其他类型的扩展需要更多工作，如创建新的项目类型 ([扩展项目](../extensibility/extending-projects.md))，创建新的编辑器类型 ([创建自定义编辑器和设计器](../extensibility/creating-custom-editors-and-designers.md))，或实现你独立 shell 中的扩展：[Visual Studio 独立 shell](../extensibility/visual-studio-isolated-shell.md)

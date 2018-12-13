@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd92e4e4b5f4a0ae77cfae393d2d51446e17bcfe
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327211"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906034"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>为 SharePoint 创建 web 部件
   通过使用 web 部件，可以使用浏览器中修改内容、 外观和行为的 SharePoint 站点页面。 Web 部件是在 web 部件页中运行的服务器端控件： 它们是在 SharePoint 网站显示的页的构建基块。 请参阅[构建基块： Web 部件](http://go.microsoft.com/fwlink/?LinkID=182097)。  
@@ -84,25 +84,25 @@ ms.locfileid: "36327211"
 ## <a name="visual-web-part-limitations"></a>可视 web 部件限制
  从 Visual Studio 中，可以将可视 web 部件添加到沙盒 SharePoint 解决方案和场解决方案。 但是，可视 web 部件具有以下限制：  
   
--   Visual web 部件不支持可替换参数。 有关详细信息，请参阅[可替换参数](../sharepoint/replaceable-parameters.md)。  
+- Visual web 部件不支持可替换参数。 有关详细信息，请参阅[可替换参数](../sharepoint/replaceable-parameters.md)。  
   
--   不能拖动和删除或复制到可视 web 部件上的用户控件或可视 web 部件。 此操作会导致生成错误。  
+- 不能拖动和删除或复制到可视 web 部件上的用户控件或可视 web 部件。 此操作会导致生成错误。  
   
--   可视 web 部件不直接支持 SharePoint 服务器标记，如 $SPUrl。 详细信息，请参阅"令牌限制在沙盒可视 Web 部件"主题中[进行故障排除 SharePoint 解决方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。  
+- 可视 web 部件不直接支持 SharePoint 服务器标记，如 $SPUrl。 详细信息，请参阅"令牌限制在沙盒可视 Web 部件"主题中[进行故障排除 SharePoint 解决方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。  
   
--   沙盒解决方案中的可视 web 部件偶尔会发生错误，"沙盒代码执行请求已被拒绝，因为沙盒代码托管服务太忙而无法处理该请求。" 有关此错误的详细信息，请参阅中的该文章[SharePoint 开发人员团队博客](http://go.microsoft.com/fwlink/?LinkId=225932)。  
+- 沙盒解决方案中的可视 web 部件偶尔会发生错误，"沙盒代码执行请求已被拒绝，因为沙盒代码托管服务太忙而无法处理该请求。" 有关此错误的详细信息，请参阅中的该文章[SharePoint 开发人员团队博客](http://go.microsoft.com/fwlink/?LinkId=225932)。  
   
--   服务器端 JavaScript 调试不支持在 Visual Studio 中，但客户端 JavaScript 调试支持。  
+- 服务器端 JavaScript 调试不支持在 Visual Studio 中，但客户端 JavaScript 调试支持。  
   
-     尽管可以将内联 JavaScript 添加到服务器端标记文件，但不支持断点添加到标记的调试。 若要调试 JavaScript，引用外部 JavaScript 文件中的标记文件，然后在 JavaScript 文件中设置断点。  
+   尽管可以将内联 JavaScript 添加到服务器端标记文件，但不支持断点添加到标记的调试。 若要调试 JavaScript，引用外部 JavaScript 文件中的标记文件，然后在 JavaScript 文件中设置断点。  
   
--   调试内联[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]代码必须在标记文件中而不是生成的代码文件中完成。  
+- 调试内联[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]代码必须在标记文件中而不是生成的代码文件中完成。  
   
--   可视 web 部件不支持使用`<@ Assembly Src=`指令。  
+- 可视 web 部件不支持使用`<@ Assembly Src=`指令。  
   
--   SharePoint web 控件以及一些[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]控件不受支持 SharePoint 沙盒环境中。 如果不受支持的控件用于在可视 web 部件在沙盒解决方案中，该错误，会显示"的类型或命名空间名称 '主题' 命名空间 'Microsoft.SharePoint.WebControls' 中不存在"。  
+- SharePoint web 控件以及一些[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]控件不受支持 SharePoint 沙盒环境中。 如果不受支持的控件用于在可视 web 部件在沙盒解决方案中，该错误，会显示"的类型或命名空间名称 '主题' 命名空间 'Microsoft.SharePoint.WebControls' 中不存在"。  
   
- 有关沙盒解决方案的详细信息，请参阅[区别沙盒解决方案与场解决方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)。  
+  有关沙盒解决方案的详细信息，请参阅[区别沙盒解决方案与场解决方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)。  
   
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>创建基于 SharePoint 的 web 部件的较旧样式
  可以使用 Visual Studio 中的模板来创建自定义[!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]的 SharePoint web 部件。 [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] web 部件构建的[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]web 部件基础结构并为新项目的推荐类型。  

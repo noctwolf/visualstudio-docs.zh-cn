@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO |Microsoft 文档
+title: MODULE_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e28756873339d504efba417d9e2fe2cc00000b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b28770482357b7e006793f15438e7880f7efb1ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126711"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896999"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
-描述特定模块 （DLL、 EXE 或程序集）。  
+描述为特定模块 （DLL、 exe 文件或程序集）。  
   
 ## <a name="syntax"></a>语法  
   
@@ -63,45 +63,45 @@ public struct MODULE_INFO {
   
 ## <a name="members"></a>成员  
  dwValidFields  
- 中的标志的组合[MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)指定哪些字段填出的枚举。  
+ 中的标志的组合[MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)枚举，用于指定哪些字段填写。  
   
  m_bstrName  
  模块名。  
   
  m_bstrUrl  
- 模块 URL 中。  
+ 模块的 URL。  
   
  m_bstrVersion  
- 该模块版本。  
+ 模块版本。  
   
  m_bstrDebugMessage  
- 可选的消息，有关该模块，例如，"无法加载符号。"  
+ 可选的消息有关该模块，例如，"无法加载符号。"  
   
  m_addrLoadAddress  
  模块加载地址。  
   
  m_addrPreferredLoadAddress  
- 模块的首选的负载地址。  
+ 模块的首选的加载地址。  
   
  m_dwSize  
- 模块的大小。  
+ 模块大小。  
   
  m_dwLoadOrder  
  模块加载顺序。  
   
  m_TimeStamp  
- 符号文件上次修改时间。  
+ 上次修改符号文件的时间。  
   
  m_bstrUrlSymbolLocation  
- 符号文件的位置 (例如，"。\\") 指定模块中。 用作查找模块的符号的起始位置。  
+ 符号文件的位置 (例如，"。\\") 指定模块中。 用作起始位置到查找符号的模块。  
   
  m_dwModuleFlags  
- 中的标志的组合[MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)描述该模块的枚举。  
+ 中的标志的组合[MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)枚举，用于描述该模块。  
   
 ## <a name="remarks"></a>备注  
- 此结构传递给[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)方法中填充位置。  
+ 此结构传递给[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)填写其中的方法。  
   
- 此结构对应于中列出每个模块**模块**窗口。  
+ 此结构对应于中列出的每个模块**模块**窗口。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -110,7 +110,7 @@ public struct MODULE_INFO {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
  [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   

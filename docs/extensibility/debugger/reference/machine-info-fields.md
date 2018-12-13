@@ -1,5 +1,5 @@
 ---
-title: MACHINE_INFO_FIELDS |Microsoft 文档
+title: MACHINE_INFO_FIELDS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d0ff6f75c0ee17bef57b1f2632c4d6926948528
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 631ef4bbb23d4b0cedbf86d7eedb019580cf7e5b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942499"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
-指定要检索有关特定计算机的信息类型。  
+指定要检索特定计算机的信息种类。  
   
 ## <a name="syntax"></a>语法  
   
@@ -55,11 +55,11 @@ public enum enum_MACHINE_INFO_FIELDS {
  初始化/使用所有结构中的字段。  
   
 ## <a name="remarks"></a>备注  
- 这些值都会传递给[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)方法，以指示的哪些成员[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)结构是否被初始化。  
+ 这些值传递给[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)方法，以指示的哪些成员[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)结构是进行初始化。  
   
- 也用在`Fields`的成员`MACHINE_INFO`结构以指示哪些字段是使用和有效。  
+ 中也使用`Fields`的成员`MACHINE_INFO`结构，用于指示哪些字段是使用，有效。  
   
- 这些标志可以与按位组合`OR`。  
+ 可能的按位组合这些标志`OR`。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -68,7 +68,7 @@ public enum enum_MACHINE_INFO_FIELDS {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)   
  [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Findchildren |Microsoft 文档'
+title: 'Idiasymbol:: Findchildren |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 042b02bda59bf064897b0badb24394fc10fb9197
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 107770d880a6ceae9cf58b3c56821c8077dfd272
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465014"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941342"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 检索的符号的子级。  
@@ -37,22 +37,22 @@ HRESULT findChildren (
   
 #### <a name="parameters"></a>参数  
  `symtag`  
- [in]指定要检索的子级的符号标记中定义[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)。 设置为`SymTagNull`为要检索的所有子级。  
+ [in]指定要检索的子对象的符号标记中定义[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)。 设置为`SymTagNull`要检索的所有子级。  
   
  `name`  
- [in]指定要检索的子级的名称。 设置为`NULL`为要检索的所有子级。  
+ [in]指定要检索的子对象的名称。 设置为`NULL`要检索的所有子级。  
   
  `compareFlags`  
- [in]指定应用于名称匹配的比较选项。 中的值[NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)枚举可以单独或组合使用。  
+ [in]指定比较选项应用到匹配的名称。 中的值[NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)枚举可以单独或组合使用。  
   
  `ppResult`  
  [out]返回[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)检索包含子符号的列表的对象。  
   
 ## <a name="return-value"></a>返回值  
- 返回`S_OK`如果至少一个子级的符号找，或返回`S_FALSE`如果不发现任何子级; 否则返回错误代码。  
+ 返回`S_OK`如果至少一个子级的符号已找到，或者返回`S_FALSE`是否不发现了任何子级; 否则返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法相当于调用[idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)了该符号后的第一个参数的方法。  
+ 此方法等同于调用[idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)了该符号后的第一个参数的方法。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

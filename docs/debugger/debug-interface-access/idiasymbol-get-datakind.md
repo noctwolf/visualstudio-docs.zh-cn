@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_datakind |Microsoft 文档'
+title: 'Idiasymbol:: Get_datakind |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c50dea6154b1616d18b7f4159468b3e22f0aa200
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e01dbb38b512832db4c3629f6169fbe3be9c3f79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880509"
 ---
 # <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
-检索的数据符号的变量的分类。  
+检索数据符号的变量的分类。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,13 +34,13 @@ HRESULT get_dataKind (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回一个值从[DataKind 枚举](../../debugger/debug-interface-access/datakind.md)例如指定的全局、 静态的或常量，如数据类型的枚举。  
+ [out]返回一个值从[DataKind 枚举](../../debugger/debug-interface-access/datakind.md)例如指定的全局、 静态的或常量，例如数据类型的枚举。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="requirements"></a>要求  
   

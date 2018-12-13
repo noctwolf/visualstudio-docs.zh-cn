@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f5ec275c4b6e7fcf239aa0903ffe68757c5412cc
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176136"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896206"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>在负载测试方案中配置测试迭代
 
 若要配置测试迭代设置，请使用负载测试编辑器和“属性”窗口编辑负载测试方案。 负载测试方案的默认设置不指定最大测试迭代数。 您可以选择配置方案中的最大迭代数以及它们之间的暂停时间。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>为方案指定最大测试迭代数
 

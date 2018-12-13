@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中生成 C# Equals 和 GetHashCode 方法重写
+title: 生成 C# Equals 和 GetHashCode 方法重写
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: deaa0b37988e2df04bb7937c76f341af849698f0
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 5ec552e320b0c19c5c05e145fd9c5a4588f31b4c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124965"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295704"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>在 Visual Studio 中生成 C# Equals 和 GetHashCode 方法重写
 
@@ -36,17 +36,20 @@ ms.locfileid: "44124965"
 
 ## <a name="how-to"></a>操作说明
 
-1. 将光标置于类型声明中。
+1. 将游标放在类型声明的行上。
 
    ![突出显示的代码](media/overrides-highlight-cs.png)
 
+   > [!TIP]
+   > 请勿双击选择类型名称，否则菜单选项将不可用。 只需将游标置于行上的某处。
+
 1. 接下来，执行以下操作之一：
 
-   - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
-   - **鼠标**
-     - 右键单击并选择“快速操作和重构”菜单。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含类型声明的行上，它会出现在左边）。
+   - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
+
+   - 右键单击并选择“快速操作和重构”菜单。
+
+   - 单击 ![左边缘中](../media/screwdriver-icon.png) 显示的螺丝刀图标。
 
    ![生成重写预览](media/overrides-preview-cs.png)
 
@@ -57,9 +60,9 @@ ms.locfileid: "44124965"
     ![生成重写对话框](media/overrides-dialog-cs.png)
 
     > [!TIP]
-    > 也可以通过使用成员列表下方的复选框，从此对话框中生成运算符。
+    > 也可以通过使用对话框底部附近的复选框，选择从此对话框中生成运算符。
 
-   通过默认实现来生成 Equals 和 GetHashCode 重写。
+   将使用默认实现生成 `Equals` 和 `GetHashCode` 方法。
 
    ![生成方法结果](media/overrides-result-cs.png)
 

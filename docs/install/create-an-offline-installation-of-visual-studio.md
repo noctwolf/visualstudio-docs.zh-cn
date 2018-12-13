@@ -1,5 +1,5 @@
 ---
-title: 创建 Visual Studio 脱机安装缓存
+title: 创建 Visual Studio 的脱机安装
 description: 了解如何在 Internet 连接不可靠或带宽较低时脱机安装 Visual Studio。
 ms.custom: ''
 ms.date: 08/28/2018
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b43fae1bb43fef7ca56e7967e6631920df6f0a
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
+ms.openlocfilehash: f29c364bdd5fc0ea5d08a9862a71d7697197b438
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43370946"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826724"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 脱机安装缓存
 
@@ -34,7 +34,7 @@ Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中�
 
 ## <a name="use-the-download-all-then-install-feature"></a>使用“全部下载，然后安装”功能
 
-[15.8 中的新增功能](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&view=vs-2017#install
+[15.8 中的新增功能](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
 )：下载 Web 安装程序后，从 Visual Studio 安装程序中选择新的“全部下载后再安装”选项********。 然后，继续安装。
 
    ![“全部下载后再安装”选项](media/download-all-then-install.png)
@@ -53,13 +53,16 @@ Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中�
 
 | 版本                    | 文件                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
-| Visual Studio 社区    | [vs_community.exe](https://aka.ms/vs/15/release/vs_community.exe)       |
-| Visual Studio Professional | [vs_professional.exe](https://aka.ms/vs/15/release/vs_professional.exe) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://aka.ms/vs/15/release/vs_enterprise.exe)     |
+| Visual Studio 社区    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
+| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
+| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
 
 ### <a name="step-2---create-a-local-install-cache"></a>步骤 2 - 创建本地安装缓存
 
 必须具有 Internet 连接才能完成此步骤。
+
+> [!IMPORTANT]
+> 如果已安装 Visual Studio Community 2017，必须在安装后的 30 天内激活它。 必须连接到 Internet，才能执行此操作。
 
 请打开命令提示符，并使用以下示例中的任一命令。 此处列出的示例假定用户使用的是 Visual Studio 社区版；请根据版本相应调整命令。
 
@@ -106,7 +109,7 @@ Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中�
 | ----------------------- | --------------- |
 | cs-CZ | 捷克语 |
 | de-DE | 德语 |
-| zh-CN | 英语 |
+| en-US | 英语 |
 | es-ES | 西班牙语 |
 | fr-FR | 法语 |
 | it-IT | 意大利语 |

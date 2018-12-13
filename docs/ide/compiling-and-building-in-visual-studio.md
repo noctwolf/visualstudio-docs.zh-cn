@@ -13,30 +13,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472fcda584db4bf6cd16c386fec4b3e668f44a9f
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 9d2ad9e3e6644f3f0ffc2d4fbf163968f16065f3
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341671"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349128"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>在 Visual Studio 中编译和生成
 
-运行生成会在开发周期内随时从源代码创建程序集和可执行应用程序。 一般情况下，生成过程在许多不同的项目类型（如 Windows、ASP.NET、移动应用和其他类型）中非常相似。 生成过程在诸如 C#、Visual Basic、C++ 和 F# 等编程语言之间也非常相似。
+生成源代码时，生成引擎会创建程序集和可执行应用程序。 一般情况下，生成过程在许多不同的项目类型（如 Windows、ASP.NET、移动应用和其他类型）中非常相似。 生成过程在诸如 C#、Visual Basic、C++ 和 F# 等编程语言之间也是相似的。
 
-通过经常生成你的代码，你可以快速识别编译时错误，如不正确的语法、拼错的关键字和类型不匹配项。 还可以通过频繁生成并运行调试版本的代码来快速检测和纠正运行时错误，如逻辑错误和语义错误。
+通过经常生成你的代码，你可以快速识别编译时错误，如不正确的语法、拼错的关键字和类型不匹配项。 还可以通过生成并运行调试版本的代码来检测和纠正运行时错误，如逻辑错误和语义错误。
 
-成功的生成实质上是确认应用程序的源代码包含正确的语法，并且已解决对库、程序集和其他组件的所有静态引用。 这会生成一个应用程序可执行文件，然后可以在[调试环境](../debugger/index.md)中通过各种手动和自动测试[验证代码质量](../test/improve-code-quality.md)，测试该可执行文件以便正常运行。 该应用程序经过完全测试后，你可以编译一个发布版本以部署到你的客户。 要简要了解此过程，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。
+成功的生成会验证应用程序的源代码是否包含正确的语法，并且是否可以解析对库、程序集和其他组件的所有静态引用。 这会生成一个应用程序可执行文件，可以在[调试环境](../debugger/index.md)中或通过各种手动和自动的[验证代码质量](../test/improve-code-quality.md)测试来测试该可执行文件以便正常运行。 该应用程序经过完全测试后，可以编译一个发布版本以部署到客户。 要简要了解此过程，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。
 
-在 Visual Studio 产品系列中，有三种方法可用于生成应用程序：Visual Studio IDE、MSBuild 命令行工具和 Visual Studio Team Services 上的 Team Foundation Build：
+可以使用以下任何方法来生成应用程序：Visual Studio IDE、MSBuild 命令行工具和 Azure Pipelines：
 
 | 生成方法 | 优点 |
 | --- |--- | --- |
 | IDE |- 立即创建生成并在调试程序中对其进行测试。<br />- 运行 C++ 和 C# 项目的多处理器生成。<br />- 自定义生成系统的不同方面。 |
 | MSBuild 命令行| - 在无需安装 Visual Studio 的情况下生成项目。<br />- 运行所有项目类型的多处理器生成。<br />- 自定义生成系统的大多数区域。|
-| Team Foundation Build | - 自动执行生成过程作为持续集成/持续交付管道的一部分。<br />- 将自动测试应用于每个生成。<br />- 为生成过程采用几乎无限的基于云的资源。<br />- 修改生成工作流，并创建生成活动以执行深层的自定义任务。|
+| Azure Pipelines | - 自动执行生成过程作为持续集成/持续交付管道的一部分。<br />- 将自动测试应用于每个生成。<br />- 为生成过程采用几乎无限的基于云的资源。<br />- 修改生成工作流，并创建生成活动以执行深层的自定义任务。|
 
-本节中的文档将详细介绍基于 IDE 的生成过程。 有关其他方法的详细信息，请分别参阅 [MSBuild](../msbuild/msbuild.md) 和[持续集成和部署](/vsts/pipelines/index?view=vsts)。
+本节中的文档将详细介绍基于 IDE 的生成过程。 有关其他方法的详细信息，请分别参阅 [MSBuild](../msbuild/msbuild.md) 和 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中编译和生成](/visualstudio/mac/compiling-and-building)。
 
 ## <a name="overview-of-building-from-the-ide"></a>从 IDE 生成的概述
 
@@ -56,4 +59,5 @@ ms.locfileid: "39341671"
 
 ## <a name="see-also"></a>请参阅
 
-- [生成（编译）网站项目](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [生成（编译）网站项目](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [编译和生成 (Visual Studio for Mac)](/visualstudio/mac/compiling-and-building)

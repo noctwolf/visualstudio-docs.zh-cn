@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreams:: Next |Microsoft 文档'
+title: 'Idiaenumdebugstreams:: Next |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 780aaca4d840d87df17572ec7d58cebc84e84d4c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: acd95d68ed32e5bb9116123f4cbdfd9d30e26f16
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456336"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220444"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 检索指定的数目的枚举序列中的调试流。  
@@ -27,7 +27,7 @@ ms.locfileid: "31456336"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG                     celt,   
    IDiaEnumDebugStreamData** rgelt,  
    ULONG*                    pceltFetched  
@@ -36,16 +36,16 @@ HRESULT Next (
   
 #### <a name="parameters"></a>参数  
  celt  
- [in]**T**他的要检索的枚举器中的调试流数。  
+ [in]要检索的枚举器中的调试流的数量。  
   
  rgelt  
- [out]返回的数组[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)对象表示调试流正在检索。  
+ [out]返回的数组[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)正在检索对象，表示调试流。  
   
  pceltFetched  
- [out]返回的返回的调试流的数量。  
+ [out]返回返回的调试流的数。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果没有更大的流。 否则，返回错误代码。  
+ 如果成功，则返回`S_OK`。 返回`S_FALSE`如果没有更多的流。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

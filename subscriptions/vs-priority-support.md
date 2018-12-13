@@ -1,26 +1,24 @@
 ---
-title: Visual Studio 订阅中的优先支持权益 | Microsoft 文档
+title: Visual Studio 订阅中的开发者社区权益 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/07/2018
+ms.date: 12/04/2018
 ms.topic: Get-Started-Article
-description: 了解有关 Visual Studio 订阅中包含的优先支持权益。
+description: 了解 Visual Studio 订阅中包含的开发者社区权益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 73665a2d423d5284f616354ccd341a8b5ce476f3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 7eb168f8163d75e01ac688439780fd7d65df3506
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289407"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896648"
 ---
-# <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的优先支持权益
+# <a name="developer-community-support-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的开发者社区支持
 
-优先支持权益提供对各种支持社区论坛的访问权限，你可在其中搜索现有文章或提出新问题。  如果社区在两天内未回答你的问题，Microsoft 的支持团队将给予答复。
-
-具有选定的 Visual Studio 订阅的订阅者有资格通过涵盖各类主题的大量论坛受到优先支持。  单击以下任何链接直接进入该论坛。  
+开发者社区权益提供对各种支持社区论坛的访问权限，你可在其中搜索现有文章或提出新问题。 单击以下任何链接直接进入该论坛。  
 
 ## <a name="included-forums"></a>包含的论坛
 
@@ -37,7 +35,7 @@ ms.locfileid: "43289407"
 
 ### <a name="microsoft-azure"></a>Microsoft Azure
    - [云服务（Web 角色和辅助角色）](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
-   
+
    - [Azure SQL 数据库](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
 
    - [Azure 存储](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
@@ -229,6 +227,7 @@ ms.locfileid: "43289407"
 
 
 ## <a name="eligibility"></a>资格
+
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | Included       |  是          |
@@ -238,11 +237,11 @@ ms.locfileid: "43289407"
 | Visual Studio Dev Essentials | NA  | Included                                                            |是 |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup> 包括：限制转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、Imagine。不包括：Microsoft 合作伙伴网络（MPN）、MCT 软件和服务、MCT 软件和服务开发人员、BizSpark、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)。
+<sup>1</sup> 包括：限制转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、Imagine。不包括：Microsoft 合作伙伴网络 (MPN)、MCT 软件和服务、MCT 软件和服务开发人员、BizSpark、Microsoft 最有价值专家 (MVP)、区域总监 (RD)。
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 
 ## <a name="support-resources"></a>支持资源
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+-  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

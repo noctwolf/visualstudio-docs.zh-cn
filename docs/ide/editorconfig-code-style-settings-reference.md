@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中 EditorConfig 的 .NET 编码约定设置
+title: EditorConfig 的 .NET 编码约定设置
 ms.date: 06/14/2018
 ms.topic: reference
 dev_langs:
@@ -8,9 +8,9 @@ dev_langs:
 helpviewer_keywords:
 - coding conventions [EditorConfig]
 - EditorConfig coding conventions
-- language conventions [EditorConfig]
+- language code style rules [EditorConfig]
 - formatting conventions [EditorConfig]
-author: gewarren
+author: kuhlenh
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
@@ -18,22 +18,24 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f85f2fed84dd8579295c0124adb43ee395166204
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125062"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51769756"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 编码约定设置
 
 在 Visual Studio 2017 中，通过使用 [EditorConfig](../ide/create-portable-custom-editor-options.md) 文件，可在基本代码中定义和维护一致的代码样式。 EditorConfig 包括多个核心格式设置属性，如 `indent_style` 和 `indent_size`。 在 Visual Studio 中，还可使用 EditorConfig 文件配置 .NET 编码约定设置。 通过 EditorConfig 文件，可以启用或禁用单个 .NET 编码约定，并可通过严重级别配置强制实施约定的程度。 若要深入了解如何使用 EditorConfig 强制实施基本代码一致性，请参阅[创建可移植的自定义编辑器设置](../ide/create-portable-custom-editor-options.md)。
 
-请参阅本文档末尾内容，获取示例 .editorconfig。
+请参阅本文结尾，以获取[示例 .editorconfig 文件](#example-editorconfig-file)。
+
+## <a name="convention-categories"></a>约定类别
 
 有三种受支持的 .NET 编码约定类别：
 
-- [语言约定](#language-conventions)
+- [语言代码样式](#language-code-styles)
 
    与 C# 或 Visual Basic 语言相关的规则。 例如，定义变量或首选 expression-bodied 成员时，可以指定与 `var` 或显式类型的使用相关的规则。
 
@@ -45,13 +47,13 @@ ms.locfileid: "44125062"
 
    与码位元素的命名有关的规则。 例如，可以指定 `async` 方法必须以“Async”结尾。
 
-## <a name="language-conventions"></a>语言约定
+## <a name="language-code-styles"></a>语言代码样式
 
-语言约定的规则具有以下格式：
+语言代码样式的规则具有以下格式：
 
 `options_name = false|true : none|silent|suggestion|warning|error`
 
-对于每个语言约定规则，必须指定“true”（以此样式为首选项）或“false”（不以此样式为首选项），以及“严重性”。 “严重性”指定强制执行该样式的级别。
+对于每个语言代码样式规则，必须指定“true”（以此样式为首选项）或“false”（不以此样式为首选项），以及“严重性”。 “严重性”指定强制执行该样式的级别。
 
 下表列出了可能的严重性值及其效果：
 
@@ -63,7 +65,7 @@ ms.locfileid: "44125062"
 `warning` | 如违反此样式规则，显示编译器警告。
 `error` | 如违反此样式规则，显示编译器错误。
 
-以下列表显示允许的语言约定规则：
+以下列表显示允许的语言代码样式规则：
 
 - .NET 代码样式设置
     - [“This.”和“Me.”限定符](#this_and_me)
@@ -246,7 +248,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 #### <a name="language_keywords"></a>语言关键字，而非类型引用的框架类型名称
 
-此样式规则可应用到本地变量、方法参数和类成员，也可作为针对类型成员访问表达式的单独规则。 值为“true”代表对于类型（其中具有用于表示该类型的关键字），语言关键字（例如 `int` 或 `Integer`）为首选项，而非类型名称（例如 `Int32`）。 值为“false”代表类型名称为首选项，而非语言关键字。
+此样式规则可应用到本地变量、方法参数和类成员，也可作为针对类型成员访问表达式的单独规则。 值为“true”表示，如果类型中有用于表示类型的关键字，首选语言关键字（例如 `int` 或 `Integer`），而不是类型名称（例如 `Int32`）。 值为“false”代表类型名称为首选项，而非语言关键字。
 
 下表显示规则名称、规则 ID、适用的编程语言和默认值：
 
@@ -317,7 +319,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 下表显示规则名称、规则 ID、适用的编程语言、默认值和第一个支持的 Visual Studio 版本：
 
 | 规则名称 | 规则 ID | 适用的语言 | Visual Studio 默认值 | Visual Studio 2017 版本 |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | dotnet_style_require_accessibility_modifiers | IDE0040 | C# 和 Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | public、private、protected、internal、static、extern、new、virtual、abstract、sealed、override、readonly、unsafe、volatile、async:none | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial、Default、Private、Protected、Public、Friend、NotOverridable、Overridable、MustOverride、Overloads、Overrides、MustInherit、NotInheritable、Static、Shared、Shadows、ReadOnly、WriteOnly、Dim、Const、WithEvents、Widening、Narrowing、Custom、Async:none | 15.5 |
@@ -456,7 +458,7 @@ Dim v = a + b * c
 
 **dotnet\_style\_parentheses\_in\_relational\_binary_operators**
 
-- 当此规则设置为 always_for_clarity 时，请首选括号以指定关系运算符（`>`、`<`、`<=`、`>=`、`is`、`as`、`==`、`!=`）的优先级。
+- 如果此规则设置为 always_for_clarity，首选括号来指定关系运算符（`>`、`<`、`<=`、`>=`、`is`、`as`、`==`、`!=`）优先级。
 - 当此规则设置为 never_if_unnecessary，且关系运算符（`>`、`<`、`<=`、`>=`、`is`、`as`、`==`、`!=`）的优先级显而易见时，最好不要使用括号。
 
 代码示例：
@@ -669,7 +671,6 @@ var anon = new { age, name };
 
 // dotnet_style_prefer_inferred_anonymous_type_member_names = false
 var anon = new { age = age, name = name };
-
 ```
 
 ```vb
@@ -678,13 +679,12 @@ Dim anon = New With {name, age}
 
 ' dotnet_style_prefer_inferred_anonymous_type_member_names = false
 Dim anon = New With {.name = name, .age = age}
-
 ```
 
 **dotnet\_style\_prefer\_auto\_properties**
 
-- 如果将此规则设置为 true，则首选自动属性，而非具有专用支持字段的属性。
-- 如果将此规则设置为 false，则首选具有专用支持字段的属性，而非自动属性。
+- 如果此规则设置为“true”，首选自动属性，而不是包含专用支持字段的属性。
+- 如果此规则设置为“false”，首选包含专用支持字段的属性，而不是自动属性。
 
 代码示例：
 
@@ -736,12 +736,12 @@ if (object.ReferenceEquals(value, null))
 ```
 
 ```vb
-' dotnet_style_prefer_auto_properties = true
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = true
 If value Is Nothing
     Return
 End If
 
-' dotnet_style_prefer_auto_properties = false
+' dotnet_style_prefer_is_null_check_over_reference_equality_method = false
 If Object.ReferenceEquals(value, Nothing)
     Return
 End If
@@ -982,7 +982,7 @@ csharp_style_var_elsewhere = true:suggestion
 下表显示规则名称、规则 ID、适用的语言版本、默认值和第一个支持的 Visual Studio 版本：
 
 | 规则名称 | 规则 ID | 适用的语言 | Visual Studio 默认值 | Visual Studio 2017 版本 |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | false:none | 15.3 |
 | csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | false:none | 15.3 |
 | csharp_style_expression_bodied_operators | IDE0023 和 IDE0024 | C# 7.0+ | false:none | 15.3 |
@@ -1217,7 +1217,7 @@ csharp_style_inlined_variable_declaration = true:suggestion
 下表显示规则名称、规则 ID、适用的语言版本、默认值和第一个支持的 Visual Studio 版本：
 
 | 规则名称 | 规则 ID | 适用的语言 | Visual Studio 默认值 | Visual Studio 2017 版本 |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_prefer_simple_default_expression | IDE0034 | C# 7.1+ | true:suggestion | 15.3 |
 | csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0+ | true:suggestion | 15.5 |
 | csharp_style_pattern_local_over_anonymous_function | IDE0039 | C# 7.0+ | true:suggestion | 15.5 |
@@ -1352,7 +1352,7 @@ csharp_style_conditional_delegate_call = false:suggestion
 下表显示规则名称、规则 ID、适用的语言版本、默认值和第一个支持的 Visual Studio 版本：
 
 | 规则名称 | 规则 ID | 适用的语言 | Visual Studio 默认值 | Visual Studio 2017 版本 |
-| --------- | ------- | -------------------- | ----------------------| ----------------  |
+| --------- | ------- | -------------------- | ----------------------| ---------------- |
 | csharp_prefer_braces | IDE0011 | C# | true:none | 15.3 |
 
 **csharp\_prefer\_braces**
@@ -1431,8 +1431,8 @@ csharp_prefer_braces = true:none
 下表显示规则名称、适用的语言、默认值和第一个支持的 Visual Studio 版本：
 
 | 规则名称 | 适用的语言 | Visual Studio 默认值 | Visual Studio 2017 版本 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| dotnet_sort_system_directives_first |  C# 和 Visual Basic | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| dotnet_sort_system_directives_first | C# 和 Visual Basic | true | 15.3 |
 
 **dotnet\_sort\_system\_directives_first**
 
@@ -1472,14 +1472,14 @@ dotnet_sort_system_directives_first = true
 下表显示“新行”规则名称、适用的语言、默认值和第一个支持的 Visual Studio 版本：
 
 | 规则名称 | 适用的语言 | Visual Studio 默认值 | Visual Studio 2017 版本 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_new_line_before_open_brace |  C# | 全部 | 15.3  |
-| csharp_new_line_before_else |  C# | true | 15.3  |
-| csharp_new_line_before_catch |  C# | true | 15.3  |
-| csharp_new_line_before_finally |  C# | true | 15.3  |
-| csharp_new_line_before_members_in_object_initializers |  C# | true | 15.3  |
-| csharp_new_line_before_members_in_anonymous_types |  C# | true | 15.3  |
-| csharp_new_line_between_query_expression_clauses |  C# | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_new_line_before_open_brace | C# | 全部 | 15.3 |
+| csharp_new_line_before_else | C# | true | 15.3 |
+| csharp_new_line_before_catch | C# | true | 15.3 |
+| csharp_new_line_before_finally | C# | true | 15.3 |
+| csharp_new_line_before_members_in_object_initializers | C# | true | 15.3 |
+| csharp_new_line_before_members_in_anonymous_types | C# | true | 15.3 |
+| csharp_new_line_between_query_expression_clauses | C# | true | 15.3 |
 
 **csharp\_new\_line\_before\_open_brace**
 
@@ -1590,7 +1590,7 @@ try {
 
 **csharp\_new\_line\_before\_members\_in\_object_initializers**
 
-- 如果此规则设置为“true”，则需要将对象初始值设定项的成员置于单独的行。
+- 如果此规则设置为“true”，对象初始值设定项的成员必须单独占一行。
 - 如果此规则设置为“false”，则需要将对象初始值设定项的成员置于同一行。
 
 代码示例：
@@ -1671,10 +1671,10 @@ csharp_new_line_between_query_expression_clauses = true
 下表显示规则名称、适用的语言、默认值和第一个支持的 Visual Studio 版本：
 
 | 规则名称 | 适用的语言 | Visual Studio 默认值 | Visual Studio 2017 版本 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_indent_case_contents |  C# | true | 15.3  |
-| csharp_indent_switch_labels |  C# | true | 15.3  |
-| csharp_indent_labels |  C# | no_change | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_indent_case_contents | C# | true | 15.3 |
+| csharp_indent_switch_labels | C# | true | 15.3 |
+| csharp_indent_labels | C# | no_change | 15.3 |
 
 **csharp\_indent\_case_contents**
 
@@ -1816,18 +1816,18 @@ csharp_indent_labels = flush_left
 下表显示规则名称、适用的语言、默认值和第一个支持的 Visual Studio 版本：
 
 | 规则名称 | 适用的语言 | Visual Studio 默认值 | Visual Studio 2017 版本 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_space_after_cast |  C# | False | 15.3  |
-| csharp_space_after_keywords_in_control_flow_statements |  C# | true | 15.3  |
-| csharp_space_between_method_declaration_parameter_ list_parentheses |  C# | False | 15.3  |
-| csharp_space_between_method_call_parameter_list_parentheses |  C# | False | 15.3  |
-| csharp_space_between_parentheses |  C# | False | 15.3  |
-| csharp_space_before_colon_in_inheritance_clause |  C# | true | 15.7  |
-| csharp_space_after_colon_in_inheritance_clause |  C# | true | 15.7  |
-| csharp_space_around_binary_operators |  C# | before_and_after | 15.7  |
-| csharp_space_between_method_declaration_empty_parameter_list_parentheses |  C# | False | 15.7  |
-| csharp_space_between_method_call_name_and_opening_parenthesis |  C# | False | 15.7  |
-| csharp_space_between_method_call_empty_parameter_list_parentheses |  C# | False | 15.7  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_space_after_cast | C# | False | 15.3 |
+| csharp_space_after_keywords_in_control_flow_statements | C# | true | 15.3 |
+| csharp_space_between_method_declaration_parameter_list_parentheses | C# | False | 15.3 |
+| csharp_space_between_method_call_parameter_list_parentheses | C# | False | 15.3 |
+| csharp_space_between_parentheses | C# | False | 15.3 |
+| csharp_space_before_colon_in_inheritance_clause | C# | true | 15.7 |
+| csharp_space_after_colon_in_inheritance_clause | C# | true | 15.7 |
+| csharp_space_around_binary_operators | C# | before_and_after | 15.7 |
+| csharp_space_between_method_declaration_empty_parameter_list_parentheses | C# | False | 15.7 |
+| csharp_space_between_method_call_name_and_opening_parenthesis | C# | False | 15.7 |
+| csharp_space_between_method_call_empty_parameter_list_parentheses | C# | False | 15.7 |
 
 **csharp\_space\_after_cast**
 
@@ -2119,9 +2119,9 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 下表显示规则名称、适用的语言、默认值和第一个支持的 Visual Studio 版本：
 
 | 规则名称 | 适用的语言 | Visual Studio 默认值 | Visual Studio 2017 版本 |
-| ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_preserve_single_line_statements |  C# | true | 15.3  |
-| csharp_preserve_single_line_blocks |  C# | true | 15.3  |
+| ----------- | -------------------- | ----------------------| ---------------- |
+| csharp_preserve_single_line_statements | C# | true | 15.3 |
+| csharp_preserve_single_line_blocks | C# | true | 15.3 |
 
 **csharp_preserve_single_line_statements**
 
@@ -2222,8 +2222,8 @@ dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_null_propagation = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_prefer_is_null_check_over_reference_equality_method = true:silent
-dotnet_prefer_inferred_tuple_names = true:suggestion
-dotnet_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 dotnet_style_prefer_auto_properties = true:silent
 dotnet_style_prefer_conditional_expression_over_assignment = true:silent
 dotnet_style_prefer_conditional_expression_over_return = true:silent
@@ -2244,7 +2244,7 @@ dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
 dotnet_naming_symbols.constant_fields.required_modifiers          = const
 
 ###############################
-# C# Coding Conventions       #
+# C# Code Style Rules         #
 ###############################
 
 [*.cs]
@@ -2261,7 +2261,7 @@ csharp_style_expression_bodied_properties = true:none
 csharp_style_expression_bodied_indexers = true:none
 csharp_style_expression_bodied_accessors = true:none
 
-# Pattern matching preferences
+# Pattern-matching preferences
 csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
@@ -2314,9 +2314,9 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 
-###############################
-# VB Coding Conventions       #
-###############################
+##################################
+# Visual Basic Code Style Rules  #
+##################################
 
 [*.vb]
 # Modifier preferences

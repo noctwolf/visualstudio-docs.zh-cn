@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f2710693c7dae7c4238f9f31fbe8065d6864a19
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283452"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672959"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>添加语言服务器协议扩展
 
@@ -132,10 +132,10 @@ LSP 不包括如何提供对语言的文本着色的规范。 若要提供自定
 
 4. 创建 *.pkgdef*文件，并添加与此类似的行：
 
-  ```xml
-  [$RootKey$\TextMate\Repositories]
-  "MyLang"="$PackageFolder$\Grammars"
-  ```
+   ```xml
+   [$RootKey$\TextMate\Repositories]
+   "MyLang"="$PackageFolder$\Grammars"
+   ```
 
 5. 右键单击文件并选择**属性**。 更改**构建**操作**内容**并**包含在 VSIX**属性设为 true。
 
@@ -199,7 +199,7 @@ namespace MockLanguageExtension
 
         public async Task OnLoadedAsync()
         {
-            await StartAsync?.InvokeAsync(this, EventArgs.Empty);
+            await StartAsync.InvokeAsync(this, EventArgs.Empty);
         }
 
         public async Task OnServerInitializeFailedAsync(Exception e)
@@ -295,40 +295,40 @@ namespace MockLanguageExtension
 
 1. 添加 JSON 文件 (例如， *MockLanguageExtensionSettings.json*) 中的项目中包含的设置和它们的默认值。 例如：
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": -1
-  }
-  ```
+   }
+   ```
 2. 右键单击 JSON 文件并选择**属性**。 更改**生成**操作保存到"内容"和"包含在 VSIX 中的属性设为 true。
 
 3. 实现 ConfigurationSections 并返回 JSON 文件中定义的设置的前缀的列表 （在 Visual Studio Code 中，这将映射到在 package.json 中的配置节名称）：
 
-  ```csharp
-  public IEnumerable<string> ConfigurationSections
-  {
+   ```csharp
+   public IEnumerable<string> ConfigurationSections
+   {
       get
       {
           yield return "foo";
       }
-  }
-  ```
+   }
+   ```
 4. 将.pkgdef 文件添加到项目 （添加新的文本文件并将文件扩展名更改为.pkgdef）。 Pkgdef 文件应包含此信息：
 
-  ```xml
+   ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-  ```
+   ```
 
 5. 右键单击.pkgdef 文件，然后选择**属性**。 更改**构建**操作**内容**并**包含在 VSIX**属性设为 true。
 
 6. 打开*source.extension.vsixmanifest*文件，并添加中的资产**资产**选项卡：
 
-  ![编辑 vspackage 资产](media/lsp-add-vspackage-asset.png)
+   ![编辑 vspackage 资产](media/lsp-add-vspackage-asset.png)
 
-  * **类型**: Microsoft.VisualStudio.VsPackage
-  * **源**： 文件系统上的文件
-  * **路径**: [路径你 *.pkgdef*文件]
+   * **类型**: Microsoft.VisualStudio.VsPackage
+   * **源**： 文件系统上的文件
+   * **路径**: [路径你 *.pkgdef*文件]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>用户编辑的工作区设置
 
@@ -336,16 +336,16 @@ namespace MockLanguageExtension
 2. 用户将添加的文件中 *.vs*名为的文件夹*VSWorkspaceSettings.json*。
 3. 用户添加到一个行*VSWorkspaceSettings.json*文件服务器提供的设置。 例如：
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": 10
-  }
-  ```
-### <a name="enabling-diagnostics-tracing"></a>启用诊断跟踪
-可以启用诊断跟踪输出之间的客户端和服务器，在调试问题时非常有用的所有消息。  若要启用诊断跟踪，请执行以下操作：
+   }
+   ```
+   ### <a name="enabling-diagnostics-tracing"></a>启用诊断跟踪
+   可以启用诊断跟踪输出之间的客户端和服务器，在调试问题时非常有用的所有消息。  若要启用诊断跟踪，请执行以下操作：
 
-1. 打开或创建工作区设置文件*VSWorkspaceSettings.json* （请参阅"用户编辑的工作区设置"）。
-2. 在设置 json 文件中添加以下行：
+4. 打开或创建工作区设置文件*VSWorkspaceSettings.json* （请参阅"用户编辑的工作区设置"）。
+5. 在设置 json 文件中添加以下行：
 
 ```json
 {

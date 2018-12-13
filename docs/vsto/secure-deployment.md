@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0ed351bf15ec257f79e226958b38e46ac769d0e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 852e66bb4e29e732093cdac6b44c6791ad9b772d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670291"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671075"
 ---
 # <a name="secure-deployment"></a>安全部署
   创建 Office 解决方案时，是自动更新你的开发计算机以允许你运行的项目中的代码。 但是，在部署你的解决方案时，必须提供要签名的证书，该解决方案或使用基于信任决定的证据[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示密钥。 有关详细信息，请参阅[向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)。  
@@ -35,21 +35,21 @@ ms.locfileid: "35670291"
 ## <a name="prevent-office-solutions-from-running-code"></a>阻止 Office 解决方案运行代码  
  管理员可以使用注册表来阻止所有 Office 解决方案的计算机上运行。 具有托管代码扩展的 Office 解决方案打开时，Visual Studio Tools for Office 运行时检查的条目是否具有名称`Disabled`存在的计算机上的以下注册表项之一：  
   
--   **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
+- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
   
--   **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**  
+- **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**  
   
- 若要防止 Office 解决方案运行代码，创建`Disabled`条目下一个或两个这些注册表项，并指定以下数据类型和值的一个`Disabled`:  
+  若要防止 Office 解决方案运行代码，创建`Disabled`条目下一个或两个这些注册表项，并指定以下数据类型和值的一个`Disabled`:  
   
--   REG_SZ 或 REG_EXPAND_SZ 设置为"0"（零） 以外的其他任何字符串。  
+- REG_SZ 或 REG_EXPAND_SZ 设置为"0"（零） 以外的其他任何字符串。  
   
--   设置为 0 （零） 以外的其他任何值的 REG_DWORD。  
+- 设置为 0 （零） 以外的其他任何值的 REG_DWORD。  
   
- 若要启用 Office 解决方案运行代码，请设置这两个`Disabled`条目为 0 （零），或删除的注册表项。  
+  若要启用 Office 解决方案运行代码，请设置这两个`Disabled`条目为 0 （零），或删除的注册表项。  
   
 ## <a name="see-also"></a>请参阅  
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
- [准备计算机以运行或托管 Office 解决方案](http://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
+ [准备计算机以运行或托管 Office 解决方案](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
  [保护 Office 解决方案](../vsto/securing-office-solutions.md)  
   
   

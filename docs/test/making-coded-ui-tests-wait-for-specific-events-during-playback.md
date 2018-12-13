@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中让编码的 UI 测试等待特定事件
+title: 让编码 UI 测试等待特定事件
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,54 +9,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a0b40ad057622636581aafdd554dfa162ac2ac
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d1f077269ddfd736aa98b78c64c81170037853eb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381481"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894763"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>播放期间让编码 UI 测试等待特定事件
 
 在编码的 UI 测试播放中，你可以指示测试等待某些事件发生，如某个窗口出现、进度栏消失等。 为此，请使用合适的 UITestControl.WaitForControlXXX() 方法，如下表中所述。 有关使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> 方法等待启用某个控件的编码的 UI 测试示例，请参阅[演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
- **要求**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- Visual Studio Enterprise
+**要求**
+
+Visual Studio Enterprise
 
 > [!TIP]
-> 使用编码的 UI 测试编辑器，还可以在操作之前添加延迟。 有关详细信息，请参阅[如何：使用编码的 UI 测试编辑器在 UI 操作之前插入延迟](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)。
+> 使用编码的 UI 测试编辑器，还可以在操作之前添加延迟。 有关详细信息，请参阅[如何：使用编码的 UI 测试编辑器在 UI 操作之前插入延迟](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)。
 
+**UITestControl.WaitForControlXXX() 方法**
 
- **UITestControl.WaitForControlXXX() 方法**
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
+等待控件准备好接受鼠标和键盘输入。 引擎会对所有操作隐式调用此 API 以在执行任何操作之前等待控件准备就绪。 但是在某些复杂方案中，可能需要进行显式调用。
 
- 等待控件准备好接受鼠标和键盘输入。 引擎会对所有操作隐式调用此 API 以在执行任何操作之前等待控件准备就绪。 但是在某些复杂方案中，可能需要进行显式调用。
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
+在向导通过对服务器进行调用来执行输入的某种异步验证时，等待控件启用。 例如，可以执行方法以等待启用向导的“下一步”按钮。 有关此方法的示例，请参阅[演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
- 在向导通过对服务器进行调用来执行输入的某种异步验证时，等待控件启用。 例如，可以执行方法以等待启用向导的“下一步”按钮。 有关此方法的示例，请参阅[演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
+等待控件出现在 UI 上。 例如，你期望在应用程序完成参数验证之后出现一个错误对话框。 验证所需的时间是可变的。 可以使用此方法等待该错误对话框。
 
- 等待控件出现在 UI 上。 例如，你期望在应用程序完成参数验证之后出现一个错误对话框。 验证所需的时间是可变的。 可以使用此方法等待该错误对话框。
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlNotExist%2A>
+等待控件从 UI 中消失。 例如，可以等待进度栏消失。
 
- 等待控件从 UI 中消失。 例如，可以等待进度栏消失。
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
+等待控件的指定属性具有给定值。 例如，等待状态文本更改为“完成”。
 
- 等待控件的指定属性具有给定值。 例如，等待状态文本更改为“完成”。
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
+等待控件的指定属性具有与给定值相反的值。 例如，等待编辑框不是只读（即，可编辑）。
 
- 等待控件的指定属性具有与给定值相反的值。 例如，等待编辑框不是只读（即，可编辑）。
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
 
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlCondition%2A>
-
- 等待指定谓词返回为 `true`。 这可以用于对给定控件执行的复杂等待操作（如 OR 条件）。 例如，可以等到状态文本为“成功”或“失败”，如下面的代码中所示：
+等待指定谓词返回为 `true`。 这可以用于对给定控件执行的复杂等待操作（如 OR 条件）。 例如，可以等到状态文本为“成功”或“失败”，如下面的代码中所示：
 
 ```csharp
 
@@ -69,7 +70,6 @@ private static bool IsStatusDone(UITestControl control)
 
 // In test method, wait till the method evaluates to true
 statusText.WaitForControlCondition(IsStatusDone);
-
 ```
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForCondition%2A>
@@ -88,7 +88,6 @@ private static bool IsStatusDoneOrError(UITestControl[] controls)
 
 // In test method, wait till the method evaluates to true
 UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText, errorDialog }, IsStatusDoneOrError);
-
 ```
 
  所有这些方法都具有以下行为：
@@ -115,4 +114,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 - [演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)
 - [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [如何：使用编码的 UI 测试编辑器在 UI 操作之前插入延迟](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
+- [如何：使用编码的 UI 测试编辑器在 UI 操作之前插入延迟](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)

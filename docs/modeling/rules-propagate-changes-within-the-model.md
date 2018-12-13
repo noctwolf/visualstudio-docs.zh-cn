@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e1abc17e9675423359c6f850056a2fedf062e01
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567017"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865957"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>规则在模型内部传播更改
 可以创建将更改传播从一个元素到另一个可视化和建模 SDK (VMSDK) 中的存储规则。 在存储区中的任何元素更改时，规则计划执行，通常在最外部事务提交时。 有不同类型的规则对于不同类型的事件，如添加一个元素，或删除它。 可以将规则附加到特定类型的元素、 形状或关系图。 许多内置功能由规则定义： 例如，规则可确保在模型更改时，更新关系图。 可以添加自己的规则来自定义您的特定于域的语言。
@@ -67,7 +67,6 @@ namespace ExampleNamespace
    }
  }
 }
-
 ```
 
 > [!NOTE]
@@ -75,13 +74,13 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule"></a>若要定义规则
 
-1.  定义规则，如类前缀为`RuleOn`属性。 该属性将规则与其中一个域类、 关系或关系图元素相关联。 规则将应用于此类，这可能是抽象的每个实例。
+1. 定义规则，如类前缀为`RuleOn`属性。 该属性将规则与其中一个域类、 关系或关系图元素相关联。 规则将应用于此类，这可能是抽象的每个实例。
 
-2.  通过将其添加到返回的集注册规则`GetCustomDomainModelTypes()`域模型类中。
+2. 通过将其添加到返回的集注册规则`GetCustomDomainModelTypes()`域模型类中。
 
-3.  规则类派生的一个抽象的规则类，并编写的代码执行方法。
+3. 规则类派生的一个抽象的规则类，并编写的代码执行方法。
 
- 以下部分介绍这些步骤的更多详细信息。
+   以下部分介绍这些步骤的更多详细信息。
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>域类上定义规则
 
@@ -129,24 +128,26 @@ namespace ExampleNamespace
 
 ### <a name="to-write-the-code-of-the-rule"></a>若要编写规则的代码
 
--   从以下基类之一派生规则类：
+- 从以下基类之一派生规则类：
 
-    |基类|触发器|
-    |----------------|-------------|
-    |<xref:Microsoft.VisualStudio.Modeling.AddRule>|添加元素、 链接或形状。<br /><br /> 用于检测新关系，除了新元素。|
-    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|更改域属性值。 该方法的参数提供的旧的和新值。<br /><br /> 对于形状，触发此规则时内置`AbsoluteBounds`属性更改，如果移动形状。<br /><br /> 在许多情况下，它是更方便地重写`OnValueChanged`或`OnValueChanging`属性处理程序中。 更改立即之前和之后调用这些方法。 与此相反，该规则通常在事务结束时运行。 有关详细信息，请参阅[域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。 **注意：** 创建或删除链接时，将不会触发此规则。 相反，编写`AddRule`和一个`DeleteRule`域关系。|
-    |<xref:Microsoft.VisualStudio.Modeling.DeletingRule>|当某个元素或链接是即将被删除时触发。 该属性 ModelElement.IsDeleting 事务结束时才为 true。|
-    |<xref:Microsoft.VisualStudio.Modeling.DeleteRule>|已删除的元素或链接时执行。 已执行的所有其他规则，包括 DeletingRules 后执行规则。 ModelElement.IsDeleting 为 false，并且 ModelElement.IsDeleted 为 true。 若要允许后续撤销，该元素并不实际删除从内存中，但从 Store.ElementDirectory 中删除。|
-    |<xref:Microsoft.VisualStudio.Modeling.MoveRule>|元素是从一个存储分区移动到另一个。<br /><br /> （请注意这不相关的图形形状的位置。）|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>|此规则仅适用于域关系。 如果显式将模型元素分配给链接的任一端，它会触发。|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule>|链接到或从元素的顺序在链接上使用 MoveBefore 或 MoveToIndex 方法发生更改时触发。|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>|创建一个事务时执行。|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>|执行事务时，将为已提交。|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>|要回滚事务时执行。|
 
--   每个类有一个方法重写。 类型`override`来发现它在类中。 此方法的参数标识要更改的元素。
+  | 基类 | 触发器 |
+  |-|-|
+  | <xref:Microsoft.VisualStudio.Modeling.AddRule> | 添加元素、 链接或形状。<br /><br /> 用于检测新关系，除了新元素。 |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | 更改域属性值。 该方法的参数提供的旧的和新值。<br /><br /> 对于形状，触发此规则时内置`AbsoluteBounds`属性更改，如果移动形状。<br /><br /> 在许多情况下，它是更方便地重写`OnValueChanged`或`OnValueChanging`属性处理程序中。 更改立即之前和之后调用这些方法。 与此相反，该规则通常在事务结束时运行。 有关详细信息，请参阅[域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。 **注意：** 创建或删除链接时，将不会触发此规则。 相反，编写`AddRule`和一个`DeleteRule`域关系。 |
+  | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | 当某个元素或链接是即将被删除时触发。 该属性 ModelElement.IsDeleting 事务结束时才为 true。 |
+  | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | 已删除的元素或链接时执行。 已执行的所有其他规则，包括 DeletingRules 后执行规则。 ModelElement.IsDeleting 为 false，并且 ModelElement.IsDeleted 为 true。 若要允许后续撤销，该元素并不实际删除从内存中，但从 Store.ElementDirectory 中删除。 |
+  | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | 元素是从一个存储分区移动到另一个。<br /><br /> （请注意这不相关的图形形状的位置。） |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule> | 此规则仅适用于域关系。 如果显式将模型元素分配给链接的任一端，它会触发。 |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> | 链接到或从元素的顺序在链接上使用 MoveBefore 或 MoveToIndex 方法发生更改时触发。 |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | 创建一个事务时执行。 |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | 执行事务时，将为已提交。 |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | 要回滚事务时执行。 |
 
- 请注意有关规则的以下几点：
+
+- 每个类有一个方法重写。 类型`override`来发现它在类中。 此方法的参数标识要更改的元素。
+
+  请注意有关规则的以下几点：
 
 1.  组在事务中的更改可能会触发许多规则。 通常情况下，当最外面的事务提交时，会执行规则。 中未指定的顺序执行它们。
 
@@ -208,7 +209,6 @@ namespace Company.TaskRuleExample
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>请参阅

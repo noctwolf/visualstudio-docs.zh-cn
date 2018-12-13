@@ -1,5 +1,5 @@
 ---
-title: 如何： 显示消息属性 |Microsoft 文档
+title: 如何： 显示消息属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3caac9eab324b7656a92cb36e9c36e87d759b9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 54294ec72df4abfd6ba96e334017e58fca3d18c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473272"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864161"
 ---
 # <a name="how-to-display-message-properties"></a>如何：显示消息属性
 若要了解有关消息中列出的详细信息[消息视图](../debugger/messages-view.md)，使用[消息属性对话框](../debugger/message-properties-dialog-box.md)。  
   
 ### <a name="to-open-a-message-properties-dialog-box"></a>若要打开消息属性对话框  
   
-1.  从在消息视图中显示的树中选择一条消息。  
+1. 从在消息视图中显示的树中选择一条消息。  
   
-2.  从**视图**菜单上，选择**属性**。  
+2. 从**视图**菜单中，选择**属性**。  
   
- 属性对话框不是模式，因此你可以单击视图窗口中的另一个项和对话框中将显示所选项目上的信息。
+   属性对话框不是模式，因此你可以单击视图窗口中的另一个项，对话框中将所选项目上显示的信息。

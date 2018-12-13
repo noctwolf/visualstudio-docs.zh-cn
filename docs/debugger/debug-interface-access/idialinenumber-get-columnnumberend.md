@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_columnnumberend |Microsoft 文档'
+title: 'Idialinenumber:: Get_columnnumberend |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3d7dd317cf24f2580d72fdc05ccbb8f60668fd1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b39cd627ab41d44ac65acbe13516fc3e5597b8a7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875640"
 ---
 # <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
-检索表达式或语句的结尾处的基于 1 的源列号。  
+检索表达式或语句的结束位置基于 1 的源列数。  
   
 ## <a name="syntax"></a>语法  
   
@@ -37,10 +37,10 @@ HRESULT get_columnNumberEnd (
  [out]返回的列号的表达式或语句的结束位置。 如果值为零，则不存在列结束信息。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
+ 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法返回的列的值是语句的一个字节偏移量的位置的行后的行的最后一个字符。  
+ 此方法返回的列值是语句的字节偏移量之后的行的最后一个字符的位置的行。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumtables:: Next |Microsoft 文档'
+title: 'Idiaenumtables:: Next |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a2a3d208bc430f95d003dfd40c5831cabf7d2c5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 43c7a038bbc6fecddb69950722f4423ab326c1b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875796"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 检索指定的数目的枚举序列中的表。  
@@ -36,13 +36,13 @@ HRESULT Next (
   
 #### <a name="parameters"></a>参数  
  `celt`  
- [in]要检索的枚举器中的表的数目。  
+ [in]要检索的枚举器中的表数。  
   
  `rgelt`  
  [out]数组，它是在用来填充[IDiaTable](../../debugger/debug-interface-access/idiatable.md)表示所需的表的对象。  
   
  `pceltFetched`  
- [out]在提取枚举器返回表的数。  
+ [out]在提取枚举器返回的表的数量。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`。 返回`S_FALSE`如果没有更多的表。 否则，返回错误代码。  

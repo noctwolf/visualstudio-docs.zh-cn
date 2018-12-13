@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a92a0e9cc8c82345e1d8a57449317f8e6937dad6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 085ed1a4f430be957d96991798458e411bc22992
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670317"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672803"
 ---
 # <a name="common-tasks-in-office-programming"></a>Office 编程中的常见任务
   本主题旨在帮助针对使用 Visual Studio 对 Office 解决方案编程的下列常见问题找到解决方法。  
@@ -47,7 +47,7 @@ ms.locfileid: "35670317"
   
 -   [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
--   [如何： 升级 Office 解决方案](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)。  
+-   [如何： 升级 Office 解决方案](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)。  
   
 -   [如何： 安装 Office 主互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)。  
   
@@ -219,19 +219,19 @@ ms.locfileid: "35670317"
   
 ##  <a name="deployment"></a> 部署任务  
   
--   [如何： 使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
+-   [如何： 使用 ClickOnce 发布 Office 解决方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
   
--   [如何： 使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)。  
+-   [如何： 使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)。  
   
--   [如何： 安装 ClickOnce Office 解决方案](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)。  
+-   [如何： 安装 ClickOnce Office 解决方案](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)。  
   
--   [如何： 以运行 Office 解决方案的最终用户计算机上安装的必备组件](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
+-   [如何： 以运行 Office 解决方案的最终用户计算机上安装的必备组件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
   
--   [如何： 为部署 Office 解决方案准备 IIS](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)。  
+-   [如何： 为部署 Office 解决方案准备 IIS](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)。  
   
--   [如何： 更新部署的 Office 解决方案](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)。  
+-   [如何： 更新部署的 Office 解决方案](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)。  
   
--   [如何： 更改 Office 解决方案的安装路径](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
+-   [如何： 更改 Office 解决方案的安装路径](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
   
 ## <a name="see-also"></a>请参阅  
  [开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   

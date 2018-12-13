@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 3c1dfa0e3de06bcd6c61472a085ea3c4cdeeac27
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586217"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51780784"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 语言包架构 2.0 参考
 
@@ -31,9 +31,10 @@ VSIX 语言包架构提供了 VSIX 包的本地化的安装信息。 此架构�
 
 语言包文件的根元素是`<PackageLanguagePackManifest>`，使用以下属性`Version`，这是语言包格式的版本。 本指南介绍了 2.0 版的语言包格式，通过设置指定在清单中`Version`属性的值设`Version="2.0.0"`。 根元素包含一个子`<Metadata>`元素。
 
-### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest 元素
+### <a name="packagelanguagepackmanifest-element"></a>PackageLanguagePackManifest 元素
 
 在`<PackageLanguagePackManifest>`元素必须存在以下元素：
+
 |标题|描述|
 |-----------|-----------------|
 |`<Metadata>`| 包含所有本地化的包元数据元素
@@ -41,6 +42,7 @@ VSIX 语言包架构提供了 VSIX 包的本地化的安装信息。 此架构�
 ### <a name="metadata-element"></a>元数据元素
 
 在`<Metadata>`元素可以具有以下元素：
+
 |标题|描述|
 |-----------|-----------------|
 |`<DisplayName>`|要安装的扩展插件的本地化的名称|

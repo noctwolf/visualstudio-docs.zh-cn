@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ec3fff82fcdc8db8328d1129a860495d081be2e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 7c4dc7cb560e6ae652474d16e003eafb352643ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951062"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>调试准备：Windows 窗体应用程序
 Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试此类应用程序非常简单。 有关详细信息，请参阅[创建一个 Windows 应用程序项目](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))。  
@@ -47,23 +47,23 @@ Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsp
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>调试 C#、F# 或 Visual Basic Windows 窗体应用程序  
   
-1.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中打开项目。  
+1. 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中打开项目。  
   
-2.  根据需要创建断点。  
+2. 根据需要创建断点。  
   
-     由于 Windows 窗体应用程序是事件驱动的，您的断点将进入事件处理程序代码，或进入由事件处理程序代码调用的方法。 要在其中设置断点的典型事件包括：  
+    由于 Windows 窗体应用程序是事件驱动的，您的断点将进入事件处理程序代码，或进入由事件处理程序代码调用的方法。 要在其中设置断点的典型事件包括：  
   
-    1.  与控件关联的事件，如 Click、Enter 等  
+   1. 与控件关联的事件，如 Click、Enter 等  
   
-    2.  与应用程序启动和关闭关联的事件，如 Load、Activated 等  
+   2. 与应用程序启动和关闭关联的事件，如 Load、Activated 等  
   
-    3.  焦点和验证事件。  
+   3. 焦点和验证事件。  
   
-     有关详细信息，请参阅[在 Windows 窗体中创建事件处理程序](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms)。  
+      有关详细信息，请参阅[在 Windows 窗体中创建事件处理程序](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms)。  
   
-3.  上**调试**菜单上，单击**启动**。  
+3. 上**调试**菜单上，单击**启动**。  
   
-4.  使用中讨论的技术进行调试[调试器基础知识](../debugger/getting-started-with-the-debugger.md)。  
+4. 使用中讨论的技术进行调试[调试器基础知识](../debugger/getting-started-with-the-debugger.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  

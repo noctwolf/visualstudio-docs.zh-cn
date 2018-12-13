@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8698c3402fdbbd4daa3e132b1455d722b40ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668189"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220783"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP 应用中的网络使用情况
 Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http API](/uwp/api/windows.web.http) 执行的网络操作的数据。 分析数据可以帮助你解决问题（如访问和身份验证问题、不正确的缓存用法和不良的显示和下载性能）。  
@@ -23,24 +23,24 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
  “网络”工具仅支持 UWP 应用。 目前不支持其他平台。  
   
 > [!NOTE]
->  有关该网络工具的更完整说明，请参阅 [Visual Studio 的网络工具简介](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx)。  
+>  有关该网络工具的更完整说明，请参阅 [Visual Studio 的网络工具简介](https://blogs.msdn.microsoft.com/visualstudio/2015/05/04/introducing-visual-studios-network-tool/)。  
   
 ## <a name="collect-network-tool-data"></a>收集网络工具数据  
  你应在 Visual Studio 计算机上打开的 Visual Studio 项目中运行“网络”工具。  
   
-1.  在 Visual Studio 中打开项目。  
+1. 在 Visual Studio 中打开项目。  
   
-2.  在菜单上，单击“调试/性能探查器”。 选择“网络”，然后选择“启动”。  
+2. 在菜单上，单击“调试/性能探查器”。 选择“网络”，然后选择“启动”。  
   
-3.  网络工具开始收集应用的 HTTP 流量。  
+3. 网络工具开始收集应用的 HTTP 流量。  
   
-     当运行应用时，左窗格中的摘要视图将自动显示捕获的 HTTP 操作列表。 在摘要视图中选择一个项，以在右窗格的“详细信息”面板中查看详细信息。  
+    当运行应用时，左窗格中的摘要视图将自动显示捕获的 HTTP 操作列表。 在摘要视图中选择一个项，以在右窗格的“详细信息”面板中查看详细信息。  
   
-4.  选择“停止”关闭应用。  
+4. 选择“停止”关闭应用。  
   
- “报告”窗口应类似于以下形式：  
+   “报告”窗口应类似于以下形式：  
   
- ![“网络”窗口](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
+   ![“网络”窗口](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyze-data"></a>分析数据  
  通过选择摘要视图上显示的任何网络操作，可在运行应用的同时（甚至在已关闭应用后）分析捕获的 HTTP 流量。  
@@ -75,6 +75,6 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
 ## <a name="see-also"></a>请参阅  
  [运行带/不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Visual Studio 博客：Visual Studio 网络检查器简介](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [第 9 频道视频：VS 诊断工具 – 新的网络探查器](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [第 9 频道视频：VS 诊断工具 – 新的网络探查器](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [使用 Visual Studio 分析](../profiling/index.md)  
  [首先了解分析工具](../profiling/profiling-feature-tour.md)

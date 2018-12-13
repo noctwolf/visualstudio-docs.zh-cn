@@ -13,21 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 213824ff9be80a151d20b4906839969dce3be7d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ed7b588d597626348b4c148c10dad165649b0468
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175532"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895751"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>为负载测试创建自定义代码和插件
 
 自定义插件使用你编写的并附加到负载测试或 Web 性能测试的代码。 可使用负载测试 API 和 Web 性能测试 API 为测试创建自定义插件以展开内置功能。 可以向负载测试添加多个插件。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## <a name="tasks"></a>任务
 
 |任务|关联主题|
-|-----------|-----------------------|
+|-|-----------------------|
 |**为负载测试创建自定义插件**：可使用负载测试 API 创建自定义插件，以向负载测试添加更多测试功能。|-   [如何：使用负载测试 API](../test/how-to-use-the-load-test-api.md)<br />-   [如何：创建负载测试插件](../test/how-to-create-a-load-test-plug-in.md)|
 |**为 Web 性能测试创建自定义插件：** 可使用 Web 性能测试 API 创建自定义插件，以向 Web 性能测试（包括在请求级别上）添加更多测试功能。 还可以创建 Web 服务测试。<br /><br /> 此外，可以创建一个 Web 记录器插件，该插件可在记录 Web 性能测试后并在该测试显示在 Web 性能测试结果查看器中之前修改该测试。|-   [如何：使用 Web 性能测试 API](../test/how-to-use-the-web-performance-test-api.md)<br />-   [如何：创建 Web 性能测试插件](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [如何：创建请求级插件](../test/how-to-create-a-request-level-plug-in.md)<br />-   [如何：创建 Web 服务测试](../test/how-to-create-a-web-service-test.md)<br />-   [如何：创建记录器插件](../test/how-to-create-a-recorder-plug-in.md)|
 |**向 Web 性能测试结果查看器添加 UI 功能：** 可以使用 Visual Studio 外接程序向 Web 性能测试结果查看器添加多个 UI 功能。|-   [如何：为 Web 性能测试结果查看器创建 Visual Studio 外接程序](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|

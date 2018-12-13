@@ -1,5 +1,5 @@
 ---
-title: 自定义 Visual Studio 创建数据绑定控件的标题的方式
+title: 自定义为数据绑定控件的隐藏式字幕
 ms.date: 11/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 69e97efe6db8b06f476b7dc004e3b52a77701cb0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758415"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305580"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自定义 Visual Studio 创建数据绑定控件的标题的方式
 
-当将项从[数据源窗口](add-new-data-sources.md)拖到设计器，特别注意派上用场： 标题标签中的列名称重新格式化为可读性更强的字符串，当两个或更多的词语发现连接在一起。 你可以自定义在其中这些标签的创建的方式，通过设置**SmartCaptionExpression**， **SmartCaptionReplacement**，并**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data 设计人员**注册表项。
+当将项从[数据源窗口](add-new-data-sources.md#data-sources-window)拖到设计器，特别注意派上用场： 标题标签中的列名称重新格式化为可读性更强的字符串，当两个或更多的词语发现连接在一起。 你可以自定义在其中这些标签的创建的方式，通过设置**SmartCaptionExpression**， **SmartCaptionReplacement**，并**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data 设计人员**注册表项。
 
 > [!NOTE]
 > 在创建之前，此注册表项不存在。
@@ -44,7 +44,7 @@ ms.locfileid: "36758415"
 |注册表项|默认值|说明|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|匹配后跟一个大写字符或下划线的小写字符。|
-|**SmartCaptionReplacement**|**$1 2 美元**|**1 美元**表示匹配在第一个表达式，表达式的括号中的任意字符以及 **$2**表示匹配在第二个括号中的任意字符。 替换为第一个匹配项、 空格和第二个匹配项。|
+|**SmartCaptionReplacement**|“$103”|**1 美元**表示匹配在第一个表达式，表达式的括号中的任意字符以及 **$2**表示匹配在第二个括号中的任意字符。 替换为第一个匹配项、 空格和第二个匹配项。|
 |**SmartCaptionSuffix**|**:**|表示字符追加到返回的字符串。 例如，如果标题是`Company Name`，后缀使得 `Company Name:`|
 
 > [!CAUTION]
@@ -60,25 +60,25 @@ ms.locfileid: "36758415"
 
 3.  展开**HKEY_CURRENT_USER** > **软件** > **Microsoft** > **VisualStudio**节点。
 
-7.  右键单击**15.0**节点，并创建一个新**密钥**名为`Data Designers`。
+4.  右键单击**15.0**节点，并创建一个新**密钥**名为`Data Designers`。
 
-8.  右键单击**数据设计器**节点，并创建三个新的字符串值：
+5.  右键单击**数据设计器**节点，并创建三个新的字符串值：
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. 右键单击**SmartCaptionExpression**值，然后选择**修改**。
+6. 右键单击**SmartCaptionExpression**值，然后选择**修改**。
 
-12. 输入所需的正则表达式**数据源**窗口来使用。
+7. 输入所需的正则表达式**数据源**窗口来使用。
 
-13. 右键单击**SmartCaptionReplacement**值，然后选择**修改**。
+8. 右键单击**SmartCaptionReplacement**值，然后选择**修改**。
 
-14. 输入替换字符串格式设置你想要显示在正则表达式中匹配的模式的方式。
+9. 输入替换字符串格式设置你想要显示在正则表达式中匹配的模式的方式。
 
-15. 右键单击**SmartCaptionSuffix**值，然后选择**修改**。
+10. 右键单击**SmartCaptionSuffix**值，然后选择**修改**。
 
-16. 输入你想要显示的标题末尾的任何字符。
+11. 输入你想要显示的标题末尾的任何字符。
 
     下一次将项从**数据源**窗口中，创建标题标签使用提供的新注册表值。
 
@@ -90,21 +90,21 @@ ms.locfileid: "36758415"
 
 3.  展开**HKEY_CURRENT_USER** > **软件** > **Microsoft** > **VisualStudio**节点。
 
-7.  右键单击**15.0**节点，并创建一个新**密钥**名为`Data Designers`。
+4.  右键单击**15.0**节点，并创建一个新**密钥**名为`Data Designers`。
 
-8.  右键单击**数据设计器**节点，并创建三个新的字符串值：
+5.  右键单击**数据设计器**节点，并创建三个新的字符串值：
 
     - `SmartCaptionExpression`
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-11. 右键单击**SmartCaptionExpression**项，然后选择**修改**。
+6. 右键单击**SmartCaptionExpression**项，然后选择**修改**。
 
-12. 输入`(.*)`的值。 这将匹配整个字符串。
+7. 输入`(.*)`的值。 这将匹配整个字符串。
 
-13. 右键单击**SmartCaptionReplacement**项，然后选择**修改**。
+8. 右键单击**SmartCaptionReplacement**项，然后选择**修改**。
 
-14. 输入`$1`的值。 这将字符串替换匹配的值，该值是整个字符串，以便将保持不变。
+9. 输入`$1`的值。 这将字符串替换匹配的值，该值是整个字符串，以便将保持不变。
 
     下一次将项从**数据源**窗口中，与未修改的标题创建标题标签。
 

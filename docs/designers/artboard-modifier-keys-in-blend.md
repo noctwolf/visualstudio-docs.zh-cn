@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35699d765a8d01e212fe02257da2aa83e245ecd4
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 88d7dd7f6fe09acd77ee37ca473fbd5290be6ee1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890183"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861106"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend 中的“美工板”修改键
 某些键盘快捷方式没有关联的菜单项，这意味着你无法使用 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 用户界面来发现这些键盘快捷方式。 下表列出了修改操作（例如调整对象的大小）的快捷方式。
 
 |任务|操作步骤|
-|-----------------------|-------------|
+| - |-------------|
 |在选择其他工具的同时，暂时选中“选择”工具。此操作可减少你在“工具”面板中单击的次数，以及在“选择”工具和其他内容间来回切换的次数）|按住 Ctrl|
 |选中“选择”工具时微移所选对象|按箭头键|
 |平移美工板|按住空格键并拖动美工板|

@@ -20,37 +20,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c99e0e1bf64a6a88778d4bfcf27a796916a0f044
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f4f4577fc7e1a26481ff4ab5aa94888cf5668adf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825322"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>如何：使用“GPU 线程”窗口
 在“GPU 线程”窗口中，可以检查和使用在要调试的应用程序中的 GPU 上运行的线程。 有关在 GPU 运行的应用程序的详细信息，请参阅[c + + AMP 概述](/cpp/parallel/amp/cpp-amp-overview)。  
   
  “GPU 线程”窗口包含一个表，其中，每个行均表示一组在所有列中具有相同值的 GPU 线程。 您可以对列中的项进行排序、重新排序、移除和分组操作。 您可以在“GPU 线程”窗口中标记、取消标记、冻结（禁止显示）和解冻（恢复）线程。 下面的列将显示在“GPU 线程”窗口中：  
   
--   标记列，可在其中标记要特别注意的线程。  
+- 标记列，可在其中标记要特别注意的线程。  
   
--   当前线程列，其中的黄色箭头指示当前线程。  
+- 当前线程列，其中的黄色箭头指示当前线程。  
   
--   **线程计数**列，在同一位置显示的线程数。  
+- **线程计数**列，在同一位置显示的线程数。  
   
--   **行**列，显示的每组线程所在的位置的代码行。  
+- **行**列，显示的每组线程所在的位置的代码行。  
   
--   **地址**列，显示每组线程所在的位置的指令地址。 默认情况下，此列被隐藏。  
+- **地址**列，显示每组线程所在的位置的指令地址。 默认情况下，此列被隐藏。  
   
--   **位置**列中，这是在源代码中的位置。  
+- **位置**列中，这是在源代码中的位置。  
   
--   **状态**列，显示线程是活动、 已阻止、 未启动或完成。  
+- **状态**列，显示线程是活动、 已阻止、 未启动或完成。  
   
--   **磁贴**列，显示的行中的线程的平铺索引。  
+- **磁贴**列，显示的行中的线程的平铺索引。  
   
- 表的标头显示将显示的平铺和线程。  
+  表的标头显示将显示的平铺和线程。  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ### <a name="to-display-the-gpu-threads-window"></a>显示“GPU 线程”窗口  
   

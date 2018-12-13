@@ -1,5 +1,5 @@
 ---
-title: DOCCONTEXT_COMPARE |Microsoft 文档
+title: DOCCONTEXT_COMPARE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 966d31889d7979732af20f5e3f95546e87af6598
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f092666833b80dd59ed4b7b3345c379078ce2bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103648"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862952"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 指定用于比较两个文档上下文的条件。  
@@ -48,21 +48,21 @@ enum enum_DOCCONTEXT_COMPARE {
   
 ## <a name="members"></a>成员  
  DOCCONTEXT_EQUAL  
- 查找列表，它等于目标文档上下文中的第一个文档上下文。  
+ 在列表中，它等于目标文档上下文中找到的第一个文档上下文。  
   
  DOCCONTEXT_LESS_THAN  
- 在小于目标文档上下文的列表中找到的第一个文档上下文。  
+ 小于目标文档上下文在列表中找到的第一个文档上下文。  
   
  DOCCONTEXT_GREATER_THAN  
- 查找列表大于目标文档上下文中的第一个文档上下文。  
+ 大于目标文档上下文在列表中找到的第一个文档上下文。  
   
  DOCCONTEXT_SAME_DOCUMENT  
- 在同一文档作为目标文档上下文中的列表中找到的第一个文档上下文。  
+ 在目标文档上下文与在同一文档中的列表中找到的第一个文档上下文。  
   
 ## <a name="remarks"></a>备注  
- 作为自变量传递[比较](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。  
+ 作为参数传递[比较](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。  
   
- 这些值用于指定在列表中查找第一个文档上下文比较条件。 文档上下文提供文档上下文中的一组要比较本身针对通过`IDebugDocumentContext2::Compare`方法。 为其比较运算符的列表中的第一个文档上下文`true`随后会返回。  
+ 这些值用于指定用于在列表中查找第一个文档上下文比较条件。 文档上下文提供的文档上下文列表来比较本身对通过`IDebugDocumentContext2::Compare`方法。 为其所比较运算符列表中的第一个文档上下文`true`然后返回。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -71,6 +71,6 @@ enum enum_DOCCONTEXT_COMPARE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

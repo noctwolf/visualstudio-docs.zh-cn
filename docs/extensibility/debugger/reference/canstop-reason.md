@@ -1,5 +1,5 @@
 ---
-title: CANSTOP_REASON |Microsoft 文档
+title: CANSTOP_REASON |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791132d94526126e8fc611b2becbb8b7545bb578
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4129839094b7f5cf9907f6b92fa11fe1847f5806
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938807"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
-用于确定程序可以停止在到达的执行过程中的某个特定点后的执行。  
+用于确定程序可以停止在到达执行的特定点后执行。  
   
 ## <a name="syntax"></a>语法  
   
@@ -50,7 +50,7 @@ public enum enum_CANSTOP_REASON {
  指定单步执行函数。  
   
 ## <a name="remarks"></a>备注  
- 作为自变量传递[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)方法确认使用会话调试管理器 (SDM)，如果可以停止在达到该程序的入口点或之后单步执行函数或方法。  
+ 作为参数传递[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)方法来确认与会话调试管理器 (SDM)，如果，则可以暂时停止或单步执行函数或方法后到达该程序的入口点。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -59,6 +59,6 @@ public enum enum_CANSTOP_REASON {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

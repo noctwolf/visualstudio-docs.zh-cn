@@ -1,9 +1,10 @@
 ---
 title: 将 Visual Studio 生成工具安装到容器
+titleSuffix: ''
 description: 了解如何将 Visual Studio 生成工具安装到 Windows 容器，以支持持续集成和持续交付 (CI/CD) 工作流。
-ms.custom: ''
 ms.date: 04/18/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
@@ -12,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bf1427e71c21fecb0cd3822469b143b9d42df5
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 37ce2fc60ac2a57baddf62e68a900349ed072f4d
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138646"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160083"
 ---
 # <a name="install-build-tools-into-a-container"></a>将生成工具安装到容器
 
@@ -57,7 +58,7 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
 
 **在 Windows 10 上**：
 
-1. 在系统任务栏中[右键单击用于 Windows 的 Docker 图标](https://docs.docker.com/docker-for-windows/#docker-settings)，然后单击“设置...”。
+1. [右键单击系统托盘中的“用于 Windows 的 Docker”图标](https://docs.docker.com/docker-for-windows/#docker-settings)，再单击“设置”。
 2. [单击守护程序](https://docs.docker.com/docker-for-windows/#docker-daemon)部分。
 3. [将“基本”](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file)按钮切换为“高级”。
 4. 添加以下 JSON 数组属性以将磁盘空间增大到 120 GB（足以在占用空间增多的情况下用于生成工具）。

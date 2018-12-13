@@ -2,7 +2,8 @@
 # [IDE 教程](ide-tour.md)
 
 # [安装](installation.md)
-## [预览版安装](install-preview.md)
+## [在防火墙或代理背后安装和使用](install-behind-a-firewall-or-proxy-server.md)
+## [安装预览发行版](install-preview.md)
 ## [更新](update.md)
 ## [卸载](uninstall.md)
 

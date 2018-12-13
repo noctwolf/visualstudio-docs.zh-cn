@@ -1,7 +1,7 @@
 ---
 title: 如何： 在混合模式调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 06/19/2017
+ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,46 +19,53 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 834288c063a4bc0d830f121dcb8589b509c61bcf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
-ms.translationtype: MT
+ms.openlocfilehash: 1439dce6930b71e29141031e93175e0a6aaa519c
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256157"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389467"
 ---
-# <a name="how-to-debug-in-mixed-mode"></a>How to: Debug in Mixed Mode
-以下过程描述如何调试托管代码和本机代码，这一过程也称作混合模式调试。 根据 DLL 或应用程序是否用本机代码编写，有两种方案可以用来进行调试：  
-  
--   调用 DLL 的调用应用程序是用本机代码编写的。 在这种情况下 DLL 是托管的，托管调试器和本机调试器都必须启用，以调试托管代码和本机代码。 您可以将此签入**\<项目 > 属性页**对话框。 具体如何检查取决于是从 DLL 项目中启动调试，还是从调用应用程序项目中启动调试。  
-  
--   调用 DLL 的调用应用程序是用托管代码编写的，而 DLL 是用本机代码编写的。 有关引导你完成这些步骤的教程，请参阅[调试托管和本机代码](../debugger/how-to-debug-managed-and-native-code.md)。
-  
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>如何： 在混合模式调试 (C#，c + +、 Visual Basic)
+
+以下过程介绍如何为托管和本机代码组合在一起，也称为混合模式调试启用调试。 有两个混合模式调试方案：
+
+- 在本机代码中，编写调用 DLL 的应用和托管 DLL。
+
+- 调用 DLL 的应用编写托管代码中，DLL 是本机代码中。 本教程将指导你完成此方案的详细信息，请参阅[调试托管和本机代码](../debugger/how-to-debug-managed-and-native-code.md)。
+
+可以让调用应用程序项目中的托管和本机调试器**属性**页。 设置本机和托管应用程序之间存在差异。
+
+如果没有向调用应用程序的项目的访问权限，则可以调试 DLL 项目的 DLL。 您不需要混合的模式调试只是 DLL 项目。 有关详细信息，请参阅 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)。
+
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 对话框和命令可能与本文中，具体取决于您的 Visual Studio 设置或版本中的不同。 若要更改您的设置，请选择**工具** > **导入和导出设置**。 有关详细信息，请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
 
-如果没有调用应用程序到该项目访问权限，则可以调试 DLL 项目中的 DLL。 有关详细信息，请参阅 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)。 您不需要使用混合调试只是 DLL 项目。
-  
-### <a name="to-enable-mixed-mode-debugging-c-calling-app"></a>若要启用混合模式调试 （c + + 调用应用程序）  
-  
-1.  在中**解决方案资源管理器**，选择本机项目。
-  
-2.  上**视图**菜单上，单击**属性页**。
-  
-3.  在中**\<项目 > 属性页**对话框中，展开**配置属性**节点，，然后选择**调试**。  
-  
-4.  设置**调试器类型**到**混合**或**自动**。
+## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>启用混合模式调试调用的本机应用
 
-    ![启用混合的模式调试](../debugger/media/dbg-mixed-mode-from-native.png "启用混合的模式调试")
+1. 选择中的 c + + 项目**解决方案资源管理器**然后单击**属性**图标中，按**Alt**+**Enter**，或右键单击并选择**属性**。
 
-### <a name="to-enable-mixed-mode-debugging-c-or-vb-calling-app"></a>若要启用混合模式调试 （C# 或 VB 调用应用程序）  
-  
-1.  在中**解决方案资源管理器**，选择托管的项目。  
-  
-2.  上**视图**菜单上，单击**属性页**。  
-  
-3.  在中**\<项目 > 属性页**对话框中，选择**调试**选项卡，然后选择**启用本机代码调试**
+1. 在中**\<项目 > 属性页**对话框中，展开**配置属性**，然后选择**调试**。
 
-    ![启用本机代码调试](../debugger/media/dbg-mixed-mode-from-csharp.png "启用本机代码调试")
-  
-## <a name="see-also"></a>请参阅  
- [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)
+1. 将“调试器类型”**设置为“混合”** 或“自动”**。
+
+1. 选择“确定”。
+
+   ![启用混合的模式调试](../debugger/media/dbg-mixed-mode-from-native.png "启用混合的模式调试")
+
+## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>启用混合模式调试托管的调用应用程序
+
+1. 选择C#或 Visual Basic 中的项目**解决方案资源管理器**，然后选择**属性**图标，按**Alt**+**Enter**，或右键单击，然后选择**属性**。
+
+1. 选择**调试**选项卡，然后选择**启用本机代码调试**。
+
+1. 关闭属性页以保存所做的更改。
+
+   ![启用本机代码调试](../debugger/media/dbg-mixed-mode-from-csharp.png "启用本机代码调试")
+
+> [!NOTE]
+> 在 Visual Studio 2017 的大多数版本中，必须使用 launchSettings.json 文件（而非项目属性）在 .NET Core 应用中为本机代码启用混合模式调试。 有关详细信息，请参阅[调试托管和本机代码](../debugger/how-to-debug-managed-and-native-code.md)。
+
+## <a name="see-also"></a>请参阅
+
+- [如何：从 DLL 项目进行调试](../debugger/how-to-debug-from-a-dll-project.md)

@@ -1,6 +1,6 @@
 ---
-title: 安装 AI Tools for Visual Studio
-description: AI Tools for Visual Studio 的安装
+title: 安装 Visual Studio Tools for AI
+description: 介绍了如何安装 Visual Studio Tools for AI
 keywords: ai, visual studio
 author: lisawong19
 ms.author: liwong
@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 4785bc8362d7e50b5fb48bf88df29313ddfcc0c8
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 465443211d1a3f1aff8bfa63fa6cb8068b55980b
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303104"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459759"
 ---
 # <a name="installation"></a>安装
 
@@ -27,19 +27,20 @@ ms.locfileid: "36303104"
 
 此扩展适用于 Visual Studio 2015、Visual Studio 2017、社区版或更高版本。
 
-若要安装，请从 [Visual Studio Marketplace](http://aka.ms/vstoolsforai) 或从 Visual Studio 中进行下载
+可以从 [Visual Studio Marketplace](http://aka.ms/vstoolsforai) 或 Visual Studio 中下载工具：
 
-1. **工具** > **扩展和更新**
+1. 依次选择“工具” > “扩展和更新”。
 
-![在 Windows 上安装 CUDA](media\installation\extensions.png)
+   ![Visual Studio 中的“扩展和更新”菜单](media/installation/extensions.png)
 
-1. 在右上角**搜索**“Tools for AI”
-2. 选择“Visual Studio Tools for AI”
-3. 单击“下载”
+2. 在“扩展和更新”对话框的左侧，选择“联机”。
+3. 在右上角的搜索框中，键入或输入“tools for ai”。
+4. 从结果中选择“Visual Studio Tools for AI”。
+5. 单击 **“下载”**。
 
 ## <a name="prepare-your-local-machine"></a>准备本地计算机
 
-在本地计算机上训练深入学习模型之前，应确保安装了最新的适用先决条件。 这包括确保为 NVIDIA GPU（如果有）安装了最新驱动程序和库。 还应该确保已安装 Python 和 Python 库（如 NumPy、SciPy），以及计划在项目中使用的相应深入学习框架（如 Microsoft 认知工具包 (CNTK)、TensorFlow、Caffe2、MXNet、Keras、Theano、PyTorch 和/或 Chainer）。
+在本地计算机上定型深度学习模型前，请先确保已安装适用的先决条件工具。 这包括确保已安装 NVIDIA GPU（若有）的最新驱动程序和库。 还应确保已安装 Python 和 Python 库（如 NumPy、SciPy），以及你打算在项目中使用的相应深度学习框架（如 Microsoft Cognitive Toolkit (CNTK)、TensorFlow、Caffe2、MXNet、Keras、Theano、PyTorch 和 Chainer）。
 
 > [!NOTE]
 > 以下各小节中的软件简介摘自其主页。
@@ -50,9 +51,7 @@ ms.locfileid: "36303104"
 
 ### <a name="cuda"></a>CUDA
 
-[CUDA](https://developer.nvidia.com/cuda-zone) 是 NVIDIA 发明的并行计算平台和编程模型。
-它利用 GPU 的强大功能显著提高了计算性能。
-当前，深入学习框架需要 CUDA 工具包 8.0。
+[CUDA](https://developer.nvidia.com/cuda-zone) 是 NVIDIA 发明的并行计算平台和编程模型。 它利用 GPU 的强大功能显著提高了计算性能。 当前，深入学习框架需要 CUDA 工具包 8.0。
 
 安装 CUDA
 
@@ -60,7 +59,7 @@ ms.locfileid: "36303104"
 - 确保安装 CUDA 运行时库，然后将 CUDA 二进制文件路径添加到 %PATH% 或 $Path 环境变量。
 - 在 Windows 上，此路径在默认情况下为“C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin”。
 
-![在 Windows 上安装 CUDA](media\installation\install_cuda_win.png)
+![在 Windows 上安装 CUDA](media/installation/install_cuda_win.png)
 
 ### <a name="cudnn"></a>cuDNN
 
@@ -86,7 +85,7 @@ Python 已成为用于深入学习应用程序的主要编程语言。 需要 **
 
 深入学习框架依靠 pip 进行自己的安装。
 
-![在 Windows 上安装 Python](media\installation\install_python_win.png)
+![在 Windows 上安装 Python](media/installation/install_python_win.png)
 
 随后需要验证是否正确安装了 Python 3.5 并将 pip 升级到最新版本，具体方法是在终端中执行以下命令：
 

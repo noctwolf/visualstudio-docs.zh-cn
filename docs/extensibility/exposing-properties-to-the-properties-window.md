@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7901c0acaf9500673b9b6cfc551ed3151e1b3c5b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1a37dcac9d75cbd773894b3d708dd4931f77b4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637758"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888406"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>公开属性设置为属性窗口
 本演练中公开的对象的公共属性**属性**窗口。 对这些属性进行的更改会反映在**属性**窗口。  
@@ -33,72 +33,72 @@ ms.locfileid: "39637758"
   
 ### <a name="to-expose-properties-to-the-properties-window"></a>若要公开属性设置为属性窗口  
   
-1.  每个 Visual Studio 扩展开始于 VSIX 部署项目，它将包含扩展资产。 创建[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX 项目名为`MyObjectPropertiesExtension`。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C#** > **扩展性**。  
+1. 每个 Visual Studio 扩展开始于 VSIX 部署项目，它将包含扩展资产。 创建[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX 项目名为`MyObjectPropertiesExtension`。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C#** > **扩展性**。  
   
-2.  通过添加一个名为的自定义工具窗口项模板添加工具窗口`MyToolWindow`。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项对话框**，请转到**Visual C# 项** > **扩展性**，然后选择**自定义工具窗口**。 在中**名称**在对话框底部字段中，将文件名称更改为*MyToolWindow.cs*。 有关如何创建自定义工具窗口的详细信息，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
+2. 通过添加一个名为的自定义工具窗口项模板添加工具窗口`MyToolWindow`。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项对话框**，请转到**Visual C# 项** > **扩展性**，然后选择**自定义工具窗口**。 在中**名称**在对话框底部字段中，将文件名称更改为*MyToolWindow.cs*。 有关如何创建自定义工具窗口的详细信息，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
-3.  打开*MyToolWindow.cs*并添加以下 using 语句：  
+3. 打开*MyToolWindow.cs*并添加以下 using 语句：  
   
-    ```csharp  
-    using System.Collections;  
-    using System.ComponentModel;  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    ```  
+   ```csharp  
+   using System.Collections;  
+   using System.ComponentModel;  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   ```  
   
-4.  现在，添加以下字段以`MyToolWindow`类。  
+4. 现在，添加以下字段以`MyToolWindow`类。  
   
-    ```csharp  
-    private ITrackSelection trackSel;  
-    private SelectionContainer selContainer;  
+   ```csharp  
+   private ITrackSelection trackSel;  
+   private SelectionContainer selContainer;  
   
-    ```  
+   ```  
   
-5.  向 `MyToolWindow` 类添加下面的代码。  
+5. 向 `MyToolWindow` 类添加下面的代码。  
   
-    ```csharp  
-    private ITrackSelection TrackSelection  
-    {  
-        get  
-        {  
-            if (trackSel == null)  
-                trackSel =  
-                   GetService(typeof(STrackSelection)) as ITrackSelection;  
-            return trackSel;  
-        }  
-    }  
+   ```csharp  
+   private ITrackSelection TrackSelection  
+   {  
+       get  
+       {  
+           if (trackSel == null)  
+               trackSel =  
+                  GetService(typeof(STrackSelection)) as ITrackSelection;  
+           return trackSel;  
+       }  
+   }  
   
-    public void UpdateSelection()  
-    {  
-        ITrackSelection track = TrackSelection;  
-        if (track != null)  
-            track.OnSelectChange((ISelectionContainer)selContainer);  
-    }  
+   public void UpdateSelection()  
+   {  
+       ITrackSelection track = TrackSelection;  
+       if (track != null)  
+           track.OnSelectChange((ISelectionContainer)selContainer);  
+   }  
   
-    public void SelectList(ArrayList list)  
-    {  
-        selContainer = new SelectionContainer(true, false);  
-        selContainer.SelectableObjects = list;  
-        selContainer.SelectedObjects = list;  
-        UpdateSelection();  
-    }  
+   public void SelectList(ArrayList list)  
+   {  
+       selContainer = new SelectionContainer(true, false);  
+       selContainer.SelectableObjects = list;  
+       selContainer.SelectedObjects = list;  
+       UpdateSelection();  
+   }  
   
-    public override void OnToolWindowCreated()  
-    {  
-        ArrayList listObjects = new ArrayList();  
-        listObjects.Add(this);  
-        SelectList(listObjects);  
-    }  
-    ```  
+   public override void OnToolWindowCreated()  
+   {  
+       ArrayList listObjects = new ArrayList();  
+       listObjects.Add(this);  
+       SelectList(listObjects);  
+   }  
+   ```  
   
-     `TrackSelection`属性使用`GetService`来获取`STrackSelection`服务，提供了<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>接口。 `OnToolWindowCreated`事件处理程序和`SelectList`方法一起创建了包含仅的工具窗口窗格对象本身所选对象的列表。 `UpdateSelection`方法会示意**属性**窗口中显示的工具窗口窗格的公共属性。  
+    `TrackSelection`属性使用`GetService`来获取`STrackSelection`服务，提供了<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>接口。 `OnToolWindowCreated`事件处理程序和`SelectList`方法一起创建了包含仅的工具窗口窗格对象本身所选对象的列表。 `UpdateSelection`方法会示意**属性**窗口中显示的工具窗口窗格的公共属性。  
   
-6.  生成项目并启动调试。 应显示 Visual Studio 的实验实例。  
+6. 生成项目并启动调试。 应显示 Visual Studio 的实验实例。  
   
-7.  如果**属性**窗口不可见，请按打开**F4**。  
+7. 如果**属性**窗口不可见，请按打开**F4**。  
   
-8.  打开**MyToolWindow**窗口。 你可以找到它在**视图** > **其他 Windows**。  
+8. 打开**MyToolWindow**窗口。 你可以找到它在**视图** > **其他 Windows**。  
   
-     打开相应的窗口和窗口窗格中的公共属性显示在**属性**窗口。  
+    打开相应的窗口和窗口窗格中的公共属性显示在**属性**窗口。  
   
 9. 更改**标题**属性中的**属性**窗口**我的对象属性**。  
   

@@ -4,17 +4,19 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22d3a6ea380fdbfb8f6a41fce21d0ad283808d85
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054473"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220295"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
 
@@ -64,9 +66,9 @@ ms.locfileid: "43054473"
 
 - Visual Studio Enterprise 或 Visual Studio Professional
 
-- Team Foundation Server 2013 或更高版本、Visual Studio Team Services 或 Git
+- Team Foundation Server 2013 或更高版本、Azure DevOps Services 或 Git
 
-- [Skype for Business](/skypeforbusiness/)，或者 Lync 2010 或更高版本，可从代码编辑器中联系团队
+- [Skype for Business](/skypeforbusiness/)，可从代码编辑器联系团队
 
 对于随 Team Foundation 版本控制 (TFVC) 或 Git 一起存储的 C# 或 Visual Basic 代码，可以获取类和方法级别上的 CodeLens 详细信息（码位元素级别指示器）。 如果你的 Git 存储库托管在 TfGit 中，则还可以获取指向 TFS 工作项的链接。
 
@@ -80,7 +82,7 @@ ms.locfileid: "43054473"
 
 通过码位元素级别指示器，可以查看更改代码的人员以及他们所做的更改。 码位元素级别指示器可用于 C# 和 Visual Basic 代码。
 
-这是在 Team Foundation Server 或 Visual Studio Team Services 中使用 Team Foundation 版本控制 (TFVC) 时将显示的内容。
+下面便是在 Team Foundation Server 或 Azure DevOps Services 中使用 Team Foundation 版本控制 (TFVC) 时显示的内容：
 
 ![CodeLens：获取 TFVC 中代码的更改历史记录](../ide/media/codelens-code-changes.png)
 
@@ -162,7 +164,7 @@ ms.locfileid: "43054473"
 通过“分支”列中的图标，可了解该分支与你正在使用的分支之间的关系。
 
 |**图标**|**更改来源：**|
-|--------------|-----------------------------------------|
+|--------------| - |
 |![CodeLens：“从当前分支进行更改”图标](../ide/media/codelensbranchcurrenticon.png)|当前的分支|
 |![CodeLens：“从父分支进行更改”图标](../ide/media/codelensbranchparenticon.png)|父分支|
 |![CodeLens ：“从子分支进行更改”图标](../ide/media/codelensbranchchildicon.png)|子分支|
@@ -257,13 +259,13 @@ ms.locfileid: "43054473"
 
 - 如果代码存储在 TFS 中，请确保使用 [CodeIndex 命令](../ide/codeindex-command.md) 和 [TFS Config 命令](/tfs/server/ref/command-line/tfsconfig-cmd)打开代码索引。
 
-- 仅当工作项已链接到代码并且你有权打开链接的工作项时，才显示与 TFS 相关的指示器。 确认具有[团队成员权限](/vsts/work/scale/multiple-teams)。
+- 仅当工作项已链接到代码并且你有权打开链接的工作项时，才显示与 DevOps 相关的指示器。 确认具有[团队成员权限](/azure/devops/organizations/security/view-permissions?view=vsts)。
 
 - 当应用程序代码没有单元测试时，单元测试指示器不显示。 测试状态指示器自动显示在测试项目中。 如果知道应用程序代码具有单元测试，但测试指示器未显示，请尝试生成解决方案 (Ctrl+Shift+B)。
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>问：为什么没有看见提交的工作项详情？
 
-**问** ：可能是因为 CodeLens 无法查找到 TFS 中的工作项。 检查是否连接到具有这些工作项的团队项目，以及你是否有权限查看这些工作项。 如果提交说明中关于 TFS 中工作项 ID 的信息有误，工作项详细信息可能也不会显示。
+**问：** 可能是因为 CodeLens 无法查找到 Azure Boards 或 TFS 中的工作项。 检查是否连接到具有这些工作项的项目，以及你是否有权限查看这些工作项。 如果提交说明中关于 Azure Boards 或 TFS 中工作项 ID 的信息有误，工作项详细信息可能也不会显示。
 
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>问：为什么没有看见 Skype 指示器？
 
@@ -315,7 +317,7 @@ CodeLens 不支持安装不同版本的 Lync 或 Skype。 可能不会针对所�
 
      ![“刷新 CodeLens 团队指示器”菜单项](../ide/media/codelensrefreshindicatorsfromcode.png)
 
-- **测试**：[查找代码的单元测试](#Find-unit-tests-for-your-code)，刷新“测试”指示器。
+- **测试**：[查找代码的单元测试](#associated-unit-tests)，刷新“测试”指示器。
 
 ### <a name="q-whats-local-version"></a>问：什么是“本地版本”？
 

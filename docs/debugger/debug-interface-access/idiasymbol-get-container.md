@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_container |Microsoft 文档'
+title: 'Idiasymbol:: Get_container |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a04a505b694d5ed4081b12a39815256ed68d3e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d293971cfcd0723485d4a5b21d4e431de64ddd65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822730"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
-此函数可检索为表示此符号父/容器符号的指针。  
+此函数检索指向表示父/容器的此符号的符号。  
   
 ## <a name="syntax"></a>语法  
   
@@ -37,10 +37,10 @@ HRESULT get_container(
  [out]返回一个指向`IDiaSymbol`包含有关容器的此符号的信息。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回 S_FALSE 或错误代码。  
+ 如果成功，则返回 S_OK;否则，返回 S_FALSE 或错误代码。  
   
 > [!NOTE]
->  返回值为 S_FALSE 表示属性不是可用于符号。  
+>  返回值为 S_FALSE 表示该属性不是可用于符号。  
   
 ## <a name="requirements"></a>要求  
   

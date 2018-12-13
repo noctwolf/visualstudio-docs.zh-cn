@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78ffb4e98ce8589f20d4a0253ce675e546f15ae4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93bf6af51488b5609f24c5664dee040ea086c26c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078724"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867249"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>将菜单控制器添加到工具栏
 本演练基于[将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md)演练，并演示如何将菜单控制器添加到工具窗口工具栏。 如下所示的步骤还可应用于在中创建工具栏[将工具栏添加](../extensibility/adding-a-toolbar.md)演练。  
@@ -34,82 +34,82 @@ ms.locfileid: "39078724"
   
 ## <a name="create-a-menu-controller"></a>创建菜单控制器  
   
-1.  请按照中所述的过程[将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md)若要创建一个工具窗口，有一个工具栏。  
+1. 请按照中所述的过程[将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md)若要创建一个工具窗口，有一个工具栏。  
   
-2.  在中*TWTestCommandPackage.vsct*，请转到符号部分。 在名为的 GuidSymbol 元素**guidTWTestCommandPackageCmdSet**，声明菜单控制器、 菜单控制器组和三个菜单项。  
+2. 在中*TWTestCommandPackage.vsct*，请转到符号部分。 在名为的 GuidSymbol 元素**guidTWTestCommandPackageCmdSet**，声明菜单控制器、 菜单控制器组和三个菜单项。  
   
-    ```xml  
-    <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
-    ```  
+   ```xml  
+   <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
+   ```  
   
-3.  菜单部分中的最后一个菜单项之后, 定义为菜单的菜单控制器。  
+3. 菜单部分中的最后一个菜单项之后, 定义为菜单的菜单控制器。  
   
-    ```xml  
-    <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <CommandFlag>TextChanges</CommandFlag>  
-        <CommandFlag>TextIsAnchorCommand</CommandFlag>  
-        <Strings>  
-            <ButtonText>Test Menu Controller</ButtonText>  
-            <CommandName>Test Menu Controller</CommandName>  
-        </Strings>  
-    </Menu>  
-    ```  
+   ```xml  
+   <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <CommandFlag>TextChanges</CommandFlag>  
+       <CommandFlag>TextIsAnchorCommand</CommandFlag>  
+       <Strings>  
+           <ButtonText>Test Menu Controller</ButtonText>  
+           <CommandName>Test Menu Controller</CommandName>  
+       </Strings>  
+   </Menu>  
+   ```  
   
-     `TextChanges`和`TextIsAnchorCommand`标志必须为包括在内，以启用菜单控制器，以反映所选的最后一个命令。  
+    `TextChanges`和`TextIsAnchorCommand`标志必须为包括在内，以启用菜单控制器，以反映所选的最后一个命令。  
   
-4.  在组部分，最后一个组条目后, 添加菜单控制器组。  
+4. 在组部分，最后一个组条目后, 添加菜单控制器组。  
   
-    ```xml  
-    <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
-    </Group>  
-    ```  
+   ```xml  
+   <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
+   </Group>  
+   ```  
   
-     通过设置与父菜单控制器，此组中置于任何命令显示在菜单控制器。 `priority`省略属性，其中将其设置为默认值 0，因为它是菜单控制器上的唯一组。  
+    通过设置与父菜单控制器，此组中置于任何命令显示在菜单控制器。 `priority`省略属性，其中将其设置为默认值 0，因为它是菜单控制器上的唯一组。  
   
-5.  在按钮部分中之后的最后一个按钮条目中，, 为每个菜单项添加一个按钮元素。  
+5. 在按钮部分中之后的最后一个按钮条目中，, 为每个菜单项添加一个按钮元素。  
   
-    ```xml  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic1" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 1</ButtonText>  
-            <CommandName>MC Item 1</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic2" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 2</ButtonText>  
-            <CommandName>MC Item 2</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPicSearch" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 3</ButtonText>  
-            <CommandName>MC Item 3</CommandName>  
-        </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic1" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 1</ButtonText>  
+           <CommandName>MC Item 1</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic2" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 2</ButtonText>  
+           <CommandName>MC Item 2</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPicSearch" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 3</ButtonText>  
+           <CommandName>MC Item 3</CommandName>  
+       </Strings>  
+   </Button>  
+   ```  
   
-6.  此时，您可以查看菜单控制器。 生成项目并启动调试。 应会看到的实验实例。  
+6. 此时，您可以查看菜单控制器。 生成项目并启动调试。 应会看到的实验实例。  
   
-    1.  上**视图 / 其他 Windows**菜单中，打开**测试 ToolWindow**。  
+   1. 上**视图 / 其他 Windows**菜单中，打开**测试 ToolWindow**。  
   
-    2.  在工具窗口的工具栏上显示菜单控制器。  
+   2. 在工具窗口的工具栏上显示菜单控制器。  
   
-    3.  单击以查看可能的三个命令的菜单控制器右侧的箭头。  
+   3. 单击以查看可能的三个命令的菜单控制器右侧的箭头。  
   
-     请注意，当您单击的命令，菜单控制器的标题更改以显示该命令。 在下一部分中，我们将添加代码以激活这些命令。  
+      请注意，当您单击的命令，菜单控制器的标题更改以显示该命令。 在下一部分中，我们将添加代码以激活这些命令。  
   
 ## <a name="implement-the-menu-controller-commands"></a>实现菜单控制器命令  
   

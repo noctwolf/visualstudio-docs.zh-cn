@@ -18,29 +18,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38ef3b173643c7bff0e1417ffc9ecfb431b06685
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e81a9308439af6a0dd688440dc6aa193a66eabf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944130"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219349"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>“生成事件”对话框 (Visual Basic)
+
 使用“生成事件”对话框可以指定生成配置说明。 还可以指定运行任何预生成或生成后事件所依据的条件。 有关详细信息，请参阅[如何：指定生成事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)。
 
- **预生成事件命令行**在生成开始之前，指定要执行的任何命令。 要键入长命令，单击“编辑预生成”，显示[预生成事件/生成后事件命令行对话框](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)。
+预生成事件命令行
+
+在生成开始之前，指定要执行的任何命令。 要键入长命令，单击“编辑预生成”，显示[预生成事件/生成后事件命令行对话框](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)。
 
 > [!NOTE]
 > 如果项目是最新的且没有触发任何生成，则不会运行预生成事件。
 
+生成后事件命令行
 
- **生成后事件命令行**在生成结束之后，指定要执行的任何命令。 要键入长命令，单击“编辑生成后”，显示“预生成事件/生成后事件命令行”对话框。
+在生成结束之后，指定要执行的任何命令。 要键入长命令，单击“编辑生成后”，显示“预生成事件/生成后事件命令行”对话框。
 
 > [!NOTE]
 > 在运行 .bat 文件的所有生成后命令之前添加 `call` 语句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。
 
+运行生成后事件
 
- **运行生成后事件**指定以下生成后事件运行的条件，如下表所示。
+指定生成后事件运行的条件，如下表所示。
 
 |选项|结果|
 |------------|------------|

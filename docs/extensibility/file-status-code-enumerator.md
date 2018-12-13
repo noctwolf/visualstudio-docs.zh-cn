@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b51e20c18562c1c0e6c23968577dd58eadfe59e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 884c7ab1b5d4fe1461fd1ae00fbc670f0bc7b6f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921010"
 ---
 # <a name="file-status-code-enumerator"></a>文件状态代码枚举器
 `SccStatus`枚举数包含命名的常量值用于指定源代码管理系统中的文件的状态。 此枚举由[SccQueryInfo](../extensibility/sccqueryinfo-function.md)并`POPLISTFUNC`回调函数 (请参阅[POPLISTFUNC](../extensibility/poplistfunc.md)有关详细信息)。  

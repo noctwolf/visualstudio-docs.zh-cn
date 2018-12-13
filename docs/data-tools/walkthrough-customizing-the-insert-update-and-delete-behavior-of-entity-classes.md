@@ -1,5 +1,5 @@
 ---
-title: 演练： 自定义插入、 更新和删除实体类的行为
+title: 演练：自定义实体类的插入、更新和删除行为
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,21 +13,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb01ef51c0a44047e2caf2f23634ebe741cd2dcb
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: f665d860597bc99d7c9e496c115a82a60d596e09
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174968"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305528"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>演练： 自定义插入、 更新和删除行为的实体类
 
-[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供用于创建和编辑 LINQ to SQL 类 （实体类） 基于数据库中的对象的可视化设计图面。 通过使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，可以使用 LINQ 技术访问 SQL 数据库。 有关详细信息，请参阅[LINQ （语言集成查询）](/dotnet/csharp/linq/)。
+[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供用于创建和编辑 LINQ to SQL 类 （实体类） 基于数据库中的对象的可视化设计图面。 通过使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，可以使用 LINQ 技术访问 SQL 数据库。 有关详细信息，请参阅 [LINQ（语言集成查询）](/dotnet/csharp/linq/)。
 
-默认情况下，linq to SQL 运行时提供用于执行更新的逻辑。 运行时创建默认`Insert`， `Update`，和`Delete`语句基于的表 （列定义和主键信息） 的架构。 如果您不想要使用的默认行为，可以配置更新行为并指定用于执行必需的插入、 更新和删除处理数据库中的数据所需的特定存储的过程。 在不生成默认行为时（例如，实体类映射到视图时），也可以这样做。 另外，在数据库要求通过存储过程访问表时，您可以重写默认的更新行为。 有关详细信息，请参阅[通过使用存储的过程自定义操作](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)。
+默认情况下，linq to SQL 运行时提供用于执行更新的逻辑。 运行时创建默认`Insert`， `Update`，和`Delete`语句基于的表 （列定义和主键信息） 的架构。 当不希望使用默认行为时，可以配置更新行为并指定特定的存储过程，来执行处理数据库中数据所必需的插入、更新和删除。 在不生成默认行为时（例如，实体类映射到视图时），也可以这样做。 另外，在数据库要求通过存储过程访问表时，您可以重写默认的更新行为。 有关详细信息，请参阅[通过使用存储的过程自定义操作](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)。
 
 > [!NOTE]
-> 本演练需要的可用性**InsertCustomer**， **UpdateCustomer**，并**DeleteCustomer**存储 Northwind 数据库的过程。
+> 本演练要求可以使用 Northwind 数据库的“InsertCustomer”**、“UpdateCustomer”** 和“DeleteCustomer”**存储过程。
 
 本演练提供了一些步骤，您必须执行这些步骤来重写默认的 LINQ to SQL 运行时行为，以便使用存储过程将数据保存回数据库。
 
@@ -65,7 +65,7 @@ ms.locfileid: "37174968"
 
        后不久，查询完成运行并创建 Northwind 数据库。
 
-## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>创建应用程序并添加 LINQ to SQL 类
+## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>创建一个应用程序并添加 LINQ to SQL 类
 
 因为您是使用 LINQ to SQL 类，并在 Windows 窗体上显示数据，创建新的 Windows 窗体应用程序和 LINQ to SQL 类文件添加。
 
@@ -75,17 +75,17 @@ ms.locfileid: "37174968"
 
 1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
 
-2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
+2. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
 
 3. 在中间窗格中，选择**Windows 窗体应用**项目类型。
 
 4. 将项目命名**UpdatingWithSProcsWalkthrough**，然后选择**确定**。
 
-     **UpdatingWithSProcsWalkthrough**项目时创建，并添加到**解决方案资源管理器**。
+     将创建 UpdatingwithSProcsWalkthrough 项目并将其添加到“解决方案资源管理器”**中。
 
 4.  在 **“项目”** 菜单上，单击 **“添加新项”**。
 
-5.  单击**LINQ to SQL 类**模板和类型**Northwind.dbml**中**名称**框。
+5.  单击“LINQ to SQL 类”**模板，然后在“名称”** 框中键入 Northwind.dbml。
 
 6.  单击 **添加**。
 
@@ -101,24 +101,24 @@ ms.locfileid: "37174968"
 
 2.  拖动**客户**从节点**服务器资源管理器**或**数据库资源管理器**拖到 **O/R 设计器*图面。
 
-     一个名为的实体类**客户**创建。 该类具有与 Customers 表中的列相对应的属性。 名为实体类**客户**(不**客户**) 因为它代表 Customers 表中的单个客户。
+     将创建一个名为“Customer”**的实体类。 该类具有与 Customers 表中的列相对应的属性。 由于该实体类表示 Customers 表中的单个客户，因此将该类命名为“Customer”**（而不是“Customers”**）。
 
     > [!NOTE]
-    > 此重命名行为称为*复数化*。 可以通过启用或禁用[选项对话框](../ide/reference/options-dialog-box-visual-studio.md)。 有关详细信息，请参阅[如何： 打开和关闭 （O/R 设计器） 启用复数化](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。
+    > 这种重命名行为称为“复数化”*。 可以通过启用或禁用[选项对话框](../ide/reference/options-dialog-box-visual-studio.md)。 有关详细信息，请参阅[如何： 打开和关闭 （O/R 设计器） 启用复数化](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。
 
-3.  上**构建**菜单上，单击**生成 UpdatingwithSProcsWalkthrough**以生成项目。
+3.  在“生成”**菜单上单击“生成 UpdatingwithSProcsWalkthrough”** 以生成该项目。
 
-4.  在 **“数据”** 菜单上，单击 **“显示数据源”**。
+4.  若要打开**数据源**窗口，然后在**数据**菜单中，单击**显示数据源**。
 
 5.  在 **“数据源”** 窗口中，单击 **“添加新数据源”**。
 
-6.  单击**对象**上**选择数据源类型**页，然后单击**下一步**。
+6.  单击“选择数据源类型”**页上的“对象”**，然后单击“下一步”**。
 
-7.  展开**UpdatingwithSProcsWalkthrough**节点，找到并选择**客户**类。
+7.  展开“UpdatingwithSProcsWalkthrough”**节点，然后找到并选择“Customer”** 类。
 
     > [!NOTE]
-    > 如果**客户**类不可用、 取消该向导、 生成项目时，和重新运行该向导。
-8.  单击**完成**创建数据源并添加**客户**到实体类**数据源**窗口。
+    > 如果“Customer”**类不可用，则退出向导，生成项目，然后重新运行向导。
+8.  单击“完成”**以创建数据源并将“Customer”** 实体类添加到“数据源”**窗口。
 
 ## <a name="create-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>创建一个 DataGridView 以在 Windows 窗体上显示的客户数据
 
@@ -126,14 +126,14 @@ ms.locfileid: "37174968"
 
 ### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>添加绑定到实体类的控件
 
-1.  打开**Form1**在设计视图中。
+1.  在“设计”视图中打开“Form1”**。
 
-2.  从**数据源**窗口中，拖动**客户**节点拖到**Form1**。
+2.  将“Customer”**节点从“数据源”** 窗口拖动到“Form1”**上。
 
     > [!NOTE]
-    > 若要显示**数据源**窗口中，单击**显示数据源**上**数据**菜单。
+    > 若要显示“数据源”**窗口，请单击“数据”** 菜单上的“显示数据源”**。
 
-3.  打开**Form1**代码编辑器中。
+3.  在代码编辑器中打开 Form1。
 
 4.  但在将以下代码添加到窗体，任何特定方法之外的窗体的全局`Form1`类：
 
@@ -163,11 +163,11 @@ ms.locfileid: "37174968"
 
 ### <a name="to-implement-save-functionality"></a>实现保存功能
 
-1.  打开**Form1**在设计视图中。
+1.  在“设计”视图中打开“Form1”**。
 
-2.  选择保存按钮**customerbindingnavigator** （带有软盘图标的按钮）。
+2.  在“CustomerBindingNavigator”**上选择保存按钮（带有软盘图标的按钮）。
 
-3.  在中**属性**窗口中，将**已启用**属性设置为**True**。
+3.  在“属性”**窗口中，将“Enabled”** 属性设置为“True”**。
 
 4.  双击保存按钮以创建一个事件处理程序并切换到代码编辑器。
 
@@ -185,9 +185,9 @@ ms.locfileid: "37174968"
 
 ### <a name="to-override-the-default-update-behavior"></a>重写默认更新行为
 
-1.  打开的 LINQ to SQL 文件中**O/R 设计器**。 (双击**Northwind.dbml**中的文件**解决方案资源管理器**。)
+1.  打开的 LINQ to SQL 文件中**O/R 设计器**。 （在“解决方案资源管理器”**中双击“Northwind.dbml”** 文件。）
 
-2.  在中**服务器资源管理器**或**数据库资源管理器**，展开 Northwind 数据库**Stored Procedures**节点并找到**InsertCustomers**， **UpdateCustomers**，并**DeleteCustomers**存储过程。
+2.  在“服务器资源管理器”**/“数据库资源管理器”** 中，展开 Northwind 数据库的“存储过程”**节点并找到“InsertCustomers”**、“UpdateCustomers”**和“DeleteCustomers”** 存储过程。
 
 3.  拖动到的所有三个存储的过程**O/R 设计器**。
 
@@ -195,41 +195,41 @@ ms.locfileid: "37174968"
 
 4.  选择**客户**中的实体类**O/R 设计器**。
 
-5.  在中**属性**窗口中，选择**插入**属性。
+5.  在“属性”**窗口中选择“Insert”** 属性。
 
-6.  单击省略号 (**...**) 旁边**使用运行时**以打开**配置行为**对话框。
+6.  单击“使用运行时”**旁的省略号以打开“配置行为”** 对话框。
 
-7.  选择**自定义**。
+7.  选择“自定义”**。
 
-8.  选择**InsertCustomers**中的方法**自定义**列表。
+8.  在“自定义”**列表中选择“InsertCustomers”** 方法。
 
-9. 单击**应用**以保存所选的类和行为的配置。
-
-    > [!NOTE]
-    > 你可以继续配置，只要你单击每个类/行为组合的行为**应用**每次更改后。 如果您更改的类或行为之前单击**应用**、 提供商机应用任何更改将出现一个警告对话框。
-
-10. 选择**更新**中**行为**列表。
-
-11. 选择**自定义**。
-
-12. 选择**UpdateCustomers**中的方法**自定义**列表。
-
-     检查的列表**方法自变量**并**类属性**，并注意有两个**方法自变量**并将两个**类属性**表中的某些列。 这样可以更加轻松地跟踪更改和创建检查并发冲突的语句。
-
-13. 地图**Original_CustomerID**方法参数**CustomerID （原始）** 类属性。
+9. 单击“应用”**保存所选择的类和行为的配置。
 
     > [!NOTE]
-    > 默认情况下，当名称匹配时，方法自变量会映射到类属性。 如果属性名称发生更改，并且在表与实体类之间不再匹配，您可能需要选择等效的类属性将映射到 if **O/R 设计器**无法确定正确的映射。 此外，如果方法自变量不具有有效的类属性映射到，则可以设置**类属性**值设置为 **（无）**。
+    > 只要在每次更改后单击“应用”**，就可以继续为每个类/行为组合配置行为。 如果您更改的类或行为之前单击**应用**、 提供商机应用任何更改将出现一个警告对话框。
 
-14. 单击**应用**以保存所选的类和行为的配置。
+10. 在“行为”**列表中选择“更新”**。
 
-15. 选择**删除**中**行为**列表。
+11. 选择“自定义”**。
 
-16. 选择**自定义**。
+12. 在“自定义”**列表中选择“UpdateCustomers”** 方法。
 
-17. 选择**DeleteCustomers**中的方法**自定义**列表。
+     检查“方法自变量”**和“类属性”** 列表，你会注意到，对于表中的某些列，有两个“方法自变量”**和两个“类属性”**。 这样可以更加轻松地跟踪更改和创建检查并发冲突的语句。
 
-18. 地图**Original_CustomerID**方法参数**CustomerID （原始）** 类属性。
+13. 将“Original_CustomerID”**方法自变量映射到“CustomerID (原始)”[CustomerID (Original)]** 类属性。
+
+    > [!NOTE]
+    > 默认情况下，当名称匹配时，方法自变量会映射到类属性。 如果属性名称发生更改并且在表与实体类之间不再匹配，则在 O/R 设计器无法确定正确的映射时，您可能必须选择等效的类属性进行映射。 此外，如果方法自变量没有用于进行映射的有效类属性，则可以将“类属性”**值设置为“(无)”**。
+
+14. 单击“应用”**保存所选择的类和行为的配置。
+
+15. 在“行为”**列表中选择“删除”**。
+
+16. 选择“自定义”**。
+
+17. 在“自定义”**列表中选择“DeleteCustomers”** 方法。
+
+18. 将“Original_CustomerID”**方法自变量映射到“CustomerID (原始)”[CustomerID (Original)]** 类属性。
 
 19. 单击 **“确定”**。
 
@@ -238,30 +238,30 @@ ms.locfileid: "37174968"
 
 ## <a name="test-the-application"></a>测试应用程序
 
-运行应用程序再次确认**UpdateCustomers**存储的过程是否能够正确更新数据库中的客户记录。
+再次运行应用程序以验证“UpdateCustomers”**存储过程是否能够正确更新数据库中的客户记录。
 
 1.  按 F5 。
 
-2.  修改要测试更新行为的网格中的记录。
+2.  修改网格中的一条记录以测试更新行为。
 
-3.  添加新记录以测试插入行为。
+3.  添加一条新记录以测试插入行为。
 
 4.  单击“保存”按钮将更改保存回数据库。
 
 5.  关闭窗体。
 
-6.  按**F5**并验证是否保存已更新的记录和新插入的记录。
+6.  按 F5 并验证是否保存了更新的记录和新插入的记录。
 
-7.  删除的新记录中创建的步骤 3 以测试删除行为。
+7.  删除在步骤 3 中创建的新记录以测试删除行为。
 
-8.  单击保存按钮以提交所做的更改，并从数据库中删除已删除的记录。
+8.  单击保存按钮以提交更改并从数据库中移除已删除的记录
 
 9. 关闭窗体。
 
-10. 按**F5**并验证是否已删除的记录已从数据库删除。
+10. 按 F5 并验证是否从数据库中移除了已删除的记录。
 
     > [!NOTE]
-    > 如果你的应用程序将使用 SQL Server Express Edition，具体取决于值**复制到输出目录**数据库文件的属性，所做的更改可能不会显示按下时**F5**在步骤 10。
+    > 如果您的应用程序使用 SQL Server Express Edition，则根据数据库文件的“复制到输出目录”**属性值的不同，在步骤 10 中按 F5 时可能不会显示更改。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -269,11 +269,11 @@ ms.locfileid: "37174968"
 
 - 在更新过程中实现并发检查。 有关信息，请参阅[开放式并发： 概述](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview)。
 
-- 添加 LINQ 查询以筛选数据。 有关信息，请参阅[LINQ 查询 (C#) 简介](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)。
+- 添加 LINQ 查询以筛选数据。 有关信息，请参阅[LINQ 查询简介 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)。
 
 ## <a name="see-also"></a>请参阅
 
-- [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext 方法](../data-tools/datacontext-methods-o-r-designer.md)
 - [如何： 分配存储的过程以便执行更新、 插入和删除操作](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

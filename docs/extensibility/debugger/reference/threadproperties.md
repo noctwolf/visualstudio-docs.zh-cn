@@ -1,5 +1,5 @@
 ---
-title: THREADPROPERTIES |Microsoft 文档
+title: THREADPROPERTIES |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4079c688358f3e7deedd28b5eb05e556192bfe6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14db7869717a2edf1ac64be744ab1f6058455c1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845311"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 介绍在线程的属性。  
@@ -59,22 +59,22 @@ public struct THREADPROPERTIES {
  线程 id。  
   
  dwSuspendCount  
- 线程挂起计数。  
+ 在线程挂起计数。  
   
  dwThreadState  
- 取值范围为[线程](../../../extensibility/debugger/reference/threadstate.md)枚举，该值指示操作系统线程的状态。  
+ 中的值[THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)枚举，指示操作系统线程的状态。  
   
  bstrPriority  
  一个字符串，指定线程的优先级。例如，"高于正常"、"Normal"或者"时间关键"。  
   
  bstName  
- 线程名称中。  
+ 线程名称。  
   
  bstrLocation  
- 线程位置 （通常最顶层的堆栈帧），通常表示为当前暂停执行方法的名称。  
+ 线程位置 （通常最顶层的堆栈帧），通常都表示为当前暂停执行方法的名称。  
   
 ## <a name="remarks"></a>备注  
- 此结构通过调用填充[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法。 因此返回的信息通常用于填充**线程**窗口。  
+ 此结构通过调用来填充[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法。 因此返回的信息通常用于填充**线程**窗口。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -83,7 +83,7 @@ public struct THREADPROPERTIES {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)   
  [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   

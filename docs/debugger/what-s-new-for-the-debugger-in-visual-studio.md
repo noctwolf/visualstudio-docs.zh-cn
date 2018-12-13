@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fac267dfaf27d9afccdb6236244dbd21e99b253b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 342cb6c1f014c94bd86363415177ec747b0dc1b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943136"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>什么是调试器中的新增功能 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -35,8 +35,8 @@ ms.locfileid: "37433449"
 
     快照集合适用于在 Azure App Service 中运行的以下 Web 应用：
 
-    * 在 .NET Framework 4.6.1 或更高版本上运行的 ASP.NET 应用程序。
-    * 在 Windows 中的 .Net Core 2.0 或更高版本上运行的 ASP.NET Core 应用程序。
+  * 在 .NET Framework 4.6.1 或更高版本上运行的 ASP.NET 应用程序。
+  * 在 Windows 中的 .Net Core 2.0 或更高版本上运行的 ASP.NET Core 应用程序。
 
     有关详细信息，请参阅[调试实时 ASP.NET 应用中使用快照调试程序](../debugger/debug-live-azure-applications.md)。
 
@@ -46,7 +46,7 @@ ms.locfileid: "37433449"
 
     ![单步执行向后和向前按钮](../debugger/media/intellitrace-step-back-icons-description.png  "后退一步和前进按钮")
 
-    有关详细信息，请参阅[使用 IntelliTrace 后退查看快照](../debugger/how-to-use-intellitrace-step-back.md)页。
+    有关详细信息，请参阅[检查上一应用程序状态使用 IntelliTrace](../debugger/view-historical-application-state.md)页。
 
 - **异常帮助器**替换异常助手，将出现在错误发生位置的非模式对话框。 **异常帮助程序**提供更快地访问任何内部异常，调试器使用 （如果可用），其他分析和立即访问**异常设置**异常。 异常帮助器还可以拖动到浮点视图，如果它阻止您需要查看的内容。
 

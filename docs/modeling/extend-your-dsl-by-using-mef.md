@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 205408cc4241bb0c10b4a2e413449f7b70452187
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822120"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 
@@ -125,43 +125,43 @@ ms.locfileid: "39567072"
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>若要创建 DSL 扩展 VSIX
 
-1.  创建一个新类库项目。 若要执行此操作，在**新的项目**对话框中，选择**Visual Basic**或**Visual C#** ，然后选择**类库**。
+1. 创建一个新类库项目。 若要执行此操作，在**新的项目**对话框中，选择**Visual Basic**或**Visual C#** ，然后选择**类库**。
 
-2.  新类库项目中，将添加到 DSL 的程序集的引用。
+2. 新类库项目中，将添加到 DSL 的程序集的引用。
 
-    -   此程序集通常具有文件名结尾"。Dsl.dll"。
+   - 此程序集通常具有文件名结尾"。Dsl.dll"。
 
-    -   如果你有权访问 DSL 项目，可以找到程序集文件的目录下**Dsl\bin\\\***
+   - 如果你有权访问 DSL 项目，可以找到程序集文件的目录下**Dsl\bin\\\\***
 
-    -   如果你有权访问的 DSL 的 VSIX 文件，您可以通过 VSIX 文件的文件扩展名更改为".zip"找到程序集。 解压缩.zip 文件。
+   - 如果你有权访问的 DSL 的 VSIX 文件，您可以通过 VSIX 文件的文件扩展名更改为".zip"找到程序集。 解压缩.zip 文件。
 
-3.  添加以下.NET 程序集的引用：
+3. 添加以下.NET 程序集的引用：
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-    -   System.ComponentModel.Composition.dll
+   -   System.ComponentModel.Composition.dll
 
-    -   System.Windows.Forms.dll
+   -   System.Windows.Forms.dll
 
-4.  在同一解决方案中创建一个 VSIX 项目。 若要执行此操作，在**新的项目**对话框框中，展开**Visual Basic**或**Visual C#**，单击**扩展性**，然后选择**VSIX 项目**。
+4. 在同一解决方案中创建一个 VSIX 项目。 若要执行此操作，在**新的项目**对话框框中，展开**Visual Basic**或**Visual C#**，单击**扩展性**，然后选择**VSIX 项目**。
 
-5.  在解决方案资源管理器，右键单击 VSIX 项目，然后单击**设为启动项目**。
+5. 在解决方案资源管理器，右键单击 VSIX 项目，然后单击**设为启动项目**。
 
-6.  在新的项目中，打开**source.extension.vsixmanifest**。
+6. 在新的项目中，打开**source.extension.vsixmanifest**。
 
-7.  单击**添加内容**。 在对话框中，将**内容类型**到**MEF 组件**，并**源项目**到你的类库项目。
+7. 单击**添加内容**。 在对话框中，将**内容类型**到**MEF 组件**，并**源项目**到你的类库项目。
 
-8.  添加到 DSL 的 VSIX 引用。
+8. 添加到 DSL 的 VSIX 引用。
 
-    1.  在中**source.extension.vsixmanifest**，单击**添加引用**
+   1. 在中**source.extension.vsixmanifest**，单击**添加引用**
 
-    2.  在对话框中，单击**添加负载**，然后查找的 DSL 的 VSIX 文件。 在 DSL 解决方案中生成的 VSIX 文件**DslPackage\bin\\\***。
+   2. 在对话框中，单击**添加负载**，然后查找的 DSL 的 VSIX 文件。 在 DSL 解决方案中生成的 VSIX 文件 * * DslPackage\bin\\\\* * *。
 
-         这允许用户在同时安装 DSL 和扩展。 如果用户已安装 DSL，则将安装你的扩展。
+       这允许用户在同时安装 DSL 和扩展。 如果用户已安装 DSL，则将安装你的扩展。
 
 9. 查看和更新的其他字段**source.extension.vsixmanifest**。 单击**选择版本**并验证是否设置正确的 Visual Studio 版本。
 

@@ -1,5 +1,5 @@
 ---
-title: 通过 WPF 和 Entity Framework 6 创建简单的数据应用程序
+title: 使用 WPF 和 Entity Framework 6 创建简单的数据应用程序
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,14 +11,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c39546d48cd8b8bf71594685f944751c1f023750
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: 5993256b41a07c4861ef2def58dc14d7fd849313
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117805"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305606"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>通过 WPF 和 Entity Framework 6 创建简单的数据应用程序
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 创建简单的数据应用程序
 
 本演练演示如何在 Visual Studio 中创建一个基本"forms over data"应用程序。 该应用使用 SQL Server LocalDB，Northwind 数据库、 Entity Framework 6 和 Windows Presentation Foundation。 它演示如何执行基本数据绑定的大纲-细节视图，并且也包含自定义绑定与按钮导航器**移动到下一步**，**移动上一个**，**将移到从**，**移至末尾**，**更新**并**删除**。
 
@@ -46,7 +46,7 @@ ms.locfileid: "37117805"
 
 ## <a name="configure-the-project"></a>配置项目
 
-1.  在 Visual Studio 中，选择**文件** > **新建** > **项目**，然后创建一个新 C# WPF 应用程序。
+1.  在 Visual Studio 中，选择**文件** > **新建** > **项目**，然后创建一个新C#WPF 应用程序。
 
 2.  接下来，为 Entity Framework 6 中添加 NuGet 包。 在中**解决方案资源管理器**，选择项目节点。 在主菜单中，选择**项目** > **管理 NuGet 包**。
 
@@ -60,35 +60,35 @@ ms.locfileid: "37117805"
 
 ## <a name="create-the-model"></a>创建模型
 
-1.  右键单击解决方案资源管理器中的项目节点并选择**外** > **新项**。 在左窗格中，在 C# 节点下，选择**数据**，然后在中间窗格中，选择**ADO.NET 实体数据模型**。
+1. 右键单击项目节点中**解决方案资源管理器**，然后选择**添加** > **新项**。 在左窗格中，在C#节点，选择**数据**，然后在中间窗格中，选择**ADO.NET 实体数据模型**。
 
-     ![实体框架模型新项目项](../data-tools/media/raddata-ef-new-project-item.png)
+   ![实体框架模型新项目项](../data-tools/media/raddata-ef-new-project-item.png)
 
-  2.  调用该模型`Northwind_model`，然后选择**确定**。 **实体数据模型向导**随即打开。 选择**EF 设计器从数据库**，然后单击**下一步**。
+2. 调用该模型`Northwind_model`，然后选择**确定**。 “实体数据模型”向导随即打开。 选择**EF 设计器从数据库**，然后单击**下一步**。
 
-     ![从数据库的 EF 模型](../data-tools/media/raddata-ef-model-from-database.png)
+   ![从数据库的 EF 模型](../data-tools/media/raddata-ef-model-from-database.png)
 
-3.  在下一个屏幕，然后单击选择 LocalDB Northwind**下一步**。
+3. 在下一个屏幕，然后单击选择 LocalDB Northwind**下一步**。
 
-4.  在向导的下一页上，选择的表、 存储的过程和要包含在实体框架模型中其他数据库对象。 展开树视图中的 dbo 节点并选择**客户**，**订单**，并**Order Details**。 保留选中的默认值，然后单击**完成**。
+4. 在向导的下一页上，选择的表、 存储的过程和要包含在实体框架模型中其他数据库对象。 展开树视图中的 dbo 节点并选择**客户**，**订单**，并**Order Details**。 保留选中的默认值，然后单击**完成**。
 
-     ![选择模型的数据库对象](../data-tools/media/raddata-choose-ef-objects.png)
+    ![选择模型的数据库对象](../data-tools/media/raddata-choose-ef-objects.png)
 
-5.  向导将生成表示实体框架模型的 C# 类。 类是普通旧的 C# 类，并且我们数据绑定到 WPF 用户界面。 *.Edmx*文件介绍了关系和其他将类与数据库中的对象相关联的元数据。 *.Tt*文件是生成的代码，运行或保存对数据库进行更改的模型的 T4 模板。 可以看到所有这些文件中的**解决方案资源管理器**Northwind_model 节点下：
+5. 该向导将生成C#类表示实体框架模型。 类是普通的老式C#类，它们是我们数据绑定到 WPF 用户界面。 *.Edmx*文件介绍了关系和其他将类与数据库中的对象相关联的元数据。 *.Tt*文件是生成的代码，运行或保存对数据库进行更改的模型的 T4 模板。 可以看到所有这些文件中的**解决方案资源管理器**Northwind_model 节点下：
 
-       ![解决方案资源管理器 EF 模型文件](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
+      ![解决方案资源管理器 EF 模型文件](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
-     为设计器图面 *.edmx*文件，您可以修改一些属性和关系在模型中的。 我们不打算在本演练中使用设计器。
+    为设计器图面 *.edmx*文件，您可以修改一些属性和关系在模型中的。 我们不打算在本演练中使用设计器。
 
-6.  *.Tt*文件是常规用途和需要调整它们以使用 WPF 数据绑定，这要求 ObservableCollections 之一。 在中**解决方案资源管理器**，展开 Northwind_model 节点，直到找到*Northwind_model.tt*。 (请确保不在 *。Context.tt*文件，它是正下方 *.edmx*文件。)
+6. *.Tt*文件是常规用途和需要调整它们以使用 WPF 数据绑定，这要求 ObservableCollections 之一。 在中**解决方案资源管理器**，展开 Northwind_model 节点，直到找到*Northwind_model.tt*。 (请确保不在 *。Context.tt*文件，它是正下方 *.edmx*文件。)
 
-    -   替换的两个匹配项<xref:System.Collections.ICollection>与<xref:System.Collections.ObjectModel.ObservableCollection%601>。
+   -   替换的两个匹配项<xref:System.Collections.ICollection>与<xref:System.Collections.ObjectModel.ObservableCollection%601>。
 
-    -   替换为第一个匹配项<xref:System.Collections.Generic.HashSet%601>与<xref:System.Collections.ObjectModel.ObservableCollection%601>在第 51 行。 不会替代 HashSet 的第二个匹配项。
+   -   替换为第一个匹配项<xref:System.Collections.Generic.HashSet%601>与<xref:System.Collections.ObjectModel.ObservableCollection%601>在第 51 行。 不会替代 HashSet 的第二个匹配项。
 
-    -   替换的唯一匹配项<xref:System.Collections.Generic>（在第 431 行） 与<xref:System.Collections.ObjectModel>。
+   -   替换的唯一匹配项<xref:System.Collections.Generic>（在第 431 行） 与<xref:System.Collections.ObjectModel>。
 
-7.  按**Ctrl**+**Shift**+**B**以生成项目。 如果生成完成后，在 model 类将显示到数据源向导。
+7. 按**Ctrl**+**Shift**+**B**以生成项目。 如果生成完成后，在 model 类将显示到数据源向导。
 
 现在已准备好将挂接到此模型添加到 XAML 页，以便可以查看、 导航和修改数据。
 
@@ -116,7 +116,7 @@ ms.locfileid: "37117805"
         </Grid.RowDefinitions>
     ```
 
-5.  现在，打开*MainWindow.xaml* ，以便在设计器中查看。 这将导致**数据源**窗口中显示为 Visual Studio 窗口边距中的一个选项旁边**工具箱**。 单击选项卡以打开窗口，或其他按**Shift**+**Alt**+**D**或选择**视图** > **其他 Windows** > **数据源**。 我们要在自己单独的文本的框中的客户类中显示每个属性。 首先，请单击中箭头**客户**组合框，然后选择**详细信息**。 以便在设计器知道你希望它转中间行中，然后，将节点拖到设计图面上的中间部分上。 如果您忘记放置位置，您可以以后手动在 XAML 中指定的一行。 默认情况下，控件垂直放置在网格元素中，但此时，您可以排列它们想在窗体上。 例如，可能会有用放**名称**在最前面，上面地址文本框。 这篇文章的示例应用程序对字段重新排序，并为两列中重新排列它们。
+5.  现在，打开*MainWindow.xaml* ，以便你正在设计器中查看它。 这将导致**数据源**窗口中显示为 Visual Studio 窗口边距中的一个选项旁边**工具箱**。 单击选项卡以打开窗口，或其他按**Shift**+**Alt**+**D**或选择**视图** > **其他 Windows** > **数据源**。 我们要在自己单独的文本的框中的客户类中显示每个属性。 首先，请单击中箭头**客户**组合框，然后选择**详细信息**。 以便在设计器知道你希望它转中间行中，然后，将节点拖到设计图面上的中间部分上。 如果您忘记放置位置，您可以以后手动在 XAML 中指定的一行。 默认情况下，控件垂直放置在网格元素中，但此时，您可以排列它们想在窗体上。 例如，可能会有用放**名称**在最前面，上面地址文本框。 这篇文章的示例应用程序对字段重新排序，并为两列中重新排列它们。
 
      ![为单个控件的客户数据源绑定](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
@@ -432,4 +432,4 @@ Visual Studio 生成的默认排列方式是不适合您的应用程序，因此
 ## <a name="see-also"></a>请参阅
 
 - [适用于 NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)
-- [Entity Framework 文档](/ef/)
+- [实体框架文档](/ef/)

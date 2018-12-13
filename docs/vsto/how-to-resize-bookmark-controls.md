@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 79b129a31439b175bde61f9a995abcf98a7a9708
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924832"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>如何： 调整书签控件的大小
   当你将 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件添加到 Microsoft Office Word 文档时，可以设置它的大小。 稍后还可以重设其大小。  
@@ -30,21 +30,21 @@ ms.locfileid: "35670307"
   
  有三种方法可以重设书签的大小：  
   
--   添加或删除 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件中的文本。  
+- 添加或删除 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件中的文本。  
   
-     每次在书签中添加文本时，该书签的大小会自动增加以包含新的文本。 删除文本时，书签的大小会自动减小。  
+   每次在书签中添加文本时，该书签的大小会自动增加以包含新的文本。 删除文本时，书签的大小会自动减小。  
   
--   更改 <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> 控件的 <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> 和 <xref:Microsoft.Office.Tools.Word.Bookmark> 属性。  
+- 更改 <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> 控件的 <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> 和 <xref:Microsoft.Office.Tools.Word.Bookmark> 属性。  
   
-     如果只将大小更改几个字符，此方法很有用。  
+   如果只将大小更改几个字符，此方法很有用。  
   
--   重新创建 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。  
+- 重新创建 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。  
   
-     如果将对书签的大小或位置作出重大更改，此方法很有用。  
+   如果将对书签的大小或位置作出重大更改，此方法很有用。  
   
- 在文档级项目中，你可以在设计时或在运行时向项目中的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 在 VSTO 外接程序项目中，可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>向任何打开的文档在运行时的控件。 有关详细信息，请参阅[如何： 添加书签控件添加到 Word 文档](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
+  在文档级项目中，你可以在设计时或在运行时向项目中的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 在 VSTO 外接程序项目中，可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>向任何打开的文档在运行时的控件。 有关详细信息，请参阅[如何： 添加书签控件添加到 Word 文档](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="change-the-start-and-end-properties"></a>更改开始和结束属性  
   

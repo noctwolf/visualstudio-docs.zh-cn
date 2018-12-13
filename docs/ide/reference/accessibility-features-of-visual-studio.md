@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d892d89f06d47ffe33d57c27b211163fa9568a2d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 57d5149225668a9ef036798b384f41656d2c07e8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943694"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348716"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的辅助功能
 
@@ -38,11 +38,13 @@ ms.locfileid: "31943694"
 
 -   方法和参数功能的自动完成
 
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 辅助功能](/visualstudio/mac/accessibility)。
+
 > [!IMPORTANT]
 > 本节中的信息仅适用于美国境内获得 Microsoft 产品许可证的用户。 如果在美国以外的其他国家/地区获取到该产品，那么可以使用软件包附带的分公司信息卡或访问[“Microsoft 支持”的“联系我们”页面](http://support.microsoft.com/ContactUs)，然后单击“查找 Microsoft 全球办事处”链接（靠近网页底部）。 这一页面提供了载有 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本节中描述的产品和服务类型。 有关辅助功能的信息有其他语言版本，包括日语和法语。
 
-
- 有关详细信息，请参阅下列主题：
+有关详细信息，请参阅下列主题：
 
 -   [如何：设置 IDE 辅助功能选项](../../ide/reference/how-to-set-ide-accessibility-options.md)
 

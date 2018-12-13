@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5c841e6930db8f65aaf93c314359656689ecfd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477387"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903538"
 ---
 # <a name="vsperf"></a>VSPerf
 使用 **VsPerf** 命令行工具可以：  
   
-1.  在设备上未安装 Visual Studio 时，从命令行分析 UWP 应用。  
+1. 在设备上未安装 Visual Studio 时，从命令行分析 UWP 应用。  
   
-2.  使用采样分析方法分析 Windows 8 桌面应用程序和 Windows Server 2012 应用程序。  
+2. 使用采样分析方法分析 Windows 8 桌面应用程序和 Windows Server 2012 应用程序。  
   
- 有关分析选项的详细信息，请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+   有关分析选项的详细信息，请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 ## <a name="uwp-apps-only"></a>仅 UWP 应用  
  这些选项仅适用于 UWP 应用。  

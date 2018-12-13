@@ -1,11 +1,11 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 95e3d77471f4e118c83f0fb752048383d624acfd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 27c5c7126f66ad909264bdd6fb2505e5e8d87c3c
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38943921"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "48020836"
 ---
 > [!NOTE]
-> 在 Visual Studio 2017 中，文本模板转换 SDK 和 Visual Studio 建模 SDK 自动安装时安装 Visual Studio 的特定功能。 有关更多详细信息，请参阅[这篇博客文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
+> 在 Visual Studio 2017 中，**文本模板转换**的一部分自动安装组件**Visual Studio 扩展开发**工作负荷。 您还可以安装从**各个组件**Visual Studio 安装程序选项卡下**代码工具**类别。 安装**建模 SDK**组件从**各个组件**选项卡。

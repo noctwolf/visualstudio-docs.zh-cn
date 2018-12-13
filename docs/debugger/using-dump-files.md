@@ -1,7 +1,7 @@
 ---
-title: 使用转储文件 |Microsoft Docs
+title: 使用 Visual Studio 调试器中的转储文件 |Microsoft Docs
 ms.custom: H1HackMay2017
-ms.date: 03/08/2017
+ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -23,96 +23,99 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 74935071dcba3ab145f17f594fd22491271e39c6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281021"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296133"
 ---
-# <a name="use-dump-files-with-visual-studio"></a>Visual Studio 中使用转储文件
-使用或不带堆; 的转储文件创建转储文件;打开转储文件;查找二进制文件、 pdb 的和转储文件的源文件。
+# <a name="dump-files-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中的转储文件
 
-##  <a name="BKMK_What_is_a_dump_file_"></a> 什么是转储文件？
- 一个*转储文件*采用转储的时间是应用程序在该点的快照。 它显示了执行的进程和加载的模块。 如果转储与堆信息一起保存，转储文件将包含该时间点在应用程序的内存中储存的内容的快照。 在 Visual Studio 中打开带堆的转储文件类似于在调试会话中在断点处停止。 尽管你无法继续执行，但在转储发生时可以检查应用程序的堆栈、线程和变量值。
+<a name="BKMK_What_is_a_dump_file_"></a> 一个*转储文件*是快照，显示已执行的过程和时间点应用的已加载的模块。 带有堆信息的转储此时还包括应用程序的内存的快照。 
 
- 转储主要用于调试发生开发人员不能访问的计算机的问题。 例如，可以使用从客户的计算机的转储文件时不能重现客户的崩溃或挂起计算机上。 测试人员还会创建转储文件来保存故障或挂起数据，以便让测试计算机可用于更多测试。 Visual Studio 调试器可为托管或本机代码保存转储文件。 该调试器可加载由 Visual Studio 或保存文件的其他程序创建的转储文件*小型转储*格式。
+使用堆在 Visual Studio 中打开转储文件是类似于在调试会话中的断点处停止。 尽管你无法继续执行，但您可以在转储时检查堆栈、 线程和应用程序的变量值。
 
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> 使用或不带堆的转储文件
- 你可以创建带有或不带堆信息的转储文件。
+转储主要用于调试从开发人员无权访问的计算机的问题。 如果您无法重现崩溃或挂起自己的计算机上，可以使用从客户的计算机的转储文件。 测试人员还创建转储来保存故障或挂起数据以用于更多测试。 
 
--   **转储文件的堆**包含应用程序的内存的快照。 这包括创建转储时的变量的值。 如果加载与堆一起保存的转储文件，即使未找到应用程序二进制文件，Visual Studio 也可以加载符号。 Visual Studio 还会在转储文件中保存加载的本机模块的二进制文件，这可让调试更加容易。
-
--   **转储文件不带堆**比带有堆信息的转储小得多。 但是，调试器必须加载应用程序二进制文件才能查找符号信息。 该二进制文件必须与创建转储时使用的二进制文件完全匹配。 仅在不带堆数据的转储文件中存储堆栈变量的值。
+Visual Studio 调试器可为托管或本机代码保存转储文件。 它可以创建调试转储文件由 Visual Studio 或保存文件的其他应用*小型转储*格式。
 
 ##  <a name="BKMK_Requirements_and_limitations"></a> 要求和限制
 
--   调试优化过代码的转储文件可能让人困惑。 例如，函数的编译器内联可能产生意外的调用堆栈，而其他优化可能更改变量的生存期。
+-   若要调试 64 位计算机的转储文件，必须在 64 位计算机上运行 Visual Studio。
 
--   64 位计算机中的转储文件必须在运行于 64 位计算机中的 Visual Studio 的实例上进行调试。
+-   Visual Studio 可以调试 ARM 设备中的本机应用程序的转储文件。 它还可以调试托管应用程序从 ARM 设备，但只是在本机调试器的转储。
 
--   在 VS 2013 之前的 Visual Studio 版本中，对于在 64 位计算机上运行的 32 位应用，通过某些工具（例如，任务管理器和 64 位 WinDbg）收集的转储无法在 Visual Studio 中打开。 VS 2013 中已经取消了此限制。
+-   若要调试[内核模式](/windows-hardware/drivers/debugger/kernel-mode-dump-files)转储文件，或使用[SOS.dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension)调试扩展在 Visual Studio 中，下载适用于 Windows 中的调试工具[Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)。
 
--   Visual Studio 可以调试 ARM 设备中的本机应用程序的转储文件。 Visual Studio 还可以调试 ARM 设备中的托管应用的应用转储文件，但仅限于本机调试器中。
+-   Visual Studio 无法调试转储文件保存在较旧[完整的用户模式转储](/windows/desktop/wer/collecting-user-mode-dumps)格式。 完整的用户模式转储不附带堆的转储相同。
 
--   若要调试[内核模式](/windows-hardware/drivers/debugger/kernel-mode-dump-files)转储文件，请下载适用于一部分的 Windows 调试工具[Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)。
+-   调试优化过代码的转储文件可能让人困惑。 例如，函数的编译器内联可能会导致意外的调用堆栈和其他优化可能更改变量的生存期。
 
--   Visual Studio 无法调试转储文件保存在名为较旧转储格式[完整的用户模式转储](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx)。 请注意，完全用户模式转储与带有堆的转储不同。
+##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> 使用或不带堆的转储文件
 
--   若要使用调试[SOS.dll （SOS 调试扩展）](/dotnet/framework/tools/sos-dll-sos-debugging-extension)在 Visual Studio 中，您必须安装调试工具的一部分的 Windows [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)
+转储文件可能会或可能不包含堆信息。
+
+-   **转储文件的堆**包含应用程序的内存，包括变量的值在转储时的快照。 Visual Studio 还将在堆，可能会使调试变得更加容易的转储文件中加载的本机模块的二进制文件。 Visual Studio 可以从具有堆的转储文件中加载符号，即使它找不到应用程序二进制。 
+
+-   **转储文件不带堆**比小得多转储与堆的方法，但调试器必须加载应用程序二进制文件，以查找符号信息。 加载二进制文件必须与转储创建过程中运行的完全匹配。 不带堆的转储文件保存仅堆栈变量的值。
 
 ##  <a name="BKMK_Create_a_dump_file"></a> 创建转储文件
- 使用 Visual Studio 创建转储文件：
 
--   在 Visual Studio 中调试进程时，你可以在调试器已在异常或断点处停止时保存转储文件。 选择**调试**，然后**另存为转储**，然后**调试**。 在中**转储另存为**对话框中**另存为类型**列表中，可以选择**小型转储**或**附带堆信息的小型转储**（默认值）。
+当调试 Visual Studio 中的进程时，您可以在调试器已在异常或断点处停止时保存转储。 
 
--   与[实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)启用，可以将调试器附加到在调试器外部运行的故障进程，然后保存转储文件。 请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+与[实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)启用，可以将 Visual Studio 调试器附加到 Visual Studio 外部的故障进程，然后将转储文件保存在调试器中。 请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。
 
- 你还可以使用支持 Windows 小型转储格式的任意程序创建转储文件。 例如， **Procdump**从命令行实用工具[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default)可以创建基于触发器或按需进程故障转储文件。 请参阅[要求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)在此主题中有关使用其他工具创建转储文件的其他信息。
+**若要保存转储文件：**
+
+1. 在调试期间的错误或断点处停止时, 选择**调试** > **转储另存为**。 
+
+1. 在中**转储另存为**对话框中的**另存为类型**，选择**小型转储**或**附带堆信息的小型转储**（默认值）。
+
+1. 浏览到的路径并选择转储文件的名称，然后选择**保存**。 
+
+>[!NOTE]
+>可以使用支持 Windows 小型转储格式的任何程序创建转储文件。 例如， **Procdump**从命令行实用工具[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default)可以创建基于触发器或按需进程故障转储文件。 请参阅[要求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)有关使用其他工具创建转储文件的信息。
 
 ##  <a name="BKMK_Open_a_dump_file"></a> 打开转储文件
 
-1.  在 Visual Studio 中，选择**文件**，**打开**，**文件**。
+1. 在 Visual Studio 中，选择**文件** > **打开** > **文件**。
 
-2.  在中**打开的文件**对话框框中，找到并选择转储文件。 它通常具有 .dmp 扩展名。 然后选择**确定**。
+1. 在中**打开的文件**对话框框中，找到并选择转储文件。 它通常具有 *.dmp*扩展。 选择“确定”。
 
-3.  **转储文件摘要**窗口会显示。 在该窗口中，你可以查看转储文件的调试摘要信息、设置符号路径、启动调试以及将摘要信息复制到剪贴板中。
+   **小型转储文件摘要**窗口显示摘要和模块的信息的转储文件和操作可能需要。
 
-     ![小型转储摘要页](../debugger/media/dbg_dump_summarypage.png "DBG_DUMP_SummaryPage")
+   ![小型转储摘要页](../debugger/media/dbg_dump_summarypage.png "小型转储摘要页")
 
-4.  若要开始调试，请转到**操作**部分，然后选择**使用仅限托管调试**，**调试仅限本机**或**混合使用调试**.
+1. 下**操作**:
+   - 若要设置正在加载位置的符号，请选择**设置符号路径**。
+   - 若要开始调试，请选择**调试仅限托管**，**调试仅限本机**，**使用混合调试**，或**使用托管内存调试**。
 
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 查找二进制文件、 符号 (.pdb) 文件和源文件
- 若要使用 Visual Studio 的完整功能来调试转储文件，则需要访问以下文件：
+##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 查找.exe、.pdb、 和源文件
 
--   为其执行转储的 .exe 文件和转储过程中使用的其他二进制文件（DLL 等）。
+若要使用完整的调试转储文件，按功能 Visual Studio 需要：
 
-     如果要调试带有堆数据的转储，则 Visual Studio 可以处理某些模块缺少二进制文件的情况，但是它必须具有足够多的模块的二进制文件才能生成有效的调用堆栈。 Visual Studio 将本机模块包含在带有堆的转储文件中。
+- *.Exe*创建转储时，文件和转储过程使用其他二进制文件 （Dll 等）。
+- 符号 (*.pdb*) 文件，以 *.exe*和其他二进制文件。
+- *.Exe*并 *.pdb*完全匹配的版本和生成处的文件的文件转储创建。
+- 相关模块的源代码文件。 如果找不到源文件，可以使用模块的反汇编。
 
--   .exe 的符号 (.pdb) 文件以及其他二进制文件。
+如果转储堆数据，Visual Studio 可以处理某些模块缺少二进制文件，但它必须具有足够多的模块来生成有效的调用堆栈的二进制文件。 
 
--   与你相关的模块的源文件。
+### <a name="search-paths-for-exe-files"></a>.Exe 文件的搜索路径
 
-     可执行文件和 .pdb 文件必须与创建转储时使用的文件的版本和内部版本完全匹配。
+Visual Studio 会自动搜索这些位置 *.exe*文件不包含在转储文件中：
 
-     可以使用模块的反汇编，如果找不到源文件，调试
+1. 包含转储文件的文件夹。
+2. 模块路径的转储文件指定，这是收集转储的计算机上的模块路径。
+3. 中指定的符号路径**工具**(或**调试**) >**选项** > **调试** >  **符号**。 此外可以打开**符号**页上，从**操作**窗格**转储文件摘要**窗口。 在此页上，可以添加要搜索的多个位置。
 
- **可执行文件的默认搜索路径**
+### <a name="use-the-no-binary-no-symbols-or-no-source-found-pages"></a>使用无二进制、 无符号或未找到源页
 
- Visual Studio 会自动搜索可执行文件的转储文件中不包括这些位置：
-
-1.  包含转储文件的目录。
-
-2.  转储文件中指定的模块的路径。 这是收集转储的计算机上的模块路径。
-
-3.  中指定的符号路径**调试**，**选项**，**符号**页上的 Visual Studio**工具**，**选项**对话框。 你可以在此页上添加更多要搜索的位置。
-
- **使用无二进制 > 符号 > 源页**
-
- 如果 Visual Studio 找不到所需调试转储中的模块的文件，它将显示相应的页 (**未找到二进制**，**未找到符号**，或**未找到源**)。 这些页面提供了有关问题原因的详细信息，并提供了可帮助你识别文件的正确位置的操作链接。 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
+如果 Visual Studio 找不到这些文件需要调试转储中的模块，它会显示**未找到二进制**，**未找到符号**，或**未找到源**页。 这些页面提供原因有关的问题的详细的信息，并提供操作链接，可帮助你找到的文件。 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
 ## <a name="see-also"></a>请参阅
 
-- [实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)
+- [在实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

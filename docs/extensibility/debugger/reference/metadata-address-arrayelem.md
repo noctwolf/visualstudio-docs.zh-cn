@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_ARRAYELEM |Microsoft 文档
+title: METADATA_ADDRESS_ARRAYELEM |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e222adcd64457a9294a257b64f70695b9f36060
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3ab973f1f3389d6a861a0629dae3e2eb7f1b88f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926537"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
-此结构表示数组元素在数组中。  
+此结构表示一个数组中的数组元素。  
   
 ## <a name="syntax"></a>语法  
   
@@ -48,7 +48,7 @@ public struct METADATA_ADDRESS_ARRAYELEM {
  [C + +]`_mdToken`是`typedef`适用于 32 位`int`。  
   
  dwIndex  
- 在该数组中此元素的索引。  
+ 此元素的数组中的索引。  
   
 ## <a name="remarks"></a>备注  
  此结构是中的联合的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)结构时`dwKind`字段`DEBUG_ADDRESS_UNION`结构设置为`ADDRESS_KIND_ARRAYELEM`(从值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举）。  
@@ -60,7 +60,7 @@ public struct METADATA_ADDRESS_ARRAYELEM {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

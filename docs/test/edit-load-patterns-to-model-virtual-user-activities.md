@@ -1,5 +1,5 @@
 ---
-title: 用于 Visual Studio 中负载测试的负载模式
+title: 负载测试的负载模式
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a15f771d2afa2b5c8e02eed99b3168a537365a3f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179435"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895296"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>编辑负载模式以便为虚拟用户活动建模
 
@@ -27,6 +27,8 @@ ms.locfileid: "39179435"
 
 > [!NOTE]
 > 在所有负载模式中，Visual Studio 生成的负载是虚拟用户的模拟负载。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-patterns"></a>负载模式
 
@@ -56,32 +58,32 @@ ms.locfileid: "39179435"
 
  分级负载模式可用于在负载测试运行时增加服务器上的负载，这样你就能够看到性能如何随着用户负载的增加而发生变化。 例如，若要查看用户负载增加到 2000 个用户时服务器的性能如何，你可以使用具有以下属性的分级负载模式来运行一个 10 小时的负载测试：
 
--   初始用户计数：100
+- 初始用户计数：100
 
--   最大用户计数：2000
+- 最大用户计数：2000
 
--   单步持续时间(秒)：1,800
+- 单步持续时间(秒)：1,800
 
--   单步负载增加时间(秒)：20
+- 单步负载增加时间(秒)：20
 
--   单步用户计数：100
+- 单步用户计数：100
 
- 这些设置可使负载测试在 100、200、300 直至 2,000 个用户的用户负载下运行 30 分钟（1,800 秒）。 请特别注意“单步负载增加时间”属性，因为在这些属性中，它是“新建负载测试向导”中唯一不可选的属性。 通过此属性，可从某一步逐渐（而不是一下）增加到下一步（例如，从 100 个用户增加到 200 个用户）。 在此示例中，用户负载将在 20 秒内从 100 个用户增加到 200 用户，即每秒增加 5 个用户。 有关详细信息，请参阅[如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)。
+  这些设置可使负载测试在 100、200、300 直至 2,000 个用户的用户负载下运行 30 分钟（1,800 秒）。 请特别注意“单步负载增加时间”属性，因为在这些属性中，它是“新建负载测试向导”中唯一不可选的属性。 通过此属性，可从某一步逐渐（而不是一下）增加到下一步（例如，从 100 个用户增加到 200 个用户）。 在此示例中，用户负载将在 20 秒内从 100 个用户增加到 200 用户，即每秒增加 5 个用户。 有关详细信息，请参阅[如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)。
 
 ### <a name="goal-based"></a>基于目标的负载模式
 
  基于目标的负载模式与单步模式相似，但它基于相对于定期用户负载调整的性能计数器阈值来调整用户负载。 基于目标的负载可用于多种不同的用途：
 
--   最大化代理的输出：衡量代理上的关键限制指标，以使代理的输出最大化。 通常是 CPU，但也可以是内存。
+- 最大化代理的输出：衡量代理上的关键限制指标，以使代理的输出最大化。 通常是 CPU，但也可以是内存。
 
--   在目标服务器上达到某个目标资源级别（通常是 CPU），然后衡量该级别的吞吐量。 这样，在服务器上的资源使用级别一致时，就可以进行吞吐量的运行间比较。
+- 在目标服务器上达到某个目标资源级别（通常是 CPU），然后衡量该级别的吞吐量。 这样，在服务器上的资源使用级别一致时，就可以进行吞吐量的运行间比较。
 
--   达到服务器上的目标吞吐量级别。
+- 达到服务器上的目标吞吐量级别。
 
- 下表中，示例演示具有以下属性设置的基于目标的模式：
+  下表中，示例演示具有以下属性设置的基于目标的模式：
 
 |属性组|属性|“值”|
-|--------------------|--------------|-----------|
+|-|--------------|-|
 |性能计数器|类别|处理器|
 |性能计数器|计算机|ContosoServer1|
 |性能计数器|计数器|处理器时间百分比(%)|
@@ -109,7 +111,7 @@ ms.locfileid: "39179435"
 ## <a name="tasks"></a>任务
 
 |任务|相关主题|
-|-----------|-----------------------|
+|-|-----------------------|
 |为负载测试指定初始负载模式：使用“新建负载测试向导”创建负载测试时，要选择一种负载模式。|-   [更改负载模式](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |为负载测试编辑负载模式：创建负载测试后，可以在“负载测试编辑器”中编辑负载模式。|-   [如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |指定负载测试方案中的虚拟用户是否应包含 Web 缓存数据：可以更改“新用户的百分比”属性以影响负载测试模拟由虚拟用户的 Web 浏览器执行的 Web 缓存的方式。|-   [如何：指定使用 Web 缓存数据的虚拟用户的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|

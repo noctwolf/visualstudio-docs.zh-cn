@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234980"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895426"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用负载测试分析器分析负载测试中的阈值规则冲突
 
@@ -30,12 +30,14 @@ ms.locfileid: "36234980"
 
 如果发生任何冲突，负载测试分析器的状态栏上将显示“阈值冲突”超链接，并指明发生的冲突数量。 选择超链接将显示阈值冲突表。 还可以在“计数器”窗口和关系图上查看阈值冲突。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## <a name="view-threshold-violations-in-the-table"></a>在表格中查看阈值冲突
 
  阈值冲突表显示前 1,000 个冲突。 下面举例说明了一个表：
 
 |列|描述|默认情况下可见|
-|------------|-----------------|------------------------|
+|-|-|-|
 |时间|负载测试过程中发生冲突的时间。|是|
 |计算机|发生冲突的测试计算机的名称。 **注意：** 在远程测试机组上运行负载测试时，这一项很重要。|是|
 |类别|发生冲突的性能计数器的类别。|是|
@@ -67,8 +69,6 @@ ms.locfileid: "36234980"
  也可以在关系图上显示阈值冲突。 阈值图标显示在关系图上发生阈值冲突的数据点旁边。
 
  在计数器树中，阈值冲突的图标从特定计数器节点向上传播到根节点。 这会提醒你注意可能由于树未展开而在树中不可见的计数器上发生的冲突。
-
- 有关详细信息，请参阅[在关系图视图和表视图中使用计数器面板](../test/counters-panel-in-load-test-analyzer.md)。
 
 ## <a name="view-threshold-violations-on-the-graph"></a>在关系图上查看阈值冲突
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::CreateStringObjectWithLength |Microsoft 文档
+title: IDebugFunctionObject2::CreateStringObjectWithLength |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01accfb86161880be3d155a0f1751ebd9ac0a5a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e21d89c7c674cd3e7056b5244b7d8b50ae18db6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928212"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
 创建具有指定的长度的字符串对象。  
@@ -50,10 +50,10 @@ int CreateStringObjectWithLength (
  [in]以字节为单位的字符串的长度。  
   
  `ppObject`  
- [out]返回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示新创建的字符串对象的对象。  
+ [out]返回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)对象，表示新创建的字符串对象。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

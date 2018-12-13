@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的负载测试对测试控制器和测试代理的需求
+title: 负载测试对测试控制器和测试代理的需求
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8a5cc1f58e0cbdb59458311a1b9a4390bf69bbff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380800"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051442"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>负载测试对测试控制器和测试代理的要求
 
 包括单元测试、Web 性能测试、负载测试和手动测试在内的多种测试类型集成到了 Visual Studio 中。 Visual Studio 使 Visual Studio 应用程序生命周期管理用户可以使用测试控制器和一个或多个代理在远程计算机上运行测试。 请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="hardware-and-software-requirements"></a>硬件和软件要求
 
@@ -31,7 +33,7 @@ ms.locfileid: "39380800"
 下表演示对部署测试控制器和测试代理建议的硬件需求。
 
 |**配置**|**组件**|**CPU**|**HD**|**内存**|
-|-----------------------|-------------------|-------------|------------|----------------|
+|-|-------------------|-|------------|-|
 |少于 500 个虚拟用户|测试代理|2.6 GHz|10 GB|2 GB|
 |少于 1000 个虚拟用户|测试代理|双处理器，2.6 GHz|10 GB|2 GB|
 |N x 1000 个虚拟用户|测试代理|扩展到 N 个代理，每个代理都具有双处理器 2.6 Ghz|10GB|2GB|

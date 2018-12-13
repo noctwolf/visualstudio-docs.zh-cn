@@ -1,5 +1,5 @@
 ---
-title: 'Idiatable:: Get_count |Microsoft 文档'
+title: 'Idiatable:: Get_count |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b5e10c0acddd704215d87d61a8f050bf86dbe19
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 93a5d2002a68c7b11a6a4e81b6dbd04114aa8c2c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469570"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816561"
 ---
 # <a name="idiatablegetcount"></a>IDiaTable::get_Count
 检索表中的项的数目。  
@@ -34,7 +34,7 @@ HRESULT get_Count (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回表中的项的数目。  
+ [out]返回表中的项数。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

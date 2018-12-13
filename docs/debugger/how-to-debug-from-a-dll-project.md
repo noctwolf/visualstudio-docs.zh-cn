@@ -1,7 +1,7 @@
 ---
-title: 如何： 从 DLL 项目调试 |Microsoft 文档
+title: 如何： 从 DLL 项目进行调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 05/24/2017
+ms.date: 10/10/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -20,67 +20,68 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63581cee8816e72492a67a0981a9077b9fec2935
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e006bbd27acc0fa88cfee1b22cb435acba1e282e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475806"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388249"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>如何： 从 DLL 项目在 Visual Studio 中调试
-调试 DLL 项目的一种方法是在 DLL 项目的项目属性中指定调用应用程序，然后你可以开始调试从 DLL 项目本身。 要使用此方法，应用程序必须调用该 DLL，并且该 DLL 必须在应用程序能够找到它的位置 （否则为应用程序可能找到 DLL 的不同版本并将其加载相反，且它不会命中断点）。 调试 Dll 的其他方法，请参阅[调试 DLL 项目](../debugger/debugging-dll-projects.md)。
-  
-如果本机代码调用了托管 DLL，而你想对这两者进行调试，则可以在项目属性中指定此项。 有关更多信息，请参见 [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md)。   
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>如何： 从 Visual Studio 中的 DLL 项目进行调试 (C#，c + +、 Visual Basic 中， F#)
 
-C++ 属性页的布局和内容与 C# 和 Visual Basic 属性页的不同。 
+调试 DLL 项目的一种方法是在 DLL 项目属性中指定调用应用。 然后可以开始调试 DLL 项目本身中。 若要运行此方法，该应用必须调用同一个 DLL 中与你配置的一个相同的位置。 如果应用程序查找和加载不同版本的 DLL，该版本将不包含您的断点。 调试 Dll 的其他方法，请参阅[调试 DLL 项目](../debugger/debugging-dll-projects.md)。
   
-### <a name="to-specify-the-calling-application-in-a-c-project"></a>在 C++ 项目中指定调用应用程序  
-  
-1.  右键单击中的项目节点**解决方案资源管理器**和选择**属性**。  
-  
-2.  请确保**配置**窗口顶部的字段设置为**调试**。 
+如果托管的应用程序调用本机 DLL 或本机应用调用的托管的 DLL，您可以调试 DLL 和调用应用。 有关详细信息，请参见[如何：在混合模式下调试](../debugger/how-to-debug-in-mixed-mode.md)。   
 
-    A**调试**配置，才能使用此方法。 
-  
-3.  转到**配置属性 > 调试**。  
-  
-4.  在**要启动的调试器**列表中，选择**本地 Windows 调试器**或**远程 Windows 调试器**。  
-  
-5.  在**命令**或**远程命令**框中，添加调用应用程序 （例如.exe 文件） 的完全限定路径名称。
+本机和托管 DLL 项目具有不同的设置以指定调用应用程序。 
 
-    ![调试属性窗口](../debugger/media/dbg-debugging-properties-dll.png "DebuggingPropertiesWindow")  
+## <a name="specify-a-calling-app-in-a-native-dll-project"></a>本机 DLL 项目中指定调用应用程序  
   
-6.  添加到任何必要的程序参数**命令参数**框。  
+1. 选择中的 c + + DLL 项目**解决方案资源管理器**。 选择**属性**图标，按**Alt**+**Enter**，或右键单击，然后选择**属性**。
+   
+1. 在中**\<项目 > 属性页**对话框框中，请确保**配置**窗口顶部的字段设置为**调试**。 
+   
+1. 选择**配置属性** > **调试**。  
+   
+1. 在中**要启动的调试器**列表中，选择**本地 Windows 调试器**或**远程 Windows 调试器**。  
+   
+1. 在中**命令**或**远程命令**框中，添加的完全限定的路径和文件名调用应用程序，如 *.exe*文件。
+   
+   ![调试属性窗口](../debugger/media/dbg-debugging-properties-dll.png "调试属性窗口")  
+   
+1. 向“命令参数”框添加任何必要的程序参数。  
+   
+1. 选择“确定”。
+
+## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>指定调用应用程序中托管的 DLL 项目  
   
-### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 项目中指定调用应用程序  
-  
-1.  右键单击中的项目节点**解决方案资源管理器**和选择**属性**，然后选择**调试**选项卡。
+1. 选择C#或 Visual Basic DLL 项目中的**解决方案资源管理器**。 选择**属性**图标，按**Alt**+**Enter**，或右键单击，然后选择**属性**。
+   
+1. 确保窗口顶部的“配置”字段设置为“调试”。
+   
+1. 下**启动操作**:
+   
+   - 对于.NET Framework Dll，请选择**启动外部程序**，并添加完全限定的路径和调用应用的名称。
+     
+   - 或者，选择**使用 URL 启动浏览器**并填充本地 ASP.NET 应用的 URL。 
+   
+   - 对于.NET Core Dll**调试**属性页是不同。 选择**可执行文件**从**启动**下拉列表中，然后添加完全限定的路径和名称的调用应用程序中**可执行文件**字段。 
+   
+1. 添加在任何必要的命令行自变量**命令行参数**或**应用程序参数**字段。
+   
+   ![C#调试属性窗口](../debugger/media/dbg-debugging-properties-dll-csharp.png " C#调试属性窗口") 
+   
+1. 使用**文件** > **保存选定项**或**Ctrl**+**S**以保存更改。
 
-2.  请确保**配置**窗口顶部的字段设置为**调试**。
+## <a name="debug-from-the-dll-project"></a>从 DLL 项目进行调试  
+ 
+1. 在 DLL 项目中设置断点。
 
-3.  (.NET framework)选择**启动外部程序**，并添加调用应用程序的完全限定路径名称。
+1. 右键单击 DLL 项目并选择**设为启动项目**。 
 
-4.  （.NET Core）选择**可执行文件**从**启动**列表，并将调用应用程序中的完全限定路径名称**可执行文件**字段。 
-  
-     如果你需要添加外部程序的命令行参数，则添加它们**命令行自变量**(或**应用程序自变量**) 字段。
+1. 请确保**解决方案配置**字段设置为**调试**。 按**F5**，单击绿色**启动**箭头或选择**调试** > **开始调试**。
 
-    ![调试属性窗口](../debugger/media/dbg-debugging-properties-dll-csharp.png "DebuggingPropertiesWindow") 
-
-5.  如果需要你还可以调用一个应用程序作为 URL。 (如果你正在调试由本地 ASP.NET 应用程序使用的托管 DLL，则可能想要执行此操作。)  
-  
-     下**启动操作**，选择**使用 URL 启动浏览器：** 单选按钮，并填写 URL。
-  
-### <a name="to-start-debugging-from-the-dll-project"></a>从 DLL 项目启动调试  
-  
-1.  在 DLL 项目中设置断点。 
-
-2.  右键单击 DLL 项目并选择**设为启动项目**。 
-
-    (此外，请确保**解决方案配置**字段仍设置为**调试**。)   
-  
-3.  开始调试 (按 F5，单击绿色箭头，或单击**调试 > 启动调试**)。
-
-    在您的 DLL 中，将命中断点。 如果你不能够命中断点，请确保您的 DLL 输出 (默认情况下， **project\Debug**文件夹) 处于位置调用应用程序应该能够找到它。
+如果调试不会命中断点，请确保您的 DLL 输出 (默认情况下*\<项目 > \Debug*文件夹) 是调用应用程序调用的位置。
   
 ## <a name="see-also"></a>请参阅  
  [调试 DLL 项目](../debugger/debugging-dll-projects.md)   

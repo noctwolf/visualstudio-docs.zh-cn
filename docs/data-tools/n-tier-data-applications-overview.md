@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e386c052b43ee62ddde0516fa203298fe1babe5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3f9cf8c6a75e5f2a517931bf0fd858ea8f8f860c
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089025"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281740"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 层数据应用程序概述
 *N 层*数据应用程序是数据应用程序，分为多个*层*。 也称为"分布式应用程序"和"多层应用程序"，n 层应用程序分离到相互独立的层的客户端和服务器之间分布处理。 当开发访问数据的应用程序时，应清楚地区分组成应用程序的各个层。
@@ -64,7 +64,7 @@ Visual Studio 包含多种功能，可帮助开发人员创建 n 层应用程序
 中间层通常可以通过使用数据连接连接到数据层。 此数据连接通常存储在数据访问组件。
 
 ## <a name="data-tier"></a>数据层
-*数据层*基本上是将应用程序的数据存储在服务器 (例如，运行的服务器[!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)])。
+*数据层*基本上是将应用程序的数据存储 （例如，运行 SQL Server 的服务器） 的服务器。
 
 下图显示了功能和技术，可在 Visual Studio 中以及其中它们可能适合为 n 层应用程序的数据层。
 

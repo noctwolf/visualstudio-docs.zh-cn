@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f35779debdad5a43781b2fe7221085f3fe0e1010
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cea6e61a1afd734ca0ae52a704a2d881371f5817
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42636200"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882582"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>演练： 为 PowerPoint 创建第一个 VSTO 外接程序
   本演练演示如何为 Microsoft Office PowerPoint 创建 VSTO 外接程序中。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的演示文稿无关。 有关详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -32,15 +32,15 @@ ms.locfileid: "42636200"
   
  本演练阐释了以下任务：  
   
--   创建 PowerPoint 的 PowerPoint VSTO 外接程序。  
+- 创建 PowerPoint 的 PowerPoint VSTO 外接程序。  
   
--   编写使用 PowerPoint 对象模型来将文本框添加到每张新建幻灯片的代码。  
+- 编写使用 PowerPoint 对象模型来将文本框添加到每张新建幻灯片的代码。  
   
--   生成并运行项目，以对其进行测试。  
+- 生成并运行项目，以对其进行测试。  
   
--   清理项目，使 VSTO 外接程序在开发计算机上不再自动运行。  
+- 清理项目，使 VSTO 外接程序在开发计算机上不再自动运行。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -78,18 +78,18 @@ ms.locfileid: "42636200"
   
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>若要将文本框添加到每张新建幻灯片中  
   
-1.  在 ThisAddIn 代码文件中，将下面的代码添加到 `ThisAddIn` 类中。 此代码定义的事件处理程序[Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))事件的<xref:Microsoft.Office.Interop.PowerPoint.Application>对象。  
+1. 在 ThisAddIn 代码文件中，将下面的代码添加到 `ThisAddIn` 类中。 此代码定义的事件处理程序[Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))事件的<xref:Microsoft.Office.Interop.PowerPoint.Application>对象。  
   
-     当用户将新的幻灯片添加到活动演示文稿中时，此事件处理程序会将文本框添加到该新幻灯片的顶部，并添加文本到文本框中。  
+    当用户将新的幻灯片添加到活动演示文稿中时，此事件处理程序会将文本框添加到该新幻灯片的顶部，并添加文本到文本框中。  
   
-     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  如果你使用的是 C#，请将以下代码添加到 `ThisAddIn_Startup` 事件处理程序中。 连接所需的此代码`Application_PresentationNewSlide`事件处理程序替换[Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))事件。  
+2. 如果你使用的是 C#，请将以下代码添加到 `ThisAddIn_Startup` 事件处理程序中。 连接所需的此代码`Application_PresentationNewSlide`事件处理程序替换[Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))事件。  
   
-     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
   
- 若要修改每张新建幻灯片，之前的代码示例需使用以下对象：  
+   若要修改每张新建幻灯片，之前的代码示例需使用以下对象：  
   
 -   `Application` 类的 `ThisAddIn` 字段。 `Application` 字段返回一个 <xref:Microsoft.Office.Interop.PowerPoint.Application> 对象，该对象表示 PowerPoint 的当前实例。  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortPicker::DisplayPortPicker |Microsoft 文档
+title: IDebugPortPicker::DisplayPortPicker |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb43ac1bdf173de8e7224f154ecb57cca53abd8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d05f49f8fa91a0b193be10169a4dcebcd561f92d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113229"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910571"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
-显示指定的对话框中，用户可以选择一个端口。  
+显示指定的对话框，允许用户选择的端口。  
   
 ## <a name="syntax"></a>语法  
   
@@ -50,5 +50,5 @@ public int DisplayPortPicker(
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 返回值`S_FALSE`(或返回值`S_OK`与`BSTR`设置为`NULL`) 指示用户单击**取消**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

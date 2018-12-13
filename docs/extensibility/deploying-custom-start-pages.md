@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3002a18e4575ab57b77d90c4b7d94662683cf9d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 81b4fb4938c1b87f4a9ca31cdc6035c4c6f124d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497922"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926457"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自定义起始页
 
@@ -42,17 +42,17 @@ ms.locfileid: "39497922"
 
  若要创建 VSIX 部署而无需使用起始页项目模板，请先创建 *.vsix*这两种方式之一中的启动页的文件：
 
--   通过将自定义起始页文件添加到一个空的 VSIX 项目。 有关详细信息，请参阅[VSIX 项目模板](../extensibility/vsix-project-template.md)。
+- 通过将自定义起始页文件添加到一个空的 VSIX 项目。 有关详细信息，请参阅[VSIX 项目模板](../extensibility/vsix-project-template.md)。
 
--   通过手动创建 *.vsix*文件。 若要创建 *.vsix*手动文件：
+- 通过手动创建 *.vsix*文件。 若要创建 *.vsix*手动文件：
 
-    1.  创建*extension.vsixmanifest*文件并 *[Content_Types].xml*的新文件夹中的文件。 有关详细信息，请参阅[VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)。
+  1.  创建*extension.vsixmanifest*文件并 *[Content_Types].xml*的新文件夹中的文件。 有关详细信息，请参阅[VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)。
 
-    2.  在 Windows 资源管理器，右键单击包含两个 XML 文件的文件夹，单击**发送到**，然后单击压缩 (zipped) 文件夹。 重命名生成 *.zip*的文件*Filename.vsix*，其中 Filename 是用于安装包的可再发行文件的名称。
+  2.  在 Windows 资源管理器，右键单击包含两个 XML 文件的文件夹，单击**发送到**，然后单击压缩 (zipped) 文件夹。 重命名生成 *.zip*的文件*Filename.vsix*，其中 Filename 是用于安装包的可再发行文件的名称。
 
- Visual studio 能够识别启动页上，`Content Element`必须包含的 VSIX 清单`CustomExtension Element`具有`Type`属性设置为`"StartPage"`。 使用 VSIX 部署安装起始页扩展将出现在**自定义起始页**上列出**启动**选项页中以 **[安装的扩展]***扩展插件名称*。
+  Visual studio 能够识别启动页上，`Content Element`必须包含的 VSIX 清单`CustomExtension Element`具有`Type`属性设置为`"StartPage"`。 使用 VSIX 部署安装起始页扩展将出现在**自定义起始页**上列出**启动**选项页中以 **[安装的扩展]***扩展插件名称*。
 
- 如果起始页包中包含的程序集，必须添加绑定路径注册，以便它们可用于 Visual Studio 将启动。 若要执行此操作，请确保您的包，包括 *.pkgdef*包含以下信息的文件。
+  如果起始页包中包含的程序集，必须添加绑定路径注册，以便它们可用于 Visual Studio 将启动。 若要执行此操作，请确保您的包，包括 *.pkgdef*包含以下信息的文件。
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
@@ -85,7 +85,7 @@ ms.locfileid: "39497922"
      这将告知 Visual Studio 中新的起始页位置进行查找。
 
 ## <a name="file-copy-deployment"></a>文件复制部署
- 不需要创建 *.vsix*文件以部署自定义起始页。 相反，您可以将复制标记和直接在用户的支持文件 * \StartPages\*文件夹。 **自定义起始页**上列出**启动**选项页面列出了每个 *.xaml*路径以及该文件夹中的文件 — 例如， *%USERPROFILE%\My Documents\Visual Studio {version} \StartPages\\{文件名}.xaml*。 如果你的起始页包含对专用程序集的引用，必须将它们复制并将其粘贴 * \PrivateAssemblies\*文件夹。
+ 不需要创建 *.vsix*文件以部署自定义起始页。 相反，您可以将复制标记和直接在用户的支持文件<em>\StartPages\*文件夹。**自定义起始页</em>* 上列出**启动**选项页面列出了每个 *.xaml*路径以及该文件夹中的文件 — 例如， *%USERPROFILE%\My Documents\Visual Studio {version} \StartPages\\{文件名}.xaml*。 如果你的起始页包含对专用程序集的引用，必须将它们复制并将其粘贴 * \PrivateAssemblies\*文件夹。
 
  分发而无需打包在创建起始页 *.vsix*文件中，我们建议使用基本的文件的复制策略，例如，批处理脚本，或任何其他部署技术，它允许您将这些文件置于所需的目录。
 

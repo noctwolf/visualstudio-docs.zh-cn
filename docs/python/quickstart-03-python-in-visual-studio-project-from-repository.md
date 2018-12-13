@@ -1,7 +1,7 @@
 ---
 title: 快速入门 - 克隆 Python 代码存储库
 description: 在此快速入门教程中，将使用 Visual Studio 团队资源管理器进行 Python koans 存储库克隆，从而在 Visual Studio 中创建 Python 项目。
-ms.date: 06/26/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636819"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281684"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入门：在 Visual Studio 中克隆 Python 代码存储库
 
@@ -30,9 +30,9 @@ ms.locfileid: "39636819"
 
 1. 启动 Visual Studio。
 
-1. 选择“视图” > “团队资源管理器”，打开“团队资源管理器”窗口，可在该窗口中连接到 GitHub 或 Visual Studio Team Services，或者克隆存储库。 （如果下方未显示“连接”页，请选择顶部工具栏的“插入”图标，跳转到该页面。）
+1. 选择“视图” > “团队资源管理器”，打开“团队资源管理器”窗口，可在该窗口中连接到 GitHub 或 Azure Repos，或者克隆存储库。 （如果下方未显示“连接”页，请选择顶部工具栏的“插入”图标，跳转到该页面。）
 
-    ![显示 Visual Studio Team Services、GitHub 并克隆存储库的“团队资源管理器”窗口](media/team-explorer.png)
+    ![显示 Azure Repos、GitHub 并克隆存储库的“团队资源管理器”窗口](media/team-explorer.png)
 
 1. 在“本地 Git 存储库”下，选择“克隆”命令，然后在 URL 字段中输入 `https://github.com/gregmalcolm/python_koans`，输入克隆文件的文件夹，再选择“克隆”按钮。
 

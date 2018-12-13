@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetProgramName |Microsoft 文档
+title: IDebugProgramNode2::GetProgramName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2fd9fd883b1416d19f6525800723572e2384798
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b76c98b7178d89093d59532d53b91ce2ae25b883
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116056"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928901"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 获取该程序的名称。  
@@ -47,10 +47,10 @@ int GetProgramName (
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 程序的名称不与该程序的路径相同，均，但程序的名称可能是此类路径的一部分。  
+ 程序名称不与程序的路径相同的功能，但程序的名称可能是此类路径的一部分。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于简单`CProgram`实现对象[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)接口。 `MakeBstr`函数分配为 BSTR 的指定字符串的副本。  
+ 下面的示例演示如何实现此方法对于简单`CProgram`对象，它实现[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)接口。 `MakeBstr`函数分配的 BSTR 作为指定的字符串副本。  
   
 ```cpp  
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {    
@@ -63,5 +63,5 @@ HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
 }    
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

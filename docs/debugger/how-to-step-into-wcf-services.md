@@ -1,5 +1,5 @@
 ---
-title: 如何： 单步执行 WCF 服务 |Microsoft 文档
+title: 如何： 单步执行 WCF 服务 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,29 +18,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c526490ec9a4b6fa76d485aa86e53b78efcead1e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: cad65b893867a18133bbf9492a1c1786b24a81ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472609"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912157"
 ---
 # <a name="how-to-step-into-wcf-services"></a>如何：单步执行 WCF 服务
 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中，可以单步执行 WCF 服务。 如果 WCF 服务与客户端位于同一 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中，则可以命中 WCF 服务内部的断点。  
   
- 若要使单步执行正常运行，必须在 app.config 或 Web.config 文件中启用调试。 有关如何启用调试和单步执行到 WCF 服务的限制，请参阅[WCF 调试的限制](../debugger/limitations-on-wcf-debugging.md)。  
+ 若要使单步执行正常运行，必须在 app.config 或 Web.config 文件中启用调试。 有关如何启用调试并单步执行 WCF 服务的限制，请参阅[WCF 调试的限制](../debugger/limitations-on-wcf-debugging.md)。  
   
 ### <a name="to-step-into-a-wcf-service"></a>单步执行 WCF 服务  
   
-1.  创建一个同时包含 WCF 客户端和 WCF 服务项目的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案。  
+1. 创建一个同时包含 WCF 客户端和 WCF 服务项目的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案。  
   
-2.  在解决方案资源管理器，右键单击 WCF 客户端项目，然后单击**设为启动项目**。  
+2. 在解决方案资源管理器，右键单击 WCF 客户端项目，然后单击**设为启动项目**。  
   
-3.  在 app.config 或 web.config 文件中启用调试。 有关详细信息，请参阅[WCF 调试的限制](../debugger/limitations-on-wcf-debugging.md)。  
+3. 在 app.config 或 web.config 文件中启用调试。 有关详细信息，请参阅[WCF 调试的限制](../debugger/limitations-on-wcf-debugging.md)。  
   
-4.  在客户端项目中需要开始单步执行的位置设置断点。 通常情况下，断点设置在 WCF 服务调用之前。  
+4. 在客户端项目中需要开始单步执行的位置设置断点。 通常情况下，断点设置在 WCF 服务调用之前。  
   
-5.  运行到断点，然后开始单步执行。 调试程序将自动在服务中单步执行。  
+5. 运行到断点，然后开始单步执行。 调试程序将自动在服务中单步执行。  
   
 ## <a name="see-also"></a>请参阅  
  [调试 WCF 服务](../debugger/debugging-wcf-services.md)   

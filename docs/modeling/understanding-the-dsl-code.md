@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2e5e2ee79d72d398ac72d3d087156c296aa9e7b2
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813311"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
-域特定语言 (DSL) 解决方案将生成可用于在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中读取和更新 DSL 实例的 API。 此 API 将定义在从 DSL 定义生成的代码中。 本主题介绍了生成的 API。
+域特定语言 (DSL) 解决方案将生成一个 API，可用于读取和更新 Visual Studio 中的 dsl 的实例。 此 API 将定义在从 DSL 定义生成的代码中。 本主题介绍了生成的 API。
 
 ## <a name="the-example-solution-component-diagrams"></a>示例解决方案：组件图
  若要创建解决方案的大部分本主题中示例的源，创建从 DSL**组件模型**解决方案模板。 这是在创建新 DSL 解决方案时显示的标准模板之一。
@@ -32,7 +32,7 @@ ms.locfileid: "39567205"
  ![组件及相互连接的端口](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>DSL 解决方案的结构
- **Dsl**项目定义用于 DSL 的 API。 **DslPackage**项目定义如何与集成[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 还可添加你自己的项目，这些项目还可包含从模型生成的代码。
+ **Dsl**项目定义用于 DSL 的 API。 **DslPackage**项目定义与 Visual Studio 的集成。 还可添加你自己的项目，这些项目还可包含从模型生成的代码。
 
 ### <a name="the-code-directories"></a>代码指令
  从生成中每个项目的代码大部分**Dsl\DslDefinition.dsl**。 生成的代码处于**生成的代码**文件夹。 若要查看生成的文件，请单击 **[+]** 生成旁边 **.tt**文件。
@@ -53,7 +53,7 @@ ms.locfileid: "39567205"
 
      例如，如果您设置**具有自定义构造函数**域类的选项，然后生成解决方案，你会看到错误消息。 在双击其中一个错误消息时，你将在生成的代码中看到注释，阐释了你的自定义代码应提供的内容。
 
--   编写你自己的文本模板以生成特定于应用程序的代码。 可使用包含文件来共享许多项目通用的模板的各个部分，并可创建 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目模板来设置使用你自己的文件结构初始化的项目。
+-   编写你自己的文本模板以生成特定于应用程序的代码。 您可以使用包含文件来共享许多项目通用的模板的部分，并且可以创建 Visual Studio 项目模板来设置使用你自己的文件结构初始化的项目。
 
 ## <a name="generated-files-in-dsl"></a>DSL 中生成的文件
  以下生成的文件出现在**Dsl**项目。
@@ -110,25 +110,25 @@ ms.locfileid: "39567205"
 
  每个域类包含：
 
--   每个域属性的属性定义和嵌套处理程序类。 可重写 OnValueChanging() 和 OnValueChanged()。 有关详细信息，请参阅[域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。
+- 每个域属性的属性定义和嵌套处理程序类。 可重写 OnValueChanging() 和 OnValueChanged()。 有关详细信息，请参阅[域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。
 
-     在示例 DSL 中，`Comment` 类包含属性 `Text` 和处理程序类 `TextPropertyHandler`。
+   在示例 DSL 中，`Comment` 类包含属性 `Text` 和处理程序类 `TextPropertyHandler`。
 
--   此域类参与的关系的访问器属性。 （没有用于角色属性的嵌套类。）
+- 此域类参与的关系的访问器属性。 （没有用于角色属性的嵌套类。）
 
-     在示例 DSL 中，`Comment` 类具有通过嵌入关系 `ComponentModelHasComments` 访问其父模型的访问器。
+   在示例 DSL 中，`Comment` 类具有通过嵌入关系 `ComponentModelHasComments` 访问其父模型的访问器。
 
--   构造函数。 如果你想要覆盖这些设置，设置**具有自定义构造函数**域类上。
+- 构造函数。 如果你想要覆盖这些设置，设置**具有自定义构造函数**域类上。
 
--   元素组原型 (EGP) 处理程序方法。 这些是必需的如果用户可以*合并*（添加） 到此类的实例上的另一个元素。 通常用户通过从元素工具或另一个形状进行拖动或通过粘贴来执行此操作。
+- 元素组原型 (EGP) 处理程序方法。 这些是必需的如果用户可以*合并*（添加） 到此类的实例上的另一个元素。 通常用户通过从元素工具或另一个形状进行拖动或通过粘贴来执行此操作。
 
-     在示例 DSL 中，“输入端口”或“输出端口”可以合并到“组件”上。 此外，“组件”和“注释”可以合并到模型上。 此
+   在示例 DSL 中，“输入端口”或“输出端口”可以合并到“组件”上。 此外，“组件”和“注释”可以合并到模型上。 此
 
-     “组件”类中的 EGP 处理程序方法允许“组件”接受“端口”，但不接受“注释”。 根模型类中的 EGP 处理程序可接受“注释”和“组件”，但不接受“端口”。
+   “组件”类中的 EGP 处理程序方法允许“组件”接受“端口”，但不接受“注释”。 根模型类中的 EGP 处理程序可接受“注释”和“组件”，但不接受“端口”。
 
- `DomainModel.cs`
+  `DomainModel.cs`
 
- 表示域模型的类。 它派生自 <xref:Microsoft.VisualStudio.Modeling.DomainModel>。
+  表示域模型的类。 它派生自 <xref:Microsoft.VisualStudio.Modeling.DomainModel>。
 
 > [!NOTE]
 >  这与模型的根类不同。
@@ -161,34 +161,34 @@ ms.locfileid: "39567205"
 
  `SerializationHelper.cs`
 
--   用于确保同一名字对象没有引用两个元素的验证方法。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
+- 用于确保同一名字对象没有引用两个元素的验证方法。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
--   SerializationHelper 类，提供了由序列化类共同使用的函数。
+- SerializationHelper 类，提供了由序列化类共同使用的函数。
 
- `Serializer.cs`
+  `Serializer.cs`
 
- 用于每个域类、关系、形状、连接符、关系图和模型的序列化程序类。
+  用于每个域类、关系、形状、连接符、关系图和模型的序列化程序类。
 
- 许多这些类的功能可通过在 DSL 资源管理器中的设置控制**Xml 序列化行为**。
+  许多这些类的功能可通过在 DSL 资源管理器中的设置控制**Xml 序列化行为**。
 
- `Shapes.cs`
+  `Shapes.cs`
 
- 用于 DSL 定义中的每个形状类的类。 形状派生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
+  用于 DSL 定义中的每个形状类的类。 形状派生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
- 若要重写生成的方法与你自己的分部类中的方法，设置**生成双派生**DSL 定义中的连接器。 若要将你自己的代码替换为一个构造函数，设置**具有自定义构造函数**。
+  若要重写生成的方法与你自己的分部类中的方法，设置**生成双派生**DSL 定义中的连接器。 若要将你自己的代码替换为一个构造函数，设置**具有自定义构造函数**。
 
- 若要在运行时使颜色和某些其他样式功能变量，右键单击 DSL 定义关系图上的类，然后指向**公开添加**。
+  若要在运行时使颜色和某些其他样式功能变量，右键单击 DSL 定义关系图上的类，然后指向**公开添加**。
 
- 若要使其他样式功能在运行时可变，请参阅示例 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> 和 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>
+  若要使其他样式功能在运行时可变，请参阅示例 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> 和 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>
 
- `ToolboxHelper.cs`
+  `ToolboxHelper.cs`
 
- 通过将元素组原型安装到元素工具中来设置工具箱。 当用户运行该工具时，这些原型的副本将与目标元素合并。
+  通过将元素组原型安装到元素工具中来设置工具箱。 当用户运行该工具时，这些原型的副本将与目标元素合并。
 
- 可以重写 `CreateElementPrototype()` 来定义用于创建一组多个对象的工具箱项。 例如，你可以定义某个项来表示具有子组件的对象。 更改代码后，重置 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例来清除工具箱缓存。
+  可以重写 `CreateElementPrototype()` 来定义用于创建一组多个对象的工具箱项。 例如，你可以定义某个项来表示具有子组件的对象。 更改代码后, 重置实验实例的 Visual Studio 来清除工具箱缓存。
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>DslPackage 项目中生成的文件
- DslPackage 将 DSL 模型耦合到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell，从而管理窗口、工具箱和菜单命令。 大多数类都是双派生的，以便你可以重写它们的任何方法。
+ DslPackage 将 DSL 模型耦合到 Visual Studio shell 中，管理窗口、 工具箱和菜单命令。 大多数类都是双派生的，以便你可以重写它们的任何方法。
 
  `CommandSet.cs`
 
@@ -274,12 +274,11 @@ namespace Company.EmbedInForm
   }
 
 }
-
 ```
 
  `EditorFactory.cs`
 
- 实例化 `DocData` 和 `DocView`。 它满足 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 用于在 DSL 程序包启动时打开编辑器的标准接口。 将在 Package.cs 的 `ProvideEditorFactory` 特性中引用它。
+ 实例化 `DocData` 和 `DocView`。 它可满足 Visual Studio 用来在 DSL 程序包启动时打开编辑器的标准接口。 将在 Package.cs 的 `ProvideEditorFactory` 特性中引用它。
 
  `GeneratedVSCT.vsct`
 
@@ -326,7 +325,6 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 }
 }
 }
-
 ```
 
  `ModelExplorerToolWindow.cs`
@@ -335,7 +333,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Package.cs`
 
- 此文件定义 DSL 集成到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的方式。 程序包类上的特性将 DSL 注册为具有文件扩展名的文件的处理程序、定义其工具箱以及定义打开新窗口的方式。 当第一个 DSL 加载到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 实例中时，将调用一次 Initialize() 方法。
+ 此文件定义 DSL 集成到 Visual Studio 的方式。 程序包类上的特性将 DSL 注册为具有文件扩展名的文件的处理程序、定义其工具箱以及定义打开新窗口的方式。 Initialize （） 方法被调用一次，如果第一个 DSL 加载到 Visual Studio 实例。
 
  `Source.extension.vsixmanifest`
 

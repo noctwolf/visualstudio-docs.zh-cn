@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkhelper:: Imageforva |Microsoft 文档'
+title: 'Idiastackwalkhelper:: Imageforva |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0986a6a0b4596671cb11b40b938848387124462f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4942a88378091d890507c1121f6863c309c40662
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823030"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
-返回给定的虚拟地址某处的可执行文件的内存空间中的内存中的开始位置的可执行文件的映像。  
+返回在给定的虚拟地址某处的可执行文件的内存空间中的内存中的可执行文件的映像开始。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,10 +35,10 @@ HRESULT imageForVA(
   
 #### <a name="parameters"></a>参数  
  `vaContext`  
- [in]在可执行文件的空间中的某处存在于虚拟地址。  
+ [in]可执行文件的空间中的某处存在于虚拟地址。  
   
  `pvaImageStart`  
- [out]返回可执行文件的映像的起始虚拟地址。  
+ [out]返回可执行文件的图像的起始虚拟地址。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221043"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析中通用 Windows 应用中的 HTML UI 响应能力
 本主题介绍如何使用 UI 响应能力探查器（一种可用于 Windows 通用应用的性能工具）隔离应用中的性能问题。  
@@ -34,12 +35,12 @@ ms.lasthandoff: 05/14/2018
   
 -   视觉对象更新频率比预期频率低。 如果 UI 线程太忙而无法保持平稳的帧速率，就会出现此情况。 例如，UI 线程忙碌时，可能会丢弃帧。 某些非 UI 线程工作（例如网络请求、图像解码和绘制工作）也会限制视觉对象更新频率。 （并非所有绘制工作都在 UI 线程上执行。  
   
-##  <a name="RunningProfiler"></a> 运行 HTML UI 响应能力工具  
+## <a name="run-the-html-ui-responsiveness-tool"></a>运行 HTML UI 响应能力工具  
  在 Visual Studio 中打开有效 UWP 应用时，可以使用“HTML UI 响应能力”工具。  
   
 1.  如果是通过 Visual Studio 运行应用，请在“标准”工具栏上的“开始调试”列表中，选择部署目标，即“本地计算机”或“设备”。  
   
-2.  在“调试”  菜单上，选择“性能探查器...” 。  
+2.  在“调试”菜单上，选择“性能探查器”。  
   
      如果要更改探查器的分析目标，请选择“更改目标”。  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 05/14/2018
   
 6.  若要停止分析探查器收集的应用程序和视图数据，请选择 **“停止收集”**。  
   
-##  <a name="IsolateAnIssue"></a> 隔离问题  
+## <a name="isolate-an-issue"></a>隔离问题  
  下一节会提供帮助你隔离性能问题的建议。 有关如何通过使用样本性能测试应用来标识和修复性能问题的分步说明，请参阅[演练：改进 UI 响应能力 (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md)。  
   
 ###  <a name="Workflow"></a> 隔离 UI 响应能力问题  
@@ -75,11 +76,11 @@ ms.lasthandoff: 05/14/2018
   
 1.  在 Visual Studio 中打开应用程序。  
   
-2.  测试应用程序的 UI 响应能力问题。 （按 Ctrl+F5 以启动应用程序而不进行调试。  
+2.  测试应用程序的 UI 响应能力问题。 （按 Ctrl+F5 以启动应用而不进行调试。）  
   
      如果发现问题，请继续测试以尝试缩小发生问题的时间范围，或尝试确定导致该行为的触发器。  
   
-3.  切换回 Visual Studio（按 Alt+Tab），并停止应用程序 (Shift+F5)。  
+3.  切换回 Visual Studio（按 Alt+Tab），并停止应用 (Shift+F5)。  
   
 4.  或者，使用 performance.mark [标记要分析的代码](#ProfileMark)。  
   
@@ -118,7 +119,7 @@ ms.lasthandoff: 05/14/2018
   
     -   应用程序加载的页面或 URL 资源，例如 HTML 分析事件的脚本计算。 提供文件名或资源。  
   
-    -   在以下部分中指定的其他事件： [Profiler event reference](#ProfilerEvents)。  
+    -   在以下部分中指定的其他事件： [Profiler event reference](#profiler-event-reference)。  
   
     > [!TIP]
     >  探查器中的大部分有用信息显示在“时间线详细信息”图中。  
@@ -168,7 +169,7 @@ if (performance.mark && performance.measure) {
   
  ![时间线详细视图中的用户评估事件](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-##  <a name="AnalyzeData"></a> 分析数据  
+## <a name="analyze-data"></a>分析数据  
  以下各节提供了有助于解释在探查器中显示的数据的信息。  
   
 ###  <a name="Ruler"></a> 查看诊断会话时间线  
@@ -187,7 +188,7 @@ if (performance.mark && performance.measure) {
 -   导航事件，在导航到其他页面时发生。 此事件的工具提示显示目标页面 URL。  
   
 ###  <a name="CPUUtilization"></a> 查看 CPU 使用率  
- 通过“CPU 使用率”图可确定 CPU 活动过多的时间段。 该图提供一段时间内应用程序的 CPU 平均消耗量信息。 信息使用了彩色编码来表示以下具体类别： **“加载”**、 **“脚本”**、垃圾回收（**“GC”**）、 **“样式”**、 **“呈现”** 和 **“图像解码”**。 有关这些类别的详细信息，请参阅本主题后面部分的 [Profiler event reference](#ProfilerEvents) 。  
+ 通过“CPU 使用率”图可确定 CPU 活动过多的时间段。 该图提供一段时间内应用程序的 CPU 平均消耗量信息。 信息使用了彩色编码来表示以下具体类别： **“加载”**、 **“脚本”**、垃圾回收（**“GC”**）、 **“样式”**、 **“呈现”** 和 **“图像解码”**。 有关这些类别的详细信息，请参阅本主题后面部分的 [Profiler event reference](#profiler-event-reference) 。  
   
  “CPU 使用率”图显示在所有应用程序线程上花费的时间，它将一个或多个 CPU 的 CPU 使用率值合并为一个百分比值。 当多个 CPU 正在使用时，CPU 使用率值可能超过 100%。  
   
@@ -200,36 +201,36 @@ if (performance.mark && performance.measure) {
   
  使用此图可以：  
   
--   识别一般关注区域。  
+- 识别一般关注区域。  
   
--   选择要显示在“时间线详细信息”图中的特定时间段。 若要选择一个时间段，请选择此图的一部分并拖动指针进行选择。  
+- 选择要显示在“时间线详细信息”图中的特定时间段。 若要选择一个时间段，请选择此图的一部分并拖动指针进行选择。  
   
--   通过选择 **“放大”** 按钮可获取选定时间段的更详细的视图。  
+- 通过选择 **“放大”** 按钮可获取选定时间段的更详细的视图。  
   
- 有关使此图的详细信息，请参阅本主题中的 [Isolate a UI responsiveness problem](#Workflow) 。  
+  有关使此图的详细信息，请参阅本主题中的 [Isolate a UI responsiveness problem](#Workflow) 。  
   
 ###  <a name="VisualThroughput"></a> 查看可视吞吐量 (FPS)  
  通过“可视吞吐量”图可确定帧速率下降的时间段。 该图显示应用程序的每秒帧数 (FPS)。 此图最适于游戏和富媒体应用程序的开发。  
   
  显示的 FPS 值可能与实际帧速率不同。 检查此图中的数据时，请记住以下信息：  
   
--   此图显示应用程序在任何特定时间均可达到的 FPS。 应用程序空闲时，FPS 与监视器刷新频率相同。  
+- 此图显示应用程序在任何特定时间均可达到的 FPS。 应用程序空闲时，FPS 与监视器刷新频率相同。  
   
--   应用程序执行需要视觉对象更新的工作时，此图显示实际的 FPS。  
+- 应用程序执行需要视觉对象更新的工作时，此图显示实际的 FPS。  
   
--   如果丢弃帧，此图显示零值。  
+- 如果丢弃帧，此图显示零值。  
   
- 下例显示了“可视吞吐量”图的外观：  
+  下例显示了“可视吞吐量”图的外观：  
   
- ![可视吞吐量图](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
+  ![可视吞吐量图](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
   
- 使用“可视吞吐量”图可以：  
+  使用“可视吞吐量”图可以：  
   
--   识别一般关注区域。  
+- 识别一般关注区域。  
   
--   选择要显示在“时间线详细信息”图中的特定时间段。 若要选择一个时间段，请选择此图的一部分并拖动指针进行选择。  
+- 选择要显示在“时间线详细信息”图中的特定时间段。 若要选择一个时间段，请选择此图的一部分并拖动指针进行选择。  
   
--   通过选择 **“放大”** 按钮可获取选定时间段的更详细的视图。  
+- 通过选择 **“放大”** 按钮可获取选定时间段的更详细的视图。  
   
 ###  <a name="TimelineDetails"></a> 查看时间线详细信息  
  “时间线详细信息”图显示在 UI 响应能力探查器的底部窗格中。 该图提供关于选定时间段内消耗最多 CPU 时间的事件的顺序和分层信息。 该图可帮助你确定触发特定事件的原因，对于某些事件，还可确定如何找到与事件对应的源代码。 该图还有助于确定在屏幕上绘制视觉对象更新所需的时间。  
@@ -247,7 +248,7 @@ if (performance.mark && performance.measure) {
   
  如果选择“CPU 使用率”图和“可视吞吐量”(FPS) 图的时间线的一部分，则“时间线详细信息”图将显示选定时间段的详细信息。  
   
- “时间线详细信息”图中的事件使用彩色编码表示“CPU 使用率”图中所示的相同类别的工作。 有关事件类别和特定事件的更多信息，请参阅本主题中的 [Profiler event reference](#ProfilerEvents) 。  
+ “时间线详细信息”图中的事件使用彩色编码表示“CPU 使用率”图中所示的相同类别的工作。 有关事件类别和特定事件的更多信息，请参阅本主题中的 [Profiler event reference](#profiler-event-reference) 。  
   
  使用“时间线详细信息”图可以：  
   
@@ -300,29 +301,29 @@ if (performance.mark && performance.measure) {
   
  ![按帧分组的时间线事件](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-##  <a name="SaveSession"></a> 保存诊断会话  
+## <a name="save-a-diagnostic-session"></a>保存诊断会话  
  在 Visual Studio 中，你可以在关闭与诊断会话关联的选项卡时保存此会话。 保存的会话以后可以重新打开。  
   
-##  <a name="ProfilerEvents"></a> Profiler event reference  
+## <a name="profiler-event-reference"></a>Profiler event reference  
  UI 响应能力探查器中对探查器事件进行了分类和彩色编码。 事件类别如下：  
   
--   **加载。** 指示应用程序首次加载时检索应用程序资源和解析 HTML 与 CSS 所用的时间。 这可能包括网络请求。  
+- **加载。** 指示应用程序首次加载时检索应用程序资源和解析 HTML 与 CSS 所用的时间。 这可能包括网络请求。  
   
--   **脚本。** 指示解析和运行 JavaScript 所用的时间。 这包括 DOM 事件、计时器、脚本计算和动画帧工作。 其中包含用户代码和库代码。  
+- **脚本。** 指示解析和运行 JavaScript 所用的时间。 这包括 DOM 事件、计时器、脚本计算和动画帧工作。 其中包含用户代码和库代码。  
   
--   **GC。** 指示垃圾回收所用的时间。  
+- **GC。** 指示垃圾回收所用的时间。  
   
--   **样式。** 指示解析 CSS 和计算元素呈现与布局所用的时间。  
+- **样式。** 指示解析 CSS 和计算元素呈现与布局所用的时间。  
   
--   **呈现。** 指示绘制屏幕所用的时间。  
+- **呈现。** 指示绘制屏幕所用的时间。  
   
--   **图像解码。** 指示对图像进行解压缩和解码所用的时间。  
+- **图像解码。** 指示对图像进行解压缩和解码所用的时间。  
   
- 对于脚本和样式类别，UI 响应能力探查器可能提供你在“时间线详细信息”图中可操作的数据。 如果识别出脚本问题，你可以运行 CPU 采样探查器与 UI 响应能力探查器。 或者，可以使用 Visual Studio 函数探查器以获取更详细的数据。 有关更多信息，请参见 [“JavaScript 内存”](../profiling/javascript-memory.md)。  
+  对于脚本和样式类别，UI 响应能力探查器可能提供你在“时间线详细信息”图中可操作的数据。 如果识别出脚本问题，你可以运行 CPU 采样探查器与 UI 响应能力探查器。 或者，可以使用 Visual Studio 函数探查器以获取更详细的数据。 有关更多信息，请参见 [“JavaScript 内存”](../profiling/javascript-memory.md)。  
   
- 对于其他事件类别，你也许能够识别出由于向应用程序中添加功能而导致的平台副效应，但在这些情况下，可能无法使用 UI 响应能力探查器解决特定的性能问题。  
+  对于其他事件类别，你也许能够识别出由于向应用程序中添加功能而导致的平台副效应，但在这些情况下，可能无法使用 UI 响应能力探查器解决特定的性能问题。  
   
- 下表显示了事件及其说明：  
+  下表显示了事件及其说明：  
   
 |事件|事件类别|在出现以下情况时发生|  
 |-----------|--------------------|-----------------|  
@@ -348,13 +349,13 @@ if (performance.mark && performance.measure) {
 |Frame|不可用|对需要重新提取页面的所有受影响部分的 DOM 进行了可视更改。 这是用于分组的工具生成的事件。|  
 |“用户测量”|不可用|使用 `performance.measure` 方法测量应用特定的方案。 这是用于分析代码的工具生成的事件。|  
   
-##  <a name="Tips"></a> 其他信息  
+## <a name="additional-information"></a>其他信息  
   
--   观看 [此视频](http://channel9.msdn.com/Events/Build/2013/3-316) （来自 Build 2013 大会，介绍了 UI 响应能力探查器）。  
+-   观看 [此视频](https://channel9.msdn.com/Events/Build/2013/3-316) （来自 Build 2013 大会，介绍了 UI 响应能力探查器）。  
   
--   阅读关于使用 JavaScript 为 Windows 生成的 UWP 应用的性能提示。 有关详细信息，请参阅[使用 JavaScript 的 UWP 应用的性能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx)。  
+-   阅读关于使用 JavaScript 为 Windows 生成的 UWP 应用的性能提示。 有关详细信息，请参阅[使用 JavaScript 的 UWP 应用的性能最佳做法](/previous-versions/windows/apps/hh465194\(v\=win.10\))。  
   
--   若要了解单线程代码执行模型和性能，请参见 [执行代码](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)。  
+-   若要了解单线程代码执行模型和性能，请参见 [执行代码](/previous-versions/windows/apps/hh781217\(v\=win.10\))。  
   
 ## <a name="see-also"></a>请参阅  
- [分析工具](../profiling/profiling-tools.md)
+ [首先了解分析工具](../profiling/profiling-feature-tour.md)

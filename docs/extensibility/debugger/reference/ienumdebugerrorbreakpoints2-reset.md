@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugErrorBreakpoints2::Reset |Microsoft 文档
+title: IEnumDebugErrorBreakpoints2::Reset |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9927a82b560aa9e3972f17feaa7028da7d8a9587
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97d010a6ce699085693040e18824cbecf20d9e06
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880086"
 ---
 # <a name="ienumdebugerrorbreakpoints2reset"></a>IEnumDebugErrorBreakpoints2::Reset
 将枚举重置为第一个元素。  
@@ -41,7 +41,7 @@ int Reset();
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 调用此方法，对下一个调用后[下一步](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)方法返回的枚举的第一个元素。  
+ 调用此方法下, 一步调用后[下一步](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)方法返回的第一个元素的枚举。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

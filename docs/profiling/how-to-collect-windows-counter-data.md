@@ -16,15 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 842ce89c687c1f39bc013a7b1eb2c4b330a86f47
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4ea074024e605d2dcc91500fb00fe0d7b6781692
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668250"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>如何：收集 Windows 计数器数据
 
-Windows 计数器是在分析期间可按设定的时间间隔收集的系统性能计数器。 在“分析工具”报表的“标记”视图中，针对每个收集间隔，行被标记为“自动标记”。 该行包含描述该间隔内的性能计数器值的列。 若要将分析限制在两个特定标记之间的时间段内，请选择这些标记，右键单击，并从快捷菜单中选择“筛选依据” ->  “标记”。
+Windows 计数器是在分析期间可按设定的时间间隔收集的系统性能计数器。 在“分析工具”报表的“标记”视图中，针对每个收集间隔，行被标记为“自动标记”。 该行包含描述该间隔内的性能计数器值的列。 若要将分析限制在两个特定标记之间的时间段内，请选择这些标记，右键单击，并从快捷菜单中选择“筛选依据” > “标记”。
 
 > [!NOTE]
 > Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。

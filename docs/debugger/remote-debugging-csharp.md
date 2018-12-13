@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 011dc258281eccf7d1a1eca7acbc8cc71a53f00a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9d6bd68f5e94e04cab01dcb7bafd7dcc3cf3c17d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281138"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936116"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>远程调试 Visual Studio 中的 C# 或 Visual Basic 项目
 若要调试已部署在另一台计算机的 Visual Studio 应用程序，安装和在其中部署您的应用程序的计算机上运行远程工具、 将项目配置为从 Visual Studio 中，连接到远程计算机，然后运行应用。
@@ -56,25 +56,25 @@ ms.locfileid: "44281138"
 ## <a name="remote_csharp"></a> 远程调试项目
 调试器不能将 Visual C# 或 Visual Basic 桌面应用程序部署到远程计算机，但你仍然可以按如下所示方法远程调试它们。 以下过程假设你想要在名为的计算机上调试它**MJO DL**下, 图中所示。
   
-1.  创建一个名为的 WPF 项目**MyWpf**。  
+1. 创建一个名为的 WPF 项目**MyWpf**。  
   
-2.  在代码中的某个容易到达的地方设置断点。  
+2. 在代码中的某个容易到达的地方设置断点。  
   
-     例如，可在按钮处理程序中设置断点。 若要执行此操作，打开 MainWindow.xaml，然后添加一个按钮控件从工具箱中，双击按钮以打开它的处理程序。
+    例如，可在按钮处理程序中设置断点。 若要执行此操作，打开 MainWindow.xaml，然后添加一个按钮控件从工具箱中，双击按钮以打开它的处理程序。
   
-3.  在解决方案资源管理器，右键单击该项目并选择**属性**。  
+3. 在解决方案资源管理器，右键单击该项目并选择**属性**。  
   
-4.  上**属性**页上，选择**调试**选项卡。  
+4. 上**属性**页上，选择**调试**选项卡。  
   
-     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
+    ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5.  请确保**工作目录**文本框为空。  
+5. 请确保**工作目录**文本框为空。  
   
-6.  选择**使用远程计算机**，然后键入**MJO-DL:4022**在文本框中。 （4022 是远程调试器窗口中显示的端口号。 端口号递增每个版本的 Visual Studio 中的 2）。
+6. 选择**使用远程计算机**，然后键入**MJO-DL:4022**在文本框中。 （4022 是远程调试器窗口中显示的端口号。 端口号递增每个版本的 Visual Studio 中的 2）。
   
-7.  请确保**启用本机代码调试**未选中。  
+7. 请确保**启用本机代码调试**未选中。  
   
-8.  生成项目。  
+8. 生成项目。  
   
 9. 是相同的路径在远程计算机上创建文件夹**调试**Visual Studio 计算机上的文件夹： **\<源路径 > \MyWPF\MyWPF\bin\Debug**。  
   
@@ -93,7 +93,7 @@ ms.locfileid: "44281138"
   
 13. 如果系统提示，请输入网络凭据以连接到远程计算机。  
   
-     所需的凭据会有所不同，具体取决于网络的安全配置。 例如，在域的计算机，可以输入你的域名和密码。 在非域计算机上，你可能会输入计算机名称和有效的用户帐户名称，如**MJO-DL\name@something.com**，以及正确的密码。
+     所需的凭据会有所不同，具体取决于网络的安全配置。 例如，在域的计算机，可以输入你的域名和密码。 在非域计算机上，你可能会输入计算机名称和有效的用户帐户名称，如<strong>MJO-DL\name@something.com</strong>，以及正确的密码。
 
      你应会看到 WPF 应用程序的主窗口为远程计算机上打开。
   
@@ -101,7 +101,7 @@ ms.locfileid: "44281138"
   
 15. 在 Visual Studio 机器上，你应看到执行在断点处停止。
   
- 如果有需要应用程序使用任何非代码文件，您需要将其包含在 Visual Studio 项目。 创建其他文件的项目文件夹 (在**解决方案资源管理器**，单击**添加 > 新文件夹**)。 然后将文件添加到的文件夹 (在**解决方案资源管理器**，单击**添加 > 现有项**，然后选择文件)。 上**属性**页上为每个文件，将**复制到输出目录**到**始终复制**。
+    如果有需要应用程序使用任何非代码文件，您需要将其包含在 Visual Studio 项目。 创建其他文件的项目文件夹 (在**解决方案资源管理器**，单击**添加 > 新文件夹**)。 然后将文件添加到的文件夹 (在**解决方案资源管理器**，单击**添加 > 现有项**，然后选择文件)。 上**属性**页上为每个文件，将**复制到输出目录**到**始终复制**。
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>使用远程符号设置调试 
 
@@ -111,6 +111,6 @@ ms.locfileid: "44281138"
  [在 Visual Studio 中进行调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)   
  [配置 Windows 防火墙以允许远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
- [远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)   
+ [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
  [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)

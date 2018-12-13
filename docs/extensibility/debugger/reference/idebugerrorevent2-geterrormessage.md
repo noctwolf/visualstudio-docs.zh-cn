@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorEvent2::GetErrorMessage |Microsoft 文档
+title: IDebugErrorEvent2::GetErrorMessage |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dffd06c7342b77f1e4293d50217a0c6a468bf18
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d7dfac01624d83518a749dd762837dfbea3d6e54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110219"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915290"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
-返回允许构造的用户可读错误消息的信息。  
+返回允许的用户可读的错误消息构造的信息。  
   
 ## <a name="syntax"></a>语法  
   
@@ -57,13 +57,13 @@ int GetErrorMessage(
  [out]向用户最后一条消息的格式 （有关详细信息，请参阅"备注"）。  
   
  `hrErrorReason`  
- [out]有关错误代码的消息。  
+ [out]有关消息的错误代码。  
   
  `pdwType`  
- [out]错误严重级别 (使用为 MB_XXX 常量`MessageBox`; 例如，`MB_EXCLAMATION`或`MB_WARNING`)。  
+ [out]错误的严重性 (使用的 MB_XXX 常量`MessageBox`; 例如，`MB_EXCLAMATION`或`MB_WARNING`)。  
   
  `pbstrHelpFileName`  
- [out]（设置为 null 的值，如果没有帮助文件） 中的帮助文件路径。  
+ [out]帮助文件 （设置为 null 的值，如果没有帮助文件） 的路径。  
   
  `pdwHelpId`  
  [out]若要显示 （设置为 0，如果没有任何帮助主题） 的帮助主题的 ID。  
@@ -72,8 +72,8 @@ int GetErrorMessage(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 错误消息的格式应沿行`"What I was doing.  %1"`。 `"%1"`应该然后用来替换由调用方派生自的错误代码的错误消息 (在返回的这`hrErrorReason`)。 `pMessageType`参数指示调用方应如何显示最终的错误消息。  
+ 错误消息的格式应按一系列`"What I was doing.  %1"`。 `"%1"`将替换为调用方并显示错误消息派生自的错误代码 (其返回`hrErrorReason`)。 `pMessageType`参数指示调用方应如何显示最后一条错误消息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)   
  [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

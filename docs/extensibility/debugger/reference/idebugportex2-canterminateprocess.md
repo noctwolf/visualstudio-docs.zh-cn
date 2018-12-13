@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::CanTerminateProcess |Microsoft 文档
+title: IDebugPortEx2::CanTerminateProcess |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f44df279cd8ad4721a6b4559af1dc3defb94714a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5717d5312630c3e9adaac2e1a32fa0d44a3a213
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902329"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 确定是否可以终止进程。  
@@ -41,11 +41,11 @@ HRESULT CanTerminateProcess(
   
 #### <a name="parameters"></a>参数  
  `pPortProcess`  
- [in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)对象表示要终止进程。  
+ [in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)对象，表示将终止进程。  
   
 ## <a name="return-value"></a>返回值  
- 返回`S_OK`如果进程可以终止; 否则，返回`S_FALSE`。  
+ 返回`S_OK`如果可以终止进程; 否则，返回`S_FALSE`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

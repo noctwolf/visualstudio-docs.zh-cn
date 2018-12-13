@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 788f496f2afeb3b6392cb165d243a9d83f8ea005
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1ed8ea2aa16ec9bddd626c08f1e45d502d402b57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151061"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823185"
 ---
 # <a name="change-the-value-of-a-local"></a>更改局部值
 > [!IMPORTANT]
@@ -29,21 +29,21 @@ ms.locfileid: "39151061"
   
  这是过程的本地的更改值的概述：  
   
-1.  用户输入新值后，Visual Studio 会调用[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)上[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)与本地相关联的对象。  
+1. 用户输入新值后，Visual Studio 会调用[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)上[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)与本地相关联的对象。  
   
-2.  `IDebugProperty2::SetValueAsString` 执行下列任务：  
+2. `IDebugProperty2::SetValueAsString` 执行下列任务：  
   
-    1.  计算要生成一个值的字符串。  
+   1.  计算要生成一个值的字符串。  
   
-    2.  将绑定相关联[IDebugField](../../extensibility/debugger/reference/idebugfield.md)对象，以获取[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)对象。  
+   2.  将绑定相关联[IDebugField](../../extensibility/debugger/reference/idebugfield.md)对象，以获取[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)对象。  
   
-    3.  将值转换为一系列字节。  
+   3.  将值转换为一系列字节。  
   
-    4.  调用[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)值的字节数放入内存，因此正在调试的程序可以访问它们。  
+   4.  调用[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)值的字节数放入内存，因此正在调试的程序可以访问它们。  
   
-3.  Visual Studio 刷新**局部变量**显示 (请参阅[显示局部变量](../../extensibility/debugger/displaying-locals.md)有关详细信息)。  
+3. Visual Studio 刷新**局部变量**显示 (请参阅[显示局部变量](../../extensibility/debugger/displaying-locals.md)有关详细信息)。  
   
- 此过程还用于更改中的变量的值**Watch**窗口中，但它是`IDebugProperty2`而不是使用该局部变量的值与关联的对象`IDebugProperty2`与本地相关联的对象本身。  
+   此过程还用于更改中的变量的值**Watch**窗口中，但它是`IDebugProperty2`而不是使用该局部变量的值与关联的对象`IDebugProperty2`与本地相关联的对象本身。  
   
 ## <a name="in-this-section"></a>本节内容  
  [更改值的实现示例](../../extensibility/debugger/sample-implementation-of-changing-values.md)  

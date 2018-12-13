@@ -1,24 +1,24 @@
 ---
-title: 创建 Visual Studio 中设置的自定义代码分析规则
-ms.date: 04/04/2018
+title: 创建自定义代码分析规则集
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
-- Development Edition, rule sets
+- rule sets
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 061ceec7a513a0d4c92f06fad5ef730100dbfb8e
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204110"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000211"
 ---
 # <a name="customize-a-rule-set"></a>自定义规则集
 
@@ -34,11 +34,11 @@ ms.locfileid: "39204110"
 
 3. 在中**运行此规则集**下拉列表中，执行下列任一操作：
 
-    - 选择想要自定义的规则集。
+   - 选择想要自定义的规则集。
 
      \- 或 -
 
-    - 选择**\<浏览...>** 指定的现有规则集不在列表中。
+   - 选择**\<浏览...>** 指定的现有规则集不在列表中。
 
 4. 选择**打开**若要在规则集编辑器中显示的规则。
 
@@ -69,6 +69,44 @@ ms.locfileid: "39204110"
    中选择新的规则集**运行此规则集**列表。
 
 6. 选择**打开**以打开新的规则集编辑器中设置的规则。
+
+### <a name="rule-precedence"></a>规则优先顺序
+
+- 如果相同的规则是列出两个或更多次的规则集具有不同的严重级别中，编译器将生成错误。 例如：
+
+   ```xml
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" />
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
+
+- 如果相同的规则是列出两个或更多次在规则集与*同一*严重性，可能会看到以下警告**错误列表**:
+
+   **CA0063： 未能加载规则集文件\[你].ruleset 或其依赖规则之一将设置文件。该文件不符合规则集架构。**
+
+- 如果规则集包含子规则集通过使用**Include**标记和子与父规则集列出相同的规则，但具有不同严重级别，然后在父规则集严重性优先。 例如：
+
+   ```xml
+   <!-- Parent rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
+     <Include Path="classlibrary_child.ruleset" Action="Default" />
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Warning" /> <!-- Overrides CA1021 severity from child rule set -->
+     </Rules>
+   </RuleSet>
+
+   <!-- Child rule set -->
+   <?xml version="1.0" encoding="utf-8"?>
+   <RuleSet Name="Rules from child" Description="Code analysis rules from child." ToolsVersion="15.0">
+     <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+       <Rule Id="CA1021" Action="Error" />
+     </Rules>
+   </RuleSet>
+   ```
 
 ## <a name="name-and-description"></a>名称和描述
 

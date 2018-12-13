@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c06aa8820635c876c05c6ac73c7de4c3c6581aa2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7d6d7d17810e53de80bfecff697e960613dc06a6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944734"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295847"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>在 Visual Studio 中生成方法
 
@@ -36,24 +36,24 @@ ms.locfileid: "31944734"
 
    - C#：
 
-    ![突出显示的代码 C#](media/method-highlight-cs.png)
+       ![突出显示的代码 C#](media/method-highlight-cs.png)
 
    - Visual Basic：
 
-    ![突出显示的代码 VB](media/method-highlight-vb.png)
+       ![突出显示的代码 VB](media/method-highlight-vb.png)
 
-1. 接下来，执行以下操作之一：
+2. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
-     - 右键单击并选择“快速操作和重构”菜单。
-     - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
+      - 右键单击并选择“快速操作和重构”菜单。
+      - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
 
-    ![生成方法预览](media/method-preview-cs.png)
+      ![生成方法预览](media/method-preview-cs.png)
 
-1. 从下拉菜单中选择“生成方法”。
+3. 从下拉菜单中选择“生成方法”。
 
    > [!TIP]
    > 进行选择前，使用预览窗口底部的“预览更改”链接[查看将发生的所有更改](../../ide/preview-changes.md)。
@@ -62,11 +62,11 @@ ms.locfileid: "31944734"
 
    - C#：
 
-      ![“生成方法”的结果 C#](media/method-result-cs.png)
+       ![“生成方法”的结果 C#](media/method-result-cs.png)
 
    - Visual Basic：
 
-      ![“生成方法”的结果 VB](media/method-result-vb.png)
+       ![“生成方法”的结果 VB](media/method-result-vb.png)
 
 ## <a name="see-also"></a>请参阅
 

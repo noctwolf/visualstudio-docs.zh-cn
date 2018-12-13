@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d76cf493c20966a989d559b89da20cf5e24247e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d140fed32ac3816b75e13496dc3507fc728f7d26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916518"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>添加最近使用过的子菜单上的列表
 本演练基于中的演示[添加到菜单的子菜单](../extensibility/adding-a-submenu-to-a-menu.md)，并演示如何将动态列表添加到子菜单。 动态列表窗体创建最近使用过的 (MRU) 列表的基础。  
@@ -38,9 +38,9 @@ ms.locfileid: "39081330"
   
 ## <a name="create-an-extension"></a>创建扩展  
   
--   按照中的过程[将子菜单添加到菜单](../extensibility/adding-a-submenu-to-a-menu.md)以下过程中创建修改的子菜单。  
+- 按照中的过程[将子菜单添加到菜单](../extensibility/adding-a-submenu-to-a-menu.md)以下过程中创建修改的子菜单。  
   
- 在本演练中的过程假定 VSPackage 的名称是`TopLevelMenu`，这是使用中的名称[向 Visual Studio 菜单栏添加菜单](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)。  
+  在本演练中的过程假定 VSPackage 的名称是`TopLevelMenu`，这是使用中的名称[向 Visual Studio 菜单栏添加菜单](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)。  
   
 ## <a name="create-a-dynamic-item-list-command"></a>创建动态项列表命令  
   

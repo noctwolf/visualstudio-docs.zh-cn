@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::ReadAt |Microsoft 文档
+title: IDebugMemoryBytes2::ReadAt |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612a065286723e3c2b68a9ce5bd31c850d030959
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e3989ef8c79e4304e3bda3e99418da1973e6e0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114081"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912937"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
-读取给定位置开始的字节序列。  
+读取给定位置处开始的字节序列。  
   
 ## <a name="syntax"></a>语法  
   
@@ -50,32 +50,32 @@ int ReadAt(
   
 #### <a name="parameters"></a>参数  
  `pStartContext`  
- [in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)对象，它指定从何处着手读取的字节。  
+ [in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)对象，它指定位置开始读取字节数。  
   
  `dwCount`  
- [in]要读取的字节数。 此外指定的长度`rgbMemory`数组。  
+ [in]要读取的字节数。 此外可以指定的长度`rgbMemory`数组。  
   
  `rgbMemory`  
- [在中，out]实际读取使用字节填充的数组。  
+ [in、 out]实际读取字节填充的数组。  
   
  `pdwRead`  
  [out]返回实际读取的连续字节数。  
   
  `pdwUnreadable`  
- [在中，out]返回不可读字节的数。 如果客户端不愿意中的不可读字节数，则可能是一个 null 值。  
+ [in、 out]返回不可读字节数。 如果客户端不愿意在不可读字节数可能为 null 值。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回错误代码。  
+ 如果成功，则返回 S_OK;否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 如果请求 100 个字节前 50 个是否都可读下, 一步 20 是不可读取的和剩余 30 台可读，则此方法返回：  
+ 如果请求 100 个字节和前 50 个可读下, 一步 20 是不可读取的并剩余 30 可读，则此方法返回：  
   
  *`pdwRead` = 50  
   
  *`pdwUnreadable` = 20  
   
- 在这种情况下，因为`*pdwRead + *pdwUnreadable < dwCount`，调用方必须进行额外调用读取请求的原始 100 剩余 30 字节和[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)传入的对象`pStartContext`必须高级参数通过 70。  
+ 在这种情况下，因为`*pdwRead + *pdwUnreadable < dwCount`，调用方必须进行额外调用读取剩余 30 个字节的请求的原始 100 并[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)传入的对象`pStartContext`必须高级参数通过 70。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

@@ -20,29 +20,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f771d71d6475ac9835ec21b36b44ce3cd131ad
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5d4b5ee29ed19f121c6da357fa20242f6762e51c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892943"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 任务
 如果项目中至少有一个 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 页引用该项目中本地声明的类型，则 <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> 任务会生成一个程序集。 在生成过程完成后或者在生成过程失败的情况下，生成的程序集会被删除。  
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|描述|  
-|---------------|-----------------|  
-|`AssemblyName`|必需的 **String** 参数。<br /><br /> 指定为项目生成的程序集的短名称，该名称同时也是临时生成的目标程序集的名称。 例如，如果项目生成一个名为 *WinExeAssembly.exe* 的 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 可执行文件，则 **AssemblyName** 参数的值为 **WinExeAssembly**。|  
-|`CompileTargetName`|必需的 **String** 参数。<br /><br /> 指定用于从源代码文件生成程序集的 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 目标的名称。 **CompileTargetName** 的典型值为 **CoreCompile**。|  
-|`CompileTypeName`|必需的 **String** 参数。<br /><br /> 指定由 **CompileTargetName** 参数所指定目标执行的编译的类型。 对于 **CoreCompile** 目标，此值为 **Compile**。|  
-|`CurrentProject`|必需的 **String** 参数。<br /><br /> 为要求临时目标程序集的项目指定 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] 项目文件的完整路径。|  
-|`GeneratedCodeFiles`|可选的 **ITaskItem[]** 参数。<br /><br /> 指定由 [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md) 任务生成的语言特定托管代码文件列表。|  
-|`IntermediateOutputPath`|必需的 **String** 参数。<br /><br /> 指定在其中生成临时目标程序集的目录。|  
-|`MSBuildBinPath`|必需的 **String** 参数。<br /><br /> 指定编译临时目标程序集所需的 *MSBuild.exe* 的位置。|  
-|`ReferencePath`|可选的 **ITaskItem[]** 参数。<br /><br /> 按路径和文件名指定一列由编译到临时目标程序集中的类型所引用的程序集。|  
-|`ReferencePathTypeName`|必需的 **String** 参数。<br /><br /> 指定编译目标 (**CompileTargetName**) 参数用于指定程序集引用列表 (**ReferencePath**) 的参数。 相应的值为 **ReferencePath**。|  
+| 参数 | 描述 |
+|--------------------------| - |
+| `AssemblyName` | 必需的 **String** 参数。<br /><br /> 指定为项目生成的程序集的短名称，该名称同时也是临时生成的目标程序集的名称。 例如，如果项目生成一个名为 *WinExeAssembly.exe* 的 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 可执行文件，则 **AssemblyName** 参数的值为 **WinExeAssembly**。 |
+| `CompileTargetName` | 必需的 **String** 参数。<br /><br /> 指定用于从源代码文件生成程序集的 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 目标的名称。 **CompileTargetName** 的典型值为 **CoreCompile**。 |
+| `CompileTypeName` | 必需的 **String** 参数。<br /><br /> 指定由 **CompileTargetName** 参数所指定目标执行的编译的类型。 对于 **CoreCompile** 目标，此值为 **Compile**。 |
+| `CurrentProject` | 必需的 **String** 参数。<br /><br /> 为要求临时目标程序集的项目指定 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] 项目文件的完整路径。 |
+| `GeneratedCodeFiles` | 可选的 **ITaskItem[]** 参数。<br /><br /> 指定由 [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md) 任务生成的语言特定托管代码文件列表。 |
+| `IntermediateOutputPath` | 必需的 **String** 参数。<br /><br /> 指定在其中生成临时目标程序集的目录。 |
+| `MSBuildBinPath` | 必需的 **String** 参数。<br /><br /> 指定编译临时目标程序集所需的 *MSBuild.exe* 的位置。 |
+| `ReferencePath` | 可选的 **ITaskItem[]** 参数。<br /><br /> 按路径和文件名指定一列由编译到临时目标程序集中的类型所引用的程序集。 |
+| `ReferencePathTypeName` | 必需的 **String** 参数。<br /><br /> 指定编译目标 (**CompileTargetName**) 参数用于指定程序集引用列表 (**ReferencePath**) 的参数。 相应的值为 **ReferencePath**。 |
   
 ## <a name="remarks"></a>备注  
  第一个标记编译传递（由 [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md) 运行）会将 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 文件编译为二进制格式。 因此，编译器需要一列其中包含 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 文件所使用的类型的引用程序集。 但是，如果 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 文件使用在同一项目中定义的类型，则直到该项目生成时才会创建该项目对应的程序集。 因此，在第一个标记编译传递期间无法提供程序集引用。  

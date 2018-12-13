@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetRank |Microsoft 文档
+title: IDebugArrayField::GetRank |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fee642bb5f19efb62b631d71d3ba95eec45c0be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6921da02b2df62509dd820795581e3ce6dae92d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099904"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846234"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
-获取级别或数组的维数。  
+获取秩或维数的数组。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,13 +41,13 @@ int GetRank(
   
 #### <a name="parameters"></a>参数  
  `pdwRank`  
- [out]返回的排名。  
+ [out]返回排名。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回错误代码。  
+ 如果成功，则返回 S_OK;否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 数组的秩对应于维度数。 在 c + + 和 C# 中，多维数组实际上是数组的数组，并因此可以视为只是一维数组 (和`GetRank`方法始终返回 1)。 在[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]另一方面，多维数组的处理方式不同，这样的数组的秩反映维度数 (和`GetRank`方法始终返回的维数)。  
+ 数组的秩对应于维度的数目。 在 c + + 和 C# 中，多维数组实际上是数组的数组，并因此可以视为只是一个一维数组 (和`GetRank`方法始终返回 1)。 在中[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]，但是，多维数组的处理方式不同并这样的数组的秩反映的维数 (和`GetRank`方法始终返回维度的数目)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

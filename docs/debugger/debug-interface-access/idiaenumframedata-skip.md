@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumframedata:: Skip |Microsoft 文档'
+title: 'Idiaenumframedata:: Skip |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26f75ca23d1df6b81a23277fc94e60f9c0a2920f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4987279f336b549389bd7d338bb12e842a3d87f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818284"
 ---
 # <a name="idiaenumframedataskip"></a>IDiaEnumFrameData::Skip
-跳过指定的数目的帧枚举序列中的数据元素。  
+跳过枚举序列中的帧数据元素的指定的数目。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>参数  
  celt  
- [in]在枚举顺序中跳过的帧数据元素的数目。  
+ [in]若要跳过枚举序列中的帧数据元素数。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`是否存在要跳过没有更多记录。  
+ 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`如果没有更多记录要跳过。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

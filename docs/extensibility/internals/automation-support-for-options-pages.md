@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72c2a55c8abb2049f03d46c8a1a5cf27eecc341
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b18f8df30dc9f3385c2c5f154d66c598b423968e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929642"
 ---
 # <a name="automation-support-for-options-pages"></a>选项页的自动化支持
 Vspackage 可以提供自定义**选项**到对话框**工具**菜单 (**工具选项**页面) 中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，可以使它们可用于自动化模型。  
@@ -29,15 +29,15 @@ Vspackage 可以提供自定义**选项**到对话框**工具**菜单 (**工具�
   
  它是可选的但强烈建议，以允许访问自动化模型通过此新页。 可以通过执行以下步骤进行操作：  
   
-1.  扩展<xref:EnvDTE._DTE.Properties%2A>IDispatch 派生的对象实现的对象。  
+1. 扩展<xref:EnvDTE._DTE.Properties%2A>IDispatch 派生的对象实现的对象。  
   
-2.  返回的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法 (或托管代码的<xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A>方法) 到 IDispatch 派生的对象。  
+2. 返回的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法 (或托管代码的<xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A>方法) 到 IDispatch 派生的对象。  
   
-3.  当自动化使用者调用<xref:EnvDTE._DTE.Properties%2A>方法的自定义**选项**属性页中，在环境中使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法来获取自定义**工具选项**页面的自动化实现。  
+3. 当自动化使用者调用<xref:EnvDTE._DTE.Properties%2A>方法的自定义**选项**属性页中，在环境中使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法来获取自定义**工具选项**页面的自动化实现。  
   
-4.  VSPackage 的自动化对象然后用于提供每个<xref:EnvDTE.Property>返回的<xref:EnvDTE._DTE.Properties%2A>。  
+4. VSPackage 的自动化对象然后用于提供每个<xref:EnvDTE.Property>返回的<xref:EnvDTE._DTE.Properties%2A>。  
   
- 有关示例实现一个自定义**工具选项**页上，请参阅[VSSDK 示例](http://aka.ms/vs2015sdksamples)。  
+   有关示例实现一个自定义**工具选项**页上，请参阅[VSSDK 示例](http://aka.ms/vs2015sdksamples)。  
   
 ## <a name="see-also"></a>请参阅  
  [公开项目对象](../../extensibility/internals/exposing-project-objects.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c49816fb412a7c52e3d9e63fd0e4ec5675e7c3
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 45babce1d9b742bd2af5b047973c4f96b41e52cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511443"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935310"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -42,23 +42,23 @@ ms.locfileid: "39511443"
 
 在本主题中，我们使用称为 `MyBank` 的虚构应用程序的开发作为示例。 无需使用实际代码按照本主题中的说明操作。 测试方法用 C# 编写，并通过用于托管代码的 Microsoft 单元测试框架进行呈现。 但是，这些概念很容易转移到其他语言和框架。
 
- ![MyBank 解决方案](../test/media/ute_mybanksolution.png)
+![MyBank 解决方案](../test/media/ute_mybanksolution.png)
 
- 我们第一次尝试设计的 `MyBank` 应用程序包含表示个人帐户及其与银行交易的帐户组件，以及表示集合和管理单独帐户的功能的数据库组件。
+我们第一次尝试设计的 `MyBank` 应用程序包含表示个人帐户及其与银行交易的帐户组件，以及表示集合和管理单独帐户的功能的数据库组件。
 
- 我们创建包含两个项目的 `MyBank` 解决方案：
+我们创建包含两个项目的 `MyBank` 解决方案：
 
--   `Accounts`
+- `Accounts`
 
--   `BankDb`
+- `BankDb`
 
- 我们首次尝试设计 `Accounts` 的项目包含一个类来保存有关帐户的基本信息，以及指定任何类型的帐户的通用功能的接口的基本信息（如从该帐户存储和取出资产），以及从表示存款帐户的接口派生的类的基本信息。 首先，我们通过创建以下源文件开始帐户项目：
+我们首次尝试设计 `Accounts` 的项目包含一个类来保存有关帐户的基本信息，以及指定任何类型的帐户的通用功能的接口的基本信息（如从该帐户存储和取出资产），以及从表示存款帐户的接口派生的类的基本信息。 首先，我们通过创建以下源文件开始帐户项目：
 
--   AccountInfo.cs 定义帐户的基本信息。
+- AccountInfo.cs 定义帐户的基本信息。
 
--   IAccount.cs 为帐户定义一个标准 `IAccount` 接口，包括从一个帐户存款和收回资产和检索帐户余额的方法。
+- IAccount.cs 为帐户定义一个标准 `IAccount` 接口，包括从一个帐户存款和收回资产和检索帐户余额的方法。
 
--   CheckingAccount.cs 包含 `CheckingAccount` 类，该类实现支票帐户的 `IAccount` 接口。
+- CheckingAccount.cs 包含 `CheckingAccount` 类，该类实现支票帐户的 `IAccount` 接口。
 
 我们根据经验可知，从支票帐户中取款必须要确保提取的金额小于帐户余额。 因此我们用检查这种情况的一种方法来重写 `IAccount.Withdraw` 中的 `CheckingAccount` 方法。 该方法可能如下所示：
 
@@ -82,48 +82,48 @@ public void Withdraw(double amount)
 
 通常从你的代码生成单元测试项目和单元测试存根速度更快。 或者，你可以选择创建单元测试项目和根据你的要求进行手动测试。
 
- **生成单元测试项目和单元测试存根**
+### <a name="generate-unit-test-project-and-unit-test-stubs"></a>生成单元测试项目和单元测试存根
 
-1.  在代码编辑器窗口中，从上下文菜单右键单击并选择“创建单元测试”  。
+1. 在代码编辑器窗口中，从上下文菜单右键单击并选择“创建单元测试”  。
 
-     ![从编辑器窗口查看上下文菜单](../test/media/createunittestsrightclick.png)
+    ![从编辑器窗口查看上下文菜单](../test/media/createunittestsrightclick.png)
 
-2.  单击“确定”接受默认值以创建单元测试，或更改用于创建并命名单元测试项目和单元测试的值。 你可以选择默认添加到单元测试方法的代码。
+2. 单击“确定”接受默认值以创建单元测试，或更改用于创建并命名单元测试项目和单元测试的值。 你可以选择默认添加到单元测试方法的代码。
 
-     ![在编辑器中右键单击并选择“创建单元测试”](../test/media/createunittestsdialog.png)
+    ![在编辑器中右键单击并选择“创建单元测试”](../test/media/createunittestsdialog.png)
 
-3.  在类的所有方法的新单元测试项目中创建单元测试存根。
+3. 在类的所有方法的新单元测试项目中创建单元测试存根。
 
-     ![已创建单元测试](../test/media/createunittestsstubs.png)
+    ![已创建单元测试](../test/media/createunittestsstubs.png)
 
-4.  现在向前跳转，了解如何 [将代码添加到单元测试方法](#write-your-tests) ，以使你的单元测试有意义，并使你想要添加的额外单元测试彻底地测试代码。
+4. 现在向前跳转，了解如何 [将代码添加到单元测试方法](#write-your-tests) ，以使你的单元测试有意义，并使你想要添加的额外单元测试彻底地测试代码。
 
- **手动创建单元测试项目和单元测试**
+### <a name="create-the-unit-test-project-and-unit-tests-manually"></a>手动创建单元测试项目和单元测试
 
- 单元测试项目通常会镜像单个代码项目的结构。 在 MyBank 示例中，你将把名为 `AccountsTests` 和 `BankDbTests` 的两个单元测试项目添加到 `MyBanks` 解决方案中。 测试项目名称是任意的，但采用标准命名约定是一个好主意。
+单元测试项目通常会镜像单个代码项目的结构。 在 MyBank 示例中，你将把名为 `AccountsTests` 和 `BankDbTests` 的两个单元测试项目添加到 `MyBanks` 解决方案中。 测试项目名称是任意的，但采用标准命名约定是一个好主意。
 
- **若要向解决方案中添加单元测试项目：**
+**若要向解决方案中添加单元测试项目：**
 
-1.  在“文件”菜单上，选择“新建”，然后选择“项目”（快捷键：Ctrl+Shift+N）。
+1. 在“文件”菜单上，选择“新建”，然后选择“项目”（快捷键：Ctrl+Shift+N）。
 
-2.  在“新建项目”对话框中，展开“已安装”节点，选择你想要用于测试项目的语言，然后选择“测试”。
+2. 在“新建项目”对话框中，展开“已安装”节点，选择你想要用于测试项目的语言，然后选择“测试”。
 
-3.  若要使用 Microsoft 单元测试框架之一，请从项目模板的列表中选择“单元测试项目”  。 否则，请选择你想要使用的单元测试框架的项目模板。 若要测试我们的示例中的 `Accounts` 项目，你需要将该项目命名为 `AccountsTests`。
+3. 若要使用 Microsoft 单元测试框架之一，请从项目模板的列表中选择“单元测试项目”  。 否则，请选择你想要使用的单元测试框架的项目模板。 若要测试我们的示例中的 `Accounts` 项目，你需要将该项目命名为 `AccountsTests`。
 
-    > [!WARNING]
-    > 并非所有第三方和开放源代码单元测试框架都提供 Visual Studio 项目模板。 有关创建项目的信息，请参阅框架文档。
+   > [!WARNING]
+   > 并非所有第三方和开放源代码单元测试框架都提供 Visual Studio 项目模板。 有关创建项目的信息，请参阅框架文档。
 
-4.  在你的单元测试项目中，将引用添加到所测试项目的代码中，在我们的示例中应添加到帐户项目中。
+4. 在你的单元测试项目中，将引用添加到所测试项目的代码中，在我们的示例中应添加到帐户项目中。
 
-     若要创建代码项目的引用：
+   若要创建代码项目的引用：
 
-    1.  在解决方案资源管理器中，选择项目。
+   1.  在解决方案资源管理器中，选择项目。
 
-    2.  在“项目”菜单上，选择“添加引用” 。
+   2.  在“项目”菜单上，选择“添加引用” 。
 
-    3.  在“引用管理器”对话框中，打开“解决方案”节点，然后选择“项目”。 选择代码项目名称并关闭对话框。
+   3.  在“引用管理器”对话框中，打开“解决方案”节点，然后选择“项目”。 选择代码项目名称并关闭对话框。
 
- 每个单元测试项目包含类，用于镜像代码项目中类的名称。 在我们的示例中， `AccountsTests` 项目将包含以下类：
+每个单元测试项目包含类，用于镜像代码项目中类的名称。 在我们的示例中， `AccountsTests` 项目将包含以下类：
 
 -   `AccountInfoTests` 类包含用于 `AccountInfo` 项目中 `Accounts` 类的单元测试方法
 
@@ -207,21 +207,21 @@ public void My_Test ()
 
 在生成测试项目时，测试将出现在“测试资源管理器”中。 如果“测试资源管理器”不可见，请选择 Visual Studio 菜单上的“测试”，然后依次选择“Windows”、“测试资源管理器”。
 
- ![单元测试资源管理器](../test/media/ute_failedpassednotrunsummary.png)
+![单元测试资源管理器](../test/media/ute_failedpassednotrunsummary.png)
 
- 运行、编写并重新运行测试时，“测试资源管理器”的默认视图将显示“失败的测试”、“通过的测试”、“跳过的测试”和“未运行的测试”组中的结果。 可以选择组标题以打开显示该组中的所有测试的视图。
+运行、编写并重新运行测试时，“测试资源管理器”的默认视图将显示“失败的测试”、“通过的测试”、“跳过的测试”和“未运行的测试”组中的结果。 可以选择组标题以打开显示该组中的所有测试的视图。
 
- 通过在全局级别的搜索框中的匹配文本或选择其中一个预定义的筛选器，你还可以在任何视图中筛选测试。 你可以在任何时间运行任何选定的测试。 测试运行的结果立即显示在资源管理器窗口顶部的通过/失败栏中。 在你选择测试时，会显示测试方法结果的详细信息。
+通过在全局级别的搜索框中的匹配文本或选择其中一个预定义的筛选器，你还可以在任何视图中筛选测试。 你可以在任何时间运行任何选定的测试。 测试运行的结果立即显示在资源管理器窗口顶部的通过/失败栏中。 在你选择测试时，会显示测试方法结果的详细信息。
 
 ### <a name="run-and-view-tests"></a>运行和查看测试
 
 “测试资源管理器”工具栏可帮助你发现、组织和运行你感兴趣的测试。
 
- ![从测试资源管理器工具栏运行测试](../test/media/ute_toolbar.png)
+![从测试资源管理器工具栏运行测试](../test/media/ute_toolbar.png)
 
- 你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。 运行一组测试后，测试运行的摘要将出现在“测试资源管理器”窗口的底部。 选择一个测试以在底部窗格中查看该测试的详细信息。 从上下文菜单中选择“打开测试”（快捷键：F12），以显示所选测试的源代码。
+你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。 运行一组测试后，测试运行的摘要将出现在“测试资源管理器”窗口的底部。 选择一个测试以在底部窗格中查看该测试的详细信息。 从上下文菜单中选择“打开测试”（快捷键：F12），以显示所选测试的源代码。
 
- 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
+如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
 ### <a name="run-tests-after-every-build"></a>每次生成后运行测试
 
@@ -236,13 +236,13 @@ public void My_Test ()
 
 有大量测试时，可以在“测试资源管理器”搜索框中键入，以按指定的字符串筛选列表。 你可以通过从筛选器列表中选择以更多地限制筛选器事件。
 
- ![搜索筛选器类别](../test/media/ute_searchfilter.png)
+![搜索筛选器类别](../test/media/ute_searchfilter.png)
 
 |Button|描述|
 |-|-|
 |![测试资源管理器的分组按钮](../test/media/ute_groupby_btn.png)|若要按类别分组测试，请选择“分组依据”  按钮。|
 
- 有关详细信息，请参阅[使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)
+有关详细信息，请参阅[使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)
 
 ## <a name="qa"></a>问题解答
 
@@ -259,22 +259,22 @@ public void My_Test ()
 
 了解有关 [调试单元测试](../debugger/debugging-in-visual-studio.md)的更多详细信息。
 
- 问：如果使用的是 TDD，该如何从我的测试生成代码？
+问：如果使用的是 TDD，该如何从我的测试生成代码？
 
- **答：** 使用 IntelliSense 在你的项目代码中生成类和方法。 编写调用你想要生成的类或方法的测试方法中的语句，然后打开调用下面的 IntelliSense 菜单。 如果调用新类的构造函数，请从菜单选择“生成新类型”  并按照向导在你的代码项目中插入此类。 如果调用方法，请从 IntelliSense 菜单选择“生成新方法”  。
+**答：** 使用 IntelliSense 在你的项目代码中生成类和方法。 编写调用你想要生成的类或方法的测试方法中的语句，然后打开调用下面的 IntelliSense 菜单。 如果调用新类的构造函数，请从菜单选择“生成新类型”  并按照向导在你的代码项目中插入此类。 如果调用方法，请从 IntelliSense 菜单选择“生成新方法”  。
 
- ![生成方法存根 IntelliSense 菜单](../test/media/ute_generatemethodstubintellisense.png)
+![生成方法存根 IntelliSense 菜单](../test/media/ute_generatemethodstubintellisense.png)
 
- **问：我是否可以创建将多个数据集作为输入来运行测试的单元测试？**
+**问：我是否可以创建将多个数据集作为输入来运行测试的单元测试？**
 
- **答：** 可以。 *数据驱动的测试方法* 使你可以用单个单元测试方法测试一系列值。 对指定包含你想要测试的变量值的数据源和表的测试方法使用 `DataSource` 属性。  在方法体中，你可以使用 `TestContext.DataRow[`*ColumnName*`]` 索引器将行值分配给变量。
+**答：** 可以。 *数据驱动的测试方法* 使你可以用单个单元测试方法测试一系列值。 对指定包含你想要测试的变量值的数据源和表的测试方法使用 `DataSource` 属性。  在方法体中，你可以使用 `TestContext.DataRow[`*ColumnName*`]` 索引器将行值分配给变量。
 
 > [!NOTE]
 > 这些过程仅适用于你使用 Microsoft 单元测试框架为托管代码编写的测试方法。 如果使用的是不同的框架，请查阅框架文档，获取等效功能。
 
- 例如，假定我们将不必要的方法添加到名为 `CheckingAccount` 的 `AddIntegerHelper`类中。 `AddIntegerHelper` 添加两个整数。
+例如，假定我们将不必要的方法添加到名为 `CheckingAccount` 的 `AddIntegerHelper`类中。 `AddIntegerHelper` 添加两个整数。
 
- 若要为 `AddIntegerHelper` 方法创建数据驱动的测试，我们首先创建名为 AccountsTest.accdb 的 Access 数据库和名为 `AddIntegerHelperData` 的表。 `AddIntegerHelperData` 表定义了指定要添加的第一个和第二个操作数的列和指定预期结果的列。 我们使用适当的值填充行数。
+若要为 `AddIntegerHelper` 方法创建数据驱动的测试，我们首先创建名为 AccountsTest.accdb 的 Access 数据库和名为 `AddIntegerHelperData` 的表。 `AddIntegerHelperData` 表定义了指定要添加的第一个和第二个操作数的列和指定预期结果的列。 我们使用适当的值填充行数。
 
 ```csharp
 [DataSource(
@@ -295,27 +295,27 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 特性化的方法将为表中的每一行运行一次。 如果任何迭代失败，“测试资源管理器”将报告方法的测试失败。 该方法的测试结果详细信息窗格显示每行数据的通过/失败状态方法。
 
- 了解有关 [数据驱动的单元测试](../test/how-to-create-a-data-driven-unit-test.md)的详细信息。
+了解有关 [数据驱动的单元测试](../test/how-to-create-a-data-driven-unit-test.md)的详细信息。
 
- **问：是否能查看我的单元测试测试了多少代码？**
+**问：是否能查看我的单元测试测试了多少代码？**
 
- **答：** 可以。 你可以使用 Visual Studio 代码覆盖率工具确定你的单元测试实际测试的代码量。 支持本机和托管语言以及可由单元测试框架运行的所有单元测试框架。
+**答：** 可以。 你可以使用 Visual Studio 代码覆盖率工具确定你的单元测试实际测试的代码量。 支持本机和托管语言以及可由单元测试框架运行的所有单元测试框架。
 
- 你可以在选定的测试上或解决方案中的所有测试上运行代码覆盖率。 “代码覆盖率结果”窗口显示行、函数、类、命名空间和模块执行的产品代码块的百分比。
+你可以在选定的测试上或解决方案中的所有测试上运行代码覆盖率。 “代码覆盖率结果”窗口显示行、函数、类、命名空间和模块执行的产品代码块的百分比。
 
- 若要在解决方案中运行测试方法的代码覆盖率，请在 Visual Studio 菜单上选择“测试”  ，然后选择“分析代码覆盖率” 。
+若要在解决方案中运行测试方法的代码覆盖率，请在 Visual Studio 菜单上选择“测试”  ，然后选择“分析代码覆盖率” 。
 
- 覆盖率结果将显示在“代码覆盖率结果”窗口中。
+覆盖率结果将显示在“代码覆盖率结果”窗口中。
 
- ![代码覆盖率结果](../test/media/ute_codecoverageresults.png)
+![代码覆盖率结果](../test/media/ute_codecoverageresults.png)
 
- 了解有关 [代码覆盖率](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) 的详细信息。
+了解有关 [代码覆盖率](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) 的详细信息。
 
- **问：能否在具有外部依赖项的代码中测试方法？**
+**问：能否在具有外部依赖项的代码中测试方法？**
 
- **答：** 可以。 如果安装了 Visual Studio Enterprise，则可以通过使用托管代码的单元测试框架将 Microsoft Fakes 用于你编写的测试方法。
+**答：** 可以。 如果安装了 Visual Studio Enterprise，则可以通过使用托管代码的单元测试框架将 Microsoft Fakes 用于你编写的测试方法。
 
- Microsoft Fakes 使用两种方法为外部依赖项创建替代类：
+Microsoft Fakes 使用两种方法为外部依赖项创建替代类：
 
 1.  *存根 (stub)* 生成派生自目标依赖关系类的父接口的替代类。 可以将存根 (stub) 方法替换为目标类的公共虚拟方法。
 
@@ -325,10 +325,10 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 了解有关 [使用 Microsoft Fakes 隔离单元测试方法](../test/isolating-code-under-test-with-microsoft-fakes.md)的详细信息。
 
- **问：是否可以使用其他单元测试框架创建单元测试？**
+**问：是否可以使用其他单元测试框架创建单元测试？**
 
- **答：** 可以，请按照下列步骤 [查找和安装其他框架](../test/install-third-party-unit-test-frameworks.md)。 在重新启动 Visual Studio 后，重新打开解决方案以创建单元测试，然后在此处选择你已安装的框架：
+**答：** 可以，请按照下列步骤 [查找和安装其他框架](../test/install-third-party-unit-test-frameworks.md)。 在重新启动 Visual Studio 后，重新打开解决方案以创建单元测试，然后在此处选择你已安装的框架：
 
- ![选择其他已安装的单元测试框架](../test/media/createunittestsdialogextensions.png)
+![选择其他已安装的单元测试框架](../test/media/createunittestsdialogextensions.png)
 
- 将使用选定的框架创建单元测试存根。
+将使用选定的框架创建单元测试存根。

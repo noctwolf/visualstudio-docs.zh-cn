@@ -1,5 +1,5 @@
 ---
-title: Hello World |Microsoft Docs
+title: Hello World 扩展教程 |Microsoft Docs
 ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
@@ -9,16 +9,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0d5ab3c86c454a547ea80307c5440441424b1c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: e2122a98778372690990a75269be2f3087653678
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499560"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349460"
 ---
 # <a name="create-your-first-extension-hello-world"></a>创建第一个扩展： Hello World
 
-此 Hello World 示例指导创建适用于 Visual Studio 在第一个扩展。 本教程将演示如何将新的命令添加到 Visual Studio。
+此 Hello World 示例指导创建适用于 Visual Studio 在第一个扩展。 本教程演示如何将新的命令添加到 Visual Studio。
 
 在此过程中，你将了解如何：
 
@@ -31,15 +31,19 @@ ms.locfileid: "39499560"
 
 ![Hello World 命令](media/hello-world-say-hello-world.png)
 
+> [!NOTE]
+> 本文适用于 Windows 上的 Visual Studio。 Visual Studio for Mac 中，请参阅[Visual Studio for Mac 中的可扩展性演练](/visualstudio/mac/extending-visual-studio-mac-walkthrough)。
+
 ## <a name="prerequisites"></a>系统必备
 
 在开始之前，请确保已安装**Visual Studio 扩展开发**工作负荷包括 VSIX 模板将需要和示例代码。
 
-注意： 可以使用任何版本的 Visual Studio （Community、 Professional 或 Enterprise） 若要创建 Visual Studio 扩展性项目。
+> [!NOTE]
+> 可以使用任何版本的 Visual Studio （Community、 Professional 或 Enterprise） 若要创建 Visual Studio 扩展性项目。
 
 ## <a name="create-an-extensibility-project"></a>创建可扩展性项目
 
-步骤 1。 从**文件**菜单上，单击**新项目**。 在屏幕的底部，可以输入你的项目的名称。
+步骤 1。 从**文件**菜单上，单击**新项目**。 在屏幕的底部，输入你的项目的名称。
 
 步骤 2。 从**模板**菜单上，单击**Visual C#**，单击**扩展性**，然后单击**VSIX 项目**。
 
@@ -53,15 +57,15 @@ ms.locfileid: "39499560"
 
 步骤 1。 如果您选择的清单，可以看到哪些选项是可更改，为实例、 元数据、 说明和版本。
 
-步骤 2。 右键单击项目 （而不是解决方案）。 在上下文菜单上，单击**外**，然后单击**用户控件**。
+步骤 2。 右键单击项目 （而不是解决方案）。 在上下文菜单上，单击**外**，然后单击**新项**。
 
-步骤 3。 返回到**扩展性**部分，并单击**自定义命令**。
+步骤 3。 选择**扩展性**部分，并单击**自定义命令**。
 
 步骤 4。 在中**名称**底部字段中，为其提供一个名称，例如*Command.cs*。
 
 ![自定义命令](media/hello-world-custom-command.png)
 
-您的新命令将被列入**解决方案资源管理器**下**资源**分支。 这是在这里可找到与您的命令，例如，如果你想要修改图像的 PNG 和 ICO 文件相关的其他文件。
+您的新命令所示**解决方案资源管理器**下**资源**分支。 这是在这里可找到与您的命令，例如，如果你想要修改图像的 PNG 和 ICO 文件相关的其他文件。
 
 ## <a name="modify-the-source-code"></a>修改源代码
 
@@ -132,6 +136,6 @@ ms.locfileid: "39499560"
 
 现在，了解使用 Visual Studio 扩展性的基础知识，下面是可以从何处了解详细信息：
 
-* [开始开发 Visual Studio 扩展](starting-to-develop-visual-studio-extensions.md)-示例、 教程。 和发布你的扩展。
+* [开始开发 Visual Studio 扩展](starting-to-develop-visual-studio-extensions.md)-示例、 教程。 和发布你的扩展
 * [什么是 Visual Studio 2017 SDK 中的新增](what-s-new-in-the-visual-studio-2017-sdk.md)-Visual Studio 2017 中的新可扩展性功能
 * [在 Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) -了解 Visual Studio 扩展性的详细信息

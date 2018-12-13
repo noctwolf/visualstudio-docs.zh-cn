@@ -1,7 +1,7 @@
 ---
 title: 教程 - 了解 Visual Studio 中的 Django，步骤 1
 description: Visual Studio 项目上下文中 Django 基础知识的演练，演示 Visual Studio 如何为 Django 开发提供支持。
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2e561e7e5ba060258f88593cdfee0bcfb3ece5c7
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 32779861c3f7b8a0bc8ea9e8a3a42d00a8226e1a
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626962"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001238"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Django Web 框架
 
@@ -100,7 +100,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
     ![用于推送到现有远程存储库的团队资源管理器窗口](media/django/step01-push-to-github.png)
 
-    如果没有现有存储库，可通过“发布到 GitHub”和“推送到 Visual Studio Team Services”选项直接从 Visual Studio 创建一个存储库。
+    如果没有现有存储库，可通过“发布到 GitHub”和“推送到 Azure DevOps”选项直接从 Visual Studio 创建一个存储库。
 
 1. 按照本教程执行操作时，请养成定期在 Visual Studio 中使用控件提交和推送更改的习惯。 本教程会在适当时机提醒你。
 
@@ -163,16 +163,16 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
     ![Python 项目上下文菜单上的 Django 命令](media/django/step01-django-commands-menu.png)
 
-1. 在你的项目中是一个与项目名称相同的文件夹。 它包含基本 Django 项目文件：
+2. 在你的项目中是一个与项目名称相同的文件夹。 它包含基本 Django 项目文件：
 
-    - __init.py：告知 Python 此文件夹是 Python 包的空文件。
-    - wsgi.py：WSGI 兼容的 Web 服务器执行项目的入口点。 通常会按原样保留该文件，因为它为生产 Web 服务器提供挂钩。
-    - settings.py：包含在开发 Web 应用的过程中修改的 Django 项目的设置。
-    - urls.py：包含同样在开发过程中修改的 Django 项目的内容目录。
+   - __init.py：告知 Python 此文件夹是 Python 包的空文件。
+   - wsgi.py：WSGI 兼容的 Web 服务器执行项目的入口点。 通常会按原样保留该文件，因为它为生产 Web 服务器提供挂钩。
+   - settings.py：包含在开发 Web 应用的过程中修改的 Django 项目的设置。
+   - urls.py：包含同样在开发过程中修改的 Django 项目的内容目录。
 
-    ![解决方案资源管理器中的 Django 项目文件](media/django/step01-django-project-in-solution-explorer.png)
+     ![解决方案资源管理器中的 Django 项目文件](media/django/step01-django-project-in-solution-explorer.png)
 
-1. 如前文所述，Visual Studio 模板还将 requirements.txt 文件添加到指定 Django 包依赖项的项目中。 该文件旨在邀请你在第一次创建项目时创建虚拟环境。
+3. 如前文所述，Visual Studio 模板还将 requirements.txt 文件添加到指定 Django 包依赖项的项目中。 该文件旨在邀请你在第一次创建项目时创建虚拟环境。
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>问：在我安装其他包后，Visual Studio 能否从虚拟环境生成 requirements.txt 文件？
 

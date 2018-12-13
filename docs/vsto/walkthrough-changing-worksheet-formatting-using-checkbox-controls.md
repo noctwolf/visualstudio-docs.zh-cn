@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 990879ca953a2d43a6dee66424fdff2e2dd3c274
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843530"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>演练： 更改工作表格式设置使用 CheckBox 控件
   本演练显示了使用 Microsoft Office Excel 工作表上的复选框来更改格式设置基础的知识。 将使用 Visual Studio 中的 Office 开发工具创建并将代码添加到你的项目。 若要查看已完成的示例，请参阅 Excel 控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
@@ -101,24 +101,24 @@ ms.locfileid: "38778365"
   
 #### <a name="to-add-text-to-a-namedrange-control"></a>若要将文本添加到 NamedRange 控件  
   
-1.  从**Excel 控件**选项卡的工具箱拖动<xref:Microsoft.Office.Tools.Excel.NamedRange>单元格的控件**B9**。  
+1. 从**Excel 控件**选项卡的工具箱拖动<xref:Microsoft.Office.Tools.Excel.NamedRange>单元格的控件**B9**。  
   
-2.  确认 **$B$ 9**将出现在可编辑的文本框，然后该单元格**B9**处于选中状态。 如果不存在，请单击单元格**B9**以将其选中。  
+2. 确认 **$B$ 9**将出现在可编辑的文本框，然后该单元格**B9**处于选中状态。 如果不存在，请单击单元格**B9**以将其选中。  
   
-3.  单击 **“确定”**。  
+3. 单击 **“确定”**。  
   
-4.  单元格**B9**变得名为一个范围`NamedRange1`。  
+4. 单元格**B9**变得名为一个范围`NamedRange1`。  
   
-     在工作表上没有可见的指示，但`NamedRange1`将出现在**名称框**（只是工作表的上方左侧和右侧） 单元格时**B9**处于选中状态。  
+    在工作表上没有可见的指示，但`NamedRange1`将出现在**名称框**（只是工作表的上方左侧和右侧） 单元格时**B9**处于选中状态。  
   
-5.  确保**NamedRange1**是可见的对象名称列表框中**属性**窗口中，并更改以下属性：  
+5. 确保**NamedRange1**是可见的对象名称列表框中**属性**窗口中，并更改以下属性：  
   
-    |属性|“值”|  
-    |--------------|-----------|  
-    |**名称**|**textFont**|  
-    |**Value2**|**单击复选框来更改此文本的格式设置。**|  
+   |属性|“值”|  
+   |--------------|-----------|  
+   |**名称**|**textFont**|  
+   |**Value2**|**单击复选框来更改此文本的格式设置。**|  
   
- 接下来，编写代码以设置文本格式时选择一个选项。  
+   接下来，编写代码以设置文本格式时选择一个选项。  
   
 ## <a name="format-the-text-when-an-option-is-selected"></a>设置文本格式时选择一个选项  
  在本部分中，将编写代码，以便当用户选择一种格式化选项，更改在工作表中的文本的格式。  

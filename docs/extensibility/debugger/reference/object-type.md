@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE |Microsoft 文档
+title: OBJECT_TYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc5c7367a8b134324073d40452ec9b7ec20c1ffc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eff83198e337a3f89c88663722bf34046d3d4f62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905735"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 指定的表达式计算器中的对象的类型。  
@@ -88,13 +88,13 @@ public enum enum_OBJECT_TYPE {
  指示对象是双字节无符号的整数。  
   
  OBJECT_TYPE_I4  
- 指示对象是一个 4 字节有符号的整数。  
+ 指示对象是一个四字节有符号的整数。  
   
  OBJECT_TYPE_U4  
- 指示对象是 4 字节无符号的整数。  
+ 指示对象是一个四字节无符号的整数。  
   
  OBJECT_TYPE_I8  
- 指示对象是 8 字节有符号的整数。  
+ 指示对象是一个 8 字节有符号的整数。  
   
  OBJECT_TYPE_U8  
  指示对象是一个 8 字节无符号的整数。  
@@ -109,13 +109,13 @@ public enum enum_OBJECT_TYPE {
  指示对象是一个对象。  
   
  OBJECT_TYPE_NULL  
- 指示该对象为 NULL。  
+ 指示对象为 NULL。  
   
  OBJECT_TYPE_CLASS  
  指示对象是一个类。  
   
 ## <a name="remarks"></a>备注  
- 作为自变量传递[CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)和[CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)方法。  
+ 作为参数传递[CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)并[CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： ee.h  
@@ -124,7 +124,7 @@ public enum enum_OBJECT_TYPE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)   
  [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)

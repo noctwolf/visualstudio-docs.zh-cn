@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 871287b62506408139ddc62d624391bfa73c86ec
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3aef071d0c124878adf58d8346ad0b50f741300b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636082"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931345"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函数
 此函数具有给定名称指定现有父项目下创建子项目`lpParentProjPath`参数。  

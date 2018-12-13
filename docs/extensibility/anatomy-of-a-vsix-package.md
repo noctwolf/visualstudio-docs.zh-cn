@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5c60e0b812cd0557b266d3e34dae62cb22cc57d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937728"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 包的剖析
 VSIX 包是 *.vsix*文件，其中包含一个或多个 Visual Studio 扩展，与 Visual Studio 的元数据一起使用来进行分类和安装的扩展。 该元数据包含在 VSIX 清单中， *[Content_Types].xml*文件。 VSIX 包可能还包含一个或多个*Extension.vsixlangpack*文件，以提供本地化安装程序文本，并可能包含其他 VSIX 包安装依赖项。  
@@ -55,7 +55,7 @@ VSIX 包是 *.vsix*文件，其中包含一个或多个 Visual Studio 扩展，�
 ## <a name="installation-location"></a>安装位置  
  在安装期间，**扩展和更新**下的某个文件夹中的 VSIX 包的内容看起来 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*。  
   
- 默认情况下，安装仅适用于当前用户，因为 *%localappdata%* 是特定于用户的目录。 但是，如果您设置[AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b)到在清单元素`True`，将在安装该扩展 *...\\* VisualStudioInstallationFolder*\Common7\IDE\Extensions*和将可供所有用户的计算机。  
+ 默认情况下，安装仅适用于当前用户，因为 *%localappdata%* 是特定于用户的目录。 但是，如果您设置[AllUsers](https://msdn.microsoft.com/library/ac817f50-3276-4ddb-b467-8bbb1432455b)到在清单元素`True`，将在安装该扩展<em>...\\</em> VisualStudioInstallationFolder<em>\Common7\IDE\Extensions</em>和将可供所有用户的计算机。  
   
 ## <a name="contenttypesxml"></a>[Content_Types].xml  
  *[Content_Types].xml*文件来确定在展开的文件类型 *.vsix*文件。 Visual Studio 在包的安装过程中使用此文件，但不会安装文件本身。 有关此文件的详细信息，请参阅[[Content_types].xml 文件的结构](the-structure-of-the-content-types-dot-xml-file.md)。  

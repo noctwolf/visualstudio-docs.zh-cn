@@ -1,5 +1,5 @@
 ---
-title: 保存标准文档 |Microsoft 文档
+title: 正在保存标准文档 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,51 +15,51 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45fa2c5acfad8195ed2853d7e21413b77262a6b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 251a9a7632a9d9615302cd3c5c1bf2a406529caf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875601"
 ---
 # <a name="saving-a-standard-document"></a>保存标准文档
-环境处理保存、 另存为，和保存所有命令。 当用户选择**保存**，**另存为**，或**保存所有**从**文件**菜单或关闭解决方案，从而导致**保存所有**，将发生以下过程。  
+环境处理保存、 另存为，并保存所有命令。 如果用户选择**保存**，**另存为**，或**全部保存**从**文件**菜单或关闭解决方案，从而导致**保存所有**，发生以下过程。  
   
  ![标准编辑器](../../extensibility/internals/media/public.gif "公共")  
-保存，另存为和全部保存命令处理的标准编辑器  
+保存、 另存为和全部保存命令处理的标准编辑器  
   
- 此过程详细介绍了以下步骤：  
+ 此过程详述以下步骤：  
   
-1.  当**保存**和**另存为**命令当选中时，该环境使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服务以确定活动文档窗口，因此应该因此保存项。 活动文档窗口了解后，环境查找的层次结构的指针和项标识符 (itemID) 中运行的文档表中的文档。 有关详细信息，请参阅[运行 Document 表](../../extensibility/internals/running-document-table.md)。  
+1. 当**保存**并**另存为**命令当选中时，在环境中使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服务以确定活动文档窗口，并应因此保存项。 活动文档窗口了解后，在环境中正在运行的 document 表的文档查找的层次结构的指针和项标识符 (itemID)。 有关详细信息，请参阅[运行文档表](../../extensibility/internals/running-document-table.md)。  
   
-     当**保存所有**选择命令，环境使用正在运行的 document 表中的信息进行编译的所有项保存的列表。  
+    当**全部保存**选择命令时，环境使用正在运行的 document 表中的信息来编译所有要保存的项的列表。  
   
-2.  当解决方案收到<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用，它循环访问所选的项集的 (即，由公开多个选择<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服务)。  
+2. 当解决方案收到<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用时，它会循环访问选定项的集 (即，公开多个选择<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服务)。  
   
-3.  在所选内容的每个项，该解决方案使用层次结构指针来调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A>方法来确定是否**保存**应启用菜单命令。 如果一个或多个项已更新，则**保存**启用命令。 如果层次结构使用标准编辑器，然后查询的层次结构委托脏状态设置为编辑器中通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>方法。  
+3. 选定内容中的每个项，该解决方案使用层次结构指针来调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A>方法，以确定是否**保存**应启用菜单命令。 如果一个或多个项已更新，则**保存**启用命令。 如果在层次结构使用的标准编辑器，然后查询的层次结构委托脏状态设置为编辑器中通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>方法。  
   
-4.  于已更新每个所选项目，该解决方案使用层次结构指针来调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>适当的层次结构上的方法。  
+4. 已更新的每个选定项，该解决方案使用层次结构指针来调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>适当的层次结构上的方法。  
   
-     很常见的层次结构，可以使用标准编辑器来编辑该文档。 在这种情况下，文档数据对象应支持该编辑器<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>接口。 在接收时<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>方法调用，该项目应通知的编辑器中保存文档后通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A>文档数据对象上的方法。 编辑器可以允许处理环境**另存为**对话框中，通过调用`Query Service`为<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>接口。 这将返回一个指向<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>接口。 然后必须调用编辑器<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>方法，将指针传递到编辑器的<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>通过实现`pPersistFile`参数。 环境，然后执行保存操作并提供**另存为**编辑器对话框。 环境然后回拨到编辑器中，与<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>。  
+    它是常见的层次结构以使用标准编辑器来编辑该文档。 在这种情况下，文档数据对象的编辑器应支持<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>接口。 在接收时<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>方法调用中，项目应该通知保存文档时通过调用编辑器<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A>文档数据对象上的方法。 编辑器可以允许环境来处理**另存为**对话框中的，通过调用`Query Service`为<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>接口。 这将返回一个指向<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>接口。 然后，在编辑器必须调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>方法，将指针传递到编辑器<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>通过实现`pPersistFile`参数。 在环境，然后执行保存操作并提供**另存为**编辑器对话框。 在环境然后回拨到编辑器<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>。  
   
-5.  如果该用户尝试保存一个未命名的文档 （即，以前未保存的文档），则实际执行的另存为命令。  
+5. 如果用户尝试保存一个无标题的文档 （即以前未保存的文档），则实际执行的另存为命令。  
   
-6.  对于另存为命令，环境将显示另存为对话框中，提示用户输入文件名称。  
+6. 对于另存为命令中，环境将显示另存为对话框，提示用户输入文件的名称。  
   
-     如果已更改文件的名称，则层次结构负责更新文档帧的缓存信息通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>(VSFPROPID_MkDocument)。  
+    如果已更改的文件的名称，则在层次结构负责更新文档框架的缓存信息通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>(VSFPROPID_MkDocument)。  
   
- 如果**另存为**命令将移动文档的位置，并且层次结构是敏感的文档位置，则层次结构负责关闭打开的文档窗口的所有权交给另一个层次结构。 例如，这样如果项目跟踪文件是否为内部或外部的文件 （杂项文件） 与项目之间的关系。 使用以下过程更改为杂项文件项目的文件的所有权。  
+   如果**另存为**命令将该文档的位置和层次结构为敏感的文档位置，则在层次结构是负责将关闭打开的文档窗口的所有权传递给另一个层次结构。 例如，发生这种情况如果项目跟踪文件是与项目相关的内部或外部的文件 （杂项文件）。 使用以下过程来将文件的所有权更改为杂项文件项目。  
   
 ## <a name="changing-file-ownership"></a>更改文件所有权  
   
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>若要将文件所有权更改为杂项文件项目  
   
-1.  查询服务<xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager>接口。  
+1.  查询服务以获取<xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager>接口。  
   
-     指向的指针<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2>返回。  
+     一个指向<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2>返回。  
   
-2.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A>(`pszMkDocumentNew`， `punkWindowFrame`) 方法传输到新层次结构的文档。 层次结构执行的另存为命令调用此方法。  
+2.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A>(`pszMkDocumentNew`， `punkWindowFrame`) 方法，将文档传输到新层次结构。 层次结构执行另存为命令调用此方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)

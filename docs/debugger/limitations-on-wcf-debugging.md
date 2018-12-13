@@ -18,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 001393a856dc374d92e11ff2d4707346a35aea12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280645"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887418"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 调试的限制
 有三种开始 WCF 服务调试的方式：  
   
--   调试调用服务的客户端进程。 调试器单步执行该服务。 该服务不必与客户端应用程序处于同一个解决方案中。  
+- 调试调用服务的客户端进程。 调试器单步执行该服务。 该服务不必与客户端应用程序处于同一个解决方案中。  
   
--   调试请求服务的客户端进程。 该服务必须是解决方案的一部分。  
+- 调试请求服务的客户端进程。 该服务必须是解决方案的一部分。  
   
--   您使用**附加到进程**将附加到当前正在运行的服务。 调试将在该服务内部开始。  
+- 您使用**附加到进程**将附加到当前正在运行的服务。 调试将在该服务内部开始。  
   
- 本主题描述了有关这些方案的限制。  
+  本主题描述了有关这些方案的限制。  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>单步执行服务的限制  
  若要从正在调试的客户端应用程序单步执行服务，必须满足下列条件：  
@@ -61,19 +61,19 @@ ms.locfileid: "44280645"
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>自动附加到服务的限制  
  自动附加到服务具有下列限制：  
   
--   该服务必须是要调试的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案的一部分。  
+- 该服务必须是要调试的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案的一部分。  
   
--   该服务必须进行托管。 它可能是网站项目 （文件系统和 HTTP）、 Web 应用程序项目 （文件系统和 HTTP） 或 WCF 服务库项目的一部分。 WCF 服务库项目可以是服务库或工作流服务库。  
+- 该服务必须进行托管。 它可能是网站项目 （文件系统和 HTTP）、 Web 应用程序项目 （文件系统和 HTTP） 或 WCF 服务库项目的一部分。 WCF 服务库项目可以是服务库或工作流服务库。  
   
--   必须从 WCF 客户端调用该服务。  
+- 必须从 WCF 客户端调用该服务。  
   
--   必须使用 app.config 或 Web.config 文件中的以下代码启用调试：  
+- 必须使用 app.config 或 Web.config 文件中的以下代码启用调试：  
   
-    ```xml
-    <system.web>  
-      <compilation debug="true" />  
-    <system.web>  
-    ```  
+  ```xml
+  <system.web>  
+    <compilation debug="true" />  
+  <system.web>  
+  ```  
   
 ## <a name="self-hosting"></a>自我托管  
  一个*自我托管服务*是不会在 IIS 中，WCF 服务主机内运行的 WCF 服务或[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]开发服务器。 有关如何调试自承载的服务的信息，请参阅[如何： 调试自承载的 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)。  

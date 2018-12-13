@@ -18,19 +18,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8f6928dd09b971e2c5924d34058a1a0d5e28394
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 041b3c5d0a67d590bc409c21dd53d5d162b0a0b9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947386"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389245"
 ---
 # <a name="options-text-editor-c-intellisense"></a>选项，文本编辑器，C#，IntelliSense
 
 使用“IntelliSense”选项页可修改影响 IntelliSense for C# 行为的设置。 要访问此选项页，请选择“工具” > “选项”，然后选择“文本编辑器” > “C#” > “IntelliSense”。
-
-> [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
 
 “IntelliSense”选项页面包含以下选项：
 
@@ -46,9 +43,7 @@ ms.locfileid: "31947386"
 
 - 显示完成项筛选器
 
-- 显示名称建议
-
-### <a name="snippets-behavior"></a>片段行为
+## <a name="snippets-behavior"></a>片段行为
 
 - 从不包含片段
 
@@ -62,7 +57,7 @@ ms.locfileid: "31947386"
 
    选择此选项后，IntelliSense 会在标识符后按 ?+Tab 时，将 C# 代码片段的别名添加到完成列表中
 
-### <a name="enter-key-behavior"></a>输入关键行为
+## <a name="enter-key-behavior"></a>输入关键行为
 
 - 按下 Enter 时不添加新行
 
@@ -85,6 +80,10 @@ ms.locfileid: "31947386"
 - 按下 Enter 时始终添加新行
 
    指定如果键入完成列表中某条目的任意字符后按 Enter，则自动添加新行并且光标移动到新行。
+
+## <a name="show-name-suggestions"></a>显示名称建议
+
+为最近所选择的成员执行自动对象名称完成。
 
 ## <a name="see-also"></a>请参阅
 

@@ -1,6 +1,6 @@
 ﻿---
 title: 调试实时 ASP.NET Azure 应用
-ms.description: Learn how to set snappoints and view snapshots with the Snapshot Debugger.
+description: 了解如何设置吸附点和查看快照调试程序的快照。
 ms.custom: mvc
 ms.date: 03/16/2018
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: a2dfc759fbd42dd435133e223c72760ae5c274c3
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: b7f98dccebe9db183c63c6f859ceb2234fdb1acf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154458"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056913"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>调试实时 ASP.NET Azure 应用程序使用快照调试程序
 
@@ -36,7 +36,7 @@ Snappoint 和 logpoint 类似于断点，但与断点不同，snappoint 不暂�
 
 ## <a name="prerequisites"></a>系统必备
 
-* 快照调试器功能仅适用于 Visual Studio 2017 Enterprise 版本 15.5 或更高版本与**ASP.NET 和 web 开发工作负荷**。 有关 ASP.NET Core，你还需要。**NET 核心开发**安装的工作负荷。
+* 快照调试器功能仅适用于 Visual Studio 2017 Enterprise 版本 15.5 或更高版本与**ASP.NET 和 web 开发工作负荷**。 对于 ASP.NET Core 中，您还需要 **.NET Core 开发**安装工作负载。
 
     如果尚未安装，安装[Visual Studio 2017 Enterprise 版本 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)或更高版本。 如果要从以前的 Visual Studio 2017 安装更新，运行 Visual Studio 安装程序并签入的快照调试器组件**ASP.NET 和 web 开发工作负荷**。
 
@@ -114,7 +114,7 @@ Snappoint 和 logpoint 类似于断点，但与断点不同，snappoint 不暂�
 
 1. 右键单击吸附点图标 （空心球），然后选择**设置**。
 
-   ![选择设置](../debugger/media/snapshot-snappoint-settings.png)
+   ![选择“设置”](../debugger/media/snapshot-snappoint-settings.png)
 
 1. 在吸附点设置窗口中，键入一个表达式。
 
@@ -140,7 +140,7 @@ Snappoint 和 logpoint 类似于断点，但与断点不同，snappoint 不暂�
 
     ![Diagsession 窗口中的记录点数据](../debugger/media/snapshot-logpoint-output.png)
 
-    如果你选择**将发送到应用程序日志**、 logpoint 命中时，任何位置，你可以看到消息从显示的消息`System.Diagnostics.Trace`(或`ILogger`.NET Core 中)，如[App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
+    如果愿意**发送到应用程序日志**，当命中记录点，请任意位置，您可以看到消息从出现的消息`System.Diagnostics.Trace`(或`ILogger`.NET Core 中)，如[App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
 
 ## <a name="next-steps"></a>后续步骤
 

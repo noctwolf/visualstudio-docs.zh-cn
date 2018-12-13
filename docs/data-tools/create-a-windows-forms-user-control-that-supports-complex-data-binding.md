@@ -16,23 +16,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11ab6a812701d371e86f07b3e8da5fa91f90cbcf
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: 7de5cbfe7de8919143cd30517c18f9e5ad6ba598
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582312"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305242"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>创建支持复杂数据绑定的 Windows 窗体用户控件
 
-在 Windows 应用程序中的窗体上显示数据，可以选择从现有控件**工具箱**，或如果你的应用程序需要标准控件中不可用的功能，可以创作自定义控件。 本演练显示了如何创建实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件。 实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件包含可以绑定到数据的 `DataSource` 和 `DataMember` 属性。 此类控件类似于 <xref:System.Windows.Forms.DataGridView> 或 <xref:System.Windows.Forms.ListBox>。
+在 Windows 应用程序的窗体上显示数据时，你可以从“工具箱”**中选择现有的控件，而当标准控件无法提供应用程序所要求的功能时，你还可以创作自定义控件。 本演练显示了如何创建实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件。 实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件包含可以绑定到数据的 `DataSource` 和 `DataMember` 属性。 此类控件类似于 <xref:System.Windows.Forms.DataGridView> 或 <xref:System.Windows.Forms.ListBox>。
 
 控件创作的详细信息，请参阅[开发 Windows 窗体控件在设计时](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)。
 
-创建数据绑定方案中使用的控件时需要实现以下数据绑定特性之一：
+创作用于数据绑定方案中的控件时，你需要实现以下数据绑定特性之一：
 
 |数据绑定特性用法|
-|-----------------------------------|
+| - |
 |在简单控件上实现 <xref:System.ComponentModel.DefaultBindingPropertyAttribute>（如 <xref:System.Windows.Forms.TextBox>），此类控件用于显示数据的单个列（或属性）。 有关详细信息，请参阅[创建支持简单数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)。|
 |在控件上实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>（如 <xref:System.Windows.Forms.DataGridView>），此类控件用于显示数据列表（或表）。 （本演练页面描述了此过程）。|
 |在控件上实现 <xref:System.ComponentModel.LookupBindingPropertiesAttribute>（如 <xref:System.Windows.Forms.ComboBox>），此类控件用于显示数据列表（或表），也需要显示数据的单个列或属性。 有关详细信息，请参阅[创建支持查找数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。|
@@ -41,9 +41,9 @@ ms.locfileid: "39582312"
 
 在本演练中，你将学会如何执行以下任务：
 
-- 创建一个新**Windows 窗体应用程序**。
+- 创建新的 Windows 窗体应用程序。
 
-- 添加一个新**用户控件**到你的项目。
+- 将新的“用户控件”**添加到你的项目中。
 
 - 以可视方式设计用户控件。
 
@@ -51,9 +51,9 @@ ms.locfileid: "39582312"
 
 - 创建具有的数据集[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)。
 
-- 设置**客户**表中[数据源窗口](add-new-data-sources.md)以使用新的复杂控件。
+- 设置**客户**表中[数据源窗口](add-new-data-sources.md#data-sources-window)以使用新的复杂控件。
 
-- 通过将其从添加新控件**数据源窗口**拖动到**Form1**。
+- 通过将新控件从“数据源窗口”**拖到“Form1”** 上来添加新控件。
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -73,29 +73,29 @@ ms.locfileid: "39582312"
 
        后不久，查询完成运行并创建 Northwind 数据库。
 
-## <a name="create-a-windows-forms-application"></a>创建 Windows 窗体应用程序
+## <a name="create-a-windows-forms-application"></a>创建一个 Windows 窗体应用程序。
 
 第一步是创建**Windows 窗体应用程序**:
 
 1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
 
-1. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
+1. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
 
 1. 在中间窗格中，选择**Windows 窗体应用**项目类型。
 
 1. 将项目命名**ComplexControlWalkthrough**，然后选择**确定**。
 
-    **ComplexControlWalkthrough**项目时创建，并添加到**解决方案资源管理器**。
+    “ComplexControlWalkthrough”**项目即被创建并添加到“解决方案资源管理器”** 中。
 
-## <a name="add-a-user-control-to-the-project"></a>将用户控件添加到项目
+## <a name="add-a-user-control-to-the-project"></a>将用户控件添加到项目中。
 
 因为本演练创建复杂数据绑定控件从**用户控件**，添加**用户控件**项与项目：
 
-1. 从**项目**菜单中，选择**添加用户控件**。
+1. 从“项目”**菜单中，选择“添加用户控件”**。
 
-1. 类型**ComplexDataGridView**中**名称**区域中，并单击**添加**。
+1. 在“名称”**区域中键入“ComplexDataGridView”，然后单击“添加”**。
 
-    **ComplexDataGridView**控件添加到**解决方案资源管理器**，并在设计器中打开。
+    “ComplexDataGridView”**控件将会添加到“解决方案资源管理器”** 中，并在设计器中打开该控件。
 
 ## <a name="design-the-complexdatagridview-control"></a>设计 ComplexDataGridView 控件
 
@@ -103,9 +103,9 @@ ms.locfileid: "39582312"
 
 ## <a name="add-the-required-data-binding-attribute"></a>添加所需的数据绑定属性
 
-对于复杂控件支持数据绑定的可以实现<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>:
+对于支持数据绑定的复杂控件，你可以实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>。
 
-1. 交换机**ComplexDataGridView**到代码视图的控件。 (在**视图**菜单中，选择**代码**。)
+1. 将“ComplexDataGridView”**控件切换到代码视图。 （在“视图”**菜单上，选择“代码”**。）
 
 1. 将 `ComplexDataGridView` 中的代码替换为以下内容：
 
@@ -118,45 +118,45 @@ ms.locfileid: "39582312"
 
 使用**数据源配置**向导创建数据源基于`Customers`Northwind 示例数据库中的表：
 
-1.  在 **“数据”** 菜单上，单击 **“显示数据源”**。
+1.  若要打开**数据源**窗口，然后在**数据**菜单中，单击**显示数据源**。
 
-2.  在中**数据源**窗口中，选择**添加新数据源**以启动**数据源配置**向导。
+2.  在“数据源”**窗口中，选择“添加新数据源”** 以启动“数据源配置向导”**。
 
 3.  在 **“选择数据源类型”** 页上选择 **“数据库”** ，然后单击 **“下一步”**。
 
-4.  上**选择您的数据连接**页面上执行以下项之一：
+4.  在“选择你的数据连接”**页面上，执行以下操作之一：
 
     - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-    - 选择**新的连接**以启动**添加/修改连接**对话框。
+    - 选择“新建连接”**以启动“添加/修改连接”** 对话框。
 
-5.  如果你的数据库需要密码，选择选项以包括敏感数据，然后单击**下一步**。
+5.  如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”**。
 
 6.  上**将连接字符串保存到应用程序配置文件**页上，单击**下一步**。
 
-7.  上**选择数据库对象**页上，展开**表**节点。
+7.  在“选择数据库对象”**页上，展开“表”** 节点。
 
-8.  选择`Customers`表，并单击**完成**。
+8.  选择 `Customers` 表，然后单击“完成”**。
 
-    **NorthwindDataSet**添加到你的项目，并`Customers`表中将出现**数据源**窗口。
+    “NorthwindDataSet”**即被添加到你的项目中，并且“数据源”** 窗口中将显示 `Customers` 表。
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>设置 Customers 表以使用 ComplexDataGridView 控件
 
-内**数据源**窗口中，可以设置要在项拖动到窗体之前创建的控件：
+在“数据源”**窗口中，你可以先设置要创建的控件，然后再将项拖动到窗体上。
 
-1. 打开**Form1**在设计器中。
+1. 在设计器中打开“Form1”**。
 
-1. 展开**客户**中的节点**数据源**窗口。
+1. 在“数据源”**窗口中展开“Customers”** 节点。
 
-1. 单击下拉箭头**客户**节点，然后选择**自定义**。
+1. 单击“Customers”**节点上的下拉箭头，然后选择“自定义”**。
 
-1. 选择**ComplexDataGridView**从列表中**关联的控件**中**数据 UI 自定义选项**对话框。
+1. 在“数据 UI 自定义选项”**对话框中，从“关联的控件”** 列表中选择“ComplexDataGridView”**。
 
-1. 单击下拉箭头`Customers`表，然后选择**ComplexDataGridView**从控件列表。
+1. 单击 `Customers` 表上的下拉箭头，然后从控件列表中选择“ComplexDataGridView”**。
 
-## <a name="add-controls-to-the-form"></a>将控件添加到窗体
+## <a name="add-controls-to-the-form"></a>向窗体添加控件。
 
-可以通过将项从创建数据绑定控件**数据源**窗口拖到窗体上的。 将主**客户**从节点**数据源**拖到窗体的窗口。 确认**ComplexDataGridView**控件用于显示表的数据。
+通过将某些项从“数据源”**窗口拖到你的窗体上，可创建数据绑定控件。 将主“Customers”**节点从“数据源”** 窗口拖到窗体上。 确认**ComplexDataGridView**控件用于显示表的数据。
 
 ## <a name="run-the-application"></a>运行此应用程序
 

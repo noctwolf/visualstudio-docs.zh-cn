@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: b0204a8e86d110fe30240b11b6323c31e79fb841
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1cc8986c3101bb2048e0cd4ace739974031344ed
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382734"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894776"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>为 UWP 控件设置唯一的自动化属性以进行测试
 
 若想针对基于 XAML 的 UWP 应用程序运行编码的 UI 测试，每个控件必须由唯一的自动化属性标识。 可以根据应用中 XAML 控件的类型分配唯一自动化属性。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="static-xaml-definition"></a>静态 XAML 定义
 
@@ -43,7 +45,7 @@ ms.locfileid: "39382734"
 在控件 XAML 中将 AutomationProperties.AutomationId 显式设为“ButtonX”。
 
 ```xaml
-<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
+<Button AutomationProperties.AutomationId="ButtonX" Height="31" HorizontalAlignment="Left" Margin="23,26,0,0"  VerticalAlignment="Top" Width="140" Click="ButtonX_Click" />
 ```
 
 在控件 XAML 中将 AutomationProperties.Name 显式设为“ButtonY”。

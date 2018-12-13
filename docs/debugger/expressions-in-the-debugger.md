@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626027"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257246"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的表达式
 Visual Studio 调试器包括表达式计算器，当您在 **“快速监视”** 对话框、 **“监视”** 窗口或 **“即时”** 窗口中输入表达式时，这些计算器可以对其进行计算。 这些表达式计算器还可以在 **“断点”** 窗口和调试器中的许多其他位置使用。
   
- 以下各节提供了有关不同语言的表达式的详细信息。  
+ 以下各节介绍了 Visual Studio 支持的语言表达式计算的限制。
   
 ## <a name="f-expressions-are-not-supported"></a>不支持 F# 表达式。  
  无法识别 F# 表达式。 如果正在调试 F# 代码，你需要在向调试器窗口或对话框中输入表达式之前，将表达式转换为 C# 语法。 当把表达式从 F # 转换到 C# 时，请务必记住 C# 使用 `==` 运算符来测试相等性，而 F # 使用单个 `=`。  
@@ -91,13 +91,13 @@ int main()
   
  调试器内部函数：  
   
--   一定是安全的：执行调试器内部函数将不会中断将调试的进程。  
+- 一定是安全的：执行调试器内部函数将不会中断将调试的进程。  
   
--   在任何表达式中都是被允许的，甚至在不允许副作用和函数计算的方案中也是如此。  
+- 在任何表达式中都是被允许的，甚至在不允许副作用和函数计算的方案中也是如此。  
   
--   在无法进行正则函数调用的方案（例如，调试小型转储）中是可行的。  
+- 在无法进行正则函数调用的方案（例如，调试小型转储）中是可行的。  
   
- 此外，可利用调试器内部函数更方便地计算表达式。 例如， `strncmp(str, "asd")` 比 `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`更易于写入断点条件中。 )  
+  此外，可利用调试器内部函数更方便地计算表达式。 例如， `strncmp(str, "asd")` 比 `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`更易于写入断点条件中。 )  
   
 |区域|内部函数|  
 |----------|-------------------------|  
@@ -147,7 +147,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic - 不支持的表达式  
   
 ### <a name="dynamic-objects"></a>动态对象  
- 你可以使用静态类型化为动态的调试器表达式中的变量。 当对象实现<xref:System.Dynamic.IDynamicMetaObjectProvider>中监视窗口中，节点会添加一个动态视图计算。 该动态视图节点显示对象成员，但不允许编辑成员的值。  
+ 你可以使用静态类型化为动态的调试器表达式中的变量。 在“监视”窗口中计算实现 <xref:System.Dynamic.IDynamicMetaObjectProvider> 的对象时，会添加一个“动态视图”节点。 该动态视图节点显示对象成员，但不允许编辑成员的值。  
   
  不支持动态对象的下列功能：  
   
@@ -208,6 +208,6 @@ int main()
   
 ## <a name="see-also"></a>请参阅  
  [C + + 中的格式说明符](../debugger/format-specifiers-in-cpp.md)   
- [上下文运算符 （c + +）](../debugger/context-operator-cpp.md)   
+ [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)   
  [伪变量](../debugger/pseudovariables.md)

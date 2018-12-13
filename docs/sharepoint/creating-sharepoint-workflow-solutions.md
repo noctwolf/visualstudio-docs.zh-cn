@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892306"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>创建 SharePoint 工作流解决方案
 
@@ -70,25 +70,25 @@ ms.locfileid: "42634717"
 
  有两种类型的活动：
 
--   *简单活动*执行单个工作单元，如"延时 1 天"或"启动 Web 服务"。
+- *简单活动*执行单个工作单元，如"延时 1 天"或"启动 Web 服务"。
 
--   *复合活动*包含其他活动; 例如，条件的活动可能包含两个分支。
+- *复合活动*包含其他活动; 例如，条件的活动可能包含两个分支。
 
- 中提供了这两种类型的活动**工具箱**。
+  中提供了这两种类型的活动**工具箱**。
 
- 活动可以具有属性、 方法和事件。 使用**属性**窗口以便设置活动的属性。
+  活动可以具有属性、 方法和事件。 使用**属性**窗口以便设置活动的属性。
 
- 此外可以创建自定义活动。 有关详细信息，请参阅[演练： 创建自定义站点工作流活动](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)。
+  此外可以创建自定义活动。 有关详细信息，请参阅[演练： 创建自定义站点工作流活动](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)。
 
- 活动组织中的以下选项卡**工具箱**:
+  活动组织中的以下选项卡**工具箱**:
 
--   **SharePoint 工作流**
+- **SharePoint 工作流**
 
--   **Windows 工作流 v3.0**
+- **Windows 工作流 v3.0**
 
--   **Windows 工作流 3.5 版**
+- **Windows 工作流 3.5 版**
 
- 并非所有核心工作流活动被都受支持 SharePoint。 有关详细信息，请参阅[的工作流活动 Windows SharePoint Services 概述](http://go.microsoft.com/fwlink/?LinkID=156094)。
+  并非所有核心工作流活动被都受支持 SharePoint。 有关详细信息，请参阅[的工作流活动 Windows SharePoint Services 概述](http://go.microsoft.com/fwlink/?LinkID=156094)。
 
 #### <a name="sharepoint-workflow-activities"></a>SharePoint 工作流活动
  **SharePoint 工作流**选项卡包含用于特定的活动[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]。 这些活动简化并精简文档生命周期工作流的开发。 有关详细信息中列出的活动**SharePoint 工作流**选项卡上，请参阅[工作流的活动 Windows SharePoint Services 概述](http://go.microsoft.com/fwlink/?LinkID=156094)。
@@ -111,15 +111,15 @@ ms.locfileid: "42634717"
 
  有四种类型的可以在工作流中使用的窗体：
 
--   关联
+- 关联
 
--   启动
+- 启动
 
--   修改
+- 修改
 
--   任务
+- 任务
 
- 其中，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包括用于关联和初始化窗体项模板。 举例*关联窗体*允许管理员安装工作流的其中一个是输入到工作流，例如开支工作流的支出限制相关的参数。 举例*初始化窗体*是指供费用工作流金额输入工作流的用户。 有关这些类型的窗体的详细信息，请参阅[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。
+  其中，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包括用于关联和初始化窗体项模板。 举例*关联窗体*允许管理员安装工作流的其中一个是输入到工作流，例如开支工作流的支出限制相关的参数。 举例*初始化窗体*是指供费用工作流金额输入工作流的用户。 有关这些类型的窗体的详细信息，请参阅[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。
 
 ### <a name="item-properties"></a>项属性
  此外可以通过使用 SharePoint 库或列表中的项的属性从用户收集信息。 主代码文件 （Workflow1.cs 或 Workflow1.vb） 声明的名为的 Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties 类实例`workflowProperties`。 使用`workflowProperties`对象来访问库或列表在代码中的属性。 有关示例，请参阅[演练： 创建和调试 SharePoint 工作流解决方案](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)。

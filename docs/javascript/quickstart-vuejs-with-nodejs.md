@@ -1,7 +1,7 @@
 ---
 title: 快速入门：使用 Visual Studio 创建第一个 Vue.js 应用
 description: 在此快速入门中，将使用针对 Visual Studio 的 Node.js 工具在 Visual Studio 中创建 Vue.js 应用
-ms.date: 11/15/2017
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,19 +14,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cced69988b6f863380ac88ee27a8a963229f966a
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 3862f62439bd9b919d3c0534a8c2fe2d3c16fea9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131903"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926613"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入门：使用 Visual Studio 创建第一个 Vue.js 应用
 
 在这个对 Visual Studio 集成开发环境 (IDE) 的 5-10 分钟简介中，可以创建并运行简单的 Vue.js Web 应用程序。 如果尚未安装 Visual Studio 2017，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。
 
 > [!IMPORTANT]
-> 本文需要从 Visual Studio 2017 版本 15.8 预览版 3 开始提供的 Vue.js 模板。
+> 本文需要从 Visual Studio 2017 版本 15.8 开始提供的 Vue.js 模板。
 
 ## <a name="create-a-project"></a>创建项目
 
@@ -64,13 +64,13 @@ ms.locfileid: "39131903"
 
      ![Vue.js 解决方案](../javascript/media/vuejs-solution.png)
 
-  - 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在磁盘上，此项目由项目文件夹中的 .njsproj 文件表示。
+   - 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在磁盘上，此项目由项目文件夹中的 .njsproj 文件表示。
 
-  - 顶层是一个解决方案，它与项目默认同名。 解决方案（在磁盘上由 .sln 文件表示）是一个或多个相关项目的容器。
+   - 顶层是一个解决方案，它与项目默认同名。 解决方案（在磁盘上由 .sln 文件表示）是一个或多个相关项目的容器。
 
-  - npm 节点显示任何已安装的 npm 包。 可以右键单击 npm 节点搜索 npm 包，并使用对话框安装 npm 包。
+   - npm 节点显示任何已安装的 npm 包。 可以右键单击 npm 节点搜索 npm 包，并使用对话框安装 npm 包。
 
-1. 如果想要从命令提示符安装 npm 包或运行 Node.js 命令，请右键单击项目节点，然后选择“在此处打开命令提示符”。
+2. 如果想要从命令提示符安装 npm 包或运行 Node.js 命令，请右键单击项目节点，然后选择“在此处打开命令提示符”。
 
 ## <a name="add-a-vue-file-to-the-project"></a>向项目添加一个 .vue 文件
 

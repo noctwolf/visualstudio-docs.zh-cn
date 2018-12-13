@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c3bf48cf5f8acd24661adf2d9ae36324fadfd72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: dcb2e0a3c381b1dd07c7724c3a64c53307856014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670465"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951387"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>有关 Office 解决方案的特定安全注意事项
   Microsoft .NET Framework 和 Microsoft Office 提供的安全功能有助于保护你的 Office 解决方案免受可能的安全威胁。 本主题将介绍其中一些威胁并提供有助于免受这些威胁的建议。 还包括有关 Microsoft Office 安全设置如何影响 Office 解决方案的信息。  
@@ -55,23 +55,23 @@ ms.locfileid: "35670465"
   
  对象模型防护可以以不同的方式影响 VSTO 外接程序，具体取决于 Outlook 是否与 Microsoft Exchange Server 一起使用：  
   
--   如果 Outlook 未与 Exchange 一起使用，则管理员可以启用或禁用计算机上所有 VSTO 外接程序的对象模型防护。  
+- 如果 Outlook 未与 Exchange 一起使用，则管理员可以启用或禁用计算机上所有 VSTO 外接程序的对象模型防护。  
   
--   如果 Outlook 与 Exchange 一起使用，则管理员可以启用或禁用计算机上所有 VSTO 外接程序的对象模型防护，或指定特定 VSTO 外接程序可以在不遇到对象模型防护的情况下运行。 管理员还可以修改对象模型特定区域的对象模型防护的行为。 例如，管理员可以自动允许 VSTO 加载项，以编程方式发送电子邮件，即使启用了对象模型防护。  
+- 如果 Outlook 与 Exchange 一起使用，则管理员可以启用或禁用计算机上所有 VSTO 外接程序的对象模型防护，或指定特定 VSTO 外接程序可以在不遇到对象模型防护的情况下运行。 管理员还可以修改对象模型特定区域的对象模型防护的行为。 例如，管理员可以自动允许 VSTO 加载项，以编程方式发送电子邮件，即使启用了对象模型防护。  
   
- 从 Outlook 2007 中开始，更改了对象模型防护的行为以改善开发人员和用户体验，同时还有助于保障 Outlook 安全。 有关详细信息，请参阅[代码 Outlook 2007 中的安全性更改](http://go.microsoft.com/fwlink/?LinkId=73429)。  
+  从 Outlook 2007 中开始，更改了对象模型防护的行为以改善开发人员和用户体验，同时还有助于保障 Outlook 安全。 有关详细信息，请参阅[代码 Outlook 2007 中的安全性更改](http://go.microsoft.com/fwlink/?LinkId=73429)。  
   
 ### <a name="minimize-object-model-guard-warnings"></a>最小化对象模型防护警告  
  若要帮助在你使用受限的属性和方法时避免出现安全警告，请确保 VSTO 外接程序从项目中 `Application` 类的 `ThisAddIn` 字段获取 Outlook 对象。 有关此字段的详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
   
- 对象模型防护仅可信任从此对象获取的 Outlook 对象。 与此相反，从新获取的对象`Microsoft.Office.Interop.Outlook.Application`对象不受信任，和受限的属性和方法将引发安全警告，如果启用了对象模型防护。  
+ 对象模型防护仅可信任从此对象获取的 Outlook 对象。 与此相反，从新 `Microsoft.Office.Interop.Outlook.Application` 对象获取的对象不受信任，受限的属性和方法将引发安全警告（如果启用了对象模型防护）。  
   
- 如果启用了对象模型防护，下面的代码示例将显示一条安全警告。 `To`属性的`Microsoft.Office.Interop.Outlook.MailItem`类受对象模型防护。 `Microsoft.Office.Interop.Outlook.MailItem`对象是不受信任的因为代码从`Microsoft.Office.Interop.Outlook.Application`使用的创建**新**运算符，而不是获取从`Application`字段。  
+ 如果启用了对象模型防护，下面的代码示例将显示一条安全警告。 `Microsoft.Office.Interop.Outlook.MailItem` 类的 `To` 属性受对象模型防护限制。 `Microsoft.Office.Interop.Outlook.MailItem`对象是不受信任的因为代码从`Microsoft.Office.Interop.Outlook.Application`使用的创建**新**运算符，而不是获取从`Application`字段。  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
  [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]  
   
- 下面的代码示例演示如何使用受限制的属性`Microsoft.Office.Interop.Outlook.MailItem`对象，该对象模型防护信任对象。 代码使用受信任`Application`字段获取`Microsoft.Office.Interop.Outlook.MailItem`。  
+ 下面的代码示例演示如何使用受限制的属性`Microsoft.Office.Interop.Outlook.MailItem`对象，该对象模型防护信任对象。 该代码使用受信任的 `Application` 字段获取 `Microsoft.Office.Interop.Outlook.MailItem`。  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)]
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]  
@@ -94,15 +94,15 @@ ms.locfileid: "35670465"
   
  如果用户通过使用“信任中心” 阻止 VSTO 外接程序加载，则将不会加载以下几种类型的 VSTO 外接程序：  
   
--   托管和非托管的 COM VSTO 外接程序。  
+- 托管和非托管的 COM VSTO 外接程序。  
   
--   托管和非托管的智能文档。  
+- 托管和非托管的智能文档。  
   
--   托管和非托管的自动化 VSTO 外接程序。  
+- 托管和非托管的自动化 VSTO 外接程序。  
   
--   托管和非托管的实时数据组件。  
+- 托管和非托管的实时数据组件。  
   
- 下面的过程介绍用户如何能使用“信任中心”  来限制 VSTO 外接程序在 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 和 Microsoft Office 2010 中加载。 这些过程不影响使用 Visual Studio 中的 Office 开发工具创建的 VSTO 外接程序或自定义项。  
+  下面的过程介绍用户如何能使用“信任中心”  来限制 VSTO 外接程序在 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 和 Microsoft Office 2010 中加载。 这些过程不影响使用 Visual Studio 中的 Office 开发工具创建的 VSTO 外接程序或自定义项。  
   
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>在 Microsoft Office 2010 和 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 应用程序中禁用 VSTO 外接程序  
   

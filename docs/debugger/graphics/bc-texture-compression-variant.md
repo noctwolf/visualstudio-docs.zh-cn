@@ -1,5 +1,5 @@
 ---
-title: BC 纹理压缩变量 |Microsoft 文档
+title: BC 纹理压缩变量 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49dfc92eeede177e843c9fd98b16b030f76079c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 919191ec29ad45a8385d32b82de99d44fcdaa2ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922440"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 纹理压缩变量
 对采用像素格式（B8G8R8X8、B8G8R8A8 或 R8G8B8A8 的变体）的纹理启用块压缩。  
@@ -28,19 +28,19 @@ ms.locfileid: "31474396"
 ## <a name="remarks"></a>备注  
  每次调用创建源纹理的 `ID3DDevice::CreateTexture2D` 时，你都可以通过使用基于块的压缩格式来压缩纹理。 具体而言，在以下情况下会压缩纹理：  
   
--   在 `D3D11_TEXTURE2D_DESC` 中传递的 `pDesc` 对象描述了不变的着色器资源；即：  
+- 在 `D3D11_TEXTURE2D_DESC` 中传递的 `pDesc` 对象描述了不变的着色器资源；即：  
   
-    -   BindFlags 成员仅设置 D3D11_BIND_SHADER_RESOURCE 标志。  
+  -   BindFlags 成员仅设置 D3D11_BIND_SHADER_RESOURCE 标志。  
   
-    -   将 Usage 成员设置为 D3D11_USAGE_DEFAULT 或 D3D11_USAGE_IMMUTABLE。  
+  -   将 Usage 成员设置为 D3D11_USAGE_DEFAULT 或 D3D11_USAGE_IMMUTABLE。  
   
-    -   将 CPUAccessFlags 成员设置为 0（无 CPU 访问）。  
+  -   将 CPUAccessFlags 成员设置为 0（无 CPU 访问）。  
   
-    -   SamplerDesc 成员将其 Count 成员设置为 1（不支持多重采样抗锯齿 (MSAA)）。  
+  -   SamplerDesc 成员将其 Count 成员设置为 1（不支持多重采样抗锯齿 (MSAA)）。  
   
--   为对 `CreateTexture2D` 的调用提供了初始数据。  
+- 为对 `CreateTexture2D` 的调用提供了初始数据。  
   
- 以下是支持的源格式及其块压缩的格式。  
+  以下是支持的源格式及其块压缩的格式。  
   
 |原始格式（源格式）|压缩格式（目标格式）|  
 |------------------------------|------------------------------|  
@@ -63,4 +63,4 @@ ms.locfileid: "31474396"
  此变量在运行时（调用 `CreateTexture2D` 之前）对纹理进行块压缩。 我们不建议将此方法用于成品代码，因为未压缩的纹理会消耗更多的磁盘空间，而且此额外步骤会显著增加应用中的加载次数（因为基于块的压缩需要大量计算要编码的资源）。 相反，我们建议你通过使用生成管道中包含的图像编辑器或图像处理器，在脱机状态下压缩纹理。 这些方法将降低磁盘空间需求、消除应用中的运行时开销并提供更多的处理时间，以便可以保持最佳图像质量。  
   
 ## <a name="see-also"></a>请参阅  
- [Half/Quarter 纹理维度变体](half-quarter-texture-dimensions-variant.md)
+ [Half/Quarter 纹理维度变量](half-quarter-texture-dimensions-variant.md)

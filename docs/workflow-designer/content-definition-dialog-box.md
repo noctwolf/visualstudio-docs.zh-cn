@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc434e35755b04054d1e24da97e8a4699af7df0e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f8307db1858ba50d209e456dc17ddd36dcaab722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870766"
 ---
 # <a name="content-definition-dialog-box"></a>“内容定义”对话框
 
@@ -26,7 +26,7 @@ ms.locfileid: "36757946"
 下表介绍的用户界面 (UI) 元素**初始化相关**对话框：
 
 |UI 元素|描述|
-|----------------|-----------------|
+|-|-----------------|
 |**消息**|指定内容的消息**消息数据**表达式文本框中并通过键入**消息类型**下拉列表框。 默认情况下**内容定义**使用<xref:System.ServiceModel.Activities.ReceiveMessageContent>，它应<xref:System.ServiceModel.Channels.Message>或消息协定中的工作流服务定义的类型。|
 |**参数**|单击**参数**单选按钮以使用<xref:System.ServiceModel.Activities.ReceiveParametersContent>，这应为数据协定。 使用数据网格设置 <xref:System.Activities.OutArgument> 键/值对的泛型集合，这些键/值对的值将赋给当前工作流中的可变参数。|
 

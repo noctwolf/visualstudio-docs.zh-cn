@@ -13,54 +13,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f85e7c6e4ba62842986db8e6090415d2e33f1c1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 18587516298fa58e8a5e783ffb1f7c37d5a6b497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859676"
 ---
 # <a name="inside-the-editor"></a>在编辑器内
 编辑器是组合多个不同的子系统，旨在使编辑器文本模型单独从文本视图和用户界面。  
   
  下列各节介绍编辑器中的不同的方面：  
   
--   [子系统概述](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
+- [子系统概述](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
   
--   [文本模型](../extensibility/inside-the-editor.md#the-text-model)  
+- [文本模型](../extensibility/inside-the-editor.md#the-text-model)  
   
--   [文本视图](../extensibility/inside-the-editor.md#the-text-view)  
+- [文本视图](../extensibility/inside-the-editor.md#the-text-view)  
   
- 这些部分介绍了在编辑器的功能：  
+  这些部分介绍了在编辑器的功能：  
   
--   [标记和分类器](../extensibility/inside-the-editor.md#tags-and-classifiers)  
+- [标记和分类器](../extensibility/inside-the-editor.md#tags-and-classifiers)  
   
--   [修饰](../extensibility/inside-the-editor.md#adornments)  
+- [修饰](../extensibility/inside-the-editor.md#adornments)  
   
--   [投影](../extensibility/inside-the-editor.md#projection)  
+- [投影](../extensibility/inside-the-editor.md#projection)  
   
--   [大纲显示](../extensibility/inside-the-editor.md#outlining)  
+- [大纲显示](../extensibility/inside-the-editor.md#outlining)  
   
--   [鼠标绑定](../extensibility/inside-the-editor.md#mousebindings)  
+- [鼠标绑定](../extensibility/inside-the-editor.md#mousebindings)  
   
--   [编辑器操作](../extensibility/inside-the-editor.md#editoroperations)  
+- [编辑器操作](../extensibility/inside-the-editor.md#editoroperations)  
   
--   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
+- [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
 ## <a name="overview-of-the-subsystems"></a>子系统概述  
   
 ### <a name="text-model-subsystem"></a>文本模型子系统  
  文本模型子系统负责表示文本和启用其操作。 文本模型子系统包含<xref:Microsoft.VisualStudio.Text.ITextBuffer>接口，其中描述了通过在编辑器中显示的字符序列。 此文本可以修改、 跟踪，和其他操作在许多方面。 文本模型还提供用于以下方面的类型：  
   
--   将文本相关联的文件，并管理读取和写入这些文件系统中的服务。  
+- 将文本相关联的文件，并管理读取和写入这些文件系统中的服务。  
   
--   一种差异服务所发现的对象的两个序列之间的最小差异。  
+- 一种差异服务所发现的对象的两个序列之间的最小差异。  
   
--   用于描述方面的其他缓冲区中的文本子集的缓冲区中的文本的系统。  
+- 用于描述方面的其他缓冲区中的文本子集的缓冲区中的文本的系统。  
   
- 文本模型子系统是免费的用户界面 (UI) 概念。 例如，不负责设置文本格式或文本布局，它并不知道可能与文本相关联的 visual 修饰。  
+  文本模型子系统是免费的用户界面 (UI) 概念。 例如，不负责设置文本格式或文本布局，它并不知道可能与文本相关联的 visual 修饰。  
   
- 文本模型子系统的公共类型包含在*Microsoft.VisualStudio.Text.Data.dll*并*Microsoft.VisualStudio.CoreUtility.dll*，其中仅依赖.NET Framework 基础类库和 Managed Extensibility Framework (MEF)。  
+  文本模型子系统的公共类型包含在*Microsoft.VisualStudio.Text.Data.dll*并*Microsoft.VisualStudio.CoreUtility.dll*，其中仅依赖.NET Framework 基础类库和 Managed Extensibility Framework (MEF)。  
   
 ### <a name="text-view-subsystem"></a>文本视图子系统  
  文本视图子系统负责设置格式并显示文本。 此子系统中的类型分为两个层，具体取决于是否类型依赖于 Windows Presentation Foundation (WPF)。 最重要的类型是<xref:Microsoft.VisualStudio.Text.Editor.ITextView>和<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>，用于控制要显示的文本行集和还将插入符号、 选择和用于通过使用 WPF UI 元素装饰文本的功能。 此子系统还提供了文本周围的边距显示区域。 这些边距可加以扩展，并且可以包含不同类型的内容和可视化效果。 边距的示例包括行号显示和滚动条。  

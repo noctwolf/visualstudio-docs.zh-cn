@@ -1,7 +1,7 @@
 ---
 title: 重构 Python 代码
 description: 在 Visual Studio 中如何通过重命名标识符、提取方法、添加导入和移除未使用的导入来轻松重构 Python 代码。
-ms.date: 06/26/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: a612e7e6a59087d219d2afc6233b57f02ed99314
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586360"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607739"
 ---
 # <a name="refactor-python-code"></a>重构 Python 代码
 
@@ -30,27 +30,27 @@ Visual Studio 提供用于自动转换和清理 Python 源代码的多个命令�
 ## <a name="rename"></a>重命名
 
 1. 右键单击想要重命名的标识符，然后选择“重命名”，或将光标置于标识符上，然后选择“编辑” > “重构” > “重命名”菜单命令 (F2)。
-1. 在出现的“重命名”对话框中，为标识符输入新名并选择“确定”：
+2. 在出现的“重命名”对话框中，为标识符输入新名并选择“确定”：
 
-  ![新标识符名称的重命名提示](media/code-refactor-rename-1.png)
+   ![新标识符名称的重命名提示](media/code-refactor-rename-1.png)
 
-1. 在下一个对话框中，选择代码中想要向其应用重命名的文件和实例；选择任何单个实例可预览特定更改：
+3. 在下一个对话框中，选择代码中想要向其应用重命名的文件和实例；选择任何单个实例可预览特定更改：
 
-  ![用于选择应用更改位置的重命名对话框](media/code-refactor-rename-2.png)
+   ![用于选择应用更改位置的重命名对话框](media/code-refactor-rename-2.png)
 
-1. 选择“应用”对源代码文件进行更改。 （此操作无法撤消。）
+4. 选择“应用”对源代码文件进行更改。 （此操作无法撤消。）
 
 ## <a name="extract-method"></a>提取方法
 
 1. 选择多行代码或表达式以提取到单独的方法中。
-1. 选择“编辑” > “重构” > “提取方法”菜单命令或键入 Ctrl+R > M。
-1. 在出现的对话框中，输入新的方法名称，指示将其提取到的位置，然后选择任何闭包变量。 闭包未选择的变量将返回到方法参数中：
+2. 选择“编辑” > “重构” > “提取方法”菜单命令或键入 Ctrl+R > M。
+3. 在出现的对话框中，输入新的方法名称，指示将其提取到的位置，然后选择任何闭包变量。 闭包未选择的变量将返回到方法参数中：
 
-  ![“提取方法”对话框](media/code-refactor-extract-method-1.png)
+   ![“提取方法”对话框](media/code-refactor-extract-method-1.png)
 
-1. 选择“确定”，然后代码将进行相应修改：
+4. 选择“确定”，然后代码将进行相应修改：
 
-  ![提取方法的影响](media/code-refactor-extract-method-2.png)
+   ![提取方法的影响](media/code-refactor-extract-method-2.png)
 
 ## <a name="add-import"></a>添加导入
 

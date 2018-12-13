@@ -1,5 +1,5 @@
 ---
-title: LocationType |Microsoft 文档
+title: LocationType |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb46eb1c7477f93ed63dfc4424d881886c8d0c8f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e816ac9dca3c70e88ae023b4fda4edf0b99f9c96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479999"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872091"
 ---
 # <a name="locationtype"></a>LocationType
-指示在符号中包含的位置信息的类型。  
+指示符号中包含的位置信息的类型。  
   
 ## <a name="syntax"></a>语法  
   
@@ -51,10 +51,10 @@ enum LocationType {
  位置是静态的。  
   
  `LocIsTLS`  
- 位置是在线程本地存储。  
+ 位置是在线程本地存储中。  
   
  `LocIsRegRel`  
- 位置是注册相对。  
+ 位置是寄存器相对。  
   
  `LocIsThisRel`  
  位置是`this`-相对。  
@@ -63,7 +63,7 @@ enum LocationType {
  位置是在寄存器中。  
   
  `LocIsBitField`  
- 位置是中的位字段。  
+ 位置所在的位字段。  
   
  `LocIsSlot`  
  位置是 Microsoft 中间语言 (MSIL) 槽。  
@@ -75,13 +75,13 @@ enum LocationType {
  位置是在元数据中。  
   
  `LocIsConstant`  
- 位置是一个常量值。  
+ 位置是常量值。  
   
  `LocTypeMax`  
- 此枚举中的位置类型的数目。  
+ 此枚举中的位置类型的数。  
   
 ## <a name="remarks"></a>备注  
- 属性可供[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)接口取决于图像文件中的符号的位置。 有关详细信息，请参阅[符号位置](../../debugger/debug-interface-access/symbol-locations.md)。  
+ 可使用的属性[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)接口取决于图像文件中的符号的位置。 有关详细信息，请参阅[符号位置](../../debugger/debug-interface-access/symbol-locations.md)。  
   
  此枚举中的值返回通过调用[idiasymbol:: Get_locationtype](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)方法。  
   

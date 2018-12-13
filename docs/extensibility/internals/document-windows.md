@@ -13,27 +13,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdf892b6d80358885f0da8e20a97bd9453c50f27
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: dcd2c47de8e1ad8b650da0819b5e8b0a46213e29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875967"
 ---
 # <a name="document-windows"></a>文档窗口
 在 Visual Studio 中，*文档窗口*是带边框的子窗口的多文档界面 (MDI) 窗口与相关联。 文档窗口通常用于显示和修改源代码或文本，但它们还可以托管其他功能的类型。 文档窗口：  
   
--   可以将组织中的父代 MDI 中单独的水平或垂直选项卡组中，以便可以同时查看多个文件。  
+- 可以将组织中的父代 MDI 中单独的水平或垂直选项卡组中，以便可以同时查看多个文件。  
   
--   可以按任意顺序在 MDI 父停靠。  
+- 可以按任意顺序在 MDI 父停靠。  
   
--   可以自由浮动。  
+- 可以自由浮动。  
   
--   链接到其他 MDI 窗口的选项卡顺序。  
+- 链接到其他 MDI 窗口的选项卡顺序。  
   
- 用于分组的命令，在文档窗口选项卡的快捷菜单上可以找到停靠和浮动。  
+  用于分组的命令，在文档窗口选项卡的快捷菜单上可以找到停靠和浮动。  
   
- 有关在 Visual Studio 中的窗口行为的详细信息，请参阅[自定义窗口布局](../../ide/customizing-window-layouts-in-visual-studio.md)。  
+  有关在 Visual Studio 中的窗口行为的详细信息，请参阅[自定义窗口布局](../../ide/customizing-window-layouts-in-visual-studio.md)。  
   
 ## <a name="document-window-implementation"></a>文档窗口实现  
  通过实现编辑器创建文档窗口。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口用于创建实例化一个编辑器的一部分的文档窗口。 有关详细信息，请参阅[旧接口在编辑器中](../../extensibility/legacy-interfaces-in-the-editor.md)。  

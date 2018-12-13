@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_rank |Microsoft 文档'
+title: 'Idiasymbol:: Get_rank |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b78ba89b56c6d8c473060e39d402ee46e4ae15f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fc12e9251bd452edc3fdede1a5f7414462162301
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469238"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847690"
 ---
 # <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
 检索 FORTRAN 多维数组的秩 （维数）。  
@@ -34,16 +34,16 @@ HRESULT get_rank (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]FORTRAN 多维数组中返回的维数。  
+ [out]FORTRAN 多维数组中返回维度的数。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 级别是指在其中数组声明为一个数组中的维度数`myarray[1,2,3]`。 此示例具有 3 和 3 维度的秩。 级别不适用于 c + + 为每个维度使用由数组的数组的概念 (即， `myarray[1][2][3]`)。  
+ 级别是指其中的数组声明为数组中的维度数量`myarray[1,2,3]`。 此示例具有排名为 3 到 3 个维度。 排名不适用于 c + + 使用每个维度的数组的数组的概念 (即， `myarray[1][2][3]`)。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

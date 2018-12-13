@@ -1,5 +1,5 @@
 ---
-title: Throw 必须跟在同一源行表达式 |Microsoft 文档
+title: Throw 表达式之后必须在同一源行上有 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7179a22d2713c9ddc894618bd6921f3f873f2ad8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951049"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>同一源行中 throw 之后必须有表达式
-你使用`throw`关键字，但没有按照它的表达式相同的源行。 A`throw`语句由两部分组成：`throw`关键字后, 跟要引发的表达式。 例如：  
+您使用`throw`关键字，但不是遵循它使用的表达式在相同的源行上。 一个`throw`语句由两部分组成：`throw`关键字后, 跟要引发的表达式。 例如：  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -36,13 +36,13 @@ if (denominator == 0) {
 }  
 ```  
   
- 你无法拆分这两个组件。  
+ 您不能拆分这两个组件。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   请确保`throw`关键字和要引发的表达式都显示在同一行。  
+-   请确保`throw`关键字和要引发的表达式将显示在同一行上。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [错误对象](../../javascript/reference/error-object-javascript.md)   
- [throw 语句](../../javascript/reference/throw-statement-javascript.md)   
+ [Throw 语句](../../javascript/reference/throw-statement-javascript.md)   
  [try...catch...finally 语句](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

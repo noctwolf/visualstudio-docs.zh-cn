@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea9c1739b0f1236deedcea98bcbc96e99abb404
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: ddedc1d46c82c20580575a85db92b2c8049c813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977827"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908729"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend 中的“笔”工具修改键
 下表列出了在使用“笔”工具 ![笔工具](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png) 创建路径时可用于修改此路径的快捷方式。 “笔”工具还可用于在现有路径上添加或删除点，或联接两个现有路径。
 
 |任务|操作步骤|指针|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |创建一个点来开始绘制直线线段|单击以创建新点|![创建一个点来开始绘制直线线段](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> “钢笔”指针|
 |创建一个点来开始绘制曲线线段|单击以创建新点，然后在松开鼠标按钮前拖动以调整切线图柄|![创建一个点来开始绘制曲线线段](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> “钢笔”指针|
 |在没有平滑限制的情况下调整最后的切线，使您生成尖锐的角|单击以创建新点，然后在松开鼠标按钮前按 Alt|![在没有平滑限制的情况下调整最后一根切线](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> “钢笔”调整指针|

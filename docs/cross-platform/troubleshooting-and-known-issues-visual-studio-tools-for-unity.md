@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251570"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027284"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑难解答和已知问题 (Visual Studio Tools for Unity)
 
@@ -90,7 +90,7 @@ Visual Studio Tools for Unity 要求安装 .NET framework 3.5（默认情况下�
 
 ## <a name="breakpoints-not-hit"></a>未命中断点
 
-检查当前的 Unity 场景中是否已正确加载/使用你正在使用的脚本。 退出 Visual Studio 和 Unity，然后删除生成的所有文件（*.csproj、*.sln）和整个库文件夹。
+检查当前的 Unity 场景中是否已正确加载/使用你正在使用的脚本。 退出 Visual Studio 和 Unity，然后删除生成的所有文件（\*.csproj、\*.sln）和整个库文件夹。
 
 ## <a name="unable-to-debug-android-players"></a>无法调试 Android 播放器
 

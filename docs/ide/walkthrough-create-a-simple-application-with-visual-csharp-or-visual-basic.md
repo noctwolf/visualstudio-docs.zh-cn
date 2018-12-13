@@ -13,16 +13,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 343d8c35433fe7d6fb454de5183bcc6a914d2a5e
+ms.sourcegitcommit: b2942b8aa93bf73747790a05b67908c0b0108afe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008442"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48788014"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>演练：使用 C# 或 Visual Basic 创建简单应用程序
 
-通过完成本演练，你将熟悉在使用 Visual Studio 开发应用程序时可使用的许多工具、对话框和设计器。 你将创建一个简单的“Hello, World”应用程序、设计 UI、添加代码并调试错误，还会了解如何在集成开发环境 (IDE) 中工作。
+通过完成本演练，你将熟悉在使用 Visual Studio 开发应用程序时可使用的许多工具、对话框和设计器。 你将创建“Hello, World”应用程序、设计 UI、添加代码并调试错误。在此期间，你将了解如何使用集成开发环境 ([IDE](visual-studio-ide.md))。
 
 ## <a name="configure-the-ide"></a>配置 IDE
 
@@ -48,9 +48,12 @@ ms.locfileid: "40008442"
 
 1. 选择“确定”。
 
-Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资源管理器”将显示各种文件。 “WPF 设计器”在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。 您可以选择只查看可视化视图或 XAML 视图。 “解决方案资源管理器”中显示以下项：
+   Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资源管理器”将显示各种文件。 “WPF 设计器”在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。 您可以选择只查看可视化视图或 XAML 视图。 “解决方案资源管理器”中显示以下项：
 
-![已加载 HelloWPFApp 文件的解决方案资源管理器](../ide/media/exploreide-hellowpfappfiles.png)
+   ![已加载 HelloWPFApp 文件的解决方案资源管理器](../ide/media/exploreide-hellowpfappfiles.png)
+
+   > [!NOTE]
+   > 若要详细了解 XAML (eXtensible Application Markup Language)，请参阅 [WPF 的 XAML 概述](/dotnet/framework/wpf/advanced/xaml-overview-wpf)页。
 
 你可以在创建项目后进行自定义。 通过使用 **属性** 窗口（ **视图** 菜单上），您可以显示和更改应用程序中的项目项、控件和其他项的选项。
 
@@ -84,7 +87,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 ![Greetings 窗体上的 TextBlock 控件](../ide/media/exploreide-greetingswithtextblockonly.png)
 
-XAML 标记应类似于以下示例：
+XAML 标记应如下面的示例所示：
 
 ```xaml
 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
@@ -98,7 +101,7 @@ XAML 标记应类似于以下示例：
    Text="Select a message option and then choose the Display button."
    ```
 
-2. 使 TextBlock 重新居中（若有必要），并通过按 Ctrl+S 或使用“文件”菜单项保存所做的更改。
+2. 视需要再次居中 TextBlock，并通过按 Ctrl+S 或使用“文件”菜单项保存更改。
 
 接下来，向窗体添加两个 [RadioButton](/dotnet/framework/wpf/controls/radiobutton) 控件。
 
@@ -130,7 +133,7 @@ XAML 标记应类似于以下示例：
 
 ### <a name="set-a-radio-button-to-be-checked-by-default"></a>设置要默认选中的单选按钮
 
-在此步骤中，我们将设置要默认选中的 HelloButton，以便始终选择两个单选按钮中的一个。
+这一步将设置要默认选中的 HelloButton，这样两个单选按钮中始终有一个处于选中状态。
 
 在 XAML 视图中，找到 HelloButton 的标记并添加“IsChecked”属性：
 

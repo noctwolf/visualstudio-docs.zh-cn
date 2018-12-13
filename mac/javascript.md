@@ -7,24 +7,24 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 21ff2211632cba63dafe2a7abf1964e7a89e87c3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: a2f8e73ecd4ca1010dd25fe4031e73aa13727605
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224000"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294911"
 ---
 # <a name="javascript-support"></a>Javascript 支持
 
-Visual Studio for Mac 通过语法突出显示、代码格式设置和 IntelliSense 提供对 Javascript 和 Typescript 的支持。 
+Visual Studio for Mac 通过语法突出显示、代码格式设置和 IntelliSense 提供对 Javascript 和 Typescript 的支持。
 
 ![typescript 编辑器支持](https://msdnshared.blob.core.windows.net/media/2018/03/TypeScript-editor.gif)
 
-有关编写 JavaScript 代码的详细信息，请参阅[编写 Javascript 代码](https://docs.microsoft.com/scripting/javascript/writing-javascript-code)指南。
+有关编写 JavaScript 代码的详细信息，请参阅[编写 Javascript 代码](/scripting/javascript/writing-javascript-code)指南。
 
 ## <a name="adding-a-javascript-file"></a>添加 JavaScript 文件
 
-通常通过“新建文件”对话框将 JavaScript 文件添加到 ASP.NET Core 项目。 要添加 javascript 文件，右键单击项目并转到“添加”>“新建文件”： 
+通常通过“新建文件”对话框将 JavaScript 文件添加到 ASP.NET Core 项目。 要添加 javascript 文件，右键单击项目并转到“添加”>“新建文件”：
 
 ![将新建文件添加到项目中](media/javascript-image1.png)
 
@@ -34,10 +34,16 @@ Visual Studio for Mac 通过语法突出显示、代码格式设置和 IntelliSe
 
 ## <a name="intellisense"></a>Intellisense
 
-Visual Studio for Mac 使用 [Javascript 语言服务](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense)提供 Intellisense，为用户在编写代码时提供智能代码完成、参数信息和成员列表。
+Visual Studio for Mac 使用 [Javascript 语言服务](/visualstudio/ide/javascript-intellisense)提供 Intellisense，为用户在编写代码时提供智能代码完成、参数信息和成员列表。
 
 Visual Studio for Mac 中的 Javascript intellisense 可以基于类型推理、JSDoc 或 Typescript 声明。
 
-- **类型推理** - 对象类型是通过周围的代码上下文推出的。 有关详细信息，请参阅[基于类型推理的 IntelliSense](https://docs.microsoft.com/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference) 的 Visual Studio 部分。
-- **JSDoc** - 有时类型推理不提供正确的类型信息。 在这些情况下，类型信息可以由 [JSDoc](http://usejsdoc.org/about-getting-started.html) 注释显式提供。 有关详细信息，请参阅[基于 JSDoc 的 Intellisense](https://docs.microsoft.com/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc) 的 Visual Studio 部分
-- **TypeScript 声明文件** - `.d.ts` 文件用于提供 Javascript Intellisense 的值。 该文件中声明的类型可用作 JSDoc 注释的类型。 有关详细信息，请参阅[基于 TypeScript 声明文件的 IntelliSense](https://docs.microsoft.com/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files) ![添加 typescript 定义文件](media/javascript-image3.png)的 Visual Studio 部分
+- **类型推理** - 对象类型是通过周围的代码上下文推出的。 有关详细信息，请参阅[基于类型推理的 IntelliSense](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference) 的 Visual Studio 部分。
+- **JSDoc** - 有时类型推理不提供正确的类型信息。 在这些情况下，类型信息可以由 [JSDoc](http://usejsdoc.org/about-getting-started.html) 注释显式提供。 有关详细信息，请参阅[基于 JSDoc 的 Intellisense](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc) 的 Visual Studio 部分
+- **TypeScript 声明文件** - `.d.ts` 文件用于提供 Javascript Intellisense 的值。 该文件中声明的类型可用作 JSDoc 注释的类型。 有关详细信息，请参阅[基于 TypeScript 声明文件的 IntelliSense](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files) 的 Visual Studio 部分
+
+    ![添加 typescript 定义文件](media/javascript-image3.png)
+
+## <a name="see-also"></a>请参阅
+
+- [JavaScript IntelliSense（Windows 上的 Visual Studio）](/visualstudio/ide/javascript-intellisense)

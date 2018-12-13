@@ -1,7 +1,7 @@
 ---
 title: Python 的 Web 应用程序模板
 description: 使用 Python 编写的 Web 应用程序的 Visual Studio 模板的概述（使用 Bottle、Flask 和 Django 框架），包括调试配置和发布到 Azure 应用服务。
-ms.date: 07/03/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638708"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349330"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
 Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过项目模板和可配置为处理不同框架的调试启动程序开发 Web 项目。 这些模板包括 requirements.txt 文件来声明必需的依赖项。 基于其中一个模板创建项目时，Visual Studio 会提示安装这些包（请参阅本文后面的[安装项目要求](#install-project-requirements)）。
 
-也可以使用其他框架（如 Pyramid）的通用“Web 项目”模板。 在这种情况下，不会随模板一起安装框架。 而是将必要的包安装到用于项目的环境中（请参阅[管理 Python 环境](managing-python-environments-in-visual-studio.md)）。
+也可以使用其他框架（如 Pyramid）的通用“Web 项目”模板。 在这种情况下，不会随模板一起安装框架。 而是将必要的包安装到用于项目的环境中（请参阅 [Python 环境窗口 - 包选项卡](python-environments-window-tab-reference.md#packages-tab)）。
 
 有关将 Python Web 应用部署到 Azure 的信息，请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
@@ -34,7 +34,7 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 
 前面提到的通用“Web 项目”模板只提供了一个空的 Visual Studio 项目，只有一个 Python 项目，没有代码，也没有任何假设。 有关“Azure 云服务”模板的详细信息，请参阅 [Python 的 Azure 云服务项目](python-azure-cloud-service-project-template.md)。
 
-所有其他模板都基于 Bottle、Flask 或 Django Web 框架，可以分为如以下各节所述的三个通用组。 由其中任一模板创建的应用中的代码都足以在本地运行和调试应用。 每个模板还提供必要的 [WSGI 应用对象](http://www.python.org/dev/peps/pep-3333/) (python.org) 以便[部署到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)
+所有其他模板都基于 Bottle、Flask 或 Django Web 框架，可以分为如以下各节所述的三个通用组。 由其中任一模板创建的应用中的代码都足以在本地运行和调试应用。 每个模板还提供必要的 [WSGI 应用对象](http://www.python.org/dev/peps/pep-3333/) (python.org)，以用于生产 Web 服务器。
 
 ### <a name="blank-group"></a>空白组
 
@@ -44,7 +44,7 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 | --- | --- |
 | **空白 Bottle Web 项目** | 在 app.py 中生成最小的应用，其中包括 `/` 的主页和 `/hello/<name>` 页，它使用非常短的内嵌页模板回显 `<name>`。 |
 | **空白 Django Web 项目** | 使用核心 Django 网站结构生成 Django 项目，但没有 Django 应用。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django 步骤 1](learn-django-in-visual-studio-step-01-project-and-solution.md)。 |
-| **空白 Flask Web 项目** | 生成包含 `/` 的单个“Hello World!”页的最小应用。 此应用类似于按[快速入门：使用 Visual Studio 创建第一个 Python Web 应用](../ide/quickstart-python.md?context=visualstudio/python/default)中的详细步骤操作的结果。 另请参阅[学习 Flask 步骤 1](learn-flask-visual-studio-step-01-project-solution.md)。
+| **空白 Flask Web 项目** | 生成包含 `/` 的单个“Hello World!”页的最小应用。 此应用类似于按[快速入门：使用 Visual Studio 创建第一个 Python Web 应用](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)中的详细步骤操作的结果。 另请参阅[学习 Flask 步骤 1](learn-flask-visual-studio-step-01-project-solution.md)。
 
 ### <a name="web-group"></a>Web 组
 

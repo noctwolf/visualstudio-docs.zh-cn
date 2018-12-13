@@ -18,17 +18,17 @@ helpviewer_keywords:
 - automating Excel
 - host items [Office development in Visual Studio], Excel
 - controls [Office development in Visual Studio], Excel host controls
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d50751b00a1a713a9f8848bdbebaaff1463c45c0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0a74c5a62cc2e14615db8dd17c9a34a7e54178e7
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671556"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248041"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>通过使用扩展的对象自动化 Excel
   当开发 Visual Studio 中的 Excel 解决方案时，可以使用解决方案中的 *主机项* 和 *主机控件*。 这些对象可扩展 Excel 对象模型（即由 Excel 的主互操作程序集公开的对象模型）中某些常用对象，例如 <xref:Microsoft.Office.Interop.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Range> 对象。 扩展的对象行为类似于其所基于的 Excel 对象，但它们可以将其他功能（如“新建事件”）和数据绑定功能添加到对象。  
@@ -64,16 +64,16 @@ ms.locfileid: "35671556"
 -   [XmlMappedRange 控件](../vsto/xmlmappedrange-control.md)  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 使用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)   
- [如何： 向工作表添加图表控件](../vsto/how-to-add-chart-controls-to-worksheets.md)   
- [如何： 向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [如何： 向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [如何： 向工作表添加 XMLMappedRange 控件](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
- [如何： 调整 NamedRange 控件的大小](../vsto/how-to-resize-namedrange-controls.md)   
- [如何： 调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)   
- [如何： 在新行添加到 ListObject 控件时验证数据](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
- [如何： 对数据的映射 ListObject 列](../vsto/how-to-map-listobject-columns-to-data.md)   
- [演练： 针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
+ [如何：用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [如何：将图表控件添加到工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)   
+ [如何：向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [如何：向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [如何：向工作表添加 XMLMappedRange 控件](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
+ [如何：调整 NamedRange 控件的大小](../vsto/how-to-resize-namedrange-controls.md)   
+ [如何：调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)   
+ [如何：一个新行添加到 ListObject 控件时验证数据](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
+ [如何：将 ListObject 列映射到数据](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [演练：针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [扩展 Word 文档和 Excel 工作簿在 VSTO 外接在运行时](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   

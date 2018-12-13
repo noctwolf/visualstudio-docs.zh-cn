@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: cc889accc116fb2115ae56155a190ed6ea2d3fc0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 821da7c5d131acea62e944055ec6c450e4bc5154
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797847"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101103"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 在 Azure 中的 IIS 上的远程调试 ASP.NET Core
 
@@ -183,8 +183,6 @@ ms.locfileid: "38797847"
 ### <a name="BKMK_msvsmon"></a> 下载并安装 Windows Server 上的远程工具
 
 在本教程中，我们将使用 Visual Studio 2017。
-
-如果你遇到打开与远程调试器下载中的页的问题，请参阅[取消阻止文件下载](../debugger/remote-debugging.md#unblock_msvsmon)有关的帮助。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   

@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35c5854afe5363641979e0f79af70c2d3b925b05
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f7b8733e6c2a1464b5ea9c07c9c9109064183a6c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37116983"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296276"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>在 Visual Studio 中生成类或类型
 
@@ -41,24 +41,24 @@ ms.locfileid: "37116983"
 
    - C#：
 
-    ![突出显示的代码 C#](media/class-highlight-cs.png)
+       ![突出显示的代码 C#](media/class-highlight-cs.png)
 
    - Visual Basic：
 
-    ![突出显示的代码 VB](media/class-highlight-vb.png)
+       ![突出显示的代码 VB](media/class-highlight-vb.png)
 
-1. 接下来，执行以下操作之一：
+2. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
-     - 右键单击并选择“快速操作和重构”菜单。
-     - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
+      - 右键单击并选择“快速操作和重构”菜单。
+      - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
 
-    ![生成类预览](media/class-preview-cs.png)
+      ![生成类预览](media/class-preview-cs.png)
 
-1. 可从下拉菜单中选择一种选项：
+3. 可从下拉菜单中选择一种选项：
 
    - 在新文件中生成“TypeName”类&mdash;在名为 *TypeName*.cs/.vb 的文件中创建名为 TypeName 的类
    - 创建“TypeName”类&mdash;在当前文件创建名为 TypeName 的类。
@@ -68,7 +68,7 @@ ms.locfileid: "37116983"
    > [!TIP]
    > 进行选择前，使用预览窗口底部的“预览更改”链接[查看将发生的所有更改](../../ide/preview-changes.md)。
 
-1. 如果选择的是“生成新类型”项，则打开“生成类型”对话框。 配置新类型的可访问性、类型和位置。
+4. 如果选择的是“生成新类型”项，则打开“生成类型”对话框。 配置新类型的可访问性、类型和位置。
 
    ![生成类型](media/class-newtype-cs.png)
 

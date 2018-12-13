@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findAcceleratorInlineesByLinenum |Microsoft 文档
+title: IDiaSession::findAcceleratorInlineesByLinenum |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de8c5e7b5c039e43a5e513c72b270342a705b8b2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b90a253baefad62bba205ccbf0fb8b8fff81712d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461631"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917461"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-返回到指定的源位置的符号对应的嵌入式框架枚举。  
+返回指定的源位置相对应的内嵌帧的符号的枚举。  
   
 ## <a name="syntax"></a>语法  
   
@@ -36,19 +36,19 @@ HRESULT findAcceleratorInlineeLinesByName (
   
 #### <a name="parameters"></a>参数  
  `parent`  
- [in]`IDiaSymbol` ，对应于需要要搜索的快捷键存根 （stub） 函数。  
+ [in]`IDiaSymbol` ，对应于需要搜索的加速器存根 （stub） 函数。  
   
  `file`  
  [in]`IDiaSourceFile`的源位置。  
   
  `linenum`  
- [in]源位置的行号。  
+ [in]源位置的行数。  
   
  `colnum`  
- [in]列数的源位置。  
+ [in]源位置的列数。  
   
  `ppResult`  
- [out]指向的指针`IDiaEnumLineNumbers`结果初始化的接口指针。  
+ [out]一个指向`IDiaEnumLineNumbers`使用结果初始化的接口指针。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

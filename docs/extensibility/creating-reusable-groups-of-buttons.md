@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3868838c72b2d9a50f2a1b3dc8eedaa3d36ac67c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4447ab5e5c0ced7852d0cb7dae3a4c0c7e3b3e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498849"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928173"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>创建可重用的按钮的组
 命令组是始终一起出现的菜单或工具栏的命令的集合。 可通过将其分配到不同的父菜单的 CommandPlacements 部分中重复使用任何命令组 *.vsct*文件。  
@@ -88,37 +88,37 @@ ms.locfileid: "39498849"
   
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>将在菜单上的一组可重用按钮  
   
-1.  创建中的条目`CommandPlacements`部分。 设置的 GUID 和 ID`CommandPlacement`元素与你的组，并将父 GUID 和 ID 为的目标位置。  
+1. 创建中的条目`CommandPlacements`部分。 设置的 GUID 和 ID`CommandPlacement`元素与你的组，并将父 GUID 和 ID 为的目标位置。  
   
-     CommandPlacements 部分应放置命令节的后面：  
+    CommandPlacements 部分应放置命令节的后面：  
   
-    ```xml  
-    <CommandTable>  
-    ...  
-      <Commands>... </Commands>  
-      <CommandPlacements>... </CommandPlacements>  
-    ...   
-    </CommandTable>  
-    ```  
+   ```xml  
+   <CommandTable>  
+   ...  
+     <Commands>... </Commands>  
+     <CommandPlacements>... </CommandPlacements>  
+   ...   
+   </CommandTable>  
+   ```  
   
-     命令组可以包含多个菜单上。 父菜单可以是你创建一个由提供[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)](如中所述*ShellCmdDef.vsct*或*SharedCmdDef.vsct*)，或在另一个 VSPackage 中定义的其中一个。 子女教养层数不受限制，只要父菜单最终连接到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或向显示的 vspackage 的快捷菜单。  
+    命令组可以包含多个菜单上。 父菜单可以是你创建一个由提供[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)](如中所述*ShellCmdDef.vsct*或*SharedCmdDef.vsct*)，或在另一个 VSPackage 中定义的其中一个。 子女教养层数不受限制，只要父菜单最终连接到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或向显示的 vspackage 的快捷菜单。  
   
-     下面的示例将此组放**解决方案资源管理器**工具栏右侧的其他按钮。  
+    下面的示例将此组放**解决方案资源管理器**工具栏右侧的其他按钮。  
   
-    ```xml  
-    <CommandPlacements>  
-        <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
-          <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
-        </CommandPlacement>  
-    </CommandPlacements>  
-    ```  
+   ```xml  
+   <CommandPlacements>  
+       <CommandPlacement guid="guidReusableCommandPackageCmdSet" id="MyMenuGroup" priority="0xF00">  
+         <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_PROJWIN"/>  
+       </CommandPlacement>  
+   </CommandPlacements>  
+   ```  
   
-    ```xml  
-    <CommandPlacements>  
-      <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
-          priority="0x605">  
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
-      </CommandPlacement>  
-    </CommandPlacements>  
+   ```xml  
+   <CommandPlacements>  
+     <CommandPlacement guid="guidButtonGroupCmdSet" id="MyMenuGroup"   
+         priority="0x605">  
+       <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />  
+     </CommandPlacement>  
+   </CommandPlacements>  
   
-    ```
+   ```

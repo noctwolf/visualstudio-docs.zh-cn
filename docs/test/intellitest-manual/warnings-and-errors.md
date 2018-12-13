@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 75cda2b45137d982038587ee1dcb73661b77f0df
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: efb82a7419ba58c27ccab864d2360538075a1089
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815790"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000609"
 ---
 # <a name="warnings-and-errors"></a>警告和错误
 
@@ -81,9 +81,9 @@ public void MyTest(...) {
 在测试代码中，可使用 [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) 来忽略循环条件生成的约束：
 
 ```csharp
-for (int i=0; 
+for (int i=0;
     PexSymbolicValue.Ignore(i<100); // IntelliTest will 'forget' about this path condition
-    i++) 
+    i++)
 { }
 ```
 
@@ -111,7 +111,7 @@ void ParameterizedTest(int n) {
     { ... }
 
     // irrelevant for MaxConditions, since conditions do not depend on input
-    for (int i=0; i<100; i++) 
+    for (int i=0; i<100; i++)
     { ... }
 }
 ```
@@ -135,7 +135,7 @@ void ParameterizedTest(int n) {
     int nshadow = PexSymbolicValue.Ignore(n); // IntelliTest looses track of 'n'
 
     // irrevelant for MaxConditions, since nshadow is not related to input
-    for (int i=0; i<nshadow; i++)  
+    for (int i=0; i<nshadow; i++)
     {...}
 }
 ```
@@ -220,16 +220,18 @@ public void MyTest(...) {
 <a name="help-construct"></a>
 ## <a name="need-help-to-construct-object"></a>需要帮助来构造对象
 
-IntelliTest 会[生成测试输入](input-generation.md)，某些输入对象可能包含字段。 这时 IntelliTest 将尝试生成具有私有字段的类的实例，并假定此私有字段具有特定值时将发生有趣的程序行为。 
+IntelliTest 会[生成测试输入](input-generation.md)，某些输入对象可能包含字段。
+这时 IntelliTest 将尝试生成具有私有字段的类的实例，并假定此私有字段具有特定值时将发生有趣的程序行为。
 
-但是，尽管使用反射可以实现这一点，IntelliTest 无法生成带有任意字段值的对象。 相反，在这些情况下，它依赖用户提示如何使用类的公共方法创建对象，并在其私有字段具有所需值时使用该对象。
+但是，尽管使用反射可以实现这一点，IntelliTest 无法生成带有任意字段值的对象。
+相反，在这些情况下，它依赖用户提示如何使用类的公共方法创建对象，并在其私有字段具有所需值时使用该对象。
 
-如需了解如何帮助 IntelliTest 构造有趣对象，请参阅[实例化现有类](input-generation.md#existing-classes). 
+如需了解如何帮助 IntelliTest 构造有趣对象，请参阅[实例化现有类](input-generation.md#existing-classes).
 
 <a name="help-types"></a>
 ## <a name="need-help-to-find-types"></a>需要帮助来查找类型
 
-IntelliTest 可针对任何 .NET 类型[生成测试输入](input-generation.md)。 这时 IntelliTest 将尝试创建一个派生自抽象类的实例或实现一个抽象接口，并且 IntelliTest 不知道满足约束的任何类型。 
+IntelliTest 可针对任何 .NET 类型[生成测试输入](input-generation.md)。 这时 IntelliTest 将尝试创建一个派生自抽象类的实例或实现一个抽象接口，并且 IntelliTest 不知道满足约束的任何类型。
 
 可通过指向一个或多个满足约束的类型来帮助 IntelliTest。 通常可使用以下属性之一提供帮助：
 
@@ -252,7 +254,7 @@ IntelliTest 可针对任何 .NET 类型[生成测试输入](input-generation.md)
 <a name="usable-type-guessed"></a>
 ## <a name="usable-type-guessed"></a>猜测的可用类型
 
-IntelliTest 可针对任何 .NET 类型[生成测试输入](input-generation.md)。 当类型为抽象或接口时，IntelliTest 必须选择该类型的特定实现。 若要进行选择，需要知道存在哪些类型。 
+IntelliTest 可针对任何 .NET 类型[生成测试输入](input-generation.md)。 当类型为抽象或接口时，IntelliTest 必须选择该类型的特定实现。 若要进行选择，需要知道存在哪些类型。
 
 显示此警告时，表示 IntelliTest 查找了一些引用程序集，并找到了一个实现类型，但不确定是否应使用该类型，或不确定其他位置是否有更合适的类型。 IntelliTest 只是选择了一个看似可行的类型。
 
@@ -275,12 +277,14 @@ IntelliTest 可针对任何 .NET 类型[生成测试输入](input-generation.md)
 
 IntelliTest 会通过监视程序执行来[生成测试输入](input-generation.md)。 应正确检测相关代码，这一点很重要，这样 IntelliTest 才能监视其行为。
 
-已检测代码调用其他未检测程序集中的方法时，会出现此警告。 如果希望 IntelliTest 浏览两者的交互，必须检测另一个程序集（或其中的部分内容）。
+已检测代码调用其他未检测程序集中的方法时，会出现此警告。
+如果希望 IntelliTest 浏览两者的交互，必须检测另一个程序集（或其中的部分内容）。
 
 <a name="external-method-called"></a>
 ## <a name="external-method-called"></a>已调用外部方法
 
-IntelliTest 会通过监视 .NET 应用程序的执行来[生成测试输入](input-generation.md)。 IntelliTest 无法针对非 .NET 语言编写的代码生成有意义的测试输入。
+IntelliTest 会通过监视 .NET 应用程序的执行来[生成测试输入](input-generation.md)。
+IntelliTest 无法针对非 .NET 语言编写的代码生成有意义的测试输入。
 
 已检测代码调用 IntelliTest 无法分析的非托管本机方法时，会出现此警告。 如果希望 IntelliTest 浏览两者的交互，必须模拟非托管方法。
 
@@ -289,7 +293,7 @@ IntelliTest 会通过监视 .NET 应用程序的执行来[生成测试输入](in
 
 IntelliTest 会通过监视 .NET 应用程序的执行来[生成测试输入](input-generation.md)。 但是出于技术原因，IntelliTest 无法监视某些方法。 例如，IntelliTest 无法监视静态构造函数。
 
-已检测代码调用 IntelliTest 无法监视的方法时，会出现此警告。 
+已检测代码调用 IntelliTest 无法监视的方法时，会出现此警告。
 
 <a name="testability-issue"></a>
 ## <a name="testability-issue"></a>可测试性问题
@@ -309,7 +313,7 @@ IntelliTest 会使用[约束求解器](input-generation.md#constraint-solver)来
 * 浮点数和整数之间的转换
 * System.Decimal 类型上的所有操作
 
-执行的代码执行操作或调用 IntelliTest 无法解释的方法时，会出现此警告。 
+执行的代码执行操作或调用 IntelliTest 无法解释的方法时，会出现此警告。
 
 <a name="observed-call-mismatch"></a>
 ## <a name="observed-call-mismatch"></a>观察到调用不匹配
@@ -321,7 +325,7 @@ IntelliTest 无法监视代码时，就无法生成与该代码相关的测试�
 
 * IntelliTest 监视了某些代码，该代码启动了对未检测方法的调用
 * 未检测的方法调用了已检测的方法
-* IntelliTest 监视调用的已检测方法 
+* IntelliTest 监视调用的已检测方法
 
 IntelliTest 不知道未检测中间方法的作用，因此无法生成与嵌套的已检测调用相关的测试输入。
 
@@ -342,4 +346,4 @@ IntelliTest 不知道未检测中间方法的作用，因此无法生成与嵌�
 
 ## <a name="got-feedback"></a>是否获得反馈？
 
-在 [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest) 上发布想法和功能请求。
+在[开发人员社区](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)上发布想法和功能请求。

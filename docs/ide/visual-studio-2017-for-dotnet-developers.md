@@ -1,7 +1,7 @@
 ---
 title: 提高 .NET 开发工作效率
 description: 概述导航、代码分析、单元测试和其他功能，帮助提升编写 .NET 代码的速度和质量。
-author: gewarren
+author: kuhlenh
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47c24aecce518cc62c93fe5e6885d77f64d49cad
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125021"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645141"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 工作效率指南
 
@@ -46,7 +46,7 @@ Visual Studio 常用快捷方式如下：
 | Ctrl+. （也可使用 C# 配置文件中的 Alt+Enter） | 快速操作和重构 | 查看光标位置或代码选定内容处可用的代码修复、代码生成操作、重构或其他快速操作 |
 | **Ctrl**+**D** | 复制行 | 复制光标所在的代码行（适用于 Visual Studio 2017 版本 15.6  及更高版本） |
 | **Shift**+**Alt**+**+**/**-** | 扩大/收缩选定内容 | 在编辑器中扩大或收缩当前选定内容（适用于 Visual Studio 2017 版本 15.5 及更高版本） |
-| **Ctrl** + **Alt** + **.** | 插入下一个匹配的脱字号 | 在与当前选择匹配的下一个位置添加选择和脱字号（适用于 Visual Studio 2017 版本 15.8 及更高版本） |
+| **Shift** + **Alt** + **.** | 插入下一个匹配的脱字号 | 在与当前选择匹配的下一个位置添加选择和脱字号（适用于 Visual Studio 2017 版本 15.8 及更高版本） |
 | Ctrl+Q | 快速启动 | 搜索所有 Visual Studio 设置 |
 | **F5** | 开始调试 | 开始调试应用程序 |
 | Ctrl+F5 | 不进行调试直接运行 | 不进行调试，直接在本地运行应用程序 |
@@ -57,7 +57,7 @@ Visual Studio 常用快捷方式如下：
 > [!NOTE]
 > 一些扩展取消绑定默认的 Visual Studio 键绑定。 若要使用以上命令，请按以下方式将键绑定还原为 Visual Studio 默认设置：转到“工具” > “导入和导出设置” > “重置所有设置”，或转到“工具” > “选项” > “键盘” > “重置”。
 
-参阅[我们的文档](..\ide\tips-and-tricks-for-visual-studio.md)了解 Visual Studio 中的更多键盘快捷键和命令。
+参阅[我们的文档](../ide/tips-and-tricks-for-visual-studio.md)了解 Visual Studio 中的更多键盘快捷键和命令。
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>我需要一种快速导航到文件或类型的方法
 
@@ -161,7 +161,7 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 | 启用导航到反编译源 | 对外部源的类型/成员启用“转到定义”并使用 ILSpy 反编译程序显示方法体 | “工具” > “选项” > “文本编辑器” > “C#” > “高级” > “启用导航到反编译源” |
 | 完成/建议模式 | 更改 IntelliSense 中的完成行为 - 有 IntelliJ 背景的开发人员往往会更改此处的默认设置 | “菜单” > “编辑” > “IntelliSense” > “切换完成模式” |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | 显示编辑器中的代码引用信息和更改历史记录 | “工具” > “选项” > “文本编辑器” > “所有语言” > “CodeLens” |
-| [代码片段](../ide/visual-csharp-code-snippets.md) | 帮助去掉常见样本 |  键入代码片段名称，然后按两次 Tab。 |
+| [代码片段](../ide/visual-csharp-code-snippets.md) | 帮助去掉常见样本 | 键入代码片段名称，然后按两次 Tab。 |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>缺少提供工作效率的功能或性能体验较差？
 

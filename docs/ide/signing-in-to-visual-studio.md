@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c7568583ac9239e168760000f0712ca7dcc4c33f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282221"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159849"
 ---
 # <a name="sign-in-to-visual-studio"></a>登录 Visual Studio
 
 如果通过登录到 IDE 设置了“个性化”帐户，则可以个性化和优化 Visual Studio 中的开发体验。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[登录到 Visual Studio for Mac](/visualstudio/mac/signing-in)。
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>我为什么应该登录到 Visual Studio？
 
@@ -28,8 +31,7 @@ ms.locfileid: "36282221"
 
 以下是登录后可体验的内容及可执行的操作的完整列表：
 
-- 
-  **访问 Visual Studio Dev Essentials 程序的权限** - 此程序包括免费软件产品/服务、培训、支持等。 请参阅 [Visual Studio Dev Essential](http://aka.ms/vsdevhelp) 了解详细信息。
+- **访问 Visual Studio Dev Essentials 程序的权限** - 此程序包括免费软件产品/服务、培训、支持等。 请参阅 [Visual Studio Dev Essential](http://aka.ms/vsdevhelp) 了解详细信息。
 
 - **同步 Visual Studio 设置** - 登录到任何设备上的 Visual Studio 时，将立即应用自定义设置（例如，键绑定、窗口布局和颜色主题）。 请参阅 [Visual Studio 中的同步设置](../ide/synchronized-settings-in-visual-studio.md)。
 
@@ -37,9 +39,9 @@ ms.locfileid: "36282221"
 
 - **延长 Visual Studio 试用期** - 可将 Visual Studio Professional 或 Visual Studio Enterprise 的使用延长 90 天，而不会限定为 30 天试用期。
 
-- **解锁 Visual Studio（如果使用与 MSDN 或 Visual Studio Team Services 订阅相关联的帐户）**。 请参阅 [如何解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
+- 如果使用与 Microsoft Visual Studio 订阅或 Azure DevOps 组织相关联的帐户，解锁 Visual Studio。 请参阅 [如何解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
 
-- 在 IDE 中自动连接到服务（如 Azure 和 Visual Studio Team Services），而不会再次提示对同一账户输入凭据。
+- 在 IDE 中自动连接到服务（如 Azure 和 Azure DevOps Services），而不会再次提示对同一帐户输入凭据。
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>如何登录到 Visual Studio
 
@@ -68,4 +70,6 @@ ms.locfileid: "36282221"
 ## <a name="see-also"></a>请参阅
 
 * [如何解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)
-* [Visual Studio IDE 概述](../ide/visual-studio-ide.md)
+* [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)
+* [登录 (Visual Studio for Mac)](/visualstudio/mac/signing-in)
+* [激活 (Visual Studio for Mac)](/visualstudio/mac/activation)

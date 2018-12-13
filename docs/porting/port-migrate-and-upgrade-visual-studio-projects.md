@@ -1,7 +1,7 @@
 ---
 title: 移植、迁移和升级项目
 description: 有关 Visual Studio 2017 中对 Visual Studio 早期版本中创建的项目的支持，以及 Visual Studio 确定何时需要迁移项目方式的参考。
-ms.date: 06/19/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 4bad722034657e3b58faaf665bfb0bc6ffcbe960
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 0c082540632be14f7ddce94cb64ef41f03b1e1f7
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513541"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349538"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 的项目迁移和升级参考
 
@@ -41,7 +41,7 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 
 以下列表描述了 Visual Studio 2017 中对在之前版本中创建的项目的支持。
 
-如果未看到本应在此列出的项目或文件类型，请查阅[本文的 Visual Studio 2015 版本](port-migrate-and-upgrade-visual-studio-projects.md)，并使用此页底部的“提供文档反馈”选项来提供有关项目的详细信息。 （如果想要响应，请使用文档反馈而不是匿名的“此页面有帮助吗？” 控件。）
+如果未看到本应在此列出的项目或文件类型，请查阅[本文的 Visual Studio 2015 版本](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015)，并使用此页底部的“提供文档反馈”选项来提供有关项目的详细信息。 （如果想要响应，请使用文档反馈而不是匿名的“此页面有帮助吗？” 控件。）
 
 | 项目类型 | 支持 |
 | --- | --- |
@@ -68,7 +68,7 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 | Visual Studio 扩展性/VSIX | 更新 MinimumVersion 14.0 或更低版本中的项目以声明 MinimumVersion 15.0，这样可防止在早期版本的 Visual Studio 中打开该项目。 若要允许在早期版本中打开项目，请将 MinimumVersion 设置为 `$(VisualStudioVersion)`。 另请参阅[如何：将扩展性项目迁移到 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |
 | Visual Studio 实验室管理工具版 | 你可以使用 Microsoft 测试管理器或 Visual Studio 2010 SP1 及更高版本打开在以上任一版本中创建的环境。 但对于 Visual Studio 2010 SP1，在可以创建环境之前，Microsoft 测试管理器的版本必须与 Team Foundation Server 的版本匹配。 |
 | Visual Studio Tools for Apache Cordova | 可以在 Visual Studio 2017 中打开项目，但此项目不具有向后兼容性。 从 Visual Studio 2015 中打开某个项目时，系统将提示允许修改项目。 此修改会将项目升级为使用工具集而非 `taco.json` 文件来管理 Cordova 库、该库的平台、插件和节点/npm 依赖关系的版本控制。 有关详细信息，请参阅[迁移指南](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015)。 |
-| Web 部署 (wdproj) | Visual Studio 2012 中已删除对 Web 部署项目的支持，而添加了发布配置文件支持。 在 Visual Studio 2017 中没有相应的功能，因此，此类项目没有自动迁移路径。 而是，在文本编辑器中打开 wdproj 文件，并将任何自定义项复制粘贴到 pubxml（发布配置文件）文件中，如 [StackOverflow](https://stackoverflow.com/a/12061065/1203388) 中所述。 另请参阅[有关网站和 Web 部署项目的计划（MSDN 博客）](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects)。 |
+| Web 部署 (wdproj) | Visual Studio 2012 中已删除对 Web 部署项目的支持，而添加了发布配置文件支持。 在 Visual Studio 2017 中没有相应的功能，因此，此类项目没有自动迁移路径。 而是，在文本编辑器中打开 wdproj 文件，并将任何自定义项复制粘贴到 pubxml（发布配置文件）文件中，如 [StackOverflow](https://stackoverflow.com/a/12061065/1203388) 中所述。 另请参阅[有关网站和 Web 部署项目的计划](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/)。 |
 | Windows Communication Foundation, Windows Workflow Foundation | 可以在 Visual Studio 2017、Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012 中打开此项目 |
 | Windows Presentation Foundation | 可以在 Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中打开此项目。 |
 | Windows 应用商店/手机应用 | Visual Studio 2017 不支持 Windows Store 8.1 和 8.0 的项目，也不支持 Windows Phone 8.1 和 8.0 的项目。 若要继续使用这些应用，请继续使用 Visual Studio 2015。 若要继续使用 Windows Phone 7.x 项目，请使用 Visual Studio 2012。 |

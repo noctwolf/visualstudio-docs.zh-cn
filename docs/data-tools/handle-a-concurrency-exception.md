@@ -20,12 +20,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6aca4815672d700fbea9d489f6316b8b0337f8df
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: fef30f836ab27cd7a67d85a04254be0018d5b33e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582328"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388733"
 ---
 # <a name="handle-a-concurrency-exception"></a>处理并发异常
 
@@ -65,16 +65,13 @@ ms.locfileid: "39582328"
 
        后不久，查询完成运行并创建 Northwind 数据库。
 
-> [!NOTE]
-> 对话框和菜单命令可能不同于所述的帮助，具体取决于您现用的设置或正在使用的版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
-
 ## <a name="create-a-new-project"></a>创建新项目
 
 首先，创建新的 Windows 窗体应用程序：
 
 1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
 
-2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
+2. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
 
 3. 在中间窗格中，选择**Windows 窗体应用**项目类型。
 
@@ -88,7 +85,7 @@ ms.locfileid: "39582328"
 
 1. 上**数据**菜单中，选择**添加新数据源**。
 
-   数据源配置向导将打开。
+   “数据源配置向导”打开。
 
 2. 上**选择数据源类型**屏幕上，选择**数据库**。
 
@@ -109,7 +106,7 @@ ms.locfileid: "39582328"
 
 在本部分中，您将创建<xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType>拖拽**客户**项从**数据源**拖到 Windows 窗体的窗口。
 
-1. 上**数据**菜单中，选择**显示数据源**以打开**数据源窗口**。
+1. 若要打开**数据源**窗口，然后在**数据**菜单中，选择**显示数据源**。
 
 2. 在中**数据源**窗口中，展开**NorthwindDataSet**节点，并选择**客户**表。
 
@@ -162,13 +159,13 @@ ms.locfileid: "39582328"
 
 1. 添加以下代码`Form1_Load`方法：
 
-     [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
-     [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
+   [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
+   [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]
 
 2. 替换`CustomersBindingNavigatorSaveItem_Click`方法来调用`UpdateDatabase`方法，使它看起来如下所示：
 
-     [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
-     [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
+   [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
+   [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]
 
 ### <a name="display-choices-to-the-user"></a>向用户显示的选项
 
@@ -176,8 +173,8 @@ ms.locfileid: "39582328"
 
 通过添加以下代码创建的消息**代码编辑器**。 输入此代码下面`UpdateDatabase`方法：
 
-     [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
-     [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
+[!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
+[!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>处理用户的响应
 
@@ -185,8 +182,8 @@ ms.locfileid: "39582328"
 
 添加下面的代码已在上一节中添加以下代码：
 
-     [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
-     [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
+[!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
+[!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
 ## <a name="test-the-form"></a>测试窗体
 

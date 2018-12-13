@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: cf94de633554cef495b0a9a023426ac49de75c76
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382030"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895270"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>如何：创建请求级插件
 
 请求是构成 Web 性能测试的声明性语句。 使用 Web 性能测试插件，可以隔离代码并在 Web 性能测试中的主要声明性语句外部重用代码。 可以创建插件并将其添加到单个请求以及包含它的 Web 性能测试中。 自定义的请求插件提供一种调用代码的方式（作为特定的请求在 Web 性能测试中运行）。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 每个 Web 性能测试请求插件都具有 PreRequest 方法和 PostRequest 方法。 将请求插件附加到某个特定的 http 请求之后，在发出请求之前将会激发 PreRequest 事件，并在收到请求之后激发 PostRequest 事件。
 

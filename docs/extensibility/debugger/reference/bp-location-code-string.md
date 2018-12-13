@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_STRING |Microsoft 文档
+title: BP_LOCATION_CODE_STRING |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 102ad26fcc746c8400cfa5114d9559fc11729dee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31b7baad0350ef0524aee81e61f9019b8e91a9de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857141"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
-用于设置基于用户可以输入从集成的开发环境 (IDE) 的字符串的代码断点。  
+用于设置基于用户可以从集成的开发环境 (IDE) 中输入的字符串的代码断点。  
   
 ## <a name="syntax"></a>语法  
   
@@ -36,13 +36,13 @@ typedef struct _BP_LOCATION_CODE_STRING {
   
 ## <a name="members"></a>成员  
  `bstrContext`  
- 在代码中的断点，通常一个方法或函数的名称，作为调用堆栈上看到的上下文。  
+ 在代码内的断点，通常显示调用堆栈上的方法或函数名称的上下文。  
   
  `bstrCodeExpr`  
- 用户中的类型来描述代码断点的字符串。  
+ 在用户键入来描述代码断点字符串。  
   
 ## <a name="remarks"></a>备注  
- 此结构是的成员[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)作为联合的一部分的结构。  
+ 此结构是的成员[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)结构作为联合的一部分。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -51,6 +51,6 @@ typedef struct _BP_LOCATION_CODE_STRING {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

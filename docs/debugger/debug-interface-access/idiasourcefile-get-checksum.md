@@ -1,5 +1,5 @@
 ---
-title: 'Idiasourcefile:: Get_checksum |Microsoft 文档'
+title: 'Idiasourcefile:: Get_checksum |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 002ad16d94467c135e08ef0040fd7ffd51462719
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3f0484fce6f5355361c0c5156cd3c7ad827775c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919424"
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
-检索的校验和字节。  
+检索的校验和字节数。  
   
 ## <a name="syntax"></a>语法  
   
@@ -39,10 +39,10 @@ HRESULT get_checksum (
  [in]数据缓冲区，以字节为单位的大小。  
   
  `pcbData`  
- [out]返回校验和字节的数。 此参数不能为`NULL`。  
+ [out]返回校验和字节数。 此参数不能为`NULL`。  
   
  `data`  
- [在中，out]使用校验和字节填充缓冲区。 如果此参数为`NULL`，然后`pcbData`返回所需的字节数。  
+ [in、 out]使用校验和字节填充缓冲区。 如果此参数为`NULL`，然后`pcbData`返回所需的字节数。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
@@ -50,9 +50,9 @@ HRESULT get_checksum (
 ## <a name="remarks"></a>备注  
  若要确定用于生成校验和字节的校验和算法的类型，请调用[idiasourcefile:: Get_checksumtype](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)方法。  
   
- 从源代码文件的映像通常生成校验和，因此，在源文件中的更改会反映在校验和字节中的更改。 如果不匹配的校验和字节校验和从文件中，已加载映像生成，则该文件应被视为已损坏或篡改。  
+ 从源代码文件的映像通常生成校验和，因此源文件中的更改会反映在校验和字节中的更改。 如果不匹配的校验和字节生成从加载的图像的文件，则应被视为该文件的校验和损坏或被篡改。  
   
- 典型的校验和永远不会超过 32 个字节的大小，但不是会假定这是校验和的最大大小。 设置`data`参数`NULL`若要获取的检索校验和所需的字节数。 然后分配适当的大小的缓冲区，并调用此方法一次使用新的缓冲区。  
+ 典型的校验和不会超过 32 个字节的大小，但不要认为这是最大大小的校验和。 设置`data`参数`NULL`获取检索校验和所需的字节数。 然后分配适当大小的缓冲区并调用此方法一次使用新的缓冲区。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   

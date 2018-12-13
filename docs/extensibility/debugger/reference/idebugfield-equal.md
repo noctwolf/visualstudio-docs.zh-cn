@@ -1,5 +1,5 @@
 ---
-title: IDebugField::Equal |Microsoft 文档
+title: IDebugField::Equal |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2d195c28123cc786c9a5a97add98b7f67d499b7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ae30cd36d2a3f51b697afa3cb5f4615a5f322da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830777"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
-此方法比较此域和指定字段相等。  
+此方法将此字段与指定字段相等进行比较。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,10 +41,10 @@ int Equal(
   
 #### <a name="parameters"></a>参数  
  `pField`  
- [in]要与此字段。  
+ [in]要与此比较的字段。  
   
 ## <a name="return-value"></a>返回值  
- 如果这些字段为相同，则返回`S_OK`。 如果这些字段为不同，则返回`S_FALSE.`否则，返回错误代码。  
+ 如果字段是相同的则返回`S_OK`。 如果字段不同，返回`S_FALSE.`否则，返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

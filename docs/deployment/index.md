@@ -1,19 +1,20 @@
 ---
 layout: LandingPage
-title: 在 Visual Studio 中部署应用 | Microsoft Docs
+title: 部署应用 | Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 来部署应用程序、服务和组件。
+ms.custom: seodec18
 ms.topic: landing-page
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-deployment
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: d16a7ced93364ea9143c326c93f448fec577e034
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 04e773afd6fc44e79f01dc4204c851cc4a67c947
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341757"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053936"
 ---
 # <a name="deployment-in-visual-studio"></a>在 Visual Studio 中部署
 
@@ -118,6 +119,42 @@ Visual Studio 提供有助于部署应用的一系列不同工具。
 
 <ul class="panelContent cardsFTitle">
     <li>
+        <a href="/aspnet/core/tutorials/publish-to-azure-webapp-using-vs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy ASP.NET to Azure">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>将 ASP.NET 部署到 Azure</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="tutorial-import-publish-settings-iis.md">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to IIS">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>导入发布设置并将 ASP.NET 部署到 IIS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
         <a href="/dotnet/core/deploying/deploy-with-vs">
         <div class="cardSize">
             <div class="cardPadding">
@@ -154,17 +191,17 @@ Visual Studio 提供有助于部署应用的一系列不同工具。
         </a>
     </li>
     <li>
-        <a href="/aspnet/core/tutorials/publish-to-azure-webapp-using-vs">
+        <a href="tutorial-import-publish-settings-azure.md">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy ASP.NET to Azure">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>将 ASP.NET 部署到 Azure</h3>
+                        <h3>导入发布设置并部署到 Azure 应用服务</h3>
                     </div>
                 </div>
             </div>
@@ -201,42 +238,6 @@ Visual Studio 提供有助于部署应用的一系列不同工具。
                     </div>
                     <div class="cardText">
                         <h3>将 Python 部署到 Azure</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="tutorial-import-publish-settings-azure.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to Azure App Service">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>导入发布设置并部署到 Azure 应用服务</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="tutorial-import-publish-settings-iis.md">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to IIS">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>导入发布设置并部署到 IIS</h3>
                     </div>
                 </div>
             </div>

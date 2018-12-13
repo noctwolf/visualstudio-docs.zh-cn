@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e5c5856217951d15042f07edb97a918e09ba777
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c74feaed6c108f9dcfb5f2b374a72c34526134b0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635021"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296146"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>演练： 创建 SharePoint 项目自定义部署步骤
   在部署 SharePoint 项目时，Visual Studio 按特定顺序执行一系列的部署步骤。 Visual Studio 提供了许多内置部署步骤，但您也可以创建您自己。  
@@ -45,28 +45,28 @@ ms.locfileid: "42635021"
 ## <a name="prerequisites"></a>系统必备  
  需要要完成本演练的开发计算机上安装以下组件：  
   
--   支持的 Windows、 SharePoint 和 Visual Studio 版本。
+- 支持的 Windows、 SharePoint 和 Visual Studio 版本。
   
--   Visual Studio SDK。 本演练使用**VSIX 项目**SDK 来创建 VSIX 包，以将扩展部署中的模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- Visual Studio SDK。 本演练使用**VSIX 项目**SDK 来创建 VSIX 包，以将扩展部署中的模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 了解以下概念很有帮助，但不是必需，若要完成本演练：  
+  了解以下概念很有帮助，但不是必需，若要完成本演练：  
   
--   使用 for SharePoint 服务器对象模型。 有关详细信息，请参阅[使用 SharePoint Foundation 服务器端对象模型](http://go.microsoft.com/fwlink/?LinkId=177796)。  
+- 使用 for SharePoint 服务器对象模型。 有关详细信息，请参阅[使用 SharePoint Foundation 服务器端对象模型](http://go.microsoft.com/fwlink/?LinkId=177796)。  
   
--   SharePoint 解决方案。 有关详细信息，请参阅[解决方案概述](http://go.microsoft.com/fwlink/?LinkId=169422)。  
+- SharePoint 解决方案。 有关详细信息，请参阅[解决方案概述](http://go.microsoft.com/fwlink/?LinkId=169422)。  
   
--   升级 SharePoint 解决方案。 有关详细信息，请参阅[升级解决方案](http://go.microsoft.com/fwlink/?LinkId=177802)。  
+- 升级 SharePoint 解决方案。 有关详细信息，请参阅[升级解决方案](http://go.microsoft.com/fwlink/?LinkId=177802)。  
   
 ## <a name="create-the-projects"></a>创建项目
  若要完成本演练，必须创建三个项目：  
   
--   创建 VSIX 包将扩展部署的 VSIX 项目。  
+- 创建 VSIX 包将扩展部署的 VSIX 项目。  
   
--   实现扩展的类库项目。 此项目必须面向.NET Framework 4.5。  
+- 实现扩展的类库项目。 此项目必须面向.NET Framework 4.5。  
   
--   一个用于定义自定义的 SharePoint 命令的类库项目。 此项目必须面向.NET Framework 3.5。  
+- 一个用于定义自定义的 SharePoint 命令的类库项目。 此项目必须面向.NET Framework 3.5。  
   
- 首先演练创建项目。  
+  首先演练创建项目。  
   
 #### <a name="to-create-the-vsix-project"></a>若要创建 VSIX 项目  
   
@@ -193,7 +193,7 @@ ms.locfileid: "42635021"
   
 1.  在中**解决方案资源管理器**下**UpgradeDeploymentStep**项目中，打开快捷菜单**source.extension.vsixmanifest**文件，，然后选择**打开**。  
   
-     Visual Studio 清单编辑器中打开该文件。 在 source.extension.vsixmanifest 文件是所有 VSIX 包都需要 extension.vsixmanifest 文件的基础。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 参考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+     Visual Studio 清单编辑器中打开该文件。 在 source.extension.vsixmanifest 文件是所有 VSIX 包都需要 extension.vsixmanifest 文件的基础。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 参考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
 2.  在中**产品名称**框中，输入**升级 SharePoint 项目的部署步骤**。  
   
@@ -208,7 +208,7 @@ ms.locfileid: "42635021"
 6.  在中**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
+    >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。  
   
 7.  在中**源**列表中，选择**当前解决方案中的项目**。  
   
@@ -221,7 +221,7 @@ ms.locfileid: "42635021"
 10. 在中**类型**列表中，输入**SharePoint.Commands.v4**。  
   
     > [!NOTE]  
-    >  此元素指定要包含在 Visual Studio 扩展中的自定义扩展插件。 有关详细信息，请参阅[资产元素 （VSX 架构）](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737)。  
+    >  此元素指定要包含在 Visual Studio 扩展中的自定义扩展插件。 有关详细信息，请参阅[资产元素 （VSX 架构）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。  
   
 11. 在中**源**列表中，选择**当前解决方案中的项目**。  
   
@@ -250,28 +250,28 @@ ms.locfileid: "42635021"
   
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>若要使用列表定义和列表实例创建一个 SharePoint 项目  
   
-1.  在实验实例中的 Visual Studio 中，在菜单栏上，选择**文件** > **新建** > **项目**。  
+1. 在实验实例中的 Visual Studio 中，在菜单栏上，选择**文件** > **新建** > **项目**。  
   
-2.  在中**新的项目**对话框框中，展开**Visual C#** 节点或**Visual Basic**节点，展开**SharePoint**节点，然后选择**2010年**节点。  
+2. 在中**新的项目**对话框框中，展开**Visual C#** 节点或**Visual Basic**节点，展开**SharePoint**节点，然后选择**2010年**节点。  
   
-3.  在对话框顶部，请确保 **.NET Framework 3.5**将出现在.NET Framework 版本的列表。  
+3. 在对话框顶部，请确保 **.NET Framework 3.5**将出现在.NET Framework 版本的列表。  
   
-     为项目[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]需要此版本的.NET Framework。  
+    为项目[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]需要此版本的.NET Framework。  
   
-4.  在项目模板列表中，选择**SharePoint 2010 项目**，将项目命名**EmployeesListDefinition**，然后选择**确定**按钮。  
+4. 在项目模板列表中，选择**SharePoint 2010 项目**，将项目命名**EmployeesListDefinition**，然后选择**确定**按钮。  
   
-5.  在中**SharePoint 自定义向导**，输入想要用于调试的站点的 URL。  
+5. 在中**SharePoint 自定义向导**，输入想要用于调试的站点的 URL。  
   
-6.  下**此 SharePoint 解决方案的信任级别是什么**，选择**部署为场解决方案**选项按钮。  
+6. 下**此 SharePoint 解决方案的信任级别是什么**，选择**部署为场解决方案**选项按钮。  
   
-    > [!NOTE]  
-    >  升级部署步骤不支持沙盒解决方案。  
+   > [!NOTE]  
+   >  升级部署步骤不支持沙盒解决方案。  
   
-7.  选择**完成**按钮。  
+7. 选择**完成**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建 EmployeesListDefinition 项目。  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建 EmployeesListDefinition 项目。  
   
-8.  打开 EmployeesListDefinition 项目的快捷菜单中，选择**外**，然后选择**新项**。  
+8. 打开 EmployeesListDefinition 项目的快捷菜单中，选择**外**，然后选择**新项**。  
   
 9. 在中**添加新项-EmployeesListDefinition**对话框框中，展开**SharePoint**节点，然后选择**2010年**节点。  
   
@@ -281,13 +281,13 @@ ms.locfileid: "42635021"
   
 11. 上**选择列表设置**页上，验证以下设置，然后选择**完成**按钮：  
   
-    1.  **员工列表**将出现在**要列表的显示名称？** 框。  
+    1. **员工列表**将出现在**要列表的显示名称？** 框。  
   
-    2.  **创建基于的可自定义列表：** 选择选项按钮。  
+    2. **创建基于的可自定义列表：** 选择选项按钮。  
   
-    3.  **默认 （空）** 中选择**创建基于的可自定义列表：** 列表。  
+    3. **默认 （空）** 中选择**创建基于的可自定义列表：** 列表。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建员工列表项的标题列和单个的空实例并打开列表设计器。  
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建员工列表项的标题列和单个的空实例并打开列表设计器。  
   
 12. 在列表设计器上**列**选项卡上，选择**键入新的或现有的列名称**行，以及如何将在以下各列**列显示名称**列表：  
   
@@ -419,29 +419,29 @@ ms.locfileid: "42635021"
   
 #### <a name="to-test-the-upgrade-deployment-step"></a>若要测试升级的部署步骤  
   
-1.  在 Visual Studio 的实验实例中**解决方案资源管理器**，打开快捷菜单**EmployeesListDefinition**项目节点，然后选择**属性**.  
+1. 在 Visual Studio 的实验实例中**解决方案资源管理器**，打开快捷菜单**EmployeesListDefinition**项目节点，然后选择**属性**.  
   
-     打开属性编辑器/设计器。  
+    打开属性编辑器/设计器。  
   
-2.  上**SharePoint**选项卡上，设置**活动部署配置**属性设置为**升级**。  
+2. 上**SharePoint**选项卡上，设置**活动部署配置**属性设置为**升级**。  
   
-     此自定义部署配置包括新的升级部署步骤。  
+    此自定义部署配置包括新的升级部署步骤。  
   
-3.  打开快捷菜单**员工列表**项，项目，然后选择**属性**或**打开**。  
+3. 打开快捷菜单**员工列表**项，项目，然后选择**属性**或**打开**。  
   
-     打开属性编辑器/设计器。  
+    打开属性编辑器/设计器。  
   
-4.  上**视图**选项卡上，选择**电子邮件**列，然后选择**<** 键，将移动该列从**所选列**到列出**可用列**列表。  
+4. 上**视图**选项卡上，选择**电子邮件**列，然后选择**<** 键，将移动该列从**所选列**到列出**可用列**列表。  
   
-     此操作将删除这些字段的默认视图**员工**SharePoint 站点上的列表。  
+    此操作将删除这些字段的默认视图**员工**SharePoint 站点上的列表。  
   
-5.  开始调试通过选择**F5**关键的或在菜单栏中选择**调试** > **开始调试**。  
+5. 开始调试通过选择**F5**关键的或在菜单栏中选择**调试** > **开始调试**。  
   
-6.  验证中设置的断点处停止 Visual Studio 的其他实例中的代码`CanExecute`方法。  
+6. 验证中设置的断点处停止 Visual Studio 的其他实例中的代码`CanExecute`方法。  
   
-7.  选择**F5**再次键，或在菜单栏上选择**调试** > **继续**。  
+7. 选择**F5**再次键，或在菜单栏上选择**调试** > **继续**。  
   
-8.  验证代码中设置的断点处停止`Execute`方法。  
+8. 验证代码中设置的断点处停止`Execute`方法。  
   
 9. 选择**F5**键，或在菜单栏上选择**调试** > **继续**最后一次。  
   
@@ -449,11 +449,11 @@ ms.locfileid: "42635021"
   
 10. 在中**列出了**部分的快速启动区域中，选择**员工**列表，并验证以下详细信息：  
   
-    -   手动添加前面 （对于 Andy、 设施管理器) 的项所做的列表。  
+    - 手动添加前面 （对于 Andy、 设施管理器) 的项所做的列表。  
   
-    -   **办公电话**并**电子邮件地址**列不会显示在此视图中的列表。  
+    - **办公电话**并**电子邮件地址**列不会显示在此视图中的列表。  
   
-     **升级**部署配置修改现有**员工**SharePoint 站点上的列表实例。 如果您使用了**默认**而不是部署配置**升级**配置，则会遇到部署冲突。 Visual Studio 会通过替换来解决该冲突**员工**列表中，Andy，设备管理器的项将删除。  
+      **升级**部署配置修改现有**员工**SharePoint 站点上的列表实例。 如果您使用了**默认**而不是部署配置**升级**配置，则会遇到部署冲突。 Visual Studio 会通过替换来解决该冲突**员工**列表中，Andy，设备管理器的项将删除。  
   
 ## <a name="clean-up-the-development-computer"></a>清理开发计算机
  测试升级的部署步骤完成后，从 SharePoint 站点中删除列表实例和列表定义，并从 Visual Studio 中删除部署步骤扩展。  

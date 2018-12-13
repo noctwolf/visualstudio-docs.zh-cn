@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a86b74787a574a1ad54b228c117f6cb598f1eb2b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4ab2777675df16df47b69d024be3f2d9458d0ba8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916837"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>通过使用检测收集详细计时数据
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具检测方法将分析代码注入到模块的副本中。 该代码记录分析运行期间模块中函数的每次进入、退出和函数调用。 在收集有关你的代码的某一部分的详细计时信息，以及了解输入和输出操作对应用程序性能的影响时，该检测方法会十分有用。  
@@ -34,9 +34,9 @@ ms.locfileid: "43775160"
 ## <a name="common-tasks"></a>常见任务
  可以指定 _性能会话_ 对话框中的附加选项。 若要打开此对话框：  
   
--   在“性能资源管理器” 中，右键单击性能会话名称，然后单击“属性” 。  
+- 在“性能资源管理器” 中，右键单击性能会话名称，然后单击“属性” 。  
   
- 下表中的任务描述了在使用检测方法进行分析时，你可以在 _性能会话_ 对话框中指定的选项。  
+  下表中的任务描述了在使用检测方法进行分析时，你可以在 _性能会话_ 对话框中指定的选项。  
   
 |任务|相关内容|  
 |----------|---------------------|  

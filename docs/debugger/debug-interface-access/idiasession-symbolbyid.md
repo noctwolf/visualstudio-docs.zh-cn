@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Symbolbyid |Microsoft 文档'
+title: 'Idiasession:: Symbolbyid |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e5e2815985aacd43603d24f1c6f4052b66c19c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8ca800c4409c9c3c1b72b625aa8cedac31e5b194
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911624"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 检索由其唯一标识符的符号。  
@@ -38,7 +38,7 @@ HRESULT symbolById (
  [in]唯一标识符。  
   
  `ppSymbol`  
- [out]返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)检索表示符号的对象。  
+ [out]返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)检索表示该符号的对象。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
@@ -46,10 +46,10 @@ HRESULT symbolById (
 ## <a name="remarks"></a>备注  
  指定的标识符是由 DIA SDK 在内部使用，以使所有符号是唯一的唯一值。  
   
- 此方法可以使用，例如，若要检索的符号表示另一个符号的类型 （请参阅示例）。  
+ 此方法可以使用，例如，若要检索表示类型的另一种符号的符号 （参阅示例）。  
   
 ## <a name="example"></a>示例  
- 此示例检索[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示类型的另一个符号。 此示例演示如何使用`symbolById`会话中的方法。 更简单的方法是调用[idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)方法来直接检索类型符号。  
+ 此示例检索[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示的另一种符号类型。 此示例演示如何使用`symbolById`会话中的方法。 更简单的方法是调用[idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)方法直接检索类型符号。  
   
 ```C++  
 IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)  

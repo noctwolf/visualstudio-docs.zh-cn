@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData |Microsoft 文档
+title: IPropertyProxyEESide::GetManagedViewerCreationData |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47ae1c724542d628e7f3c047efd8ed2da1f6f1f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd8da39b89311939017698b4095321df450112e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124731"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821365"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-为了实例化该查看器中检索此属性类型的查看器有关的信息。  
+为了实例化该查看器中检索有关此属性类型的查看器的信息。  
   
 ## <a name="syntax"></a>语法  
   
@@ -51,30 +51,30 @@ int GetManagedViewerCreationData(
   
 #### <a name="parameters"></a>参数  
  `assemName`  
- [out]返回该对象的程序集的名称。  
+ [out]返回包含此对象的程序集的名称。  
   
  `assemBytes`  
- [out]返回[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)对象，其中包含此对象 （如果不可用的任何字节，这是一个 null 值） 的程序集个字节。  
+ [out]返回[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)对象，其中包含此对象 （如果不可用的任何字节，这是一个 null 值） 的程序集字节。  
   
  `assemPdb`  
- [out]返回`IEEDataStorage`对象，其中包含符号存储此对象的信息 （如果没有符号存储区可用，这是一个 null 值）。  
+ [out]返回`IEEDataStorage`对象包含的符号存储此对象的信息 （如果没有符号存储区可用，这是一个 null 值）。  
   
  `className`  
  [out]返回包含此对象的类名称。  
   
  `alr`  
- [out]返回一个值从[ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)枚举，该值指示程序集的位置。  
+ [out]返回一个值从[ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)枚举，指示程序集的位置。  
   
  `replacementOk`  
- [out]返回非零 (`TRUE`) 可以更改此对象的值; 如果零 (`FALSE`) 的对象是否只读的。  
+ [out]返回非零值 (`TRUE`) 可以更改此对象的值; 如果为零 (`FALSE`) 如果对象是只读的。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法由类型可视化工具用于实例化托管的查看器。  
+ 类型可视化工具使用此方法来实例化托管的查看器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::Execute |Microsoft 文档
+title: IDebugProcess3::Execute |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 349f792826bcfaa6ec3af1e10069e9c7182868bb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a890390e6b3f4e1286a1c2a38fad54058c15696c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864174"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
-将继续运行此过程从已停止状态。 清除任何以前的执行状态 （如步骤） 和进程启动再次执行。  
+将继续运行此过程从已停止状态。 清除任何以前的执行状态 （如步骤），并再次执行该过程开始。  
   
 > [!NOTE]
->  此方法应使用而不是[执行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)。  
+>  应使用此方法以代替[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -44,18 +44,18 @@ int Execute(
   
 #### <a name="parameters"></a>参数  
  `pThread`  
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象表示要执行的线程。  
+ [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示要执行的线程。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
+ 如果成功，则返回`S_OK`; 否则为将返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 当用户开始从停止状态在某些其他进程的线程中执行时，在此过程上调用此方法。 当用户选择，则还会调用此方法**启动**命令**调试**菜单在 IDE 中的。 此方法的实现可能很简单，只需与调用[恢复](../../../extensibility/debugger/reference/idebugthread2-resume.md)过程中在当前线程上的方法。  
+ 当用户从某个其他进程的线程已停止状态开始执行时，对此过程将调用此方法。 当用户选择此方法也称为**启动**命令**调试**菜单在 IDE 中的。 此方法的实现可能很简单，与调用[Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)过程中在当前线程上的方法。  
   
 > [!WARNING]
->  不发送 stopping 事件或即时 （同步） 事件与[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)时处理此调用; 否则调试器可能会挂起。  
+>  不发送停止事件或将即时 （同步） 事件与[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)时处理此调用; 否则调试器可能会挂起。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [恢复](../../../extensibility/debugger/reference/idebugthread2-resume.md)   

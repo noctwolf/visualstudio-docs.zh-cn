@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3f4af12b7c73aa2da7f580b11b1984aa2c8238b7
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 16ee7eae30d947e6a83444c8e744cbaca398bf94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566822"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894813"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自定义指令处理器
 
@@ -154,7 +154,7 @@ ms.locfileid: "39566822"
 
  确认 .pkgdef 文件显示在生成文件夹中，该文件夹通常是 bin\Debug 或 bin\Release。 如果未显示该文件，请在文本编辑器中打开 .csproj 文件，删除以下节点：`<GeneratePkgDefFile>false</GeneratePkgDefFile>`。
 
- 有关详细信息，请参阅[Vspackage](../extensibility/internals/vspackages.md)。
+ 有关更多信息，请参见 [VSPackages](../extensibility/internals/vspackages.md)。
 
 ## <a name="setting-a-registry-key"></a>设置注册表项
  这种自定义指令处理器的安装方法是最不方便的一种方法。 这种方法不能方便地启用和禁用指令处理器，也不能方便地向其他用户分发指令处理器。
@@ -164,30 +164,30 @@ ms.locfileid: "39566822"
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>通过设置注册表项注册指令处理器
 
-1.  运行 `regedit`。
+1. 运行 `regedit`。
 
-2.  在 regedit 中，定位到
+2. 在 regedit 中，定位到
 
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
-     如果你想要在 Visual Studio 的实验版本中安装指令处理器，在"11.0"之后插入"Exp"。
+    如果你想要在 Visual Studio 的实验版本中安装指令处理器，在"11.0"之后插入"Exp"。
 
-3.  添加与指令处理器类同名的注册表项。
+3. 添加与指令处理器类同名的注册表项。
 
-    -   在注册表树中，右键单击**DirectiveProcessors**节点，指向**新建**，然后单击**密钥**。
+   -   在注册表树中，右键单击**DirectiveProcessors**节点，指向**新建**，然后单击**密钥**。
 
-4.  在新建节点中，根据下表为 Class 和 CodeBase 或 Assembly 添加字符串值。
+4. 在新建节点中，根据下表为 Class 和 CodeBase 或 Assembly 添加字符串值。
 
-    1.  右键单击你创建的节点，指向**新建**，然后单击**字符串值**。
+   1.  右键单击你创建的节点，指向**新建**，然后单击**字符串值**。
 
-    2.  编辑值的名称。
+   2.  编辑值的名称。
 
-    3.  双击该名称，然后编辑数据。
+   3.  双击该名称，然后编辑数据。
 
- 如果自定义指令处理器不在 GAC 中，则注册表子项应如下表所示：
+   如果自定义指令处理器不在 GAC 中，则注册表子项应如下表所示：
 
 |name|类型|数据|
-|----------|----------|----------|
+|-|-|-|
 |(默认)|REG_SZ|(未设置值)|
 |类|REG_SZ|**\<Namespace 名称 >。\<类名 >**|
 |CodeBase|REG_SZ|**\<你的路径 >\\< 程序集名称\>**|
@@ -195,7 +195,7 @@ ms.locfileid: "39566822"
  如果程序集在 GAC 中，则注册表子项应如下表所示：
 
 |name|类型|数据|
-|----------|----------|----------|
+|-|-|-|
 |(默认)|REG_SZ|(未设置值)|
 |类|REG_SZ|\<**完全限定的类名**>|
 |Assembly|REG_SZ|\<**你在 GAC 中的程序集名称**>|

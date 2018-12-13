@@ -1,5 +1,5 @@
 ---
-title: SDK 帮助器调试 |Microsoft 文档
+title: 用于调试的 SDK 帮助程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,27 +17,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e80344b8cec1bc013e044be39638879b049c8d0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d352e22b95540cfc1901eb214c2d5180b6024f27
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135910"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821521"
 ---
-# <a name="sdk-helpers-for-debugging"></a>SDK 适用于调试的帮助程序
-这些函数和声明是有关在 c + + 中实现的调试引擎，表达式计算器和符号提供程序的全局帮助器函数。  
+# <a name="sdk-helpers-for-debugging"></a>用于调试的 SDK 帮助程序
+这些函数和声明是用于在 c + + 中实现的调试引擎中，表达式计算器和符号提供程序的全局帮助器函数。  
   
 > [!NOTE]
->  此时没有托管的版本的这些函数和声明。  
+>  此时没有上述函数和声明的托管的版本。  
   
 ## <a name="overview"></a>概述  
- 为了使用由 Visual Studio 的调试引擎，表达式计算器和符号提供程序，必须先注册它们。 这可通过设置注册表子项和注册表项，也称为"设置度量值。" 以下全局函数旨在简化了将更新这些度量值的过程。 若要了解这些函数由更新每个注册表子项的布局的注册表位置位置上，请参阅部分。  
+ 为了使用由 Visual Studio 的调试引擎中，表达式计算器和符号提供程序，必须在注册它们。 这是通过设置注册表子项和注册表项，也称为"度量值设置。" 以下全局函数旨在简化更新这些度量值的过程。 在注册表位置来找出这些函数更新每个注册表子项的布局，请参阅部分。  
   
-## <a name="general-metric-functions"></a>常规度量值函数  
- 这些是使用的调试引擎的常规函数。 专用于表达式计算器的函数和后面详细说明符号提供程序。  
+## <a name="general-metric-functions"></a>通用指标函数  
+ 这些是使用的调试引擎的常规函数。 表达式计算器的专用函数和符号提供程序后面详细说明。  
   
 ### <a name="getmetric-method"></a>GetMetric 方法  
- 从注册表检索度量值。  
+ 从注册表检索指标值。  
   
 ```cpp  
 HRESULT GetMetric(  
@@ -52,15 +52,15 @@ HRESULT GetMetric(
   
 |参数|描述|  
 |---------------|-----------------|  
-|pszMachine|[in]将写入其注册可能是远程计算机的名称 (`NULL`意味着本地计算机)。|  
-|pszType|[in]度量值的类型之一。|  
-|guidSection|[in]特定引擎、 计算器，异常等的 GUID。这将指定的特定元素的度量值类型下的子部分。|  
-|pszMetric|[in]要从中获取度量值。 这对应于特定的值名称。|  
-|pdwValue|[in]从度量值的值存储位置。 提供了多种形式的 GetMetric 可以返回一个 dword 值，（如此示例所示）、 BSTR、 GUID 或 Guid 数组。|  
-|pszAltRoot|[in]若要使用备用注册表根目录。 设置为`NULL`若要使用默认值。|  
+|pszMachine|[in]将写入其注册的可能是远程计算机的名称 (`NULL`表示本地计算机)。|  
+|pszType|[in]指标类型之一。|  
+|guidSection|[in]特定的引擎、 计算器、 异常等的 GUID。这会指定一个子节下的特定元素的指标类型。|  
+|pszMetric|[in]若要获取度量值。 这对应于一个特定值名称。|  
+|pdwValue|[in]该度量值中的值的存储位置。 有几种 GetMetric 可以返回一个 dword 值 （如本例所示）、 BSTR、 GUID 或 Guid 的数组。|  
+|pszAltRoot|[in]若要使用备用的注册表根。 设置为`NULL`若要使用默认值。|  
   
 ### <a name="setmetric-method"></a>SetMetric 方法  
- 在注册表中设置指定的度量值。  
+ 在注册表中设置指定的指标值。  
   
 ```cpp  
 HRESULT SetMetric(  
@@ -75,12 +75,12 @@ HRESULT SetMetric(
   
 |参数|描述|  
 |---------------|-----------------|  
-|pszType|[in]度量值的类型之一。|  
-|guidSection|[in]特定引擎、 计算器，异常等的 GUID。这将指定的特定元素的度量值类型下的子部分。|  
-|pszMetric|[in]要从中获取度量值。 这对应于特定的值名称。|  
-|dwValue|[in]在度量值的值存储位置。 提供了多种形式的 SetMetric 可以存储 （在本示例中） 的 dword 值、 BSTR、 GUID 或 Guid 数组。|  
-|fUserSpecific|[in]如果指标是特定于用户的并且应将写入而不是本地计算机 hive 的用户的配置单元，则为 TRUE。|  
-|pszAltRoot|[in]若要使用备用注册表根目录。 设置为`NULL`若要使用默认值。|  
+|pszType|[in]指标类型之一。|  
+|guidSection|[in]特定的引擎、 计算器、 异常等的 GUID。这会指定一个子节下的特定元素的指标类型。|  
+|pszMetric|[in]若要获取度量值。 这对应于一个特定值名称。|  
+|dwValue|[in]该度量值中的值的存储位置。 有几种 SetMetric 可以存储一个 dword 值，（在此示例中）、 BSTR、 GUID 或 Guid 的数组。|  
+|fUserSpecific|[in]如果该度量值是特定于用户的并且应写入而不是本地计算机单元的用户的配置单元，则为 TRUE。|  
+|pszAltRoot|[in]若要使用备用的注册表根。 设置为`NULL`若要使用默认值。|  
   
 ### <a name="removemetric-method"></a>RemoveMetric 方法  
  从注册表中删除指定的指标。  
@@ -96,13 +96,13 @@ HRESULT RemoveMetric(
   
 |参数|描述|  
 |---------------|-----------------|  
-|pszType|[in]度量值的类型之一。|  
-|guidSection|[in]特定引擎、 计算器，异常等的 GUID。这将指定的特定元素的度量值类型下的子部分。|  
-|pszMetric|[in]要删除度量值。 这对应于特定的值名称。|  
-|pszAltRoot|[in]若要使用备用注册表根目录。 设置为`NULL`若要使用默认值。|  
+|pszType|[in]指标类型之一。|  
+|guidSection|[in]特定的引擎、 计算器、 异常等的 GUID。这会指定一个子节下的特定元素的指标类型。|  
+|pszMetric|[in]要删除度量值。 这对应于一个特定值名称。|  
+|pszAltRoot|[in]若要使用备用的注册表根。 设置为`NULL`若要使用默认值。|  
   
 ### <a name="enummetricsections-method"></a>EnumMetricSections 方法  
- 枚举注册表中的各个度量值部分。  
+ 枚举注册表中的各个指标部分。  
   
 ```cpp  
 HRESULT EnumMetricSections(  
@@ -116,131 +116,131 @@ HRESULT EnumMetricSections(
   
 |参数|描述|  
 |---------------|-----------------|  
-|pszMachine|[in]将写入其注册可能是远程计算机的名称 (`NULL`意味着本地计算机)。|  
-|pszType|[in]度量值的类型之一。|  
-|rgguidSections|[在中，out]Guid 填充的预分配的数组。|  
-|pdwSize|[in]可以存储在的 Guid 的最大数`rgguidSections`数组。|  
-|pszAltRoot|[in]若要使用备用注册表根目录。 设置为`NULL`若要使用默认值。|  
+|pszMachine|[in]将写入其注册的可能是远程计算机的名称 (`NULL`表示本地计算机)。|  
+|pszType|[in]指标类型之一。|  
+|rgguidSections|[in、 out]预先分配的 Guid 的数组填充。|  
+|pdwSize|[in]可以存储在 Guid 的最大数目`rgguidSections`数组。|  
+|pszAltRoot|[in]若要使用备用的注册表根。 设置为`NULL`若要使用默认值。|  
   
 ## <a name="expression-evaluator-functions"></a>表达式计算器函数  
   
 |函数|描述|  
 |--------------|-----------------|  
-|GetEEMetric|从注册表检索度量值。|  
-|SetEEMetric|在注册表中设置指定的度量值。|  
+|GetEEMetric|从注册表检索指标值。|  
+|SetEEMetric|在注册表中设置指定的指标值。|  
 |RemoveEEMetric|从注册表中删除指定的指标。|  
-|GetEEMetricFile|从指定的度量值获取的文件名称并加载它，以字符串形式返回该文件的内容。|  
+|GetEEMetricFile|获取文件名称从指定的指标并将数据加载，以字符串形式返回文件内容。|  
   
 ## <a name="exception-functions"></a>异常函数  
   
 |函数|描述|  
 |--------------|-----------------|  
-|GetExceptionMetric|从注册表检索度量值。|  
-|SetExceptionMetric|在注册表中设置指定的度量值。|  
+|GetExceptionMetric|从注册表检索指标值。|  
+|SetExceptionMetric|在注册表中设置指定的指标值。|  
 |RemoveExceptionMetric|从注册表中删除指定的指标。|  
-|RemoveAllExceptionMetrics|从注册表中删除所有异常度量值。|  
+|RemoveAllExceptionMetrics|从注册表中删除所有异常指标。|  
   
 ## <a name="symbol-provider-functions"></a>符号提供程序函数  
   
 |函数|描述|  
 |--------------|-----------------|  
-|GetSPMetric|从注册表检索度量值。|  
-|SetSPMetric|在注册表中设置指定的度量值。|  
+|GetSPMetric|从注册表检索指标值。|  
+|SetSPMetric|在注册表中设置指定的指标值。|  
 |RemoveSPMetric|从注册表中删除指定的指标。|  
   
 ## <a name="enumeration-functions"></a>枚举函数  
   
 |函数|描述|  
 |--------------|-----------------|  
-|EnumMetricSections|枚举指定的度量值类型的所有度量值。|  
+|EnumMetricSections|枚举用于指定的指标类型的所有度量值。|  
 |EnumDebugEngine|枚举已注册的调试引擎。|  
 |EnumEEs|枚举已注册的表达式计算器。|  
-|EnumExceptionMetrics|枚举所有异常度量值。|  
+|EnumExceptionMetrics|枚举所有异常指标。|  
   
-## <a name="metric-definitions"></a>度量定义  
- 这些定义可用于预定义的度量值名称。 名称对应于各种注册表项值名称和所有定义为宽字符字符串： 例如， `extern LPCWSTR metrictypeEngine`。  
+## <a name="metric-definitions"></a>指标定义  
+ 这些定义可用于预定义的指标名称。 名称对应于各种注册表项和值的名称和这些都是定义为宽字符字符串： 例如， `extern LPCWSTR metrictypeEngine`。  
   
-|预定义的度量值类型|描述： 为基的键...|  
+|预定义的指标类型|说明： 用于基项...|  
 |-----------------------------|---------------------------------------|  
-|metrictypeEngine|所有调试引擎度量值。|  
-|metrictypePortSupplier|所有端口供应商度量值。|  
-|metrictypeException|所有异常度量值。|  
+|metrictypeEngine|所有调试引擎指标。|  
+|metrictypePortSupplier|所有端口供应商指标。|  
+|metrictypeException|所有异常指标。|  
 |metricttypeEEExtension|所有表达式计算器扩展。|  
   
 |调试引擎属性|描述|  
 |-----------------------------|-----------------|  
-|metricAddressBP|设置为非零值，指示地址断点的支持。|  
-|metricAlwaysLoadLocal|设置非零值才能始终加载本地的调试引擎。|  
-|metricLoadInDebuggeeSession|未使用|  
-|metricLoadedByDebuggee|设置为非零值，指示使用也可通过被调试的程序，将始终加载的调试引擎。|  
+|metricAddressBP|设置为非零值，指示支持地址断点。|  
+|metricAlwaysLoadLocal|设置为非零值，以便始终加载本地调试引擎。|  
+|metricLoadInDebuggeeSession|不使用|  
+|metricLoadedByDebuggee|设置为非零值，指示使用或由正在调试的程序，将始终加载调试引擎。|  
 |metricAttach|设置为非零值，指示为附加到的现有程序的支持。|  
-|metricCallStackBP|设置为非零值，指示调用堆栈断点的支持。|  
-|metricConditionalBP|设置为非零值，指示的设置的条件断点的支持。|  
-|metricDataBP|设置为非零值，指示数据中的更改上的断点的设置的支持。|  
-|metricDisassembly|设置为非零值，以指示生产的反汇编列表的支持。|  
-|metricDumpWriting|设置为非零值，指示转储编写 （转储的内存写入输出设备） 的支持。|  
-|metricENC|设置为非零值，以指示支持编辑并继续。 **注意：** 自定义调试引擎决不能设置此或应始终将它设置为 0。|  
-|metricExceptions|设置为非零值，指示的异常的支持。|  
-|metricFunctionBP|设置为非零值，指示命名断点 （中断调用函数名时的断点） 的支持。|  
-|metricHitCountBP|设置为非零值，指示的设置的"命中点"断点 （仅在达到一定次数后触发的断点） 的支持。|  
-|metricJITDebug|设置为非零值，以指示在实时调试 （当正在运行的进程中发生异常时，将启动调试器） 的支持。|  
-|metricMemory|未使用|  
-|metricPortSupplier|此设置为端口提供程序的 CLSID 如果实现了一个。|  
-|metricRegisters|未使用|  
-|metricSetNextStatement|设置为非零值，指示用于设置下一个语句 （这样可以跳过执行的中间语句） 的支持。|  
-|metricSuspendThread|设置为非零值，指示挂起线程执行的支持。|  
-|metricWarnIfNoSymbols|设置为非零值，指示用户应收到通知，是否没有符号。|  
-|metricProgramProvider|将其设置为程序提供程序的 CLSID。|  
+|metricCallStackBP|设置为非零值，指示对调用堆栈断点的支持。|  
+|metricConditionalBP|设置为非零值，指示对条件断点的设置的支持。|  
+|metricDataBP|设置为非零值，指示对数据中的更改上的断点的设置的支持。|  
+|metricDisassembly|设置为非零值，指示对反汇编列表的生产环境的支持。|  
+|metricDumpWriting|设置为非零值，指示对转储写入 （转储到输出设备的内存） 的支持。|  
+|metricENC|设置为非零值来表明支持编辑并继续。 **注意：** 自定义调试引擎应永远不会将此设置，或应始终将其设置为 0。|  
+|metricExceptions|设置为非零值，指示对异常的支持。|  
+|metricFunctionBP|设置为非零值，指示对命名断点 （中断调用特定函数名称时的断点） 的支持。|  
+|metricHitCountBP|设置为非零值，指示对"射击点"断点 （仅在命中一定次数后触发断点） 的设置的支持。|  
+|metricJITDebug|设置为非零值，指示用于在实时调试 （当正在运行的进程中发生异常时，将启动调试器） 的支持。|  
+|metricMemory|不使用|  
+|metricPortSupplier|设置为端口提供程序的 CLSID 如果实现了一个。|  
+|metricRegisters|不使用|  
+|metricSetNextStatement|设置为非零值，指示对设置的下一个语句 （它将跳过中间语句的执行） 的支持。|  
+|metricSuspendThread|设置为非零值，指示对挂起线程执行的支持。|  
+|metricWarnIfNoSymbols|设置为非零值，指示没有符号是否应通知用户。|  
+|metricProgramProvider|将此设置为程序提供程序的 CLSID。|  
 |metricAlwaysLoadProgramProviderLocal|将此设置为非零值，表明程序提供程序应始终将加载本地。|  
-|metricEngineCanWatchProcess|将其设置为非零值，指示的调试引擎将监视的进程事件而不是程序提供程序。|  
-|metricRemoteDebugging|将其设置为非零值，指示用于远程调试的支持。|  
-|metricEncUseNativeBuilder|此设置为非零值以指示编辑并继续管理器应使用的调试引擎 encbuild.dll 生成适用于编辑并继续。 **注意：** 自定义调试引擎决不能设置此或应始终将它设置为 0。|  
-|metricLoadUnderWOW64|将此设置为非零值，指示应在 WOW 下调试对象进程中加载的调试引擎，就时调试 64 位进程;否则，将在 Visual Studio 进程 （这在 WOW64 下运行） 中加载的调试引擎。|  
-|metricLoadProgramProviderUnderWOW64|将此设置为非零值，指示该程序提供程序时，应在调试对象进程中加载调试在 WOW; 下的 64 位进程否则，它将在 Visual Studio 进程中加载。|  
-|metricStopOnExceptionCrossingManagedBoundary|将其设置为非零值，指示该过程应停止跨托管/非托管代码边界引发的未经处理的异常。|  
-|metricAutoSelectPriority|这的优先级设置为针对自动选择的调试引擎 （更高版本值等于更高的优先级）。|  
-|metricAutoSelectIncompatibleList|其中包含在自动选择中指定的调试引擎的 Guid，若要忽略的项的注册表项。 这些项是一个数字 （0、 1、 2，依此类推） 使用表示为字符串的 GUID。|  
-|metricIncompatibleList|包含与此调试引擎不兼容的调试引擎为指定 Guid 的条目的注册表项。|  
-|metricDisableJITOptimization|将其设置为非零值，指示应在调试期间禁用 （对于托管代码） 中实时优化。|  
+|metricEngineCanWatchProcess|将此设置为非零值，指示调试引擎将处理事件而不是程序提供程序的监视。|  
+|metricRemoteDebugging|将此设置为非零值，指示对远程调试的支持。|  
+|metricEncUseNativeBuilder|将此设置为非零值，指示编辑并继续管理器应使用调试引擎 encbuild.dll 编辑并继续生成。 **注意：** 自定义调试引擎应永远不会将此设置，或应始终将其设置为 0。|  
+|metricLoadUnderWOW64|将此设置为非零值，指示当调试 64 位进程; 调试引擎，应在 WOW 下调试对象进程中加载否则，将在 Visual Studio 过程 （这在 WOW64 下运行的） 加载调试引擎。|  
+|metricLoadProgramProviderUnderWOW64|将此设置为非零值，指示程序提供程序应在调试对象进程中加载时调试 64 位进程在 WOW;否则，它将在 Visual Studio 进程中加载。|  
+|metricStopOnExceptionCrossingManagedBoundary|将此设置为非零值，指示跨托管/非托管代码边界引发未处理的异常，应停止该过程。|  
+|metricAutoSelectPriority|将此设置为自动选择调试引擎 （优先级更高的值等于更高版本） 的优先级。|  
+|metricAutoSelectIncompatibleList|其中包含指定 Guid 的调试引擎忽略中自动选择的项的注册表项。 这些条目是一个数字 （0、 1、 2，依此类推） 使用 GUID 表示为字符串。|  
+|metricIncompatibleList|其中包含指定的 Guid 与此调试引擎不兼容的调试引擎的项的注册表项。|  
+|metricDisableJITOptimization|将此设置为非零值，指示应在调试期间禁用 （适用于托管代码） 中实时优化。|  
   
 |表达式计算器属性|描述|  
 |-------------------------------------|-----------------|  
-|metricEngine|它将保存的支持指定的表达式计算器的调试引擎的数量。|  
-|metricPreloadModules|将其设置为非零值，指示模块应预加载，表达式计算器对程序启动时。|  
-|metricThisObjectName|此设置为"this"对象名称。|  
+|metricEngine|它将保存的调试引擎支持指定的表达式计算器的数量。|  
+|metricPreloadModules|将此设置为非零值，指示模块应预加载，针对程序启动后的表达式计算器。|  
+|metricThisObjectName|将此设置为"this"对象名称。|  
   
-|表达式计算器扩展属性|描述|  
-|-----------------------------------------------|-----------------|  
-|metricExtensionDll|支持此扩展的 dll 的名称。|  
-|metricExtensionRegistersSupported|支持的寄存器的列表。|  
+|表达式计算器的扩展属性|描述|  
+| - |-----------------|  
+|metricExtensionDll|支持此扩展 dll 的名称。|  
+|metricExtensionRegistersSupported|支持的寄存器列表。|  
 |metricExtensionRegistersEntryPoint|用于访问寄存器的入口点。|  
 |metricExtensionTypesSupported|支持的类型的列表。|  
 |metricExtensionTypesEntryPoint|访问类型的入口点。|  
   
 |端口供应商属性|描述|  
 |------------------------------|-----------------|  
-|metricPortPickerCLSID|（对话框中的用户可以使用以选择端口并添加要用于调试的端口） 的端口选取器的 CLSID。|  
-|metricDisallowUserEnteredPorts|非零，如果用户输入端口无法添加到端口供应商 （实质上是只读的这使得端口选取器对话框中）。|  
-|metricPidBase|分配进程 Id 时使用端口提供程序的基的进程 ID。|  
+|metricPortPickerCLSID|（一个对话框，用户可以使用选择的端口，并添加要用于调试的端口） 端口选取器的 CLSID。|  
+|metricDisallowUserEnteredPorts|如果用户输入的端口不能添加到端口提供程序，非零值 （实质上是只读的这使得端口选取器对话框）。|  
+|metricPidBase|基本进程 ID 分配进程 Id 时使用的端口提供程序。|  
   
 |预定义的 SP 存储类型|描述|  
 |-------------------------------|-----------------|  
-|storetypeFile|符号存储在单独的文件中。|  
-|storetypeMetadata|符号的程序集中的元数据作为存储。|  
+|storetypeFile|符号存储在一个单独的文件中。|  
+|storetypeMetadata|符号存储为程序集中的元数据。|  
   
-|杂项属性|描述|  
+|其他属性|描述|  
 |------------------------------|-----------------|  
-|metricShowNonUserCode|将其设置为非零值，显示非代码。|  
-|metricJustMyCodeStepping|将其设置为非零值，指示只能在用户代码中，单步执行可能发生的。|  
-|metricCLSID|特定度量值类型的对象的 CLSID。|  
-|metricName|特定度量值类型的对象的用户友好名称。|  
+|metricShowNonUserCode|将此设置为非零值，显示非代码。|  
+|metricJustMyCodeStepping|将此设置为非零值，指示单步执行，可以仅在用户代码中。|  
+|metricCLSID|特定的指标类型的对象的的 CLSID。|  
+|MetricName|特定的指标类型的对象的用户友好名称。|  
 |metricLanguage|语言名称。|  
   
 ## <a name="registry-locations"></a>注册表位置  
- 度量值从内存读取和写入到注册表中，尤其是在`VisualStudio`子项。  
+ 指标是从读取和写入到注册表中，特别是在`VisualStudio`子项。  
   
 > [!NOTE]
->  大多数情况下，度量值将写入 HKEY_LOCAL_MACHINE 键。 但是，有时 HKEY_CURRENT_USER 将是目标密钥。 Dbgmetric.lib 处理这两个密钥。 当收到某个度量值，它会搜索 HKEY_CURRENT_USER 第一个，然后 HKEY_LOCAL_MACHINE。 它设置时某个度量值，则一个参数指定要使用哪个顶级项。  
+>  大多数情况下，度量值将写入到 HKEY_LOCAL_MACHINE 项。 但是，有时 HKEY_CURRENT_USER 将是目标项。 Dbgmetric.lib 处理这两个密钥。 度量值时，它将搜索 HKEY_CURRENT_USER 中，然后 HKEY_LOCAL_MACHINE。 它会将设置度量值，当参数指定要使用哪个顶级密钥。  
   
  *[注册表项]*\  
   
@@ -256,26 +256,26 @@ HRESULT EnumMetricSections(
   
  *[指标类型]*\  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
 |占位符|描述|  
 |-----------------|-----------------|  
 |*[注册表项]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|  
-|*[版本根]*|Visual Studio 的版本 (例如， `7.0`， `7.1`，或`8.0`)。 但是，此根也可以修改使用 **/rootsuffix**切换到**devenv.exe**。 VSIP，对于此修饰符通常是**Exp**，因此版本根是，例如，8.0Exp。|  
-|*[指标根]*|这可以是`AD7Metrics`或`AD7Metrics(Debug)`，取决于是否使用 dbgmetric.lib 的调试版本。 **注意：** 是否使用 dbgmetric.lib 时，此命名约定应遵守如果必须调试和发布之间的差异必须反映在注册表中的版本。|  
+|*[版本根]*|Visual Studio 的版本 (例如， `7.0`， `7.1`，或`8.0`)。 但是，此根目录还可以修改使用 **/rootsuffix**切换到**devenv.exe**。 VSIP，对于此修饰符通常是**Exp**，因此，则版本根将是，例如，8.0Exp。|  
+|*[指标根]*|这可以是`AD7Metrics`或`AD7Metrics(Debug)`，取决于是否使用 dbgmetric.lib 的调试版本。 **注意：** 是否使用 dbgmetric.lib，此命名约定应遵守如果必须调试和发布之间的差异必须反映在注册表中的版本。|  
 |*[指标类型]*|要写入的度量值的类型： `Engine`， `ExpressionEvaluator`， `SymbolProvider`，等等。这些都被定义为如下所示为 dbgmetric.h `metricTypeXXXX`，其中`XXXX`是特定类型名称。|  
-|*[指标]*|要为其赋值才能设置该度量值的项的名称。 实际的组织的度量值取决于度量值的类型。|  
-|*[度量值]*|分配给该度量值的值。 值应具有 （字符串、 数字，而等） 的类型取决于该度量值。|  
+|*[metric]*|要将分配一个值，以便将跃点设置的项的名称。 度量值的实际组织取决于指标类型。|  
+|*[跃点值]*|分配给该度量值的值。 应具有的值 （字符串、 数字等） 的类型取决于该度量值。|  
   
 > [!NOTE]
 >  格式存储所有 Guid `{GUID}`。 例如 `{123D150B-FA18-461C-B218-45B3E4589F9B}`。  
   
 ### <a name="debug-engines"></a>调试引擎  
- 下面是在注册表中的调试引擎度量值组织。 `Engine` 为调试引擎的度量值的类型名称并且对应于 *[指标类型]* 上面的注册表子树中。  
+ 以下是在注册表中的调试引擎指标的组织。 `Engine` 调试引擎的指标类型名称和对应于 *[指标类型]* 上述注册表子树中。  
   
  `Engine`\  
   
@@ -283,11 +283,11 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[类 guid]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
  `PortSupplier`\  
   
@@ -299,10 +299,10 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[引擎 guid]*|调试引擎的 GUID。|  
 |*[类 guid]*|实现此调试引擎的类的 GUID。|  
-|*[端口供应商 guid]*|端口供应商，如果任何 GUID。 许多的调试引擎使用默认端口供应商，并因此不指定其自己的供应商。 在此情况下，该子项`PortSupplier`将不存在。|  
+|*[端口供应商 guid]*|端口提供程序，如果有的 GUID。 许多的调试引擎使用默认端口提供程序，并因此不指定其自己的供应商。 在此情况下，该子项`PortSupplier`将不会出现。|  
   
-### <a name="port-suppliers"></a>端口供应商  
- 下面是注册表中的端口供应商指标的组织。 `PortSupplier` 是的端口供应商提供的度量值的类型名称并且对应于 *[指标类型]*。  
+### <a name="port-suppliers"></a>端口提供程序  
+ 以下是在注册表中的端口供应商指标的组织。 `PortSupplier` 是端口提供程序的指标类型名称，对应于 *[指标类型]*。  
   
  `PortSupplier`\  
   
@@ -310,17 +310,17 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[类 guid]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
 |占位符|描述|  
 |-----------------|-----------------|  
 |*[端口供应商 guid]*|端口提供程序的 GUID|  
-|*[类 guid]*|实现此端口供应商的类的 GUID|  
+|*[类 guid]*|实现此端口提供程序的类的 GUID|  
   
 ### <a name="symbol-providers"></a>符号提供程序  
- 下面是在注册表中的符号供应商度量值组织。 `SymbolProvider` 是符号提供程序的度量值的类型名称并且对应于 *[指标类型]*。  
+ 以下是在注册表中的符号供应商指标的组织。 `SymbolProvider` 是符号提供程序的指标类型名称，对应于 *[指标类型]*。  
   
  `SymbolProvider`\  
   
@@ -330,17 +330,17 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[类 guid]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
  `metadata`\  
   
  `CLSID` = *[类 guid]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
 |占位符|描述|  
 |-----------------|-----------------|  
@@ -348,10 +348,10 @@ HRESULT EnumMetricSections(
 |*[类 guid]*|实现此符号提供程序的类的 GUID|  
   
 ### <a name="expression-evaluators"></a>表达式计算器  
- 下面是在注册表中的表达式计算器度量值组织。 `ExpressionEvaluator` 是表达式计算器的度量值的类型名称并且对应于 *[指标类型]*。  
+ 以下是在注册表中的表达式计算器指标的组织。 `ExpressionEvaluator` 表达式计算器的指标类型名称和对应于 *[指标类型]*。  
   
 > [!NOTE]
->  度量值类型`ExpressionEvaluator`未定义中 dbgmetric.h，因为假定所有度量值的更改的表达式计算器将经过适当的表达式计算器指标函数 (的布局`ExpressionEvaluator`子项是某种程度上复杂，因此详细信息隐藏在 dbgmetric.lib）。  
+>  指标类型`ExpressionEvaluator`未定义在 dbgmetric.h，因为它假定所有度量值更改为表达式计算器将经过适当的表达式计算器指标函数 (的布局`ExpressionEvaluator`子项是某种程度上很复杂，因此详细信息隐藏在 dbgmetric.lib）。  
   
  `ExpressionEvaluator`\  
   
@@ -361,9 +361,9 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[类 guid]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
  `Engine`\  
   
@@ -379,22 +379,22 @@ HRESULT EnumMetricSections(
 |*[调试引擎 guid]*|此表达式计算器适用于调试引擎的 GUID|  
   
 ### <a name="expression-evaluator-extensions"></a>表达式计算器扩展  
- 下面是在注册表中的表达式计算器扩展度量值组织。 `EEExtensions` 为计算器扩展的表达式的度量值的类型名称并且对应于 *[指标类型]*。  
+ 以下是在注册表中的表达式计算器扩展指标的组织。 `EEExtensions` 是计算器扩展的表达式的度量值的类型名称，对应于 *[指标类型]*。  
   
  `EEExtensions`\  
   
  *[扩展 guid]*\  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
 |占位符|描述|  
 |-----------------|-----------------|  
 |*[扩展 guid]*|表达式计算器扩展的 GUID|  
   
 ### <a name="exceptions"></a>异常  
- 下面是在注册表中的异常度量值组织。 `Exception` 是的异常的度量值的类型名称并且对应于 *[指标类型]*。  
+ 以下是在注册表中的异常度量值的组织。 `Exception` 是异常的指标类型名称，对应于 *[指标类型]*。  
   
  `Exception`\  
   
@@ -404,28 +404,28 @@ HRESULT EnumMetricSections(
   
  *[异常]*\  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
  *[异常]*\  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
- *[指标] = [度量值]*  
+ *[metric] = [跃点值]*  
   
 |占位符|描述|  
 |-----------------|-----------------|  
 |*[调试引擎 guid]*|支持异常的调试引擎的 GUID。|  
-|*[异常类型]*|标识可以处理的异常的类的子项常规标题。 典型的名称是**c + + 异常**， **Win32 异常**，**公共语言运行时异常**，和**本机运行时检查**。 这些名称还用于标识异常向用户的特定类。|  
-|*[异常]*|异常的名称： 例如， **_com_error**或**控制中断**。 这些名称还用于标识向用户的特定异常。|  
+|*[异常类型]*|子项标识可以处理的异常的类的一个常规标题。 典型的名称是**c + + 异常**， **Win32 异常**，**公共语言运行时异常**，以及**本机运行时检查**。 这些名称也用于标识特定类别的用户的例外。|  
+|*[异常]*|异常的名称： 例如， **_com_error**或**控制中断**。 这些名称还用于确定向用户特定异常。|  
   
 ## <a name="requirements"></a>要求  
- 这些文件位于[!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]SDK 安装目录 (默认情况下， *[驱动器]* files\microsoft Visual Studio 2010 SDK\\)。  
+ 这些文件位于[!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]SDK 安装目录 (默认情况下 *[驱动器]* \Program Files\Microsoft Visual Studio 2010 SDK\\)。  
   
  标头： includes\dbgmetric.h  
   
  库： libs\ad2de.lib、 libs\dbgmetric.lib  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

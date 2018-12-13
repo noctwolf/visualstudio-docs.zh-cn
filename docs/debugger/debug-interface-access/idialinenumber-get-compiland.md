@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_compiland |Microsoft 文档'
+title: 'Idialinenumber:: Get_compiland |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee004d5cd97157963973f6dd650bd0ce1aa37b52
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0ca79c4a2f90e21d71518033ffb8450c02998945
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458715"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904552"
 ---
 # <a name="idialinenumbergetcompiland"></a>IDiaLineNumber::get_compiland
-检索提供的映像文本字节编译单位符号的引用。  
+检索对提供的图像的文字的字节将编译单位符号的引用。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,10 +34,10 @@ HRESULT get_compiland (
   
 #### <a name="parameters"></a>参数  
  pRetVal  
- [out]返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)提供的映像文本字节编译单位的对象。  
+ [out]返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)提供图像的文字的字节将编译单位的对象。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
+ 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

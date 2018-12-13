@@ -12,25 +12,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 033eaa4a946ac344ac0cbc13e0f8da64dd914b92
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567098"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967410"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：向快捷菜单中添加命令
 可以将菜单命令添加到域特定语言 (DSL)，以便用户可以执行特定于 DSL 的任务。 当用户右键单击关系图时，这些命令将显示在上下文（快捷）菜单上。 你可以定义某个命令，以使它仅在特定情况下才显示在菜单中。 例如，可以使该命令仅在用户单击特定类型的元素或处于特定状态下的元素时才可见。
 
  总之，请在 DslPackage 项目中执行如下步骤：
 
-1.  [声明在 Commands.vsct 中命令](#VSCT)
+1. [声明在 Commands.vsct 中命令](#VSCT)
 
-2.  [更新在 Package.tt 中的包版本号](#version)。 只要更改 Commands.vsct，就必须执行此操作
+2. [更新在 Package.tt 中的包版本号](#version)。 只要更改 Commands.vsct，就必须执行此操作
 
-3.  [CommandSet 类中编写方法](#CommandSet)来使命令可见并定义想要执行的命令。
+3. [CommandSet 类中编写方法](#CommandSet)来使命令可见并定义想要执行的命令。
 
- 有关示例，请参阅[可视化和建模 SDK 网站](http://go.microsoft.com/fwlink/?LinkID=185579)。
+   有关示例，请参阅[可视化和建模 SDK 网站](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
 > [!NOTE]
 >  通过在 CommandSet.cs 中重写方法，还可以修改某些现有命令（例如剪切、粘贴、全选和打印）的行为。 有关详细信息，请参阅[如何： 修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
@@ -40,15 +40,15 @@ ms.locfileid: "39567098"
 
  请在以下情况下使用本主题中的方法：
 
-1.  你想要定义右键单击快捷菜单以外的菜单上的菜单命令。
+1. 你想要定义右键单击快捷菜单以外的菜单上的菜单命令。
 
-2.  你想要在菜单中定义特定的命令分组。
+2. 你想要在菜单中定义特定的命令分组。
 
-3.  你不希望其他人使用自己的命令来扩展 DSL。
+3. 你不希望其他人使用自己的命令来扩展 DSL。
 
-4.  你只想要定义一个命令。
+4. 你只想要定义一个命令。
 
- 否则，请考虑使用 MEF 方法来定义命令。 有关详细信息，请参阅[通过使用 MEF 扩展 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
+   否则，请考虑使用 MEF 方法来定义命令。 有关详细信息，请参阅[通过使用 MEF 扩展 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
 
 ##  <a name="VSCT"></a> 声明在 Commands.Vsct 中命令
  菜单命令将在 DslPackage\Commands.vsct 中声明。 这些定义指定菜单项的标签以及它们在菜单上显示的位置。
@@ -194,7 +194,7 @@ namespace Company.Language1 /* Make sure this is correct */
  必须定义两个方法：一个用于确定命令何时在上下文菜单上可见，另一个用于执行该命令。 这些方法不是重写方法；相反，在命令的列表中注册这些方法。
 
 ### <a name="define-when-the-command-will-be-visible"></a>定义命令将何时可见
- 对于每个命令，定义 `OnStatus...` 方法，以确定该命令是否将显示在菜单上，以及它将处于启用状态还是灰显状态。设置 `Visible` 的 `Enabled` 和 `MenuCommand` 属性，如以下示例所示。 每次用户右键单击关系图时，都将调用此方法以构造快捷菜单，因此它必须尽快工作。
+ 对于每个命令，定义 `OnStatus...` 方法，以确定该命令是否将显示在菜单上，以及它将处于启用状态还是灰显状态。设置 `MenuCommand` 的 `Visible` 和 `Enabled` 属性，如以下示例所示。 每次用户右键单击关系图时，都将调用此方法以构造快捷菜单，因此它必须尽快工作。
 
  在此示例中，该命令仅在用户已选择特定类型的形状时才可见，并且仅在至少一个选定元素处于特定状态时才启用该命令。 该示例基于类关系图 DSL 模板，并且 ClassShape 和 ModelClass 是在 DSL 中定义的类型：
 
@@ -221,21 +221,21 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
  以下片段通常在 OnStatus 方法内十分有用：
 
--   `this.CurrentSelection`。 用户右键单击的形状始终包含在此列表中。 如果用户单击关系图的空白部分，则“关系图”是该列表中的唯一成员。
+- `this.CurrentSelection`。 用户右键单击的形状始终包含在此列表中。 如果用户单击关系图的空白部分，则“关系图”是该列表中的唯一成员。
 
--   `this.IsDiagramSelected()` - `true` 如果用户单击关系图的空白部分。
+- `this.IsDiagramSelected()` - `true` 如果用户单击关系图的空白部分。
 
--   `this.IsCurrentDiagramEmpty()`
+- `this.IsCurrentDiagramEmpty()`
 
--   `this.IsSingleSelection()` - 用户未选择多个对象
+- `this.IsSingleSelection()` - 用户未选择多个对象
 
--   `this.SingleSelection` - 用户右键单击的形状或关系图
+- `this.SingleSelection` - 用户右键单击的形状或关系图
 
--   `shape.ModelElement as MyLanguageElement` - 由形状表示的模型元素。
+- `shape.ModelElement as MyLanguageElement` - 由形状表示的模型元素。
 
- 一般原则是，使 `Visible` 属性依赖于所选定的内容，并使 `Enabled` 属性依赖于选定元素的状态。
+  一般原则是，使 `Visible` 属性依赖于所选定的内容，并使 `Enabled` 属性依赖于选定元素的状态。
 
- OnStatus 方法不应更改“存储”的状态。
+  OnStatus 方法不应更改“存储”的状态。
 
 ### <a name="define-what-the-command-does"></a>定义命令可执行操作
  对于每个命令，定义在用户单击菜单命令时执行所需操作的 `OnMenu...` 方法。
@@ -333,35 +333,35 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="troubleshooting"></a>疑难解答
  **在菜单中未显示命令：**
 
--   除非安装 DSL 包，否则命令将只显示在 Visual Studio 的调试实例中。 有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。
+- 除非安装 DSL 包，否则命令将只显示在 Visual Studio 的调试实例中。 有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。
 
--   确保实验性示例具有此 DSL 的正确文件扩展名。 若要检查该文件扩展名，请在 Visual Studio 的主实例中打开 DslDefinition.dsl。 随后，在 DSL 资源管理器中，右键单击“编辑器”节点，然后单击“属性”。 在“属性”窗口中，检查 FileExtension 属性。
+- 确保实验性示例具有此 DSL 的正确文件扩展名。 若要检查该文件扩展名，请在 Visual Studio 的主实例中打开 DslDefinition.dsl。 随后，在 DSL 资源管理器中，右键单击“编辑器”节点，然后单击“属性”。 在“属性”窗口中，检查 FileExtension 属性。
 
--   你是否[递增程序包版本号](#version)？
+- 你是否[递增程序包版本号](#version)？
 
--   在 OnStatus 方法的开头设置断点。 在右键单击关系图的任意部分时，应发生中断。
+- 在 OnStatus 方法的开头设置断点。 在右键单击关系图的任意部分时，应发生中断。
 
-     **未调用 OnStatus 方法**:
+   **未调用 OnStatus 方法**:
 
-    -   确保 CommandSet 代码中的 GUID 和 ID 匹配 Commands.vsct 的“符号”部分中的 GUID 和 ID。
+  -   确保 CommandSet 代码中的 GUID 和 ID 匹配 Commands.vsct 的“符号”部分中的 GUID 和 ID。
 
-    -   在 Commands.vsct 中，确保每个“父”节点中的 GUID 和 ID 标识正确的父“组”。
+  -   在 Commands.vsct 中，确保每个“父”节点中的 GUID 和 ID 标识正确的父“组”。
 
-    -   在 Visual Studio 命令提示符中，键入 devenv /rootsuffix exp /setup。 然后，重新启动 Visual Studio 的调试实例。
+  -   在 Visual Studio 命令提示符中，键入 devenv /rootsuffix exp /setup。 然后，重新启动 Visual Studio 的调试实例。
 
--   逐步执行 OnStatus 方法，以验证 command.Visible 和 command.Enabled 是否设置为 True。
+- 逐步执行 OnStatus 方法，以验证 command.Visible 和 command.Enabled 是否设置为 True。
 
- **错误的菜单文本的显示，或者命令将显示在错误的地方**:
+  **错误的菜单文本的显示，或者命令将显示在错误的地方**:
 
--   确保 GUID 和 ID 的组合对此命令是唯一的。
+- 确保 GUID 和 ID 的组合对此命令是唯一的。
 
--   确保已卸载早期版本的程序包。
+- 确保已卸载早期版本的程序包。
 
 ## <a name="see-also"></a>请参阅
 
 - [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [如何： 修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)
-- [示例代码： 电路图](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [示例代码： 电路图](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

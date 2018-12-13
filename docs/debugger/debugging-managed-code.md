@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c40d5b088dbf41e56fff1ad41b6ce4381f6602b3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 92485f93bb4c2d1782f907acdb1e5252f611cdbe
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
+ms.lasthandoff: 11/12/2018
 ms.locfileid: "39179474"
 ---
 # <a name="debugging-managed-code"></a>调试托管代码
@@ -35,7 +35,7 @@ ms.locfileid: "39179474"
 介绍<xref:System.Diagnostics.Debug>并<xref:System.Diagnostics.Trace>类，可以将运行时消息写入与其**输出**窗口。 这些类中包含的输出方法支持两种信息输出：不中断执行的信息输出以及在指定条件失败时也会中断执行的信息输出。
 
 [托管代码中的断言](../debugger/assertions-in-managed-code.md)  
-描述托管代码中的断言，该断言用于测试作为 `Assert` 方法的参数指定的条件。 此外，本主题还提供代码示例、有关使用 <xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 类方法的信息、代码调试版和发布版中的注意事项、副作用、断言参数、自定义断言行为和配置文件。
+描述托管代码中的断言，该断言用于测试作为 `Assert` 方法的自变量指定的条件。 此外，本主题还提供代码示例、有关使用 <xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 类方法的信息、代码调试版和发布版中的注意事项、副作用、断言自变量、自定义断言行为和配置文件。
 
 [Visual Basic 中的 Stop 语句](../debugger/stop-statements-in-visual-basic.md)  
 描述 `Stop` 语句，该语句提供了一种设置断点的替代方法。 还提供了代码示例并对 `Stop` 语句和 `End` 语句以及 `Stop` 和 `Assert` 语句进行了比较。
@@ -44,9 +44,9 @@ ms.locfileid: "39179474"
 提供创建 Windows 窗体并调试该窗体的逐步骤说明。 Windows 窗体（托管 Windows 应用程序的标准组件）是最常见的托管应用程序之一。 本演练使用 Visual C# 和 Visual Basic，不过使用 C++ 创建 Windows 窗体的方法通常与此类似。
 
 [调试 OnStart 方法](../debugger/how-to-debug-the-onstart-method.md)  
-提供使您能够调试托管 Windows 服务的 `OnStart` 方法的代码示例。 若要调试 Windows 服务的 `OnStart` 方法，您必须另外添加几行代码以模拟该服务。
+提供使你能够调试托管 Windows 服务的 `OnStart` 方法的代码示例。 若要调试 Windows 服务的 `OnStart` 方法，你必须另外添加几行代码以模拟该服务。
 
-[混合模式调试](../debugger/debugging-mixed-mode-applications.md)  
+[Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
 讨论调试混合模式的应用程序。 这表示合并本机代码和托管代码的任何应用程序。
 
 [错误：由于系统上启用了内核调试程序，因此不可能进行调试](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  

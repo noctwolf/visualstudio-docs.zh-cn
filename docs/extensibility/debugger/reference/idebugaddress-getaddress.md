@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress::GetAddress |Microsoft 文档
+title: IDebugAddress::GetAddress |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7f93b57d3cdbea71d3cf9cbe3d51645251c9628
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 869094fabca44eca352a9610ac59a6627df74dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873352"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
-返回描述对象并将其位置在其作用域或容器的结构。  
+返回描述对象并将其作用域或容器内的其位置的结构。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,13 +41,13 @@ int GetAddress(
   
 #### <a name="parameters"></a>参数  
  `pAddress`  
- [在中，out]A [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)此方法由填充的结构。  
+ [in、 out]一个[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)通过此方法来填充的结构。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回错误代码。  
+ 如果成功，则返回 S_OK;否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)结构传递给此方法，然后使用相应信息对其进行填充。 如何解释此信息取决于返回的信息和符号处理程序本身的类型。 请参阅[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)有关详细信息。  
+ [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)结构传递给此方法，然后使用相应的信息对其进行填充。 如何解释此信息取决于返回的信息和符号处理程序本身的类型。 请参阅[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)的更多详细信息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

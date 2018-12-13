@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 03d6d4550442c81325a8e67f8d96e52e7655dc09
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566546"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812486"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如果：在程序代码中从文件打开模型
 您可以在任何应用程序中打开 DSL 模型。
 
- 从[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]扩展，可以使用 ModelBus 实现此目的。 ModelBus 提供了标准机制的引用的模型或在模型中，元素和查找模型，如果它已移动。 有关详细信息，请参阅[通过使用 Visual Studio Modelbus 集成模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
+ 从 Visual Studio 扩展，可以使用 ModelBus，实现此目的。 ModelBus 提供了标准机制的引用的模型或在模型中，元素和查找模型，如果它已移动。 有关详细信息，请参阅[通过使用 Visual Studio Modelbus 集成模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
 
 ## <a name="target-framework"></a>目标 Framework
  设置**目标框架**到在应用程序项目 **.NET Framework 4**。
 
 #### <a name="to-set-the-target-framework"></a>若要设置目标框架
 
-1.  打开[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]想读取 DSL 模型的应用程序的项目。
+1.  打开想要读取 DSL 模型的应用程序的 Visual Studio 项目。
 
 2.  在中**解决方案资源管理器**，右键单击项目，然后单击**属性**。
 
@@ -36,7 +36,7 @@ ms.locfileid: "39566546"
 >  可能需要执行此操作，即使所选 **.NET Framework 4**项目创建对话框中。 不应为目标框架 **.NET Framework 4 Client Profile**。
 
 ## <a name="references"></a>参考资料
- 您必须添加到这些引用在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]应用程序项目：
+ 您需要添加这些对你的 Visual Studio 应用程序项目的引用：
 
 -   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
@@ -58,13 +58,13 @@ ms.locfileid: "39566546"
 ## <a name="reading-from-a-file"></a>从文件进行读取
  下面的示例可读取的 DSL 的重要类是按如下所示：
 
--   FamilyTreeModel
+- FamilyTreeModel
 
--   FamilyTreeSerializationHelper
+- FamilyTreeSerializationHelper
 
--   FamilyTreeDomainModel
+- FamilyTreeDomainModel
 
- 在此 DSL 的其他域类是人。
+  在此 DSL 的其他域类是人。
 
 ```csharp
 using System;

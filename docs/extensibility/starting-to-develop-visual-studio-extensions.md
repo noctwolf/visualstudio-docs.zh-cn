@@ -14,34 +14,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50d5876f38b7c539beb33d5918387a06f45b193b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a5d6e84bc526cf597fbfd22bd36b93cd419ba0d6
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321263"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349658"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>开始开发 Visual Studio 扩展
+
 如果您从未书写过 Visual Studio 扩展之前，你可能会出现一些问题。 我们列出了一些最常见的。 如果看不到所需的信息，使用反馈按钮 (**此页面是否有所帮助？** 屏幕底部) 要求所需内容。
 
+> [!NOTE]
+> 本文适用于 Windows 上的 Visual Studio。 Visual Studio for Mac 中，请参阅[扩展 Visual Studio for Mac](/visualstudio/mac/extending-visual-studio-mac)。
+
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>开发 Visual Studio 扩展需要哪些软件？
- 您需要安装 Visual Studio 除了 Visual Studio SDK，才能开发的 Visual Studio 扩展。 可以作为常规安装的一部分安装 Visual Studio SDK 或更高版本上安装。 有关安装 Visual Studio SDK 的详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+
+您需要安装 Visual Studio 除了 Visual Studio SDK，才能开发的 Visual Studio 扩展。 可以作为常规安装的一部分安装 Visual Studio SDK 或更高版本上安装。 有关安装 Visual Studio SDK 的详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>我可以使用 Visual Studio 扩展做何种操作？
- 天空是界限谈到设想不同 Visual Studio 扩展。 当然，大多数扩展与编写代码，但它不一定是这种情况。 下面是可以生成的扩展的类型的一些示例：
 
--   对不包括在 Visual Studio 中，但具有语法着色、 IntelliSense 和编译器和调试支持的语言的支持
+天空是界限谈到设想不同 Visual Studio 扩展。 当然，大多数扩展与编写代码，但它不一定是这种情况。 下面是可以生成的扩展的类型的一些示例：
 
--   扩展核心的工作效率工具 IDE 体验的其他模板、 代码重构，则新对话或工具窗口
+- 对不包括在 Visual Studio 中，但具有语法着色、 IntelliSense 和编译器和调试支持的语言的支持
 
--   于以下情形： 数据设计或云支持的特定于域的设计器
+- 扩展核心的工作效率工具 IDE 体验的其他模板、 代码重构，则新对话或工具窗口
 
- 有关扩展的示例，请参阅[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。 许多扩展开放源代码，，在 Marketplace 包括到其 GitHub 存储库的链接。
+- 于以下情形： 数据设计或云支持的特定于域的设计器
+
+有关扩展的示例，请参阅[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。 许多扩展开放源代码，，在 Marketplace 包括到其 GitHub 存储库的链接。
 
 ## <a name="which-visual-studio-features-can-i-extend"></a>可以扩展的 Visual Studio 功能？
- 从理论上讲，您可以扩展 Visual Studio 的任何一部分： 菜单、 工具栏、 命令、 windows、 解决方案、 项目、 编辑器和等等。
 
- 在实践中，我们发现，大多数人想要扩展的功能是命令、 菜单和工具栏、 windows、 IntelliSense 和项目。 以下是中的相关章节的链接：
+从理论上讲，您可以扩展 Visual Studio 的任何一部分： 菜单、 工具栏、 命令、 windows、 解决方案、 项目、 编辑器和等等。
+
+在实践中，我们发现，大多数人想要扩展的功能是命令、 菜单和工具栏、 windows、 IntelliSense 和项目。 以下是中的相关章节的链接：
 
 -   [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)： 将您自己的项添加到 Visual Studio 菜单和工具栏。 可以使用它们以启动 Visual Studio 的新功能或外部帮助器应用程序。 您还可以自定义的快捷方式的菜单项。
 
@@ -88,3 +95,7 @@ ms.locfileid: "44321263"
  可以在另一台计算机上安装扩展，也可以通过双击安装.vsix 文件以将其发送到您的朋友。 您可以了解有关在 VSIX 包的详细信息[传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)。
 
  此外可以发布您的扩展 Visual Studio Marketplace，使其向大量 Visual Studio 客户可见。 打包到 Marketplace 扩展的示例，请参阅[演练： 发布 Visual Studio 扩展](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。 有关需要执行的操作在 Marketplace 上发布的详细信息，请参阅[Visual Studio 的产品和扩展](/azure/devops/extend/overview?view=vsts)。
+
+## <a name="see-also"></a>请参阅
+
+- [扩展 Visual Studio for Mac](/visualstudio/mac/extending-visual-studio-mac)

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb4275a8cf88ccedc93695422261624801fdcf33
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 260e745db7036981ab0a3c79074d99a2b7c7fbb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586747"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828393"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate 元素 （Visual Studio 模板）
 包含有关项目模板、 项模板或初学者工具包的所有元数据。  
@@ -40,10 +40,10 @@ ms.locfileid: "39586747"
   
 ### <a name="attributes"></a>特性  
   
-|特性|描述|  
-|---------------|-----------------|  
-|`Type`|标识作为项目模板或项模板的模板。 此属性的值可以`Project`或`Item`。|  
-|`Version`|指定模板的版本号。 中的模板[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]并[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]有`Version`属性的值`3.0.0`。|  
+| 特性 | 描述 |
+|-----------| - |
+| `Type` | 标识作为项目模板或项模板的模板。 此属性的值可以`Project`或`Item`。 |
+| `Version` | 指定模板的版本号。 中的模板[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]并[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]有`Version`属性的值`3.0.0`。 |
   
 ### <a name="child-elements"></a>子元素  
   

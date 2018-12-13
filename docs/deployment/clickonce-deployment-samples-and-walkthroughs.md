@@ -19,26 +19,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ff64b5c1b5cec9a4b05f293bfc8c43ac7e1bb7
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: bc171010e1616ebe1fdf2d89397f6c796bf2686d
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282259"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459542"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 部署示例和演练
-本部分包含示例应用程序、 示例代码和分步演练介绍了语法、 结构和技术用于部署 Windows 窗体、 WPF 和控制台应用程序。  
-  
- 示例代码用于教学目的，并且不应在已部署的解决方案，无需修改即可使用。 具体而言，必须将安全性考虑更高版本中不考虑。  
-  
-## <a name="clickonce-deployment"></a>ClickOnce 部署  
-  
-|主题|描述|  
-|-----------|-----------------|  
-|[手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|说明如何使用 .NET Framework 实用程序部署 ClickOnce 应用程序。|  
-|[下载使用 ClickOnce 部署 API 按需程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|演示如何将标记为"可选"，在应用程序中的某些程序集以及如何下载它们使用中的类<xref:System.Deployment.Application>命名空间。|  
-|[下载 ClickOnce 部署 API 使用设计器中使用按需程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|说明如何仅在应用程序首次使用程序集时进行下载。|  
-  
-## <a name="see-also"></a>请参阅  
- [Visual Studio 演练](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
- [Visual Studio 示例](../ide/visual-studio-samples.md)
+本部分包含示例应用程序、 示例代码和分步演练介绍了语法、 结构和技术用于部署 Windows 窗体、 WPF 和控制台应用程序。
+
+ 示例代码用于教学目的，并且不应在已部署的解决方案，无需修改即可使用。 具体而言，必须将安全性考虑更高版本中不考虑。
+
+## <a name="clickonce-deployment"></a>ClickOnce 部署
+
+|主题|描述|
+|-----------|-----------------|
+|[手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|说明如何使用 .NET Framework 实用程序部署 ClickOnce 应用程序。|
+|[下载使用 ClickOnce 部署 API 按需程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|演示如何将标记为"可选"，在应用程序中的某些程序集以及如何下载它们使用中的类<xref:System.Deployment.Application>命名空间。|
+|[下载 ClickOnce 部署 API 使用设计器中使用按需程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|说明如何仅在应用程序首次使用程序集时进行下载。|
+
+## <a name="see-also"></a>请参阅
+
+- [Visual Studio 演练](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)

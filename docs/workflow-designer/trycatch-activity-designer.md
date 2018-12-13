@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26985893ae5a6431743564e28793957ecf0f9e01
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: de5329d05ebc8dcfe9d9970c353d573835fc5d00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756809"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866384"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 活动设计器
 
@@ -42,7 +42,7 @@ ms.locfileid: "36756809"
 下表显示<xref:System.Activities.Statements.TryCatch>属性并说明如何在设计器中使用。
 
 |属性名|必需|用法|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.TryCatch> 活动的可选友好名称。 默认值是 TryCatch。|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|False|在 <xref:System.Activities.Statements.TryCatch> 执行时首先执行的活动。|
 |<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|集合**捕获**元素时要检查<xref:System.Activities.Statements.TryCatch.Try%2A>活动会引发异常。<br /><br /> 需要在 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中至少添加一个活动或在 <xref:System.Activities.Statements.TryCatch.Finally%2A> 块中添加一个活动。|
@@ -51,5 +51,5 @@ ms.locfileid: "36756809"
 ## <a name="see-also"></a>请参阅
 
 - [集合](../workflow-designer/collection-activity-designers.md)
-- [重新引发](../workflow-designer/rethrow-activity-designer.md)
+- [Rethrow](../workflow-designer/rethrow-activity-designer.md)
 - [Throw](../workflow-designer/throw-activity-designer.md)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44d825d5d6ee36876c807ce067c71c1b10896623
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 600f38d7bcd387915ba61fc148805705e8609431
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31971419"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905243"
 ---
 # <a name="assign-activity-designer"></a>Assign 活动设计器
 
@@ -29,23 +29,23 @@ ms.locfileid: "31971419"
 
 ### <a name="using-the-assign-activity-designer"></a>使用 Assign 活动设计器
 
-**分配**在找不到活动设计器**基元**类别**工具箱**，通过单击访问的哪一**工具箱**选项卡 (或者，选择**工具箱**从**视图**菜单或 CTRL + ALT + X。)
+**分配**活动设计器可在**基元**的类别**工具箱**，这通过单击来访问**工具箱**选项卡 (或者，选择**工具箱**从**视图**菜单或 CTRL + ALT + X。)
 
-**分配**活动设计器可以拖动从**工具箱**和放置到工作流设计器图面，在任何位置放置活动的如内<xref:System.Activities.Statements.Sequence>。 删除**分配**活动设计器创建<xref:System.Activities.Statements.Assign>默认值的活动**DisplayName**的分配。 <xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑**分配**活动设计器中或在**DisplayName**属性网格的框。
+**分配**活动设计器可以从拖动**工具箱**并在任何位置放置活动的如内放置到工作流设计器图面<xref:System.Activities.Statements.Sequence>。 删除**分配**活动设计器创建<xref:System.Activities.Statements.Assign>默认值的活动**DisplayName**的分配。 <xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑**分配**活动设计器中或在**DisplayName**属性网格的框。
 
 ### <a name="the-assign-properties"></a>Assign 属性
 
 下表列出 <xref:System.Activities.Statements.Assign> 属性并说明如何在设计器中使用它们。 可以在属性网格中编辑这些属性，其中一些可以在工作流设计器图面上进行编辑。
 
 |属性名|必需|用法|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Assign> 活动的友好名称。 默认值为 Assign。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
-|<xref:System.Activities.Statements.Assign.To%2A>|True|为其赋 <xref:System.Activities.Statements.Assign.Value%2A> 的变量或参数。 值必须是有效的 Visual Basic 标识符。 若要设置该属性，键入在 Visual Basic 表达式**到**框**分配**活动设计器或在属性网格中。|
-|<xref:System.Activities.Statements.Assign.Value%2A>|True|赋给变量的值。 若要设置<xref:System.Activities.Statements.Assign.Value%2A>，键入在 Visual Basic 表达式**值**框**分配**活动设计器或在属性网格中。|
+|<xref:System.Activities.Statements.Assign.To%2A>|True|为其赋 <xref:System.Activities.Statements.Assign.Value%2A> 的变量或自变量。 值必须是有效的 Visual Basic 标识符。 若要设置该属性，键入 Visual Basic 表达式**到**框**分配**活动设计器或在属性网格中。|
+|<xref:System.Activities.Statements.Assign.Value%2A>|True|赋给变量的值。 若要设置<xref:System.Activities.Statements.Assign.Value%2A>，键入 Visual Basic 表达式**值**框**分配**活动设计器或在属性网格中。|
 
 ## <a name="see-also"></a>请参阅
 
 - [基元](../workflow-designer/primitives-activity-designers.md)
-- [延迟](../workflow-designer/delay-activity-designer.md)
+- [Delay](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

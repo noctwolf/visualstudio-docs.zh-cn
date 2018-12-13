@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2184c027651bf604b6ab89e5b2e63b6e945b2355
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a672e5a61006ed9764497bd115ba2bd98f91f6cd
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382498"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896778"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>如何：为负载测试运行设置指定采样率
 
 在用“新建负载测试向导”创建负载测试之后，可以使用“负载测试编辑器”更改属性，以满足测试需求和目标。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 使用“负载测试编辑器”，可以在“属性”窗口中编辑运行设置的“采样率”属性值。 有关运行设置属性及其说明的完整列表，请参见[负载测试运行设置属性](../test/load-test-run-settings-properties.md)。
 
@@ -28,7 +30,7 @@ ms.locfileid: "39382498"
 下面是有关采样速率的一些准则：
 
 |负载测试持续时间|建议的采样速率|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 小时|5 秒|
 |1 - 8 小时|15 秒|
 |8 - 24 小时|30 秒|

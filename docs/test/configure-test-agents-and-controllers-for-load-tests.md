@@ -9,19 +9,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 363aac5bc07b49670cb35f5f1080f7835e7c4701
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176464"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895634"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>配置测试代理和测试控制器以运行负载测试
 
 Visual Studio 可以使用物理计算机或虚拟机为应用生成模拟负载。 这些机器必须由一个测试控制器和一个或多个测试代理组成。 可以使用测试控制器和测试代理生成超出一台计算机单机生成能力的负载。
 
 > [!NOTE]
-> 还可以使用基于云的负载测试来提供同时生成访问网站的多个用户的负载的虚拟机。 请在[使用 VSTS 运行负载测试](/vsts/load-test/get-started-simple-cloud-load-test)中了解有关基于云的负载测试的详细信息。
+> 还可以使用基于云的负载测试来提供同时生成访问网站的多个用户的负载的虚拟机。 在[使用 Azure Test Plans 运行负载测试](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)中详细了解基于云的负载测试。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-simulation-architecture"></a>负载模拟体系结构
 
@@ -35,25 +37,25 @@ Visual Studio 可以使用物理计算机或虚拟机为应用生成模拟负载
 
 此体系结构提供了以下好处：
 
--   通过将其他测试代理添加到测试控制器增加负载生成的功能。
+- 通过将其他测试代理添加到测试控制器增加负载生成的功能。
 
--   在相同或不同计算机上灵活安装客户端、测试控制器和测试代理软件。 例如:
+- 在相同或不同计算机上灵活安装客户端、测试控制器和测试代理软件。 例如:
 
-     **本地配置：**
+   **本地配置：**
 
-    -   Machine1：Visual Studio、控制器、代理。
+  - Machine1：Visual Studio、控制器、代理。
 
-     ![使用控制器和代理的本地计算机](./media/load-test-configa.png)
+    ![使用控制器和代理的本地计算机](./media/load-test-configa.png)
 
-     **典型远程配置：**
+    **典型远程配置：**
 
-    -   Machine1 和 Machine2：Visual Studio（多名测试人员可以使用同一个控制器）。
+  - Machine1 和 Machine2：Visual Studio（多名测试人员可以使用同一个控制器）。
 
-    -   Machine3：控制器（也可安装代理）。
+  - Machine3：控制器（也可安装代理）。
 
-    -   Machine4-n：与 Machine3 上的控制器关联的一个或多个代理。
+  - Machine4-n：与 Machine3 上的控制器关联的一个或多个代理。
 
-     ![使用控制器和代理的远程计算机](./media/load-test-configb.png)
+    ![使用控制器和代理的远程计算机](./media/load-test-configb.png)
 
 即使测试控制器通常管理多个测试代理，代理也只能关联到一个控制器。 每个测试代理可以由一组开发人员共享。 此体系结构可以轻松地增加测试代理数量，从而生成更大的负载。
 

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.openlocfilehash: 79d96ac61bcec198c899d709677df775332db383
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 54e07d3c170859405ef584b884547dad335788f3
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223955"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295275"
 ---
 # <a name="managing-references-in-a-project"></a>管理项目中的引用
 
@@ -27,7 +27,7 @@ Visual Studio for Mac 提供了两种将其他引用添加到项目的方法：
 
 ## <a name="assembly-references"></a>程序集引用
 
-Xamarin 中的每个框架都附带十几个程序集。 项目中不会默认引用所有这些程序集包。 
+Xamarin 中的每个框架都附带十几个程序集。 项目中不会默认引用所有这些程序集包。
 
 要编辑项目中引用的包，请使用“编辑引用”对话框，要显示该对话框，请双击引用文件夹，或在其上下文菜单操作上选择“编辑引用”：
 
@@ -42,3 +42,8 @@ NuGet 是 .NET 开发最常用的程序包管理器。 通过 Visual Studio for 
 为此，请右键单击“包”文件夹，然后选择“添加包”。
 
 [在项目中包括 NuGet 包](nuget-walkthrough.md)演练中提供了有关使用 NuGet 包的详细信息。
+
+## <a name="see-also"></a>请参阅
+
+- [管理引用（Windows 上的 Visual Studio）](/visualstudio/ide/managing-references-in-a-project)
+- [使用 NuGet 添加引用与使用扩展 SDK 添加引用（Windows 上的 Visual Studio）](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)

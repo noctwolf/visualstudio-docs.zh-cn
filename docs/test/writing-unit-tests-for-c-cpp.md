@@ -1,20 +1,20 @@
 ---
 title: 在 Visual Studio 中编写 C/C++ 单元测试
-ms.date: 11/04/2017
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341367"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879206"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 
@@ -31,6 +31,10 @@ Visual Studio 包含这些 C++ 测试框架，无需进行额外下载：
 - CTest
 
 除了已安装的框架，可以为要在 Visual Studio 中使用的任何框架编写自己的测试适配器。 测试适配器可以将单元测试与“测试资源管理器”窗口集成。 在 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 上提供了几个第三方适配器。 有关详细信息，请参阅[安装第三方单元测试框架](install-third-party-unit-test-frameworks.md)。
+
+**Visual Studio 2017 版本 15.7（Professional 和 Enterprise）**
+
+C++ 单元测试项目支持 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)。
 
 **Visual Studio 2017 版本 15.5**
 
@@ -80,13 +84,14 @@ TEST_CLASS 和 TEST_METHOD 是 [Microsoft 本机策略框架](microsoft-visualst
 TEST_METHOD 返回 void。 若要生成测试结果，请使用 `Assert` 类中的静态方法针对预期结果测试实际结果。 在以下示例中，假设 `MyClass` 具有一个采用 `std::string` 的构造函数。 我们可以测试该构造函数是否按预期方式初始化类：
 
 ```cpp
-        TEST_METHOD(TestClassInit)
-        {
-            std::string name = "Bill";
-            MyClass mc(name);
-            Assert::AreEqual(name, mc.GetName());
-        }
+TEST_METHOD(TestClassInit)
+{
+    std::string name = "Bill";
+    MyClass mc(name);
+    Assert::AreEqual(name, mc.GetName());
+}
 ```
+
 在上面的示例中，`Assert::AreEqual` 调用的结果可确定测试是通过还是失败。 Assert 类包含用于比较预期结果与实际结果的许多其他方法。
 
 可以向测试方法添加特征，以指定测试所有者、优先级和其他信息。 随后可以使用这些值在“测试资源管理器”中对测试进行排序和分组。 有关详细信息，请参阅[使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)。
@@ -111,6 +116,22 @@ TEST_METHOD 返回 void。 若要生成测试结果，请使用 `Assert` 类中�
 有关使用“测试资源管理器”的详细信息，请参阅[使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)。
 
 有关与单元测试相关的最佳做法，请参阅[单元测试基础](unit-test-basics.md)
+
+## <a name="use-codelens"></a>使用 CodeLens
+
+**仅限 Visual Studio 2017 版本 15.7 Professional 和 Enterprise**：借助 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)，无需离开代码编辑器，即可快速查看单元测试状态。 若要为 C++ 单元测试项目初始化 CodeLens，可使用下面的方法之一：
+
+- 编辑和生成测试项目或解决方案。
+- 重新生成项目或解决方案。
+- 在“测试资源管理器”窗口中，运行一个或多个测试。
+
+当 CodeLens 初始化后，便能在各个单元测试上方看到测试状态图标。
+
+![C++ CodeLens 图标](media/cpp-test-codelens-icons.png)
+
+ 单击图标可以查看详细信息，也可以运行或调试单元测试：
+
+![C++ CodeLens 运行和调试](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>请参阅
 

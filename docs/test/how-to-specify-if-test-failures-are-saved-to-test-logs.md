@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6196a940ff1aba0c072c2b81a96371a5ad700d1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 65e8632a161ac345408a030d2d536086abbe48af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381448"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895114"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>如何：指定是否使用负载测试编辑器将测试失败保存到测试日志中
 
@@ -25,6 +25,7 @@ ms.locfileid: "39381448"
 > [!NOTE]
 > 有关运行设置属性及其说明的完整列表，请参见[负载测试运行设置属性](../test/load-test-run-settings-properties.md)。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>指定当某个方案中测试未通过时是否保存测试日志
 
@@ -48,5 +49,3 @@ ms.locfileid: "39381448"
 
 - [编辑负载测试方案](../test/edit-load-test-scenarios.md)
 - [演练：创建和运行负载测试](../test/walkthrough-create-and-run-a-load-test.md)
-- [如何：配置“收集完整详细信息”以启用虚拟用户活动图](../test/how-to-configure-load-tests-to-collect-full-details.md)
-- [如何：指定保存测试日志的频率](../test/how-to-specify-how-frequently-test-logs-are-saved.md)

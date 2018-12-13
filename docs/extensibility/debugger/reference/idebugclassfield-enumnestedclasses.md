@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedClasses |Microsoft 文档
+title: IDebugClassField::EnumNestedClasses |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 382e822a03a7a4e4a9ae30b41b4b9a4a7ec1643f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a313e27c3dcbca0136b00bfb789e444174474369
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937520"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
-创建此类中嵌套的类的枚举数。  
+创建此类中嵌套的类的枚举器。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,15 +41,15 @@ int EnumNestedClasses(
   
 #### <a name="parameters"></a>参数  
  `ppEnum`  
- [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象表示嵌套类的列表。 如果不有任何嵌套的类，则返回 null 值。  
+ [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，表示的嵌套类的列表。 如果不有任何嵌套的类，则返回 null 值。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK，则返回 S_FALSE，如果不有任何嵌套的类。 否则，返回错误代码。  
+ 如果成功，则返回 S_OK 或如果没有嵌套的类，则返回 S_FALSE。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 在枚举每个元素都[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)描述嵌套的类的对象。  
+ 枚举每个元素均[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)描述嵌套的类的对象。  
   
- 嵌套的类是在其他类定义的类。 例如：  
+ 嵌套的类是在另一个类中定义的类。 例如：  
   
 ```  
 class RootClass {  
@@ -59,6 +59,6 @@ class RootClass {
   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)枚举将包含一个对象，表示`NestedClass`类。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

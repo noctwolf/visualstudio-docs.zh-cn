@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_SCOPE |Microsoft 文档
+title: DISASSEMBLY_STREAM_SCOPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0c72d0f14da9840c0a77d5ae88cb0acb5b54cba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 860d563abd5922ecf0461ed5f03ffa231ba9450f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831154"
 ---
 # <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
-指定反汇编流作用的域。  
+指定反汇编流的作用域。  
   
 ## <a name="syntax"></a>语法  
   
@@ -48,21 +48,21 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
   
 ## <a name="members"></a>成员  
  DSS_HUGE  
- 指定反汇编的代码上下文会生成更多输出不是客户端通常想要在单个调用中检索。  
+ 指定拆装代码上下文会生成不是客户端通常想要在单个调用中检索详细输出。  
   
  DSS_FUNCTION  
- 指定应反汇编的代码上下文所包含的函数。 指定反汇编流表示一个函数，返回时[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)方法。  
+ 指定应拆装所包含的代码上下文的函数。 指定的反汇编流表示一个函数时返回的[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)方法。  
   
  DSS_MODULE  
- 返回时`IDebugDisassemblyStream2::GetScope`方法，指定反汇编流表示一个模块。  
+ 当返回`IDebugDisassemblyStream2::GetScope`方法中，指定反汇编流表示一个模块。  
   
  DSS_ALL  
- 指定的整个地址空间的反汇编。  
+ 指定整个地址空间的反汇编。  
   
 ## <a name="remarks"></a>备注  
- 作为自变量传递[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)方法并返回[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)方法。  
+ 作为参数传递[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)方法并返回由[GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)方法。  
   
- 这些值可以与按位组合`OR`。  
+ 可能的按位组合这些值`OR`。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -71,7 +71,7 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
  [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)

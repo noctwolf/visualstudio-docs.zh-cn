@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9810ba5086d3de8f5d3ad91bc2c62e0d30d349
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f8b55cda9576a0203857b3fdaeccbb205b42168
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671624"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812513"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>演练： 针对 NamedRange 控件的事件进行编程
   本演练演示如何添加<xref:Microsoft.Office.Tools.Excel.NamedRange>对 Microsoft Office Excel 工作表和对其事件通过使用 Visual Studio 中的 Office 开发工具进行编程控制。  
@@ -87,15 +87,15 @@ ms.locfileid: "35671624"
   
 ### <a name="to-add-text-to-your-worksheet"></a>若要将文本添加到您的工作表  
   
-1.  在单元格中**A1**，键入以下文本：  
+1. 在单元格中**A1**，键入以下文本：  
   
-     **这是 NamedRange 控件的一个示例。**  
+    **这是 NamedRange 控件的一个示例。**  
   
-2.  在单元格中**A3** (左侧的`namedRange2`)，键入以下文本：  
+2. 在单元格中**A3** (左侧的`namedRange2`)，键入以下文本：  
   
-     **事件：**  
+    **事件：**  
   
- 在以下部分中，您将编写代码将插入到文本`namedRange2`，并修改的属性`namedRange2`控件以响应<xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>， <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>，和<xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>事件的`namedRange1`。  
+   在以下部分中，您将编写代码将插入到文本`namedRange2`，并修改的属性`namedRange2`控件以响应<xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>， <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>，和<xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>事件的`namedRange1`。  
   
 ## <a name="add-code-to-respond-to-the-beforedoubleclick-event"></a>添加代码以响应 BeforeDoubleClick 事件  
   

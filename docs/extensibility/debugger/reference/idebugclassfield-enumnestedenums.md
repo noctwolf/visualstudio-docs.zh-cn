@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedEnums |Microsoft 文档
+title: IDebugClassField::EnumNestedEnums |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ea28f2a455d3528f083ba2acb2e9e4ad8989319
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfdfc8245634f0d674b1ced435a90504c8893d50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815658"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
-创建此类的嵌套枚举器的枚举数。  
+创建此类的嵌套枚举器的枚举器。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,15 +41,15 @@ int EnumNestedEnums(
   
 #### <a name="parameters"></a>参数  
  `ppEnum`  
- [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象表示嵌套枚举列表。 如果不有任何嵌套的枚举，则返回 null 值。  
+ [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，表示嵌套枚举的列表。 如果不有任何嵌套的枚举，则返回 null 值。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK，则返回 S_FALSE，如果不有任何嵌套的枚举器。 否则，返回错误代码。  
+ 如果成功，则返回 S_OK 或如果没有嵌套的枚举器，则返回 S_FALSE。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 在枚举每个元素都[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)描述嵌套的枚举对象。  
+ 枚举每个元素均[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)描述嵌套的枚举对象。  
   
- 枚举在类中声明被视为嵌套的枚举。 例如，给定：  
+ 在类中声明的枚举被视为嵌套的枚举。 例如，给定：  
   
 ```  
 class RootClass {  
@@ -59,7 +59,7 @@ class RootClass {
   
  `EnumNestedEnums`方法将返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，其中包含一个[IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)对象，表示`NestedEnum`枚举。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

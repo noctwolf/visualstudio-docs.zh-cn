@@ -18,12 +18,12 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: f6e311f7c0268cecb94498fffda702438ea921b0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879293"
 ---
 # <a name="replaceable-parameters"></a>可替换参数
   可替换参数，或*令牌*，可以使用项目文件中为其实际值不在设计时已知的 SharePoint 解决方案项提供值。 它们类似于标准[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]模板标记。 有关详细信息，请参阅[模板参数](/visualstudio/ide/template-parameters)。  
@@ -34,17 +34,17 @@ ms.locfileid: "37118796"
 ## <a name="token-rules"></a>令牌的规则
  以下规则适用于标记：  
   
--   可以在行中任意位置指定令牌。  
+- 可以在行中任意位置指定令牌。  
   
--   令牌不能跨多个行。  
+- 令牌不能跨多个行。  
   
--   在同一行上和在同一文件中，可能会多次指定相同的令牌。  
+- 在同一行上和在同一文件中，可能会多次指定相同的令牌。  
   
--   可能在同一行上指定不同的令牌。  
+- 可能在同一行上指定不同的令牌。  
   
- 令牌不遵循这些规则将被忽略，不会导致出现警告或错误。  
+  令牌不遵循这些规则将被忽略，不会导致出现警告或错误。  
   
- 清单转换之后立即执行替换的字符串值的标记。 这种替换允许用户编辑与令牌的清单模板。  
+  清单转换之后立即执行替换的字符串值的标记。 这种替换允许用户编辑与令牌的清单模板。  
   
 ### <a name="token-name-resolution"></a>令牌名称解析
  在大多数情况下，标记会解析为无论其中包含特定值。 但是，如果令牌与包或功能，令牌的值依赖于包含它。 例如，如果一个功能是中包，则令牌`$SharePoint.Package.Name$`解析为值"包 a。" 如果相同的功能是中包 B，然后`$SharePoint.Package.Name$`解析为"包 b。"  
@@ -75,19 +75,19 @@ ms.locfileid: "37118796"
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>将扩展添加到标记替换文件扩展名列表
  虽然从理论上由属于 SharePoint 项目项包含在包中，默认情况下，任何文件使用令牌[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]令牌仅在包文件中，清单文件，并具有以下扩展名的文件中搜索：  
   
--   [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
+- [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
   
--   ASCX  
+- ASCX  
   
--   ASPX  
+- ASPX  
   
--   Web 部件  
+- Web 部件  
   
--   DWP  
+- DWP  
   
- 这些扩展定义的`<TokenReplacementFileExtensions>`Microsoft.VisualStudio.SharePoint.targets 文件中的元素位于...\\< 程序文件\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools 文件夹。  
+  这些扩展定义的`<TokenReplacementFileExtensions>`Microsoft.VisualStudio.SharePoint.targets 文件中的元素位于...\\< 程序文件\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools 文件夹。  
   
- 但是，可以向列表添加其他文件扩展名。 添加`<TokenReplacementFileExtensions>`之前定义到任何 SharePoint 项目文件中的 PropertyGroup 元素\<导入 > SharePoint 目标文件。  
+  但是，可以向列表添加其他文件扩展名。 添加`<TokenReplacementFileExtensions>`之前定义到任何 SharePoint 项目文件中的 PropertyGroup 元素\<导入 > SharePoint 目标文件。  
   
 > [!NOTE]  
 >  编译项目后发生令牌替换，因为您不应将进行编译，如的文件类型的文件扩展名添加 *.cs*， *.vb*或 *.resx*。 仅在未编译的文件中替换标记。  

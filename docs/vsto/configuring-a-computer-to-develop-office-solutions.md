@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e25ac55a1198cf15b497b7b88522be44dfddb73
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 19c7e012775ff1a761b5c267f05b8f7ff250d5c6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670315"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672221"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>配置计算机以开发 Office 解决方案
 
@@ -44,7 +44,7 @@ ms.locfileid: "35670315"
 
      若要确保安装这些工具，请启动 Visual Studio 安装程序，然后选择**修改**按钮。 选中 **“Microsoft Office 开发人员工具”** 复选框，然后选择 **“更新”** 按钮。
 
-- 请确保你未正在运行的即用已传送的 Office 版本。 请参阅[如何： 验证 Outlook 是否是一台计算机上的即用应用程序](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx)。
+- 请确保你未正在运行的即用已传送的 Office 版本。 请参阅[如何： 验证 Outlook 是否是一台计算机上的即用应用程序](/previous-versions/office/developer/office-2010/ff864733(v=office.14))。
 
 - 确保运行只有一个版本的 Microsoft Office。
 

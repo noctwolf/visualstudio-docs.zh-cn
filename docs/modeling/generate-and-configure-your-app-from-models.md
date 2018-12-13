@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1eb8492a1f4432eb54e7333eb59cd14eb06335b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 78dc0907fa717f61b6cf883994a3ac2fd6072ba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872793"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>从模型中生成并配置你的应用程序
 你可从模型生成或配置你的应用程序的不同部件。
@@ -22,28 +22,28 @@ ms.locfileid: "39176806"
  模型比代码更能直接表示要求。 与更新代码相比，通过直接从模型派生应用程序的行为，你可以更加快速可靠地对更改的需求做出响应。 尽管需要做一些初始工作来设置派生，但如果你预计要求会发生改变，或者你计划生成产品的几个变体，则这种投资是会有回报的。
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>从模型生成应用程序代码
- 生成代码的最便捷方法是使用模板。 可以在同一个生成代码[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案在其中保留的模型。 有关详细信息，请参见:
+ 生成代码的最便捷方法是使用模板。 你可以在其中保留的模型相同的 Visual Studio 解决方案中生成代码。 有关详细信息，请参见:
 
--   [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
--   [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)
+- [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)
 
- 这种方法易于进行增量应用。 首先使用一个仅适用于特定情况的应用程序，并从模型中选择一些你希望更改的应用程序部分。 重命名这些部分的源文件，以便这些文件成为文本模板 (.tt) 文件。 此时，将自动从模板文件生成 .cs 源文件，该应用程序能像以前一样工作。
+  这种方法易于进行增量应用。 首先使用一个仅适用于特定情况的应用程序，并从模型中选择一些你希望更改的应用程序部分。 重命名这些部分的源文件，以便这些文件成为文本模板 (.tt) 文件。 此时，将自动从模板文件生成 .cs 源文件，该应用程序能像以前一样工作。
 
- 然后，你可以取用一部分代码并将其替换为文本模板表达式，该表达式读取模型并生成这部分的源文件。 至少模型的一个值应生成原始源，这样你才能再次运行该应用程序，该应用程序才能像以前一样工作。 在测试过不同的模型值之后，你可以继续在另一部分代码中插入模板表达式。
+  然后，你可以取用一部分代码并将其替换为文本模板表达式，该表达式读取模型并生成这部分的源文件。 至少模型的一个值应生成原始源，这样你才能再次运行该应用程序，该应用程序才能像以前一样工作。 在测试过不同的模型值之后，你可以继续在另一部分代码中插入模板表达式。
 
- 这种递增方法意味着代码生成通常是一种低风险的方式。 生成的应用程序通常能执行与手写版本几乎一样的操作。
+  这种递增方法意味着代码生成通常是一种低风险的方式。 生成的应用程序通常能执行与手写版本几乎一样的操作。
 
- 但是，如果是从一个现有应用程序开始，你可能会发现需要进行很多重构才能隔开受模型控制的不同行为，以便这些行为可以独立改变。 建议你在估计项目成本时，将应用程序的这一方面评估在内。
+  但是，如果是从一个现有应用程序开始，你可能会发现需要进行很多重构才能隔开受模型控制的不同行为，以便这些行为可以独立改变。 建议你在估计项目成本时，将应用程序的这一方面评估在内。
 
 ## <a name="configuring-your-application-from-a-model"></a>从模型进配置应用程序
  如果你希望在运行时改变应用程序的行为，则无法使用在编译应用程序前生成源代码的代码生成。 相反，您可以设计您的应用程序以读取模型，并相应地改变其行为。 有关详细信息，请参见:
 
--   [如何：在程序代码中从文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [如何：在程序代码中从文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
- 也可以以增量方式应用此方法，但一开始会有更多的工作要做。 你需要编写读取模型代码，并设置一个允许可变部分访问其值的框架。 生成泛型的可变部分比代码生成的开销更大。
+  也可以以增量方式应用此方法，但一开始会有更多的工作要做。 你需要编写读取模型代码，并设置一个允许可变部分访问其值的框架。 生成泛型的可变部分比代码生成的开销更大。
 
- 一个泛型应用程序的执行效果通常没有其特定的对应应用程序好。 如果性能很关键，则你的项目计划应将这种风险评估在内。
+  一个泛型应用程序的执行效果通常没有其特定的对应应用程序好。 如果性能很关键，则你的项目计划应将这种风险评估在内。
 
 ## <a name="developing-a-derived-application"></a>开发派生应用程序
  你可能会发现以下一般准则会很有帮助。

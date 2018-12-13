@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b46be8e9ad7a4a437f1009eb30407428f31b425b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7e468f75abbadbe46ea973a5c04d2e286fcfaca5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867697"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 可以使用 Visual C++ 项目中的“编辑并继续”。 请参阅[支持的代码更改 （c + +）](../debugger/supported-code-changes-cpp.md)有关限制的编辑并继续的信息。
@@ -41,17 +41,17 @@ ms.locfileid: "44279149"
 > [!IMPORTANT]
 > 有关所需的生成设置和功能兼容性的其他信息，请参阅 [c + + 编辑并继续使用 Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/。
   
-1.  如果您在调试会话，停止调试 (**Shift + F5**)。
+1. 如果您在调试会话，停止调试 (**Shift + F5**)。
 
 2. 在 **“工具”** 菜单上，选择 **“选项”**。
   
-3.  在中**选项**对话框中，选择**调试 > 常规**。
+3. 在中**选项**对话框中，选择**调试 > 常规**。
 
-4.  若要启用，请选择**启用编辑并继续**。 若要禁用，请清除该复选框。
+4. 若要启用，请选择**启用编辑并继续**。 若要禁用，请清除该复选框。
   
-5.  在“编辑并继续”  组中，选中或取消选中“启用本机编辑并继续”  复选框。  
+5. 在“编辑并继续”  组中，选中或取消选中“启用本机编辑并继续”  复选框。  
   
- 更改此设置将影响进行的所有项目。 更改此设置后，不必重新生成应用程序。 如果生成应用程序从命令行或从生成文件，但在 Visual Studio 环境中调试，则可以仍使用编辑并继续如果您设置 **/ZI**选项。  
+   更改此设置将影响进行的所有项目。 更改此设置后，不必重新生成应用程序。 如果生成应用程序从命令行或从生成文件，但在 Visual Studio 环境中调试，则可以仍使用编辑并继续如果您设置 **/ZI**选项。  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> 如何显式应用代码更改  
  在 Visual C++ 中，“编辑并继续”可以以两种方法应用代码更改。 代码更改可在选择执行命令时隐式应用，也可使用 **“应用代码更改”** 命令显式应用。  
@@ -65,16 +65,16 @@ ms.locfileid: "44279149"
   
  要停止应用代码更改：  
   
--   在 **调试** 菜单中选择 **停止应用代码更改**。  
+- 在 **调试** 菜单中选择 **停止应用代码更改**。  
   
- 该菜单项仅在应用代码更改时才可见。  
+  该菜单项仅在应用代码更改时才可见。  
   
- 如果选择了改选项，就不会进行任何代码更改。  
+  如果选择了改选项，就不会进行任何代码更改。  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> 如何重置执行点  
  在“编辑并继续”应用更改时，一些代码更改会使执行点移动到新的位置。 “编辑并继续”尽可能正确地放置执行点，但是并非所有情况下的结果都正确。  
   
- 在 Visual C++ 中，当执行点发生更改时，会显示一个对话框来告知您此情况。 在继续调试之前，应验证位置是否正确。 如果位置不正确，则使用 **“设置下一语句”** 命令。 有关详细信息，请参阅[设置下一步要执行的语句](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute)。  
+ 在 Visual C++ 中，当执行点发生更改时，会显示一个对话框来告知您此情况。 在继续调试之前，应验证位置是否正确。 如果位置不正确，则使用 **“设置下一语句”** 命令。 有关详细信息，请参阅 [设置下一个要执行的语句](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute)。  
   
 ##  <a name="BKMK_How_to_work_with_stale_code"></a> 如何使用陈旧代码  
  在某些情况下，“编辑并继续”无法将代码更改立即应用于可执行文件，但如果您继续调试，则可能会在稍后应用代码更改。 当编辑某个调用当前函数的函数，或将多于 64 个字节的新变量添加到调用堆栈上的函数时，就会发生这种情况。  

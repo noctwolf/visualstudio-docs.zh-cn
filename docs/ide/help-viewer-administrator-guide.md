@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bccbd4f1365ea42b3e0331283a5659502038e133
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 897de3b54781cf5738e80ffcc878fd8d34f6168f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951088"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 管理员指南
 
@@ -50,7 +50,6 @@ ms.locfileid: "33704261"
 -   客户端计算机必须可以访问 Internet。
 
 -   用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。
-
 
 注意：
 
@@ -93,17 +92,17 @@ ms.locfileid: "33704261"
 
 #### <a name="to-uninstall-local-help"></a>卸载本地帮助
 
-1.  在 Help Viewer 中，选择“管理内容”选项卡。
+1. 在 Help Viewer 中，选择“管理内容”选项卡。
 
-2.  导航到 Visual Studio 文档集。
+2. 导航到 Visual Studio 文档集。
 
-3.  选择每个子项旁的“删除”。
+3. 选择每个子项旁的“删除”。
 
-4.  选择“更新”进行卸载。
+4. 选择“更新”进行卸载。
 
-5.  浏览到 %ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15 并验证该文件夹是否仅包含文件 catalogType.xml。
+5. 浏览到 %ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15 并验证该文件夹是否仅包含文件 catalogType.xml。
 
- 一旦移除所有以前安装的本地 Visual Studio 帮助内容，便已准备好下载基本内容集。
+   一旦移除所有以前安装的本地 Visual Studio 帮助内容，便已准备好下载基本内容集。
 
 #### <a name="to-download-the-content"></a>下载内容
 
@@ -112,7 +111,6 @@ ms.locfileid: "33704261"
 2.  在“推荐的文档”或“可用的文档”下，导航到要下载的文档集，然后选择“添加”。
 
 3.  选择“更新”。
-
 
 接下来，需要对内容进行打包，以便它可以部署到客户端计算机。
 
@@ -128,7 +126,7 @@ ms.locfileid: "33704261"
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o `
 
-     例如：`Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
+     例如： `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
 
 ### <a name="deploy-the-content"></a>部署内容
 

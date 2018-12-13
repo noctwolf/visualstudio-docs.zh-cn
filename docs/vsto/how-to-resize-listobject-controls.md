@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e55a214d2b35e26dcc1a3b381f74a7ccd021c864
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811498"
 ---
 # <a name="how-to-resize-listobject-controls"></a>如何： 调整 ListObject 控件的大小
   将 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件添加到 Microsoft Office Excel 工作簿时，可以设置该控件的大小；但是，你可能需要在以后重设其大小。 例如，你可能希望将两列式列表更改为三列式列表。  
@@ -32,15 +32,15 @@ ms.locfileid: "35670583"
   
  本主题介绍了以下任务：  
   
--   [在设计时重设 ListObject 控件的大小](#designtime)  
+- [在设计时重设 ListObject 控件的大小](#designtime)  
   
--   [调整 ListObject 控件在运行时在文档级项目中的大小](#runtimedoclevel)  
+- [调整 ListObject 控件在运行时在文档级项目中的大小](#runtimedoclevel)  
   
--   [调整 ListObject 控件在运行时在 VSTO 外接程序项目中的大小](#runtimeaddin)  
+- [调整 ListObject 控件在运行时在 VSTO 外接程序项目中的大小](#runtimeaddin)  
   
- 有关详细信息<xref:Microsoft.Office.Tools.Excel.ListObject>控件，请参阅[ListObject 控件](../vsto/listobject-control.md)。  
+  有关详细信息<xref:Microsoft.Office.Tools.Excel.ListObject>控件，请参阅[ListObject 控件](../vsto/listobject-control.md)。  
   
- ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[我如何向在运行时将数据绑定列表对象中的实现： 添加列？](http://go.microsoft.com/fwlink/?LinkID=130318)。  
+  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[我如何向在运行时将数据绑定列表对象中的实现： 添加列？](http://go.microsoft.com/fwlink/?LinkID=130318)。  
   
 ##  <a name="designtime"></a> 在设计时重设 ListObject 控件的大小  
  若要重设列表的大小，可以单击并拖动其中一个尺寸控点，或者在“重设列表大小”  对话框中重新定义其大小。  

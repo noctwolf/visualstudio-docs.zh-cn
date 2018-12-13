@@ -10,25 +10,52 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 6a8f2b866bd1bb2c4d13f3cb3c40c1f6fbc14683
-ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
+ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "42626553"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000721"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 Visual Studio Tools for Unity 更改日志。
 
+## <a name="3807"></a>3.8.0.7
+ 发布时间：2018 年 9 月 20 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **调试器：**
+
+    -   修复了用于与 Unity 调试器引擎进行通信的库中的死锁，此死锁会导致 Visual Studio 或 Unity 冻结，尤其是在用户点击“附加到 Unity”或重启游戏时。
+
+## <a name="3806"></a>3.8.0.6
+ 发布日期：2018 年 8 月 27 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成：**
+
+    -   修复了项目和解决方案的重载。
+
+## <a name="3805"></a>3.8.0.5
+ 发布时间：2018 年 8 月 20 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成：**
+
+    -   修复了监视订阅处置的项目。
+
 ## <a name="3804"></a>3.8.0.4
  发布时间：2018 年 8 月 14 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **评估版：**
 
     -   添加了对指针值的支持。
-    
+
     -   添加了对泛型方法的支持。
 
 ### <a name="bug-fixes"></a>Bug 修复
@@ -39,7 +66,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="3803"></a>3.8.0.3
  发布时间：2018 年 7 月 24 日
- 
+
 ### <a name="bug-fixes"></a>Bug 修复
 
 -   **项目生成：**
@@ -48,24 +75,24 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="3802"></a>3.8.0.2
  发布时间：2018 年 7 月 7 日
- 
+
 ### <a name="bug-fixes"></a>Bug 修复
 
 -   **项目生成：**
 
     -   Unity 性能 Bug 的暂时解决方法：生成项目时缓存 MonoIsland。
-    
+
 ## <a name="3801"></a>3.8.0.1
  发布时间：2018 年 6 月 26 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **调试：**
 
     -   添加了对 UserLog 和 UserBreak 命令的支持。
-    
+
     -   添加了对延迟加载的支持（优化了网络负载和调试程序响应延迟）。
-       
+
 ### <a name="bug-fixes"></a>Bug 修复
 
 -   **评估版：**
@@ -74,19 +101,19 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="3800"></a>3.8.0.0
  发布时间：2018 年 5 月 30 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **调试：**
 
     -   现支持在异步构造中显示变量。
-    
+
     -   现支持在设置断点时处理嵌套类型以防止编译器构造出现警告。
-    
+
 -   **集成：**
 
     -   现支持着色器的 textmate 语法（Shader 代码着色不再需要 C++ 工作负载）。
-    
+
 ### <a name="bug-fixes"></a>Bug 修复
 
 -   **项目生成：**
@@ -110,15 +137,15 @@ Visual Studio Tools for Unity 更改日志。
 -   **调试：**
 
     -   增加了对安排的调试的支持（使用相同的 Visual Studio 会话调试多个播放器/编辑器）。
-    
+
     -   增加了对 Android USB 播放器调试的支持。
-    
+
     -   增加了对 UWP/IL2CPP 播放器调试的支持。
 
 -   **评估版：**
 
     -   增加了对十六进制说明符的支持。
-    
+
     -   改进了监视窗口评估体验。
 
 ### <a name="bug-fixes"></a>Bug 修复
@@ -814,9 +841,9 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
--   修复 Visual Studio 主题的处理。 之前，黑色主题中的对话框可能会显示为空（连接问题 [#932637](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/932637/) 和 [#936439](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/936439/)）。
+-   修复 Visual Studio 主题的处理。 之前，黑色主题中的对话框可能会显示为空。
 
--   修复当连接调试器同时 Unity 进行重新编译时发生的 Unity 冻结（连接问题 [#947119](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/947119/) 和 [#969211](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/969211/)）。
+-   修复当连接调试器同时 Unity 进行重新编译时发生的 Unity 冻结。
 
 -   调试在另一个系统编译的远程编辑器或播放器时，修复断点。
 
@@ -826,7 +853,7 @@ Visual Studio Tools for Unity 更改日志。
 
 -   修复调试器中变量范围的处理，以避免出现的实时变量超出范围。
 
--   修复在调试器的表达式计算中静态成员的查找（连接问题 [#953379](https://connect.microsoft.com/VisualStudio/feedbackdetail/view/953379/)）。
+-   修复在调试器的表达式计算中静态成员的查找。
 
 -   修复调试器的表达式计算中的类型显示，以显示静态字段和属性。
 

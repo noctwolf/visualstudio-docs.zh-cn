@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中为 Web 性能测试编码自定义提取规则
+title: 为 Web 性能测试编码自定义提取规则
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bbafd92f34671564a91926066a2353a1e0421b63
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 41e9a025db4ec9c8425e0de6ba4ecad25f775d50
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179237"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066673"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>为 Web 性能测试编码自定义提取规则
 
@@ -28,6 +28,8 @@ ms.locfileid: "39179237"
 
 > [!NOTE]
 > 还可以创建自定义验证规则。 有关详细信息，请参阅[为负载测试创建自定义代码和插件](../test/create-custom-code-and-plug-ins-for-load-tests.md)。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-create-a-custom-extraction-rule"></a>创建自定义提取规则
 

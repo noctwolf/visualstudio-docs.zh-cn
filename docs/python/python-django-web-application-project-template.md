@@ -1,7 +1,7 @@
 ---
 title: 适用于 Python 的 Django Web 项目模板
 description: 使用 Django 框架以 Python 编写的 Web 应用程序的 Visual Studio 模板概述。
-ms.date: 07/03/2018
+ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1e00fd7df429b219589e1e49ddbc5ccadca5e032
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499538"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607427"
 ---
 # <a name="django-web-project-template"></a>Django Web 项目模板
 
@@ -56,7 +56,7 @@ Django 管理控制台可通过“项目”菜单上的各种命令或在解决�
 
     ![控制台](media/template-django-console-sync-db.png)
 
-- **收集静态文件**：执行 `manage.py collectstatic --noinput` 以将所有静态文件复制到由 settings.py 中的 `STATIC_ROOT` 指定的路径中。 当[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md) 时，将自动收集静态文件，作为发布操作的一部分。
+- **收集静态文件**：执行 `manage.py collectstatic --noinput` 以将所有静态文件复制到由 settings.py 中的 `STATIC_ROOT` 指定的路径中。
 
     ![控制台](media/template-django-console-collect-static.png)
 

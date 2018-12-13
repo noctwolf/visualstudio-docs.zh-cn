@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f5ee0493a8a780710eb4b6bbbd9426e23baf48e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774911"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295964"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>部署 Visual Studio 中的 SharePoint 工具扩展
 
@@ -235,13 +235,13 @@ ms.locfileid: "43774911"
 
 4.  修改 extension.vsixmanifest 文件：
 
-    -   添加`Microsoft.VisualStudio.MefComponent`元素下的`Assets`元素，并设置 VSIX 包中实现您的扩展插件的程序集的相对路径的新元素的值。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。
+    -   添加`Microsoft.VisualStudio.MefComponent`元素下的`Assets`元素，并设置 VSIX 包中实现您的扩展插件的程序集的相对路径的新元素的值。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
-    -   如果您的扩展插件中包含到服务器对象模型调用 SharePoint 的 SharePoint 命令，添加`Microsoft.VisualStudio.Assembly`元素下的`Assets`元素。 将新元素的值设置为 VSIX 包中实现 SharePoint 命令的程序集的相对路径。 有关详细信息，请参阅[资产元素 （VSX 架构）](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737)。
+    -   如果您的扩展插件中包含到服务器对象模型调用 SharePoint 的 SharePoint 命令，添加`Microsoft.VisualStudio.Assembly`元素下的`Assets`元素。 将新元素的值设置为 VSIX 包中实现 SharePoint 命令的程序集的相对路径。 有关详细信息，请参阅[资产元素 （VSX 架构）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
 
-    -   如果您的扩展插件包括项目模板或项模板，添加`ProjectTemplate`或`ItemTemplate`元素下的`Assets`元素。 将新元素的值设置为包含在 VSIX 包中的模板的文件夹的相对路径。 有关详细信息，请参阅[ProjectTemplate 元素 （VSX 架构）](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1)并[ItemTemplate 元素 （VSX 架构）](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0)。
+    -   如果您的扩展插件包括项目模板或项模板，添加`ProjectTemplate`或`ItemTemplate`元素下的`Assets`元素。 将新元素的值设置为包含在 VSIX 包中的模板的文件夹的相对路径。 有关详细信息，请参阅[ProjectTemplate 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))并[ItemTemplate 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))。
 
-    -   如果您的扩展插件中包含的项目模板或项模板的自定义向导，添加`Assembly`元素下的`Assets`元素。 将新元素的值设置为在 VSIX 包中，程序集的相对路径，然后设置`AssemblyName`属性为完整的程序集名称 （包括版本、 区域性和公钥标记）。 有关详细信息，请参阅[依赖关系元素 （VSX 架构）](http://msdn.microsoft.com/en-us/1f63f60a-98ad-48ec-8e44-4eba383d3e37)。
+    -   如果您的扩展插件中包含的项目模板或项模板的自定义向导，添加`Assembly`元素下的`Assets`元素。 将新元素的值设置为在 VSIX 包中，程序集的相对路径，然后设置`AssemblyName`属性为完整的程序集名称 （包括版本、 区域性和公钥标记）。 有关详细信息，请参阅[依赖关系元素 （VSX 架构）](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37)。
 
 ### <a name="example"></a>示例
 

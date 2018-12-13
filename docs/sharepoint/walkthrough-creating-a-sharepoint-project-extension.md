@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8620a51480868302fc840bffea5bbdb427c48f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d68347f2b6b9f538555e05c91b15dcb045b46d6
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635611"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295977"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>演练： 创建 SharePoint 项目扩展
   本演练演示如何创建 SharePoint 项目扩展。 项目扩展可用于对等添加、 删除或重命名项目时的项目级事件做出响应。 此外可以添加自定义属性或属性值发生更改时进行响应。 与项目项扩展不同项目扩展将不能为与特定的 SharePoint 项目类型关联。 该扩展时创建的项目扩展，请加载任何类型的 SharePoint 项目中打开时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -53,11 +53,11 @@ ms.locfileid: "42635611"
 ## <a name="create-the-projects"></a>创建项目
  若要完成本演练，必须创建两个项目：  
   
--   若要创建要部署项目扩展的 VSIX 包一个 VSIX 项目。  
+- 若要创建要部署项目扩展的 VSIX 包一个 VSIX 项目。  
   
--   一个用于实现项目扩展的库项目。  
+- 一个用于实现项目扩展的库项目。  
   
- 首先演练创建项目。  
+  首先演练创建项目。  
   
 #### <a name="to-create-the-vsix-project"></a>若要创建 VSIX 项目  
   
@@ -131,7 +131,7 @@ ms.locfileid: "42635611"
   
 1.  在中**解决方案资源管理器**，打开 source.extension.vsixmanifest 文件的快捷菜单，然后选择**打开**按钮。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在清单设计器中打开该文件。 在显示的信息**元数据**选项卡也将出现在**扩展和更新**。 所有的 VSIX 包需要 extension.vsixmanifest 文件。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 参考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在清单设计器中打开该文件。 在显示的信息**元数据**选项卡也将出现在**扩展和更新**。 所有的 VSIX 包需要 extension.vsixmanifest 文件。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 参考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
 2.  在中**产品名称**框中，输入**自定义项目属性**。  
   
@@ -146,7 +146,7 @@ ms.locfileid: "42635611"
 6.  在中**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  此值对应于`MEFComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
+    >  此值对应于`MEFComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。  
   
 7.  在中**源**列表中，选择**当前解决方案中的项目**选项按钮。  
   

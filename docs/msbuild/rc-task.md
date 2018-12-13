@@ -24,15 +24,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7751a53430518df9ce80fd053be5414e015143d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 0db327943dcaf9b14a921cf4437b6c23874b4380
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151649"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219427"
 ---
 # <a name="rc-task"></a>RC 任务
-包装 Microsoft Windows 资源编译器工具 rc.exe。 RC 任务将游标、图标、位图、对话框和字体等资源编译为一个资源 (.res) 文件。 有关详细信息，请参阅[资源编译器](https://docs.microsoft.com/en-us/windows/desktop/menurc/resource-compiler)。
+包装 Microsoft Windows 资源编译器工具 rc.exe。 RC 任务将游标、图标、位图、对话框和字体等资源编译为一个资源 (.res) 文件。 有关详细信息，请参阅[资源编译器](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler)。
   
 ## <a name="parameters"></a>参数  
  下表描述了 RC 任务的参数。 大多数任务参数和若干组参数都对应于命令行选项。  

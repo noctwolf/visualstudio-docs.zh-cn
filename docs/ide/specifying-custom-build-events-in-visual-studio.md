@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f439a8bb1ae559e915769f8ea89ef7f4bf863
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908727"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自定义生成事件
 
@@ -37,24 +37,24 @@ ms.locfileid: "31945917"
 
  为获得最佳结果，请遵循以下这些格式设置提示：
 
--   在运行 .bat 文件的所有生成事件之前，先添加 `call` 语句。
+- 在运行 .bat 文件的所有生成事件之前，先添加 `call` 语句。
 
-     示例：`call C:\MyFile.bat`
+   示例：`call C:\MyFile.bat`
 
-     示例：`call C:\MyFile.bat call C:\MyFile2.bat`
+   示例：`call C:\MyFile.bat call C:\MyFile2.bat`
 
--   将文件路径用引号引起来。
+- 将文件路径用引号引起来。
 
-     示例（对于 [!INCLUDE[win8](../debugger/includes/win8_md.md)]）："%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
+   示例（对于 [!INCLUDE[win8](../debugger/includes/win8_md.md)]）："%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
 
--   使用换行符分隔多个命令。
+- 使用换行符分隔多个命令。
 
--   根据需要包含通配符。
+- 根据需要包含通配符。
 
-     示例：`for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
+   示例：`for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
-    > [!NOTE]
-    >  以上代码中的 `%I` 在批处理脚本中应是 `%%I`。
+  > [!NOTE]
+  >  以上代码中的 `%I` 在批处理脚本中应是 `%%I`。
 
 ## <a name="see-also"></a>请参阅
 

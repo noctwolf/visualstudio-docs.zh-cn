@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1dee26ae729dedc2d38895ca84e430ffcbad875f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f61afe90ed48064c79dd40c0c0975155c956e3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861834"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>如何： 扩展服务器资源管理器中的 SharePoint 节点
   您可以扩展节点下的**SharePoint 连接**中的节点**服务器资源管理器**。 当你想要将新的子节点、 快捷菜单项或属性添加到现有节点时，这很有用。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。  
@@ -40,9 +40,9 @@ ms.locfileid: "37118740"
   
 3.  创建实现 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 接口的类。  
   
-4.  添加<xref:System.ComponentModel.Composition.ExportAttribute>到类属性。 此特性使 Visual Studio 能够发现和加载您<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>实现。 传递<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>特性构造函数的类型。  
+4.  将 <xref:System.ComponentModel.Composition.ExportAttribute> 特性添加到该类中。 此特性使 Visual Studio 能够发现和加载您<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>实现。 传递<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>特性构造函数的类型。  
   
-5.  添加<xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>到类属性。 此属性指定您想要扩展的节点的类型的字符串标识符。  
+5.  将 <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> 特性添加到该类中。 此属性指定您想要扩展的节点的类型的字符串标识符。  
   
      若要指定所提供的 Visual Studio 的内置节点类型，请将以下枚举值之一传递给特性构造函数：  
   
@@ -61,14 +61,14 @@ ms.locfileid: "37118740"
 ## <a name="example"></a>示例  
  下面的代码示例演示如何创建两个不同类型的节点扩展：  
   
--   将一个上下文菜单项添加到 SharePoint 站点节点扩展。 当单击菜单项时，将会显示被单击的节点的名称。  
+- 将一个上下文菜单项添加到 SharePoint 站点节点扩展。 当单击菜单项时，将会显示被单击的节点的名称。  
   
--   添加名为的自定义属性的扩展**ContosoExampleProperty**到每个节点都表示一个名为字段**正文**。  
+- 添加名为的自定义属性的扩展**ContosoExampleProperty**到每个节点都表示一个名为字段**正文**。  
   
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
+  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
+  [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]  
   
- 此扩展可编辑的字符串属性添加到节点。 此外可以创建显示 SharePoint server 的只读数据的自定义属性。 有关演示如何执行此操作的示例，请参阅[演练： 扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。  
+  此扩展可编辑的字符串属性添加到节点。 此外可以创建显示 SharePoint server 的只读数据的自定义属性。 有关演示如何执行此操作的示例，请参阅[演练： 扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。  
   
 ## <a name="compile-the-code"></a>编译代码  
  此示例需要引用以下程序集：  

@@ -12,35 +12,35 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 43411be41acf2e5bd2e40131dd06bf817bf87a38
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0377417da5859e38c46f99b3b335ba627261cb5
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31046220"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459683"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
-Visual Studio Tools for AI 是用于生成、测试和部署深度学习/AI 解决方案的扩展。 它与 Azure 机器学习无缝集成以实现强大的试验功能，包括但不限于提交数据准备以及以透明方式将训练作业建模为不同的计算目标。 此外，它提供对自定义指标和运行历史记录跟踪的支持，从而可实现数据科学的可再现性和审核。 通过企业就绪协作，可以安全地与他人一起处理项目。
+Visual Studio Tools for AI 是用于生成、测试和部署深入学习/AI 解决方案的扩展。 它与 Azure 机器学习无缝集成以实现强大的试验功能，包括但不限于提交数据准备以及以透明方式将训练作业建模为不同的计算目标。 此外，它提供对自定义指标和运行历史记录跟踪的支持，从而可实现数据科学的可再现性和审核。 通过企业就绪协作，可以安全地与他人一起处理项目。
 
 立即开始使用 [Microsoft 认知工具包 (CNTK)](http://www.microsoft.com/en-us/cognitive-toolkit)、[Google TensorFlow](https://www.tensorflow.org) 或其他深入学习框架进行深入学习。
 
-## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>开发、调试和部署深度学习模型和 AI 解决方案
-立即使用 Visual Studio 的高效功能加快 AI 创新。 使用内置代码编辑器功能，如语法突出显示、IntelliSense 和文本自动格式设置。 可以通过对本地变量和模型使用单步调试，在本地环境中以交互方式测试深度学习应用程序。
+## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>开发、调试和部署深入学习模型和 AI 解决方案
+立即使用 Visual Studio 的高效功能加快 AI 创新。 使用内置代码编辑器功能，如语法突出显示、IntelliSense 和文本自动格式设置。 可以通过对本地变量和模型使用单步调试，在本地环境中以交互方式测试深入学习应用程序。
 
-![深入学习 ide](media\about\ide.png)
+![深入学习 ide](media/about/ide.png)
 
 ## <a name="get-started-quickly-with-the-azure-machine-learning-sample-gallery"></a>Azure 机器学习示例库快速入门
 Visual Studio Tools for AI 与 Azure 机器学习集成在一起，以便可以方便地浏览使用 CNTK、TensorFlow、MMLSpark 等的示例试验库。
 
-![示例资源管理器](media\about\gallery.png)
+![示例资源管理器](media/about/gallery.png)
 
 [了解有关从示例库中创建项目的详细信息](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>将深入学习模型训练和/或推断横向扩展到云
 通过此扩展可以轻松地在本地计算机上训练模型，也可以使用我们与 Azure 机器学习的集成将作业提交到云。 可以将作业提交到不同的计算目标，如 Spark 群集、Azure GPU 虚拟机等
 
-![提交作业](media\about\submitjobs.png)
+![提交作业](media/about/submitjobs.png)
 
 [详细了解如何在云中训练模型](tensorflow-vm.md)
 

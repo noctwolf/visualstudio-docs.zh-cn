@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::AreSymbolsLoaded |Microsoft 文档
+title: IDebugComPlusSymbolProvider::AreSymbolsLoaded |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ddbc6d2da448be163fcd84c90e55290265c361
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d63b410fc8cae67e27c15d4ed87c59bbed982d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103573"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825837"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
-确定是否已为给定的应用程序域标识符的指定模块加载调试符号。  
+确定是否为给定的应用程序域标识符的指定模块加载调试符号。  
   
 ## <a name="syntax"></a>语法  
   
@@ -42,16 +42,16 @@ int AreSymbolsLoaded (
   
 #### <a name="parameters"></a>参数  
  `ulAppDomainID`  
- [in]应用程序域的标识符。  
+ [in]应用程序域标识符。  
   
  `guidModule`  
- [in]模块的唯一标识符。  
+ [in]该模块的唯一标识符。  
   
 ## <a name="return-value"></a>返回值  
  如果已加载调试符号，则返回`S_OK`; 否则为返回`S_FALSE`。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**公开的对象[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。  
+ 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(  
@@ -73,5 +73,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

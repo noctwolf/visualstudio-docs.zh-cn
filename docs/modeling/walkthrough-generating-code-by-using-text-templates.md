@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566578"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859791"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>演练：使用文本模板生成代码
 
@@ -30,7 +30,7 @@ System.Xml 命名空间提供用于加载 XML 文档的综合工具，然后将�
 在此示例项目中，模板读取示例 XML 文件，并生成对应于每种节点类型的类。 在手动编写的代码中，可以使用这些类来导航 XML 文件。 此外，还可以在使用相同节点类型的任何其他文件上运行应用程序。 示例 XML 文件的目的是提供想要应用程序处理的所有节点类型的示例。
 
 > [!NOTE]
-> 包括在 [中的应用程序](http://go.microsoft.com/fwlink/?LinkId=178765)xsd.exe [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可以从 XML 文件中生成强类型类。 此处显示的模板作为示例提供。
+> 应用程序[xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)，包含在 Visual Studio 中，可以从 XML 文件中生成强类型类。 此处显示的模板作为示例提供。
 
 下面是示例文件：
 
@@ -142,7 +142,7 @@ namespace MyProject
 
 3.  在文件的模板指令中，将 `hostspecific` 属性更改为 `true`。
 
-     此更改将使模板代码有权访问 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 服务。
+     此更改将使模板代码有权访问 Visual Studio 服务。
 
 4.  在输出指令中，将扩展属性更改为“.cs”，使该模板生成 C# 文件。 在 Visual Basic 项目中，将其更改为“.vb”。
 
@@ -272,7 +272,7 @@ public partial class Song {}
 
 ### <a name="access-the-visual-studio-api"></a>访问 Visual Studio API
 
-设置 `hostspecific` 指令的 `<#@template#>` 属性，使模板获取访问 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API 的权限。 模板可通过该步骤获取项目文件的位置，避免在模板代码中使用绝对文件路径。
+设置`hostspecific`属性的`<#@template#>`指令允许要获取对 Visual Studio API 访问权限的模板。 模板可通过该步骤获取项目文件的位置，避免在模板代码中使用绝对文件路径。
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>

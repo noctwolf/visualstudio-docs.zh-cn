@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fbb8fa5e4881c76aae08759b2feb159b764231f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078138"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813760"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt;元素 （引导程序）
 `PackageFiles`元素包含`PackageFile`元素，后者定义为执行的安装包`Command`元素。  
-  
+
 ## <a name="syntax"></a>语法  
-  
+
 ```xml  
 <PackageFiles  
     CopyAllPackageFiles  
@@ -42,30 +42,31 @@ ms.locfileid: "39078138"
     />  
 </PackageFiles>  
 ```  
-  
+
 ## <a name="elements-and-attributes"></a>元素和属性  
- `PackageFiles`元素具有以下属性。  
-  
+ `PackageFiles` 元素具有以下属性。  
+
 |特性|描述|  
 |---------------|-----------------|  
 |`CopyAllPackageFiles`|可选。 如果设置为`false`，安装程序将仅下载文件从引用`Command`元素。 如果设置为`true`，将下载所有文件。<br /><br /> 如果设置为`IfNotHomesite`，安装程序的行为相同像`False`如果`ComponentsLocation`设置为`HomeSite`，并将否则具有相同行为像`True`。 此设置可用于允许包本身是引导程序，以在 HomeSite 方案中执行其自己的行为。<br /><br /> 默认值为 `true`。|  
-  
+
 ## <a name="packagefile"></a>PackageFile  
  `PackageFile`元素是子元素的`PackageFiles`元素。 一个`PackageFiles`元素必须至少一个`PackageFile`元素。  
-  
+
  `PackageFile` 具有以下属性。  
-  
-|特性|描述|  
-|---------------|-----------------|  
-|`Name`|必须的。 包文件的名称。 这是名称的`Command`元素将引用此项定义的包将安装在其下的条件。 此值还用作的键`Strings`表以检索这样的工具的本地化的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将用于描述包。|  
-|`HomeSite`|可选。 在远程服务器上，如果不包括与安装程序的包的位置。|  
-|`CopyOnBuild`|可选。 指定引导程序在生成时是否应将复制到磁盘上的包文件。 默认值为 true。|  
-|`PublicKey`|加密的包的证书签名者的公钥。 如果使用`HomeSite`使用; 否则为可选。|  
-|`Hash`|可选。 包文件的 SHA1 哈希。 这用于在安装时验证文件的完整性。 如果无法从包文件计算相同的哈希，将不安装包。|  
-  
+
+
+| 特性 | 描述 |
+|---------------| - |
+| `Name` | 必须的。 包文件的名称。 这是名称的`Command`元素将引用此项定义的包将安装在其下的条件。 此值还用作的键`Strings`表以检索这样的工具的本地化的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将用于描述包。 |
+| `HomeSite` | 可选。 在远程服务器上，如果不包括与安装程序的包的位置。 |
+| `CopyOnBuild` | 可选。 指定引导程序在生成时是否应将复制到磁盘上的包文件。 默认值为 true。 |
+| `PublicKey` | 加密的包的证书签名者的公钥。 如果使用`HomeSite`使用; 否则为可选。 |
+| `Hash` | 可选。 包文件的 SHA1 哈希。 这用于在安装时验证文件的完整性。 如果无法从包文件计算相同的哈希，将不安装包。 |
+
 ## <a name="example"></a>示例  
  下面的代码示例定义为包[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可再发行组件包和依赖项，如 Windows 安装程序。  
-  
+
 ```xml  
 <PackageFiles>  
     <PackageFile Name="instmsia.exe" HomeSite="InstMsiAExe" PublicKey="3082010A0282010100AA99BD39A81827F42B3D0B4C3F7C772EA7CBB5D18C0DC23A74D793B5E0A04B3F595ECE454F9A7929F149CC1A47EE55C2083E1220F855F2EE5FD3E0CA96BC30DEFE58C82732D08554E8F09110BBF32BBE19E5039B0B861DF3B0398CB8FD0B1D3C7326AC572BCA29A215908215E277A34052038B9DC270BA1FE934F6F335924E5583F8DA30B620DE5706B55A4206DE59CBF2DFA6BD154771192523D2CB6F9B1979DF6A5BF176057929FCC356CA8F440885558ACBC80F464B55CB8C96774A87E8A94106C7FF0DE968576372C36957B443CF323A30DC1BE9D543262A79FE95DB226724C92FD034E3E6FB514986B83CD0255FD6EC9E036187A96840C7F8E203E6CF050203010001"/>  
@@ -74,7 +75,7 @@ ms.locfileid: "39078138"
     <PackageFile Name="dotnetchk.exe"/>  
 </PackageFiles>  
 ```  
-  
+
 ## <a name="see-also"></a>请参阅  
  [\<产品 > 元素](../deployment/product-element-bootstrapper.md)   
  [\<包 > 元素](../deployment/package-element-bootstrapper.md)   

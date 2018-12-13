@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d4cbff52a5b5b5ef5fc46ef0b2f93926f097485
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5d04668ef21ea469e1dbb42cea6c8a8b5b7f18f5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550879"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858395"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410：应对 COM 注册方法进行匹配
 
@@ -39,7 +39,7 @@ ms.locfileid: "45550879"
  某个类型声明与标记的方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>属性，但不声明具有标记的方法<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>属性，反之亦然。
 
 ## <a name="rule-description"></a>规则说明
- 若要创建的组件对象模型 (COM) 客户端的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]类型，该类型必须首先注册。 如果可用，使用标记的方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>在注册过程中运行用户指定的代码调用属性。 使用标记的相应方法<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>属性被称为在注销过程中要反转的注册方法的操作。
+ 对于要创建.NET Framework 类型的组件对象模型 (COM) 客户端，必须首先注册该类型。 如果可用，使用标记的方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>在注册过程中运行用户指定的代码调用属性。 使用标记的相应方法<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>属性被称为在注销过程中要反转的注册方法的操作。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请添加相应的注册或注销方法。

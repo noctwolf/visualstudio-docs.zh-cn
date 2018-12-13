@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df50443a4a86e1524f20fa61275364b7c6603fdf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6c2cedf1a07307b8494e6a6b810e9590f347c9f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176019"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847378"
 ---
 # <a name="debugger-user-interface-xslt"></a>调试程序用户界面 (XSLT)
 
@@ -41,7 +41,7 @@ ms.locfileid: "39176019"
  “局部变量”窗口还显示用于跟踪 XSLT 转换上下文的预定义上下文变量。 下表介绍 XSLT 调试程序所使用的预定义上下文变量。
 
 |名称|描述|
-|----------|-----------------|
+|-|-----------------|
 |`last()`|上下文大小。|
 |`position()`|上下文节点相对于上下文大小的位置（或索引号）。|
 |`self::node()`|上下文节点的值。|

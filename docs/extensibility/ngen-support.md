@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2919559a748769c3b30e09023ad4f10965d62ce6
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3b5f9c7b297d98836ca3e5c017d2a0d440a30470
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639485"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495474"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>VSIX v3 中的 Ngen 支持
 
@@ -26,7 +26,7 @@ ms.locfileid: "39639485"
 
 >本机映像生成器 (*Ngen.exe*) 是一种工具，可以提高托管应用程序的性能。 *Ngen.exe*创建本机映像，它是包含已编译的特定于处理器的机器码的文件并将它们安装到本地计算机上的本机映像缓存。 运行时可从缓存中使用本机映像，而不必使用实时 (JIT) 编译器编译原始程序集。
 >
->从[Ngen.exe （本机映像生成器）](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx)
+>从[Ngen.exe （本机映像生成器）](/dotnet/framework/tools/ngen-exe-native-image-generator)
 
 为了"ngen"程序集，VSIX 必须安装"每个实例每台计算机"。 可以通过签入"所有用户"复选框来启用此`extension.vsixmanifest`设计器：
 
@@ -41,7 +41,7 @@ ms.locfileid: "39639485"
 1. **Ngen** （布尔值）-如果为 true，在 Visual Studio 安装程序将"ngen"程序集。
 2. **Ngen 应用程序**（字符串）-Ngen 提供使用应用程序的机会*app.config*为了解析程序集依赖项的文件。 此值应设置为应用程序的*app.config*你想要使用 （相对于 Visual Studio 安装目录）。
 3. **Ngen 体系结构**(enum)-本机编译您的程序集的体系结构。 选项为：。 NotSpecified b。 X86 c。 X64 d。 全部
-4. **Ngen 优先级**（1 到 3 之间的整数）-Ngen 优先级别所述[Ngen.exe 优先级别](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3)。
+4. **Ngen 优先级**（1 到 3 之间的整数）-Ngen 优先级别所述[Ngen.exe 优先级别](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels)。
 
 下面我们来看**属性**中操作的窗口：
 

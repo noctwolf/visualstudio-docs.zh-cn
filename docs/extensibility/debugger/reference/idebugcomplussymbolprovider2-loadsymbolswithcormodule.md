@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule |Microsoft 文档
+title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1529f1645adcd1aaa18b5f17448068de3da6efe4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6bde1c3aa8ced1b82d20af6d9e777a030d201a01
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107356"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874600"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
-加载调试符号给定**ICorDebugModule**对象。  
+加载调试符号给定**icor 调试模块**对象。  
   
 ## <a name="syntax"></a>语法  
   
@@ -55,28 +55,28 @@ int LoadSymbolsWithCorModule(
  [in]应用程序域的标识符。  
   
  `guidModule`  
- [in]模块的唯一标识符。  
+ [in]该模块的唯一标识符。  
   
  `baseAddress`  
- [in]基本内存地址。  
+ [in]基本的内存地址。  
   
  `pUnkMetadataImport`  
  [in]包含调试符号元数据的对象。  
   
  `pUnkCorDebugModule`  
- [in]实现对象[ICorDebugModule 接口](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。  
+ [in]对象，它实现[ICorDebugModule 接口](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。  
   
  `bstrModuleName`  
  [in]模块的名称。  
   
  `bstrSymSearchPath`  
- [in]用于搜索符号文件的路径。  
+ [in]搜索符号文件的路径。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**公开的对象[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口。  
+ 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsWithCorModule(  
@@ -170,5 +170,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField::EnumFields |Microsoft 文档
+title: IDebugContainerField::EnumFields |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0af939253de7b592e7c0ec35be9ea2b9bbff2b0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49874de9166310fc4b9a887fd1fc6d6355682c7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106960"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942681"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
-创建的容器的字段的枚举数。  
+创建容器的字段的枚举器。  
   
 ## <a name="syntax"></a>语法  
   
@@ -49,27 +49,27 @@ int EnumFields(
   
 #### <a name="parameters"></a>参数  
  `dwKindFilter`  
- [in]组合[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)选择要枚举的字段的常量。 字段类型可以描述存储类型，例如类或基元，或特定的信息，如本地、 参数或"this"指针。  
+ [in]组合[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)选择要枚举的字段的常量。 字段类型可以描述存储类型，如类或基元，或特定的信息，如本地、 参数或"this"指针。  
   
  `dwModifiersFilter`  
- [in]组合[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)选择要枚举的字段的常量。 字段修饰符可以如公共或私有或存储信息，如虚拟、 静态的或最终的访问权限。  
+ [in]组合[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)选择要枚举的字段的常量。 字段修饰符可以是访问权限，如公共或私有或存储信息，如虚拟、 静态的或最后一个。  
   
  `pszNameFilter`  
- [in]要枚举的字段的名称。 如果要返回的所有字段，这可以是 null 值。  
+ [in]要枚举的字段的名称。 如果要返回所有字段，这可以是 null 值。  
   
  `nameMatch`  
- [in]取值范围为[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚举，用于控制是否搜索是否区分大小写。  
+ [in]中的值[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚举，用于控制是否搜索是否区分大小写。  
   
  `ppEnum`  
- [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)表示的字段的列表对象。 如果没有字段，则返回 null 值。  
+ [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，表示的字段的列表。 如果没有字段，则返回 null 值。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK 或 S_FALSE 如果没有字段。 否则，返回错误代码。  
+ 如果成功，返回 S_OK 或 S_FALSE 如果没有字段。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
  `dwKindFilter`， `dwModifiersFilter`，和`pszNameFilter`参数可以结合使用，例如，若要选择名为"MyMethod"的所有公共虚拟方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)   

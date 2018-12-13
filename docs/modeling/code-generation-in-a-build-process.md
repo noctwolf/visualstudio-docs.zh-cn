@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e42d37e6cb31917a7da8666a5bd0b4dd54f0a837
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: ef7c49c514c9104ee4659db983b04c27036df889
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409799"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281818"
 ---
 # <a name="code-generation-in-a-build-process"></a>生成过程中的代码生成
 
-[文本转换](../modeling/code-generation-and-t4-text-templates.md)可以作为的一部分调用[生成过程](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)的 Visual Studio 解决方案。 有一些专用于文本转换的生成任务。 T4 生成任务运行设计时文本模板，它们还编译运行时（已预处理的）文本模板。
+[文本转换](../modeling/code-generation-and-t4-text-templates.md)可以作为的一部分调用[生成过程](/azure/devops/pipelines/index)的 Visual Studio 解决方案。 有一些专用于文本转换的生成任务。 T4 生成任务运行设计时文本模板，它们还编译运行时（已预处理的）文本模板。
 
 根据你使用的引擎，生成任务可完成的操作之间是有一些差异的。 如果文本模板生成 Visual Studio 中的解决方案时，可以访问 Visual Studio API (EnvDTE) [hostspecific ="true"](../modeling/t4-template-directive.md)属性设置。 但在生成该解决方案从命令行时或启动通过 Visual Studio 的服务器内部版本时，就不一样。 在这些情况下，生成由 MSBuild 执行，并且使用不同的 T4 主机。
 
@@ -33,7 +33,7 @@ ms.locfileid: "39409799"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-如果[您的生成服务器](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9)运行在其未安装 Visual Studio，在计算机上的将以下文件复制到生成计算机，从开发计算机。 用最新的版本号替换 ' *'。
+如果[您的生成服务器](/azure/devops/pipelines/agents/agents)运行在其未安装 Visual Studio，在计算机上的将以下文件复制到生成计算机，从开发计算机。 用最新的版本号替换 ' *'。
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
@@ -136,7 +136,7 @@ ms.locfileid: "39409799"
 
 若要指定应覆盖只读文件，请插入此属性：
 
-`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`
+`<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>`
 
 除非自定义后续处理步骤，否则会在覆盖文件时，在错误列表中记录相应的警告。
 
@@ -236,7 +236,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 The project folder is: <#= ProjectFolder #>
 ```
 
-在指令处理器，您可以调用[ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx):
+在指令处理器，您可以调用[ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\)):
 
 ```csharp
 string value = Host.ResolveParameterValue("-", "-", "parameterName");

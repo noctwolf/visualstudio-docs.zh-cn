@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e4cc8feb9a33c2995e592f8031beb2e03605891d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903629"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>字符集范围无效 (JavaScript)
 你试图使用无效的字符设置范围创建正则表达式。 字符集的范围必须在单个字符，例如 a 到 z 或 0-9;中的字符，不能包含字符类，如 \w。 范围内的第一个字符还必须在范围内的第二个字符之前。 例如：  

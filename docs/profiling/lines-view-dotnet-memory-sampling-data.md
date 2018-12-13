@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 518a05c72d25c5f1abc136e774d9867a9fc66c36
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 67148180fab5c712ee15551cf60a8874f427dc0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845634"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854840"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>“行”视图 - .NET 内存采样数据
 使用采样方法的 .NET 内存分配分析数据的“行”视图列出分析运行期间分配内存的语句。 这些列还包括分配的大小和数量。  
@@ -26,21 +26,21 @@ ms.locfileid: "34845634"
   
  语句由以下数据标识：  
   
--   包含函数语句的源文件。  
+- 包含函数语句的源文件。  
   
--   包含该语句的函数。  
+- 包含该语句的函数。  
   
--   该语句的起始源代码行。  
+- 该语句的起始源代码行。  
   
--   该语句的起始源代码行中的字符。  
+- 该语句的起始源代码行中的字符。  
   
--   该语句的结束源代码行。  
+- 该语句的结束源代码行。  
   
--   该语句的结束源代码行中的字符。  
+- 该语句的结束源代码行中的字符。  
   
- “行名”列提供一串可排序的标识符数据。  
+  “行名”列提供一串可排序的标识符数据。  
   
- 根据定义，语句不调用其他函数。 因此，仅列出独占值。  
+  根据定义，语句不调用其他函数。 因此，仅列出独占值。  
   
 |列|描述|  
 |------------|-----------------|  

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941214"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;元素 （ClickOnce 应用程序）
 描述应用程序要在客户端计算机上运行所需的最低安全权限。  
@@ -142,21 +142,21 @@ ms.locfileid: "39151048"
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  可选。 标识要执行应用程序请求的安全级别。 此元素没有子元素但具有以下属性。  
   
--   `Level`  
+- `Level`  
   
-     必须的。 标识应用程序正在请求的安全级别。 可能的值有：  
+   必须的。 标识应用程序正在请求的安全级别。 可能的值有：  
   
-     `asInvoker`，不请求其他权限。 此级别不需要其他信任提示。  
+   `asInvoker`，不请求其他权限。 此级别不需要其他信任提示。  
   
-     `highestAvailable`，请求可用于父进程的最高权限。  
+   `highestAvailable`，请求可用于父进程的最高权限。  
   
-     `requireAdministrator`，请求完全管理员权限。  
+   `requireAdministrator`，请求完全管理员权限。  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序只会以 `asInvoker`的值进行安装。 以任何其他值安装都将失败。  
+   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序只会以 `asInvoker`的值进行安装。 以任何其他值安装都将失败。  
   
--   `uiAccess`  
+- `uiAccess`  
   
-     可选。 指示应用程序是否需要访问受保护用户界面元素的权限。 值为 `true` 或 `false`，且默认值为 false。 只有已签名的应用程序才应具有为 true 的值。  
+   可选。 指示应用程序是否需要访问受保护用户界面元素的权限。 值为 `true` 或 `false`，且默认值为 false。 只有已签名的应用程序才应具有为 true 的值。  
   
 ## <a name="remarks"></a>备注  
  如果 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序要求多于客户端计算机将默认授予的权限，则公共语言运行时的信任关系管理器将询问用户是否想要授予该应用程序这一提升的信任级别。 如果她说否，则不会运行该应用程序；否则，将使用请求的权限运行它。  

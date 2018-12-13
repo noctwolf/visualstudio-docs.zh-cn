@@ -1,5 +1,5 @@
 ---
-title: 本机运行时检查自定义 |Microsoft 文档
+title: 本机运行时检查自定义 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,29 +24,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f07e2e2258190196ee001a19d79989ee58239ff
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b6df61b1e0fde088fca87fa7a99f5590768889b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480897"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853919"
 ---
 # <a name="native-run-time-checks-customization"></a>本机运行时检查自定义
-使用编译 **/RTC** （运行时检查） 或使用`runtime_checks`杂注，C 运行库提供了本机运行时检查。 某些情况下，可能需要自定义运行时检查：  
+使用编译 **/RTC** （运行时检查），或使用`runtime_checks`杂注，C 运行时库提供了本机运行时检查。 某些情况下，可能需要自定义运行时检查：  
   
--   将运行时检查信息传送到默认以外的文件或目标。  
+- 将运行时检查信息传送到默认以外的文件或目标。  
   
--   为第三方调试器的运行时检查信息指定输出目标。  
+- 为第三方调试器的运行时检查信息指定输出目标。  
   
--   报告用 C 运行库发布版本编译的程序中的运行时检查信息。 该库的发布版本不使用 `_CrtDbgReportW` 报告运行时错误。 相反，它们显示**断言**对话框中，为每个运行时错误。  
+- 报告用 C 运行库发布版本编译的程序中的运行时检查信息。 该库的发布版本不使用 `_CrtDbgReportW` 报告运行时错误。 相反，它们显示**Assert**对话框中的为每个运行时错误。  
   
- 若要自定义运行时错误检查，可以：  
+  若要自定义运行时错误检查，可以：  
   
--   编写一个运行时错误报告函数。 有关详细信息，请参阅[如何： 编写的运行时错误报告函数](../debugger/how-to-write-a-run-time-error-reporting-function.md)。  
+- 编写一个运行时错误报告函数。 有关详细信息，请参阅[如何： 编写运行时错误报告函数](../debugger/how-to-write-a-run-time-error-reporting-function.md)。  
   
--   自定义错误消息目标。  
+- 自定义错误消息目标。  
   
--   查询有关运行时检查错误的信息。  
+- 查询有关运行时检查错误的信息。  
   
 ## <a name="customize-the-error-message-destination"></a>自定义错误消息目标  
  如果使用 `_CrtDbgReportW` 报告错误，可以使用 `_CrtSetReportMode` 指定错误消息的目标。  
@@ -54,7 +54,7 @@ ms.locfileid: "31480897"
  如果使用自定义报告函数，则使用 `_RTC_SetErrorType` 将错误与报告类型关联。  
   
 ## <a name="query-for-information-about-run-time-checks"></a>查询有关运行时检查的信息  
- `_RTC_NumErrors` 返回运行时错误检查所检测到的错误类型的数量。 要得到每个错误的简短说明，可以从 0 循环到 `_RTC_NumErrors` 的返回值，并在每次循环中将迭代值传递给 `_RTC_GetErrDesc`。 有关详细信息，请参阅[_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors)和[_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc)。  
+ `_RTC_NumErrors` 返回运行时错误检查所检测到的错误类型的数量。 要得到每个错误的简短说明，可以从 0 循环到 `_RTC_NumErrors` 的返回值，并在每次循环中将迭代值传递给 `_RTC_GetErrDesc`。 有关详细信息，请参阅[_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors)并[_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc)。  
   
 ## <a name="see-also"></a>请参阅  
  [如何： 使用本机运行时检查](../debugger/how-to-use-native-run-time-checks.md)   

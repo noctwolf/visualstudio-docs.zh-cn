@@ -9,16 +9,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1f12363af0d0b26aa72c5478df5da82c6d4fd02a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2db812268b991d6160e515da5a3922ef47bb7a13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886514"
 ---
 # <a name="t4-parameter-directive"></a>T4 参数指令
 
-在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]文本模板`parameter`指令声明从外部的上下文中传递的值初始化的模板代码中的属性。 如果你编写代码时，将调用文本转换，可以设置这些值。
+在 Visual Studio 文本模板中，`parameter`指令声明在模板代码中从外部上下文从传入的值初始化的属性。 如果您编写代码来调用文本转换，可以设置这些值。
 
 ## <a name="using-the-parameter-directive"></a>使用参数指令
 
@@ -26,11 +26,11 @@ ms.locfileid: "31950343"
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- `parameter`指令声明从外部的上下文中传递的值初始化的模板代码中的属性。 如果你编写代码时，将调用文本转换，可以设置这些值。 值可以传递在`Session`字典，或在<xref:System.Runtime.Remoting.Messaging.CallContext>。
+ `parameter`指令声明在模板代码中从外部上下文从传入的值初始化的属性。 如果您编写代码来调用文本转换，可以设置这些值。 传递的值可以是在`Session`字典中，或在<xref:System.Runtime.Remoting.Messaging.CallContext>。
 
- 你可以声明的任何可远程处理类型的参数。 也就是说，必须使用声明类型<xref:System.SerializableAttribute>，或它必须派生自<xref:System.MarshalByRefObject>。 这允许参数值传递到在其中处理模板的 AppDomain。
+ 您可以声明任何可远程处理类型的参数。 也就是说，必须使用声明类型<xref:System.SerializableAttribute>，或它必须派生自<xref:System.MarshalByRefObject>。 这允许参数值传递到在其中处理模板的 AppDomain。
 
- 例如，你可以编写文本模板包含以下内容：
+ 例如，可以编写文本模板包含以下内容：
 
 ```
 <#@ template language="C#" #>
@@ -40,11 +40,10 @@ ms.locfileid: "31950343"
 <# for (int i = 0; i < TimesToRepeat; i++) { #>
 Line <#= i #>
 <# } #>
-
 ```
 
 ## <a name="passing-parameter-values-to-a-template"></a>将参数值传递给模板
- 如果你正在编写[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]如菜单命令或事件处理程序的扩展，你可以通过使用文本模板化服务处理模板：
+ 如果你正在编写 Visual Studio 扩展如菜单命令或事件处理程序，您可以使用文本模板化服务处理模板：
 
 ```csharp
 // Get a service provider - how you do this depends on the context:
@@ -59,13 +58,12 @@ session["TimesToRepeat"] = 5;
 // Process a text template:
 string result = t4.ProcessTemplate("MyTemplateFile.t4",
   System.IO.File.ReadAllText("MyTemplateFile.t4"));
-
 ```
 
-## <a name="passing-values-in-the-call-context"></a>将值传递调用上下文中加载
+## <a name="passing-values-in-the-call-context"></a>在调用上下文中将值传递
  您可以或者将值传递中的为逻辑数据<xref:System.Runtime.Remoting.Messaging.CallContext>。
 
- 下面的示例使用这两种方法，将传递值：
+ 下面的示例通过使用这两种方法将传递值：
 
 ```csharp
 ITextTemplating t4 = this.Store.GetService(typeof(STextTemplating)) as ITextTemplating;
@@ -84,13 +82,12 @@ string result = t4.ProcessTemplate("",
 
 // Result value is:
 //     Test 32 test
-
 ```
 
 ## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>将值传递到运行时 （预处理过的） 文本模板
- 它通常没有必要使用`<#@parameter#>`与运行时 （预处理） 文本模板指令。 相反，你可以定义其他构造函数或为生成的代码，通过它可以传递参数值的可设置属性。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ 它不是通常都需要使用`<#@parameter#>`使用运行时 （预处理） 文本模板指令。 相反，你可以定义另一个构造函数或生成的代码，传递参数值可设置属性。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
- 但是，如果你想要使用`<#@parameter>`在运行时模板中，您可以将值传递给它通过使用会话字典。 例如，假设你已经创建了文件预处理过的模板中，名为`PreTextTemplate1`。 通过使用下面的代码，可以在程序中调用该模板。
+ 但是，如果你想要使用`<#@parameter>`在运行时模板中，您可以将值传递给它通过使用会话字典。 例如，假设您已经创建了文件作为名为预处理过的模板`PreTextTemplate1`。 通过使用下面的代码，可以在程序中调用该模板。
 
 ```csharp
 PreTextTemplate1 t = new PreTextTemplate1();
@@ -99,10 +96,9 @@ t.Session["TimesToRepeat"] = 5;
 // Add other parameter values to t.Session here.
 t.Initialize(); // Must call this to transfer values.
 string resultText = t.TransformText();
-
 ```
 
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>从 TextTemplate.exe 获取自变量
 
 > [!IMPORTANT]
->  `parameter`指令并不检索中设置值`-a`参数`TextTransform.exe`实用程序。 若要获取这些值，设置`hostSpecific="true"`中`template`指令，并使用`this.Host.ResolveParameterValue("","","argName")`。
+>  `parameter`指令不会检索中设置的值`-a`参数的`TextTransform.exe`实用程序。 若要获取这些值，请设置`hostSpecific="true"`中`template`指令，并使用`this.Host.ResolveParameterValue("","","argName")`。

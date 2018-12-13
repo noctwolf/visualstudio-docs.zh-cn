@@ -1,5 +1,5 @@
 ---
-title: NameSearchOptions |Microsoft 文档
+title: NameSearchOptions |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95d5ed2e91b847b99d063b6fcba485fb96c3290
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c4b8771ad1bf2ee97ec1f22636a4684bc9aa7ee8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469732"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950337"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 指定符号和文件名称的搜索选项。  
@@ -49,22 +49,22 @@ enum NameSearchOptions {
  未指定任何选项。  
   
  `nsfCaseSensitive`  
- 将应用区分大小写的名称相匹配。  
+ 将应用与匹配的区分大小写的名称。  
   
  `nsfCaseInsensitive`  
- 将应用不区分大小写的名称相匹配。  
+ 将应用与匹配的不区分大小写的名称。  
   
  `nsfFNameExt`  
- 将路径视为的名称，并将应用文件名.ext 名称相匹配。  
+ 将视为路径的名称，并将应用与匹配的文件名.ext 名称。  
   
  `nsfRegularExpression`  
- 将应用作为通配符使用星号 （*） 和问号 （？） 的区分大小写的名称匹配。  
+ 应用使用星号 （*） 和问号 （？） 作为通配符的区分大小写的名称匹配。  
   
  `nsfUndecoratedName`  
- 仅适用于具有同时未修饰和修饰名的符号。  
+ 仅适用于具有未修饰和修饰名的符号。  
   
 ## <a name="remarks"></a>备注  
- 此枚举的值将传递到以下的方法：  
+ 此枚举的值将传递到以下方法：  
   
 -   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   

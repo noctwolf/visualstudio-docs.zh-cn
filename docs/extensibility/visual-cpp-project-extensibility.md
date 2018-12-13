@@ -11,16 +11,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: acef2728a79b8706b0af3dad4e272ed34b222a42
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552486"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349671"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 项目系统可扩展性和工具集集成
 
-*Visual c + + 项目系统*由.vcxproj 文件。 它基于[Visual Studio 公共项目系统 (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ，并提供附加的 c + + 特定扩展点的新工具集、 生成体系结构和目标平台轻松进行集成。 
+*Visual c + + 项目系统*用于.vcxproj 文件。 它基于[Visual Studio 公共项目系统 (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ，并提供附加的 c + + 特定扩展点的新工具集、 生成体系结构和目标平台轻松进行集成。 
 
 ## <a name="c-msbuild-targets-structure"></a>C + + 的 MSBuild 目标结构
 
@@ -227,13 +227,13 @@ C + + 生成具有三个主要步骤，由以下目标：
 </Target>
 ```
 
-`ClCompile` 和其他生成特定于工具的目标定义为 Microsoft.CppBuild.targets 中的空目标：
+`ClCompile` 和其他生成特定于工具的目标定义为中的空目标*Microsoft.CppBuild.targets*:
 
 ```xml
 <Target Name="ClCompile"/>
 ```
 
-因为`ClCompile`目标定义为中的空目标*Microsoft.CppBuild.targets*，除非它一个工具集被重写，不执行任何实际生成操作。 工具集目标可以重写`ClCompile`目标，也就是说，它们可以包含另一个`ClCompile`定义导入后的*Microsoft.CppBuild.targets*: 
+因为`ClCompile`目标为空，除非它一个工具集被重写，不执行任何实际生成操作。 工具集目标可以重写`ClCompile`目标，也就是说，它们可以包含另一个`ClCompile`定义导入后的*Microsoft.CppBuild.targets*: 
 
 ```xml
 <Target Name="ClCompile"
@@ -243,7 +243,7 @@ C + + 生成具有三个主要步骤，由以下目标：
 </Target>
 ```
 
-不管名称如何`ClCompile`，来创建 Visual Studio 实现跨平台支持之前,`ClCompile`目标不一定要调用 CL.exe。 它还可以通过使用相应的 MSBuild 任务调用 Clang、 gcc 高级版或其他编译器。
+尽管其名称如此，这创建的 Visual Studio 实现跨平台支持之前，`ClCompile`目标不一定要调用 CL.exe。 它还可以通过使用相应的 MSBuild 任务调用 Clang、 gcc 高级版或其他编译器。
 
 `ClCompile`目标不应具有任何依赖项除外`SelectClCompile`目标所需的单个文件编译命令，以便在 IDE 中。
 
@@ -289,7 +289,7 @@ Microsoft.Cpp.Common.Tasks.dll 实现这些任务：
 
 1. 如果希望更好的任务性能或只是需要更复杂的功能，使用正则 MSBuild[任务写入](../msbuild/task-writing.md)过程。
 
-   如果不是所有输入和输出的工具，工具命令行都列出作为 in `CL`， `MIDL`，并`RC`情况下，并且如果你希望自动输入和输出文件跟踪和.tlog 文件创建，派生从任务`TrackedVCToolTask`。
+   如果不是所有输入和输出的工具，工具命令行都列出作为 in `CL`， `MIDL`，和`RC`情况下，并且如果你希望自动输入和输出文件跟踪和.tlog 文件创建，则会将您的任务派生`Microsoft.Build.CPPTasks.TrackedVCToolTask`类。 目前，基的文档时[ToolTask](/dotnet/api/microsoft.build.utilities.tooltask)类中，没有任何示例或文档有关的详细信息`TrackedVCToolTask`类。 如果这会特别感兴趣，您的声音的请求上添加[developercommunity.visualstudio.com](https://developercommunity.visualstudio.com/spaces/62/index.html)。
 
 ## <a name="incremental-builds-and-up-to-date-checks"></a>增量生成和最新检查
 
@@ -428,13 +428,13 @@ F:\TEST\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.PDB
 @="{83046B3F-8984-444B-A5D2-8029DEE2DB70}"
 ```
 
-## <a name="project-extensibility-in-the-visual-studio-ide"></a>Visual Studio IDE 中的项目扩展性
+## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Visual Studio IDE 中的 visual c + + 项目扩展性
 
 Visual c + + 项目系统基于[VS 项目系统](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)，并使用其可扩展性点。 但是，项目层次结构实现是特定于 Visual c + + 并不基于 CPS，因此层次结构可扩展性是限制为项目项。
 
 ### <a name="project-property-pages"></a>项目属性页
 
-常规设计信息，请参阅[平台扩展性 – 第 1 部分](http://blogs.msdn.com/b/vsproject/archive/2009/06/10/platform-extensibility-part-1.aspx)并[平台扩展性 – 第 2 部分](http://blogs.msdn.com/b/vsproject/archive/2009/06/18/platform-extensibility-part-2.aspx)。
+常规设计信息，请参阅[平台扩展性 – 第 1 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/)并[平台扩展性 – 第 2 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/)。
 
 简单来说，属性页中看到**项目属性**由定义 c + + 项目对话框*规则*文件。 规则文件指定要显示在属性页上，以及如何在项目中保存的位置和文件属性的集。 规则文件是使用 Xaml 格式的.xml 文件。 使用其进行序列化的类型所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 有关使用项目中的规则文件的详细信息，请参阅[属性页 XML 规则文件](/cpp/ide/property-page-xml-files)。
 
@@ -478,12 +478,13 @@ CPS 支持其他值的上下文类型，但它们不在 Visual c + + 项目中�
 
 `PageTemplate`属性定义了该规则中的显示方式**属性页**对话框。 该属性可以具有下列值之一：
 
-|特性|描述|
-|-|-|
-`generic`|在类别标题下一页上将显示所有属性<br/>规则可以对可见`Project`并`PropertySheet`上下文中，但不是`File`。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033年*\\*general.xml*
-`tool`|作为子页显示类别。<br/>规则可以在所有上下文中可见： `Project`，`PropertySheet`和`File`。<br/>仅当项目具有与项目的规则是在项目属性中可见`ItemType`中定义`Rule.DataSource`，除非中包含的规则名`ProjectTools`项组。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033年*\\*clang.xml*
-`debugger`|页面会显示为调试页的一部分。<br/>当前忽略类别。<br/>规则名称应匹配的调试启动程序 MEF 对象`ExportDebugger`属性。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033年*\\*调试器\_本地\_windows.xml*
-*custom*| 自定义模板。 模板的名称应与匹配`ExportPropertyPageUIFactoryProvider`属性的`PropertyPageUIFactoryProvider`MEF 对象。 请参阅**Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033年*\\*userMacros.xml*
+
+| 特性 | 描述 |
+|------------| - |
+| `generic` | 在类别标题下一页上将显示所有属性<br/>规则可以对可见`Project`并`PropertySheet`上下文中，但不是`File`。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033年*\\*general.xml* |
+| `tool` | 作为子页显示类别。<br/>规则可以在所有上下文中可见： `Project`，`PropertySheet`和`File`。<br/>仅当项目具有与项目的规则是在项目属性中可见`ItemType`中定义`Rule.DataSource`，除非中包含的规则名`ProjectTools`项组。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033年*\\*clang.xml* |
+| `debugger` | 页面会显示为调试页的一部分。<br/>当前忽略类别。<br/>规则名称应匹配的调试启动程序 MEF 对象`ExportDebugger`属性。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033年*\\*调试器\_本地\_windows.xml* |
+| *custom* | 自定义模板。 模板的名称应与匹配`ExportPropertyPageUIFactoryProvider`属性的`PropertyPageUIFactoryProvider`MEF 对象。 请参阅**Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033年*\\*userMacros.xml* |
 
 如果该规则使用基于属性网格的模板之一，它可以为其属性来使用这些扩展点：
 
@@ -656,6 +657,6 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 Microsoft 生成系统 ([MSBuild](../msbuild/msbuild.md)) 为项目文件中提供的生成引擎和可扩展的基于 XML 的格式。 您应了解使用 basic [MSBuild 概念](../msbuild/msbuild-concepts.md)和如何[Visual c + + 的 MSBuild](/cpp/build/msbuild-visual-cpp-overview)工作原理，若要将 Visual c + + 扩展项目系统。
 
-Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供了扩展 CPS 和 Visual c + + 项目系统使用的 Api。 CPS 如何使用 MEF 的概述，请参阅[MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)。
+Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供了扩展 CPS 和 Visual c + + 项目系统使用的 Api。 CPS 如何使用 MEF 的概述，请参阅[CPS，MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)中[VSProjectSystem 概述 MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)。
 
 您可以自定义现有的生成系统，以添加生成步骤或新的文件类型。 有关详细信息，请参阅[MSBuild （Visual c + +） 概述](/cpp/build/msbuild-visual-cpp-overview)并[使用项目属性](/cpp/ide/working-with-project-properties)。

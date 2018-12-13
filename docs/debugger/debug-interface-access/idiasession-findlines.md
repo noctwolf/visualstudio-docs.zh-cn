@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findlines |Microsoft 文档'
+title: 'Idiasession:: Findlines |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb256778f2bf92827ff98c5cafbb77bfdcba6c12
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2dc5e2509e3edda0c9cd89b84a3e109e0ac2d0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461644"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828350"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
-检索在指定的编译单位和源文件标识符中的行号。  
+检索指定的编译单位和源文件标识符中的行号。  
   
 ## <a name="syntax"></a>语法  
   
@@ -36,13 +36,13 @@ HRESULT findLines (
   
 #### <a name="parameters"></a>参数  
  `compiland`  
- [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示编译单位对象。 为在其中搜索的行号的上下文中使用此接口。  
+ [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，表示将编译单位。 使用此接口作为要在其中搜索的行号的上下文。  
   
  `file`  
- [in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)对象表示要在其中搜索的行号的源文件。  
+ [in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)对象，表示要在其中搜索的行号的源文件。  
   
  `ppResult`  
- [out]返回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)检索包含行号的列表的对象。  
+ [out]返回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)检索包含的行号列表的对象。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

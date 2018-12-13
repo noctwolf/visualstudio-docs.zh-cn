@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 191d180a68edd439c729fa963b607c992ff3c00e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890560"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816767"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>在 XAML 设计器中调试或禁用项目代码
 
@@ -86,6 +86,19 @@ ms.locfileid: "37890560"
 
     > [!NOTE]
     > 禁用项目代码可能导致设计时数据丢失。 或者调试在设计器中运行的代码。
+
+## <a name="control-display-options"></a>控件显示选项
+
+> [!NOTE]
+> “控件显示选项”仅适用于定目标到 Windows 10 Fall Creators Update（生成号 16299）或更高版本的通用 Windows 平台应用程序。 Visual Studio 2017 版本 15.9 或更高版本提供“控件显示选项”功能。 
+
+在 XAML 设计器中，可以将“控件显示选项”更改为，仅显示 Windows SDK 中的平台控件。 这可能会提升 XAML 设计器的可靠性。
+
+若要更改“控件显示选项”，请单击设计器窗口左下角的图标，再选择“控件显示选项”下的选项：
+
+![控件显示选项](../designers/media/control_display_options.png)
+
+当你选中“仅显示平台控件”后，SDK 中的所有自定义控件、客户用户控件等都不会完整呈现。 相反，它们会被替换为回退控件，以展示控件的大小和位置。
 
 ## <a name="see-also"></a>请参阅
 

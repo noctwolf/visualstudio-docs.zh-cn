@@ -13,23 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9c7e85dcbd62c5f068ce3286145fec2ddddc7947
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379255"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895686"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>如何：为测试控制器和测试代理指定超时周期
 
 测试控制器和测试代理都有多个超时设置，可以指定失败并显示错误之前等待彼此或数据源响应的时间。 在某些情况下，可能需要编辑超时值以满足拓扑需要或其他环境问题的需要。 若要编辑超时值，请按照下面过程中的说明来编辑与测试控制器或测试代理关联的 XML 配置文件。
 
- 若要编辑测试控制器或测试代理的各种超时设置，请使用表中的键名和值来修改以下配置文件：
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+若要编辑测试控制器或测试代理的各种超时设置，请使用表中的键名和值来修改以下配置文件：
 
 -   测试控制器：QTController.exe.config
 
     |项名称|描述|“值”|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|认为连接丢失前等待代理 ping 请求的秒数。|“n”秒。|
     |AgentSyncTimeoutInSeconds|开始同步测试运行时，中止运行前等待所有代理同步的秒数。|“n”秒。|
     |AgentInitializeTimeout|中止测试运行前，在测试运行开始时等待所有代理及其数据收集器进行初始化的秒数。 如果使用数据收集器，则此值应相当大。|“n”秒。 默认值：“120”（两分钟）。|
@@ -38,7 +40,7 @@ ms.locfileid: "39379255"
 -   测试代理：QTAgentService.exe.config
 
     |项名称|描述|“值”|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|连接控制器尝试之间的秒数。|“n”秒。 默认值：“30”（三十秒）。|
     |RemotingTimeoutSeconds|远程处理调用可以持续的最长时间（以秒为单位）。|“n”秒。 默认值：“600”（十分钟）。|
     |StopTestRunCallTimeoutInSeconds|等待用于停止测试运行的调用的秒数。|“n”秒。 默认值：“120”（两分钟）。|

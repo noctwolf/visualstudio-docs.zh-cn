@@ -1,7 +1,7 @@
 ---
 title: Python 的选项和设置
 description: Visual Studio 中与 Python 代码和项目相关的各种设置的引用。
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1de4f6a71394c38ef72224cfeacd23663b0bac7b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: f5b8c6b3860641dafccac28b24a4be141d90eae5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468652"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220051"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中的 Python 选项
 
@@ -46,7 +46,7 @@ ms.locfileid: "39468652"
 | **在创建虚拟环境时显示输出窗口**| On | 清除该选项可避免显示输出窗口。 |
 | **在安装或删除包时显示输出窗口** | On | 清除该选项可避免显示输出窗口。 |
 | **始终以管理员身份运行 pip** | Off | 始终为所有环境提升 `pip install` 操作。 安装包时，如果环境位于文件系统（如 c:\Program Files）的保护区域内，Visual Studio 将提示需要管理员权限。 出现该提示时，可选择始终仅为此环境提升 `pip install`。 请参阅[“包”选项卡](python-environments-window-tab-reference.md#packages-tab)。 |
-| **初次使用时自动生成完成 DB** | On | *应用 Visual Studio 2017 版本 15.5 和早期版本，并在使用 IntelliSense 数据库时应用更高版本。* 在编写使用某个库的代码时，优先完成此库的数据库。 有关详细信息，请参阅[环境窗口引用 - Intellisense 选项卡](python-environments-window-tab-reference.md)。 |
+| **初次使用时自动生成完成 DB** | On | *应用 Visual Studio 2017 版本 15.5 和早期版本，并在使用 IntelliSense 数据库时应用更高版本。* 在编写使用某个库的代码时，优先完成此库的数据库。 有关详细信息，请参阅 [IntelliSense 选项卡](python-environments-window-tab-reference.md#intellisense-tab)。 |
 | **忽略系统级 PYTHONPATH 变量** | On | 默认情况下会忽略 PYTHONPATH，因为 Visual Studio 提供了一种更直接的方式来指定环境和项目中的搜索路径。 请参阅[搜索路径](search-paths.md)了解详细信息。 |
 | **添加链接文件时更新搜索路径** | On | 如果已设置此选项，将一个[链接文件](managing-python-projects-in-visual-studio.md#linked-files)添加到项目会更新[搜索路径](search-paths.md)，以便 IntelliSense 能在其完成数据库中包含链接文件的文件夹的内容。 清除此选项将从完成数据库中排除此类内容。 |
 | **在找不到导入模块时发出警告** | On | 当知道导入模块当前不可用但不会影响代码操作时，清除此选项可禁止发出警告。 |
@@ -111,7 +111,7 @@ ms.locfileid: "39468652"
 
 | 选项 | 默认 | 描述 |
 | --- | --- | --- |
-| **通过键入以下字符提交** | {}[]().,:;+-*/%&&#124;^~=<>#@\\ | 这些字符通常位于可能是从完成列表中选取的标识符后面，因此只需键入字符即可轻松提交完成。 可根据需要在列表中删除或添加特定字符。  |
+| **通过键入以下字符提交** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | 这些字符通常位于可能是从完成列表中选取的标识符后面，因此只需键入字符即可轻松提交完成。 可根据需要在列表中删除或添加特定字符。  |
 | **按 Enter 提交当前完成** | On | 如果设置此选项，按 Enter 键将选择并应用当前选择的完成（和上面的字符一样）（但由于没有针对 Enter 的字符，因此它无法直接进入该列表！）。 |
 | **在完整键入的字末尾按 Enter 添加新行** | Off | 默认情况下，如果键入完成弹出窗口中显示的完整字词，然后按 Enter，则会提交该完成。 通过设置此选项，可在键入完标识符后有效提交完成，然后按 Enter 键即可插入新行。 |
 

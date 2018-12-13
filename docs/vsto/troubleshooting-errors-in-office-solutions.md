@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b1a7a90df2baef48483647c692c8b986c59f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670340"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672946"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>对 Office 解决方案中的错误进行故障排除
   在 Visual Studio 中开发 Office 解决方案时，如果执行下面的任务，可能会遇到问题：  
@@ -124,7 +124,7 @@ ms.locfileid: "35670340"
   
  [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]  
   
- 有关 Office Pia 中的事件接口的详细信息，请参阅[概述中 Office 主互操作程序集类和接口](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5)。  
+ 有关 Office Pia 中的事件接口的详细信息，请参阅[概述中 Office 主互操作程序集类和接口](/previous-versions/office/office-12//ms247299(v=office.12))。  
   
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>不能引用 Office PIA 中的类的项目面向[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的项目中，默认情况下 Office PIA 中定义的类的代码不进行编译。 Pia 中的类使用命名约定*objectname*类，如<xref:Microsoft.Office.Interop.Word.DocumentClass>和<xref:Microsoft.Office.Interop.Excel.WorkbookClass>。 例如，Word VSTO 外接程序项目中的以下代码将不进行编译。  
@@ -139,11 +139,11 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  此代码将导致以下编译错误：  
   
--   Visual Basic:"对类 'DocumentClass' 的引用不是允许使用 NO-PIA 模式链接其程序集时。"  
+- Visual Basic:"对类 'DocumentClass' 的引用不是允许使用 NO-PIA 模式链接其程序集时。"  
   
--   Visual C#:"互操作类型不能嵌入 'Microsoft.Office.Interop.Word.DocumentClass'。 请改用适用的接口。”  
+- Visual C#:"互操作类型不能嵌入 'Microsoft.Office.Interop.Word.DocumentClass'。 请改用适用的接口。”  
   
- 若要解决此错误，请修改代码以改为引用相应的接口。 例如，应引用 <xref:Microsoft.Office.Interop.Word.Document> 接口的实例，而不是引用 <xref:Microsoft.Office.Interop.Word.DocumentClass> 对象。  
+  若要解决此错误，请修改代码以改为引用相应的接口。 例如，应引用 <xref:Microsoft.Office.Interop.Word.Document> 接口的实例，而不是引用 <xref:Microsoft.Office.Interop.Word.DocumentClass> 对象。  
   
 ```vb  
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  

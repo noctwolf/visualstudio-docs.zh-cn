@@ -11,26 +11,28 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9539e8dec80afd1f334ca89e84a5130d8d47877e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283284"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896102"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>将数据源添加到 Web 性能测试
 
 绑定数据以便为相同的测试提供不同的值，例如，为窗体 POST 参数提供不同的值。
 
- ![将数据绑定到 Web 性能测试](../test/media/web_test_databinding_conceptual.png)
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- 我们将使用一个示例 ASP.NET 应用程序。 它有三个 .aspx 页：默认页、红色页和蓝色页。 默认页具有一个用于选择红色或蓝色的单选控件和一个提交按钮。 其他两个 .aspx 页非常简单。 一个具有名为“红色”的标签，另一个具有名为“蓝色”的标签。 当您选择在默认页上进行提交时，将显示其他两个页面之一。 可以下载 [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 示例，或者直接使用自己的 Web 应用来跟随我们操作。
+![将数据绑定到 Web 性能测试](../test/media/web_test_databinding_conceptual.png)
 
- ![运行要测试的 Web 应用程序](../test/media/web_test_databinding_runwebapp.png)
+我们将使用一个示例 ASP.NET 应用程序。 它有三个 .aspx 页：默认页、红色页和蓝色页。 默认页具有一个用于选择红色或蓝色的单选控件和一个提交按钮。 其他两个 .aspx 页非常简单。 一个具有名为“红色”的标签，另一个具有名为“蓝色”的标签。 当您选择在默认页上进行提交时，将显示其他两个页面之一。 可以下载 [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 示例，或者直接使用自己的 Web 应用来跟随我们操作。
 
- 你的解决方案也应包含浏览 Web 应用程序的页面的 Web 性能测试。
+![运行要测试的 Web 应用程序](../test/media/web_test_databinding_runwebapp.png)
 
- ![带 Web 性能测试的解决方案](../test/media/web_test_databinding_solution.png)
+你的解决方案也应包含浏览 Web 应用程序的页面的 Web 性能测试。
+
+![带 Web 性能测试的解决方案](../test/media/web_test_databinding_solution.png)
 
 ## <a name="create-a-sql-database"></a>创建一个 SQL 数据库
 

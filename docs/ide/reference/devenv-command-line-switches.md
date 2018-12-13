@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6cf3bf422c861d5a649e5cfa71cf2b4a4b5fea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 818bbb38fab706dde2f4d36d5a534e0a351a6450
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951110"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948889"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令行开关
 
@@ -31,9 +31,9 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
 
 ## <a name="devenv-switch-syntax"></a>Devenv 开关语法
 
-默认情况下，devenv 命令将开关传递给 devenv.com 实用工具。 Devenv.com 实用工具通过标准系统流提供输出，如 `stdout` 和 `stderr`。 该实用工具在捕获输出时（例如输出到 .txt 文件）确定相应的 I/O 重定向。
+以 `devenv` 开头的命令由 `devenv.com` 实用程序处理，该实用程序通过标准系统流（例如 `stdout` 和 `stderr`）提供输出。 该实用工具在捕获输出时（例如输出到 .txt 文件）确定相应的 I/O 重定向。
 
-另一方面，以 `devenv.exe` 开头的命令可以使用相同的开关，但会绕过 devenv.com 实用工具。
+另一方面，以 `devenv.exe` 开头的命令可以使用相同的开关，但会绕过 `devenv.com` 实用工具。 直接使用 `devenv.exe` 可阻止输出出现在控制台上。
 
 `devenv` 开关的语法规则与其他 DOS 命令行实用工具类似。 下列语法规则适用于所有 `devenv` 开关及其参数：
 
@@ -45,7 +45,7 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
 
 - 如果第一个参数是一个非解决方案或项目的文件，在适当的编辑器中的 IDE 新实例中打开该文件。
 
-- 如果提供项目文件名而不是解决方案文件名，`devenv` 命令会在项目文件的父文件夹中搜索具有相同名称的解决方案文件。 例如，`devenv /build myproject1.vbproj` 命令在父文件夹中搜索命名为“myproject1.sln”的解决方案文件。
+- 如果提供项目文件名而不是解决方案文件名，`devenv` 命令会在项目文件的父文件夹中搜索具有相同名称的解决方案文件。 例如，`devenv myproject1.vbproj /build` 命令在父文件夹中搜索命名为“myproject1.sln”的解决方案文件。
 
     > [!NOTE]
     > 引用此项目的唯一一个解决方案文件应位于其父文件夹中。 如果父文件夹不包含引用此项目的解决方案文件，或父文件夹包含引用此项目的两个或更多解决方案文件，将创建一个临时解决方案文件。
@@ -61,7 +61,7 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
 下列命令行开关显示 IDE 并执行描述的任务。
 
 |命令行开关|描述|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|启动 IDE 并执行指定的命令。|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|在调试器的控制下加载 C++ 可执行文件。 此开关不可用于 Visual Basic 或 C# 可执行文件。 有关详细信息，请参阅[自动启动调试器中的进程](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。|
 |[/LCID 或 /l](../../ide/reference/lcid-devenv-exe.md)|为 IDE 设置默认语言。 如果 Visual Studio 的安装中不包括指定的语言，将忽略此设置。|
@@ -77,13 +77,13 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
 以下命令行开关不显示 IDE。
 
 |命令行开关|描述|
-|-------------------------|-----------------|
-|[/?](../../ide/reference/q-devenv-exe.md)|在“命令提示符”窗口中显示 devenv 开关的相关帮助信息。<br /><br /> **Devenv /?**|
-|[build](../../ide/reference/build-devenv-exe.md)|根据指定解决方案的配置，生成指定的解决方案或项目。<br /><br /> **Devenv myproj.csproj /build**|
-|[/Clean](../../ide/reference/clean-devenv-exe.md)|删除由生成命令创建的任何文件，而不影响源文件。<br /><br /> **Devenv myproj.csproj /clean**|
-|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|根据解决方案配置生成解决方案以及部署所需的文件。<br /><br /> **Devenv myproj.csproj /deploy**|
+| - |-----------------|
+|[/?](../../ide/reference/q-devenv-exe.md)|在“命令提示符”窗口中显示 devenv 开关的相关帮助信息。<br /><br /> `devenv /?`|
+|[build](../../ide/reference/build-devenv-exe.md)|根据指定解决方案的配置，生成指定的解决方案或项目。<br /><br /> `devenv myproj.csproj /build`|
+|[/Clean](../../ide/reference/clean-devenv-exe.md)|删除由生成命令创建的任何文件，而不影响源文件。<br /><br /> `devenv myproj.csproj /clean`|
+|[/Deploy](../../ide/reference/deploy-devenv-exe.md)|根据解决方案配置生成解决方案以及部署所需的文件。<br /><br /> `devenv myproj.csproj /deploy`|
 |[/Diff](../../ide/reference/diff.md)|比较两个文件。 采用四个参数：SourceFile、TargetFile、SourceDisplayName(optional)、TargetDisplayName(optional)。|
-|[/Out](../../ide/reference/out-devenv-exe.md)|用于在生成时指定一个文件来接收错误。<br /><br /> **Devenv myproj.csproj /build /out log.txt**|
+|[/Out](../../ide/reference/out-devenv-exe.md)|用于在生成时指定一个文件来接收错误。<br /><br /> `devenv myproj.csproj /build /out log.txt`|
 |[/Project](../../ide/reference/project-devenv-exe.md)|要生成、清理或部署的项目。 仅当已提供 /build、/rebuild、/clean 或 /deploy 开关之后，才可使用此开关。|
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|指定要生成或部署的项目配置。 仅当已提供 /project 开关之后，才可使用此开关。|
 |[/Rebuild](../../ide/reference/rebuild-devenv-exe.md)|根据指定解决方案的配置，清理并生成指定的解决方案或项目。|

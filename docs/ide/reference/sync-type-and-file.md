@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 58a4a1647912203fd1415176f4089904f8c70e0f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8407e89d9e28c501358877df9c244175ca8155c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947464"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942317"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>将类型同步到文件名或反向操作
 
@@ -39,30 +39,30 @@ ms.locfileid: "31947464"
 
    - C#：
 
-    ![突出显示的代码 - C#](media/synctype-highlight-cs.png)
+       ![突出显示的代码 - C#](media/synctype-highlight-cs.png)
 
    - Visual Basic：
 
-    ![突出显示的代码 - Visual Basic](media/synctype-highlight-vb.png)
+       ![突出显示的代码 - Visual Basic](media/synctype-highlight-vb.png)
 
-1. 接下来，执行以下操作之一：
+2. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名文件为 TypeName.cs”，其中“TypeName”是已选定的类型名称。
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名类型为 _Filename_”，其中“Filename”是当前文件名。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名文件为 TypeName.cs”，其中“TypeName”是已选定的类型名称。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名类型为 _Filename_”，其中“Filename”是当前文件名。
    - **鼠标**
-     - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名文件为 TypeName.cs”，其中“TypeName”是已选定的类型名称。
-     - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名类型为 _Filename_”，其中“Filename”是当前文件名。
+      - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名文件为 TypeName.cs”，其中“TypeName”是已选定的类型名称。
+      - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“重命名类型为 _Filename_”，其中“Filename”是当前文件名。
 
    随即重命名类型或文件。
 
    - C#:：在下例中，文件“MyClass.cs”重命名为“MyNewClass.cs”以匹配类型名称。
 
-      ![内联结果 C#](media/synctype-result-cs.png)
+       ![内联结果 C#](media/synctype-result-cs.png)
 
    - Visual Basic：在下例中，文件“Employee.vb”重命名为“Person.vb”以匹配类型名称。
 
-      ![内联结果 Visual Basic](media/synctype-result-vb.png)
+       ![内联结果 Visual Basic](media/synctype-result-vb.png)
 
 > ![注意] 此重构尚不可用于 .NET Standard 和 .NET Core 项目。
 

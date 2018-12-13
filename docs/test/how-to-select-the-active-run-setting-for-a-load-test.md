@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3bff9be24d5d1f615270bc80790a04e85e7cf25c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381906"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895322"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>如何：为负载测试选择活动运行设置
 
 在用“新建负载测试向导”创建负载测试之后，可以使用“负载测试编辑器”来更改方案属性以满足测试需求和目标。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 一个负载测试可以包含一个或多个运行设置，运行设置是会影响负载测试运行方式的一组属性。 在“属性”窗口中，运行设置按类别进行组织。 当负载测试运行时，它会使用当前设置为活动的运行设置。
 
@@ -31,8 +33,6 @@ ms.locfileid: "39381906"
 在负载测试编辑器中，以“[Active]”后缀来标识活动运行设置。
 
 ## <a name="select-the-active-run-setting"></a>选择活动运行设置
-
-### <a name="to-select-the-active-run-setting-in-a-load-test"></a>在负载测试中选择活动的运行设置
 
 1.  打开一个负载测试。
 

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01a85b214c44f3b48a91d82a5abd59bcf4c9ac5c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 23d0aa3b065a05b1c85b54e7889c4fe1bac4af7a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671504"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671516"
 ---
 # <a name="custom-document-properties-overview"></a>自定义文档属性概述
 
@@ -51,12 +51,12 @@ Visual Studio 生成的文档级项目时，将两个自定义属性添加到项
 
      ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
 
- *SolutionID*是一个 GUID，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]使用其标识解决方案。 *SolutionID*生成项目时自动生成。 **Vstolocal**词表明到[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，该程序集应加载从该文档所在的文件夹。
+  *SolutionID*是一个 GUID，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]使用其标识解决方案。 *SolutionID*生成项目时自动生成。 **Vstolocal**词表明到[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，该程序集应加载从该文档所在的文件夹。
 
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)
 - [在 Office 解决方案中的应用程序和部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [如何： 使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [如何： 使用 ClickOnce 发布 Office 解决方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
 - [如何： 创建和修改自定义文档属性](../vsto/how-to-create-and-modify-custom-document-properties.md)

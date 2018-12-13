@@ -2,7 +2,7 @@
 title: 创建 Node.js 和 React 应用
 description: 在本教程中，使用 Visual Studio 的 Node.js 工具创建应用
 ms.custom: mvc
-ms.date: 05/23/2018
+ms.date: 11/01/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 9203b07767d38443dbad8cc619a40971ca09f2c6
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567137"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750781"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 
@@ -32,11 +32,35 @@ ms.locfileid: "39567137"
 > * 转译 JSX
 > * 附加调试器
 
+## <a name="before-you-begin"></a>在开始之前
+
+下面是一个快速 FAQ，介绍一些关键概念。
+
+### <a name="what-is-nodejs"></a>什么是 Node.js？
+
+Node.js 是执行 JavaScript 服务器端的服务器端 JavaScript 运行时环境。
+
+### <a name="what-is-npm"></a>什么是 npm？
+
+Npm 是 Node.js 的默认包管理器。 包管理器使程序员更容易发布和共享 Node.js 库的源代码，并且可简化库的安装、更新和卸载。
+
+### <a name="what-is-react"></a>什么是 React？
+
+React 是用于创建 UI 的前端框架。
+
+### <a name="what-is-jsx"></a>什么是 JSX？
+
+JSX 是一个 JavaScript 语法扩展，通常用于 React 以描述 UI 元素。 JSX 代码必须转译为普通 JavaScript 方可在浏览器中运行。
+
+### <a name="what-is-webpack"></a>什么是 webpack？
+
+webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还可以转换或打包其他资源和资产。 它通常用于指定编译器（如 Babel 或 TypeScript），以将 JSX 或 TypeScript 代码转译为普通 JavaScript。
+
 ## <a name="prerequisites"></a>系统必备
 
 * 须安装 Visual Studio 2017 且具有 Node.js 开发工作负载。
 
-    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
+    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 页免费安装。
 
     如果需要安装工作负载，但已有 Visual Studio，则选择“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“Node.js 开发”工作负载，然后选择“修改”。
 
@@ -62,13 +86,15 @@ ms.locfileid: "39567137"
 
     ![解决方案资源管理器中的 Node.js 项目](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    * 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在文件系统中，此项目由项目文件夹中的 .njsproj 文件表示。 可以右键单击项目并选择“属性”，设置与项目相关的属性和环境变量。 可以使用其他开发工具执行往返，因为项目文件不对 Node.js 项目源做出自定义更改。
+    (1) 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在文件系统中，此项目由项目文件夹中的 .njsproj 文件表示。 可以右键单击项目并选择“属性”，设置与项目相关的属性和环境变量。 可以使用其他开发工具执行往返，因为项目文件不对 Node.js 项目源做出自定义更改。
 
-    * 顶层是一个解决方案，它与项目默认同名。 解决方案在磁盘上由 .sln 文件表示，是一个或多个相关项目的容器。
+    (2) 顶层是一个解决方案，它与项目默认同名。 解决方案在磁盘上由 .sln 文件表示，是一个或多个相关项目的容器。
 
-    * Npm 节点显示任何已安装的 npm 包。 可以右键单击 npm 节点搜索 npm 包，并使用对话框安装 npm 包。
+    (3) Npm 节点显示任何已安装的 npm 包。 可右键单击 npm 节点以使用对话框搜索并安装 npm 包，也可使用 package.json 中的设置来安装和更新包，并右键单击 npm 节点中的选项。
 
-    * 项目文件（例如 server.js）显示在项目节点下。 server.js 是项目启动文件。
+    (4) package.json 是 npm 用于管理本地安装包的包依赖关系和包版本的文件。 有关此文件的详细信息，请参阅 [package.json 配置](../javascript/configure-packages-with-package-json.md)
+
+    (5) 项目文件（例如 server.js）显示在项目节点下。 server.js 是项目启动文件，因此它以粗体形式显示。 可设置启动文件，方法是右键单击项目中的文件并选择“设置为 Node.js 启动文件”。
 
 ## <a name="add-npm-packages"></a>添加 npm 包
 
@@ -95,22 +121,22 @@ ms.locfileid: "39567137"
 
     项目的 package.json 文件中的信息更新为新的包信息（包括包版本）。
 
-1. 将以下代码复制到 package.json，而不用使用 UI 一个一个搜索并添加其余的包。 为执行此操作，使用此代码替换 `dependencies` 部分：
+1. 将以下代码粘贴到 package.json，而不用使用 UI 一个一个搜索并添加其余的包。 为此，请使用以下代码添加 `dependencies` 部分：
 
-    ```js
+    ```json
     "dependencies": {
-      "express": "4.16.2",
-      "path": "0.12.7",
-      "react": "16.4.0",
-      "react-dom": "16.4.0",
-      "ts-loader": "4.0.1",
-      "typescript": "2.7.2",
-      "webpack": "4.1.1",
-      "webpack-cli": "2.0.11"
+      "express": "~4.16.4",
+      "path": "~0.12.7",
+      "react": "~16.6.0",
+      "react-dom": "~16.6.0",
+      "ts-loader": "~5.3.0",
+      "typescript": "~3.1.5",
+      "webpack": "~4.23.1",
+      "webpack-cli": "~3.1.2"
     }
     ```
 
-    如果你的空白模板版本中没有 `dependencies` 部分，则必须添加它而不是替换现有部分。
+    如果空白模板版本中已存在 `dependencies` 部分，请将其替换为前面的 JSON 代码。 有关此文件用法的详细信息，请参阅 [package.json 配置](../javascript/configure-packages-with-package-json.md)
 
 1. 右键单击项目中的“npm”节点，然后选择“更新 npm 包”。
 
@@ -176,7 +202,7 @@ ms.locfileid: "39567137"
     var React = require('react');
     var ReactDOM = require('react-dom');
 
-    class Hello extends React.Component {
+    export class Hello extends React.Component {
         render() {
             return (
                 <h1>Welcome to React!!</h1>
@@ -270,7 +296,7 @@ ms.locfileid: "39567137"
 
     ![运行 webpack](../javascript/media/tutorial-nodejs-react-run-webpack.png)
 
-    如果看到错误而不是前面的输出，则必须在应用开始运行之前解决这些错误。 如果 npm 包版本不是本教程中所示的版本，则可能引发错误。 修复错误的一种方法是使用前面步骤中使用的版本。 此外，如果所使用的一个或多个包版本是已弃用的版本，并导致发生错误，则可能需要安装较新版本以消除错误。
+    如果看到错误而不是前面的输出，则必须在应用开始运行之前解决这些错误。 如果 npm 包版本不是本教程中所示的版本，则可能引发错误。 修复错误的一种方法是使用前面步骤中使用的版本。 此外，如果所使用的一个或多个包版本是已弃用的版本，并导致发生错误，则可能需要安装较新版本以消除错误。 有关使用 package.json 控制 npm 包版本的信息，请参阅 [package.json 配置](../javascript/configure-packages-with-package-json.md)。
 
 1. 在解决方案资源管理器中，右键单击项目节点并选择“添加” > “现有文件夹”，然后依次选择 dist 文件夹和“选择文件夹”。
 
@@ -286,9 +312,11 @@ ms.locfileid: "39567137"
 
 ## <a name="run-the-app"></a>运行应用
 
-1. 请确保将 Chrome 选为当前的调试目标。
+1. 选择 Chrome 作为当前调试目标。
 
     ![选择 Chrome 作为调试目标](../javascript/media/tutorial-nodejs-react-debug-target.png)
+
+    如果计算机上有 Chrome，但未显示为选项，请从调试目标下拉列表中选择“浏览方式”，然后选择 Chrome 作为默认浏览器目标（选择“设为默认值”）。
 
 1. 若要运行应用，请按 F5（“调试” > “开始调试”）或者绿色箭头按钮。
 
@@ -326,47 +354,49 @@ ms.locfileid: "39567137"
 
 1. 关闭所有 Chrome 窗口。
 
-1. 从 Windows“启动”按钮打开“运行”命令（右键单击并选择“运行”），然后输入以下命令：
+2. 从 Windows“启动”按钮打开“运行”命令（右键单击并选择“运行”），然后输入以下命令：
 
     `chrome.exe --remote-debugging-port=9222`
 
     这样在启动 Chrome 时会同时启用调试。
 
-1. 如下图所示，切换到 Visual Studio 并在 `render()` 函数的 app-bundle.js 代码中设置断点：
+3. 如下图所示，切换到 Visual Studio 并在 `render()` 函数的 app-bundle.js 代码中设置断点：
 
     ![设置断点](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-1. 在选择 Chrome 作为 Visual Studio 中调试目标的情况下，按 Ctrl+F5（“调试” > “启动时不调试”）在浏览器中运行应用。
+    若要查找 app-bundle.js 中的 `render()` 函数，请使用 Ctrl+F（“编辑” > “查找和替换” > “快速查找”）。
+
+4. 在选择 Chrome 作为 Visual Studio 中调试目标的情况下，按 Ctrl+F5（“调试” > “启动时不调试”）在浏览器中运行应用。
 
     应用随即在新的浏览器选项卡中打开。
 
-1. 选择“调试” > “附加到进程”。
+5. 选择“调试” > “附加到进程”。
 
-1. 在“附加到进程”对话框中，选择“附加到”字段中的“Webkit 代码”，在筛选框中键入“chrome”以筛选搜索结果。
+6. 在“附加到进程”对话框中，选择“附加到”字段中的“Webkit 代码”，在筛选框中键入“chrome”以筛选搜索结果。
 
-1. 使用正确的主机端口（此例中为 1337）选择 Chrome 进程，然后选择“附加”。
+7. 使用正确的主机端口（此例中为 1337）选择 Chrome 进程，然后选择“附加”。
 
     ![附加到进程](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    当 DOM 资源管理器和 JavaScript 控制台在 Visual Studio 中打开，表明已正确附加调试程序。 这些调试工具类似于 Chrome 开发人员工具和 Edge 的 F12 工具。
+    当 DOM 资源管理器和 JavaScript 控制台在 Visual Studio 中打开，表明已正确附加调试程序。 这些调试工具类似于 Chrome 开发人员工具和 Microsoft Edge 的 F12 工具。
 
     > [!NOTE]
     > 如果未附加调试程序，则会看到消息“无法附加到进程。 操作在当前状态中是非法的。在调试模式中启用 Chrome 前，先使用任务管理器关闭所有 Chrome 实例。 Chrome 扩展可能正在运行并阻止完整的调试模式。
 
-1. 由于已执行有断点的代码，因此要刷新浏览器页面以命中断点。
+8. 由于已执行有断点的代码，因此要刷新浏览器页面以命中断点。
 
     在调试器中暂停时，可以通过在变量上悬停光标并使用调试器窗口，检查应用状态。 逐句通过代码（F5、F10 和 F11），推进调试器进度。
 
     可能会在 app-bundle.js 中或在 app.tsx 中断点的映射位置处命中断点，具体取决于环境和浏览器状态。 无论在哪里命中，均可单步执行代码并检查变量。
 
-    * 如果需要中断 app.tsx 中的代码但又无法执行此操作，请按照之前所述的步骤，使用“附加到进程”来附加调试程序。 然后通过打开“脚本文档” > “app.tsx”，从解决方案资源管理器打开动态生成“app.tsx”文件，设置断点并刷新浏览器中的页面（在允许断点的代码行中设置断点，如 `return` 语句或 `var` 声明）。
+   * 如果需要中断 app.tsx 中的代码但又无法执行此操作，请按照之前所述的步骤，使用“附加到进程”来附加调试程序。 然后通过打开“脚本文档” > “app.tsx”，从解决方案资源管理器打开动态生成“app.tsx”文件，设置断点并刷新浏览器中的页面（在允许断点的代码行中设置断点，如 `return` 语句或 `var` 声明）。
 
-        或者，如果需要中断 app.tsx 中的代码但又无法执行此操作，可尝试使用 app.tsx 中的 `debugger;` 语句或改为在 Chrome 开发人员工具中设置断点。
+       或者，如果需要中断 app.tsx 中的代码但又无法执行此操作，可尝试使用 app.tsx 中的 `debugger;` 语句或改为在 Chrome 开发人员工具中设置断点。
 
-    * 如果需要中断 app-bundle.js 中的代码但又无法执行此操作，请删除 sourcemap 文件 app-bundle.js.map。
+   * 如果需要中断 app-bundle.js 中的代码但又无法执行此操作，请删除 sourcemap 文件 app-bundle.js.map。
 
-    > [!TIP]
-    > 首次通过这些步骤附加到进程后，可选择“调试” > “重新附加到进程”，快速重新附加到 Visual Studio 2017 中的同一进程。
+     > [!TIP]
+     > 首次通过这些步骤附加到进程后，可选择“调试” > “重新附加到进程”，快速重新附加到 Visual Studio 2017 中的同一进程。
 
 ## <a name="next-steps"></a>后续步骤
 

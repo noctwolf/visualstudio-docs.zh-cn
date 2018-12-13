@@ -18,33 +18,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16469da5a4724a2bf536fed3b5e28da0fec68aed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8144723f68b9343c1c7d74f7a940aec569dd7969
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635325"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296120"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>演练： 使用项模板，第 1 部分创建自定义操作项目项
   可以通过创建你自己的项目项类型来扩展 Visual Studio 中的 SharePoint 项目系统。 在本演练中，将创建可以添加到 SharePoint 项目，以便在 SharePoint 站点上创建自定义操作项目项。 自定义操作添加的菜单项**站点操作**菜单中的 SharePoint 站点。  
   
  本演练演示了下列任务：  
   
--   创建 Visual Studio 扩展中定义自定义操作的 SharePoint 项目项的新类型。 新的项目项类型实现多个自定义功能：  
+- 创建 Visual Studio 扩展中定义自定义操作的 SharePoint 项目项的新类型。 新的项目项类型实现多个自定义功能：  
   
-    -   快捷菜单，具有与项目项，例如，在 Visual Studio 中显示用于自定义操作的设计器相关的其他任务的起始点。  
+  -   快捷菜单，具有与项目项，例如，在 Visual Studio 中显示用于自定义操作的设计器相关的其他任务的起始点。  
   
-    -   开发人员更改某些属性的项目项和包含它的项目时运行的代码。  
+  -   开发人员更改某些属性的项目项和包含它的项目时运行的代码。  
   
-    -   在项目项的旁边显示一个自定义图标**解决方案资源管理器**。  
+  -   在项目项的旁边显示一个自定义图标**解决方案资源管理器**。  
   
--   创建项目项的 Visual Studio 项模板。  
+- 创建项目项的 Visual Studio 项模板。  
   
--   生成 Visual Studio 扩展 (VSIX) 包部署的项目项模板和扩展插件程序集。  
+- 生成 Visual Studio 扩展 (VSIX) 包部署的项目项模板和扩展插件程序集。  
   
--   调试和测试的项目项。  
+- 调试和测试的项目项。  
   
- 这是一个独立的演练。 完成本演练后，您可以通过将一个向导添加到项模板增强的项目项。 有关详细信息，请参阅[演练： 使用项模板，第 2 部分中创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。  
+  这是一个独立的演练。 完成本演练后，您可以通过将一个向导添加到项模板增强的项目项。 有关详细信息，请参阅[演练： 使用项模板，第 2 部分中创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。  
   
 > [!NOTE]  
 >  您可以下载的示例[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，演示如何创建自定义工作流活动。  
@@ -52,26 +52,26 @@ ms.locfileid: "42635325"
 ## <a name="prerequisites"></a>系统必备  
  需要要完成本演练的开发计算机上安装以下组件：  
   
--   支持的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。
+- 支持的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。
   
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用**VSIX 项目**中此 SDK 来创建 VSIX 包来部署项目项模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用**VSIX 项目**中此 SDK 来创建 VSIX 包来部署项目项模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 了解以下概念很有帮助，但不是必需，若要完成本演练：  
+  了解以下概念很有帮助，但不是必需，若要完成本演练：  
   
--   在 SharePoint 中的自定义操作。 有关详细信息，请参阅[自定义操作](http://go.microsoft.com/fwlink/?LinkId=177800)。  
+- 在 SharePoint 中的自定义操作。 有关详细信息，请参阅[自定义操作](http://go.microsoft.com/fwlink/?LinkId=177800)。  
   
--   在 Visual Studio 中的项模板。 有关详细信息，请参阅[创建项目和项模板](/visualstudio/ide/creating-project-and-item-templates)。  
+- 在 Visual Studio 中的项模板。 有关详细信息，请参阅[创建项目和项模板](/visualstudio/ide/creating-project-and-item-templates)。  
   
 ## <a name="create-the-projects"></a>创建项目
  若要完成本演练中，您需要创建三个项目：  
   
--   一个 VSIX 项目。 此项目创建 VSIX 包以部署 SharePoint 项目项。  
+- 一个 VSIX 项目。 此项目创建 VSIX 包以部署 SharePoint 项目项。  
   
--   项模板项目。 此项目将创建可用于将 SharePoint 项目项添加到 SharePoint 项目项模板。  
+- 项模板项目。 此项目将创建可用于将 SharePoint 项目项添加到 SharePoint 项目项模板。  
   
--   一个类库项目。 此项目实现 Visual Studio 扩展中定义的 SharePoint 项目项的行为。  
+- 一个类库项目。 此项目实现 Visual Studio 扩展中定义的 SharePoint 项目项的行为。  
   
- 首先演练创建项目。  
+  首先演练创建项目。  
   
 #### <a name="to-create-the-vsix-project"></a>若要创建 VSIX 项目  
   
@@ -298,7 +298,7 @@ ms.locfileid: "42635325"
   
 1.  在中**解决方案资源管理器**，打开快捷菜单**source.extension.vsixmanifest** CustomActionProjectItem 项目中的文件，然后选择**打开**。  
   
-     Visual Studio 清单编辑器中打开该文件。 在 source.extension.vsixmanifest 文件是所有 VSIX 包都需要 extension.vsixmanifest 文件的基础。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 参考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+     Visual Studio 清单编辑器中打开该文件。 在 source.extension.vsixmanifest 文件是所有 VSIX 包都需要 extension.vsixmanifest 文件的基础。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 参考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
 2.  在中**产品名称**框中，输入**自定义操作项目项**。  
   
@@ -313,7 +313,7 @@ ms.locfileid: "42635325"
 6.  在中**类型**列表中，选择**Microsoft.VisualStudio.ItemTemplate**。  
   
     > [!NOTE]  
-    >  此值对应于`ItemTemplate`extension.vsixmanifest 文件中的元素。 此元素标识的子文件夹中包含的项目项模板的 VSIX 包。 有关详细信息，请参阅[ItemTemplate 元素 （VSX 架构）](http://msdn.microsoft.com/en-us/1d489e54-c1c5-4f96-a510-6c2640867ff0)。  
+    >  此值对应于`ItemTemplate`extension.vsixmanifest 文件中的元素。 此元素标识的子文件夹中包含的项目项模板的 VSIX 包。 有关详细信息，请参阅[ItemTemplate 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))。  
   
 7.  在中**源**列表中，选择**当前解决方案中的项目**。  
   
@@ -326,7 +326,7 @@ ms.locfileid: "42635325"
 10. 在中**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
+    >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。  
   
 11. 在中**源**列表中，选择**当前解决方案中的项目**。  
   
@@ -420,7 +420,7 @@ ms.locfileid: "42635325"
     -   在中`UrlAction`元素中，设置`Url`属性，如以下示例所示：  
   
         ```xml  
-        Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
+        Url="https://docs.microsoft.com/sharepoint/dev/"  
         ```  
   
 3.  选择 F5。  
@@ -430,7 +430,7 @@ ms.locfileid: "42635325"
     > [!NOTE]  
     >  如果**脚本调试被禁用**出现对话框，请选择**是**按钮以继续调试项目。  
   
-4.  上**站点操作**菜单中，选择**SharePoint 开发人员中心**，验证是否在浏览器打开该网站http://msdn.microsoft.com/sharepoint/default.aspx，然后关闭 web 浏览器。  
+4.  上**站点操作**菜单中，选择**SharePoint 开发人员中心**，验证是否在浏览器打开该网站 https://docs.microsoft.com/sharepoint/dev/，然后关闭 web 浏览器。  
   
 ## <a name="clean-up-the-development-computer"></a>清理开发计算机
  在完成测试的项目项后，从 Visual Studio 的实验实例中删除项目项模板。  

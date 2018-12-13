@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea56cf7db42d7028856b88fb8572f5a4024fe07
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 9b9d61b4a57e0255577fdb0621dafd4263fc127c
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498767"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607765"
 ---
 # <a name="create-an-options-page"></a>创建选项页
 本演练创建一个简单的工具/选项页面使用属性网格可以查看和设置属性。  
@@ -27,7 +27,7 @@ ms.locfileid: "39498767"
   
  MPF 提供两个类可帮助您创建工具选项页<xref:Microsoft.VisualStudio.Shell.Package>类和<xref:Microsoft.VisualStudio.Shell.DialogPage>类。 创建 VSPackage 来为这些页面提供一个容器，通过子类化`Package`类。 通过从派生来创建每个工具选项页`DialogPage`类。  
   
-## <a name="prerequisites"></a>系统必备  
+## <a name="prerequisites"></a>先决条件  
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="create-a-tools-options-grid-page"></a>创建工具选项的网格页  
@@ -35,9 +35,9 @@ ms.locfileid: "39498767"
   
 ### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>若要创建 VSIX 项目并添加 VSPackage  
   
-1.  每个 Visual Studio 扩展开始于 VSIX 部署项目，它将包含扩展资产。 创建[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX 项目名为`MyToolsOptionsExtension`。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C#** > **扩展性**。  
+1. 每个 Visual Studio 扩展开始于 VSIX 部署项目，它将包含扩展资产。 创建[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX 项目名为`MyToolsOptionsExtension`。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C#** > **扩展性**。  
   
-2.  通过添加一个名为 Visual Studio 包项目模板来添加 VSPackage `MyToolsOptionsPackage`。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项对话框**，请转到**Visual C# 项** > **扩展性**，然后选择**Visual Studio 包**。 在中**名称**在对话框底部字段中，将文件名称更改为`MyToolsOptionsPackage.cs`。 有关如何创建 VSPackage 的详细信息，请参阅[创建使用 VSPackage 扩展](../extensibility/creating-an-extension-with-a-vspackage.md)。  
+2. 通过添加一个名为 Visual Studio 包项目模板来添加 VSPackage `MyToolsOptionsPackage`。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项对话框**，请转到**Visual C# 项** > **扩展性**，然后选择**Visual Studio 包**。 在中**名称**在对话框底部字段中，将文件名称更改为`MyToolsOptionsPackage.cs`。 有关如何创建 VSPackage 的详细信息，请参阅[创建使用 VSPackage 扩展](../extensibility/creating-an-extension-with-a-vspackage.md)。  
   
 ### <a name="to-create-the-tools-options-property-grid"></a>若要创建工具选项属性网格  
   
@@ -110,7 +110,7 @@ ms.locfileid: "39498767"
   
 2.  添加以下 using 语句。  
   
-    ```vb  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
@@ -231,7 +231,7 @@ ms.locfileid: "39498767"
   
 1.  在包的代码文件中，添加一个名为的公共属性**OptionInteger**到**MyToolsOptionsPackage**类。  
   
-    ```  
+    ```csharp  
     public int OptionInteger  
     {  
         get  

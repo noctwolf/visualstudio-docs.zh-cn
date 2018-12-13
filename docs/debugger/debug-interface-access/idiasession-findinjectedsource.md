@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findinjectedsource |Microsoft 文档'
+title: 'Idiasession:: Findinjectedsource |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9870d1e2d14a2dcbe9f33191e0559a3e0b34f4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 472e60c10d95e0a1b79f09f0d069172ce33020b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819025"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
-检索已放置在符号存储区的属性提供程序的源的列表或在编译过程的其他组件。  
+检索已放置到符号存储区的属性提供者的源列表或在编译过程的其他组件。  
   
 ## <a name="syntax"></a>语法  
   
@@ -38,7 +38,7 @@ HRESULT findInjectedSource (
  [in]要搜索的源文件的名称。  
   
  ppResult  
- [out]返回[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)对象，其中包含所有的插入的源的列表。  
+ [out]返回[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)对象，其中包含所有的插入源的列表。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

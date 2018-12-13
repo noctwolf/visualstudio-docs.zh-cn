@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44cbabd41e40c0e157a75fa260985752e3d5e016
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 132a94b6e91148d943d998ab7e4aab96d0d74960
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257906"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822550"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>演练： 使用按钮在文档的文本框中显示文本
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中使用按钮和文本框。  
@@ -29,11 +29,11 @@ ms.locfileid: "35257906"
   
  本演练阐释了以下任务：  
   
--   设计时，将控件添加到文档级项目中的 Word 文档。  
+- 设计时，将控件添加到文档级项目中的 Word 文档。  
   
--   单击按钮时将填充文本框。  
+- 单击按钮时将填充文本框。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -58,25 +58,25 @@ ms.locfileid: "35257906"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>添加一个按钮和一个文本框  
   
-1.  验证该文档已在 Visual Studio 设计器中打开。  
+1. 验证该文档已在 Visual Studio 设计器中打开。  
   
-2.  从**公共控件**选项卡**工具箱**，拖动<xref:Microsoft.Office.Tools.Word.Controls.TextBox>到文档。  
+2. 从**公共控件**选项卡**工具箱**，拖动<xref:Microsoft.Office.Tools.Word.Controls.TextBox>到文档。  
   
-    > [!NOTE]  
-    >  在 Word 中，默认情况下控件将按照文本进行删除。 您可以修改的方式控件和形状对象插入上更改默认值**编辑**选项卡**选项**在 Word 中的对话框。  
+   > [!NOTE]  
+   >  在 Word 中，默认情况下控件将按照文本进行删除。 您可以修改的方式控件和形状对象插入上更改默认值**编辑**选项卡**选项**在 Word 中的对话框。  
   
-3.  在 **“视图”** 菜单上，单击 **“属性窗口”**。  
+3. 在 **“视图”** 菜单上，单击 **“属性窗口”**。  
   
-4.  查找**TextBox1**中**属性**窗口下拉列表框，然后**名称**属性的文本设置为**displayText**。  
+4. 查找**TextBox1**中**属性**窗口下拉列表框，然后**名称**属性的文本设置为**displayText**。  
   
-5.  拖动**按钮**控制对文档和更改以下属性。  
+5. 拖动**按钮**控制对文档和更改以下属性。  
   
-    |属性|“值”|  
-    |--------------|-----------|  
-    |**名称**|**insertText**|  
-    |**文本**|**插入文本**|  
+   |属性|“值”|  
+   |--------------|-----------|  
+   |**名称**|**insertText**|  
+   |**文本**|**插入文本**|  
   
- 现在，你可以编写将在单击该按钮时运行的代码。  
+   现在，你可以编写将在单击该按钮时运行的代码。  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>单击该按钮填充文本框  
  每次用户单击按钮， **Hello World ！** 添加到文本框中。  

@@ -9,16 +9,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4f00313cbbb7f082934bddff338f77f117fd5c
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064540"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388720"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>个性化设置 Visual Studio IDE
 
-可以通过各种方法对 Visual Studio 进行个性化设置，来为自己的开发风格和需求提供最佳支持。 许多设置跨 Visual Studio 实例出现（请参阅[同步设置](../ide/synchronized-settings-in-visual-studio.md)）。 本主题简要介绍不同的个性化设置以及可以获取详细信息的位置。
+可以通过各种方法对 Visual Studio 进行个性化设置，来为自己的开发风格和需求提供最佳支持。 许多设置跨 Visual Studio 实例出现（请参阅[同步设置](../ide/synchronized-settings-in-visual-studio.md)）。 本文简要介绍不同的个性化设置以及可以获取详细信息的位置。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[自定义 Visual Studio for Mac IDE](/visualstudio/mac/customizing-the-ide)。
+
+## <a name="default-settings"></a>默认设置
+
+可选择一组默认设置，以便根据开发类型优化 Visual Studio。 有关详细信息，请参阅[环境设置](environment-settings.md)。
 
 ## <a name="general-environment-options"></a>常规环境选项
 
@@ -59,5 +66,7 @@ ms.locfileid: "32064540"
 
 ## <a name="see-also"></a>请参阅
 
+- [环境设置](environment-settings.md)
 - [Visual Studio IDE 概述](../ide/visual-studio-ide.md)
 - [快速入门：初步了解 Visual Studio IDE](../ide/quickstart-ide-orientation.md)
+- [自定义 Visual Studio for Mac IDE](/visualstudio/mac/customizing-the-ide)

@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15d666ed4e2896a1645f1f47a5a310dc3151309f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ec1f538515c8765629e812b8d7f4070476dd95ba
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670585"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670836"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>通过使用扩展性接口自定义 UI 功能
   Visual Studio 中的 Office 开发工具提供了一些类和设计器，使用它们在 VSTO 外接程序中创建自定义任务窗格、功能区自定义项和 Outlook 窗体区域时可处理许多实现细节。 不过，如果你有特殊要求，也可以自己为每项功能实现 *扩展性接口* 。  
@@ -61,17 +61,17 @@ ms.locfileid: "35670585"
 ### <a name="example-of-implementing-an-extensibility-interface"></a>实现扩展性接口的示例  
  下面的代码示例演示用于创建自定义任务窗格的 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> 接口的简单实现。 此示例定义两个类：  
   
--   `TaskPaneHelper` 类实现 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> 以创建和显示自定义任务窗格。  
+- `TaskPaneHelper` 类实现 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> 以创建和显示自定义任务窗格。  
   
--   `TaskPaneUI` 类提供任务窗格的 UI。 `TaskPaneUI` 类的属性使类对于 COM 可见，从而使 Microsoft Office 应用程序能够发现该类。 在此示例中，UI 是一个空 <xref:System.Windows.Forms.UserControl>，但你可以通过修改代码来添加控件。  
+- `TaskPaneUI` 类提供任务窗格的 UI。 `TaskPaneUI` 类的属性使类对于 COM 可见，从而使 Microsoft Office 应用程序能够发现该类。 在此示例中，UI 是一个空 <xref:System.Windows.Forms.UserControl>，但你可以通过修改代码来添加控件。  
   
-    > [!NOTE]  
-    >  要向 COM 公开 `TaskPaneUI` 类，你必须同时为项目设置“为 COM 互操作注册”  属性。  
+  > [!NOTE]  
+  >  要向 COM 公开 `TaskPaneUI` 类，你必须同时为项目设置“为 COM 互操作注册”  属性。  
   
- [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
- [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
+  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
+  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- 有关实现详细信息<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>，请参阅[2007 Office system 中创建自定义任务窗格](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be)Microsoft Office 文档中。  
+  有关实现详细信息<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>，请参阅[2007 Office system 中创建自定义任务窗格](/previous-versions/office/developer/office-2007/aa338197(v=office.12))Microsoft Office 文档中。  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>重写 RequestService 方法的示例  
  下面的代码示例演示如何重写 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法以从前面的代码示例中返回 `TaskPaneHelper` 类的实例。 它将检查 *serviceGuid* 参数的值以确定请求的是哪个接口，然后返回实现该接口的对象。  

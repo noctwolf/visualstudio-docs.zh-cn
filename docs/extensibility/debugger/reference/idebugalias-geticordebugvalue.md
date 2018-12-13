@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetICorDebugValue |Microsoft 文档
+title: IDebugAlias::GetICorDebugValue |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfe0d8e4734c0d836b2dc6009fdedfa264720778
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 393d5a7310a136ad83b7cbd74fca966633ffb62e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099046"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833169"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
-检索一个托管的代码的接口，表示与此别名关联的值。  
+检索表示与此别名关联的值的托管的代码接口。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,13 +41,13 @@ int GetICorDebugValue(
   
 #### <a name="parameters"></a>参数  
  `ppUnk`  
- [out]`IUnknown`表示与此别名关联的值的接口。 此接口可以查询有关`ICorDebugValue`接口。  
+ [out]`IUnknown`接口，表示与此别名关联的值。 此接口可以查询有关`ICorDebugValue`接口。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回错误代码。  
+ 如果成功，则返回 S_OK;否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法仅适用于托管的值 (`ICorDebugValue`是一个接口位于[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]中定义，在[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]cordebug.idl 文件中的 SDK)。  
+ 此方法仅适用于托管值 (`ICorDebugValue`是一个接口中可用[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]中定义， [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] cordebug.idl 文件中的 SDK)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

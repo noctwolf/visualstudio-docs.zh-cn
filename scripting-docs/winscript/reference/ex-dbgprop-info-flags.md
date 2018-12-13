@@ -1,5 +1,5 @@
 ---
-title: EX_DBGPROP_INFO_FLAGS |Microsoft 文档
+title: EX_DBGPROP_INFO_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0af0de81c0253b72fe432cb3cefe11c362bc2ec4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e66ff43cd51977bf0c23ca0e024a2e05b53f5022
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640897"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878084"
 ---
 # <a name="exdbgpropinfoflags"></a>EX_DBGPROP_INFO_FLAGS
 用于指定`ExtendedDebugPropertyInfo`字段。  
@@ -42,20 +42,20 @@ enum {
   
 ## <a name="members"></a>成员  
  EX_DBGPROP_INFO_ID  
- 初始化属性的标识符。  
+ 初始化的属性标识符。  
   
  EX_DBGPROP_INFO_NTYPE  
  初始化类型的属性。  
   
  EX_DBGPROP_INFO_NVALUE  
- 初始化的属性的值。  
+ 初始化属性的值。  
   
  EX_DBGPROP_INFO_LOCKBYTES  
  初始化`plb`字段。  
   
  EX_DBGPROP_INFO_DEBUGEXTPROP  
- 初始化`pDebugExtProp`字段，其中包含`IDebugExtendedProperty`接口。  
+ 初始化`pDebugExtProp`字段包含`IDebugExtendedProperty`接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ExtendedDebugPropertyInfo 结构](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   
  [IDebugExtendedProperty 接口](../../winscript/reference/idebugextendedproperty-interface.md)

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65dd8415dc57c026d2a913b209340e381b07bc6a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 874642371f173b56a174dabdd17ee1cf50cc79fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875471"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 Visual Studio 承载有 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用以加载和生成托管项目。 由于 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 负责处理项目，因此，可以在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中成功使用几乎任何 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]格式的项目（即使项目是用另一种工具编写的，而且这些项目有自定义的生成过程）。  
@@ -68,9 +68,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>进程内编译器  
  如果可能， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将尝试使用进程内版本的 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编译器来提高性能。 （不适用于 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]。）为了让它正确工作，必须满足下面的条件：  
   
--   在项目的目标中，必须具有名为 `Vbc` 的任务（适用于 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目）。  
+- 在项目的目标中，必须具有名为 `Vbc` 的任务（适用于 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目）。  
   
--   任务的 `UseHostCompilerIfAvailable` 参数必须设置为 True。  
+- 任务的 `UseHostCompilerIfAvailable` 参数必须设置为 True。  
   
 ## <a name="design-time-intellisense"></a>设计时 IntelliSense  
  在生成过程生成输出程序集之前，若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中获得 IntelliSense 支持，必须满足下面的条件：  
@@ -157,23 +157,23 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>引用解析  
  引用解析是使用项目文件中存储的引用项来查找实际程序集的过程。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 必须触发引用解析，才能在 **“属性”** 窗口中显示每个引用的详细属性。 下面的列表描述了三种类型引用和如何解析它们。  
   
--   程序集引用：  
+- 程序集引用：  
   
-     项目系统调用具有已知名称 `ResolveAssemblyReferences`的目标。 此目标应当产生具有项类型名称 `ReferencePath`的项。 这些项中的每一个都应当有包含引用的完整路径的项规范（项的 `Include` 特性的值）。 除了下面的新元数据以外，项应当让来自输入项的所有元数据通过：  
+   项目系统调用具有已知名称 `ResolveAssemblyReferences`的目标。 此目标应当产生具有项类型名称 `ReferencePath`的项。 这些项中的每一个都应当有包含引用的完整路径的项规范（项的 `Include` 特性的值）。 除了下面的新元数据以外，项应当让来自输入项的所有元数据通过：  
   
-    -   `CopyLocal`，指示程序集是否应当复制到输出文件夹中、设置为 True 还是 False。  
+  - `CopyLocal`，指示程序集是否应当复制到输出文件夹中、设置为 True 还是 False。  
   
-    -   `OriginalItemSpec`，包含引用的原始项规范。  
+  - `OriginalItemSpec`，包含引用的原始项规范。  
   
-    -   `ResolvedFrom`，如果从 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 目录解析它，则设置为“{TargetFrameworkDirectory}”。  
+  - `ResolvedFrom`，如果从 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 目录解析它，则设置为“{TargetFrameworkDirectory}”。  
   
--   COM 引用：  
+- COM 引用：  
   
-     项目系统调用具有已知名称 `ResolveCOMReferences`的目标。 此目标应当产生具有项类型名称 `ComReferenceWrappers`的项。 这些项中的每一个都应当有项规范，其中包含 COM 引用的 interop 程序集的完整路径。 除了具有名称 `CopyLocal`（用于指示程序集是否应当复制到输出文件夹中、设置为 true 还是 false）的新元数据以外，项应当让来自输入项的所有元数据通过。  
+   项目系统调用具有已知名称 `ResolveCOMReferences`的目标。 此目标应当产生具有项类型名称 `ComReferenceWrappers`的项。 这些项中的每一个都应当有项规范，其中包含 COM 引用的 interop 程序集的完整路径。 除了具有名称 `CopyLocal`（用于指示程序集是否应当复制到输出文件夹中、设置为 true 还是 false）的新元数据以外，项应当让来自输入项的所有元数据通过。  
   
--   本机引用  
+- 本机引用  
   
-     项目系统调用具有已知名称 `ResolveNativeReferences`的目标。 此目标应当产生具有项类型名称 `NativeReferenceFile`的项。 除了名为 `OriginalItemSpec`（包含引用的原始项规范）的新元数据片段以外，项应当让来自输入项的所有元数据通过。  
+   项目系统调用具有已知名称 `ResolveNativeReferences`的目标。 此目标应当产生具有项类型名称 `NativeReferenceFile`的项。 除了名为 `OriginalItemSpec`（包含引用的原始项规范）的新元数据片段以外，项应当让来自输入项的所有元数据通过。  
   
 ## <a name="performance-shortcuts"></a>性能快捷方式  
  如果在 Visual Studio UI 中启动调试（通过选择 F5 键或选择菜单栏中的“调试” > “启动调试” ），则生成过程将使用快速更新检查来提高性能。 在有些情况下，当自定义的生成创建轮流生成的文件时，快速更新检查无法正确标识更改的文件。 通过设置环境变量 `DISABLEFASTUPTODATECHECK=1`，需要更彻底更新检查的项目可以关闭快速检查。 或者，项目可在项目或项目导入的文件中将此变量设置为 MSBuild 属性。  

@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], building
 - application development [Office development in Visual Studio], debugging
 - Office solutions [Office development in Visual Studio], debugging
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 989014bb512ec77af908d823390b1e95b9a7872c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670704"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248226"
 ---
 # <a name="build-office-solutions"></a>生成 Office 解决方案
   通常情况下，生成和调试 Office 项目与在 Visual Studio 中生成和调试其他类型的项目（例如 Windows 窗体）相同。 本部分的主题介绍存在的差异。 有关如何生成应用程序的常规信息，请参阅[编译并在 Visual Studio 中生成](/visualstudio/ide/compiling-and-building-in-visual-studio)。  
@@ -64,23 +64,23 @@ ms.locfileid: "35670704"
 ### <a name="application-level-projects"></a>应用程序级项目  
  当生成 VSTO 外接程序项目时，项目输出中包含以下项：  
   
--   项目程序集以及“复制本地”  属性设置为 **true**的所有引用的程序集。  
+- 项目程序集以及“复制本地”  属性设置为 **true**的所有引用的程序集。  
   
--   具有文件扩展名的应用程序清单 *.manifest*。 有关详细信息，请参阅[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  
+- 具有文件扩展名的应用程序清单 *.manifest*。 有关详细信息，请参阅[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  
   
--   部署清单，具有文件扩展名 *.vsto*。 有关详细信息，请参阅[Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)。  
+- 部署清单，具有文件扩展名 *.vsto*。 有关详细信息，请参阅[Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)。  
   
--   程序数据库 (*PDB*) 项目程序集文件。  
+- 程序数据库 (*PDB*) 项目程序集文件。  
   
- VSTO 外接程序项目的生成过程还会在开发计算机上创建加载 VSTO 外接程序所需的一组注册表项。 有关详细信息，请参阅[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。  
+  VSTO 外接程序项目的生成过程还会在开发计算机上创建加载 VSTO 外接程序所需的一组注册表项。 有关详细信息，请参阅[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。  
   
- 如果生成包含窗体区域的 Outlook VSTO 外接程序项目，生成过程会向注册表中添加以下附加信息：  
+  如果生成包含窗体区域的 Outlook VSTO 外接程序项目，生成过程会向注册表中添加以下附加信息：  
   
--   与一个或多个窗体区域关联的每个邮件类的键。  
+- 与一个或多个窗体区域关联的每个邮件类的键。  
   
--   每个窗体区域的项以及表示 Outlook VSTO 外接程序的名称的关联值。  
+- 每个窗体区域的项以及表示 Outlook VSTO 外接程序的名称的关联值。  
   
- Outlook 需要此信息来加载窗体区域。  
+  Outlook 需要此信息来加载窗体区域。  
   
 ## <a name="referenced-assemblies"></a>引用的程序集  
  可以从“生成 Office 解决方案”项目引用程序集（包括类库项目）。 每个引用的程序集都具有一个名为“复制本地” 的属性。 “复制本地” 指示是否将程序集复制到输出目录中。 默认情况下，此属性设置为 **true**。 “复制本地”  设置为 **true** 的每个引用的程序集都被复制到输出目录中。  
@@ -100,7 +100,7 @@ ms.locfileid: "35670704"
 ## <a name="change-the-platform-target"></a>更改目标平台  
  默认情况下，Office 项目的目标平台是“任何 CPU” 。 通常情况下，不应更改此设置。 使用“任何 CPU”  目标平台设置生成的 Office 解决方案在 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 或 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]的 32 位和 64 位版本上运行。  
   
- 只有在创建仅在 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 或 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]的 64 位版本中运行的解决方案，并且该解决方案调用本机 64 位 API 时，才应将目标平台设置为 x64。 有关更改目标平台设置的详细信息，请参阅[如何： 配置项目以面向平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
+ 只有在创建仅在 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 或 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]的 64 位版本中运行的解决方案，并且该解决方案调用本机 64 位 API 时，才应将目标平台设置为 x64。 有关更改目标平台设置的详细信息，请参阅[如何：配置项目以面向平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
   
  如果将目标平台设置为 x64，则解决方案将不会在 Windows 或 Office 的 32 位版本中运行。 x64 目标平台要求解决方案在 64 位进程中运行。  
   
@@ -112,8 +112,8 @@ ms.locfileid: "35670704"
 |标题|描述|  
 |-----------|-----------------|  
 |[调试 Office 项目](../vsto/debugging-office-projects.md)|存在涉及调试 Office 项目的问题。|  
-|[演练： 创建你的 Excel 的第一个文档级自定义](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|演示如何创建 Excel 的基本文档级自定义项。|  
-|[如何： 重新启用 VSTO 外接程序中已禁用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|介绍如何重新启用 VSTO 外接程序中已硬或软禁用的。|  
+|[演练：创建 excel 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|演示如何创建 Excel 的基本文档级自定义项。|  
+|[如何：重新启用 VSTO 外接程序中已禁用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|介绍如何重新启用 VSTO 外接程序中已硬或软禁用的。|  
 |[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)|提供一些链接，指向与创建 Office 解决方案以及程序集在解决方案中的角色有关的信息。|  
   
   

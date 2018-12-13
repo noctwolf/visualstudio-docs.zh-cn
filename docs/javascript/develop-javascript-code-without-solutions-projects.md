@@ -1,8 +1,9 @@
 ---
 title: 在无需解决方案或项目的情况下在 Visual Studio 中编写 JavaScript 代码
+titleSuffix: ''
 description: Visual Studio 支持创建代码，而无需依赖于项目文件或解决方案文件
-ms.custom: ''
-ms.date: 06/06/2018
+ms.custom: seodec18
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
@@ -13,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d56030b78abe57c80d816881991b9819ed6456b
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: a68174fd9cc1efcdde068448445adcf68fe36f63
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924737"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058449"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>在 Visual Studio 中开发 JavaScript 和 TypeScript 代码，而无需解决方案或项目
 
@@ -28,7 +29,7 @@ Visual Studio 2017 引入了[开发代码而无需项目或解决方案](../ide/
 若要开始，请从打开 Visual Studio 时出现的“开始”页中选择“打开文件夹”，或者从工具栏选择“文件” > “打开” > “文件夹”。 解决方案资源管理器显示文件夹中的所有文件，你可以打开任何文件以开始编辑。 在后台，Visual Studio 对文件编制索引，启用 npm、生成和调试功能。
 
 > [!IMPORTANT]
-> 本文所述的很多功能（包括 npm 集成）均要求 Visual Studio 2017 版本 15.8 预览版 3。
+> 本文所述的很多功能（包括 npm 集成）均要求 Visual Studio 2017 版本 15.8。
 
 ## <a name="npm-integration"></a>npm 集成
 
@@ -58,3 +59,27 @@ Visual Studio 2017 引入了[开发代码而无需项目或解决方案](../ide/
 
 > [!NOTE]
 > 若要了解 tsconfig.json 的详细信息，可查找 [tsconfig.json TypeScript 手册页](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)。
+
+## <a name="unit-tests"></a>单元测试
+可通过在 package.json 中指定测试根，在 Visual Studio 中启用单元测试集成：
+
+```json
+{
+    // ...
+    "vsTest":{
+        "testRoot": "./tests"
+    }
+    // ...
+}
+```
+
+测试运行程序枚举本地安装的包，确定要使用的测试框架。
+如果未识别出任何受支持的框架，则测试运行程序默认为 ExportRunner。 支持的其他框架：
+* Mocha ([mochajs.org](http://mochajs.org/))
+* Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
+* Tape ([github.com/substack/tape](https://github.com/substack/tape))
+
+打开测试资源管理器（选择“测试” > “Windows” > “测试资源管理器”）后，Visual Studio 发现并显示测试。
+
+> [!NOTE]
+> 测试运行程序只枚举测试根目录中的 JavaScript 文件，如果应用采用 TypeScript 编写而成，则需要先构建这些文件。

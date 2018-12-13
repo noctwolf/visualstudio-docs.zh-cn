@@ -22,27 +22,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: dec4ca4ccd4b318cc337b10086fbf6b31a0e962c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 1e43d118a5fcfe00a8eb6eaa7f34a17ff1f6a4be
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174770"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389210"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>将 XML 数据读入到数据集中
 
 ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您创建的 Windows 应用程序将 XML 数据加载到数据集。 数据集然后显示在<xref:System.Windows.Forms.DataGridView>控件。 最后，在文本框中显示 XML 架构基于 XML 文件的内容。
 
-> [!NOTE]
-> 对话框和菜单命令，请参阅这些帮助中描述具体取决于您现用的设置或版本可能不同于你正在使用。 若要更改您的设置，在**工具**菜单中，选择**导入和导出设置**。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
-
 ## <a name="create-a-new-project"></a>创建新项目
 
-在此步骤中，您将创建一个 Visual Basic 或 Visual C# 项目。
+在此步骤中，创建一个 Visual Basic 或 VisualC#项目。
 
 1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
 
-2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
+2. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
 
 3. 在中间窗格中，选择**Windows 窗体应用**项目类型。
 
@@ -54,75 +51,75 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 
 由于本演练重点介绍 XML 数据读入数据集，提供的 XML 文件的内容。
 
-1.  上**项目**菜单中，选择**添加新项**。
+1. 在“项目”**菜单上选择“添加新项”**。
 
-2.  选择**XML 文件**，将文件命名**authors.xml**，然后选择**添加**。
+2. 选择**XML 文件**，将文件命名**authors.xml**，然后选择**添加**。
 
    XML 文件加载到设计器，并可供编辑。
 
-3.  将以下 XML 数据粘贴到编辑器中的 XML 声明如下：
+3. 将以下 XML 数据粘贴到编辑器中的 XML 声明如下：
 
-    ```xml
-    <Authors_Table>
-      <authors>
-        <au_id>172-32-1176</au_id>
-        <au_lname>White</au_lname>
-        <au_fname>Johnson</au_fname>
-        <phone>408 496-7223</phone>
-        <address>10932 Bigge Rd.</address>
-        <city>Menlo Park</city>
-        <state>CA</state>
-        <zip>94025</zip>
-        <contract>true</contract>
-      </authors>
-      <authors>
-        <au_id>213-46-8915</au_id>
-        <au_lname>Green</au_lname>
-        <au_fname>Margie</au_fname>
-        <phone>415 986-7020</phone>
-        <address>309 63rd St. #411</address>
-        <city>Oakland</city>
-        <state>CA</state>
-        <zip>94618</zip>
-        <contract>true</contract>
-      </authors>
-      <authors>
-        <au_id>238-95-7766</au_id>
-        <au_lname>Carson</au_lname>
-        <au_fname>Cheryl</au_fname>
-        <phone>415 548-7723</phone>
-        <address>589 Darwin Ln.</address>
-        <city>Berkeley</city>
-        <state>CA</state>
-        <zip>94705</zip>
-        <contract>true</contract>
-      </authors>
-      <authors>
-        <au_id>267-41-2394</au_id>
-        <au_lname>Hunter</au_lname>
-        <au_fname>Anne</au_fname>
-        <phone>408 286-2428</phone>
-        <address>22 Cleveland Av. #14</address>
-        <city>San Jose</city>
-        <state>CA</state>
-        <zip>95128</zip>
-        <contract>true</contract>
-      </authors>
-      <authors>
-        <au_id>274-80-9391</au_id>
-        <au_lname>Straight</au_lname>
-        <au_fname>Dean</au_fname>
-        <phone>415 834-2919</phone>
-        <address>5420 College Av.</address>
-        <city>Oakland</city>
-        <state>CA</state>
-        <zip>94609</zip>
-        <contract>true</contract>
-      </authors>
-    </Authors_Table>
-    ```
+   ```xml
+   <Authors_Table>
+     <authors>
+       <au_id>172-32-1176</au_id>
+       <au_lname>White</au_lname>
+       <au_fname>Johnson</au_fname>
+       <phone>408 496-7223</phone>
+       <address>10932 Bigge Rd.</address>
+       <city>Menlo Park</city>
+       <state>CA</state>
+       <zip>94025</zip>
+       <contract>true</contract>
+     </authors>
+     <authors>
+       <au_id>213-46-8915</au_id>
+       <au_lname>Green</au_lname>
+       <au_fname>Margie</au_fname>
+       <phone>415 986-7020</phone>
+       <address>309 63rd St. #411</address>
+       <city>Oakland</city>
+       <state>CA</state>
+       <zip>94618</zip>
+       <contract>true</contract>
+     </authors>
+     <authors>
+       <au_id>238-95-7766</au_id>
+       <au_lname>Carson</au_lname>
+       <au_fname>Cheryl</au_fname>
+       <phone>415 548-7723</phone>
+       <address>589 Darwin Ln.</address>
+       <city>Berkeley</city>
+       <state>CA</state>
+       <zip>94705</zip>
+       <contract>true</contract>
+     </authors>
+     <authors>
+       <au_id>267-41-2394</au_id>
+       <au_lname>Hunter</au_lname>
+       <au_fname>Anne</au_fname>
+       <phone>408 286-2428</phone>
+       <address>22 Cleveland Av. #14</address>
+       <city>San Jose</city>
+       <state>CA</state>
+       <zip>95128</zip>
+       <contract>true</contract>
+     </authors>
+     <authors>
+       <au_id>274-80-9391</au_id>
+       <au_lname>Straight</au_lname>
+       <au_fname>Dean</au_fname>
+       <phone>415 834-2919</phone>
+       <address>5420 College Av.</address>
+       <city>Oakland</city>
+       <state>CA</state>
+       <zip>94609</zip>
+       <contract>true</contract>
+     </authors>
+   </Authors_Table>
+   ```
 
-4.  上**文件**菜单中，选择**保存 authors.xml**。
+4. 上**文件**菜单中，选择**保存 authors.xml**。
 
 ## <a name="create-the-user-interface"></a>创建用户界面
 
@@ -155,7 +152,7 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
     |控件|属性|设置|
     |-------------|--------------|-------------|
     |`TextBox1`|**多行**|`true`|
-    ||**滚动条**|**垂直**|
+    ||ScrollBars|**垂直**|
     |`Button1`|**名称**|`ReadXmlButton`|
     ||**文本**|`Read XML`|
     |`Button2`|**名称**|`ShowSchemaButton`|
@@ -202,7 +199,7 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 
      **代码编辑器**在打开`ShowSchemaButton_Click`事件处理程序。
 
-3.  粘贴下面的代码插入`ShowSchemaButton_Click`事件处理程序。
+3.  将下面的代码粘贴到 `ShowSchemaButton_Click` 事件处理程序中：
 
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
@@ -225,11 +222,11 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 
 本演练介绍了 XML 文件读取到数据集，以及创建基于 XML 文件的内容架构的基础知识。 下面是一些你可能会在接下来执行的任务：
 
--   编辑数据集，将它写回以 XML 形式的数据。 有关详细信息，请参阅<xref:System.Data.DataSet.WriteXml%2A>。
+-   编辑数据集，将它写回以 XML 形式的数据。 有关更多信息，请参见<xref:System.Data.DataSet.WriteXml%2A>。
 
 -   编辑数据集中的数据并将其写出到数据库。
 
 ## <a name="see-also"></a>请参阅
 
-- [访问 Visual Studio 中的数据](../data-tools/accessing-data-in-visual-studio.md)
+- [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)
 - [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

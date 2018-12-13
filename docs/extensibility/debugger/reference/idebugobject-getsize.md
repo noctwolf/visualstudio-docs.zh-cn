@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetSize |Microsoft 文档
+title: IDebugObject::GetSize |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3a6880b7b3a09b92ca4dd9c31d01cb1c05d1620
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08dcc3306d812dafe99b22ec534a81b4420606c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112485"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926028"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
-获取用字节表示的对象的大小。  
+获取对象的大小以字节为单位。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,14 +41,14 @@ int GetSize(
   
 #### <a name="parameters"></a>参数  
  `pnSize`  
- [out]返回以字节为单位的大小。  
+ [out]以字节为单位返回大小。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回错误代码。  
+ 如果成功，则返回 S_OK;否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 使用[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)方法来检索为一个字节序列的值。  
+ 使用[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)方法来检索值，作为一个字节序列。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

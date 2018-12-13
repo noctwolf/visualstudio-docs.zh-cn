@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Clone |Microsoft 文档
+title: IEnumDebugPropertyInfo::Clone |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0f262261b57c7cddd46cd148e1c18731bcaa307
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b0d172200719a1fe2d95d657fc559f69f7b2ded8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937221"
 ---
 # <a name="ienumdebugpropertyinfoclone"></a>IEnumDebugPropertyInfo::Clone
-创建包含与当前的枚举器相同的枚举状态的枚举。  
+创建一个包含当前枚举数形式的相同枚举状态的枚举器。  
   
 ## <a name="syntax"></a>语法  
   
@@ -43,5 +43,5 @@ HRESULT Clone (
 ## <a name="return-value"></a>返回值  
  返回一个有效`HRESULT`，通常`S_OK`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEnumDebugPropertyInfo 接口](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

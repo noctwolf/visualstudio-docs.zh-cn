@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中重构代码
+title: 重构
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75945e1a3e66951021866370d043a645c8918541
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 3275e03139b9befff0ec0e1f817bc8b54532bb72
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447682"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159426"
 ---
 # <a name="refactor-code"></a>重构代码
 
@@ -29,6 +29,7 @@ ms.locfileid: "34447682"
 ## <a name="see-also"></a>请参阅
 
 - [快速操作](../ide/quick-actions.md)
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)
 - [预览更改](../ide/preview-changes.md)
+- [重构 (Visual Studio for Mac)](/visualstudio/mac/refactoring)

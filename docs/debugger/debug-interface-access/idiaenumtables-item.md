@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumtables:: Item |Microsoft 文档'
+title: 'Idiaenumtables:: Item |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a9dbba4226e0fa4f591bfc48b03add62ad75b3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dc95fe0f57eabbd933f8de842d842914948f3e4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819949"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
 检索通过索引或名称的表。  
@@ -35,16 +35,16 @@ HRESULT Item (
   
 #### <a name="parameters"></a>参数  
  `index`  
- [in]索引或名称[IDiaTable](../../debugger/debug-interface-access/idiatable.md)要检索。 如果使用整数变体，则它必须是范围 0 到`count`-1，其中`count`是通过返回[idiaenumtables:: Get_count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)方法。  
+ [in]索引或名称[IDiaTable](../../debugger/debug-interface-access/idiatable.md)要检索。 如果使用整数变量，则它必须是介于 0 到`count`-1，其中`count`与返回的[idiaenumtables:: Get_count](../../debugger/debug-interface-access/idiaenumtables-get-count.md)方法。  
   
  `table`  
- [out]返回[IDiaTable](../../debugger/debug-interface-access/idiatable.md)表示所需的表对象。  
+ [out]返回[IDiaTable](../../debugger/debug-interface-access/idiatable.md)对象，表示所需的表。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 如果指定一个字符串变量，则该字符串命名特定表。 中定义的名称应表名称之一[常量 (调试接口访问 SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)。  
+ 如果指定的字符串变体，则该字符串命名为特定表。 该名称应是表名称之一中定义[常量 (调试接口访问 SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)。  
   
 ## <a name="example"></a>示例  
   

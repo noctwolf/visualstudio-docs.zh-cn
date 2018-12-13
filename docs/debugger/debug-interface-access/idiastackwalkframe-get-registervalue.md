@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkframe:: Get_registervalue |Microsoft 文档'
+title: 'Idiastackwalkframe:: Get_registervalue |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d45f9df66783223c78822d631a2bbfc04316e2b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 98c7ba6fdca3c9d2fd7bf898d864e9aca0670e6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843114"
 ---
 # <a name="idiastackwalkframegetregistervalue"></a>IDiaStackWalkFrame::get_registerValue
 检索寄存器的值。  
@@ -35,7 +35,7 @@ HRESULT get_registerValue (
   
 #### <a name="parameters"></a>参数  
  `index`  
- [in]取值范围为[CV_HREG_e 枚举](../../debugger/debug-interface-access/cv-hreg-e.md)枚举指定要获取的值的登记。  
+ [in]中的值[CV_HREG_e 枚举](../../debugger/debug-interface-access/cv-hreg-e.md)指定注册以获取其值的枚举。  
   
  `pRetVal`  
  [out]返回注册的当前值。  

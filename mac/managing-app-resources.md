@@ -5,16 +5,16 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
-ms.openlocfilehash: a2ae5dead3dac49938b49f7a7ee7a85679492732
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: e4182bdcc8e2a97b152d5548b07cd03a152607ff
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224045"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296367"
 ---
 # <a name="managing-app-resources"></a>管理应用资源
 
-应用资源文件（如图像、文本文件和音频文件）对你的应用程序是必要的，但它们不使用应用程序编译。 Visual Studio for Mac 支持的每个平台以不同的方式处理这些资源，如以下指南中所述：
+应用资源文件（如图像、文本文件和音频文件）对你的应用程序是必要的，但它们不使用应用程序进行编译。 Visual Studio for Mac 支持的每个平台以不同的方式处理这些资源，如以下指南中所述：
 
 ## <a name="xamarinforms"></a>Xamarin.Forms
 
@@ -23,13 +23,11 @@ Xamarin.Forms 代码在多个平台上运行 - 其中每个平台都具有其自
 * [使用图像](https://developer.xamarin.com/guides/xamarin-forms/user-interface/images/)
 * [使用文件]( https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/files/)
 
-
 ## <a name="xamarinios"></a>Xamarin.iOS
 
 * [使用资源](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_resources/)
 * [使用图像](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_images/)
 * [使用文件系统](https://developer.xamarin.com/guides/ios/application_fundamentals/working_with_the_file_system/)
-
 
 ## <a name="xamarinandroid"></a>Xamarin.Android
 
@@ -39,4 +37,6 @@ Xamarin.Forms 代码在多个平台上运行 - 其中每个平台都具有其自
 
 * [使用图像](https://developer.xamarin.com/guides/mac/application_fundamentals/working-with-images/)
 
+## <a name="see-also"></a>请参阅
 
+- [管理应用程序资源（Windows 上的 Visual Studio）](/visualstudio/ide/managing-application-resources-dotnet)

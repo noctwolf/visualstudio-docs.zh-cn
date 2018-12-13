@@ -13,22 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8999d3acdd9160ea33f6e1fa9d07dc9f69619b01
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176757"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896466"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>编辑测试组合以指定在负载测试方案中包括哪些 Web 浏览器类型
 
 浏览器组合提供了一种在负载测试方案中更真实地模拟负载的方法。 负载是使用异类 Web 浏览器组合（而非单一种类的 Web 浏览器）生成的。 这样便创建了一种与你的应用程序所使用的 Web 浏览器更为接近的浏览器使用情形。
 
- 浏览器组合指定了虚拟用户在负载测试方案中运行特定 Web 浏览器类型的概率。 创建负载测试时，你可能希望模拟通过多个 Web 浏览器生成负载的情况。 从提供的 Web 浏览器集向浏览器组合中添加 Web 浏览器类型时，将在 Web 性能测试所提交的每个 HTTP 请求中添加一组与所选 Web 浏览器相关联的标头。
+浏览器组合指定了虚拟用户在负载测试方案中运行特定 Web 浏览器类型的概率。 创建负载测试时，你可能希望模拟通过多个 Web 浏览器生成负载的情况。 从提供的 Web 浏览器集向浏览器组合中添加 Web 浏览器类型时，将在 Web 性能测试所提交的每个 HTTP 请求中添加一组与所选 Web 浏览器相关联的标头。
 
- 浏览器组合的工作方式与其他组合选项的工作方式相似。 Web 浏览器类型基于浏览器组合与虚拟用户随机关联。 该用户的测试基于你在组合中指定的概率在特定 Web 浏览器上运行。
+浏览器组合的工作方式与其他组合选项的工作方式相似。 Web 浏览器类型基于浏览器组合与虚拟用户随机关联。 该用户的测试基于你在组合中指定的概率在特定 Web 浏览器上运行。
 
- 指定了浏览器组合后，可以稍后向该组合中添加以及从中移除 Web 浏览器类型。 还可以使用组合控件来更改浏览器组合的分发方案。 通过组合控件，您可以轻松地调整方案中浏览器的分布。
+指定了浏览器组合后，可以稍后向该组合中添加以及从中移除 Web 浏览器类型。 还可以使用组合控件来更改浏览器组合的分发方案。 通过组合控件，您可以轻松地调整方案中浏览器的分布。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-browsers-to-a-scenario"></a>向方案中添加新浏览器
 

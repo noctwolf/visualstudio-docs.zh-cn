@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: b9d66539d10fe97cefbba51295b43fcfa19be50a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379827"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882387"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>在 Azure Batch AI 中训练 AI 模型
 
@@ -27,16 +27,15 @@ Batch AI 是一种托管服务，使数据科学家和 AI 研究人员可以在 
 
 1. 启动 Visual Studio。 通过打开“AI 工具”菜单，然后选择“选择群集”，来打开“服务器资源管理器”
 
-    ![群集选择器](media\train-model\select-cluster.png)
-
+    ![群集选择器](media/train-model/select-cluster.png)
 
 2. 展开“AI 工具”。 你具有的任何 Batch AI 资源都会自动检测到并出现在服务器资源管理器中。
 
-    ![示例库](media\train-model\batchai.png)
+    ![示例库](media/train-model/batchai.png)
 
-3. 选择“视图”>“团队资源管理器...”，打开“团队资源管理器”窗口，可在该窗口中连接到 GitHub 或 Visual Studio Team Services，或者克隆存储库。
+3. 选择“视图”>“团队资源管理器...”，打开“团队资源管理器”窗口，可在该窗口中连接到 GitHub 或 Azure DevOps Services，或者克隆存储库。
 
-    ![显示 Visual Studio Team Services、GitHub 并克隆存储库的“团队资源管理器”窗口](media\train-model\team-explorer.png)
+    ![显示 Azure DevOps、GitHub 并克隆存储库的“团队资源管理器”窗口](media/train-model/team-explorer.png)
 
 4. 在“本地 Git 存储库”下的 URL 字段中，输入 `https://github.com/Microsoft/samples-for-ai`，为克隆文件输入一个文件夹，然后选择“克隆”。
 
@@ -45,20 +44,19 @@ Batch AI 是一种托管服务，使数据科学家和 AI 研究人员可以在 
 
 5. 克隆完成后，单击“文件”>“打开解决方案”>“项目/解决方案”
 
-    ![示例库](media\train-model\open-solution.png)
+    ![示例库](media/train-model/open-solution.png)
 
-5. 打开克隆存储库的目录中的 samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln
+6. 打开克隆存储库的目录中的 samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln
 
-    ![示例库](media\train-model\tensorflowexamples.png)
+    ![示例库](media/train-model/tensorflowexamples.png)
 
-5. 将 MNIST 项目设置为“启动项目”
+7. 将 MNIST 项目设置为“启动项目”
 
-    ![示例库](media\train-model\mnist-startup.png)
+    ![示例库](media/train-model/mnist-startup.png)
 
-1. 右键单击 MNIST 项目的“提交作业”
+8. <strong>右键单击 MNIST 项目的“提交作业”****</strong>
 
-    ![示例库](media\train-model\submit-job.png)
+    ![示例库](media/train-model/submit-job.png)
+9. 选择“Azure Batch AI”群集，然后单击“导入”。 选择 `AzureBatchAI_TF_MNIST.json` 文件以快速填充一些默认值，如要使用的 Docker 映像。 然后单击“提交”
 
-1. 选择“Azure Batch AI”群集，然后单击“导入”。 选择 `AzureBatchAI_TF_MNIST.json` 文件以快速填充一些默认值，如要使用的 Docker 映像。 然后单击“提交”
-
-    ![示例库](media\train-model\submit-batch.png)
+    ![示例库](media/train-model/submit-batch.png)

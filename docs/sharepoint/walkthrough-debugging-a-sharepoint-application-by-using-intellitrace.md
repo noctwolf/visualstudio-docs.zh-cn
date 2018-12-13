@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59f801c79c8bb19a63064bdac2fe717ee3e3a845
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42624443"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295575"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>演练： 使用 IntelliTrace 调试 SharePoint 应用程序
 
@@ -46,7 +46,7 @@ ms.locfileid: "42624443"
 
 - [调试并修复 SharePoint 解决方案](#BKMK_DebugSolution)
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -265,15 +265,15 @@ ms.locfileid: "42624443"
 
 3. 通过执行以下步骤停用功能：
 
-    1. 上**站点操作**在 SharePoint 中，菜单中，选择**站点设置**。
+   1. 上**站点操作**在 SharePoint 中，菜单中，选择**站点设置**。
 
-    2. 下**站点操作**，选择**管理站点功能**链接。
+   2. 下**站点操作**，选择**管理站点功能**链接。
 
-    3. 下一步**IntelliTraceTest Feature1**，选择**停用**按钮。
+   3. 下一步**IntelliTraceTest Feature1**，选择**停用**按钮。
 
-    4. 在警告页上选择**停用此功能**链接。
+   4. 在警告页上选择**停用此功能**链接。
 
-     FeatureDeactivating() 事件处理程序将引发错误。
+      FeatureDeactivating() 事件处理程序将引发错误。
 
 ## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent 收集 IntelliTrace 数据
 
@@ -286,15 +286,15 @@ ms.locfileid: "42624443"
 
 2. 停用功能：
 
-    1. 上**站点操作**在 SharePoint 中，菜单中，选择**站点设置**。
+   1. 上**站点操作**在 SharePoint 中，菜单中，选择**站点设置**。
 
-    2. 下**站点操作**，选择**管理站点功能**链接。
+   2. 下**站点操作**，选择**管理站点功能**链接。
 
-    3. 下一步**IntelliTraceTest Feature1**，选择**停用**按钮。
+   3. 下一步**IntelliTraceTest Feature1**，选择**停用**按钮。
 
-    4. 在警告页上选择**停用此功能**链接。
+   4. 在警告页上选择**停用此功能**链接。
 
-     出错时 （在这种情况下，由于 FeatureDeactivating() 事件处理程序中引发的错误）。
+      出错时 （在这种情况下，由于 FeatureDeactivating() 事件处理程序中引发的错误）。
 
 3. 在 PowerShell 窗口中，运行[Stop-webapplicationmonitoring](http://go.microsoft.com/fwlink/?LinkID=313687)命令以创建.iTrace 文件，停止监视，然后重新启动您的 SharePoint 解决方案。
 
@@ -336,4 +336,4 @@ ms.locfileid: "42624443"
 
 [验证和调试 SharePoint 代码](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
 [IntelliTrace](/visualstudio/debugger/intellitrace)  
-[演练： 使用单元测试来验证 SharePoint 代码](https://msdn.microsoft.com/library/gg599006(v=vs.100).aspx)
+[演练： 使用单元测试来验证 SharePoint 代码](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))

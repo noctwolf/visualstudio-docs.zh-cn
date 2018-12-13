@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
-ms.translationtype: MT
+ms.openlocfilehash: dd847a4db232d32c941722d5ee537a21bdaf33a8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468525"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349161"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>演练：调试 Windows 窗体
 Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标准的 Windows 应用程序。 你可以完成此演练使用 Visual Basic、 C# 或 c + +。  
@@ -59,7 +59,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
 4.  单击 **“确定”**。  
   
-     Visual Studio 创建一个新项目，并在 Windows 窗体设计器中显示新窗体。 有关详细信息，请参阅[Windows 窗体设计器](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15)。  
+     Visual Studio 创建一个新项目，并在 Windows 窗体设计器中显示新窗体。 有关详细信息，请参阅[Windows 窗体设计器](/previous-versions/visualstudio/visual-studio-2010/e06hs424\(v\=vs.100\))。  
   
 5.  上**视图**菜单中，选择**工具箱**。  
   
@@ -110,7 +110,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
     textBox1->Text = "Button was clicked!";  
     ``` 
   
-     出现一个红点并且该行上的文本突出显示为红色。 红点表示一个断点。 有关详细信息，请参阅[断点](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。 当你在调试器下运行该应用程序时，此调试器将在命中该代码时在该位置中断执行。 然后您可以查看应用程序的状态并调试它。  
+     出现一个红点并且该行上的文本突出显示为红色。 红点表示一个断点。 有关详细信息，请参阅[断点](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。 当你在调试器下运行该应用程序时，此调试器将在命中该代码时在该位置中断执行。 然后您可以查看应用程序的状态并调试它。  
   
     > [!NOTE]
     >  此外可以右键单击任意行的代码中，指向**断点**，然后单击**插入断点**该行上添加断点。  

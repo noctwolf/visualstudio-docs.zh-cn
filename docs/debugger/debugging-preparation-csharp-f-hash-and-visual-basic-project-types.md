@@ -1,6 +1,6 @@
 ---
-title: '调试准备： C#、 F # 和 Visual Basic 项目类型 |Microsoft 文档'
-ms.custom: ''
+title: 准备调试C#， F#，和 VB 项目 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d590a186f5198feea6a89320897d9d4fa5c4481
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 67833f3b4387c0606c3ce1f0b99cac50f0c0b501
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479211"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063443"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>调试准备：C#、F# 和 Visual Basic 项目类型
 本节主题描述如何调试由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目模板创建的 C#、F# 和 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目类型。  
   
- 请注意，创建 Dll 作为其输出这些项目类型已被分组到[调试 DLL 项目](../debugger/debugging-dll-projects.md)由于它们共享的常见功能。  
+ 请注意，创建 Dll 作为其输出的这些项目类型已被分组到[调试 DLL 项目](../debugger/debugging-dll-projects.md)由于它们共享的常见功能。  
   
 ## <a name="in-this-section"></a>本节内容  
- [推荐的属性设置](../debugger/managed-debugging-recommended-property-settings.md)  
+ [建议的属性设置](../debugger/managed-debugging-recommended-property-settings.md)  
  本节描述 C#、F# 和 Visual Basic 项目中推荐的与调试有关的属性设置。  
   
  [Windows 窗体应用程序](../debugger/debugging-preparation-windows-forms-applications.md)  

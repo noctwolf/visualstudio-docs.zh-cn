@@ -1,5 +1,5 @@
 ---
-title: IDebugCanStopEvent2::CanStop |Microsoft 文档
+title: IDebugCanStopEvent2::CanStop |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3e2507ba86e00434c12a67ba70cad51fa5850ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 545d1ea57c207429b7aeb999384b6d5ffbb6c723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861665"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
-通知的调试引擎 (DE) 以停止在当前的代码位置，或只需继续执行。  
+通知在当前代码位置停止，或只需继续执行调试引擎 (DE)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,17 +41,17 @@ int CanStop (
   
 #### <a name="parameters"></a>参数  
  `fCanStop`  
- [in]非零 (`TRUE`) 如果 DE 应停止在当前的代码位置; 否则为零 (`FALSE`)。  
+ [in]非零 (`TRUE`) 如果 DE 应停止在当前代码位置; 否则为零 (`FALSE`)。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此事件的接收方通常调用[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)方法以确定 DE 想要停止的原因，然后调用`IDebugCanStopEvent2::CanStop`与适当的响应的方法。  
+ 此事件的接收方通常会调用[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)方法，以确定 DE 想要停止的原因，然后调用`IDebugCanStopEvent2::CanStop`与适当的响应的方法。  
   
- 如果 DE 停止，它将发送事件描述停止的原因。 通常有两个事件发送，由用户或信号中断[IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)接口，并且表示断点事件[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)接口。  
+ 如果 DE 停止，它将发送事件，介绍了停止的原因。 通常有两个发送的事件，表示用户或信号中断[IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)接口，并且表示的断点事件[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)   
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)   

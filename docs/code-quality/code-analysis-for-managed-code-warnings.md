@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8c092543dc24be8ac84f683196f73c8fb264f9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 600b5c7822232581cd01bd9bbf7616f4d1e9bb7c
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919890"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859063"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>托管代码的代码分析警告
 托管代码分析工具可以发出警告，指示托管代码库中存在违反规则的情况。 这些警告将被分类到各个规则领域，例如设计、本地化、性能和安全性。 每个警告表示一次托管代码分析规则冲突。 本部分深入讨论每个托管代码分析警告，并提供相关示例。
@@ -46,17 +46,17 @@ ms.locfileid: "31919890"
 
 |||
 |-|-|
-|[按 checkid 排列的警告](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|列出按 CheckId 排列的所有警告|
+|[按 CheckId 排列的警告](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|列出按 CheckId 排列的所有警告|
 |[加密警告](../code-quality/cryptography-warnings.md)|支持通过正确使用加密机制提高库和应用程序安全的警告。|
-|[设计警告](../code-quality/design-warnings.md)|支持由 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 设计准则指定的正确库设计的警告|
+|[设计警告](../code-quality/design-warnings.md)|支持由.NET Framework 设计准则指定的正确库设计的警告。|
 |[全球化警告](../code-quality/globalization-warnings.md)|支持世界通用库和应用程序的警告。|
 |[互操作性警告](../code-quality/interoperability-warnings.md)|支持与 COM 客户端交互的警告。|
 |[维护性警告](../code-quality/maintainability-warnings.md)|支持库和应用程序维护的警告。|
 |[Mobility Warnings](../code-quality/mobility-warnings.md)|支持高效使用电源的警告。|
-|[命名警告](../code-quality/naming-warnings.md)|支持遵从 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 设计准则命名约定的警告。|
+|[命名警告](../code-quality/naming-warnings.md)|支持对.NET Framework 设计准则的命名约定的遵从性的警告。|
 |[性能警告](../code-quality/performance-warnings.md)|支持高性能库和应用程序的警告。|
 |[Portability Warnings](../code-quality/portability-warnings.md)|支持跨不同平台的可移植性的警告。|
 |[可靠性警告](../code-quality/reliability-warnings.md)|支持库和应用程序可靠性（例如正确使用内存和线程）的警告。|
 |[安全警告](../code-quality/security-warnings.md)|支持更安全的库和应用程序的警告。|
-|[用法警告](../code-quality/usage-warnings.md)|支持适当使用 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]的警告。|
+|[用法警告](../code-quality/usage-warnings.md)|支持的.NET Framework 使用情况的警告。|
 |[Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)|签入时未满足代码分析策略而发生的错误。|

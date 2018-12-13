@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_length |Microsoft 文档'
+title: 'Idiasymbol:: Get_length |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00d58442f0b6e95732dab5a2bc5702e6c500d70a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9f99a2012d0c3f009540c988df6e41b0a7d0cf4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844507"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
-检索比特数或字节由该符号表示的对象使用的内存。  
+检索比特数或通过此符号表示的对象使用的内存字节数。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,16 +34,16 @@ HRESULT get_length (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回的字节数或使用此符号表示的对象的内存的位。  
+ [out]返回的字节数或 bits 通过此符号表示的对象使用的内存。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 如果[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)的符号是`LocIsBitField`，此方法返回的长度是以位为单位; 否则，长度是以字节为单位，对于所有其他位置类型。  
+ 如果[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)的符号是`LocIsBitField`，此方法返回的长度是以位为单位; 否则，长度是以字节为单位的所有其他位置类型。  
   
 ## <a name="example"></a>示例  
   

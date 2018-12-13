@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::WriteDump |Microsoft 文档
+title: IDebugProgram2::WriteDump |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b17d75ace19ac53cbcd229d7c15de573c1ecb8b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d2953b3f30a0d485b58afc04e8ce42158a7537e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905242"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
-转储写入文件。  
+将转储写入到一个文件。  
   
 ## <a name="syntax"></a>语法  
   
@@ -43,16 +43,16 @@ int WriteDump(
   
 #### <a name="parameters"></a>参数  
  `DumpType`  
- [in]取值范围为[DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md)枚举，它指定的一种转储，例如、 short 或 long 类型的值。  
+ [in]中的值[DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md)枚举，用于指定的转储，类型，例如，简单地说或长时间。  
   
  `pszDumpUrl`  
- [in]要写入到转储的 URL。 通常，这是形式`file://c:\path\filename.ext`，但可能是任何有效的 URL。  
+ [in]要写入转储的 URL。 通常，这是中的窗体`file://c:\path\filename.ext`，但可能是任何有效的 URL。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 程序转储通常将包括当前堆栈帧，堆栈本身、 运行程序，并可能程序拥有任何内存中的线程的列表。  
+ 程序转储通常将包括当前堆栈帧，堆栈本身，在该程序，并且可能是任何程序拥有的内存中运行的线程的列表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

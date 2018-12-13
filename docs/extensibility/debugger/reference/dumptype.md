@@ -1,5 +1,5 @@
 ---
-title: DUMPTYPE |Microsoft 文档
+title: DUMPTYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa44dfa59f4883fa29a1724344124267f28bce9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5e886649a7eaa5f9f99eb2e2bfcc48985f12a5e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099631"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949547"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-指定多少 （例如正在运行的线程，堆栈帧和当前的指令地址） 的程序的状态进行转储。  
+指定的程序的状态 （例如正在运行的线程、 堆栈帧和当前指令地址） 进行转储。  
   
 ## <a name="syntax"></a>语法  
   
@@ -44,13 +44,13 @@ public enum enum_DUMPTYPE {
   
 ## <a name="members"></a>成员  
  DUMP_MINIDUMP  
- 指定小、 compact 转储。  
+ 指定小、 更简洁的转储。  
   
  DUMP_FULLDUMP  
- 指定的大型、 完成转储。  
+ 指定较大的完整转储。  
   
 ## <a name="remarks"></a>备注  
- 作为自变量传递[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)方法。  
+ 作为参数传递[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -59,6 +59,6 @@ public enum enum_DUMPTYPE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)

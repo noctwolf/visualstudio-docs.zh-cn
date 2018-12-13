@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb2173395e3d1fd2cb825260e1895ee1fb194140
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9f93dea099d9223347c727f3e7a838fcb78d3742
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176705"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863629"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>以双向语言创建应用程序
 
@@ -30,9 +30,9 @@ ms.locfileid: "39176705"
 
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>支持双向语言的应用程序类型
 
--  Windows 应用程序。 你可以创建完全双向的应用程序，包括支持双向文本、从右向左的读取顺序以及镜像（用于翻转窗口、菜单、对话框等的布局）。 除镜像外，这些功能都作为默认功能或属性设置提供。 某些功能（例如消息框）本身就支持镜像。 但在其他情况下，必须通过代码实现镜像。 有关详细信息，请参阅 [Windows 窗体应用程序的双向支持](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2)。
+-  Windows 应用程序。 你可以创建完全双向的应用程序，包括支持双向文本、从右向左的读取顺序以及镜像（用于翻转窗口、菜单、对话框等的布局）。 除镜像外，这些功能都作为默认功能或属性设置提供。 某些功能（例如消息框）本身就支持镜像。 但在其他情况下，必须通过代码实现镜像。 有关详细信息，请参阅 [Windows 窗体应用程序的双向支持](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)。
 
--  Web 应用程序。 Web 服务支持和收发 UTF-8 及 Unicode 文本，从而使它们适用于涉及双向语言的应用程序。 Web 客户端应用程序需借助浏览器的用户界面，因此，Web 应用程序中的双向支持程度取决于用户的浏览器对这些双向功能的支持程度。 在 Visual Studio 中，创建的应用程序可以支持阿拉伯语或希伯来语文本、从右向左读取顺序、文件编码和本地区域性设置。 有关详细信息，请参阅 [ASP.NET Web 应用程序的双向支持](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)。
+-  Web 应用程序。 Web 服务支持和收发 UTF-8 及 Unicode 文本，从而使它们适用于涉及双向语言的应用程序。 Web 客户端应用程序需借助浏览器的用户界面，因此，Web 应用程序中的双向支持程度取决于用户的浏览器对这些双向功能的支持程度。 在 Visual Studio 中，创建的应用程序可以支持阿拉伯语或希伯来语文本、从右向左读取顺序、文件编码和本地区域性设置。 有关详细信息，请参阅 [ASP.NET Web 应用程序的双向支持](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)。
 
 -  控制台应用程序。 控制台应用程序不包括对双向语言的文本支持。 这是 Windows 与控制台应用程序搭配使用方式的结果。
 
@@ -89,6 +89,6 @@ ms.locfileid: "39176705"
 ## <a name="see-also"></a>请参阅
 
 - [Windows 窗体应用程序的双向支持](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)
-- [ASP.NET Web 应用程序的双向支持](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)
+- [ASP.NET Web 应用程序的双向支持](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)
 - [实现应用程序全球化](../ide/globalizing-applications.md)
 - [实现应用程序本地化](../ide/localizing-applications.md)

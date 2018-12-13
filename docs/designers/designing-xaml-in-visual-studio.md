@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: e39a7d770308cae7e022d419b21695f9d478aad7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c23a73302e5d4771b3372b8f4534b42806156da0
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381688"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389612"
 ---
 # <a name="design-xaml-in-visual-studio"></a>在 Visual Studio 中设计 XAML
 
@@ -48,11 +48,11 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
      ![文件重新加载体验](../designers/media/blendfilereload.png)
 
-- **同步的布局和设置：** 通过自定义布局可以保存并应用工具窗口布局自定义项。 使用相同 Microsoft 帐户登录时，Visual Studio 会在计算机之间为 Visual Studio 和 Blend for Visual Studio 同步这些自定义项和首选项。 请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+- **同步的布局和设置：** 通过自定义布局可以保存并应用工具窗口布局自定义项。 使用相同 Microsoft 帐户登录时，Visual Studio 会在计算机之间为 Visual Studio 和 Blend for Visual Studio 同步这些自定义项和首选项。 请参见[跨多台计算机同步设置](../ide/synchronized-settings-in-visual-studio.md)。
 
 - **通用的解决方案资源管理器：** 解决方案资源管理器可提供项目及其文件的组织有序的视图，并且可用于访问与它们关联的命令。 借助解决方案资源管理器，可以更方便地处理大型企业项目。 请参阅[解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)。
 
-- **团队资源管理器：** 通过团队资源管理器可以使用 GIT 或 TFS 存储库管理项目以促进团队协作。 请参阅 [在团队资源管理器中工作](http://msdn.microsoft.com/Library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)。
+- **团队资源管理器：** 通过团队资源管理器可以使用 GIT 或 TFS 存储库管理项目以促进团队协作。 请参阅 [在团队资源管理器中工作](/azure/devops/user-guide/work-team-explorer)。
 
 - **NuGet：** 可以在 Visual Studio 和 Blend for Visual Studio 中管理 NuGet 包。 NuGet 是用于 .NET Framework 的程序包管理器，它简化了从解决方案安装和删除程序包的过程。
 
@@ -61,7 +61,7 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 若要提高工作效率，请考虑对以下任务使用 Blend for Visual Studio。 Blend for Visual Studio 在这些领域中可提供比单独 Visual Studio 设计器或代码更快的速度和更多的功能。
 
 |到|Visual Studio|Blend for Visual Studio|详细信息|
-|--------|-------------------|-----------------------------|----------------------|
+|--------|-------------------| - | - |
 |**创建动画**|没有用于动画的设计工具；必须以编程方式创建它们。 这需要对 WPF 中的动画和时间系统的了解以及丰富的编码专业知识。|可直观地创建动画，并且可以在 Blend for Visual Studio 中预览它们。 这比采用代码构建动画更快且更精确。 可以添加触发器以处理用户交互，并且可以切换到代码以添加事件处理程序和其他功能。|[动态显示对象](../designers/animate-objects-in-xaml-designer.md)|
 |**将形状和文本转换为路径以便于操作**|不支持。|可以通过将形状（如矩形和椭圆）转换为路径（这样可提供更好的编辑控制）来对形状进行细微或显著的更改。 可以重新调整路径形状或合并路径，以及从多个形状创建复合路径。<br /><br /> 还可以将文本块转换为路径以便将它们作为矢量图像进行操作。|[绘制形状和路径](../designers/draw-shapes-and-paths.md)|
 |**向 UI 设计添加交互性**|需要 C#、Visual Basic 或 C++ 代码。|将行为拖放到控件上以便向静态设计添加交互性。 行为是随时可用的代码段，用于封装各种功能（例如拖放、缩放和可视状态更改）。 有一组不断增加的行为可供选择，并且可以创建自己的行为。<br /><br /> 随后可以通过在 Blend for Visual Studio 中更改其属性或在代码中添加事件处理程序，来自定义每个行为。|[插入控件并修改其行为](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)|

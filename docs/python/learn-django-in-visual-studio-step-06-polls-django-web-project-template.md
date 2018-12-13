@@ -1,7 +1,7 @@
 ---
 title: 教程 - 了解 Visual Studio 中的 Django，步骤 6
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了投票 Django Web 项目模板的功能，例如管理自定义。
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8b8ec4495c12132b89561bcbbaaf8ebfdbe3483
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 94c858a847e0e5029a989a6939a2094ed3792903
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626857"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001251"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步骤 6：使用投票 Django Web 项目模板
 
@@ -118,7 +118,7 @@ class Choice(models.Model):
 
 字段类型的完整列表包括 `CharField`（受限文本）、`TextField`（不受限制的文本）、`EmailField`、`URLField`、`DateTimeField`、`IntegerField`、`DecimalField`、`BooleanField`、`ForeignKey`，和 `ManyToMany`。 每个字段都采用一些属性，如 `max_length`。 `blank=True` 属性表示字段是可选的；`null=true` 表示值是可选的。 此外还有一个 `choices` 属性，它限制数据值/显示值元组数组中值的值。 （请参阅 Django 文档中的[模型字段引用](https://docs.djangoproject.com/en/2.0/ref/models/fields/)。）
 
-可使用像 [SQLite 浏览器](http://sqlitebrowser.org/)这样的工具检查项目中的 db.sqlite3 文件，从而准确地确认数据库中存储的内容。 在数据库中，会看到“选择”模型中像 `poll` 这样的外键字段存储为 `poll_id`；Django 会自动处理映射。
+可使用像 [SQLite 浏览器](https://sqlitebrowser.org/)这样的工具检查项目中的 db.sqlite3 文件，从而准确地确认数据库中存储的内容。 在数据库中，会看到“选择”模型中像 `poll` 这样的外键字段存储为 `poll_id`；Django 会自动处理映射。
 
 一般来说，在 Django 中使用数据库意味着可以以独占方式通过模型进行工作，使 Django 可以代表你管理基础数据库。
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-要想看到效果，首先运行应用，查看是否尚不存在投票。 然后访问“/seed”URL，当应用返回到主页时，应会看到投票已变得可用。 同样，可以随时使用 [SQLite 浏览器](http://sqlitebrowser.org/)之类的工具检查原始 db.sqlite3 文件。
+要想看到效果，首先运行应用，查看是否尚不存在投票。 然后访问“/seed”URL，当应用返回到主页时，应会看到投票已变得可用。 同样，可以随时使用 [SQLite 浏览器](https://sqlitebrowser.org/)之类的工具检查原始 db.sqlite3 文件。
 
 ![使用接受种子设定的数据库的投票 Django Web 项目应用](media/django/step06-app-with-seeded-database.png)
 
@@ -368,7 +368,7 @@ admin.site.register(Poll, PollAdmin)
 
 在开发计算机上运行 Web 应用只是使应用可供客户使用的一个步骤。 后续步骤可能包括以下任务：
 
-- 将 Web 应用部署到生产服务器，如 Azure 应用服务。 请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)，其中包括 Django 应用所需的特定更改。
+- 将 Web 应用部署到生产服务器，如 Azure 应用服务。 请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 - 通过创建一个名为 templates/404.html 的模板来自定义 404 页。 如果存在该模板，Django 会使用此模板而不是其默认模板。 有关详细信息，请参阅 Django 文档中的[错误视图](https://docs.djangoproject.com/en/2.0/ref/views/#error-views)。
 
@@ -376,8 +376,4 @@ admin.site.register(Poll, PollAdmin)
 
 - 将应用从 SQLite 更改为生产级数据存储，如 PostgreSQL、MySQL 和 SQL Server（它们都可以在 Azure 上托管）。 如[何时使用 SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org) 中所述，SQLite 适用于低到中等规模的流量站点（一天点击量不足 100K），不建议用于高点击量网站。 此外，它还仅限于一台计算机，因此不能在任何多服务器场景中使用，例如负载均衡和异地复制。 有关 Django 对其他数据库的支持的信息，请参阅[数据库设置](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)。 另外，还可以使用 [Azure SDK for Python](azure-sdk-for-python.md)，以便使用 Azure 存储服务，如表和 blob。
 
-- 在 Visual Studio Team Services (VSTS) 之类的服务上设置持续集成/持续部署管道。 除了使用源代码管理（在 VSTS、GitHub 或其他位置）外，还可以让 VSTS 自动运行单元测试作为发布的先决条件，并在部署到生产环境之前，将管道配置为部署到暂存服务器以进行附加测试。 此外，VSTS 还与监视解决方案（如 App Insights）集成，并使用敏捷规划工具关闭整个周期。 有关详细信息，请参见:
-
-  - [在 Azure DevOps 项目中为 Python 创建 CI/CD 管道](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [通过 Visual Studio Team Services 在 Azure 中开发 Python（视频，11 分 21 秒）](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)。
-
+- 在 Azure DevOps 等服务上设置持续集成/持续部署管道。 除了使用源代码管理（通过 Azure Repos、GitHub 或在其他位置）外，还可以将 Azure DevOps 项目配置为自动运行单元测试作为发布的先决条件，并在部署到生产环境之前，将管道配置为部署到暂存服务器以进行附加测试。 此外，Azure DevOps 还与 App Insights 等监视解决方案集成，并使用敏捷规划工具闭合整个周期。 有关详细信息，请参阅[在 Azure DevOps 项目中为 Python 创建 CI/CD 管道](/azure/devops-project/azure-devops-project-python?view=vsts)以及常规 [Azure DevOps 文档](/azure/devops/?view=vsts)。

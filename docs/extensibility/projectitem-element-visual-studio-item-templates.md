@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fa0e7899e2f6e52536e2296519a1697e27a3643
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855984"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 元素 （Visual Studio 项模板）
 指定在项模板中包含的文件。  
@@ -51,13 +51,13 @@ ms.locfileid: "39637063"
   
 ### <a name="attributes"></a>特性  
   
-|特性|描述|  
-|---------------|-----------------|  
-|`SubType`|可选特性。<br /><br /> 多文件项模板中指定的项的子类型。 此值用于确定在编辑器的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将用于打开该项目。|  
-|`CustomTool`|可选特性。<br /><br /> 在项目文件中设置的项 customtool。|  
-|`ItemType`|可选特性。<br /><br /> 在项目文件中设置项 ItemType。|  
-|`ReplaceParameters`|可选特性。<br /><br /> 一个布尔值，该值指定项是否可以从模板创建项目时，必须将其替换的参数值。 默认值是 `false`。|  
-|`TargetFileName`|可选特性。<br /><br /> 指定从模板创建的项目的名称。 此属性可用于使用参数替换创建的项名称。|  
+| 特性 | 描述 |
+|---------------------| - |
+| `SubType` | 可选特性。<br /><br /> 多文件项模板中指定的项的子类型。 此值用于确定在编辑器的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将用于打开该项目。 |
+| `CustomTool` | 可选特性。<br /><br /> 在项目文件中设置的项 customtool。 |
+| `ItemType` | 可选特性。<br /><br /> 在项目文件中设置项 ItemType。 |
+| `ReplaceParameters` | 可选特性。<br /><br /> 一个布尔值，该值指定项是否可以从模板创建项目时，必须将其替换的参数值。 默认值是 `false`。 |
+| `TargetFileName` | 可选特性。<br /><br /> 指定从模板创建的项目的名称。 此属性可用于使用参数替换创建的项名称。 |
   
 ### <a name="child-elements"></a>子元素  
  无。  

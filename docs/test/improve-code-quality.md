@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 测试工具
+title: 测试工具
 ms.date: 03/16/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd29940bdacdeef4b47432f1b649db4ba61054af
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a619989543b30ccf07cdb300a5688a985cf27eb7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180108"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068242"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio 中的测试工具
 
@@ -42,8 +42,7 @@ Visual Studio 测试工具可帮助你和你的团队达到并保持高标准的
 
 ## <a name="related-scenarios"></a>相关方案
 
-* [探索和手动测试 (VSTS)](/vsts/manual-test/)
-* [负载测试 (VSTS)](/vsts/load-test/index)
-* [持续测试 (VSTS)](/vsts/build-release/test/index)
-* [Team Services 和 TFS 的 DevOps 概述 (VSTS)](/vsts/user-guide/devops-alm-overview)
+* [探索和手动测试 (Azure Test Plans)](/azure/devops/test/index?view=vsts)
+* [负载测试（Azure Test Plans）](/azure/devops/test/load-test/index?view=vsts)
+* [持续测试（Azure Test Plans）](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 * [代码分析工具](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

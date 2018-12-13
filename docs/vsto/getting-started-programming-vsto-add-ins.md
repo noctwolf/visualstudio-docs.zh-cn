@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0443a8fc23c2dc9a78cf35ba8a822fc6627a1c1c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8136a090dbf5e3c3f86ce9b4ade1321f7b36b829
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858883"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO 外接程序编程入门
   你可以使用 VSTO 外接程序来实现 Microsoft Office 应用程序自动化、扩展应用程序的功能，以及自定义应用程序的用户界面 (UI)。 可以使用 Visual Studio 创建 VSTO 外接程序如何与其他类型的 Office 解决方案进行比较的有关信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -60,40 +60,40 @@ ms.locfileid: "35670459"
 ## <a name="customize-the-user-interface-of-applications"></a>自定义应用程序的用户界面  
  有几种方式将 VSTO 外接程序中使用自定义主机应用程序的 UI:  
   
--   对于 Excel 和 Word，可以向文档中添加托管控件。 有关详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+- 对于 Excel 和 Word，可以向文档中添加托管控件。 有关详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
--   如果应用程序支持功能区，则你可以自定义它。 有关详细信息，请参阅[功能区概述](../vsto/ribbon-overview.md)。  
+- 如果应用程序支持功能区，则你可以自定义它。 有关详细信息，请参阅[功能区概述](../vsto/ribbon-overview.md)。  
   
--   如果应用程序支持自定义任务窗格，则你可以创建它。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
+- 如果应用程序支持自定义任务窗格，则你可以创建它。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
   
--   对于 Outlook，你可以创建自定义窗体区域。 有关详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。  
+- 对于 Outlook，你可以创建自定义窗体区域。 有关详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。  
   
--   对于所有 Microsoft Office 应用程序，可以在 VSTO 外接程序中显示 Windows 窗体。  
+- 对于所有 Microsoft Office 应用程序，可以在 VSTO 外接程序中显示 Windows 窗体。  
   
- 有关如何自定义 UI 的 Microsoft Office 应用程序的详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。  
+  有关如何自定义 UI 的 Microsoft Office 应用程序的详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。  
   
 ## <a name="next-steps"></a>后续步骤  
  若要了解如何创建 VSTO 外接程序，请参阅下面的演练：  
   
--   [演练： 创建第一个 VSTO 外接程序 Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+- [演练： 创建第一个 VSTO 外接程序 Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [演练： 创建在第一个 VSTO 外接程序的 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [演练： 创建在第一个 VSTO 外接程序的 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [演练： 为 PowerPoint 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+- [演练： 为 PowerPoint 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [演练： 创建在第一个 VSTO 外接程序项目](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [演练： 创建在第一个 VSTO 外接程序项目](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [演练： 为 Word 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+- [演练： 为 Word 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
- 这些演练介绍 Visual Studio 中的 Office开发工具和 VSTO 外接程序的编程模型。  
+  这些演练介绍 Visual Studio 中的 Office开发工具和 VSTO 外接程序的编程模型。  
   
- 有关指导你完成某些 Office 项目中的常见任务的主题的列表，请参阅[Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)。  
+  有关指导你完成某些 Office 项目中的常见任务的主题的列表，请参阅[Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   
- [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)  
   
   

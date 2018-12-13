@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumlinenumbers:: Next |Microsoft 文档'
+title: 'Idiaenumlinenumbers:: Next |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6015658a72c264f1421c782a1e6e6c28038748a1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9a8c00aa5b3d6e6a9b9251075cc5cc065119cc95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909856"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
 检索指定的数目的枚举序列中的行号。  
@@ -39,7 +39,7 @@ HRESULT Next (
  [in]要检索的枚举器中的行号数。  
   
  rgelt  
- [out]返回的数组[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)表示所需的行号的对象。  
+ [out]返回的数组[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)对象表示所需的行号。  
   
  pceltFetched  
  [out]在提取枚举器返回行号的数。  

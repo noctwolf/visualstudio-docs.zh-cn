@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa4c2f37efe92bfbc3c06e0bc8f0657b1205652a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: efa56c94e211a40e314025ae06d263164de1afd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670322"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833013"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>如何： 以编程方式更新书签文本
   你可以将文本插入 Microsoft Office Word 文档中的占位符书签，以便稍后能够检索到该文本，或替换书签中的文本。 如果你正在开发文档级自定义项，则还可以更新绑定到数据的 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件中的文本。 有关详细信息，请参阅[将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。  
@@ -31,15 +31,15 @@ ms.locfileid: "35670322"
   
  书签对象可为以下两种类型之一：  
   
--   <xref:Microsoft.Office.Tools.Word.Bookmark> 主机控件。  
+- <xref:Microsoft.Office.Tools.Word.Bookmark> 主机控件。  
   
-     <xref:Microsoft.Office.Tools.Word.Bookmark> 控件会通过启用数据绑定和公开事件来扩展本机 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象。 有关主机控件的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
+   <xref:Microsoft.Office.Tools.Word.Bookmark> 控件会通过启用数据绑定和公开事件来扩展本机 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象。 有关主机控件的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
   
--   本机 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象。  
+- 本机 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象。  
   
-     <xref:Microsoft.Office.Interop.Word.Bookmark> 对象没有事件或数据绑定功能。  
+   <xref:Microsoft.Office.Interop.Word.Bookmark> 对象没有事件或数据绑定功能。  
   
- 将文本分配到书签时，<xref:Microsoft.Office.Interop.Word.Bookmark> 和 <xref:Microsoft.Office.Tools.Word.Bookmark> 的行为有所不同。 有关详细信息，请参阅[Bookmark 控件](../vsto/bookmark-control.md)。  
+  将文本分配到书签时，<xref:Microsoft.Office.Interop.Word.Bookmark> 和 <xref:Microsoft.Office.Tools.Word.Bookmark> 的行为有所不同。 有关详细信息，请参阅[Bookmark 控件](../vsto/bookmark-control.md)。  
   
 ## <a name="use-host-controls"></a>使用宿主控件  
   

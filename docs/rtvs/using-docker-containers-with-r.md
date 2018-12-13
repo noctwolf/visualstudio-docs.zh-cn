@@ -11,19 +11,20 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d7034476e3346e4f3d4e24713a62920487845440
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aeb6026bf7f90d07147ef559bdad9feb03e2c005
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667127"
 ---
-# <a name="using-docker-containers-with-r-tools-for-visual-studio"></a>配合使用 Docker 容器和针对 Visual Studio 的 R 工具
+# <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>配合使用 Docker 容器和针对 Visual Studio 的 R 工具
 
 针对 Visual Studio 的 R 工具 (RTVS) 版本 1.3+ 同[Docker for Windows](https://www.docker.com/docker-windows) 一起安装，支持使用 Docker 容器。
 
-## <a name="creating-a-container"></a>创建容器
+## <a name="create-a-container"></a>创建容器
 
-1. 选择“工作区”窗口（“R 工具”>“窗口”>“工作区”）右上角的“容器...”按钮。 如果未安装 Docker for Windows，则窗口中会显示通知，并提供下载链接。 安装 Docker 可能需要重启计算机。
+1. 选择“工作区”窗口（“R 工具” > “窗口” > “工作区”）右上角的“容器”按钮。 如果未安装 Docker for Windows，则窗口中会显示通知，并提供下载链接。 安装 Docker 可能需要重启计算机。
 
     ![针对 Visual Studio 的 R 工具 (VS2017) 中的工作区窗口，其中包含“容器”命令](media/container-workspaces-window.png)
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/19/2018
 
     ![显示完整容器的容器窗口](media/containers-window-created.png)
 
-## <a name="connecting-to-a-container"></a>连接到容器
+## <a name="connect-to-a-container"></a>连接到容器
 
 1. “工作区”窗口的“本地运行容器”部分显示在端口 5444 上运行 RTVS 守护程序的容器。 （有关如何配置守护程序的详细信息，请参阅[适用于 Linux 的远程 R Server](setting-up-remote-r-service-on-linux.md)。）
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/19/2018
 
     ![针对容器打开的工作区窗口和 REPL 窗口](media/workspaces-window-container-connected.png)
 
-## <a name="using-custom-built-images"></a>使用自定义生成的映像
+## <a name="use-custom-built-images"></a>使用自定义生成的映像
 
 RTVS 可检测使用自定义生成的映像（例如以下 docker 文件中描述的 microsoft/rtvs 映像）创建的容器，并支持对其进行管理。 此处使用的基础映像预先安装了 rtvs-daemon、R 3.4.2 和通用 R 程序包。 **注意**：可根据需要更改此处显示的用户名和密码。
 

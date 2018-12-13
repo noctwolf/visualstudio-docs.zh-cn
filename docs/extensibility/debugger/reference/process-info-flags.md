@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FLAGS |Microsoft 文档
+title: PROCESS_INFO_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91e4c4648108cdc6afa28f5a5dd8f9bfd46fcf59
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 04bc34de6e7ecbc438cfc63ed08c684cf4224366
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917019"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
-本文介绍或指定的进程属性。
+描述或指定进程的属性。
 
 ## <a name="syntax"></a>语法
 
@@ -49,22 +49,22 @@ enum enum_PROCESS_INFO_FLAGS {
 ## <a name="members"></a>成员
 
 PIFLAG_SYSTEM_PROCESS  
-指示进程是一个系统进程。
+指示该过程是一个系统进程。
 
 PIFLAG_DEBUGGER_ATTACHED  
-指示由调试器调试该进程。 它可能是[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]可能某些其他调试器，例如，WinDbg 调试器，或它。
+指示由调试器调试该进程。 可能会[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]调试器，也可能是一些其他调试器，例如，WinDbg。
 
 PIFLAG_PROCESS_STOPPED  
-指示该进程已停止。 有效才`PIFLAG_DEBUGGER_ATTACHED`还指定。 在 Visual Studio 2005 和更高版本可用。
+指示该进程已停止。 有效才`PIFLAG_DEBUGGER_ATTACHED`还指定了。 可在 Visual Studio 2005 和更高版本。
 
 PIFLAG_PROCESS_RUNNING  
-指示进程正在运行。 有效才`PIFLAG_DEBUGGER_ATTACHED`还指定。 在 Visual Studio 2005 和更高版本可用。
+指示进程正在运行。 有效才`PIFLAG_DEBUGGER_ATTACHED`还指定了。 可在 Visual Studio 2005 和更高版本。
 
 ## <a name="remarks"></a>备注
 
 用于`Flags`的成员[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)结构。
 
-这些标志可以与按位组合`OR`。
+可能的按位组合这些标志`OR`。
 
 ## <a name="requirements"></a>要求
 
@@ -74,7 +74,7 @@ Namespace: Microsoft.VisualStudio.Debugger.Interop
 
 Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
 [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

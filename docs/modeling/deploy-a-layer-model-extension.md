@@ -12,41 +12,44 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0ec537ec070188c967c2db02548cf487180c0bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874613"
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署层模型扩展
+
 其他 Visual Studio 用户可通过使用 Visual Studio 安装你创建的层建模扩展。
 
-## <a name="installing-your-extension"></a>安装你的扩展
- 将你的扩展编译为可在其他计算机上安装的 VSIX 文件。 你也可以将其安装到开发计算机，确保该扩展在 Visual Studio 的主实例中可用。
+## <a name="install-your-extension"></a>安装扩展
 
-#### <a name="to-install-the-extension"></a>安装扩展
+将你的扩展编译为可在其他计算机上安装的 VSIX 文件。 你也可以将其安装到开发计算机，确保该扩展在 Visual Studio 的主实例中可用。
 
-1.  中包含的项目**source.vsix.manifest**，打开**bin\\ \*** 在文件资源管理器。
+### <a name="to-install-the-extension"></a>安装扩展
 
-2.  复制 **\*.vsix**到要安装扩展的计算机的文件。
+1. 中包含的项目**source.vsix.manifest**，打开*bin*目录在文件资源管理器。
 
-3.  在目标计算机的 Windows 资源管理器中，双击 *.vsix 文件。
+2. 复制 **\*.vsix**到要安装扩展的计算机的文件。
 
-     VSIX 安装程序将打开。
+3. 在目标计算机的 Windows 资源管理器中，双击 *.vsix 文件。
 
-#### <a name="to-uninstall-the-extension"></a>卸载扩展
+    VSIX 安装程序将打开。
+
+### <a name="to-uninstall-the-extension"></a>卸载扩展
 
 1.  在 Visual Studio 中，在**工具**菜单上，单击**扩展和更新**。
 
 2.  单击扩展的名称，然后单击**卸载**。
 
-## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>在 Team Foundation Build 服务器上安装扩展
- 通常情况下，[!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 服务器并未安装 Visual Studio，因此无法通过对其双击来安装 VSIX。 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 的安装包括一些允许运行 VSIX 扩展的组件，但你必须手动安装该扩展。
+## <a name="install-an-extension-on-team-foundation-server"></a>Team Foundation Server 上安装扩展
 
-#### <a name="to-install-your-layer-extension-on-a-includeesprbuildmiscincludesesprbuildmdmd-server"></a>在 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 服务器上安装层扩展
+Team Foundation Server 服务器通常没有安装 Visual Studio，并因此不能通过双击安装 VSIX。 必须手动安装扩展。
 
-1.  复制 **.vsix**文件从开发计算机到[!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]计算机。
+### <a name="to-install-your-layer-extension-on-a-team-foundation-server-server"></a>若要在 Team Foundation Server 服务器上安装层扩展
+
+1.  复制 **.vsix**文件从开发计算机复制到 Team Foundation Server (TFS) 计算机。
 
      将 VSIX 文件置于下列位置之一：
 
@@ -54,23 +57,20 @@ ms.locfileid: "31949431"
 
          %ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft
 
-    -   仅为运行 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 的网络服务安装：
+    -   若要安装仅适用于运行生成的网络服务：
 
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft
 
-    -   如果你已将 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 配置为在交互模式下以特定用户身份运行，则你可以仅为该用户安装：
+    -   如果已配置要在以特定用户的交互模式下运行的生成，则可以安装仅为该用户：
 
          %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft
 
-        > [!NOTE]
-        >  %Localappdata%通常是*DriveName*： 用户*用户名*AppDataLocal。
-
 2.  将各个 VSIX 文件展开至相同位置的文件夹中：
 
-    1.  更改文件扩展名从 **.vsix**到 **.zip**。
+    1.  更改文件扩展名，从 **.vsix**到 **.zip**。
 
     2.  将 .zip 文件中的内容提取到一个文件夹中。
 
     3.  删除 .zip 文件。
 
-3.  重新启动 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]。
+3.  重新启动 TFS。

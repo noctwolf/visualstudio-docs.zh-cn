@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 999c7d4adf47dfecddd379c9f1252a343583831d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914497"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型设计工具概述
   可以通过使用 BDC 设计器中，设计业务数据连接 (BDC) 模型**BDC 方法详细信息**窗口中，并**BDC 资源管理器**。  
@@ -43,13 +43,13 @@ ms.locfileid: "36326213"
 ## <a name="bdc-designer"></a>BDC 设计器
  BDC 设计器使您可以在模型中定义实体并直观地与另一个排列它们之间的关系。 使用 BDC 设计器完成以下任务：  
   
--   将实体添加到模型。  
+- 将实体添加到模型。  
   
--   从模型中删除实体。  
+- 从模型中删除实体。  
   
--   定义实体之间的关系。  
+- 定义实体之间的关系。  
   
- 若要打开 BDC 设计器中，双击你的项目中的模型文件或打开模型文件的快捷菜单，然后选择**打开**。 将实体添加到模型中，通过拖动或复制**实体**从**工具箱**拖到设计器。 若要创建两个实体之间的关联，请选择**关联**控制**工具箱**，选择第一个实体，然后选择第二个实体。  
+  若要打开 BDC 设计器中，双击你的项目中的模型文件或打开模型文件的快捷菜单，然后选择**打开**。 将实体添加到模型中，通过拖动或复制**实体**从**工具箱**拖到设计器。 若要创建两个实体之间的关联，请选择**关联**控制**工具箱**，选择第一个实体，然后选择第二个实体。  
   
 ## <a name="bdc-method-details-window"></a>BDC 方法详细信息窗口
  使用**BDC 方法详细信息**窗口，以定义参数、 实例和筛选器描述符的一种方法。  

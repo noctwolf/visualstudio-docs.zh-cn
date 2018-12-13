@@ -9,12 +9,12 @@ description: 有关在 MPN 中提供的订阅、应用的规则以及提供的�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7db3d68b904ee6ec21f9f43e165291cfa7cbfc10
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281025"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876759"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>提供给 Microsoft 合作伙伴网络 (MPN) 中的合作伙伴的 Visual Studio 订阅
 具备相应资格或在 MPN 中购买了Action Pack 的合作伙伴可以使用 Visual Studio 订阅。 这些订阅按用户授权，并且仅在分配给为合作伙伴公司工作的特定命名用户时才有效。
@@ -23,11 +23,13 @@ ms.locfileid: "36281025"
 具备白银或黄金资格的合作伙伴可获得核心数量的 Visual Studio Enterprise 订阅。 如果合作伙伴拥有至少一项黄金资格，则此核心权益会发生变化。 Visual Studio Enterprise 订阅是一种自定义产品，大致等效于 [Visual Studio Enterprise 年度云订购](https://visualstudio.microsoft.com/vs/pricing/)，但取消了某些权益（其中许多是作为一般 MPN 权益单独向合作伙伴提供的，而不是包含在通过 MPN 提供的 Visual Studio Enterprise 订阅中）。
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>拥有至少一种任意类型的资格时的 Visual Studio 核心权益
+
 | 仅拥有白银级资格               | 至少拥有一项黄金级资格   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 个 Visual Studio Enterprise 订阅                   | 10 个 Visual Studio Enterprise 订阅          |
 
 ### <a name="additional-visual-studio-benefit-for-select-competencies"></a>选定资格的其他 Visual Studio 权益
+
 | 资格                                  | 白银资格可获得的额外订阅数 | 黄金资格可获得的额外订阅数 |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | 应用程序开发                     | 5 个 Visual Studio Enterprise 订阅                  | 25 个 Visual Studio Enterprise 订阅               |
@@ -39,6 +41,7 @@ ms.locfileid: "36281025"
 无论合作伙伴拥有多少资格，Visual Studio 订阅数量是有限的，具体限制如下所示：
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>具备相应资格可获得的 Visual Studio 订阅数限制
+
 | 只拥有白银资格的合作伙伴可获得的最大权益                   | 拥有至少一项黄金资格的合作伙伴可获得的最大权益               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 每个国家/地区可获得 25 个 Visual Studio Enterprise 订阅；全球共可获得 75 个          | 每个国家/地区可获得 50 个 Visual Studio Enterprise 订阅；全球共可获得 150 个         |
@@ -54,7 +57,7 @@ ms.locfileid: "36281025"
 
 Visual Studio Professional (MPN) 订阅者还可下载和使用 SQL Server Developer Edition 等免费软件进行开发。
 
-Visual Studio Professional (MPN) 订阅不包括 VSTS 权益、每月 Azure 额度、技术支持、培训或商用 Visual Studio 订阅中提供的其他订阅者权益。
+Visual Studio Professional (MPN) 订阅不包括 Azure DevOps Services 权益、每月 Azure 额度、技术支持、培训或商用 Visual Studio 订阅中提供的其他订阅者权益。
 
 ## <a name="internal-use-only-restriction"></a>仅限内部使用
 MPN 规则规定，作为计划权益提供的所有软件只能在内部使用。 这一规定适用于为个人 Visual Studio 订阅者提供的软件以及所有 MPN 软件许可证权益。
@@ -69,5 +72,4 @@ MPN 规则规定，作为计划权益提供的所有软件只能在内部使用�
 
 - [MPN 计划管理员指南](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) - 包含有关如何为 MPN 员工分配 Visual Studio 订阅的说明。
 - [为 MPN 员工分配 Visual Studio 订阅](manage-mpn-subscriptions.md)
-- 
-  [使用条款](http://www.microsoft.com/useterms/) - 通过 MPN 提供的 Visual Studio 订阅应遵循 Visual Studio 订阅不得转售 (NFR) EULA。
+- [使用条款](http://www.microsoft.com/useterms/) - 通过 MPN 提供的 Visual Studio 订阅应遵循 Visual Studio 订阅不得转售 (NFR) EULA。

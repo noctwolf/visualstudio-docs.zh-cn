@@ -7,16 +7,16 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 09ff83abbfe3016bd4bd40e7bcb08bda10d9038c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: f4c572fffb819affbbe74f05b95e270f8bbaa285
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224264"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51293390"
 ---
 # <a name="razor-support"></a>Razor 支持
 
-Visual Studio for Mac 现在正式支持 Razor 编辑，包括 `.cshtml` 文件中的 IntelliSense 和语法突出显示。
+Visual Studio for Mac 支持 Razor 编辑，包括 .cshtml 文件中的 IntelliSense 和语法突出显示。
 
 ![visual studio for mac 中的 razor 编辑](media/razor-image1.png)
 
@@ -24,6 +24,9 @@ Visual Studio for Mac 现在正式支持 Razor 编辑，包括 `.cshtml` 文件�
 
 开始使用 Visual Studio for Mac 中的 Razor 时需要考虑两个选项：ASP.NET Core 中的 Razor 页面和 ASP.NET Core MVC 中的 Razor 页面。 有关两个选项的教程和详细信息，请访问以下任一指南：
 
-- [借助 Visual Studio for Mac 在 macOS 上的 ASP.NET Core 中开始使用 Razor 页面](https://docs.microsoft.com/aspnet/core/tutorials/razor-pages-mac/razor-pages-start?view=aspnetcore-2.1)
-- [ASP.NET Core MVC 和 Visual Studio for Mac 入门](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app-mac/start-mvc?view=aspnetcore-2.1)
+- [借助 Visual Studio for Mac 在 macOS 上的 ASP.NET Core 中开始使用 Razor 页面](/aspnet/core/tutorials/razor-pages-mac/razor-pages-start?view=aspnetcore-2.1)
+- [ASP.NET Core MVC 和 Visual Studio for Mac 入门](/aspnet/core/tutorials/first-mvc-app-mac/start-mvc?view=aspnetcore-2.1)
 
+## <a name="see-also"></a>请参阅
+
+- [Visual Studio 中的 C# 和 ASP.NET Core 入门 (Windows)](/visualstudio/ide/tutorial-csharp-aspnet-core)

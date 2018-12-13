@@ -1,7 +1,7 @@
 ---
-title: 选择项目的 Python 解释器和环境
-description: 如何分配 Visual Studio 项目要使用的 Python 环境，以及关于创建虚拟环境的说明。
-ms.date: 06/27/2018
+title: 选择用于项目的 Python 解释器和项目
+description: 如何选择用于 Visual Studio 项目的 Python 环境或解释器，包括 Anaconda 和虚拟环境。
+ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 63fa8e83fd94be5307541ca7e070d47c8fa04488
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 0bff5e81fbfda45908315091063833b31abbdd8c
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586373"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349447"
 ---
-# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>如何分配用于项目的 Python 环境
+# <a name="how-to-select-a-python-environment-for-a-project"></a>如何选择用于项目的 Python 环境
 
-Python 项目中的所有代码均在特定环境的上下文中运行。 Visual Studio 还将该环境用于调试、导入和成员完成情况、语法检查以及任何需要环境的其他任务。
+Python 项目中的所有代码都在特定环境的上下文中运行，例如全局 Python 环境、Anaconda 环境、虚拟环境或 conda 环境。 Visual Studio 还将该环境用于调试、导入和成员完成、语法检查，以及需要特定于 Python 版本和一组已安装包的语言服务的任何其他任务。
 
 Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的全局环境，它出现在“解决方案资源管理器”的“Python 环境”节点下：
 
@@ -42,7 +42,7 @@ Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的�
 | --- | --- |
 | **添加虚拟环境** | 首先在项目中新建一个虚拟环境。 详情请参阅[创建虚拟环境](#create-a-virtual-environment)。 |
 | **添加现有虚拟环境** | 系统提示你选择一个包含虚拟环境的文件夹并将其添加到“Python 环境”下的列表，但不进行激活。 请参阅[激活现有的虚拟环境](#activate-an-existing-virtual-environment)。 |
-| **创建 Conda 环境** | 切换到“Python 环境”窗口，在此处输入环境的名称并指定其基础解释器。 |
+| **创建 Conda 环境** | 切换到“Python 环境”窗口，在此处输入环境的名称并指定其基础解释器。 请参阅 [Conda 环境](managing-python-environments-in-visual-studio.md#conda-environments)。 |
 
 ## <a name="use-virtual-environments"></a>使用虚拟环境
 
@@ -50,7 +50,7 @@ Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的�
 
 使用虚拟环境的一项优势是，随着项目的开发，虚拟环境始终反映出项目的确切依赖项。 （另一方面，无论是否在项目中使用库，共享的全局环境中都包含任意数量的库。）随后即可通过虚拟环境轻松创建 requirements.txt 文件，此文件之后用于在另一台开发/生产计算机上重新安装上述依赖项。 有关详细信息，请参阅[使用 requirements.txt 管理所需的包](managing-required-packages-with-requirements-txt.md)。
 
-在 Visual Studio 中打开包含 requirements.txt 文件的项目时，Visual Studio 自动显示用于重新创建虚拟环境的选项。 在未安装 Visual Studio 的计算机（如 Azure 应用服务）上，可使用 `pip install -r requirements.txt` 进行包的还原（相关流程请参阅[在 Azure 应用服务上管理 Python](managing-python-on-azure-app-service.md)）。
+在 Visual Studio 中打开包含 requirements.txt 文件的项目时，Visual Studio 自动显示用于重新创建虚拟环境的选项。 在未安装 Visual Studio 的计算机上，可运行 `pip install -r requirements.txt` 还原包。
 
 由于虚拟环境包含到基础解释器的硬编码路径，且你可使用 requirements.txt 重新创建环境，因此通常省略来自源代码管理功能集的整个虚拟环境。
 
@@ -114,7 +114,7 @@ Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的�
 另请注意，Visual Studio 目前不支持使用 `conda` 将包安装到 conda 环境中。 而是使用命令行中的 `conda`。
 
 > [!Tip]
-> 当包中包含用于 .pyd*\** 文件中本机组件的源代码时，pip 无法安装包，这种情况很常见。 如果没有安装要求的 Visual Studio 版本，pip 无法编译这些组件。 在这种情况下显示的错误消息是“错误: 找不到 vcvarsall.bat。 `easy_install` 通常可下载预编译的二进制文件，且你可通过 [http://aka.ms/VCPython27](http://aka.ms/VCPython27) 下载适合旧版 Python 的编译器。 有关详细信息，请参阅 Python 工具团队博客上的[How to deal with the pain of "unable to find vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/)（如何处理“找不到 vcvarsallbat”问题）。
+> 当包中包含用于 .pyd*\** 文件中本机组件的源代码时，pip 无法安装包，这种情况很常见。 如果没有安装要求的 Visual Studio 版本，pip 无法编译这些组件。 在这种情况下显示的错误消息是“错误: 找不到 vcvarsall.bat。 `easy_install` 通常可下载预编译的二进制文件，且你可通过 [https://aka.ms/VCPython27](https://aka.ms/VCPython27) 下载适合旧版 Python 的编译器。 有关详细信息，请参阅 Python 工具团队博客上的[How to deal with the pain of "unable to find vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/)（如何处理“找不到 vcvarsallbat”问题）。
 
 ## <a name="see-also"></a>请参阅
 

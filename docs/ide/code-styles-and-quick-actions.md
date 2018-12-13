@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 代码样式首选项
+title: 代码样式首选项
 ms.date: 03/10/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: c008462ded2b84b5978b65fc41344477c36bee76
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 718110b3339628052d8a4a2e3ebbcdd163707a97
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626803"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065256"
 ---
 # <a name="code-style-preferences"></a>代码样式首选项
 
@@ -26,6 +26,9 @@ ms.locfileid: "42626803"
 列表中的每一项都会显示所选首选项的预览：
 
 ![代码样式选项](media/code-style-quick-actions-dialog.png)
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中的编辑器行为](/visualstudio/mac/editor-behavior)。
 
 ## <a name="preference-and-severity"></a>首选项和严重级别
 
@@ -50,3 +53,4 @@ ms.locfileid: "42626803"
 
 - [快速操作](../ide/quick-actions.md)
 - [EditorConfig 的 .NET 编码约定设置](../ide/editorconfig-code-style-settings-reference.md)
+- [编辑器行为 (Visual Studio for Mac)](/visualstudio/mac/editor-behavior)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject3::GetPointerAddress |Microsoft 文档
+title: IDebugPointerObject3::GetPointerAddress |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d21d797ca1370edee6eb1e664f3eb3ece35093fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 38b440620830c5391833f371c66efa23db914cf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844128"
 ---
 # <a name="idebugpointerobject3getpointeraddress"></a>IDebugPointerObject3::GetPointerAddress
-检索的地址的指针。  
+检索指针的地址。  
   
 ## <a name="syntax"></a>语法  
   
@@ -45,5 +45,5 @@ int GetPointerAddress (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)

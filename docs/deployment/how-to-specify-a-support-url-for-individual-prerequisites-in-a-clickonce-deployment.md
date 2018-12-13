@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4102decf844d70d85342aae9f140610102ff58
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1e93e8ab84a751c447488e1b4dc6e3e6779b86b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913275"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何： 指定 ClickOnce 部署中的各个系统必备项的支持 URL
 一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以用于多个先决条件，必须在客户端计算机上可用的测试[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]要运行应用程序。 这些依赖项包括所需的最低版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，操作系统，并且必须预先安装在全局程序集缓存 (GAC) 中的任何程序集的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]但是，无法安装这些必备组件的任何重试。如果找不到一项必备条件，它只是停止安装，并显示一个对话框，说明安装失败的原因。  
@@ -33,52 +33,52 @@ ms.locfileid: "39077778"
   
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>指定一个单独的必备组件的支持 URL  
   
-1.  打开应用程序清单 ( *.manifest*文件) 的你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在文本编辑器中应用程序。  
+1. 打开应用程序清单 ( *.manifest*文件) 的你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在文本编辑器中应用程序。  
   
-2.  对于一个操作系统必备组件中，添加`supportUrl`属性为`dependentOS`元素：  
+2. 对于一个操作系统必备组件中，添加`supportUrl`属性为`dependentOS`元素：  
   
-    ```xml  
+   ```xml  
+    <dependency>  
+       <dependentOS supportUrl="http://www.adatum.com/MyApplication/wrongOSFound.htm">  
+         <osVersionInfo>  
+           <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" servicePackMinor="0" />  
+         </osVersionInfo>  
+       </dependentOS>  
+     </dependency>  
+   ```  
+  
+3. 公共语言运行时的某个版本的先决条件，将添加`supportUrl`属性为`dependentAssembly`指定公共语言运行时依赖项的条目：  
+  
+   ```xml  
      <dependency>  
-        <dependentOS supportUrl="http://www.adatum.com/MyApplication/wrongOSFound.htm">  
-          <osVersionInfo>  
-            <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" servicePackMinor="0" />  
-          </osVersionInfo>  
-        </dependentOS>  
-      </dependency>  
-    ```  
+       <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/wrongClrVersionFound.htm">  
+         <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />  
+       </dependentAssembly>  
+     </dependency>  
+   ```  
   
-3.  公共语言运行时的某个版本的先决条件，将添加`supportUrl`属性为`dependentAssembly`指定公共语言运行时依赖项的条目：  
+4. 必须在全局程序集缓存中预安装的程序集的先决条件，将设置`supportUrl`为`dependentAssembly`元素，它指定所需的程序集：  
   
-    ```xml  
-      <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/wrongClrVersionFound.htm">  
-          <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />  
-        </dependentAssembly>  
-      </dependency>  
-    ```  
+   ```xml  
+     <dependency>  
+       <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
+         <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
+       </dependentAssembly>  
+     </dependency>  
+   ```  
   
-4.  必须在全局程序集缓存中预安装的程序集的先决条件，将设置`supportUrl`为`dependentAssembly`元素，它指定所需的程序集：  
+5. 可选。 对于面向.NET Framework 4 的应用程序打开部署清单 ( *.application*文件) 的你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在文本编辑器中应用程序。  
   
-    ```xml  
-      <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
-          <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
-        </dependentAssembly>  
-      </dependency>  
-    ```  
+6. 是.NET Framework 4 的先决条件，将添加`supportUrl`属性为`compatibleFrameworks`元素：  
   
-5.  可选。 对于面向.NET Framework 4 的应用程序打开部署清单 ( *.application*文件) 的你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在文本编辑器中应用程序。  
+   ```xml  
+   <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
+     <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />  
+     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />  
+   </compatibleFrameworks>  
+   ```  
   
-6.  是.NET Framework 4 的先决条件，将添加`supportUrl`属性为`compatibleFrameworks`元素：  
-  
-    ```xml  
-    <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
-      <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />  
-      <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />  
-    </compatibleFrameworks>  
-    ```  
-  
-7.  手动修改应用程序清单，必须使用数字证书，请对应用程序清单重新签名，然后更新和对的部署清单重新签名。 使用*Mage.exe*或*MageUI.exe* SDK 工具来完成此任务中的，重新生成使用这些文件作为[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]会删除手动更改。 有关使用 Mage.exe 清单进行重新签名的详细信息，请参阅[How to: re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+7. 手动修改应用程序清单，必须使用数字证书，请对应用程序清单重新签名，然后更新和对的部署清单重新签名。 使用*Mage.exe*或*MageUI.exe* SDK 工具来完成此任务中的，重新生成使用这些文件作为[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]会删除手动更改。 有关使用 Mage.exe 清单进行重新签名的详细信息，请参阅[How to: re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  如果应用程序被标记为在部分信任环境中运行时，支持 URL 不被显示在对话框中。  

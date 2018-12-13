@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_arrayindextype |Microsoft 文档'
+title: 'Idiasymbol:: Get_arrayindextype |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1212bb62888d1bed546a7c12ae4cfc48c22d0a07
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a3d8890e4a1a891cc1efe622b78e185b83a32f81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882400"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 检索的符号的数组索引类型的符号接口。  
@@ -34,16 +34,16 @@ HRESULT get_arrayIndexType (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示的符号的数组索引类型的对象。  
+ [out]返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示符号的数组索引类型的对象。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 某些语言中可以指定为数组的索引使用的类型。 此方法返回的符号指定该类型。  
+ 某些语言中可以指定为数组的索引所使用的类型。 此方法返回的符号指定该类型。  
   
 ## <a name="requirements"></a>要求  
   

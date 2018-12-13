@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5bb0b27e57490f49dc677cffa553bc10201e5a47
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 930d7ededf4a54aaf75516c59001eaccf38c210c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896754"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>在程序代码中导航和更新模型
 
@@ -131,7 +131,7 @@ ms.locfileid: "39511335"
 -   ElementLink-所有关系都是 ElementLinks
 
 ##  <a name="transaction"></a> 执行在事务内的更改
- 每当你的程序代码更改存储区中的任何内容时，它必须在事务内执行。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.Modeling.Transaction>。
+ 每当你的程序代码更改存储区中的任何内容时，它必须在事务内执行。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Modeling.Transaction> 。
 
  管理事务的最简便的方法是使用`using`语句括在`try...catch`语句：
 
@@ -186,46 +186,46 @@ using (Transaction t =
 
  此示例说明了有关创建元素这些要点：
 
--   在存储区的特定分区中创建新元素。 模型元素和关系，但不形状，这通常是默认分区。
+- 在存储区的特定分区中创建新元素。 模型元素和关系，但不形状，这通常是默认分区。
 
--   它使嵌入关系的目标。 在此示例的 DslDefinition，每个人必须是嵌入关系 FamilyTreeHasPeople 的目标。 若要实现此目的，我们可以设置 FamilyTreeModel 角色属性的 Person 对象，或将用户添加到 FamilyTreeModel 对象的用户角色属性。
+- 它使嵌入关系的目标。 在此示例的 DslDefinition，每个人必须是嵌入关系 FamilyTreeHasPeople 的目标。 若要实现此目的，我们可以设置 FamilyTreeModel 角色属性的 Person 对象，或将用户添加到 FamilyTreeModel 对象的用户角色属性。
 
--   设置新元素，尤其是为其属性的属性`IsName`在 DslDefinition 是如此。 此标志将标记来标识其所有者中唯一的元素的属性。 在这种情况下，Name 属性具有该标志。
+- 设置新元素，尤其是为其属性的属性`IsName`在 DslDefinition 是如此。 此标志将标记来标识其所有者中唯一的元素的属性。 在这种情况下，Name 属性具有该标志。
 
--   到存储区中，必须已加载此 DSL 的 DSL 定义。 如果你正在编写如菜单命令扩展，这通常是已，则返回 true。 在其他情况下，你可以显式将模型加载到存储中，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>加载它。 有关详细信息，请参阅[如何： 从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
+- 到存储区中，必须已加载此 DSL 的 DSL 定义。 如果你正在编写如菜单命令扩展，这通常是已，则返回 true。 在其他情况下，你可以显式将模型加载到存储中，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>加载它。 有关详细信息，请参阅[如何： 从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
 
- 当以这种方式创建一个元素时，形状将自动创建 （如果 DSL 具有关系图）。 它显示在自动分配的位置中，使用默认形状、 颜色和其他功能。 如果你想要控制在何处以及如何显示的相关联的形状，请参阅[创建元素和其形状](#merge)。
+  当以这种方式创建一个元素时，形状将自动创建 （如果 DSL 具有关系图）。 它显示在自动分配的位置中，使用默认形状、 颜色和其他功能。 如果你想要控制在何处以及如何显示的相关联的形状，请参阅[创建元素和其形状](#merge)。
 
 ##  <a name="links"></a> 创建关系链接
  有两个示例 DSL 定义中定义的关系。 每个关系定义*角色属性*位于各端的关系类上。
 
  有三种方法可以在其中创建关系的实例。 这三种方法的每个具有相同的效果：
 
--   设置源角色扮演者的属性。 例如：
+- 设置源角色扮演者的属性。 例如：
 
-    -   `familyTree.People.Add(edward);`
+  -   `familyTree.People.Add(edward);`
 
-    -   `edward.Parents.Add(henry);`
+  -   `edward.Parents.Add(henry);`
 
--   设置目标角色扮演者的属性。 例如：
+- 设置目标角色扮演者的属性。 例如：
 
-    -   `edward.familyTreeModel = familyTree;`
+  -   `edward.familyTreeModel = familyTree;`
 
-         此角色的重数为`1..1`，因此我们将值。
+       此角色的重数为`1..1`，因此我们将值。
 
-    -   `henry.Children.Add(edward);`
+  -   `henry.Children.Add(edward);`
 
-         此角色的重数为`0..*`，因此我们将添加到集合。
+       此角色的重数为`0..*`，因此我们将添加到集合。
 
--   显式构造关系的实例。 例如：
+- 显式构造关系的实例。 例如：
 
-    -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
+  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
-    -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
+  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
 
- 最后一个方法是很有用，如果你想要在关系本身上设置属性。
+  最后一个方法是很有用，如果你想要在关系本身上设置属性。
 
- 以这种方式创建元素时，自动创建关系图上的连接器，但它具有默认形状、 颜色和其他功能。 若要控制如何创建关联的连接器，请参阅[创建元素和其形状](#merge)。
+  以这种方式创建元素时，自动创建关系图上的连接器，但它具有默认形状、 颜色和其他功能。 若要控制如何创建关联的连接器，请参阅[创建元素和其形状](#merge)。
 
 ##  <a name="deleteelements"></a> 删除元素
  通过调用中删除元素`Delete()`:
@@ -234,21 +234,21 @@ using (Transaction t =
 
  此操作还将删除：
 
--   关系链接到和从元素。 例如，`edward.Parents`将不再包含`henry`。
+- 关系链接到和从元素。 例如，`edward.Parents`将不再包含`henry`。
 
--   在为其角色的元素`PropagatesDelete`标志为 true。 例如，将删除显示的元素的形状。
+- 在为其角色的元素`PropagatesDelete`标志为 true。 例如，将删除显示的元素的形状。
 
- 默认情况下，每个嵌入关系具有`PropagatesDelete`在目标角色，则返回 true。 正在删除`henry`不会删除`familyTree`，但`familyTree.Delete()`将删除所有`Persons`。 有关详细信息，请参阅[自定义删除行为](../modeling/customizing-deletion-behavior.md)。
+  默认情况下，每个嵌入关系具有`PropagatesDelete`在目标角色，则返回 true。 正在删除`henry`不会删除`familyTree`，但`familyTree.Delete()`将删除所有`Persons`。 有关详细信息，请参阅[自定义删除行为](../modeling/customizing-deletion-behavior.md)。
 
- 默认情况下，`PropagatesDelete`不是引用关系的角色，则返回 true。
+  默认情况下，`PropagatesDelete`不是引用关系的角色，则返回 true。
 
- 您可能会导致删除规则，以忽略特定传播时删除的对象。 这是会将一个元素替换为另一个的情况下很有用。 提供为其不应传播删除的一个或多个角色的 GUID。 GUID 可以从关系类：
+  您可能会导致删除规则，以忽略特定传播时删除的对象。 这是会将一个元素替换为另一个的情况下很有用。 提供为其不应传播删除的一个或多个角色的 GUID。 GUID 可以从关系类：
 
- `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
- (此特定示例中没有任何作用，因为`PropagatesDelete`是`false`的角色`ParentsHaveChildren`关系。)
+  (此特定示例中没有任何作用，因为`PropagatesDelete`是`false`的角色`ParentsHaveChildren`关系。)
 
- 在某些情况下，删除被禁止的锁，在元素上或将删除传播的元素上存在。 可以使用`element.CanDelete()`来检查是否可以删除该元素。
+  在某些情况下，删除被禁止的锁，在元素上或将删除传播的元素上存在。 可以使用`element.CanDelete()`来检查是否可以删除该元素。
 
 ##  <a name="deletelinks"></a> 删除关系链接
  可以通过从角色属性中移除元素删除关系链接：
@@ -325,7 +325,7 @@ using (Transaction t = targetDiagram.Store.
  在 DSL 定义中，指定每个元素创建从以下标准类之一派生的类。
 
 |一种元素|基类|
-|---------------------|----------------|
+|-|-|
 |域类|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |域关系|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|
 |形状|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
@@ -468,7 +468,6 @@ partial class MyDiagram
     }
   }
 }
-
 ```
 
  如果提供多个形状，设置使用其相对位置`AbsoluteBounds`。

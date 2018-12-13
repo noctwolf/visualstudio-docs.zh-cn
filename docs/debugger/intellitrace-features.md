@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace 功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 608b183333d3561f9db586955142f94a8371c055
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 59ff5fa898aa808c99dd5f52df1605336edd1694
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279526"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542463"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 功能
 
@@ -42,21 +42,21 @@ Visual Studio Enterprise 版中提供 IntelliTrace，但 Visual Studio Professio
 > [!NOTE]
 > 上的所有设置的作用域**IntelliTrace**选项页是 Visual Studio 作为一个整体，不是针对单个项目或解决方案。 这些设置中的更改适用于 Visual Studio 的所有实例、所有调试会话和所有项目或解决方案。
 
-## <a name="ChooseEvents"></a> 选择 IntelliTrace 记录的事件
+## <a name="ChooseEvents"></a> 选择 IntelliTrace 记录 （仅适用于托管代码） 的事件
 
 可以启用或禁用针对特定 IntelliTrace 事件的记录。
 
 如果在进行调试，请停止调试。 转到**工具 > 选项 > IntelliTrace > IntelliTrace 事件**。 选择想要 IntelliTrace 记录的事件。
 
-## <a name="Snapshots"></a> 收集事件和快照
+## <a name="Snapshots"></a> 收集快照
 
-这不默认启用，但 IntelliTrace 可以捕获每个断点和调试程序单步执行事件，应用程序的快照和历史调试会话中，可以查看这些快照。 快照提供完整的应用程序状态的视图。 若要启用捕获的快照，请转到**工具 > 选项 > IntelliTrace > 常规**，然后选择**IntelliTrace 事件和快照**。 有关详细信息，请参阅[查看快照使用 IntelliTrace 后退](../debugger/how-to-use-intellitrace-step-back.md)
+这不默认启用，但 IntelliTrace 可以捕获每个断点和调试程序单步执行事件，应用程序的快照和历史调试会话中，可以查看这些快照。 快照提供完整的应用程序状态的视图。 若要启用捕获的快照，请转到**工具 > 选项 > IntelliTrace > 常规**，然后选择**IntelliTrace 快照 （托管和本机）**。 有关详细信息，请参阅[检查使用 IntelliTrace 的上一个应用程序状态](../debugger/view-historical-application-state.md)
 
-快照可在 Visual Studio Enterprise 2017 版本 15.5 和更高版本，以及它需要 Windows 10 周年更新或更高版本。  对于.NET Core 和 ASP.NET Core 应用，Visual Studio Enterprise 2017 版本 15.7 preview 1 是必需的。
+快照可在 Visual Studio Enterprise 2017 版本 15.5 和更高版本，以及它需要 Windows 10 周年更新或更高版本。  对于.NET Core 和 ASP.NET Core 应用，Visual Studio Enterprise 2017 版本 15.7 是必需的。 对于本机应用程序面向 Windows，Visual Studio Enterprise 2017 15.9 版预览版 2 是必需的。
 
-## <a name="GoingFurther"></a> 收集 IntelliTrace 事件和调用信息
+## <a name="GoingFurther"></a> 收集 IntelliTrace 事件和调用信息 （仅适用于托管代码）
 
-这不默认启用，但 IntelliTrace 可记录方法调用和事件。 若要启用的方法调用转到集合**工具 > 选项 > IntelliTrace > 常规**，然后选择**IntelliTrace 事件和调用信息**。
+这不默认启用，但 IntelliTrace 可记录方法调用和事件。 若要启用的方法调用转到集合**工具 > 选项 > IntelliTrace > 常规**，然后选择**IntelliTrace 事件和调用信息 （仅限托管）**。
 
 调用信息不是当前适用于.NET Core 和 ASP.NET Core 应用。 
 

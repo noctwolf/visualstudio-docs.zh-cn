@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9c20a56ce2d78ab5ba3c3fdcde19af573a830fc5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283324"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895621"
 ---
 # <a name="configure-load-test-run-settings"></a>配置负载测试运行设置
 
 “运行设置”是一组会影响负载测试运行方式的属性。 在“属性”窗口中，运行设置按类别进行组织。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 负载测试中可以有多个运行设置，但是每次运行时只可有一个运行设置处于活动状态。 其他运行设置提供了一个快速方法来选择备用设置，以用于后续的测试运行。
 
@@ -30,7 +32,7 @@ ms.locfileid: "44283324"
 ## <a name="tasks"></a>任务
 
 |任务|相关主题|
-|-----------|-----------------------|
+|-|-|
 |**向负载测试添加更多的运行设置：** 除了运行“新建负载测试向导”时创建的运行设置之外，还可向负载测试添加更多的运行设置以便能够在不同条件下运行测试。|-   [如何：向负载测试中添加额外的运行设置](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**指定要用于负载测试的活动的运行设置：** 可以使用负载测试编辑器来选择要用于负载测试的运行设置。 活动的运行设置将由“[Active]”后缀标识。|-   [如何：为负载测试选择活动运行设置](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
 |**编辑运行设置属性：** 可以编辑诸如日志记录选项等内容的运行设置属性（有关详细信息，请查看以下内容），来确定测试的长度、预热持续时间、报告错误详细信息的最大数量、采样率、连接模型（仅 Web 性能测试）、结果存储类型、验证级别和 SQL 跟踪。 运行设置应当体现负载测试的目标。|-   [负载测试运行设置属性](../test/load-test-run-settings-properties.md)<br />-   [更改运行设置属性](../test/load-test-run-settings-properties.md#change-run-setting-properties)|

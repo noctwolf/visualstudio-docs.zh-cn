@@ -19,45 +19,48 @@ f1_keywords:
 - _Field_size_bytes_full_
 - _Field_size_full_
 - _Field_size_full_opt_
+- _Field_z_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 076631860035e41451741d49843d9282ec4c15f7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e4294284ff2911fd05cc771bf4deaad368e3c28b
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31894343"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228820"
 ---
 # <a name="annotating-structs-and-classes"></a>批注结构和类
-还可以通过使用批注，即可充当固定协定批注结构和类成员，它们将假定应满足的任何函数调用或函数入口/出口涉及该封闭结构作为参数或结果值。
+你可以通过使用类似于固定条件注释批注结构和类成员，它们都假定为满足的任何函数调用或进入/退出函数涉及封闭结构作为参数或结果值。
 
 ## <a name="struct-and-class-annotations"></a>结构和类批注
 
 -   `_Field_range_(low, high)`
 
-     该字段正在从 （含） 范围`low`到`high`。  等效于`_Satisfies_(_Curr_ >= low && _Curr_ <= high)`通过使用适当的 pre 或 post 条件应用于批注对象。
+     该字段是从 （含） 范围内`low`到`high`。  等效于`_Satisfies_(_Curr_ >= low && _Curr_ <= high)`通过使用适当的前置或后置条件应用于带批注的对象。
 
 -   `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
-     具有在元素 （或字节） 为指定的可写大小的字段`size`。
+     具有可写大小以元素 （或字节数） 为指定的字段`size`。
 
 -   `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
-     具有在元素 （或字节） 为指定的可写大小的字段`size`，和`count`是否都可读这些元素 （字节）。
+     具有可写大小以元素 （或字节数） 为指定的字段`size`，和`count`这些元素 （字节） 的可读。
 
 -   `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
-     具有读取和写入大小在元素 （或字节） 为指定的字段`size`。
+     具有可读和可写大小元素 （或字节数） 为指定的字段`size`。
+
+-   `_Field_z_`
+
+     一个字段，具有一个以 null 结尾的字符串。
 
 -   `_Struct_size_bytes_(size)`
 
-     具有读取和写入大小在元素 （或字节） 为指定的字段`size`。
-
-     适用于结构或类声明。  指示该类型的有效对象可能会大于声明的类型，使用指定的字节数`size`。  例如：
+     适用于结构或类声明。  指示该类型的有效对象，可能与指定的字节数会大于声明的类型， `size`。  例如：
 
     ```cpp
 
@@ -76,4 +79,4 @@ ms.locfileid: "31894343"
     ```
 
 ## <a name="see-also"></a>请参阅
- [使用 SAL 批注以减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)[了解 SAL](../code-quality/understanding-sal.md) [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)[对函数行为进行批注](../code-quality/annotating-function-behavior.md)[对锁定行为进行批注](../code-quality/annotating-locking-behavior.md)[指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)[内部函数](../code-quality/intrinsic-functions.md)[最佳实践和示例](../code-quality/best-practices-and-examples-sal.md)
+ [使用 SAL 注释减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)[了解 SAL](../code-quality/understanding-sal.md) [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)[对函数行为进行批注](../code-quality/annotating-function-behavior.md)[对锁定行为进行批注](../code-quality/annotating-locking-behavior.md)[指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)[内部函数](../code-quality/intrinsic-functions.md)[最佳实践和示例](../code-quality/best-practices-and-examples-sal.md)

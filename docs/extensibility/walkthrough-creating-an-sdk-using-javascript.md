@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97206a80f1d18f0cc8310740430ca11066b102e8
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1be1cf15e1f43af5999d4d65a5342d9c7b46da25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884064"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>演练： 创建使用 JavaScript SDK
 本演练介绍了如何使用 JavaScript 创建简单的数学运算 SDK 作为 Visual Studio 扩展 (VSIX)。  本演练分为以下部分：  
   
--   [若要创建 SimpleMathVSIX 扩展 SDK 项目](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
+- [若要创建 SimpleMathVSIX 扩展 SDK 项目](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
   
--   [若要创建使用 SDK 的示例应用](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
+- [若要创建使用 SDK 的示例应用](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
   
- 对于 JavaScript，没有任何类库项目类型。 在此演练中，该示例*arithmetic.js* VSIX 项目中直接创建文件。 在实践中，我们建议您首先生成和测试的 JavaScript 和 CSS 文件为 Windows 应用商店应用程序 — 例如，通过使用**空白应用**模板，将其放在一个 VSIX 项目之前。  
+  对于 JavaScript，没有任何类库项目类型。 在此演练中，该示例*arithmetic.js* VSIX 项目中直接创建文件。 在实践中，我们建议您首先生成和测试的 JavaScript 和 CSS 文件为 Windows 应用商店应用程序 — 例如，通过使用**空白应用**模板，将其放在一个 VSIX 项目之前。  
   
 ## <a name="prerequisites"></a>系统必备  
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
@@ -79,7 +79,7 @@ ms.locfileid: "39498300"
       MinVSVersion="14.0"  
       AppliesTo="JavaScript+WindowsAppContainer"  
       SupportsMultipleVersions="Error"  
-      MoreInfo="http://www.msdn.microsoft.com/">  
+      MoreInfo="https://msdn.microsoft.com/">  
   
       <!-- JS -->  
       <File Content="js\arithmetic.js" />  
@@ -143,57 +143,57 @@ ms.locfileid: "39498300"
   
 ##  <a name="createSampleApp"></a> 若要创建使用 SDK 的示例应用  
   
-1.  在菜单栏上，依次选择“文件” > “新建” > “项目”。  
+1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。  
   
-2.  在模板类别列表中下**JavaScript**，选择**Windows 应用商店**，然后选择**空白应用**模板。  
+2. 在模板类别列表中下**JavaScript**，选择**Windows 应用商店**，然后选择**空白应用**模板。  
   
-3.  在中**名称**框中，指定`ArithmeticUI`。 选择“确定”  按钮。  
+3. 在中**名称**框中，指定`ArithmeticUI`。 选择“确定”  按钮。  
   
-4.  在中**解决方案资源管理器**，打开快捷菜单**ArithmeticUI**项目，，然后选择**添加** > **引用**.  
+4. 在中**解决方案资源管理器**，打开快捷菜单**ArithmeticUI**项目，，然后选择**添加** > **引用**.  
   
-5.  下**Windows**，选择**扩展**，您会发现**简单的数学运算**显示。  
+5. 下**Windows**，选择**扩展**，您会发现**简单的数学运算**显示。  
   
-6.  选择**简单的数学运算**复选框，然后选择**确定**按钮。  
+6. 选择**简单的数学运算**复选框，然后选择**确定**按钮。  
   
-7.  在中**解决方案资源管理器**下**引用**，请注意，**简单的数学运算**显示引用。 将其展开，请注意，没有 **\js\** 包括的文件夹**arithmetic.js**。 您可以打开**arithmetic.js**以确认是否已安装你的源代码。  
+7. 在中**解决方案资源管理器**下**引用**，请注意，**简单的数学运算**显示引用。 将其展开，请注意，没有**\js\\** 包括的文件夹**arithmetic.js**。 您可以打开**arithmetic.js**以确认是否已安装你的源代码。  
   
-8.  使用以下代码替换内容*default.htm*。  
+8. 使用以下代码替换内容*default.htm*。  
   
-    ```html  
-    <!DOCTYPE html>  
-    <html>  
-    <head>  
-        <meta charset="utf-8" />  
-        <title>ArithmeticUI</title>  
+   ```html  
+   <!DOCTYPE html>  
+   <html>  
+   <head>  
+       <meta charset="utf-8" />  
+       <title>ArithmeticUI</title>  
   
-        <!-- WinJS references -->  
-        <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />  
-        <script src="//Microsoft.WinJS.1.0/js/base.js"></script>  
-        <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>  
+       <!-- WinJS references -->  
+       <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />  
+       <script src="//Microsoft.WinJS.1.0/js/base.js"></script>  
+       <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>  
   
-        <!-- ArithmeticUI references -->  
-        <link href="/css/default.css" rel="stylesheet" />  
-        <script src="/js/default.js"></script>  
-        <script src="/SimpleMath/js/arithmetic.js"></script>  
-    </head>  
-    <body>  
-        <form>  
-        <div id="calculator" class="ms-grid">  
-            <input name="firstNumber" id="firstNumber" type="number" step="any">  
-            <div id="operators">  
-                <button class="operator" type="button">+</button>  
-                <button class="operator" type="button">-</button>  
-                <button class="operator" type="button">*</button>  
-                <button class="operator" type="button">/</button>  
-            </div>  
-            <input id="secondNumber" type="number">  
-            <button class="calculate" type="button">=</button>  
-            <input id="result" type="number" name="result" disabled="" readonly="">  
-        </div>  
-        </form>  
-    </body>  
-    </html>  
-    ```  
+       <!-- ArithmeticUI references -->  
+       <link href="/css/default.css" rel="stylesheet" />  
+       <script src="/js/default.js"></script>  
+       <script src="/SimpleMath/js/arithmetic.js"></script>  
+   </head>  
+   <body>  
+       <form>  
+       <div id="calculator" class="ms-grid">  
+           <input name="firstNumber" id="firstNumber" type="number" step="any">  
+           <div id="operators">  
+               <button class="operator" type="button">+</button>  
+               <button class="operator" type="button">-</button>  
+               <button class="operator" type="button">*</button>  
+               <button class="operator" type="button">/</button>  
+           </div>  
+           <input id="secondNumber" type="number">  
+           <button class="calculate" type="button">=</button>  
+           <input id="result" type="number" name="result" disabled="" readonly="">  
+       </div>  
+       </form>  
+   </body>  
+   </html>  
+   ```  
   
 9. 使用以下代码替换内容*\js\default.js*。  
   

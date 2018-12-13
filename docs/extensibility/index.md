@@ -1,19 +1,20 @@
 ---
 layout: LandingPage
-author: jasongroce
-ms.author: apexprodleads
+title: Visual Studio 扩展性
+description: 了解 Visual Studio 扩展性。
+author: gregvanl
+ms.author: gregvanl
+ms.date: 10/31/2018
 ms.technology: vs-ide-sdk
 ms.topic: landing-page
-title: Visual Studio 扩展性文档 | Microsoft Docs
-description: 了解 Visual Studio 扩展性。
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7a86fb34eb054423127ba2f91b055585a20719b3
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500292"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750740"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Visual Studio 扩展性文档
 
@@ -49,7 +50,7 @@ Visual Studio 提供了大量的扩展性选项。 可以扩展 Visual Studio �
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>.NET 编译器平台（“Roslyn”）扩展性</h3>
+                        <h3>.NET 编译器平台 (&quot;Roslyn&quot;) 扩展性</h3>
                     </div>
                 </div>
             </div>

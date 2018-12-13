@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualbasedispindex |Microsoft 文档'
+title: 'Idiasymbol:: Get_virtualbasedispindex |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c877453f2ae3de97fbb085d79a3795aea369728
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7e1984bb9828e9e9dedef85fbd806583e1a8fea3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917825"
 ---
 # <a name="idiasymbolgetvirtualbasedispindex"></a>IDiaSymbol::get_virtualBaseDispIndex
 检索虚拟基的偏移量表中的符号的索引。  
@@ -40,7 +40,7 @@ HRESULT get_virtualBaseDispIndex (
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

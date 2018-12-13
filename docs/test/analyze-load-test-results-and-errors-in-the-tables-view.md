@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cab92c4daac6da81541771b534f4f1a6f9be159e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179656"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896622"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在负载测试分析器的表视图中分析负载测试结果和错误
 
 查看负载测试运行的结果时，可以显示不同的窗格，从而以不同的方式分析数据。 你可以查看图形形式的数据，从而了解数据随时间的变化情况，也可以查看详细信息表形式的数据。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 要切换到表视图，请选择负载测试工具栏上的“表”。 若要在不同的表之间切换，请使用表网格上方的工具栏上的“表”下拉列表。 在表视图中，一次最多可以查看四个表。 有关详细信息，请参阅本主题中的[平铺负载测试表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables)。
 
@@ -41,19 +43,19 @@ ms.locfileid: "39179656"
 > [!NOTE]
 > 名为“最后一个”的列仅在执行负载测试时可用。 负载测试完成后，这些列即变为不可用。
 
- 对于大多数表而言，都可以通过选择要作为排序依据的列标题来进行排序。 默认情况下，有些表并不显示所有可用的列。 如果有列可用，可向表中添加列。 若要添加列，请右键单击该表，然后选择“添加/删除列”。
+对于大多数表而言，都可以通过选择要作为排序依据的列标题来进行排序。 默认情况下，有些表并不显示所有可用的列。 如果有列可用，可向表中添加列。 若要添加列，请右键单击该表，然后选择“添加/删除列”。
 
 > [!NOTE]
 > 可以将数据从表复制到 Excel 等其他应用程序中，供其他分析之用。
 
 ## <a name="the-load-test-tables"></a>负载测试表
 
- 下表列出了可用于分析负载测试运行的表。
+下表列出了可用于分析负载测试运行的表。
 
 |表名称|描述|
-|----------------|-----------------|
+|-|-|
 |错误|显示在负载测试运行期间发生的错误的列表。 有关详细信息，请参阅[分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)和本主题中的[“错误”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table)。|
-|页数|显示在负载测试运行期间访问的页的列表。 此表中的某些数据仅在负载测试完成后才可用。 有关详细信息，请参阅[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。|
+|Pages|显示在负载测试运行期间访问的页的列表。 此表中的某些数据仅在负载测试完成后才可用。 有关详细信息，请参阅[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。|
 |请求|显示负载测试期间发出的各个请求的详细信息。 其中包括所有 HTTP 请求以及相关请求（如图像）。 有关详细信息，请参阅本主题中的[“请求”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table)。|
 |SQL 跟踪|显示 SQL 跟踪的结果。 此表仅在负载测试完成后、并且在测试期间使用了 SQL 跟踪的情况下才可用。 有关详细信息，请参阅本主题中的 [SQL 跟踪数据表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table)。|
 |测试|显示负载测试期间各个测试运行的详细信息。 有关详细信息，请参阅本主题中的[“测试”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table)。|
@@ -73,7 +75,7 @@ ms.locfileid: "39179656"
  下表列出了“请求”表中的列：
 
 |列|描述|默认情况下可见|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**请求**|请求的 URL。 例如，home.html 或 orange-arrow.gif。|是|
 |**方案**|方案的名称。|是|
 |**测试**|测试的名称。|是|
@@ -95,7 +97,7 @@ ms.locfileid: "39179656"
  下表列出了“测试”表中的列。
 
 |列|描述|默认情况下可见|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**测试**|测试的名称。|是|
 |**方案**|方案的名称。|是|
 |**总计**|该测试在方案中运行的总次数。 其中包括测试通过和失败的次数。|是|
@@ -119,7 +121,7 @@ ms.locfileid: "39179656"
 > 若要查看所有列，必须启用与活动的运行设置关联的“计时详细信息存储”属性。 有关详细信息，请参阅[如何：指定“计时详细信息存储”属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
 
 |列|描述|可见，但没有计时详细信息|
-|------------|-----------------|------------------------------------|
+|-|-|-|
 |**事务**|事务名称。|是|
 |**方案**|方案的名称。|是|
 |**测试**|测试的名称。|是|
@@ -145,7 +147,7 @@ ms.locfileid: "39179656"
  错误表中包含以下列：
 
 |列|描述|默认情况下可见|
-|------------|-----------------|------------------------|
+|-|-|-|
 |类型|错误类型。 例如，HttpError。|是|
 |子类型|错误的子类型。 例如，LoadTestException。|是|
 |计数|负载测试过程中发生的此类型的错误数。 此列中的项显示为超链接。 选择任意超链接可以查看各个错误的列表。|是|
@@ -163,7 +165,7 @@ ms.locfileid: "39179656"
 “负载测试错误”表包含以下列：
 
 |列|描述|
-|------------|-----------------|
+|-|-|
 |**时间**|负载测试过程中发生错误的时间。|
 |**代理**|发生错误的代理计算机的名称。 使用测试控制器和测试代理运行负载测试时此设置很重要。 有关详细信息，请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。|
 |**测试**|发生错误的 Web 性能测试的名称。|

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bed49c87828463c16912da4d31073ba2ac32fdc
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511987"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942824"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio 的字体和格式
 ##  <a name="BKMK_TheEnvironmentFont"></a> 环境字体
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` 返回一个布尔值？ （可以为 null 的布尔值） 与`DialogResult`，如果需要可使用它。 返回值为 true，如果对话框中，已关闭**确定**。  
   
- 如果你需要在其自身中显示一些 WPF UI，不是一个对话框，并位于`HwndSource`，如弹出窗口或 Win32/WinForms 父窗口窗口的 WPF 子窗口，您将需要设置`FontFamily`和`FontSize`WPF e 的根元素上lement。 (在 shell 上主窗口中，设置的属性，但将无法继承过去`HWND`)。 在 shell 提供了属性可以绑定到，此类资源：  
+ 如果你需要在其自身中显示一些 WPF UI，不是一个对话框，并位于`HwndSource`，如弹出窗口或 Win32/WinForms 父窗口的 WPF 子窗口，您将需要设置`FontFamily`和`FontSize`WPF 元素的根元素上。 (在 shell 上主窗口中，设置的属性，但将无法继承过去`HWND`)。 在 shell 提供了属性可以绑定到，此类资源：  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
@@ -325,13 +325,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>词首字母大写  
  词首字母大写是大多数或所有词在短语内的第一个字母首字母大写的样式。 在 Visual Studio 中，词首字母大写用于多个项，包括：  
   
--   **工具提示。** 示例:"预览所选项目"  
+- **工具提示。** 示例:"预览所选项目"  
   
--   **列标题。** 示例:"系统响应"  
+- **列标题。** 示例:"系统响应"  
   
--   **菜单项。** 示例:"全部保存"  
+- **菜单项。** 示例:"全部保存"  
   
- 在使用词首字母大写，这些是何时首字母大写的单词以及何时将小写的准则：  
+  在使用词首字母大写，这些是何时首字母大写的单词以及何时将小写的准则：  
   
 |大写|注释和示例|  
 |---------------|---------------------------|  
@@ -466,5 +466,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   加粗环境字体文本应遵循默认行距高度和填充。  
   
 ## <a name="see-also"></a>请参阅  
- [MSDN： 字体 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
- [MSDN： 用户界面文本 (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+ [MSDN： 字体 (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN： 用户界面文本 (Windows)](/windows/desktop/uxguide/text-ui)

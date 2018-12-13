@@ -1,7 +1,7 @@
 ---
 title: 教程 - 了解 Visual Studio 中的 Django，步骤 2
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了创建应用以及使用视图和模板的步骤。
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 404df36ab28e422e081df7d7cdf4831f8c2f64a0
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627234"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001277"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步骤 2：使用视图和页面模板创建 Django 应用
 
@@ -53,7 +53,7 @@ Django 应用通常以一组标准文件开始。 Visual Studio 提供项模板�
 | **\_\_init\_\_.py** | 将应用标识为包的文件。 |
 | **迁移** | 一个文件夹，Django 在其中存储用于更新数据库以便与模型更改保持一致的脚本。 然后，Django 迁移工具将必要的更改应用到任何以前版本的数据库，以便与当前模型相匹配。 使用迁移，可以将注意力集中在模型上，并让 Django 处理基础数据库架构。 步骤 6 中已对迁移进行了讨论；现在，该文件夹只需包含 \_\_init\_\_.py 文件（指示文件夹定义其自己的 Python 包）。 |
 | **模板** | Django 页面模板文件夹，其中包含与应用名匹配的文件夹中的一个 index.html 文件。 （在 Visual Studio 2017 15.7 及更早版本中，该文件直接包含在模板中，步骤 2-4 指示你创建子文件夹。）模板是若干个 HTML 块，视图可以将信息添加到其中并以动态方式呈现页面。 页面模板“变量”（如 index.html 中的 `{{ content }}`）都是动态值占位符，如本文后面所述（步骤 2）。 通常情况下，Django 应用通过将模板放置在与应用名称匹配的子文件夹中来创建其模板的命名空间。 |
-| **admin.py** | 在其中扩展应用管理界面的 Python 文件（请参阅步骤 6），用于查看和编辑数据库中的数据。 最初，此文件仅包含语句 `from django.contrib import admin`。 默认情况下，Django 在 Django 项目 settings.py 文件中的条目中包含一个标准的管理界面，可以通过取消评论 urls.py 中的现有条目将其打开。 |
+| **admin.py** | 在其中扩展应用管理界面的 Python 文件（请参阅步骤 6），用于对数据库中的数据进行种子设定和编辑。 最初，此文件仅包含语句 `from django.contrib import admin`。 默认情况下，Django 在 Django 项目 settings.py 文件中的条目中包含一个标准的管理界面，可以通过取消评论 urls.py 中的现有条目将其打开。 |
 | **apps.py** | 定义应用配置类的 Python 文件（参见下文，在此表后）。 |
 | **models.py** | 模型是由函数识别的数据对象，视图通过模型与应用的基础数据库进行交互（请参阅步骤 6）。 Django 提供数据库连接层，这样应用就无需考虑这些细节。 models.py 文件是用于创建模型的默认位置，最初只包含语句 `from django.db import models`。 |
 | **tests.py** | 包含单元测试基本结构的 Python 文件。 |
@@ -125,7 +125,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 如果在正则表达式中不使用尾随 $，比如 `^home`，那么 URL 模式匹配任何以“home”开头的 URL，如“home”、“homework”、“homestead”和“home192837”。
 
-若要尝试使用不同的正则表达式，请尝试使用联机工具，如 [pythex.org](http://www.pythex.org) 中的 [regex101.com](https://regex101.com)。
+若要尝试使用不同的正则表达式，请尝试使用联机工具，如 [pythex.org](https://www.pythex.org) 中的 [regex101.com](https://regex101.com)。
 
 ## <a name="step-2-3-render-a-view-using-html"></a>步骤 2-3：使用 HTML 呈现视图
 

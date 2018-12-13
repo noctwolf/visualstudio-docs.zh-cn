@@ -10,20 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6525327e85d40b9b942e4e29a7d759a15598c824
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382060"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895829"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>如何：创建记录器插件
 
 通过 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>，可以修改记录的 Web 性能测试。 应在“Web 性能测试记录器”工具栏中选择“停止”之后，但在“Web 性能测试编辑器”中保存和显示测试之前执行此修改。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 记录器插件使你可对动态参数执行自己的自定义关联。 通过内置的关联功能，Web 性能测试会在测试完成时或在使用 Web 性能测试编辑器工具栏上的“将动态参数提升为 Web 测试参数”时，在 Web 记录中检测动态参数。 但是，内置的检测功能并不是总能找到所有动态参数。 例如，该功能找不到通常会在 5 到 30 分钟之间更改其值的会话 ID。 因此，必须手动执行关联过程。
 
-通过 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>，您可以为自己的自定义插件编写代码。 在“Web 性能测试编辑器”中保存和显示 Web 性能测试之前，此插件可以多种方式执行关联或修改该 Web 性能测试。 因此，如果您确定必须为许多记录关联特定动态变量，则可自动执行此过程。
+通过 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>，你可以为自己的自定义插件编写代码。 在“Web 性能测试编辑器”中保存和显示 Web 性能测试之前，此插件可以多种方式执行关联或修改该 Web 性能测试。 因此，如果您确定必须为许多记录关联特定动态变量，则可自动执行此过程。
 
 可以使用记录器插件的某些其他方法可用于在 Web 性能测试中添加提取和验证规则、添加上下文参数或将注释转换为事务。
 
@@ -87,11 +89,11 @@ ms.locfileid: "39382060"
 
 ### <a name="deploy-the-recorder-plug-in"></a>部署记录器插件
 
-编译记录器插件后，需要将生成的 DLL 放置在以下两个位置之一：
+编译记录器插件后，将生成的 DLL 置于以下两个位置之一：
 
--   %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins
+- %ProgramFiles(x86)%\Microsoft Visual Studio\\[version]\\[edition]\Common7\IDE\PrivateAssemblies\WebTestPlugins
 
--   %USERPROFILE%\My Documents\Visual Studio \<version>\WebTestPlugins
+- %USERPROFILE%\Documents\Visual Studio [version]\WebTestPlugins
 
 > [!WARNING]
 > 在将记录器插件复制到以上两个位置之一后，必须重新启动 Visual Studio，以便注册记录器插件。
@@ -113,8 +115,8 @@ ms.locfileid: "39382060"
     >
     > 如果对任何插件进行代码更改并创建新 DLL 版本 (Version=0.0.0.0)，则会引发这种情况，但插件仍会引用原来的插件版本。 若要更正此问题，请执行以下步骤：
     >
-    > 1.  在 Web 性能和负载测试项目中，将看到引用警告。 移除和重新添加对插件 DLL 的引用。
-    > 2.  从测试或适当位置移除插件，然后再重新添加。
+    > 1. 在 Web 性能和负载测试项目中，将看到引用警告。 移除和重新添加对插件 DLL 的引用。
+    > 2. 从测试或适当位置移除插件，然后再重新添加。
 
 ## <a name="example"></a>示例
 
@@ -123,7 +125,7 @@ ms.locfileid: "39382060"
 > [!NOTE]
 > 示例代码的完整列表位于本主题底部。
 
- **评审示例代码**
+**评审示例代码**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>循环访问结果以查找包含 ReportSession 的第一页
 

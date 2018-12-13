@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 99d7f5e813e3ac33b327ed0c2962b150b6eed755
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6f53ca7f1a5e449d47a30a32967072f7220c159a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903148"
 ---
 # <a name="debug-sharepoint-solutions"></a>调试 SharePoint 解决方案
   您可以通过使用调试 SharePoint 解决方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 当开始调试，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将项目文件部署到 SharePoint 服务器，然后在 Web 浏览器中打开 SharePoint 站点的实例。 以下各节说明如何调试 SharePoint 应用程序中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -43,13 +43,13 @@ ms.locfileid: "36327162"
 ## <a name="enable-debugging"></a>启用调试
  当你第一次调试 SharePoint 解决方案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，对话框中向你发出警报的 web.config 文件未配置为启用调试。 （在安装 SharePoint server 时，被创建 web.config 文件。 有关详细信息，请参阅[使用 Web.config 文件](http://go.microsoft.com/fwlink/?LinkID=149266)。)对话框中显示的不调试或修改 web.config 文件的情况下运行该项目启用调试的选项。 如果选择第一个选项，则项目会正常运行。 如果选择第二个选项，则 web.config 文件将配置为：  
   
--   打开调用堆栈 (`CallStack="true"`)  
+- 打开调用堆栈 (`CallStack="true"`)  
   
--   禁用中的自定义错误[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](`<customErrors mode="Off" />`)  
+- 禁用中的自定义错误[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](`<customErrors mode="Off" />`)  
   
--   启用编译调试 (`<compilation debug="true">`)  
+- 启用编译调试 (`<compilation debug="true">`)  
   
- 生成的 web.config 文件如下所示：  
+  生成的 web.config 文件如下所示：  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -89,24 +89,24 @@ ms.locfileid: "36327162"
 ## <a name="f5-debug-and-deployment-process"></a>F5 调试和部署过程
  在调试模式下运行您的 SharePoint 项目时，SharePoint 部署过程将执行以下任务：  
   
-1.  在运行的可自定义预先部署命令。  
+1. 在运行的可自定义预先部署命令。  
   
-2.  使用创建 Web 解决方案包 (.wsp) 文件[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]命令。 .Wsp 文件包含所有必要的文件和功能。 有关详细信息，请参阅[解决方案概述](http://go.microsoft.com/fwlink/?LinkID=128154)。  
+2. 使用创建 Web 解决方案包 (.wsp) 文件[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]命令。 .Wsp 文件包含所有必要的文件和功能。 有关详细信息，请参阅[解决方案概述](http://go.microsoft.com/fwlink/?LinkID=128154)。  
   
-3.  如果 SharePoint 解决方案的场解决方案，请回收[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]指定站点的应用程序池[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]。 此步骤将释放锁定的文件[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]工作进程。  
+3. 如果 SharePoint 解决方案的场解决方案，请回收[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]指定站点的应用程序池[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]。 此步骤将释放锁定的文件[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]工作进程。  
   
-4.  如果以前版本的包已存在，收回上一版本的功能和.wsp 文件中的文件。 此步骤中停用了功能、 卸载解决方案包，然后删除 SharePoint 服务器上的解决方案包。  
+4. 如果以前版本的包已存在，收回上一版本的功能和.wsp 文件中的文件。 此步骤中停用了功能、 卸载解决方案包，然后删除 SharePoint 服务器上的解决方案包。  
   
-5.  在.wsp 文件中安装的功能和文件的当前版本。 此步骤中添加，并在 SharePoint 服务器上安装解决方案。  
+5. 在.wsp 文件中安装的功能和文件的当前版本。 此步骤中添加，并在 SharePoint 服务器上安装解决方案。  
   
-6.  对于工作流，工作流程序集的安装。 可以通过更改其位置*程序集位置*属性。  
+6. 对于工作流，工作流程序集的安装。 可以通过更改其位置*程序集位置*属性。  
   
-7.  如果该范围位于站点，激活 SharePoint 中的项目的功能。 未激活场和 web 应用程序作用域中的功能。  
+7. 如果该范围位于站点，激活 SharePoint 中的项目的功能。 未激活场和 web 应用程序作用域中的功能。  
   
-8.  对于工作流，将与 SharePoint 库、 列表或你在中选择的站点关联工作流**SharePoint 自定义向导**。  
+8. 对于工作流，将与 SharePoint 库、 列表或你在中选择的站点关联工作流**SharePoint 自定义向导**。  
   
-    > [!NOTE]  
-    >  仅当你选择，会发生这种关联**自动关联工作流**向导中。  
+   > [!NOTE]  
+   >  仅当你选择，会发生这种关联**自动关联工作流**向导中。  
   
 9. 在运行的可自定义后期部署命令。  
   
@@ -116,7 +116,7 @@ ms.locfileid: "36327162"
   
 12. 在 Web 浏览器中显示相应的库、 列表或站点页。  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 每个任务完成后，请在输出窗口中显示的状态消息。 如果无法完成任务，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]错误列表窗口中显示一条错误消息。  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 每个任务完成后，请在输出窗口中显示的状态消息。 如果无法完成任务，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]错误列表窗口中显示一条错误消息。  
   
 ## <a name="sharepoint-project-features"></a>SharePoint 项目功能
  一项功能是功能的一个可移植的可修改站点简化通过使用站点定义模块化单元。 它也是一个软件包[!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)](WSS) 元素的特定作用域可以激活，以帮助用户完成特定目标或任务。 模板部署为功能。  
@@ -128,8 +128,8 @@ ms.locfileid: "36327162"
 ## <a name="debug-workflows"></a>调试工作流
  调试工作流项目时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将 （具体取决于它的类型） 的工作流模板添加到库或列表。 然后，可以手动或通过添加或更新项启动工作流模板。 然后，可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试工作流。  
   
-> [!NOTE]  
->  如果添加对其他程序集的引用，请确保这些程序集文件安装在全局程序集缓存 ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否则，工作流解决方案将会失败。 有关如何安装的程序集的信息，请参阅[手动启动工作流上的文档或项](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。  
+> [!NOTE]
+>  如果添加对其他程序集的引用，请确保这些程序集文件安装在全局程序集缓存 ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否则，工作流解决方案将会失败。 有关如何安装的程序集的信息，请参阅[手动启动工作流上的文档或项](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。  
   
  但是，部署过程不会启动工作流。 必须从 SharePoint Web 站点启动工作流。 使用的客户端应用程序，例如 Microsoft Office Word 2010 中，或使用单独的服务器端代码，还可以启动工作流。 使用一种方法中指定**SharePoint 自定义向导**。  
   

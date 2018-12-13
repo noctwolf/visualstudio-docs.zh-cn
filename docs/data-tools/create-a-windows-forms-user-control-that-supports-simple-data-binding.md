@@ -16,23 +16,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab4ee8f468b3d6fa138984e17f3bbe843082e987
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: 673e510536ab866f3be90da630d3cfa261bb98c6
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582442"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305398"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>创建支持简单数据绑定的 Windows 窗体用户控件
 
-在 Windows 应用程序中的窗体上显示数据，可以选择从现有控件**工具箱**，或如果你的应用程序需要标准控件中不可用的功能，可以创作自定义控件。 本演练显示了如何创建实现 <xref:System.ComponentModel.DefaultBindingPropertyAttribute> 的控件。 用于实现 <xref:System.ComponentModel.DefaultBindingPropertyAttribute> 的控件可以包含一个可以绑定到数据的属性。 此类控件类似于 <xref:System.Windows.Forms.TextBox> 或 <xref:System.Windows.Forms.CheckBox>。
+在 Windows 应用程序的窗体上显示数据时，可以从“工具箱”中选择现有的控件，而当标准控件无法提供应用程序所要求的功能时，还可以创作自定义控件。 本演练显示了如何创建实现 <xref:System.ComponentModel.DefaultBindingPropertyAttribute> 的控件。 用于实现 <xref:System.ComponentModel.DefaultBindingPropertyAttribute> 的控件可以包含一个可以绑定到数据的属性。 此类控件类似于 <xref:System.Windows.Forms.TextBox> 或 <xref:System.Windows.Forms.CheckBox>。
 
 控件创作的详细信息，请参阅[在设计时开发 Windows 窗体控件](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)。
 
 在创作时用于在数据绑定方案中的控件，应实现以下数据绑定特性之一：
 
 |数据绑定特性用法|
-|-----------------------------------|
+| - |
 |在简单控件上实现 <xref:System.ComponentModel.DefaultBindingPropertyAttribute>（如 <xref:System.Windows.Forms.TextBox>），此类控件用于显示数据的单个列（或属性）。 （本演练页面描述了此过程）。|
 |在控件上实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>（如 <xref:System.Windows.Forms.DataGridView>），此类控件用于显示数据列表（或表）。 有关详细信息，请参阅[创建支持复杂数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)。|
 |在控件上实现 <xref:System.ComponentModel.LookupBindingPropertiesAttribute>（如 <xref:System.Windows.Forms.ComboBox>），此类控件用于显示数据列表（或表），也需要显示数据的单个列或属性。 有关详细信息，请参阅[创建支持查找数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。|
@@ -41,9 +41,9 @@ ms.locfileid: "39582442"
 
 在本演练中，你将学会如何执行以下任务：
 
--   创建一个新**Windows 窗体应用程序**。
+-   创建新的“Windows 窗体应用程序”。
 
--   添加一个新**用户控件**到你的项目。
+-   将新的“用户控件”添加到项目中。
 
 -   以可视方式设计用户控件。
 
@@ -51,7 +51,7 @@ ms.locfileid: "39582442"
 
 -   创建具有的数据集**数据源配置**向导。
 
--   设置**Phone**中的列**数据源**窗口以使用新的控件。
+-   在“数据源”窗口中，设置“电话”列，以使用新的控件。
 
 -   创建一个用于在新控件中显示数据的窗体。
 
@@ -79,39 +79,39 @@ ms.locfileid: "39582442"
 
 1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
 
-2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
+2. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
 
 3. 在中间窗格中，选择**Windows 窗体应用**项目类型。
 
 4. 将项目命名**SimpleControlWalkthrough**，然后选择**确定**。
 
-     **SimpleControlWalkthrough**项目时创建，并添加到**解决方案资源管理器**。
+     创建“SimpleControlWalkthrough”项目并将其添加到“解决方案资源管理器”中。
 
-## <a name="add-a-user-control-to-the-project"></a>将用户控件添加到项目
+## <a name="add-a-user-control-to-the-project"></a>将用户控件添加到项目中
 
 本演练创建一个简单的可数据绑定控件从**用户控件**。 添加**用户控件**项**SimpleControlWalkthrough**项目：
 
-1.  从**项目**菜单中，选择**添加用户控件**。
+1.  从“项目”菜单，选择“添加用户控件”。
 
-2.  类型**PhoneNumberBox**在名称区域中，单击**添加**。
+2.  在名称区域键入“PhoneNumberBox”，然后单击“添加”。
 
-     **PhoneNumberBox**控件添加到**解决方案资源管理器**，并在设计器中打开。
+     将“PhoneNumberBox”控件添加到“解决方案资源管理器”中，并在设计器中打开它。
 
 ## <a name="design-the-phonenumberbox-control"></a>设计 PhoneNumberBox 控件
 
 本演练中阐述了现有<xref:System.Windows.Forms.MaskedTextBox>来创建**PhoneNumberBox**控件：
 
-1.  拖动<xref:System.Windows.Forms.MaskedTextBox>从**工具箱**到用户控件的设计图面。
+1.  将 <xref:System.Windows.Forms.MaskedTextBox> 从“工具箱”拖到该用户控件的设计图面上。
 
-2.  选择智能标记上<xref:System.Windows.Forms.MaskedTextBox>只需拖放，然后选择**设置掩码**。
+2.  选择刚刚拖动的 <xref:System.Windows.Forms.MaskedTextBox> 上的智能标记，然后选择“设置掩码”。
 
-3.  选择**电话号码**中**输入掩码**对话框中，然后单击**确定**以设置掩码。
+3.  在“输入掩码”对话框中选择“电话号码”，然后单击“确定”以设置掩码。
 
 ## <a name="add-the-required-data-binding-attribute"></a>添加所需的数据绑定属性
 
-对于简单控件支持数据绑定的实现<xref:System.ComponentModel.DefaultBindingPropertyAttribute>:
+对于支持数据绑定的简单控件，实现 <xref:System.ComponentModel.DefaultBindingPropertyAttribute>：
 
-1.  交换机**PhoneNumberBox**到代码视图的控件。 (在**视图**菜单中，选择**代码**。)
+1.  交换机**PhoneNumberBox**到代码视图的控件。 （在“视图”菜单上，选择“代码”。）
 
 2.  中的代码替换**PhoneNumberBox**以下：
 
@@ -122,49 +122,49 @@ ms.locfileid: "39582442"
 
 ## <a name="create-a-data-source-from-your-database"></a>从您的数据库创建数据源
 
-此步骤中使用**数据源配置**向导创建数据源基于`Customers`Northwind 示例数据库中的表。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何： 安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
+此步骤根据 Northwind 示例数据库中的 `Customers` 表，使用“数据源配置”向导创建数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何： 安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
 
-1.  在 **“数据”** 菜单上，单击 **“显示数据源”**。
+1.  若要打开**数据源**窗口，然后在**数据**菜单中，单击**显示数据源**。
 
-2.  在中**数据源**窗口中，选择**添加新数据源**以启动**数据源配置**向导。
+2.  在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。
 
-3.  上**选择数据源类型**页上，选择**数据库**，然后单击**下一步**。
+3.  在“选择数据源类型”页上，选择“数据库”，然后单击“下一步”。
 
-4.  上**选择您的数据连接**页上，执行下列操作之一：
+4.  在“选择数据连接”页面上，执行以下操作之一：
 
     -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-    -   选择**新的连接**以启动**添加/修改连接**对话框。
+    -   选择“新建连接”以启动“添加/修改连接”对话框。
 
-5.  如果你的数据库需要密码，选择选项以包括敏感数据，然后单击**下一步**。
+5.  如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”。
 
 6.  上**将连接字符串保存到应用程序配置文件**页上，单击**下一步**。
 
-7.  上**选择数据库对象**页上，展开**表**节点。
+7.  在“选择数据库对象”页上，展开“表”节点。
 
-8.  选择`Customers`表，并单击**完成**。
+8.  选择 `Customers` 表，然后单击“完成”。
 
-     **NorthwindDataSet**添加到你的项目，并`Customers`表中将出现**数据源**窗口。
+     将“NorthwindDataSet”添加到项目中，并且“数据源”窗口中将显示 `Customers` 表。
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>设置要使用 phonenumberbox 控件的 phone 列
 
-内**数据源**窗口中，可以设置要在项拖动到窗体之前创建的控件：
+在“数据源”窗口中，可以先设置要创建的控件，然后再将项拖动到窗体上：
 
-1.  打开**Form1**在设计器中。
+1.  在设计器中打开“Form1”。
 
-2.  展开**客户**中的节点**数据源**窗口。
+2.  在“数据源”窗口中展开“Customers”节点。
 
-3.  单击下拉箭头**客户**节点，然后选择**详细信息**从控件列表。
+3.  在“Customers”节点上单击下拉箭头，然后从控件列表中选择“详细信息”。
 
-4.  单击下拉箭头**Phone**列中，选择**自定义**。
+4.  单击“电话”列上的下拉箭头，然后选择“自定义”。
 
-5.  选择**PhoneNumberBox**从列表中**关联的控件**中**数据 UI 自定义选项**对话框。
+5.  从“数据 UI 自定义选项”对话框中的“关联的控件”列表中，选择“PhoneNumberBox”。
 
-6.  单击下拉箭头**Phone**列中，选择**PhoneNumberBox**。
+6.  单击“电话”列上的下拉箭头，然后选择“PhoneNumberBox”。
 
-## <a name="add-controls-to-the-form"></a>将控件添加到窗体
+## <a name="add-controls-to-the-form"></a>向窗体添加控件
 
-可以通过将项从创建数据绑定控件**数据源**拖到窗体的窗口。
+通过将“数据源”窗口中的项拖到窗体上，可创建数据绑定控件。
 
 若要创建数据绑定控件在窗体上的，将主**客户**从节点**数据源**窗口拖到窗体，并验证**PhoneNumberBox**控件用于显示中的数据**Phone**列。
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::EnumChildren |Microsoft 文档
+title: IDebugProperty2::EnumChildren |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9631ee89dc9d241932b745db4ce094799a899bad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 79ac095f5e988b98d55b2837e70a1c0d3832b855
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847027"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
-检索属性的子级的列表。  
+检索的属性的子级的列表。  
   
 ## <a name="syntax"></a>语法  
   
@@ -53,30 +53,30 @@ int EnumChildren (
   
 #### <a name="parameters"></a>参数  
  `dwFields`  
- [in]中的标志的组合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)指定哪些字段中枚举的枚举[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构是否填充的。  
+ [in]中的标志的组合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)枚举，用于指定哪些字段中枚举[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构是必填。  
   
  `dwRadix`  
  [in]指定用于格式化数值的任何信息的基数。  
   
  `guidFilter`  
- [in]使用与筛选器的 GUID`dwAttribFilter`和`pszNameFilter`参数从中选择`DEBUG_PROPERTY_INFO`子级都要进行枚举。 例如，`guidFilterLocals`本地变量的筛选器。  
+ [in]与使用的筛选器的 GUID`dwAttribFilter`并`pszNameFilter`选择其中的参数`DEBUG_PROPERTY_INFO`子级都要枚举。 例如，`guidFilterLocals`本地变量的筛选器。  
   
  `dwAttribFilter`  
- [in]中的标志的组合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)指定哪种类型的对象，若要枚举，例如枚举`DBG_ATTRIB_METHOD`对于可能是此属性的子级的所有方法。 与结合使用`guidFilter`和`pszNameFilter`参数。  
+ [in]中的标志的组合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)枚举，用于指定哪种类型的对象，若要枚举，例如`DBG_ATTRIB_METHOD`可能是此属性的子级的所有方法。 与结合`guidFilter`和`pszNameFilter`参数。  
   
  `pszNameFilter`  
- [in]用于筛选器的名称`guidFilter`和`dwAttribFilter`参数从中选择`DEBUG_PROPERTY_INFO`子级都要进行枚举。 例如，将此参数设置为"MyX"筛选器，为所有子项具有名称"MyX。"  
+ [in]用于筛选器的名称`guidFilter`并`dwAttribFilter`选择其中的参数`DEBUG_PROPERTY_INFO`子级都要枚举。 例如，将此参数设置为"MyX"筛选器，为所有子项具有名称"MyX。"  
   
  `dwTimeout`  
- [in]指定以毫秒为单位，从此方法返回前等待的最长时间。 使用`INFINITE`无限期等待。  
+ [in]指定以毫秒为单位，此方法返回前等待的最长时间。 使用`INFINITE`无限期等待。  
   
  `ppEnum`  
- [out]返回[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)对象，其中包含子属性的列表。  
+ [out]返回[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)对象，其中包含的子属性的列表。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)   
  [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)   

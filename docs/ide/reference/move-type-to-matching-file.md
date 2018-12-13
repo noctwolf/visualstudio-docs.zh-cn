@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00fab87a8fed4d1dcd9b4899551d68eaab28d46a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e1d9d67d905fed5eb37e29c1be1ba7677da3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884142"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>“将类型移到匹配的文件”重构
 
@@ -35,32 +35,32 @@ ms.locfileid: "31945332"
 
 ## <a name="how-to"></a>操作说明
 
-1. 突出显示要移动的类型名称，或将文本光标置于其中：
+1. 将光标置于定义类型的类型名称中。 例如:
+
+   ```csharp
+   class Person
+   ```
+
+   ```vb
+   Class Person
+   ```
+
+2. 接下来，执行以下操作之一：
+
+   - 按“Ctrl”+**。**
+   - 右键单击类型名称，并选择“快速操作和重构”
+
+1. 选择菜单中的“将类型移到 TypeName.cs”，其中“TypeName”是选定类型的名称。
+
+   此时，类型会移到项目中与它同名的文件中。
 
    - C#：
 
-    ![突出显示的代码 - C#](media/movetype-highlight-cs.png)
+      ![内联结果 - C#](media/movetype-result-cs.png)
 
    - Visual Basic：
 
-    ![突出显示的代码 - Visual Basic](media/movetype-highlight-vb.png)
-
-1. 接下来，执行以下操作之一：
-
-   - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“将类型移动到 TypeName.cs”，其中“TypeName”是已选定的类型名称。
-   - **鼠标**
-     - 右键单击代码，然后选择“快速操作和重构”菜单，然后从“预览”弹出窗口中选择“将类型移动到 TypeName.cs”，其中“TypeName”是已选定的类型名称。
-
-   此类型随解决方案一并移动到具有此名称的新文件。
-
-   - C#：
-
-    ![内联结果 - C#](media/movetype-result-cs.png)
-
-   - Visual Basic：
-
-    ![内联结果 - Visual Basic](media/movetype-result-vb.png)
+      ![内联结果 - Visual Basic](media/movetype-result-vb.png)
 
 ## <a name="see-also"></a>请参阅
 

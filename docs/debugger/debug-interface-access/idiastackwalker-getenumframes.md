@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalker::getEnumFrames |Microsoft 文档
+title: IDiaStackWalker::getEnumFrames |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a86af24d863982a527a5f3bd2fae58b4dbc6d431
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f4c7d8d30dee1d9c0a058177ad54aab864cee28d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836148"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
-检索的堆栈帧枚举器 x86 平台。  
+检索 x86 堆栈帧枚举器的平台。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,16 +35,16 @@ HRESULT getEnumFrames(
   
 #### <a name="parameters"></a>参数  
  `pHelper`  
- [in]帮助器[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)对象。  
+ [in]帮助者[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)对象。  
   
  `ppEnum`  
- [out]返回[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)对象，其中包含一份[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)对象。  
+ [out]返回[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)对象，其中包含一系列[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)对象。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 若要获取在任何其他平台上的堆栈帧列表，调用[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)方法。  
+ 若要获取任何其他平台上的堆栈帧列表，请调用[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)方法。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)   

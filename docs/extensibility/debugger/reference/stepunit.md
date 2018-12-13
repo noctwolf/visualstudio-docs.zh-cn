@@ -1,5 +1,5 @@
 ---
-title: STEPUNIT |Microsoft 文档
+title: STEPUNIT |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 993c92d457baa2008387aad2bc6749ce7ad9387b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a88cb7126166462e64680938eb5f1b0d456a75f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126600"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901107"
 ---
 # <a name="stepunit"></a>STEPUNIT
 单步执行指定单步执行单元。  
@@ -46,16 +46,16 @@ enum enum_STEPUNIT {
   
 ## <a name="members"></a>成员  
  STEP_STATEMENT  
- 语句的步骤。  
+ 若要执行的语句的步骤。  
   
  STEP_LINE  
- 行的步骤。  
+ 若要执行的行的步骤。  
   
  STEP_INSTRUCTION  
- 通过指令的步骤。  
+ 若要执行的指令的步骤。  
   
 ## <a name="remarks"></a>备注  
- 作为自变量传递[步骤](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。  
+ 作为参数传递[步骤](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -64,6 +64,6 @@ enum enum_STEPUNIT {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

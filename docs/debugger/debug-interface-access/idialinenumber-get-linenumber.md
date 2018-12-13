@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_linenumber |Microsoft 文档'
+title: 'Idialinenumber:: Get_linenumber |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e192f3e0d2aa5b65ea97804080081170d51cab54
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c745896a4f574514b57f47cff984d2271eaf25bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942512"
 ---
 # <a name="idialinenumbergetlinenumber"></a>IDiaLineNumber::get_lineNumber
 检索源文件中的行号。  
@@ -34,10 +34,10 @@ HRESULT get_lineNumber (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]源文件中返回的行号。  
+ [out]在源文件中返回的行号。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
+ 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="example"></a>示例  
   

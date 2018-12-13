@@ -13,16 +13,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2009e4c186682157eab6803ad3055fd5818fd02d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886456"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自定义文件存储和 XML 序列化
 
-当用户保存实例，或*模型*，域特定语言 (DSL) 中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，创建或更新的 XML 文件。 可以重新加载该文件以重新创建该模型存储区中。
+当用户保存实例，或*模型*，Visual Studio 中的特定于域的语言 (DSL)，创建或更新的 XML 文件。 可以重新加载该文件以重新创建该模型存储区中。
 
 可以通过调整下的设置自定义序列化方案**Xml 序列化行为**在 DSL 资源管理器。 在某个节点**Xml 序列化行为**为每个域类、 属性和关系。 关系都位于其源类下。 另外还有对应形状、 连接器和关系图类的节点。
 
@@ -301,7 +301,7 @@ ms.locfileid: "39511806"
 源类节点下可找到角色数据节点。
 
 |属性|描述|
-|--------------|-----------------|
+|-|-|
 |具有自定义名字对象|设置为 true，如果你想要提供自己的代码生成和解决遍历此关系的名字对象。<br /><br /> 有关详细说明，生成解决方案，，然后双击错误消息。|
 |域关系|指定这些选项适用的关系。 只读。|
 |省略元素|如果为 true，该架构中省略对应于源角色的 XML 节点。<br /><br /> 如果源和目标类之间存在多个关系，此角色节点可区分属于两个关系的链接。 因此，我们建议，不设置此选项在这种情况下。|

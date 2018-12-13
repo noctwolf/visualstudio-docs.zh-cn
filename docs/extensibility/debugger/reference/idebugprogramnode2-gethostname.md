@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostName |Microsoft 文档
+title: IDebugProgramNode2::GetHostName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80b26d0113e9d627a567a1381ec04eec54b062b0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e47b8a18c631fe99b67020a4805d019b29fc234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115770"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816768"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 获取托管程序的进程的名称。  
@@ -43,7 +43,7 @@ int GetHostName (
   
 #### <a name="parameters"></a>参数  
  `dwHostNameType`  
- [in]取值范围为[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)枚举，指定要返回名称的类型。  
+ [in]中的值[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)枚举，用于指定要返回名称的类型。  
   
  `pbstrHostName`  
  [out]返回宿主进程的名称。  
@@ -52,7 +52,7 @@ int GetHostName (
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于简单`CProgram`公开的对象[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)接口。 此示例将忽略`dwHostNameType`参数并返回仅程序的名称，如来自模块的文件路径的基名称。  
+ 下面的示例演示如何实现此方法对于简单`CProgram`公开的对象[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)接口。 此示例中将忽略`dwHostNameType`参数并返回仅的程序的名称，如来自模块的文件路径的基名称。  
   
 ```cpp  
 HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {    
@@ -96,7 +96,7 @@ HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {
 }    
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

@@ -1,5 +1,5 @@
 ---
-title: BPREQI_FIELDS |Microsoft 文档
+title: BPREQI_FIELDS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff66a2c23f96ad083d84a937a45c1b2b8cf3ddec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 37e78c8f03412b101a6d1fa3b57b984377f79cac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103911"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859414"
 ---
 # <a name="bpreqifields"></a>BPREQI_FIELDS
 指定要检索有关断点请求的信息。  
@@ -68,53 +68,53 @@ public enum enum_BPREQI_FIELDS {
   
 ## <a name="members"></a>成员  
  BPREQI_BPLOCATION  
- 初始化/使用`bpLocation`（断点位置） 字段[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)或[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构。  
+ 初始化/用`bpLocation`（断点位置） 的字段[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)或[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构。  
   
  BPREQI_LANGUAGE  
- 初始化/使用`guidLanguage`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
+ 初始化/用`guidLanguage`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
   
  BPREQI_PROGRAM  
- 初始化/使用`pProgram`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
+ 初始化/用`pProgram`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
   
  BPREQI_PROGRAMNAME  
- 初始化/使用`bstrProgramName`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
+ 初始化/用`bstrProgramName`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
   
  BPREQI_THREAD  
- 初始化/使用`pThread`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
+ 初始化/用`pThread`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
   
  BPREQI_THREADNAME  
- 初始化/使用`bstrThreadName`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
+ 初始化/用`bstrThreadName`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
   
  BPREQI_PASSCOUNT  
- 初始化/使用`bpPassCount`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
+ 初始化/用`bpPassCount`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
   
  BPREQI_CONDITION  
- 初始化/使用`bpCondition`（断点条件） 字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
+ 初始化/用`bpCondition`（断点条件） 字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
   
  BPREQI_FLAGS  
- 初始化/使用`dwFlags`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
+ 初始化/用`dwFlags`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
   
  BPREQI_ALLOLDFIELDS  
  初始化/使用的所有字段的`BP_REQUEST_INFO`结构。  
   
  BPREQI_VENDOR  
- 初始化/使用`guidVendor`字段`BP_REQUEST_INFO2`结构。  
+ 初始化/用`guidVendor`字段的`BP_REQUEST_INFO2`结构。  
   
  BPREQI_CONSTRAINT  
- 初始化/使用`bstrConstraint`字段`BP_REQUEST_INFO2`结构。  
+ 初始化/用`bstrConstraint`字段的`BP_REQUEST_INFO2`结构。  
   
  BPREQI_TRACEPOINT  
- 初始化/使用`bstrTracepoint`字段`BP_REQUEST_INFO2`结构。  
+ 初始化/用`bstrTracepoint`字段的`BP_REQUEST_INFO2`结构。  
   
  BPREQI_ALLFIELDS  
  指定的所有字段`BP_REQUEST_INFO2`结构。  
   
 ## <a name="remarks"></a>备注  
- 作为自变量传递[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)和[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)方法以指定的哪些字段[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)和[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构是否被初始化。  
+ 作为参数传递[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)并[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)方法，以指定的哪些字段[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)和[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构是否进行初始化。  
   
- 这些标志也用于指示哪些字段`BP_REQUEST_INFO`和`BP_REQUEST_INFO2`结构均使用和有效时返回每个结构。  
+ 这些标志还用于指示哪些字段`BP_REQUEST_INFO`和`BP_REQUEST_INFO2`结构已使用且有效时返回的每个结构。  
   
- 这些值可以与按位组合`OR`。  
+ 可能的按位组合这些值`OR`。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -123,7 +123,7 @@ public enum enum_BPREQI_FIELDS {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   

@@ -1,5 +1,6 @@
 ---
-title: 快照调试疑难解答和已知问题 |Microsoft Docs
+title: 快照调试疑难解答 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/07/2017
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
@@ -11,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 82d8a310b86d5dc3c776243293a91f176025f897
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284102"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059822"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>快照调试 Visual Studio 中的疑难解答和已知问题
 
 如果在这篇文章中所述的步骤未解决你遇到的问题，请联系snaphelp@microsoft.com。
 
-## <a name="issue-snappoint-does-not-turn-on"></a>问题： 吸附点不会启用
+## <a name="issue-snappoint-does-not-turn-on"></a>问题：吸附点不会启用
 
 如果看到警告图标![吸附点警告图标](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "吸附点警告图标")与你吸附点而不是常规的吸附点图标，然后吸附点未打开。
 
@@ -32,7 +33,7 @@ ms.locfileid: "44284102"
 
 1. 请确保具有相同版本的用于生成和部署你 app.isua1 的源代码。 请确保要为你的部署加载正确的符号。 若要执行此操作，查看**模块**窗口而快照调试和验证是否为正在调试的模块加载符号文件列显示的.pdb 文件。 快照调试程序将尝试自动下载并为你的部署使用的符号。
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>问题： 符号时不加载我打开的快照
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>问题：我打开的快照时不加载符号
 
 如果看到以下窗口时，符号未加载。
 
@@ -48,14 +49,14 @@ ms.locfileid: "44284102"
 
 - 或者，如果你的组织使用符号服务器，或者将符号放入不同的路径，使用符号设置以加载你的部署正确的符号。
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>问题： 我无法看到云资源管理器中的"附加快照调试器"选项
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>问题：看不到云资源管理器中的"附加快照调试器"选项
 
 执行以下步骤：
 
 - 请确保安装了快照调试程序组件。 打开 Visual Studio 安装程序，并检查**快照调试器**组件中的 Azure 工作负荷。
-- 请确保您的应用程序支持。 目前，只有 ASP.NET (4.6.1+) 和 ASP.NET Core （2.0 +） 应用部署到 Azure 应用程序服务都受支持。
+- 请确保您的应用程序支持。 目前，只有 ASP.NET (4.6.1+) 和 ASP.NET Core （2.0 +） 应用部署到 Azure 应用服务支持。
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>问题： 我只看到限制在诊断工具的快照
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>问题：我只看到限制在诊断工具的快照
 
 ![Throttled 被阻止的 snappoint](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "限制吸附点")
 
@@ -66,8 +67,8 @@ ms.locfileid: "44284102"
 ## <a name="known-issues"></a>已知问题
 
 - 当前不支持使用多个 Visual Studio 客户端针对同一个应用服务进行快照调试。
-- ASP.NET Core 项目不完全支持 Roslyn IL 优化。 对于某些 ASP.NET Core 项目，你可能无法看到某些变量或条件语句中使用某些变量。 
-- 特殊变量，如 *$FUNCTION*或 *$CALLER*，无法计算条件语句或 logpoints 对于 ASP.NET Core 项目中。
+- Roslyn IL 优化不完全支持 ASP.NET Core 项目中。 对于某些 ASP.NET Core 项目，你可能无法再看到某些变量，或在条件语句中使用一些变量。 
+- 特殊变量，如 *$FUNCTION*或 *$CALLER*，无法计算条件语句或个记录点，对于 ASP.NET Core 项目中。
 - 快照调试不适用于具有的应用服务[本地缓存](/azure/app-service/app-service-local-cache)开启。
 - 目前不支持调试 API 应用的快照。
 

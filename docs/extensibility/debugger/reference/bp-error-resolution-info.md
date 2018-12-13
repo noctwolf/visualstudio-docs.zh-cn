@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_RESOLUTION_INFO |Microsoft 文档
+title: BP_ERROR_RESOLUTION_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fdf3b6aee272990fb22feee13f8e46ee8550073
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb2388d93c05500dc3c12bb5d57cd17293f5e16c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102130"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816766"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 描述错误断点，包括位置、 程序和线程的解决方法。  
@@ -51,22 +51,22 @@ public struct BP_ERROR_RESOLUTION_INFO {
   
 ## <a name="members"></a>成员  
  `dwFields`  
- 从值的组合[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)枚举指定填写此结构的哪些字段。  
+ 中值的组合[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)枚举，它指定填充此结构的哪些字段。  
   
  `bpResLocation`  
- [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)联合，它指定断点解析位置。  
+ [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) union，这将指定的断点解析位置。  
   
  `pProgram`  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表断点错误发生的应用程序的对象。  
+ [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)表示应用程序发生断点错误的对象。  
   
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示在其运行的应用程序生成断点错误的线程。  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示生成断点错误的应用程序正在其运行的线程。  
   
  `bstrMessage`  
- 包含导致此错误解决任何警告或错误消息的字符串。  
+ 包含导致此错误解决方法的任何警告或错误消息的字符串。  
   
  `dwType`  
- 取值范围为[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)指定断点错误类型的枚举。  
+ 中的值[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)枚举，用于指定断点错误类型。  
   
 ## <a name="remarks"></a>备注  
  此结构返回从[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)方法。  
@@ -78,7 +78,7 @@ public struct BP_ERROR_RESOLUTION_INFO {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)   
  [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   

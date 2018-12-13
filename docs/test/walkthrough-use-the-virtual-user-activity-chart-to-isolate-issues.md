@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用虚拟用户活动图表进行负载测试
+title: 使用虚拟用户活动图表进行负载测试
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a937e06eadc1af0734ff34f043c97833e1be1c96
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8e4584d386cb61aaf7809c8bb5ab748e49543c7e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382205"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895920"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>演练：使用虚拟用户活动图隔离问题
 
@@ -24,17 +24,7 @@ ms.locfileid: "39382205"
 
 虚拟用户活动图用于可视化与负载测试关联的虚拟用户活动。 图中的每一行代表一个虚拟用户。 虚拟用户活动图显示每个虚拟用户在测试期间所执行的操作。 这样，你便可以通过查看用户活动的模式和负载模式来隔离性能问题，关联失败的或速度缓慢的测试，并且查看具有其他虚拟用户活动的请求。 只有在运行完负载之后，虚拟用户活动图才可用。
 
-在本演练中，将完成下列任务：
-
--   了解如何使用下列与虚拟用户活动图关联的工具：
-
-    -   使用“缩放到时间段”工具可指定图表中要分析的特定时间段。
-
-    -   使用“详细信息图例”面板和“筛选结果”面板可对图表应用筛选，以帮助隔离问题。
-
--   使用虚拟用户活动图可分析特定虚拟用户遇到的错误，还可以查看存在问题的错误类型详细信息。
-
-有关详细信息，请参阅[在“详细信息”视图中分析虚拟用户活动](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -42,13 +32,11 @@ ms.locfileid: "39382205"
 
 -   完成以下过程：
 
-    -   [记录和运行 Web 性能测试](http://msdn.microsoft.com/en-us/bd0a82fd-cec0-4861-bc09-e1b0b2d258ef)。
+    -   [记录和运行 Web 性能测试](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)。
 
-    -   [创建和运行负载测试](http://msdn.microsoft.com/en-us/7041cbcf-9ab1-4579-98ff-8f296aeaded4)
+    -   [创建和运行负载测试](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>打开在前面演练中创建的 ColorWebApp 解决方案
-
-### <a name="open-the-solution"></a>打开此解决方案
 
 1.  启动 Visual Studio。
 

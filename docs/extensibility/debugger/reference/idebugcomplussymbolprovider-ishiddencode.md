@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsHiddenCode |Microsoft 文档
+title: IDebugComPlusSymbolProvider::IsHiddenCode |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7a1a559b6ed3b9d92299fe9d4c2cc13c11319e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73c1242a21dbbcc52a81e5515c19c6fd8084da74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842984"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
-确定是否为隐藏的调试器指定的地址处的代码。  
+确定指定的调试程序地址处代码处于隐藏状态。  
   
 ## <a name="syntax"></a>语法  
   
@@ -39,13 +39,13 @@ int IsHiddenCode(
   
 #### <a name="parameters"></a>参数  
  `pAddress`  
- [in]由调试地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。  
+ [in]由表示的调试地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。  
   
 ## <a name="return-value"></a>返回值  
- 如果代码处于隐藏状态，将返回`S_OK`; 否则为返回`S_FALSE`。  
+ 如果代码处于隐藏状态，则返回`S_OK`; 否则为返回`S_FALSE`。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**公开的对象[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。  
+ 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsHiddenCode(  
@@ -92,5 +92,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

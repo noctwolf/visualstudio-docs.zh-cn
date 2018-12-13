@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreams:: Item |Microsoft 文档'
+title: 'Idiaenumdebugstreams:: Item |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b255a96b3bd443ff4a2782cb2161694da3694c17
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ae82df1f2af6acba7f94bf0d14682aff27a830bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916187"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
-检索通过索引或名称的调试流。  
+检索调试流通过索引或名称。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,10 +35,10 @@ HRESULT Item (
   
 #### <a name="parameters"></a>参数  
  索引  
- [in]要检索的索引或调试流的名称。 如果使用整数变体，则它必须是范围 0 到`count`-1，其中`count`是通过返回[idiaenumdebugstreams:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)方法。  
+ [in]要检索的索引或调试流的名称。 如果使用整数变量，则它必须是介于 0 到`count`-1，其中`count`与返回的[idiaenumdebugstreams:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)方法。  
   
  流  
- [out]返回[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)表示指定的调试流对象。  
+ [out]返回[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)对象，表示指定的调试流。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

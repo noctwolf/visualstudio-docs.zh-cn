@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b9b29cef4ad215e76af57e66c73eb2e8a134db
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839266"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
 
@@ -100,7 +100,7 @@ ms.locfileid: "31953831"
 
     当创建新的应用程序时，一些项目默认情况下以 [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] 为目标。
 
-- 应当避免添加对同一解决方案中另一个项目的输出的文件引用，因为这样做可能导致编译错误。 而应使用“添加引用”对话框的“项目”选项卡来创建项目到项目的引用。 这样就可以更好地管理在项目中创建的类库，从而更易于进行团队开发。 有关详细信息，请参阅[有关无效引用的疑难解答](../ide/troubleshooting-broken-references.md)。
+应当避免添加对同一解决方案中另一个项目的输出的文件引用，因为这样做可能导致编译错误。 而应使用“添加引用”对话框的“项目”选项卡来创建项目到项目的引用。 这样就可以更好地管理在项目中创建的类库，从而更易于进行团队开发。 有关详细信息，请参阅[有关无效引用的疑难解答](../ide/troubleshooting-broken-references.md)。
 
 > [!NOTE]
 > 在 Visual Studio 2015 或更高版本中，如果一个项目的 .NET Framework 目标版本为版本 4.5 或更高版本，而另一个项目的目标版本为版本 2、3、3.5 或 4.0，则将创建文件引用而不是项目引用。
@@ -109,9 +109,9 @@ ms.locfileid: "31953831"
 
 - 将程序集移动或复制到下列位置之一：
 
-    - 当前项目目录。 （可以使用 **“浏览”** 选项卡查找这些程序集。）
+   - 当前项目目录。 （可以使用 **“浏览”** 选项卡查找这些程序集。）
 
-    - 同一解决方案中的其他项目目录。 （可以使用“项目”选项卡查找这些程序集。）
+   - 同一解决方案中的其他项目目录。 （可以使用“项目”选项卡查找这些程序集。）
 
     \- 或 -
 
@@ -175,7 +175,7 @@ ms.locfileid: "31953831"
 </PropertyGroup>
 ```
 
-请确保选中此子组上的“Windows”复选框。 随后应能使用 Windows 运行时元素。 但是，还需要添加 <xref:System.Runtime>，Windows 运行时从中定义在整个 Windows 运行库中使用的一些标准类和接口（例如 <xref:System.Collections.IEnumerable>）。 若要了解如何添加 <xref:System.Runtime>，请参阅[托管的桌面应用和 Windows 运行时](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types)。
+请确保选中此子组上的“Windows”复选框。 随后应能使用 Windows 运行时元素。 但是，还需要添加 <xref:System.Runtime>，Windows 运行时从中定义在整个 Windows 运行库中使用的一些标准类和接口（例如 <xref:System.Collections.IEnumerable>）。 若要了解如何添加 <xref:System.Runtime>，请参阅[托管的桌面应用和 Windows 运行时](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types)。
 
 ### <a name="extensions-subgroup"></a>“扩展”子组
 

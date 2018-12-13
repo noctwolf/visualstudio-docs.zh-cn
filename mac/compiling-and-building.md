@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 8e742706117b318a5614484c97b9ecda0b2c3f51
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: fece226d9e7fd7ba023369928171553c393b46d5
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224100"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294313"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中编译和生成
 
@@ -44,7 +44,11 @@ Visual Studio for Mac 还可用于执行以下操作：
 
 请参阅 [MSBuild](/visualstudio/msbuild/msbuild) 内容，了解有关使用 MSBuild 的详细信息。
 
-## <a name="building-from-visual-studio-team-services"></a>从 Visual Studio Team Services 生成
+## <a name="building-from-azure-pipelines"></a>从 Azure Pipelines 生成
 
 * [生成 Xamarin 应用](/vsts/pipelines/apps/mobile/xamarin?view=vsts&tabs=vsts)
 * [与 Xamarin 持续集成](https://developer.xamarin.com/guides/cross-platform/ci/)
+
+## <a name="see-also"></a>请参阅
+
+- [编译和生成（Windows 上的 Visual Studio）](/visualstudio/ide/compiling-and-building-in-visual-studio)

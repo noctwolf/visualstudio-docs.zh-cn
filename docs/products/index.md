@@ -5,12 +5,12 @@ title: Visual Studio 文档| Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来开发适用于你的平台和设备的应用程序、服务和工具。
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: ee2f52f135412fb0847d3922d243383781220acb
-ms.sourcegitcommit: e942550df44f733a1349b85f0059318a28a1ac27
+ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44339666"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821352"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -42,37 +42,18 @@ ms.locfileid: "44339666"
                                 </a>
                             </li>
                             <li>
-                                <a href="/azure/devops/" title="Azure DevOps Services">
+                                <a href="/visualstudio/mac" title="Visual Studio for Mac">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure DevOps Services</h3>
-                                                    <p>通过 Agile 项目工具和报表提高团队效率。 通过新式 CI/CD 工具从源控件生成、测试和部署项目。</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/tfs/" title="Team Foundation Server">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Team Foundation Server</h3>
-                                                    <p>安装、升级和管理本地部署。</p>
+                                                    <h3>Visual Studio for Mac</h3>
+                                                    <p>使用 Mac 生成适用于云、iOS、Android、macOS 和可穿戴设备的应用和游戏</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -92,25 +73,6 @@ ms.locfileid: "44339666"
                                                 <div class="cardText">
                                                     <h3>Visual Studio Code</h3>
                                                     <p>在 MacOS、Linux 和 Windows 上使用数百种语言的丰富的编辑和调试体验</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/visualstudio/mac" title="Visual Studio for Mac">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Visual Studio for Mac</h3>
-                                                    <p>使用 Mac 生成适用于云、iOS、Android、macOS 和可穿戴设备的应用和游戏</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -155,10 +117,49 @@ ms.locfileid: "44339666"
                                     </div>
                                 </a>
                             </li>
+                            <li>
+                                <a href="/azure/devops/" title="Azure DevOps Services">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure DevOps Services</h3>
+                                                    <p>通过 Agile 项目工具和报表提高团队效率。 通过新式 CI/CD 工具从源控件生成、测试和部署项目。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tfs/" title="Azure DevOps Server">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage">
+                                                        <img data-scaleimage="./images/vs-team-services.svg" src="./images/vs-team-services.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Azure DevOps Server</h3>
+                                                    <p>安装、升级和管理本地部署。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </li>
         </ul>
+        <p>Visual Studio Team Services 已被 Azure DevOps Services 取代，Team Foundation Server (TFS) 重命名为 Azure DevOps Server。 请参阅 <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">Visual Studio Team Services 发生了什么？</a>和 <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server 现在是 Azure DevOps Server</a>。</p>
     </div>
 </div>

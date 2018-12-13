@@ -16,16 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a156e7f016c0966321240f5ae2362f2bc161e7
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336066"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349386"
 ---
 # <a name="use-the-task-list"></a>使用任务列表
 
 使用“任务列表”跟踪使用 `TODO` 和 `HACK` 或自定义令牌等令牌的代码注释，还能管理直接导向代码中的预定义位置的快捷方式。 单击列表中的项以转到其在源代码中的位置。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[任务注释 (Visual Studio for Mac)](/visualstudio/mac/task-comments)。
 
 ## <a name="the-task-list-window"></a>“任务列表”窗口
 
@@ -65,9 +68,9 @@ Visual Studio 2015 中已删除用户任务功能。 若打开的解决方案具
 
 ### <a name="custom-tokens"></a>自定义令牌
 
-默认情况下，Visual Studio 包含以下令牌：`HACK`、`TODO`、`UNDONE` 和 `NOTE`。 令牌不区分大小写。
+默认情况下，Visual Studio 包含以下令牌：`HACK`、`TODO`、`UNDONE` 和 `UnresolvedMergeConflict`。 令牌不区分大小写。 你也可以创建自己的自定义令牌。
 
-你也可以创建自己的自定义令牌。 创建自定义令牌：
+创建自定义令牌：
 
 1. 在 **“工具”** 菜单上，选择 **“选项”**。
 
@@ -77,9 +80,11 @@ Visual Studio 2015 中已删除用户任务功能。 若打开的解决方案具
 
    ![Visual Studio 任务列表](../ide/media/vs2015_task_list_options.png)
 
-3. 在“令牌” 类别中的“名称” 文本框中，输入令牌名称，如“BUG”。
+3. 在“名称” 文本框中，输入令牌名称，如“BUG”。
 
-4. 在 **“优先级别”** 下拉列表中，为新令牌选择默认优先级别。 选择 **“添加”** 按钮。
+4. 在 **“优先级别”** 下拉列表中，为新令牌选择默认优先级别。
+
+5. 选择“添加”。
 
 ### <a name="c-todo-comments"></a>C++ TODO 注释
 
@@ -102,3 +107,4 @@ Visual Studio 2015 中已删除用户任务功能。 若打开的解决方案具
 ## <a name="see-also"></a>请参阅
 
 - [“选项”对话框 ->“环境”->“任务列表”](../ide/reference/task-list-environment-options-dialog-box.md)
+- [任务注释 (Visual Studio for Mac)](/visualstudio/mac/task-comments)

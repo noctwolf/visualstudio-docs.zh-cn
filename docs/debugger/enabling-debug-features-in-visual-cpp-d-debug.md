@@ -1,5 +1,5 @@
 ---
-title: 启用调试 Visual c + + 的功能 (-/d_debug) |Microsoft 文档
+title: 启用调试 Visual c + + 中的功能 (-D_DEBUG) |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -26,23 +26,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5298879d93bf4e86df7610d5891e73bdbb67c4a1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 772467caf74a381fc2ef5cc74e8e31bf2ff0503c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472573"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949612"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>在 Visual C++ 中启用调试功能 (/D_DEBUG)
-在[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，调试功能，例如，如果符号重新编译程序时启用断言 **_DEBUG**定义。 你可以定义 **_DEBUG**在两种方式之一：  
+在中[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，调试功能，如当符号重新编译程序时，启用断言 **_DEBUG**定义。 您可以定义 **_DEBUG**中两种方式之一：  
   
--   指定 **#define _DEBUG**你在源代码中，或  
+- 指定 **#define _DEBUG**在源代码中或  
   
--   指定 **/D_DEBUG**编译器选项。 (如果在 Visual Studio 中使用向导，创建你的项目 **/D_DEBUG**调试配置中自动定义。)  
+- 指定 **/D_DEBUG**编译器选项。 (如果在使用向导，Visual Studio 中创建你的项目 **/D_DEBUG**调试配置中自动定义。)  
   
- 当 **_DEBUG**是定义，则编译器将编译包围的代码的部分 **#ifdef _DEBUG**和`#endif`。  
+  当 **_DEBUG**是定义，则编译器将编译包围的代码的部分 **#ifdef _DEBUG**和`#endif`。  
   
- MFC 程序的调试配置必须与 MFC 库的调试版本链接。 MFC 标头文件确定要链接的 MFC 库的正确版本基于你已定义，如符号 **_DEBUG**和 **_UNICODE**。 有关详细信息，请参阅[MFC 库版本](/cpp/mfc/mfc-library-versions)。  
+  MFC 程序的调试配置必须与 MFC 库的调试版本链接。 MFC 标头文件确定要链接的 MFC 库的正确版本根据已定义，如符号 **_DEBUG**并 **_UNICODE**。 有关详细信息，请参阅[MFC 库版本](/cpp/mfc/mfc-library-versions)。  
   
 ## <a name="see-also"></a>请参阅  
  [调试本机代码](../debugger/debugging-native-code.md)   

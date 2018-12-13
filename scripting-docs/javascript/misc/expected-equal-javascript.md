@@ -1,5 +1,5 @@
 ---
-title: 预期 &#39; = &#39;(JavaScript) |Microsoft 文档
+title: 预期&#39;=&#39; (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,23 +21,23 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8cae54b60ae94be5929ae5c5cfb8f8f0c1a2ea92
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632897"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909992"
 ---
-# <a name="expected-3939-javascript"></a>预期 &#39; = &#39;(JavaScript)
-你试图创建用于条件编译语句的变量，但未将放置到的变量与你想要向其分配的值之间用等号。  
+# <a name="expected-3939-javascript"></a>预期&#39;=&#39; (JavaScript)
+尝试创建一个变量以与条件编译语句一起使用，但未将放置在变量与你想要为其分配的值之间以等号。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   添加一个等号。 例如:   
+-   添加一个等号。 例如：  
   
     ```JavaScript  
     @set @myvar1 = 1  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [条件编译](../../javascript/advanced/conditional-compilation-javascript.md)   
  [条件编译变量](../../javascript/advanced/conditional-compilation-variables-javascript.md)

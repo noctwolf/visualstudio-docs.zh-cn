@@ -1,7 +1,8 @@
 ---
-title: 修改 Visual Studio 2017 | Microsoft Docs
+title: 修改 Visual Studio
+titleSuffix: ''
 description: 了解如何逐步修改 Visual Studio。
-ms.custom: H1Hack27Feb2017
+ms.custom: H1Hack27Feb2017,seodec18
 ms.date: 06/12/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -17,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fbc6cde1c897500190137ff48397a8c9cb3af059
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: efb52ebc55126fa167144803afc373317d735aae
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138760"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160057"
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>通过添加或删除工作负载和组件修改 Visual Studio 2017
 

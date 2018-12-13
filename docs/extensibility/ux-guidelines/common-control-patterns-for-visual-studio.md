@@ -73,9 +73,9 @@ ms.locfileid: "39512312"
   
 -   输入的字段，应调整以适应其内容，不适合在其中显示它们，在窗口的宽度也以任意匹配长的字段，例如，路径的长度。 长度可能会向用户指示的关于字段中允许多少个字符的限制。  
   
-     ![不正确的输入的字段长度： 不太可能的名称将是这么一段时间。] (../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707年 01_IncorrectInputFieldControl")<br />不正确的输入的字段长度： 不太可能的名称将是这么一段时间。
+     ![不正确的输入的字段长度： 不太可能的名称将是这么一段时间。](../../extensibility/ux-guidelines/media/0707-01_incorrectinputfieldcontrol.png "0707年 01_IncorrectInputFieldControl")<br />不正确的输入的字段长度： 不太可能的名称将是这么一段时间。
   
-     ![更正输入的字段长度： 输入的字段是预期的内容的合理宽度。] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707年 02_CorrectInputFieldControl")<br />更正输入的字段长度： 输入的字段是预期的内容的合理宽度。
+     ![更正输入的字段长度： 输入的字段是预期的内容的合理宽度。](../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707年 02_CorrectInputFieldControl")<br />更正输入的字段长度： 输入的字段是预期的内容的合理宽度。
   
 ###  <a name="BKMK_ComboBoxesAndDropDowns"></a> 组合框和下拉列表  
 典型的交互行为，请按照[下拉列表和组合框的 Windows 桌面准则](/windows/desktop/uxguide/ctrl-drop)。  
@@ -89,9 +89,9 @@ ms.locfileid: "39512312"
 #### <a name="layout"></a>布局  
 组合框和下拉列表确定应将其调整为适应内容，不适合在其中显示它们，在窗口的宽度也以任意匹配长的字段，例如，路径的长度。  
   
-![不正确： 下拉列表宽度是将显示的内容太长。] (../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707年 03_IncorrectDropDownLayout")<br />不正确： 下拉列表宽度是将显示的内容太长。
+![不正确： 下拉列表宽度是将显示的内容太长。](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707年 03_IncorrectDropDownLayout")<br />不正确： 下拉列表宽度是将显示的内容太长。
   
-![正确： 下拉列表会调整大小以允许转换的增长，但不是会不必要地长。] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707年 04_CorrectDropDownLayout")<br />正确： 下拉列表会调整大小以允许转换的增长，但不是会不必要地长。 
+![正确： 下拉列表会调整大小以允许转换的增长，但不是会不必要地长。](../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707年 04_CorrectDropDownLayout")<br />正确： 下拉列表会调整大小以允许转换的增长，但不是会不必要地长。 
   
 ###  <a name="BKMK_CheckBoxes"></a> 复选框  
 典型的交互行为，请按照[复选框的 Windows 桌面准则](/windows/desktop/uxguide/ctrl-check-boxes)。  
@@ -108,9 +108,9 @@ ms.locfileid: "39512312"
   
 -   使复选框与的第一行文本基线对齐。  
   
-     ![不正确： 复选框的文本为居中。] (../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707年 05_IncorrectCheckBoxAlign")<br />不正确： 复选框的文本为居中。
+     ![不正确： 复选框的文本为居中。](../../extensibility/ux-guidelines/media/0707-05_incorrectcheckboxalign.png "0707年 05_IncorrectCheckBoxAlign")<br />不正确： 复选框的文本为居中。
   
-     ![正确： 复选框与文本的第一行。] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707年 06_CorrectCheckBoxAlign")<br />正确： 复选框与文本的第一行。
+     ![正确： 复选框与文本的第一行。](../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707年 06_CorrectCheckBoxAlign")<br />正确： 复选框与文本的第一行。
   
 ###  <a name="BKMK_RadioButtons"></a> 单选按钮  
 典型的交互行为，请按照[单选按钮的 Windows 桌面准则](/windows/desktop/uxguide/ctrl-radio-buttons)。  
@@ -346,9 +346,9 @@ ms.locfileid: "39512312"
 #### <a name="selection"></a>选择  
 在树视图中选择一个节点后，突出显示应扩展到整个树视图控件的宽度。 这有助于用户清楚地标识他们选择了哪个项。 选择颜色应反映当前的 Visual Studio 主题。  
   
-![正确： 突出显示所选节点的适用于的树视图控件的整个宽度。] (../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />正确： 突出显示所选节点的适用于的树视图控件的整个宽度。
+![正确： 突出显示所选节点的适用于的树视图控件的整个宽度。](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705 1_TreeViewCorrect")<br />正确： 突出显示所选节点的适用于的树视图控件的整个宽度。
   
-![不正确： 突出显示所选节点不能容纳树视图控件的整个的宽度。] (../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />不正确： 突出显示所选节点不能容纳树视图控件的整个的宽度。
+![不正确： 突出显示所选节点不能容纳树视图控件的整个的宽度。](../../extensibility/ux-guidelines/media/070705-3_treeviewincorrect2.png "070705 3_TreeViewIncorrect2")<br />不正确： 突出显示所选节点不能容纳树视图控件的整个的宽度。
   
 #### <a name="icons"></a>图标  
 如果它们帮助直观地确定项之间的差异，则仅应在树视图控件中使用图标。 一般情况下，应仅在异类列表中的图标的执行信息来区分类型的元素中使用的图标。 在同类列表程序使用图标经常被视为干扰，应当避免。 在这种情况下 （父级） 中的组图标可传达其中的项的类型。 此规则的例外就是如果图标是动态的用于指示状态。  
@@ -356,14 +356,14 @@ ms.locfileid: "39512312"
 #### <a name="scroll-bars"></a>滚动条  
 如果内容适合树视图控件中，应始终隐藏滚动条。 它是树的可接受的滚动条可滚动的窗口中处于隐藏或半透明和包含在树视图的窗口具有焦点时显示或鼠标悬停时视图自身中。  
   
-![因为内容已经超出了树视图控件的限制，会显示这两个垂直和水平滚动条。] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />因为内容已经超出了树视图控件的限制，会显示这两个垂直和水平滚动条。
+![因为内容已经超出了树视图控件的限制，会显示这两个垂直和水平滚动条。](../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />因为内容已经超出了树视图控件的限制，会显示这两个垂直和水平滚动条。
   
 ###  <a name="BKMK_TreeViewInteractions"></a> 树视图交互  
   
 #### <a name="context-menus"></a>上下文菜单  
 树视图节点可以显示上下文菜单中的子菜单选项。 通常，当用户右键单击某个项或与选择的项的 Windows 键盘上按菜单键时出现此情况。 务必节点获得焦点并处于选中状态。 这有助于用户确定子菜单属于哪个项。  
   
-![选择已生成上下文菜单获得焦点，以通知用户哪些项的项。] (../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />选择已生成上下文菜单获得焦点，以通知用户哪些项的项。
+![选择已生成上下文菜单获得焦点，以通知用户哪些项的项。](../../extensibility/ux-guidelines/media/070705-5_contextmenu.png "070705 5_ContextMenu")<br />选择已生成上下文菜单获得焦点，以通知用户哪些项的项。
   
 #### <a name="keyboard"></a>键盘  
 在树视图应提供选择项和展开/折叠节点使用键盘的能力。 这可确保导航满足我们的可访问性要求。  

@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b7c17306bd437c627ca2232bfd3f35d3ac05d70e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f68f6e50be569df6130f7e6c6f3aa4bc7c107214
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118491"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296042"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>对 SharePoint 解决方案进行故障排除
-  当使用调试 SharePoint 解决方案时，可能出现以下问题或警报[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 有关详细信息，请参阅[调试 SharePoint 2007 工作流解决方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
+  当使用调试 SharePoint 解决方案时，可能出现以下问题或警报[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 有关详细信息，请参阅[调试 SharePoint 2007 工作流解决方案](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)。
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>沙盒可视 web 部件中的标记限制
  沙盒解决方案中的可视 Web 部件无法处理标准标记，例如 SharePoint 运行时支持的 $SPUrl。 因此不会解析 URL，并且如果你直接在脚本元素中引用 URL，则无法在可视 Web 部件设计器的“设计”视图中预览内容：  
@@ -53,21 +53,21 @@ ms.locfileid: "37118491"
 ### <a name="resolution"></a>解决方法  
  对于 SharePoint 项目和项目项名称，仅使用以下字符：  
   
--   字母数字 ASCII 字符  
+- 字母数字 ASCII 字符  
   
--   空格  
+- 空格  
   
--   句点 （.）  
+- 句点 （.）  
   
--   逗号 （，）  
+- 逗号 （，）  
   
--   下划线 (_)  
+- 下划线 (_)  
   
--   短划线 （-）  
+- 短划线 （-）  
   
--   反斜杠 (\\)  
+- 反斜杠 (\\)  
   
- 在打包项目时，验证规则将验证要部署的每个文件的部署路径属性是否只包含上述有效字符。  
+  在打包项目时，验证规则将验证要部署的每个文件的部署路径属性是否只包含上述有效字符。  
   
 ## <a name="errors-when-creating-custom-fields"></a>创建自定义字段时出错
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中的自定义字段是使用 XML 定义的。 如果未使用特定格式定义或引用字段，则会出错。  
@@ -99,13 +99,13 @@ ms.locfileid: "37118491"
  如果字段的源 XML 格式不正确、不是有效的 XML 文件或出现一些其他问题，则会出现“无法分析文件”错误。  
   
 ## <a name="new-non-english-site-definitions-do-not-appear-in-site-creation-page-after-deployment"></a>新的非英语站点定义不会出现在站点创建页中部署后
- 创建并使用非英语版本的部署站点定义后[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (即，具有区域设置的版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，则**SharePoint 自定义**选项卡不会显示在**模板选择**框和新的站点模板不会出现在**新的 SharePoint 站点**页。  
+ 创建并使用非英语版本的部署站点定义后[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](即，具有区域设置的版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，则**SharePoint 自定义**选项卡不会显示在**模板选择**框和新的站点模板不会出现在**新的 SharePoint 站点**页。  
   
 ### <a name="error-message"></a>错误消息
  无。  
   
 ### <a name="resolution"></a>解决方法  
- 由于不正确的值中会发生此问题**路径**属性为 webtemp 站点定义配置文件，如*webtemp_SiteDefinitionProject1.xml*。 在**路径**webtemp 文件，位于属性**部署位置**，为相应的区域设置更改 1033年[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]。 例如，若要使用日文区域设置将值更改为 1041年。 有关详细信息，请参阅[由 Microsoft 分配的区域设置 Id](http://go.microsoft.com/fwlink/?LinkID=165561) MSDN 网站上。  
+ 由于不正确的值中会发生此问题**路径**属性为 webtemp 站点定义配置文件，如*webtemp_SiteDefinitionProject1.xml*。 在**路径**webtemp 文件，位于属性**部署位置**，为相应的区域设置更改 1033年[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]。 例如，若要使用日文区域设置将值更改为 1041年。 有关详细信息，请参阅[由 Microsoft 分配的区域设置 Id](http://go.microsoft.com/fwlink/?LinkID=165561)。  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>在干净系统上部署工作流项目时，会出现错误
  如果在干净系统上部署 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中的工作流项目，则会发生此问题。 干净系统是指以全新方式安装了 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 SharePoint 但未部署工作流项目的计算机。  
@@ -136,7 +136,7 @@ ms.locfileid: "37118491"
   
 -   安装 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]。  
   
--   确保有 SharePoint 网站管理员访问权限。 有关详细信息，请参阅[!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)]在线文章[分配或删除 SharePoint Server 中的服务应用程序管理员](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications)。  
+-   确保有 SharePoint 网站管理员访问权限。 有关详细信息，请参阅[!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)]在线文章[分配或删除 SharePoint Server 中的服务应用程序管理员](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications)。  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>事件接收方项目中不会发生站点删除 web 事件
  当你创建事件接收器项目，并且您选择某些 Web 事件，如"正在删除网站"时，永远不会发生该事件。  
@@ -147,15 +147,15 @@ ms.locfileid: "37118491"
 ### <a name="resolution"></a>解决方法  
  因为功能作用域必须是"站点"以处理站点级别的事件，但事件接收方项目的默认功能作用域是"Web"，将发生此问题。 受影响的 Web 事件是：  
   
--   正在为站点删除 (WebDeleting)  
+- 正在为站点删除 (WebDeleting)  
   
--   已删除网站 (WebDeleted)  
+- 已删除网站 (WebDeleted)  
   
--   正在将站点移 (WebMoving)  
+- 正在将站点移 (WebMoving)  
   
--   已移动网站 (WebMoved)  
+- 已移动网站 (WebMoved)  
   
- 若要解决此问题，请按如下所示更改事件接收器，功能的范围。  
+  若要解决此问题，请按如下所示更改事件接收器，功能的范围。  
   
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>若要更改的事件接收器的功能范围  
   
@@ -215,7 +215,7 @@ ms.locfileid: "37118491"
  如果重命名导入的列表实例，然后在中运行，会发生此问题[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
 ### <a name="error-message"></a>错误消息
- 生成错误： 在部署步骤激活功能中出现错误： 文件 Template\Features\\[*导入项目**功能**名称*] \Files\Lists\\[*旧 * * 列表名称*] \Schema.xml 不存在。  
+ 生成错误： 在部署步骤激活功能中出现错误： 文件 Template\Features\\[*导入项目*<em>功能</em>*名称*] \Files\Lists\\[*旧*<em>列表名称</em>] \Schema.xml 不存在。  
   
 ### <a name="resolution"></a>解决方法  
  导入的列表实例时，名为 CustomSchema 的属性添加到列表实例的 Elements.xml 文件中。 Elements.xml 包括列表实例自定义 schema.xml 的路径。 当您重命名中的列表实例[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、 自定义 schema.xml 的部署路径发生变化，但不是更新 CustomSchema 属性的路径值。 因此，列表实例找不到*schema.xml*旧时激活该功能由 CustomSchema 特性指定的路径中的文件。  

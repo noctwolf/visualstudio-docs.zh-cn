@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb194836f40ce599ee3509b11fc9849b6a7780ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942092"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930214"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：将项目配置为面向多个平台
 
@@ -56,11 +56,11 @@ Visual Studio 提供了一种能够同时面向多个不同的 CPU 体系结构�
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>一次生成多个解决方案配置
 
-1.  使用“配置资源管理器”为解决方案添加至少两个目标平台。
+1. 使用“配置资源管理器”为解决方案添加至少两个目标平台。
 
-2.  使用“批量生成”窗口可以同时生成多个解决方案配置。
+2. 使用“批量生成”窗口可以同时生成多个解决方案配置。
 
- 例如，可以将解决方案级别的平台设置为 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]，并使该解决方案中项目都不面向该平台。 解决方案中可以存在多个项目，并且每个项目面向不同的平台。 如果具有此类解决方案，建议创建一个新的配置并使用描述性名称命名，以免混淆。
+   例如，可以将解决方案级别的平台设置为 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]，并使该解决方案中项目都不面向该平台。 解决方案中可以存在多个项目，并且每个项目面向不同的平台。 如果具有此类解决方案，建议创建一个新的配置并使用描述性名称命名，以免混淆。
 
 ## <a name="see-also"></a>请参阅
 

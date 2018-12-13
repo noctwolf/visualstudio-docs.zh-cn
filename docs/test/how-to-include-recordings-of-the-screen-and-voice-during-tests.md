@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用测试设置在测试期间包括屏幕和语音录制
+title: 在测试期间录制屏幕和语音
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381965"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894408"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用测试设置在测试期间包括屏幕和语音录制
 
@@ -26,9 +26,11 @@ ms.locfileid: "39381965"
 
 屏幕和语音录制器可用于手动测试或自动测试。 例如，如果你远程运行编码的 UI 测试，可能希望录制桌面以便在运行编码的 UI 测试时可以查看该测试。 有关如何远程捕获屏幕和语音录制的详细信息，请参阅[如何：设置测试代理以运行与桌面交互的测试](../test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md)。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>为测试设置配置屏幕和语音录制
 
-1.  打开要为录制屏幕和语音配置的测试设置。 有关详细信息，请参阅[在测试时收集诊断数据 (VSTS)](/vsts/manual-test/collect-diagnostic-data) 或[使用测试设置收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)。
+1.  打开要为录制屏幕和语音配置的测试设置。 有关详细信息，请参阅[在测试时收集诊断数据 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) 或[使用测试设置收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)。
 
 2.  在测试设置中，选择要用于录制屏幕和语音的“角色”。
 
@@ -63,7 +65,7 @@ ms.locfileid: "39381965"
 
 ## <a name="see-also"></a>请参阅
 
-- [在测试时收集诊断数据 (VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [在手动测试中收集诊断数据 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [在测试时收集诊断数据 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [使用测试设置收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)
-- [运行手动测试 (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [运行手动测试 (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

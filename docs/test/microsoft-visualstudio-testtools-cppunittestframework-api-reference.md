@@ -9,92 +9,93 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 973147bd497f9202227ab36a1beb948c51c7c698
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b2225ec5db308b290e932cb9d29d1c50e32d4608
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381981"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820260"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 参考
 
 本主题列出了 `Microsoft::VisualStudio::CppUnitTestFramework` 命名空间的公共成员。 使用这些 API 可编写基于 Microsoft 本机单元测试框架的 C++ 单元测试。 本主题末尾有一个[用法示例](#example)。
 
- 头文件位于 VisualStudio2012[x86]InstallFolder***\VC\UnitTest\include* 文件夹中。
+ 头文件位于 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include** 文件夹中。
 
- lib 文件位于 VisualStudio2012[x86]InstallFolder***\VC\UnitTest\lib* 文件夹。
+ lib 文件位于 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib** 文件夹。
 
 头文件和 lib 路径会在本机测试项目中自动配置。
 
-##  <a name="In_this_topic"></a> 主题内容
+##  <a name="In_this_topic"></a> 在本主题中
  [CppUnitTest.h](#cppUnitTest_h)
 
--   [创建测试类和方法](#create_test_classes_and_methods)
+- [创建测试类和方法](#create_test_classes_and_methods)
 
--   [初始化和清理](#Initialize_and_cleanup)
+- [初始化和清理](#Initialize_and_cleanup)
 
-    -   [测试方法](#test_methods)
+  -   [测试方法](#test_methods)
 
-    -   [测试类](#test_classes)
+  -   [测试类](#test_classes)
 
-    -   [测试模块](#test_modules)
+  -   [测试模块](#test_modules)
 
--   [创建测试属性](#create_test_attributes)
+- [创建测试属性](#create_test_attributes)
 
-    -   [测试方法属性](#test_method_attributes)
+  - [测试方法属性](#test_method_attributes)
 
-    -   [测试类属性](#test_class_attributes)
+  - [测试类属性](#test_class_attributes)
 
-    -   [测试模块属性](#test_module_attributes)
+  - [测试模块属性](#test_module_attributes)
 
-    -   [预定义属性](#pre_defined_attributes)
+  - [预定义属性](#pre_defined_attributes)
 
-     [CppUnitTestAssert.h](#cppUnitTestAssert_h)
+    [CppUnitTestAssert.h](#cppUnitTestAssert_h)
 
-    -   [常规断言](#general_asserts)
+  - [常规断言](#general_asserts)
 
-        -   [相等](#general_are_equal)
+    -   [相等](#general_are_equal)
 
-        -   [不相等](#general_are_not_equal)
+    -   [不相等](#general_are_not_equal)
 
-        -   [相同](#general_are_same)
+    -   [相同](#general_are_same)
 
-        -   [不相同](#general_are_not_same)
+    -   [不相同](#general_are_not_same)
 
-        -   [为 Null](#general_is_null)
+    -   [为 Null](#general_is_null)
 
-        -   [不为 Null](#general_is_not_null)
+    -   [不为 Null](#general_is_not_null)
 
-        -   [为 True](#general_is_True)
+    -   [为 True](#general_is_True)
 
-        -   [为 False](#general_is_false)
+    -   [为 False](#general_is_false)
 
-        -   [失败](#general_Fail)
+    -   [失败](#general_Fail)
 
-    -   [Windows 运行时断言](#winrt_asserts)
+  - [Windows 运行时断言](#winrt_asserts)
 
-        -   [相等](#winrt_are_equal)
+    -   [相等](#winrt_are_equal)
 
-        -   [相同](#winrt_are_same)
+    -   [相同](#winrt_are_same)
 
-        -   [不相等](#winrt_are_not_equal)
+    -   [不相等](#winrt_are_not_equal)
 
-        -   [不相同](#winrt_are_not_same)
+    -   [不相同](#winrt_are_not_same)
 
-        -   [为 Null](#winrt_is_null)
+    -   [为 Null](#winrt_is_null)
 
-        -   [不为 Null](#winrt_is_not_null)
+    -   [不为 Null](#winrt_is_not_null)
 
-    -   [异常断言](#exception_asserts)
+  - [异常断言](#exception_asserts)
 
-        -   [预期异常](#expect_exception)
+    - [预期异常](#expect_exception)
 
-         [CppUnitTestLogger.h](#cppunittestlogger_h)
+      [CppUnitTestLogger.h](#cppunittestlogger_h)
 
-        -   [记录器类](#logger)
+    - [记录器类](#logger)
 
-        -   [编写消息](#write_message)
-    -    [用法示例](#example)
+    - [编写消息](#write_message)
+
+  - [用法示例](#example)
 
 ##  <a name="cppUnitTest_h"></a> CppUnitTest.h
 
@@ -111,7 +112,6 @@ TEST_METHOD(methodName)
 {
     // test method body
 }
-
 ```
 
  将 methodName 定义为测试方法。 `TEST_METHOD` 必须在该方法的类的范围内声明。
@@ -125,7 +125,6 @@ TEST_METHOD_INITIALIZE(methodName)
 {
     // method initialization code
 }
-
 ```
 
  将 methodName 定义为在运行每个测试方法运行之前的方法。 `TEST_METHOD_INITIALIZE` 只能在测试类中定义一次，且必须在测试类中定义。
@@ -135,7 +134,6 @@ TEST_METHOD_CLEANUP(methodName)
 {
     // test method cleanup  code
 }
-
 ```
 
  将 methodName 定义为在运行每个测试方法之后运行的方法。 `TEST_METHOD_CLEANUP` 只能在测试类中定义一次，且必须在测试类的范围内定义。

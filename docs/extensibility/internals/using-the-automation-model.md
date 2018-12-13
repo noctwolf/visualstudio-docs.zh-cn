@@ -1,5 +1,5 @@
 ---
-title: 使用自动化模型 |Microsoft 文档
+title: 使用自动化模型 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 679e9966e66de1c79cb3c6394f1d80ab6d6733bb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6633aefe783cf163ee27f8a0c4a879aec898d325
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136531"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495435"
 ---
 # <a name="using-the-automation-model"></a>使用自动化模型
-你的 VSPackage 连接到自动化后，你可以通过调用获取的属性和方法<xref:EnvDTE.DTEClass.GetObject%2A>方法<xref:EnvDTE._DTE>对象传递一个字符串，表示要检索的对象。  
+你的 VSPackage 连接到自动化后，您可以通过调用获取的属性和方法<xref:EnvDTE.DTEClass.GetObject%2A>方法<xref:EnvDTE._DTE>对象，并传递表示要检索的对象的字符串。  
   
 ## <a name="obtaining-project-objects"></a>获取项目对象  
- 以下是两个代码示例演示如何自动化使用者获取项目自动化对象。 有关如何获取 DTE 对象的信息，请参阅[如何： 获取对 DTE 和 DTE2 对象的引用](http://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)。  
+ 以下是两个代码示例演示如何自动化使用者获取项目自动化对象。 有关如何获取 DTE 对象的信息，请参阅[如何： 获取对 DTE 和 DTE2 对象的引用](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)。  
   
 ```vb  
 Sub DoAutomation()  
@@ -46,9 +46,9 @@ void DoAutomation(void)
   
 ```  
   
- 此时，你可以使用属于特定 VSPackage 来下移层次结构模型的标准项目对象。  
+ 此时，您可以使用属于特定的 VSPackage 可以向层次结构模型下移动的标准项目对象。  
   
- 下面的代码示例演示如何获取是一种自定义项目类型的属性的自定义对象。:  
+ 下面的代码示例演示如何获取自定义项目类型的属性的自定义对象。:  
   
 ```vb  
 Dim MyPrj As Project  
@@ -61,7 +61,7 @@ objMyObject = MyPrj.Object 'You call .Object to get to special Project
 objMyObject.MySpecialMethodOrProperty  
 ```  
   
- 下面的代码列出所有中的属性的名称[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]环境**常规**选项**工具**菜单：  
+ 下面的代码列出所有中的属性的名称[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]环境**常规**选项卡上**工具**菜单：  
   
 ```vb  
 dim objDTE  
@@ -74,5 +74,5 @@ Next
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:EnvDTE.DTEClass.GetObject%2A>

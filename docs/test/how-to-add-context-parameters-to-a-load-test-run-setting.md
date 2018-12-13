@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: c351079f0a29176ded3172d6e0e26893a1163354
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203749"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894100"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：向负载测试运行设置中添加上下文参数
 
 在使用“新建负载测试向导”创建负载测试后，可以使用“负载测试编辑器”更改方案属性，以满足测试需求和目标。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > 有关运行设置属性及其说明的完整列表，请参阅[负载测试运行设置属性](../test/load-test-run-settings-properties.md)。
@@ -36,19 +38,19 @@ ms.locfileid: "39203749"
 
 此外，通过在不同的负载测试运行设置中使用相同的名称对一个上下文参数分配不同的值，可以使用不同的环境运行负载测试：
 
--   公司临时 Web 服务器运行设置：名为 `WebServer1=http://CorporateStagingWebServer` 的上下文参数
+- 公司临时 Web 服务器运行设置：名为 `WebServer1=http://CorporateStagingWebServer` 的上下文参数
 
--   公司生产 Web 服务器运行设置：名为 `WebServer1=http://CorporateProductionWebServer` 的上下文参数
+- 公司生产 Web 服务器运行设置：名为 `WebServer1=http://CorporateProductionWebServer` 的上下文参数
 
- **从命令行更改运行设置**
+  **从命令行更改运行设置**
 
- 如果要从命令行使用不同的运行设置来利用上下文参数策略，请使用以下命令：
+  如果要从命令行使用不同的运行设置来利用上下文参数策略，请使用以下命令：
 
- **设置 Test.UseRunSetting= CorporateStagingWebServer**
+  **设置 Test.UseRunSetting= CorporateStagingWebServer**
 
- －和－
+  －和－
 
- **mstest /testcontainer:loadtest1.loadtest**
+  **mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>向运行设置中添加上下文参数
 

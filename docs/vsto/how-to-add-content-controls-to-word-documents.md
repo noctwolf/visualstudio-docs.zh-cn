@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d3cce301d5d49a7660751ee1580c99794c16d38
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936961"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>如何： 将内容添加到 Word 文档的控件
   在文档级 Word 项目中，您可以添加内容控件到文档中你的项目在设计时或在运行时。 在 Word VSTO 外接程序项目中，可以向任何打开的文档在运行时添加内容控件。  
@@ -43,24 +43,24 @@ ms.locfileid: "35670449"
   
  本主题介绍了以下任务：  
   
--   [在设计时添加内容控件](#designtime)  
+- [在设计时添加内容控件](#designtime)  
   
--   [在运行时在文档级项目中添加内容控件](#runtimedoclevel)  
+- [在运行时在文档级项目中添加内容控件](#runtimedoclevel)  
   
--   [在运行时在 VSTO 外接程序项目中添加内容控件](#runtimeaddin)  
+- [在运行时在 VSTO 外接程序项目中添加内容控件](#runtimeaddin)  
   
- 有关内容控件的信息，请参阅[内容控件](../vsto/content-controls.md)。  
+  有关内容控件的信息，请参阅[内容控件](../vsto/content-controls.md)。  
   
 ##  <a name="designtime"></a> 添加内容控件在设计时  
  在设计时向文档级项目中的文档添加内容控件有以下几种方式：  
   
--   从“ **工具箱”** 的 **“Word 控件”** 选项卡添加内容控件。  
+- 从“ **工具箱”** 的 **“Word 控件”** 选项卡添加内容控件。  
   
--   用和在 Word 中添加本机内容控件相同的方式向文档添加内容控件。  
+- 用和在 Word 中添加本机内容控件相同的方式向文档添加内容控件。  
   
--   从 **“数据源”** 窗口将内容控件拖动到你的文档中。 当你想要在创建控件后将控件绑定到数据时会非常有用。 有关详细信息，请参阅[如何： 用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)并[如何： 用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
+- 从 **“数据源”** 窗口将内容控件拖动到你的文档中。 当你想要在创建控件后将控件绑定到数据时会非常有用。 有关详细信息，请参阅[如何： 用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)并[如何： 用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-content-control-to-a-document-by-using-the-toolbox"></a>若要使用工具箱向文档添加内容控件  
   
@@ -100,13 +100,13 @@ ms.locfileid: "35670449"
 ##  <a name="runtimedoclevel"></a> 在运行时在文档级项目中添加内容控件  
  您可以添加内容控件以编程方式向文档在运行时使用的方法<xref:Microsoft.Office.Tools.Word.Document.Controls%2A>属性的`ThisDocument`在项目中的类。 每种方法有三个重载可用于按以下方式添加内容控件：  
   
--   在当前所选内容中添加控件。  
+- 在当前所选内容中添加控件。  
   
--   在指定范围内添加控件。  
+- 在指定范围内添加控件。  
   
--   添加基于文档中的本机内容控件的控件。  
+- 添加基于文档中的本机内容控件的控件。  
   
- 文档关闭时，动态创建的内容控件将不保留在文档中。 但是，本机内容控件会保留在文档中。 在下次打开该文档时，你可以重新创建基于本机内容控件的内容控件。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+  文档关闭时，动态创建的内容控件将不保留在文档中。 但是，本机内容控件会保留在文档中。 在下次打开该文档时，你可以重新创建基于本机内容控件的内容控件。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 > [!NOTE]  
 >  若要在 Word 2010 项目中向文档添加复选框内容控件，则必须创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)。  
@@ -141,15 +141,15 @@ ms.locfileid: "35670449"
 ##  <a name="runtimeaddin"></a> 在运行时在 VSTO 外接程序项目中添加内容控件  
  您可以添加内容控件以编程方式向任何打开的文档在运行时通过使用 VSTO 外接程序中。 若要执行此操作，生成基于打开的文档的 <xref:Microsoft.Office.Tools.Word.Document> 主机项，然后使用此主机项的 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 属性的方法。 每种方法有三个重载可用于按以下方式添加内容控件：  
   
--   在当前所选内容中添加控件。  
+- 在当前所选内容中添加控件。  
   
--   在指定范围内添加控件。  
+- 在指定范围内添加控件。  
   
--   添加基于文档中的本机内容控件的控件。  
+- 添加基于文档中的本机内容控件的控件。  
   
- 文档关闭时，动态创建的内容控件将不保留在文档中。 但是，本机内容控件会保留在文档中。 在下次打开该文档时，你可以重新创建基于本机内容控件的内容控件。 有关详细信息，请参阅[持久保存在 Office 文档中的动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。  
+  文档关闭时，动态创建的内容控件将不保留在文档中。 但是，本机内容控件会保留在文档中。 在下次打开该文档时，你可以重新创建基于本机内容控件的内容控件。 有关详细信息，请参阅[持久保存在 Office 文档中的动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。  
   
- 在 VSTO 外接程序项目中生成主机项的详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+  在 VSTO 外接程序项目中生成主机项的详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 > [!NOTE]  
 >  若要向文档添加复选框内容控件，则必须创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)。  

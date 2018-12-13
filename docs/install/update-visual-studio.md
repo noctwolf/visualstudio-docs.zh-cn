@@ -1,8 +1,10 @@
 ---
-title: 更新 Visual Studio 2017
+title: 更新 Visual Studio
+titleSuffix: ''
 description: 了解如何逐步将 Visual Studio 更新到最新版本。
 ms.date: 04/23/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2a3b785f79d7b0b1fe038ec6c9280161ad909d
-ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
+ms.openlocfilehash: aa929eafc1459d74efae51fac2195d8574eb7567
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43289275"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53158926"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>将 Visual Studio 2017 更新到最新版本
 
@@ -29,6 +31,9 @@ ms.locfileid: "43289275"
 
 > [!IMPORTANT]
 > 若要安装、更新或修改 Visual Studio，必须使用具有管理权限的帐户登录。 有关详细信息，请参阅[用户权限与 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[更新 Visual Studio for Mac](/visualstudio/mac/update)。
 
 ## <a name="update-visual-studio-2017-version-156-or-later"></a>更新 Visual Studio 2017 版本 15.6 或更高版本
 
@@ -42,7 +47,7 @@ ms.locfileid: "43289275"
 
 2. 选择“通知”标志打开“通知”中心，然后选择要安装的更新。
 
-  ![使用“通知”中心更新 Visual Studio 2017](media/vs-install-notifications-hub-15dot6.png "Visual Studio 2017 中的“通知”中心")
+   ![使用“通知”中心更新 Visual Studio 2017](media/vs-install-notifications-hub-15dot6.png "Visual Studio 2017 中的“通知”中心")
 
 3. 当“更新”对话框打开，请选择“立即更新”。
 
@@ -82,14 +87,14 @@ ms.locfileid: "43289275"
 
 2. 打开安装程序。 Visual Studio 安装程序可能需要更新才能继续。
 
-  > [!NOTE]
-  > 在运行 Windows 10 的计算机上，可以在字母“V”下找到“Visual Studio 安装程序”，也可以在字母“M”下找到“Microsoft Visual Studio 安装程序”。
+   > [!NOTE]
+   > 在运行 Windows 10 的计算机上，可以在字母“V”下找到“Visual Studio 安装程序”，也可以在字母“M”下找到“Microsoft Visual Studio 安装程序”。
 
-2. 在安装程序中的“产品”页上，确定已安装的 Visual Studio 版本。
+3. 在安装程序中的“产品”页上，确定已安装的 Visual Studio 版本。
 
-3. 若有更新，会看到“更新”按钮。 （可能需要等待几秒钟的时间，安装程序才能确定是否有更新。）
+4. 若有更新，会看到“更新”按钮。 （可能需要等待几秒钟的时间，安装程序才能确定是否有更新。）
 
-  选择“更新”按钮来安装更新。
+   选择“更新”按钮来安装更新。
 
      ![使用 Visual Studio 安装程序更新 Visual Studio 2017](media/update-visual-studio.png "使用 Visual Studio 安装程序更新 Visual Studio 2017")
 
@@ -101,19 +106,19 @@ ms.locfileid: "43289275"
 
 1. 当有更新时，Visual Studio 中会有相应的“通知”标志。
 
-  ![使用“通知”中心更新 Visual Studio 2017](media/notification-flag.png "Visual Studio 中更新的通知标志")
+   ![使用“通知”中心更新 Visual Studio 2017](media/notification-flag.png "Visual Studio 中更新的通知标志")
 
-  选择通知标志，打开“通知”中心。
+   选择通知标志，打开“通知”中心。
 
-  ![使用“通知”中心更新 Visual Studio 2017](media/notifications-hub.png "Visual Studio 中的“通知”中心")
+   ![使用“通知”中心更新 Visual Studio 2017](media/notifications-hub.png "Visual Studio 中的“通知”中心")
 
 2. 选择“有‘Visual Studio 更新’”，随即会打开“扩展和更新”对话框。
 
-  ![使用“通知”中心更新 Visual Studio 2017](media/notifications-hub-select.png "Visual Studio 中的“通知”中心")
+   ![使用“通知”中心更新 Visual Studio 2017](media/notifications-hub-select.png "Visual Studio 中的“通知”中心")
 
 3. 在“扩展和更新”对话框中，选择“更新”按钮。
 
-  ![使用“通知”中心更新 Visual Studio 2017](media/notifications-extensions-and-updates.png "Visual Studio 中的“扩展和更新”对话框")
+   ![使用“通知”中心更新 Visual Studio 2017](media/notifications-extensions-and-updates.png "Visual Studio 中的“扩展和更新”对话框")
 
 #### <a name="more-about-visual-studio-notifications"></a>Visual Studio 通知的详细信息
 
@@ -135,14 +140,14 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
 1. 打开安装程序。 可能需要先更新安装程序，然后才能继续操作。 如果确是这种情况，系统会提示你更新安装程序。
 
-  > [!NOTE]
-  > 在运行 Windows 10 的计算机上，可以在字母“V”下找到“Visual Studio 安装程序”，也可以在字母“M”下找到“Microsoft Visual Studio 安装程序”。
+   > [!NOTE]
+   > 在运行 Windows 10 的计算机上，可以在字母“V”下找到“Visual Studio 安装程序”，也可以在字母“M”下找到“Microsoft Visual Studio 安装程序”。
 
 2. 在安装程序中的“产品”页上，确定已安装的 Visual Studio 版本。
 
 3. 若有更新，会看到“更新”按钮。 （可能需要等待几秒钟的时间，安装程序才能确定是否有更新。）
 
-  选择“更新”按钮来安装更新。
+   选择“更新”按钮来安装更新。
 
      ![使用 Visual Studio 安装程序更新 Visual Studio 2017](media/update-visual-studio.png "使用 Visual Studio 安装程序更新 Visual Studio 2017")
 

@@ -11,12 +11,12 @@ author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
+ms.openlocfilehash: 5c87831c468ce105bccaaad26e826aae6f0b46bc
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "34335702"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160044"
 ---
 # <a name="f1-help"></a>F1 帮助
 
@@ -28,7 +28,7 @@ ms.locfileid: "34335702"
 
 ## <a name="useful-links"></a>有用的链接
 
-- 有关 Visual Studio 的常规信息，请参阅 [Visual Studio 概述](../../ide/visual-studio-ide.md)。
+- 有关 Visual Studio 的常规信息，请参阅 [Visual Studio 概述](../../get-started/visual-studio-ide.md)。
 - 有关 Visual Studio 文本编辑器的帮助信息，请参阅[使用代码编辑器](../../ide/writing-code-in-the-code-and-text-editor.md)。
 - 有关 C# 帮助，请参阅 [C# 指南](/dotnet/csharp/index)。
 - 有关 Visual Basic 帮助，请参阅 [Visual Basic指南](/dotnet/visual-basic/)。

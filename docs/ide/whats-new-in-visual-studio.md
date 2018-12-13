@@ -2,7 +2,7 @@
 title: Visual Studio 2017 中的新增功能
 description: 了解 Visual Studio 2017 中的新增功能。
 ms.custom: ''
-ms.date: 08/21/2018
+ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,32 +17,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3154264938753cf9be41cdd5ef8964f49664d730
-ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
+ms.openlocfilehash: a007d6557fe7ebd533ee34fecc8b8c0315024edf
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42755504"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895764"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
-[版本 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default) 的更新内容
+针对[版本 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017) 而更新
 
 想从 Visual Studio 早期版本升级？ Visual Studio 2017 提供以下优势：为任何开发、应用和平台提供无与伦比的效率。 使用 Visual Studio 2017 开发适用于 Android、iOS、Windows、Linux、Web 和云的应用。 快速编码、轻松调试和诊断、时常测试，并且可以放心地进行发布。 还可通过构建自己的扩展，以便扩展和自定义 Visual Studio。 此版本发布之后，可使用版本控制、更具敏捷性且可高效协作！
 
 以下是我们自上一版本 Visual Studio 2015 以来所做更改的高级扼要重述：
 
-* **[重新定义了基础知识](#redefined-fundamentals)**。 新的安装体验意味着安装速度更快，并且能够在需要时立即安装。 无论是要加载大型解决方案和项目，还是要处理代码文件夹或甚至是单个代码文件，Visual Studio 的启动速度都比以前更快。 Visual Studio 还可帮助你掌控全局，特别是对使用 DevOp 的团队而言。
-* **[性能和工作效率](#performance-and-productivity)**。 我们专注于新型、现代化的移动、云和桌面开发功能。 此外，还改进了总体采集、性能和常规开发人员工作效率体验。 与以前相比，现在的 Visual Studio 启动速度更快、响应能力更强、使用的内存更少。
+* **[重新定义了基础知识](#redefined-fundamentals)**。 新的安装体验意味着安装速度更快，并且能够在需要时立即安装。
+* **[性能和工作效率](#performance-and-productivity)**。 我们专注于新型、现代化的移动、云和桌面开发功能。 并且与以前相比，现在的 Visual Studio 启动速度更快、响应能力更强、使用的内存更少。
 * **[使用 Azure 开发云应用](#cloud-app-development-with-azure)**。 通过内置的 Azure 工具套件，可以轻松地创建由 Microsoft Azure 提供支持的云优先应用。 借助 Visual Studio，可以轻松配置、构建、调试、打包和部署 Azure 上的应用和服务。
-* **[Windows 应用开发](#windows-app-development)**。 使用 Visual Studio 2017 中的 UWP 模板创建一个可用于所有 Windows 10 设备的项目 &ndash; PC、平板电脑、电话、Xbox、HoloLens、 Surface Hub 等。 然后，生成应用包，并从 Visual Studio 中将其提交到 Microsoft Store，以面向客户推出应用。
-* **[移动应用开发](#mobile-app-development)**。 在 Visual Studio 2017 中，可以使用 Xamarin 进行创新并快速得出结果。Xamarin 通过使用一个核心基本代码和技能集统一你的多平台移动需求。 利用现有的团队、技术投资和 C# 代码，在预算范围内提前实现优质的用户体验。 加速移动生命周期的每一步，提供一流的用户体验或一系列可提高员工工作效率的工作效率应用。 （15.8 中的新增功能：向使用 Hyper-V 的移动应用开发人员提供一款快速运行的 Android 模拟器，该模拟器始终支持最新的 Android API、可与现有的 Google Play Services 配合使用，同时支持照相机、地理位置和快速启动等各种 Android Emulator 功能。）
-* **[跨平台开发](#cross-platform-development)**。 向任意目标平台无缝提供软件。 通过 Redgate 数据工具将 DevOps 流程扩展到 SQL Server 中，并在 Visual Studio 中安全地自动处理数据库部署。 或使用 .NET Core 编写在 Windows、Linux 和 macOS 操作系统上运行的未修改的应用和库。 （**15.3 中的新增功能**：获取 .NET Core 2.0 SDK 的并排支持。）
-* **[游戏开发](#games-development)**。 借助 Visual Studio Tools Unity (VSTU)，可以使用 Visual Studio 在 C# 中编写游戏和编辑器脚本，随后使用其功能强大的调试器查找和修复错误。 VSTU 的最新版本包括用于 Unity 的 ShaderLab 着色器语言的语法着色、更好的调试器可视化效果以及针对 MonoBehavior 向导的改进的代码生成。 VSTU 还提供 Unity 项目文件、控制台消息以及在 Visual studio 中启动游戏的功能，从而使你可以在编写代码时花费更少的时间与 Unity 编辑器进行切换。
-* **[AI 开发](#ai-development)**。 通过 Visual Studio Tools for AI（15.5 中的新增功能），可使用 Visual Studio 的高效功能加快 AI 创新。 生成、测试并部署深入学习/ AI 解决方案，这些解决方案与 Azure 机器学习无缝集成以实现强大的试验功能，如提交数据准备以及以透明方式将训练作业建模为不同的计算目标。 此外，Visual Studio Tools for AI 提供对自定义指标和运行历史记录跟踪的支持，从而可实现数据科学的可再现性和审核。
+* **[Windows 应用开发](#windows-app-development)**。 使用 Visual Studio 2017 中的 UWP 模板创建一个可用于所有 Windows 10 设备的项目 &ndash; PC、平板电脑、电话、Xbox、HoloLens、 Surface Hub 等。
+* **[移动应用开发](#mobile-app-development)**。 使用 Xamarin 进行创新并快速得出结果。Xamarin 将多平台移动需求统一到一个核心基本代码和技能集。
+* **[跨平台开发](#cross-platform-development)**。 向任意目标平台无缝提供软件。 通过 Redgate 数据工具将 DevOps 流程扩展到 SQL Server 中，并在 Visual Studio 中安全地自动处理数据库部署。 或使用 .NET Core 编写在 Windows、Linux 和 macOS 操作系统上运行的未修改的应用和库。
+* **[游戏开发](#games-development)**。 借助 Visual Studio Tools Unity (VSTU)，可以使用 Visual Studio 在 C# 中编写游戏和编辑器脚本，随后使用其功能强大的调试器查找和修复错误。
+* **[AI 开发](#ai-development)**。 通过 Visual Studio Tools for AI，可使用 Visual Studio 的高效功能加快 AI 创新。 生成、测试和部署与 Azure 机器学习无缝集成的深入学习/AI 解决方案，从而实现强大的试验功能。
 
 > [!NOTE]
-> 有关 Visual Studio 2017 中新增功能的完整列表，请参阅[当前发行说明](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)。 若要查看将来要推出的功能，请参阅[预览发行说明](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default)。
+> 有关 Visual Studio 2017 中新增功能的完整列表，请参阅[当前发行说明](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)。 若要查看将来要推出的功能，请参阅[预览发行说明](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017)。
 
 以下是关于 Visual Studio 2017 中最值得关注的改进及新增功能的更多详细信息。
 
@@ -50,7 +50,7 @@ ms.locfileid: "42755504"
 
 ### <a name="a-new-setup-experience"></a>新的安装体验
 
-[下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 或[检查 Visual Studio 系统要求](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 或[检查 Visual Studio 系统要求](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
 
  通过 Visual Studio，可以在需要时更轻松快速地安装所需功能。 而且，还能完全卸载干净。
 
@@ -106,11 +106,11 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 使用漫游扩展管理器时，列表中会出现 3 种图标类型：
 
-* ![“漫游”图标](../ide/media/vs2017ide-roamedicon.png)“***漫游***”：表示存在于漫游列表中，但未在计算机上安装的扩展。
+* ![“漫游”图标](../ide/media/vs2017ide-roamedicon.png) **_漫游_**：表示存在于漫游列表中，但未在计算机上安装的扩展。
   （可通过“下载”按钮安装这些扩展。）
-* ![“漫游且已安装”图标](../ide/media/vs2017ide-roamedinstalledicon.png)“***漫游且已安装***”：表示存在于漫游列表中且已在此环境中安装的所有扩展。
+* ![“漫游且已安装”图标](../ide/media/vs2017ide-roamedinstalledicon.png) **_漫游且已安装_**：表示存在于漫游列表中且已在此环境中安装的所有扩展。
   （如果确定不希望漫游，可通过“停止漫游”按钮删除它们。）
-* ![“已安装”图标](../ide/media/vs2017ide-installedicon.png)“***已安装***”：表示此环境中已安装、但不属于漫游列表的所有扩展。
+* ![“已安装”图标](../ide/media/vs2017ide-installedicon.png) **_已安装_**：表示此环境中已安装、但不属于漫游列表的所有扩展。
   （可通过“启动漫游”按钮将扩展添加到漫游列表。）
 
 在登录时下载的任何扩展将作为“漫游且已安装”添加到列表中。 该扩展随即成为“漫游”列表的一部分，可以从任何计算机访问它。
@@ -176,9 +176,9 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 * **转到实现** (Ctrl+F12) &ndash; 从任何基类型或基成员转到各种实现。
 
-* **转到所有**（Ctrl+T 或 Ctrl+,）&ndash; 直接导航到任何文件/类型/成员/符号声明。 可以筛选结果列表，也可以使用查询语法（例如使用“f searchTerm”导航到文件，使用“t searchTerm”导航到类型等）。
+* **转到全部**（Ctrl+T 或 Ctrl+,）&ndash; 直接导航到任何文件/类型/成员/符号声明。 可以筛选结果列表，也可以使用查询语法（例如使用“f searchTerm”导航到文件，使用“t searchTerm”导航到类型等）。
 
-  ![改进了“转到所有”](../ide/media/vs2017ide-navigation-go-to.png)
+  ![改进后的“转到全部”](../ide/media/vs2017ide-navigation-go-to.png)
 
 * **查找所有引用** (Shift+F12) &ndash; 通过语法着色，可以按项目、定义和路径的组合对“查找所有引用”的结果进行分组。 还可以“锁定”结果，这样既可以继续查找其他引用，又不会丢失原始结果。
 
@@ -212,7 +212,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 ![Visual Studio 中“新异常帮助程序”对话框](../ide/media/vs2017ide-ExceptionHelper.png)
 
-有关详细信息，请参阅 [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/)（使用 Visual Studio 中的新异常帮助器）博客文章。
+有关详细信息，请参阅 [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/)（使用 Visual Studio 中的新异常帮助器）博客文章。
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>快照和 IntelliTrace 后退
 
@@ -264,7 +264,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 &mdash;从 C#、Visual Basic、C++ 或 JavaScript 中&mdash;选择首选的开发语言用来为 Windows 10 设备创建通用 Windows 平台应用。 Visual Studio 2017 提供所有语言的 UWP 应用模板，借助该模板可创建一个适用于所有设备的项目。 工作完成后，可以生成应用包，并从 Visual Studio 中将其提交到 Microsoft Store，以面向任何使用 Windows 10 设备的客户推出应用。
 
-**15.5 中的新增功能**：Visual Studio 2017 版本 15.5 提供对 Windows 10 Fall Creators Update SDK (10.0.16299.0) 的最佳支持。 Windows 10 Fall Creators Update 也为 UWP 开发人员推出了许多改进内容。 以下是其中最重大的一些改进： 
+**15.5 中的新增功能**：Visual Studio 2017 版本 15.5 提供对 Windows 10 Fall Creators Update SDK (10.0.16299.0) 的最佳支持。 Windows 10 Fall Creators Update 也为 UWP 开发人员推出了许多改进内容。 以下是其中最重大的一些改进： 
 
 * **支持 .NET Standard 2.0**<br/>除了简化的应用部署，Windows 10 Fall Creators Update 还是 Windows 10 第一个提供 .NET Standard 2.0 支持的版本。 实际上，[.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) 是对任何 .NET 平台均可实现的基类库的引用实现。 .NET Standard 的设计目的是让 .NET 开发人员能够尽可能轻松地在其选择使用的任何 .NET 平台上共享代码。
 * **最佳 UWP 和 Win32**<br/>已通过 [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) 改善 Windows 10 平台，以便 Windows 10 能为 .NET 开发人员提供更好的使用体验，无论他们当前关注的对象是 UWP、WPF、Windows Forms 还是 Xamarin。 使用 Visual Studio 2017 版本 15.5 中新的应用打包项目类型，可为 WPF 或 Windows 窗体项目创建 Windows 应用包，正如为 UWP 项目创建那样。 打包应用程序后，便获得所有 Windows 10 应用部署权益，并可选择通过 Microsoft Store（消费者应用）或商业版和教育版 Microsoft Store 进行分发。 由于打包的应用可在桌面上访问完整的 UWP API 界面和 Win32 API，因此现在可以使用 UWP API 和 Windows 10 功能逐渐实现 WPF 和 Windows 窗体应用程序的现代化。 此外，可将 Win32 组件包括在 UWP 应用程序中，凭借各种 Win32 功能，它们将在桌面上大放光彩。
@@ -303,7 +303,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 ![Xamarin.Android 设计器拆分视图编辑器](../ide/media/android-designer-split-view.png)
 
-有关详细信息，请参阅[硬件加速来提升模拟器性能](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin#hyper-v-overview)
+有关详细信息，请参阅[硬件加速来提升模拟器性能](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin)
 
 ### <a name="visual-studio-app-center"></a>Visual Studio 应用中心
 
@@ -381,8 +381,9 @@ Visual Studio 2017 所有版本随附：
 
 ## <a name="see-also"></a>请参阅
 
-* [Visual Studio 2017 发行说明](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+* [Visual Studio 2017 发行说明](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
 * [Visual C++ 中的新增功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# 中的新增功能](/dotnet/csharp/whats-new)
 * [Team Foundation Server 中的新增功能](/tfs/server/whats-new?view=vsts)
 * [Visual Studio for Mac 中的新增功能](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+* [Visual Studio 2019 中的新增功能](whats-new-visual-studio-2019.md)

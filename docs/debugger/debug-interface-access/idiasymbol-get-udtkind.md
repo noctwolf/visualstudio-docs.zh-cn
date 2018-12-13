@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_udtkind |Microsoft 文档'
+title: 'Idiasymbol:: Get_udtkind |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a1ddc76e6a791421be6f55d985d1c8d59715de8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f1bad5019b03612195de119e5ed6a6308d1e39b6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925599"
 ---
 # <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
-检索的各种用户定义类型 (UDT)。  
+检索用户定义类型 (UDT) 的多样性。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,13 +34,13 @@ HRESULT get_udtKind (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回一个值从[UdtKind 枚举](../../debugger/debug-interface-access/udtkind.md)指定的 UDT 类型的枚举： 结构、 类或联合。  
+ [out]返回一个值从[UdtKind 枚举](../../debugger/debug-interface-access/udtkind.md)指定 UDT 类型的枚举： 结构、 类或联合。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

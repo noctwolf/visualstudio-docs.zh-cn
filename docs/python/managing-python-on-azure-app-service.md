@@ -1,7 +1,7 @@
 ---
-title: 在 Azure App Service 上配置 Python
+title: 在 Azure 应用服务 (Windows) 上配置 Python
 description: 如何在 Azure 应用服务上安装 Python 解释器和库，并配置 Web 应用程序，以正确引用该解释器。
-ms.date: 07/26/2018
+ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,20 +12,19 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 76d413e37ec7ebeabd8c76655b4c47758ffafc48
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 10da39ca8074148ac11e69be559af8da9931213e
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468710"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459863"
 ---
-# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>如何在 Azure App Service 上设置 Python 环境
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure 应用服务 (Windows) 上设置 Python 环境
 
 > [!Important]
-> 如本文所述，Microsoft 正计划弃用应用服务的 Python 扩展，支持直接部署到 Linux 上的应用服务。 在此期间，扩展仍可继续使用。 若要部署到 Linux 上的应用服务，请参阅[在用于容器的 Web 应用中部署 Python Web 应用](/azure/app-service/containers/quickstart-python)。
+> 如本文所述，Microsoft 已弃用 Windows 上的应用服务适用的 Python 扩展，改为支持直接部署到 [Linux 上的应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
-
-  [Azure App Service](https://azure.microsoft.com/services/app-service/) 是适用于 Web 应用的平台即服务产品/服务，这些应用包括通过浏览器访问的站点、用户自己的客户端使用的 REST API 或事件触发的处理过程。 应用服务完全支持使用 Python 实现应用。
+[Azure App Service](https://azure.microsoft.com/services/app-service/) 是适用于 Web 应用的平台即服务产品/服务，这些应用包括通过浏览器访问的站点、用户自己的客户端使用的 REST API 或事件触发的处理过程。 应用服务完全支持使用 Python 实现应用。
 
 Azure 应用服务的可自定义 Python 支持作为一组应用服务站点扩展来提供，其中每个扩展均包含特定版本的 Python 运行时。 如本文所述，随后可以将任何所需的包直接安装到该环境中。 通过自定义应用服务自身中的环境，你无需维护 Web 应用项目中的包，也无需使用应用代码上传这些包。
 

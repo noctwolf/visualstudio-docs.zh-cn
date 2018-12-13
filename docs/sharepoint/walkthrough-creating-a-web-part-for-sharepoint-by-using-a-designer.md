@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635227"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831805"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>演练： 使用设计器为 SharePoint 创建 web 部件
 
@@ -98,9 +98,9 @@ ms.locfileid: "42635227"
 
 1. 执行下面的某一组步骤：
 
-    - 在设计器中，双击**更新**按钮。
+   - 在设计器中，双击**更新**按钮。
 
-    - 在中**属性**窗口**更新**按钮，选择**事件**按钮。 在中**单击**属性中，输入**Button1_Click**，然后选择 Enter 键。
+   - 在中**属性**窗口**更新**按钮，选择**事件**按钮。 在中**单击**属性中，输入**Button1_Click**，然后选择 Enter 键。
 
      用户控件代码文件将在代码编辑器中打开和`Button1_Click`事件处理程序会显示。 更高版本，会将代码添加到此事件处理程序。
 
@@ -116,11 +116,11 @@ ms.locfileid: "42635227"
 
 4. 替换`Page_Load`方法的`VisualWebPart1`用下面的代码的类。 这段代码执行下列任务：
 
-    - 将每月的日历视图添加到用户控件。
+   - 将每月的日历视图添加到用户控件。
 
-    - 在站点上添加一个复选框，为每个日历列表。
+   - 在站点上添加一个复选框，为每个日历列表。
 
-    - 指定在月历视图中显示的项的每个类型的模板。
+   - 指定在月历视图中显示的项的每个类型的模板。
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]

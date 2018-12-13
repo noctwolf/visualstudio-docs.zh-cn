@@ -49,19 +49,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 75051013e38d4acf5339193cf9f80e6da6758284
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747810"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388788"
 ---
 # <a name="options-text-editor-general"></a>选项，文本编辑器，常规
 
 使用此对话框可以更改 Visual Studio 代码和文本编辑器的全局设置。 若要显示此对话框，请在“工具”菜单上选择“选项”，展开“文本编辑器”文件夹，然后选择“常规”。
-
-> [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="settings"></a>设置
 
@@ -88,20 +85,12 @@ ms.locfileid: "34747810"
 勾选此项后，将显示编辑器文本区域的左侧边缘的垂直边距。 可以通过单击此边距选择一整行文本，或者通过单击并拖动，选择连续多行文本。
 
 |打开选定内容的边距|关闭选定内容的边距|
-|-------------------------|--------------------------|
+| - | - |
 |![HTMLpageSelectionMarginOn 屏幕快照](../../ide/reference/media/vxselmaron.gif)|![HTMLpageSelectionMarginOff 屏幕快照](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>指示器边距
 
 勾选此项后，将显示编辑器文本区域的左侧边缘外的垂直边距。 在此边距内单击时，会显示与文本有关的图标和工具提示。 例如，指示器边距内会出现断点或任务列表快捷方式。 但不显示指示器边距信息。
-
-### <a name="vertical-scroll-bar"></a>垂直滚动条
-
-勾选此项后，会显示一个垂直滚动条，用户可以上下滚动，查看编辑器查看区域外的元素。 如果垂直滚动条不可用，可以使用 Page Up、Page Down 键和光标键滚动。
-
-### <a name="horizontal-scroll-bar"></a>水平滚动条
-
-勾选此项后，会显示一个水平滚动条，用户可以左右滚动，查看编辑器查看区域外的元素。 如果水平滚动条不可用，可以使用光标键滚动。
 
 ### <a name="highlight-current-line"></a>突出显示当前行
 
