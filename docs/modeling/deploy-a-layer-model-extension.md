@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98697642135627173c5a6f31e90bf1dd1d0caeaf
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874613"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307747"
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署层模型扩展
 
@@ -49,7 +49,7 @@ Team Foundation Server 服务器通常没有安装 Visual Studio，并因此不�
 
 ### <a name="to-install-your-layer-extension-on-a-team-foundation-server-server"></a>若要在 Team Foundation Server 服务器上安装层扩展
 
-1.  复制 **.vsix**文件从开发计算机复制到 Team Foundation Server (TFS) 计算机。
+1.  复制。*vsix*文件从开发计算机复制到 Team Foundation Server (TFS) 计算机。
 
      将 VSIX 文件置于下列位置之一：
 
