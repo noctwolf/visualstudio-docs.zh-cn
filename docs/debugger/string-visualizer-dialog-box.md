@@ -1,4 +1,4 @@
----
+﻿---
 title: 字符串可视化工具中查看字符串 |Microsoft Docs
 ms.custom: ''
 ms.date: 10/10/2018
@@ -31,13 +31,13 @@ ms.locfileid: "52388551"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>在 Visual Studio 中的字符串可视化工具中查看字符串
 
-在 Visual Studio 中进行调试时，可以使用内置字符串可视化工具查看字符串。字符串可视化工具显示对于数据提示或调试器窗口而言过长的字符串。它还可以帮助识别格式错误的字符串。
+在 Visual Studio 中进行调试时，可以使用内置字符串可视化工具查看字符串。 字符串可视化工具显示对于数据提示或调试器窗口而言过长的字符串。 它还可以帮助识别格式错误的字符串。
 
 内置字符串可视化工具包括纯文本、XML、HTML 和 JSON 选项。还可以从“自动”或其他调试器窗口打开一些其他类型的可视化工具，例如 WPF 对象。
 
 ## <a name="open-a-string-visualizer"></a>打开字符串可视化工具
 
-要打开字符串可视化工具，必须在调试期间暂停。将鼠标悬停在具有纯文本、XML、HTML 或 JSON 字符串值的变量上，然后选择放大镜图标 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "可视化工具图标")。
+要打开字符串可视化工具，必须在调试期间暂停。 将鼠标悬停在具有纯文本、XML、HTML 或 JSON 字符串值的变量上，然后选择放大镜图标 ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "可视化工具图标")。
 
 ![打开字符串可视化工具](../debugger/media/dbg-tips-string-visualizers.png "打开字符串可视化工具")
 
@@ -51,13 +51,13 @@ ms.locfileid: "52388551"
 
 ### <a name="view-json-string-data"></a>查看 JSON 字符串数据
 
-格式正确的 JSON 字符串看起来类似于下图中的 JSON 可视化工具。格式错误的 JSON 可能会显示错误图标（如果无法识别，则为空白）。若要标识 JSON 错误，请将字符串复制并粘贴到 JSON linting 工具，例如 [JSLint](https://www.jslint.com/)。
+格式正确的 JSON 字符串看起来类似于下图中的 JSON 可视化工具。 格式错误的 JSON 可能会显示错误图标（如果无法识别，则为空白）。 若要标识 JSON 错误，请将字符串复制并粘贴到 JSON linting 工具，例如 [JSLint](https://www.jslint.com/)。
 
 ![JSON 字符串可视化工具](../debugger/media/dbg-tips-string-visualizer-json.png "JSON 字符串可视化工具")
 
 ### <a name="view-xml-string-data"></a>查看 XML 字符串数据
 
-格式正确的 XML 字符串看起来类似于下图中的 XML 可视化工具。格式错误的 XML 可能在没有 XML 标记的情况下显示，如果无法识别则显示为空白。
+格式正确的 XML 字符串看起来类似于下图中的 XML 可视化工具。 格式错误的 XML 可能在没有 XML 标记的情况下显示，如果无法识别则显示为空白。
 
 ![XML 字符串可视化工具](../debugger/media/dbg-string-visualizers-xml.png "XML 字符串可视化工具")
 
