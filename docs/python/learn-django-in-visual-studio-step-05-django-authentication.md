@@ -1,4 +1,4 @@
----
+﻿---
 title: 教程 - 了解 Visual Studio 中的 Django，步骤 5
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了 Django Web 项目模板提供的身份验证功能。
 ms.date: 11/19/2018
