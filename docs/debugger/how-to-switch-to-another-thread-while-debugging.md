@@ -1,6 +1,6 @@
 ---
-title: 如何： 在调试时切换到另一个线程 |Microsoft 文档
-ms.custom: ''
+title: 在调试时切换到另一个线程
+ms.custom: seodec18
 ms.date: 04/27/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -17,30 +17,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7e5e3b127dd397a32b54915f95827ebe5649f5f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 45ace6f26f241ecdc39b88060fc4edc6c2e47d91
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475674"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057043"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>如何： 在 Visual Studio 中调试时切换到另一个线程
-调试多线程应用程序时，你可以使用几种方法之一从你一直在处理到另一个线程的线程切换。
+# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>如何：在 Visual Studio 中调试时切换到另一个线程
+当调试多线程应用程序时，可以使用几种方法之一从你一直在处理到另一个线程的线程切换。
 
 > [!NOTE]
-> 如果你想要控制执行线程的顺序，则需要[冻结和解冻线程](../debugger/get-started-debugging-multithreaded-apps.md)。
+> 如果你想要控制线程的执行的顺序，则需要[冻结和解冻线程](../debugger/get-started-debugging-multithreaded-apps.md)。
 
-当你检查在代码编辑器和不同的多线程调试窗口中的线程时，黄色箭头指示当前线程。 一个带有卷尾的绿色箭头指示非当前线程具有当前调试器上下文。
+检查在代码编辑器和不同的多线程调试窗口中的线程时，黄色箭头指示当前线程。 带有卷尾的绿色箭头指示非当前线程具有当前的调试器上下文。
   
-### <a name="to-switch-to-any-thread-that-appears"></a>若要切换到出现的任何线程 
+### <a name="to-switch-to-any-thread-that-appears"></a>若要切换到显示的任何线程 
   
--   在**线程**或**并行监视**窗口中，双击线程。  
+-   在中**线程**或**并行监视**窗口中，双击线程。  
   
 ### <a name="to-switch-to-a-thread-in-a-source-window"></a>切换至源窗口中的线程  
   
--   在左滚动条槽中，右击线程标记图标![线程标记](../debugger/media/dbg-thread-marker.png "ThreadMarker")，指向**切换到**，然后单击你想要切换该线程的名称. 快捷菜单仅显示该特定位置的线程。  
+-   在左滚动条槽，右击线程标记图标![线程标记](../debugger/media/dbg-thread-marker.png "ThreadMarker")，指向**切换到**，然后单击你想要切换的线程的名称. 快捷菜单仅显示该特定位置的线程。  
   
-     如果任何线程标记不出现，请右键单击在**线程**窗口，并验证**在源中显示线程**选择。  
+     如果没有线程标记就会显示，请右键单击在**线程**窗口，并验证**在源中显示线程**处于选中状态。  
   
 ### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>切换到“调试位置”工具栏中的线程  
   

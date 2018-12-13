@@ -1,7 +1,7 @@
 ---
-title: 提示和 Visual Studio 调试器中的技巧
+title: 提示和技巧在调试器中
 description: 了解有关的一些鲜为人知的功能支持的 Visual Studio 调试器
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 06/15/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 238236df48adab491cd8a1f9282a8f6a440c5321
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257350"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055220"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 中调试器的工作效率提示和技巧
 
@@ -32,7 +32,7 @@ ms.locfileid: "52257350"
 
 ![固定数据提示](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>编辑代码并继续调试 （C#、 VB、 c + +）
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>编辑代码并继续调试 (C#，VB、 c + +)
 
 在 Visual Studio 支持的大多数语言中，可以编辑在调试会话的中间代码，并继续调试。 若要使用此功能，请单击到你的代码使用光标在暂停时在调试器中，请编辑按**F5**， **F10**，或**F11**继续调试。
 
@@ -65,7 +65,7 @@ ms.locfileid: "52257350"
 > [!WARNING]
 > 通常你需要小心使用此功能，工具提示中会出现警告。 你也可能会看到其他警告。 移动指针不能还原到以前的应用程序状态应用程序。
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>跟踪范围外的对象 （C#、 Visual Basic）
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>跟踪范围外的对象 (C#，Visual Basic)
 
 很容易地查看变量使用调试器窗口等**监视**窗口。 但是，当变量超出作用域中时才**监视**窗口中，您可能会注意到它将灰显。在某些应用方案中，甚至当变量超出作用域是，并且可能想要密切关注变量的值可能会更改 （例如，变量可能会收到垃圾回收）。 可以通过创建用于在对象 ID 来跟踪变量**监视**窗口。
 
