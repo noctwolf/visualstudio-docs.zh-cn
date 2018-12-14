@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a44dfd224324ba641e70e0cfe6ded87f88fe6765
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936027"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307697"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
 Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控件项模板允许你创建的控件，将自动添加到**工具箱**时安装该扩展。 本主题演示如何使用模板创建简单的计数器控件，可以将它们分发给其他用户。  
@@ -54,7 +54,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
   
 5.  在中**属性**窗口中，设置以下值： 在设计图面上的控件。  
   
-    |控件|属性|“值”|  
+    |控件|属性|值|  
     |-------------|--------------|-----------|  
     |`Label1`|**文本**|""|  
     |`Button1`|**名称**|btnReset|  
@@ -77,16 +77,16 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
 3.  创建以下公共属性声明。  
   
     ```csharp  
-    public int Value {  
+    public int Value {  
         get { return currentValue; }   
     }  
   
-    public string Message {  
+    public string Message {  
         get { return displayText; }  
         set { displayText = value; }  
     }  
   
-    public bool ShowReset {  
+    public bool ShowReset {  
         get { return btnReset.Visible; }  
         set { btnReset.Visible = value; }  
     }  
@@ -98,7 +98,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
 4.  将以下代码放入`Load`控件事件。  
   
     ```csharp  
-    private void Counter_Load(object sender, EventArgs e)  
+    private void Counter_Load(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = Message + Value;  
@@ -111,7 +111,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
 5.  创建以下公共方法，以递增计数器。  
   
     ```csharp  
-    public void Increment()  
+    public void Increment()  
     {  
         currentValue++;  
         label1.Text = displayText + Value;  
@@ -123,7 +123,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
 6.  添加的声明`Incremented`到控件类的事件。  
   
     ```csharp  
-    public event EventHandler Incremented;  
+    public event EventHandler Incremented;  
     ```  
   
      调用方可以将处理程序添加到此事件来响应中的计数器值的更改。  
@@ -131,7 +131,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
 7.  返回设计视图中，双击**重置**按钮以生成`btnReset_Click`事件处理程序，并在下面的示例中所示填充。  
   
     ```csharp  
-    private void btnReset_Click(object sender, EventArgs e)  
+    private void btnReset_Click(object sender, EventArgs e)  
     {  
         currentValue = 0;  
         label1.Text = displayText + Value;  
@@ -145,7 +145,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
   
     ```csharp  
     [ProvideToolboxControl("General", false)]  
-    public partial class Counter : UserControl  
+    public partial class Counter : UserControl  
     ```  
   
 ### <a name="test-the-control"></a>测试控件  
@@ -190,7 +190,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
   
      此时将打开窗体。 `Counter`控件将显示以下文本。  
   
-     **计数： 0**  
+     **计数：0**  
   
 14. 单击“测试” 。  
   
@@ -209,7 +209,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
      该计数器将重置为**0**。  
   
 ## <a name="next-steps"></a>后续步骤  
- 在生成**工具箱**控件，Visual Studio 将创建名为的文件*ProjectName.vsix*中<em>\bin\debug\*项目文件夹。可以通过上传 *.vsix 部署控件</em>文件到网络或网站。 当用户在打开 *.vsix*安装文件，该控件并将其添加到 Visual Studio**工具箱**用户的计算机上。 或者，可以上传 *.vsix*的文件[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点，以便用户可以通过在浏览找到它**工具** >  **扩展和更新**对话框。  
+ 在生成**工具箱**控件，Visual Studio 将创建名为的文件*ProjectName.vsix*你的项目的 \bin\debug\ 文件夹中。 可以将该控件部署通过上传 *.vsix*文件到网络或网站。 当用户在打开 *.vsix*安装文件，该控件并将其添加到 Visual Studio**工具箱**用户的计算机上。 或者，可以上传 *.vsix*的文件[Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) ，以便用户可以通过在浏览找到它**工具** >  **扩展和更新**对话框。  
   
 ## <a name="see-also"></a>请参阅  
  [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)   
