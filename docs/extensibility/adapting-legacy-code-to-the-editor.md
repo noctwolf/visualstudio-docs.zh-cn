@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7e7052ab2d92e7518a57ad5587c29eabf550f3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e04ae5484b6c1fd5bcc56154c6cec23334e7ef8d
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078595"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307786"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>调整到编辑器的旧代码
 在 Visual Studio 编辑器具有许多功能，可以从现有代码组件访问。 以下说明介绍如何改编非 MEF 组件，例如，VSPackage，使用编辑器的功能。 此外说明了如何使用适配器来托管和非托管代码中获取的编辑器中的服务。  
@@ -97,7 +97,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 ### <a name="to-get-an-ivxtextbuffer"></a>若要获取 IVxTextBuffer  
   
-1.  IVx * 接口的定义位于*VSEditor.h*中的文件*\..\VisualStudioIntegration\Common\Inc\\*的 Visual Studio SDK 安装文件夹。  
+1.  定义 IVx\*接口位于*VSEditor.h*文件中*\..\VisualStudioIntegration\Common\Inc\\* Visual Studio 的文件夹SDK 安装。  
   
 2.  通过使用下面的代码实例化的文本缓冲区`IVsUserData->GetData()`方法。 在下面的代码中，`pData`是一个指向`IVsUserData`对象。  
   

@@ -34,7 +34,7 @@ ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6f4ae8e527e5f6ce04680c444baad58802bfad48
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51788920"
@@ -42,11 +42,11 @@ ms.locfileid: "51788920"
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>“调用堆栈”窗口中的混合代码与丢失信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-由于托管代码和本机代码的调用堆栈之间存在差异，因此对于混合的代码类型，调试器不能始终显示完整的调用堆栈。 当本机代码调用托管的代码时，可能会注意到在以下差异**调用堆栈**窗口：  
+由于托管代码和本机代码的调用堆栈之间存在差异，因此当代码类型混杂时，调试器无法始终显示完整的调用堆栈。 当本机代码调用托管的代码时，你可能会在“调用堆栈”窗口中注意到以下差异：  
   
-- 立即之上的托管代码的本机框架中可能缺少**调用堆栈**窗口。 有关详细信息，请参阅[如何： 在调用堆栈窗口中的缺少本机框架时跳出托管代码](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)。  
+- “调用堆栈”窗口中可能缺少托管代码正上方的本机框架。 有关详细信息，请参阅[如何：在调用堆栈窗口中缺少本机框架时跳出托管代码](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)  
   
-- 对于混合模式应用程序在调试器以外启动**调用堆栈**窗口可能会显示仅托管的代码而不显示任何本机框架。  
+- 对于在调试器外部启动的混合模式应用程序，“调用堆栈”窗口可能仅显示托管代码，而不会显示任何本机框架。  
   
   这两种情况都极为少见。 在多数对托管代码的本机调用中，都会正确显示调用堆栈。  
   
