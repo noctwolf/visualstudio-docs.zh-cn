@@ -1,6 +1,6 @@
 ---
-title: 如何在触发挂起、 继续和后台事件调试 UWP 应用时 |Microsoft Docs
-ms.custom: ''
+title: 触发器挂起、 继续和后台事件调试 UWP 时 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,19 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 510c79a4d225e250d4c832155da15b61c8c5b055
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 8d467d19a55d47ccfa231bef2b473fa5be405921
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280007"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054656"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何在触发挂起、 继续和后台事件调试 Visual Studio 中的 UWP 应用时
 不调试时，Windows **进程生命期管理** (PLM) 根据用户操作和设备状态控制应用程序的执行状态 - 启动、挂起、继续和终止应用程序。 在调试时，Windows 禁用这些激活事件。 本主题介绍如何在调试器中触发这些事件。  
   
  本主题还介绍如何调试 **后台任务**。 通过后台任务，即使应用程序不运行，也可在后台进程中执行某些操作。 可使用调试器使应用程序进入调试模式，然后不启动 UI 即启动和调试后台任务。  
   
- 有关进程生命期管理和后台任务的详细信息请参阅[Launching，resuming，和多任务处理](/windows/uwp/launch-resume/index)。  
+ 有关进程生命期管理和后台任务的更多信息，请参见 [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)。  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> 触发进程生命期管理事件  
  在当用户从应用程序切换至别处时或在 Windows 进入电量不足状态时，Windows 可挂起应用程序。 可响应 `Suspending` 事件，将相关的应用程序和用户数据保存到永久存储并释放资源。 从 **“已挂起”** 状态继续应用程序时，该应用程序将进入 **“正在运行”** 状态，并从其挂起之处继续。 可响应 `Resuming` 事件，还原或刷新应用程序状态并回收资源。  
@@ -48,7 +48,7 @@ ms.locfileid: "44280007"
      注意， **“挂起并关闭”** 将关闭应用程序并结束调试会话。  
   
 ##  <a name="BKMK_Trigger_background_tasks"></a> 触发后台任务  
- 任何应用程序均可注册后台任务以响应某些系统事件，即使应用程序未运行也是如此。 后台任务不能运行直接更新 UI 的代码，但可通过磁贴更新、徽章更新和 toast 通知向用户显示信息。 有关详细信息，请参阅[支持使用后台任务对应用程序](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)  
+ 任何应用程序均可注册后台任务以响应某些系统事件，即使应用程序未运行也是如此。 后台任务不能运行直接更新 UI 的代码，但可通过磁贴更新、徽章更新和 toast 通知向用户显示信息。 有关详细信息，请参阅 [Supporting your app with background tasks](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)。  
   
  可从调试器触发对应用程序启动后台任务的事件。  
   
@@ -99,13 +99,13 @@ ms.locfileid: "44280007"
  在将应用程序加载到调试器中后，您可以使用上述任意过程。  
   
 ##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> 诊断后台任务激活错误  
- 后台基础结构的诊断日志在 Windows 事件查看器包含可用于诊断和解决后台任务错误的详细的信息。 若要查看日志，请执行以下操作：  
+ Windows 事件查看器中针对后台基础结构的诊断日志包含详细信息，这些信息可用于诊断和解决后台任务错误。 若要查看日志，请执行以下操作：  
   
 1.  打开事件查看器应用程序。  
   
 2.  在 **“操作”** 窗格中，选择 **“查看”** ，然后确保选中 **“显示分析和调试日志”** 。  
   
-3.  上**事件查看器 （本地）** 树中，展开节点**应用程序和服务日志** > **Microsoft** > **Windows**  >  **Backgroundtasksinfrastructure**。  
+3.  在 **“事件查看器(本地)”** 树中，依次展开 **“应用程序和服务日志”** > **“Microsoft”** > **“Windows”** > **“BackgroundTasksInfrastructure”**。  
   
 4.  选择 **“诊断”** 日志。  
   
@@ -113,4 +113,4 @@ ms.locfileid: "44280007"
  [使用 Visual Studio 测试 UWP 应用](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [应用程序生命周期](/windows/uwp/launch-resume/app-lifecycle)   
- [启动、 恢复和多任务](/windows/uwp/launch-resume/index)
+ [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

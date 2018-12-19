@@ -1,6 +1,6 @@
 ---
-title: 调试器在 Visual Studio 中的 Windows |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 调试器窗口 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebf9896626a26d1462c2f1d8639722b28ef1e1ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 05d3cd5cd56010e62b6ca50a76e726cb7998070b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178301"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065146"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>了解有关 Visual Studio 中的调试器 Windows
 
-调试程序时可以打开大多数调试器窗口。 若要查看调试器窗口列表，请设置断点并开始调试。 当命中断点并且执行停止时，单击**调试 > Windows**。
+调试程序时可以打开大多数调试器窗口。 若要查看调试器窗口列表，请设置断点并开始调试。 命中断点并且执行停止时，请单击“调试”>“窗口”。
 
 ||||
 |-|-|-|
@@ -34,9 +34,9 @@ ms.locfileid: "39178301"
 |调用堆栈|CTRL+ALT+C|[如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)|
 |即时|CTRL+ALT+I|[即时窗口](../ide/reference/immediate-window.md)|
 |并行堆栈|CTR:+SHIFT+D、S|[使用“并行堆栈”窗口](../debugger/using-the-parallel-stacks-window.md)|
-|并行监视|CTR:+SHIFT+D、（1、2、3、4）|[获取启动调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)|
+|并行监视|CTR:+SHIFT+D、（1、2、3、4）|[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)|
 |线程|CTRL+ALT+H|[使用线程窗口进行调试](../debugger/how-to-use-the-threads-window.md)|
-|模块|CTRL+ALT+U|[如何：使用“模块”窗口](../debugger/how-to-use-the-modules-window.md)|
+|模块|CTRL+ALT+U|[如何：使用模块窗口](../debugger/how-to-use-the-modules-window.md)|
 |GPU 线程|-|[如何：使用“GPU 线程”窗口](../debugger/how-to-use-the-gpu-threads-window.md)|
 |任务|CTR:+SHIFT+D、K|[使用“任务”窗口](../debugger/using-the-tasks-window.md)|
 |Python 交互式调试|SHIFT+ALT+I|[Python 交互式 REPL](../python/python-interactive-repl-in-visual-studio.md)|
@@ -46,8 +46,8 @@ ms.locfileid: "39178301"
 |实时属性资源管理器|-|[在调试时检查 XAML 属性](../debugger/inspect-xaml-properties-while-debugging.md)|
 |进程|CTRL+ALT+Z|[调试线程和进程](../debugger/debug-threads-and-processes.md)|
 |内存|CTRL+ALT+M、（1、2、3、4）|[“内存”窗口](../debugger/memory-windows.md)|
-|反汇编|CTRL+ALT+D|[如何：使用“反汇编”窗口](../debugger/how-to-use-the-disassembly-window.md)|
-|寄存器|CTRL+ALT+G|[如何：使用“寄存器”窗口](../debugger/how-to-use-the-registers-window.md)|
+|反汇编|CTRL+ALT+D|[如何：使用反汇编窗口](../debugger/how-to-use-the-disassembly-window.md)|
+|寄存器|CTRL+ALT+G|[如何：使用寄存器窗口](../debugger/how-to-use-the-registers-window.md)|
 
 ## <a name="see-also"></a>请参阅
 

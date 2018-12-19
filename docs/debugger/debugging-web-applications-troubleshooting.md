@@ -1,6 +1,6 @@
 ---
-title: 调试 Web 应用程序： 疑难解答 |Microsoft 文档
-ms.custom: ''
+title: 调试 web 应用程序的故障排除 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3720dccfd6118aaacd122ea254618d0ce226cf8d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b5f931a9942a89ae56836b5fbe91473b9dc9f568
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470850"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063990"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>调试 Web 应用程序：疑难解答
 本节包含可用于解决错误的公共过程。  

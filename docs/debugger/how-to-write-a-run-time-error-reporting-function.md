@@ -1,6 +1,6 @@
 ---
-title: 如何： 编写运行时错误报告函数 |Microsoft Docs
-ms.custom: ''
+title: 编写运行时错误报告函数 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 381ba20b233f143cb63128368a710debb25a0abb
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 22c508a7fa8faedc66f9122de60921878a931fae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057868"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051498"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>如何：编写运行时错误报告函数
 运行时错误的自定义报告函数必须具有与 `_CrtDbgReportW` 相同的声明。 它应当将值 1 返回给调试器。  
@@ -108,7 +108,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ```  
   
 ## <a name="example"></a>示例  
- 使用 `_RTC_SetErrorFuncW` 安装自定义函数来代替 `_CrtDbgReportW`。 有关详细信息，请参阅[_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)。 `_RTC_SetErrorFuncW` 的返回值是前一个报告函数，如果必要，可以保存并恢复它。  
+ 使用 `_RTC_SetErrorFuncW` 安装自定义函数来代替 `_CrtDbgReportW`。 有关详细信息，请参阅 [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)。 `_RTC_SetErrorFuncW` 的返回值是前一个报告函数，如果必要，可以保存并恢复它。  
   
 ```cpp
 #include <rtcapi.h>  

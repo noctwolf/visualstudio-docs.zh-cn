@@ -1,6 +1,6 @@
 ---
-title: 在 Visual Studio 调试器中查看注册值 |Microsoft Docs
-ms.custom: ''
+title: 在调试器中查看注册值 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab40e0b63b2a679b4c36a4625d517a03b6c123ad
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389320"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058436"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>在寄存器窗口中查看注册值 (C#，c + +、 Visual Basic 中， F#)
 
@@ -41,9 +41,9 @@ ms.locfileid: "52389320"
 
 在调试期间，注册值更改，因为应用程序中执行代码。 以红色中最近显示更改的值**注册**窗口。
 
-为了减少混乱，“寄存器”窗口将寄存器组织成组，具体情况随平台和处理器类型的不同而不同。 您可以显示或隐藏寄存器组。 有关详细信息，请参见[如何：显示和隐藏寄存器组](../debugger/how-to-display-and-hide-register-groups.md)。
+为了减少混乱，“寄存器”窗口将寄存器组织成组，具体情况随平台和处理器类型的不同而不同。 您可以显示或隐藏寄存器组。 有关更多信息，请参见[如何：显示和隐藏寄存器组](../debugger/how-to-display-and-hide-register-groups.md)。
 
-您可以编辑寄存器的值。 有关详细信息，请参阅[如何： 编辑寄存器值](../debugger/how-to-edit-a-register-value.md)。
+您可以编辑寄存器的值。 有关更多信息，请参见[如何：编辑寄存器值](../debugger/how-to-edit-a-register-value.md)。
 
 **若要打开寄存器窗口**
 
@@ -56,5 +56,5 @@ ms.locfileid: "52389320"
 
 ### <a name="see-also"></a>请参阅
 
-- [调试基础知识：“寄存器”窗口](../debugger/debugging-basics-registers-window.md)
+- [调试基础知识: 寄存器窗口](../debugger/debugging-basics-registers-window.md)
 - [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)

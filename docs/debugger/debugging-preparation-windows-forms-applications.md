@@ -1,6 +1,6 @@
 ---
-title: 调试准备： Windows 窗体应用程序 |Microsoft Docs
-ms.custom: ''
+title: 准备调试 Windows 窗体应用程序 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4dc7cb560e6ae652474d16e003eafb352643ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d441da0fd7a9342ef7b64f47374dc2ca61706db7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951062"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066413"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>调试准备：Windows 窗体应用程序
 Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试此类应用程序非常简单。 有关详细信息，请参阅[创建一个 Windows 应用程序项目](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))。  
   
- 用项目模板创建 Windows 窗体项目时，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将自动为调试和发布配置创建所需的设置。 必要时，可更改这些设置。 可以更改这些设置在**\<项目名称 > 属性页**对话框的 (**我的项目**在 Visual Basic 中)。  
+ 用项目模板创建 Windows 窗体项目时，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将自动为调试和发布配置创建所需的设置。 必要时，可更改这些设置。 可以在“\<项目名称> 属性页”对话框（在 Visual Basic 中，为“我的项目”）中更改这些设置。  
   
  有关详细信息，请参阅[建议的属性设置](../debugger/managed-debugging-recommended-property-settings.md)。  
   
@@ -41,7 +41,7 @@ Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsp
   
 |**属性名称**|**设置**|  
 |-----------------------|-----------------|  
-|**启动操作**|-将设置为**入门项目**大部分时间。 设置为**启动外部程序**如果你想要开始另一个可执行文件启动调试 （通常用于调试 Dll）。|  
+|**启动操作**|- 大多数时候设置为“启动项目”。 当开始调试（通常是调试 DLL）时，如果希望启动其他可执行文件，则设置为“启动外部程序”。|  
   
  可以从 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 内部或者通过附加到已经运行的应用程序来调试 Windows 窗体应用程序。 有关附加的详细信息，请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
@@ -61,15 +61,15 @@ Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsp
   
       有关详细信息，请参阅[在 Windows 窗体中创建事件处理程序](/dotnet/framework/winforms/creating-event-handlers-in-windows-forms)。  
   
-3. 上**调试**菜单上，单击**启动**。  
+3. 在“调试”菜单上，单击“启动”。  
   
 4. 使用中讨论的技术进行调试[调试器基础知识](../debugger/getting-started-with-the-debugger.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
  [C#、F#、和 Visual Basic 项目类型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [如何： 设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)   
+ [如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)   
  [C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Windows 窗体](/dotnet/framework/winforms/index)

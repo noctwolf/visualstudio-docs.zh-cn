@@ -1,6 +1,6 @@
 ---
-title: 演练： 调试 Windows 窗体 |Microsoft Docs
-ms.custom: ''
+title: 调试 Windows 窗体 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,15 +24,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd847a4db232d32c941722d5ee537a21bdaf33a8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: HT
+ms.openlocfilehash: 545155f622111c2452af3bacb57fd88930ce5ab0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349161"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066751"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>演练：调试 Windows 窗体
-Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标准的 Windows 应用程序。 你可以完成此演练使用 Visual Basic、 C# 或 c + +。  
+Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标准的 Windows 应用程序。 你可以完成此演练使用 Visual Basic 中， C#，或 c + +。  
   
  首先，您必须关闭任何打开的解决方案。  
   
@@ -49,9 +49,9 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
      此时将出现 “新建项目” 对话框。  
   
-2.  在项目类型窗格中，打开**Visual Basic**， **Visual C#**，或**Visual c + +** 节点，然后  
+2.  在项目类型窗格中，打开**Visual Basic**， **Visual C#** ，或**Visual c + +** 节点，然后  
   
-    1.  对于 Visual Basic 或 Visual C# 中，选择**Windows 桌面** > **Windows 窗体应用**。  
+    1.  Visual Basic 或 Visual C#，选择**Windows 桌面** > **Windows 窗体应用**。  
   
     2.  对于 Visual c + + 中，选择**Windows 桌面应用程序**。  
   
@@ -73,7 +73,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
      这会转到代码页。 光标应位于`button1_Click`。  
   
-10. 在函数中`button1_Click`。，添加以下代码：  
+10. 在 `button1_Click` 函数中，添加以下代码：  
   
     ```vb  
     textBox1.Text = "Button was clicked!"
@@ -89,7 +89,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
 11. 在“生成”菜单上，选择“生成解决方案”。  
   
-     项目应顺利生成，没有错误。  
+     该项目应顺利生成，没有错误。  
   
 ## <a name="debug-your-form"></a>调试窗体  
  现在，已准备好开始调试。  
@@ -110,12 +110,12 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
     textBox1->Text = "Button was clicked!";  
     ``` 
   
-     出现一个红点并且该行上的文本突出显示为红色。 红点表示一个断点。 有关详细信息，请参阅[断点](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。 当你在调试器下运行该应用程序时，此调试器将在命中该代码时在该位置中断执行。 然后您可以查看应用程序的状态并调试它。  
+     出现一个红点并且该行上的文本突出显示为红色。 红点表示一个断点。 有关详细信息，请参见[断点](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583) 当你在调试器下运行该应用程序时，此调试器将在命中该代码时在该位置中断执行。 然后您可以查看应用程序的状态并调试它。  
   
     > [!NOTE]
     >  此外可以右键单击任意行的代码中，指向**断点**，然后单击**插入断点**该行上添加断点。  
   
-2.  ON**调试**菜单中，选择**启动**。  
+2.  在“调试”菜单上选择“启动”。  
   
      Windows 窗体开始运行。  
   
@@ -125,13 +125,13 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
 4.  上**调试**菜单中，选择**Windows**，然后**观看**，然后单击**Watch1**。  
   
-5.  在中**监视 1**窗口中，单击某一空行。 在中**名称**列中，键入`textBox1.Text`（如果您正在使用 Visual Basic 或 Visual C#） 或`textBox1->Text`（如果使用 c + +），然后按 ENTER。  
+5.  在中**监视 1**窗口中，单击某一空行。 在中**名称**列中，键入`textBox1.Text`(如果使用 Visual Basic 或 Visual C#) 或`textBox1->Text`（如果使用 c + +），然后按 ENTER。  
   
      **监视 1**窗口会显示此变量的值与引号中：  
   
     `""`  
  
-6.  上**调试**菜单中，选择**单步执行**。  
+6.  在“调试”菜单上选择“逐语句”。  
   
      TextBox1.Text 的更改的值**监视 1**窗口：  
   
@@ -147,7 +147,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
      这将在代码中移除该断点。  
   
-10. 上**调试**菜单中，选择**停止调试**。  
+10. 在“调试”菜单上，选择“停止调试”。  
   
 ## <a name="attach-to-your-windows-form-application-for-debugging"></a>附加到 Windows 窗体应用程序进行调试  
  在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 中，可以将调试器附加到正在运行的进程上。 如果使用 Express Edition，不支持此功能。  

@@ -1,6 +1,6 @@
 ---
-title: 如何： 应用编辑在中断模式下使用编辑并继续 |Microsoft Docs
-ms.custom: ''
+title: 在中断模式下使用编辑并继续应用编辑 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b2a64e7602d038a12f436019a8f99e352aa26
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 51a69414a8b61368cbb492494187567554f98e4c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257065"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063721"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何： 应用编辑在中断模式下使用编辑并继续 (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何：应用编辑在中断模式下使用编辑并继续 (Visual Basic)
 可以在中断模式下使用“编辑并继续”编辑代码，然后不必停止和重新启动执行即可继续。  
   
 有关使用编辑并继续调试时的限制，请参阅[支持的代码更改 (C#和 Visual Basic](../debugger/supported-code-changes-csharp.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "52257065"
   
 1.  执行下列操作之一进入中断模式：  
   
-    -   在代码中设置断点，然后选择**开始调试**从**调试**菜单，然后等待应用程序命中断点。  
+    -   在代码中设置断点，从“调试”菜单选择“开始调试”，然后等待应用程序命中断点。  
   
          或  
   
-    -   开始调试，然后依次**全部中断**从**调试**菜单。  
+    -   开始调试，然后从“调试”菜单中选择“全部中断”。  
   
-         或  
+         - 或 -  
   
     -   异常发生时，选择**启用编辑**上**异常助手**。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "52257065"
     > [!NOTE]
     >  如果尝试进行“编辑并继续”所不允许的代码更改，你的编辑将被加上紫色波浪线，并且“任务列表”中会出现一项任务。 除非撤消非法的代码更改，否则将无法继续执行代码。  
   
-3.  上**调试**菜单上，单击**继续**继续执行。  
+3.  在“调试”菜单上，单击“继续”，以继续执行。  
   
      在你所做的编辑已并入项目并已应用的情况下，你的代码继续执行。  
   

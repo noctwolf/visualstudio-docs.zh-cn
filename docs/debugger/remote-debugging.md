@@ -1,6 +1,8 @@
 ---
-title: 在 Visual Studio 中进行远程调试 |Microsoft Docs
-ms.custom: remotedebugging
+title: 远程调试 |Microsoft Docs
+ms.custom:
+- remotedebugging
+- seodec18
 ms.date: 07/02/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6718c3390e26b0949d26805e24bcffb17e4c6deb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6701a05d76117e0b8164488de3ec858c61021e17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872429"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065501"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。 要进行此操作，可使用 Visual Studio 远程调试器。
@@ -37,14 +39,14 @@ ms.locfileid: "49872429"
 |Azure 应用服务|[快照调试器](../debugger/debug-live-azure-applications.md)或[远程调试 Azure 上的 ASP.NET](../debugger/remote-debugging-azure.md)|
 |Azure VM|[远程调试 Azure 上的 ASP.NET](../debugger/remote-debugging-azure.md)|
 |Azure Service Fabric|[调试 Azure Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
-|ASP.NET|[远程调试 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) 或[远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|ASP.NET|[远程调试 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)或[远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |C# 或 Visual Basic|[远程调试 C# 或 Visual Basic 项目](../debugger/remote-debugging-csharp.md)|
 |C++|[远程调试 C++ 项目](../debugger/remote-debugging-cpp.md)|
 |通用 Windows 应用 (UWP)|[在远程计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)或[调试安装的应用包](../debugger/debug-installed-app-package.md)|
 
 如果只是想要下载并安装远程调试器，并且不需要任何其他说明为你的方案，请按照本文中的步骤。
 
-## <a name="download-and-install-the-remote-tools"></a>下载并安装远程工具
+## <a name="download-and-install-the-remote-tools"></a>下载和安装远程工具
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -69,11 +71,11 @@ ms.locfileid: "49872429"
 > [!TIP]
 > 命令行安装和命令行参考，请参阅的帮助页*msvsmon.exe*通过键入``msvsmon.exe /?``在安装了 Visual studio 计算机上的命令行中 (或转到**帮助 > 用法**远程调试器中)。
 
-## <a name="bkmk_setup"></a> 设置远程调试器
+## <a name="bkmk_setup"></a>设置远程调试器
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-### <a name="configure_msvsmon"></a> 配置远程调试器
+### <a name="configure_msvsmon"></a>配置远程调试器
 首次启动后，你可以更改远程调试器的部分配置。
 
 -   如果你需要为连接到远程调试器，请选择其他用户添加权限**工具 > 权限**。 你必须拥有管理员特权才能授予或拒绝权限。
@@ -103,7 +105,7 @@ ms.locfileid: "49872429"
 
 4. 添加用户帐户的名称和密码。
 
-    可能需要添加**作为服务登录**右到此帐户的用户 (查找**本地安全策略**(secpol.msc) 中**启动**页或窗口 (或类型**secpol**在命令提示符下)。 当显示窗口时，双击“用户权限分配” ，然后在右窗格中找到  “作为服务登录”。 双击该选项。 将用户帐户添加到**属性**窗口，然后单击**确定**)。 单击 **“下一步”**。
+    可能需要添加**作为服务登录**右到此帐户的用户 (查找**本地安全策略**(secpol.msc) 中**启动**页或窗口 (或类型**secpol**在命令提示符下)。 当显示窗口时，双击“用户权限分配” ，然后在右窗格中找到  “作为服务登录”。 双击该选项。 将用户帐户添加到“属性”窗口，然后点击“确定”）。 单击 **“下一步”**。
 
 5. 选择你希望远程工具与之通信的网络类型。 必须至少选择一种网络类型。 如果这些计算机通过域连接，则应选择第一项。 如果这些计算机通过工作组或家庭组连接，则应选择第二或第三项。 单击 **“下一步”**。
 
@@ -111,9 +113,9 @@ ms.locfileid: "49872429"
 
 7. 单击 **“完成”**。
 
-   此时，远程调试器正作为服务运行。 您可以通过转到对此进行验证**控制面板 > 服务**，然后查找**Visual Studio 2015 远程调试器**。
+   此时，远程调试器正作为服务运行。 可以通过转到“控制面板”>“服务”并找到 “Visual Studio 2015 远程调试器”来对此进行验证。
 
-   可以停止和启动远程调试器服务从**控制面板 > 服务**。
+   可以从“控制面板”>“服务”停止和启动远程调试器服务。
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>使用远程符号设置调试
 

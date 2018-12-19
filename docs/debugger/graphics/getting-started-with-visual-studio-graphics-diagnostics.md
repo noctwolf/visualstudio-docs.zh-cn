@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 图形诊断入门 |Microsoft Docs
-ms.custom: ''
+title: 图形诊断入门 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 05/26/2017
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24cd668165b940955902605ef64c1ffb522b9fe1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 422a0fa4ea44cb3a605b8905282a5fe2a7e71e4c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929772"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055460"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断入门
 在此部分中，你会准备首次使用图形诊断，然后从 Direct3D 应用捕获帧并在图形分析器中检查它们。  
@@ -25,12 +25,12 @@ ms.locfileid: "49929772"
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]  
   
 ### <a name="windows-10-prerequisites"></a>Windows 10 先决条件  
- 可选的 Windows 功能*图形工具*提供的 Windows 10 上的图形诊断所需的捕获和播放基础结构。  
+ 可选的 Windows 功能“图形工具”可提供 Windows 10 上的图形诊断所需的捕获和播放基础结构。  
   
- 有关安装图形工具的信息，请参阅[安装图形工具适用于 Windows 10](#InstallGraphicsTools)。  
+ 有关安装图形工具的信息，请参阅[为 Windows 10 安装图形工具](#InstallGraphicsTools)。  
   
-##  <a name="InstallGraphicsTools"></a> 适用于 Windows 10 安装图形工具  
- 在 Windows 10 中，图形诊断基础结构由名为 Windows 的可选功能*图形工具*。 在 Windows 10 上捕获和播放图形信息需要此功能（无论所捕获的应用是面向以前版本的 Windows 还是它所使用的 Direct3D 版本）。 可以选择提前安装图形工具功能；否则它会在你首次从 Visual Studio 启动图形诊断会话时按需安装。  
+##  <a name="InstallGraphicsTools"></a>为 Windows 10 安装图形工具  
+ 在 Windows 10 中，图形诊断基础结构由 Windows 的一个可选功能（称为“图形工具”）提供。 在 Windows 10 上捕获和播放图形信息需要此功能（无论所捕获的应用是面向以前版本的 Windows 还是它所使用的 Direct3D 版本）。 可以选择提前安装图形工具功能；否则它会在你首次从 Visual Studio 启动图形诊断会话时按需安装。  
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>为 Windows 10 安装图形工具  
   
@@ -38,16 +38,16 @@ ms.locfileid: "49929772"
   
 2. 在右侧**应用和功能**对话框中，选择**管理可选功能**(在**应用和功能**)。
 
-   **管理可选功能**此时将显示对话框。
+   “管理可选功能”对话框随即出现。
   
-3. 在中**管理可选功能**对话框中，选择**添加一项功能**。 可以安装的可选功能列表随即出现。  
+3. 在“管理可选功能”对话框中，选择“添加功能”。 可以安装的可选功能列表随即出现。  
   
-4. 选择**图形工具**的功能列表，然后选择**安装**。  
+4. 从功能列表中选择“图形工具”，然后选择“安装”。  
   
    安装 Windows 10 SDK 时，也会自动安装图形工具功能。  
   
 > [!TIP]
->  可选的图形工具功能的 Windows 10 提供轻量级捕获和播放功能 — 如命令行捕获程序**dxcap.exe**，可以采用支持、 测试和上的诊断方案未安装开发人员工具的计算机。 有关详细信息，请参阅[命令行捕获工具](command-line-capture-tool.md)主题。  
+>  Windows 10 的可选图形工具功能可提供轻量级捕获和播放功能（如命令行捕获程序 dxcap.exe），该功能可以在未安装开发人员工具的计算机上用于支持、测试和诊断方案。 有关详细信息，请参阅[命令行捕获工具](command-line-capture-tool.md)主题。  
   
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>首次使用图形诊断  
  现在你拥有所有所需内容，已准备好开始使用图形诊断。 请执行这些步骤。  
@@ -71,20 +71,20 @@ ms.locfileid: "49929772"
   
 #### <a name="to-capture-single-frames"></a>捕获单个帧  
   
--   在 Visual Studio 中，选择**捕获帧**从图形工具栏或诊断会话窗口按钮。 或者，如果您的应用程序具有焦点，直接按**Print Screen**键盘上键。
+-   在 Visual Studio 中，从图形工具栏或诊断会话窗口选择“捕获帧”按钮。 或者，如果您的应用程序具有焦点，直接按**Print Screen**键盘上键。
   
 #### <a name="to-capture-a-sequence-of-frames"></a>捕获帧序列  
   
-- 在 Visual Studio 中，在诊断会话窗口中，设置**要捕获的帧**到你想要在序列中捕获的帧数，然后按顺序捕获的使用任何上述捕获单个帧的方法。  
+- 在 Visual Studio 的诊断会话窗口中，将“要捕获的帧数”设置为要按顺序捕获的帧数，然后使用上述任何捕获单个帧的方法来捕获序列。  
   
-   若要再次捕获单个帧，设置**要捕获的帧**到*1*。  
+   若要再次捕获单个帧，请将“要捕获的帧数”设置为“1”。  
   
-  完成后捕获帧只需退出应用，或选择**停止**从图形工具栏或诊断会话窗口按钮。  
+  捕获帧完成时，只需退出应用，或从图形工具栏或诊断会话窗口选择“停止”按钮。  
   
-### <a name="4---examine-captured-frames-in-the-graphics-analyzer"></a>4-检查在图形分析器中捕获的帧  
- 现在你已准备好检查刚捕获的帧。 若要开始分析帧，请从诊断会话窗口选择要检查的帧的帧号码。 这将打开中的帧**图形分析器**，其中您可以使用图形诊断工具来检查您的应用程序如何使用 Direct3D 来跟踪呈现问题，或使用**帧分析**到工具了解其性能。  
+### <a name="4---examine-captured-frames-in-the-graphics-analyzer"></a>4 - 在图形分析器中检查捕获的帧  
+ 现在你已准备好检查刚捕获的帧。 若要开始分析帧，请从诊断会话窗口选择要检查的帧的帧号码。 这会在“图形分析器”中打开该帧，在其中可以使用图形诊断工具检查应用如何使用 Direct3D 来跟踪呈现问题，或使用“帧分析”工具来了解其性能。  
   
- 如果从诊断会话窗口选择了错误的帧，或者要检查不同的帧，则可以从图形分析器选择一个新帧。 上**呈现目标**选项卡的图形日志窗口中，在呈现目标图像下展开**帧列表**，然后选择不同的帧进行检查。  
+ 如果从诊断会话窗口选择了错误的帧，或者要检查不同的帧，则可以从图形分析器选择一个新帧。 在图形日志窗口的“呈现目标”选项卡上，在呈现目标图像下展开“帧列表”，然后选择不同的帧进行检查。  
   
  若要了解有关如何结合使用图形分析器工具的详细信息，请参阅[示例](graphics-diagnostics-examples.md)。  
   

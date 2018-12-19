@@ -1,6 +1,6 @@
 ---
-title: 什么&#39;Visual Studio 2015 中的 s |Microsoft Docs
-ms.custom: ''
+title: Visual Studio 2015 中的新增功能 | Microsoft Docs
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -17,14 +17,14 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab9d2536b3f92b62233a2ae05b79a722696136e4
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000253"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062433"
 ---
-# <a name="what39s-new-in-visual-studio-2015"></a>什么&#39;Visual Studio 2015 中的 s
+# <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 中的新增功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
 
 欢迎使用 Visual Studio 2015，这是一款由开发人员工作效率工具、云服务和扩展组成的集成套件，让你和你的团队可以创建适用于 Web、Windows 商店、桌面、Android 和 iOS 的强大的应用程序和游戏。
@@ -41,7 +41,7 @@ ms.locfileid: "51000253"
  ![Visual Studio 2015 安装对话框](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>使用多个帐户登录
- 借助 Visual Studio 2015，全新简化的登录体验旨在大大简化对联机资源的访问，即使你拥有多个 Visual Studio 帐户也是如此。 登录到 Visual Studio 后，你会自动登录到 Visual Studio 2015 的所有实例和你计算机上的 Blend。 登录操作会自动开始为你漫游设置。 在 Visual Studio 2015 中，你的帐户跨功能共享，所以只要拥有适当令牌，就可以从“团队资源管理器” 访问你的 Visual Studio Team Services 帐户，从服务器资源管理器中的 Microsoft Azure 订阅访问资源和网站。 你也将在 Application Insights 项目的“新建项目”对话框中看到你的 Azure 资源，并且在新的 **“添加连接的服务”**  对话框中看到你的 Azure 移动、Azure 存储、 [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) 和 [Saleforce.com 开发人员](https://developer.salesforce.com/) 帐户。
+ 借助 Visual Studio 2015，全新简化的登录体验旨在大大简化对联机资源的访问，即使你拥有多个 Visual Studio 帐户也是如此。 登录到 Visual Studio 后，你会自动登录到 Visual Studio 2015 的所有实例和你计算机上的 Blend。 登录操作会自动开始为你漫游设置。 在 Visual Studio 2015 中，你的帐户跨功能共享，所以只要拥有适当令牌，就可以从“团队资源管理器” 访问你的 Visual Studio Team Services 帐户，从服务器资源管理器中的 Microsoft Azure 订阅访问资源和网站。 你也将在 Application Insights 项目的“新建项目”对话框中看到你的 Azure 资源，并且在新的“添加连接的服务”  对话框中看到你的 Azure 移动、Azure 存储、 [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) 和 [Saleforce.com 开发人员](https://developer.salesforce.com/) 帐户。
 
  你可以随时添加多个用户帐户或通过新的帐户管理器进行添加，从而在 Visual Studio 中使用这些帐户。 然后，你可以在连接到服务或访问联机资源时在这些帐户之间即时切换。 Visual Studio 会记住你添加的帐户，因此你可从 Visual Studio 或 Blend 的任何实例使用这些帐户。 Visual Studio 还将随你的个性化帐户一起漫游帐户列表（但我们不会漫游你的重要凭据），因此你可以在另一台设备上快速地开始使用其中的一个帐户。 当然，你可以随时从“帐户设置”对话框中移除帐户。 若要开始操作，请参见 [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "51000253"
  同时当然，对语言、库和工具进行了一些改进，因而对经典桌面应用程序的支持更胜一筹。
 
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>通过适用于 Visual Studio 的 Xamarin 用 C# 编写的跨平台移动应用
- Xamarin 是移动框架，通过此框架，你可以使用 C# 编写代码，代码会在本机绑定到 iOS 和 Android API。 Microsoft 与 Xamarin 在发行 Xamarin for Visual Studio 时密切合作，这款扩展使你可以在具有共享代码的单个解决方案中针对 Android、iOS 和 Windows Phone 进行开发。 借助 Xamarin，你将使用一种语言和一个代码库，且平台间的增量可以保持最低。  Xamarin for Visual Studio 在 Visual Studio 2010 及更高版本上受到支持。 Xamarin 入门版包含在 Visual Studio 2015 中。 若要开始，请参阅[应用程序生成具有 Visual Studio 中使用 Xamarin 的本机 UI](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)。
+ Xamarin 是移动框架，通过此框架，你可以使用 C# 编写代码，代码会在本机绑定到 iOS 和 Android API。 Microsoft 与 Xamarin 在发行 Xamarin for Visual Studio 时密切合作，这款扩展使你可以在具有共享代码的单个解决方案中针对 Android、iOS 和 Windows Phone 进行开发。 借助 Xamarin，你将使用一种语言和一个代码库，且平台间的增量可以保持最低。  Xamarin for Visual Studio 在 Visual Studio 2010 及更高版本上受到支持。 Visual Studio 2015 中包括 Xamarin 入门版。 若要开始，请参阅[应用程序生成具有 Visual Studio 中使用 Xamarin 的本机 UI](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)。
 
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>带 Apache Cordova 的 HTML/JavaScript 中的跨平台移动应用
  适用于 Apache Cordova 的 Visual Studio 工具是 Microsoft 和开放源 Apache Cordova 社区紧密合作的成果。 通过这些工具，可使用 HTML、CSS 和 JavaScript（或 Typescript）进行跨平台移动开发。 你可将单一基本代码面向 Android、iOS 和 Windows，并且享受 Visual Studio IDE 的丰富功能，包括 JavaScript IntelliSense、DOM 资源管理器、JavaScript 控制台、断点、监视、局部变量、仅我的代码等等。  凭借适用于 Apache Cordova 的 Visual Studio 工具，你的应用可通过提供通用 JavaScript API 的插件使用所有平台上的原生设备功能。 若要开始，请参阅[开始使用 Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)。
@@ -144,7 +144,7 @@ ms.locfileid: "51000253"
  下面是对代码执行不同类型的诊断和分析的新功能和改进的工具：
 
 ### <a name="perftips"></a>性能提示
- 性能提示显示调试过程中方法的执行时间，可使你快速确认瓶颈，而无需调用探查器。 若要开始使用，请参阅 [性能提示：使用 Visual Studio 调试时的性能信息一览](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ 性能提示显示调试过程中方法的执行时间，可使你快速确认瓶颈，而无需调用探查器。 若要开始，请参阅[性能提示： 性能信息在快速使用 Visual Studio 调试时](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>错误列表
  错误列表现在支持任何列的筛选。 它还在你输入时显示整个 C# 或 Visual Basic 解决方案中错误、警告和代码分析的实时视图，即使代码更改生成上千个警告时也是如此。 新的“错误列表”重新兼容现有的用法。 有关更多信息，请参见 [Error List Window](./ide/reference/error-list-window.md)。
@@ -160,13 +160,13 @@ ms.locfileid: "51000253"
 ## <a name="enjoy-these-additional-ide-improvements"></a>请享受这些额外的 IDE 改进
 
 ### <a name="synchronized-settings-roaming-settings"></a>同步设置（漫游设置）
- Visual Studio 2013 针对最常用的设置（例如文本编辑器、键盘关联、主题和字体及颜色、启动以及环境别名）引入同步设置。  Visual Studio 2015 通过同步更多设置并在 Professional、Enterprise、Express SKU、Blend 等 Visual Studio 应用程序系列中同步设置，使这种体验获得提升。 当你使用在 Visual Studio 2013 中使用的同一帐户首次登录 Visual Studio 2015 时，你会发现你的 Visual Studio 2013 设置同步到了 Visual Studio 2015 中。 可以通过输入"sync"访问你的设置，在**快速启动**，或导航到**工具 > 选项 > 环境 > 的同步设置**。
+ Visual Studio 2013 针对最常用的设置（例如文本编辑器、键盘关联、主题和字体及颜色、启动以及环境别名）引入同步设置。  Visual Studio 2015 通过同步更多设置并在 Professional、Enterprise、Express SKU、Blend 等 Visual Studio 应用程序系列中同步设置，使这种体验获得提升。 当你使用在 Visual Studio 2013 中使用的同一帐户首次登录 Visual Studio 2015 时，你会发现你的 Visual Studio 2013 设置同步到了 Visual Studio 2015 中。 可以通过以下方式访问设置：在“快速启动”中输入“sync”，或者导航至“工具”>“选项”>“环境”>“同步设置”。
 
 ### <a name="automatic-extension-updates"></a>“自动扩展更新”
  当 Visual Studio 库里有可用的新版本时，已安装的 Visual Studio 扩展现在将会自动更新。 请参阅 [查找和使用 Visual Studio 拓展](./ide/finding-and-using-visual-studio-extensions.md) 以获取有关可如何自定义自动扩展更新的详细信息。
 
 ### <a name="title-case-menus"></a>标题首字母大写菜单
- 我们专心聆听你的需求。 默认情况下，Visual Studio 菜单为标题首字母大写。 但是，如果你喜欢全大写风格，您可以将其启动时设置，或在**工具 > 选项 > 常规**属性页：
+ 我们专心聆听你的需求。 默认情况下，Visual Studio 菜单为标题首字母大写。 然而，如果想使用“全部大写”样式，可以在启动时或者在“工具”>“选项”>“常规”属性页中设置它：
 
  ![Visual Studio 2015 标题大写主菜单命令](./ide/media/vs2015-mainmenu.png "VS2015_MainMenu")
 
@@ -183,18 +183,18 @@ ms.locfileid: "51000253"
 ### <a name="notification-hub"></a>通知中心
  通知中心的 UI 已经得到了简化，从而使快速浏览更为轻松。 已添加其他类型的通知（包括性能问题、呈现问题和崩溃），并且现在让 Visual Studio 停止显示通知。 有关详细信息，请参阅 [Visual Studio 通知](./ide/visual-studio-notifications.md)。
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens：查找代码所发生的变化（仅适用于企业版和专业版）
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens查找你的代码 （仅限 Enterprise 和 Professional 版本） 发生了什么情况
  专注于工作的同时，查找有关代码的信（不离开编辑器）。 可以针对存储在 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 中的代码查看工作项、bug、代码评审等的更改和其他历史记录。
 
  在 Visual Studio Enterprise 和 Visual Studio Professional 中，你现在可以：
 
 - 获取 Visual Studio 编辑器中整个代码文件的历史记录。
 
-   ![CodeLens：获取代码文件的详细信息](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens获取代码文件的详细信息](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - 查看显示更改你的代码的人员的图。 这可以帮助发现团队更改中的模式并评估它们的影响。
 
-   ![CodeLens：通过图形查看代码更改历史记录](./ide/media/codelens.png "CodeLens")
+   ![CodeLens作为图形查看代码更改历史记录](./ide/media/codelens.png "CodeLens")
 
 - 轻松查看上次更改代码的时间。
 
@@ -225,7 +225,7 @@ ms.locfileid: "51000253"
 
 - **更快速地获取反应式代码图**。 拖放操作可以生成即时结果，且节点之间的链接可以更快速地进行创建，而不会影响后续由用户启动的操作，例如展开节点或请求更多节点。 创建代码图而不生成解决方案时，所有极端案例（例如不生成程序集时）现在得到处理。
 
-- **跳过重新生成你的解决方案。** 在创建和编辑关系图时提供更好的性能。
+- **跳过重新生成解决方案。** 在创建和编辑关系图时提供更好的性能。
 
 - **筛选代码元素节点和组**。 通过根据代码元素的类别显示或隐藏代码元素，以及通过按解决方案文件夹、程序集、命名空间、项目文件夹和类型对代码元素进行组合，可以快速整理代码图。
 
@@ -235,7 +235,7 @@ ms.locfileid: "51000253"
 
   请参阅 [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md)。
 
-  **在此版本中其他设计和建模更改：**
+  **此版本中其他设计和建模更改：**
 
 - **层关系图**。 使用类视图和对象浏览器更新这些关系图。 为满足软件设计要求，使用层关系图来描述软件所需的依赖项。 通过查找不满足这些约束条件的代码以及使用此基线验证未来的代码，使代码与此设计保持一致。
 
@@ -269,6 +269,7 @@ ms.locfileid: "51000253"
  首先，如上所述发送哭脸。 在弹出的对话框上，你可以使用任何一个默认标记对你的反馈进行标记或者创建你自己的标记。 标记可帮助我们将你的反馈路由到适当的功能团队。 在“选择类别”  下拉列表中，选择表示你报告的问题的选项，然后按照步骤重现此问题。 同时提供有关如何使用 Visual Studio 报告反馈的详细步骤。 有关详细信息，请参阅[Visual Studio 发送笑脸说明](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。
 
 ## <a name="see-also"></a>请参阅
+
 * [使用 Apache Cordova 生成跨平台应用](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [在 Visual Studio 中使用 Xamarin 生成具有本机 UI 的应用](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [使用 Visual C++ 生成跨平台移动应用](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
