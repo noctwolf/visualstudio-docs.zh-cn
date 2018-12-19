@@ -1,6 +1,6 @@
 ---
-title: 在调试器中指定符号 (.pdb) 和源文件 |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 在调试器中设置符号 (.pdb) 和源文件
+ms.custom: seodec18
 ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35eb141850770a20b78020c57868a7fb2ff3bf90
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6ba2f7794b052712d35bbdadb02a0ea8551dc78b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389171"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060441"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件 (C#，c + +、 Visual Basic 中， F#)
 
@@ -77,11 +77,11 @@ ms.locfileid: "52389171"
       
      可以使用符号服务器包括：  
       
-     **公共 Microsoft 符号服务器**： 若要调试到系统 DLL 或第三方库的调用期间发生的故障，您通常需要系统 *.pdb*文件。 系统 *.pdb*文件包含 Windows Dll 符号 *.exe*文件和设备驱动程序。 您可以获取符号的 Windows 操作系统、 MDAC、 IIS、 ISA 和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]从公共 Microsoft 符号服务器。 
+     **公共 Microsoft 符号服务器**:若要调试到系统 DLL 或第三方库的调用期间发生的故障，您通常需要系统 *.pdb*文件。 系统 *.pdb*文件包含 Windows Dll 符号 *.exe*文件和设备驱动程序。 您可以获取符号的 Windows 操作系统、 MDAC、 IIS、 ISA 和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]从公共 Microsoft 符号服务器。 
       
-     **符号服务器内部网络上或在本地计算机上**： 你的团队或公司可以从外部源创建符号服务器，你自己的产品，并为符号的缓存。 你自己的计算机上可能具有符号服务器。 
+     **内部网络或本地计算机上的符号服务器**：你的团队或公司可为你自己的产品创建符号服务器，并作为外部源符号的缓存。 你自己的计算机上可能具有符号服务器。 
       
-     **第三方符号服务器**： 第三方提供商的 Windows 应用程序和库可以在 internet 上提供到符号服务器的访问。 
+     **第三方符号服务器**：Windows 应用程序和库的第三方提供程序可提供对 Internet 上的符号服务器的访问。 
     
      > [!WARNING]
      > 如果使用公共 Microsoft 符号服务器以外的符号服务器，请确保符号服务器及其路径是可信任。 由于符号文件可以包含任意可执行代码，则可以会面临安全威胁。  
@@ -156,7 +156,7 @@ ms.locfileid: "52389171"
   可以限制命令的*srcsrv.dll*可从应用程序的执行 *.pdb*通过列出的允许的命令在名为的文件中的文件*srcsrv.ini*。 位置*srcsrv.ini*所在的同一文件夹中的文件*srcsrv.dll*并*devenv.exe*。  
   
   >[!IMPORTANT]
-  >任意命令都可以在应用中的嵌入 *.pdb*文件中，因此请确保将你想要执行到命令*srcsrv.ini*文件。 任何尝试执行不在“srcsvr.ini”文件中的命令都将导致出现一个确认对话框。 有关更多信息，请参见 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 
+  >任意命令都可以在应用中的嵌入 *.pdb*文件中，因此请确保将你想要执行到命令*srcsrv.ini*文件。 任何尝试执行不在“srcsvr.ini”文件中的命令都将导致出现一个确认对话框。 有关详细信息，请参阅[安全警告：调试器必须执行不受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 
   >
   >未对命令参数执行任何验证，因此请慎用受信任的命令。 例如，如果列表中，你*cmd.exe*在你*srcsrv.ini*，恶意用户可能会在上指定参数*cmd.exe*那样会使危险。  
   
@@ -214,7 +214,7 @@ ms.locfileid: "52389171"
 1. 在中**模块**窗口中，右键单击**符号状态**或**符号文件**标头或任何模块。 
 1. 在上下文菜单中，选择下列选项之一：  
   
-|选项|描述|  
+|选项|说明|  
 |------------|-----------------|  
 |**加载符号**|将显示为具有已跳过，找不到或未加载符号的模块。 尝试从上指定的位置加载符号**选项** > **调试** > **符号**页。 如果找不到或未加载符号文件，将启动**文件资源管理器**以便可以指定要搜索的新位置。|  
 |**符号加载信息**|显示加载的符号文件的位置或调试器无法找到该文件时已搜索的位置。|  

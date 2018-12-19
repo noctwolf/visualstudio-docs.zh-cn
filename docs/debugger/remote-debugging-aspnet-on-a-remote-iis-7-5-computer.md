@@ -1,6 +1,8 @@
 ---
-title: 远程调试远程 IIS 计算机上的 ASP.NET |Microsoft Docs
-ms.custom: remotedebugging
+title: 远程调试 IIS 计算机上的 ASP.NET
+ms.custom:
+- remotedebugging
+- seodec18
 ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 1a13488f632e3cf1f244449b2a7a4dbfd7869428
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: 336f34c1229e07eb3734f9d278070e5994957d16
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826500"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065553"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 若要调试已部署到 IIS 的 ASP.NET 应用程序，安装和运行远程工具的计算机上在其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
@@ -47,7 +49,7 @@ ms.locfileid: "49826500"
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>创建 ASP.NET 4.5.2 在 Visual Studio 计算机上应用程序
   
-1. 创建新的 MVC ASP.NET 应用程序。 (**文件 > 新建 > 项目**，然后选择<strong>Visual C# > Web > ASP.NET Web 应用程序。在 **ASP.NET 4.5.2</strong>模板部分中，选择**MVC**。 请确保**启用 Docker 支持**未选中并且**身份验证**设置为**无身份验证**。 将项目命名**MyASPApp**。)
+1. 创建新的 MVC ASP.NET 应用程序。 (**文件 > 新建 > 项目**，然后选择<strong>Visual C# > Web > ASP.NET Web 应用程序。在 ASP.NET 4.5.2 模板部分中，选择“MVC”</strong> 。 请确保**启用 Docker 支持**未选中并且**身份验证**设置为**无身份验证**。 将项目命名**MyASPApp**。)
 
 2. 打开 HomeController.cs 文件，并在 `About()` 方法中设置断点。
 
@@ -70,7 +72,7 @@ ms.locfileid: "49826500"
 
 如果你想要在 IIS 上安装 ASP.NET 的更多详细的信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
-1. 在服务器管理器的左窗格中，选择**IIS**。 右键单击服务器，然后选择**Internet 信息服务 (IIS) 管理器**。
+1. 在服务器管理器的左窗格中，选择**IIS**。 右键单击服务器并选择“Internet Information Services (IIS)管理器”。
 
 1. 使用 Web 平台安装程序 (WebPI) 安装 ASP.NET 4.5 (从 Windows Server 2012 R2 中的服务器节点，选择**获取新的 Web 平台组件**，然后搜索 ASP.NET)
 
@@ -79,9 +81,9 @@ ms.locfileid: "49826500"
     > [!NOTE]
     > 如果使用 Windows Server 2008 R2，安装 ASP.NET 4 改为使用此命令：
 
-     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe 红外线 （ir)**
 
-2. 重新启动系统 (或执行**net stop was /y 和**跟**net start w3svc**在命令提示符下，若要应用到系统路径的更改)。
+2. 重启系统（或在命令提示符处依次执行“net stop was /y”和“net start w3svc”，了解系统路径的更改）。
 
 ## <a name="choose-a-deployment-option"></a>选择部署选项
 
@@ -102,15 +104,15 @@ ms.locfileid: "49826500"
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
 
-### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>在 Windows Server 上的 IIS 中创建的发布设置文件
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>在 Windows Server 上的 IIS 中创建发布设置文件
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
 
-### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>导入 Visual Studio 中的发布设置和部署
+### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>在 Visual Studio 中导入发布设置并进行部署
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-应用程序成功部署后，应自动启动。 如果从 Visual Studio 不启动应用程序，请在 IIS 中启动应用程序。
+应用成功部署后，它应自动启动。 如果从 Visual Studio 不启动应用程序，请在 IIS 中启动应用程序。
 
 1. 在中**设置**对话框中，通过单击调试启用**下一步**，选择**调试**配置，然后选择**删除其他文件目标**下**文件发布**选项。
 
@@ -127,7 +129,7 @@ ms.locfileid: "49826500"
 
 1. 打开 Windows 资源管理器，并创建一个新文件夹**C:\Publish**、 更高版本将部署的 ASP.NET 项目。
 
-2. 如果尚未打开，打开**Internet 信息服务 (IIS) 管理器**。 (在服务器管理器的左窗格中，选择**IIS**。 右键单击服务器，然后选择**Internet 信息服务 (IIS) 管理器**。)
+2. 如果尚未打开，打开**Internet 信息服务 (IIS) 管理器**。 (在服务器管理器的左窗格中，选择**IIS**。 右键单击服务器并选择“Internet Information Services (IIS)管理器”。）
 
 3. 下**连接**在左窗格中，转到**站点**。
 
@@ -183,10 +185,10 @@ ms.locfileid: "49826500"
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 中，您可以重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...**(Shift + Alt + P)。 
+    > 在 Visual Studio 2017 中，您可以重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...** Shift+Alt+P 
 
-3. 将限定符字段设置为**\<远程计算机名称 >: 4022**。
-4. 单击**刷新**。
+3. 将限定符字段设置为“\<remote computer name>:4022”。
+4. 单击“刷新”。
     “可用进程”  窗口中将显示某些进程。
 
     如果看不到任何进程，请尝试使用的 IP 地址而不远程计算机名称 （端口是必需的）。 可以使用`ipconfig`获取 IPv4 地址的命令行中。
@@ -196,16 +198,16 @@ ms.locfileid: "49826500"
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-7. 单击**附加**
+7. 单击“附加”
 
-8. 打开远程计算机的网站。 在浏览器中，转到**http://\<远程计算机名称 >**。
+8. 打开远程计算机的网站。 在浏览器中，转到 http://\<remote computer name>。
     
     将显示 ASP.NET 网页。
 9. 在运行的 ASP.NET 应用程序，单击链接到**有关**页。
 
     应在 Visual Studio 中命中断点。
 
-## <a name="bkmk_openports"></a> 故障排除： 打开 Windows Server 上的所需的端口
+## <a name="bkmk_openports">疑难解答</a>Windows Server 上打开所需的端口
 
 在大多数系统中，所需的端口被打开的 ASP.NET 和远程调试器安装。 但是，您可能需要验证端口打开。
 

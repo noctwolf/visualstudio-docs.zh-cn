@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 中的 UWP 应用部署 |Microsoft Docs
-ms.custom: ''
+title: 将 UWP 应用部署 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 974236f005219caa217f8b1b495eb807ab2f6ee0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: d8006fb0ddcab4ab3eeee1616632d2dc513428ba
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726312"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056806"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>从 Visual Studio 部署 UWP 应用
 
@@ -29,7 +29,7 @@ Visual Studio 部署功能生成和注册在目标设备使用 Visual Studio 中
 
 - 如果目标是远程设备，Visual Studio 会将所需的文件复制到远程计算机并在该设备上注册应用。
 
-当使用调试您的应用程序从 Visual Studio 时，部署是自动**开始调试**选项 (键盘： F5) 或**启动但不调试**选项 (键盘： CTRL + F5)。 你也可以手动部署应用。 手动部署在以下情况中非常有用：
+从 Visual Studio 调试应用时，部署是自动的，调试方法是使用“启动调试”**选项（键盘：F5) 或**启动但不调试**选项 (键盘：CTRL + F5 你也可以手动部署应用。 手动部署在以下情况中非常有用：
 
 - 本地或远程计算机上的随机测试。
 

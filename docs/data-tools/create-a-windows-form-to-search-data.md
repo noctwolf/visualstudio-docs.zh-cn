@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2662eda0be7c3a936f37712c417469abd568b05b
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 15cfd136050d9a0e3fca89964c5a9712b7b5ae06
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305489"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159888"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>创建用于搜索数据的 Windows 窗体
 
@@ -29,7 +29,7 @@ ms.locfileid: "52305489"
 
 通过让数据库执行其最擅长的工作（即快速筛选记录），使用参数化查询有助于使你的应用程序更有效。 相反，如果你请求整个数据库表、在网络上传输它，然后使用应用程序逻辑查找想要的记录，则应用程序将变慢且不实用。
 
-可以将参数化的查询添加到任何 TableAdapter （和控件以接受参数值并执行查询），使用**搜索标准生成器**对话框。 通过在“数据”**菜单上（或任何 TableAdapter 智能标记上）选择“添加查询”** 命令来打开对话框。
+可以将参数化的查询添加到任何 TableAdapter （和控件以接受参数值并执行查询），使用**搜索标准生成器**对话框。 通过在“数据”菜单上（或任何 TableAdapter 智能标记上）选择“添加查询”命令来打开对话框。
 
 本演练涉及以下任务：
 
@@ -39,7 +39,7 @@ ms.locfileid: "52305489"
 
 -   设置中的项的拖放类型**数据源**窗口。
 
--   通过将项从“数据源”**窗口拖动到窗体上来创建显示数据的控件。
+-   通过将项从“数据源”窗口拖动到窗体上来创建显示数据的控件。
 
 -   添加用于在窗体上显示数据的控件。
 
@@ -51,7 +51,7 @@ ms.locfileid: "52305489"
 
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
-1.  如果您没有 SQL Server Express LocalDB，安装它从[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio 安装程序**。 在中**Visual Studio 安装程序**，你可以安装 SQL Server Express LocalDB 作为的一部分**数据存储和处理**工作负荷，或作为单个组件。
+1.  如果您没有 SQL Server Express LocalDB，安装它从[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio 安装程序**。 在中**Visual Studio 安装程序**，可以作为的一部分安装 SQL Server Express LocalDB**数据存储和处理**工作负荷，或作为单个组件。
 
 2.  通过执行以下步骤安装 Northwind 示例数据库：
 
@@ -77,53 +77,53 @@ ms.locfileid: "52305489"
 
 4. 将项目命名**WindowsSearchForm**，然后选择**确定**。
 
-     “WindowsSearchForm”**项目即被创建并添加到“解决方案资源管理器”** 中。
+     “WindowsSearchForm”项目随即创建并添加到“解决方案资源管理器”中。
 
 ## <a name="create-the-data-source"></a>创建数据源
 
-此步骤使用“数据源配置向导”**从数据库创建一个数据源。
+此步骤使用“数据源配置向导”从数据库创建一个数据源：
 
 1.  若要打开**数据源**窗口，然后在**数据**菜单中，单击**显示数据源**。
 
-2.  在“数据源”**窗口中，选择“添加新数据源”** 以启动“数据源配置向导”**。
+2.  在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。
 
 3.  在 **“选择数据源类型”** 页上选择 **“数据库”** ，然后单击 **“下一步”**。
 
-4.  在“选择你的数据连接”**页面上，执行以下操作之一：
+4.  在“选择数据连接”页面上，执行以下操作之一：
 
     -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-    -   选择“新建连接”**以启动“添加/修改连接”** 对话框。
+    -   选择“新建连接”以启动“添加/修改连接”对话框。
 
-5.  如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”**。
+5.  如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”。
 
 6.  上**将连接字符串保存到应用程序配置文件**页上，单击**下一步**。
 
-7.  在“选择数据库对象”**页上，展开“表”** 节点。
+7.  在“选择数据库对象”页上，展开“表”节点。
 
-8.  选择“Customers”**表，然后单击“完成”**。
+8.  选择“Customers”表，然后单击“完成”。
 
-     “NorthwindDataSet”**即被添加到你的项目中，并且“数据源”** 窗口中将显示“Customers”**表。
+     “NorthwindDataSet”添加到项目中，并且“数据源”窗口中显示“Customers”表。
 
 ## <a name="create-the-form"></a>创建窗体
 
-通过将某些项从“数据源”**窗口拖到你的窗体上，可创建数据绑定控件。
+通过将某些项从“数据源”窗口拖到窗体，可创建数据绑定控件：
 
-1.  在“数据源”**窗口中展开“Customers”** 节点。
+1.  在“数据源”窗口中展开“Customers”节点。
 
-2.  将“Customers”**节点从“数据源”** 窗口中拖到窗体上。
+2.  将“Customers”节点从“数据源”窗口中拖到窗体上。
 
-     窗体上出现用于导航记录的 <xref:System.Windows.Forms.DataGridView> 和工具栏 (<xref:System.Windows.Forms.BindingNavigator>)。 组件栏中出现 NorthwindDataSet[、CustomersTableAdapter](../data-tools/dataset-tools-in-visual-studio.md)、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator>。
+     窗体上出现用于导航记录的 <xref:System.Windows.Forms.DataGridView> 和工具栏 (<xref:System.Windows.Forms.BindingNavigator>)。 组件栏中显示[“NorthwindDataSet”](../data-tools/dataset-tools-in-visual-studio.md)、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator>。
 
 ## <a name="add-parameterization-search-functionality-to-the-query"></a>向查询添加参数化 （搜索功能）
 
 可以将 WHERE 子句添加到原始查询使用**搜索标准生成器**对话框：
 
-1.  选择 <xref:System.Windows.Forms.DataGridView> 控件，然后在“数据”**菜单上选择“添加查询”**。
+1.  选择 <xref:System.Windows.Forms.DataGridView> 控件，然后在“数据”菜单上选择“添加查询”。
 
 2.  类型**FillByCity**中**新查询名称**上的区域**搜索标准生成器**对话框。
 
-3.  将 `WHERE City = @City` 添加到“查询文本”**区域的查询中。
+3.  将 `WHERE City = @City` 添加到“查询文本”区域的查询中。
 
      查询应当类似于：
 
@@ -137,9 +137,9 @@ ms.locfileid: "52305489"
     > [!NOTE]
     > 访问和 OLE DB 数据源使用问号 (？) 表示参数，因此在 WHERE 子句将类似如下： `WHERE City = ?`。
 
-4.  单击“确定”**以关闭“搜索标准生成器”** 对话框。
+4.  单击“确定”以关闭“搜索标准生成器”对话框。
 
-     “FillByCityToolStrip”**即添加到窗体中。
+     “FillByCityToolStrip”随即添加到窗体中。
 
 ## <a name="test-the-application"></a>测试应用程序
 
@@ -147,9 +147,9 @@ ms.locfileid: "52305489"
 
 1.  按 **F5** 运行该应用程序。
 
-2.  在“City”**文本框中键入“London”，然后单击“FillByCity”**。
+2.  在“City”文本框中键入“London”，然后单击“FillByCity”。
 
-     符合条件的客户使用填充数据网格。 在此示例中，数据网格只显示其“City”**列中有“London”** 值的客户。
+     符合条件的客户使用填充数据网格。 在此示例中，数据网格只显示其“City”列中有“London”值的客户。
 
 ## <a name="next-steps"></a>后续步骤
 

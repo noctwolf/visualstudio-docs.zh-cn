@@ -1,6 +1,6 @@
 ---
-title: 如何： 重新回到这儿中断时调用 MFC 的函数 |Microsoft Docs
-ms.custom: ''
+title: 回到中断时调用 MFC 的函数 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,25 +25,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af8856a4356a829b37a4a624b86f7b29dd965f9c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c746fc287435ea6219e0f6052bc9372fc2ae5d25
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389453"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048563"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>如何：返回到在中断时调用了 MFC 的函数
 
 > [!NOTE]
 > 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
 
-如果你使用了“调试”**菜单上的“中断”** 命令来暂停程序，结果结束在 MFC 上，而且你可以确认问题在代码中，则可以使用“调用堆栈”窗口来向后定位到函数。 有关详细信息，请参阅[如何： 使用调用堆栈窗口](../debugger/how-to-use-the-call-stack-window.md)。
+如果你使用了“调试”菜单上的“中断”命令来暂停程序，结果结束在 MFC 上，而且你可以确认问题在代码中，则可以使用“调用堆栈”窗口来向后定位到函数。 有关更多信息，请参见[如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)。
 
-有时，代码可能在消息泵中中断。 在这种情况下，调用堆栈中没有用户代码。 若要避免此问题，可以使用断点（也许加上条件和命中次数）而非中断**命令。 有关详细信息，请参阅 [Breakpoints and Tracepoints](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)。
+有时，代码可能在消息泵中中断。 在这种情况下，调用堆栈中没有用户代码。 若要避免此问题，可以使用断点（也许加上条件和命中次数）而非“中断”命令。 有关详细信息，请参阅 [Breakpoints and Tracepoints](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)。
 
 ## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>导航到从中调用 MFC 的函数
 
--   使用“调用堆栈”**窗口。
+-   使用“调用堆栈”窗口。
 
 ## <a name="see-also"></a>请参阅
 

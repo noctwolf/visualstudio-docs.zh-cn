@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 463bc06bb023e973ac6fe62f5f92a3d9067b2841
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: e31eeaf3061968cfa916d2ec5a0d0e522b9f6ebb
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280592"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159524"
 ---
 # <a name="access-data-in-visual-studio"></a>在 Visual Studio 中访问数据
 
@@ -37,32 +37,35 @@ ms.locfileid: "44280592"
 
 **Microsoft Azure**
 
-||||
-|-|-|-|
-|SQL 数据库|Azure Cosmos DB|存储 （blob、 表、 队列、 文件）|
-|SQL 数据仓库|SQL Server Stretch Database|StorSimple|
-
-更多内容...
+- SQL 数据库
+- Azure Cosmos DB
+- 存储 （blob、 表、 队列、 文件）
+- SQL 数据仓库
+- SQL Server Stretch Database
+- StorSimple
+- 更多内容...
 
 **SQL**
 
-||||
-|-|-|-|
-|SQL Server 2005-2016，其中包括 Express 和 LocalDB|Firebird|MariaDB|
-|MySQL|Oracle|postgresql|
-|SQLite|||
-
-更多内容...
+- SQL Server 2005-2016 （包括 Express 和 LocalDB）
+- Firebird
+- MariaDB
+- MySQL
+- Oracle
+- postgresql
+- SQLite
+- 更多内容...
 
 **NoSQL**
 
-||||
-|-|-|-|
-|Apache Cassandra|CouchDB|MongoDB|
-|NDatabase|OrientDB|RavenDB|
-|VelocityDB|||
-
-更多内容...
+- Apache Cassandra
+- CouchDB
+- MongoDB
+- NDatabase
+- OrientDB |
+- RavenDB
+- VelocityDB
+- 更多内容...
 
 许多数据库供应商和第三方通过 NuGet 包支持 Visual Studio 集成。 在 nuget.org 上或通过 NuGet 包管理器在 Visual Studio 中，可以浏览产品/服务 (**工具** > **NuGet 包管理器** > **管理 NuGet解决方案包**)。 其他数据库产品与 Visual Studio 集成扩展。 您可以通过导航到浏览 Visual Studio Marketplace 中的这些产品/服务**工具**，**扩展和更新**，然后选择**联机**中的左窗格对话框。 有关详细信息，请参阅[Visual Studio 的兼容的数据库系统](../data-tools/installing-database-systems-tools-and-samples.md)。
 
@@ -71,11 +74,11 @@ ms.locfileid: "44280592"
 
 ## <a name="net-languages"></a>.NET 语言
 
-所有.NET 数据访问，包括在.NET Core 中都基于 ADO.NET 中，为访问任何类型的数据源、 关系和非关系定义一个接口的一组类。 Visual Studio 具有几个工具和设计人员可使用 ADO.NET 来帮助您连接到数据库，操作数据，并向用户呈现数据。 在本部分中的文档介绍如何使用这些工具。 您还可以直接对 ADO.NET 命令对象进行编程。 直接调用 ADO.NET Api 的详细信息，请参阅[ADO.NET](/dotnet/framework/data/adonet/index)。
+所有.NET 数据访问，包括在.NET Core 中，都基于 ADO.NET 中，定义用于访问任何类型的关系和非关系数据源的接口的一组类。 Visual Studio 具有几个工具和设计人员可使用 ADO.NET 来帮助您连接到数据库，操作数据，并向用户呈现数据。 在本部分中的文档介绍如何使用这些工具。 您还可以直接对 ADO.NET 命令对象进行编程。 直接调用 ADO.NET Api 的详细信息，请参阅[ADO.NET](/dotnet/framework/data/adonet/index)。
 
-与 ASP.NET 相关的数据访问文档，请参阅[使用数据](http://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 站点上。 使用 ASP.NET MVC 中使用实体框架的教程，请参阅[开始使用 Entity Framework 6 Code First 通过 MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
+与 ASP.NET 相关的数据访问文档，请参阅[使用数据](https://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 站点上。 使用 ASP.NET MVC 中使用实体框架的教程，请参阅[开始使用 Entity Framework 6 Code First 通过 MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 
-C# 或 Visual Basic 中的通用 Windows 平台 (UWP) 应用可以使用 Microsoft Azure SDK for.NET 访问 Azure 存储和其他 Azure 服务。 Windows.Web.HttpClient 类，与任何 RESTful 服务的通信。 有关详细信息，请参阅[如何连接到 HTTP 服务器使用 Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)。
+中的通用 Windows 平台 (UWP) 应用C#或 Visual Basic 可以使用 Microsoft Azure SDK for.NET 来访问 Azure 存储和其他 Azure 服务。 Windows.Web.HttpClient 类，与任何 RESTful 服务的通信。 有关详细信息，请参阅[如何连接到 HTTP 服务器使用 Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx)。
 
 对于本地计算机上的数据存储，建议的方法是使用 SQLite，作为应用程序在同一进程中运行。 如果需要一个对象关系映射 (ORM) 层，可以使用实体框架。 有关详细信息，请参阅[数据访问](/windows/uwp/data-access/index)Windows 开发人员中心中。
 
@@ -103,9 +106,9 @@ C# 或 Visual Basic 中的通用 Windows 平台 (UWP) 应用可以使用 Microso
 
 使用 REST 服务的 c + + 程序可以使用[c + + REST SDK](https://github.com/Microsoft/cpprestsdk)。
 
-使用 Microsoft Azure 存储空间的 c + + 程序可以使用[Microsoft Azure 存储客户端](http://www.nuget.org/packages/wastorage)。
+使用 Microsoft Azure 存储空间的 c + + 程序可以使用[Microsoft Azure 存储客户端](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP)。
 
-数据建模&mdash;Visual Studio 不提供 c + + 的 ORM 层。 [ODB](http://www.codesynthesis.com/products/odb/) c + + 是流行的开放源代码 ORM。
+数据建模&mdash;Visual Studio 不提供 c + + 的 ORM 层。 [ODB](https://www.codesynthesis.com/products/odb/) c + + 是流行的开放源代码 ORM。
 
 若要了解有关从 c + + 应用连接到数据库的详细信息，请参阅[c + + 的 Visual Studio 数据工具](../data-tools/visual-studio-data-tools-for-cpp.md)。 有关旧版 Visual c + + 数据访问技术的详细信息，请参阅[数据访问](/cpp/data/data-access-in-cpp)。
 
@@ -135,11 +138,11 @@ C# 或 Visual Basic 中的通用 Windows 平台 (UWP) 应用可以使用 Microso
 
 [ADO.NET 实体框架](https://docs.microsoft.com/ef/ef6/)&mdash;介绍如何创建数据应用程序，使开发人员针对概念模型而不是直接针对关系数据库进行编程。
 
-[WCF 数据服务 4.5](/dotnet/framework/data/wcf/index)&mdash;介绍如何使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]部署 web 或 intranet 上的数据服务，实现[开放数据协议 (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)。
+[WCF 数据服务 4.5](/dotnet/framework/data/wcf/index)&mdash;介绍如何使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]部署 web 或 intranet 上的数据服务，实现[开放数据协议 (OData)](https://www.odata.org/)。
 
 [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)&mdash;包含指向这些主题介绍了数据在 Office 解决方案中的工作方式。 这包括有关面向架构编程、 数据缓存和服务器端数据访问的信息。
 
-[LINQ （语言集成查询）](/dotnet/csharp/linq/)&mdash;介绍内置 C# 和 Visual Basic 中，以及常见模型用于查询关系数据库、 XML 文档、 数据集和内存中集合的查询功能。
+[LINQ （语言集成查询）](/dotnet/csharp/linq/)&mdash;介绍了内置的查询功能C#和 Visual Basic 和通用模型用于查询关系数据库、 XML 文档、 数据集和内存中集合。
 
 [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)&mdash;讨论使用 XML 数据，调试 XSLT，.NET Framework XML 功能，以及 XML 查询的体系结构。
 

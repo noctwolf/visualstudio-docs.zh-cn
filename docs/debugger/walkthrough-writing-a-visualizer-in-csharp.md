@@ -1,6 +1,6 @@
 ---
-title: 演练： 编写可视化工具C#|Microsoft Docs
-ms.custom: ''
+title: 编写可视化工具C#|Microsoft Docs
+ms.custom: seodec18
 ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6de9ed60fd4c4dc0290fc1f4b5a73415bea79dec
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 872f1a899bf9731dd86d5d9c14e5639c2a4630aa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388447"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059660"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>演练：用 C# 编写可视化工具 #
-本演练演示如何使用  编写简单的可视化工具。 本演练中创建的可视化工具使用 Windows 窗体消息框显示字符串的内容。 此简单字符串可视化工具不是特别有用，但它显示创建更有用的其他数据类型的可视化工具时必须遵循的基本步骤。
+本演练演示如何使用 C# 编写简单的可视化工具。 本演练中创建的可视化工具使用 Windows 窗体消息框显示字符串的内容。 此简单字符串可视化工具不是特别有用，但它显示创建更有用的其他数据类型的可视化工具时必须遵循的基本步骤。
 
 > [!NOTE]
 > 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请转到**工具**菜单，然后选择**导入和导出设置**。 有关详细信息，请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
@@ -36,13 +36,13 @@ ms.locfileid: "52388447"
 
 ### <a name="to-create-a-class-library-project"></a>创建类库项目
 
-1. 在“文件”  菜单上，选择“新建” 、“项目” 。
+1. 在“文件”菜单上，选择“新建”>“项目”。
 
 2. 在中**新的项目**对话框中的**Visual C#** ，然后选择 **.NET Standard**。
 
 3. 在中间窗格中，选择**类库**。
 
-4. 在“名称”**框中，为类库键入一个适当的名称，例如 MyFirstVisualizer。
+4. 在“名称”框中，为类库键入一个适当的名称，例如 MyFirstVisualizer。
 
 5. 单击 **“确定”**。
 
@@ -85,7 +85,7 @@ ms.locfileid: "52388447"
    public class DebuggerSide : DialogDebuggerVisualizer
    ```
 
-   `DialogDebuggerVisualizer` 具有一个抽象方法 `Show`，您必须重写此方法。
+   `DialogDebuggerVisualizer` 具有一个抽象方法 (`Show`)，必须重写此方法。
 
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>重写 DialogDebuggerVisualizer.Show 方法
 
@@ -113,7 +113,7 @@ ms.locfileid: "52388447"
    using System.Windows.Forms;
    ```
 
-   现在，你将添加一些代码以创建和显示可视化工具的用户界面。 由于这是你第一个可视化工具，我们将简化用户界面，并使用一个消息框。
+   现在，可添加一些代码以创建和显示可视化工具的用户界面。 由于这是你第一个可视化工具，我们将简化用户界面，并使用一个消息框。
 
 ### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>在对话框中显示可视化工具输出
 
@@ -127,7 +127,7 @@ ms.locfileid: "52388447"
 
 2. 上**构建**菜单中，选择**生成 MyFirstVisualizer**。 该项目应能成功生成。 在继续前更正所有生成错误。
 
-   这是调试器端代码的结尾部分。 但是还有一步操作：添加用于通知调试对象端哪些类集合构成可视化工具的特性。
+   这是调试器端代码的结尾部分。 但是还有一步操作：添加用于通知调试对象端哪些类集合构成可视化工具的属性。
 
 ### <a name="to-add-the-debuggee-side-code"></a>若要添加的调试对象端代码
 
@@ -216,13 +216,13 @@ ms.locfileid: "52388447"
 
 1. 在中**解决方案资源管理器**，右键单击**MyTestConsole** ，然后选择**设为启动项目**快捷菜单上。
 
-2. 在“调试”**菜单上选择“启动”**。
+2. 在“调试”菜单上选择“启动”。
 
     控制台应用程序启动和可视化工具显示并显示字符串"Hello，World"。
 
    祝贺您！ 您刚刚生成了第一个可视化工具并进行了测试。
 
-   如果你想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用可视化工具，而不是只从测试工具中调用它，则需要安装它。 有关详细信息，请参阅[如何： 安装可视化工具](../debugger/how-to-install-a-visualizer.md)。
+   如果你想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用可视化工具，而不是只从测试工具中调用它，则需要安装它。 有关更多信息，请参见[如何：安装可视化工具](../debugger/how-to-install-a-visualizer.md)。
 
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>创建可视化工具使用可视化工具项模板
 
@@ -232,7 +232,7 @@ ms.locfileid: "52388447"
 
 ### <a name="to-create-a-new-class-library"></a>若要创建新的类库
 
-1. 在“文件”  菜单上，选择“新建” 、“项目” 。
+1. 在“文件”菜单上，选择“新建”>“项目”。
 
 2. 在中**新的项目**对话框中的**Visual C#** ，选择 **.NET Standard**。
 

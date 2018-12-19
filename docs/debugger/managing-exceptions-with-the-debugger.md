@@ -1,6 +1,6 @@
 ---
-title: 管理 Visual Studio 调试器的异常 |Microsoft Docs
-ms.custom: ''
+title: 管理调试器的异常 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/09/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 02c7fbfca9a63ac736972ebea01a854e24f90188
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881685"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057913"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>管理 Visual Studio 中调试器的异常
 
@@ -47,7 +47,7 @@ ms.locfileid: "49881685"
 
 提供响应最重要的异常处理程序。 此外了解如何配置调试器始终中断执行的一些异常。
 
-调试器时出现异常，将异常消息写入**输出**窗口。 它可能会中断执行，在以下情况下，当：
+异常发生时，调试程序将一条异常消息写入到“输出”窗口。 它可能会中断执行，在以下情况下，当：
 
 - 是引发未处理异常。
 - 将调试器配置为中断执行之前调用任何处理程序。
@@ -59,7 +59,7 @@ ms.locfileid: "49881685"
 <!-- Two consecutive notes are intentional here...-->
 
 > [!NOTE]
-> 在 Visual Basic 应用程序中，调试程序管理的所有错误作为异常，即使在错误样式错误处理程序上使用。
+> 在 Visual Basic 应用程序中，调试程序将所有错误作为异常进行管理，即使使用出错时样式错误处理程序也是如此。
 
 ## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>让调试器在引发异常时中断
 
@@ -74,7 +74,7 @@ ms.locfileid: "49881685"
 
 如果选择中的异常**异常设置**窗口中，引发异常，无论是否对其进行处理的任何位置调试程序执行将中断。 现在该异常被称为第一次异常。 以下是几个应用场景示例：
 
-- 以下 C# 控制台应用程序中，Main 方法将引发**AccessViolationException**内`try/catch`块。
+- 在下面的 C# 控制台应用程序中，Main 方法在 `try/catch` 块内引发“AccessViolationException”。
 
   ```csharp
   static void Main(string[] args)
@@ -101,7 +101,7 @@ ms.locfileid: "49881685"
 
   但它不会显示`here`行。
 
-- C# 控制台应用程序引用具有两种方法的类的类库。 一种方法引发异常，并处理它，而第二种方法会引发同一异常但不会进行处理。
+- 一个C#控制台应用程序引用具有两种方法的类的类库。 一种方法引发异常，并处理它，而第二种方法会引发同一异常但不会进行处理。
 
   ```csharp
   public class Class1
@@ -125,7 +125,7 @@ ms.locfileid: "49881685"
   }
   ```
 
-  以下是控制台应用程序的 main （） 方法：
+  以下是控制台应用程序的 Main() 方法：
 
   ```csharp
   static void Main(string[] args)
@@ -181,9 +181,9 @@ ms.locfileid: "49881685"
 若要将异常添加到 GPU 内存访问异常、 JavaScript 运行时异常或 Win32 异常类别，包括错误代码和说明。
 
 > [!TIP]
-> 请检查你的拼写！ **异常设置**窗口不会检查是否存在添加的异常。 因此，如果键入**Sytem.UriTemplateMatchException**，则将获得该异常的一个条目 (而不是针对**System.UriTemplateMatchException**)。
+> 请检查你的拼写！ “异常设置”窗口不会检查是否存在添加的异常。 因此，如果键入 Sytem.UriTemplateMatchException，则将获得该异常的条目（而不是“System.UriTemplateMatchException”的条目）。
 
-异常设置保留在解决方案的.suo 文件中，使它们适用于特定的解决方案。 你无法跨解决方案重用特定异常设置。 现在将会保留添加的异常;不是删除的异常。 您可能会添加一个异常，关闭并重新打开解决方案，以及异常仍在那里。 但是，如果删除一个异常，然后关闭/重新打开解决方案，异常将消失。
+异常设置保留在解决方案的 .suo 文件中，因此适用于特定解决方案。 无法跨解决方案重用特定异常设置。 现在将会保留添加的异常;不是删除的异常。 您可能会添加一个异常，关闭并重新打开解决方案，以及异常仍在那里。 但是，如果删除一个异常，然后关闭/重新打开解决方案，异常将消失。
 
 **“异常设置”** 窗口在 C# 中支持通用异常类型，但在 Visual Basic 中不支持。 要对类似 `MyNamespace.GenericException<T>`的异常执行中断操作，则必须将异常作为 **MyNamespace.GenericException`1**添加。 也就是说，如果你已创建如下所示代码的异常：
 
@@ -226,5 +226,5 @@ public class GenericException<T> : Exception
 [在出现异常后继续执行](../debugger/continuing-execution-after-an-exception.md)<br/>
 [如何：在发生异常后检查系统代码](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
 [如何：使用本机运行时检查](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[使用无 C 运行时库的运行时检查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[教程： 了解如何使用 Visual Studio 进行调试](../debugger/getting-started-with-the-debugger.md)
+[使用运行时检查（不用 C 运行时库）](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+[教程：了解如何使用 Visual Studio 进行调试](../debugger/getting-started-with-the-debugger.md)

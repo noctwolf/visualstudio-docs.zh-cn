@@ -1,6 +1,6 @@
 ---
-title: 如何： 调试 COM 客户端和服务器使用 RPC 调试 |Microsoft 文档
-ms.custom: ''
+title: 调试 COM 客户端和服务器使用 RPC 调试 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1404d81502aaa0579c20511f3eecafa86607df0d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6c5a6b2dc47e1d0e6c52df3cc77fc5b90f4d75e3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473733"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049012"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>如何：使用 RPC 调试来调试 COM 客户端和服务器
 可以使用远程过程调用 (RPC) 调试来调试 COM 客户端/服务器应用程序。 必须启用 RPC 调试才能使用它。 启用 RPC 调试后，当单步执行来自客户端的服务器调用时，调试器会附加到服务器上，使您能调试其代码。 附加调试器后，就可以对客户端和服务器进程使用所有的调试器功能。  
@@ -41,11 +41,11 @@ ms.locfileid: "31473733"
   
 1.  在 **“工具”** 菜单上，单击 **“选项”**。  
   
-2.  在**选项**对话框中，单击**调试**文件夹。  
+2.  在“选项”对话框中，单击“调试”文件夹。  
   
-3.  单击**本机**页。  
+3.  单击“本机”页。  
   
-4.  选择**RPC 调试**复选框。  
+4.  选中“RPC 调试”复选框。  
   
     > [!NOTE]
     >  必须拥有“管理员”或“超级用户”权限，才能调试 RPC 调用。  
@@ -55,4 +55,4 @@ ms.locfileid: "31473733"
   
 ## <a name="see-also"></a>请参阅  
  [调试 COM 服务器和容器](../debugger/com-server-and-container-debugging.md)  
- [在 Visual Studio 中调试](../debugger/index.md)[调试器功能教程](../debugger/debugger-feature-tour.md)
+ [在 Visual Studio 中调试](../debugger/index.md)[调试器功能简介](../debugger/debugger-feature-tour.md)

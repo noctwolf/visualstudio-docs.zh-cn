@@ -1,6 +1,6 @@
----
-title: 如何： 在调用堆栈窗口中的缺少本机框架时跳出托管代码 |Microsoft Docs
-ms.custom: ''
+﻿---
+title: 跳出C#代码的调用堆栈中缺少本机框架时 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,16 +24,16 @@ manager: douge
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: e5c671f93e20da108a9fd1069a0950f52ef00da9
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 741afb6befdbc29cafab39c3c9b0d7bb2761d7b1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388564"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057647"
 ---
-# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>如何：在“调用堆栈”窗口中缺少本机框架时跳出托管代码
+# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>如何：调用堆栈窗口中的缺少本机框架时跳出托管代码
 
-如果代码具有在**调用堆栈**窗口中不可见的本机框架，则跳出托管代码可能会产生意外结果。一种解决方法是，使用断点来代替**跳出**。
+如果代码中有在“调用堆栈”窗口中不可见的本机框架，则从托管代码中跳出会产生意外的结果。 一种解决方法是，使用断点来代替“跳出”。
 
 > [!NOTE]
 > 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
@@ -42,7 +42,7 @@ ms.locfileid: "52388564"
 
 1.  在本机代码中，调用托管代码的后面设置一个位置断点。
 
-2. 在**调试**菜单上选择**继续**。
+2.  在“调试”菜单上选择“继续”。
 
      托管调用完成后，执行会在本机代码的断点处停止。
 

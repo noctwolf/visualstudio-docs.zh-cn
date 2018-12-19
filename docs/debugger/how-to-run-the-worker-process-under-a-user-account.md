@@ -1,6 +1,6 @@
 ---
-title: 如何： 运行辅助进程的用户帐户下 |Microsoft Docs
-ms.custom: ''
+title: 运行工作进程的用户帐户下 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e0caba3cce487f8a706aee7e0944a75255d1df6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 47aefcb73fd20dcc82b19ed6200fec5fd57dd486
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939106"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067811"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在用户帐户下运行辅助进程
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在用户帐户下运行工作进程
 若要设置计算机以便在某个用户帐户下运行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程（aspnet_wp.exe 或 w3wp.exe），请执行下列步骤。  
 
  > [!IMPORTANT]
@@ -40,7 +40,7 @@ ms.locfileid: "49939106"
   
 1. 打开 machine.config 文件，此文件位于计算机上运行时安装路径下的 CONFIG 文件夹中。  
   
-2. 查找&lt;processModel&gt;部分，并将用户和密码属性更改为的名称和要用于运行 aspnet_wp.exe 的用户帐户的密码。  
+2. 找到 &lt;processModel&gt; 节，将用户和密码属性更改为希望用于运行 aspnet_wp.exe 的用户帐户的名称和密码。  
   
 3. 保存 machine.config 文件。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "49939106"
   
     将出现 **“选择用户、计算机或组”** 对话框。  
   
-10. 在 **“输入要选择的对象名称”** 框中键入用户名，然后单击 **“确定”**。 用户名必须遵循以下格式：域名\用户名。  
+10. 在 **“输入要选择的对象名称”** 框中键入用户名，然后单击 **“确定”**。 用户名称必须遵循以下格式：域名 \ 用户名。  
   
 11. 在 **“临时 ASP.Net 文件的权限项”** 对话框中，授予用户 **“完全控制”**，然后单击 **“确定”** 以关闭 **“临时 ASP.Net 文件项”** 对话框。  
   

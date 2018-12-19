@@ -1,6 +1,6 @@
 ---
-title: 当一个函数被调用数百次时，如何确定哪次调用失败了？ | Microsoft Docs
-ms.custom: ''
+title: 查找多次调用函数时，该调用失败 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -29,19 +29,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25b552e7a81c43ec67951cac584b215f38f06c12
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 3fec492a8cba6ac61cc18a3ff0b68abbe734413d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284012"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064687"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>当一个函数被调用数百次时，如何确定哪次调用失败了？
 ## <a name="problem-description"></a>问题描述  
  程序在调用某函数（如 `CnvtV`）时失败。 失败以前该程序可能已调用了该函数数百次。 如果我在 `CnvtV` 上设置一个位置断点，程序在每次调用该函数时都停止，而我不希望这样。 我不知道什么条件导致调用失败，所以无法设置条件断点。 我该怎么办？  
   
 ## <a name="solution"></a>解决方案  
- 可以在函数上设置断点**命中次数**字段为大到永远不会无法达到的值。 在这种情况下，由于您确信函数`CnvtV`被调用了数百次，您可以设置**命中计数**为 1000年或更多。 然后运行程序，等待调用失败。 程序失败后，打开“断点”窗口并查看断点列表。 将显示您在 `CnvtV` 上设置的断点，其后跟着命中次数和剩余迭代次数：  
+ 在函数上设置断点时可以将“命中次数”字段设置为一个大到永远无法达到的值。 在这种情况中，由于你确信函数 `CnvtV` 被调用了数百次，所以将“命中次数”设置为 1000 或更高。 然后运行程序，等待调用失败。 程序失败后，打开“断点”窗口并查看断点列表。 将显示您在 `CnvtV` 上设置的断点，其后跟着命中次数和剩余迭代次数：  
   
 ```cpp
 CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)  

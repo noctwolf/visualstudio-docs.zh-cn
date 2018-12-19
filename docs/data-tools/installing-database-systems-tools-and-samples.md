@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 数据库兼容性
+title: 数据库兼容性
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6cb532ee53e61842eb9f36ae0ecd437ef8fe0e0f
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: ddb950fd916df6ff514e13435765b118e1e579dd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089190"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049555"
 ---
-# <a name="compatible-database-systems-for-visual-studio"></a>Visual Studio 的兼容的数据库系统
+# <a name="compatible-database-systems-for-visual-studio"></a>适用于 Visual Studio 的兼容数据库系统
 
 若要开发 Visual Studio 中的数据连接应用程序，您通常在本地开发计算机上安装数据库系统，然后部署应用程序和数据库到生产环境时，他们就可以。 Visual Studio 的一部分在计算机上安装 SQL Server Express LocalDB**数据存储和处理**工作负荷。 此 LocalDB 实例可用于快速、 轻松地开发数据连接的应用程序。
 

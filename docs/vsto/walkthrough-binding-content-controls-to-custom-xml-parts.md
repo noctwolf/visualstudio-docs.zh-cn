@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1bc8aee0a1294aeda4c57a3416de4a0cc98129f3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
-ms.translationtype: MT
+ms.openlocfilehash: d48c0e1921c57923021e88a2a4a5bb5f89763ef1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673030"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671521"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>演练： 将内容控件绑定到自定义 XML 部件
   本演练演示如何将对 Word 的文档级自定义项中的内容控件绑定到存储在文档中的 XML 数据。  
@@ -36,19 +36,19 @@ ms.locfileid: "50673030"
   
  本演练阐释了以下任务：  
   
-- 设计时，将内容控件添加到文档级项目的 Word 文档。  
+-   设计时，将内容控件添加到文档级项目的 Word 文档。  
   
-- 创建定义元素以绑定到内容控件的 XML 数据文件和 XML 架构。  
+-   创建定义元素以绑定到内容控件的 XML 数据文件和 XML 架构。  
   
-- 设计时，将 XML 架构附加到文档。  
+-   设计时，将 XML 架构附加到文档。  
   
-- 将 XML 文件的内容添加到运行时在文档中的自定义 XML 部件。  
+-   将 XML 文件的内容添加到运行时在文档中的自定义 XML 部件。  
   
-- 将内容控件绑定到自定义 XML 部件中的元素。  
+-   将内容控件绑定到自定义 XML 部件中的元素。  
   
-- 将 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 绑定到 XML 架构中定义的值集。  
+-   将 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 绑定到 XML 架构中定义的值集。  
   
-  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+ [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -71,36 +71,36 @@ ms.locfileid: "50673030"
   
 ### <a name="to-add-content-controls-to-the-document"></a>若要将内容控件添加到文档  
   
-1. 在 Word 文档中承载[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]设计器中的，在功能区中，选择**插入**选项卡。  
+1.  在 Word 文档中承载[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]设计器中的，在功能区中，选择**插入**选项卡。  
   
-2. 在中**表**组中，选择**表**，并插入包含 2 列和 3 行的表。  
+2.  在中**表**组中，选择**表**，并插入包含 2 列和 3 行的表。  
   
-3. 在第一列中键入文本，使之类似于以下列：  
+3.  在第一列中键入文本，使之类似于以下列：  
   
-   ||  
-   |-|  
-   |**员工姓名**|  
-   |**雇佣日期**|  
-   |**标题**|  
+    ||  
+    |-|  
+    |**员工姓名**|  
+    |**雇佣日期**|  
+    |**标题**|  
   
-4. 在第二个表的列中，选择第一行 (下一步**员工姓名**)。  
+4.  在第二个表的列中，选择第一行 (下一步**员工姓名**)。  
   
-5. 在功能区中，选择**开发人员**选项卡。  
+5.  在功能区中，选择**开发人员**选项卡。  
   
-   > [!NOTE]  
-   >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何： 在功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    > [!NOTE]  
+    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何： 在功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
-6. 在中**控件**组中，选择**文本**按钮![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")添加<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>到第一个单元格。  
+6.  在中**控件**组中，选择**文本**按钮![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")添加<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>到第一个单元格。  
   
-7. 在第二个表的列中，选择第二行 (旁边**雇佣日期**)。  
+7.  在第二个表的列中，选择第二行 (旁边**雇佣日期**)。  
   
-8. 在中**控件**组中，选择**日期选取器**按钮![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl")添加<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>到第二个单元格。  
+8.  在中**控件**组中，选择**日期选取器**按钮![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl")添加<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>到第二个单元格。  
   
 9. 在第二个表的列中，选择第三行 (旁边**标题**)。  
   
 10. 在中**控件**组中，选择**下拉列表**按钮![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl")添加<xref:Microsoft.Office.Tools.Word.DropDownListContentControl>到最后一个单元格。  
   
-    这是此项目的整个用户界面。 如果现在运行项目，则可以在第一行中键入文本并在第二行选择一个日期。 下一步是将需要显示的数据附加到 XML 文件中的文档。  
+ 这是此项目的整个用户界面。 如果现在运行项目，则可以在第一行中键入文本并在第二行选择一个日期。 下一步是将需要显示的数据附加到 XML 文件中的文档。  
   
 ## <a name="create-the-xml-data-file"></a>创建 XML 数据文件  
  通常情况下，你将获取 XML 数据存储在来自外部源（如文件或数据库）的自定义 XML 部件中。 在本演练中，你将创建包含员工数据的 XML 文件，此类数据由将绑定到文档中的内容控件的元素进行标记。 要使数据在运行时可用，则将 XML 文件作为资源嵌入自定义程序集。  
@@ -189,7 +189,7 @@ ms.locfileid: "50673030"
 ## <a name="attach-the-xml-schema-to-the-document"></a>将 XML 架构附加到文档  
  必须将 XML 架构附加到文档以将 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 绑定到 `title` 元素的有效值。  
   
-### <a name="to-attach-the-xml-schema-to-the-document--includeword15shortvstoincludesword-15-short-mdmd"></a>若要将 XML 架构附加到文档 ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
+### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>将 XML 架构附加到文档 ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
   
 1.  激活**EmployeeControls.docx**在设计器中。  
   
@@ -296,7 +296,7 @@ ms.locfileid: "50673030"
   
 9. 将文件命名**EmployeeControls.docx.zip**。  
   
-     **EmployeeControls.docx**以 Open XML 格式保存文档。 通过重命名此文档 *.zip*文件扩展名，可以检查文档的内容。 有关 Open XML 的详细信息，请参阅技术文章[引入了 Office (2007) Open XML 文件格式](/previous-versions/office/developer/office-2007/aa338205(v=office.12))。  
+     **EmployeeControls.docx**以 Open XML 格式保存文档。 通过重命名此文档 *.zip*文件扩展名，可以检查文档的内容。 有关 Open XML 的详细信息，请参阅技术文章[引入了 Office (2007) Open XML 文件格式](http://msdn.microsoft.com/96018532-f62c-4da7-bbff-16b96a483fbf)。  
   
 10. 打开**EmployeeControls.docx.zip**文件。  
   
