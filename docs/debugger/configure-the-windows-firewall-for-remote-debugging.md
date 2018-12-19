@@ -1,6 +1,5 @@
 ---
 title: 配置 Windows 防火墙以进行远程调试 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/31/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,18 +9,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4e4ccc09d8919260b1634fd02790c1bf5b10636
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: HT
+ms.openlocfilehash: da505c6193dd7d05cc10a8e7cec8383f8ee3adfc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750931"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058592"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以进行远程调试
 
 在网络中保护的 Windows 防火墙，防火墙必须配置为允许远程调试。 Visual Studio 和远程调试工具尝试在安装或启动时，打开正确的防火墙端口，但可能还需要打开端口或手动允许应用程序。 
 
-本主题介绍如何配置 Windows 防火墙以启用 Windows 10，8/8.1 和 7; 上的远程调试和 Windows Server 2012 R2、 2012年和 2008 R2 计算机。 Visual Studio 和远程计算机无需运行相同的操作系统。 例如，在 Visual Studio 计算机可以运行 Windows 10 和远程计算机可以运行 Windows Server 2012 R2。      
+本主题介绍如何配置 Windows 防火墙以启用 Windows 10，8/8.1 和 7; 上的远程调试和 Windows Server 2012 R2、 2012年和 2008 R2 计算机。 Visual Studio 和远程计算机无需运行相同的操作系统。 例如，Visual Studio 计算机可以运行 Windows 10，而远程计算机可以运行 Windows Server 2012 R2。      
   
 >[!NOTE]
 >有关配置 Windows 防火墙的说明略有不同，在不同操作系统上和较旧版本的 Windows。 Windows 8/8.1、 Windows 10 和 Windows Server 2012 设置使用单词*应用程序*，而 Windows 7 和 Windows Server 2008 使用单词*程序*。  
@@ -56,23 +55,23 @@ Visual Studio 和远程调试器尝试在安装或启动期间打开正确的端
 
 |**端口**|**传入/传出**|**协议**|**说明**|   
 |-|-|-|-|
-|4022|传入|TCP|VS 2017。 通过为每个 Visual Studio 版本 2 此端口号递增。 有关详细信息，请参阅[Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|  
-|4023|传入|TCP|VS 2017。 通过为每个 Visual Studio 版本 2 此端口号递增。 此端口是仅用于远程调试从 64 位版本的远程调试器的 32 位进程。 有关详细信息，请参阅[Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。| 
+|4022|传入|TCP|用于 VS 2017。 通过为每个 Visual Studio 版本 2 此端口号递增。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|  
+|4023|传入|TCP|用于 VS 2017。 通过为每个 Visual Studio 版本 2 此端口号递增。 此端口是仅用于远程调试从 64 位版本的远程调试器的 32 位进程。 有关详细信息，请参阅[Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。| 
 |3702|传出|UDP|（可选）所需的远程调试器发现。|    
   
 如果选择**使用托管兼容模式**下**工具** > **选项** > **调试**，打开这些附加远程调试器端口。 调试器托管兼容模式，使旧、 Visual Studio 2010 版本的调试器。 
 
 |**端口**|**传入/传出**|**协议**|**说明**|  
 |-|-|-|-|  
-|135, 139, 445|传出|TCP|必须的。|  
-|137, 138|传出|UDP|必须的。|  
+|135, 139, 445|传出|TCP|必需。|  
+|137, 138|传出|UDP|必需。|  
 
 如果您的域策略要求通过 IPSec 进行网络通信，则必须打开 Visual Studio 和远程计算机上的其他端口。 若要调试远程 IIS web 服务器上，打开远程计算机上的端口 80。
 
 |**端口**|**传入/传出**|**协议**|**说明**|  
 |-|-|-|-|  
 |500, 4500|传出|UDP|如果你的域策略需要通过 IPSec 进行网络通信，则需要。|  
-|80|传出|TCP|所需的 web 服务器调试。|
+|80|传出|TCP|Web 服务器调试所必需。|
 
 若要允许特定应用程序通过 Windows 防火墙，请参阅[配置通过 Windows 防火墙的远程调试](#configure-remote-debugging-through-windows-firewall)。 
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用 ADO.NET 创建简单数据应用程序
+title: 使用 ADO.NET 创建简单的数据应用程序
 ms.date: 08/23/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,21 +13,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891006"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064867"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 
-在创建操作数据库中的数据的应用程序时，你执行如定义连接字符串、 插入数据，以及运行存储的过程的基本任务。 通过按照本主题，了解如何使用 Visual C# 或 Visual Basic 和 ADO.NET 与从简单的 Windows 窗体"forms over data"应用程序中的数据库进行交互。  所有.NET 数据技术，包括数据集，LINQ to SQL 和实体框架 — 最终执行非常类似于本文中所示的步骤。
+当你创建操作数据库中的数据的应用程序时，就执行了如定义连接字符串、插入数据以及运行存储过程等基本任务。 通过按照本主题，你将了解如何与数据库从简单 Windows 窗体"forms over data"应用程序中使用视觉对象进行交互C#或 Visual Basic 和 ADO.NET。  所有.NET 数据技术，包括数据集，LINQ to SQL 和实体框架 — 最终执行非常类似于本文中所示的步骤。
 
 本文演示了一种快速的方式获取数据，这个数据库的简单方法。 如果你的应用程序需要修改重要的方法中的数据并更新数据库，则应考虑使用实体框架和使用数据绑定，以自动同步到基础数据中的更改的用户界面控件。
 
 > [!IMPORTANT]
-> 若要使代码保持简单，但不包括生产就绪的异常处理。
+> 要使代码保持简单，请不要包括生产就绪的异常处理。
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -37,7 +37,7 @@ ms.locfileid: "49891006"
 
 -   SQL Server Express LocalDB。 如果你没有 SQL Server Express LocalDB，您可以从中进行安装[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)。
 
-本主题假定你熟悉 Visual Studio IDE 的基本功能和可以创建 Windows 窗体应用程序，将添加到项目中，将按钮和窗体上的其他控件的窗体设置控件和代码简单事件的属性。 如果您不熟悉这些任务，我们建议你先完成[开始使用 Visual C# 和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)主题之前在开始本演练。
+本主题假定你熟悉 Visual Studio IDE 的基本功能和可以创建 Windows 窗体应用程序，将添加到项目中，将按钮和窗体上的其他控件的窗体设置控件和代码简单事件的属性。 如果您不熟悉这些任务，我们建议你先完成[开始使用 VisualC#和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)主题之前在开始本演练。
 
 ## <a name="set-up-the-sample-database"></a>设置示例数据库
 
@@ -61,19 +61,19 @@ ms.locfileid: "49891006"
 
 7. 将 T-SQL 脚本粘贴到查询编辑器，然后选择**Execute**按钮。
 
-     后不久，查询完成运行并创建数据库对象。 数据库包含两个表： 客户和订单。 这些表最初不包含数据，但在运行，您将创建的应用程序时，您可以添加数据。 数据库还包含四个简单的存储的过程。
+     后不久，查询完成运行并创建数据库对象。 数据库包含两个表：客户和订单。 这些表最初不包含数据，但在运行，您将创建的应用程序时，您可以添加数据。 数据库还包含四个简单的存储的过程。
 
 ## <a name="create-the-forms-and-add-controls"></a>创建窗体并添加控件
 
-1. 为 Windows 窗体应用程序，创建一个项目，然后将其命名**SimpleDataApp**。
+1. 创建 Windows 窗体应用程序项目，然后将其命名为“SimpleDataApp”。
 
-    Visual Studio 创建项目和多个文件，其中包括名为一个空 Windows 窗体**Form1**。
+    Visual Studio 将创建项目以及若干个文件，其中包括名为“Form1”的空 Windows 窗体。
 
-2. 将两个 Windows 窗体添加到你的项目，以使其具有三种形式，然后为他们提供以下名称：
+2. 添加两个 Windows 窗体到项目中，以使其具有三个窗体，然后给予它们下列名称：
 
    -   **导航**
 
-   -   **新的客户**
+   -   **NewCustomer**
 
    -   **FillOrCancel**
 
@@ -126,7 +126,7 @@ ms.locfileid: "49891006"
 
  可以通过右键单击在上找到的连接字符串**销售**中的数据连接**服务器资源管理器**，然后选择**属性**。 找到**ConnectionString**属性，然后使用**Ctrl**+**一个**， **Ctrl**+**C**选择并将字符串复制到剪贴板。
 
-1.  如果正在使用 C# 中，在**解决方案资源管理器**，展开**属性**节点在项目下，和然后打开**Settings.settings**文件。
+1.  如果您使用的C#，请在**解决方案资源管理器**，展开**属性**节点，在项目下，和然后打开**Settings.settings**文件。
     如果在使用 Visual Basic**解决方案资源管理器**，单击**显示所有文件**，展开**我的项目**节点，然后再打开**Settings.settings**文件。
 
 2.  在中**名称**列中，输入`connString`。
@@ -146,11 +146,11 @@ ms.locfileid: "49891006"
 
 ### <a name="navigation-form"></a>Navigation 窗体
 
-运行应用程序时，Navigation 窗体将打开。 **添加帐户**按钮可以打开 NewCustomer 窗体。 **填写或取消订单**按钮可以打开 FillOrCancel 窗体。 **退出**按钮可以关闭该应用程序。
+运行应用程序时，Navigation 窗体将打开。 按“添加帐户”按钮可以打开 NewCustomer 窗体。 按“填写或取消订单”按钮可以打开 FillOrCancel 窗体。 按“退出”按钮可以关闭应用程序。
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>使 Navigation 窗体成为启动窗体
 
-如果正在使用 C# 中，在**解决方案资源管理器**，打开**Program.cs**，然后将更改`Application.Run`这样的代码行： `Application.Run(new Navigation());`
+如果使用 C#，则在“解决方案资源管理器”中，打开 Program.cs，然后将 `Application.Run` 行更改为 `Application.Run(new Navigation());`
 
 如果在使用 Visual Basic**解决方案资源管理器**，打开**属性**窗口中，选择**应用程序**选项卡，然后选择**SimpleDataApp.Navigation**中**启动窗体**列表。
 
@@ -231,7 +231,7 @@ FillOrCancel 窗体将运行查询时要返回订单输入订单 ID，然后单�
 
 ## <a name="test-your-application"></a>测试应用程序
 
-选择**F5**键生成并测试应用程序后代码单击每个事件处理程序，，然后在完成编码。
+在对每个 Click 事件处理程序进行编码且完成编码后，请按 F5 键以生成并测试应用程序。
 
 ## <a name="see-also"></a>请参阅
 

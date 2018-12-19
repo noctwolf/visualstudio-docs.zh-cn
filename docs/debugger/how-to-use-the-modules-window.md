@@ -1,6 +1,7 @@
 ---
-title: 在模块窗口中查看 Dll 和可执行文件 |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 查看 Dll 和可执行文件
+titleSuffix: Visual Studio Modules window
+ms.custom: seodec18
 ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -25,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33a09fe01157e0e3f5493568437c1499f2831bdb
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257285"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066777"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在模块窗口中查看 Dll 和可执行文件 (C#，c + +、 Visual Basic 中， F#)
  
@@ -43,13 +44,13 @@ Visual Studio 在调试期间，**模块**窗口列出并显示有关的 Dll 和
 
 若要打开模块窗口中，在进行调试时，请选择**调试** > **Windows** > **模块**。 
   
-默认情况下**模块**窗口按加载顺序对模块进行排序。 若要按任何窗口列排序，请选择顶部的列的标头。  
+默认情况下，“模块”窗口按加载顺序对模块进行排序。 若要按任何窗口列排序，请选择顶部的列的标头。  
   
 ## <a name="load-symbols"></a>加载符号  
 
 **符号状态**中的列**模块**窗口将显示哪些模块加载了调试符号。 如果状态为**已跳过加载符号**，**无法找到或打开 PDB 文件**，或**包括/排除设置已禁用加载**，可以手动加载符号。 有关加载和使用符号的详细信息，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
-**若要手动加载符号：**  
+**手动加载符号：**  
 
 1. 在中**模块**窗口中，右击尚未加载的模块的符号。 
    
@@ -63,7 +64,7 @@ Visual Studio 在调试期间，**模块**窗口列出并显示有关的 Dll 和
 
 **若要更改符号加载行为设置：**  
 
-1. 在中**模块**窗口中，右键单击任何模块。  
+1. 在“模块”窗口中右键单击任一模块。  
    
 1. 选择**符号设置**。  
   
@@ -73,11 +74,11 @@ Visual Studio 在调试期间，**模块**窗口列出并显示有关的 Dll 和
   
 **若要更改符号加载为特定模块的行为：**  
 
-1.  在中**模块**窗口中，右键单击模块。  
+1.  在“模块”窗口中右键单击所需模块。  
 
 1.  右键单击菜单中，选择或取消选择**始终自动加载**。 在下一个调试会话中，更改才会生效。  
   
 ## <a name="see-also"></a>请参阅  
  [中断执行](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
  [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)   
- [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [指定符号 (.pdb) 文件和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

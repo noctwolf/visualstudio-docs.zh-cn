@@ -1,6 +1,6 @@
 ---
-title: 如何： 启用和禁用编辑并继续 (C#，VB、 c + +) |Microsoft Docs
-ms.custom: ''
+title: 如何：启用和禁用编辑并继续 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -27,16 +27,16 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: f0bf354f64be9c03a64beadcffdd7ff1138218df
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: 0b5fbc7ee0f2d85c72ccda75bc2e8531419d52e3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382736"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051382"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何： 启用和禁用编辑并继续 (C#，VB、 c + +)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何：启用和禁用编辑并继续 (C#，VB、 c + +)
 
-您可以禁用或启用**编辑并继续**在 Visual Studio**选项**在设计时对话框。 **编辑并继续**生成仅在调试中的工作原理。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。 
+您可以禁用或启用**编辑并继续**在 Visual Studio**选项**在设计时对话框。 “编辑并继续”仅在调试版本中起作用。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。 
   
 本机 c + +**编辑并继续**需要使用`/INCREMENTAL`选项。 有关 c + + 中的功能要求的详细信息，请参阅此[博客文章](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)并[编辑并继续 （Visual c + +）](../debugger/edit-and-continue-visual-cpp.md)。
   
@@ -50,11 +50,11 @@ ms.locfileid: "49382736"
     >  如果启用了 IntelliTrace 并且收集 IntelliTrace 事件和调用信息，则会禁用“编辑并继续”。 有关详细信息，请参阅[IntelliTrace](../debugger/intellitrace.md)。
     
 1.  对于 c + + 代码，请确保**启用本机编辑并继续**选择，并设置其他选项：
-    - **将更改应用在继续 （仅限本机）**  
+    - **继续应用更改（仅限本机）**  
       
       如果选中，Visual Studio 将自动编译并继续调试从中断状态时应用代码更改。 否则，你可以选择将应用使用的更改**调试** > **应用代码更改**。  
       
-    - **就陈旧的代码 （仅限本机），则发出警告**  
+    - **警告过时代码（仅限本机）**  
       
       如果选择，提供了关于陈旧代码警告。 
   

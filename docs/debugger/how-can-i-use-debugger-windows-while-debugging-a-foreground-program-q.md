@@ -1,6 +1,6 @@
 ---
-title: 调试前台程序时如何使用调试器窗口？ | Microsoft Docs
-ms.custom: ''
+title: 调试前台应用程序时使用调试器窗口 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26654d13053c963ad86d46bee5a6fe6ed0d4d85d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6497a2a21c85e7889b3b6538dace0f8c22f24944
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473048"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063763"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>调试前台程序时如何使用调试器窗口？
 ## <a name="problem-description"></a>问题描述  
@@ -38,5 +38,5 @@ ms.locfileid: "31473048"
  如果有另一台计算机，则可以使用远程调试。 通过两台计算机的设置，当在主机上运行调试器时，可以监视远程计算机上的屏幕绘制。 有关远程调试的详细信息，请参阅[远程调试](../debugger/remote-debugging.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [调试本机代码常见问题](../debugger/debugging-native-code-faqs.md)   
+ [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)   
  [调试本机代码](../debugger/debugging-native-code.md)

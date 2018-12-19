@@ -1,6 +1,6 @@
 ---
-title: 调试器不能显示源代码或反汇编 |Microsoft 文档
-ms.custom: ''
+title: 调试器不能显示源代码或反汇编
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 313a0e9e5727d776eaeb13f1c4cef8cf3d8d3bb9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ea95a2bb4c29f8a23fd597173a10a838baca051c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472693"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063961"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>调试器不能显示源代码或反汇编
 此错误显示如下：  
@@ -33,10 +33,10 @@ ms.locfileid: "31472693"
   
 -   可能在调试不支持汇编的语言时在无源代码的位置命中了某个断点。 打开**断点**窗口中，找到所需断点，并将其删除。  
   
--   如果正在调试脚本，则可能在程序中无线程时命中了某个断点。 选择**步骤**或**继续**从**调试**菜单以继续进行调试。  
+-   如果正在调试脚本，则可能在程序中无线程时命中了某个断点。 从“调试”菜单中选择“单步执行”或“继续”以继续进行调试。  
   
 -   出于安全考虑，可能禁止调试器从在调试的程序中读取堆栈、线程和其他上下文信息。 如果正在调试 Web 应用程序，且没有访问虚拟内存的正确权限，则这种情况最可能发生。 将虚拟目录的安全设置为 Anonymous 并再次尝试。  
   
 ## <a name="see-also"></a>请参阅  
- [在 Visual Studio 中调试](../debugger/index.md)[调试器功能教程](../debugger/debugger-feature-tour.md)   
+ [在 Visual Studio 中调试](../debugger/index.md)[调试器功能简介](../debugger/debugger-feature-tour.md)   
  [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)

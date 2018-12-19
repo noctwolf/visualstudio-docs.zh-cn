@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用正则表达式 | Microsoft Docs
+title: 使用正则表达式
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -24,16 +24,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0cf59b1061b6312a1c2881ff4dccdf03e5c502b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906710"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059426"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio 使用.NET Framework 正则表达式来查找和替换文本。 有关 .NET 正则表达式的详细信息，请参阅 [.NET Framework 正则表达式](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d)。
+Visual Studio 使用 .NET Framework 正则表达式来查找和替换文本。 有关 .NET 正则表达式的详细信息，请参阅 [.NET Framework 正则表达式](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d)。
 
 在 Visual Studio 2012 之前，Visual Studio 在查找和替换窗口中使用自定义的正则表达式语法。 请参阅 [Visual Studio 正则表达式转换](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx)，了解如何将一些比较常用的自定义正则表达式符号转换为 .NET 版本。
 
@@ -41,7 +41,7 @@ Visual Studio 使用.NET Framework 正则表达式来查找和替换文本。 �
 > 在 Windows 操作系统中，大多数行以“\r\n”（回车符后跟新行）结束。 这些字符不可见，但在编辑器中存在并传递给 .NET 正则表达式服务。
 
 > [!TIP]
-> 有关在替换模式中使用的正则表达式的信息，请参阅[替换](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)。 若要使用已编号的捕获组，语法是 `$1`用于指定编号组）和 `(x)`（指定相关组）。 例如，已分组的正则表达式 `(\d)([a-z])` 在以下字符串中查找四个匹配项：**1a 2b 3c 4d**。 替换字符串 `z$1` 将该字符串转换为 **z1 z2 z3 z4**。
+> 有关在替换模式中使用的正则表达式的信息，请参阅[替换](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)。 若要使用已编号的捕获组，语法是 `$1`用于指定编号组）和 `(x)`（指定相关组）。 例如，已分组的正则表达式`(\d)([a-z])`以下字符串中查找四个匹配项：**1a 2b 3c 4d**。 替换字符串 `z$1` 将该字符串转换为 **z1 z2 z3 z4**。
 
 ## <a name="regular-expression-examples"></a>正则表达式示例
 
@@ -52,7 +52,7 @@ Visual Studio 使用.NET Framework 正则表达式来查找和替换文本。 �
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                                                                                  与任何单个字符匹配（换行符除外）。                                                                                                   |                                                         .                                                          |                                     `a.o` 匹配“around”中的“aro”及“about”中的“abo”，但不匹配“across”中的“acro”。                                      |
 |                                                                          零次或多次匹配前面的表达式（匹配尽可能多的字符）                                                                          |                                                         \*                                                         |                                            `a*r` 匹配“rack”中的“r”，“ark”中的“ar”和“aardvark”中的“aar”                                            |
-|                                                                                                零次或多次匹配任何字符 (通配符\*)                                                                                                 |                                                        .\*                                                         |                                        c.\*e 匹配"racket"中的"cke"，"comment"中的"comme"和"code"中的"代码"                                        |
+|                                                                                                零次或多次匹配任何字符（通配符 \*）                                                                                                 |                                                        .\*                                                         |                                        c.\*e 匹配“racket”中的“cke”，“comment”中的“comme”和“code”中的“code”                                        |
 |                                                                          一次或多次匹配前面的表达式（匹配尽可能多的字符）                                                                           |                                                         +                                                          |                                                      `e.+e` 匹配“feeder”中的“eede”，而不是“ee”。                                                      |
 |                                                                                                 一次或多次匹配任意字符（通配符 ?）                                                                                                  |                                                         .+                                                         |                                                       e.+e 匹配“feeder”中的“eede”，而不是“ee”。                                                       |
 |                                                                          零次或多次匹配前面的表达式（匹配尽可能多的字符）                                                                           |                                                        \*?                                                         |                                                     `e.*?e` 匹配“feeder”中的“ee”，而不是“eede”。                                                      |
@@ -78,4 +78,3 @@ Visual Studio 使用.NET Framework 正则表达式来查找和替换文本。 �
 |                                                                                                            与引号中的字符串匹配                                                                                                             |                                             ((\\".+?\\")&#124;('.+?'))                                             |                                                    匹配单引号或双引号内的任意字符串。                                                     |
 |                                                                                                             匹配十六进制数                                                                                                              |                                              \b0[xX]([0-9a-fA-F]\)\b                                               |                                                          匹配“0xc67f”但不匹配“0xc67fc67f”。                                                           |
 |                                                                                                             匹配整数和小数                                                                                                             |                                               \b[0-9]\*\\。\*[0-9] + \b                                               |                                                                     匹配“1.333”。                                                                      |
-
