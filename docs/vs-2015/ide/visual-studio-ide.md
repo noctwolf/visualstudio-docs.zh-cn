@@ -1,6 +1,6 @@
 ---
-title: Visual Studio IDE | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 2015 |Microsoft Docs
+titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
@@ -12,26 +12,26 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852708"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062478"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Microsoft Visual Studio 2015 是一套用于创建软件的工具，包括通过 UI 设计的规划阶段、编码、测试、调试、分析代码质量和性能、部署到用户以及收集使用的遥测。 这些工具旨在尽可能地无缝协同工作，并都通过 Visual Studio 集成开发环境 (IDE) 公开。
 
-可使用 Visual Studio 创建很多类型的应用程序，从移动客户端的简单应用商店应用和游戏到电力企业和数据中心的大型复杂系统均可实现。 你可以创建：
+可使用 Visual Studio 创建很多类型的应用程序，从移动客户端的简单应用商店应用和游戏到电力企业和数据中心的大型复杂系统均可实现。 可以创建：
 
-- 应用程序和游戏，不仅运行 Windows，但还 Android 和 iOS。
+- 同时可在 Windows 上以及 Android 和 iOS 上运行的应用和游戏。
 
-- 基于 ASP.NET、 JQuery、 AngularJS 和其他常用框架的网站和 web 服务。
+- 基于 ASP.NET、JQuery、AngularJS 和其他常用框架的网站和 Web 服务。
 
-- 有关为 Azure、 Office、 Sharepoint、 Hololens、 Kinect 和 Internet of Things 等来命名的几个示例为众多平台和设备的应用程序。
+- 适用于众多平台和设备（如 Azure、Office、Sharepoint、Hololens、Kinect 和物联网等）的应用程序。
 
-- 游戏和图形密集型应用程序的各种 Windows 设备，包括 Xbox、 使用 DirectX。
+- 适用于各种使用 DirectX 的 Windows 设备（包括 Xbox）的游戏和图形密集型应用程序。
 
 默认情况下，Visual Studio 支持 C#、C 和 C++、JavaScript、F# 以及 Visual Basic。 Visual Studio 可与 Unity（通过 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 扩展）和 Apache Cordova（通过 [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)）等第三方应用程序配合使用和完美集成。 可通过创建执行专门任务的自定义工具自行扩展 Visual Studio。
 
@@ -42,7 +42,7 @@ Microsoft Visual Studio 2015 是一套用于创建软件的工具，包括通过
 ## <a name="visual-studio-setup"></a>Visual Studio 安装
  你可以在 [Visual Studio 版本](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs)了解哪个版本的 Visual Studio 最适合你。
 
- 可以通过从 [Visual Studio 下载](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)页面下载安装 Visual Studio 2015。 如果您需要了解有关安装过程的详细信息，请参阅[安装 Visual Studio 2015](../install/install-visual-studio-2015.md)。
+ 可以通过从 [Visual Studio 下载](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx)页面下载安装 Visual Studio 2015。 如需了解有关安装过程的详细信息，请参阅[安装 Visual Studo 2015](../install/install-visual-studio-2015.md)。
 
 ## <a name="ide-basics"></a>IDE 基础
  下图显示了具有打开项目的 Visual Studio IDE、用于在项目文件中导航的“解决方案资源管理器”窗口以及用于导航源控件和工作项跟踪的“团队资源管理器”窗口。 下面详细介绍了标题栏中调出的功能。
@@ -62,7 +62,7 @@ Microsoft Visual Studio 2015 是一套用于创建软件的工具，包括通过
 
  ![“新建项目”的快速启动结果](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
- MSDN 是提供技术文档的 Microsoft 网站；现在正在 MSDN 中阅读此页！ 在 Visual Studio 中，可以按 **F1** 转到活动窗口的 MSDN 帮助页。 还可以在代码编辑器中按 **F1** 转到 API 或当前插入符号位置处关键字的 MSDN 帮助页。 例如，在 C# 文件中，将插入符号中的某处或末尾处只`System.String`声明，然后按**F1**转到 MSDN 帮助页<xref:System.String>。
+ MSDN 是提供技术文档的 Microsoft 网站；现在正在 MSDN 中阅读此页！ 在 Visual Studio 中，可以按 **F1** 转到活动窗口的 MSDN 帮助页。 还可以在代码编辑器中按 **F1** 转到 API 或当前插入符号位置处关键字的 MSDN 帮助页。 例如，在 C# 文件中，将插入符号放置在 `System.String` 声明内的某处或末尾，然后按 F1 转到 <xref:System.String> 的 MSDN 帮助页。
 
 ### <a name="giving-feedback"></a>提供反馈
  可随时向我们提供对 Visual Studio 的反馈，操作简单便捷。 单击“快速启动”旁标题栏中的反馈图标  ，然后单击“报告问题”  或“提供建议” 。 Visual Studio 的预发行版本还具有“评价此产品”  选项。 我们会查看所有这些评论，并利用它们来改进产品。 有关详细信息，请参阅 [Talk to Us](../ide/talk-to-us.md)。
@@ -114,7 +114,7 @@ Microsoft Visual Studio 2015 是一套用于创建软件的工具，包括通过
 
  ![在代码编辑器中的 GreetingsConsoleApp.cpp](../ide/media/c-ide-editorlinenumberswordwrapon.png "C + + IDE_EditorLineNumbersWordWrapOn")
 
- 文本编辑器可实现高度交互（如果你希望如此），具有很多工作效率功能，可帮助更好更快地编写代码。 功能因语言而异，并且不必使用以上任意语言（在“快速启动”中键入“Editor”）来打开或关闭功能。一些常见的工作效率功能为：
+ 文本编辑器可实现高度交互（如果你希望如此），具有很多工作效率功能，可帮助更好更快地编写代码。 功能因语言，且无需使用任何这些 （类型为"编辑器"的快速启动） 来打开或关闭功能：下面是一些常见的工作效率功能：
 
 1. [Refactoring](../ide/refactoring-in-visual-studio.md) 包括智能重命名变量、移动选定的代码行到单独的函数、移动代码到其他位置、重新排序函数参数以及更多操作。
 
@@ -146,7 +146,7 @@ Microsoft Visual Studio 2015 是一套用于创建软件的工具，包括通过
 
 生成项目是指编译源代码并执行生成可执行文件所必需的任何步骤。 不同语言具有不同的生成操作，而常规网站根本不生成。 无论是何种项目类型，“生成”菜单都是这些命令的标准位置。 若要编译代码并通过单个击键运行，请按 F5。 每个编译器都可通过 IDE 完全配置。 “生成”工具栏可指定是生成程序的调试版本（启用符号和额外错误检查以支持调试器中的断点和单步执行），还是生成将最终呈现给客户的发布版本。 可在项目的属性页中配置其他生成设置和许多其他设置。 右键单击“解决方案资源管理器”中的项目节点，并选择“属性”。 还可以从命令行运行生成。
 
-该生成，包括错误或成功消息，输出将显示在**输出**窗口。 **错误列表**显示有关生成错误的详细的信息。
+生成输出（包括错误或成功消息）显示在“输出”窗口中。 **错误列表**显示有关生成错误的详细的信息。
 
 ## <a name="debugging-your-code"></a>调试代码
  使用 Visual Studio 的先进调试器，可以调试在本地项目、远程设备或仿真程序（例如 Android 或 Windows Phone 的仿真程序）上运行的代码。 可以一次一个语句逐行执行代码并随时检查变量，可以逐行执行多个线程应用程序，还可以设置只在特定条件为“真”时才命中的断点。 上述所有操作均可在代码编辑器中配置，因此无需离开代码的上下文。
@@ -204,12 +204,12 @@ Microsoft Visual Studio 2015 是一套用于创建软件的工具，包括通过
 |[编译和生成](../ide/compiling-and-building-in-visual-studio.md)|[部署应用程序、服务和组件](../deployment/deploying-applications-services-and-components.md)|
 |[Visual Studio IDE 64 位支持](../ide/visual-studio-ide-64-bit-support.md)|[安全性](../ide/security-in-visual-studio.md)|
 |[Visual Studio 示例](../ide/visual-studio-samples.md)|[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)|
-|[对应用程序进行全球化和本地化](../ide/globalizing-and-localizing-applications.md)|[用户界面参考](../ide/reference/general-user-interface-elements-visual-studio.md)|
+|[对应用程序进行全球化和本地化](../ide/globalizing-and-localizing-applications.md)|[UI 参考](../ide/reference/general-user-interface-elements-visual-studio.md)|
 
 ## <a name="see-also"></a>请参阅
 
 - [安装 Visual Studio 2015](../install/install-visual-studio-2015.md)
-- [编辑您的代码](https://www.visualstudio.com/features/ide-vs)
+- [编辑代码](https://www.visualstudio.com/features/ide-vs)
 - [Visual Studio 2015 中的新增功能](../what-s-new-in-visual-studio-2015.md)
 - [移植、迁移和升级 Visual Studio 项目](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 - [与我们交流](../ide/talk-to-us.md)

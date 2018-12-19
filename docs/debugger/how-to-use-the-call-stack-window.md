@@ -1,6 +1,6 @@
 ---
-title: 在 Visual Studio 调试器中查看调用堆栈 |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 在调试器中查看调用堆栈 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/29/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -30,16 +30,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7804ed478fc218d1e218af6e26f5ee91071fb29c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: fe3b266ee44b326749ed555df77dee66b8e82aae
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388020"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062346"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>查看调用堆栈，并使用调试器中的调用堆栈窗口
 
-使用“调用堆栈”**窗口可以查看当前堆栈上的函数或过程调用。 “调用堆栈”窗口显示方法和函数被调用的顺序。 调用堆栈是检查和理解应用执行流的好方法。
+使用“调用堆栈”窗口可以查看当前堆栈上的函数或过程调用。 “调用堆栈”窗口显示方法和函数被调用的顺序。 调用堆栈是检查和理解应用执行流的好方法。
 
 当[调试符号](#bkmk_symbols)不可用的一部分调用堆栈**调用堆栈**窗口可能不能显示那部分调用堆栈，改为显示正确的信息：
 
@@ -49,7 +49,7 @@ ms.locfileid: "52388020"
 > “调用堆栈”窗口类似于某些 IDE（如 Eclipse）中的调试透视图。
 
 > [!NOTE]
-> 显示的对话框和菜单命令可能与此处的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请在“工具”**菜单上选择“导入和导出设置”**。  请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
+> 显示的对话框和菜单命令可能与此处的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。  请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
 
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>查看调试器中的调用堆栈
 
@@ -61,7 +61,7 @@ ms.locfileid: "52388020"
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>在调用堆栈窗口中显示非用户代码
 
--   右击“调用堆栈”**窗口，然后选择“显示外部代码”**。
+-   右键单击“调用堆栈”窗口，然后选择“显示外部代码”。
 
 非用户代码是时不显示任何代码[仅我的代码](../debugger/just-my-code.md)已启用。 在托管代码中，默认情况下隐藏非用户代码帧。 非用户代码帧代替出现以下表示法：
 
@@ -73,13 +73,13 @@ ms.locfileid: "52388020"
 
     或者，可以双击中的帧**调用堆栈**窗口切换到该框架。
 
-2.  选择“切换到帧”**。
+2.  选择“切换到帧”。
 
-     所选的堆栈帧旁边会显示一个带有卷尾的绿色箭头。 执行指针保留在原始帧中，仍然用黄色箭头标记。 如果从“调试”**菜单中选择“单步执行”** 或“继续”**，执行将继续在原始帧中进行，而不是在选定的帧中进行。
+     所选的堆栈帧旁边会显示一个带有卷尾的绿色箭头。 执行指针保留在原始帧中，仍然用黄色箭头标记。 如果从“调试”菜单中选择“单步执行”或“继续”，执行将继续在原始帧中进行，而不是在选定的帧中进行。
 
 ## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>查看调用堆栈上的一个函数的源代码
 
--   在“调用堆栈”**窗口中，右击要查看其源代码的函数，然后选择“转到源代码”**。
+-   在“调用堆栈”窗口中，右键单击要查看其源代码的函数，然后选择“转到源代码”。
 
 ## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>从调用堆栈窗口运行到特定函数
 
@@ -91,13 +91,13 @@ ms.locfileid: "52388020"
 
 ## <a name="display-calls-to-or-from-another-thread"></a>显示调用到或从另一个线程
 
--   右击“调用堆栈”**窗口，然后选择“包括对其他线程和来自其他线程的调用”**。
+-   右键单击“调用堆栈”窗口，然后选择“包括对其他线程和来自其他线程的调用”。
 
 ## <a name="visually-trace-the-call-stack"></a>直观地跟踪调用堆栈
 
 在 Visual Studio Enterprise （仅限），可以在调试时查看调用堆栈代码图。
 
-- 在“调用堆栈”**窗口中，打开快捷菜单。 选择**在代码图上显示调用堆栈**(**Ctrl** + **Shift** + **`**)。
+- 在“调用堆栈”窗口中，打开快捷菜单。 选择**在代码图上显示调用堆栈**(**Ctrl** + **Shift** + **`**)。
 
     有关详细信息，请参阅[调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。
 
@@ -105,7 +105,7 @@ ms.locfileid: "52388020"
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>查看调用堆栈上的一个函数的反汇编代码 (C#，c + +、 Visual Basic 中， F#)
 
--   在“调用堆栈”**窗口中，右击要查看其反汇编代码的函数，然后选择“转到反汇编”**。
+-   在“调用堆栈”窗口中，右键单击要查看其反汇编代码的函数，然后选择“转到反汇编”。
 
 ## <a name="change-the-optional-information-displayed"></a>更改显示的可选信息
 
@@ -113,7 +113,7 @@ ms.locfileid: "52388020"
 
 ## <a name="bkmk_symbols"></a> 加载模块的符号 (C#，c + +、 Visual Basic 中， F#)
 
-在“调用堆栈”**窗口中，可以为当前还未加载符号的代码加载调试符号。 这些符号可以是从 Microsoft 公共符号服务器下载的 .NET Framework 符号或系统符号，也可以是正在调试的计算机上的某个符号路径中的符号。
+在“调用堆栈”窗口中，可以为当前还未加载符号的代码加载调试符号。 这些符号可以是从 Microsoft 公共符号服务器下载的 .NET Framework 符号或系统符号，也可以是正在调试的计算机上的某个符号路径中的符号。
 
 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
@@ -125,15 +125,15 @@ ms.locfileid: "52388020"
 
 ### <a name="to-set-the-symbol-path"></a>设置符号路径
 
-1.  在“调用堆栈”**窗口中，从快捷菜单中选择“符号设置”**。
+1.  在“调用堆栈”窗口中，从快捷菜单中选择“符号设置”。
 
-     将打开“选项”**对话框并显示“符号”** 页。
+     “选项”对话框随即打开并显示“符号”页。
 
 2.  选择**符号设置**。
 
-3.  在“选项”**对话框中单击“文件夹”图标。
+3.  在“选项”对话框中单击“文件夹”图标。
 
-     在“符号文件(.pdb)位置”**框中将出现一个光标。
+     “符号文件(.pdb)位置”框中随即出现一个光标。
 
 4.  正在调试的计算机上输入符号位置的目录路径名。 对于本地和远程调试，这是在本地计算机上的路径。
 
@@ -143,5 +143,5 @@ ms.locfileid: "52388020"
 
 - [“调用堆栈”窗口中的混合代码与丢失信息](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)
 - [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)
-- [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [指定符号 (.pdb) 文件和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [使用断点](../debugger/using-breakpoints.md)

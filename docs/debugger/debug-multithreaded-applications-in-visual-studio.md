@@ -1,6 +1,6 @@
 ---
-title: 调试 Visual Studio 中的多线程应用程序 |Microsoft Docs
-ms.custom: ''
+title: 调试多线程应用程序 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/06/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 599880f3c8e04b742ab943304ac910f8c0bcbe78
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 7ea1af90ae775ed24f5cceabeca04cdc901f545f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349525"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059673"
 ---
-# <a name="debug-multithreaded-applications-in-visual-studio"></a>调试 Visual Studio 中的多线程应用程序
+# <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中调试多线程应用程序
 线程是操作系统向其授予处理器时间的指令序列。 在操作系统中运行的每个进程都包含至少一个线程。 包含多个线程的进程称为多线程。  
   
 具有多个处理器、 多核处理器或超线程进程的计算机可以运行多个并发线程。 并行处理使用多个线程可以极大地提高程序性能，但它还会使调试更加困难因为跟踪多个线程。  
@@ -41,11 +41,11 @@ ms.locfileid: "51349525"
 
 Visual Studio 提供用于在调试多线程应用程序中使用不同的工具。
 
-- 对于线程，用于调试线程的主要工具是**线程**窗口中，源窗口中的线程标记**并行堆栈**窗口中，**并行监视**窗口中，并**调试位置**工具栏。 若要了解如何**线程**窗口和**调试位置**工具栏中，请参阅[演练： 使用线程窗口进行调试](../debugger/how-to-use-the-threads-window.md)。 若要了解如何使用**并行堆栈**并**并行监视**windows，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。 这两个主题显示如何使用线程标记。
+- 对于线程，用于调试线程的主要工具是**线程**窗口中，源窗口中的线程标记**并行堆栈**窗口中，**并行监视**窗口中，并**调试位置**工具栏。 若要了解如何**线程**窗口和**调试位置**工具栏中，请参阅[演练：使用线程窗口进行调试](../debugger/how-to-use-the-threads-window.md)。 若要了解如何使用**并行堆栈**并**并行监视**windows，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。 这两个主题显示如何使用线程标记。
   
-- 使用的代码[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[并发运行时](/cpp/parallel/concrt/concurrency-runtime/)，用于调试的主要工具是**并行堆栈**窗口中， **并行监视**窗口中，并**任务**窗口中，它还支持 JavaScript。 若要开始，请参阅[演练： 调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)并[演练： 调试 c + + AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)。 
+- 使用的代码[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[并发运行时](/cpp/parallel/concrt/concurrency-runtime/)，用于调试的主要工具是**并行堆栈**窗口中， **并行监视**窗口中，并**任务**窗口中，它还支持 JavaScript。 若要开始，请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)和[演练：调试 c + + AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)。 
 
-- 主要工具是用于调试在 GPU 上的线程， **GPU 线程**窗口。 请参阅[如何： 使用 GPU 线程窗口](../debugger/how-to-use-the-gpu-threads-window.md)。  
+- 主要工具是用于调试在 GPU 上的线程， **GPU 线程**窗口。 请参阅[如何：使用 GPU 线程窗口](../debugger/how-to-use-the-gpu-threads-window.md)。  
 
 - 主要工具是执行过程，这**附加到进程**对话框中，**进程**窗口中，并且**调试位置**工具栏。  
   
@@ -64,7 +64,7 @@ Visual Studio 还提供功能强大的断点和跟踪点，在调试多线程应
  [调试多个进程](../debugger/debug-multiple-processes.md)  
  说明如何调试多个进程。
 
- [演练： 使用线程窗口进行调试](../debugger/how-to-use-the-threads-window.md)。  
+ [演练：使用线程窗口进行调试](../debugger/how-to-use-the-threads-window.md)。  
  演示如何使用的演练**线程**窗口和**调试位置**工具栏。 
 
  [演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)  
@@ -76,23 +76,23 @@ Visual Studio 还提供功能强大的断点和跟踪点，在调试多线程应
  [如何：标记线程和取消标记线程](../debugger/how-to-flag-and-unflag-threads.md)  
  在调试过程中，标记要格外关注的线程，或为其设置标志。    
   
- [如何： 在高性能群集上进行调试](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
+ [如何：在高性能群集上进行调试](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
  对运行于高性能群集上的应用程序进行调试的技术。  
 
  [调试本机代码中的线程时的提示](../debugger/tips-for-debugging-threads-in-native-code.md)  
  对于调试本机线程十分有用的简单技术。 
 
  [如何：在本机代码中设置线程名称](../debugger/how-to-set-a-thread-name-in-native-code.md)  
- 为你的线程在中查看的命名**线程**窗口。  
+ 为在“线程”窗口中查看的线程提供一个名称。  
   
  [如何：在托管代码中设置线程名称](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
- 为你的线程在中查看的命名**线程**窗口。 
+ 为在“线程”窗口中查看的线程提供一个名称。 
   
 ## <a name="see-also"></a>请参阅  
 
 [使用断点](../debugger/using-breakpoints.md)  
 [线程处理](/dotnet/standard/threading/index)  
-[在组件中的多线程处理](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
-[针对旧代码 （Visual c + +） 的多线程处理支持](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
+[组件中的多线程处理](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+[针对旧代码的多线程支持 (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
  [调试线程和进程](../debugger/debug-threads-and-processes.md)   
  [远程调试](../debugger/remote-debugging.md)
