@@ -1,5 +1,5 @@
 ---
-title: 如何：从 Visual Studio 的储存库中删除负载测试结果
+title: 如何：从存储库删除负载测试结果
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b76e9b79e32ce8c7adf3fb9082e21f25406f7a28
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: e2a7df778ff506c76513af6e6fe926a193f6a18e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895413"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065269"
 ---
-# <a name="how-to-delete-load-test-results-from-a-repository"></a>如何：从存储库中删除负载测试结果
+# <a name="how-to-delete-load-test-results-from-a-repository"></a>如何：从存储库删除负载测试结果
 
 运行负载测试时，在运行期间收集的信息都存储到负载测试结果储存库中。 负载测试结果储存库中包含性能计数器数据和有关任何错误的信息。 有关详细信息，请参阅[管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 

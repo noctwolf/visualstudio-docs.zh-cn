@@ -1,5 +1,5 @@
 ---
-title: 适用于 Visual Studio 中负载测试运行设置的计时详细信息存储属性
+title: 适用于负载测试运行设置的计时详细信息存储属性
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e184db43fcaca96008f85daffdb9abdbc41df07b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6c82d0898f53bbe9c02126f7379d2d3a0a96fdbf
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895218"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054579"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>如何：为负载测试运行设置指定计时详细信息存储属性
 
@@ -59,7 +59,7 @@ ms.locfileid: "52895218"
 
 5.  在“结果”类别下，选择“计时详细信息存储”属性，然后选择“所有的详细信息”。
 
-     为“计时详细信息存储”属性配置“所有的详细信息”设置之后，可以运行负载测试并查看“虚拟用户活动图”。 有关详细信息，请参阅[如何：分析虚拟用户在负载测试期间的操作](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)。
+     为“计时详细信息存储”属性配置“所有的详细信息”设置之后，可以运行负载测试并查看“虚拟用户活动图”。 有关更多信息，请参见[如何：分析虚拟用户在负载测试期间的操作](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)。
 
 ## <a name="see-also"></a>请参阅
 

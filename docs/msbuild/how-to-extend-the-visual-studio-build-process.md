@@ -1,6 +1,6 @@
 ---
-title: 如何：扩展 Visual Studio 生成过程 | Microsoft Docs
-ms.custom: ''
+title: 扩展生成过程
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: msbuild
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 777c2c4ecb5ea8561a43a12f1897c2260d6638d0
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 380933a07636cddd2bc32fb45f14f9b2a65830df
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081548"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058267"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：扩展 Visual Studio 生成过程
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程由导入到项目文件中的一系列 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 文件定义。 可扩展其中一个导入文件 Microsoft.Common.targets，以便在生成过程中的几个点上运行自定义任务。 本文介绍两种可用于扩展 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程的方法：  
@@ -54,15 +54,15 @@ ms.locfileid: "39081548"
 
 下表显示 Microsoft.Common.targets 中可以安全重写的所有目标。  
   
-|目标名称|描述|  
+|目标名称|说明|  
 |-----------------|-----------------|  
-|`BeforeCompile`, `AfterCompile`|插入到这些目标之一中的任务，在完成内核编译之前或之后运行。 大多数自定义均在这两个目标之一中完成。|  
-|`BeforeBuild`, `AfterBuild`|插入到这些目标之一中的任务，在生成中所有其他任务之前或之后运行。 注意：`BeforeBuild` 和 `AfterBuild` 目标已在大多数项目文件的注释末尾定义，使你能够轻松向项目文件添加预生成和生成后事件。|  
-|`BeforeRebuild`, `AfterRebuild`|插入到这些目标之一中的任务，在调用内核重新生成功能之前或之后运行。 Microsoft.Common.targets 中的目标执行顺序是：`BeforeRebuild`、`Clean`、`Build`、`AfterRebuild`。|  
-|`BeforeClean`, `AfterClean`|插入到这些目标之一中的任务，在调用内核清理功能之前或之后运行。|  
-|`BeforePublish`, `AfterPublish`|插入到这些目标之一中的任务，在调用内核发布功能之前或之后运行。|  
-|`BeforeResolveReference`, `AfterResolveReferences`|插入到这些目标之一中的任务，在解析程序集引用之前或之后运行。|  
-|`BeforeResGen`, `AfterResGen`|插入到这些目标之一中的任务，在生成资源之前或之后运行。|  
+|`BeforeCompile`， `AfterCompile`|插入到这些目标之一中的任务，在完成内核编译之前或之后运行。 大多数自定义均在这两个目标之一中完成。|  
+|`BeforeBuild`， `AfterBuild`|插入到这些目标之一中的任务，在生成中所有其他任务之前或之后运行。 **注意：**`BeforeBuild` 和 `AfterBuild` 目标已在大多数项目文件的注释末尾定义，使你能够轻松向项目文件添加预生成和生成后事件。|  
+|`BeforeRebuild`， `AfterRebuild`|插入到这些目标之一中的任务，在调用内核重新生成功能之前或之后运行。 Microsoft.Common.targets 中的目标执行顺序是：`BeforeRebuild`、`Clean`、`Build`、`AfterRebuild`。|  
+|`BeforeClean`， `AfterClean`|插入到这些目标之一中的任务，在调用内核清理功能之前或之后运行。|  
+|`BeforePublish`， `AfterPublish`|插入到这些目标之一中的任务，在调用内核发布功能之前或之后运行。|  
+|`BeforeResolveReference`， `AfterResolveReferences`|插入到这些目标之一中的任务，在解析程序集引用之前或之后运行。|  
+|`BeforeResGen`， `AfterResGen`|插入到这些目标之一中的任务，在生成资源之前或之后运行。|  
   
 ## <a name="override-dependson-properties"></a>重写 DependsOn 属性  
  重写预定义的目标是一种用于扩展生成过程的简单方法，但由于 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 按顺序计算目标的定义，任何方法都无法阻止已导入你的项目的另一个项目重写你已重写的目标。 因此，例如，在导入所有其他项目后，会在生成过程中使用项目文件中定义的最后一个 `AfterBuild` 目标。  
@@ -118,7 +118,7 @@ ms.locfileid: "39081548"
   
 ### <a name="commonly-overridden-dependson-properties"></a>经常重写的 DependsOn 属性  
   
-|属性名称|描述|  
+|属性名称|说明|  
 |-------------------|-----------------|  
 |`BuildDependsOn`|在要在整个生成过程之前或之后插入自定义目标的情况下，要重写的属性。|  
 |`CleanDependsOn`|在要从自定义生成过程中清理输出的情况下，要重写的属性。|  

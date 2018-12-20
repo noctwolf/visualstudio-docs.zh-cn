@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用适用于 C++ 的 Microsoft Unit Testing 框架
+title: 使用适用于 C++ 的 Microsoft 单元测试框架
 ms.date: 11/15/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 53243502e0368d3cb988950edf266cc56adbaa22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 88265c1ac86b5b1c1cd90ef428c9c2c770d9f2a2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812447"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068255"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用适用于 C++ 的 Microsoft Unit Testing 框架
 
@@ -91,7 +91,7 @@ TEST_METHOD(Method1)
 
 以下预定义特征位于 `CppUnitTest.h` 中。 有关详细信息，请参阅[适用于 C++ API 参考的 Microsoft 单元测试框架](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。
 
-|宏|描述|
+|宏|说明|
 |-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|使用 TEST_METHOD_ATTRIBUTE 宏定义特性。|
 |`TEST_OWNER(ownerAlias)`|使用预定义的“所有者”特征来指定测试方法的所有者。|
@@ -100,4 +100,3 @@ TEST_METHOD(Method1)
 ## <a name="see-also"></a>请参阅
 
 - [快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)
-

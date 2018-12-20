@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Test Professional 2017 工作负载和组件 ID
+titleSuffix: ''
 description: 使用 Visual Studio 工作负载和组件 ID 为技术全面的测试人员提供集成的测试工具
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.workload:
 - multiple
-ms.openlocfilehash: 23f9ffe423da289246ef91f927f082578e2aec12
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: fa09c844d4ea0fa1b6d4c255f10af6bda4f3128c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607557"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049271"
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017 组件目录
 
@@ -43,7 +44,7 @@ ms.locfileid: "51607557"
 
 **ID：** Microsoft.VisualStudio.Workload.TestProfessional
 
-**说明：** Test Professional 面向技术全面的测试人员提供集成的测试工具，这可帮助他们促进整个测试生存期的测试需求。
+**描述：** Test Professional 面向技术全面的测试人员提供集成的测试工具，这可帮助他们促进整个测试生存期的测试需求。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 

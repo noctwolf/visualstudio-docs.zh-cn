@@ -1,5 +1,5 @@
 ---
-title: 用于项目和文件的 Visual Studio 模板
+title: 用于项目和文件的模板
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 62e51a5a03011874acc723eaf159e3f7130d1340
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 04aa647d378e956c7a2394b7c3fc2a187a7c5963
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573253"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049272"
 ---
 # <a name="project-and-item-templates"></a>项目和项模板
 
@@ -29,7 +29,7 @@ ms.locfileid: "34573253"
 
 这些模板为用户提供一个开始创建项目或扩展现有项目的起点。 项目模板提供特定项目类型所需的文件，包括标准程序集引用，并设置默认项目属性和编译器选项。 项模板的复杂程度不一，从具有某个文件扩展名的单个空文件到多个具有存根代码的源代码文件、设计器信息文件和嵌入资源等。
 
-可以使用“新建项目”和“添加新项”对话框中的已安装模板，创作自己的模板或下载并使用社区创建的模板。 有关详细信息，请参阅[如何：创建项目模板](../ide/how-to-create-project-templates.md)和[如何：创建项模板](../ide/how-to-create-item-templates.md)。
+可以使用“新建项目”和“添加新项”对话框中的已安装模板，创作自己的模板或下载并使用社区创建的模板。 有关更多信息，请参见[如何：创建项目模板](../ide/how-to-create-project-templates.md)和[如何：创建项模板](../ide/how-to-create-item-templates.md)。
 
 ## <a name="contents-of-a-template"></a>模板的内容
 

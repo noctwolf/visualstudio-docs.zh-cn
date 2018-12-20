@@ -1,5 +1,5 @@
 ---
-title: 分析 Visual Studio 中的负载测试结果
+title: 分析负载测试结果
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 91e1b3c3a094e9bb510132d9160432a868fd559c
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 4c5da35407b028d1c435c87a55f265bd22c46c3a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896440"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047624"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>如何：访问负载测试结果进行分析
 

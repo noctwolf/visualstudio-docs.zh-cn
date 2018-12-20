@@ -1,5 +1,5 @@
 ---
-title: 如何在 Visual Studio 中使用适用于 C++ 的 Google Test
+title: 如何使用适用于 C++ 的 Google Test
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: a047b7d46aa2fe325baa4fee7459bb822e3b1bea
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 704d842aaf3ea5e3075939e4d52b042a4128b810
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138628"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060386"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用适用于 C++ 的 Google Test
 在 Visual Studio 2017 版本 15.5 和更高版本中，Google Test 作为“使用 C++ 的桌面开发”工作负载的默认组件集成到 Visual Studio IDE 中。 若要验证是否在计算机上安装了它，请打开 Visual Studio 安装程序，在工作负荷组件列表下找到 Google Test：
@@ -48,13 +48,3 @@ ms.locfileid: "43138628"
 
 ## <a name="see-also"></a>请参阅
 [编写适用于 C/C++ 的单元测试](writing-unit-tests-for-c-cpp.md)
-
-
-
-
-
-
-
-
-
-

@@ -1,5 +1,6 @@
 ---
-title: 教程 - 了解 Visual Studio 中的 Django，步骤 2
+title: 了解 Visual Studio 中的 Django 教程步骤 2，视图和页面模板
+titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了创建应用以及使用视图和模板的步骤。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 404df36ab28e422e081df7d7cdf4831f8c2f64a0
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: dade4ee20aec654a32fac6904cca121c2ea726e6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001277"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53058540"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步骤 2：使用视图和页面模板创建 Django 应用
 
-上一步：[创建 Visual Studio 项目和解决方案](learn-django-in-visual-studio-step-01-project-and-solution.md)
+**上一步：[创建 Visual Studio 项目和解决方案](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
 到目前为止，在 Visual Studio 项目中，你所拥有的只是 Django 项目的网站级组件，这些组件可以运行一个或多个 Django 应用。 下一步是在单个页面中创建你的第一个应用。
 
@@ -38,9 +40,9 @@ Django 应用是一个单独的 Python 包，其中包含一组用于特定用�
 
 Django 应用通常以一组标准文件开始。 Visual Studio 提供项模板来初始化 Django 项目中的 Django 应用，并提供起到相同作用的集成菜单命令：
 
-- 模板：在“解决方案资源管理器”中，右键单击项目，选择“添加” > “新项”。 在“添加新项”对话框中，选择“Django 1.9 应用”模板，在“名称”字段中指定应用名称，并选择“确定”。
+- 模板：在“解决方案资源管理器”中，右键单击项目，然后选择“添加” > “新项”。 在“添加新项”对话框中，选择“Django 1.9 应用”模板，在“名称”字段中指定应用名称，并选择“确定”。
 
-- 集成命令：在“解决方案资源管理器”中，右键单击该项目并选择“添加” > “Django 应用”。 此命令将提示你输入一个名称，并创建 Django 1.9 应用。
+- 集成的命令：在“解决方案资源管理器”中，右键单击项目，然后选择“添加” > “Django 应用”。 此命令将提示你输入一个名称，并创建 Django 1.9 应用。
 
     ![添加 Django 应用的菜单命令](media/django/step02-add-django-app-command.png)
 
@@ -48,7 +50,7 @@ Django 应用通常以一组标准文件开始。 Visual Studio 提供项模板�
 
 ![解决方案资源管理器中的 Django 应用文件](media/django/step02-django-app-in-solution-explorer.png)
 
-| 项 | 描述 |
+| 项 | 说明 |
 | --- | --- |
 | **\_\_init\_\_.py** | 将应用标识为包的文件。 |
 | **迁移** | 一个文件夹，Django 在其中存储用于更新数据库以便与模型更改保持一致的脚本。 然后，Django 迁移工具将必要的更改应用到任何以前版本的数据库，以便与当前模型相匹配。 使用迁移，可以将注意力集中在模型上，并让 Django 处理基础数据库架构。 步骤 6 中已对迁移进行了讨论；现在，该文件夹只需包含 \_\_init\_\_.py 文件（指示文件夹定义其自己的 Python 包）。 |
@@ -247,7 +249,7 @@ Django 页面模板是一个 HTML 块，它可以包含称为“变量”的任�
 
     ![使用模板运行应用](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Visual Studio 2017 版本 15.7 及更早版本：最后，将模板移动到与应用名称相同的子文件夹中，这样就可创建一个命名空间，并避免与可能添加到项目中的其他应用发生潜在冲突。 （VS 2017 15.8 及更高版本中的模板会自动执行此操作。）即，在 templates 中创建名为 HelloDjangoApp 的子文件夹，将 index.html 移动到该子文件夹，并修改 `index` 查看函数以引用模板的新路径 HelloDjangoApp/index.html。 然后运行项目，验证页面是否正确呈现，并停止服务器。
+1. <a name="template-namespacing"></a>Visual Studio 2017 版本 15.7 及更高版本：作为最后一步，将模板移动到与应用名称相同的子文件夹中，这样就可以创建一个命名空间，并避免与可能添加到项目中的其他应用发生潜在冲突。 （VS 2017 15.8 及更高版本中的模板会自动执行此操作。）即，在 templates 中创建名为 HelloDjangoApp 的子文件夹，将 index.html 移动到该子文件夹，并修改 `index` 查看函数以引用模板的新路径 HelloDjangoApp/index.html。 然后运行项目，验证页面是否正确呈现，并停止服务器。
 
 1. 如果需要，将更改提交到源代码管理并更新远程存储库，如[步骤 2-2](#commit-to-source-control) 中所述。
 
@@ -261,7 +263,7 @@ Django 页面模板是一个 HTML 块，它可以包含称为“变量”的任�
 
 实际上，在使用 Django 项目时，Visual Studio 会自动检测到你正在编辑的 HTML 文件实际上是 Django 模板，并提供某些自动完成功能。 例如，在开始键入 Django 页面模板注释 `{#` 时，Visual Studio 会自动提供右边的 `#}` 字符。 “注释选定内容”和“取消注释选定内容”命令（在“编辑” > “高级”菜单上和工具栏上）也使用模板注释，而不是 HTML 注释。
 
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>问：我在运行项目时，看到了一个找不到模板的错误。 为什么会这样？
+### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>问：运行项目时发生了一个错误：找不到模板。 为什么会这样？
 
 答：如果看到无法找到模板的错误，请确保已将应用添加到 Django 项目 `INSTALLED_APPS` 列表的 settings.py 中。 如果没有该条目，Django 将不知道在应用的 templates 文件夹中查找。
 

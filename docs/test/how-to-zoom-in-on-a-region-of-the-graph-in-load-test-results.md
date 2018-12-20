@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中放大负载测试结果关系图
+title: 放大负载测试结果关系图
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: aa5f6b3c5f4069a0b62fa6433c8ecef527558a0d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 558d6429c5d92f833e81074fe928436ab6e7f30e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895881"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064888"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>如何：放大负载测试结果中关系图的区域
 
@@ -59,7 +59,7 @@ ms.locfileid: "52895881"
 
      \- 或 -
 
-     查看上一次运行的负载测试的详细信息。 有关详细信息，请参阅[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
+     查看上一次运行的负载测试的详细信息。 有关更多信息，请参见[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
 3.  如果未显示关系图，请选择“关系图”。
 

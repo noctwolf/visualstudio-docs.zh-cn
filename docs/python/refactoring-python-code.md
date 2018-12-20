@@ -1,6 +1,6 @@
 ---
 title: 重构 Python 代码
-description: 在 Visual Studio 中如何通过重命名标识符、提取方法、添加导入和移除未使用的导入来轻松重构 Python 代码。
+description: Visual Studio 通过重命名标识符、提取方法、添加导入和移除未使用的导入使重构 Python 代码变得容易。
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a612e7e6a59087d219d2afc6233b57f02ed99314
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 7293e966f937368df62dc9fa0049ac1d75a19b45
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607739"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063012"
 ---
 # <a name="refactor-python-code"></a>重构 Python 代码
 

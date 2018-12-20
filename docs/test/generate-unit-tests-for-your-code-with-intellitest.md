@@ -1,6 +1,6 @@
 ---
-title: 在 Visual Studio 中使用 IntelliTest 为代码生成单元测试
-ms.date: 2015-10-05
+title: 使用 IntelliTest 为你的代码生成单元测试
+ms.date: 10/05/2015
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f0ea1fa864e108117d45c1a6edd4cc03f3e3024f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4aefb4aebe65503620f866955f7cbd62e33b3940
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294157"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052348"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 为你的代码生成单元测试
+
 IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套件。 对于代码中的每个语句，将生成执行该语句的测试输入。 为代码中的每个条件分支执行案例分析。 例如，分析 `if` 语句、断言和可能引发异常的所有操作。 此分析用于为你的每个方法生成参数化单元测试的测试数据，从而创建具有较高代码覆盖率的单元测试。
 
- 当你运行 IntelliTest 时，你可轻松看到哪些测试会失败，并可添加任何必要的代码来修复它们。 你可选择要保存到测试项目中的已生成测试，以提供回归套件。 当你更改代码时，重新运行 IntelliTest，以使生成的测试与你的代码更改同步。
+当你运行 IntelliTest 时，你可轻松看到哪些测试会失败，并可添加任何必要的代码来修复它们。 你可选择要保存到测试项目中的已生成测试，以提供回归套件。 当你更改代码时，重新运行 IntelliTest，以使生成的测试与你的代码更改同步。
 
 ## <a name="availability-and-extensions"></a>可用性和扩展
 
@@ -36,7 +37,8 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
 * 不支持 x64 配置。
 
 ## <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>浏览：使用 IntelliTest 浏览代码并生成单元测试
- 若要生成单元测试，你的类型必须是公共类。 否则，先 [创建单元测试](#NoRun) ，然后再生成它们。
+
+若要生成单元测试，你的类型必须是公共类。 否则，先 [创建单元测试](#NoRun) ，然后再生成它们。
 
 1.  在 Visual Studio 中打开解决方案。 然后打开包含你要测试的方法的类文件。
 
@@ -130,7 +132,7 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
 
 ###  <a name="NoRun"></a> 问：是否可以无需首先运行 IntelliTest 便生成参数化单元测试？
 
-**答：** 可以，在类或方法中单击右键，然后选择 **创建 IntelliTest**。
+**答：** 可以，在类或方法中单击右键，然后选择“创建 IntelliTest”。
 
  ![右键单击编辑器，选择“创建 IntelliTest”](../test/media/pexcreateintellitest.png)
 
@@ -141,7 +143,7 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
 <a name="extend-framework"></a>
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>问：是否可以将其他单元测试框架用于 IntelliTest？
 
-**答：** 可以，请按照下列步骤 [查找和安装其他框架](../test/install-third-party-unit-test-frameworks.md)。
+**答：** 可以，请按照下列步骤[查找和安装其他框架](../test/install-third-party-unit-test-frameworks.md)。
 Visual Studio Marketplace 中也提供了测试框架扩展：
 
 * [适用于测试生成器的 NUnit 扩展](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)

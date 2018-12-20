@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中将字段重构为属性
+title: 将字段重构为属性
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c6594521774ca7e4fe91bc47776c4f0c4a489a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a6cb74b64ec03c865ca4e6e52fa3922c997468d6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942915"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049925"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>“封装字段”重构
 
@@ -29,11 +29,11 @@ ms.locfileid: "49942915"
 
 - Visual Basic
 
-功能：将字段转换为属性，并将该字段的所有用法更新为使用新创建的属性。
+**功能：** 将字段转换为属性，并将该字段的所有用法更新为使用新创建的属性。
 
-时机：想要将字段移到属性中，并更新对此字段的所有引用时。
+**使用时机：** 想要将字段移到属性中，并更新对此字段的所有引用时。
 
-原因：想要为其他类提供字段的访问权限，但不想要这些字段拥有直接访问权限。  例如，通过将字段包装在属性中，可编写代码来验证正在分配的值。
+操作原因：想要为其他类提供字段的访问权限，但不想要这些字段拥有直接访问权限。  例如，通过将字段包装在属性中，可编写代码来验证正在分配的值。
 
 ## <a name="how-to"></a>操作说明
 
@@ -56,7 +56,7 @@ ms.locfileid: "49942915"
       - 选择“编辑 > 重构> 封装字段”。
       - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口选择任意一个“封装字段”项。
 
-   选择 | 描述
+   选择 | 说明
    --------- | -----------
    封装字段 (并使用属性) | 使用属性封装字段，并将此字段的所有用法更新为使用所生成的属性
    封装字段 (但仍使用字段) | 使用属性封装字段，但将此字段的所有用法保留不变

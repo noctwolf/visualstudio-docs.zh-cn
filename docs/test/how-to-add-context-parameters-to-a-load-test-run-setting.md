@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中向负载测试运行设置中添加上下文参数
+title: 向负载测试运行设置中添加上下文参数
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c351079f0a29176ded3172d6e0e26893a1163354
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894100"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048484"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：向负载测试运行设置中添加上下文参数
 
@@ -38,9 +38,9 @@ ms.locfileid: "52894100"
 
 此外，通过在不同的负载测试运行设置中使用相同的名称对一个上下文参数分配不同的值，可以使用不同的环境运行负载测试：
 
-- 公司临时 Web 服务器运行设置：名为 `WebServer1=http://CorporateStagingWebServer` 的上下文参数
+- 企业暂存 Web 服务器运行设置：名为 `WebServer1=http://CorporateStagingWebServer` 的上下文参数
 
-- 公司生产 Web 服务器运行设置：名为 `WebServer1=http://CorporateProductionWebServer` 的上下文参数
+- 企业生产 Web 服务器运行设置：名为 `WebServer1=http://CorporateProductionWebServer` 的上下文参数
 
   **从命令行更改运行设置**
 
@@ -62,7 +62,7 @@ ms.locfileid: "52894100"
 
      一个新上下文参数将添加到负载测试树中“运行设置”文件夹的“上下文参数”文件夹。
 
-     或
+     - 或 -
 
      如果运行设置已经包含“上下文参数”文件夹，则可以右键单击该文件夹，然后选择“添加上下文参数”。
 

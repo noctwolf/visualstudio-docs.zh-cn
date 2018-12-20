@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中保存测试失败的负载测试日志
+title: 保存测试失败的负载测试日志
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 65e8632a161ac345408a030d2d536086abbe48af
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c583418fa34a44d4bc0bf78996df4cb35908b4f0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895114"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064399"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>如何：指定是否使用负载测试编辑器将测试失败保存到测试日志中
 

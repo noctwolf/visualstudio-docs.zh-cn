@@ -1,5 +1,5 @@
 ---
-title: 查找和使用 Visual Studio 扩展
+title: 查找和使用扩展
 ms.date: 06/07/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a5b562aa6fe4a64f92d66ad0a6fff0395e5314a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cc67602db2d830283bb47fe7c3a9728d0d9fd799
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950275"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067902"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>查找和使用 Visual Studio 扩展
 
-Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了新的或者改进后的 Visual Studio 功能。 你可以在此处找到有关 Visual Studio 扩展的详细信息： [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了新的或者改进后的 Visual Studio 功能。 可以在此处找到有关 Visual Studio 扩展的详细信息：[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
 你可以使用 **“扩展和更新”** 对话框安装来自网站或其他位置的 Visual Studio 扩展及示例，然后启用、禁用、更新或卸载这些扩展和示例。 （“工具”>“扩展和更新”，或在“快速启动”窗口中键入“扩展”）。 该对话框还显示用于已安装的示例和扩展的更新。 还可以从网站下载扩展，或从其他开发人员处获取它们。
 

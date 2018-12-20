@@ -1,6 +1,6 @@
 ---
 title: Python 交互式窗口 (REPL)
-description: 如何在 Visual Studio 中使用 Python 代码的交互窗口 (REPL) 进行快速代码开发。
+description: 使用交互式窗口 (REPL) 在 Visual Studio 中进行快速 Python 代码开发。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8146e43a51e4d1634cbba78d789a3ef8cff99f95
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3c3a3a6cd3694a0affa6ca1d5cfabac58b124ec9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219921"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055710"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 交互窗口
 
@@ -26,16 +27,16 @@ Visual Studio 为每个 Python 环境提供交互读取-评估-打印-循环 (RE
 
 Visual Studio 有大量 Python REPL 模式可供选择：
 
-| REPL | 描述 | 编辑 | 调试 | 图像 |
+| REPL | 说明 | 编辑 | 调试 | 图像 |
 | --- | --- | --- | --- | --- |
-| 标准 | 默认 REPL，直接与 Python 通信 | 标准编辑（多行等）。 | 是，通过 `$attach` | 否 |
-| 调试 | 默认 REPL，与已调试的 Python 进程通信 | 标准编辑 | 仅调试 | 否 |
+| 标准 | 默认 REPL，直接与 Python 通信 | 标准编辑（多行等）。 | 是，通过 `$attach` | No |
+| 调试 | 默认 REPL，与已调试的 Python 进程通信 | 标准编辑 | 仅调试 | No |
 | IPython | REPL 与 IPython 后端通信 | IPython 命令，Pylab 的便利 | 否 | 是，在 REPL 中内联 |
-| 带 Pylab 的 IPython | REPL 与 IPython 后端通信 | 标准 IPython | 否 | 是，单独窗口 | 
+| 带 Pylab 的 IPython | REPL 与 IPython 后端通信 | 标准 IPython | No | 是，单独窗口 | 
 
 本文介绍标准 REPL 模式和调试 REPL 模式。 有关 IPython 模式的详细信息，请参阅[使用 IPython REPL](interactive-repl-ipython.md)。
 
-有关包含示例的详细演练，包括与编辑器的交互（如 Ctrl+Enter），请参阅[教程步骤 3：使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。 
+有关包含示例的详细演练，包括与编辑器的交互（如 Ctrl+Enter），请参阅[教程步骤 3：使用交互 REPL 窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。 
 
 |   |   |
 |---|---|
@@ -78,7 +79,7 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 
 <a name="meta-commands"></a>交互窗口还支持多个元命令。 所有元命令都以 `$` 开头，你可以键入 `$help` 获得元命令和 `$help <command>` 的列表，以获取特定命令的使用情况详细信息。
 
-| 元命令 | 描述 |
+| 元命令 | 说明 |
 | --- | --- |
 | `$$` | 插入注释，用于注释会话中的代码。 |
 | `$attach` | 将 Visual Studio 调试器附加到 REPL 窗口进程以启用调试。 |

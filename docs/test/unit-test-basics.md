@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的单元测试基础知识
+title: 单元测试基础
 ms.date: 2016-01-07
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45babce1d9b742bd2af5b047973c4f96b41e52cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935310"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053164"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -219,7 +219,7 @@ public void My_Test ()
 
 ![从测试资源管理器工具栏运行测试](../test/media/ute_toolbar.png)
 
-你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。 运行一组测试后，测试运行的摘要将出现在“测试资源管理器”窗口的底部。 选择一个测试以在底部窗格中查看该测试的详细信息。 从上下文菜单中选择“打开测试”（快捷键：F12），以显示所选测试的源代码。
+你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。 运行一组测试后，测试运行的摘要将出现在“测试资源管理器”窗口的底部。 选择一个测试以在底部窗格中查看该测试的详细信息。 从上下文菜单中选择“打开测试”（快捷键：“F12”），显示所选测试的源代码。
 
 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
@@ -228,7 +228,7 @@ public void My_Test ()
 > [!WARNING]
 > 仅在 Visual Studio Enterprise 中支持每次生成后运行单元测试。
 
-|Button|描述|
+|Button|说明|
 |-|-|
 |![生成后运行](../test/media/ute_runafterbuild_btn.png)|若要在每个本地生成后运行单元测试，请在标准菜单上选择“测试”，然后在“测试资源管理器”工具栏上选择“生成后运行测试”。|
 
@@ -238,7 +238,7 @@ public void My_Test ()
 
 ![搜索筛选器类别](../test/media/ute_searchfilter.png)
 
-|Button|描述|
+|Button|说明|
 |-|-|
 |![测试资源管理器的分组按钮](../test/media/ute_groupby_btn.png)|若要按类别分组测试，请选择“分组依据”  按钮。|
 
@@ -248,7 +248,7 @@ public void My_Test ()
 
 **问：如何调试单元测试？**
 
-**答：** 可以使用“测试资源管理器”为测试启动调试会话。 使用 Visual Studio 调试程序无缝地逐句通过代码将使你在单元测试和所测试项目之间来回反复。 若要开始调试：
+**答：** 使用“测试资源管理器”为测试启动调试会话。 使用 Visual Studio 调试程序无缝地逐句通过代码将使你在单元测试和所测试项目之间来回反复。 若要开始调试：
 
 1.  在 Visual Studio 编辑器中，在想要调试的一个或多个测试方法中设置断点。
 
@@ -259,7 +259,7 @@ public void My_Test ()
 
 了解有关 [调试单元测试](../debugger/debugging-in-visual-studio.md)的更多详细信息。
 
-问：如果使用的是 TDD，该如何从我的测试生成代码？
+**问：如果使用的是 TDD，该如何从我的测试生成代码？**
 
 **答：** 使用 IntelliSense 在你的项目代码中生成类和方法。 编写调用你想要生成的类或方法的测试方法中的语句，然后打开调用下面的 IntelliSense 菜单。 如果调用新类的构造函数，请从菜单选择“生成新类型”  并按照向导在你的代码项目中插入此类。 如果调用方法，请从 IntelliSense 菜单选择“生成新方法”  。
 
@@ -327,7 +327,7 @@ Microsoft Fakes 使用两种方法为外部依赖项创建替代类：
 
 **问：是否可以使用其他单元测试框架创建单元测试？**
 
-**答：** 可以，请按照下列步骤 [查找和安装其他框架](../test/install-third-party-unit-test-frameworks.md)。 在重新启动 Visual Studio 后，重新打开解决方案以创建单元测试，然后在此处选择你已安装的框架：
+**答：** 可以，请按照下列步骤[查找和安装其他框架](../test/install-third-party-unit-test-frameworks.md)。 在重新启动 Visual Studio 后，重新打开解决方案以创建单元测试，然后在此处选择你已安装的框架：
 
 ![选择其他已安装的单元测试框架](../test/media/createunittestsdialogextensions.png)
 

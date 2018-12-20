@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用填充码隔离应用程序以进行单元测试
+title: 使用填充码隔离应用程序以进行单元测试
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c1a6a15a5c5ba0eccfdab89461292fba484b5af3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b94852b15891566bdfc38dd3fd8de9e706f38737
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389064"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065605"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>使用填充码针对单元测试将应用程序与程序集隔离
 
@@ -32,7 +32,7 @@ ms.locfileid: "52389064"
 > [!NOTE]
 > 不支持 .NET Standard 项目。
 
-## <a name="example-the-y2k-bug"></a>示例: 计算机 2000 年问题 Bug
+## <a name="example-the-y2k-bug"></a>示例:千年虫 bug
 
 设想一种会在 2000 年 1 月 1 日引发异常的方法：
 
@@ -512,4 +512,4 @@ ShimFile.WriteAllTextStringString = shim;
 
 - [通过 Microsoft Fakes 隔离受测代码](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Peter Provost 的博客：Visual Studio 2012 填充码](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [视频（1 小时 16 分钟）：在 Visual Studio 2012 中使用 Fakes 测试不可测试代码](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [视频（1 小时 16 分钟）：在 Visual Studio 2012 中使用 Fakes 测试不可测试的代码](http://go.microsoft.com/fwlink/?LinkId=261837)

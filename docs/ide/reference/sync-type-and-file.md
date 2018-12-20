@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中重命名文件名以匹配类型
+title: 重命名文件名以匹配类型
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8407e89d9e28c501358877df9c244175ca8155c8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bfc1a88091fa30bceea15a3f8e1b78df5cc7a87c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942317"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054782"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>将类型同步到文件名或反向操作
 
@@ -27,11 +27,11 @@ ms.locfileid: "49942317"
 
 - Visual Basic
 
-功能：重命名类型以匹配文件名，或重命名文件名以匹配其包含的类型。
+**功能：** 重命名类型以匹配文件名，或重命名文件名以匹配其包含的类型。
 
-时机：已重命名文件或类型，且尚未更新相应文件或类型进行匹配时。
+**使用时机：** 已重命名文件或类型，且尚未更新相应文件或类型进行匹配时。
 
-原因：将类型置于具有其他名称的文件中，将很难查找要搜索的内容，反之亦然。 通过重命名类型或文件名，代码变得更具可读性且更易于导航。
+操作原因：将类型置于具有其他名称的文件中，将很难查找要搜索的内容，反之亦然。 通过重命名类型或文件名，代码变得更具可读性且更易于导航。
 
 ## <a name="how-to"></a>操作说明
 
@@ -56,11 +56,11 @@ ms.locfileid: "49942317"
 
    随即重命名类型或文件。
 
-   - C#:：在下例中，文件“MyClass.cs”重命名为“MyNewClass.cs”以匹配类型名称。
+   - C#：在以下示例中，文件“MyClass.cs”被重命名为“MyNewClass.cs”以匹配类型名称。
 
        ![内联结果 C#](media/synctype-result-cs.png)
 
-   - Visual Basic：在下例中，文件“Employee.vb”重命名为“Person.vb”以匹配类型名称。
+   - Visual Basic：在以下示例中，文件“Employee.vb”被重命名为“Person.vb”以匹配类型名称。
 
        ![内联结果 Visual Basic](media/synctype-result-vb.png)
 

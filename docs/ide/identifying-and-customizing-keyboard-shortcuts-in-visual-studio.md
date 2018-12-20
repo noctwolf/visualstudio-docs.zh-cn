@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中识别并自定义键盘快捷方式
+title: 标识并自定义键盘快捷方式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ed1806ce5810814c8ea2ce9c08462ecc8f9fd77
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 61ea8d6ee9243f79fe250872820643904bb2367a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747224"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062962"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>在 Visual Studio 中识别并自定义键盘快捷方式
 

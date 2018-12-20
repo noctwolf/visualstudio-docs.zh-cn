@@ -1,6 +1,6 @@
 ---
 title: Python 的 Web 应用程序模板
-description: 使用 Python 编写的 Web 应用程序的 Visual Studio 模板的概述（使用 Bottle、Flask 和 Django 框架），包括调试配置和发布到 Azure 应用服务。
+description: Visual Studio 使用 Bottle、Flask 和 Django 框架为 Python Web 应用程序提供模板；支持包括调试配置和发布到 Azure 应用程序服务。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 06513030b34f7ab3217210a931722d72a6368ab3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349330"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068323"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
@@ -34,23 +35,23 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 
 前面提到的通用“Web 项目”模板只提供了一个空的 Visual Studio 项目，只有一个 Python 项目，没有代码，也没有任何假设。 有关“Azure 云服务”模板的详细信息，请参阅 [Python 的 Azure 云服务项目](python-azure-cloud-service-project-template.md)。
 
-所有其他模板都基于 Bottle、Flask 或 Django Web 框架，可以分为如以下各节所述的三个通用组。 由其中任一模板创建的应用中的代码都足以在本地运行和调试应用。 每个模板还提供必要的 [WSGI 应用对象](http://www.python.org/dev/peps/pep-3333/) (python.org)，以用于生产 Web 服务器。
+所有其他模板都基于 Bottle、Flask 或 Django Web 框架，可以分为如以下各节所述的三个通用组。 由其中任一模板创建的应用中的代码都足以在本地运行和调试应用。 每个模板还提供必要的 [WSGI 应用对象](https://www.python.org/dev/peps/pep-3333/) (python.org)，以用于生产 Web 服务器。
 
 ### <a name="blank-group"></a>空白组
 
 所有“空白 \<框架> Web 项目”模板都会创建一个项目，其中包含极少的样本代码以及 requirements.txt 文件中声明的必要依赖项。
 
-| 模板 | 描述 |
+| 模板 | 说明 |
 | --- | --- |
 | **空白 Bottle Web 项目** | 在 app.py 中生成最小的应用，其中包括 `/` 的主页和 `/hello/<name>` 页，它使用非常短的内嵌页模板回显 `<name>`。 |
 | **空白 Django Web 项目** | 使用核心 Django 网站结构生成 Django 项目，但没有 Django 应用。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django 步骤 1](learn-django-in-visual-studio-step-01-project-and-solution.md)。 |
-| **空白 Flask Web 项目** | 生成包含 `/` 的单个“Hello World!”页的最小应用。 此应用类似于按[快速入门：使用 Visual Studio 创建第一个 Python Web 应用](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)中的详细步骤操作的结果。 另请参阅[学习 Flask 步骤 1](learn-flask-visual-studio-step-01-project-solution.md)。
+| **空白 Flask Web 项目** | 生成包含 `/` 的单个“Hello World!”页的最小应用。 本应用类似于[快速入门中的以下详细步骤的结果：使用 Visual Studio 创建第一个 Python Web 应用](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)。 另请参阅[学习 Flask 步骤 1](learn-flask-visual-studio-step-01-project-solution.md)。
 
 ### <a name="web-group"></a>Web 组
 
 所有“\<框架> Web 项目”模板都会创建一个具有相同设计的初学者 Web 应用，而与所选的框架无关。 该应用包含“主页”、“关于”和“联系人”页面，以及使用 Bootstrap 的导航栏和响应式设计。 每个应用都被适当地配置为提供静态文件（CSS、JavaScript 和字体），并使用适合框架的页面模板机制。
 
-| 模板 | 描述 |
+| 模板 | 说明 |
 | --- | --- |
 | **Bottle Web 项目** | 生成一个应用，其静态文件包含在 static 文件夹中，并通过 app.py 中的代码进行处理。 单个页面的路由包含在 routes.py 中，views 文件夹包含页面模板。|
 | **Django Web 项目** | 生成一个 Django 项目和一个 Django 应用，其中包含三个页面、身份验证支持和一个 SQLite 数据库（但没有数据模型）。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django 步骤 4](learn-django-in-visual-studio-step-04-full-django-project-template.md)。 |
@@ -61,7 +62,7 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 
 “投票 \<框架> Web 项目”模板创建一个初学者 Web 应用，用户可以通过该应用对不同的投票问题进行投票。 每个应用都基于“Web”项目模板的结构生成，从而使用数据库来管理投票和用户响应。 这些应用包含相应的数据模型以及用于从 samples.json 文件加载投票的特殊应用页 (/seed)。
 
-| 模板 | 描述 |
+| 模板 | 说明 |
 | --- | --- |
 | **投票 Bottle Web 项目** | 生成可以针对使用 `REPOSITORY_NAME` 环境变量配置的内存中数据库、MongoDB 或 Azure 表存储运行的应用。 数据模型和数据存储代码包含在 models 文件夹中，settings.py 文件包含用于确定使用哪个数据存储的代码。 |
 | **投票 Django Web 项目** | 生成一个 Django 项目和一个 Django 应用，其中包含三个页面和一个 SQLite 数据库。 加入对 Django 管理界面的自定义设置，以允许经过身份验证的管理员创建和管理投票。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django 步骤 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)。 |

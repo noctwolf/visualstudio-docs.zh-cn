@@ -1,5 +1,6 @@
 ---
-title: 教程 - 了解 Visual Studio 中的 Django，步骤 5
+title: 了解 Visual Studio 中的 Django 教程的第 5 步，身份验证
+titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了 Django Web 项目模板提供的身份验证功能。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb195e971612124ace53d8eb33b5c3563cd19a12
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001225"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064068"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>步骤 5：在 Django 中对用户进行身份验证
 
-上一步：[使用完整的 Django Web 项目模板](learn-django-in-visual-studio-step-04-full-django-project-template.md)
+**上一步：[使用完整的 Django Web 项目模板](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 身份验证是 Web 应用的常见需求，因此“Django Web 项目”模板包含基本的身份验证流。 （本教程步骤 6 中讨论的“投票 Django Web 项目”模板也包括相同的流。）在使用任意 Django 项目模板时，Visual Studio 包含 Django 项目的 settings.py 中身份验证所需的所有模块。
 
@@ -29,7 +31,7 @@ ms.locfileid: "52001225"
 > [!div class="checklist"]
 > - 如何使用 Visual Studio 模板中提供的身份验证流（步骤 5-1）
 
-## <a name="step-5-1-use-the-authentication-flow"></a>步骤 5-1 使用身份验证流
+## <a name="step-5-1-use-the-authentication-flow"></a>步骤 5-1：使用身份验证流
 
 以下步骤执行身份验证流，并介绍所涉及项目的各个部分：
 

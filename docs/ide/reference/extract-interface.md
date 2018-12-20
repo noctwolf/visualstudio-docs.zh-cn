@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中重构“提取接口”操作
+title: “提取接口”重构
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b126d3753c0b4d92a3ef7bc2579c6208e61e308b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 62d79251d0ec93c92ec13450e9110e08143d7966
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849875"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061651"
 ---
 # <a name="extract-an-interface-refactoring"></a>“提取接口”重构
 
@@ -29,11 +29,11 @@ ms.locfileid: "49849875"
 
 - Visual Basic
 
-功能：使用来自类、结构或接口的现有成员创建接口。
+**功能：** 使用来自类、结构或接口的现有成员创建接口。
 
-时机：有多个类、结构或接口具有可以通用的方法或这些方法可由其他类、结构或接口使用时。
+**使用时机：** 有多个类、结构或接口具有可以通用的方法或这些方法可由其他类、结构或接口使用时。
 
-原因：接口是面向对象设计的出色构造。 假设有各类动物（狗、猫、鸟），这些动物都具有吃、喝、睡等一些共同方法。 使用 IAnimal 这样的接口，狗、猫和鸟即可拥有适用于这些方法的共同“签名”。
+操作原因：接口是面向对象设计的出色构造。 假设有各类动物（狗、猫、鸟），这些动物都具有吃、喝、睡等一些共同方法。 使用 IAnimal 这样的接口，狗、猫和鸟即可拥有适用于这些方法的共同“签名”。
 
 ## <a name="how-to"></a>操作说明
 
@@ -61,7 +61,7 @@ ms.locfileid: "49849875"
    ![提取接口](media/extractinterface-dialog-cs.png)
 
 
-   | 字段 | 描述 |
+   | 字段 | 说明 |
    | - | - |
    | “新接口名称” | 要创建的接口的名称。 此处将默认为 “IClassName”，其中“ClassName”是上面所选类的名称。 |
    | “新文件名” | 将生成的包含接口的文件的名称。 与接口名称一样，此处将默认为 “IClassName”，其中“ClassName”是上面所选类的名称。 |

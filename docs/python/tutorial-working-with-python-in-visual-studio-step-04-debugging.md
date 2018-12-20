@@ -1,5 +1,6 @@
 ---
-title: 使用 Python 教程 - 第 4 步：调试
+title: Visual Studio 中的 Python 教程步骤 4，调试
+titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 功能的核心教程的第 4 步，介绍了如何在调试器中运行 Python 代码。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 312db1642fac00cb122aee5cf8c4309675520b5e
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 5facce6eff378586ece01b5774089e76058615f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220129"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060415"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>步骤 4：在调试器中运行代码
 
-上一步：[使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+**上一步：[使用交互式 REPL 窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
 除了管理项目、提供丰富的编辑体验和交互窗口，Visual Studio 还对 Python 代码提供功能全面的调试。 在调试器中，可以分步运行代码，包括循环的每次迭代。 还可以在符合某些条件时暂停程序。 无论程序何时在调试器中暂停，用户都可以检查整个程序状态，并更改变量的值。 此类操作对于追查程序 bug 至关重要，而且非常有助于仔细跟踪确切的程序流程。
 

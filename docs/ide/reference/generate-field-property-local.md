@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Basic 中生成字段、属性或局部变量
+title: 生成字段、属性、局部变量
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 60472c83738351ebc46a96e9d53bc4ae3015c514
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d3cd886e4ed08bbe4dbeea1b177dc4dd22502d99
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296224"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064029"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>在 Visual Basic 中生成字段、属性或局部变量
 
@@ -24,11 +24,11 @@ ms.locfileid: "51296224"
 
 - Visual Basic
 
-功能：为之前未声明的字段、属性或本地内容快速生成代码。
+**功能：** 为之前未声明的字段、属性或本地内容快速生成代码。
 
-时机：键入时想要引入新字段、属性或本地内容，并想要自动以适当的方式对其进行声明时。
+**使用时机：** 键入时想要引入新字段、属性或本地内容，并想要自动以适当的方式对其进行声明时。
 
-原因：可以在使用该字段、属性或本地内容之前对其进行声明，但此功能可自动生成声明和类型。
+操作原因：可以在使用该字段、属性或本地内容之前对其进行声明，但此功能可自动生成声明和类型。
 
 ## <a name="how-to"></a>操作说明
 

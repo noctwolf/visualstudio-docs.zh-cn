@@ -1,5 +1,5 @@
 ---
-title: 导出 Visual Studio 中的负载测试结果
+title: 导出负载测试结果
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0219b2acaab32da72639c088046bf4d19620808
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: d50a97854aafda3baf1eedbc9d821c0e530e6bf6
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894322"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057160"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>如何：从存储库导出负载测试结果
 
@@ -58,6 +58,6 @@ ms.locfileid: "52894322"
 ## <a name="see-also"></a>请参阅
 
 - [管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
-- [如何：从存储库中删除负载测试结果](../test/how-to-delete-load-test-results-from-a-repository.md)
+- [如何：从存储库删除负载测试结果](../test/how-to-delete-load-test-results-from-a-repository.md)
 - [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [如何：将负载测试结果导入存储库中](../test/how-to-import-load-test-results-into-a-repository.md)

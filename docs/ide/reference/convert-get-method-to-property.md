@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中将 Get 方法转换为属性并反向转换
+title: 将 Get 方法转换为属性并将属性转换为 Get 方法
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35836e18e9cf8ffa33056b6bd93959d8debcc43a
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c5e7cc7be759991647a9bd40415639ab3b08fa1d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896015"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056342"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>将 Get 方法转换为属性或反向转换
 
@@ -29,9 +29,9 @@ ms.locfileid: "52896015"
 
 ## <a name="convert-get-method-to-property"></a>将 Get 方法转换为属性
 
-功能：将 Get 方法转换为属性（或 Set 方法）。
+**功能：** 将 Get 方法转换为属性（或 Set 方法）。
 
-时机：有不包含任何逻辑的 Get 方法时。
+**使用时机：** 有不包含任何逻辑的 Get 方法时。
 
 ### <a name="how-to"></a>操作说明
 
@@ -70,9 +70,9 @@ public int MyValue
 
 ## <a name="convert-property-to-get-method"></a>将属性转换为 Get 方法
 
-功能：将属性转换为 Get 方法
+**功能：** 将属性转换为 Get 方法
 
-时机：有涉及多个立即设置或获取值的属性时
+**使用时机：** 有涉及多个立即设置或获取值的属性时
 
 ### <a name="how-to"></a>操作说明
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中提取方法
+title: 提取方法
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6978457fdc976f87a8334b181ab69dfd78ef240c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: b80b5053022b9e42bb6cfd30e3c76a72bef70746
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294535"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064609"
 ---
 # <a name="extract-a-method-refactoring"></a>“提取方法”重构
 
@@ -29,11 +29,11 @@ ms.locfileid: "51294535"
 
 - Visual Basic
 
-功能：将代码片段转换为独立的方法。
+**功能：** 将代码片段转换为独立的方法。
 
-时机：需要从其他方法调用某些方法中现有的代码片段时。
+**使用时机：** 需要从其他方法调用某些方法中现有的代码片段时。
 
-原因：可以复制/粘贴该代码，但这样会导致重复。 更好的解决方案是将此片段重构为独立的且可供任何其他方法自行调用的方法。
+操作原因：可以复制/粘贴该代码，但这样会导致重复。 更好的解决方案是将此片段重构为独立的且可供任何其他方法自行调用的方法。
 
 ## <a name="how-to"></a>操作说明
 

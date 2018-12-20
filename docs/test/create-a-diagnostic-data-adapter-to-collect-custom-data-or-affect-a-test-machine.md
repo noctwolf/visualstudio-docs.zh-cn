@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中创建用于测试的诊断数据适配器
+title: 创建诊断数据适配器进行测试
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 788c5f24b2e3f965d93b645d024f29a6e0d6e7ea
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 67eb1a1128a811868db97dfc682c7b4eec7b2c61
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52893840"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068064"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>创建诊断数据适配器以收集自定义数据或影响测试计算机
 
@@ -35,7 +35,7 @@ ms.locfileid: "52893840"
 |任务|相关主题|
 |-|-----------------------|
 |**创建诊断数据适配器：** 可通过创建类库来创建诊断数据适配器，然后使用诊断数据适配器 API 来收集所需的信息或对正在用于运行测试的测试系统产生影响。|-   [如何：创建诊断数据适配器](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**选择运行测试时要使用的自定义诊断数据适配器：** 可以选择用于测试设置的诊断数据适配器，以便运行测试时使用该适配器。|-   [在测试时收集诊断数据 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
+|**选择运行测试时使用的自定义诊断数据适配器：** 可以选择用于测试设置的诊断数据适配器，以便运行测试时使用该适配器。|-   [在测试时收集诊断数据 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 
 ## <a name="see-also"></a>请参阅
 

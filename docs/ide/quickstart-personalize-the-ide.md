@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中设置颜色主题和字体
+title: 设置颜色主题和字体
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 511c9d44e9aac49c0150be5a13651e5368e10eaf
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627029"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159407"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入门：个性化设置 Visual Studio IDE 和编辑器
 
@@ -100,4 +100,4 @@ Visual Studio 2017 用户界面的默认颜色主题命名为“蓝色”。 让
 ## <a name="see-also"></a>请参阅
 
 - [自定义编辑器](../ide/customizing-the-editor.md)
-- [Visual Studio IDE 概述](../ide/visual-studio-ide.md)
+- [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)

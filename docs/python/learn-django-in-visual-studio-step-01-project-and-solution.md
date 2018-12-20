@@ -1,5 +1,6 @@
 ---
-title: 教程 - 了解 Visual Studio 中的 Django，步骤 1
+title: 学习 Visual Studio 中的 Django 教程的第 1 步，Django 基础知识
+titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，演示 Visual Studio 如何为 Django 开发提供支持。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,17 +9,18 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32779861c3f7b8a0bc8ea9e8a3a42d00a8226e1a
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 549bd552cee0d9b833d1dee36f29f3a36b3f5f07
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001238"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061075"
 ---
-# <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Django Web 框架
+# <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教程：Visual Studio 中的 Django Web 框架入门
 
 [Django](https://www.djangoproject.com/) 是高级 Python 框架，用于快速、安全及可扩展的 Web 开发。 本教程将在 Visual Studio 提供的项目模板上下文中探讨 Django 框架，以简化基于 Django 的 Web 应用的创建过程。
 
@@ -64,8 +66,8 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
     - 位置：指定要在其中创建 Visual Studio 解决方案和项目的位置。
     - **解决方案**：将此控件设置保留为默认“创建新解决方案”选项。
     - **解决方案名称**：设置为“LearningDjango”，适用于本教程中作为多个项目的容器的解决方案。
-    - 为解决方案创建目录：保留设置（默认设置）。
-    - 创建新的 Git 存储库：选择此选项（默认情况下会清除该选项），以便在 Visual Studio 创建解决方案时创建本地 Git 存储库。 如果未看到此选项，请运行 Visual Studio 2017 安装程序并在“代码工具”下的“单个组件”选项卡上添加“适用于 Windows 的 Git”和“适用于 Visual Studio 的 GitHub 扩展”。
+    - **创建解决方案的目录**：保留设置（默认值）。
+    - **新建 Git 存储库**：选择此选项（默认情况下会清除该选项），以便在 Visual Studio 创建解决方案时创建本地 Git 存储库。 如果未看到此选项，请运行 Visual Studio 2017 安装程序并在“代码工具”下的“单个组件”选项卡上添加“适用于 Windows 的 Git”和“适用于 Visual Studio 的 GitHub 扩展”。
 
 1. 稍后 Visual Studio 会显示一个对话框，提示“此项目需要外部包”（如下所示）。 显示此对话框是因为该模板包含引用最新 Django 1.x 包的 requirements.txt 文件。 （选择“显示所需包”查看确切的依赖项。）
 
@@ -111,11 +113,11 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 答：首先，从一开始就使用源代码管理，特别是如果同时还使用远程存储库，就可以提供项目的常规异地备份。 与在本地文件系统上维护项目不同，源代码管理还提供了完整的更改历史记录，用户可以轻松地将单个文件或整个项目还原到以前的状态。 此更改历史记录有助于确定回归的原因（测试失败）。 此外，如果多个人员执行一个项目，则源代码管理必不可少，因为它管理重写并提供冲突解决方案。 最后，源代码管理从根本上来说是一种自动化形式，它为自动化构建、测试和发布管理提供充分准备。 这实际上是将 DevOps 用于项目的第一步，而且由于入门门槛非常低，因此没有理由不从一开始就使用源代码管理。
 
-关于自动化形式的源代码管理的进一步讨论，请参阅 [The Source of Truth: The Role of Repositories in DevOps](https://msdn.microsoft.com/magazine/mt763232)（真相之源：DevOps 中的存储库角色），这是 MSDN Magazine 上专为移动应用编写的一篇文章，同样适用于 Web 应用。
+有关源控制作为自动化的进一步讨论，请参阅[真相的来源：DevOps 中存储库的作用](https://msdn.microsoft.com/magazine/mt763232)，这是 MSDN 杂志中为移动应用编写的一篇文章，也适用于 Web 应用。
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>问：我能否阻止 Visual Studio 自动提交新项目？
 
-答：能。 若要禁用自动提交，请转到“团队资源管理器”中的“设置”页，选择“Git” > “全局设置”，清除标记为“合并后默认提交更改”的选项，然后选择“更新”。
+答：可以。 若要禁用自动提交，请转到“团队资源管理器”中的“设置”页，选择“Git” > “全局设置”，清除标记为“合并后默认提交更改”的选项，然后选择“更新”。
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>步骤 1-3：创建虚拟环境并从源代码管理中将其排除
 
@@ -176,7 +178,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>问：在我安装其他包后，Visual Studio 能否从虚拟环境生成 requirements.txt 文件？
 
-答：能。 展开“Python 环境”节点，右键单击虚拟环境，并选择“生成 requirements.txt”命令。 在修改环境，并将对 requirements.txt 所做的更改连同依赖于该环境的任何其他代码更改提交给源代码管理时，建议定期使用此命令。 如果在生成服务器上设置持续集成，应该在修改环境时生成文件并提交更改。
+答：可以。 展开“Python 环境”节点，右键单击虚拟环境，并选择“生成 requirements.txt”命令。 在修改环境，并将对 requirements.txt 所做的更改连同依赖于该环境的任何其他代码更改提交给源代码管理时，建议定期使用此命令。 如果在生成服务器上设置持续集成，应该在修改环境时生成文件并提交更改。
 
 ## <a name="step-1-5-run-the-empty-django-project"></a>步骤 1-5：运行空 Django 项目
 
@@ -194,7 +196,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 ### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>问：Django 既是 Web 服务器也是框架吗？
 
-答：是/否。 Django 确实有一个用于开发目的的内置 Web 服务器。 当你在本地运行 Web 应用时（例如在 Visual Studio 中调试时），就会使用此 Web 服务器。 然而，在部署到 Web 主机时，Django 会改为使用主机的 Web 服务器。 Django 项目中的 wsgi.py 模块负责挂接到生产服务器。
+答：不好说。 Django 确实有一个用于开发目的的内置 Web 服务器。 当你在本地运行 Web 应用时（例如在 Visual Studio 中调试时），就会使用此 Web 服务器。 然而，在部署到 Web 主机时，Django 会改为使用主机的 Web 服务器。 Django 项目中的 wsgi.py 模块负责挂接到生产服务器。
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>问：在项目 Python 子菜单中使用“调试”菜单命令和服务器命令有何区别？
 
@@ -209,6 +211,6 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 ## <a name="go-deeper"></a>深入了解
 
-- Django 项目代码：[编写你的第一个 Django 应用，第 1 部分](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
+- Django 项目代码：[编写第一个 Django 应用，第 1 部分](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - 管理实用工具：[django-admin 和 manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
 - GitHub 上的教程源代码：[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中将测试控制器或测试代理绑定到网络适配器
+title: 将测试控制器或测试代理绑定到网络适配器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 222fe589a0d4282531b9ee73d476678d54747e7b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896041"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065942"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>如何：将测试控制器或测试代理绑定到网络适配器
 
@@ -51,7 +51,7 @@ ms.locfileid: "52896041"
 
 2.  在结果窗格中的“名称”列中，右键单击“Visual Studio Test Controller”服务，然后选择“停止”。
 
-     或
+     - 或 -
 
      使用提升的权限打开命令提示符，并在命令行执行以下命令：
 
@@ -135,5 +135,5 @@ ms.locfileid: "52896041"
 - [安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)
 - [修改负载测试记录设置](../test/modify-load-test-logging-settings.md)
 - [为测试控制器和测试代理配置端口](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [如何：为日志文件指定最大大小](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
+- [如何：为日志文件指定最大文件大小](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [如何：为测试控制器和测试代理指定超时周期](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用 EditorConfig 设置
+title: EditorConfig 设置
 ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 244312646de83e935dfa84cde4a9b793eb01a76f
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: f2df8491ca3af165681a76c039d63c42c008f2f8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349710"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062921"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 

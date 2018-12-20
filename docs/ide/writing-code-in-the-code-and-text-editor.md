@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的代码编辑器功能
+title: 代码编辑器功能
 ms.date: 02/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: ca203b0c27906d1f861689953ca55280f73fa894
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349070"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160109"
 ---
 # <a name="features-of-the-code-editor"></a>代码编辑器功能
 
@@ -91,7 +91,7 @@ Visual Studio 编辑器提供了许多功能，可方便你更加轻松地编写
 ## <a name="see-also"></a>请参阅
 
 - [源编辑器 (Visual Studio for Mac)](/visualstudio/mac/source-editor)
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [Visual Studio 中的 C++ 入门](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Visual Studio 中的 C# 和 ASP.NET 入门](../ide/tutorial-csharp-aspnet-core.md)
 - [Visual Studio 中的 Python 入门](../ide/quickstart-python.md)

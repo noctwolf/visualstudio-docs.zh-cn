@@ -1,5 +1,6 @@
 ---
-title: 教程 - 了解 Visual Studio 中的 Flask，步骤 2
+title: 学习 Visual Studio 中的 Flask 教程的第 2 步，视图和模板
+titleSuffix: ''
 description: Visual Studio 项目上下文中 Flask 基础知识的演练，具体介绍了创建应用以及使用视图和模板的步骤。
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbdf9232bdff56fa2d244f8baeed2d070dcb37a9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812609"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052940"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步骤 2：使用视图和页面模板创建 Flask 应用
 
-上一步：[创建 Visual Studio 项目和解决方案](learn-flask-visual-studio-step-01-project-solution.md)
+**上一步：[创建 Visual Studio 项目和解决方案](learn-flask-visual-studio-step-01-project-solution.md)**
 
 本教程的第 1 步创建了单页 Flask 应用并且所有代码都在单个文件中。 为了未来的开发，最好重构代码并创建页模板结构。 尤其建议将应用视图代码与启动代码等其他特性分离。
 
@@ -204,7 +206,7 @@ ms.locfileid: "49812609"
 
 实际上，在使用 Flask 项目时，Visual Studio 会自动检测到你正在编辑的 HTML 文件实际上是 Flask 模板，并提供某些自动完成功能。 例如，在开始键入 Flask 页面模板注释 `{#` 时，Visual Studio 会自动提供右边的 `#}` 字符。 “注释选定内容”和“取消注释选定内容”命令（在“编辑” > “高级”菜单上和工具栏上）也使用模板注释，而不是 HTML 注释。
 
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>问：我在运行项目时，看到了一个找不到模板的错误。 为什么会这样？
+### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>问：运行项目时发生了一个错误：找不到模板。 为什么会这样？
 
 答：如果看到无法找到模板的错误，请确保已将应用添加到 Flask 项目 `INSTALLED_APPS` 列表的 settings.py 中。 如果没有该条目，Flask 将不知道在应用的 templates 文件夹中查找。
 

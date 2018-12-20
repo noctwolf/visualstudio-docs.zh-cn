@@ -1,6 +1,6 @@
 ---
-title: 如何：使用命令行将探查器附加到 ASP.NET Web 应用程序中以收集并发数据 | Microsoft Docs
-ms.custom: ''
+title: 将探查器附加到 ASP.NET 应用以收集并发数据
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9c18b96f794f8317dacc890345ae544765bcb204
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c806150acf8fb37ab7e3fd36a879a6c1273b015a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831700"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063352"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 ASP.NET Web 应用程序中以收集并发数据
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集并发数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 ASP.NET Web 应用程序并收集进程和线程并发数据。  
 
  分析工具的命令行工具位于 Visual Studio 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要在命令提示符下使用探查器，必须将工具路径添加到**命令提示符**窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
@@ -38,7 +38,7 @@ ms.locfileid: "49831700"
 
      可将下表中的任意选项与 **/start** 选项一起使用。  
 
-   | 选项 | 描述 |
+   | 选项 | 说明 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` | 指定要向探查器授予访问权限的帐户的可选域和用户名。 |
    | [/crosssession](../profiling/crosssession.md) | 启用其他登录会话中的进程分析。 |
@@ -62,7 +62,7 @@ ms.locfileid: "49831700"
 
 -   下表中的 VSPerfCmd 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
-    |选项|描述|  
+    |选项|说明|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  

@@ -1,6 +1,7 @@
 ---
-title: Visual Studio 集成 (MSBuild) | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 集成 (MSBuild)
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: msbuild
 ms.topic: conceptual
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 874642371f173b56a174dabdd17ee1cf50cc79fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7449e8585cd9f1db8a4a43cddf8092f1a92c9758
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875471"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052418"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 Visual Studio 承载有 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用以加载和生成托管项目。 由于 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 负责处理项目，因此，可以在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中成功使用几乎任何 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]格式的项目（即使项目是用另一种工具编写的，而且这些项目有自定义的生成过程）。  
@@ -47,7 +48,7 @@ Visual Studio 承载有 [!INCLUDE[vstecmsbuild](../extensibility/internals/inclu
   
 ```xml  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
-Condition=" '$(Configuration)' == 'Release' "   
+Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   

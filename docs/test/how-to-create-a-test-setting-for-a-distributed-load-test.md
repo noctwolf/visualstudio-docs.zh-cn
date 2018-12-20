@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中为分布式负载测试创建测试设置
+title: 为分发的负载测试创建测试设置
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2f04912423dfdbd2baa7beab431871f814c044b0
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 69ce0f2504741c0bc48df0245202cdf0eefee20f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895465"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063310"
 ---
-# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>如何：为分布式负载测试创建测试设置
+# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>如何：为分发的负载测试创建测试设置
 
 配置负载测试的“测试设置”，以便可以使用测试代理和测试控制器在多台计算机间分发这些测试。 还可以将测试设置配置为使用诊断数据适配器，这些适配器指定从 Visual Studio 中运行负载测试时要收集的数据类型或者对测试计算机产生的影响。
 
@@ -127,14 +127,14 @@ Visual Studio 的测试设置存储在一个文件中。 测试设置定义了�
 
     |诊断数据适配器|在负载测试中使用|关联主题|
     |-|-------------------------|-|
-    |用于 IntelliTrace 和测试影响的 ASP.NET 客户端代理：此代理允许你为 IntelliTrace 和测试影响诊断数据适配器收集有关从客户端到 Web 服务器的 http 调用的信息。|![“信息”图标](../test/media/vc364f4.gif)<br /><br /> 除非你具有收集测试代理计算机的系统信息的特定需要，否则不要包含此适配器。 注意：建议不要在负载测试中使用 IntelliTrace 适配器，因为这样会因收集的数据量太大而导致问题。 <br /><br /> 测试影响数据不是使用负载测试收集到的。||
+    |**用于 IntelliTrace 和测试影响的 ASP.NET 客户端代理：** 通过此代理可收集有关从客户端到 IntelliTrace 和 Test Impact 诊断数据适配器的 Web 服务器的 http 调用的信息。|![“信息”图标](../test/media/vc364f4.gif)<br /><br /> 除非你具有收集测试代理计算机的系统信息的特定需要，否则不要包含此适配器。 注意：我们建议不要在负载测试中使用 IntelliTrace 适配器，因为这样会因收集的数据量太大而导致问题。 <br /><br /> 测试影响数据不是使用负载测试收集到的。||
     |**IntelliTrace：** 可以配置特定诊断跟踪信息，该信息存储在一个日志文件中。 该日志文件的扩展名为 .tdlog。 运行测试时如果某个测试步骤未通过，则可以创建一个 Bug。 包含诊断跟踪的日志文件会自动附加到此 Bug 中。 该日志文件中收集的数据可减少重现和诊断代码中的错误所需的时间，从而提高调试效率。 可以基于此日志文件在另一台计算机上重新创建本地会话。 这会降低无法重现 Bug 的风险。<br /><br /> 有关详细信息，请参阅[收集 IntelliTrace 数据](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。|![“重要事项”图标](../test/media/vc364f3.gif)<br /><br /> 我们建议不要在负载测试中使用 IntelliTrace 适配器，因为这样会因收集和记录的数据量太大而导致问题。 应该仅在运行时间不长、使用的测试代理不多的负载测试中尝试使用 IntelliTrace 适配器。|[如何：收集 IntelliTrace 数据以帮助调试难题](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
-    |ASP.NET 探查器：可以创建包含 ASP.NET 分析的测试设置，该分析收集 ASP.NET Web 应用程序的性能数据。|ASP.NET 探查器诊断数据适配器分析 Internet Information Services (IIS) 进程，因此它不针对开发 Web 服务器工作。 若要在负载测试中分析网站，必须在运行 IIS 的计算机上安装测试代理。 测试代理不生成负载，它是仅用于收集的代理。 有关详细信息，请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。|[如何：使用测试设置为负载测试配置 ASP.NET 探查器](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
+    |**ASP.NET 探查器：** 可以创建包含 ASP.NET 分析的测试设置，该分析收集 ASP.NET Web 应用程序的性能数据。|ASP.NET 探查器诊断数据适配器分析 Internet Information Services (IIS) 进程，因此它不针对开发 Web 服务器工作。 若要在负载测试中分析网站，必须在运行 IIS 的计算机上安装测试代理。 测试代理不生成负载，它是仅用于收集的代理。 有关详细信息，请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。|[如何：使用测试设置为负载测试配置 ASP.NET 探查器](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
     |**事件日志：** 可以将测试设置配置为包含事件日志收集，该事件日志将包含在测试结果中。||[如何：使用测试设置配置事件日志收集](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
-    |**网络仿真：** 可以使用测试设置指定希望在测试中放置人工网络负载。 网络仿真将仿真特定网络连接（如拨号连接）的速度，从而影响计算机的往来通信。 注意：网络仿真不能用于提高网络连接速度。|负载测试会忽略网络仿真适配器。 实际上，负载测试使用在负载测试方案的网络组合中指定的设置。<br /><br /> 有关详细信息，请参阅[指定虚拟网络类型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。||
+    |**网络仿真：** 可以使用测试设置指定希望在测试中放置人工网络负载。 网络仿真将仿真特定网络连接（如拨号连接）的速度，从而影响计算机的往来通信。 **注意：** 网络仿真不能用于提高网络连接速度。|负载测试会忽略网络仿真适配器。 实际上，负载测试使用在负载测试方案的网络组合中指定的设置。<br /><br /> 有关详细信息，请参阅[指定虚拟网络类型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。||
     |**系统信息：** 可以设置测试设置来包含有关在其上运行系统信息诊断和数据收集器的计算机的系统信息。 通过使用测试设置可在测试结果中指定系统信息。|![“信息”图标](../test/media/vc364f4.gif)<br /><br /> 你可以从负载代理和测试中的系统收集系统信息。|收集此信息不需要任何配置。|
     |**测试影响：** 可以收集在运行某个测试用例时使用了哪些应用程序代码方法的相关信息。 将它与开发人员进行的应用程序代码更改结合使用，可确定这些开发更改影响了哪些测试。|测试影响数据不是使用负载测试收集到的。||
-    |**视频录制器：** 运行自动测试时可以创建桌面会话的视频记录。 这对查看编码的 UI 测试的用户操作非常有用。 该视频可帮助其他团队成员隔离难以重现的应用程序问题。 注意：远程运行测试时，除非代理在交互式进程模式下运行，否则视频录制器不起作用。|![“重要事项”图标](../test/media/vc364f3.gif)注意：建议不要对负载测试使用视频录制器适配器。|[如何：使用测试设置在测试期间包括屏幕和语音录制](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**视频录制器：** 运行自动测试时可以创建桌面会话的视频记录。 这对查看编码的 UI 测试的用户操作非常有用。 该视频可帮助其他团队成员隔离难以重现的应用程序问题。 **注意：** 远程运行测试时，除非代理在交互式进程模式下运行，否则视频记录器不起作用。|![“重要事项”图标](../test/media/vc364f3.gif)警告：我们建议不要对负载测试使用视频记录器适配器。|[如何：使用测试设置在测试期间包括屏幕和语音录制](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. 选择“部署”。
 

@@ -1,5 +1,6 @@
 ---
-title: 教程 - 了解 Visual Studio 中的 Django，步骤 6
+title: 学习 Visual Studio 中的 Django 教程的第 6 步，为项目模板投票
+titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了投票 Django Web 项目模板的功能，例如管理自定义。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 94c858a847e0e5029a989a6939a2094ed3792903
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: ecc0637495b484ae06cb0f18e45ba329c7fa3407
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001251"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062491"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步骤 6：使用投票 Django Web 项目模板
 
-上一步：[在 Django 中对用户进行身份验证](learn-django-in-visual-studio-step-05-django-authentication.md)
+**上一步：[在 Django 中对用户进行身份验证](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
 在了解 Visual Studio 的“Django Web 项目”模板后，现在可以查看第三个 Django 模板，“投票 Django Web 项目”，该模板基于相同的代码库构建而成，并演示如何使用数据库。
 
@@ -206,7 +208,7 @@ Django 跟踪哪些迁移已经应用到任何给定数据库，这样，在运�
 
 答：可以，请使用 [django-admin showmigrations 命令](https://docs.djangoproject.com/en/2.0/ref/django-admin/#showmigrations)。
 
-## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>步骤 6-4：了解由项目模板创建的视图和页面模板
+## <a name="step-6-4-understand-the-views-and-page-templates-created-by-the-project-template"></a>步骤 6-4：了解通过项目模板创建的视图和页面模板
 
 “投票 Django Web 项目”模板所生成的大部分视图（例如“关于”和“联系人”页视图）都与你在本教程中使用的“Django Web 项目”模板所创建的视图非常相似。 投票应用的不同之处在于，其主页使用了这些模型，因为有几个附加页用于投票和查看投票结果。
 

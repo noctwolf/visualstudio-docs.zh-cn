@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中向 Web 性能测试添加数据源
+title: 将数据源添加到 Web 性能测试
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 13d0f405b59b95df0edbcfc5e6f051c1f3140035
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6d2ae95883884909641541e0efe6e4efbc7fe06a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896102"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065202"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>将数据源添加到 Web 性能测试
 
@@ -126,7 +126,7 @@ ms.locfileid: "52896102"
 
 ### <a name="q-what-databases-can-i-use-as-a-data-source"></a>问：可将什么数据库用作数据源？
 
-答：可以使用：
+**答：** 可以使用：
 
 - Microsoft SQL Azure。
 
@@ -142,7 +142,7 @@ ms.locfileid: "52896102"
 
 ### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>问：如何将逗号分隔的值 (CSV) 文本文件用作数据源？
 
-答：操作方法如下：
+**答：** 操作方法如下：
 
 1. 创建一个文件夹来组织项目数据库项目并添加一个项。
 
@@ -166,7 +166,7 @@ ms.locfileid: "52896102"
 
 ### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>问：如果我的现有 CSV 文件不包含列标头，该怎么办？
 
-答：如果不能添加列标头，则可以使用架构说明文件将 CSV 文件视为数据库。
+**答：** 如果不能添加列标头，则可以使用架构说明文件将 CSV 文件视为数据库。
 
 1. 添加名为 schema.ini 的新文本文件。
 
@@ -249,7 +249,7 @@ ms.locfileid: "52896102"
 
 ### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>问：我是否能将数据绑定添加到使用 SOAP 的 Web 服务请求？
 
-答：可以，必须手动更改 SOAP XML。
+**答：** 可以，必须手动更改 SOAP XML。
 
 1. 选择请求树中的 Web 服务请求，并在“属性”窗口中，选择 String Body 属性中的省略号 (…)。
 

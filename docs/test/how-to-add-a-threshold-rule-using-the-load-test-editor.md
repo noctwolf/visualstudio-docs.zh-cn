@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中为负载测试添加阈值规则
+title: 为负载测试添加阈值规则
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cddc0b9ca470fa43b00ec08b3b6316704df41e91
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ac4b542c7f9b557ad04ead05422f8c89cd4f909c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896323"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063365"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>如何：使用负载测试编辑器添加阈值规则
 
@@ -38,7 +38,7 @@ ms.locfileid: "52896323"
 
      “添加阈值规则”对话框随即显示。
 
-5.  可以从两类规则中进行选择：“比较常数”规则和“比较计数器”规则。 选择适当的类型并对值进行设置。
+5.  可以从两种规则中选择：“比较常数”和“比较计数器”。 选择适当的类型并对值进行设置。
 
     > [!NOTE]
     > 将“如果超过则发出警报”属性设置为“True”，指示高于阈值会出现问题；或者设为“False”，指示低于阈值会出现问题。

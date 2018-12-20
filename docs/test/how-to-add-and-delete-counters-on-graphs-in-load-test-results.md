@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 的负载测试结果中的关系图上添加和删除计数器
+title: 在负载测试结果中的关系图上添加和删除计数器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 21fa28e9ff149bcf117e3bde5d553a2cf641c04a
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c4cb68370a743381a13b88c8a5fdc7d61700cb17
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896518"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049933"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>如何：在负载测试结果中的关系图上添加和删除计数器
 
@@ -30,7 +30,7 @@ ms.locfileid: "52896518"
 
 **性能计数器采样间隔注意事项**
 
-基于负载测试的长度，在负载测试运行设置中为“采样率”属性选择一个值。 较小的采样速率（如 5 秒默认值）需要占用负载测试结果数据库中的更多空间。 对于更长的负载测试，增加采样速率会减少收集的数据量。 有关详细信息，请参阅[如何：指定采样率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
+基于负载测试的长度，在负载测试运行设置中为“采样率”属性选择一个值。 较小的采样速率（如 5 秒默认值）需要占用负载测试结果数据库中的更多空间。 对于更长的负载测试，增加采样速率会减少收集的数据量。 有关更多信息，请参见[如何：指定采样率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
 
 下面是有关采样速率的一些准则：
 
@@ -49,7 +49,7 @@ ms.locfileid: "52896518"
 
 负载测试结果储存库中存储计时详细信息数据所需的空间可能会非常大，尤其是对于运行时间较长的负载测试。 另外，在负载测试结束时将此数据存储到负载测试结果储存库中所需的时间也较长，因为在负载测试完成执行之前此数据一直存储在负载测试代理上。 负载测试完成时，数据将存储到储存库中。 默认情况下，将启用“计时详细信息存储”属性。 如果这对测试环境来说有问题，则可能需要将“计时详细信息存储”设置为“无”。
 
-有关详细信息，请参阅[如何：指定“计时详细信息存储”属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
+有关更多信息，请参见[如何：指定计时详细信息存储属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>在负载测试关系图上显示特定性能计数器
 
@@ -87,4 +87,4 @@ ms.locfileid: "52896518"
 ## <a name="see-also"></a>请参阅
 
 - [在关系图视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [如何：创建自定义关系图](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [如何：创建自定义图形](../test/how-to-create-custom-graphs-in-load-test-results.md)

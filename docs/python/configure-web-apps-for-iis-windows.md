@@ -1,23 +1,24 @@
 ---
 title: 为 Python Web 应用配置 IIS
 description: 如何将 Python Web 应用配置为使用 Windows 虚拟机中的 Internet Information Services 运行。
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4452eca221a772c2f0fd519df533e35468f3ecd8
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 8de69c64cac5c841867f5d993395e5ab380625eb
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459541"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062892"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>为 Python Web 应用配置 IIS
 
@@ -120,7 +121,7 @@ FastCGI 是在请求级别工作的接口。 IIS 接收传入的连接，并将�
         <add key="WSGI_HANDLER" value="flask_iis_example.app"/>
         ```
 
-    - Django：对于 Django 项目，需要对 web.config 进行两项更改。 首先，将 `WSGI_HANDLER` 值更改为 `django.core.wsgi.get_wsgi_application()`（该对象位于 wsgi.py 文件中）：
+    - **Django**：对于 Django 项目，需要对“web.config”进行两项更改。 首先，将 `WSGI_HANDLER` 值更改为 `django.core.wsgi.get_wsgi_application()`（该对象位于 wsgi.py 文件中）：
 
         ```xml
         <!-- Django apps only -->
@@ -133,7 +134,7 @@ FastCGI 是在请求级别工作的接口。 IIS 接收传入的连接，并将�
         <add key="DJANGO_SETTINGS_MODULE" value="django_iis_example.settings" />
         ```
 
-1. **仅限 Django 应用**：在 Django 项目的 settings.py 文件中，将网站 URL 域或 IP 地址添加到 `ALLOWED_HOSTS` 中，如下所示（当然要将“1.2.3.4”替换为你自己的 URL 或 IP 地址）：
+1. **仅限 Django 应用**：在 Django 项目的“settings.py”文件中，将网站 URL 域或 IP 地址添加到 `ALLOWED_HOSTS` 中，如下所示（当然要将“1.2.3.4”替换为你自己的 URL 或 IP 地址）：
 
     ```python
     # Change the URL or IP address to your specific site

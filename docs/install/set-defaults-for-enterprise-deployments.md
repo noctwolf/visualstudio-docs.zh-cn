@@ -1,8 +1,9 @@
 ---
-title: 为 Visual Studio 企业部署设置默认值
+title: 为企业部署设置默认值
 description: 了解 Visual Studio 企业部署的域策略和其他配置操作。
 ms.date: 05/05/2017
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -17,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5689a273ac5f80b3468b9020825b980b88966e3b
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: a173a378ba2165963b8ea9b44e7391807584886b
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139211"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159550"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>为 Visual Studio 企业部署设置默认值
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>为 Visual Studio 2017 企业部署设置默认值
 
 可以设置影响 Visual Studio 部署的注册表策略。 这些策略对新安装程序全局适用，并将影响：
 

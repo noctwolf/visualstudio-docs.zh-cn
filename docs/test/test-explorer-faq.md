@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 测试资源管理器常见问题解答
+title: 测试资源管理器常见问题解答
 ms.date: 11/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 49df84c5e852cfc282b6d679faf621669cf08148
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 59c4cd06ee6c698ceb62803fb43b611daa298512
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296329"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055259"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 测试资源管理器常见问题解答
 
@@ -122,8 +122,8 @@ Visual Studio 2019 中不再出现一些与测试相关的 API。进行了哪些
 
 最近的 UWP 测试项目指定了一个测试平台生成属性，通过它可提供更佳的测试应用识别性能。 如果具有在低于 Visual Studio 版本 15.7 的版本上初始化的 UWP 测试项目，可能会在“输出” > “测试”中看到该错误：
 
-System.AggregateException: 发生一个或多个错误。---> System.InvalidOperationException: 在 {}Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext() 中找不到以下 TestContainer
-  
+**System.AggregateException：出现一个或多个错误。---> System.InvalidOperationException：在 Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()** 处找不到以下 TestContainer {}
+
 修复此错误的方法：
 
 - 使用以下代码更新测试项目生成属性：

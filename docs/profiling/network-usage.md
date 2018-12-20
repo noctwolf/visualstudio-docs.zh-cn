@@ -1,6 +1,6 @@
 ---
-title: 分析 Visual Studio 中 UWP 应用中的网络使用情况 | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 分析 UWP 应用中的网络使用情况
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 06546e3d36e0568c27e4160342ad271a026b7b9e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220783"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062239"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP 应用中的网络使用情况
 Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http API](/uwp/api/windows.web.http) 执行的网络操作的数据。 分析数据可以帮助你解决问题（如访问和身份验证问题、不正确的缓存用法和不良的显示和下载性能）。  
@@ -75,6 +75,6 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
 ## <a name="see-also"></a>请参阅  
  [运行带/不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Visual Studio 博客：Visual Studio 网络检查器简介](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [第 9 频道视频：VS 诊断工具 – 新的网络探查器](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [第 9 频道视频：VS 诊断工具 - 新的网络探查器](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [使用 Visual Studio 分析](../profiling/index.md)  
  [首先了解分析工具](../profiling/profiling-feature-tour.md)

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中编写 C/C++ 单元测试
+title: 编写适用于 C/C++ 的单元测试
 ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e19eb3bb421a69c902d9a10f0cdb3c5ac2244a04
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879206"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053739"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 
@@ -73,7 +73,7 @@ C++ 单元测试项目支持 [CodeLens](../ide/find-code-changes-and-other-histo
 ### <a name="write-test-methods"></a>编写测试方法
 
 > [!NOTE]
-> 此部分演示适用于 C/C++ 的 Microsoft 单元测试框架的语法。 它在此处进行介绍：[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 参考](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。 有关 Google Test 文档，请参阅 [Google Test 入门](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)。 有关 Boost.Test，请参阅 [Boost Test 库：单元测试框架](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)。
+> 此部分演示适用于 C/C++ 的 Microsoft 单元测试框架的语法。 记录在此处：[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API reference](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。 有关 Google Test 文档，请参阅 [Google Test 入门](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)。 有关 Boost.Test，请参阅 [Boost Test 库：单元测试框架](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)。
 
 测试项目中的 .cpp 文件有一个为你定义的存根类和方法，用作有关如何编写测试代码的示例。 请注意，签名使用 TEST_CLASS 和 TEST_METHOD 宏，它们使方法可在测试资源管理器窗口中被发现。
 
@@ -119,7 +119,7 @@ TEST_METHOD(TestClassInit)
 
 ## <a name="use-codelens"></a>使用 CodeLens
 
-**仅限 Visual Studio 2017 版本 15.7 Professional 和 Enterprise**：借助 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)，无需离开代码编辑器，即可快速查看单元测试状态。 若要为 C++ 单元测试项目初始化 CodeLens，可使用下面的方法之一：
+**Visual Studio 2017 版本 15.7（仅限 Professional 和 Enterprise 版本）**：通过 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)，无需离开代码编辑器即可快速查看单元测试的状态。 若要为 C++ 单元测试项目初始化 CodeLens，可使用下面的方法之一：
 
 - 编辑和生成测试项目或解决方案。
 - 重新生成项目或解决方案。

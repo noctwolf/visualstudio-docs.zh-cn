@@ -1,24 +1,25 @@
 ---
 title: 快速入门 - 使用 Cookiecutter 创建 Python 项目
 description: 在此快速入门教程中，使用 Cookiecutter 模板创建适合 Python 的 Visual Studio 项目。
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4f2fcf8422c0fa11e1f43723d4337804720050
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: b8ad6d53a337e6a2a0d879ff9637156fb3d6d791
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995886"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062698"
 ---
-# <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入门：从 Cookiecutter 模板创建项目
+# <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入门：通过 Cookiecutter 模板创建项目
 
 [在 Visual Studio 2017 中安装 Python 支持](installing-python-support-in-visual-studio.md)后，就可以从 Cookiecutter 模板轻松创建新项目，其中包括许多发布到 GitHub 的模板。 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) 可提供图形用户界面，用于发现模板、输入模板选项以及创建项目和文件。 Cookiecutter 在 Visual Studio 2017 中随附，在 Visual Studio 早期版本中可单独安装。
 

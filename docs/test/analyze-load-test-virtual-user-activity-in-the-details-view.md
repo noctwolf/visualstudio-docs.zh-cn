@@ -1,5 +1,5 @@
 ---
-title: 分析 Visual Studio 中的负载测试虚拟用户活动
+title: 分析负载测试虚拟用户活动
 ms.date: 10/03/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 58ab8859bffa89ae19eed6d37c442b71f98ef224
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: ff4d71af450fa6d3f907bb1e1b5b963044e959ff
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896089"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059903"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>在负载测试分析器的详细信息视图中分析负载测试虚拟用户活动
 
@@ -57,9 +57,9 @@ ms.locfileid: "52896089"
 
 |任务|关联主题|
 |-|-|
-|运行负载测试：创建负载测试并将其配置为启用虚拟用户活动数据收集后，必须运行该测试，直到全部完成后才能查看其虚拟用户活动图。||
-|查看包含虚拟用户活动数据的负载测试结果：创建、配置并运行完负载测试后，可以使用虚拟用户活动图查看虚拟用户活动数据。|-   [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [如何：分析虚拟用户在负载测试期间的操作](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|隔离负载测试中的性能问题：可以使用虚拟用户活动图来帮助隔离负载测试中的性能问题。|-   [演练：使用虚拟用户活动图隔离问题](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**运行负载测试：** 创建负载测试并将其配置为启用虚拟用户活动数据收集后，必须运行该测试，直到全部完成后才能查看其“虚拟用户活动图”。||
+|**查看包含虚拟用户活动数据的负载测试结果：** 创建、配置并运行完负载测试后，可以使用虚拟用户活动图查看“虚拟用户活动图”。|-   [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [如何：分析虚拟用户在负载测试期间的操作](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**隔离负载测试中的性能问题：** 可以使用“虚拟用户活动图”来帮助隔离负载测试中的性能问题。|-   [演练：使用虚拟用户活动图隔离问题](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>请参阅
 

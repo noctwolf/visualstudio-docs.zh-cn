@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的负载测试记录设置
+title: 负载测试日志记录设置
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24bb1b3af468f35ae333407fc96c42f4f9e669b
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: f280911be68616a1c2632195769547023832b061
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894880"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060033"
 ---
 # <a name="modify-load-test-logging-settings"></a>修改负载测试日志记录设置
 
@@ -27,8 +27,8 @@ ms.locfileid: "52894880"
 
 |任务|关联主题|
 |-|-----------------------|
-|**在负载测试未通过时保存日志：** 可以指定是否每当负载测试未通过就保存测试日志。|-   [如何：指定是否将测试失败保存到测试日志中](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**为日志文件设置最大文件大小：** 可以编辑与测试控制器服务关联的 XML 配置文件，以指定要用于日志文件的最大文件大小。|[如何：为日志文件指定最大大小](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**在负载测试失败时保存日志：** 可以指定是否每当负载测试未通过就保存测试日志。|-   [如何：指定是否将测试失败保存到测试日志中](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**为日志文件指定最大文件大小：** 可以编辑与测试控制器服务关联的 XML 配置文件，以指定要用于日志文件的最大文件大小。|[如何：为日志文件指定最大文件大小](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
 
 ## <a name="see-also"></a>请参阅
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中编写 C/C++ DLL 单元测试
+title: 编写 C++ DLL 单元测试
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 829882cf3504583a4e9dbc3532c900df26a921f2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 045f33c2afcb4f37f5ab81beb21e778edbdd1a61
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862515"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53056170"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ DLL 单元测试
 
@@ -28,13 +28,13 @@ ms.locfileid: "49862515"
 
  转到过程[将测试与对象或库文件相关联的具体步骤](#objectRef)。
 
- **单元测试调用不从 DLL 导出的非成员函数，并且 DLL 可以生成为静态库：** 更改 DLL 项目，以便将其编译为 .lib 文件。 添加引用所测试项目的单独测试项目。
+ **单元测试调用不从 DLL 导出的非成员函数，并且 DLL 可以生成为静态库：** 更改 DLL 项目，以将它编译为 .lib 文件。 添加引用所测试项目的单独测试项目。
 
  此方法的好处是，允许测试使用非导出成员，但测试仍保留在单独的项目中。
 
  转到过程[将 DLL 更改为静态库的具体步骤](#staticLink)。
 
- **单元测试必须调用不导出的非成员函数，并且代码必须生成为动态链接库 (DLL)：** 在同一项目中添加单元测试作为产品代码。
+ **单元测试必须调用不导出的非成员函数，并且代码必须生成为动态链接库 (DLL)：** 在产品代码所在项目中添加单元测试。
 
  转到过程[在同一项目中添加单元测试的具体步骤](#sameProject)。
 

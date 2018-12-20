@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用“查看定义”
+title: 使用查看定义
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c64f271f041c28dc621ed85a8cd9d79c36caa3dd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 518256c550f56832c6711ab6d2ca2dae4eb0aa2c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746710"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059647"
 ---
-# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用“查看定义”查看和编辑代码 (Alt+F12)
+# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用“查看定义”(Alt+F12) 查看和编辑代码
 
 可使用“查看定义”命令来查看和编辑代码，而无需离开正在编写的代码。 “查看定义”和“转到定义”显示相同的信息，但“查看定义”在弹出窗口中显示，而“转到定义”在单独的代码窗口中显示代码。 “转到定义”将导致上下文（即活动的代码窗口、当前行和光标位置）切换到定义代码窗口。 使用“速览定义”时，无需离开原始代码文件就能查看和编辑定义，还能在定义文件内部到处移动。
 

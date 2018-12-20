@@ -1,7 +1,7 @@
 ---
 title: 衡量应用中的内存使用情况
 description: 在使用集成了调试器的诊断工具进行调试时，查找内存泄漏和低效内存。
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eeacfb15b02c19ea4a166fbc8511aab644d41ea5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 622f35ccbe29130dea3b35b96373da0c8b39e0b7
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861405"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052072"
 ---
-# <a name="profile-memory-usage-in-visual-studio"></a>在 Visual Studio 中分析内存使用情况
+# <a name="measure-memory-usage-in-visual-studio"></a>在 Visual Studio 中衡量内存使用情况
 使用集成了调试器的内存使用情况诊断工具在进行调试时查找内存泄漏和低效内存。 通过内存使用率工具可以拍摄托管和本机内存堆的一个或多个快照，帮助理解对象类型的内存使用率影响。 可以收集 .NET、本机或混合模式（.NET 和本机）应用的快照。  
   
  下图显示“诊断工具”窗口（Visual Studio 2015 Update 1 及更高版本中提供）：  
@@ -63,11 +63,11 @@ ms.locfileid: "49861405"
      ![诊断工具“摘要”选项卡](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  因为收集内存数据可能会影响本机或混合模式应用的调试性能，所以内存快照在默认情况下处于禁用状态。 若要对本机或混合模式应用启用快照，请启动调试会话（快捷键：**F5**）。 当“诊断工具”窗口出现时，选择“内存使用情况”选项卡，然后选择“堆分析”。  
+     >  因为收集内存数据可能会影响本机或混合模式应用的调试性能，所以内存快照在默认情况下处于禁用状态。 若要对本机或混合模式应用启用快照，请启动调试会话（快捷键：F5）。 当“诊断工具”窗口出现时，选择“内存使用情况”选项卡，然后选择“堆分析”。  
      >   
      >  ![启用快照](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
-     >  停止（快捷键：Shift+F5）并重新开始调试。  
+     >  停止（快捷键：Shift+F5）并重启调试。  
 
 6.  若要在调试会话开始时拍摄快照，请选择“内存使用率”摘要工具栏上的“拍摄快照”。 （在此处设置断点可能也会有所帮助。）
 

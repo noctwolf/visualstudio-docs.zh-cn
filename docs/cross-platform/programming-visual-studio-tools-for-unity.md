@@ -5,17 +5,17 @@ ms.date: 11/04/2016
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: a5758cb0-e73b-45f5-8cae-c0eb40491026
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 48a557addca76c4be56b19890e9abdf8c9eca38d
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 0811445e2dcf985aef7b6449ff3fb86c5ac9a1c8
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252435"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027369"
 ---
 # <a name="program-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity 进行编程
 本部分将介绍使用 Visual Studio Tools for Unity API 的示例。
@@ -27,4 +27,4 @@ ms.locfileid: "39252435"
  Visual Studio Tools for Unity 在项目文件生成期间提供 Unity 风格的回调。 若要了解每当项目文件重新生成时如何对其进行修改，请参阅[示例：项目文件生成](../cross-platform/customize-project-files-created-by-vstu.md)。
 
 ### <a name="share-the-unity-log-callback-with-vstu"></a>与 VSTU 共享 Unity 日志回调
- Visual Studio Tools for Unity 对 Unity 注册了一个日志回调，能够将其控制台流式传输到 Visual Studio。 如果编辑器脚本也对 Unity 注册了一个日志回调，则 VSTU 回调可能会妨碍此回调。 若要了解如何与 VSTU 共享 Unity 日志回调，请参阅[示例：日志回调](../cross-platform/share-the-unity-log-callback-with-vstu.md)。
+ Visual Studio Tools for Unity 对 Unity 注册了一个日志回调，能够将其控制台流式传输到 Visual Studio。 如果编辑器脚本也对 Unity 注册了一个日志回调，则 VSTU 回调可能会妨碍此回调。 若要了解如何与 VSTU 共享 Unity 日志回叫，请参阅[示例：日志回叫](../cross-platform/share-the-unity-log-callback-with-vstu.md)。

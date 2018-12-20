@@ -1,5 +1,5 @@
 ---
-title: 适用于 Visual Studio 的负载测试的计数器集和阈值规则
+title: 适用于负载测试的计数器集和阈值规则
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dba28aea3a4859c9767925a0ac3c7b2ec8e75275
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3cbdd30022b521803662f18b8d3438c6b1ddb37c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894503"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057413"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>为负载测试中的计算机指定计数器集和阈值规则
 
@@ -41,14 +41,14 @@ ms.locfileid: "52894503"
 
 |任务|相关主题|
 |-|-----------------------|
-|**管理负载测试的计数器集：** 创建负载测试后，可以在负载测试编辑器中编辑计数器集。 管理计数器集包括选择要从中收集性能数据的计算机集，并指定用于从各个计算机收集数据的计数器集。 可在负载测试编辑器中管理计数器。|-   如何：管理计数器集[](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
-|**向负载测试添加计数器集：** 在使用“新建负载测试向导”创建负载测试时，可添加一个初始的计数器集。 该计数器集为您的负载测试提供了一组预定义计数器集。 创建负载测试后，可以使用负载测试编辑器向现有计数器集添加新的计数器。|-   [如何：向计数器集中添加计数器](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [如何：添加自定义计数器集](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
-|**指定对负载测试使用计数器的阈值规则：** 阈值规则是对单个性能计数器进行设置以在负载测试过程中监视系统资源使用情况的规则。 计数器集定义中包含有许多关键性能计数器的预定义阈值规则。 负载测试中的阈值规则将一个性能计数器值与一个常数值或另一个性能计数器值进行比较。|-   [如何：添加阈值规则](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**为计数器集映射到的计算机指定友好名称：** 可以添加计算机标记，通过这些标记可向计算机应用易于识别的名称。 在负载测试编辑器中，这些标记显示在树的“计数器集映射”节点中。 更重要的是，这些标记将显示在 Excel 报表中，可以帮助利益干系人标识计算机在负载测试中的角色，例如“Web Server1 in lab2”或“SQL Server2 in Phoenix office”。<br /><br /> 有关详细信息，请参阅[报告负载测试结果以比较测试或进行趋势分析](../test/compare-load-test-results.md)。||
+|**管理负载测试的计数器集：** 创建负载测试后，可以在负载测试编辑器中编辑计数器集。 管理计数器集包括选择要从中收集性能数据的计算机集，并指定用于从各个计算机收集数据的计数器集。 可在负载测试编辑器中管理计数器。|-   [如何：管理计数器集](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
+|**向负载测试添加计数器集：** 使用“新建负载测试向导”创建负载测试时，需添加一个初始计数器集。 该计数器集为您的负载测试提供了一组预定义计数器集。 创建负载测试后，可以使用负载测试编辑器向现有计数器集添加新的计数器。|-   [如何：向计数器集中添加计数器](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [如何：添加自定义计数器集](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
+|**指定对负载测试应用计数器的相关阈值规则：**“阈值规则”即对单个性能计数器进行设置以在负载测试过程中监视系统资源使用情况的规则。 计数器集定义中包含有许多关键性能计数器的预定义阈值规则。 负载测试中的阈值规则将一个性能计数器值与一个常数值或另一个性能计数器值进行比较。|-   [如何：添加阈值规则](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
+|**将友好名称分配给计数器集映射到的计算机：** 可添加计算机标记，以便为计算机应用易于识别的名称。 在负载测试编辑器中，这些标记显示在树的“计数器集映射”节点中。 更重要的是，这些标记将显示在 Excel 报表中，可以帮助利益干系人标识计算机在负载测试中的角色，例如“Web Server1 in lab2”或“SQL Server2 in Phoenix office”。<br /><br /> 有关详细信息，请参阅[报告负载测试结果以比较测试或进行趋势分析](../test/compare-load-test-results.md)。||
 
 ## <a name="use-counter-sets"></a>使用计数器集
 
-负载测试工具会不断地使用计数器收集性能数据并绘制相应的图形。 在负载测试运行期间，将按用户指定的时间间隔收集计数器数据。 有关详细信息，请参阅[如何：指定采样率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。 使用负载测试分析器，可以在运行时查看计数器，或者在负载测试运行完成后查看计数器。
+负载测试工具会不断地使用计数器收集性能数据并绘制相应的图形。 在负载测试运行期间，将按用户指定的时间间隔收集计数器数据。 有关更多信息，请参见[如何：指定采样率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。 使用负载测试分析器，可以在运行时查看计数器，或者在负载测试运行完成后查看计数器。
 
 将在服务器和任何运行测试的计算机上收集计数器数据。 如果设置了一组代理计算机来运行测试，则还将收集这些计算机上的计数器。
 
@@ -58,13 +58,13 @@ ms.locfileid: "52894503"
 
 各个 HTTP 请求的性能数据由运行测试的计算机报告。 如代理计算机。 对于请求，可以监视“Average Time to First Byte”（收到第一个字节的平均时间）、“Response Time”（响应时间）和“Requests per Second”（每秒请求数）等数据。
 
-为了便于在 Web 服务器上收集性能数据，Visual Studio Enterprise 还基于在负载测试中使用的技术提供了预定义的命名计数器集。 这些计数器集在您分析运行 IIS、ASP.NET 或 SQL Server 的服务器时很有用。 可以使用负载测试编辑器添加默认的计数器集中没有提供的计数器。 请务必将正在测试的计算机或服务器添加到负载测试中，以确保可以监视这些计算机上的资源使用情况。 有关详细信息，请参阅[如何：管理计数器集](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)。
+为了便于在 Web 服务器上收集性能数据，Visual Studio Enterprise 还基于在负载测试中使用的技术提供了预定义的命名计数器集。 这些计数器集在您分析运行 IIS、ASP.NET 或 SQL Server 的服务器时很有用。 可以使用负载测试编辑器添加默认的计数器集中没有提供的计数器。 请务必将正在测试的计算机或服务器添加到负载测试中，以确保可以监视这些计算机上的资源使用情况。 有关更多信息，请参见[如何：管理计数器集](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)。
 
 负载运行的结果分析经常要求您具备某个方面的专业知识，这样才能知道需要收集哪些数据、在哪些地方设置阈值规则以及如何判别测量值反映出的应用程序中的特定问题。 有关详细信息，请参阅[关于阈值规则](#about-threshold-rules)。
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>性能计数器采样间隔注意事项
 
-根据负载测试的长度，可在负载测试运行设置中为“采样速率”属性选择适当的值。 较小的采样速率（如 5 秒默认值）需要占用负载测试结果数据库中的更多空间。 对于较长的负载测试，增加采样速率会减少收集的数据量。 有关详细信息，请参阅[如何：指定采样率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
+根据负载测试的长度，可在负载测试运行设置中为“采样速率”属性选择适当的值。 较小的采样速率（如 5 秒默认值）需要占用负载测试结果数据库中的更多空间。 对于较长的负载测试，增加采样速率会减少收集的数据量。 有关更多信息，请参见[如何：指定采样率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
 
 下面是有关采样速率的一些准则。
 
