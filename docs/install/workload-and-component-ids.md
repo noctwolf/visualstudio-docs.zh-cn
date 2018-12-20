@@ -1,5 +1,6 @@
 ---
-title: Visual Studio 2017 工作负荷和组件 ID
+title: Visual Studio 工作负荷和组件 ID
+titleSuffix: ''
 description: 使用工作负载和组件 ID 通过命令行安装 Visual Studio 或指定为 VSIX 清单中的依赖项
 keywords: ''
 author: TerryGLee
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - install Visual Studio, administrator guide
 ms.service: ''
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 96332b767f2bc44561358880c392cb6d96db297b
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 3b88d563ca5a3fa2114c6bff31cf01b2956e69a3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607466"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159472"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 工作负荷和组件 ID
 

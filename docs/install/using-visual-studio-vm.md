@@ -1,8 +1,10 @@
 ---
 title: 在 Azure 虚拟机上使用 Visual Studio
+titleSuffix: ''
 description: 了解如何在 Azure 虚拟机上使用 Visual Studio
 ms.date: 09/12/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0d51e1c5c3ba94363c2ce0377f3d1a5e22c582
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: fc3ceb0caa8e5b8e135c2fad3bbab28c51773ae6
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895837"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159966"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -37,7 +39,7 @@ ms.locfileid: "52895837"
 |   Visual Studio 2019：预览版（预览版 1）                   |           企业         | 16.0.0 预览版 1 |
 | Visual Studio 2017：最新（版本 15.9）                    |    Enterprise，Community     |      版本 15.9.0      |
 |         Visual Studio 2017：RTW                              |    Enterprise，Community     |      版本 15.0.18     |
-|   Visual Studio 2015：最新 (Update 3)                      |    Enterprise，Community     |  版本 14.0.25431.01   |
+|   Visual Studio 2015：最新（更新 3）                      |    Enterprise，Community     |  版本 14.0.25431.01   |
 |         Visual Studio 2015：RTW                              |             无             | （已过维护期限）  |
 
 > [!NOTE]
@@ -99,7 +101,7 @@ Visual Studio 在 Azure 中遵循“自带许可”模型。 与在专有硬件�
 
 开发环境的范围非常大，构建更为复杂的环境将产生高昂的成本。 无论环境配置如何，都可以将配置的 VM 保存或捕获为“基础映像”，以供将来使用或由团队其他成员使用。 然后，在启动新的 VM 时，从基础映像而不是从 Azure 市场映像对其进行预配。
 
-简而言之：使用系统准备工具 (Sysprep) 并关闭正在运行的 VM，然后通过 Azure 门户的 UI 来捕获（图 1） VM 作为映像。 Azure 将在你所选的存储帐户中保存包含映像的 `.vhd` 文件。 然后，新映像将在资源订阅列表中显示为映像资源。
+概要：使用系统准备工具 (Sysprep) 并关闭正在运行的 VM，然后通过 Azure 门户的 UI 来捕获（图 1）VM 作为映像。 Azure 将在你所选的存储帐户中保存包含映像的 `.vhd` 文件。 然后，新映像将在资源订阅列表中显示为映像资源。
 
 <img src="media/capture-vm.png" alt="Capture an image through the Azure portal’s UI" style="border:3px solid Silver; display: block; margin: auto;"><center>（图 1）通过 Azure 门户 UI 捕获映像</center>
 

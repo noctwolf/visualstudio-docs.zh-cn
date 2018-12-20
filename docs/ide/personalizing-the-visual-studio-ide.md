@@ -1,5 +1,5 @@
 ---
-title: 自定义 Visual Studio IDE
+title: 自定义 IDE
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f52061acff03a1339a9c7b7f3f8ff4901ec6a5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cfd3ed3461b40f85e66d62f01e68aff4ce740031
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388720"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159498"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>个性化设置 Visual Studio IDE
 
@@ -42,7 +42,7 @@ ms.locfileid: "52388720"
 
 若要在浅色、深色和蓝色之间更改颜色主题，请在“快速启动”框中键入 `environment` 并选择“环境”-->“常规”。 在“选项”对话框中，更改“颜色主题”选项。
 
-若要更改编辑器中的着色选项，请在“快速启动”框中键入 `environment`，然后选择“环境”-->“字体和颜色”。 请参阅[如何：更改字体和颜色](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+若要更改编辑器中的着色选项，请在“快速启动”框中键入 `environment`，然后选择“环境”-->“字体和颜色”。 请参阅[如何：更改字体和颜色](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)。
 
 ### <a name="main-menu-casing"></a>主菜单中的大小写
 
@@ -50,7 +50,7 @@ ms.locfileid: "52388720"
 
 ### <a name="customize-menus-and-toolbars"></a>自定义菜单和工具栏
 
-若要添加或删除菜单项或工具栏项，请参阅[如何：自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
+若要添加或删除菜单或者工具栏项，请参阅[如何：自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
 
 ## <a name="start-page"></a>起始页
 
@@ -67,6 +67,6 @@ ms.locfileid: "52388720"
 ## <a name="see-also"></a>请参阅
 
 - [环境设置](environment-settings.md)
-- [Visual Studio IDE 概述](../ide/visual-studio-ide.md)
+- [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)
 - [快速入门：初步了解 Visual Studio IDE](../ide/quickstart-ide-orientation.md)
 - [自定义 Visual Studio for Mac IDE](/visualstudio/mac/customizing-the-ide)

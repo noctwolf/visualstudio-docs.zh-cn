@@ -1,5 +1,6 @@
 ---
-title: 教程 - 了解 Visual Studio 中的 Django，步骤 4
+title: 学习 Visual Studio 中的 Django 教程的第 4 步，Web 项目模板
+titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了 Django Web 项目模板提供的功能。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f087086343623d0a8e698821902a5cf92598061e
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 865a0368933fa0a66728afaead6677cbeca84834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001199"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065456"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>步骤 4：使用完整的 Django Web 项目模板
 
-上一步：[为静态文件提供服务、添加页面和使用模板继承](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
+**上一步：[提供静态文件、添加页面和使用模板继承](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
 通过在 Visual Studio 中的“空白 Django Web 项目”模板上生成应用，你已经了解了 Django 的基础知识，现在可以轻松地了解“Django Web 项目”模板生成的更完整的应用。
 
@@ -75,7 +77,7 @@ ms.locfileid: "52001199"
 - app 文件夹包含所有应用文件，包括视图、模型、测试、窗体、模板和静态文件（请参阅步骤 4-2）。 通常会重命名此文件夹，使用一个更有特色的应用名称。
 - DjangoWeb （Django 项目）文件夹包含典型的 Django 项目文件：\_\_init\_\_.py、settings.py、urls.py 和 wsgi.py。 通过使用项目模板，已经为应用和数据库文件配置了 settings.py，且为 urls.py 配置了到所有应用程序页（包括登录窗体）的路由。
 
-### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>问：能否在 Visual Studio 项目之间共享虚拟环境？
+### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>问：能否能在 Visual Studio 项目之间共享虚拟环境？
 
 答：可以，但在执行此操作时请注意，随着时间的推移，不同的项目可能会使用不同的包，因此共享的虚拟环境必须包含使用它的所有项目的所有包。
 

@@ -1,5 +1,5 @@
 ---
-title: 对 Visual Studio 项目模板和项模板加载进行故障排除
+title: 对项目模板和项模板加载进行故障排除
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4bb6a10e92bf8f26ffbcb81796b3c5c8371600b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2963bdbd4f788f6321d963bc52001f1875c48a14
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943314"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061864"
 ---
-# <a name="how-to-troubleshoot-templates"></a>如何：对模板进行故障排除
+# <a name="how-to-troubleshoot-templates"></a>如何：模板疑难解答
 
 如果模板在开发环境中无法加载，可以采用以下几种方法找出问题。
 

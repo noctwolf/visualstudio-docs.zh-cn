@@ -1,5 +1,6 @@
 ---
-title: Windows 上 Visual Studio 中的 Python 支持概述
+title: Windows 上 Visual Studio 中的 Python 支持
+titleSuffix: ''
 description: Visual Studio 中的 Python 功能摘要，这些功能让 Visual Studio 成为 Windows 上卓越的 Python IDE（也称为针对 Visual Studio 的 Python 工具，PTVS）。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +9,16 @@ ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fba2c426db3269a1f9bef3a0759bd6ffaa7f447e
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: cec872f5df927bae3caf20f35d4bcd8f8e7460b3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001329"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068534"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
@@ -74,7 +76,7 @@ Visual Studio 还支持 REPL 中的 IPython/Jupyter，包括内联图、.NET 和
 
 更多相关信息：
 
-- 视频（2 分 22 秒）：[Python 交互窗口](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
+- 视频（2 分 22 秒：[Python 交互窗口](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
 - 文档：[交互窗口](python-interactive-repl-in-visual-studio.md)
 - 文档：[Visual Studio 中的 IPython](interactive-repl-ipython.md)
 
@@ -95,7 +97,7 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 项目不仅�
 - 文档：[Python 项目模板](managing-python-projects-in-visual-studio.md#project-templates)
 - 文档：[使用 C++ 和 Python](working-with-c-cpp-python-in-visual-studio.md)
 - 常规 Visual Studio 功能文档：[项目和项模板](../ide/creating-project-and-item-templates.md#visual-studio-templates)
-- 常规 Visual Studio 功能文档：[Visual Studio 中的 解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)
+- 常规 Visual Studio 功能文档：[Visual Studio 中的解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)
 
 ## <a name="full-featured-debugging"></a>功能完备的调试
 
@@ -109,7 +111,7 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 项目不仅�
 - 文档：[调试 Python](debugging-python-in-visual-studio.md)
 - 文档：[Python/C++ 混合模式调试](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - 文档：[在 Linux 上进行远程调试](debugging-python-code-on-remote-linux-machines.md)
-- 常规 Visual Studio 功能文档：[Visual Studio 调试程序的功能简介](../debugger/debugger-feature-tour.md)
+- 常规 Visual Studio 功能文档：[Visual Studio 调试器功能导览](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>具有丰富报表的分析工具
 
@@ -121,7 +123,7 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 项目不仅�
 
 - 视频：[分析 Python（3 分 0 秒）](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
 - 文档：[Python 分析工具](profiling-python-code-in-visual-studio.md)
-- 常规 Visual Studio 功能文档：[分析功能简介](../profiling/profiling-feature-tour.md)。 （并非所有 Visual Studio 分析功能都可用于 Python）。
+- 常规 Visual Studio 功能文档：[分析功能导览](../profiling/profiling-feature-tour.md)。 （并非所有 Visual Studio 分析功能都可用于 Python）。
 
 ## <a name="unit-testing-tools"></a>单元测试工具
 

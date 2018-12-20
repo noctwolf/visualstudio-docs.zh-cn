@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中通过测试资源管理器进行测试驱动开发
+title: 通过测试资源管理器进行测试驱动开发
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8dcdd51a53c27ffe5a1bde3170c683d8b1a753b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3303f45006fd0f85d2e11434043091d3f72b469e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837082"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062899"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>快速入门：通过测试资源管理器进行测试驱动开发
 
@@ -53,13 +53,13 @@ ms.locfileid: "49837082"
 
     “测试资源管理器”将打开并显示结果摘要。
 
-   **若要查看完整测试列表：** 请在任意类别中选择 **“全部显示”** 。
+   **查看完整的测试列表：** 请在任一类别中选择“全部显示”。
 
-   **若要查看测试结果的详细信息：** 请在“测试资源管理器”中选择该测试以查看详细信息，例如详细信息窗格中的异常消息。
+   **查看测试结果的详细信息：** 请在“测试资源管理器”中选择该测试以查看详细信息，例如详细信息窗格中的异常消息。
 
-   **若要导航到测试的代码：** 请在“测试资源管理器”中双击该测试或从快捷菜单上选择 **“打开测试”** 。
+   **导航到测试的代码：** 请在“测试资源管理器”中双击该测试或从快捷菜单上选择“打开测试”。
 
-   **若要调试测试：** 请打开一个或多个测试的快捷菜单，然后选择 **“调试选定的测试”**。
+   **调试测试：** 请打开一个或多个测试的快捷菜单，然后选择“调试选定的测试”。
 
 > [!IMPORTANT]
 > 显示的结果是最近运行的测试结果。 彩色的结果栏仅显示曾经运行的测试的结果。 例如，你运行过多个测试，其中部分失败，然后仅运行了成功的测试，则结果栏将完全显示绿色。

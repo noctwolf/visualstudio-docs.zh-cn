@@ -1,7 +1,8 @@
 ---
-title: 安装 Visual Studio 2017 | Microsoft Docs
+title: 安装 Visual Studio
+titleSuffix: ''
 description: 了解如何逐步安装 Visual Studio。
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -19,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349684"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159732"
 ---
 # <a name="install-visual-studio-2017"></a>安装 Visual Studio 2017
 
@@ -125,7 +126,7 @@ ms.locfileid: "51349684"
 
 ## <a name="step-7---change-the-installation-location-optional"></a>第 7 步 - 更改安装位置（可选）
 
-**15.7 的新增功能**：现在可减少系统驱动器上 Visual Studio 的安装量。 可以选择将下载缓存、共享组件、SDK 和工具移动到不同驱动器，并将 Visual Studio 安装在其运行速度最快的驱动器上。
+**15.7 中的新增功能**：现在可减少系统驱动器上 Visual Studio 的安装量。 可以选择将下载缓存、共享组件、SDK 和工具移动到不同驱动器，并将 Visual Studio 安装在其运行速度最快的驱动器上。
 
   ![Visual Studio 2017 - 更改安装位置](media/installation-options-by-location.png "更改安装位置")
 

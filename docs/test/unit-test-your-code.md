@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的单元测试
+title: 单元测试
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e9bb75c6d7265ca66ccc0922e2d26deaa4d7857a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b38d68d9883325d0654d476a869887bf8dc48a0c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874834"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057072"
 ---
 # <a name="unit-test-your-code"></a>对代码进行单元测试
 
@@ -45,11 +45,11 @@ ms.locfileid: "49874834"
 |任务|相关主题|
 |-|-----------------------|
 |**快速入门和演练：** 借助以下主题从代码示例中学习 Visual Studio 中的单元测试。|-   [演练：创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [将单元测试添加到现有 C++ 应用程序](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
-|**使用“测试资源管理器”进行单元测试：** 了解“测试资源管理器”如何帮助创建成效和效率更高的单元测试。|-   [单元测试基本信息](../test/unit-test-basics.md)<br />-   [创建单元测试项目](../test/create-a-unit-test-project.md)<br />-   [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)<br />-   [安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)|
+|**使用测试资源管理器进行单元测试：** 了解“测试资源管理器”如何帮助创建成效和效率更高的单元测试。|-   [单元测试基本信息](../test/unit-test-basics.md)<br />-   [创建单元测试项目](../test/create-a-unit-test-project.md)<br />-   [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)<br />-   [安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)|
 |**对 C++ 代码进行单元测试**|-   [通过适用于 C++ 的 Microsoft 单元测试框架编写适用于 C/C++ 的单元测试](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**隔离单元测试**|-   [使用 Microsoft Fakes 隔离受测代码](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**使用代码覆盖率确定测试的项目代码的比例：** 了解 Visual Studio 测试工具的代码覆盖率功能。|-   [使用代码覆盖率确定正在测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**通过使用负载测试来执行压力和性能分析：** 可以创建负载测试并向其添加单元测试，以帮助隔离应用程序中的性能和压力问题。|-   [负载测试（Azure Test Plans 和 TFS）](/azure/devops/test/load-test/index?view=vsts)|
+|**使用代码覆盖率来确定项目代码的测试比例：** 了解 Visual Studio 测试工具的代码覆盖功能。|-   [使用代码覆盖率确定正在测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**使用负载测试执行压力和性能分析：** 可以创建负载测试并向其添加单元测试，以帮助隔离应用程序中的性能和压力问题。|-   [负载测试（Azure Test Plans 和 TFS）](/azure/devops/test/load-test/index?view=vsts)|
 |**设置质量要求：** 可以创建质量要求以在签入或合并代码之前强制运行测试，从而帮助确保代码质量。|-   [签入策略 (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
 |**设置测试选项：** 例如，可以指定测试结果的存储位置。|[使用 .runsettings 文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 

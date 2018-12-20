@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 项目和项模板参数
+title: 项目和项模板参数
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bd566988d7546bed72f6ae3ea2c5c6f3159054f4
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178629"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067663"
 ---
 # <a name="template-parameters"></a>模板参数
 
@@ -49,7 +49,7 @@ ms.locfileid: "39178629"
 
 下表列出可供任何模板使用的保留模板参数。
 
-|参数|描述|
+|参数|说明|
 |---------------|-----------------|
 |clrversion|公共语言运行时 (CLR) 的当前版本。|
 |guid[1-10]|一个用于替换项目文件中的项目 GUID 的 GUID。 可指定最多 10 个唯一的 GUID（例如，`guid1`）。|
@@ -74,7 +74,7 @@ ms.locfileid: "39178629"
 
 除了在参数替换过程中使用的默认保留的模板参数之外，还可以指定自己的模板参数和值。 有关详细信息，请参阅 [CustomParameters 元素（Visual Studio 模板）](../extensibility/customparameters-element-visual-studio-templates.md)。
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>示例：对文件名使用项目名称
+## <a name="example-use-the-project-name-for-a-file-name"></a>示例:对文件名使用项目名称
 
 可以使用属性 `TargetFileName` 中的参数为项目项指定变量文件名。
 
@@ -91,7 +91,7 @@ ms.locfileid: "39178629"
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>示例：对命名空间名称使用安全项目名称
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>示例:对命名空间名称使用安全项目名称
 
 要将安全的项目名称用于 C# 类文件中的命名空间，请使用以下语法：
 

@@ -1,5 +1,6 @@
 ---
-title: 使用 Blend for Visual Studio 创建 UI
+title: 创建 UI - Blend for Visual Studio
+titleSuffix: ''
 ms.date: 07/17/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -11,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd1d8ab718575977e9f65ed55bfc6c3185d1642
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 76743674ef4e92f2ad52be108c1dafb8d942676c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890137"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059854"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 创建 UI
 
@@ -60,7 +61,7 @@ Blend for Visual Studio 是 Visual Studio 的一个组件。 若要安装 Blend�
 |![网格模式和列表模式](../designers/media/b1_2.png)|**网格模式和列表模式** - 在资产的“网格模式”视图和“列表模式”视图之间切换。|
 |![资产类别](../designers/media/b1_3.png)|**资产类别** - 单击类别或子类别查看该类别中资产的列表。|
 |![样式](../designers/media/b1_4.png)|**样式** - 显示资源字典中包含的所有样式。|
-|![描述](../designers/media/b1_5.png)|**说明** - 查看所选资产类别或子类别的说明。|
+|![说明](../designers/media/b1_5.png)|**说明** - 查看所选资产类别或子类别的说明。|
 
 ## <a name="tour-of-the-objects-and-timeline-panel"></a>“对象和时间线”面板概览
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中创建数据驱动的编码的 UI 测试
+title: 创建数据驱动的编码的 UI 测试
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c23d8149d6946464eef1a465ea952e6102d65086
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 92bbeb34733332b2bada3955dda2058d63460fec
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896136"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068482"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>创建数据驱动的编码的 UI 测试
 
@@ -65,7 +65,7 @@ ms.locfileid: "52896136"
    }
    ```
 
-5. 使用 `AddNumbers()` 方法验证测试正常运行。 将游标放在上面所示的测试方法中，打开上下文菜单，然后选择“运行测试”。 （键盘快捷方式：Ctrl+R、T）。
+5. 使用 `AddNumbers()` 方法验证测试正常运行。 将游标放在上面所示的测试方法中，打开上下文菜单，然后选择“运行测试”。 （键盘快捷键：Ctrl+R，T）。
 
     表明测试通过还是失败的测试结果会显示在“测试资源管理器”窗口中。 若要打开测试资源管理器窗口，请从“测试”菜单中选择“窗口”，然后选择“测试资源管理器”。
 
@@ -94,7 +94,7 @@ ms.locfileid: "52896136"
    }
    ```
 
-9. 通过 `ValidateSum()` 方法验证测试正常运行。 将游标放在上面所示的测试方法中，打开上下文菜单，然后选择“运行测试”。 （键盘快捷方式：Ctrl+R、T）。
+9. 通过 `ValidateSum()` 方法验证测试正常运行。 将游标放在上面所示的测试方法中，打开上下文菜单，然后选择“运行测试”。 （键盘快捷键：Ctrl+R，T）。
 
      在这一点上，所有参数值在方法中都定义为常量。 然后，创建数据集，让测试成为数据驱动的测试。
 
@@ -232,7 +232,7 @@ ms.locfileid: "52896136"
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>问：为什么无法修改 UIMap.Designer 文件中的代码？
 
-**答**：每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都将覆盖在 UIMapDesigner.cs 文件中所做的任何代码更改。 在该示例中以及大多数情况下，为了让测试可以使用某项数据而需要更改代码，这时可以对该测试的源代码文件（即 CodedUITest1.cs）进行更改。
+**答：** 每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都会覆盖在 UIMapDesigner.cs 文件中进行的所有代码更改。 在该示例中以及大多数情况下，为了让测试可以使用某项数据而需要更改代码，这时可以对该测试的源代码文件（即 CodedUITest1.cs）进行更改。
 
 如果必须修改录制的方法，则必须将其复制到 UIMap.cs 文件并对其重命名。 UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 Coded UITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。
 

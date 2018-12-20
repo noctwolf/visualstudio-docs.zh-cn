@@ -1,7 +1,8 @@
 ---
-title: 删除 Visual Studio 2017 | Microsoft Docs
+title: 删除 Visual Studio
+titleSuffix: ''
 description: 了解如何逐步从计算机中彻底删除 Visual Studio。
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 09/12/2017
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
@@ -21,14 +22,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e72482dce3df2ceaa5d5131838ce08b13a05cd90
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: fb3f86c59f205137dc3b72c8f0beff69f4d95a99
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382761"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159654"
 ---
-# <a name="remove-visual-studio"></a>删除 Visual Studio
+# <a name="remove-visual-studio-2017"></a>删除 Visual Studio 2017
 
 如果遇到灾难性错误，并且无法修复或卸载 Visual Studio，可运行 `InstallCleanup.exe` 工具，以删除 Visual Studio 2017 及更高版本的所有已安装实例的安装文件和产品信息。 如果修复或卸载失败，运行此工具将作为最后的解决措施，并且可能从其他 Visual Studio 安装或其他需要修复的产品中卸载功能。
 

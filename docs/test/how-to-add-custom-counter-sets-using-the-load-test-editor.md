@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中添加用于负载测试的自定义计数器集
+title: 添加用于负载测试的自定义计数器集
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 76ba63b1ca84a09294226ad8c4924df9b1fbb321
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 7f916e469453d41321dd30404be6c0a6e4f5e56f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894685"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051479"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>如何：使用负载测试编辑器添加自定义计数器集
 
@@ -43,7 +43,7 @@ ms.locfileid: "52894685"
     > [!NOTE]
     > 会向此计数器集赋予一个默认名称，如 Custom1。 可以使用“属性”窗口更改该名称。 按 F4 以显示“属性”窗口。
 
-4.  若要向自定义计数器集添加计数器，请右键单击新的计数器集，然后选择“添加计数器”。 有关如何添加计数器的详细信息，请参阅[如何：向计数器集添加计数器](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)。
+4.  若要向自定义计数器集添加计数器，请右键单击新的计数器集，然后选择“添加计数器”。 有关如何添加计数器的更多信息，请参见[如何：向计数器集中添加计数器](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)。
 
     > [!NOTE]
     > 还可以通过右键单击现有计数器集，选择“复制”，然后将其粘贴到“计数器集”节点来添加自定义计数器集。 可以删除那些复制了但不需要的多余计数器。 可以使用“属性”窗口更改新计数器集的名称。

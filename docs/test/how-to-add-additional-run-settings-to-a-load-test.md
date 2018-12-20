@@ -1,5 +1,5 @@
 ---
-title: 向 Visual Studio 中的负载测试添加运行设置
+title: 向负载测试添加运行设置
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e894bb0b53240795ad2bf7505ba081dbf479989d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 439120b80350081e1770ccce619d51b92673feef
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896609"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048049"
 ---
-# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>如何：向负载测试中添加额外的运行设置
+# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>如何：向负载测试添加额外的运行设置
 
 负载测试的运行设置将确定各种其他设置， 包括测试持续时间、结果集详细程度以及测试运行时收集的计数器集。 可以为每个负载测试创建和存储多个运行设置，然后在运行测试时选择一个要使用的特定设置。 使用“新建负载测试向导”创建负载测试时，将向负载测试添加初始运行设置。
 
@@ -40,14 +40,14 @@ ms.locfileid: "52896609"
 
      此时将显示“属性”窗口，其中包含了所选运行设置的属性。
 
-5.  在“属性”窗口中，使用“名称”属性文本框为新运行设置指定一个名称，该名称描述此运行设置的目的（例如 Run Setting: Five minute run）。
+5.  在“属性”窗口中，使用“名称”属性文本框为新运行设置指定一个名称，该名称描述此运行设置的目的（例如“Run Setting: Five minute run”）。
 
 6.  使用“属性窗口”更改运行设置。 例如，将运行持续时间更改为“00:05:00”以使测试运行五分钟。
 
     > [!NOTE]
     > 有关运行设置属性及其说明的完整列表，请参阅[负载测试运行设置属性](../test/load-test-run-settings-properties.md)。
 
-     现在可以通过以下方式指定您希望使用已添加的运行设置：将其设置为“活动”。 有关详细信息，请参阅[如何：为负载测试选择活动运行设置](../test/how-to-select-the-active-run-setting-for-a-load-test.md)。
+     现在可以通过以下方式指定您希望使用已添加的运行设置：将其设置为“活动”。 有关更多信息，请参见[如何：为负载测试选择活动运行设置](../test/how-to-select-the-active-run-setting-for-a-load-test.md)。
 
 ## <a name="see-also"></a>请参阅
 

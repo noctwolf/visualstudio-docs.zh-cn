@@ -8,16 +8,17 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cae15da8b6a59587037171ae982ee77d2cce2861
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: 083deb7b836bfae0b0c1352430ffb6ed4080c3dc
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459953"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248200"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>发布到 Windows 上的 Azure 应用服务
 
@@ -80,7 +81,7 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 
 从 Visual Studio 2017 发布到 Azure App Service 时，仅将项目中的文件复制到服务器。 因此，必须创建所需的文件才能配置服务器环境。
 
-1. 在 Visual Studio 的“解决方案资源管理器”中，右键单击项目，选择*“添加”>“新项...”。在随即出现的对话框中，选择“Azure web.config (Fast CGI)”模板并选择“确定”。 这会在项目根目录中创建 `web.config` 文件。
+1. 在 Visual Studio 的“解决方案资源管理器”中，右键单击项目，选择“添加”>“新项...”。在随即出现的对话框中，选择“Azure web.config (Fast CGI)”模板并选择“确定”。 这会在项目根目录中创建 `web.config` 文件。
 
 1. 修改 `web.config` 中的 `PythonHandler` 条目，以便该路径与服务器上的 Python 安装相匹配（有关确切的详细信息，请参阅 [IIS 配置参考](https://www.iis.net/configreference) (iis.net)）。 例如，对于 Python 3.6.1 x64，该条目应如下所示：
 
@@ -110,7 +111,7 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - Django：对于 Django 项目，需要对 `web.config` 进行两项更改。 首先，将 `WSGI_HANDLER` 值更改为 `django.core.wsgi.get_wsgi_application()`（该对象位于 `wsgi.py` 文件中）：
+    - **Django**：对于 Django 项目，需要对 `web.config` 进行两项更改。 首先，将 `WSGI_HANDLER` 值更改为 `django.core.wsgi.get_wsgi_application()`（该对象位于 `wsgi.py` 文件中）：
 
         ```xml
         <!-- Django apps only -->
@@ -123,7 +124,7 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. 仅限 Django 应用：在 Django 项目的 `settings.py` 文件中，如下面所示将网站 URL 域添加到 `ALLOWED_HOSTS`，当然，要将“vspython-test-02.azurewebsites.net”替换为自己的 URL：
+1. **仅限 Django 应用**：在 Django 项目的 `settings.py` 文件中，如下面所示将网站 URL 域添加到 `ALLOWED_HOSTS`，当然，要将“vspython-test-02.azurewebsites.net”替换为自己的 URL：
 
     ```python
     # Change the URL to your specific site
@@ -184,7 +185,7 @@ Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体�
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>发布到 App Service - Visual Studio 2015
 
 > [!Note]
-> 在 [Visual Studio Python Tutorial: Building a Website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)（Visual Studio Python 教程：生成网站，youtube.com，3 分 10 秒）上可找到此过程的简短视频。
+> 可参考有关此过程的简短视频 [Visual Studio Python 教程：构建网站](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)（youtube.com，3 分 10 秒）。
 
 1. 在“解决方案资源管理器”中，右键单击项目，选择“发布”。
 

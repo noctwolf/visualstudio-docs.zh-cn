@@ -1,8 +1,9 @@
 ---
-title: Visual Studio 2017 安装问题疑难解答
+title: 安装或升级问题疑难解答
 description: 有时，你难免遇到一些问题。 如果 Visual Studio 安装或升级失败，可在此页寻求帮助。
 ms.date: 08/01/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db85353830e1d86773a870a410797bfb5c60ccd7
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 39accaa3b8ee6a5ac2979b7e93b02a1ce00716be
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384118"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159929"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 安装和升级问题疑难解答
 
@@ -97,7 +98,7 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 4. 在 `%TEMP%` 目录中查找生成的 `vslogs.zip` 文件，例如，`C:\Users\YourName\AppData\Local\Temp\vslogs.zip`。
 
 > [!NOTE]
-> 工具必须在安装失败时使用的同一用户帐户下运行。 若要从其他用户帐户运行工具，请设置 `–user:<name>` 选项，以指定安装失败时使用的用户帐户。 有关其他选项和使用情况信息，请通过管理员命令提示符运行 `Collect.exe -?`。
+> 工具必须在安装失败时使用的同一用户帐户下运行。 若要从其他用户帐户运行工具，请设置 `–user:<name>` 选项，以指定安装失败时使用的用户帐户。 有关其他选项和使用情况信息，请通过管理员命令提示符运行 `Collect.exe -?` 获取。
 
 ## <a name="get-live-help"></a>获取实时帮助
 

@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b5429ccc963923a049d54ad3fbaa409586c0f772
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 84e93d06e294ef11cc345eb4c443845421a8f834
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219245"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067798"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>在交互窗口中使用 IPython
 
@@ -79,9 +80,9 @@ IPython 模式下的 Visual Studio 交互窗口是目前非常先进的用户友
 
 8. 若要查看在交互窗口之外的关系图，请运行代码，而不是使用“Debug” > “Start without Debugging”命令。
 
-IPython 有很多其他有用的功能，如转义到系统外壳、变量替换、捕获输出等。请参阅 [IPython 文档](http://ipython.org/documentation.html)了解详细信息。
+IPython 有很多其他有用的功能，如转义到系统外壳、变量替换、捕获输出等。请参阅 [IPython 文档](https://ipython.org/documentation.html)了解详细信息。
 
-### <a name="see-also"></a>请参阅
+## <a name="see-also"></a>请参阅
 
 - 若要在不安装的情况下轻松使用 Jupyter，请试用免费的 [Azure 笔记本托管服务](https://notebooks.azure.com/)来保留笔记本并与他人进行共享。
 

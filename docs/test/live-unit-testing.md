@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的 Live Unit Testing
+title: Live Unit Testing
 ms.date: 2017-03-07
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6e0bd322b200fba3bf41f99c4119cbe287ce2967
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 7be078044454ebf5d6b3a6d99a60fff66ab1f69b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42627070"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066205"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>使用 Visual Studio 2017 进行实施单元测试
 
@@ -81,7 +81,7 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 - 持久化数据存储目录。
 
 - 删除所有持久化数据的功能。 当 Live Unit Testing 的行为不可预测或出现异常时（表明持久化数据已损坏），这就很有用。
-   
+
 - 测试用例超时之前的时间间隔；隔默认值为 30 秒。
 
 - Live Unit Testing 可创建的测试进程数上限。
@@ -203,4 +203,3 @@ Live Unit Testing 自动运行、更新测试结果与通过“测试资源管�
 - [Live Unit Testing 博客](https://go.microsoft.com/fwlink/?linkid=842514)
 - [实时单元测试常见问题解答](live-unit-testing-faq.md)
 - [第 9 频道视频：Visual Studio 2017 中的 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
-

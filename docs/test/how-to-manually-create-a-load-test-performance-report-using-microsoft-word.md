@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft Word 创建 Visual Studio 负载测试性能报告
+title: 使用 Microsoft Word 创建负载测试性能报告
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4a5dd85c56a57b6257041c129925703e8e91e050
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c718501f4a3665f2383560f8c472102bfb5be757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895608"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064451"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>如何：使用 Microsoft Word 手动创建负载测试性能报告
 
@@ -28,7 +28,7 @@ ms.locfileid: "52895608"
 > 可以将表视图中的纯文本和详细信息视图中的屏幕快照复制到 Microsoft Word，但复制的内容不会以 HTML 格式应用，需要另外进行格式设置和编辑。
 
 > [!TIP]
-> 也可以自动生成有组织的 Microsoft Excel 报表。 有关详细信息，请参阅[如何：使用 Microsoft Excel 创建负载测试性能报告](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)。
+> 也可以自动生成有组织的 Microsoft Excel 报表。 有关更多信息，请参见[如何：使用 Microsoft Excel 创建负载测试性能报告](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)。
 
 ## <a name="copy-summary-view-data"></a>复制摘要视图数据
 
@@ -46,7 +46,7 @@ ms.locfileid: "52895608"
 
 1.  在“负载测试结果”中，如果当前未显示关系图视图，请选择工具栏上的“关系图”。
 
-2.  （可选）对要复制到 Microsoft Word 文档中的特定关系图进行放大，如下图所示。 有关详细信息，请参阅[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+2.  （可选）对要复制到 Microsoft Word 文档中的特定关系图进行放大，如下图所示。 有关更多信息，请参见[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
      ![图形视图缩放控件](../test/media/ltest_zoomcontrol.png)
 

@@ -1,6 +1,6 @@
 ---
 title: 适用于 Python 的 Django Web 项目模板
-description: 使用 Django 框架以 Python 编写的 Web 应用程序的 Visual Studio 模板概述。
+description: Visual Studio 为使用 Python 快速创建 Django web 应用程序提供了全面的模板。
 ms.date: 11/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1e00fd7df429b219589e1e49ddbc5ccadca5e032
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c1aba68ad8cde6aebbc881e61937dc53037b58c5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607427"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066517"
 ---
 # <a name="django-web-project-template"></a>Django Web 项目模板
 
@@ -50,19 +51,19 @@ Django 管理控制台可通过“项目”菜单上的各种命令或在解决�
 
 - **打开 Django Shell**：将打开应用程序上下文中的 shell，使你能够操作模型：
 
-    ![控制台](media/template-django-console-shell.png)
+    ![“Open Django Shell”命令的结果](media/template-django-console-shell.png)
 
 - Django 同步数据库：在交互窗口中执行 `manage.py syncdb`：
 
-    ![控制台](media/template-django-console-sync-db.png)
+    ![“Django Sync DB”命令的结果](media/template-django-console-sync-db.png)
 
 - **收集静态文件**：执行 `manage.py collectstatic --noinput` 以将所有静态文件复制到由 settings.py 中的 `STATIC_ROOT` 指定的路径中。
 
-    ![控制台](media/template-django-console-collect-static.png)
+    ![“Collect Static”命令的结果](media/template-django-console-collect-static.png)
 
 - **验证**：执行 `manage.py validate`，它将报告由 settings.py 中 `INSTALLED_APPS` 指定的已安装模型中的任何验证错误：
 
-    ![控制台](media/template-django-console-validate.png)
+    ![“Validate”命令的结果](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>请参阅
 

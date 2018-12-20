@@ -1,5 +1,5 @@
 ---
-title: 使用 requirements.txt 文件管理包要求
+title: 使用 requirements.txt 文件管理包依赖项
 description: requirements.txt 文件描述了项目的依赖项。 如果收到包含 requirements.txt 文件的项目，你将可以在一个步骤中轻松安装这些依赖关系。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +8,20 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49f87ff5836188d6fefb80feac94b27902de7968
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1f6fefdeac06d28229b99a79f432f82ed844d950
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218407"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066166"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理所需的包
 
-若要与其他人共享项目、使用生成系统，或打算将项目复制到需要在其中还原环境的其他任何位置，必须指定项目需要的外部包。 建议的方法是使用 [requirements.txt 文件](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，文件中包含安装相关包所需版本的 pip 命令列表。 最常见的命令是 `pip freeze > requirements.txt`，它将环境的当前包列表记录到 requirements.txt 中。
+若要与其他人共享项目、使用生成系统，或打算将项目复制到需要在其中还原环境的其他任何位置，必须指定项目需要的外部包。 建议的方法是使用 [requirements.txt 文件](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，文件中包含安装相关包所需版本的 pip 命令列表。 最常见的命令是 `pip freeze > requirements.txt`，它将环境的当前包列表记录到 requirements.txt 中。
 
 从技术上讲，任何文件名都可用于跟踪要求（通过安装包时使用 `-r <full path to file>`），但 Visual Studio 提供针对 requirements.txt 的特定支持：
 

@@ -1,5 +1,6 @@
 ---
-title: 教程 - 了解 Visual Studio 中的 Django，步骤 3
+title: 学习 Visual Studio 中的 Django 教程的第 3 步，静态文件和页面
+titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体演示了如何提供静态文件、将页面添加到应用，并使用模板继承
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bea209e2d7cf751c66f3e627311a2985c79f55c3
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: cfde21f356e35366cfb80b029f918eed0364a7b5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001290"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066075"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步骤 3：为静态文件提供服务、添加页面和使用模板继承
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步骤 3：提供静态文件、添加页面和使用模板继承
 
-上一步：[使用视图和页面模板创建 Django 应用](learn-django-in-visual-studio-step-02-create-an-app.md)
+**上一步：[使用视图和页面模板创建 Django 应用](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
 在本教程的前几个步骤中，你已了解如何在自包含 HTML 的单个页面中创建最小的 Django 应用。 然而，现代 Web 应用通常由许多页面组成，并利用 CSS、JavaScript 文件等共享资源来提供一致的样式和行为。
 
@@ -166,7 +168,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 ### <a name="question-i-tried-using-index-for-the-link-to-the-home-page-but-it-didnt-work-why"></a>问：我曾尝试使用“index”来链接到主页，但它不起作用。 为什么？
 
-答：即使 views.py 中的视图函数被命名为 `index`，Django 项目 urls.py 文件中的 URL 路由模式也不包含与字符串“index”相匹配的正则表达式。 若要匹配该字符串，需要为模式 `^index$` 添加另一个条目。
+答：即使“views.py”中的视图函数被命名为 `index`，Django 项目“urls.py”文件中的 URL 路由模式也不包含与字符串“index”相匹配的正则表达式。 若要匹配该字符串，需要为模式 `^index$` 添加另一个条目。
 
 如下一节所示，最好在页面模板中使用 `{% url '<pattern_name>' %}` 标记来引用模式的名称，在这种情况下，Django 会为你创建适当的 URL。 例如，用 `<div><a href="{% url 'index' %}">Home</a></div>` 替换 about.html 中的 `<div><a href="home">Home</a></div>`。 在这里使用“index”会起作用，因为 urls.py 中的第一个 URL 模式实际上被命名为“index”（依据 `name='index'` 参数）。 也可以用“home”来引用第二种模式。
 

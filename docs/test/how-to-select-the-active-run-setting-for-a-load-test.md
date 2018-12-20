@@ -1,5 +1,5 @@
 ---
-title: 为 Visual Studio 中的负载测试选择运行设置
+title: 为负载测试选择运行设置
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3bff9be24d5d1f615270bc80790a04e85e7cf25c
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9a99df580ec50eec27bd1cb13a1ef883944acd48
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895322"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067380"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>如何：为负载测试选择活动运行设置
 
@@ -28,7 +28,7 @@ ms.locfileid: "52895322"
 > [!NOTE]
 > 有关运行设置属性及其说明的完整列表，请参见[负载测试运行设置属性](../test/load-test-run-settings-properties.md)。
 
-如果负载测试只包含“运行设置”文件夹下的一个运行设置节点，那么该节点始终为活动节点。 如果负载测试包含多个运行测试节点，则可以选择一个在运行负载测试时要使用的节点。 请参阅[如何：向负载测试中添加额外的运行设置](../test/how-to-add-additional-run-settings-to-a-load-test.md)。
+如果负载测试只包含“运行设置”文件夹下的一个运行设置节点，那么该节点始终为活动节点。 如果负载测试包含多个运行测试节点，则可以选择一个在运行负载测试时要使用的节点。 请参阅[如何：向负载测试添加额外的运行设置](../test/how-to-add-additional-run-settings-to-a-load-test.md)。
 
 在负载测试编辑器中，以“[Active]”后缀来标识活动运行设置。
 

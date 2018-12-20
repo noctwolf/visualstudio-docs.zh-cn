@@ -1,7 +1,7 @@
 ---
 title: 衡量应用中的 CPU 使用情况
 description: 使用集成了调试器的诊断工具，分析应用程序中的 CPU 性能问题。
-ms.custom: mvc
+ms.custom: seodec18
 ms.date: 02/27/2017
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 966697652e969c3d6de9f3c17f52f88e84c89bb8
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 46837bb68854f0f5dbb5c799d405c37431f6c379
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220672"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065757"
 ---
-# <a name="profile-application-performance-in-visual-studio"></a>在 Visual Studio 中分析应用程序性能
+# <a name="measure-application-performance-by-analyzing-cpu-usage"></a>通过分析 CPU 使用情况衡量应用程序性能
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程演示如何使用诊断工具的“CPU 使用率”选项卡获取应用的性能数据。 Visual Studio 中的 .NET 开发（包括 ASP.NET、和本机 /C++ 开发）支持此诊断工具。
   
 调试中断时，**CPU 使用率**工具收集有关应用程序中正在执行的函数的信息。 该工具将列出执行工作的函数，并提供时间线图，可专用于采样会话的特定部分。
@@ -97,7 +97,7 @@ ms.locfileid: "51220672"
 
      现在可以开始分析数据。
 
-## <a name="step-2-analyze-cpu-usage-data"></a>步骤 2：分析 CPU 使用情况数据
+## <a name="step-2-analyze-cpu-usage-data"></a>步骤 2：分析 CPU 使用量数据
 
 建议通过检查 CPU 使用率下的函数列表开始分析数据，然后确定执行大部分工作的函数，最后仔细查看每一个函数。
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中插入 XML 文档注释
+title: 插入 XML 文档注释
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e3c38e46a5c73d1f8018f56f76b971939ba8c316
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04ee7c992fc67e0025bd2481d392a38806d51ed9
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945423"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063469"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>如何项文档生成项插入 XML 注释
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>如何：为文档生成项插入 XML 注释
 
 Visual Studio 可自动生成标准的 XML 文档注释结构，进而帮助记录类和方法等代码元素。 在编译时，可生成一个包含文档注释的 XML 文件。 可随附 .NET 程序集一并分发编译器生成的 XML 文件，让 Visual Studio 和其他 IDE 能够快速显示类型和成员信息。 此外，可以通过 [DocFX](https://dotnet.github.io/docfx/) 和 [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) 等工具运行 XML 文件，由此生成 API 引用网站。
 
@@ -52,7 +52,7 @@ Visual Studio 可自动生成标准的 XML 文档注释结构，进而帮助记�
 
 - [XML 文档注释（C# 编程指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [使用 XML 注释来记录代码（C# 指南）](/dotnet/csharp/codedoc)
-- [如何创建 XML 文档 (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [如何：创建 XML 文档 (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [C++ 注释](/cpp/cpp/comments-cpp)
 - [XML 文档 (C++)](/cpp/ide/xml-documentation-visual-cpp)
 - [代码生成](../code-generation-in-visual-studio.md)

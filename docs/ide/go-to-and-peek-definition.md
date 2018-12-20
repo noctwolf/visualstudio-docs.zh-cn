@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中查看类型定义
+title: 查看类型定义
 ms.date: 01/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529486e39db57228feb703817eea44fab9399c85
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7b159eb48e995fa0bca6ea86299d09c1a10cf27
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745758"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062077"
 ---
 # <a name="view-type-and-member-definitions"></a>查看类型和成员定义
 
@@ -52,7 +52,7 @@ ms.locfileid: "34745758"
 
 如果在弹出式窗口中查看另一个定义，则将启动痕迹路径，即使用弹出式窗口上方显示的圆形菜单和箭头进行导航。
 
-有关详细信息，请参阅[如何：使用速览定义 (Alt+F12) 查看和编辑代码](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
+有关更多信息，请参见[如何：使用“查看定义”(Alt+F12) 查看和编辑代码](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
 
 ## <a name="view-metadata-as-source-code-c"></a>查看作为源代码的元数据 (C#)
 
@@ -79,4 +79,4 @@ ms.locfileid: "34745758"
 ## <a name="see-also"></a>请参阅
 
 - [导航代码](../ide/navigating-code.md)
-- [如何：使用“速览定义”查看和编辑代码 (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [如何：使用“查看定义”(Alt+F12) 查看和编辑代码](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

@@ -1,6 +1,6 @@
 ---
-title: 分析概述 Visual Studio| Microsoft Docs
-ms.custom: mvc
+title: 性能测量工具概述 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
 ms.topic: overview
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c846b01634c1af9ba14e5c7ff460c279bf385a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46b10f62f54306ddcbe8ab566f4e60d77526b0d2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844115"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059530"
 ---
-# <a name="overview-of-profiling-in-visual-studio"></a>Visual Studio 中的分析概述
+# <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Visual Studio 中的性能测量工具概述
 
 分析和诊断工具有助于诊断内存和 CPU 使用率以及其他应用程序级别问题。 这些工具可用于累积一段时间内（如运行应用程序时）的数据（例如变量值、函数调用和事件）。 可以在执行代码过程中查看处于不同点的应用程序的状态，也可以执行应用程序性能的事后分析。
 

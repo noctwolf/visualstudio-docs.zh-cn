@@ -1,6 +1,6 @@
 ---
-title: 如何：使用命令行将探查器附加到本机独立应用程序并收集应用程序统计信息 | Microsoft Docs
-ms.custom: ''
+title: 将探查器附加到本机应用程序中并收集应用统计信息
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfe5e6f0bcdf84d3ef91933ff2c754cf0fc52bdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d304e74d9480404e768789ffa0000c35da4f66ce
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842035"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063624"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>如何：将探查器附加到本机独立应用程序，并使用命令行收集应用程序统计信息
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到运行中的本机独立（客户端）应用程序，以及如何使用采样方法收集性能统计信息。  
@@ -45,7 +45,7 @@ ms.locfileid: "49842035"
 
      可以将以下任意选项与 **/start:sample** 选项一起使用。  
 
-   | 选项 | 描述 |
+   | 选项 | 说明 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | 指定拥有所分析进程的帐户的域和用户名。 仅当运行进程的用户不是已登录用户时，才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。 |
    | [/crosssession](../profiling/crosssession.md) | 启用其他会话中的进程分析。 如果 ASP.NET 应用程序在其他会话中运行，则需要此选项。 会话标识符在 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中列出。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
@@ -62,7 +62,7 @@ ms.locfileid: "49842035"
 
     默认情况下，性能数据为每 10,000,000 个非暂停处理器时钟周期采样一次。 在 1GH 处理器上，每秒约为 100 次。 可以指定以下选项之一，更改时钟周期间隔或指定不同的采样事件。  
 
-   |样本事件|描述|  
+   |样本事件|说明|  
    |------------------|-----------------|  
    |[/timer](../profiling/timer.md) **:** `Interval`|将采样间隔更改为 `Interval` 所指定的非暂停时钟周期数目。|  
    |[/pf](../profiling/pf.md)[**:**`Interval`]|将采样事件更改为页面错误。 如果已指定 `Interval`，则会设置样本之间的页面错误数目。 默认值为 10。|  
@@ -76,7 +76,7 @@ ms.locfileid: "49842035"
 
 -   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
-    |选项|描述|  
+    |选项|说明|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|对由 `PID` 指定的进程，启动 (**/processon**) 或停止 (**/processoff**) 数据集合。|  
@@ -91,7 +91,7 @@ ms.locfileid: "49842035"
 
     -   键入 **VSPerfCmd /detach**  
 
-         或  
+         - 或 -  
 
     -   关闭目标应用程序。  
 

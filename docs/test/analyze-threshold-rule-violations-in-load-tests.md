@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中分析负载测试中的阈值规则冲突
+title: 分析负载测试中的阈值规则冲突
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 17a79e4c684ee60d18288bc30ce1e3fce83dc8a5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: be0784197c03aa3117d559cd4aa99797027c8170
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895426"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53061806"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用负载测试分析器分析负载测试中的阈值规则冲突
 
@@ -36,10 +36,10 @@ ms.locfileid: "52895426"
 
  阈值冲突表显示前 1,000 个冲突。 下面举例说明了一个表：
 
-|列|描述|默认情况下可见|
+|列|说明|默认情况下可见|
 |-|-|-|
 |时间|负载测试过程中发生冲突的时间。|是|
-|计算机|发生冲突的测试计算机的名称。 **注意：** 在远程测试机组上运行负载测试时，这一项很重要。|是|
+|计算机|发生冲突的测试计算机的名称。 **注意：** 在远程测试机组 (Rig) 上运行负载测试时，这一项很重要。|是|
 |类别|发生冲突的性能计数器的类别。|是|
 |计数器|发生冲突的性能计数器的名称。|是|
 |实例|发生冲突的性能计数器实例。|是|

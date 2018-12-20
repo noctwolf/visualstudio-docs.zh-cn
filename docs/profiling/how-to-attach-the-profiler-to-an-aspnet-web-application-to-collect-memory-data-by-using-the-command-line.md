@@ -1,6 +1,6 @@
 ---
-title: 如何：使用命令行将探查器附加到 ASP.NET Web 应用程序以收集内存数据 | Microsoft Docs
-ms.custom: ''
+title: 将探查器附加到 ASP.NET 应用以收集内存数据
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: fd5f5b1ede7f5261d03ae8e75cfe6a603ead38da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f5c592733cc43101cb5cf022caf84892a55af7a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841684"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052953"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>如何：将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集内存数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序，以及如何收集有关 .NET Framework 内存分配数量和大小的数据。 也可以收集有关 .NET Framework 内存对象生存期的数据。  
@@ -43,7 +43,7 @@ ms.locfileid: "49841684"
 
         指定下列选项中的一个且仅指定一个。  
 
-       |选项|描述|  
+       |选项|说明|  
        |------------|-----------------|  
        |/globalsamplegc|启用对内存分配数据的收集。|  
        |/globalsamplegclife|启用对内存分配数据和对象生存期数据的收集。|  
@@ -67,7 +67,7 @@ ms.locfileid: "49841684"
    > [!NOTE]
    >  **/user** 和 **/crosssession** 选项通常为 ASP.NET 应用程序所需选项。  
 
-   | 选项 | 描述 |
+   | 选项 | 说明 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | 指定拥有 ASP.NET 工作进程的帐户的域和用户名。 在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。 |
    | [/crosssession](../profiling/crosssession.md) | 启用其他登录会话中的进程分析。 如果 ASP.NET 应用程序在其他会话中运行，则需要此选项。 会话标识符在 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中列出。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
@@ -94,7 +94,7 @@ ms.locfileid: "49841684"
 
 -   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
-    |选项|描述|  
+    |选项|说明|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由 `PID` 指定的进程的数据收集。|  

@@ -1,6 +1,6 @@
 ---
-title: 如何：使用命令行将探查器附加到 .NET 服务以收集并发数据 | Microsoft Docs
-ms.custom: ''
+title: 将探查器附加到 .NET 服务以收集并发数据
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 60f300f58c0cc9c06d8af64a4054b95306899f3a
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a12ce0b60a2ef47e1901b0c2e20f730faa225681
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815738"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052162"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 .NET 服务，以收集并发数据
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>如何：将探查器附加到 .NET 服务，以使用命令行收集并发数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服务并使用采样方法收集进程和线程并发数据。  
   
 > [!NOTE]
@@ -57,9 +57,9 @@ ms.locfileid: "34815738"
     > [!NOTE]
     >  **/User** 和 **/crosssession** 选项通常为服务所需选项。  
   
-    |选项|描述|  
+    |选项|说明|  
     |------------|-----------------|  
-    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|指定拥有所分析进程的帐户的域和用户名。 仅在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者位于 Windows 任务管理器的“进程”选项卡上的“用户名”列中。|  
+    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|指定拥有所分析进程的帐户的域和用户名。 仅在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。|  
     |[/crosssession](../profiling/crosssession.md)|启用其他会话中的进程分析。 在其他的会话中运行该服务时需要此选项。 会话 ID 位于 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中。 可以将 **/CS** 指定为 **/crosssession** 的缩写。|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|指定要在分析期间收集的 Windows 性能计数器。|  
     |[/automark](../profiling/automark.md) **:** `Interval`|仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500 毫秒。|  
@@ -82,7 +82,7 @@ ms.locfileid: "34815738"
   
 -   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|描述|  
+    |选项|说明|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
@@ -99,7 +99,7 @@ ms.locfileid: "34815738"
   
     -   停止服务。  
   
-         或  
+         - 或 -  
   
     -   键入 **VSPerfCmd /detach.**  
   

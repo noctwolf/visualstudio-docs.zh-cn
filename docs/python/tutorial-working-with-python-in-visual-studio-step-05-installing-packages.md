@@ -1,5 +1,6 @@
 ---
-title: 使用 Python 教程 - 第 5 步：安装包
+title: Visual Studio 中的 Python 教程步骤 5，安装包
+titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 功能的核心教程的第 5 步，展示了用于在 Python 环境中管理包的 Visual Studio 功能。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 82cb54eb64d0864ba3b1d326d68f7303d3f2d882
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 81dccdb276596e96e1a7064f796afa43de79f032
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220503"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067283"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>步骤 5：在 Python 环境中安装程序包
 
-上一步：**[在调试器中运行代码](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
+**上一步：[在调试器中运行代码](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
 Python 开发者社区制作了数千个有用的程序包，用户可以将它们合并到自己的项目中。 Visual Studio 提供一个 UI，用于管理 Python 环境中的程序包。
 

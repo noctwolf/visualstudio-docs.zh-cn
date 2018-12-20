@@ -1,22 +1,23 @@
 ---
 title: Python 环境窗口引用
 description: 在 Visual Studio 的 Python 环境窗口中出现的每个选项卡的详细信息。
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 45a14fb5667d7eb28d4d298731886db662985d17
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 3bd65efb0cbaf38de88acb87c9078ee98f3869bc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996072"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051424"
 ---
 # <a name="python-environments-window-tabs-reference"></a>“Python 环境”窗口选项卡引用
 
@@ -35,7 +36,7 @@ ms.locfileid: "43996072"
 
 ![Python 环境概述选项卡](media/environments-overview-tab.png)
 
-| 命令 | 描述 |
+| 命令 | 说明 |
 | --- | --- |
 | **使此环境成为新项目的默认环境** | 设置活动环境，这可能会导致 Visual Studio（2017 版本 15.5 及更高版本）在加载 IntelliSense 数据库时短时间无响应。 含有多个包的环境可能无响应的时间更长。 |
 | **访问分发服务器的网站** | 打开浏览器，访问 Python 分发所提供的 URL。 例如，对于 Python 3.x，会转到 python.org。 |
@@ -61,7 +62,7 @@ ms.locfileid: "43996072"
 
 ![Python 环境配置选项卡](media/environments-configure-tab.png)
 
-| 字段 | 描述 |
+| 字段 | 说明 |
 | --- | --- |
 | **说明** | 为环境提供的名称。 |
 | **前缀路径** | 解释程序的基本文件夹位置。 通过填写此值并单击“自动检测”，Visual Studio 会尝试填充其他字段。 |
@@ -102,7 +103,7 @@ ms.locfileid: "43996072"
 
 ![针对包安装的提升提示](media/environments-pip-elevate.png)
 
-“立刻提升”会将管理权限授予单个操作的 pip，同时取决于任何操作系统的权限提示。 选择“在没有管理员权限的情况下继续”会尝试安装该包，但尝试创建文件夹时 pip 会失败，同时会显示后列输出：“错误: 无法创建 'C:\Program Files\Anaconda3\Lib\site-packages\png.py': 权限被拒绝。”
+“立刻提升”会将管理权限授予单个操作的 pip，同时取决于任何操作系统的权限提示。 选择“在没有管理员权限的情况下继续”会尝试安装该包，但尝试创建文件夹时 pip 会失败，显示输出，例如：“错误: 无法创建 'C:\Program Files\Anaconda3\Lib\site-packages\png.py':权限被拒绝。”
 
 选择“安装或删除包时始终提升”可防止针对相应环境出现该对话框。 若要再次显示对话框，请转到“工具” > “选项” > “Python 工具” > “常规”，选择按钮，重置所有永久隐藏的对话框。
 

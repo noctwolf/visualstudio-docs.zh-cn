@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中创建和运行负载测试
+title: 创建和运行负载测试
 ms.date: 10/01/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 649fe84b716355f5c7228e371fa88d80937f24af
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: a5782985406d9b2daa53c1fd6ecefb3f31cc0104
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895374"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055765"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>演练：创建并运行包含单元测试的负载测试
 
@@ -43,7 +43,7 @@ ms.locfileid: "52895374"
 
 ### <a name="to-start-the-new-load-test-wizard"></a>启动“新建负载测试向导”
 
-1.  打开在[演练：为托管代码创建和运行单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)中创建的 Bank 解决方案。
+1.  打开在[演练：创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)中创建的 Bank 解决方案。
 
 2.  在“解决方案资源管理器”中，打开 Bank 解决方案节点的快捷菜单，选择“添加”，然后选择“新建项目”。
 

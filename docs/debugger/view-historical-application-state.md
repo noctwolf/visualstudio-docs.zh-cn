@@ -1,7 +1,7 @@
 ---
-title: 使用 IntelliTrace 查看上一应用程序状态
-ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
-ms.custom: mvc
+title: 使用 IntelliTrace 查看上一应用状态
+description: 了解如何拍摄快照和使用 IntelliTrace 单步后退查看快照
+ms.custom: seodec18
 ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ba1ab23fead36cfabc8b2754535e8b10de981987
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846858"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060140"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>在 Visual Studio 中使用 IntelliTrace 后退检查上一应用状态
 
@@ -96,9 +96,9 @@ IntelliTrace 后退会在每个断点处及调试器步骤事件发生时自动�
 
 仅事件模式下的 IntelliTrace 允许在调试器步骤发生时和断点处激活历史调试。 但是，IntelliTrace 只捕获已打开的“局部变量”和“自动”窗口中的数据，并且只捕获已展开的且在视图中的数据。 在仅事件模式下，通常没有变量和复杂对象的完整视图。 此外，不支持在“监视”窗口中进行表达式求值和查看数据。 
 
-在事件和快照模式下，IntelliTrace 捕获应用程序进程（包括复杂对象）的全部快照。 在代码行上，可以看到如同在断点处停止时看到的信息（且之前是否已展开信息并不重要）。 查看快照时，还支持表达式求值。  
+在事件和快照模式下，IntelliTrace 捕获应用程序进程（包括复杂对象）的全部快照。 在代码行上，可以看到如同在断点处停止时看到的信息（且之前是否已展开信息并不重要）。 查看快照时，还支持表达式求值。  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>此功能对性能有何影响？ 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>此功能对性能有何影响？ 
 
 对总体单步执行性能的影响取决于应用程序。 拍摄快照大约耗用 30 毫秒。 拍摄快照时，为应用的进程创建分支且分支副本会挂起。 查看快照时，Visual Studio 将附加到进程的分支副本。 对于每个快照，Visual Studio 仅复制页表并将页设置为写入时复制。 如果堆上的对象在具有关联快照的调试器步骤之间更改，则将复制相应的页表，而产生最小的内存成本。 如果 Visual Studio 检测到拍摄快照内存不足，则不会拍摄。
  
@@ -112,7 +112,7 @@ IntelliTrace 后退会在每个断点处及调试器步骤事件发生时自动�
   * 或者： 
     1. 用 Visual Studio 安装程序安装用于桌面的 VC++ 2015.3 v140 工具集组件 (x86, x64)。
     2. 生成目标应用程序。
-    3. 在命令行中，使用 editbin 工具为目标可执行文件设置 `Largeaddressaware` 标志。 例如：建议使用此命令（更新路径之后）：C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.ex。
+    3. 在命令行中，使用 editbin 工具为目标可执行文件设置 `Largeaddressaware` 标志。 例如，可能会使用此命令（更新路径后）："C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.exe"。
     4. 若要启用调试，请按 F5。 现在，在调试器步骤执行时和断点处拍摄快照。
 
        > [!Note]

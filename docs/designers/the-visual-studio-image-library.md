@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 图像库
+title: 图像库
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bd67b6b548852fa21a28696328004d75ec53fe8
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2d4a75c8ded0db82070d04745bcc10c4083c2073
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078896"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062841"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 图像库
 
@@ -31,7 +31,7 @@ Visual Studio 图像库包含出现在 Microsoft Visual Studio、Microsoft Windo
 
 [下载 Visual Studio 图像库](http://go.microsoft.com/fwlink/p/?LinkId=275090)
 
-图形库分为五类：通用元素、操作、批注、图标和对象。 常见元素和图标类型的自述文件中以 PDF 格式包含。 这些自述文件包括有关如何在应用程序中合理使用这些图像的信息。
+映像库分为五个类别：常见元素、操作、注释、图标和对象。 常见元素和图标类型的自述文件中以 PDF 格式包含。 这些自述文件包括有关如何在应用程序中合理使用这些图像的信息。
 
 ## <a name="see-also"></a>请参阅
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中测试控制器和测试代理的超时周期
+title: 测试控制器和测试代理的超时周期
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c7e85dcbd62c5f068ce3286145fec2ddddc7947
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 53127df8837f9f86d49cb5d5fa36ca3b50f401fa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895686"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064674"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>如何：为测试控制器和测试代理指定超时周期
 
@@ -28,23 +28,23 @@ ms.locfileid: "52895686"
 
 若要编辑测试控制器或测试代理的各种超时设置，请使用表中的键名和值来修改以下配置文件：
 
--   测试控制器：QTController.exe.config
+-   测试控制器：*QTController.exe.config*
 
-    |项名称|描述|“值”|
+    |项名称|说明|值|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|认为连接丢失前等待代理 ping 请求的秒数。|“n”秒。|
     |AgentSyncTimeoutInSeconds|开始同步测试运行时，中止运行前等待所有代理同步的秒数。|“n”秒。|
-    |AgentInitializeTimeout|中止测试运行前，在测试运行开始时等待所有代理及其数据收集器进行初始化的秒数。 如果使用数据收集器，则此值应相当大。|“n”秒。 默认值：“120”（两分钟）。|
-    |AgentCleanupTimeout|完成测试运行前，等待所有代理及其数据收集器进行清理的秒数。 如果使用数据收集器，则此值应相当大。|“n”秒。 默认值：“120”（两分钟）。|
+    |AgentInitializeTimeout|中止测试运行前，在测试运行开始时等待所有代理及其数据收集器进行初始化的秒数。 如果使用数据收集器，则此值应相当大。|“n”秒。 默认：“120”（2 分钟）。|
+    |AgentCleanupTimeout|完成测试运行前，等待所有代理及其数据收集器进行清理的秒数。 如果使用数据收集器，则此值应相当大。|“n”秒。 默认：“120”（2 分钟）。|
 
--   测试代理：QTAgentService.exe.config
+-   测试代理：*QTAgentService.exe.config*
 
-    |项名称|描述|“值”|
+    |项名称|说明|值|
     |-|-----------------|-|
-    |ControllerConnectionPeriodInSeconds|连接控制器尝试之间的秒数。|“n”秒。 默认值：“30”（三十秒）。|
-    |RemotingTimeoutSeconds|远程处理调用可以持续的最长时间（以秒为单位）。|“n”秒。 默认值：“600”（十分钟）。|
-    |StopTestRunCallTimeoutInSeconds|等待用于停止测试运行的调用的秒数。|“n”秒。 默认值：“120”（两分钟）。|
-    |GetCollectorDataTimeout|等待数据收集器的秒数。|“n”秒。 默认值：“300”（五分钟）。|
+    |ControllerConnectionPeriodInSeconds|连接控制器尝试之间的秒数。|“n”秒。 默认：“30”（三十秒）。|
+    |RemotingTimeoutSeconds|远程处理调用可以持续的最长时间（以秒为单位）。|“n”秒。 默认：“600”（10 分钟）。|
+    |StopTestRunCallTimeoutInSeconds|等待用于停止测试运行的调用的秒数。|“n”秒。 默认：“120”（2 分钟）。|
+    |GetCollectorDataTimeout|等待数据收集器的秒数。|“n”秒。 默认：“300”（5 分钟）。|
 
 ## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>指定测试控制器的代理超时选项
 
@@ -104,7 +104,7 @@ ms.locfileid: "52895686"
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    或
+    - 或 -
 
     添加其他键并指定超时值。 例如，可以在 `RemotingTimeoutSeconds` 节中添加 `<appSettings>` 键并指定十五分钟的值：
 
@@ -119,5 +119,5 @@ ms.locfileid: "52895686"
 - [安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)
 - [修改负载测试记录设置](../test/modify-load-test-logging-settings.md)
 - [为测试控制器和测试代理配置端口](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [如何：为日志文件指定最大大小](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
+- [如何：为日志文件指定最大文件大小](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [如何：将测试控制器或测试代理绑定到网络适配器](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

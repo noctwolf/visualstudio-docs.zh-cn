@@ -1,5 +1,6 @@
 ---
-title: 教程 - 了解 Visual Studio 中的 Flask，步骤 3
+title: 了解 Visual Studio 中的 Flask 教程步骤 3，静态文件和页面
+titleSuffix: ''
 description: Visual Studio 项目上下文中 Flask 基础知识的演练，具体演示了如何提供静态文件、将页面添加到应用和使用模板继承
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6cdc8e3658b02c7c4371181d6c0e5723d0a3537c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 906c44ca3b1d0771202e78910870d38f9d4fb995
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775751"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065020"
 ---
-# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步骤 3：为静态文件提供服务、添加页面和使用模板继承
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步骤 3：提供静态文件、添加页面和使用模板继承
 
-上一步：[使用视图和页面模板创建 Flask 应用](learn-flask-visual-studio-step-02-create-app.md)
+**上一步：[使用视图和页面模板创建 Flask 应用](learn-flask-visual-studio-step-02-create-app.md)**
 
 在本教程的前几个步骤中，你已了解如何通过单页自包含 HTML 创建最小的 Flask 应用。 然而，现代 Web 应用通常由许多页面组成，并利用 CSS、JavaScript 文件等共享资源来提供一致的样式和行为。
 
@@ -119,7 +121,7 @@ Flask 提供一个名为 `serve_static_file` 的函数，可通过代码调用�
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>问：如何在 API 中处理 URL 变量和查询参数？
 
-答：请参阅步骤 1-4 中[问：Flask 如何处理变量 URL 路径和查询参数？](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)的回答
+答：有关[问：Flask 如何使用变量 URL 路由和查询参数？](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)，请参阅步骤 1-4 中的答案：
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>步骤 3-3：向应用添加一个页面
 

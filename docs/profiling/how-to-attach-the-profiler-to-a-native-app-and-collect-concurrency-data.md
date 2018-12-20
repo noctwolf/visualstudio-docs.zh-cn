@@ -1,6 +1,6 @@
 ---
-title: 如何：使用命令行将探查器附加到本机独立应用程序并收集并发数据 | Microsoft Docs
-ms.custom: ''
+title: 将探查器附加到本机应用程序中并收集并发数据
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d189fccf53f94a5505f586527547f573cc75fa0
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ef2c5a7cbd21cba8b60944c2e3f45e4af05e630a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220490"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067040"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到本机独立应用程序并收集并发数据
+# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>如何：将探查器附加到本机独立应用程序，并使用命令行收集并发数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到运行中的本机 (C/C++) 独立应用程序并收集线程争用数据。  
   
 > [!NOTE]
@@ -35,7 +35,7 @@ ms.locfileid: "50220490"
   
      可以将下表中的任意选项与 **/start:concurrency** 选项一起使用。  
   
-    |选项|描述|  
+    |选项|说明|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`Username`|指定要向探查器授予访问权限的帐户的可选域和用户名。|  
     |[/crosssession](../profiling/crosssession.md)|启用其他登录会话中的进程分析。|  
@@ -56,7 +56,7 @@ ms.locfileid: "50220490"
   
 -   下表中的选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|描述|  
+    |选项|说明|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  

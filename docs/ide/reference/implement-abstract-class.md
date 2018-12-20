@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中实现抽象类
+title: 实现抽象类
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4da74a60741ac33143efd7aecf0a4275185b6d3b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: dfa2c6692ddcef9e41454bf902580f354c32f861
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294691"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53047598"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>在 Visual Studio 中实现抽象类
 
@@ -24,11 +24,11 @@ ms.locfileid: "51294691"
 
 - Visual Basic
 
-功能：快速生成实现抽象类所需的代码。
+**功能：** 快速生成实现抽象类所需的代码。
 
-时机：想要继承抽象类时。
+**使用时机：** 想要继承抽象类时。
 
-原因：可以手动逐一实现各个抽象类，但此功能可自动生成所有方法签名。
+操作原因：可以手动逐一实现各个抽象类，但此功能可自动生成所有方法签名。
 
 ## <a name="how-to"></a>操作说明
 

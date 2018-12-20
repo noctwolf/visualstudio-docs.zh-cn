@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 0c082540632be14f7ddce94cb64ef41f03b1e1f7
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: a8161fd7534554da0ad45b3aa2b985a68dd9e49d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349538"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067056"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 的项目迁移和升级参考
 
@@ -62,7 +62,7 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 | SharePoint 2010 | 使用 Visual Studio 2017 打开 SharePoint 解决方案项目时，它将升级到 SharePoint 2013 或 SharePoint 2016。 “.NET 桌面开发”工作负载必须安装于 Visual Studio 2017 中，以便升级。<br/><br/>若要深入了解如何升级 SharePoint 项目，请参阅 [Upgrade to SharePoint 2013](https://technet.microsoft.com/library/cc303420.aspx)（升级到 SharePoint 2013）、[Update Workflow in SharePoint Server 2013](https://technet.microsoft.com/library/dn133867.aspx)（更新 SharePoint 2013 中的工作流）和 [Create the SharePoint Server 2016 farm for a database attach upgrade](https://technet.microsoft.com/library/cc263026(v=office.16).aspx)（创建 SharePoint Server 2016 场用于数据库附加升级）。 |
 | SharePoint 2016 | 不能在 Visual Studio 2017 中打开 Office 开发人员工具预览版 2 中创建的 SharePoint 外接程序项目。 若要解除此限制，需要在 csproj vbproj 文件中将 `MinimumVisualStudioVersion` 更新到 12.0 并将 `MinimumOfficeToolsVersion` 更新到 12.2。 |
 | Silverlight | Visual Studio 2017 不支持 Silverlight 项目。 若要继续使用 Silverlight 应用程序，请继续使用 Visual Studio 2015。 |
-| SQL Server Reporting Services 和 SQL Server Analysis Services（SSRS、SSDT、SSAS、MSAS） | 通过 Visual Studio 库中的两个扩展来提供对这些项目类型的支持：[Microsoft Analysis Services 建模项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects)和 [Microsoft Reporting Services 项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 Visual Studio 2017 的数据存储和处理工作负载中还包括 SSDT 支持。 |
+| SQL Server Reporting Services 和 SQL Server Analysis Services（SSRS、SSDT、SSAS、MSAS） | 通过 Visual Studio 库中的两个扩展提供对这些项目类型的支持：[Microsoft Analysis Services 建模项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects)和 [Microsoft Reporting Services 项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 Visual Studio 2017 的数据存储和处理工作负载中还包括 SSDT 支持。 |
 | SQL Server Integration Services (SSIS) | 可通过 SQL Server Data Tools (SSDT) 获取 Visual Studio 2017 支持。 有关详细信息，请参阅 [SQL Server Integration Services 博客](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/)。 |
 | Visual C++ | Visual Studio 2017 可用于在 Visual Studio 的早期版本中（追溯到 Visual Studio 2010 ）创建的项目中工作。 首次打开项目时，可以选择升级到最新的编译器和工具集，或者继续使用原始编译器和工具集。 如果选择继续使用原始编译器和工具集，Visual Studio 2017 将不会修改项目文件，并使用早期版本 Visual Studio 安装中的工具集来生成项目。 选择继续使用原始编译器和工具集意味着你仍可以在 Visual Studio 的原始版本中打开项目（如有必要）。 有关详细信息，请参阅 [使用 Visual Studio 中的本机多重目标生成旧项目](/cpp/porting/use-native-multi-targeting)。 |
 | Visual Studio 扩展性/VSIX | 更新 MinimumVersion 14.0 或更低版本中的项目以声明 MinimumVersion 15.0，这样可防止在早期版本的 Visual Studio 中打开该项目。 若要允许在早期版本中打开项目，请将 MinimumVersion 设置为 `$(VisualStudioVersion)`。 另请参阅[如何：将扩展性项目迁移到 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |
@@ -71,7 +71,7 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 | Web 部署 (wdproj) | Visual Studio 2012 中已删除对 Web 部署项目的支持，而添加了发布配置文件支持。 在 Visual Studio 2017 中没有相应的功能，因此，此类项目没有自动迁移路径。 而是，在文本编辑器中打开 wdproj 文件，并将任何自定义项复制粘贴到 pubxml（发布配置文件）文件中，如 [StackOverflow](https://stackoverflow.com/a/12061065/1203388) 中所述。 另请参阅[有关网站和 Web 部署项目的计划](https://blogs.msdn.microsoft.com/webdev/2012/08/06/plans-regarding-website-projects-and-web-deployment-projects/)。 |
 | Windows Communication Foundation, Windows Workflow Foundation | 可以在 Visual Studio 2017、Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012 中打开此项目 |
 | Windows Presentation Foundation | 可以在 Visual Studio 2013、Visual Studio 2012 和 Visual Studio 2010 SP1 中打开此项目。 |
-| Windows 应用商店/手机应用 | Visual Studio 2017 不支持 Windows Store 8.1 和 8.0 的项目，也不支持 Windows Phone 8.1 和 8.0 的项目。 若要继续使用这些应用，请继续使用 Visual Studio 2015。 若要继续使用 Windows Phone 7.x 项目，请使用 Visual Studio 2012。 |
+| Windows 应用商店/手机应用 | Visual Studio 2017 不支持 Windows Store 8.1 和 8.0 的项目，也不支持 Windows Phone 8.1 和 8.0 的项目。 若要继续使用这些应用，请继续使用 Visual Studio 2015。 要继续使用 Windows Phone 7.x 项目，请使用 Visual Studio 2012。 |
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Visual Studio 如何决定迁移项目的时间
 
@@ -95,7 +95,13 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 
 在此上下文中，会自然而然出现一个问题：是否应该尝试将项目手动更新或迁移到新的 `ToolsVersion` 值。 没有必要做出该更改，进行该更改可能会产生许多错误和警告，需要修复它们并再次生成项目。 此外，如果 Visual Studio 以后不支持特定的 `ToolsVersion`，那么打开项目会触发项目迁移过程，这是因为必须更改 `ToolsVersion` 值。 在这种情况下，该特定项目类型的子系统确切地知道要更改的内容，并且可以按前文所述自动完成更改。
 
+# <a name="next-steps"></a>后续步骤
+
 如需进一步讨论，请参阅以下文章：
 
 - [ToolsVersion 指南](../msbuild/msbuild-toolset-toolsversion.md)
 - [Framework 目标指南](../ide/visual-studio-multi-targeting-overview.md)
+
+## <a name="see-also"></a>请参阅
+
+[Visual Studio 2019 预览版的项目迁移和升级参考](port-migrate-upgrade-visual-studio-projects-2019.md)

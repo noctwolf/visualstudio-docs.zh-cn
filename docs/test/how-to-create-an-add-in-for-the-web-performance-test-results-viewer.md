@@ -1,5 +1,5 @@
 ---
-title: 为 Web 性能测试结果查看器创建 Visual Studio 外接程序
+title: 为 Web 性能测试结果查看器创建加载项
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dbff48696a7fe10266a2c72fc3a3d9fb0e9ba81d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 6672bd1e38dee5b27d350b9d2e12626cef122115
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896040"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068336"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>如何：为 Web 性能测试结果查看器创建 Visual Studio 外接程序
 
@@ -39,7 +39,7 @@ ms.locfileid: "52896040"
 创建或打开一个可用来进行试验的非生产解决方案，该解决方案包含一个 ASP.NET Web 应用程序以及一个带有针对 ASP.NET Web 应用程序的一个或多个 Web 性能测试的 Web 性能和负载测试项目。
 
 > [!NOTE]
-> 可以遵循[如何：创建 Web 服务测试](../test/how-to-create-a-web-service-test.md)和[如何：生成和运行编码的 Web 性能测试](../test/generate-and-run-a-coded-web-performance-test.md)中的过程，创建 ASP.NET Web 应用程序、包含 Web 性能测试的 Web 性能和负载测试项目。
+> 要创建 ASP.NET Web 应用程序和包含 Web 性能测试的 Web 性能和负载测试项目，请遵循[如何：创建 Web 服务测试](../test/how-to-create-a-web-service-test.md)和[生成和运行编码的 Web 性能测试](../test/generate-and-run-a-coded-web-performance-test.md)中的步骤。
 
 ## <a name="create-a-visual-studio-add-in"></a>创建 Visual Studio 外接程序
 

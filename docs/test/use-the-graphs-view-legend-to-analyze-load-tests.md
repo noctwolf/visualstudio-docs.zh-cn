@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用关系图视图图例分析负载测试
+title: 使用关系图视图图例分析负载测试
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 082b3da934e602aef2f0c4eefcfffc45da2c40f0
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3e379cd3f05063424a7db9905611fa86467bee2d
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896076"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067189"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>使用关系图视图图例分析负载测试
 
@@ -35,16 +35,16 @@ ms.locfileid: "52896076"
     > [!NOTE]
     > 可以通过将范围锁定为特定值来关闭自动范围值调整。 当范围锁定后，超过该范围的任何值都会在关系图顶部显示为指定的最大值。 使用“绘图选项”对话框可将范围锁定为特定值。
 
--   计数器：四个分别名为“计数器”、“实例”、“类别”和“计算机”的列一起唯一地标识性能计数器。
+-   **计数器：** 四个分别名为“计数器”、“实例”、“类别”和“计算机”的列一起唯一地标识性能计数器。
 
 -   **颜色：**“颜色”列显示性能计数器的绘制线条的颜色和线型。 使用“绘图选项”对话框，可以更改关系图上性能计数器的颜色或线型。 可以从图例的快捷菜单访问“绘图选项”对话框。
 
--   **统计信息：**“最小值”、“最大值”、“平均值”和“最后一个”列显示了性能计数器的各项统计信息。 这些值对应于在关系图的可见区域上显示的数据。 例如，如果放大运行的某个区域，则图例统计信息将仅反映缩放区域的值。 “最后一个”列是性能计数器针对最近完成的采样间隔的值。
+-   **统计信息：**“最小”、“最大”、“平均”和“最新”列数显示了性能计数器的相应统计信息。 这些值对应于在关系图的可见区域上显示的数据。 例如，如果放大运行的某个区域，则图例统计信息将仅反映缩放区域的值。 “最后一个”列是性能计数器针对最近完成的采样间隔的值。
 
     > [!NOTE]
     > 当负载测试正在运行时，“最后一个”列才会显示在负载测试分析器的图例中。
 
-     有关详细信息，请参阅[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+     有关更多信息，请参见[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
 在图例中选择某一项可实现以下操作：
 

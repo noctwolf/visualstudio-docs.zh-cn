@@ -1,5 +1,5 @@
 ---
-title: 如何：在 Visual Studio 中自定义菜单和工具栏
+title: 自定义菜单和工具栏
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e9cab18be65d29b6cdd22b8948d2e89f75c4fe9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bb58d0a20e8764e7cefe013458476ddcd41ac416
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745944"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53049686"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自定义菜单和工具栏
 

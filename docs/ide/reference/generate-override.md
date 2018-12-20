@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中生成方法重写
+title: 生成方法重写
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d51139d2e5197607de2255b267c24bf2a9db2b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb4a35c1f7c9e2752148e54f934a3fcbfb974136
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919060"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063637"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>在 Visual Studio 中生成方法重写
 
@@ -24,11 +24,11 @@ ms.locfileid: "49919060"
 
 - Visual Basic
 
-功能：快速生成针对任意方法的代码，以从基类替代它。
+**功能：** 快速生成针对任意方法的代码，以从基类替代它。
 
-时机：想要替代一个基类方法并自动生成签名时。
+**使用时机：** 想要重写一个基类方法并自动生成签名时。
 
-原因：可以自己编写方法签名，但此功能可自动生成签名。
+操作原因：可以自己编写方法签名，但此功能可自动生成签名。
 
 ## <a name="how-to"></a>操作说明
 

@@ -1,5 +1,5 @@
 ---
-title: 为其他语言添加 Visual Studio 编辑器支持
+title: 为其他语言添加编辑器支持
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 57991a7cac2d45cf618642ccd19ead1d94ce5978
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: f0ac463161d42e0d9ddf6b845b752916675ba4fe
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244471"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062090"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>为其他语言添加 Visual Studio 编辑器支持
 
@@ -76,7 +76,7 @@ Visual Studio 2015 Update 1 及更高版本通过 [TextMate 语法](https://manu
 
 如适用，请在此基路径下添加下列文件夹：
 
-|文件夹名|描述|
+|文件夹名|说明|
 |-----------------|-----------------|
 |\\*\<language name>*|语言文件夹。 用语言的名称替换 *\<language name>*。 例如，*\Matlab*。|
 |*\Syntaxes*|语法文件夹。 包含语言的 .json 语法文件，如 Matlab.json。|
@@ -84,7 +84,7 @@ Visual Studio 2015 Update 1 及更高版本通过 [TextMate 语法](https://manu
 
 在 Windows 中，%userprofile% 解析为路径 c:\Users\\\<user name>。 如果系统上不存在扩展文件夹，则需要创建它。 如果该文件夹已存在，它将被隐藏。
 
-有关如何创建 TextMate 语法的详细信息，请参阅 [TextMate - Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)（TextMate - 语言语法简介：如何在 HTML 中添加嵌入的源代码语法突出显示）和 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)（如何创建 Textmate 包的语言语法和自定义主题说明）。
+有关如何创建 TextMate 语法的详细信息，请参阅 [TextMate - 语言语法简介：如何添加 HTML 中嵌入的源代码语法突出显示功能](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/)和[关于如何为 Textmate 包创建语言语法和自定义主题的说明](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle)。
 
 ## <a name="see-also"></a>请参阅
 

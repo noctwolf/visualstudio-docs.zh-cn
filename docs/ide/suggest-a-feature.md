@@ -1,5 +1,5 @@
 ---
-title: 概述：针对 Visual Studio 建议功能
+title: 功能建议
 description: 介绍了什么是开发人员社区中的功能建议、如何提出功能建议，以及 Microsoft 如何在 Visual Studio 路线图中采纳功能建议
 ms.date: 11/15/2018
 ms.prod: visual-studio-dev15
@@ -10,24 +10,24 @@ ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d76dcb09db27ed3ac63ba0dd6cc8fc60588f0f
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826684"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160031"
 ---
 # <a name="overview-suggest-a-feature"></a>概述：功能建议
 
 [Visual Studio 开发人员社区](https://developercommunity.visualstudio.com)除了提供当前的问题报告功能，还引入了全新的功能建议体验。 这是一种可用来直接参与 Visual Studio 工程工作流的新方式。
 
-到目前为止，Visual Studio 用户都是使用 UserVoice 论坛来建议新功能。 借助开发人员社区中的功能建议体验，可以从 UserVoice 论坛转换为，使用一个平台提供所有反馈，从而与 Visual Studio 产品团队直接联系。  
+到目前为止，Visual Studio 用户都是使用 UserVoice 论坛来建议新功能。 借助开发人员社区中的功能建议体验，可以从 UserVoice 论坛转换为，使用一个平台提供所有反馈，从而与 Visual Studio 产品团队直接联系。
 
 我们已将最初的一系列功能建议从 UserVoice 论坛迁移到开发人员社区。 迁移依据为反馈造成的社区影响力，以及产品路线图优先级。 如果我们漏迁移了应迁移的功能建议，你可以随时将它添加到开发人员社区中。
 
 ## <a name="votes"></a>投票
 
-UserVoice 和开发人员社区的投票系统工作原理不同。 为了保持开发人员社区的投票数完整性，并避免发生投票数据倾斜，我们在各个功能建议旁边以标记形式突出显示了 UserVoice 投票数。 当你继续在功能增强的开发人员社区中对功能建议进行投票时，新投票数与 UserVoice 投票数分开显示。  
+UserVoice 和开发人员社区的投票系统工作原理不同。 为了保持开发人员社区的投票数完整性，并避免发生投票数据倾斜，我们在各个功能建议旁边以标记形式突出显示了 UserVoice 投票数。 当你继续在功能增强的开发人员社区中对功能建议进行投票时，新投票数与 UserVoice 投票数分开显示。
 
 ## <a name="user-voice"></a>UserVoice
 
@@ -77,7 +77,7 @@ UserVoice 现为只读网站，便于你在需要时回顾以前的功能建议�
 
 - - -
 
-![开发人员社区中功能建议的“已关闭 - 信息不足”状态](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg) 
+![开发人员社区中功能建议的“已关闭 - 信息不足”状态](../ide/media/SuggestStates/ClosedNotEnoughInfo.jpg)
 
 “已关闭 - 信息不足”表示经过多次尝试后，我们获得的信息仍不足，无法全面了解你的功能建议。 我们不得不关闭新功能建议，因为在此阶段无法进一步采取任何措施。
 
