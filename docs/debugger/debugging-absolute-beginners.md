@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 31b6812ec41aedd4e33eb0d043476365d3938767
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821365"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160018"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>零基础调试的方法
 
@@ -82,7 +82,7 @@ ms.locfileid: "52821365"
 
     如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 页免费安装。
 
-    如果需要安装工作负载但已安装 Visual Studio，请单击“工具” > “获取工具和功能”。 Visual Studio 安装程序启动。 选择“.NET Core 桌面开发”（或“.NET Core 跨平台开发”）工作负载，然后选择“修改”。
+    如果需要安装工作负载但已安装 Visual Studio，请单击“工具” > “获取工具和功能”。 Visual Studio 安装程序启动。 选择“.NET Core 桌面开发”或“.NET Core 跨平台开发”工作负载，然后选择“修改”。
 
 1. 打开 Visual Studio，然后选择“文件” > “新建” > “项目”。
 

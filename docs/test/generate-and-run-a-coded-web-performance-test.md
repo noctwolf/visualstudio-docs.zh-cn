@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中编码的 Web 性能测试
+title: 编码的 Web 性能测试
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 76b2e7eebf66bb4a9c2564ca30a72a7b17dbdcfc
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8a4e1ea45b8fe3ae0e33064973fcf1bc3517598e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895504"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067837"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>生成和运行编码的 Web 性能测试
 
@@ -87,16 +87,16 @@ ms.locfileid: "52895504"
 ## <a name="qa"></a>问题解答
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>问：是否能一次运行多个测试？
- 答：可以，请使用解决方案资源管理器中的上下文菜单。
+ **答：** 可以，请使用解决方案资源管理器中的上下文菜单。
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>问：我是否应在生成编码的测试之前和之后添加数据源？
- 答：可在你生成编码的测试之前更轻松地添加[数据源](../test/add-a-data-source-to-a-web-performance-test.md)，因为将为你自动生成代码。
+ **答：** 可在你生成编码的测试之前更轻松地添加[数据源](../test/add-a-data-source-to-a-web-performance-test.md)，因为将为你自动生成代码。
 
  当你使用数据源运行编码测试时，你可能看到以下错误消息：
 
- 无法在代理\<计算机名> 上运行\<测试名> 测试：对象引用未设置为某个对象的实例。
+ **无法运行测试\<测试名称 > 代理\<计算机名 >：对象引用未设置为某个对象的实例。**
 
  发生此错误的原因是，你有为测试类定义的 DataSourceAttribute，而没有相应的 DataBindingAttribute。 若要纠正此错误，请添加适当的 DataBindingAttribute 并将其删除，或从代码中将其注释掉。
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>问：我是否应在生成编码的测试之前和之后添加验证和提取规则？
- 答：在你生成编码的测试之前，可以更轻松地添加验证规则和提取规则；但是，我们建议你使用[编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)来进行验证。
+ **答：** 在你生成编码的测试之前，可以更轻松地添加验证规则和提取规则；但是，我们建议你使用[编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)来进行验证。

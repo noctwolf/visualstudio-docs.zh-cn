@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 41a4dfa2a904f3fdc09671fd5e9afa0f29c2e9f3
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513395"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160135"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -60,21 +60,21 @@ C# 中的完成列表也足够智能，可筛选出不相关的标记，并可�
 
 IntelliSense 使用筛选器从完成列表中删除不必要的成员。 C# 对针对这些项出现的完成列表进行筛选：
 
-- 接口和基类：IntelliSense 自动从接口和基类完成列表、类声明基类和接口列表和约束列表中移除项。 例如，枚举不会出现在基类的完成列表中，因为枚举无法用于基类。 基类的完成列表仅包含接口和命名空间。 如果在列表中选择一个项，再键入逗号，则 IntelliSense 将从完成列表移除基类，因为 C# 不支持多重继承。 相同的行为也发生在约束子句中。
+- **接口和基类**：IntelliSense 自动从接口和基类完成列表、类声明基类和接口列表和约束列表中移除项。 例如，枚举不会出现在基类的完成列表中，因为枚举无法用于基类。 基类的完成列表仅包含接口和命名空间。 如果在列表中选择一个项，再键入逗号，则 IntelliSense 将从完成列表移除基类，因为 C# 不支持多重继承。 相同的行为也发生在约束子句中。
 
-- **特性**：将特性应用于类型时，对完成列表进行筛选，从而使列表仅包含源自包含那些类型的命名空间的类型，如 <xref:System.Attribute>。
+- **特性**：将特性应用于类型时，对完成列表进行筛选，这样列表仅包含源自包含那些类型的命名空间的类型，如 <xref:System.Attribute>。
 
 - Catch 子句
 
-- 对象初始值设定项：完成列表中将仅列出可进行初始化的成员。
+- **对象初始值设定项**：仅可进行初始化的成员将出现在完成列表中。
 
-- **关键字**：键入 `new` 并按空格键后，将显示完成列表。 基于代码的上下文将在列表中自动选择项。 例如，自动为声明和方法中的 return 语句在完成列表中选择项。
+- **new 关键字**：键入 `new` 并按空格键后，将显示完成列表。 基于代码的上下文将在列表中自动选择项。 例如，自动为声明和方法中的 return 语句在完成列表中选择项。
 
-- **enum 关键字**：在枚举赋值的等号后按空格键，将显示完成列表。 基于代码的上下文将在列表中自动选择项。 例如，键入关键字 return 之后以及进行声明时，将在完成列表中自动选择项。
+- **enum 关键字**：当在枚举赋值的等号后按空格键时，将出现完成列表。 基于代码的上下文将在列表中自动选择项。 例如，键入关键字 return 之后以及进行声明时，将在完成列表中自动选择项。
 
 - **as 和 is 运算符**：键入 `as` 或 `is` 关键字后按空格键，将自动显示经过筛选的完成列表。
 
-- 事件：当键入关键字 `event` 时，完成列表仅包含委托类型。
+- **事件**：当键入关键字 `event` 时，完成列表仅包含委托类型。
 
 - 当输入参数时，参数将帮助自动根据匹配参数的首个方法重载进行排序。 如果有多个可用的方法重载，则可使用向上和向下箭头导航到列表中下一个可能的重载。
 
@@ -116,7 +116,7 @@ IntelliSense 提供了一个选项，有助于在使用代码编辑器时实现[
 
 IntelliSense 提供了一个选项，有助于在使用代码编辑器时自动实现抽象基类的成员。 通常情况下，实现抽象基类的成员需要在你的派生类中为抽象基类的每个方法创建新的方法定义。 使用 IntelliSense，在类声明中键入抽象基类的名称后，将显示“快速操作”灯泡。 该灯泡将提供自动实现基类方法的选项。
 
-通过“实现抽象基类”功能生成的方法存根将由文件 MethodStub.snippet 中定义的代码片段进行建模。 代码片段是可修改的。 有关详细信息，请参阅[演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)。
+通过“实现抽象基类”功能生成的方法存根将由文件 MethodStub.snippet 中定义的代码片段进行建模。 代码片段是可修改的。 有关详细信息，请参见[演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)。
 
 ### <a name="generate-from-usage"></a>使用时生成
 
@@ -165,4 +165,4 @@ IntelliSense 提供了一个选项，有助于在使用代码编辑器时自动�
 ## <a name="see-also"></a>请参阅
 
 - [使用 IntelliSense](../ide/using-intellisense.md)
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)

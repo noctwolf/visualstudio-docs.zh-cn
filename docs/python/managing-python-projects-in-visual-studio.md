@@ -1,6 +1,6 @@
 ---
 title: 管理 Python 应用程序项目
-description: Visual Studio 中项目的用途、如何创建和管理 Python 代码项目以及可用于 Python 的不同项目模板。
+description: Visual Studio 中的项目管理文件之间的依赖项和应用程序中的关系复杂性。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9f5612aa166f81bf1f42983989db5bdf5422a7ef
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 6b0d31905cd0dfb835275d6fd0bbe8f153253b56
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220464"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068281"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 项目
 
@@ -38,7 +39,7 @@ Visual Studio 提供多种 Python 项目模板用于快速设置多个应用程�
 |   |   |
 |---|---|
 | ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关 Python 项目的介绍，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567)（2 分 17 秒）。 |
-| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 另请参阅[深入了解：通过 Python 项目使用源控件](https://youtu.be/Aq8eqApnugM)（youtube.com，8 分 55 秒）。 |
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 另请参阅[深入了解：将源代码管理用于 Python 项目](https://youtu.be/Aq8eqApnugM)（youtube.com，8 分 55 秒）。 |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>添加文件、分配启动文件和设置环境
 
@@ -65,7 +66,7 @@ Visual Studio 提供多种方法用于从零开始，或根据现有代码设置
 
 下表总结了 Visual Studio 2017 中提供的模板（并非所有以前版本都提供了这些模板）：
 
-| 模板 | 描述 |
+| 模板 | 说明 |
 | --- | --- |
 | [**根据现有 Python 代码**](#create-project-from-existing-files) | 从文件夹结构中的现有 Python 代码创建 Visual Studio 项目。  |
 | **Python 应用程序** | 新 Python 应用程序的基本项目结构具有一个空的源文件。 默认情况下，项目在默认全局环境的控制台解释器中运行，通过[分配其他环境](selecting-a-python-environment-for-a-project.md)可以更改环境。 |
@@ -92,7 +93,7 @@ Visual Studio 提供多种方法用于从零开始，或根据现有代码设置
 
 ## <a name="linked-files"></a>链接文件
 
-链接文件是指放入项目，但通常位于应用程序项目文件夹外的文件。 这些文件在解决方案资源管理器中显示为普通文件，并具有重叠的快捷方式图标：![链接文件图标](media/projects-linked-file-icon.png)
+链接文件是指放入项目，但通常位于应用程序项目文件夹外的文件。 这些文件在“解决方案资源管理器”中显示为普通文件，具有重叠的快捷方式图标：![链接文件图标](media/projects-linked-file-icon.png)
 
 链接文件通过 `<Compile Include="...">` 元素在 .pyproj 文件中指定。 如果链接文件使用目录结构之外的相对路径，则为隐式链接文件，如果使用解决方案资源管理器内的路径，则为显式链接文件：
 

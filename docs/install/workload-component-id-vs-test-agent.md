@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Test Agent 2017 工作负载和组件 ID
+titleSuffix: ''
 description: 使用 Visual Studio 工作负载和组件 ID 远程运行自动测试和负载测试
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.workload:
 - multiple
-ms.openlocfilehash: e148487d060667dad4c0f5f00273d75c062b5b01
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: d75fe8a1dee373dc7d8b48ac1f03c3a2592c705e
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607505"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53048378"
 ---
 # <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 组件目录
 
@@ -43,7 +44,7 @@ ms.locfileid: "51607505"
 
 **ID：** Microsoft.VisualStudio.Workload.TestAgent
 
-**说明：** 支持远程运行自动测试和负载测试
+**描述：** 支持运行自动测试和远程加载测试
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 

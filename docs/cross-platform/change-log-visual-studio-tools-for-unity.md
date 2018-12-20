@@ -1,24 +1,60 @@
 ---
 title: 更改日志（Visual Studio Tools for Unity、Windows）| Microsoft Docs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 11/28/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: TerryGLee
-ms.author: tglee
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: da2e91e15572a9904115926447523d8dba23a36a
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 4db1d1d5340465b2e977a651eea2e6ad592c22e0
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000721"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068375"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 Visual Studio Tools for Unity 更改日志。
+
+## <a name="3903"></a>3.9.0.3
+ 发布时间：2018 年 11 月 28 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成：**
+
+    -   已修复：添加或删除第一个项目中的脚本时，项目会重新加载，及 intellisense 问题。
+
+## <a name="3902"></a>3.9.0.2
+ 发布时间：2018 年 11 月 19 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **调试器：**
+
+    -   修复了用于与 Unity 调试器引擎进行通信的库中的死锁，此死锁会导致 Visual Studio 或 Unity 冻结，尤其是在用户点击“附加到 Unity”或重启游戏时。
+
+## <a name="3901"></a>3.9.0.1
+ 发布时间：2018 年 11 月 15 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成：**
+
+    -   修复了选中另一个默认编辑器时 Unity 插件的激活。
+
+## <a name="3900"></a>3.9.0.0
+ 发布时间：2018 年 11 月 13 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **项目生成：**
+
+    -   回滚了针对 Unity 性能缺陷的解决方案（此缺陷已由 Unity 修复）。
 
 ## <a name="3807"></a>3.8.0.7
  发布时间：2018 年 9 月 20 日
@@ -27,7 +63,7 @@ Visual Studio Tools for Unity 更改日志。
 
 -   **调试器：**
 
-    -   修复了用于与 Unity 调试器引擎进行通信的库中的死锁，此死锁会导致 Visual Studio 或 Unity 冻结，尤其是在用户点击“附加到 Unity”或重启游戏时。
+    -   （从 3.9.0.2 版向后移植）修复了用于与 Unity 调试器引擎进行通信的库中的死锁，此死锁会导致 Visual Studio 或 Unity 冻结，尤其是在用户点击“附加到 Unity”或重启游戏时。
 
 ## <a name="3806"></a>3.8.0.6
  发布日期：2018 年 8 月 27 日
@@ -71,7 +107,7 @@ Visual Studio Tools for Unity 更改日志。
 
 -   **项目生成：**
 
-    -   回滚了针对 Unity 性能缺陷的解决方案（此缺陷已由 Unity 修复）。
+    -   （从 3.9.0.0 版向后移植）回滚了针对 Unity 性能缺陷的解决方案（此缺陷已由 Unity 修复）。
 
 ## <a name="3802"></a>3.8.0.2
  发布时间：2018 年 7 月 7 日
@@ -634,7 +670,7 @@ Visual Studio Tools for Unity 更改日志。
 
 -   修复对 Windows 应用商店应用的 UnityEngine 和 UnityEditor 程序集的引用。
 
--   修复在调试器中逐步执行时出现的错误：无法逐步执行，一般异常。
+-   已修复在调试器中单步执行时的错误：无法单步执行，一般异常。
 
 -   修复了 Visual Studio 2015 中的命中次数断点。
 
@@ -720,7 +756,7 @@ Visual Studio Tools for Unity 更改日志。
 
 -   **Unity：** 在项目文件生成过程中查找 .rsp 文件中的不安全标志和自定义定义。
 
--   **UI：** Visual Studio 中已添加的 Visual Studio Tools for Unity“选项”  对话框。
+-   **UI：** Visual Studio 中已添加的 Visual Studio Tools for Unity“选项”对话框。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -1105,21 +1141,21 @@ Visual Studio Tools for Unity 更改日志。
 
 -   修复了 bug UV-48：键入双引号有时会产生错误并中断所有函数（代码完成、语法突出显示等）。
 
--   修复了 bug UV-46：单击 Visual Studio 的“错误列表”时重复打开脚本文件 (UnityScript)。
+-   已修复 bug UVS-46：单击 Visual Studio 的“错误列表”时重复打开脚本文件 (UnityScript)。
 
--   修复了 bug UV-42：状态栏中的 Unity 连接徽标不处理 VS 2012 中的鼠标事件。
+-   已修复 bug UVS-42：状态栏中的 Unity 连接徽标不处理 VS 2012 中的鼠标事件。
 
--   修复了 bug UV-44：VS 2012 中的 CTRL+SHIFT+Q 不可用于 Quick MonoBehaviours。
+-   已修复 bug UVS-44：VS 2012 中的 CTRL+SHIFT+Q 不可用于 Quick MonoBehaviours。
 
--   修复了 bug UV-40：VS2012“深色”主题中窗口为非活动状态时，Unity 项目资源管理器中的选定项目不可读。
+-   已修复 bug UV-40：VS2012“深色”主题中窗口为非活动状态时，Unity 项目资源管理器中的选定项目不可读。
 
--   修复了 bug UV-39：转义字符串标记化问题。
+-   已修复 bug UV-39：转义字符串标记化问题。
 
--   修复了 bug UV-35：检查相变量时调用对象上的 ToString。
+-   已修复 bug UV-35：检查相变量时调用对象上的 ToString。
 
--   修复了 bug UV-27：“转到符号”窗口与 VS2012 中的“深色”主题不一致。
+-   已修复 bug UV-27：“转到符号”窗口与 VS2012 中的“深色”主题不一致。
 
--   修复了 bug UV-11：协同程序中的局部变量。
+-   已修复 bug UVS-11：协同例程中的局部变量。
 
 ## <a name="1100---beta-release"></a>1.1.0.0 - Beta 版本
  发布时间：2013 年 3 月 9 日
@@ -1225,9 +1261,9 @@ Visual Studio Tools for Unity 更改日志。
 
 -   修复了在加载的程序集中为表达式计算搜索类型的方式。
 
--   修复了 bug UV-21：对 Unity 对象分配的评估不起作用。
+-   已修复 bug UV-21：对 Unity 对象分配的评估不起作用。
 
--   修复了 bug UV-21：评估对 Unity Math API 的方法调用时的指针无效。
+-   已修复 bug UV-21：评估对 Unity Math API 的方法调用时的指针无效。
 
 ## <a name="1080"></a>1.0.8.0
  发布时间：2012 年 9 月 26 日

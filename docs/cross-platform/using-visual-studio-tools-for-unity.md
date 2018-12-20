@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 74bd467417d6138d603382bd5432fe84af04d3b2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 380618e0cee57a1cf0f45a1324d150170e5ee16e
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909843"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027336"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -91,7 +91,7 @@ MonoBehavior 向导可用于查看所有 Unity API 方法的列表，并快速�
 
 Unity 项目资源管理器会以与 Unity 编辑器相同的方式显示所有 Unity 项目文件和目录。 这是不同于使用普通 Visual Studio 解决方案资源管理器导航 Unity 脚本，后者将它们组织到项目和由 Visual Studio 生成的解决方案中。
 
-- 在 Visual Studio 的主菜单上选择“视图”>“Unity 项目资源管理器”。 键盘快捷方式：Alt+Shift+E
+- 在 Visual Studio 的主菜单上选择“视图”>“Unity 项目资源管理器”。 键盘快捷键：Alt+Shift+E
 
    ![查看 Unity 项目资源管理器窗口。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
@@ -107,7 +107,7 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 
    ![在 Visual Studio 中单击“播放”](media/vstu_play-button.png)
 
-2. 切换到 Unity 并单击“播放”按钮，在编辑器中运行游戏。
+2. 切换到 Unity 并单击“Play”按钮，在编辑器中运行游戏。
 
    ![在 Unity 中单击“播放”](media/vstu_unity-play-button.png)
 

@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe90b47086232650a38581bb2a8af1b534b8063
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2d9cb832d8797eb4ebf16482f4bef02aa6644a3
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835977"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064292"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：为 Web 站点收集性能数据
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：收集网站性能数据
 
 可以使用“性能向导” 为 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序收集性能数据。 可以分析在 Visual Studio 中打开的 Web 应用程序，也可以分析位于本地计算机且未在 Visual Studio IDE 中打开的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 站点。
 
@@ -79,11 +79,11 @@ ms.locfileid: "49835977"
 
 5. 在向导第三页的“运行 Web 应用程序的 URL 或路径是什么”  框中，在应用程序主页上输入 URL，然后单击“下一步” 。
 
-   - 对于基于服务器 (IIS) 的网站，请键入一个 URL（如 <http://localhost/MySite/default.aspx>）。 这将导致对 MySite 应用程序根目录上本地计算机中的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序进行分析，并且在 Internet Explorer 中启动该站点网页 default.aspx，从而启动会话。
+   - 对于基于服务器 (IIS) 的网站，请键入一个 URL（如“<`http://localhost/MySite/default.aspx`>”）。 这将导致对 MySite 应用程序根目录上本地计算机中的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序进行分析，并且在 Internet Explorer 中启动该站点网页 default.aspx，从而启动会话。
 
-   - 对于基于文件的网站，请键入路径，例如文件 ///**c:\WebSites\MySite\default.aspx**。 这将导致对位于 c:\webSites\MySite 上的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序进行分析，并且在 Internet Explorer 中启动 http://localhost:nnnn/MySite/default.aspx 网页，从而启动会话。
+   - 对于基于文件的网站，请键入路径，例如文件 ///**c:\WebSites\MySite\default.aspx**。 这将导致对位于 c:\webSites\MySite 上的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序进行分析，并且在 Internet Explorer 中启动 `http://localhost:nnnn/MySite/default.aspx` 网页，从而启动会话。
 
-   - 对于想在其中收集 JavaScript 数据的外部网站，请输入 URL（如 http://www.contoso.com）。
+   - 对于想在其中收集 JavaScript 数据的外部网站，请输入 URL（如 `http://www.contoso.com`）。
 
      有关详细信息，请查看 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 目标二进制文件的属性页。
 

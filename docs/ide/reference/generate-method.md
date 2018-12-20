@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中生成方法
+title: 生成方法
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d6d7d17810e53de80bfecff697e960613dc06a6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 1e5cf156c6c17e8a9bf1fb9f40f75c1e72b7be94
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295847"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057173"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>在 Visual Studio 中生成方法
 
@@ -24,11 +24,11 @@ ms.locfileid: "51295847"
 
 - Visual Basic
 
-功能：将方法快速添加到类。
+**功能：** 将方法快速添加到类。
 
-时机：想要引入新方法，并想要自动以适当的方式声明它时。
+**使用时机：** 想要引入新方法，并想要自动以适当的方式声明它时。
 
-原因：可以在使用该方法和参数之前对其进行声明，但此功能可自动生成声明。
+操作原因：可以在使用该方法和参数之前对其进行声明，但此功能可自动生成声明。
 
 ## <a name="how-to"></a>操作说明
 

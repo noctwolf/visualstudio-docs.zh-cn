@@ -1,8 +1,9 @@
 ---
-title: 在 Visual Studio 2017 中选择安装位置
-description: 了解如何通过将下载缓存、共享组件、SDK 和工具的位置更改到不同的驱动器来减少系统驱动器上的安装占用。
+title: 选择安装位置
+description: 了解如何通过将下载缓存、共享组件、SDK 和工具的位置更改到不同的驱动器来减少 Visual Studio 在系统驱动器上的安装占用。
 ms.date: 11/07/2018
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3b54674c24e3becf62e7568be127344104de0f
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2acefee22976e061b3feff83b00891037a0f2bbd
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295028"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159836"
 ---
 # <a name="select-the-installation-locations-in-visual-studio-2017"></a>在 Visual Studio 2017 中选择安装位置
 

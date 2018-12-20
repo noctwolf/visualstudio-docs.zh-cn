@@ -1,6 +1,6 @@
 ---
 title: 设置 Python 代码格式
-description: 如何在 Visual Studio 中自动重新设置 Python 代码的格式，包括间距、语句、换行和注释。
+description: Visual Studio 可以自动重新设置 Python 代码的格式，包括间距、语句、换行和注释。
 ms.date: 10/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b0ce6b5db57b4f6140fb164391ebf5c07e623baf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 452dc1104147e5b29dd38790cbfa726ad0de7b1f
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219544"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53052188"
 ---
 # <a name="format-python-code"></a>设置 Python 代码格式
 
@@ -29,7 +30,7 @@ ms.locfileid: "50219544"
 
 ![Visual Studio 中的 Python“格式”选项](media/options-editor-formatting.png)
 
-默认情况下，“格式”选项设置为匹配 [PEP 8 样式指南](http://www.python.org/dev/peps/pep-0008/)的超集。 “常规”选项卡确定何时应用格式；本文介绍了其他三个选项卡的设置。
+默认情况下，“格式”选项设置为匹配 [PEP 8 样式指南](https://www.python.org/dev/peps/pep-0008/)的超集。 “常规”选项卡确定何时应用格式；本文介绍了其他三个选项卡的设置。
 
 借助 [Visual Studio 中的 Python 支持](installing-python-support-in-visual-studio.md)，还可在“编辑” > “高级”菜单中添加有用的[“Fill Comment Paragraph”](#fill-comment-paragraph-command)命令，如下节所述。
 

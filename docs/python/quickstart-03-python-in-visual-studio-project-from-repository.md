@@ -1,22 +1,23 @@
 ---
 title: 快速入门 - 克隆 Python 代码存储库
 description: 在此快速入门教程中，将使用 Visual Studio 团队资源管理器进行 Python koans 存储库克隆，从而在 Visual Studio 中创建 Python 项目。
-ms.date: 09/04/2018
+ms.date: 12/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a4b01cc775c32bc602699aa2753482f184661079
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 871a5f620cc90db5064562461336fdeac38ba757
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281684"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068388"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入门：在 Visual Studio 中克隆 Python 代码存储库
 
@@ -57,7 +58,7 @@ ms.locfileid: "44281684"
 
 1. 按 Ctrl+F5 或选择“调试” > “开始执行(不调试)”运行程序。 如果看到 koans.txt 的 FileNotFoundError，则检查上一步中的工作目录设置。
 
-1. 程序成功运行时，会在 python3/koans/about_asserts.py 的第 17 行显示一个断言错误。 这是有意为之：程序旨在通过让用户更正所有故意设计的错误来学习 Python。 （[Ruby Koans](http://rubykoans.com/) 上提供了更多详细信息，Python Koans 的设计灵感便源于前者。）
+1. 程序成功运行时，会在 python3/koans/about_asserts.py 的第 17 行显示一个断言错误。 这是有意为之：程序旨在通过让用户更正所有故意设计的错误来学习 Python。 （[Ruby Koans](https://rubykoans.com/) 上提供了更多详细信息，Python Koans 的设计灵感便源于前者。）
 
     ![Python koans 程序的第一次输出](media/koans-output.png)
 

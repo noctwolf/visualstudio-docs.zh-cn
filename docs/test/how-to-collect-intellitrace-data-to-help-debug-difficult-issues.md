@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的 IntelliTrace 数据
+title: IntelliTrace 数据
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8501f141c2fdf60a57daecda33a3ff7436a16a5d
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: cad52f39fc45e5561e2a87f12c804cb0d445d96a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894633"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53064752"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>如何：收集 IntelliTrace 数据以帮助调试难题
 
@@ -83,7 +83,7 @@ IntelliTrace 文件中收集的数据可减少重现和诊断代码中的错误�
 
 7.  选择“模块”选项卡。选择“从以下模块以外的所有模块收集数据”并使用“添加”可添加到模块列表中，单击“移除”可移除模块。 通过使用此选项，您可以包含除指定的模块之外的系统上运行的所有模块。
 
-     或
+     - 或 -
 
      选择“仅从以下模块中收集数据”并使用“添加”以添加到模块列表中，使用“移除”以移除模块。 通过使用此选项，您可以确切地指定所需的模块。
 
@@ -92,7 +92,7 @@ IntelliTrace 文件中收集的数据可减少重现和诊断代码中的错误�
 
 8.  选择“进程”选项卡。选择“从以下进程之外的所有进程收集数据”，然后使用“添加”以添加到进程列表中，使用“移除”以移除进程。 通过使用此选项，您可以包含除指定的进程之外的系统上运行的所有进程。
 
-     或
+     - 或 -
 
      选择“仅从指定的进程收集数据”并使用“添加”以添加到进程列表中，使用“移除”以移除进程。 通过使用此选项，您可以确切地指定所需的进程。
 

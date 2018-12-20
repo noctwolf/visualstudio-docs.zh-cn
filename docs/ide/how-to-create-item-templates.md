@@ -1,5 +1,5 @@
 ---
-title: 创建 Visual Studio 项模板
+title: 创建项模板
 ms.date: 01/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 342b7ebd17280c47296fae43c6541a5e969ad5f3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b871c5c502c026a8a374af232888c09f18798a0c
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954657"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062452"
 ---
 # <a name="how-to-create-item-templates"></a>如何：创建项模板
 
@@ -26,7 +26,7 @@ ms.locfileid: "31954657"
 
 1. 向项目添加一项，并在需要时修改它。
 
-1. 修改代码文件，以指示应进行参数替换的位置。 有关详细信息，请参阅[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)。
+1. 修改代码文件，以指示应进行参数替换的位置。 有关更多信息，请参见[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)。
 
 1. 在“项目”菜单上，选择“导出模板”。
 
@@ -113,7 +113,7 @@ ms.locfileid: "31954657"
 
 1. 修改项目项，直到可以将它另存为一个模板。
 
-1. 修改代码文件以指示应进行参数替换的位置。 有关参数替换的详细信息，请参阅[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)。
+1. 修改代码文件以指示应进行参数替换的位置。 有关参数替换的详细信息，请参阅[如何：替换模板中的参数。](../ide/how-to-substitute-parameters-in-a-template.md)
 
 1. 创建 XML 文件，并将其与 .vstemplate 文件扩展名保存在与项目文件相同的目录中。
 
@@ -123,7 +123,7 @@ ms.locfileid: "31954657"
 
 1. 在**个Windows资源管理器**中，选择要包含在模板中的文件。 右键单击所选文件，然后选择“发送至” > “压缩的文件夹（zip 格式）”。 所选的文件将压缩到一个 .zip 文件中。
 
-1. 复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2017 中，默认目录是 %USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates。 有关详细信息，请参阅[如何：查找和组织项目和项模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+1. 复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2017 中，默认目录是 %USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates。 有关更多信息，请参见[如何：查找和组织项目和项模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ## <a name="see-also"></a>请参阅
 

@@ -1,5 +1,6 @@
 ---
-title: 教程 - 了解 Visual Studio 中的 Flask，步骤 4
+title: 学习 Visual Studio 中的 Flask 教程的第 4 步，Web 项目模板
+titleSuffix: ''
 description: Visual Studio 项目上下文中 Flask 基础知识的演练，具体介绍了 Flask Web 项目和 Flask/Jade Web 项目模板提供的功能。
 ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9171b7f44a51380fd086798b4ab9c50fa98729
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c072d1187abf463cc2f185946f7e238bb091a534
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775953"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53051696"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步骤 4：使用完整的 Flask Web 项目模板
 
-上一步：[为静态文件提供服务、添加页面和使用模板继承](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
+**上一步：[提供静态文件、添加页面和使用模板继承](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 通过在 Visual Studio 中的“空白 Flask 应用项目”模板上生成应用，你已经了解了 Flask 的基础知识，现在可以轻松地了解“Flask Web 项目”模板生成的更完整的应用。
 
@@ -74,7 +76,7 @@ ms.locfileid: "43775953"
   - Static 文件夹包含名为 content（CSS 文件）、fonts（字体文件）和 scripts（JavaScript 文件）的子文件夹。
   - templates 文件夹包含 layout.html 基本模板以及每个扩展 layout.html 的特定网页的 about.html、contact.html 和 index.html。
 
-### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>问：能否在 Visual Studio 项目之间共享虚拟环境？
+### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>问：能否能在 Visual Studio 项目之间共享虚拟环境？
 
 答：可以，但在执行此操作时请注意，随着时间的推移，不同的项目可能会使用不同的包，因此共享的虚拟环境必须包含使用它的所有项目的所有包。
 

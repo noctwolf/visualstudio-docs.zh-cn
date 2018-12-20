@@ -1,5 +1,6 @@
 ---
 title: Visual Studio 生成工具 2017 工作负载和组件 ID
+titleSuffix: ''
 description: 使用 Visual Studio 工作负载和组件 ID 来构建基于 Windows 的经典应用程序
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 958e4e842468e871cd9aa65f0a20b87a84aeb4ca
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: 2e47eca638e81cf1b99a451e3017614be45d2c59
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607856"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063041"
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio 生成工具 2017 组件目录
 
@@ -43,7 +44,7 @@ ms.locfileid: "51607856"
 
 **ID：** Microsoft.VisualStudio.Workload.AzureBuildTools
 
-**说明：** 用于构建 Azure 应用程序的 MSBuild 任务和目标。
+**描述：** 用于生成 Azure 应用程序的 MSBuild 任务和目标。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -85,9 +86,9 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 开发工�
 
 ## <a name="data-storage-and-processing-build-tools"></a>数据存储和处理生成工具
 
-ID：Microsoft.VisualStudio.Workload.DataBuildTools
+**ID：** Microsoft.VisualStudio.Workload.DataBuildTools
 
-说明：生成 SQL Server 数据库项目
+**描述：** 生成 SQL Server 数据库项目
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -108,7 +109,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15
 
 **ID：** Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools
 
-**说明：** 用于使用 C#、Visual Basic 和 F# 生成 WPF、Windows 窗体和控制台应用程序的工具。
+**描述：** 用于使用 C#、Visual Basic 和 F# 生成 WPF、Windows 窗体和控制台应用程序的工具。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -150,7 +151,7 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | F# 编译器 | 15.8.27825.0 | 
 
 **ID：** Microsoft.VisualStudio.Workload.MSBuildTools
 
-**说明：** 提供构建基于 MSBuild 的应用程序所需的工具。
+**描述：** 提供生成基于 MSBuild 的应用程序所需的工具。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -164,7 +165,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn �
 
 **ID：** Microsoft.VisualStudio.Workload.NetCoreBuildTools
 
-**说明：** 用于使用 .NET Core、ASP.NET Core、HTML/JavaScript 和容器生成应用程序的工具。
+**描述：** 用于使用 .NET Core、ASP.NET Core、HTML/JavaScript 和容器生成应用程序的工具。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -178,9 +179,9 @@ Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 开发工具 | 15.6.27
 
 ## <a name="nodejs-build-tools"></a>Node.js 生成工具
 
-ID：Microsoft.VisualStudio.Workload.NodeBuildTools
+**ID：** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-说明：用于使用异步事件驱动型 JavaScript 运行时 Node.js 生成可缩放网络应用程序的 MSBuild 任务和目标。
+**描述：** 用于使用异步事件驱动型 JavaScript 运行时 Node.js 生成可缩放网络应用程序的 MSBuild 任务和目标。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -193,7 +194,7 @@ Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.2821
 
 **ID：** Microsoft.VisualStudio.Workload.OfficeBuildTools
 
-**说明：** 生成 Office 和 SharePoint 加载项以及 VSTO 加载项。
+**描述：** 生成 Office 和 SharePoint 加载项以及 VSTO 加载项。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -233,7 +234,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 开发工�
 
 **ID：** Microsoft.VisualStudio.Workload.UniversalBuildTools
 
-**说明：** 提供生成通用 Windows 平台应用程序所需的工具。
+**描述：** 提供生成通用 Windows 平台应用程序所需的工具。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -254,11 +255,11 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.15063.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 适用于桌面 C++ [ARM 和 ARM64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | Optional
@@ -267,7 +268,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **ID：** Microsoft.VisualStudio.Workload.VCTools
 
-说明：使用 Microsoft C++ 工具集、ATL 或 MFC 生成 Windows 桌面应用程序。
+**描述：** 使用 Microsoft C++ 工具集、ATL 或 MFC 生成 Windows 桌面应用程序。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -295,11 +296,11 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.15063.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 适用于桌面 C++ [ARM 和 ARM64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.WinXP | 针对 C++ 的 Windows XP 支持 | 15.8.27924.0 | Optional
@@ -310,9 +311,9 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 ## <a name="visual-studio-extension-development"></a>Visual Studio 扩展开发
 
-ID：Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
+**ID：** Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools
 
-说明：用于生成 Visual Studio 加载项和扩展的工具，其中包括新命令、代码分析器和工具窗口。
+**描述：** 用于生成 Visual Studio 加载项和扩展的工具，其中包括新命令、代码分析器和工具窗口。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -338,7 +339,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.9 v14.16
 
 **ID：** Microsoft.VisualStudio.Workload.WebBuildTools
 
-**说明：** 用于构建 Web 应用程序的 MSBuild 任务和目标。
+**描述：** 用于生成 Web 应用程序的 MSBuild 任务和目标。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -383,7 +384,7 @@ Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 开发工具 | 15.6.27
 
 **ID：** Microsoft.VisualStudio.Workload.XamarinBuildTools
 
-**说明：** 用于使用 C# 和 F# 生成 iOS、Android 和 Windows 版跨平台应用程序的工具。
+**描述：** 用于使用 C# 和 F# 生成 iOS、Android 和 Windows 版跨平台应用程序的工具。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 

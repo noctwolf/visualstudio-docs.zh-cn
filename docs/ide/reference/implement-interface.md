@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中实现接口
+title: 实现接口
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9abc1d5fde69127f796dcfcd4c7c09cf8743c915
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 7abe20831c920a0d4fd74f60a75e6112c480ab39
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295418"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068469"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>在 Visual Studio 中实现接口
 
@@ -24,11 +24,11 @@ ms.locfileid: "51295418"
 
 - Visual Basic
 
-功能：快速生成实现接口所需的代码。
+**功能：** 快速生成实现接口所需的代码。
 
-时机：想要继承接口时。
+**使用时机：** 想要继承接口时。
 
-原因：可以手动逐一实现各个接口，但此功能可自动生成所有方法签名。
+操作原因：可以手动逐一实现各个接口，但此功能可自动生成所有方法签名。
 
 ## <a name="how-to"></a>操作说明
 

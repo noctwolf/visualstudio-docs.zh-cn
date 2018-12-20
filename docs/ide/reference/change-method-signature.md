@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中重构方法签名
+title: 重构方法签名
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 944340a8f6901934c3afc2f54323f73bc5639f8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 81f907ae1f7def1ce401990dc505f423aac5a4c1
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842282"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062330"
 ---
 # <a name="change-a-method-signature-refactoring"></a>“更改方法签名”重构
 
@@ -30,11 +30,11 @@ ms.locfileid: "49842282"
 
 - Visual Basic
 
-功能：删除或更改方法的参数顺序。
+**功能：** 删除或更改方法参数的顺序。
 
-时机：想要移动或删除当前用于多个位置的方法参数时。
+**使用时机：** 想要移动或删除当前用于多个位置的方法参数时。
 
-原因：可以手动删除和重新排列参数，然后找到对此方法的所有调用并逐一更改，但这样可能会引发错误。  此重构工具可自动执行此任务。
+操作原因：可以手动删除和重新排列参数，然后找到对此方法的所有调用并逐一更改，但这样可能会引发错误。  此重构工具可自动执行此任务。
 
 ## <a name="how-to"></a>操作说明
 
@@ -62,7 +62,7 @@ ms.locfileid: "49842282"
 
    ![“更改签名”对话框](media/changesignature-dialog-cs.png)
 
-   | Button | 描述
+   | Button | 说明
    | ------ | ---
    | 上移/下移 | 在列表中向上和向下移动所选的参数
    | **移除** | 从列表删除所选的参数

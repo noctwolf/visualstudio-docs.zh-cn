@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中生成类或类型
+title: 生成类或类型
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f7b8733e6c2a1464b5ea9c07c9c9109064183a6c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4f7d722669ddf51715b21ddaf1f253fb0668dfaa
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296276"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065469"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>在 Visual Studio 中生成类或类型
 
@@ -29,11 +29,11 @@ ms.locfileid: "51296276"
 
 - Visual Basic
 
-功能：立即生成类或类型的代码。
+**功能：** 立即生成类或类型的代码。
 
-时机：引入一个新类或类型，并想要自动以适当的方式声明它时。
+**使用时机：** 引入一个新类或类型，并想要自动以适当的方式声明它时。
 
-原因：可以在使用类或类型前对其进行声明，但此功能将自动生成类或类型。
+操作原因：可以在使用类或类型前对其进行声明，但此功能将自动生成类或类型。
 
 ## <a name="how-to"></a>操作说明
 
@@ -72,7 +72,7 @@ ms.locfileid: "51296276"
 
    ![生成类型](media/class-newtype-cs.png)
 
-   选择 | 描述
+   选择 | 说明
    --- | ---
    Access | 将类型设置为具有“默认”、“内部”或“公共”访问权限。
    类型 | 这可被设置为“类”或“结构”。

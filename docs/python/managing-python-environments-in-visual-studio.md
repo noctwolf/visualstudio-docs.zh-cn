@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 环境和解释器
 description: 使用 Python 环境窗口来管理全局、虚拟和 Conda 环境、安装 Python 解释器和包以及将环境分配给 Visual Studio 项目。
-ms.date: 11/08/2018
+ms.date: 12/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f69178fde2a0912d39c813028385f21f6ca87d7a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 887776b3a3f1275b97b2abee26c4613d8aad39fc
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349356"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063202"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 
@@ -57,7 +57,9 @@ Visual Studio 了解的环境显示在“Python 环境”窗口中。 要打开�
 
 Visual Studio 使用注册表查找已安装的全局环境（遵循 [PEP 514 ](https://www.python.org/dev/peps/pep-0514/)），以及查找虚拟环境和 conda 环境（请参阅[环境类型](#types-of-environments)）。 如果在列表中看不到预期的环境，请参阅[手动标识现有环境](#manually-identify-an-existing-environment)。
 
-选择列表中的环境时，Visual Studio 将在“概述”选项卡上显示该环境的各种属性和命令。例如，可在上图中看到解释器的位置是 C:\Python36-32。 使用环境列表下方的下拉列表可切换到不同的选项卡，例如“包”和“IntelliSense”。 [“Python 环境”窗口选项卡引用](python-environments-window-tab-reference.md)中介绍了这些选项卡。
+选择列表中的环境时，Visual Studio 将在“概述”选项卡上显示该环境的各种属性和命令。例如，可在上图中看到解释器的位置是 C:\Python36-32。 “概述“选项卡底部的四个命令在解释器运行时分别打开一个命令提示符。 有关详细信息，请参阅[“Python 环境”窗口选项卡引用 - 概述](python-environments-window-tab-reference.md#overview-tab)。
+
+使用环境列表下方的下拉列表可切换到不同的选项卡，例如“包”和“IntelliSense”。 [“Python 环境”窗口选项卡引用](python-environments-window-tab-reference.md)中也介绍了这些选项卡。
 
 选择环境不会改变其与任何项目的关系。 Visual Studio 可将列表中以粗体显示的默认环境用于任意新项目。 要在新项目中使用不同的环境，请使用“将此作为新项目的默认环境”命令。 在项目的上下文中，可以始终选择特定环境。 有关详细信息，请参阅[选择项目环境](selecting-a-python-environment-for-a-project.md)。
 

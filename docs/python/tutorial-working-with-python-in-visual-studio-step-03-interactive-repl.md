@@ -1,5 +1,6 @@
 ---
-title: 使用 Python 教程 - 第 3 步：交互式 REPL
+title: Visual Studio 中的 Python 教程步骤 3，交互式 REPL
+titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 功能的核心教程的第 3 步，介绍了 Python 交互式 REPL 窗口。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
@@ -8,19 +9,20 @@ ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 504192e81af94413e61d4ad1252ab11bf97b8a38
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 7f237dde510ad9fd65416ae7521ebeed705781c2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219583"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53066114"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>步骤 3：使用交互式 REPL 窗口
 
-**上一步：[编写和运行代码](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**上一步：[编写并运行代码](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 适用于 Python 的 Visual Studio 交互窗口提供丰富的“读取–求值–打印-循环”(REPL) 体验，极大地缩短了常用的“编辑-生成-调试”周期。 该交互窗口提供 Python 命令行 REPL 体验的所有功能。 通过该窗口还可以非常轻松地与 Visual Studio 编辑器中的源文件交换代码，免去了使用命令行时的繁琐操作。
 

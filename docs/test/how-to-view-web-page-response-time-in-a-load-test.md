@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中负载测试中的页面响应时间
+title: 负载测试中的页面响应时间
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 73ba296be1c001415746145c7bcf4d13c8b25053
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895257"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068090"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>如何：使用负载测试分析器在负载测试中查看网页响应时间
 
@@ -45,7 +45,7 @@ ms.locfileid: "52895257"
 
 3. 网格中将显示每页的数据。 通常会显示以下列。
 
-   |列标题|描述|
+   |列标题|说明|
    |-|-|
    |**页**|网页的名称。|
    |**方案**|方案的名称。 如果在 Web 性能测试中有多个方案，则这一列很重要。|
@@ -61,7 +61,7 @@ ms.locfileid: "52895257"
    |**最大值**|最长页面响应时间。<br /><br /> 默认情况下，不收集这些数据。 要收集这些数据，请在“负载测试编辑器”中的“运行测试”节点下，选择要更改的运行设置节点。 在“属性”窗口中，为“计时详细信息存储”属性，选择“AllIndividualDetails”。|
    |**标准偏差**|默认情况下，不收集标准偏差数据。 要收集这些数据，请在“负载测试编辑器”中的“运行测试”节点下，选择要更改的运行设置节点。 在“属性”窗口中，为“计时详细信息存储”属性，选择“AllIndividualDetails”。|
    |**页面时间**|对该网页的所有请求的平均响应时间。|
-   |**目标**|页面时间目标。 这是页面的常数值。 注意：仅当在 Web 性能测试中为请求定义了目标时才会显示“页面时间目标”。|
+   |**目标**|页面时间目标。 这是页面的常数值。 **注意：** 仅当在 Web 性能测试中为请求定义了目标时才会显示“页面时间目标”。|
    |**符合目标百分比(%)**|对网页的请求中满足响应时间目标的请求的百分比。|
 
    有关详细信息，请参阅[在表视图中分析负载测试结果和错误](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。

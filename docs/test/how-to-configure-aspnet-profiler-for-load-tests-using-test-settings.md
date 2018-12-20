@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中为负载测试配置 ASP.NET 探查器
+title: 为负载测试配置 ASP.NET 探查器
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 36176ce14b51af1cf692b6b04d862882a48d7e4e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 197a6c4a743f5f30e060950413b7e2214fb91b36
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895192"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068417"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用测试设置为负载测试配置 ASP.NET 探查器
 
@@ -31,7 +31,7 @@ ms.locfileid: "52895192"
 > [!NOTE]
 > ASP.NET 探查器诊断数据适配器将分析 Internet Information Services (IIS) 进程。 因此，它对开发 Web 服务器不起作用。 若要在负载测试中分析网站，必须在运行 IIS 的计算机上安装测试代理。 测试代理不会生成负载，而仅是作为收集代理。 有关详细信息，请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。
 
-有关详细信息，请参阅[如何：为分布式负载测试创建测试设置](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)。
+有关更多信息，请参见[如何：为分发的负载测试创建测试设置](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)。
 
 ## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>为测试设置配置 ASP.NET 探查器
 
@@ -63,5 +63,5 @@ ms.locfileid: "52895192"
 ## <a name="see-also"></a>请参阅
 
 - [使用测试设置收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)
-- [如何：为分布式负载测试创建测试设置](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [如何：为分发的负载测试创建测试设置](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)

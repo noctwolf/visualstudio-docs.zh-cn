@@ -1,5 +1,5 @@
 ---
-title: 使用 C++ 和 Python
+title: 编写 Python 的 C++ 扩展
 description: 使用 Visual Studio、CPython 和 PyBind11 创建适用于 Python 的 C++ 扩展的演练，包括混合模式调试。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 237d3dcbe3f6413d2a68f25af3ac6eb6357e3bf8
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 437cd7f926465b4a9c4986f0eeb4b30e53936895
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52001303"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53053472"
 ---
 # <a name="create-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -121,7 +122,7 @@ ms.locfileid: "52001303"
 
 1. 如下表所述设置特定属性，然后选择“确定”。
 
-    | Tab | 属性 | “值” |
+    | Tab | 属性 | 值 |
     | --- | --- | --- |
     | **常规** | **常规** > **目标名称** | 指定想要在 `from...import` 语句中从 Python 引用的模块的名称。 定义 Python 的模块时，在 C++ 中使用相同的名称。 如果想要将项目的名称用作模块名称，请保留默认值 $(ProjectName)。 |
     | | **常规** > **目标扩展名** | **.pyd** |
@@ -135,7 +136,7 @@ ms.locfileid: "52001303"
     > 如果在项目属性中未看到 C/C++ 选项卡，这是因为项目不包含标识为 C/C++ 源文件的任何文件。 如果创建的源文件不含 .c 或 .cpp 扩展名，则可能出现这种情况。 例如，如果之前在“新建项”对话框中不小心输入了 `module.coo`（而不是 `module.cpp`），则 Visual Studio 会创建文件，但不会将文件类型设置为“C/C+ 代码”，而正是它激活 C/C++ 属性选项卡。即使将文件重命名为带 `.cpp`，此类识别错误仍会存在。 为了正确设置文件类型，请在“解决方案资源管理器”中右键单击文件，选择“属性”，然后将“文件类型”设置为“C/C++ 代码”。
 
     > [!Warning]
-    > 即使对于调试配置，也始终将“C/C++” > “代码生成” > “运行时库”选项设置为“多线程 DLL (/MD)”，因为此设置是生成非调试 Python 二进制文件时使用的设置。 如果碰巧设置了“多线程调试 DLL (/MDd)”选项，则生成调试配置会产生错误“C1189: Py_LIMITED_API 与 Py_DEBUG、Py_TRACE_REFS 和 Py_REF_DEBUG 不兼容”。 此外，如果删除 `Py_LIMITED_API` 来避免出现生成错误，则在尝试导入模块时，Python 会崩溃。 （如下所述，崩溃将发生在 DLL 对 `PyModule_Create` 的调用中，并出现输出消息“严重 Python 错误: PyThreadState_Get: 无当前线程”。）
+    > 即使对于调试配置，也始终将“C/C++” > “代码生成” > “运行时库”选项设置为“多线程 DLL (/MD)”，因为此设置是生成非调试 Python 二进制文件时使用的设置。 如果碰巧设置“多线程调试 DLL (/MDd)”选项，则构建“调试”配置会生成错误 C1189:Py_LIMITED_API is incompatible with Py_DEBUG, Py_TRACE_REFS, and Py_REF_DEBUG”。 此外，如果删除 `Py_LIMITED_API` 来避免出现生成错误，则在尝试导入模块时，Python 会崩溃。 （如下所述，对 `PyModule_Create` 的 DLL 调用中发生故障，显示输出消息“Python 错误:PyThreadState_Get: 无当前线程”。）
     >
     > /MDd 选项用于生成 Python 调试二进制文件（例如 python_d.exe），但对扩展 DLL 选择此选项仍会导致 `Py_LIMITED_API` 的生成错误。
 
@@ -265,7 +266,7 @@ ms.locfileid: "52001303"
 
 C++ 模块可能无法编译的原因如下：
 
-- 找不到 Python.h（E1696：无法打开源文件“Python.h”和/或 C1083：无法打开包含文件：“Python.h”：没有此类文件或目录）：请验证项目属性中“C/C++” > “常规” > “附加包含目录”中的路径是否指向 Python 安装的“include”文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-projects)中的步骤 6。
+- 无法找到 Python.h（E1696：无法打开源文件 "Python.h" 和/或 C1083：无法打开 include 文件："Python.h"：没有此类文件或目录）：验证项目属性中的“C/C++” > “常规” > “附加 Include 目录”中的路径是否指向 Python 安装的“include”文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-projects)中的步骤 6。
 
 - 无法找到 Python 库：验证项目属性中的“链接器” > “常规” > “附加库目录”中的路径是否指向 Python 安装的“libs”文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-projects)中的步骤 6。
 
@@ -404,7 +405,7 @@ Visual Studio 支持一起调试 Python 和 C++ 代码。 本节演示了使用 
 | --- | --- | --- | --- | --- |
 | 适用于 CPython 的 C/C++ 扩展模块 | 1991 | 标准库 | [丰富的文档和教程](https://docs.python.org/3/c-api/)。 完全控制。 | 编译、可移植性、引用管理。 扎实的 C 知识。 |
 | [PyBind11](https://github.com/pybind/pybind11)（推荐用于 C++） | 2015 |  | 用于创建现有 C++ 代码的 Python 绑定的轻量型纯标头库。 依赖项少。 兼容 PyPy。 | 较新，不够成熟。 需使用大量 C++11 功能。 支持的编译器较少（包含 Visual Studio）。 |
-| Cython（推荐用于 C） | 2007 | [gevent](http://www.gevent.org/)、[kivy](https://kivy.org/) | 类似于 Python。 非常成熟。 高性能。 | 编译、新语法、新工具链。 |
+| Cython（推荐用于 C） | 2007 | [gevent](https://www.gevent.org/)、[kivy](https://kivy.org/) | 类似于 Python。 非常成熟。 高性能。 | 编译、新语法、新工具链。 |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | 几乎可与任何 C++ 编译器一起使用。 | 库套件较大且复杂；包含旧编译器的许多解决方法。 |
 | ctype | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 无编译，广泛可用性。 | 访问和转变 C 结构的过程比较繁琐且容易出错。 |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | 针对多种语言立即生成绑定。 | 如果 Python 是唯一目标，则开销过大。 |

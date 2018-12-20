@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的负载测试结果摘要概述
+title: 负载测试结果摘要概述
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ae70422ce3c88a3de6842f3f0946666b86ae559e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 3f5187aabeb0c8e2ef81b0c6b6883b96590d7005
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895010"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53062604"
 ---
 # <a name="load-test-results-summary-overview"></a>负载测试结果摘要概述
 
-运行负载测试后，可以查看负载测试摘要以快速了解结果。 负载测试摘要以简洁、易读的格式提供关键结果。 你还可以打印负载测试摘要， 以便于在向利益干系人传达结果时使用。 当你从以前运行的负载测试打开负载测试结果时，负载测试摘要也是默认视图。 有关详细信息，请参阅[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
+运行负载测试后，可以查看负载测试摘要以快速了解结果。 负载测试摘要以简洁、易读的格式提供关键结果。 你还可以打印负载测试摘要， 以便于在向利益干系人传达结果时使用。 当你从以前运行的负载测试打开负载测试结果时，负载测试摘要也是默认视图。 有关更多信息，请参见[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
 ![“摘要”视图](../test/media/ltest_summaryview.png)
 
@@ -39,11 +39,11 @@ ms.locfileid: "52895010"
 
 - 整体结果
 
-- 关键统计信息: 最慢的 5 个页面
+- 关键统计信息：最慢的前 5 个页面
 
-- 关键统计信息: 最慢的 5 个测试
+- 关键统计信息：最慢的前 5 个测试
 
-- 关键统计信息: 最慢的 5 个 SQL 操作
+- 关键统计信息：最慢的前 5 个 SQL 操作
 
     > [!NOTE]
     > 只有在负载测试中启用了 SQL 跟踪的情况下，才会显示“SQL 操作”一节。
@@ -70,19 +70,19 @@ ms.locfileid: "52895010"
 
 “整体结果”一节包含测试的摘要结果，包括每秒钟的请求数、失败请求的总数、平均响应时间以及平均页面时间。
 
-## <a name="key-statistic-top-5-slowest-pages"></a>关键统计信息: 最慢的 5 个页面
+## <a name="key-statistic-top-5-slowest-pages"></a>关键统计信息：最慢的前 5 个页面
 
-“最慢的页面”一节包含负载测试中最慢的 5 个页面。 此节显示每个页面的 URL 和平均页面加载时间。 这些页面按降序列出。 可选择某个页面的 URL 以打开“页”表和查看该页面的更多详细信息。 有关详细信息，请参阅[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
+“最慢的页面”一节包含负载测试中最慢的 5 个页面。 此节显示每个页面的 URL 和平均页面加载时间。 这些页面按降序列出。 可选择某个页面的 URL 以打开“页”表和查看该页面的更多详细信息。 有关更多信息，请参见[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
 
 “95% 页面时间(秒)”的百分比值报告，95% 的页面在此时间内完成（以秒为单位）。
 
-## <a name="key-statistic-top-5-slowest-tests"></a>关键统计信息: 最慢的 5 个测试
+## <a name="key-statistic-top-5-slowest-tests"></a>关键统计信息：最慢的前 5 个测试
 
 “最慢的测试”一节包含负载测试中最慢的 5 个测试。 此节显示每个测试的测试名称和平均测试时间。 这些测试按降序列出。 可选择某个测试的名称以打开“测试”表和查看该测试的更多详细信息。 有关详细信息，请参阅[在表视图中分析负载测试结果和错误](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
 
 “95% 测试时间(秒)”的百分比值报告，95% 的测试在此时间内完成（以秒为单位）。
 
-## <a name="key-statistic-top-5-slowest-sql-operations"></a>关键统计信息: 最慢的 5 个 SQL 操作
+## <a name="key-statistic-top-5-slowest-sql-operations"></a>关键统计信息：最慢的前 5 个 SQL 操作
 
 如果在负载测试中启用了 SQL 跟踪，“最慢的查询”一节将包含负载测试中最慢的 5 个查询。 此节显示每个测试的操作名称和持续时间。 持续时间以微秒 (SQL Server 2005) 或毫秒（SQL Server 2000 和更低版本）显示。 这些测试按持续时间以降序列出。 可选择某个操作的名称以打开“SQL 跟踪”表，并查看该操作的更多详细信息。 有关详细信息，请参阅 [SQL 跟踪数据表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table)。
 
@@ -95,7 +95,7 @@ ms.locfileid: "52895010"
 
 ## <a name="page-results"></a>页结果
 
-“页结果”一节包含负载测试中所有网页的列表。 此节显示 URL、方案、测试的名称、平均页面时间以及计数。 可选择某个页面的 URL 以打开“页”表和查看该页面的更多详细信息。 有关详细信息，请参阅[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
+“页结果”一节包含负载测试中所有网页的列表。 此节显示 URL、方案、测试的名称、平均页面时间以及计数。 可选择某个页面的 URL 以打开“页”表和查看该页面的更多详细信息。 有关更多信息，请参见[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
 
 > [!NOTE]
 > 通过选择此节标题左侧的箭头，可以折叠和展开此节。

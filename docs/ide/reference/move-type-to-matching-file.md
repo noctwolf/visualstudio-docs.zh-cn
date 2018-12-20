@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Basic 中重构“将类型移到匹配的文件”操作
+title: “将类型移到匹配的文件”重构
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 73e1d9d67d905fed5eb37e29c1be1ba7677da3e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 997cf31d14acd65abd003bcb00cce4a9797b394a
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884142"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059634"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>“将类型移到匹配的文件”重构
 
@@ -27,11 +27,11 @@ ms.locfileid: "49884142"
 
 - Visual Basic
 
-功能：移动选定的类型到具有相同名称的单独文件。
+**功能：** 移动选定的类型到具有相同名称的单独文件。
 
-时机：在想要分开的相同文件中有多个类、结构和接口等时。
+**使用时机：** 在想要分开的相同文件中有多个类、结构和接口等时。
 
-原因：将多个类型置于相同的文件会使查找这些类型变得困难。 通过将类型移动到具有相同名称的文件，代码变得更具可读性且更易于导航。
+操作原因：将多个类型置于相同的文件会使查找这些类型变得困难。 通过将类型移动到具有相同名称的文件，代码变得更具可读性且更易于导航。
 
 ## <a name="how-to"></a>操作说明
 

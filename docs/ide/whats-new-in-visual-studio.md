@@ -1,10 +1,11 @@
 ---
 title: Visual Studio 2017 中的新增功能
+titleSuffix: ''
 description: 了解 Visual Studio 2017 中的新增功能。
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -17,18 +18,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a007d6557fe7ebd533ee34fecc8b8c0315024edf
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895764"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53160187"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
 针对[版本 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017) 而更新
 
-想从 Visual Studio 早期版本升级？ Visual Studio 2017 提供以下优势：为任何开发、应用和平台提供无与伦比的效率。 使用 Visual Studio 2017 开发适用于 Android、iOS、Windows、Linux、Web 和云的应用。 快速编码、轻松调试和诊断、时常测试，并且可以放心地进行发布。 还可通过构建自己的扩展，以便扩展和自定义 Visual Studio。 此版本发布之后，可使用版本控制、更具敏捷性且可高效协作！
+想从 Visual Studio 早期版本升级？ 以下是 Visual Studio 2017 的优势：为任何开发、应用和平台提供无与伦比的效率。 使用 Visual Studio 2017 开发适用于 Android、iOS、Windows、Linux、Web 和云的应用。 快速编码、轻松调试和诊断、时常测试，并且可以放心地进行发布。 还可通过构建自己的扩展，以便扩展和自定义 Visual Studio。 此版本发布之后，可使用版本控制、更具敏捷性且可高效协作！
 
 以下是我们自上一版本 Visual Studio 2015 以来所做更改的高级扼要重述：
 
@@ -106,11 +107,11 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 使用漫游扩展管理器时，列表中会出现 3 种图标类型：
 
-* ![“漫游”图标](../ide/media/vs2017ide-roamedicon.png) **_漫游_**：表示存在于漫游列表中，但未在计算机上安装的扩展。
+* ![“漫游”图标](../ide/media/vs2017ide-roamedicon.png) **_漫游_**：存在于漫游列表中，但未在计算机上安装的扩展。
   （可通过“下载”按钮安装这些扩展。）
-* ![“漫游且已安装”图标](../ide/media/vs2017ide-roamedinstalledicon.png) **_漫游且已安装_**：表示存在于漫游列表中且已在此环境中安装的所有扩展。
+* ![“漫游且已安装”图标](../ide/media/vs2017ide-roamedinstalledicon.png) **_漫游且已安装_**：存在于漫游列表中且已在此环境中安装的所有扩展。
   （如果确定不希望漫游，可通过“停止漫游”按钮删除它们。）
-* ![“已安装”图标](../ide/media/vs2017ide-installedicon.png) **_已安装_**：表示此环境中已安装、但不属于漫游列表的所有扩展。
+* ![“已安装”图标](../ide/media/vs2017ide-installedicon.png) **_已安装_**：此环境中已安装、但不属于漫游列表的所有扩展。
   （可通过“启动漫游”按钮将扩展添加到漫游列表。）
 
 在登录时下载的任何扩展将作为“漫游且已安装”添加到列表中。 该扩展随即成为“漫游”列表的一部分，可以从任何计算机访问它。
@@ -131,19 +132,19 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 有关自动测试的详细信息，请参阅博文 [DevOps 中用于自动测试的 CI/CD 管道](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/)。
 
-此外，若要详细了解[用于 Visual Studio 的持续交付工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 扩展中的新增功能，请参阅博文[有把握提交：提交时代码质量](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/)。
+此外，若要详细了解[用于 Visual Studio 的持续交付工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 扩展中的新增功能，请参阅博文[自信提交：提交时代码质量](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/)博客文章。
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE 增强功能
 
 #### <a name="multi-caret-editing"></a>多个插入点编辑
 
-15.8 中的新增功能：现在很容易就能同时编辑文件中的多个位置。 首先在文件的多个位置创建插入点并选择内容。 然后，使用“多个插入点编辑”功能同时在两个或多个位置进行相同编辑。
+**15.8 中的新增功能**：现在很容易就能同时编辑文件中的多个位置。 首先在文件的多个位置创建插入点并选择内容。 然后，使用“多个插入点编辑”功能同时在两个或多个位置进行相同编辑。
 
 有关详细信息，请参阅[查找和替换文本](finding-and-replacing-text.md)页面上的[多个插入点选择内容](finding-and-replacing-text.md#multi-caret-selection)部分。
 
 #### <a name="keep-keybinding-profiles-consistent"></a>保证键绑定配置文件的一致性
 
-15.8 中的新增功能：现可让不同工具中的键绑定与 Visual Studio Code 和 ReSharper (Visual Studio) 这两个新的键盘配置文件保持一致：。 可单击“工具” > “选项” > “常规” > “键盘”，在顶部下拉菜单下找到这些方案。
+**15.8 中的新增功能**：现可让不同工具中的键绑定与这两个新的键盘配置文件保持一致：Visual Studio Code 和 ReSharper (Visual Studio)。 可单击“工具” > “选项” > “常规” > “键盘”，在顶部下拉菜单下找到这些方案。
 
   ![适用于 Visual Studio Code 和 ReSharper 的新的键绑定配置文件](../ide/media/vs-keyboard-mappings-code-resharper.png)
 
@@ -216,7 +217,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>快照和 IntelliTrace 后退
 
-**15.5 中的新增功能**：IntelliTrace 后退会在每个断点处及发生调试器步骤事件时自动拍摄应用程序的快照。 凭借记录的快照便可以返回到上一个断点或步骤，并查看当时应用程序的状态。 如果希望查看以前的应用程序状态，但不想重新启动调试或重新创建所需应用状态，使用 IntelliTrace 后退可以节省时间。
+**15.5 中的新增功能**：IntelliTrace 后退会在每个断点处及调试器步骤事件发生时自动拍摄应用程序的快照。 凭借记录的快照便可以返回到上一个断点或步骤，并查看当时应用程序的状态。 如果希望查看以前的应用程序状态，但不想重新启动调试或重新创建所需应用状态，使用 IntelliTrace 后退可以节省时间。
 
 可以通过使用“调试”工具栏中的“后退”和前进”按钮浏览和查看快照。 这些按钮用于浏览“诊断工具”窗口中“事件”选项卡上显示的事件。 后退或前进到某个事件会自动激活所选事件的历史调试。
 
@@ -245,7 +246,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>在实时 Azure 应用程序中使用 snappoints 和 logpoints 调试实时 ASP.NET 应用
 
-**15.5 中的新增功能**：当执行感兴趣的代码时，快照调试程序会为生产中的应用拍摄快照。 要指示调试程序拍摄快照，可在代码中设置 snappoints 和 logpoints。 使用调试程序，可精确查看出错的内容，而不影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
+**15.5 中的新增功能**：当执行感兴趣的代码时，Snapshot Debugger 会为生产中的应用拍摄快照。 要指示调试程序拍摄快照，可在代码中设置 snappoints 和 logpoints。 使用调试程序，可精确查看出错的内容，而不影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
 
 快照集合适用于在 Azure App Service 中运行的以下 Web 应用：
 
@@ -281,7 +282,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 ### <a name="entitlements-editor"></a>权利编辑器
 
-15.3 中的新增功能：为满足 iOS 开发需求，我们添加了独立的权利编辑器。 它包含便于浏览、用户友好的 UI。 要启动它，请双击 entitlements.plist 文件。
+**15.3 中的新增功能**：为满足 iOS 开发需求，我们添加了独立的权利编辑器。 它包含便于浏览、用户友好的 UI。 要启动它，请双击 entitlements.plist 文件。
 
 ![Xamarin 的权利编辑器](../ide/media/xamarin-entitlements-editor.png)
 
@@ -293,13 +294,13 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 ### <a name="support-for-google-android-emulator"></a>对 Google Android Emulator 的支持
 
-15.8 中的新增功能：现在使用 Hyper-V 时，可将 Google Android Emulator 与其他基于 Hyper-V 的技术（例如 Hyper-V 虚拟机、Docker 工具和 HoloLens 模拟器等）并行使用。 （此功能需要 Windows 10 的 2018 年 4 月更新或更高版本。）
+**15.8 中的新增功能**：现在使用 Hyper-V 时，可将 Google Android Emulator 与其他基于 Hyper-V 的技术（例如 Hyper-V 虚拟机、Docker 工具和 HoloLens 模拟器等）并行使用。 （此功能需要 Windows 10 的 2018 年 4 月更新或更高版本。）
 
 ![基于 Hyper-V 技术的 Google Android Emulator](../ide/media/xamarin-hyperv-android-emulator.png)
 
 #### <a name="xamarinandroid-designer-split-view-editor"></a>Xamarin.Android 设计器拆分视图编辑器
 
-15.8 中的新增功能：显著改善了 Xamarin.Android 的设计器体验。 重点是新增的拆分视图编辑器，可用于同时创建、编辑和预览布局。
+**15.8 中的其他新增功能**：显著改善了 Xamarin.Android 的设计器体验。 重点是新增的拆分视图编辑器，可用于同时创建、编辑和预览布局。
 
 ![Xamarin.Android 设计器拆分视图编辑器](../ide/media/android-designer-split-view.png)
 
@@ -311,7 +312,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
   ![Visual Studio 应用中心测试环境](../ide/media/app-center-test-env.png)
 
-有关详细信息，请参阅博客文章[应用中心简介：在云中生成、测试、分发和监视应用](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/)。
+有关详细信息，请参阅[应用中心简介：在云中生成、测试、分发及监视应用](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/)博客文章。
 
 ## <a name="cross-platform-development"></a>跨平台开发
 
@@ -334,11 +335,11 @@ Visual Studio 2017 所有版本随附：
 
 .NET Core 是 .NET 标准的常规用途、模块化、跨平台和开放源代码实现，且包含许多与 .NET Framework 相同的 API。
 
-.NET Core 平台由一些组件构成，其中包括托管的编译器、运行时、基类库和大量应用程序模型，如 ASP.NET 核心。 .NET Core 支持三种主要的操作系统 (OS)：Windows、 Linux 和 macOS。 可以在设备、云和嵌入式/IoT 方案中使用 .NET Core。
+.NET Core 平台由一些组件构成，其中包括托管的编译器、运行时、基类库和大量应用程序模型，如 ASP.NET Core。 .NET Core 支持三种主要的操作系统：Windows、Linux 和 macOS。 可以在设备、云和嵌入式/IoT 方案中使用 .NET Core。
 
 当前，它还包括 Docker 支持。
 
-15.3 中的新增功能：Visual Studio 2017 版本 15.3 支持 .NET Core 2.0 开发。 使用 .NET Core 2.0 前需分别下载并安装 .NET Core 2.0 SDK。
+**15.3 中的新增功能**：Visual Studio 2017 版本 15.3 支持 .NET Core 2.0 开发。 使用 .NET Core 2.0 前需分别下载并安装 .NET Core 2.0 SDK。
 
 有关详细信息，请参阅 [.NET Core 指南](/dotnet/core/index)页。
 

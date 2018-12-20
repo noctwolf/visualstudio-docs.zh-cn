@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中为项目和 NuGet 包取消显示编译器警告
+title: 为项目和 NuGet 包取消显示编译器警告
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e3a84dff28b174676ff6fe74bf5420863afcc83
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948556"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53060360"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>如何：取消显示编译器警告
+# <a name="how-to-suppress-compiler-warnings"></a>如何：取消编译器警告
 
-通过筛选出一个或多个类型的编译器警告，可以整理一个生成日志。 例如，可能只想查看在将生成日志详细信息设置为“正常”、“详细信息”或“诊断”时生成的某些输出。 有关详细级别的更多信息，请参阅[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)。
+通过筛选出一个或多个类型的编译器警告，可以整理一个生成日志。 例如，可能只想查看在将生成日志详细信息设置为“正常”、“详细信息”或“诊断”时生成的某些输出。 有关详细程度的详细信息，请参见[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>取消显示特定的 Visual C# 或 F# 警告 #
 
@@ -133,6 +133,6 @@ ms.locfileid: "31948556"
 
 ## <a name="see-also"></a>请参阅
 
-- [演练：生成应用程序](../ide/walkthrough-building-an-application.md)
+- [演练：构建应用程序](../ide/walkthrough-building-an-application.md)
 - [如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [编译和生成](../ide/compiling-and-building-in-visual-studio.md)

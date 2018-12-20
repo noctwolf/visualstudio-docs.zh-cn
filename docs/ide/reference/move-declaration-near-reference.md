@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中将变量声明移动到引用附近
+title: 将变量声明移动到引用附近
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b3a231aafce69bfeeaff7defee6d5f85c7ffc8b2
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9bc661331ee03af6d34caeae847b717db1f21fc5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896596"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065337"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>将变量声明移动到引用附近
 
@@ -24,11 +24,11 @@ ms.locfileid: "52896596"
 
 - C#
 
-功能：将变量声明移至靠近其用法的位置。
+**功能：** 将变量声明移至靠近其用法的位置。
 
-时机：具有可存在于较窄范围中的变量声明时。
+**使用时机：** 具有可存在于较窄范围中的变量声明时。
 
-原因：可以将其保留不变，但这可能会导致可读性问题或信息隐藏。 可以进行重构，以提高可读性。
+操作原因：可以将其保留不变，但这可能会导致可读性问题或信息隐藏。 可以进行重构，以提高可读性。
 
 ## <a name="how-to"></a>操作说明
 

@@ -1,6 +1,6 @@
 ---
 title: 调试 Python 代码
-description: Visual Studio 中专门用于 Python 代码的调试功能概述，包括设置断点、单步执行、检查值、查看异常以及在交互窗口中进行调试。
+description: Visual Studio 为 Python 代码提供丰富的调试，包括设置断点、单步执行、检查值、查看异常以及在交互窗口中进行调试。
 ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -8,15 +8,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
+ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101155"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068430"
 ---
 # <a name="debug-your-python-code"></a>调试 Python 代码
 
@@ -54,7 +55,7 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 
 断点在标记的点处停止执行代码，便于检查程序状态。 若要设置断点，可单击代码编辑器的左边距或右键单击代码行，然后选择“断点” > “插入断点”。 包含断点的每行上将出现一个红点。
 
-![Visual Studio 中的断点](media/debugging-breakpoints.png)
+![Visual Studio 中显示的断点](media/debugging-breakpoints.png)
 
 单击红点或右键单击代码行，选择“断点” > “删除断点”可删除断点。 若不删除断点，也可以使用“Breakpoint” > “Disable Breakpoint”命令禁用断点。
 
@@ -71,7 +72,7 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 
 在断点处停止后，可使用多种方法逐句通过代码或在再次中断之前运行代码块。 多个位置和途径可以提供这些命令，包括顶部调试工具栏、“调试”菜单、通过右键单击代码编辑器中的上下文菜单，以及通过键盘快捷方式（但并非所有命令都可以在这些位置提供）：
 
-| 功能 | 击键 | 描述 |
+| 功能 | 击键 | 说明 |
 | --- | --- | --- |
 | **Continue** | **F5** | 运行代码，到达下一个断点时停止。 |
 | **逐语句** | F11 | 运行下一语句并停止。 如果下一语句是对函数的调用，调试器将在调用函数的第一行处停止。 |
@@ -87,27 +88,27 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 
 若要使用数据提示查看值，只需将鼠标悬停在编辑器中的任何变量上即可。 可以单击值进行更改：
 
-![调试器中的数据提示](media/debugging-quick-tips.png)
+![Visual Studio 调试器中显示的 DataTips](media/debugging-quick-tips.png)
 
 自动变量窗口（“调试” > “窗口” > “自动变量”）包含接近当前语句的变量和表达式。 可以在值列中双击或选择值并按 F2 来编辑值：
 
-![调试器中的自动变量窗口](media/debugging-autos-window.png)
+![Visual Studio 调试器中的“自动”窗口](media/debugging-autos-window.png)
 
 局部变量窗口（“调试” > “窗口” > “局部变量”）显示当前范围内所有可再次编辑的变量：
 
-![调试器中的局部变量窗口](media/debugging-locals-window.png)
+![Visual Studio 调试器中的“局部变量”窗口](media/debugging-locals-window.png)
 
 有关使用自动变量和局部变量的详细信息，请参阅[在自动变量窗口和局部变量窗口中检查变量](../debugger/autos-and-locals-windows.md)。
 
 通过监视窗口（“调试” > “窗口” > “监视” > “监视 1-4”）可以输入任意 Python 表达式并查看结果。 每个步骤都重新计算了表达式：
 
-![调试器中的监视窗口](media/debugging-watch-window.png)
+![Visual Studio 调试器中的“监视”窗口](media/debugging-watch-window.png)
 
 有关使用监视的详细信息，请参阅[使用监视窗口和快速监视窗口对变量设置监视](../debugger/watch-and-quickwatch-windows.md)。
 
 检查字符串值（`str`、`unicode`、`bytes` 和 `bytearray` 均被视为用于此目的字符串）时，该值的右侧将显示一个放大镜图标。 单击该图标将在弹出对话框中显示不带引号的字符串值，对话框具有换行和滚动功能，有助于显示长字符串。 此外，选择图标上的下拉箭头可选择纯文本、HTML、XML 和 JSON 可视化效果：
 
-![字符串可视化工具](media/debugging-string-visualizers.png)
+![Visual Studio 调试器中的字符串可视化工具](media/debugging-string-visualizers.png)
 
 HTML、XML 和 JSON 可视化效果显示在单独的弹出窗口中，其中突出显示了语法并采用树状视图。
 
@@ -115,13 +116,13 @@ HTML、XML 和 JSON 可视化效果显示在单独的弹出窗口中，其中突
 
 如果调试程序时出错，但没有相应的异常处理程序，调试器将在异常点处中断：
 
-![异常弹出窗口](media/debugging-exception-popup.png)
+![Visual Studio 调试器中的异常弹出](media/debugging-exception-popup.png)
 
 此时，可以检查程序状态，包括调用堆栈。 但是，如果尝试逐句通过代码，将继续引发该异常，直到异常得以处理或程序退出为止。
 
 “调试” > “窗口” > “异常设置”菜单命令将打开一个窗口，可在其中展开“Python 异常”：
 
-![异常窗口](media/debugging-exception-settings.png)
+![Visual Studio 调试器中的“异常”窗口](media/debugging-exception-settings.png)
 
 每个异常的复选框控制引发该异常时调试器是否*始终*中断。 若要针对特定异常更频繁地进行中断，请选中此框。
 
@@ -133,11 +134,11 @@ HTML、XML 和 JSON 可视化效果显示在单独的弹出窗口中，其中突
 
 默认情况下，调试器使用标准 Python 启动器且不使用命令行参数和其他特殊路径或条件启动程序。 可通过右键单击解决方案资源管理器中的项目，选择“属性”，然后选择“调试”选项卡来访问该项目的调试属性，从而更改启动选项。
 
-![项目调试属性](media/debugging-project-properties.png)
+![Visual Studio 调试器中的项目调试属性](media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>启动模式选项
 
-| 选项 | 描述 |
+| 选项 | 说明 |
 | --- | --- |
 | **标准 Python 启动器** | 使用以可移植 Python（与 CPython、IronPython 和无堆栈 Python 等变量兼容）编写的调试代码。 它提供调试纯 Python 代码的最佳体验。 附加到正在运行的 python.exe 进程时，将使用此启动器。 此外，此启动器还提供针对 CPython 的[混合模式调试](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)，可以无缝地在 C/C++ 代码和 Python 代码之间进行单步执行。 |
 | **Web 启动器** | 在启动时启动默认浏览器并启用模板调试。 请参阅[Web 模板调试](python-web-application-project-templates.md#debugging)部分，了解详细信息。 |
@@ -146,7 +147,7 @@ HTML、XML 和 JSON 可视化效果显示在单独的弹出窗口中，其中突
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>运行选项（搜索路径、启动参数和环境变量）
 
-| 选项 | 描述 |
+| 选项 | 说明 |
 | --- | --- |
 | **搜索路径** | 这些值与解决方案资源管理器中项目的搜索路径节点中显示的值匹配。 可以在此处修改该值，但使用解决方案资源管理器更简单，因为可以浏览文件夹和自动将路径转换为相对形式。 |
 | **脚本参数** | 这些参数添加到用于启动脚本的命令中，并且显示在脚本的文件名后。 此处可供脚本使用的第一项为 `sys.argv[1]`，第二项为 `sys.argv[2]`，以此类推。 |
@@ -166,7 +167,7 @@ Python 调试交互窗口（“调试” > “窗口” > “Python 调试交互
 
 除[标准 REPL 命令](python-interactive-repl-in-visual-studio.md#meta-commands)外，调试交互窗口还支持特殊元命令：
 
-| 命令 | 自变量 | 描述 |
+| 命令 | 自变量 | 说明 |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | 从当前语句开始运行程序。 |
 | `$down`， `$d` | 在堆栈跟踪中将当前帧下移一级。 |

@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Community 2017 工作负载和组件 ID
+titleSuffix: ''
 description: 使用工作负载和组件 ID 通过命令行安装 Visual Studio 或指定为 VSIX 清单中的依赖项
 keywords: ''
 author: TerryGLee
@@ -17,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf5e1487910156dfd547ae563451bd2f2d428d9
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
+ms.openlocfilehash: c5573f5501c4723ed6eede9bba82ebc7fdf31730
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607960"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063271"
 ---
 # <a name="visual-studio-community-2017-component-directory"></a>Visual Studio Community 2017 组件目录
 
@@ -43,7 +44,7 @@ ms.locfileid: "51607960"
 
 **ID：** Microsoft.VisualStudio.Workload.CoreEditor
 
-**说明：** Visual Studio 核心 shell 体验，包括语法感知代码编辑、源代码管理和工作项管理。
+**描述：** Visual Studio 核心 shell 体验，包括语法感知代码编辑、源代码管理和工作项管理。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -56,7 +57,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 用户的 Visual 
 
 **ID：** Microsoft.VisualStudio.Workload.Azure
 
-说明：用于开发云应用、创建资源以及生成包括 Docker 支持的容器的 Azure SDK、工具和项目。
+**描述：** 用于开发云应用、创建资源以及生成包括 Docker 支持的容器的 Azure SDK、工具和项目。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -150,7 +151,7 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 **ID：** Microsoft.VisualStudio.Workload.Data
 
-**说明：** 使用 SQL Server、Azure Data Lake 或 Hadoop 连接、开发和测试数据解决方案。
+**描述：** 使用 SQL Server、Azure Data Lake 或 Hadoop 连接、开发和测试数据解决方案。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -211,7 +212,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面语言支持 | 15.8.2
 
 **ID：** Microsoft.VisualStudio.Workload.DataScience
 
-**说明：** 用于创建数据科学应用程序的语言和工具（包括 Python、R 和 F#）。
+**描述：** 用于创建数据科学应用程序的语言和工具，包括 Python、R 和 F#。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -256,7 +257,7 @@ Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 |
 
 **ID：** Microsoft.VisualStudio.Workload.ManagedDesktop
 
-**说明：** 使用 C#、Visual Basic 和 F# 生成 WPF、Windows 窗体和控制台应用程序。
+**描述：** 使用 C#、Visual Basic 和 F# 生成 WPF、Windows 窗体和控制台应用程序。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -331,7 +332,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开�
 
 **ID：** Microsoft.VisualStudio.Workload.ManagedGame
 
-**说明：** 使用 Unity（功能强大的跨平台开发环境）创建 2D 和 3D 游戏。
+**描述：** 使用 Unity（功能强大的跨平台开发环境）创建 2D 和 3D 游戏。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -351,7 +352,7 @@ Component.UnityEngine.x86 | Unity 5.6 32 位编辑器 | 15.6.27406.0 | 建议
 
 **ID：** Microsoft.VisualStudio.Workload.NativeCrossPlat
 
-**说明：** 创建和调试在 Linux 环境中运行的应用程序。
+**描述：** 创建和调试在 Linux 环境中运行的应用程序。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -371,7 +372,7 @@ Component.MDD.Linux.GCC.arm | 嵌入和 IoT 开发 | 15.6.27309.0 | Optional
 
 **ID：** Microsoft.VisualStudio.Workload.NativeDesktop
 
-说明：使用 Microsoft C++ 工具集、ATL 或 MFC 生成 Windows 桌面应用程序。
+**描述：** 使用 Microsoft C++ 工具集、ATL 或 MFC 生成 Windows 桌面应用程序。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -409,11 +410,11 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.15063.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 适用于桌面 C++ [ARM 和 ARM64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.WinXP | 针对 C++ 的 Windows XP 支持 | 15.8.27924.0 | Optional
@@ -426,7 +427,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **ID：** Microsoft.VisualStudio.Workload.NativeGame
 
-**说明：** 以 DirectX、Unreal 或 Cocos2d 为后盾，利用 C++ 的强大功能生成专业游戏。
+**描述：** 以 DirectX、Unreal 或 Cocos2d 为后盾，利用 C++ 的强大功能生成专业游戏。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -469,11 +470,11 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.15063.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 适用于桌面 C++ [ARM 和 ARM64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK 和 UCRT SDK | 15.6.27406.0 | Optional
@@ -484,7 +485,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **ID：** Microsoft.VisualStudio.Workload.NativeMobile
 
-**说明：** 使用 C++ 生成适用于 iOS、Android 或 Windows 的跨平台应用程序。
+**描述：** 使用 C++ 生成适用于 iOS、Android 或 Windows 的跨平台应用程序。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -515,7 +516,7 @@ Component.MDD.IOS | C++ iOS 开发工具 | 15.0.26621.2 | Optional
 
 **ID：** Microsoft.VisualStudio.Workload.NetCoreTools
 
-**说明：** 使用 .NET Core、ASP.NET Core、HTML/JavaScript 和包括 Docker 支持的容器生成跨平台应用程序。
+**描述：** 使用 .NET Core、ASP.NET Core、HTML/JavaScript 和包括 Docker 支持的容器生成跨平台应用程序。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -583,7 +584,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 开发时 IIS 支持 | 15
 
 **ID：** Microsoft.VisualStudio.Workload.NetCrossPlat
 
-**说明：** 使用 Xmarin 生成适用于 iOS、Android 或 Windows 的跨平台应用程序。
+**描述：** 使用 Xamarin 生成适用于 iOS、Android 或 Windows 的跨平台应用程序。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -625,7 +626,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | 适用于 Xamarin 的通用 
 
 **ID：** Microsoft.VisualStudio.Workload.NetWeb
 
-**说明：** 使用 ASP.NET、ASP.NET Core、HTML/JavaScript 和包括 Docker 支持的容器生成 Web 应用程序。
+**描述：** 使用 ASP.NET、ASP.NET Core、HTML/JavaScript 和包括 Docker 支持的容器生成 Web 应用程序。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -713,7 +714,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **ID：** Microsoft.VisualStudio.Workload.Node
 
-**说明：** 使用 Node.js（事件驱动的异步 JavaScript 运行时）生成可扩展的网络应用程序。 
+**描述：** 使用 Node.js（一个由异步事件驱动的 JavaScript 运行时）生成可缩放的网络应用程序。 
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -739,7 +740,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.9 v14.16
 
 **ID：** Microsoft.VisualStudio.Workload.Office
 
-**说明：** 使用 C#、VB 和 JavaScript 创建 Office 和 SharePoint 外接程序、SharePoint 解决方案和 VSTO 外接程序。
+**描述：** 使用 C#、VB 和 JavaScript 创建 Office 和 SharePoint 外接程序、SharePoint 解决方案和 VSTO 外接程序。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -806,7 +807,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 开发工�
 
 **ID：** Microsoft.VisualStudio.Workload.Python
 
-**说明：** 适用于 Python 的编辑、调试、交互式开发和源代码管理。
+**描述：** 对 Python 进行编辑、调试、交互式开发和源代码管理。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -889,7 +890,7 @@ Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决�
 
 **ID：** Microsoft.VisualStudio.Workload.Universal
 
-**说明：** 使用 C#、VB 和 JavaScript 或 C++（可选）创建适用于通用 Windows 平台的应用程序。
+**描述：** 使用 C#、VB、JavaScript 或可选的 C++ 为通用 Windows 平台创建应用程序。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -935,11 +936,11 @@ Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.15063.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 适用于桌面 C++ [ARM 和 ARM64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB、JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28218.60 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | USB 设备连接性 | 15.7.27625.0 | Optional
@@ -951,7 +952,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 **ID：** Microsoft.VisualStudio.Workload.VisualStudioExtension
 
-**说明：** 创建适用于 Visual Studio 的加载项和扩展，包括新命令、代码分析器和工具窗口。
+**描述：** 为 Visual Studio 创建加载项和扩展，包括新命令、代码分析器和工具窗口。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
@@ -987,7 +988,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.9 v14.16
 
 **ID：** Microsoft.VisualStudio.Workload.WebCrossPlat
 
-**说明：** 使用用于 Apache Cordova 的工具生成 Android、iOS 和 UWP 应用。
+**描述：** 使用用于 Apache Cordova 的工具生成 Android、iOS 和 UWP 应用。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
