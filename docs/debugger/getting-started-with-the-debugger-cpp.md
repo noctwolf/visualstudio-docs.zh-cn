@@ -1,6 +1,6 @@
 ---
 title: 了解如何使用 Visual Studio 调试器调试 C++
-ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
+description: 了解如何启动 Visual Studio 调试器、单步执行代码以及检查数据。
 ms.custom: debug-experiment
 ms.date: 08/01/2018
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ef97401a87f39e9c3bfd3138ee3a26646064c6
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: f3578955d72dcb223baeb022a199fb274c0cc659
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52825874"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53065243"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C++ 代码
 
@@ -313,7 +313,7 @@ ms.locfileid: "52825874"
 
     可双击代码行来查看该源代码，这也会更改调试器正在检查的当前作用域。 此操作不会使调试器前进。
 
-    还可使用“调用堆栈”窗口中的右键单击菜单执行其他操作。 例如，你可将断点插入到指定的函数中，使用“运行到光标处”推进调试器，然后检查源代码。 有关详细信息，请参阅[如何：检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
+    还可使用“调用堆栈”窗口中的右键单击菜单执行其他操作。 例如，你可将断点插入到指定的函数中，使用“运行到光标处”推进调试器，然后检查源代码。 有关更多信息，请参见[如何：检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
 
 ## <a name="change-the-execution-flow"></a>更改执行流
 
