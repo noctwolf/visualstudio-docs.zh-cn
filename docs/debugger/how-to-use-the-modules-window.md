@@ -33,7 +33,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 12/07/2018
 ms.locfileid: "53066777"
 ---
-# <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在模块窗口中查看 Dll 和可执行文件 (C#，c + +、 Visual Basic 中， F#)
+# <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在模块窗口中查看 DLL 和可执行文件（C＃、C++、Visual Basic、F＃）
  
 Visual Studio 在调试期间，**模块**窗口列出并显示有关的 Dll 和可执行文件的信息 (*.exe*文件) 你的应用程序使用。 
 
