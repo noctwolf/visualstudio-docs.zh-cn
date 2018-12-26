@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 025adc3a99e2c5aabe2588852885e537553ddce6
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: a4ef6ebbbce03dce7105b49100c9c8f50c44e5e4
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219271"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159797"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入门：使用 Visual Studio 创建第一个 Python Web 应用
 
@@ -50,7 +50,7 @@ ms.locfileid: "50219271"
 
 **问：解决方案资源管理器中显示的“解决方案”是指什么？**
 
-答：Visual Studio 解决方案是一个容器，可帮助你将一个或多个相关项目作为一个组进行管理，并存储不特定于项目的配置设置。 解决方案中的项目还可相互引用，例如运行一个项目（Python 项目）会再自动生成一个项目（例如 Python 应用中使用的 C++ 扩展）。
+**答**：Visual Studio 解决方案是一个容器，可帮助你将一个或多个相关项目作为一个组进行管理，并存储不特定于项目的配置设置。 解决方案中的项目还可相互引用，例如运行一个项目（Python 项目）会再自动生成一个项目（例如 Python 应用中使用的 C++ 扩展）。
 
 ## <a name="install-the-flask-library"></a>安装 Flask 库
 
@@ -66,18 +66,18 @@ Python 中的 Web 应用几乎总是使用众多可用 Python 库中的一个来
 
 1. 在搜索字段中输入“flask”，再选择 [PyPI 中的“pip install flask”]。 接受任何管理员权限提示，查看 Visual Studio 中的“输出”窗口了解进度。 （当全局环境的包文件夹位于类似于 C:\Program Files 这样的受保护区域时，会出现提升提示。）
 
-    ![安装 Flask 库](media/quickstart-python-03-install-package.png)
+    ![使用 pip 安装，安装 Flask 库](media/quickstart-python-03-install-package.png)
 
 1. 安装完成后，库显示在“解决方案资源管理器”的环境中，这意味着可以在 Python 代码中使用它。
 
-    ![安装的 Flask 库](media/quickstart-python-04-package-installed.png)
+    ![已安装 Flask 库并在解决方案资源管理器中显示](media/quickstart-python-04-package-installed.png)
 
 > [!Note]
 > 开发人员通常会创建一个虚拟环境用于安装特定项目的库，而不是在全局环境中安装库。 Visual Studio 模板通常会提供此选项，如[快速入门 - 使用模板创建 Python 项目](../python/quickstart-02-python-in-visual-studio-project-from-template.md)中所述。
 
 **问：我可在何处深入了解其他可用的 Python 包？**
 
-答：请访问 [Python 包索引](https://pypi.org/)。
+**答**：请访问 [Python 包索引](https://pypi.org/)。
 
 ## <a name="add-a-code-file"></a>添加代码文件
 
@@ -116,7 +116,7 @@ Python 中的 Web 应用几乎总是使用众多可用 Python 库中的一个来
 
 **问：我可在何处了解 Flask 的详细信息？**
 
-答：请参阅 Flask 文档，首先是 [Flask 快速入门](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart)。
+**答**：请参阅 Flask 文档，首先是 [Flask 快速入门](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart)。
 
 ## <a name="run-the-application"></a>运行此应用程序
 
@@ -157,4 +157,4 @@ Python 中的 Web 应用几乎总是使用众多可用 Python 库中的一个来
 
 - 了解 [Visual Studio 中的 Python Web 应用模板](../python/python-web-application-project-templates.md)。
 - 了解 [Python 调试](../python/debugging-python-in-visual-studio.md)
-- 总括性地了解 [Visual Studio IDE](../ide/visual-studio-ide.md) 的详细信息。
+- 总括性地了解 [Visual Studio IDE](../get-started/visual-studio-ide.md) 的详细信息。
