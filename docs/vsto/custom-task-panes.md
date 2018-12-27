@@ -23,17 +23,17 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio]
 - task panes [Office development in Visual Studio], about custom task panes
 - custom task panes [Office development in Visual Studio], about custom task panes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4e8384bc86bf59216c353b0f4610d3863445781
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79384ac86afe15afda8e6c99e15a519e66302014
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889758"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648263"
 ---
 # <a name="custom-task-panes"></a>自定义任务窗格
   任务窗格是一种用户界面面板，通常停靠在 Microsoft Office 应用程序中窗口的一侧。 自定义任务窗格为你提供了一钟方法，使你可以创建自己的任务窗格并为用户提供熟悉的界面来访问你的解决方案的功能。 例如，界面中可以包含运行代码以修改文档或显示来自数据源的数据的控件。  
@@ -59,7 +59,7 @@ ms.locfileid: "49889758"
   
 2. 通过将用户控件传递到 VSTO 外接程序中的 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> 对象来实例化自定义任务窗格。 此集合返回一个新的 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象，可用于修改任务窗格的外观并响应用户事件。  
   
-   有关详细信息，请参阅[如何： 向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
+   有关更多信息，请参见[如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
   
 ### <a name="create-the-user-interface"></a>创建用户界面  
  使用 Visual Studio 中的 Office 开发工具创建的所有自定义任务窗格均包含一个 <xref:System.Windows.Forms.UserControl> 对象。 此用户控件提供自定义任务窗格的用户界面。 在设计时或在运行时，您可以创建用户控件。 如果在设计时创建用户控件，则可使用 Windows 窗体设计器来构造任务窗格的用户界面。  
@@ -86,7 +86,7 @@ ms.locfileid: "49889758"
 ## <a name="access-the-application-from-the-task-pane"></a>从任务窗格应用程序的访问  
  如果想要通过用户控件实现应用程序的自动化，则可以通过在代码中使用 `Globals.ThisAddIn.Application` 来直接访问对象模型。 静态 `Globals` 类提供对 `ThisAddIn` 对象的访问权限。 此对象的 `Application` 字段是进入应用程序对象模型的入口点。  
   
- 有关详细信息`Application`字段`ThisAddIn`对象，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。有关演示如何实现自定义任务窗格应用程序自动化的演练，请参阅[演练： 从自定义任务窗格应用程序自动](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。 有关详细信息`Globals`类，请参阅[对 Office 项目中的对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
+ 有关详细信息`Application`字段`ThisAddIn`对象，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。有关演示如何实现自定义任务窗格应用程序自动化的演练，请参阅[演练：自动将应用程序从自定义任务窗格](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。 有关详细信息`Globals`类，请参阅[对 Office 项目中的对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
   
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>管理任务窗格的用户界面  
  创建任务窗格之后，可以使用 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象的属性和事件来控制任务窗格的用户界面，并在用户更改任务窗格时进行响应。  
@@ -96,7 +96,7 @@ ms.locfileid: "49889758"
   
  用户可以关闭任务窗格在任何时候通过单击**关闭**角的任务窗格中的按钮 (X)。 但是，没有可供用户再次打开自定义任务窗格的默认方法。 如果用户关闭了自定义任务窗格，那么用户无法再次查看该自定义任务窗格，除非提供一种显示窗格的方法。  
   
- 如果在 VSTO 外接程序中创建了自定义任务窗格，则还应创建一个可供用户单击来显示或隐藏该自定义任务窗格的 UI 元素，如按钮。 如果在支持自定义功能区的 Microsoft Office 应用程序中创建了自定义任务窗格，则可以向功能区中添加一个控件组，其中包含用于显示或隐藏自定义任务窗格的按钮。 有关演示如何执行此操作的演练，请参阅[演练： 将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
+ 如果在 VSTO 外接程序中创建了自定义任务窗格，则还应创建一个可供用户单击来显示或隐藏该自定义任务窗格的 UI 元素，如按钮。 如果在支持自定义功能区的 Microsoft Office 应用程序中创建了自定义任务窗格，则可以向功能区中添加一个控件组，其中包含用于显示或隐藏自定义任务窗格的按钮。 有关演示如何执行此操作的演练，请参阅[演练：将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
   
  如果在不支持自定义功能区的 Microsoft Office 应用程序中创建了自定义任务窗格，则可以添加一个显示或隐藏自定义任务窗格的 <xref:Microsoft.Office.Core.CommandBarButton>。  
   
@@ -140,7 +140,7 @@ ms.locfileid: "49889758"
   
 - [Word、 InfoPath 和 PowerPoint](#WordAndInfoPath)  
   
-  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何在 Word VSTO 外接程序中的实现： 管理任务窗格？](http://go.microsoft.com/fwlink/?LinkId=136781)。  
+  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：管理在 Word VSTO 外接程序中的任务窗格？](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
  为 Outlook 创建自定义任务窗格时，自定义任务窗格与特定资源管理器或检查器窗口关联。 资源管理器是用于显示文件夹的内容和检查器是用于显示项，如电子邮件或任务。  
@@ -221,7 +221,7 @@ ms.locfileid: "49889758"
 -   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
   
 ## <a name="see-also"></a>请参阅  
- [如何： 向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [演练： 自动执行从自定义任务窗格应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [演练： 将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [演练： 在 Outlook 中显示电子邮件消息的自定义任务的窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+ [如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [演练：自动执行从自定义任务窗格应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [演练：将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [演练：在 Outlook 中显示电子邮件消息的自定义任务的窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  

@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab54410c7eb1db9dfc0ac3b2c9b2f5df8b85eac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4eae301ca32ef986c76203fd04e7bd6dc9302fec
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634549"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740174"
 ---
 # <a name="code-analysis-application-errors"></a>代码分析应用程序错误
 
-本部分是由托管的代码分析工具生成的错误消息的引用。 若要获取特定的错误消息的帮助，请键入中的错误号**寻找**框在索引中。
+本部分是由托管的代码分析工具生成的错误消息的引用。
 
 ## <a name="in-this-section"></a>本节内容
 
@@ -45,11 +45,11 @@ ms.locfileid: "42634549"
 |[CA0062](ca0062.md)|规则*RuleId*中规则集引用*名称*未找到。|
 |[CA0063](ca0063.md)|未能加载规则集文件或其依赖规则集文件之一。|
 |[CA0064](ca0064.md)|不执行任何分析，因为指定的规则集不包含任何 FxCop 规则。|
-|[CA0065](ca0065.md)|不受支持的元数据构造： 类型 '*TypeName*包含的属性和字段具有相同名称*PropertyFieldName*|
+|[CA0065](ca0065.md)|不受支持的元数据构造：类型*TypeName*包含的属性和字段具有相同名称*PropertyFieldName*|
 |[CA0066](ca0066.md)|值*VersionID*提供给 **/targetframeworkversion**不是可识别的版本。|
 |[CA0067](ca0067.md)|找不到的目录。|
 |[CA0068](ca0068.md)|调试信息未找到目标程序集*AssemblyName*。|
-|[CA0069](ca0069.md)|使用另一种平台。 *FrameworkVersion1*找不到。 使用*FrameworkVersion2*相反。 为获得最佳的分析结果请确保安装正确的.NET Framework。|
+|[CA0069](ca0069.md)|使用另一种平台。 *FrameworkVersion1*找不到。 使用*FrameworkVersion2*相反。 为获得最佳的分析结果，请确保安装正确的.NET Framework。|
 |[CA0070](ca0070.md)|无法加载程序集或类型，因为安全权限。|
 |[CA0501](ca0501.md)|无法读取输出报告。|
 |[CA0502](ca0502.md)|不支持的语言。|
@@ -61,4 +61,4 @@ ms.locfileid: "42634549"
 ## <a name="related-sections"></a>相关章节
 
 - [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
-- [分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
+- [分析托管代码质量](../code-quality/code-analysis-for-managed-code-overview.md)

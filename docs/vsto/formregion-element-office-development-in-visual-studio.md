@@ -1,6 +1,7 @@
 ---
 title: '&lt;formRegion&gt;元素 （Visual Studio 中的 Office 开发）'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <formRegion> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4fc98e66cd16298839e79f25c95e256f10398c49
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7ce6d4d6bb5f74b4505603511752598d4a5180f7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671512"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646953"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt;元素 （Visual Studio 中的 Office 开发）
   `formRegion`元素的`vstov4`命名空间标识与 VSTO 外接程序相关联的 Microsoft Office Outlook 窗体区域。  
@@ -44,7 +45,7 @@ ms.locfileid: "35671512"
   
 |特性|描述|  
 |---------------|-----------------|  
-|`name`|必须的。 标识窗体区域名称。|  
+|`name`|必需。 标识窗体区域名称。|  
   
  `formRegion` 元素具有以下子元素。  
   
@@ -55,7 +56,7 @@ ms.locfileid: "35671512"
   
 |特性|描述|  
 |---------------|-----------------|  
-|`name`|必须的。 标识与窗体区域关联的窗体。|  
+|`name`|必需。 标识与窗体区域关联的窗体。|  
   
 ## <a name="example"></a>示例  
  下面的代码示例阐释 Outlook VSTO 外接程序的应用程序清单中的 `formRegion` 元素，该外接程序是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 其中有三个邮件类与这一个窗体区域关联。 此代码示例摘自[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  

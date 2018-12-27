@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b200c5b0df5f150e0d34b351a3e36a8a986f3ed6
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 7cf16e015c6c5e0f828d759e40dc8cc0eed7c050
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248239"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739479"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>面向.NET Framework 4 或.NET Framework 4.5 的 Office 项目设计更改
   从 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]开始，Visual Studio 引入了对面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的 Office 项目设计的一些更改。 如果你熟悉以前的 Visual Studio 版本中的 Office 项目，那么在开发面向 .NET Framework 4.0 或更高版本的 Office 项目之前，应了解这些更改。 默认情况下，使用 Visual Studio 2013 或更高版本创建的所有项目都面向 .NET Framework 4.0 或更高版本。  
@@ -35,7 +35,7 @@ ms.locfileid: "53248239"
   
 -   [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 项目](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
--   [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的功能区自定义](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+-   [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的功能区自定义](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)  
   
 -   [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Outlook 项目中的窗体区域](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
@@ -51,7 +51,7 @@ ms.locfileid: "53248239"
 |---------------------|-----------------|  
 |Office 项目中不再使用或支持 <xref:System.Security.SecurityTransparentAttribute> 。|必须从更新自 Visual Studio 2008 的 Office 项目的 AssemblyInfo 代码文件中删除此属性。 有关详细信息，请参阅[所需更改即可运行迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。|  
 |**ExcelLocale1033Attribute**不再使用或在 Excel 项目中受支持。|您必须删除此属性从*AssemblyInfo* Excel 项目中的代码文件。 有关详细信息，请参阅[迁移到.NET Framework 4 或.NET Framework 4.5 的更新 Excel 和 Word 项目](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。|  
-|**“功能区（可视化设计器）”** 项目项的编程模型已更改。|必须修改项目中任何功能区项的代码隐藏文件。 此外必须修改的实例化在运行时的功能区控件、 处理功能区事件或以编程方式设置功能区组件位置的任何代码。 有关详细信息，请参阅[迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的更新功能区自定义](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。|  
+|**“功能区（可视化设计器）”** 项目项的编程模型已更改。|必须修改项目中任何功能区项的代码隐藏文件。 此外必须修改的实例化在运行时的功能区控件、 处理功能区事件或以编程方式设置功能区组件位置的任何代码。 有关详细信息，请参阅[迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的更新功能区自定义](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)。|  
 |Outlook 窗体区域的编程模型已更改。|在你的项目和任何代码都实例化某些窗体区域类在运行时，必须修改任何窗体区域的代码隐藏文件。 有关详细信息，请参阅[更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Outlook 项目中的窗体区域](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。|  
 |Excel 和 Word 项目中的智能标记的编程模型已更改。 在 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 和 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]中弃用了智能标记。|如果你的解决方案使用智能标记，则生成项目时将发生错误。 由于 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 和 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)] 中已弃用智能标记，因此，在 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 或更高版本中，必须先删除这些标记才能测试和调试解决方案。|  
 |`GetVstoObject` 和 `HasVstoObject` 方法的语法已更改|从主互操作程序集 (PIA) 在本机对象上访问这些方法时，必须将 `Globals.Factory` 传递给这些方法，或者可以在由项目中的 `Globals.Factory` 属性返回的对象上访问这些方法。 有关详细信息，请参阅[迁移到.NET Framework 4 或.NET Framework 4.5 的更新 Excel 和 Word 项目](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。|  

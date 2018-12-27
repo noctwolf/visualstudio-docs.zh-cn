@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9e3251d83361623aea0c0a54a2752c97b06a66f8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178343"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561861"
 ---
-# <a name="how-to-start-debugging-xslt"></a>如何： 开始调试 XSLT
+# <a name="how-to-start-debugging-xslt"></a>如何：开始调试 XSLT
 
 可以使用 XSLT 调试器来调试 XSLT 样式表或 XSLT 应用程序。 在调试时，可以通过进入并逐行执行代码、逐行执行代码或跳出代码来一次执行一行代码。 XSLT 调试程序和其他 Visual Studio 调试程序中使用代码逐行执行功能的命令都相同。 开始调试后，XSLT 调试器即会打开窗口以显示输入文档和 XSLT 输出。
 
@@ -93,5 +93,5 @@ namespace ConsoleApplication
 
 ## <a name="see-also"></a>请参阅
 
-- [演练： 调试 XSLT 样式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [调试器基础知识](../debugger/getting-started-with-the-debugger.md)
+- [演练：调试 XSLT 样式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
+- [初探调试器](../debugger/debugger-feature-tour.md)   

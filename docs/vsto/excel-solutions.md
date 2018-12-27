@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, Excel solutions
 - document-level customizations [Office development in Visual Studio], Excel
 - Office projects [Office development in Visual Studio], Excel
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 917a83a434dc27074b0d786f64fcdbdc5fd294d3
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 64fac12a47a519496ecba3f31f3fd035ff2d9121
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027388"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647940"
 ---
 # <a name="excel-solutions"></a>Excel 解决方案
   Visual Studio 提供可用于创建 Microsoft Office Excel 的文档级自定义项和 VSTO 外接程序的项目模板。 你可以使用这些解决方案自动化 Excel、扩展 Excel 功能以及自定义 Excel 用户界面 (UI)。 有关文档级自定义项和 VSTO 外接程序之间的差异的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -62,7 +62,7 @@ ms.locfileid: "53027388"
 ##  <a name="doclevel"></a> 开发 Excel 的文档级自定义项  
  Microsoft Office Excel 的文档级自定义项包含与特定工作簿相关联的程序集。 该程序集通常可通过自定义 UI 和自动化 Excel 扩展工作簿。 不同于与 Excel 自身相关联的 VSTO 外接程序，在自定义项中实现的功能仅当相关联的工作簿在 Excel 中打开时才可用。  
 
- 若要创建 Excel 文档级自定义项目，使用 Excel 工作簿或 Excel 模板项目模板中的**新的项目**对话框中的 Visual Studio。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+ 若要创建 Excel 文档级自定义项目，使用 Excel 工作簿或 Excel 模板项目模板中的**新的项目**对话框中的 Visual Studio。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
 
  有关如何使用文档级自定义项工作的详细信息，请参阅[的文档级自定义体系结构](../vsto/architecture-of-document-level-customizations.md)。  
 
@@ -74,7 +74,7 @@ ms.locfileid: "53027388"
 ##  <a name="applevel"></a> 开发适用于 Excel VSTO 外接程序  
  Microsoft Office Excel 的 VSTO 外接程序包含由 Excel 加载的程序集。 该程序集通常可通过自定义 UI 和自动化 Excel 扩展 Excel。 不同的文档级自定义项，这是与特定工作簿相关联，在 VSTO 外接程序中实现的功能不局限于任何单个工作簿。  
 
- 若要创建 Excel VSTO 外接程序项目，使用 Excel 工作簿或 Excel 模板项目模板中的**新的项目**对话框中的 Visual Studio。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+ 若要创建 Excel VSTO 外接程序项目，使用 Excel 工作簿或 Excel 模板项目模板中的**新的项目**对话框中的 Visual Studio。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
 
  有关 VSTO 外接程序工作原理的常规信息，请参阅 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。
 
@@ -92,15 +92,15 @@ ms.locfileid: "53027388"
 |任务|更多相关信息|  
 |----------|--------------------------|  
 |自定义功能区。|[功能区概述](../vsto/ribbon-overview.md)|  
-|将 Windows 窗体控件或扩展的 Excel 控件添加到文档级自定义项的自定义工作簿中的工作表，或添加到 VSTO 外接程序的任何打开的工作簿中。|[如何： 向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [如何： 向工作表添加图表控件](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [如何： 向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [如何： 向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|  
+|将 Windows 窗体控件或扩展的 Excel 控件添加到文档级自定义项的自定义工作簿中的工作表，或添加到 VSTO 外接程序的任何打开的工作簿中。|[如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [如何：将图表控件添加到工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)<br /><br /> [如何：向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)<br /><br /> [如何：向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)|  
 
 ### <a name="options-for-document-level-customizations"></a>对于文档级自定义项的选项  
  下表列出了仅适用于文档级自定义项的自定义选项。  
 
 |任务|更多相关信息|  
 |----------|--------------------------|  
-|将操作窗格添加到工作簿。|[操作窗格概述](../vsto/actions-pane-overview.md)<br /><br /> [如何： 将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
-|将映射到 XML 节点的扩展范围控件添加到工作表。|[如何： 向工作表添加 XMLMappedRange 控件](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|  
+|将操作窗格添加到工作簿。|[操作窗格概述](../vsto/actions-pane-overview.md)<br /><br /> [如何：将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
+|将映射到 XML 节点的扩展范围控件添加到工作表。|[如何：向工作表添加 XMLMappedRange 控件](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)|  
 
 ### <a name="options-for-vsto-add-ins"></a>适用于 VSTO 外接程序的选项  
  下表列出了仅适用于 VSTO 外接程序的自定义选项。  
@@ -117,9 +117,9 @@ ms.locfileid: "53027388"
 | [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md) | 提供有关扩展对象（由 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]提供）的信息，这些信息可用于 Excel 解决方案。 |
 | [全球化和本地化的 Excel 解决方案](../vsto/globalization-and-localization-of-excel-solutions.md) | 包含有关 Excel 解决方案的特殊注意事项的信息，Excel 解决方案将在具有适用于 Windows 的非英语设置的计算机上运行。 |
 | [Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md) | 介绍如何将 Windows 窗体控件添加到 Excel 工作表。 |
-| [演练： 创建你的 Excel 的第一个文档级自定义](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md) | 演示如何创建 Excel 的基本文档级自定义项。 |
-| [演练： 创建第一个 VSTO 外接程序 Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md) | 演示如何为 Excel 创建基本 VSTO 外接程序。 |
-| [演练： 将控件添加到在运行时在 VSTO 外接程序项目中的工作表](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | 演示如何将 Windows 窗体按钮，添加<xref:Microsoft.Office.Tools.Excel.NamedRange>，和一个<xref:Microsoft.Office.Tools.Excel.ListObject>到在运行时由 VSTO 外接程序中使用工作表。 |
+| [演练：创建 excel 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md) | 演示如何创建 Excel 的基本文档级自定义项。 |
+| [演练：为 Excel 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md) | 演示如何为 Excel 创建基本 VSTO 外接程序。 |
+| [演练：将控件添加到在运行时在 VSTO 外接程序项目中的工作表](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | 演示如何将 Windows 窗体按钮，添加<xref:Microsoft.Office.Tools.Excel.NamedRange>，和一个<xref:Microsoft.Office.Tools.Excel.ListObject>到在运行时由 VSTO 外接程序中使用工作表。 |
 | [了解共同创作和外接程序](./understanding-coauthoring-and-addins.md) | 介绍了可能需要对你的解决方案，以适应共同编写的调整。 |
 | [Excel 2010 中的 Office 开发](http://go.microsoft.com/fwlink/?LinkId=199011) | 提供有关开发 Excel 解决方案的文章和参考文档的链接。 这些链接并不特定于使用 Visual Studio 的 Office 开发。 |
 

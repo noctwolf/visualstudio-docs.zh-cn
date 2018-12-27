@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f8d6f2df0b0d9ec6e3f9d8ead7fd1e08929f8e
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 83ec85855e17f8798f55b01f043d47d7140278e7
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966526"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425768"
 ---
-# <a name="how-to-generate-code-metrics-data"></a>如何： 生成代码度量数据
+# <a name="how-to-generate-code-metrics-data"></a>如何：生成代码度量数据
 
 你可以生成一个或多个项目或整个解决方案的代码度量值结果。 代码度量值可在 Visual Studio 交互式开发环境 (IDE)，以及为C#和 Visual Basic 项目，在命令行。
 
-此外，您可以安装[NuGet 包](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01)包括四个代码度量值[分析器](roslyn-analyzers-overview.md)规则： CA1501、 CA1502、 CA1505 和 CA1506。 默认情况下，将禁用这些规则，但也可以启用它们从**解决方案资源管理器**中或在[规则集](using-rule-sets-to-group-code-analysis-rules.md)文件。
+此外，您可以安装[NuGet 包](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01)包括四个代码度量值[分析器](roslyn-analyzers-overview.md)规则：CA1501、 CA1502、 CA1505 和 CA1506。 默认情况下，将禁用这些规则，但也可以启用它们从**解决方案资源管理器**中或在[规则集](using-rule-sets-to-group-code-analysis-rules.md)文件。
 
 ## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE 代码度量值
 
@@ -68,7 +68,7 @@ ms.locfileid: "50966526"
    msbuild /m /v:m /p:Configuration=Release Metrics.csproj
    ```
 
-   名为可执行文件*Metrics.exe*中生成*二进制文件*目录存储库根目录下。
+   名为可执行文件*Metrics.exe*中生成*artifacts\bin*目录存储库根目录下。
 
    > [!TIP]
    > 若要构建*Metrics.exe*中[旧模式](#legacy-mode)，执行以下命令：

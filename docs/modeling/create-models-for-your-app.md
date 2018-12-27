@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 098c0f50f24e216a407343ceb446d0073370fed1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966539"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740135"
 ---
 # <a name="create-models-for-your-app"></a>为你的应用程序创建模型
 
@@ -40,9 +40,9 @@ ms.locfileid: "50966539"
 
 |**关系图**|**显示**|
 |-|-|
-|[依赖项关系图：指南](../modeling/layer-diagrams-guidelines.md)<br /><br /> [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)|系统的上层体系结构|
+|[依赖项关系图：指导原则](../modeling/layer-diagrams-guidelines.md)<br /><br /> [依赖项关系图：引用](../modeling/layer-diagrams-reference.md)|系统的上层体系结构|
 |代码图<br /><br /> [映射解决方案中的依赖项](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [使用代码图分析查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)|现有代码中的依赖关系和其他关系|
-|代码生成的类图<br /><br /> [使用类图（类设计器）](../ide/working-with-class-diagrams-class-designer.md)|.NET 代码中的类型及其关系|
+|代码生成的类图<br /><br /> [使用类图（类设计器）](../ide/class-designer/designing-and-viewing-classes-and-types.md)|.NET 代码中的类型及其关系|
 
 ## <a name="related-tasks"></a>相关任务
 

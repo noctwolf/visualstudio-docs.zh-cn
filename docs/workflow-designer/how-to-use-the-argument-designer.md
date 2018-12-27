@@ -1,5 +1,5 @@
 ---
-title: 工作流设计器-如何： 使用自变量设计器
+title: 工作流设计器-如何：使用参数设计器
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 868fc13474e90be219cf1acebc00074641df142e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 88d9d568a115680c545a32a0d5f533fcab51da1f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755517"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684595"
 ---
-# <a name="how-to-use-the-argument-designer"></a>如何：使用自变量设计器
+# <a name="how-to-use-the-argument-designer"></a>如何：使用参数设计器
 
 与以前版本的.NET Framework 相比，自变量设计器轻松允许数据流入和流出活动。 通过单击来访问在设计器**自变量**设计画布左下角的按钮。 在设计器包含一系列参数显示在表格窗体，可以按每一列标题排序除外**默认值**列。 每个自变量都包含名称、输入/输出/输入-输出/属性方向、类型和默认表达式值（如果有）。 名称和默认的表达式值都是可编辑的文本字段，类型和方向是下拉项。 有关详细信息，请参阅[变量和参数 (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)。
 
@@ -37,5 +37,5 @@ ms.locfileid: "36755517"
 
 ## <a name="see-also"></a>请参阅
 
-- [使用工作流设计器](../workflow-designer/using-the-workflow-designer.md)
+- [使用工作流设计器](developing-applications-with-the-workflow-designer.md)
 - [变量和参数](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)

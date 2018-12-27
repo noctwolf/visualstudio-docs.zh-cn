@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], custom actions
 - custom actions [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e2ad8e1c3b55d479cb031fe920e3027dbc1788c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671061"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441655"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 窗体区域中的自定义操作
   操作显示按钮，使用户能够对 Microsoft Office Outlook 项做出响应。 例如，若要对邮件项做出响应，用户单击**答复**，**全部答复**，或**向前**操作按钮。 每个操作创建新的邮件项，并通过使用原始项中的信息填充的项的字段。  
@@ -56,7 +56,7 @@ ms.locfileid: "50671061"
   
 ## <a name="see-also"></a>请参阅  
  [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)   
- [演练： 设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [将窗体区域与 Outlook 消息类相关联](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
   
   

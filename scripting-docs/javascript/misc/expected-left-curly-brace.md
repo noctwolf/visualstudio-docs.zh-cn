@@ -1,5 +1,5 @@
 ---
-title: 预期 &#39;{&#39; |Microsoft 文档
+title: 预期 {|Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c72953f30ff80fcd48110afb74d628319863e99
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0e0127d551c6bf16c710e47d5f95c975522aca16
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632767"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348369"
 ---
-# <a name="expected-3939"></a>预期 &#39;{&#39;
-不包含标记的函数体开始的左大括号。 代码，即使它是单行，后者构成函数的正文必须包含在向左和右大括号。 请注意，函数体中的大括号的使用是比在循环中更严格。  
+# <a name="expected-"></a>应有“{”
+你未包含标记的函数体开头的左大括号。 组成函数的正文，即使它是单个行的代码必须包含在左和右大括号。 请注意，在函数体中的大括号的使用比在循环中更严格。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   添加标记的函数体开始的左大括号。  
+-   添加标记的函数体开头的左大括号。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Function 对象](../../javascript/reference/function-object-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: 如何： 将命令添加到快捷菜单
+title: 如何：将命令添加到快捷菜单
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,26 +11,26 @@ dev_langs:
 helpviewer_keywords:
 - Office menus, creating
 - Office development in Visual Studio, context menus
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9accca69c5d56461f07d21d25821c0f4181c8fbd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 37c0c4c54fdb50f56d7d8f6920eedfd15491a6a7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670561"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648424"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>如何： 将命令添加到快捷菜单
+# <a name="how-to-add-commands-to-shortcut-menus"></a>如何：将命令添加到快捷菜单
   本主题演示如何使用 VSTO 外接程序中将命令添加到 Office 应用程序中的快捷菜单。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>将命令添加到 Office 的快捷菜单中  
   
-1.  将“功能区 XML”  项添加到文档级项目或 VSTO 外接程序项目中。 有关详细信息，请参阅[如何： 开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。 内  
+1.  将“功能区 XML”  项添加到文档级项目或 VSTO 外接程序项目中。 有关更多信息，请参见[如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。 内  
   
 2.  在“解决方案资源管理器”中，选择“”  或“” 。  
   
@@ -51,7 +51,7 @@ ms.locfileid: "35670561"
   
 7.  在代码编辑器中添加 XML，该 XML 描述快捷菜单以及要添加到快捷菜单的控件。  
   
-     下面的示例将向 Word 文档的快捷菜单添加按钮、菜单和库控件。 此快捷菜单的控件 ID 是 ContextMenuText。 有关完整列表的 Office 2010 快捷控件 ID，请参阅[Office 2010 帮助文件： Office fluent 用户界面控件标识符](http://go.microsoft.com/fwlink/?LinkID=181052)。  
+     下面的示例将向 Word 文档的快捷菜单添加按钮、菜单和库控件。 此快捷菜单的控件 ID 是 ContextMenuText。 有关完整列表的 Office 2010 快捷控件 ID，请参阅[Office 2010 帮助文件：Office fluent 用户界面控件标识符](http://go.microsoft.com/fwlink/?LinkID=181052)。  
   
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>  
@@ -84,7 +84,7 @@ ms.locfileid: "35670561"
   
 ## <a name="see-also"></a>请参阅  
  [Office UI 自定义](../vsto/office-ui-customization.md)   
- [演练： 创建书签的快捷菜单](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
+ [演练：创建书签的快捷菜单](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)   
  [自定义 Office 2010 中的上下文菜单](http://go.microsoft.com/fwlink/?LinkId=182186)  
   

@@ -1,5 +1,5 @@
 ---
-title: 如何： 将附加的托管代码扩展到文档
+title: 如何：将托管的代码扩展附加到文档
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], attaching
 - documents [Office development in Visual Studio], managed code extensions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6e39f27caf9d321bb83666d72114a9675091f03
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: aa7eda6dfed28ceebb9b400568463cc689993f1e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257033"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646888"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>如何： 将附加的托管代码扩展到文档
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>如何：将托管的代码扩展附加到文档
   可以将自定义程序集附加到现有 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿。 文档或工作簿可以是支持的 Microsoft Office 项目和 Visual Studio 中的开发工具的任何文件格式。 有关详细信息，请参阅[的文档级自定义体系结构](../vsto/architecture-of-document-level-customizations.md)。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -33,7 +33,7 @@ ms.locfileid: "35257033"
 > [!NOTE]  
 >  自定义项将无法加载如果代码需要指定的文档中不存在的控件。  
   
- ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现： 将附加或分离的 VSTO 程序集从 Word 文档？](http://go.microsoft.com/fwlink/?LinkId=136782)。  
+ ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：附加或分离的 VSTO 程序集从 Word 文档？](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>若要将托管的代码扩展附加到文档  
   
@@ -55,6 +55,6 @@ ms.locfileid: "35257033"
   
 ## <a name="see-also"></a>请参阅  
  [使用 ServerDocument 类管理服务器上的文档](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [如何： 删除文档从托管代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [如何：删除文档中的托管的代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [在 Office 解决方案中的应用程序和部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
   

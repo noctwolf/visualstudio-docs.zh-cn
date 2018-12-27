@@ -17,17 +17,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Excel object model
 - Office object models
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb5b930df90f36395a22461ad0f26e82548afb6f
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880788"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647520"
 ---
 # <a name="excel-object-model-overview"></a>Excel 对象模型概述
   若要开发使用 Microsoft Office Excel 的解决方案，可与由 Excel 对象模型提供的对象进行交互。 本主题介绍最重要的对象：  
@@ -48,7 +48,7 @@ ms.locfileid: "49880788"
   
   本主题概要介绍 Excel 对象模型。 资源可从中了解整个 Excel 对象模型的详细信息，请参阅[使用 Excel 对象模型文档](#ExcelOMDocumentation)。  
   
-  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现： 使用事件处理程序在 Excel 2007 外接程序？](http://go.microsoft.com/fwlink/?LinkID=130291)，并[如何实现： 使用形状以创建气泡图在 Excel？](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：使用事件处理程序在 Excel 2007 外接程序？](http://go.microsoft.com/fwlink/?LinkID=130291)，和[如何实现：使用形状在 Excel 中创建气泡图？](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>访问 Excel 项目中的对象  
  时为 Excel 创建新的 VSTO 外接程序项目，Visual Studio 会自动创建*ThisAddIn.vb*或*ThisAddIn.cs*代码文件。 可以通过使用 `Me.Application` 或 `this.Application` 访问应用程序对象。  
@@ -106,7 +106,7 @@ ms.locfileid: "49880788"
  有关 Excel 对象模型的完整信息，可以参考 Excel 主互操作程序集 (PIA) 引用和 VBA 对象模型引用。  
   
 ### <a name="primary-interop-assembly-reference"></a>主互操作程序集引用  
- Excel PIA 参考文档介绍 Excel 的主互操作程序集中的类型。 本文档可从以下位置： [Excel 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189585)。  
+ Excel PIA 参考文档介绍 Excel 的主互操作程序集中的类型。 本文档可从以下位置：[Excel 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189585)。  
   
  有关设计的 Excel PIA，例如在 PIA 和如何实现 PIA 中的事件中类和接口之间的差别的详细信息请参阅[的中的 Office 主互操作程序集类和接口概述](http://go.microsoft.com/fwlink/?LinkId=189592).  
   

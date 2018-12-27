@@ -1,6 +1,7 @@
 ---
 title: 错误消息 （在 Visual Studio 中的 Office 开发）
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - error messages, Office development in Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6f87f2bbdda39dd00cf2771d3764aea6ad89d0a
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 7894de0c688ffccd227e2d6f5c73cfae24679d85
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263272"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646875"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>错误消息 （在 Visual Studio 中的 Office 开发）
   每个错误消息主题介绍造成错误的可能原因以及解决此问题的的潜在解决方案或解决方法。  
@@ -29,7 +30,7 @@ ms.locfileid: "34263272"
   
 |方法|描述|  
 |-|-|  
-|F1|如果你收到错误，你可以按**F1**。 这样将打开联机文档中的相应错误消息主题。|  
+|F1|如果收到错误，可以按**F1**。 这样将打开联机文档中的相应错误消息主题。|  
 |全文搜索|可以使用在错误消息文本中使用的第一个句子中的单词进行全文搜索。 在“帮助”  菜单上，单击“搜索” 。|  
   
 ## <a name="see-also"></a>请参阅  

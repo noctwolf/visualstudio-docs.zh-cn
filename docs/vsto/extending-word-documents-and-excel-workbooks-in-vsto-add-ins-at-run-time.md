@@ -16,17 +16,17 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], extending Excel workbooks
 - controls [Office development in Visual Studio], adding at run time
 - HasVstoObject method
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 424b2cf8a6461ed0d60a1c16555c49c0ed8a0136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb1197d85f52c314eb9ec0a01ccd5069f9c43f39
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895777"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647814"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>扩展 Word 文档和 Excel 工作簿在 VSTO 外接在运行时
   你可以通过下列方式使用 VSTO 外接程序来自定义 Word 文档和 Excel 工作簿：  
@@ -39,7 +39,7 @@ ms.locfileid: "49895777"
   
   若要使用此功能，你生成在运行时扩展文档或工作簿的对象。  
   
-  **适用于：** 这篇文章中的信息适用于以下应用程序在 VSTO 外接程序项目： Excel 和 Word。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+  **适用于：** 在本文中的信息适用于 VSTO 外接程序项目类型提供的以下应用程序：Excel 和 Word。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>在 VSTO 外接程序中生成扩展的对象  
  *扩展对象* 是由 Visual Studio Tools for Office Runtime 提供的类型的实例，该运行时可将功能添加到存在于 Word 或 Excel 对象模型中的本机对象（称为 *本机 Office 对象*）。 若要生成 Word 或 Excel 对象的扩展对象，请使用 `GetVstoObject` 方法。 第一次调用`GetVstoObject`方法指定的 Word 或 Excel 对象，它将返回扩展指定的对象的新对象。 每次调用方法并指定相同 Word 或 Excel 对象时，它将返回相同的扩展对象。  

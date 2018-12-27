@@ -1,5 +1,5 @@
 ---
-title: 如何： 配置包含列表安全性
+title: 如何：配置包含列表安全性
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - permissions [Office development in Visual Studio
 - inclusion lists [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e5bd1794b76485d60588b94d3ca139a314f9723
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: b13084a0010bef21283dc7890dd5b1064392e1b2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255832"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647730"
 ---
-# <a name="how-to-configure-inclusion-list-security"></a>如何： 配置包含列表安全性
+# <a name="how-to-configure-inclusion-list-security"></a>如何：配置包含列表安全性
   如果您具有管理员权限，则可以配置[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示，以控制最终用户是否可以通过将信任决策保存到包含列表中安装 Office 解决方案的选择。 有关包含列表的信息，请参阅[使用包含列表信任 Office 解决方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -55,7 +55,7 @@ ms.locfileid: "35255832"
   
 3.  添加以下作为子项**字符串值**，如果它们尚不存在，及其相关的值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |**Internet**|**AuthenticodeRequired**|  
     |**UntrustedSites**|已禁用|  
@@ -114,7 +114,7 @@ ms.locfileid: "35255832"
   
 3.  添加以下作为子项**字符串值**，如果它们尚不存在，及其相关的值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |**UntrustedSites**|已禁用|  
     |**Internet**|**AuthenticodeRequired**|  
@@ -171,7 +171,7 @@ ms.locfileid: "35255832"
   
 3.  添加以下作为子项**字符串值**，如果它们尚不存在，及其相关的值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |**UntrustedSites**|已禁用|  
     |**Internet**|已禁用|  

@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ade59e757778ac7858732f5bf9880b9f88eacd69
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4a305a74d24b8480732fb2132bf6c25f4f4f3d7a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567451"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647772"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>全球化和本地化的 Excel 解决方案
   本节包含有关 Microsoft Office Excel 解决方案的特殊注意事项的信息，这些解决方案将在具有 Windows 非英语设置的计算机上运行。 全球化和本地化 Microsoft Office 解决方案过程中所遇到的大多数问题与使用 Visual Studio 创建其他各种解决方案时遇到的问题相同。 有关常规信息，请参阅[Globalize 和本地化应用程序](/visualstudio/ide/globalizing-and-localizing-applications)。  
@@ -39,7 +39,7 @@ ms.locfileid: "39567451"
   
  即使你对由托管代码传递或操作的数据使用英语（美国）格式，Excel 仍然会根据最终用户的区域设置来正确解释并显示数据。 Excel 可以正确设置数据格式，因为托管代码将区域设置 ID 1033 与数据一起传递，这表示数据为英语（美国）格式，因此必须重新设置格式，使其与用户的区域设置相匹配。  
   
- 例如，如果最终用户将其区域选项设置为德语（德国）区域设置，则他们期望采用以下方式设置日期 2005 年 6 月 29 日的格式：29.06.2005。 但是，如果解决方案以字符串形式将该日期传递到 Excel，则必须依据英语（美国）格式 6/29/2005 设置该日期的格式。 如果将单元格格式化为日期单元格，则 Excel 将采用德语（德国）格式显示日期。  
+ 例如，如果最终用户将其设置为德语 （德国） 区域设置的区域选项，他们期望日期 2005 年 6 月 29 日，要设置格式的这种方式：29.06.2005。 但是，如果你的解决方案将日期传递给 Excel 作为一个字符串，必须格式对应于英语 （美国） 格式的日期：2005 年 6 月 29 日。 如果将单元格格式化为日期单元格，则 Excel 将采用德语（德国）格式显示日期。  
   
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>将其他区域设置 Id 传递给 Excel 对象模型  
  公共语言运行时 (CLR) 会自动将区域设置 ID 1033 传递到接受区分区域设置的数据的 Excel 对象模型中的所有方法和属性。 无法为调入对象模型的所有调用自动更改此行为。 但是，通过使用 <xref:System.Type.InvokeMember%2A> 来调用方法以及将区域设置 ID 传递到方法的 *culture* 参数，可以将不同的区域设置 ID 传递到特定的方法。  
@@ -99,7 +99,7 @@ Application.ActiveCell.Value2 = "05/12/04"
  对于打开或以其他方式使用外部数据（如包含从旧系统中导出的逗号分隔值的文件（CSV 文件））的任何代码，如果这些文件是使用除 en-US 格式之外的任何格式导出的，则这些代码也会受到影响。 由于数据库中的所有值都应为二进制格式，因此只要数据库不将日期作为字符串存储且不执行不使用二进制格式的操作，数据库访问就不会受到影响。 另外，如果使用 Excel 中的数据构造 SQL 查询，则可能需要根据使用的函数来确保数据为 en-US 格式。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 面向 Office 多语言用户界面](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [如何：面向 Office 多语言用户界面](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
   

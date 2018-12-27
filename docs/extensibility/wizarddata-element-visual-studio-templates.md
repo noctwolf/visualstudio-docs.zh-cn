@@ -1,10 +1,9 @@
 ---
-title: WizardData 元素 （Visual Studio 模板） |Microsoft 文档
+title: WizardData 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardData
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6685c09e463b50f1fd856c65eadc09555a6dedb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a7f024c1ca9840b2dcde181d772bf18af99e603
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140110"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561286"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 元素（Visual Studio 模板）
 指定自定义 XML  
@@ -59,9 +58,9 @@ ms.locfileid: "31140110"
  此文本指定要传递给指定的自定义向导扩展的自定义 XML [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)元素。  
   
 ## <a name="remarks"></a>备注  
- 此元素中，可以指定任何 XML。 XML 将可作为参数传递到自定义向导扩展插件，允许此扩展可以使用此元素的内容。 对此数据不进行任何验证。  
+ 可以在此元素中指定任何 XML。 XML 将会作为参数传递给自定义向导扩展，允许使用此元素的内容的扩展名。 对此数据不进行任何验证。  
   
- 内容`WizardData`元素会被传递，保持不变，作为参数中的参数的字符串字典内`IWizard.RunStarted`方法。 参数的名称为 $WizardData$。  
+ 内容`WizardData`元素将传递不变，作为参数的字符串字典中的参数内`IWizard.RunStarted`方法。 参数的名称为 $WizardData$。  
   
 ## <a name="example"></a>示例  
  下面的示例演示的标准项目模板的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 应用程序。  
@@ -97,7 +96,7 @@ ms.locfileid: "31140110"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [WizardExtension 元素 （Visual Studio 模板）](../extensibility/wizardextension-element-visual-studio-templates.md)   

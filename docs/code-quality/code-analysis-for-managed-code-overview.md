@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96f00e6080cb10778a92aaa860422da8366be54d
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c76ee4a98694fee811b9edea4bcd8a095640cd25
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389307"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739677"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>在 Visual Studio 中的托管代码的静态代码分析的概述
 
@@ -30,13 +30,13 @@ Visual Studio 2017 可以通过两种方式执行托管代码的代码分析： 
 分析工具将它在分析期间执行的检查表示为警告消息。 警告消息标识任何相关的编程和设计问题，如有可能，还提供有关如何修复问题的信息。
 
 > [!NOTE]
-> Visual Studio 中的 .NET Core 和 .NET Standard 项目不支持静态代码分析。 如果在作为 msbuild 一部分的 .NET Core 或 .NET Standard 项目上运行代码分析，则会看到类似“错误: CA0055: 无法确定 \<your.dll> 的平台”的错误 **** 。 若要分析 .NET Core 或 .NET Standard 项目中的代码，请改用 [Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
+> Visual Studio 中的 .NET Core 和 .NET Standard 项目不支持静态代码分析。 如果 msbuild 的一部分，可以对.NET Core 或.NET Standard 项目运行代码分析，您将看到类似的错误**错误：CA0055:无法识别的平台\<your.dll >**。 若要分析 .NET Core 或 .NET Standard 项目中的代码，请改用 [Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
 
 ## <a name="ide-integrated-development-environment-integration"></a>IDE （集成的开发环境） 集成
 
 可以手动或自动在项目上运行代码分析。
 
-若要在每次生成项目时运行代码分析，请在项目的“属性”页上选择“在生成时启用代码分析”。 有关详细信息，请参阅[如何：启用和禁用自动代码分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
+若要在每次生成项目时运行代码分析，请在项目的“属性”页上选择“在生成时启用代码分析”。 有关更多信息，请参见[如何：启用和禁用自动代码分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
 
 若要在项目上手动运行代码分析，请从菜单栏中选择**分析** > **运行代码分析** > **在 \<项目> 上运行代码分析**。
 
@@ -71,7 +71,7 @@ Public class MyClass
 
 - 代码分析作为最新生成的一部分运行。
 
-可以通过指定签入策略来实现该任务。 有关详细信息，请参阅[利用项目签入策略提高代码质量](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)。
+可以通过指定签入策略来实现该任务。 有关详细信息，请参阅[利用项目签入策略提高代码质量](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)。
 
 ## <a name="team-build-integration"></a>Team build 集成
 

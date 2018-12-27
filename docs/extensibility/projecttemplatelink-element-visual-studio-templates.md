@@ -2,9 +2,8 @@
 title: ProjectTemplateLink 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectTemplateLink
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0f2d810f2e6dff135230af71b10a823d22330e8
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 09cd9a5168f0051834b4f3b1de74ed9cd2e97381
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495968"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561494"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 元素 （Visual Studio 模板）
 指定的路径 *.vstemplate*多项目模板中的一个项目文件。  
@@ -30,7 +29,7 @@ ms.locfileid: "46495968"
  \<TemplateContent >  
  \<ProjectCollection >  
  \<ProjectTemplateLink >  
-或  
+- 或 -  
 \<VSTemplate >  
  \<TemplateContent >  
  \<ProjectCollection >  
@@ -71,7 +70,7 @@ ms.locfileid: "46495968"
  此文本指定的路径 *.vstemplate*模板的文件。  
   
 ## <a name="remarks"></a>备注  
- 多项目模板用作两个或多个项目的容器。 `ProjectTemplateLink`元素用于指定的位置 *.vstemplate*其中一个模板中项目的文件。 *.Vstemplate*文件的多项目模板包含一个`ProjectTemplateLink`为每个项目模板中的元素。 多项目模板的详细信息，请参阅[如何： 创建多项目模板](../ide/how-to-create-multi-project-templates.md)。  
+ 多项目模板用作两个或多个项目的容器。 `ProjectTemplateLink`元素用于指定的位置 *.vstemplate*其中一个模板中项目的文件。 *.Vstemplate*文件的多项目模板包含一个`ProjectTemplateLink`为每个项目模板中的元素。 多项目模板的详细信息，请参阅[如何：创建多项目模板](../ide/how-to-create-multi-project-templates.md)。  
   
 ## <a name="example"></a>示例  
  此示例显示了简单的多项目根 *.vstemplate*文件。 在此示例中，模板包含两个项目：`My Windows Application` 和 `My Class Library`。 `ProjectName` 元素的 `ProjectTemplateLink` 特性可为 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 设置要分配给此项目的名称。 如果`ProjectName`属性不存在，名称 *.vstemplate*文件用作项目名称。  
@@ -101,4 +100,4 @@ ms.locfileid: "46495968"
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [如何： 创建多项目模板](../ide/how-to-create-multi-project-templates.md)
+ [如何：创建多项目模板](../ide/how-to-create-multi-project-templates.md)

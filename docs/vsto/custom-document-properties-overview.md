@@ -15,21 +15,21 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio], custom properties
 - _AssemblyLocation property
 - _AssemblyName property
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23d0aa3b065a05b1c85b54e7889c4fe1bac4af7a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9fcd250f75e21d24409bb7b17764d9d18e7d6c7b
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671516"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441439"
 ---
 # <a name="custom-document-properties-overview"></a>自定义文档属性概述
 
-Visual Studio 生成的文档级项目时，将两个自定义属性添加到项目中的文档： \_AssemblyLocation 和\_程序集名称。 当用户打开的文档时，Microsoft Office 应用程序将检查这些自定义文档属性。 如果它们存在文档中，应用程序加载[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，从而启动自定义项。 有关详细信息，请参阅[Visual Studio 中的体系结构的 Office 解决方案](../vsto/architecture-of-office-solutions-in-visual-studio.md)。
+生成的文档级项目时，Visual Studio 会将两个自定义属性添加到项目中的文档：\_程序集位置和\_程序集名称。 当用户打开的文档时，Microsoft Office 应用程序将检查这些自定义文档属性。 如果它们存在文档中，应用程序加载[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，从而启动自定义项。 有关详细信息，请参阅[Visual Studio 中的体系结构的 Office 解决方案](../vsto/architecture-of-office-solutions-in-visual-studio.md)。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -58,5 +58,5 @@ Visual Studio 生成的文档级项目时，将两个自定义属性添加到项
 - [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)
 - [在 Office 解决方案中的应用程序和部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [如何： 使用 ClickOnce 发布 Office 解决方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [如何： 创建和修改自定义文档属性](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [如何：使用 ClickOnce 发布 Office 解决方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [如何：创建和修改自定义文档属性](../vsto/how-to-create-and-modify-custom-document-properties.md)

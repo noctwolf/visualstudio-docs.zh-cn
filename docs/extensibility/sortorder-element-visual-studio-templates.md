@@ -1,10 +1,9 @@
 ---
-title: SortOrder 元素 （Visual Studio 模板） |Microsoft 文档
+title: SortOrder 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SortOrder
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b963b6e74b7c24d31ddc611407df22380ff8bb60
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2710c85caf2ff675a05236aac48d08412e794ca6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140318"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561338"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 元素（Visual Studio 模板）
-指定一个值，用于排列相同类别中的其他模板之间的模板中所示**新项目**或**添加新项**对话框。  
+指定一个值，用于排列在同一类别中的其他模板之间的模板中显示该值**新的项目**或**添加新项**对话框。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -59,9 +58,9 @@ ms.locfileid: "31140318"
 ## <a name="remarks"></a>备注  
  `SortOrder` 是可选元素。 默认值为 100，并且所有值都必须为 10 的倍数。  
   
- `SortOrder`元素将被忽略的用户创建的模板。 所有用户创建模板的字母顺序都排序。  
+ `SortOrder`元素忽略为用户创建的模板。 所有用户创建的模板进行按字母顺序都排序。  
   
- 在将显示具有低排序顺序值的模板**新项目**或**新添加的项**具有高的排序顺序值的模板之前的对话框。  
+ 中将显示具有较低的排序顺序值的模板**新的项目**或**新添加项**之前具有高排序顺序值的模板对话框的。  
   
 ## <a name="example"></a>示例  
  下面的示例演示一种标准的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]类模板。  
@@ -83,8 +82,8 @@ ms.locfileid: "31140318"
 </VSTemplate>  
 ```  
   
- 在此示例中，`SortOrder`元素是相对较高。 很可能使其他[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]项模板将具有`SortOrder`值低于`290`和将出现在此模板之前**新项**对话框。  
+ 在此示例中，`SortOrder`元素是相对较高。 很可能其他[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]项模板将具有`SortOrder`值低于`290`，并将此模板前**新项**对话框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)
