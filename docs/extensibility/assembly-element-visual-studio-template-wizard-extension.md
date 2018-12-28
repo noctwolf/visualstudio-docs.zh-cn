@@ -2,9 +2,8 @@
 title: Assembly 元素 （Visual Studio 模板向导扩展） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fa0728be191086ba84de86110deea122316466f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 829ba0fd25494affb2a8bf7e59c31361cbc9dc4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153851"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562017"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 元素 （Visual Studio 模板向导扩展）
 指定的名称或实现的程序集的强名称`IWizard`接口。  
@@ -93,4 +92,4 @@ ms.locfileid: "39153851"
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [如何： 使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: 如何： 向应用程序中添加自定义任务窗格
+title: 如何：向应用程序添加自定义任务窗格
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - task panes [Office development in Visual Studio], adding to application
 - custom task panes [Office development in Visual Studio], adding to application
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8608fcc263be4750c38b6fe3f84967f40dd34ab
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 6436176c7af4206319d9d2f8408baccb0572da5b
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548809"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646992"
 ---
-# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>如何： 向应用程序中添加自定义任务窗格
+# <a name="how-to-add-a-custom-task-pane-to-an-application"></a>如何：向应用程序添加自定义任务窗格
   你可以通过使用 VSTO 外接程序向上面列出的应用程序添加自定义任务窗格。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -31,15 +31,15 @@ ms.locfileid: "34548809"
 > [!NOTE]  
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="add-a-custom-task-pane-to-an-application"></a>将自定义任务窗格添加到应用程序  
+## <a name="add-a-custom-task-pane-to-an-application"></a>向应用程序添加自定义任务窗格  
   
 ### <a name="to-add-a-custom-task-pane-to-an-application"></a>若要向应用程序添加自定义任务窗格  
   
-1.  为上面列出的应用程序之一打开或创建 VSTO 外接程序项目。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  为上面列出的应用程序之一打开或创建 VSTO 外接程序项目。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  在 **“项目”** 菜单上，单击 **“添加用户控件”**。  
   
-3.  在**添加新项**对话框框中，更改到新的用户控件的名称**MyUserControl**，然后单击**添加**。  
+3.  在中**添加新项**对话框中，更改到新的用户控件的名称**MyUserControl**，然后单击**添加**。  
   
      用户控件将在设计器中打开。  
   
@@ -61,8 +61,8 @@ ms.locfileid: "34548809"
     >  此代码将自定义任务窗格与应用程序中的活动窗口关联。 对于某些应用程序，你可能想要修改此代码以确保任务窗格与应用程序中的其他文档或项目一起显示。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [Office UI 自定义项](../vsto/office-ui-customization.md)   
+ [Office UI 自定义](../vsto/office-ui-customization.md)   
  [自定义任务窗格](../vsto/custom-task-panes.md)   
- [演练： 自动化从自定义任务窗格应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
+ [演练：自动执行从自定义任务窗格应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)  
   
   

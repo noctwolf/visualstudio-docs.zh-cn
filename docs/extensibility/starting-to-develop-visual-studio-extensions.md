@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5d6e84bc526cf597fbfd22bd36b93cd419ba0d6
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: eaae915b8e201b5596bdd435c432ffccfa9ad8c3
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349658"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739914"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>开始开发 Visual Studio 扩展
 
@@ -64,7 +64,7 @@ ms.locfileid: "51349658"
 
 -   [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Visual Studio 独立 Shell](../extensibility/visual-studio-isolated-shell.md)
+-   [Visual Studio 独立 Shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)
 
 ##  <a name="BKMK_ProjectTemplate"></a> VSSDK 提供哪些项目模板？
  两个主要类型的扩展是 Vspackage 和 MEF 扩展。 一般情况下，扩展的使用或扩展命令、 工具窗口和项目使用 VSPackage 扩展。 使用 MEF 扩展来扩展或自定义 Visual Studio 编辑器。
@@ -81,9 +81,9 @@ ms.locfileid: "51349658"
 
 -   编辑器扩展：[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   基本 Vspackage:[使用 VSPackage 创建扩展](../extensibility/creating-an-extension-with-a-vspackage.md)
+-   基本 Vspackage:[使用 VSPackage 建扩展](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   VSIX 项目模板： [VSIX 项目模板入门](../extensibility/getting-started-with-the-vsix-project-template.md)
+-   VSIX 项目模板：[VSIX 项目模板入门](../extensibility/getting-started-with-the-vsix-project-template.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>如何获取我的扩展以类似于 Visual Studio？
  设计为在扩展插件的 UI 获取不错的提示[Visual Studio 用户体验指南](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。
@@ -94,7 +94,7 @@ ms.locfileid: "51349658"
 ## <a name="how-can-i-distribute-my-extension"></a>如何分发 my 扩展？
  可以在另一台计算机上安装扩展，也可以通过双击安装.vsix 文件以将其发送到您的朋友。 您可以了解有关在 VSIX 包的详细信息[传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)。
 
- 此外可以发布您的扩展 Visual Studio Marketplace，使其向大量 Visual Studio 客户可见。 打包到 Marketplace 扩展的示例，请参阅[演练： 发布 Visual Studio 扩展](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。 有关需要执行的操作在 Marketplace 上发布的详细信息，请参阅[Visual Studio 的产品和扩展](/azure/devops/extend/overview?view=vsts)。
+ 此外可以发布您的扩展 Visual Studio Marketplace，使其向大量 Visual Studio 客户可见。 打包到 Marketplace 扩展的示例，请参阅[演练：发布 Visual Studio 扩展](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。 有关需要执行的操作在 Marketplace 上发布的详细信息，请参阅[Visual Studio 的产品和扩展](/azure/devops/extend/overview?view=vsts)。
 
 ## <a name="see-also"></a>请参阅
 

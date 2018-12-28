@@ -1,10 +1,9 @@
 ---
-title: SupportsCodeSeparation 元素 （Visual Studio 模板） |Microsoft 文档
+title: SupportsCodeSeparation 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsCodeSeparation
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd8eb9bbabb47444754d3756216fc81d02c7d7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e669cf01f7becde7fa95af602ce4518bbaf6957e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140737"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561371"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 元素（Visual Studio 模板）
-指定是否**将代码放在单独的文件**在中启用复选框**添加新项**对话框。  
+指定是否**将代码放在单独的文件**中启用复选框**添加新项**对话框。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -49,19 +48,19 @@ ms.locfileid: "31140737"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将此模板分类并定义中的显示方式**新项目**或**新项**对话框。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将此模板分类并定义中的显示方式**新的项目**或**新项**对话框。|  
   
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
   
- 文本必须是`true`或`false`，以指示是否**将代码放在单独的文件**在中启用复选框**添加新项**对话框。  
+ 文本必须是`true`或`false`，以指示是否**将代码放在单独的文件**中启用复选框**添加新项**对话框。  
   
 ## <a name="remarks"></a>备注  
  `SupportsCodeSeparation` 是可选元素。 默认值为 `false`。  
   
- `SupportsCodeSeparation`元素功能仅适用于 Web 项模板。  
+ `SupportsCodeSeparation`元素功能仅适用于 Web 项目模板。  
   
- 单独的代码或代码隐藏页模型，可以将标记保留在一个文件，并在另一个文件中的编程代码。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 和其他.NET 语言使用此模型。  
+ 代码分离或代码隐藏页模型，可将标记保留在一个文件和另一个文件中的编程代码中。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 和其他.NET 语言使用此模型。  
   
 ## <a name="example"></a>示例  
  下面的示例指定要显示**将代码放在单独的文件**选项。  
@@ -88,6 +87,6 @@ ms.locfileid: "31140737"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

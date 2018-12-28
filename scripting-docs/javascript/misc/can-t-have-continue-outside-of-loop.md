@@ -1,5 +1,5 @@
 ---
-title: '可以 &#39; 具有 &#39; 继续 （& a) #39;位于循环外 |Microsoft 文档'
+title: Continue 能位于循环外 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,21 +20,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8760eef1bb69f5f3ad18791dde8e25ce16776735
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d4939635b69cf5b49e36c7168dcf3c1a786821f
+ms.sourcegitcommit: 7ba97696d6d48de698210863183266af90c82af5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633297"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531240"
 ---
-# <a name="can39t-have-39continue39-outside-of-loop"></a>可以 &#39; 具有 &#39; 继续 （& a) #39;位于循环外
-你尝试使用**继续**位于循环外的语句。 **继续**答： 主体中仅可以使用语句  
+# <a name="cant-have-continue-outside-of-loop"></a>“continue”不能位于循环外
+你尝试使用**继续**位于循环外的语句。 **继续**答： 在正文中仅可以使用语句  
   
--   `do-while`循环中，  
+-   `do-while` 循环中，  
   
--   `while`循环中，  
+-   `while` 循环中，  
   
--   **有关**循环，  
+-   **有关**循环中，  
   
 -   **/ 中**循环。  
   
@@ -42,15 +42,15 @@ ms.locfileid: "24633297"
   
 -   请确保**继续**语句出现在正文答：  
   
-    -   `do-while`循环中，  
+    -   `do-while` 循环中，  
   
-    -   `while`循环中，  
+    -   `while` 循环中，  
   
-    -   **有关**循环，  
+    -   **有关**循环中，  
   
     -   **/ 中**循环。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [continue 语句](../../javascript/reference/continue-statement-javascript.md)   
  [控制程序流](../../javascript/controlling-program-flow-javascript.md)   
  [脚本疑难解答](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

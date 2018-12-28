@@ -14,22 +14,22 @@ helpviewer_keywords:
 - customizing the Ribbon, about customizing the Ribbon
 - custom Ribbon, about customizing the Ribbon
 - Ribbon [Office development in Visual Studio], Outlook
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 035a38abc2285f744841b1d095387f61a21335a7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a0caef19f2f82ed6dcf1d46cfc85637c64e019f4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671529"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647231"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>为 Outlook 中自定义功能区
   在 Microsoft Office Outlook 中自定义功能区时，必须考虑自定义功能区在应用程序中出现的位置。 在主应用程序用户界面 (UI) 和用户执行某些任务（例如创建电子邮件消息）时打开的窗口中，Outlook 会显示功能区。 这些应用程序窗口被命名为检查器。  
   
- ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现： 使用功能区设计器，以自定义 Outlook 功能区中的？](http://go.microsoft.com/fwlink/?LinkID=130312)。  
+ ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：使用功能区设计器自定义 Outlook 功能区中？](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   

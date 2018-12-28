@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 - solutions [Office development in Visual Studio], developing
 - Office solutions [Office development in Visual Studio], developing
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a95c5f5767e227c35763cfaea1e3619093fffda3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea6054ae0917413a4e862e5c6309492ce84deff2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833054"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648847"
 ---
 # <a name="develop-office-solutions"></a>开发 Office 解决方案
   使用 Visual Studio 中的 Office 开发人员工具设计项目并设置项目文件后，便可以开始集中精力实现代码和自定义用户界面 (UI)。  
@@ -63,15 +63,15 @@ ms.locfileid: "49833054"
 |[Office 项目中的辅助功能](../vsto/accessibility-in-office-projects.md)|描述 Office 解决方案中可用的辅助功能。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 创建和修改自定义文档属性](../vsto/how-to-create-and-modify-custom-document-properties.md)   
- [如何： 读取和写入文档属性](../vsto/how-to-read-from-and-write-to-document-properties.md)   
- [如何： 面向 Office 多语言用户界面](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
- [演练： 创建第一个 VSTO 外接程序 Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)   
- [演练： 创建你的 Excel 的第一个文档级自定义](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
- [演练： 创建在第一个 VSTO 外接程序的 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)   
- [演练： 为 PowerPoint 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
- [演练： 创建在第一个 VSTO 外接程序项目](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
- [演练： 为 Word 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)   
- [演练： 创建 word 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
+ [如何：创建和修改自定义文档属性](../vsto/how-to-create-and-modify-custom-document-properties.md)   
+ [如何：读取和写入到文档属性](../vsto/how-to-read-from-and-write-to-document-properties.md)   
+ [如何：面向 Office 多语言用户界面](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [演练：为 Excel 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)   
+ [演练：创建 excel 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
+ [演练：在第一个 VSTO 外接程序为 Outlook 创建](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)   
+ [演练：为 PowerPoint 中创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
+ [演练：创建在第一个 VSTO 外接程序项目](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
+ [演练：为 Word 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)   
+ [演练：创建 word 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
   
   

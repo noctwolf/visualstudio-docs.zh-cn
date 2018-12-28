@@ -1,5 +1,5 @@
 ---
-title: 如何： 在受密码保护的文档中缓存数据
+title: 如何：在受密码保护的文档中缓存数据
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], protected documents
 - datasets [Office development in Visual Studio], caching
 - data [Office development in Visual Studio], caching
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c15d3fee1728118df2701cc940dc288ae500942d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 21e2b0501b96a1c04cee72487678b3e909440fb4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255338"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647286"
 ---
-# <a name="how-to-cache-data-in-a-password-protected-document"></a>如何： 在受密码保护的文档中缓存数据
+# <a name="how-to-cache-data-in-a-password-protected-document"></a>如何：在受密码保护的文档中缓存数据
   如果将数据添加到文档或使用密码保护的工作簿中的数据缓存，不会自动保存对缓存数据的更改。 通过重写在项目中的两种方法，可以将更改保存到缓存的数据。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -78,7 +78,7 @@ ms.locfileid: "35255338"
   
 ## <a name="see-also"></a>请参阅  
  [缓存数据](../vsto/caching-data.md)   
- [如何： 脱机状态或服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [如何： 以编程方式缓存中的 Office 文档的数据源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
+ [如何：脱机时或者在服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [如何：以编程方式缓存中的 Office 文档的数据源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)  
   
   

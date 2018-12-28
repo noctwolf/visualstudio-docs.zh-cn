@@ -1,6 +1,7 @@
 ---
 title: '&lt;自定义项&gt;元素 （Visual Studio 中的 Office 开发）'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - <customizations> element
 - customizations element
 - application manifests [Office development in Visual Studio], <customizations> element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ac1a78f0d35b2fac751e87874bbfe169798712a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f324b65e6a008aa25df03ef5870617b9a8427e7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670296"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646662"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;自定义项&gt;元素 （Visual Studio 中的 Office 开发）
   `customizations` 命名空间的 `vstov4` 元素包括有关安装和加载各个 Office 解决方案的所有信息。  
@@ -65,7 +66,7 @@ ms.locfileid: "35670296"
  `customizations` 元素具有以下子元素。  
   
 ### <a name="customization"></a>自定义  
- 必须的。 `customization`中的元素`vstov4`中定义命名空间[&#60;自定义&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/customization-element-office-development-in-visual-studio.md)。  
+ 必需。 `customization`中的元素`vstov4`中定义命名空间[&#60;自定义&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/customization-element-office-development-in-visual-studio.md)。  
   
 ## <a name="example-of-a-document-level-customization"></a>文档级自定义的示例  
   

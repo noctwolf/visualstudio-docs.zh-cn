@@ -2,9 +2,8 @@
 title: ProjectCollection 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectCollection
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c91c470a9478c7015972be66afe5f41174073047
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 9397fb9a6ab1cb4c117df111a10ab7613c500b84
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636995"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562082"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection 元素 （Visual Studio 模板）
 指定多项目模板的组织和内容。  
@@ -59,7 +58,7 @@ ms.locfileid: "39636995"
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定模板的内容。|  
   
 ## <a name="remarks"></a>备注  
- 多项目模板用作两个或多个项目的容器。 `ProjectCollection`元素用于指定要包含在模板中的项目。 多项目模板的详细信息，请参阅[如何： 创建多项目模板](../ide/how-to-create-multi-project-templates.md)。  
+ 多项目模板用作两个或多个项目的容器。 `ProjectCollection`元素用于指定要包含在模板中的项目。 多项目模板的详细信息，请参阅[如何：创建多项目模板](../ide/how-to-create-multi-project-templates.md)。  
   
 ## <a name="example"></a>示例  
  此示例显示了简单的多项目根 *.vstemplate*文件。 在此示例中，模板包含两个项目：`My Windows Application` 和 `My Class Library`。 `ProjectName` 元素的 `ProjectTemplateLink` 特性可为 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 设置要分配给此项目的名称。 如果`ProjectName`属性不存在，名称 *.vstemplate*文件用作项目名称。  
@@ -89,4 +88,4 @@ ms.locfileid: "39636995"
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [如何： 创建多项目模板](../ide/how-to-create-multi-project-templates.md)
+ [如何：创建多项目模板](../ide/how-to-create-multi-project-templates.md)

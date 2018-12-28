@@ -1,10 +1,8 @@
 ---
-title: NumberOfParentCategoriesToRollUp （Visual Studio 模板） |Microsoft Docs
-ms.custom: ''
+title: NumberOfParentCategoriesToRollUp 元素 （Visual Studio 模板）
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#NumberOfParentCategoriesToRollUp
 helpviewer_keywords:
@@ -16,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c3eae15aaa4aa7b81148915fc2c59fee723230
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 36c3f8ef1e8016fd1ab46cb61f5e076afdd4190a
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639508"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562277"
 ---
-# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp （Visual Studio 模板）
+# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp 元素 （Visual Studio 模板）
 指定将显示在此模板的父类别数**新的项目**对话框。  
   
  \<VSTemplate >  
@@ -32,11 +30,11 @@ ms.locfileid: "39639508"
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml
 <NumberOfParentCategoriesToRollUp>  
-    1  
+1  
 </NumberOfParentCategoriesToRollUp>  
-```  
+```
   
 ## <a name="attributes-and-elements"></a>特性和元素  
  下列各节描述了特性、子元素和父元素。  
@@ -62,9 +60,9 @@ ms.locfileid: "39639508"
  `NumberOfParentCategoriesToRollUp` 是可选元素。  
   
 ## <a name="example"></a>示例  
- 此示例中演示的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 应用程序。 如果与此元数据模板位于两个文件夹级别下的顶级[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]节点，该模板将显示在顶级节点**新建项目**对话框。 如果`NumberOfParentCategoriesToRollUp`未设置，该模板仅的节点中显示它是物理位置。  
+ 此示例中演示的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 应用程序。 如果与此元数据模板位于两个文件夹级别下的顶级[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]节点，该模板将显示在顶级节点**新建项目**对话框。 如果`NumberOfParentCategoriesToRollUp`未设置，该模板仅的节点中显示它是物理位置。
   
-```  
+```xml
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  

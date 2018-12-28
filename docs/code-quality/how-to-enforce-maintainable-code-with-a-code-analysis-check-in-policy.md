@@ -1,5 +1,5 @@
 ---
-title: 如何：使用代码分析签入策略强制实现代码的可维护性
+title: 如何：强制执行可维护的代码使用代码分析签入策略
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 060ca6482249e9b1e538b25977a1bdf5dfb97276
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892085"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739370"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何： 强制实现代码使用代码分析签入策略
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：强制执行可维护的代码使用代码分析签入策略
 
 开发人员可以使用代码度量值工具来衡量的复杂性和可维护性的其代码，但你不能作为签入策略的一部分调用代码度量值。 但是，可以启用代码分析规则，验证你的代码符合代码度量标准，并强制实施通过签入策略的规则。 代码度量值的详细信息，请参阅[代码的指标值](../code-quality/code-metrics-values.md)。
 
@@ -47,13 +47,13 @@ Team foundation 版本控制的管理员可以将代码分析可维护性规则�
 
 2. 选择以下规则对应的复选框：
 
-   - 继承深度： **CA1501 AvoidExcessiveInheritance** -阈值： 警告在 5 个以上级别的深度
+   - 继承深度：**CA1501 AvoidExcessiveInheritance** -阈值：在 5 个以上级别深度警告
 
-   - 复杂性： **CA1502 AvoidExcessiveComplexity** -阈值： 在超过 25 种的警告
+   - 复杂性：**CA1502 AvoidExcessiveComplexity** -阈值：在超过 25 种的警告
 
-   - 可维护性索引： **CA1505 AvoidUnmaintainableCode** -阈值： 少于 20 发出警告
+   - 可维护性索引：**CA1505 AvoidUnmaintainableCode** -阈值：少于 20 发出警告
 
-   - 类耦合度： **CA1506 AvoidExcessiveClassCoupling** -阈值： 多个方法，为 30 个禬筁 80 类发出警告
+   - 类耦合度：**CA1506 AvoidExcessiveClassCoupling** -阈值：在多个类的 80 和多个方法，为 30 的警告
 
      此外，如果你想违反规则时阻止成功生成，则选择**将警告视为错误**规则说明旁边的复选框。
 
@@ -62,4 +62,4 @@ Team foundation 版本控制的管理员可以将代码分析可维护性规则�
 ## <a name="see-also"></a>请参阅
 
 - [代码度量值](../code-quality/code-metrics-values.md)
-- [创建和使用代码分析签入策略](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [创建和使用代码分析签入策略](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

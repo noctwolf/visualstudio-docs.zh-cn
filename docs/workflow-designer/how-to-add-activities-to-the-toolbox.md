@@ -1,5 +1,5 @@
 ---
-title: 工作流设计器-如何： 向工具箱添加活动
+title: 工作流设计器-如何：向工具箱添加活动
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a009f36152163e3ac23b85deac4ea99f26092be9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1d542d55593ca492b624b1939c71bb389ac42ad3
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118208"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684556"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>如何：向工具箱添加活动
 
@@ -23,7 +23,7 @@ ms.locfileid: "37118208"
 
 ## <a name="to-add-an-activity-from-within-your-current-project"></a>从当前项目中添加活动
 
-1.  将新的自定义活动添加到当前工作流项目。 有关将新的自定义活动添加到你的项目的详细信息，请参阅[如何： 向工作流项目添加新项](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)。
+1.  将新的自定义活动添加到当前工作流项目。 有关将新的自定义活动添加到你的项目的详细信息，请参阅[如何：将新项添加到工作流项目](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)。
 
 2.  向活动添加自定义逻辑。
 
@@ -62,4 +62,4 @@ ms.locfileid: "37118208"
 
 ## <a name="see-also"></a>请参阅
 
-- [使用工作流设计器](../workflow-designer/using-the-workflow-designer.md)
+- [使用工作流设计器](developing-applications-with-the-workflow-designer.md)

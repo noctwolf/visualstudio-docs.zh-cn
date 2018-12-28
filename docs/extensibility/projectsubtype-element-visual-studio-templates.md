@@ -2,9 +2,8 @@
 title: ProjectSubType 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectSubType
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d1ca080ea61fbaaba7992fd8f4f1f4fbeac843d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 046893f3bb3fb6dc0b4461e2d9cadcb2a95ba7bc
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824320"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561702"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 元素 （Visual Studio 模板）
 将模板中指定的值的子类别归入`ProjectType`元素。  
@@ -61,15 +60,15 @@ ms.locfileid: "49824320"
   
  `ProjectSubType`元素提供了到子类别[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)元素。 此值可以包括：  
   
-- `SmartDevice-NETCFv1`： 指定此模板针对[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]1.0 版。  
+- `SmartDevice-NETCFv1`：指定模板面向[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]1.0 版。  
   
-- `SmartDevice-NETCFv2`： 指定此模板针对[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]2.0 版。  
+- `SmartDevice-NETCFv2`：指定模板面向[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]2.0 版。  
   
   如果模板包含`ProjectType`具有值的元素`Web`，则`ProjectSubType`元素指定模板的编程语言。 此元素可以具有以下值：  
   
-- `CSharp`： 指定此模板创建[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Web 项目或项。  
+- `CSharp`：指定此模板创建[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Web 项目或项。  
   
-- `VisualBasic`： 指定此模板创建[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Web 项目或项。  
+- `VisualBasic`：指定此模板创建[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Web 项目或项。  
   
 ## <a name="example"></a>示例  
  下面的示例演示用于的项目模板的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]设备应用程序的目标[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]2.0 版。  

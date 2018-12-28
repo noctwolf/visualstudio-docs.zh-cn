@@ -1,5 +1,5 @@
 ---
-title: 如何： 将内容添加到 Word 文档的控件
+title: 如何：添加内容控件添加到 Word 文档
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -24,19 +24,19 @@ helpviewer_keywords:
 - ComboBoxContentControl, adding to documents
 - DatePickerContentControl, adding to documents
 - Word [Office development in Visual Studio], restricted permissions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a7f99768236c8945fe82645c70c586361edcdde
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936961"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648041"
 ---
-# <a name="how-to-add-content-controls-to-word-documents"></a>如何： 将内容添加到 Word 文档的控件
+# <a name="how-to-add-content-controls-to-word-documents"></a>如何：添加内容控件添加到 Word 文档
   在文档级 Word 项目中，您可以添加内容控件到文档中你的项目在设计时或在运行时。 在 Word VSTO 外接程序项目中，可以向任何打开的文档在运行时添加内容控件。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -58,7 +58,7 @@ ms.locfileid: "49936961"
   
 - 用和在 Word 中添加本机内容控件相同的方式向文档添加内容控件。  
   
-- 从 **“数据源”** 窗口将内容控件拖动到你的文档中。 当你想要在创建控件后将控件绑定到数据时会非常有用。 有关详细信息，请参阅[如何： 用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)并[如何： 用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
+- 从 **“数据源”** 窗口将内容控件拖动到你的文档中。 当你想要在创建控件后将控件绑定到数据时会非常有用。 有关更多信息，请参见[如何：用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)和[如何：用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -93,7 +93,7 @@ ms.locfileid: "49936961"
 2.  在功能区上，单击 **“开发人员”** 选项卡。  
   
     > [!NOTE]  
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何： 在功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关更多信息，请参见[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 3.  在 **“控件”** 组中，单击你想要添加的内容控件的图标。  
   

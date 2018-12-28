@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82309d00d45ab6ac801297a55371cf9be5620440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8417600d379312304a05d0e4a1ddfc49637ae0e9
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829477"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684910"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>工具扩展的 SharePoint 的编程模型概述
   在 Visual Studio 中创建 SharePoint 工具扩展时，首先将实现由 SharePoint 工具公开的一个或多个扩展性接口。 在大多数情况下，你还将使用 SharePoint 工具提供的其他类型来实现扩展中的功能。 在某些方案中，你还可以使用 Visual Studio 和 SharePoint 提供的其他对象模型中的类型。 必须了解每个这些对象模型的用途，并知道如何使用它们彼此创建 SharePoint 工具扩展。  
@@ -34,14 +34,14 @@ ms.locfileid: "49829477"
 
 |接口|描述|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|实现此接口可定义新类型的 SharePoint 项目项。 有关示例，请参阅[如何： 定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|实现此接口可扩展已在 Visual Studio 中安装的 SharePoint 项目项类型。 有关示例，请参阅[如何： 创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>|实现此接口可扩展 SharePoint 项目。 有关示例，请参阅[如何： 创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>|实现此接口可定义一个可在部署或撤消 SharePoint 项目项时执行的新部署步骤。 有关示例，请参阅[演练： 创建 SharePoint 项目的自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|实现此接口可扩展下的现有节点**SharePoint 连接**中的节点**服务器资源管理器**窗口。 有关示例，请参阅[如何： 扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>|实现此接口可定义新类型的节点下**SharePoint 连接**中的节点**服务器资源管理器**窗口。 有关示例，请参阅[如何： 扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule>|实现此接口可定义自定义功能验证规则。 有关示例，请参阅[如何： 创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。|  
-|<xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule>|实现此接口可定义自定义包验证规则。 有关示例，请参阅[如何： 创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|实现此接口可定义新类型的 SharePoint 项目项。 有关示例，请参阅[如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|实现此接口可扩展已在 Visual Studio 中安装的 SharePoint 项目项类型。 有关示例，请参阅[如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>|实现此接口可扩展 SharePoint 项目。 有关示例，请参阅[如何：创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>|实现此接口可定义一个可在部署或撤消 SharePoint 项目项时执行的新部署步骤。 有关示例，请参阅[演练：创建 SharePoint 项目的自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>|实现此接口可扩展下的现有节点**SharePoint 连接**中的节点**服务器资源管理器**窗口。 有关示例，请参阅[如何：扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>|实现此接口可定义新类型的节点下**SharePoint 连接**中的节点**服务器资源管理器**窗口。 有关示例，请参阅[如何：扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule>|实现此接口可定义自定义功能验证规则。 有关示例，请参阅[如何：创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。|  
+|<xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule>|实现此接口可定义自定义包验证规则。 有关示例，请参阅[如何：创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。|  
 
  在实现 SharePoint 工具扩展后，必须在 Visual Studio 扩展 (VSIX) 包中部署扩展程序集，才能允许 Visual Studio 发现和加载该扩展。 有关详细信息，请参阅[部署的 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
 
@@ -69,7 +69,7 @@ ms.locfileid: "49829477"
 |<xref:Microsoft.VisualStudio.SharePoint.Explorer>|包含用于扩展下的子节点的类型**SharePoint 连接**中的节点**服务器资源管理器**窗口中，或定义新类型的节点。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。|  
 |<xref:Microsoft.VisualStudio.SharePoint.Features>|包含用于访问 SharePoint 项目中的功能定义的类型。|  
 |<xref:Microsoft.VisualStudio.SharePoint.Packages>|包含用于访问 SharePoint 解决方案中的包定义的类型。|  
-|<xref:Microsoft.VisualStudio.SharePoint.Validation>|包含用于为 SharePoint 项目自定义功能和包验证行为的类型。 有关详细信息，请参阅[如何： 创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。| 
+|<xref:Microsoft.VisualStudio.SharePoint.Validation>|包含用于为 SharePoint 项目自定义功能和包验证行为的类型。 有关更多信息，请参见[如何：创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。| 
 
 #### <a name="microsoftvisualstudiosharepointcommandsdll"></a>Microsoft.VisualStudio.SharePoint.Commands.dll
 
@@ -97,7 +97,7 @@ ms.locfileid: "49829477"
 
  Visual Studio SDK 附带的一组程序集中定义了此对象模型。 此对象模型中的主要程序集的一些*Microsoft.VisualStudio.Shell.11.0.dll*， *Microsoft.VisualStudio.Shell.Interop.dll*，和*Microsoft.VisualStudio.OLE.Interop.dll*。  
 
- 有关集成对象模型的详细信息，请参阅[自动化模型概述](/visualstudio/extensibility/internals/automation-model-overview)并[Visual Studio SDK 引用](/visualstudio/extensibility/visual-studio-sdk-reference)。  
+ 有关集成对象模型的详细信息，请参阅[自动化模型概述](../extensibility/internals/automation-model-overview.md)并[Visual Studio SDK 引用](../extensibility/visual-studio-sdk-reference.md)。  
 
 ### <a name="sharepoint-object-models"></a>SharePoint 对象模型
  SharePoint 工具扩展可以使用 SharePoint API 来修改 SharePoint 站点或从 SharePoint 站点检索数据。 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 提供了两个不同的对象模型：服务器对象模型和客户端对象模型。  
@@ -113,4 +113,3 @@ ms.locfileid: "49829477"
  [扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)  
-

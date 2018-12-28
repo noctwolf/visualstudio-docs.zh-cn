@@ -15,17 +15,17 @@ helpviewer_keywords:
 - debugging [Office development in Visual Studio], Outlook projects
 - Office projects [Office development in Visual Studio], debugging
 - Outlook [Office development in Visual Studio], projects
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cc1774e57fafadafc7087bb498e0b77a90e96d85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6c7320ae6cbd0a6d7baa94835177d2a3a6f222cf
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670446"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647895"
 ---
 # <a name="debug-office-projects"></a>调试 Office 项目
   可使用与用于其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 项目相同的 Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 工具来调试 Office 项目。 调试 Office 项目时也可使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 调试器的功能（如插入断点和查看 **“局部变量”** 窗口中的变量）。 有关详细信息[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试工具，请参阅[在 Visual Studio 中调试](/visualstudio/debugger/debugging-in-visual-studio)。  
@@ -79,7 +79,7 @@ ms.locfileid: "35670446"
  若要调试基于 Word 97-2003 文档的 Word 文档项目 (*/*.doc *) 格式，必须将项目文件夹添加到受信任的文件夹列表。 有关如何执行此操作的详细信息，请参阅[向文档授予信任](../vsto/granting-trust-to-documents.md)。  
   
 ## <a name="debug-disabled-add-ins"></a>禁用调试外接程序  
- Microsoft Office 应用程序可禁用行为异常的 VSTO 外接程序。 Microsoft Office 应用程序禁用 VSTO 外接程序以防止每次启动应用程序时加载有问题的代码。 但是，这也容易在典型的调试过程中导致意外行为。 有关如何重新启用 VSTO 外接程序的信息，请参阅[如何： 重新启用 VSTO 外接程序中已禁用的](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)。  
+ Microsoft Office 应用程序可禁用行为异常的 VSTO 外接程序。 Microsoft Office 应用程序禁用 VSTO 外接程序以防止每次启动应用程序时加载有问题的代码。 但是，这也容易在典型的调试过程中导致意外行为。 有关如何重新启用 VSTO 外接程序的信息，请参阅[如何：重新启用 VSTO 外接程序中已禁用的](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)。  
   
  以下是 Microsoft Office 应用程序使用的两种禁用 VSTO 外接程序的类型：硬禁用和软禁用。  
   
@@ -103,7 +103,7 @@ ms.locfileid: "35670446"
   
 ## <a name="see-also"></a>请参阅  
  [生成 Office 解决方案](../vsto/building-office-solutions.md)   
- [如何： 重新启用 VSTO 外接程序中已禁用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
+ [如何：重新启用 VSTO 外接程序中已禁用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)   
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)  
   
   

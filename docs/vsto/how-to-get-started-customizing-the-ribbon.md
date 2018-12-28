@@ -1,5 +1,5 @@
 ---
-title: 如何： 开始自定义功能区
+title: 如何：开始自定义功能区
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], adding
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, adding Ribbon to project
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7a4c7edbc78182908ea7bce9b91945bbbccdb54c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e52efc4cfd1252ff908785195df5c06b8bc90baa
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838332"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647144"
 ---
-# <a name="how-to-get-started-customizing-the-ribbon"></a>如何： 开始自定义功能区
+# <a name="how-to-get-started-customizing-the-ribbon"></a>如何：开始自定义功能区
   若要自定义 Microsoft Office 应用程序的功能区，请添加**功能区 （可视化设计器）** 或**功能区 (XML)** 到 Office 项目的项。  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -76,7 +76,7 @@ ms.locfileid: "49838332"
  [在运行时在功能区的访问](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能区设计器](../vsto/ribbon-designer.md)   
  [功能区 XML](../vsto/ribbon-xml.md)   
- [演练： 使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [演练： 使用功能区 XML 创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+ [演练：使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [演练：使用功能区 XML 创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

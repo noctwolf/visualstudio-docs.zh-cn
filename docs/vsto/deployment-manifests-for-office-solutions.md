@@ -1,5 +1,5 @@
 ---
-title: 部署 Office 解决方案的清单
+title: Office 解决方案的部署清单
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,28 +13,28 @@ helpviewer_keywords:
 - deployment manifests [Office development in Visual Studio]
 - manifests [Office development in Visual Studio], deployment
 - Office development in Visual Studio, deployment manifests
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41f0e6b484ae61d53913c51e3d51b123a5d054a2
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4404b9469aef465a2a105d037b3474855ed3bb68
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263485"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647160"
 ---
-# <a name="deployment-manifests-for-office-solutions"></a>部署 Office 解决方案的清单
-  部署清单是 XML 文件，用于描述 Office 解决方案的部署设置，并标识当前的应用程序版本。  
+# <a name="deployment-manifests-for-office-solutions"></a>Office 解决方案的部署清单
+  部署清单是 XML 文件，用于描述 Office 解决方案的部署设置，并标识当前应用程序版本。  
   
- Visual Studio 中的 Office 开发使用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署清单架构中定义[ClickOnce 部署清单](/visualstudio/deployment/clickonce-deployment-manifest)引用。  
+ 在 Visual Studio 中的 Office 开发使用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]中定义的部署清单架构[ClickOnce 部署清单](/visualstudio/deployment/clickonce-deployment-manifest)引用。  
   
 ## <a name="remarks"></a>备注  
- Office 解决方案的部署清单文件标识的当前版本和其他部署设置。 它引用应用程序清单中，并描述的解决方案和内解决方案中的所有文件的当前版本。  
+ Office 解决方案的部署清单文件标识的当前版本和其他部署设置。 它引用应用程序清单，并描述为解决方案中的解决方案中的所有文件的当前版本。  
   
 ## <a name="file-name-syntax"></a>文件名语法  
- 部署清单文件的名称必须以结尾 *.vsto*扩展。 尽管它是一种标准[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署清单扩展不同，若要启用 Visual Studio Tools for Office 运行时来处理该文件。  
+ 部署清单文件的名称必须以结尾 *.vsto*扩展。 尽管它是一种标准[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署清单，该扩展与不同，若要启用 Visual Studio Tools for Office 运行时来处理该文件。  
   
 ## <a name="example"></a>示例  
  下面的代码示例展示了 Visual Studio Tools for Office 解决方案部署清单。  

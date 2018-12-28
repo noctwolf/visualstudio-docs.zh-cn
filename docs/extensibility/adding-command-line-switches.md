@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f8349cc71bf0541d726a47bf5b875724c89bcc6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901042"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738584"
 ---
 # <a name="add-command-line-switches"></a>添加命令行开关
 可以添加适用于你的 VSPackage 的命令行开关时*devenv.exe*执行。 使用<xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>声明的开关和其属性的名称。 在此示例中，MySwitch 的交换机添加为子类名为 VSPackage **AddCommandSwitchPackage**不带任何参数且会自动加载 VSPackage。  
@@ -76,4 +76,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
  [Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)   
  [CreatePkgDef 实用工具](../extensibility/internals/createpkgdef-utility.md)   
- [.Pkgdef 文件](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [.Pkgdef 文件](/visualstudio/extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file)

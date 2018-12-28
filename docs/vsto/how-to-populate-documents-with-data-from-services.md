@@ -1,5 +1,5 @@
 ---
-title: 如何： 用服务中的数据填充文档
+title: 如何：用服务中的数据填充文档
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,27 +12,27 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - Web services [Office development in Visual Studio], populating documents
 - data [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ac901b524818086d6dbf23b7b55487054170b3e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: fe69a35fb7f11eb649a45cd2d2238d1fb8e17ad1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758537"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647031"
 ---
-# <a name="how-to-populate-documents-with-data-from-services"></a>如何： 用服务中的数据填充文档
+# <a name="how-to-populate-documents-with-data-from-services"></a>如何：用服务中的数据填充文档
 
 访问 Microsoft Office 文档级项目中的数据与访问 Windows 窗体项目中的数据的方式相同。 使用相同的工具和代码将数据引入解决方案，然后即可使用 Windows 窗体控件来显示该数据。 此外，可以利用称为“宿主控件”的控件，该控件是指 Microsoft Office Excel 和 Microsoft Office Word 中借助事件和数据绑定容量进行增强的本地对象。 有关详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。
 
 [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-下列示例演示了如何在设计时向文档中添加数据绑定控件。 有关如何在运行时在 VSTO 外接程序中添加数据绑定控件的示例，请参阅[演练： 将绑定到数据服务中的 VSTO 外接程序项目的](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md)。
+下列示例演示了如何在设计时向文档中添加数据绑定控件。 有关如何在运行时在 VSTO 外接程序中添加数据绑定控件的示例，请参阅[演练：将绑定到数据服务中的 VSTO 外接程序项目的](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md)。
 
-![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现： 交互与 web 服务从 Microsoft Excel？](http://go.microsoft.com/fwlink/?LinkID=130284)。
+![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：与 Microsoft Excel 中的 web 服务进行交互？](http://go.microsoft.com/fwlink/?LinkID=130284).
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>填充文档级项目中的 web 服务的数据
 
@@ -59,7 +59,7 @@ ms.locfileid: "36758537"
 - [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [添加新数据源](../data-tools/add-new-data-sources.md)
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [如何： 用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [如何： 用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [如何： 用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [如何： 使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [如何：用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [如何：用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [如何：用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [如何：使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

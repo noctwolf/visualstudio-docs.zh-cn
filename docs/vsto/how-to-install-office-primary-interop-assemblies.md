@@ -1,5 +1,5 @@
 ---
-title: 如何： 安装 Office 主互操作程序集
+title: 如何：安装 Office 主互操作程序集
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - primary interop assemblies [Office development in Visual Studio], installing
 - Office primary interop assemblies, installing
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd044c228e20bbdf169dda456cf24c3246b0ae34
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bca78cc9387756c1abd4e6c11d3a549777c3f452
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255663"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648582"
 ---
-# <a name="how-to-install-office-primary-interop-assemblies"></a>如何： 安装 Office 主互操作程序集
+# <a name="how-to-install-office-primary-interop-assemblies"></a>如何：安装 Office 主互操作程序集
   当你安装 Office 时，安装 Microsoft Office 主互操作程序集 (PIA)。  
   
 ## <a name="to-install-the-pias-when-you-install-office"></a>安装 Office 时安装 PIA  
@@ -37,9 +37,9 @@ ms.locfileid: "35255663"
   
 ## <a name="see-also"></a>请参阅  
  [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)   
- [如何： 通过主互操作程序集的目标 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
- [如何： 配置计算机以开发 Office 解决方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
- [如何： 安装 Visual Studio Tools for Office runtime 可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
+ [如何：通过主互操作程序集的目标 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+ [如何：配置计算机以开发 Office 解决方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
+ [如何：安装 Visual Studio Tools for Office runtime 可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
  [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
   

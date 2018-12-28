@@ -1,5 +1,5 @@
 ---
-title: 如何： 打开 Office 解决方案，而无需运行代码
+title: 如何：打开 Office 解决方案但不运行代码
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - assemblies [Office development in Visual Studio], bypassing
 - Office documents [Office development in Visual Studio, opening without running code
 - documents [Office development in Visual Studio], opening without running code
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f7ced7b38a4f32d96b397e7f9eebb1d40be03ae3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7684fd2d01d0151798c9e59c593e3e0c2acb95b1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254983"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646901"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>如何： 打开 Office 解决方案，而无需运行代码
+# <a name="how-to-open-office-solutions-without-running-code"></a>如何：打开 Office 解决方案但不运行代码
   创建具有托管的代码扩展的 Microsoft Office 解决方案运行，即使最终用户 Office 应用程序中的安全设置设为高。 这是因为.NET 程序集代码安全性由 Microsoft.NET Framework 中，不是由 Microsoft Office。  
   
  但是，有些的时候您可能想要打开的文档，而无需运行代码。 例如，当文档打开时运行的代码可能会更改此内容，但你想要更新文档之前，会查找代码更改它的方式。 或者你可能想要在其中的某些信息将文档发送到人，并不希望运行并可能更改此内容的代码。  

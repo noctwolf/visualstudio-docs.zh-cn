@@ -1,6 +1,7 @@
 ---
-title: '&lt;f i e d&gt;元素 （Visual Studio 中的 Office 开发）'
-ms.custom: ''
+title: '&lt;p o i&gt;元素 （Visual Studio 中的 Office 开发）'
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,19 +13,19 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customHostSpecified> element
 - <customHostSpecified> element
 - customHostSpecified element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4eaf874a259251c35a6b01c08f544993092ff4d
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: f59433c2c7dfcdcea4ab6f5d7fd620542ea20dc1
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264030"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648789"
 ---
-# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;f i e d&gt;元素 （Visual Studio 中的 Office 开发）
+# <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;p o i&gt;元素 （Visual Studio 中的 Office 开发）
   `customHostSpecified`元素指示此解决方案不是独立的应用程序。 Office 解决方案包含承载于 Microsoft Office 应用程序内的组件。  
   
 ## <a name="syntax"></a>语法  
@@ -34,14 +35,14 @@ ms.locfileid: "34264030"
 ```  
   
 ## <a name="elements-and-attributes"></a>元素和属性  
- `customHostSpecified`元素是必需的 Office 解决方案。 此元素处于`co.v1`命名空间和指定此部署包含将在自定义主机，内部部署的组件，并且不是独立的应用程序。  
+ `customHostSpecified`元素是必需的 Office 解决方案。 此元素处于`co.v1`命名空间和指定此部署包含一个组件，将在自定义主机内部署并不是独立的应用程序。  
   
- 此元素是第一个子`<entrypoint>`应用程序清单中的元素。 可以有中，没有其他子元素`<entrypoint>`元素或[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]将在安装过程中引发验证错误。  
+ 此元素是子元素的第一个`<entrypoint>`应用程序清单中的元素。 可以有其他子元素中的`<entrypoint>`元素或[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]在安装过程中，将引发验证错误。  
   
- 此元素具有任何属性，也没有子元素。  
+ 此元素不具有属性和任何子元素。  
   
 ## <a name="example"></a>示例  
- 下面的代码示例阐释了`customHostSpecified`Office 解决方案的应用程序清单中的元素。 此代码示例摘自[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  
+ 下面的代码示例说明了`customHostSpecified`Office 解决方案的应用程序清单中的元素。 此代码示例摘自[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  
   
 ```xml
 <entryPoint>  
@@ -51,7 +52,7 @@ ms.locfileid: "34264030"
   
 ## <a name="see-also"></a>请参阅  
  [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)   
- [部署 Office 解决方案的清单](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  
   
   

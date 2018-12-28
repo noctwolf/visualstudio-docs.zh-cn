@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio]
 - Office applications [Office development in Visual Studio], data
 - datasets [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87aca3cea98f97ff2a27efb41f912f1295939718
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 92a2b7caad4ec4fe12879da683560da59b7f2d6a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263449"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646820"
 ---
 # <a name="data-in-office-solutions"></a>Office 解决方案中的数据
   多种 Office 解决方案使用户能够检索或修改数据。 当通过使用 Visual Studio 创建 Office 解决方案时，可通过多种不同方法使用数据。  
@@ -34,17 +34,17 @@ ms.locfileid: "34263449"
  [自定义 XML 部件概述](../vsto/custom-xml-parts-overview.md)  
  描述如何使用自定义 XML 部件以使用 Office 解决方案中的数据。  
   
- [文档级自定义项中缓存的数据](../vsto/cached-data-in-document-level-customizations.md)  
+ [文档级自定义项中的缓存的数据](../vsto/cached-data-in-document-level-customizations.md)  
  描述如何将数据存储在无需启动 Office 应用程序即可访问的嵌入式数据岛中。  
   
  [XML 架构和文档级自定义项中的数据](../vsto/xml-schemas-and-data-in-document-level-customizations.md)  
  描述如何在文档级自定义项中使用 XML 架构来创建绑定到 XML 数据的控件。  
   
- [使用 Office 解决方案概述中的本地数据库文件](../vsto/using-local-database-files-in-office-solutions-overview.md)  
+ [使用本地数据库文件在 Office 解决方案概述](../vsto/using-local-database-files-in-office-solutions-overview.md)  
  描述如何将数据库文件导入到项目，以及何时可缓存数据以供脱机使用。  
   
 ## <a name="related-sections"></a>相关章节  
- [访问 Visual Studio 中的数据](/visualstudio/data-tools/accessing-data-in-visual-studio)  
+ [在 Visual Studio 中访问数据](/visualstudio/data-tools/accessing-data-in-visual-studio)  
  列出说明如何使用 Visual Studio 中的数据的主题。  
   
  [保存数据](/visualstudio/data-tools/saving-data)  

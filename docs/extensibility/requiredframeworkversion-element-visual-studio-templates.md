@@ -2,9 +2,8 @@
 title: RequiredFrameworkVersion 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23538e8e00553322f4f04e50414a8b3ddbd73b91
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 4c219d2f929122163b49d51d5280c25490aaccb1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635909"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739781"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 元素 （Visual Studio 模板）
 
@@ -88,4 +87,4 @@ ms.locfileid: "39635909"
 
 - [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
 - [创建项目和项模板](../ide/creating-project-and-item-templates.md)
-- [面向特定.NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [面向特定.NET Framework 版本](../ide/visual-studio-multi-targeting-overview.md)

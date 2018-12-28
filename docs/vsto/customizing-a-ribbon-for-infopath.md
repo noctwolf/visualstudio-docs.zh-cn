@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - InfoPath [Office development in Visual Studio], Ribbon
 - Ribbon [Office development in Visual Studio], InfoPath
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0a6a50ca1e84d9b1f5508cccbad24607f36b3f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e6bdffe8de45db600d6fc456dbc75b8369bd2d7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942057"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648734"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>自定义 InfoPath 功能区
   在 Microsoft Office InfoPath 中自定义功能区时，必须考虑自定义功能区在应用程序中出现的位置。 [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 可以在以下三种类型的 InfoPath 应用程序窗口中显示功能区：  
@@ -32,7 +32,7 @@ ms.locfileid: "49942057"
   
 - “打印预览”窗口。  
   
-  **适用于：** 本主题中的信息适用于 InfoPath 2010 的 VSTO 外接程序项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+  **适用于：** 本主题中的信息适用于 InfoPath 2010 VSTO 外接程序项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
   用户和设计人员在设计模式下打开一个窗体模板，以修改该模板的外观和布局。 用户打开基于窗体模板的窗体，以添加内容。  
   

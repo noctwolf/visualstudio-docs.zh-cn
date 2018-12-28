@@ -30,17 +30,17 @@ helpviewer_keywords:
 - Sheet1_Shutdown
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85cbee61cde596831d06aa83af326cc0a0534f0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ed18bdcf0f4a7ef6dbb8a358cbf11fd7b49e628
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949677"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647643"
 ---
 # <a name="events-in-office-projects"></a>Office 项目中的事件
   每个 Office 项目模板都会自动生成若干事件处理程序。 文档级自定义项的事件处理程序与 VSTO 外接程序的事件处理程序略有不同。  
@@ -48,7 +48,7 @@ ms.locfileid: "49949677"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="document-level-projects"></a>文档级项目  
- Visual Studio 在文档级自定义项中新的或现有的文档或工作表之后提供生成的代码。 此代码引发两个不同的事件： **Startup** 和 **Shutdown**。  
+ Visual Studio 在文档级自定义项中新的或现有的文档或工作表之后提供生成的代码。 此代码引发两个不同的事件：**启动**并**关闭**。  
   
 ### <a name="startup-event"></a>Startup 事件  
  在文档正在运行和程序集中的所有初始化代码均已运行之后，将为每个主机项（文档、工作簿或工作表）引发 **Startup** 事件。 它是要在你的代码在其中运行的类的构造函数中运行的最后一步。 有关主机项的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
@@ -157,7 +157,7 @@ ms.locfileid: "49949677"
   
 ## <a name="see-also"></a>请参阅  
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
- [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)   
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   
  [Office 项目模板概述](../vsto/office-project-templates-overview.md)  

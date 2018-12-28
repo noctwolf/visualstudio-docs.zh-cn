@@ -1,5 +1,5 @@
 ---
-title: 如何： 对数据的映射 ListObject 列
+title: 如何：将 ListObject 列映射到数据
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,24 +11,24 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], mapping to ListObject column
 - ListObject control, mapping data
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77d33b8d30ed7f581e27e1cbe07d0c90715ff04
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 64c098fe1c1d4695feb9addd8e5161175dc09dc9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670700"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646833"
 ---
-# <a name="how-to-map-listobject-columns-to-data"></a>如何： 对数据的映射 ListObject 列
+# <a name="how-to-map-listobject-columns-to-data"></a>如何：将 ListObject 列映射到数据
   将 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件绑定到 <xref:System.Data.DataTable>时，可能不希望显示列表中的所有列，或可能具有未绑定到数据的特定列。 调用 <xref:Microsoft.Office.Tools.Excel.ListObject> 方法时，可以映射希望出现在 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 中的列。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现： 创建 Excel 连接到 SharePoint 列表中的列表？](http://go.microsoft.com/fwlink/?LinkID=130263)。  
+ ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：在连接到 SharePoint 列表的 Excel 中创建列表？](http://go.microsoft.com/fwlink/?LinkID=130263).  
   
 ## <a name="map-columns"></a>将列映射  
   
@@ -66,7 +66,7 @@ ms.locfileid: "35670700"
  [扩展 Word 文档和 Excel 工作簿在 VSTO 外接在运行时](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [如何： 使用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [如何：用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject 控件](../vsto/listobject-control.md)  
   
