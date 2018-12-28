@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式添加和删除工作表注释
+title: 如何：以编程方式添加和删除工作表注释
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -12,19 +12,19 @@ helpviewer_keywords:
 - ranges, comments
 - worksheets, comments
 - comments, worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe41fe7f6370697335fa76b468e79e61d6e1269a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 06097d72693e0b7a00c7af48609523d5e7dfc5a0
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670278"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804190"
 ---
-# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>如何： 以编程方式添加和删除工作表注释
+# <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>如何：以编程方式添加和删除工作表注释
   可以以编程方式在 Microsoft Office Excel 工作表中添加和删除注释。 可以仅向单个单元格而非多单元格区域添加注释。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -65,7 +65,7 @@ ms.locfileid: "35670278"
   
 ## <a name="see-also"></a>请参阅  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以编程方式显示工作表注释](../vsto/how-to-programmatically-display-worksheet-comments.md)   
+ [如何：以编程方式显示工作表注释](../vsto/how-to-programmatically-display-worksheet-comments.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)  
   
   

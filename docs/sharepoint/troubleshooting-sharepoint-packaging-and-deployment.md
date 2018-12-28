@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 46cd388079db9d7869bcae733c6baef33c07a212
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898052"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805128"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>SharePoint 打包和部署进行故障排除
   本主题论述了您在打包和部署 SharePoint 解决方案时可能遇到的各种问题。
@@ -40,17 +40,17 @@ ms.locfileid: "49898052"
  若要在 Visual Studio、SharePoint 和其他层之间进行诊断，您可以使用 EnableDiagnostics 注册表项来查看堆栈跟踪。 有关详细信息，请参阅[调试 SharePoint 解决方案](../sharepoint/debugging-sharepoint-solutions.md)。
 
 ## <a name="add-project-output-to-the-solution-package"></a>将项目输出添加到解决方案包
- 可以通过包设计器向包中添加项目输出。 但是，在添加项目输出时，请确保项目的平台与 SharePoint 解决方案的平台匹配。 我们建议你使用**任何 CPU**你想要将部署到 SharePoint 服务器的程序集的目标平台。 有关详细信息，请参阅[编译页，项目设计器&#40;Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)并[高级编译器设置对话框&#40;Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic)。
+ 可以通过包设计器向包中添加项目输出。 但是，在添加项目输出时，请确保项目的平台与 SharePoint 解决方案的平台匹配。 我们建议你使用**任何 CPU**你想要将部署到 SharePoint 服务器的程序集的目标平台。 有关详细信息，请参阅[编译页，项目设计器&#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md)并[高级编译器设置对话框&#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)。
 
 ## <a name="validation-warnings-and-errors"></a>验证警告和错误
- Visual Studio 中的 SharePoint 开发工具将执行验证步骤来验证解决方案包的格式是否正确。 也可以为功能和包创建自定义验证步骤。 有关详细信息，请参阅[如何： 创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。
+ Visual Studio 中的 SharePoint 开发工具将执行验证步骤来验证解决方案包的格式是否正确。 也可以为功能和包创建自定义验证步骤。 有关更多信息，请参见[如何：创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。
 
 ## <a name="deployment-conflict-resolution"></a>部署冲突解决方法
  在部署 SharePoint 解决方案时，当服务器上的项与解决方案包中的项具有相同的名称、URL 或 ID 时，您可能会发现冲突。 您可以更改**部署冲突解决方法**属性来解决、 报告或忽略模块、 Web 部件、 列表实例和内容类型的冲突。
 
  下表演示了用于设置**部署冲突解决方法**属性。
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |自动|自动检测冲突和解决冲突。|
 |提示|检测冲突并在解决冲突之前向开发人员报告冲突。|
@@ -65,7 +65,7 @@ ms.locfileid: "49898052"
 
 3. 根据包设计器中的层次结构设置功能激活顺序。
 
-   可以将自定义部署步骤添加到进一步更改**F5**行为。 有关详细信息，请参阅[演练： 创建 SharePoint 项目的自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。
+   可以将自定义部署步骤添加到进一步更改**F5**行为。 有关详细信息，请参见[演练：创建 SharePoint 项目的自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>延迟显示 SharePoint 页时部署可视 web 部件
  在 [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)]、[!INCLUDE[win7](../sharepoint/includes/win7-md.md)] 或 [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] 上将可视 Web 部件部署到 Bin 文件夹时，SharePoint 页需要很长时间才会显示。 如果更改顶级 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 目录（例如 Bin 目录）中的任何文件，则整个 Web 应用程序将重新编译。 这可能会导致 SharePoint 页延迟长达 25 秒才会呈现。
@@ -76,7 +76,7 @@ ms.locfileid: "49898052"
 ### <a name="resolution"></a>解决方法
  若要解决此问题，请执行以下步骤：
 
-1.  Microsoft 支持文章中所述安装更新 KB967535[修复： 修补程序是可用于两个问题 ASP.NET IIS 7.0 上修复适用于 Windows Vista 和 Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055)。
+1.  Microsoft 支持文章中所述安装更新 KB967535[修复：修补程序是可用于两个问题 ASP.NET IIS 7.0 上修复适用于 Windows Vista 和 Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055)。
 
 2.  将以下行添加到 Web.config 文件中：
 
@@ -88,7 +88,7 @@ ms.locfileid: "49898052"
  如果任何 SharePoint 项目项的名称包含括号，则该项目项的解决方案将无法部署，并返回一个错误。
 
 ### <a name="error-message"></a>错误消息
- 在‘添加解决方案’这一部署步骤中发生错误：“未能提取解决方案中的 cab 文件”。
+ 部署步骤 '添加解决方案' 中出现错误：未能提取解决方案中的 cab 文件。
 
 ### <a name="resolution"></a>解决方法
  若要解决此问题，请移除 SharePoint 项目项名称中的任何括号。
@@ -97,7 +97,7 @@ ms.locfileid: "49898052"
  首次将可视 Web 部件部署到 Web 应用程序上当前已部署该部件的网站之外的另一个网站时（通过更改可视 Web 部件的 SiteUrl 属性），会收到错误。
 
 ### <a name="error-message"></a>错误消息
- 在‘添加解决方案’这一部署步骤中发生错误：“已在该场中安装 ID 为 [#] 的功能”。 使用强制特性显式重新安装此功能。
+ 部署步骤 '添加解决方案' 中出现错误：已在该场中安装 ID 为 [#] 的功能。 使用强制特性显式重新安装此功能。
 
 ### <a name="resolution"></a>解决方法
  此错误因 SharePoint 中收回可视 Web 部件功能的方式导致发生。 若要成功部署可视 Web 部件，再次部署该解决方案通过选择**F5**密钥。
@@ -114,5 +114,5 @@ ms.locfileid: "49898052"
  若要删除此警告，请生成项目，然后关闭设计器并重新打开设计器，或者禁用项目的自动收回选项。 若要执行此操作，请清除**调试后自动收回**上的复选框**SharePoint**项目属性对话框中的选项卡。
 
 ## <a name="see-also"></a>请参阅
- [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 
+- [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: 预期&#39;-&#39; |Microsoft Docs
+title: 预期 '-' |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 141d7239ebbd32ceff9be45a8b4be97afd8887b0
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d1c0891065569a1f43777f87692568af26323924
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283270"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804755"
 ---
-# <a name="expected-39-39"></a>预期&#39;-&#39;
+# <a name="expected--"></a>预期-
 尝试创建正则表达式文本，但不是包含斜杠 （/） 之一。 就像为一对引号引起来的字符写入字符串文本，正则表达式文本表示为一对大斜杠 （/） 字符的字符。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  

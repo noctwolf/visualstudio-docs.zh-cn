@@ -1,5 +1,5 @@
 ---
-title: '&#39; &#39;在 ECMA 327 Compact Profile 中不可用 |Microsoft 文档'
+title: with 在 ECMA 327 Compact Profile 中不可用 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,16 +20,16 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68e9a9acebd0225c5bcb86573698dbd7d116e0d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 61546ac1dbc03184691e4e178070ecbd7c86cf75
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633287"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801991"
 ---
-# <a name="39with39-not-available-in-the-ecma-327-compact-profile"></a>&#39; &#39;在 ECMA 327 Compact Profile 中不可用
+# <a name="with-not-available-in-the-ecma-327-compact-profile"></a>“with”在 ECMA 327 Compact Profile 中不可用
 with 在 ECMA 327 Compact Profile (ErrWithNotInCP 中不可用  
   
- 不允许你使用与 Compact 的配置文件中的关键字。  
+ 不允许使用具有精简配置文件中的关键字。  
   
- 有关详细信息使用关键字，请参阅[with 语句](../../javascript/reference/with-statement-javascript.md)。
+ 有关详细信息与关键字，请参阅[与语句](../../javascript/reference/with-statement-javascript.md)。

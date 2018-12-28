@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式将新工作表添加到工作簿
+title: 如何：以编程方式将新工作表添加到工作簿
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,26 +13,26 @@ helpviewer_keywords:
 - workbooks, creating worksheets
 - worksheets, creating
 - worksheets, adding to workbooks
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80e3ddaa3edd4520e16c8733d3310497ab4ea5af
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7d5750bebc4b58305133ae762bb6cb52e0d37e62
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255006"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805021"
 ---
-# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>如何： 以编程方式将新工作表添加到工作簿
+# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>如何：以编程方式将新工作表添加到工作簿
   可以通过编程方式创建一个工作表，然后将它添加到工作簿中工作表的集合。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="to-add-a-new-worksheet-to-a-workbook-in-a-document-level-customization"></a>将新工作表添加到文档级自定义项中的工作簿  
   
-1.  使用 <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> 集合的 <xref:Microsoft.Office.Interop.Excel.Sheets> 方法。  
+1.  使用 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合的 <xref:Microsoft.Office.Interop.Excel.Worksheets.Add%2A> 方法。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#15](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#15)]
      [!code-vb[Trin_VstcoreExcelAutomation#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#15)]  
@@ -51,8 +51,8 @@ ms.locfileid: "35255006"
 ## <a name="see-also"></a>请参阅  
  [使用工作表](../vsto/working-with-worksheets.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   
- [如何： 以编程方式从工作簿中删除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [如何： 以编程方式选择工作表](../vsto/how-to-programmatically-select-worksheets.md)   
+ [如何：以编程方式从工作簿中删除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [如何：以编程方式选择工作表](../vsto/how-to-programmatically-select-worksheets.md)   
  [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [对 Office 项目中的对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  

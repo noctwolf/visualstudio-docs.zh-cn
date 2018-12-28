@@ -1,5 +1,5 @@
 ---
-title: 预期&#39;)&#39;在正则表达式 (JavaScript) |Microsoft Docs
+title: 预期) 中的正则表达式 (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5d1075a41d2b97d10166b1372e8df3a93dd9d8e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279123"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802337"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>预期&#39;)&#39;在正则表达式 (JavaScript)
+# <a name="expected--in-regular-expression-javascript"></a>正则表达式中应有“)”(JavaScript)
 试图创建正则表达式捕获、 断言或组，但不是包括右括号。 括号的正则表达式中具有多个用途。 首先，它们用来捕获子表达式，若要指定断言，或将模式组合在一起，以便可以将项视为单个单元通过 *，+、？、，等等。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
