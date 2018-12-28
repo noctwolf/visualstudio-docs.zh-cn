@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e4d938bbfbe1c65882e73630689edff208670e9
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b2a8e95d8ea8e169eb75a3ecba886a96808b87a1
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739820"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802730"
 ---
 # <a name="create-custom-project-and-item-templates"></a>创建自定义项目和项模板
 
@@ -29,7 +29,7 @@ Visual Studio SDK 的项目模板可创建自定义项目模板和自定义项�
 对于基本模板创建方案，应使用**导出模板**向导，将输出到压缩的文件。 有关创建基本模板的详细信息，请参阅[创建项目和项模板](../ide/creating-project-and-item-templates.md)。
 
 > [!NOTE]
-> 从 Visual Studio 2017 中，扫描自定义项目和项模板将无法再执行。 相反，该扩展插件必须提供模板清单文件描述这些模板的安装位置。 Visual Studio 2017 可用于更新您的 VSIX 扩展。 如果部署使用 MSI 扩展，则必须手动生成模板清单文件。 有关详细信息，请参阅[Visual Studio 2017 升级自定义项目和项模板](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)。 模板清单架构记录在[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
+> 从 Visual Studio 2017 中，扫描自定义项目和项模板将无法再执行。 相反，该扩展插件必须提供模板清单文件描述这些模板的安装位置。 Visual Studio 2017 可用于更新您的 VSIX 扩展。 如果部署使用 MSI 扩展，则必须手动生成模板清单文件。 有关详细信息，请参阅[升级 for Visual Studio 2017 的自定义项目和项模板](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)。 模板清单架构记录在[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
 
 ## <a name="create-a-project-template"></a>创建项目模板
 

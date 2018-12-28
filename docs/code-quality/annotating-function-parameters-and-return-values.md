@@ -127,12 +127,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4fcfa442f648126a93d1ec6a3b0d3c4fc7c981
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d60691836b38720cadeddfdf254d3646f9fa5479
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924819"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805102"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>对函数参数和返回值进行批注
 本指南介绍了简单的函数参数的批注的典型用途 — 标量和指向结构和类的指针，及大多数种类的缓冲区。  本文还介绍对批注的常见使用模式。 与函数相关的其他批注，请参阅[批注函数行为](../code-quality/annotating-function-behavior.md)
@@ -495,4 +495,12 @@ ms.locfileid: "49924819"
  [代码分析团队博客](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>请参阅
- [使用 SAL 注释减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)[了解 SAL](../code-quality/understanding-sal.md) [对函数行为进行批注](../code-quality/annotating-function-behavior.md)[批注结构和类](../code-quality/annotating-structs-and-classes.md) [对锁定行为进行批注](../code-quality/annotating-locking-behavior.md)[指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)[内部函数](../code-quality/intrinsic-functions.md)[最佳做法和示例](../code-quality/best-practices-and-examples-sal.md)
+
+- [使用 SAL 批注以减少 C/C++ 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [了解 SAL](../code-quality/understanding-sal.md)
+- [对函数行为进行批注](../code-quality/annotating-function-behavior.md)
+- [批注结构和类](../code-quality/annotating-structs-and-classes.md)
+- [对锁定行为进行批注](../code-quality/annotating-locking-behavior.md)
+- [指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [内部函数](../code-quality/intrinsic-functions.md)
+- [最佳做法和示例](../code-quality/best-practices-and-examples-sal.md)

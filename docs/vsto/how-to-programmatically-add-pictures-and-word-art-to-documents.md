@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式向文档添加图片和艺术字
+title: 如何：以编程方式向文档添加图片和艺术字
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - Word documents, adding Word Art
 - graphics, adding to Word documents
 - WordArt, adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 61399df32ef0f22d1d0aacf23dea45c1357c7579
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5be1a78cd5962e823f56f4eac3fca0c91cb81e1e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255101"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804833"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>如何： 以编程方式向文档添加图片和艺术字
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>如何：以编程方式向文档添加图片和艺术字
   可以在设计时或运行时向文档中添加图片和图形对象。 可使用“艺术字”向 Microsoft Office Word 文档添加装饰性文本。 这些特殊文本效果是一些图形对象，你可以自定义这些图形对象并插入到文档中。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -103,10 +103,10 @@ ms.locfileid: "35255101"
 -   名为图片*SamplePicture.jpg*必须位于驱动器 c。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式打开现有文档](../vsto/how-to-programmatically-open-existing-documents.md)   
- [如何： 以编程方式向 Word 文档中插入文本](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [如何： 以编程方式搜索后还原选定内容](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
- [如何： 以编程方式保存文档](../vsto/how-to-programmatically-save-documents.md)   
+ [如何：以编程方式打开现有文档](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [如何：以编程方式向 Word 文档中插入文本](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [如何：以编程方式搜索后还原选定内容](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [如何：以编程方式保存文档](../vsto/how-to-programmatically-save-documents.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
   
   

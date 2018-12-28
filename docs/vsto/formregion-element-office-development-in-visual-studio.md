@@ -16,64 +16,63 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7ce6d4d6bb5f74b4505603511752598d4a5180f7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: a5908ef088b1723b62fdf5122ec3bf78a166d254
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646953"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801909"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt;元素 （Visual Studio 中的 Office 开发）
-  `formRegion`元素的`vstov4`命名空间标识与 VSTO 外接程序相关联的 Microsoft Office Outlook 窗体区域。  
-  
-## <a name="syntax"></a>语法  
-  
-```xml  
-<formRegion  
-  name>  
-  <messageClass  
-    name/>  
-</formRegion>  
-```  
-  
-## <a name="elements-and-attributes"></a>元素和属性  
- `formRegion` 命名空间的 `vstov4` 元素标识与 Outlook VSTO 外接程序关联的窗体区域。 只有包括窗体区域的 Outlook VSTO 外接程序才需要该元素。  
-  
- 单个 VSTO 外接程序的一个 `formRegion` 元素中可以定义多个 `formRegions` 元素。  
-  
- `formRegion` 元素具有以下属性。  
-  
-|特性|描述|  
-|---------------|-----------------|  
-|`name`|必需。 标识窗体区域名称。|  
-  
- `formRegion` 元素具有以下子元素。  
-  
-### <a name="messageclass"></a>messageClass  
- `messageClass` 元素标识与窗体区域关联的 Outlook 窗体。  
-  
- `messageClass` 元素具有以下属性。  
-  
-|特性|描述|  
-|---------------|-----------------|  
-|`name`|必需。 标识与窗体区域关联的窗体。|  
-  
-## <a name="example"></a>示例  
- 下面的代码示例阐释 Outlook VSTO 外接程序的应用程序清单中的 `formRegion` 元素，该外接程序是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 其中有三个邮件类与这一个窗体区域关联。 此代码示例摘自[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  
-  
-```xml  
-<vstov4:formRegion  
-    name="OutlookAddIn1.FormRegion1">  
-  <vstov4:messageClass name="IPM.Note" />  
-  <vstov4:messageClass name="IPM.Contact" />  
-  <vstov4:messageClass name="IPM.Appointment" />  
-</vstov4:formRegion>  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)   
- [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)   
- [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  
-  
-  
+  `formRegion`元素的`vstov4`命名空间标识与 VSTO 外接程序相关联的 Microsoft Office Outlook 窗体区域。
+
+## <a name="syntax"></a>语法
+
+```xml
+<formRegion
+  name>
+  <messageClass
+    name/>
+</formRegion>
+```
+
+## <a name="elements-and-attributes"></a>元素和属性
+ `formRegion` 命名空间的 `vstov4` 元素标识与 Outlook VSTO 外接程序关联的窗体区域。 只有包括窗体区域的 Outlook VSTO 外接程序才需要该元素。
+
+ 单个 VSTO 外接程序的一个 `formRegion` 元素中可以定义多个 `formRegions` 元素。
+
+ `formRegion` 元素具有以下属性。
+
+|特性|描述|
+|---------------|-----------------|
+|`name`|必需。 标识窗体区域名称。|
+
+ `formRegion` 元素具有以下子元素。
+
+### <a name="messageclass"></a>messageClass
+ `messageClass` 元素标识与窗体区域关联的 Outlook 窗体。
+
+ `messageClass` 元素具有以下属性。
+
+|特性|描述|
+|---------------|-----------------|
+|`name`|必需。 标识与窗体区域关联的窗体。|
+
+## <a name="example"></a>示例
+ 下面的代码示例阐释 Outlook VSTO 外接程序的应用程序清单中的 `formRegion` 元素，该外接程序是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 其中有三个邮件类与这一个窗体区域关联。 此代码示例摘自[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。
+
+```xml
+<vstov4:formRegion
+    name="OutlookAddIn1.FormRegion1">
+  <vstov4:messageClass name="IPM.Note" />
+  <vstov4:messageClass name="IPM.Contact" />
+  <vstov4:messageClass name="IPM.Appointment" />
+</vstov4:formRegion>
+```
+
+## <a name="see-also"></a>请参阅
+
+- [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)
+- [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)
+- [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

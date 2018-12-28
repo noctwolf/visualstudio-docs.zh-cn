@@ -34,19 +34,19 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 21c67bb8b99c2772e107ded9063a99940a7fac74
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e8b7aaa9edfeaa2f1515f3fce890c0d7ba9383d2
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901523"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804872"
 ---
 # <a name="annotating-locking-behavior"></a>对锁定行为进行批注
 若要避免多线程程序中的并发 Bug，请遵循适当的锁定规则并使用 SAL 批注。
 
  并发 Bug 很难重现、诊断和调试，因为它们是非确定性的。 有关线程交错的推理是最困难的，如果设计包含多个线程的代码体，这会变得不切实际。 因此，最好在多线程程序中遵循锁定规则。 例如，在获取多个锁时遵守锁定顺序可以帮助避免死锁，在访问共享资源之前获取适当的保护锁有助于避免争用条件。
 
- 遗憾的是，看似简单的锁定规则在实践中会很难遵循。 当今编程语言和编译器存在一个基本限制是，它们不直接支持的规范和分析的并发要求。 程序员必须依赖于非正式的代码批注来表示他们对于使用锁定的意图。
+ 遗憾的是，看似简单的锁定规则在实践中会很难遵循。 今天的编程语言和编译器存在一个基本限制是，它们不直接支持的规范和并发需求的分析。 程序员必须依赖于非正式的代码批注来表示他们对于使用锁定的意图。
 
  并发 SAL 批注用于帮助您指定锁定的副作用、锁定责任、数据保护、锁的顺序层次结构，以及其他预期的锁定行为。 通过将隐式规则设置为显式，SAL 并发批注可提供一致方式，用于说明代码使用锁定规则的方式。 并发批注还可增强代码分析工具查找争用条件、死锁、不匹配的同步操作和其他细微并发错误的能力。
 
@@ -108,4 +108,13 @@ ms.locfileid: "31901523"
 |`_Write_guarded_by_(expr)`|批注变量并表明变量每次受到修改时，`expr` 命名的锁对象的锁计数至少为 1。|
 
 ## <a name="see-also"></a>请参阅
- [使用 SAL 批注以减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)[了解 SAL](../code-quality/understanding-sal.md) [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)[对函数行为进行批注](../code-quality/annotating-function-behavior.md)[批注结构和类](../code-quality/annotating-structs-and-classes.md)[指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)[内部函数](../code-quality/intrinsic-functions.md)[最佳实践和示例](../code-quality/best-practices-and-examples-sal.md)[代码分析团队博客](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+
+- [使用 SAL 批注以减少 C/C++ 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [了解 SAL](../code-quality/understanding-sal.md)
+- [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)
+- [对函数行为进行批注](../code-quality/annotating-function-behavior.md)
+- [批注结构和类](../code-quality/annotating-structs-and-classes.md)
+- [指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [内部函数](../code-quality/intrinsic-functions.md)
+- [最佳做法和示例](../code-quality/best-practices-and-examples-sal.md)
+- [代码分析团队博客](http://go.microsoft.com/fwlink/p/?LinkId=251197)

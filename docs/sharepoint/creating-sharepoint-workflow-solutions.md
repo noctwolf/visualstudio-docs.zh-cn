@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b60987b90440d6f72ede8cdc0f02023c8f4cc6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 0dd8a1339dddc52326bf7b0e42d52c1eaa53e6cf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739421"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802493"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>创建 SharePoint 工作流解决方案
 
@@ -127,7 +127,7 @@ ms.locfileid: "53739421"
 ## <a name="debug-a-sharepoint-workflow-template"></a>调试 SharePoint 工作流模板
  您可以调试 SharePoint 工作流项目相同如调试其他[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]基于 Web 的项目。 当您启动[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用你在中指定的设置**SharePoint 自定义向导**打开相应的 SharePoint Web 站点，会自动将工作流模板相关联与相应的库或列表。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此外会将附加[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]名为的进程*w3wp.exe*。
 
- 若要测试的工作流，必须手动启动它。 详细信息，请参阅"调试工作流"一节中[调试 SharePoint 解决方案](../sharepoint/debugging-sharepoint-solutions.md)。 有关详细信息[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web 应用程序调试，请参阅[调试 web 应用程序和脚本](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)。
+ 若要测试的工作流，必须手动启动它。 详细信息，请参阅"调试工作流"一节中[调试 SharePoint 解决方案](../sharepoint/debugging-sharepoint-solutions.md)。 有关详细信息[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Web 应用程序调试，请参阅[调试 web 应用程序和脚本](../debugger/how-to-enable-debugging-for-aspnet-applications.md)。
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>部署 SharePoint 工作流模板
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 就像其他部署 SharePoint 工作流项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。 有关详细信息，请参阅[包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。

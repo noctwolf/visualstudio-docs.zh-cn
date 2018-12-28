@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式向 Visio 文档添加形状
+title: 如何：以编程方式向 Visio 文档添加形状
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], adding Visio shapes
 - shapes [Office development in Visual Studio], adding Visio shapes
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 94e8b43830c26aad82937cc0533ca19e109f33d0
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 09bc0ca6d0c84f87a1a1621c9028c3a147373bc5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671867"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802653"
 ---
-# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>如何： 以编程方式向 Visio 文档添加形状
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>如何：以编程方式向 Visio 文档添加形状
   可以通过从模具中检索主控形状并将形状放置在活动页面上，向 Microsoft Office Visio 文档添加形状。  
   
  有关详细信息，请参阅 [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) 方法、 [Microsoft.Office.Interop.Visio.Application.ActivePage](/office/vba/api/Visio.Application.ActivePage) 属性和 [Microsoft.Office.Interop.Visio.Page.Drop](/office/vba/api/Visio.Page.Drop) 方法的 VBA 参考文档。  
@@ -43,6 +43,6 @@ ms.locfileid: "50671867"
  [Visio 解决方案](../vsto/visio-solutions.md)   
  [Visio 对象模型概述](../vsto/visio-object-model-overview.md)   
  [使用 Visio 形状](../vsto/working-with-visio-shapes.md)   
- [如何： 以编程方式复制和粘贴 Visio 文档中的形状](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
+ [如何：以编程方式复制和粘贴 Visio 文档中的形状](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: '&#39;返回&#39;语句在函数外的 |Microsoft Docs'
+title: return 语句在函数外的 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07b633c87dc11b291a5a5783f8121b2a368996d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7c4b71938d960d3825030c42e965b6510ca575b
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846509"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802519"
 ---
-# <a name="39return39-statement-outside-of-function"></a>&#39;返回&#39;语句在函数外
+# <a name="return-statement-outside-of-function"></a>“return”语句在函数之外
 您使用`return`全局作用域中的代码的语句。 `return`语句应仅出现在函数体。  
   
  调用的函数`()`运算符是一个表达式。 所有表达式都具有值;`return`语句用于指定函数所返回的值。 常规形式为：  

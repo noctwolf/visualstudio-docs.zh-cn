@@ -1,5 +1,5 @@
 ---
-title: 演练： 将数据插入到的服务器上的工作簿
+title: 演练：将数据插入到的服务器上的工作簿
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dc27a04e39ad93d9898364df308f6e7b042cd11b
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0c594a15b2f411b9c1360d94f0f41624c11cebcf
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672322"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804859"
 ---
-# <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>演练： 将数据插入到的服务器上的工作簿
+# <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>演练：将数据插入到的服务器上的工作簿
   本演练演示如何将数据插入到一个数据集，而不启动 Excel，通过使用 Microsoft Office Excel 工作簿中缓存<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -57,9 +57,9 @@ ms.locfileid: "50672322"
 
 -   对 Microsoft SQL Server 或 Microsoft SQL Server Express 的 AdventureWorksLT 示例数据库附加到它的运行中实例的访问权限。 您可以下载 AdventureWorksLT 数据库从[CodePlex 网站](http://go.microsoft.com/fwlink/?linkid=87843)。 有关附加数据库的详细信息，请参阅下列主题：
 
-    -   若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何： 附加数据库 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
+    -   若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何：附加数据库 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
 
-    -   若要使用命令行中附加数据库，请参阅[如何： 将数据库文件附加到 SQL Server Express](/previous-versions/sql/)。
+    -   若要使用命令行中附加数据库，请参阅[如何：将数据库文件附加到 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>创建一个类库项目定义数据集
  若要使用的 Excel 工作簿项目和控制台应用程序中的相同数据集，必须在单独的程序集引用的这两个这些项目中定义数据集。 在本演练中，在一个类库项目中定义数据集。
@@ -89,7 +89,7 @@ ms.locfileid: "50672322"
 ## <a name="define-a-dataset-in-the-class-library-project"></a>在类库项目中定义一个数据集
  定义用于 SQL Server 2005 包含 AdventureWorksLT 数据库中的数据的类型化数据集。 稍后在本演练中，将从 Excel 工作簿项目和控制台应用程序项目中引用此数据集。
 
- 数据集*类型化数据集*表示 AdventureWorksLT 数据库的 Product 表中的数据。 有关类型化数据集的详细信息，请参阅[Visual Studio 中的数据集工具](/visualstudio/data-tools/dataset-tools-in-visual-studio)。
+ 数据集*类型化数据集*表示 AdventureWorksLT 数据库的 Product 表中的数据。 有关类型化数据集的详细信息，请参阅[Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)。
 
 ### <a name="to-define-a-typed-dataset-in-the-class-library-project"></a>若要在类库项目中定义的类型化数据集
 
@@ -103,7 +103,7 @@ ms.locfileid: "50672322"
 
 5. 如果具有现有连接到 AdventureWorksLT 数据库，选择此连接，然后单击**下一步**。
 
-    否则，单击“新建连接” ，然后使用“添加连接”  对话框创建新连接。 有关详细信息，请参阅[如何： 连接到数据库中的数据](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)。
+    否则，单击“新建连接” ，然后使用“添加连接”  对话框创建新连接。 有关更多信息，请参见[如何：连接到数据库中的数据](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)。
 
 6. 在“将连接字符串保存到应用程序配置文件中”  页中，单击“下一步” 。
 
@@ -157,7 +157,7 @@ ms.locfileid: "50672322"
 
 2.  在 **“数据”** 菜单上，单击 **“添加新数据源”**。
 
-     **数据源配置向导**随即打开。
+     “数据源配置”向导随即打开。
 
 3.  单击**对象**，然后单击**下一步**。
 
@@ -293,8 +293,8 @@ ms.locfileid: "50672322"
 
 您可以了解有关使用缓存数据从下面这些主题的详细信息：
 
--   中缓存的数据集的数据更改而不启动 Excel。 有关详细信息，请参阅[演练： 更改缓存中的服务器上的工作簿的数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)。
+-   中缓存的数据集的数据更改而不启动 Excel。 有关详细信息，请参见[演练：更改服务器上的工作簿中的缓存的数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)。
 
 ## <a name="see-also"></a>请参阅
 
-- [演练： 更改服务器上的工作簿中的缓存的数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)
+- [演练：更改服务器上的工作簿中的缓存的数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

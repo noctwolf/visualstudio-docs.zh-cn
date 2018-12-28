@@ -20,12 +20,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80dfd4901fdaaeff064ba18d80bfe3f69e08116c
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a9de737604da898c42243895ed84e8962a8c656f
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739882"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803147"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>如何：设置 C/c + + 项目的代码分析属性
 可以配置代码分析工具使用来分析每个配置项目中的代码的规则。 此外，还可以指示代码分析禁止显示警告的生成并由第三方工具添加到你的项目的代码。
@@ -52,4 +52,6 @@ ms.locfileid: "53739882"
  如果你的项目包含托管的代码，你可以选择要通过选择规则集从应用中的代码分析规则**运行此规则集**列表。
 
 ## <a name="see-also"></a>请参阅
- [分析托管的代码质量](../code-quality/code-analysis-for-managed-code-overview.md) [C/c + + 警告的代码分析](../code-quality/code-analysis-for-c-cpp-warnings.md)
+
+- [分析托管代码质量](../code-quality/code-analysis-for-managed-code-overview.md)
+- [C/C++ 代码分析警告](../code-quality/code-analysis-for-c-cpp-warnings.md)

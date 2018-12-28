@@ -1,5 +1,5 @@
 ---
-title: 预期 &#39; 时 &#39; |Microsoft 文档
+title: 应有 while |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,20 +20,20 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de38e7e593d0547a695c2e037903d01387cdf0bb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 689e740b9954cada3788e53094e5a4fc1241baf8
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633027"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53801966"
 ---
-# <a name="expected-39while39"></a>预期 &#39; 时 &#39;
-不包含`while`条件中`do...while`循环。 A**执行**语句必须具有相应`while`测试的代码块的末尾。  
+# <a name="expected-while"></a>应有“while”
+您未包括`while`条件中`do...while`循环。 一个**做**语句必须具有相应`while`测试的代码块的末尾。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   包括`while`测试后的右大括号语句。  
+-   包括`while`测试的右大括号后的语句。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [while 语句](../../javascript/reference/while-statement-javascript.md)   
  [控制程序流](../../javascript/controlling-program-flow-javascript.md)

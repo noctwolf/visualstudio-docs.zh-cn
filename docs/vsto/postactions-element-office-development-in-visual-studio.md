@@ -17,66 +17,65 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6542344d5e0967504eccbedd4986cd80ef04f40a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c2036cf0d632fcf545dfde0ec4c43caa788a85ed
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692569"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804807"
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions&gt;元素 （Visual Studio 中的 Office 开发）
-  `postActions` 命名空间的 `vstav3` 元素包含描述部署后操作（在安装 Office 解决方案后运行）的 `postAction` 所有元素。  
-  
-## <a name="syntax"></a>语法  
-  
-```xml  
-<postActions>  
-  <postAction>  
-    <entryPoint>  
-    </entryPoint>  
-    <postActionData>  
-    </postActionData>  
-  </postAction>  
-</postActions>  
-```  
-  
-## <a name="elements-and-attributes"></a>元素和属性  
- `postActions` 元素是可选的，它位于 `vstav3` 命名空间中。 在应用程序清单中定义的 `postActions` 元素只有一个。  
-  
- `postActions` 元素没有属性。  
-  
- `postActions` 具有以下元素。  
-  
-### <a name="postaction"></a>postAction  
- 可选。 角色`postAction`中的元素`vstav3`中定义命名空间[ &#60;o n&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)。  
-  
-## <a name="post-deployment-action-example"></a>部署后操作示例  
-  
-### <a name="description"></a>描述  
- 下面的代码示例演示 Office 解决方案的应用程序清单中的 `postActions` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例摘自[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  
-  
-### <a name="code"></a>代码  
-  
-```xml  
-<vstav3:postActions>  
-  <vstav3:postAction>  
-    <vstav3:entryPoint   
-      class="PostDeploymentAction.PostDeploymentActionSample">  
-      <assemblyIdentity   
-        name="PostDeploymentAction"   
-        version="1.0.0.0"   
-        language="neutral"   
-        processorArchitecture="msil" />  
-    </vstav3:entryPoint>  
-    <vstav3:postActionData>  
-    </vstav3:postActionData>  
-  </vstav3:postAction>  
-</vstav3:postActions>  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)   
- [部署 Office 解决方案的清单](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  
-  
-  
+  `postActions` 命名空间的 `vstav3` 元素包含描述部署后操作（在安装 Office 解决方案后运行）的 `postAction` 所有元素。
+
+## <a name="syntax"></a>语法
+
+```xml
+<postActions>
+  <postAction>
+    <entryPoint>
+    </entryPoint>
+    <postActionData>
+    </postActionData>
+  </postAction>
+</postActions>
+```
+
+## <a name="elements-and-attributes"></a>元素和属性
+ `postActions` 元素是可选的，它位于 `vstav3` 命名空间中。 在应用程序清单中定义的 `postActions` 元素只有一个。
+
+ `postActions` 元素没有属性。
+
+ `postActions` 具有以下元素。
+
+### <a name="postaction"></a>postAction
+ 可选。 角色`postAction`中的元素`vstav3`中定义命名空间[ &#60;postAction&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)。
+
+## <a name="post-deployment-action-example"></a>部署后操作示例
+
+### <a name="description"></a>描述
+ 下面的代码示例演示 Office 解决方案的应用程序清单中的 `postActions` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例摘自[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。
+
+### <a name="code"></a>代码
+
+```xml
+<vstav3:postActions>
+  <vstav3:postAction>
+    <vstav3:entryPoint
+      class="PostDeploymentAction.PostDeploymentActionSample">
+      <assemblyIdentity
+        name="PostDeploymentAction"
+        version="1.0.0.0"
+        language="neutral"
+        processorArchitecture="msil" />
+    </vstav3:entryPoint>
+    <vstav3:postActionData>
+    </vstav3:postActionData>
+  </vstav3:postAction>
+</vstav3:postActions>
+```
+
+## <a name="see-also"></a>请参阅
+
+- [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)
+- [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

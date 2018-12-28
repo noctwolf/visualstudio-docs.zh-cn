@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34fce91db15d484b140aee291f9abd915d9399d2
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: b481a200cfd085cddcd0e8826eef94f7d4e5fbee
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738788"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804385"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>代码分析问题疑难解答
 本主题包含以下 Visual Studio 代码分析问题的疑难解答信息。
@@ -32,4 +32,7 @@ ms.locfileid: "53738788"
 3. 重新打开此规则集，撤消更改，然后再次保存。
 
 ## <a name="see-also"></a>请参阅
- [分析应用程序质量](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)[分析托管的代码质量](../code-quality/code-analysis-for-managed-code-overview.md)[使用规则集对代码分析规则进行分组](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+
+- [分析应用程序质量](../code-quality/code-analysis-for-managed-code-overview.md)
+- [分析托管代码质量](../code-quality/code-analysis-for-managed-code-overview.md)
+- [使用规则集对代码分析规则进行分组](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
