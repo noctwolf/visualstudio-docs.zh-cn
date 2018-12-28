@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - Office development in Visual Studio, deploying solutions
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e46a0bdc23ee16c4821d3da751d5a90aa62a14c3
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 8c690283eacabe56b18ef786bf4ab58fd03768e4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673063"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648776"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 解决方案
   如果使用 ClickOnce，则部署 Office 解决方案的步骤更少。 如果发布更新，解决方案将自动检测并安装更新。 不过，ClickOnce 需要你分别为计算机的每个用户安装解决方案。 因此，应考虑使用 Windows 安装程序 (*.msi*) 如果多个用户将在同一台计算机上运行你的解决方案。  
@@ -262,7 +262,7 @@ ms.locfileid: "50673063"
 
 3.  打开**ExcelWorkbook.dll.manifest**记事本等文本编辑器中的文件。  
 
-4.  在 `</vstav3:update>` 元素之后添加以下代码。 类特性`<vstav3:entryPoint>`元素中，使用以下语法： *NamespaceName.ClassName*。 在以下示例中，命名空间和类名称相同，因此生成的入口点名称为 `FileCopyPDA.FileCopyPDA`。  
+4.  在 `</vstav3:update>` 元素之后添加以下代码。 对于`<vstav3:entryPoint>`元素的类特性，请使用以下语法：*NamespaceName.ClassName*。 在以下示例中，命名空间和类名称相同，因此生成的入口点名称为 `FileCopyPDA.FileCopyPDA`。  
 
     ```xml
     <vstav3:postActions>  
@@ -463,9 +463,9 @@ ms.locfileid: "50673063"
 ## <a name="see-also"></a>请参阅  
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [发布 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [如何： 使用 ClickOnce 发布 Office 解决方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [如何： 安装 ClickOnce Office 解决方案](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
- [如何： 使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [如何：使用 ClickOnce 发布 Office 解决方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [如何：安装 ClickOnce Office 解决方案](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
+ [如何：使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
  [创建 ClickOnce office 解决方案的自定义安装程序](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
 
 

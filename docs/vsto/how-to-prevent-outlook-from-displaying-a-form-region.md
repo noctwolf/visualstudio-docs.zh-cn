@@ -1,5 +1,5 @@
 ---
-title: 如何： 防止 Outlook 显示窗体区域
+title: 如何：防止 Outlook 显示窗体区域
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], canceling display
 - canceling form region display
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1ec9f45b2055a7a56e067440d216482877da14c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0aaeafe14f35092be30c982ebb758e40afedb8aa
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949053"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647076"
 ---
-# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>如何： 防止 Outlook 显示窗体区域
+# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>如何：防止 Outlook 显示窗体区域
   可能有不希望 Microsoft Office Outlook 显示特定项的窗体区域的情况。 例如，如果联系人项目不包含业务地址，可以防止使其不显示地图中显示的业务位置的窗体区域。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -44,9 +44,9 @@ ms.locfileid: "49949053"
   
 ## <a name="see-also"></a>请参阅  
  [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)   
- [演练： 设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [如何： 向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [演练： 设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [演练： 导入在 Outlook 中设计的窗体区域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
+ [演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [演练：导入在 Outlook 中设计的窗体区域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
   
   

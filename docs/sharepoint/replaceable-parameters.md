@@ -18,15 +18,15 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: e79442ea42583f326f9cb59360777269c399b7a0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879293"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684686"
 ---
 # <a name="replaceable-parameters"></a>可替换参数
-  可替换参数，或*令牌*，可以使用项目文件中为其实际值不在设计时已知的 SharePoint 解决方案项提供值。 它们类似于标准[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]模板标记。 有关详细信息，请参阅[模板参数](/visualstudio/ide/template-parameters)。  
+  可替换参数，或*令牌*，可以使用项目文件中为其实际值不在设计时已知的 SharePoint 解决方案项提供值。 它们类似于标准[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]模板标记。 有关详细信息，请参阅[模板参数](../ide/template-parameters.md)。  
   
 ## <a name="token-format"></a>令牌格式
  令牌开始，以美元符号 （$） 字符结尾。 有关部署、 使用的任何令牌替换为实际值时为项目打包到 SharePoint 解决方案包 (*.wsp*文件)。 例如，令牌 **$SharePoint.Package.Name$** 可能解析为字符串"测试 SharePoint 包"。  
@@ -111,4 +111,3 @@ ms.locfileid: "49879293"
   
 ## <a name="see-also"></a>请参阅
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
-  

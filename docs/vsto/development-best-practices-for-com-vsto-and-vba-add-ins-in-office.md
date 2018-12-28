@@ -9,17 +9,17 @@ dev_langs:
 - ''
 helpviewer_keywords:
 - ''
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 53286b4545a45f1b3ed49d9470501cde9d2cca74
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671088"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648902"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>在 Office 中的 COM、 VSTO 和 VBA 外接程序的开发最佳实践
   如果你 office 开发 COM、 VSTO 或 VBA 的加载项，请按照本文中所述的开发最佳做法。   这将有助于确保：
@@ -28,13 +28,13 @@ ms.locfileid: "50671088"
 -  外接程序部署的用户和 IT 管理员的复杂性较低。
 -  不会发生的外接程序的意外的安装或运行时失败。
 
->注意： 使用[桌面桥](/windows/uwp/porting/desktop-to-uwp-root)若要准备您的 COM，VSTO 或 VBA 外接程序不支持 Windows 应用商店。 不能在 Windows 应用商店或 Office 应用商店中分布 COM、 VSTO 和 VBA 加载项。 
+>注意:使用[桌面桥](/windows/uwp/porting/desktop-to-uwp-root)若要准备您的 COM，VSTO 或 VBA 外接程序不支持 Windows 应用商店。 不能在 Windows 应用商店或 Office 应用商店中分布 COM、 VSTO 和 VBA 加载项。 
   
 ## <a name="do-not-check-for-office-during-installation"></a>不会检查 office 安装过程  
  我们不建议在外接程序检测是否在外接程序安装过程中安装 Office。 如果未安装 Office，您可以安装外接程序和用户将能够访问它后安装 Office。 
   
 ## <a name="use-embedded-interop-types-nopia"></a>使用嵌入的互操作类型 (NoPIA)  
-如果你的解决方案使用.NET 4.0 或更高版本，使用嵌入的互操作类型 (NoPIA) 而不是具体取决于 Office 主互操作程序集 (PIA) 可再发行组件。 使用类型嵌入可以减少解决方案的安装大小，并确保将来的兼容性。 Office 2010 是 office 的最新版本随附 PIA 可再发行组件。 有关详细信息，请参阅[演练： 嵌入 Microsoft Office 程序集中的类型信息](https://msdn.microsoft.com/library/ee317478.aspx)并[类型等效性和嵌入的互操作类型](/windows/uwp/porting/desktop-to-uwp-root)。
+如果你的解决方案使用.NET 4.0 或更高版本，使用嵌入的互操作类型 (NoPIA) 而不是具体取决于 Office 主互操作程序集 (PIA) 可再发行组件。 使用类型嵌入可以减少解决方案的安装大小，并确保将来的兼容性。 Office 2010 是 office 的最新版本随附 PIA 可再发行组件。 有关详细信息，请参见[演练：嵌入 Microsoft Office 程序集中的类型信息](https://msdn.microsoft.com/library/ee317478.aspx)并[类型等效性和嵌入的互操作类型](/windows/uwp/porting/desktop-to-uwp-root)。
 
 如果您的解决方案使用.NET 的早期版本，我们建议你更新你的解决方案使用.NET 4.0 或更高版本。 使用.NET 4.0 或更高版本可减少在较新版本的 Windows 运行时必备组件。
   
@@ -64,7 +64,7 @@ ms.locfileid: "50671088"
 
 若要提供 Office 客户端应用程序 （例如，Word 或 Excel） 的支持声明，请首先验证加载项在当前的 Office 版本中，运行，然后再提交到如果外接程序中断的未来版本中提供更新。 无需在 Microsoft 发布新的生成或对 Office 的更新时测试加载项。 Microsoft 很少更改在 Office 中的 COM、 VSTO 和 VBA 扩展性平台并妥善记录这些更改。
 
->重要说明： Microsoft 维护受支持的插件用于准备情况报告和 ISV 的联系信息的列表。 若要获取外接程序列出，请参阅[ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows)。
+>重要提示：Microsoft 将维护一组用于准备情况报告和 ISV 的联系信息的加载项支持。 若要获取外接程序列出，请参阅[ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows)。
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>使用进程监视器来帮助调试安装或加载问题
 如果外接程序在安装或负载期间存在兼容性问题，它们可能与文件或注册表访问问题。 使用[Process Monitor](/sysinternals/downloads/procmon)或类似的调试工具进行记录和比较行为对工作环境，以帮助识别问题。

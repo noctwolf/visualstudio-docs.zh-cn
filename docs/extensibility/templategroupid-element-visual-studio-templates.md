@@ -1,10 +1,9 @@
 ---
-title: TemplateGroupID 元素 （Visual Studio 模板） |Microsoft 文档
+title: TemplateGroupID 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#TemplateGroupID
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91631975d48f6e7e13646c428cdd5b5473bbeed2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 68e89b0211c64dcee61507afc15c50bd8e5e85d2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144432"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560645"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 元素（Visual Studio 模板）
-指定项模板将显示在哪种项目类型中。 当此元素很重要[ShowByDefault （Visual Studio 模板）](../extensibility/showbydefault-visual-studio-templates.md)设置为`false`。 当[ShowByDefault （Visual Studio 模板）](../extensibility/showbydefault-visual-studio-templates.md)设置为`true`，则所有项目类型中的可用项模板。  
+指定项模板将显示在哪种项目类型中。 当此元素很重要[ShowByDefault （Visual Studio 模板）](../extensibility/showbydefault-visual-studio-templates.md)设置为`false`。 当[ShowByDefault （Visual Studio 模板）](../extensibility/showbydefault-visual-studio-templates.md)设置为`true`，则项模板是在所有项目类型中可用。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -59,7 +58,7 @@ ms.locfileid: "31144432"
 ## <a name="remarks"></a>备注  
  `TemplateGroupID` 是一个元素。  
   
- 值`TemplateGroupID`元素使用与项目系统注册 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本号 >* \Projects\\)对筛选器模板中显示**添加新项**对话框。  
+ 值`TemplateGroupID`元素使用与项目系统注册 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本号 >* \Projects\\)对显示在筛选器模板**添加新项**对话框。  
   
 |Visual C++ 值|含义|  
 |------------------------|-------------|  
@@ -73,6 +72,6 @@ ms.locfileid: "31144432"
 |WinRT-Native|用于 Windows 8.0 应用商店项目|  
 |VC-Android|用于 Android 项目|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

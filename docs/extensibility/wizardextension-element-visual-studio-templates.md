@@ -1,10 +1,9 @@
 ---
-title: WizardExtension 元素 （Visual Studio 模板） |Microsoft 文档
+title: WizardExtension 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#WizardExtension
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5544f0d97fec3ae0b3102ed02c284b9c22a98b54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c12a0e0e1bcccee936a0a324d03f0251d6c1a083
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144861"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561144"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 元素（Visual Studio 模板）
 包含用于自定义模板向导的注册元素。  
@@ -49,7 +48,7 @@ ms.locfileid: "31144861"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|必需的元素。<br /><br /> 指定的名称或显示在全局程序集缓存中程序集的强名称。 必须有至少一个`Assembly`中的元素`WizardExtension`元素。|  
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|必需的元素。<br /><br /> 指定的名称或显示在全局程序集缓存中的程序集的强名称。 必须有至少一个`Assembly`中的元素`WizardExtension`元素。|  
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|必需的元素。<br /><br /> 实现的类的完全限定的名称`IWizard`接口。 必须有至少一个`FullClassName`中的元素`WizardExtension`元素。|  
   
 ### <a name="parent-elements"></a>父元素  
@@ -92,7 +91,7 @@ ms.locfileid: "31144861"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)

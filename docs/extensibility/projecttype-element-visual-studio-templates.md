@@ -2,9 +2,8 @@
 title: ProjectType 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectType
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14726d5338830eb4044d22778d886241cfd0cd83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3531eb6ee1c974b0978904572d47ae581d6a9cd0
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921127"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561874"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 元素 （Visual Studio 模板）
 将分类的项目模板，使其显示在指定的组**新的项目**或**添加新项**对话框。  
@@ -58,11 +57,11 @@ ms.locfileid: "49921127"
   
  此值指定的类型的项目模板将创建并必须包含以下值之一：  
   
-- `CSharp`： 指定此模板创建[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]项目或项。  
+- `CSharp`：指定此模板创建[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]项目或项。  
   
-- `VisualBasic`： 指定此模板创建[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]项目或项。  
+- `VisualBasic`：指定此模板创建[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]项目或项。  
   
-- `Web`： 指定此模板创建 Web 项目或项。 如果`ProjectType`元素包含此值，在中定义的项目或项的语言[ProjectSubType 元素 （Visual Studio 模板）](../extensibility/projectsubtype-element-visual-studio-templates.md)。  
+- `Web`：指定此模板创建 Web 项目或项。 如果`ProjectType`元素包含此值，在中定义的项目或项的语言[ProjectSubType 元素 （Visual Studio 模板）](../extensibility/projectsubtype-element-visual-studio-templates.md)。  
   
 ## <a name="remarks"></a>备注  
  `ProjectType` 是 `TemplateData` 的必需子元素。  

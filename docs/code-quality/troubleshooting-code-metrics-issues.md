@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef7078b09b1bf2382e1c91878995772d80bfa625
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9575020135846edc9cb86bd89ff72682500d8a9d
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853956"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739557"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>代码度量值问题疑难解答
 收集代码度量时，可能会遇到以下的一些问题：
@@ -30,4 +30,4 @@ ms.locfileid: "49853956"
 - 此函数包含 switch（VB 中的 Select Case）语句。 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 和早期版本之间的编译器差异可以为包含失败事例的某些 switch 语句生成不同的 MSIL 代码。
 
 ## <a name="see-also"></a>请参阅
- [测量托管代码的复杂性和可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+ [测量托管代码的复杂性和可维护性](../code-quality/code-metrics-values.md)

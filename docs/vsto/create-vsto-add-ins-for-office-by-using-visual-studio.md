@@ -1,6 +1,7 @@
 ---
 title: 使用 Visual Studio 创建 VSTO 外接程序
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -8,17 +9,17 @@ ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ae35f11066ccb0bbd5e9fa36f137c8a77281463c
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670866"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441491"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 创建 VSTO 外接程序
   可以使用 Visual Studio 中的 Microsoft Office 开发人员工具来创建可扩展 Office 的 .NET Framework 应用程序。 这些应用程序也称为“Office 解决方案” 。  
@@ -90,7 +91,7 @@ ms.locfileid: "50670866"
  提供指向有关 Office 主互操作程序集、 清单、 用户界面元素和错误消息的详细信息。  
   
  [托管参考&#40;Visual Studio 中的 Office 开发&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
- 提供指向有关在 Office 项目中使用的针对 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的 API 命名空间和类型的链接。 有关命名空间和类型的.NET Framework 3.5 为目标的 Office 项目中使用的 API 参考文档，请参阅 Visual Studio 2008 文档中的以下参考部分： [2007年系统托管参考](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ 提供指向有关在 Office 项目中使用的针对 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的 API 命名空间和类型的链接。 对于在 Office 项目中使用的针对 .NET Framework 3.5 的有关命名空间和类型的 API 参考文档，请参阅下列 Visual Studio 2008 文档中的参考资料部分：[2007 系统托管参考](http://go.microsoft.com/fwlink/?LinkId=160658)。  
   
  [非托管 API 参考&#40;Visual Studio 中的 Office 开发&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  包含一些链接，这些链接指向有关可以使用 COM 接口执行各种操作（例如加载和卸载 Office 应用程序中托管 VSTO 外接程序）方面的信息。  

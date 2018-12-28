@@ -23,12 +23,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a1aeb3cea738a08850762083929741c082d7ccb6
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320704"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739849"
 ---
 # <a name="code-analysis-for-cc-overview"></a>代码分析 C/c + + 概述
 
@@ -52,24 +52,24 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>#pragma 支持
 
-可以使用`#pragma`指令以将警告视为错误; 启用或禁用警告，并禁止显示警告的代码的各个行。 有关详细信息，请参阅[如何： 为 C/c + + 项目中设置代码分析属性](how-to-set-code-analysis-properties-for-c-cpp-projects.md)。
+可以使用`#pragma`指令以将警告视为错误; 启用或禁用警告，并禁止显示警告的代码的各个行。 有关更多信息，请参见[如何：设置 C/c + + 项目的代码分析属性](how-to-set-code-analysis-properties-for-c-cpp-projects.md)。
 
 ## <a name="annotation-support"></a>批注的支持
 
-批注可以提高代码分析的准确性。 批注函数参数上提供有关预处理脚本和后续条件的其他信息和返回类型。 有关详细信息，请参阅[如何： 使用 __analysis_assume 指定其他代码信息](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+批注可以提高代码分析的准确性。 批注函数参数上提供有关预处理脚本和后续条件的其他信息和返回类型。 有关更多信息，请参见[如何：使用 __analysis_assume 指定其他代码信息](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>签入策略的一部分运行分析工具
 
-你可能需要所有源的代码签入行为都满足特定的策略。 具体而言，你想要确保分析最新的本地生成的步骤的形式运行。 有关启用代码分析签入策略的详细信息，请参阅[创建和签入策略使用代码分析](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+你可能需要所有源的代码签入行为都满足特定的策略。 具体而言，你想要确保分析最新的本地生成的步骤的形式运行。 有关启用代码分析签入策略的详细信息，请参阅[创建和签入策略使用代码分析](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Team Build 集成
 
-您可以使用生成系统的集成的功能的步骤的形式运行代码分析工具[!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]生成过程。 有关详细信息，请参阅[Azure 管道](/azure/devops/pipelines/index?view=vsts)。
+您可以使用生成系统的集成的功能的步骤的形式运行代码分析工具[!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]生成过程。 有关详细信息，请参阅 [Azure 管道](/azure/devops/pipelines/index?view=vsts)。
 
 ## <a name="see-also"></a>请参阅
 
-- [快速入门： C/c + + 代码分析](quick-start-code-analysis-for-c-cpp.md)
-- [演练： 分析 C/c + + 代码进行缺陷](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [快速入门：C/c + + 代码分析](quick-start-code-analysis-for-c-cpp.md)
+- [演练：分析 C/c + + 代码进行缺陷](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [C/C++ 代码分析警告](code-analysis-for-c-cpp-warnings.md)
 - [使用 C++ Core Guidelines 检查器](using-the-cpp-core-guidelines-checkers.md)
 - [C + + Core Guidelines 检查程序引用](code-analysis-for-cpp-corecheck.md)

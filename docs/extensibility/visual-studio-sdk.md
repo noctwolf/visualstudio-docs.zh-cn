@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84f17a71383b6f507b4ea274d8a5cf416ab5f55e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906021"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739155"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK 可帮助您扩展 Visual Studio 功能或集成到 Visual Studio 的新功能。 可以将分发给其他用户，以及 Visual Studio Marketplace 扩展。 以下是一些扩展 Visual Studio 的方式：  
@@ -78,8 +78,8 @@ Visual Studio SDK 可帮助您扩展 Visual Studio 功能或集成到 Visual Stu
   
 ## <a name="see-also"></a>请参阅  
  [使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)   
- [如何： 将扩展性项目迁移到 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
- [常见问题： 将外接程序转换为 VSPackage 扩展](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [如何：将扩展性项目迁移到 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)   
+ [常见问题：将外接程序转换为 VSPackage 扩展](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [管理在托管代码中的多个线程](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)   
  [将命令添加到工具栏](../extensibility/adding-commands-to-toolbars.md)   
@@ -92,7 +92,7 @@ Visual Studio SDK 可帮助您扩展 Visual Studio 功能或集成到 Visual Stu
  [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)   
  [使用和提供服务](../extensibility/using-and-providing-services.md)   
  [管理 VSPackages](../extensibility/managing-vspackages.md)   
- [Visual Studio 独立 shell](../extensibility/visual-studio-isolated-shell.md)   
+ [Visual Studio 独立 shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)   
  [提供 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)   
  [在 Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [针对 Visual Studio SDK 的支持](../extensibility/support-for-the-visual-studio-sdk.md)   

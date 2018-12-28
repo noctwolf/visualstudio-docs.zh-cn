@@ -1,5 +1,5 @@
 ---
-title: CA1505：避免编写无法维护的代码
+title: CA1505:避免编写无法维护的代码
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aae34f6e999bcf74fdfbae4597b22529863e34f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7678b0f6b435929c9e53a40062155842e273bbdc
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546910"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740307"
 ---
-# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505：避免编写无法维护的代码
+# <a name="ca1505-avoid-unmaintainable-code"></a>CA1505:避免编写无法维护的代码
 
 |||
 |-|-|
@@ -36,7 +36,7 @@ ms.locfileid: "45546910"
  类型或方法具有较低的可维护性索引值。
 
 ## <a name="rule-description"></a>规则说明
- 通过使用以下度量值计算的可维护性索引： 行代码，程序卷和圈复杂度。 程序卷是了解类型或方法的运算符和操作数在代码中的数量为基础的难易程度的度量值。 圈复杂度是复杂性的度量值的类型或方法的结构化。 您可以了解有关代码的指标的详细信息[测量复杂性和托管代码可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)。
+ 通过使用以下度量值计算的可维护性索引： 行代码，程序卷和圈复杂度。 程序卷是了解类型或方法的运算符和操作数在代码中的数量为基础的难易程度的度量值。 圈复杂度是复杂性的度量值的类型或方法的结构化。 您可以了解有关代码的指标的详细信息[测量复杂性和托管代码可维护性](../code-quality/code-metrics-values.md)。
 
  较低的可维护性索引指示类型或方法可能难以维护而且可能会重新设计的良好候选项。
 
@@ -49,4 +49,4 @@ ms.locfileid: "45546910"
 ## <a name="see-also"></a>请参阅
 
 - [维护性警告](../code-quality/maintainability-warnings.md)
-- [测量托管代码的复杂性和可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [测量托管代码的复杂性和可维护性](../code-quality/code-metrics-values.md)

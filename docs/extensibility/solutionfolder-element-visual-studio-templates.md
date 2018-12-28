@@ -1,10 +1,9 @@
 ---
-title: SolutionFolder 元素 （Visual Studio 模板） |Microsoft 文档
+title: SolutionFolder 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SolutionFolder
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 635ebd5a8cfc962dd7b56b928b86a9d583a3575d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c5e47729d55b9c248b81c5867175fed75e8b93a8
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141521"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561585"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 元素（Visual Studio 模板）
 对多项目模板中的项目进行分组。  
@@ -63,7 +62,7 @@ ms.locfileid: "31141521"
 |`SolutionFolder`|对多项目模板中的项目进行分组。|  
   
 ## <a name="remarks"></a>备注  
- 多项目模板用作两个或多个项目的容器。 `SolutionFolder`元素用于将模板中的项目组织到组。 通过`SolutionFolder`元素指定的文件夹被创建为[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的项目中的解决方案文件夹。 有关多项目模板的详细信息，请参阅[如何： 创建多项目模板](../ide/how-to-create-multi-project-templates.md)。  
+ 多项目模板用作两个或多个项目的容器。 `SolutionFolder`元素用于将模板中的项目组织到组。 通过`SolutionFolder`元素指定的文件夹被创建为[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的项目中的解决方案文件夹。 多项目模板的详细信息，请参阅[如何：创建多项目模板](../ide/how-to-create-multi-project-templates.md)。  
   
 ## <a name="example"></a>示例  
  此示例使用`SolutionFolder`元素，可以将多项目模板划分为两个组，`Math Classes`和`Graphics Classes`。 该模板包含四个项目，其中两个位于每个解决方案文件夹中。  
@@ -100,7 +99,7 @@ ms.locfileid: "31141521"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [如何：创建多项目模板](../ide/how-to-create-multi-project-templates.md)

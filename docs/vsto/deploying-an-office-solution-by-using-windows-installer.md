@@ -16,17 +16,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], MSI
 - publishing Office solutions [Office development in Visual Studio], setup project
 - Office applications [Office development in Visual Studio], MSI
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3e811fac767e8b89f0a6958511c54642f07190cf
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f5aaf0cdff2795ff0726ca2de36e794179f2d924
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673050"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648763"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 解决方案
 了解如何使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]为你的 Office 解决方案创建 Windows Installer。  
@@ -528,7 +528,7 @@ ms.locfileid: "50673050"
 
 9. 在菜单栏上依次选择**构建** > **构建 officeaddinsetup**。  
 
-   在生成完成后，可以找到*setup.exe*的文件**OfficeAddInSetup**项目上的以下位置： <em>OfficeAddInSetupProjectRoot</em> **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
+   在生成完成后，可以找到*setup.exe*的文件**officeaddinsetup**项目上的以下位置：<em>OfficeAddInSetupProjectRoot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\\**  
 
 
 ## <a name="see-also"></a>请参阅  

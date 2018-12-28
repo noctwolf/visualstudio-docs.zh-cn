@@ -34,17 +34,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
 - host controls [Office development in Visual Studio], deleting
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ff20a05b752ee16971e67cb8e12c838384523b9
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937494"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647969"
 ---
 # <a name="host-items-and-host-controls-overview"></a>主机项和主机控件概述
   宿主项和宿主控件是帮助向通过使用 Visual Studio 中的 Office 开发工具创建的 Office 解决方案提供编程模型的类型。 宿主项和宿主控件与基于 COM 的 Microsoft Office Word 和 Microsoft Office Excel 的对象模型交互，但更像与托管对象（如 Windows 窗体控件）进行交互。  
@@ -131,21 +131,21 @@ ms.locfileid: "49937494"
   
   有关如何将宿主控件添加到文档的详细信息，请参阅以下主题：  
   
-- [如何： 向工作表添加图表控件](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [如何：将图表控件添加到工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
-- [如何： 向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [如何：向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
-- [如何： 向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [如何：向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
-- [如何： 向工作表添加 XMLMappedRange 控件](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+- [如何：向工作表添加 XMLMappedRange 控件](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
-- [如何： 向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
-- [如何： 将内容添加到 Word 文档的控件](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [如何：添加内容控件添加到 Word 文档](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
-- [如何： 向 Word 文档添加 XMLNode 控件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+- [如何：向 Word 文档添加 XMLNode 控件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
-- [如何： 向 Word 文档添加 XMLNodes 控件](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+- [如何：向 Word 文档添加 XMLNodes 控件](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="name-host-controls"></a>命名宿主控件  
  将宿主控件从“工具箱”  拖动到文档时，将自动使用末端尾号递增的控件类型对该控件命名。 例如，书签命名为 **bookmark1**、 **bookmark2**，依此类推。 如果使用 Word 或 Excel 的本机功能来添加控件，你可以在创建此控件时指定特定名称。 也可以通过在“属性”  窗口更改“名称”  属性的值来重命名你的控件。  
@@ -166,7 +166,7 @@ ms.locfileid: "49937494"
 >  请不要在文档或工作表的 `Shutdown` 事件处理程序过程中以编程方式删除控件。 发生 `Shutdown` 事件时，UI 元素将不再可用。 如果要在应用程序关闭之前删除控件，请将你的代码添加到另一个事件处理程序中，如 `BeforeClose` 或 `BeforeSave`。  
   
 ### <a name="program-against-host-control-events"></a>针对宿主控件事件进行编程  
- 宿主控件扩展 Office 对象的一种方法是通过添加事件。 例如，在 Excel 中的 <xref:Microsoft.Office.Interop.Excel.Range> 对象和在 Word 中的 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象不具有事件，但 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 通过添加可编程事件来扩展这些对象。 你可以用访问 Windows 窗体上控件的事件的方式对这些事件进行访问和编码：通过 Visual Basic 中的事件下拉列表和 C# 中的事件属性页。 有关详细信息，请参阅[演练： 针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
+ 宿主控件扩展 Office 对象的一种方法是通过添加事件。 例如，在 Excel 中的 <xref:Microsoft.Office.Interop.Excel.Range> 对象和在 Word 中的 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象不具有事件，但 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 通过添加可编程事件来扩展这些对象。 你可以用访问 Windows 窗体上控件的事件的方式对这些事件进行访问和编码：通过 Visual Basic 中的事件下拉列表和 C# 中的事件属性页。 有关详细信息，请参见[演练：针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
   
 > [!NOTE]  
 >  不应将 Excel 中 <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> 对象的 <xref:Microsoft.Office.Interop.Excel.Application> 属性设置为 **false**。 将此属性设置为 **false** 可防止 Excel 引发任何事件，包括宿主控件的事件。  

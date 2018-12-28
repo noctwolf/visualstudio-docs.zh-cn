@@ -1,5 +1,5 @@
 ---
-title: CA1903：仅使用目标框架中的 API
+title: CA1903:使用仅目标框架中的 API
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42a74cfaf93ba0e8e5aec7e15c522d2e26b7a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace24746aafa70c73bc87c55c197913136f1a7b1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822808"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738867"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903：仅使用目标框架中的 API
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:使用仅目标框架中的 API
 
 |||
 |-|-|
@@ -48,7 +48,7 @@ ms.locfileid: "49822808"
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|不可用|
 
- 若要更改项目的目标框架，请参阅[面向特定的.NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)。
+ 若要更改项目的目标框架，请参阅[面向特定的.NET Framework 版本](../ide/visual-studio-multi-targeting-overview.md)。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要删除对该服务包的依赖关系，请删除所有新成员或类型的用法。 如果这是有意的依赖关系，禁止显示警告，或关闭此规则。
@@ -69,4 +69,4 @@ ms.locfileid: "49822808"
 ## <a name="see-also"></a>请参阅
 
 - [Portability Warnings](../code-quality/portability-warnings.md)
-- [面向特定的 .NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [面向特定的 .NET Framework 版本](../ide/visual-studio-multi-targeting-overview.md)

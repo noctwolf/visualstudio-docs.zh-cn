@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5059028b87818e34e44123dadde9851eee4200bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a7e281f65f58cc3fa10325574eb397d0aa20308e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906541"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740005"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>迁移到.NET Framework 4 或更高版本的 Office 解决方案
   如果 Office 项目的目标框架更改为[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本从.NET Framework 的早期版本，执行一些其他步骤可能还需要继续开发和最终用户计算机上运行该解决方案。 有关详细信息，请参阅[所需更改即可运行迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。  
@@ -31,7 +31,7 @@ ms.locfileid: "49906541"
   
 - [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 项目](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
-- [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的功能区自定义](../vsto/updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
+- [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的功能区自定义](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)  
   
 - [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Outlook 项目中的窗体区域](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
   
@@ -41,7 +41,7 @@ ms.locfileid: "49906541"
   
 ## <a name="see-also"></a>请参阅  
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
- [如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [如何：面向.NET Framework 版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [对 Office 解决方案中的错误进行故障排除](../vsto/troubleshooting-errors-in-office-solutions.md)   
  [Office 解决方案错误的其他支持](../vsto/additional-support-for-errors-in-office-solutions.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: 如何： 将操作窗格添加到 Word 文档或 Excel 工作簿
+title: 如何：将操作窗格添加到 Word 文档或 Excel 工作簿
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], adding controls
 - actions panes [Office development in Visual Studio], creating in Word
 - actions panes [Office development in Visual Studio], adding controls
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f70511d0490032204789dc037a13847a10b5cbe6
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 7c49fcf50046148ca01e2ce4eb5ebb204874d1d0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948356"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648234"
 ---
-# <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>如何：向 Word 文档或 Excel 工作簿添加操作窗格
+# <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>如何：将操作窗格添加到 Word 文档或 Excel 工作簿
   若要将操作窗格添加到 Microsoft Office Word 文档或 Microsoft Excel 工作簿，首先创建 Windows 窗体用户控件。 然后，将用户控件添加到<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>的属性`ThisDocument.ActionsPane`字段 (Word) 或`ThisWorkbook.ActionsPane`在项目中的字段 (Excel)。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -59,7 +59,7 @@ ms.locfileid: "51948356"
   
 6.  在 C# 中，必须添加为按钮单击事件处理程序。 您可以将此代码放置在`HelloControl`构造函数调用的后面`InitializeComponent`。  
   
-     有关如何创建事件处理程序的信息，请参阅[如何： 在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+     有关如何创建事件处理程序的信息，请参阅[如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]  
   
@@ -80,8 +80,8 @@ ms.locfileid: "51948356"
   
 ## <a name="see-also"></a>请参阅  
  [操作窗格概述](../vsto/actions-pane-overview.md)   
- [演练： 向操作窗格中的文档中插入文本](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
- [如何： 管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [演练： 向操作窗格中的文档中插入文本](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [演练：从操作窗格的文档中插入文本](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
+ [如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [演练：从操作窗格的文档中插入文本](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

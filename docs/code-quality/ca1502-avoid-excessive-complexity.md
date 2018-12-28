@@ -1,5 +1,5 @@
 ---
-title: CA1502：避免过度复杂
+title: CA1502:避免过度复杂
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -20,14 +20,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa12a2a1ade8d32c5518660c46ce79bc997d776
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 969e16eae2d04ed1635e2d2bc9b496ed510a6074
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819298"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740320"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502：避免过度复杂
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502:避免过度复杂
 
 |||
 |-|-|
@@ -50,7 +50,7 @@ ms.locfileid: "49819298"
 
 超过 25 种的圈复杂度时，规则将报告冲突。
 
-您可以了解有关代码的指标的详细信息[测量复杂性和托管代码可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)，
+您可以了解有关代码的指标的详细信息[测量复杂性和托管代码可维护性](../code-quality/code-metrics-values.md)，
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
@@ -104,8 +104,8 @@ ms.locfileid: "49819298"
 
 ## <a name="related-rules"></a>相关的规则
 
-[CA1501：避免过度继承](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501:避免过度继承](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>请参阅
 
-- [测量托管代码的复杂性和可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+- [测量托管代码的复杂性和可维护性](../code-quality/code-metrics-values.md)

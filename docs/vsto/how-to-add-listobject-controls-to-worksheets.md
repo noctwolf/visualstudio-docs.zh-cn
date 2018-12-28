@@ -1,5 +1,5 @@
 ---
-title: 如何： 向工作表添加 ListObject 控件
+title: 如何：向工作表添加 ListObject 控件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - ListObject control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae6abd9791bfaa9ce0e7c15f1f6f66034a75c6c7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949248"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53646959"
 ---
-# <a name="how-to-add-listobject-controls-to-worksheets"></a>如何： 向工作表添加 ListObject 控件
+# <a name="how-to-add-listobject-controls-to-worksheets"></a>如何：向工作表添加 ListObject 控件
   您可以添加<xref:Microsoft.Office.Tools.Excel.ListObject>到 Microsoft Office Excel 工作表在设计时和运行时在文档级项目中的控件。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -41,7 +41,7 @@ ms.locfileid: "49949248"
   有关详细信息<xref:Microsoft.Office.Tools.Excel.ListObject>控件，请参阅[ListObject 控件](../vsto/listobject-control.md)。  
   
 ##  <a name="designtime"></a> 在设计时添加 ListObject 控件  
- 有多种方法可在设计时在文档级项目中将 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件添加到工作表：从 Excel、从 Visual Studio“工具箱” ，以及从“数据源”  窗口。  
+ 有几种方法来添加<xref:Microsoft.Office.Tools.Excel.ListObject>控件添加到在设计时的文档级项目中的工作表：从 excel、 从 Visual Studio**工具箱**，并从**数据源**窗口。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -95,7 +95,7 @@ ms.locfileid: "49949248"
  [ListObject 控件](../vsto/listobject-control.md)   
  [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   
- [如何： 调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)   
+ [如何：调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)   
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   

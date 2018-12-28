@@ -1,5 +1,5 @@
 ---
-title: 如何： 用对象中的数据填充文档
+title: 如何：用对象中的数据填充文档
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - data [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef3d1441f9587bceeca0c4aacdc054a4769a2369
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 87e194aa29a44458c23e5057d7813e5e21ffbc42
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758107"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648366"
 ---
-# <a name="how-to-populate-documents-with-data-from-objects"></a>如何： 用对象中的数据填充文档
+# <a name="how-to-populate-documents-with-data-from-objects"></a>如何：用对象中的数据填充文档
 
 在 Microsoft Office Word 文档级项目中，访问数据对象中的数据与访问 Windows 窗体项目中的数据的方式相同。 使用相同的工具和代码将数据从对象引入解决方案，然后即可使用 Windows 窗体控件来显示该数据。 此外，还可以使用主机控件来显示数据。 主机控件是指 Microsoft Office Word 中借助事件和数据绑定容量进行增强的本地对象。 有关详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。
 
@@ -73,6 +73,6 @@ ms.locfileid: "36758107"
 
 - [添加新数据源](../data-tools/add-new-data-sources.md)
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [如何： 用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [如何： 使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [如何：用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [如何：使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [BindingSource 组件概述](/dotnet/framework/winforms/controls/bindingsource-component-overview)

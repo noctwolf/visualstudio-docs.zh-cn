@@ -1,10 +1,9 @@
 ---
-title: SupportsMasterPage 元素 （Visual Studio 模板） |Microsoft 文档
+title: SupportsMasterPage 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsMasterPage
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94d7db9c00e75b255f5cfe1486b45a5d9460faac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c3eb9a421e6a2678405bcedc95d835990c3a7d9
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138429"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561299"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 元素（Visual Studio 模板）
 指定是否**选择母版页**上启用复选框**添加新项**对话框。  
@@ -49,7 +48,7 @@ ms.locfileid: "31138429"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|指定将此模板分类并定义中的显示方式的数据**新项目**或**新项**对话框。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|指定将此模板分类并定义中的显示方式的数据**新的项目**或**新项**对话框。|  
   
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
@@ -59,10 +58,10 @@ ms.locfileid: "31138429"
 ## <a name="remarks"></a>备注  
  `SupportsMasterPage` 是可选元素。 默认值为 `false`。  
   
- `SupportsMasterPage`元素功能仅适用于 Web 项模板。  
+ `SupportsMasterPage`元素功能仅适用于 Web 项目模板。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示一个包含母版页的支持的 Web 项目的元数据。  
+ 下面的示例演示包括对母版页的支持的 Web 项目的元数据。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  
@@ -86,6 +85,6 @@ ms.locfileid: "31138429"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

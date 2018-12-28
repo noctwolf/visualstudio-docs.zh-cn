@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4f8ed1effbc459bd2a17e3433738c1b461513b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: cf7c9c5348e7a7c31fa7e1d65b7fa6047d05d565
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755649"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685700"
 ---
 # <a name="workflow-project-templates"></a>工作流项目模板
 
@@ -72,12 +72,12 @@ Visual Studio 提供了四个不同的工作流项目模板：
 
 如果愿意**活动设计器库**模板，Visual Studio 创建一个活动设计器定义 XAML 和代码隐藏实现文件中。 工作流设计器打开并显示活动设计器的画布。 将 Windows Presentation Foundation (WPF) 控件从**工具箱**至设计图面上，若要在自定义活动设计器中使用它们。
 
-有关如何实现自定义活动设计器的示例，请参阅[如何： 创建自定义活动设计器](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer)。
+有关如何实现自定义活动设计器的示例，请参阅[如何：创建自定义活动设计器](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer)。
 
 > [!NOTE]
 > 可以使用自定义活动设计器，自定义活动以及默认.NET Framework 的活动。
 
 ## <a name="see-also"></a>请参阅
 
-- [使用工作流设计器](../workflow-designer/using-the-workflow-designer.md)
+- [使用工作流设计器](developing-applications-with-the-workflow-designer.md)
 - [设计工作流 (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

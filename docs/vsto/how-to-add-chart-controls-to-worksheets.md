@@ -1,5 +1,5 @@
 ---
-title: 如何： 向工作表添加图表控件
+title: 如何：将图表控件添加到工作表
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Chart control [Office development in Visual Studio], adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 713657c7df5bfd3dd3f864c15ffc86dd1d531eac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f1c5cd15710e3886e3e8b0ed7483ba3776cef15
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919918"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648928"
 ---
-# <a name="how-to-add-chart-controls-to-worksheets"></a>如何： 向工作表添加图表控件
+# <a name="how-to-add-chart-controls-to-worksheets"></a>如何：将图表控件添加到工作表
   您可以添加<xref:Microsoft.Office.Tools.Excel.Chart>到 Microsoft Office Excel 工作表在设计时和运行时在文档级自定义项中的控件。 您还可以添加<xref:Microsoft.Office.Tools.Excel.Chart>在运行时在 VSTO 外接程序中的控件。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  

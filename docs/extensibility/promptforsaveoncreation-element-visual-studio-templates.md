@@ -2,9 +2,8 @@
 title: PromptForSaveOnCreation 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#PromptForSaveOnCreation
 helpviewer_keywords:
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c5b04bfa04b1b6fd6599e5fdd06d6c58210f635
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 99e26a5466dfeb08a927323d11f6ec49e53730c4
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638438"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560579"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 元素 （Visual Studio 模板）
 指定是否提示用户输入保存位置通过项目**新的项目**对话框中创建项目时。 如果此元素设置为`true`，然后提示用户输入保存位置; 如果`false`，则不会提示。 （即，创建一个临时项目。）  

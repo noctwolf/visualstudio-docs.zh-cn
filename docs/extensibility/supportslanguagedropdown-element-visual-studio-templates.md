@@ -1,10 +1,9 @@
 ---
-title: SupportsLanguageDropDown 元素 （Visual Studio 模板） |Microsoft 文档
+title: SupportsLanguageDropDown 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#SupportsLanguageDropDown
 helpviewer_keywords:
@@ -16,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b02dcf9b54cfec3dcccca62f9529291e01a912f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92043550d9318fc5de70d14bed12b110d3ef2e26
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138823"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562121"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 元素（Visual Studio 模板）
-指定 Web 项模板是相同的多个语言，以及是否**语言**选项上启用**添加新项**对话框。  
+指定 Web 项目模板是完全相同的多个语言，以及是否**语言**上启用选项**添加新项**对话框。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -54,14 +53,14 @@ ms.locfileid: "31138823"
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
   
- 文本必须是`true`或`false`，以指示是否**语言**选项才可用从**添加新项**对话框。  
+ 文本必须是`true`或`false`，以指示是否**语言**选项才可用**添加新项**对话框。  
   
 ## <a name="remarks"></a>备注  
  `SupportsLanguageDropDown` 是可选元素。 默认值为 `false`。  
   
- `SupportsLanguageDropDown`元素功能仅适用于 Web 项模板。  
+ `SupportsLanguageDropDown`元素功能仅适用于 Web 项目模板。  
   
- 如果此元素的值设置为`true`，则项模板是相同的所有编程语言和**语言**中启用选项**添加新项**对话框。 此选项可选择你想要从模板创建的新项的编程语言。  
+ 如果此元素的值设置为`true`，则项模板是完全相同的所有编程语言和**语言**中启用选项**添加新项**对话框。 此选项，可选择你想要从模板创建的新项的编程语言。  
   
 ## <a name="example"></a>示例  
  下面的示例指定要显示**语言**下拉列表选项。  
@@ -88,6 +87,6 @@ ms.locfileid: "31138823"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

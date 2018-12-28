@@ -1,6 +1,7 @@
 ---
 title: '&lt;入口点&gt;元素 （Visual Studio 中的 Office 开发）'
-ms.custom: ''
+titleSuffix: ''
+ms.custom: seodec18
 ms.date: 02/02/2017
 ms.technology:
 - office-development
@@ -12,17 +13,17 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoint> element
 - <entryPoint> element
 - entryPoint element
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eb617b44eb5360ea8c313431c7d8609505efa16
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f28da1a564196833adff530c3c7d31eb9ea9bb4e
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447084"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648647"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;入口点&gt;元素 （Visual Studio 中的 Office 开发）
   `entryPoint` 命名空间中的每个 `vstav3` 元素都标识应在安装此 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 应用程序时运行的自定义程序集。  
@@ -44,14 +45,14 @@ ms.locfileid: "34447084"
   
 |特性|描述|  
 |---------------|-----------------|  
-|`class`|必须的。 标识要执行的自定义程序集。 此属性的语法是 *NamespaceName.ClassName*。|  
+|`class`|必需。 标识要执行的自定义程序集。 此属性的语法是 *NamespaceName.ClassName*。|  
   
  `entryPoint` 具有以下元素。  
   
 ### <a name="assemblyidentity"></a>assemblyIdentity  
- 必须的。 `assemblyIdentity` 命名空间中的 `vstav3` 元素引用 `assemblyIdentity` 应用程序清单中的现有 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 元素。  
+ 必需。 `assemblyIdentity` 命名空间中的 `vstav3` 元素引用 `assemblyIdentity` 应用程序清单中的现有 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 元素。  
   
- 角色`assemblyIdentity`中定义其属性和[ &#60;assemblyIdentity&#62;元素&#40;ClickOnce 应用程序&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-application)。  
+ 角色`assemblyIdentity`，其属性的定义[ &#60;assemblyIdentity&#62;元素&#40;ClickOnce 应用程序&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-application)。  
   
 ## <a name="document-level-customization-example"></a>文档级自定义项示例  
   
@@ -115,7 +116,7 @@ ms.locfileid: "34447084"
   
 ## <a name="see-also"></a>请参阅  
  [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)   
- [部署 Office 解决方案的清单](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  
   
   
