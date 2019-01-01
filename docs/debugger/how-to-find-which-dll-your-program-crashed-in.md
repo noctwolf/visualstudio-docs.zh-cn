@@ -26,12 +26,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 40f27e0bec20e1dd037beaa5f60ea648c0ccb171
 ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52257092"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>如何： 查找导致程序崩溃的 DLL (C#，c + +、 Visual Basic 中， F#)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>如何：查找导致程序崩溃的 DLL（C#、C++、Visual Basic、F#）
   
  如果应用程序在调用系统 DLL 或别人的代码时出现崩溃，则需要找出在崩溃发生时哪个 DLL 是活动的。 如果在你自己的程序外部的 DLL 中崩溃，可以标识位置使用**模块**窗口。  
   
@@ -39,7 +39,7 @@ ms.locfileid: "52257092"
   
 1.  记下崩溃发生的地址。
 
-    如果地址未显示错误消息中，您可能需要使用替代方法来确定的 DLL。 如果您怀疑的系统 DLL，你可以[加载符号](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)从 Microsoft 符号服务器调试时。 否则，您可能需要[创建转储文件](../debugger/using-dump-files.md)改为使用堆的信息。 各种[工具](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/)可用于创建转储文件。
+    如果错误消息中未显示该地址，则可能需要使用其他方法来标识 DLL。 如果怀疑是系统 DLL ，则可以在调试时从 Microsoft Symbol Server [加载符号](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。 否则，可能需要改用堆信息[创建转储文件](../debugger/using-dump-files.md)。 有多种[工具](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/)可用于创建转储文件。
   
 2.  上**调试**菜单中，选择**Windows**，然后单击**模块**。  
   
