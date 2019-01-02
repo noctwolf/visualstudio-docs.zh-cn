@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d3cd5cd56010e62b6ca50a76e726cb7998070b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: d55f1ba3a9e0d30dda9d9e390bae0cc3a46f8444
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065146"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562342"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>了解有关 Visual Studio 中的调试器 Windows
 
@@ -40,7 +40,7 @@ ms.locfileid: "53065146"
 |GPU 线程|-|[如何：使用“GPU 线程”窗口](../debugger/how-to-use-the-gpu-threads-window.md)|
 |任务|CTR:+SHIFT+D、K|[使用“任务”窗口](../debugger/using-the-tasks-window.md)|
 |Python 交互式调试|SHIFT+ALT+I|[Python 交互式 REPL](../python/python-interactive-repl-in-visual-studio.md)|
-|JavaScript 控制台|CTRL+ALT+V、C|[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
+|JavaScript 控制台|CTRL+ALT+V、C|[快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |DOM 资源管理器|CTRL+ALT+V、D|[使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)|
 |实时可视化树|-|[在调试时检查 XAML 属性](../debugger/inspect-xaml-properties-while-debugging.md)|
 |实时属性资源管理器|-|[在调试时检查 XAML 属性](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -51,4 +51,4 @@ ms.locfileid: "53065146"
 
 ## <a name="see-also"></a>请参阅
 
-[调试器基础知识](../debugger/getting-started-with-the-debugger.md)
+[初探调试器](../debugger/debugger-feature-tour.md)

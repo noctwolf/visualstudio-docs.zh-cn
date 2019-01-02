@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2c39fc08528886e143bd51eb1f33219b386807
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8bc70a93bf96e34fd3ce2cd09f728b1bd450bf5
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921712"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803489"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 下表列出了在 Visual Studio 项目文件中定义的或者在 MSBuild 提供的 .targets 文件中包括的经常使用的属性。  
@@ -34,7 +34,7 @@ ms.locfileid: "49921712"
   
 ## <a name="list-of-common-properties-and-parameters"></a>通用属性和参数的列表  
   
-| 属性或参数名 | 描述 |
+| 属性或参数名 | 说明 |
 |------------------------------------| - |
 | AdditionalLibPaths | 指定其他文件夹，编译器将在这些文件夹中查找引用程序集。 |
 | AddModules | 使编译器让指定文件中的所有类型信息可供正在编译的项目使用。 此属性等效于 `/addModules` 编译器开关。 |
@@ -56,10 +56,10 @@ ms.locfileid: "49921712"
 | CscToolPath | [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 编译器 csc.exe 的路径。 |
 | CustomBeforeMicrosoftCommonTargets | 要在公用目标导入前自动导入的项目文件或目标文件的名称。 |
 | DebugSymbols | 一个布尔值，指示是否由生成来生成符号。<br /><br /> 在命令行中设置 -p:DebugSymbols=false 会禁止生成程序数据库 (.pdb) 符号文件。 |
+| DebugType | 定义要生成的调试信息的级别。 有效值为“full”、“pdbonly”和“none”。 |
 | DefineConstants | 定义条件编译器常数。 符号/值对是使用下面的语法指定的，并且彼此之间用分号分隔：<br /><br /> symbol1 = value1 ; symbol2 = value2<br /><br /> 该属性等效于 `/define` 编译器开关。 |
 | DefineDebug | 一个布尔值，指示是否定义 DEBUG 常量。 |
 | DefineTrace | 一个布尔值，指示是否定义 TRACE 常量。 |
-| DebugType | 定义要生成的调试信息的级别。 有效值为“full”、“pdbonly”和“none”。 |
 | DelaySign | 一个布尔值，指示是否对程序集进行延迟签名，而不对其进行完整签名。 |
 | 是确定的 | 一个布尔值，指示编译器是否为相同的输入生成相同的程序集。 此参数对应于 vbc.exe 和 csc.exe 编译器的 `/deterministic` 开关。 |
 | DisabledWarnings | 禁止显示指定的警告。 只有警告标识符的数值部分是必须指定的。 多个警告之间用分号分隔。 此参数对应于 vbc.exe 编译器的 `/nowarn` 开关。 |

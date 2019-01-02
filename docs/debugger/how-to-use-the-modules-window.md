@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2702eb38e895f5fa9021fae754ae1e4a9325cf18
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: ec90c7f797c8b25337a23a12321352ff487a12ca
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066777"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443920"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在模块窗口中查看 DLL 和可执行文件（C＃、C++、Visual Basic、F＃）
  
@@ -42,7 +42,7 @@ ms.locfileid: "53066777"
   
 ## <a name="use-the-modules-window"></a>使用模块窗口
 
-要在调试期间打开“模块”窗口，请选择“调试” > “Windows” > “模块”。 
+若要打开模块窗口中，在进行调试时，请选择**调试** > **Windows** > **模块**(或按**Ctrl + Alt + U**). 
   
 默认情况下，“模块”窗口按加载顺序对模块进行排序。 若要按任意窗口列排序，请选择列顶部的对应标头。  
   

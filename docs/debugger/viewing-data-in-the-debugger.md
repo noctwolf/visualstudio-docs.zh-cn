@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59e6c1879d5463682ee41d60e3928fce85c74a8d
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: c750e9e3152ae5efdf2e2ecf09034b6928fe9fa7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305138"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561848"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中创建数据的自定义的视图
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]调试器提供了许多工具，用于检查和修改程序状态。 这些工具中的大多数仅在中断模式下有效。
@@ -38,6 +38,5 @@ ms.locfileid: "52305138"
  可视化工具，可查看的对象或变量的内容中有意义的方式。 在 Visual Studio 调试器可视化工具是指可以打开使用放大镜的不同窗口![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "可视化工具图标")图标。 例如，HTML 可视化工具显示了将如何解释和显示在浏览器中的 HTML 字符串。 您可以从数据提示功能，来访问可视化工具**Watch**窗口中，**自动**窗口中，并**局部变量**窗口。 **快速监视**对话框还提供了可视化工具。 有关详细信息，请参阅[创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)。
   
 ## <a name="see-also"></a>请参阅  
- [调试器基础知识](../debugger/getting-started-with-the-debugger.md)   
- [“命令”窗口](../ide/reference/command-window.md)   
+ [先来看一下调试器](../debugger/debugger-feature-tour.md)[命令窗口](../ide/reference/command-window.md)   
  [调试器安全](../debugger/debugger-security.md)

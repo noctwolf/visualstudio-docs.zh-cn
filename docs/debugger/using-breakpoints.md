@@ -11,7 +11,6 @@ f1_keywords:
 - vs.debug.file
 - vs.debug.breakpt.new
 - vs.debug.whenbreakpointishit
-- vs.debug.breakpt.choose
 - vs.debug.breakpt.location.address
 - vs.debug.breakpt.constraints
 - vs.debug.breakpoints.delete
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 092a9fce2c84506f36717808a7630391c7c1fc89
+ms.sourcegitcommit: c7b16358a5d6f7ea1dd2f70a6ac2a8266efa9c15
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068443"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53425846"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 断点是开发人员的工具箱中最重要的调试技术之一。 若要暂停调试程序执行所需的位置设置断点。 例如，你可能想要查看代码变量的状态或查看调用堆栈的某些断点。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。
@@ -61,7 +60,7 @@ ms.locfileid: "53068443"
   
  ![断点执行已停止](../debugger/media/breakpointexecution.png "断点执行")  
   
- 当调试器在断点处停止时，您可以查看应用程序，包括变量值和调用堆栈的当前状态。 有关调用堆栈的详细信息，请参阅 [如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)。  
+ 当调试器在断点处停止时，您可以查看应用程序，包括变量值和调用堆栈的当前状态。 有关调用堆栈的详细信息，请参阅[如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)  
 
 - 断点是一个触发器。 您可以单击它，请按**F9**，或使用**调试** > **切换断点**删除或重新插入。
   
@@ -89,7 +88,7 @@ ms.locfileid: "53068443"
 
 调试器在指令处中断。  
 
-有关调用堆栈的详细信息，请参阅 [如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)。 
+有关调用堆栈的详细信息，请参阅[如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md) 
 
 在代码执行过程中直观地跟踪断点，请参阅[调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。 
   
@@ -306,8 +305,9 @@ ms.locfileid: "53068443"
 
 跟踪点显示为红色方块中的源代码的左边距和**断点**windows。 
   
-## <a name="see-also"></a>请参阅  
- [什么是调试？](../debugger/what-is-debugging.md)  
- [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)  
- [首先看一下调试](../debugger/debugger-feature-tour.md)  
- [在 Visual Studio 调试器中的断点疑难解答](../debugger/troubleshooting-breakpoints.md)  
+## <a name="see-also"></a>请参阅
+
+- [什么是调试？](../debugger/what-is-debugging.md)
+- [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)
+- [首先看一下调试](../debugger/debugger-feature-tour.md)
+- [在 Visual Studio 调试器中的断点疑难解答](../debugger/troubleshooting-breakpoints.md)

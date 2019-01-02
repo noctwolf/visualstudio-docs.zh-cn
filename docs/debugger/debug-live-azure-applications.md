@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b7f98dccebe9db183c63c6f859ceb2234fdb1acf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d3dcc5390eac698f3c135c23d497073340bbd8b2
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056913"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648815"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>调试实时 ASP.NET Azure 应用程序使用快照调试程序
 
@@ -36,7 +36,7 @@ Snappoint 和 logpoint 类似于断点，但与断点不同，snappoint 不暂�
 
 ## <a name="prerequisites"></a>系统必备
 
-* 快照调试器功能仅适用于 Visual Studio 2017 Enterprise 版本 15.5 或更高版本与**ASP.NET 和 web 开发工作负荷**。 对于 ASP.NET Core 中，您还需要 **.NET Core 开发**安装工作负载。
+* 快照调试器功能仅适用于 Visual Studio 2017 Enterprise 版本 15.5 或更高版本与**Azure 开发工作负荷**。 (下**各个组件**选项卡上，您发现下**调试和测试** > **快照调试程序**。)
 
     如果尚未安装，安装[Visual Studio 2017 Enterprise 版本 15.5](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)或更高版本。 如果要从以前的 Visual Studio 2017 安装更新，运行 Visual Studio 安装程序并签入的快照调试器组件**ASP.NET 和 web 开发工作负荷**。
 
