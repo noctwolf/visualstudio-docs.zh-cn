@@ -16,12 +16,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 160922088eb0d5f517de072649df94479e4d7e31
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9e43236c32f0ce7e4e260a1d44b1e64600b6dd17
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062782"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802246"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "53062782"
 
      [学习教程](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) |                              [浏览文档](https://docs.asp.net/) |                                  [观看视频](http://www.asp.net/vnext)
 
--   **[HTML/Javascript (Apache Cordova) 中制作跨平台移动应用](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)** : Apache Cordova 是基于 HTML/CSS/Javascript 的一个开放源代码跨平台环境。  Javascript 代码在面向特定平台的包装器中进行执行，并启用对设备所有硬件功能的访问。 开发适用于 Apple 应用商店、Android 应用商店和 Windows 应用商店的应用程序。
+-   **[在 HTML/Javascript (Apache Cordova) 中创建跨平台的移动应用程序](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**：             Apache Cordova 是基于 HTML/CSS/Javascript 的一个开源跨平台环境。  Javascript 代码在面向特定平台的包装器中进行执行，并启用对设备所有硬件功能的访问。 开发适用于 Apple 应用商店、Android 应用商店和 Windows 应用商店的应用程序。
 
      [加载示例](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) | [学习教程](http://taco.visualstudio.com/docs/get-started-first-mobile-app/) |                              [浏览文档](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) |                               [观看视频](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
--   **[制作跨平台移动应用程序中的C#或 Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**  ： 开始使用 Visual Studio 和 Xamarin 的工具来创建移动应用程序从共享代码库在 Android、 iOS 和通用 Windows 平台上运行。
+-   **[在 C# 或 Visual Basic (Xamarin) 中制作跨平台的移动应用程序](../cross-platform/visual-studio-and-xamarin.md)** ：开始使用 Visual Studio 和适用于 Xamarin 的工具从共享代码库创建在 Android、iOS 和通用 Windows 平台上运行的移动应用程序。
 
      加载示例：[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/)（本机 UI）或 [Xamarin 窗体 Todo 示例](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo)（Xamarin.Forms 共享 UI）| [学习教程](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) |                            [浏览文档](https://msdn.microsoft.com/library/mt299001.aspx) |                                 [观看视频](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 
@@ -60,7 +60,7 @@ ms.locfileid: "53062782"
 
      [加载示例](https://github.com/microsoft/windows-classic-samples) |                    [学习教程](https://msdn.microsoft.com/library/dd492171.aspx)  |                              [浏览文档](https://dev.windows.com/desktop)
 
--   **[制作 Office 应用程序](https://msdn.microsoft.com/library/fp161347.aspx)** :开始创建 Office 应用程序，可以扩展并使用 Office 365 服务中自定义 Word、 Excel、 Outlook 和 Powerpoint。
+-   **[制作 Office 应用程序](https://msdn.microsoft.com/library/fp161347.aspx)** :开始创建 Office 应用程序，可以扩展并使用 Office 365 服务中自定义 Word、 Excel、 Outlook 和 PowerPoint。
 
      [加载示例](https://code.msdn.microsoft.com/office365/) |                      [学习教程](http://dev.office.com/getting-started/office365apis) |                             [浏览文档](https://msdn.microsoft.com/office/aa905340.aspx) |                                  [观看视频](http://dev.office.com/videos)
 
