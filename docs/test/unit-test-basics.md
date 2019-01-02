@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dff6910f74b9a08a8064e4fb88828a21940c8ab9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2b56608a0d81be17fbd68ad7ccd0d5626a818376
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053164"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740346"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -257,7 +257,7 @@ public void My_Test ()
 
 2.  在“测试资源管理器”中，选择测试方法，然后从快捷菜单选择“调试选定的测试”。
 
-了解有关 [调试单元测试](../debugger/debugging-in-visual-studio.md)的更多详细信息。
+了解有关 [调试单元测试](../debugger/debugger-feature-tour.md)的更多详细信息。
 
 **问：如果使用的是 TDD，该如何从我的测试生成代码？**
 

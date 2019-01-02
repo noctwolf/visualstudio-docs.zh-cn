@@ -26,12 +26,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: e4294284ff2911fd05cc771bf4deaad368e3c28b
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: a4fb171ec575fdcf85879ed62252c9d373283f62
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228820"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802626"
 ---
 # <a name="annotating-structs-and-classes"></a>批注结构和类
 你可以通过使用类似于固定条件注释批注结构和类成员，它们都假定为满足的任何函数调用或进入/退出函数涉及封闭结构作为参数或结果值。
@@ -79,4 +79,12 @@ ms.locfileid: "47228820"
     ```
 
 ## <a name="see-also"></a>请参阅
- [使用 SAL 注释减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)[了解 SAL](../code-quality/understanding-sal.md) [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)[对函数行为进行批注](../code-quality/annotating-function-behavior.md)[对锁定行为进行批注](../code-quality/annotating-locking-behavior.md)[指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)[内部函数](../code-quality/intrinsic-functions.md)[最佳实践和示例](../code-quality/best-practices-and-examples-sal.md)
+
+- [使用 SAL 批注以减少 C/C++ 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+- [了解 SAL](../code-quality/understanding-sal.md)
+- [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)
+- [对函数行为进行批注](../code-quality/annotating-function-behavior.md)
+- [对锁定行为进行批注](../code-quality/annotating-locking-behavior.md)
+- [指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+- [内部函数](../code-quality/intrinsic-functions.md)
+- [最佳做法和示例](../code-quality/best-practices-and-examples-sal.md)

@@ -1,5 +1,5 @@
 ---
-title: 预期&#39;(&#39; (JavaScript) |Microsoft Docs
+title: 预期 '(' (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31f611c2dc387a4aec574a3d5f8525b7b298d39d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: baadfed3003f3b54d9d9cd4068b15a818b3858ce
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942278"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804703"
 ---
-# <a name="expected-3939-javascript"></a>预期&#39;(&#39; (JavaScript)
+# <a name="expected--javascript"></a>应有“(”(JavaScript)
 您试图将括在括号内，一组表达式，但不是包括左括号。 某些表达式必须括在一组左、 右括号。 请注意，使用下面的示例中的括号。  
   
 ```JavaScript  

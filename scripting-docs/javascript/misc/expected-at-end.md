@@ -1,5 +1,5 @@
 ---
-title: 预期&#39; @end &#39; |Microsoft Docs
+title: 预期@end|Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a510fd034d1053e010a13d28c480f1b0ceb9017
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a9138a7152dae44ff5f293e1a06de146d66bb125
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857973"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803684"
 ---
-# <a name="expected-39end39"></a>预期&#39;@end&#39;
+# <a name="expected-end"></a>预期\@结束
 尝试创建一个有条件编译的块的代码，但不是包括<strong>@end</strong>末尾的语句。 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 语句可以有条件地编译括在<strong>@if/ @end</strong>块。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  

@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1d2b37a988f0078149228cce808397f9fb915d1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062433"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740268"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 中的新增功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ ms.locfileid: "53062433"
 -   **C++/Android**。 配合使用 [用于跨平台移动开发的 Visual C++](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) 模板和 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) 等第三方工具，创建适用于 Windows 和 Android 的本机应用。
 
 ## <a name="debugging-and-diagnostics"></a>调试和诊断
- 有关新增调试功能的信息，请参阅 [What’s New for the Debugger in Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)。
+ 有关新增调试功能的信息，请参阅 [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015)。
 
  有关新增诊断中的新增功能的信息，请参阅[What's New in 分析工具](./profiling/what-s-new-in-profiling-tools.md)。
 
  下面是对代码执行不同类型的诊断和分析的新功能和改进的工具：
 
 ### <a name="perftips"></a>性能提示
- 性能提示显示调试过程中方法的执行时间，可使你快速确认瓶颈，而无需调用探查器。 若要开始，请参阅[性能提示： 性能信息在快速使用 Visual Studio 调试时](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ 性能提示显示调试过程中方法的执行时间，可使你快速确认瓶颈，而无需调用探查器。 若要开始使用，请参阅 [性能提示：使用 Visual Studio 调试时的性能信息一览](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>错误列表
  错误列表现在支持任何列的筛选。 它还在你输入时显示整个 C# 或 Visual Basic 解决方案中错误、警告和代码分析的实时视图，即使代码更改生成上千个警告时也是如此。 新的“错误列表”重新兼容现有的用法。 有关更多信息，请参见 [Error List Window](./ide/reference/error-list-window.md)。

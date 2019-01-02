@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ec436383aa745ed033858724b4d4b2ff8b929c6
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 7af96fd1973b32587a217a1cd57ef0d99b0cd626
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863915"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803002"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>将子菜单添加到菜单
 本演练基于在演示[向 Visual Studio 菜单栏添加菜单](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)通过演示如何添加到子菜单**TestMenu**菜单。
@@ -156,4 +156,6 @@ ms.locfileid: "48863915"
 5.  上**TestMenu**菜单上，单击**子菜单**，然后单击**测试子命令**。 一个消息框应显示，显示的文本，"第命令内 TestCommand.SubItemCallback() 测试"。
 
 ## <a name="see-also"></a>请参阅
- [将菜单添加到 Visual Studio 菜单栏](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)[命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
+
+- [向 Visual Studio 菜单栏添加菜单](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
+- [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

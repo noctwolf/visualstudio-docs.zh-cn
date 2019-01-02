@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf1ca8fabf70f2d4fbe5920803773af07db0a99
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 4ee9d52f63f3158979f2f018ea44d5b68d6612c1
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389223"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562329"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>在并行堆栈窗口中查看线程和任务
 
@@ -48,7 +48,7 @@ ms.locfileid: "52389223"
 
 ![在并行堆栈窗口的工具栏](../debugger/media/parallel_stackstoolbar.png "并行堆栈工具栏")  
   
-|图标|控件|描述|  
+|图标|控件|说明|  
 |-|-|-|  
 |![线程/任务组合框](media/parallel_toolbar1.png "线程/任务组合框")|**线程**/**任务**组合框|在线程的调用堆栈和任务的调用堆栈之间切换视图。 有关更多信息，请参见[任务视图](#tasks-view)和[线程视图](#threads-view)。|  
 |![显示仅标记图标](media/parallel_toolbar2.png "仅显示已标记项图标")|仅显示已标记项|显示仅为如标记在其他调试器窗口中的线程调用堆栈**GPU 线程**窗口和**并行监视**窗口。|  
@@ -59,7 +59,7 @@ ms.locfileid: "52389223"
 ### <a name="stack-frame-icons"></a>堆栈帧的图标
 以下图标提供有关所有视图中的活动和当前堆栈帧的信息：
 
-|图标|描述|  
+|图标|说明|  
 |-|-|  
 |![黄色箭头](media/icon_parallelyellowarrow.gif)|指示当前线程的当前位置 （活动堆栈帧）。|
 |![线程图标](media/icon_parallelthreads.gif)|指示非当前线程的当前位置 （活动堆栈帧）。|
@@ -70,7 +70,7 @@ ms.locfileid: "52389223"
 
 ![在并行堆栈窗口的快捷菜单](../debugger/media/parallel_contmenu.png "并行堆栈窗口中的快捷菜单")  
 
-|Menu item|描述|  
+|Menu item|说明|  
 |-|-|  
 |**标记**|标记选定项。|  
 |**取消标记**|取消标记选定项。|  
@@ -100,7 +100,7 @@ ms.locfileid: "52389223"
 
 下表介绍的主要功能**线程**视图：  
   
-|标注|元素名称|描述|  
+|标注|元素名称|说明|  
 |-|-|-|  
 |1|调用堆栈段或节点|包含一系列的一个或多个线程的方法。 如果帧没有连接到该箭头线，框架将显示线程的整个调用路径。|  
 |2|蓝色突出显示|指示当前线程的调用路径。|  
@@ -140,8 +140,7 @@ ms.locfileid: "52389223"
 ## <a name="see-also"></a>请参阅  
  [开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)   
  [演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [调试器基础知识](../debugger/getting-started-with-the-debugger.md)   
- [调试托管代码](../debugger/debugging-managed-code.md)   
+ [先来看一下调试器](../debugger/debugger-feature-tour.md)[调试托管代码](../debugger/debugging-managed-code.md)   
  [并行编程](/dotnet/standard/parallel-programming/index)   
  [使用“任务”窗口](../debugger/using-the-tasks-window.md)   
  [Task 类](../extensibility/debugger/task-class-internal-members.md)

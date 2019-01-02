@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c490d15f27801dff6bb09f6356ad7c665b09c558
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: c06c77d2bc5a291b4dd2d624352a25abd29338b7
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160187"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740387"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
@@ -223,7 +223,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 ![Visual Studio 中新的“异常帮助程序”对话框](../debugger/media/intellitrace-step-back-icons-description.png  "“后退”和“前进”按钮")
 
-有关详细信息，请参阅[使用 IntelliTrace 后退查看快照](../debugger/how-to-use-intellitrace-step-back.md)页。
+有关详细信息，请参阅[使用 IntelliTrace 后退查看快照](../debugger/view-historical-application-state.md)页。
 
 ### <a name="containerization"></a>容器化
 
@@ -278,7 +278,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 作为“使用 .NET 的移动开发”工作负载的一部分，熟悉 C#、.NET 和 Visual Studio 的开发人员可使用 Xamarin 传递本地 Android、iOS 和 Windows 应用。 使用 Xamarin 开发移动应用（包括在 Android、iOS 和 Windows 设备上进行远程调试）时，开发人员同样可享受强大的功能和工作效率 &mdash; 无需学习 Objective-C 或 Java 等本机编程语言。
 
-有关详细信息，请参阅 [Visual Studio 和 Xamarin](../cross-platform/visual-studio-and-xamarin.md) 页。
+有关详细信息，请参阅 [Visual Studio 和 Xamarin](/xamarin/) 页。
 
 ### <a name="entitlements-editor"></a>权利编辑器
 
@@ -366,7 +366,7 @@ Visual Studio 2017 所有版本随附：
 我们经常更新 Visual Studio 2017 的新功能，以使开发体验越来越好。 下面是一些最值得注意的更新（处于实验预览状态）的扼要重述：
 
 * **[实时共享](https://visualstudio.microsoft.com/services/live-share/)**，一款新工具，可让你与团队成员共享代码库及其上下文，并直接从 Visual Studio 内获得即时双向协作。 利用“实时共享”，团队成员可以无缝且安全地读取、导航、编辑和调试已与他们共享的项目。<br><br>有关详细信息，请参阅[实时共享常见问题解答](/visualstudio/liveshare/faq)。<br><br>
-* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**，一种使用 AI 来增强软件开发的新功能，可提供更好的上下文感知代码、指导开发人员对其团队的模式和样式进行编码、找出难以捕捉的代码问题并将代码评审重点放在真正具有影响的方面。 <br><br>有关详细信息，请参阅 [IntelliCode 常见问题解答](../ide/not-in-toc/intellicode-faq.md)。
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**，一种使用 AI 来增强软件开发的新功能，可提供更好的上下文感知代码、指导开发人员对其团队的模式和样式进行编码、找出难以捕捉的代码问题并将代码评审重点放在真正具有影响的方面。 <br><br>有关详细信息，请参阅 [IntelliCode 常见问题解答](/visualstudio/intellicode/faq)。
 
 想要了解更多关于 Visual Studio 2017 的其他功能吗？ 请参阅 [Visual Studio 路线图](/visualstudio/productinfo/vs2018-roadmap)页。
 

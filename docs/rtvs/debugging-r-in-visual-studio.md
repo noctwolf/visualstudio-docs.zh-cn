@@ -10,16 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: c89eed2f3e15259489ce43920b912db14ab862a6
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 1f0f37be96603ed5d1e53c5ef36ea011d636dcaa
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235207"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804846"
 ---
 # <a name="debug-r-in-visual-studio"></a>在 Visual Studio 中调试 R
 
-针对 Visual Studio 的 R 工具 (RTVS) 集成了 Visual Studio 的完整调试体验（请参阅[在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)）。 此支持包括断点、附加到运行进程、检查和监视变量以及检查调用堆栈。 本文随后探讨了 R 和 RTVS 独有的调试特性性。
+针对 Visual Studio 的 R 工具 (RTVS) 集成了 Visual Studio 的完整调试体验（请参阅[在 Visual Studio 中进行调试](/visualstudio/debugger/debugger-feature-tour)）。 此支持包括断点、附加到运行进程、检查和监视变量以及检查调用堆栈。 本文随后探讨了 R 和 RTVS 独有的调试特性性。
 
 在 R 项目中启动 R 启动文件的调试器与启动其他项目类型的调试器相同：使用“调试” > “启动调试”、按 F5 键，或选择调试工具栏上的“源化启动文件”： 
 
@@ -55,7 +55,7 @@ add <- function(x, y) {
 
 环境浏览器支持若干特殊命令：
 
-| 命令 | 描述 |
+| 命令 | 说明 |
 | --- | --- |
 | n | 下一个：运行代码文件中的下一个语句（与逐步执行相同）。 |
 | 秒 | 单步执行：运行代码文件中的下一个语句，如果下个一语句是函数调用，则单步执行函数范围。 |

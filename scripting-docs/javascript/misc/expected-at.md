@@ -1,5 +1,5 @@
 ---
-title: 预期&#39;@&#39; |Microsoft Docs
+title: 预期 ' @' |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f007129aa8da3ac49112fbc83b7abd31e4356c4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 191402a9ba265e5acfb15d1931e260f6b366687e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856842"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804547"
 ---
-# <a name="expected-3939"></a>预期&#39;@&#39;
+# <a name="expected-"></a>应有“@”
 尝试创建一个变量以与使用的条件编译语句一起使用`@set`语句，但是没有按照 at 符号"**@**"的变量名称之前。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  

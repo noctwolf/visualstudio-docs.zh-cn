@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9160a5ebca6efe2cca48a2b8832a51fab3c6ca5a
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: dd600348e9e0cbb5281437b9ad5542c865ef6575
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159732"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739966"
 ---
 # <a name="install-visual-studio-2017"></a>安装 Visual Studio 2017
 
@@ -142,7 +142,7 @@ ms.locfileid: "53159732"
 
    例如，若要[生成 C++ 应用](../ide/getting-started-with-cpp-in-visual-studio.md)，请单击“已安装”，展开“Visual C++”，再选择要生成的 C++ 项目类型。
 
-   若要[生成 C# 应用](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)，请单击“已安装”，展开“Visual C#”，再选择要生成的 C# 项目类型。
+   若要[生成 C# 应用](../get-started/csharp/tutorial-wpf.md)，请单击“已安装”，展开“Visual C#”，再选择要生成的 C# 项目类型。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: 可以&#39;没有&#39;break&#39;位于循环外 |Microsoft Docs
+title: 不能有 break 位于循环外 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,14 +20,14 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb23f1bc3de087515cad9ba4910cf2ebaf640353
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce142e07a47b73778ebae6b26452806b3a036d41
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928550"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802395"
 ---
-# <a name="can39t-have-39break39-outside-of-loop"></a>可以&#39;没有&#39;break&#39;位于循环外
+# <a name="cant-have-break-outside-of-loop"></a>“break”不能位于循环外
 你尝试使用**中断**位于循环外的关键字。 **中断**关键字用于终止循环或`switch`语句。 它必须在循环的正文中嵌入或`switch`语句。 但是，**标签**可以按照 break 关键字。  
   
 ```  

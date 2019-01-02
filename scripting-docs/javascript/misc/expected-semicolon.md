@@ -1,5 +1,5 @@
 ---
-title: 预期 &#39;&#39; |Microsoft 文档
+title: 预期; |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,23 +20,23 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c54fbd2eb72f6e6401eca85f61b0651a3ead4900
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: eabe34fdcb4551fc8bc794b84875a10a32e5ec33
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632787"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804333"
 ---
-# <a name="expected-3939"></a>预期 &#39;&#39;
-你试图将多个语句放在一行中，但不得未用分号分隔它们。 使用分号终止语句。 虽然可以将多个语句放在一行上，必须从以分号下一步语句分隔每个。  
+# <a name="expected-"></a>应用“;”
+您试图将多个语句放在一行，但不是未用分号分隔它们。 使用分号终止语句。 虽然可以将多个语句放在单个行上，必须用分号分隔每个。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   将标记每个以分号的语句的末尾。  
+-   标记每个语句提供以分号的结尾。  
   
--   请确保函数调用正确地使用括号。  
+-   请确保函数调用正确使用括号。  
   
--   请确保你未忘记的标头中分号**为**循环。  
+-   请确保不是否忘记了的标头中分号**为**循环。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编写 JavaScript 代码](../../javascript/writing-javascript-code.md)

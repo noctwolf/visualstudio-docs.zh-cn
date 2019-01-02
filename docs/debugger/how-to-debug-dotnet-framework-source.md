@@ -1,5 +1,5 @@
 ---
-title: 如何： 调试.NET Framework 源代码 |Microsoft Docs
+title: 如何：调试.NET Framework 源代码 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/19/2018
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 234d9979ea1a16b917111e2a8937ad71dd55224f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: a627c2f0880aee9906e3478b268d688c59b7d090
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389275"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443907"
 ---
 # <a name="how-to-debug-net-framework-source"></a>如何：调试 .NET Framework 源代码
 
@@ -55,7 +55,7 @@ ms.locfileid: "52389275"
   
 ### <a name="to-load-symbols-from-the-modules-or-call-stack-windows"></a>若要加载的符号从模块或调用堆栈窗口  
   
-1. 在调试期间，打开选择窗口**调试** > **Windows** > **模块**或**调用堆栈**. 
+1. 在调试期间，打开选择窗口**调试** > **Windows** > **模块**(或按**Ctrl + Alt + U**)或**调试** > **Windows** > **调用堆栈**(**Ctrl + Alt + C**)。 
    
 1. 右键单击的模块未加载符号。 在中**模块**窗口中，符号加载状态处于**符号状态**列。 在中**调用堆栈**窗口中，状态不**帧状态**列，并在帧是灰显。 
    
@@ -66,5 +66,5 @@ ms.locfileid: "52389275"
    - 选择**符号设置**以打开**符号**页。 上**符号**页面上，在**符号文件 (.pdb) 位置**，选择**Microsoft 符号服务器**从公共 Microsoft 符号服务器访问符号。 选择要添加其他符号位置和更改加载顺序的工具栏按钮。 选择**确定**关闭对话框。 
   
 ### <a name="see-also"></a>请参阅  
- [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
- [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [调试托管代码](../debugger/debugging-managed-code.md)   
+ [指定符号 (.pdb) 文件和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

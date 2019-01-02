@@ -1,5 +1,5 @@
 ---
-title: 演练： 使用 IntelliTrace 调试 SharePoint 应用程序 |Microsoft Docs
+title: 演练：使用 IntelliTrace 调试 SharePoint 应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59f801c79c8bb19a63064bdac2fe717ee3e3a845
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 307d4842f25b3227f3857cf81be154a5db817a7e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295575"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53804281"
 ---
-# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>演练： 使用 IntelliTrace 调试 SharePoint 应用程序
+# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>演练：使用 IntelliTrace 调试 SharePoint 应用程序
 
 通过使用 IntelliTrace，您可以更轻松地调试 SharePoint 解决方案。 传统的调试器为您提供解决方案的快照仅在当前时刻。 但是，可以使用 IntelliTrace 来查看过去发生在你的解决方案中的事件和它们发生并导航到代码的上下文。
 
@@ -206,7 +206,7 @@ ms.locfileid: "51295575"
     {
         // The following line induces an error to demonstrate debugging.
         // Remove this line later for proper operation.
-        throw new System.InvalidOperationException("A serious error occurred!"); 
+        throw new System.InvalidOperationException("A serious error occurred!");
         try
         {
             using (SPSite site = new SPSite(siteUrl))
@@ -261,7 +261,7 @@ ms.locfileid: "51295575"
 
 2. 显示公告和任务列表的内容。
 
-     公告列表应包含名为的新公告**已激活功能： IntelliTraceTest_Feature1**，并且任务列表中应具有名为的新任务**停用功能： IntelliTraceTest_Feature1**。 如果缺少任一一项时，验证是否已激活该功能。 如果未激活，则将其激活。
+     公告列表应包含名为的新公告**已激活功能：IntelliTraceTest_Feature1**，并且任务列表中应具有名为的新任务**停用功能：IntelliTraceTest_Feature1**。 如果缺少任一一项时，验证是否已激活该功能。 如果未激活，则将其激活。
 
 3. 通过执行以下步骤停用功能：
 
@@ -280,9 +280,9 @@ ms.locfileid: "51295575"
 如果运行 SharePoint 的系统上安装 Microsoft Monitoring Agent，则可以通过使用 IntelliTrace 返回的泛型信息比更具体的数据来调试 SharePoint 解决方案。 此代理适用 Visual Studio 之外使用 PowerShell cmdlet 以捕获你的 SharePoint 解决方案运行时的调试信息。
 
 > [!NOTE]
-> 在本部分中的配置信息是特定于此示例。 有关其他配置选项的详细信息，请参阅[使用 IntelliTrace 独立收集器](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector)。
+> 在本部分中的配置信息是特定于此示例。 有关其他配置选项的详细信息，请参阅[使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
-1. 正在运行 SharePoint 的计算机上[设置 Microsoft 监视代理并开始监视你的解决方案](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector)。
+1. 正在运行 SharePoint 的计算机上[设置 Microsoft 监视代理并开始监视你的解决方案](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
 2. 停用功能：
 
@@ -310,7 +310,7 @@ ms.locfileid: "51295575"
 
 2. 选择**调试异常**按钮。
 
-     如果系统提示，请加载符号文件。 在中**IntelliTrace**窗口中，异常将突出显示为"引发： 发生严重错误 ！"。
+     如果系统提示，请加载符号文件。 在中**IntelliTrace**窗口中，异常将突出显示为"引发：出现严重错误 ！"。
 
      在 IntelliTrace 窗口中，选择要显示的代码，失败的异常。
 
@@ -334,6 +334,6 @@ ms.locfileid: "51295575"
 
 ## <a name="see-also"></a>请参阅
 
-[验证和调试 SharePoint 代码](../sharepoint/verifying-and-debugging-sharepoint-code.md)  
-[IntelliTrace](/visualstudio/debugger/intellitrace)  
-[演练： 使用单元测试来验证 SharePoint 代码](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
+- [验证和调试 SharePoint 代码](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [IntelliTrace](../debugger/intellitrace.md)
+- [演练：使用单元测试来验证 SharePoint 代码](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))

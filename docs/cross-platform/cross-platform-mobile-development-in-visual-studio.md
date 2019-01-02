@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: c28dcf247a9e0faaec13ddc4b3006cf6a93fda90
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 5923e3106ad93608effe2604d4305cc0f3038a58
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496137"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802795"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 
@@ -36,7 +36,7 @@ ms.locfileid: "46496137"
 |[安装 Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[了解 Visual Studio 中的 Xamarin](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Xamarin 移动应用开发文档](/xamarin/) |
-|[适用于 Xamarin 应用的 DevOps](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
+|[适用于 Xamarin 应用的 DevOps](/xamarin/tools/ci/devops/) |
 |[了解 Visual Studio 中的通用 Windows 应用](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[了解 Swift 与 C# 之间的相似之处](http://aka.ms/scposter) (download.microsoft.com)|
 
@@ -54,7 +54,7 @@ ms.locfileid: "46496137"
 
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>使用 Xamarin.Forms 设计一组在所有设备中呈现的页面
 
- 根据应用设计的复杂性，可以考虑使用项目模板“移动应用”  组中的 **Xamarin.Forms** 模板生成应用。 Xamarin.Forms 是一个 UI 工具包，可用于创建在 Android、iOS 和 Windows 之间共享的单一界面。  编译 Xamarin.Forms 解决方案时，会分别获得一个 Android 应用、iOS 应用和 Windows 应用。 有关更多详细信息，请参阅[了解关于使用 Xamarin 进行移动开发的信息](../cross-platform/learn-about-mobile-development-with-xamarin.md)和 [Xamarin.Forms 文档](/xamarin/xamarin-forms/)。
+ 根据应用设计的复杂性，可以考虑使用项目模板“移动应用”  组中的 **Xamarin.Forms** 模板生成应用。 Xamarin.Forms 是一个 UI 工具包，可用于创建在 Android、iOS 和 Windows 之间共享的单一界面。  编译 Xamarin.Forms 解决方案时，会分别获得一个 Android 应用、iOS 应用和 Windows 应用。 有关更多详细信息，请参阅[了解关于使用 Xamarin 进行移动开发的信息](/xamarin/cross-platform/get-started/introduction-to-mobile-development/)和 [Xamarin.Forms 文档](/xamarin/xamarin-forms/)。
 
 ####  <a name="ShareHTML"></a> 在 Android、iOS 和 Windows 应用间共享代码
 
@@ -139,7 +139,7 @@ ms.locfileid: "46496137"
 |[安装用于跨平台移动开发的 Visual C++ 工具。](https://msdn.microsoft.com/library/dn707591.aspx) （MSDN 库）|
 |[了解面向多个平台使用 C++ 的更多信息。](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[安装所需内容，然后针对 Android 创建本机活动应用程序](https://msdn.microsoft.com/library/dn707595.aspx) （MSDN 库）|
-|[深入了解如何与 Android 和 Windows 应用共享 C++ 代码](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[了解关于与 Android 和 Windows 应用程序共享 C++ 代码的更多信息](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[C++ 的跨平台移动开发示例](https://msdn.microsoft.com/library/dn707596.aspx)（MSDN 库）|
 |[C++ 的其他跨平台移动开发示例](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 

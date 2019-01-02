@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c581797c36cfd69032ef635a9944b339333d6de
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885754"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684673"
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 
@@ -33,12 +33,12 @@ ms.locfileid: "49885754"
 |区域|任务|更多相关信息|
 |----------|----------| - |
 |安装|安装 Visual Studio。|[安装 Visual Studio](../install/install-visual-studio.md)|
-||安装、更新或删除本地帮助内容。|[安装和管理本地帮助内容](../ide/install-and-manage-local-content.md)|
+||安装、更新或删除本地帮助内容。|[安装和管理本地帮助内容](../help-viewer/install-manage-local-content.md)|
 |工具箱|将经典 COM 控件添加到“工具箱”。|[工具箱](../ide/reference/toolbox.md)|
 |生成|使用注册组件的生成后事件。|[了解自定义生成步骤和生成事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||在生成 C++ 项目时包括一个注册步骤。||
 |调试|调试使用提升的权限运行的应用程序。|[调试器设置和准备](../debugger/debugger-settings-and-preparation.md)|
-||调试在其他用户帐户下运行的应用程序，例如 ASP.NET 网站。|[调试 ASP.NET 和 AJAX 应用程序](../debugger/debugging-aspnet-and-ajax-applications.md)|
+||调试在其他用户帐户下运行的应用程序，例如 ASP.NET 网站。|[调试 ASP.NET 和 AJAX 应用程序](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
 ||在区域中调试 XAML 浏览器应用程序 (XBAP)。|[WPF 主机 (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||使用模拟器可以调试 Microsoft Azure 的云服务项目。|[在 Visual Studio 中调试云服务](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||为远程调试配置防火墙。|[远程调试](../debugger/remote-debugging.md)|
