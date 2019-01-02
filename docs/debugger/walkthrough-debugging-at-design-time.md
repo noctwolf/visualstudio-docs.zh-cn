@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4b0996faf26279ff8018e0e072fd25a33d783
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 86e6aa0da41a16445b3e3328a1ee0bc84063dd52
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063417"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561718"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>在设计时在 Visual Studio 中调试 (C#，c + +、 Visual Basic 中， F#)
 
@@ -106,5 +106,4 @@ ms.locfileid: "53063417"
    加载页时命中断点。
   
 ## <a name="see-also"></a>请参阅  
- [调试器安全性](../debugger/debugger-security.md)   
- [调试器基础知识](../debugger/getting-started-with-the-debugger.md)
+ [先来看一下调试器](../debugger/debugger-feature-tour.md)[调试器安全](../debugger/debugger-security.md)   

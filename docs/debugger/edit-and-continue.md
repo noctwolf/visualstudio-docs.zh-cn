@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f07d9a8f05ab63e6b945fd590fdf9fa576ca48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 64018143403555dfa671c7fb79be09dcd04d9011
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048576"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562160"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>编辑代码并在 Visual Studio 中继续调试 (C#，VB、 c + +)
 “编辑并继续”是一种省时的功能，使你能够在程序处于中断模式时更改源代码。 通过选择执行命令如恢复程序执行时**继续**或**步骤**、 编辑和继续自动应用代码更改有一些限制。 这允许你在调试会话期间更改代码，而不是停止程序，重新编译整个程序，再重新启动调试会话。  
@@ -49,4 +49,4 @@ ms.locfileid: "53048576"
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [“选项”对话框 ->“调试”->“编辑并继续”](https://msdn.microsoft.com/library/bcew296c.aspx)   
- [调试器基础知识](../debugger/getting-started-with-the-debugger.md)
+ [初探调试器](../debugger/debugger-feature-tour.md)

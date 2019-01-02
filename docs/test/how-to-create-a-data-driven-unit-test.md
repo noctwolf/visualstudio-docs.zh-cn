@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4806003d7a533e2f3e9523f877f6e002e8d15b5b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d7c8e24505fb237fb35efd195ee1c8d17a4d8645
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067445"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739064"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：创建数据驱动的单元测试
 
@@ -169,4 +169,4 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [单元测试代码](../test/unit-test-your-code.md)
 - [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)
-- [通过适用于托管代码的 Microsoft 单元测试框架编写 .NET Framework 的单元测试](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+- [通过适用于托管代码的 Microsoft 单元测试框架编写 .NET Framework 的单元测试](../test/unit-test-your-code.md)

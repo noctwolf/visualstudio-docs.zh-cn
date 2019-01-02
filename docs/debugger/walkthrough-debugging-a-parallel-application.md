@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bcfe8ca54236fc2134d431f5f6dd16d4b82a48
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 0623c3e0fdd0db0315e5fe719c9a81ec97e6a2c6
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060182"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562095"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>演练：调试 Visual Studio 中的并行应用程序
 本演练演示如何使用“并行任务”和“并行堆栈”窗口调试并行应用程序。 这些窗口有助于您了解和验证使用的代码的运行时行为[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[并发运行时](/cpp/parallel/concrt/concurrency-runtime)。 本演练提供了具有内置断点的代码示例。 本演练演示如何在代码中断后使用“并行任务”和“并行堆栈”窗口检查代码。  
@@ -298,7 +298,7 @@ ms.locfileid: "53060182"
   
 ## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Debugger Basics](../debugger/getting-started-with-the-debugger.md) （调试器基础知识）  
+ [初探调试器](../debugger/debugger-feature-tour.md)  
  [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
  [并行编程](/dotnet/standard/parallel-programming/index)   
  [并发运行时](/cpp/parallel/concrt/concurrency-runtime)   

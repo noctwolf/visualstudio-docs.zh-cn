@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c7fbfca9a63ac736972ebea01a854e24f90188
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: HT
+ms.openlocfilehash: 97c4694ec66c9769f9433c08e74e4d0a14a952c2
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057913"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561520"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>管理 Visual Studio 中调试器的异常
 
@@ -227,4 +227,4 @@ public class GenericException<T> : Exception
 [如何：在发生异常后检查系统代码](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
 [如何：使用本机运行时检查](../debugger/how-to-use-native-run-time-checks.md)<br/>
 [使用运行时检查（不用 C 运行时库）](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[教程：了解如何使用 Visual Studio 进行调试](../debugger/getting-started-with-the-debugger.md)
+[初探调试器](../debugger/debugger-feature-tour.md)

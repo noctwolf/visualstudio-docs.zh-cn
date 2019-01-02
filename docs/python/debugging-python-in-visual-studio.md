@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0e4cc2ff43b59fff0aac70d9cc13a0a00662e209
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 64eafbffcf453832dd2ba764ef3396cb7129be89
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068430"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561744"
 ---
 # <a name="debug-your-python-code"></a>调试 Python 代码
 
@@ -84,7 +84,7 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 
 ### <a name="inspect-and-modify-values"></a>检查和修改值
 
-在调试器中停止时，可检查和修改变量的值。 还可以使用监视窗口监视单个变量，以及自定义表达式。 （请参阅[检查变量](../debugger/getting-started-with-the-debugger.md#inspect-variables-with-the-autos-and-locals-windows)，了解常规详细信息。）
+在调试器中停止时，可检查和修改变量的值。 还可以使用监视窗口监视单个变量，以及自定义表达式。 （请参阅[检查变量](../debugger/debugger-feature-tour.md#inspect-variables-with-the-autos-and-locals-windows)，了解常规详细信息。）
 
 若要使用数据提示查看值，只需将鼠标悬停在编辑器中的任何变量上即可。 可以单击值进行更改：
 

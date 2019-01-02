@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e649e5d795df537e48afe3dad738c73ee5b7b51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178912"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561624"
 ---
 # <a name="debugging-web-applications"></a>调试 Web 应用程序
 本节说明如何调试几种类型的 Web 应用程序。  
@@ -41,6 +41,5 @@ ms.locfileid: "39178912"
 ## <a name="see-also"></a>请参阅  
  [Debugging Web Applications and Script](../debugger/debugging-web-applications-and-script.md) （调试 Web 应用程序和脚本）  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
- [Debugger Basics](../debugger/getting-started-with-the-debugger.md) （调试器基础知识）  
- [在 Visual Studio 中进行调试](../debugger/index.md)  
+ [先来看一下调试器](../debugger/debugger-feature-tour.md) [Visual Studio 中调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)

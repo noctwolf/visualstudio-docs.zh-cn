@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 40b2d37e5b416047aa8a6fecf8c2c9cca0c681ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4ac332e7feca281f49ad6b56030a26dbd9a41e47
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062975"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803067"
 ---
 # <a name="design-xaml-in-visual-studio"></a>在 Visual Studio 中设计 XAML
 
@@ -42,7 +42,7 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
 - **XAML IntelliSense：** 两个 IDE 都支持期望从 IntelliSense 获得的所有常见功能，包括语句完成、对常见编辑器操作（如对代码进行注释和格式设置）的支持以及针对资源、绑定和代码进行的导航。
 
-- **基础调试功能：** 现在可以在 Blend 中进行调试，包括在代码中设置断点来调试正在运行的应用。 为了保持与 Visual Studio 一致的调试体验，Blend for Visual Studio 包含 Visual Studio 的大多数调试窗口和工具栏。 高级调试功能（如诊断和代码分析）仅在 Visual Studio 中可用。 请参阅[在 Visual Studio 中调试](../debugger/debugging-in-visual-studio.md)。
+- **基础调试功能：** 现在可以在 Blend 中进行调试，包括在代码中设置断点来调试正在运行的应用。 为了保持与 Visual Studio 一致的调试体验，Blend for Visual Studio 包含 Visual Studio 的大多数调试窗口和工具栏。 高级调试功能（如诊断和代码分析）仅在 Visual Studio 中可用。 请参阅[在 Visual Studio 中调试](../debugger/debugger-feature-tour.md)。
 
 - **文件重载体验：** 可以在 Blend for Visual Studio 或 Visual Studio 中编辑 XAML 文件，并且在它们之间切换时自动重载编辑后的文件。 若要最大程度减少工作流中断，现在可以在文件重载对话框中设置文件重载首选项。
 

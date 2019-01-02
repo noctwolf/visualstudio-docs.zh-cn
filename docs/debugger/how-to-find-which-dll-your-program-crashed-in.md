@@ -1,4 +1,4 @@
----
+﻿---
 title: 如何： 查找导致程序崩溃的 DLL |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
@@ -26,7 +26,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 40f27e0bec20e1dd037beaa5f60ea648c0ccb171
 ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/20/2018
 ms.locfileid: "52257092"
@@ -45,11 +45,11 @@ ms.locfileid: "52257092"
   
 3.  在“模块”窗口中，找到“地址”列。可能需要使用滚动条来查看。  
   
-4.  单击列顶部的“地址”按钮，按地址对 DLL 进行排序。 
+4.  单击列顶部的“地址”按钮，按地址对 DLL 进行排序。  
   
 5.  细查排序的列表，找到其地址包含崩溃位置的 DLL。  
   
-6.  查看“名称”和“路径”列来查看 DLL 的名称和路径。	
+6.  查看“名称”和“路径”列来查看 DLL 的名称和路径。  
   
 ## <a name="see-also"></a>请参阅  
  [调试 DLL 项目](../debugger/debugging-dll-projects.md)   

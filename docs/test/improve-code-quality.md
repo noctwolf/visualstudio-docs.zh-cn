@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a619989543b30ccf07cdb300a5688a985cf27eb7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7a6f0dac77801d2d02a260fbf392588b1a2f4a32
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068242"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739278"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio 中的测试工具
 
@@ -45,4 +45,4 @@ Visual Studio 测试工具可帮助你和你的团队达到并保持高标准的
 * [探索和手动测试 (Azure Test Plans)](/azure/devops/test/index?view=vsts)
 * [负载测试（Azure Test Plans）](/azure/devops/test/load-test/index?view=vsts)
 * [持续测试（Azure Test Plans）](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
-* [代码分析工具](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)
+* [代码分析工具](../code-quality/code-analysis-for-managed-code-overview.md)

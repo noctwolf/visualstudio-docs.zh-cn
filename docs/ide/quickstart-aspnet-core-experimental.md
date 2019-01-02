@@ -1,10 +1,10 @@
 ---
-title: 使用 C# 创建 ASP.NET Core Web 应用
+title: 在 Visual Studio 中使用 C# 创建 ASP.NET Core web 应用
 description: 了解如何在 Visual Studio 中使用 C# 和 ASP.NET Core 逐步创建简单的 Hello World Web 应用。
+ms.custom: mvc
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
-ms.custom: mvc,seodec18
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 23ba016d95e96965637ca6742501b09b16a42707
+ms.openlocfilehash: 8487d09c75ff8880fd6c3fe4af59fa2b494b315e
 ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684361"
+ms.locfileid: "53684962"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
@@ -41,7 +41,7 @@ ms.locfileid: "53684361"
 
 ## <a name="create-a-project"></a>创建项目
 
-首先，将创建 ASP.NET Core web 应用程序项目。 项目类型随附了用于创建 Web 应用的全部模板文件，无需添加任何内容！
+首先，将创建 ASP.NET Core web 应用程序项目。 操作方法如下。
 
 1. 打开 Visual Studio 2017。
 
@@ -49,7 +49,14 @@ ms.locfileid: "53684361"
 
 1. 在“新建项目”对话框的左侧窗格中，展开“Visual C#”，然后选择“.NET Core”。 在中间窗格中，选择“ASP.NET Core Web 应用程序”。 然后，将文件命名为 `HelloWorld`，并选择“确定”。
 
-   ![创建面向 C# 的新 ASP.NET Core Web 应用程序项目](../ide/media/csharp-aspnet-choose-template-name-file.png)
+1. 在“新建 ASP.NET Core Web 应用程序”对话框中，从顶部下拉菜单中选择“ASP.NET Core 2.0”或更高版本，然后选择“Web 应用程序”。
+
+   > [!NOTE]
+   > 如果没有从顶部下拉菜单中看到“ASP.NET Core 2.0”或更高版本，请确保你运行的是最新版本的 Visual Studio。 有关如何更新安装的详细信息，请参阅[将 Visual Studio 2017 更新到最新版本](../install/update-visual-studio.md)页面。
+
+   ![查看动画 .gif 文件，该文件显示如何在 Visual Studio 中创建 C# ASP.NET Core 项目](../ide/media/csharp-aspnet-animated-create-project.gif)
+
+   不久之后，Visual Studio 将打开你的项目文件。
 
    > [!NOTE]
    > 如果没有看到“.NET Core”项目模板类别，请选择左侧窗格中的“打开 Visual Studio 安装程序”链接。 （根据你的显示设置，进行滚动以便查看。）
@@ -62,61 +69,32 @@ ms.locfileid: "53684361"
    >
    > （你可能需要关闭 Visual Studio，然后才能继续安装新的工作负载。）
 
-1. 在“新建 ASP.NET Core Web 应用程序”对话框中，从顶部下拉菜单中选择“ASP.NET Core 2.0”或更高版本。
+## <a name="create-and-run-the-app"></a>创建并运行应用
 
-   > [!NOTE]
-   > 如果没有看到“ASP.NET Core 2.0”或更高版本，请确保你运行的是最新版本的 Visual Studio 。 有关如何更新安装的详细信息，请参阅[将 Visual Studio 2017 更新到最新版本](../install/update-visual-studio.md)页面。
+接下来，将创建并运行“Hello World”Web 应用。 操作方法如下。
 
-1. 接下来，选择“Web 应用程序”，然后选择“确定”。
-
-   ![“新建 ASP.NET Core Web 应用程序”对话框](../ide/media/quickstart-aspnet-core20.png)
-
-不久之后，Visual Studio 将打开你的项目文件。
-
-## <a name="create-the-app"></a>创建应用
-
-1. 在“解决方案资源管理器”中，展开“Pages”文件夹，然后选择“About.cshtml”。
+1. 在 Visual Studio 的“解决方案资源管理器”中，展开“Pages”文件夹。 然后选择“About.cshtml”。
 
    ![从“解决方案资源管理器”中选择 About.cshtml 文件](../ide/media/csharp-aspnet-about-page-html-file.png)
 
-   此文件对应于 Web 应用中名为“About”的页。
+   此文件对应于 Web 应用中名为“关于”的页，该页在 Web 浏览器中运行。
 
    ![Web 应用中的“About”页](../ide/media/csharp-aspnet-about-page.png)
 
-   在编辑器中，你将看到“About”页的“其他信息”区域的 HTML 代码。
+1. 在 Visual Studio 代码编辑器中，将“其他信息”文本更改为“Hello World!”。
 
-   ![Visual Studio 编辑器中“其他信息”区域的 HTML 代码](../ide/media/csharp-aspnet-about-cshtml-page.png)
-
-1. 将“其他信息”文本更改为“Hello World!”。
-
-   ![更改 Visual Studio 编辑器中“其他信息”区域的默认 HTML 代码](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
-
-1. 在“解决方案资源管理器”中，展开“About.cshtml”，然后选择“About.cshtml.cs”。 （此文件也对应于 Web 应用中的“关于”页。）
-
-   ![从“解决方案资源管理器”中选择 About.cshtml 文件](../ide/media/csharp-aspnet-about-page-code-file.png)
-
-   在编辑器中，你将看到包含“关于”页的“应用程序说明”区域的文本的 C# 代码。
-
-   ![Visual Studio 编辑器中“应用程序说明”区域的 C# 代码](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
+1. 在“解决方案资源管理器”中，展开“About.cshtml”，然后选择“About.cshtml.cs”。
 
 1. 将“应用程序说明”消息文本更改为“我的消息是什么？”。
 
-   ![更改 Visual Studio 编辑器中“应用程序说明”区域的默认消息文本](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
+1. 选择“IIS Express”或按 Ctrl+F5 运行此应用，并在 Web 浏览器中打开它。
 
-## <a name="run-the-app"></a>运行应用
-
-1. 按 Ctrl+F5 运行此应用，并在 Web 浏览器中打开它。
+   ![查看动画 .gif 文件，该文件显示如何在 Visual Studio 中创建和运行 C# ASP.NET Core Web 应用](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > 如果收到错误消息“无法连接到 Web 服务器 "IIS Express"”，或者收到提及 SSL 证书的错误消息，请关闭 Visual Studio。 接下来，使用右击菜单或上下文菜单中的“以管理员身份运行”选项打开 Visual Studio。 然后，再次运行应用。
 
-1. 在网页的顶部，选择“关于”。
-
-   ![从网页中选择“关于”](../ide/media/csharp-aspnet-home-page-about.png)
-
-1. 查看你添加到“关于”页的更新文本。
-
-   ![查看包含你添加的文本的更新的“关于”页](../ide/media/csharp-aspnet-about-page-hello-world.png)
+1. 在 Web 浏览器中，验证“关于”页是否包含更新的文本。
 
 1. 关闭 Web 浏览器。
 

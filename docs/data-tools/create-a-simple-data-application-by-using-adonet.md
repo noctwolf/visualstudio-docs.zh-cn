@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75043a1716cca0c727eb0530cd63ca715a60424b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1e82dd7fbae434ae129e90562aab91875bb4e28b
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064867"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740096"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 
@@ -37,7 +37,7 @@ ms.locfileid: "53064867"
 
 -   SQL Server Express LocalDB。 如果你没有 SQL Server Express LocalDB，您可以从中进行安装[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)。
 
-本主题假定你熟悉 Visual Studio IDE 的基本功能和可以创建 Windows 窗体应用程序，将添加到项目中，将按钮和窗体上的其他控件的窗体设置控件和代码简单事件的属性。 如果您不熟悉这些任务，我们建议你先完成[开始使用 VisualC#和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)主题之前在开始本演练。
+本主题假定你熟悉 Visual Studio IDE 的基本功能和可以创建 Windows 窗体应用程序，将添加到项目中，将按钮和窗体上的其他控件的窗体设置控件和代码简单事件的属性。 如果您不熟悉这些任务，我们建议你先完成[开始使用 VisualC#和 Visual Basic](../ide/quickstart-visual-basic-console.md)主题之前在开始本演练。
 
 ## <a name="set-up-the-sample-database"></a>设置示例数据库
 

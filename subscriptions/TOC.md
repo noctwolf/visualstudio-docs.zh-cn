@@ -44,7 +44,6 @@
 #### [Azure 顾问聊天](vs-azure-advisory-chat.md)
 #### [Azure 社区](vs-azure-community.md)
 #### [技术支持](vs-tech-support.md)
-#### [开发人员社区支持](vs-priority-support.md)
 #### [接待支持](vs-concierge-chat.md)
 ## 管理订阅
 ### [管理员职责](admin-responsibilities.md)

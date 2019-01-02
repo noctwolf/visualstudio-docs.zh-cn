@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 051f5ad7783271c2b0eea26bc3af5c0980f2c1fc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f16f9356f40aade9f0de3ade8f74606ce89be12e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068297"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802574"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：创建诊断数据适配器
 
@@ -48,7 +48,7 @@ ms.locfileid: "53068297"
 
 使用下面的过程可创建诊断数据适配器，以收集基于在创建测试设置时所配置的信息的数据文件。
 
-有关诊断数据适配器项目（包括自定义配置编辑器）的完整示例，请参阅[用于创建诊断数据适配器的示例项目](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)。
+有关诊断数据适配器项目（包括自定义配置编辑器）的完整示例，请参阅[用于创建诊断数据适配器的示例项目](../test/quickstart-create-a-load-test-project.md)。
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>创建并安装诊断数据适配器
 
@@ -224,7 +224,7 @@ ms.locfileid: "53068297"
 
      可以将这些文件附加到测试结果。 如果根据这些测试结果创建 Bug，或者在使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)]时，这些文件也会附加到 Bug。
 
-     如果您要使用自己的编辑器来收集要在测试设置中使用的数据，请参见[如何：为诊断数据适配器创建自定义数据编辑器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)。
+     如果您要使用自己的编辑器来收集要在测试设置中使用的数据，请参见[如何：为诊断数据适配器创建自定义数据编辑器](../test/quickstart-create-a-load-test-project.md)。
 
 11. 要在测试完成时根据用户在测试设置中所做配置收集日志文件，则必须创建一个 App.config 文件并将其添加至解决方案。 此文件具有以下格式，并且必须包含供诊断数据适配器进行识别的 URI。 将“Company/ProductName/Version”替换为实际值。
 
@@ -261,11 +261,11 @@ ms.locfileid: "53068297"
 
      有关如何在运行测试时配置测试设置以使用环境的详细信息，请参阅[在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
-     有关安装配置文件的更多信息，请参见[如何：安装自定义诊断数据适配器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
+     有关安装配置文件的更多信息，请参见[如何：安装自定义诊断数据适配器](../test/quickstart-create-a-load-test-project.md)
 
 12. 生成解决方案以创建诊断数据适配器程序集。
 
-13. 有关安装自定义编辑器的信息，请参见[如何：安装自定义诊断数据适配器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)。
+13. 有关安装自定义编辑器的信息，请参见[如何：安装自定义诊断数据适配器](../test/quickstart-create-a-load-test-project.md)。
 
 14. 有关如何在运行测试时配置测试设置以使用环境的详细信息，请参阅[在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
@@ -289,4 +289,4 @@ ms.locfileid: "53068297"
 - [使用测试设置收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)
 - [在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [在测试时收集诊断数据 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [如何：为诊断数据适配器创建自定义数据编辑器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
+- [如何：为诊断数据适配器创建自定义数据编辑器](../test/quickstart-create-a-load-test-project.md)

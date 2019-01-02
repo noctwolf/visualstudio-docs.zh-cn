@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c22b9c25f95ea26f2cdaf5c2035fb7a373123241
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855204"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684777"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 入门
 
@@ -47,7 +47,7 @@ ms.locfileid: "49855204"
 
 如果已安装 Visual Studio 2017 或者希望手动安装，请运行“Visual Studio 安装程序”。
 
-1. [下载 Visual Studio 安装程序](/visualstudio/install/install-visual-studio)，如已安装，则打开它。
+1. [下载 Visual Studio 安装程序](../install/install-visual-studio.md)，如已安装，则打开它。
 
 1. 为所需的 Visual Studio 版本单击“修改”（如已安装）或“安装”（适用于新安装）。
 
@@ -65,7 +65,7 @@ ms.locfileid: "49855204"
 
    ![选择首选项](media/vstu_unity-preferences.png)
 
-2. 在“首选项”对话框中，选择“外部工具”选项卡。
+2. 在“Preferences”对话框中，选择“External Tools”选项卡。
 
 3. 从“外部脚本编辑器”下拉列表中，选择所需版本的 Visual Studio（如果列出此项），否则选择“浏览...”。
 

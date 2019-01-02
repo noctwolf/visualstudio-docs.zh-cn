@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 4081fae86b41a9bf8b925bf84d403b3be6628294
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1ff045cd571f24c57b3f735b0fdf68c58aaa23bb
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068362"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740044"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>如何测试 Visual C++ DLL
 
@@ -22,7 +22,7 @@ ms.locfileid: "53068362"
 
  本主题演示如何使用单元测试作为开发的第一步。 在此方法中，首先编写验证要测试的系统的特定行为的测试方法，然后编写通过测试的代码。 通过按照以下过程的顺序进行更改，您可调转此策略的顺序，即先编写要测试的代码，然后编写单元测试。
 
- 本主题还为单元测试和要测试的 DLL 创建一个 Visual Studio 解决方案和单独的项目。 你还可在 DLL 项目中直接包含单元测试，也可以为单元测试和 .DLL 创建不同的解决方案。 有关要使用的指令的提示，请参阅[向现有的 C++ 应用程序添加单元测试](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)。
+ 本主题还为单元测试和要测试的 DLL 创建一个 Visual Studio 解决方案和单独的项目。 你还可在 DLL 项目中直接包含单元测试，也可以为单元测试和 .DLL 创建不同的解决方案。 有关要使用的指令的提示，请参阅[向现有的 C++ 应用程序添加单元测试](../test/how-to-use-microsoft-test-framework-for-cpp.md)。
 
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> 创建解决方案和单元测试项目
 
