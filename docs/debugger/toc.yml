@@ -20,11 +20,11 @@ items:
 - name: 教程
   items:
   - name: 了解如何调试 C#
-    href: getting-started-with-the-debugger.md
+    href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: 了解如何调试 C++
     href: getting-started-with-the-debugger-cpp.md
   - name: 了解如何调试 Visual Basic
-    href: getting-started-with-the-debugger-vb.md
+    href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
   - name: 在调试器中运行 Python 代码...
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: 调试实时 Azure 应用
@@ -588,7 +588,7 @@ items:
         - name: 附加到脚本
           href: how-to-attach-to-script.md
           items:
-          - name: 警告：脚本调试已禁用
+          - name: 警告:脚本调试被禁用
             href: warning-script-debugging-disabled.md
     - name: 调试 WCF 服务
       href: debugging-wcf-services.md
@@ -840,9 +840,9 @@ items:
   items:
   - name: Visual Studio 中调试器的新增功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 82809574dbbecf01e26e1677a4bb22ce9a482cf6
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: cb7973423106d5c7b2af72b005226722eb07ef5b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821391"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561731"

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c00740b31e5b9d7cc5678bfc248e673a57e59ccf
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305307"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561689"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>调试 Visual Studio 中的 Dll (C#，c + +、 Visual Basic 中， F#)
 
@@ -102,7 +102,7 @@ DLL （动态链接库） 是一个库，包含代码和可由多个应用的数
 
 若要调试 DLL，你可以[从调用应用开始调试](#vxtskdebuggingdllprojectsthecallingapplication)，或[调试 DLL 项目从](how-to-debug-from-a-dll-project.md)通过指定其调用的应用。 此外可以使用调试器[即时窗口](#vxtskdebuggingdllprojectstheimmediatewindow)要在设计时计算的 DLL 函数或方法，而无需使用调用应用。
 
-有关详细信息，请参阅[开始使用调试器](getting-started-with-the-debugger.md)。
+有关详细信息，请参阅[先来看一下调试器](../debugger/debugger-feature-tour.md)。
 
 ### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> 开始调试从调用应用程序
 
@@ -119,11 +119,11 @@ DLL （动态链接库） 是一个库，包含代码和可由多个应用的数
 
   或  
 
-- 将附加到已部署且正在测试或生产计算机上运行的应用。 使用此方法的 Dll 中，在网站上或在 web 应用中。 有关详细信息，请参阅[如何：附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+- 将附加到已部署且正在测试或生产计算机上运行的应用。 使用此方法的 Dll 中，在网站上或在 web 应用中。 有关更多信息，请参见[如何：附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
 在开始调试调用应用程序之前，请在 DLL 中设置断点。 请参阅[使用断点](../debugger/using-breakpoints.md)。 DLL 断点命中时，可以逐句通过代码，观察操作在每个行。 有关详细信息，请参阅[在调试器中导航代码](../debugger/navigating-through-code-with-the-debugger.md)。
   
-在调试期间，可以使用**模块**窗口以验证 Dll 并 *.exe*文件在应用加载。 若要打开**模块**窗口中的，调试时，选择**调试** > **Windows** > **模块**。 有关详细信息，请参阅[如何：使用“模块”窗口](../debugger/how-to-use-the-modules-window.md)。 
+在调试期间，可以使用**模块**窗口以验证 Dll 并 *.exe*文件在应用加载。 若要打开**模块**窗口中的，调试时，选择**调试** > **Windows** > **模块**。 有关更多信息，请参见[如何：使用模块窗口](../debugger/how-to-use-the-modules-window.md)。 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> 使用即时窗口  
 
@@ -158,7 +158,7 @@ DLL （动态链接库） 是一个库，包含代码和可由多个应用的数
 
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a>混合模式调试  
 
-可以为托管或本机代码中的 DLL 编写调用应用。 如果本机应用调用的托管的 DLL，并且你想要调试两者，则可以启用在项目属性中的托管和本机调试器。 确切流程取决于是否想要从 DLL 项目或调用应用程序项目开始调试。 有关详细信息，请参见[如何：在混合模式下调试](../debugger/how-to-debug-in-mixed-mode.md)。 
+可以为托管或本机代码中的 DLL 编写调用应用。 如果本机应用调用的托管的 DLL，并且你想要调试两者，则可以启用在项目属性中的托管和本机调试器。 确切流程取决于是否想要从 DLL 项目或调用应用程序项目开始调试。 有关更多信息，请参见[如何：在混合模式下调试](../debugger/how-to-debug-in-mixed-mode.md)。 
 
 此外可以调试托管的调用项目中的本机 DLL。 有关详细信息，请参阅[如何调试托管和本机代码](how-to-debug-managed-and-native-code.md)。 
 

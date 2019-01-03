@@ -17,23 +17,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 81d929aaffb6f08e5e1cda1cf3329de81fe13bc8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.openlocfilehash: 20a1cd033763e7aa98eb2798357109e300deaff1
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778056"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739463"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>向 n 层数据集添加验证
 向被分隔为 n 层解决方案的数据集添加验证基本上是将验证添加到单个文件数据集 （单个项目中的数据集） 相同。 对数据执行验证的建议的位置是期间<xref:System.Data.DataTable.ColumnChanging>和/或<xref:System.Data.DataTable.RowChanging>数据表的事件。
 
- 数据集提供了用于创建在数据集中数据表的列和行更改的事件可以向其中添加用户代码的分部类的功能。 有关将代码添加到在 n 层解决方案中的数据集的详细信息，请参阅[将代码添加到 n 层应用程序中的数据集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)，并[n 层应用程序中将代码添加到 Tableadapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)。 有关分部类的详细信息，请参阅[如何： 将类拆分为分部类 （类设计器）](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)或[分部类和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
+ 数据集提供了用于创建在数据集中数据表的列和行更改的事件可以向其中添加用户代码的分部类的功能。 有关将代码添加到在 n 层解决方案中的数据集的详细信息，请参阅[将代码添加到 n 层应用程序中的数据集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)，并[n 层应用程序中将代码添加到 Tableadapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)。 有关分部类的详细信息，请参阅[如何：将类拆分为分部类 （类设计器）](../ide/class-designer/how-to-split-a-class-into-partial-classes.md)或[分部类和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
 
 > [!NOTE]
 >  当你分离数据集与 Tableadapter (通过设置**数据集项目**属性)，将不会自动移动项目中的现有数据集分部类。 向数据集项目，必须手动移动现有数据集分部类。
 
 > [!NOTE]
->  数据集设计器不会自动创建事件处理程序在 C# 中为<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.RowChanging>事件。 您必须手动创建事件处理程序，并挂接到基础事件的事件处理程序。 以下过程介绍如何在 Visual Basic 和 C# 中创建必需的事件处理程序。
+>  数据集设计器不会自动创建事件处理程序中的C#有关<xref:System.Data.DataTable.ColumnChanging>并<xref:System.Data.DataTable.RowChanging>事件。 您必须手动创建事件处理程序，并挂接到基础事件的事件处理程序。 下面的过程介绍如何在 Visual Basic 中创建必需的事件处理程序和C#。
 
 ## <a name="validate-changes-to-individual-columns"></a>验证对单个列的更改
  通过处理验证中的单个列的值<xref:System.Data.DataTable.ColumnChanging>事件。 <xref:System.Data.DataTable.ColumnChanging>修改列中的值时引发事件。 创建事件处理程序<xref:System.Data.DataTable.ColumnChanging>通过双击所需的列的事件**数据集设计器**。
@@ -49,18 +49,18 @@ End Sub
 ```
 
 > [!NOTE]
->  在 C# 项目中，数据集设计器仅创建数据集和数据集中的各个表的分部类。 数据集设计器不会自动创建的事件处理程序<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.RowChanging>中 C# 类似它在 Visual Basic 中执行的操作的事件。 在 C# 项目中，必须手动构造用于处理事件和方法挂钩到基础事件的方法。 以下过程提供了 Visual Basic 和 C# 中创建必需的事件处理程序的步骤。
+>  在C#项目中，数据集设计器仅用于数据集和单独的表的分部类中创建数据集。 数据集设计器不会自动创建的事件处理程序<xref:System.Data.DataTable.ColumnChanging>并<xref:System.Data.DataTable.RowChanging>中的事件C#类似它在 Visual Basic 中执行的操作。 在C#项目中，您必须手动构造用于处理事件和方法挂钩到基础事件的方法。 以下过程提供了这两个 Visual Basic 中创建必需的事件处理程序的步骤和C#。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>若要将更改过程中的验证添加到各列的值
 
-1.  通过双击打开数据集 *.xsd*中的文件**解决方案资源管理器**。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  通过双击打开数据集 *.xsd*中的文件**解决方案资源管理器**。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  双击你想要验证的列。 此操作将创建<xref:System.Data.DataTable.ColumnChanging>事件处理程序。
 
     > [!NOTE]
-    >  数据集设计器不会自动创建 C# 事件的事件处理程序。 需要处理 C# 中的事件的代码包含在下一节中。 `SampleColumnChangingEvent` 创建并将其然后挂接<xref:System.Data.DataTable.ColumnChanging>中的事件<xref:System.Data.DataTable.EndInit%2A>方法。
+    >  数据集设计器不会自动创建的事件处理程序C#事件。 处理中的事件所需的代码C#包含在下一节。 `SampleColumnChangingEvent` 创建并将其然后挂接<xref:System.Data.DataTable.ColumnChanging>中的事件<xref:System.Data.DataTable.EndInit%2A>方法。
 
 3.  添加代码以验证`e.ProposedValue`包含满足要求的应用程序的数据。 如果建议的值是不可接受，设置该列以指示其包含一个错误。
 
@@ -111,18 +111,18 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>若要添加到整个行的过程中更改的验证
 
-1.  通过双击打开数据集 *.xsd*中的文件**解决方案资源管理器**。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  通过双击打开数据集 *.xsd*中的文件**解决方案资源管理器**。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  双击设计器上的数据表的标题栏。
 
      分部类创建与`RowChanging`事件处理程序并在代码编辑器中打开。
 
     > [!NOTE]
-    >  数据集设计器不会自动创建的事件处理程序<xref:System.Data.DataTable.RowChanging>C# 项目中的事件。 您必须创建一个方法来处理<xref:System.Data.DataTable.RowChanging>事件和运行的代码，然后挂接表的初始化方法中的事件。
+    >  数据集设计器不会自动创建的事件处理程序<xref:System.Data.DataTable.RowChanging>中的事件C#项目。 您必须创建一个方法来处理<xref:System.Data.DataTable.RowChanging>事件和运行的代码，然后挂接表的初始化方法中的事件。
 
 3.  添加用户代码的分部类声明。
 
-4.  下面的代码演示在何处添加用户代码来验证期间<xref:System.Data.DataTable.RowChanging>事件。 C# 示例还包括最多挂接事件处理程序方法的代码`OrdersRowChanging`事件。
+4.  下面的代码演示在何处添加用户代码来验证期间<xref:System.Data.DataTable.RowChanging>事件。 C#示例中也包括代码最多将事件处理程序方法挂钩`OrdersRowChanging`事件。
 
     ```vb
     Partial Class OrdersDataTable
@@ -169,5 +169,5 @@ End Sub
 ## <a name="see-also"></a>请参阅
 
 - [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)
-- [演练： 创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [验证数据集中的数据](../data-tools/validate-data-in-datasets.md)

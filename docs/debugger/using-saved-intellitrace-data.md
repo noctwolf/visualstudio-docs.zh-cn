@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9d34d3a54947799e41fca20200e0fb6a5305146f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912963"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685001"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用保存的 IntelliTrace 数据
 从 IntelliTrace 日志 (.iTrace) 文件开始调试时，转到应用程序执行中的特定点。 此文件可包含应用程序运行时 IntelliTrace 记录下的性能事件、异常、线程、测试步骤、模块和其他系统信息。
@@ -39,7 +39,7 @@ ms.locfileid: "49912963"
     |----------------|-------------|
     |Visual Studio Enterprise（但不是 Professional 或 Community 版）中的 IntelliTrace 会话|[IntelliTrace 功能](../debugger/intellitrace-features.md)|
     |Microsoft 测试管理器中的测试会话。 这会将 .iTrace 文件附加到 Team Foundation Server 工作项。|[在手动测试中收集更多诊断数据](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
-    |Microsoft Monitoring Agent（单独使用或与 System Center 2012 R2 Operations Manager 一起使用），用于监视部署中运行的 ASP.NET Web 应用和 SharePoint 应用程序|-   [在部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新增功能](http://technet.microsoft.com/library/dn249700.aspx)|
+    |Microsoft Monitoring Agent（单独使用或与 System Center 2012 R2 Operations Manager 一起使用），用于监视部署中运行的 ASP.NET Web 应用和 SharePoint 应用程序|-   [诊断部署后出现的问题](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新增功能](http://technet.microsoft.com/library/dn249700.aspx)|
 
 ##  <a name="GetStarted"></a> 你希望做什么？
 
@@ -110,7 +110,7 @@ ms.locfileid: "49912963"
 
 3.  展开调用以查看在该时间点记录的所有嵌套调用和参数值。
 
-     （键盘：若要显示或隐藏嵌套调用，请分别按“向右键”  或“向左键”  。 若要显示和隐藏嵌套调用的参数值，请按“空格”  键。）
+     （键盘：若要显示或隐藏嵌套的调用，请按**向右箭头**或**向左键**分别。 若要显示和隐藏嵌套调用的参数值，请按“空格”  键。）
 
      从调用开始调试。
 
@@ -161,7 +161,7 @@ ms.locfileid: "49912963"
 
 1. 从源复制 SharePoint 相关 ID。
 
-    例如：
+    例如:
 
     ![IntelliTrace &#45; SharePoint 错误&#45;相关 ID](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
@@ -207,7 +207,7 @@ ms.locfileid: "49912963"
 
     ![IntelliTrace 日志&#45;SharePoint 未经处理的异常](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   有关演练，请参阅[演练： 调试 SharePoint 应用程序通过使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 有关代理记录，请参阅的数据的种类[IntelliTrace 功能](../debugger/intellitrace-features.md)。
+   有关演练，请参阅[演练：使用 IntelliTrace 调试 SharePoint 应用程序](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 有关代理记录，请参阅的数据的种类[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
 ###  <a name="ThreadsList"></a> 线程列表
  检查目标进程中运行的记录线程。 你可以从选定线程的第一个有效 IntelliTrace 事件开始调试。
@@ -225,7 +225,7 @@ ms.locfileid: "49912963"
 |**列**|**显示**|
 |----------------|-------------------|
 |**ID**|线程 ID 号|
-|**名称**|线程名。 未命名的线程显示为"\<无名称 >"。|
+|**名称**|线程名。 未命名的线程显示为“\<No Name>”。|
 |**开始时间**|线程创建时间|
 |**结束时间**|线程完成时间|
 
@@ -258,7 +258,7 @@ ms.locfileid: "49912963"
 |----------------|-------------------|
 |**模块名**|模块文件名|
 |**模块路径**|加载模块的磁盘位置|
-|**模块 ID**|模块的唯一标识符特定于版本，并分配给匹配的符号 (PDB) 文件。 请参阅 [Finding symbol (.pdb) files and source files](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)。|
+|**模块 ID**|模块的唯一标识符特定于版本，并分配给匹配的符号 (PDB) 文件。 请参阅 [Finding symbol (.pdb) files and source files](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。|
 
 ### <a name="where-can-i-get-more-information"></a>在何处可以获取详细信息？
  [使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)
@@ -273,4 +273,4 @@ ms.locfileid: "49912963"
  [Visual Studio 调试器](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>指导
- [测试持续交付与 Visual Studio 2012-第 6 章： 测试工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [使用 Visual Studio 2012-第 6 章对连续交付进行测试：测试工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)

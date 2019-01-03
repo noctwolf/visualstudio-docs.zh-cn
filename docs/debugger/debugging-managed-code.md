@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92485f93bb4c2d1782f907acdb1e5252f611cdbe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "39179474"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561887"
 ---
 # <a name="debugging-managed-code"></a>调试托管代码
 
-本节包含了托管应用程序或使用面向公共语言运行时的语言（如 Visual Basic、C# 和 C++）编写的应用程序的常见调试问题和调试技术。 此处介绍的技术都是高级技术。 有关详细信息，请参阅[使用调试器](../debugger/getting-started-with-the-debugger.md)。
+本节包含了托管应用程序或使用面向公共语言运行时的语言（如 Visual Basic、C# 和 C++）编写的应用程序的常见调试问题和调试技术。 此处介绍的技术都是高级技术。 [初探调试器](../debugger/debugger-feature-tour.md)。
 
 ## <a name="in-this-section"></a>本节内容
 
 [“输出”窗口中的诊断消息](../debugger/diagnostic-messages-in-the-output-window.md)  
-介绍<xref:System.Diagnostics.Debug>并<xref:System.Diagnostics.Trace>类，可以将运行时消息写入与其**输出**窗口。 这些类中包含的输出方法支持两种信息输出：不中断执行的信息输出以及在指定条件失败时也会中断执行的信息输出。
+描述 <xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 类，通过这些类，您可以向“输出”窗口写入运行时消息。 这些类中包含的输出方法支持两种信息输出：不中断执行的信息输出以及在指定条件失败时也会中断执行的信息输出。
 
 [托管代码中的断言](../debugger/assertions-in-managed-code.md)  
 描述托管代码中的断言，该断言用于测试作为 `Assert` 方法的自变量指定的条件。 此外，本主题还提供代码示例、有关使用 <xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 类方法的信息、代码调试版和发布版中的注意事项、副作用、断言自变量、自定义断言行为和配置文件。
@@ -50,7 +50,7 @@ ms.locfileid: "39179474"
 讨论调试混合模式的应用程序。 这表示合并本机代码和托管代码的任何应用程序。
 
 [错误：由于系统上启用了内核调试程序，因此不可能进行调试](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
-本文介绍如果你尝试调试托管的代码上，则会发生的错误消息[!INCLUDE[win7](../debugger/includes/win7_md.md)]， [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]， [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]， [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)]，或在调试模式下启动的 Windows NT 系统。
+描述当尝试在以调试模式启动的 [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]、[!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]、[!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] 或 Windows NT 系统上调试托管代码时出现的错误消息。
 
 [JIT 优化和调试](../debugger/jit-optimization-and-debugging.md)  
 描述调试时 JIT 优化的作用。
@@ -59,7 +59,7 @@ ms.locfileid: "39179474"
 讨论用于调试 LINQ 查询的技术。
 
 [演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)  
-介绍如何使用**并行任务**并**并行堆栈**工具窗口调试并行应用程序。
+描述如何使用“并行任务” 和“并行堆栈”工具窗口调试并行应用程序。
 
 ## <a name="related-sections"></a>相关章节
 
@@ -69,7 +69,7 @@ ms.locfileid: "39179474"
 描述跟踪（一种用于监视运行中应用程序的执行情况的方法）和检测（将跟踪语句放在代码中的重要位置）。 此主题还提供了指向介绍以下内容的主题的链接：检测和跟踪、跟踪开关、跟踪侦听器、跟踪应用程序中的代码、将跟踪语句添加到应用程序代码，以及使用 <xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 进行有条件地编译。
 
 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute)  
-介绍将添加一个链接器选项<xref:System.Diagnostics.DebuggableAttribute>到使用 c + + 编写的代码。 在使用调试功能（如使用 C++ 附加）时需要此特性。
+描述将 <xref:System.Diagnostics.DebuggableAttribute> 添加到用 C++ 编写的代码的链接器选项。 在使用调试功能（如使用 C++ 附加）时需要此特性。
 
 [调试 Windows 服务应用程序](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)  
 提供调试 Windows 服务应用程序的注意事项，其中包括：设置、附加到进程、调试服务的 `OnStart` 方法中的代码和 Main 方法中的代码、设置断点以及使用服务控制管理器启动、停止、暂停和继续服务。
@@ -80,7 +80,7 @@ ms.locfileid: "39179474"
 [调试脚本和 Web 应用程序](../debugger/debugging-web-applications-and-script.md)  
 描述在调试脚本和 Web 应用程序时可能会遇到的常见调试问题和技术。
 
-[什么是 Visual Studio 2015 中调试器的新增功能](../debugger/what-s-new-for-the-debugger-in-visual-studio.md)  
+[Visual Studio 2015 中调试器的新增功能](../debugger/what-s-new-for-the-debugger-in-visual-studio.md)  
 此版本的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中新增的调试功能的说明。
 
 [调试主页](../debugger/debugger-feature-tour.md)  
@@ -88,7 +88,7 @@ ms.locfileid: "39179474"
 
 ## <a name="see-also"></a>请参阅
 
-[演练： 在设计时调试自定义 Windows 窗体控件](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+[演练：在设计时调试自定义 Windows 窗体的控件](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 [调试器安全](../debugger/debugger-security.md)
 [Visual Studio 中调试](../debugger/index.md)
  [调试器功能简介](../debugger/debugger-feature-tour.md)

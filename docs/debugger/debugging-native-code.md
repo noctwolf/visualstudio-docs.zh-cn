@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: 8d8339d494845b5babe18835647868cad4c3323a
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180186"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561965"
 ---
 # <a name="debugging-native-code"></a>调试本机代码
-本节讲述本机应用程序的一些常见调试问题和调试技术。 本节阐述的技术属于高级别技术。 使用 Visual Studio 调试器的机制，请参阅[调试器路线图](../debugger/getting-started-with-the-debugger.md)。  
+本节讲述本机应用程序的一些常见调试问题和调试技术。 本节阐述的技术属于高级别技术。 使用 Visual Studio 调试器的机制，请参阅[先来看一下调试器](../debugger/debugger-feature-tour.md))。  
   
 ## <a name="in-this-section"></a>本节内容  
  [如何：调试优化的代码](../debugger/how-to-debug-optimized-code.md)  
@@ -61,7 +61,7 @@ ms.locfileid: "39180186"
  提供有关如何调试使用特性的代码的指导。 指导信息包括如何打开“源批注”、如何查看插入的代码以及如何在当前执行点查看反汇编代码。  
   
  [演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 介绍如何使用**并行任务**并**并行堆栈**工具窗口调试并行应用程序。  
+ 描述如何使用“并行任务” 和“并行堆栈”工具窗口调试并行应用程序。  
   
 ## <a name="related-sections"></a>相关章节  
  [Visual C++ 项目类型](../debugger/debugging-preparation-visual-cpp-project-types.md)  
