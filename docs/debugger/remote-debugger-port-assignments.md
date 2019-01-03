@@ -10,17 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570468a56a4eaba80965d8feea669a0d3f3cb1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a7b45a8673685dce5eabd0459f470525e5e2d99a
+ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905059"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53443868"
 ---
 # <a name="remote-debugger-port-assignments"></a>远程调试器端口分配
 Visual Studio 远程调试器可作为应用程序或后台服务运行。 当它作为应用程序运行时，它将使用默认分配的端口，如下所示：  
 
-- Visual Studio 2017: 4022
+- Visual Studio 2019：4024
+
+- Visual Studio 2017：4022
 
 - Visual Studio 2015：4020  
   
@@ -31,23 +33,23 @@ Visual Studio 远程调试器可作为应用程序或后台服务运行。 当�
   换而言之，分配给远程调试器的端口数每个版本递增 2。 你可以根据需要设置其他端口号。 我们将在后面部分说明如何设置端口号。  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>32 位操作系统上的远程调试器端口  
- （在 Visual Studio 2017) 的 TCP 4022 是主端口，需对所有方案。 你可以在命令行或远程调试器窗口中对此进行配置。  
+ TCP 4022（在 Visual Studio 2017 中）是主端口，所有方案都必需。 你可以在命令行或远程调试器窗口中对此进行配置。  
   
- 在远程调试器窗口中，单击**工具 > 选项**，并设置 TCP/IP 端口号。  
+ 在远程调试器窗口中，单击“工具/选项”，并设置 TCP/IP 端口号。  
   
- 在命令行上启动的远程调试器 **/port**切换： **msvsmon /port\<端口号 >**。  
+ 在命令行中，通过 /port 开关启动远程调试器：msvsmon /port \<端口号>。  
   
- 您可以找到所有远程调试器命令行开关在远程调试帮助 (按**F1**或单击**帮助 > 用法**远程调试器窗口中)。  
+ 可以在远程调试帮助（在远程调试器窗口中按 F1 或单击“帮助 > 用法”）中找到所有远程调试器命令行开关。  
   
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>64 位操作系统上的远程调试器端口  
- 当启动远程调试器的 64 位版本时，它默认情况下使用 4022 端口。  如果调试 32 位进程，64 位版远程调试器端口 4023 上启动远程调试器的 32 位版本。 如果您运行 32 位远程调试器，它使用 4022，并不使用 4023。  
+ 当启动远程调试器的 64 位版本时，它使用主默认端口 (4022)。  如果调试 32 位进程，64 位版远程调试器启动远程调试器端口 4023 上的 32 位版 （主端口数加 1）。 如果运行 32 位远程调试器，它将使用 4022，而不使用 4023。  
   
- 此端口是可从命令行配置： **Msvsmon/wow64port\<端口号 >**。  
+ 此端口是可从命令行配置：**Msvsmon/wow64port\<端口号 >**。  
   
 ## <a name="the-discovery-port"></a>发现端口  
  UDP 3702 用于在网络上查找远程调试器的运行实例（例如，“附加到进程”  对话框中的“查找”  对话框）。 它仅用于发现运行远程调试器的计算机，因此如果你有某种其他方式来了解计算机名称或目标计算机的 IP 地址，它是可选的。 这是用于发现的标准端口，因此不能配置端口号。  
   
- 如果你不想启用发现，可以在禁用发现的情况下从命令行启动 msvsmon：  **Msvsmon /nodiscovery**。  
+ 如果您不想要启用发现，您可以禁用发现从命令行启动 msvsmon:**Msvsmon /nodiscovery**。  
   
 ## <a name="remote-debugger-ports-on-azure"></a>Azure 上的远程调试器端口  
  Azure 上的远程调试器使用以下端口。 云服务上的端口映射到各 VM 上的端口。 所有端口都是 TCP。  

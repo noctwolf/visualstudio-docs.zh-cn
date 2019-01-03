@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c39acdef217d2b858645073cb96da4952c91df5a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f8d31881bed3e40db5080d642c0d3043ef2da704
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066309"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562030"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>调试准备：Visual C++ 项目类型
 本节描述如何调试用 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目模板创建的基本项目类型。  
@@ -73,7 +73,7 @@ ms.locfileid: "53066309"
   
 2.  在“调试”菜单上选择“启动”。  
   
-3.  使用中讨论的技术进行调试[调试器基础知识](../debugger/getting-started-with-the-debugger.md)。  
+3.  使用中讨论的技术进行调试[先来看一下调试器](../debugger/debugger-feature-tour.md)。  
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a>手动设置调试配置  
   
@@ -111,7 +111,7 @@ ms.locfileid: "53066309"
  [在本主题中](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>请参阅  
- [Debugger Basics](../debugger/getting-started-with-the-debugger.md) （调试器基础知识）  
+ [初探调试器](../debugger/debugger-feature-tour.md)   
  [C++ 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [附加到正在运行的程序或多个程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)   

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5e20697e5dc5364fbcbac7a1d3052790a123a2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1866f718cbcb4f1d3641e7b9f514a951ccd73662
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872650"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802602"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 变量
 重写所有呈现器目标和交换链上的多重采样抗锯齿 (MSAA) 设置。  
@@ -45,7 +45,7 @@ ms.locfileid: "49872650"
   
 - 设备支持请求的呈现器目标格式（D3D11_TEXTURE2D_DESC::Format 成员）的请求样本计数（0、2 或 4）和样本质量 (0)，由 `ID3D11Device::CheckMultisampleQualityLevels` 确定。  
   
-  如果 D3D11_TEXTURE2D_DESC::BindFlags 成员设置了 D3D_BIND_SHADER_RESOUCE 或 D3D11_BIND_UNORDERED_ACCESS 标志，则将创建两个版本的纹理；第一个版本将清除这些标志以用作呈现器目标，另一个版本是使这些标志保持不变以充当第一个版本的解析缓冲区的非 MSAA 纹理。 这是有必要的，因为将 MSAA 纹理用作着色器资源或用于无序访问可能无效，例如，充当它的着色器可能会产生不正确的结果，因为它会需要非 MSAA 纹理。 如果变体创建了辅助的非 MSAA 纹理，则无论何时从设备上下文中取消设置 MSAA 呈现器目标，其内容都将解析为非 MSAA 纹理。 同理，无论何时 MSAA 呈现器目标应绑定为着色器资源，或在无序访问视图中使用，都将绑定解析的非 MSAA 纹理。  
+  如果 D3D11_TEXTURE2D_DESC::BindFlags 成员设置了 D3D_BIND_SHADER_RESOURCE 或 D3D11_BIND_UNORDERED_ACCESS 标志，则将创建两个版本的纹理；第一个版本将清除这些标志以用作呈现器目标，另一个版本是使这些标志保持不变以充当第一个版本的解析缓冲区的非 MSAA 纹理。 这是有必要的，因为将 MSAA 纹理用作着色器资源或用于无序访问可能无效，例如，充当它的着色器可能会产生不正确的结果，因为它会需要非 MSAA 纹理。 如果变体创建了辅助的非 MSAA 纹理，则无论何时从设备上下文中取消设置 MSAA 呈现器目标，其内容都将解析为非 MSAA 纹理。 同理，无论何时 MSAA 呈现器目标应绑定为着色器资源，或在无序访问视图中使用，都将绑定解析的非 MSAA 纹理。  
   
   这些变体还将重写通过使用 `IDXGIFactory::CreateSwapChain`、`IDXGIFactory2::CreateSwapChainForHwnd`、`IDXGIFactory2::CreateSwapChainForCoreWindow`、`IDXGIFactory2::CreateSwapChainForComposition` 和 `ID3D11CreateDeviceAndSwapChain` 创建的所有交换链上的 MSAA 设置。  
   

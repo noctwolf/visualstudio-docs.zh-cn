@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b431e8223c0cacf28d5e8251b655e2d86769e04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d9fceb83f915eb1a90a781d886c84fd40651cc0a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935700"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647318"
 ---
 # <a name="introducing-spy"></a>Spy++ 简介
 可利用 Spy++ 执行以下任务：  
@@ -39,14 +39,14 @@ ms.locfileid: "49935700"
   在各个 Spy++ 窗口中，可以单击鼠标右键以显示常用命令的快捷菜单。 显示的命令取决于指针所在的位置。 例如，如果在窗口视图中右键单击某个条目，且所选窗口可见，那么单击快捷方式菜单上的“突出显示”  可使所选窗口边框闪烁，以便你能更轻松地找到该窗口。  
   
 > [!NOTE]
->  有其他两种实用程序类似于 Spy++：用于显示进程和线程详细信息的 PView 和允许你监视动态数据交换 (DDE) 消息的 DDESPY.EXE。  
+>  有两个类似于 Spy + + 其他实用程序：用于显示有关进程和线程和 DDESPY 的详细信息。Exe 文件，可让你监视动态数据交换 (DDE) 消息。  
   
 ## <a name="64-bit-operating-systems"></a>64 位操作系统  
- Spy++ 有两个版本。 第一个版本，名为 Spy++ (spyxx.exe)，用于显示发送到在 32 位进程中运行的窗口的消息。 例如，在 32 位进程中运行的 Visual Studio。 因此，可以使用 Spy++ 来显示发送到“解决方案资源管理器” 中的消息。 由于 Visual Studio 中大多数生成的默认配置是在 32 位进程中运行，此第一个版本的 Spy + + 是一种[上提供**工具**菜单](../debugger/how-to-start-spy-increment.md)Visual Studio 中。  
+ Spy++ 有两个版本。 第一个版本，名为 Spy++ (spyxx.exe)，用于显示发送到在 32 位进程中运行的窗口的消息。 例如，在 32 位进程中运行的 Visual Studio。 因此，可以使用 Spy++ 来显示发送到“解决方案资源管理器” 中的消息。 由于 Visual Studio 中大多数生成的默认配置是在 32 位进程中运行，此第一个版本的 Spy + + 是可在一个**工具**菜单在 Visual Studio 中，如果[所需的组件安装](../debugger/how-to-start-spy-increment.md)。 
   
  第二个版本，名为 Spy++（64 位）(spyxx_amd64.exe)，用于显示发送到在 64 位进程中运行的窗口的消息。 例如，在 64 位操作系统上，记事本在 64 位进程中运行。 因此，可以使用 Spy++（64 位）来显示发送到记事本的消息。 Spy++ （64 位）通常位于  
   
- ..\\ *Visual Studio 安装文件夹*\Common7\Tools\spyxx_amd64.exe。  
+ ..\\*Visual Studio 安装文件夹*\Common7\Tools\spyxx_amd64.exe。  
   
  可以直接从命令行运行任一版本的 Spy++。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "49935700"
 >  虽然 Spy++（64 位）文件名包含 "amd"，但它可在任何 x64 Windows 操作系统中运行。  
   
 ## <a name="see-also"></a>请参阅 
- [如何： 启动 Spy + +](../debugger/how-to-start-spy-increment.md)   
- [使用 Spy + +](../debugger/using-spy-increment.md)   
- [Spy + + 视图](../debugger/spy-increment-views.md)   
+ [如何：启动 Spy++](../debugger/how-to-start-spy-increment.md)   
+ [使用 Spy++](../debugger/using-spy-increment.md)   
+ [Spy++ 视图](../debugger/spy-increment-views.md)   
  [Spy++ 参考](../debugger/spy-increment-reference.md)

@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4359cb1c4623442639552e71d1b1dc902e09963e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: c5a75242a193345098ac33557a87e792f94f1ef4
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307646"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648556"
 ---
 # <a name="toolbox-data-tab"></a>工具箱，“数据”选项卡
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "49307646"
 ## <a name="ui-element-list"></a>UI 元素列表  
  若要直接转到某个组件的 .NET Framework 参考页，请针对“工具箱”中的项或设计器栏中的组件项按“F1”。  
   
-|name|描述|  
+|name|说明|  
 |----------|-----------------|  
-|<xref:System.Data.DataSet>|向窗体或组件中添加类型化或非类型化数据集的实例。 将此对象拖到设计器上后，它将显示一个对话框，可在其中选择一个现有的类型化数据集类或指定希望创建新的非类型化空数据集。 注意：不要使用“工具箱”上的 <xref:System.Data.DataSet> 对象创建新的类型化数据集架构和类。 有关详细信息，请参阅[创建和配置数据集](../../data-tools/create-and-configure-datasets-in-visual-studio.md)。|  
+|<xref:System.Data.DataSet>|向窗体或组件中添加类型化或非类型化数据集的实例。 将此对象拖到设计器上后，它将显示一个对话框，可在其中选择一个现有的类型化数据集类或指定希望创建新的非类型化空数据集。 **注意：** 不使用<xref:System.Data.DataSet>对象上**工具箱**来创建新的类型化数据集架构和类。 有关详细信息，请参阅[创建和配置数据集](../../data-tools/create-and-configure-datasets-in-visual-studio.md)。|  
 |<xref:System.Windows.Forms.DataGridView>|提供一种以表格格式显示数据的功能强大且灵活的方法。|  
 |<xref:System.Windows.Forms.BindingSource>|简化将控件绑定到基础数据源的过程。|  
 |<xref:System.Windows.Forms.BindingNavigator>|表示窗体上绑定到数据的控件的导航和操作用户界面 (UI)。|  
@@ -47,14 +47,6 @@ ms.locfileid: "49307646"
 ## <a name="see-also"></a>请参阅  
  [数据演练](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [在 Visual Studio 中的数据应用程序的概述](../../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [连接到 Visual Studio 中的数据](../../data-tools/connecting-to-data-in-visual-studio.md)   
  [准备应用程序以接收数据](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [将数据提取到你的应用程序](../../data-tools/fetching-data-into-your-application.md)   
  [在 Visual Studio 中将控件绑定到数据](../../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [编辑你的应用程序中的数据](../../data-tools/editing-data-in-your-application.md)   
  [验证数据](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [保存数据](../../data-tools/saving-data.md)
-
-
-

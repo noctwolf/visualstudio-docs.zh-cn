@@ -8,12 +8,12 @@ ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: b6ec9fffe0223a018724f9bd82125a63204a15fa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2ee721d3febc070435419f2750b52bd4daf533b1
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048601"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53560708"
 ---
 # <a name="debugging-in-visual-studio"></a>在 Visual Studio 中进行调试
 
@@ -27,7 +27,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
                     <div class="card">
                         <div class="cardImageOuter">
                             <div class="cardImage">
-                                <img src="/media/common/i_categorize.svg" alt="What is debugging?">
+                                <img src="https://docs.microsoft.com/media/common/i_categorize.svg" alt="What is debugging?">
                             </div>
                         </div>
                         <div class="cardText">
@@ -45,7 +45,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_code-edit.svg" alt="Write better code">
+                            <img src="https://docs.microsoft.com/media/common/i_code-quality.svg" alt="Write better code">
                         </div>
                     </div>
                     <div class="cardText">
@@ -63,7 +63,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_video.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_video.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -76,7 +76,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
     </li>
 </ul>
 
-<h2>通过 5 分钟的“快速入门”体验 Visual Studio 调试</h2>
+<h2>调试程序入门</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -86,7 +86,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="Road map">
+                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="Road map">
                         </div>
                     </div>
                     <div class="cardText">
@@ -97,18 +97,18 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </div>
         </a>
     </li>
-        <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-managed">
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt=".NET">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Absolute beginners">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>调试 C# 或 Visual Basic 应用</h3>
+                        <h3>初学者指南</h3>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,25 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-with-cplusplus">
+        <a href="https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_csharp.svg" alt="C#">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>调试 C# 应用</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger-cpp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -134,17 +152,17 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-aspnet">
+        <a href="https://docs.microsoft.com/visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="ASP.NET">
+                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="VB">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>调试 ASP.NET 应用</h3>
+                        <h3>调试 Visual Basic 应用</h3>
                     </div>
                 </div>
             </div>
@@ -153,39 +171,21 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
     </li>
 </ul>
 
-<h2>通过教程深入了解</h2>
+<h2>深入了解调试器</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/debugging-absolute-beginners">
+        <a href="https://docs.microsoft.com/visualstudio/debugger/using-breakpoints">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="Absolute beginners">
+                            <img src="https://docs.microsoft.com/media/common/i_investigate.svg" alt="Use breakpoints">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>初学者指南</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/visualstudio/debugger/getting-started-with-the-debugger">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="Learn to use the debugger">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>学习使用调试程序</h3>
+                        <h3>了解有关断点的更多信息</h3>
                     </div>
                 </div>
             </div>
@@ -199,7 +199,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="Tips and tricks">
+                            <img src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Tips and tricks">
                         </div>
                     </div>
                     <div class="cardText">
@@ -217,7 +217,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="View historical app state">
+                            <img src="https://docs.microsoft.com/media/common/i_investigate.svg" alt="View historical app state">
                         </div>
                     </div>
                     <div class="cardText">
@@ -235,7 +235,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_debug.svg" alt="Debug Azure">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Azure">
                         </div>
                     </div>
                     <div class="cardText">
