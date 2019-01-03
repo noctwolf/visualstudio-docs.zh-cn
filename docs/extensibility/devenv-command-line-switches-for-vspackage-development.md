@@ -1,9 +1,6 @@
 ---
 title: VSPackage 开发的 Devenv 命令行开关 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - /setup command line switch
@@ -20,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fd305133f913877f8d4ad4808a8c4efcab52af4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4333f7e0c892771ffb9b4643f4814cf3352a8f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847053"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820288"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage 开发的 Devenv 命令行开关
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 允许开发人员自动执行任务命令行中的，执行时*devenv.exe*，启动 Visual Studio 集成的开发环境 (IDE) 的文件。  

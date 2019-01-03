@@ -1,8 +1,7 @@
 ---
-title: CA1824：用 NeutralResourcesLanguageAttribute 标记程序集
+title: CA1824:用 NeutralResourcesLanguageAttribute 标记程序集
 ms.date: 03/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1824
@@ -16,21 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: beaef23dd5b3047d1d65b90fdd984dfdedd7e145
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db780257c83c42f97500a83f1843332cae0ecea3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916382"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825171"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824：用 NeutralResourcesLanguageAttribute 标记程序集
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:用 NeutralResourcesLanguageAttribute 标记程序集
 
 |||
 |-|-|
 |TypeName|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
 |类别|Microsoft.Performance|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
 
@@ -38,31 +37,31 @@ ms.locfileid: "31916382"
 
 ## <a name="rule-description"></a>规则说明
 
-<xref:System.Resources.NeutralResourcesLanguageAttribute>特性通知应用程序的默认区域性的资源管理器。 如果默认区域性的资源都嵌入到应用程序的主程序集和<xref:System.Resources.ResourceManager>必须检索属于与默认区域性中，相同的区域性的资源<xref:System.Resources.ResourceManager>会自动使用位于主程序集的资源而不是搜索的附属程序集。 这将绕过常用的程序集探测，改进加载，且可以缩小工作集的第一个资源的查找性能。
+<xref:System.Resources.NeutralResourcesLanguageAttribute>属性会通知应用程序的默认区域性的资源管理器。 如果默认区域性的资源嵌入到应用的主程序集，并<xref:System.Resources.ResourceManager>必须检索属于相同的区域性的默认区域性资源<xref:System.Resources.ResourceManager>会自动使用位于主程序集中的资源而不是搜索附属程序集。 这会绕过常用的程序集探测，提高了加载，并可以减少您的工作集的第一个资源的查找性能。
 
 > [!TIP]
-> 请参阅[打包和部署资源](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps)进程，<xref:System.Resources.ResourceManager>用来探测资源文件。
+> 请参阅[打包和部署资源](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps)进程的<xref:System.Resources.ResourceManager>用来探测资源文件。
 
-## <a name="fix-violations"></a>解决冲突
+## <a name="fix-violations"></a>修复冲突
 
-若要修复与此规则的冲突，将属性添加到该程序集，并指定非特定区域性的资源的语言。
+若要修复此规则的冲突，请将属性添加到该程序集，并指定非特定区域性的资源的语言。
 
 ### <a name="to-specify-the-neutral-language-for-resources"></a>若要指定资源的非特定语言
 
-1. 在**解决方案资源管理器**，右键单击你的项目，然后选择**属性**。
+1. 在中**解决方案资源管理器**，右键单击项目，并选择**属性**。
 
-2. 选择**应用程序**选项卡上，然后选择**程序集信息**。
+2. 选择**应用程序**选项卡，然后选择**程序集信息**。
 
    > [!NOTE]
    > 如果你的项目的标准.NET 或.NET Core 项目，请选择**包**选项卡。
 
-3. 选择从语言**非特定语言**或**程序集的非特定语言**下拉列表。
+3. 选择的语言从**非特定语言**或**程序集的非特定语言**下拉列表。
 
 4. 选择“确定”。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
-它是允许禁止显示此规则的警告。 但是，启动性能可能会降低。
+它是允许要禁止显示此规则的警告。 但是，启动性能可能会降低。
 
 ## <a name="see-also"></a>请参阅
 

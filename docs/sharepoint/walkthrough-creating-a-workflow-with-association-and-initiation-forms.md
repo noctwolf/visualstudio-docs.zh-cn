@@ -1,13 +1,8 @@
 ---
-title: 演练： 创建工作流使用关联和启动窗体 |Microsoft Docs
-ms.custom: ''
+title: 演练：使用关联和启动窗体创建工作流 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9878da7c1384dec8d0c8aa863b0eff4252e9efe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873872"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824731"
 ---
-# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>演练： 使用关联和初始化表单创建工作流
+# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>演练：使用关联和初始化表单创建工作流
   本演练演示如何创建一个基本顺序工作流，其中包含使用关联和初始化窗体。 这些是启用 SharePoint 管理员 （关联窗体），首次关联以及由用户 （启动窗体） 启动工作流时要添加到工作流参数的 ASPX 窗体。  
   
  本演练概述了用户要创建审批工作流的费用报告具有以下要求的方案：  
@@ -452,5 +447,4 @@ ms.locfileid: "49873872"
   
 ## <a name="see-also"></a>请参阅
  [创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)   
- [演练： 将应用程序页添加到工作流](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  
-  
+ [演练：将应用程序页添加到工作流](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)  

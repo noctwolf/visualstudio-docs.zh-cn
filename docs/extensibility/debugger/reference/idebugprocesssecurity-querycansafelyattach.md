@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessSecurity::QueryCanSafelyAttach |Microsoft 文档
-ms.custom: ''
+title: IDebugProcessSecurity::QueryCanSafelyAttach |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity::QueryCanSafelyAttach
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe132ddbd154e04e3cef1a20e826c3634c65bdb2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9ecc1d7970fe8be98d199130db6e87847de3aee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839000"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
-此方法允许端口供应商联系，以显示一条警告之前用户将附加到一个不安全的过程。  
+此方法允许端口提供程序，用户将附加到不安全的过程之前显示一条警告。  
   
 ## <a name="syntax"></a>语法  
   
@@ -36,11 +33,11 @@ int QueryCanSafelyAttach();
 ## <a name="return-value"></a>返回值  
  返回值如下所示：  
   
--   `S_OK`： 附加到进程，则可以安全和没有警告对话框中所示。  
+-   `S_OK`：是安全的附加到进程，并且会显示任何警告对话框。  
   
--   `S_FALSE`： 附加可能是一个安全问题，并显示一个对话框以及一条警告。  
+-   `S_FALSE`：附加可能是一个安全问题，并且会显示一个警告对话框。  
   
--   `FAILURE`： 附加到进程将失败。  
+-   `FAILURE`：附加到进程将失败。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

@@ -1,8 +1,6 @@
 ---
 title: Office 项目中的辅助功能
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,19 +16,20 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97f96e5a79a6e98bb6367d9c00975e3e6288385a
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 32d44c33192d9d4e4fdcf1b8db8cb47102a1df61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803805"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833321"
 ---
 # <a name="accessibility-in-office-projects"></a>Office 项目中的辅助功能
-  Microsoft Visual Studio 和 Microsoft Office 包含许多辅助功能，使你能够构建符合标准的可访问性要求的自定义解决方案。 Microsoft 发布了有关在 Web 上找到的可访问性准则。 有关详细信息，请参阅[辅助功能网站](http://go.microsoft.com/fwlink/?LinkID=37113)。
 
- 在大多数情况下，Visual Studio 中的 Office 项目满足辅助功能标准或公开属性，可设置为使可访问你的解决方案。 但是，有一些功能的访问受到限制。
+Microsoft Visual Studio 和 Microsoft Office 包含许多辅助功能，使你能够构建符合标准的可访问性要求的自定义解决方案。 Microsoft 发布了有关在 Web 上找到的可访问性准则。 有关详细信息，请参阅[辅助功能网站](http://go.microsoft.com/fwlink/?LinkID=37113)。
 
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+在大多数情况下，Visual Studio 中的 Office 项目满足辅助功能标准或公开属性，可设置为使可访问你的解决方案。 但是，有一些功能的访问受到限制。
+
+[!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="accessibility-at-design-time"></a>在设计时可访问性
 

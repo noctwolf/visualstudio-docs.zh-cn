@@ -1,9 +1,6 @@
 ---
-title: 如何： 打开标准编辑器 |Microsoft Docs
-ms.custom: ''
+title: 如何：打开标准编辑器 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e740cdbb04a9b20ddb5a9d0465434333dd29264
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: fbc4c694dcaa39e61eef484f018204474e67dd7a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639378"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820340"
 ---
-# <a name="how-to-open-standard-editors"></a>如何： 打开标准编辑器
+# <a name="how-to-open-standard-editors"></a>如何：打开标准编辑器
 当您打开标准编辑器时，您让 IDE 确定指定的文件类型，而不是指定文件的特定于项目的编辑器的标准编辑器。  
   
  请完成以下步骤来实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>方法。 这将在标准编辑器中打开项目文件。  
@@ -55,6 +52,6 @@ ms.locfileid: "39639378"
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
  [打开和保存项目项](../extensibility/internals/opening-and-saving-project-items.md)   
- [如何： 打开项目特定的编辑器](../extensibility/how-to-open-project-specific-editors.md)   
- [如何： 打开开放文档编辑器](../extensibility/how-to-open-editors-for-open-documents.md)   
+ [如何：打开项目特定的编辑器](../extensibility/how-to-open-project-specific-editors.md)   
+ [如何：打开编辑器的打开的文档](../extensibility/how-to-open-editors-for-open-documents.md)   
  [使用打开文件命令显示文件](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)

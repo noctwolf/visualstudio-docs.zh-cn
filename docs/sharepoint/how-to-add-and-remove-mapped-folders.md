@@ -1,15 +1,10 @@
 ---
-title: 如何： 添加和移除映射的文件夹 |Microsoft Docs
-ms.custom: ''
+title: 如何：添加和移除映射的文件夹 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.MappedFolder
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe9868a9909dbb78bf510f18584472520948d6f9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 302b161620961b3b89a616bf4dc998c7a5745456
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823912"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>如何： 添加和移除映射的文件夹
   一些常用的文件夹在 SharePoint 中，如图像和布局，深度嵌套的文件层次结构中。 可以将这些文件夹映射到 SharePoint 项目来更轻松地访问它们。 映射的文件夹是 SharePoint 项目中的 SharePoint 服务器安装文件的物理位置相对应的文件夹。  
@@ -40,7 +35,7 @@ ms.locfileid: "36757643"
   
 1.  在菜单栏上，依次选择“文件” > “新建” > “项目”。  
   
-2.  在**新的项目**对话框框中，展开**Visual Basic**或**Visual C#** 节点，展开**Office/SharePoint**节点，然后选择**SharePoint 解决方案**节点。  
+2.  在中**新的项目**对话框框中，展开**Visual Basic**或**Visual C#** 节点中，展开**Office/SharePoint**节点，然后选择**SharePoint 解决方案**节点。  
   
 3.  在项目模板列表中，选择**SharePoint 2013 可视 Web 部件**模板。  
   
@@ -85,4 +80,3 @@ ms.locfileid: "36757643"
   
 ## <a name="see-also"></a>请参阅
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
-  
