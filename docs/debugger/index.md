@@ -4,16 +4,15 @@ title: 调试应用 | Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来调试适用于你的平台和设备的应用程序、服务和工具。
 ms.custom: seodec18
 ms.topic: landing-page
-ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: 2ee721d3febc070435419f2750b52bd4daf533b1
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 79a3aa8fd2d86b7c64d719dc745138b970b92d3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53560708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886632"
 ---
 # <a name="debugging-in-visual-studio"></a>在 Visual Studio 中进行调试
 
