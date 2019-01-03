@@ -1,9 +1,6 @@
 ---
-title: 演练： 大纲显示 |Microsoft Docs
-ms.custom: ''
+title: 演练：大纲显示 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 740ed444770a440b54fe61b0c8ec8189691fe9a1
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7de78a60dd7de129eb2626e414ce6ec44bb20ce3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827518"
 ---
 # <a name="walkthrough-outlining"></a>演练：大纲显示
 设置基于语言的功能，例如通过定义类型的文本区域，你想要展开或折叠大纲显示。 可以在语言服务的上下文中定义的区域或定义自己的文件名称扩展和内容类型和将区域定义应用于只为该类型，或适用于现有内容类型 （例如"text") 的区域定义。 本演练演示如何定义和显示大纲区域。  
@@ -30,7 +27,7 @@ ms.locfileid: "39566917"
   
 ### <a name="to-create-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建 VSIX 项目。 将解决方案命名`OutlineRegionTest`。  
+1.  创建 VSIX 项目。 将解决方案命名为 `OutlineRegionTest`。  
   
 2.  将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -43,7 +40,7 @@ ms.locfileid: "39566917"
   
 ### <a name="to-implement-an-outlining-tagger"></a>若要实现大纲显示标记器  
   
-1.  添加一个类文件并将其命名`OutliningTagger`。  
+1.  添加一个类文件并将其命名为 `OutliningTagger`。  
   
 2.  导入以下命名空间。  
   
@@ -135,4 +132,4 @@ ms.locfileid: "39566917"
 4.  应包括这两个方括号的大纲区域。 您应可以通过单击左侧的左大括号负号，若要折叠大纲区域。 当区域处于折叠状态，省略号符号 (*...*) 应显示在折叠的区域和一个弹出窗口，其中包含文本的左侧**将鼠标悬停在文本**应显示的省略号上移动指针时。  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -1,9 +1,6 @@
 ---
 title: 何时创建项目类型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bfa51dfbed4fb0c78892b06e9377e36a1be38ea
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 2f2c95b2275389bf02755440745ad3b788956722
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827710"
 ---
 # <a name="when-to-create-project-types"></a>何时创建项目类型
 为自定义创建新的项目类型提供了基础[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]为你的用户。 但是，创建新的项目类型不是必需的所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]自定义项。 以下指导原则应帮助您确定是否需要为你的方案的新项目类型。  
@@ -62,5 +59,5 @@ ms.locfileid: "46495214"
   
 ## <a name="see-also"></a>请参阅  
  [文档 Windows 和编辑器](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)   
- [清单： 创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)

@@ -1,8 +1,7 @@
 ---
-title: CA1804：移除未使用的局部变量
+title: CA1804:移除未使用的局部变量
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1804
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b1846c1b8d9173db6d1f4b5acd0544fd601da67a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 47578cc281334da7eeebeea6eaa5ef0c1c021c8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545458"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819856"
 ---
-# <a name="ca1804-remove-unused-locals"></a>CA1804：移除未使用的局部变量
+# <a name="ca1804-remove-unused-locals"></a>CA1804:移除未使用的局部变量
 
 |||
 |-|-|
@@ -54,10 +53,10 @@ ms.locfileid: "45545458"
  [!code-csharp[FxCop.Performance.UnusedLocals#1](../code-quality/codesnippet/CSharp/ca1804-remove-unused-locals_1.cs)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA1809：避免过多的局部变量](../code-quality/ca1809-avoid-excessive-locals.md)
+ [CA1809:避免过多的局部变量](../code-quality/ca1809-avoid-excessive-locals.md)
 
- [CA1811：避免使用未调用的私有代码](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811:避免使用未调用的私有代码](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812：避免未实例化的内部类](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812:避免未实例化的内部类](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801：检查未使用的参数](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801:检查未使用的参数](../code-quality/ca1801-review-unused-parameters.md)

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8aed2920e7be177fdbccc9b71796e58cf103e846
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 69884d3dd52f2aaab04dac8f32f18d286f5929af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057583"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828233"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>在文本模板中使用 Visual Studio ModelBus
 如果您编写读取模型，其中包含 Visual Studio ModelBus 引用的文本模板，可能需要解析要访问的目标模型的引用。 在这种情况下，您需要调整文本模板和引用特定于域的语言 (Dsl):
@@ -160,7 +159,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 -   使用`this.ModelBus`以获取向 ModelBus 的访问权限。
 
-## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>演练： 测试使用 ModelBus 的文本模板
+## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>演练：测试使用 ModelBus 的文本模板
  在本演练中，您将执行以下步骤：
 
 1.  构造两个 Dsl。 一个 DSL*使用者*，具有`ModelBusReference`属性，可以对其他 DSL，请参阅*提供程序*。
@@ -181,7 +180,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 2. 在 DSL 定义关系图中，右键单击顶部附近，不是关系图的空白部分，然后单击**启用 Modelbus**。
 
-   -   如果没有看到**启用 Modelbus**，必须下载并安装 VMSDK ModelBus 扩展。 VMSDK 网站上找到：[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+   -   如果没有看到**启用 Modelbus**，必须下载并安装 VMSDK ModelBus 扩展。 VMSDK 网站上找到它：[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
 3. 在中**启用 Modelbus**对话框中，选择**向 ModelBus 公开此 DSL**，然后单击**确定**。
 
@@ -211,7 +210,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     `<MefComponent>|T4ModelBusAdapter|</MefComponent>`
 
-7. 在中`T4ModelBusAdapter`项目中，添加对的引用： **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
+7. 在`T4ModelBusAdapter`项目中，添加对的引用：**Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
 
 8. 打开 T4ModelBusAdapter\AdapterManager.tt:
 

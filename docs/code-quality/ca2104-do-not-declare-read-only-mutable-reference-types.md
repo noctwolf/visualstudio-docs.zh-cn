@@ -1,8 +1,7 @@
 ---
-title: CA2104：不要声明只读可变引用类型
+title: CA2104:不要声明只读可变引用类型
 ms.date: 11/01/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f1c4f19349d94cb7dedfd22a82dc86b6f33b5b
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 3dd84a9830f5c717595f9a2b0f25ac652e931b69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844205"
 ---
-# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104：不要声明只读可变引用类型
+# <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104:不要声明只读可变引用类型
 
 |||
 |-|-|
@@ -51,7 +50,7 @@ ms.locfileid: "50967075"
 
 此规则可能会无意中显示一种类型的冲突的是，实际上，不可变。 在这种情况下，则可以安全地禁止显示警告。
 
-只读数组字段不受此规则，但是会导致违反[CA2105： 数组字段不应为只读](../code-quality/ca2105-array-fields-should-not-be-read-only.md)规则。
+只读数组字段不受此规则，但是会导致违反了[CA2105:不应仅读取数组字段](../code-quality/ca2105-array-fields-should-not-be-read-only.md)规则。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 

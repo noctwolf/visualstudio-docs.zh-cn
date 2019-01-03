@@ -2,7 +2,6 @@
 title: 如何：基于 XSD 架构创建 XML 文档
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: d675695b3d3e054d14e481c8c41ae06de5af5600
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820194"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何： 创建基于 XSD 架构的 XML 文档
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何：创建基于 XSD 架构的 XML 文档
 
-**生成示例 XML**功能将生成基于 XML 架构 (XSD) 文件的示例 XML 文件。
+**生成示例 XML**功能生成基于 XML 架构 (XSD) 文件的示例 XML 文件。
 
  可以在下列情况下使用此选项：
 
@@ -27,7 +26,7 @@ ms.locfileid: "34549085"
 
 -   确认架构发挥了应有的作用。
 
-**生成示例 XML**功能仅对全局元素可用，而且需要有效的 XML 架构集。
+**生成示例 XML**功能仅对全局元素可用，并且需要有效的 XML 架构集。
 
 此功能通常会生成有效的 XML 文档。 但是，如果架构包含下列一项或多项内容，示例可能无效：
 
@@ -43,11 +42,11 @@ ms.locfileid: "34549085"
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>基于 XSD 文件生成 XML 实例文档
 
-1.  按照中的步骤[如何： 创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
+1.  按照中的步骤[如何：创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
 
-2.  在[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)，右键单击`PurchaseOrder`全局元素。 选择**生成示例 XML**。
+2.  在中[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)，右键单击`PurchaseOrder`全局元素。 选择**生成示例 XML**。
 
-     当你选择此选项，PurchaseOrder。*xml*将生成包含以下示例 XML 内容的文件，然后将其在 XML 编辑器中打开：
+     当您选择此选项，PurchaseOrder。*xml*将生成与以下示例 XML 内容的文件和 XML 编辑器中打开：
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

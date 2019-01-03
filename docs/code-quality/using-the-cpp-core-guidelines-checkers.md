@@ -1,5 +1,5 @@
 ---
-title: 使用 c + + Core Guidelines 检查器
+title: 使用 C++ 核心准则检查程序
 ms.date: 08/14/2018
 ms.topic: conceptual
 author: mikeblome
@@ -8,15 +8,14 @@ manager: wpickett
 dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 6595e8990dece15e88e07a6c8eefabd3f543bbb7
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 2ed89e5210a3b8201f612887f2346b57e03cef20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143458"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820233"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + Core Guidelines 检查器
+# <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ 核心准则检查程序
 C + + Core Guidelines 了一可移植的指导原则、 规则和有关在 c + + 创建的 c + + 专家和设计器中编写代码的最佳做法。 Visual Studio 当前支持 c + + 作为其代码分析工具的一部分的这些规则的子集。 核心准则检查器在 Visual Studio 2017 中，默认情况下已安装并且位于[可用作 Visual Studio 2015 的 NuGet 包](#vs2015_corecheck)。
 
 ## <a name="the-c-core-guidelines-project"></a>C + + 核心准则项目
@@ -55,11 +54,11 @@ int main()
 
 此示例演示了几个 c + + Core Check 规则可以找到的警告：
 
-- C26494 是规则 Type.5： 始终初始化对象。
+- C26494 是规则 Type.5:始终初始化对象。
 
-- C26485 是规则 Bounds.3： 没有数组指针的衰减。
+- C26485 是规则 Bounds.3:没有数组指针的衰减。
 
-- C26481 是规则 Bounds.1： 请勿使用指针算法。 请改用 `span`。
+- C26481 是规则 Bounds.1:请勿使用指针算法。 请改用 `span`。
 
 如果安装并启用时编译此代码前, 两个警告是输出，但禁止第三个 c + + Core Check 代码分析规则集。 下面是示例代码的生成输出：
 

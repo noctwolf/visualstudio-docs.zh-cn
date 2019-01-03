@@ -1,9 +1,6 @@
 ---
-title: 提供的服务 (源控件 VSPackage) |Microsoft 文档
-ms.custom: ''
+title: 提供的服务 (源代码管理 VSPackage) |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, source control packages
@@ -14,18 +11,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a52ffa7067a91582d8bfe31e09d6b03be54c4ea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5cbc107b1b300538cf9a94a89a77d8ac9e2ff728
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828532"
 ---
-# <a name="services-provided-source-control-vspackage"></a>提供的服务 (源控件 VSPackage)
-服务是通过其在 Vspackage 和 Visual Studio 集成的开发环境 (IDE) 和其安装的 Vspackage 之间共享功能的主要机制。 有关服务和它们的重要性在 Visual Studio IDE 中详细说明，请参阅[使用和提供服务](../../extensibility/using-and-providing-services.md)。  
+# <a name="services-provided-source-control-vspackage"></a>提供的服务（源代码管理 VSPackage）
+服务是通过该功能被共享之间的 Visual Studio 集成的开发环境 (IDE) 和其已安装的 Vspackage 以及 Vspackage 之间的主要机制。 服务和 Visual Studio IDE 中的其重要性的详细说明，请参阅[使用和提供服务](../../extensibility/using-and-providing-services.md)。  
   
-## <a name="the-source-control-service"></a>源控件服务  
- Visual Studio 提供两个图层的服务、 IDE 级服务和包级别服务。 Visual Studio IDE 以本机方式提供 IDE 级别服务。 源代码管理包使用这些服务的一些。 源代码管理包作为 VSPackage 通过提供自己的私有源控件服务共享其源代码管理功能。 源代码管理包封装了通过它可由 Visual Studio IDE 的协定的形式实现的源控件相关接口的一组。  
+## <a name="the-source-control-service"></a>源代码管理服务  
+ Visual Studio 提供了两个层的服务、 IDE 级别服务和包级别服务。 Visual Studio IDE 以本机方式提供 IDE 级别服务。 源代码管理包使用其中一些服务。 源代码管理包作为 VSPackage 通过提供其自己的专用源代码管理服务共享其源代码管理功能。 源代码管理包封装实现的协定可以由 Visual Studio IDE 的窗体中的源控件相关接口集。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [设计元素](../../extensibility/internals/source-control-vspackage-design-elements.md)

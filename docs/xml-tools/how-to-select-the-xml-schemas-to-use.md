@@ -2,7 +2,6 @@
 title: 如何：选择要使用的 XML 架构
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a04075c0625eb7b4dc899a4e183588b96eb7eadd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d49181e598c8ac6c268d1efcece43bd574003f39
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824387"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>如何： 选择要使用的 XML 架构
+# <a name="how-to-select-the-xml-schemas-to-use"></a>如何：选择要使用的 XML 架构
 
 XML 编辑器提供的架构缓存位于 *%InstallDir%\Xml\Schemas*目录。 架构缓存中包括用于智能感知和 XML 文档验证的常见 XML 架构。
 
@@ -40,7 +39,7 @@ XML 编辑器提供的架构缓存位于 *%InstallDir%\Xml\Schemas*目录。 架
 
    - 选择架构中列出**XML 架构**对话框中，单击**使用**列，，然后选择**使用此架构**。
 
-     或
+     - 或 -
 
    - 选择多个架构中列出**XML 架构**对话框中，右键单击并选择**使用此架构**。
 
@@ -58,7 +57,7 @@ XML 编辑器提供的架构缓存位于 *%InstallDir%\Xml\Schemas*目录。 架
 
 3.  浏览并选择要添加到架构缓存的架构。
 
-4.  单击**打开**。
+4.  单击“打开”。
 
      添加到架构的架构缓存，并且**使用**列的值设置为**使用此架构**。
 

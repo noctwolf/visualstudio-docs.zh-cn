@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式使用在隐藏模式下的 Word 对话框
-ms.custom: ''
+title: 如何：以编程方式使用在隐藏模式下的 Word 对话框
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d5b123f1b58e61dffc64b5df912092edfd3fbf53
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0594bea01d8b6fb5cef993a2704beb658b513c48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670595"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819622"
 ---
-# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>如何： 以编程方式使用在隐藏模式下的 Word 对话框
+# <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>如何：以编程方式使用在隐藏模式下的 Word 对话框
   可以通过调用 Microsoft Office Word 中的内置对话框而不会向用户显示其执行复杂的操作通过一个方法调用。 您可以执行此操作通过使用<xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A>方法<xref:Microsoft.Office.Interop.Word.Dialog>对象而无需调用<xref:Microsoft.Office.Interop.Word.Dialog.Display%2A>方法。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,10 +39,8 @@ ms.locfileid: "35670595"
  [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式使用 Word 中的内置对话框](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
+ [如何：以编程方式使用 Word 中的内置对话框](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)   
  [Word 对象模型概述](../vsto/word-object-model-overview.md)   
  [在 Office 解决方案中的后期绑定](../vsto/late-binding-in-office-solutions.md)   
  [反射 (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [反射 (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

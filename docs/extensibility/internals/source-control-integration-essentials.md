@@ -1,9 +1,6 @@
 ---
 title: 源代码管理集成基础知识 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4533cac0ba6cbbcf5cf4354afdb29eefc5b2b726
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f73ac76c8b6b8cf96e447d072b7d8b73611bb6e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879163"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828363"
 ---
 # <a name="source-control-integration-essentials"></a>源代码管理集成基础知识
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持两种类型的源代码管理集成： 提供基本功能，并且使用源控制插件 API （前称 MSSCCI API） 和基于 VSPackage 的源代码控制集成解决方案生成了源代码管理插件的提供了更强大的功能。  
@@ -32,7 +29,7 @@ ms.locfileid: "49879163"
   
 1. 创建实现中所指定的函数的 DLL[源代码管理插件](../../extensibility/source-control-plug-ins.md)。  
   
-2. 相应的注册表项，从而注册该 DLL，如中所述[如何： 安装源代码管理插件](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)。  
+2. 相应的注册表项，从而注册该 DLL，如中所述[如何：安装源代码管理插件](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)。  
   
 3. 创建帮助器 UI 并将其通过源控件适配器包出现提示时显示 ([!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]处理通过源代码管理插件的源代码管理功能的组件)。  
   

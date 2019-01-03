@@ -1,8 +1,7 @@
 ---
-title: CA1707：标识符不应包含下划线
+title: CA1707:标识符不应包含下划线
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotContainUnderscores
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74746897f8ce27a79f666ae1d691b235035b4626
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5c5e514599b655febc7086c21c6b037ebe3619e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548590"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825105"
 ---
-# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707：标识符不应包含下划线
+# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707:标识符不应包含下划线
 
 |||
 |-|-|
@@ -52,5 +51,5 @@ ms.locfileid: "45548590"
 
 ## <a name="related-rules"></a>相关的规则
 
-- [CA1709：标识符的大小写应当正确](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708：标识符不应仅以大小写进行区分](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709:标识符应采用正确的大小写](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708:标识符不应不同于用例的详细信息](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
