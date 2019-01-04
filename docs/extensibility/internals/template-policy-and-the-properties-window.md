@@ -1,9 +1,6 @@
 ---
 title: 模板策略和属性窗口 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, template policy
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cf24f6f769ea9344d2a7716856e3c84fdf122de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff518df5025131a369e0f82da44cb38a7e6a57da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816321"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960860"
 ---
 # <a name="template-policy-and-the-properties-window"></a>模板策略和属性窗口
 当一个项目，包含在企业级模板项目时，该企业级模板项目可以强制执行策略。 模板策略将成为一个约束系统，可用于设置属性的默认值、 隐藏属性、 添加属性，依次类推。  

@@ -1,8 +1,7 @@
 ---
-title: CA1035：ICollection 实现含有强类型成员
+title: CA1035:ICollection 实现含有强类型成员
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ICollectionImplementationsHaveStronglyTypedMembers
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcf5218f41a11d50b6cc3f36767190cce5deab1b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 9a1695ee55c8142a170fae41a1143118e0ba5a53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545523"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949071"
 ---
-# <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035：ICollection 实现含有强类型成员
+# <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035:ICollection 实现含有强类型成员
 
 |||
 |-|-|
@@ -54,9 +53,9 @@ ms.locfileid: "45545523"
  [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA1038：枚举数应强类型化](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
+ [CA1038:枚举数应强类型化](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
- [CA1039：列表已强类型化](../code-quality/ca1039-lists-are-strongly-typed.md)
+ [CA1039:列表已强类型化](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>请参阅
 

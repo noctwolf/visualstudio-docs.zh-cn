@@ -1,9 +1,6 @@
 ---
 title: 字体和颜色概述 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], font and color
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adf5877ae9b01666491e5d10522ba52b58b2d917
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 84d1d409c86f018cb0c661a6a6bb36ccc1911d11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966481"
 ---
 # <a name="font-and-color-overview"></a>字体和颜色的概述
 本主题讨论中的文本字体和颜色设置[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。 它还引入了类别和显示项的概念并介绍 Vspackage 和核心编辑器如何使用文本特性。  
@@ -57,7 +54,7 @@ ms.locfileid: "49845220"
   
    只有一个**类别**即支持此机制，则**文本编辑器**。  
   
-- 更多常规的替代方法支持所有其他**类别**和显示文本时在源编辑器之外的用户界面组件。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> 。  
+- 更多常规的替代方法支持所有其他**类别**和显示文本时在源编辑器之外的用户界面组件。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>。  
   
 ## <a name="core-editor-text-settings"></a>核心编辑器文本设置  
  核心编辑器的语言服务对象的字体和颜色设置受**文本 EditorCategory**中找到**显示其设置**的下拉列表框**字体和颜色**属性页。  
@@ -70,11 +67,11 @@ ms.locfileid: "49845220"
   
 - 一种明确定义和优化着色机制。  
   
-   有关详细信息，请参阅 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 。  
+   有关详细信息，请参阅 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>。  
   
 - 可以使用内置的显示项从**文本 EditorCategory**和对其进行扩展。  
   
-   有关详细信息，请参阅[如何： 使用内置的可着色项](../extensibility/internals/how-to-use-built-in-colorable-items.md)并[自定义可着色项](../extensibility/internals/custom-colorable-items.md)。  
+   有关更多信息，请参见[如何：使用内置的可着色项](../extensibility/internals/how-to-use-built-in-colorable-items.md)并[自定义可着色项](../extensibility/internals/custom-colorable-items.md)。  
   
 - 自动持久化的当前状态的两个内置和自定义显示的项**文本编辑器**类别。  
   

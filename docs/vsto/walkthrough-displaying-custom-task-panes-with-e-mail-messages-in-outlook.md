@@ -1,9 +1,6 @@
 ---
-title: 演练： 在 Outlook 中显示电子邮件消息的自定义任务的窗格
-ms.custom: ''
+title: 演练：在 Outlook 中显示电子邮件消息的自定义任务的窗格
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c25121e96005486450397938aad3c24f89d26cc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 322cb9b2136adab37a4506b8332d7d6477ab75ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828463"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926576"
 ---
-# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>演练： 在 Outlook 中显示电子邮件消息的自定义任务的窗格
+# <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>演练：在 Outlook 中显示电子邮件消息的自定义任务的窗格
   本演练演示如何显示创建或打开的每个电子邮件的自定义任务窗格的唯一实例。 用户可以通过使用每封电子邮件功能区中的按钮显示或隐藏自定义任务窗格。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -60,14 +57,14 @@ ms.locfileid: "49828463"
   
 - Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 或 Microsoft Outlook 2010。  
   
-  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现： 使用 Outlook 中的任务窗格？](http://go.microsoft.com/fwlink/?LinkID=130309)。  
+  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：在 Outlook 中使用任务窗格？](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## <a name="create-the-project"></a>创建项目  
  在 VSTO 加载项中实现自定义任务窗格。首先为 Outlook 创建 VSTO 外接程序项目。  
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  创建名为 **OutlookMailItemTaskPane** 的“Outlook 外接程序” 项目。 使用“Outlook 外接程序”  项目模板。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  创建名为 **OutlookMailItemTaskPane** 的“Outlook 外接程序” 项目。 使用“Outlook 外接程序”  项目模板。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此时将打开 *ThisAddIn.cs* 或 *ThisAddIn.vb* 代码文件，并将“OutlookMailItemTaskPane”  项目添加到“解决方案资源管理器” 。  
   
@@ -267,17 +264,15 @@ ms.locfileid: "49828463"
   
 -   在 VSTO 外接程序中的其他应用程序中创建自定义任务窗格。 有关支持自定义任务窗格的应用程序的详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
   
--   通过使用自定义任务窗格自动化 Microsoft Office 应用程序。 有关详细信息，请参阅[演练： 自动执行应用程序从自定义任务窗格](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。  
+-   通过使用自定义任务窗格自动化 Microsoft Office 应用程序。 有关详细信息，请参见[演练：自动执行应用程序从自定义任务窗格](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。  
   
--   在 Excel 中创建一个可用于隐藏或显示自定义任务窗格的功能区按钮。 有关详细信息，请参阅[演练： 将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
+-   在 Excel 中创建一个可用于隐藏或显示自定义任务窗格的功能区按钮。 有关详细信息，请参见[演练：将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义任务窗格](../vsto/custom-task-panes.md)   
- [如何： 向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [演练： 自动执行从自定义任务窗格应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [演练： 将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [演练：自动执行从自定义任务窗格应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [演练：将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
  [功能区概述](../vsto/ribbon-overview.md)   
  [Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)   
  [在运行时在功能区的访问](../vsto/accessing-the-ribbon-at-run-time.md)  
-  
-  

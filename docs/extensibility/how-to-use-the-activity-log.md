@@ -1,9 +1,6 @@
 ---
-title: 如何： 使用活动日志 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用活动日志 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, debugging
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa564919abcfb4c8bd94fbaf139b69f2375deebd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9305cf1de6cadc2230b90723ac0f995b425ba3a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990329"
 ---
-# <a name="how-to-use-the-activity-log"></a>如何： 使用活动日志
+# <a name="how-to-use-the-activity-log"></a>如何：使用活动日志
 Vspackage 可以将消息写入活动日志。 此功能是非常适合在零售环境中进行调试的 Vspackage。  
   
 > [!TIP]

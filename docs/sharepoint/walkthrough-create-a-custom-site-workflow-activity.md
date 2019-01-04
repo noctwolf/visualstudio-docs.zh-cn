@@ -1,13 +1,8 @@
 ---
-title: 演练： 创建自定义站点工作流活动 |Microsoft Docs
-ms.custom: ''
+title: 演练：创建自定义站点工作流活动 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e828926b5ddfc70f64f729849aaec99dbdade103
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894165"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951808"
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>演练： 创建自定义站点工作流活动
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>演练：创建自定义站点工作流活动
   本演练演示如何创建自定义活动的站点级工作流使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 （站点级工作流应用于整个站点，而不仅仅是在站点上的列表。）自定义活动创建的备份通知列表，然后将公告列表的内容复制到其中。  
   
  本演练演示了下列任务：  
@@ -128,6 +123,5 @@ ms.locfileid: "49894165"
 5.  在快速启动栏上依次选择**公告备份**链接。 请注意，所有中包含的公告**公告**列表已复制到此新列表。  
   
 ## <a name="see-also"></a>请参阅
- [如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
+ [如何：创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
-  
