@@ -1,9 +1,6 @@
 ---
 title: 从设置存储中获取服务信息 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 947eb0fd25e57e00f355afac8dc993071859189c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: decb5edb3e0cc243bacd3be0beda8aba621e8af2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874467"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>从设置存储区获取服务信息
 若要查找所有可用的服务，或以确定是否安装了特定服务，可以使用设置存储。 您必须知道服务类的类型。  

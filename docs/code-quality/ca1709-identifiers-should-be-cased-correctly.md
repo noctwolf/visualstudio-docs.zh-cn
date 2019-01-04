@@ -1,8 +1,7 @@
 ---
-title: CA1709：标识符的大小写应当正确
+title: CA1709:标识符的大小写应当正确
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e1422b409ba27b56adead768c6272f955e75000
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e954b3e3d346775d87cfcc8bb46bddca2b16056a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891344"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881722"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709：标识符的大小写应当正确
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709:标识符的大小写应当正确
 
 |||
 |-|-|
@@ -50,7 +49,7 @@ ms.locfileid: "49891344"
 
  此规则将名称拆分成单词根据大小写，并检查任何两个字母的词与一系列常见的两个字母单词，如"In"或"My"。 如果找不到匹配项，单词被假定为首字母缩写词。 此外，此规则假定它找到一个缩写词时名称包含在行中的四个大写字母或名称的末尾处的行中的三个大写字母。
 
- 按照约定，两字母缩写词使用全大写字母和首字母缩写词的三个或多个字符使用 Pascal 大小写。 下面的示例使用此命名约定: 'DB'、 CR、 Cpa 和 Ecma。 下面的示例违反约定: 'Io'、 'XML' 和 'DoD，以及用于非参数名称、 xp 和 cpl。
+ 按照约定，两字母缩写词使用全大写字母和首字母缩写词的三个或多个字符使用 Pascal 大小写。 下面的示例使用此命名约定：'DB'、 CR、 Cpa 和 Ecma。 下面的示例违反约定：Io'、 'XML' 和 'DoD，以及用于非参数名称、 xp 和 cpl。
 
  ID 是特殊情况，若要使此规则的冲突。 “Id”不是首字母缩略词，而是“identification”的缩写。
 
@@ -60,7 +59,7 @@ ms.locfileid: "49891344"
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  它可以安全地禁止显示此警告，如果有自己的命名约定，或者如果标识符表示正确的名称，例如，一家公司或一种技术的名称。
 
- 您还可以添加特定的字词、 缩写和首字母缩写词给代码分析自定义字典。 指定自定义字典中的字词不会导致违反此规则。 有关详细信息，请参阅[如何： 自定义代码分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ 您还可以添加特定的字词、 缩写和首字母缩写词给代码分析自定义字典。 指定自定义字典中的字词不会导致违反此规则。 有关更多信息，请参见[如何：自定义代码分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 ## <a name="related-rules"></a>相关的规则
- [CA1708：标识符不应仅以大小写进行区分](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:标识符不应不同于用例的详细信息](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

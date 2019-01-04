@@ -1,9 +1,6 @@
 ---
 title: 服务 Essentials |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26bfa7ce51249adc883415d09689ed390b7dfabc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3428deeaf0e9cdc2aa926f5b1ff17b5030540f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867272"
 ---
 # <a name="service-essentials"></a>服务基础知识
 服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供一组特定的另一个 VSPackage 来使用的接口。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 本身就是向其他 Vspackage 提供服务的 Vspackage 的集合。  
   
- 例如，SVsActivityLog 服务可用于获取 IVsActivityLog 接口，它可用于写入活动日志。 有关详细信息，请参阅[如何： 使用活动日志](../../extensibility/how-to-use-the-activity-log.md)。  
+ 例如，SVsActivityLog 服务可用于获取 IVsActivityLog 接口，它可用于写入活动日志。 有关更多信息，请参见[如何：使用活动日志](../../extensibility/how-to-use-the-activity-log.md)。  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 此外提供了一些内置的服务未注册。 Vspackage 可以通过提供服务重写替换内置或其他服务。 只有一个服务重写被允许的任何服务。  
   
@@ -39,7 +36,7 @@ ms.locfileid: "49934400"
   
 - 按需加载服务或服务重写，它提供的服务请求的另一个 VSPackage 时，它是加载的服务提供程序。  
   
-- 若要支持按需加载，服务提供程序注册其全球服务和[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 有关详细信息，请参阅[如何： 提供的服务](../../extensibility/how-to-provide-a-service.md)。  
+- 若要支持按需加载，服务提供程序注册其全球服务和[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 有关更多信息，请参见[如何：提供的服务](../../extensibility/how-to-provide-a-service.md)。  
   
 - 获取服务后，使用[QueryInterface](/cpp/atl/queryinterface) （非托管代码） 或强制转换 （托管代码） 来获取所需的接口，例如：  
   
@@ -63,7 +60,7 @@ ms.locfileid: "49934400"
   
 ## <a name="use-getglobalservice"></a>使用 GetGlobalService  
   
-有时您可能需要从工具窗口中获得的服务或控制已没有已就位，否则使用并不了解所需的服务的服务提供商确定位置的容器。 例如，你可能想要写入活动日志从控件中。 有关这些及其他方案的详细信息，请参阅[如何： 解决服务](../../extensibility/how-to-troubleshoot-services.md)。  
+有时您可能需要从工具窗口中获得的服务或控制已没有已就位，否则使用并不了解所需的服务的服务提供商确定位置的容器。 例如，你可能想要写入活动日志从控件中。 有关这些及其他方案的详细信息，请参阅[如何：排查服务问题](../../extensibility/how-to-troubleshoot-services.md)。  
   
 你可以通过调用静态获取大多数 Visual Studio 服务<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。  
   
@@ -92,7 +89,7 @@ ms.locfileid: "49934400"
     End If
     ```  
     
-    此代码获取 SVsActivityLog 服务，并将其转换为 IVsActivityLog 接口，它可用于写入活动日志。 有关示例，请参阅[如何： 使用活动日志](../../extensibility/how-to-use-the-activity-log.md)。  
+    此代码获取 SVsActivityLog 服务，并将其转换为 IVsActivityLog 接口，它可用于写入活动日志。 有关示例，请参阅[如何：使用活动日志](../../extensibility/how-to-use-the-activity-log.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [可用服务列表](../../extensibility/internals/list-of-available-services.md)   

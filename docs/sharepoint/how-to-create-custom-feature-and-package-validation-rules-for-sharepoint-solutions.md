@@ -1,9 +1,6 @@
 ---
-title: 如何： 为 SharePoint 解决方案创建自定义功能和包验证规则 |Microsoft Docs
-ms.custom: ''
+title: 如何：为 SharePoint 解决方案创建自定义功能和包验证规则 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d36b049aefe9eb574809cfedf4aa1f2ebddbc4c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: a8b27b3b2900521a61612eafb4d91ef94740bbcd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939214"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>如何： 创建自定义功能和包验证规则为 SharePoint 解决方案
+# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>如何：创建自定义功能和包验证规则为 SharePoint 解决方案
   可以创建自定义验证规则来验证由 Visual Studio 生成的解决方案包。 可以在整个功能或包上执行完全验证，通过选择**Validate**从包中的新功能的上下文菜单**PackagingExplorer**。 将新的 SharePonit 项目项或功能添加到项目，以确定包或功能将会处于有效状态时执行部分验证。  
   
 ### <a name="to-create-a-custom-package-validation-rule"></a>若要创建自定义包验证规则  
@@ -62,4 +59,3 @@ ms.locfileid: "37118753"
   
 ## <a name="see-also"></a>请参阅
  [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  

@@ -1,9 +1,6 @@
 ---
-title: 演练： 实现代码片段 |Microsoft Docs
-ms.custom: ''
+title: 演练：实现代码片段 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd4a22dc63f0304cc8afa98e35c5f7afd6cac011
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4866f028851fadbee9f8ab5dbd6d4dc50015a728
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902183"
 ---
-# <a name="walkthrough-implement-code-snippets"></a>演练： 实现代码片段
+# <a name="walkthrough-implement-code-snippets"></a>演练：实现代码片段
 可以创建的代码段，并将其包含在编辑器扩展，以便扩展的用户可以将它们添加到其自己的代码。  
   
  代码片段是一段代码或其他可合并的文件中的文本。 若要查看已为特定编程语言中注册的所有代码段**工具**菜单上，单击**代码片段管理器**。 单击插入代码段中，在文件中，右键单击想要代码片段，其中插入代码段或**Surround With**、 找到所需的代码段，然后双击它。 按**选项卡**或**Shift**+**选项卡**修改代码段的相关部分，然后按**Enter**或**Esc**来接受它。 有关详细信息，请参阅[代码片段](../ide/code-snippets.md)。  
@@ -33,7 +30,7 @@ ms.locfileid: "49921975"
   
 3. 实现展开代码片段。  
   
-   此演练基于[演练： 显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
+   此演练基于[演练：显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
   
 ## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，不要从下载中心安装 Visual Studio SDK。 它包含作为 Visual Studio 安装程序中的可选功能。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
@@ -112,7 +109,7 @@ ms.locfileid: "49921975"
   
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>若要为特定 GUID 注册代码片段  
   
-1.  打开**CompletionTest**项目。 有关如何创建此项目的信息，请参阅[演练： 显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
+1.  打开**CompletionTest**项目。 有关如何创建此项目的信息，请参阅[演练：显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
   
 2.  在项目中，添加对以下程序集的引用：  
   

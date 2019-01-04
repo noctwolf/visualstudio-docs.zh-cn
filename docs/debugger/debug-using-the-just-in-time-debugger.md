@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f66d3fdcd400be9356776647b0ead118e83d7108
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382737"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562056"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用实时调试器进行调试
 
@@ -36,7 +36,7 @@ ms.locfileid: "49382737"
 
 可以配置在实时调试 Visual Studio**工具** > **选项**(或**调试** > **选项**)对话框。 
 
-**启用或禁用在实时调试：**
+**启用或禁用实时调试：**
 
 1. 上**工具**或**调试**菜单中，选择**选项** > **调试** >  **在实时**。
 
@@ -52,7 +52,7 @@ ms.locfileid: "49382737"
 
 即便在你的计算机中不再安装有 Visual Studio，仍可启用实时调试。 如果不能再安装 Visual Studio，则可以禁用中实时调试通过编辑 Windows 注册表。
 
-**若要禁用中实时调试通过编辑注册表：**
+**通过编辑注册表禁用实时调试：**
 
 1.  从 Windows**启动**菜单中，运行**注册表编辑器**(*regedit.exe*)。
 
@@ -90,13 +90,13 @@ ms.locfileid: "49382737"
     </configuration>
     ```
     
--  在 c + + Windows 窗体应用程序中，还设置`DebuggableAttribute`到`true`中 *.config*文件或代码中。 如果使用编译[/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format)且无[/Og](/cpp/build/reference/og-global-optimizations)，编译器会为您设置此属性。 如果你想要调试非优化发布版本，但是，你必须设置`DebuggableAttribute`通过在应用中添加以下行*AssemblyInfo.cpp*文件：
+-  在 c + + Windows 窗体应用程序中，还设置`DebuggableAttribute`到`true`中 *.config*文件或代码中。 如果在编译时使用 [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 而没有使用 [/Og](/cpp/build/reference/og-global-optimizations)，则编译器会替你设置此特性。 如果你想要调试非优化发布版本，但是，你必须设置`DebuggableAttribute`通过在应用中添加以下行*AssemblyInfo.cpp*文件：
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
    ```
    
-   有关详细信息，请参阅 <xref:System.Diagnostics.DebuggableAttribute> 。
+   有关更多信息，请参见<xref:System.Diagnostics.DebuggableAttribute>。
 
 ## <a name="BKMK_Using_JIT"></a>使用在实时调试
  此示例将指导你完成在实时调试时，应用程序引发错误。
@@ -107,7 +107,7 @@ ms.locfileid: "49382737"
 
 对于此示例中，你将使C#控制台应用，在 Visual Studio 中，将引发[NullReferenceException](/dotnet/api/system.nullreferenceexception)。
 
-1. 在 Visual Studio 中，创建C#控制台应用程序 (**文件** > **新建** > **项目** > **Visual C#**   > **控制台应用程序**) 名为*ThrowsNullException*。 在 Visual Studio 中创建项目的详细信息，请参阅[演练： 创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)。
+1. 在 Visual Studio 中，创建C#控制台应用程序 (**文件** > **新建** > **项目** > **Visual C#**   > **控制台应用程序**) 名为*ThrowsNullException*。 在 Visual Studio 中创建项目的详细信息，请参阅[演练：创建简单的应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
    
 1. 当在 Visual Studio 中打开项目时，打开*Program.cs*文件。 将打印到控制台的行，然后引发 NullReferenceException 的以下代码替换为 main （） 方法：
    
@@ -161,7 +161,7 @@ ms.locfileid: "49382737"
 
   - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows 错误报告**
     
-  - （适用于 64 位计算机）： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows 错误报告**
+  - （对于 64 位计算机）：**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows 错误报告**
   
   有关详细信息，请参阅[。WER 设置](https://docs.microsoft.com/windows/desktop/wer/wer-settings)。
   
@@ -172,7 +172,7 @@ ms.locfileid: "49382737"
   
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
     
-  - （适用于 64 位计算机）： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - （对于 64 位计算机）：**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 您可能会看到以下错误消息过程中实时调试：
 
@@ -182,13 +182,13 @@ ms.locfileid: "49382737"
 
     若要解决此问题，请在 Visual Studio 中，打开**调试** > **附加到进程**，并找到你想要在调试的进程**可用进程**列表。 如果不知道进程名称，查找中的进程 ID **Visual Studio 实时调试器**对话框。 选择中的过程**可用进程**列表，然后选择**附加**。 选择**否**关闭实时中调试器的对话框。
 
-- **无法启动调试器，因为没有用户登录。**
+- **未能启动调试器，因为没有用户登录。**
 
     没有用户登录到控制台，因此没有用户会话来显示实时中调试对话框。
 
     要解决此问题，请登录到计算机。
 
-- **未注册的类。**
+- **类没有注册。**
 
     调试器尝试创建未注册，可能由于安装问题的 COM 类。
 
@@ -196,6 +196,6 @@ ms.locfileid: "49382737"
 
 ## <a name="see-also"></a>请参阅
 - [调试器安全](../debugger/debugger-security.md)
-- [调试器基础知识](../debugger/getting-started-with-the-debugger.md)
+- [初探调试器](../debugger/debugger-feature-tour.md)
 - [选项，调试，在实时对话框](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [安全警告：附加到不受信任的用户所拥有的进程可能很危险。如果以下信息看上去可疑或者你无法确定，请勿附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [安全警告附加到不受信任的用户所拥有的进程可能很危险。如果以下信息看上去可疑或者你无法确定，请勿附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

@@ -1,9 +1,6 @@
 ---
-title: 测试区域 6： 删除 |Microsoft Docs
-ms.custom: ''
+title: 测试区域 6:删除 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ce67ded280fd87fbcabd72d7ca45f1af8568336
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3fff473dbd4e3bc70f1b6308ed0d6b1129c95e2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888211"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930092"
 ---
-# <a name="test-area-6-delete"></a>测试区域 6：删除
+# <a name="test-area-6-delete"></a>测试区域 6:删除
 此源代码管理插件的测试部分覆盖了删除操作。  
   
  源控件删除中的操作的响应**解决方案资源管理器**。  

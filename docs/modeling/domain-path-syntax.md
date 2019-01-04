@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 984b27b65b251a1e87c72962e488fd0d4036a4d0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 13a8ab293a6a18856ba98edc7aa04154bc876d40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834927"
 ---
 # <a name="domain-path-syntax"></a>域路径语法
 DSL 定义使用类似 XPath 的语法在模型中查找特定元素。
@@ -29,9 +28,9 @@ DSL 定义使用类似 XPath 的语法在模型中查找特定元素。
 
  ![CommentReferencesSubjects 引用关系](../modeling/media/dsl_reference.png)
 
- 该语法将遍历模型树。 例如，域关系**CommentReferencesSubjects**在上图中具有**主题**角色。 路径段 **/ ！Subjectt**指定路径完成元素通过访问**主题**角色。
+ 该语法将遍历模型树。 例如，域关系**CommentReferencesSubjects**上图中具有**主题**角色。 路径段 **/ ！Subjectt 将**指定路径结束于元素通过访问**使用者**角色。
 
- 每段都以域关系的名称开头。 如果遍历，从某个元素为关系的路径段将显示为*Relationship.PropertyName*。 如果跃点，从链接到的元素的路径段将显示为*关系 / ！RoleName*。
+ 每段都以域关系的名称开头。 如果遍历从元素到关系，则路径段将显示为*Relationship.PropertyName*。 如果跃点是从链接到一个元素，则路径段将显示为*关系 / ！RoleName*。
 
  使用斜杠分隔路径的语法。 每个路径段是都从元素到链接（关系的实例）或从链接到元素的跳跃。 路径段经常成对显示。 一个路径段表示从元素到链接的跳跃，而下一个段则表示从链接到另一端的元素的跳跃。 （任何链接还可以是关系本身的源或目标）。
 

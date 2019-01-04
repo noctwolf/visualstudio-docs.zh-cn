@@ -1,9 +1,6 @@
 ---
-title: 如何： 为编辑器提供的上下文 |Microsoft Docs
-ms.custom: ''
+title: 如何：为编辑器提供的上下文 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - provide context
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 848778506bdea1b7bf61b6a94a1fb14908a7b930
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8dec051aae8c5693d18a5cab302714fdf152f8a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908899"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909893"
 ---
-# <a name="how-to-provide-context-for-editors"></a>如何： 为编辑器提供的上下文
+# <a name="how-to-provide-context-for-editors"></a>如何：为编辑器提供的上下文
 编辑器上下文处于活动状态，仅当编辑器具有焦点或立即之前焦点已移动到工具窗口具有焦点时。 可为编辑器提供上下文，通过执行以下任务：  
   
 1. 创建上下文包。  

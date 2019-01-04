@@ -1,9 +1,6 @@
 ---
 title: 在文档级解决方案中的文档保护
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 03724e523c1f49277e0bc2b23465d5296d806695
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: b6894aa05adf55945383cb3c2e28b8c5fdebdc16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908848"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>在文档级解决方案中的文档保护
   可以使用 Microsoft Office Word 和 Microsoft Office Excel 文档级项目中的保护的功能。 这些功能可以阻止未经授权的用户对受保护文档各部分进行更改。  
@@ -62,5 +59,3 @@ ms.locfileid: "53648530"
  [Office 文档上的密码保护](../vsto/password-protection-on-office-documents.md)   
  [如何：允许代码以使用受限权限的文档的后台运行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

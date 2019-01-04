@@ -1,9 +1,6 @@
 ---
 title: 演练：将数据插入到的服务器上的工作簿
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c594a15b2f411b9c1360d94f0f41624c11cebcf
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: aeba8355a4d7b9934f045a828efc251500d3e77c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804859"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947135"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>演练：将数据插入到的服务器上的工作簿
   本演练演示如何将数据插入到一个数据集，而不启动 Excel，通过使用 Microsoft Office Excel 工作簿中缓存<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类。

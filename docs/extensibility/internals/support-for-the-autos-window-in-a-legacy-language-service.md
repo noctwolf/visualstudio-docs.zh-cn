@@ -1,9 +1,6 @@
 ---
-title: 支持旧语言服务中的自动窗口 |Microsoft 文档
-ms.custom: ''
+title: 对旧版语言服务中的自动窗口的支持 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], Autos window
@@ -14,27 +11,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1a2627bd36e6047db00afaada231dc49cde2cc3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3f65b6d4daeb928cab1c59aaa5f1f2ded3225e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135817"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898211"
 ---
-# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>支持旧语言服务中的自动窗口
-**自动**窗口显示如变量和参数，位于范围内时被调试的程序已暂停 （或者由于断点或异常） 的表达式。 表达式可以包含变量，本地或全局和局部范围中进行了更改的参数。 **自动**窗口还可以包括类、 结构或某些其他类型的实例化。 表达式计算器可以计算的任何内容可能显示在**自动**窗口。  
+# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>旧版语言服务中的自动窗口支持
+**自动**窗口将显示如变量和参数 （无论是由于一个断点或异常） 暂停正在调试的程序时作用域中的表达式。 表达式可以包含变量，本地或全局和局部范围内已更改的参数。 **自动**窗口还可以包括类、 结构或某些其他类型的实例化。 表达式计算器可以计算的任何内容可能会显示在**自动**窗口。  
   
- 托管的包框架 (MPF) 不提供直接支持**自动**窗口。 但是，如果你重写<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>方法，你可以返回表达式的值以显示列表**自动**窗口。  
+ 托管的包框架 (MPF) 不提供直接支持**自动**窗口。 但是，如果重写<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>方法，可以返回一系列表达式中的呈现**自动**窗口。  
   
 ## <a name="implementing-support-for-the-autos-window"></a>实现对自动窗口的支持  
- 你只需要做，以支持**自动**窗口是实现<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>中的方法<xref:Microsoft.VisualStudio.Package.LanguageService>类。 您的实现必须确定，给定表达式应出现在源文件中的位置**自动**窗口。 该方法返回字符串，其中每个字符串都表示一个表达式的列表。 返回值<xref:Microsoft.VisualStudio.VSConstants.S_OK>指示列表是否包含表达式，而<xref:Microsoft.VisualStudio.VSConstants.S_FALSE>指示没有要显示的表达式。  
+ 您需要做以支持**自动**窗口是实现<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>中的方法<xref:Microsoft.VisualStudio.Package.LanguageService>类。 您的实现必须确定，给定表达式应出现在源文件中的位置**自动**窗口。 该方法返回字符串，其中每个字符串都表示一个表达式的列表。 返回值<xref:Microsoft.VisualStudio.VSConstants.S_OK>指示该列表包含表达式，而<xref:Microsoft.VisualStudio.VSConstants.S_FALSE>指示没有要显示的表达式。  
   
- 返回的实际表达式是变量或出现在代码中的该位置的参数的名称。 这些名称传递给表达式计算器才能获取值和类型会随后显示在**自动**窗口。  
+ 实际返回的表达式是变量或出现在该位置在代码中的参数的名称。 这些名称传递给表达式计算器才能获取值和类型，然后显示在**自动**窗口。  
   
 ### <a name="example"></a>示例  
- 下面的示例演示如何实现<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>获取从表达式列表的方法<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法使用的分析原因<xref:Microsoft.VisualStudio.Package.ParseReason>。 每个表达式包装为`TestVsEnumBSTR`实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR>接口。  
+ 下面的示例演示的实现<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>方法，可获取的表达式从一系列<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法使用的分析原因<xref:Microsoft.VisualStudio.Package.ParseReason>。 每个表达式被打包为`TestVsEnumBSTR`实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR>接口。  
   
- 请注意，`GetAutoExpressionsCount`和`GetAutoExpression`方法上都是自定义方法`TestAuthoringSink`对象，并添加了以支持此示例。 它们表示一种方式添加到哪个表达式`TestAuthoringSink`分析器的对象 (通过调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A>方法) 可以分析器外部访问。  
+ 请注意，`GetAutoExpressionsCount`并`GetAutoExpression`方法是自定义方法上`TestAuthoringSink`对象，并添加了以支持此示例。 它们表示添加到哪个表达式中的一种方法`TestAuthoringSink`分析器的对象 (通过调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A>方法) 可以访问外部分析器。  
   
 ```csharp  
 using Microsoft.VisualStudio;  

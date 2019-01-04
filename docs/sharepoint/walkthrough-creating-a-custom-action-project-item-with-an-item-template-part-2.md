@@ -1,9 +1,6 @@
 ---
-title: 演练： 使用项模板创建自定义操作项目项，第 2 部分 |Microsoft Docs
-ms.custom: ''
+title: 演练：使用项模板创建自定义操作项目项，第 2 部分 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4305fd980252515f126df2c1b3848c0676cd2079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296237"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913931"
 ---
-# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>演练： 使用项模板，第 2 部分中创建自定义操作项目项
+# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>演练：使用项模板，第 2 部分中创建自定义操作项目项
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项模板后，可能想要为模板提供一个向导。 该向导可用于从用户收集信息，当用户使用模板向项目添加项目项的新实例。 可以使用你收集的信息来初始化项目项。  
   
- 在本演练中，您将对自定义操作项目项中所示添加向导[演练： 使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。 当用户将自定义操作项目项添加到 SharePoint 项目时，则向导会收集有关自定义操作 （如其位置和最终用户选择它时要导航到的 URL） 的信息，并添加到此信息*Elements.xml*新的项目项中的文件。  
+ 在本演练中，您将对自定义操作项目项中所示添加向导[演练：使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。 当用户将自定义操作项目项添加到 SharePoint 项目时，则向导会收集有关自定义操作 （如其位置和最终用户选择它时要导航到的 URL） 的信息，并添加到此信息*Elements.xml*新的项目项中的文件。  
   
  本演练演示了下列任务：  
   
@@ -40,7 +37,7 @@ ms.locfileid: "51296237"
 >  您可以下载的示例[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，演示如何创建自定义工作流活动。  
   
 ## <a name="prerequisites"></a>系统必备  
- 若要执行本演练中，您必须先创建 CustomActionProjectItem 解决方案通过完成[演练： 使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。  
+ 若要执行本演练中，您必须首先创建 CustomActionProjectItem 解决方案完成[演练：使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。  
   
  您还需要完成本演练在开发计算机上的以下组件：  
   
@@ -50,12 +47,12 @@ ms.locfileid: "51296237"
   
   了解以下概念很有帮助，但不是必需，若要完成本演练：  
   
-- 用于 Visual Studio 中的项目和项模板的向导。 有关详细信息，请参阅[如何： 使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)和<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口。  
+- 用于 Visual Studio 中的项目和项模板的向导。 有关更多信息，请参见[如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)和<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口。  
   
 - 在 SharePoint 中的自定义操作。 有关详细信息，请参阅[自定义操作](http://go.microsoft.com/fwlink/?LinkId=177800)。  
   
 ## <a name="create-the-wizard-project"></a>创建向导项目
- 若要完成本演练中，必须将项目添加到你在中创建的 CustomActionProjectItem 解决方案[演练： 使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。 将实现<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口，并在此项目中定义的向导 UI。  
+ 若要完成本演练中，必须将项目添加到你在中创建的 CustomActionProjectItem 解决方案[演练：使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。 将实现<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口，并在此项目中定义的向导 UI。  
   
 #### <a name="to-create-the-wizard-project"></a>若要创建向导项目  
   
@@ -82,7 +79,7 @@ ms.locfileid: "51296237"
   
 2.  在中**项目设计器**，请确保目标框架设置为.NET Framework 4.5。  
   
-     对于 Visual C# 项目，可以将此值设置上**应用程序**选项卡。对于 Visual Basic 项目，可以将此值设置上**编译**选项卡。有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
+     对于 Visual C# 项目，可以将此值设置上**应用程序**选项卡。对于 Visual Basic 项目，可以将此值设置上**编译**选项卡。有关更多信息，请参见[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
 3.  在中**ItemTemplateWizard**项目中，添加**Window (WPF)** 项到项目中，并将其命名为项**WizardWindow**。  
   
@@ -345,10 +342,9 @@ ms.locfileid: "51296237"
 4.  关闭 Visual Studio （实验实例和在其中 CustomActionProjectItem 解决方案已打开的 Visual Studio 的实例） 的两个实例。  
   
 ## <a name="see-also"></a>请参阅
- [演练： 使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
+ [演练：使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
  [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [创建项模板和用于 SharePoint 项目项的项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Visual Studio 模板架构参考](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [如何： 使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)   
+ [如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)   
  [自定义操作的默认位置和 Id](http://go.microsoft.com/fwlink/?LinkId=181964)  
-  

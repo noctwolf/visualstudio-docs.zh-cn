@@ -1,9 +1,6 @@
 ---
 title: 专用库 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX galleries, private
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e91b3ecec969ab6a717598d8dfb77e674890216a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f1be2f2327ac48f46894f66d35f6a392608b6177
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638578"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897769"
 ---
 # <a name="private-galleries"></a>专用库
 你可以共享控件、 模板和发布到开发的工具*专用库*为你的组织，按如下所示在 intranet 上：  
   
--   创建 Atom (RSS) 源到您的 intranet 上的适当配置中央位置 （存储库）。 有关详细信息，请参阅[如何： 创建 Atom 馈送专用库](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)。  
+-   创建 Atom (RSS) 源到您的 intranet 上的适当配置中央位置 （存储库）。 有关更多信息，请参见[如何：创建 Atom 馈送专用库](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)。  
   
 -   分发 *.pkgdef*介绍专用库的文件。 我们建议为想要在同一时间连接到多台计算机的专用库的管理员完成此配置。  
   
@@ -54,7 +51,7 @@ ms.locfileid: "39638578"
   
 ```  
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
+@={URI}  (REG_SZ)  
 Disabled=0 | 1 (DWORD)  
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
 Protocol=Atom|Sharepoint (REG_SZ)  
@@ -64,7 +61,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 ```  
   
- 有关详细信息，请参阅[如何： 使用注册表设置管理专用库](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md)。  
+ 有关更多信息，请参见[如何：使用注册表设置管理专用库](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md)。  
   
 ## <a name="install-extensions-from-a-private-gallery"></a>从专用库安装扩展  
  可以搜索并从专用库，在安装 Visual Studio 扩展**扩展和更新**。 以下步骤使用名为专用库`My Gallery`。  

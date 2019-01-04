@@ -1,9 +1,6 @@
 ---
 title: Icon 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Icon
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2494e75c312385a1a0c86709eb417d4b124a97de
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 475bca35ca1bdc1879301912c7ddd271f369a6ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870003"
 ---
 # <a name="icon-element"></a>Icon 元素
 图标标记的 guid 属性是定义位图的 guid。 `id`属性选择槽中的位图条。 此元素为可选元素。 如果此元素不包含的值**guidOfficeIcon:msotcidNoIcon**将隐式。  
@@ -37,8 +34,8 @@ ms.locfileid: "39497688"
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必须的。 定义位图的 guid。|  
-|id|必须的。 选择槽中的位图条。|  
+|guid|必需。 定义位图的 guid。|  
+|id|必需。 选择槽中的位图条。|  
   
 ### <a name="child-elements"></a>子元素  
   

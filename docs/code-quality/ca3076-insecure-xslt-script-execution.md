@@ -1,22 +1,21 @@
 ---
-title: 'CA3076: 不安全的 XSLT 脚本执行'
+title: CA3076:不安全的 XSLT 脚本执行
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: d711aad69dbdf3295ca7b2962a2e2022bd259059
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891042"
 ---
-# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: 不安全的 XSLT 脚本执行
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076:不安全的 XSLT 脚本执行
 
 |||
 |-|-|
@@ -31,7 +30,7 @@ ms.locfileid: "45546387"
 
 ## <a name="rule-description"></a>规则说明
 
-**XSLT**是万维网联合会 (W3C) 标准，用于转换 XML 数据。 XSLT 通常用于编写样式表转换为其他格式，如 HTML、 固定长度的文本、 以逗号分隔的文本或以不同的 XML 格式的 XML 数据。 尽管默认情况下禁止，你仍可以选择为项目启用该功能。
+**XSLT** 是万维网联合会 (W3C) 标准，用于转换 XML 数据。 XSLT 通常用于编写样式表转换为其他格式，如 HTML、 固定长度的文本、 以逗号分隔的文本或以不同的 XML 格式的 XML 数据。 尽管默认情况下禁止，你仍可以选择为项目启用该功能。
 
 若要确保不会公开攻击面，此规则将触发每当 XslCompiledTransform。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 接收的不安全组合实例<xref:System.Xml.Xsl.XsltSettings>和<xref:System.Xml.XmlResolver>，它允许处理恶意脚本。
 

@@ -1,9 +1,6 @@
 ---
 title: 扩展用户设置和选项 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user preferences
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60e5f70e471c3385ccae5ee39e9e68db1e93b20c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: d59fa13d65f04631c41681fdb82c18624f7d69a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498628"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883115"
 ---
 # <a name="extend-user-settings-and-options"></a>扩展用户设置和选项
 在 Visual Studio 中有两种主要方法来保留用户首选项。 **工具** > **选项**页允许用户将他们自己的值设置为许多不同类型的设置、 常规和特定于语言的。 用户设置允许用户指定常规 Visual Studio 配置属性。 有关选项页的详细信息，请参阅[选项和选项页](../extensibility/internals/options-and-options-pages.md)。 有关用户设置的详细信息，请参阅[支持用户设置](../extensibility/internals/support-for-user-settings.md)。  

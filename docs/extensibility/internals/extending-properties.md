@@ -1,9 +1,6 @@
 ---
 title: 扩展属性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77b5861dd084098e561f3642b5738dd0279d4b52
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d03533679e367afb1f50ee55196c5d96e03ae580
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512104"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846580"
 ---
 # <a name="extend-properties"></a>扩展属性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **属性**时段 COM 和 COM + 组件的通用属性浏览器，并且支持所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]产品。 **属性**窗口适用于`ITypeInfo`类型信息和 COM + 元数据以列出在集成的开发环境 (IDE) 中的任何其他窗口中的当前所选对象的设计时属性。  
@@ -66,4 +63,4 @@ ms.locfileid: "39512104"
  介绍了如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]有效地管理等的引用、 数据连接、 文件夹和文件所需的开发工作通过解决方案和项目项。  
   
  [扩展 Visual Studio 的其他部分](../../extensibility/extending-other-parts-of-visual-studio.md)  
- 说明如何使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]服务，以创建匹配的其余部分的 UI 元素[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
+ 说明如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 服务创建匹配 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]的其余部分的 UI 元素。

@@ -1,8 +1,6 @@
 ---
 title: 项目属性用户界面 |Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project properties [Visual Studio], user interface
@@ -14,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fdaeb87966f051c134d7c2d2354c0f5a3e725da
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 56e2045459af33e04c728cf5e8324c44a35b6774
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874052"
 ---
 # <a name="project-property-user-interface"></a>项目属性用户界面
 项目子类型可以在项目中使用的项**属性页**对话框中为它们提供的基础项目中，隐藏或使只读控件和的整个页面提供，或将项目子类型特定于页面添加到**属性页**对话框。

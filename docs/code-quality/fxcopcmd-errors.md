@@ -2,7 +2,6 @@
 title: FxCopCmd 错误
 ms.date: 10/19/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
@@ -12,16 +11,16 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 657e650f9244fb97d4990e04a60b9e1f93794af4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 34ec1b04e10b874d6f8373b5eb0e6c2e5c6d70e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844075"
 ---
 # <a name="fxcopcmd-tool-errors"></a>FxCopCmd 工具错误
 
-FxCopCmd 不考虑所有错误都以是致命的。 如果 FxCopCmd 具有足够的信息来执行部分分析，它将执行的分析和报告的错误的发生。 错误代码，它是一个 32 位整数，包含对应于错误的数字值的按位组合。
+FxCopCmd 不考虑所有错误是致命的。 如果 FxCopCmd 具有足够的信息来执行分部分析，它将执行分析和报告发生的错误。 错误代码，它是一个 32 位整数，包含与错误对应的数字值的按位组合。
 
 下表介绍 FxCopCmd 返回的错误代码：
 
@@ -41,18 +40,18 @@ FxCopCmd 不考虑所有错误都以是致命的。 如果 FxCopCmd 具有足够
 |BuildBreakingMessage|0x400|
 |未知的错误|0x1000000|
 
-**分析错误**为严重错误返回。 它指示无法完成分析。 如果适用，错误代码还包含错误的根本原因。 以下情况下将生成错误：
+**分析错误**返回为致命错误。 它指示无法完成分析。 如果适用，错误代码还包含错误的根本原因。 以下情况下将生成错误：
 
 - 由于输入不足，无法执行分析。
 
-- 分析引发了 FxCopCmd 未处理的异常。
+- 分析引发不由 FxCopCmd 处理了异常。
 
-- 指定的项目文件未找到或者已损坏。
+- 指定的项目文件未找到或已损坏。
 
-- 未指定输出选项，或无法写入文件。
+- 未指定输出选项，或无法写入该文件。
 
 > [!NOTE]
-> FxCopCmd 返回代码**程序集引用错误**0x200 本身是一个警告，而不是错误。 此返回代码指示缺少的间接引用，但该 FxCopCmd 已能够处理它们。 此警告意味着某些分析结果可能已泄露的可能性。 将**程序集引用错误**为错误时它与任何其他返回代码相结合。
+> FxCopCmd 返回代码**程序集引用错误**0x200 本身是一条警告，而不是错误。 此返回代码指示缺少间接引用，但该 FxCopCmd 无法处理它们。 此警告意味着某些分析结果可能已泄露的可能性。 将视为**程序集引用错误**为错误与任何其他返回代码结合使用它时。
 
 ## <a name="see-also"></a>请参阅
 

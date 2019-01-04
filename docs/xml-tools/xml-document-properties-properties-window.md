@@ -2,7 +2,6 @@
 title: XML 文档属性，“属性”窗口
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c29a6e106381e23007f8cb3d899cb3b3c0e387
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a89e6f12cb3e061abc4ebbe30cfe8d3a92138df6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693560"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913305"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 文档属性，属性窗口
 
-**属性**窗口提供有关处于活动状态在 XML 编辑器中的文档的基本信息。 可用的属性取决于当前的活动 XML 文档的类型。
+**属性**窗口提供了有关在 XML 编辑器中处于活动状态的文档的基本信息。 可用的属性取决于当前的活动 XML 文档的类型。
 
 > [!NOTE]
 > 所有 XML 文档属性均保存在该解决方案中。 因此，下次打开该解决方案时，不必重新输入这些值。
@@ -42,13 +41,13 @@ ms.locfileid: "34693560"
 
  **架构**
 
- 用于验证的架构。 此按钮将打开**XSD 架构**对话框中，可以用于选择要使用的架构。
+ 用于验证的架构。 此按钮将打开**XSD 架构**对话框中，可用于选择要使用的架构。
 
  也可以输入架构的路径。 如果指定了多个架构，每个架构路径必须加双引号。
 
  **样式表**
 
- 用于转换文档的 XSLT 文件时**显示 XSLT 输出**使用命令。 如果时，此字段为空白**显示 XSLT 输出**命令时，编辑器使用中提供的值`xml-stylesheet`处理指令的文档，或它提示你输入文件名。
+ 用于转换文档的 XSLT 文件时**显示 XSLT 输出**使用命令。 如果时，此字段为空**显示 XSLT 输出**使用命令时，编辑器使用中提供的值`xml-stylesheet`处理指令的文档，或它提示您输入文件名。
 
  在编辑 XSLT 文件时，可以使用此属性指定应是不同的样式表时使用**显示 XSLT 输出**或**调试 XSLT**选择命令。 例如，如果正在编辑的样式表包含在父样式表中，则可能需要这样做。
 

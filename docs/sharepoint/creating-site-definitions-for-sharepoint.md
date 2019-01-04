@@ -1,13 +1,8 @@
 ---
 title: 创建 SharePoint 站点定义 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e43cfa7c9fa78722639053c572280cbaad912bf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325337"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868321"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>创建 SharePoint 站点定义
   中的 SharePoint 站点定义项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，可以创建*网站定义*，它可作为新的 SharePoint 站点的基础。 这些定义不仅确定的外观和行为的 SharePoint 站点，但还自己的默认内容和功能。 在定义中，您可以放入预配置的列表、 内容类型、 事件接收器、 图像和其他项。 例如 SharePoint 包含某些网站定义（如 BLOG）。 当创建了基于博客站点定义的网站时，站点将包含列表、 Web 部件和博客网站所需的其他项。  
@@ -52,7 +47,7 @@ ms.locfileid: "36325337"
 |标题|描述|  
 |-----------|-----------------|  
 |[演练：创建基本站点定义项目](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|逐步引导您完成基本站点定义项目中创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。|  
-|[如何： 创建自定义站点定义和配置](http://go.microsoft.com/fwlink/?LinkId=183309)|介绍如何在 SharePoint 中创建自定义网站定义通过复制现有的站点定义和修改该副本。|  
+|[如何：创建自定义站点定义和配置](http://go.microsoft.com/fwlink/?LinkId=183309)|介绍如何在 SharePoint 中创建自定义网站定义通过复制现有的站点定义和修改该副本。|  
 |[*WebTemp.xml*](http://go.microsoft.com/fwlink/?LinkId=183310)|描述指定的站点定义中提供的原始文件**模板选择**一部分**新的 SharePoint 站点**页。|  
 |[本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)|介绍如何准备 SharePoint 解决方案的共用。|  
 |[为 SharePoint 创建 web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)|介绍如何创建 SharePoint 页，用户可以修改的部分。|  
@@ -65,5 +60,3 @@ ms.locfileid: "36325337"
   
 ## <a name="see-also"></a>请参阅
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
-  
- 

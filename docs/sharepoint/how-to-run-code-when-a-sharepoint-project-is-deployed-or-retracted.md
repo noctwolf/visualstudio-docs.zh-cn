@@ -1,9 +1,6 @@
 ---
-title: 如何： 运行时 SharePoint 项目代码是部署或收回 |Microsoft Docs
-ms.custom: ''
+title: 如何：运行时 SharePoint 项目代码是部署或收回 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,27 +12,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: da1b6dd4ff71bcc78043ea88c8f833b9c0f32a38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bb5ba251df3271e704ea4b455c5cc47003ab8e2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933617"
 ---
-# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>如何： 在部署或收回 SharePoint 项目时运行代码
+# <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>如何：在部署或收回 SharePoint 项目时运行代码
   如果你想要部署或收回 SharePoint 项目时执行其他任务，可以处理由 Visual Studio 引发事件。 有关详细信息，请参阅[扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。  
   
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>若要运行代码的 SharePoint 项目时部署或收回  
   
 1. 创建项目项扩展、 项目扩展或新的项目项类型的定义。 有关详细信息，请参阅下列主题：  
   
-   -   [如何： 创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+   -   [如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-   -   [如何： 创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+   -   [如何：创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-   -   [如何： 定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+   -   [如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
-2. 在扩展中，访问<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>对象。 有关详细信息，请参阅[如何： 检索 SharePoint 项目服务](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)。  
+2. 在扩展中，访问<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>对象。 有关更多信息，请参见[如何：检索 SharePoint 项目服务](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)。  
   
 3. 处理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted>和<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted>项目服务的事件。  
   
@@ -58,5 +55,4 @@ ms.locfileid: "49832441"
   
 ## <a name="see-also"></a>请参阅
  [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [如何： 执行部署步骤时运行代码](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  
-  
+ [如何：执行部署步骤时运行代码](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)  

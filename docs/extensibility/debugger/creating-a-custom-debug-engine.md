@@ -1,9 +1,6 @@
 ---
 title: 创建自定义调试引擎 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementing
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ece2b480890054526552ad3aeea4f3bd1a437f74
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: fe3d22bc271366ba307510ea4b61ad6a1093c99d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203675"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852698"
 ---
 # <a name="create-a-custom-debug-engine"></a>创建自定义调试引擎
 调试引擎 (DE) 是允许调试特定运行时体系结构的组件。 通常是只有一个 DE 实现每个运行时环境。  
@@ -61,7 +58,7 @@ ms.locfileid: "39203675"
  [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)  
  记录调试会话中发生的事件的调用顺序。  
   
- [如何： 调试自定义调试引擎](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [如何：调试自定义调试引擎](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  说明如何调试自定义部署。  
   
 ## <a name="see-also"></a>请参阅  

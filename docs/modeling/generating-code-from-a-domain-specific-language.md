@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 77d26595bd97a98ef9a4cd1f72c14739695bb755
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e9165d5ff6a38dd0dbf214321132f2da0a60b15d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859843"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883154"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>从域特定语言生成代码
 Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供了一种强大方法从模型中表示的数据生成代码、 文档、 配置文件和其他项目。 使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]，可以创建一组类，表示数据，可以编写文本模板中的类名称和属性反映了该数据。
@@ -40,7 +39,7 @@ Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供了一种强大方
 
  提供有关特定于域的语言在文本模板中引用的基本信息。
 
- [演练：调试访问模型的文本模板](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
+ [演练：调试文本模板访问模型](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
  描述如何进行故障排除和调试特定于域的语言是指在文本模板。
 

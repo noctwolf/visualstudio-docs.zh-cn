@@ -1,9 +1,6 @@
 ---
-title: 演练： 创建在第一个 VSTO 外接程序的 Outlook
-ms.custom: ''
+title: 演练：在第一个 VSTO 外接程序为 Outlook 创建
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fc0f2e7cc7dc40dc305f7860223b5d4acf19a573
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbb5c938d6dbd269732b49584fc4e3831e869b0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950958"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962540"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>演练： 创建在第一个 VSTO 外接程序的 Outlook
+# <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>演练：在第一个 VSTO 外接程序为 Outlook 创建
   本演练显示如何为 Microsoft Office Outlook 创建 VSTO 外接程序。 在此类解决方案中创建的功能可用于应用程序本身，而与所打开的 Outlook 项无关。 有关详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -145,5 +142,3 @@ ms.locfileid: "49950958"
  [生成 Office 解决方案](../vsto/building-office-solutions.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [Office 项目模板概述](../vsto/office-project-templates-overview.md)  
-  
-  

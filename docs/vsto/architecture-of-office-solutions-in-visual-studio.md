@@ -1,9 +1,7 @@
 ---
 title: Visual Studio 中的 Office 解决方案的体系结构
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0b5916ca091d7479b76c21aff914811d090f6667
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: c5fd58f487aa7323450f1236f9ac39ef11769bdc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247895"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837977"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio 中的 Office 解决方案的体系结构
   本部分中的主题提供有关使用 Visual Studio 中的 Office 开发人员工具创建的解决方案的工作原理的信息。  
@@ -59,5 +57,3 @@ ms.locfileid: "53247895"
   
  [常规参考&#40;Visual Studio 中的 Office 开发&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  提供有关 Office 项目中用户界面元素、Office 项目的应用程序和部署清单、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的 API 的信息的链接。  
-  
-  

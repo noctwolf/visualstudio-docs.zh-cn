@@ -1,9 +1,6 @@
 ---
 title: 注册和选择 (源代码管理 VSPackage) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d601aeca3864e47da77fd6418f4cfd3a5db1623
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834872"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930708"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>注册和选择（源代码管理 VSPackage）
 源代码管理 VSPackage 必须注册才能公开到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 如果注册了多个源代码管理 VSPackage，用户可以选择在适当的时候加载的 VSPackage。 请参阅[Vspackage](../../extensibility/internals/vspackages.md)有关 Vspackage 以及如何将它们注册的更多详细信息。  
@@ -34,11 +31,11 @@ ms.locfileid: "49834872"
 ### <a name="registry-entries"></a>注册表项  
  源代码管理包需要三个专用 Guid:  
   
-- 包 GUID： 这是包含 （在本部分中称为 ID_Package） 的源控件实现的包的主要 GUID。  
+- 包 GUID:这是包含 （在本部分中称为 ID_Package） 的源控件实现的包的主要 GUID。  
   
-- 源控件 GUID： 这是个源代码管理用于将注册 Visual Studio 源控件存根的 VSPackage 的 GUID，也可用作命令 UI 上下文的 GUID。 源代码管理 GUID 注册时源代码管理服务的 GUID。 在示例中，源控件 GUID 称为 ID_SccProvider。  
+- 源控件 GUID:这是个源代码管理用于将注册 Visual Studio 源控件存根的 VSPackage 的 GUID，也可用作命令 UI 上下文的 GUID。 源代码管理 GUID 注册时源代码管理服务的 GUID。 在示例中，源控件 GUID 称为 ID_SccProvider。  
   
-- 源控制服务 GUID： 这是专用的服务 （在本部分中称为 SID_SccPkgService） 的 Visual Studio 使用的 GUID。 除此之外，源代码管理包需要定义其他 Guid 的 Vspackage，工具窗口，依次类推。  
+- 源代码管理服务的 GUID:这是专用的服务 （在本部分中称为 SID_SccPkgService） 的 Visual Studio 使用的 GUID。 除此之外，源代码管理包需要定义其他 Guid 的 Vspackage，工具窗口，依次类推。  
   
   必须由源代码管理 VSPackage 进行以下注册表项：  
   

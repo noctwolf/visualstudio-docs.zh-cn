@@ -1,8 +1,7 @@
 ---
-title: CA1700： 不要命名枚举值&#39;保留&#39;
+title: CA1700:未命名枚举值&#39;保留&#39;
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1700
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5d1cff8f6833696bdb74dbf145b14aaaaaf509
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27372856d8984a1c16741142a4affec757670b32
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914629"
 ---
-# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700： 不要命名枚举值&#39;保留&#39;
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700:未命名枚举值&#39;保留&#39;
 
 |||
 |-|-|
@@ -60,12 +59,12 @@ ms.locfileid: "49883661"
 
 ## <a name="related-rules"></a>相关的规则
 
-[CA2217：不要使用 FlagsAttribute 标记枚举](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+[CA2217:不使用 FlagsAttribute 标记枚举](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
-[CA1712：不要将类型名用作枚举值的前缀](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+[CA1712:不要使用类型名称的枚举值的前缀](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
-[CA1028：枚举存储应为 Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+[CA1028:枚举存储应为 Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
-[CA1008：枚举应具有零值](../code-quality/ca1008-enums-should-have-zero-value.md)
+[CA1008:枚举应具有零值](../code-quality/ca1008-enums-should-have-zero-value.md)
 
-[CA1027：用 FlagsAttribute 标记枚举](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+[CA1027:用 FlagsAttribute 标记枚举](../code-quality/ca1027-mark-enums-with-flagsattribute.md)

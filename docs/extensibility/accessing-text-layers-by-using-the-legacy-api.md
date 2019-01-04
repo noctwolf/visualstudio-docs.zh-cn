@@ -1,9 +1,6 @@
 ---
 title: 使用旧版 API 访问文本层 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text layers
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1506c035fca0cdaf4916d93daad8ced7550bfe6e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 47085216c6f20ca1add535a76ce4f5fb4043a6dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078662"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945933"
 ---
 # <a name="access-text-layers-by-using-the-legacy-api"></a>通过使用传统的 API 访问文本层
 文本层通常封装文本布局的某些方面。 例如，"函数--一次"层隐藏文本之前和之后包含脱字号 （文本插入点） 的函数。  

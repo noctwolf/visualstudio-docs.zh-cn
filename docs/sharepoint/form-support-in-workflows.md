@@ -1,9 +1,6 @@
 ---
 title: 工作流中的窗体支持 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 4f459b9e637c057ceb08f4db18fb0efa12e0592e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296185"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857966"
 ---
 # <a name="form-support-in-workflows"></a>在工作流中的窗体支持
   可以在工作流中使用四种类型的窗体： 关联、 初始化、 任务和修改。 这些窗体类型可以基于 ASPX 窗体或 InfoPath 窗体。 级别支持[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供了用于特定窗体取决于若干因素下, 表中所述。 有关工作流窗体类型的详细信息，请参阅[工作流窗体概述](http://go.microsoft.com/fwlink/?LinkId=185228)。  
@@ -34,8 +31,8 @@ ms.locfileid: "51296185"
   
 |窗体类型|在 Visual Studio 中使用 ASPX 窗体中创建的工作流|在 Visual Studio 中创建使用 InfoPath 窗体的工作流|  
 |---------------|---------------------------------------------------------|-----------------------------------------------------------------|  
-|关联|-一个 ASPX 关联窗体可以通过使用添加到工作流**工作流关联窗体**项模板。<br />- *Elements.xml*添加、 重命名或删除在窗体时，或其部署路径更改时的要求进行重构的工作流的文件。<br />-有关详细信息，请参阅[演练： 创建工作流使用关联和启动窗体](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。|-没有 InfoPath 关联窗体模板中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。<br />-没有之间集成[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和 InfoPath 设计器。<br />- *Elements.xml*不重构工作流的文件。|  
-|启动|-ASPX 初始化窗体可以通过使用添加到工作流**工作流发起窗体**项模板。<br />- *Elements.xml*添加、 重命名或删除在窗体时，或其部署路径更改时的要求进行重构的工作流的文件。<br />-有关详细信息，请参阅[演练： 创建工作流使用关联和启动窗体](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。|-没有 InfoPath 关联窗体模板中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。<br />-没有之间集成[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和 InfoPath 设计器。<br />- *Elements.xml*不重构工作流的文件。|  
+|关联|-一个 ASPX 关联窗体可以通过使用添加到工作流**工作流关联窗体**项模板。<br />- *Elements.xml*添加、 重命名或删除在窗体时，或其部署路径更改时的要求进行重构的工作流的文件。<br />-有关详细信息，请参阅[演练：使用关联和启动窗体创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。|-没有 InfoPath 关联窗体模板中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。<br />-没有之间集成[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和 InfoPath 设计器。<br />- *Elements.xml*不重构工作流的文件。|  
+|启动|-ASPX 初始化窗体可以通过使用添加到工作流**工作流发起窗体**项模板。<br />- *Elements.xml*添加、 重命名或删除在窗体时，或其部署路径更改时的要求进行重构的工作流的文件。<br />-有关详细信息，请参阅[演练：使用关联和启动窗体创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。|-没有 InfoPath 关联窗体模板中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。<br />-没有之间集成[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和 InfoPath 设计器。<br />- *Elements.xml*不重构工作流的文件。|  
 |任务|-无 ASPX 任务窗体模板现已推出[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 必须创建应用程序页，并向其中添加代码。<br />- *Elements.xml*不重构工作流的文件。<br />-有关详细信息，请参阅[工作流任务窗体 (SharePoint Foundation)](http://go.microsoft.com/fwlink/?LinkId=187674)|-没有 InfoPath 任务窗体模板中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。<br />-没有之间集成[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和 InfoPath 设计器。<br />- *Elements.xml*不重构工作流的文件。|  
 |修改|-无 ASPX 修改窗体模板现已推出[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 若要添加修改窗体，必须创建应用程序页，并向其中添加代码。<br />- *Elements.xml*不重构工作流的文件。 您必须手动编辑它根据需要。<br />-有关详细信息，请参阅[工作流修改窗体 (SharePoint Foundation)](http://go.microsoft.com/fwlink/?LinkId=187675)|-没有 InfoPath 修改窗体模板中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。<br />-没有之间集成[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和 InfoPath 设计器。<br />- *Elements.xml*不重构工作流的文件。|  
   
@@ -45,13 +42,11 @@ ms.locfileid: "51296185"
 |窗体类型|已从 SharePoint Designer 中导入的 ASPX 窗体的可重用工作流|已从 SharePoint Designer 中导入的 InfoPath 窗体的可重用工作流|  
 |---------------|-------------------------------------------------------------------------------| - |  
 |关联|的在中引用窗体*Elements.xml*工作流的文件。<br />- *Elements.xml*重命名或删除在窗体时，或其部署路径更改时的要求进行重构的工作流的文件。|的导入，但未在中引用窗体*Elements.xml*的工作流。<br />- *Elements.xml*不重构工作流的文件。|  
-|启动|的中的工作流引用窗体*Elements.xml*工作流的文件。<br />- *Elements.xml*重命名或删除在窗体时，或其部署路径更改时的要求进行重构的工作流的文件。|的导入，但未在中引用窗体*Elements.xml*的工作流。<br />- *Elements.xml*不重构工作流的文件。 **注意：** 规则和属性必须添加和更改为此方案能够工作。|  
-|任务|的在中引用窗体*Elements.xml*工作流的文件。<br />- *Elements.xml*不重构工作流的文件。|的导入，但未在中引用窗体*Elements.xml*的工作流。<br />- *Elements.xml*不重构工作流的文件。 **注意：** 规则和属性必须添加和更改为此方案能够工作。|  
+|启动|的中的工作流引用窗体*Elements.xml*工作流的文件。<br />- *Elements.xml*重命名或删除在窗体时，或其部署路径更改时的要求进行重构的工作流的文件。|的导入，但未在中引用窗体*Elements.xml*的工作流。<br />- *Elements.xml*不重构工作流的文件。 **注意：** 规则和属性必须添加和更改此方案能够工作。|  
+|任务|的在中引用窗体*Elements.xml*工作流的文件。<br />- *Elements.xml*不重构工作流的文件。|的导入，但未在中引用窗体*Elements.xml*的工作流。<br />- *Elements.xml*不重构工作流的文件。 **注意：** 规则和属性必须添加和更改此方案能够工作。|  
 |修改|不适用。 不能在 SharePoint Designer 中创建修改的 ASPX 窗体。|不适用。 除了内置的 SharePoint Server 工作流，工作流导出时不包括.wsp 文件中，不能在 SharePoint Designer 中创建 InfoPath 修改窗体。|  
   
 ## <a name="see-also"></a>请参阅
- [演练： 使用关联和初始化表单创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
+ [演练：使用关联和初始化表单创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
  [创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [从现有的 SharePoint 网站导入项目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)  
-  
-  

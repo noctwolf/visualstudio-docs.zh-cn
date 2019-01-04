@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式保存文档
-ms.custom: ''
+title: 如何：以编程方式保存文档
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 99a50ec83d69217d123d11aa83ff02600b82108c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883466"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821589"
 ---
-# <a name="how-to-programmatically-save-documents"></a>如何： 以编程方式保存文档
+# <a name="how-to-programmatically-save-documents"></a>如何：以编程方式保存文档
   有几种方法来保存 Microsoft Office Word 文档。 您可以将文档保存而无需更改文档的名称或可以使用新名称保存文档。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -89,9 +86,7 @@ ms.locfileid: "49883466"
 -   若要使用新名称保存文档，目录的名称*测试*必须位于驱动器 c。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式关闭文档](../vsto/how-to-programmatically-close-documents.md)   
- [如何： 以编程方式打开现有文档](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [如何：以编程方式关闭文档](../vsto/how-to-programmatically-close-documents.md)   
+ [如何：以编程方式打开现有文档](../vsto/how-to-programmatically-open-existing-documents.md)   
  [文档主机项](../vsto/document-host-item.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

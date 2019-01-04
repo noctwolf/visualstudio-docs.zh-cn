@@ -1,6 +1,5 @@
 ---
 title: Visual c + + 项目扩展性
-ms.custom: ''
 ms.date: 09/12/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -11,12 +10,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 913ad2e785fcdb2067f89d0d4de2b250db40468b
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0eccf13f38799c1d35b7fe4226fa02ec1a291b0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986981"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 项目系统可扩展性和工具集集成
 
@@ -36,19 +35,19 @@ ms.locfileid: "51349671"
 
 - `$(ApplicationType)`
 
-   示例： Windows 应用商店、 Android、 Linux
+   示例：Windows 应用商店、 Android、 Linux
 
 - `$(ApplicationTypeRevision)`
 
    这必须是有效版本字符串，窗体 [.revision]]。
 
-   示例： 1.0 10.0.0.0
+   示例：1.0 10.0.0.0
 
 - `$(Platform)`
 
    生成体系结构，出于历史原因，名为"平台"。
 
-   示例： Win32，x86、 x64、 ARM   
+   示例：Win32 中，x86、 x64、 ARM   
 
 - `$(PlatformToolset)`
 
@@ -481,10 +480,10 @@ CPS 支持其他值的上下文类型，但它们不在 Visual c + + 项目中�
 
 | 特性 | 描述 |
 |------------| - |
-| `generic` | 在类别标题下一页上将显示所有属性<br/>规则可以对可见`Project`并`PropertySheet`上下文中，但不是`File`。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033年*\\*general.xml* |
-| `tool` | 作为子页显示类别。<br/>规则可以在所有上下文中可见： `Project`，`PropertySheet`和`File`。<br/>仅当项目具有与项目的规则是在项目属性中可见`ItemType`中定义`Rule.DataSource`，除非中包含的规则名`ProjectTools`项组。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033年*\\*clang.xml* |
-| `debugger` | 页面会显示为调试页的一部分。<br/>当前忽略类别。<br/>规则名称应匹配的调试启动程序 MEF 对象`ExportDebugger`属性。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033年*\\*调试器\_本地\_windows.xml* |
-| *custom* | 自定义模板。 模板的名称应与匹配`ExportPropertyPageUIFactoryProvider`属性的`PropertyPageUIFactoryProvider`MEF 对象。 请参阅**Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033年*\\*userMacros.xml* |
+| `generic` | 在类别标题下一页上将显示所有属性<br/>规则可以对可见`Project`并`PropertySheet`上下文中，但不是`File`。<br/><br/> 示例:`$(VCTargetsPath)`\\*1033*\\*general.xml* |
+| `tool` | 作为子页显示类别。<br/>规则可以在所有上下文中可见： `Project`，`PropertySheet`和`File`。<br/>仅当项目具有与项目的规则是在项目属性中可见`ItemType`中定义`Rule.DataSource`，除非中包含的规则名`ProjectTools`项组。<br/><br/>示例:`$(VCTargetsPath)`\\*1033*\\*clang.xml* |
+| `debugger` | 页面会显示为调试页的一部分。<br/>当前忽略类别。<br/>规则名称应匹配的调试启动程序 MEF 对象`ExportDebugger`属性。<br/><br/>示例:`$(VCTargetsPath)`\\*1033*\\*调试器\_本地\_windows.xml* |
+| *custom* | 自定义模板。 模板的名称应与匹配`ExportPropertyPageUIFactoryProvider`属性的`PropertyPageUIFactoryProvider`MEF 对象。 请参阅**Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**。<br/><br/> 示例:`$(VCTargetsPath)`\\*1033*\\*userMacros.xml* |
 
 如果该规则使用基于属性网格的模板之一，它可以为其属性来使用这些扩展点：
 
@@ -530,7 +529,7 @@ CPS 支持其他值的上下文类型，但它们不在 Visual c + + 项目中�
 </ItemGroup>
 ```
 
-示例： `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.xml*
+示例:`$(VCTargetsPath)`\\*BuildCustomizations*\\*masm.xml*
 
 ### <a name="debuggers"></a>调试器
 

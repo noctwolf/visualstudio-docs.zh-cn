@@ -1,9 +1,6 @@
 ---
 title: Excel 解决方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64fac12a47a519496ecba3f31f3fd035ff2d9121
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 38db6bf4c29694813b41a88b0d5d62a1672cd6b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856847"
 ---
 # <a name="excel-solutions"></a>Excel 解决方案
   Visual Studio 提供可用于创建 Microsoft Office Excel 的文档级自定义项和 VSTO 外接程序的项目模板。 你可以使用这些解决方案自动化 Excel、扩展 Excel 功能以及自定义 Excel 用户界面 (UI)。 有关文档级自定义项和 VSTO 外接程序之间的差异的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -122,4 +119,3 @@ ms.locfileid: "53647940"
 | [演练：将控件添加到在运行时在 VSTO 外接程序项目中的工作表](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md) | 演示如何将 Windows 窗体按钮，添加<xref:Microsoft.Office.Tools.Excel.NamedRange>，和一个<xref:Microsoft.Office.Tools.Excel.ListObject>到在运行时由 VSTO 外接程序中使用工作表。 |
 | [了解共同创作和外接程序](./understanding-coauthoring-and-addins.md) | 介绍了可能需要对你的解决方案，以适应共同编写的调整。 |
 | [Excel 2010 中的 Office 开发](http://go.microsoft.com/fwlink/?LinkId=199011) | 提供有关开发 Excel 解决方案的文章和参考文档的链接。 这些链接并不特定于使用 Visual Studio 的 Office 开发。 |
-

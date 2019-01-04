@@ -1,9 +1,6 @@
 ---
-title: 常见问题： 将外接程序转换为 VSPackage 扩展 |Microsoft Docs
-ms.custom: ''
+title: 常见问题解答：将外接程序转换为 VSPackage 扩展 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56088e45af5ed45b3a303ffc99679e77b51f56ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9623ec6fd2fed89dbe541d6088f7366d38bc0636
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826506"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879142"
 ---
-# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常见问题： 将外接程序转换为 VSPackage 扩展
+# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常见问题解答：将外接程序转换为 VSPackage 扩展
 外接程序现在已弃用。 若要使新的 Visual Studio 扩展，您需要创建 VSIX 扩展。 以下是一些有关如何将 Visual Studio 外接程序转换为 VSIX 扩展的常见问题的答案。  
   
 > [!WARNING]
@@ -53,7 +50,7 @@ ms.locfileid: "49826506"
   
      将出现 Visual Studio 的第二个实例。 此第二个实例称为实验实例，它具有的设置可能与你要用来编写代码的 Visual Studio 实例的设置不相同。 第一次运行实验实例时，系统将要求你登录到 VS Online 并指定你的主题和配置文件。  
   
-     上**工具**看到名为的按钮 （在实验实例中） 的菜单**我的命令名**。 当选择此按钮时，应显示一条消息： **Testvspackagepackage.menuitemcallback**。  
+     上**工具**看到名为的按钮 （在实验实例中） 的菜单**我的命令名**。 当选择此按钮时，应显示一条消息：**内部 TestVSPackagePackage.MenuItemCallback()**。  
   
 ##  <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中运行我的外接程序代码？  
  通常采用以下两种方式之一来运行外接程序代码：  

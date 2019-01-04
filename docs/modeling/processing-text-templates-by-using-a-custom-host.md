@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 87d9f5f489bffcc624ff758c89e5d3a230a68d01
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 12c443879ebbe142dde69a713d214c3b79b254ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859336"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865435"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>使用自定义主机处理文本模板
 
@@ -53,7 +52,7 @@ string output = engine.ProcessTemplate(templateString, host);
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 在中定义**由 Microsoft.VisualStudio.TextTemplating。\*。0 dll**，并<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>中定义**Microsoft.VisualStudio.TextTemplating.Interfaces。\*。0 dll**。
 
 ## <a name="in-this-section"></a>本节内容
- [演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)演示如何创建自定义文本模板宿主，Visual Studio 外部提供的文本模板功能。
+ [演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)演示如何创建自定义文本模板宿主，Visual Studio 外部提供的文本模板功能。
 
 ## <a name="reference"></a>参考
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>

@@ -1,9 +1,6 @@
 ---
 title: 字形控件 (源代码管理 VSPackage) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - glyphs, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c791647e9718686c5a6c7cf250ca84c74aabbfcc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 2e432e045a55593f0967c7805323785cfc6acaa7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499245"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870042"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>字形控件 （源代码管理 VSPackage）
 可用于源代码管理 Vspackage 的深度集成的一部分是能够显示其自己的标志符号，以指示源代码管理下的项的状态。  
@@ -28,7 +25,7 @@ ms.locfileid: "39499245"
  状态标志符号是一个图标，指示某个项时显示，例如，在的当前状态**解决方案资源管理器**中或在**类视图**。 源代码管理 VSPackage 可以运用两个级别的标志符号控件。 它可以限制所选的标志符号为一组预定义的标志符号提供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE，或者它可以定义一组自定义的标志符号显示。  
   
 ### <a name="default-set-of-glyphs"></a>默认的标志符号集  
- 若要确定与中的项相关联的状态标志符号**解决方案资源管理器**，一个项目从使用源控件请求的状态标志符号<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A>。 源代码管理 VSPackage 可能会决定保留限制为与 IDE 提供的预定义标志符号的标志符号的选择。 在这种情况下，VSPackage 将返回传递的值表示的标志符号枚举中定义的数组*vsshell.idl*。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>。 这是一组预定义的设置的 IDE，如签入的标志符号，挂锁和签出标志符号一个复选标记的标志符号。  
+ 若要确定与中的项相关联的状态标志符号**解决方案资源管理器**，一个项目从使用源控件请求的状态标志符号<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A>。 源代码管理 VSPackage 可能会决定保留限制为与 IDE 提供的预定义标志符号的标志符号的选择。 在这种情况下，VSPackage 将返回传递的值表示的标志符号枚举中定义的数组*vsshell.idl*。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>。 这是一组预定义的设置的 IDE，如签入的标志符号，挂锁和签出标志符号一个复选标记的标志符号。  
   
 ### <a name="custom-set-of-glyphs"></a>自定义标志符号集  
  在安装时，源代码管理 VSPackage 可以以独特的外观使用其自己的标志符号。 当新的源代码管理 VSPackage 处于活动状态时，它应该能够开始使用其自己的标志符号即使在上一进行源代码管理 VSPackage 仍然加载，但处于非活动状态。 在此模式下，源代码管理 VSPackage 仍可以使用现有的图标以维护查看与一致[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]如果还选择能。  

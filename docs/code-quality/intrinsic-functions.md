@@ -2,7 +2,6 @@
 title: 内部函数
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _String_length_
@@ -17,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 757db51093dcd7e300831287b5da42cd05430e28
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 7781a1ac48945b2c272d5234ac7f4dcbd923b309
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804495"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944517"
 ---
 # <a name="intrinsic-functions"></a>内部函数
 在 SAL 表达式可以是 C/c + + 表达式，前提是不具有副作用的表达式，例如，+ +、--，和所有在此上下文中具有副作用的函数调用。  但是，SAL 提供一些类似函数的对象以及可以在 SAL 表达式中使用一些保留的符号。 这些称为*内部函数*。

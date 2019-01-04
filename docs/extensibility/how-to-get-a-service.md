@@ -1,9 +1,6 @@
 ---
-title: 如何： 获取服务 |Microsoft Docs
-ms.custom: ''
+title: 如何：获取服务 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7b28f018ba92ad2ab8a266311ac2e71fd910440
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951374"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990024"
 ---
-# <a name="how-to-get-a-service"></a>如何： 获取服务
+# <a name="how-to-get-a-service"></a>如何：获取服务
 通常需要获取 Visual Studio 服务访问不同的功能。 一般情况下，Visual Studio 服务提供了一个或多个接口，可以使用。 你可以从 VSPackage 获取大多数服务。  
   
  派生自任何 VSPackage<xref:Microsoft.VisualStudio.Shell.Package>并已正确放置的任何全局服务可以要求。 因为`Package`类实现<xref:System.IServiceProvider>，派生的任何 VSPackage`Package`也是服务提供程序。  
@@ -42,7 +39,7 @@ ms.locfileid: "49951374"
   
    ```  
   
-    此代码获取 SVsActivityLog 服务并将强制转换到<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口，可用于写入活动日志。 有关示例，请参阅[如何： 使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
+    此代码获取 SVsActivityLog 服务并将强制转换到<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口，可用于写入活动日志。 有关示例，请参阅[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
   
 4. 生成项目并启动调试。 将显示在实验实例。  
   
@@ -53,7 +50,7 @@ ms.locfileid: "49951374"
   
  静态<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法依赖于任何 VSPackage 派生自第一次进行初始化的缓存的服务提供商<xref:Microsoft.VisualStudio.Shell.Package>确定位置。  
   
- 因为之前确定位置 VSPackage 调用 VSPackage 构造函数，全球服务不可用通常从 VSPackage 构造函数内。 请参阅[如何： 对服务进行故障排除](../extensibility/how-to-troubleshoot-services.md)的一种解决方法。  
+ 因为之前确定位置 VSPackage 调用 VSPackage 构造函数，全球服务不可用通常从 VSPackage 构造函数内。 请参阅[操作说明：排查服务问题](../extensibility/how-to-troubleshoot-services.md)的一种解决方法。  
   
  下面是方法的在工具窗口或其他非 VSPackage 元素中获取服务的示例。  
   
@@ -70,7 +67,7 @@ if (log == null) return;
  下面介绍了如何从 DTE 对象获取服务。  
   
 ```csharp  
-// Start with the DTE object, for example:   
+// Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  
   
@@ -86,6 +83,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 提供的服务](../extensibility/how-to-provide-a-service.md)   
+ [如何：提供的服务](../extensibility/how-to-provide-a-service.md)   
  [使用和提供服务](../extensibility/using-and-providing-services.md)   
  [服务基础知识](../extensibility/internals/service-essentials.md)

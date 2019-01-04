@@ -1,9 +1,6 @@
 ---
-title: 如何： 将扩展性项目迁移到 Visual Studio 2017 |Microsoft Docs
-ms.custom: ''
+title: 如何：将扩展性项目迁移到 Visual Studio 2017 |Microsoft Docs
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: 22fdb969112278fafb636e0162db4ebc93b9a657
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820405"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何： 将扩展性项目迁移到 Visual Studio 2017
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何：将扩展性项目迁移到 Visual Studio 2017
 
 本文档介绍如何将扩展性项目升级到 Visual Studio 2017。 除了介绍如何更新项目文件，它还介绍了如何从扩展清单版本 2 (VSIX v2) 升级到新的版本 3 VSIX 清单格式 (VSIX v3)。
 
@@ -40,7 +37,7 @@ ms.locfileid: "51826812"
 
 ## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>Microsoft.VSSDK.BuildTools NuGet 包更新
 
->**注意：** 如果你的解决方案不引用 Microsoft.VSSDK.BuildTools NuGet 包，可以跳过此步骤。
+>**注意：** 如果你的解决方案不引用 Microsoft.VSSDK.BuildTools NuGet 包，则可以跳过此步骤。
 
 若要生成新的 VSIX v3 中扩展 （版本 3） 格式，你的解决方案将需要使用新的 VSSDK 生成工具生成。 此功能将安装使用 Visual Studio 2017，但您的 VSIX v2 扩展可能会保存到通过 NuGet 较旧版本的引用。 如果是这样，您将需要手动安装用于你的解决方案的 Microsoft.VSSDK.BuildTools NuGet 包的更新。
 
@@ -57,7 +54,7 @@ ms.locfileid: "51826812"
 
 若要确保 Visual Studio 的用户的安装已运行扩展所需的所有程序集，请扩展清单文件中指定的所有系统必备组件或包。 当用户尝试安装该扩展时，vsixinstaller 找将检查是否已安装所有必备组件。 如果有一些丢失，将提示用户安装缺少的组件作为扩展安装过程的一部分。
 
->**注意：** 至少，所有扩展应作为必备组件都指定 Visual Studio 核心编辑器组件。
+>**注意：** 至少，所有扩展应都指定 Visual Studio 核心编辑器组件作为必备组件。
 
 * 编辑扩展清单文件 (通常称为*source.extension.vsixmanifest*)。
 * 确保`InstallationTarget`包括 15.0。
@@ -79,11 +76,11 @@ ms.locfileid: "51826812"
 </PackageManifest>
 ```
 
-### <a name="option-use-the-designer-to-make-changes-to-the-vsix-extension-manifest"></a>选项： 使用设计器对 VSIX 扩展清单进行更改
+### <a name="option-use-the-designer-to-make-changes-to-the-vsix-extension-manifest"></a>选项：使用设计器对 VSIX 扩展清单进行更改
 
 而不是直接编辑清单 XML，可以使用新**先决条件**将为你更新清单设计器选择必备组件和 XML 的选项卡。
 
->**注意：** 清单设计器将仅允许您选择当前的 Visual Studio 实例安装的组件 （不工作负荷或包）。 如果需要添加为工作负荷、 包或当前未安装的组件的必备组件，请直接编辑清单 XML。
+>**注意：** 清单设计器将只允许您选择当前的 Visual Studio 实例安装的组件 （不工作负荷或包）。 如果需要添加为工作负荷、 包或当前未安装的组件的必备组件，请直接编辑清单 XML。
 
 * 打开*source.extension.vsixmanifest [设计]* 文件。
 * 选择**先决条件**选项卡并按**新建**按钮。
@@ -97,7 +94,7 @@ ms.locfileid: "51826812"
 * 单击下拉列表**名称**，然后选择所需的必备组件。
 * 如果需要，更新的版本。
 
-  >注意: 版本字段将使用当前安装的组件，与范围最多跨越 （但不是包括） 的版本的预填充下一个主要版本的组件。
+  >注意:版本字段将使用当前安装的组件，与范围最多跨越 （但不是包括） 的版本的预填充下一个主要版本的组件。
 
   ![添加 roslyn 必备组件](media/add-roslyn-prerequisite.png)
 
@@ -107,7 +104,7 @@ ms.locfileid: "51826812"
 
 如果你想要调试你的 Visual Studio 实验实例中的扩展，请确保项目设置**调试** > **启动操作**具有**启动外部程序：** 值设置为*devenv.exe* Visual Studio 2017 安装的文件。
 
-它可能如下所示： *C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
+它可能如下所示：*C:\Program 文件 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![启动外部程序](media/start-external-program.png)
 
@@ -128,7 +125,7 @@ ms.locfileid: "51826812"
 
 VSIX 将会成功安装在计算机安装所需的所有必备组件使用的测试。
 
->**注意：** 之前安装任何扩展，请关闭 Visual Studio 的所有实例。
+>**注意：** 然后再安装任何扩展，请关闭 Visual Studio 的所有实例。
 
 尝试安装该扩展：
 
@@ -136,10 +133,10 @@ VSIX 将会成功安装在计算机安装所需的所有必备组件使用的测
 
 ![在 Visual Studio 2017 的 VSIX 安装程序](media/vsixinstaller-vs-2017.png)
 
-* 可选： 检查以前版本的 Visual Studio。
+* 可选：检查 Visual Studio 的早期版本。
   * 事实证明，向后兼容性。
   * 应适用于 Visual Studio 2012，Visual Studio 2013，Visual Studio 2015。
-* 可选： 检查，VSIX 安装程序版本检查器提供了多种版本。
+* 可选：检查，VSIX 安装程序版本检查器提供了多种版本。
   * 包括 Visual Studio 的早期版本 （如果已安装）。
   * 包含 Visual Studio 2017。
 
@@ -149,13 +146,13 @@ VSIX 将会成功安装在计算机安装所需的所有必备组件使用的测
 
 等待进程关闭，或手动结束任务。 所列的名称，或在括号中列出的 PID，您可以找到进程。
 
->**注意：** 这些进程将不会自动关闭 Visual Studio 实例正在运行时。 请确保已关闭的情况下在计算机中-包括来自其他用户，使用 Visual Studio 的所有实例，然后继续重试。
+>**注意：** 这些过程将不会自动关闭 Visual Studio 实例正在运行时。 请确保已关闭的情况下在计算机中-包括来自其他用户，使用 Visual Studio 的所有实例，然后继续重试。
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>时缺少所需的先决条件检查
 
 * 尝试安装该扩展的计算机上使用 Visual Studio 2017，不包含系统必备组件 （上述） 中定义的所有组件。
 * 检查安装标识缺少的组件/s 和列表作为 vsixinstaller 找中的必备组件。
-* 注意： 如果任何系统必备组件需要安装该扩展程序的提升将是所需。
+* 注意:如果需要随扩展一起安装的任何先决条件，则将需要提升。
 
 ![vsixinstaller 找缺少的先决条件](media/vsixinstaller-missing-prerequisite.png)
 
@@ -180,7 +177,7 @@ WPF | 托管桌面工作负载核心 | Microsoft.VisualStudio.Component.ManagedD
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017 ComponentBinaryMapping.xlsx
 
-Excel 工作表中有四个列：**组件名称**， **ComponentId**，**版本**，以及**二进制 / 文件名称**。  可以使用筛选器来搜索和查找特定组件和二进制文件。
+在 Excel 表中有四列：**组件名称**， **ComponentId**，**版本**，并且**二进制 / 文件名称**。  可以使用筛选器来搜索和查找特定组件和二进制文件。
 
 对于所有引用，首先确定哪些是核心编辑器 (Microsoft.VisualStudio.Component.CoreEditor) 组件中。  最小值，我们需要指定为所有扩展的必备组件的核心编辑器组件。 将保留不在核心编辑器中的引用，将添加中的筛选器**二进制文件 / 文件名称**部分，若要查找具有任何这些引用的子集的组件。
 

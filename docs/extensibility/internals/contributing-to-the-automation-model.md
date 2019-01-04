@@ -1,9 +1,6 @@
 ---
 title: 自动化模型的 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d56b446914ae7345ccb0d393db8f17fc7f82c47
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6db9cd21b56fb4d31a97fea9f16541377a8de1f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513150"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952597"
 ---
 # <a name="contribute-to-the-automation-model"></a>参与自动化模型
 Visual Studio 提供一组自动化接口的自定义环境。 自动化模型是使最终用户能够创建 Visual Studio 加载项和扩展的对象模型。  
@@ -49,7 +46,7 @@ Visual Studio 提供一组自动化接口的自定义环境。 自动化模型�
  [提供代码的自动化](../../extensibility/internals/providing-automation-for-code.md)  
  介绍了创建自动化模型为你的代码不需要。 但是，在此主题，它提供到代码模型中的深度信息中提供的链接。  
   
- [如何： 提供适用于 Windows 的自动化](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
+ [如何：提供适用于 Windows 的自动化](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
  介绍了，无论何时你想要使自动化对象在一个窗口，并在环境不提供现成的自动化对象，提供自动化是一个不错的主意。 讨论了自动化的工具窗口和文档窗口。  
   
  [使用自动化模型](../../extensibility/internals/using-the-automation-model.md)  
@@ -61,4 +58,3 @@ Visual Studio 提供一组自动化接口的自定义环境。 自动化模型�
 ## <a name="reference"></a>参考  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>  
  提供的代码示例，演示如何在 DTE 自动化对象模型中加入 VSPackage。 列出了参数、 返回值和所选的备注。  
-  

@@ -1,9 +1,6 @@
 ---
 title: 使用 VSPackage 创建扩展 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50af15e1c15b5d0b6318c498923229778e8c0169
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1060dda64fc402e69f7f87601a1643fbabed5507
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838406"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>使用 VSPackage 创建扩展
 本演练演示如何创建 VSIX 项目并添加 VSPackage 项目项。 我们将使用 VSPackage 来获取 UI 外壳服务才能显示一个消息框。  
@@ -49,7 +46,7 @@ ms.locfileid: "39500769"
     public sealed class FirstPackage : Package  
     ```  
   
-2.  让我们添加一条消息，让我们知道已加载 VSPackage。 我们将使用 VSPackage 的`Initialize()`方法，若要这样做，因为你可以获得 Visual Studio 服务仅后已就位 VSPackage。 (有关获取服务的详细信息，请参阅[如何： 获取服务](../extensibility/how-to-get-a-service.md)。)替换`Initialize()`方法`FirstPackage`获取的代码<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>服务，获取<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>接口，并调用其<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A>方法。  
+2.  让我们添加一条消息，让我们知道已加载 VSPackage。 我们将使用 VSPackage 的`Initialize()`方法，若要这样做，因为你可以获得 Visual Studio 服务仅后已就位 VSPackage。 (有关获取服务的详细信息，请参阅[如何：获取服务](../extensibility/how-to-get-a-service.md)。)替换`Initialize()`方法`FirstPackage`获取的代码<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>服务，获取<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>接口，并调用其<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A>方法。  
   
     ```csharp  
     protected override void Initialize()  

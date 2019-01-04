@@ -1,9 +1,6 @@
 ---
 title: FeatureProperties 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 26fcdb1dd7fa3b62f7882deb1a077b9466e52018
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: e7843d8a8ee9fc21c546c8cfca57cfef63cd4015
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36324992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955667"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties 元素
   部署到 SharePoint 时，包含与某个功能的属性值的集合。 将功能部署后，你可以在代码中访问的属性值。  
@@ -66,5 +63,3 @@ ms.locfileid: "36324992"
 ## <a name="see-also"></a>请参阅
  [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [提供在项目项中的打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  
-  

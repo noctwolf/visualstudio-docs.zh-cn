@@ -1,9 +1,6 @@
 ---
-title: 演练： 导入自定义母版页和网站页的映像 |Microsoft Docs
-ms.custom: ''
+title: 演练：导入自定义母版页和网站页的映像 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45f1ded9cf6eca3715c5050f93aa24630a1bc4e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7901bfea334ff3d9ad6d197bf64b3f1a87961a9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890981"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904148"
 ---
-# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>演练： 导入自定义母版页和站点页图像
+# <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>演练：导入自定义母版页和站点页图像
   本演练演示如何导入 SharePoint 的自定义母版页和包含到图像的网站页面[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。  
 
  本演练演示如何完成以下任务：  
@@ -179,10 +176,9 @@ ms.locfileid: "49890981"
 
 7. 打开 SharePoint 站点查看已部署的项目。  
 
-   若要导入到的文件的替代方法[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]并将其部署到 SharePoint 是将文件添加到中的模块[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [如何： 导入母版页或主题](../sharepoint/how-to-import-a-master-page-or-theme.md)并[使用模块包括解决方案中的文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
+   若要导入到的文件的替代方法[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]并将其部署到 SharePoint 是将文件添加到中的模块[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [如何：导入母版页或主题](../sharepoint/how-to-import-a-master-page-or-theme.md)并[使用模块包括解决方案中的文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
 
 ## <a name="see-also"></a>请参阅
  [从现有的 SharePoint 网站导入项](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [创建 web 部件或应用程序页的可重用的控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-

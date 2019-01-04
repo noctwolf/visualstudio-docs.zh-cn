@@ -1,9 +1,6 @@
 ---
-title: 演练： 为 Word 创建第一个 VSTO 外接程序
-ms.custom: ''
+title: 演练：为 Word 创建第一个 VSTO 外接程序
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940965"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948967"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>演练： 为 Word 创建第一个 VSTO 外接程序
+# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>演练：为 Word 创建第一个 VSTO 外接程序
   本介绍性演练说明如何创建 Microsoft Office Word 的 VSTO 外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的文档无关。  
   
  [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]  
@@ -124,13 +121,13 @@ ms.locfileid: "49940965"
 ## <a name="next-steps"></a>后续步骤  
  既然你已经创建了一个基本的 Word VSTO 外接程序，就可以从下面这些主题中了解有关如何开发 VSTO 外接程序的详细信息：  
   
--   可以在 VSTO 外接程序中执行的常规编程任务：[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
+-   可以在 VSTO 外接程序中执行的常规编程任务：[VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
   
--   特定于 Word VSTO 外接程序的编程任务： [Word 解决方案](../vsto/word-solutions.md)。  
+-   编程特定于 Word VSTO 外接程序的任务：[Word 解决方案](../vsto/word-solutions.md)。  
   
--   使用 Word 对象模型： [Word 对象模型概述](../vsto/word-object-model-overview.md)。  
+-   使用 Word 对象模型：[Word 对象模型概述](../vsto/word-object-model-overview.md)。  
   
--   自定义 Word 的 UI，例如，通过将自定义选项卡添加到功能区或创建你自己的自定义任务窗格： [Office UI 自定义](../vsto/office-ui-customization.md)。  
+-   自定义 Word 的 UI，例如，通过向功能区添加自定义选项卡或创建你自己的自定义任务窗格：[Office UI 自定义](../vsto/office-ui-customization.md)。  
   
 -   生成和调试针对 Word 的 VSTO 外接程序：[生成 Office 解决方案](../vsto/building-office-solutions.md)。  
   
@@ -145,5 +142,3 @@ ms.locfileid: "49940965"
  [生成 Office 解决方案](../vsto/building-office-solutions.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [Office 项目模板概述](../vsto/office-project-templates-overview.md)  
-  
-  

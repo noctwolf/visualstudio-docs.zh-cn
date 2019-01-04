@@ -1,9 +1,6 @@
 ---
-title: IDebugErrorEvent2 |Microsoft 文档
-ms.custom: ''
+title: IDebugErrorEvent2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugErrorEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68185726fd81e231ec1dbef471b4afa638de1703
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd11440b5b50f41674e9837b88ca15e4c0144d37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116485"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901251"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
-此接口指定的错误消息报告给用户。  
+此接口指定一条错误消息报告给用户。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,29 +28,29 @@ ms.locfileid: "31116485"
 IDebugErrorEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 调试引擎 (DE) 作为用户可读消息实现此接口报告错误。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现该接口对同一个对象。 SDM 使用[QueryInterface](/cpp/atl/queryinterface)访问`IDebugEvent2`接口。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 调试引擎 (DE) 作为用户可读的消息实现此接口来报告错误。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象。 使用 SDM [QueryInterface](/cpp/atl/queryinterface)访问`IDebugEvent2`接口。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- DE 创建并发送此事件对象，以报告错误。 通过使用发送事件[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 时将其附加到正在调试的程序提供的回调函数。  
+ DE 创建并发送此事件对象来报告错误。 通过使用发送该事件[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 它附加到正在调试的程序时提供的回调函数。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  此接口实现以下方法：  
   
 |方法|描述|  
 |------------|-----------------|  
-|`GetErrorMessage`|用户可读字符串形式返回错误。|  
+|`GetErrorMessage`|返回一个错误，因为用户可读字符串。|  
   
 ## <a name="remarks"></a>备注  
- 如果调试引擎遇到错误时，它可以使用此接口来通过 Visual Studio 消息报告给用户。  
+ 如果调试引擎遇到错误，它可以使用此接口来通过 Visual Studio 消息报告给用户。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

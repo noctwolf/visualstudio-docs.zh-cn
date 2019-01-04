@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式将样式应用于工作簿中的范围
-ms.custom: ''
+title: 如何：以编程方式将样式应用于工作簿中的范围
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d19c886a7b3ae1a1976ab2a47fe139ba830a4ea5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4c0129319e1d979efd924d9d2bef57f0ef5dbf1a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876414"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>如何： 以编程方式将样式应用于工作簿中的范围
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>如何：以编程方式将样式应用于工作簿中的范围
   可以将已命名的样式应用到工作簿中的区域。 Excel 提供了大量预定义样式。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,5 +71,3 @@ ms.locfileid: "35670476"
  [NamedRange 控件](../vsto/namedrange-control.md)   
  [对 Office 项目中的对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

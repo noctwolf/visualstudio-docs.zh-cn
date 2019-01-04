@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式保护文档和文档的某些部分
-ms.custom: ''
+title: 如何：以编程方式保护文档和文档的某些部分
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9acef141944b106a9bace38fef8ede7041bfecc5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 030cc69a2a89f81f728afc4e6367ddd6c2d81990
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991105"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>如何： 以编程方式保护文档和文档的某些部分
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>如何：以编程方式保护文档和文档的某些部分
   你可以为 Microsoft Office Word 文档添加保护，以防止用户对文档进行任何编辑操作。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "35670283"
 > [!NOTE]  
 >  下面的示例未使用密码保护；但是，在添加文档保护时，你可能想考虑使用密码。 有关详细信息，请参阅文档保护器示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
   
- 你也可以使用内容控件来保护文档的各个部分。 有关详细信息，请参阅[如何： 使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
+ 你也可以使用内容控件来保护文档的各个部分。 有关更多信息，请参见[如何：使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
   
 ## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>保护属于文档级自定义文档  
   
@@ -74,8 +71,6 @@ ms.locfileid: "35670283"
 ## <a name="see-also"></a>请参阅  
  [在文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)   
  [Office 文档上的密码保护](../vsto/password-protection-on-office-documents.md)   
- [如何： 允许代码以使用受限权限的文档的后台运行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [如何： 向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [如何：允许代码以使用受限权限的文档的后台运行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

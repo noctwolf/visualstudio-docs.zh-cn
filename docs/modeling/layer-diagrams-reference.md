@@ -21,13 +21,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a883b82da76fff2fc4b298de7263320c069a501b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948389"
 ---
 # <a name="dependency-diagrams-reference"></a>依赖项关系图： 参考
 
@@ -50,7 +49,7 @@ ms.locfileid: "49920920"
 
 -   在开发和维护你的代码过程中，通过包括对签入的验证来强化预期体系结构并生成操作。
 
-本主题介绍了可以使用依赖项关系图上的元素。 有关更多详细信息，有关如何创建和绘制依赖项关系图，请参阅[依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)。 有关分层模式的详细信息，请访问[模式和实践站点](http://go.microsoft.com/fwlink/?LinkId=145794)。
+本主题介绍了可以使用依赖项关系图上的元素。 有关更多详细信息，有关如何创建和绘制依赖项关系图，请参阅[依赖项关系图：指导原则](../modeling/layer-diagrams-guidelines.md)。 有关分层模式的详细信息，请访问[模式和实践站点](http://go.microsoft.com/fwlink/?LinkId=145794)。
 
 ## <a name="reading-dependency-diagrams"></a>读取依赖项关系图
 
@@ -78,7 +77,7 @@ ms.locfileid: "49920920"
 
 有关链接层和项目的详细信息，请参阅：
 
--   [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)
+-   [依赖项关系图：指导原则](../modeling/layer-diagrams-guidelines.md)
 
 -   [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -95,7 +94,7 @@ ms.locfileid: "49920920"
 |-|-|
 |**类别**|项目种类，例如类、命名空间、源文件等|
 |**层**|链接到该项目的层|
-|**支持验证**|如果 **，则返回 True**，则层验证过程可以验证项目是否符合指向或来自此元素的依赖关系。<br /><br /> 如果**False**，则该链接不参与层验证过程。<br /><br /> 有关详细信息，请参阅[依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)。|
+|**支持验证**|如果 **，则返回 True**，则层验证过程可以验证项目是否符合指向或来自此元素的依赖关系。<br /><br /> 如果**False**，则该链接不参与层验证过程。<br /><br /> 有关详细信息，请参阅[依赖项关系图：指导原则](../modeling/layer-diagrams-guidelines.md)。|
 |标识符|对链接的项目的引用|
 
 ## <a name="see-also"></a>请参阅

@@ -1,8 +1,7 @@
 ---
-title: CA1408：请不要使用 AutoDual ClassInterfaceType
+title: CA1408:请不要使用 AutoDual ClassInterfaceType
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotUseAutoDualClassInterfaceType
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a4baa4f12a3d4cb113dd99f1cd3e158742c1ed1a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 8711ed43749d7bea2c69cee4dd4cb0f0160996a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844283"
 ---
-# <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408：请不要使用 AutoDual ClassInterfaceType
+# <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408:请不要使用 AutoDual ClassInterfaceType
 
 |||
 |-|-|
@@ -56,9 +55,9 @@ ms.locfileid: "45545601"
  [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA1403：自动布局类型不应对 COM 可见](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
+ [CA1403:自动布局类型不应对 COM 可见](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
 
- [CA1412：将 ComSource 接口标记为 IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
+ [CA1412:将 ComSource 接口标记为 IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
 ## <a name="see-also"></a>请参阅
 

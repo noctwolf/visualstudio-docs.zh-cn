@@ -1,9 +1,6 @@
 ---
 title: Extern 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - Extern
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 353d7e59d7f9d0cbc6aa93d4118a4cb8ff6ee197
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: dc48dc471dab06bf18c0edf622cfa18e7159eaab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895254"
 ---
 # <a name="extern-element"></a>Extern 元素
 Extern 元素引用外部的所有标头 (*.h*) 要使用合并的文件 *.vsct*在编译时的文件。 要合并的文件必须位于包含路径提供给 VSCT 编译器或引用的[Include 元素](../extensibility/include-element.md)。 这些文件可能是其他 *.vsct*文件或 c + + 标头文件。  
@@ -44,7 +41,7 @@ Extern 元素
   
 |特性|描述|  
 |---------------|-----------------|  
-|href|必须的。 标头文件的路径：<br /><br /> href="stdidcmd.h"|  
+|href|必需。 标头文件的路径：<br /><br /> href="stdidcmd.h"|  
 |条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
 |语言|可选。 默认语言的所有[\<字符串 >](../extensibility/strings-element.md)命令表中的元素：<br /><br /> 语言 ="en-我们"|  
   

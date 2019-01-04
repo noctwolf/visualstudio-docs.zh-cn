@@ -1,9 +1,6 @@
 ---
-title: IDebugExtendedField |Microsoft 文档
-ms.custom: ''
+title: IDebugExtendedField |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugExtendedField interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eedb327e19d012c653a9a5411c0ba7f1924cb369
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a503ff99542215ba5922feb860fc04cd047ce287
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869669"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
-扩展字段的可用于支持托管的代码的泛型的类型。  
+扩展了可用于支持托管的代码泛型的字段的类型。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,12 +31,12 @@ IDebugExtendedField : IDebugField
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|检索指定的扩展的字段类型。|  
-|[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|确定是否字段表示封闭的类型。|  
+|[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|检索指定扩展的字段类型。|  
+|[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|确定是否该字段表示封闭的类型。|  
   
 ## <a name="requirements"></a>要求  
- 标头： Sh.h  
+ 标头：Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll

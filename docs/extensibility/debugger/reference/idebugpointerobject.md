@@ -1,9 +1,6 @@
 ---
-title: IDebugPointerObject |Microsoft 文档
-ms.custom: ''
+title: IDebugPointerObject |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPointerObject
@@ -15,39 +12,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be877cc57bfac0d4fe083f3a3101c26c2f2306cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea5c75c1fb2737459107b21652aa43b8ea38e526
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117343"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844690"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，已弃用这种方式实施表达式计算器。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  此接口表示的指针对象。  
   
 ## <a name="syntax"></a>语法  
   
 ```  
-IDebugPointerObject : IDebugObject  
+IDebugPointerObject : IDebugObject  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 表达式计算器实现此接口可表示的指针对象。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 表达式计算器实现此接口来表示指针对象。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口可以通过使用来获取此接口[QueryInterface](/cpp/atl/queryinterface)如果`IDebugObject`表示的指针。  
+ [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口可以获取此接口通过[QueryInterface](/cpp/atl/queryinterface)如果`IDebugObject`表示的指针。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
- 除了从继承的方法[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)、`IDebugPointerObject`接口公开以下方法。  
+ 除了继承的方法之外[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)，则`IDebugPointerObject`接口公开以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[取消引用](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|获取指向接口的对象。|  
-|[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|获取接口指向作为一系列连续字节的值。|  
-|[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|设置接口指向从一系列连续字节的值。|  
+|[Dereference](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|获取该接口所指向的对象。|  
+|[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|获取该接口指向作为一系列连续字节的值。|  
+|[SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)|设置该接口指向一系列连续字节中的值。|  
   
 ## <a name="remarks"></a>备注  
  表达式计算器使用此接口来表示分析树中的指针。  
@@ -55,10 +52,10 @@ IDebugPointerObject : IDebugObject
 ## <a name="requirements"></a>要求  
  标头： ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
- [表达式评估接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+## <a name="see-also"></a>请参阅  
+ [表达式计算接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

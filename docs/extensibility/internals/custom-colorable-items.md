@@ -1,9 +1,6 @@
 ---
 title: 自定义可着色项 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 037cd62bea7051e8341101a888bd428b7f78e828
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5777c5bf6340ac25888bf4a8446c61a68757c6fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989745"
 ---
 # <a name="custom-colorable-items"></a>自定义可着色项
 您可以实现自定义可着色项为语言服务的一部分，着色，例如关键字和注释，覆盖类型的列表。  
@@ -72,4 +69,4 @@ ms.locfileid: "49878788"
  [自定义编辑器中的语法着色](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [旧版语言服务中的语法着色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [实现语法着色](../../extensibility/internals/implementing-syntax-coloring.md)   
- [如何： 使用内置的可着色项](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+ [如何：使用内置的可着色项](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

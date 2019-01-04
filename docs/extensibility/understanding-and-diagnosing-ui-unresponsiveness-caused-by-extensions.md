@@ -1,21 +1,18 @@
 ---
-title: 了解和诊断 UI 响应引起扩展 |Microsoft 文档
-ms.custom: ''
+title: 了解和诊断由扩展导致 UI 无响应 |Microsoft Docs
 ms.date: 01/26/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: ac962df3bc72d886ffc6d5d495d115abe60d9895
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 461818080afadfde5b378174ecd12775e35c801f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963307"
 ---
-# <a name="understanding-and-diagnosing-ui-unresponsiveness-caused-by-extensions"></a>了解和诊断引起的扩展 UI 停止响应
+# <a name="understanding-and-diagnosing-ui-unresponsiveness-caused-by-extensions"></a>了解和诊断由扩展导致 UI 无响应
 
 若要完成。

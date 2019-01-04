@@ -1,9 +1,6 @@
 ---
-title: 如何： 导入母版页或主题 |Microsoft Docs
-ms.custom: ''
+title: 如何：导入母版页或主题 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 116ab878d8591fb15bfbb319b2c1d79952fbd0e7
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7341d12571143d2725b3dd05e5d8e9f03c7d9125
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118781"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952859"
 ---
-# <a name="how-to-import-a-master-page-or-theme"></a>如何： 导入母版页或主题
-  您可以为页在 SharePoint 站点上一致的外观通过创建和使用母版页和主题。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不提供模板，这些元素，但可以在 SharePoint Designer 中创建它们，然后将它们导入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关详细信息，请参阅[构建基块： 页面和用户界面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 网站上。  
+# <a name="how-to-import-a-master-page-or-theme"></a>如何：导入母版页或主题
+  您可以为页在 SharePoint 站点上一致的外观通过创建和使用母版页和主题。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不提供模板，这些元素，但可以在 SharePoint Designer 中创建它们，然后将它们导入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关详细信息，请参阅[构建基块：页面和用户界面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 网站上。  
   
 ### <a name="to-import-a-master-page-or-theme"></a>若要导入母版页或主题  
   
@@ -51,7 +48,7 @@ ms.locfileid: "37118781"
 8.  如果添加了母版页，更改其**部署冲突解决方法**将设置为**自动**中模块的属性。  
   
     > [!NOTE]  
-    >  如果主页面的名称与现有的主页面标记为默认母版页或自定义母版页的名称相同，则可能发生错误。 有关如何解决此问题的信息，请参阅[演练： 导入自定义母版页和包含图像的站点页面](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)。  
+    >  如果主页面的名称与现有的主页面标记为默认母版页或自定义母版页的名称相同，则可能发生错误。 有关如何解决此问题的信息，请参阅[演练：导入自定义母版页和包含图像的站点页面](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)。  
   
 9. 在模块中，打开*Elements.xml*。  
   
@@ -97,4 +94,3 @@ ms.locfileid: "37118781"
  [从现有的 SharePoint 网站导入项](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [为 SharePoint 创建页](../sharepoint/creating-pages-for-sharepoint.md)   
  [使用模块包括解决方案中的文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
-  

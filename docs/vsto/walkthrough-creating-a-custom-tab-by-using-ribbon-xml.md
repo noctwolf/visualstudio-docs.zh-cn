@@ -1,9 +1,6 @@
 ---
-title: 演练： 使用功能区 XML 创建自定义选项卡
-ms.custom: ''
+title: 演练：使用功能区 XML 创建自定义选项卡
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 45e35b7cf97a6b9a1f310149817f8e79956a47aa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: dda5c2721d9932afd20c0b02f4a82bbbde7116ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955222"
 ---
-# <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>演练： 使用功能区 XML 创建自定义选项卡
+# <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>演练：使用功能区 XML 创建自定义选项卡
   本演练演示如何通过创建自定义功能区选项卡**功能区 (XML)** 项。  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
@@ -55,7 +52,7 @@ ms.locfileid: "38808919"
   
 1.  创建**Word 外接程序**项目名称**MyRibbonAddIn**。  
   
-     有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此时将打开**ThisAddIn.cs**或**ThisAddIn.vb**代码文件，并添加**MyRibbonAddIn**项目到**解决方案资源管理器**。  
   
@@ -155,11 +152,9 @@ ms.locfileid: "38808919"
   
 -   创建自定义操作窗格。 有关详细信息，请参阅[操作窗格概述](../vsto/actions-pane-overview.md)。  
   
--   使用 Outlook 窗体区域自定义 Microsoft Office Outlook 的 UI。 有关详细信息，请参阅[演练： 设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)。  
+-   使用 Outlook 窗体区域自定义 Microsoft Office Outlook 的 UI。 有关详细信息，请参见[演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [功能区概述](../vsto/ribbon-overview.md)   
  [功能区 XML](../vsto/ribbon-xml.md)   
- [演练： 使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  
+ [演练：使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  

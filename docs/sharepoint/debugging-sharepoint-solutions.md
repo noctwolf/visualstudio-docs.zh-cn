@@ -1,9 +1,6 @@
 ---
 title: 调试 SharePoint 解决方案 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.WebConfigModificationDialog
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6f53ca7f1a5e449d47a30a32967072f7220c159a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 04c80b0986d9a5bfa85a69994f96b56db337634f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903148"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892882"
 ---
 # <a name="debug-sharepoint-solutions"></a>调试 SharePoint 解决方案
   您可以通过使用调试 SharePoint 解决方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 当开始调试，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将项目文件部署到 SharePoint 服务器，然后在 Web 浏览器中打开 SharePoint 站点的实例。 以下各节说明如何调试 SharePoint 应用程序中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -153,4 +150,3 @@ ms.locfileid: "49903148"
   
 ## <a name="see-also"></a>请参阅
  [对 SharePoint 解决方案进行故障排除](../sharepoint/troubleshooting-sharepoint-solutions.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: 开发旧版语言服务 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - vs.vsip.LangServWiz.langtoks
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d92c07742dcc4433aa96071d655f58d938a1f80
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c6bcf4c6993a37ec58d288d2c31f7c4cc3ecab9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845781"
 ---
 # <a name="develop-a-legacy-language-service"></a>开发旧版语言服务
 此部分链接到主题可帮助您创建旧版语言服务。  
@@ -50,7 +47,7 @@ ms.locfileid: "39497825"
  [用于调试的语言服务支持](../../extensibility/internals/language-service-support-for-debugging.md)  
  介绍如何语言服务能够提供功能，可支持调试程序。  
   
- [清单： 创建旧版语言服务](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
+ [清单：创建旧版语言服务](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
  提供用于创建和集成核心编辑器的语言服务的分步说明。  
   
 ## <a name="related-sections"></a>相关章节  
@@ -63,8 +60,8 @@ ms.locfileid: "39497825"
  [旧版语言服务中的参数信息](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  介绍如何为重载的函数和方法提供方法的提示。  
   
- [如何： 隐藏的文本提供旧版语言服务中的支持](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [如何：提供旧版语言服务中的隐藏的文本支持](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  介绍隐藏的文本区域的目的，并提供有关如何实现隐藏的文本区域的说明。  
   
- [如何： 提供旧版语言服务中的展开大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [如何：提供旧版语言服务中的展开大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  介绍扩展对你超出支持的语言的大纲显示支持的两个选项*折叠到定义*命令。

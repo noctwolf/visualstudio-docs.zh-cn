@@ -1,9 +1,6 @@
 ---
 title: 设计器的初始化和元数据配置 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58f103ae1dcf445c5bdfe322eeea7a88a7b25683
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5dae44a2fced40894003d2f739af1147b293494a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885393"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>设计器的初始化和元数据配置
 与设计器或设计器组件关联的元数据和筛选器特性的操作提供了应用程序定义将哪些工具由特定的设计器，以处理不同的机制<xref:System.Type>对象 （如数据结构类或图形实体），在设计器不可用时，以及如何配置 Visual Studio IDE 以支持在设计器 (对于实例这**工具箱**类别或选项卡上的可用)。  

@@ -1,6 +1,5 @@
 ---
 title: Icon 元素 （Visual Studio 模板） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40febe9ea2ac45011499dfb38f49fbaa85aa1958
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: db50dd4fa62bb1d6a3947d0c7091c94b2138efff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53560695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868074"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon 元素 （Visual Studio 模板）
 指定的路径和用作中显示该图标的图像文件的文件名**新的项目**或**添加新项**对话框中的，为模板。  

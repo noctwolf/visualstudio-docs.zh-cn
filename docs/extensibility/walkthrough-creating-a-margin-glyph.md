@@ -1,9 +1,6 @@
 ---
-title: 演练： 创建边距字形 |Microsoft Docs
-ms.custom: ''
+title: 演练：创建边缘字形 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ac8d70c401d543afe73ac14d6f8617e5f375482
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ce1d3449c786211c90df52b0633c84cf2a491769
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497812"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851347"
 ---
-# <a name="walkthrough-create-a-margin-glyph"></a>演练： 创建边距字形
+# <a name="walkthrough-create-a-margin-glyph"></a>演练：创建边缘字形
 可以使用自定义编辑器扩展自定义编辑器边距的外观。 本演练中放入自定义标志符号指示器边距时代码注释中显示单词"todo"。  
   
 ## <a name="prerequisites"></a>系统必备  
@@ -28,7 +25,7 @@ ms.locfileid: "39497812"
   
 ## <a name="create-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`TodoGlyphTest`。  
+1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `TodoGlyphTest`。  
   
 2.  添加编辑器分类器项目项。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -39,7 +36,7 @@ ms.locfileid: "39497812"
   
 ### <a name="to-define-the-glyph"></a>若要定义标志符号  
   
-1.  添加一个类文件并将其命名`TodoGlyphFactory`。  
+1.  添加一个类文件并将其命名为 `TodoGlyphFactory`。  
   
 2.  通过使用声明中添加以下代码。  
   

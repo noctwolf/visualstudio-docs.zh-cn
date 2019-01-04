@@ -1,17 +1,12 @@
 ---
 title: 提供打包和部署项目项中的信息 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SafeControlEntries
 - VS.SharePointTools.Project.ProjectOutputReference
 - VS.SharePointTools.Project.FeatureProperties
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -29,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4ce9f864307ffaee4bce51a565e9ad1726d043d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5ec29871cc6e5062f2d44fb8938872b5f0531f2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893294"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843016"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>提供在项目项中的打包和部署信息
   中的所有 SharePoint 项目项[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]具有可用于项目部署到 SharePoint 时提供额外的数据的属性。 这些属性如下所示：  
@@ -65,7 +60,7 @@ ms.locfileid: "49893294"
  若要将功能属性添加直接到功能文件 (*.feature*)，调用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 对象模型方法<xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>。 如果使用此方法，请注意，在功能属性中添加相同的功能属性值相同的规则也适用于直接添加到功能文件的属性。  
   
 ## <a name="feature-receiver"></a>功能接收器
- 功能接收器是对项目项发生某些事件时执行的代码包含的功能。 例如，可以定义该功能是安装、 激活，或升级时执行的功能接收器。 添加功能接收器是将其添加直接向一项功能，如中所述的一种方法[演练： 添加功能事件接收器](../sharepoint/walkthrough-add-feature-event-receivers.md)。 另一种方法是一个功能接收器类名称和中的程序集引用**功能接收器**属性。  
+ 功能接收器是对项目项发生某些事件时执行的代码包含的功能。 例如，可以定义该功能是安装、 激活，或升级时执行的功能接收器。 添加功能接收器是将其添加直接向一项功能，如中所述的一种方法[演练：添加功能事件接收器](../sharepoint/walkthrough-add-feature-event-receivers.md)。 另一种方法是一个功能接收器类名称和中的程序集引用**功能接收器**属性。  
   
 ### <a name="direct-method"></a>直接方法
  当直接将功能接收器添加到一项功能时，代码文件将位于下**功能**在解决方案资源管理器中的节点。 生成 SharePoint 解决方案时，该代码将编译为程序集，并将部署到 SharePoint。 默认情况下，功能属性**接收器程序集**并**接收器类**引用类名称和程序集。  
@@ -75,7 +70,7 @@ ms.locfileid: "49893294"
   
  在解决方案生成时间，该功能的功能中的接收方属性值和其项目合并在一起以 SharePoint 解决方案的功能清单中设置的功能元素的 ReceiverAssembly 和 receiverclass 的属性特性 (*.wsp*) 文件。 因此，如果同时指定了项目项和功能的程序集和类名属性值，则项目项和功能属性值必须匹配。 如果值不匹配，将收到验证错误。 如果您希望项目项引用的功能接收器程序集不是其功能使用，将其移到另一项功能。  
   
- 如果引用已不在服务器的功能接收器程序集，还必须在包中包括的程序集文件本身[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]不会为您添加它。 在部署此功能时，程序集文件复制到系统的[!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)]或 SharePoint 物理目录的 Bin 文件夹。 有关详细信息，请参阅如何：[如何： 添加和删除其他程序集](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。  
+ 如果引用已不在服务器的功能接收器程序集，还必须在包中包括的程序集文件本身[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]不会为您添加它。 在部署此功能时，程序集文件复制到系统的[!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)]或 SharePoint 物理目录的 Bin 文件夹。 有关详细信息，请参阅如何：[如何：添加和删除其他程序集](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。  
   
  有关功能接收器的详细信息，请参阅[功能事件接收器](http://go.microsoft.com/fwlink/?LinkID=169574)并[功能事件](http://go.microsoft.com/fwlink/?LinkID=169575)。  
   
@@ -84,14 +79,14 @@ ms.locfileid: "49893294"
   
  项目输出引用通常是程序集，但在某些情况下 （例如 Silverlight 项目） 可以是其他文件类型。  
   
- 有关详细信息，请参阅[如何： 添加项目输出引用](../sharepoint/how-to-add-a-project-output-reference.md)。  
+ 有关更多信息，请参见[如何：添加项目输出引用](../sharepoint/how-to-add-a-project-output-reference.md)。  
   
 ## <a name="safe-control-entries"></a>安全控件项
- SharePoint 提供了一种安全机制，称为安全控件项，以限制到特定控件的不受信任用户的访问。 根据设计，SharePoint 允许不受信任的用户上传并在 SharePoint 服务器上创建 ASPX 页。 若要防止这些用户将不安全代码添加到 ASPX 页，SharePoint 会限制其访问权限*安全控件*。 安全控件是 ASPX 控件和指定为安全的 Web 部件，并且由你的站点上的任何用户。 有关详细信息，请参阅[步骤 4： 将 Web 部件添加到安全控件列表](http://go.microsoft.com/fwlink/?LinkID=171014)。  
+ SharePoint 提供了一种安全机制，称为安全控件项，以限制到特定控件的不受信任用户的访问。 根据设计，SharePoint 允许不受信任的用户上传并在 SharePoint 服务器上创建 ASPX 页。 若要防止这些用户将不安全代码添加到 ASPX 页，SharePoint 会限制其访问权限*安全控件*。 安全控件是 ASPX 控件和指定为安全的 Web 部件，并且由你的站点上的任何用户。 有关详细信息，请参阅[步骤 4:将 Web 部件添加到安全控件列表](http://go.microsoft.com/fwlink/?LinkID=171014)。  
   
  中的每个 SharePoint 项目项[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]具有一个名为属性**安全控件项**具有两个布尔子属性：**安全**并**安全应对脚本**。 “安全”属性指定不受信任的用户是否能访问控件。 安全应对脚本属性指定是否不受信任的用户可以查看和更改控件的属性。  
   
- 安全控件项集进行引用。 通过输入项目项中的安全控件项添加到项目的程序集**安全控件项**属性。 但是，您还可以向项目的程序集通过添加安全控件项**高级**选项卡**包设计器**时向包中添加其他程序集。 有关详细信息，请参阅[如何： 将控件标记为安全控件](../sharepoint/how-to-mark-controls-as-safe-controls.md)或[Web 部件程序集注册为安全控件](http://go.microsoft.com/fwlink/?LinkID=171013)。  
+ 安全控件项集进行引用。 通过输入项目项中的安全控件项添加到项目的程序集**安全控件项**属性。 但是，您还可以向项目的程序集通过添加安全控件项**高级**选项卡**包设计器**时向包中添加其他程序集。 有关更多信息，请参见[如何：将控件标记为安全控件](../sharepoint/how-to-mark-controls-as-safe-controls.md)或[Web 部件程序集注册为安全控件](http://go.microsoft.com/fwlink/?LinkID=171013)。  
   
 ### <a name="xml-entries-for-safe-controls"></a>XML 项的安全控件
  时安全控件项添加到项目项或对项目的程序集时，引用写入包清单采用以下格式：  

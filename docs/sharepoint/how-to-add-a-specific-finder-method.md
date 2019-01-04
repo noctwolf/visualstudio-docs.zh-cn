@@ -1,13 +1,8 @@
 ---
-title: 如何： 添加特定的 Finder 方法 |Microsoft Docs
-ms.custom: ''
+title: 如何：添加特定的 Finder 方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,21 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8005728d29c38e32d55f01e42d2666c69112b3f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 163badc38ba4037729e29d013c98e0b733c9eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886482"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913460"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>如何： 添加特定的 Finder 方法
+# <a name="how-to-add-a-specific-finder-method"></a>如何：添加特定的 Finder 方法
   可以通过创建返回单个实体实例*特定的 Finder*方法。 在用户在业务数据 web 部件或外部列表中选择一个实体时，业务数据连接 (BDC) 服务将执行特定的 Finder 方法。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-a-specific-finder-method"></a>若要创建特定的 Finder 方法
   
 1. 上**BDC 设计器**，选择实体。  
   
-    了解如何将实体添加到**BDC 设计器**在 Visual Studio 中，请参阅[如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
+    了解如何将实体添加到**BDC 设计器**在 Visual Studio 中，请参阅[如何：将实体添加到模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
   
 2. 在菜单栏上依次选择**视图** > **其他 Windows**， **BDC 方法详细信息**。  
   
@@ -60,7 +55,7 @@ ms.locfileid: "49886482"
   
 4. 打开 Visual Studio**属性**窗口。  
   
-5. 将返回参数的类型描述符配置为实体类型描述符。 有关如何创建实体类型描述符的信息，请参阅[如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
+5. 将返回参数的类型描述符配置为实体类型描述符。 有关如何创建实体类型描述符的信息，请参阅[如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
    > [!NOTE]  
    >  您无需执行此步骤，如果为实体添加查找程序方法。 Visual Studio 使用查找程序方法中定义的类型描述符。  
@@ -92,11 +87,10 @@ ms.locfileid: "49886482"
   
 ## <a name="see-also"></a>请参阅
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [如何： 添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何： 添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)   
- [如何： 添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)   
- [如何： 添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何：添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)   
+ [如何：添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)   
+ [如何：添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 向方法中添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定义方法实例](../sharepoint/how-to-define-a-method-instance.md)  
-  
+ [如何：将参数添加到方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定义方法实例](../sharepoint/how-to-define-a-method-instance.md)  

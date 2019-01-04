@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70bacc7e181c27efd14b613c20af29e850db321a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865957"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925545"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>规则在模型内部传播更改
 可以创建将更改传播从一个元素到另一个可视化和建模 SDK (VMSDK) 中的存储规则。 在存储区中的任何元素更改时，规则计划执行，通常在最外部事务提交时。 有不同类型的规则对于不同类型的事件，如添加一个元素，或删除它。 可以将规则附加到特定类型的元素、 形状或关系图。 许多内置功能由规则定义： 例如，规则可确保在模型更改时，更新关系图。 可以添加自己的规则来自定义您的特定于域的语言。
@@ -134,7 +133,7 @@ namespace ExampleNamespace
   | 基类 | 触发器 |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | 添加元素、 链接或形状。<br /><br /> 用于检测新关系，除了新元素。 |
-  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | 更改域属性值。 该方法的参数提供的旧的和新值。<br /><br /> 对于形状，触发此规则时内置`AbsoluteBounds`属性更改，如果移动形状。<br /><br /> 在许多情况下，它是更方便地重写`OnValueChanged`或`OnValueChanging`属性处理程序中。 更改立即之前和之后调用这些方法。 与此相反，该规则通常在事务结束时运行。 有关详细信息，请参阅[域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。 **注意：** 创建或删除链接时，将不会触发此规则。 相反，编写`AddRule`和一个`DeleteRule`域关系。 |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | 更改域属性值。 该方法的参数提供的旧的和新值。<br /><br /> 对于形状，触发此规则时内置`AbsoluteBounds`属性更改，如果移动形状。<br /><br /> 在许多情况下，它是更方便地重写`OnValueChanged`或`OnValueChanging`属性处理程序中。 更改立即之前和之后调用这些方法。 与此相反，该规则通常在事务结束时运行。 有关详细信息，请参阅[域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。 **注意：** 创建或删除链接时，则不会触发此规则。 相反，编写`AddRule`和一个`DeleteRule`域关系。 |
   | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | 当某个元素或链接是即将被删除时触发。 该属性 ModelElement.IsDeleting 事务结束时才为 true。 |
   | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | 已删除的元素或链接时执行。 已执行的所有其他规则，包括 DeletingRules 后执行规则。 ModelElement.IsDeleting 为 false，并且 ModelElement.IsDeleted 为 true。 若要允许后续撤销，该元素并不实际删除从内存中，但从 Store.ElementDirectory 中删除。 |
   | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | 元素是从一个存储分区移动到另一个。<br /><br /> （请注意这不相关的图形形状的位置。） |

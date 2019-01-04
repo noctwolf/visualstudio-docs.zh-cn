@@ -1,9 +1,6 @@
 ---
-title: 旧语言服务可扩展性 |Microsoft 文档
-ms.custom: ''
+title: 旧版语言服务扩展性 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services
@@ -14,42 +11,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb7d8165060fa3b9a6445ad71a977c79414056f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0e5dbb6e5b592a166c5110623886534967613d95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853497"
 ---
-# <a name="legacy-language-service-extensibility"></a>旧语言服务可扩展性
-语言服务用于编辑在 IDE 中的源代码提供特定于语言的支持。  
+# <a name="legacy-language-service-extensibility"></a>旧版语言服务扩展性
+语言服务提供用于编辑在 IDE 中的源代码的特定于语言的支持。  
   
- 旧语言服务实现的 VSPackage，一部分但实现语言服务功能的新方法是使用 MEF 扩展。 若要了解有关实现语言服务的新方式的详细信息，请参阅[编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。  
+ 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现语言服务的新方法的详细信息，请参阅[编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。  
   
- 本部分讨论的结构和旧语言服务实现。  
+ 本部分讨论的结构和旧版语言服务实现。  
   
 ## <a name="in-this-section"></a>本节内容  
  [迁移旧版语言服务](../../extensibility/internals/migrating-a-legacy-language-service.md)  
- 说明如何更新语言服务从 Visual Studio 2008 的最新版本。  
+ 介绍如何更新到最新版本从 Visual Studio 2008 语言服务。  
   
  [旧版语言服务基础知识](../../extensibility/internals/legacy-language-service-essentials.md)  
  提供有关如何开发语言服务集成到 Visual Studio 中，一种编程语言的重要信息。  
   
  [开发旧版语言服务](../../extensibility/internals/developing-a-legacy-language-service.md)  
- 提供可帮助你创建语言服务主题的链接。  
+ 提供可帮助您创建语言服务主题的链接。  
   
  [在旧版语言服务中进行语法着色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
- 提供有关支持语法突出显示语言服务中的信息。  
+ 提供了支持语法突出显示语言服务中的信息。  
   
- [实现旧语言服务](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
- 提供有关如何使用托管的包框架 (MPF) 在托管代码中实现齐全语言服务的信息。  
+ [实现旧版语言服务](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
+ 提供有关如何使用托管的包框架 (MPF) 在托管代码中实现完备语言服务的信息。  
   
  [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)  
- 描述库和工具，可帮助你浏览的符号在 IDE 中的树视图。  
+ 介绍了库和工具，您可以浏览在 IDE 中的符号的树视图。  
   
 ## <a name="related-sections"></a>相关章节  
  [编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)  
  概述 Visual Studio 编辑器。  
   
  [用于调试的语言服务支持](../../extensibility/internals/language-service-support-for-debugging.md)  
- 提供有关信息和链接到 Visual Studio 调试 SDK，其中包含需要创建和自定义使用调试程序的调试器组件的信息。
+ 提供有关的信息和链接到 Visual Studio 调试 SDK，其中包含创建和自定义调试器组件用于调试的程序所需的信息。

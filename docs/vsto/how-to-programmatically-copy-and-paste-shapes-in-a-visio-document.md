@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式复制和粘贴 Visio 文档中的形状
-ms.custom: ''
+title: 如何：以编程方式复制和粘贴 Visio 文档中的形状
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0028b11899e05adde1dd1b5483b71d2c48101db
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: a7994d605d22b38b64219a384e5afb0b002ff755
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671490"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856483"
 ---
-# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>如何： 以编程方式复制和粘贴 Visio 文档中的形状
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>如何：以编程方式复制和粘贴 Visio 文档中的形状
   你可以以编程方式复制文档中某一页上的形状，并将其粘贴到同一文档中新的一页。 你可以选择将其粘贴到默认位置（活动窗口的中央），或将其粘贴到与在其原始页相同的坐标位置。  
   
 ## <a name="copy-and-paste-shapes"></a>复制和粘贴形状  
@@ -52,6 +49,4 @@ ms.locfileid: "50671490"
  [Visio 解决方案](../vsto/visio-solutions.md)   
  [Visio 对象模型概述](../vsto/visio-object-model-overview.md)   
  [使用 Visio 形状](../vsto/working-with-visio-shapes.md)   
- [如何： 以编程方式向 Visio 文档添加形状](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
-  
-  
+ [如何：以编程方式向 Visio 文档添加形状](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  

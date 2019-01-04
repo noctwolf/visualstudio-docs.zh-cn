@@ -1,9 +1,6 @@
 ---
-title: 如何： 创建 Atom 馈送专用库 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建 Atom 馈送专用库 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Atom feed, VSIX private galleries
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3f85c2568e9066384d65027ff69e8cd4c16c13e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fc3aef8605f5c3343bcc6aca86513d631cace35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941685"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何： 创建 Atom 馈送专用库
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何：创建 Atom 馈送专用库
 您可以创建 Atom (RSS) 源到 intranet 位置包含扩展并添加到的源**扩展和更新**作为专用库。 有关详细信息，请参阅[专用库](../extensibility/private-galleries.md)。  
   
 ## <a name="create-an-atom-feed"></a>创建 Atom 馈送  

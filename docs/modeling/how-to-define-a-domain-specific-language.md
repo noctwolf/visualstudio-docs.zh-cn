@@ -17,18 +17,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 7e99e37f99d067356d24e2808754696dc233e50f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959487"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定义域特定语言
 若要定义特定于域的语言 (DSL)，请从模板创建 Visual Studio 解决方案。 解决方案的重要组成部分是 DSL 定义关系图，它存储在 DslDefinition.dsl 中。 DSL 定义将定义 DSL 的类和形状。 在进行修改并将所做修改添加到这些元素后，可以添加程序代码以更详细地自定义 DSL。
 
-如果你是 Dsl，我们建议您通过**DSL 工具实验室**，可在此站点中找到：[初学者和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+如果你是 Dsl，我们建议您通过**DSL 工具实验室**，可以在此站点中找到：[初学者和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> 选择模板解决方案
  若要定义 DSL，必须安装以下组件：
@@ -170,8 +169,8 @@ ms.locfileid: "50967527"
 |元素的显示方式|父（嵌入）类|DSL 解决方案模板中的示例|
 |-|-|-|
 |关系图上的形状。<br /><br /> 泳道。|DSL 的根类。|最小语言。<br /><br /> 任务流：Actor 类。|
-|泳道中的形状。|显示为泳道的元素的域类。|任务流：Task 类。|
-|形状中的列表中的项，其中项会随着容器的删除被一并删除。<br /><br /> 形状边缘上的端口。|映射到容器形状的域类。|类图：Attribute 类。<br /><br /> 组件图：Port 类。|
+|泳道中的形状。|显示为泳道的元素的域类。|任务流：任务类。|
+|形状中的列表中的项，其中项会随着容器的删除被一并删除。<br /><br /> 形状边缘上的端口。|映射到容器形状的域类。|类图：特性类。<br /><br /> 组件图：端口类。|
 |列表中的项，删除容器时并不会删除项。|DSL 的根类。<br /><br /> 该列表将显示引用链接。||
 |不直接显示。|由类作为一部分所组成的类。||
 
@@ -187,7 +186,7 @@ ms.locfileid: "50967527"
 >  嵌入与继承不同。 嵌入关系中的子级不会从其父级继承功能。
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>将域属性添加到每个域类
- 域属性存储值。 示例为：Name、Title、Publication Date。
+ 域属性存储值。 示例包括：名称、 标题、 发布日期。
 
  单击**域属性**在类中，按 ENTER 键，然后键入属性的名称。 域属性的默认类型是 String。 如果你想要更改的类型，选择域属性，并设置**类型**中**属性**窗口。 如果所需的类型不是在下拉列表中，请参阅[添加属性类型](#addTypes)。
 
@@ -409,7 +408,7 @@ ms.locfileid: "50967527"
 
    在首次测试连接符后，你可能想要调整它的某些属性并添加一些更高级的功能。 有关详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
-## <a name="compartments"></a> 定义包含列表的形状： 隔离舱形状
+## <a name="compartments"></a> 定义包含列表的：隔离舱形状
  隔离舱形状包含一个或多个项列表。 例如，在“音乐库”DSL 中，可以使用隔离舱形状来表示音乐 Album。 在每个 Album 中，存在一个 Song 列表。
 
  ![隔离舱形状](../modeling/media/compartmentshape.png)
@@ -605,7 +604,7 @@ ms.locfileid: "50967527"
 
  因此请注意，更改 DSL 定义中的某些关系后，如果你保存了该定义或“转换所有模板”，则收到错误报告可能很正常。 大多数错误都易于修复。 双击错误报告来查看错误的位置。
 
- 另请参阅[如何： 更改域特定语言的 Namespace](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。
+ 另请参阅[如何：更改域特定语言的 Namespace](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。
 
 ## <a name="trouble"></a> 故障排除
  下表列出了在设计 DSL 时遇到的一些最常见问题，以及其解决方案的建议。 上提供了更多建议[可视化工具扩展性论坛](http://go.microsoft.com/fwlink/?LinkId=186074)。
@@ -619,8 +618,8 @@ ms.locfileid: "50967527"
 | 已创建域类，但无法在语言资源管理器中创建实例。 | 每个域类（根除外）都必须是嵌入关系的目标。 |
 | 在 DSL 的资源管理器中，只显示元素及其类型名称。 | 在 DSL 定义中，选择域属性的类并在属性窗口中，设置**元素名称**为 true。 |
 | 始终在 XML 编辑器中打开 DSL。 | 发生这种情况是由于在读取文件的同时出现一个错误。 但是，即使在修复该错误后，也必须显式将该编辑器重置为 DSL 设计器。<br /><br /> 右键单击项目项，单击**打开**，然后选择 * YourLanguage ***设计器 （默认值）**。 |
-| 在更改程序集名称后，不会显示 DSL 的工具箱。 | 检查并更新**DslPackage\GeneratedCode\Package.tt**有关详细信息，请参阅[如何： 更改域特定语言的 Namespace](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。 |
-| 不会显示 DSL 的工具箱，但并未更改程序集名称。<br /><br /> 或者，显示一个报告加载扩展失败的消息框。 | 重置实验实例，并重新生成解决方案。<br /><br /> 1.在 Windows 开始菜单下**所有程序**，展开[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]，然后**工具**，然后单击**重置 Microsoft Visual Studio 实验实例**。<br />2.上**构建**菜单上，单击**重新生成解决方案**。 |
+| 在更改程序集名称后，不会显示 DSL 的工具箱。 | 检查并更新**DslPackage\GeneratedCode\Package.tt**有关详细信息，请参阅[如何：更改域特定语言的 Namespace](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。 |
+| 不会显示 DSL 的工具箱，但并未更改程序集名称。<br /><br /> 或者，显示一个报告加载扩展失败的消息框。 | 重置实验实例，并重新生成解决方案。<br /><br /> 1.在 Windows 开始菜单下**所有程序**，展开[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]，然后**工具**，然后单击**重置 Microsoft Visual Studio 实验实例**。<br />2.在“生成”菜单上，单击“重新生成解决方案”。 |
 
 ## <a name="see-also"></a>请参阅
 

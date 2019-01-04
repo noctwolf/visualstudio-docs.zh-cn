@@ -1,9 +1,6 @@
 ---
-title: 演练： 分析 SharePoint 应用程序 |Microsoft Docs
-ms.custom: ''
+title: 演练：分析 SharePoint 应用程序 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e5fb918761cc8e8d68aaaaa5e6a420bb6758a1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913812"
 ---
-# <a name="walkthrough-profile-a-sharepoint-application"></a>演练： 分析 SharePoint 应用程序
+# <a name="walkthrough-profile-a-sharepoint-application"></a>演练：分析 SharePoint 应用程序
   本演练演示在 Visual Studio 中如何使用分析工具优化 SharePoint 应用程序的性能。 此示例应用程序是 SharePoint 功能事件接收器，其中包含降低功能事件接收器性能的空闲循环。 Visual Studio 探查器，可以找到和消除开销最大 （最慢执行） 项目的一部分，也称为*热路径*。  
   
  本演练演示了下列任务：  
@@ -280,4 +277,3 @@ ms.locfileid: "49852736"
  [性能会话概述](/visualstudio/profiling/performance-session-overview)   
  [性能分析初学者指南](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
  [查找与 Visual Studio Profiler 的应用程序瓶颈](http://go.microsoft.com/fwlink/?LinkID=137266)  
-  

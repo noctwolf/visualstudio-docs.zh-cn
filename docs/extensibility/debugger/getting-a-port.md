@@ -1,9 +1,6 @@
 ---
 title: 获取端口 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - ports, getting
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39aa81216ad3b6e98162c68136734589b008873b
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: bedde155fdfa37ea1616e2f79e5dba54a449dd74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645076"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988428"
 ---
 # <a name="get-a-port"></a>获取端口
 端口表示进程正在其运行的计算机的连接。 该计算机可以是本地计算机或远程计算机 (这可能可能运行非基于 Windows 的操作系统，请参阅[端口](../../extensibility/debugger/ports.md)有关详细信息)。  

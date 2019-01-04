@@ -1,9 +1,6 @@
 ---
 title: 编辑器导入 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ede17217dbac62bcc0086e6f4e5afca0cf9e0a0
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: cffc59c0bcaed2797b5f2548a47c067d04da56ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637208"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893926"
 ---
 # <a name="editor-imports"></a>编辑器导入
 您可以导入编辑器服务、 工厂，以及为您的扩展插件提供对核心编辑器的不同类型的访问权限的代理的数。 例如，您可以导入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>以提供<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>为给定的内容类型。 （此导航器允许文本缓冲区上执行不同类型的搜索。）  
@@ -45,19 +42,19 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  使用导入更多示例，请参阅以下演练：  
   
- [演练： 创建边距字形](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [演练：创建边缘字形](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [演练： 自定义文本视图](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [演练：自定义文本视图](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [演练： 突出显示文本](../extensibility/walkthrough-highlighting-text.md)  
+ [演练：突出显示文本](../extensibility/walkthrough-highlighting-text.md)  
   
- [演练： 显示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [演练：显示快速信息工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [演练： 显示签名帮助](../extensibility/walkthrough-displaying-signature-help.md)  
+ [演练：显示签名帮助](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [演练：显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [演练： 显示灯泡建议](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
+ [演练：显示灯泡建议](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
   
 ## <a name="import-the-service-provider"></a>导入的服务提供程序  
  此外可以导入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>（位于程序集 Microsoft.VisualStudio.Shell.Immutable.10.0） 以相同方式获取对 Visual Studio 服务的访问：  
@@ -67,9 +64,9 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- 请参阅[演练： 通过编辑器扩展访问 DTE 对象](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md)有关详细信息。  
+ 请参阅[演练：从编辑器扩展访问 DTE 对象](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md)有关详细信息。  
   
-## <a name="services"></a>服务  
+## <a name="services"></a>Services  
  编辑器服务是通常单一实体提供服务并在多个组件之间共享。  
   
 |导入|提供了|  

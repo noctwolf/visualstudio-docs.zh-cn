@@ -1,9 +1,6 @@
 ---
 title: 实现自定义类别和显示项 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 850e4396c11cbd83f578304eed78a25042185a25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 178cd43486a9553f70853c9df0e106ac3ece78f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894633"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908431"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>实现自定义类别和显示项
 VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]通过自定义类别和显示项的集成的开发环境 (IDE)。
@@ -57,7 +54,7 @@ VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](.
   |name|类型|数据|描述|
   |----------|----------|----------|-----------------|
   |类别|REG_SZ|GUID|创建标识类别的 GUID。|
-  |Package|REG_SZ|GUID|支持类别的 VSPackage 服务的 GUID。|
+  |package|REG_SZ|GUID|支持类别的 VSPackage 服务的 GUID。|
 
   在注册表中指定的服务必须提供的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>相应类别。
 
@@ -72,7 +69,7 @@ VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](.
   |name|类型|数据|描述|
   |----------|----------|----------|-----------------|
   |类别|REG_SZ|GUID|创建以确定组的 GUID。|
-  |Package|REG_SZ|GUID|支持类别的服务的 GUID。|
+  |package|REG_SZ|GUID|支持类别的服务的 GUID。|
 
   在注册表中指定的服务必须提供的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>为相应的组。
 
@@ -116,7 +113,7 @@ VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](.
 
      IDE 调用相应的方法遵循的用户修改**字体和颜色**页。 例如，它调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A>如果选择新字体的方法。
 
-     或
+     - 或 -
 
 -   轮询更改 IDE。
 
@@ -135,5 +132,5 @@ VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](.
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
 - [获取对文本着色的字体和颜色信息](../extensibility/getting-font-and-color-information-for-text-colorization.md)
 - [访问存储的字体和颜色设置](../extensibility/accessing-stored-font-and-color-settings.md)
-- [如何： 访问内置的字体和配色方案](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
+- [如何：访问内置的字体和配色方案](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)
 - [字体和颜色的概述](../extensibility/font-and-color-overview.md)

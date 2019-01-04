@@ -3,7 +3,6 @@ title: 工作流设计器-发送活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cbbcc01001d663e927431b99915bf69d9a223ce
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 788884590054b29ae31df9c5ba2ca31ac0ea5c49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836419"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954008"
 ---
 # <a name="send-activity-designer"></a>Send 活动设计器
 
@@ -46,7 +45,7 @@ ms.locfileid: "49836419"
 | <xref:System.ServiceModel.Activities.Send.OperationName%2A> | True | 由此 <xref:System.ServiceModel.Activities.Send> 活动调用的服务操作的名称。 此属性用于构造的默认值为**操作**属性如果**操作**属性未显式设置。 |
 | <xref:System.ServiceModel.Activities.Send.ServiceContractName%2A> | True | 实现了要调用的服务的服务协定的名称。 |
 | <xref:System.ServiceModel.Activities.Send.Content%2A> | False | 指定要接收的消息或参数内容。 它可为 <xref:System.ServiceModel.Activities.ReceiveMessageContent> 活动或 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 活动。 编辑此属性通过选择旁的省略号按钮**内容**字段在属性网格或单击**定义...** 按钮旁边**内容**上的标签**接收**活动设计器图面。 两者都显示**内容定义**对话框。 有关如何使用此框的详细信息，请参阅[内容定义对话框](../workflow-designer/content-definition-dialog-box.md)主题。 |
-| <xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A> | False | 指定用于将消息路由到相应工作流实例的 <xref:System.ServiceModel.Activities.CorrelationHandle>。<br /><br /> 单击省略号按钮旁边<xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A>属性在属性网格中，打开**表达式编辑器**对话框。 有关使用此对话框的详细信息，请参阅[如何： 使用表达式编辑器](../workflow-designer/how-to-use-the-expression-editor.md)主题。 |
+| <xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A> | False | 指定用于将消息路由到相应工作流实例的 <xref:System.ServiceModel.Activities.CorrelationHandle>。<br /><br /> 单击省略号按钮旁边<xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A>属性在属性网格中，打开**表达式编辑器**对话框。 有关使用此对话框的详细信息，请参阅[如何：使用表达式编辑器](../workflow-designer/how-to-use-the-expression-editor.md)主题。 |
 | <xref:System.ServiceModel.Activities.Send.CorrelationInitializers%2A> | False | 指定在工作流中对配置此 <xref:System.ServiceModel.Activities.CorrelationInitializer> 活动的多个 <xref:System.ServiceModel.Activities.CorrelationHandle> 对象进行初始化的 <xref:System.ServiceModel.Activities.Send> 对象的集合。 单击省略号按钮旁边<xref:System.ServiceModel.Activities.Send.CorrelationInitializers%2A>属性在属性网格中，打开**添加相关初始值设定项**对话框。 有关使用此框的详细信息，请参阅[添加相关初始值设定项对话框](../workflow-designer/add-correlationinitializers-dialog-box.md)主题。 |
 | <xref:System.ServiceModel.Activities.Send.KnownTypes%2A> | False | 此 <xref:System.ServiceModel.Activities.Send> 活动要调用的服务操作的已知类型集合。 此属性应与设置为 <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> 的 <xref:System.Runtime.Serialization.DataContractSerializer> 属性结合使用。 如果使用了 <xref:System.Xml.Serialization.XmlSerializer>，则忽略此项。<br /><br /> 选择旁的省略号按钮**KnownTypes**字段中要显示的属性网格**类型集合编辑器**对话框可以添加相关类型。<br /><br /> 选择旁的省略号按钮**KnownTypes**字段中要显示的属性网格**类型集合编辑器**对话框可以添加相关类型。 有关使用此框的详细信息，请参阅[类型集合编辑器对话框](../workflow-designer/type-collection-editor-dialog-box.md)主题。 |
 | <xref:System.ServiceModel.Activities.Send.ProtectionLevel%2A> | True | 指定消息的 <xref:System.Net.Security.ProtectionLevel>。<br /><br /> 1。<xref:System.Net.Security.ProtectionLevel>意味着仅使用身份验证。<br />2。<xref:System.Net.Security.ProtectionLevel>意味着登录数据，以帮助确保传输数据的完整性。<br />3。<xref:System.Net.Security.ProtectionLevel>方法进行加密和签名数据，以帮助确保保密性和传输数据的完整性。 |

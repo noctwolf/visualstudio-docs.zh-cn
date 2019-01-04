@@ -1,9 +1,6 @@
 ---
-title: 生成新项目： 揭秘，第 1 部分 |Microsoft Docs
-ms.custom: ''
+title: 生成新项目：实质上，第 1 部分 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f678e15a26a85245e22edd323008ab517ea1e39c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8ca4ac8523185f1fe818ffa287ed9083b6618c04
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907061"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827645"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>生成新项目：揭秘，第 1 部分
+# <a name="new-project-generation-under-the-hood-part-one"></a>生成新项目：实质上，第 1 部分
 有关如何创建您自己的项目类型有没有想过吗？ 想知道实际情况时创建新的项目？ 让我们了解一下实质上，了解实际情况。  
   
  有几个 Visual Studio 协调为你的任务：  
@@ -124,7 +121,7 @@ devenv /installvstemplates
 -   可以更改排序顺序。  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>查找根节点的项目类型  
- 当 Visual Studio 遍历 ProjectTemplates 文件夹时，打开所有的.zip 文件，并提取任何.vstemplate 文件。 .Vstemplate 文件使用 XML 来描述应用程序模板。 有关详细信息，请参阅[生成新项目： 揭秘，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
+ 当 Visual Studio 遍历 ProjectTemplates 文件夹时，打开所有的.zip 文件，并提取任何.vstemplate 文件。 .Vstemplate 文件使用 XML 来描述应用程序模板。 有关详细信息，请参阅[生成新项目：实质上，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
   
  \<ProjectType > 标记确定该应用程序的项目类型。 例如，\CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip 文件包含具有此标记的 EmptyProject.vstemplate 文件：  
   
@@ -216,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode**显示为子节点的 Visual C# Windows 节点的正下方。  
   
 ## <a name="see-also"></a>请参阅  
- [生成新项目：揭秘，第 2 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [生成新项目：实质上，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

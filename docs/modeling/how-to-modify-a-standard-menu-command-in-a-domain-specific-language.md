@@ -11,20 +11,19 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6aa827781cb8ea78aa5df79f8cb839a6f3548e11
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: bc7eedfbdf725333a5cd6d3cdd3d683437d1979c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870185"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用域特定语言修改标准的菜单命令
 
 可修改某些在 DSL 中自动定义的标准命令的行为。 例如，可以修改**剪切**以便排除敏感信息。 若要实现此目的，请重写命令集类中的方法。 这些类定义在 DslPackage 项目的 CommandSet.cs 文件中，并派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
 
 > [!NOTE]
-> 如果你想要创建自己的菜单命令，请参阅[如何： 向快捷菜单添加命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
+> 如果你想要创建自己的菜单命令，请参阅[如何：将命令添加到快捷菜单](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
 ## <a name="what-commands-can-you-modify"></a>可以修改哪些命令？
 
@@ -71,7 +70,7 @@ ms.locfileid: "50967046"
 
 ## <a name="override-the-command-methods"></a>重写命令方法
 
-大多数命令都具有两个关联的方法： 具有名称的方法让`ProcessOnStatus`...确定命令是否应为可见和启用状态。 它将在每当用户右键单击关系图时调用，并应快速执行且不做任何更改。 `ProcessOnMenu`...当用户单击该命令，并应执行该命令的函数时调用。 你可能想要重写其中一个方法，或两者都进行重写。
+大多数命令都具有两个关联的方法：具有名称的方法让`ProcessOnStatus`...确定命令是否应为可见和启用状态。 它将在每当用户右键单击关系图时调用，并应快速执行且不做任何更改。 `ProcessOnMenu`...当用户单击该命令，并应执行该命令的函数时调用。 你可能想要重写其中一个方法，或两者都进行重写。
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>更改命令何时显示在菜单上
 
@@ -148,7 +147,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [如何：向快捷菜单中添加命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [如何：将命令添加到快捷菜单](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 - [VSPackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 架构参考](../extensibility/vsct-xml-schema-reference.md)

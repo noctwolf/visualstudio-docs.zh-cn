@@ -1,25 +1,24 @@
 ---
-title: 工作流设计器-迁移活动设计器
+title: 工作流设计器的迁移活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7f118f340ab91359f26ee03c3900d734720c128
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc20f1390b3c4e30f3c7233d7f1c0f55ca0d56ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970009"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879674"
 ---
 # <a name="migration-activity-designers"></a>迁移活动设计器
 
-迁移活动设计器用于从面向.NET Framework 4 工作流调用工作流 3.0/3.5 活动。 本节中所包含的主题提供有关如何使用工作流设计器的活动设计器的指南。
+迁移活动设计器用于从面向.NET Framework 4 工作流调用工作流 3.0/3.5 活动。 在本部分中包含的主题提供如何使用工作流设计器活动设计器的指导。
 
 ## <a name="related-sections"></a>相关章节
  有关其他类型活动设计器的信息，请参见下列主题。
@@ -30,7 +29,7 @@ ms.locfileid: "31970009"
 
  [使用活动设计器](../workflow-designer/using-the-activity-designers.md)
 
- [消息传送](../workflow-designer/messaging-activity-designers.md)
+ [Messaging](../workflow-designer/messaging-activity-designers.md)
 
  [运行时](../workflow-designer/runtime-activity-designers.md)
 

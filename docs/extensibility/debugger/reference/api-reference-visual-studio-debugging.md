@@ -1,9 +1,6 @@
 ---
 title: API 参考 （Visual Studio 调试） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
@@ -13,19 +10,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97d5aa6fc92457557493005389d129993d38e099
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0172f9412bff791ae2446d6cffcd9d302c7c3ef8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839435"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923622"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 引用（Visual Studio 调试）
 参考部分包含的 API，一个指南，其中显示了语法和用法的所有 API 元素，概念性概述和具有多种类型的代码示例。 按以下类别按字母顺序排列的所有引用。  
   
  下表显示了常见`HRESULT`方法返回的值。  
   
-|name|描述|“值”|  
+|name|描述|值|  
 |----------|-----------------|-----------|  
 |S_OK|成功。|0x00000000|  
 |E_UNEXPECTED|意外的失败。|0x8000FFFF|  

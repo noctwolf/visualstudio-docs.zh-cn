@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff9a548a675451b28d9b08db280dd3b35cf0a53c
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929275"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>重写和扩展生成的类
 
@@ -92,6 +91,6 @@ public partial class Book
 
 您可以订阅某些事件在形状上。 例如，可以侦听形状上的鼠标单击。 您必须编写订阅的每个对象事件的代码。 此代码可以用 InitializeInstanceResources() 的重写。
 
-ShapeFields，用于绘制的形状上的修饰器上生成一些事件。 有关示例，请参阅[如何： 截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。
+ShapeFields，用于绘制的形状上的修饰器上生成一些事件。 有关示例，请参阅[如何：截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。
 
 这些事件通常不会发生在事务内。 如果你想要在应用商店中进行更改，应创建一个事务。

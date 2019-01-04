@@ -1,9 +1,6 @@
 ---
-title: 演练： 将数据绑定到 Excel 操作窗格上的控件
-ms.custom: ''
+title: 演练：将数据绑定到 Excel 操作窗格上的控件
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8fbc1baa66dc98b2c5eec27c2a86e0fde3c5e967
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd16a9443cbfd612b30872e8850a9f1b00d09108
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942642"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866798"
 ---
-# <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>演练： 将数据绑定到 Excel 操作窗格上的控件
+# <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>演练：将数据绑定到 Excel 操作窗格上的控件
   本演练演示了数据绑定到 Microsoft Office Excel 中的操作窗格上的控件。 控件演示 SQL Server 数据库中表之间的主/从关系。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -61,7 +58,7 @@ ms.locfileid: "49942642"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  使用名称创建的 Excel 工作簿项目**我的 Excel 操作窗格**。 在向导中，选择**创建一个新文档**。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  使用名称创建的 Excel 工作簿项目**我的 Excel 操作窗格**。 在向导中，选择**创建一个新文档**。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新 Excel 工作簿并将添加**我的 Excel 操作窗格**投影到**解决方案资源管理器**。  
   
@@ -145,7 +142,7 @@ ms.locfileid: "49942642"
      [!code-vb[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb#1)]
      [!code-csharp[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#1)]  
   
-3.  在C#，必须创建的事件处理程序`ActionsControl`。 您可以将此代码放置在`ActionsControl`构造函数。 有关创建事件处理程序的详细信息，请参阅[如何： 在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+3.  在C#，必须创建的事件处理程序`ActionsControl`。 您可以将此代码放置在`ActionsControl`构造函数。 有关创建事件处理程序的详细信息，请参阅[如何：Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]  
   
@@ -182,13 +179,11 @@ ms.locfileid: "49942642"
 ## <a name="next-steps"></a>后续步骤  
  以下是接下来可能要执行的一些任务：  
   
--   数据绑定到 Word 中的控件。 有关详细信息，请参阅[演练： 将数据绑定到 Word 操作窗格上的控件](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。  
+-   数据绑定到 Word 中的控件。 有关详细信息，请参见[演练：将数据绑定到 Word 操作窗格上的控件](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。  
   
 -   部署项目。 有关详细信息，请参阅[通过使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [操作窗格概述](../vsto/actions-pane-overview.md)   
- [如何： 管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

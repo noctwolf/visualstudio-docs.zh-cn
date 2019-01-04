@@ -1,9 +1,6 @@
 ---
-title: 演练： 扩展服务器资源管理器以显示 Web 部件 |Microsoft Docs
-ms.custom: ''
+title: 演练：扩展服务器资源管理器以显示 Web 部件 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d32f76965c0dbef359e54bda114221e460a9bfd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: acee9055fc250f158e05945f0db30c9ffb0fee14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296380"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957892"
 ---
-# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>演练： 扩展服务器资源管理器以显示 web 部件
+# <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>演练：扩展服务器资源管理器以显示 web 部件
   在 Visual Studio 中，你可以使用**SharePoint 连接**的节点**服务器资源管理器**来查看 SharePoint 站点上的组件。 但是，**服务器资源管理器**默认情况下不会显示某些组件。 在本演练中，你将扩展**服务器资源管理器**，以便它显示在 Web 部件库在每个连接 SharePoint 站点。  
   
  本演练演示了下列任务：  
@@ -43,7 +40,7 @@ ms.locfileid: "51296380"
 -   调试和测试扩展。  
   
 > [!NOTE]  
->  此演练，而不是其服务器对象模型中使用 SharePoint 的客户端对象模型的替代版本，请参阅[演练： 调入 SharePoint 客户端对象模型中的服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。  
+>  此演练，而不是其服务器对象模型中使用 SharePoint 的客户端对象模型的替代版本，请参阅[演练：调入 SharePoint 客户端对象模型中的服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。  
   
 ## <a name="prerequisites"></a>系统必备  
  需要要完成本演练的开发计算机上安装以下组件：  
@@ -374,7 +371,6 @@ ms.locfileid: "51296380"
   
 ## <a name="see-also"></a>请参阅
  [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [演练： 调入 SharePoint 客户端对象模型，在服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
+ [演练：调入 SharePoint 客户端对象模型中的服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [图标的图像编辑器](/cpp/windows/image-editor-for-icons)   
  [创建图标或其他图像&#40;图标的图像编辑器&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
-  

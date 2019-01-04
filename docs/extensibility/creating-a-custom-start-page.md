@@ -1,9 +1,6 @@
 ---
 title: 创建自定义起始页 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30c161478bb04dcf964cb2054e714689c13b6538
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 52050641ee9d2d522ff07dd5eaed72ecbec2b09e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497633"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941435"
 ---
 # <a name="creating-a-custom-start-page"></a>创建自定义起始页
 可以按照本文档中的步骤创建一个自定义起始页。  
@@ -87,8 +84,8 @@ ms.locfileid: "39497633"
 -   已测试你的起始页并发现它是稳定后，使用**自定义起始页**选项**选项**对话框可以选择在 Visual Studio 的主实例中的起始页  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 将自定义 XAML 添加到启动页](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
+ [演练：将自定义 XAML 添加到启动页](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
  [将用户控件添加到启动页](../extensibility/adding-user-control-to-the-start-page.md)   
  [将 Visual Studio 命令添加到起始页](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
- [演练： 在起始页上保存用户设置](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
+ [演练：起始页上保存用户设置](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
  [部署自定义起始页](../extensibility/deploying-custom-start-pages.md)

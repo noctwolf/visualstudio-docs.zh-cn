@@ -29,19 +29,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ed9670795e11b0d98b3703445450b468a93aa8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068456"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561637"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到运行的进程
 你可将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。 进程正在运行后，选择**调试** > **附加到进程**或按**Ctrl**+**Alt** +**P** Visual Studio 中，并使用**附加到进程**对话框，可以将调试器附加到进程。
 
 可以使用**附加到进程**若要调试在本地或远程计算机上的运行应用，同时调试多个进程、 调试在 Visual Studio 中创建的应用或调试您开始从 Visual Studio 中使用时没有任何应用附加调试程序。 例如，如果您正在运行不带调试器的应用，并且遇到一个异常，可以然后将调试器附加到进程中运行应用程序，并开始调试。
 
-有关在 Visual Studio 基本调试的信息，请参阅[开始使用调试器](../debugger/getting-started-with-the-debugger.md)。
+有关在 Visual Studio 基本调试的信息，请参阅[先来看一下调试器](../debugger/debugger-feature-tour.md)。
 
 > [!TIP]
 > 不确定是否使用**附加到进程**为调试方案？ 请参阅[常见调试方案](#BKMK_Scenarios)。 
@@ -119,7 +119,7 @@ ms.locfileid: "53068456"
    - 若要查找的所有用户帐户下运行的进程，请选择**显示所有用户的进程**复选框。
       
      >[!NOTE]
-     >如果尝试附加到不受信任的用户帐户拥有的进程，则会出现安全警告对话框确认。 有关详细信息请参阅[安全警告： 附加到不受信任的用户所拥有的进程可能很危险。以下信息看上去可疑或者你不确定，如果未附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。  
+     >如果尝试附加到不受信任的用户帐户拥有的进程，则会出现安全警告对话框确认。 有关详细信息请参阅[安全警告：附加到不受信任的用户所拥有的进程可能很危险。如果以下信息看上去可疑或者你无法确定，请勿附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
       
 5. 在中**将附加到**字段中，请确保你打算调试的代码类型已经列出。 默认值**自动**设置对于大多数应用程序类型的工作原理。 
   
@@ -162,7 +162,7 @@ ms.locfileid: "53068456"
 |远程调试 ASP.NET 4 或 4.5 上 IIS 服务器|使用远程工具和**附加到进程**|w3wp.exe|请参阅[远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |IIS 服务器上的远程调试 ASP.NET Core|使用远程工具和**附加到进程**|*dotnet.exe*|有关应用程序部署，请参阅[发布到 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 有关调试，请参阅[远程调试远程 IIS 计算机上的 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |调试客户端脚本的本地 IIS 服务器上，为受支持的应用类型 |使用**附加到进程**|*chrome.exe*， *MicrosoftEdgeCP.exe*，或*iexplore.exe*|必须启用脚本调试。 对于 Chrome 中，也必须在调试模式下，选择运行 Chrome **Webkit 代码**中**附加到**字段。|
-|调试C#，Visual Basic 或 c + + 应用程序在本地计算机上|可以使用两种[标准调试](../debugger/getting-started-with-the-debugger.md)或**附加到进程**|*\<应用程序名 >.exe*|在大多数情况下，使用标准调试并不**附加到进程**。|
+|调试C#，Visual Basic 或 c + + 应用程序在本地计算机上|可以使用两种[标准调试](../debugger/debugger-feature-tour.md)或**附加到进程**|*\<应用程序名 >.exe*|在大多数情况下，使用标准调试并不**附加到进程**。|
 |远程调试 Windows 桌面应用程序|远程工具|不可用| 请参阅[远程调试C#或 Visual Basic 应用程序](../debugger/remote-debugging-csharp.md)或[远程调试 c + + 应用程序](../debugger/remote-debugging-cpp.md)|
 |调试 ASP.NET 应用程序在本地计算机上，在启动不带调试器的应用后|使用**附加到进程**|*iiexpress.exe*|这可能会有所帮助使应用程序加载速度更快，如 （例如） 进行分析时。 |
 |调试服务器进程上的其他受支持的应用类型|如果远程服务器，使用远程工具和**附加到进程**|*chrome.exe*， *iexplore.exe*，或其他进程|如有必要，使用资源监视器来帮助标识该进程。 请参阅[远程调试](../debugger/remote-debugging.md)。|

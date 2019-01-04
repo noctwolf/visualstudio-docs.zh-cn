@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式在工作表单元格中显示字符串
-ms.custom: ''
+title: 如何：以编程方式在工作表单元格中显示字符串
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 336ab67cd5c63a912d72b0fce3fa73c9fca5184f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 021fe02e501fc5a8921ec8f2a50329653ca45401
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849763"
 ---
-# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>如何： 以编程方式在工作表单元格中显示字符串
+# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>如何：以编程方式在工作表单元格中显示字符串
   此示例演示如何以编程方式在单元格中显示文本。 若要在单元格中显示文本，请使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控件或本机 Excel 范围对象。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -49,10 +46,8 @@ ms.locfileid: "35256814"
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 收集数据使用 Windows 窗体](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
+ [演练：使用 Windows 窗体收集数据](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
  [对 Office 解决方案进行故障排除](../vsto/troubleshooting-office-solutions.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
  [对 Office 项目中的对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

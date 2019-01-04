@@ -1,9 +1,6 @@
 ---
 title: Office 项目模板概述
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -33,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d1ad35b9aecc9e7559902104f447cbbec3415b49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 399a4aa1e735426ee5fe63bca60d89fed1fd94a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934322"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940595"
 ---
 # <a name="office-project-templates-overview"></a>Office 项目模板概述
   Visual Studio 中的 Microsoft Office 开发人员工具包括用于创建以下类型的 Office 解决方案的项目模板：  
@@ -90,9 +87,9 @@ ms.locfileid: "49934322"
   
 -   [Excel 解决方案](../vsto/excel-solutions.md)  
   
--   [演练： 创建 word 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
+-   [演练：创建 word 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
   
--   [演练： 创建你的 Excel 的第一个文档级自定义](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
+-   [演练：创建 excel 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
   
 ##  <a name="AppLevel"></a> VSTO 外接程序  
  **“新建项目”** 对话框中的 **“Office/SharePoint”** 节点提供下列项目模板，可以使用这些模板开始创建 VSTO 外接程序。  
@@ -133,15 +130,15 @@ ms.locfileid: "49934322"
   
 - [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)  
   
-- [演练： 创建第一个 VSTO 外接程序 Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+- [演练：为 Excel 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
-- [演练： 创建在第一个 VSTO 外接程序的 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [演练：在第一个 VSTO 外接程序为 Outlook 创建](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
-- [演练： 为 PowerPoint 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+- [演练：为 PowerPoint 中创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
-- [演练： 创建在第一个 VSTO 外接程序项目](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [演练：创建在第一个 VSTO 外接程序项目](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
-- [演练： 为 Word 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+- [演练：为 Word 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
 ## <a name="document-vs-template-solutions"></a>记录与模板解决方案  
  在围绕 Word 文档或 Excel 工作簿设计解决方案时，必须确定将该文档提供给用户的最佳方式。  
@@ -172,9 +169,7 @@ ms.locfileid: "49934322"
 ## <a name="see-also"></a>请参阅  
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
- [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [用于 Excel 的文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Word 文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: IDebugProgram3 |Microsoft 文档
-ms.custom: ''
+title: IDebugProgram3 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProgram3 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 328fe3c863c4233c984db6de8bc992ea91b6a4d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5849617b1fb0d1446b847f9eb5137de06b685953
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896601"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
-此接口表示一个程序，它的进程中运行扩展[执行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)通过提供线程的信息。  
+此接口表示一个程序，在进程中运行并扩展了[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)通过提供线程信息。  
   
 ## <a name="syntax"></a>语法  
   
@@ -29,30 +26,30 @@ ms.locfileid: "31121760"
 IDebugProgram3 : IDebugProgram3  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 调试引擎 (DE) 和自定义端口提供程序实现此接口来表示进程中的程序。 会话调试管理器 (SDM) 还可实现此接口将信息提供给[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 调试引擎 (DE) 和自定义端口提供程序实现此接口来表示在进程中的程序。 会话调试管理器 (SDM) 也实现此接口将信息提供给[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)事件返回的新程序此接口。 此接口还用于对多个接口的许多方法使用作为参数。  
+ [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)事件返回此接口的新程序。 此接口还用作多个接口上的许多方法参数。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDebugProgram3`。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|执行程序。 线程返回能够在执行时在哪个线程查看用户的调试器信息。|  
+|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|执行程序。 线程将返回以授予用户查看哪个线程执行时的调试程序信息。|  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>备注  
- 程序是在特定的运行时体系结构中，运行，而进程组成一个或多个程序的线程容器。  
+ 程序是运行在特定的运行时体系结构中，而进程组成一个或多个程序的线程容器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)   

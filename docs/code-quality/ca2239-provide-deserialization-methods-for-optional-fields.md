@@ -1,8 +1,7 @@
 ---
-title: CA2239：为可选字段提供反序列化方法
+title: CA2239:为可选字段提供反序列化方法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2239
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c1b8adb3454b7309eefa49ded129ce899c3cf58
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 572bf56c63e8fcbf9d78738d7cdffcf9540df158
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548577"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988957"
 ---
-# <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239：为可选字段提供反序列化方法
+# <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239:为可选字段提供反序列化方法
 
 |||
 |-|-|
@@ -54,16 +53,16 @@ ms.locfileid: "45548577"
  [!code-vb[FxCop.Usage.OptionalFields#1](../code-quality/codesnippet/VisualBasic/ca2239-provide-deserialization-methods-for-optional-fields_1.vb)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA2236：对 ISerializable 类型调用基类方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236:对 ISerializable 类型调用基类方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
- [CA2240：正确实现 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
+ [CA2240:正确实现 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
 
  [CA2229：实现序列化构造函数](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2238：正确实现序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+ [CA2238:正确实现序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
- [CA2235：标记所有不可序列化的字段](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+ [CA2235:标记所有不可序列化的字段](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237：以 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237:用 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2120：保护序列化构造函数](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120:安全的序列化构造函数](../code-quality/ca2120-secure-serialization-constructors.md)

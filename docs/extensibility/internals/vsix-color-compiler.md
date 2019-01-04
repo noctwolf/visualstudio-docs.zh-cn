@@ -1,6 +1,5 @@
 ---
-title: VSIX 颜色编译器 |Microsoft 文档
-ms.custom: ''
+title: VSIX 颜色编译器 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
@@ -9,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 115f3a6c9d01d1e92a5eb7c840dfb17abcfd3c72
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1fee65200d026200de5196d1396191d759aded8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144325"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990852"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 颜色编译器
-Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一个表示为现有 Visual Studio 主题的颜色的.xml 文件并将它到.pkgdef 文件，以便可以在 Visual Studio 中使用这些颜色。 因为很容易地比较.xml 文件之间的差异，此工具可用于管理在源代码管理中的自定义颜色。 此外可以通过它挂钩到生成环境，以便生成的输出是一个有效的.pkgdef 文件。  
+Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Visual Studio 主题的.xml 文件的控制台应用程序并将其向.pkgdef 文件，以便可以在 Visual Studio 中使用这些颜色。 因为可以轻松比较.xml 文件之间的差异，此工具可用于管理源控件中的自定义颜色。 它还可以挂接到生成环境，以便生成的输出是一个有效的.pkgdef 文件。  
   
- **主题 XML 架构**  
+ **主题的 XML 架构**  
   
  完成主题.xml 文件如下所示：  
   
@@ -54,10 +53,10 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|名称|[必需]主题的名称|  
-|GUID|[必需]（必须匹配 GUID 格式） 的主题的 GUID|  
+|name|[必需]主题的名称|  
+|GUID|[必需]主题的 GUID （必须匹配 GUID 格式）|  
   
- 当为 Visual Studio 中创建自定义颜色，这些颜色将需要定义为以下主题。 如果没有颜色存在特定主题，Visual Studio 将尝试从浅色主题中加载的缺少的颜色。  
+ 为 Visual Studio 中创建自定义颜色时, 这些颜色需要定义有关以下主题。 如果没有颜色存在于特定主题，Visual Studio 将尝试从浅色主题中加载缺失的颜色。  
   
 |||  
 |-|-|  
@@ -69,7 +68,7 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一
   
  **类别**  
   
- \<类别 > 元素主题中定义的颜色的集合。 类别名称提供逻辑分组，并且应定义为较窄越好。 类别必须包含至少一个\<颜色 > 元素。 类别元素的定义如下：  
+ \<类别 > 元素定义在主题中的颜色的集合。 类别名称提供逻辑分组，而应定义为窄越好。 类别必须包含至少一个\<颜色 > 元素。 类别元素的定义如下：  
   
 ```xml  
 <Category Name="name" GUID="guid">  
@@ -80,12 +79,12 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|名称|[必需]类别的名称|  
-|GUID|[必需]（必须匹配 GUID 格式） 的类别的 GUID|  
+|name|[必需]类别的名称|  
+|GUID|[必需]该类别的 GUID （必须匹配 GUID 格式）|  
   
  **颜色**  
   
- \<颜色 > 元素定义的组件或 UI 的状态的颜色。 一种颜色的首选命名方案是 [UI 类型] [状态]。 不要使用 word"颜色"，因为它是冗余。 元素类型和的情况下，或"状态时，"将为其应用颜色，应该清楚地指示一种颜色。 一种颜色不能为空，并且必须包含一个或两个\<后台 > 和\<前景 > 元素。 颜色元素的定义如下：  
+ \<颜色 > 元素定义的组件或 UI 的状态的颜色。 一种颜色的首选命名方案是 [UI 类型] [State]。 不要使用"颜色"一词，因为它是冗余。 一种颜色应清楚地指示元素类型和的情况下，或"状态，"将为其应用颜色。 一种颜色不能为空，并且必须包含一个或两个\<背景 > 和\<前台 > 元素。 颜色元素的定义如下：  
   
 ```xml  
 <Color Name="name">  
@@ -97,11 +96,11 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|名称|[必需]颜色的名称|  
+|name|[必需]颜色的名称|  
   
  **背景和/或前台**  
   
- \<后台 > 和\<前景 > 元素定义一种颜色的值和类型的背景或前景 UI 元素。 这些元素没有任何子级。  
+ \<背景 > 和\<前台 > 元素定义的颜色值和背景或前景的 UI 元素的类型。 这些元素具有任何子级。  
   
 ```xml  
 <Background Type="type" Source="int" />  
@@ -111,14 +110,14 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|类型|[必需]颜色的类型。 它可以是以下项之一：<br /><br /> *CT_INVALID:* 的颜色是无效或未设置。<br /><br /> *CT_RAW:* 原始 ARGB 值。<br /><br /> *CT_COLORINDEX:* 不要使用。<br /><br /> *CT_SYSCOLOR:* SysColor 从一种 Windows 系统颜色。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX 从 Visual Studio 颜色。<br /><br /> *CT_AUTOMATIC:* 自动的颜色。<br /><br /> *CT_TRACK_FOREGROUND:* 不要使用。<br /><br /> *CT_TRACK_BACKGROUND:* 不要使用。|  
-|源|[必需]以十六进制表示的颜色的值|  
+|类型|[必需]颜色的类型。 它可以是以下值之一：<br /><br /> *CT_INVALID:* 颜色是无效或未设置。<br /><br /> *CT_RAW:* 原始的 ARGB 值。<br /><br /> *CT_COLORINDEX:* 不要使用。<br /><br /> *CT_SYSCOLOR:* 一种从 SysColor Windows 系统颜色。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX 从 Visual Studio 颜色。<br /><br /> *CT_AUTOMATIC:* 自动的颜色。<br /><br /> *CT_TRACK_FOREGROUND:* 不要使用。<br /><br /> *CT_TRACK_BACKGROUND:* 不要使用。|  
+|源|[必需]以十六进制表示颜色的值|  
   
- 类型属性中的架构支持所有支持的 __VSCOLORTYPE 枚举的值。 但是，我们建议使用只有 CT_RAW 和 CT_SYSCOLOR。  
+ 类型属性中的架构支持由 __VSCOLORTYPE 枚举支持的所有值。 但是，我们建议使用仅限 CT_RAW 和 CT_SYSCOLOR。  
   
- **所有组合在一起**  
+ **所有内容**  
   
- 这是有效的主题.xml 文件的简单示例：  
+ 这是有效的主题.xml 文件的一个简单示例：  
   
 ```xml  
 <Themes>  
@@ -143,10 +142,10 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一
 |-|-|-|  
 |**交换机名称**|**备注**|**必需或可选**|  
 |未命名 （.xml 文件）|这是第一个未命名的参数，是要转换的 XML 文件的路径。|必需|  
-|未命名 （.pkgdef 文件）|这是第二个未命名的参数，生成的.pkgdef 文件的输出路径。<br /><br /> 默认值： \<XML 文件名 >.pkgdef|Optional|  
-|/noLogo|设置此标志将停止打印的产品和版权信息。|Optional|  
-|/?|打印出帮助信息。|Optional|  
-|/help|打印出帮助信息。|Optional|  
+|未命名 （.pkgdef 文件）|这是第二个未命名的参数，生成的.pkgdef 文件的输出路径。<br /><br /> 默认：\<XML 文件名 >.pkgdef|Optional|  
+|/noLogo|设置此标志会停止打印的产品和版权信息。|Optional|  
+|/?|打印帮助信息。|Optional|  
+|/help|打印帮助信息。|Optional|  
   
  **示例**  
   
@@ -156,12 +155,12 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一
   
 ## <a name="notes"></a>说明  
   
--   此工具要求安装 VC + + 运行时的最新版本。  
+-   此工具需要安装 VC + + 运行时的最新版本。  
   
 -   支持仅单个文件。 不支持通过文件夹路径的批量转换。  
   
 ## <a name="sample-output"></a>示例输出  
- 由工具生成.pkgdef 文件将类似于下面密钥：  
+ 由工具生成.pkgdef 文件将类似于以下键：  
   
 ```  
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\Environment]  

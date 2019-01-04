@@ -1,9 +1,6 @@
 ---
-title: 演练： 显示匹配的大括号 |Microsoft Docs
-ms.custom: ''
+title: 演练：显示匹配的括号 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f29596c95646db78145725f1f0cead424e1de5e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a048ce1e89de65e805d01971de5c4221b13be826
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500431"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956567"
 ---
-# <a name="walkthrough-display-matching-braces"></a>演练： 显示匹配大括号
+# <a name="walkthrough-display-matching-braces"></a>演练：显示匹配大括号
 实现基于语言的功能，例如，大括号匹配通过定义您希望匹配，括在括号的内，并将文本标记标记添加到匹配大括号，当脱字号上一个大括号。 可以定义一种语言的上下文中的大括号、 定义您自己的文件扩展名和内容类型和应用标签来只是该类型或将标记应用到现有内容类型 （例如"text")。 下面的演练演示如何将应用标记为"text"内容类型匹配的大括号。  
   
 ## <a name="prerequisites"></a>系统必备  
@@ -30,7 +27,7 @@ ms.locfileid: "39500431"
   
 #### <a name="to-create-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建编辑器分类器项目。 将解决方案命名`BraceMatchingTest`。  
+1.  创建编辑器分类器项目。 将解决方案命名为 `BraceMatchingTest`。  
   
 2.  将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -126,4 +123,4 @@ ms.locfileid: "39500431"
 4.  当将左大括号之前插入符号时，该大括号和关闭的匹配大括号应突出显示。 时恰好在关闭的大括号后放置光标，该大括号和匹配的左大括号应突出显示。  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

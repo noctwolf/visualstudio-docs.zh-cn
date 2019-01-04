@@ -2,7 +2,6 @@
 title: 如何：从 XML 文档创建 XML 架构
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f33fc5b48b9fd6b1cc08570e62e73f05fd19e70
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 629519a6df8c570ee806ec7360e03f442042b5ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548270"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915200"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>如何： 从 XML 文档创建 XML 架构
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>如何：从 XML 文档创建 XML 架构
 
 使用“XML 编辑器”可以从 XML 文档创建 XML 架构定义语言 (XSD) 架构。 XML 实例文档通过以下方式确定如何生成架构：
 
@@ -42,7 +41,7 @@ ms.locfileid: "34548270"
      架构可以保存到磁盘中、添加到项目中或丢弃。
 
     > [!NOTE]
-    >  **Create Schema**命令也是可从 XML 编辑器和下的快捷菜单**XML**菜单。
+    >  **Create Schema**命令也是可以从快捷菜单的 XML 编辑器和下**XML**菜单。
 
 ## <a name="see-also"></a>请参阅
 

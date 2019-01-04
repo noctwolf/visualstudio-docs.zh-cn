@@ -1,9 +1,6 @@
 ---
 title: 为 SharePoint 创建站点栏、 内容类型和列表 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.ContentTypeSetting
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a9a5340b7fc5b36da7fe2a46175571a569fdf38e
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 805500b9f12e227e95add02ca0180b658b85d1cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325741"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931942"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>为 SharePoint 创建站点栏、 内容类型和列表
   Visual Studio 为许多不同基本 SharePoint 项，包括提供项目项模板*列出了*并*内容类型*，这两种可结合网站栏 (或*字段*)。 用于内容类型和列表的新设计器可更简单地创建这些项。  
@@ -49,9 +46,7 @@ ms.locfileid: "36325741"
   
 |标题|描述|  
 |-----------|-----------------|  
-|[演练： 为 SharePoint 创建网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|演示如何创建网站栏以用于自定义内容类型。 此内容类型随后将用于自定义列表。|  
+|[演练：创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|演示如何创建网站栏以用于自定义内容类型。 此内容类型随后将用于自定义列表。|  
   
 ## <a name="see-also"></a>请参阅
  [SharePoint 2010 开发入门](http://go.microsoft.com/fwlink/?LinkId=225000)  
-  
- 

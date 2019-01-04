@@ -1,9 +1,6 @@
 ---
-title: 如何： 添加标准文本标记 |Microsoft Docs
-ms.custom: ''
+title: 如何：添加标准文本标记 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - standard text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dd34b14b89c78d01f1d4acab57f33014860d7ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 711822c81e81df451ff7e548eb701613efedde85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874623"
 ---
-# <a name="how-to-add-standard-text-markers"></a>如何： 添加标准文本标记
+# <a name="how-to-add-standard-text-markers"></a>如何：添加标准文本标记
 使用以下过程来创建一个与提供的默认文本标记类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器。  
   
 ## <a name="to-create-a-text-marker"></a>若要创建文本标记  
@@ -51,6 +48,6 @@ ms.locfileid: "39638814"
   
 ## <a name="see-also"></a>请参阅  
  [文本标记中使用传统的 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [如何： 实现错误标记](../extensibility/how-to-implement-error-markers.md)   
- [如何： 创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)   
- [如何： 使用文本标记](../extensibility/how-to-use-text-markers.md)
+ [如何：实现错误标记](../extensibility/how-to-implement-error-markers.md)   
+ [如何：创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)   
+ [如何：使用文本标记](../extensibility/how-to-use-text-markers.md)

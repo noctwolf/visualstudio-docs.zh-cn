@@ -1,5 +1,5 @@
 ---
-title: 依赖项关系图：指南
+title: 依赖项关系图：准则
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,17 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863329"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924418"
 ---
 # <a name="dependency-diagrams-guidelines"></a>依赖项关系图： 准则
 
-通过创建描述在高级别的应用程序的体系结构*依赖项关系图*Visual Studio 中。 请确保你的代码通过验证你的代码使用依赖项关系图保持与此设计保持一致。 还可以在生成过程中包括层验证。 请参阅[第 9 频道视频： 设计和验证体系结构使用依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。
+通过创建描述在高级别的应用程序的体系结构*依赖项关系图*Visual Studio 中。 请确保你的代码通过验证你的代码使用依赖项关系图保持与此设计保持一致。 还可以在生成过程中包括层验证。 请参阅[第 9 频道视频：设计和验证体系结构使用依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。
 
 若要查看哪些版本的 Visual Studio 支持此功能，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -32,7 +31,7 @@ ms.locfileid: "49863329"
 
 ## <a name="what-is-a-dependency-diagram"></a>什么是依赖项关系图？
 
-类似于传统的体系结构示意图，依赖项关系图标识的主要组件或功能单元的设计和及其相互依赖关系。 在关系图中，每个节点称为*层*，表示命名空间、 项目或其他项目的逻辑组。 您可以绘制出您的设计中存在的依赖关系。 与传统的体系结构关系图不同的是，您可以验证源代码中的实际依赖关系符合您指定的预期依赖关系。 通过在[!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]上验证常规生成的一部分，您可以确保程序代码继续符合系统的体系结构将来的更改。 请参阅[依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)。
+类似于传统的体系结构示意图，依赖项关系图标识的主要组件或功能单元的设计和及其相互依赖关系。 在关系图中，每个节点称为*层*，表示命名空间、 项目或其他项目的逻辑组。 您可以绘制出您的设计中存在的依赖关系。 与传统的体系结构关系图不同的是，您可以验证源代码中的实际依赖关系符合您指定的预期依赖关系。 通过在[!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]上验证常规生成的一部分，您可以确保程序代码继续符合系统的体系结构将来的更改。 请参阅[依赖项关系图：引用](../modeling/layer-diagrams-reference.md)。
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>如何设计或更新您的应用程序的依赖项关系图
 
@@ -125,7 +124,7 @@ ms.locfileid: "49863329"
 
 当你启动开发新项目或新项目中的新区域时，你可以绘制层和依赖项，以帮助你在开始开发代码之前标识主要组件。
 
--   **显示可识别的体系结构模式**你依赖项关系图中，在可能的情况。 例如，描述桌面应用程序的依赖项关系图可能包括演示文稿、 域逻辑和数据存储等层。 介绍了应用程序的单个功能的依赖项关系图可能层如模型、 视图和控制器。 有关此类模式的详细信息，请参阅[模式和实践： 应用程序体系结构](http://go.microsoft.com/fwlink/?LinkId=145794)。
+-   **显示可识别的体系结构模式**你依赖项关系图中，在可能的情况。 例如，描述桌面应用程序的依赖项关系图可能包括演示文稿、 域逻辑和数据存储等层。 介绍了应用程序的单个功能的依赖项关系图可能层如模型、 视图和控制器。 有关此类模式的详细信息，请参阅[模式和实施方案：应用程序体系结构](http://go.microsoft.com/fwlink/?LinkId=145794)。
 
 -   **创建代码项目的每一层**如命名空间、 类或组件。 这样，就更容易跟踪代码，并把代码项目链接到层。 当你创建每个项目时，将其链接到相应的层。
 
@@ -176,5 +175,5 @@ ms.locfileid: "49863329"
 
 ## <a name="see-also"></a>请参阅
 
-- [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)
+- [依赖项关系图：引用](../modeling/layer-diagrams-reference.md)
 - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)

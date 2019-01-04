@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 的图像和图标 |Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 901e6612cec87df0d43c20d34a139b8a578f4f0a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 512b2fe20e1c057c2bac73975a29eff0cc3df8d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949391"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880697"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio 的图像和图标
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> 在 Visual Studio 中的映像使用  

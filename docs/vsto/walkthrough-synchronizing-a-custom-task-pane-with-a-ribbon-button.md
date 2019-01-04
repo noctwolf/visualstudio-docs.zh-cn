@@ -1,9 +1,6 @@
 ---
-title: 演练： 将自定义任务窗格与功能区按钮同步
-ms.custom: ''
+title: 演练：将自定义任务窗格与功能区按钮同步
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,14 +23,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7b6c36e93d9dd8dd4ef81d0d124ae33e842a16d7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: eeb0d06b765aee7800ed81b1216efa42b4bd93b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670602"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943559"
 ---
-# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>演练： 将自定义任务窗格与功能区按钮同步
+# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>演练：将自定义任务窗格与功能区按钮同步
   本演练演示如何创建用户可以隐藏或通过单击功能区上的切换按钮显示的自定义任务窗格。 应始终创建一个可供用户单击以显示或隐藏你的自定义任务窗格的用户界面 (UI) 元素，如按钮，因为 Microsoft Office 应用程序不提供用户用于显示或隐藏自定义任务窗格的默认方式。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -63,7 +60,7 @@ ms.locfileid: "35670602"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  使用 Excel 外接程序项目模板，创建一个名为 **SynchronizeTaskPaneAndRibbon**的 Excel 外接程序项目。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  使用 Excel 外接程序项目模板，创建一个名为 **SynchronizeTaskPaneAndRibbon**的 Excel 外接程序项目。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 打开 **ThisAddIn.cs** 或 **ThisAddIn.vb** 代码文件，并将 **SynchronizeTaskPaneAndRibbon** 项目添加到 **“解决方案资源管理器”**。  
   
@@ -139,7 +136,7 @@ ms.locfileid: "35670602"
   
 1.  在功能区设计器中，双击“显示任务窗格”  切换按钮。  
   
-     Visual Studio 会自动生成名为 `toggleButton1_Click`的事件处理程序，它将处理切换按钮的 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 事件。 Visual Studio 还将打开*MyRibbon.cs*或*MyRibbon.vb*文件在代码编辑器中。  
+     Visual Studio 会自动生成名为 `toggleButton1_Click`的事件处理程序，它将处理切换按钮的 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 事件。 Visual Studio 还会打开代码编辑器中的 *MyRibbon.cs* 或 *MyRibbon.vb* 文件。  
   
 2.  将 `toggleButton1_Click` 事件处理程序替换为以下代码。 当用户单击切换按钮时，此代码显示或隐藏自定义任务窗格，具体取决于是按下还是未按下切换按钮。  
   
@@ -170,15 +167,13 @@ ms.locfileid: "35670602"
   
 -   在 VSTO 外接程序中的其他应用程序中创建自定义任务窗格。 有关支持自定义任务窗格的应用程序的详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
   
--   从自定义任务窗格自动化应用程序。 有关详细信息，请参阅[演练： 自动执行应用程序从自定义任务窗格](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。  
+-   从自定义任务窗格自动化应用程序。 有关详细信息，请参见[演练：自动执行应用程序从自定义任务窗格](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。  
   
--   为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参阅[演练： 在 Outlook 中显示的电子邮件消息的自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
+-   为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参见[演练：在 Outlook 中显示的电子邮件消息的自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义任务窗格](../vsto/custom-task-panes.md)   
- [如何： 向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [演练： 自动执行从自定义任务窗格应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [演练： 在 Outlook 中显示电子邮件消息的自定义任务的窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
+ [如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [演练：自动执行从自定义任务窗格应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [演练：在 Outlook 中显示电子邮件消息的自定义任务的窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
  [功能区概述](../vsto/ribbon-overview.md)  
-  
-  

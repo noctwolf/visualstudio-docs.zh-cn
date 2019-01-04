@@ -1,9 +1,6 @@
 ---
 title: 创建 WPF 工具箱控件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43734720a4e86f9f1e214285df1873b39b67fa01
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07ab3bc10bd755a768c80e53c96ad133ecce08a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847537"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>创建 WPF 工具箱控件
 WPF (Windows Presentation Framework) 工具箱控件模板允许你创建的自动添加到 WPF 控件**工具箱**时安装该扩展。 本主题演示如何使用模板创建**工具箱**可以分发给其他用户的控件。  
@@ -41,7 +38,7 @@ WPF (Windows Presentation Framework) 工具箱控件模板允许你创建的自�
   
 1.  打开*MyToolboxControl.xaml*在设计器中。  
   
-     此设计器显示<xref:System.Windows.Controls.Grid>控件，其中包含<xref:System.Windows.Controls.Button>控件。  
+     此设计器显示包含 <xref:System.Windows.Controls.Button> 控件的 <xref:System.Windows.Controls.Grid> 控件。  
   
 2.  排列网格布局。 当选择<xref:System.Windows.Controls.Grid>控制，蓝色的控件条显示在网格的顶部和左侧边缘上。 您可以添加到网格的行和列，方法是单击标题栏。  
   

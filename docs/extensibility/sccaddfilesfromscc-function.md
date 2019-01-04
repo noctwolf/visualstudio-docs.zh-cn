@@ -1,9 +1,6 @@
 ---
 title: SccAddFilesFromSCC 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccAddFilesFromSCC
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b827e1f7e26fb98e9d49de4e9fe2388e46ee07cb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b650810ea0c3a7df32d6a058947d83fb8842b7f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831167"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818960"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 函数
 此函数将从源代码管理的文件的列表添加到当前打开的项目。  
@@ -72,7 +69,7 @@ SCCRTN SccAddFilesFromSCC(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_E_PROJNOTOPEN|项目未打开。|  
 |SCC_E_OPNOTPERFORMED|连接到与指定的相同的项目不是 `lpAuxProjPath.`|  

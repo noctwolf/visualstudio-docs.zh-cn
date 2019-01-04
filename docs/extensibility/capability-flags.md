@@ -1,9 +1,6 @@
 ---
 title: 功能标志 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, capability flags
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36fa879ac08f81ffd61cb8febf4183ec268d3a6c
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 958cbc17c843ba4d23ac83b928f7b517ada93080
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231055"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922121"
 ---
 # <a name="capability-flags"></a>功能标志
 SCC_CAP_*xxx*标志是用来指示源代码管理插件的功能的位标志。 SCC_EXCAP_*xxx*标志是增量标志，指示扩展的功能并解析为整数值。  
@@ -53,7 +50,7 @@ SCC_CAP_*xxx*标志是用来指示源代码管理插件的功能的位标志。 
   
 ## <a name="capability-bits-added-in-version-12"></a>在版本 1.2 中添加功能位  
   
-|功能代码|“值”|描述|  
+|功能代码|值|描述|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|支持[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)。|  
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|支持[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)。|  
@@ -66,7 +63,7 @@ SCC_CAP_*xxx*标志是用来指示源代码管理插件的功能的位标志。 
 ## <a name="capability-bits-added-in-version-13"></a>在版本 1.3 中添加功能位  
  这些标志传递到一次一个地[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)函数来确定是否支持此功能。  
   
-|扩展的功能的代码|“值”|描述|  
+|扩展的功能的代码|值|描述|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|支持`SCC_CHECKOUT_LOCALVER`签出的选项。|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|支持[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)。|  

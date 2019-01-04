@@ -1,9 +1,6 @@
 ---
 title: 父元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a66f9fff773fb9a9542de13ceb97ad8732c319b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c025957bd0d3cf06bf73e1b35b5faa661386a0a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635851"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902432"
 ---
 # <a name="parent-element"></a>父元素
 按钮或组合框的父节点可能只是一个组。 菜单或组的父节点可能是任何其他菜单或组。 在中[CommandPlacement 元素](../extensibility/commandplacement-element.md)，此元素是必需的; 所有其他实例中为可选属性。 如果省略此元素，则父级的`Group_Undefined:0`将隐式。  
@@ -37,8 +34,8 @@ ms.locfileid: "39635851"
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必须的。 GUID 的 GUID/ID 命令标识符。|  
-|id|必须的。 ID 的 GUID/ID 命令标识符。|  
+|guid|必需。 GUID 的 GUID/ID 命令标识符。|  
+|id|必需。 ID 的 GUID/ID 命令标识符。|  
   
 ### <a name="child-elements"></a>子元素  
  无  

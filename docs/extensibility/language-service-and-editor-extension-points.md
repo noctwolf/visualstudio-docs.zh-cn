@@ -1,9 +1,6 @@
 ---
 title: 语言服务和编辑器扩展点 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2df3de4bfba0510cf3c8a5474a363a5ec579a79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927744"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907957"
 ---
 # <a name="language-service-and-editor-extension-points"></a>语言服务和编辑器扩展点
 该编辑器还提供可以扩展为 Managed Extensibility Framework (MEF) 组件部件，其中包括大多数语言服务功能的扩展点。 主要扩展点类别如下：  
@@ -273,7 +270,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>： 使用修饰与相关联。  
   
   > [!NOTE]
-  >  有关的示例<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，请参阅中的 HighlightWordTag 定义[演练： 突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
+  >  有关的示例<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，请参阅中的 HighlightWordTag 定义[演练：突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>： 与可展开或折叠大纲显示中的区域相关联。  
   
@@ -319,7 +316,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  若要将此格式定义应用于一个标记，引用类 （而不是显示名称） 的名称属性中设置的名称。  
   
 > [!NOTE]
->  有关的示例<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，请参阅中的 HighlightWordFormatDefinition 类[演练： 突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
+>  有关的示例<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，请参阅中的 HighlightWordFormatDefinition 类[演练：突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
   
 ## <a name="extend-adornments"></a>扩展修饰  
  修饰定义可添加到文本视图中显示的文本或文本视图自身中的视觉效果。 可以为任何类型的定义您自己修饰<xref:System.Windows.UIElement>。  
@@ -328,7 +325,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 修饰的名称。  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 相对于其他修饰层修饰的顺序。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers>定义默认的四个层： 选择、 大纲显示、 插入符号和文本。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 相对于其他修饰层修饰的顺序。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers>定义默认的四个层：选择、 大纲显示、 插入符号和文本。  
   
   下面的示例演示在修饰层定义导出特性。  
   
@@ -546,9 +543,9 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  有关实现 IntelliSense 源的详细信息，请参阅以下演练：  
   
- [演练： 显示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [演练：显示快速信息工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [演练： 显示签名帮助](../extensibility/walkthrough-displaying-signature-help.md)  
+ [演练：显示签名帮助](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [演练：显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)  
   
@@ -573,4 +570,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  有关使用 IntelliSense 控制器的详细信息，请参阅以下演练：  
   
- [演练： 显示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [演练：显示快速信息工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

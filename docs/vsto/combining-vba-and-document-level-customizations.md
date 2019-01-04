@@ -1,9 +1,6 @@
 ---
 title: 结合 VBA 和文档级自定义项
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.VBAInterop.InvalidAssemblyVersion
@@ -27,12 +24,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2dc8a08d7d921c650c8332d3c363d16f5c414b1c
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 7217665d0d5b9ea594b605739916e017184730fb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441712"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987883"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>结合 VBA 和文档级自定义项
   在属于 Microsoft Office Word 或 Microsoft Office Excel 的文档级自定义项的文档中，可以使用 Visual Basic for Applications (VBA) 代码。 可以从自定义程序集调用文档中的 VBA 代码，也可以将项目配置为使文档中的 VBA 代码能够调用自定义程序集中的代码。  
@@ -260,5 +257,3 @@ GetManagedClass(pdispInteropObject Object) As Object
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [在 Visual Studio 中比较 VBA 和 Office 解决方案](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)  
-  
-  

@@ -2,7 +2,6 @@
 title: XML 架构资源管理器中的上下文菜单
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f13a2dc434602819a423b8122a97675e332cab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d38dea96b109db9d60014df9bf7d4d420308f195
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939112"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898890"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>上下文菜单 （XML 架构资源管理器）
 
 以下上下文菜单项用于执行特定于架构的搜索和其他操作。
 
-## <a name="node-type-schema-set"></a>节点类型： 架构集
+## <a name="node-type-schema-set"></a>节点类型：架构集
 
 下表介绍了可用于架构集节点的选项。
 
@@ -32,7 +31,7 @@ ms.locfileid: "49939112"
 |**显示全局元素**|查找并突出显示架构集中的所有全局元素。|
 |**“属性”窗口**|此时将打开**属性**窗口 （如果尚未打开）。 此窗口显示有关节点的信息。|
 
-## <a name="node-type-namespace"></a>节点类型： Namespace
+## <a name="node-type-namespace"></a>节点类型：命名空间
  下表介绍了可用于命名空间节点的选项。
 
 |选项|描述|
@@ -43,7 +42,7 @@ ms.locfileid: "49939112"
 |**显示全局元素**|查找并突出显示所选命名空间中的所有全局元素。|
 |**“属性”窗口**|此时将打开**属性**窗口 （如果尚未打开）。 此窗口显示有关节点的信息。|
 
-## <a name="node-type-file"></a>节点类型： 文件
+## <a name="node-type-file"></a>节点类型：文件
  下表介绍了可用于文件节点的选项。
 
 |选项|描述|
@@ -65,7 +64,7 @@ ms.locfileid: "49939112"
 |**查看代码**|在 XML 编辑器中打开包含所选节点的文件。 在 XML 架构资源管理器中选定的项也会在 XML 编辑器中选定。|
 |**“属性”窗口**|此时将打开**属性**窗口 （如果尚未打开）。 此窗口显示有关节点的信息。|
 
-## <a name="node-type-element"></a>节点类型： 元素
+## <a name="node-type-element"></a>节点类型：元素
  除了上述全局节点选项之外，元素节点的上下文菜单还拥有以下选项：
 
 |选项|描述|
@@ -77,7 +76,7 @@ ms.locfileid: "49939112"
 |**显示替换组头**|对于作为替换组成员的全局元素，查找并突出显示所选元素的所有直接和间接头，如下所示：<br /><br /> 的在所选元素上指定替换组头。<br />的指定对其头元素替换组头。|
 |**生成示例 XML**|仅可用于全局元素。 生成全局元素的示例 XML 文件。|
 
-## <a name="node-type-global-types"></a>节点类型： 全局类型
+## <a name="node-type-global-types"></a>节点类型：全局类型
  除了上述全局节点选项之外，全局类型节点的上下文菜单还拥有以下选项：
 
 |选项|描述|
@@ -87,7 +86,7 @@ ms.locfileid: "49939112"
 |**显示所有派生类型**|查找并突出显示从所选类型直接和间接派生的所有类型。|
 |**显示所有上级**|显示所有父（基）类型。|
 
-## <a name="node-type-attribute"></a>节点类型： 属性
+## <a name="node-type-attribute"></a>节点类型：特性
  除了上述全局节点选项之外，特性节点的上下文菜单还拥有以下选项：
 
 |选项|描述|
@@ -96,7 +95,7 @@ ms.locfileid: "49939112"
 |**转到原始特性**|对于属性引用，导航至特性的实际定义。|
 |**显示所有引用**|对于全局特性，查找并突出显示对所选特性的所有引用（具有 `ref="selectedAttribute"` 的其他特性）。|
 
-## <a name="node-type-attribute-group"></a>节点类型： 属性组
+## <a name="node-type-attribute-group"></a>节点类型：属性组
  除了上述全局节点选项之外，特性组节点的上下文菜单还拥有以下选项：
 
 |选项|描述|
@@ -105,7 +104,7 @@ ms.locfileid: "49939112"
 |**显示所有成员**|查找并突出显示特性组的所有成员。|
 |**显示所有引用**|查找并突出显示对所选特性组的所有引用（具有 `ref="selectedAttributeGroup"` 的特性组）。|
 
-## <a name="node-type-named-group"></a>节点类型： 已命名的组
+## <a name="node-type-named-group"></a>节点类型：命名的组
  除了上述全局节点选项之外，命名组节点的上下文菜单还拥有以下选项：
 
 |选项|描述|

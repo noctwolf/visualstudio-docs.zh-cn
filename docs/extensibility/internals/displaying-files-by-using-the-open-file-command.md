@@ -1,9 +1,6 @@
 ---
 title: 使用打开文件命令显示文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 425433c3d67e654398fde1609b3f9c4d54e63648
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 59ff5d938c21c6344d1979fbfca94e8acb791db6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964658"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>使用打开文件命令显示文件
 以下步骤介绍如何处理 IDE**打开的文件**命令，可在找到**文件**菜单中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 步骤还说明项目应如何响应来自此命令的调用。  
@@ -52,10 +49,10 @@ ms.locfileid: "39498720"
   
 4.  只要 IDE 确定哪一个项目打开的文件，它将调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>在项目的方法。  
   
-5.  然后，项目已使用特定于项目的编辑器或标准编辑器打开该文件的选项。 有关详细信息，请参阅[如何： 打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)并[如何： 打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)分别。  
+5.  然后，项目已使用特定于项目的编辑器或标准编辑器打开该文件的选项。 有关更多信息，请参见[如何：打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)和[如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)分别。  
   
 ## <a name="see-also"></a>请参阅  
  [使用打开方式命令显示文件](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)   
- [如何： 打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)   
- [如何： 打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)
+ [如何：打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)   
+ [如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)

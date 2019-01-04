@@ -1,9 +1,6 @@
 ---
 title: Office 中的线程支持
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aafdad425d611d7d57c2ae8e53e505d3522ba38
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48a7ab96b26dc9410eef6977c53af7a3cf4a9841
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49871103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857888"
 ---
 # <a name="threading-support-in-office"></a>Office 中的线程支持
   本文提供了有关如何线程处理在 Microsoft Office 对象模型中支持的信息。 Office 对象模型不是线程安全的但可以使用的 Office 解决方案中的多个线程。 Office 应用程序是组件对象模型 (COM) 服务器。 COM 允许客户端在任意线程上调用 COM 服务器。 对于不是线程安全的 COM 服务器，COM 提供了一种机制来序列化并发调用，以便在服务器上执行任何时候只有一个逻辑线程。 此机制称为单线程单元 (STA) 模型。 调用进行序列化，因为调用方可能阻止一段时间中，而服务器太忙或处理在后台线程上的其他调用。  
@@ -79,5 +76,3 @@ ms.locfileid: "49871103"
  [线程处理 (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [线程处理 (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
  [使用线程与线程处理](/dotnet/standard/threading/using-threads-and-threading)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

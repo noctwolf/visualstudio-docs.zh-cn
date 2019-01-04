@@ -1,9 +1,6 @@
 ---
-title: 语法着色中自定义编辑器 |Microsoft 文档
-ms.custom: ''
+title: 自定义编辑器中的语法着色 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - syntax coloring
@@ -13,51 +10,51 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18e087e82754244b7abda530f733a6047447f4a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f82902ebcb82ea311617d3a7a767c5dabaedd311
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139456"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886645"
 ---
-# <a name="syntax-coloring-in-custom-editors"></a>语法着色中自定义编辑器
-Visual Studio 环境 SDK 编辑器，包括核心编辑器中，使用语言服务标识特定的语法项并将它们显示具有给定的文档视图的指定颜色。
+# <a name="syntax-coloring-in-custom-editors"></a>自定义编辑器中的语法着色
+Visual Studio 环境 SDK 编辑器，包括核心编辑器中，使用语言服务来标识特定的语法项并将其与给定的文档视图的指定颜色显示。
 
 ## <a name="colorization-requirements"></a>着色要求
  必须实现语言服务的着色器的所有编辑器：
 
-1.  使用一个对象，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>来管理要被着色的文本和一个对象，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>以提供文本的文档视图。
+1.  使用一个对象，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>来管理要进行着色的文本和一个对象，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>提供文本的文档视图。
 
-2.  通过查询使用语言服务的标识 GUID 的 VSPackage 的服务提供程序来获取特定语言服务的接口。
+2.  通过查询使用的语言服务的标识 GUID 的 VSPackage 的服务提供商来获取特定的语言服务的接口。
 
-3.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>方法的对象实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>。 此方法将关联的语言服务<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>VSPackage 使用来管理是被着色的文本的实现。
+3.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>对象实现的方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>。 此方法将关联的语言服务<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>实现的 VSPackage 使用来管理以进行着色的文本。
 
-## <a name="core-editor-usage-of-a-language-services-colorizer"></a>核心编辑器的语言服务的着色器的使用情况
- 核心编辑器、 分析和呈现的文本由语言服务的着色器的实例时获取具有着色器的语言服务将自动进行而不需要您采取任何进一步的干预。
+## <a name="core-editor-usage-of-a-language-services-colorizer"></a>核心编辑器使用的语言服务的着色器
+ 当具有着色器的语言服务通过核心编辑器、 分析和呈现的文本的语言服务的着色器的实例会自动进行而不需要您采取任何进一步的干预。
 
  IDE 以透明方式：
 
--   调用着色器根据需要用于分析和分析文本，因为它正在添加或修改的实现中<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>。
+-   调用着色器根据需要解析和分析文本，如添加或修改的实现中<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>。
 
--   确保提供的提供的文档视图显示<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>实现将更新和重新绘制使用着色器返回的信息。
+-   确保提供的提供的文档视图显示<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>实现更新和重新绘制使用着色器返回的信息。
 
 ## <a name="non-core-editor-usage-of-a-language-services-colorizer"></a>语言服务的着色器的非核心编辑器使用情况
- 非核心编辑器实例还可以使用语言服务的语法着色服务，但它们必须显式检索和应用服务的着色器和重绘其自身的文档视图。
+ 非核心编辑器实例还可以使用语言服务的语法颜色设置服务，但它们必须显式检索和应用服务的着色器，并重新绘制其文档视图本身。
 
  若要执行此操作，非核心编辑器必须：
 
-1.  获取语言服务的着色器对象 (可实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>)。 VSPackage 将这是通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>语言服务的接口上的方法。
+1.  获取语言服务的着色器对象 (它实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2>)。 VSPackage 将这是通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A>语言服务接口上的方法。
 
-2.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法来请求特定的一段文本被着色。
+2.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法来请求特定范围的文本进行着色。
 
-     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法返回的值的数组，一个用于在文本中的每个字母跨越着色。 它还标识为特定类型的着色的项，例如注释、 关键字或数据类型的文本范围。
+     <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法返回值的数组，一个用于在文本中的每个字母 s p a n 着色。 它还标识为特定类型的可着色项，例如注释、 关键字或数据类型的文本跨距。
 
-3.  使用返回的着色信息<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>重绘并显示其文本。
+3.  使用返回的着色信息<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>重绘和显示其文本。
 
 > [!NOTE]
-> 除了使用语言服务的着色器，VSPackage 可以选择使用通用的 Visual Studio 环境 SDK 文本着色机制。 此机制的详细信息，请参阅[使用字体和颜色](../extensibility/using-fonts-and-colors.md)。
+> 除了使用语言服务的着色器，VSPackage 可以选择使用常规用途的 Visual Studio 环境 SDK 文本着色机制。 此机制的详细信息，请参阅[使用字体和颜色](../extensibility/using-fonts-and-colors.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在旧版语言服务中进行语法着色](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [实现语法着色](../extensibility/internals/implementing-syntax-coloring.md)

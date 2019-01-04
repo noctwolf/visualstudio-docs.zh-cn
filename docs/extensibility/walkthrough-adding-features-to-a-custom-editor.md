@@ -1,9 +1,6 @@
 ---
-title: 演练： 将功能添加到自定义编辑器 |Microsoft Docs
-ms.custom: ''
+title: 演练：将功能添加到自定义编辑器 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
@@ -13,21 +10,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad57ead773e2daa8cc17937156e199cd7dddbbde
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873014"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850396"
 ---
-# <a name="walkthrough-add-features-to-a-custom-editor"></a>演练： 将功能添加到自定义编辑器
+# <a name="walkthrough-add-features-to-a-custom-editor"></a>演练：将功能添加到自定义编辑器
 创建自定义编辑器后，您可以向其添加更多的功能。  
   
 ## <a name="to-create-an-editor-for-a-vspackage"></a>若要创建 VSPackage 的编辑器  
   
 1.  使用 Visual Studio 包项目模板创建自定义编辑器。  
   
-     有关详细信息，请参阅[演练： 创建自定义编辑器](../extensibility/walkthrough-creating-a-custom-editor.md)。  
+     有关详细信息，请参见[演练：创建自定义编辑器](../extensibility/walkthrough-creating-a-custom-editor.md)。  
   
 2.  决定您编辑器来支持单个视图或多个视图。  
   
@@ -54,7 +51,7 @@ ms.locfileid: "49873014"
         > [!NOTE]
         >  调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>获取一个指向`IVsFileChangeEx`。  
   
-7.  协调与源代码管理的文档编辑事件。 请执行这些步骤：  
+7.  协调与源代码管理的文档编辑事件。 请执行以下步骤：  
   
     1.  获取一个指向`IVsQueryEditQuerySave2`通过调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>。  
   
@@ -66,13 +63,13 @@ ms.locfileid: "49873014"
   
          此方法会提示用户保存文件，如果它尚未保存，或自上次保存以来已更改。  
   
-8.  启用**属性**窗口中显示的文本在编辑器中选择的属性。 请执行这些步骤：  
+8.  启用**属性**窗口中显示的文本在编辑器中选择的属性。 请执行以下步骤：  
   
     1.  调用<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>每个时间文本选择发生更改，传递的实现中<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>。  
   
     2.  调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>服务，以获取一个指向<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>。  
   
-9. 使用户能够拖放到编辑器之间的项和**工具箱**，或之间外部编辑器 （如 Microsoft Word) 和**工具箱**。 请执行这些步骤：  
+9. 使用户能够拖放到编辑器之间的项和**工具箱**，或之间外部编辑器 （如 Microsoft Word) 和**工具箱**。 请执行以下步骤：  
   
     1.  实现`IDropTarget`上您的编辑器来提醒你的编辑器是拖放目标的 IDE。  
   
@@ -118,7 +115,7 @@ ms.locfileid: "49873014"
   
 12. 实现上下文相关帮助支持。  
   
-     此步骤允许您提供的 F1 帮助和动态帮助窗口支持你的编辑器中的项。 有关详细信息，请参阅[如何： 为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)。  
+     此步骤允许您提供的 F1 帮助和动态帮助窗口支持你的编辑器中的项。 有关更多信息，请参见[如何：为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)。  
   
 13. 通过实现公开自动化对象模型从你的编辑器`IDispatch`接口。  
   
@@ -157,4 +154,4 @@ ms.locfileid: "49873014"
   
 ## <a name="see-also"></a>请参阅  
  [参与自动化模型](../extensibility/internals/contributing-to-the-automation-model.md)   
- [如何： 为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)
+ [如何：为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)

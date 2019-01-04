@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5988876bc1cdc7d186efb60d7d3875f9946bfc7d
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: c0f69d660a1693e42662a82a2a19ce790725fb43
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869250"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 文件
 
@@ -97,7 +96,7 @@ ms.locfileid: "50967514"
 
 名字对象系统要求 XML 树中的同级类具有不同的名称。 因此，如果你尝试保存某个域特定语言定义（例如，它具有两个名称相同的类），则会发生验证错误。 在保存 DslDefinition 文件前，应始终更正此类重复名称错误，以便稍后可正确地重新加载该文件。
 
-每个类型都有其自己的名字对象类型：DomainClassMoniker、DomainRelationshipMoniker 等等。
+每个类型具有其自己的名字对象类型：DomainClassMoniker、 DomainRelationshipMoniker 等等。
 
 ## <a name="types"></a>类型
 
@@ -228,7 +227,7 @@ ms.locfileid: "50967514"
 
 每个关系都包含具有以下特性的源和目标角色：
 
--   `RolePlayer` 特性引用了链接实例的域类：OutPort 对应于源，InPort 对应于目标。
+-   `RolePlayer`属性引用了链接实例的域类：Outport 对应于源，inport 对应于目标。
 
 -   `Multiplicity` 特性具有四个可能值（ZeroMany、ZeroOne、One 和 OneMany）。 此特性是指可与一个角色扮演者关联的关系的链接数。
 

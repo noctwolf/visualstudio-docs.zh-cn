@@ -1,9 +1,6 @@
 ---
-title: 提供代码的自动化 |Microsoft 文档
-ms.custom: ''
+title: 提供适用于代码自动化 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - CodeModel object
@@ -13,27 +10,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f9dbb7a8ddad39f01f5b29443168eebe12a2da8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3922de57a275dd24ce3161209b7775db104afada
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896430"
 ---
-# <a name="providing-automation-for-code"></a>提供代码的自动化
-创建自动化模型为你的代码不是必需的。 环境 SDK 不提供有关执行此操作的示例。 代码模型见解，请参阅<xref:EnvDTE.CodeModel>对象。  
+# <a name="providing-automation-for-code"></a>提供适用于 Code 的自动化
+不需要创建你的代码的自动化模型。 环境 SDK 不提供用于执行此操作的一个示例。 代码模型见解，请参阅<xref:EnvDTE.CodeModel>对象。  
   
- 若要实现代码模型，则必须实现由您的内部数据结构的所有接口。 对象必须源自`IDispatch`类。  
+ 若要实现代码模型，必须实现任何接口，这由您的内部数据结构。 对象必须派生自`IDispatch`类。  
   
- 扩展时，对象<xref:EnvDTE.CodeModel>和<xref:EnvDTE.FileCodeModel>，从可用<xref:EnvDTE.Project>对象，并如下所示：  
+ 扩展时，对象<xref:EnvDTE.CodeModel>并<xref:EnvDTE.FileCodeModel>，可从<xref:EnvDTE.Project>对象，并如下所示：  
   
  <xref:EnvDTE.Project.CodeModel%2A>  
   
  <xref:EnvDTE.ProjectItem.FileCodeModel%2A>  
   
- 你可以选择实现只需`CodeModel`或`FileCodeModel`从返回的对象中接口你`Project`和<xref:EnvDTE.ProjectItem>对象。 提供从适合于你的项目系统此接口的任何功能。  
+ 你可以选择实现只需`CodeModel`或`FileCodeModel`接口从返回的对象中你`Project`和<xref:EnvDTE.ProjectItem>对象。 提供此接口的适用于你的项目系统中的任何功能。  
   
- 如果你想要添加的功能，例如方法或属性，未提供的标准`CodeModel`和`FileCodeModel`接口，创建你自己继承自标准的接口。 请务必记下此信息与你的项目系统以便最终用户将了解来查找它。 返回的标准接口，但用户可以调用`QueryInterface`方法或强制转换为你的接口，如果它已知的存在。  
+ 如果你想要添加功能，例如方法或属性，就无法从标准`CodeModel`和`FileCodeModel`接口，创建您自己继承自标准的界面。 请确保与你的项目系统进行记录，以便最终用户将知道要查找它。 返回的标准接口，但用户可以调用`QueryInterface`方法或强制转换为你的接口，如果它已知的存在。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自动化模型概述](../../extensibility/internals/automation-model-overview.md)

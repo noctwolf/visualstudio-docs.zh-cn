@@ -1,9 +1,6 @@
 ---
 title: IDebugProgram2::Attach |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgram2::Attach
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5de330bc800e4f967fdc1f3c08af18f6bf46fecd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5415a79b3c371f89b215f65c54f371eeb0319ead
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947616"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
 将附加到该程序。  
@@ -28,13 +25,13 @@ ms.locfileid: "49935102"
 ## <a name="syntax"></a>语法  
   
 ```cpp  
-HRESULT Attach(   
+HRESULT Attach(   
    IDebugEventCallback2* pCallback  
 );  
 ```  
   
 ```csharp  
-int Attach(   
+int Attach(   
    IDebugEventCallback2 pCallback  
 );  
 ```  
@@ -46,7 +43,7 @@ int Attach(
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了一些可能的错误代码。  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定的程序已附加到调试器。|  
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|在附加过程中发生了安全冲突。|  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 实现错误标记 |Microsoft Docs
-ms.custom: ''
+title: 如何：实现错误标记 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb6e511fa899680338831f3bc8e2a411f2126006
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2e074a5e293d5b76f19abd97354b10becd603c5b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861158"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931497"
 ---
-# <a name="how-to-implement-error-markers"></a>如何： 实现错误标记
+# <a name="how-to-implement-error-markers"></a>如何：实现错误标记
 错误标记 （或红色的波浪形下划线） 是最困难的文本编辑器自定义实现。 但是，它们提供给你的 VSPackage 的用户的好处可以远远超过，让他们的成本。 错误标记略有标记语言分析器认为不正确并波浪或波浪红线的文本。 此指标帮助程序员通过直观地显示不正确的代码。  
   
  使用文本标记来实现红色的波浪形下划线。 一般来说，语言服务红色的波浪形下划线的文本缓冲区将作为添加到背景通过在空闲时或在后台线程中。  
@@ -29,11 +26,11 @@ ms.locfileid: "49861158"
   
 1. 选择要在其下放置的红色的波浪下划线的文本。  
   
-2. 创建类型的标记`MARKER_CODESENSE_ERROR`。 有关详细信息，请参阅[如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)。  
+2. 创建类型的标记`MARKER_CODESENSE_ERROR`。 有关更多信息，请参见[如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)。  
   
 3. 此后，传入<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口指针。  
   
-   此过程还允许您通过给定标记创建的提示文本或特殊的上下文菜单。 有关详细信息，请参阅[如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)。  
+   此过程还允许您通过给定标记创建的提示文本或特殊的上下文菜单。 有关更多信息，请参见[如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)。  
   
    错误标记才能显示以下对象是必需的。  
   
@@ -58,6 +55,6 @@ ms.locfileid: "49861158"
   
 ## <a name="see-also"></a>请参阅  
  [文本标记中使用传统的 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
- [如何： 创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)   
- [如何： 使用文本标记](../extensibility/how-to-use-text-markers.md)
+ [如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
+ [如何：创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)   
+ [如何：使用文本标记](../extensibility/how-to-use-text-markers.md)

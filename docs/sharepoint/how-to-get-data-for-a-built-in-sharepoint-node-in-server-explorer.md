@@ -1,9 +1,6 @@
 ---
-title: 如何： 在服务器资源管理器中的内置 SharePoint 节点获取数据 |Microsoft Docs
-ms.custom: ''
+title: 如何：在服务器资源管理器中的内置 SharePoint 节点获取数据 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06965449cd07fb39480eb1974fc1c90e2d126c73
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e9ef30de63789072f021aaded87dd5e9c8071637
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118748"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898968"
 ---
-# <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>如何： 在服务器资源管理器中的内置 SharePoint 节点获取数据
+# <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>如何：在服务器资源管理器中的内置 SharePoint 节点获取数据
   在每个内置 SharePoint 节点**服务器资源管理器**，可以为该节点表示的基础 SharePoint 组件获取数据。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。  
   
 ## <a name="example"></a>示例  
@@ -34,7 +31,7 @@ ms.locfileid: "37118748"
   
  此示例使用 SharePoint 项目服务获取<xref:EnvDTE.DTE>对象，用于打开列出了在 Visual Studio 中。 有关 SharePoint 项目服务的详细信息，请参阅[使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)。  
   
- 若要创建的 SharePoint 节点扩展的基本任务的详细信息，请参阅[如何： 扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。  
+ 若要创建的 SharePoint 节点扩展的基本任务的详细信息，请参阅[如何：扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。  
   
 ## <a name="compile-the-code"></a>编译代码  
  此示例需要引用以下程序集：  
@@ -52,7 +49,6 @@ ms.locfileid: "37118748"
   
 ## <a name="see-also"></a>请参阅
  [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [如何： 扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
+ [如何：扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)   
  [部署 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  

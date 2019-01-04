@@ -20,13 +20,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: ac75be41d547905b122284fa09a654be368d73e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967280"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907821"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用依赖项关系图验证代码
 
@@ -55,7 +54,7 @@ ms.locfileid: "50967280"
 
 若要查看哪些版本的 Visual Studio 支持此功能，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
-你可以验证代码手动从 Visual Studio 中打开的依赖项关系图或从命令提示符。 您还可以验证代码自动运行本地生成或 Azure 管道构建系统时。 请参阅[第 9 频道视频： 设计和验证体系结构使用依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。
+你可以验证代码手动从 Visual Studio 中打开的依赖项关系图或从命令提示符。 您还可以验证代码自动运行本地生成或 Azure 管道构建系统时。 请参阅[第 9 频道视频：设计和验证体系结构使用依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。
 
 > [!IMPORTANT]
 > 如果你想要运行使用 Team Foundation Server (TFS) 的层验证，还必须在生成服务器上安装相同版本的 Visual Studio。
@@ -231,7 +230,7 @@ ms.locfileid: "50967280"
 | DV0001:**无效的依赖关系** | 代码元素 （命名空间、 类型和成员） 映射到层引用代码元素映射到另一层，但这些依赖关系验证关系图包含此层中的各层之间没有任何依赖项箭头时，会报告此问题。 这是依赖关系约束冲突。 |
 | DV1001:**无效的命名空间名称** | 此问题将报告与层"允许 Namespace 名称"属性未包含在其中定义此代码元素的命名空间关联的代码元素上。 这是一个命名的约束冲突。 请注意，"允许 Namespace 名称"的语法是以分号列表的命名空间中的代码与关联的元素是层允许进行定义。 |
 | DV1002:**不可引用命名空间的依赖关系** | 此问题将报告上一个代码元素与层关联和引用层"不可引用 Namespace"属性中定义的命名空间中定义的另一个代码元素。 这是一个命名的约束冲突。 请注意，"不可引用命名空间"属性被定义为不应与此层相关联的代码元素中引用的命名空间的以分号分隔列表。 |
-| DV1003:**不允许的命名空间名称** | 与"不允许使用 Namespace 名称"属性包含在其中定义此代码元素的命名空间的层关联的代码元素上报告此问题。 这是一个命名的约束冲突。 请注意，"不允许命名空间名称"属性被定义为命名空间中的代码不应定义与此层相关联的元素的以分号分隔列表。 |
+| DV1003:**禁用的命名空间名称** | 与"不允许使用 Namespace 名称"属性包含在其中定义此代码元素的命名空间的层关联的代码元素上报告此问题。 这是一个命名的约束冲突。 请注意，"不允许命名空间名称"属性被定义为命名空间中的代码不应定义与此层相关联的元素的以分号分隔列表。 |
 | DV3001:**缺少链接** | 层 '*LayerName*链接到*项目*找不到其中。 是否缺少程序集引用? |
 | DV9001:**体系结构分析找到的内部错误** | 结果可能不完整。 有关详细信息，请参阅详细的生成事件日志或输出窗口。 |
 
@@ -239,4 +238,4 @@ ms.locfileid: "50967280"
 
 - [Visual Studio 2017 中的实时依赖项验证](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [在开发过程中验证系统](../modeling/validate-your-system-during-development.md)
-- [视频： 验证实时体系结构依赖项](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [视频：验证你在真实时间中的体系结构依赖关系](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

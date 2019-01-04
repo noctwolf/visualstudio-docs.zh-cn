@@ -1,9 +1,6 @@
 ---
-title: 如何： 设置 Office 解决方案的配置信息
-ms.custom: ''
+title: 如何：设置 Office 解决方案的配置信息
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0557301c00285a93cc173e872459d812c61fdca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a97ad1147a109723ffcededf485ed7865e0697f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949456"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916635"
 ---
-# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>如何： 设置 Office 解决方案的配置信息
+# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>如何：设置 Office 解决方案的配置信息
   配置文件可用于配置特定于在 Office 解决方案的设置。 可以指定程序集绑定策略、 远程处理对象、 调试和跟踪设置等设置。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -50,5 +47,3 @@ ms.locfileid: "49949456"
  [.NET Framework 的配置文件架构](/dotnet/framework/configure-apps/file-schema/index)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)  
-  
-  

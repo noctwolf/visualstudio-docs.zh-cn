@@ -1,9 +1,6 @@
 ---
 title: 核心编辑器内 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37c62ebad5b5f119c9acf5b62b14db6743949c19
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 01756778c7937654339fe0fc41b752ed02659d3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500444"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828519"
 ---
 # <a name="inside-the-core-editor"></a>在核心编辑器
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器是一组让你修改和查询文本信息的多个组件。 如果已使用传统的 API 自定义核心编辑器，可以继续使用这些自定义，这将通过编辑器适配器路由。 建议，但是，调整到新的编辑器 API 自定义设置。  
@@ -47,7 +44,7 @@ ms.locfileid: "39500444"
  [传统的 API 中的文本缓冲区事件](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  提供了一系列使用的文本缓冲区事件通知的接口。  
   
- [如何： 注册文本缓冲区事件与传统的 API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [如何：注册文本缓冲区事件与传统的 API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  介绍如何向建议文本缓冲区的事件。  
   
  [使用文本管理器来监视全局设置](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -66,7 +63,7 @@ ms.locfileid: "39500444"
  介绍了某种语言服务的控制代码修饰的实例化。  
   
 ## <a name="related-sections"></a>相关章节  
- [演练： 创建核心编辑器和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [演练：创建核心编辑器和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  提供有关如何从托管代码启动核心编辑器的分步说明。  
   
  [下拉栏](../extensibility/drop-down-bar.md)  
@@ -75,8 +72,8 @@ ms.locfileid: "39500444"
  [文本标记中使用传统的 API](../extensibility/using-text-markers-with-the-legacy-api.md)  
  说明文本标记和如何在核心编辑器中使用的概念，并列出了用于访问和管理文本标记的接口。  
   
- [如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)  
+ [如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)  
  提供有关如何创建文本标记以及如何将自定义命令添加到快捷菜单的分步说明。  
   
- [如何： 创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)  
+ [如何：创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)  
  提供有关如何创建自定义文本标记以及如何提供的标记类型为服务的分步说明。

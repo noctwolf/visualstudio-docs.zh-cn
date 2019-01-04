@@ -1,9 +1,6 @@
 ---
 title: 什么&#39;Visual Studio 2015 SDK 中的新增功能的 s |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4926ed9fafb64664d3ac0426466d90611cae4450
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4c5a84da9fef0bee2a4701337ea62864f5fd34b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952837"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>什么&#39;s Visual Studio 2015 SDK 中的新增功能
 Visual Studio SDK 的 Visual Studio 2015 中，更新，Visual Studio 2015 和 Visual Studio 2017 具有以下新的和更新功能。  
@@ -62,12 +59,12 @@ Visual Studio SDK 的 Visual Studio 2015 中，更新，Visual Studio 2015 和 V
 > [!NOTE]
 >  可以继续使用你的项目使用的安装 VS SDK 引用程序集 (位于下\<Visual Studio 安装位置 > \ VSSDK\VisualStudioIntegration\Common\Assemblies) 和可扩展性的现有项目不需要为升级为使用 NuGet 包。  项目**引用 / 添加引用**对话框仍会继续使用已安装 VS SDK 引用程序集。  
 >   
->  如果你想要修改现有项目以使用 NuGet，请参阅[如何： 将 VSPackages 迁移到 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)具有一节介绍了可扩展性项目更新对 NuGet 包。  
+>  如果你想要修改现有项目以使用 NuGet，请参阅[如何：将 VSPackages 迁移到 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)具有一节介绍了可扩展性项目更新对 NuGet 包。  
   
 ## <a name="light-bulbs"></a>灯泡  
  Roslyn 项目提供一个编写扩展代码的最令人兴奋的新方法。 有关详细信息，请参阅[Roslyn](https://github.com/dotnet/Roslyn)。  
   
- 电灯泡是附带 VSSDK 的新功能。 它们是使用 Visual Studio 编辑器中，展开此项可显示的代码重构操作或内置代码分析器所发现的问题的修补程序的一组的图标。 有关详细信息，请参阅[演练： 显示灯泡建议](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)。  
+ 电灯泡是附带 VSSDK 的新功能。 它们是使用 Visual Studio 编辑器中，展开此项可显示的代码重构操作或内置代码分析器所发现的问题的修补程序的一组的图标。 有关详细信息，请参见[演练：显示灯泡建议](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)。  
   
 ## <a name="updated-user-experience-guidelines"></a>已更新的用户体验指南  
  用于 Visual Studio 中设计新的扩展或功能？ 请查看更新和扩展[Visual Studio 用户体验指南](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。  您会发现[颜色令牌](../extensibility/ux-guidelines/shared-colors-for-visual-studio.md)，[字号](../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)，[对话框布局规范](../extensibility/ux-guidelines/layout-for-visual-studio.md)，和你需要将新 UI 与 Visual Studio 无缝集成其他指南。

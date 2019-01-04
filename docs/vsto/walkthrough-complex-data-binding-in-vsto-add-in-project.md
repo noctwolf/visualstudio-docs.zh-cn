@@ -1,9 +1,6 @@
 ---
-title: 演练： VSTO 外接程序项目中的复杂数据绑定
-ms.custom: ''
+title: 演练：VSTO 外接程序项目中的复杂数据绑定
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: af82d74c0e0a0446b759a06a9e874a39fc57b6fd
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ce629e01192137474382452690e6d7051bb163ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831766"
 ---
-# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>演练： VSTO 外接程序项目中的复杂数据绑定
+# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>演练：VSTO 外接程序项目中的复杂数据绑定
   可以将数据绑定到 VSTO 外接程序项目中的宿主控件和 Windows 窗体控件。 本演练演示如何在运行时向 Microsoft Office Excel 工作表中添加控件并将控件绑定到数据。
 
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]
@@ -46,9 +43,9 @@ ms.locfileid: "50672518"
 
 -   对附加了 `AdventureWorksLT` 示例数据库且正在运行的 SQL Server 2005 或 SQL Server 2005 Express 实例的访问权限。 您可以下载`AdventureWorksLT`数据库从[CodePlex 网站](http://go.microsoft.com/fwlink/?LinkId=115611)。 有关附加数据库的详细信息，请参阅下列主题：
 
-    -   若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何： 附加数据库 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
+    -   若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何：附加数据库 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
 
-    -   若要使用命令行中附加数据库，请参阅[如何： 将数据库文件附加到 SQL Server Express](/previous-versions/sql/)。
+    -   若要使用命令行中附加数据库，请参阅[如何：将数据库文件附加到 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-new-project"></a>创建新项目
  第一步是创建 Excel VSTO 外接程序项目。
@@ -57,7 +54,7 @@ ms.locfileid: "50672518"
 
 1.  使用 Visual Basic 或 C# 创建一个名为“从数据库填充工作表” 的 Excel VSTO 外接程序项目。
 
-     有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 会打开 `ThisAddIn.vb` 或 `ThisAddIn.cs` 文件，并将“从数据库填充工作表”  项目附加到“解决方案资源管理器” 中。
 
@@ -135,14 +132,14 @@ ms.locfileid: "50672518"
 
 - [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)
 - [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [如何： 用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [如何： 用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [如何： 用服务中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [如何： 用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [如何： 滚动查看数据库记录工作表中](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [如何： 使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [演练： 文档级项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
-- [演练： 文档级项目中的复杂数据绑定](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
+- [如何：用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [如何：用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [如何：用服务中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [如何：用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [如何：滚动工作表中的数据库记录](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [如何：使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [演练：在文档级项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
+- [演练：在文档级项目中的复杂数据绑定](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)
 - [使用本地数据库文件在 Office 解决方案概述](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [添加新数据源](../data-tools/add-new-data-sources.md)
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

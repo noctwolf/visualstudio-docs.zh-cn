@@ -2,7 +2,6 @@
 title: 使用和配置 Roslyn 分析器
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 660abf31d764d0dd78b4d83c46d0931fb790f14f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817036"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873218"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>配置和使用 Roslyn 分析程序规则
 
@@ -165,7 +164,7 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 
 下图显示了构建包含分析器规则冲突的项目的命令行生成输出：
 
-![与规则冲突的 MSBuild 输出](media/command-line-build-analyzers.png)
+![带规则冲突的 MSBuild 输出](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>请参阅
 

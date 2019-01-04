@@ -1,9 +1,6 @@
 ---
-title: 如何： 使用旧 API 的文本缓冲区事件注册 |Microsoft Docs
-ms.custom: ''
+title: 如何：为使用旧 API 的文本缓冲区事件注册 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register for text buffer events
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ffe8362f26a55fdb6a9fe236782965a2062ed69
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3eb5706cea2ec0e79ed29812beb94d39a117c61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886002"
 ---
-# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>如何： 注册文本缓冲区事件与传统的 API
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>如何：注册文本缓冲区事件与传统的 API
 如果使用传统的 API 来访问文本缓冲区，则应注册文本缓冲区事件，如下面的过程中所示。  
   
 ## <a name="to-advise-text-buffer-events"></a>若要向建议文本缓冲区事件  

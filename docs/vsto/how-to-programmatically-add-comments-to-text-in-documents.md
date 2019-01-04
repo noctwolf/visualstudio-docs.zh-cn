@@ -1,9 +1,6 @@
 ---
 title: 如何：以编程方式向文档中的文本添加注释
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5e7900f5316e64ef884d857bfc1448ac315fd19
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 677f0ba2cf02f4dd62759ea5f125c91290dc0762
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804599"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857022"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>如何：以编程方式向文档中的文本添加注释
   文档类的注释属性将注释添加到 Microsoft Office Word 文档中的文本范围。  
@@ -52,5 +49,3 @@ ms.locfileid: "53804599"
 ## <a name="see-also"></a>请参阅  
  [如何：以编程方式从文档中删除所有注释](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [文档主机项](../vsto/document-host-item.md)  
-  
-  

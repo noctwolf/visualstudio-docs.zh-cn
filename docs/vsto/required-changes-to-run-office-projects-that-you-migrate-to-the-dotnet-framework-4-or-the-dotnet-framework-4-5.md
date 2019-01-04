@@ -1,9 +1,6 @@
 ---
 title: 运行迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目所需的更改
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 78a46fbffdbf849ab9f9584b72c520d5aa1d3624
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 819a3f1c0ea4541bee55dca2402cac6dbf9848cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917613"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>运行迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目所需的更改
   如果 Office 项目的目标框架更改为[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本从.NET Framework 的早期版本，必须执行以下任务以确保在开发计算机和最终用户计算机上可以运行该解决方案：  
@@ -67,12 +64,10 @@ ms.locfileid: "50670788"
 ## <a name="update-the-prerequisites-for-deployment"></a>更新部署的先决条件  
  当你重定向到 Office 项目[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本，则还必须更新中的相应.NET Framework 先决条件**先决条件**对话框。 否则，ClickOnce 部署或 InstallShield Limited Edition 项目将检查并安装 .NET Framework 的早期版本。  
   
- 有关向最终用户计算机更新部署的先决条件的详细信息，请参阅[如何： 以运行 Office 解决方案的最终用户计算机上安装的必备组件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
+ 有关向最终用户计算机更新部署的先决条件的详细信息，请参阅[如何：若要运行 Office 解决方案的最终用户计算机上安装的必备组件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
   
 ## <a name="reinstall-solutions-on-end-user-computers"></a>最终用户计算机上重新安装解决方案  
  如果使用 ClickOnce 部署面向 .NET Framework 3.5 的 Office 解决方案，然后将项目重新定位到 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则最终用户必须卸载解决方案，然后在发布解决方案后进行重新安装。 如果重新发布重定目标的解决方案和最终用户计算机上更新该解决方案，最终用户将收到<xref:System.Runtime.InteropServices.COMException>在运行时已更新的解决方案。  
   
 ## <a name="see-also"></a>请参阅  
  [迁移到.NET Framework 4 或更高版本的 Office 解决方案](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)  
-  
-  

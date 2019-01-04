@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式搜索中工作表范围内的文本
-ms.custom: ''
+title: 如何：以编程方式搜索中工作表范围内的文本
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a323336979e16be376cfcd3da44cbc9b12bd73ea
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: dba0ce5928b61b1ec6b5777e1922cc68f8ed57ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671958"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826122"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>如何： 以编程方式在工作表范围内搜索文本
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>如何：以编程方式在工作表范围内搜索文本
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>方法的<xref:Microsoft.Office.Interop.Excel.Range>对象可用于搜索的范围内的文本。 此文本也可以是任何错误字符串，如出现在工作表单元格`#NULL!`或`#VALUE!`。 有关错误字符串的详细信息，请参阅[单元格错误值](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -34,7 +31,7 @@ ms.locfileid: "50671958"
 > [!NOTE]  
 >  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>后到达范围末尾的操作方法的搜索会返回到搜索范围的开头。 你的代码必须确保搜索不会不环绕在周围的无限循环。 示例过程显示了一种方法来处理这种使用<xref:Microsoft.Office.Interop.Excel.Range.Address%2A>属性。  
   
- ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现： 使用 Excel 外接程序中的 Find 方法？](http://go.microsoft.com/fwlink/?LinkID=130294)。  
+ ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：在 Excel 外接程序中使用 Find 方法？](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>若要在工作表范围内搜索文本  
   
@@ -81,8 +78,6 @@ ms.locfileid: "50671958"
   
 ## <a name="see-also"></a>请参阅  
  [使用范围](../vsto/working-with-ranges.md)   
- [如何： 以编程方式将样式应用于工作簿中的范围](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [如何： 以编程方式引用在代码中的工作表范围](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [如何：以编程方式将样式应用于工作簿中的范围](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [如何：以编程方式引用在代码中的工作表范围](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: c3859c9818c4312628ef3d0cf9f3e6277a7ae424
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885283"
 ---
 # <a name="t4-template-directive"></a>T4 模板指令
 
@@ -54,7 +53,7 @@ Visual Studio T4 文本模板通常以开头`template`指令，指定应如何�
  
 ""，不变的区域性，它是默认值。
 
-表示为 xx-XX 形式字符串的区域性。 例如：en-US、ja-JP、de-CH、de-DE。 有关详细信息，请参阅 <xref:System.Globalization.CultureInfo?displayProperty=fullName> 。
+表示为 xx-XX 形式字符串的区域性。 例如：en-US、ja-JP、de-CH、de-DE。 有关详细信息，请参阅<xref:System.Globalization.CultureInfo?displayProperty=fullName>。
 
 Culture 特性指定将表达式块转换为文本时要使用的区域性。
 

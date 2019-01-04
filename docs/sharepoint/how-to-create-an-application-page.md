@@ -1,13 +1,8 @@
 ---
-title: 如何： 创建应用程序页 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建应用程序页 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f390ddf14925b43f1aa1d9e79db05e2aa64f234
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 659aa277263dab1950309c27e307ddb641bab6b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820220"
 ---
-# <a name="how-to-create-an-application-page"></a>如何： 创建应用程序页
+# <a name="how-to-create-an-application-page"></a>如何：创建应用程序页
   可以为一个或多个 SharePoint 网站创建 ASP.NET 网页。 在 SharePoint 中，这些页称为应用程序页。 与站点页上，不同的应用程序页包含页的后面运行的代码。 有关详细信息，请参阅[为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)。  
   
 ### <a name="to-create-an-application-page"></a>若要创建应用程序页  
@@ -50,9 +45,8 @@ ms.locfileid: "51296198"
   
 7.  如果你要处理控件事件，请向应用程序页的代码文件添加代码。  
   
-     代码文件显示如果展开 ASP.NET 页文件的节点，而且 *.cs*或 *.vb*扩展，具体取决于项目的语言。 有关如何创建应用程序页的端到端示例，请参阅[演练： 创建 SharePoint 应用程序页](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)。  
+     代码文件显示如果展开 ASP.NET 页文件的节点，而且 *.cs*或 *.vb*扩展，具体取决于项目的语言。 有关如何创建应用程序页的端到端示例，请参阅[演练：创建 SharePoint 应用程序页](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)。  
   
 ## <a name="see-also"></a>请参阅
  [为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)   
- [演练： 创建 SharePoint 应用程序页](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  
-  
+ [演练：创建 SharePoint 应用程序页](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)  

@@ -1,9 +1,6 @@
 ---
 title: CreatePkgDef 实用工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - package definition
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47fee24292ee92b34cea6add21bc220a1a17f135
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5c18e77405cd4e48c89d3b481937c7d837488cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910930"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 实用工具
 采用 Visual Studio 扩展中作为参数的.dll 文件，并创建 *.pkgdef*随附的文件 *.dll*文件。 *.Pkgdef*文件包含否则会在安装该扩展时写入到系统注册表的所有信息。  
@@ -37,7 +34,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   
 ## <a name="arguments"></a>自变量  
  **/ out =&lt;文件名&gt;**  
- 必须的。 设置的名称 *.pkgdef*输出文件&lt;FileName&gt;。  
+ 必需。 设置的名称 *.pkgdef*输出文件&lt;FileName&gt;。  
   
  /codebase  
  可选。 强制注册**基本代码**实用程序。  

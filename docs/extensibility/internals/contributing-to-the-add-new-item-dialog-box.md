@@ -1,9 +1,6 @@
 ---
 title: 参与到添加新建项对话框 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, contributing to
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41947e3078eb3cd344774afe533a4fa0a9d8324a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 0b9e86b002c212f63076c065d7aca3b7649513b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511939"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865656"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>贡献添加新项对话框
 项目子类型可以提供完整的项的新目录**添加新项**对话框中的注册**添加项**下的模板**项目**注册表子项。  

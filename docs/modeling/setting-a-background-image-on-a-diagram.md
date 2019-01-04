@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 82466360fd4f891d28e0218a540d27c803a39662
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 63243df353dc141363a3ebfdd61a5f90a2fe6258
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858869"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887862"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>在图表上设置背景图像
 在 Visual Studio 可视化和建模 SDK 中，可以为生成的设计器设置背景图像，通过使用自定义代码。
@@ -45,7 +44,7 @@ ms.locfileid: "47858869"
 
 11. 如果缺少 Resources.Designer.cs，则单击文件 Resources.resx 中**解决方案资源管理器**。
 
-12. 在中**属性**窗口中，将`Custom Tool`属性设置为`ResXFileCodeGenerator`。
+12. 在“属性”  窗口中，将 `Custom Tool` 属性设置为 `ResXFileCodeGenerator`。
 
 13. 在**解决方案资源管理器**，右键单击 Dsl 项目，依次指向**添加**，然后单击**新文件夹**。
 

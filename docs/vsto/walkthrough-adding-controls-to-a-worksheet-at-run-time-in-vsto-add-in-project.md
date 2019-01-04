@@ -1,9 +1,6 @@
 ---
-title: 演练： 将控件添加到在运行时在 VSTO 外接程序项目中的工作表
-ms.custom: ''
+title: 演练：将控件添加到在运行时在 VSTO 外接程序项目中的工作表
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b3671b00ecad0380dd38e770beeef703fa916fac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5aa574abb6f0d14d17a9bfb73c28a6c330885bc2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968639"
 ---
-# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>演练： 将控件添加到在运行时在 VSTO 外接程序项目中的工作表
+# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>演练：将控件添加到在运行时在 VSTO 外接程序项目中的工作表
   可通过使用 Excel VSTO 外接程序向任何打开的工作表添加控件。 本演练演示如何利用功能区使用户能够向工作表添加 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.ListObject>。 有关信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
- **适用于：** excel，本主题中的信息适用于 VSTO 外接程序项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **适用于：** 本主题中的信息适用于 Excel VSTO 外接程序项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
  本演练阐释了以下任务：  
   
@@ -52,7 +49,7 @@ ms.locfileid: "49915693"
   
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>若要新建 Excel VSTO 外接程序项目  
   
-1.  在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，创建一个 Excel VSTO 外接程序项目名称**ExcelDynamicControls**。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，创建一个 Excel VSTO 外接程序项目名称**ExcelDynamicControls**。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  添加对的引用**Microsoft.Office.Tools.Excel.v4.0.Utilities.dll**程序集。 在本演练稍后内容中，需要此引用以编程方式将 Windows 窗体控件添加到工作表。  
   
@@ -73,21 +70,21 @@ ms.locfileid: "49915693"
   
 5.  在 **“属性”** 窗口中，更改下列属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**Button**|  
     |**标签**|**Button**|  
   
 6.  将第二个复选框添加到 **group1**，然后更改下列属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**NamedRange**|  
     |**标签**|**NamedRange**|  
   
 7.  添加到一个第三个复选框**group1**，然后将更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**ListObject**|  
     |**标签**|**ListObject**|  
@@ -149,7 +146,7 @@ ms.locfileid: "49915693"
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]  
   
-4.  在 C# 中，必须为 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件创建一个事件处理程序。 你可以将此代码放置在 `ThisAddIn_Startup` 方法中。 有关创建事件处理程序的详细信息，请参阅[如何： 在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。 将 `ThisAddIn_Startup` 方法替换为以下代码。  
+4.  在 C# 中，必须为 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件创建一个事件处理程序。 你可以将此代码放置在 `ThisAddIn_Startup` 方法中。 有关创建事件处理程序的详细信息，请参阅[如何：Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。 将 `ThisAddIn_Startup` 方法替换为以下代码。  
   
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]  
   
@@ -195,5 +192,3 @@ ms.locfileid: "49915693"
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
  [ListObject 控件](../vsto/listobject-control.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 演练： 创建使用缓存的数据集的主从关系
-ms.custom: ''
+title: 演练：创建使用缓存的数据集的主从关系
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823644"
 ---
-# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>演练： 创建使用缓存的数据集的主从关系
+# <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>演练：创建使用缓存的数据集的主从关系
   本演练演示在工作表上创建主/从关系以及缓存数据，以便可以脱机使用该解决方案。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49933152"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1. 使用名称创建的 Excel 工作簿项目**我的大纲-细节**，使用 Visual Basic 或 C#。 请确保**创建一个新文档**处于选中状态。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1. 使用名称创建的 Excel 工作簿项目**我的大纲-细节**，使用 Visual Basic 或 C#。 请确保**创建一个新文档**处于选中状态。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
    Visual Studio 设计器中打开新 Excel 工作簿并将添加**我的母版-详细信息**投影到**解决方案资源管理器**。  
   
@@ -196,5 +193,3 @@ ms.locfileid: "49933152"
  [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)   
  [缓存数据](../vsto/caching-data.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: 为 SharePoint 创建页 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecdbde69735f548b7ab70da132e9e2cc2080bbcb
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 71f0a75678c0123853f128f42bfdbf1c75ac0c74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859810"
 ---
 # <a name="create-pages-for-sharepoint"></a>为 SharePoint 创建页
   您可以创建应用程序页、 网页、 母版页和页面布局的 SharePoint 站点。  
@@ -44,7 +41,7 @@ ms.locfileid: "36326045"
 |主页面|创建主页上，如果你想要定义站点页面的通用结构和应用程序页。|  
 |页面布局|页面布局是特定于[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]，可用于进一步定义站点页面和应用程序页的通用结构。|  
   
- 有关每种类型的页的概述，请参阅[构建基块： 页面和用户界面](http://go.microsoft.com/fwlink/?LinkID=182095)，并[页面布局和母版页](http://go.microsoft.com/fwlink/?LinkID=182096)。  
+ 有关每种类型的页的概述，请参阅[构建基块：页面和用户界面](http://go.microsoft.com/fwlink/?LinkID=182095)，并[页上的布局和母版页](http://go.microsoft.com/fwlink/?LinkID=182096)。  
   
 ## <a name="create-application-pages"></a>创建应用程序页
  可以通过添加在 Visual Studio 中创建应用程序页**应用程序页**向 SharePoint 项目项。 可以将控件添加到页上，，然后通过添加代码来处理控件事件。  
@@ -61,13 +58,12 @@ ms.locfileid: "36326045"
   
  可以直接将这些文件添加到你的解决方案或将其导入。 在任一情况下，必须创建对于您添加的每个项相应的映射的文件夹。 有关如何创建的映射的文件夹的详细信息，请参阅[如何： 添加和移除映射的文件夹](../sharepoint/how-to-add-and-remove-mapped-folders.md)。  
   
- 有关创建级联样式表的详细信息，请参阅[级联样式表类中的使用情况 SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098)。 有关创建 SharePoint 解决方案的 JavaScript 和 JScript 文件的详细信息，请参阅[设置向上的基本 ASPX 页的 ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099)。 有关主题的详细信息，请参阅[构建基块： 页面和用户界面](http://go.microsoft.com/fwlink/?LinkID=182095)。  
+ 有关创建级联样式表的详细信息，请参阅[级联样式表类中的使用情况 SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkID=182098)。 有关创建 SharePoint 解决方案的 JavaScript 和 JScript 文件的详细信息，请参阅[设置向上的基本 ASPX 页的 ECMAScript](http://go.microsoft.com/fwlink/?LinkID=182099)。 有关主题的详细信息，请参阅[构建基块：页面和用户界面](http://go.microsoft.com/fwlink/?LinkID=182095)。  
   
 ## <a name="related-topics"></a>相关主题
   
 |标题|描述|  
 |-----------|-----------------|  
 |[为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)|介绍如何添加应用程序页面： *.aspx*与 SharePoint 母版页合并的内容。|  
-|[如何： 创建应用程序页](../sharepoint/how-to-create-an-application-page.md)|演示如何创建在 SharePoint 站点运行的 ASP.NET 页面。|  
-|[演练： 创建 SharePoint 应用程序页](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|演示如何设计和调试 ASP.NET 网页上的 SharePoint 站点。|  
-  
+|[如何：创建应用程序页](../sharepoint/how-to-create-an-application-page.md)|演示如何创建在 SharePoint 站点运行的 ASP.NET 页面。|  
+|[演练：创建 SharePoint 应用程序页](../sharepoint/walkthrough-creating-a-sharepoint-application-page.md)|演示如何设计和调试 ASP.NET 网页上的 SharePoint 站点。|  

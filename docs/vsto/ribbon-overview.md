@@ -1,9 +1,6 @@
 ---
 title: 功能区概述
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51de8b5fbc4e21b4dabaf34f526b85f0b98623db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ff1cda312fdc007c1c700d2edf6576dcc91d87e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846352"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989197"
 ---
 # <a name="ribbon-overview"></a>功能区概述
   功能区是一种方法，以便可以更轻松地找到整理相关的命令。 命令显示为功能区上的控件。 控件整理为*组*沿应用程序窗口上边缘处呈水平条。 在选项卡上，相关组进行了整理。  
@@ -84,7 +81,7 @@ ms.locfileid: "49846352"
   
  此外，任何未更改的默认属性值都不会出现在生成的功能区 XML 文件中。  
   
- 有关如何将功能区导出到 XML 的详细信息，请参阅[如何： 将功能区从功能区设计器导出到功能区 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)。  
+ 有关如何将功能区导出到 XML 的详细信息，请参阅[如何：将功能区从功能区设计器导出到功能区 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)。  
   
 ### <a name="update-the-code"></a>更新代码  
  新的功能区代码文件添加到**解决方案资源管理器**。 此文件包含功能区 XML 类。 必须在此类的 `Ribbon Callbacks` 区域中创建回调方法，以处理用户操作（例如单击某个按钮）。 将你的代码从事件处理程序移动到这些回调方法，并修改此代码以使用功能区扩展性 (RibbonX) 编程模型。 有关更多信息，请参见 [Ribbon XML](../vsto/ribbon-xml.md)。  
@@ -120,20 +117,18 @@ ms.locfileid: "49846352"
   
 |标题|描述|  
 |-----------|-----------------|  
-|[如何： 开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)|演示如何自定义 Microsoft Office 应用程序的功能区中，添加**功能区 （可视化设计器）** 或**功能区 (XML)** 到 Office 项目的项。|  
+|[如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)|演示如何自定义 Microsoft Office 应用程序的功能区中，添加**功能区 （可视化设计器）** 或**功能区 (XML)** 到 Office 项目的项。|  
 |[功能区设计器](../vsto/ribbon-designer.md)|介绍如何使用功能区设计器将自定义选项卡、 组和控件添加到 Microsoft Office 应用程序的功能区。|  
-|[演练： 使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|显示如何通过使用功能区设计器创建自定义功能区选项卡。 可使用功能区设计器将控件添加和放置到自定义选项卡上。|  
+|[演练：使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|显示如何通过使用功能区设计器创建自定义功能区选项卡。 可使用功能区设计器将控件添加和放置到自定义选项卡上。|  
 |[功能区对象模型概述](../vsto/ribbon-object-model-overview.md)|概述可用于获取和设置在运行时的功能区控件的属性的强类型化的对象模型。|  
-|[演练： 更新在运行时功能区上的控件](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|演示如何使用功能区对象模型在功能区加载到 Office 应用程序之后，更新该功能区上的控件。|  
+|[演练：更新在运行时功能区上的控件](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|演示如何使用功能区对象模型在功能区加载到 Office 应用程序之后，更新该功能区上的控件。|  
 |[为 Outlook 中自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)|提供自定义 Microsoft Office Outlook 中的功能区的指南。|  
 |[自定义 InfoPath 功能区](../vsto/customizing-a-ribbon-for-infopath.md)|提供自定义 Microsoft Office InfoPath 中的功能区的指南。|  
 |[在运行时在功能区的访问](../vsto/accessing-the-ribbon-at-run-time.md)|演示如何显示、 隐藏和修改功能区中，和使用户能够从自定义任务窗格、 操作窗格或 Outlook 窗体区域中的控件运行代码。|  
-|[如何： 更改功能区上选项卡的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|演示如何更改功能区上选项卡的顺序。|  
-|[如何： 自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)|显示如何将组和控件添加到内置选项卡。|  
-|[如何： 将控件添加到 Backstage 视图](../vsto/how-to-add-controls-to-the-backstage-view.md)|演示如何将控件添加到单击时打开的菜单**文件**。|  
-|[如何： 向功能区组添加对话框启动器](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|说明了如何将对话框启动器添加到功能区上的任何组。|  
-|[如何： 将功能区从功能区设计器导出到功能区 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|演示如何以高级方式将功能区从设计器导出到功能区 XML 自定义功能区。|  
+|[如何：更改功能区上选项卡的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|演示如何更改功能区上选项卡的顺序。|  
+|[如何：自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)|显示如何将组和控件添加到内置选项卡。|  
+|[如何：将控件添加到 Backstage 视图](../vsto/how-to-add-controls-to-the-backstage-view.md)|演示如何将控件添加到单击时打开的菜单**文件**。|  
+|[如何：将对话框启动器添加到功能区组](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|说明了如何将对话框启动器添加到功能区上的任何组。|  
+|[如何：将功能区从功能区设计器导出到功能区 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|演示如何以高级方式将功能区从设计器导出到功能区 XML 自定义功能区。|  
 |[Ribbon XML](../vsto/ribbon-xml.md)|介绍如何通过使用功能区 XML 自定义功能区。|  
-|[演练： 使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|演示如何通过创建自定义功能区选项卡**功能区 (XML)** 项。|  
-  
-  
+|[演练：使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|演示如何通过创建自定义功能区选项卡**功能区 (XML)** 项。|  

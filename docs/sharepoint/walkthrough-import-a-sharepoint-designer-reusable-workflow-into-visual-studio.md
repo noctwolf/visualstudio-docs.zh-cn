@@ -1,15 +1,10 @@
 ---
-title: 演练： 导入 Visual Studio SharePoint Designer 可重用工作流 |Microsoft Docs
-ms.custom: ''
+title: 演练：SharePoint Designer 可重用工作流导入 Visual Studio |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.ImportWF
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 249799bc9daf13992bd9fe03dff8c86263f91263
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c92a1023f5099c6a6d92df825aebebf35dd678dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851473"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821340"
 ---
-# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>演练： 导入 Visual Studio SharePoint Designer 可重用工作流
+# <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>演练：导入 Visual Studio SharePoint Designer 可重用工作流
   本演练演示如何导入到的 SharePoint Designer 2010 中创建的可重用工作流[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工作流项目。  
   
  在 SharePoint Designer 中创建的工作流或*声明性工作流*，组成[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]语句而不是代码。 SharePoint Designer 2010 引入了*可重用工作流*，这是可由 SharePoint 站点中的不同列表的可移植的声明性工作流。  
@@ -269,4 +264,3 @@ ms.locfileid: "49851473"
  [从现有的 SharePoint 网站导入项目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [创建 web 部件或应用程序页的可重用的控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)  
-  

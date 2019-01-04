@@ -1,9 +1,6 @@
 ---
-title: 如何： 创建事件接收器 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建事件接收器 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.EventReceiver
@@ -20,24 +17,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd4528a47215254684be51400329b05c3998bbab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a9f18bb4399e52c6afbac9b20a7b16d04a39843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635143"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861567"
 ---
-# <a name="how-to-create-an-event-receiver"></a>如何： 创建事件接收器
+# <a name="how-to-create-an-event-receiver"></a>如何：创建事件接收器
   通过创建*事件接收器*，可以响应用户与 SharePoint 项，如列表或列表项交互时。 例如，当用户更改日历，或从联系人列表中删除一个名称，可以触发事件接收器中的代码。 通过按照本主题，可以了解如何将事件接收器添加到列表实例。
 
- 若要完成这些步骤，您必须安装[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和支持的 Windows 和 SharePoint 版本。 由于此示例需要 SharePoint 项目，你还必须已完成本主题中的过程[演练： 创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。
+ 若要完成这些步骤，您必须安装[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和支持的 Windows 和 SharePoint 版本。 由于此示例需要 SharePoint 项目，你还必须已完成本主题中的过程[演练：创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。
 
 ## <a name="adding-an-event-receiver"></a>添加事件接收器
- 在中创建的项目[演练： 创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)包括自定义站点列、 自定义列表和内容类型。 在下面的过程中，将此项目扩展通过将简单的事件处理程序 （事件接收器） 添加到要演示如何处理 SharePoint 项，如列表中发生的事件的列表实例。
+ 在中创建的项目[演练：创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)包括自定义站点列、 自定义列表和内容类型。 在下面的过程中，将此项目扩展通过将简单的事件处理程序 （事件接收器） 添加到要演示如何处理 SharePoint 项，如列表中发生的事件的列表实例。
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>若要将事件接收器添加到列表实例
 
-1.  打开你在中创建的项目[演练： 创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。
+1.  打开你在中创建的项目[演练：创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。
 
 2.  在中**解决方案资源管理器**，选择 SharePoint 项目节点，其名称为**Clinic**。
 

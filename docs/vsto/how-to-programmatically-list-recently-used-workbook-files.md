@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式列出最近使用的工作簿文件
-ms.custom: ''
+title: 如何：以编程方式列出最近使用的工作簿文件
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3e909ad3e1509689d953e0ad6c6b8346ff97f91
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 850dc26b9a5f270b3806d9623795535d34cf8f4b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257584"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989592"
 ---
-# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>如何： 以编程方式列出最近使用的工作簿文件
+# <a name="how-to-programmatically-list-recently-used-workbook-files"></a>如何：以编程方式列出最近使用的工作簿文件
   <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>属性返回一个集合，包含显示最近使用的文件的 Microsoft Office Excel 列表中的所有文件的名称。 该列表的长度而异，具体取决于用户选择要保留的文件数量。 在范围内，可以显示结果。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -41,5 +38,3 @@ ms.locfileid: "35257584"
  [使用工作簿](../vsto/working-with-workbooks.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

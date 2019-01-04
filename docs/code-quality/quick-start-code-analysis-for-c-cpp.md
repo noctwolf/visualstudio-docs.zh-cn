@@ -2,7 +2,6 @@
 title: 快速入门：C/C++ 代码分析
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
@@ -12,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aefc42e77c6ccaf14a426a26e12b81b49bb5632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 00dedc25185dfc3a9f12ba645205ce47925003df
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818755"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825196"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>快速入门：C/C++ 代码分析
 
@@ -111,9 +110,9 @@ Visual Studio 包括两个本机代码标准规则集：
 
 可搜索冗长的警告消息列表，也可在多项目解决方案中筛选警告。
 
-- **按标题或警告 id 筛选警告**： 在搜索框中输入关键字。
+- **按标题或警告 id 筛选警告**:在搜索框中输入关键字。
 
-- **按严重性筛选警告**： 默认情况下，代码分析消息分配的严重性**警告**。 可以将分配为一个或多个消息的严重性**错误**在一个自定义规则集中。 上**严重性**的列**错误列表**，选择下拉箭头，然后选择筛选器图标。 选择**警告**或**错误**以显示仅分配了相应严重性的消息。 选择**全**可显示所有消息。
+- **按严重性筛选警告**:默认情况下，代码分析消息分配的严重性**警告**。 可以将分配为一个或多个消息的严重性**错误**在一个自定义规则集中。 上**严重性**的列**错误列表**，选择下拉箭头，然后选择筛选器图标。 选择**警告**或**错误**以显示仅分配了相应严重性的消息。 选择**全**可显示所有消息。
 
 ## <a name="see-also"></a>请参阅
 

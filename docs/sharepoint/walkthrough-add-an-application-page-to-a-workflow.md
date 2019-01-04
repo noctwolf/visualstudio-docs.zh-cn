@@ -1,9 +1,6 @@
 ---
-title: 演练： 将应用程序页添加到工作流 |Microsoft Docs
-ms.custom: ''
+title: 演练：将应用程序页添加到工作流 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cb0dfa7212cae1dd4e7c62f71f423c0f8fd275d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938194"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>演练： 将应用程序页添加到工作流
-  本演练演示如何添加显示数据派生自工作流到工作流项目的应用程序页。 它建立在本主题中介绍的项目[演练： 使用关联和初始化表单创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>演练：将应用程序页添加到工作流
+  本演练演示如何添加显示数据派生自工作流到工作流项目的应用程序页。 它建立在本主题中介绍的项目[演练：使用关联和初始化表单创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
 
  本演练演示了下列任务：
 
@@ -45,14 +42,14 @@ ms.locfileid: "49866891"
 
 -   Visual Studio。
 
--   你还必须完成本主题中的项目[演练： 使用关联和初始化表单创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
+-   你还必须完成本主题中的项目[演练：使用关联和初始化表单创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
 
 ## <a name="ammend-the-workflow-code"></a>Ammend 工作流代码
  首先，将代码行添加到工作流的结果列的值设置为的费用报表金额。 支出报表摘要计算更高版本中使用此值。
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>若要在工作流中设置结果列的值
 
-1.  加载已完成的项目从主题[演练： 创建工作流使用关联和启动窗体](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)到[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
+1.  加载已完成的项目从主题[演练：使用关联和启动窗体创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)到[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
 2.  打开的代码*Workflow1.cs*或*Workflow1.vb* （具体取决于您的编程语言）。
 
@@ -352,7 +349,7 @@ ms.locfileid: "49866891"
 
 ## <a name="see-also"></a>请参阅
 
-- [演练： 使用关联和初始化表单创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [如何： 创建应用程序页](../sharepoint/how-to-create-an-application-page.md)
+- [演练：使用关联和初始化表单创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
+- [如何：创建应用程序页](../sharepoint/how-to-create-an-application-page.md)
 - [为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)

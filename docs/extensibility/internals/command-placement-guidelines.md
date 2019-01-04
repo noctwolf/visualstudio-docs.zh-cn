@@ -1,9 +1,6 @@
 ---
 title: 命令放置指南 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, small command sets
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bac09a361c885d866bf6a78e6fe7b49c246265ba
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6834a12c4ecc052c9589a156c2eeb701e88036e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933857"
 ---
 # <a name="command-placement-guidelines"></a>命令放置指南
 最佳做法，用于在 Visual Studio 集成的开发环境 (IDE) 中定位命令根据命令集的大小会有所不同。 命令定义并根据中的信息定位 *.vsct*文件。  

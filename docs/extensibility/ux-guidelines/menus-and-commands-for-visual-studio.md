@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 的菜单和命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5686f96ce0125cac98ca08582e8407c4e1e926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bddedab69583c8ec4ff809810e049a4aff2046ee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933792"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Visual Studio 的菜单和命令
 ## <a name="command-usage"></a>命令的用法  
@@ -52,7 +49,7 @@ ms.locfileid: "49937949"
  它可用于将命令放在紧靠该用户的关注领域。 若要执行此操作的一种方法是在工具窗口或文档的顶部编辑器创建嵌入式的工具栏。 放在工具栏上的命令应为特定于窗口内的内容区域。 不复制这些工具栏上的共享的命令。 例如，永远不会将放置在嵌入式工具栏上的"保存"图标。  
   
 ### <a name="content-and-command-visibility"></a>内容和命令的可见性  
- 在以下范围中存在的命令：**环境**，**层次结构**，并**文档**。 知道每个作用域，才能确保命令放置。  
+ 在以下范围中存在的命令：**环境**，**层次结构**，和**文档**。 知道每个作用域，才能确保命令放置。  
   
  中的命令**环境**作用域建立主上下文和多个上下文之间共享。 这些更改的文档和工具窗口排列方式的可见性。 作用域包括在环境中的命令**新的项目**，**连接到服务器**，**附加进程**，**剪切**， **复制**，**粘贴**，**查找**，**选项**，**自定义**，**新窗口**，并**查看帮助**。  
   
@@ -284,7 +281,7 @@ ms.locfileid: "49937949"
   
 - **请遵循 Windows 准则来确定哪些修饰符键使用。** 使用 Ctrl 键组合用于大型效果，如将应用到整个文档的命令的命令。 用于扩展或补充标准快捷键的操作的命令使用 Shift 键组合。 请勿使用 Ctrl + Alt 组合。  
   
-- **删除多余的快捷方式。** 如果您有一项旧功能，请考虑删除快捷方式，如果访问密钥提供了快速访问相同的命令与极少 （少于 10 次从 CEIP 数据） 被或中等均值 （少于 100 次从 CEIP 数据） 一起使用。 例如： Alt，H，C 会打开帮助/内容。  
+- **删除多余的快捷方式。** 如果您有一项旧功能，请考虑删除快捷方式，如果访问密钥提供了快速访问相同的命令与极少 （少于 10 次从 CEIP 数据） 被或中等均值 （少于 100 次从 CEIP 数据） 一起使用。 例如：Alt，H，C 会打开帮助/内容。  
   
   不是简单的方法来检查快捷方式的可用性。 如果你想要添加快捷方式，执行以下步骤：  
   

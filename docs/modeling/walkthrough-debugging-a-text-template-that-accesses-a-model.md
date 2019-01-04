@@ -1,5 +1,5 @@
 ---
-title: 演练：调试访问模型的文本模板
+title: 演练：调试文本模板访问模型
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,32 +8,31 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: d2c58579cce95c3117aa7653d62733f4e297bcc4
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 9041adb5ddb8ac76dde15069ce117ea8ad3c6e66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914537"
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>演练：调试访问模型的文本模板
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>演练：调试文本模板访问模型
 当您修改或在域特定语言解决方案中添加文本模板时，可能会收到错误，当引擎转换模板源代码或对其进行编译生成的代码。 下面的演练演示了一些可以执行的操作来调试文本模板。
 
 > [!NOTE]
->  详细了解文本模板一般情况下，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 有关调试文本模板的详细信息，请参阅[演练： 调试文本模板](debugging-a-t4-text-template.md)。
+>  详细了解文本模板一般情况下，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 有关调试文本模板的详细信息，请参阅[演练：调试文本模板](debugging-a-t4-text-template.md)。
 
 ## <a name="creating-a-domain-specific-language-solution"></a>创建域特定语言解决方案
  在此过程中，你创建域特定语言解决方案具有以下特征：
 
-- 名称： DebuggingTestLanguage
+- 姓名:DebuggingTestLanguage
 
-- 解决方案模板： 最小语言
+- 解决方案模板：最小语言
 
 - 文件扩展名：.ddd
 
-- 公司名称： Fabrikam
+- 公司名称：Fabrikam
 
-  有关创建域特定语言解决方案的详细信息，请参阅[如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+  有关创建域特定语言解决方案的详细信息，请参阅[如何：创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 ## <a name="creating-a-text-template"></a>创建文本模板
  将文本模板添加到你的解决方案。
@@ -159,11 +158,11 @@ ms.locfileid: "50966461"
 
      (C#)
 
-     **正在编译转换： 由 Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation 不包含 ExampleModel 的定义**
+     **正在编译转换：由 Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation 不包含 ExampleModel 的定义**
 
      (Visual Basic)
 
-     **正在编译转换: ExampleModel 不是成员的由 Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation。**
+     **正在编译转换：ExampleModel 不是成员的由 Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation。**
 
      在这种情况下，文本模板代码包含不正确的属性名称。 具有指定`ExampleModel`作为属性名称，但正确的属性名称是`LibraryModel`。 您可以找到正确的属性名称中提供参数，如下面的代码中所示：
 

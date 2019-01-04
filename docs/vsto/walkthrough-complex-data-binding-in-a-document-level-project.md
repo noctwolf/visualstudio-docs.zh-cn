@@ -1,9 +1,6 @@
 ---
-title: 演练： 文档级项目中的复杂数据绑定
-ms.custom: ''
+title: 演练：在文档级项目中的复杂数据绑定
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841879"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964044"
 ---
-# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>演练： 文档级项目中的复杂数据绑定
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>演练：在文档级项目中的复杂数据绑定
   本演练演示在文档级项目中的复杂数据绑定的基础知识。 可以将 Microsoft Office Excel 工作表中的多个单元格绑定到 Northwind SQL Server 数据库中的字段。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -58,7 +55,7 @@ ms.locfileid: "49841879"
   
 1.  使用名称创建的 Excel 工作簿项目**我的复杂数据绑定**。 在向导中，选择**创建一个新文档**。  
   
-     有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新 Excel 工作簿并将添加**我的复杂数据绑定**投影到**解决方案资源管理器**。  
   
@@ -220,15 +217,13 @@ ms.locfileid: "49841879"
 ## <a name="next-steps"></a>后续步骤  
  本演练演示在数据库中的表绑定到列表对象的基础知识。 以下是接下来可能要执行的一些任务：  
   
--   缓存数据，以便可以脱机使用。 有关详细信息，请参阅[如何： 脱机状态或服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
+-   缓存数据，以便可以脱机使用。 有关更多信息，请参见[如何：脱机时或者在服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
   
 -   部署解决方案。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
   
--   创建一个字段与表之间的主/从关系。 有关详细信息，请参阅[演练： 创建使用缓存的数据集的主从关系](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。  
+-   创建一个字段与表之间的主/从关系。 有关详细信息，请参见[演练：创建使用缓存的数据集的主从关系](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)   
- [演练： 文档级项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
-  
-  
+ [演练：在文档级项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  

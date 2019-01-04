@@ -2,7 +2,6 @@
 title: 格式化，XML，文本编辑器，“选项”对话框
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 author: gewarren
@@ -10,29 +9,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f92ced5ca5ac007969a06cec7f253617ee293e3
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 05ddfcb0613dac08fb6e4323062f87475bd8f0d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548786"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938587"
 ---
-# <a name="formatting-xml-text-editor-options-dialog-box"></a>格式设置，XML，文本编辑器，选项对话框
+# <a name="formatting-xml-text-editor-options-dialog-box"></a>格式设置、 XML、 文本编辑器，选项对话框
 
-使用此对话框可以指定“XML 编辑器”的格式化设置。 你可以访问**选项**对话框**工具**菜单。
+使用此对话框可以指定“XML 编辑器”的格式化设置。 您可以访问**选项**对话框从**工具**菜单。
 
 > [!NOTE]
-> 当你选择这些设置才可用**文本编辑器**文件夹， **XML**文件夹，然后**格式**选项从**选项**对话框。
+> 当您选择这些设置才可用**文本编辑器**文件夹中， **XML**文件夹，然后**格式设置**选项从**选项**对话框。
 
 ## <a name="attributes"></a>特性
- **保留手动属性格式化**
+ **保留手动特性格式设置**
 
  属性不会重新格式化。 这是默认设置。
 
 > [!NOTE]
 > 如果属性在多行上，编辑器将对每行属性进行缩进，以便与父元素的缩进匹配。
 
- **将每个属性在其自己的行上对齐**
+ **对齐属性每个在其自己的行上**
 
  使第二个以及后续的属性纵向对齐，以便与第一个属性的缩进匹配。 以下 XML 文本是如何对齐属性的示例。
 
@@ -48,7 +47,7 @@ ms.locfileid: "34548786"
 
  重新格式化从剪贴板粘贴的 XML 文本。
 
- **在完成结束标记**
+ **完成结束标记时**
 
  在完成结束标记时重新格式化元素。
 

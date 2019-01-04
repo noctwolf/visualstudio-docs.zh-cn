@@ -1,9 +1,6 @@
 ---
-title: 演练： 显示灯泡建议 |Microsoft Docs
-ms.custom: ''
+title: 演练：显示灯泡建议 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: gregvanl
@@ -11,21 +8,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b9d56daab6eda1ef1cd9c31d8cc4d720f9a08e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1ce64b3fe8d41d1ceb865555d93e6e464b25fb42
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875887"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935003"
 ---
-# <a name="walkthrough-display-light-bulb-suggestions"></a>演练： 显示灯泡建议
+# <a name="walkthrough-display-light-bulb-suggestions"></a>演练：显示灯泡建议
 电灯泡是 Visual Studio 编辑器中展开此项可显示的一组操作，例如，通过内置的代码分析器或重构代码标识的问题的修补程序的图标。  
   
  在 Visual C# 和 Visual Basic 编辑器中，您还可以使用.NET 编译器平台 ("Roslyn") 编写并打包你自己的自动显示灯泡的操作的代码分析器。 有关详细信息，请参见:  
   
-- [如何： 编写 C# 诊断和代码修补程序](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [如何：编写C#诊断和代码修补程序](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
-- [如何： 编写诊断的 Visual Basic 和代码修补程序](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [如何：编写诊断的 Visual Basic 和代码修补程序](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
   C + + 等其他语言还提供一些快速操作，例如，建议以创建该函数的存根实现灯泡。  
   
@@ -37,7 +34,7 @@ ms.locfileid: "49875887"
   
   ![灯泡预览](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
-  可以使用灯泡提供建议的操作。 例如，您可以提供要移动打开到新行的大括号或将它们移动到上一行末尾的操作。 下面的演练演示如何创建将显示一个灯泡在当前单词上并且具有两个建议操作：**转换为大写**并**转换为小写**。  
+  可以使用灯泡提供建议的操作。 例如，您可以提供要移动打开到新行的大括号或将它们移动到上一行末尾的操作。 下面的演练演示如何创建将显示一个灯泡在当前单词上并且具有两个建议操作：**将转换为大写**并**转换为小写**。  
   
 ## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，不要从下载中心安装 Visual Studio SDK。 它包含作为 Visual Studio 安装程序中的可选功能。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
@@ -225,8 +222,8 @@ ms.locfileid: "49875887"
 2.  创建两个类，第一个名为 `UpperCaseSuggestedAction` ，第二个名为 `LowerCaseSuggestedAction`。 两个类都实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>。  
   
     ```csharp  
-    internal class UpperCaseSuggestedAction : ISuggestedAction   
-    internal class LowerCaseSuggestedAction : ISuggestedAction  
+    internal class UpperCaseSuggestedAction : ISuggestedAction   
+    internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
      这两个类相似，只不过其中一个调用 <xref:System.String.ToUpper%2A>，另一个调用 <xref:System.String.ToLower%2A>。 以下步骤仅说明大写操作类，但你必须实现这两个类。 将实现大写操作的步骤用作实现小写操作的模式。  
@@ -246,8 +243,8 @@ ms.locfileid: "49875887"
   
     ```csharp  
     private ITrackingSpan m_span;  
-    private string m_upper;  
-    private string m_display;  
+    private string m_upper;  
+    private string m_display;  
     private ITextSnapshot m_snapshot;  
     ```  
   
@@ -291,7 +288,7 @@ ms.locfileid: "49875887"
     {  
         get { return false; }  
     }  
-    public string DisplayText  
+    public string DisplayText  
     {  
         get { return m_display; }  
     }  
@@ -322,7 +319,7 @@ ms.locfileid: "49875887"
 9. 通过将范围中的文本替换为其大写形式来实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> 方法。  
   
     ```csharp  
-    public void Invoke(CancellationToken cancellationToken)  
+    public void Invoke(CancellationToken cancellationToken)  
     {  
         m_span.TextBuffer.Replace(m_span.GetSpan(m_snapshot), m_upper);  
     }  
@@ -366,4 +363,3 @@ ms.locfileid: "49875887"
      ![测试灯泡已展开](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
 6.  如果单击的第一个操作，则当前单词中的所有文本都将都转换为大写。 如果单击第二个操作，则所有文本都转换为小写。  
-  

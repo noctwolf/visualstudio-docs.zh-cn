@@ -1,13 +1,8 @@
 ---
-title: 如何： 添加项目输出引用 |Microsoft Docs
-ms.custom: ''
+title: 如何：添加项目输出引用 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 47b6a3d164bbe1ddcda6d131275427fb1f815198
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4e7c93b0c23d14c2b129d165cd3a8d701ace8ea1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897283"
 ---
-# <a name="how-to-add-a-project-output-reference"></a>如何： 添加项目输出引用
+# <a name="how-to-add-a-project-output-reference"></a>如何：添加项目输出引用
   若要部署到 SharePoint 的非 SharePoint 项目程序集 （或在 Silverlight 项目中的.xap 文件），将其添加为项目输出引用。  
   
  此过程将创建两个项目之间解决方案生成依赖项。 构建和部署 SharePoint 项目之前生成项目输出引用与关联的项目。  
@@ -47,7 +42,5 @@ ms.locfileid: "36755472"
   
 ## <a name="see-also"></a>请参阅
  [提供在项目项中的打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
- [如何： 将控件标记为安全控件](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
+ [如何：将控件标记为安全控件](../sharepoint/how-to-mark-controls-as-safe-controls.md)   
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
-  

@@ -1,13 +1,8 @@
 ---
-title: 如何： 向方法中添加参数 |Microsoft Docs
-ms.custom: ''
+title: 如何：将参数添加到方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 196ac37cc9bc4f53cfa886b92c62c7a301c3451a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5f7d0e0ab164bf30c341ca093908be3661452d19
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756306"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866252"
 ---
-# <a name="how-to-add-a-parameter-to-a-method"></a>如何： 向方法中添加参数
+# <a name="how-to-add-a-parameter-to-a-method"></a>如何：将参数添加到方法
   若要将信息传递到方法或从方法返回的信息，请使用参数。 所有方法必须都具有至少一个参数。 有关如何设计用于支持你想要创建的方法的类型的参数的详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
  在将参数添加到方法中，Visual Studio 将添加到你的项目中的模型文件的 XML 参数元素。 Parameter 元素的属性的详细信息，请参阅[参数](http://go.microsoft.com/fwlink/?LinkId=169284)。  
@@ -56,12 +51,11 @@ ms.locfileid: "36756306"
   
      若要为你创建的类型方法选择哪个方向的详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
-8.  修改该参数的类型描述符。 有关详细信息，请参阅[如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
+8.  修改该参数的类型描述符。 有关更多信息，请参见[如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
 ## <a name="see-also"></a>请参阅
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [如何： 定义方法实例](../sharepoint/how-to-define-a-method-instance.md)   
+ [如何：向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [如何：定义方法实例](../sharepoint/how-to-define-a-method-instance.md)   
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

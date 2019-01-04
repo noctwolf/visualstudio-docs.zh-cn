@@ -1,9 +1,6 @@
 ---
-title: 演练： 创建使用 c + + SDK |Microsoft Docs
-ms.custom: ''
+title: 演练：使用 c + + 创建 SDK |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6311526df299da860c829520a2087ecc8d786600
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a0db4f34315f9e0eb4a5627cdc286a43a904a34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930631"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917600"
 ---
-# <a name="walkthrough-create-an-sdk-using-c"></a>演练： 创建使用 c + + SDK
+# <a name="walkthrough-create-an-sdk-using-c"></a>演练：创建使用 c + + SDK
 本演练演示如何创建一个本机 c + + 的数学库 SDK，包 SDK 作为 Visual Studio 扩展 (VSIX)，并使用它创建的应用程序。 本演练分为以下步骤：  
   
 -   [若要创建的本机和 Windows 运行时库](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)  
@@ -112,7 +109,7 @@ ms.locfileid: "49930631"
   
     [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]  
   
-12. 在菜单栏上依次选择**视图** > **其他 Windows** > **属性窗口**(键盘： 选择**F4**密钥)。  
+12. 在菜单栏上依次选择**视图** > **其他 Windows** > **属性窗口**(键盘：选择**F4**密钥)。  
   
 13. 在中**解决方案资源管理器**，选择**NativeMathWRT.winmd**文件。 在**属性**窗口中，更改**生成操作**属性设置为**内容**，然后将更改**包含在 VSIX** 属性**True**。  
   
@@ -177,5 +174,5 @@ ms.locfileid: "49930631"
 ## <a name="next-steps"></a>后续步骤  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 创建使用 C# 或 Visual Basic SDK](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+ [演练：创建 SDK 使用C#或 Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)

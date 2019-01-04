@@ -1,9 +1,6 @@
 ---
 title: 旧版语言服务中的注释代码 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - comments, supporting in language services [managed package framework]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a4215d3ea841f8e7c7c9f057535d9585682dcfa
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3f1e3599a085fdc176fab83b55d664456c26d8bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510418"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886698"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>在旧版语言服务中的注释代码
 编程语言通常提供一种方法来添加批注或注释的代码。 注释是文本来提供有关代码的其他信息，但在编译或解释过程中忽略的一部分。  

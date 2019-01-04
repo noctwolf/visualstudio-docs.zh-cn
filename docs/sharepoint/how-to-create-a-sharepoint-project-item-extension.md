@@ -1,9 +1,6 @@
 ---
-title: 如何： 创建 SharePoint 项目项扩展 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建 SharePoint 项目项扩展 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 93459096e6d88ce3754c32bf7f61a3cf369cbeba
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0c716301eee70fea704831890dd1e61b12651f7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956187"
 ---
-# <a name="how-to-create-a-sharepoint-project-item-extension"></a>如何： 创建 SharePoint 项目项扩展
+# <a name="how-to-create-a-sharepoint-project-item-extension"></a>如何：创建 SharePoint 项目项扩展
   如果想要将功能添加到已安装 Visual Studio 中的 SharePoint 项目项，创建项目项扩展。 有关详细信息，请参阅[扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)。  
   
 ### <a name="to-create-a-project-item-extension"></a>若要创建项目项扩展  
@@ -67,6 +64,4 @@ ms.locfileid: "37118769"
   
 ## <a name="see-also"></a>请参阅
  [扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)   
- [演练： 扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
-  
+ [演练：扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  

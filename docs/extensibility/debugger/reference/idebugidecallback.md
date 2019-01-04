@@ -1,9 +1,6 @@
 ---
-title: IDebugIDECallback |Microsoft 文档
-ms.custom: ''
+title: IDebugIDECallback |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugIDECallback interface
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 739c419e7f71b325a74c0a7c6dbbc31b1fd0e37f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2eb504dd34db24b6628619c1adf356aaf7dd8274
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113414"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901868"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，已弃用这种方式实施表达式计算器。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 使表达式计算器 (EE) 在调试器的输出窗口中显示一条消息。  
+ 启用要在调试器的输出窗口中显示一条消息的表达式计算器 (EE)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -32,11 +29,11 @@ ms.locfileid: "31113414"
 IDebugIDECallback : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 此回调实现的托管的调试引擎。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 托管的调试引擎实现此回调。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 由表达式计算器将输出发送到调试器的输出窗口，可以使用它。  
+ 它可供的表达式计算器将输出发送到调试器的输出窗口。  
   
 ## <a name="methods"></a>方法  
  此接口实现以下方法：  
@@ -46,8 +43,8 @@ IDebugIDECallback : IUnknown
 |[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|将指定的消息字符串发送到调试器的输出窗口。|  
   
 ## <a name="requirements"></a>要求  
- 标头： Ee.h  
+ 标头：Ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll

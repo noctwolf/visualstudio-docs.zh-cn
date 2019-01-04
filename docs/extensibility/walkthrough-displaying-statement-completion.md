@@ -1,9 +1,6 @@
 ---
-title: 演练： 显示语句完成 |Microsoft Docs
-ms.custom: ''
+title: 演练：显示语句完成 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 148640c7522f133c780703df4052ef3235d8493a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879319"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986630"
 ---
-# <a name="walkthrough-display-statement-completion"></a>演练： 显示语句完成
+# <a name="walkthrough-display-statement-completion"></a>演练：显示语句完成
 可以通过定义您想要提供完成的标识符，然后触发完成会话实现的基于语言的语句结束。 可以在语言服务的上下文中定义的语句结束、 定义您自己的文件扩展名和内容类型，然后显示完成只是该类型。 或者，可以触发的现有内容类型完成 — 例如，"纯文本"。 本演练演示如何触发"纯文本"内容类型，这是文本文件的内容类型的语句完成。 "Text"内容类型是所有其他内容类型，包括代码和 XML 文件的上级。  
   
  通过键入某些字符通常触发语句完成 — 例如，通过键入如"使用"标识符的开头。 它通常通过按来取消**空格键**，**选项卡**，或**Enter**键以提交所选内容。 您可以实现通过击键命令处理程序中键入字符时触发的 IntelliSense 功能 (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口) 和实现的处理程序提供程序<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>接口。 若要创建完成源时，这是参与完成的标识符的列表，实现<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>接口和完成源提供程序 (<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>接口)。 提供商将 Managed Extensibility Framework (MEF) 组件部分。 它们是负责导出的源和控制器类和导入服务和代理 — 例如， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>，这样文本缓冲区中的导航和<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>，随即将会触发完成会话。  
@@ -205,4 +202,4 @@ ms.locfileid: "49879319"
 4.  当您第一次键入"a"，然后"d"时，应显示一个列表，其中包含"加法"和"改写"。 请注意，选择添加。 当你键入另一个"d"时，列表应包含仅"加法"，现在处于选中状态。 您可以通过按提交"加法"**空格键**，**选项卡**，或**Enter**键，或通过键入 Esc 或按任意键关闭该列表。  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -16,13 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bfbb0affe6c159f27a2568d5da35bcb98e80cdeb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939922"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 
@@ -300,7 +299,7 @@ Include 指令可以任意位置使用文本模板文件或包含的文件中。
 
 可以共享运行时通过编写一个基本类模板，才能是抽象的模板之间的内容。 使用`inherits`参数的`<@#template#>`指令来引用另一个运行时模板类。
 
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>继承模式： 基方法中的片段
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>继承模式：基方法中的片段
 
 在下面的示例中使用的模式，请注意以下几点：
 
@@ -355,7 +354,7 @@ begin 1
 end 1
 ```
 
-#### <a name="inheritance-pattern-text-in-base-body"></a>基本的正文中的继承模式： 文本
+#### <a name="inheritance-pattern-text-in-base-body"></a>继承模式：基本的正文中的文本
 
 使用模板继承此备用方法，在基模板中定义的文本的大容量。 派生的模板提供的数据和文本片段适合基本内容。
 
@@ -431,7 +430,7 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>相关主题
 
-设计时模板： 如果你想要使用模板生成代码，将成为你的应用程序的一部分，请参阅[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
+设计时模板：如果你想要使用模板生成代码，将成为你的应用程序的一部分，请参阅[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
 运行时模板可以使用任何应用程序中，在编译时确定的模板和其内容。 但是，如果你想要编写 Visual Studio 扩展插件从在运行时更改的模板生成文本，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 

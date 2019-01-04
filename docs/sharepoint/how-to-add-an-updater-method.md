@@ -1,13 +1,8 @@
 ---
-title: 如何： 添加 Updater 方法 |Microsoft Docs
-ms.custom: ''
+title: 如何：添加 Updater 方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a4d50180173673b4999c18b8980c682d79637bd3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8a68ed8809b30444829dc09bb5c1fcb2386c4a92
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951413"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872513"
 ---
-# <a name="how-to-add-an-updater-method"></a>如何： 添加 Updater 方法
+# <a name="how-to-add-an-updater-method"></a>如何：添加 Updater 方法
   可以让用户可以通过创建更新 SharePoint 外部列表中的业务数据*Updater*方法。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-an-updater-method"></a>若要创建 Updater 方法  
@@ -48,7 +43,7 @@ ms.locfileid: "49951413"
   
    - 方法的输入的参数。  
   
-   - 参数类型描述符。 默认情况下，Visual Studio 使用您定义的实体类型描述符为查找程序方法 (例如： 联系人)。  
+   - 参数类型描述符。 默认情况下，Visual Studio 使用您定义的实体类型描述符为查找程序方法 (例如：请联系）。  
   
    - 方法实例的方法。  
   
@@ -71,13 +66,11 @@ ms.locfileid: "49951413"
   
 ## <a name="see-also"></a>请参阅
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [如何： 添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何： 添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何： 添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)   
- [如何： 添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
- [如何： 添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)   
+ [如何：添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何：添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)   
+ [如何：添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何：添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)   
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 向方法中添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定义方法实例](../sharepoint/how-to-define-a-method-instance.md)  
-  
- 
+ [如何：将参数添加到方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定义方法实例](../sharepoint/how-to-define-a-method-instance.md)  

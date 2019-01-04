@@ -1,9 +1,6 @@
 ---
 title: Office 项目中的事件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -35,12 +32,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5ed18bdcf0f4a7ef6dbb8a358cbf11fd7b49e628
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 070c386434e6f63c06b9049985986fbae3f92f8d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647643"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929871"
 ---
 # <a name="events-in-office-projects"></a>Office 项目中的事件
   每个 Office 项目模板都会自动生成若干事件处理程序。 文档级自定义项的事件处理程序与 VSTO 外接程序的事件处理程序略有不同。  
@@ -161,5 +158,3 @@ ms.locfileid: "53647643"
  [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)   
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   
  [Office 项目模板概述](../vsto/office-project-templates-overview.md)  
-  
-  

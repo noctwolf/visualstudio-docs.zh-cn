@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 696a874df8050d9a79f7cd07b9fc168acdc6b717
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ace1873c45ba8437ba929ec10ef75db3d0d50bf2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897974"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905197"
 ---
 # <a name="responding-to-and-propagating-changes"></a>响应并传播更改
 元素是创建、 删除或更新时，您可以编写将传播到模型，其他部件或外部资源，例如文件、 数据库或其他组件的更改的代码。
@@ -47,7 +46,7 @@ ms.locfileid: "49897974"
 
 -   **订阅事件**可以订阅事件之前，请创建一个事件处理程序和委托。 然后，使用<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>属性来订阅事件。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
--   **正在撤消更改**时撤销的事务，会引发事件，但不是会应用规则。 如果将值更改为一个规则，并且撤消所做的更改，值是重置为原始值在撤消操作过程。 当引发事件时，你必须手动更改回其原始值的值。 若要了解有关 transactons 和撤消的详细信息，请参阅[如何： 使用事务的事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
+-   **正在撤消更改**时撤销的事务，会引发事件，但不是会应用规则。 如果将值更改为一个规则，并且撤消所做的更改，值是重置为原始值在撤消操作过程。 当引发事件时，你必须手动更改回其原始值的值。 若要了解有关 transactons 和撤消的详细信息，请参阅[如何：使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
 -   **将事件自变量传递到规则和事件**这两个事件和传递规则`EventArgs`参数，其中包含有关如何信息的模型更改。
 

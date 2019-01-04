@@ -1,9 +1,6 @@
 ---
 title: LPTEXTOUTPROC |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
@@ -19,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d8439d706dbe8c84d807fb445eda272b96ad589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c3bef9a76c12b44345c000a3133fb3edcfed1352
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822873"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956837"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 当用户执行从集成的开发环境 (IDE) 内部的源代码管理操作时，源代码管理插件可能想要传达与操作相关的错误或状态消息。 该插件可以实现此目的中显示其自己的消息框。 但是，对于更多的无缝集成，该插件可以传递字符串到 IDE，然后将它们显示在其本机的显示状态信息的方式。 此机制是`LPTEXTOUTPROC`函数指针。 IDE 实现此函数用于显示错误和状态 （下面更详细地介绍）。  
@@ -55,7 +52,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|与任何消息字符串一起发送。|  
 |`SCC_MSG_STARTCANCEL`|开始显示**取消**按钮。|  
 |`SCC_MSG_STOPCANCEL`|将不再显示**取消**按钮。|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|询问是否要取消后台操作的 IDE: IDE 返回`SCC_MSG_RTN_CANCEL`如果操作已取消; 否则，返回`SCC_MSG_RTN_OK`。 `display_string`参数强制转换为[SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled)结构，它提供的源代码管理插件。|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|如果后台操作已取消，会要求 IDE:返回 IDE`SCC_MSG_RTN_CANCEL`如果操作已取消; 否则，返回`SCC_MSG_RTN_OK`。 `display_string`参数强制转换为[SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled)结构，它提供的源代码管理插件。|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|从版本控制检索之前关于文件告知 IDE。 `display_string`参数强制转换为[SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile)结构，它提供的源代码管理插件。|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|关于文件告知 IDE 后检索从版本控制。 `display_string`参数强制转换为[SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile)结构，它提供的源代码管理插件。|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|告知 IDE 的后台操作的当前状态。 `display_string`参数强制转换为[SccMsgDataOnMessage](#LinkSccMsgDataOnMessage)结构，它提供的源代码管理插件。|  

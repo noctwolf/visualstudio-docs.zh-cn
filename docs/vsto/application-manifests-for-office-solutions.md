@@ -1,8 +1,6 @@
 ---
 title: Office 解决方案的应用程序清单
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1d60ffdc82e6465a81e1d96b89a39abf66c20e37
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: bd88f7978e7c848d925f21bae6a0a3ad27792e67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802960"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950629"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Office 解决方案的应用程序清单
   应用程序清单是一个 XML 文件，描述加载到 Microsoft Office 解决方案中的程序集。 在 Visual Studio 中的 Microsoft Office 开发工具使用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]中定义的应用程序清单架构[ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)引用。

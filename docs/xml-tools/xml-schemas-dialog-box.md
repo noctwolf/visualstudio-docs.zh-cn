@@ -2,7 +2,6 @@
 title: XML 架构对话框
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: gewarren
@@ -10,18 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5357f762d2a7027db92ad1916acb279abdf23157
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b1f8f4824d18618b40ad4073dc6be0c81d9aba37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835196"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML 架构对话框
 
 **XML 架构**对话框用于选择要与 XML 文档关联的 XML 架构定义语言 (XSD) 架构。 您可以从架构缓存中选择架构，也可以指定不在缓存中的架构。 选定的架构被视为架构集的一部分。 架构集用于 IntelliSense 和 XML 文档验证。
 
-你可以访问**XML 架构**对话框中，通过单击**架构**按钮在文档属性窗口中，或通过选择**架构**从**XML**菜单。
+您可以访问**XML 架构**通过单击对话框中**架构**按钮，在文档属性窗口中，或选择**架构**从**XML**菜单。
 
 ## <a name="uielement-list"></a>UIElement 列表
  **使用**
@@ -38,13 +37,13 @@ ms.locfileid: "34693635"
 
 显示与 XML 架构关联的目标命名空间。
 
-**文件名**
+**文件的名称**
 
 显示 XML 架构文件名。
 
 **添加**
 
-打开**打开 XSD 架构**对话框，使您能够选择要添加到架构集中的其他架构。 当将架构添加到架构设置**使用**列值设置为**使用此架构**。
+此时将打开**打开 XSD 架构**对话框中，这样就可以选择要添加到架构集中的其他架构。 将架构添加到架构设置**使用**列的值设置为**使用此架构**。
 
 **移除**
 
@@ -53,5 +52,5 @@ ms.locfileid: "34693635"
 ## <a name="see-also"></a>请参阅
 
 - [XML 编辑器组件](../xml-tools/xml-editor-components.md)
-- [如何： 选择要使用的 XML 架构](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
+- [如何：选择要使用的 XML 架构](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [架构缓存](../xml-tools/schema-cache.md)

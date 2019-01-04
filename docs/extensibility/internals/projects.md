@@ -1,9 +1,6 @@
 ---
-title: 项目 |Microsoft 文档
-ms.custom: ''
+title: 项目 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
@@ -17,32 +14,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2ca4edabcee9f561dea51ea4b579ce194d13fa8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 893dbdb8a1ff92d338b6e8ee654f60578990c7e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130997"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876732"
 ---
 # <a name="projects"></a>项目
-在 Visual Studio 中，项目是开发人员使用可组织源代码文件和显示在其他资源的容器**解决方案资源管理器**。 通常情况下，项目是存储对源代码文件和资源，如位图文件的引用的文件 （例如，对于 C# 项目的.csproj 文件）。 项目的让组织、 生成、 调试和部署源代码、 对 Web 服务和数据库，以及其他资源的引用。 Vspackage 可以扩展 Visual Studio 项目系统在三个方面：*项目类型*，*项目子类型*，和*自定义工具*。  
+在 Visual Studio 中，项目是开发人员用于组织源代码文件和显示在其他资源的容器**解决方案资源管理器**。 通常情况下，项目是存储对源代码文件和资源，如位图文件的引用的文件 （例如，对于 C# 项目的.csproj 文件）。 项目的让组织、 生成、 调试和部署的源代码，请对 Web 服务和数据库，以及其他资源的引用。 Vspackage 可以扩展 Visual Studio 项目系统在三个方面：*项目类型*，*项目子类型*，并*自定义工具*。  
   
 ## <a name="in-this-section"></a>本节内容  
  [项目类型](../../extensibility/internals/project-types.md)  
- *项目类型*添加对新类型的项目，如编程语言的支持。 例如，Visual Studio 支持每种语言有其自己的项目类型，并且 IronPython 集成示例包括 IronPython 语言的项目类型。 你必须创建 C# 或 Visual Basic 自定义如何项是生成、 调试、 部署，以及显示在之外的语言的项目类型**解决方案资源管理器**。 有关详细信息，请参阅[项目类型](../../extensibility/internals/project-types.md)。  
+ *项目类型*添加对新类型的项目，例如编程语言的支持。 例如，Visual Studio 支持每种语言有其自己的项目类型，并且 IronPython 集成示例包括 IronPython 语言的项目类型。 必须创建 C# 或 Visual Basic 自定义如何项将生成、 调试、 部署，并显示在非语言的项目类型**解决方案资源管理器**。 有关详细信息，请参阅[项目类型](../../extensibility/internals/project-types.md)。  
   
  [项目子类型](../../extensibility/internals/project-subtypes.md)  
- *项目子类型*基于项目类型和可以用于自定义生成、 调试和部署项目的方式。 Visual Studio 将项目子类型使用智能设备项目;它们通过将新生成的程序从开发计算机复制到目标设备自定义部署。 C# 和 Visual Basic 项目类型可以用作基础项目子类型;C + + 项目类型不能。 为项目子类型，您自己的项目类型还可以用作的基础。 有关详细信息，请参阅[项目子类型](../../extensibility/internals/project-subtypes.md)。  
+ *项目子类型*基于项目类型，可用于自定义生成、 调试和部署项目的方式。 Visual Studio 使用项目子类型用于智能设备项目;它们通过将新生成的程序从开发计算机复制到目标设备自定义部署。 C# 和 Visual Basic 项目类型可以用作基础项目子类型;C + + 项目类型不能。 为项目子类型，你自己的项目类型还可以用作基础。 有关详细信息，请参阅[项目子类型](../../extensibility/internals/project-subtypes.md)。  
   
  [Web 项目](../../extensibility/internals/web-projects.md)  
- 说明反过来创建 Web 应用程序的 Web 项目。  
+ 介绍 Web 项目中，创建 Web 应用程序。  
   
- [新的项目生成： 实质上，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)和[新项目生成： 实质上，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
- 介绍什么实际发生的情况时创建新项目。  
+ [生成新项目：实质上，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)和[生成新项目：实质上，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)  
+ 介绍什么实际发生的情况时创建新的项目。  
   
  [VSSDK 示例](http://aka.ms/vs2015sdksamples)  
- 包含处理项目和解决方案中 VSSDK 的示例。  
+ 包含 VSSDK 处理项目和解决方案的示例。  
   
 ## <a name="related-sections"></a>相关章节  
  [Visual Studio SDK 内](../../extensibility/internals/inside-the-visual-studio-sdk.md)  
- 说明 Visual Studio 扩展性的不同方面。
+ 介绍了 Visual Studio 可扩展性的不同方面。

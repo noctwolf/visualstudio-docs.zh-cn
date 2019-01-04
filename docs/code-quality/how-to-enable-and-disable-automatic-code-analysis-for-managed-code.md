@@ -2,21 +2,20 @@
 title: 启用或禁用代码分析
 ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 71a1c44ee775060a25946f79d7c23194e19f0ae9
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 1620999385eec0862b4ba2aceadba10bb21d239d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905593"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>如何： 启用和禁用托管代码的自动代码分析
+# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>如何：启用和禁用托管代码的自动代码分析
 
 可以配置 （静态） 的代码分析，以托管的代码项目中的每个生成后运行。 可以设置不同的代码分析每个生成配置属性，例如，调试和发布。
 

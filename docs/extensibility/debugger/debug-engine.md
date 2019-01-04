@@ -1,9 +1,6 @@
 ---
 title: 调试引擎 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78bd5b732d7ea1714bb1c5627b570976e33a82c4
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: db4874c842775c02fdf50d827aea7daaac008587
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836227"
 ---
 # <a name="debug-engine"></a>调试引擎
 调试引擎 (DE) 适用于解释程序或操作系统提供调试服务，如执行控制、 断点、 和表达式计算。 DE 负责监视正在调试的程序的状态。 不要为此，DE 使用任何方法可供它在支持的运行时，是否从 CPU 或 Api 提供由运行时。  

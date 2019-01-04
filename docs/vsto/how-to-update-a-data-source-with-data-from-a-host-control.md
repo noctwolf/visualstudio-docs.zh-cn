@@ -1,9 +1,6 @@
 ---
-title: 如何： 使用主机控件中的数据更新数据源
-ms.custom: ''
+title: 如何：使用主机控件中的数据更新数据源
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ffacf89146932f5a8d1521ea922e27b12fb57151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933011"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何： 使用主机控件中的数据更新数据源
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何：使用主机控件中的数据更新数据源
   可以将宿主控件绑定到数据源，然后使用在此控件中对数据所做的更改来更新该数据源。 此过程包括以下两个主要步骤：  
   
 1. 使用控件中的已修改数据更新内存中数据源。 通常情况下，内存中数据源是一个 <xref:System.Data.DataSet>、 <xref:System.Data.DataTable>或某个其他数据对象。  
@@ -119,10 +116,8 @@ ms.locfileid: "49839760"
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)    
  [使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)    
- [如何： 滚动查看数据库记录工作表中](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
- [如何： 用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [如何： 用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [如何： 用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [如何： 用服务中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-services.md)  
-  
-  
+ [如何：滚动工作表中的数据库记录](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
+ [如何：用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [如何：用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)   
+ [如何：用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [如何：用服务中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-services.md)  

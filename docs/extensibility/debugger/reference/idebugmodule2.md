@@ -1,9 +1,6 @@
 ---
-title: IDebugModule2 |Microsoft 文档
-ms.custom: ''
+title: IDebugModule2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugModule2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac5c39ed386763689d504eda7a85e6a77fab4db3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af77d25a0bde9f01e27c4f99dd90aff055607395
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115588"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899675"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
-此接口表示模块-，即一个可执行程序的单元 — （如 DLL)。  
+此接口表示模块 — 即，程序可执行单元，如的 DLL。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,13 +28,13 @@ ms.locfileid: "31115588"
 IDebugModule2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 调试引擎 (DE) 实现此接口表示一个模块，以便访问有关该模块的信息。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 调试引擎 (DE) 实现此接口来表示一个模块，并为访问有关该模块的信息。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 调用[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)返回此接口。 DE 发送[IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)接口的会话调试管理器 (SDM) 的使用[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)方法。  
+ 调用[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)返回此接口。 DE 发送[IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)会话调试管理器 (SDM) 使用接口[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)方法。  
   
- 此接口也可以返回以[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)结构 (通过调用返回的这[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md))。  
+ 在中，此接口也会返回[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)结构 (通过调用返回[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md))。  
   
  [下一步](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)也会返回此接口 ([EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)返回[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)接口)。  
   
@@ -46,8 +43,8 @@ IDebugModule2 : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|获取[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)描述此模块。|  
-|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|已过时。 请勿使用。 将重新加载此模块的符号。|  
+|[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|获取[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)用于描述此模块。|  
+|[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|已过时。 不要使用。 重新加载此模块的符号。|  
   
 ## <a name="remarks"></a>备注  
  模块信息可以显示在**模块**在 IDE 的窗口。  
@@ -55,11 +52,11 @@ IDebugModule2 : IUnknown
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
  [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)   

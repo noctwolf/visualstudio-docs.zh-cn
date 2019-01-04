@@ -1,9 +1,6 @@
 ---
 title: 创建视图修饰、 命令和设置 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e937dfe47160959f2c011e53633c4d7b8a36766b
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 4de9446afcc7528ba5c27160b4e00ad911b657e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53348525"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958731"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>演练：创建视图修饰、 命令和设置 （列参考线）
 您可以扩展 Visual Studio 文本/代码编辑器与命令和查看效果。 本文介绍如何开始使用常用扩展功能，列参考线。 列参考线是以可视方式浅色文本编辑器的视图，以帮助您管理您的代码与特定的列宽度上绘制的线条。 具体而言，格式化的代码非常重要的示例包括在文档中，博客文章或 bug 报告。

@@ -1,9 +1,6 @@
 ---
 title: 文档数据和文档视图中自定义编辑器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2076f1a6c96aea717470fa1e955e5b9786f7fcc5
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d2af41600ed809259cd7512a7fc0a146047a37ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818870"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>文档数据和自定义编辑器中的文档视图
 自定义编辑器由两部分组成： 文档数据对象和文档视图对象。 顾名思义，文档数据对象表示要显示的文本数据。 同样，文档视图对象 （或"视图"） 表示要在其中显示文档数据对象的一个或多个 windows。  
@@ -42,7 +39,7 @@ ms.locfileid: "39639810"
 ## <a name="see-also"></a>请参阅  
  [支持多个文档视图](../extensibility/supporting-multiple-document-views.md)   
  [简化的嵌入](../extensibility/simplified-embedding.md)   
- [如何： 将视图附加到文档数据](../extensibility/how-to-attach-views-to-document-data.md)   
+ [如何：将视图附加到文档数据](../extensibility/how-to-attach-views-to-document-data.md)   
  [文档锁持有者管理](../extensibility/document-lock-holder-management.md)   
  [单个和多选项卡视图](../extensibility/single-and-multi-tab-views.md)   
  [保存标准文档](../extensibility/internals/saving-a-standard-document.md)   

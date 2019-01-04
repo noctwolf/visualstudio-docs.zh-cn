@@ -1,9 +1,6 @@
 ---
-title: 演练： 发布 Visual Studio 扩展通过命令行 |Microsoft Docs
-ms.custom: ''
+title: 演练：发布 Visual Studio 扩展通过命令行 |Microsoft Docs
 ms.date: 07/12/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing extensions
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050178"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857210"
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>演练： 发布 Visual Studio 扩展中的通过命令行
+# <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>演练：发布 Visual Studio 扩展中的通过命令行
 
 此演练演示如何将 Visual Studio 扩展发布到 Visual Studio Marketplace 使用命令行。 当你的扩展添加到 Marketplace 后时，开发人员可以使用[**扩展和更新**](../ide/finding-and-using-visual-studio-extensions.md)对话框从中浏览新建和更新的扩展。
 
@@ -203,7 +200,7 @@ This is test extension.
 
 在这种情况下，我们将使用默认 VSPackage 扩展，但相同的步骤适用于在每个类型的扩展。
 
-1. 在 C# 中名为"TestPublish"具有菜单命令创建 VSPackage。 有关详细信息，请参阅[创建第一个扩展： Hello World](../extensibility/extensibility-hello-world.md)。
+1. 在 C# 中名为"TestPublish"具有菜单命令创建 VSPackage。 有关详细信息，请参阅[创建第一个扩展：Hello World](../extensibility/extensibility-hello-world.md)。
 
 ### <a name="package-your-extension"></a>打包你的扩展
 

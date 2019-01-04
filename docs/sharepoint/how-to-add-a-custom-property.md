@@ -1,15 +1,10 @@
 ---
-title: 如何： 添加自定义属性 |Microsoft Docs
-ms.custom: ''
+title: 如何：添加自定义属性 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Property_Editor
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ac95ffcaf686c3ab086f994680e7bce80c330f0f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 845e5c3862ef64a584e4f9033dbe481d454010f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756225"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913282"
 ---
-# <a name="how-to-add-a-custom-property"></a>如何： 添加自定义属性
+# <a name="how-to-add-a-custom-property"></a>如何：添加自定义属性
   可以向模型添加自定义属性，通过使用**属性编辑器**。 您可以访问代码来检索连接字符串等信息和其他数据在运行时中的这些属性。  
   
 ### <a name="to-add-a-custom-property"></a>若要添加自定义属性  
@@ -53,5 +48,3 @@ ms.locfileid: "36756225"
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
-  

@@ -1,8 +1,7 @@
 ---
-title: XML 架构资源管理器-搜索架构集
+title: XML 架构资源管理器的搜索架构集
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1133d6a67442bde5a9f949553efcffd07e2d3ffe
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 26be8121c679cc2614440f8e28f52b383dbe944c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836564"
 ---
 # <a name="search-the-schema-set"></a>搜索架构集
 
-**XML 架构资源管理器**，您可以搜索架构集通过以下方式：
+**XML 架构资源管理器**使您可以搜索架构集以下方面：
 
 -   关键字搜索。
 
@@ -27,11 +26,11 @@ ms.locfileid: "34751736"
 
 ## <a name="keyword-search"></a>关键字搜索
 
- 通过输入中的子字符串执行关键字搜索**搜索架构集**文本框**XML 架构资源管理器**工具栏。
+ 通过输入中的子字符串执行关键字搜索**搜索架构集**的文本框中**XML 架构资源管理器**工具栏。
 
  ![XML 架构资源管理器关键字搜索](../xml-tools/media/schemaexplorersearch.gif)
 
- **XML 架构资源管理器**搜索架构集的以下属性：
+ **XML 架构资源管理器**搜索架构集在以下属性：
 
 -   与指定关键字匹配的任何 `name` 或 `ref` 特性。 可以按名称查找元素、 属性、 类型和等等。
 
@@ -39,21 +38,21 @@ ms.locfileid: "34751736"
 
 -   导入语句的 `namespace` 特性。
 
-## <a name="schema-specific-search"></a>架构特定搜索
+## <a name="schema-specific-search"></a>架构特定的搜索
 
- **XML 架构资源管理器**还包括你可以通过使用的上下文菜单访问的内置搜索**XML 架构资源管理器**。 有关可用的上下文菜单的详细信息，请参阅[上下文菜单](../xml-tools/context-menus-xml-schema-explorer.md)。 您还可以通过以下方式执行特定于架构的搜索从起始视图;有关详细信息，请参阅中的"架构集详细信息"部分[起始视图](../xml-tools/start-view.md)主题。
+ **XML 架构资源管理器**还可以使用的上下文菜单访问的内置搜索**XML 架构资源管理器**。 有关可用的上下文菜单的详细信息，请参阅[上下文菜单](../xml-tools/context-menus-xml-schema-explorer.md)。 此外可以从起始视图; 执行特定于架构的搜索有关详细信息，请参阅中的"架构集详细信息"部分[起始视图](../xml-tools/start-view.md)主题。
 
 ## <a name="display-and-navigate-search-results"></a>显示和导航搜索结果
 
- 完成搜索后，摘要结果窗格会添加到工具栏中，其中显示搜索的结果。 搜索结果中也将突出显示**XML 架构资源管理器**和由垂直滚动条上的刻度标记。 你可以通过使用导航搜索结果**转到下一个搜索结果**和**转到上一个搜索结果**上的摘要结果窗格中的按钮**XML 架构资源管理器**工具栏;通过使用键盘键**F3**和**Shift**+**F3**; 或单击滚动条中的刻度线。
+ 完成搜索后，摘要结果窗格会添加到工具栏中，其中显示搜索的结果。 中还突出显示搜索结果**XML 架构资源管理器**和按垂直滚动条上的刻度标记。 可以通过使用导航搜索结果**转到下一个搜索结果**并**转到上一个搜索结果**上的摘要结果窗格的按钮**XML 架构资源管理器**工具栏;通过使用键盘键**F3**并**Shift**+**F3**; 或单击滚动条中的刻度。
 
- 你可以向工作区添加搜索结果，通过单击**将突出显示的节点添加到工作区**摘要结果窗格上的按钮。
+ 可以通过单击到工作区添加搜索结果**突出显示的节点添加到工作区**摘要结果窗格上的按钮。
 
  ![XML 架构资源管理器搜索结果](../xml-tools/media/schemaexplorersearchresult.gif)
 
 ## <a name="clear-search-results"></a>清除搜索结果
 
- 若要清除搜索结果，请单击**x**的摘要结果窗格上的按钮**XML 架构资源管理器**搜索工具栏。
+ 若要清除搜索结果，请单击**x**上的摘要结果窗格的按钮**XML 架构资源管理器**搜索工具栏。
 
 ## <a name="see-also"></a>请参阅
 

@@ -1,9 +1,6 @@
 ---
 title: 什么&#39;Visual Studio 2017 SDK 中的新增功能的 s |Microsoft Docs
-ms.custom: ''
 ms.date: 10/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2a003bc19764aa07262552d3f0cc41316835b6
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 88e68ae7e6a88d1acd88016819eb4634962ef101
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952204"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>什么&#39;s Visual Studio 2017 SDK 中的新增功能
 
@@ -41,7 +38,7 @@ Visual Studio SDK 的 Visual Studio 2017 具有以下新的和更新功能。
 
 ## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>将扩展性项目迁移到 Visual Studio 2017
 
-若要了解如何更新到 Visual Studio 2017 的可扩展性项目和各自的 VSIX 清单，请参阅[如何： 将扩展性项目迁移到 Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。
+若要了解如何更新到 Visual Studio 2017 的可扩展性项目和各自的 VSIX 清单，请参阅[如何：将扩展性项目迁移到 Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。
 
 ## <a name="custom-project-and-item-templates"></a>自定义项目和项模板
 
@@ -49,4 +46,4 @@ Visual Studio SDK 的 Visual Studio 2017 具有以下新的和更新功能。
 
 ## <a name="updated-extension-performance-guidelines"></a>更新的扩展性能准则
 
-新增了一个[如何： 诊断扩展性能](how-to-diagnose-extension-performance.md)下的文章[管理 Vspackage](managing-vspackages.md)来说明如何检测和分析对 Visual Studio 的扩展影响启动和解决方案加载时间。
+新增了一个[如何：诊断扩展性能](how-to-diagnose-extension-performance.md)一文下[管理 Vspackage](managing-vspackages.md)来说明如何检测和分析对 Visual Studio 的扩展影响启动和解决方案加载时间。

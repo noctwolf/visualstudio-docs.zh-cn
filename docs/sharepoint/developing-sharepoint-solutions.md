@@ -1,9 +1,6 @@
 ---
 title: 开发 SharePoint 解决方案 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bc45f1420f073347153c6b7b8dd72cae44dd6b0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295899"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871052"
 ---
 # <a name="develop-sharepoint-solutions"></a>开发 SharePoint 解决方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中可提供多种 SharePoint 项目类型模板，用于创建 SharePoint 站点和站点元素。 有关可用的项目类型的列表，请参阅[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是对 SharePoint 项目元素和属性的说明。  
@@ -48,7 +45,7 @@ ms.locfileid: "51295899"
   
  当将某个项（如，内容类型或列表实例）添加到 SharePoint 项目时，那么该项会添加到“功能”  节点的一个功能中。 项的范围决定了将其添加到新功能还是现有功能。 如果新项与现有功能具有相同的范围，那么将此项添加到该功能中。 否则，将该项添加到新功能中。  
   
- 若要手动添加一项功能，请执行功能节点的快捷菜单中的“添加功能”  命令。 可使用“功能设计器”查看或更改功能的内容。 有关详细信息，请参阅[如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)。  
+ 若要手动添加一项功能，请执行功能节点的快捷菜单中的“添加功能”  命令。 可使用“功能设计器”查看或更改功能的内容。 有关更多信息，请参见[如何：自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)。  
   
  当将某个功能添加到 SharePoint 项目时，此功能会作为节点显示在“解决方案资源管理器”  中，默认名称为 Feature*x*.feature，其中的 *x* 是唯一的编号。 将某个功能部署到 SharePoint Server 后，SharePoint 管理员可以将其激活，使其可用于 SharePoint 站点用户。  
   
@@ -66,14 +63,14 @@ ms.locfileid: "51295899"
   
 |属性名|描述|  
 |-------------------|-----------------|  
-|活动部署配置|指定部署过程中执行的步骤序列。 有关详细信息，请参阅[如何： 编辑 SharePoint 部署配置](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)。|  
+|活动部署配置|指定部署过程中执行的步骤序列。 有关更多信息，请参见[如何：编辑 SharePoint 部署配置](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)。|  
 |程序集部署目标|确定 *SharePoint 应用程序程序集* 的所在位置。 有效的程序集位置值为 *GlobalAssemblyCache* （默认值）或 *WebApplication*。<br /><br /> 如果将 *Sandboxed Solution* 属性设置为 **true**，则禁用此属性。|  
 |调试后自动收回|指定部署的解决方案是否在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中的调试模式下运行应用程序后自动从 SharePoint 收回。 当选中时，该解决方案会在调试后 IDE 返回设计视图时收回。 当取消选中时，该解决方案不会收回。 有关详细信息，请参阅 [收回解决方案](http://go.microsoft.com/fwlink/?LinkId=183819)。|  
-|编辑配置|指定要用于该项目的部署配置。 有关详细信息，请参阅[如何： 编辑 SharePoint 部署配置](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)并[部署、 发布和升级 SharePoint 解决方案包](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)。|  
+|编辑配置|指定要用于该项目的部署配置。 有关更多信息，请参见[如何：编辑 SharePoint 部署配置](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)并[部署、 发布和升级 SharePoint 解决方案包](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)。|  
 |启用 Silverlight 调试（而不是 Script 调试）|当选中时，Silverlight 调试器将附加到调试过程中。 当取消选中时，Script 调试器将附加到调试过程中。 有关详细信息，请参阅 [Silverlight 调试概述](http://go.microsoft.com/fwlink/?LinkId=179826)。|  
 |将程序集包含在包中|指定是否在生成时打包项目程序集。|  
-|后期部署命令行|指定在部署 SharePoint 解决方案后运行的命令。 此命令行支持任何批处理命令和 MSBuild 变量的分辨率。 有关详细信息，请参阅 [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)。|  
-|预先部署命令行|指定在部署 SharePoint 解决方案之前运行的命令。 此命令行支持任何批处理命令和 MSBuild 变量的分辨率。 有关详细信息，请参阅 [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md)。|  
+|后期部署命令行|指定在部署 SharePoint 解决方案后运行的命令。 此命令行支持任何批处理命令和 MSBuild 变量的分辨率。 有关更多信息，请参见[如何：设置 SharePoint 部署命令](../sharepoint/how-to-set-sharepoint-deployment-commands.md)。|  
+|预先部署命令行|指定在部署 SharePoint 解决方案之前运行的命令。 此命令行支持任何批处理命令和 MSBuild 变量的分辨率。 有关更多信息，请参见[如何：设置 SharePoint 部署命令](../sharepoint/how-to-set-sharepoint-deployment-commands.md)。|  
 |项目文件|包含有关项目的生成、配置和其他信息的文件的名称。|  
 |项目文件夹|系统中项目文件的位置。 （只读。）|  
 |Sandboxed Solution|指定是否应将项目部署为 *沙盒解决方案*（也称为 *用户创建的解决方案*）。 沙盒解决方案不一定是值得信任的。 **true** 的值表示将项目部署为沙盒解决方案，而 **false** 的值则表示将项目部署为场解决方案。 有关详细信息，请参阅 [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) 和 [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)。|  
@@ -104,7 +101,7 @@ ms.locfileid: "51295899"
 |部署位置|该文件在 SharePoint 服务器中的完全限定路径。 此路径由部署根和部署路径的子属性组成。|  
 |部署路径|在 SharePoint 服务器文件，例如 Workflow1 上的文件的相对路径\\。 通过串联 *Deployment Path* 值与 *Deployment Root* 值的末端，创建文件的完全限定路径。<br /><br /> 选择的值*RootFile*有关*部署类型*属性更改*Deployment Root*属性设置为\<SharePointRoot >\\，从而导致的完全限定的路径\<SharePointRoot > \Workflow1\\。 有关详细信息，请参阅[打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。|  
 |Deployment Root|字符串。 将文件部署到 SharePoint Server 中的根文件夹。 例如， \<SharePointRoot > \Template\Features\\\<FeatureName >\\。<br /><br /> *Deployment Type* 设置决定 *Deployment Root* 属性的值。|  
-|RootFile|文件的部署类型，可决定 *Deployment Root* 值。 可以是以下值之一：<br /><br /> NoDeployment: *\<没有值 >*<br /><br /> ElementManifest:  *\<SharePointRoot > \Template\Features\\\<功能名 >*\\<br /><br /> ElementFile:  *\<SharePointRoot > \Template\Features\\\<功能名 >\\*<br /><br /> TemplateFile:  *\<SharePointRoot > \Template\\*<br /><br /> RootFile:  *\<SharePointRoot >\\*<br /><br /> GlobalResource:  *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource:  *\<ClassResourcePath >\\*<br /><br /> 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.SharePoint.DeploymentType> 。|  
+|RootFile|文件的部署类型，可决定 *Deployment Root* 值。 可以是以下值之一：<br /><br /> NoDeployment: *\<没有值 >*<br /><br /> ElementManifest:*\<SharePointRoot > \Template\Features\\\<功能名 >*\\<br /><br /> ElementFile:*\<SharePointRoot > \Template\Features\\\<功能名 >\\*<br /><br /> TemplateFile:*\<SharePointRoot > \Template\\*<br /><br /> RootFile:*\<SharePointRoot >\\*<br /><br /> GlobalResource:*\<SharePointRoot > \Resources\\*<br /><br /> ClassResource:*\<ClassResourcePath >\\*<br /><br /> 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>。|  
 |文件名|项文件的文件或文件夹名称|  
 |完整路径|项的文件的位置。 （只读。）|  
   
@@ -114,8 +111,8 @@ ms.locfileid: "51295899"
 |-----------|-----------------|  
 |[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)|描述在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中可用的 SharePoint 项目和项目项模板。|  
 |[如何：将项添加到 SharePoint 项目](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|描述如何将新项或现有项添加到 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 项目中。|  
-|[演练： 为 SharePoint 创建网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|分步指导创建自定义字段、内容类型、列表定义和列表实例。|  
-|[如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)|介绍如何添加事件接收器中创建的项目[演练： 创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。|  
+|[演练：创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|分步指导创建自定义字段、内容类型、列表定义和列表实例。|  
+|[如何：创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)|介绍如何添加事件接收器中创建的项目[演练：创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)。|  
 |[创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)|描述如何创建包括工作流关联窗体和工作流启动窗体的工作流项目。|  
 |[为 SharePoint 创建页](../sharepoint/creating-pages-for-sharepoint.md)|描述如何为 SharePoint 创建页（如应用程序页、网站页、母版页和页面布局）。|  
 |[为 SharePoint 创建 web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)|描述如何添加能够让用户借助浏览器便可直接修改 SharePoint 网站页的内容、外观和行为的控件。|  
@@ -126,7 +123,7 @@ ms.locfileid: "51295899"
 |[使用模块包括解决方案中的文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)|描述如何使用模块将文件从 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 项目部署到 SharePoint 站点。|  
 |[浏览 SharePoint 连接使用服务器资源管理器](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|描述如何通过使用服务器资源管理器浏览本地 SharePoint 站点。|  
 |[提供在项目项中的打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|描述如何使用项目项属性提供项目的打包和部署信息，如安全控件项、项目输出引用和功能属性。|  
-|[如何： 添加和移除映射的文件夹](../sharepoint/how-to-add-and-remove-mapped-folders.md)|描述如何将映射的文件夹添加到项目以便更容易访问 SharePoint 资源。|  
+|[如何：添加和移除映射的文件夹](../sharepoint/how-to-add-and-remove-mapped-folders.md)|描述如何将映射的文件夹添加到项目以便更容易访问 SharePoint 资源。|  
 |[沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)|描述与沙盒解决方案相关联的问题。|  
 |[SharePoint 解决方案的安全性](../sharepoint/security-for-sharepoint-solutions.md)|描述有关在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中开发 SharePoint 解决方案的安全注意事项。|  
 |[URL 选取器对话框&#40;Visual Studio 中的 SharePoint 开发&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|描述将路径引用添加到项目中或在本地 SharePoint 服务器上所使用的对话框。|  
@@ -136,5 +133,3 @@ ms.locfileid: "51295899"
  [浏览 SharePoint 连接使用服务器资源管理器](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
-  

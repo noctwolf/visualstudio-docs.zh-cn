@@ -1,13 +1,8 @@
 ---
 title: 创建业务数据连接模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68940d6e48f1f3a3e51017e1cc838976735de104
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a1feefe5bc338460f359dd6c1a25b50bddf67ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957480"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>创建业务数据连接模型
   可以创建业务数据连接 (BDC) 模型，也可以使用 Visual Studio 自定义现有 BDC 模型。 每个 SharePoint 项目可以包含一个模型。 有关详细信息，请参阅[将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。  
@@ -45,7 +40,7 @@ ms.locfileid: "49930201"
 |模型定义文件|包含用于定义实体、 方法、 业务线 (LOB) 系统对象和其他元数据描述模型的 XML。<br /><br /> 使用 BDC 设计器中，修改此文件中的元数据**BDC 资源管理器**， **BDC 方法详细信息**窗口中，并且**属性**窗口。|  
 |实体服务代码文件|包含检索、 更新和删除的默认实体实例的方法。|  
   
- 若要定义实体的属性，请编辑实体的代码文件。 有关详细信息，请参阅[如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
+ 若要定义实体的属性，请编辑实体的代码文件。 有关更多信息，请参见[如何：将实体添加到模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
   
  若要检索、 更新和删除实体的实例，请将代码添加到实体服务代码文件。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
@@ -61,7 +56,7 @@ ms.locfileid: "49930201"
   
 - 若要打包并部署到多个 SharePoint 服务器场的现有模型。  
   
-  在任一情况下，导入的模型中定义的 LOB 系统不会受到影响，并将继续按预期方式工作。 若要将现有模型添加到 SharePoint 项目，请使用 Visual Studio**添加现有项**对话框。 有关详细信息，请参阅[如何： 将现有 BDC 模型文件添加到 SharePoint 项目](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)。  
+  在任一情况下，导入的模型中定义的 LOB 系统不会受到影响，并将继续按预期方式工作。 若要将现有模型添加到 SharePoint 项目，请使用 Visual Studio**添加现有项**对话框。 有关更多信息，请参见[如何：将现有 BDC 模型文件添加到 SharePoint 项目](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)。  
   
   您可以通过选择中的一个选项添加到导入的模型类型的.NET Framework 程序集的 LOB 系统**添加.NET 程序集 LobSystem**。 这使你可以编写自定义代码和设计器用于定义导入模型的元数据。  
   
@@ -69,9 +64,7 @@ ms.locfileid: "49930201"
   
 |标题|描述|  
 |-----------|-----------------|  
-|[如何： 创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)|演示如何创建新的 BDC 模型。|  
-|[如何： 将现有 BDC 模型文件添加到 SharePoint 项目](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|演示如何将现有模型导入 SharePoint 项目。|  
-|[如何： 使用资源文件指定本地化的名称、 属性和权限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|介绍如何提供模型元数据合并的字符串时该模型由 Web 部件或网页。|  
-|[如何： 在 BDC 功能中包含自定义程序集](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|演示如何在功能中引入的自定义程序集。|  
-  
- 
+|[如何：创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)|演示如何创建新的 BDC 模型。|  
+|[如何：将现有 BDC 模型文件添加到 SharePoint 项目](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|演示如何将现有模型导入 SharePoint 项目。|  
+|[如何：使用资源文件指定本地化的名称、 属性和权限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|介绍如何提供模型元数据合并的字符串时该模型由 Web 部件或网页。|  
+|[如何：在 BDC 功能中包含自定义程序集](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|演示如何在功能中引入的自定义程序集。|  

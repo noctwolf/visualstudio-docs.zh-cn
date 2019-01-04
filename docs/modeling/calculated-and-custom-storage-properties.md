@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f54589d70bc7cab3959d7f0a7ad2a84d3b028754
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f86082c1b382904dc721d3caab54bf6d18418096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938311"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>计算的和自定义的存储属性
 域特定语言 (DSL) 中的所有域属性可以显示给用户在关系图上和在语言资源管理器中，并且可以通过程序代码访问。 但是，属性不同的方式存储它们的值。
@@ -45,7 +44,7 @@ ms.locfileid: "49877187"
 
 4.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。
 
-     您收到以下错误消息:"*YourClass*不包含定义 get*YourProperty*。"
+     收到以下错误消息："*YourClass*不包含定义 get*YourProperty*。"
 
 5.  双击该错误消息。
 

@@ -1,9 +1,6 @@
 ---
-title: IDebugEventCallback2 |Microsoft 文档
-ms.custom: ''
+title: IDebugEventCallback2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEventCallback2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68d29d928f310cb045ed712a151f9275446465a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce30279cb58704ab712245ad69bcda197d0e7fc3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116199"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852753"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
-调试引擎 (DE) 使用此接口来将调试事件发送到会话调试管理器 (SDM)。  
+此接口由调试引擎 (DE) 用于将调试事件发送到会话调试管理器 (SDM)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,32 +28,32 @@ ms.locfileid: "31116199"
 IDebugEventCallback2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 实现此接口可从调试引擎接收事件。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 实现此接口以接收来自调试引擎的事件。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 调试引擎通常接收此接口，当 SDM 调用[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)，[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)，或[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)。 调试引擎通过调用将事件发送至 SDM[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)。  
+ 调试引擎通常接收此接口，当调用 SDM[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)，[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)，或[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)。 调试引擎通过调用将事件发送到 SDM[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDebugEventCallback2`。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|发送通知的调试事件，以便将 SDM。|  
+|[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|发送通知的调试 SDM 的事件。|  
   
 ## <a name="remarks"></a>备注  
- 尽管[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)和[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)指定它们需要`IDebugEventCallback2`接口，这不是这样，和的接口指针将始终为 null 值。 相反，必须使用的调试引擎`IDebugEventCallback2`接口的调用中接收[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)，[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)，或[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)。  
+ 尽管[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)并[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)指定它们采用`IDebugEventCallback2`接口，这种情况下，并不接口指针将始终为 null 值。 相反，必须使用调试引擎`IDebugEventCallback2`接口对的调用中接收[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)，[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)，或[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)。  
   
- 如果包实现[IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md)在托管代码中，强烈建议，<xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A>传递给在各种接口上调用[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)。  
+ 如果包实现[IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md)在托管代码中，我们强烈建议对该<xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A>传递给各种接口上调用[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
  [附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)   

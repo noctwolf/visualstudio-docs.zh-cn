@@ -1,9 +1,6 @@
 ---
-title: 演练： 创建第一个 VSTO 外接程序 Excel
-ms.custom: ''
+title: 演练：为 Excel 创建第一个 VSTO 外接程序
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f803db23d868aa553ef4c1cd898428b64e998c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949898"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831883"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>演练： 创建第一个 VSTO 外接程序 Excel
+# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>演练：为 Excel 创建第一个 VSTO 外接程序
   本介绍性演练演示如何创建 Microsoft Office Excel 的应用程序级外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的工作簿无关。  
   
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]  
@@ -121,13 +118,13 @@ ms.locfileid: "49949898"
 ## <a name="next-steps"></a>后续步骤  
  既然你已经创建了一个基本的 Excel VSTO 外接程序，就可以从下面这些主题中了解有关如何开发外 VSTO 加载项的详细信息：  
   
--   可以在 VSTO 外接程序中执行的常规编程任务：[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
+-   可以在 VSTO 外接程序中执行的常规编程任务：[VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
   
--   特定于 Excel VSTO 外接程序的编程任务： [Excel 解决方案](../vsto/excel-solutions.md)。  
+-   编程特定于 Excel VSTO 外接程序的任务：[Excel 解决方案](../vsto/excel-solutions.md)。  
   
--   使用 Excel 对象模型： [Excel 对象模型概述](../vsto/excel-object-model-overview.md)。  
+-   使用 Excel 对象模型：[Excel 对象模型概述](../vsto/excel-object-model-overview.md)。  
   
--   自定义 Excel 的用户界面 (UI)，例如，通过将自定义选项卡添加到功能区或创建你自己的自定义任务窗格： [Office UI 自定义](../vsto/office-ui-customization.md)。  
+-   通过自定义用户界面 (UI) 的 Excel，例如，将自定义选项卡添加到功能区或创建你自己的自定义任务窗格：[Office UI 自定义](../vsto/office-ui-customization.md)。  
   
 -   生成和调试针对 Excel 的 VSTO 外接程序：[生成 Office 解决方案](../vsto/building-office-solutions.md)。  
   
@@ -142,5 +139,3 @@ ms.locfileid: "49949898"
  [生成 Office 解决方案](../vsto/building-office-solutions.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [Office 项目模板概述](../vsto/office-project-templates-overview.md)  
-  
-  

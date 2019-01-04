@@ -1,9 +1,6 @@
 ---
 title: Word 对象模型概述
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 75a5f8e79bbd6dd34b046cbff6d59844a977efb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f4d550389e6659388c39fc6a2953eeb816c8eb01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878006"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922246"
 ---
 # <a name="word-object-model-overview"></a>Word 对象模型概述
   在 Visual Studio 中开发 Word 解决方案时，会与 Word 对象模型进行交互。 此对象模型包含 Word 的主互操作程序集中所提供的类和接口，并在 <xref:Microsoft.Office.Interop.Word> 命名空间中进行定义。  
@@ -122,7 +119,7 @@ ms.locfileid: "49878006"
  有关 Word 对象模型的完整信息，可以参考 Word 主互操作程序集 (PIA) 引用和 Visual Basic for Applications (VBA) 对象模型引用。  
   
 ### <a name="primary-interop-assembly-reference"></a>主互操作程序集引用  
- Word PIA 参考文档介绍了 Word 的主互操作程序集中的类型。 本文档可从以下位置： [Word 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189588)。  
+ Word PIA 参考文档介绍了 Word 的主互操作程序集中的类型。 本文档可从以下位置：[Word 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189588)。  
   
  有关设计的 Word PIA，例如在 PIA 和如何实现 PIA 中的事件中类和接口之间的差别的详细信息请参阅[的中的 Office 主互操作程序集类和接口概述](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
@@ -140,5 +137,3 @@ ms.locfileid: "49878006"
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

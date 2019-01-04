@@ -1,9 +1,6 @@
 ---
 title: 用于调试的 SDK 帮助程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - dbgmetric.lib
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d352e22b95540cfc1901eb214c2d5180b6024f27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821521"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942406"
 ---
 # <a name="sdk-helpers-for-debugging"></a>用于调试的 SDK 帮助程序
 这些函数和声明是用于在 c + + 中实现的调试引擎中，表达式计算器和符号提供程序的全局帮助器函数。  
@@ -160,7 +157,7 @@ HRESULT EnumMetricSections(
 ## <a name="metric-definitions"></a>指标定义  
  这些定义可用于预定义的指标名称。 名称对应于各种注册表项和值的名称和这些都是定义为宽字符字符串： 例如， `extern LPCWSTR metrictypeEngine`。  
   
-|预定义的指标类型|说明： 用于基项...|  
+|预定义的指标类型|描述：有关基项...|  
 |-----------------------------|---------------------------------------|  
 |metrictypeEngine|所有调试引擎指标。|  
 |metrictypePortSupplier|所有端口供应商指标。|  
@@ -266,7 +263,7 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[注册表项]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|  
 |*[版本根]*|Visual Studio 的版本 (例如， `7.0`， `7.1`，或`8.0`)。 但是，此根目录还可以修改使用 **/rootsuffix**切换到**devenv.exe**。 VSIP，对于此修饰符通常是**Exp**，因此，则版本根将是，例如，8.0Exp。|  
-|*[指标根]*|这可以是`AD7Metrics`或`AD7Metrics(Debug)`，取决于是否使用 dbgmetric.lib 的调试版本。 **注意：** 是否使用 dbgmetric.lib，此命名约定应遵守如果必须调试和发布之间的差异必须反映在注册表中的版本。|  
+|*[指标根]*|这可以是`AD7Metrics`或`AD7Metrics(Debug)`，取决于是否使用 dbgmetric.lib 的调试版本。 **注意：** 指示是否使用 dbgmetric.lib 时，此命名约定应遵守如果必须调试和发布之间的差异必须反映在注册表中的版本。|  
 |*[指标类型]*|要写入的度量值的类型： `Engine`， `ExpressionEvaluator`， `SymbolProvider`，等等。这些都被定义为如下所示为 dbgmetric.h `metricTypeXXXX`，其中`XXXX`是特定类型名称。|  
 |*[metric]*|要将分配一个值，以便将跃点设置的项的名称。 度量值的实际组织取决于指标类型。|  
 |*[跃点值]*|分配给该度量值的值。 应具有的值 （字符串、 数字等） 的类型取决于该度量值。|  
@@ -393,7 +390,7 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|  
 |*[扩展 guid]*|表达式计算器扩展的 GUID|  
   
-### <a name="exceptions"></a>异常  
+### <a name="exceptions"></a>Exceptions  
  以下是在注册表中的异常度量值的组织。 `Exception` 是异常的指标类型名称，对应于 *[指标类型]*。  
   
  `Exception`\  

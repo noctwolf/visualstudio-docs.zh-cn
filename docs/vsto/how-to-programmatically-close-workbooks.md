@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式关闭工作簿
-ms.custom: ''
+title: 如何：以编程方式关闭工作簿
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36b7da02830375161af08bda301e3ead98321741
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f0e9cb0402894bc09ff287db1ee42001ee005678
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893190"
 ---
-# <a name="how-to-programmatically-close-workbooks"></a>如何： 以编程方式关闭工作簿
+# <a name="how-to-programmatically-close-workbooks"></a>如何：以编程方式关闭工作簿
   你可以关闭活动工作簿，也可以指定关闭某个工作簿。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -40,7 +37,7 @@ ms.locfileid: "35670701"
   
 ### <a name="to-close-the-active-workbook-in-a-vsto-add-in"></a>若要关闭 VSTO 外接程序中的活动工作簿  
   
-1.  调用 <xref:Microsoft.Office.Interop.Excel._Workbook.Close%2A> 方法来关闭活动工作簿。 若要使用下面的代码示例，请在 Excel 的应用程序级项目内的 `ThisAddIn` 类中运行它。  
+1.  调用 <xref:Microsoft.Office.Interop.Excel._Workbook.Close%2A> 方法来关闭活动工作簿。 若要使用下面的代码示例，请在 Excel 的 VSTO 外接程序项目内的 `ThisAddIn` 类中运行它。  
   
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#1)]  
@@ -57,10 +54,8 @@ ms.locfileid: "35670701"
   
 ## <a name="see-also"></a>请参阅  
  [使用工作簿](../vsto/working-with-workbooks.md)   
- [如何： 以编程方式保存工作簿](../vsto/how-to-programmatically-save-workbooks.md)   
- [如何： 以编程方式打开工作簿](../vsto/how-to-programmatically-open-workbooks.md)   
+ [如何：以编程方式保存工作簿](../vsto/how-to-programmatically-save-workbooks.md)   
+ [如何：以编程方式打开工作簿](../vsto/how-to-programmatically-open-workbooks.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

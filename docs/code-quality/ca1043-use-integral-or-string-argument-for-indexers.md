@@ -1,8 +1,7 @@
 ---
-title: CA1043：将整型或字符串自变量用于索引器
+title: CA1043:将整型或字符串参数用于索引器
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1043
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bb8781b205da07c1c075e2638716cfc139491d07
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ae1d75341a857d380f78a2b8c0532fcdad1f5e1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550578"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987586"
 ---
-# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043：将整型或字符串自变量用于索引器
+# <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043:将整型或字符串参数用于索引器
 
 |||
 |-|-|
@@ -56,6 +55,6 @@ ms.locfileid: "45550578"
  [!code-vb[FxCop.Design.IntegralOrStringIndexers#1](../code-quality/codesnippet/VisualBasic/ca1043-use-integral-or-string-argument-for-indexers_1.vb)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA1023：索引器不应是多维的](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
+ [CA1023:索引器不应是多维](../code-quality/ca1023-indexers-should-not-be-multidimensional.md)
 
- [CA1024：在适用处使用属性](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024： 在适用处在适用处使用属性](../code-quality/ca1024-use-properties-where-appropriate.md)

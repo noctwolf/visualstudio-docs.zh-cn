@@ -1,9 +1,6 @@
 ---
 title: 功能区对象模型概述
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25e34dcb38685a885ae0730740c25e1cb502e15c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910584"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961304"
 ---
 # <a name="ribbon-object-model-overview"></a>功能区对象模型概述
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]公开可用于获取和设置在运行时的功能区控件的属性的强类型化的对象模型。 例如，您可以动态填充菜单控件，或显示和隐藏控件根据上下文。 向功能区，但只能在功能区加载 Office 应用程序之前，还可以添加选项卡、 组和控件。 有关信息，请参阅[设置属性变为只读](#SettingReadOnlyProperties)。  
@@ -40,7 +37,7 @@ ms.locfileid: "49910584"
 |事件|描述|  
 |-----------|-----------------|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|当 Office 应用程序加载功能区自定义项时引发。 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>事件处理程序会自动添加到功能区代码文件。 使用此事件处理程序运行时在功能区加载自定义代码。|  
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|您可以在功能区自定义项的缓存映像时在功能区加载。 如果您编写代码以缓存此事件处理程序中的功能区映像，可以获取略微的性能提升。 有关详细信息，请参阅 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> 。|  
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|您可以在功能区自定义项的缓存映像时在功能区加载。 如果您编写代码以缓存此事件处理程序中的功能区映像，可以获取略微的性能提升。 有关详细信息，请参阅<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>。|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|功能区实例关闭时引发。|  
   
 ##  <a name="RibbonControlClasses"></a> 功能区控件  
@@ -190,13 +187,12 @@ ms.locfileid: "49910584"
 ## <a name="see-also"></a>请参阅  
  [在运行时在功能区的访问](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能区概述](../vsto/ribbon-overview.md)   
- [如何： 开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [功能区设计器](../vsto/ribbon-designer.md)   
- [演练： 使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [演练： 更新在运行时功能区上的控件](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
+ [演练：使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [演练：更新在运行时功能区上的控件](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
  [为 Outlook 中自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)   
- [如何： 自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)   
- [如何： 将控件添加到 Backstage 视图](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [如何： 将功能区从功能区设计器导出到功能区 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [如何： 显示外接程序用户界面错误](../vsto/how-to-show-add-in-user-interface-errors.md)  
- 
+ [如何：自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)   
+ [如何：将控件添加到 Backstage 视图](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [如何：将功能区从功能区设计器导出到功能区 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
+ [如何：显示外接程序用户界面错误](../vsto/how-to-show-add-in-user-interface-errors.md)  

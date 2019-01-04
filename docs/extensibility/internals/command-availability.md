@@ -1,8 +1,6 @@
 ---
 title: 命令可用性 |Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, context
@@ -13,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98250763f504bc7d142f15e559334f296a2e026b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7ac9a172ee2cb7a117a1d9b63c4f1fef9f631952
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511129"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915860"
 ---
 # <a name="command-availability"></a>命令可用性
 
@@ -28,19 +26,19 @@ Visual Studio 上下文确定有哪些命令。 根据当前的项目、 当前�
 
 以下命令上下文是最常见的：
 
-- IDE： 提供的 IDE 命令始终可用。
+- IDE:提供 IDE 的命令将始终可用。
 
-- VSPackage: Vspackage 可以定义命令时要显示或隐藏。
+- VSPackage:Vspackage 可以定义命令时要显示或隐藏。
 
-- 项目： 项目命令只显示当前选定的项目。
+- 项目：项目命令只显示当前选定的项目。
 
-- 编辑器： 只有一个编辑器可以处于活动状态一次。 可在活动编辑器中的命令。 编辑器与语言服务紧密合作。 语言服务必须处理其关联编辑器的上下文中的命令。
+- 编辑器：一次，只有一个编辑器可以处于活动状态。 可在活动编辑器中的命令。 编辑器与语言服务紧密合作。 语言服务必须处理其关联编辑器的上下文中的命令。
 
-- 文件类型： 编辑器可以加载多个文件的类型。 根据文件类型可以更改可用命令。
+- 文件类型：编辑器可以加载多个文件的类型。 根据文件类型可以更改可用命令。
 
-- 活动窗口： 最后一个活动文档窗口设置键绑定的用户界面 (UI) 上下文。 但是，具有类似于内部 web 浏览器的键绑定表的工具窗口还可以设置 UI 上下文。 对于多选项卡式文档窗口，如 HTML 编辑器，每个选项卡具有不同的命令上下文的 GUID。 注册工具窗口后，将始终上可用**视图**菜单。
+- 活动窗口：最后一个活动文档窗口设置键绑定的用户界面 (UI) 上下文。 但是，具有类似于内部 web 浏览器的键绑定表的工具窗口还可以设置 UI 上下文。 对于多选项卡式文档窗口，如 HTML 编辑器，每个选项卡具有不同的命令上下文的 GUID。 注册工具窗口后，将始终上可用**视图**菜单。
 
-- UI 上下文： UI 上下文的值由标识<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>类，例如，<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>生成该解决方案后，或<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>调试器处于活动状态时。 多个 UI 上下文可以同时处于活动状态。
+- UI 上下文：值由标识 UI 上下文<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>类，例如，<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>生成该解决方案后，或<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>调试器处于活动状态时。 多个 UI 上下文可以同时处于活动状态。
 
 ## <a name="define-custom-context-guids"></a>定义自定义上下文 Guid
 

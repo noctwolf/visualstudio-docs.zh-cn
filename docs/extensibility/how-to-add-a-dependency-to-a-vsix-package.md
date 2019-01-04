@@ -1,9 +1,6 @@
 ---
-title: 如何： 将依赖项添加到 VSIX 包 |Microsoft Docs
-ms.custom: ''
+title: 如何：将依赖项添加到 VSIX 包 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - package reference
@@ -16,14 +13,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84865bf354bd1822ca872ed5f0df89a4330fb690
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 7ce21c10f1a64bf8edad9181d66b83291d0405c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371038"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902475"
 ---
-# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>如何： 将依赖项添加到 VSIX 包
+# <a name="how-to-add-a-dependency-to-a-vsix-package"></a>如何：将依赖项添加到 VSIX 包
 
 您可以设置安装尚不存在于目标计算机上的任何依赖项的 VSIX 包部署。 若要实现此目的，包括到 VSIX 依赖项*source.extension.vsixmanifest*文件。
 

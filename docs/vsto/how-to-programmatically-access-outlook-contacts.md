@@ -1,9 +1,6 @@
 ---
 title: 如何：以编程方式访问 Outlook 联系人
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 662190d3db9c3d384d60f4953ea3809cb726f76c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 3b02ecc421c2e6c5876061821c8d87e180a4d9a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53801718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965377"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>如何：以编程方式访问 Outlook 联系人
   本示例查找其姓氏包含指定的搜索字符串的所有联系人。  
@@ -43,5 +40,3 @@ ms.locfileid: "53801718"
  [如何：以编程方式搜索特定联系人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)   
  [如何：以编程方式在联系人中的电子邮件地址搜索](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)   
  [如何：以编程方式删除 Outlook 联系人](../vsto/how-to-programmatically-delete-outlook-contacts.md)  
-  
-  

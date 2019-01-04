@@ -1,9 +1,6 @@
 ---
 title: 枚举 （Visual Studio 调试） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - enumerations [Visual Studio SDK]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a9fe9c7ad6b46adefb4f32ceaf3dd13b351cafb
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 604cf38d96b25347a49edd24b29cffdaf012d52a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233755"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860005"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>枚举 (Visual Studio Debugging)
 以下是枚举[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]调试 SDK。  
@@ -249,9 +246,9 @@ ms.locfileid: "36233755"
 ## <a name="requirements"></a>要求  
  标头： msdbg.h、 sh.h 或 ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>请参阅  
  [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

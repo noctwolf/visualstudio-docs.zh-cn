@@ -1,9 +1,6 @@
 ---
 title: 表达式计算 (Visual Studio 调试 SDK) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52c897e40b825f85e07b4b4f14796655618280a8
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: bdd8937963175ffe0e8cadbfe2f6653b16a1f5a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230729"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888720"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>表达式计算 (Visual Studio Debugging SDK)
 在中断模式下，IDE 的计算结果必须涉及多个程序变量的简单表达式。 若要完成其评估，调试引擎 (DE) 必须分析和计算表达式，用于输入到其中一个 IDE 的窗口。 
@@ -36,7 +33,7 @@ ms.locfileid: "39230729"
 |方法|描述|  
 |------------|-----------------|  
 |[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|以异步方式计算表达式。|  
-|[中止](../../extensibility/debugger/reference/idebugexpression2-abort.md)|结束异步表达式求值。|  
+|[Abort](../../extensibility/debugger/reference/idebugexpression2-abort.md)|结束异步表达式求值。|  
 |[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|以同步方式计算表达式。|  
   
  同步和异步评估需要实现[IDebugProperty2::GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)方法。 异步表达式计算需要实现[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)。  

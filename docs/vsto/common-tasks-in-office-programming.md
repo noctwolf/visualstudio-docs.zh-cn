@@ -1,9 +1,6 @@
 ---
 title: Office 编程中的常见任务
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ffdf53a6317f2b06ea550075c104f0528a35c5de
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 234f5c70c05e058cac084780ab2777d9f302834a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441751"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911190"
 ---
 # <a name="common-tasks-in-office-programming"></a>Office 编程中的常见任务
   本主题旨在帮助针对使用 Visual Studio 对 Office 解决方案编程的下列常见问题找到解决方法。  
@@ -237,5 +234,3 @@ ms.locfileid: "53441751"
  [开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)  
-  
-  

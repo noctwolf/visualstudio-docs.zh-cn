@@ -1,9 +1,6 @@
 ---
 title: Office 解决方案中的可选参数
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4a9737ae9e256cdc9862c0d7725e9bffda5b633
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 34f19c7fa27893b071251f61d01f2dd9c9809d3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882569"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905093"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office 解决方案中的可选参数
   Microsoft Office 应用程序的对象模型中的许多方法都接受可选参数。 如果使用 Visual Basic 在 Visual Studio 中开发 Office 解决方案，你不必为可选参数传递值，因为系统会为每个缺少的参数自动使用默认值。 在大多数情况下，也可以省略 Visual C# 项目中的可选参数。 但是，您不能省略可选**ref**的参数`ThisDocument`在文档级 Word 项目中的类。  
@@ -74,5 +71,3 @@ ms.locfileid: "49882569"
 ## <a name="see-also"></a>请参阅  
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)  
-  
-  

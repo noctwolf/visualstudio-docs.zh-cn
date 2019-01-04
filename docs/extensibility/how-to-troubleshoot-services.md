@@ -1,9 +1,6 @@
 ---
-title: 如何： 对服务进行故障排除 |Microsoft Docs
-ms.custom: ''
+title: 如何：对服务进行故障排除 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, troubleshooting
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2e1e59b5d2bd1210511b355676407a1368143f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce33e86714c68d8eac39dca236e67b156187448d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834209"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877937"
 ---
-# <a name="how-to-troubleshoot-services"></a>如何： 对服务进行故障排除
+# <a name="how-to-troubleshoot-services"></a>如何：排查服务问题
 有几个常见的问题时尝试获得的服务可能发生的：  
   
 - 服务未注册与[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
@@ -41,7 +38,7 @@ if (log == null) return;
   
 ## <a name="to-troubleshoot-a-service"></a>若要对服务进行故障排除  
   
-1. 检查系统注册表，以查看是否已正确注册该服务。 有关详细信息，请参阅[如何： 提供的服务](../extensibility/how-to-provide-a-service.md)。  
+1. 检查系统注册表，以查看是否已正确注册该服务。 有关更多信息，请参见[如何：提供的服务](../extensibility/how-to-provide-a-service.md)。  
   
     以下 *.reg*文件片断演示可能注册 SVsTextManager 服务的方式：  
   

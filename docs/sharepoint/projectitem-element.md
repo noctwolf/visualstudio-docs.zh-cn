@@ -1,9 +1,6 @@
 ---
 title: ProjectItem 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ca0c295410caffb476d6c1e796864c47520a2f56
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e7c9a32a7fa84d8adc064aa3a3ac035999295791
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890097"
 ---
 # <a name="projectitem-element"></a>ProjectItem 元素
   表示 SharePoint 项目项。 此元素的必需的根元素的 *.spdata*文件。  
@@ -52,9 +49,9 @@ ms.locfileid: "37118792"
 |**DefaultFile**|可选**xs： 字符串**属性。<br /><br /> 包括文件名称，打开中的 SharePoint 项目项时，在 Visual Studio 编辑器中打开的文件的相对路径**解决方案资源管理器**。 该路径是相对于包含文件夹 *.spdata*文件。|  
 |**FeatureReceiverClass**|可选**xs: string**属性。<br /><br /> 功能接收器类的此 SharePoint 项目项的完全限定的名称。 有关功能接收器的详细信息，请参阅[提供在项目项中的打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
 |**FeatureReceiverAssembly**|可选**xs: string**属性。<br /><br /> 指定定义此 SharePoint 项目项的功能接收器的程序集的完全限定的名称。 有关功能接收器的详细信息，请参阅[提供在项目项中的打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。 有关完全限定的程序集名称的详细信息，请参阅[程序集名称](/dotnet/framework/app-domains/assembly-names)。|  
-|**SupportedTrustLevels**|可选**xs: string**属性。<br /><br /> 指定此 SharePoint 项目项支持的信任级别。 此值可以是下列字符串之一： 沙盒，FullTrust，或全部。 值 All 指定 Sandboxed 和 FullTrust。<br /><br /> 中的自定义 SharePoint 项目项类型，此属性的值对应的值分配给<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A>属性的实现中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。 如果指定此属性的不同值时，Visual Studio 将覆盖的值，以便指定要在中指定的信任级别相同<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A>属性。|  
-|**SupportedDeploymentScopes**|可选**xs: string**属性。<br /><br /> 指定此 SharePoint 项目项支持部署范围。 此值是一个以逗号分隔字符串组成的一个或多个以下字符串： 场、 站点、 Web、 web 应用程序或包。 例如：`Web, Site`<br /><br /> 中的自定义 SharePoint 项目项类型，此属性的值对应的值分配给<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>属性的实现中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。 如果指定此属性的不同值时，Visual Studio 将覆盖的值，以便指定要在中指定的信任级别相同<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>属性。|  
-|**Type**|所需**xs: string**属性。<br /><br /> SharePoint 项目项的标识符。 中的自定义 SharePoint 项目项类型，标识符是传递给字符串<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 有关详细信息，请参阅[如何： 定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。<br /><br /> Visual Studio 附带的内置 SharePoint 项目项的标识符的列表，请参阅[扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)。|  
+|**SupportedTrustLevels**|可选**xs: string**属性。<br /><br /> 指定此 SharePoint 项目项支持的信任级别。 此值可以是下列字符串之一：沙盒解决方案，FullTrust，或全部。 值 All 指定 Sandboxed 和 FullTrust。<br /><br /> 中的自定义 SharePoint 项目项类型，此属性的值对应的值分配给<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A>属性的实现中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。 如果指定此属性的不同值时，Visual Studio 将覆盖的值，以便指定要在中指定的信任级别相同<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A>属性。|  
+|**SupportedDeploymentScopes**|可选**xs: string**属性。<br /><br /> 指定此 SharePoint 项目项支持部署范围。 此值是由逗号分隔字符串，包含一个或多个以下字符串：场、 站点、 Web、 web 应用程序或包。 例如： `Web, Site`<br /><br /> 中的自定义 SharePoint 项目项类型，此属性的值对应的值分配给<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>属性的实现中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。 如果指定此属性的不同值时，Visual Studio 将覆盖的值，以便指定要在中指定的信任级别相同<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A>属性。|  
+|**Type**|所需**xs: string**属性。<br /><br /> SharePoint 项目项的标识符。 中的自定义 SharePoint 项目项类型，标识符是传递给字符串<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 有关更多信息，请参见[如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。<br /><br /> Visual Studio 附带的内置 SharePoint 项目项的标识符的列表，请参阅[扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)。|  
   
 ### <a name="child-elements"></a>子元素
   
@@ -80,4 +77,3 @@ ms.locfileid: "37118792"
   
 ## <a name="see-also"></a>请参阅
 [SharePoint 项目项架构 rseference](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  

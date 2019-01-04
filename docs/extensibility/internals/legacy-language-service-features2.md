@@ -1,9 +1,6 @@
 ---
-title: 旧语言服务 Features2 |Microsoft 文档
-ms.custom: ''
+title: 旧版语言服务功能 2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], code development aides
@@ -13,20 +10,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b807f5f776690e86cb44334c1822a8facd6ec824
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc86bda0bb0e9acf8c9ebb3fd248afd0fca4023c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130737"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861483"
 ---
-# <a name="legacy-language-service-features"></a>旧语言服务功能
-以下主题列出了一些你可以提供的旧语言服务功能。  
+# <a name="legacy-language-service-features"></a>旧版语言服务功能
+以下主题列出了一些可以提供的旧版语言服务功能。  
   
- 旧语言服务实现的 VSPackage，一部分但实现语言服务功能的新方法是使用 MEF 扩展。 若要了解有关实现语言服务的新方式的详细信息，请参阅[编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。  
+ 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现语言服务的新方法的详细信息，请参阅[编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。  
   
 > [!NOTE]
->  我们建议你开始使用新的编辑器 API 越早越好。 这将改善语言服务的性能，并让您充分利用新的编辑器功能。  
+>  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
   
 ## <a name="in-this-section"></a>本节内容  
  [在旧版语言服务中进行语法着色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
@@ -35,16 +32,16 @@ ms.locfileid: "31130737"
  [在旧版语言服务中进行自动格式设置](../../extensibility/internals/automatic-formatting-in-a-legacy-language-service.md)  
  介绍如何实现自动格式设置。  
   
- [参数信息，请参阅旧语言服务](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
+ [旧版语言服务中的参数信息](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  介绍如何实现 IntelliSense 参数信息工具提示。  
   
  [旧版语言服务中的语句完成](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
- 说明如何实现 IntelliSense 语句列表和成员完成列表。  
+ 介绍如何实现 IntelliSense 语句列表和成员完成列表。  
   
  [旧版语言服务中的大纲显示和隐藏文本](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)  
- 介绍如何实现大纲显示或隐藏的文本。  
+ 介绍如何实现的大纲显示或隐藏的文本。  
   
- [如何：提供旧版语言服务中扩展的大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
- 介绍了某些中实现的调试器支持的步骤...  
+ [如何：提供旧版语言服务中的展开大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ 介绍了某些实现调试器支持中的步骤...  
   
 ## <a name="related-sections"></a>相关章节

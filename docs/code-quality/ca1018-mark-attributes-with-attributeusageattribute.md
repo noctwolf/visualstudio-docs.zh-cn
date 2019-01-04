@@ -1,8 +1,7 @@
 ---
-title: CA1018：用 AttributeUsageAttribute 标记特性
+title: CA1018:用 AttributeUsageAttribute 标记特性
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1018
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a54dd39746364d6908f440ac77d7a2b8bbfdbcf6
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0f88185882d8cddaf81caf95e2871918553b8eaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881968"
 ---
-# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018：用 AttributeUsageAttribute 标记特性
+# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018:用 AttributeUsageAttribute 标记特性
 
 |||
 |-|-|
@@ -50,16 +49,16 @@ ms.locfileid: "45547615"
  您应修复而不包括该消息的不是此规则的冲突。 即使属性继承<xref:System.AttributeUsageAttribute>，该属性应存在以简化代码维护。
 
 ## <a name="example"></a>示例
- 下面的示例定义两个属性。 `BadCodeMaintainerAttribute` 错误地省略<xref:System.AttributeUsageAttribute>语句，和`GoodCodeMaintainerAttribute`正确地实现在本部分中前面所述的属性。 请注意，该属性`DeveloperName`所需的设计规则[CA1019： 定义特性参数的访问器](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)，包含在出于完整性的考虑。
+ 下面的示例定义两个属性。 `BadCodeMaintainerAttribute` 错误地省略<xref:System.AttributeUsageAttribute>语句，和`GoodCodeMaintainerAttribute`正确地实现在本部分中前面所述的属性。 请注意，该属性`DeveloperName`所需的设计规则[CA1019:定义特性参数的访问器](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)，包含在出于完整性的考虑。
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA1019：定义特性参数的访问器](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+ [CA1019:定义特性参数的访问器](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1813：避免使用未密封的特性](../code-quality/ca1813-avoid-unsealed-attributes.md)
+ [CA1813:避免使用未密封的特性](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>请参阅
 
-- [特性](/dotnet/standard/design-guidelines/attributes)
+- [属性](/dotnet/standard/design-guidelines/attributes)

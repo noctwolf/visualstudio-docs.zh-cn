@@ -1,9 +1,6 @@
 ---
-title: 如何： 执行 SharePoint 命令 |Microsoft Docs
-ms.custom: ''
+title: 如何：执行 SharePoint 命令 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce195dd34c7c0b509f9de4cbe2cfd14d9a477f87
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d6e529420db8261e87c856e2fc80ef436bbc3e73
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118785"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953113"
 ---
-# <a name="how-to-execute-a-sharepoint-command"></a>如何： 执行 SharePoint 命令
+# <a name="how-to-execute-a-sharepoint-command"></a>如何：执行 SharePoint 命令
   如果你想要在 SharePoint 工具扩展中使用服务器对象模型，则必须创建一个自定义*SharePoint 命令*来调用 API。 定义该命令并将其部署与 SharePoint 工具扩展插件后，您的扩展插件可以执行命令来调入 SharePoint 服务器对象模型。 若要执行此命令，使用 ExecuteCommand 方法之一<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>对象。  
   
  有关用途的 SharePoint 命令的详细信息，请参阅[调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。  
@@ -55,12 +52,12 @@ ms.locfileid: "37118785"
     |该命令具有两个参数和返回值。|<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>|  
   
 ## <a name="example"></a>示例  
- 下面的代码示例演示如何使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>重载来调用`Contoso.Commands.UpgradeSolution`中所述的命令[如何： 创建 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)。  
+ 下面的代码示例演示如何使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>重载来调用`Contoso.Commands.UpgradeSolution`中所述的命令[如何：创建 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)。  
   
  [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#6)]
  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#6)]  
   
- `Execute`在此示例中所示的方法是实现<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A>方法的<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>接口中的自定义部署步骤。 若要查看更大示例的上下文中此代码，请参阅[演练： 创建 SharePoint 项目的自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。  
+ `Execute`在此示例中所示的方法是实现<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A>方法的<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>接口中的自定义部署步骤。 若要查看更大示例的上下文中此代码，请参阅[演练：创建 SharePoint 项目的自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。  
   
  请注意以下有关调用的详细信息<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A>方法：  
   
@@ -75,6 +72,5 @@ ms.locfileid: "37118785"
   
 ## <a name="see-also"></a>请参阅
  [调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)   
- [如何： 创建 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)   
- [演练： 扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
-  
+ [如何：创建 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)   
+ [演练：扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

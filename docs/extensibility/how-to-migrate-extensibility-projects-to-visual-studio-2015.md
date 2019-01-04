@@ -1,9 +1,6 @@
 ---
-title: 如何： 将扩展性项目迁移到 Visual Studio 2015 |Microsoft Docs
-ms.custom: ''
+title: 如何：将扩展性项目迁移到 Visual Studio 2015 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, upgrading
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09b8950a05c4e4181209190af17eb0d6ccdb35ba
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 456661c06934063041f06c36c20eee72d52c5b4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639703"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915330"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>如何： 将扩展性项目迁移到 Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>如何：将扩展性项目迁移到 Visual Studio 2015
 下面介绍了如何升级您的扩展插件。  
   
 > [!IMPORTANT]
@@ -42,13 +39,13 @@ ms.locfileid: "39639703"
   
 ### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>若要更新到 NuGet VS SDK 引用程序集的可扩展性项目  
   
-1.  确定你的项目需要的 VS SDK 引用程序集。  在中**解决方案资源管理器**，展开项目的**引用**节点和检查列表中的项目引用。  VS SDK 的引用程序集将具有前缀**Microsoft.VisualStudio**名称中 (例如： microsoft.visualstudio.shell.14.0 的引用)。  
+1.  确定你的项目需要的 VS SDK 引用程序集。  在中**解决方案资源管理器**，展开项目的**引用**节点和检查列表中的项目引用。  VS SDK 的引用程序集将具有前缀**Microsoft.VisualStudio**名称中 (例如：Microsoft.visualstudio.shell.14.0 的引用）。  
   
 2.  通过选择它们，右键单击并选择从项目删除 VS SDK 引用程序集**删除**。  
   
 3.  添加 VS SDK 引用程序集的 NuGet 的版本。  在仍处于**解决方案资源管理器引用**节点，打开**管理 NuGet 包**对话框。  如果你想要了解有关此对话框的详细信息，请参阅[包管理器 UI](/NuGet/Tools/Package-Manager-UI)。 VS SDK 引用程序集上发布[nuget.org](http://www.nuget.org)通过[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)。  
   
-4.  使用**nuget.org**作为你**包源**，搜索 NuGet 包名称相匹配的所需的引用程序集 (例如： microsoft.visualstudio.shell.14.0 的引用) 和其安装在你项目。  NuGet 可以添加多个引用程序集，以满足初始程序集的依赖项。  
+4.  使用**nuget.org**作为你**包源**，搜索 NuGet 包名称相匹配的所需的引用程序集 (例如：Microsoft.visualstudio.shell.14.0 的引用） 并将其安装在项目中。  NuGet 可以添加多个引用程序集，以满足初始程序集的依赖项。  
   
      如果您愿意，您可以通过安装 VS SDK 一次性添加所有 VS SDK 引用程序集[元包](http://www.nuget.org/packages/VSSDK_Reference_Assemblies)。  
   

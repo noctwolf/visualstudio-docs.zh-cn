@@ -1,9 +1,6 @@
 ---
 title: VSPackages 故障排除 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, troubleshooting
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835966"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackages 故障排除
 以下是常见的问题可能与你的 VSPackage 并解决问题的提示。  
@@ -53,7 +50,7 @@ ms.locfileid: "51348668"
   
 5. 活动日志中检查。  
   
-    有关详细信息，请参阅[如何： 使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
+    有关更多信息，请参见[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
   
 6. 有关由 IDE 引发的异常的详细信息，请单击**异常**上**调试**菜单启用例外。 在中**异常**对话框中选择要了解详细信息的异常的类型。  
   
@@ -92,7 +89,7 @@ ms.locfileid: "51348668"
   
 2.  使用活动日志。  
   
-     通过将信息写入到的关键点的活动日志跟踪 VSPackage 行为。 此方法时，尤其是零售环境中运行 VSPackage。 有关详细信息，请参阅[如何： 使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
+     通过将信息写入到的关键点的活动日志跟踪 VSPackage 行为。 此方法时，尤其是零售环境中运行 VSPackage。 有关更多信息，请参见[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
   
 3.  使用公共符号。  
   

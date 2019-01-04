@@ -2,7 +2,6 @@
 title: 演练对分析托管代码进行代码缺陷 |Microsoft Docs
 ms.date: 01/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49c122e5cf22e9290f6dab1d45539887c68c01bd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117714"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955248"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>演练： 分析托管的代码的代码缺陷
+# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>演练：分析托管的代码进行代码缺陷
 
 在本演练中，将通过使用代码分析工具分析托管的项目进行代码缺陷。
 
@@ -87,53 +86,53 @@ ms.locfileid: "37117714"
 
     根据所选的开发人员配置文件，您可能需要指向**其他 Windows**上**视图**菜单中，然后选择**错误列表**。
 
-1. 在中**解决方案资源管理器**，选择**显示所有文件**。
+1. 在“解决方案资源管理器”中，选择“显示所有文件”。
 
 1. 展开属性节点，然后打开*AssemblyInfo.cs*文件。
 
 1. 使用以下提示来更正警告：
 
-   [CA1014： 将程序集用 CLSCompliantAttribute 标记](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design： 用 CLSCompliantAttribute，应标记为 demo，其值应为 true。
+   [CA1014:用 CLSCompliantAttribute 标记程序集](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md):Microsoft.Design： 应使用 CLSCompliantAttribute 标记 demo，并且其值应为 true。
 
    1. 将代码添加`using System;`AssemblyInfo.cs 文件。
 
    1. 接下来，将代码添加`[assembly: CLSCompliant(true)]`到 AssemblyInfo.cs 文件的末尾。
 
-   [CA1032： 实现标准异常构造函数](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design： 将以下构造函数添加到此类： 公共 demo(String)
+   [CA1032:实现标准异常构造函数](../code-quality/ca1032-implement-standard-exception-constructors.md):Microsoft.Design:将以下构造函数添加到此类： 公共 demo(String)
 
    1. 添加构造函数`public demo (String s) : base(s) { }`到类`demo`。
 
-   [CA1032： 实现标准异常构造函数](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design： 将以下构造函数添加到此类： 公共演示 （String，异常）
+   [CA1032:实现标准异常构造函数](../code-quality/ca1032-implement-standard-exception-constructors.md):Microsoft.Design:将以下构造函数添加到此类： 公共演示 （String，异常）
 
    1. 添加构造函数`public demo (String s, Exception e) : base(s, e) { }`到类`demo`。
 
-   [CA1032： 实现标准异常构造函数](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design： 将以下构造函数添加到此类： 受保护的演示 （SerializationInfo，StreamingContext）
+   [CA1032:实现标准异常构造函数](../code-quality/ca1032-implement-standard-exception-constructors.md):Microsoft.Design:将以下构造函数添加到此类： 受保护的演示 （SerializationInfo，StreamingContext）
 
    1. 将代码添加`using System.Runtime.Serialization;`Class1.cs 文件的开头。
 
    1. 接下来，添加构造函数 `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
-   [CA1032： 实现标准异常构造函数](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design： 将以下构造函数添加到此类： 公共 demo()
+   [CA1032:实现标准异常构造函数](../code-quality/ca1032-implement-standard-exception-constructors.md):Microsoft.Design:将以下构造函数添加到此类： 公共 demo()
 
    1. 添加构造函数`public demo () : base() { }`到类`demo` **。**
 
-   [CA1709： 标识符应采用正确的大小写](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming： 更正命名空间名称 testCode 的大小写更改为 TestCode。
+   [CA1709:标识符应采用正确的大小写](../code-quality/ca1709-identifiers-should-be-cased-correctly.md):Microsoft.Naming:通过将其更改为 TestCode 来更正命名空间名称 testCode 的大小写。
 
    1. 更改命名空间的大小写`testCode`到`TestCode`。
 
-   [CA1709： 标识符应采用正确的大小写](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming： 更正类型名称 demo 的大小写更改为 Demo。
+   [CA1709:标识符应采用正确的大小写](../code-quality/ca1709-identifiers-should-be-cased-correctly.md):Microsoft.Naming:更正类型名称 demo 的大小写更改为 Demo。
 
    1. 更改的成员名称`Demo`。
 
-   [CA1709： 标识符应采用正确的大小写](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming： 更正成员名称 item 的大小写更改为 Item。
+   [CA1709:标识符应采用正确的大小写](../code-quality/ca1709-identifiers-should-be-cased-correctly.md):Microsoft.Naming:通过将其更改为 Item 来更正成员名称 item 的大小写。
 
    1. 更改的成员名称`Item`。
 
-   [CA1710： 标识符应具有正确的后缀](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming： 重命名 testCode.demo 若要以 Exception 结尾。
+   [CA1710:标识符应具有正确的后缀](../code-quality/ca1710-identifiers-should-have-correct-suffix.md):Microsoft.Naming:将 testCode.demo 重命名为以 Exception 结尾。
 
    1. 类和为其构造函数的名称更改`DemoException`。
 
-   [CA2210： 程序集应具有有效的强名称](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)： 使用强名称密钥进行签名 CodeAnalysisManagedDemo。
+   [CA2210:程序集应具有有效的强名称](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md):使用强名称密钥进行签名 CodeAnalysisManagedDemo。
 
    1. 上**项目**菜单中，选择**CodeAnalysisManagedDemo 属性**。
 
@@ -153,7 +152,7 @@ ms.locfileid: "37117714"
 
    1. 上**文件**菜单中，选择**保存选定项**，然后关闭属性页。
 
-   [CA2237： 以 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage： 添加 [Serializable] 特性以键入演示与此类型实现了 ISerializable。
+   [CA2237:用 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md):Microsoft.Usage:添加 [Serializable] 属性，键入演示，因为此类型实现了 ISerializable。
 
    1. 添加`[Serializable ()]`到类属性`demo`。
 

@@ -1,8 +1,6 @@
 ---
-title: 如何： 注册编辑器文件类型 |Microsoft Docs
+title: 如何：注册编辑器文件类型 |Microsoft Docs
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register file types
@@ -12,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23a3277a550b17371b4d8315da64eb7507c8c863
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896921"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857797"
 ---
-# <a name="how-to-register-editor-file-types"></a>如何： 注册编辑器文件类型
+# <a name="how-to-register-editor-file-types"></a>如何：注册编辑器文件类型
 若要注册编辑器文件类型的最简单方法是使用作为的一部分提供的注册属性[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]托管包框架 (MPF) 类。 如果要在本机实现您的软件包[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，还可以编写注册表脚本注册你的编辑器和关联的扩展。
 
 ## <a name="registration-using-mpf-classes"></a>注册使用 MPF 类

@@ -1,9 +1,6 @@
 ---
 title: 解决方案配置 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: caf55b341cc34bb4101f27d2468f0da8e5cf6c96
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec88e383c7ad0a74699f984691d337da7d6a2cac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835022"
 ---
 # <a name="solution-configuration"></a>解决方案配置
 解决方案配置存储解决方案级别的属性。 它们指示的行为**启动**(f5) 和**生成**命令。 默认情况下，这些命令生成并启动调试配置。 在解决方案配置的上下文中执行这两个命令。 这意味着用户可以启动和任何活动解决方案配置通过设置生成预期 F5。 在环境旨在构建和运行时优化解决方案而不是项目。  
@@ -26,7 +23,7 @@ ms.locfileid: "49875315"
  标准 Visual Studio 工具栏中包含开始按钮和一个解决方案配置下拉列表右侧的开始按钮。 此列表，用户可以选择按下 F5 时要启动的配置、 创建其自己的解决方案配置，或编辑现有配置。  
   
 > [!NOTE]
->  没有可扩展性接口来创建或编辑解决方案配置。 必须使用`DTE.SolutionBuilder`。 但是，有用于管理解决方案生成的可扩展 Api。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2> 。  
+>  没有可扩展性接口来创建或编辑解决方案配置。 必须使用`DTE.SolutionBuilder`。 但是，有用于管理解决方案生成的可扩展 Api。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。  
   
  下面是如何实现您的项目类型支持的解决方案配置：  
   

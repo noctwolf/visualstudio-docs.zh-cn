@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 菜单的 Guid 和 Id |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio menus
@@ -18,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b7c8af93604a7e8e33d7d21d26b85c59985b878
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3c2990e7002a75dfb5868a4079d889c08e49c3c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906938"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Guid 和 Id 的 Visual Studio 菜单
 这篇文章枚举菜单和 Visual Studio 菜单栏上的组的 GUID 和 ID 的值。 这些值中定义 *.vsct*作为 Visual Studio SDK 的一部分安装的文件。 有关详细信息，请参阅[IDE 定义的命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
@@ -181,7 +178,7 @@ ms.locfileid: "39499934"
  以下层次结构显示了与 Visual Studio 菜单栏上的菜单相关联的子菜单。 由于仅允许一组可作为其父菜单，因此每个子菜单必须降从组在菜单上，而不是直接从菜单。 有关菜单、 组和子菜单之间的关系的详细信息，请参阅[添加到菜单的子菜单](../../extensibility/adding-a-submenu-to-a-menu.md)。  
   
 > [!NOTE]
->  在 Visual Studio 菜单栏上的菜单名称不单独显示此层次结构中因为它们可以根据推断出在 IDE 中，组的命名约定，如下所示： *IDG_VS_\<菜单名称\>_\<组名\>*。  
+>  在 Visual Studio 菜单栏上的菜单名称单独不显示此层次结构中因为它们可以根据推断出在 IDE 中，组的命名约定，如下所示：*IDG_VS_\<菜单名称\>_\<组名\>*。  
   
 |父组|子菜单|子组|  
 |------------------|-------------|------------------|  

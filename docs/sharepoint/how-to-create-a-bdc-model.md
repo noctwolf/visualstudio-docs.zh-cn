@@ -1,13 +1,8 @@
 ---
-title: 如何： 创建 BDC 模型 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建 BDC 模型 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a0e2bc47c902707ee896c46fa0d9988551fa6fd
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c01b8c54a762436f7bf76fd8186765a4fe1b9b6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757917"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955615"
 ---
-# <a name="how-to-create-a-bdc-model"></a>如何： 创建 BDC 模型
+# <a name="how-to-create-a-bdc-model"></a>如何：创建 BDC 模型
   可以通过使用这种项的模板并将模型添加到任何 SharePoint 项目来创建业务数据连接 (BDC) 模型。 有关详细信息，请参阅[创建的业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。 有关如何设计模型的详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-a-bdc-project"></a>若要创建 BDC 项目  
@@ -64,8 +59,7 @@ ms.locfileid: "36757917"
   
 ## <a name="see-also"></a>请参阅
  [创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [如何： 将现有 BDC 模型文件添加到 SharePoint 项目](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
- [如何： 使用资源文件指定本地化的名称、 属性和权限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
- [如何： 在 BDC 功能中包含自定义程序集](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
+ [如何：将现有 BDC 模型文件添加到 SharePoint 项目](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)   
+ [如何：使用资源文件指定本地化的名称、 属性和权限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)   
+ [如何：在 BDC 功能中包含自定义程序集](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)   
  [将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  

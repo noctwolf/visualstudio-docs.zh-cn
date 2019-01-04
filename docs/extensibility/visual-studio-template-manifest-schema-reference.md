@@ -1,6 +1,5 @@
 ---
 title: Visual Studio 模板清单架构参考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
@@ -9,17 +8,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38581d7c7dd788fef481676283fdc96c8abc96ba
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586297"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961950"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 模板清单架构参考
 此架构描述了 Visual Studio 模板清单的格式 (*.vstman*) 生成的 Visual Studio 项目或项模板的文件。 位置和有关模板的其他相关信息，还介绍了架构。  
   
- ： 由于没有单独的项目和项目模板目录，清单应该永远不会同时有的项和项目模板。  
+ :由于没有单独的项目和项目模板目录，清单应该永远不会同时有的项和项目模板。  
   
 > [!IMPORTANT]
 >  此清单是从 Visual Studio 2017 开始，提供。  
@@ -29,9 +28,9 @@ ms.locfileid: "39586297"
   
 ### <a name="attributes"></a>特性  
   
--   **版本**： 一个字符串，表示模板清单的版本。 必须的。  
+-   **版本**:一个表示模板清单的版本字符串。 必需。  
   
--   **区域设置**： 一个表示区域设置或区域设置的模板清单的字符串。 区域设置值适用于所有模板。 必须将每个区域使用单独的清单。 可选。  
+-   **区域设置**:表示区域设置或区域设置的模板清单的字符串。 区域设置值适用于所有模板。 必须将每个区域使用单独的清单。 可选。  
   
 ### <a name="child-elements"></a>子元素  
   
@@ -46,13 +45,13 @@ ms.locfileid: "39586297"
  模板容器的清单元素。 清单都有针对它定义了每个模板的一个模板容器。  
   
 ### <a name="attributes"></a>特性  
- **VSTemplateType**： 一个字符串值，指定模板类型 (`"Project"`， `"Item"`，或`"ProjectGroup"`)。 必需  
+ **VSTemplateType**:一个字符串值，指定模板类型 (`"Project"`， `"Item"`，或`"ProjectGroup"`)。 必需  
   
 ### <a name="child-elements"></a>子元素  
   
--   **RelativePathOnDisk**： 磁盘上的模板文件的相对路径。 此位置还定义模板的放置在模板树中所示**新的项目**或**新项**对话框。 有关模板部署为一个目录和单个文件，此路径是指包含模板文件的目录。 有关模板部署为 *.zip*文件，此路径应为路径 *.zip*文件。  
+-   **RelativePathOnDisk**:磁盘上的模板文件的相对路径。 此位置还定义模板的放置在模板树中所示**新的项目**或**新项**对话框。 有关模板部署为一个目录和单个文件，此路径是指包含模板文件的目录。 有关模板部署为 *.zip*文件，此路径应为路径 *.zip*文件。  
   
--   * * VSTemplateHeader： 一个[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)描述该标头的元素。  
+-   * * VSTemplateHeader:一个[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)描述该标头的元素。  
   
 ### <a name="parent-element"></a>父元素  
  **VSTemplateManifest**  
@@ -67,13 +66,13 @@ ms.locfileid: "39586297"
   
 ### <a name="child-elements"></a>子元素  
   
--   **RelativePath**： 模板的路径。 可能每个路径，只有一个条目，因此第一个获胜的所有清单。  
+-   **RelativePath**:模板的路径。 可能每个路径，只有一个条目，因此第一个获胜的所有清单。  
   
--   **LocalizedName**： 一个**NameDescriptionIcon**元素，它指定本地化的名称。 可选。  
+-   **LocalizedName**:一个**NameDescriptionIcon**元素，它指定本地化的名称。 可选。  
   
--   **SortOrder**： 一个字符串，指定排序顺序。 可选。  
+-   **SortOrder**:一个字符串，指定排序顺序。 可选。  
   
--   **ParentFolderOverrideName**： 重写的父文件夹的名称。 可选。 此元素具有**名称**特性，它是一个字符串值，指定的名称。  
+-   **ParentFolderOverrideName**:重写的父文件夹的名称。 可选。 此元素具有**名称**特性，它是一个字符串值，指定的名称。  
   
 ### <a name="parent-element"></a>父元素  
  **VSTemplateManifest**  
@@ -83,9 +82,9 @@ ms.locfileid: "39586297"
   
 ### <a name="attributes"></a>特性  
   
--   **包**： 一个字符串值，指定的包。 可选。  
+-   **包**:一个字符串值，该值指定的包。 可选。  
   
--   **ID**： 一个字符串值，指定该 id。 可选。  
+-   **ID**:一个字符串值，指定该 id。 可选。  
   
 ### <a name="child-elements"></a>子元素  
  无。  

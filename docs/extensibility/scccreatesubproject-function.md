@@ -1,9 +1,6 @@
 ---
 title: SccCreateSubProject 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccCreateSubProject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3aef071d0c124878adf58d8346ad0b50f741300b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0761956cd18945a50bdb45fa7624a72f645683e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831779"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函数
 此函数具有给定名称指定现有父项目下创建子项目`lpParentProjPath`参数。  
@@ -64,7 +61,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功创建子项目。|  
 |SCC_E_INITIALIZEFAILED|无法初始化父项目。|  

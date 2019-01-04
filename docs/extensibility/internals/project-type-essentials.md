@@ -1,9 +1,6 @@
 ---
 title: 项目类型基础知识 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7daf114bb31019a499bc17e287df923107ee1a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 630557cbc4bd9720337bf8e5f2988ffcf3d7c6eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952772"
 ---
 # <a name="project-type-essentials"></a>项目类型基础知识
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包括几种语言的项目类型，如[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]或[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 此外可以创建自己的项目类型。  
@@ -55,7 +52,7 @@ ms.locfileid: "49891565"
   
 - 项目类型是在 VSPackage 中实现的接口集的对象[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]要求。 如果你使用 C# 开发的项目类型，托管包框架项目类为您实现必要的接口，让您继承该实现。 有关详细信息，请参阅[使用托管包框架来实现一种项目类型 (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md)。  
   
-- 对于 c + + 开发人员，HierUtil 库中的类以类似的方式工作。 有关详细信息，请参阅[不在生成： 使用 HierUtil7 项目类以实现项目类型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
+- 对于 c + + 开发人员，HierUtil 库中的类以类似的方式工作。 有关详细信息，请参阅[不在生成中：使用 HierUtil7 项目类来实现一种项目类型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
   
 - 项目类型可支持典型的源代码生成为.exe 或.dll 程序集的代码文件之外的数据。 例如，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]数据库项目包含对存储在磁盘上的脚本和查询文件的引用，并将命令添加到**解决方案资源管理器**执行脚本和针对数据库中，但项目的查询不支持生成行为。 有关详细信息，请参阅[打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。  
   

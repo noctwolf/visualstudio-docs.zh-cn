@@ -1,9 +1,6 @@
 ---
-title: 演练： 创建使用 C# 或 Visual Basic SDK |Microsoft Docs
-ms.custom: ''
+title: 演练：创建 SDK 使用C#或 Visual Basic |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 author: gregvanl
@@ -11,14 +8,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 13e95988ee67431686472b2bdb0e548c03201b7d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921648"
 ---
-# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>演练： 创建使用 C# 或 Visual Basic SDK
+# <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>演练：创建 SDK 使用C#或 Visual Basic
 在本演练中，将了解如何使用 Visual C# 创建一个简单的数学库 SDK，然后打包 SDK 作为 Visual Studio 扩展 (VSIX)。 将完成以下过程：  
   
 -   [若要创建 SimpleMath Windows 运行时组件](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)  
@@ -136,7 +133,7 @@ ms.locfileid: "49835146"
   
 22. 在中**解决方案资源管理器**，选择**SimpleMath.winmd**。  
   
-23. 在菜单栏上依次选择**视图** > **属性**(键盘： 选择**F4**密钥)。  
+23. 在菜单栏上依次选择**视图** > **属性**(键盘：选择**F4**密钥)。  
   
 24. 在**属性**窗口中，更改**生成操作**属性设置为**内容**，然后将更改**包含在 VSIX** 属性**True**。  
   
@@ -242,6 +239,6 @@ ms.locfileid: "49835146"
     已成功创建并使用扩展 SDK。  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 创建使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [演练： 创建使用 JavaScript SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
+ [演练：创建使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [演练：创建使用 JavaScript SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
  [创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)

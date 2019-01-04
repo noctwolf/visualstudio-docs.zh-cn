@@ -1,6 +1,5 @@
 ---
 title: 图像服务和目录 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb493e2ebd590edcf210c5c38010b0168e06fbe3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823757"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899699"
 ---
 # <a name="image-service-and-catalog"></a>映像服务和目录
 此指南包含指导和采用 Visual Studio 映像服务和 Visual Studio 2015 中引入的映像目录的最佳实践。  
@@ -47,11 +46,11 @@ ms.locfileid: "49823757"
 ## <a name="how-it-works"></a>其工作原理
  图像服务可以提供适用于任何受支持的 UI 框架的位图化映像：  
   
-- WPF: BitmapSource  
+- WPF:BitmapSource  
   
-- WinForms: System.Drawing.Bitmap  
+- WinForms:System.Drawing.Bitmap  
   
-- Win32: HBITMAP  
+- Win32:HBITMAP  
   
   图像服务流关系图  
   
@@ -166,7 +165,7 @@ ms.locfileid: "49823757"
 |-|-|  
 |**特性**|**定义**|  
 |URI|[必需]一个 URI，定义可从中加载图像。 它可以是以下值之一：<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)使用应用程序: / / 颁发机构<br />-一个绝对组件资源引用<br />的包含本机资源的文件路径|  
-|背景|[可选]指示什么类型的源应使用的背景。<br /><br /> 它可以是以下值之一：<br /><br /> *光：* 可以在浅色背景上使用了源。<br /><br /> *深色：* 可以在深色背景上使用了源。<br /><br /> *高对比度：* 可以在高对比度模式中的任何背景上使用了源。<br /><br /> *HighContrastLight:* 可以在高对比度模式中的浅色背景上使用了源。<br /><br /> *HighContrastDark:* 可以在高对比度模式中的深色背景上使用了源。<br /><br /> 如果省略背景特性，则可以在任何的背景上使用源。<br /><br /> 如果后台*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永远不会反转的源的颜色。 如果省略或设为背景*对比度*，由图像的控制的源的颜色反转**AllowColorInversion**属性。|  
+|背景|[可选]指示什么类型的源应使用的背景。<br /><br /> 它可以是以下值之一：<br /><br /> *光：* 源可以使用浅色背景上。<br /><br /> *深色：* 可以在深色背景上使用源。<br /><br /> *高对比度：* 可以在高对比度模式中的任何背景上使用源。<br /><br /> *HighContrastLight:* 可以在高对比度模式下浅色背景上使用源。<br /><br /> *HighContrastDark:* 可以在高对比度模式中的深色背景上使用源。<br /><br /> 如果省略背景特性，则可以在任何的背景上使用源。<br /><br /> 如果后台*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永远不会反转的源的颜色。 如果省略或设为背景*对比度*，由图像的控制的源的颜色反转**AllowColorInversion**属性。|  
 
 |||  
   
@@ -175,7 +174,7 @@ ms.locfileid: "49823757"
 ||||  
 |-|-|-|  
 |**元素**|**属性 （全部所需）**|**定义**|  
-|\<大小 >|“值”|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|  
+|\<大小 >|值|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|  
 |\<SizeRange >|MinSize、 MaxSize|将映像从 MinSize 到最大大小 （以设备为单位） （含限值） 使用源。 图将方形。|  
 |\<维度 >|宽度、 高度|源将用于给定的宽度和高度 （以设备为单位） 的映像。|  
 |\<DimensionRange >|MinWidth，MinHeight，<br /><br /> MaxWidth MaxHeight|源将用于从最小宽度/高度 （以设备为单位） 的最大宽度/高度的图像 （含）。|  

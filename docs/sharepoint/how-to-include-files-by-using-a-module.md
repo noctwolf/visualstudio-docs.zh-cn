@@ -1,13 +1,8 @@
 ---
-title: 如何： 使用模块包括文件 |Microsoft Docs
-ms.custom: ''
+title: 如何：通过使用模块包括文件 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5c5152221e5e58504ba84e0ad0f31511b4d93aa0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d0cfe558c21a941ed5cc16eccef2e014acfbcdb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118468"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923485"
 ---
-# <a name="how-to-include-files-by-using-a-module"></a>如何： 使用模块包括文件
+# <a name="how-to-include-files-by-using-a-module"></a>如何：通过使用模块包括文件
   *模块*(不要与混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]模块) 是，你可以部署到 SharePoint 的文件，如 ASPX 母版页、 文本文件或图像的容器。  
   
  您可以选择将文件部署到的文档库或作为普通文件 (例如，default.aspx) 之外的文档库。 若要将文件添加到文档库中，指定`Type="GhostableInLibrary"`中的属性形式**文件**元素。 此设置会指示 SharePoint，以创建列表项时要转用您的文件添加到库。 若要部署外部的文档库的文件，请指定`Type="Ghostable"`或只需省略**类型**属性。  
@@ -71,4 +66,3 @@ ms.locfileid: "37118468"
 ## <a name="see-also"></a>请参阅
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
-  

@@ -2,7 +2,6 @@
 title: XML 编辑器的 IntelliSense 功能
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78a9711a623abe2f7a37cb03be628c2b60723359
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 36350123135142e84adff0c3189ba81e31ebf6b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886378"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986201"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 编辑器 IntelliSense 功能
 
@@ -45,7 +44,7 @@ ms.locfileid: "49886378"
 
 -   给定命名模板的参数名称。
 
-有关详细信息，请参阅[演练： 使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)主题。
+有关详细信息，请参见[演练：使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)主题。
 
 ## <a name="auto-completion"></a>自动完成功能
  “XML 编辑器”还通过为您填写必需的 XML 语法，使编辑 XML 更加容易。 例如，如果您键入以下开始标记：

@@ -1,8 +1,7 @@
 ---
-title: CA2219：在异常子句中不引发异常
+title: CA2219:在异常子句中不引发异常
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - DoNotRaiseExceptionsInExceptionClauses
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49baf6fe645df35949f47f2796197977d428427e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4403ab65be60000bc758cf1a127e6b589c764702
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885962"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857703"
 ---
-# <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219：在异常子句中不引发异常
+# <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219:在异常子句中不引发异常
 
 |||
 |-|-|
@@ -49,7 +48,7 @@ ms.locfileid: "49885962"
  不要禁止显示此规则的警告。 没有在其下在异常子句中引发的异常提供了一项权益对执行代码的方案。
 
 ## <a name="related-rules"></a>相关的规则
- [CA1065：不要在意外的位置引发异常](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
+ [CA1065:不会引发意外的位置中的异常](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
 ## <a name="see-also"></a>请参阅
  [设计警告](../code-quality/design-warnings.md)

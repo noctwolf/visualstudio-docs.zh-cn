@@ -1,15 +1,10 @@
 ---
-title: 如何： 编辑 SharePoint 部署配置 |Microsoft Docs
-ms.custom: ''
+title: 如何：编辑 SharePoint 部署配置 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 73b59e709ba75d5624f28cf80c9a5fdfdf8ee835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843588"
 ---
-# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>如何： 编辑 SharePoint 部署配置
+# <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>如何：编辑 SharePoint 部署配置
   您可以创建部署配置或修改现有的部署配置。 例如，无法运行单步执行或更改的部署过程中的步骤顺序。 您可能想要创建或修改部署配置，因为不能更改的内置和以编程方式添加了配置。  
   
 ## <a name="create-a-sharepoint-deployment-configuration"></a>创建 SharePoint 部署配置  
@@ -58,4 +53,3 @@ ms.locfileid: "43774789"
   
 ## <a name="see-also"></a>请参阅
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

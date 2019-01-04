@@ -1,9 +1,6 @@
 ---
 title: 异常处理 (Visual Studio SDK) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], exception handling
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab3a3aafdca83305b86ce083e53e654b637cf110
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 135560d087a2040b55d52f9cf5328fe21c2e0dc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232060"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886483"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>异常处理 (Visual Studio SDK)
 下面介绍所发生异常时的过程。  
@@ -37,7 +34,7 @@ ms.locfileid: "39232060"
   
     -   如果该方法返回 S_OK，调用[IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)。  
   
-         或  
+         - 或 -  
   
          如果该方法返回 S_FALSE，该程序正在调试就会有第二个机会处理异常。  
   

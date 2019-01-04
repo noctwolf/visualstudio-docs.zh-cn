@@ -4,16 +4,15 @@ title: 通过分析来评估应用性能 | Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来分析应用程序、服务和工具的性能。
 ms.custom: seodec18
 ms.topic: landing-page
-ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 972e4b8b58229786d403451ddfd7a49a3fe4d6a0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ced28177670ab33916701858bfae36fa860a357f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065540"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886437"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>在 Visual Studio 中评估应用性能
 

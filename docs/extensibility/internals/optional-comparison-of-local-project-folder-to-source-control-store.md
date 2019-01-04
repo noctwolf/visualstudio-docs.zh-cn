@@ -1,9 +1,6 @@
 ---
-title: 比较到源代码管理存储区的项目文件夹 |Microsoft 文档
-ms.custom: ''
+title: 比较项目文件夹与源代码管理存储区 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, comparing versions
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e0f6f2185385ee7ec3942556a43f58d43e7a4da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f39e4cea70f407ab4fd9358d35488103aecb2b58
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130565"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903651"
 ---
-# <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>到源代码管理存储区的本地项目文件夹的可选比较
-在源中控制本地项目文件夹和源控件之间的比较通过使用函数来实现的插件 API 1.2 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)和[SccDirDiff](../../extensibility/sccdirdiff-function.md)。  
+# <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>本地项目文件夹与源代码管理存储之间的可选比较
+在源控制本地项目文件夹与源控件之间的比较通过使用函数来实现的插件 API 1.2 [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)并[SccDirDiff](../../extensibility/sccdirdiff-function.md)。  
   
- 在**解决方案资源管理器**，如果而不是单个文件，选择文件夹**比较版本**快捷菜单时，将调用新[SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)和[SccDirDiff](../../extensibility/sccdirdiff-function.md)在源代码管理插件。  
+ 内**解决方案资源管理器**，如果而不是单个文件，选择文件夹**比较版本**快捷方式菜单调用的新[SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)和[SccDirDiff](../../extensibility/sccdirdiff-function.md)在源代码管理插件。  
   
-## <a name="new-capability-flags"></a>新功能标志  
+## <a name="new-capability-flags"></a>新的功能标志  
  `SCC_CAP_DIRECTORYDIFF`  
   
  `SCC_CAP_DIRECTORYCHECKOUT`  
@@ -36,10 +33,10 @@ ms.locfileid: "31130565"
   
  [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md)  
   
- `SccDirQueryInfo`函数调用前`SccDirDiff`以确定是否受源代码管理的工作目录。 `SccDirDiff`函数将显示当前的本地目录和相应的源代码管理文件夹之间的差异。 此命令会询问源代码管理插件以向目录中显示的更改的列表。 源代码管理插件提供其自己的 UI，以显示了差异。  
+ `SccDirQueryInfo`之前调用函数`SccDirDiff`以确定是否受源代码管理的工作目录。 `SccDirDiff`函数显示当前的本地目录与相应的源代码管理文件夹之间的差异。 此命令要求源代码管理插件的目录中显示更改的列表。 源代码管理插件提供了自己的 UI 显示差异。  
   
 > [!NOTE]
->  此函数使用相同的命令标志作为[SccDiff](../../extensibility/sccdiff-function.md)。 作为源代码管理插件提供，你可以选择不支持目录的"快速差异"操作。  
+>  此函数使用相同的命令标志，作为[SccDiff](../../extensibility/sccdiff-function.md)。 作为源代码管理插件提供程序，你可能选择不支持目录的"快速 diff"操作。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

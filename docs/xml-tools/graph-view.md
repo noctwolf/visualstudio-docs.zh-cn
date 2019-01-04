@@ -2,7 +2,6 @@
 title: XML 架构设计器关系图视图
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894620"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826989"
 ---
 # <a name="graph-view"></a>图形视图
 
@@ -37,7 +36,7 @@ ms.locfileid: "49894620"
 
  ![XSD 设计器；关系图视图](../xml-tools/media/xsdgraphviewwatermark.gif)
 
- 如果架构集有错误，则列表的末尾会显示以下文本：“请使用‘错误列表’查看和修复架构集中的错误”[Use the Error List to view and fix the errors in the set]。
+ 如果架构集有错误，在列表末尾显示以下文本："使用错误列表以查看并集中解决错误。"
 
 ## <a name="breadcrumb-bar"></a>痕迹导航栏
 
@@ -103,16 +102,16 @@ ms.locfileid: "49894620"
 
 |选项|描述|
 |-|-----------------|
-|**显示起始视图**|切换到[启动视图](../xml-tools/start-view.md)。 可以使用键盘快捷方式访问此视图： **Ctrl**+**1**。|
-|**显示内容模型视图**|切换到[内容模型视图](../xml-tools/content-model-view.md)。 可以使用键盘快捷方式访问此视图： **Ctrl**+**2**。|
-|**显示图形视图**|切换到[图形视图](../xml-tools/graph-view.md)。 可以使用键盘快捷方式访问此视图： **Ctrl**+**3**。|
+|**显示起始视图**|切换到[启动视图](../xml-tools/start-view.md)。 可以使用键盘快捷方式访问此视图：**Ctrl**+**1**。|
+|**显示内容模型视图**|切换到[内容模型视图](../xml-tools/content-model-view.md)。 可以使用键盘快捷方式访问此视图：**Ctrl**+**2**。|
+|**显示图形视图**|切换到[图形视图](../xml-tools/graph-view.md)。 可以使用键盘快捷方式访问此视图：**Ctrl**+**3**。|
 |**清空工作区**|清空工作区和设计图面。|
 |**从工作区中删除**|从工作区和设计图面中删除所选节点。|
 |**移除所选内容从工作区**|从工作区和设计图面中删除未选择的节点。 会在内容模型视图和图形视图中启用此选项。|
-|**从左到右**|将图形视图中的布局更改为节点的从左到右分层表示形式。 可以使用键盘快捷方式访问此选项： **Alt**+**向右箭头**。|
-|**从右到左**|将图形视图中的布局更改为节点的从右到左分层表示形式。 可以使用键盘快捷方式访问此选项： **Alt**+**向左的箭头**。|
-|**从上到下**|将图形视图中的布局更改为节点的从上到下分层表示形式。 可以使用键盘快捷方式访问此选项： **Alt**+**向下箭头**。|
-|**从下到上**|将图形视图中的布局更改为节点的从下到上分层表示形式。 可以使用键盘快捷方式访问此选项： **Alt**+**向上箭头**。|
+|**从左到右**|将图形视图中的布局更改为节点的从左到右分层表示形式。 可以使用键盘快捷方式访问此选项：**Alt**+**向右箭头**。|
+|**从右到左**|将图形视图中的布局更改为节点的从右到左分层表示形式。 可以使用键盘快捷方式访问此选项：**Alt**+**向左的箭头**。|
+|**从上到下**|将图形视图中的布局更改为节点的从上到下分层表示形式。 可以使用键盘快捷方式访问此选项：**Alt**+**向下箭头**。|
+|**从下到上**|将图形视图中的布局更改为节点的从下到上分层表示形式。 可以使用键盘快捷方式访问此选项：**Alt**+**向上箭头**。|
 
 ## <a name="panscroll"></a>平移/滚动
 

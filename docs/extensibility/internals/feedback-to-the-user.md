@@ -1,9 +1,6 @@
 ---
 title: 向用户反馈 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user model feedback
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39ab61615ed00504259909339734ab7874a6dfc6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc6161c7568760947dcc0fc43c409cd9e947630b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860365"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908874"
 ---
 # <a name="feedback-to-the-user"></a>向用户反馈
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)，有关可用的功能基于用户的当前所选内容和全局选定内容上下文的可视反馈。 下表列出了在不同的选定内容上下文中可用的功能。  

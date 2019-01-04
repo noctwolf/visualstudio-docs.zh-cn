@@ -1,9 +1,6 @@
 ---
 title: Vspackage 中安全性的最佳做法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio SDK]
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 629e7076335ee3cd9e2260d6242f586579bd8e0d
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 93ff8f6cd9423212a64404b55b38751d095b260f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370689"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913381"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>在 Vspackage 中安全性的最佳做法
 若要安装[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]计算机时，你必须在运行具有管理凭据的上下文。 安全和部署的基本单位[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]应用程序是[VSPackage](../../extensibility/internals/vspackages.md)。 必须使用注册 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，这也要求管理凭据。  

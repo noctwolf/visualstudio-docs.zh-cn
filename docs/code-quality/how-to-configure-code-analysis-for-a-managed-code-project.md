@@ -2,7 +2,6 @@
 title: 配置代码分析
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
@@ -15,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c94c1a82acfcabaa8bc6d73eb302b8760c5df2ec
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: f204ce43abee96dcaf6e2f96141fd01237c1e492
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939753"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：配置托管代码项目的代码分析
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：为托管代码项目配置代码分析
 
 在 Visual Studio 中，您可以从列表中选择的代码分析[规则集](../code-quality/rule-set-reference.md)) 要应用于托管的代码项目。 默认情况下**Microsoft 最少量建议规则**选择规则集，但可以应用不同的规则，如果所需的设置。 可以将规则集应用到解决方案中的一个或多个项目。
 
 > [!TIP]
-> 有关如何配置 ASP.NET web 应用程序设置的规则的信息，请参阅[如何： 为 ASP.NET 配置代码分析 web 应用程序](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。
+> 有关如何配置 ASP.NET web 应用程序设置的规则的信息，请参阅[如何：为 ASP.NET web 应用程序配置代码分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>若要配置的规则设置为.NET Framework 项目
 
@@ -77,4 +76,4 @@ ms.locfileid: "53062417"
 ## <a name="see-also"></a>请参阅
 
 - [代码分析规则集参考](../code-quality/rule-set-reference.md)
-- [如何： 为 ASP.NET web 应用程序配置代码分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)
+- [如何：为 ASP.NET web 应用程序配置代码分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

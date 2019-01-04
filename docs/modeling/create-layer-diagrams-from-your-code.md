@@ -13,13 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7a613874a45939d9c9f2546edbb5545d8be31ccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951166"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846160"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>从代码创建依赖项关系图
 
@@ -29,7 +28,7 @@ ms.locfileid: "49951166"
 
 依赖项关系图，你将 Visual Studio 解决方案项组织到名为的逻辑抽象组*层*。 你可以使用层来描述这些项目执行的主要任务或系统的主要组件。 每个层可包含描述更详细任务的其他层。 您还可以指定预期的或现有*依赖项*各层之间。 这些依赖项（表示为箭头）显示哪些层可以使用或当前正在使用由其他层表示的功能。 若要维护代码的体系结构控制，请在关系图上显示预期的依赖项，然后对照关系图验证代码。
 
-[视频： 验证实时体系结构依赖项](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+[视频：验证你在真实时间中的体系结构依赖关系](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
 ## <a name="CreateDiagram"></a> 创建依赖项关系图
 
@@ -53,7 +52,7 @@ ms.locfileid: "49951166"
 
 4.  在中**添加到建模项目**，浏览到并在解决方案中选择一个现有建模项目。
 
-     或
+     - 或 -
 
      选择**创建一个新建模项目**将一个新建模项目添加到解决方案。
 
@@ -89,7 +88,7 @@ ms.locfileid: "49951166"
 
 |**若要**|**请执行以下步骤**|
 |-|-|
-|为单个项目创建一个层|<ol><li>从这些源将项拖动到依赖项关系图上：<br /><br /> <ul><li>**解决方案资源管理器**<br /><br />         例如，您可以拖动文件或项目。</li><li>代码图<br /><br />         请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)并[使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**类视图**或**对象浏览器**</li></ul><br />     层显示在关系图上，并链接到项目。</li><li>重命名层以反映关联代码或项目的作用。</li></ol> **重要说明：** 将二进制文件拖动到依赖项关系图不会自动添加到建模项目及其引用。 你必须将要验证的二进制文件手动添加到建模项目中。 **若要将二进制文件添加到建模项目** <ol><li>在中**解决方案资源管理器**，打开建模项目的快捷菜单，然后选择**添加现有项**。</li><li>在中**添加现有项**对话框中，浏览到二进制文件、 选择它们，，然后选择**确定**。     二进制文件将显示在建模项目中。</li><li>在中**解决方案资源管理器**，选择的二进制文件，您添加，，然后按**F4**以打开**属性**窗口。</li><li>在每个二进制文件上设置**生成操作**属性设置为**验证**。</li></ol>|
+|为单个项目创建一个层|<ol><li>从这些源将项拖动到依赖项关系图上：<br /><br /> <ul><li>**解决方案资源管理器**<br /><br />         例如，您可以拖动文件或项目。</li><li>代码图<br /><br />         请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)并[使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**类视图**或**对象浏览器**</li></ul><br />     层显示在关系图上，并链接到项目。</li><li>重命名层以反映关联代码或项目的作用。</li></ol> **重要提示：** 将二进制文件拖动到依赖项关系图不会自动添加到建模项目及其引用。 你必须将要验证的二进制文件手动添加到建模项目中。 **若要将二进制文件添加到建模项目** <ol><li>在中**解决方案资源管理器**，打开建模项目的快捷菜单，然后选择**添加现有项**。</li><li>在中**添加现有项**对话框中，浏览到二进制文件、 选择它们，，然后选择**确定**。     二进制文件将显示在建模项目中。</li><li>在中**解决方案资源管理器**，选择的二进制文件，您添加，，然后按**F4**以打开**属性**窗口。</li><li>在每个二进制文件上设置**生成操作**属性设置为**验证**。</li></ol>|
 |为所有选择的项目创建单个层|将所有项目同时都拖到依赖项关系图。<br /><br /> 一个层将出现在关系图上，并链接到所有这些项目。|
 |为每个所选的项目创建一个层|按下并保持**SHIFT**键的同时拖动的所有项目依赖项关系图在同一时间。 **注意：** 如果您使用**SHIFT**键选择的项的范围，在选择了项目之后松开该键。 将这些项目拖到关系图上时再次按住该键。 <br /><br /> 每个项目的层将出现在关系图上，并链接到该项目。|
 |向层中添加项目|将项目拖到层上。|
@@ -160,8 +159,8 @@ ms.locfileid: "49951166"
 
 ## <a name="see-also"></a>请参阅
 
-- [视频： 验证实时体系结构依赖项](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
-- [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)
-- [依赖项关系图：指南](../modeling/layer-diagrams-guidelines.md)
+- [视频：验证你在真实时间中的体系结构依赖关系](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [依赖项关系图：引用](../modeling/layer-diagrams-reference.md)
+- [依赖项关系图：指导原则](../modeling/layer-diagrams-guidelines.md)
 - [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)
 - [代码可视化](../modeling/visualize-code.md)

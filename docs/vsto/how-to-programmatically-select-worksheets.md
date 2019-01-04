@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式选择工作表
-ms.custom: ''
+title: 如何：以编程方式选择工作表
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09e477d802b9d92ca4f9e1cd3a532145ad0e68a0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9ef332127c8c4127e78e495ca13f3b26fa64d335
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671757"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924470"
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>如何： 以编程方式选择工作表
+# <a name="how-to-programmatically-select-worksheets"></a>如何：以编程方式选择工作表
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> 方法选择指定的对象，从而将用户的选择移到新对象上。 如果想要将焦点移到对象上，而不更改用户的选择，请使用 <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> 方法。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -35,7 +32,7 @@ ms.locfileid: "35671757"
   
 ### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>使用主机项选择工作簿中的第一个工作表  
   
-1.  调用 <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> 的 `Sheet1` 方法。  
+1.  调用 <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> 的 `Sheet1`方法。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#19)]  
@@ -52,14 +49,12 @@ ms.locfileid: "35671757"
   
 ## <a name="see-also"></a>请参阅  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以编程方式打印工作表](../vsto/how-to-programmatically-print-worksheets.md)   
- [如何： 以编程方式从工作簿中删除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [如何： 以编程方式隐藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
- [如何： 以编程方式保护工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [如何：以编程方式打印工作表](../vsto/how-to-programmatically-print-worksheets.md)   
+ [如何：以编程方式从工作簿中删除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [如何：以编程方式隐藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [如何：以编程方式保护工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
  [工作表主机项](../vsto/worksheet-host-item.md)   
  [对 Office 项目中的对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

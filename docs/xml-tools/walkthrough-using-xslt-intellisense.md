@@ -2,7 +2,6 @@
 title: 演练：使用 XSLT IntelliSense
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a71a70296a3b4e49f2cf7c596a7f71063c8297
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 1cbd8c7d49719ad1b3d04d9336f222b45a0b33d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894397"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>演练：使用 XSLT IntelliSense
 
@@ -47,7 +46,7 @@ ms.locfileid: "34693518"
     </xsl:stylesheet>
     ```
 
-2.  之后插入光标`<xsl:template name="msg23" match="msg23">`按**Enter**。 然后开始键入以下 `xsl:call-template` 元素：
+2.  之后插入光标`<xsl:template name="msg23" match="msg23">`并按**Enter**。 然后开始键入以下 `xsl:call-template` 元素：
 
     ```xml
     <xsl:call-template name="localized-message">
@@ -56,7 +55,7 @@ ms.locfileid: "34693518"
 
      在键入元素时，模板名称列表出现在 `name=""` 元素的 `xsl:call-template` 特性中。
 
-3.  之后插入光标`<xsl:call-template name="localized-message">`按**Enter**。 然后开始键入以下 `xsl:with-param` 元素：
+3.  之后插入光标`<xsl:call-template name="localized-message">`并按**Enter**。 然后开始键入以下 `xsl:with-param` 元素：
 
     ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>
@@ -113,7 +112,7 @@ ms.locfileid: "34693518"
     </xsl:stylesheet>
     ```
 
-2.  之后插入光标`<xsl:apply-templates select="phone" />`按**Enter**。 然后开始键入以下 `xsl: apply-templates` 元素：
+2.  之后插入光标`<xsl:apply-templates select="phone" />`并按**Enter**。 然后开始键入以下 `xsl: apply-templates` 元素：
 
     ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">
@@ -154,7 +153,7 @@ ms.locfileid: "34693518"
     </xsl:stylesheet>
     ```
 
-2.  之后插入光标`<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">`按**Enter**。 然后开始键入以下 `xsl:namespace-alias` 元素：
+2.  之后插入光标`<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">`并按**Enter**。 然后开始键入以下 `xsl:namespace-alias` 元素：
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>

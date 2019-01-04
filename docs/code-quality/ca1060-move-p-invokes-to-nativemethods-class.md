@@ -1,8 +1,7 @@
 ---
-title: CA1060：将 P-Invoke 移动到 NativeMethods 类
+title: CA1060:将 P-Invoke 移动到 NativeMethods 类
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf3e3f01eb6decb1ac2705655675455485bceb5b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e1dc9cf738e74390ea1867966d20f4246d0b1f8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551946"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874227"
 ---
-# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060：将 P/Invoke 移动到 NativeMethods 类
+# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060:将 P/Invoke 移动到 NativeMethods 类
 
 |||
 |-|-|
@@ -94,7 +93,7 @@ ms.locfileid: "45551946"
 ## <a name="unsafenativemethods-example"></a>UnsafeNativeMethods 示例
 
 ### <a name="description"></a>描述
- P/Invoke 方法，不能安全地调用和任何可导致副作用应置于名为的类**UnsafeNativeMethods**。 应严格检查这些方法，以确保它们不公开给用户无意中。 该规则[CA2118： 检查 SuppressUnmanagedCodeSecurityAttribute 用法](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)对此有所帮助。 或者，方法应具有另一个而不是所需的权限**UnmanagedCode**何时使用它们。
+ P/Invoke 方法，不能安全地调用和任何可导致副作用应置于名为的类**UnsafeNativeMethods**。 应严格检查这些方法，以确保它们不公开给用户无意中。 该规则[CA2118:检查 SuppressUnmanagedCodeSecurityAttribute 用法](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)对此有所帮助。 或者，方法应具有另一个而不是所需的权限**UnmanagedCode**何时使用它们。
 
  下面的示例演示**Cursor.Hide**方法，用于包装**ShowCursor** user32.dll 函数。
 

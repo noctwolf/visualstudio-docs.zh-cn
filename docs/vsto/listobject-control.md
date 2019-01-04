@@ -1,9 +1,6 @@
 ---
 title: ListObject 控件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.List
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fe8191acc2bab7fbcfa2f21ef203f6057535a75
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0c488cafabcdffc3bfa56ee59ea4ca163c9d9dd0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670582"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945179"
 ---
 # <a name="listobject-control"></a>ListObject 控件
   <xref:Microsoft.Office.Tools.Excel.ListObject> 控件是公开事件并且可以绑定到数据的列表。 当将列表添加到工作表时，Visual Studio 将创建 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件，你可以直接针对此控件编程而无需遍历 Microsoft Office Excel 对象模型。  
@@ -34,7 +31,7 @@ ms.locfileid: "35670582"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
 ## <a name="create-the-control"></a>创建控件  
- 在文档级项目中，可以在设计时或运行时向工作表中添加 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件。 在 VSTO 外接程序项目中，可以添加<xref:Microsoft.Office.Tools.Excel.ListObject>控件添加到工作表只能在运行时。 有关详细信息，请参阅[如何： 添加 ListObject 控件添加到工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)。  
+ 在文档级项目中，可以在设计时或运行时向工作表中添加 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件。 在 VSTO 外接程序项目中，可以添加<xref:Microsoft.Office.Tools.Excel.ListObject>控件添加到工作表只能在运行时。 有关更多信息，请参见[如何：向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)。  
   
 > [!NOTE]  
 >  默认情况下，工作表关闭时，动态创建的列表对象不作为宿主控件保留在工作表中。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
@@ -49,7 +46,7 @@ ms.locfileid: "35670582"
   
  因为数据与 <xref:Microsoft.Office.Tools.Excel.ListObject>分离，所以应通过绑定数据集添加和删除数据，而不是直接通过 <xref:Microsoft.Office.Tools.Excel.ListObject>。 如果绑定数据集中的数据通过任何机制进行了更新，那么 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件会自动反映这些变化。 有关详细信息，请参阅[将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
- 可以通过将 <xref:Microsoft.Office.Tools.Excel.ListObject> 绑定到数据源来快速填充 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件。 如果在数据绑定 <xref:Microsoft.Office.Tools.Excel.ListObject>中编辑数据，则也会在数据源中自动进行更改。 如果要填充 <xref:Microsoft.Office.Tools.Excel.ListObject> ，然后使用户可以更改 <xref:Microsoft.Office.Tools.Excel.ListObject> 中的数据而无需修改数据源，则可以使用 <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> 方法将 <xref:Microsoft.Office.Tools.Excel.ListObject> 从数据源分离。 有关详细信息，请参阅[如何： 使用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)。  
+ 可以通过将 <xref:Microsoft.Office.Tools.Excel.ListObject> 绑定到数据源来快速填充 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件。 如果在数据绑定 <xref:Microsoft.Office.Tools.Excel.ListObject>中编辑数据，则也会在数据源中自动进行更改。 如果要填充 <xref:Microsoft.Office.Tools.Excel.ListObject> ，然后使用户可以更改 <xref:Microsoft.Office.Tools.Excel.ListObject> 中的数据而无需修改数据源，则可以使用 <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> 方法将 <xref:Microsoft.Office.Tools.Excel.ListObject> 从数据源分离。 有关更多信息，请参见[如何：用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)。  
   
 > [!NOTE]  
 >  重叠 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件不支持数据绑定。  
@@ -58,7 +55,7 @@ ms.locfileid: "35670582"
  如果先绑定控件，然后调用 <xref:Microsoft.Office.Tools.Excel.ListObject> 以填充数据集，则将 XML 文件读取到数据绑定 <xref:System.Data.DataSet.ReadXml%2A> 控件中的过程倾向于越来越慢。 要改进性能，请在绑定控件之前调用 <xref:System.Data.DataSet.ReadXml%2A> 。  
   
 ### <a name="disconnect-listobject-controls-from-the-data-source"></a>断开 ListObject 控件与数据源的连接  
- 通过将 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件绑定到数据源来使用数据填充它之后，可以对它断开连接，以便对列表对象中的数据进行的修改不会影响数据源。 有关详细信息，请参阅[如何： 使用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)。  
+ 通过将 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件绑定到数据源来使用数据填充它之后，可以对它断开连接，以便对列表对象中的数据进行的修改不会影响数据源。 有关更多信息，请参见[如何：用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)。  
   
 ### <a name="restore-column-and-row-order"></a>还原列和行顺序  
  如果数据绑定到已在设计时添加到文档的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件，则只要保存工作簿，Visual Studio 便会跟踪列和行顺序。 如果用户移<xref:Microsoft.Office.Tools.Excel.ListObject>列或行在运行时，新顺序会保留在下次打开该工作簿和<xref:Microsoft.Office.Tools.Excel.ListObject>控件再次绑定到数据源。  
@@ -72,7 +69,7 @@ ms.locfileid: "35670582"
  不能手动添加或删除列在数据绑定<xref:Microsoft.Office.Tools.Excel.ListObject>控件在运行时。 如果最终用户尝试删除某一列，它将立即还原，将删除添加的所有列。 因此，需编写代码来向用户说明为何无法对绑定到数据的 <xref:Microsoft.Office.Tools.Excel.ListObject> 执行这些操作，这十分重要。 Visual Studio 在与数据绑定相关的 <xref:Microsoft.Office.Tools.Excel.ListObject> 上提供了多个事件。 例如，可以使用 <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored> 事件来警告用户，他们尝试删除的数据无法删除，已还原。  
   
 ## <a name="add-and-remove-rows-at-runtime"></a>添加和删除在运行时的行  
- 可以手动添加和删除数据绑定 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件中的行（前提是数据源允许添加新行，并且不是只读的）。 可以针对诸如 <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> 这类事件编写代码以验证数据。 有关详细信息，请参阅[如何： 在新行添加到 ListObject 控件时验证数据](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)。  
+ 可以手动添加和删除数据绑定 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件中的行（前提是数据源允许添加新行，并且不是只读的）。 可以针对诸如 <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> 这类事件编写代码以验证数据。 有关更多信息，请参见[如何：一个新行添加到 ListObject 控件时验证数据](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)。  
   
  列表对象与数据源的关系有时会导致例程错误。 例如，可以映射要在 <xref:Microsoft.Office.Tools.Excel.ListObject>中显示的列，因此如果省略具有限制的列（例如不能接受 null 值的字段），则每次创建行时都会引发错误。 可以编写代码以在 <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow> 事件的事件处理程序中添加缺少的值。  
   
@@ -112,17 +109,15 @@ ms.locfileid: "35670582"
   
 ## <a name="see-also"></a>请参阅  
  [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
- [如何： 向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [如何： 调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)   
- [如何： 在新行添加到 ListObject 控件时验证数据](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
- [如何： 对数据的映射 ListObject 列](../vsto/how-to-map-listobject-columns-to-data.md)   
- [如何： 使用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)   
+ [如何：向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [如何：调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)   
+ [如何：一个新行添加到 ListObject 控件时验证数据](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
+ [如何：将 ListObject 列映射到数据](../vsto/how-to-map-listobject-columns-to-data.md)   
+ [如何：用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [扩展 Word 文档和 Excel 工作簿在 VSTO 外接在运行时](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [如何： 用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [如何：用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

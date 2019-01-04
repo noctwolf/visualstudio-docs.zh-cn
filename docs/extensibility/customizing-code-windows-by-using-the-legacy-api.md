@@ -1,9 +1,6 @@
 ---
 title: 通过使用旧版 API 自定义代码 Windows |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - code windows
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 454d58a48abafe9b23f8a812e5d40b9fc6477b50
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 07627ddbc8cf8e6f030418956931ad2e4af544af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883034"
 ---
 # <a name="customize-code-windows-by-using-the-legacy-api"></a>使用传统的 API 自定义代码窗口
 代码窗口是支持一个或多个文本视图的文档窗口对象。 代码窗口的确切功能取决于关联的语言服务。 在多文档界面 (MDI) 模式下，代码窗口是 MDI 子框架。  
@@ -36,10 +33,10 @@ ms.locfileid: "39499349"
  `Customizing Code Windows by Using the Legacy API`  
  介绍如何自定义代码窗口使用传统的 API。  
   
- [如何： 承载的编辑器中另一个编辑器](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [如何：主机的编辑器中另一个编辑器](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  介绍如何在托管在编辑器窗口内的第二个编辑器。  
   
- [如何： 触发事件; 当编辑器失去焦点](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [如何：触发事件; 当编辑器失去焦点](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  介绍如何将文档视图附加到文档数据对象。  
   
 ## <a name="see-also"></a>请参阅  

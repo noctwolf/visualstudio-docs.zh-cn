@@ -1,8 +1,7 @@
 ---
-title: CA1021：避免使用 out 参数
+title: CA1021:避免使用 out 参数
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1021
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1082aaef3422923e0f74e8bd5eb242f3ae8e6023
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 10ee8312a0861e65e0717cc6d9bec3d2530a8c80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549490"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911856"
 ---
-# <a name="ca1021-avoid-out-parameters"></a>CA1021：避免使用 out 参数
+# <a name="ca1021-avoid-out-parameters"></a>CA1021:避免使用 out 参数
 
 |||
 |-|-|
@@ -36,7 +35,7 @@ ms.locfileid: "45549490"
  公共或受保护方法的公共类型中具有`out`参数。
 
 ## <a name="rule-description"></a>规则说明
- 通过引用传递类型 (使用`out`或`ref`) 需要体验提供了指导，了解值类型和引用类型的不同之处，以及能处理具有多个返回值的方法。 此外，之间的差异`out`和`ref`参数没有得到广泛了解。
+ 通过引用传递类型 (使用`out`或`ref`) 需要体验提供了指导，了解值类型和引用类型的不同之处，以及能处理具有多个返回值的方法。 另外，`out` 和 `ref` 形参之间的区别并不广为人知。
 
  当"按引用"传递引用类型时，方法将希望使用参数可返回对象的不同实例。 按引用传递引用类型也称为使用双指针、 指向指针的指针或双间接寻址。 通过使用的默认调用约定，通过"按值"，已采用引用类型参数接收指向对象的指针。 按值传递的指针，它指向的而非对象。 通过此方法不能更改要将其指向引用类型的新实例的指针的值表示传递。 但是，它可以更改它所指向的对象的内容。 对于大多数应用程序这就足够了，并生成所需的行为。
 
@@ -94,4 +93,4 @@ Passing by return value:
  [!code-csharp[FxCop.Design.TryPattern#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_5.cs)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA1045：不要通过引用来传递类型](../code-quality/ca1045-do-not-pass-types-by-reference.md)
+ [CA1045:不要通过引用来传递类型](../code-quality/ca1045-do-not-pass-types-by-reference.md)

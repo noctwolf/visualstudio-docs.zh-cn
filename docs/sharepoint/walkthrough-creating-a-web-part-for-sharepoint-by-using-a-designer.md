@@ -1,13 +1,8 @@
 ---
-title: 演练： 使用设计器为 SharePoint 创建 Web 部件 |Microsoft Docs
-ms.custom: ''
+title: 演练：使用设计器为 SharePoint 创建 Web 部件 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 146a1722f240895e0f508b0474df72f6f5f84ece
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831805"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870898"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>演练： 使用设计器为 SharePoint 创建 web 部件
+# <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>演练：使用设计器为 SharePoint 创建 web 部件
 
 如果您创建的 SharePoint 站点的 web 部件，用户可以直接修改内容、 外观和行为的该站点中的页通过使用浏览器。 本演练演示如何通过使用 SharePoint 直观地创建 web 部件**可视 Web 部件**Visual Studio 中的项目模板。
 
@@ -74,7 +69,7 @@ ms.locfileid: "49831805"
 
 1. 在 Visual Web Developer 设计器中，选择**设计**选项卡以切换到设计视图。
 
-2. 在菜单栏上依次选择**视图** > **工具箱**。
+2. 在菜单栏上，依次选择“视图” > “工具箱”。
 
 3. 在中**标准**的节点**工具箱**，选择**CheckBoxList**控件，然后执行以下步骤之一：
 
@@ -193,5 +188,5 @@ ms.locfileid: "49831805"
 ## <a name="see-also"></a>请参阅
 
 [为 SharePoint 创建 web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[如何： 创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
-[演练： 创建 SharePoint web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)
+[如何：创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[演练：为 SharePoint 创建 web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

@@ -1,9 +1,6 @@
 ---
 title: 命令、 菜单和工具栏 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a8bd6716b40816ae625dcdb32fb62237aa543fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ceda4339c02e73f02ebd78094a145f53bc7fbb82
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887732"
 ---
 # <a name="commands-menus-and-toolbars"></a>命令、 菜单和工具栏
 菜单和工具栏是用户可访问你的 VSPackage 中的命令。 命令是完成任务（如打印文档、刷新视图或创建新文件）的函数。 菜单和工具栏是用于向用户呈现命令的方便图形方式。 通常，相关命令在相同菜单或工具栏上聚集在一起。  
@@ -31,7 +28,7 @@ ms.locfileid: "49928420"
   
 - 创建命令时，还必须为它创建事件处理程序。 事件处理程序确定命令何时可见或启用、使你可以修改其文本并确保命令在激活时以合适方式进行响应（“路由”）。 在大多数情况下，IDE 使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 接口处理命令。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的命令以分层方式进行路由，基于本地选择从最内层命令上下文开始，然后基于全局选择继续执行到最外层上下文。 添加到主菜单的命令可立即用于脚本编写。 有关详细信息，请参阅[MenuCommands 与。OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)并[选择上下文对象](../../extensibility/internals/selection-context-objects.md)。  
   
-  若要定义新菜单和工具栏，您必须进行说明 Visual Studio 命令表 (*.vsct*) 文件。 Visual Studio 包模板创建，以支持任何命令、 工具栏和模板中选择的编辑器所需的元素以及此文件。 或者，您可以编写自己 *.vsct*文件，使用此处所述的 XML 架构： [VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)。  
+  若要定义新菜单和工具栏，您必须进行说明 Visual Studio 命令表 (*.vsct*) 文件。 Visual Studio 包模板创建，以支持任何命令、 工具栏和模板中选择的编辑器所需的元素以及此文件。 或者，您可以编写自己 *.vsct*文件，使用此处所述的 XML 架构：[VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)。  
   
   有关使用详细信息 *.vsct*文件，请参阅[Visual Studio 命令表格 (.vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   

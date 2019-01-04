@@ -1,9 +1,6 @@
 ---
-title: RegPkg 实用工具 |Microsoft 文档
-ms.custom: ''
+title: RegPkg 实用工具 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - regpkg, registration utility
@@ -14,22 +11,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d677aaf155e533c27a775f3995b53dd59b65385
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3f9eecfaeffd19ece7e0ca2fe14e3f95556503d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130940"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904872"
 ---
 # <a name="regpkg-utility"></a>RegPkg 实用工具
 > [!NOTE]
->  在 Visual Studio 中注册包的首选的方法是使用.pkgdef 文件。 这使得扩展部署而无需访问系统注册表中，这是有关 VSIX 部署要求。 通过使用创建 Pkgdef 文件[CreatePkgDef 实用工具](../../extensibility/internals/createpkgdef-utility.md)。 Visual Studio 包部署的详细信息，请参阅[传送 Visual Studio 扩展](../../extensibility/shipping-visual-studio-extensions.md)。  
+>  在 Visual Studio 中注册包的首选的方法是通过使用.pkgdef 文件。 这样可以扩展部署而无需访问是必需的 VSIX 部署的系统注册表。 通过使用创建 Pkgdef 文件[CreatePkgDef 实用工具](../../extensibility/internals/createpkgdef-utility.md)。 Visual Studio 包部署的详细信息，请参阅[传送 Visual Studio 扩展](../../extensibility/shipping-visual-studio-extensions.md)。  
   
- RegPkg.exe 实用程序注册与 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，使其准备部署。 此实用程序是在后台 VSPackage 开发期间使用的。 它作为生成过程的一部分运行，以便你可以生成并在实验性配置单元中运行 VSPackage。  
+ RegPkg.exe 实用程序注册与 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使其准备好部署。 此实用程序在后台使用 VSPackage 开发过程。 它作为生成过程的一部分运行，以便可以生成并在实验性配置单元中运行 VSPackage。  
   
- RegPkg 可以以几种格式生成系统注册表脚本。 你可以集成在部署项目，例如.msi 项目或 Windows Installer XML 工具集文件中的这些脚本。  
+ RegPkg 可以用多种格式生成系统注册表脚本。 您可以将这些脚本在部署项目，例如.msi 项目或 Windows Installer XML 工具集文件中。  
   
- RegPkg.exe 位于通常\< *Visual Studio SDK 安装路径*> \VisualStudioIntegration\Tools\Bin\RegPkg.exe。 RegPkg 使用以下语法：  
+ RegPkg.exe 是通常位于\< *Visual Studio SDK 安装路径*> \VisualStudioIntegration\Tools\Bin\RegPkg.exe。 RegPkg 使用以下语法：  
   
 ```  
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath  
@@ -41,31 +38,31 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根。  
   
  /regfile:FileName  
- 创建的.reg 文件，而不是更新注册表。  不能与 /vrgfile 或 /rgsfile 或 /wixfile 使用。  
+ 创建的.reg 文件，而不更新注册表。  不能用于 /vrgfile 或 /rgsfile 或 /wixfile。  
   
  /rgsfile:FileName  
- 创建.rgs file，而不是更新注册表。  不能与 /vrgfile 或 /regfile 或 /wixfile 使用。  
+ 创建 rgs 文件而不更新注册表。  不能用于 /vrgfile 或 /regfile 或 /wixfile。  
   
  /vrgfile:FileName  
- 创建.vrg 文件，而不是更新注册表。  不能与 /regfile 或 /rgsfile 或 /wixfile 使用。  
+ 创建.vrg 文件而不更新注册表。  不能用于 /regfile 或 /rgsfile 或 /wixfile。  
   
  /rgm  
- 创建.rgm 文件除了 rgs 文件。  必须与 /rgsfile 结合。  
+ 创建一个.rgm 文件除了 rgs 文件。  必须与 /rgsfile 结合。  
   
  /wixfile:FileName  
- 创建与 Windows Installer XML 工具集兼容的文件，而不是更新注册表。  不能与 /regfile 或 /rgsfile 或 /vrgfile 使用。  
+ 创建与 Windows Installer XML 工具集兼容的文件，而不更新注册表。  不能用于 /regfile 或 /rgsfile 或 /vrgfile。  
   
  /codebase  
- 使用基本代码，而不是程序集强制注册。  
+ 强制注册到的基本代码而不是程序集。  
   
  /assembly  
- 使用程序集，而不是基本代码的强制注册。  
+ 强制注册程序集，而不是个基本代码。  
   
- / 注销  
- 注销此包。  不能使用  
+ / 取消注册  
+ 取消注册此包。  不能使用  
   
  与 /regfile 或 /vrgfile 或 /rgsfile 或 /wixfile。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPackage](../../extensibility/internals/vspackages.md)  
  [对 RegPkg 包注册进行故障排除](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)

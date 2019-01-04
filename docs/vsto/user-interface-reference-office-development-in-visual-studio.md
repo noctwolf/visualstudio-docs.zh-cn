@@ -1,9 +1,6 @@
 ---
 title: 用户界面参考 （Visual Studio 中的 Office 开发）
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4b307759252b54f2510d8af90320b9595f3eeb87
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0f11a15e2aa93b88def7e430825ddff3dce6fa5f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831412"
 ---
 # <a name="user-interface-reference-office-development-in-visual-studio"></a>用户界面参考 （Visual Studio 中的 Office 开发）
   以下用户界面元素是 Visual Studio 中的 Office 项目的一部分。  
@@ -47,5 +44,3 @@ ms.locfileid: "34767554"
   
  [在 Visual Studio 环境中的 office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)  
  描述 Office 项目在 Visual Studio 集成开发环境中的外观。  
-  
-  

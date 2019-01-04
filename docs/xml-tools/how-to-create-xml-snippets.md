@@ -2,7 +2,6 @@
 title: 如何：创建 XML 代码段
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db7d1cc841da888c46342ec25bf28c3af7370be9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec6332f52e732e99cc6d81512c9b3c469e99e18e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829097"
 ---
-# <a name="how-to-create-xml-snippets"></a>如何： 创建 XML 代码段
+# <a name="how-to-create-xml-snippets"></a>如何：创建 XML 代码段
 
 “XML 编辑器”可以用于新建 XML 代码段。 编辑器包括名为“Snippet”的 XML 代码段，是用于新建 XML 代码段的代码段样本。
 
@@ -121,5 +120,5 @@ ms.locfileid: "49867710"
 ## <a name="see-also"></a>请参阅
 
 - [XML 代码段](../xml-tools/xml-snippets.md)
-- [如何： 使用 XML 代码段](../xml-tools/how-to-use-xml-snippets.md)
-- [如何： 从 XML 架构生成 XML 代码段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [如何：使用 XML 代码段](../xml-tools/how-to-use-xml-snippets.md)
+- [如何：从 XML 架构生成 XML 代码段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

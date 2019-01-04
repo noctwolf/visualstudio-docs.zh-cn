@@ -1,9 +1,6 @@
 ---
 title: 选择调试引擎实施策略 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 058e3d3087a46de4bb3c5d9b721d3c9111b77526
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 97b3c82a59736b72a58237f1e53ff39e9e3b86b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818347"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>选择调试引擎实施策略
 使用运行时体系结构来确定您的调试引擎 (DE) 实施策略。 可以创建调试引擎中的进程进行调试的程序。 创建调试引擎进程内运行 Visual Studio 会话调试管理器 (SDM)。 或者，创建调试引擎的进程外对这两个值。 以下指导原则可帮助您在以下三个策略之间进行选择。  

@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 的颜色和样式 |Microsoft Docs
-ms.custom: ''
 ms.date: 07/31/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d8285ad08a9ad83ecd137223459a6b29cb7ae69
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914603"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio 的颜色和样式
 
@@ -287,7 +284,7 @@ Windows 使用增加的文本、 背景和图像的色彩对比度的多个高�
 
 ### <a name="system-color-set"></a>系统颜色集
 
-在表[WPF 团队博客： SystemColors 引用](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/)指示一整套的系统颜色的名称，并显示在每个主题对应色调。
+在表[WPF 团队博客：SystemColors 引用](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/)指示一整套的系统颜色的名称，并显示在每个主题对应色调。
 
 如果应用此限制的一组到你的 UI，颜色*预期，将会丢失细节"正常"主题中存在的*。 下面是用户界面的示例，用于区分工具窗口中的区域的细微灰颜色。 如果使用在高对比度模式下显示的同一窗口搭配使用，可以看到，所有背景相同的色调，由边框单独指示这些区域的边框：
 
@@ -365,7 +362,7 @@ VSPackage 可以控制字体和通过自定义类别的颜色和字体和颜色�
 | name | 类型 | 数据 | 描述 |
 | --- | --- | --- | --- |
 | 类别 | REG_SZ | GUID | 创建标识类别的 GUID |
-| Package | REG_SZ | GUID | 支持类别的 VSPackage 服务的 GUID |
+| package | REG_SZ | GUID | 支持类别的 VSPackage 服务的 GUID |
 
  在注册表中指定的服务必须提供的实现[IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)相应类别。
 
@@ -378,7 +375,7 @@ VSPackage 可以控制字体和通过自定义类别的颜色和字体和颜色�
 | name | 类型 | 数据 | 描述 |
 |--- | --- | --- | --- |
 | 类别 | REG_SZ | GUID | 创建标识类别的 GUID |
-| Package | REG_SZ | GUID | 支持类别的 VSPackage 服务的 GUID |
+| package | REG_SZ | GUID | 支持类别的 VSPackage 服务的 GUID |
 
 在注册表中指定的服务必须提供的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>为相应的组。
 

@@ -2,8 +2,6 @@
 title: 如何：在中向 VBA 代码公开C#项目
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1f0b3f004f6aebed6426238a081369c7d50e15f5
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 4f49ccc064f06908ed9c965f20773bd15d4753b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648504"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872578"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何：向视觉对象中的 VBA 公开代码C#项目
   如果您希望两种类型的代码与彼此进行交互，您可以公开 Visual C# 项目中为 Visual Basic for Applications (VBA) 代码的代码。  
@@ -109,5 +107,3 @@ ms.locfileid: "53648504"
  [结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)   
  [演练：从 Visual C 中的 VBA 调用代码&#35;项目](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [如何：向 VBA 公开代码在 Visual Basic 项目中](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
-  
-  

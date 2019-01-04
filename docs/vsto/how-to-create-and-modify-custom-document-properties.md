@@ -1,9 +1,6 @@
 ---
 title: 如何：创建和修改自定义文档属性
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 71ff5c37eee21092e186e50547cf9c0b72f1b20e
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 0a3dd497bc2c63c58e6072cd48f58cba071ea4f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891584"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>如何：创建和修改自定义文档属性
   上面列出的 Microsoft Office 应用程序提供与文档存储在一起的内置属性。 此外，如果要将其他信息与文档一起存储，可以创建和修改自定义文档属性。  
@@ -46,5 +43,3 @@ ms.locfileid: "53646499"
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   
  [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)   
  [如何：读取和写入到文档属性](../vsto/how-to-read-from-and-write-to-document-properties.md)  
-  
-  
