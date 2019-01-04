@@ -1,13 +1,8 @@
 ---
-title: 如何： 添加 Finder 方法 |Microsoft Docs
-ms.custom: ''
+title: 如何：添加 Finder 方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,21 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 597d1e706ad75ba6ec16b958c94b5ba9d8e97760
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 40a3cb4457f3078e843b89349fd850d83b8a1c67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836224"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963444"
 ---
-# <a name="how-to-add-a-finder-method"></a>如何： 添加 Finder 方法
+# <a name="how-to-add-a-finder-method"></a>如何：添加 Finder 方法
   若要启用业务数据连接 (BDC) 服务，以显示 web 部件或列表中的实体的列表，必须创建*Finder*方法。 查找程序方法是一种特殊的方法返回的实体实例的集合。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-a-finder-method"></a>若要创建 Finder 方法  
   
 1. 上**BDC 设计器**，选择实体。  
   
-    有关详细信息，请参阅[如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
+    有关更多信息，请参见[如何：将实体添加到模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
   
 2. 在菜单栏上依次选择**视图** > **其他 Windows** > **BDC 方法详细信息**。  
   
@@ -46,7 +41,7 @@ ms.locfileid: "49836224"
   
     Visual Studio 将添加一个方法，返回参数和类型描述符。  
   
-4. 将类型描述符配置为实体集合类型描述符。 有关如何创建实体集合类型描述符的详细信息，请参阅[如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
+4. 将类型描述符配置为实体集合类型描述符。 有关如何创建实体集合类型描述符的详细信息，请参阅[如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
    > [!NOTE]  
    >  无需执行此步骤中，如果特定的 Finder 方法添加到实体。 Visual Studio 将使用特定的 Finder 方法中定义的类型描述符。  
@@ -70,11 +65,9 @@ ms.locfileid: "49836224"
 ## <a name="see-also"></a>请参阅
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [如何： 添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何： 添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)   
- [如何： 添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)   
- [如何： 添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
- [如何： 向方法中添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定义方法实例](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  
+ [如何：添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何：添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)   
+ [如何：添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)   
+ [如何：添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何：将参数添加到方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定义方法实例](../sharepoint/how-to-define-a-method-instance.md)  

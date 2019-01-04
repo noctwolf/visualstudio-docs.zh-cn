@@ -1,5 +1,5 @@
 ---
-title: 如果：在程序代码中从文件打开模型
+title: 如何：在程序代码中从文件打开模型
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,15 +8,14 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52142da504b6dc2e7533a34f381a1243d44a74a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812486"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938061"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>如果：在程序代码中从文件打开模型
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程序代码中从文件打开模型
 您可以在任何应用程序中打开 DSL 模型。
 
  从 Visual Studio 扩展，可以使用 ModelBus，实现此目的。 ModelBus 提供了标准机制的引用的模型或在模型中，元素和查找模型，如果它已移动。 有关详细信息，请参阅[通过使用 Visual Studio Modelbus 集成模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
@@ -42,7 +41,7 @@ ms.locfileid: "49812486"
 
     -   如果没有看到这下 **.NET**选项卡**添加引用**对话框中，单击**浏览**选项卡上，并导航到`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。
 
--   DSL 集，它将为您在 bin 文件夹下你的 DSL 项目。 其名称通常为窗体： *YourCompany*。*您的项目*`.Dsl.dll`。
+-   DSL 集，它将为您在 bin 文件夹下你的 DSL 项目。 其名称通常为窗体：*YourCompany*。*您的项目*`.Dsl.dll`。
 
 ## <a name="important-classes-in-the-dsl"></a>在 DSL 中重要的类
  您可以编写读取 DSL 的代码之前，应了解某些由 DSL 生成的类的名称。 在 DSL 解决方案中，打开**Dsl**项目，然后查看**GeneratedCode**文件夹。 或者，双击你的项目中的 DSL 程序集**引用**，并打开中的 DSL 命名空间**对象浏览器**。

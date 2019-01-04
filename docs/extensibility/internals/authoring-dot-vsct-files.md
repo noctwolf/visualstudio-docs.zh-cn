@@ -1,9 +1,6 @@
 ---
 title: 创作。Vsct 文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26a5353531d997ad40b913b5ee223614d6517c55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b39cd97bca9ee88628d064f917686d2a7f45aaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917804"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945257"
 ---
 # <a name="author-vsct-files"></a>创作.vsct 文件
 本文档演示如何创作 *.vsct*文件以将菜单项、 工具栏和其他用户界面 (UI) 元素添加到 Visual Studio 集成的开发环境 (IDE)。 请执行以下步骤将 UI 元素添加到 Visual Studio 程序包 (VSPackage)，还没有 *.vsct*文件。  
@@ -26,14 +23,14 @@ ms.locfileid: "49917804"
  对于新项目，我们建议你使用 Visual Studio 包模板，因为它会生成 *.vsct*文件，具体取决于你的选择，已具有菜单命令、 工具窗口，或自定义编辑器所需的元素. 您可以修改这 *.vsct*文件以满足你的 VSPackage 的要求。 有关如何修改详细信息 *.vsct*文件，请参阅中的示例[扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)。  
   
 ## <a name="author-the-file"></a>创建文件  
- 作者 *.vsct*文件中的这些阶段： 创建文件和资源的结构、 声明的 UI 元素、 将 UI 元素放在 IDE 中，并添加任何专用的行为。  
+ 作者 *.vsct*文件中的这些阶段：创建文件和资源的结构、 声明的 UI 元素、 将 UI 元素放在 IDE 中，并添加任何专用的行为。  
   
 ### <a name="file-structure"></a>文件结构  
  基本结构 *.vsct*文件[CommandTable](../../extensibility/commandtable-element.md)包含的根元素[命令](../../extensibility/commands-element.md)元素和一个[符号](../../extensibility/symbols-element.md)元素。  
   
 #### <a name="to-create-the-file-structure"></a>若要创建的文件结构  
   
-1.  添加 *.vsct*文件到你的项目中的步骤[如何： 创建.vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。  
+1.  添加 *.vsct*文件到你的项目中的步骤[如何：创建.vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。  
   
 2. 添加到所需命名空间`CommandTable`元素，如下面的示例中所示：  
   
@@ -54,9 +51,9 @@ ms.locfileid: "49917804"
   
 1. 在顶部`CommandTable`元素中，添加一个`Extern`元素为每个外部文件引用，并设置`href`属性的文件的名称。 你可以引用以下的标头文件，若要访问 Visual Studio 资源：  
   
-   -   *Stdidcmd.h*： 定义由 Visual Studio 公开的所有命令的 Id。  
+   -   *Stdidcmd.h*:定义由 Visual Studio 公开的所有命令 Id。  
   
-   -   *Vsshlids.h*： 包含用于 Visual Studio 菜单的命令 Id。  
+   -   *Vsshlids.h*:包含用于 Visual Studio 菜单的命令 Id。  
   
 2. 如果您的包调用由 Visual Studio 或其他包定义的任何命令，将添加`UsedCommands`元素后的`Commands`元素。 填充此元素与[UsedCommand](../../extensibility/usedcommand-element.md)调用是不是您的包的一部分的每个命令的元素。 设置`guid`并`id`的属性`UsedCommand`元素与要调用的命令 GUID 和 ID 值。 
 
