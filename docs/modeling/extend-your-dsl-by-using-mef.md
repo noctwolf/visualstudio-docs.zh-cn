@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0127bac6ca74be626f9ce22fb60ad5258ae6c3c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e6c790677ea49ad784e7ff5d48326a1d5e216ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986162"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 
@@ -249,7 +248,7 @@ namespace MyMefExtension
 
 笔势处理程序可以处理拖动到关系图上从任何位置、 内部或外部 Visual Studio 的对象。 下面的示例使用户可以将文件从 Windows 资源管理器拖动到关系图上。 它将创建包含文件名称的元素。
 
-可以编写处理程序来处理来自其他 DSL 模型和 UML 模型拖动的。 有关详细信息，请参阅[如何： 添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)。
+可以编写处理程序来处理来自其他 DSL 模型和 UML 模型拖动的。 有关更多信息，请参见[如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)。
 
 ```csharp
 using System.ComponentModel.Composition;

@@ -1,9 +1,6 @@
 ---
 title: 将目录添加到新建项目对话框 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - New Project dialog box, extending
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c8686a34f52c7dc2e6c96b602811d7e12a6a7e6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6cba2fc8ee5c0b946a482ddbac12d0726db11032
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930211"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>将目录添加到新建项目对话框
 在创建新的项目类型时，你还可以注册中的新目录**新的项目**对话框来显示它们用于作为模板。 下面的代码示例说明如何注册一个新目录，也称为节点。 在示例中，模板由 VSPackage *CLSID_Package*，注册。 因此，左侧和右侧的**新的项目**对话框提供了添加的节点，名称由*Folder_Label_ResID*资源。 从 VSPackage 附属 DLL 中加载此资源。  

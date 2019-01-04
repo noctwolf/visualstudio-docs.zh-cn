@@ -1,9 +1,6 @@
 ---
 title: 如何：添加内容控件添加到 Word 文档
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a7f99768236c8945fe82645c70c586361edcdde
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 10ca0276eb6ddd392fc1ac4e584f5d9caf12fde8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905275"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>如何：添加内容控件添加到 Word 文档
   在文档级 Word 项目中，您可以添加内容控件到文档中你的项目在设计时或在运行时。 在 Word VSTO 外接程序项目中，可以向任何打开的文档在运行时添加内容控件。  
@@ -192,4 +189,3 @@ ms.locfileid: "53648041"
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   
  [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)  
-  

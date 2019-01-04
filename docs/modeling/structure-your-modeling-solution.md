@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2c279da9aed4a11799004a38004f8b82dca65174
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: fba020f27db73c5a96225c777f68e21db449b331
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50966708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831532"
 ---
 # <a name="structure-your-modeling-solution"></a>安排你的建模解决方案
 
@@ -36,7 +35,7 @@ ms.locfileid: "50966708"
 
 2. 创建 Visual Studio 解决方案，我们称之为体系结构解决方案。 此解决方案将用于创建系统的整体设计。 它将包含模型但不包括代码。
 
-   将依赖项关系图添加到此解决方案。 在依赖项关系图上绘制已选择为应用程序的体系结构。 例如，关系图可能显示以下层及相互之间的依赖关系：演示、业务逻辑和数据。
+   将依赖项关系图添加到此解决方案。 在依赖项关系图上绘制已选择为应用程序的体系结构。 例如，关系图可能会显示以下层及它们之间的依赖项：演示文稿;业务逻辑;和数据。
 
 4. 在体系结构依赖项关系图中创建单独的 Visual Studio 解决方案的每一层。
 
@@ -76,7 +75,7 @@ ms.locfileid: "50966708"
 
 1. 在每层的解决方案中，添加体系结构建模项目。 在中**解决方案资源管理器**，右键单击解决方案节点，指向**添加**，然后单击**现有项目**。 现在从每个解决方案都可以访问这个单一建模项目：体系结构项目以及每层的开发项目。
 
-2. 在共享的模型中，创建一个包的每一层： 在**解决方案资源管理器**，选择建模项目。 在中**UML 模型资源管理器**，右键单击模型根节点，指向**添加**，然后单击**包**。
+2. 在共享的模型中，创建一个包的每一层：在中**解决方案资源管理器**，选择建模项目。 在中**UML 模型资源管理器**，右键单击模型根节点，指向**添加**，然后单击**包**。
 
    每个包将包含描述的要求和设计相应的层关系图。
 

@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式在工作表中的行进行分组
-ms.custom: ''
+title: 如何：以编程方式在工作表中的行进行分组
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,14 +20,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa9624f90a337fb85ba2868b3b5c4f3cb1553ffb
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6cf553876aaad0a502c89a8b3c91002aed9e66f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258731"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896781"
 ---
-# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>如何： 以编程方式在工作表中的行进行分组
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>如何：以编程方式在工作表中的行进行分组
   可以对一个或多个的整个行进行分组。 若要在工作表中创建组，请使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控件或本机 Excel 范围对象。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -64,7 +61,5 @@ ms.locfileid: "35258731"
 ## <a name="see-also"></a>请参阅  
  [使用工作表](../vsto/working-with-worksheets.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
- [如何： 向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [如何：向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

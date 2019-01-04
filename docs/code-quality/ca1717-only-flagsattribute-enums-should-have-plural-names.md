@@ -1,8 +1,7 @@
 ---
-title: CA1717：只有 FlagsAttribute 枚举应采用复数形式的名称
+title: CA1717:只有 FlagsAttribute 枚举应采用复数形式的名称
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1717
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f923949b628d1ad5a3884acd17601daddd83460
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8c4b4b55e2a8f5ec2dd027cf62f494d3e07416dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889720"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915664"
 ---
-# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717：只有 FlagsAttribute 枚举应采用复数形式的名称
+# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717:只有 FlagsAttribute 枚举应采用复数形式的名称
 
 |||
 |-|-|
@@ -49,11 +48,11 @@ ms.locfileid: "49889720"
  它可以安全地禁止显示规则的警告，如果以单数形式的单词结尾的名称。
 
 ## <a name="related-rules"></a>相关的规则
- [CA1714：Flags 枚举应采用复数形式的名称](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
+ [CA1714:枚举应采用复数形式的名称](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
 
- [CA1027：用 FlagsAttribute 标记枚举](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027:用 FlagsAttribute 标记枚举](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217：不要使用 FlagsAttribute 标记枚举](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217:不使用 FlagsAttribute 标记枚举](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>请参阅
 

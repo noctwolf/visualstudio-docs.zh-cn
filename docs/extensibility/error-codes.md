@@ -1,9 +1,6 @@
 ---
 title: 错误代码 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - error codes, source control plug-ins
@@ -15,17 +12,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53287b85c74fae205874dce7fdd0ebf274bfda96
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6d9139ca59394c8d5de69ddf77f51bf57b8b7619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931968"
 ---
 # <a name="error-codes"></a>错误代码
 当源控制插件 API 函数将返回错误时，它应是以下的错误代码之一。 所有错误都是负数，警告或信息性错误代码都为正数，并且成功是 0。  
   
-|错误代码|“值”|描述|  
+|错误代码|值|描述|  
 |----------------|-----------|-----------------|  
 |`SCC_I_SHARESUBPROJOK`|7|插件支持从源代码管理中两个步骤中添加文件。 有关详细信息，请参阅[SccSetOption](../extensibility/sccsetoption-function.md)。|  
 |`SCC_I_FILEDIFFERS`|6|本地文件是不同于源代码管理数据库中的文件 (例如， [SccDiff](../extensibility/sccdiff-function.md)可能会返回此值)。|  

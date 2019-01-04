@@ -1,9 +1,6 @@
 ---
-title: 生成新项目： 揭秘，第二部分 |Microsoft Docs
-ms.custom: ''
+title: 生成新项目：实质上，第二部分 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
@@ -14,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38f2a4a84c6223c2e195c3d703f52d7fd5b18c86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3401523e7c8026b59f6737a8f0599b4df74a445f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943507"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>生成新项目：揭秘，第 2 部分
-在中[生成新项目： 揭秘，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我们已了解如何**新项目**填充框的对话框。 让我们假定你已选择了**Visual C# Windows 应用程序**中，已填写**名称**并**位置**文本框中，然后单击确定。  
+# <a name="new-project-generation-under-the-hood-part-two"></a>生成新项目：实质上，第二部分
+在[生成新项目：实质上，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我们已了解如何**新建项目**填充框的对话框。 让我们假定你已选择了**Visual C# Windows 应用程序**中，已填写**名称**并**位置**文本框中，然后单击确定。  
   
 ## <a name="generating-the-solution-files"></a>生成解决方案文件  
  选择应用程序模板会将定向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]解压缩，然后打开相应的.vstemplate 文件，并启动一个模板来解释此文件中的 XML 命令。 这些命令创建新的或现有解决方案中项目和项目项。  
@@ -70,7 +67,7 @@ namespace Simple
  基本.vstemplate 文件的格式  
   
 ```  
-<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
+<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
     <TemplateData>  
     </TemplateData>  
     <TemplateContent>  
@@ -78,7 +75,7 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- 我们会学会\<TemplateData > 部分中[生成新项目： 揭秘，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)。 在本部分中的标记用于控制的外观**新的项目**对话框。  
+ 我们会学会\<TemplateData > 部分中[生成新项目：实质上，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)。 在本部分中的标记用于控制的外观**新的项目**对话框。  
   
  中的标记\<TemplateContent > 部分的新项目和项目项生成的控件。 下面是\<TemplateContent > \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 文件夹中的 cswindowsapplication.vstemplate 文件中的部分。  
   
@@ -92,13 +89,13 @@ namespace Simple
     <ProjectItem TargetFileName="Properties\Resources.resx">  
       Resources.resx  
     </ProjectItem>  
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">  
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">  
       Resources.Designer.cs  
     </ProjectItem>  
     <ProjectItem TargetFileName="Properties\Settings.settings">  
       Settings.settings  
     </ProjectItem>  
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">  
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">  
       Settings.Designer.cs  
     </ProjectItem>  
     <ProjectItem ReplaceParameters="true" OpenInEditor="true">  
@@ -157,5 +154,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [生成新项目：揭秘，第 1 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [生成新项目：实质上，第 1 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

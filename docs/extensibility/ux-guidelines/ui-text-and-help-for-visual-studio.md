@@ -1,9 +1,6 @@
 ---
 title: UI 文本和 Visual Studio 的帮助 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bca879905e524e80205878034773349ddff06460
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842230"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907159"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文本和 Visual Studio 的帮助
 ##  <a name="BKMK_UITextAndTerminology"></a> UI 文本和术语  
@@ -262,7 +259,7 @@ ms.locfileid: "49842230"
   
 |好|错误|  
 |----------|---------|  
-|"您拨打的号码不再在服务中。 请检查数以及重试或操作员拨打 0。"|-"错误 (: 449): 非法的数字"<br />-"此未经处理的异常错误情况表示操作成功完成"。<br /><br /> ![在 Visual Studio 中的严重错误消息](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602 a_ErrorDialog")|  
+|"您拨打的号码不再在服务中。 请检查数以及重试或操作员拨打 0。"|-"错误 (: 449):非法的数字"<br />-"此未经处理的异常错误情况表示操作成功完成"。<br /><br /> ![在 Visual Studio 中的严重错误消息](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602 a_ErrorDialog")|  
   
 ## <a name="accessing-help"></a>访问帮助  
   

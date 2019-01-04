@@ -1,9 +1,6 @@
 ---
 title: 在托管代码中的 COM 常量 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, COM constants and macros
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8a273c5e53f9f7086e8dc96bcb4c36e0b0223d0
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9280ff451b6a03150184b9d64eb5cb78cad6fdbc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231528"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987267"
 ---
 # <a name="com-constants-in-managed-code"></a>在托管代码中的 COM 常量
 托管包框架 (MPF) 使一些标准的 COM 常量可用于托管代码。 供你参考下面列出了这些常量。  

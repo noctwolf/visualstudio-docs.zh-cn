@@ -1,9 +1,6 @@
 ---
 title: SccBackgroundGet 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccBackgroundGet
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39550665c804aa971ba88ee76707bdd150f74ab0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae32f7b0c9eea907c830a3cc62e0e53e87803177
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826872"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 函数
 此函数检索从源代码管理每个指定的文件的无用户干预。  
@@ -59,7 +56,7 @@ SCCRTN SccBackgroundGet(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|操作已成功完成。|  
 |SCC_E_BACKGROUNDGETINPROGRESS|后台检索已正在的进行 （源代码管理插件应返回这仅在不支持同时执行的批操作）。|  

@@ -1,9 +1,6 @@
 ---
 title: 项目模型核心组件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project models, objects and interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 863aef532e90d749f5c9c93a9d16cb2daf7f6c0b
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 91a2d4b1a1457938af9c65a91254b44245eb7824
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495981"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990355"
 ---
 # <a name="project-model-core-components"></a>项目模型核心组件
 下表展开项目模型。 这些表格显示接口和服务模型的接口和与特定对象关联的服务中标识的简短说明。 此外，在表详细介绍在项目的创建和维护，具体取决于特定项目类型的要求中是可选的其他接口。  
@@ -82,7 +79,7 @@ ms.locfileid: "46495981"
   
  下表列出了项目模型中标识的服务的简短说明。  
   
-### <a name="services"></a>服务  
+### <a name="services"></a>Services  
   
 |服务|注释|  
 |-------------|--------------|  
@@ -104,7 +101,7 @@ ms.locfileid: "46495981"
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [清单： 创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [不在生成： 使用 HierUtil7 项目类来实现一种项目类型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [不在生成中：使用 HierUtil7 项目类来实现一种项目类型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [项目模型的元素](../../extensibility/internals/elements-of-a-project-model.md)

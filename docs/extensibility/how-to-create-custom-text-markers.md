@@ -1,9 +1,6 @@
 ---
-title: 如何： 创建自定义文本标记 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建自定义文本标记 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ac2ad16c0e6a3e0a6c76e15ff6860838fa349c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c8389788504a49bc9a4962c89ed47500a1dc7da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965208"
 ---
-# <a name="how-to-create-custom-text-markers"></a>如何： 创建自定义文本标记
+# <a name="how-to-create-custom-text-markers"></a>如何：创建自定义文本标记
 如果你想要创建自定义文本标记，以强调或组织代码，必须执行以下步骤：  
   
 - 注册新文本标记，以便其他工具可以访问它。  
@@ -29,7 +26,7 @@ ms.locfileid: "49893099"
   
 - 创建一个服务用于其他进程可用于使文本标记的使用。  
   
-  有关如何将文本标记应用到某个区域的代码的详细信息，请参阅[如何： 使用文本标记](../extensibility/how-to-use-text-markers.md)。  
+  有关如何将文本标记应用到某个区域的代码的详细信息，请参阅[如何：使用文本标记](../extensibility/how-to-use-text-markers.md)。  
   
 ## <a name="to-register-a-custom-marker"></a>若要注册自定义标记  
   
@@ -54,7 +51,7 @@ ms.locfileid: "49893099"
   
    -   DisplayName  
   
-   -   Package  
+   -   package  
   
    -   `Default` 是 REG_SZ 类型的可选项。 设置时，该条目的值是包含一些有用的标识信息，例如"自定义文本标记"的字符串。  
   
@@ -92,6 +89,6 @@ ms.locfileid: "49893099"
   
 ## <a name="see-also"></a>请参阅  
  [文本标记中使用传统的 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
- [如何： 实现错误标记](../extensibility/how-to-implement-error-markers.md)   
- [如何： 使用文本标记](../extensibility/how-to-use-text-markers.md)
+ [如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
+ [如何：实现错误标记](../extensibility/how-to-implement-error-markers.md)   
+ [如何：使用文本标记](../extensibility/how-to-use-text-markers.md)

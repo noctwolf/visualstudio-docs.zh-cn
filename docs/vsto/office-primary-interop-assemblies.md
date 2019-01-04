@@ -1,9 +1,6 @@
 ---
 title: Office 主互操作程序集
-ms.custom: ''
 ms.date: 09/20/2018
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b44352996c1f6cf343f8100abb4f75814765c22a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672985"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926725"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主互操作程序集
 
@@ -82,7 +79,7 @@ Visual Studio 将这些 PIA 副本安装在开发计算机的下列位置：
 
 Visual Studio 中的每个 Office 项目模板旨在与单个 Microsoft Office 应用程序配合使用。 若要使用多个 Microsoft Office 应用程序的功能，或者使用 Visual Studio 中没有项目的应用程序或组件的功能，必须添加对所需 PIA 的引用。  
   
-在大多数情况下，应添加对由下的 Visual Studio 安装的 Pia 引用`%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\`目录。 这些版本的程序集显示**Framework**选项卡**引用管理器**对话框。 有关详细信息，请参阅[如何： 通过主互操作程序集的目标 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。  
+在大多数情况下，应添加对由下的 Visual Studio 安装的 Pia 引用`%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\`目录。 这些版本的程序集显示**Framework**选项卡**引用管理器**对话框。 有关更多信息，请参见[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。  
   
 如果你在全局程序集缓存中安装并注册了 PIA，则这些版本的程序集显示在 **“引用管理器”** 对话框的 **“COM”** 选项卡上。 你应当避免添加对这些版本的程序集的引用，因为使用它们时可能会出现某些开发问题。 例如，如果你在全局程序集缓存中注册了 PIA 的不同版本，则项目将自动绑定到你最后一次注册的程序集版本，即使在 **“引用管理器”** 对话框的 **“COM”** 选项卡上指定了其他程序集版本也是如此。  
   
@@ -113,7 +110,7 @@ Visual Studio 中的每个 Office 项目模板旨在与单个 Microsoft Office �
 |Microsoft Publisher 14.0 对象库<br /><br /> Microsoft Publisher 15.0 对象库|Microsoft.Office.Interop.Publisher.dll|  
 |Microsoft SharePoint Designer 14.0 Web 对象引用库|Microsoft.Office.Interop.SharePointDesigner.dll|  
 |Microsoft SharePoint Designer 14.0 Page 对象引用库|Microsoft.Office.Interop.SharePointDesignerPage.dll|  
-|Microsoft 智能标记 2.0 类型库**注意：** 中已弃用智能标记[!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]和[!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。|Microsoft.Office.Interop.SmartTag.dll|  
+|Microsoft Smart Tags 2.0 类型库**注意：** 在 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 和 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]中弃用了智能标记。|Microsoft.Office.Interop.SmartTag.dll|  
 |Microsoft Visio 14.0 类型库<br /><br /> Microsoft Visio 15.0 类型库|Microsoft.Office.Interop.Visio.dll|  
 |Microsoft Visio 14.0 Save As Web 类型库<br /><br /> Microsoft Visio 15.0 Save As Web 类型库|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|  
 |Microsoft Visio 14.0 绘图控件类型库<br /><br /> Microsoft Visio 15.0 绘图控件类型库|Microsoft.Office.Interop.VisOcx.dll|  
@@ -126,11 +123,11 @@ Visual Studio 中的每个 Office 项目模板旨在与单个 Microsoft Office �
 
 例如，当引用 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 程序集的解决方案在装有同一主互操作程序集的 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的计算机上运行时，绑定重定向程序集会指示 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 运行时加载 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的主互操作程序集。 
 
-有关详细信息，请参阅[如何： 启用和禁用自动绑定重定向](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)。  
+有关更多信息，请参见[如何：启用和禁用自动绑定重定向](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)。  
   
 ## <a name="see-also"></a>请参阅  
 
-- [如何： 通过主互操作程序集的目标 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
+- [如何：通过主互操作程序集的目标 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
 - [Excel 对象模型概述](../vsto/excel-object-model-overview.md)   
 - [InfoPath 解决方案](../vsto/infopath-solutions.md)   
 - [Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)   
@@ -139,5 +136,3 @@ Visual Studio 中的每个 Office 项目模板旨在与单个 Microsoft Office �
 - [Visio 对象模型概述](../vsto/visio-object-model-overview.md)   
 - [Word 对象模型概述](../vsto/word-object-model-overview.md)   
 - [常规参考&#40;Visual Studio 中的 Office 开发&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
-  
-  

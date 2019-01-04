@@ -1,9 +1,6 @@
 ---
-title: IDebugCustomViewer |Microsoft 文档
-ms.custom: ''
+title: IDebugCustomViewer |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCustomViewer
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fb70365304883abe99a87cfec5e78bbed89f2dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b32073b54362c7598c3756ebd691823f5bea76bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107535"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946274"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
-此接口允许的表达式计算器 (EE) 以显示属性的值是必需的任何格式。  
+此接口允许的表达式计算器 (EE) 以显示在任何格式是必需的属性的值。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,7 +28,7 @@ ms.locfileid: "31107535"
 IDebugCustomViewer : IUknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
+## <a name="notes-for-implementers"></a>实施者的说明  
  EE 实现此接口可自定义格式显示属性的值。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
@@ -42,26 +39,26 @@ IDebugCustomViewer : IUknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|会任何执行所需显示的给定的值。|  
+|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|会执行任何所需显示给定的值。|  
   
 ## <a name="remarks"></a>备注  
- 当无法通过常规方法显示属性的值时使用此接口 — 例如，对于数据表或另一种复杂属性类型。 自定义查看器所表示的`IDebugCustomViewer`接口，不同于类型可视化工具，这是用于显示特定类型而不考虑 EE 的数据的外部程序。 EE 实现特定于该 EE 的自定义查看器。 用户选择哪种类型的可视化工具使用，为其类型可视化工具或自定义查看器。 请参阅[Visualizing 和查看数据](../../../extensibility/debugger/visualizing-and-viewing-data.md)有关此过程的详细信息。  
+ 无法通过常规方法显示属性的值时使用此接口 — 例如，对于数据表或另一种复杂属性类型。 自定义查看器所表示的`IDebugCustomViewer`接口，不同于类型可视化工具，它是用于显示数据而不考虑 EE 特定类型的一个外部程序。 EE 实现特定于该 EE 的自定义查看器。 用户选择哪种类型的可视化工具使用，比如类型可视化工具或自定义查看器。 请参阅[可视化和查看数据](../../../extensibility/debugger/visualizing-and-viewing-data.md)有关此过程的详细信息。  
   
- 自定义查看器注册 EE 的方式相同，并因此，需要一种语言 GUID 和供应商 GUID。 仅对 EE 是已知的确切度量值 （或注册表项的名称）。 在中返回此指标[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)结构，又通过调用返回[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)。 存储在度量值的值是`CLSID`传递给 COM 的`CoCreateInstance`函数 （请参见示例）。  
+ 自定义查看器已注册 EE 的方式相同，因此，需要一种语言 GUID 和供应商的 GUID。 确切的指标 （或注册表项的名称） 才知道 EE。 此度量值中返回[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)结构，它又通过调用返回[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)。 存储指标中的值是`CLSID`传递给 COM 的`CoCreateInstance`函数 （请参见示例）。  
   
- [SDK 以便进行调试的帮助器](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)函数， `SetEEMetric`，可以用于注册自定义查看器。 请参阅的"表达式计算器"注册表部分`Debugging SDK Helpers`对于特定的注册表键需要自定义查看器。 请注意，自定义查看器将需要只有一个度量值 （这由 EE 的实施者），而表达式计算器需要多个预定义的指标。  
+ [以便进行调试的 SDK 帮助程序](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)函数， `SetEEMetric`，可以用于注册自定义查看器。 请参阅的"表达式计算器"注册表部分`Debugging SDK Helpers`对于特定的注册表键需要自定义查看器。 请注意，自定义查看器将需要只有一个度量值 （这由 EE 的实施者定义），而表达式计算器要求使用多个预定义的指标。  
   
- 通常情况下，自定义查看器提供的数据的只读视图由于[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口提供给[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)没有方法用于更改除字符串形式的属性的值。 为了支持更改任意数据块，EE 实现自定义接口上实现的相同对象`IDebugProperty3`接口。 然后，此自定义接口将提供更改数据的任意块所需的方法。  
+ 通常情况下，自定义查看器提供了只读的视图的数据，因为[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口提供给[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)没有更改除字符串形式的属性的值的方法。 为了支持更改任意数据块，EE 实现自定义接口上实现的相同对象`IDebugProperty3`接口。 此自定义接口然后将提供所需更改数据的任意块的方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>示例  
- 此示例演示如何从属性获取第一个自定义查看器，如果该属性具有任何自定义查看器。  
+ 此示例演示如何从属性获取第一个自定义查看器，该属性是否具有任何自定义查看器。  
   
 ```cpp  
 IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)  
@@ -107,8 +104,8 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
- [SDK 适用于调试的帮助程序](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [用于调试的 SDK 帮助程序](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

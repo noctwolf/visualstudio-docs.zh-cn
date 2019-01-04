@@ -1,12 +1,8 @@
 ---
 title: 可替换参数 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,12 +14,12 @@ author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload: office
-ms.openlocfilehash: 1d1b606d4416da10c329a7421378ea979a2fa4cf
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989158"
 ---
 # <a name="replaceable-parameters"></a>可替换参数
   可替换参数，或*令牌*，可以使用项目文件中为其实际值不在设计时已知的 SharePoint 解决方案项提供值。 它们类似于标准[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]模板标记。 有关详细信息，请参阅[模板参数](../ide/template-parameters.md)。  

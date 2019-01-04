@@ -1,9 +1,6 @@
 ---
 title: VSTO 外接程序的注册表项
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14d35e8d6aa6209f628e38be65c9be5fbc614561
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3436ddcdcb8c521985487738d4045e1e1bbd830a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909107"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 外接程序的注册表项
   部署使用 Visual Studio 创建的 VSTO 外接程序时，必须创建一组特定的注册表项。 这些注册表项可提供一些信息，使 Microsoft Office 应用程序能够发现和加载 VSTO 外接程序。  
@@ -74,12 +71,12 @@ ms.locfileid: "50673011"
   
  下表列出了此注册表项下的条目。  
   
-|条目|类型|“值”|  
+|条目|类型|值|  
 |-----------|----------|-----------|  
-|**说明**|REG_SZ|必须的。 VSTO 外接程序的简短说明。<br /><br /> 当用户在 Microsoft Office 应用程序的 **“选项”** 对话框的 **“外接程序”** 窗格中选择 VSTO 外接程序时，将会显示此说明。|  
-|**FriendlyName**|REG_SZ|必须的。 Microsoft Office 应用程序中的 **“COM 外接程序”** 对话框中显示的 VSTO 外接程序的描述性名称。 默认值为 VSTO 外接程序 ID。|  
-|**LoadBehavior**|REG_DWORD|必须的。 一个值，用于指定应用程序在何时尝试加载 VSTO 外接程序以及 VSTO 外接程序的当前状态（已加载或卸载）。<br /><br /> 默认情况下，此项设置为 3，指定在启动时加载 VSTO 外接程序。 有关详细信息，请参阅[LoadBehavior 值](#LoadBehavior)。 **注意：** 如果用户禁用 VSTO 外接程序，该操作会修改**LoadBehavior**中的值**HKEY_CURRENT_USER**注册表配置单元。 为每个用户的值**LoadBehavior** HKEY_CURRENT_USER 配置单元中的值将重写默认**LoadBehavior**中定义**HKEY_LOCAL_MACHINE** hive。|  
-|**Manifest**|REG_SZ|必须的。 VSTO 外接程序部署清单的完整路径。 该路径可以是本地计算机上的某个位置，也可以是网络共享 (UNC) 或 Web 服务器 (HTTP)。<br /><br /> 如果使用 Windows Installer 部署解决方案，则必须向 **清单** 路径添加前缀 **file:///** 。 你还必须将字符串 **&#124;vstolocal** (即管道字符 **&#124;** 跟**vstolocal**) 到此路径的末尾。 这可确保从安装文件夹，而非 ClickOnce 缓存加载你的解决方案。 有关详细信息，请参阅[使用 Windows Installer 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。 **注意：** Visual Studio 在 VSTO 外接程序中生成的开发计算机上时，会自动追加 **&#124;vstolocal**到此注册表项的字符串。|  
+|**说明**|REG_SZ|必需。 VSTO 外接程序的简短说明。<br /><br /> 当用户在 Microsoft Office 应用程序的 **“选项”** 对话框的 **“外接程序”** 窗格中选择 VSTO 外接程序时，将会显示此说明。|  
+|**FriendlyName**|REG_SZ|必需。 Microsoft Office 应用程序中的 **“COM 外接程序”** 对话框中显示的 VSTO 外接程序的描述性名称。 默认值为 VSTO 外接程序 ID。|  
+|**LoadBehavior**|REG_DWORD|必需。 一个值，用于指定应用程序在何时尝试加载 VSTO 外接程序以及 VSTO 外接程序的当前状态（已加载或卸载）。<br /><br /> 默认情况下，此项设置为 3，指定在启动时加载 VSTO 外接程序。 有关详细信息，请参阅[LoadBehavior 值](#LoadBehavior)。 **注意：** 如果用户禁用 VSTO 外接程序，该操作会修改**LoadBehavior**中的值**HKEY_CURRENT_USER**注册表配置单元。 为每个用户的值**LoadBehavior** HKEY_CURRENT_USER 配置单元中的值将重写默认**LoadBehavior**中定义**HKEY_LOCAL_MACHINE** hive。|  
+|**Manifest**|REG_SZ|必需。 VSTO 外接程序部署清单的完整路径。 该路径可以是本地计算机上的某个位置，也可以是网络共享 (UNC) 或 Web 服务器 (HTTP)。<br /><br /> 如果使用 Windows Installer 部署解决方案，则必须向 **清单** 路径添加前缀 **file:///** 。 你还必须将字符串 **&#124;vstolocal** (即管道字符 **&#124;** 跟**vstolocal**) 到此路径的末尾。 这可确保从安装文件夹，而非 ClickOnce 缓存加载你的解决方案。 有关详细信息，请参阅[使用 Windows Installer 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。 **注意：** Visual Studio 在 VSTO 外接程序中生成的开发计算机上时，会自动追加 **&#124;vstolocal**到此注册表项的字符串。|  
   
 ###  <a name="OutlookEntries"></a> Outlook 窗体区域的注册表项  
  如果在 Outlook 的 VSTO 外接程序中创建自定义窗体区域，则会使用其他注册表项在 Outlook 中注册该窗体区域。 这些项是在针对窗体区域支持的每个邮件类别的不同注册表项下创建的。 这些注册表项位于以下位置，其中*根*是**HKEY_CURRENT_USER**或**HKEY_LOCAL_MACHINE**。  
@@ -112,5 +109,3 @@ ms.locfileid: "50673011"
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [生成 Office 解决方案](../vsto/building-office-solutions.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)  
-  
-  

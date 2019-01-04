@@ -1,9 +1,6 @@
 ---
 title: SccSetOption 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccSetOption
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4da2906ad0881ef93f0bddf171a43f3229c3f0c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b703e220a0eaff175a08c884e309c49982fc795a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813826"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827463"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函数
 此函数设置控制的源代码管理插件行为的选项。  
@@ -48,7 +45,7 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功设置的选项。|  
 |SCC_I_SHARESUBPROJOK|如果`nOption`已`SCC_OPT_SHARESUBPROJ`和源代码管理插件允许 IDE 以将目标文件夹设置。|  

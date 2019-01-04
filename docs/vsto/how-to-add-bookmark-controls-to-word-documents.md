@@ -1,9 +1,6 @@
 ---
 title: 如何：向 Word 文档添加书签控件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Bookmark.Dialog
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e58525d20efe17d24cd916b5e9eff79c7da59d7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 5c89e922f41104be880d598354440a4c6665a39e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904807"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>如何：向 Word 文档添加书签控件
   在文档级项目中，可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>控件添加到你的项目在设计时或在运行时中的文档。 在 VSTO 外接程序项目中，可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>向任何打开的文档在运行时的控件。  
@@ -136,5 +133,3 @@ ms.locfileid: "53647779"
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   
  [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)   
  [如何：调整书签控件的大小](../vsto/how-to-resize-bookmark-controls.md)  
-  
-  

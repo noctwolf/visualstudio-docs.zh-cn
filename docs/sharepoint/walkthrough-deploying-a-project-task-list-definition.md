@@ -1,13 +1,8 @@
 ---
-title: 演练： 部署项目任务列表定义 |Microsoft Docs
-ms.custom: ''
+title: 演练：部署项目任务列表定义 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0e0a0338f14ecdea36c5a5678a42a76ae234bb6d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3df4f161eddc5d10b77887b99d93be2204821c24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280358"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826619"
 ---
-# <a name="walkthrough-deploy-a-project-task-list-definition"></a>演练： 部署项目任务列表定义
+# <a name="walkthrough-deploy-a-project-task-list-definition"></a>演练：部署项目任务列表定义
 
 本演练演示如何使用 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] 创建、自定义、调试和部署 SharePoint 列表以跟踪项目任务。
 
@@ -143,7 +138,7 @@ ms.locfileid: "44280358"
 
 在 Visual Studio 菜单栏上依次选择**构建** > **部署解决方案**。
 
-Visual Studio 回收 IIS 应用程序池，收回解决方案的任何现有版本，复制解决方案包 (*.wsp*) 到 SharePoint，文件，然后激活其功能。 现在可以在 SharePoint 中使用该解决方案。 有关部署配置步骤的详细信息，请参阅[如何： 编辑 SharePoint 部署配置](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)。
+Visual Studio 回收 IIS 应用程序池，收回解决方案的任何现有版本，复制解决方案包 (*.wsp*) 到 SharePoint，文件，然后激活其功能。 现在可以在 SharePoint 中使用该解决方案。 有关部署配置步骤的详细信息，请参阅[如何：编辑 SharePoint 部署配置](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)。
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>若要部署到远程系统的项目任务列表
 
@@ -173,9 +168,9 @@ Visual Studio 回收 IIS 应用程序池，收回解决方案的任何现有版�
 
 您可以了解有关如何自定义和部署 SharePoint 解决方案中的以下主题的详细信息：
 
-- [演练： 为 SharePoint 创建网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
+- [演练：创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)
+- [如何：创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)
 
 - [SharePoint Server 2010 的 Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=217684)
 

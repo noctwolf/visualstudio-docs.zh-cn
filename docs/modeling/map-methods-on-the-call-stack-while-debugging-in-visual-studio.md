@@ -2,7 +2,6 @@
 title: 调试时映射调用堆栈上的方法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -30,12 +29,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4597f1352e02033c55fcdced126e184f854b463
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a238da745821da5c93cf953817305703786df805
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53067393"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889236"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中调试时映射调用堆栈上的方法
 创建代码映射，以便在调试时对调用堆栈进行可视化跟踪。 你可以在图中进行标注以跟踪代码执行的操作，以便专注于查找 Bug。
@@ -50,7 +49,7 @@ ms.locfileid: "53067393"
 
   请参阅：
 
-- [视频： 使用代码图调试器集成 (通道 9) 直观地调试](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [视频：直观地调试与代码图调试器集成 (通道 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 - [映射调用堆栈](#MapStack)
 
@@ -68,9 +67,9 @@ ms.locfileid: "53067393"
 
 ## <a name="MapStack"></a>映射调用堆栈
 
-1.  开始调试。 (键盘： **F5**)
+1.  开始调试。 （键盘：**F5**)
 
-2.  你的应用进入中断模式或你单步执行函数后，请选择**Code Map**。 (键盘： **Ctrl** + **Shift** + **`**)
+2.  你的应用进入中断模式或你单步执行函数后，请选择**Code Map**。 （键盘：**Ctrl** + **Shift** + **`**)
 
      ![选择代码图以开始映射调用堆栈](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -93,7 +92,7 @@ ms.locfileid: "53067393"
 ## <a name="AddRelatedCode"></a>向映射添加相关代码
  现在你已生成图-什么下一步？ 如果您正在使用 C# 或 Visual Basic，添加项，例如字段、 属性和其他方法，来跟踪代码中发生的情况。
 
- 双击某个方法以查看其代码定义，或者使用该方法的快捷菜单。 (键盘： 选择方法在图上按**F12**)
+ 双击某个方法以查看其代码定义，或者使用该方法的快捷菜单。 （键盘：选择方法在图上按**F12**)
 
  ![转到代码图上某方法的代码定义](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -143,7 +142,7 @@ ms.locfileid: "53067393"
 
    更改图不会影响任何方式中的代码。 你可随意在图上重命名、移动或移除任何内容。
 
-- **此消息意味着什么:"关系图可能基于代码的较旧版本"？**
+- **此消息是什么意思："关系图可能基于代码的较旧版本"？**
 
    在你上次更新图后，代码可能已发生更改。 例如，图中的某个调用可能已在代码中不存在了。 请关闭此消息，然后在再次更新图之前，尝试重新生成解决方案。
 

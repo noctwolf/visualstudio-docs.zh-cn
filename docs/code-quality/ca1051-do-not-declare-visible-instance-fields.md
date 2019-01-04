@@ -1,8 +1,7 @@
 ---
-title: CA1051：不要声明可见实例字段
+title: CA1051:不要声明可见实例字段
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1051
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f907b1d8626e8babc88137ed70cf6330386ab92a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b85fe5458dc4395ab7f1e119c3da90b685c96410
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832194"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944465"
 ---
-# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051：不要声明可见实例字段
+# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051:不要声明可见实例字段
 
 |||
 |-|-|
@@ -44,7 +43,7 @@ ms.locfileid: "49832194"
  若要解决此规则的冲突，使字段`private`或`internal`并将其公开使用的外部可见的属性。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。 外部可见字段不提供对属性不可用的任何权益。 此外，不能由保护公共字段[链接要求](/dotnet/framework/misc/link-demands)。 请参阅[CA2112： 受保护的类型不应公开字段](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
+ 不禁止显示此规则发出的警告。 外部可见字段不提供对属性不可用的任何权益。 此外，不能由保护公共字段[链接要求](/dotnet/framework/misc/link-demands)。 请参阅[CA2112:受保护的类型不应公开字段](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
 
 ## <a name="example"></a>示例
  下面的示例演示一种类型 (`BadPublicInstanceFields`) 这违反了此规则。 `GoodPublicInstanceFields` 显示了更正后的代码。
@@ -52,7 +51,7 @@ ms.locfileid: "49832194"
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA2112：受保护的类型不应公开字段](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112:受保护的类型不应公开字段](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
 ## <a name="see-also"></a>请参阅
  [链接需求](/dotnet/framework/misc/link-demands)

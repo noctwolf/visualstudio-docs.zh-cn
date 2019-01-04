@@ -1,9 +1,6 @@
 ---
-title: 如何： 检索 SharePoint 项目服务 |Microsoft Docs
-ms.custom: ''
+title: 如何：检索 SharePoint 项目服务 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f9faa0ca539c3b5381aca4159cc4653543087a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfd18de91848c8aabbdabc91fd37763418bb938a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880593"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891597"
 ---
-# <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何： 检索 SharePoint 项目服务
+# <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何：检索 SharePoint 项目服务
   您可以访问以下类型的解决方案中的 SharePoint 项目服务：  
   
 -   SharePoint 项目系统，如项目扩展、 项目项扩展或项目项类型定义的扩展。 有关这些类型的扩展的详细信息，请参阅[扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)。  
@@ -47,7 +44,7 @@ ms.locfileid: "49880593"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#1)]  
   
-     有关创建项目扩展的详细信息，请参阅[如何： 创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
+     有关创建项目扩展的详细信息，请参阅[如何：创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
   
 #### <a name="to-retrieve-the-service-in-a-project-item-extension"></a>若要检索项目项扩展中的服务  
   
@@ -60,7 +57,7 @@ ms.locfileid: "49880593"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#2)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#2)]  
   
-     有关创建项目项扩展的详细信息，请参阅[如何： 创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
+     有关创建项目项扩展的详细信息，请参阅[如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
   
 #### <a name="to-retrieve-the-service-in-a-project-item-type-definition"></a>若要检索的项目项类型定义中的服务  
   
@@ -73,7 +70,7 @@ ms.locfileid: "49880593"
      [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#3)]
      [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#3)]  
   
-     有关定义项目项类型的详细信息，请参阅[如何： 定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
+     有关定义项目项类型的详细信息，请参阅[如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
   
 ## <a name="retrieve-the-service-in-server-explorer-extensions"></a>检索在服务器资源管理器扩展服务  
  中的扩展**SharePoint 连接**中的节点**服务器资源管理器**，可以使用访问项目服务<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A>属性<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode>对象。  
@@ -89,14 +86,14 @@ ms.locfileid: "49880593"
      [!code-vb[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb#1)]
      [!code-csharp[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs#1)]  
   
-     有关扩展的详细信息**SharePoint 连接**中的节点**服务器资源管理器**，请参阅[如何： 扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。  
+     有关扩展的详细信息**SharePoint 连接**中的节点**服务器资源管理器**，请参阅[如何：扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。  
   
 ## <a name="retrieve-the-service-in-other-visual-studio-extensions"></a>检索其他 Visual Studio 扩展中的服务  
  您可以检索项目服务在 VSPackage，还是在有权访问任何 Visual Studio 扩展<xref:EnvDTE80.DTE2>自动化对象模型，如实现项目模板向导中的对象<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口。  
   
  在 VSPackage 中，可以请求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>对象通过使用以下方法之一：  
   
-- <xref:System.IServiceProvider.GetService%2A>方法的派生的托管 VSPackage<xref:Microsoft.VisualStudio.Shell.Package>类。 有关详细信息，请参阅[如何： 获取服务](../extensibility/how-to-get-a-service.md)。  
+- <xref:System.IServiceProvider.GetService%2A>方法的派生的托管 VSPackage<xref:Microsoft.VisualStudio.Shell.Package>类。 有关更多信息，请参见[如何：获取服务](../extensibility/how-to-get-a-service.md)。  
   
 - 静态<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。 有关详细信息，请参阅[使用 GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice)。  
   
@@ -104,6 +101,5 @@ ms.locfileid: "49880593"
   
 ## <a name="see-also"></a>请参阅
  [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)   
- [如何： 获取服务](../extensibility/how-to-get-a-service.md)   
- [如何： 使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  
+ [如何：获取服务](../extensibility/how-to-get-a-service.md)   
+ [如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)  

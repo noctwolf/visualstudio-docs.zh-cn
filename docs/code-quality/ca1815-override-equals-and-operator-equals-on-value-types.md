@@ -1,8 +1,7 @@
 ---
-title: CA1815：重写值类型上的 Equals 和相等运算符
+title: CA1815:重写值类型上的 Equals 和相等运算符
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1815
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef3630e692118bad20441cecceedcb7866a10f2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d8fc26bca5ecce3b5459890e96e429ef10f3b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904044"
 ---
-# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815：重写值类型上的 Equals 和相等运算符
+# <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815:重写值类型上的 Equals 和相等运算符
 
 |||
 |-|-|
@@ -61,11 +60,11 @@ ms.locfileid: "49948676"
  [!code-csharp[FxCop.Performance.OverrideEqualsFixed#1](../code-quality/codesnippet/CSharp/ca1815-override-equals-and-operator-equals-on-value-types_2.cs)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA2224：重载相等运算符时重写 Equals 方法](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+ [CA2224:重写 equals 方法重载相等运算符](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
 
  [CA2231：重写 ValueType.Equals 时应重载相等运算符](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
- [CA2226：运算符应有对称重载](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226:运算符应有对称重载](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
 ## <a name="see-also"></a>请参阅
  <xref:System.Object.Equals%2A?displayProperty=fullName>

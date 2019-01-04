@@ -1,9 +1,6 @@
 ---
-title: 用于扩展项目系统 IDE 定义命令 |Microsoft 文档
-ms.custom: ''
+title: IDE 定义的命令，用于扩展项目系统 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, project systems
@@ -14,20 +11,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4941f5d842f311f078594ee9a9deef02219ea05d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0e3dc6a30dedebd8a5bc25c53e86aff4d3315ff8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132010"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990865"
 ---
-# <a name="ide-defined-commands-for-extending-project-systems"></a>用于扩展项目系统 IDE 定义命令
-如果你想要扩展项目系统，可以使用命令和命令提供的组[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。  
+# <a name="ide-defined-commands-for-extending-project-systems"></a>用于扩展项目系统的 IDE 定义的命令
+当你想要扩展项目系统时，可以使用命令和命令组提供的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。  
   
- 下列部分列出用于扩展项目系统尤其有用的命令项目。  
+ 以下部分列出用于扩展项目系统特别有用的命令项。  
   
 ## <a name="command-menus"></a>命令菜单  
- 下表显示的是你可以放置调用项目扩展程序的高级命令有用位置的命令菜单。  
+ 下表显示了是有用的位置，为你要放入调用项目扩展程序的高级命令的命令菜单。  
   
 |命令菜单|描述|  
 |------------------|-----------------|  
@@ -35,44 +32,44 @@ ms.locfileid: "31132010"
 |IDM_VS_TOOL_PROJWIN|**解决方案资源管理器**工具栏。|  
   
 ## <a name="shortcut-menus"></a>快捷菜单  
- 下表显示中选择单个节点时应用的快捷菜单**解决方案资源管理器**，或在多个同构选择时**解决方案资源管理器**，即时所选的所有节点都均为相同的类型。  
+ 下表显示了应用中选择单个节点时的快捷菜单**解决方案资源管理器**，或在多个同构选择时**解决方案资源管理器**，即当所有所选的节点都属于同一类型。  
   
 |快捷菜单|描述|  
 |-------------------|-----------------|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|在选择项目节点时适用。|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|在选定一个文件时适用。|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_FOLDERNODE>|在选择文件夹时适用。|  
-|IDM_VS_CTXT_WEBREFFOLDER|在选择 Web 引用文件夹时适用。|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCEROOT>|在选择引用根节点称为"引用"时适用。|  
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCE>|将应用时引用节点处于选中状态;其中包括程序集、 COM 和项目的引用。 不包括 Web 引用。|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|适用时选择的项目节点。|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|适用时选择一个文件。|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_FOLDERNODE>|选择文件夹时适用。|  
+|IDM_VS_CTXT_WEBREFFOLDER|适用时选择的 Web 引用文件夹。|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCEROOT>|适用时选择名为"引用"的引用根节点。|  
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCE>|适用时引用节点处于选中状态;其中包括程序集、 COM 和项目的引用。 不包括 Web 引用。|  
   
- 下表显示时应用的快捷菜单中的选定**解决方案资源管理器**跨越多个层次结构  
+ 下表显示了时应用的快捷菜单中的选定**解决方案资源管理器**跨越多个层次结构  
   
 |快捷菜单|描述|  
 |-------------------|-----------------|  
-|IDM_VS_CTXT_XPROJ_SLNPROJ|在当前所选内容包含的解决方案节点和根项目节点时适用。|  
-|IDM_VS_CTXT_XPROJ_SLNITEM|在当前所选内容包含解决方案节点和项目项时适用。|  
-|IDM_VS_CTXT_XPROJ_MULTIPROJ|在当前所选内容包含仅多个根项目节点时适用。|  
-|IDM_VS_CTXT_XPROJ_PROJITEM|在当前所选内容包含多种根项目节点和项目项时适用。 此外，所选内容可能包含解决方案节点。|  
-|IDM_VS_CTXT_XPROJ_MULTIITEM|适用时当前所选内容包含从解决方案中、 多个项目的项目项或同一项目中选择的不同类型的项目时。|  
+|IDM_VS_CTXT_XPROJ_SLNPROJ|适用于当前选定内容中包含的解决方案节点和根项目节点。|  
+|IDM_VS_CTXT_XPROJ_SLNITEM|适用于当前选定内容中包含的解决方案节点和项目项。|  
+|IDM_VS_CTXT_XPROJ_MULTIPROJ|适用于当前所选内容包含仅多个根项目节点。|  
+|IDM_VS_CTXT_XPROJ_PROJITEM|适用于当前所选内容包含多个根项目节点和项目项。 此外，所选内容可能包含解决方案节点。|  
+|IDM_VS_CTXT_XPROJ_MULTIITEM|适用时当前所选内容包含多个项目在解决方案中，从项目项或同一项目中选择的不同类型的项。|  
   
 ## <a name="command-groups"></a>命令组  
- 下表显示你扩展项目中，并且可以通过访问时，可以使用的命令组<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>快捷菜单。  
+ 下表显示了可用来在扩展项目，并可以通过访问的命令组<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>快捷菜单。  
   
 |命令组|描述|  
 |-------------------|-----------------|  
-|IDG_VS_CTXT_PROJECT_BUILD|用于构建、 重新生成和部署项目的命令。|  
+|IDG_VS_CTXT_PROJECT_BUILD|用于生成、 重新生成和部署项目的命令。|  
 |IDG_VS_CTXT_COMPILELINK|用于编译和链接项目的命令。|  
 |IDG_VS_CTXT_PROJECT_CONFIG|将项目配置设置和生成顺序的命令。|  
-|IDG_VS_CTXT_PROJECT_ADD|向项目添加项的命令。|  
-|IDG_VS_CTXT_PROJECT_START|设置启动项目与 F5 的键关联的命令。|  
+|IDG_VS_CTXT_PROJECT_ADD|将项添加到项目的命令。|  
+|IDG_VS_CTXT_PROJECT_START|设置启动项目与 F5 键相关联的命令。|  
 |IDG_VS_CTXT_PROJECT_SAVE|用于保存项目项的命令。|  
 |IDG_VS_CTXT_PROJECT_DEBUG|用于调试的命令。|  
-|IDG_VS_CTXT_PROJECT_SCC|用于源代码管理命令。|  
+|IDG_VS_CTXT_PROJECT_SCC|源代码管理命令。|  
 |IDG_VS_CTXT_PROJECT_TRANSFER|命令进行剪切、 复制和粘贴操作。|  
-|IDG_VS_CTXT_PROJECT_PROPERTIES|提供对访问权限的命令**项目属性**对话框。|  
+|IDG_VS_CTXT_PROJECT_PROPERTIES|提供访问权限的命令**项目属性**对话框。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [MenuCommands 与OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [创建可重复使用的按钮组](../../extensibility/creating-reusable-groups-of-buttons.md)

@@ -1,9 +1,6 @@
 ---
 title: 如何：安装 Office 主互操作程序集
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bca78cc9387756c1abd4e6c11d3a549777c3f452
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 2a37c93cfe1d0bb03a022e69e2be31f354017c2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648582"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914642"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>如何：安装 Office 主互操作程序集
   当你安装 Office 时，安装 Microsoft Office 主互操作程序集 (PIA)。  
@@ -42,5 +39,3 @@ ms.locfileid: "53648582"
  [如何：安装 Visual Studio Tools for Office runtime 可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
  [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-  
-  

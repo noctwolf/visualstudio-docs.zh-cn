@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式复制数据和格式设置在工作表之间
-ms.custom: ''
+title: 如何：以编程方式复制数据和格式设置在工作表之间
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a4cce083bee8b57ff37276ae909799a9a6791d7
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 9995b347fdfcb60acf72c79b0e1bddc20bab717b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924860"
 ---
-# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>如何： 以编程方式复制数据和格式设置在工作表之间
+# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>如何：以编程方式复制数据和格式设置在工作表之间
   您可以将数据复制从上一个工作表范围到工作簿中的所有其他表使用<xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A>方法。 指定的范围，以及是否要将复制数据、 格式设置，或两者。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -39,8 +36,6 @@ ms.locfileid: "35256677"
   
 ## <a name="see-also"></a>请参阅  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以编程方式将新工作表添加到工作簿](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
- [如何： 以编程方式更改中包含选定单元格的工作表行的格式设置](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)   
+ [如何：以编程方式将新工作表添加到工作簿](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [如何：以编程方式更改中包含选定单元格的工作表行的格式设置](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

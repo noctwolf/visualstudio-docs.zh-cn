@@ -1,9 +1,6 @@
 ---
-title: IDebugPointerObject3 |Microsoft 文档
-ms.custom: ''
+title: IDebugPointerObject3 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPointerObject3 interface
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fe58df189ebfbc8519d45fab1011b691f50d2cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 53ade07e2a252260cf687c9bce361f692d5ed741
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115640"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889392"
 ---
 # <a name="idebugpointerobject3"></a>IDebugPointerObject3
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，已弃用这种方式实施表达式计算器。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 表示在分析树中，指向并扩展**IDebugPointerObject**接口。  
+ 表示在分析树中，指针并扩展**IDebugPointerObject**接口。  
   
 ## <a name="syntax"></a>语法  
   
@@ -32,7 +29,7 @@ ms.locfileid: "31115640"
 IDebugPointerObject3 : IDebugPointerObject  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
+## <a name="notes-for-implementers"></a>实施者的说明  
  表达式计算器 (EE) 实现此接口。  
   
 ## <a name="methods"></a>方法  
@@ -40,11 +37,11 @@ IDebugPointerObject3 : IDebugPointerObject
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetPointerAddress](../../../extensibility/debugger/reference/idebugpointerobject3-getpointeraddress.md)|检索的地址的指针。|  
+|[GetPointerAddress](../../../extensibility/debugger/reference/idebugpointerobject3-getpointeraddress.md)|检索指针的地址。|  
   
 ## <a name="requirements"></a>要求  
- 标头： Ee.h  
+ 标头：Ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll

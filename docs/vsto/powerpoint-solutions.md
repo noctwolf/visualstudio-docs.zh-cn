@@ -1,9 +1,6 @@
 ---
 title: PowerPoint 解决方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0f264cd7382ea16a7c4cfa5896241f4359b0cd67
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906041"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 解决方案
   Visual Studio 提供可用于创建 Microsoft Office PowerPoint 的 VSTO 外接程序的项目模板。 可使用 VSTO 外接程序自动化 PowerPoint、扩展 PowerPoint 功能或自定义 PowerPoint 用户界面 (UI)。  
@@ -37,7 +34,7 @@ ms.locfileid: "49906554"
 > [!NOTE]  
 >  开发扩展的 Office 体验跨解决方案是否有兴趣[多个平台](https://dev.office.com/add-in-availability)？ 查看全新[Office 外接程序模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 外接程序具有较小的需求量与 VSTO 外接程序和解决方案，相比，您可以使用几乎任何 web 编程技术，HTML5、 JavaScript、 CSS3 和 XML 等来生成。  
   
- ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何： 创建外接程序为 Microsoft PowerPoint？](http://go.microsoft.com/fwlink/?LinkId=132767)。  
+ ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：为 Microsoft PowerPoint 创建外接程序？](http://go.microsoft.com/fwlink/?LinkId=132767).  
   
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>使用 PowerPoint 对象模型自动化 PowerPoint  
  PowerPoint 对象模型公开了许多你能用于自动化 PowerPoint 的模型。 这些类型使你能够编写代码来完成常规任务：  
@@ -56,7 +53,7 @@ ms.locfileid: "49906554"
  有关 PowerPoint 对象模型的完整信息，可以参考 PowerPoint 主互操作程序集 (PIA) 引用和 VBA 对象模型引用。  
   
 ### <a name="primary-interop-assembly-reference"></a>主互操作程序集引用  
- PowerPoint PIA 参考文档描述了 PowerPoint 的主互操作程序集中的类型。 本文档可从以下位置： [PowerPoint 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189588)。  
+ PowerPoint PIA 参考文档描述了 PowerPoint 的主互操作程序集中的类型。 本文档可从以下位置：[PowerPoint 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189588)。  
   
  有关设计 PowerPoint pia，例如在 PIA 和如何实现 PIA 中的事件中类和接口之间的差别的详细信息请参阅[中 Office 主互操作程序集类和接口概述](http://go.microsoft.com/fwlink/?LinkId=199885).  
   
@@ -72,20 +69,18 @@ ms.locfileid: "49906554"
 |----------|--------------------------|  
 |创建自定义任务窗格。|[自定义任务窗格](../vsto/custom-task-panes.md)|  
 |向功能区添加自定义选项卡。|[功能区概述](../vsto/ribbon-overview.md)|  
-|向功能区上的内置选项卡添加自定义组。|[如何： 自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)|  
+|向功能区上的内置选项卡添加自定义组。|[如何：自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)|  
   
  有关自定义 PowerPoint 的 UI 和其他 Microsoft Office 应用程序的详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 为 PowerPoint 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
+ [演练：为 PowerPoint 中创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
  [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   
  [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)   
  [Office UI 自定义](../vsto/office-ui-customization.md)   
  [PowerPoint 2010 中的 Office 开发](http://go.microsoft.com/fwlink/?LinkId=199015)  
-  
-  

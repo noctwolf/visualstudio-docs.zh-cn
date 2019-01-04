@@ -1,9 +1,6 @@
 ---
-title: 表达式评估接口 |Microsoft 文档
-ms.custom: ''
+title: 表达式计算接口 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, interfaces
@@ -13,23 +10,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9582f965fe1d8a00c97548dbc5f458ae4e1198
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf5367d12593ae9789ff0529c76cc0494a6f99ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107395"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932267"
 ---
-# <a name="expression-evaluation-interfaces"></a>表达式评估接口
+# <a name="expression-evaluation-interfaces"></a>表达式计算接口
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，已弃用这种方式实施表达式计算器。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 以下是表达式评估接口[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]Debugging SDK。  
+ 以下是为表达式计算接口[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]调试 SDK。  
   
 ## <a name="discussion"></a>讨论  
- 这些接口用于评估在中断模式下的调用堆栈中的表达式。 它们仅对公共语言运行时表达式计算器 (EE) 被实现。  
+ 这些接口用于在中断模式下调用堆栈中的表达式进行计算。 它们仅为公共语言运行时表达式计算器 (EE) 实现。  
   
- 表中的每个接口显示可以从以下列表中实现它的组件：  
+ 表中的每个接口显示组件，可以实现它从以下列表：  
   
 -   调试引擎 (DE)  
   
@@ -40,29 +37,29 @@ ms.locfileid: "31107395"
 |接口|由实现|描述|  
 |---------------|--------------------|-----------------|  
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|表示变量的数值别名。|  
-|[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|表示的数字别名的变量，并可将表达式计算器 (EE) 以获取该别名的应用程序域。|  
+|[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|表示的数值别名的变量，并可将表达式计算器 (EE) 来获取该别名的应用程序域。|  
 |[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)|EE|表示一个数组对象。|  
 |[IDebugArrayObject2](../../../extensibility/debugger/reference/idebugarrayobject2.md)|EE|表示一个托管的数组对象，并允许的表达式计算器 (EE) 来确定数组的基索引 （下限）。|  
-|[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)|DE|表示绑定调试到内存中的实际地址的符号联编程序。|  
-|[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)|DE|与相同[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)接口但提供对类型、 别名和自定义可视化工具的访问权限。|  
+|[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)|DE|表示绑定调试符号在内存中的实际地址的联编程序。|  
+|[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)|DE|与相同[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)接口但提供对类型、 别名和自定义可视化工具的访问。|  
 |[IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)|EE|表示表达式计算器。|  
 |[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)|EE|表示的表达式计算器 (EE) 的增强的版本。|  
 |[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)|EE|增强型的分析器目录树表示的表达式计算器 (EE)。|  
 |[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)|EE|表示一个函数。|  
 |[IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)|EE|表示一个函数，并增强[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)接口。|  
-|[IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)|DE|使表达式计算器 (EE) 在调试器的输出窗口中显示一条消息。|  
-|[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)|EE|表示托管的代码的对象。|  
+|[IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)|DE|启用要在调试器的输出窗口中显示一条消息的表达式计算器 (EE)。|  
+|[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)|EE|表示托管的代码对象。|  
 |[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)|EE|表示任何符号的基接口绑定到的内存地址。|  
-|[IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)|EE|与相同[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口但提供的其他信息的访问。|  
-|[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)|EE|分析的表达式准备要进行求值表示。|  
+|[IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)|EE|与相同[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口但提供的附加信息的访问。|  
+|[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)|EE|表示可供计算的已分析的表达式。|  
 |[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)|EE|表示的指针。|  
-|[IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)|EE|表示在分析树中，指向并扩展**IDebugPointerObject**接口。|  
-|[IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)|EE|提供的功能，以修改通过类型可视化工具的类型的值。|  
+|[IDebugPointerObject3](../../../extensibility/debugger/reference/idebugpointerobject3.md)|EE|表示在分析树中，指针并扩展**IDebugPointerObject**接口。|  
+|[IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)|EE|提供的功能来修改通过类型可视化工具的类型的值。|  
 |[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)|VS|提供对自定义查看器和类型可视化工具的访问。|  
-|[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|VS|提供的功能创建[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)对象。|  
-|[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|表示一套[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)对象。|  
+|[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)|VS|提供的功能来创建[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)对象。|  
+|[IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)|EE|表示一系列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)对象。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [编写 CLR 表达式计算器](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

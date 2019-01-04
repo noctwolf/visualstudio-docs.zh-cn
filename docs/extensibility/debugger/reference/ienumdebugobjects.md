@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugObjects |Microsoft 文档
-ms.custom: ''
+title: IEnumDebugObjects |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugObjects
@@ -15,16 +12,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99c6c7a98074753e9ee7e1364adb35e1cdba9700
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b76b63aee413b830a468f064647798a13f3d7f99
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895176"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，已弃用这种方式实施表达式计算器。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  此接口表示的对象实现的集合[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口。  
   
@@ -34,8 +31,8 @@ ms.locfileid: "31124048"
 IEnumDebugObjects : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 表达式计算器实现此接口可提供实现的对象集的[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口。 请注意这不是由于存在标准 COM 枚举[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)方法。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 表达式计算器实现此接口可提供的实现的对象集[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口。 请注意，这不是由于存在一个标准 COM 枚举[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)方法。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)返回此接口。  
@@ -45,22 +42,22 @@ IEnumDebugObjects : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一篇](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|检索下一组[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)枚举中的对象。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|跳过指定的数目的条目。|  
-|[重置](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|将枚举重置为第一个条目。|  
-|[克隆](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|检索当前枚举的副本。|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)|检索在枚举中的项数。|  
+|[下一页](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|检索下一套[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)枚举中的对象。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|将跳过指定的数目的条目。|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|将枚举重置为第一个条目。|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|检索当前枚举的副本。|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)|检索枚举中的条目数。|  
   
 ## <a name="remarks"></a>备注  
- 此接口允许对一组在数组中的对象进行枚举的调试引擎。  
+ 此接口允许对一的数组中的对象进行枚举的调试引擎。  
   
 ## <a name="requirements"></a>要求  
  标头： ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)

@@ -1,9 +1,8 @@
 ---
-title: 工作流设计器-如何： 向工作流中添加注释
+title: 工作流设计器-如何：将注释添加到工作流
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
 - Annotation
@@ -13,14 +12,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 43b17390f077238a6874784f186eb8add3819f6d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f440102f1a155f179273f145adc58be54c275e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882784"
 ---
-# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>如何：在工作流设计器中给工作流添加备注
+# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>如何：在工作流设计器中向工作流添加注释
 
 为方便创建更大、 更复杂的工作流，.NET Framework 4.5，开发人员可将批注添加到以下类型的设计器中的项：
 

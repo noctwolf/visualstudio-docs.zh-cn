@@ -1,9 +1,7 @@
 ---
 title: ProjectItem 元素 （Visual Studio 项模板） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
@@ -16,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a27c297dd9b33bbbe02b7addb827323505a7156d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855984"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956057"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 元素 （Visual Studio 项模板）
 指定在项模板中包含的文件。  
@@ -82,7 +80,7 @@ ms.locfileid: "49855984"
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- 通过此模板创建项目后，文件名称基于用户输入中的名称**添加新项**对话框。 创建多文件项模板时，这是非常有用。 有关详细信息，请参阅[如何： 创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)并[模板参数](../ide/template-parameters.md)。  
+ 通过此模板创建项目后，文件名称基于用户输入中的名称**添加新项**对话框。 创建多文件项模板时，这是非常有用。 有关更多信息，请参见[如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)并[模板参数](../ide/template-parameters.md)。  
   
 ## <a name="example"></a>示例  
  下面的示例演示为标准项模板的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]类。  
@@ -106,5 +104,5 @@ ms.locfileid: "49855984"
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [如何： 创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)   
+ [如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)   
  [模板参数](../ide/template-parameters.md)

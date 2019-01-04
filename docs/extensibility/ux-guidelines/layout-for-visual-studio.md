@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 的布局 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638cfc29ed2aa05a8576a2244b81f0625453076d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e82ed0f65a8546cc16decce84c3cca01237694d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898747"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio 的布局
 Visual Studio 对话框大部分[实用程序对话框布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)，这是 unthemed 对话框该遵循标准[Windows Desktop 对话框布局原则](/windows/desktop/uxguide/win-dialog-box)。 在 Visual Studio 移动以刷新其 UI 时，一些更加醒目的对话框具有建立它们为产品定义体验的新设计。 这些[主题对话框布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)具有主题化的外观。  
@@ -38,11 +35,11 @@ Visual Studio 对话框大部分[实用程序对话框布局](../../extensibilit
   
  ![控件上方标签的对话框间距](../../extensibility/ux-guidelines/media/0801-a_utilityspacingabove.png "0801 a_UtilitySpacingAbove")  
   
- **图 a: 08.01 间距实用程序对话框与控件上方标签的指导的原则**  
+ **图 a: 08.01实用工具使用控件上方标签的对话框间距准则**  
   
  ![控件左侧标签的对话框间距](../../extensibility/ux-guidelines/media/0801-b_utilityspacingleft.png "0801 b_UtilitySpacingLeft")  
   
- **图 b: 08.01 间距实用程序对话框与控件左侧标签的指导的原则**  
+ **图 b: 08.01实用程序与控件左侧标签的对话框间距准则**  
   
 ### <a name="layout-details"></a>布局的详细信息  
   
@@ -68,7 +65,7 @@ Visual Studio 对话框大部分[实用程序对话框布局](../../extensibilit
   
   ![基本按钮对齐](../../extensibility/ux-guidelines/media/0801-c_buttonalign.png "0801 c_ButtonAlign")  
   
-  **图 c: 08.01 基本按钮对齐方式**  
+  **图 08.01 c:基本按钮对齐方式**  
   
 #### <a name="labels"></a>标签  
   
@@ -85,14 +82,14 @@ Visual Studio 对话框大部分[实用程序对话框布局](../../extensibilit
   
  ![建议的控件之间的距离](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801 d_ControlDistance")  
   
- **控件之间的距离的图 d: 08.01 建议**  
+ **图 08.01-d:控件之间的距离的建议**  
   
 #### <a name="control-indentation"></a>控制缩进  
  当控件被嵌套时，对齐水平方向，使用控件更高版本，通常是标签的左边缘的内部控件。  
   
  ![嵌套的控件对齐效果](../../extensibility/ux-guidelines/media/0801-e_controlalign.png "0801 e_ControlAlign")  
   
- **图 e: 08.01 嵌套控件的对齐方式**  
+ **图 08.01 e:嵌套的控件对齐方式**  
   
 #### <a name="control-width"></a>控件宽度  
  应不超过该字段的平均输入文本框或其他类似控件的宽度。 平均英语单词是五个字符。 例如，需要一个长路径名称的文本框中应是，只要允许水平布局，而下拉列表中的平台名称只应允许最长的项的长度。  
@@ -114,11 +111,11 @@ Visual Studio 对话框大部分[实用程序对话框布局](../../extensibilit
   
   ![水平确定和取消按钮](../../extensibility/ux-guidelines/media/0801-f_horizokcan.png "0801 f_HorizOKCan")  
   
-  **图 f: 08.01 垂直内部水平确定 / 取消按钮**  
+  **图 f: 08.01垂直内部水平确定 / 取消按钮**  
   
   ![垂直确定和取消按钮](../../extensibility/ux-guidelines/media/0801-g_vertokcan.png "0801 g_VertOKCan")  
   
-  **图 g: 08.01 水平内部按钮使用垂直确定 / 取消**  
+  **图 g: 08.01水平内部垂直确定 / 取消按钮**  
   
 #### <a name="browse-button"></a>[浏览...]按钮  
  **[浏览...]** 遵循文本框中的按钮应拼写成"浏览..."完整，包括省略号。 如果空间紧密或有多个 **[浏览...]** 屏幕按钮上的按钮可以减少到只需省略号。  
@@ -143,19 +140,19 @@ Visual Studio 对话框大部分[实用程序对话框布局](../../extensibilit
 ### <a name="themed-dialog-layout-examples"></a>主题对话框布局示例  
  ![主题对话框布局](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")  
   
- **图 h: 08.01 主题对话框**  
+ **图 08.01-h:主题对话框**  
   
  ![主题对话框尺寸](../../extensibility/ux-guidelines/media/0801-i_themeddialogdimensions.png "0801 i_ThemedDialogDimensions")  
   
- **图 i: 08.01 主题对话框尺寸**  
+ **图 08.01 实现：主题对话框的维度**  
   
  ![主题对话框字体](../../extensibility/ux-guidelines/media/0801-j_themeddialogfonts.png "0801 j_ThemedDialogFonts")  
   
- **图 j: 08.01 主题对话框字体**  
+ **图 j: 08.01主题对话框的字体**  
   
  ![主题对话框颜色](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801 k_ThemedDialogColors")  
   
- **图 08.01-k： 主题对话框颜色**  
+ **图 08.01-k:主题对话框的颜色**  
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 的应用程序模式](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   

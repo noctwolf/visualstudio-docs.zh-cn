@@ -1,9 +1,6 @@
 ---
 title: Outlook 对象模型概述
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.OutlookAddin
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03bff7f4cd089a635aa2e9eae2391ea0816a1625
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945348"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 对象模型概述
   若要开发 Microsoft Office Outlook 的 VSTO 外接程序，可以与 Outlook 对象模型提供的对象进行交互。 Outlook 对象模型提供表示用户界面中的项的类和接口。 例如，<xref:Microsoft.Office.Interop.Outlook.Application> 对象表示整个应用程序，<xref:Microsoft.Office.Interop.Outlook.Folder> 对象表示包含电子邮件或其他项的文件夹，<xref:Microsoft.Office.Interop.Outlook.MailItem> 对象表示电子邮件。  
@@ -35,7 +32,7 @@ ms.locfileid: "49941186"
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何： 使用 Outlook 创建自定义任务报表？](http://go.microsoft.com/fwlink/?LinkID=130315)。  
+ ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：使用 Outlook 创建自定义任务报表？](http://go.microsoft.com/fwlink/?LinkID=130315).  
   
 ## <a name="access-objects-in-an-outlook-project"></a>访问 Outlook 项目中的对象  
  Outlook 提供了许多可与之交互的对象。 若要有效地使用对象模型，你应熟悉以下顶级对象：  
@@ -99,17 +96,17 @@ ms.locfileid: "49941186"
   
  对应于 Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox**收件箱**在 Outlook 中的文件夹。  
   
- 有关示例，演示如何访问默认<xref:Microsoft.Office.Interop.Outlook.Folder>并创建一个新<xref:Microsoft.Office.Interop.Outlook.Folder>，请参阅[如何： 以编程方式创建自定义文件夹项](../vsto/how-to-programmatically-create-custom-folder-items.md)。  
+ 有关示例，演示如何访问默认<xref:Microsoft.Office.Interop.Outlook.Folder>并创建一个新<xref:Microsoft.Office.Interop.Outlook.Folder>，请参阅[如何：以编程方式创建自定义文件夹项](../vsto/how-to-programmatically-create-custom-folder-items.md)。  
   
 ### <a name="mailitem-object"></a>MailItem 对象  
  <xref:Microsoft.Office.Interop.Outlook.MailItem> 对象表示一封电子邮件。 <xref:Microsoft.Office.Interop.Outlook.MailItem> 对象通常在文件夹中，如 **“收件箱”**、 **“已发送的项目”** 和 **“发件箱”**。 <xref:Microsoft.Office.Interop.Outlook.MailItem> 公开可用于创建和发送电子邮件的属性和方法。  
   
- 有关演示如何创建一封电子邮件的示例，请参阅[如何： 以编程方式创建电子邮件发送项](../vsto/how-to-programmatically-create-an-e-mail-item.md)。  
+ 有关演示如何创建一封电子邮件的示例，请参阅[如何：以编程方式创建电子邮件发送项](../vsto/how-to-programmatically-create-an-e-mail-item.md)。  
   
 ### <a name="appointmentitem-object"></a>AppointmentItem 对象  
  <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 对象表示会议、一次约会，或 **“日历”** 文件夹中的定期约会或会议。 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 对象包含执行操作（如响应或转发会议请求）的方法和指定会议详细信息（如位置和时间）的属性。  
   
- 有关演示如何创建约会的示例，请参阅[如何： 以编程方式创建会议请求](../vsto/how-to-programmatically-create-a-meeting-request.md)。  
+ 有关演示如何创建约会的示例，请参阅[如何：以编程方式创建会议请求](../vsto/how-to-programmatically-create-a-meeting-request.md)。  
   
 ### <a name="taskitem-object"></a>TaskItem 对象  
  <xref:Microsoft.Office.Interop.Outlook.TaskItem> 对象表示要在指定时间范围内执行的任务。 <xref:Microsoft.Office.Interop.Outlook.TaskItem> 对象位于 **“任务”** 文件夹中。  
@@ -119,7 +116,7 @@ ms.locfileid: "49941186"
 ### <a name="contactitem-object"></a>ContactItem 对象  
  <xref:Microsoft.Office.Interop.Outlook.ContactItem>对象表示的联系人的**联系人**文件夹。 <xref:Microsoft.Office.Interop.Outlook.ContactItem> 对象包含它们表示的人员的各种联系信息，如街道地址、电子邮件地址和电话号码。  
   
- 有关演示如何创建新的联系人的示例，请参阅[如何： 以编程方式将条目添加到 Outlook 联系人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)。 有关演示如何搜索现有联系人的示例，请参阅[如何： 以编程方式搜索特定联系人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)。  
+ 有关演示如何创建新的联系人的示例，请参阅[如何：以编程方式将条目添加到 Outlook 联系人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)。 有关演示如何搜索现有联系人的示例，请参阅[如何：以编程方式搜索特定联系人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)。  
   
 ##  <a name="refdoc"></a> 使用 Outlook 对象模型文档  
  有关 Outlook 对象模型的完整信息，可以参考 Outlook 主互操作程序集 (PIA) 引用和 VBA 对象模型引用。  
@@ -142,5 +139,4 @@ ms.locfileid: "49941186"
 |[使用邮件项](../vsto/working-with-mail-items.md)|提供了演示如何使用邮件项执行任务的主题。|  
 |[使用文件夹](../vsto/working-with-folders.md)|提供了演示如何使用文件夹执行任务的主题。|  
 |[使用日历项](../vsto/working-with-calendar-items.md)|提供了演示如何使用日历项执行任务的主题。|  
-|[如何： 以编程方式确定当前的 Outlook 项](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|演示如何显示当前文件夹的名称及有关所选项的一些信息。|  
-  
+|[如何：以编程方式确定当前的 Outlook 项](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|演示如何显示当前文件夹的名称及有关所选项的一些信息。|  

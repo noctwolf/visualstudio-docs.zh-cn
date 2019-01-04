@@ -1,9 +1,6 @@
 ---
 title: 项目升级，选项对话框
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Project_Upgrade
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c53db1dffad5c755cba699986d64786471075776
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: fe2f6e251be529cc066c1e66fa9d79773b161bb6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671932"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825589"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>项目升级，选项对话框
   使用“项目升级”  页可指定 Visual Studio 是否将自动更改 VSTO 外接程序项目以面向开发计算机上安装的 Office 版本。  
@@ -37,6 +34,4 @@ ms.locfileid: "50671932"
   
 ## <a name="see-also"></a>请参阅  
  [升级和迁移 Office 解决方案](../vsto/upgrading-and-migrating-office-solutions.md)   
- [如何： 升级 Office 解决方案](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
-  
-  
+ [如何：升级 Office 解决方案](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  

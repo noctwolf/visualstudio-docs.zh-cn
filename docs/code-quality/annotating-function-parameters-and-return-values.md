@@ -2,7 +2,6 @@
 title: 对函数参数和返回值进行批注
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -127,12 +126,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: d60691836b38720cadeddfdf254d3646f9fa5479
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: e958674858eaa2de01cf837de12f70ed17b4f210
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805102"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921012"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>对函数参数和返回值进行批注
 本指南介绍了简单的函数参数的批注的典型用途 — 标量和指向结构和类的指针，及大多数种类的缓冲区。  本文还介绍对批注的常见使用模式。 与函数相关的其他批注，请参阅[批注函数行为](../code-quality/annotating-function-behavior.md)

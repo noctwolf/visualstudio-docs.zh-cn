@@ -2,7 +2,6 @@
 title: 禁止显示代码分析警告
 ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
@@ -16,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e90de7acf13ca28a20a35aa3ad3e70f58780279
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932863"
 ---
 # <a name="suppress-code-analysis-warnings"></a>禁止显示代码分析警告
 
@@ -35,7 +34,7 @@ ms.locfileid: "39513041"
 > 不应使用在发布版本，在源代码中禁止显示来防止意外地传送在源代码中禁止显示元数据。 此外，由于在源代码中禁止显示的处理成本，可以降低您的应用程序的性能。
 
 > [!NOTE]
-> 如果将项目迁移到 Visual Studio 2017 时，可能会突然遇到具有大量代码分析警告。 这些警告的来源[Roslyn 分析器](roslyn-analyzers-overview.md)。 如果尚未准备好修复警告，则可以通过选择取消所有这些**分析** > **运行代码分析并取消未解决的问题**。
+> 如果将项目迁移到 Visual Studio 2017，可能会突然遇到大量代码分析警告。 这些警告的来源[Roslyn 分析器](roslyn-analyzers-overview.md)。 如果尚未准备好修复警告，则可以通过选择取消所有这些**分析** > **运行代码分析并取消未解决的问题**。
 >
 > ![运行代码分析并取消显示 Visual Studio 中的问题](media/suppress-active-issues.png)
 
@@ -140,7 +139,7 @@ public class Animal
 
 托管的代码编译器和一些第三方工具生成代码以加快代码的开发。 在源文件中出现的编译器生成的代码通常标有`GeneratedCodeAttribute`属性。
 
-您可以选择是否要取消显示代码分析警告和错误生成的代码。 有关如何禁止显示此类警告和错误的信息，请参阅[如何： 生成代码的禁止显示警告](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。
+您可以选择是否要取消显示代码分析警告和错误生成的代码。 有关如何禁止显示此类警告和错误的信息，请参阅[如何：禁止显示生成的代码的警告](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。
 
 > [!NOTE]
 > 代码分析忽略了`GeneratedCodeAttribute`时应用于整个程序集或单个参数。

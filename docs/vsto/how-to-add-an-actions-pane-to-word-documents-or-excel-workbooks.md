@@ -1,9 +1,6 @@
 ---
 title: 如何：将操作窗格添加到 Word 文档或 Excel 工作簿
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c49fcf50046148ca01e2ce4eb5ebb204874d1d0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 4630834f1673e1c96ca67b90a8bb329951f53de1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827015"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>如何：将操作窗格添加到 Word 文档或 Excel 工作簿
   若要将操作窗格添加到 Microsoft Office Word 文档或 Microsoft Excel 工作簿，首先创建 Windows 窗体用户控件。 然后，将用户控件添加到<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>的属性`ThisDocument.ActionsPane`字段 (Word) 或`ThisWorkbook.ActionsPane`在项目中的字段 (Excel)。  
@@ -83,5 +80,3 @@ ms.locfileid: "53648234"
  [演练：从操作窗格的文档中插入文本](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [演练：从操作窗格的文档中插入文本](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
-  
-  

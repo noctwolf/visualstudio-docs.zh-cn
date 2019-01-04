@@ -1,9 +1,6 @@
 ---
 title: 配置选项概述 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fde39c346313dc66d5d94a5beb0e9e3b256ea436
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7ed12330a2acce09a5fb8a9aabc3b434b4c42fd8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920203"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956005"
 ---
 # <a name="configuration-options-overview"></a>配置选项概述
 中的项目[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以支持多个可以生成、 调试、 运行，和/或已部署的配置。 配置是使用属性、 通常编译器开关和文件位置的命名集所述的生成类型。 默认情况下，新的解决方案包含两个配置*调试*并*发行*。 可以使用其默认设置，或修改以满足您特定的解决方案和/或项目要求应用这些配置。 某些包可以生成两种方式： 作为一个 ActiveX 编辑器，或作为就地组件。 项目不需要支持多个配置，但是。 如果没有可用的只有一个配置，则该配置映射到的所有解决方案配置。  
@@ -32,7 +29,7 @@ ms.locfileid: "49920203"
   
  下表说明了一个项目的典型配置设置。 行标记为配置名称和平台名称的列。  
   
-|配置名称|平台： Win32|平台： Win64|  
+|配置名称|平台：Win32|平台：Win64|  
 |------------------------|----------------------|----------------------|  
 |*调试*|\<调试 Win32 设置 >|\<调试 Win64 设置 >|  
 |*发布*|\<发布 Win32 设置 >|\<发布 Win64 设置 >|  

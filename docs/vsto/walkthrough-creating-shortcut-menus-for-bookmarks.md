@@ -1,9 +1,6 @@
 ---
-title: 演练： 创建书签的快捷菜单
-ms.custom: ''
+title: 演练：创建书签的快捷菜单
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8cf987c458fb3a79c17fc6efedb34fefd8a53179
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940543"
 ---
-# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>演练： 创建书签的快捷菜单
+# <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>演练：创建书签的快捷菜单
   本演练演示如何创建快捷方式菜单<xref:Microsoft.Office.Tools.Word.Bookmark>Word 的文档级自定义项中的控件。 后在用户右键单击一个书签中的文本，快捷菜单会显示，并将用于设置文本格式的用户选项。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -54,7 +51,7 @@ ms.locfileid: "49884077"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
--   创建具有名称的 Word 文档项目**我的书签快捷方式菜单**。 在向导中，选择**创建一个新文档**。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+-   创建具有名称的 Word 文档项目**我的书签快捷方式菜单**。 在向导中，选择**创建一个新文档**。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新的 Word 文档并将添加**我的书签快捷方式菜单**投影到**解决方案资源管理器**。  
   
@@ -91,7 +88,7 @@ ms.locfileid: "49884077"
   
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>若要将命令添加到快捷菜单  
   
-1.  添加**功能区 XML**到项目的项。 有关详细信息，请参阅[如何： 开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
+1.  添加**功能区 XML**到项目的项。 有关更多信息，请参见[如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
   
 2.  在中**解决方案资源管理器**，选择**ThisDocument.cs**或**ThisDocument.vb**。  
   
@@ -169,7 +166,7 @@ ms.locfileid: "49884077"
     > [!NOTE]  
     >  必须编写代码以处理书签与发生重叠的情况。 如果不这样做，默认情况下，代码将调用所选内容中的所有书签。  
   
-5.  在 C# 中，必须添加到的书签控件的事件处理程序<xref:Microsoft.Office.Tools.Word.Document.Startup>事件。 有关创建事件处理程序的信息，请参阅[如何： 在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+5.  在 C# 中，必须添加到的书签控件的事件处理程序<xref:Microsoft.Office.Tools.Word.Document.Startup>事件。 有关创建事件处理程序的信息，请参阅[如何：Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]  
   
@@ -191,9 +188,9 @@ ms.locfileid: "49884077"
 ## <a name="next-steps"></a>后续步骤  
  以下是接下来可能要执行的一些任务：  
   
--   编写代码以响应在 Excel 中的主机控件的事件。 有关详细信息，请参阅[演练： 针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
+-   编写代码以响应在 Excel 中的主机控件的事件。 有关详细信息，请参见[演练：针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
   
--   使用复选框来更改格式设置在书签中。 有关详细信息，请参阅[演练： 使用 CheckBox 控件更改文档格式设置](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
+-   使用复选框来更改格式设置在书签中。 有关详细信息，请参见[演练：使用 CheckBox 控件更改文档格式设置](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Word 的演练](../vsto/walkthroughs-using-word.md)   
@@ -201,5 +198,3 @@ ms.locfileid: "49884077"
  [通过使用扩展的对象自动化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [Bookmark 控件](../vsto/bookmark-control.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  
