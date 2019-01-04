@@ -1,9 +1,6 @@
 ---
 title: XMLNode 控件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd047814f11b5fddad868bd65b84deba369facd5
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f83d829ac5067d751cc035ac83c0fb3397178658
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258884"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927436"
 ---
 # <a name="xmlnode-control"></a>XMLNode 控件
   **重要**设置 Microsoft Word 有关本主题中的信息是提供的以独占方式适合的权益和使用个人和组织用户位于美国州和其领土的外部或使用，或开发运行的程序，在 2010 年 1 月，Microsoft 中删除的特定功能实现的时间之前已由 Microsoft 许可的 Microsoft Word 产品被与 Microsoft Word 中的自定义 XML。 有关 Microsoft Word 此信息可能不读取或使用的个人或组织在美国或其区域使用，或开发在 Microsoft Word 2010 年 1 月 10 日之后，由 Microsoft 已许可的产品运行的程序中;这些产品不将行为与相同产品许可在该日期之前或购买，美国以外的使用许可。  
@@ -32,7 +29,7 @@ ms.locfileid: "35258884"
  <xref:Microsoft.Office.Tools.Word.XMLNode>可以仅通过在 Word 中删除的元素映射删除控件。  
   
 ## <a name="bind-data-to-the-control"></a>将数据绑定到控件  
- <xref:Microsoft.Office.Tools.Word.XMLNode>控件支持简单数据绑定。 XML 节点应使用绑定到数据源<xref:System.Windows.Forms.IBindableComponent.DataBindings%2A>属性。 如果在绑定数据集中的数据进行了更新，<xref:Microsoft.Office.Tools.Word.XMLNode>控件会反映出所做的更改。  
+ <xref:Microsoft.Office.Tools.Word.XMLNode>控件支持简单数据绑定。 XML 节点应使用绑定到数据源<xref:System.Windows.Forms.IBindableComponent.DataBindings%2A>属性。 如果更新绑定数据集内的数据，则 <xref:Microsoft.Office.Tools.Word.XMLNode> 控件会反映所做的更改。  
   
 ## <a name="formatting"></a>格式化  
  格式设置可以应用于<xref:Microsoft.Office.Interop.Word.XMLNode>对象可应用于<xref:Microsoft.Office.Tools.Word.XMLNode>控件。 这包括字体、 下划线样式和字符样式。  
@@ -84,8 +81,6 @@ ms.locfileid: "35258884"
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   
  [通过使用扩展的对象自动化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [XMLNodes 控件](../vsto/xmlnodes-control.md)   
- [如何： 向 Word 文档添加 XMLNode 控件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
- [如何： 将架构映射到 Visual Studio 内部的 Word 文档](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
+ [如何：向 Word 文档添加 XMLNode 控件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)   
+ [如何：将架构映射到 Visual Studio 内部的 Word 文档](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 42f1f99cd8d5d8bc214b3a7ccde571d2a45a7d4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987335"
 ---
 # <a name="customizing-the-properties-window"></a>自定义“属性”窗口
 你在 Visual Studio 中的特定于域的语言 (DSL)，可以自定义外观和行为的属性窗口。 在 DSL 定义中，每个域类上定义域属性。 默认情况下，选择关系图上或在模型资源管理器中的类的实例时每个域的属性已列出在属性窗口中。 这样可以查看和编辑域属性的值即使您有不到关系图上的形状字段映射它们。
@@ -24,7 +23,7 @@ ms.locfileid: "49813891"
 ## <a name="names-descriptions-and-categories"></a>名称、 说明和类别
  **名称和显示名称**。 在域属性的定义中，该属性的显示名称是在运行时在属性窗口中显示的名称。 与此相反，编写程序代码来更新属性时使用的名称。 名称必须是正确的 CLR 字母数字名称，但显示名称可以包含空格。
 
- 当在 DSL 定义中设置属性的名称时，其显示名称是自动设置为该名称的副本。 如果要编写一个采用 Pascal 大小写格式的名称，例如"FuelGauge"，显示名称将自动包含空格:"汽油表"。 但是，可以为其他值显式设置显示名称。
+ 当在 DSL 定义中设置属性的名称时，其显示名称是自动设置为该名称的副本。 如果要编写一个采用 Pascal 大小写格式的名称，例如"FuelGauge"，显示名称将自动包含空格："汽油表"。 但是，可以为其他值显式设置显示名称。
 
  **说明**。 域属性的说明将显示在两个位置：
 
@@ -41,7 +40,7 @@ ms.locfileid: "49813891"
 
  在形状上可以公开**FillColor**， **OutlineColor**， **TextColor**， **OutlineDashStyle**， **OutlineThickness**并**FillGradientMode**属性。 有关连接器可以公开**颜色**`,`**TextColor**， **DashStyle**，并且**粗细**属性。 在关系图上可以公开**FillColor**并**TextColor**属性。
 
-## <a name="forwarding-displaying-properties-of-related-elements"></a>转发： 显示相关元素的属性
+## <a name="forwarding-displaying-properties-of-related-elements"></a>转发：显示相关元素的属性
  时 DSL 的用户在模型中选择一个元素，该元素的属性将显示在属性窗口中。 但是，您还可以显示指定的相关元素的属性。 这是很有用，如果已定义一起工作的一组元素。 例如，可以定义主要元素和可选的插件元素。 如果主要元素映射到一个形状，另一个则不是很有用，若要查看其所有属性，就好像在上一个元素。
 
  这种效果名为*属性转发*，并在几个情况下自动发生。 在其他情况下，可以通过定义的域类型描述符转发的属性来实现。
@@ -140,7 +139,7 @@ ms.locfileid: "49813891"
 
  可以通过使用在属性上设置属性**自定义特性**属性窗口中的条目。
 
- 类型`AnEditor`必须派生自第二个参数中指定的类型。 第二个参数应为<xref:System.Drawing.Design.UITypeEditor>或<xref:System.ComponentModel.ComponentEditor>。 有关详细信息，请参阅 <xref:System.ComponentModel.EditorAttribute> 。
+ 类型`AnEditor`必须派生自第二个参数中指定的类型。 第二个参数应为<xref:System.Drawing.Design.UITypeEditor>或<xref:System.ComponentModel.ComponentEditor>。 有关详细信息，请参阅 <xref:System.ComponentModel.EditorAttribute>。
 
  你可以指定自己的编辑器或编辑器中提供[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，如<xref:System.Windows.Forms.Design.FileNameEditor>或<xref:System.Drawing.Design.ImageEditor>。 例如，使用以下过程以用户可在其中输入文件名称的属性。
 
@@ -176,7 +175,7 @@ ms.locfileid: "49813891"
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>指定是否在编辑器将打开一个对话框，或提供一个下拉列表菜单。
 
-  你还可以提供的图形表示形式将在属性网格中显示的属性的值。 若要执行此操作，重写`GetPaintValueSupported`，和`PaintValue`。  有关详细信息，请参阅 <xref:System.Drawing.Design.UITypeEditor> 。
+  你还可以提供的图形表示形式将在属性网格中显示的属性的值。 若要执行此操作，重写`GetPaintValueSupported`，和`PaintValue`。  有关详细信息，请参阅 <xref:System.Drawing.Design.UITypeEditor>。
 
 > [!NOTE]
 >  在单独的代码文件中添加代码**Dsl**项目。
@@ -203,7 +202,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
- 有关详细信息，请参阅 <xref:System.Drawing.Design.UITypeEditor> 。
+ 有关详细信息，请参阅 <xref:System.Drawing.Design.UITypeEditor>。
 
 ## <a name="providing-a-drop-down-list-of-values"></a>提供值下拉的列表
  可以提供一系列可供选择的用户的值。

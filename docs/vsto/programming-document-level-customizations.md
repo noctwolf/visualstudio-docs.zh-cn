@@ -1,9 +1,6 @@
 ---
 title: 文档级自定义项进行编程
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Sheet3
@@ -30,12 +27,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9c7fa658c24caa65b3c955002ffeeaff6573c55
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d559e358e50295368f68ad02ebb7532353a98b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812226"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925441"
 ---
 # <a name="program-document-level-customizations"></a>文档级自定义项进行编程
   在使用文档级自定义项扩展 Microsoft Office Word 或 Microsoft Office Excel 时，可以执行以下任务：  
@@ -149,7 +146,7 @@ Globals.ThisDocument.Save();
   
 - 向功能区上的内置选项卡添加自定义组。  
   
-   有关详细信息，请参阅[如何： 自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)。  
+   有关更多信息，请参见[如何：自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)。  
   
   有关自定义 UI 的 Microsoft Office 应用程序的详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。  
   
@@ -175,5 +172,3 @@ Globals.ThisDocument.Save();
  [结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)   
  [使用 ServerDocument 类管理服务器上的文档](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)  
-  
-  

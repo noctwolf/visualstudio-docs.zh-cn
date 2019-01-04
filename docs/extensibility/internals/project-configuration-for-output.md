@@ -1,9 +1,6 @@
 ---
 title: 项目配置为输出 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a02e331484abf2ef1450493d2ea1bdddaabe82bd
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 50abcfcc68ee881a7977224ba2354701e735d2bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843289"
 ---
 # <a name="project-configuration-for-output"></a>用于输出的项目配置
 每一种配置可以支持一组生成输出项，如可执行文件或资源文件的生成进程。 这些输出项专用于用户，并可以放入链接的输出，例如可执行文件 （.exe、.dll、.lib） 和源文件 （.idl、.h 文件） 的相关的类型的组。  

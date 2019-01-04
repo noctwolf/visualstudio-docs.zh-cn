@@ -1,9 +1,6 @@
 ---
 title: 管理解决方案中的项目加载 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions, managing project loading
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ead4834f1d29baff099eedbf464c1ba6344ca6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1f861f765305dc0ea4bdfd83326a5a4888239033
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950194"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870146"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>管理解决方案中的项目加载
 Visual Studio 解决方案可以包含大量的项目。 默认 Visual Studio 行为是打开解决方案时，次加载解决方案中的所有项目并不允许用户访问任何项目，直到所有这些已完成加载为止。 当项目加载过程将持续时间超过两分钟时，被显示一个进度栏显示加载的项目数量以及项目总数。 用户可以在具有多个项目的解决方案中使用时，卸载项目，但此过程也有一些缺点： 已卸载的项目不是作为重新生成解决方案命令，并关闭 IntelliSense 类型的说明和的成员项目不会显示。  
@@ -62,17 +59,17 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 ## <a name="handle-solution-load-events"></a>处理解决方案负载事件  
  若要订阅的解决方案加载事件，调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A>激活解决方案负载管理器。 如果你实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>，可以为到不同的项目加载属性相关的事件的响应。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>： 打开一个解决方案之前，会触发此事件。
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>：打开一个解决方案之前，触发此事件。
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>： 此事件后的解决方案是完全加载，但后台加载的项目开始之前再次激发。
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>：之后的解决方案是完全加载，但后台加载的项目开始之前再次激发此事件。
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>： 此事件后激发一开始完全加载解决方案时，不存在解决方案负载管理器。 后台负载或需加载时解决方案变得完全加载后，它也会激发。 同时，在<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid>重新激活。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>：此事件后激发一开始完全加载解决方案时，不存在解决方案负载管理器。 后台负载或需加载时解决方案变得完全加载后，它也会激发。 同时，在<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid>重新激活。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>： 此事件激发之前加载的项目 （或项目）。 若要确保加载项目之前完成其他后台进程，设置`pfShouldDelayLoadToNextIdle`到**true**。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>：在加载项目 （或项目） 之前触发此事件。 若要确保加载项目之前完成其他后台进程，设置`pfShouldDelayLoadToNextIdle`到**true**。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>： 加载项目一批时激发此事件。 如果`fIsBackgroundIdleBatch`为 true 的项目是加载在后台中; 如果`fIsBackgroundIdleBatch`为 false 的项目是要加载同步由于用户请求，例如在用户如果展开解决方案资源管理器中的挂起的项目。 可以处理此事件来执行成本高昂的工作，否则需要完成<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>：加载项目一批时，触发此事件。 如果`fIsBackgroundIdleBatch`为 true 的项目是加载在后台中; 如果`fIsBackgroundIdleBatch`为 false 的项目是要加载同步由于用户请求，例如在用户如果展开解决方案资源管理器中的挂起的项目。 可以处理此事件来执行成本高昂的工作，否则需要完成<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>： 加载项目一批之后激发此事件。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>：加载项目一批之后激发此事件。  
   
 ## <a name="detect-and-manage-solution-and-project-loading"></a>检测和管理解决方案和项目加载  
  若要检测的项目和解决方案加载状态，请调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A>使用以下值：  

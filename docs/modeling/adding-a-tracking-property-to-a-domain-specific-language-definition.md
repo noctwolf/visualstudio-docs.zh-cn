@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0417507323a627753bc62e50b424c37b547d4dad
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 21899be482e47152e8ca60d78535f49613f52ede
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967475"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946037"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>向域特定语言定义中添加跟踪属性
 
@@ -719,7 +718,7 @@ HelperClasses.cs 文件中，添加`TrackingHelper`和`CriticalException`类，�
 
 下一步是生成并运行 DSL 设计器中的新实例[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，以便您可以验证跟踪属性工作正常。
 
-1. 上**构建**菜单上，单击**重新生成解决方案**。
+1. 在“生成”菜单上，单击“重新生成解决方案”。
 
 2. 在“调试”菜单上，单击“启动调试”。
 

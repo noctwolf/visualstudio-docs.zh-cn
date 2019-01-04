@@ -1,9 +1,6 @@
 ---
 title: 如何：使用 VSTO 外接程序将自定义 XML 部件添加到文档
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,12 +19,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b5cbdd401466e2aa5be5efd5824a73477943664
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d364f148fb52412038c57e6f4e732ffe4e2a6e31
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829652"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>如何：使用 VSTO 外接程序将自定义 XML 部件添加到文档
   通过在 VSTO 外接程序中创建自定义 XML 部件，可以将 XML 数据存储在以下类型的文档中：  
@@ -87,5 +84,3 @@ ms.locfileid: "53648517"
 ## <a name="see-also"></a>请参阅  
  [自定义 XML 部件概述](../vsto/custom-xml-parts-overview.md)   
  [如何：将自定义 XML 部件添加到文档级自定义项](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)  
-  
-  

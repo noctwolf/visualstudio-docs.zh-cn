@@ -1,5 +1,5 @@
 ---
-title: 自定义的域特定语言
+title: 自定义特定于域的语言
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,37 +10,36 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: f7fd63546f7d85ddbcc7661ac600a56bd340e6ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3fea8dded35e00ee42430c8373309ada8a65f61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965221"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991199"
 ---
-# <a name="write-code-to-customize-a-domain-specific-language"></a>编写代码以自定义的域特定语言
+# <a name="write-code-to-customize-a-domain-specific-language"></a>编写代码以自定义域特定语言
 
-本部分演示如何使用自定义代码来访问、 修改或创建域特定语言模型。
+本部分演示如何使用自定义代码来访问、 修改或在域特定语言中创建一个模型。
 
-有几个可以在其中编写适用于 DSL 代码的上下文：
+有几个可以在其中编写代码，它使用 DSL 的上下文：
 
--   **自定义命令。** 你可以创建命令，用户可以调用通过右键单击关系图中，并且其可以修改模型。 有关详细信息，请参阅[如何： 向快捷菜单添加命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
+-   **自定义命令。** 可以创建命令，用户可以通过右键单击关系图中，调用以及其可以修改模型。 有关更多信息，请参见[如何：将命令添加到快捷菜单](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
--   **验证。** 你可以编写代码，用于验证在模型处于正确状态。 有关详细信息，请参阅[域特定语言中的验证](../modeling/validation-in-a-domain-specific-language.md)。
+-   **验证。** 可以编写代码，用于验证在模型处于正确状态。 有关详细信息，请参阅[特定于域的语言中的验证](../modeling/validation-in-a-domain-specific-language.md)。
 
--   **重写默认行为。** 你可以修改从 DslDefinition.dsl 生成的代码的许多方面。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。
+-   **重写默认行为。** 您可以修改从 DslDefinition.dsl 生成的代码的许多方面。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。
 
--   **文本转换。** 你可以编写包含访问模型，并生成一个文本文件，例如，若要生成程序代码的代码的文本模板。 有关详细信息，请参阅[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)。
+-   **文本转换。** 您可以编写文本模板包含的代码，以便访问模型，并生成一个文本文件，例如若要生成程序代码。 有关详细信息，请参阅[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)。
 
--   **其他 Visual Studio 扩展。** 你可以编写单独的 VSIX 扩展的读取和修改模型。 有关详细信息，请参阅[如何： 从在程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+-   **其他 Visual Studio 扩展。** 您可以编写单独的 VSIX 扩展的读取和修改模型。 有关更多信息，请参见[如何：从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
-在 DslDefinition.dsl 中定义的类的实例保留在调用的数据结构*内存中存储*(IM) 或*存储*。 你始终在 DSL 中定义的类需要存储作为自变量的构造函数。 例如，如果 DSL 定义一个名为示例类：
+在 DslDefinition.dsl 中定义的类的实例保存在名为的数据结构*内存中存储*(IMS) 或*存储区*。 你始终在 DSL 中定义的类构造函数作为自变量需要存储区。 例如，如果你的 DSL 定义一个名为示例类：
 
 `Example element = new Example (theStore);`
 
-保持对象 （而不是仅为普通对象） 存储区中提供以下几个好处。
+使对象 （而不是只需为普通对象） 存储区中提供了以下几个好处。
 
--   **事务**。 你可以进行分组一的系列成事务的相关更改：
+-   **事务**。 可以将一系列成事务相关的更改：
 
      `using (Transaction t = store.TransactionManager.BeginTransaction("updates"))`
 
@@ -52,27 +51,27 @@ ms.locfileid: "31965221"
 
      `}`
 
-     如果异常过程中发生更改，以便不执行最终的 commit （），应用商店将重置为其以前的状态。 这可帮助你确保错误不会处于不一致状态中离开模型。 有关详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+     如果过程中发生异常所做的更改，以便不执行最终的 commit （），在存储区将重置为其以前的状态。 这可帮助你确保错误不会为不一致状态中保留该模型。 有关详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
--   **二进制关系**。 如果你定义两个类之间的关系，在两端的实例将具有一个属性，导航到另一端。 两个端点始终保持同步。 例如，如果用名为父项和子项的角色定义 parenthood 关系时，你可以编写：
+-   **二进制关系**。 如果定义了两个类之间的关系，在两端的实例具有导航到另一端的属性。 两个端点始终保持同步。 例如，如果用名为父项和子项的角色定义 parenthood 关系时，您可以编写：
 
      `John.Children.Add(Mary)`
 
-     下面的表达式都现在成立：
+     这两个以下表达式现，则返回 true:
 
      `John.Children.Contains(Mary)`
 
      `Mary.Parents.Contains(John)`
 
-     此外可以通过编写获得相同的效果：
+     此外可以通过编写达到同样的效果：
 
      `Mary.Parents.Add(John)`
 
      有关详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
--   **规则和事件**。 你可以定义激发时指定更改的规则。 使用规则，例如，要保留在关系图上的形状就提供的模型元素最新。 有关详细信息，请参阅[响应和传播更改](../modeling/responding-to-and-propagating-changes.md)。
+-   **规则和事件**。 可以定义指定更改时触发的规则。 规则使用，例如，要保留它们在呈现的模型元素保持最新关系图上的形状。 有关详细信息，请参阅[对的响应并传播更改](../modeling/responding-to-and-propagating-changes.md)。
 
--   **序列化**。 存储区提供了一种标准方式进行序列化到文件包含的对象。 你可以自定义序列化和反序列化的规则。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
+-   **序列化**。 在存储区提供一个标准的方式进行序列化到文件及其包含的对象。 您可以自定义序列化和反序列化规则。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
 ## <a name="see-also"></a>请参阅
 

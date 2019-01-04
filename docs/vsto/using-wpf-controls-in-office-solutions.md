@@ -1,9 +1,6 @@
 ---
 title: Office 解决方案中使用 WPF 控件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5419a715cbe255b5cfc31a113a00e3525d63d827
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 49b4d2fd4a32b6d73e5fcdfc65850abcb2835856
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008198"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822270"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Office 解决方案中使用 WPF 控件
 
@@ -56,11 +53,11 @@ ms.locfileid: "40008198"
 
 5.  将操作窗格、窗体区域或自定义任务窗格添加到你的项目：
 
-    -   对于窗体区域，添加**Outlook 窗体区域**到项目的项。 有关详细信息，请参阅[如何： 向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
+    -   对于窗体区域，添加**Outlook 窗体区域**到项目的项。 有关更多信息，请参见[如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
 
-    -   对于操作窗格，添加**操作窗格控件**或**用户控件**到项目的项。 有关详细信息，请参阅[如何： 将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)并[如何： 将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。
+    -   对于操作窗格，添加**操作窗格控件**或**用户控件**到项目的项。 有关更多信息，请参见[如何：将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)和[如何：将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。
 
-    -   对于自定义任务窗格，请添加**用户控件**到项目的项。 有关详细信息，请参阅[如何： 向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。
+    -   对于自定义任务窗格，请添加**用户控件**到项目的项。 有关更多信息，请参见[如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。
 
 6.  从*ProjectName* **WPF 用户控件**选项卡**工具箱**，将 WPF 用户控件拖动到设计器中的操作窗格、 窗体区域或自定义任务窗格。
 
@@ -113,11 +110,11 @@ WPF 控件使用 <xref:System.Windows.Forms.Integration.ElementHost> 类，作�
 
 有关在设计时将 WPF 控件添加到 Visual Studio 中 Windows 窗体控件和窗体的详细信息，请参阅以下主题：
 
--   [演练： 在设计时在 Windows 窗体上创建新的 WPF 内容](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
+-   [演练：在设计时在 Windows 窗体上创建新的 WPF 内容](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
--   [演练： 在设计时排列 Windows 窗体上的 WPF 内容](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
+-   [演练：在设计时排列 Windows 窗体上的 WPF 内容](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
--   [演练： 样式 WPF 内容](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
+-   [演练：样式的 WPF 内容](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
 ## <a name="see-also"></a>请参阅
 
@@ -126,6 +123,6 @@ WPF 控件使用 <xref:System.Windows.Forms.Integration.ElementHost> 类，作�
 - [操作窗格概述](../vsto/actions-pane-overview.md)
 - [自定义任务窗格](../vsto/custom-task-panes.md)
 - [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)
-- [如何： 将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [如何： 向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [如何： 向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [如何：将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

@@ -1,8 +1,7 @@
 ---
-title: 如何： 获取设计器的 XML 架构中使用图形视图的架构集概述
+title: 如何：获取设计器的 XML 架构中使用图形视图的架构集概述
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 author: gewarren
@@ -10,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 004d40992e24f0df651d93b43761add1d2efa673
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: ed088de37bba8bfc7d74339d822e5ee0f6c058b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948831"
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>如何： 获取架构集，使用图形视图的概述
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>如何：获取架构集，使用图形视图的概述
 
 本主题介绍如何使用[关系图视图](../xml-tools/graph-view.md)若要查看的节点在架构集中，并在节点之间的关系的高级视图。
 

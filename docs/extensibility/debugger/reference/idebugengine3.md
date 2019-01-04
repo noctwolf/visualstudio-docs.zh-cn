@@ -1,9 +1,6 @@
 ---
-title: IDebugEngine3 |Microsoft 文档
-ms.custom: ''
+title: IDebugEngine3 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine3
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 291f5ca6f945abe9e0322839eb80c38b60674ce4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7110a69c84a131a600c903ac73fbb6acdde7cd64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913431"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
-表示单个调试引擎 (DE)，用于控制所调试的一个或多个模块。  
+表示控制一个或多个模块的调试一个单一的调试引擎 (DE)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,29 +28,29 @@ ms.locfileid: "31114412"
 IDebugEngine3 : IDebugEngine2  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 此接口由实现自定义 DE （如果它支持符号） 以启用 JustMyCode 状态。 如果它支持符号和 JustMyCode，DE 必须实现此接口。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 此接口由实现自定义 DE （如果它支持符号） 若要启用的 JustMyCode 状态。 此接口必须由 DE 实现，如果它支持符号和 JustMyCode。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 此接口由会话调试管理器 (SDM) 将传递用户选项，以用于从中加载符号的位置上调用。 它也称为它实例化时设置的引擎的 GUID （此 GUID 基于从引擎注册的时间的度量值）。 SDM 还会调用此接口可设置的 JustMyCode 状态并设置调试程序对指定状态的已知的所有异常。  
+ 此接口由会话调试管理器 (SDM) 要传递的用户选项要从其加载符号的位置的调用。 它还调用实例化时设置引擎的 GUID （此 GUID 基于指标从引擎注册时）。 SDM 也会调用此接口为 JustMyCode 状态设置并设置指定状态到调试器已知的所有异常。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
- 除了从继承的方法[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)、`IDebugEngine3`接口公开以下方法。  
+ 除了继承的方法之外[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)，则`IDebugEngine3`接口公开以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|设置将使用 DE 的调试符号来搜索的路径。|  
-|[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|加载尚未有加载其符号的所有模块的符号。|  
-|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)|告知 DE JustMyCode 信息。|  
-|[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|从度量值设置 DE GUID。|  
+|[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|设置 DE 将用于搜索调试符号的路径。|  
+|[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|加载尚无权加载其符号的所有模块的符号。|  
+|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)|有关 JustMyCode 信息告知 DE。|  
+|[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|通过度量值设置 DE GUID。|  
 |[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|将当前未完成的所有异常都设置为指定的状态。|  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

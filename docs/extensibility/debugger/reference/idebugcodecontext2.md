@@ -1,9 +1,6 @@
 ---
-title: IDebugCodeContext2 |Microsoft 文档
-ms.custom: ''
+title: IDebugCodeContext2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCodeContext2
@@ -15,47 +12,47 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b46ec36a93ac91647a3f17aac28187519ca2447
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f4c744e5dc79c5e704e2cec6d83e39a4170bcd68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103872"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922963"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
-此接口表示代码指令的起始位置。 为大多数运行时体系结构现在，代码上下文被想象的为程序的执行流中的地址。  
+此接口表示的代码指令的起始位置。 为大多数运行时体系结构现在，代码上下文可以认为的程序的执行流中的地址。  
   
 ## <a name="syntax"></a>语法  
   
 ```  
-IDebugCodeContext2 : IDebugMemoryContext2  
+IDebugCodeContext2 : IDebugMemoryContext2  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 调试引擎实现此接口可关联到的文档位置代码指令的位置。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 调试引擎实现此接口可关联到的文档位置的代码指令的位置。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 许多接口上的方法返回此接口，最常[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)。 它还用于广泛[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)接口以及如下所示断点解析信息。  
+ 多个接口上的方法最通常情况下，返回此接口， [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)。 它还用于广泛[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)接口也与断点解决方法信息。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  除了上的方法[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)接口，此接口实现以下方法：  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|获取对应于活动的代码上下文文档上下文。|  
-|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|获取此代码上下文的语言信息。|  
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)|获取与活动的代码上下文相对应的文档上下文。|  
+|[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|获取此代码的上下文的语言信息。|  
   
 ## <a name="remarks"></a>备注  
- 主要区别`IDebugCodeContext2`接口和[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)接口是`IDebugCodeContext2`始终指令对齐。 这意味着，`IDebugCodeContext2`始终指向指令的开头而`IDebugMemoryContext2`都可能会导致任何字节的内存中的运行时体系结构。 `IDebugCodeContext2` 即会递增按说明而不是基本的存储大小 （通常字节）。  
+ 主要区别`IDebugCodeContext2`接口和一个[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)接口是`IDebugCodeContext2`始终指令对齐。 这意味着`IDebugCodeContext2`始终指向到的指令，开头而`IDebugMemoryContext2`都可能会导致运行时体系结构中的内存的任何字节。 `IDebugCodeContext2` 就会增加通过说明而不是基本的存储大小 （通常为字节）。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
  [CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)   
  [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)   

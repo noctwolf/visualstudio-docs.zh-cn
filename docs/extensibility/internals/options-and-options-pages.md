@@ -1,9 +1,6 @@
 ---
 title: 选项和选项页 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3607b67b34e778e0352cdb1159b16841c5a1211f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 73eb5ab6c139d4ce6bdfb8a5a310ca447ce4267c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865149"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872117"
 ---
 # <a name="options-and-options-pages"></a>选项和选项页
 单击**选项**上**工具**菜单打开**选项**对话框。 在此对话框中选项统称为选项页。 在导航窗格中的树控件包括选项类别和每个类别都有选项页。 当选择一个页面时，其选项将显示在右窗格中。 这些页面，您可以更改的值确定的 VSPackage 状态的选项。  

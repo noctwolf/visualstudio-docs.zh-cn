@@ -1,9 +1,6 @@
 ---
-title: 如何： 诊断扩展性能 |Microsoft Docs
-ms.custom: ''
+title: 如何：诊断扩展性能 |Microsoft Docs
 ms.date: 11/08/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
@@ -11,12 +8,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fd51728f5e57af1017cb4b280f9ffc9d1c50df98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943416"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>测量中启动扩展影响
 
@@ -31,7 +28,7 @@ ms.locfileid: "49934920"
 本文档旨在帮助扩展开发人员通过说明如何计算扩展的影响。 本文档还介绍如何本地分析扩展的影响。 本地分析扩展的影响将确定是否可以显示作为一种性能影响扩展的扩展。
 
 > [!NOTE]
-> 本文档重点介绍在启动和解决方案加载的扩展的影响。 扩展也会影响 Visual Studio 性能时它们会导致 UI 无响应。 本主题的详细信息，请参阅[如何： 诊断 UI 延迟由扩展引起](how-to-diagnose-ui-delays-caused-by-extensions.md)。
+> 本文档重点介绍在启动和解决方案加载的扩展的影响。 扩展也会影响 Visual Studio 性能时它们会导致 UI 无响应。 本主题的详细信息，请参阅[如何：诊断 UI 由扩展引起的延迟](how-to-diagnose-ui-delays-caused-by-extensions.md)。
 
 ## <a name="how-extensions-can-impact-startup"></a>如何扩展可能会影响启动
 
@@ -51,11 +48,11 @@ ms.locfileid: "49934920"
 
 您可以在以下文档中找到有关这些功能的更多详细信息：
 
-[基于规则的 UI 上下文](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)： 围绕 UI 上下文构建更丰富的基于规则的引擎，可创建基于项目类型，风格，自定义上下文和属性。 自定义上下文可用于在更多特定方案期间加载的包。 这些特定的方案包括使用而不是启动某项特定功能的项目的存在。 自定义上下文还允许[命令可见性，以绑定到自定义上下文](visibilityconstraints-element.md)基于项目组件或其他可用的搜索词。 此功能消除了需要加载的包，以注册命令状态查询处理程序。
+[基于规则的 UI 上下文](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md):围绕 UI 上下文构建更丰富的基于规则的引擎，可创建基于项目类型、 版本和属性的自定义上下文。 自定义上下文可用于在更多特定方案期间加载的包。 这些特定的方案包括使用而不是启动某项特定功能的项目的存在。 自定义上下文还允许[命令可见性，以绑定到自定义上下文](visibilityconstraints-element.md)基于项目组件或其他可用的搜索词。 此功能消除了需要加载的包，以注册命令状态查询处理程序。
 
-[异步程序包支持](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Visual Studio 2015 中的新 AsyncPackage 基类允许 Visual Studio 包要加载在后台以异步方式如果包加载了请求自动负载属性或异步服务查询. 此后台加载允许 IDE 作出响应。 即使在后台中初始化该扩展和关键方案，如启动和解决方案负载不会受到影响，IDE 会快。
+[异步程序包支持](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md):Visual Studio 2015 中的新 AsyncPackage 基类允许 Visual Studio 包要加载在后台以异步方式是否请求包加载时自动加载属性或异步服务查询。 此后台加载允许 IDE 作出响应。 即使在后台中初始化该扩展和关键方案，如启动和解决方案负载不会受到影响，IDE 会快。
 
-[异步服务](how-to-provide-an-asynchronous-visual-studio-service.md)： 借助异步包支持，我们还添加了支持用于查询服务以异步方式和能够注册异步服务。 更重要的我们正在努力将核心 Visual Studio 服务以支持异步查询，以便在后台线程中的大部分工作在异步查询中进行转换。 SComponentModel （Visual Studio MEF 主机） 是现在支持异步查询，以便支持异步加载完全扩展的主要服务之一。
+[异步服务](how-to-provide-an-asynchronous-visual-studio-service.md):通过异步包支持，我们还添加了对异步查询服务，并且能够进行注册的异步服务的支持。 更重要的我们正在努力将核心 Visual Studio 服务以支持异步查询，以便在后台线程中的大部分工作在异步查询中进行转换。 SComponentModel （Visual Studio MEF 主机） 是现在支持异步查询，以便支持异步加载完全扩展的主要服务之一。
 
 ## <a name="reducing-impact-of-auto-loaded-extensions"></a>减少对影响自动加载扩展
 
@@ -167,11 +164,11 @@ PerfView 提供详细指导如何阅读更详细的分析其自己帮助菜单�
 
 一些有趣的调用上面的示例将为堆栈：
 
-1. IO 使用`System.IO`类： 虽然这些框架中的非独占成本可能不是在跟踪中过于昂贵，但它们是可能会造成问题，由于文件 IO 速度将不同计算机之间。
+1. IO 使用`System.IO`类：这些框架中的非独占成本可能不是在跟踪中过于昂贵，尽管它们是可能会造成问题，由于文件 IO 速度将不同计算机之间。
 
    ![系统 io 帧](media/perfview-system-io-frames.png)
 
-2. 阻止调用等待其他异步工作： 在这种情况下，非独占时间将表示主线程阻塞在异步工作的完成时间。
+2. 阻止等待其他异步工作的调用：在这种情况下，非独占时间表示主线程阻塞在异步工作的完成时间。
 
    ![阻止调用框架](media/perfview-blocking-call-frames.png)
 

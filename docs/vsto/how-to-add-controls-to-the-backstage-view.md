@@ -1,9 +1,6 @@
 ---
 title: '如何：将控件添加到 Backstage 视图 '
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d33d88849400857914c1daebfcd9d04a373920d
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 6500118f775f9dfab75b615f28fab9e166a0104a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924652"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>如何：将控件添加到 Backstage 视图
   可以使用功能区设计器将控件添加到单击时打开的菜单**文件**选项卡。当运行该应用程序，您将添加到的控件**文件**选项卡显示名为的组**外接程序**。  
@@ -71,5 +68,3 @@ ms.locfileid: "53647108"
  [功能区 XML](../vsto/ribbon-xml.md)   
  [如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [演练：使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
-  
-  

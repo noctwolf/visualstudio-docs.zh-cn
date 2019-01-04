@@ -1,9 +1,6 @@
 ---
 title: 公共语言运行时和表达式计算 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7db25e563e2728d30ade9f4c7f2dc6faf659721b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 9e6521f2e38044fc5a333228f5225e42853a42dd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204370"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959154"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>公共语言运行时和表达式计算
 > [!IMPORTANT]

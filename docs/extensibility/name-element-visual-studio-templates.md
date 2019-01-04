@@ -1,6 +1,5 @@
 ---
 title: 命名元素 （Visual Studio 模板） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66e23b99c715f59a0c7a817c379e6cf06001c285
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: ca61a572ee923b5f9fa3f3999554d36057f4dd91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561195"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925480"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name 元素 （Visual Studio 模板）
 指定的模板的名称，如所示**新的项目**或**添加新项**对话框。  

@@ -1,9 +1,6 @@
 ---
 title: 旧版语言服务基础知识 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344a7949c5058237d8599d69ea3b234e9a6e8e72
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79ecbd971315c004a9be40221a6950afb5856823
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850161"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847199"
 ---
 # <a name="legacy-language-service-essentials"></a>旧版语言服务基础知识
 必须提供要集成到 Visual Studio 编程语言的语言服务。 本主题介绍在旧版语言服务中提供的功能。  
@@ -50,4 +47,3 @@ ms.locfileid: "49850161"
 |-----------------------| - |
 | 表达式计算器 | 支持[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]要显示在通过验证断点并提供一系列表达式调试器**自动**调试窗口。<br /><br /> 有关详细信息，请参阅[以便进行调试的语言服务支持](../../extensibility/internals/language-service-support-for-debugging.md)。 |
 | 符号浏览工具 | 支持**对象浏览器**，**类视图**，**调用浏览器**，以及**查找符号结果**。 |
-

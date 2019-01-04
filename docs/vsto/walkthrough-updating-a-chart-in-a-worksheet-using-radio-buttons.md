@@ -1,9 +1,6 @@
 ---
 title: 演练：使用单选按钮更新工作表中的图表
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5aff631d8c9b6bd65b8ae91c5d936d2669764791
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891929"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>演练：使用单选按钮更新工作表中的图表
   本演练显示了使用 Microsoft Office Excel 工作表上的单选按钮为用户提供选项之间快速切换的方法的基础知识。 在这种情况下，选项更改图表的样式。  
@@ -96,7 +93,7 @@ ms.locfileid: "49866436"
 
 1.  使用名称创建的 Excel 工作簿项目**我的 Excel 图表**。 在向导中，选择**复制现有文档**。  
 
-     有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
 
 2.  单击**浏览**按钮，然后浏览到在本演练前面创建的工作簿。  
 
@@ -111,7 +108,7 @@ ms.locfileid: "49866436"
 
 1.  选择<xref:Microsoft.Office.Tools.Excel.Chart>设计器中控制和更改中的以下属性**属性**窗口。  
 
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**dataChart**|  
     |**HasLegend**|**false**|  
@@ -136,7 +133,7 @@ ms.locfileid: "49866436"
 2. 从**公共控件**选项卡**工具箱**，将**单选按钮**控制转移到该用户控件，并更改以下属性。  
 
 
-   | 属性 | “值” |
+   | 属性 | 值 |
    |----------|------------------|
    | **名称** | **columnChart** |
    | **文本** | **柱形图** |
@@ -145,7 +142,7 @@ ms.locfileid: "49866436"
 3. 将第二个单选按钮添加到该用户控件，并更改以下属性。  
 
 
-   | 属性 | “值” |
+   | 属性 | 值 |
    |----------|---------------|
    | **名称** | **barChart** |
    | **文本** | **条形图** |
@@ -154,7 +151,7 @@ ms.locfileid: "49866436"
 4. 将第三个单选按钮添加到该用户控件，并更改以下属性。  
 
 
-   | 属性 | “值” |
+   | 属性 | 值 |
    |----------|----------------|
    | **名称** | **lineChart** |
    | **文本** | **折线图** |
@@ -162,7 +159,7 @@ ms.locfileid: "49866436"
 
 5. 将第四个单选按钮添加到该用户控件，并更改以下属性。  
 
-   |属性|“值”|  
+   |属性|值|  
    |--------------|-----------|  
    |**名称**|**areaBlockChart**|  
    |**文本**|**面积图**|  
@@ -203,7 +200,7 @@ ms.locfileid: "49866436"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]  
 
-5.  在 C# 中，必须为单选按钮添加事件处理程序。 可以将此代码添加到 `ChartOptions` 构造函数中 `InitializeComponent` 调用的下面。 有关如何创建事件处理程序的信息，请参阅[如何： 在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+5.  在 C# 中，必须为单选按钮添加事件处理程序。 可以将此代码添加到 `ChartOptions` 构造函数中 `InitializeComponent` 调用的下面。 有关如何创建事件处理程序的信息，请参阅[如何：Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]  
 
@@ -234,7 +231,7 @@ ms.locfileid: "49866436"
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]  
 
-2.  在 C# 中，必须添加到用户控件的事件处理程序<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>事件，如下所示。 有关如何创建事件处理程序的信息，请参阅[如何： 在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+2.  在 C# 中，必须添加到用户控件的事件处理程序<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>事件，如下所示。 有关如何创建事件处理程序的信息，请参阅[如何：Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]  
 
@@ -254,10 +251,9 @@ ms.locfileid: "49866436"
 
 -   部署项目。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
 
--   使用按钮填充文本框。 有关详细信息，请参阅[演练： 在使用按钮的工作表中的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)。  
+-   使用按钮填充文本框。 有关详细信息，请参见[演练：在使用按钮的工作表中的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)。  
 
--   更改工作表上通过使用复选框格式设置。 有关详细信息，请参阅[演练： 使用 CheckBox 控件更改工作表格式设置](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。  
+-   更改工作表上通过使用复选框格式设置。 有关详细信息，请参见[演练：使用 CheckBox 控件更改工作表格式设置](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。  
 
 ## <a name="see-also"></a>请参阅  
  [Excel 用法演练](../vsto/walkthroughs-using-excel.md)  
-

@@ -1,22 +1,21 @@
 ---
-title: CA2153：避免处理损坏状态异常
+title: CA2153:避免处理损坏状态异常
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5043c8cb9cefb8ffdb600083ba2dc4bb49d5e3f5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e6b789a4580c3787a4504d730e694308341657eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547510"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821855"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153：避免处理损坏状态异常
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153:避免处理损坏状态异常
 
 |||
 |-|-|
@@ -27,11 +26,11 @@ ms.locfileid: "45547510"
 
 ## <a name="cause"></a>原因
 
-[损坏状态异常 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx)指示该内存损坏进程中存在。 如果攻击者可以将攻击放置到损坏的内存区域，则捕获它们（而非允许进程崩溃）可能导致安全漏洞。
+[损坏状态异常 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) 指示进程中存在内存损坏。 如果攻击者可以将攻击放置到损坏的内存区域，则捕获它们（而非允许进程崩溃）可能导致安全漏洞。
 
 ## <a name="rule-description"></a>规则说明
 
-CSE 指示进程状态已损坏且未被系统捕获。 在损坏状态的情况中，如果你将方法标记有适当的 `HandleProcessCorruptedStateExceptions` 特性，则常规的处理程序仅捕获异常。 默认情况下[公共语言运行时 (CLR)](/dotnet/standard/clr)将不会为 Cse 调用 catch 处理程序。
+CSE 指示进程状态已损坏且未被系统捕获。 在损坏状态的情况中，如果你将方法标记有适当的 `HandleProcessCorruptedStateExceptions` 特性，则常规的处理程序仅捕获异常。 默认情况下， [公共语言运行时 (CLR)](/dotnet/standard/clr) 将不会为 CSE 调用 catch 处理程序。
 
 允许进程崩溃而不捕获这些类型的异常是最安全的选择，因为甚至日志记录代码都可允许攻击者利用内存损坏错误。
 
@@ -41,7 +40,7 @@ CSE 指示进程状态已损坏且未被系统捕获。 在损坏状态的情况
 
 若要解决此警告，请执行以下操作：
 
-- 删除`HandleProcessCorruptedStateExceptions`属性。 这将恢复为默认运行时行为，其中 CSE 不会传递到 catch 处理程序。
+- 删除 `HandleProcessCorruptedStateExceptions` 特性。 这将恢复为默认运行时行为，其中 CSE 不会传递到 catch 处理程序。
 
 - 删除常规 catch 处理程序，而不是捕获特定异常类型的处理程序。 这可能包括假定处理程序代码可以安全地处理它们 （少见） 的 Cse。
 

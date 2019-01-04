@@ -1,9 +1,6 @@
 ---
 title: 对 Office 解决方案中的错误进行故障排除
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bcc5600f38e2d53244d972e4c4c7094182bfa48c
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d99c3ba5c393638f965fa32f03a6c534d583a166
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672946"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919013"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>对 Office 解决方案中的错误进行故障排除
   在 Visual Studio 中开发 Office 解决方案时，如果执行下面的任务，可能会遇到问题：  
@@ -57,9 +54,9 @@ ms.locfileid: "50672946"
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>创建基于现有工作簿的 Excel 工作簿项目时出现的错误  
  如果创建基于现有工作簿的新 Excel 工作簿项目，可能会看到以下错误的组合。  
   
- 来自 Excel：“隐私问题警告: 此文档中包含宏、ActiveX 控件、XML 扩展包信息或 Web 组件。 其中可能包含个人信息，并且这些信息不能通过“文档检查器”删除。”  
+ 从 Excel:"隐私问题警告：本文档包含宏、 ActiveX 控件、 XML 扩展包信息或 Web 组件。 其中可能包含个人信息，并且这些信息不能通过“文档检查器”删除。”  
   
- 来自 Visual Studio：“设计器未能正确加载。”  
+ 从 Visual Studio:"设计器无法正确加载。"  
   
  如果尝试创建的项目基于其个人信息已使用文档检查器删除的工作簿，则可能会发生这些错误。 若要避免此错误，请在创建项目之前执行以下步骤：  
   
@@ -139,9 +136,9 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  此代码将导致以下编译错误：  
   
-- Visual Basic:"对类 'DocumentClass' 的引用不是允许使用 NO-PIA 模式链接其程序集时。"  
+- Visual Basic："对类 'DocumentClass' 的引用不是允许使用 NO-PIA 模式链接其程序集时。"  
   
-- Visual C#:"互操作类型不能嵌入 'Microsoft.Office.Interop.Word.DocumentClass'。 请改用适用的接口。”  
+- Visual C#:"'Microsoft.Office.Interop.Word.DocumentClass' 不能嵌入的互操作类型。 请改用适用的接口。”  
   
   若要解决此错误，请修改代码以改为引用相应的接口。 例如，应引用 <xref:Microsoft.Office.Interop.Word.Document> 接口的实例，而不是引用 <xref:Microsoft.Office.Interop.Word.DocumentClass> 对象。  
   
@@ -220,5 +217,3 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [对 Office 解决方案进行故障排除](../vsto/troubleshooting-office-solutions.md)   
  [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)   
  [Office 解决方案部署故障排除](../vsto/troubleshooting-office-solution-deployment.md)  
-  
-  

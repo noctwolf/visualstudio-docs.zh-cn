@@ -1,13 +1,8 @@
 ---
-title: 如何： 添加 Creator 方法 |Microsoft Docs
-ms.custom: ''
+title: 如何：添加 Creator 方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8aa49416a826e5100932b4741d3e536a9d2f37d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01ad692065a51d51fc1f6b72acc563688da3a217
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897337"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925415"
 ---
-# <a name="how-to-add-a-creator-method"></a>如何： 添加 Creator 方法
+# <a name="how-to-add-a-creator-method"></a>如何：添加 Creator 方法
   创建者方法将新数据添加到的数据源的实体。 业务数据连接 (BDC) 服务调用此方法时用户选择**新项**按钮**功能区**的基于模型的列表。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-add-a-creator-method"></a>若要添加 Creator 方法  
@@ -70,12 +65,10 @@ ms.locfileid: "49897337"
   
 ## <a name="see-also"></a>请参阅
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [如何： 添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何： 添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何： 添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)   
- [如何： 添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何：添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何：添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)   
+ [如何：添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 向方法中添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定义方法实例](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  
+ [如何：将参数添加到方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定义方法实例](../sharepoint/how-to-define-a-method-instance.md)  

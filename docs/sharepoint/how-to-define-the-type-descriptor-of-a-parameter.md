@@ -1,13 +1,8 @@
 ---
-title: 如何： 定义参数的类型描述符 |Microsoft Docs
-ms.custom: ''
+title: 如何：定义参数的类型描述符 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294976"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953152"
 ---
-# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>如何： 定义参数的类型描述符
+# <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>如何：定义参数的类型描述符
   类型描述符包含描述参数的数据类型的属性。 可以定义字段、实体或实体集合的类型描述符。 有关详细信息，请参阅[TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))。  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>定义参数的类型描述符  
@@ -42,7 +37,7 @@ ms.locfileid: "51294976"
   
 ### <a name="to-define-a-field"></a>定义字段  
   
-1.  在**属性**窗口中，将**名称**属性的类型描述符表示的实体类型中的字段的名称 (例如： **FirstName**)。  
+1.  在中**属性**窗口中，将**名称**类型描述符表示的实体类型中的字段的名称的属性 (例如：**FirstName**)。  
   
 2.  在列表中下一步**TypeName**属性中，选择适当的数据类型 (例如， **Int32**)。  
   
@@ -88,7 +83,7 @@ ms.locfileid: "51294976"
   
 2. 在菜单栏上依次选择**视图**，**属性窗口**。  
   
-3. 在中**属性**窗口中，将**名称**属性设置为描述实体的名称 (例如：**联系人**)。  
+3. 在中**属性**窗口中，将**名称**属性设置为描述实体的名称 (例如：**联系**)。  
   
 4. 设置**IsCollection**属性设置为**True**。 这表示此类型描述符是实体的集合。  
   
@@ -124,8 +119,7 @@ ms.locfileid: "51294976"
   
 ## <a name="see-also"></a>请参阅
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [如何： 向方法中添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定义方法实例](../sharepoint/how-to-define-a-method-instance.md)   
+ [如何：向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [如何：将参数添加到方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定义方法实例](../sharepoint/how-to-define-a-method-instance.md)   
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  

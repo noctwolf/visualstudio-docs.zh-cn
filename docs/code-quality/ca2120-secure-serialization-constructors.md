@@ -1,8 +1,7 @@
 ---
-title: CA2120：保护序列化构造函数
+title: CA2120:保护序列化构造函数
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2120
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 123bff32b847342f4081a73abb1d8b899cc0efec
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1dbb6f74b138b0ec555af06ece4b6cb11ad8b678
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548499"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899674"
 ---
-# <a name="ca2120-secure-serialization-constructors"></a>CA2120：保护序列化构造函数
+# <a name="ca2120-secure-serialization-constructors"></a>CA2120:保护序列化构造函数
 
 |||
 |-|-|
@@ -52,7 +51,7 @@ ms.locfileid: "45548499"
 ## <a name="related-rules"></a>相关的规则
  [CA2229：实现序列化构造函数](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2237：以 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237:用 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
 ## <a name="see-also"></a>请参阅
 

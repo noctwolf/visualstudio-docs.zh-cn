@@ -2,7 +2,6 @@
 title: 排序、 筛选和分组在 XML 架构资源管理器
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
 author: gewarren
@@ -10,20 +9,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3e281f8e3995cf22100d328089f1993110f756
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ad0c790ced2d25c63faab8260278b4e02d3015f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693664"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820847"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、 筛选和分组 （XML 架构资源管理器）
 
-本主题介绍了可通过选项**排序、 筛选和分组选项**上的菜单**XML 架构资源管理器**工具栏。
+本主题介绍可通过选项**排序、 筛选和分组选项**菜单上的**XML 架构资源管理器**工具栏。
 
 ## <a name="filter-options"></a>筛选器选项
 
- 下列筛选器选项可用。 默认情况下，**显示命名空间**和**显示架构文件**会选择的选项。
+ 下列筛选器选项可用。 默认情况下**显示命名空间**并**显示架构文件**选项处于选中状态。
 
 -   **显示命名空间**。
 
@@ -65,7 +64,7 @@ ms.locfileid: "34693664"
 
 ### <a name="sort-by-name"></a>按名称排序
 
- 当**按名称排序**选择选项后，全局节点进行排序顺序如下：
+ 当**按名称排序**选择选项后，全局节点按以下顺序进行排序：
 
 1.  `import` 节点（按命名空间的字母顺序）。
 
@@ -77,7 +76,7 @@ ms.locfileid: "34693664"
 
 ### <a name="document-order"></a>文档顺序
 
- **文档顺序**时，选项才可用**显示架构文件**选项。 当**文档顺序**选择后，全局节点的架构文件中出现的顺序显示。
+ **文档顺序**时，选项才可用**显示架构文件**选择选项。 当**文档顺序**选择后，全局节点的架构文件中出现的顺序显示。
 
 ## <a name="persisting-sortfilter-options"></a>保留排序/筛选器选项
 

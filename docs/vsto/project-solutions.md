@@ -1,9 +1,6 @@
 ---
 title: 项目解决方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9be194bb2812f46163a6844a9fa038ee79b5f0e7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1ac5b8a8f26112a849567777cefb907c95a98656
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670708"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909770"
 ---
 # <a name="project-solutions"></a>项目解决方案
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 提供可用于创建 Microsoft Office Project 的 VSTO 外接程序的项目模板。 VSTO 外接程序可用于自动运行项目、扩展项目功能或自定义项目用户界面 (UI)。  
@@ -42,7 +39,7 @@ ms.locfileid: "35670708"
   
  若要从 VSTO 外接程序中访问项目对象模型，使用`Application`字段的`ThisAddIn`在项目中的类。 `Application`字段返回`Microsoft.Office.Interop.MsProject.Application`表示项目的当前实例的对象。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
   
- 调入项目对象模型时，将使用项目的主互操作程序集中提供的类型。 该主互操作程序集将作为 VSTO 外接程序中的托管代码和项目中的 COM 对象模型之间的桥梁。 项目主互操作程序集中的所有类型中都定义`Microsoft.Office.Interop.MSProject`命名空间。 有关主互操作程序集的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)并[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。  
+ 调入项目对象模型时，将使用项目的主互操作程序集中提供的类型。 该主互操作程序集将作为 VSTO 外接程序中的托管代码和项目中的 COM 对象模型之间的桥梁。 项目主互操作程序集中的所有类型都在 `Microsoft.Office.Interop.MSProject` 命名空间中定义。 有关主互操作程序集的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)并[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。  
   
 ## <a name="use-the-project-object-model-documentation"></a>使用项目对象模型文档  
  有关项目对象模型的完整信息，可以参考项目 VBA 对象模型引用。 VBA 对象模型引用在项目对象模型被公开到 Visual Basic for Applications (VBA) 代码时记录该对象模型。 有关详细信息，请参阅[Project 2010 对象模型引用](http://go.microsoft.com/fwlink/?LinkId=199771)。  
@@ -67,15 +64,13 @@ ms.locfileid: "35670708"
  有关自定义项目 UI 和其他 Microsoft Office 应用程序的详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 创建在第一个 VSTO 外接程序项目](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
+ [演练：创建在第一个 VSTO 外接程序项目](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
  [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
- [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
+ [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   
  [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)   
  [Office UI 自定义](../vsto/office-ui-customization.md)   
  [Project 2010 和 Project Server 2010 中的 Office 开发](http://go.microsoft.com/fwlink/?LinkId=199016)  
-  
-  

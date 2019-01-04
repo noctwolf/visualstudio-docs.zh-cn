@@ -1,9 +1,6 @@
 ---
-title: 演练： 创建你的 Excel 的第一个文档级自定义
-ms.custom: ''
+title: 演练：创建 excel 在第一个文档级自定义项
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70e82a8b126f5292cd8efe1420c59af90ca59c3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849029"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955313"
 ---
-# <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>演练： 创建你的 Excel 的第一个文档级自定义
+# <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>演练：创建 excel 在第一个文档级自定义项
   本介绍性演练演示如何创建 Microsoft Office Excel 的文档级自定义项。 仅在特定工作簿处于打开状态时，才可使用你在这种解决方案中创建的功能。 不能使用文档级自定义项进行应用程序范围的更改，例如在任何工作簿处于打开状态时显示新的功能区选项卡。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -155,13 +152,13 @@ ms.locfileid: "49849029"
 ## <a name="next-steps"></a>后续步骤  
  既然你已经创建了一个基本的 Excel 文档级自定义项，就可以从下面这些主题中了解有关如何开发自定义项的详细信息：  
   
--   可以在文档级自定义项中执行的常规编程任务：[程序文档级自定义项](../vsto/programming-document-level-customizations.md)。  
+-   可以在文档级自定义项中执行的常规编程任务：[文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)。  
   
--   特定于 Excel 文档级自定义项编程任务： [Excel 解决方案](../vsto/excel-solutions.md)。  
+-   特定于 Excel 文档级自定义项的编程任务：[Excel 解决方案](../vsto/excel-solutions.md)。  
   
--   使用 Excel 对象模型： [Excel 对象模型概述](../vsto/excel-object-model-overview.md)。  
+-   使用 Excel 对象模型：[Excel 对象模型概述](../vsto/excel-object-model-overview.md)。  
   
--   自定义 Excel 的 UI，例如，通过将自定义选项卡添加到功能区或创建你自己的操作窗格： [Office UI 自定义](../vsto/office-ui-customization.md)。  
+-   通过自定义 Excel 的 UI，例如，将自定义选项卡添加到功能区或创建你自己的操作窗格：[Office UI 自定义](../vsto/office-ui-customization.md)。  
   
 -   使用 Visual Studio 中的 Office 开发工具提供的扩展的 Excel 对象执行是不可能通过使用 Excel 对象模型 （例如，托管的文档上承载控件和 Excel 控件绑定到数据，通过使用 Windows 窗体的任务数据绑定模型）：[通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)。  
   
@@ -179,5 +176,3 @@ ms.locfileid: "49849029"
  [生成 Office 解决方案](../vsto/building-office-solutions.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [Office 项目模板概述](../vsto/office-project-templates-overview.md)  
-  
-  

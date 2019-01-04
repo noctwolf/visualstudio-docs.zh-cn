@@ -1,13 +1,8 @@
 ---
-title: 如何： 添加 Deleter 方法 |Microsoft Docs
-ms.custom: ''
+title: 如何：添加 Deleter 方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0bc47da90356149e3fe2e1d1b888bf5ac6a877e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5b1ddbd45771637ffcdd2ad1b6d553b8c497982b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924171"
 ---
-# <a name="how-to-add-a-deleter-method"></a>如何： 添加 Deleter 方法
+# <a name="how-to-add-a-deleter-method"></a>如何：添加 Deleter 方法
   可以启用最终用户可以向模型添加 Deleter 方法从 SharePoint 站点上的外部列表中删除数据记录。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-a-deleter-method"></a>若要创建 Deleter 方法  
@@ -73,12 +68,10 @@ ms.locfileid: "49842672"
   
 ## <a name="see-also"></a>请参阅
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [如何： 添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何： 添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何： 添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)   
- [如何： 添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何：添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何：添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)   
+ [如何：添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 向方法中添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定义方法实例](../sharepoint/how-to-define-a-method-instance.md)  
-  
-  
+ [如何：将参数添加到方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定义方法实例](../sharepoint/how-to-define-a-method-instance.md)  

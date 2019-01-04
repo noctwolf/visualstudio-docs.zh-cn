@@ -2,7 +2,6 @@
 title: 使用 XML 数据时的安全注意事项
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6db64424e1b503f4835f268fad9fdc5b8648b150
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0f53b3182d238b19abd3b03b02544307718377cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572600"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989550"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>使用 XML 数据时的安全注意事项
 
@@ -25,7 +24,7 @@ ms.locfileid: "34572600"
 
  “XML 编辑器”基于 Visual Studio 文本编辑器。 它依靠 <xref:System.Xml> 和 <xref:System.Xml.Xsl> 类处理许多 XML 进程。
 
--   XSLT 转换在新的应用程序域中执行。 XSLT 转换为*沙盒*; 也就是说，你的计算机的代码访问安全策略用于确定受限的权限根据 XSLT 样式表所位置。 例如，来自 Internet 位置的样式表的权限最受限制，而复制到硬盘驱动器上的样式表则以“完全信任”权限运行。
+-   XSLT 转换在新的应用程序域中执行。 XSLT 转换为*沙盒*; 也就是说，您的计算机的代码访问安全策略用于确定受限的权限根据 XSLT 样式表所在的位置。 例如，来自 Internet 位置的样式表的权限最受限制，而复制到硬盘驱动器上的样式表则以“完全信任”权限运行。
 
 -   <xref:System.Xml.Xsl.XslCompiledTransform> 类用于将 XSLT 编译为 Microsoft 中间语言，以便提高执行时的性能。
 

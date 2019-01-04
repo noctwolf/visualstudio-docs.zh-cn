@@ -1,8 +1,7 @@
 ---
-title: 检查使用 XML 架构设计器中的内容模型视图的节点的内容模型
+title: 检查 XML 架构设计器中使用内容模型视图节点的内容模型
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 650478a92ea2dabc9aeef239a68bdff428429cd7
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: f698ab9c26b417c8f88a993863f50e0c3df574d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548591"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936095"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>如何： 检查节点上使用内容模型视图的内容模型
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>如何：检查节点上使用内容模型视图的内容模型
 
-本主题描述如何浏览节点使用[内容模型视图](../xml-tools/content-model-view.md)。
+本主题介绍如何浏览使用节点[内容模型视图](../xml-tools/content-model-view.md)。
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>创建新的 XSD 文件并显示内容模型视图中的根元素
 
@@ -27,11 +26,11 @@ ms.locfileid: "34548591"
 
 2.  单击**使用 XML 编辑器查看和编辑基础 XML 架构文件**起始视图上。
 
-3.  复制 XML 架构示例代码从[示例 XML 架构： 订单架构](../xml-tools/sample-xsd-file-purchase-order-schema.md)并将其以替换默认情况下，已将它们添加到新 XSD 文件的代码粘贴。
+3.  中的 XML 架构示例代码复制[示例 XML 架构： 采购订单架构](../xml-tools/sample-xsd-file-purchase-order-schema.md)并粘贴以替换默认情况下，已将它们添加到新 XSD 文件的代码。
 
 4.  选择`purchaseOrder`通过右键单击架构资源管理器中的元素`purchaseOrder`元素在 XML 编辑器中，然后选择**XML 资源管理器中显示**。
 
-5.  右键单击`purchaseOrder`中的 XML 资源管理器和选择**在内容模型视图中显示**。
+5.  右键单击`purchaseOrder`在 XML 资源管理器中，选择**在内容模型视图中显示**。
 
      内容模型视图显示设计图面上的 `purchaseOrder` 元素。
 
@@ -41,6 +40,6 @@ ms.locfileid: "34548591"
 
 7.  单击 `purchaseOrder` 元素下的任何节点并查看痕迹栏，以了解所选节点在架构集中的位置。
 
-8.  单击**显示文档**XSD 工具栏以切换文档中的按钮。 还可以右击设计图面来切换文档。
+8.  单击**显示文档**XSD 工具栏切换文档中的按钮。 还可以右击设计图面来切换文档。
 
 9. 右击`purchaseOrder`节点，然后选择**生成示例 XML**若要查看 XML 实例文档。

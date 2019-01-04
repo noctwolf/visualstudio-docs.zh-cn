@@ -1,9 +1,6 @@
 ---
 title: 解决方案 (。Sln) 文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - sln files, VSPackages
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f01657d1053f2172f421bf6e265aa836f930c438
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0c7879f019be8eb151d3274eb7d69aa5b947427b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864904"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935861"
 ---
 # <a name="solution-sln-file"></a>解决方案 (.Sln) 文件
 一种解决方案是用于组织项目在 Visual Studio 中的结构。 该解决方案维护基于文本的 (共享） 的.sln 和.suo （二进制、 用户特定的解决方案选项） 文件中的项目的状态信息。 .Suo 文件的详细信息，请参阅[解决方案用户选项 (。Suo) 文件](../../extensibility/internals/solution-user-options-dot-suo-file.md)。  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式遍历在文档中找到的项
-ms.custom: ''
+title: 如何：以编程方式遍历在文档中找到的项
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f36ddfa182d1a0440ca733b19c34a27b245007fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a04cf49d1414ae1cedf2d157237e53883182eb7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848054"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961833"
 ---
-# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>如何： 以编程方式遍历在文档中找到的项
+# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>如何：以编程方式遍历在文档中找到的项
   <xref:Microsoft.Office.Interop.Word.Find>类具有<xref:Microsoft.Office.Interop.Word.Find.Found%2A>属性，它返回**true**每当找到搜索的项。 你可以使用 <xref:Microsoft.Office.Interop.Word.Range> 方法循环访问在 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 中找到的所有实例。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -74,10 +71,8 @@ ms.locfileid: "49848054"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#78)]  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式搜索和替换文档中的 rext](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [如何： 以编程方式在 Word 中设置搜索选项](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [如何： 以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [如何： 以编程方式搜索后还原选定内容](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [如何：以编程方式搜索和替换文档中的 rext](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [如何：以编程方式在 Word 中设置搜索选项](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [如何：以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何：以编程方式搜索后还原选定内容](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

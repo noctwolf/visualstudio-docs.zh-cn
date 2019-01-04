@@ -1,9 +1,6 @@
 ---
 title: 创建基本项目系统，第 2 部分 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5a059562db2409dca8eca1fb53c007059456b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54e8833389d110efdcefd8d437645ef5824d8f6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967769"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>创建基本项目系统，第 2 部分
 在此系列中，在第一个演练[创建基本项目系统，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，演示如何创建基本项目系统。 本演练中的基础上基本项目系统添加 Visual Studio 模板、 属性页中和其他功能。 在开始此之前，必须完成第一个演练。  
@@ -187,9 +184,9 @@ ZipProjects:
   
 1. 重置 Visual Studio SDK 实验实例。  
   
-    上[!INCLUDE[win7](../debugger/includes/win7_md.md)]： 上**启动**菜单中，找到**Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools**文件夹，，然后选择**重置 Microsoft Visual Studio 实验实例**。  
+    在[!INCLUDE[win7](../debugger/includes/win7_md.md)]:上**启动**菜单中，找到**Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools**文件夹，，然后选择**重置 Microsoft Visual Studio 实验实例**.  
   
-    更高版本的 Windows： 上**启动**屏幕上，键入**重置 Microsoft Visual Studio\<版本 > 实验实例**。  
+    更高版本的 Windows:上**启动**屏幕上，键入**重置 Microsoft Visual Studio\<版本 > 实验实例**。  
   
 2. 显示命令提示符窗口。 当看到单词**按任意键继续**，单击**ENTER**。 在窗口关闭后，打开 Visual Studio。  
   

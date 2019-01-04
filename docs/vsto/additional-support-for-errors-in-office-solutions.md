@@ -1,8 +1,6 @@
 ---
 title: Office 解决方案错误的其他支持
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -59,12 +57,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4706360581749fbc6e84f3250324bad3663e7a9a
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 9181b74da09f87d1c19805995b527b9fbd56c52f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304449"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946287"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office 解决方案错误的其他支持
   可以使用以下资源可帮助您找到在 Visual Studio 中创建 Office 解决方案时遇到的问题的解答。  
@@ -93,5 +91,3 @@ ms.locfileid: "52304449"
  [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)   
  [Office 解决方案部署故障排除](../vsto/troubleshooting-office-solution-deployment.md)   
  [用于开发 Office 解决方案的其他资源](../vsto/additional-resources-for-developing-office-solutions.md)  
-  
-  

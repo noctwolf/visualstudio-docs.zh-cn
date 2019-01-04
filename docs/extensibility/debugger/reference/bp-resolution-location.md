@@ -1,9 +1,6 @@
 ---
 title: BP_RESOLUTION_LOCATION |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_RESOLUTION_LOCATION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dda42a65824b8fdb93ec8561f3affb59ee5d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61d58e827ba35dc9ee55ea0c2a96ceb8c0ad966e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954508"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 指定断点解析位置的结构。  
@@ -62,21 +59,21 @@ public struct BP_RESOLUTION_LOCATION {
  [C + +]一个占位符。  
   
  `unionmember1`  
- [仅限 C#]请参阅关于如何解释的备注。  
+ [C#仅]请参阅关于如何解释的备注。  
   
  `unionmember2`  
- [仅限 C#]请参阅关于如何解释的备注。  
+ [C#仅]请参阅关于如何解释的备注。  
   
  `unionmember3`  
- [仅限 C#]请参阅关于如何解释的备注。  
+ [C#仅]请参阅关于如何解释的备注。  
   
  `unionmember4`  
- [仅限 C#]请参阅关于如何解释的备注。  
+ [C#仅]请参阅关于如何解释的备注。  
   
 ## <a name="remarks"></a>备注  
  此结构是的成员[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)并[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)结构。  
   
- [仅限 C#]`unionmemberX`成员根据下表解释。 查看左侧列下方`bpType`值然后跨以确定每个`unionmemberX`成员表示和封送`unionmemberX`相应地。 请参阅一种方法来解释此结构在 C# 中的示例。  
+ [C#仅]`unionmemberX`成员根据下表解释。 查看左侧列下方`bpType`值然后跨以确定每个`unionmemberX`成员表示和封送`unionmemberX`相应地。 请参阅一种方法来解释此结构在 C# 中的示例。  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -116,9 +113,9 @@ namespace MyPackage
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   

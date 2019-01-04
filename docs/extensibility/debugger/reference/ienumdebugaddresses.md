@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugAddresses |Microsoft 文档
-ms.custom: ''
+title: IEnumDebugAddresses |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugAddresses
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfed705253a03ec550e7533f7e2ab323b7ead62a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0958ddb9aca23da5f73bd2686f86d8a0ccd826b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120931"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920480"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 此接口表示的对象实现的集合[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。  
@@ -31,22 +28,22 @@ ms.locfileid: "31120931"
 IEnumDebugAdresses : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 此接口由符号提供程序来实现的对象集的实现[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。 请注意这不是由于存在标准 COM 枚举[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)方法。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 此接口由符号提供程序来实现的对象集的实现[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。 请注意，这不是由于存在一个标准 COM 枚举[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)方法。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 此接口由[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)和[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)。  
+ 此接口将返回由[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)并[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  此接口实现以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一篇](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|检索下一组[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)枚举中的对象。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|跳过指定的数目的条目。|  
-|[重置](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|将枚举重置为第一个条目。|  
-|[克隆](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|检索当前枚举的副本。|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|检索在枚举中的项数。|  
+|[下一页](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|检索下一套[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)枚举中的对象。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|将跳过指定的数目的条目。|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugaddresses-reset.md)|将枚举重置为第一个条目。|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugaddresses-clone.md)|检索当前枚举的副本。|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugaddresses-getcount.md)|检索枚举中的条目数。|  
   
 ## <a name="remarks"></a>备注  
  调试引擎通常使用此接口来帮助确定相应的地址，以便向表达式计算器。  
@@ -54,11 +51,11 @@ IEnumDebugAdresses : IUnknown
 ## <a name="requirements"></a>要求  
  标头： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)   

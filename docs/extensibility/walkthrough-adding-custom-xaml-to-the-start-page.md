@@ -1,9 +1,6 @@
 ---
-title: 演练： 将自定义 XAML 添加到开始页 |Microsoft Docs
-ms.custom: ''
+title: 演练：将自定义 XAML 添加到开始页 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - custom start page
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b6d095ad9fb45d5cc9bd8979a267cb2ccf961f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: c792f999164c08d3a723a16872df66e69197fe16
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495617"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929596"
 ---
-# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>演练： 将自定义 XAML 添加到起始页
+# <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>演练：将自定义 XAML 添加到起始页
 本演练演示如何创建自定义 Visual Studio 起始页，其中包含 Web 浏览器。  
   
 ## <a name="adding-custom-xaml"></a>添加自定义 XAML  
@@ -89,7 +86,7 @@ ms.locfileid: "46495617"
 1.  在中**工具 / 选项 / 环境**，选择**启动**。 上**自定义起始页**列表中，选择你 *.xaml*文件，然后单击**确定**。  
   
 ## <a name="next-steps"></a>后续步骤  
- Visual Studio 起始页现在包含一个 Web 浏览器选项卡和 MyButton 选项卡将显示一个选项卡。可以创建使用具有其他功能的自定义起始页*代码隐藏*模型中添加自定义.dll，如中所示[添加到启动页的用户控件](../extensibility/adding-user-control-to-the-start-page.md)。 通过发布到生成的.vsix 文件，可以与其他用户共享自定义起始页[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)网站，或到另一个网站或网络共享。 有关详细信息，请参阅[Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
+ Visual Studio 起始页现在包含一个 Web 浏览器选项卡和 MyButton 选项卡将显示一个选项卡。可以创建使用具有其他功能的自定义起始页*代码隐藏*模型中添加自定义.dll，如中所示[添加到启动页的用户控件](../extensibility/adding-user-control-to-the-start-page.md)。 通过发布到生成的.vsix 文件，可以与其他用户共享自定义起始页[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)网站，或到另一个网站或网络共享。 有关更多信息，请参见 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)   

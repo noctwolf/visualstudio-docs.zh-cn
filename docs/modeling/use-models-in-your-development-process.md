@@ -2,7 +2,6 @@
 title: 在你的开发过程中使用模型
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -11,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25debac1e5f2e977e5dd36ec8b4a083a1a362d1b
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: b1a507a6995ceb3c04dfc3d9daf57fa341fe6fc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967215"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832813"
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 
-在 Visual Studio 中，你可以使用模型帮助你理解和更改系统、应用程序或组件。 模型能帮助你可视化系统工作的环境、阐明用户需求、定义你系统的体系结构、分析代码并确保你的代码符合要求。 请参阅[第 9 频道视频： 通过建模改善体系结构](http://go.microsoft.com/fwlink/?LinkID=252078)。
+在 Visual Studio 中，你可以使用模型帮助你理解和更改系统、应用程序或组件。 模型能帮助你可视化系统工作的环境、阐明用户需求、定义你系统的体系结构、分析代码并确保你的代码符合要求。 请参阅[第 9 频道视频：通过建模改善体系结构](http://go.microsoft.com/fwlink/?LinkID=252078)。
 
 若要查看支持每种类型的模型的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -133,7 +132,7 @@ ms.locfileid: "50967215"
 
 |**类别**|**链接**|
 |-|-|
-|**视频**|![视频链接](../data-tools/media/playvideo.gif) [MSDN 如何实现视频： 如何创建和使用 UML 模型和关系图 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif)[第 9 频道： Visual Studio 2010 中的 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif) [MSDN 如何实现系列： UML 工具和扩展性 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
+|**视频**|![链接到视频](../data-tools/media/playvideo.gif) [MSDN 如何实现视频：如何创建和使用 UML 模型和关系图 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![链接到视频](../data-tools/media/playvideo.gif)[第 9 频道：Visual Studio 2010 中的 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![链接到视频](../data-tools/media/playvideo.gif) [MSDN 如何实现系列：UML 工具和扩展性 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**论坛**|- [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 可视化和建模 SDK（DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**博客**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**技术文章和日志**|[MSDN 体系结构中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 体系结构工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|

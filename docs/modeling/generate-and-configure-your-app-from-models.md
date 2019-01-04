@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 78dc0907fa717f61b6cf883994a3ac2fd6072ba1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f542a6b1836c49838884371818058bda4f37b279
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872793"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841607"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>从模型中生成并配置你的应用程序
 你可从模型生成或配置你的应用程序的不同部件。
@@ -39,7 +38,7 @@ ms.locfileid: "49872793"
 ## <a name="configuring-your-application-from-a-model"></a>从模型进配置应用程序
  如果你希望在运行时改变应用程序的行为，则无法使用在编译应用程序前生成源代码的代码生成。 相反，您可以设计您的应用程序以读取模型，并相应地改变其行为。 有关详细信息，请参见:
 
-- [如何：在程序代码中从文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [如何：从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
   也可以以增量方式应用此方法，但一开始会有更多的工作要做。 你需要编写读取模型代码，并设置一个允许可变部分访问其值的框架。 生成泛型的可变部分比代码生成的开销更大。
 
@@ -75,5 +74,5 @@ ms.locfileid: "49872793"
 ## <a name="see-also"></a>请参阅
 
 - [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)
-- [如何：在程序代码中从文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [如何：从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

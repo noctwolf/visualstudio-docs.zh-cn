@@ -1,8 +1,7 @@
 ---
-title: CA1059：成员不应公开某些具体类型
+title: CA1059:成员不应公开某些具体类型
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1059
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9440a00b0b1aceb520b1f23abc8ad92f60213855
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0462317ff273b2cb7a967c7e093b16a695e547e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825274"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059：成员不应公开某些具体类型
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059:成员不应公开某些具体类型
 
 |||
 |-|-|
@@ -53,4 +52,4 @@ ms.locfileid: "49899651"
  它是安全地禁止显示此规则从一条消息，如果提供的具体类型的特定功能是必需的。
 
 ## <a name="related-rules"></a>相关的规则
- [CA1011：考虑将基类型作为参数传递](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+ [CA1011:请考虑将基类型作为参数传递](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

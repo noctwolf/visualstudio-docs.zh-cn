@@ -1,9 +1,6 @@
 ---
 title: Windows 窗体控件在 Office 文档概述
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -30,17 +27,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48778074587e5cf6e4a51ff2386a437e9c3922d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902488"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows 窗体控件在 Office 文档概述
   Windows 窗体控件是用户可与之交互以便输入或操作数据的对象。 在 Microsoft Office Excel 和 Microsoft Office Word 文档级项目中，您可以添加 Windows 窗体控件的文档或工作簿项目中在设计时，或以编程方式可以在运行时添加这些控件。 以编程方式可以向任何打开的文档或工作表在 VSTO 外接程序中的运行时添加这些控件，Excel 或 Word。  
   
- 有关详细信息，请参阅[如何： 添加 Windows 窗体控件添加到 Office 文档](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
+ 有关更多信息，请参见[如何：将 Windows 窗体控件添加到 Office 文档](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
@@ -121,7 +118,7 @@ ms.locfileid: "49892774"
  某些情况下，代码不会进行加载而仅显示位图，例如当用户在设计模式下打开工作簿时。 而且，如果用户在未安装 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的计算机上打开工作簿，自定义项将无法运行以加载控件，因此只有控件的位图是可见的。 在保存工作簿并将其发送给其他用户之前，应总是从工作簿上的控件中删除个人信息，以确保不会意外泄漏你的个人信息。  
   
 ### <a name="match-control-size-to-cell-size-on-an-excel-worksheet"></a>在 Excel 工作表的单元格大小匹配控件大小  
- 可以将控件设置为当父单元格的大小更改时自动重设大小。 有关详细信息，请参阅[如何： 调整工作表单元格中的控件的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)。  
+ 可以将控件设置为当父单元格的大小更改时自动重设大小。 有关更多信息，请参见[如何：调整工作表单元格中的控件的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)。  
   
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>添加由所有工作表共享的组件  
  可以将希望在所有工作表之间共享的组件（如 <xref:System.Data.DataSet>）添加到工作簿设计器而不是工作表。 该组件将出现在组件栏中。  
@@ -155,15 +152,13 @@ ms.locfileid: "49892774"
  [操作窗格概述](../vsto/actions-pane-overview.md)   
  [Windows 窗体控件](/dotnet/framework/winforms/controls/index)   
  [Office 文档上的 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
- [如何： 向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [如何： 调整工作表单元格中的控件的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
- [如何： 在打印时隐藏工作表上的控件](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
- [演练： 更改工作表格式设置使用 CheckBox 控件](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)   
- [演练： 更改文档格式设置使用 CheckBox 控件](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)   
- [演练： 在使用按钮的工作表中的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)   
- [演练： 使用按钮在文档的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)   
+ [如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [如何：调整工作表单元格中的控件的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
+ [如何：打印时隐藏工作表上的控件](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [演练：更改工作表格式设置使用 CheckBox 控件](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)   
+ [演练：更改文档格式设置使用 CheckBox 控件](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)   
+ [演练：在使用按钮的工作表中的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)   
+ [演练：在文本框中使用按钮在文档中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)   
  [Office 文档上的 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)   
- [演练： 更新的图表中使用单选按钮的文档](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)   
- [演练： 更新的图表中使用单选按钮的工作表](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
-  
-  
+ [演练：更新的图表中使用单选按钮的文档](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)   
+ [演练：更新使用单选按钮的工作表中的图表](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  

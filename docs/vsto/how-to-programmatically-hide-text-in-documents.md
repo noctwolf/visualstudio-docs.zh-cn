@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式隐藏文档中的文本
-ms.custom: ''
+title: 如何：以编程方式隐藏文档中的文本
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 83b25c37ee2ce4dd9cb1ffeda21fbda1b5f3f139
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5e820cd3b4ed9ea97d9fa7268253663e2ef328c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671569"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928430"
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>如何： 以编程方式隐藏文档中的文本
+# <a name="how-to-programmatically-hide-text-in-documents"></a>如何：以编程方式隐藏文档中的文本
   通过将 <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> 属性设置为某个特定范围文本的 <xref:Microsoft.Office.Interop.Word.Range.Font%2A> 。  
   
  例如，可以暂时隐藏中的文本<xref:Microsoft.Office.Tools.Word.Bookmark>（在文档级自定义项） 或<xref:Microsoft.Office.Interop.Word.Bookmark>（VSTO 外接程序中） 之前将文档发送到打印机。  
@@ -58,10 +55,8 @@ ms.locfileid: "35671569"
  此代码示例假定文档包含<xref:Microsoft.Office.Tools.Word.Bookmark>控件 （在文档级自定义项） 或<xref:Microsoft.Office.Interop.Word.Bookmark>控件 （在 VSTO 外接程序），名为`bookmark1`。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式打印文档](../vsto/how-to-programmatically-print-documents.md)   
- [如何： 以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [如何： 以编程方式重置 Word 文档中的范围](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [如何： 以编程方式更新书签文本](../vsto/how-to-programmatically-update-bookmark-text.md)   
+ [如何：以编程方式打印文档](../vsto/how-to-programmatically-print-documents.md)   
+ [如何：以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何：以编程方式重置 Word 文档中的范围](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [如何：以编程方式更新书签文本](../vsto/how-to-programmatically-update-bookmark-text.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

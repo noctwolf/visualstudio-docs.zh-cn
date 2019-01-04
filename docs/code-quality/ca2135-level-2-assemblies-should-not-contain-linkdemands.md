@@ -1,8 +1,7 @@
 ---
-title: CA2135：级别 2 程序集不应包含 LinkDemand
+title: CA2135:级别 2 程序集不应包含 LinkDemand
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2135
@@ -12,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08f8719a7b9434a774d00003a1b135e18c06eacb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61f41a47b7fbb27e1811bd2c9888baf01143a50f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904096"
 ---
-# <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135：级别 2 程序集不应包含 LinkDemand
+# <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135:级别 2 程序集不应包含 LinkDemand
 
 |||
 |-|-|
