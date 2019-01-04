@@ -10,18 +10,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813311"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886366"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
 域特定语言 (DSL) 解决方案将生成一个 API，可用于读取和更新 Visual Studio 中的 dsl 的实例。 此 API 将定义在从 DSL 定义生成的代码中。 本主题介绍了生成的 API。
 
-## <a name="the-example-solution-component-diagrams"></a>示例解决方案：组件图
+## <a name="the-example-solution-component-diagrams"></a>示例解决方案中：组件图
  若要创建解决方案的大部分本主题中示例的源，创建从 DSL**组件模型**解决方案模板。 这是在创建新 DSL 解决方案时显示的标准模板之一。
 
 > [!NOTE]

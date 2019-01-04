@@ -1,15 +1,10 @@
 ---
-title: 如何： 添加和删除其他程序集 |Microsoft Docs
-ms.custom: ''
+title: 如何：添加和删除其他程序集 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.CustomAssembly
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: e9653fe6ab79e3615ecb231d19dd9ee20133faf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219141"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887005"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>如何： 添加和删除其他程序集
+# <a name="how-to-add-and-remove-additional-assemblies"></a>如何：添加和删除其他程序集
   如果 SharePoint 包依赖于其他程序集的功能或数据，则可以将程序集添加到解决方案包 (.wsp)。 这样一来，在 SharePoint 服务器可确保自定义程序集随包一起安装。  
   
  您还可以添加和更改的安全控件和类资源文件与程序集关联。  
@@ -36,7 +31,7 @@ ms.locfileid: "50219141"
   
 #### <a name="to-add-an-existing-assembly"></a>若要添加的现有程序集  
   
-1.  打开**包设计器**。 有关详细信息，请参阅[如何： 自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
+1.  打开**包设计器**。 有关更多信息，请参见[如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
   
 2.  选择**高级**选项卡。  
   
@@ -52,7 +47,7 @@ ms.locfileid: "50219141"
   
 1.  打开**包设计器**。  
   
-     有关详细信息，请参阅[如何： 自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
+     有关更多信息，请参见[如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
   
 2.  选择**高级**选项卡。  
   
@@ -89,7 +84,7 @@ ms.locfileid: "50219141"
   
 #### <a name="to-delete-an-existing-assembly"></a>若要删除的现有程序集  
   
-1.  打开**包设计器**。 有关详细信息，请参阅[如何： 自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
+1.  打开**包设计器**。 有关更多信息，请参见[如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
   
 2.  选择**高级**选项卡。  
   
@@ -115,6 +110,5 @@ ms.locfileid: "50219141"
   
 ## <a name="see-also"></a>请参阅
  [创建 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)   
- [如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [如何： 添加和删除项 SharePoint 功能](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   
-  
+ [如何：自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [如何：添加和删除项 SharePoint 功能](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)   

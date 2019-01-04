@@ -1,9 +1,6 @@
 ---
-title: 演练： 为 PowerPoint 创建第一个 VSTO 外接程序
-ms.custom: ''
+title: 演练：为 PowerPoint 中创建第一个 VSTO 外接程序
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cea6e61a1afd734ca0ae52a704a2d881371f5817
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c9bef0c76f0c01c620670bf67882fd90e2e1ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882582"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875493"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>演练： 为 PowerPoint 创建第一个 VSTO 外接程序
+# <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>演练：为 PowerPoint 中创建第一个 VSTO 外接程序
   本演练演示如何为 Microsoft Office PowerPoint 创建 VSTO 外接程序中。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的演示文稿无关。 有关详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]  
@@ -139,5 +136,3 @@ ms.locfileid: "49882582"
  [生成 Office 解决方案](../vsto/building-office-solutions.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [Office 项目模板概述](../vsto/office-project-templates-overview.md)  
-  
-  

@@ -2,7 +2,6 @@
 title: 编辑 XSLT 样式表
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 72f224e91f72d2fa751ddc8b170f78b8859c43f4
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: d98fbf2a1041260370946a059599a601f57c482c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867402"
 ---
 # <a name="edit-xslt-style-sheets"></a>编辑 XSLT 样式表
 
@@ -28,7 +27,7 @@ ms.locfileid: "34548445"
 
  XSLT 关键字，如`template`， `match`，依此类推，显示在指定的 XSLT 关键字颜色**字体和颜色**设置。
 
- **波浪下划线**
+ **波浪形下划线**
 
  XML 编辑器使用已安装*xslt.xsd*文件验证 XSLT 样式表。 验证错误以蓝色的波浪形下划线显示。 “XML 编辑器”还在后台编译样式表，并使用相应的波浪形下划线报告编译器错误或警告。
 
@@ -38,7 +37,7 @@ ms.locfileid: "34548445"
 
  **查看 XSLT 输出**
 
- 可以在“XML 编辑器”中执行 XSL 转换并查看输出。 有关详细信息，请参阅[如何： 从 XML 编辑器中执行 XSLT 转换](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)。
+ 可以在“XML 编辑器”中执行 XSL 转换并查看输出。 有关更多信息，请参见[如何：从 XML 编辑器中执行 XSLT 转换](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md)。
 
  **调试 XSLT**
 
