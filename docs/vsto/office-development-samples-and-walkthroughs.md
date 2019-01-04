@@ -1,9 +1,6 @@
 ---
 title: Office 开发示例和演练
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -23,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 925886683b274ddff704771d4939c2112003bb58
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 989536860500e092a36addc74eedc4759c959160
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670609"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909783"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 开发示例和演练
   本部分包含示例应用程序、 示例代码和分步演练介绍了语法、 结构和用于生成 Microsoft Office 解决方案的技术。  
@@ -60,5 +57,3 @@ ms.locfileid: "35670609"
 |[Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)|列出有关使用 Visual Studio 中的 Office 开发编程常见问题并提供可以帮助解决常见问题的主题的链接。|  
 |[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)|提供指向有关如何创建 Microsoft Office 解决方案以及你的解决方案中的程序集的角色的信息。|  
 |[操作窗格概述](../vsto/actions-pane-overview.md)|提供名为操作窗格在文档级任务窗格的概述。|  
-  
-  

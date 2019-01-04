@@ -1,9 +1,6 @@
 ---
 title: Outlook 窗体区域中的自定义操作
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b19b65c387e4ffc59108be71c143f130b347551
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 5f7268ed6801e06477312b47f2c890b59ba62f64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441655"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869513"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 窗体区域中的自定义操作
   操作显示按钮，使用户能够对 Microsoft Office Outlook 项做出响应。 例如，若要对邮件项做出响应，用户单击**答复**，**全部答复**，或**向前**操作按钮。 每个操作创建新的邮件项，并通过使用原始项中的信息填充的项的字段。  
@@ -58,5 +55,3 @@ ms.locfileid: "53441655"
  [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)   
  [演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [将窗体区域与 Outlook 消息类相关联](../vsto/associating-a-form-region-with-an-outlook-message-class.md)  
-  
-  

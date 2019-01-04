@@ -1,8 +1,7 @@
 ---
-title: CA1409：Com 可见类型应该是可创建的
+title: CA1409:COM 可见类型应该是可创建的
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ComVisibleTypesShouldBeCreatable
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 817c2215245412faf0bb30d46aec40a953f239b5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5fd168c5174dcc403a38c6eb3e443c3711fce537
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546845"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821683"
 ---
-# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409：Com 可见类型应该是可创建的
+# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409:COM 可见类型应该是可创建的
 
 |||
 |-|-|
@@ -49,7 +48,7 @@ ms.locfileid: "45546845"
  它可以安全地禁止显示此规则的警告，如果提供了其他方法来创建并将该对象传递给 COM 客户端。
 
 ## <a name="related-rules"></a>相关的规则
- [CA1017：用 ComVisibleAttribute 标记程序集](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+ [CA1017:用 ComVisibleAttribute 标记程序集](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>请参阅
 

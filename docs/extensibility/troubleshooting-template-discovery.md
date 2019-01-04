@@ -1,26 +1,24 @@
 ---
-title: Visual Studio 中的模板发现故障排除 |Microsoft 文档
-ms.custom: ''
+title: 在 Visual Studio 中的模板发现疑难解答 |Microsoft Docs
 ms.date: 01/02/2018
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 author: gregvanl
 ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d183fd664258fbb7dbcf27c913c56c6f6160e6c4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39ebb7c49e5a8482ab0b2ef5c3a5257d0237b39c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136723"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836148"
 ---
-# <a name="troubleshooting-template-installation"></a>模板安装疑难解答
+# <a name="troubleshooting-template-installation"></a>模板安装故障排除
 
-如果在部署项目或项模板的问题，你可以启用诊断日志记录。
+如果遇到问题，部署项目或项模板，则可以启用诊断日志记录。
 
-1. 在其中创建 pkgdef 文件 Common7\IDE\CommonExtensions 文件夹安装 (例如 C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef) 包含以下内容：
+1. 创建您的安装 (例如 C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef) Common7\IDE\CommonExtensions 文件夹中的 pkgdef 文件包含以下内容：
 
     ```
     [$RootKey$\VsTemplate]
@@ -29,15 +27,15 @@ ms.locfileid: "31136723"
 
 1. 打开"开发人员命令提示"你的安装通过在 Windows 搜索中，搜索并运行`devenv /updateConfiguration`。
 
-1. 启动 Visual Studio 并启动新项目和新项对话框，以便初始化两个模板树。 模板日志现在将出现在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** （instanceid 对应于你的 Visual Studio 实例的安装 ID）。 每个模板树初始化附加到此日志条目。
+1. 启动 Visual Studio，并启动新项目和新项对话框，以便初始化两个模板树。 模板日志现在显示在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** （对应于您的 Visual Studio 实例的安装 ID 的实例 id）。 每个模板树初始化附加到此日志条目。
 
 日志文件包含以下列：
 
-- **FullPathToTemplate**，它具有以下值：
+- **FullPathToTemplate**，其中包含以下值：
 
-    - 基于清单的部署的 1
+    - 1 表示基于清单的部署
 
-    - 基于磁盘的部署的 0
+    - 0 为基于磁盘的部署的
 
 - **TemplateFileName**
 

@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式取消工作表保护
-ms.custom: ''
+title: 如何：以编程方式取消工作表保护
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e15fd2f2d4a025155bbaa1d39dc5c38155b452e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cd0aacdd168c65cda9f7ac57880e3216b3fb3daa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956135"
 ---
-# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>如何： 以编程方式取消工作表保护
+# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>如何：以编程方式取消工作表保护
   可以编程方式取消 Microsoft Office Excel 工作表保护。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -48,9 +45,7 @@ ms.locfileid: "35671605"
   
 ## <a name="see-also"></a>请参阅  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以编程方式保护工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
- [如何： 以编程方式保护工作簿](../vsto/how-to-programmatically-protect-workbooks.md)   
- [如何： 以编程方式隐藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [如何：以编程方式保护工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [如何：以编程方式保护工作簿](../vsto/how-to-programmatically-protect-workbooks.md)   
+ [如何：以编程方式隐藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
  [对 Office 项目中的对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)  
-  
-  

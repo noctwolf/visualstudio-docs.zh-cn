@@ -1,9 +1,6 @@
 ---
 title: 文档级自定义项中的缓存的数据
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c17c24dda11ea210c190a31197b783036357f2de
-ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
+ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964645"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>文档级自定义项中的缓存的数据
   文档级自定义项的主要目标是将数据从 Office 文档中的视图。 数据是指存储在文档中，包括数字和文本的信息。 视图是指用户界面和 Microsoft Office Word 和 Microsoft Office Excel 对象模型。  
@@ -66,5 +63,3 @@ ms.locfileid: "53248291"
 ## <a name="see-also"></a>请参阅  
  [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)   
  [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
-  
-  

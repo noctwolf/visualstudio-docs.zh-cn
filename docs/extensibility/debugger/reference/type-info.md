@@ -1,9 +1,6 @@
 ---
 title: TYPE_INFO |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - TYPE_INFO
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d2ba8a0f3c5b4c80a82cb19f28bb5a7f12c63b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f6068388cc422d9f72ac873f9650f1c2e1b7a151
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49810511"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823115"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 此结构指定各种类型的字段的类型有关的信息。  
@@ -66,7 +63,7 @@ public struct TYPE_INFO {
  联合的名称。  
   
  unionmember  
- [仅限 C#]封送到适当的结构类型基于`dwKind`。  
+ [C#仅]封送到适当的结构类型基于`dwKind`。  
   
 ## <a name="remarks"></a>备注  
  此结构传递给[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)填写其中的方法。 如何解释该结构的内容基于`dwKind`字段。  
@@ -74,7 +71,7 @@ public struct TYPE_INFO {
 > [!NOTE]
 >  [C + +]如果`dwKind`等于`TYPE_KIND_BUILT`，然后才可释放基础[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象时销毁`TYPE_INFO`结构。 可以通过调用 `typeInfo.type.typeBuilt.pUnderlyingField->Release()` 来完成此操作。  
   
- [仅限 C#]下表显示了如何解释`unionmember`每种类型的成员。 以下示例显示如何这是一种类型的类型。  
+ [C#仅]下表显示了如何解释`unionmember`每种类型的成员。 以下示例显示如何这是一种类型的类型。  
   
 |`dwKind`|`unionmember` 解释为|  
 |--------------|----------------------------------|  
@@ -109,9 +106,9 @@ namespace MyPackage
 ## <a name="requirements"></a>要求  
  标头： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   

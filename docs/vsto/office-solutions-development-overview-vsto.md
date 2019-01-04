@@ -1,9 +1,6 @@
 ---
 title: Office 解决方案开发概述 (VSTO)
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3586d6bc141992d7d8fe4629e7f56d04e4e247aa
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 632a584e4c49a28d1f68af726a8f32b270ffca81
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672621"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880359"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 解决方案开发概述 (VSTO)
   通过将 Microsoft Office 用作解决方案的前端，你可以利用熟悉的 Microsoft Office 用户界面和工具，例如 Word 中的文字处理功能、Excel 的数据分析功能、数据分析功能和 Outlook 的电子邮件管理功能。 你可以在 Visual Studio 中开发解决方案以自定义 Office 应用程序并添加业务流程所需的特定功能。 例如，你可以将 Word 转化为协定生成器，收集可进行编辑或不可编辑的预存在部件外部的协定。 通过使用 Excel，你可以为不同项目创建定制的自动化预算工作表。 你的用户也可以脱机使用 Office 解决方案，使复杂的解决方案比起在使用基于 Web 的体系结构时更简单实用。  
@@ -83,7 +80,7 @@ ms.locfileid: "50672621"
  使用 ClickOnce 或 Windows Installer 部署通过使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中的 Office 开发工具创建的解决方案。 通过 ClickOnce 部署，你可以创建自行更新解决方案，以最少的用户交互进行安装和运行。 Windows 安装程序 (*.msi*) 可以轻松地分发给最终用户计算机，或通过使用 Systems Management Server (SMS) 分发文件。 有关部署 VSTO Office 解决方案的详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
   
 ### <a name="install-prerequisites"></a>安装系统必备组件  
- 在最终用户可以运行你通过使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中的 Office 开发工具创建的解决方案之前，必须在其计算机上安装某些必备组件。 如果通过使用 ClickOnce 或通过创建 Windows Installer 文件部署解决方案，则可以使用你的解决方案安装这些必备组件。 有关详细信息，请参阅[用于部署 Office 解决方案必备组件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)并[如何： 以运行 Office 解决方案的最终用户计算机上安装的必备组件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
+ 在最终用户可以运行你通过使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中的 Office 开发工具创建的解决方案之前，必须在其计算机上安装某些必备组件。 如果通过使用 ClickOnce 或通过创建 Windows Installer 文件部署解决方案，则可以使用你的解决方案安装这些必备组件。 有关详细信息，请参阅[用于部署 Office 解决方案必备组件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)和[如何：若要运行 Office 解决方案的最终用户计算机上安装的必备组件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
   
 ### <a name="security"></a>安全性  
  当安装和加载 VSTO Office 解决方案时，将由 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 对该解决方案强制进行一系列安全性检查。 这些检查包括验证部署清单的位置是否受信任或用于对部署清单签名的证书是否受信任。 有关详细信息，请参阅[保护 Office 解决方案](../vsto/securing-office-solutions.md)。  
@@ -95,5 +92,3 @@ ms.locfileid: "50672621"
  [用于 Excel 的文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Word 文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  
