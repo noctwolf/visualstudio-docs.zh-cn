@@ -1,8 +1,7 @@
 ---
-title: CA1702：复合词应采用正确的大小写
+title: CA1702:组合词应采用正确的大小写
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1702
@@ -16,21 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4703c43c81df13432f45fb4ba519a02b39a839e0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 67050291a43be12bab3ac7aee71497e2f58b045b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829571"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702：复合词应采用正确的大小写
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702:组合词应采用正确的大小写
 
 |||
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
 |类别|Microsoft.Naming|
-|是否重大更改|对程序集，换行时引发。<br /><br /> 无间断-如果对类型参数引发。|
+|是否重大更改|对程序集引发重大时。<br /><br /> 无间断-如果在类型参数上引发。|
 
 ## <a name="cause"></a>原因
 
@@ -38,17 +37,17 @@ ms.locfileid: "31917838"
 
 ## <a name="rule-description"></a>规则说明
 
-标识符名称拆分为单词根据大小写。 由 Microsoft 拼写检查器库，每个连续的两个 word 组合进行检查。 如果被识别，该标识符将生成与规则的冲突。 导致冲突的复合词的示例包括"校验和"和"多部分"大小写应当为"Checksum"和"Multipart"，分别。 由于以前的常见用法，几个例外内置规则，并标记一些单个的词，如"工具栏"和"Filename"，该大小写应当作为 （在此情况下，"工具栏"和"FileName"） 的两个不同的单词。
+标识符名称拆分为根据大小写的单词。 通过 Microsoft 拼写检查器库会检查每个连续的两个单词组合。 如果它被识别，该标识符将生成与规则的冲突。 复合词而导致违反了示例包括"CheckSum"和"多部分"应采用的大小写为"Checksum"和"多部分"，分别。 由于以前经常使用，几个例外情况内置规则，并标记了几个单个单词，例如"工具栏"和"Filename"，，应采用的大小写为两个不同的单词 （在此情况下，"工具栏"和"FileName"）。
 
-命名约定提供了通用的外观的库，面向公共语言运行时。 这减少了学习曲线，才能使用新的软件库和客户更有信心库由在开发的托管代码中有专业技能的人员。
+命名约定提供了通用的外观对于库面向公共语言运行时。 这会减少所需的新软件库，并会增加客户信心库由必须在托管代码中开发的专业知识的人学习曲线。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-更改名称，以便它正确的大小写。
+更改名称，使其具有正确的大小写。
 
 ## <a name="language"></a>语言
 
-只对基于英语区域性字典当前检查拼写检查器。 你可以通过添加更改你的项目的项目文件中的区域性**CodeAnalysisCulture**元素。
+当前仅对基于英语的区域性字典检查，拼写检查器。 可以通过添加更改项目文件中的项目的区域性**CodeAnalysisCulture**元素。
 
 例如：
 
@@ -59,17 +58,17 @@ ms.locfileid: "31917838"
 ```
 
 > [!IMPORTANT]
-> 如果你将区域性设置为基于英语区域性之外的任何内容时，会以无提示方式禁用此代码分析规则。
+> 如果将区域性设置为基于英语的区域性之外的任何内容，则以无提示方式禁用此代码分析规则。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
-则可以安全地禁止显示此规则的警告，如果由拼写字典中，识别的组合词两个部件，目的是使用两个单词。
+它可以安全地禁止显示此规则的警告，如果由拼写字典中，识别的组合词的两个部分，目的是使用两个单词。
 
 ## <a name="related-rules"></a>相关的规则
 
-- [CA1701：资源字符串复合词应采用正确的大小写](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1709：标识符的大小写应当正确](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708：标识符不应仅以大小写进行区分](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1701:资源字符串复合词应采用正确的大小写](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709:标识符应采用正确的大小写](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708:标识符不应不同于用例的详细信息](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>请参阅
 

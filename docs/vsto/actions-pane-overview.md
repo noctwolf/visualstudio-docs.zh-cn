@@ -1,8 +1,6 @@
 ---
 title: 操作窗格概述
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8c7136c1f97f531600799f3aede30170813cf0a
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: de9e6a7f148612716cee55b5a21a26f1bcf04d9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821122"
 ---
 # <a name="actions-pane-overview"></a>操作窗格概述
   操作窗格是可自定义**文档操作**附加到特定的 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿的任务窗格。 操作窗格中进行托管 Office 任务窗格，以及其他内置任务窗格，如**XML 源**在 Excel 中的任务窗格或**样式和格式**Word 中的任务窗格。 可使用 Windows 窗体控件或 WPF 控件来设计操作窗格用户界面。
@@ -35,7 +33,7 @@ ms.locfileid: "52305671"
 > [!NOTE]  
 >  操作窗格不同于自定义任务窗格。 自定义任务窗格与应用程序（而不是特定文档）相关联。 你可以在 VSTO 外接程序中为某些 Microsoft Office 应用程序创建自定义任务窗格。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
 
- ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现 Excel 操作窗格内的实现： 使用 WPF 控件？](http://go.microsoft.com/fwlink/?LinkId=132763)。
+ ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：使用 Excel 操作窗格内的 WPF 控件？](http://go.microsoft.com/fwlink/?LinkId=132763).
 
 ## <a name="display-the-actions-pane"></a>显示操作窗格  
  操作窗格表示为<xref:Microsoft.Office.Tools.ActionsPane> 类。 当你创建文档级项目时，通过使用项目中 `ThisWorkbook`（针对 Excel）或 `ThisDocument`（针对 Word）类的 `ActionsPane` 字段向你的代码提供此类的实例。 若要显示操作窗格，请将 Windows 窗体控件添加到 `ActionsPane` 字段的 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> 属性。 下列代码示例将名为 `actions` 的控件添加到操作窗格。  
@@ -57,7 +55,7 @@ ms.locfileid: "52305671"
 
 3. 将自定义用户控件的实例添加到项目中 `ThisWorkbook`（针对 Excel）或 `ThisDocument`（针对 Word）类的 `ActionsPane` 字段中所内含的控件。  
 
-   有关演示此过程的更多详细信息的示例，请参阅[如何： 将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。  
+   有关演示此过程的更多详细信息的示例，请参阅[如何：将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。  
 
 ## <a name="hide-the-actions-pane"></a>隐藏操作窗格  
  虽然 <xref:Microsoft.Office.Tools.ActionsPane> 类具有 <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> 方法和 <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> 属性，但不可通过使用 <xref:Microsoft.Office.Tools.ActionsPane> 类本身的任意成员从用户界面删除操作窗格。 调用<xref:Microsoft.Office.Tools.ActionsPane.Hide%2A>方法或设置<xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>属性设置为**false**隐藏仅在操作窗格中; 上的控件不会隐藏任务窗格。  
@@ -94,20 +92,20 @@ ms.locfileid: "52305671"
 2.  在中**显示/隐藏**组中，单击**文档操作**切换按钮。  
 
 ## <a name="program-actions-pane-events"></a>程序操作窗格事件  
- 你可以将多个用户控件添加到操作窗格，然后编写代码，以便通过显示和隐藏用户控件对文档上的事件做出响应。 如果将 XML 架构元素映射到文档，则在每次插入点位于其中一个 XML 元素的内部时都可在操作窗格中显示某些用户控件。 有关详细信息，请参阅[如何： 将架构映射到 Visual Studio 内部的 Word 文档](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)并[如何： 将架构映射到 Visual Studio 内部的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)。  
+ 你可以将多个用户控件添加到操作窗格，然后编写代码，以便通过显示和隐藏用户控件对文档上的事件做出响应。 如果将 XML 架构元素映射到文档，则在每次插入点位于其中一个 XML 元素的内部时都可在操作窗格中显示某些用户控件。 有关更多信息，请参见[如何：将架构映射到 Visual Studio 内部的 Word 文档](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)和[如何：将架构映射到 Visual Studio 内部的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)。  
 
- 你还可以编写代码以响应任意对象的事件，包括主机控件、应用程序或文档事件。 有关详细信息，请参阅[演练： 针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
+ 你还可以编写代码以响应任意对象的事件，包括主机控件、应用程序或文档事件。 有关详细信息，请参见[演练：针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
 
 ## <a name="bind-data-to-controls-on-the-actions-pane"></a>将数据绑定到操作窗格上的控件  
  操作窗格上控件的数据绑定容量等于 Windows 窗体上控件的容量。 你可以将控件绑定到数据集、类型化数据集和 XML 等数据源。 有关详细信息，请参阅[数据绑定和 Windows 窗体](/dotnet/framework/winforms/data-binding-and-windows-forms)。  
 
- 可以将操作窗格上的控件和文档上的控件绑定到同一数据集。 例如，可以在操作窗格上的控件和工作表上的控件之间创建主/从关系。 有关详细信息，请参阅[演练： 将数据绑定到 Excel 操作窗格上的控件](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)。  
+ 可以将操作窗格上的控件和文档上的控件绑定到同一数据集。 例如，可以在操作窗格上的控件和工作表上的控件之间创建主/从关系。 有关详细信息，请参见[演练：将数据绑定到 Excel 操作窗格上的控件](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)。  
 
 ## <a name="validate-data-in-actions-pane-controls"></a>验证操作窗格控件中的数据  
  如果在操作窗格上控件的 <xref:System.Windows.Forms.Control.Validating> 事件处理程序中显示一个消息框，则可能在焦点从控件移动到消息框上时再次引发该事件。 若要避免此问题，请使用 <xref:System.Windows.Forms.ErrorProvider> 控件来显示任意验证错误消息。  
 
 ## <a name="user-control-stacking-order"></a>用户控件堆叠顺序  
- 如果你正在使用多个用户控件，则无论用户控件是垂直停靠还是水平停靠，你都可以编写代码以在操作窗格上堆叠这些控件。 可以使用 <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 属性的 <xref:Microsoft.Office.Tools.StackStyle> 枚举来设置操作窗格上用户控件的堆叠顺序。 有关详细信息，请参阅[如何： 管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)  
+ 如果你正在使用多个用户控件，则无论用户控件是垂直停靠还是水平停靠，你都可以编写代码以在操作窗格上堆叠这些控件。 可以使用 <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 属性的 <xref:Microsoft.Office.Tools.StackStyle> 枚举来设置操作窗格上用户控件的堆叠顺序。 有关更多信息，请参见[如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)  
 
  <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 属性可以接受下列 <xref:Microsoft.Office.Tools.StackStyle> 枚举值。  
 
@@ -125,7 +123,7 @@ ms.locfileid: "52305671"
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]  
 
 ## <a name="anchor-controls"></a>定位控件  
- 如果在用户调整在运行时操作窗格中，控件可以调整大小与操作窗格。 你可以使用 Windows 窗体控件的 <xref:System.Windows.Forms.Control.Anchor%2A> 属性将控件定位到操作窗格。 还可以相同方式将 Windows 窗体控件定位到用户控件上。 有关详细信息，请参阅[如何： 在 Windows 窗体上的控件定位](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)。  
+ 如果在用户调整在运行时操作窗格中，控件可以调整大小与操作窗格。 你可以使用 Windows 窗体控件的 <xref:System.Windows.Forms.Control.Anchor%2A> 属性将控件定位到操作窗格。 还可以相同方式将 Windows 窗体控件定位到用户控件上。 有关更多信息，请参见[如何：Windows 窗体上的控件的定位点](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)。  
 
 ## <a name="resize-the-actions-pane"></a>调整大小操作窗格  
  无法直接更改 <xref:Microsoft.Office.Tools.ActionsPane> 的大小，因为 <xref:Microsoft.Office.Tools.ActionsPane> 内嵌在任务窗格中。 但是，通过设置表示任务窗格的 <xref:Microsoft.Office.Core.CommandBar> 的 <xref:Microsoft.Office.Core.CommandBar.Width%2A> 属性，即可以编程方式更改任务窗格的宽度。 无论任务窗格时水平停靠的还是浮动的，都可更改它的高度。  
@@ -144,7 +142,7 @@ ms.locfileid: "52305671"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]  
 
 > [!NOTE]  
->  最终用户可随时手动重新定位任务窗格。 无法确保任务窗格将始终停靠在你以编程方式指示的位置。 但是，你可以检查方向更改，并确保操作窗格上的控件以正确的方向堆叠。 有关详细信息，请参阅[如何： 管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)。  
+>  最终用户可随时手动重新定位任务窗格。 无法确保任务窗格将始终停靠在你以编程方式指示的位置。 但是，你可以检查方向更改，并确保操作窗格上的控件以正确的方向堆叠。 有关更多信息，请参见[如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)。  
 
  设置<xref:Microsoft.Office.Tools.ActionsPane.Top%2A>并<xref:Microsoft.Office.Tools.ActionsPane.Left%2A>的属性<xref:Microsoft.Office.Tools.ActionsPane>不会更改其位置，因为<xref:Microsoft.Office.Tools.ActionsPane>对象内嵌在任务窗格。  
 
@@ -157,9 +155,9 @@ ms.locfileid: "52305671"
  [Office 解决方案中使用 WPF 控件](../vsto/using-wpf-controls-in-office-solutions.md)   
  [Office UI 自定义](../vsto/office-ui-customization.md)   
  [对 Office 项目中的对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   
- [如何： 将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [演练： 向操作窗格中的文档中插入文本](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
- [演练： 将数据绑定到 Word 操作窗格上的控件](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)   
- [演练： 将数据绑定到 Excel 操作窗格上的控件](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)   
- [如何： 管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [演练： 向操作窗格中的文档中插入文本](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [如何：将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [演练：从操作窗格的文档中插入文本](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
+ [演练：将数据绑定到 Word 操作窗格上的控件](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)   
+ [演练：将数据绑定到 Excel 操作窗格上的控件](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)   
+ [如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [演练：从操作窗格的文档中插入文本](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  

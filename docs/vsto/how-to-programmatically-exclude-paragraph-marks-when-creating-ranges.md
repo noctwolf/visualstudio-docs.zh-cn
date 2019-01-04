@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式创建范围时排除段落标记
-ms.custom: ''
+title: 如何：以编程方式排除段落标记创建范围时
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 11015f0afb59f0d1aa71bad4adbc48b6c99887a2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab8dc8e41983e6dd4bef8b3f7ba550853e32addd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847083"
 ---
-# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>如何： 以编程方式创建范围时排除段落标记
+# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>如何：以编程方式排除段落标记创建范围时
   当你创建基于段落的 <xref:Microsoft.Office.Interop.Word.Range> 对象时，所有非打印字符（如段落标记）都将纳入范围。 可将源段落的文本插入到目标段落。 如果不希望将目标段落拆分为单独的段落，则必须先从源段落中删除段落标记。 此外，由于段落标记中存储着段落格式设置信息，所以当你将范围插入到现有段落时可能需要删除它。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -66,7 +63,7 @@ ms.locfileid: "35670298"
      [!code-vb[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#31)]
      [!code-csharp[Trin_VstcoreWordAutomation#31](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#31)]  
   
-6.  替换 `secondRange`中的文本，包括段落标记。  
+6.  替换 `secondRange` 中的文本，包括段落标记。  
   
      [!code-vb[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#32)]
      [!code-csharp[Trin_VstcoreWordAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#32)]  
@@ -90,7 +87,7 @@ ms.locfileid: "35670298"
      [!code-vb[Trin_VstcoreWordAutomation#35](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#35)]
      [!code-csharp[Trin_VstcoreWordAutomation#35](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#35)]  
   
-10. 还原 `firstRange`中的原始段落文本。  
+10. 还原 `firstRange` 中的原始段落文本。  
   
      [!code-vb[Trin_VstcoreWordAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#36)]
      [!code-csharp[Trin_VstcoreWordAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#36)]  
@@ -119,11 +116,9 @@ ms.locfileid: "35670298"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式扩展文档中的范围](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [如何： 以编程方式折叠范围或在文档中的选定内容](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [如何： 以编程方式向 Word 文档中插入文本](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [如何： 以编程方式重置 Word 文档中的范围](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [如何： 以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何：以编程方式扩展文档中的范围](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [如何：以编程方式折叠范围或在文档中的选定内容](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [如何：以编程方式向 Word 文档中插入文本](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [如何：以编程方式重置 Word 文档中的范围](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [如何：以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

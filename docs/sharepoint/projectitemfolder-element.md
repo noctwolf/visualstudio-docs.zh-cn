@@ -1,9 +1,6 @@
 ---
 title: ProjectItemFolder 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 54d47165117b88041346e9b666db8db17a20ddb9
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: fdecca0b987efd22d4ddd9d3555ede2601b8205e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855612"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder 元素
   表示映射的文件夹。  
@@ -69,4 +66,3 @@ ms.locfileid: "37118789"
 ## <a name="see-also"></a>请参阅
  [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [如何： 添加和移除映射的文件夹](../sharepoint/how-to-add-and-remove-mapped-folders.md)  
-  

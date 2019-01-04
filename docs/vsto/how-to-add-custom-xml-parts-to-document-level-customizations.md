@@ -1,9 +1,6 @@
 ---
 title: 如何：将自定义 XML 部件添加到文档级自定义项
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f3e817e91c4a99f5a3aae6decdc500469c10b8f
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 80d8b809464cd9209b8125595fef8793fc052943
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647552"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846381"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>如何：将自定义 XML 部件添加到文档级自定义项
   你可以通过在文档级自定义中创建自定义 XML 部件将 XML 数据存储在 Microsoft Office Excel 工作表或 Microsoft Office Word 文档中。 有关详细信息，请参阅[自定义 XML 部件概述](../vsto/custom-xml-parts-overview.md)。  
@@ -63,4 +60,3 @@ ms.locfileid: "53647552"
 ## <a name="see-also"></a>请参阅  
  [自定义 XML 部件概述](../vsto/custom-xml-parts-overview.md)   
  [如何：使用 VSTO 外接程序将自定义 XML 部件添加到文档](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
-  

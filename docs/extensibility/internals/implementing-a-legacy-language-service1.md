@@ -1,9 +1,6 @@
 ---
-title: 实现旧语言 Service1 |Microsoft 文档
-ms.custom: ''
+title: 实现旧版语言服务 1 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
@@ -13,30 +10,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0486b8ad035d64f542d48f1e304413780958d90c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3218a8cf1c61fb9b88520702a953f2288e19b3c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129323"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855882"
 ---
-# <a name="implementing-a-legacy-language-service"></a>实现旧语言服务
-你可以使用托管的包框架 (MPF) 中的类来实现旧语言服务支持各种功能，如语法突出显示、 大括号匹配和 IntelliSense 完成。  
+# <a name="implementing-a-legacy-language-service"></a>实现旧版语言服务
+您可以使用托管的包框架 (MPF) 中的类来实现旧版语言服务支持各种功能，如语法突出显示、 大括号匹配和 IntelliSense 完成。  
   
- 旧语言服务实现的 VSPackage，一部分但实现语言服务功能的新方法是使用 MEF 扩展。 若要了解有关实现语言服务的新方式的详细信息，请参阅[编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。  
+ 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现语言服务的新方法的详细信息，请参阅[编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。  
   
 > [!NOTE]
->  我们建议你开始使用新的编辑器 API 越早越好。 这将改善语言服务的性能，并让您充分利用新的编辑器功能。  
+>  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
   
 ## <a name="in-this-section"></a>本节内容  
  [旧版语言服务概述](../../extensibility/internals/legacy-language-service-overview.md)  
  MPF 中支持的语言服务功能的概述。  
   
- [实现旧语言服务](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
- 描述什么是需要通过使用 MPF 实现语言服务。  
+ [实现旧版语言服务](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
+ 介绍什么是通过使用 MPF 实现语言服务所必需。  
   
- [注册旧语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)  
- 介绍注册具有的 MPF 基于语言服务所需的步骤[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+ [注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)  
+ 介绍的步骤所需注册一种基于 MPF 的语言服务，具有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
  [旧版语言服务分析器和扫描程序](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
  介绍通过使用 MPF 实现的语言服务的所有功能所需的两个分析器。  
@@ -44,8 +41,8 @@ ms.locfileid: "31129323"
  [演练：创建旧版语言服务](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)  
  提供在 VSPackage 中实现的 MPF 语言服务所需的基本步骤。  
   
- [演练：获取安装代码片段（旧版实现）的列表](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)  
- 演示安装的代码代码段的列表中检索的技术。  
+ [演练：获取安装的代码片段 （旧版实现） 的列表](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)  
+ 演示如何检索已安装的代码片段的列表的技术。  
   
- [旧语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)  
- 提供的主题链接，必须执行哪些使用 MPF 实现的语言服务的所有功能的详细信息。
+ [旧版语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)  
+ 提供主题的链接必须做什么来使用 MPF 实现的语言服务的所有功能的详细信息。

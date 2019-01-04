@@ -1,9 +1,6 @@
 ---
-title: 测试区域 1： 从源代码管理添加到打开 |Microsoft Docs
-ms.custom: ''
+title: 测试区域 1:从源代码管理添加到打开 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
@@ -14,28 +11,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3541fc3a4d4b802e4cd89b14dac6d6caf222152
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b50ff6c737b75fcdbd9a6fc265928301eeb4467
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842666"
 ---
-# <a name="test-area-1-add-toopen-from-source-control"></a>测试区域 1： 从源代码管理添加到 / Open
+# <a name="test-area-1-add-toopen-from-source-control"></a>测试区域 1:从源代码管理添加到 / Open
 此源代码管理插件测试区域介绍如何将解决方案或项目受源代码管理和从源代码管理检索它们。  
   
 ## <a name="command-menu-access"></a>命令菜单访问  
  以下[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]测试用例中使用集成的开发环境菜单路径：  
   
-- 有关[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，从源代码管理打开：**文件**，**打开**，**项目**/**解决方案**; 查找中[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]位置。  
+- 有关[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]、 源代码管理中打开：**文件**，**开放**，**项目**/**解决方案**; 查找中[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]位置。  
   
-- 有关其他源代码管理插件，从源代码管理打开：**文件**，**源代码管理**，**从源代码管理打开**。  
+- 其他源代码管理插件，请从源代码管理打开：**文件**，**源控件**，**源代码管理中打开**。  
   
-- 添加到源代码管理：**文件**，**源代码管理**，**将解决方案添加到源代码管理文件**，**源代码管理**，**添加所选项目添加到源代码管理**。  
+- 将添加到源代码管理：**文件**，**源控件**，**解决方案添加到源代码管理文件**，**源代码管理**，**将所选的项目添加到源代码管理**.  
   
 - 快捷菜单 （项目/解决方案），**将解决方案添加到源代码管理**。  
   
-- 从源代码管理添加：**文件**，**源代码管理**，**从源代码管理添加项目**。  
+- 从源代码管理添加：**文件**，**源控件**，**从源代码管理添加项目**。  
   
 - 有关[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，添加从源控件也会从可用**文件**，**添加**，**现有项目**; 查找中[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]位置。  
   
@@ -57,7 +54,7 @@ ms.locfileid: "49861652"
 ## <a name="test-cases"></a>测试用例  
  以下是为添加的特定测试用例向 / 从源代码管理测试区域打开。  
   
-### <a name="case-1a-add-solution-to-source-control"></a>Case 1a： 将解决方案添加到源代码管理  
+### <a name="case-1a-add-solution-to-source-control"></a>Case 1a:将解决方案添加到源代码管理  
  此测试用例主要介绍在将解决方案添加到源代码管理。  
   
 |操作|测试步骤|若要验证的预期的结果|  
@@ -77,7 +74,7 @@ ms.locfileid: "49861652"
 |打开包含的本地或从源代码管理 IIS Web 项目的解决方案|1.创建本地或 IIS Web 项目。<br />2.将解决方案添加到源代码管理。<br />3.关闭解决方案。<br />4.到新位置，请从源代码管理中打开的解决方案。|从源代码管理打开解决方案/项目。|  
 |打开包含从源代码管理的远程站点 Web 项目的解决方案|1.创建一个远程站点 Web 项目。<br />2.将解决方案添加到源代码管理。 如果此步骤成功，则继续下一步。<br />3.关闭解决方案。<br />4.到新位置，请从源代码管理中打开的解决方案。|`Result from Step 2:`<br /><br /> 远程站点 Web 不在源控件下。<br /><br /> `Result from Step 4:`<br /><br /> 从源代码管理打开解决方案。<br /><br /> 已加载远程网站项目，但不在源控件下。|  
   
-### <a name="case-1c-add-solution-from-source-control"></a>案例 1 c： 从源代码管理添加解决方案  
+### <a name="case-1c-add-solution-from-source-control"></a>案例 1 c:从源代码管理添加解决方案  
  此测试用例主要介绍在从源代码管理添加解决方案。  
   
 |操作|测试步骤|若要验证的预期的结果|  

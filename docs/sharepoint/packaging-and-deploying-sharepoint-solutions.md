@@ -1,13 +1,8 @@
 ---
 title: 打包和部署 SharePoint 解决方案 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c1213d4dd2cdd347fe1d29f594fa7614df50b1e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863264"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849014"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>打包和部署 SharePoint 解决方案
   通常情况下，SharePoint 解决方案部署到 SharePoint 服务器通过使用解决方案包 (.wsp) 文件。 若要将你的 SharePoint 项目项组织到功能并创建要部署您的 SharePoint 功能的程序包，可以使用 Visual Studio。  
@@ -40,9 +35,9 @@ ms.locfileid: "49863264"
 -   [部署 SharePoint 解决方案中的文件](#DeployingFiles)  
   
 ## <a name="create-features-and-packages"></a>创建功能和包
- 可以使用 Visual Studio 到相关的 SharePoint 元素进行分组*功能*。 例如，联系人列表定义的功能可能包括列表实例和列表定义。 可以将这两个元素合并到单个功能以进行部署。 有关功能的详细信息，请参阅[构建基块： 功能](http://go.microsoft.com/fwlink/?LinkID=169183)。  
+ 可以使用 Visual Studio 到相关的 SharePoint 元素进行分组*功能*。 例如，联系人列表定义的功能可能包括列表实例和列表定义。 可以将这两个元素合并到单个功能以进行部署。 有关功能的详细信息，请参阅[构建基块：功能](http://go.microsoft.com/fwlink/?LinkID=169183)。  
   
- 接下来，可以创建 SharePoint 解决方案包 (*.wsp*) 将捆绑的多个功能，站点定义、 程序集和其他文件到一个包，它将文件存储在 SharePoint 部署的文件所需的格式在服务器中。 有关详细信息，请参阅[构建基块： 解决方案](http://go.microsoft.com/fwlink/?LinkID=169186)。  
+ 接下来，可以创建 SharePoint 解决方案包 (*.wsp*) 将捆绑的多个功能，站点定义、 程序集和其他文件到一个包，它将文件存储在 SharePoint 部署的文件所需的格式在服务器中。 有关详细信息，请参阅[构建基块：解决方案](http://go.microsoft.com/fwlink/?LinkID=169186)。  
   
 ## <a name="feature-and-packaging-tool-support"></a>功能和打包工具支持
  可以使用 Visual Studio 中的 SharePoint 开发工具来快速将 SharePoint 文件组织到功能和更轻松地部署的解决方案包。 可以使用以下工具来配置功能和解决方案包。  
@@ -81,9 +76,9 @@ ms.locfileid: "49863264"
   
   在 Visual Studio 中的 SharePoint 开发工具具有验证规则，以帮助确保解决方案包的位置正确。 此外，这些规则确认 *.wsp*可以成功部署和 SharePoint 服务器上激活解决方案文件。 有关功能的 XML 架构的详细信息，请参阅[功能架构](http://go.microsoft.com/fwlink/?LinkID=169192)。  
   
-  可以向 SharePoint 项目系统中添加自定义功能和包验证规则。 有关详细信息，请参阅[如何： 创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。  
+  可以向 SharePoint 项目系统中添加自定义功能和包验证规则。 有关更多信息，请参见[如何：创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。  
   
-  有关打包资源管理器的详细信息，请参阅[如何： 添加和删除使用打包资源管理器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
+  有关打包资源管理器的详细信息，请参阅[如何：添加和删除使用打包资源管理器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
   
 ### <a name="solution-explorer"></a>“解决方案资源管理器”
  解决方案资源管理器可用于导航，并打开 SharePoint 项目的文件。 在解决方案资源管理器中使用上下文菜单以添加功能，功能事件接收器和功能的资源。 此外，您可以打开功能设计器和包设计器，若要配置的功能和部署的包。  
@@ -109,4 +104,3 @@ ms.locfileid: "49863264"
 ## <a name="see-also"></a>请参阅
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

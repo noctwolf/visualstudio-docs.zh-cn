@@ -1,9 +1,6 @@
 ---
 title: 添加命令行开关 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - command-line switches, adding
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f8349cc71bf0541d726a47bf5b875724c89bcc6
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3a3dbe187407380c338488b0006b186d6875bfbf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738584"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827502"
 ---
 # <a name="add-command-line-switches"></a>添加命令行开关
 可以添加适用于你的 VSPackage 的命令行开关时*devenv.exe*执行。 使用<xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>声明的开关和其属性的名称。 在此示例中，MySwitch 的交换机添加为子类名为 VSPackage **AddCommandSwitchPackage**不带任何参数且会自动加载 VSPackage。  

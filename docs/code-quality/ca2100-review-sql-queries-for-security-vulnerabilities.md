@@ -1,8 +1,7 @@
 ---
-title: CA2100：检查 SQL 查询中是否有安全漏洞
+title: CA2100:检查 SQL 查询是否存在安全漏洞
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - Review SQL queries for security vulnerabilities
@@ -21,14 +20,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c8ba3b5cd30b71828a34c4b3dc8d7b4584b613
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a09567184ab1f02cba8ff55157a2d506989c98ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859041"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869068"
 ---
-# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100：检查 SQL 查询中是否有安全漏洞
+# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100:检查 SQL 查询是否存在安全漏洞
 
 |||
 |-|-|

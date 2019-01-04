@@ -1,9 +1,6 @@
 ---
-title: IDebugProgramProvider2 |Microsoft 文档
-ms.custom: ''
+title: IDebugProgramProvider2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramProvider2
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec46442757d7e4b59437db310a45500b2e9d0906
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6fca410ed773b2a062623465c78942484c692f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120554"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857340"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 此注册的接口允许会话调试管理器 (SDM) 以获取有关已"发布"通过的程序的信息[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)接口。  
@@ -31,30 +28,30 @@ ms.locfileid: "31120554"
 IDebugProgramProvider2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 调试引擎 (DE) 实现此接口可提供有关正在调试的程序的信息。 使用指标注册表 DE 节中注册此接口`metricProgramProvider`中所述， [SDK 以便进行调试的帮助器](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 调试引擎 (DE) 实现此接口以提供有关正在调试的程序的信息。 在注册表使用该度量值的 DE 部分中注册此接口`metricProgramProvider`，如中所述[以便进行调试的 SDK 帮助程序](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 调用 COM 的`CoCreateInstance`起作用`CLSID`从注册表获取的程序提供程序。 请参阅示例。  
+ 调用 COM 的`CoCreateInstance`函数和`CLSID`从注册表获取的程序提供程序。 请参阅示例。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|获取有关程序运行，筛选各种不同的方式的信息。|  
-|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|获取一个程序节点中，给定一个特定的进程 id。|  
-|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|建立要监视的特定类型的进程相关联的提供程序事件的回调。|  
+|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|获取程序运行，以通过多种方式筛选的相关信息。|  
+|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|获取的程序节点中，给定一个特定的进程 id。|  
+|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|建立一个回调，以监视与特定类型的进程相关联的提供程序事件。|  
 |[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|建立所需的 DE 任何特定于语言的资源的区域设置。|  
   
 ## <a name="remarks"></a>备注  
- 通常情况下，一个进程使用此接口，若要了解有关在该进程中运行的程序。  
+ 通常情况下，一个进程使用此接口来找出有关该进程中运行的程序。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>示例  
   
@@ -85,7 +82,7 @@ IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [用于调试的 SDK 帮助程序](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

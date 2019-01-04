@@ -1,9 +1,6 @@
 ---
-title: 嵌套项目 |Microsoft 文档
-ms.custom: ''
+title: 嵌套项目 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project nesting
@@ -16,33 +13,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35d0f4f8906acc08733894d1c24b6d8c2199e1f7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 38b0544d58362a37113b0e193324a2ef5b8cdb49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131155"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860983"
 ---
 # <a name="nesting-projects"></a>嵌套项目
-企业应用程序开发人员使用 VS 包可以方便地进行分组相似类型的项目中合并在一起[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*项目嵌套*。 例如，企业级模板项目到类别中使用嵌套的项目与组项目。 商业外观项目、 Web UI 项目，依次类推组合在一起一个类别中。  
+企业应用程序开发人员使用 VS 包可以方便地分组相似类型的项目中合并在一起[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过使用*项目嵌套*。 例如，企业级模板项目为类别使用嵌套的组项目到项目。 商业外观项目、 Web UI 项目等组合在一起在一个类别中。  
   
- 在此方案中，的项目开发人员可以嵌套在每个父项目，下面的数量没有限制尽管开发人员可以以编程方式提供限制。 这种类型的分组还可递归的在这种情况下为子项目的相同类型的项目可以嵌套在子成为子项目的父级的子级的子项目。  
+ 在此方案中，是开发人员可以嵌套在每个父项目，下面的项目数没有限制过程，尽管开发人员可以以编程方式提供限制。 这种类型的分组还可以使可递归的在这种情况下为子项目的相同类型的项目可以嵌套在要成为子项目的子级的父级的子项目的子级。  
   
- 项目嵌套不内部属于[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 你必须编写代码以启用嵌套和子项目子项目中的嵌套。 父项目是一个特殊的 VSPackage 或项目类型，创建并注册其自己的 GUID，其中包含实现项目嵌套所需的代码。  
+ 项目嵌套不是内部函数的一部分[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 您必须编写代码来启用嵌套和子项目中的嵌套子项目。 父项目是一个特殊的 VSPackage 或项目类型，创建并注册其自己的 GUID 包括实现嵌套项目所需的代码。  
   
- 你可以在 C# Example.Nested 项目示例找到嵌套项目的示例。  
+ C# Example.Nested 项目示例中，可以找到嵌套项目的示例。  
   
-## <a name="nested-projects-example"></a>嵌套的项目示例  
+## <a name="nested-projects-example"></a>嵌套的项目的示例  
  ![嵌套项目解决方案](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
-嵌套的项目示例  
+嵌套的项目的示例  
   
-## <a name="see-also"></a>另请参阅  
- [如何： 实现嵌套的项目](../../extensibility/internals/how-to-implement-nested-projects.md)   
- [卸载和重新加载嵌套项目时的注意事项](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)   
- [嵌套的项目的向导支持](../../extensibility/internals/wizard-support-for-nested-projects.md)   
+## <a name="see-also"></a>请参阅  
+ [如何：实现嵌套的项目](../../extensibility/internals/how-to-implement-nested-projects.md)   
+ [有关卸载和重新加载嵌套项目的注意事项](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)   
+ [嵌套项目的向导支持](../../extensibility/internals/wizard-support-for-nested-projects.md)   
  [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)   
- [实现处理嵌套的项目的命令](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)   
- [筛选嵌套项目 AddItem 对话框](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
- [清单： 创建新项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [实现嵌套项目的命令处理](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)   
+ [筛选嵌套项目的 AddItem 对话框](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
+ [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [上下文参数](../../extensibility/internals/context-parameters.md)   
  [向导 (.Vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)

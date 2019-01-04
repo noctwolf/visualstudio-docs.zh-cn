@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 的常见控件模式 |Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e10fdcea9819c34735f285c78a0e2ebb0650f64a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5c281aa989abc32e4287e49d05af03b198adc013
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512312"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832630"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio 的常见控件模式
 ##  <a name="BKMK_CommonControls"></a> 公共控件  
@@ -69,7 +66,7 @@ ms.locfileid: "39512312"
   
 -   所需的字段应有**\<所需 >** 一样中其水印。 不应更改除中极少数情况下的背景的颜色。  
   
--   验证错误： 请参阅[Visual Studio 的通知和进度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
+-   错误验证：请参阅[Visual Studio 的通知和进度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)  
   
 -   输入的字段，应调整以适应其内容，不适合在其中显示它们，在窗口的宽度也以任意匹配长的字段，例如，路径的长度。 长度可能会向用户指示的关于字段中允许多少个字符的限制。  
   
@@ -371,23 +368,23 @@ ms.locfileid: "39512312"
 ##### <a name="tree-view-control"></a>树视图控件  
 Visual Studio 树控件应遵循通用的键盘导航：  
   
--   **向上箭头：** 选定的树中向上移动项目  
+-   **向上键：** 选择项目树中向上移动  
   
--   **向下箭头：** 通过树向下移动选择的项  
+-   **向下箭头：** 选择通过树向下移动的项  
   
 -   **向右箭头：** 展开树中的节点  
   
--   **向左箭头：** 折叠树中的节点  
+-   **向左的箭头：** 折叠树中的节点  
   
--   **输入密钥：** 启动，加载、 执行所选的项  
+-   **输入密钥：** 启动、 加载和执行所选的项  
   
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid （树视图和网格视图）  
 Trid 控件是包含 grid 中的树视图的复杂控件。 展开、 折叠，和导航树应遵守相同的键盘命令为树视图中，添加以下内容：  
   
 -   **向右箭头：** 展开的节点。 展开节点后，它应继续导航到在右侧最接近的列。 导航应停止的行的末尾。  
   
--   **选项卡上：** 导航到在右侧的最接近的单元格。  在行结束时，导航到下一行将继续。  
+-   **选项卡上：** 导航到最接近的单元格右侧。  在行结束时，导航到下一行将继续。  
   
--   **按 shift + Tab:** 导航到左侧的最接近的单元格。  在行的开头，导航到上一行中最右边的单元格将继续。  
+-   **Shift + 选项卡：** 导航到左侧的最接近的单元格。  在行的开头，导航到上一行中最右边的单元格将继续。  
   
 ![在 Visual Studio 中的 trid 控件](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />在 Visual Studio 中的 trid 控件

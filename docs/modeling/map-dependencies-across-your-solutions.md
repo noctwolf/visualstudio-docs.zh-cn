@@ -17,13 +17,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 084518e27924c714b2e1ca7982389fb93ff274cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861619"
 ---
 # <a name="map-dependencies-with-code-maps"></a>使用代码映射来映射依赖项
 
@@ -240,7 +239,7 @@ ms.locfileid: "49896934"
 
 ## <a name="see-also"></a>请参阅
 
-- [视频： 了解使用 Visual Studio 2015 代码图的代码设计](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
+- [视频：了解使用 Visual Studio 2015 代码图的代码设计](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)]
 - [使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)
 - [调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [使用代码图分析查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)

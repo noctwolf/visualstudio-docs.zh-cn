@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 的用户体验基础知识 |Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2942e64a4c964ad696d1eb2c0d4bf3c777b87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6cd0824d245e835159e3887ce7286b2e55876ba3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848587"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874862"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 的用户体验基础知识
 ## <a name="best-practices"></a>最佳实践  
@@ -63,7 +60,7 @@ ms.locfileid: "49848587"
  - 初始对话框的高度应**小于 700 像素**，因此它适合在 96 dpi，在 IDE 框架的最小分辨率。
   
 ### <a name="high-density-displays"></a>高密度显示  
- Visual Studio 中的 UI 必须非常适合在所有 DPI 缩放的 Windows 支持现成的因素： 150%、 200%和 250%。  
+ Visual Studio 中的 UI 必须适用于 Windows 支持在初始状态下的所有 DPI 缩放因素：150%、 200%和 250%。  
   
 ## <a name="anti-patterns"></a>反模式  
  Visual Studio 包含许多 UI 的示例，请按照我们的指导原则和最佳实践。 为了保持一致，开发人员通常借用产品 UI 设计模式类似于他们在开发。 尽管这是一个不错的方法，可帮助我们驱动器的用户交互和直观设计保持一致，我们有时提供功能的一些详细信息不满足我们的指导原则由于计划限制或脱离优先顺序。 在这些情况下，我们不希望复制其中一种"反模式"的团队因为它们数量不正确或不一致的 UI，在 Visual Studio 环境的不断增加。  
@@ -79,7 +76,7 @@ ms.locfileid: "49848587"
 #### <a name="anti-pattern-solution"></a>后置反模式解决方案  
  只要用户启动的操作，它们已完成任务之前，立即将关键停止图标旁边需要配置的区域。  
   
-#### <a name="example-manifest-designer-declarations"></a>示例： 清单设计器中声明  
+#### <a name="example-manifest-designer-declarations"></a>示例:清单设计器声明  
  立即向列表添加一个声明将将其放在错误状态，仍然存在，直到用户设置所需的属性。  
   
  在这种情况下，没有其他需考虑因为用于警报的图标会包含"&times;"图标，因此常见的删除图标不能使用其旁边。 因此，UI 使用一个删除按钮，更笨拙的控件。  
@@ -120,15 +117,15 @@ ms.locfileid: "49848587"
 ### <a name="using-command-bars-for-settings"></a>使用命令栏设置  
  **图 A**表示此反模式： 将下一个适用于多个只是命令的命令按钮的设置。 在这段代码中，有除了开始调试命令 — 等浏览器、 启动而无需调试和单步执行中的视图 — 将遵从了所选的设置。  
 
-  ![图 a： 命令栏反模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti 模式 FigureA")<br />图 a： 命令栏反模式
+  ![图 a:命令栏反模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti 模式 FigureA")<br />图 a:命令栏反模式
   
  如中所示稍好，但仍会将此类型的设置放在工具栏中，**图 B**。拆分按钮执行较少的空间，因此改进通过下拉列表，而这两个设计仍在使用工具栏以提升内容实际上并不是一个命令。  
  
- ![图 b： 更好，但仍命令栏反模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti 模式 FigureB")<br />图 b： 更好，但仍命令栏反模式
+ ![图 b:更好，但仍命令栏反模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti 模式 FigureB")<br />图 b:更好，但仍命令栏反模式
  
   在正确的方法中所示**图 C**，设置绑定到的一系列命令。 没有要设置没有全局设置，我们只需四个命令之间切换。 这是唯一一种在工具栏中的命令在可接受。 
 
- ![图 c： 更正使用的 Visual Studio 命令栏模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti 模式 FigureC")<br />图 c： 正确使用 Visual Studio 命令栏模式
+ ![图 c:Visual Studio 命令栏模式的正确用法](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti 模式 FigureC")<br />图 c:Visual Studio 命令栏模式的正确使用
    
 ### <a name="control-anti-patterns"></a>控制反模式  
  若干反模式是只是不正确的使用情况或表示法的控件或控件组。  
@@ -165,6 +162,6 @@ ms.locfileid: "49848587"
 #### <a name="using-click-here-for-links"></a>使用"单击此处"链接  
  超链接应该是自我描述。 它是一种反模式使用"单击此处"或任何类似的变体。  
   
- **错误：** "单击此处了解有关如何创建一个新的项目。"
+ **错误：**"单击此处了解有关如何创建一个新的项目。"
   
- **良好：** "如何创建一个新的项目？"
+ **很好：**"如何创建一个新的项目？"

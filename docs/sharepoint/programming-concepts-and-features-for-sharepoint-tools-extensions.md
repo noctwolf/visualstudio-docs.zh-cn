@@ -1,9 +1,6 @@
 ---
 title: 编程概念和功能的 SharePoint 工具扩展 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3347b36f64ac84082bee5c3087c035571c6a6b08
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d2451339b7291cba6bff8cebcc60358c84f018d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884014"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>SharePoint 工具扩展的编程概念和功能
   有几个重要的编程概念和与 Visual Studio 中的 SharePoint 工具相关的功能。 这些概念和功能在大多数 SharePoint 工具扩展中发挥重要作用。  
@@ -41,4 +38,3 @@ ms.locfileid: "37118725"
  [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [调试 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
  [部署 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  

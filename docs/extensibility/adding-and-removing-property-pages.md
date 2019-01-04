@@ -1,9 +1,6 @@
 ---
 title: 添加和删除属性页 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c487eb6bafdc66c715bc9466ea6aafed2e78d6fe
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e88154f2ea979f69ad8fd2f578282a0b24667a2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885312"
 ---
 # <a name="add-and-remove-property-pages"></a>添加和删除属性页
 项目设计器提供了用于管理项目属性、 设置和中的资源的集中的位置[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它显示为中的单个窗口[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE)，并包含可通过在左侧选项卡来访问在右侧窗格的数目。 在项目设计器中 （通常称为属性页） 的窗格因项目类型和语言而异。 可以通过访问项目设计器**属性**命令**项目**菜单。  

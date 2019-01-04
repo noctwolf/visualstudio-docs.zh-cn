@@ -1,9 +1,6 @@
 ---
 title: 全球化和本地化的 Excel 解决方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e5c25a93c62a5737681fe2d3ea27f10c69fbfc92
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 6de8e63331c4cb5250ceadd6f7394dd54319e499
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856405"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>全球化和本地化的 Excel 解决方案
   本节包含有关 Microsoft Office Excel 解决方案的特殊注意事项的信息，这些解决方案将在具有 Windows 非英语设置的计算机上运行。 全球化和本地化 Microsoft Office 解决方案过程中所遇到的大多数问题与使用 Visual Studio 创建其他各种解决方案时遇到的问题相同。 有关常规信息，请参阅[Globalize 和本地化应用程序](../ide/globalizing-and-localizing-applications.md)。

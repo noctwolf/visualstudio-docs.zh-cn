@@ -1,17 +1,12 @@
 ---
-title: 演练： 创建网站栏、 内容类型和用于 SharePoint 列表 |Microsoft Docs
-ms.custom: ''
+title: 演练：创建网站栏、 内容类型和用于 SharePoint 列表 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
 - VS.SharePointTools.ListDesigner.SortingGrouping
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900119"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852526"
 ---
-# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>演练： 为 SharePoint 创建网站栏、 内容类型和列表
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>演练：创建 SharePoint 网站栏、 内容类型和列表
   以下过程演示如何创建自定义 SharePoint 站点列，或*字段*— 以及使用的站点列的内容类型。 它还演示如何创建使用新的内容类型的列表。  
   
  本演练包含以下任务：  
@@ -95,7 +90,7 @@ ms.locfileid: "49900119"
     </Field>  
     ```  
   
-4.  使用相同的过程中，将两个站点列添加到项目：**患者 ID** (类型 ="Integer") 和**医生名称**(类型 ="Text")。 将其组值设置为**Clinic 站点列**。  
+4.  使用相同的过程，将两个站点列添加到项目：**患者 ID** (类型 ="Integer") 和**医生名称**(类型 ="Text")。 将其组值设置为**Clinic 站点列**。  
   
 ## <a name="create-a-custom-content-type"></a>创建自定义内容类型
  接下来，创建一个内容类型-基于联系人内容类型-包括前一过程中创建的站点列。 通过使基于现有内容类型的内容类型，可以节省时间，因为基内容类型提供了新的内容类型中使用多个站点列。  
@@ -116,7 +111,7 @@ ms.locfileid: "49900119"
   
      执行此操作使您可以访问到联系人内容类型，除了以前定义的站点列中的其他可能有用的站点列。  
   
-6.  内容类型设计器显示后，在**列**选项卡上，添加三个站点以前定义的列：**患者名称**，**患者 ID**，以及**医生名称**。 若要添加这些列，请选择第一个列表框下的站点列列表中**显示名称**，然后选择每个站点列列表中一次。  
+6.  内容类型设计器显示后，在**列**选项卡上，添加三个站点以前定义的列：**患者名称**，**患者 ID**，和**医生名称**。 若要添加这些列，请选择第一个列表框下的站点列列表中**显示名称**，然后选择每个站点列列表中一次。  
   
     > [!TIP]  
     >  若要更快地选择站点列，请通过输入的列的名称的第几个字母筛选列表。  
@@ -229,7 +224,6 @@ ms.locfileid: "49900119"
 ## <a name="see-also"></a>请参阅
  [为 SharePoint 创建站点栏、 内容类型和列表](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
- [如何： 创建自定义字段类型](http://go.microsoft.com/fwlink/?LinkId=192079)   
+ [如何：创建自定义字段类型](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [内容类型](http://go.microsoft.com/fwlink/?LinkId=192080)   
  [列](http://go.microsoft.com/fwlink/?LinkId=192081)  
-  

@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967423"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821030"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自定义元素创建和移动
 
@@ -75,7 +74,7 @@ EMD 的职责是确定如何对象组应合并到模型中的特定位置。 具
 >
 > 如果你想要确保新的元素或新的关系始终处理由自定义代码，请考虑定义`AddRule`上的嵌入关系和`DeleteRule`元素的域类上。 有关详细信息，请参阅[规则将传播的更改中的模式](../modeling/rules-propagate-changes-within-the-model.md)。
 
-## <a name="example-defining-an-emd-without-custom-code"></a>示例： 定义 EMD 而无需自定义代码
+## <a name="example-defining-an-emd-without-custom-code"></a>示例:定义 EMD 而无需自定义代码
 
 以下示例允许用户通过从工具箱拖到现有的形状拖动在同一时间创建元素和连接器。 该示例将 EMD 添加到 DSL 定义中。 在这种修改之前, 用户可以在实际应用到关系图中，但不是到现有的形状上拖动工具。
 
@@ -91,7 +90,7 @@ EMD 的职责是确定如何对象组应合并到模型中的特定位置。 具
 
    1.  在中**DSL 资源管理器**，展开**域类**。 右键单击`ExampleElement`，然后单击**添加新元素合并指令**。
 
-   2.  请确保**DSL 详细信息**窗口处于打开状态，以便您可以看到新 EMD 的详细信息。 (菜单：**视图**，**其他 Windows**， **DSL 详细信息**。)
+   2.  请确保**DSL 详细信息**窗口处于打开状态，以便您可以看到新 EMD 的详细信息。 (菜单：**查看**，**其他 Windows**， **DSL 详细信息**。)
 
 3. 设置**索引类**在 DSL 详细信息窗口中，若要定义哪一类别的元素可以合并到`ExampleElement`对象。
 
@@ -145,7 +144,7 @@ EMD 的职责是确定如何对象组应合并到模型中的特定位置。 具
 
      如果您编写自定义创建新元素的代码，可以通过使用显式调用 EMD`ElementOperations.Merge`方法。 这可确保你的代码链接到模型的新元素的其他操作的方式相同。 有关详细信息，请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)。
 
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>示例： 将自定义接受代码添加到 EMD
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>示例:将自定义接受代码添加到 EMD
 
 通过将自定义代码添加到 EMD，您可以定义更复杂的合并行为。 这个简单的示例可防止用户将添加到关系图的多个固定数量的元素。 该示例修改默认 EMD 附带的嵌入关系。
 
@@ -161,7 +160,7 @@ EMD 的职责是确定如何对象组应合并到模型中的特定位置。 具
 
 4.  重新生成解决方案。 这将需要比平常长，因为生成的代码将从该模型进行更新。
 
-     生成错误将报告，类似于:"Company.ElementMergeSample.ExampleElement 不包含一个定义为 CanMergeExampleElement..."
+     生成错误将报告，类似于："Company.ElementMergeSample.ExampleElement 不包含一个定义为 CanMergeExampleElement..."
 
      必须实现的方法`CanMergeExampleElement`。
 
@@ -208,7 +207,7 @@ EMD 的职责是确定如何对象组应合并到模型中的特定位置。 具
 
     3.  验证不能使用以下任一方式将四个元素添加到模型。 这是因为它们都使用元素合并指令。
 
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>示例： 将自定义合并代码添加到 EMD
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>示例:将合并自定义代码添加到 EMD
 
 在自定义的合并代码中，可以定义在用户拖动一个工具，或粘贴到元素上时，会发生什么情况。 有两种方法来定义自定义合并：
 

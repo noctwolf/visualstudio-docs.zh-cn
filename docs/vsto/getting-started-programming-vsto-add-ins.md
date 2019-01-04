@@ -1,9 +1,6 @@
 ---
 title: VSTO 外接程序编程入门
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Outlook
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf6577d48bed61a6dd5a1775da499ddd89f3769c
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: eef79de32a467bee1d96972da0ccdfd91eede350
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853039"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO 外接程序编程入门
   你可以使用 VSTO 外接程序来实现 Microsoft Office 应用程序自动化、扩展应用程序的功能，以及自定义应用程序的用户界面 (UI)。 可以使用 Visual Studio 创建 VSTO 外接程序如何与其他类型的 Office 解决方案进行比较的有关信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -95,5 +92,3 @@ ms.locfileid: "53648676"
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)  
-  
-  

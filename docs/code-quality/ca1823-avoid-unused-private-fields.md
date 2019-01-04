@@ -1,8 +1,7 @@
 ---
-title: CA1823：避免未使用的私有字段
+title: CA1823:避免未使用的私有字段
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - AvoidUnusedPrivateFields
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9ef0e63e13ab6e05025ef1a24c4032feb5eacd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5610e97b623c21a7a0f380e9f2e070400e0aefc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923701"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873231"
 ---
-# <a name="ca1823-avoid-unused-private-fields"></a>CA1823：避免未使用的私有字段
+# <a name="ca1823-avoid-unused-private-fields"></a>CA1823:避免未使用的私有字段
 
 |||
 |-|-|
@@ -45,10 +44,10 @@ ms.locfileid: "49923701"
  它可以安全地禁止显示此规则的警告。
 
 ## <a name="related-rules"></a>相关的规则
- [CA1812：避免未实例化的内部类](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812:避免未实例化的内部类](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801：检查未使用的参数](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801:检查未使用的参数](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804：移除未使用的局部变量](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804:删除未使用的局部变量](../code-quality/ca1804-remove-unused-locals.md)
 
- [CA1811：避免使用未调用的私有代码](../code-quality/ca1811-avoid-uncalled-private-code.md)
+ [CA1811:避免使用未调用的私有代码](../code-quality/ca1811-avoid-uncalled-private-code.md)

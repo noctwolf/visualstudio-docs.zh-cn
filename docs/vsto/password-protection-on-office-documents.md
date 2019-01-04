@@ -1,9 +1,6 @@
 ---
 title: Office 文档上的密码保护
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 02deaccdd615bae0c948d50abdd41758dc701704
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4603a6f5722279ccdaf057d30d3bc6e911c4c47e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670282"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856996"
 ---
 # <a name="password-protection-on-office-documents"></a>Office 文档上的密码保护
   就可以在 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿上设置密码，以便它们不能打开的人不知道密码。 此选项将称为**处于打开状态的密码**。  
@@ -43,7 +40,5 @@ ms.locfileid: "35670282"
 ## <a name="see-also"></a>请参阅  
  [在文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)   
  [信息权限管理和托管的代码扩展概述](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [如何： 允许代码以使用受限权限的文档的后台运行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [如何：允许代码以使用受限权限的文档的后台运行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

@@ -11,18 +11,17 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 21ef658d3eebe23fba228517700b3804f89a7842
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a94819b23b404634434ca3d9cdb210dc8e1dce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878838"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840760"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>演练：创建自定义文本模板主机
+# <a name="walkthrough-create-a-custom-text-template-host"></a>演练：创建自定义文本模板宿主
 
 一个*文本模板*<em>主机</em>提供了一个环境，使*文本模板转换引擎*运行。 宿主负责管理引擎与文件系统的交互。 引擎或*指令处理器*需要文件或程序集可以向宿主请求资源。 然后，宿主可以搜索目录和全局程序集缓存，以查找请求的资源。 有关详细信息，请参阅[文本模板转换过程](../modeling/the-text-template-transformation-process.md)。
 
@@ -718,7 +717,7 @@ ms.locfileid: "49878838"
 
 4. 有关[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]仅，打开**项目**菜单，然后单击**CustomHost 属性**。 在中**启动对象**列表中，单击**customhost.program**。
 
-5. 在“文件”  菜单上，单击“全部保存” 。
+5. 在“文件”菜单上，单击“全部保存”。
 
 6. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。
 
@@ -821,7 +820,7 @@ ms.locfileid: "49878838"
 
 ## <a name="next-steps"></a>后续步骤
 
-在本演练中，你创建了一个支持基本转换功能的文本模板转换主机。 您可以对该宿主进行扩展，以支持可调用自定义或生成的指令处理器的文本模板。 有关详细信息，请参阅[演练： 连接到生成的指令处理器的主机](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。
+在本演练中，你创建了一个支持基本转换功能的文本模板转换主机。 您可以对该宿主进行扩展，以支持可调用自定义或生成的指令处理器的文本模板。 有关详细信息，请参见[演练：将主机连接到生成的指令处理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。
 
 ## <a name="see-also"></a>请参阅
 

@@ -1,9 +1,6 @@
 ---
-title: 参数信息，请参阅旧语言 Service1 |Microsoft 文档
-ms.custom: ''
+title: 旧版语言服务 1 中的参数信息 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
@@ -17,62 +14,62 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50450d1968c626e0a5b32dee4c6f03d005d6ede9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 715de0c8ac763a8aa307fcf31038ba1b60c359fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132758"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864451"
 ---
-# <a name="parameter-info-in-a-legacy-language-service"></a>参数信息，请参阅旧语言服务
-IntelliSense 参数信息工具提示向用户提供有关他们的语言构造中的位置的提示。  
+# <a name="parameter-info-in-a-legacy-language-service"></a>旧版语言服务中的参数信息
+参数的 IntelliSense 信息工具提示为用户提供有关其所在的语言构造中的提示。  
   
- 旧语言服务实现的 VSPackage，一部分但实现语言服务功能的新方法是使用 MEF 扩展。 若要了解详细信息，请参阅[扩展编辑器和语言服务](../../extensibility/extending-the-editor-and-language-services.md)。  
+ 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[扩展编辑器和语言服务](../../extensibility/extending-the-editor-and-language-services.md)。  
   
 > [!NOTE]
->  我们建议你开始使用新的编辑器 API 越早越好。 这将改善语言服务的性能，并让您充分利用新的编辑器功能。  
+>  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
   
 ## <a name="how-parameter-info-tooltips-work"></a>参数信息工具提示的工作原理  
- 当在编辑器中键入一条语句时，VSPackage 将显示包含键入的语句的定义的小工具提示窗口。 例如，如果键入 Microsoft 基础类 (MFC) 语句 (如`pMainFrame ->UpdateWindow`)，然后按左括号密钥用于开始列出参数，显示的定义，则出现的方法提示`UpdateWindow`方法。  
+ 当在编辑器中键入一条语句时，VSPackage 将显示包含所键入的语句定义的小工具提示窗口。 例如，如果键入 Microsoft 基础类 (MFC) 语句 (如`pMainFrame ->UpdateWindow`) 和按左括号键用于开始列出的参数，将显示的方法提示，显示的定义`UpdateWindow`方法。  
   
- 参数信息工具提示是通常与语句结束结合使用。 它们是最适用于具有参数或其他信息格式化后的方法名称或关键字的语言。  
+ 参数信息工具提示通常是与语句完成结合使用。 它们是最适用于具有参数或其他方法名称或关键字后的格式化的信息的语言。  
   
- 参数信息工具提示是通过命令截获语言服务启动的。 若要截获用户字符，语言服务对象必须实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口，并传递指向的指针的文本视图你<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>实现中的，通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>中的方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口。 命令筛选器截获到代码窗口中键入的命令。 监视知道何时向用户显示参数信息的命令信息。 用于语句完成、 错误标记和等，可以使用相同的命令筛选器。  
+ 参数信息工具提示是通过命令拦截语言服务启动的。 若要截获用户字符，您的语言服务对象必须实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口，并将文本视图传递一个指向您<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>实现中的，通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A>中的方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口。 命令筛选器会截获到代码窗口中键入的命令。 监视命令信息以了解何时向用户显示参数信息。 用于语句完成、 错误标记等，可以使用的相同命令筛选器。  
   
- 当你键入的关键字，该语言服务可以为其提供提示时，然后该语言服务创建<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>对象并调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A>中的方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>通知 IDE 以显示提示接口。 创建<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>对象使用`VSLocalCreateInstance`并指定组件类`CLSID_VsMethodTipWindow`。 `VsLocalCreateInstance` 是调用标头文件 vsdoc.h 中定义的函数`QueryService`为本地注册表和调用`CreateInstance`此对象上`CLSID_VsMethodTipWindow`。  
+ 当键入的关键字的语言服务可以为其提供提示时，然后该语言服务将创建<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>对象并调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A>中的方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口以通知 IDE 以显示一个提示。 创建<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>对象使用`VSLocalCreateInstance`并指定组件类`CLSID_VsMethodTipWindow`。 `VsLocalCreateInstance` 是一个函数定义中调用标头文件 vsdoc.h`QueryService`本地注册表和调用`CreateInstance`此对象上`CLSID_VsMethodTipWindow`。  
   
-## <a name="providing-a-method-tip"></a>提供的方法提示  
- 若要提供的方法提示，请调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A>中的方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>接口，将其传递的实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>接口。  
+## <a name="providing-a-method-tip"></a>提供方法提示  
+ 若要提供方法提示，请调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A>中的方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow>接口，并向其传递的实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>接口。  
   
- 当你<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>调用类，其方法调用顺序如下：  
+ 当你<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>调用类中，按以下顺序调用其方法：  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>  
   
-     返回当前的文本缓冲区中的位置和相关数据的长度。 这会指示 IDE 以不会掩盖与工具提示窗口该数据。  
+     返回当前文本缓冲区中的位置和相关数据的长度。 这会指示 IDE 不会影响该数据与工具提示窗口。  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>  
   
-     返回要最初显示方法数 （从零开始的索引）。 例如，如果返回零，然后第一种重载的方法最初显示。  
+     返回方法数 （从零开始的索引），你想要一开始显示。 例如，如果返回零，则第一个重载的方法最初呈现。  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>  
   
-     返回在当前上下文中适用的重载方法的数目。 如果返回一个值大于 1 的此方法，然后文本视图显示的向上和向下箭头为你。 如果单击向下箭头，IDE 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A>方法。 如果单击向上箭头时，IDE 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A>方法。  
+     返回当前上下文中适用的重载方法的数量。 如果返回值大于 1 的此方法，然后在文本视图显示向上和向下箭头。 如果您单击向下箭头，IDE 会调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A>方法。 如果单击向上箭头时，IDE 会调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A>方法。  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>  
   
-     对多个调用过程中构造的参数信息工具提示文本<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>方法。  
+     在多次调用过程中构造参数信息工具提示的文本<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>方法。  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>  
   
-     返回要显示在方法中的参数数量。  
+     返回要显示的方法中的参数数目。  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>  
   
-     如果返回与想要显示的重载相对应的方法数字时，调用此方法，通过调用后接<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>方法。  
+     如果返回想要显示的重载与相对应的方法数字时，调用此方法，调用后跟<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>方法。  
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>  
   
-     通知你语言服务更新编辑器时显示的方法提示。 在<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>方法，调用以下命令：  
+     通知语言服务以更新编辑器时显示方法提示。 在<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>方法，调用以下命令：  
   
     ```  
     <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).  
@@ -80,4 +77,4 @@ IntelliSense 参数信息工具提示向用户提供有关他们的语言构造�
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>  
   
-     接收调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>方法时关闭方法提示窗口。
+     接收到调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>方法时关闭方法提示窗口。

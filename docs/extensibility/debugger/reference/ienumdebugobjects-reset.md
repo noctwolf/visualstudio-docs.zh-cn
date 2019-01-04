@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugObjects::Reset |Microsoft 文档
-ms.custom: ''
+title: IEnumDebugObjects::Reset |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugObjects::Reset
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28cf4f5936ee90a225d05f5b3fe959c21fca3617
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5493a0488051cff84518c1933faf60e92aa7550a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123519"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850159"
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
 此方法将枚举重置为第一个元素。  
@@ -42,8 +39,8 @@ int Reset();
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 调用此方法，对下一个调用后[下一步](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)返回枚举的第一个元素。  
+ 调用此方法下, 一步调用后[下一步](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)返回枚举的第一个元素。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)   
- [下一篇](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)
+ [下一页](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)

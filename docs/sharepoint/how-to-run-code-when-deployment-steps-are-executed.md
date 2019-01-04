@@ -1,9 +1,6 @@
 ---
-title: 如何： 执行运行代码时部署步骤 |Microsoft Docs
-ms.custom: ''
+title: 如何：执行运行的代码时部署步骤 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,25 +12,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cebd88cc49afa1092dfcd1d67ffdbf0fa3567ad0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 62ab9019eb9722baca523aeff00b4ed511039497
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883251"
 ---
-# <a name="how-to-run-code-when-deployment-steps-are-executed"></a>如何： 执行部署步骤时运行代码
+# <a name="how-to-run-code-when-deployment-steps-are-executed"></a>如何：执行部署步骤时运行代码
   如果你想要为 SharePoint 项目中的部署步骤执行其他任务，则可以处理之前的 SharePoint 项目项和 Visual Studio 执行每个部署步骤之后引发的事件。 有关详细信息，请参阅[扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。  
   
 ### <a name="to-run-code-when-deployment-steps-are-executed"></a>若要执行部署步骤时运行代码  
   
 1.  创建项目项扩展、 项目扩展或新的项目项类型的定义。 有关详细信息，请参阅下列主题：  
   
-    -   [如何： 创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
+    -   [如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
-    -   [如何： 创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
+    -   [如何：创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)  
   
-    -   [如何： 定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
+    -   [如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
 2.  在扩展中，处理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted>并<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted>的事件<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType>（在项目项扩展或项目扩展） 的对象或<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition>对象 （在新的项目项类型的定义）。  
   
@@ -57,7 +54,5 @@ ms.locfileid: "37118724"
   
 ## <a name="see-also"></a>请参阅
  [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [演练： 创建 SharePoint 项目自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)   
- [如何： 在部署或收回 SharePoint 项目时运行代码](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)  
-  
-  
+ [演练：创建 SharePoint 项目的自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)   
+ [如何：在部署或收回 SharePoint 项目时运行代码](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)  

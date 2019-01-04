@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式使用 Word 中的内置对话框
-ms.custom: ''
+title: 如何：以编程方式使用 Word 中的内置对话框
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f5ee28b0296037b9b5490ca691a27d613c793228
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829058"
 ---
-# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>如何： 以编程方式使用 Word 中的内置对话框
+# <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>如何：以编程方式使用 Word 中的内置对话框
   在使用 Microsoft Office Word，有些的时候需要显示用户输入的对话框。 尽管可以创建你自己，但可能还想要采用的使用在 Word 中，内置对话框框中公开的方法<xref:Microsoft.Office.Interop.Word.Dialogs>的集合<xref:Microsoft.Office.Interop.Word.Application>对象。 这使您能够访问 200 的内置对话框框中，以枚举表示。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -49,11 +46,9 @@ ms.locfileid: "35670481"
  [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式使用在隐藏模式下的 Word 对话框](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
+ [如何：以编程方式使用在隐藏模式下的 Word 对话框](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)   
  [Word 对象模型概述](../vsto/word-object-model-overview.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)   
  [Option strict 语句](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [反射 (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [反射 (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
-  
-  

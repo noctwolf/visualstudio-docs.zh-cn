@@ -1,8 +1,7 @@
 ---
-title: CA2238：正确实现序列化方法
+title: CA2238:正确实现序列化方法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ImplementSerializationMethodsCorrectly
@@ -19,14 +18,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f25aa6aa574f856bcce7601602ed2f195e785a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5857892fb7e84e295a6d3f2a61fd67480a53c707
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949534"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834940"
 ---
-# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238：正确实现序列化方法
+# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238:正确实现序列化方法
 
 |||
 |-|-|
@@ -64,16 +63,16 @@ ms.locfileid: "49949534"
  [!code-csharp[FxCop.Usage.SerializationEventHandlers#1](../code-quality/codesnippet/CSharp/ca2238-implement-serialization-methods-correctly_1.cs)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA2236：对 ISerializable 类型调用基类方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236:对 ISerializable 类型调用基类方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
- [CA2240：正确实现 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
+ [CA2240:正确实现 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)
 
  [CA2229：实现序列化构造函数](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2235：标记所有不可序列化的字段](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+ [CA2235:标记所有不可序列化的字段](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2237：以 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237:用 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
- [CA2239：为可选字段提供反序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+ [CA2239:提供反序列化方法为可选字段](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120：保护序列化构造函数](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120:安全的序列化构造函数](../code-quality/ca2120-secure-serialization-constructors.md)

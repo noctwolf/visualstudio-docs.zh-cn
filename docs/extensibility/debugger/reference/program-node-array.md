@@ -1,9 +1,6 @@
 ---
 title: PROGRAM_NODE_ARRAY |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - PROGRAM_NODE_ARRAY
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50c8db3ee875a86f072a75f084dbe0c7f68f847b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 353a0906b1f0dc81c4c0c08483ad472b46fb864b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841494"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
 包含描述程序感兴趣的对象的数组。  
@@ -28,16 +25,16 @@ ms.locfileid: "49832975"
 ## <a name="syntax"></a>语法  
   
 ```cpp  
-typedef struct tagPROGRAM_NODE_ARRAY {  
-   DWORD                dwCount;  
-   IDebugProgramNode2** Members;  
-} PROGRAM_NODE_ARRAY;  
+typedef struct tagPROGRAM_NODE_ARRAY {  
+   DWORD                dwCount;  
+   IDebugProgramNode2** Members;  
+} PROGRAM_NODE_ARRAY;  
 ```  
   
 ```csharp  
-public struct tagPROGRAM_NODE_ARRAY {  
-   public uint                 dwCount;  
-   public IDebugProgramNode2[] Members;  
+public struct tagPROGRAM_NODE_ARRAY {  
+   public uint                 dwCount;  
+   public IDebugProgramNode2[] Members;  
 }  
 ```  
   
@@ -54,9 +51,9 @@ public struct tagPROGRAM_NODE_ARRAY {
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   

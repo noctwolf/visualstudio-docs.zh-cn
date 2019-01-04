@@ -1,9 +1,6 @@
 ---
 title: SccDiff 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccDiff
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 898c5b1b9de186a7ac704b4987fb090de5381f07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 68f90e406a06069403b76749977c5546b10ed790
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884766"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872042"
 ---
 # <a name="sccdiff-function"></a>SccDiff 函数
 此函数显示 （或根据需要只需检查） 控制系统的源中的当前文件 （在本地磁盘） 和其最后一个签入的版本之间的差异。  
@@ -56,7 +53,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|工作副本和服务器版本是相同的。|  
 |SCC_I_FILESDIFFERS|工作副本与受源代码管理版本不同。|  

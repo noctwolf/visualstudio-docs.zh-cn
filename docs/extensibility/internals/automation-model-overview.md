@@ -1,9 +1,6 @@
 ---
 title: 自动化模型概述 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], about automation
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 661c870b19760b8a91c0e9e9e162076c641864a3
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: cb9176ce0341ff50bb59a9666d18ae5054dad872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370688"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821842"
 ---
 # <a name="automation-model-overview"></a>自动化模型概述
 自动化模型包含一组可以对其编写的 Visual Studio 外接程序或扩展的对象。 外接程序是可以操作在 Visual Studio 环境，并自动执行常见任务的应用程序。 Visual Studio 扩展可以创建自定义 Visual Studio 组件或添加到标准组件，如文本编辑器功能。  
@@ -47,4 +44,4 @@ ms.locfileid: "46370688"
 自动化的详细信息，请参阅[的 Visual Studio 自动化和扩展性](../extensibility-in-visual-studio.md)。 本文档和文档，它提供了链接，帮助你做出决定，你应如何提供你的 VSPackage 的自动化。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 创建外接程序](https://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
+ [如何：创建外接程序](https://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

@@ -1,9 +1,6 @@
 ---
 title: 创建基本项目系统，第 1 部分 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d7d48a7aae98da574747da2df32c9368ab930aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887548"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832549"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>创建基本项目系统，第 1 部分
 在 Visual Studio 中，项目是开发人员用于组织源代码文件和其他资产的容器。 项目显示为解决方案中的子级**解决方案资源管理器**。 项目可组织、 生成、 调试和部署的源代码和创建对 Web 服务、 数据库和其他资源的引用。  
@@ -71,7 +68,7 @@ ms.locfileid: "49887548"
   
 ### <a name="to-create-a-basic-project-template"></a>若要创建基本项目模板  
   
-1. 添加到项目中，一个在其他三个文件夹： *Templates\Projects\SimpleProject*。 (在**解决方案资源管理器**，右键单击**SimpleProject**项目节点，指向**添加**，然后单击**新文件夹**。 将文件夹命名为*模板*。 在中*模板*文件夹中，添加名为的文件夹*项目*。 在*项目*文件夹中，添加名为的文件夹*SimpleProject*。)  
+1. 添加到项目中，一个在其他三个文件夹：*Templates\Projects\SimpleProject*。 (在**解决方案资源管理器**，右键单击**SimpleProject**项目节点，指向**添加**，然后单击**新文件夹**。 将文件夹命名为*模板*。 在中*模板*文件夹中，添加名为的文件夹*项目*。 在*项目*文件夹中，添加名为的文件夹*SimpleProject*。)  
   
 2. 在中*Templates\Projects\SimpleProject*文件夹中，添加要用作名为的图标的位图图像文件*SimpleProject.ico*。 当您单击**添加**，打开图标编辑器。  
   
@@ -559,7 +556,7 @@ Templates
      请注意，模板参数 $nameSpace$ 和 $ $className$ 没有新值。 您将学习如何实现下一节中的模板参数替换。  
   
 ## <a name="substitute-template-parameters"></a>替换模板参数  
- 在前面部分中，你的项目模板与 Visual Studio 使用注册`ProvideProjectFactory`属性。 以这种方式注册的模板文件夹的路径，你可以通过重写并扩展让基本模板参数替换`ProjectNode.AddFileFromTemplate`类。 有关详细信息，请参阅[生成新项目： 揭秘，第二部分](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
+ 在前面部分中，你的项目模板与 Visual Studio 使用注册`ProvideProjectFactory`属性。 以这种方式注册的模板文件夹的路径，你可以通过重写并扩展让基本模板参数替换`ProjectNode.AddFileFromTemplate`类。 有关详细信息，请参阅[生成新项目：实质上，第二部分](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
   
  现在，添加到替代代码`AddFileFromTemplate`类。  
   

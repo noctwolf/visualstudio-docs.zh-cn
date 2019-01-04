@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 2017 扩展中的重大更改 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/09/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5305a5fd5dea53554e4ac9c0015e8181d5906788
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826487"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841945"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 扩展中的更改
 
@@ -43,15 +40,15 @@ ms.locfileid: "49826487"
 
 ## <a name="building-an-extension-for-visual-studio-2017"></a>Visual Studio 2017 生成扩展
 
-设计器工具用于创作新的 VSIX v3 清单格式现已推出 Visual Studio 2017。 请参阅随附的文档[如何： 将扩展性项目迁移到 Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)有关使用设计器工具或对项目进行手动更新的详细信息和清单以开发 VSIX v3 扩展。
+设计器工具用于创作新的 VSIX v3 清单格式现已推出 Visual Studio 2017。 请参阅随附的文档[如何：将扩展性项目迁移到 Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)有关使用设计器工具或对项目进行手动更新的详细信息和清单以开发 VSIX v3 扩展。
 
-## <a name="change-visual-studio-user-data-path"></a>更改： Visual Studio 用户数据路径
+## <a name="change-visual-studio-user-data-path"></a>更改：Visual Studio 用户数据路径
 
 以前，只能安装一个每个主要版本的 Visual Studio 可能存在每台计算机上。 若要支持的 Visual Studio 2017 的并行安装，用户的计算机上可能存在的 Visual Studio 的多个用户数据路径。
 
 在 Visual Studio 进程内运行的代码应更新为使用 Visual Studio 设置管理器。 Visual Studio 进程外部运行的代码可以查找特定的 Visual Studio 安装的用户路径[按照此处的指南](locating-visual-studio.md)。
 
-## <a name="change-global-assembly-cache-gac"></a>更改： 全局程序集缓存 (GAC)
+## <a name="change-global-assembly-cache-gac"></a>更改：全局程序集缓存 (GAC)
 
 大多数 Visual Studio 核心程序集不能再安装到 GAC 中。 以便在 Visual Studio 进程中运行的代码仍可以在运行时找到所需程序集进行以下更改。
 
@@ -84,7 +81,7 @@ ms.locfileid: "49826487"
 * 如果在 Visual Studio 进程之外运行您的扩展插件：
   * 查找 Visual Studio 核心程序集下，请考虑<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*使用配置文件或程序集冲突解决程序。
 
-## <a name="change-reduce-registry-impact"></a>更改： 降低注册表的影响
+## <a name="change-reduce-registry-impact"></a>更改：降低注册表的影响
 
 ### <a name="global-com-registration"></a>全局 COM 注册
 
@@ -95,9 +92,9 @@ ms.locfileid: "49826487"
 ### <a name="visual-studio-registry"></a>Visual Studio 注册表
 
 * 以前，Visual Studio 都安装到系统的多个注册表项**HKEY_LOCAL_MACHINE**并**HKEY_CURRENT_USER** -特定于 Visual Studio 项下的配置单元：
-  * **HKLM\Software\Microsoft\VisualStudio\{版本}**： 通过 MSI 安装程序和每个计算机上的扩展创建注册表项。
-  * **HKCU\Software\Microsoft\VisualStudio\{版本}**: Visual Studio 来存储特定于用户的设置创建注册表项。
-  * **HKCU\Software\Microsoft\VisualStudio\{版本} _Config**： 从 Visual Studio HKLM 密钥更高版本，加上的注册表项的副本合并 *.pkgdef*扩展插件的文件。
+  * **HKLM\Software\Microsoft\VisualStudio\{版本}**:创建 MSI 安装程序和每个计算机上的扩展的注册表项。
+  * **HKCU\Software\Microsoft\VisualStudio\{版本}**:创建 Visual Studio 来存储特定于用户的设置的注册表项。
+  * **HKCU\Software\Microsoft\VisualStudio\{版本} _Config**:Visual Studio HKLM 密钥更高版本，加上的注册表项的副本从合并 *.pkgdef*扩展插件的文件。
 * 若要减少对注册表的影响，Visual Studio 现在将使用[RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya)函数来将注册表项存储在专用二进制文件下 *[VSAPPDATA]\privateregistry.bin*。 只有极少数的 Visual Studio 特定的密钥保留在系统注册表中。
 
 * 在 Visual Studio 进程内运行的现有代码不会受到影响。 Visual Studio 将重定向到专用注册表 HKCU-特定于 Visual Studio 项下的所有注册表操作。 读取和写入注册表的其他位置将继续使用系统注册表。

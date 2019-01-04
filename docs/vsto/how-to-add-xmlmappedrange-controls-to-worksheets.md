@@ -1,9 +1,6 @@
 ---
 title: 如何：向工作表添加 XMLMappedRange 控件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d7cc26c0170c2a20e27026ebcbc6d8705d34ce2
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 5f5f11b09c5fd44b59ed47702d0eee2e6f563223
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856587"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>如何：向工作表添加 XMLMappedRange 控件
   在将 XML 元素映射到 Microsoft Office Excel 中的单元格时，Visual Studio 会自动添加<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>到工作表中的控件。  
@@ -69,5 +66,3 @@ ms.locfileid: "53646704"
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [如何：将架构映射到 Visual Studio 内部的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式关闭 Visio 文档
-ms.custom: ''
+title: 如何：以编程方式关闭 Visio 文档
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d800fbe0a6dda6fc7c5160d607d393afcb920cd9
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0516fcaf8f35e089752e645fbe22093ed8d87bf3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848530"
 ---
-# <a name="how-to-programmatically-close-visio-documents"></a>如何： 以编程方式关闭 Visio 文档
+# <a name="how-to-programmatically-close-visio-documents"></a>如何：以编程方式关闭 Visio 文档
   可以使用 `Microsoft.Office.Interop.Visio.Document.Close` 方法关闭活动 Microsoft Office Visio 文档。  
   
  有关此方法的详细信息，请参阅 [Microsoft.Office.Interop.Visio.Document.Close](/office/vba/api/Visio.Document.Close) 方法的 VBA 参考文档。  
@@ -42,9 +39,7 @@ ms.locfileid: "50671568"
 ## <a name="see-also"></a>请参阅  
  [Visio 解决方案](../vsto/visio-solutions.md)   
  [Visio 对象模型概述](../vsto/visio-object-model-overview.md)   
- [如何： 以编程方式创建新的 Visio 文档](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [如何： 以编程方式打开 Visio 文档](../vsto/how-to-programmatically-open-visio-documents.md)   
- [如何： 以编程方式保存 Visio 文档](../vsto/how-to-programmatically-save-visio-documents.md)   
- [如何： 以编程方式打印 Visio 文档](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  
+ [如何：以编程方式创建新的 Visio 文档](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [如何：以编程方式打开 Visio 文档](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [如何：以编程方式保存 Visio 文档](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [如何：以编程方式打印 Visio 文档](../vsto/how-to-programmatically-print-visio-documents.md)  

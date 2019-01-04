@@ -1,9 +1,6 @@
 ---
 title: 在 Visual Studio SDK |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e72c5033554310555005de17872ee83110768687
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821140"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探究 Visual Studio SDK
 本部分提供有关 Visual Studio 扩展，其中包括 Visual Studio 体系结构、 组件、 服务、 架构、 实用工具和类似的内容的详细信息。
@@ -31,13 +28,13 @@ ms.locfileid: "36757037"
  ![环境体系结构图](../../extensibility/internals/media/environment.gif "环境")通用化的 Visual Studio 体系结构视图
 
 ## <a name="vspackages"></a>VSPackages
- VSPackage 是软件模块，它们通过 UI 元素、服务、项目、编辑器和设计器来组成并扩展 Visual Studio。 Vspackage 是 Visual Studio 的中央体系结构单元。 有关详细信息，请参阅[Vspackage](../../extensibility/internals/vspackages.md)。
+ VSPackage 是软件模块，它们通过 UI 元素、服务、项目、编辑器和设计器来组成并扩展 Visual Studio。 Vspackage 是 Visual Studio 的中央体系结构单元。 有关更多信息，请参见 [VSPackages](../../extensibility/internals/vspackages.md)。
 
 ## <a name="visual-studio-shell"></a>Visual Studio Shell
  在 Visual Studio shell 提供基本功能和支持，其组件 Vspackage 和 MEF 扩展之间的跨通信。 有关详细信息，请参阅[Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md)。
 
 ## <a name="user-experience-guidelines"></a>用户体验指南
- 如果您打算设计的 Visual Studio 的新功能，应看一看以下准则，以便设计和可用性的提示： [Visual Studio 用户体验指南](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。
+ 如果您打算设计的 Visual Studio 的新功能，您应该看看以下准则，以便设计和可用性的提示：[Visual Studio 用户体验指南](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。
 
 ## <a name="commands"></a>命令
  命令是完成任务（如打印文档、刷新视图或创建新文件）的函数。
@@ -103,7 +100,7 @@ ms.locfileid: "36757037"
  有关详细信息，请参阅[添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)。
 
 ## <a name="properties-and-options"></a>属性和选项
- **属性**窗口中显示一个或多个选定的项的属性：[扩展属性](../../extensibility/internals/extending-properties.md)选项页包含与某个组件，如相关的选项集编程语言或 VSPackage:[选项和选项页](../../extensibility/internals/options-and-options-pages.md)。 设置是通常与 UI 相关的功能，可以导入和导出：[支持用户设置](../../extensibility/internals/support-for-user-settings.md)。
+ **属性**窗口显示单个或多个选定的项的属性：[将属性扩展](../../extensibility/internals/extending-properties.md)选项页包含一系列的适用于特定组件，例如，一种编程语言或 VSPackage 的选项：[选项和选项页](../../extensibility/internals/options-and-options-pages.md)。 设置为通常与 UI 相关的功能，可以导入和导出：[支持用户设置](../../extensibility/internals/support-for-user-settings.md)。
 
 ## <a name="visual-studio-services"></a>Visual Studio 服务
  服务提供了一组特定的组件使用的接口。 Visual Studio 提供了一组可由任何组件，包括扩展的服务。 例如，Visual Studio 服务，工具窗口，以显示或隐藏动态，启用对帮助、 状态栏或 UI 事件的访问。 在 Visual Studio 编辑器还提供可由编辑器扩展导入的服务。 有关详细信息，请参阅[使用和提供服务](../../extensibility/using-and-providing-services.md)。

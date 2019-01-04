@@ -1,9 +1,6 @@
 ---
 title: 如何：Office 项目中创建事件处理程序
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: be56b279750c71ab71f1337f6bc7b2038e1195fe
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 338aefadd88c80c533912be3524a496dab932ba9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648595"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859836"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>如何：Office 项目中创建事件处理程序
   有几种方法在 Visual Basic 和 C# 中创建事件处理程序。 在设计视图中，可以通过双击控件，创建默认控件的事件处理程序或使用的事件窗格**属性**窗口控件上创建的任何事件处理程序。 但是，如果要在代码视图中，您可能不想要切换到设计视图若要创建事件处理程序。  
@@ -57,5 +54,3 @@ ms.locfileid: "53648595"
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   
  [演练：针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
  [生成 Office 解决方案](../vsto/building-office-solutions.md)  
-  
-  

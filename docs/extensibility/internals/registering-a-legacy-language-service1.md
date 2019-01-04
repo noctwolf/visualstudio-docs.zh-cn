@@ -1,9 +1,6 @@
 ---
 title: 注册旧版语言服务 1 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], registering
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e851f8da251268a44e62f9b8071648bc27a870
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 51e4920844bee7c242d4c260070a50416621708e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821300"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837311"
 ---
 # <a name="registering-a-legacy-language-service"></a>注册旧版语言服务
 在托管的包框架 (MPF) 中，语言服务由 VSPackage 提供 (请参阅[Vspackage](../../extensibility/internals/vspackages.md)) 并使用注册[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过添加注册表项和条目。 在安装过程中部分和部分在运行时，此注册过程中完成。  

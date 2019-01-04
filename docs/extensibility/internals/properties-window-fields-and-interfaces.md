@@ -1,9 +1,6 @@
 ---
 title: 属性窗口字段和界面 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 149c02918ec909c03c1102a5fc0f1643b79fb46d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 98b5069a6b3709b467386a5424fded0809367a44
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883401"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872221"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 选择来确定在显示的信息的模型**属性**窗口基于在 IDE 中具有焦点的窗口。 每个窗口中和中所选的窗口中，对象可以具有其选择上下文对象推送到全局选定内容上下文。 当该窗口具有焦点时，环境使用窗口框架中的值更新全局选定内容上下文。 当焦点更改时，因此执行选定内容上下文。  

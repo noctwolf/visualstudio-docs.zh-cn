@@ -1,9 +1,6 @@
 ---
 title: 扩展项目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - solutions [Visual Studio]
@@ -14,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a914afada4422364db043582be43658cf494b9c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d3c6895f23b6d2ffe1f4ff8e311140b1e5d5a51
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837194"
 ---
 # <a name="extend-projects"></a>扩展项目
 项目和解决方案是 Visual Studio 将代码和资源文件组织到编译和部署单元的方法。 您可以找到有关中的项目的详细信息[项目 (Visual Studio SDK)](../extensibility/extending-projects.md)。  
   
- 可以使用 Visual Studio SDK 和托管包框架中的项目，您可以下载在创建你自己的项目类型[项目的托管包框架](https://github.com/tunnelvisionlabs/MPFProj10)。 若要了解如何实现自定义项目，请参阅[生成新项目： 揭秘，第一部分](../extensibility/internals/new-project-generation-under-the-hood-part-one.md)并[生成新项目： 揭秘，第二部分](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
+ 可以使用 Visual Studio SDK 和托管包框架中的项目，您可以下载在创建你自己的项目类型[项目的托管包框架](https://github.com/tunnelvisionlabs/MPFProj10)。 若要了解如何实现自定义项目，请参阅[生成新项目：实质上，第一部分](../extensibility/internals/new-project-generation-under-the-hood-part-one.md)和[生成新项目：实质上，第二部分](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
   
  在本部分中的主题介绍如何创建自定义项目以及如何管理不同类型的 Visual Studio 解决方案。  
   

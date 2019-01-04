@@ -1,9 +1,6 @@
 ---
-title: 源控件 VSPackage 设计元素 |Microsoft 文档
-ms.custom: ''
+title: 源代码管理 VSPackage 设计元素 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, design elements
@@ -13,26 +10,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb741a7dc7423c27baed2cd79476239f4e41a170
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f4446bb0cab421e06910ac7f7c5893680c36edf6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130215"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872227"
 ---
-# <a name="source-control-vspackage-design-elements"></a>源控件 VSPackage 设计元素
-此部分中的主题概述的结构的源控件，VSPackage 必须实现的深度集成。 它还列出接口的源控件 VSPackage 的服务可以实现，和源代码管理 VSPackage 的接口和服务可以使用从其他[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]组件来支持其源控制模型和功能。  
+# <a name="source-control-vspackage-design-elements"></a>源代码管理 VSPackage 设计元素
+在本部分中的主题概述了结构源代码管理 VSPackage 必须实现的深度集成。 它还列出了这些接口和源代码管理 VSPackage 的服务可以实现，和源代码管理 VSPackage 的接口和服务可以使用从其他[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]组件来支持其源控制模型和功能。  
   
 ## <a name="in-this-section"></a>本节内容  
  [VSPackage 结构](../../extensibility/internals/vspackage-structure-source-control-vspackage.md)  
- 定义源控件 VSPackage 的结构。  
+ 定义源代码管理 VSPackage 的结构。  
   
- [相关的服务和接口](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)  
- 列出源控件与包相关接口和服务。  
+ [相关服务和接口](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)  
+ 列出了源控制与包相关接口和服务。  
   
- [提供服务](../../extensibility/internals/services-provided-source-control-vspackage.md)  
- 描述源控件 VSPackage 提供的源控件服务。  
+ [提供的服务](../../extensibility/internals/services-provided-source-control-vspackage.md)  
+ 描述由源代码管理 VSPackage 提供的源控制服务。  
   
 ## <a name="related-sections"></a>相关章节  
  [创建源代码管理 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)  
- 讨论如何创建一个源控件不仅提供源代码管理功能，但可以用于自定义的 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]源代码管理 UI。
+ 讨论如何创建源代码管理 VSPackage 不仅提供源代码管理功能，但可用于自定义[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]源代码管理 UI。

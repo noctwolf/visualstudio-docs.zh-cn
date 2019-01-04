@@ -1,9 +1,6 @@
 ---
 title: SccOpenProject 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccOpenProject
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 928c1d63451dc49fabf01503e8cb7f6789b98998
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fde4a8e59fb64e12b78eacc14406fdf5020b64f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837004"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856470"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 函数
 此函数将打开现有的源代码管理项目，或创建一个新。  
@@ -72,7 +69,7 @@ SCCRTN SccOpenProject (
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|在中打开项目的成功。|  
 |SCC_E_INITIALIZEFAILED|无法初始化项目。|  
