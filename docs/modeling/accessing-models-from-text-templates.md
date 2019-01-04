@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 364e39744f403e83847d983e02843bf538bf5c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856853"
 ---
 # <a name="accessing-models-from-text-templates"></a>从文本模板访问模型
 通过使用文本模板，可以创建报表文件、 源代码文件和其他基于特定于域的语言模型的文本文件。 有关文本模板的基本信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 文本模板时你正在调试你的 DSL 中，将在实验模式下工作，还将具有在其部署 DSL 的计算机上工作。
@@ -143,7 +142,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 
  若要加载该文件，最有效方法是使用 Visual Studio ModelBus。 在典型方案中，文本模板将使用特定于 DSL 的指令以常规方式加载的第一个模型。 该模型将包含到另一个模型的 ModelBus 引用。 可以使用 ModelBus 打开被引用的模型和访问特定元素。 有关详细信息，请参阅[文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
- 在不太常用的方案中，你可能想要打开模型文件必须仅文件名，这可能不是当前的 Visual Studio 项目中。 在这种情况下，可以打开该文件使用的方法中所述[如何： 从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
+ 在不太常用的方案中，你可能想要打开模型文件必须仅文件名，这可能不是当前的 Visual Studio 项目中。 在这种情况下，可以打开该文件使用的方法中所述[如何：从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
 
 ## <a name="generating-multiple-files-from-a-template"></a>从模板生成多个文件
  如果你想要生成多个文件-例如，若要在模型中，生成一个单独的文件的每个元素有几个可能的实现方式。 默认情况下，只有一个文件生成从每个模板文件。

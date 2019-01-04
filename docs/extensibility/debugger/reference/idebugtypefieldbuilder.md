@@ -1,9 +1,6 @@
 ---
-title: IDebugTypeFieldBuilder |Microsoft 文档
-ms.custom: ''
+title: IDebugTypeFieldBuilder |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugTypeFieldBuilder interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c14959e0b14b74b31732a7d8611c0ae2d2c699
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 90ed594ff8b6c8f3811b61fe68b2d2ab16a9a017
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121786"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962070"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
-表示能够创建表示一种类型的字段。  
+表示创建表示一种类型的字段的功能。  
   
 ## <a name="syntax"></a>语法  
   
@@ -38,11 +35,11 @@ IDebugTypeFieldBuilder : IUnknown
 |方法|描述|  
 |------------|-----------------|  
 |[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|创建表示基元类型的对象。|  
-|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|创建指向指定类型的指针。|  
+|[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|创建为指定类型的指针。|  
   
 ## <a name="requirements"></a>要求  
- 标头： Sh.h  
+ 标头：Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll

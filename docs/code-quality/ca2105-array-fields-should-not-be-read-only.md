@@ -1,8 +1,7 @@
 ---
-title: CA2105：数组字段不应为只读
+title: CA2105:数组字段不应为只读
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2105
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a033c23a323a94dcbda0a98f9ec57de529d3c308
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0969147ce4f454f7720f26f72b46cab6e91c37bf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883284"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937959"
 ---
-# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105：数组字段不应为只读
+# <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105:数组字段不应为只读
 
 |||
 |-|-|
@@ -40,17 +39,17 @@ ms.locfileid: "49883284"
 
 当应用`readonly`(`ReadOnly`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 不能更改为包含一个数组，该字段的字段修饰符来指代不同的数组。 但是，可以更改在只读字段中存储的数组的元素。 制定决策或执行基于可以公开访问的只读数组的元素的操作的代码可能包含可利用的安全漏洞。
 
-请注意，具有公共字段也违反了设计规则[CA1051： 不要声明可见实例字段](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
+请注意，具有公共字段也违反了设计规则[CA1051:不要声明可见实例字段](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
 若要解决由该规则标识的安全漏洞，不要依赖于可公开访问的只读数组的内容。 强烈建议你使用以下过程之一：
 
-- 将不能更改的强类型集合替换为数组。 有关详细信息，请参阅 <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName> 。
+- 将不能更改的强类型集合替换为数组。 有关详细信息，请参阅<xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>。
 
 - 使用返回私有数组副本的方法替换公共字段。 你的代码不依赖于克隆，因为如果，则不存在风险修改元素。
 
-如果你选择第二种方法，请不该字段将替换为属性;属性返回数组造成负面影响性能。 有关详细信息，请参阅[CA1819： 属性不应返回数组](../code-quality/ca1819-properties-should-not-return-arrays.md)。
+如果你选择第二种方法，请不该字段将替换为属性;属性返回数组造成负面影响性能。 有关详细信息，请参阅[CA1819:属性不应返回数组](../code-quality/ca1819-properties-should-not-return-arrays.md)。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 

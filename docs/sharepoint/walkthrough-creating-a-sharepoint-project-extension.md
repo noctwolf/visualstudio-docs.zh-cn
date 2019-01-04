@@ -1,9 +1,6 @@
 ---
-title: 演练： 创建 SharePoint 项目扩展 |Microsoft Docs
-ms.custom: ''
+title: 演练：创建 SharePoint 项目扩展 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8d68347f2b6b9f538555e05c91b15dcb045b46d6
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 39432f20620a3c7e6f374b09943fc73c2d4d2903
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295977"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885895"
 ---
-# <a name="walkthrough-create-a-sharepoint-project-extension"></a>演练： 创建 SharePoint 项目扩展
+# <a name="walkthrough-create-a-sharepoint-project-extension"></a>演练：创建 SharePoint 项目扩展
   本演练演示如何创建 SharePoint 项目扩展。 项目扩展可用于对等添加、 删除或重命名项目时的项目级事件做出响应。 此外可以添加自定义属性或属性值发生更改时进行响应。 与项目项扩展不同项目扩展将不能为与特定的 SharePoint 项目类型关联。 该扩展时创建的项目扩展，请加载任何类型的 SharePoint 项目中打开时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
  在本演练中，你将创建一个自定义的布尔属性，将添加到任何 SharePoint 项目中创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如果设置为 **，则返回 True**，新属性添加，或映射到你的项目的图像资源文件夹。 如果设置为**False**，删除映像文件夹，如果它存在。 有关详细信息，请参阅[如何： 添加和移除映射的文件夹](../sharepoint/how-to-add-and-remove-mapped-folders.md)。  
@@ -205,8 +202,7 @@ ms.locfileid: "51295977"
   
 ## <a name="see-also"></a>请参阅
  [扩展 SharePoint 项目](../sharepoint/extending-sharepoint-projects.md)   
- [如何： 向 SharePoint 项目中添加属性](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [如何：将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [SharePoint 项目系统类型与其他 Visual Studio 项目类型之间转换](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
  [将数据保存在 SharePoint 项目系统的扩展](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
  [将自定义数据与 SharePoint 工具扩展相关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
-  

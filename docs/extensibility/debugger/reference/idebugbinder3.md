@@ -1,9 +1,6 @@
 ---
-title: IDebugBinder3 |Microsoft 文档
-ms.custom: ''
+title: IDebugBinder3 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugBinder3
@@ -15,16 +12,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6924cfb321ade3955c8e039e32a0374158ea43b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e45e88891eab098837c055cce4a99d271e1f3e83
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919477"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，已弃用这种方式实施表达式计算器。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  此接口提供对类型、 别名和自定义可视化工具服务的访问。  
   
@@ -34,14 +31,14 @@ ms.locfileid: "31104753"
 IDebugBinder3 : IDebugBinder  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 调试引擎实现此接口以支持别名、 自定义可视化工具服务和对象类型信息的访问权限。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 调试引擎实现此接口以支持别名、 自定义可视化工具服务和对象类型信息的访问。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)接口获取通过使用此接口[QueryInterface](/cpp/atl/queryinterface)。  
+ [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)接口获取此接口通过[QueryInterface](/cpp/atl/queryinterface)。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
- 除了提供的方法[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)接口，此接口实现以下：  
+ 除了提供的方法[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)接口，此接口实现了以下：  
   
 |方法|描述|  
 |------------|-----------------|  
@@ -51,16 +48,16 @@ IDebugBinder3 : IDebugBinder
 |[GetAllAliases](../../../extensibility/debugger/reference/idebugbinder3-getallaliases.md)|检索此对象的所有别名的数组|  
 |[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)|获取与此对象关联的自变量类型的数目|  
 |[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)|检索与此对象关联的自变量类型的列表|  
-|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|获取到可视化工具服务接口|  
-|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|将对象位置或 64 位内存地址转换为内存上下文。|  
+|[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|获取可视化工具服务的接口|  
+|[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|将转换为内存上下文的对象位置或 64 位内存地址。|  
   
 ## <a name="requirements"></a>要求  
  标头： ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
- [表达式评估接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+## <a name="see-also"></a>请参阅  
+ [表达式计算接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

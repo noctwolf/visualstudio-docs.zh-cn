@@ -1,9 +1,6 @@
 ---
 title: 为 Windows 安装程序部署准备扩展 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - vsix msi
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc742fecbbe03ff3d3aa0fb3f8d61a9c5f09254b
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 5ceaa78315c896350f87d216e2cc320b66844999
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931406"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>准备 Windows 安装程序部署扩展
 Windows Installer 程序包 (MSI) 不能用于部署 VSIX 包。 但是，您可以提取 MSI 部署 VSIX 包的内容。 本文档演示如何进行准备，其默认输出是包含在安装程序项目中的 VSIX 包的项目。  
@@ -59,4 +56,4 @@ Windows Installer 程序包 (MSI) 不能用于部署 VSIX 包。 但是，您可
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 安装程序部署](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [演练： 创建自定义操作](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))
+ [演练：创建自定义操作](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

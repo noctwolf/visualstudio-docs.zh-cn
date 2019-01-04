@@ -1,9 +1,6 @@
 ---
-title: 如何： 删除文档从托管代码扩展
-ms.custom: ''
+title: 如何：删除文档中的托管的代码扩展
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,21 +13,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a57384fa22e810be27969bb5164e1951dccd1bf2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2057fe53a571bccf04373636f83aaedecebfd4ef
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670697"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964768"
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>如何： 删除文档从托管代码扩展
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>如何：删除文档中的托管的代码扩展
   从文档或工作簿的 Microsoft Office Word 或 Microsoft Office Excel 文档级自定义的一部分，可以以编程方式删除自定义程序集。 然后，用户可以打开的文档并查看内容，但不是会向文档添加任何自定义用户界面 (UI)，而你的代码不会运行。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
  可以使用其中一个来删除自定义程序集`RemoveCustomization`提供的方法[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 使用哪种方法取决于是否想要删除在运行时自定义项 （即通过 Word 时自定义项中运行代码文档或 Excel 工作簿处于打开状态），或如果你想要从已关闭的文档或文档中删除自定义项，i没有安装 Microsoft Office 安装的服务器上的 s。  
   
- ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何执行操作实现： 附加或分离 VSTO 程序集从 Word 文档？](http://go.microsoft.com/fwlink/?LinkId=136782)。  
+ ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[我如何：附加或分离的 VSTO 程序集从 Word 文档？](http://go.microsoft.com/fwlink/?LinkId=136782).  
   
 ## <a name="to-remove-the-customization-assembly-at-runtime"></a>若要删除在运行时自定义程序集  
   
@@ -58,6 +55,4 @@ ms.locfileid: "35670697"
   
 ## <a name="see-also"></a>请参阅  
  [使用 ServerDocument 类管理服务器上的文档](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [如何： 附加托管代码扩展到文档](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
-  
-  
+ [如何：将托管代码扩展附加到文档](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  

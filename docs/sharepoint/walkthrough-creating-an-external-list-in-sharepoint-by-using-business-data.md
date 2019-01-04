@@ -1,13 +1,8 @@
 ---
-title: 演练： 使用业务数据在 SharePoint 中创建外部列表 |Microsoft Docs
-ms.custom: ''
+title: 演练：使用业务数据在 SharePoint 中创建外部列表 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -24,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295834"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918779"
 ---
-# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>演练： 使用业务数据在 SharePoint 中创建外部列表
+# <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>演练：使用业务数据在 SharePoint 中创建外部列表
 
 业务数据连接 (BDC) 服务使 SharePoint 显示从后端服务器应用程序、 Web 服务和数据库的业务数据。
 
@@ -125,7 +120,7 @@ ms.locfileid: "51295834"
 
 将实体添加到模型。 可以从 Visual Studio 中添加实体**工具箱**到 BDC 设计器上。
 
-1. 在菜单栏上依次选择**视图** > **工具箱**。
+1. 在菜单栏上，依次选择“视图” > “工具箱”。
 
 2. 上**BusinessDataConnectivity**选项卡**工具箱**，将添加**实体**到 BDC 设计器上。
 
@@ -275,9 +270,9 @@ ms.locfileid: "51295834"
 
 您可以了解有关如何设计为在 SharePoint 中从下面这些主题的 BDC 服务模型的详细信息：
 
-- [如何： 添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)。
-- [如何： 添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)。
-- [如何： 添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)。
+- [如何：添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)。
+- [如何：添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)。
+- [如何：添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)。
 
 ## <a name="see-also"></a>请参阅
 

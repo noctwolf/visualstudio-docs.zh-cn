@@ -1,9 +1,6 @@
 ---
-title: IDebugCanStopEvent2 |Microsoft 文档
-ms.custom: ''
+title: IDebugCanStopEvent2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugCanStopEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f049648fcbd93d7ad7411a4dfeba8bbdb4431d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c5313595bd96b2176255822425d11776eedaedbe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942237"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
-使用此接口来询问会话调试管理器 (SDM) 是否停止在当前的代码位置。  
+使用此接口要求会话调试管理器 (SDM) 是否在当前代码位置停止。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,13 +28,13 @@ ms.locfileid: "31105601"
 IDebugCanStopEvent2 : IUknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 调试引擎 (DE) 实现此接口以支持单步执行源代码。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现该接口对同一个对象 (SDM 使用[QueryInterface](/cpp/atl/queryinterface)访问`IDebugEvent2`接口)。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 调试引擎 (DE) 实现此接口以支持单步执行源代码。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象 (使用 SDM [QueryInterface](/cpp/atl/queryinterface)访问`IDebugEvent2`接口)。  
   
- 此接口的实现必须通信的 SDM 调用[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)到的调试引擎。 例如，这可通过消息发布到的调试引擎的消息处理线程或实现此接口的对象无法保存对的调试引擎的引用和回调到的调试引擎使用标志传递给`IDebugCanStopEvent2::CanStop`。  
+ 此接口的实现必须进行通信的 SDM 的调用[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)到调试引擎。 例如，这可以通过一条消息发布到调试引擎的消息处理线程或实现此接口的对象无法保存对调试引擎的引用并回调到调试引擎传递到标志`IDebugCanStopEvent2::CanStop`。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- DE 可以发送此方法要求 DE 继续执行，DE 每次逐句通过代码。 通过使用发送此事件[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 时将其附加到正在调试的程序所提供的回调函数。  
+ DE 可以发送此方法每次 DE 需要继续执行，DE 逐句通过代码。 通过使用发送此事件[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 它附加到正在调试的程序时所提供的回调函数。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDebugCanStopEvent2`。  
@@ -45,20 +42,20 @@ IDebugCanStopEvent2 : IUknown
 |方法|描述|  
 |------------|-----------------|  
 |[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)|获取此事件的原因。|  
-|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|指定被调试的程序是否应在此事件 （和发送描述停止的原因的事件） 的位置停止或只需继续执行。|  
-|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|获取描述此事件的位置的文档上下文。|  
-|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|获取描述此事件的位置的代码上下文。|  
+|[CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)|指定是否正在调试的程序应在此事件 （和发送描述停止的原因的事件） 的位置停止，或只需继续执行。|  
+|[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|获取用于描述此事件的位置的文档上下文。|  
+|[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|获取用于描述此事件的位置的代码上下文。|  
   
 ## <a name="remarks"></a>备注  
- 如果此用户单步执行函数，DE 查找任何调试信息或调试信息存在但 DE 不知道如果可以为该位置显示的源代码，DE 将发送此接口。  
+ 如果用户单步执行函数，DE 查找任何调试信息或调试信息存在但 DE 不知道如果可以对该位置显示的源代码，DE 发送此接口。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

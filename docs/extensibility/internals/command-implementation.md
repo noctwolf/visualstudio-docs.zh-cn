@@ -1,9 +1,6 @@
 ---
 title: 命令实现 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f002e660b2c3b745e4a7ea67f715b613b96bd0a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: ea4240ddf84dc1b475adcf81fe80471c9d1bc2b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965416"
 ---
 # <a name="command-implementation"></a>命令实现
 若要在 VSPackage 中实现命令，必须执行以下任务：  
@@ -70,17 +67,17 @@ if ( null != mcs )
   
 -   如果这两种方法的实现可以识别的 GUID 和命令，则该方法的每个命令的命令标志字段应设置 (在`prgCmds`参数) 通过使用以下<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>标志：  
   
-    -   `OLECMDF_SUPPORTED`： 支持该命令。  
+    -   `OLECMDF_SUPPORTED`：支持该命令。  
   
-    -   `OLECMDF_INVISIBLE`： 该命令不应是可见的。  
+    -   `OLECMDF_INVISIBLE`：该命令不应是可见的。  
   
-    -   `OLECMDF_LATCHED`： 此命令上切换，似乎已签入。  
+    -   `OLECMDF_LATCHED`：此命令上切换，似乎已签入。  
   
-    -   `OLECMDF_ENABLED`： 启用该命令。  
+    -   `OLECMDF_ENABLED`：启用命令。  
   
-    -   `OLECMDF_DEFHIDEONCTXTMENU`： 如果它显示快捷菜单上，应隐藏该命令。  
+    -   `OLECMDF_DEFHIDEONCTXTMENU`：如果它显示快捷菜单上，应隐藏该命令。  
   
-    -   `OLECMDF_NINCHED`： 该命令是菜单控制器且未启用，但其下拉列表菜单列表不为空，并且仍然可用。 （很少使用此标志。）  
+    -   `OLECMDF_NINCHED`：该命令是菜单控制器且未启用，但其下拉列表菜单列表不为空，并且仍然可用。 （很少使用此标志。）  
   
 -   如果该命令中定义，则 *.vsct*文件具有`TextChanges`标志，请将以下参数：  
   

@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb39e9d510d2da8a7e8b7ae9ac08ff655f334f2e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49828671"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866486"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定义锁定策略以创建只读段
 Visual Studio 可视化和建模 SDK 的不可变性 API 允许程序锁定部分或全部域特定语言 (DSL) 模型，以便它可以读取但不是会更改。 无法使用此只读选项，例如，以便用户可以请求添加批注并查看 DSL 模型的同事，但可以禁止这些更改原始。
@@ -77,7 +76,7 @@ partition.SetLocks(Locks.Delete);
 
   无法设置锁分区上或存储并在同一时间禁用某个元素上的锁。
 
-|“值”|这意味着如果`IsLocked(Value)`为 true|
+|值|这意味着如果`IsLocked(Value)`为 true|
 |-|-|
 |无|没有限制。|
 |属性|不能更改域属性的元素。 这不适用于生成的域类在关系中的角色的属性。|

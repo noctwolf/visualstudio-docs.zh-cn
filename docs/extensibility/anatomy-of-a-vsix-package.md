@@ -1,9 +1,6 @@
 ---
 title: VSIX 包的剖析 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - visual studio extension
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dea0fce75d83678161013baef109364842fcc46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b9fa23b603f8eb94ebca5256145b7fb7df837d40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937728"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921479"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 包的剖析
 VSIX 包是 *.vsix*文件，其中包含一个或多个 Visual Studio 扩展，与 Visual Studio 的元数据一起使用来进行分类和安装的扩展。 该元数据包含在 VSIX 清单中， *[Content_Types].xml*文件。 VSIX 包可能还包含一个或多个*Extension.vsixlangpack*文件，以提供本地化安装程序文本，并可能包含其他 VSIX 包安装依赖项。  
@@ -60,4 +57,4 @@ VSIX 包是 *.vsix*文件，其中包含一个或多个 Visual Studio 扩展，�
 ## <a name="contenttypesxml"></a>[Content_Types].xml  
  *[Content_Types].xml*文件来确定在展开的文件类型 *.vsix*文件。 Visual Studio 在包的安装过程中使用此文件，但不会安装文件本身。 有关此文件的详细信息，请参阅[[Content_types].xml 文件的结构](the-structure-of-the-content-types-dot-xml-file.md)。  
   
- 一个 *[Content_Types].xml*文件所需的开放打包约定 (OPC) 标准。 有关 OPC 的详细信息，请参阅[OPC： 打包你的数据的新标准](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/)MSDN 网站上。
+ 一个 *[Content_Types].xml*文件所需的开放打包约定 (OPC) 标准。 有关 OPC 的详细信息，请参阅[OPC:打包你的数据的新标准](https://blogs.msdn.microsoft.com/msdnmagazine/2007/08/08/opc-a-new-standard-for-packaging-your-data/)MSDN 网站上。

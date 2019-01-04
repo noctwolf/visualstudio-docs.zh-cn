@@ -2,7 +2,6 @@
 title: 托管代码的“基本更正规则”规则集
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
 author: gewarren
@@ -10,17 +9,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5bbd43b47e104dc775629e0e517ba8c47c2a49ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cc1b57bed4ec910b1b06cc8efb5a80d0fa2fdc5a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900625"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933631"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>托管代码的“基本更正规则”规则集
-基本更正规则规则集重点关注逻辑错误和 framework Api 用法的常见错误。 基本更正规则包含集中的最少量建议规则的规则的规则。 有关详细信息，请参阅[托管建议规则规则设置对于托管代码](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)应包括此规则集可展开的最小值建议规则所报告的警告的列表上。
+基本正确性规则规则集重点关注逻辑错误和使用的框架 Api 中的常见错误。 基本正确性规则最少量建议规则规则集中包含的规则。 有关详细信息，请参阅[托管代码的托管建议规则规则集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)应包含此规则集可展开上的所需的最低建议规则所报告的警告的列表。
 
- 下表介绍在 Microsoft 基本更正规则规则集中的所有规则。
+ 下表介绍了 Microsoft 基本正确性规则规则集中的所有规则。
 
 |规则|描述|
 |----------|-----------------|
@@ -58,14 +57,14 @@ ms.locfileid: "31900625"
 |[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|在外部 try 块中包装易受攻击的 finally 子句|
 |[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|类型链接请求需要继承请求|
 |[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|安全关键类型不能参与类型等效|
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|默认构造函数必须至少与基类型默认构造函数为关键|
+|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|默认构造函数必须至少与基类型默认构造函数一样关键|
 |[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|委托必须绑定到具有一致透明度的方法|
 |[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|在重写基方法时，方法必须保持一致的透明度|
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|透明方法只能包含可验证的 IL|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|透明方法不得调用具有 SuppressUnmanagedCodeSecurity 特性的方法|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|透明代码不得引用安全关键项|
 |[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|透明方法不得满足 LinkDemand|
-|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|类型必须是至少与其基类型和接口一样关键|
+|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|类型必须至少与其基类型和接口一样关键|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|透明方法不得使用安全断言|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透明方法不得调入本机代码|
 |[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|再次引发以保留堆栈详细信息|
@@ -87,31 +86,31 @@ ms.locfileid: "31900625"
 |[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|为格式化方法提供正确的自变量|
 |[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|正确测试 NaN|
 |[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|枚举应具有零值|
-|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|重载重载相等运算符重载加法方法和减法|
-|[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|不要将文本作为本地化参数传递|
+|[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|重载加法方法和减法方法时重载相等运算符|
+|[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|请不要将文本作为本地化参数传递|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|将字符串规范化为大写|
 |[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|不要忽略方法结果|
-|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|调用 GC。SuppressFinalize 正确|
+|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|正确调用 GC.SuppressFinalize|
 |[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|属性不应返回数组|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|测试有空字符串使用字符串长度|
-|[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|使用仅目标框架中的 API|
-|[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|移除对 GC 的调用。KeepAlive|
+|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|使用字符串长度测试是否有空字符串|
+|[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|仅使用目标框架中的 API|
+|[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|移除对 GC.KeepAlive 的调用|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|使用 SafeHandle 封装本机资源|
 |[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|在常规处理程序中捕捉非 CLSCompliant 异常|
 |[CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|不要声明只读可变引用类型|
-|[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|不应仅读取数组字段|
-|[CA2106](../code-quality/ca2106-secure-asserts.md)|安全断言|
-|[CA2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|调用 GC。KeepAlive 使用本机资源时|
+|[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|数组字段不应为只读|
+|[CA2106](../code-quality/ca2106-secure-asserts.md)|保护断言|
+|[CA2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|使用本机资源时调用 GC.KeepAlive|
 |[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|密封满足私有接口的方法|
-|[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|安全的序列化构造函数|
+|[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|保护序列化构造函数|
 |[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|静态构造函数应为私有|
-|[CA2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|安全关键常量应是透明|
+|[CA2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|安全关键常量应是透明的|
 |[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|使用 Win32 API 的托管等效项|
-|[CA2215](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|Dispose 方法应调用基类的 dispose|
+|[CA2215](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|Dispose 方法应调用基类释放|
 |[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|终结器应受到保护|
-|[CA2222](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|不要递减继承的成员的可见性|
-|[CA2223](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|成员不应通过多个返回类型不同|
-|[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|重写 equals 方法重载相等运算符|
+|[CA2222](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|不要递减继承成员的可见性|
+|[CA2223](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|成员不应只是返回类型不同|
+|[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|重载相等运算符时重写 Equals 方法|
 |[CA2226](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|运算符应有对称重载|
 |[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|集合属性应为只读|
-|[CA2239](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|提供为可选字段的反序列化方法|
+|[CA2239](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|为可选字段提供反序列化方法|

@@ -1,9 +1,6 @@
 ---
-title: 演练： 在 VSTO 外接程序中的运行时向文档添加控件
-ms.custom: ''
+title: 演练：在 VSTO 外接程序中的运行时向文档添加控件
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 774e26388f5eb25fb0a16dee05557c6bf34a0ff0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 085860294955e1049d05cf38abea636bc2eb8672
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951582"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954891"
 ---
-# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>演练： 在 VSTO 外接程序中的运行时向文档添加控件
+# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>演练：在 VSTO 外接程序中的运行时向文档添加控件
   通过使用 VSTO 外接程序中，可以向任何打开的 Microsoft Office Word 文档添加控件。 本演练演示如何使用功能区使用户能够添加<xref:Microsoft.Office.Tools.Word.Controls.Button>或<xref:Microsoft.Office.Tools.Word.RichTextContentControl>到文档。  
 
- **适用于：** 本主题中的信息适用于 Word 2010 的 VSTO 外接程序项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **适用于：** 本主题中的信息适用于 Word 2010 VSTO 外接程序项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
 
  本演练阐释了以下任务：  
 
@@ -54,7 +51,7 @@ ms.locfileid: "49951582"
 
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>创建新的 Word VSTO 外接程序项目  
 
-1.  名称为 Word 创建一个 VSTO 外接程序项目**WordDynamicControls**。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  名称为 Word 创建一个 VSTO 外接程序项目**WordDynamicControls**。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
 
 2.  添加对 **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** 程序集的引用。 在本演练后面的部分中，需要此引用才能以编程方式向文档中添加 Windows 窗体控件。  
 
@@ -82,7 +79,7 @@ ms.locfileid: "49951582"
 8. 在 **“属性”** 窗口中，更改下列属性。  
 
 
-   | 属性 | “值” |
+   | 属性 | 值 |
    |-----------|-----------------------|
    | **名称** | **addButtonCheckBox** |
    | **标签** | **“添加”按钮** |
@@ -91,7 +88,7 @@ ms.locfileid: "49951582"
 9. 将第二个复选框添加到 **group1**，然后更改下列属性。  
 
 
-   | 属性 | “值” |
+   | 属性 | 值 |
    |-----------|---------------------------|
    | **名称** | **addRichTextCheckBox** |
    | **标签** | **添加 RTF 控件** |
@@ -187,13 +184,12 @@ ms.locfileid: "49951582"
 
 -   有关演示如何在运行时向文档添加许多其他类型的控件和重新打开文档时重新创建这些控件的示例，请参阅 Word 外接程序动态控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md).  
 
--   有关演示如何使用用于 Excel 的 VSTO 外接程序将控件添加到工作表的演练，请参阅[演练： 将控件添加到在运行时在 VSTO 外接程序项目中的工作表](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)。  
+-   有关演示如何使用用于 Excel 的 VSTO 外接程序将控件添加到工作表的演练，请参阅[演练：将控件添加到在运行时在 VSTO 外接程序项目中的工作表](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)。  
 
 ## <a name="see-also"></a>请参阅  
  [Word 解决方案](../vsto/word-solutions.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [持久保存在 Office 文档中的动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)   
- [如何： 向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [如何： 向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [扩展 Word 文档和 Excel 工作簿在 VSTO 外接在运行时](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
-

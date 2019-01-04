@@ -1,17 +1,12 @@
 ---
 title: 从现有的 SharePoint 网站导入项 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
 - VS.SharePointTools.WSPImport.SelectionItemsToImport
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -23,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6345e6650c815242db661cef52b78db31d447b06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918149"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>从现有的 SharePoint 网站导入项目
   利用“导入 SharePoint 解决方案包”项目模板，你可以在新的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 解决方案中重用现有 SharePoint 网站中的元素，例如，内容类型和字段。 虽然无需修改即可运行大多数导入的解决方案，但需要考虑一些限制和问题，尤其是在导入任何项后对这些项进行修改的情况下。  
@@ -96,20 +91,20 @@ ms.locfileid: "49832096"
   
  例如，如果您导入列表定义 ExpenseForms，则具有该名称的列表定义将显示在**列出定义**中的文件夹**解决方案资源管理器**连同其*Elements.xml*并*Schema.xml*文件。 但其关联的 ASPX 和 HTML 窗体可能会放置在“其他已导入文件”  文件夹下的名为“ExpenseForms”  的文件夹中。 若要完成此导入，请在“解决方案资源管理器”  中的 ExpenseForms 列表定义下移动这些文件，并将每个文件的“DeploymentType”  属性从“NoDeployment”  更改为“ElementFile” 。  
   
- 当导入事件接收器*Elements.xml*文件复制到正确的位置，但您必须手动将程序集包含解决方案包，以便它将部署的解决方案。 [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] 如何执行此操作，请参阅[如何： 添加和删除其他程序集](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。  
+ 当导入事件接收器*Elements.xml*文件复制到正确的位置，但您必须手动将程序集包含解决方案包，以便它将部署的解决方案。 [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] 如何执行此操作，请参阅[如何：添加和删除其他程序集](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。  
   
  在导入工作流时，InfoPath 窗体将会复制到“其他已导入文件”  文件夹中。 如果 *.wsp*文件包含 Web 模板，它被设置为中的启动页**解决方案资源管理器**。  
   
 ## <a name="import-fields-and-property-bags"></a>导入字段和属性包
  导入具有多个字段的解决方案时，所有单独的字段定义将合并到单个*Elements.xml*中的节点下的文件**解决方案资源管理器**调用**字段**. 同样，所有属性包项将都合并到*Elements.xml*调用节点下的文件**PropertyBags**。  
   
- SharePoint 中的字段是指定数据类型（如文本、布尔值或查阅）的列。 有关详细信息，请参阅 [生成块：列和字段类型](http://go.microsoft.com/fwlink/?LinkId=182304)。 利用属性包，可以向 SharePoint 中的对象（从场到 SharePoint 网站上的列表的所有内容）添加属性。 属性包将作为属性名和属性值的哈希表实现。 有关详细信息，请参阅 [管理 SharePoint 配置](http://go.microsoft.com/fwlink/?LinkId=182296) 或 [SharePoint 属性包设置](http://go.microsoft.com/fwlink/?LinkId=182297)。  
+ SharePoint 中的字段是指定数据类型（如文本、布尔值或查阅）的列。 有关详细信息，请参阅[构建基块：列和字段类型](http://go.microsoft.com/fwlink/?LinkId=182304)。 利用属性包，可以向 SharePoint 中的对象（从场到 SharePoint 网站上的列表的所有内容）添加属性。 属性包将作为属性名和属性值的哈希表实现。 有关详细信息，请参阅 [管理 SharePoint 配置](http://go.microsoft.com/fwlink/?LinkId=182296) 或 [SharePoint 属性包设置](http://go.microsoft.com/fwlink/?LinkId=182297)。  
   
 ## <a name="delete-items-in-the-project"></a>删除项目中的项
  SharePoint 解决方案中的大多数项都具有一个或多个依赖项。 例如，列表实例依赖于内容类型，而内容类型依赖于字段。 导入 SharePoint 解决方案后，如果你删除此解决方案中的某个项而不删除其依赖项，则在你尝试部署解决方案之前， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不会告知你任何引用问题。 例如，如果导入的解决方案具有的列表实例依赖某个内容类型，而你删除了该内容类型，则在部署时可能会出现错误。 如果 SharePoint 服务器中不存在此依赖项，则会发生错误。 同样，如果已删除的项也具有关联的属性包，然后删除这些属性包项从**PropertyBags** *Elements.xml*文件。 因此，如果从导入的解决方案中删除任何项，并且存在部署错误，则应检查是否还需要删除任何依赖项。  
   
 ## <a name="restore-missing-feature-attributes"></a>还原缺少的功能属性
- 在导入解决方案时，将从导入的功能清单中略去一些可选的功能属性。 如果你想要还原这些属性在新的功能文件中，标识缺少属性： 将原始功能文件与新的功能清单进行比较，并按照本主题中的说明[如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ 在导入解决方案时，将从导入的功能清单中略去一些可选的功能属性。 如果你想要还原这些属性在新的功能文件中，标识缺少属性： 将原始功能文件与新的功能清单进行比较，并按照本主题中的说明[如何：自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)。  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>不对内置列表实例执行部署冲突检测
  [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不对内置列表实例（即，SharePoint 附带的默认列表实例）执行部署冲突检测。 不执行冲突检测是为了避免覆盖 SharePoint 上的内置列表实例。 仍将部署或更新内置列表实例，但不会对其进行删除或覆盖。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint 打包和部署进行故障排除](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)。  
@@ -139,7 +134,7 @@ ms.locfileid: "49832096"
  在将 [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] 或 [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)] 项目导入到 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]中时，缺少脚本管理器控件可能会导致出现问题，因为所有新项目的 SharePointProductVersion 属性都被设置为 14.0。 如果部署的已升级项目具有一个不带脚本管理器的 Web 窗体，则该窗体将不会在 SharePoint 中显示。  
   
 ## <a name="see-also"></a>请参阅
- [演练： 从现有的 SharePoint 网站导入项目](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
+ [演练：从现有的 SharePoint 网站导入项目](../sharepoint/walkthrough-import-items-from-an-existing-sharepoint-site.md)   
  [导入可重用工作流的准则](../sharepoint/guidelines-for-importing-reusable-workflows.md)   
- [演练： 导入 Visual Studio SharePoint Designer 可重用工作流](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
- [如何： 将现有 BDC 模型文件添加到 SharePoint 项目](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  
+ [演练：导入 Visual Studio SharePoint Designer 可重用工作流](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)   
+ [如何：将现有 BDC 模型文件添加到 SharePoint 项目](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)  

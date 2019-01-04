@@ -1,15 +1,10 @@
 ---
-title: 如何： 创建实体之间的关联 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建实体之间的关联 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - AssociationGroupTool
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -26,14 +21,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 51527092332f1fa82019f1abf9251a8b44aedf06
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: eaaa3f86cc0751b0b80d61555a69aa6bfecda2f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118488"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878242"
 ---
-# <a name="how-to-create-an-association-between-entities"></a>如何： 创建实体之间的关联
+# <a name="how-to-create-an-association-between-entities"></a>如何：创建实体之间的关联
   可以定义您通过创建关联的业务数据连接 (BDC) 模型中实体之间的关系。 Visual Studio 生成的模型的使用者提供有关每个关联的信息的方法。 SharePoint Web 部件、列表或自定义应用程序可以使用这些方法在用户界面 (UI) 中显示数据关系。  
   
  可以在 BDC 设计器中创建两种类型的关联： 外基于密钥的关联和外键的关联。 有关详细信息，请参阅[创建实体之间的关联](../sharepoint/creating-an-association-between-entities.md)。  
@@ -69,14 +64,13 @@ ms.locfileid: "37118488"
 ## <a name="see-also"></a>请参阅
  [创建实体之间的关联](../sharepoint/creating-an-association-between-entities.md)   
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [如何： 添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何： 添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何： 添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)   
- [如何： 添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)   
- [如何： 添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何：添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何：添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)   
+ [如何：添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)   
+ [如何：添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 向方法中添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定义方法实例](../sharepoint/how-to-define-a-method-instance.md)   
- [如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [演练： 使用业务数据在 SharePoint 中创建外部列表](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)  
-  
+ [如何：将参数添加到方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定义方法实例](../sharepoint/how-to-define-a-method-instance.md)   
+ [如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [演练：使用业务数据在 SharePoint 中创建外部列表](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)  

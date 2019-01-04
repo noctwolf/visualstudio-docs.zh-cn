@@ -1,9 +1,6 @@
 ---
 title: 在中断模式下的表达式计算 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - break mode, expression evaluation
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4afa0f98616ebcb85d421874b9c6ed5cc7270b52
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 62824c46e682b0418b8797d6adee0b504f04b414
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987202"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>在中断模式下的表达式计算
 以下部分介绍调试器处于中断模式下，必须执行表达式计算时，会发生的过程。  

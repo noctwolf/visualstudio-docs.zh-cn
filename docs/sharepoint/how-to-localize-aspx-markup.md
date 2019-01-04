@@ -1,13 +1,8 @@
 ---
-title: 如何： 本地化 ASPX 标记 |Microsoft Docs
-ms.custom: ''
+title: 如何：本地化 ASPX 标记 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 68e74f743c1c00bb940a89039e4fd5cfcf8e63e4
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0a646c84df5f6da318e8c21f6a55ac7a852a1af0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118511"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959819"
 ---
-# <a name="how-to-localize-aspx-markup"></a>如何： 本地化 ASPX 标记
+# <a name="how-to-localize-aspx-markup"></a>如何：本地化 ASPX 标记
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (.aspx) 页通常使用硬编码的字符串值。 若要本地化这些字符串，这些替换表达式引用本地化的资源。  
   
 ## <a name="localize-aspx-markup"></a>本地化 ASPX 标记  
@@ -81,7 +76,6 @@ ms.locfileid: "37118511"
   
 ## <a name="see-also"></a>请参阅
  [本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)   
- [如何： 本地化功能](../sharepoint/how-to-localize-a-feature.md)   
- [如何： 添加资源文件](../sharepoint/how-to-add-a-resource-file.md)   
- [如何： 本地化代码](../sharepoint/how-to-localize-code.md)  
-  
+ [如何：本地化功能](../sharepoint/how-to-localize-a-feature.md)   
+ [如何：添加资源文件](../sharepoint/how-to-add-a-resource-file.md)   
+ [如何：本地化代码](../sharepoint/how-to-localize-code.md)  

@@ -1,9 +1,6 @@
 ---
 title: AsyncVoidMethodBuilder.ObjectIdForDebugger 属性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - ObjectIdForDbugger property, AsyncVoidMethodBuilder structure [.NET Framework debug engines]
@@ -13,17 +10,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0f8acbfbdc129371d288d64cc48b3e4b0704ad
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1d0c6d2e8fbe9a26a8d38351d0e6e423b1c0de5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961349"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger 属性
 获取可用于唯一地标识调试器到此生成器的对象。  
   
- **命名空间：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Namespace**：<xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **程序集：** mscorlib （在 mscorlib.dll 中)  
   

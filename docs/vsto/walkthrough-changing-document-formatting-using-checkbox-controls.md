@@ -1,9 +1,6 @@
 ---
-title: 演练： 更改文档格式设置使用 CheckBox 控件
-ms.custom: ''
+title: 演练：更改文档格式设置使用 CheckBox 控件
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86cf89f7853308e93c55e30deae17786fdb3e413
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6e33d7b683e55f570961d9f9f8f77ea1491db3f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913864"
 ---
-# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>演练： 更改文档格式设置使用 CheckBox 控件
+# <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>演练：更改文档格式设置使用 CheckBox 控件
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中使用 Windows 窗体控件来更改文本格式。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -55,7 +52,7 @@ ms.locfileid: "49863927"
   
 1.  使用名称创建一个 Word 文档项目**我的 Word 格式**。 在向导中，选择**创建一个新文档**。  
   
-     有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新的 Word 文档并将添加**我的 Word 格式**投影到**解决方案资源管理器**。  
   
@@ -79,7 +76,7 @@ ms.locfileid: "49863927"
   
 5.  将第二个复选框添加到下面的文档`ApplyBoldFont`复选框，并更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**applyItalicFont**|  
     |**文本**|**斜体**|  
@@ -88,7 +85,7 @@ ms.locfileid: "49863927"
   
 7.  将第三个复选框添加到下面的文档`ApplyItalicFont`复选框，并更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**applyUnderlineFont**|  
     |**文本**|**用下划线标出**|  
@@ -137,7 +134,7 @@ ms.locfileid: "49863927"
      [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]  
   
-6.  在C#，必须将添加到文本框中的事件处理程序<xref:Microsoft.Office.Tools.Word.Document.Startup>事件。 有关如何创建事件处理程序的信息，请参阅[如何： 在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+6.  在C#，必须将添加到文本框中的事件处理程序<xref:Microsoft.Office.Tools.Word.Document.Startup>事件。 有关如何创建事件处理程序的信息，请参阅[如何：Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
@@ -155,9 +152,9 @@ ms.locfileid: "49863927"
 ## <a name="next-steps"></a>后续步骤  
  本演练显示了使用复选框和以编程方式更改文本在 Word 文档格式设置基础的知识。 以下是接下来可能要执行的一些任务：  
   
--   使用按钮填充文本框。 有关详细信息，请参阅[演练： 使用按钮在文档的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。  
+-   使用按钮填充文本框。 有关详细信息，请参见[演练：在文本框中使用按钮在文档中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。  
   
--   使用单选按钮以选择图表样式。 有关详细信息，请参阅[演练： 更新使用单选按钮在文档结构图](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
+-   使用单选按钮以选择图表样式。 有关详细信息，请参见[演练：更新使用单选按钮在文档结构图](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
   
 
 ## <a name="see-also"></a>请参阅  
@@ -165,5 +162,3 @@ ms.locfileid: "49863927"
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
  [Office 文档上的 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
-  
-  

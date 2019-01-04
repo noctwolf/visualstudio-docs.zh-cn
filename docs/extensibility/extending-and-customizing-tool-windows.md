@@ -1,9 +1,6 @@
 ---
 title: 扩展和自定义工具 Windows |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, essentials
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c11485e830d1b7bcef851a50225e15f351e64f3e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 4c942076f10aa39994c2a809f994b9725831d67b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949831"
 ---
 # <a name="extend-and-customize-tool-windows"></a>扩展和自定义工具窗口
 Visual Studio 提供多种不同类型的 windows，如工具窗口、 文档窗口和对话框窗口。 如其他 windows**属性**窗口中，**输出**窗口中，并且**任务列表**窗口中，工具窗口的类型。  
@@ -37,9 +34,9 @@ Visual Studio 提供多种不同类型的 windows，如工具窗口、 文档窗
   
  工具窗口可以在文档框架中停靠、浮动或呈选项卡式。 工具窗口框架由 IDE 提供，用于控制大小、位置、停靠状态和其他持久性属性。 工具窗口窗格用于显示内容。 仅当首次打开工具窗口时才应用默认大小和位置；在此之后将保留工具窗口状态。  
   
- 工具窗口窗格可以承载 WPF 用户控件，并支持工具栏。 您可以重写<xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A>属性以返回所承载控件的句柄。  
+ 工具窗口窗格可以承载 WPF 用户控件，并支持工具栏。 你可以重写 <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> 属性以返回所承载的控件的句柄。  
   
- 可以将许多不同的功能添加到工具窗口。 例如，将工具栏添加：[添加到工具窗口工具栏](../extensibility/adding-a-toolbar-to-a-tool-window.md)或快捷菜单：[的工具窗口中添加快捷菜单](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md)。 可以添加一个搜索控件，可用于搜索工具窗口中的项：[添加到工具窗口搜索](../extensibility/adding-search-to-a-tool-window.md)。  
+ 可以将许多不同的功能添加到工具窗口。 例如，可以添加工具栏：[将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md)或快捷菜单：[工具窗口中添加快捷菜单](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md)。 可以添加一个搜索控件，可用于搜索工具窗口中的项：[将搜索添加到工具窗口](../extensibility/adding-search-to-a-tool-window.md)。  
   
  您可以订阅事件的工具窗口：[订阅事件](../extensibility/subscribing-to-an-event.md)。  
   

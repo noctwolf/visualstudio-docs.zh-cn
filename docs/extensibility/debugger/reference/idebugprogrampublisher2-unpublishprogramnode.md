@@ -1,9 +1,6 @@
 ---
 title: IDebugProgramPublisher2::UnpublishProgramNode |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProgramPublisher2::UnpublishProgramNode
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b707f63aaf9e4873fe851c9b9db1d175fdb51ce2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 55e89d1195a37ac6a15852e9e54fd5ce96de0359
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989589"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 从可用性调试引擎 (DEs) 和会话调试管理器 (SDM) 中移除指定的程序节点。  
@@ -28,13 +25,13 @@ ms.locfileid: "49926470"
 ## <a name="syntax"></a>语法  
   
 ```cpp  
-HRESULT UnpublishProgramNode(  
-   IDebugProgramNode2* pProgramNode  
+HRESULT UnpublishProgramNode(  
+   IDebugProgramNode2* pProgramNode  
 );  
 ```  
   
 ```csharp  
-int UnpublishProgramNode(  
+int UnpublishProgramNode(  
    IDebugProgramNode2 pProgramNode  
 );  
 ```  
