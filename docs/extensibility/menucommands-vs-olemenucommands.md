@@ -1,8 +1,6 @@
 ---
 title: MenuCommands 与OleMenuCommands |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - commands, creating in VSPackages
@@ -10,12 +8,12 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: douge
-ms.openlocfilehash: 0fbe8ea2a78eae02cb7e0d390da49eafe55e75ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b33d84f62db9cfe1371ffc540830f63d93e67d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926234"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands 与OleMenuCommands
 可以通过从派生来创建菜单命令<xref:System.ComponentModel.Design.MenuCommand>或从<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>对象，并实现相应的事件处理程序。 在大多数情况下可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就和 VSPackage 项目模板工作方式一样，但有时你可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
@@ -183,7 +181,7 @@ ms.locfileid: "49888952"
   
     `EventHandler` 对象命名为查询菜单命令状态时调用的方法的名称。  
   
-2. 实现该命令的查询状态处理程序的方法。 `object` `sender` 参数可强制转换为 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 对象（此对象用于设置菜单命令的各种特性），包括文本。 下表显示对应于 <xref:System.ComponentModel.Design.MenuCommand> 标志的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 类（MPF 类 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 的派生来源）上的属性。  
+2. 实现该命令的查询状态处理程序的方法。  `object` `sender` 参数可强制转换为 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 对象（此对象用于设置菜单命令的各种特性），包括文本。 下表显示对应于 <xref:System.ComponentModel.Design.MenuCommand> 标志的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 类（MPF 类 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 的派生来源）上的属性。  
   
    |MenuCommand 属性|OLECMDF 标志|  
    |--------------------------|------------------|  
