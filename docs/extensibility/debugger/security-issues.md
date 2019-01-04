@@ -1,9 +1,6 @@
 ---
 title: 安全问题 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - security [Debugging SDK]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd4d07721f202169ca0689882ac1a41045a4d61
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 387c00fa9440bd8a6ffdc862e9b91110dadcfd69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252318"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940753"
 ---
 # <a name="security-issues"></a>安全问题
 若要调试使用 Visual Studio 的程序，所需的唯一权限是相同的一名开发人员需要运行程序。 这包括大多数情况下的远程调试。 某些情况下，涉及其他服务，如 Internet 信息服务，可能需要更高级别的权限。  

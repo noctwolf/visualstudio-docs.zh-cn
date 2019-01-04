@@ -2,7 +2,6 @@
 title: XML 架构设计器起始视图
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 302c6574b8c09447f4b7e561118e60d200a3944f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae65e494c20808123841143155e02d91c41b858e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857901"
 ---
 # <a name="start-view"></a>起始视图
 
@@ -27,7 +26,7 @@ ms.locfileid: "49920667"
 
 ## <a name="watermark"></a>水印
 
-水印窗格包含指向所有 XSD 设计器视图中，XML 编辑器的列表和**XML 架构资源管理器**。 如果架构集有错误，则列表的末尾会显示以下文本：“请使用‘错误列表’查看和修复架构集中的错误”[Use the Error List to view and fix the errors in the set]。
+水印窗格包含指向所有 XSD 设计器视图中，XML 编辑器的列表和**XML 架构资源管理器**。 如果架构集有错误，在列表末尾显示以下文本："使用错误列表以查看并集中解决错误。"
 
 ## <a name="schema-set-details"></a>架构集详细信息
 
@@ -43,9 +42,9 @@ ms.locfileid: "49920667"
 
 |选项|描述|
 |-|-----------------|
-|**显示起始视图**|切换到起始视图。 可以使用键盘快捷方式访问此视图： **Ctrl**+**1**。|
-|**显示内容模型视图**|切换到内容模型视图。 可以使用键盘快捷方式访问此视图： **Ctrl**+**2**。|
-|**显示图形视图**|切换到图形视图。 可以使用键盘快捷方式访问此视图： **Ctrl**+**3**。|
+|**显示起始视图**|切换到起始视图。 可以使用键盘快捷方式访问此视图：**Ctrl**+**1**。|
+|**显示内容模型视图**|切换到内容模型视图。 可以使用键盘快捷方式访问此视图：**Ctrl**+**2**。|
+|**显示图形视图**|切换到图形视图。 可以使用键盘快捷方式访问此视图：**Ctrl**+**3**。|
 
 ## <a name="see-also"></a>请参阅
 

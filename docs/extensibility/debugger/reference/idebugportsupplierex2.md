@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplierEx2 |Microsoft 文档
-ms.custom: ''
+title: IDebugPortSupplierEx2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugPortSupplierEx2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78ba4b16837200f729ec4f8b9061dbb321ee58ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bbc58f85a084711057e2ad46b03a1ac0f6fb8f28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115894"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866772"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
-选择并核心服务器与之交互的端口供应商提供的支持。  
+为端口提供程序选择并核心服务器与之交互提供支持。  
   
 ## <a name="syntax"></a>语法  
   
@@ -29,8 +26,8 @@ ms.locfileid: "31115894"
 IDebugPortSupplierEx2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 自定义端口供应商提供实现此接口，以便它可以选择要使用的核心服务器。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 自定义端口提供程序实现此接口，以便它可以选择要使用的核心服务器。  
   
 ## <a name="methods"></a>方法  
  下表显示的方法**IDebugPortSupplierEx2**。  
@@ -40,13 +37,13 @@ IDebugPortSupplierEx2 : IUnknown
 |[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|设置端口提供程序的核心服务器。|  
   
 ## <a name="requirements"></a>要求  
- 标头： Portpriv.h  
+ 标头：Portpriv.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

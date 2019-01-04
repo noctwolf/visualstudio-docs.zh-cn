@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式在 Outlook 中移动项
-ms.custom: ''
+title: 如何：以编程方式在 Outlook 中移动项
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,14 +12,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fced6a5e41d2b79d32575f20d224f75053acb988
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 51123937fd26b6d6decf3770affd83b1d58d5bfc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875736"
 ---
-# <a name="how-to-programmatically-move-items-in-outlook"></a>如何： 以编程方式在 Outlook 中移动项
+# <a name="how-to-programmatically-move-items-in-outlook"></a>如何：以编程方式在 Outlook 中移动项
   此示例将从未读的电子邮件**收件箱**到名为的文件夹**测试**。 此示例仅移动消息包含有词语**测试**中`Subject`字段。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -39,8 +36,6 @@ ms.locfileid: "35257717"
   
 ## <a name="see-also"></a>请参阅  
  [使用文件夹](../vsto/working-with-folders.md)   
- [如何： 以编程方式按名称检索文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [如何： 以编程方式在特定文件夹内的搜索](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
- [如何： 以编程方式执行操作时收到一封电子邮件](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
-  
-  
+ [如何：以编程方式按名称检索文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [如何：以编程方式在特定文件夹内的搜索](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
+ [如何：以编程方式执行操作时收到一封电子邮件](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  

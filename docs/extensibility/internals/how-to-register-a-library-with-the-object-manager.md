@@ -1,9 +1,6 @@
 ---
-title: 如何： 使用对象管理器注册库 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用对象管理器注册库 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - libraries, registering with object manager
@@ -17,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61976fbc63efd4c15e5ed88a159ea8e73bdf38f3
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 0ed3913b8031283b20589a670c5d2da6e51a8dec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513307"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941974"
 ---
-# <a name="how-to-register-a-library-with-the-object-manager"></a>如何： 向对象管理器注册库
+# <a name="how-to-register-a-library-with-the-object-manager"></a>如何：与对象管理器注册库
 符号浏览工具，如**类视图**，**对象浏览器**，**调用浏览器**并**查找符号结果**，可以查看在项目中或在外部组件的符号。 符号包括命名空间、 类、 接口、 方法和其他语言元素。 库跟踪这些符号和公开到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器填充的数据的工具。  
   
  对象管理器跟踪的所有可用的库。 每个库必须注册对象管理器，在符号浏览工具提供符号之前。  
@@ -170,4 +167,4 @@ ms.locfileid: "39513307"
 ## <a name="see-also"></a>请参阅  
  [旧版语言服务扩展性](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [如何： 公开库提供对对象管理器的符号列表](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [如何：公开库提供对对象管理器的符号列表](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

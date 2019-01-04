@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式在 Word 中设置搜索选项
-ms.custom: ''
+title: 如何：以编程方式在 Word 中设置搜索选项
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e4e6b5471f1d36eab677d8a1d0b65ab39b7dba4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec5b2f797371d19fea1b4fedc2064ab355ffac10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853938"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853380"
 ---
-# <a name="how-to-programmatically-set-search-options-in-word"></a>如何： 以编程方式在 Word 中设置搜索选项
+# <a name="how-to-programmatically-set-search-options-in-word"></a>如何：以编程方式在 Word 中设置搜索选项
   有两种方法可以在 Microsoft Office Word 文档中设置的选择的搜索选项：  
   
 - 设置各个属性的<xref:Microsoft.Office.Interop.Word.Find>对象。  
@@ -56,8 +53,6 @@ ms.locfileid: "49853938"
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式搜索和替换文档中的文本](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [如何： 以编程方式遍历在文档中找到的项](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [如何： 以编程方式搜索后还原选定内容](../vsto/how-to-programmatically-restore-selections-after-searches.md)  
-  
-  
+ [如何：以编程方式搜索和替换文档中的文本](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [如何：以编程方式遍历在文档中找到的项](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [如何：以编程方式搜索后还原选定内容](../vsto/how-to-programmatically-restore-selections-after-searches.md)  

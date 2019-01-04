@@ -1,9 +1,6 @@
 ---
 title: IDebugEngine2::Attach |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngine2::Attach
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4de13e9763cfed74c2b7dbbbb58ac80610501ace
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9d08ceb5db30b23d9e8df77bec12c0f9cb1c2c77
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926080"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854238"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 将调试引擎 (DE) 附加到一个程序或程序。 会话调试管理器 (SDM) 由进程到 SDM DE 时调用。  
@@ -28,22 +25,22 @@ ms.locfileid: "49926080"
 ## <a name="syntax"></a>语法  
   
 ```cpp  
-HRESULT Attach(   
-   IDebugProgram2**      pProgram,  
-   IDebugProgramNode2**  rgpProgramNodes,  
-   DWORD                 celtPrograms,  
-   IDebugEventCallback2* pCallback,  
-   ATTACH_REASON         dwReason  
+HRESULT Attach(   
+   IDebugProgram2**      pProgram,  
+   IDebugProgramNode2**  rgpProgramNodes,  
+   DWORD                 celtPrograms,  
+   IDebugEventCallback2* pCallback,  
+   ATTACH_REASON         dwReason  
 );  
 ```  
   
 ```csharp  
-int Attach(   
-   IDebugProgram2[]     pProgram,  
-   IDebugProgramNode2[] rgpProgramNodes,  
-   uint                 celtPrograms,  
-   IDebugEventCallback2 pCallback,  
-   Enum_ATTACH_REASON   dwReason  
+int Attach(   
+   IDebugProgram2[]     pProgram,  
+   IDebugProgramNode2[] rgpProgramNodes,  
+   uint                 celtPrograms,  
+   IDebugEventCallback2 pCallback,  
+   Enum_ATTACH_REASON   dwReason  
 );  
 ```  
   

@@ -1,9 +1,6 @@
 ---
 title: 如何：脱机时或者在服务器上缓存数据以供使用
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 671b4c18963be4f9c81e15fe33e5d68a410655c9
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: b72748a4f37aa89fd12ba8751800fa9cb3c7be84
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939419"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>如何：脱机时或者在服务器上缓存数据以供使用
   您可以将标记数据项目，在文档中，缓存，以便可脱机。 这还使得数据中的服务器上存储的文档时，其他代码要操作的文档。

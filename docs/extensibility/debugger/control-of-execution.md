@@ -1,9 +1,6 @@
 ---
 title: 控制执行 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a95e01a44236d4f98f55f50a56cf28473ad575
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5617849b1dbd8e3857818fb762f562502b89386
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927536"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947421"
 ---
 # <a name="control-of-execution"></a>控制执行
 调试引擎 (DE) 通常情况下发送以下事件之一作为最后一个启动事件：  
@@ -42,11 +39,11 @@ ms.locfileid: "49927536"
   
 5. 如果用户选择进入、 结束，或跳出函数，IDE 会提示以调用程序的调试会话`Step`方法。 然后，IDE 将传递的步骤 （指令、 语句或行） 和步骤 （无论是以单步执行、 逐过程或函数） 的类型的单位。 步骤完成后，DE 将发送到调试会话，这是停止事件的步骤完成事件。  
   
-    或  
+    - 或 -  
   
     如果用户选择继续执行从当前指令指针，IDE 将调试会话才能调用该程序的提示**Execute**方法。 程序继续执行，直到它遇到下一个停止条件。  
   
-    或  
+    - 或 -  
   
     如果在调试会话将忽略特定 stopping 事件，该调试会话将调用程序的**继续**方法。 如果该程序单步执行到、 逐过程或函数时遇到的停止条件，然后将继续步骤。  
   

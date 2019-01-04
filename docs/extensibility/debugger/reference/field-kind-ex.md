@@ -1,9 +1,6 @@
 ---
-title: FIELD_KIND_EX |Microsoft 文档
-ms.custom: ''
+title: FIELD_KIND_EX |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 125c333b53c8d3d54df0f2235c6cc020e71c7ca5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b6954aaf92c5d77ad4d8f51e6b342bfc021b37a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870870"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
-枚举其他类型的字段， [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象可以包含。 此枚举扩展[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)枚举。  
+枚举其他类型的字段的[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象可包含。 此枚举扩展[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)枚举。  
   
 ## <a name="syntax"></a>语法  
   
@@ -49,18 +46,18 @@ public enum enum_FIELD_KIND_EX
  字段不包含扩展的类型。  
   
  FIELD_TYPE_EX_METHODVAR  
- 字段包含方法变量。  
+ 字段包含一个方法的变量。  
   
  FIELD_TYPE_EX_CLASSVAR  
- 字段包含类变量。  
+ 字段包含一个类变量。  
   
 ## <a name="requirements"></a>要求  
- 标头： Sh.h  
+ 标头：Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

@@ -1,6 +1,5 @@
 ---
 title: Visual Studio 的扩展性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 81b0dbe6-ddf3-4899-b09c-a3837037231d
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e7385c58bd12da92ed2ab7a6d612f2d9be598ad
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 2a9ffd2fadbcb255754e912704d6027c2116a29b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500750"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854784"
 ---
 # <a name="extensibility-in-visual-studio"></a>Visual Studio 的扩展性
 Visual Studio 提供了大量的扩展性选项。 可以创建你自己的 Sdk、 Windows、 Windows Phone 和 Azure Sdk （它作为 Visual Studio 的一部分进行安装），使用和扩展 Visual Studio 本身。  

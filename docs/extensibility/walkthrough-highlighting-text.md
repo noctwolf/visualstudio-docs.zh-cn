@@ -1,9 +1,6 @@
 ---
-title: 演练： 突出显示文本 |Microsoft Docs
-ms.custom: ''
+title: 演练：突出显示文本 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ac85c1155851494c2782f72778fdb07e9e55e66
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: ab42147b8600b2c17e3454f545c5d3148e31ba9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566918"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941870"
 ---
-# <a name="walkthrough-highlight-text"></a>演练： 突出显示文本
+# <a name="walkthrough-highlight-text"></a>演练：突出显示文本
 通过创建 Managed Extensibility Framework (MEF) 组件部分，可以将不同的视觉效果添加到编辑器。 本演练演示如何突出显示当前单词在文本文件中的每个匹配项。 如果单词在文本文件中出现不止一次，并且将插入点定位中出现一次，每个匹配项将突出显示。  
   
 ## <a name="prerequisites"></a>系统必备  
@@ -28,7 +25,7 @@ ms.locfileid: "39566918"
   
 ## <a name="create-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`HighlightWordTest`。  
+1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `HighlightWordTest`。  
   
 2.  将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -160,7 +157,7 @@ ms.locfileid: "39566918"
     NormalizedSnapshotSpanCollection WordSpans { get; set; }  
     SnapshotSpan? CurrentWord { get; set; }  
     SnapshotPoint RequestedPoint { get; set; }  
-    object updateLock = new object();  
+    object updateLock = new object();  
   
     ```  
   
@@ -187,7 +184,7 @@ ms.locfileid: "39566918"
     ```csharp  
     void ViewLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
     {  
-        // If a new snapshot wasn't generated, then skip this layout   
+        // If a new snapshot wasn't generated, then skip this layout   
         if (e.NewSnapshot != e.OldSnapshot)  
         {  
             UpdateAtCaretPosition(View.Caret.Position);  
@@ -215,7 +212,7 @@ ms.locfileid: "39566918"
         if (!point.HasValue)  
             return;  
   
-        // If the new caret position is still within the current word (and on the same snapshot), we don't need to check it   
+        // If the new caret position is still within the current word (and on the same snapshot), we don't need to check it   
         if (CurrentWord.HasValue  
             && CurrentWord.Value.Snapshot == View.TextSnapshot  
             && point.Value >= CurrentWord.Value.Start  
@@ -235,10 +232,10 @@ ms.locfileid: "39566918"
         //Find all words in the buffer like the one the caret is on  
         TextExtent word = TextStructureNavigator.GetExtentOfWord(currentRequest);  
         bool foundWord = true;  
-        //If we've selected something not worth highlighting, we might have missed a "word" by a little bit  
+        //If we've selected something not worth highlighting, we might have missed a "word" by a little bit  
         if (!WordExtentIsValid(currentRequest, word))  
         {  
-            //Before we retry, make sure it is worthwhile   
+            //Before we retry, make sure it is worthwhile   
             if (word.Span.Start != currentRequest  
                  || currentRequest == currentRequest.GetContainingLine().Start  
                  || char.IsWhiteSpace((currentRequest - 1).GetChar()))  
@@ -247,11 +244,11 @@ ms.locfileid: "39566918"
             }  
             else  
             {  
-                // Try again, one character previous.    
+                // Try again, one character previous.    
                 //If the caret is at the end of a word, pick up the word.  
                 word = TextStructureNavigator.GetExtentOfWord(currentRequest - 1);  
   
-                //If the word still isn't valid, we're done   
+                //If the word still isn't valid, we're done   
                 if (!WordExtentIsValid(currentRequest, word))  
                     foundWord = false;  
             }  
@@ -265,7 +262,7 @@ ms.locfileid: "39566918"
         }  
   
         SnapshotSpan currentWord = word.Span;  
-        //If this is the current word, and the caret moved within a word, we're done.   
+        //If this is the current word, and the caret moved within a word, we're done.   
         if (CurrentWord.HasValue && currentWord == CurrentWord)  
             return;  
   
@@ -275,11 +272,11 @@ ms.locfileid: "39566918"
   
         wordSpans.AddRange(TextSearchService.FindAll(findData));  
   
-        //If another change hasn't happened, do a real update   
+        //If another change hasn't happened, do a real update   
         if (currentRequest == RequestedPoint)  
             SynchronousUpdate(currentRequest, new NormalizedSnapshotSpanCollection(wordSpans), currentWord);  
     }  
-    static bool WordExtentIsValid(SnapshotPoint currentRequest, TextExtent word)  
+    static bool WordExtentIsValid(SnapshotPoint currentRequest, TextExtent word)  
     {  
         return word.IsSignificant  
             && currentRequest.Snapshot.GetText(word.Span).Any(c => char.IsLetter(c));  
@@ -317,7 +314,7 @@ ms.locfileid: "39566918"
     public IEnumerable<ITagSpan<HighlightWordTag>> GetTags(NormalizedSnapshotSpanCollection spans)  
     {  
         if (CurrentWord == null)  
-            yield break;  
+            yield break;  
   
         // Hold on to a "snapshot" of the word spans and current word, so that we maintain the same  
         // collection throughout  
@@ -325,9 +322,9 @@ ms.locfileid: "39566918"
         NormalizedSnapshotSpanCollection wordSpans = WordSpans;  
   
         if (spans.Count == 0 || wordSpans.Count == 0)  
-            yield break;  
+            yield break;  
   
-        // If the requested snapshot isn't the same as the one our words are on, translate our spans to the expected snapshot   
+        // If the requested snapshot isn't the same as the one our words are on, translate our spans to the expected snapshot   
         if (spans[0].Snapshot != wordSpans[0].Snapshot)  
         {  
             wordSpans = new NormalizedSnapshotSpanCollection(  
@@ -336,16 +333,16 @@ ms.locfileid: "39566918"
             currentWord = currentWord.TranslateTo(spans[0].Snapshot, SpanTrackingMode.EdgeExclusive);  
         }  
   
-        // First, yield back the word the cursor is under (if it overlaps)   
-        // Note that we'll yield back the same word again in the wordspans collection;   
-        // the duplication here is expected.   
+        // First, yield back the word the cursor is under (if it overlaps)   
+        // Note that we'll yield back the same word again in the wordspans collection;   
+        // the duplication here is expected.   
         if (spans.OverlapsWith(new NormalizedSnapshotSpanCollection(currentWord)))  
-            yield return new TagSpan<HighlightWordTag>(currentWord, new HighlightWordTag());  
+            yield return new TagSpan<HighlightWordTag>(currentWord, new HighlightWordTag());  
   
-        // Second, yield all the other words in the file   
+        // Second, yield all the other words in the file   
         foreach (SnapshotSpan span in NormalizedSnapshotSpanCollection.Overlap(spans, wordSpans))  
         {  
-            yield return new TagSpan<HighlightWordTag>(span, new HighlightWordTag());  
+            yield return new TagSpan<HighlightWordTag>(span, new HighlightWordTag());  
         }  
     }  
     ```  
@@ -384,14 +381,14 @@ ms.locfileid: "39566918"
     ```csharp  
     public ITagger<T> CreateTagger<T>(ITextView textView, ITextBuffer buffer) where T : ITag  
     {  
-        //provide highlighting only on the top buffer   
+        //provide highlighting only on the top buffer   
         if (textView.TextBuffer != buffer)  
-            return null;  
+            return null;  
   
         ITextStructureNavigator textStructureNavigator =  
             TextStructureNavigatorSelector.GetTextStructureNavigator(buffer);  
   
-        return new HighlightWordTagger(textView, buffer, TextSearchService, textStructureNavigator) as ITagger<T>;  
+        return new HighlightWordTagger(textView, buffer, TextSearchService, textStructureNavigator) as ITagger<T>;  
     }  
     ```  
   
@@ -409,4 +406,4 @@ ms.locfileid: "39566918"
 4.  将光标放在一个"你好"的出现次数。 每个匹配项应以蓝色突出显示。  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

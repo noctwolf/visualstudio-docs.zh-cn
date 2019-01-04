@@ -1,9 +1,6 @@
 ---
 title: 如何：向工作表添加 NamedRange 控件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a279ab6419807d5010b830453ab0ec92d8c5ca7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 1d9515f5a42d37d73a95460fa458090992c488aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648360"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928654"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>如何：向工作表添加 NamedRange 控件
   您可以添加<xref:Microsoft.Office.Tools.Excel.NamedRange>到 Microsoft Office Excel 工作表在设计时和运行时在文档级项目中的控件。  
@@ -104,5 +101,3 @@ ms.locfileid: "53648360"
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   
  [如何：调整 NamedRange 控件的大小](../vsto/how-to-resize-namedrange-controls.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  
