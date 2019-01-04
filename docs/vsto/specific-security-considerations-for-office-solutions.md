@@ -1,9 +1,6 @@
 ---
 title: 有关 Office 解决方案的特定安全注意事项
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dcb2e0a3c381b1dd07c7724c3a64c53307856014
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 33d827efa7dcc4e5590b4bc45fb0d6bd3fbe1432
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955537"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>有关 Office 解决方案的特定安全注意事项
   Microsoft .NET Framework 和 Microsoft Office 提供的安全功能有助于保护你的 Office 解决方案免受可能的安全威胁。 本主题将介绍其中一些威胁并提供有助于免受这些威胁的建议。 还包括有关 Microsoft Office 安全设置如何影响 Office 解决方案的信息。  
@@ -120,5 +117,3 @@ ms.locfileid: "49951387"
   
 ## <a name="see-also"></a>请参阅  
  [保护 Office 解决方案](../vsto/securing-office-solutions.md)  
-  
-  

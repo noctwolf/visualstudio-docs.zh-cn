@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a46509fb55c3d99c3cb2920dd6088497f326ab08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a8fc55493aab5a19a175b75b7b1d808e9fa156e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877557"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制图标或修饰器的可见性
 一个*修饰器*为图标或特定于域的语言 (DSL) 中的一个形状显示的文本行。 可以进行修饰器出现，并根据模型中的属性的状态会消失。 例如上表示一个人的形状，, 可能有不同的图标显示具体取决于该人员的性别，子项，数等等。
@@ -84,7 +83,7 @@ ms.locfileid: "49895484"
 
 4.  单击**生成解决方案**上**生成**菜单。
 
-5.  双击显示的错误报告:"*YourClass*不包含定义为 GetDecoratorControlValue..."。
+5.  双击错误报告，其中显示："*YourClass*不包含定义为 GetDecoratorControlValue..."。
 
      在 Dsl\GeneratedCode\DomainClasses.cs 上打开文本编辑器。 上面突出显示的错误是请求你添加的方法的注释。
 

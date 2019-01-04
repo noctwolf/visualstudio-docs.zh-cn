@@ -3,8 +3,6 @@ title: 获取已启动 （中的 Office 开发 Visual Studio）
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d415fc57cd4923fbe5c62f4f9758dac23a4fccc3
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d0d2868becbdc68f88c8ac191e3a044f3cfc8b10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647659"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955352"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>获取已启动 （中的 Office 开发 Visual Studio）
   本部分包含可帮助你开始在 Visual Studio 中使用 Microsoft Office 开发人员工具的主题。  
@@ -78,5 +76,3 @@ ms.locfileid: "53647659"
   
  [Visual Studio Tools for Office 技术文章和直观操作方法](http://go.microsoft.com/fwlink/?LinkID=106640)  
  包含指向视频和技术文章的链接，这些视频和技术文章均与使用 Visual Studio 创建的 Office 解决方案相关。  
-  
-  

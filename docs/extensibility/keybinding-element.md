@@ -1,9 +1,6 @@
 ---
 title: KeyBinding 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77fb94e702615d0d27ce2587c034000f6c4b3e3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c401b1f5179fa03dbd43ffbcff3bd2f0151340c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931666"
 ---
 # <a name="keybinding-element"></a>KeyBinding 元素
 键绑定元素指定的命令的键盘快捷方式。  
@@ -39,10 +36,10 @@ ms.locfileid: "49905098"
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必须的。|  
-|id|必须的。|  
-|编辑器|必须的。 编辑器 GUID 指示为其此键盘快捷方式将处于活动状态的编辑上下文。 全局绑定作用域值为"guidVSStd97"。|  
-|key1|必须的。 有效值包括所有键入是字母数字，以及两位数字的十六进制值以 0x 开头并[VK_constants](/windows/desktop/inputdev/virtual-key-codes)。|  
+|guid|必需。|  
+|id|必需。|  
+|编辑器|必需。 编辑器 GUID 指示为其此键盘快捷方式将处于活动状态的编辑上下文。 全局绑定作用域值为"guidVSStd97"。|  
+|key1|必需。 有效值包括所有键入是字母数字，以及两位数字的十六进制值以 0x 开头并[VK_constants](/windows/desktop/inputdev/virtual-key-codes)。|  
 |mod1|可选。 任意组合**Ctrl**， **Alt**，并**Shift**通过空格分隔开来。|  
 |key2|可选。 有效值包括所有键入是字母数字，以及两位数字的十六进制值以 0x 开头并[VK_constants](/windows/desktop/inputdev/virtual-key-codes)。|  
 |mod2|可选。 任意组合**Ctrl**， **Alt**，并**Shift**通过空格分隔开来。|  

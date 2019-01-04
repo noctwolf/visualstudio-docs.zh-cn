@@ -1,9 +1,6 @@
 ---
 title: 添加项目和项目项模板 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db53ddce3161097347760026aea16a51f8098519
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c89f38c98047a8fab57317c491c051474995f472
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963652"
 ---
 # <a name="add-project-and-project-item-templates"></a>添加项目和项目项模板
 创建你自己的项目类型时，你必须通过使用标准添加新项目和项目项提供支持[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE) 对话框。 以下主题讨论不同的技术来添加项目和项目项。  
@@ -53,10 +50,10 @@ ms.locfileid: "39499629"
  列出用于扩展的对象的 Catid [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]项目系统。  
   
 ## <a name="related-sections"></a>相关章节  
- [如何： 打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)  
+ [如何：打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)  
  提供用于打开本质上绑定到特定的编辑器项目的项的分步说明。  
   
- [如何： 打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)  
+ [如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)  
  提供用于打开标准编辑器的分步说明。  
   
  [项目子类型](../../extensibility/internals/project-subtypes.md)  

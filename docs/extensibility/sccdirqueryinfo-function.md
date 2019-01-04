@@ -1,9 +1,6 @@
 ---
 title: SccDirQueryInfo 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccDirQueryInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2c7c00f2023d7debd684b442b3901547ac8d1d2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: f710dfed6a6f5225fd74f828077eb228124714c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639414"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956798"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 函数
 此函数将检查以了解其当前状态的完全限定目录的列表。  
@@ -52,7 +49,7 @@ LPLONG  lpStatus
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|查询已成功。|  
 |SCC_E_OPNOTSUPPORTED|源代码控制系统不支持此操作。|  

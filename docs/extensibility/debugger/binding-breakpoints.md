@@ -1,9 +1,6 @@
 ---
 title: 绑定断点 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e02b3da843f7e4cffe33d660a8a82ab3c4c0dc03
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 263e339fa4ab8001fcd542f7dcedd10b5a24659a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153441"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988775"
 ---
 # <a name="bind-breakpoints"></a>绑定断点
 如果该用户需设置一个断点，可能是通过按**F9**，IDE 表述请求并会提示创建断点在调试会话。  

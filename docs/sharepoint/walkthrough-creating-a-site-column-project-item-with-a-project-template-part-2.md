@@ -1,9 +1,6 @@
 ---
-title: 演练： 使用项目模板创建站点栏项目项，第 2 部分 |Microsoft Docs
-ms.custom: ''
+title: 演练：使用项目模板创建站点栏项目项，第 2 部分 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
@@ -14,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5f9f2bbad380302d2a13b4352b2c9a7a54797e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829899"
 ---
-# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>演练： 使用项目模板，第 2 部分中创建站点栏项目项
+# <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>演练：使用项目模板，第 2 部分中创建站点栏项目项
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项目模板关联后，可能想要为模板提供一个向导。 该向导可用于从用户收集信息，当用户使用模板创建新的项目包含项目项。 可以使用你收集的信息来初始化项目项。  
   
- 在本演练中，您将添加一个向导，网站栏项目模板中所示[演练： 使用项目模板，第 1 部分创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。 当用户创建网站栏项目时，该向导收集有关站点列 （如其基类型和组） 的信息，并添加到此信息*Elements.xml*新项目文件中的。  
+ 在本演练中，您将添加一个向导，网站栏项目模板中所示[演练：使用项目模板创建站点栏项目项，第 1 部分](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。 当用户创建网站栏项目时，该向导收集有关站点列 （如其基类型和组） 的信息，并添加到此信息*Elements.xml*新项目文件中的。  
   
  本演练演示了下列任务：  
   
@@ -44,7 +41,7 @@ ms.locfileid: "49942070"
 > 一系列的示例工作流，请参阅[SharePoint 工作流示例](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples)。  
   
 ## <a name="prerequisites"></a>系统必备  
- 若要执行本演练中，您必须先创建 SiteColumnProjectItem 解决方案通过完成[演练： 使用项目模板，第 1 部分创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。  
+ 若要执行本演练中，您必须首先创建 SiteColumnProjectItem 解决方案完成[演练：使用项目模板创建站点栏项目项，第 1 部分](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。  
   
  您还需要完成本演练在开发计算机上的以下组件：  
   
@@ -54,7 +51,7 @@ ms.locfileid: "49942070"
   
   了解以下概念很有帮助，但不是必需，若要完成本演练：  
   
-- 用于 Visual Studio 中的项目和项模板的向导。 有关详细信息，请参阅[如何： 使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)和<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口。  
+- 用于 Visual Studio 中的项目和项模板的向导。 有关更多信息，请参见[如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)和<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口。  
   
 - 在 SharePoint 中的站点列。 有关详细信息，请参阅[列](http://go.microsoft.com/fwlink/?LinkId=183547)。  
   
@@ -70,7 +67,7 @@ ms.locfileid: "49942070"
 |SharePoint 命令|这些是向导数据模型用于到本地 SharePoint 站点中运行该向导时调用的方法。 因为 SharePoint 命令必须以.NET Framework 3.5 为目标，这些命令与向导代码的其余部分的不同程序集中实现。|  
   
 ## <a name="create-the-projects"></a>创建项目
- 若要完成本演练，需要将多个项目添加到你在中创建 SiteColumnProjectItem 解决方案[演练： 使用项目模板，第 1 部分创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
+ 若要完成本演练，需要将多个项目添加到你在中创建 SiteColumnProjectItem 解决方案[演练：使用项目模板，第 1 部分创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
 - WPF 项目。 将实现<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口，并在此项目中定义的向导 UI。  
   
@@ -119,7 +116,7 @@ ms.locfileid: "49942070"
   
 3.  请确保目标框架设置为.NET Framework 4.5，而非.NET Framework 4.5 客户端配置文件。  
   
-     有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
+     有关更多信息，请参见[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
 4.  打开快捷菜单**ProjectTemplateWizard**项目中，选择**添加**，然后选择**新项**。  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49942070"
   
 13. 如果要开发 Visual Basic 项目，ProjectTemplateWizard 命名空间导入你的项目通过使用**项目设计器**。  
   
-     有关详细信息，请参阅[如何： 添加或删除已导入的命名空间&#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)。  
+     有关更多信息，请参见[如何：添加或删除导入命名空间&#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)。  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>若要配置 SharePointcommands 项目
   
@@ -323,7 +320,7 @@ ms.locfileid: "49942070"
 1.  在菜单栏上，依次选择“生成” > “生成解决方案”。  
   
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>从项目模板中删除的 key.snk 文件
- 在中[演练： 使用项目模板，第 1 部分创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)，您创建的项目模板包含用于登录网站栏项目的每个实例的 key.snk 文件。 此 key.snk 文件不再必要，因为该向导现在会生成新的 key.snk 文件为每个项目。 从项目模板中删除的 key.snk 文件并删除对此文件的引用。  
+ 在[演练：使用项目模板，第 1 部分创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)，您创建的项目模板包含用于登录网站栏项目的每个实例的 key.snk 文件。 此 key.snk 文件不再必要，因为该向导现在会生成新的 key.snk 文件为每个项目。 从项目模板中删除的 key.snk 文件并删除对此文件的引用。  
   
 #### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>若要从项目模板中删除的 key.snk 文件  
   
@@ -542,9 +539,8 @@ ms.locfileid: "49942070"
      有关如何部署信息[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展，请参阅[传送 Visual Studio 扩展](/visualstudio/extensibility/shipping-visual-studio-extensions)。  
   
 ## <a name="see-also"></a>请参阅
- [演练： 使用项目模板，第 1 部分创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
+ [演练：使用项目模板，第 1 部分创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
  [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
  [为 SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
  [Visual Studio 模板架构参考](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)  
-  

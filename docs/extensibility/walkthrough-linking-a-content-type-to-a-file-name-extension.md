@@ -1,9 +1,6 @@
 ---
-title: 演练： 将内容类型链接到的文件扩展名 |Microsoft Docs
-ms.custom: ''
+title: 演练：将内容类型链接到的文件扩展名 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 3123624460066a70c35d988a0723c019516502ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566748"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926182"
 ---
-# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>演练： 将内容类型链接到的文件扩展名
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>演练：将内容类型链接到的文件扩展名
 您可以定义您自己的内容类型和使用的编辑器 Managed Extensibility Framework (MEF) 扩展链接到它的文件扩展名。 在某些情况下，文件扩展名已由语言服务定义。 但是，若要使用 MEF 中使用它，你必须仍将其链接到内容类型。  
   
 ## <a name="prerequisites"></a>系统必备  
@@ -28,13 +25,13 @@ ms.locfileid: "39566748"
   
 ## <a name="create-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`ContentTypeTest`。  
+1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `ContentTypeTest`。  
   
 2.  在中**source.extension.vsixmanifest**文件中，转到**资产**选项卡，并将**类型**字段**Microsoft.VisualStudio.MefComponent**，则**源**字段**当前解决方案中的项目**，和**项目**字段的项目的名称。  
   
 ## <a name="define-the-content-type"></a>将内容类型定义  
   
-1.  添加一个类文件并将其命名`FileAndContentTypes`。  
+1.  添加一个类文件并将其命名为 `FileAndContentTypes`。  
   
 2.  添加对下列程序集的引用：  
   
@@ -93,7 +90,7 @@ ms.locfileid: "39566748"
   
 ## <a name="add-the-content-type-to-an-editor-export"></a>将内容类型添加到编辑器导出  
   
-1.  创建编辑器扩展。 例如，可以使用边距的标志符号扩展中所述[演练： 创建边距字形](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
+1.  创建编辑器扩展。 例如，可以使用中所述的边距标志符号扩展[演练：创建边缘字形](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
   
 2.  添加在此过程中定义的类。  
   

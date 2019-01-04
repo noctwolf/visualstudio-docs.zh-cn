@@ -1,9 +1,6 @@
 ---
 title: SccQueryInfo 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccQueryInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a1930cbaab4ac6e175f102e78a0b5b037938ed6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3eefee11ed4db6e359688f2220c330bdbe81be1f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913171"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966033"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函数
 此函数可获取所选文件受源代码管理的一组的状态信息。  
@@ -52,7 +49,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|查询已成功完成。|  
 |SCC_E_ACCESSFAILURE|出现与访问源代码管理系统、 网络或争用问题可能导致问题。 建议重试。|  

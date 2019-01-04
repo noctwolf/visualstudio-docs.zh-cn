@@ -1,9 +1,6 @@
 ---
-title: IDebugProperty3 |Microsoft 文档
-ms.custom: ''
+title: IDebugProperty3 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty3
@@ -15,23 +12,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ae93a9f88bdee3c4648f803eaf174567fe771c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 20aa37155db5981e9e67887e62207becdaad9861
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963027"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
-此接口可提供支持：  
+此接口提供以下支持：  
   
--   检索一个与属性关联的任意长字符串。  
+-   正在检索任意长度的字符串与属性关联。  
   
 -   将与属性关联的唯一 ID。  
   
--   检索属性的自定义查看器的列表。  
+-   正在检索的属性的自定义查看器的列表。  
   
--   设置属性的值，并报告任何生成错误的功能  
+-   设置属性的值与报告产生的任何错误的功能  
   
 ## <a name="syntax"></a>语法  
   
@@ -39,14 +36,14 @@ ms.locfileid: "31122777"
 IDebugProperty3 : IDebugProperty2  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 调试引擎 (DE) 实现此接口上实现的相同对象[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)以长字符串、 属性 Id 和自定义查看器提供支持。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 调试引擎 (DE) 实现此接口上实现的相同对象[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)长字符串、 属性 Id 和自定义查看器提供支持。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  调用[QueryInterface](/cpp/atl/queryinterface)上`IDebugProperty2`接口，以获得此接口。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
- 除了从继承的方法`IDebugProperty2`、`IDebugProperty3`接口公开以下方法。  
+ 除了继承的方法之外`IDebugProperty2`，则`IDebugProperty3`接口公开以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  
@@ -54,21 +51,21 @@ IDebugProperty3 : IDebugProperty2
 |[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|用户提供的缓冲区中返回的字符串。|  
 |[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)|创建此属性的唯一 ID。|  
 |[DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)|销毁此属性的唯一 ID。|  
-|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|返回此属性可以使用查看的自定义查看器的数目。|  
-|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|返回此属性可以使用查看的自定义查看器的列表。|  
-|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|设置此属性，如果任何内容时出错，则返回一条错误消息的值。|  
+|[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)|返回此属性可以查看使用的自定义查看器数。|  
+|[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)|返回此属性可以查看使用的自定义查看器的列表。|  
+|[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)|设置此属性，如果任何出错，则返回一条错误消息的值。|  
   
 ## <a name="remarks"></a>备注  
- [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)会话调试管理器 (SDM) 来设置属性的值是首选的方法。  
+ [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)会话调试管理器 (SDM) 若要设置属性的值是首选的方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)

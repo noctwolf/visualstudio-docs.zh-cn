@@ -1,9 +1,6 @@
 ---
 title: Office 解决方案安全性疑难解答
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 002759a1a5fd8a16ee3e7842df7439d6e6b9755f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 105e28398b3ee5119ba66e2a666856e9edd4755c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862926"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955654"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Office 解决方案安全性疑难解答
   本主题包含用于解决在保护 Office 解决方案时可能遇到的常见问题的提示。  
@@ -45,7 +42,7 @@ ms.locfileid: "49862926"
   如果已分配给受限制的站点区域中，部署清单的位置[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]不会安装该解决方案。 如果位置已知，并且可以是受信任的用户可以从受限制的站点区域中删除位置和安装该解决方案。 有关如何管理区域的信息，请参阅[配置 ClickOnce 受信任的发行者](http://go.microsoft.com/fwlink/?LinkId=94774)。  
   
 ## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>安装 Internet Explorer 增强安全配置或 Internet Explorer 7 时，不能从网络文件共享或 web 位置安装解决方案  
- Internet Explorer 增强安全配置 （安装 ieesc 时） 在 Windows Server 2003 和更高版本和 Internet Explorer 7 及更高版本，大大限制的用户浏览 Internet 的功能。 当用户尝试从网络文件共享或 web 位置中安装 Office 解决方案时，他们可能会收到以下错误消息:"由于使用证书来签署的部署清单中此应用程序的自定义功能无法工作*SolutionName*不受信任。 与管理员联系以获得进一步帮助。"  
+ Internet Explorer 增强安全配置 （安装 ieesc 时） 在 Windows Server 2003 和更高版本和 Internet Explorer 7 及更高版本，大大限制的用户浏览 Internet 的功能。 当用户尝试安装 Office 解决方案从网络文件共享或 web 位置，它们可能会收到以下错误消息："由于使用证书来签署部署清单，此应用程序中的自定义的功能无法工作*SolutionName*不受信任。 与管理员联系以获得进一步帮助。"  
   
  使用安装 ieesc 时和 Internet Explorer 7 及更高版本，如果部署清单的 URL 进行分类在 Internet 区域中，清单必须具有来自受信任的发行者的证书，或不能安装解决方案。 未安装 ieesc 时，默认行为是提示最终用户做出信任决定。  
   
@@ -53,5 +50,3 @@ ms.locfileid: "49862926"
   
 ## <a name="see-also"></a>请参阅  
  [保护 Office 解决方案](../vsto/securing-office-solutions.md)  
-  
-  

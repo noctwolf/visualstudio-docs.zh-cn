@@ -1,9 +1,6 @@
 ---
-title: 如何： 重新启用 VSTO 外接程序中已禁用
-ms.custom: ''
+title: 如何：重新启用 VSTO 外接程序中已禁用
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.Warning.DisabledAddIn
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c81e44b548f4d1139810780731741a489e624047
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: adcfab22ea9f6acc9c75f59fa17127cab348fc37
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670699"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939393"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>如何： 重新启用 VSTO 外接程序中已禁用
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>如何：重新启用 VSTO 外接程序中已禁用
   Microsoft Office 应用程序可禁用行为异常的 VSTO 外接程序。 当你尝试对 VSTO 外接程序进行调试时，如果应用程序不加载它，则此应用程序可能已硬禁用或软禁用此 VSTO 外接程序。  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -80,5 +77,3 @@ ms.locfileid: "35670699"
  [生成 Office 解决方案](../vsto/building-office-solutions.md)   
  [调试 Office 项目](../vsto/debugging-office-projects.md)   
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)  
-  
-  

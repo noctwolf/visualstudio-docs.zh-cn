@@ -1,9 +1,6 @@
 ---
 title: SetNotificationForWaitCompletion 方法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - SetNotificationForWaitCompletion method, Task class [.NET Framework debug engines]
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42c5bca56bc46c0b8124fbfaf7ca046c2c1e59ec
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 4b488bcfb37696f4e18c8f32741e8f3ef861aed8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276333"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986110"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion 方法
 设置或清除 TASK_STATE_WAIT_COMPLETION_NOTIFICATION 状态位。  
@@ -38,7 +35,7 @@ internal void SetNotificationForWaitCompletion(bool enabled)
   
  `true` 若要设置的位;`false`取消设置了位。  
   
-## <a name="exceptions"></a>异常  
+## <a name="exceptions"></a>Exceptions  
   
 ## <a name="remarks"></a>备注  
  调试器设置此位，以帮助脱离异步方法正文。 如果`enabled`是`true`，必须仅在尚未完成的任务上调用此方法。 当`enabled`是`false`，可以在已完成的任务上调用此方法。 在既情况下，它应仅用于承诺样式任务。  

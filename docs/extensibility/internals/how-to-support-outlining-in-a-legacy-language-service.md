@@ -1,9 +1,6 @@
 ---
-title: 如何： 支持旧版语言服务中的大纲显示 |Microsoft Docs
-ms.custom: ''
+title: 如何：支持旧版语言服务中的大纲显示 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], collapse to definitions command
@@ -15,17 +12,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6f9ba947aee0276e2cca6270438cdaf20e7626e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8c22fdde3bc66a26246100f037c7009d5931cb95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887992"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何： 支持旧版语言服务中的大纲显示
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何：支持旧版语言服务中的大纲显示
 使用大纲显示展开或折叠的文本的不同区域。 使用方式大纲显示可通过不同的语言以不同的方式定义。 有关详细信息，请参阅[大纲显示](../../ide/outlining.md)。  
   
- 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现大纲显示的新方法的详细信息，请参阅[演练： 大纲显示](../../extensibility/walkthrough-outlining.md)。  
+ 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现大纲显示的新方法的详细信息，请参阅[演练：大纲显示](../../extensibility/walkthrough-outlining.md)。  
   
 > [!NOTE]
 >  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
@@ -49,5 +46,5 @@ ms.locfileid: "39510952"
 >  谨慎隐藏新行字符。 隐藏的文本，应将扩展从第一个行的开头到最后一个字符的一个部分中，仅显示最后一个新行字符的最后一行。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 隐藏的文本提供旧版语言服务中的支持](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
- [如何： 提供旧版语言服务中的展开大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+ [如何：提供旧版语言服务中的隐藏的文本支持](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
+ [如何：提供旧版语言服务中的展开大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

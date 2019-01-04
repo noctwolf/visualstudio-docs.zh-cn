@@ -1,9 +1,6 @@
 ---
 title: 使用 ServerDocument 类管理服务器上的文档
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e983f4cf1b90150113fcfa33702d85bb41a30924
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcaebef3edcdf742bc56915d0209f3f61ee63df8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939132"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53903234"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>使用 ServerDocument 类管理服务器上的文档
   可以使用`ServerDocument`类中[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]来管理文档级自定义的几个方面，即使未安装 Microsoft Office Word 和 Microsoft Office Excel。 您可以执行以下任务：  
@@ -61,13 +58,12 @@ ms.locfileid: "49939132"
 |任务|供使用的成员|  
 |----------|-------------------|  
 |若要确定文档是否是文档级自定义的一部分。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> 方法。|  
-|若要以编程方式将自定义项附加在运行时向文档中。<br /><br /> 有关详细信息，请参阅[如何： 将附加的托管代码扩展到文档](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|其中一个<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>方法。|  
-|若要在运行时以编程方式删除文档中的自定义项。<br /><br /> 有关详细信息，请参阅[如何： 删除文档从托管代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> 方法。|  
+|若要以编程方式将自定义项附加在运行时向文档中。<br /><br /> 有关更多信息，请参见[如何：将托管的代码扩展附加到文档](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|其中一个<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>方法。|  
+|若要在运行时以编程方式删除文档中的自定义项。<br /><br /> 有关更多信息，请参见[如何：删除文档中的托管的代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> 方法。|  
 |若要获取与文档相关联的部署清单的 URL。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> 属性。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 将附加的托管代码扩展到文档](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
- [如何： 删除文档从托管代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [如何：将托管的代码扩展附加到文档](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
+ [如何：删除文档中的托管的代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [缓存数据](../vsto/caching-data.md)  
-  

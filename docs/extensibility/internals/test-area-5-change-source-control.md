@@ -1,9 +1,6 @@
 ---
-title: 测试区域 5： 更改源代码管理 |Microsoft Docs
-ms.custom: ''
+title: 测试区域 5:更改源代码管理 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], changing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed7093d50290c4c0612faf6c7691f90e62a08267
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83928a2b28b32d7e1ee11475a7693f8f11483cad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847352"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942627"
 ---
-# <a name="test-area-5-change-source-control"></a>测试区域 5：更改源代码管理
+# <a name="test-area-5-change-source-control"></a>测试区域 5:更改源代码管理
 此源代码管理插件的测试部分覆盖了更改通过的源控件**更改源代码管理**命令。  
 
  **更改源代码管理**命令为用户提供四个基本函数：  
@@ -36,7 +33,7 @@ ms.locfileid: "49847352"
 
 - **连接/断开连接：**  
 
-  受控的解决方案，区域 3 中介绍了切换连接或脱机状态。 有关详细信息，请参阅[测试区域 3： 签出 / 撤销签出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)。  
+  受控的解决方案，区域 3 中介绍了切换连接或脱机状态。 有关详细信息，请参阅[测试区域 3:签出 / 撤销签出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)。  
 
 ## <a name="command-menu-access"></a>命令菜单访问  
  以下[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]测试用例中使用集成的开发环境菜单路径。  
@@ -46,7 +43,7 @@ ms.locfileid: "49847352"
 ## <a name="test-cases"></a>测试用例  
  以下是针对特定测试用例**更改源代码管理**命令测试区域。  
 
-### <a name="case-5a-bind"></a>Case 5a： 绑定  
+### <a name="case-5a-bind"></a>Case 5a:将绑定  
  绑定允许用户将源代码控制信息添加到选定的项目和解决方案。 用户通常会提示来标识这些是要添加源代码管理中的项目。 用户可能会在此操作 （对比度与添加到源代码管理） 的一部分的源代码管理中创建一个新的项目。  
 
 
@@ -58,7 +55,7 @@ ms.locfileid: "49847352"
 | 永远不会受源代码管理绑定解决方案 | 1.在源代码管理中创建一个空文件夹。<br />2.创建客户端项目。<br />3.打开**更改源代码管理**对话框的 (**文件**，**源代码管理**，**更改源代码管理**)。<br />4.将解决方案绑定到源代码管理中的空位置。<br />5.单击**确定**以关闭**更改源代码管理**对话框。<br />6.单击**继续这些绑定**确认对话框中。<br />7.单击**确定**在警告对话框中，如果它出现。 | 解决方案添加到源代码管理。<br /><br /> 解决方案和项目已签出。 |
 | 取消绑定 | 1.创建项目。<br />2.将解决方案添加到源代码管理。<br />3.打开更改源代码管理对话框。<br />4.取消绑定所有。<br />5.单击**确定**按钮以关闭对话框。 如果此步骤成功，则继续下一步。<br />6.重新打开**更改源代码管理**对话框。<br />7.将绑定到不相关的位置。<br />8.单击**取消**。 | `Result from Step 5:`<br /><br /> 该解决方案已不再受源代码管理<br /><br /> `Result from Step 8:`<br /><br /> 解决方案是仍未在源控件。 |
 
-### <a name="case-5b-unbind"></a>Case 5b： 取消绑定  
+### <a name="case-5b-unbind"></a>Case 5b:取消绑定  
  取消绑定项目和解决方案中的删除源代码控制信息。 受影响的项目和解决方案基于多个用户所选内容和方式的项目已添加到源代码管理。  
 
 |操作|测试步骤|若要验证的预期的结果|  
@@ -66,7 +63,7 @@ ms.locfileid: "49847352"
 |取消绑定包含一个文件系统或本地 IIS Web 项目和一个客户端项目的解决方案|1.创建一个文件系统或本地 IIS Web 项目。<br />2.将解决方案添加到源代码管理。<br />3.向解决方案添加一个新的客户端项目。<br />4.如果系统提示，则接受检查出的解决方案。<br />5.打开**更改源代码管理**对话框。<br />6.单击**取消绑定**。<br />7.单击“确定”关闭对话框。<br />8.尝试签出解决方案、 项目、 解决方案项、 项目项。|解决方案和项目不受源代码管理。<br /><br /> 源代码管理菜单命令不会出现。|  
 |取消取消绑定|1.创建项目。<br />2.将解决方案添加到源代码管理。<br />3.打开**更改源代码管理**对话框。<br />4.单击**取消绑定所有**。<br />5.单击**取消**。|解决方案是在源代码管理下。|  
 
-### <a name="case-5c-rebind"></a>Case 5c： 重新绑定  
+### <a name="case-5c-rebind"></a>用例 5 c:重新绑定  
  重新绑定是只需取消绑定和绑定的组合 — 的重新绑定项目/解决方案的以前受源代码管理和解除绑定过程。  
 
 |操作|测试步骤|若要验证的预期的结果|  

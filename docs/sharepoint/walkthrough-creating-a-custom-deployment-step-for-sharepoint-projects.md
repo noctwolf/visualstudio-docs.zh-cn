@@ -1,9 +1,6 @@
 ---
-title: 演练： 为 SharePoint 项目创建自定义部署步骤 |Microsoft Docs
-ms.custom: ''
+title: 演练：为 SharePoint 项目创建自定义部署步骤 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c74feaed6c108f9dcfb5f2b374a72c34526134b0
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e12f9d8b93b429b0ecdc433eef59809f2ca4c61d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891571"
 ---
-# <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>演练： 创建 SharePoint 项目自定义部署步骤
+# <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>演练：创建 SharePoint 项目的自定义部署步骤
   在部署 SharePoint 项目时，Visual Studio 按特定顺序执行一系列的部署步骤。 Visual Studio 提供了许多内置部署步骤，但您也可以创建您自己。  
   
  在本演练中，将创建自定义部署步骤以升级运行 SharePoint 的服务器上的解决方案。 Visual Studio 提供了内置部署步骤的许多任务，此类，收回或添加解决方案，但它不包括有关升级解决方案的部署步骤。 默认情况下，在部署 SharePoint 解决方案时 Visual Studio 首先会收回该解决方案 （如果已部署），然后重新部署整个解决方案。 有关内置部署步骤的详细信息，请参阅[部署、 发布和升级 SharePoint 解决方案包](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)。  
@@ -488,4 +485,3 @@ ms.locfileid: "51296146"
   
 ## <a name="see-also"></a>请参阅
  [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
-  

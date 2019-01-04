@@ -1,9 +1,6 @@
 ---
 title: 语言服务和编辑器扩展入门 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b5fa8d0dbe011ef6b960c03d7d95aa776de6933
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c971f753656ad876ba3a2401ddd2033f02cbac0a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901315"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831753"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>语言服务和编辑器扩展入门
 编辑器扩展可用于将语言服务功能，例如大纲显示、 大括号匹配、 IntelliSense 和灯泡添加到您自己的编程语言或任何内容类型。 此外可以自定义外观和行为的 Visual Studio 编辑器中，例如着色、 边距、 修饰和其他可视元素的文本。 您还可以定义自己的类型的内容，并指定的外观和行为的内容将显示的文本视图。  
@@ -85,9 +82,9 @@ ms.locfileid: "49901315"
   
  您还可以创建编辑器的 MEF 组件从 Visual Studio 包扩展。 请参阅下面的演练，有关详细信息：  
   
--   [演练： 在编辑器扩展中使用 shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+-   [演练：编辑器扩展中使用 shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [演练： 使用快捷键与编辑器扩展](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+-   [演练：编辑器扩展中使用的快捷键](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

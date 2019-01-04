@@ -1,9 +1,6 @@
 ---
 title: 筛选嵌套项目的 AddItem 对话框 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - filtering, nested projects
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a51c69857f9bd8f5b2ad84448b0170b809c18a
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a3382982a529444f019cb2f97a22636375eb5145
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857674"
 ---
 # <a name="filter-the-additem-dialog-box-for-nested-projects"></a>筛选嵌套项目的 AddItem 对话框
 当显示**AddItem**嵌套项目，父项目对话框可以控制在对话框中显示的项。  

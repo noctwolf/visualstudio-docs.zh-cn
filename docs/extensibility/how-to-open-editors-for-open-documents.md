@@ -1,9 +1,6 @@
 ---
-title: 如何： 打开开放文档的编辑器 |Microsoft Docs
-ms.custom: ''
+title: 如何：打开编辑器中打开的文档提供 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05e91dd296958e44d0c06f2b77d410efdd71fb1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4ba9e15a7f7578454aa7b87372ea776399eca57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967302"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>如何： 打开开放文档编辑器
+# <a name="how-to-open-editors-for-open-documents"></a>如何：打开编辑器的打开的文档
 项目将打开一个文档窗口之前，项目首先必须确定文件是否已打开在另一个编辑器的文档窗口中。 该文件可以为在特定于项目的编辑器中，或者打开或其中一个标准编辑器注册[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
 ## <a name="open-a-project-specific-editor"></a>打开特定于项目的编辑器  
@@ -53,9 +50,9 @@ ms.locfileid: "49823120"
   
      此方法首先验证，该文档未打开通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>。 如果文档已打开，然后重新呈现其编辑器窗口。  
   
-2.  如果文档未打开，然后完成中的步骤[如何： 打开标准编辑器](../extensibility/how-to-open-standard-editors.md)。  
+2.  如果文档未打开，然后完成中的步骤[如何：打开标准编辑器](../extensibility/how-to-open-standard-editors.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [打开和保存项目项](../extensibility/internals/opening-and-saving-project-items.md)   
- [如何： 打开项目特定的编辑器](../extensibility/how-to-open-project-specific-editors.md)   
- [如何： 打开标准编辑器](../extensibility/how-to-open-standard-editors.md)
+ [如何：打开项目特定的编辑器](../extensibility/how-to-open-project-specific-editors.md)   
+ [如何：打开标准编辑器](../extensibility/how-to-open-standard-editors.md)

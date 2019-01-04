@@ -1,9 +1,6 @@
 ---
-title: 如何： 部署、 发布和升级远程服务器上的 SharePoint 解决方案 |Microsoft Docs
-ms.custom: ''
+title: 如何：部署、 发布和升级远程服务器上的 SharePoint 解决方案 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fbd21016d00bdfecfcb606e9fe2b720ab97bf3d0
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1473d1c9ea9d876eb539e9672c1675ce06d9762d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118489"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835667"
 ---
-# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何： 部署、 发布和升级远程服务器上的 SharePoint 解决方案
+# <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何：部署、 发布和升级远程服务器上的 SharePoint 解决方案
   除了对本地系统中部署 SharePoint 解决方案，可以将沙盒 SharePoint 解决方案发布到远程站点或本地 SharePoint 站点中。 远程发布进程副本 *.wsp*文件到 SharePoint 服务器，安装解决方案，然后再启用您激活解决方案。 对其进行更改之后，你还可以升级远程 SharePoint 解决方案安装。  
   
 ## <a name="to-publish-a-sandboxed-sharepoint-solution-to-a-remote-sharepoint-server"></a>若要将沙盒 SharePoint 解决方案发布到远程 SharePoint 服务器  
@@ -78,8 +75,7 @@ ms.locfileid: "37118489"
      停用旧版本的解决方案，从旧的解决方案中，保留数据升级解决方案的新版本，而在 SharePoint 中激活新的解决方案。  
   
 ## <a name="see-also"></a>请参阅
- [如何： 部署和发布到本地 SharePoint 站点的 SharePoint 解决方案](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
+ [如何：部署和发布到本地 SharePoint 站点的 SharePoint 解决方案](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md)   
  [创建 SharePoint 解决方案包](../sharepoint/creating-sharepoint-solution-packages.md)   
- [如何： 自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
- [如何： 添加和删除使用包设计器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  
-  
+ [如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)   
+ [如何：添加和删除使用包设计器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)  

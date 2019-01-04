@@ -1,9 +1,6 @@
 ---
 title: IDebugField::GetExtendedInfo |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugField::GetExtendedInfo
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b276b2bff8e8ab5af0f007fbc5bd5dd6074c4d9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ef431fbc3bf14124ee0ea08a2439c0473e958a91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896037"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945205"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 此方法获取扩展字段的信息。  
@@ -28,7 +25,7 @@ ms.locfileid: "49896037"
 ## <a name="syntax"></a>语法  
   
 ```cpp  
-HRESULT GetExtendedInfo(   
+HRESULT GetExtendedInfo(   
    REFGUID guidExtendedInfo,  
    BYTE**  prgBuffer,  
    DWORD*  pdwLen  
@@ -47,7 +44,7 @@ int GetExtendedInfo(
  `guidExtendedInfo`  
  [in]选择要返回的信息。 有效值为：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |`guidConstantValue`|作为一个字节序列的值。|  
 |`guidConstantType`|类型签名形式的类型。|  

@@ -1,13 +1,8 @@
 ---
-title: 演练： 创建 SharePoint 应用程序页 |Microsoft Docs
-ms.custom: ''
+title: 演练：创建 SharePoint 应用程序页 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 52ff6b3431ac3f87c85eefcf728cfe4c4875f884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22f53a59119ed10055decdd5c055edf378838c72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867834"
 ---
-# <a name="walkthrough-create-a-sharepoint-application-page"></a>演练： 创建 SharePoint 应用程序页
+# <a name="walkthrough-create-a-sharepoint-application-page"></a>演练：创建 SharePoint 应用程序页
  
 应用程序页是 ASP.NET 页面的一种专用的形式。 应用程序页包含与 SharePoint 母版页合并的内容。 有关详细信息，请参阅[为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)。
 
@@ -78,7 +73,7 @@ ms.locfileid: "42634782"
 
 应用程序页项，您可以使用设计器将 ASP.NET 控件添加到应用程序页。 此设计器是在 Visual Web Developer 中使用的同一设计器。 添加标签、 单选按钮列表中和将表**源**视图设计器中，并像设计任何标准 ASP.NET 页时一样，然后设置属性。
 
-1. 在菜单栏上依次选择**视图** > **工具箱**。
+1. 在菜单栏上，依次选择“视图” > “工具箱”。
 
 2. 在标准节点**工具箱**，执行以下步骤之一：
 
@@ -158,5 +153,5 @@ ms.locfileid: "42634782"
 
 ## <a name="see-also"></a>请参阅
 
-[如何： 创建应用程序页](../sharepoint/how-to-create-an-application-page.md)  
+[如何：创建应用程序页](../sharepoint/how-to-create-an-application-page.md)  
 [应用程序 _layouts 页上，键入](http://go.microsoft.com/fwlink/?LinkID=169274)

@@ -1,9 +1,6 @@
 ---
-title: 如何： 调整书签控件的大小
-ms.custom: ''
+title: 如何：调整书签控件的大小
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a700164ceea11bf83467048140c79723908b619
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924832"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942432"
 ---
-# <a name="how-to-resize-bookmark-controls"></a>如何： 调整书签控件的大小
+# <a name="how-to-resize-bookmark-controls"></a>如何：调整书签控件的大小
   当你将 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件添加到 Microsoft Office Word 文档时，可以设置它的大小。 稍后还可以重设其大小。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -42,7 +39,7 @@ ms.locfileid: "49924832"
   
    如果将对书签的大小或位置作出重大更改，此方法很有用。  
   
-  在文档级项目中，你可以在设计时或在运行时向项目中的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 在 VSTO 外接程序项目中，可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>向任何打开的文档在运行时的控件。 有关详细信息，请参阅[如何： 添加书签控件添加到 Word 文档](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
+  在文档级项目中，你可以在设计时或在运行时向项目中的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 在 VSTO 外接程序项目中，可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>向任何打开的文档在运行时的控件。 有关更多信息，请参见[如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -91,11 +88,9 @@ ms.locfileid: "49924832"
 3.  在“书签”  对话框中，选择想要重设其大小的书签的名称，并单击“添加” 。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [通过使用扩展的对象自动化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   
- [如何： 调整 NamedRange 控件的大小](../vsto/how-to-resize-namedrange-controls.md)   
- [如何： 调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)   
+ [如何：调整 NamedRange 控件的大小](../vsto/how-to-resize-namedrange-controls.md)   
+ [如何：调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

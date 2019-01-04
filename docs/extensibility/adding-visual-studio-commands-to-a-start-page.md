@@ -1,9 +1,6 @@
 ---
 title: 将 Visual Studio 命令添加到起始页 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - start page commands
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22ae9ebb5e9acb3fa1787f2af3b0fbb159c1485d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 499b6cb593dd29d9bd881203daab19fc319ff1a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902449"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>将 Visual Studio 命令添加到起始页
 当创建自定义起始页时，可以将 Visual Studio 命令添加到它。 本文档讨论了将 Visual Studio 命令绑定到 XAML 对象在起始页上的不同方式。  
@@ -108,7 +105,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 </ListBox  
 ```  
   
- 有关示例，请参阅[演练： 将用户设置保存在起始页上](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)。  
+ 有关示例，请参阅[演练：将用户设置保存在起始页上](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [将用户控件添加到启动页](../extensibility/adding-user-control-to-the-start-page.md)

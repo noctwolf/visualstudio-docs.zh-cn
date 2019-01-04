@@ -1,9 +1,6 @@
 ---
 title: Web 项目基础知识 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb69eeb701ed5ce24259d203c0320c2635c96e4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a18ee19755e79c03bb24104cb444af8168307d17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934517"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826567"
 ---
 # <a name="web-project-essentials"></a>Web 项目基础知识
 Web 项目创建 Web 应用程序。 Web 项目可用于创建具有智能的网页的 Web 应用程序。 智能 Web 页面已呈现按需 Web 页面的服务器端代码。  

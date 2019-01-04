@@ -2,7 +2,6 @@
 title: 扩展依赖项关系图
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, creating extensions
@@ -12,21 +11,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 304e1fe6356768ae5243ae38748d920444be41e9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a467366ca470c17c0f52bd72ae17e766bcb284d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949275"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889314"
 ---
 # <a name="extend-dependency-diagrams"></a>扩展依赖项关系图
-你可以编写代码以创建和更新依赖项关系图，并针对 Visual Studio 中的依赖项关系图程序代码的结构进行验证。 可以添加显示在关系图的快捷（上下文）菜单上的命令、自定义拖放笔势并从文本模板访问层模型的命令。 可以将这些扩展打包到 Visual Studio 集成扩展 (VSIX) 中，并将其分发给其他 Visual Studio 用户。
+您可以编写代码以创建和更新依赖项关系图，并验证应用程序代码对 Visual Studio 中的依赖项关系图的结构。 可以添加显示在关系图的快捷（上下文）菜单上的命令、自定义拖放笔势并从文本模板访问层模型的命令。 可以将这些扩展打包到 Visual Studio 集成扩展 (VSIX) 中，并将其分发给其他 Visual Studio 用户。
 
  有关依赖项关系图的详细信息，请参阅：
 
--   [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)
+-   [依赖项关系图：引用](../modeling/layer-diagrams-reference.md)
 
--   [依赖项关系图：指南](../modeling/layer-diagrams-guidelines.md)
+-   [依赖项关系图：指导原则](../modeling/layer-diagrams-guidelines.md)
 
 -   [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -39,7 +38,7 @@ ms.locfileid: "31949275"
 
 -   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
--   For Visual Studio 建模 SDK
+-   Visual Studio 的建模 SDK
 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -47,7 +46,7 @@ ms.locfileid: "31949275"
 
  在想要运行层扩展的计算机上必须安装合适版本的 Visual Studio。 有关详细信息，请参阅[部署层模型扩展](../modeling/deploy-a-layer-model-extension.md)。
 
- 若要查看支持的 Visual Studio 的版本的依赖项关系图，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看支持的 Visual Studio 版本的依赖项关系图，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="in-this-section"></a>本节内容
  [向依赖项关系图添加命令和手势](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
@@ -64,7 +63,7 @@ ms.locfileid: "31949275"
 
 ## <a name="see-also"></a>请参阅
 
-- [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)
-- [依赖项关系图：指南](../modeling/layer-diagrams-guidelines.md)
+- [依赖项关系图：引用](../modeling/layer-diagrams-reference.md)
+- [依赖项关系图：指导原则](../modeling/layer-diagrams-guidelines.md)
 - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)
 - [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)

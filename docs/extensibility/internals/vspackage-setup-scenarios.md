@@ -1,9 +1,6 @@
 ---
 title: VSPackage 安装方案 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, deployment considerations
@@ -12,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 6bacb7a8226ac9f82987eede32b9df18a103270a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495929"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932939"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 安装方案
 
@@ -39,7 +36,7 @@ ms.locfileid: "46495929"
 
 例如，注册表值用于注册你的 VSPackage 使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]应始终在组件中独立于用来向 Visual Studio 中注册你的 VSPackage。 共享的文件或注册表值进入另一个组件。
 
-## <a name="scenario-1-shared-vspackage"></a>方案 1： 共享的 VSPackage
+## <a name="scenario-1-shared-vspackage"></a>方案 1:共享的 VSPackage
 
 在此方案中，共享的 VSPackage （在 Windows 安装程序包中提供支持多个版本的 Visual Studio 的单一二进制文件。 每个版本的 Visual Studio 注册受用户可选功能。 这还意味着，当分配给单独的功能，每个组件选择单独的安装或卸载，使用户具有控制集成到不同版本的 VSPackage 的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 (请参阅[Windows 安装程序功能](/windows/desktop/Msi/windows-installer-features)有关使用 Windows Installer 程序包中的功能的详细信息。)
 
@@ -50,7 +47,7 @@ ms.locfileid: "46495929"
 > [!NOTE]
 > 将功能的显示列设置为 0 可隐藏它。 低级别的列的值，如 1，可确保始终在安装。 有关详细信息，请参阅[INSTALLLEVEL 属性](/windows/desktop/Msi/installlevel)并[功能表](/windows/desktop/Msi/feature-table)。
 
-## <a name="scenario-2-shared-vspackage-update"></a>方案 2： 共享的 VSPackage 更新
+## <a name="scenario-2-shared-vspackage-update"></a>方案 2:共享的 VSPackage 更新
 
 在此方案中，随附方案 1 中的 VSPackage 安装程序的更新的版本。 为了便于讨论，更新增加了对 Visual Studio 中，支持，但它可能也是更简单的安全修补程序或修复 bug 的服务包。 安装较新的组件的 Windows 安装程序的规则需要已在系统上不变的组件不会再次复制。 在这种情况下，使用版本 1.0 已存在的系统将覆盖更新的组件 Comp_MyVSPackage.dll，并使用户可以选择添加新功能 Feat_VS2005 Comp_VS2005_Reg 与其组件。
 
@@ -61,7 +58,7 @@ ms.locfileid: "46495929"
 
 此方案提供了一个新的 VSPackage 安装程序，充分利用对于次要升级的 Windows 安装程序的支持。 用户只需安装版本 1.1 和 1.0 版，它将升级。 但是，不需要具有在系统上的版本 1.0。 相同的安装程序将没有 1.0 版的系统上安装版本 1.1。 若要提供次要升级以这种方式的优点是不需要经历的开发升级安装程序和完整产品安装程序的工作。 一个安装程序执行这两个作业。 安全修补程序或服务包可能会改为利用 Windows Installer 修补程序。 有关详细信息，请参阅[修补和升级](/windows/desktop/Msi/patching-and-upgrades)。
 
-## <a name="scenario-3-side-by-side-vspackage"></a>方案 3： 通过并行 VSPackage
+## <a name="scenario-3-side-by-side-vspackage"></a>方案 3:通过并行 VSPackage
 
 此方案提供了两个 VSPackage 安装程序 — 一个用于每个版本的 Visual Studio.NET 2003年和 Visual Studio。 每个安装程序安装的并排方案或专用，VSPackage （专门生成和安装 Visual Studio 的特定版本的一个）。 每个 VSPackage 位于其自己的组件。 因此，每个可以在单独提供修补程序或维护释放。 VSPackage DLL 现在是特定于版本的因为它是安全地将其注册信息包括在与 DLL 相同的组件。
 
@@ -69,7 +66,7 @@ ms.locfileid: "46495929"
 
 每个安装程序还包括两个安装程序之间共享的代码。 如果共享的代码安装到常见位置，安装这两个.msi 文件将仅一次安装共享的代码。 第二个安装程序只是递增引用计数在组件上。 引用计数可确保如果卸载了其中一个 Vspackage，共享的代码将保持为其他 VSPackage。 如果也卸载了第二个 VSPackage，将删除的共享的代码。
 
-## <a name="scenario-4-side-by-side-vspackage-update"></a>方案 4： 通过并行 VSPackage 更新
+## <a name="scenario-4-side-by-side-vspackage-update"></a>方案 4:通过并行 VSPackage 更新
 
 在此方案中，你的 VSPackage 的 Visual Studio 遭受安全漏洞并需要发出更新。 如方案 2，可以创建新的.msi 文件更新现有安装来包括安全修复程序，以及部署新安装与已到位的安全修补程序。
 

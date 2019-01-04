@@ -1,9 +1,6 @@
 ---
 title: SharePoint 项目项架构参考 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b94856d4e00cd15f324040ccd49c90bb1be29a7d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e2023eb4828ab5ac59a45dd72040177a654176d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895800"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint 项目项架构参考
   Visual Studio 将使用 SharePoint 项目项架构验证的内容 *.spdata*文件。 *.Spdata*文件指定的内容和 SharePoint 项目项的行为。 SharePoint 项目项的内容的详细信息，请参阅[创建项模板和项目模板的 SharePoint 项目项](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
@@ -56,4 +53,3 @@ ms.locfileid: "37118465"
   
 ## <a name="see-also"></a>请参阅
  [创建项模板和用于 SharePoint 项目项的项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)  
-  

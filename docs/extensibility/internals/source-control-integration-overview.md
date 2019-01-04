@@ -1,9 +1,6 @@
 ---
 title: 源控件集成概述 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd2e04f4e1102d66cc04cd1365dc7abd1488c9c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902979"
 ---
 # <a name="source-control-integration-overview"></a>源代码管理集成概述
 本部分将进行比较的两种方法来将集成到 Visual Studio 源代码管理;源代码管理插件并提供了源代码管理解决方案，并突出显示新的源代码管理功能的 VSPackage。 Visual Studio 支持源代码管理 Vspackage 和源代码控制插件之间手动切换，以及自动基于解决方案的切换。  
@@ -35,7 +32,7 @@ ms.locfileid: "49931828"
   
 1. 创建实现中所指定的函数的 DLL[源代码管理插件](../../extensibility/source-control-plug-ins.md)。  
   
-2. 相应的注册表项，从而注册该 DLL (中所述[如何： 安装源代码管理插件](../../extensibility/internals/how-to-install-a-source-control-plug-in.md))。  
+2. 相应的注册表项，从而注册该 DLL (中所述[如何：安装源代码管理插件](../../extensibility/internals/how-to-install-a-source-control-plug-in.md))。  
   
 3. 创建一个帮助程序 UI 和显示当出现提示时源代码管理适配器包 （处理通过源代码管理插件的源代码管理功能的 Visual Studio 组件）  
   

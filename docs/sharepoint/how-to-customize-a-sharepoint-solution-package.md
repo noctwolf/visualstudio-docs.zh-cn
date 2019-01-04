@@ -1,9 +1,6 @@
 ---
-title: 如何： 自定义 SharePoint 解决方案包 |Microsoft Docs
-ms.custom: ''
+title: 如何：自定义 SharePoint 解决方案包 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackageDesignerAdvanced
@@ -13,8 +10,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
@@ -22,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fd1ebe9e49a0b3e26d090fdbbdbbe4dd37c0344a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 85140f8d85c90d2b58df10a63f50c117e10eb8bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118773"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835391"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package"></a>如何： 自定义 SharePoint 解决方案包
+# <a name="how-to-customize-a-sharepoint-solution-package"></a>如何：自定义 SharePoint 解决方案包
   在包设计器可用于创建和自定义包 (*.wsp*)。 例如，可以添加 SharePoint 项目项和功能，指定是否 Web 服务器是重置时部署解决方案，并设置部署服务器类型。  
   
 ## <a name="open-the-package-designer"></a>打开包设计器  
@@ -47,7 +42,7 @@ ms.locfileid: "37118773"
   
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>若要使用解决方案资源管理器查看打包的清单文件  
   
-1.  在中**解决方案资源管理器**，选择**显示所有文件**。  
+1.  在“解决方案资源管理器”中，选择“显示所有文件”。  
   
 2.  展开包中，展开 Package.package，，然后打开*Package.Template.xml*文件。  
   
@@ -94,4 +89,3 @@ ms.locfileid: "37118773"
   
 ## <a name="see-also"></a>请参阅
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
