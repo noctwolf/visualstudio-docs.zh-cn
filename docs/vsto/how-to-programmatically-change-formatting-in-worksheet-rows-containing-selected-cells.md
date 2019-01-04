@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式更改中包含选定单元格的工作表行的格式设置
-ms.custom: ''
+title: 如何：以编程方式更改中包含选定单元格的工作表行的格式设置
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a74f610d596a991512f7f3ba5061da6db862f0c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e767b8af84eabe3339000a12ed7639e94ce53b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891279"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891795"
 ---
-# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>如何： 以编程方式更改中包含选定单元格的工作表行的格式设置
+# <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>如何：以编程方式更改中包含选定单元格的工作表行的格式设置
   可以更改的整个行，包括所选单元格，使文本为粗体的字体。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -74,8 +71,6 @@ ms.locfileid: "49891279"
   
 ## <a name="see-also"></a>请参阅  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以编程方式将样式应用于工作簿中的范围](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [如何： 以编程方式复制数据和格式设置在工作表之间](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
+ [如何：以编程方式将样式应用于工作簿中的范围](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [如何：以编程方式复制数据和格式设置在工作表之间](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  
