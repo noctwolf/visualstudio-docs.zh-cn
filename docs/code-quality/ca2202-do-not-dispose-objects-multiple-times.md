@@ -1,8 +1,7 @@
 ---
-title: CA2202：不要多次释放对象
+title: CA2202:不要多次释放对象
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2202
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4f666ba0cf620249e9308179d715ca38bf0f18b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ac1e6aafd9894cd59db1a1d842d560d4b7229860
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822860"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822121"
 ---
-# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202：不要多次释放对象
+# <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202:不要多次释放对象
 
 |||
 |-|-|
@@ -42,7 +41,7 @@ ms.locfileid: "49822860"
 
 ## <a name="related-rules"></a>相关的规则
 
-- [CA2000：超出范围前释放对象](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
+- [CA2000： 超出范围前释放对象](../code-quality/ca2000-dispose-objects-before-losing-scope.md)
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
@@ -93,4 +92,4 @@ finally
 ## <a name="see-also"></a>请参阅
 
 - <xref:System.IDisposable?displayProperty=fullName>
-- [释放模式](/dotnet/standard/design-guidelines/dispose-pattern)
+- [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)

@@ -1,9 +1,6 @@
 ---
-title: 项目类型体系结构 |Microsoft 文档
-ms.custom: ''
+title: 项目类型体系结构 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], architecture
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6ef7fe6fbf4a8899606dca35c10745e68e3cbfa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fea8273c1db662d5184d1afb71b5cd39789d6794
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130596"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929301"
 ---
 # <a name="project-types-architecture"></a>项目类型体系结构
 本部分包含有关体系结构中的项目类型的详细的信息[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
@@ -31,14 +28,14 @@ ms.locfileid: "31130596"
  描述项目类型都必须实现和 （可选） 可实现以提供其他功能的接口。  
   
  [何时创建项目类型](../../extensibility/internals/when-to-create-project-types.md)  
- 帮助你决定时必须创建一个项目类型，当您可以使用另一个[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]如 Vspackage 和编辑器来实现相同的目的的扩展性功能。  
+ 可帮助您决定时必须创建一个项目类型以及何时使用另一个[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]如 Vspackage 和编辑器来实现相同目标的可扩展性功能。  
   
  [层次结构和选择](../../extensibility/internals/hierarchies-and-selection.md)  
- 描述如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用层次结构和选择上下文提供一致和简化用户体验。  
+ 描述如何[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用层次结构和选定内容上下文提供一致和简化的用户体验。  
   
 ## <a name="related-sections"></a>相关章节  
  [项目子类型](../../extensibility/internals/project-subtypes.md)  
- 说明如何项目子类型允许你自定义的项目系统的行为[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]和[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]。  
+ 介绍了如何项目子类型，可以自定义的项目系统的行为[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]和[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]。  
   
  [项目类型](../../extensibility/internals/project-types.md)  
- 基本的构建块的形式提供的项目概述[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。 提供了指向解释如何项目控制生成和编译代码的其他主题的链接。
+ 基本构建块的形式提供的项目概述[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。 提供了指向介绍项目生成和编译代码的控制的其他主题的链接。

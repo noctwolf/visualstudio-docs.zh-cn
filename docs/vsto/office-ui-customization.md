@@ -1,9 +1,6 @@
 ---
 title: Office UI 自定义
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f776fc7972272804adaf6fe4af8f7e3f3c0edc53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836757"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924821"
 ---
 # <a name="office-ui-customization"></a>Office UI 自定义
   可以使用 Visual Studio 中的 Office 开发人员工具自定义 Microsoft Office 应用程序的用户界面 (UI)。 本主题介绍自定义的 UI 功能，分为以下几个部分：  
@@ -96,7 +93,7 @@ ms.locfileid: "49836757"
  有关详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)并[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
   
 ##  <a name="Shortcut"></a> 快捷菜单  
- 在文档或应用程序窗口中右键单击时，将出现一个快捷菜单。 可以设置在发生某事件后显示快捷菜单，例如，当用户右键单击文档、工作簿或主机控件时。 可以向快捷菜单添加大量不同的菜单命令或控件。 使用 XML 创建快捷菜单。 如果您将添加**功能区 (XML)** 项到 Office 项目中，您可以将 XML 添加到功能区 XML 文件来创建快捷菜单。 有关使用 XML 创建快捷方式菜单的详细信息，请参阅[如何： 向快捷菜单添加命令](../vsto/how-to-add-commands-to-shortcut-menus.md)。  
+ 在文档或应用程序窗口中右键单击时，将出现一个快捷菜单。 可以设置在发生某事件后显示快捷菜单，例如，当用户右键单击文档、工作簿或主机控件时。 可以向快捷菜单添加大量不同的菜单命令或控件。 使用 XML 创建快捷菜单。 如果您将添加**功能区 (XML)** 项到 Office 项目中，您可以将 XML 添加到功能区 XML 文件来创建快捷菜单。 有关使用 XML 创建快捷方式菜单的详细信息，请参阅[如何：将命令添加到快捷菜单](../vsto/how-to-add-commands-to-shortcut-menus.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [功能区概述](../vsto/ribbon-overview.md)   
@@ -105,8 +102,6 @@ ms.locfileid: "49836757"
  [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)   
  [自定义任务窗格](../vsto/custom-task-panes.md)   
  [Office 解决方案中使用 WPF 控件](../vsto/using-wpf-controls-in-office-solutions.md)   
- [如何： 在功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
- [如何： 显示外接程序用户界面错误](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [演练： 收集数据使用 Windows 窗体](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  
-  
-  
+ [如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)   
+ [如何：显示外接程序用户界面错误](../vsto/how-to-show-add-in-user-interface-errors.md)   
+ [演练：使用 Windows 窗体收集数据](../vsto/walkthrough-collecting-data-using-a-windows-form.md)  

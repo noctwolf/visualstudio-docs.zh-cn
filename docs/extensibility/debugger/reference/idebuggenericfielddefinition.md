@@ -1,9 +1,6 @@
 ---
-title: IDebugGenericFieldDefinition |Microsoft 文档
-ms.custom: ''
+title: IDebugGenericFieldDefinition |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugGenericFieldDefinition interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91906fa4e4b76f8d9c43c3a181dd0e8781219587
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4f81691f60619cd9442e86b155850cd29e2cbd5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896563"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
 表示托管的代码的泛型类型的字段的定义。  
@@ -34,13 +31,13 @@ IDebugGenericFieldDefinition : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|构造给定类型参数的数组的字段实例。|  
+|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|构造给定类型的参数数组的字段实例。|  
 |[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|检索给定的参数数目的类型参数。|  
-|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|检索泛型字段关联的类型参数的数目。|  
+|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|检索与通用字段关联的类型参数的数目。|  
   
 ## <a name="requirements"></a>要求  
- 标头： Sh.h  
+ 标头：Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll

@@ -1,9 +1,6 @@
 ---
-title: 如何： 更新 Visual Studio 扩展 |Microsoft Docs
-ms.custom: ''
+title: 如何：更新 Visual Studio 扩展 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - update package
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bf951215dfb4f6837c157a7b8510fba2d09f140
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 65d27087c0708623f1861bb675a37af84e2360a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858302"
 ---
-# <a name="how-to-update-a-visual-studio-extension"></a>如何： 更新 Visual Studio 扩展
+# <a name="how-to-update-a-visual-studio-extension"></a>如何：更新 Visual Studio 扩展
 可以通过使用你的系统上更新 Visual Studio 扩展**扩展和更新**若要安装的更新的版本。 如果您创建扩展的更新的版本，您可以将其表示为更新的 VSIX 清单中的版本号递增。  
   
  安装更新时传入的扩展的 VSIX 清单具有相同`ID`已安装的证书和更高版本作为`Version`数。 如果`Version`数是相同或更低时，无法安装此包。 如果`ID`值不匹配、 尚未安装的包识别为单独的扩展。  

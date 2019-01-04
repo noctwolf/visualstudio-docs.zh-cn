@@ -1,9 +1,6 @@
 ---
-title: 如何： 滚动查看数据库记录工作表中
-ms.custom: ''
+title: 如何：滚动工作表中的数据库记录
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e9ffaffdefda98e3e074467fcd4df8cacce91b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1459ee941a8cb88d102e14ccfc7f128796c4c333
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670613"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897465"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>如何： 滚动查看数据库记录工作表中
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>如何：滚动工作表中的数据库记录
   以下过程说明如何使用设计器来显示单个字段从数据库表中的 Microsoft Office Excel 工作表，使最终用户可以滚动浏览所有记录的控件。  
   
- 仅在文档级项目中，可以使用设计器。 但是，还可以添加控件并将其绑定到以编程方式在运行时数据。 有关详细信息，请参阅[演练： VSTO 外接程序项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)。  
+ 仅在文档级项目中，可以使用设计器。 但是，还可以添加控件并将其绑定到以编程方式在运行时数据。 有关详细信息，请参见[演练：VSTO 外接程序项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
@@ -48,5 +45,3 @@ ms.locfileid: "35670613"
   
 ## <a name="see-also"></a>请参阅  
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)  
-  
-  

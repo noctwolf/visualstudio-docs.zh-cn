@@ -1,8 +1,7 @@
 ---
-title: CA1023：索引器不应是多维的
+title: CA1023:索引器不应是多维的
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IndexersShouldNotBeMultidimensional
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b769aa8cc009f122d4cef4ca8d270c6b3fced5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2e1282612da884dfbaff646a3b84f713ada7ed75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547692"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852620"
 ---
-# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023：索引器不应是多维的
+# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023:索引器不应是多维的
 
 |||
 |-|-|
@@ -56,6 +55,6 @@ ms.locfileid: "45547692"
  [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA1043：将整型或字符串参数用于索引器](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
+ [CA1043:使用整型或字符串参数用于索引器](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)
 
- [CA1024：在适用处使用属性](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024： 在适用处在适用处使用属性](../code-quality/ca1024-use-properties-where-appropriate.md)

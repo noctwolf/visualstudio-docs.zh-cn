@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01a2b4863736b22e08cf2075e6402d836e9cc671
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ca540b8ada32eac3afb6fcc4cb8d8da7204052b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926795"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915421"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>在 VS 扩展中调用文本转换
 如果您正在编写 Visual Studio 扩展，如菜单命令或[域特定语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，可以使用文本模板化服务转换文本模板。 获取 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服务并将其转换为 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。
@@ -135,8 +134,8 @@ Sample text.
  可以使用从 <xref:System.MarshalByRefObject> 派生的参数类将值从文本模板传出。
 
 ## <a name="related-topics"></a>相关主题
- 若要从预处理的文本模板生成文本： 调用`TransformText()`生成的类的方法。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ 若要从预处理过的文本模板生成文本，请执行以下操作：调用已生成类的 `TransformText()` 方法。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
- 若要在 Visual Studio 扩展外生成文本： 定义自定义宿主。 有关详细信息，请参阅[通过使用自定义宿主处理文本模板](../modeling/processing-text-templates-by-using-a-custom-host.md)。
+ 若要生成 Visual Studio 扩展之外的文本：定义一个自定义宿主。 有关详细信息，请参阅[通过使用自定义宿主处理文本模板](../modeling/processing-text-templates-by-using-a-custom-host.md)。
 
- 若要生成更高版本可以编译和执行的源代码： 调用`t4.PreprocessTemplate()`方法的<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。
+ 若要生成可以稍后编译并执行的源代码，请执行以下操作：调用 `t4.PreprocessTemplate()` 的 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> 方法。

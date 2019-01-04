@@ -1,8 +1,7 @@
 ---
-title: CA1720：标识符不应包含类型名称
+title: CA1720:标识符不应包含类型名称
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1720
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32abf9a2c11a8381b5f204a2388a85f7fd5d8230
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 7dd351368ddb66cb389eee12b23dcff91b0653ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912264"
 ---
-# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720：标识符不应包含类型名称
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720:标识符不应包含类型名称
 
 |||
 |-|-|
@@ -35,7 +34,7 @@ ms.locfileid: "50143120"
 ## <a name="cause"></a>原因
  外部可见成员中的参数的名称包含的数据类型名称。
 
- 或
+ - 或 -
 
  外部可见成员的名称包含特定于语言的数据类型名称。
 
@@ -70,7 +69,7 @@ ms.locfileid: "50143120"
 
 - 无符号
 
-- 签名
+- 有符号
 
 - Float
 
@@ -141,10 +140,10 @@ ms.locfileid: "50143120"
  可能需要偶尔使用的基于类型的参数和成员名称。 但是，对于新的开发，没有已知情况下，则应该禁止显示此规则的警告。 对于以前发布的库，您可能需要禁止显示此规则的警告。
 
 ## <a name="related-rules"></a>相关的规则
- [CA1709：标识符的大小写应当正确](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709:标识符应采用正确的大小写](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708：标识符不应仅以大小写进行区分](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708:标识符不应不同于用例的详细信息](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707：标识符不应包含下划线](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707:标识符不应包含下划线](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1719：参数名不应与成员名冲突](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+ [CA1719:参数名不应与成员名称](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

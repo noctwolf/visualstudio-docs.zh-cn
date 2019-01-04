@@ -1,9 +1,6 @@
 ---
 title: 创建自定义编辑器和设计器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05eeae4901af8780927e0ce0577b385ee9ffa371
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c3f7a4b3f3219be4a4e3a40a0bb792b34599ce0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950896"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946992"
 ---
 # <a name="create-custom-editors-and-designers"></a>创建自定义编辑器和设计器
 Visual Studio 集成的开发环境 (IDE) 可以托管不同类型的编辑器：  
@@ -73,10 +70,10 @@ Visual Studio 集成的开发环境 (IDE) 可以托管不同类型的编辑器�
    如果它可以嵌入，应为外部编辑器创建宿主窗口，然后调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>方法，设置<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>枚举值`DP_External`。 如果不能嵌入编辑器，则 IDE 将自动为其创建一个单独的窗口。  
   
 ## <a name="in-this-section"></a>本节内容  
- [演练： 创建自定义编辑器](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [演练：创建自定义编辑器](../extensibility/walkthrough-creating-a-custom-editor.md)  
  说明如何创建自定义编辑器。  
   
- [演练： 将功能添加到自定义编辑器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [演练：将功能添加到自定义编辑器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  介绍如何将功能添加到自定义编辑器。  
   
  [设计器的初始化和元数据配置](../extensibility/designer-initialization-and-metadata-configuration.md)  

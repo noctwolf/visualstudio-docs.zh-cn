@@ -1,9 +1,6 @@
 ---
-title: 如何： 确定库中的符号 |Microsoft Docs
-ms.custom: ''
+title: 如何：确定库中的符号 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ff3f9ad93ddfb3b463d059fb2aba654ce48a501
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3b62a9207a7a676d10152f8b66dccdcbd7060e8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510524"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918987"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>如何： 确定库中的符号
+# <a name="how-to-identify-symbols-in-a-library"></a>如何：确定库中的符号
 符号浏览工具显示符号的分层的视图。 符号代表命名空间、 对象、 类、 类成员和其他语言元素。  
   
  可以通过导航信息传递到符号库标识层次结构中的每个符号[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器通过以下接口：  
@@ -32,7 +29,7 @@ ms.locfileid: "39510524"
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>。  
   
- 在层次结构中的符号的位置将符号区分开来。 它允许导航到特定的符号，符号浏览工具。 符号的唯一的完全限定路径将确定位置。 在路径中的每个元素是一个节点。 路径的顶级节点开始和结束特定的符号。 例如，如果 M1 方法是 C1 类的成员和 C1 是 N1 命名空间中，M1 方法的完整路径是 N1。C1。M1。 此路径包含三个节点： N1 C1 和 M1。  
+ 在层次结构中的符号的位置将符号区分开来。 它允许导航到特定的符号，符号浏览工具。 符号的唯一的完全限定路径将确定位置。 在路径中的每个元素是一个节点。 路径的顶级节点开始和结束特定的符号。 例如，如果 M1 方法是 C1 类的成员和 C1 是 N1 命名空间中，M1 方法的完整路径是 N1。C1。M1。 此路径包含三个节点：N1 C1 和 M1。  
   
  导航信息允许[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器查找、 选择，并确保所选符号的层次结构中。 它允许一个浏览工具之间进行浏览。 使用时**对象浏览器**若要浏览中的符号[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]项目中，可以右键单击方法并启动**调用浏览器**工具调用关系图中显示该方法。  
   
@@ -49,7 +46,7 @@ N1
   
 ```  
   
- C2 类，在此示例中的规范路径是 N1 + C2。 C2 的演示文稿路径包括 C1 和"基类和接口"节点： N1 + C1 +"基类和接口"+ C2。  
+ C2 类，在此示例中的规范路径是 N1 + C2。 C2 的演示文稿路径包括 C1 和"基类和接口"节点：N1 + C1 +"基和接口"+ C2。  
   
  若要获取表示窗体信息的对象管理器调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>方法。  
   
@@ -85,5 +82,5 @@ N1
   
 ## <a name="see-also"></a>请参阅  
  [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [如何： 向对象管理器注册库](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [如何： 公开库提供对对象管理器的符号列表](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [如何：与对象管理器注册库](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [如何：公开库提供对对象管理器的符号列表](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

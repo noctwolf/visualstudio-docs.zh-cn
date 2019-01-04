@@ -1,8 +1,6 @@
 ---
 title: 在运行时向 Office 文档添加控件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +23,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ad16bc414e6d67b563240bcd2bceb15e9c34e97
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: be96a6967657a79d1e3bed9336ebb530accba2a0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305632"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53842783"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>在运行时向 Office 文档添加控件
   可以将控件添加到 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿在运行时。 此外可以在运行时删除它们。 添加或删除在运行时中的控件称为*动态控件*。  
@@ -45,7 +43,7 @@ ms.locfileid: "52305632"
 
 - [将 Windows 窗体控件添加到文档](#WindowsForms)。  
 
-  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何执行操作实现： 将控件添加到文档图面在运行时？](http://go.microsoft.com/fwlink/?LinkId=132782)。  
+  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：将控件添加到文档图面在运行时？](http://go.microsoft.com/fwlink/?LinkId=132782).  
 
 ##  <a name="ControlsCollection"></a> 使用控件集合管理控件在运行时  
  若要添加、 获取，或删除控件在运行时，使用的帮助器方法<xref:Microsoft.Office.Tools.Excel.ControlCollection>和<xref:Microsoft.Office.Tools.Word.ControlCollection>对象。  
@@ -82,15 +80,15 @@ ms.locfileid: "52305632"
 ##  <a name="HostControls"></a> 将宿主控件添加到文档  
  当以编程方式向文档中添加宿主控件时，必须提供一个可唯一标识该控件的名称，并且指定要将控件添加到文档中的位置。 有关具体说明，请参阅以下主题：  
 
-- [如何： 向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [如何：向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
 
-- [如何： 向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [如何：向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
 
-- [如何： 向工作表添加图表控件](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [如何：将图表控件添加到工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)  
 
-- [如何： 将内容添加到 Word 文档的控件](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [如何：添加内容控件添加到 Word 文档](../vsto/how-to-add-content-controls-to-word-documents.md)  
 
-- [如何： 向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
 
   有关主机控件的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
 
@@ -144,10 +142,10 @@ ms.locfileid: "52305632"
 ## <a name="see-also"></a>请参阅  
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [持久保存在 Office 文档中的动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)   
- [如何： 向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [如何： 向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [如何： 向工作表添加图表控件](../vsto/how-to-add-chart-controls-to-worksheets.md)   
- [如何： 向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [如何： 向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [如何：向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [如何：向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [如何：将图表控件添加到工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)   
+ [如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)   
- [如何： 向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   

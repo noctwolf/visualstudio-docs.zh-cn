@@ -1,9 +1,6 @@
 ---
-title: Vspackage |Microsoft 文档
-ms.custom: ''
+title: Vspackage |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages
@@ -13,24 +10,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ba75f9b5f8ca4bea8dc2dc2de9ed04d544acce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 98ed051c9f98d481d3816ce5c4bcc2f621d42e86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142823"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886843"
 ---
 # <a name="vspackages"></a>VSPackages
-Vspackage 是软件模块的扩展[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过提供 UI 元素、 服务、 项目、 编辑器和设计器的集成的开发环境 (IDE)。  
+Vspackage 是软件模块扩展[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过提供 UI 元素、 服务、 项目、 编辑器和设计器的集成的开发环境 (IDE)。  
   
 ## <a name="in-this-section"></a>本节内容  
  [指定 VS Shell 的 VSPackage 文件位置](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)  
  说明如何指定到 Visual Studio shell 的 VSPackage 位置。  
   
  [Vspackage 中的资源](../../extensibility/internals/resources-in-vspackages.md)  
- 说明如何管理 Vspackage 中的资源。  
+ 介绍如何在 Vspackage 中管理资源。  
   
  [VSPackage 中安全性的最佳做法](../../extensibility/internals/best-practices-for-security-in-vspackages.md)  
- 可帮助你创建更安全的产品，通过了解安全漏洞。  
+ 可帮助你创建更安全产品通过了解安全漏洞。  
   
 ## <a name="related-sections"></a>相关章节

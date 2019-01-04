@@ -1,13 +1,8 @@
 ---
-title: 如何： 向 Finder 方法中添加筛选器描述符 |Microsoft Docs
-ms.custom: ''
+title: 如何：将筛选器描述符添加到 Finder 方法 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,21 +15,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 63374f4d96c86ea3eafbd4c6fa3fbe3d1f5a5899
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: bf1909f6c57ed82ba5afcfd30f6586e9bd4d6d14
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755594"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877765"
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何： 将筛选器描述符添加到 Finder 方法
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：将筛选器描述符添加到 Finder 方法
   筛选器描述符，它们执行之前将值传递给方法的模型的使用者。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
  一种常见方案是在 SharePoint 中的用户想要检索的外部内容类型与某个条件匹配的实例。 可以通过将筛选器描述符添加到 Finder 方法来支持此方案。  
   
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>若要将筛选器描述符添加到 Finder 方法  
   
-1.  在中**BDC 方法详细信息**窗口中，展开的 Finder 方法节点，展开**参数**节点，然后添加一个输入的参数。 有关详细信息，请参阅[如何： 向方法中添加一个参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)。  
+1.  在中**BDC 方法详细信息**窗口中，展开的 Finder 方法节点，展开**参数**节点，然后添加一个输入的参数。 有关更多信息，请参见[如何：将参数添加到方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)。  
   
 2.  在中**方法的详细信息**窗口中，选择该参数的类型描述符。  
   
@@ -73,11 +68,9 @@ ms.locfileid: "36755594"
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
   
 ## <a name="see-also"></a>请参阅
- [如何： 添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何： 添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何： 向方法中添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [如何：添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何：将参数添加到方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
  [将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
-  
-  

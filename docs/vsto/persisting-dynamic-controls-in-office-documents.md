@@ -1,9 +1,6 @@
 ---
 title: 持久保存在 Office 文档中的动态控件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77310f797db3eb031bc311f4fc68bc7fd6b4c56
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 570131dfdb3cb582ba6ee6c8a12fff2dfcc01e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059234"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894790"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>持久保存在 Office 文档中的动态控件
 
@@ -38,7 +35,7 @@ ms.locfileid: "37059234"
 
 ## <a name="persist-host-controls-in-the-document"></a>持久保存在文档中的主机控件
 
-保存并关闭文档后，所有动态宿主控件会从文档中删除。 只会留下基础本机 Office 对象。 例如，<xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName>宿主控件将变成<xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>。 本机 Office 对象未连接到宿主控件事件，并且不具备宿主控件的数据绑定功能。
+保存并关闭文档后，所有动态宿主控件会从文档中删除。 只会留下基础本机 Office 对象。 例如， <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> 宿主控件将变成 <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>。 本机 Office 对象未连接到宿主控件事件，并且不具备宿主控件的数据绑定功能。
 
 下表列出了文档中保留的每种宿主控件的本机 Office 对象。
 
@@ -56,7 +53,7 @@ ms.locfileid: "37059234"
 
 若要为 Word 重新创建宿主控件或<xref:Microsoft.Office.Tools.Excel.NamedRange>或<xref:Microsoft.Office.Tools.Excel.ListObject>为 Excel 中，使用托管控件`Add` \<*控件类*> 方法<xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName>或<xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName>对象。 使用包含本机 Office 对象参数的方法。
 
-例如，如果你想要创建<xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName>主机控件从现有的本机<xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName>打开文档时，使用<xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A>方法并传入现有<xref:Microsoft.Office.Interop.Excel.ListObject>。 下面的代码示例演示了如何在 Excel 的文档级项目中进行此操作。 该代码会重新创建动态 <xref:Microsoft.Office.Tools.Excel.ListObject> ，它基于 <xref:Microsoft.Office.Interop.Excel.ListObject> 类中名为 `MyListObject` 的现有 `Sheet1` 创建。
+例如，如果想要在打开文档时从现有的本机 <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> 中创建 <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> 宿主控件，应使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> 方法并传入现有的 <xref:Microsoft.Office.Interop.Excel.ListObject>。 下面的代码示例演示了如何在 Excel 的文档级项目中进行此操作。 该代码会重新创建动态 <xref:Microsoft.Office.Tools.Excel.ListObject> ，它基于 <xref:Microsoft.Office.Interop.Excel.ListObject> 类中名为 `MyListObject` 的现有 `Sheet1` 创建。
 
 [!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs#6)]
 [!code-vb[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb#6)]
@@ -89,18 +86,18 @@ ms.locfileid: "37059234"
 
 #### <a name="remove-activex-wrappers-when-the-document-is-opened"></a>打开文档时删除 ActiveX 包装
 
-若要删除所有 ActiveX 包装，请调用`GetVstoObject`方法生成的主机项<xref:Microsoft.Office.Interop.Word.Document>或<xref:Microsoft.Office.Interop.Excel.Workbook>它表示新打开的文档。 例如，若要从 Word 文档中删除所有 ActiveX 包装，可以调用`GetVstoObject`方法生成的主机项<xref:Microsoft.Office.Interop.Word.Document>传递给事件处理程序对象<xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>事件。
+若要删除所有 ActiveX 包装，请调用 `GetVstoObject` 方法为表示新打开文档的 <xref:Microsoft.Office.Interop.Word.Document> 或 <xref:Microsoft.Office.Interop.Excel.Workbook> 生成主机项。 例如，若要从 Word 文档中删除所有 ActiveX 包装，可以调用 `GetVstoObject` 方法来为 <xref:Microsoft.Office.Interop.Word.Document> 对象生成宿主项，该对象会传递给 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> 事件的事件处理程序。
 
 知道只能在安装 VSTO 外接程序的计算机上打开文档时，此过程非常有用。 如果该文档可能会传递给其他未安装 VSTO 外接程序的用户，请考虑在关闭文档之前删除控件。
 
-下面的代码示例演示如何调用`GetVstoObject`方法打开文档时。
+下面的代码示例演示如何在打开文档时调用 `GetVstoObject` 方法。
 
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
 尽管`GetVstoObject`方法主要用于生成在运行时的新主机项，此方法调用的特定文档的第一个时间也将清除从文档的所有 ActiveX 包装。 有关如何使用详细信息`GetVstoObject`方法，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
-如果 VSTO 外接程序中创建动态控件打开文档时，VSTO 外接程序将调用`GetVstoObject`方法过程来创建控件的一部分。 不需要添加单独调用`GetVstoObject`方法以在此方案中删除 ActiveX 包装。
+如果 VSTO 外接程序中创建动态控件打开文档时，VSTO 外接程序将调用`GetVstoObject`方法过程来创建控件的一部分。 此方案中，不需要添加对 `GetVstoObject` 方法的单独调用来删除 ActiveX 包装。
 
 #### <a name="remove-the-dynamic-controls-before-the-document-is-closed"></a>关闭文档之前删除动态控件
 

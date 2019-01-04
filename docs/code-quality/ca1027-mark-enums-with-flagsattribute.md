@@ -1,8 +1,7 @@
 ---
-title: CA1027：用 FlagsAttribute 标记枚举
+title: CA1027:用 FlagsAttribute 标记枚举
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - MarkEnumsWithFlags
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33dd5d3e4774084ca6b78708a0e617ca87df8ff2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9a559c20cd45ae39210421b647e8efd6c0928ade
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49885637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882099"
 ---
-# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027：用 FlagsAttribute 标记枚举
+# <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027:用 FlagsAttribute 标记枚举
 
 |||
 |-|-|
@@ -47,12 +46,12 @@ ms.locfileid: "49885637"
  如果不希望可组合的枚举值，禁止显示此规则的警告。
 
 ## <a name="example"></a>示例
- 在以下示例中，`DaysEnumNeedsFlags`是满足的要求使用一个枚举<xref:System.FlagsAttribute>，但不是希望其。 `ColorEnumShouldNotHaveFlag`枚举不具有值 2 的幂，但未正确指定<xref:System.FlagsAttribute>。 这与规则冲突[CA2217： 不要标记枚举使用 FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)。
+ 在以下示例中，`DaysEnumNeedsFlags`是满足的要求使用一个枚举<xref:System.FlagsAttribute>，但不是希望其。 `ColorEnumShouldNotHaveFlag`枚举不具有值 2 的幂，但未正确指定<xref:System.FlagsAttribute>。 这违反了规则[CA2217:执行不使用 FlagsAttribute 标记枚举](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)。
 
  [!code-csharp[FxCop.Design.EnumFlags#1](../code-quality/codesnippet/CSharp/ca1027-mark-enums-with-flagsattribute_1.cs)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA2217：不要使用 FlagsAttribute 标记枚举](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217:不使用 FlagsAttribute 标记枚举](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>请参阅
  <xref:System.FlagsAttribute?displayProperty=fullName>

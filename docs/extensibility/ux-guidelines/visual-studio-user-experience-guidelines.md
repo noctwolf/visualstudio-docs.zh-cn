@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 用户体验指南 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed7488702bd19e8a0e8576d2cdc21e4350e8443b
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: e5c6fa30d97c309534486a0ded6bac5b019f56fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863980"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913538"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 用户体验指南
 如果针对 Visual Studio 中设计的新功能，请按照 Visual Studio 用户体验指南。 这些指南包含有关常见用户模型和交互模式的信息，以便新用户界面 (UI) 的设计人员可以创建无缝且一致的开发环境中的用户体验。  

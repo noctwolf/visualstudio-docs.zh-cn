@@ -1,9 +1,6 @@
 ---
 title: SafeControls 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe8b3c026b7386d89ef04d0a966eccad425f1629
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e08b414858db389e507dc9395d218807c9530db6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118780"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875963"
 ---
 # <a name="safecontrols-element"></a>SafeControls 元素
   ASPX 控件和指定的任何用户访问 SharePoint 站点上任何 ASPX 页上的安全的 Web 部件的集合。  
@@ -66,4 +63,3 @@ ms.locfileid: "37118780"
 ## <a name="see-also"></a>请参阅
  [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)   
  [提供在项目项中的打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
-  

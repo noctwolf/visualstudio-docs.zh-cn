@@ -1,9 +1,6 @@
 ---
 title: 相关的服务和界面 (源代码管理 VSPackage) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e68c7c0101661ae9afffa7e9e12e8e4faa44fc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c312b6d89812a76f5fc8135eb18f02f0afedc5ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940620"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>相关服务和界面（源代码管理 VSPackage）
 本部分列出了所有的源控件中的 VSPackage 相关接口[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 源代码管理 VSPackage 实现这些接口的一些，并使用其他人来完成源代码管理任务。  
@@ -33,9 +30,9 @@ ms.locfileid: "49940484"
   
  接口是：  
   
--   所需的： 相应的实体 （源代码管理 VSPackage，源存根 （stub） 项目） 必须实现接口。  
+-   必需：相应的实体 （源代码管理 VSPackage，源存根 （stub） 项目） 必须实现接口。  
   
--   建议： 实体应实现此接口;否则，源代码管理功能，可能会受到限制。  
+-   建议：实体应实现此接口;否则，源代码管理功能，可能会受到限制。  
   
 -   可选： 实体可以实现此接口可提供更丰富的功能集。  
   

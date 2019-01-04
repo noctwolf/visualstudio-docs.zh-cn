@@ -1,9 +1,6 @@
 ---
-title: 如何： 创建 SharePoint 项目扩展 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建 SharePoint 项目扩展 |Microsoft Docs
 ms.date: 04/28/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25644a11ddbef3f8d493b64f8ca288dbaa87a14c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4e1c790e70ba44df967b33d57ac57951e714e130
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836447"
 ---
-# <a name="how-to-create-a-sharepoint-project-extension"></a>如何： 创建 SharePoint 项目扩展
+# <a name="how-to-create-a-sharepoint-project-extension"></a>如何：创建 SharePoint 项目扩展
   当你想要将功能添加到已在 Visual Studio 中打开任何 SharePoint 项目时，请创建一个项目扩展。 有关详细信息，请参阅[扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)。  
 
 ### <a name="to-create-a-project-extension"></a>若要创建项目扩展  
@@ -190,7 +187,7 @@ ms.locfileid: "37118483"
 
 此示例使用 SharePoint 项目服务将写入到消息**输出**窗口和**错误列表**窗口。 有关详细信息，请参阅[使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)。  
 
- 有关示例，演示如何处理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested>并<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，请参阅[如何： 将快捷菜单项添加到 SharePoint 项目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)和[如何： 将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
+ 有关示例，演示如何处理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested>并<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，请参阅[如何：将快捷菜单项添加到 SharePoint 项目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)和[如何：将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。  
 
 ## <a name="compile-the-code"></a>编译代码  
  此示例需要引用以下程序集：  
@@ -204,6 +201,6 @@ ms.locfileid: "37118483"
 
 ## <a name="see-also"></a>请参阅
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   
- [如何： 将快捷菜单项添加到 SharePoint 项目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
- [如何： 向 SharePoint 项目中添加属性](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [演练： 创建 SharePoint 项目扩展](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  
+ [如何：将快捷菜单项添加到 SharePoint 项目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
+ [如何：将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [演练：创建 SharePoint 项目扩展](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  

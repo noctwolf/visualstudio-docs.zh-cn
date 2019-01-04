@@ -3,7 +3,6 @@ title: 工作流设计器的 Receive 活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb48c19befc3cf2c155248cfc33c01eedd16ce26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 86c2d67d3922679096a3b3980a928a234515b78e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858986"
 ---
 # <a name="receive-activity-designer"></a>Receive 活动设计器
 
@@ -47,7 +46,7 @@ ms.locfileid: "49950090"
 | <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> | False | 指定服务协定的名称。 此属性用于将服务操作分组至各个服务协定。 所有具有相同的 <xref:System.ServiceModel.Activities.Receive> 的 <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> 活动都分组到同一服务协定（WSDL 端口类型）中。 默认值为顶级 （根） 活动的完全限定的 CLR 名称。 |
 | <xref:System.ServiceModel.Activities.Receive.Content%2A> | False | 指定要接收的消息或参数内容。 它可为 <xref:System.ServiceModel.Activities.ReceiveMessageContent> 活动或 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 活动。 编辑此属性通过选择旁的省略号按钮**内容**字段在属性网格或单击**定义...** 按钮旁边**内容**上的标签**接收**活动设计器图面。 两者都显示**内容定义**对话框。 有关如何使用此框的详细信息，请参阅[内容定义对话框](../workflow-designer/content-definition-dialog-box.md)主题。 |
 | <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> | False | 使用 <xref:System.ServiceModel.Activities.Receive> 对象指定工作流的服务操作中各 <xref:System.ServiceModel.MessageQuerySet> 活动之间的关联。 单击省略号按钮旁边<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>属性在属性网格中，打开**CorrelatesOn 定义**对话框。 有关使用此对话框的详细信息，请参阅[内容定义对话框](../workflow-designer/content-definition-dialog-box.md)主题。 |
-| <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> | False | 指定用于将消息路由到相应工作流实例的 <xref:System.ServiceModel.Activities.CorrelationHandle>。<br /><br /> 单击省略号按钮旁边<xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A>属性在属性网格中，打开**表达式编辑器**对话框。 有关使用此对话框的详细信息，请参阅[如何： 使用表达式编辑器](../workflow-designer/how-to-use-the-expression-editor.md)主题。 |
+| <xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A> | False | 指定用于将消息路由到相应工作流实例的 <xref:System.ServiceModel.Activities.CorrelationHandle>。<br /><br /> 单击省略号按钮旁边<xref:System.ServiceModel.Activities.Receive.CorrelatesWith%2A>属性在属性网格中，打开**表达式编辑器**对话框。 有关使用此对话框的详细信息，请参阅[如何：使用表达式编辑器](../workflow-designer/how-to-use-the-expression-editor.md)主题。 |
 | <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> | False | 指定在工作流中对配置此 <xref:System.ServiceModel.Activities.CorrelationInitializer> 活动的多个 <xref:System.ServiceModel.Activities.CorrelationHandle> 对象进行初始化的 <xref:System.ServiceModel.Activities.Receive> 对象的集合。 单击省略号按钮旁边<xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A>属性在属性网格中，打开**添加相关初始值设定项**对话框。 有关使用此框的详细信息，请参阅[添加相关初始值设定项对话框](../workflow-designer/add-correlationinitializers-dialog-box.md)主题。 |
 | <xref:System.ServiceModel.Activities.Receive.CanCreateInstance%2A> | False | 指定一个值，该值确定如果消息未关联到现有的工作流实例，是否创建一个新工作流实例来处理该消息。 如果值设置为 **，则返回 true**，创建一个新的工作流实例来处理该消息时消息未关联到现有工作流实例。 |
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | 指定由此 <xref:System.ServiceModel.Activities.Receive> 活动实现的服务操作的已知类型集合。 此属性应与设置为 <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> 的 <xref:System.Runtime.Serialization.DataContractSerializer> 属性结合使用。 如果使用了 <xref:System.Xml.Serialization.XmlSerializer>，则忽略此项。<br /><br /> 选择旁的省略号按钮**KnownTypes**字段中要显示的属性网格**类型集合编辑器**对话框可以添加相关类型。 有关使用此框的详细信息，请参阅[类型集合编辑器对话框](../workflow-designer/type-collection-editor-dialog-box.md)主题。 |

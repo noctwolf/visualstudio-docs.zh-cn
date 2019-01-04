@@ -2,7 +2,6 @@
 title: 如何：从 XML 架构生成 XML 代码段
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: gewarren
@@ -10,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac437bbbe876d81acc917f011a3051c9c264b6a
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.openlocfilehash: 31e1805a38d51315c4f0753f363334d1df37ece6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34477673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864709"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何： 从 XML 架构生成 XML 代码段
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：从 XML 架构生成 XML 代码段
 
-“XML 编辑器”可以从 XML 架构定义语言 (XSD) 架构生成 XML 代码段。 例如，在编写 XML 文件，定位元素名称旁边时，你可以按**选项卡**来填充该元素的从该元素的架构信息生成的 XML 数据。
+“XML 编辑器”可以从 XML 架构定义语言 (XSD) 架构生成 XML 代码段。 例如，在编写 XML 文件，而定位元素名的旁边，可以按**选项卡**来填充该元素与从该元素的架构信息生成的 XML 数据。
 
 此功能只适用于元素。 下列规则也适用：
 
@@ -45,32 +44,32 @@ ms.locfileid: "34477673"
 
 ## <a name="example"></a>示例
 
- 本部分中的步骤说明了如何使用架构生成 XML 代码段的功能的 XML 编辑器中。
+ 在本部分中的步骤说明如何使用架构生成 XML 代码段功能的 XML 编辑器中。
 
 > [!NOTE]
 > 在开始下列步骤之前，先将架构文件保存到本地计算机上。
 
-### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>若要创建新的 XML 文件并将其与 XML 架构关联
+### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>若要创建新的 XML 文件并将它与 XML 架构相关联
 
-1.  上**文件**菜单上，指向**新建**，然后单击**文件**。
+1.  上**文件**菜单，依次指向**新建**，然后单击**文件**。
 
-2.  选择**XML 文件**中**模板**窗格中，然后单击**打开**。
+2.  选择**XML 文件**中**模板**窗格，然后单击**打开**。
 
      新文件将在编辑器中打开。 该文件包含默认的 XML 声明 `<?xml version="1.0" encoding="utf-8">`。
 
 3.  在文档属性窗口中，单击浏览按钮 (**...**) 上**架构**字段。
 
-     **XSD 架构**对话框随即显示。
+     **XSD 架构**显示对话框。
 
 4.  单击 **添加**。
 
-     **打开 XSD 架构**对话框随即显示。
+     **打开 XSD 架构**显示对话框。
 
 5.  选择架构文件，然后单击**打开**。
 
 6.  单击 **“确定”**。
 
-     现在，XML 架构已与 XML 文档关联。
+     现在是 XML 架构与 XML 文档关联。
 
 ### <a name="to-generate-an-xml-snippet"></a>生成 XML 代码段
 
@@ -80,17 +79,17 @@ ms.locfileid: "34477673"
 
      **！-** 添加注释。
 
-     **!DOCTYPE**来添加文档类型。
+     **!DOCTYPE**添加文档类型。
 
-     **?** 用于添加处理指令。
+     **?** 若要添加的处理指令。
 
-     **联系人**添加根元素。
+     **请联系**添加根元素。
 
-3.  选择**联系人**从成员列表中和按**Enter**。
+3.  选择**联系人**成员列表然后按**Enter**。
 
      编辑器将添加开始标记 `<Contact` 并将光标置于元素名的后面。
 
-4.  按**选项卡**若要生成的 XML 数据`Contact`元素根据其架构信息。
+4.  按**选项卡**生成的 XML 数据`Contact`元素基于其架构信息。
 
 ## <a name="input"></a>输入
 
@@ -143,7 +142,7 @@ ms.locfileid: "34477673"
 
 ### <a name="output"></a>输出
 
- 以下是根据与 `Contact` 元素关联的架构信息生成的 XML 数据。 项标记为`bold`指定 XML 代码段中的可编辑字段。
+ 以下是根据与 `Contact` 元素关联的架构信息生成的 XML 数据。 项目标记为`bold`指定 XML 代码段中的可编辑字段。
 
 ```xml
 <Contact>
@@ -159,4 +158,4 @@ ms.locfileid: "34477673"
 ## <a name="see-also"></a>请参阅
 
 - [XML 代码段](../xml-tools/xml-snippets.md)
-- [如何： 使用 XML 代码段](../xml-tools/how-to-use-xml-snippets.md)
+- [如何：使用 XML 代码段](../xml-tools/how-to-use-xml-snippets.md)

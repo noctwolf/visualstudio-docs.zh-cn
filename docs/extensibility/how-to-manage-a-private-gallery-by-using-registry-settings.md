@@ -1,9 +1,6 @@
 ---
-title: 如何： 通过使用注册表设置管理专用库 |Microsoft Docs
-ms.custom: ''
+title: 如何：通过使用注册表设置管理专用库 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSIX private galleries, managing
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2351c048576d6cf0e93515df8bdce34eef09bfc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d81594265f19eed0530aaeb06aebc777630bfbf7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854658"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986968"
 ---
-# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>如何： 使用注册表设置管理专用库
+# <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>如何：使用注册表设置管理专用库
 如果你是管理员或独立 Shell 扩展开发人员，您可以控制对控件、 模板和工具在 Visual Studio 库、 示例库或专用库的访问。 若要使库可用或不可用，请创建 *.pkgdef*文件，用于描述已修改的注册表项和其值。  
   
 ## <a name="manage-private-galleries"></a>管理专用库  
@@ -29,7 +26,7 @@ ms.locfileid: "49854658"
   
 ```  
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
+@={URI}  (REG_SZ)  
 Disabled=0 | 1 (DWORD)  
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
 Protocol=Atom Feed|Sharepoint (REG_SZ)  
@@ -41,9 +38,9 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
  `Repositories`键是指要启用或禁用库。 Visual Studio 库和示例库使用以下存储库的 Guid:  
   
-- Visual Studio 库： 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Visual Studio 库：0F45E408-7995-4375-9485-86B8DB553DC9  
   
-- 示例库： AEB9CB40-D8E6-4615-B52C-27E307F8506C  
+- 示例库：AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
   `Disabled`值是可选的。 默认情况下，启用了库。  
   

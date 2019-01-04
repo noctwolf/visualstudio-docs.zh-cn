@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式搜索后还原选定内容
-ms.custom: ''
+title: 如何：以编程方式搜索后还原选定内容
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e714773ec000f2f46872f5c60429f313e1f6310
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae27f4e24ac367741bcdf2dfa2bae8598c6c7d99
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891149"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865604"
 ---
-# <a name="how-to-programmatically-restore-selections-after-searches"></a>如何： 以编程方式搜索后还原选定内容
+# <a name="how-to-programmatically-restore-selections-after-searches"></a>如何：以编程方式搜索后还原选定内容
   如果您查找和替换文档中的文本，可能想要完成搜索后还原用户的原选定内容。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -55,9 +52,7 @@ ms.locfileid: "49891149"
  [!code-csharp[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#82)]  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式搜索和替换文档中的文本](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [如何： 以编程方式在 Word 中设置搜索选项](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [如何： 以编程方式遍历在文档中找到的项](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [如何：以编程方式搜索和替换文档中的文本](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [如何：以编程方式在 Word 中设置搜索选项](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [如何：以编程方式遍历在文档中找到的项](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

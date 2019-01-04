@@ -1,9 +1,6 @@
 ---
 title: SccPopulateList 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccPopulateList
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73cc3886fe486498f7d0fbe89d0b68cf873c9d0b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b41cea5b06022764e2f05ddd32f1ed476934f691
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903564"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887771"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函数
 此函数可更新特定的源控制命令的文件的列表，并提供所有给定文件的源代码管理状态。  
@@ -68,7 +65,7 @@ SCCRTN SccPopulateList (
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|成功。|  
 |SCC_E_NONSPECIFICERROR|非特定故障。|  

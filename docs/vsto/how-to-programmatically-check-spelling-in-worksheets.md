@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式检查工作表中的拼写
-ms.custom: ''
+title: 如何：以编程方式检查工作表中的拼写
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3d08548d68a413dadd662b89b49e059bdef84a1f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ea589f30c026ddf946cb43811818b54d3df9b2e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670445"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899965"
 ---
-# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>如何： 以编程方式检查工作表中的拼写
+# <a name="how-to-programmatically-check-spelling-in-worksheets"></a>如何：以编程方式检查工作表中的拼写
   可以通过编程方式在工作表中检查单词的拼写。 如果工作表中存在任何拼写错误的单词，则“拼写”  对话框会自动出现。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -46,8 +43,6 @@ ms.locfileid: "35670445"
   
 ## <a name="see-also"></a>请参阅  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以编程方式运行 Excel 计算](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
+ [如何：以编程方式运行 Excel 计算](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

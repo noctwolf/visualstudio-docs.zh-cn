@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式从工作簿中删除工作表
-ms.custom: ''
+title: 如何：以编程方式从工作簿中删除工作表
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 73c501d545f76012b63bde291001b38c214c3eb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7254ba703c0e25d37dd3582d4443a6bdf1653a96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843380"
 ---
-# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>如何： 以编程方式从工作簿中删除工作表
+# <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>如何：以编程方式从工作簿中删除工作表
   可以删除工作簿中的任意工作表。 若要删除工作表，请使用该工作表主机项或通过使用工作簿的表集合访问该工作表。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -39,7 +36,7 @@ ms.locfileid: "49950220"
 > - Excel 2010 工作簿  
 > - Excel 2010 模板  
 > 
->   如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Excel**程序集，然后必须使用该程序集的类来打开工作簿或删除工作表。 有关详细信息，请参阅[如何： 通过主互操作程序集的目标 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Excel 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189585)。  
+>   如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Excel**程序集，然后必须使用该程序集的类来打开工作簿或删除工作表。 有关更多信息，请参见[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Excel 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189585)。  
   
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>使用工作表主机项删除工作表  
   
@@ -58,7 +55,7 @@ ms.locfileid: "49950220"
   下面的代码引用的索引号的表，从而删除该工作表从工作簿**表**集合。 此代码假定以编程方式创建了一个新工作表。  
   
 > [!IMPORTANT]  
->  如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Excel**程序集，然后必须使用该程序集的类来打开工作簿或删除工作表。 有关详细信息，请参阅[如何： 通过主互操作程序集的目标 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Excel 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189585)。  
+>  如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Excel**程序集，然后必须使用该程序集的类来打开工作簿或删除工作表。 有关更多信息，请参见[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Excel 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189585)。  
   
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 工作簿的表集合删除工作表  
   
@@ -69,12 +66,10 @@ ms.locfileid: "49950220"
   
 ## <a name="see-also"></a>请参阅  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以编程方式隐藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
- [如何： 以编程方式移动工作簿内的工作表](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
- [如何： 以编程方式选择工作表](../vsto/how-to-programmatically-select-worksheets.md)   
- [如何： 以编程方式将新工作表添加到工作簿](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
+ [如何：以编程方式隐藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [如何：以编程方式移动工作簿内的工作表](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)   
+ [如何：以编程方式选择工作表](../vsto/how-to-programmatically-select-worksheets.md)   
+ [如何：以编程方式将新工作表添加到工作簿](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)   
  [工作表主机项](../vsto/worksheet-host-item.md)   
  [对 Office 项目中的对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
-  
-  

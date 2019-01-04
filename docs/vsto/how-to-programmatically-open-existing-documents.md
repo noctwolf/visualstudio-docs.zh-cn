@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式打开现有文档
-ms.custom: ''
+title: 如何：以编程方式打开现有文档
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd9e120283c392978a21fa9f796f9eed5e3dab31
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 2163ddc7db3f0fbcf32abaa8c845b3838e9d2c98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258718"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932150"
 ---
-# <a name="how-to-programmatically-open-existing-documents"></a>如何： 以编程方式打开现有文档
+# <a name="how-to-programmatically-open-existing-documents"></a>如何：以编程方式打开现有文档
   <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法打开指定的完全限定的路径和文件名称的现有 Microsoft Office Word 文档。 此方法返回<xref:Microsoft.Office.Interop.Word.Document>表示打开的文档。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -48,8 +45,6 @@ ms.locfileid: "35258718"
 -   名为的文档*NewDocument.doc*必须存在于一个名为目录*测试*在驱动器 c。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式创建新的文档](../vsto/how-to-programmatically-create-new-documents.md)   
- [如何： 以编程方式关闭文档](../vsto/how-to-programmatically-close-documents.md)   
+ [如何：以编程方式创建新的文档](../vsto/how-to-programmatically-create-new-documents.md)   
+ [如何：以编程方式关闭文档](../vsto/how-to-programmatically-close-documents.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  
-  

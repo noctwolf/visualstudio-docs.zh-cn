@@ -11,13 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6cfbe7c83db57bbeb24089e7d3e794caaeca9d81
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 284a789a7ba4e7fec1a87723c51a32f650f6d843
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967410"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987961"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：向快捷菜单中添加命令
 可以将菜单命令添加到域特定语言 (DSL)，以便用户可以执行特定于 DSL 的任务。 当用户右键单击关系图时，这些命令将显示在上下文（快捷）菜单上。 你可以定义某个命令，以使它仅在特定情况下才显示在菜单中。 例如，可以使该命令仅在用户单击特定类型的元素或处于特定状态下的元素时才可见。
@@ -33,7 +32,7 @@ ms.locfileid: "50967410"
    有关示例，请参阅[可视化和建模 SDK 网站](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
 > [!NOTE]
->  通过在 CommandSet.cs 中重写方法，还可以修改某些现有命令（例如剪切、粘贴、全选和打印）的行为。 有关详细信息，请参阅[如何： 修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+>  通过在 CommandSet.cs 中重写方法，还可以修改某些现有命令（例如剪切、粘贴、全选和打印）的行为。 有关更多信息，请参见[如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
 ## <a name="defining-a-command-using-mef"></a>使用 MEF 定义命令
  托管扩展框架 (MEF) 提供了一种定义关系图菜单上的菜单命令的替代方法。 它的主要用途是允许你或其他各方扩展 DSL。 用户可以选择只安装 DSL 或同时安装 DSL 和扩展。 但是，完成在 DSL 上启用 MEF 的初始工作后，MEF 还将减少定义快捷菜单命令的工作量。
@@ -240,7 +239,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 ### <a name="define-what-the-command-does"></a>定义命令可执行操作
  对于每个命令，定义在用户单击菜单命令时执行所需操作的 `OnMenu...` 方法。
 
- 如果要对模型元素进行更改，则必须在事务内执行此操作。 有关详细信息，请参阅[如何： 修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+ 如果要对模型元素进行更改，则必须在事务内执行此操作。 有关更多信息，请参见[如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
  在此示例中，`ClassShape`、`ModelClass` 和 `Comment` 是在 DSL 中定义的类型，该 DSL 派生自类关系图 DSL 模板。
 
@@ -281,7 +280,7 @@ private void OnMenuMyContextMenuCommand(object sender, EventArgs e)
 }
 ```
 
- 有关如何在模型中，导航到对象以及有关如何创建对象和链接的详细信息，请参阅[如何： 修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+ 有关如何在模型中，导航到对象以及有关如何创建对象和链接的详细信息，请参阅[如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
 ### <a name="register-the-command"></a>注册命令
  在 C# 中重复在 CommandSet.vsct 的“符号”部分中进行的 GUID 和 ID 值的声明：
@@ -362,6 +361,6 @@ protected override IList<MenuCommand> GetMenuCommands()
 - [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)
-- [示例代码： 电路图](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [示例代码：线路关系图](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

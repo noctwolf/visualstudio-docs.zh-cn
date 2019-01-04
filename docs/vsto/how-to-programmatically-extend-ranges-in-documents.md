@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式扩展文档中的范围
-ms.custom: ''
+title: 如何：以编程方式扩展文档中的范围
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 810f65cbb021845c4fa659cd785e83e8c979376d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f6bfb4979285753a5dd15dd4fe4dabfab013309
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888666"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919659"
 ---
-# <a name="how-to-programmatically-extend-ranges-in-documents"></a>如何： 以编程方式扩展文档的范围
+# <a name="how-to-programmatically-extend-ranges-in-documents"></a>如何：以编程方式扩展文档中的范围
   定义 Microsoft Office Word 文档中的 <xref:Microsoft.Office.Interop.Word.Range> 对象后，可以通过使用 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法来更改其起点和终点。 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>并<xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A>方法不采用相同的两个自变量*单元*并*计数*。 *计数*参数是要移动的单位数和*单元*参数可以是下列任一<xref:Microsoft.Office.Interop.Word.WdUnits>值：  
   
 - <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>  
@@ -52,7 +49,7 @@ ms.locfileid: "49888666"
   
 ## <a name="to-extend-a-range"></a>若要扩展范围  
   
-1.  定义字符的范围。 有关详细信息，请参阅[如何： 以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)。  
+1.  定义字符的范围。 有关更多信息，请参见[如何：以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)。  
   
      下面的代码示例可用于文档级自定义项。  
   
@@ -93,9 +90,8 @@ ms.locfileid: "49888666"
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#38](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#38)]  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式重置 Word 文档中的范围](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [如何： 以编程方式折叠范围或在文档中的选定内容](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [如何： 以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [如何： 以编程方式检索范围中的开始和结束字符](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [如何： 以编程方式创建范围时排除段落标记](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  
-  
+ [如何：以编程方式重置 Word 文档中的范围](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [如何：以编程方式折叠范围或在文档中的选定内容](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [如何：以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何：以编程方式检索范围中的开始和结束字符](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [如何：以编程方式排除段落标记创建范围时](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)  

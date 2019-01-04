@@ -1,9 +1,6 @@
 ---
 title: 工具窗口中添加快捷菜单 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - context menus, adding to tool windows
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5567fd2fe72b8fcc102c8609ac0d155f78141a9
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: fa350ff37a5073a5def0140db694b53c9fdf5067
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078610"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909796"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>工具窗口中添加快捷菜单
 本演练将在工具窗口的快捷菜单。 快捷菜单，在用户右键单击按钮、 文本框中或窗口背景时，将显示一个菜单。 快捷菜单上的命令的行为与其他菜单或工具栏上的命令相同。 若要支持快捷方式菜单上，指定在 *.vsct*文件并将其显示在响应鼠标右键单击。  
@@ -119,10 +116,10 @@ ms.locfileid: "39078610"
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
-    public const int ColorMenu = 0x1000;  
-    public const int cmdidRed = 0x102;  
-    public const int cmdidYellow = 0x103;  
-    public const int cmdidBlue = 0x104;  
+    public const int ColorMenu = 0x1000;  
+    public const int cmdidRed = 0x102;  
+    public const int cmdidYellow = 0x103;  
+    public const int cmdidBlue = 0x104;  
     ```  
   
      这些是在的 Symbols 部分中定义的相同命令 Id *ShortcutMenuPackage.vsct*文件。 此处的上下文组不包含因为仅在需要它 *.vsct*文件。  
@@ -211,7 +208,7 @@ ms.locfileid: "39078610"
 7.  在中*ShortcutMenuControl.xaml.cs*，添加事件处理程序的存根。  
   
     ```csharp  
-    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
+    private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
     {  
     . . .  
     }  

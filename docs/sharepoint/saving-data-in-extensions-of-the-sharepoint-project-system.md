@@ -1,9 +1,6 @@
 ---
 title: 将数据保存在 SharePoint 项目系统的扩展 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint project items, saving string data
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74228b5259b733c91397eb1b40a2485daea8b79e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c7f0210a24df180e93aa8772f08b91e7312f5ccc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118506"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829244"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>将数据保存在 SharePoint 项目系统的扩展
   扩展 SharePoint 项目系统时，可以保存字符串数据的 SharePoint 项目关闭后仍然存在。 数据是与特定项目项或项目本身通常相关联。  
@@ -30,7 +27,7 @@ ms.locfileid: "37118506"
 ## <a name="save-data-that-is-associated-with-a-project-item"></a>保存与项目项关联的数据
  如果具有与特定的 SharePoint 项目项，如您将添加到项目项属性的值相关联的数据可以保存到数据 *.spdata*项目项文件。 若要执行此操作，请使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>属性的<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>对象。 添加到此属性的数据保存在**ExtensionData**中的元素 *.spdata*项目项文件。 有关详细信息，请参阅[ExtensionData 元素](../sharepoint/extensiondata-element.md)。  
   
- 下面的代码示例演示如何使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>属性将保存在自定义的 SharePoint 项目项类型中定义的字符串属性的值。 若要查看此上下文中的一个更大示例的示例，请参阅[如何： 将属性添加到自定义的 SharePoint 项目项类型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。  
+ 下面的代码示例演示如何使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>属性将保存在自定义的 SharePoint 项目项类型中定义的字符串属性的值。 若要查看此上下文中的一个更大示例的示例，请参阅[如何：将属性添加到自定义的 SharePoint 项目项类型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。  
   
  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#14)]
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#14)]  
@@ -43,7 +40,7 @@ ms.locfileid: "37118506"
 -   如果你想要仅对当前具有开发人员在 Visual Studio 中打开 SharePoint 项目可用的数据，将数据保存到项目用户选项文件。 此文件是不通常签入到源代码管理数据库，因此此文件中的数据不可用的其他开发人员签出该项目。  
   
 ### <a name="save-data-to-the-project-file"></a>将数据保存到项目文件
- 若要将数据保存到项目文件，将转换<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>对象传递给<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>对象，以及如何将<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法。 下面的代码示例演示如何使用此方法将保存到项目文件的项目属性的值。 若要查看此示例中的上下文中更大的示例，请参阅[如何： 将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。  
+ 若要将数据保存到项目文件，将转换<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>对象传递给<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>对象，以及如何将<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法。 下面的代码示例演示如何使用此方法将保存到项目文件的项目属性的值。 若要查看此示例中的上下文中更大的示例，请参阅[如何：将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。  
   
  [!code-vb[SpExt_SPCustomPrjProperty#3](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#3)]
  [!code-csharp[SpExt_SPCustomPrjProperty#3](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#3)]  
@@ -51,7 +48,7 @@ ms.locfileid: "37118506"
  有关转换的详细信息<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>对象与其他类型中的 Visual Studio 自动化对象模型或集成对象模型，请参阅[SharePoint 项目系统类型与其他 Visual Studio 项目类型之间转换](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).  
   
 ### <a name="save-data-to-the-project-user-option-file"></a>将数据保存到项目用户选项文件
- 若要将数据保存到项目用户选项文件，请使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A>属性的<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>对象。 下面的代码示例演示如何使用此属性将保存到项目用户选项文件的项目属性的值。 若要查看此示例中的上下文中更大的示例，请参阅[如何： 将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。  
+ 若要将数据保存到项目用户选项文件，请使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A>属性的<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>对象。 下面的代码示例演示如何使用此属性将保存到项目用户选项文件的项目属性的值。 若要查看此示例中的上下文中更大的示例，请参阅[如何：将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。  
   
  [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
  [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]  
@@ -60,4 +57,3 @@ ms.locfileid: "37118506"
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   
  [将自定义数据与 SharePoint 工具扩展相关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)   
  [SharePoint 项目系统类型与其他 Visual Studio 项目类型之间转换](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)  
-  

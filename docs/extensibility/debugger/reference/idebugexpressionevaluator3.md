@@ -1,9 +1,6 @@
 ---
-title: IDebugExpressionEvaluator3 |Microsoft 文档
-ms.custom: ''
+title: IDebugExpressionEvaluator3 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugExpressionEvaluator3 interface
@@ -13,16 +10,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2349924dd2f762638dc6ea08b40a71776b9605a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0acf22666546ca7ef960c6da67728aed0a0b8735
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122764"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837675"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，已弃用这种方式实施表达式计算器。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  增强型的分析器目录树表示的表达式计算器 (EE)。  
   
@@ -36,15 +33,15 @@ IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2
  此版本的分析器将传递符号提供程序和评估的帧的地址。  
   
 ## <a name="methods"></a>方法  
- 除了上的方法[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)接口，此接口实现以下方法：  
+ 除了上的方法[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)接口，此接口实现了以下方法：  
   
 |方法|描述|  
 |------------|-----------------|  
-|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|将表达式字符串转换为给定符号提供程序和评估的帧的地址的已分析表达式。|  
+|[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|将一个表达式字符串转换为给定的符号提供程序和评估的帧的地址的已分析表达式。|  
   
 ## <a name="requirements"></a>要求  
- 标头： Ee.h  
+ 标头：Ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll

@@ -1,9 +1,6 @@
 ---
 title: 扩展 SharePoint 项目项 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,31 +14,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b83d5f92a54d58aae2d4c7860e6648920615d63f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d02871b991c999c490aac8aaeafc677711c95266
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823627"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959954"
 ---
 # <a name="extend-sharepoint-project-items"></a>扩展 SharePoint 项目项
   创建项目项扩展，如果想要将功能添加到已安装 Visual Studio 中的 SharePoint 项目项的类型。 例如，可以创建扩展的内置**事件接收器**或**列表定义**项目项在 Visual Studio 中，也可以创建自定义项目项类型的扩展。 此外可以创建适用于所有类型的 SharePoint 项目项的扩展。  
   
 ## <a name="tasks-for-extending-sharepoint-project-items"></a>扩展 SharePoint 项目项的任务
- 若要扩展的项目项，生成的 Visual Studio 扩展程序集实现<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>接口。 有关详细信息，请参阅[如何： 创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
+ 若要扩展的项目项，生成的 Visual Studio 扩展程序集实现<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>接口。 有关更多信息，请参见[如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
   
  项目项扩展时，还可以对项目项添加了以下功能：  
   
-- 将快捷菜单项添加到项目项。 打开中的项目项的快捷菜单时显示的菜单项**解决方案资源管理器**。 通过右键单击项目项或选择它，然后选择打开快捷菜单**Shift**+**F10**密钥。 有关详细信息，请参阅[如何： 将快捷菜单项添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)。  
+- 将快捷菜单项添加到项目项。 打开中的项目项的快捷菜单时显示的菜单项**解决方案资源管理器**。 通过右键单击项目项或选择它，然后选择打开快捷菜单**Shift**+**F10**密钥。 有关更多信息，请参见[如何：将快捷菜单项添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)。  
   
-- 将自定义属性添加到项目项。 属性将出现在**属性**窗口中选择中的项目项时**解决方案资源管理器**。 有关详细信息，请参阅[如何： 将属性添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)。  
+- 将自定义属性添加到项目项。 属性将出现在**属性**窗口中选择中的项目项时**解决方案资源管理器**。 有关更多信息，请参见[如何：将属性添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)。  
   
-  有关演示如何创建、 部署和测试项目项扩展的演练，请参阅[演练： 扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)。  
+  有关演示如何创建、 部署和测试项目项扩展的演练，请参阅[演练：扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)。  
   
 ## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>了解项目项扩展和项目项实例之间的关系
  在创建项目项扩展，Visual Studio 将加载您的扩展插件关联的类型的项目项添加到 SharePoint 项目时。 例如，如果创建的扩展**事件接收器**项目项，当用户将添加 Visual Studio 加载你的扩展**事件接收器**项目项的项目。 Visual Studio 使用您的扩展插件的同一个实例关联的项目项类型的所有实例。 在上一示例中，如果用户将添加第二个**事件接收器**项目到项目的项，您的扩展插件的同一个实例使用自定义第二个项目项。  
   
- 若要访问要扩展的项目项类型的特定实例，请处理之一<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents>的事件*projectItemType*参数的实现中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>方法。 例如，若要确定要扩展的类型的项目项添加到项目时，处理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded>事件。 有关详细信息，请参阅[如何： 创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
+ 若要访问要扩展的项目项类型的特定实例，请处理之一<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents>的事件*projectItemType*参数的实现中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>方法。 例如，若要确定要扩展的类型的项目项添加到项目时，处理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded>事件。 有关更多信息，请参见[如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
   
 ## <a name="identifiers-for-sharepoint-project-items"></a>SharePoint 项目项的标识符
  每个 SharePoint 项目项都有相应的字符串标识符。 如果你想要执行以下任务，您必须知道项目项的标识符：  
@@ -68,9 +65,8 @@ ms.locfileid: "49823627"
 |工作流关联窗体|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|  
   
 ## <a name="see-also"></a>请参阅
- [如何： 创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [如何： 将快捷菜单项添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
- [如何： 将属性添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
- [演练： 扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
+ [如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [如何：将快捷菜单项添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
+ [如何：将属性添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
+ [演练：扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)  
-  

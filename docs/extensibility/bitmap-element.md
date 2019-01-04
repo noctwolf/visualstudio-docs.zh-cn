@@ -1,9 +1,6 @@
 ---
 title: Bitmap 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 624a8e4a47e7043c2e3726f23b9d2a94defdea32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbdd61e22a392309c45005c0e183704c6b84040c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846650"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879366"
 ---
 # <a name="bitmap-element"></a>Bitmap 元素
 定义位图。 从资源或从文件加载位图。  
@@ -37,10 +34,10 @@ ms.locfileid: "49846650"
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必须的。 GUID ID 的命令标识符的 GUID。<br /><br /> 位图的 guid 属性不与任何 VSPackage 或其他命令组相关联。  它应是唯一的位图定义并不用于任何其他用途。|  
+|guid|必需。 GUID ID 的命令标识符的 GUID。<br /><br /> 位图的 guid 属性不与任何 VSPackage 或其他命令组相关联。  它应是唯一的位图定义并不用于任何其他用途。|  
 |resID|GUID ID 的命令标识符的 ID。 ResID 或 href 属性是必需的。<br /><br /> ResID 属性是一个整数资源 ID，用于确定是要在命令表合并期间加载的位图条。  加载的命令表时，将从相同模块的资源加载指定的资源 ID 的位图。|  
 |usedList|所需 resID 属性是否存在。 位图条中选择可用的映像。|  
-|href|位图的路径。 ResID 或 href 属性是必需的。<br /><br /> 包含路径中搜索所指示的图像文件，生成的二进制文件中嵌入的。  在命令表合并，映像将复制并没有查找其他资源或负载是必需的。  如果 usedList 属性不存在，则该带中的所有映像。 **注意：** 可能中包括的几种格式之一提供的映像 *.bmp*， *.png*，并且 *.gif*。  早期版本的编译器不支持部分透明 alpha 信息的 32 位位图图像。 这些版本的解决方法是使用 *.png*格式。|  
+|href|位图的路径。 ResID 或 href 属性是必需的。<br /><br /> 包含路径中搜索所指示的图像文件，生成的二进制文件中嵌入的。  在命令表合并，映像将复制并没有查找其他资源或负载是必需的。  如果 usedList 属性不存在，则该带中的所有映像。 **注意：** 映像可能会提供中包括的几种格式之一 *.bmp*， *.png*，并 *.gif*。  早期版本的编译器不支持部分透明 alpha 信息的 32 位位图图像。 这些版本的解决方法是使用 *.png*格式。|  
 |条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  

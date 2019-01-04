@@ -1,9 +1,6 @@
 ---
-title: 属性窗口对象列表 |Microsoft 文档
-ms.custom: ''
+title: 属性窗口对象列表 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, object list
@@ -13,24 +10,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6b7d238f7ce64122ac18a52dab59afb063ce47e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5e014889613317f773a741b6e43e6f08e5494af5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130131"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868710"
 ---
 # <a name="properties-window-object-list"></a>属性窗口对象列表
-中的对象列表**属性**窗口是下拉列表，您可以将所选内容更改为一个或多个选择的 windows 中可用的其他对象。 选择在此列表中的不同对象触发调用<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A>以通知环境已选择新的对象。 中显示的信息**属性**窗口然后更改为显示与新选择的对象关联的属性。  
+中的对象列表**属性**窗口是下拉列表，您可以将所选内容更改为一个或多个所选的 windows 中可用的其他对象。 选择此列表中的不同对象从触发调用<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A>通知环境已选择一个新的对象。 中显示的信息**属性**窗口然后更改为显示与新选择的对象相关联的属性。  
   
 ## <a name="the-object-list"></a>对象列表  
  对象列表包含两个字段: （以粗体显示） 的对象名称和对象类型。  
   
- 以粗体显示的对象类型的左侧显示的对象名称检索从对象本身使用`Name`由提供属性<xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>接口。 <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>上的唯一方法<xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>，返回<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>为该接口的组件类。 **属性**窗口使用<xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>若要获取的组件类，显示为下拉列表中的对象名称的名称。  
+ 以粗体显示的对象类型的左边显示对象名称进行检索的对象本身使用`Name`属性提供的<xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>接口。 <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo.GetClassInfo%2A>则只能在<xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>，返回<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>为该接口的组件类。 **属性**窗口使用<xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>获取组件类，显示为下拉列表中的对象名称的名称。  
   
- 如果对象不具有`Name`对象列表的名称区域中不显示属性，一个名称。 如果你想在对象列表中显示的名称，可以向对象中添加一个 Name 属性。  
+ 如果对象不具有`Name`属性，名称未显示在对象列表的名称区域中。 如果想要显示对象列表中的名称，您可以将 Name 属性添加到对象。  
   
- 如果 COM 对象没有实现<xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>、**属性**窗口在左侧的列表显示代替对象名称的接口名称。  
+ 如果 COM 对象不实现<xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>，则**属性**窗口左侧和右侧的列表显示接口名称而不是对象名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展属性](../../extensibility/internals/extending-properties.md)

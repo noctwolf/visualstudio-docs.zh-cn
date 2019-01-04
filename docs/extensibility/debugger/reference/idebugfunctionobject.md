@@ -1,9 +1,6 @@
 ---
-title: IDebugFunctionObject |Microsoft 文档
-ms.custom: ''
+title: IDebugFunctionObject |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugFunctionObject
@@ -15,33 +12,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7281be40e7559171c82da81d89f717bea3c8ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d352870800a7b5e7fc1408d607a24f616b0f22d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117883"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954164"
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，已弃用这种方式实施表达式计算器。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 此接口表示一个函数。  
+ 此接口表示的函数。  
   
 ## <a name="syntax"></a>语法  
   
 ```  
-IDebugFunctionObject : IDebugObject  
+IDebugFunctionObject : IDebugObject  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
+## <a name="notes-for-implementers"></a>实施者的说明  
  表达式计算器实现此接口来表示一个函数。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  此接口是专用化[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口，并使用获取[QueryInterface](/cpp/atl/queryinterface)上`IDebugObject`接口。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
- 除了从继承的方法[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)、`IDebugFunctionObject`接口公开以下方法。  
+ 除了继承的方法之外[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)，则`IDebugFunctionObject`接口公开以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  
@@ -50,18 +47,18 @@ IDebugFunctionObject : IDebugObject
 |[CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)|使用没有构造函数创建的对象。|  
 |[CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)|创建一个数组对象。|  
 |[CreateStringObject](../../../extensibility/debugger/reference/idebugfunctionobject-createstringobject.md)|创建一个字符串对象。|  
-|[评估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)|调用函数并返回一个对象作为生成的值。|  
+|[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)|调用函数，并返回结果值作为对象。|  
   
 ## <a name="remarks"></a>备注  
- 此接口允许表达式计算器才能表示分析树中的函数。 `Create`中此接口的方法用于构造对象表示对方法的输入的参数。 然后可以通过调用执行函数[评估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)方法，返回一个对象，该对象表示函数的返回值。  
+ 此接口使表达式计算器来表示分析树中的函数。 `Create`此接口中的方法用于构造对象表示的输入的参数的方法。 然后可以通过调用执行函数[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)方法，它将返回一个表示该函数的返回值的对象。  
   
 ## <a name="requirements"></a>要求  
  标头： ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
- [表达式评估接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+## <a name="see-also"></a>请参阅  
+ [表达式计算接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

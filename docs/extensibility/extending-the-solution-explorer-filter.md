@@ -1,9 +1,6 @@
 ---
 title: 扩展的解决方案资源管理器筛选器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Solution Explorer, extending
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf43243abc361df6c5b32b0e71e966c61a501b52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3a5702a5ab42de90363328f0118b89cdc94d67f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498783"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830292"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>扩展解决方案资源管理器筛选器
 您可以扩展**解决方案资源管理器**筛选功能，以显示或隐藏不同的文件。 例如，可以创建筛选器，显示仅 C# 类工厂中的文件**解决方案资源管理器**，如本演练中所示。  

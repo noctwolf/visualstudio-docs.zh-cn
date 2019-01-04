@@ -1,9 +1,6 @@
 ---
 title: 如何：将 ListObject 列映射到数据
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 64c098fe1c1d4695feb9addd8e5161175dc09dc9
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 508a0fa8df58e70eb216f722ee96395c7a9c21ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899978"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>如何：将 ListObject 列映射到数据
   将 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件绑定到 <xref:System.Data.DataTable>时，可能不希望显示列表中的所有列，或可能具有未绑定到数据的特定列。 调用 <xref:Microsoft.Office.Tools.Excel.ListObject> 方法时，可以映射希望出现在 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 中的列。  
@@ -69,5 +66,3 @@ ms.locfileid: "53646833"
  [如何：用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)   
  [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject 控件](../vsto/listobject-control.md)  
-  
-  

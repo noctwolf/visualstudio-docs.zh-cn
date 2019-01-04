@@ -1,9 +1,6 @@
 ---
-title: 如何： 访问内置的字体和配色方案 |Microsoft Docs
-ms.custom: ''
+title: 如何：访问内置的字体和配色方案 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
@@ -15,14 +12,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1e579ab9e42ffd7448e3c0dbe62766c058e6f01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911247"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874597"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>如何： 访问内置的字体和颜色 ccheme
+# <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>如何：访问内置的字体和颜色 ccheme
 Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关联的字体和颜色的方案。 您可以访问通过此方案<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口。
 
  若要使用内置的字体和颜色方案，VSPackage 必须：
@@ -61,7 +58,7 @@ Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关�
     |name|类型|数据|描述|
     |----------|----------|----------|-----------------|
     |类别|REG_SZ|GUID|标识包含股票的字体和配色方案的类别的任意 GUID。|
-    |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> 此 GUID 可供所有使用默认的字体和颜色配置的 Vspackage。|
+    |package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> 此 GUID 可供所有使用默认的字体和颜色配置的 Vspackage。|
     |NameID|REG_DWORD|Id|在 VSPackage 中的可本地化的类别名称的资源 ID。|
     |ToolWindowPackage|REG_SZ|GUID|VSPackage 实现的 GUID<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口。|
 

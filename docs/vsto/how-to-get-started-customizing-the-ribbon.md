@@ -1,9 +1,6 @@
 ---
 title: 如何：开始自定义功能区
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e52efc4cfd1252ff908785195df5c06b8bc90baa
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: c393633477debd18857da4296d43b3832e343434
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856821"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>如何：开始自定义功能区
   若要自定义 Microsoft Office 应用程序的功能区，请添加**功能区 （可视化设计器）** 或**功能区 (XML)** 到 Office 项目的项。  
@@ -78,5 +75,3 @@ ms.locfileid: "53647144"
  [功能区 XML](../vsto/ribbon-xml.md)   
  [演练：使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [演练：使用功能区 XML 创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
-  
-  

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 74172b6e7f03d7e3baef329f053fc4a83ee6ae28
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 749c75af9056bc50689c47ca9ef8de037dfd71e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967384"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908639"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、类和关系
 域特定语言 (DSL) 是由其 DSL 定义文件定义，以及你可以编写任何自定义程序代码。 DSL 解决方案中的程序代码的大多数生成的此文件。
@@ -54,9 +53,9 @@ ms.locfileid: "50967384"
 
  ![嵌入关系和引用关系](../modeling/media/music_classes.png)
 
- 图中显示了四个域类： 音乐、 相册、 艺术家和歌曲。 域类定义域属性，例如名称、 标题和等等。 在实例模型中，关系图上显示的其中一些属性的值。
+ 该图显示了四个域类：音乐、 相册、 艺术家和歌曲。 域类定义域属性，例如名称、 标题和等等。 在实例模型中，关系图上显示的其中一些属性的值。
 
- 在类之间是域关系： MusicHasAlbums、 MusicHasArtists、 AlbumbHasSongs 和 ArtistAppearedOnAlbums。 这些关系具有重数 1..1，例如 0..*。 例如，必须与通过 AlbumHasSongs 关系恰好一个唱片集相关的所有首歌。 每个唱片集可以有任意数量的歌曲。
+ 在类之间是域关系：MusicHasAlbums、 MusicHasArtists、 AlbumbHasSongs 和 ArtistAppearedOnAlbums。 这些关系具有重数 1..1，例如 0..*。 例如，必须与通过 AlbumHasSongs 关系恰好一个唱片集相关的所有首歌。 每个唱片集可以有任意数量的歌曲。
 
 ### <a name="rearranging-the-dsl-definition-diagram"></a>重新排列的 DSL 定义关系图
  请注意，域类可以在 DSL 定义关系图中上, 出现多次，唱片集一样在此图中。 始终有一个主视图中，最可能有一些*引用*视图。

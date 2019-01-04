@@ -1,9 +1,6 @@
 ---
 title: 为 SharePoint 创建 Web 部件 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
@@ -18,8 +15,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- VB
-- CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
@@ -28,15 +23,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0cbc26a198cace58a957f3d3aaf25457cf457256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906034"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879129"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>为 SharePoint 创建 web 部件
-  通过使用 web 部件，可以使用浏览器中修改内容、 外观和行为的 SharePoint 站点页面。 Web 部件是在 web 部件页中运行的服务器端控件： 它们是在 SharePoint 网站显示的页的构建基块。 请参阅[构建基块： Web 部件](http://go.microsoft.com/fwlink/?LinkID=182097)。  
+  通过使用 web 部件，可以使用浏览器中修改内容、 外观和行为的 SharePoint 站点页面。 Web 部件是在 web 部件页中运行的服务器端控件： 它们是在 SharePoint 网站显示的页的构建基块。 请参阅[构建基块：Web 部件](http://go.microsoft.com/fwlink/?LinkID=182097)。  
   
  可以创建和使用模板从 Visual Studio 调试在 SharePoint 站点上的 web 部件。  
   
@@ -54,10 +49,10 @@ ms.locfileid: "49906034"
 |.webpart 文件|提供 SharePoint web 部件库中显示 web 部件所需的信息。|  
 |代码文件|包含的方法，将控件添加到 web 部件和生成 web 部件中的自定义内容。|  
   
- 有关详细信息，请参阅[如何： 创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)。  
+ 有关更多信息，请参见[如何：创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)。  
   
 ### <a name="visual-web-part-item"></a>可视 web 部件项
- 可视 web 部件是您在 Visual Studio 中使用 Visual Web Developer 设计器创建的 web 部件。 可视 web 部件功能与任何其他 web 部件相同。 若要添加到 web 部件控件，如按钮和文本框中，您将代码添加到 XML 文件。 但是，您将控件添加到可视 web 部件拖动或复制到 web 部件上从 Visual Studio**工具箱**。 在设计器在 XML 文件中然后生成所需的代码。 请参阅[如何： 使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。  
+ 可视 web 部件是您在 Visual Studio 中使用 Visual Web Developer 设计器创建的 web 部件。 可视 web 部件功能与任何其他 web 部件相同。 若要添加到 web 部件控件，如按钮和文本框中，您将代码添加到 XML 文件。 但是，您将控件添加到可视 web 部件拖动或复制到 web 部件上从 Visual Studio**工具箱**。 在设计器在 XML 文件中然后生成所需的代码。 请参阅[操作说明：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。  
   
 ## <a name="sharepoint-controls"></a>SharePoint 控件
  Visual Studio 提供了一些控件，用于创建 SharePoint 页，如应用程序页。 这些控件显示在**工具箱**下**SharePoint 控件**。 这些控件的功能派生[Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315)命名空间，其中包含 SharePoint 站点和列表页面所使用的 ASP.NET 服务器控件。  
@@ -115,10 +110,9 @@ ms.locfileid: "49906034"
   
 |标题|描述|  
 |-----------|-----------------|  
-|[如何： 创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)|演示如何创建 web 部件的 SharePoint 页。|  
-|[如何： 使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|演示如何通过使用一个可视化设计图面为 SharePoint 创建 web 部件。|  
-|[如何： 创建 SharePoint 应用程序页或 web 部件的用户控件](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|演示如何创建可由应用程序页和在 SharePoint 中运行的 web 部件使用的自定义可重用控件。|  
-|[演练： 创建 SharePoint web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|介绍如何为 SharePoint 设计 web 部件。|  
-|[演练： 使用设计器为 SharePoint 创建 web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|介绍如何通过将控件拖动到可视化设计图面为 SharePoint 设计 web 部件。|  
-|[演练： 创建显示 SharePoint OData 的 Silverlight web 部件](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|介绍如何为承载 Silverlight 应用程序并显示来自 SharePoint 列表数据的 SharePoint 设计 web 部件。|  
-  
+|[如何：创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)|演示如何创建 web 部件的 SharePoint 页。|  
+|[如何：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|演示如何通过使用一个可视化设计图面为 SharePoint 创建 web 部件。|  
+|[如何：创建 SharePoint 应用程序页或 web 部件的用户控件](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|演示如何创建可由应用程序页和在 SharePoint 中运行的 web 部件使用的自定义可重用控件。|  
+|[演练：为 SharePoint 创建 web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|介绍如何为 SharePoint 设计 web 部件。|  
+|[演练：使用设计器为 SharePoint 创建 web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|介绍如何通过将控件拖动到可视化设计图面为 SharePoint 设计 web 部件。|  
+|[演练：创建显示 SharePoint OData 的 Silverlight web 部件](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|介绍如何为承载 Silverlight 应用程序并显示来自 SharePoint 列表数据的 SharePoint 设计 web 部件。|  

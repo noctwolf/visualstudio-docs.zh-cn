@@ -1,13 +1,8 @@
 ---
-title: 如何： 创建 SharePoint Web 部件 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建 SharePoint Web 部件 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6437620b4215726ba48ea3234e37c76e77d21ebe
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 43d776a4031cabfd027c96105f3e71a93ea1c07f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118756"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858418"
 ---
-# <a name="how-to-create-a-sharepoint-web-part"></a>如何： 创建 SharePoint web 部件
-  可以创建并通过添加自定义 web 部件**Web 部件**向任何 SharePoint 项目项，然后编辑 web 部件或使用设计器的代码文件。 有关详细信息，请参阅[如何： 使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。  
+# <a name="how-to-create-a-sharepoint-web-part"></a>如何：创建 SharePoint web 部件
+  可以创建并通过添加自定义 web 部件**Web 部件**向任何 SharePoint 项目项，然后编辑 web 部件或使用设计器的代码文件。 有关更多信息，请参见[如何：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。  
   
 ### <a name="to-create-a-sharepoint-web-part"></a>若要创建一个 SharePoint web 部件
   
@@ -50,12 +45,10 @@ ms.locfileid: "37118756"
   
 7.  在代码文件中，向 <xref:System.Web.UI.Control.CreateChildControls%2A> 方法添加控件。  
   
-     有关示例，请参阅[演练： 创建 SharePoint web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)。  
+     有关示例，请参阅[演练：为 SharePoint 创建 web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)。  
   
 ## <a name="see-also"></a>请参阅
  [为 SharePoint 创建 web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [如何： 使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
- [演练： 创建 SharePoint web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
- [演练： 使用设计器为 SharePoint 创建 web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  
-  
-  
+ [如何：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
+ [演练：为 SharePoint 创建 web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)   
+ [演练：使用设计器为 SharePoint 创建 web 部件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)  

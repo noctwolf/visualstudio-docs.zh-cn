@@ -1,9 +1,6 @@
 ---
-title: 如何： 使用文本标记 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用文本标记 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - using text markers
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a3b766e4eacc04bbf4d4a8e4c022484d452954f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 825f567098d86a0f643de84eef395e5404d3b0f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820871"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895696"
 ---
-# <a name="how-to-use-text-markers"></a>如何： 使用文本标记
+# <a name="how-to-use-text-markers"></a>如何：使用文本标记
 文本标记可用于编辑<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>对象。  
   
 ## <a name="procedures"></a>过程  
@@ -57,6 +54,6 @@ ms.locfileid: "49820871"
   
 ## <a name="see-also"></a>请参阅  
  [文本标记中使用传统的 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
- [如何： 创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)   
- [如何： 实现错误标记](../extensibility/how-to-implement-error-markers.md)
+ [如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
+ [如何：创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)   
+ [如何：实现错误标记](../extensibility/how-to-implement-error-markers.md)

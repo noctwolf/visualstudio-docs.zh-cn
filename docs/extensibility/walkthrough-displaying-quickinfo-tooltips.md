@@ -1,9 +1,6 @@
 ---
-title: 演练： 显示 QuickInfo 工具提示 |Microsoft Docs
-ms.custom: ''
+title: 演练：显示快速信息工具提示 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6bc7f49abb808a22cb0f51c0c86e6c196856c205
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824174"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965799"
 ---
-# <a name="walkthrough-display-quickinfo-tooltips"></a>演练： 显示 QuickInfo 工具提示
+# <a name="walkthrough-display-quickinfo-tooltips"></a>演练：显示快速信息工具提示
 快速信息 IntelliSense 功能，用于显示方法签名，说明当用户将指针移到方法名称。 您可以通过定义的标识符来提供快速信息的说明，并创建要在其中显示内容的工具提示实现基于语言的功能，例如快速信息。 可以在语言服务的上下文中定义 QuickInfo 或可以定义自己的文件名称扩展和内容类型并显示快速信息只是该类型或可以为现有内容类型 （例如"text") 显示快速信息。 本演练演示如何显示快速信息的"text"内容类型。  
   
  当用户将指针移到方法名称，在本演练中的快速信息示例将显示工具提示。 此设计要求您实现这些四个接口：  
@@ -178,4 +175,4 @@ ms.locfileid: "49824174"
 4.  将指针移动一个出现的"添加"。 签名和说明`add`应显示方法。  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

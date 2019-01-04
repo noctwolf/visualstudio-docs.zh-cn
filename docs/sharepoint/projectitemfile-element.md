@@ -1,9 +1,6 @@
 ---
 title: ProjectItemFile 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0b66849f9df9ed4de7725bca842c38f4f5a52582
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f2c4446d8c0e3beff59a08cfbe6c0a6c9e5294d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118777"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883910"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 元素
   表示 SharePoint 文件，如功能元素文件部署到 SharePoint 时，包含与项目项。  
@@ -70,4 +67,3 @@ ms.locfileid: "37118777"
   
 ## <a name="see-also"></a>请参阅
  [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)  
-  

@@ -1,9 +1,6 @@
 ---
 title: 如何：打印时隐藏工作表上的控件
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 322c314a768545996f343526367de44c667ce89b
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: d245e6d1d4af1d0135abe88c89f54490a0f5296e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53646794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873426"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>如何：打印时隐藏工作表上的控件
   如果打印包含 Windows 窗体控件的 Microsoft Office Excel 文档，控件将显示在打印工作表上。 打印工作表时，可以隐藏控件。  
@@ -49,5 +46,3 @@ ms.locfileid: "53646794"
  [Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [如何：调整工作表单元格中的控件的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)  
-  
-  

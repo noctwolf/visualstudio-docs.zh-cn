@@ -1,22 +1,19 @@
 ---
 title: 在 Visual Studio 中诊断扩展 UI 延迟 |Microsoft Docs
-ms.custom: ''
 ms.date: 01/26/2018
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: 1bf5dba23622c5dc3d964bdac19fec210aa60b1e
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1bd09827899000e4f3d1f65fae27da969bcbc107
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639190"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887706"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>如何： 诊断 UI 由扩展引起的延迟
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>如何：诊断由扩展引起的 UI 延迟
 
 当 UI 无响应时，Visual Studio 将检查 UI 线程的调用堆栈开头叶和构建基础映像使用。 如果 Visual Studio 确定调用堆栈帧所属是已安装和启用扩展的一部分的模块，它将显示一条通知。
 

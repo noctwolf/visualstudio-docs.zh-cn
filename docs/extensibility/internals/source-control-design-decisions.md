@@ -1,9 +1,6 @@
 ---
-title: 源控件的设计决策 |Microsoft 文档
-ms.custom: ''
+title: 源控件的设计决策 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], design decisions
@@ -13,31 +10,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0385d5feb7baf7fe60e253616c8db0f326932e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd1ffa27a8dfa7c1d98e7242d71f7cfe83c319d4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131309"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883180"
 ---
-# <a name="source-control-design-decisions"></a>源控件的设计决策
-实现源代码管理时，以下设计决策应考虑的项目。  
+# <a name="source-control-design-decisions"></a>源代码管理设计决策
+实现源代码管理时应考虑以下设计决策的项目。  
   
-## <a name="will-information-be-shared-or-private"></a>信息是否会使用共享或私有？  
- 最重要的设计决策，你可以在哪些信息是可共享，什么是私有。 例如，共享的项目文件的列表，但在此列表中的文件，有些用户可能想要的专用文件。 共享编译器设置，但通常私有启动项目。 设置为纯粹共享、 共享的替代方法，或只是私有。 按照设计，专用的项，如解决方案用户选项 (.suo) 文件未签入到[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]。 请务必在如.suo 文件中或你创建，例如，特定的私有文件的专用文件中存储任何隐私信息。 csproj.user 文件对于 Visual C# 或。 适用于 Visual Basic vbproj.user 文件。  
+## <a name="will-information-be-shared-or-private"></a>将信息为共享或专用？  
+ 可在最重要的设计决策是哪些信息是可共享，什么是私有。 例如，共享的项目文件的列表，但在此列表中的文件，某些用户可能想要将专用文件。 共享的编译器设置，但通常专用启动项目。 设置为完全共享、 共享的替代方法，或完全专用。 根据设计，专用项，如解决方案用户选项 (.suo) 文件未签入到[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]。 请务必将任何私人信息存储在.suo 文件或创建，例如，特定的专用文件等专用文件。 csproj.user 文件对于 Visual C# 或。 对于 Visual Basic vbproj.user 文件。  
   
- 此决策不是完全内包含，可以对逐个项的项的方式进行。  
+ 这一决定并不包含一切可基于项的项。  
   
 ## <a name="will-the-project-include-special-files"></a>将该项目包括特殊文件？  
- 另一个重要设计决策是项目结构是否使用特殊文件。 特殊文件是隐藏的文件生成可见在解决方案资源管理器和签入和签出对话框中的文件。 如果你使用特殊文件，请遵循以下准则：  
+ 另一个重要设计决策是项目结构是否使用特殊文件。 特殊文件是隐藏的文件的基础是显示在解决方案资源管理器并在签入和签出对话框的文件。 如果使用的特殊文件，请遵循以下准则：  
   
-1.  未将特殊文件与项目根节点-也就是说，与项目文件本身。 你的项目文件必须是单个文件。  
+1.  不要将特殊文件关联的项目根节点-也就是说，与项目文件本身。 你的项目文件必须是单个文件。  
   
-2.  当添加、 删除或重命名在项目中，相应特殊文件<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>必须带有标记集，该值指示文件是特殊文件触发事件。 这些事件由响应调用相应的项目中的环境<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>方法。  
+2.  当添加、 移除或重命名在项目中，相应特殊文件<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>必须设置了标志，指示这些文件是特殊文件不再触发事件。 这些事件通过调用适当的项目的响应中的环境称为<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>方法。  
   
-3.  当你的项目或编辑器调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>对于文件，与该文件相关联的特殊文件未自动签出。传递以及父文件中的特殊文件。 环境将检测所有传入的文件之间的关系，并相应地隐藏签出 UI 中的特殊文件。  
+3.  当你的项目或编辑器调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>文件，请与该文件相关联的特殊文件未自动签出。传递以及父文件中的特殊文件。 环境将检测中传递的所有文件之间的关系，并相应地隐藏签出 UI 中的特殊文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   

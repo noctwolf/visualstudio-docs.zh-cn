@@ -1,9 +1,6 @@
 ---
 title: 调试 Visual Studio 中的 SharePoint 工具扩展 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f878284c6e181956cbd3e708334301963aa25cf
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 8f838363b52a85faff022f49542fcc2fcc7e450d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326090"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950811"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>调试 Visual Studio 中的 SharePoint 工具扩展
   您可以调试实验实例或 Visual Studio 常规实例中的 SharePoint 工具扩展。 如果需要进行故障排除的行为扩展，还可以修改注册表值以显示其他错误信息并配置 Visual Studio 执行 SharePoint 命令的方式。
@@ -32,15 +29,15 @@ ms.locfileid: "36326090"
 
  演示如何调试各种类型的 Visual Studio 的实验实例中的扩展的示例，请参阅以下演练：
 
--   [演练： 扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
+-   [演练：扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)
 
--   [演练： 使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+-   [演练：使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 
--   [演练： 创建 SharePoint 项目自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
+-   [演练：创建 SharePoint 项目的自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 
--   [演练： 扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+-   [演练：扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
--   [演练： 调入 SharePoint 客户端对象模型，在服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
+-   [演练：调入 SharePoint 客户端对象模型中的服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
 
 ## <a name="debug-extensions-in-the-regular-instance-of-visual-studio"></a>调试 Visual Studio 常规实例中的扩展
  如果你想要调试你的 Visual Studio 常规实例中的扩展项目，首先在正则实例中安装扩展。 然后，将调试器附加到第二个 Visual Studio 进程。 完成后，可以删除该扩展，以便它不能再在开发计算机上加载。
@@ -116,7 +113,7 @@ ms.locfileid: "36326090"
 
  若要帮助解决任何 SharePoint 工具扩展，可以创建并将 EnableDiagnostics 值设置。 下表描述了此值。
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |EnableDiagnostics|指定是否在显示的诊断消息的 REG_DWORD**输出**窗口。<br /><br /> 若要显示的诊断消息，请将此值设置为 1。 若要停止显示消息，请将此值设置为 0，或删除此值。<br /><br /> 若要将消息写入**输出**窗口从 SharePoint 工具扩展，请使用 SharePoint 项目服务。 有关详细信息，请参阅[使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)。|
 

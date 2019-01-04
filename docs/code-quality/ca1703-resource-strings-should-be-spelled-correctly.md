@@ -1,8 +1,7 @@
 ---
-title: CA1703：资源字符串应正确拼写
+title: CA1703:资源字符串应正确拼写
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - ResourceStringsShouldBeSpelledCorrectly
@@ -16,21 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8103353fc5d2e0d74b5355259f0e2bc77ddd974
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0458fa33413023fe9ae2b693a9bf75ffacda706c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918262"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890584"
 ---
-# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703：资源字符串应正确拼写
+# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703:资源字符串应正确拼写
 
 |||
 |-|-|
 |TypeName|ResourceStringsShouldBeSpelledCorrectly|
 |CheckId|CA1703|
 |类别|Microsoft.Naming|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
 
@@ -38,28 +37,28 @@ ms.locfileid: "31918262"
 
 ## <a name="rule-description"></a>规则说明
 
-此规则将资源字符串解析为单词 （词汇切分复合词），并检查每个单词/标记的拼写正确。 有关分析算法的信息，请参阅[CA1704： 标识符应正确拼写](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
+此规则将资源字符串分析为单词 （切分组合词），并检查每个单词/标记的拼写。 有关分析算法的信息，请参阅[CA1704:标识符应正确拼写](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-若要修复与此规则的冲突，使用全字拼写正确，或将字添加到自定义词典。 有关如何使用自定义词典的信息，请参阅[CA1704： 标识符应正确拼写](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
+若要修复此规则的冲突，请使用完整的单词的拼写正确，或向自定义词典添加单词。 有关如何使用自定义词典的信息，请参阅[CA1704:标识符应正确拼写](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
 
-## <a name="change-the-dictionary-language"></a>更改的字典语言
+## <a name="change-the-dictionary-language"></a>更改字典语言
 
-默认情况下，为使用拼写检查器的英语 (en) 版本。 如果你想要更改拼写检查器的语言，则可以执行以便通过添加以下一项特性来你*AssemblyInfo.cs*或*AssemblyInfo.vb*文件：
+默认情况下，使用拼写检查器的英语 (en) 版本。 如果你想要更改拼写检查器的语言，您可以这样做通过添加下列任一属性到您*AssemblyInfo.cs*或*AssemblyInfo.vb*文件：
 
-- 使用<xref:System.Reflection.AssemblyCultureAttribute>来指定的区域性，如果你的资源在附属程序集。
-- 使用<xref:System.Resources.NeutralResourcesLanguageAttribute>指定*非特定区域性*的程序集，如果你的资源位于你的代码相同的程序集中。
+- 使用<xref:System.Reflection.AssemblyCultureAttribute>来指定的区域性，如果你的资源位于附属程序集。
+- 使用<xref:System.Resources.NeutralResourcesLanguageAttribute>来指定*非特定区域性*的程序集，如果你的资源位于你的代码相同的程序集中。
 
 > [!IMPORTANT]
-> 如果你将区域性设置为基于英语区域性之外的任何内容时，会以无提示方式禁用此代码分析规则。
+> 如果将区域性设置为基于英语的区域性之外的任何内容，则以无提示方式禁用此代码分析规则。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
-不禁止显示此规则发出的警告。 正确的拼写的单词可以减少了解新的软件库所需的时间。
+不禁止显示此规则发出的警告。 正确的拼写的单词可以减少学习新的软件库所需的时间。
 
 ## <a name="related-rules"></a>相关的规则
 
-- [CA1701：资源字符串复合词应采用正确的大小写](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1704：标识符应正确拼写](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA2204：应正确拼写文本](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1701:资源字符串复合词应采用正确的大小写](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1704:标识符应正确拼写](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA2204:应正确拼写文本](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

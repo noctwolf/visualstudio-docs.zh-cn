@@ -1,15 +1,10 @@
 ---
-title: 如何： 添加和删除功能和包项使用打包资源管理器 |Microsoft Docs
-ms.custom: ''
+title: 如何：添加和删除功能和包项使用打包资源管理器 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.PackagingExplorer
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7875401dee07961d63de6c7b71a97e647c21a0b7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: b1211b0bdc3625b915221cfafaa5377d371aaa25
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755607"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880856"
 ---
-# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何： 添加和删除功能和包项使用打包资源管理器
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何：添加和删除功能和包项使用打包资源管理器
   若要配置要部署的 SharePoint 项和功能的程序包，可以使用打包资源管理器。 .Wsp 文件中，可以调整的 SharePoint 项目项和功能。  
   
- 或者，可以使用打包设计器来查看和重新排列要更改的激活顺序的功能。 有关详细信息，请参阅[如何： 添加和删除使用包设计器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)。  
+ 或者，可以使用打包设计器来查看和重新排列要更改的激活顺序的功能。 有关更多信息，请参见[如何：添加和删除使用包设计器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)。  
   
 ## <a name="open-the-packaging-explorer"></a>打开打包资源管理器  
  您可以使用以下过程打开打包资源管理器，如果你的 Visual Studio 解决方案包含至少一个 SharePoint 项目。 或者，打包资源管理器将自动打开功能或包设计器中查看时。 关闭所有的功能和包设计器后，打包资源管理器也会关闭。  
@@ -69,4 +64,3 @@ ms.locfileid: "36755607"
   
 ## <a name="see-also"></a>请参阅
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

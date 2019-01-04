@@ -1,9 +1,6 @@
 ---
 title: 绑定到菜单项的键盘快捷方式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - keyboard command
@@ -17,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: d319dfdf1203870ecc1b80787522a56d6f37b5e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219635"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940370"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>将键盘快捷方式绑定到菜单项
 若要绑定到自定义菜单命令的键盘快捷方式，只需添加一个条目 *.vsct*包文件。 本主题说明如何映射到自定义按钮、 菜单项或工具栏命令的键盘快捷方式以及如何将应用的默认编辑器中的键盘映射或将其限制到自定义编辑器。  

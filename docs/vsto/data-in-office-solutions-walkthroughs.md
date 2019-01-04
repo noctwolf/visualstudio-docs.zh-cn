@@ -1,9 +1,6 @@
 ---
 title: Office 解决方案演练中的数据
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b56e17ca04d4c712058e20bd4f644b80e47cd2f7
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: aff3712e9c2c3fdf68e575abf6c3a3bdafafcf53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647305"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829029"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Office 解决方案演练中的数据
   下列演练演示了如何将文档级自定义项和 VSTO 外接程序中的数据用于 Microsoft Office Word 和 Microsoft Office Excel。  
@@ -70,5 +67,3 @@ ms.locfileid: "53647305"
  [开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)  
-  
-  

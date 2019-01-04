@@ -1,9 +1,6 @@
 ---
-title: 扩展 Visual Studio 中支持 EditorConfig 语言服务 |Microsoft 文档
-ms.custom: ''
+title: 扩展语言服务以在 Visual Studio 中支持 EditorConfig |Microsoft Docs
 ms.date: 11/22/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [extensibility]
@@ -13,20 +10,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2aa80903b3e5ea2723ec576fa463161b8d003c93
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3061f1a2efdf05a775f563311ccfbb4c48c49bc9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830886"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>支持 EditorConfig 语言服务
 
-[EditorConfig](http://editorconfig.org/)文件使你可以根据每个项目描述常用的文本编辑器选项，例如缩进大小。 若要了解有关 EditorConfig 文件适用于 Visual Studio 支持的详细信息，请参阅[创建可移植的编辑器设置，请使用 EditorConfig](../ide/create-portable-custom-editor-options.md)。
+[EditorConfig](http://editorconfig.org/)文件使你可以基于每个项目描述常用的文本编辑器选项，例如缩进大小。 若要了解有关 Visual Studio 支持 EditorConfig 文件的详细信息，请参阅[创建可移植的编辑器设置，请使用 EditorConfig](../ide/create-portable-custom-editor-options.md)。
 
-在大多数情况下，实现 Visual Studio 语言服务时，无需任何其他工作即可支持 EditorConfig 通用属性。 当用户打开文件时，核心编辑器将自动发现并读取 .editorconfig 文件，并设置相应的文本缓冲区和视图选项。 但是，如制表符和空格的编辑，某些语言服务选择使用适当的上下文文本视图选项，而不是无需使用全局设置。 在这些情况下，必须更新语言服务以支持 EditorConfig 文件。
+在大多数情况下，实现 Visual Studio 语言服务时，无需任何其他工作即可支持 EditorConfig 通用属性。 当用户打开文件时，核心编辑器将自动发现并读取 .editorconfig 文件，并设置相应的文本缓冲区和视图选项。 但是，如制表符和空格的编辑，某些语言服务选择使用相应的上下文文本视图选项，而不是无需使用全局设置。 在这些情况下，必须更新语言服务以支持 EditorConfig 文件。
 
-以下是所需更新语言服务以支持通过将全局 EditorConfig 文件的更改_特定于语言的_选项与_上下文_选项：
+以下是所需更新语言服务以支持 EditorConfig 文件，通过将全局更改_特定于语言_选项与_上下文_选项：
 
 ## <a name="indent-style"></a>缩进样式
 
@@ -49,4 +46,4 @@ Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsof
 ## <a name="see-also"></a>请参阅
 
 [创建可移植的编辑器设置，请使用 EditorConfig](../ide/create-portable-custom-editor-options.md)  
-[扩展编辑器和语言服务](../extensibility/extending-the-editor-and-language-services.md)
+[扩展的编辑器和语言服务](../extensibility/extending-the-editor-and-language-services.md)

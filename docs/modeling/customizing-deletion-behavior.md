@@ -12,13 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: a4b3df4661b23268fed811799c80cfc31b624a50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d501e182fa46adef1e0058480baa740ad7703a11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849146"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940948"
 ---
 # <a name="customizing-deletion-behavior"></a>自定义删除行为
 删除一个元素通常会导致同时删除相关的元素。 将删除连接到该元素的所有关系以及任何子元素。 此行为名为*删除传播*。 可以自定义删除传播，例如安排删除其他相关元素。 通过编写程序代码，可以根据模型的状态删除传播。 还可能发生其他更改以响应删除。
@@ -140,7 +139,7 @@ partial class MusicLibDeleteClosure
 
 2. 已删除该元素后，调用 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>。 它将保留在 CLR 堆中，以便在需要时可执行“撤消”，但它已与其他元素取消链接并已从 `store.ElementDirectory` 中删除。 对于关系，角色仍将引用旧角色扮演者。`IsDeleted` 为 true。
 
-3. 当用户在创建元素后调用“撤消”时，以及在“重做”中重复以前的删除时，将调用 OnDeleting 和 OnDeleted。 使用 `this.Store.InUndoRedoOrRollback` 来避免在这些情况下更新存储元素。 有关详细信息，请参阅[如何： 使用事务的事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
+3. 当用户在创建元素后调用“撤消”时，以及在“重做”中重复以前的删除时，将调用 OnDeleting 和 OnDeleted。 使用 `this.Store.InUndoRedoOrRollback` 来避免在这些情况下更新存储元素。 有关更多信息，请参见[如何：使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
    例如，以下代码将在删除 Album 的最后一个子级 Song 时删除该 Album：
 

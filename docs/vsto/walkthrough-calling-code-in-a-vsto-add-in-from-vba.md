@@ -1,9 +1,6 @@
 ---
-title: 演练： VSTO 外接程序中从 VBA 调用代码
-ms.custom: ''
+title: 演练：从 VBA 调用 VSTO 外接程序中的代码
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 89b03298d1a0bb180e3eab706383e48ecd75cd7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843816"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915898"
 ---
-# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>演练： VSTO 外接程序中从 VBA 调用代码
+# <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>演练：从 VBA 调用 VSTO 外接程序中的代码
   本演练演示如何向其他 Microsoft Office 解决方案（包括 Visual Basic for Applications (VBA) 和 COM VSTO 外接程序）公开 VSTO 外接程序中的对象。  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -57,7 +54,7 @@ ms.locfileid: "49843816"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  使用 Excel VSTO 外接程序项目模板，创建一个名为 **ExcelImportData**的 Excel VSTO 外接程序项目。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  使用 Excel VSTO 外接程序项目模板，创建一个名为 **ExcelImportData**的 Excel VSTO 外接程序项目。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此时将打开 **ThisAddIn.cs** 或 **ThisAddIn.vb** 代码文件，并将 **“ExcelImportData”** 项目添加到 **“解决方案资源管理器”**。  
   
@@ -116,7 +113,7 @@ ms.locfileid: "49843816"
 3.  在功能区上，单击 **“开发人员”** 选项卡。  
   
     > [!NOTE]  
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何： 在功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关更多信息，请参见[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 4.  在 **“代码”** 组中，单击 **“Visual Basic”**。  
   
@@ -149,16 +146,14 @@ ms.locfileid: "49843816"
   
 -   使用 `ThisAddIn` 类实现主机应用程序自动化并在 VSTO 外接程序项目中执行其他任务。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
   
--   在 VSTO 外接程序中创建自定义任务窗格。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)并[如何： 向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
+-   在 VSTO 外接程序中创建自定义任务窗格。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)和[如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
   
--   自定义 VSTO 外接程序中的功能区。 有关详细信息，请参阅[功能区概述](../vsto/ribbon-overview.md)并[如何： 开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
+-   自定义 VSTO 外接程序中的功能区。 有关详细信息，请参阅[功能区概述](../vsto/ribbon-overview.md)和[如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   
  [从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
- [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [通过使用扩展性接口自定义 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
-  
-  

@@ -1,17 +1,12 @@
 ---
-title: 如何： 自定义 SharePoint 功能 |Microsoft Docs
-ms.custom: ''
+title: 如何：自定义 SharePoint 功能 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.RAD.FeatureDesigner.SwitchView
 - VS.SharePointTools.RAD.featureDesigner.Manifest
 - VS.SharePointTools.RAD.FeatureDesignerProperties
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9be9ba70bb94e743a788db11b55c188275bcad64
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 15cb1b9527cb3a1e469d33a4125e1b410209d98f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835469"
 ---
-# <a name="how-to-customize-a-sharepoint-feature"></a>如何： 自定义 SharePoint 功能
+# <a name="how-to-customize-a-sharepoint-feature"></a>如何：自定义 SharePoint 功能
   可以创建并通过使用 Visual Studio 中的功能设计器自定义 SharePoint 功能。 例如，可以设置功能作用域，并作为依赖项添加其他功能。 默认情况下，当在解决方案资源管理器或 SharePoint 包资源管理器中添加一项新功能时打开功能设计器。  
   
 ## <a name="opening-the-feature-designer"></a>打开功能设计器  
@@ -96,4 +91,3 @@ ms.locfileid: "37118479"
   
 ## <a name="see-also"></a>请参阅
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

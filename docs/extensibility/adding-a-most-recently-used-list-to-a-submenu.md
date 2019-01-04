@@ -1,9 +1,6 @@
 ---
 title: 添加最近使用过的子菜单上的列表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - MRU lists
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d140fed32ac3816b75e13496dc3507fc728f7d26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f436a9c0589f1661e9ad41c76fbd0cf641cc8496
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858177"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>添加最近使用过的子菜单上的列表
 本演练基于中的演示[添加到菜单的子菜单](../extensibility/adding-a-submenu-to-a-menu.md)，并演示如何将动态列表添加到子菜单。 动态列表窗体创建最近使用过的 (MRU) 列表的基础。  
@@ -49,8 +46,8 @@ ms.locfileid: "49916518"
 2.  在`Symbols`部分中，在`GuidSymbol`节点中名为 guidTestCommandPackageCmdSet，添加的符号`MRUListGroup`组和`cmdidMRUList`命令时，按如下所示。  
   
     ```csharp  
-    <IDSymbol name="MRUListGroup" value="0x1200"/>  
-    <IDSymbol name="cmdidMRUList" value="0x0200"/>  
+    <IDSymbol name="MRUListGroup" value="0x1200"/>  
+    <IDSymbol name="cmdidMRUList" value="0x0200"/>  
     ```  
   
 3.  在`Groups`部分中，现有的组条目后添加声明的组。  
@@ -89,7 +86,7 @@ ms.locfileid: "49916518"
   
     ```csharp  
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file  
-    public const uint cmdidMRUList = 0x200;  
+    public const uint cmdidMRUList = 0x200;  
     ```  
   
 2.  在中*TestCommand.cs*添加以下 using 语句。  
@@ -151,7 +148,7 @@ ms.locfileid: "49916518"
 6.  之后`InitMRUMenu`方法中，添加以下`OnMRUQueryStatus`方法。 这是设置每个 MRU 项的文本的处理程序。  
   
     ```csharp  
-    private void OnMRUQueryStatus(object sender, EventArgs e)  
+    private void OnMRUQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand menuCommand = sender as OleMenuCommand;  
         if (null != menuCommand)  
@@ -159,7 +156,7 @@ ms.locfileid: "49916518"
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;  
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)  
             {  
-                menuCommand.Text = this.mruList[MRUItemIndex] as string;  
+                menuCommand.Text = this.mruList[MRUItemIndex] as string;  
             }  
         }  
     }  
@@ -168,7 +165,7 @@ ms.locfileid: "49916518"
 7.  之后`OnMRUQueryStatus`方法中，添加以下`OnMRUExec`方法。 这是用于选择 MRU 项的处理程序。 此方法将所选的项移动到列表的顶部，然后在消息框中显示所选的项。  
   
     ```csharp  
-    private void OnMRUExec(object sender, EventArgs e)  
+    private void OnMRUExec(object sender, EventArgs e)  
     {  
         var menuCommand = sender as OleMenuCommand;  
         if (null != menuCommand)  
@@ -176,7 +173,7 @@ ms.locfileid: "49916518"
             int MRUItemIndex = menuCommand.CommandID.ID - this.baseMRUID;  
             if (MRUItemIndex >= 0 && MRUItemIndex < this.mruList.Count)  
             {  
-                string selection = this.mruList[MRUItemIndex] as string;  
+                string selection = this.mruList[MRUItemIndex] as string;  
                 for (int i = MRUItemIndex; i > 0; i--)  
                 {  
                     this.mruList[i] = this.mruList[i - 1];  

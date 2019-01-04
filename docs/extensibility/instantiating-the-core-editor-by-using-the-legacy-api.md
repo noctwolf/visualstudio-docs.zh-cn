@@ -1,9 +1,6 @@
 ---
 title: 实例化使用旧 API 的核心编辑器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - instantiating editor
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59642b934f82990ce50f6dabaa38a97f34575997
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941541"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838159"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>通过使用传统的 API 实例核心编辑器
 在编辑器负责进行文本编辑功能，如插入、 删除、 复制和粘贴。 它将结合这两个函数由语言服务，如文本颜色设置、 缩进和 IntelliSense 语句完成功能提供这些函数。  
@@ -65,9 +62,9 @@ ms.locfileid: "49941541"
   
  如果<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法返回相同的命令 GUID 的文本编辑器，核心编辑器的实例会自动获取默认键盘快捷方式。  
   
- 有关常规信息，请参阅[演练： 创建编辑器的一个核心和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)。  
+ 有关常规信息，请参阅[演练：创建编辑器的一个核心和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [在核心编辑器](../extensibility/inside-the-core-editor.md)   
  [打开和保存项目项](../extensibility/internals/opening-and-saving-project-items.md)   
- [演练： 创建核心编辑器和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [演练：创建核心编辑器和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

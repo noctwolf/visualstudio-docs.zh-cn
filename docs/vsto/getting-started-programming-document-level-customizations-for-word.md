@@ -1,9 +1,6 @@
 ---
 title: Word 文档级自定义项编程入门
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36eedad9432738119b1993ba56ae46a363b166a0
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 651208958b40ff92804b9989234f8c3822ec83d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904794"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Word 文档级自定义项编程入门
   如果你刚开始使用 Visual Studio 创建 Microsoft Office Word 文档级自定义项，下面是您需要了解。  
@@ -74,5 +71,3 @@ ms.locfileid: "53648408"
  [使用 Word 的演练](../vsto/walkthroughs-using-word.md)   
  [Word 对象模型概述](../vsto/word-object-model-overview.md)   
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)  
-  
-  

@@ -1,9 +1,6 @@
 ---
 title: QUERYCHANGESFUNC |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - QUERYCHANGESFUNC
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74b5241a14ebaecb05db36a9ab4e1b808917afa5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1a50de0f08f5e31404a6dbe2cbf3a268ee53cc69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53855005"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 这是一个回调函数，用于通过[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作枚举集合的文件的名称，并确定每个文件的状态。  
@@ -47,7 +44,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 ## <a name="return-value"></a>返回值  
  IDE 将返回相应的错误代码：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|继续进行处理。|  
 |SCC_I_OPERATIONCANCELED|停止处理。|  

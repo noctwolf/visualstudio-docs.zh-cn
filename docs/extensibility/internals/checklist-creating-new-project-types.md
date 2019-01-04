@@ -1,9 +1,6 @@
 ---
-title: 清单： 创建新的项目类型 |Microsoft Docs
-ms.custom: ''
+title: 清单：创建新的项目类型 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
@@ -14,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: edd4c0a1bf4b6cbc76c2bc4bdbc597efd348799c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861580"
 ---
-# <a name="checklist-create-new-project-types"></a>清单： 创建新的项目类型
+# <a name="checklist-create-new-project-types"></a>清单：创建新的项目类型
 必须完成多个任务以创建新的项目类型。 下列清单提供了这些任务的指南：  
   
 1.  设计新的项目类型的功能。 有关详细信息，请参阅[项目类型设计决策](../../extensibility/internals/project-type-design-decisions.md)。  
   
-2.  确定将哪个编辑器用于代码和其他项目元素。 可以使用的核心或标准编辑器，也可以创建和使用特定于项目的编辑器。 有关详细信息，请参阅[创建自定义编辑器和设计器](../../extensibility/creating-custom-editors-and-designers.md)并[如何： 打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)。  
+2.  确定将哪个编辑器用于代码和其他项目元素。 可以使用的核心或标准编辑器，也可以创建和使用特定于项目的编辑器。 有关详细信息，请参阅[创建自定义编辑器和设计器](../../extensibility/creating-custom-editors-and-designers.md)和[如何：打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)。  
   
 3.  确定项目项都将具有中的参与等级**类视图**并**对象浏览器**。 有关详细信息，请参阅[支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)。  
   

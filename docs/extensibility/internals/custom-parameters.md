@@ -1,9 +1,6 @@
 ---
 title: 自定义参数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - wizards, custom parameters
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 101076eb863294fe84ffed26d308f67110b90a33
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c8c243490a88010031bad91d6b45fe5645d21e6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499447"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826356"
 ---
 # <a name="custom-parameters"></a>自定义参数
 启动向导后，自定义参数控制操作的向导。 相关 *.vsz*文件提供了一系列集成的开发环境 (IDE) 通过打包并启动该向导时作为一个字符串数组传递到向导的用户定义参数。 向导然后分析的字符串数组，并使用这些信息来控制实际操作的向导。 在这种方式，向导可以自定义功能，具体取决于的内容 *.vsz*文件。  

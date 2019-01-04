@@ -1,9 +1,6 @@
 ---
-title: 写入用户设置存储 |Microsoft 文档
-ms.custom: ''
+title: 写入用户设置存储 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: gregvanl
@@ -11,40 +8,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e205fa8850bdd5ee664f66c6d6bb7bf86195bfd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d5fe8e9689448644315306e74deaa394f15c1a8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31145407"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830227"
 ---
-# <a name="writing-to-the-user-settings-store"></a>写入到用户设置存储区
-用户设置均等中的可写设置**工具 / 选项**对话框、 属性窗口和某些其他对话框。 Visual Studio 扩展可以使用这些存储少量数据。 本演练演示如何将记事本到 Visual Studio 添加为外部工具，通过读取和写入用户设置存储。  
+# <a name="writing-to-the-user-settings-store"></a>写入用户设置存储
+用户设置是可写设置中的一样**工具 / 选项**对话框、 属性窗口和某些其他对话框。 Visual Studio 扩展可能会使用这些存储少量数据。 本演练演示如何将记事本到 Visual Studio 添加为外部工具，通过读取和写入用户设置存储。  
   
-### <a name="backing-up-your-user-settings"></a>备份你的用户设置  
+### <a name="backing-up-your-user-settings"></a>备份您的用户设置  
   
-1.  你必须能够重置的外部工具设置，以便您可以调试并重复此过程。 若要执行此操作，必须保存原始设置，以便你可以根据需要还原这些。  
+1.  您必须能够重置外部工具设置，以便您可以调试并重复此过程。 若要执行此操作，必须保存原始设置，以便根据需要还原。  
   
 2.  打开 Regedit.exe。  
   
 3.  导航到 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External 工具\\。  
   
     > [!NOTE]
-    >  请确保你要在包含 \14.0Exp\ 且不 \14.0 密钥\\。 当你运行 Visual Studio 的实验实例时，你的用户设置是在注册表配置单元"14.0Exp"。  
+    >  请确保您查看时包含 \14.0Exp\ 且不 \14.0 密钥\\。 运行 Visual Studio 的实验实例，您的用户设置时，在注册表配置单元"14.0Exp"。  
   
-4.  右键单击该 \External Tools\ 子项，并依次**导出**。 请确保**所选分支**选择。  
+4.  右键单击 \External Tools\ 子项，然后依次**导出**。 请确保**所选分支**处于选中状态。  
   
 5.  保存生成的外部 Tools.reg 文件。  
   
-6.  更高版本，当你想要重置的外部工具设置，选择 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ 注册表项，然后单击**删除**上下文菜单上。  
+6.  更高版本，当你想要重置外部工具设置，选择 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ 注册表项，然后单击**删除**上下文菜单上。  
   
-7.  当**确认键删除**显示对话框，请单击**是**。  
+7.  当**确认删除密钥**出现对话框，请单击**是**。  
   
-8.  右键单击你前面保存的外部 Tools.reg 文件，单击**使用打开**，然后单击**注册表编辑器**。  
+8.  右键单击前面保存的外部 Tools.reg 文件中，单击**打开方式**，然后单击**注册表编辑器**。  
   
-## <a name="writing-to-the-user-settings-store"></a>写入到用户设置存储区  
+## <a name="writing-to-the-user-settings-store"></a>写入用户设置存储  
   
-1.  创建一个名为 UserSettingsStoreExtension 的 VSIX 项目，然后添加名为 UserSettingsStoreCommand 自定义命令。 有关如何创建自定义命令的详细信息，请参阅[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1.  创建一个名为 UserSettingsStoreExtension 的 VSIX 项目，然后添加名为 UserSettingsStoreCommand 的自定义命令。 有关如何创建自定义命令的详细信息，请参阅[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 2.  在 UserSettingsStoreCommand.cs，添加以下 using 语句：  
   
@@ -54,7 +51,7 @@ ms.locfileid: "31145407"
     using Microsoft.VisualStudio.Shell.Settings;  
     ```  
   
-3.  在 MenuItemCallback，删除方法的正文，并使的用户非常设置存储，，如下所示：  
+3.  在 MenuItemCallback，删除方法的主体以及获取的用户设置存储，按如下所示：  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -64,7 +61,7 @@ ms.locfileid: "31145407"
     }  
     ```  
   
-4.  现在，了解是否记事本已设置为外部工具。 你需要循环访问所有外部工具来确定是否 ToolCmd 设置为"记事本"，如下所示：  
+4.  现在，了解记事本是否已设置为外部工具。 您需要循环访问所有外部工具，以确定是否 ToolCmd 设置为"记事本"，如下所示：  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -88,7 +85,7 @@ ms.locfileid: "31145407"
   
     ```  
   
-5.  如果记事本未被设为外部工具，请按以下方式进行设置：  
+5.  如果记事本未设置为外部工具，请按如下所示进行设置：  
   
     ```vb  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -124,10 +121,10 @@ ms.locfileid: "31145407"
     }  
     ```  
   
-6.  测试代码。 请记住，添加记事本作为外部工具，所以你必须回滚注册表之前第二次运行它。  
+6.  测试代码。 请记住，它添加了记事本作为外部工具，所以您必须回滚注册表之前第二次运行它。  
   
 7.  生成代码并开始调试。  
   
 8.  上**工具**菜单上，单击**调用 UserSettingsStoreCommand**。 这将添加到记事本**工具**菜单。  
   
-9. 现在，你应看到记事本工具 / 选项菜单，然后单击**记事本**应打开记事本的实例。
+9. 现在，会看到记事本工具 / 选项菜单，并单击**记事本**应打开一个记事本实例。

@@ -14,13 +14,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b0acab24dbb7ff1313e62e91b17bf87190dbb99
-ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
+ms.openlocfilehash: 705b70fd0ee71f7ea0670f64aadcbff7bc686721
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50967436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919594"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自定义工具和工具箱
 
@@ -79,7 +78,7 @@ Editor
 
 5.  若要测试 DSL，请按 F5 或 CTRL + F5，并在 Visual Studio 的实验实例中，打开示例模型文件。 新工具应显示在工具箱上。 将它拖动到关系图上以验证它是否将创建新元素。
 
-     如果未显示该工具，停止实验性 Visual Studio。 在 Windows 中**启动**菜单中，运行**重置 Microsoft Visual Studio 2010 实验实例**。 上**构建**菜单上，单击**重新生成解决方案**。 然后，再次测试 DSL。
+     如果未显示该工具，停止实验性 Visual Studio。 在 Windows 中**启动**菜单中，运行**重置 Microsoft Visual Studio 2010 实验实例**。 在“生成”菜单上，单击“重新生成解决方案”。 然后，再次测试 DSL。
 
 ## <a name="customizing"></a> 自定义元素工具
  默认情况下，该工具将创建指定类的单个实例，但是可通过两种方式改变这种情况：

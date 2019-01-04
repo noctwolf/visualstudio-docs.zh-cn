@@ -1,9 +1,6 @@
 ---
 title: Visual Studio 的通知和进度 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 1c0241a16caec1fd25b3ccd177042af3be90a6b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942666"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Visual Studio 的通知和进度
 ##  <a name="BKMK_NotificationSystems"></a> 通知系统  
@@ -50,8 +47,8 @@ ms.locfileid: "48863942"
 |[进度指示器](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotSysProgressIndicators)|当你需要报告进度 （确定或不确定） 时使用。 有各种进度指示器类型和每个特定的使用。 请参阅[进度指示器](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators)。||  
 |[Visual Studio 通知窗口](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|通知窗口不能公开扩展。 但是，它用于进行通信的一系列有关 Visual Studio 中，包括与您的许可证和更新到 Visual Studio 或包的信息性通知的关键问题的消息。|不要使用为其他类型的通知。|  
 |[错误列表](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|当问题直接与用户的当前打开的解决方案时遇到问题 （错误/警告/信息） 时，他们可能需要对代码执行操作。<br /><br /> 这将包括，例如：<br /><br /> 编译器消息 （错误/警告/信息）<br /><br /> 的有关代码代码分析器/诊断消息<br /><br /> -生成的消息<br /><br /> 可能是适用于项目或解决方案文件中，相关的问题，但首先考虑的解决方案资源管理器指示。|不要使用不具有与用户的打开的解决方案代码的任何关系的项。|  
-|编辑器通知： 灯泡|已修复，可用于修补在打开的文件中存在的问题时使用。<br /><br /> 请注意灯泡还应使用用于托管按需、 重构，例如用户的代码执行但在这种情况下不会出现"通知 style。"快速操作|不要使用打开的文件没有任何关系的项。|  
-|编辑器通知： 波形曲线|使用其打开的代码 （例如，红色波浪线有错误） 的特定范围的问题向用户发出警报。|为向特定范围的打开的代码不相关的项不使用。|  
+|编辑器通知：灯泡|已修复，可用于修补在打开的文件中存在的问题时使用。<br /><br /> 请注意灯泡还应使用用于托管按需、 重构，例如用户的代码执行但在这种情况下不会出现"通知 style。"快速操作|不要使用打开的文件没有任何关系的项。|  
+|编辑器通知：波形曲线|使用其打开的代码 （例如，红色波浪线有错误） 的特定范围的问题向用户发出警报。|为向特定范围的打开的代码不相关的项不使用。|  
 |[嵌入式的状态栏](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|用于提供与相关的内容或上下文特定的工具窗口、 文档窗口或对话框窗口中的进程的状态。|请不要用于常规产品通知、 进程或特定时段内没有任何关系的内容的项。|  
 |[Windows 任务栏通知](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|用于呈现进程外的进程的通知或伴生应用程序。|请不要用于与 IDE 相关的通知。|  
 |[通知气泡](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|使用远程过程的通知或更改**外部**的 IDE。|请不要用于作为一种方式通知用户的进程**内**IDE。|  
@@ -250,7 +247,7 @@ ms.locfileid: "48863942"
   
  ![内联进度消息传递](../../extensibility/ux-guidelines/media/0903-09_inlinetext.png "0903年 09_InlineText")  
   
- **服务器资源管理器中内联文本： 正在刷新...**  
+ **服务器资源管理器中内联文本：正在刷新...**  
   
 ##### <a name="tool-windows"></a>工具窗口  
  由正下方的工具栏中定位的不确定的进度栏表示全局进度指示。  
@@ -331,11 +328,11 @@ ms.locfileid: "48863942"
   
 -   **图标：** 这是将在其中添加任何图标你想要显示的信息栏，如警告图标。  
   
--   **文本：** 可以添加文本以描述方案/情况用户以及文本内的链接是在中，如果所需。 请记住保持简洁的文本。  
+-   **文本：** 如果需要，可以添加文本以描述方案/情况用户是在中，以及文本内的链接。 请记住保持简洁的文本。  
   
 -   **操作：** 本部分应包含一些链接和按钮，用户可以在你的信息栏中执行的操作。  
   
--   **关闭按钮：** 右侧最后一个部分可以具有关闭按钮。  
+-   **关闭按钮：** 向右的最后一个部分可以有一个关闭按钮。  
   
 #### <a name="creating-a-standard-infobar-in-managed-code"></a>在托管代码中创建标准的信息栏  
  InfoBarModel 类可用于创建一个信息栏的数据源。 使用以下四个构造函数之一：  

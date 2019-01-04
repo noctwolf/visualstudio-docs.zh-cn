@@ -1,9 +1,6 @@
 ---
 title: Microsoft Office 的不同版本中运行的解决方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ed8a9b7cc78b0605b7fcc3931a7ee8992360125b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 66199dd8bd5462eff40a0b8fdbdbbe8cbbc13234
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670336"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843393"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>Microsoft Office 的不同版本中运行的解决方案
     
@@ -61,8 +58,6 @@ ms.locfileid: "35670336"
 ## <a name="see-also"></a>请参阅  
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Visual Studio Tools for Office runtime 安装方案](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)   
  [配置计算机以开发 Office 解决方案](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)  
-  
-  

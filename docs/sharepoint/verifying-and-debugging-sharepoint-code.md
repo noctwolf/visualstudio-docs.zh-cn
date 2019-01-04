@@ -1,9 +1,6 @@
 ---
 title: 验证和调试 SharePoint 代码 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb462c01b1c4809a192d432ad1364dcaa58e0277
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 1705e77472ba9b8fa7a01d047c0aadaf342b7932
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916830"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>验证和调试 SharePoint 代码
 通过使用 IntelliTrace 和单元测试，你可以更轻松地调试 SharePoint 解决方案，并确保解决方案中的每个方法都正常运行。 按照与其他类型的项目的相同过程，可以在 Visual Studio 中的 SharePoint 项目中使用这些功能。

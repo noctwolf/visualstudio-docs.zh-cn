@@ -1,9 +1,6 @@
 ---
-title: IDebugDocumentChecksum2 |Microsoft 文档
-ms.custom: ''
+title: IDebugDocumentChecksum2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugDocumentChecksum2 interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 068447399a8cfd43cb5fe07ea82e7cf4400f460c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 784c8cd4bf762e97b69c6a88ae99701dc993efc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921674"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
-表示调试文档的校验和，并可将组件之间传递校验和。  
+表示调试文档的校验和并可将组件之间传递校验和。  
   
 ## <a name="syntax"></a>语法  
   
@@ -29,8 +26,8 @@ ms.locfileid: "31106713"
 IDebugDocumentChecksum2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 可以实现此接口，通过公开的任何组件[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)接口。 但是，它主要由实现的调试引擎，以便可以传递回 IDE 符号文件 (*.pdb) 中嵌入的校验和，并将其在查找源时使用。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 此接口可以由任何公开的组件实现[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)接口。 但是，它主要由实现的调试引擎，以便可以传递回 IDE 并查找源时，使用符号文件 (*.pdb) 中嵌入的校验和。  
   
 ## <a name="methods"></a>方法  
  下表显示的方法`IDebugDocumentChecksum2`。  
@@ -40,8 +37,8 @@ IDebugDocumentChecksum2 : IUnknown
 |[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|检索要使用的字节的最大数目的文档校验和算法标识符。|  
   
 ## <a name="requirements"></a>要求  
- 标头： Msdbg.h  
+ 标头：Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll

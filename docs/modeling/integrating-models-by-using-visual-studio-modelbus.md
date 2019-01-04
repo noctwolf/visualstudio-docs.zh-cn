@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e72814b34790dd133f09e0fb16c594e12ea8147c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: def47ec9f58db8d1a4cd1497d5c4611369167bb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064592"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832225"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 集成模型
 
@@ -520,6 +519,6 @@ ModelBus 扩展将在 DSL 解决方案中进行以下更改。
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：在程序代码中从文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [如何：从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [在文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

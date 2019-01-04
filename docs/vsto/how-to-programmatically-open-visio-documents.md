@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式打开 Visio 文档
-ms.custom: ''
+title: 如何：以编程方式打开 Visio 文档
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,15 +13,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 28f882510e2370c0fb31645da5023e865afd667e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1815b0f336026890c88ec0794ea72911560ecb38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875717"
 ---
-# <a name="how-to-programmatically-open-visio-documents"></a>如何： 以编程方式打开 Visio 文档
-  有两种方法打开现有的 Microsoft Office Visio 文档： 打开和 OpenEx。 OpenEx 方法等同于 Open 方法，只不过它提供调用方可以在其中指定文档打开方式的参数。  
+# <a name="how-to-programmatically-open-visio-documents"></a>如何：以编程方式打开 Visio 文档
+  有两种方法来打开现有 Microsoft Office Visio 文档：打开和 OpenEx。 OpenEx 方法等同于 Open 方法，只不过它提供调用方可以在其中指定文档打开方式的参数。  
   
  有关对象模型的详细信息，请参阅 [Microsoft.Office.Interop.Visio.Documents.Open](/office/vba/api/Visio.Documents.Open) 方法和 [Microsoft.Office.Interop.Visio.Documents.OpenEx](/office/vba/api/Visio.Documents.OpenEx) 方法的 VBA 参考文档。  
   
@@ -54,9 +51,7 @@ ms.locfileid: "50672673"
 ## <a name="see-also"></a>请参阅  
  [Visio 解决方案](../vsto/visio-solutions.md)   
  [Visio 对象模型概述](../vsto/visio-object-model-overview.md)   
- [如何： 以编程方式创建新的 Visio 文档](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [如何： 以编程方式关闭 Visio 文档](../vsto/how-to-programmatically-close-visio-documents.md)   
- [如何： 以编程方式保存 Visio 文档](../vsto/how-to-programmatically-save-visio-documents.md)   
- [如何： 以编程方式打印 Visio 文档](../vsto/how-to-programmatically-print-visio-documents.md)  
-  
-  
+ [如何：以编程方式创建新的 Visio 文档](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [如何：以编程方式关闭 Visio 文档](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [如何：以编程方式保存 Visio 文档](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [如何：以编程方式打印 Visio 文档](../vsto/how-to-programmatically-print-visio-documents.md)  

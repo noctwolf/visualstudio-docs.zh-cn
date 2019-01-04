@@ -1,9 +1,6 @@
 ---
-title: IDebugArrayObject |Microsoft 文档
-ms.custom: ''
+title: IDebugArrayObject |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugArrayObject
@@ -15,33 +12,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cac7730296d2a4f95563c3d6ff4c60fdd294dc6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c101433bf561ccb6d21e8fcb7e3ea1bb1148eebd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106069"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822108"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，已弃用这种方式实施表达式计算器。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  此接口表示一个数组对象。  
   
 ## <a name="syntax"></a>语法  
   
 ```  
-IDebugArrayObject : IDebugObject  
+IDebugArrayObject : IDebugObject  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 表达式计算器实现此接口来表示数组。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 表达式计算器实现此接口来表示一个数组。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口可以通过使用来获取此接口[QueryInterface](/cpp/atl/queryinterface)如果表示的对象的数组。  
+ [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口可以获取此接口通过[QueryInterface](/cpp/atl/queryinterface)如果该对象表示一个数组。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
- 除了上的方法`IDebugObject`接口，将以下方法实现上`IDebugArrayObject`接口。  
+ 除了上的方法`IDebugObject`接口，以下方法的实现基于`IDebugArrayObject`接口。  
   
 |方法|描述|  
 |------------|-----------------|  
@@ -57,9 +54,9 @@ IDebugArrayObject : IDebugObject
 ## <a name="requirements"></a>要求  
  标头： ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

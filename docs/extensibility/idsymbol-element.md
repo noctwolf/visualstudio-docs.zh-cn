@@ -1,9 +1,6 @@
 ---
 title: IDSymbol 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d88acb221abfc26c45c9002abb92f704936334b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ef9ad479d44e43caf0a77c4db01cc349678c73ca
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500376"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836697"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 元素
 `IDSymbol`元素包含表示菜单、 组或命令的 guid: id 对中的 ID。 GUID 来自父`GuidSymbol`元素。 `IDSymbol`元素具有`name`提供的 ID，它包含在一个友好名称的属性`value`属性。  
@@ -37,8 +34,8 @@ ms.locfileid: "39500376"
   
 |特性|描述|  
 |---------------|-----------------|  
-|name|必须的。 ID 符号名称。|  
-|值|必须的。 ID 符号的数字 ID 值。|  
+|name|必需。 ID 符号名称。|  
+|值|必需。 ID 符号的数字 ID 值。|  
   
 ### <a name="child-elements"></a>子元素  
  无。  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 调整 ListObject 控件的大小
-ms.custom: ''
+title: 如何：调整 ListObject 控件的大小
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e655305400915f1ac97a042ac1cca26e52a05ec5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811498"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909679"
 ---
-# <a name="how-to-resize-listobject-controls"></a>如何： 调整 ListObject 控件的大小
+# <a name="how-to-resize-listobject-controls"></a>如何：调整 ListObject 控件的大小
   将 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件添加到 Microsoft Office Excel 工作簿时，可以设置该控件的大小；但是，你可能需要在以后重设其大小。 例如，你可能希望将两列式列表更改为三列式列表。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -40,7 +37,7 @@ ms.locfileid: "49811498"
   
   有关详细信息<xref:Microsoft.Office.Tools.Excel.ListObject>控件，请参阅[ListObject 控件](../vsto/listobject-control.md)。  
   
-  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[我如何向在运行时将数据绑定列表对象中的实现： 添加列？](http://go.microsoft.com/fwlink/?LinkID=130318)。  
+  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：将列添加到数据绑定列表对象在运行时？](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> 在设计时重设 ListObject 控件的大小  
  若要重设列表的大小，可以单击并拖动其中一个尺寸控点，或者在“重设列表大小”  对话框中重新定义其大小。  
@@ -74,7 +71,7 @@ ms.locfileid: "49811498"
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]  
   
 ##  <a name="runtimeaddin"></a> 调整在运行时在 VSTO 外接程序项目中 ListObject 的大小  
- 可以调整大小<xref:Microsoft.Office.Tools.Excel.ListObject>在运行时任何打开的工作表上的控件。 有关如何添加详细信息<xref:Microsoft.Office.Tools.Excel.ListObject>VSTO 外接程序中使用控制到工作表，请参阅[如何： 添加 ListObject 控件添加到工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)。  
+ 可以调整大小<xref:Microsoft.Office.Tools.Excel.ListObject>在运行时任何打开的工作表上的控件。 有关如何添加详细信息<xref:Microsoft.Office.Tools.Excel.ListObject>VSTO 外接程序中使用控制到工作表，请参阅[如何：向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)。  
   
 ### <a name="to-resize-a-list-object-programmatically"></a>以编程方式重设列表对象的大小  
   
@@ -95,8 +92,6 @@ ms.locfileid: "49811498"
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   
  [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [ListObject 控件](../vsto/listobject-control.md)   
- [如何： 向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
- [如何： 调整书签控件的大小](../vsto/how-to-resize-bookmark-controls.md)   
- [如何： 调整 NamedRange 控件的大小](../vsto/how-to-resize-namedrange-controls.md)  
-  
-  
+ [如何：向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)   
+ [如何：调整书签控件的大小](../vsto/how-to-resize-bookmark-controls.md)   
+ [如何：调整 NamedRange 控件的大小](../vsto/how-to-resize-namedrange-controls.md)  

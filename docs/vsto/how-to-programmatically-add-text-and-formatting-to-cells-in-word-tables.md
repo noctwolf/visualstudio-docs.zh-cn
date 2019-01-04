@@ -1,9 +1,6 @@
 ---
 title: 如何：以编程方式添加的文本和格式向 Word 表中的单元格
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 44f80b6eb2144b5cf831566c47d77aa1c3bc0c7b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 50c6c1fc0b2aa06771999e512d05821099b362c3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865591"
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>如何：以编程方式添加的文本和格式向 Word 表中的单元格
   每个表都包含一个单元格集合。 每个单独的 <xref:Microsoft.Office.Interop.Word.Cell> 对象都表示表中的一个单元格。 你可以通过表中每个单元格的位置对其进行引用。 此示例引用位于表中第一行和第一列的单元格；将文本添加到单元格；并应用格式设置。  
@@ -48,5 +45,3 @@ ms.locfileid: "53802298"
  [如何：以编程方式创建 Word 表](../vsto/how-to-programmatically-create-word-tables.md)   
  [如何：以编程方式向 Word 表中添加行和列](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
  [如何：以编程方式填充 Word 表使用文档属性](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
-  
-  

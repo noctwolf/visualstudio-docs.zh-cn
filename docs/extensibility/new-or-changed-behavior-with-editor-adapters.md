@@ -1,9 +1,6 @@
 ---
 title: 新的或更改行为与编辑器适配器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - adapter behavior
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b32eeb110240cabfec5d81cc862611a0d32fe2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639229"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901605"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>新的或更改行为与编辑器适配器
 如果要更新已针对早期版本的 Visual Studio 核心编辑器，编写的代码，并且你打算使用的编辑器适配器 （或填充程序） 而不是使用新的 API，你应注意的以下编辑器适配器的行为差异相对于以前的核心编辑器。  

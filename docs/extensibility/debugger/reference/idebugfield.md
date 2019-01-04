@@ -1,9 +1,6 @@
 ---
-title: IDebugField |Microsoft 文档
-ms.custom: ''
+title: IDebugField |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugField
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2ff92f339568a6a20e2f85a0b2deae9c8db244f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ab18508a7b79361b85c459066a9e083d77983d7a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116297"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848082"
 ---
 # <a name="idebugfield"></a>IDebugField
-此接口表示的字段，符号或类型的说明。  
+此接口表示的字段，即符号或类型的说明。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,31 +28,31 @@ ms.locfileid: "31116297"
 IDebugField : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 符号提供程序实现此接口为所有字段的基本类。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 符号提供程序的所有字段的基类为实现此接口。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 此接口是所有字段的基类。 基于的返回值[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)，此接口可能会返回专用化程度的接口使用[QueryInterface](/cpp/atl/queryinterface)。 此外，许多接口返回`IDebugField`从各种方法的对象。  
+ 此接口是所有字段的基类。 返回值的基础[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)，此接口可能会使用返回的专用化程度接口[QueryInterface](/cpp/atl/queryinterface)。 此外，许多接口返回`IDebugField`中各种方法的对象。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDebugField`。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|获取符号或类型的可显示信息。|  
-|[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|获取的字段的类型。|  
+|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|获取的符号的类型的可显示信息。|  
+|[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|获取字段的类型。|  
 |[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|获取字段的类型。|  
-|[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|获取的字段的容器。|  
-|[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|获取的字段的地址。|  
+|[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|获取字段的容器。|  
+|[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|获取字段的地址。|  
 |[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|获取一个字段，以字节为单位的大小。|  
-|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|获取扩展有关的某个字段的信息。|  
-|[等于](../../../extensibility/debugger/reference/idebugfield-equal.md)|比较两个字段。|  
-|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|获取有关符号或类型的独立于类型的信息。|  
+|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|获取扩展字段的信息。|  
+|[Equal](../../../extensibility/debugger/reference/idebugfield-equal.md)|比较两个字段。|  
+|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|获取的符号的类型的独立于类型的信息。|  
   
 ## <a name="remarks"></a>备注  
  类型等效于 C 语言`typedef`。  
   
- 在下面的 c + + 语言示例，`weather`是类类型，和`sunny`和`stormy`符号：  
+ 在下面的 c + + 语言示例，`weather`是类类型，并`sunny`和`stormy`是符号：  
   
 ```cpp  
 class weather;  
@@ -63,14 +60,14 @@ weather sunny;
 weather stormy;  
 ```  
   
- 字段表示符号，还是可以通过调用中确定类型[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)并检查[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)结果。 如果`FIELD_KIND_TYPE`设置位，该字段是一种类型，并且如果`FIELD_KIND_SYMBOL`设置位，它是一个符号。  
+ 字段表示符号，还是可以通过调用确定类型[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)并检查[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)结果。 如果`FIELD_KIND_TYPE`设置位，则该字段是类型，并且如果`FIELD_KIND_SYMBOL`设置位，它是一个符号。  
   
 ## <a name="requirements"></a>要求  
  标头： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

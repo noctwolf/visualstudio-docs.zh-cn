@@ -1,9 +1,6 @@
 ---
 title: 计算监视窗口表达式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - Watch window expressions
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47e875f4d288c896ace377e2844192aa5c3be275
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: b0f83be579b4be36cc2ed0b702b473c55c2196c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232098"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822698"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>评估监视窗口表达式
 > [!IMPORTANT]
@@ -45,7 +42,7 @@ ms.locfileid: "39232098"
 7.  Visual Studio 调用[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)以获取然后监视列表中显示的表达式的值。  
   
 ## <a name="parse-then-evaluate"></a>分析并评估  
- 分析复杂表达式可能需要更长时间对其进行评估，因为表达式的计算过程分成了两个步骤： 1） 分析表达式和 2） 评估分析得出的表达式。 这样一来，评估可能会发生很多时候但需要进行一次分析该表达式。 中间分析得出的表达式返回从 EE [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)对象，进而封装并返回从作为 DE [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)对象。 `IDebugExpression`对象将所有计算交都由`IDebugParsedExpression`对象。  
+ 分析复杂表达式可能需要更长时间对其进行评估，因为表达式的计算过程分成了两个步骤：1) 分析表达式和 2） 的计算结果的已分析的表达式。 这样一来，评估可能会发生很多时候但需要进行一次分析该表达式。 中间分析得出的表达式返回从 EE [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)对象，进而封装并返回从作为 DE [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)对象。 `IDebugExpression`对象将所有计算交都由`IDebugParsedExpression`对象。  
   
 > [!NOTE]
 >  不遵守此两步过程，即使 Visual Studio 假设这一点; EE 的必要条件EE 可以分析和评估在相同的步骤时[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)称为 （这是 MyCEE 示例的工作方式，例如）。 如果你的语言可以构成复杂的表达式，您可能想要单独评估步骤中的分析。 许多监视表达式时，这可以提高在 Visual Studio 调试器中的性能显示。  

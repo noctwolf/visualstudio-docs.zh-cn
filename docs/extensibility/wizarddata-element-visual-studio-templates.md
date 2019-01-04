@@ -1,6 +1,5 @@
 ---
 title: WizardData 元素 （Visual Studio 模板） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a7f024c1ca9840b2dcde181d772bf18af99e603
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: edff8012362a5752089858be9d168f7165d9671f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561286"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947850"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 元素（Visual Studio 模板）
 指定自定义 XML  

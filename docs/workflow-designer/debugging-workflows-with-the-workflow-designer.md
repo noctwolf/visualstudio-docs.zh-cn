@@ -3,7 +3,6 @@ title: 使用工作流设计器调试工作流
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD], debugging workflows
 - Workflow Designer [WFD], debugging workflows
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 482e13a91513151d7c4595e0a622f223751ae553
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 64574156bb1645a3d1f4e84f50a8e322751fd370
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755309"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923421"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>调试工作流与工作流设计器
 
@@ -32,18 +31,18 @@ ms.locfileid: "36755309"
 
 - 按**F5**以开始运行的工作流实例，或者以命中断点后继续运行。
 
-- 使用远程调试。 有关使用远程调试的信息，请参阅[如何： 启用远程调试](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100))。
+- 使用远程调试。 有关使用远程调试的信息，请参阅[如何：启用远程调试](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100))。
 
    > [!NOTE]
    > 如果工作流应用程序针对 x86 体系结构并位于运行 64 位操作系统的计算机上远程调试不会工作，除非在远程计算机上安装 Visual Studio 或工作流应用程序的目标更改为**任何 CPU**。
 
-## <a name="step-through-code"></a>单步执行代码
+## <a name="step-through-code"></a>逐行执行代码
 
-- **单步执行**： 通过按到活动步骤**F11**。 此调试器可以单步执行任何定义的处理程序。 如果未定义处理程序，则可以逐过程执行该活动，或者对于包含其他活动的复合活动，您可以单步执行第一个要执行的活动。
+- **中的步骤**:通过按到活动步骤**F11**。 此调试器可以单步执行任何定义的处理程序。 如果未定义处理程序，则可以逐过程执行该活动，或者对于包含其他活动的复合活动，您可以单步执行第一个要执行的活动。
 
-- **跳出：** 跳出某个活动按**Shift**+**F11**。 如果跳出某个活动，则会运行当前活动及其所有同级活动，直到这些活动完成为止。 然后调试器将在当前活动的父项处中断。 从代码处理程序中跳出时，调试器将在与此处理程序关联的活动处中断。
+- **跳出：** 通过按跳出某个活动**Shift**+**F11**。 如果跳出某个活动，则会运行当前活动及其所有同级活动，直到这些活动完成为止。 然后调试器将在当前活动的父项处中断。 从代码处理程序中跳出时，调试器将在与此处理程序关联的活动处中断。
 
-- **单步跳过**： 通过按逐过程执行某个活动**F10**。 逐过程执行复合活动时，调试器将在此复合活动的第一个可执行的子活动处中断。 逐过程执行非复合活动（例如 <xref:System.Activities.Statements.Assign> 活动）时，调试器将执行此活动及其关联的处理程序并在下一个活动处中断。 如果执行的活动是复合活动中的最后一个子活动，则在执行之后，调试器将在父活动处中断。
+- **逐过程执行**:逐过程执行某个活动通过按**F10**。 逐过程执行复合活动时，调试器将在此复合活动的第一个可执行的子活动处中断。 逐过程执行非复合活动（例如 <xref:System.Activities.Statements.Assign> 活动）时，调试器将执行此活动及其关联的处理程序并在下一个活动处中断。 如果执行的活动是复合活动中的最后一个子活动，则在执行之后，调试器将在父活动处中断。
 
 ## <a name="debug-with-f5"></a>使用 F5 进行调试
 

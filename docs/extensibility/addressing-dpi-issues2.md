@@ -1,6 +1,5 @@
 ---
 title: 解决 DPI 问题 2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c4ca03c932b86ad6f9907020b037abb1308a6f7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c85d867d042ea51023fc20259814a27b108e150
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918527"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875162"
 ---
 # <a name="address-dpi-issues"></a>解决 DPI 问题
 越来越多的设备随"高分辨率"屏幕。 这些屏幕通常有超过 200 个像素 / 英寸 (ppi)。 使用这些计算机上的应用程序将需要纵向扩展以满足需要查看设备的正常查看距离处的内容的内容。 截至 2014 年的高密度显示的主要目标是移动计算设备 （平板电脑、 蛤便携式计算机和手机）。  
@@ -174,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  为了启用要用于此双缩放、 XAML 标记显示每个 Image 元素的 UI 将需要进行修改。 以下示例演示如何在 Visual Studio 中使用的 DpiHelper 库和 Shell.12/14 中使用双缩放在 WPF 中。  
   
- 步骤 1: Prescale 300%的图像为 200%，依此类推使用 NearestNeighbor。  
+ 步骤 1：Prescale 到 200%、 300%等使用 NearestNeighbor 映像。  
   
  Prescale 使用任一转换器应用上一个绑定，或使用 XAML 标记扩展的映像。 例如：  
   
@@ -204,7 +203,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- 步骤 2： 确保最终的大小适合于当前的 DPI。  
+ 步骤 2：请确保最终的大小适合于当前的 DPI。  
   
  由于 WPF 针对使用 BitmapScalingMode 属性 UIElement 上设置的当前 DPI 缩放用户界面，应使用 prescaled 的映像，因为其源将查找两个或三个时间比它更大的图像控件。 以下是几种方法，若要避免这种效果：  
   

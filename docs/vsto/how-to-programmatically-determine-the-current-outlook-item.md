@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式确定当前的 Outlook 项
-ms.custom: ''
+title: 如何：以编程方式确定当前的 Outlook 项
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 519fd1572b3ebb1faf8cc7adc6d5a9ba2773d67b
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 93d1d565664e9851310e9138fef7f6d14041c865
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257034"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945946"
 ---
-# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>如何： 以编程方式确定当前的 Outlook 项
+# <a name="how-to-programmatically-determine-the-current-outlook-item"></a>如何：以编程方式确定当前的 Outlook 项
   此示例使用`Explorer.SelectionChange`事件，以显示当前文件夹并选定项的一些信息的名称。 然后，代码将显示选定的项。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -41,7 +38,5 @@ ms.locfileid: "35257034"
   
 ## <a name="see-also"></a>请参阅  
  [Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)   
- [如何： 以编程方式按名称检索文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [如何： 以编程方式搜索特定联系人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  
-  
-  
+ [如何：以编程方式按名称检索文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [如何：以编程方式搜索特定联系人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)  

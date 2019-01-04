@@ -1,9 +1,6 @@
 ---
-title: 演练： 发布 Visual Studio 扩展 |Microsoft Docs
-ms.custom: ''
+title: 演练：发布 Visual Studio 扩展 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - publishing web controls
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0eef45253ff8d6aa0060c122c5003f8f239e73c5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815736"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852448"
 ---
-# <a name="walkthrough-publish-a-visual-studio-extension"></a>演练： 发布 Visual Studio 扩展
+# <a name="walkthrough-publish-a-visual-studio-extension"></a>演练：发布 Visual Studio 扩展
 
 本演练演示如何将 Visual Studio 扩展发布到 Visual Studio Marketplace。 当你的扩展添加到 Marketplace 后时，开发人员可以使用**扩展和更新**浏览到新的和更新扩展。
 
@@ -33,7 +30,7 @@ ms.locfileid: "49815736"
 
 本文使用默认 VSPackage 扩展，但对扩展的每一种有效执行的步骤。
 
-1. 在名为 C# 中创建 VSPackage`TestPublish`具有菜单命令。 有关详细信息，请参阅[创建第一个扩展： Hello World](../extensibility/extensibility-hello-world.md)。
+1. 在名为 C# 中创建 VSPackage`TestPublish`具有菜单命令。 有关详细信息，请参阅[创建第一个扩展：Hello World](../extensibility/extensibility-hello-world.md)。
 
 ## <a name="package-your-extension"></a>打包你的扩展
 
@@ -71,9 +68,9 @@ ms.locfileid: "49815736"
 
 6. 选择你想要用于上传你的扩展发布的服务器。 可以通过单击左侧列出的发布服务器名称更改发布服务器。 单击**新的扩展插件**，然后选择**Visual Studio**。
 
-7. 在中**1： 上传扩展**，您可以选择将 VSIX 文件上传到 Visual Studio Marketplace 直接或只是将链接添加到你自己的网站。 在此示例中，该扩展*TestPublish.vsix*上传。 拖放在扩展或使用**单击**链接以浏览方式查找文件。 在项目的 \bin\Release 文件夹中查找您的扩展插件。  单击 **“继续”**。
+7. 在**1:上传扩展**，您可以选择将 VSIX 文件上传到 Visual Studio Marketplace 直接或只是将链接添加到你自己的网站。 在此示例中，该扩展*TestPublish.vsix*上传。 拖放在扩展或使用**单击**链接以浏览方式查找文件。 在项目的 \bin\Release 文件夹中查找您的扩展插件。  单击 **“继续”**。
 
-8. 在中**2： 提供扩展详细信息**，某些字段会自动填充从*source.extension.vsixmanifest*文件从您的扩展插件。 查找有关每个以下的更多详细信息：
+8. 在**2:提供扩展详细信息**，某些字段会自动填充从*source.extension.vsixmanifest*文件从您的扩展插件。 查找有关每个以下的更多详细信息：
 
     * **内部名称**扩展的详细信息页的 URL 中使用。 例如，发布在发布服务器名称"myname"扩展和指定的内部名称为"my 扩展"结果中的 URL"marketplace.visualstudio\.com/items?itemName=myname.myextension"扩展的详细信息页。
     
@@ -123,13 +120,13 @@ Marketplace 支持授予其他用户权限来访问和管理发布者帐户。
 
 3. 然后可以指定你想要添加并授予适当的下的访问级别的用户的电子邮件地址**选择一个角色**。  可从以下选项中进行选择：
 
-   * **创建者**： 用户可以发布扩展，但不能查看或管理其他用户发布的扩展。
+   * **创建者**:用户可以发布扩展，但不能查看或管理其他用户发布的扩展。
   
-   * **读取器**： 用户可以查看扩展，但不能发布或管理扩展。
+   * **读取器**:用户可以查看扩展，但不能发布或管理扩展。
   
-   * **参与者**： 用户可以发布和管理扩展，但不能编辑发布服务器设置或管理访问权限。
+   * **参与者**:用户可以发布和管理扩展，但不能编辑发布服务器设置或管理访问权限。
   
-   * **所有者**： 用户可以发布和管理扩展，编辑发布服务器设置和管理访问权限。
+   * **所有者**:用户可以发布和管理扩展，编辑发布服务器设置和管理访问权限。
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>从 Visual Studio Marketplace 安装扩展
 

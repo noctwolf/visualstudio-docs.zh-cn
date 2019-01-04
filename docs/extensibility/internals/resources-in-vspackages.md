@@ -1,9 +1,6 @@
 ---
 title: Vspackage 中的资源 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, resources in
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4de310a9b1c0cfdfcbbf2855d3e371e118be8bdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6bacf652d1fd691f17e721851b5b49d0da7acca0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827489"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage 中的资源
 在本机附属 UI Dll 托管的附属 Dll 或托管的 VSPackage 本身中，可以嵌入已本地化的资源。  

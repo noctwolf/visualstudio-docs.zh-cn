@@ -1,7 +1,6 @@
 ---
 title: 开始使用 Roslyn 分析器 |Microsoft Docs
 ms.date: 04/02/2018
-ms.technology: vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 author: gregvanl
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6077fb8a9f0db360389953ef6a7ed25c6d242247
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.openlocfilehash: 591e09596c92476b7664b541d74344099d19ecb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821287"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874520"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>开始使用 Roslyn 分析器
 
@@ -24,7 +23,7 @@ ms.locfileid: "52821287"
 
 [Roslyn 实时代码分析器说明和演练](https://msdn.microsoft.com/magazine/dn879356.aspx)
 
-[添加代码修补程序的演练： 为分析器问题提供用户的修补程序](https://msdn.microsoft.com/magazine/dn904670.aspx)
+[添加代码修补程序演练：分析器问题提供用户的修补程序](https://msdn.microsoft.com/magazine/dn904670.aspx)
 
 [说明和演练的现实世界分析器通信](https://channel9.msdn.com/events/Build/2015/3-725)
 
@@ -37,7 +36,7 @@ ms.locfileid: "52821287"
 ## <a name="see-also"></a>请参阅
 
 - [Roslyn 分析器概述](../code-quality/roslyn-analyzers-overview.md)
-- [教程： 编写您的第一个分析器和代码修补程序](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
+- [教程：编写第一个分析器和代码修补程序](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 - [.NET 编译器平台包版本参考](roslyn-version-support.md)
 - [GitHub OSS 站点上的多个文档](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [FxCop 规则实现通过 GitHub 上的 Roslyn 分析器](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)

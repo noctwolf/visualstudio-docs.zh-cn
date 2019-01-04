@@ -1,9 +1,6 @@
 ---
 title: 扩展 SharePoint 项目系统 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 028e7aab10ae1ee1de452e69c8148dac099039d0
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 51449003457ecd09e7dca7bc579d652c94a592e2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326782"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891107"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>扩展 SharePoint 项目系统
   可以通过使用 Visual Studio 中的一组项目模板和项模板创建 SharePoint 解决方案。 这些模板满足要求的许多开发方案，但您可能会发现某些情况下，它们不提供所需的功能。 在这些情况下，可以扩展 SharePoint 项目系统。  
@@ -60,5 +57,3 @@ ms.locfileid: "36326782"
  [SharePoint 项目系统类型与其他 Visual Studio 项目类型之间转换](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
  [扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [SharePoint 工具扩展的编程概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)  
-  
-  

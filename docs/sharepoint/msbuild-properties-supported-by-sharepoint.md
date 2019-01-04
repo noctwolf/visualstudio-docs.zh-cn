@@ -1,13 +1,8 @@
 ---
 title: SharePoint 支持的 MSBuild 属性 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -17,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 55561d570605cfd5690fc0459444b2fbadeca51a
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 5cb56698d01739f632f56da061f447ace1153212
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684803"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900956"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint 支持的 MsBuild 属性
   任何[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]Microsoft.VisualStudio.SharePoint.targets 文件、 项目文件或项目用户文件中定义的属性可在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。 除了常见[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]由项目中，SharePoint 提供的属性定义是特定于 SharePoint 项目的其他属性。  

@@ -1,9 +1,6 @@
 ---
 title: '[Content_types].xml 文件的结构 |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - content_types
@@ -16,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 538a518d1186dc50a9e5e89635af0a07c2542041
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dd4ed2783ba3b56004037338452722f3ea0f8ddc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909887"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types].xml 文件的结构
 包含有关的 VSIX 包中的内容类型的信息。 Visual Studio 使用 [Content_Types].xml 文件来安装包，但它不会安装文件本身。  
   
 > [!NOTE]
->  本主题仅适用于 VSIX 包中使用的 [Content_Type].xml 文件，尽管 [Content_Types].xml 文件类型是组成部分*开放式打包约定 (OPC)* 标准。 有关详细信息，请参阅[OPC: 新标准的打包数据](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 网站上。  
+>  本主题仅适用于 VSIX 包中使用的 [Content_Type].xml 文件，尽管 [Content_Types].xml 文件类型是组成部分*开放式打包约定 (OPC)* 标准。 有关详细信息，请参阅[OPC:新标准的打包数据](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 网站上。  
   
 ## <a name="attributes-and-elements"></a>特性和元素  
  以下部分介绍的根元素及其属性和子元素。  
@@ -46,7 +43,7 @@ ms.locfileid: "49893268"
   
 ### <a name="attribute-name-attribute"></a>{属性名称}属性  
   
-| “值” | 描述 |
+| 值 | 描述 |
 | - | - |
 | http://schemas.openformats.org/package/2006/content-types | 内容类型架构的位置。 |
   
@@ -105,4 +102,4 @@ ms.locfileid: "49893268"
 ## <a name="see-also"></a>请参阅  
  [VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)   
  [VSIX 扩展架构 1.0 参考](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC： 数据打包了新标准](http://go.microsoft.com/fwlink/?LinkID=148207)
+ [OPC:数据打包了新标准](http://go.microsoft.com/fwlink/?LinkID=148207)

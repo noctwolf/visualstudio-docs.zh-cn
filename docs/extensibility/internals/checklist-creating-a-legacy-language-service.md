@@ -1,9 +1,6 @@
 ---
-title: 清单： 创建旧版语言服务 |Microsoft Docs
-ms.custom: ''
+title: 清单：创建旧版语言服务 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - language services
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba21cf1830f389acbcd72d5e10a688f009871b25
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a37909dd9648f6bac7e0b9bbbe8483244e6ed2b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821109"
 ---
-# <a name="checklist-create-a-legacy-language-service"></a>清单： 创建旧版语言服务
+# <a name="checklist-create-a-legacy-language-service"></a>清单：创建旧版语言服务
 以下清单汇总了要创建的语言服务，必须执行的基本步骤[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]核心编辑器。 若要将集成到语言服务[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，必须创建调试表达式计算器。 有关详细信息，请参阅[编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)中[Visual Studio 调试器可扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)。  
   
 ## <a name="steps-to-create-a-language-service"></a>若要创建语言服务的步骤  
@@ -112,7 +109,7 @@ ms.locfileid: "39510291"
   
 -   大纲显示  
   
-     有几个选项用于支持大纲显示。 例如，可以支持**折叠到定义**命令，提供控制编辑器的大纲区域，或支持客户端控制区域。 有关详细信息，请参阅[如何： 提供旧版语言服务中的展开大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)。  
+     有几个选项用于支持大纲显示。 例如，可以支持**折叠到定义**命令，提供控制编辑器的大纲区域，或支持客户端控制区域。 有关更多信息，请参见[如何：提供旧版语言服务中的展开大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)。  
   
 -   语言服务注册  
   

@@ -1,9 +1,6 @@
 ---
-title: 演练： 在 Visual Basic 项目中从 VBA 调用代码
-ms.custom: ''
+title: 演练：在 Visual Basic 项目中从 VBA 调用代码
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +19,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd766e8ce1896c0b53d32cbe3f4174da5bc934d7
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: b58f2cb729b84d814addc07dcb9840e26bb2a767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808932"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917652"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>演练： 在 Visual Basic 项目中从 VBA 调用代码
+# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>演练：在 Visual Basic 项目中从 VBA 调用代码
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中从文档的 Visual Basic for Applications (VBA) 代码中调用方法。 该过程包括三个基本步骤：向 `ThisDocument` 主机项类添加方法，向 VBA 代码公开方法，然后从文档中的 VBA 代码调用方法。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -72,7 +69,7 @@ ms.locfileid: "38808932"
 3.  在功能区上，单击 **“开发人员”** 选项卡。  
   
     > [!NOTE]  
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何： 在功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关更多信息，请参见[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 4.  在 **“代码”** 组中，单击 **“Visual Basic”**。  
   
@@ -214,15 +211,13 @@ ms.locfileid: "38808932"
 ## <a name="next-steps"></a>后续步骤  
  在以下主题中，你可以了解有关从 VBA 调用 Office 解决方案中的代码的详细信息：  
   
--   从 VBA 调用 Visual C# 自定义项中的代码。 此过程不同于 Visual Basic 过程。 有关详细信息，请参阅[演练： 从 VBA 中 Visual C 调用代码&#35;项目](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)。  
+-   从 VBA 调用 Visual C# 自定义项中的代码。 此过程不同于 Visual Basic 过程。 有关详细信息，请参见[演练：从 Visual C 中的 VBA 调用代码&#35;项目](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)。  
   
--   从 VBA 调用 VSTO 外接程序中的代码。 有关详细信息，请参阅[演练： 从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
+-   从 VBA 调用 VSTO 外接程序中的代码。 有关详细信息，请参见[演练：从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)   
  [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)   
- [如何： 向 VBA 公开代码在 Visual Basic 项目中](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [如何： 向在 Visual C 中向 VBA 代码公开&#35;项目](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
- [演练： 从 VBA 中 Visual C 调用代码&#35;项目](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  
-  
-  
+ [如何：向 VBA 公开代码在 Visual Basic 项目中](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
+ [如何：在 Visual C 中向 VBA 代码公开&#35;项目](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [演练：从 Visual C 中的 VBA 调用代码&#35;项目](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)  

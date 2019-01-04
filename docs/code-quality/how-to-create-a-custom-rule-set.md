@@ -2,7 +2,6 @@
 title: 创建自定义代码分析规则集
 ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061ceec7a513a0d4c92f06fad5ef730100dbfb8e
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f2a0b2de9450fc2e9350371b08f4a3a9bf8d9c1b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000211"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929900"
 ---
 # <a name="customize-a-rule-set"></a>自定义规则集
 
@@ -85,7 +84,7 @@ ms.locfileid: "51000211"
 
 - 如果相同的规则是列出两个或更多次在规则集与*同一*严重性，可能会看到以下警告**错误列表**:
 
-   **CA0063： 未能加载规则集文件\[你].ruleset 或其依赖规则之一将设置文件。该文件不符合规则集架构。**
+   **CA0063:未能加载规则集文件\[你].ruleset 或其依赖规则之一将设置文件。该文件不符合规则集架构。**
 
 - 如果规则集包含子规则集通过使用**Include**标记和子与父规则集列出相同的规则，但具有不同严重级别，然后在父规则集严重性优先。 例如：
 
@@ -121,5 +120,5 @@ ms.locfileid: "51000211"
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：配置托管代码项目的代码分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+- [如何：配置托管的代码项目的代码分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [代码分析规则集参考](../code-quality/rule-set-reference.md)

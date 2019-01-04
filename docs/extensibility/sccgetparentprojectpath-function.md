@@ -1,9 +1,6 @@
 ---
 title: SccGetParentProjectPath 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccGetParentProjectPath
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 828c72224655f404e88ac0913908ef293119ccb3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 21010d25642e81fd9155138c66feb301fe50582c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935159"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 函数
 此函数将确定指定的项目的父项目路径。 用户将 Visual Studio 项目添加到源代码管理时，调用此函数。  
@@ -60,7 +57,7 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|成功地获取父项目路径。|  
 |SCC_E_INITIALIZEFAILED|无法初始化项目。|  

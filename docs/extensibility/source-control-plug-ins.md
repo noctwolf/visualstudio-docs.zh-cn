@@ -1,9 +1,6 @@
 ---
 title: 源代码管理插件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, reference
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be7a1d0739b6a0c8431d588b05de58a296b809c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: f45ffeb57db79edd6305c3195a87012dc7de26b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495695"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923635"
 ---
 # <a name="source-control-plug-ins"></a>源代码管理插件
 源代码控制插件 SDK 参考部分包含启用源代码管理系统集成的完整接口规范[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它指定的语法和各种源代码管理插件必须实现到接口使用的函数和数据类型的语义[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。  

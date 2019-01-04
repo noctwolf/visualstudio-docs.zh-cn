@@ -1,9 +1,6 @@
 ---
-title: 演练： 使用功能区设计器创建自定义选项卡
-ms.custom: ''
+title: 演练：使用功能区设计器创建自定义选项卡
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0089880e143c3db8f260141d9936058bf35b1ce
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4eda44b274a9720ac067f486706c7404853b0ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808867"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917587"
 ---
-# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>演练： 使用功能区设计器创建自定义选项卡
+# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>演练：使用功能区设计器创建自定义选项卡
   使用功能区设计器，可以创建自定义选项卡，然后在其中添加和放置控件。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
@@ -55,7 +52,7 @@ ms.locfileid: "38808867"
   
 ### <a name="to-create-an-excel-workbook-project"></a>创建 Excel 工作簿项目  
   
--   使用名称创建的 Excel 工作簿项目**为 myexcelribbon**。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+-   使用名称创建的 Excel 工作簿项目**为 myexcelribbon**。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新的工作簿并将添加**为 myexcelribbon**投影到**解决方案资源管理器**。  
   
@@ -159,17 +156,15 @@ ms.locfileid: "38808867"
   
 -   将基于上下文的 UI 添加到任何文档级自定义项。 有关详细信息，请参阅[操作窗格概述](../vsto/actions-pane-overview.md)。  
   
--   扩展标准的或自定义的 Microsoft Office Outlook 窗体。 有关详细信息，请参阅[演练： 设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)。  
+-   扩展标准的或自定义的 Microsoft Office Outlook 窗体。 有关详细信息，请参见[演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [在运行时在功能区的访问](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能区概述](../vsto/ribbon-overview.md)   
  [功能区设计器](../vsto/ribbon-designer.md)   
  [为 Outlook 中自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)   
- [如何： 开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [如何： 更改功能区上选项卡的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [如何： 自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)   
- [如何： 将控件添加到 backstage 视图](../vsto/how-to-add-controls-to-the-backstage-view.md)   
+ [如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [如何：更改功能区上选项卡的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
+ [如何：自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)   
+ [如何：将控件添加到 backstage 视图](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [功能区对象模型概述](../vsto/ribbon-object-model-overview.md)  
-  
-  

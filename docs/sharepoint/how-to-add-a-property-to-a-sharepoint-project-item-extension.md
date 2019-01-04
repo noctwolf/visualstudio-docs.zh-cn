@@ -1,9 +1,6 @@
 ---
-title: 如何： 将属性添加到 SharePoint 项目项扩展 |Microsoft Docs
-ms.custom: ''
+title: 如何：将属性添加到 SharePoint 项目项扩展 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1af848f432183153707b2debfed563f3a00d4156
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 424e6d6295b0a9af1ec5d155353f766d4ba17689
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758094"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950181"
 ---
-# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>如何： 将属性添加到 SharePoint 项目项扩展
+# <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>如何：将属性添加到 SharePoint 项目项扩展
   项目项扩展可用于将属性添加到任何已安装 Visual Studio 中的 SharePoint 项目项。 属性将出现在**属性**窗口中选择项目项时**解决方案资源管理器**。  
   
- 以下步骤假定已创建项目项扩展。 有关详细信息，请参阅[如何： 创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
+ 以下步骤假定已创建项目项扩展。 有关更多信息，请参见[如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
   
 ### <a name="to-add-a-property-to-a-project-item-extension"></a>若要将属性添加到项目项扩展  
   
@@ -51,15 +48,15 @@ ms.locfileid: "36758094"
 ### <a name="specify-the-behavior-of-custom-properties"></a>指定自定义属性的行为  
  可以定义自定义属性的显示方式和行为**属性**通过应用中的属性窗口<xref:System.ComponentModel>到属性定义的命名空间。 以下属性可在许多情况下：  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>： 指定将出现在属性的名称**属性**窗口。  
+-   <xref:System.ComponentModel.DisplayNameAttribute>：指定将出现在属性的名称**属性**窗口。  
   
--   <xref:System.ComponentModel.DescriptionAttribute>： 指定将显示的描述字符串中的底部**属性**窗口时选择了该属性。  
+-   <xref:System.ComponentModel.DescriptionAttribute>：指定显示的说明字符串中的底部**属性**窗口时选择了该属性。  
   
--   <xref:System.ComponentModel.DefaultValueAttribute>： 指定的属性的默认值。  
+-   <xref:System.ComponentModel.DefaultValueAttribute>：指定属性的默认值。  
   
--   <xref:System.ComponentModel.TypeConverterAttribute>： 指定在显示的字符串之间的自定义转换**属性**窗口和一个非字符串属性值。  
+-   <xref:System.ComponentModel.TypeConverterAttribute>：指定在显示的字符串之间的自定义转换**属性**窗口和一个非字符串属性值。  
   
--   <xref:System.ComponentModel.EditorAttribute>： 指定要用于修改属性的自定义编辑器。  
+-   <xref:System.ComponentModel.EditorAttribute>：指定要用于修改属性的自定义编辑器。  
   
 ## <a name="compile-the-code"></a>编译代码  
  这些示例需要引用以下程序集的类库项目：  
@@ -72,9 +69,7 @@ ms.locfileid: "36758094"
  若要将扩展部署，创建[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 (VSIX) 包的程序集和你想要将与该扩展一起分发的任何其他文件。 有关详细信息，请参阅[部署的 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
 ## <a name="see-also"></a>请参阅
- [如何： 创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [如何： 将快捷菜单项添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
+ [如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [如何：将快捷菜单项添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
  [扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)   
- [演练： 扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  
-  
-  
+ [演练：扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)  

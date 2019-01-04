@@ -1,17 +1,12 @@
 ---
 title: BDC 模型设计工具概述 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.BDC.Method_Details
 - VS.SharePointTools.BDC.Explorer
 - VS.SharePointTools.BDC.Diagram
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -28,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e4b2a094d33088adb9aa3fc2c0fba953030c781b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914497"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923330"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型设计工具概述
   可以通过使用 BDC 设计器中，设计业务数据连接 (BDC) 模型**BDC 方法详细信息**窗口中，并**BDC 资源管理器**。  
@@ -76,20 +71,18 @@ ms.locfileid: "49914497"
 > [!NOTE]  
 >  对原始的类型描述符的更改不会影响该类型描述符的副本。  
   
- 有关详细信息，请参阅[如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
+ 有关更多信息，请参见[如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
 ## <a name="see-also"></a>请参阅
- [如何： 创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)   
- [如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [如何： 添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何： 添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何： 添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)   
- [如何： 添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)   
- [如何： 添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何：创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)   
+ [如何：向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [如何：添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何：添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)   
+ [如何：添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)   
+ [如何：添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
  [创建实体之间的关联](../sharepoint/creating-an-association-between-entities.md)   
- [演练： 使用业务数据在 SharePoint 中创建外部列表](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
+ [演练：使用业务数据在 SharePoint 中创建外部列表](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
  [将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)   
  [创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  
-  
- 

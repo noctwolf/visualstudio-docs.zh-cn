@@ -1,9 +1,6 @@
 ---
 title: BP_LOCATION |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ceb6c85c510269877dfe34e091d50095dc7a50c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 16b45f2f1122b594298ad36d170be7bdbaf37fe8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821677"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53839638"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 指定用于描述该断点的位置的结构的类型。  
@@ -79,21 +76,21 @@ public struct BP_LOCATION {
  [C + +]包含[BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)结构，如果`bpLocationType`  =  `BPLT_RESOLUTION`。  
   
  `unionmember1`  
- [仅限 C#]请参阅关于如何解释的备注。  
+ [C#仅]请参阅关于如何解释的备注。  
   
  `unionmember2`  
- [仅限 C#]请参阅关于如何解释的备注。  
+ [C#仅]请参阅关于如何解释的备注。  
   
  `unionmember3`  
- [仅限 C#]请参阅关于如何解释的备注。  
+ [C#仅]请参阅关于如何解释的备注。  
   
  `unionmember4`  
- [仅限 C#]请参阅关于如何解释的备注。  
+ [C#仅]请参阅关于如何解释的备注。  
   
 ## <a name="remarks"></a>备注  
  此结构是的成员[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)并[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构。  
   
- [仅限 C#]`unionmemberX`成员根据下表解释。 查看左侧列下方`bpLocationType`值，然后查看其他列来确定每个跨`unionmemberX`成员表示和封送`unionmemberX`相应地。 请参阅解释 C# 中的此结构的一部分的方法的示例。  
+ [C#仅]`unionmemberX`成员根据下表解释。 查看左侧列下方`bpLocationType`值，然后查看其他列来确定每个跨`unionmemberX`成员表示和封送`unionmemberX`相应地。 请参阅解释 C# 中的此结构的一部分的方法的示例。  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -134,9 +131,9 @@ namespace MyPackage
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   

@@ -1,9 +1,7 @@
 ---
 title: '&lt;应用程序&gt;元素 （Visual Studio 中的 Office 开发）'
 titleSuffix: ''
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology: office-development
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0668d3fce722633a10be82c5f7fcd1a0556a4e3b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 7b2f0035bd4072e3245aa44be64d05ef059a70cb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802704"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950272"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;应用程序&gt;元素 （Visual Studio 中的 Office 开发）
   `application` 命名空间的 `vstav3` 元素包装 Office 解决方案的描述。 对于文档级自定义项和 VSTO 外接程序，子元素是不同的。

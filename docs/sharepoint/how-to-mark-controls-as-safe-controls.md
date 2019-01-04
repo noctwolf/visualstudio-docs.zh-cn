@@ -1,13 +1,8 @@
 ---
-title: 如何： 将控件标记为安全控件 |Microsoft Docs
-ms.custom: ''
+title: 如何：将控件标记为安全控件 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -19,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 04470034f1fa1531a1677b4acd6b36f0b99c8a62
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989369"
 ---
-# <a name="how-to-mark-controls-as-safe-controls"></a>如何： 将控件标记为安全控件
+# <a name="how-to-mark-controls-as-safe-controls"></a>如何：将控件标记为安全控件
   为了安全，SharePoint 区分防止脚本注入的 Web 控件和 Web 控件不是。 受保护的控件，或*安全控件*，可以由不受信任的用户访问。 您可以将标记为安全控件项属性的 SharePoint 项目项中或在中安全控件**包设计器**时向包中添加程序集。 有关详细信息，请参见  
   
  [web.config 文件设置更改](http://go.microsoft.com/fwlink/?LinkId=178965)并[Web 部件程序集注册为安全控件](http://go.microsoft.com/fwlink/?LinkId=171013)。  
@@ -94,7 +89,7 @@ ms.locfileid: "37118745"
     |-------------------|-----------|  
     |命名空间|完全限定命名空间进行控制，如**BdcModelProject1.VisualWebPart1**。|  
     |类型名称|Button1|  
-    |程序集名称|强的程序集名称，例如： Microsoft.Office.SharePoint.ClientExtensions，Version = 14.0.0.0，区域性 = 中性，PublicKeyToken = 71e9bce111e9429c。|  
+    |程序集名称|强的程序集名称，例如：Microsoft.Office.SharePoint.ClientExtensions，Version = 14.0.0.0，区域性 = 中性，PublicKeyToken = 71e9bce111e9429c。|  
     |安全|清除**安全**复选框。|  
     |安全应对脚本|将保留**安全应对脚本**复选框为空。|  
   
@@ -107,11 +102,11 @@ ms.locfileid: "37118745"
   
 15. 下表中所输入的属性的值。  
   
-    |属性名|“值”|  
+    |属性名|值|  
     |-------------------|-----------|  
     |命名空间|完全限定命名空间进行控制，如**BdcModelProject1.VisualWebPart1**。|  
     |类型名称|TextBox1|  
-    |程序集名称|强的程序集名称，例如： Microsoft.Office.SharePoint.ClientExtensions，Version = 14.0.0.0，区域性 = 中性，PublicKeyToken = 71e9bce111e9429c。|  
+    |程序集名称|强的程序集名称，例如：Microsoft.Office.SharePoint.ClientExtensions，Version = 14.0.0.0，区域性 = 中性，PublicKeyToken = 71e9bce111e9429c。|  
     |安全|选择**安全**复选框。|  
     |安全应对脚本|选择**安全应对脚本**复选框。|  
   
@@ -120,4 +115,3 @@ ms.locfileid: "37118745"
 ## <a name="see-also"></a>请参阅
  [提供在项目项中的打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)   
  [包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  

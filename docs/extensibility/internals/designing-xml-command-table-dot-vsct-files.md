@@ -1,9 +1,6 @@
 ---
 title: 设计 XML 命令表 (。Vsct) 文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e94d93d407f7499afbd43c8af2b7532ca1b4d8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eacbe69488d605d9cde2fb219a8adbca1419361b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934556"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904291"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>设计 XML 命令表格 (.vsct) 文件
 XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPackage。 命令项包括按钮、 组合框、 菜单、 工具栏和命令项的组。 本文介绍 XML 命令表文件、 它们如何影响命令项和菜单，以及如何创建它们。
@@ -28,7 +25,7 @@ XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPacka
 
  通过运行时创建新的 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]包模板，该模板会生成 *.vsct*所需的元素的菜单命令、 工具窗口中或自定义编辑器中的，具体取决于你选择的文件。 这 *.vsct*文件然后进行修改以满足特定的 VSPackage 的要求。 有关如何修改的示例 *.vsct*文件，请参阅[扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)。
 
- 若要创建新的空白 *.vsct*文件，请参阅[如何： 创建 *.vsct*文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。 创建后，您将添加 XML 元素、 属性和值到描述命令项布局的文件。 有关详细的 XML 架构，请参阅[VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)。
+ 若要创建新的空白 *.vsct*文件，请参阅[如何：创建 *.vsct*文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。 创建后，您将添加 XML 元素、 属性和值到描述命令项布局的文件。 有关详细的 XML 架构，请参阅[VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)。
 
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc 和.vsct 文件之间的差异
  虽然标记中的 XML 背后的含义 *.vsct*文件将与这些标记中现已弃用相同 *.ctc*文件格式，其实现是稍有不同：
@@ -55,48 +52,48 @@ XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPacka
 
 - *图标*参数是可选的。
 
-- 位图部分： 此部分是中的相同 *.ctc*文件，只不过现在可以指定将由请求中的 Href 通过文件名*vsct.exe*编译器在编译时。
+- 位图部分：本部分是中的相同 *.ctc*文件，只不过现在可以指定将由请求中的 Href 通过文件名*vsct.exe*编译器在编译时。
 
-- ResID： 旧位图的资源 ID 可以是使用和仍处于工作中的相同 *.ctc*文件。
+- ResID:旧位图的资源 ID 可以是使用和仍处于工作中的相同 *.ctc*文件。
 
-- HRef： 一个新的方法，允许您指定的位图资源文件的名称。 它假定，将使用所有，因此可以省略使用的部分。 编译器将首先搜索文件，然后在任何网络共享上的本地资源，并且任何资源由 **/I**切换。
+- HRef:一个新方法，允许您指定的位图资源文件的名称。 它假定，将使用所有，因此可以省略使用的部分。 编译器将首先搜索文件，然后在任何网络共享上的本地资源，并且任何资源由 **/I**切换。
 
-- 键绑定： 不再需要指定一个仿真程序。 如果指定一个，则编译器将假定在编辑器和仿真程序是相同的。
+- 键绑定：不再需要指定一个仿真程序。 如果指定一个，则编译器将假定在编辑器和仿真程序是相同的。
 
-- Keychord: Keychord 已被删除。 新的格式是*Key1、 Mod1、 Key2、 Mod2*。  您可以指定字符、 十六进制、 或 VK 常量。
+- Keychord:已删除 Keychord。 新的格式是*Key1、 Mod1、 Key2、 Mod2*。  您可以指定字符、 十六进制、 或 VK 常量。
        
 新的编译器*vsct.exe*，将同时编译 *.ctc*并 *.vsct*文件。 旧*ctc.exe*编译器，但是，将不识别或编译 *.vsct*文件。
 
-可以使用*vsct.exe*编译器要转换的现有 *.cto*文件到 *.vsct*文件。 有关详细信息，请参阅[如何： 从现有.cto 文件创建.vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)。
+可以使用*vsct.exe*编译器要转换的现有 *.cto*文件到 *.vsct*文件。 有关更多信息，请参见[如何：从现有.cto 文件创建.vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)。
 
 ## <a name="the-vsct-file-elements"></a>.Vsct 文件元素
  命令表具有以下层次结构和元素：
 
- [CommandTable 元素](../../extensibility/commandtable-element.md)： 表示的所有命令、 菜单组和 VSPackage 与关联的菜单。
+ [CommandTable 元素](../../extensibility/commandtable-element.md):表示的所有命令、 菜单组和 VSPackage 与关联的菜单。
 
- [Extern 元素](../../extensibility/extern-element.md)： 引用你想要合并的任何外部.h 文件 *.vsct*文件。
+ [Extern 元素](../../extensibility/extern-element.md):引用你想要合并的任何外部.h 文件 *.vsct*文件。
 
- [包含元素](../../extensibility/include-element.md)： 引用你想要编译连同任何其他标头 (.h) 文件您 *.vsct*文件。 一个 *.vsct*文件可以包含 *.h*包含常数，用于定义命令、 菜单组和菜单在 IDE 或另一个 VSPackage 提供的文件。
+ [包含元素](../../extensibility/include-element.md):引用要进行编译以及任何其他标头 (.h) 文件您 *.vsct*文件。 一个 *.vsct*文件可以包含 *.h*包含常数，用于定义命令、 菜单组和菜单在 IDE 或另一个 VSPackage 提供的文件。
 
- [Commands 元素](../../extensibility/commands-element.md)： 表示所有可执行的单个命令。 每个命令具有以下四个子元素：
+ [Commands 元素](../../extensibility/commands-element.md):表示所有可执行的单个命令。 每个命令具有以下四个子元素：
 
- [Menus 元素](../../extensibility/menus-element.md)： 表示所有菜单和工具栏在 VSPackage 中的。 菜单是组的命令的容器。
+ [Menus 元素](../../extensibility/menus-element.md):表示所有菜单和工具栏在 VSPackage 中。 菜单是组的命令的容器。
 
- [Groups 元素](../../extensibility/groups-element.md)： 表示所有在 VSPackage 中的组。 组是单个命令的集合。
+ [Groups 元素](../../extensibility/groups-element.md):表示所有在 VSPackage 中的组。 组是单个命令的集合。
 
- [Buttons 元素](../../extensibility/buttons-element.md)： 表示的所有命令按钮和菜单项在 VSPackage 中的。 按钮是可以与命令相关联的可视控件。
+ [Buttons 元素](../../extensibility/buttons-element.md):表示所有的命令按钮和菜单项在 VSPackage 中。 按钮是可以与命令相关联的可视控件。
 
- [Bitmaps 元素](../../extensibility/bitmaps-element.md)： 表示所有按钮在 VSPackage 中的所有位图。 位图为显示下一步或上的命令按钮，具体取决于上下文的图片。
+ [Bitmaps 元素](../../extensibility/bitmaps-element.md):表示所有按钮在 VSPackage 中的所有位图。 位图为显示下一步或上的命令按钮，具体取决于上下文的图片。
 
- [CommandPlacements 元素](../../extensibility/commandplacements-element.md)： 指示单个命令，应被放置在你的 VSPackage 的菜单中的其他位置。
+ [CommandPlacements 元素](../../extensibility/commandplacements-element.md):指示其中的单个命令应放置在你的 VSPackage 的菜单中的其他位置。
 
- [VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md)： 指定是否命令显示在所有时间，或仅在某些上下文中，例如何时显示特定对话框或窗口中。 仅当指定的上下文处于活动状态时，将显示菜单和命令，并提供此元素的值。 默认行为是可在任何时候显示命令。
+ [VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md):指定命令将显示在所有时间，或仅在某些上下文中，例如何时显示特定对话框或窗口中。 仅当指定的上下文处于活动状态时，将显示菜单和命令，并提供此元素的值。 默认行为是可在任何时候显示命令。
 
- [KeyBindings 元素](../../extensibility/keybindings-element.md)： 指定命令的任何键绑定。 也就是说，一个或多个键组合必须按下执行命令，如**Ctrl**+**S**。
+ [KeyBindings 元素](../../extensibility/keybindings-element.md):指定命令的任何键绑定。 也就是说，一个或多个键组合必须按下执行命令，如**Ctrl**+**S**。
 
- [UsedCommands 元素](../../extensibility/usedcommands-element.md)： 告知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]环境当前 VSPackage 处于活动状态时，将由其他代码，实现指定的命令，尽管它提供了命令实现。
+ [UsedCommands 元素](../../extensibility/usedcommands-element.md):通知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]环境当前 VSPackage 处于活动状态时，将由其他代码，实现指定的命令，尽管它提供了命令实现。
 
- [Symbols 元素](../../extensibility/symbols-element.md)： 包含的符号名称和 GUID 的所有包中命令的 Id。
+ [Symbols 元素](../../extensibility/symbols-element.md):包含的符号名称和 GUID 的所有包中命令的 Id。
 
 ## <a name="vsct-file-design-guidelines"></a>.vsct 文件设计指导原则
  已成功设计 *.vsct*文件中，请遵循以下准则。

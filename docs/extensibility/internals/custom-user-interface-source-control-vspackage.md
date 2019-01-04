@@ -1,9 +1,6 @@
 ---
 title: 自定义用户界面 (源代码管理 VSPackage) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc8158325d975aec4bd522fddad2375001d2f72e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3fa5972a520825b8c7622bd07e23d53910339ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919339"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852646"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自定义用户界面 （源代码管理 VSPackage）
 VSPackage 声明其菜单项和通过 Visual Studio 命令表及其默认状态 (*.vsct*) 文件。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 在加载 VSPackage 之前为其默认状态显示的菜单项。 随后，<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用方法来启用或禁用菜单项。  

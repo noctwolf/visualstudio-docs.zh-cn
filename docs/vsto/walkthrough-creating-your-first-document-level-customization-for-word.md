@@ -1,9 +1,6 @@
 ---
-title: 演练： 创建 word 在第一个文档级自定义项
-ms.custom: ''
+title: 演练：创建 word 在第一个文档级自定义项
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +14,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8aff32bbbbc396651079d16449e9746760c4541e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856420"
 ---
-# <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>演练： 创建 word 在第一个文档级自定义项
+# <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>演练：创建 word 在第一个文档级自定义项
   本介绍性演练演示了如何创建 Microsoft Office Word 的文档级自定义项。 仅在特定文档处于打开状态时，才可提供你在这种解决方案中创建的功能。 不能使用文档级自定义项进行应用程序范围的更改，例如在任何文档处于打开状态时显示新“功能区”选项卡。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
@@ -143,15 +140,15 @@ ms.locfileid: "49928810"
 ## <a name="next-steps"></a>后续步骤  
  既然你已经创建了一个基本的 Word 文档级自定义项，你就可以从下面这些主题中了解有关如何开发自定义项的详细信息：  
   
--   可以在文档级自定义项中执行的常规编程任务：[程序文档级自定义项](../vsto/programming-document-level-customizations.md)。  
+-   可以在文档级自定义项中执行的常规编程任务：[文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)。  
   
--   特定于 Word 的文档级自定义项编程任务： [Word 解决方案](../vsto/word-solutions.md)。  
+-   特定于 Word 的文档级自定义项的编程任务：[Word 解决方案](../vsto/word-solutions.md)。  
   
--   使用 Word 对象模型： [Word 对象模型概述](../vsto/word-object-model-overview.md)。  
+-   使用 Word 对象模型：[Word 对象模型概述](../vsto/word-object-model-overview.md)。  
   
--   自定义 Word 的 UI，例如，通过将自定义选项卡添加到功能区或创建你自己的操作窗格： [Office UI 自定义](../vsto/office-ui-customization.md)。  
+-   自定义 Word 的 UI，例如，通过向功能区添加自定义选项卡或创建你自己的操作窗格：[Office UI 自定义](../vsto/office-ui-customization.md)。  
   
--   使用提供的 Visual Studio 中的 Office 解决方案的扩展的 Word 对象执行是不可能通过使用 Word 对象模型 （例如，托管的文档上承载控件和 Word 控件绑定到数据，通过使用 Windows 窗体数据的任务绑定模型）：[自动执行使用扩展的对象实现 Word](../vsto/automating-word-by-using-extended-objects.md)。  
+-   使用提供的 Visual Studio 中的 Office 解决方案的扩展的 Word 对象执行是不可能通过使用 Word 对象模型 （例如，托管的文档上承载控件和 Word 控件绑定到数据，通过使用 Windows 窗体数据的任务绑定模型）：[通过使用扩展的对象自动化 Word](../vsto/automating-word-by-using-extended-objects.md)。  
   
 -   生成和调试 Word 文档级自定义项：[生成 Office 解决方案](../vsto/building-office-solutions.md)。  
   
@@ -167,5 +164,3 @@ ms.locfileid: "49928810"
  [生成 Office 解决方案](../vsto/building-office-solutions.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [Office 项目模板概述](../vsto/office-project-templates-overview.md)  
-  
-  

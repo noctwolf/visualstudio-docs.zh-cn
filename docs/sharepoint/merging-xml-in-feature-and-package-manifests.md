@@ -1,9 +1,6 @@
 ---
 title: 合并功能和包中的 XML 清单 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,18 +12,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3101245d720e9fdd1c4923ea03acd5b2d4db816
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 30c339bf38f8fc873b27b9c213fad21d66fb9fa7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118737"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914431"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>在功能和包清单中合并 XML
   通过定义功能和包[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单文件。 这些打包的清单是从设计器和自定义生成的数据组合[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单模板中输入的用户。 在打包时，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]合并自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]语句与设计器提供[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]形成打包[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单文件。 类似的元素合并异常更高版本中所示的异常进行合并，以避免[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]验证错误后将文件部署到 SharePoint，并使清单文件较小、 更高效。  
   
 ## <a name="modify-the-manifests"></a>修改清单
- 不能直接修改打包的清单文件，直到你禁用的功能或包设计器。 但是，您可以手动添加自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]元素与清单模板通过功能和包设计器或[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]编辑器。 有关详细信息，请参阅[如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)并[如何： 自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
+ 不能直接修改打包的清单文件，直到你禁用的功能或包设计器。 但是，您可以手动添加自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]元素与清单模板通过功能和包设计器或[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]编辑器。 有关更多信息，请参见[如何：自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)和[如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
   
 ## <a name="feature-and-package-manifest-merge-process"></a>功能和包清单合并进程
  合并提供设计器的元素，以及自定义元素时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将使用下列过程。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 检查每个元素是否具有唯一的键值。 如果元素没有唯一的键值，则会将其追加到打包的清单文件。 同样，具有多个键的元素也无法合并。 因此，它们被追加到清单文件。  
@@ -84,4 +81,3 @@ ms.locfileid: "37118737"
 ## <a name="see-also"></a>请参阅
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

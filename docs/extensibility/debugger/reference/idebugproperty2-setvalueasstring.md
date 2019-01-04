@@ -1,9 +1,6 @@
 ---
 title: IDebugProperty2::SetValueAsString |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugProperty2::SetValueAsString
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8f165ade12f6a4d8661ca4b0070efb1452ec09a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 22e4ccb3f02bcc98d13977553cbf9e6d6c32843b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871578"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 从给定字符串中设置属性的值。  
@@ -28,7 +25,7 @@ ms.locfileid: "49903031"
 ## <a name="syntax"></a>语法  
   
 ```cpp  
-HRESULT SetValueAsString (   
+HRESULT SetValueAsString (   
    LPCOLESTR pszValue,  
    UINT      nRadix,  
    DWORD     dwTimeout  
@@ -36,7 +33,7 @@ HRESULT SetValueAsString (
 ```  
   
 ```csharp  
-int SetValueAsString (   
+int SetValueAsString (   
    string pszValue,  
    uint   nRadix,  
    uint   dwTimeout  
@@ -56,7 +53,7 @@ int SetValueAsString (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则返回错误代码。 下表显示了其他可能的值。  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|字符串可以转换为属性值，或无法设置属性值。|  
 |`E_SETVALUE_VALUE_IS_READONLY`|该属性是只读的。|  

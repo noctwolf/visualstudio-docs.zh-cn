@@ -1,9 +1,6 @@
 ---
 title: 调试器组件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], components
@@ -15,27 +12,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3f79b9f22c2eb26b456e5e45c049a8f8bc04fae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ea47a75ef943b462b35c06b20b9cd21b2ade7b70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818973"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894254"
 ---
 # <a name="debugger-components"></a>调试器组件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器作为 VSPackage 实现和管理整个调试会话。 调试会话包括以下元素：  
   
-- **调试包：** [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器提供了相同的用户界面，不论正在调试。  
+- **调试包：**[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器提供了相同的用户界面，不论正在调试。  
   
 - **会话调试管理器 (SDM):** 提供了一致的编程接口到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器的各种的调试引擎管理。 它由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-- **进程调试管理器 (PDM):** 管理的所有正在运行的实例[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，可以是也正在调试的所有程序的列表。 它由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+- **进程调试管理器 (PDM):** 为所有运行的实例管理[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，可以是也正在调试的所有程序的列表。 它由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-- **调试引擎 (DE):** 负责监视正在调试的程序进行通信的 SDM 和 PDM，正在运行的程序状态并提供的实时分析的表达式计算器和符号提供程序与之交互程序的内存和变量的状态。 它由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（适用于它支持的语言） 和第三方供应商想要支持其自己的运行的时。 
+- **调试引擎 (DE):** 负责监视正在调试的程序进行通信的 SDM 和 PDM，正在运行的程序状态和与提供程序的内存状态的实时分析的表达式计算器和符号提供程序进行交互和变量。 它由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（适用于它支持的语言） 和第三方供应商想要支持其自己的运行的时。 
   
-- **表达式计算器 (EE):** 动态评估变量和表达式的用户提供的程序已停止的特定点时提供支持。 它由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（适用于它支持的语言） 和第三方供应商想要支持自己的语言。  
+- **表达式计算器 (EE):** 提供对动态评估变量和表达式特定点已停止程序时由用户提供支持。 它由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（适用于它支持的语言） 和第三方供应商想要支持自己的语言。  
   
-- **符号提供程序 (SP):** 也称为符号处理程序中，映射程序的调试符号的程序正在运行的实例，以便可以提供有意义的信息 （如代码源代码级调试和表达式计算）。 它由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（公共语言运行时 [CLR] 符号和程序数据库 [PDB] 符号文件格式） 和由第三方供应商有其自己专有存储调试信息的方法。  
+- **符号提供程序 (SP):** 也称为符号处理程序，将映射程序的调试符号的程序正在运行的实例，以便可以提供有意义的信息 （如代码源代码级调试和表达式计算）。 它由实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（公共语言运行时 [CLR] 符号和程序数据库 [PDB] 符号文件格式） 和由第三方供应商有其自己专有存储调试信息的方法。  
   
   下图显示了 Visual Studio 调试器的这些元素之间的关系。  
   

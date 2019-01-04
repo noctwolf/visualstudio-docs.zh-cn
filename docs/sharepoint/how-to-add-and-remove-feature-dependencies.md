@@ -1,16 +1,11 @@
 ---
-title: 如何： 添加和删除功能依赖关系 |Microsoft Docs
-ms.custom: ''
+title: 如何：添加和删除功能依赖关系 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.VISUALSTUDIO.SHAREPOINT.DESIGNERS.CUSTOMDEPENDENCYWINDOW
 - VS.SHAREPOINTTOOLS.RAD.FEATUREDESIGNERDEPENDENCY
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -20,14 +15,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7a61ff71b5ed8caa8ad50dff71957bee20b955a
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 704973591b1bcdcb849e847e9c5e7cefc78f0202
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757987"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924236"
 ---
-# <a name="how-to-add-and-remove-feature-dependencies"></a>如何： 添加和删除功能依赖关系
+# <a name="how-to-add-and-remove-feature-dependencies"></a>如何：添加和删除功能依赖关系
   SharePoint 功能可能依赖的功能或数据的其他功能。 在这些情况下，可以将这些其他功能为您的功能标记为依赖项。 这样一来，SharePoint 服务器会确保你的功能被激活之前激活相关功能。  
   
 ## <a name="add-dependencies"></a>添加依赖项  
@@ -71,6 +66,5 @@ ms.locfileid: "36757987"
   
 ## <a name="see-also"></a>请参阅
  [创建 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)   
- [如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
- [如何： 添加和删除项 SharePoint 功能](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  
-  
+ [如何：自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)   
+ [如何：添加和删除项 SharePoint 功能](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)  

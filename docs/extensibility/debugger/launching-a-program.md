@@ -1,9 +1,6 @@
 ---
 title: 启动程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, launching
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ab4432eed95fd042bd35d34b6a42d3cd036fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb403e9df8b159162d5160e3927acb40cc775ff3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858363"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53862148"
 ---
 # <a name="launch-a-program"></a>启动程序
 想要调试的程序的用户可以按**F5**从 IDE 运行调试器。 这会开始一系列事件最终导致 IDE 的连接到调试引擎 (DE)，后者又连接，或附加，到该程序，如下所示：  
@@ -28,7 +25,7 @@ ms.locfileid: "49858363"
   
 2. 如果指定了德国，DE 调用操作系统来启动程序。 启动程序，因此加载程序的运行时环境。 例如，如果程序在 MSIL 中编写的将调用公共语言运行时来运行程序。  
   
-    或  
+    - 或 -  
   
     如果未指定 DE，端口将调用要启动程序，这会导致程序的运行时环境，若要加载的操作系统。  
   

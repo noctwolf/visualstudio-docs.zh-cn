@@ -2,7 +2,6 @@
 title: 杂项，XML，文本编辑器，“选项”对话框
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 author: gewarren
@@ -10,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6ee70f99f3b82505d210ab95f8359b5c7f90c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 85af563d9fb20b12785a410cf7df7e612d17dbee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571765"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941396"
 ---
-# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>杂项，XML，文本编辑器，选项对话框
+# <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>杂项，XML，文本编辑器中，选项对话框
 
-使用此对话框可以更改“XML 编辑器”的自动完成和架构设置。 你可以访问**选项**对话框**工具**菜单。
+使用此对话框可以更改“XML 编辑器”的自动完成和架构设置。 您可以访问**选项**对话框从**工具**菜单。
 
 > [!NOTE]
-> 当你选择这些设置才可用**文本编辑器**文件夹， **XML**文件夹，然后**杂项**选项从**选项**对话框。
+> 当您选择这些设置才可用**文本编辑器**文件夹中， **XML**文件夹，然后**杂项**选项**选项**对话框。
 
 
 ## <a name="auto-insert"></a>自动插入
@@ -44,14 +43,14 @@ ms.locfileid: "34571765"
 
  默认情况下选中此选项。
 
- **其他标记 （注释、 CDATA）**
+ **其他标记（注释、CDATA）**
 
  自动完成注释、CDATA、DOCTYPE、处理指令和其他标记。
 
  默认情况下选中此选项。
 
 ## <a name="network"></a>网络
- **自动下载 Dtd 和架构**
+ **自动下载 DTD 和架构**
 
  架构和文档类型定义 (DTD) 自动从 HTTP 位置下载。 此功能在启用自动代理服务器检测的情况下使用 System.Net。
 
@@ -67,7 +66,7 @@ ms.locfileid: "34571765"
 ## <a name="caching"></a>缓存
  **架构**
 
- 指定架构缓存的位置。 浏览按钮 (**...**) 打开**目录浏览**对话框在当前架构缓存的位置。 你可以选择不同的目录，也可以在对话框中，选择一个文件夹右键单击，然后选择**打开**查看目录中的内容。
+ 指定架构缓存的位置。 浏览按钮 (**...**) 打开**目录浏览**对话框在当前架构缓存位置。 可以选择不同的目录，也可以在对话框中，选择一个文件夹右键单击，然后选择**打开**来查看目录中的内容。
 
 ## <a name="see-also"></a>请参阅
 
