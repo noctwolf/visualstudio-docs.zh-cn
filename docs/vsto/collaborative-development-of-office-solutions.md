@@ -1,9 +1,6 @@
 ---
 title: 合作开发 Office 解决方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b4d22c92bd180eb27f8ebb50e65b24d17a92e47
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 2d8c6d19442a1735ee90db52e4c5f1a98e1fe860
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876492"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>合作开发 Office 解决方案
   多个开发人员可以从事方式协同工作上的其他 Visual Studio 项目完全相同的 Office 项目。 即使在不同的位置安装 Office，visual Studio 正确定位每台计算机上的 Microsoft Office 安装。 但是，有需要注意的一些重要注意事项。  
@@ -49,5 +46,3 @@ ms.locfileid: "53441543"
  [保护 Office 解决方案](../vsto/securing-office-solutions.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [生成 Office 解决方案](../vsto/building-office-solutions.md)  
-  
-  
