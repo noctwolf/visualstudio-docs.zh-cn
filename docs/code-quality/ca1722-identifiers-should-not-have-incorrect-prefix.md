@@ -1,8 +1,7 @@
 ---
-title: CA1722：标识符应采用正确的前缀
+title: CA1722:标识符应采用正确的前缀
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotHaveIncorrectPrefix
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff21b8f3c12cfa9fb3dc3ef03ca2ba2040f3769
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bea94b555be5079deae5a021cb5ecbd2ccd07adb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904742"
 ---
-# <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722：标识符应采用正确的前缀
+# <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722:标识符应采用正确的前缀
 
 |||
 |-|-|
@@ -49,4 +48,4 @@ ms.locfileid: "49857601"
  不禁止显示此规则发出的警告。
 
 ## <a name="related-rules"></a>相关的规则
- [CA1715：标识符应具有正确的前缀](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+ [CA1715:标识符应具有正确的前缀](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

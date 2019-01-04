@@ -1,8 +1,7 @@
 ---
-title: CA1715：标识符应具有正确的前缀
+title: CA1715:标识符应具有正确的前缀
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA1715
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ad2e867b40bd8fc05215e7bb1d905a7d079eecf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c7abdaa2356bdf622f0892e9b027047fc021096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879828"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912920"
 ---
-# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715：标识符应具有正确的前缀
+# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715:标识符应具有正确的前缀
 
 |||
 |-|-|
@@ -39,7 +38,7 @@ ms.locfileid: "49879828"
 ## <a name="cause"></a>原因
  外部可见的接口的名称不以大写 I 开头。
 
- 或
+ - 或 -
 
  上的外部可见类型或方法的泛型类型参数的名称不会启动包含大写 ' T '。
 
@@ -87,4 +86,4 @@ ms.locfileid: "49879828"
  [!code-vb[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/VisualBasic/ca1715-identifiers-should-have-correct-prefix_4.vb)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA1722：标识符应采用正确的前缀](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+ [CA1722:标识符应采用正确的前缀](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

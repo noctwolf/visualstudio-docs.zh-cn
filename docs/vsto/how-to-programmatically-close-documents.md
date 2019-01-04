@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式关闭文档
-ms.custom: ''
+title: 如何：以编程方式关闭文档
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9a846aded5d24f84fdaeac79a1bad6c61a3f5570
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7aa33ff010b85d2916c60875297709588534947d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930213"
 ---
-# <a name="how-to-programmatically-close-documents"></a>如何： 以编程方式关闭文档
+# <a name="how-to-programmatically-close-documents"></a>如何：以编程方式关闭文档
   可以关闭活动文档，也可以指定关闭某个文档。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -65,9 +62,8 @@ ms.locfileid: "35257769"
      [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式打开现有文档](../vsto/how-to-programmatically-open-existing-documents.md)   
- [如何： 以编程方式保存文档](../vsto/how-to-programmatically-save-documents.md)   
+ [如何：以编程方式打开现有文档](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [如何：以编程方式保存文档](../vsto/how-to-programmatically-save-documents.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
-  

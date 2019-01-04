@@ -1,9 +1,6 @@
 ---
-title: 演练： 通过编辑器扩展访问 DTE 对象 |Microsoft Docs
-ms.custom: ''
+title: 演练：从编辑器扩展访问 DTE 对象 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - getting the DTE object
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed4343139b3e59dfba7adc71b1c91cdf01c13db
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: d178732376fa01c0b204e8d6b2acc27e39a82cb4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586243"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930170"
 ---
-# <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>演练： 通过编辑器扩展访问 DTE 对象
+# <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>演练：从编辑器扩展访问 DTE 对象
 在 Vspackage 中，您可以通过调用中获取 DTE 对象<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>与 DTE 对象类型的方法。 在 Managed Extensibility Framework (MEF) 扩展中，您可以导入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>，然后调用<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>方法的类型与<xref:EnvDTE.DTE>。  
   
 ## <a name="prerequisites"></a>系统必备  

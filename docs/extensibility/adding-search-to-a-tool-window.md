@@ -1,9 +1,6 @@
 ---
 title: 将搜索添加到工具窗口 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding search
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b060261bec61859f33d99ec3f666e1285413592
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 9dfc83477c8d77788ce35dc9e4f543344f611cf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498559"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902527"
 ---
 # <a name="add-search-to-a-tool-window"></a>将搜索添加到工具窗口
 当创建或更新您的扩展插件中的工具窗口时，可以在 Visual Studio 中添加相同的搜索功能的其他位置出现。 此功能包括以下功能：  
@@ -96,9 +93,9 @@ ms.locfileid: "39498559"
      若要启用搜索，必须重写<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A>属性。 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>类实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch>，并提供一个默认实现，不会启用搜索。  
   
     ```csharp  
-    public override bool SearchEnabled  
+    public override bool SearchEnabled  
     {  
-        get { return true; }  
+        get { return true; }  
     }  
     ```  
   
@@ -245,7 +242,7 @@ ms.locfileid: "39498559"
 1.  在 * TestSearch.cs* 文件中，将以下代码添加到`TestSearch`类。 此代码，而不是按需搜索即时搜索 (用户无需单击的含义**ENTER**)。 该代码重写`ProvideSearchSettings`中的方法`TestSearch`类，该类是需要更改默认设置。  
   
     ```csharp  
-    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
+    public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
     {  
         Utilities.SetValue(pSearchSettings,   
             SearchSettingsDataSource.SearchStartTypeProperty.Name,   
@@ -293,7 +290,7 @@ ms.locfileid: "39498559"
   
     ```csharp  
     private IVsEnumWindowSearchOptions m_optionsEnum;  
-    public override IVsEnumWindowSearchOptions SearchOptionsEnum  
+    public override IVsEnumWindowSearchOptions SearchOptionsEnum  
     {  
         get  
         {  
@@ -345,13 +342,13 @@ ms.locfileid: "39498559"
 1.  在中*TestSearch.cs*文件中，将以下代码添加到`TestSearch`类。 这段代码实现`SearchFiltersEnum`通过添加<xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter>，指定要筛选搜索结果，以便仅偶数行显示。  
   
     ```csharp  
-    public override IVsEnumWindowSearchFilters SearchFiltersEnum  
+    public override IVsEnumWindowSearchFilters SearchFiltersEnum  
     {  
         get  
         {  
             List<IVsWindowSearchFilter> list = new List<IVsWindowSearchFilter>();  
             list.Add(new WindowSearchSimpleFilter("Search even lines only", "Search even lines only", "lines", "even"));  
-            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;  
+            return new WindowSearchFilterEnumerator(list) as IVsEnumWindowSearchFilters;  
         }  
     }  
   
@@ -362,19 +359,19 @@ ms.locfileid: "39498559"
 2.  在中*TestSearch.cs*文件中，添加以下方法来`TestSearchTask`类，该类是在`TestSearch`类。 这些方法支持`OnStartSearch`方法，将在下一步中修改。  
   
     ```csharp  
-    private string RemoveFromString(string origString, string stringToRemove)  
+    private string RemoveFromString(string origString, string stringToRemove)  
     {  
         int index = origString.IndexOf(stringToRemove);  
         if (index == -1)  
             return origString;  
-        else   
+        else   
              return (origString.Substring(0, index) + origString.Substring(index + stringToRemove.Length)).Trim();  
     }  
   
-    private string[] GetEvenItems(string[] contentArr)  
+    private string[] GetEvenItems(string[] contentArr)  
     {  
         int length = contentArr.Length / 2;  
-        string[] evenContentArr = new string[length];  
+        string[] evenContentArr = new string[length];  
   
         int indexB = 0;  
         for (int index = 1; index < contentArr.Length; index += 2)  
@@ -390,13 +387,13 @@ ms.locfileid: "39498559"
 3.  在中`TestSearchTask`类中，更新`OnStartSearch`用下面的代码的方法。 此更改更新代码以支持筛选器。  
   
     ```csharp  
-    protected override void OnStartSearch()  
+    protected override void OnStartSearch()  
     {  
-        // Use the original content of the text box as the target of the search.   
-        var separator = new string[] { Environment.NewLine };  
+        // Use the original content of the text box as the target of the search.   
+        var separator = new string[] { Environment.NewLine };  
         string[] contentArr = ((TestSearchControl)m_toolWindow.Content).SearchContent.Split(separator, StringSplitOptions.None);  
   
-        // Get the search option.   
+        // Get the search option.   
         bool matchCase = false;  
         matchCase = m_toolWindow.MatchCaseOption.Value;  
   
@@ -409,7 +406,7 @@ ms.locfileid: "39498559"
         {  
             string searchString = this.SearchQuery.SearchString;  
   
-            // If the search string contains the filter string, filter the content array.   
+            // If the search string contains the filter string, filter the content array.   
             string filterString = "lines:\"even\"";  
   
             if (this.SearchQuery.SearchString.Contains(filterString))  
@@ -421,7 +418,7 @@ ms.locfileid: "39498559"
                 searchString = RemoveFromString(searchString, filterString);  
             }  
   
-            // Determine the results.   
+            // Determine the results.   
             uint progress = 0;  
             foreach (string line in contentArr)  
             {  
@@ -444,7 +441,7 @@ ms.locfileid: "39498559"
   
                 SearchCallback.ReportProgress(this, progress++, (uint)contentArr.GetLength(0));  
   
-                // Uncomment the following line to demonstrate the progress bar.   
+                // Uncomment the following line to demonstrate the progress bar.   
                 // System.Threading.Thread.Sleep(100);  
             }  
         }  
@@ -460,8 +457,8 @@ ms.locfileid: "39498559"
             this.SearchResults = resultCount;  
         }  
   
-        // Call the implementation of this method in the base class.   
-        // This sets the task status to complete and reports task completion.   
+        // Call the implementation of this method in the base class.   
+        // This sets the task status to complete and reports task completion.   
         base.OnStartSearch();  
     }  
     ```  

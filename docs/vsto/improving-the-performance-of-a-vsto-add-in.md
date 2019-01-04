@@ -1,9 +1,6 @@
 ---
 title: 提高 VSTO 外接程序的性能
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 65e61f03893f171bd824132665a47f5e6361391f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: fc4a65a0b09a706eebad04c90e1779d00c7f3801
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804612"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937278"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>提高 VSTO 外接程序的性能
   可以通过优化为 Office 应用程序创建的 VSTO 外接程序为用户提供更好的体验，以便他们快速启动、关闭和打开项，以及执行其他任务。 如果你的 VSTO 外接程序是用于 Outlook 的，则还可以降低由于性能不佳而禁用 VSTO 外接程序的风险。 可以通过实现以下策略来提高 VSTO 外接程序的性能：

@@ -8,26 +8,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: bfe0cbdda1b3eaa7d1afc936c7dbba75df6da07b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929693"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>控制颜色、线型和其他形状属性
-某些形状属性如颜色可以公开-即，链接到形状的域属性。 其他需要直接控制。
+某些形状属性如颜色可以公开-即，链接到形状的域属性。 其他人需要进行直接控制。
 
 ## <a name="exposing-a-property"></a>公开属性
- 如颜色某些形状属性可以链接到域属性的值。
+ 某些形状属性，如颜色可以链接到域属性的值。
 
- 在 DSL 定义中，选择形状、 连接器或关系图类。 其上下文菜单上，选择**添加公开**，然后选择你想，如填充颜色的属性。
+ 在 DSL 定义中，选择形状、 连接符或关系图类。 在其上下文菜单，选择**公开添加**，然后选择所需的属性，如填充颜色。
 
- 形状现在具有一个域属性，你可以在程序代码中或作为用户设置。
+ 现在，该形状具有域设置的属性，您可以在程序代码中或以用户身份。
 
 ## <a name="dynamically-updating-an-exposed-property"></a>动态更新公开的属性
- 通常，你想要公开的属性依赖于另一个属性。 例如，你可能想小于零的某个形状将特定域属性时变为红色。 若要使此依赖关系，创建[规则](../modeling/rules-propagate-changes-within-the-model.md)。 例如：
+ 通常，你想要使依赖于另一个属性公开的属性。 例如，可能想要特定域属性时变为红色的形状小于零。 若要使此依赖项，创建[规则](../modeling/rules-propagate-changes-within-the-model.md)。 例如：
 
 ```csharp
 using System;

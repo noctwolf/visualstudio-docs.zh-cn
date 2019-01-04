@@ -1,9 +1,6 @@
 ---
 title: 检测系统要求 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a794391001934164e52bdd73d940cb73ff3b5f3b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 27fcfa7d7ad7b098bb28a3afee301444c48a46e3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892398"
 ---
 # <a name="detect-system-requirements"></a>检测系统要求
 VSPackage 不能作用，除非安装了 Visual Studio。 当您使用 Microsoft Windows 安装程序来管理你的 VSPackage 的安装时，您可以配置要检测是否安装了 Visual Studio 的安装程序。 此外可以配置它检查到系统的其他要求，例如，Windows 的特定版本或特定 RAM 量。  
@@ -46,7 +43,7 @@ VSPackage 不能作用，除非安装了 Visual Studio。 当您使用 Microsoft
 |Visual Studio 2015 Shell （集成和独立）|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
 ## <a name="detect-when-visual-studio-is-running"></a>检测到运行 Visual Studio  
- 如果 Visual Studio 正在安装 VSPackage 时，不能正确注册你的 VSPackage。 安装程序必须检测到 Visual Studio 运行，且然后拒绝安装程序。 Windows 安装程序不允许您使用表条目来启用此类检测。 相反，必须按如下所示创建自定义操作： 使用`EnumProcesses`函数来检测*devenv.exe*处理，然后启动条件中可以设置使用的安装程序属性或有条件地显示一个对话框这将提示用户以关闭 Visual Studio。  
+ 如果 Visual Studio 正在安装 VSPackage 时，不能正确注册你的 VSPackage。 安装程序必须检测到 Visual Studio 运行，且然后拒绝安装程序。 Windows 安装程序不允许您使用表条目来启用此类检测。 相反，必须按如下所示创建自定义操作：使用`EnumProcesses`函数来检测*devenv.exe*处理，然后设置启动条件中使用或有条件地显示一个对话框，提示用户关闭 Visual Studio 的安装程序属性。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Windows Installer 安装 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

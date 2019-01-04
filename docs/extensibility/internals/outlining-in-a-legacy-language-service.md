@@ -1,9 +1,6 @@
 ---
-title: 旧语言服务中的大纲显示 |Microsoft 文档
-ms.custom: ''
+title: 旧版语言服务中的大纲显示 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - outlining
@@ -15,41 +12,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b899f53ba6b2a0b58997cc51a83a0d9ca8480e63
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 12ce11a057884f12466eb5c9c499b0822217b474
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135631"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939169"
 ---
-# <a name="outlining-in-a-legacy-language-service"></a>旧语言服务中的大纲显示
-以大纲方式显示使可以折叠到概述或大纲复杂程序。 例如，在 C# 中的所有方法可以都折叠导航到单个行中，显示仅方法签名。 此外，结构和类可以折叠以仅显示的名称的结构和类。 在单一方法中，可以折叠复杂的逻辑以通过如显示仅语句的第一行中显示的总体流程`foreach`， `if`，和`while`。  
+# <a name="outlining-in-a-legacy-language-service"></a>旧版语言服务中的大纲显示
+大纲显示使可能复杂程序折叠为概述或大纲。 例如，在 C# 中的所有方法可以都折叠为单个行，其中显示仅方法签名。 此外，结构和类可以折叠以显示仅的结构和类的名称。 在单一方法中，可以折叠复杂逻辑以通过如显示的语句中的，仅第一行中显示的总体流程`foreach`， `if`，和`while`。  
   
- 旧语言服务实现的 VSPackage，一部分但实现语言服务功能的新方法是使用 MEF 扩展。 若要了解详细信息，请参阅[演练： 以大纲方式显示](../../extensibility/walkthrough-outlining.md)。  
+ 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[演练：大纲显示](../../extensibility/walkthrough-outlining.md)。  
   
 > [!NOTE]
->  我们建议你开始使用新的编辑器 API 越早越好。 这将改善语言服务的性能，并让您充分利用新的编辑器功能。  
+>  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
   
-## <a name="enabling-support-for-outlining"></a>启用支持大纲显示  
- `AutoOutlining`注册表项设置为 1 以启用自动大纲显示。 自动大纲显示整个源分析当设置加载的文件或将其更改以标识隐藏的区域和显示大纲显示标志符号。 以大纲方式显示还可手动通过控制用户。  
+## <a name="enabling-support-for-outlining"></a>启用支持用于大纲显示  
+ `AutoOutlining`注册表项设置为 1 以启用自动大纲显示。 自动大纲显示设置了整个源的分析，加载或更改，以确定的隐藏的区域并显示大纲显示标志符号文件时。 大纲显示也能受手动用户。  
   
- 值`AutoOutlining`可以通过获取注册表项<xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A>属性<xref:Microsoft.VisualStudio.Package.LanguagePreferences>类。 `AutoOutlining`注册表条目可以使用的命名参数初始化<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>属性 (请参阅[注册旧语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)有关详细信息)。  
+ 值`AutoOutlining`可以通过获取注册表项<xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A>属性上的<xref:Microsoft.VisualStudio.Package.LanguagePreferences>类。 `AutoOutlining`注册表项可以使用的命名参数初始化<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>属性 (请参阅[注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)有关详细信息)。  
   
 ## <a name="the-hidden-region"></a>隐藏的区域  
- 若要提供大纲显示，你的语言服务必须支持隐藏的区域。 这些是文本的可以展开或折叠范围。 用标准语言符号，如大括号，或自定义的符号，可以分隔隐藏的区域。 例如，C# 包含`#region` / `#endregion`分隔的隐藏的区域的对。  
+ 若要提供大纲显示，你的语言服务必须支持的隐藏的区域。 这些是的可以展开或折叠文本范围。 可以通过标准的语言符号，如大括号，或通过自定义的符号分隔的隐藏的区域。 例如，具有 C# `#region` / `#endregion`分隔隐藏的区域对。  
   
- 隐藏的区域管理的隐藏的区域管理器，它作为公开<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>接口。  
+ 隐藏的区域管理的隐藏的区域管理器，它公开为<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>接口。  
   
- 以大纲方式显示使用隐藏的区域<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion>接口，并包含隐藏的区域、 当前可见状态，和跨度处于折叠状态时要显示横幅的跨度。  
+ 大纲显示使用的隐藏的区域<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion>接口，并包含隐藏的区域、 当前可见的状态和跨度处于折叠状态时显示的横幅的跨度。  
   
- 语言服务分析器使用<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A>方法将添加新的隐藏的区域与隐藏区域的默认行为时<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A>方法允许你自定义的外观和行为的轮廓。 一旦到隐藏的区域会话中，可以隐藏的区域[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]管理语言服务的隐藏的区域。  
+ 语言服务分析器会采用<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A>方法以添加新的隐藏的区域隐藏区域的默认行为时<xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A>方法，可自定义外观和行为的概要中。 一旦到隐藏的区域会话中，提供的隐藏的区域[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]管理语言服务的隐藏的区域。  
   
- 如果你需要确定销毁隐藏的区域会话时，更改隐藏的区域时，或者你需要确保特定的隐藏的区域可见，则你必须从派生类<xref:Microsoft.VisualStudio.Package.Source>类并重写适当的方法， <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>， <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>，和<xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>分别。  
+ 如果需要确定销毁隐藏的区域会话时，隐藏的区域发生更改，或者您需要确保特定的隐藏的区域可见，则你必须从派生类<xref:Microsoft.VisualStudio.Package.Source>类，并替换为适当的方法， <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>， <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>，和<xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>分别。  
   
 ### <a name="example"></a>示例  
- 下面是创建的大括号内的所有对隐藏的区域的简化的示例。 假定语言提供大括号匹配，并且要匹配的大括号至少包括大括号 （{和}）。 这种方法是仅供说明用途。 完整的实现者必须完成处理中的事例<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>。 此示例还演示如何设置<xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A>首选项设置为`true`暂时。 一种替代方法是指定`AutoOutlining`命名参数中的`ProvideLanguageServiceAttribute`语言包中的属性。  
+ 下面是创建为所有成对的大括号的隐藏的区域的简化的示例。 将假定该语言提供了大括号匹配，并在大括号匹配至少包括大括号 （{和}）。 这种方法是仅供说明用途。 完整的实现必须全面的处理中的事例<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>。 此示例还演示如何设置<xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A>首选项设置为`true`暂时。 一种替代方法是指定`AutoOutlining`中的参数名为`ProvideLanguageServiceAttribute`语言包中的属性。  
   
- 此示例假定注释、 字符串和文本的 C# 的规则。  
+ 此示例假定 C# 注释、 字符串和文本的规则。  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -120,6 +117,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [旧语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)   
- [注册旧语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)
+## <a name="see-also"></a>请参阅  
+ [旧版语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)   
+ [注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)

@@ -1,16 +1,11 @@
 ---
-title: 演练： 创建和调试 SharePoint 工作流解决方案 |Microsoft Docs
-ms.custom: ''
+title: 演练：创建和调试 SharePoint 工作流解决方案 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Workflow.WorkflowConditions
 - VS.SharePointTools.Workflow.WorkflowList
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -21,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626483"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912985"
 ---
-# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>演练： 创建和调试 SharePoint 工作流解决方案
+# <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>演练：创建和调试 SharePoint 工作流解决方案
   本演练演示如何创建一个基本顺序工作流模板。 工作流检查以确定文档是否已评审的共享的文档库的属性。 如果已查看过该文档，则工作流完成。  
   
  本演练阐释了以下任务：  
@@ -127,7 +122,7 @@ ms.locfileid: "42626483"
      此页可以指定工作流启动时。 默认情况下，工作流将启动时在用户手动启动它在 SharePoint 或创建工作流所关联到的项时。  
   
 ## <a name="create-workflow-activities"></a>创建工作流活动
- 工作流包含一个或多个*活动*表示要执行的操作。 使用工作流设计器来安排工作流活动。 在此过程中，我们将向工作流中添加两个活动： HandleExternalEventActivity 和 OnWorkFlowItemChanged。 这些活动监视中的文档的检查状态**Shared Documents**列表  
+ 工作流包含一个或多个*活动*表示要执行的操作。 使用工作流设计器来安排工作流活动。 在此过程中，我们将向工作流添加两个活动：HandleExternalEventActivity 和 OnWorkFlowItemChanged。 这些活动监视中的文档的检查状态**Shared Documents**列表  
   
 #### <a name="to-create-workflow-activities"></a>若要创建工作流活动  
   
@@ -296,4 +291,3 @@ ms.locfileid: "42626483"
  [创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)   
  [SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
-  

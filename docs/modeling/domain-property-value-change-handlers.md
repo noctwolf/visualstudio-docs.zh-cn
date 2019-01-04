@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 834ee518269c414c8a4ee08b056369813e0a1751
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8a682563355d37441b093db7c2e1575bf2584464
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941659"
 ---
 # <a name="domain-property-value-change-handlers"></a>域属性值更改处理程序
 
@@ -95,7 +94,7 @@ if (newValue > 10)
 }
 ```
 
-### <a name="alternative-technique-calculated-properties"></a>替代技术：计算属性
+### <a name="alternative-technique-calculated-properties"></a>替代技术：计算的属性
 
 上一示例显示了如何使用 OnValueChanged() 来将值从一个域属性传播到另一个域属性。 每个属性都具有其自己的存储值。
 

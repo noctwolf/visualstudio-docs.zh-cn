@@ -1,9 +1,6 @@
 ---
 title: 项目类型设计决策 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - project types, project file persistence
@@ -16,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bd6d2188b46093c5bfe18f9cabe985a953c000f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01bebdb26b4a3b89d9f9814c9428107d2cef6b9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898591"
 ---
 # <a name="project-type-design-decisions"></a>项目类型设计决策
 在创建新的项目类型之前，必须将多个设计决策制定您的项目类型。 您必须决定要将哪些类型的项将包含你的项目、 如何将保留项目文件，以及哪些承诺模型。  
@@ -60,7 +57,7 @@ ms.locfileid: "49869478"
  当通过使用事务处理模式下打开数据对象时，更改保存到内存中的临时位置和不会提交直到用户手动选择要保存该文件。 此时，所有更改必须一起都出现，或将进行任何更改。  
   
 ## <a name="see-also"></a>请参阅  
- [清单： 创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)   
  [项目持久性](../../extensibility/internals/project-persistence.md)   
  [项目模型的元素](../../extensibility/internals/elements-of-a-project-model.md)   

@@ -1,9 +1,6 @@
 ---
 title: 注册的自定义调试引擎 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, registering
@@ -13,18 +10,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c87b3749c2ea63e89e2e8fb0caf773434a38df2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 493a3ee8ee6b4f1a5dd62bd205831b99b79ca48a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896092"
 ---
 # <a name="register-a-custom-debug-engine"></a>注册自定义调试引擎
 调试引擎必须将自身注册为一个类工厂，以下 COM 约定，以及通过 Visual Studio 注册通过 Visual Studio 注册表子项。  
   
 > [!NOTE]
->  您可以找到举例说明如何注册在 TextInterpreter 示例中，作为一部分生成的调试引擎[教程： 生成调试引擎使用 ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)。  
+>  您可以找到举例说明如何注册在 TextInterpreter 示例中，作为一部分生成的调试引擎[教程：生成调试引擎使用 ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)。  
   
 ## <a name="dll-server-process"></a>DLL 服务器进程  
  调试引擎是通常设置在其自己的 DLL 中作为 COM 服务器。 在这种情况下，调试引擎必须注册类工厂的 CLSID COM Visual Studio 才能访问它。 然后，调试引擎必须注册自身建立任何属性 （也称为度量值） 的 Visual Studio 调试引擎支持。 度量值写入到 Visual Studio 注册表子项的选择取决于调试引擎支持的功能。  
@@ -54,4 +51,4 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ## <a name="see-also"></a>请参阅  
  [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
  [用于调试的 SDK 帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [教程： 构建使用 ATL COM 的调试引擎](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+ [教程：生成调试引擎使用 ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)

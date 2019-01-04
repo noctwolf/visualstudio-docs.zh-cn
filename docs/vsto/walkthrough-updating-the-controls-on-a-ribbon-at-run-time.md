@@ -1,9 +1,6 @@
 ---
-title: 演练： 更新在运行时功能区上的控件
-ms.custom: ''
+title: 演练：更新在运行时功能区上的控件
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 40072b1dcd6b24f552a3c87c8241ea4498229053
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: cd318be64bb15f72a0bd0147e2b14e79301fb7d6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926907"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>演练： 更新在运行时功能区上的控件
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>演练：更新在运行时功能区上的控件
 
 本演练演示如何使用功能区对象模型在功能区加载到 Office 应用程序之后，更新功能区上的控件。
 
@@ -68,7 +65,7 @@ ms.locfileid: "52389145"
 
 3.  将项目保存到默认项目目录中。
 
-     有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
 ## <a name="design-a-custom-ribbon-group"></a>设计自定义功能区组
 
@@ -294,7 +291,7 @@ ms.locfileid: "52389145"
 
 -   将基于上下文的 UI 添加到任何文档级自定义项。 有关详细信息，请参阅[操作窗格概述](../vsto/actions-pane-overview.md)。
 
--   扩展标准的或自定义的 Microsoft Office Outlook 窗体。 有关详细信息，请参阅[演练： 设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)。
+-   扩展标准的或自定义的 Microsoft Office Outlook 窗体。 有关详细信息，请参见[演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)。
 
 -   将自定义任务窗格添加到 Outlook。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。
 
@@ -303,13 +300,13 @@ ms.locfileid: "52389145"
 - [在运行时在功能区的访问](../vsto/accessing-the-ribbon-at-run-time.md)
 - [功能区概述](../vsto/ribbon-overview.md)
 - [语言集成查询 (LINQ)](/dotnet/csharp/linq/index)
-- [如何： 开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [功能区设计器](../vsto/ribbon-designer.md)
-- [演练： 使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [演练：使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [功能区对象模型概述](../vsto/ribbon-object-model-overview.md)
 - [为 Outlook 中自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)
-- [如何： 更改功能区上选项卡的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [如何： 自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)
-- [如何： 将控件添加到 Backstage 视图](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [如何： 将功能区从功能区设计器导出到功能区 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [如何： 显示外接程序用户界面错误](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [如何：更改功能区上选项卡的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [如何：自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)
+- [如何：将控件添加到 Backstage 视图](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [如何：将功能区从功能区设计器导出到功能区 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [如何：显示外接程序用户界面错误](../vsto/how-to-show-add-in-user-interface-errors.md)

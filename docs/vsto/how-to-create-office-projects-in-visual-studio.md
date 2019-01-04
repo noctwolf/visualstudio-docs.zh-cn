@@ -3,8 +3,6 @@ title: 如何：在 Visual Studio 中创建 Office 项目
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VST.SelectDocWizard.Page1
@@ -25,12 +23,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90dc0903f1a653ab2402d5877ebd4f962ba8cbe1
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 66263d8453fc550f0edb9c81d9c424f04a07c1b0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902235"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何：在 Visual Studio 中创建 Office 项目
   可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]创建 VSTO 外接程序和文档级自定义 Microsoft Office 应用程序。 有关这些类型的项目的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -165,5 +163,3 @@ ms.locfileid: "53647882"
  [合作开发 Office 解决方案](../vsto/collaborative-development-of-office-solutions.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)  
-  
-  

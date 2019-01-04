@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugModules2 |Microsoft 文档
-ms.custom: ''
+title: IEnumDebugModules2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumDebugModules2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3ca02776aae4a7b4cd22485eba9827f4731d5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bcdcdfc343ae5fdc10fd3fa15a5ade4c7259ba7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888395"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
-此接口枚举模块的列表。  
+此接口枚举的模块的列表。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,36 +28,36 @@ ms.locfileid: "31124797"
 IEnumDebugModules2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 调试引擎 (DE) 实现此接口来表示程序加载的模块的列表。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 调试引擎 (DE) 实现此接口来表示某个程序的加载模块的列表。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- Visual Studio 调用[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)获取此接口。  
+ Visual Studio 调用[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)若要获取此接口。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IEnumDebugModules2`。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一篇](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|检索指定的枚举序列中的模块数。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|跳过指定的枚举序列中的模块数。|  
-|[重置](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|将枚举序列重置到开头。|  
-|[克隆](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|创建包含与当前的枚举器相同的枚举状态的枚举。|  
+|[下一页](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|检索指定的枚举序列中的模块数。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|将跳过指定的数目的枚举序列中的模块。|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugmodules2-reset.md)|将枚举序列重置到开头。|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|创建一个包含当前枚举数形式的相同枚举状态的枚举器。|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|获取模块的数。|  
   
 ## <a name="remarks"></a>备注  
  Visual Studio 将使用此接口主要用于更新**模块**窗口。  
   
- 为了在 Visual Studio 中进行调试，程序是一个逻辑的代码说明可以跨模块边界进行，因此序列的单个模块的列表需要[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)接口。 在列表中的第一个模块通常包含关联的程序的初始入口点。  
+ 为了在 Visual Studio 中进行调试，程序是可以跨越模块边界，因此代码说明一个逻辑序列的单个模块的列表需要[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)接口。 在列表中的第一个模块通常包含关联的程序的初始入口点。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)
