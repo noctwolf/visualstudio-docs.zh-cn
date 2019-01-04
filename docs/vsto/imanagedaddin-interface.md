@@ -1,9 +1,6 @@
 ---
 title: IManagedAddin 接口
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ddede8542cda7499a9781c19a6baf1c58acfd125
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0e754502e3bee2a1e35dda7feb19bc4906f42e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839539"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859050"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 接口
   实现 IManagedAddin 接口来创建一个组件，它将加载托管 VSTO 外接程序。此接口在 2007 Microsoft Office system 中添加。  
@@ -73,7 +70,7 @@ interface IManagedAddin : IUnknown
   
 4. 应用程序调用 [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法，并传入 `Manifest` 项的值。  
   
-5. [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法执行加载 VSTO 外接程序所需的任务，例如为正在加载的 VSTO 外接程序配置应用程序域和安全策略。  
+5.  [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法执行加载 VSTO 外接程序所需的任务，例如为正在加载的 VSTO 外接程序配置应用程序域和安全策略。  
   
    有关注册表的详细信息的密钥，Microsoft Office 应用程序用于发现和加载托管 VSTO 外接程序，请参阅[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。  
   
@@ -89,5 +86,3 @@ interface IManagedAddin : IUnknown
   
 ## <a name="see-also"></a>请参阅  
  [非托管 API 参考&#40;Visual Studio 中的 Office 开发&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
-  
-  

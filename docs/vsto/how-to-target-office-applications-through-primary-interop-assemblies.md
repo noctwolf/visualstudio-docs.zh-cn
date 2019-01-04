@@ -1,9 +1,6 @@
 ---
-title: 如何： 通过主互操作程序集的目标 Office 应用程序
-ms.custom: ''
+title: 如何：通过主互操作程序集的目标 Office 应用程序
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 576d26f039005dac3d494652f1e5127c39092a00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fb5a97475612eb52fa51eadcfbe9eaa613a55bfb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845897"
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>如何： 通过主互操作程序集的目标 Office 应用程序
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>如何：通过主互操作程序集的目标 Office 应用程序
   在创建新的 Office 项目时，Visual Studio 会自动添加对生成该项目所需的 Microsoft Office 主互操作程序集 (PIA) 的引用。 在以下方案中，必须添加对其他 PIA 的引用：  
   
 - 想要在项目中使用其他 Microsoft Office 应用程序的功能。 例如，你可能想要在 Microsoft Office Word 的项目中使用 Microsoft Office Excel 中的功能。  
@@ -58,6 +55,4 @@ ms.locfileid: "49863745"
  [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)   
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
- [如何： 安装 Office 主互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-  
-  
+ [如何：安装 Office 主互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)  
