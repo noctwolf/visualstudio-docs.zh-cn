@@ -1,9 +1,6 @@
 ---
 title: CommandPlacement 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d7288de9b0724d8ff4ef7b6174f59e747a9879d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c5d694f6ed12d3fd7d531ec6a0a01ec70a826561
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941346"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 元素
 CommandPlacement 元素使按钮、 组和要包含在多个组或菜单中的菜单。 通过使用 CommandPlacement 元素，无需完全重新定义这些项，若要修改用户界面的外观。  
@@ -41,16 +38,16 @@ CommandPlacement 元素使按钮、 组和要包含在多个组或菜单中的�
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必须的。 命令集，如中所定义的 guid [Symbols 元素](../extensibility/symbols-element.md)。|  
-|id|必须的。 菜单、 组或命令放置，如中所定义的 id `Symbols Element`。|  
-|priority|必须的。 确定项在其父元素中的 visual 位置。|  
+|guid|必需。 命令集，如中所定义的 guid [Symbols 元素](../extensibility/symbols-element.md)。|  
+|id|必需。 菜单、 组或命令放置，如中所定义的 id `Symbols Element`。|  
+|priority|必需。 确定项在其父元素中的 visual 位置。|  
 |条件|可选。 请参阅[条件 Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
 |元素|描述|  
 |-------------|-----------------|  
-|父级|必须的。 菜单或托管要放置的项组中。|  
+|父级|必需。 菜单或托管要放置的项组中。|  
   
 ### <a name="parent-elements"></a>父元素  
   

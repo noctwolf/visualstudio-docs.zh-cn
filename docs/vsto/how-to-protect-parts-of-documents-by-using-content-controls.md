@@ -1,9 +1,6 @@
 ---
-title: 如何： 使用内容控件保护文档的某些部分
-ms.custom: ''
+title: 如何：使用内容控件保护文档的某些部分
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: beee4dd4a67b03f278a296d4b5f129100212fd25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8498eac9c34c9876c22eb9f04723b62e40f70ca4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850355"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989252"
 ---
-# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何： 使用内容控件保护文档的某些部分
+# <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何：使用内容控件保护文档的某些部分
   当你保护文档的一部分时，将阻止用户更改或删除文档该部分中的内容。 通过使用内容控件，有以下几种方法来保护 Microsoft Office Word 文档的各个部分：  
   
 - 你可以保护内容控件。  
@@ -40,7 +37,7 @@ ms.locfileid: "49850355"
 ##  <a name="EditDeleteControl"></a> 保护内容控件  
  你可以阻止用户编辑或删除内容控件通过在设计时或在运行时在文档级项目中设置控件的属性。  
   
- 还可以使用 VSTO 外接程序项目保护在运行时添加到文档中的内容控件。 有关详细信息，请参阅[如何： 向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
+ 还可以使用 VSTO 外接程序项目保护在运行时添加到文档中的内容控件。 有关更多信息，请参见[如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
   
 ### <a name="to-protect-a-content-control-at-design-time"></a>若要在设计时保护内容控件  
   
@@ -85,7 +82,7 @@ ms.locfileid: "49850355"
 2.  在功能区上，单击 **“开发人员”** 选项卡。  
   
     > [!NOTE]  
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何： 在功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关更多信息，请参见[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 3.  在中**控件**组中，单击**组**下拉列表按钮，然后再单击**组**。  
   
@@ -108,8 +105,7 @@ ms.locfileid: "49850355"
 ## <a name="see-also"></a>请参阅  
  [通过使用扩展的对象自动化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [内容控件](../vsto/content-controls.md)   
- [如何： 向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)  
-   

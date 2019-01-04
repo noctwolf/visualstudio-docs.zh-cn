@@ -1,6 +1,5 @@
 ---
 title: 图像库查看器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -9,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968665"
 ---
 # <a name="image-library-viewer"></a>图像库查看器
 Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从而允许用户在相同的方式将 Visual Studio 中处理它们。 用户可以更改背景、 大小、 DPI、 高对比度和其他设置。 该工具也会显示正在加载信息为每个映像清单和映像清单中显示的每个映像的源信息。 此工具可用于：  
@@ -132,14 +131,14 @@ Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从
 |-|-|  
 |**特性**|**定义**|  
 |URI|[必需]一个 URI，定义可从中加载图像。 它可以是以下值之一：<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)使用应用程序: / / 颁发机构<br /><br /> -一个绝对组件资源引用<br /><br /> 的包含本机资源的文件路径|  
-|背景|[可选]指示什么类型的源应使用的背景。<br /><br /> 它可以是以下值之一：<br /><br /> - *光*： 可以在浅色背景上使用了源。<br /><br /> - *深色*： 可以在深色背景上使用了源。<br /><br /> - *高对比度*： 可以在高对比度模式中的任何背景上使用了源。<br /><br /> - *HighContrastLight*： 可以在高对比度模式中的浅色背景上使用了源。<br /><br /> -*HighContrastDark*： 可以在高对比度模式中的深色背景上使用了源。<br /><br /> 如果**背景**省略属性，可以在任何的背景上使用了源。<br /><br /> 如果**背景**是*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*、永远不会反转源的颜色。 如果**背景**省略或设为*对比度*，由图像的控制的源的颜色反转**AllowColorInversion**属性。|  
+|背景|[可选]指示什么类型的源应使用的背景。<br /><br /> 它可以是以下值之一：<br /><br /> - *光*:源可以使用浅色背景上。<br /><br /> - *深色*:可以在深色背景上使用源。<br /><br /> - *高对比度*:可以在高对比度模式中的任何背景上使用源。<br /><br /> - *HighContrastLight*:可以在高对比度模式下浅色背景上使用源。<br /><br /> -*HighContrastDark*:可以在高对比度模式中的深色背景上使用源。<br /><br /> 如果**背景**省略属性，可以在任何的背景上使用了源。<br /><br /> 如果**背景**是*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*、永远不会反转源的颜色。 如果**背景**省略或设为*对比度*，由图像的控制的源的颜色反转**AllowColorInversion**属性。|  
   
  一个\<源 > 元素可以具有以下可选子元素之一：  
   
 ||||  
 |-|-|-|  
 |**元素**|**属性 （全部所需）**|**定义**|  
-|\<大小 >|“值”|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|  
+|\<大小 >|值|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|  
 |\<SizeRange >|MinSize、 MaxSize|将映像从 MinSize 到最大大小 （以设备为单位） （含限值） 使用源。 图将方形。|  
 |\<维度 >|宽度、 高度|源将用于给定的宽度和高度 （以设备为单位） 的映像。|  
 |\<DimensionRange >|MinWidth，MinHeight，<br /><br /> MaxWidth MaxHeight|源将用于从最小宽度/高度 （以设备为单位） 的最大宽度/高度的图像 （含）。|  
@@ -225,7 +224,7 @@ Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从
   
 ## <a name="notes"></a>说明  
   
--   默认情况下，该工具会在 Visual Studio 安装目录中存在多个映像清单中拉取。 仅具有公开使用名字对象的一种是**Microsoft.VisualStudio.ImageCatalog**清单。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (不要**不**重写自定义清单中的此 GUID) 类型： KnownMonikers  
+-   默认情况下，该工具会在 Visual Studio 安装目录中存在多个映像清单中拉取。 仅具有公开使用名字对象的一种是**Microsoft.VisualStudio.ImageCatalog**清单。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (不要**不**重写自定义清单中的此 GUID) 类型：KnownMonikers  
   
 -   该工具会尝试启动时加载它找到的所有映像清单，因此，可能需要几秒钟，要实际出现的应用程序。 它也可能会加载清单时是缓慢或无响应。  
   

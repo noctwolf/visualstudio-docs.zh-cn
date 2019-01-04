@@ -1,9 +1,6 @@
 ---
-title: 测试区域 8： 插件切换 |Microsoft Docs
-ms.custom: ''
+title: 测试区域 8:插件切换 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], switching plug-ins
@@ -14,20 +11,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cec4bc16cea19a1d2eeea68d7d38797d8ea5b312
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e62885b117e8b5fe42b1078c6fb8fbb4b68bf03
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986227"
 ---
-# <a name="test-area-8-plug-in-switching"></a>测试区域 8：插件切换
+# <a name="test-area-8-plug-in-switching"></a>测试区域 8:插件切换
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 具有用户界面 (UI) 若要更改当前源代码管理插件。 此测试区域提供用于选择其要使用的解决方案源代码管理插件的过程的测试用例。  
 
 ## <a name="command-menu-access"></a>命令菜单访问  
  以下[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]测试用例中使用集成的开发环境菜单路径。  
 
--   当前源代码管理插件：**工具** -> **选项** -> **源代码管理** -> **插件选择**.  
+-   当前源代码管理插件：**工具** -> **选项** -> **源代码管理** -> **插件选择**。  
 
 -   更改源控制绑定：**文件** -> **源代码管理** -> **更改源代码管理**...  
 
@@ -37,7 +34,7 @@ ms.locfileid: "49920152"
 ## <a name="test-cases"></a>测试用例  
  以下是用于插件的切换测试区域的特定测试用例。  
 
-### <a name="case-8a-automatic-change"></a>Case 8a： 自动更改  
+### <a name="case-8a-automatic-change"></a>Case 8a:自动更改  
 
 #### <a name="expected-behavior"></a>预期的行为  
  当用户加载源控件下的解决方案时，该解决方案会自动加载和相应的源代码管理插件选择的新。  
@@ -47,7 +44,7 @@ ms.locfileid: "49920152"
 | - | - | - |
 | 自动进行源控制插件更改 | 1.选择插件下测试的新 (**工具** -> **选项** -> **源代码管理** -> **插件选择**。)<br />2.创建新项目。<br />3.将解决方案添加到源代码管理。<br />4.选择其他插件 (例如， [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)])。<br />5.接受卸载解决方案提示。<br />6.重新打开该解决方案从磁盘。 | 打开解决方案。<br /><br /> 待测试插件是当前源代码管理插件。 |
 
-### <a name="case-8b-solution-based-change"></a>Case 8b： 基于解决方案的更改  
+### <a name="case-8b-solution-based-change"></a>Case 8b:基于解决方案的更改  
 
 #### <a name="expected-behavior"></a>预期的行为  
  解决方案可以具有其关联的源代码管理插件已更改。  

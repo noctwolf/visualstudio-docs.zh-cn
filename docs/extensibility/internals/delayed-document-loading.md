@@ -1,9 +1,6 @@
 ---
 title: 文档加载延迟 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ca02010586711fa1a9af463f2fde5d0f4963a5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 27edc56516293ff6502f0708a02faa7bae1e3719
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500363"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940357"
 ---
 # <a name="delayed-document-loading"></a>文档加载延迟
 当用户重新打开 Visual Studio 解决方案时，不会立即加载的大多数相关联的文档。 文档窗口框架创建处于挂起的初始化状态，并 （称为存根 （stub） 帧） 的占位符文档置于运行文档表 (RDT)。  
@@ -59,7 +56,7 @@ ms.locfileid: "39500363"
 - 否则，您可以订阅<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A>。  
   
 
- 下面的示例是假设文档访问方案： Visual Studio 扩展想要显示有关打开的文档的某些信息，例如编辑锁定计数和文档数据有关的内容。 枚举中 RDT 使用文档<xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>，然后调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A>以便检索编辑锁计数和文档数据的每个文档。 如果文档处于挂起的初始化状态，则请求文档数据将会导致它不必要地初始化。  
+ 下面的示例是假设文档访问方案：Visual Studio 扩展想要显示有关打开的文档的某些信息，例如编辑锁定计数和文档数据有关的内容。 枚举中 RDT 使用文档<xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments>，然后调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A>以便检索编辑锁计数和文档数据的每个文档。 如果文档处于挂起的初始化状态，则请求文档数据将会导致它不必要地初始化。  
   
  访问文档的更高效的方法是使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A>可获取编辑锁计数，然后使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>来确定文档是否已初始化。 如果不包括标志<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>，该文档已初始化，并请求使用的文档数据<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A>不会导致任何不必要的初始化。 如果包括标志<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4>，该扩展应避免初始化文档后，才请求文档数据。 可以在中检测到此初始化`OnAfterAttributeChange(Ex)`事件处理程序。  
   
