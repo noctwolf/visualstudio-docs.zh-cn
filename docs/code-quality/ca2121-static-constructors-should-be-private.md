@@ -1,8 +1,7 @@
 ---
-title: CA2121：静态构造函数应为私有
+title: CA2121:静态构造函数应为私有
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2121
@@ -16,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f20115d694657053e3e687b4e399df463957e9c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 124d65f1147bbc9aa0d38b2bca8f742bf1b60a9b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53954258"
 ---
-# <a name="ca2121-static-constructors-should-be-private"></a>CA2121：静态构造函数应为私有
+# <a name="ca2121-static-constructors-should-be-private"></a>CA2121:静态构造函数应为私有
 
 |||
 |-|-|
@@ -38,7 +37,7 @@ ms.locfileid: "49923922"
 
 ## <a name="rule-description"></a>规则说明
 
-静态构造函数，也称为类构造函数，用于初始化的类型。 系统在创建第一个类型实例或引用任何静态成员之前调用静态构造函数。 用户可以调用静态构造函数时没有控制。 如果静态构造函数不是私有，则系统以外的代码可以调用它。 根据构造函数中执行的操作，这可能导致意外行为。
+静态构造函数，也称为类构造函数，用于初始化的类型。 系统在创建第一个类型实例或引用任何静态成员之前调用静态构造函数。 用户无法控制何时调用静态构造函数。 如果静态构造函数不是私有，则系统以外的代码可以调用它。 根据构造函数中执行的操作，这可能导致意外行为。
 
 此规则由 C# 和 Visual Basic 编译器强制执行。
 

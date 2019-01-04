@@ -2,7 +2,6 @@
 title: 在开发过程中验证系统
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a8ff8ac2de47e9f4d52e44f61ea4ec99f7d87f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0878291441f6fe5d5237c0317b3df631aefee139
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907295"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869315"
 ---
 # <a name="validate-your-system-during-development"></a>在开发过程中验证系统
 Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构保持一致。
@@ -35,7 +34,7 @@ Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构
 
 |**类别**|**链接**|
 |-|-|
-|**视频**|![视频链接](../data-tools/media/playvideo.gif)[第 9 频道： Doug 七： 代码理解和使用 Visual Studio 2010 进行系统设计](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif)[第 9 频道： 构建应用程序使用的依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif) [MSDN 如何实现系列： 如何使用依赖项关系图验证代码](http://go.microsoft.com/fwlink/?LinkID=214405)|
+|**视频**|![链接到视频](../data-tools/media/playvideo.gif)[第 9 频道：Doug Seven:代码理解和使用 Visual Studio 2010 进行系统设计](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![链接到视频](../data-tools/media/playvideo.gif)[第 9 频道：构建应用程序使用的依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![链接到视频](../data-tools/media/playvideo.gif) [MSDN 如何实现系列：如何使用依赖项关系图验证代码](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**论坛**|-   [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 可视化和建模 SDK（DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**博客**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**技术文章和日志**|[MSDN 体系结构中心](http://go.microsoft.com/fwlink/?LinkId=201343)|

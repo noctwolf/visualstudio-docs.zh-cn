@@ -1,8 +1,7 @@
 ---
-title: CA2000：超出范围前释放对象
+title: CA2000:丢失范围之前释放对象
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
 - CA2000
@@ -20,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 041cade3d1c65a40826920b94adf012aa9a4b021
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0d6aa3574e71cf64e01d083171e8bb477da02265
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549849"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951126"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000：超出范围前释放对象
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000:丢失范围之前释放对象
 
 |||
 |-|-|
@@ -70,7 +69,7 @@ ms.locfileid: "45549849"
 ## <a name="related-rules"></a>相关的规则
  [CA2213：应释放可释放的字段](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2202：不要多次释放对象](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+ [CA2202:多次未释放对象](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>示例
 
@@ -170,4 +169,4 @@ End Function
 ## <a name="see-also"></a>请参阅
 
 - <xref:System.IDisposable>
-- [释放模式](/dotnet/standard/design-guidelines/dispose-pattern)
+- [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)

@@ -1,9 +1,6 @@
 ---
 title: SccHistory 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccHistory
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ed7cde8d02706e03f98b98251f919cb5e756247
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adf1cf2c408cf089d559c4c7d8c443470743fbc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832792"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956902"
 ---
 # <a name="scchistory-function"></a>SccHistory 函数
 此函数可显示指定的文件的历史记录。  
@@ -60,7 +57,7 @@ SCCRTN SccHistory(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|成功地获取版本历史记录。|  
 |SCC_I_RELOADFILE|源代码管理系统实际上在情况下修改磁盘上的文件提取历史记录 （例如，通过获取的旧版本），因此 IDE 应重新加载此文件。|  

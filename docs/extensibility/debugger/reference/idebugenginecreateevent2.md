@@ -1,9 +1,6 @@
 ---
-title: IDebugEngineCreateEvent2 |Microsoft 文档
-ms.custom: ''
+title: IDebugEngineCreateEvent2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEngineCreateEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c10522a869ff279c81e06aca53c3d06b453cdff6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: accf18a72969d160d9b4469d9f0e6f4d843a5c70
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963157"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
-创建重复的实例时，调试引擎 (DE) 会将此接口发送到会话调试管理器 (SDM)。  
+创建的默认实例时，调试引擎 (DE) 会将此接口发送到会话调试管理器 (SDM)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,27 +28,27 @@ ms.locfileid: "31111844"
 IDebugEngineCreateEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- DE 作为其常规操作的一部分实现此接口。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现该接口对同一个对象 (SDM 使用`QueryInterface`方法来访问`IDebugEvent2`接口)。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ DE 实现此接口作为其常规操作的一部分。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象 (使用 SDM`QueryInterface`方法来访问`IDebugEvent2`接口)。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- DE 创建，并在实例化 DE 时发送此事件对象。 通过使用发送事件[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 时将其附加到正在调试的程序提供的回调函数。  
+ DE 创建，并在实例化 DE 时发送此事件对象。 通过使用发送该事件[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 它附加到正在调试的程序时提供的回调函数。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDebugEngineCreateEvent2`。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|检索表示新创建的调试引擎 (DE) 的对象。|  
+|[GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)|检索该对象表示新创建的调试引擎 (DE)。|  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

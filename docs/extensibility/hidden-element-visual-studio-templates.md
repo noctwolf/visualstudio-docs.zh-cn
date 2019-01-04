@@ -1,6 +1,5 @@
 ---
 title: 隐藏元素 （Visual Studio 模板） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5eedcbca60ba0df886976a71780bb431a4fafbf9
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 008a46399808eae2921e51099814c7ead4675c78
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561611"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896482"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden 的元素 （Visual Studio 模板）
 指定模板是否出现在**新的项目**或**添加新项**对话框。  

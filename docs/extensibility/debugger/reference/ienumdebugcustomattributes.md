@@ -1,9 +1,6 @@
 ---
-title: IEnumDebugCustomAttributes |Microsoft 文档
-ms.custom: ''
+title: IEnumDebugCustomAttributes |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IEnumCustomAttributes
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f3387a8243a617fc9120c5caa161912e7aa92fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ebf7250f0845eb666b910b5ddcce266be1ea9361
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123676"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990641"
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
-枚举自定义属性。  
+枚举的自定义特性。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,8 +28,8 @@ ms.locfileid: "31123676"
 IEnumCustomAttributes : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 符号提供程序实现此接口以支持自定义特性 (通过[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)接口)。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 符号提供程序实现此接口以支持自定义属性 (通过[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)接口)。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)返回此接口。  
@@ -42,20 +39,20 @@ IEnumCustomAttributes : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一篇](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|检索指定的数目的枚举序列中的自定义属性。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|跳过指定的数目的枚举序列中的自定义属性。|  
-|[重置](../../../extensibility/debugger/reference/ienumdebugcustomattributes-reset.md)|将枚举序列重置到开头。|  
-|[克隆](../../../extensibility/debugger/reference/ienumdebugcustomattributes-clone.md)|创建包含与当前的枚举器相同的枚举状态的枚举。|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugcustomattributes-getcount.md)|获取枚举器中的自定义的属性数。|  
+|[下一页](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|检索指定的数目的枚举序列中的自定义属性。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|跳过枚举序列中的自定义属性的指定的数目。|  
+|[Reset](../../../extensibility/debugger/reference/ienumdebugcustomattributes-reset.md)|将枚举序列重置到开头。|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugcustomattributes-clone.md)|创建一个包含当前枚举数形式的相同枚举状态的枚举器。|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugcustomattributes-getcount.md)|获取一个枚举器中的自定义属性的数目。|  
   
 ## <a name="requirements"></a>要求  
  标头： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)   
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

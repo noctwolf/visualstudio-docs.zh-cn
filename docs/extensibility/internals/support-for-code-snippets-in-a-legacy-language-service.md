@@ -1,9 +1,6 @@
 ---
 title: 对旧版语言服务中的代码片段的支持 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - snippets, supporting in language services
@@ -15,19 +12,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7ad314e5a160ae280b33586fb7dfe1b42ec470f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852940"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>旧版语言服务中的代码片段支持
 代码片段是一段代码将插入到源文件。 在代码段是使用一组字段的基于 XML 的模板。 插入代码段，并可以具有不同的值，具体取决于在其中插入片段的上下文后，将突出显示这些字段。 立即插入代码段后，可以设置的语言服务的格式代码段。  
   
  允许的代码段以通过使用 TAB 键导航字段的特殊的编辑模式中插入代码段。 字段可以支持 IntelliSense 样式下拉列表菜单。 用户通过键入 ENTER 或 ESC 键提交到源代码文件的代码段。 若要了解有关代码段的详细信息，请参阅[代码片段](../../ide/code-snippets.md)。  
   
- 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[演练： 实现代码片段](../../extensibility/walkthrough-implementing-code-snippets.md)。  
+ 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[演练：实现代码片段](../../extensibility/walkthrough-implementing-code-snippets.md)。  
   
 > [!NOTE]
 >  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
@@ -51,7 +48,7 @@ ms.locfileid: "49858103"
 ### <a name="installing-the-snippet-files"></a>安装代码片段文件  
  一个有通常代码片段模板每个文件的一种语言的所有代码段将存储为 XML 文件中的模板。 有关使用代码片段模板的 XML 架构的详细信息，请参阅[代码片段架构参考](../../ide/code-snippets-schema-reference.md)。 每个代码片段模板标识与语言 id。 此语言 ID 在注册表中指定和放入`Language`属性的\<代码 > 模板中的标记。  
   
- 通常有两个代码段模板文件的存储位置的位置： 1） 你的语言已安装了和 2） 在用户的文件夹。 这些位置将添加到注册表因此，Visual Studio**代码片段管理器**可以找到的代码段。 用户的文件夹是由用户创建的代码段的存储位置。  
+ 通常有两个代码段模板文件的存储位置的位置：1） 你的语言已安装和 2） 中用户的文件夹。 这些位置将添加到注册表因此，Visual Studio**代码片段管理器**可以找到的代码段。 用户的文件夹是由用户创建的代码段的存储位置。  
   
  已安装的代码段模板文件的典型的文件夹布局如下所示： *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\*LCID*\Snippets。  
   
@@ -223,7 +220,7 @@ ms.locfileid: "49858103"
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>使用快捷方式插入代码片段  
  实现从完成列表的快捷方式是变得更为复杂而不是实现菜单命令。 您首先必须将代码片段快捷方式添加到 IntelliSense 文字自动完成列表。 然后必须检测由于完成而插入代码段快捷方式名称后。 最后，必须获取的代码片段标题和路径使用的快捷名称，并传递到该信息<xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A>方法<xref:Microsoft.VisualStudio.Package.ExpansionProvider>方法。  
   
- 若要将代码片段快捷方式添加到文字自动完成列表中，将其添加到<xref:Microsoft.VisualStudio.Package.Declarations>对象中你<xref:Microsoft.VisualStudio.Package.AuthoringScope>类。 必须确保能够识别为一个代码段名称的快捷方式。 有关示例，请参阅[演练： 获取列表的安装代码片段 （旧版实现）](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)。  
+ 若要将代码片段快捷方式添加到文字自动完成列表中，将其添加到<xref:Microsoft.VisualStudio.Package.Declarations>对象中你<xref:Microsoft.VisualStudio.Package.AuthoringScope>类。 必须确保能够识别为一个代码段名称的快捷方式。 有关示例，请参阅[演练：获取一系列安装代码片段 （旧版实现）](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)。  
   
  你可以检测到插入代码片段快捷方式<xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A>方法的<xref:Microsoft.VisualStudio.Package.Declarations>类。 因为代码段名称已插入到源文件中，必须插入扩展时删除。 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A>方法采用描述的代码段插入点的跨度; 如果范围在源文件中包含整个代码段名称，该名称替换为代码段。  
   
@@ -338,7 +335,7 @@ namespace TestLanguagePackage
   
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-   获取语言服务的安装的代码片段的列表的详细信息，请参阅[演练： 获取列表的安装代码片段 （旧版实现）](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)。  
+   获取语言服务的安装的代码片段的列表的详细信息，请参阅[演练：获取一系列安装代码片段 （旧版实现）](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)。  
   
 ## <a name="implementing-the-expansionfunction-class"></a>实现 ExpansionFunction 类  
  扩展函数是命名的函数的嵌入代码片段模板，并返回一个或多个要放置在一个字段的值。 为了支持扩展函数语言服务中，你必须从派生类<xref:Microsoft.VisualStudio.Package.ExpansionFunction>类，实现<xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A>方法。 然后必须重写<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A>中的方法<xref:Microsoft.VisualStudio.Package.LanguageService>类以返回你的版本的新实例化<xref:Microsoft.VisualStudio.Package.ExpansionFunction>支持每个扩展函数的类。 如果您支持的可能值的扩展函数的列表，还必须重写<xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A>中的方法<xref:Microsoft.VisualStudio.Package.ExpansionFunction>类以返回这些值的列表。  
@@ -395,4 +392,4 @@ namespace TestLanguagePackage
  [旧版语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [代码片段](../../ide/code-snippets.md)   
- [演练：获取安装代码片段（旧版实现）的列表](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+ [演练：获取安装的代码片段 （旧版实现） 的列表](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

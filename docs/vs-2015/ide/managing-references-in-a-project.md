@@ -28,19 +28,19 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 10fed2fa77274469a7b82a1583e825c57ca4a581
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 464b5703a33caefe4533d8ecd726bbb9d6910de4
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195593"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740359"
 ---
 # <a name="managing-references-in-a-project"></a>管理项目中的引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在对外部组件或连接的服务编写代码之前，你的项目必须首先包含对它的引用。 引用实质上是项目文件中包含 Visual Studio 定位组件或服务所需信息的条目。  
   
- 若要添加引用，请右键单击“解决方案资源管理器”中的“引用”节点，然后选择 **“添加引用”**。 有关详细信息，请参阅[如何：使用引用管理器添加或删除引用](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。  
+ 若要添加引用，请右键单击“解决方案资源管理器”中的“引用”节点，然后选择 **“添加引用”**。 有关更多信息，请参见[如何：使用引用管理器添加或删除引用](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。  
   
  ![在 Visual C++ 中添加引用](../ide/media/vs2015-cpp-add-reference.png "vs2015_cpp_add_reference")  
   
@@ -113,7 +113,7 @@ ms.locfileid: "49195593"
 ## <a name="project-to-project-references"></a>项目到项目的引用  
  项目到项目的引用是对包含程序集的项目的引用；通过使用 **“项目”** 选项卡进行创建。给定项目路径后，Visual Studio 可以找到程序集。  
   
- 如果拥有生成程序集的项目，则应引用该项目并且不使用文件引用（见下文）。 项目到项目的引用的一个优点是能够在生成系统中的项目之间创建依赖关系。 如果依赖项目在上次生成引用项目之后已发生更改，则将生成该依赖项目。 文件引用不会创建生成依赖关系，因此可以在不生成依赖项目的情况下生成引用项目，并且该引用可能会过时。 （也就是说，项目可以引用以前生成的项目版本。）这可能导致 bin 目录中所需的单个 DLL 同时存在多个版本，而这种情况实际是不可能出现的。 当此冲突发生时，你将看到一条消息，例如[“警告：无法将项目 ‘project’ 中的依赖关系‘file’复制到运行目录，因为它将覆盖引用 ‘file’。”](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-file.md)。 有关详细信息，请参阅 [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md) 和 [How to: Create and Remove Project Dependencies](../ide/how-to-create-and-remove-project-dependencies.md)。  
+ 如果拥有生成程序集的项目，则应引用该项目并且不使用文件引用（见下文）。 项目到项目的引用的一个优点是能够在生成系统中的项目之间创建依赖关系。 如果依赖项目在上次生成引用项目之后已发生更改，则将生成该依赖项目。 文件引用不会创建生成依赖关系，因此可以在不生成依赖项目的情况下生成引用项目，并且该引用可能会过时。 （也就是说，项目可以引用以前生成的项目版本。）这可能导致 bin 目录中所需的单个 DLL 同时存在多个版本，而这种情况实际是不可能出现的。 当此冲突发生时，你将看到一条消息，例如[“警告：无法将项目 ‘project’ 中的依赖关系‘file’复制到运行目录，因为它将覆盖引用 ‘file’。”](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied)。 有关详细信息，请参阅[有关损坏的引用的疑难解答](../ide/troubleshooting-broken-references.md)以及[如何：创建和删除项目依赖关系](../ide/how-to-create-and-remove-project-dependencies.md)。  
   
 > [!NOTE]
 >  如果一个项目的目标 .NET Framework 版本是 4.5，而另一个项目的目标版本是 2、3、3.5 或 4.0，则创建的是文件引用而非项目到项目的引用。  
@@ -124,5 +124,5 @@ ms.locfileid: "49195593"
 ## <a name="see-also"></a>请参阅  
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
  [使用程序集编程](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
- [How to: Add or Remove References By Using the Reference Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+ [如何：使用引用管理器添加或删除引用](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
 

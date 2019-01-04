@@ -1,9 +1,6 @@
 ---
-title: IDebugPortSupplier3::CanPersistPorts |Microsoft 文档
-ms.custom: ''
+title: IDebugPortSupplier3::CanPersistPorts |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugPortSupplier3::CanPersistPorts
@@ -15,34 +12,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ee07f9118565177e513647d28ebcb11a23de3a6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d9038663bd74b5dabeda92d8b6b9e4e31d092de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53939961"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
-此方法可确定是否端口提供程序可以调用调试器之间 （通过其写入到磁盘） 中保留端口。  
+此方法确定是否端口提供程序可以保持不变的端口 （通过将它们写入磁盘） 的调试器调用之间。  
   
 ## <a name="syntax"></a>语法  
   
 ```cpp  
-HRESULT CanPersistPorts();  
+HRESULT CanPersistPorts();  
 ```  
   
 ```csharp  
-int CanPersistPorts();  
+int CanPersistPorts();  
 ```  
   
 #### <a name="parameters"></a>参数  
  无。  
   
 ## <a name="return-value"></a>返回值  
- `S_OK` 如果端口可以保持不变，或`S_FALSE`以指示不保留端口。  
+ `S_OK` 如果端口可以保持不变，或`S_FALSE`以指示不能保留端口。  
   
 ## <a name="remarks"></a>备注  
- 如果端口供应商可以保留端口，它应被销毁时这样操作，然后重新加载它们再一次实例化时。  
+ 如果端口提供程序可以保留端口，它应执行此操作时被销毁并再一次实例化时重新加载它们。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

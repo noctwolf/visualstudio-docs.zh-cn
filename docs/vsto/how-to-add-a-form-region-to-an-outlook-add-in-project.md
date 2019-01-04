@@ -1,9 +1,6 @@
 ---
 title: 如何：向 Outlook 外接程序项目添加窗体区域
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 f1_keywords:
 - VSTO.NewFormRegionWizard.Page1
@@ -20,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fde5cd173f9f01f5315b617994d18e822bb20503
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: de5e5a549a912a84634c2025a3cfa71e4f6688ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647473"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846316"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>如何：向 Outlook 外接程序项目添加窗体区域
   使用  “新建 Outlook 窗体区域”向导创建窗体区域，从而扩展标准或自定义 Microsoft Office Outlook 窗体。 你可以在 Visual Studio 中创建一个新的窗体区域并设计用户界面，也可以导入在 Outlook 中设计的窗体区域并添加 Visual Basic 或 C# 代码。  
@@ -75,4 +72,3 @@ ms.locfileid: "53647473"
  [演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [演练：导入在 Outlook 中设计的窗体区域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
  [Outlook 窗体区域中的自定义操作](../vsto/custom-actions-in-outlook-form-regions.md)  
-  

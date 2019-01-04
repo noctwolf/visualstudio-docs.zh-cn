@@ -11,17 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca10b8504dc4383ad6251e3819c14b7102d32d3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: eea76a607490bda244597e22e25246b39c2c537d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566734"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948649"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>在程序代码中导航和更新层模型
 
-本文介绍的元素和层模型中，可以导航和更新通过使用程序代码中的关系。 有关从用户的角度来看的依赖项关系图的详细信息，请参阅[依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)并[依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)。
+本文介绍的元素和层模型中，可以导航和更新通过使用程序代码中的关系。 有关从用户的角度来看的依赖项关系图的详细信息，请参阅[依赖项关系图：引用](../modeling/layer-diagrams-reference.md)和[依赖项关系图：指导原则](../modeling/layer-diagrams-guidelines.md)。
 
 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer>本主题中所述的模型是一种更通用的外观<xref:Microsoft.VisualStudio.GraphModel>模型。 如果你正在编写[菜单命令或笔势扩展](../modeling/add-commands-and-gestures-to-layer-diagrams.md)，使用`Layer`模型。 如果你正在编写[层验证扩展](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)，它是更轻松地使用`GraphModel`。
 
@@ -86,7 +85,7 @@ IEnumerable<ILayerComment> comments =
 
 ![依赖项关系图内容为 ILayerElements。](../modeling/media/layerapi_layerelements.png)
 
-## <a name="properties"></a>属性
+## <a name="properties"></a>Properties
 
 每个 `ILayerElement` 都有一个名为 `Properties` 的字符串字典。 可以使用此字典将任意信息附加到任何层元素。
 
@@ -136,5 +135,5 @@ public void ... (...)
 - [向依赖项关系图添加命令和手势](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
 - [向依赖项关系图添加自定义体系结构验证](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 - [向依赖项关系图添加自定义属性](../modeling/add-custom-properties-to-layer-diagrams.md)
-- [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)
-- [依赖项关系图：指南](../modeling/layer-diagrams-guidelines.md)
+- [依赖项关系图：引用](../modeling/layer-diagrams-reference.md)
+- [依赖项关系图：指导原则](../modeling/layer-diagrams-guidelines.md)

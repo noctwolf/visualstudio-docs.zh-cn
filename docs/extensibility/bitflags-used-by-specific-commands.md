@@ -1,9 +1,6 @@
 ---
 title: 使用特定命令的位标志 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39451e8d404e586d77de31b97db6b8dd81bdc18b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875415"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>使用特定命令的位标志
 可以通过设置单个值的一个或多个位修改多个源控制插件 API 中的函数的行为。 这些值称为位标志。 使用源控制插件 API 的各种位标志下面详细介绍，通过使用这些函数进行分组。  
@@ -37,7 +34,7 @@ ms.locfileid: "39152109"
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|源代码管理插件会自动检测文件是否是文本或二进制文件。|  
 |`SCC_FILETYPE_TEXT`|0x01|文件类型为文本。|  
-|`SCC_FILETYPE_BINARY`|0x04|文件类型为二进制。 **注意：** `SCC_FILETYPE_TEXT`和`SCC_FILETYPE_BINARY`标志是互相排斥。   设置一个还是两者皆否。|  
+|`SCC_FILETYPE_BINARY`|0x04|文件类型为二进制。 **注意：** `SCC_FILETYPE_TEXT`和`SCC_FILETYPE_BINARY`标志是互相排斥。 设置一个还是两者皆否。|  
 |`SCC_ADD_STORELATEST`|0x02|存储仅最新版本 （没有差异）。|  
   
 ## <a name="diff-flags"></a>比较标志  
@@ -46,7 +43,7 @@ ms.locfileid: "39152109"
 |Flag|值|描述|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|忽略大小写差异。|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|忽略空白差异。 **注意：** `SCC_DIFF_IGNORECASE`和`SCC_DIFF_IGNORESPACE`标志是可选的位标志。|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|忽略空白差异。 **注意：**`SCC_DIFF_IGNORECASE`和`SCC_DIFF_IGNORESPACE`标志是可选的位标志。|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|通过比较整个文件内容 QD。|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|QD 通过校验和。|  
 |`SCC_DIFF_QD_TIME`|0x0040|按文件日期/时间戳 QD。|  
@@ -71,7 +68,7 @@ ms.locfileid: "39152109"
 ## <a name="openproject-flags"></a>打开项目标志  
  通过使用这些标志[SccOpenProject](../extensibility/sccopenproject-function.md)中`dwFlags`参数。  
   
-|选项值|“值”|描述|  
+|选项值|值|描述|  
 |------------------|-----------|-----------------|  
 |SCC_OP_CREATEIFNEW|0x00000001L|如果项目不存在在源代码管理中，创建它。 如果未设置此标志，提示用户输入项目以创建 (除非`SCC_OP_SILENTOPEN`指定标志)。|  
 |SCC_OP_SILENTOPEN|0x00000002L|不提示用户创建一个项目;只需返回`SCC_E_UNKNOWNPROJECT`。|  
@@ -81,8 +78,8 @@ ms.locfileid: "39152109"
   
 |Flag|值|描述|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|IDE 传递目录，而不是文件： 获取这些目录中的所有文件。|  
-|`SCC_GET_RECURSIVE`|0x00000002L|IDE 传递目录： 获取这些目录和所有子目录。|  
+|`SCC_GET_ALL`|0x00000001L|IDE 传递不是文件的目录：获取这些目录中的所有文件。|  
+|`SCC_GET_RECURSIVE`|0x00000002L|IDE 传递目录：获取这些目录和所有子目录。|  
   
 ## <a name="noption-values"></a>nOption 值  
  通过使用这些标志[SccSetOption](../extensibility/sccsetoption-function.md)中`nOption`参数。  

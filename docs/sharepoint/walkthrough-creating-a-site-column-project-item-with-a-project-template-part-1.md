@@ -1,9 +1,6 @@
 ---
 title: 演练：使用项目模板创建站点栏项目项，第 1 部分 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e05bdeacc80517c3dc7091444cc82a653f6eb257
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: f6c683166eb2192a32e1d829800abed16db43e0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804885"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832146"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>演练：使用项目模板，第 1 部分创建站点栏项目项
   SharePoint 项目是针对一个或多个 SharePoint 项目项的容器。 可以通过创建自己的 SharePoint 项目项类型，然后将其关联到的项目模板来扩展 Visual Studio 中的 SharePoint 项目系统。 在此演练中，将为创建网站栏中，定义项目项类型，然后将创建可用于创建包含网站栏项目项的新项目的项目模板。

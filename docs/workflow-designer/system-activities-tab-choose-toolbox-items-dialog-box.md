@@ -3,7 +3,6 @@ title: 工作流设计器-System.Activities 选项卡上，选择工具箱项对
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
-ms.technology: vs-workflow-designer
 f1_keywords:
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES_COMPONENTS
 - VS.CHOOSEITEMS.SYSTEM.ACTIVITIES COMPONENTS
@@ -13,29 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82303d173a3d5a066919f8597e4636d63a005f02
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de80c4def42febcc7029654ef22cfbab28a3796a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976290"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868178"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>“System.Activities”选项卡 ->“选择工具箱项”对话框
 
-此选项卡**选择工具箱项**对话框向用户显示可用的 Windows Workflow Foundation (WF) 活动、 模板和选项的列表。 若要显示此列表，选择**选择工具箱项**从**工具**菜单或通过右击**工具箱**并选择**选择项**以显示**选择工具箱项**对话框中，然后选择其**System.Activities**选项卡。在初始状态下，该列表包含 System.Activities、 System.ServiceModel.Activities 和 System.Activities.Core.Presentation 程序集; 的工作流活动但是，仅系统提供显示的活动和活动通过显示在其他程序集添加**工具箱**默认选中。 新添加的活动会自动选中，并显示在**工具箱**单击**确定**在对话框中。 此外，这些项显示在**工具箱**对应于活动/项/模板所在的命名空间的新类别下。
+此选项卡**选择工具箱项**对话框向用户显示一系列 Windows Workflow Foundation (WF) 活动、 模板和项可用。 若要显示此列表，请选择**选择工具箱项**从**工具**菜单或通过右击**工具箱**并选择**选择项**以显示**选择工具箱项**对话框中，并选择其**System.Activities**选项卡。默认情况下，该列表包含 System.Activities、 System.ServiceModel.Activities 和 System.Activities.Core.Presentation 程序集; 的工作流活动但是，仅系统提供所示的活动和活动通过显示在其他程序集添加**工具箱**默认情况下选中。 最近添加的活动，会自动选中，并显示在**工具箱**当你单击**确定**对话框上。 此外，这些项显示在**工具箱**对应于活动/项/模板所在的命名空间的新类别下。
 
 > [!WARNING]
 > 如果您试图添加未包含任何工作流活动的程序集，则将显示一个错误对话框，指出该程序集没有包含任何活动。
 
- 此对话框是项目不可知的因而**System.Activities**选项卡继续显示在独立的 XAML 或非工作流项目类型。
+ 此对话框是项目不可知，因此**System.Activities**选项卡继续显示在独立 XAML 或非工作流项目类型。
 
- 对每个选项卡都会执行筛选。这意味着不能添加工作流活动通过 **.NET 组件**选项卡。他们需要通过添加**System.Activities**选项卡本身。
+ 对每个选项卡都会执行筛选。这意味着不能添加到工作流活动 **.NET 组件**选项卡。他们需要通过添加**System.Activities**选项卡本身。
 
- 你可以取消选中不希望若要查看在任何的项**工具箱**从该对话框选项卡上，或或者，你可以使用来完成**删除**中的上下文菜单选项**工具箱**取消引用程序集不会删除的项和**工具箱**。
+ 你可以取消选中不想要查看在任何的项**工具箱**在此对话框中选项卡上，或者，您可以使用来完成**删除**中的上下文菜单选项**工具箱**和取消引用程序集不会删除中的项**工具箱**。
 
- 通过将活动拖放到设计器上来实例化该活动会自动将包含该项的程序集添加到引用的程序集列表中。 此外，如果该活动引用程序集 C，它不会将 C 添加到引用的程序集列表中。 程序集 C 必须在 GAC 中或与活动 B.相同的目录在独立事例中，程序集必须在 GAC 中或 VS 的 Probe 路径。 只有在那时，您可以拖动和删除工作流设计器图面上的活动。
+ 通过将活动拖放到设计器上来实例化该活动会自动将包含该项的程序集添加到引用的程序集列表中。 此外，如果该活动引用程序集 C，它不会将 C 添加到引用的程序集列表中。 程序集 C 必须在 gac 中或与活动 B 位于同一目录中在独立情况下，程序集必须位于 GAC 中或 VS 的 Probe 路径。 只有在那时，您可以拖动和删除工作流设计器图面上的活动。
 
- **工具箱**设置默认保存为用户选项，因此下一步的时间，当你打开**工具箱**，它将显示你自定义工作流活动的列表。 这样的一个副作用是，如果你已添加到将特定域项**工具箱**通过**选择工具箱项**对话框中，你仍然继续查看当你使用的那些项工作流控制台应用程序以及。 如果你不希望以查看它们，然后删除它们使用上下文菜单或取消选中它们通过**选择工具箱项**对话框中，如前面所述。
+ **工具箱**设置默认情况下保存为用户选项，因此，当你下次打开的时**工具箱**，它将显示自定义工作流活动的列表。 这一个副作用是，如果已添加到将特定域项**工具箱**通过**选择工具箱项**对话框中，你仍能看见那些项时使用的工作流控制台应用程序。 如果您不想要看到它们，然后使用上下文菜单删除它们或通过取消选中**选择工具箱项**对话框按前面所述。
 
  此对话框中的列包含以下信息：
 

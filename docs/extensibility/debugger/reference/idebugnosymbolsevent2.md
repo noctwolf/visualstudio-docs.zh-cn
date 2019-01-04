@@ -1,9 +1,6 @@
 ---
-title: IDebugNoSymbolsEvent2 |Microsoft 文档
-ms.custom: ''
+title: IDebugNoSymbolsEvent2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugNoSymbolsEvent2 interface
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb7719ff66ac284d07da2ddfca25fe6898c93220
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 179d8a95bc54db90a98311626b34c3e17b68f7f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112403"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873114"
 ---
 # <a name="idebugnosymbolsevent2"></a>IDebugNoSymbolsEvent2
 信号[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]调试器用户界面以警告符号不找不到启动可执行文件的用户。  
@@ -29,12 +26,12 @@ ms.locfileid: "31112403"
 IDebugNoSymbolsEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 由的调试引擎实现，且由使用[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]调试器用户界面。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 由的调试引擎实现并由[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]调试器用户界面。  
   
 ## <a name="requirements"></a>要求  
- 标头： Msdbg.h  
+ 标头：Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll

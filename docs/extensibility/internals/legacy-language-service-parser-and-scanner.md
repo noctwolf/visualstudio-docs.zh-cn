@@ -1,9 +1,6 @@
 ---
 title: 旧版语言服务分析器和扫描程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4ca98b5e4f991e795af95e479fa57a38ca2b57a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: daca7b7d49bcd9aa817f26ad485ec35394f50aff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912040"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941844"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>旧版语言服务分析器和扫描程序
 分析器是语言服务的核心。 托管包框架 (MPF) 语言类需要一个语言分析器，以选择要显示的代码有关的信息。 分析器将文本分隔成词法标记，然后确定这些令牌的类型和功能。  
@@ -116,7 +113,7 @@ namespace MyNamespace
 12. 完成。  
   
 ### <a name="summary"></a>总结  
- 匹配大括号操作是通常限制为简单的语言元素对。 更复杂的元素，如匹配三元组 ("`if(...)`"，"`{`"和"`}`"，或"`else`"、"`{`"和"`}`")，可以突出显示文字自动完成操作的一部分。 例如，完成"else"一词后，匹配"`if`"语句可以突出显示。 如果有一系列`if` / `else if`语句，所有这些无法通过使用相同的机制为匹配的大括号突出显示。 <xref:Microsoft.VisualStudio.Package.Source>基本类已支持此操作，请按如下所示： 扫描程序必须返回令牌的触发器值<xref:Microsoft.VisualStudio.Package.TokenTriggers>与触发器值结合使用<xref:Microsoft.VisualStudio.Package.TokenTriggers>令牌之前，光标位置。  
+ 匹配大括号操作是通常限制为简单的语言元素对。 更复杂的元素，如匹配三元组 ("`if(...)`"，"`{`"和"`}`"，或"`else`"、"`{`"和"`}`")，可以突出显示文字自动完成操作的一部分。 例如，完成"else"一词后，匹配"`if`"语句可以突出显示。 如果有一系列`if` / `else if`语句，所有这些无法通过使用相同的机制为匹配的大括号突出显示。 <xref:Microsoft.VisualStudio.Package.Source>基本类已支持此操作，请按如下所示：扫描程序必须返回令牌的触发器值<xref:Microsoft.VisualStudio.Package.TokenTriggers>与触发器值结合使用<xref:Microsoft.VisualStudio.Package.TokenTriggers>令牌之前，光标位置。  
   
  有关详细信息，请参阅[旧版语言服务中的大括号匹配](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)。  
   

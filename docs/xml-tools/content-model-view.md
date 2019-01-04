@@ -2,7 +2,6 @@
 title: XML 架构设计器内容模型视图
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-xml-tools
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a151daa4419c24464aeeafd9a3b58d202a6e82b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9a38ca198c4f5a84b1792142078f92398aeeaa4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942570"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951467"
 ---
 # <a name="content-model-view"></a>内容模型视图
 
@@ -37,7 +36,7 @@ ms.locfileid: "49942570"
 
  节点的内容模型由一个可展开的图形树表示，其中元素和特性显示为树节点。 默认情况下，仅一个级别处于展开状态。 其他信息（如排序器、类型名称、组和其他容器）与其包含的元素和特性一起放置在垂直条（当展开时）中。 双击垂直条时，该垂直条会变为水平且树会折叠。 双击水平条时，该水平条会变为垂直且树会展开。 选择垂直条选择容器中的所有节点。 如果元素可以展开或折叠，则将显示扩展器节点的右侧。
 
- 如果设计图面为空，XML 编辑器中， **XML 架构资源管理器**，并显示水印。 *水印*是指向所有 XSD 设计器视图的列表。 如果架构集有错误，则列表的末尾会显示以下文本：“请使用‘错误列表’查看和修复架构集中的错误”[Use the Error List to view and fix the errors in the set]。
+ 如果设计图面为空，XML 编辑器中， **XML 架构资源管理器**，并显示水印。 *水印*是指向所有 XSD 设计器视图的列表。 如果架构集有错误，在列表末尾显示以下文本："使用错误列表以查看并集中解决错误。"
 
 ## <a name="breadcrumb-bar"></a>痕迹导航栏
 
@@ -83,9 +82,9 @@ ms.locfileid: "49942570"
 
 |选项|描述|
 |-|-----------------|
-|**显示起始视图**|切换到[启动视图](../xml-tools/start-view.md)。 可以使用键盘快捷方式访问此视图： **Ctrl**+**1**。|
-|**显示内容模型视图**|切换到[内容模型视图](../xml-tools/content-model-view.md)。 可以使用键盘快捷方式访问此视图： **Ctrl**+**2**。|
-|**显示图形视图**|切换到[图形视图](../xml-tools/graph-view.md)。 可以使用键盘快捷方式访问此视图： **Ctrl**+**3**。|
+|**显示起始视图**|切换到[启动视图](../xml-tools/start-view.md)。 可以使用键盘快捷方式访问此视图：**Ctrl**+**1**。|
+|**显示内容模型视图**|切换到[内容模型视图](../xml-tools/content-model-view.md)。 可以使用键盘快捷方式访问此视图：**Ctrl**+**2**。|
+|**显示图形视图**|切换到[图形视图](../xml-tools/graph-view.md)。 可以使用键盘快捷方式访问此视图：**Ctrl**+**3**。|
 |**清空工作区**|清空工作区和设计图面。|
 |**从工作区中删除**|从工作区和设计图面中删除所选节点。|
 |**移除所选内容从工作区**|从工作区和设计图面中删除未选择的节点。|

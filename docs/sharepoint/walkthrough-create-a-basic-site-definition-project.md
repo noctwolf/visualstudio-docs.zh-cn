@@ -1,13 +1,8 @@
 ---
-title: 演练： 创建基本站点定义项目 |Microsoft Docs
-ms.custom: ''
+title: 演练：创建基本站点定义项目 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
-- VB
-- CSharp
 - VB
 - CSharp
 helpviewer_keywords:
@@ -18,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e09124e3204240f188c65e10865bbf221e15358
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958886"
 ---
-# <a name="walkthrough-create-a-basic-site-definition-project"></a>演练： 创建基本站点定义项目
+# <a name="walkthrough-create-a-basic-site-definition-project"></a>演练：创建基本站点定义项目
   本演练演示如何创建包含与上它的某些控件的可视 Web 部件的基本网站定义。 为清楚起见，您创建的可视化 Web 部件有仅几个控件。 但是，可以创建包含更多的功能的更复杂的 SharePoint 网站定义。  
   
  本演练演示了下列任务：  
@@ -187,6 +182,5 @@ ms.locfileid: "49844397"
      将文本显示在右侧的按钮上的标签。  
   
 ## <a name="see-also"></a>请参阅
- [如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
+ [如何：创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
-  

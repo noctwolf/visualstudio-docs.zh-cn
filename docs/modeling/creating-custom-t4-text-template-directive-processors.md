@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0216fab44ddc52c2d01c27365449377fb899e1a6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5db3772b782af666023f39fd833e18ba2092c176
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989145"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>创建自定义 T4 文本模板指令处理器
 
@@ -64,9 +63,9 @@ ms.locfileid: "47859648"
 
 -   `string GetClassCodeForProcessingRun()` -返回代码的方法、 属性和模板代码可以使用其他声明。 若要执行此操作的最简单方法是构建包含 C# 或 Visual Basic 代码的字符串。 若要使能够从使用任何 CLR 语言的模板调用指令处理器，您可以将语句构造为 CodeDom 树，然后返回序列化该模板使用的语言中的树的结果。
 
--   有关详细信息，请参阅[演练： 创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。
+-   有关详细信息，请参见[演练：创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。
 
 ## <a name="see-also"></a>请参阅
 
 - [部署自定义指令处理器](../modeling/deploying-a-custom-directive-processor.md)说明如何注册自定义指令处理器。
-- [演练： 创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)介绍如何创建自定义指令处理器、 如何注册和测试指令处理器，以及如何将输出文件格式化为 HTML。
+- [演练：创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)介绍如何创建自定义指令处理器、 如何注册和测试指令处理器，以及如何将输出文件格式化为 HTML。

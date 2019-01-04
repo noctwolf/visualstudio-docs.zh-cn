@@ -1,9 +1,6 @@
 ---
 title: 部署 Visual Studio 中的 SharePoint 工具扩展 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -15,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3bf20f945c40dd963820b1bf3f4032a2dd517ca
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 02e72a2991b5061459533cab9a3fbf213baa6b94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295964"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880817"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>部署 Visual Studio 中的 SharePoint 工具扩展
 
@@ -52,11 +49,11 @@ ms.locfileid: "51295964"
 
 您可能还会使用其他项目对于某些类型的扩展：
 
--   一个实现任何由你的扩展的 SharePoint 命令的类库项目。 有关演示此方案的演练，请参阅[演练： 扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
+-   一个实现任何由你的扩展的 SharePoint 命令的类库项目。 有关演示此方案的演练，请参阅[演练：扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
 
--   如果您的扩展插件定义新类型的 SharePoint 项目项创建项模板或项目模板，项模板或项目模板项目。 有关演示此方案的演练，请参阅[演练： 使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。
+-   如果您的扩展插件定义新类型的 SharePoint 项目项创建项模板或项目模板，项模板或项目模板项目。 有关演示此方案的演练，请参阅[演练：使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。
 
--   如果您的扩展插件包括模板实现的项模板或项目模板的自定义向导的类库项目。 有关演示此方案的演练，请参阅[演练： 使用项模板，第 2 部分中创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。
+-   如果您的扩展插件包括模板实现的项模板或项目模板的自定义向导的类库项目。 有关演示此方案的演练，请参阅[演练：使用项模板，第 2 部分中创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)。
 
 如果在同一 Visual Studio 解决方案中包含的所有项目，您可以修改 source.extension.vsixmanifest 文件中要包括的类库项目生成输出的 VSIX 项目中。
 
@@ -218,10 +215,10 @@ ms.locfileid: "51295964"
 
 |扩展类型|相关的演练|
 |--------------------|--------------------------|
-|包括的扩展程序集扩展|[演练： 扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [演练： 创建 SharePoint 项目扩展](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [演练： 调入 SharePoint 客户端对象模型，在服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
-|一个扩展，包括 SharePoint 命令|[演练： 创建 SharePoint 项目自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [演练： 扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [演练： 使用项目模板，第 2 部分中创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
-|一个扩展，包括 Visual Studio 模板|[演练： 使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [演练： 使用项目模板，第 1 部分创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
-|一个扩展，包括模板向导|[演练： 使用项模板，第 2 部分中创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [演练： 使用项目模板，第 2 部分中创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|包括的扩展程序集扩展|[演练：扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)<br /><br /> [演练：创建 SharePoint 项目扩展](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)<br /><br /> [演练：调入 SharePoint 客户端对象模型中的服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)|
+|一个扩展，包括 SharePoint 命令|[演练：创建 SharePoint 项目的自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)<br /><br /> [演练：扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)<br /><br /> [演练：使用项目模板，第 2 部分中创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
+|一个扩展，包括 Visual Studio 模板|[演练：使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)<br /><br /> [演练：使用项目模板，第 1 部分创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)|
+|一个扩展，包括模板向导|[演练：使用项模板，第 2 部分中创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)<br /><br /> [演练：使用项目模板，第 2 部分中创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)|
 
 ## <a name="create-vsix-packages-manually"></a>手动创建 VSIX 包
 

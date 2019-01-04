@@ -1,9 +1,6 @@
 ---
 title: Visual Studio Tools for Office runtime 概述
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,15 +26,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b169242b9828f47f1ecfb87ebf02a9f86234699f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bdae6b7f08ec442d7bca0b0aa3b46b8825385767
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836991"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878778"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office runtime 概述
-  若要运行使用 Visual Studio 中的 Microsoft Office 开发人员工具创建的解决方案，必须在最终用户计算机上安装 Visual Studio 2010 Tools for Office 运行时。 有关详细信息，请参阅[如何： 安装 Visual Studio Tools for Office runtime 可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office 运行时包含两个主要组件：  
+  若要运行使用 Visual Studio 中的 Microsoft Office 开发人员工具创建的解决方案，必须在最终用户计算机上安装 Visual Studio 2010 Tools for Office 运行时。 有关更多信息，请参见[如何：安装 Visual Studio Tools for Office runtime 可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office 运行时包含两个主要组件：  
   
 - Office 的 .NET Framework 扩展。 这些组件是提供解决方案和 Microsoft Office 应用程序之间的通信层的托管程序集。 有关详细信息，请参阅[了解有关.NET Framework 的 Office 扩展](#officeextensions)。  
   
@@ -124,7 +121,5 @@ ms.locfileid: "49836991"
  [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
- [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [升级和迁移 Office 解决方案](../vsto/upgrading-and-migrating-office-solutions.md)  
-  
-  

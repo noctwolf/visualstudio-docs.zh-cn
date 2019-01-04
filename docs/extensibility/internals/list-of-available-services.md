@@ -1,9 +1,6 @@
 ---
 title: 可用服务列表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8219c3abfe483a358f0c23d0011c2741f2489ddb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876459"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964632"
 ---
 # <a name="list-of-available-services"></a>可用服务的列表
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和 Visual Studio SDK 支持以下服务。 某些程序包提供其自己的服务未在此处列出的 — 例如，语言服务不具有单个服务的 GUID。 必须使用的语言名称以在注册表中找到的语言服务的 GUID。  
@@ -31,7 +28,7 @@ ms.locfileid: "49876459"
 | 服务 | 接口 | Visual Studio | Visual Studio 2005 | 描述 |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | 是 | 是 | 使用 Vspackage 获取<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>ActiveX 控件以便于异步数据传输中的接口。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | 否 | 是 | 获取用于自动化的设计时可扩展性 (DTE) 对象。<br /><br /> C/C + + ID: SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | 否 | 是 | 获取用于自动化的设计时可扩展性 (DTE) 对象。<br /><br /> C/C + + ID:SID_SDTE |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | 是 | 是 | 由窗体设计器以显示控件的默认事件处理程序实现。 |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | 是 | 是 | 允许 VSPackage 来访问另一个 VSPackage 或控件的自动化接口。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | 是 | 是 | 允许 VSPackage 来添加或创建一个扩展的类型库。 |

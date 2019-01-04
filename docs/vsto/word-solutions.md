@@ -1,9 +1,6 @@
 ---
 title: Word 解决方案
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -29,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b443cd985910cbb6e81ce79016193623bdeb2dd
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81154d0cab5760fa3b6a9d2418c9669258fca01f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670462"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986747"
 ---
 # <a name="word-solutions"></a>Word 解决方案
   Visual Studio 提供可用于创建适用于 Microsoft Office Word 的文档级自定义项和 VSTO 外接程序的项目模板。 你可以使用这些解决方案来实现 Word 自动化、扩展 Word 功能以及自定义 Word 用户界面 (UI)。 有关文档级自定义项和 VSTO 外接程序之间的差异的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -62,7 +59,7 @@ ms.locfileid: "35670462"
 ##  <a name="doclevel"></a> 开发 Word 的文档级自定义项  
  Microsoft Office Word 的文档级自定义项包含与特定文档相关联的程序集。 此程序集通常可通过自定义 UI 和自动化 Word 来扩展文档。 不同于与 Word 自身相关联的 VSTO 外接程序，在自定义中实现的功能只有当关联文档在 Word 中打开时才可用。  
   
- 若要创建 Word 的文档级自定义项目，可使用 Visual Studio 的 **“新建项目”** 对话框中的“Word 文档”或“Word 模板”项目模板。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+ 若要创建 Word 的文档级自定义项目，可使用 Visual Studio 的 **“新建项目”** 对话框中的“Word 文档”或“Word 模板”项目模板。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
  详细了解如何使用文档级自定义项工作[的文档级自定义体系结构](../vsto/architecture-of-document-level-customizations.md)。  
   
@@ -74,7 +71,7 @@ ms.locfileid: "35670462"
 ##  <a name="applevel"></a> 开发 Word 的 VSTO 外接程序  
  Microsoft Office Word 的 VSTO 外接程序包含由 Word 加载的程序集。 此程序集通常可通过自定义 UI 和自动化 Word 来扩展 Word。 不同的文档级自定义项，这是与特定文档相关联，在 VSTO 外接程序中实现的功能不局限于任何单个文档。  
   
- 若要创建 Word 的 VSTO 外接程序项目，可使用 Visual Studio 的 **“新建项目”** 对话框中的 Word 外接程序项目模板。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+ 若要创建 Word 的 VSTO 外接程序项目，可使用 Visual Studio 的 **“新建项目”** 对话框中的 Word 外接程序项目模板。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
  有关 VSTO 外接程序工作原理的常规信息，请参阅 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。  
   
@@ -92,15 +89,15 @@ ms.locfileid: "35670462"
 |任务|更多相关信息|  
 |----------|--------------------------|  
 |自定义功能区。|[功能区概述](../vsto/ribbon-overview.md)|  
-|将 Windows 窗体控件或扩展的 Word 控件添加到（文档级自定义项的）自定义文档中，或添加到（VSTO 外接程序的）任何打开文档中。|[如何： 向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [如何： 向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [如何： 向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|  
+|将 Windows 窗体控件或扩展的 Word 控件添加到（文档级自定义项的）自定义文档中，或添加到（VSTO 外接程序的）任何打开文档中。|[如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|  
   
 ### <a name="options-for-document-level-customizations"></a>对于文档级自定义项的选项  
  下表列出了仅适用于文档级自定义项的自定义选项。  
   
 |任务|更多相关信息|  
 |----------|--------------------------|  
-|将操作窗格添加到文档。|[操作窗格概述](../vsto/actions-pane-overview.md)<br /><br /> [如何： 将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
-|将扩展的 XMLNode 和 XMLNodes 控件添加到文档图面中。|[如何： 向 Word 文档添加 XMLNode 控件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [如何： 向 Word 文档添加 XMLNodes 控件](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|  
+|将操作窗格添加到文档。|[操作窗格概述](../vsto/actions-pane-overview.md)<br /><br /> [如何：将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|  
+|将扩展的 XMLNode 和 XMLNodes 控件添加到文档图面中。|[如何：向 Word 文档添加 XMLNode 控件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [如何：向 Word 文档添加 XMLNodes 控件](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|  
   
 ### <a name="options-for-vsto-add-ins"></a>适用于 VSTO 外接程序的选项  
  下表列出了仅适用于 VSTO 外接程序的自定义选项。  
@@ -116,9 +113,7 @@ ms.locfileid: "35670462"
 |[Word 对象模型概述](../vsto/word-object-model-overview.md)|概述由 Word 对象模型提供的主类型。|  
 |[通过使用扩展的对象自动化 Word](../vsto/automating-word-by-using-extended-objects.md)|提供有关可在 Word 解决方案中使用的扩展对象（由 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]提供）的信息。|  
 |[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)|介绍如何将 Windows 窗体控件添加到 Word 文档。|  
-|[演练： 创建 word 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|演示如何创建 Word 的基本文档级自定义项。|  
-|[演练： 为 Word 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|演示如何创建 Word 的基本 VSTO 外接程序。|  
-|[演练： 在 VSTO 外接程序中的运行时向文档添加控件](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|演示如何使用 VSTO 外接程序在运行时将 Windows 窗体按钮和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 添加到文档。|  
+|[演练：创建 word 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|演示如何创建 Word 的基本文档级自定义项。|  
+|[演练：为 Word 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|演示如何创建 Word 的基本 VSTO 外接程序。|  
+|[演练：在 VSTO 外接程序中的运行时向文档添加控件](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|演示如何使用 VSTO 外接程序在运行时将 Windows 窗体按钮和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 添加到文档。|  
 |[Word 2010 中的 Office 开发](http://go.microsoft.com/fwlink/?LinkId=199020)|提供关于开发 Word 解决方案（不特定于使用 Visual Studio 的 Office 开发）的文章和参考文档的链接。|  
-  
-  

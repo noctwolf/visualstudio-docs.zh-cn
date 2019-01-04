@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式创建新的工作簿
-ms.custom: ''
+title: 如何：以编程方式创建新的工作簿
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e1da9ff331a4376a6ff242dca4382832ee4e85f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5e68b2c955c2e44fb9f721850be2fa4dac9cf875
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958272"
 ---
-# <a name="how-to-programmatically-create-new-workbooks"></a>如何： 以编程方式创建新的工作簿
+# <a name="how-to-programmatically-create-new-workbooks"></a>如何：以编程方式创建新的工作簿
   以编程方式创建工作簿时，它是一个本机 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象，而不是 <xref:Microsoft.Office.Tools.Excel.Workbook> 主机项。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -32,7 +29,7 @@ ms.locfileid: "35257103"
   
 ## <a name="to-create-a-new-workbook"></a>创建新的工作簿  
   
-1.  使用 <xref:Microsoft.Office.Interop.Excel.Workbooks> 集合的 <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> 方法。  
+1.  使用 <xref:Microsoft.Office.Interop.Excel.Workbooks.Add%2A> 集合的 <xref:Microsoft.Office.Interop.Excel.Workbooks> 方法。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreExcelAutomation#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#1)]  
@@ -44,11 +41,9 @@ ms.locfileid: "35257103"
  [扩展 Word 文档和 Excel 工作簿在 VSTO 外接在运行时](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [使用工作簿](../vsto/working-with-workbooks.md)   
- [如何： 以编程方式打开工作簿](../vsto/how-to-programmatically-open-workbooks.md)   
- [如何： 以编程方式保存工作簿](../vsto/how-to-programmatically-save-workbooks.md)   
- [如何： 以编程方式关闭工作簿](../vsto/how-to-programmatically-close-workbooks.md)   
+ [如何：以编程方式打开工作簿](../vsto/how-to-programmatically-open-workbooks.md)   
+ [如何：以编程方式保存工作簿](../vsto/how-to-programmatically-save-workbooks.md)   
+ [如何：以编程方式关闭工作簿](../vsto/how-to-programmatically-close-workbooks.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

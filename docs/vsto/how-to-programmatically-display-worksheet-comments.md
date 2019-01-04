@@ -1,9 +1,6 @@
 ---
-title: 如何： 以编程方式显示工作表注释
-ms.custom: ''
+title: 如何：以编程方式显示工作表注释
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,14 +13,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8f4875e75562d9fa1f6d9cd4982ae2148e35a1c
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c246eae0465c64598aae1191c4053f8ba266b6ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831558"
 ---
-# <a name="how-to-programmatically-display-worksheet-comments"></a>如何： 以编程方式显示工作表注释
+# <a name="how-to-programmatically-display-worksheet-comments"></a>如何：以编程方式显示工作表注释
   可以在 Microsoft Office Excel 工作表中以编程方式显示和隐藏注释。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -44,7 +41,5 @@ ms.locfileid: "35257681"
   
 ## <a name="see-also"></a>请参阅  
  [使用工作表](../vsto/working-with-worksheets.md)   
- [如何： 以编程方式添加和删除工作表注释](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
+ [如何：以编程方式添加和删除工作表注释](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)  
-  
-  

@@ -10,13 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 01aee6de65f1ddc0db16b0ebe527fb3d4d5480ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919322"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958808"
 ---
 # <a name="develop-tests-from-a-model"></a>基于模型开发测试
 可以使用要求模型和体系结构模型来帮助组织系统及其组件的测试。 这种做法有助于确保你测试了对于用户和其他利益干系人而言非常重要的要求，并可帮助你在要求发生变化时快速更新测试。 如果你使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，还可以维护模型和测试之间的链接。
@@ -52,7 +51,7 @@ ms.locfileid: "49919322"
 
     -   如果开发计划逐个实现用例的方面，则你可以随着开发的进展单独启用测试。
 
--   设计测试时，请将测试数据的选择与确定是否已实现后置条件的代码或脚本分离。 例如，一个简单算术函数的测试可能为：输入 4；验证输出为 2。 实际上，将脚本设计为：选择一个输入；将其本身乘以输出，然后验证结果为原始输入。 此样式允许你在不更改测试主体的情况下改变测试输入。
+-   设计测试时，请将测试数据的选择与确定是否已实现后置条件的代码或脚本分离。 例如，可能是一个简单的算术函数的测试：输入 4;验证输出为 2。 相反，将脚本设计为：选择一个输入;本身乘以输出，并验证结果为原始输入。 此样式允许你在不更改测试主体的情况下改变测试输入。
 
 #### <a name="linking-tests-to-use-cases"></a>将测试链接到用例
  如果使用的[!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]设计和运行测试，可以组织要求、 用例或用户情景工作项测试。 你可以将这些工作项链接到模型中的用例。 这样你便可以快速跟踪测试的需求更改，并有助于你跟踪每个用例的进度。

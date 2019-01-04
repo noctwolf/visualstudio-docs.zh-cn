@@ -1,9 +1,6 @@
 ---
 title: Microsoft 帮助查看器 SDK |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af324b141815813aec9eaadfcd9982689fdeb467
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000342"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987046"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -142,7 +139,7 @@ Visual Studio 品牌包支持的控件：
 
 4.  添加代码片段：  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  添加代码特定于语言的文本：`<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />`请注意，`devLangnu=`允许您输入其他语言。 例如，`devLangnu="Fortran"`显示 Fortran 时代码片段 DisplayLanguage = Fortran
+5.  添加代码特定于语言的文本：`<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` 请注意，`devLangnu=`允许您输入其他语言。 例如，`devLangnu="Fortran"`显示 Fortran 时代码片段 DisplayLanguage = Fortran
 
 6.  添加页链接： `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
@@ -283,15 +280,15 @@ F1 流关系图：
 
 如果帮助查看器的默认帮助内容源设置为联机状态 （启动浏览器中）：
 
--   Visual Studio 合作伙伴 (VSP) 功能发出到 F1 属性包 （属性包 prefix.keyword 和注册表中找到前缀为 online URL） 的值： F1 VSP URL + 参数向浏览器发送。
+-   Visual Studio 合作伙伴 (VSP) 功能发出到 F1 属性包 （属性包 prefix.keyword 和注册表中找到前缀为 online URL） 的值：F1 VSP URL + 参数向浏览器发送。
 
--   Visual Studio 功能 （语言编辑器，Visual Studio 特定菜单项，等等）： F1 将 Visual Studio URL 发送到浏览器。
+-   Visual Studio 功能 （语言编辑器，Visual Studio 特定菜单项，等等。）：F1 将 Visual Studio URL 发送到浏览器。
 
 如果帮助查看器的默认帮助内容源设置为本地帮助 （启动帮助查看器中）：
 
--   VSP 功能关键字 F1 属性包和本地存储区索引之间的匹配位置 (即，属性包 prefix.keyword = 本地存储索引中找到的值): F1 呈现帮助查看器中的主题。
+-   VSP 功能关键字 F1 属性包和本地存储区索引之间的匹配位置 (即，属性包 prefix.keyword = 本地存储索引中找到的值):F1 呈现帮助查看器中的主题。
 
--   Visual Studio 功能 （VSP 重写从 Visual Studio 功能发出的属性包的任何选项）： F1 呈现帮助查看器中的 Visual Studio 主题。
+-   Visual Studio 功能 （VSP 重写从 Visual Studio 功能发出的属性包的任何选项）：F1 呈现帮助查看器中的 Visual Studio 主题。
 
 设置以下注册表值可让 F1 回退供应商的帮助内容。 F1 回退意味着帮助查看器设置为查找 F1 帮助内容的联机，供应商内容本地安装到用户的硬盘。 即使默认设置是联机帮助的帮助查看器应查看本地帮助内容。
 
@@ -325,7 +322,7 @@ F1 流关系图：
 
 **分析的基础本机 Namespace**
 
-若要开启本机的基命名空间分析，请在注册表中添加一个新的 dword 值的名称： BaseNativeNamespaces 并将其值设置为 1 （在下他们想要支持的目录键）。  例如，如果你想要使用 Visual Studio 目录，无法将密钥添加到路径：
+若要启用分析的基础本机命名空间，请在注册表中添加一个新的 dword 值的名称：BaseNativeNamespaces 并将其值设置为 1 （在下他们想要支持的目录键）。  例如，如果你想要使用 Visual Studio 目录，无法将密钥添加到路径：
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -343,7 +340,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 添加以下注册表项和值：
 
-HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 帮助键： 零售值中显示调试输出: 是
+HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 帮助键：在零售值中显示调试输出：是的
 
 在 IDE 中下的帮助菜单项，选择"调试帮助上下文"
 
@@ -374,7 +371,7 @@ Visual Studio 版本包含许多不同 Visual Studio 产品，包括 Visual Stud
 
 安装品牌包包含帮助查看器的产品。  用于 Visual Studio 产品：
 
--   回退的品牌包 (Branding_\<区域设置 > 能使用.mshc) 安装帮助查看器 2.3 应用根目录中 (示例： C:\Program Files (x86) \Microsoft Help Viewer\v2.3) 的帮助查看器语言包。  这用于未安装任一产品品牌包的情况下 （已安装任何内容），或者其中已安装的品牌包已损坏。  使用应用程序根回退品牌包时，会忽略 （徽标和反馈） 的 Visual Studio 元素。
+-   回退的品牌包 (Branding_\<区域设置 > 能使用.mshc) 安装帮助查看器 2.3 应用根目录中 (示例：C:\Program 文件 (x86) \Microsoft Help Viewer\v2.3) 的帮助查看器语言包。  这用于未安装任一产品品牌包的情况下 （已安装任何内容），或者其中已安装的品牌包已损坏。  使用应用程序根回退品牌包时，会忽略 （徽标和反馈） 的 Visual Studio 元素。
 
 -   Visual Studio 内容安装时从内容包服务，品牌包也会安装 （适用于第一个时间内容安装方案）。  如果没有对品牌包的更新，更新安装的下一次的内容更新或其他包安装操作发生时。
 
@@ -445,7 +442,7 @@ Branding.xml 文件包含用于本主题包含时一致地呈现在主题中的�
 | ExpandText | Expand |
 | CollapseText | 折叠 |
 | 功能： | **CodeSnippet** |
-| 使用: | 代码片段控件文本。  注意： 使用"非中断性"空间的代码段内容将更改为空间中。 |
+| 使用: | 代码片段控件文本。  注意:具有"非中断性"空间的代码段内容将更改为空间。 |
 | **元素** | **值** |
 | CopyToClipboard | 复制到剪贴板 |
 | ViewColorizedText | 查看着色文本 |
@@ -615,7 +612,7 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
 注意： 在实现下面的示例，我们已提供很多品牌包。 这是必须包含，以便获取所需的 Visual Studio 内容呈现元素和内容行为。
 
-示例 HelpContentSetup.msha 文件: (替换为"内容设置名称 1"和"内容集 name 2" 等文件名称。)
+示例 HelpContentSetup.msha 文件：(替换为"内容设置名称 1"和"内容集 name 2" 等文件名称。)
 
 ```html
 <html>
@@ -725,11 +722,11 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-   键： LocationPath 字符串值： C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
+   密钥：LocationPath 字符串值：C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-US
 
-   键： CatalogName 字符串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]文档
+   密钥：CatalogName 字符串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 文档
 
 **创建项目**
 
@@ -796,7 +793,7 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
 7. 添加以下注册表项：
 
-    HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15Key: LocationPath 字符串值：
+    HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15Key:LocationPath 字符串值：
 
     ISO shell:
 
@@ -806,7 +803,7 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-美国
 
-    键： CatalogName 字符串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]文档。 对于 ISO Shell 中，这是你目录的名称。
+    密钥：CatalogName 字符串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 文档。 对于 ISO Shell 中，这是你目录的名称。
 
 8. 将你的内容 （cab 或 MSHC 和 MSHA） 复制到本地文件夹。
 
