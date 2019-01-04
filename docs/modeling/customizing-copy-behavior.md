@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6839385e64503ce939d5244b116a9f24be786395
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4786b0ba6ee981ce14b60b1af87252e3d9582a0e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904428"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885622"
 ---
 # <a name="customizing-copy-behavior"></a>自定义复制行为
 在域特定语言 (DSL) 创建使用 Visual Studio 可视化和建模 SDK，可以更改当用户复制并粘贴元素时，会发生什么情况。
@@ -88,7 +87,7 @@ partial class MyDslClipboardCommandSet
 重写*MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` DslPackage 项目中。
 
  **保留形状布局通过复制并粘贴。**
-当用户复制多个形状时，可以在粘贴它们时保留其相对位置。 此方法可通过在该示例演示[VMSDK： 电路图示例](http://go.microsoft.com/fwlink/?LinkId=213879)。
+当用户复制多个形状时，可以在粘贴它们时保留其相对位置。 此方法可通过在该示例演示[VMSDK:线路关系图示例](http://go.microsoft.com/fwlink/?LinkId=213879)。
 
  若要获得此效果，请将形状和连接符添加到复制的 ElementGroupPrototype。 重写的最简便方法是 ElementOperations.CreateElementGroupPrototype()。 为此，请将以下代码添加到 DSL 项目：
 
@@ -144,7 +143,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **在所选的位置，例如当前光标位置粘贴形状。**
-当用户复制多个形状时，可以在粘贴它们时保留其相对位置。 此方法可通过在该示例演示[VMSDK： 电路图示例](http://go.microsoft.com/fwlink/?LinkId=213879)。
+当用户复制多个形状时，可以在粘贴它们时保留其相对位置。 此方法可通过在该示例演示[VMSDK:线路关系图示例](http://go.microsoft.com/fwlink/?LinkId=213879)。
 
  为实现此效果，请重写 `ClipboardCommandSet.ProcessOnMenuPasteCommand()`，以使用特定于位置的版本的 `ElementOperations.Merge()`。 为此，请在 DslPackage 项目中添加以下代码：
 
@@ -211,7 +210,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```
 
  **让用户拖放元素。**
-请参阅[如何： 添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)。
+请参阅[操作说明：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)。
 
 ## <a name="customizeLinks"></a> 自定义链接复制行为
  当用户复制元素时，标准行为是还会复制所有嵌入元素。 可以修改标准复制行为。 在 DSL 定义中，选择在一侧的关系并在属性窗口中设置的角色**传播复制**值。
@@ -282,7 +281,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>接收从其他模型拖动的项
- ElementOperations 还可用于定义复制、移动、删除和拖放行为。 作为 ElementOperations 用法的演示，此处提供的示例将定义自定义拖放行为。 但是，出于此目的可以考虑另一种方法中所述[如何： 添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)，这是扩展性更高。
+ ElementOperations 还可用于定义复制、移动、删除和拖放行为。 作为 ElementOperations 用法的演示，此处提供的示例将定义自定义拖放行为。 但是，出于此目的可以考虑另一种方法中所述[如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)，这是扩展性更高。
 
  在 ElementOperations 类中定义两个方法：
 
@@ -367,7 +366,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>标准复制行为
  此部分中的代码将显示可进行重写以更改复制行为的方法。 为了帮助你了解如何实现自己的自定义，此部分显示了可重写涉及复制的方法但不更改标准行为的代码。
 
- 当用户按 CTRL+C 或使用“复制”菜单命令时，将调用方法 <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>。 您可以看到如何在此设置**DslPackage\Generated Code\CommandSet.cs**。 有关如何设置命令的详细信息，请参阅[如何： 向快捷菜单添加命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
+ 当用户按 CTRL+C 或使用“复制”菜单命令时，将调用方法 <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>。 您可以看到如何在此设置**DslPackage\Generated Code\CommandSet.cs**。 有关如何设置命令的详细信息，请参阅[如何：将命令添加到快捷菜单](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
  可通过添加分部类定义的重写 ProcessOnMenuCopyCommand *MyDsl* `ClipboardCommandSet` DslPackage 项目中。
 
@@ -559,6 +558,6 @@ namespace Company.MyDsl
 - [自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)
 - [如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [自定义删除行为](../modeling/customizing-deletion-behavior.md)
-- [示例： VMSDK 电路图示例](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [示例：VMSDK 电路图示例](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

@@ -1,9 +1,6 @@
 ---
 title: 文档锁持有者管理 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document locking
@@ -13,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b27025418c903de0128a3eddea2aa0fab00aa9ea
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: f2f2da0e351f8444ef9966b00551b941830dda3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804453"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986435"
 ---
 # <a name="document-lock-holder-management"></a>文档锁持有者管理
 运行文档表 (RDT) 维护打开的文档和它们具有的任何编辑锁的计数。 以编程方式编辑在后台，而用户看到在文档窗口中打开的文档时，您可以编辑锁放置 RDT 中的文档。 通过修改通过图形用户界面的多个文件的设计人员通常使用此功能。

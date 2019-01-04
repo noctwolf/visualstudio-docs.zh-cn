@@ -8,13 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-modeling
-ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75c50780a8ad48fdd4766576e3d6fe94a580b777
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869918"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>创建基于 Windows 窗体的域特定语言
 可以使用 Windows 窗体以显示特定于域的语言 (DSL) 模型，而不是使用 DSL 关系图的状态。 本主题将指导你通过将 Windows 窗体绑定到使用 Visual Studio 可视化和建模 SDK 的 DSL。
@@ -118,9 +117,9 @@ ms.locfileid: "49926678"
 
 1.  上**数据**菜单中，选择**显示数据源**。
 
-     **数据源**窗口随即打开。
+     “数据源”窗口随即打开。
 
-     选择**添加新数据源**。 **数据源配置向导**随即打开。
+     选择**添加新数据源**。 “数据源配置”向导随即打开。
 
 2.  选择**对象**，**下一步**。
 

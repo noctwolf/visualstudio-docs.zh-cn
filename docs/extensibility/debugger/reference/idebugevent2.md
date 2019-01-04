@@ -1,9 +1,6 @@
 ---
-title: IDebugEvent2 |Microsoft 文档
-ms.custom: ''
+title: IDebugEvent2 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugEvent2
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff8be869bd65def16ca0519f7c87ea82320bb99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca850f06fa2c17bb6f7c6ccb0756ad2498c67b9d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111174"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870159"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
-此接口用于通信关键的调试信息，例如在断点处停止和非关键的信息，例如调试消息。  
+此接口用于传达重要的调试信息，例如在断点处停止和非关键信息，例如调试消息。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,8 +28,8 @@ ms.locfileid: "31111174"
 IDebugEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- 调试引擎 (DE) 和自定义端口供应商在与所有其他事件接口相同的对象上实现此接口。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 调试引擎 (DE) 和自定义端口提供程序在与所有其他事件接口相同的对象上实现此接口。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  使用接口 ID (IID) 自变量提供给[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)或[事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)，会话调试管理器 (SDM) 调用[QueryInterface](/cpp/atl/queryinterface)上`IDebugEvent2`接口，以获得相应的事件接口中。  
@@ -42,19 +39,19 @@ IDebugEvent2 : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|获取此调试事件的属性。|  
+|[GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md)|获取此调试事件的特性。|  
   
 ## <a name="remarks"></a>备注  
- 更具体的事件接口，如[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)，不是从 IDebugEvent2 接口，但改为作为与相同的对象上的单独接口实现`IDebugEvent2`。  
+ 更具体的事件接口，如[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)，不会从 IDebugEvent2 接口派生，但改为作为同一对象上作为单独的接口实现`IDebugEvent2`。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
  [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

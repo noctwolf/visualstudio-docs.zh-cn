@@ -1,9 +1,6 @@
 ---
-title: 如何： 提供适用于 Windows 的自动化 |Microsoft Docs
-ms.custom: ''
+title: 如何：提供适用于 Windows 的自动化 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], tool windows
@@ -14,14 +11,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9158ac7d133d30ae5fbca0281cbc55138e041f6
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: eb5fe307cd477f1c1a30b402cce05850a1a35ae1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510733"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841234"
 ---
-# <a name="how-to-provide-automation-for-windows"></a>如何： 提供适用于 windows 的自动化
+# <a name="how-to-provide-automation-for-windows"></a>如何：提供适用于 windows 的自动化
 你可以提供文档和工具窗口的自动化。 提供自动化是建议您无论何时你想要使自动化对象在一个窗口，并在环境已不提供现成的自动化对象，方式与在任务列表。
 
 ## <a name="automation-for-tool-windows"></a>自动化的工具窗口
