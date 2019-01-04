@@ -1,9 +1,6 @@
 ---
-title: 项目上下文 |Microsoft 文档
-ms.custom: ''
+title: 项目上下文 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
@@ -13,22 +10,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f52260d63088d7673322f3c42d43d00184a9af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92a0f875e51b0cb9ff968bf93b8a0877b14149c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990144"
 ---
 # <a name="project-context"></a>项目上下文
-当用户将添加或适用于项目和项目项时，IDE 将使用项目上下文的概念来确定应执行各种操作。  
+当用户添加或适用于项目和项目项时，IDE 将使用项目上下文的概念来确定应执行了各种操作。  
   
- 通常情况下，文件是通过选择来显式创建用户的标准项目对象**新项目**命令或可用于通过选择**打开项目**命令**文件**菜单。 在这些情况下，创建和打开一个项目的上下文中文件和项目类型定义编辑文档的上下文。  
+ 通常情况下，文件是通过选择来显式创建用户的标准项目对象**新的项目**命令或通过选择，能够**打开项目**命令**文件**菜单。 在这些情况下，创建和打开项目的上下文中的文件和项目类型定义编辑文档的上下文。  
   
- 某些项目提供了非常丰富的上下文。 例如，项目管理项目作用域、 编程的命名空间或数据绑定的项目范围的数据库连接。 用户可以经常打开文件或数据库连接直接通过使用一个特定项目对象，如解决方案资源管理器中显示的项目项。  
+ 某些项目提供非常丰富的上下文。 例如，项目管理的项目范围，以编程方式命名空间或数据绑定的项目范围的数据库连接。 用户可以经常打开的文件或数据库连接直接通过使用一个特定项目对象，例如在解决方案资源管理器中显示的项目项。  
   
- 在其他情况下，项的项目上下文未显式指定。 例如，项的上下文时不可用的用户通过选择打开的文件**打开现有文件**命令**文件**时调试器的运行上一个文件，或当用户单击菜单**在文件中查找**命令**查找和替换**对话框。 若要处理这些情况下，在 IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>管理查找最佳的项目来打开的文档的过程。  
+ 在其他情况下，项的项目上下文未显式指定。 例如，某项的上下文不可用时用户选择打开的文件**打开现有文件**命令**文件**时调试器的运行上一个文件，或当用户单击菜单**在文件中查找**命令，在**查找和替换**对话框。 若要处理这些情况下，IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>管理查找最佳的项目以打开的文档的过程。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [项目优先级](../../extensibility/internals/project-priority.md)   
  [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)

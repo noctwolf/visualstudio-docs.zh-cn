@@ -1,9 +1,6 @@
 ---
 title: 实现端口提供程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], implementing port suppliers
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cdde98a85175692ed4717c8a9af0b26799c35214
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: cd068f9c669b898ac3d29dadccffb6edd1e0c783
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985519"
 ---
 # <a name="implement-a-port-supplier"></a>实现端口提供程序
 端口提供程序提供对会话调试管理器 (SDM) 请求上的端口。 向非 DCOM 机或新设备时需要支持进行调试时，必须实现端口提供程序。 例如，若要提供对移动电话调试，你可能会设置端口提供程序提供端口中，它连接到手机 （也许是通过红外线 （ir） 或单元格连接） 和枚举的过程和程序在手机上运行。  

@@ -1,9 +1,6 @@
 ---
-title: IDebugProcessSecurity |Microsoft 文档
-ms.custom: ''
+title: IDebugProcessSecurity |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - IDebugProcessSecurity interface
@@ -13,15 +10,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e78baf34a3ecb6d5b40162b424c11a104617669
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e34a93e73bd1c4c9b5e70f89d318c2db6a84f2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116248"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967951"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
-`IDebugProcessSecurity` 实现端口供应商来警告用户附加到进程是不安全。  
+`IDebugProcessSecurity` 被实现端口提供程序来警告用户，附加到进程是不安全的。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,21 +31,21 @@ IDebugProcessSecurity : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|从端口供应商处获取的用户名。|  
-|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|警告用户，将附加到调试过程很不安全。|  
+|[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|从端口提供程序获取用户名称。|  
+|[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|警告用户将附加到调试过程是不安全。|  
   
 ## <a name="remarks"></a>备注  
- 实现此接口可显示一条警告，并允许用户取消如果您将连接的过程可被视为不安全。  
+ 实现此接口可显示一条警告，并允许用户取消如果要附加的过程可被视为不安全。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [端口](../../../extensibility/debugger/ports.md)   
- [端口供应商](../../../extensibility/debugger/port-suppliers.md)   
+ [端口提供程序](../../../extensibility/debugger/port-suppliers.md)   
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

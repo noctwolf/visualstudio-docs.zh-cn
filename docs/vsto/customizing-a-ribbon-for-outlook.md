@@ -1,9 +1,6 @@
 ---
 title: 为 Outlook 中自定义功能区
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a0caef19f2f82ed6dcf1d46cfc85637c64e019f4
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: 58d1acb1c62e4a79226eb3ab5da0b95ccc2156e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932361"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>为 Outlook 中自定义功能区
   在 Microsoft Office Outlook 中自定义功能区时，必须考虑自定义功能区在应用程序中出现的位置。 在主应用程序用户界面 (UI) 和用户执行某些任务（例如创建电子邮件消息）时打开的窗口中，Outlook 会显示功能区。 这些应用程序窗口被命名为检查器。  
@@ -58,5 +55,3 @@ ms.locfileid: "53647231"
  [功能区概述](../vsto/ribbon-overview.md)   
  [功能区设计器](../vsto/ribbon-designer.md)   
  [Ribbon XML](../vsto/ribbon-xml.md)  
-  
-  

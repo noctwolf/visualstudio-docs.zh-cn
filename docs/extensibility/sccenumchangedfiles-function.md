@@ -1,9 +1,6 @@
 ---
 title: SccEnumChangedFiles 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - SccEnumChangedFiles
@@ -15,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c0284dd268621fddeaa9322c9a3cc17de7a3e71
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 708f8aeff15511a7c1ab877391e0f4ee8449480e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811616"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942263"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函数
 此函数将给定的本地文件的列表，确定哪些文件是不同于源代码代码管理数据库中的相应版本。  
@@ -56,7 +53,7 @@ SCCRTN SccEnumChangedFiles(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|操作已成功完成。|  
 |SCC_UNSPECIFIEDERROR|常规错误。|  

@@ -1,9 +1,6 @@
 ---
-title: 如何： 触发事件; 当编辑器失去焦点 |Microsoft Docs
-ms.custom: ''
+title: 如何：触发事件; 当编辑器失去焦点 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - fire events on losing focus
@@ -13,14 +10,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af6abf503bec94cb45638b1e059f545f005cb318
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d579b30c5eac25c815739149d3b3baacc22dc439
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990761"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>如何： 触发事件; 当编辑器失去焦点
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>如何：触发事件; 当编辑器失去焦点
 有时有必要知道当编辑器失去焦点的窗口框架上。 例如，可能需要在代码窗口中提取代码后对其焦点不再位于编辑器中。 以下过程提供了为接收通知的编辑器失去焦点要遵循的步骤。  
   
 ## <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>触发事件以响应编辑器失去焦点  

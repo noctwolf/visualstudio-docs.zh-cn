@@ -1,9 +1,6 @@
 ---
 title: 如何：管理操作窗格上的控件布局
-ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +14,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 38f9e534fe213b766ea74c83604ddf1cafa1ac65
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: ee790707a5c1c74f3227f74874c66bb4438e7ab0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53647044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991170"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>如何：管理操作窗格上的控件布局
   操作窗格停靠到的文档或工作表右侧默认设置。但是，它可停靠到左侧、 顶部或底部。 如果使用多个用户控件，可以编写代码以正确堆栈操作窗格上的用户控件。 有关详细信息，请参阅[操作窗格概述](../vsto/actions-pane-overview.md)。  
@@ -74,5 +71,3 @@ ms.locfileid: "53647044"
  [如何：将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [演练：从操作窗格的文档中插入文本](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [演练：从操作窗格的文档中插入文本](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
-  
-  

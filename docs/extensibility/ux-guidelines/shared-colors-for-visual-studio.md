@@ -1,9 +1,6 @@
 ---
 title: 用于 Visual Studio 共享颜色 |Microsoft Docs
-ms.custom: ''
 ms.date: 04/26/2017
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: gregvanl
@@ -11,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19d628f2f83943b88a415699dddd78f033597983
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9e709ceb16a95094f14df65d42e7167ef5abdba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833338"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53991238"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio 的共享的颜色
 当您正在设计使用公共 Visual Studio shell 元素的 UI 或希望界面元素将与类似功能一致时，使用包定义文件中现有的标记名称来选择和分配颜色。 这可确保 UI 与整体 Visual Studio 环境保持一致，并确保它在添加或更新主题时自动更新。  
@@ -50,7 +47,7 @@ ms.locfileid: "49833338"
 
 ![标准按钮](../../extensibility/ux-guidelines/media/03.03.Button.Standard.png "03.03.Button.Standard")<br />标准按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | Button | `CommonControls.Button` |
 | 按钮边框 | `CommonControls.ButtonBorder` |
@@ -59,7 +56,7 @@ ms.locfileid: "49833338"
 
 ![默认按钮](../../extensibility/ux-guidelines/media/03.03.Button.Default.png "03.03.Button.Default")<br />默认按钮
 
-| 元素 | 标记名称：Category.color | 
+| 元素 | 令牌名称：Category.color | 
 | --- | --- | 
 | Button | `CommonControls.ButtonDefault` |
 | 按钮边框 | `CommonControls.ButtonBorderDefault` |
@@ -68,7 +65,7 @@ ms.locfileid: "49833338"
 
 ![禁用的按钮](../../extensibility/ux-guidelines/media/03.03.Button.Disabled.png "03.03.Button.Disabled")<br />禁用的按钮  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | Button | `CommonControls.ButtonDisabled` |
 | 按钮边框 | `CommonControls.ButtonBorderDisabled` |
@@ -77,7 +74,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的按钮](../../extensibility/ux-guidelines/media/03.03.Button.hover.png "03.03.Button.hover")<br />悬停时的按钮  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | Button | `CommonControls.ButtonHover` |
 | 按钮边框 | `CommonControls.ButtonBorderHover` |
@@ -86,7 +83,7 @@ ms.locfileid: "49833338"
 
 ![按下的按钮](../../extensibility/ux-guidelines/media/03.03.Button.Pressed.png "03.03.Button.Pressed")<br />按下的按钮  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | Button | `CommonControls.ButtonPressed` |
 | 按钮边框 | `CommonControls.ButtonBorderPressed` |
@@ -95,7 +92,7 @@ ms.locfileid: "49833338"
 
 ![已设定焦点的按钮](../../extensibility/ux-guidelines/media/03.03.Button.Focused.png "03.03.Button.Focused")<br />已设定焦点的按钮  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | Button | `CommonControls.ButtonFocused` |
 | 按钮边框 | `CommonControls.ButtonBorderFocused` |
@@ -111,7 +108,7 @@ ms.locfileid: "49833338"
 
 ![复选框](../../extensibility/ux-guidelines/media/0303-162_checkbox.png "0303年 162_Checkbox")<br />默认复选框
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `CommonControls.CheckBoxBackground` |
 | Border | `CommonControls.CheckBoxBorder` |
@@ -122,7 +119,7 @@ ms.locfileid: "49833338"
 
 ![已禁用的复选框](../../extensibility/ux-guidelines/media/0303-163_checkboxdisabled.png "0303年 163_CheckboxDisabled")<br />已禁用的复选框  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `CommonControls.CheckBoxBackgroundDisabled` |
 | Border | `CommonControls.CheckBoxBorderDisabled` |
@@ -133,7 +130,7 @@ ms.locfileid: "49833338"
 
  ![悬停时的复选框](../../extensibility/ux-guidelines/media/0303-164_checkboxhover.png "0303年 164_CheckboxHover")<br />悬停时的复选框
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `CommonControls.CheckBoxBackgroundHover` |
 | Border | `CommonControls.CheckBoxBorderHover` |
@@ -144,7 +141,7 @@ ms.locfileid: "49833338"
 
 ![已按下的复选框](../../extensibility/ux-guidelines/media/0303-165_checkboxpressed.png "0303年 165_CheckboxPressed")<br />已按下的复选框  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `CommonControls.CheckBoxBackgroundPressed` |
 | Border | `CommonControls.CheckBoxBorderPressed` |
@@ -155,7 +152,7 @@ ms.locfileid: "49833338"
 
 ![已设定焦点的复选框](../../extensibility/ux-guidelines/media/0303-166_checkboxfocused.png "0303年 166_CheckboxFocused")<br />已设定焦点的复选框  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `CommonControls.CheckBoxBackgroundFocused` |
 | Border | `CommonControls.CheckBoxBorderFocused` |
@@ -174,7 +171,7 @@ ms.locfileid: "49833338"
 
 ![默认下拉/组合框](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303年 168_DropDownComboBox")<br />默认下拉/组合框
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `CommonControls.ComboBoxBackground` |
 | Border | `CommonControls.ComboBoxBorder` |
@@ -187,7 +184,7 @@ ms.locfileid: "49833338"
 
 ![已禁用的下拉/组合框](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303年 169_DropDownComboBoxDisabled")<br />已禁用的下拉/组合框
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `CommonControls.ComboBoxBackgroundDisabled` |
 | Border | `CommonControls.ComboBoxBorderDisabled` |
@@ -200,7 +197,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的下拉/组合框](../../extensibility/ux-guidelines/media/0303-170_dropdowncomboboxhover.png "0303年 170_DropDownComboBoxHover")<br />悬停时的下拉/组合框
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `CommonControls.ComboBoxBackgroundHover` |
 | Border | `CommonControls.ComboBoxBorderHover` |
@@ -213,7 +210,7 @@ ms.locfileid: "49833338"
 
 ![按下的下拉/组合框](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303年 171_DropDownComboBoxPressed")<br />按下的下拉/组合框  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `CommonControls.ComboBoxBackgroundPressed` |
 | Border | `CommonControls.ComboBoxBorderPressed` |
@@ -226,7 +223,7 @@ ms.locfileid: "49833338"
 
  ![按下的列表项视图中的下拉/组合框](../../extensibility/ux-guidelines/media/0303-174_dropdowncomboboxlistview.png "0303年 174_DropDownComboBoxListView")<br />按下的列表项视图中的下拉/组合框  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `CommonControls.ComboBoxListBackground`<br />`CommonControls.ComboBoxListBackgroundHover`<br />`CommonControls.ComboBoxListItemBackgroundPressed`<br />`CommonControls.ComboBoxListItemBackgroundFocused` |
 | Border | `CommonControls.ComboBoxListBorder`<br />`CommonControls.ComboBoxListBorderHover`<br />`CommonControls.ComboBoxListBorderPressed`<br />`CommonControls.ComboBoxListBorderFocused` |
@@ -237,7 +234,7 @@ ms.locfileid: "49833338"
 
 ![下拉/组合框的焦点](../../extensibility/ux-guidelines/media/0303-172_dropdowncomboboxfocused.png "0303年 172_DropDownComboBoxFocused")<br />具有焦点的下拉/组合框
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `CommonControls.ComboBoxBackgroundFocused` |
 | Border | `CommonControls.ComboBoxBorderFocused` |
@@ -250,7 +247,7 @@ ms.locfileid: "49833338"
 
 ![下拉/组合框文本输入所选内容](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "0303年 173_DropDownComboBoxTextInput")<br />下拉/组合框文本输入的选择  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 突出显示 | `CommonControls.ComboBoxTextInputSelection` |
 
@@ -268,7 +265,7 @@ ms.locfileid: "49833338"
 
 **列标题： 这是默认状态**
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Header.Default` |
 | 前景（文本） | `Environment.CommandBarTextActive` |
@@ -277,7 +274,7 @@ ms.locfileid: "49833338"
 
 **列标题： 将鼠标悬停状态**
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Header.MouseOver` |
 | 前景（文本） | `Environment.CommandBarTextHover` |
@@ -286,7 +283,7 @@ ms.locfileid: "49833338"
 
 **列标题： 按下状态**
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `CommonControls.CheckBoxBackgroundPressed` |
 | 前景（文本） | `CommonControls.CheckBoxBorderPressed` |
@@ -298,7 +295,7 @@ ms.locfileid: "49833338"
 
 **列表视图项： 这是默认状态**
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 透明 |
 | 前景（文本） | `Environment.CommandBarTextActive` |
@@ -306,7 +303,7 @@ ms.locfileid: "49833338"
 
 **列表视图项： 活动状态**
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `TreeView.SelectedItemActive` |
 | 前景（文本） | `TreeView.SelectedItemActiveText` |
@@ -314,7 +311,7 @@ ms.locfileid: "49833338"
 
 **列表视图项： 非活动状态**
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `TreeView.SelectedItemInactive` |
 | 前景（文本） | `TreeView.SelectedItemInactiveText` |
@@ -327,7 +324,7 @@ ms.locfileid: "49833338"
 
 ![默认的说明文本](../../extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />默认的说明文本
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景 （文本） | `Environment.ControlText` |
 
@@ -336,7 +333,7 @@ ms.locfileid: "49833338"
 
 ![辅助说明文本](../../extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />辅助说明文本
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景 （文本） | `Environment.ControlEditHintText` |
 
@@ -347,7 +344,7 @@ ms.locfileid: "49833338"
 
 ![默认提示文本](../../extensibility/ux-guidelines/media/0303_HintText.png "0303_HintText.png")<br />默认提示文本
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景 （文本） | `Environment.ControlEditHintText` |
 
@@ -355,7 +352,7 @@ ms.locfileid: "49833338"
 
 ![所需的提示文本](../../extensibility/ux-guidelines/media/0303_RequiredHintText.png "0303_RequiredHintText.png")<br />所需的提示文本
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景 （文本） | `Environment.ControlRequiredHintText` |
 | 背景 | `Environment.ControlRequiredBackground` |
@@ -366,7 +363,7 @@ ms.locfileid: "49833338"
 
 ![搜索框控件文本](../../extensibility/ux-guidelines/media/0303_SearchBoxControl.png "0303_SearchBoxControl.png")<br />搜索框控件文本
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景 （文本） | `SearchControl.UnfocusedWatermarkText` |
 
@@ -383,7 +380,7 @@ ms.locfileid: "49833338"
 
 ![默认超链接](../../extensibility/ux-guidelines/media/0303-134_hyperlink.png "0303年 134_Hyperlink")<br />默认超链接
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景（文本） | `Environment.PanelHyperlink` |
 
@@ -391,7 +388,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的超链接](../../extensibility/ux-guidelines/media/0303-135_hyperlinkhover.png "0303年 135_HyperlinkHover")<br />悬停时的超链接  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景（文本） | `Environment.PanelHyperlinkHover` |
 
@@ -399,7 +396,7 @@ ms.locfileid: "49833338"
 
 ![按下的超链接](../../extensibility/ux-guidelines/media/0303-136_hyperlinkpressed.png "0303年 136_HyperlinkPressed")<br />按下的超链接  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景（文本） | `Environment.PanelHyperlinkPressed` |
 
@@ -407,7 +404,7 @@ ms.locfileid: "49833338"
 
 ![已禁用的超链接](../../extensibility/ux-guidelines/media/0303-137_hyperlinkdisabled.png "0303年 137_HyperlinkDisabled")<br />已禁用的超链接  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景（文本） | `Environment.PanelHyperlinkDisabled` |
 
@@ -424,7 +421,7 @@ ms.locfileid: "49833338"
 
 ![默认信息栏](../../extensibility/ux-guidelines/media/0303-139_infobar.png "0303年 139_Infobar")<br />默认信息栏
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `InfoBar.InfoBarBackground` |
 | 前景（文本） | `InfoBar.InfoBar` |
@@ -434,7 +431,7 @@ ms.locfileid: "49833338"
 
 ![默认关闭信息栏 (&times;) 按钮](../../extensibility/ux-guidelines/media/0303_InfobarCloseDefault.png "0303_InfobarCloseDefault.png")<br />默认关闭信息栏 (&times;) 按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `InfoBar.CloseButton` |
 | Border | `InfoBar.CloseButtonBorder` |
@@ -444,7 +441,7 @@ ms.locfileid: "49833338"
 
 ![信息栏关闭 (&times;) 按钮上悬停](../../extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover.png")<br />信息栏关闭 (&times;) 悬停按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `InfoBar.CloseButtonHover` |
 | Border | `InfoBar.CloseButtonHoverBorder` |
@@ -454,7 +451,7 @@ ms.locfileid: "49833338"
 
 ![按下关闭信息栏 (&times;) 按钮](../../extensibility/ux-guidelines/media/0303_InfobarClosePressed.png "0303_InfobarClosePressed.png")<br />按下关闭信息栏 (&times;) 按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `InfoBar.CloseButtonDown` |
 | Border | `InfoBar.CloseButtonDownBorder` |
@@ -464,7 +461,7 @@ ms.locfileid: "49833338"
 
 ![默认信息栏超链接按钮](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />默认信息栏超链接按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景 （文本） | `InfoBar.Hyperlink` |
 
@@ -472,7 +469,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的信息栏超链接按钮](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonHover.png "0303_InfobarHyperlinkButtonHover.png")<br />悬停时的信息栏超链接按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景 （文本） | `Infobar.HyperlinkMouseOver`<br />（使用下划线） |
 
@@ -480,7 +477,7 @@ ms.locfileid: "49833338"
 
 ![按下的信息栏超链接按钮](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonPressed.png "0303_InfobarHyperlinkButtonPressed.png")<br />按下的信息栏超链接按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景 （文本） | `Infobar.HyperlinkMouseDown`<br />（使用下划线） |
 
@@ -488,7 +485,7 @@ ms.locfileid: "49833338"
 
 ![默认内联信息栏超链接按钮](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkButtonDefault.png "0303_InfobarHyperlinkButtonDefault.png")<br />默认内联信息栏超链接按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景 （文本） | `InfoBar.Hyperlink` |
 
@@ -496,7 +493,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的信息栏内联超链接按钮](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlineHover.png "0303_InfobarHyperlinkInlineHover.png")<br />悬停时的信息栏内联超链接按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景 （文本） | `Infobar.HyperlinkMouseOver`<br />（使用下划线） |
 
@@ -504,7 +501,7 @@ ms.locfileid: "49833338"
 
 ![按下的信息栏内联超链接按钮](../../extensibility/ux-guidelines/media/0303_InfobarHyperlinkInlinePressed.png "0303_InfobarHyperlinkInlinePressed.png")<br />按下的信息栏内联超链接按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景 （文本） | `Infobar.HyperlinkMouseDown`<br />（使用下划线） |
 
@@ -512,7 +509,7 @@ ms.locfileid: "49833338"
 
 ![默认信息栏按钮](../../extensibility/ux-guidelines/media/0303_InfobarButtonDefault.png "0303_InfobarButtonDefault.png")<br />默认信息栏按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `InfoBar.Button` |
 | 前景 （文本） | `InfoBar.Button` |
@@ -522,7 +519,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的信息栏按钮](../../extensibility/ux-guidelines/media/0303_InfobarButtonHover.png "0303_InfobarButtonHover.png")<br />悬停时的信息栏按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `InfoBar.ButtonMouseOver` |
 | 前景 （文本） | `InfoBar.ButtonMouseOver` |
@@ -532,7 +529,7 @@ ms.locfileid: "49833338"
 
 ![按下的信息栏按钮](../../extensibility/ux-guidelines/media/0303_InfobarButtonPressed.png "0303_InfobarButtonPressed.png")<br />按下的信息栏按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `InfoBar.ButtonMouseDown` |
 | 前景 （文本） | `InfoBar.ButtonMouseDown` |
@@ -542,7 +539,7 @@ ms.locfileid: "49833338"
 
 ![已禁用信息栏按钮](../../extensibility/ux-guidelines/media/0303_InfobarButtonDisabled.png "0303_InfobarButtonDisabled.png")<br />已禁用信息栏按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `InfoBar.ButtonDisabled` |
 | 前景 （文本） | `InfoBar.ButtonDisabled` |
@@ -552,7 +549,7 @@ ms.locfileid: "49833338"
 
 ![已设定焦点的信息栏按钮](../../extensibility/ux-guidelines/media/0303_InfobarButtonFocus.png "0303_InfobarButtonFocus.png")<br />已设定焦点的信息栏按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `InfoBar.ButtonFocus` |
 | 前景 （文本） | `InfoBar.ButtonFocus` |
@@ -571,7 +568,7 @@ ms.locfileid: "49833338"
 
 ![默认滚动条](../../extensibility/ux-guidelines/media/0303-141_scrollbar.png "0303年 141_Scrollbar")<br />默认滚动条
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 滚动条 | `Environment.ScrollBarBackground` |
 | 前景（缩略） | `Environment.ScrollBarThumbBackground` |
@@ -580,7 +577,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的滚动条](../../extensibility/ux-guidelines/media/0303-143_scrollbarhover.png "0303年 143_ScrollbarHover")<br />悬停时的滚动条
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 滚动条 | `Environment.ScrollBarBackground` |
 | 前景（缩略） | `Environment.ScrollBarThumbMouseOverBackground` |
@@ -589,7 +586,7 @@ ms.locfileid: "49833338"
 
 ![按下的滚动条](../../extensibility/ux-guidelines/media/0303-145_scrollbarpressed.png "0303年 145_ScrollbarPressed")<br />按下的滚动条  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 滚动条 | `Environment.ScrollBarBackground` |
 | 前景（缩略） | `Environment.ScrollBarThumbPressedBackground` |
@@ -598,7 +595,7 @@ ms.locfileid: "49833338"
 
 ![默认滚动条箭头](../../extensibility/ux-guidelines/media/0303-142_scrollbararrow.png "0303年 142_ScrollbarArrow")<br />默认滚动条箭头
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ScrollBarArrowBackground`<br />（设置为与滚动条相同的颜色。） |
 | 前景（标志符号） | `Environment.ScrollBarArrowGlyph` |
@@ -607,7 +604,7 @@ ms.locfileid: "49833338"
 
 ![滚动条箭头上悬停](../../extensibility/ux-guidelines/media/0303-144_scrollbararrowhover.png "0303年 144_ScrollbarArrowHover")<br />悬停时的滚动条箭头  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ScrollBarArrowMouseOverBackground`<br />（设置为与滚动条相同的颜色。） |
 | 前景（标志符号） | `Environment.ScrollBarArrowGlyphMouseOver` |
@@ -616,7 +613,7 @@ ms.locfileid: "49833338"
 
 ![按下的滚动条箭头](../../extensibility/ux-guidelines/media/0303-146_scrollbararrowpressed.png "0303年 146_ScrollbarArrowPressed")<br />按下的滚动条箭头
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ScrollBarArrowPressedBackground`<br />（设置为与滚动条相同的颜色。） |
 | 前景（标志符号） | `Environment.ScrollBarArrowGlyphPressed` |
@@ -645,7 +642,7 @@ ms.locfileid: "49833338"
 
 ![已设定焦点的搜索输入的字段](../../extensibility/ux-guidelines/media/0303-111_searchinputfieldfocused.png "0303年 111_SearchInputFieldFocused")<br />已设定焦点的搜索输入的字段  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `SearchControl.FocusedBackground` |
 | 前景（文本） | `SearchControl.FocusedBackground` |
@@ -656,7 +653,7 @@ ms.locfileid: "49833338"
 
 ![失去焦点的搜索输入的字段](../../extensibility/ux-guidelines/media/0303-114_searchinputfieldunfocused.png "0303年 114_SearchInputFieldUnfocused")<br />失去焦点，处于活动状态的搜索输入的字段
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `SearchControl.SearchActiveBackground` |
 | 前景（文本） | `SearchControl.SearchActiveBackground` |
@@ -667,7 +664,7 @@ ms.locfileid: "49833338"
 
 ![失去焦点的非活动搜索输入的字段](../../extensibility/ux-guidelines/media/0303-114-1_searchinputfieldunfocusedinactive.png "0303年 114 1_SearchInputFieldUnfocusedInactive")<br />失去焦点的非活动搜索输入的字段  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `SearchControl.Unfocused` |
 | 前景（文本） | `SearchControl.Unfocused` |
@@ -678,7 +675,7 @@ ms.locfileid: "49833338"
 
 ![突出显示的搜索输入的字段](../../extensibility/ux-guidelines/media/0303-120_searchinputfieldhighlight.png "0303年 120_SearchInputFieldHighlight")<br />突出显示的搜索输入的字段
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `SearchControl.Selection` |
 | 前景（文本） | `SearchControl.FocusedBackground` |
@@ -689,7 +686,7 @@ ms.locfileid: "49833338"
 
 ![禁用搜索输入的字段](../../extensibility/ux-guidelines/media/0303-121_searchinputfielddisabled.png "0303年 121_SearchInputFieldDisabled")<br />已禁用的搜索输入的字段
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `SearchControl.Disabled` |
 | 前景（文本） | `SearchControl.Disabled` |
@@ -700,7 +697,7 @@ ms.locfileid: "49833338"
 
 ![已设定焦点的搜索操作按钮](../../extensibility/ux-guidelines/media/0303-112_searchactionbuttonfocused.png "0303年 112_SearchActionButtonFocused")<br />已设定焦点的搜索操作按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 无 |
 | 前景（搜索标志符号） | `SearchControl.SearchGlyph` |
@@ -712,7 +709,7 @@ ms.locfileid: "49833338"
 
 ![失去焦点的搜索操作按钮](../../extensibility/ux-guidelines/media/0303-115_searchactionbuttonunfocused.png "0303年 115_SearchActionButtonUnfocused")<br />失去焦点的搜索操作按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 不可用 |
 | 前景（搜索标志符号） | `SearchControl.SearchGlyph` |
@@ -724,7 +721,7 @@ ms.locfileid: "49833338"
 
 ![按下的搜索操作按钮](../../extensibility/ux-guidelines/media/0303-116-1_searchactionbuttonpressed.png "0303年 116 1_SearchActionButtonPressed")<br />按下的搜索操作按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `SearchControl.ActionButtonMouseDown` |
 | 前景（标志符号） | `SearchControl.ActionButtonMouseDownGlyph` |
@@ -734,7 +731,7 @@ ms.locfileid: "49833338"
 
 ![禁用的搜索操作按钮](../../extensibility/ux-guidelines/media/0303-122_searchactionbuttondisabled.png "0303年 122_SearchActionButtonDisabled")<br />已禁用的搜索操作按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 无 |
 | 前景（标志符号） | `SearchControl.ActionButtonDisabledGlyph` |
@@ -744,7 +741,7 @@ ms.locfileid: "49833338"
 
 ![已设定焦点的搜索下拉按钮](../../extensibility/ux-guidelines/media/0303-113_searchdropdownbuttonfocused.png "0303年 113_SearchDropdownButtonFocused")<br />已设定焦点的搜索下拉按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `SearchControl.FocusedDropDownButton` |
 | 前景（标志符号） | `SearchControl.FocusedDropDownButtonGlyph` |
@@ -754,7 +751,7 @@ ms.locfileid: "49833338"
 
 ![失去焦点的搜索下拉按钮](../../extensibility/ux-guidelines/media/0303-116_searchdropdownbuttonunfocused.png "0303年 116_SearchDropdownButtonUnfocused")<br />失去焦点的搜索下拉按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `SearchControl.UnfocusedDropDownButton` |
 | 前景（标志符号） | `SearchControl.UnfocusedDropDownButtonGlyph` |
@@ -764,7 +761,7 @@ ms.locfileid: "49833338"
 
 ![按下的搜索下拉按钮](../../extensibility/ux-guidelines/media/0303-116-2_searchdropdownbuttonpressed.png "0303年 116 2_SearchDropdownButtonPressed")<br />按下的搜索下拉按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `SearchControl.MouseDownDropDownButton` |
 | 前景（标志符号） | `SearchControl.MouseDownDropDownButtonGlyph` |
@@ -774,7 +771,7 @@ ms.locfileid: "49833338"
 
 ![禁用搜索下拉按钮](../../extensibility/ux-guidelines/media/0303-123_searchdropdownbuttondisabled.png "0303年 123_SearchDropdownButtonDisabled")<br />已禁用的搜索下拉按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |  
 | 背景 | 无 |
 | 前景（标志符号） | `SearchControl.DisabledDownButtonGlyph` |
@@ -792,7 +789,7 @@ ms.locfileid: "49833338"
 
 **搜索下拉列表元素**
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | Border | `SearchControl.PopupBorder` |
 | Separator | `SearchControl.PopupSectionHeaderSeparator` |
@@ -802,7 +799,7 @@ ms.locfileid: "49833338"
 
 ![默认建议的搜索](../../extensibility/ux-guidelines/media/0303-125_searchsuggested.png "0303年 125_SearchSuggested")<br />默认建议的搜索  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `SearchControl.PopupItemsListBackgroundGradientBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `SearchControl.PopupItemText` |
@@ -811,7 +808,7 @@ ms.locfileid: "49833338"
 
 ![建议的搜索悬停](../../extensibility/ux-guidelines/media/0303-128_searchsuggestedhover.png "0303年 128_SearchSuggestedHover")<br />悬停时的建议的搜索
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `SearchControl.PopupMouseOverItemText` |
@@ -823,7 +820,7 @@ ms.locfileid: "49833338"
 
 ![搜索选项](../../extensibility/ux-guidelines/media/0303-127_searchoptions.png "0303年 127_SearchOptions")<br />默认搜索选项 （链接）  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `SearchControl.PopupSectionBackgroundGradientBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（复选框文本） | `SearchControl.PopupCheckboxText` |
@@ -837,7 +834,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的搜索选项 （链接）](../../extensibility/ux-guidelines/media/0303-130_searchoptionshover.png "0303年 130_SearchOptionsHover")<br />悬停时的搜索选项 （链接）  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（复选框文本） | `SearchControl.PopupCheckboxMouseDownText` |
@@ -850,7 +847,7 @@ ms.locfileid: "49833338"
 
 ![按下的搜索选项 （链接）](../../extensibility/ux-guidelines/media/0303-132_searchoptionspressed.png "0303年 132_SearchOptionsPressed")<br />按下的搜索选项 （链接）  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 复选框背景 | `SearchControl.PopupControlMouseDownBackgroundGradientBegin`<br />`SearchControl.PopupControlMouseDownBackgroundGradientEnd`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（复选框文本） | `SearchControl.PopupCheckboxMouseDownText` |
@@ -871,7 +868,7 @@ ms.locfileid: "49833338"
 
 ![默认树视图项](../../extensibility/ux-guidelines/media/0303-148_treeview.png "0303年 148_TreeView")<br />默认树视图项
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `TreeView.Background` |
 | 前景（文本） | `TreeView.Background` |
@@ -882,7 +879,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的树视图项](../../extensibility/ux-guidelines/media/0303-149_treeviewhover.png "0303年 149_TreeViewHover")<br />悬停时的树视图项
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `TreeView.Background` |  
 | 前景（文本） | `TreeView.Background` |
@@ -893,7 +890,7 @@ ms.locfileid: "49833338"
 
 ![通过树视图项上拖动](../../extensibility/ux-guidelines/media/0303-150_treeviewdragover.png "0303年 150_TreeViewDragOver")<br />在树视图项拖动到  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `TreeView.DragOverItem` |
 | 前景（文本） | `TreeView.DragOverItem` |
@@ -904,7 +901,7 @@ ms.locfileid: "49833338"
 
 ![选择和已设定焦点的树视图项](../../extensibility/ux-guidelines/media/0303-151_treeviewfocused.png "0303年 151_TreeViewFocused")<br />所选已设定焦点的树视图项
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `TreeView.SelectedItemActive` |
 | 前景（文本） | `TreeView.SelectedItemActive` |
@@ -915,7 +912,7 @@ ms.locfileid: "49833338"
 
 ![所选和失去焦点的树视图项](../../extensibility/ux-guidelines/media/0303-152_treeviewunfocused.png "0303年 152_TreeViewUnfocused")<br />所选和失去焦点的树视图项
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `TreeView.SelectedItemInactive` |
 | 前景（文本） | `TreeView.SelectedItemInactive` |
@@ -926,7 +923,7 @@ ms.locfileid: "49833338"
 
 ![选择和树视图项侧重于悬停](../../extensibility/ux-guidelines/media/0303-153_treeviewfocusedhover.png "0303年 153_TreeViewFocusedHover")<br />悬停时的所选且其焦点位于树视图项  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `TreeView.SelectedItemActive` |
 | 前景（文本） | `TreeView.SelectedItemActive` |
@@ -937,7 +934,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的所选和失去焦点的树视图项](../../extensibility/ux-guidelines/media/0303-154_treeviewunfocusedhover.png "0303年 154_TreeViewUnfocusedHover")<br />悬停时的所选和失去焦点的树视图项  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `TreeView.SelectedItemInactive` |
 | 前景（文本） | `TreeView.SelectedItemInactive` |
@@ -958,7 +955,7 @@ ms.locfileid: "49833338"
 
 **底部层 shell 外观**
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |  
 | 背景 | `Environment.EnvironmentBackground` |
 
@@ -966,7 +963,7 @@ ms.locfileid: "49833338"
 
 > 在 Visual Studio 2013 浅色和深色主题中设置为相同颜色值的梯度停止点。
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |  
 | 背景 | `Environment.EnvironmentBackgroundGradientBegin`<br />`Environment.EnvironmentBackgroundGradientEnd`<br />`Environment.EnvironmentBackgroundGradientMiddle1`<br />`Environment.EnvironmentBackgroundGradientMiddle2` |  
 
@@ -984,7 +981,7 @@ ms.locfileid: "49833338"
 
 > 在 Visual Studio 2013 浅色和深色主题中设置为相同颜色值的梯度停止点。
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |  
 | 背景 | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
@@ -992,7 +989,7 @@ ms.locfileid: "49833338"
 
 > 在 Visual Studio 2013 浅色和深色主题中设置为相同颜色值的梯度停止点。
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |  
 | 背景 | `Environment.CommandShelfBackgroundGradientBegin`<br />`Environment.CommandShelfBackgroundGradientMiddle`<br />`Environment.CommandShelfBackgroundGradientEnd` |
 
@@ -1008,33 +1005,33 @@ ms.locfileid: "49833338"
 
 **清单设计器选择的选项卡： 这是默认状态**
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `ManifestDesigner.TabActive` |
 | Border | 无 |
 
 **清单设计器所选的说明窗格： 这是默认状态**
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `ManifestDesigner.DescriptionPane` |
 
 **清单设计器所选内容页： 默认状态**
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `ManifestDesigner.Background` |
 | 对话框帮助程序文本 | `ManifestDesigner.WatermarkText`<br />（此标记名称不匹配其功能。） |
 
 **清单设计器选项卡： 未选中状态**
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `ManifestDesigner.Tab.Inactive` |
 
 **清单设计器选项卡： 将鼠标悬停状态**
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `ManifestDesigner.Tab.Mouseover` |
 
@@ -1066,7 +1063,7 @@ ms.locfileid: "49833338"
 
 ![默认的具有字形的菜单标题](../../extensibility/ux-guidelines/media/0303-003_menutitlewithglyphdefault.png "0303年 003_MenuTitleWithGlyphDefault")<br />默认的具有字形的菜单标题
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 无 |
 | 前景 （文本） | `Environment.CommandBarTextActive` |
@@ -1079,7 +1076,7 @@ ms.locfileid: "49833338"
 
 ![菜单标题的具有字形的悬停](../../extensibility/ux-guidelines/media/0303-005_menutitlewithglyphhover.png "0303年 005_MenuTitleWithGlyphHover")<br />悬停时的具有字形的菜单标题
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarMouseOverBackgroundBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景 （文本） | `Environment.CommandBarTextHover` |
@@ -1092,7 +1089,7 @@ ms.locfileid: "49833338"
 
 ![按下的具有字形的菜单标题](../../extensibility/ux-guidelines/media/0303-007_menutitlewithglyphpressed.png "0303年 007_MenuTitleWithGlyphPressed")<br />按下的具有字形的菜单标题
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.CommandBarTextActive` |
@@ -1103,7 +1100,7 @@ ms.locfileid: "49833338"
 
 ![禁用的具有字形的菜单标题](../../extensibility/ux-guidelines/media/0303-008_menutitlewithglyphdisabled.png "0303年 008_MenuTitleWithGlyphDisabled")<br />已禁用的菜单标题与标志符号
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 无 |
 | 前景（文本） | `Environment.CommandBarTextInactive` |
@@ -1124,7 +1121,7 @@ ms.locfileid: "49833338"
 
 ![默认菜单项](../../extensibility/ux-guidelines/media/0303-010_menudefault.png "0303年 010_MenuDefault")<br />默认菜单项  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarMenuBackgroundGradientBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.CommandBarTextActive` |
@@ -1140,7 +1137,7 @@ ms.locfileid: "49833338"
 
 ![选定的菜单](../../extensibility/ux-guidelines/media/0303-012_menuselected.png "0303年 012_MenuSelected")<br />所选的菜单项    
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 选中标记 | `Environment.CommandBarCheckBox` |  
 | 复选标记背景 | `Environment.CommandBarSelectedIcon` |  
@@ -1155,7 +1152,7 @@ ms.locfileid: "49833338"
 
 ![选定的菜单悬停](../../extensibility/ux-guidelines/media/0303-015_menuhoverselected.png "0303年 015_MenuHoverSelected")<br />悬停时的选定的菜单项
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarMenuItemMouseOver` |
 | 前景（文本） | `Environment.CommandBarMenuItemMouseOver` |
@@ -1171,7 +1168,7 @@ ms.locfileid: "49833338"
 
 ![选中的禁用的菜单](../../extensibility/ux-guidelines/media/0303-017_menudisabledchecked.png "0303年 017_MenuDisabledChecked")<br />带有复选标记的已禁用的菜单项
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 前景（文本） | `Environment.CommandBarTextInactive` |
 | 前景（子菜单标志符号） | `Environment.CommandBarMenuSubmenuGlyph` |
@@ -1204,7 +1201,7 @@ ms.locfileid: "49833338"
 
 **命令栏组： 这是默认状态**  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarGradientBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | Border | `Environment.CommandBarToolBarBorder` |
@@ -1225,7 +1222,7 @@ ms.locfileid: "49833338"
 
 ![命令图标默认值](../../extensibility/ux-guidelines/media/0303-023_commandicondefault.png "0303年 023_CommandIconDefault")<br />默认命令图标
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 不适用（从命令栏背景继承） |
 | 前景（文本） | `Environment.CommandBarTextActive` |
@@ -1235,7 +1232,7 @@ ms.locfileid: "49833338"
 
 ![默认情况下，所选的命令图标](../../extensibility/ux-guidelines/media/0303-024_commandicondefaultselected.png "0303年 024_CommandIconDefaultSelected")<br />默认情况下，所选的命令图标  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarSelected` |
 | 前景（文本） | `Environment.CommandBarTextSelected` |
@@ -1245,7 +1242,7 @@ ms.locfileid: "49833338"
 
 ![命令图标上悬停或焦点](../../extensibility/ux-guidelines/media/0303-025_commandiconhover.png "0303年 025_CommandIconHover")<br />悬停或焦点上的命令图标
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarMouseOverBackgroundBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.CommandBarTextHover` |
@@ -1255,7 +1252,7 @@ ms.locfileid: "49833338"
 
 ![选择命令图标上悬停或焦点](../../extensibility/ux-guidelines/media/0303-026_commandiconhoverselected.png "0303年 026_CommandIconHoverSelected")<br />所选的命令图标上悬停或焦点
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarHoverOverSelected` |
 | 前景（文本） | `Environment.CommandBarTextHoverOverSelected` |
@@ -1265,7 +1262,7 @@ ms.locfileid: "49833338"
 
 ![按下命令图标](../../extensibility/ux-guidelines/media/0303-027_commandiconpressed.png "0303年 027_CommandIconPressed")<br />已按下命令图标
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarMouseDownBackgroundBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.CommandBarTextMouseDown` |
@@ -1275,7 +1272,7 @@ ms.locfileid: "49833338"
 
 ![已禁用的命令图标](../../extensibility/ux-guidelines/media/0303-028_commandicondisabled.png "0303年 028_CommandIconDisabled")<br />已禁用命令图标
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 不适用（从命令栏背景继承） |
 | 前景（文本） | `Environment.CommandBarTextInactive` |
@@ -1297,7 +1294,7 @@ ms.locfileid: "49833338"
 
 ![命令栏组合框输入的字段](../../extensibility/ux-guidelines/media/0303-030_comboboxinputfield.png "0303年 030_ComboBoxInputField")<br />命令栏组合框输入的字段  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ComboBoxBackground` |
 | 前景（文本） | `Environment.ComboBoxText` |
@@ -1308,7 +1305,7 @@ ms.locfileid: "49833338"
 
 ![组合框下拉&#45;向下按钮](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303年 031_ComboBoxDropdownButton")<br />命令栏下拉按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 不适用（从命令栏背景继承） |
 | 前景（标志符号） | `Environment.ComboBoxGlyph` |
@@ -1317,7 +1314,7 @@ ms.locfileid: "49833338"
 
 ![命令栏下拉列表](../../extensibility/ux-guidelines/media/0303-032_comboboxdropdownlist.png "0303年 032_ComboBoxDropdownList")<br />命令栏下拉列表
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ComboBoxPopupBackgroundBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.ComboBoxItemText` |
@@ -1327,7 +1324,7 @@ ms.locfileid: "49833338"
 
 ![命令栏的组合框输入的字段的悬停](../../extensibility/ux-guidelines/media/0303-033_comboboxinputfieldhover.png "0303年 033_ComboBoxInputFieldHover")<br />命令栏的组合框输入的字段的悬停  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ComboBoxMouseOverBackgroundBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.ComboBoxMouseOverText` |
@@ -1338,7 +1335,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的命令栏下拉列表按钮](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303年 034_ComboBoxDropdownButtonHover")<br />悬停时的命令栏下拉按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ComboBoxButtonMouseOverBackground` |
 | 前景（标志符号） | `Environment.ComboBoxMouseOverGlyph` |
@@ -1347,7 +1344,7 @@ ms.locfileid: "49833338"
 
  ![悬停时的命令栏下拉列表](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303年 035_ComboBoxDropdownListHover")<br />悬停时的命令栏下拉列表  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景（菜单项） | `Environment.ComboBoxItemMouseOverBackground` |
 | 前景（文本） | `Environment.ComboBoxItemMouseOverText` |
@@ -1357,7 +1354,7 @@ ms.locfileid: "49833338"
 
 ![命令栏的组合框输入字段已设定焦点](../../extensibility/ux-guidelines/media/0303-036_comboboxinputfieldfocused.png "0303年 036_ComboBoxInputFieldFocused")<br />已设定焦点的命令栏组合框输入的字段
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ComboBoxFocusedBackground` |
 | 前景（文本） | `Environment.ComboBoxFocusedText` |
@@ -1368,7 +1365,7 @@ ms.locfileid: "49833338"
 
 ![已设定焦点的命令栏下拉列表按钮](../../extensibility/ux-guidelines/media/0303-037_comboboxdropdownbuttonfocused.png "0303年 037_ComboBoxDropdownButtonFocused")<br />已设定焦点的命令栏下拉按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ComboBoxFocusedButtonBackground` |
 | 前景（标志符号） | `Environment.ComboBoxFocusedGlyph` |
@@ -1377,7 +1374,7 @@ ms.locfileid: "49833338"
 
 ![按下命令的组合框输入字段条形](../../extensibility/ux-guidelines/media/0303-038_comboboxinputfieldpressed.png "0303年 038_ComboBoxInputFieldPressed")<br />按下的命令栏组合框输入的字段
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ComboBoxMouseDownBackground` |
 | 前景（文本） | `Environment.ComboBoxMouseDownText` |
@@ -1388,7 +1385,7 @@ ms.locfileid: "49833338"
 
 ![按下的命令栏下拉列表按钮](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303年 039_ComboBoxDropdownButtonPressed")<br />按下的命令栏下拉按钮  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ComboBoxButtonMouseDownBackground` |
 | 前景（标志符号） | `Environment.ComboBoxMouseDownGlyph` |
@@ -1397,7 +1394,7 @@ ms.locfileid: "49833338"
 
 ![禁用命令栏的组合框输入字段](../../extensibility/ux-guidelines/media/0303-041_comboboxinputfielddisabled.png "0303年 041_ComboBoxInputFieldDisabled")<br />已禁用的命令栏的组合框输入字段  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ComboBoxDisabledBackground` |
 | 前景（文本） | `Environment.ComboBoxDisabledText` |
@@ -1408,7 +1405,7 @@ ms.locfileid: "49833338"
 
 ![禁用命令栏下拉列表按钮](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303年 040_ComboBoxDropdownButtonDisabled")<br />已禁用的命令栏下拉按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 无 |
 | 前景（标志符号） | `Environment.ComboBoxDisabledGlyph` |
@@ -1429,7 +1426,7 @@ ms.locfileid: "49833338"
 
 ![默认命令栏下拉选择字段](../../extensibility/ux-guidelines/media/0303-043_dropdownselectionfield.png "0303年 043_DropdownSelectionField")<br />默认命令栏下拉选择字段  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.DropDownBackground` |
 | 前景（文本） | `DropDownText` |
@@ -1440,7 +1437,7 @@ ms.locfileid: "49833338"
 
 ![默认命令栏下拉列表按钮](../../extensibility/ux-guidelines/media/0303-044_dropdownbutton.png "0303年 044_DropdownButton")<br />默认的命令栏下拉按钮  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 无 |
 | 前景（标志符号） | `Environment.DropDownGlyph` |
@@ -1449,7 +1446,7 @@ ms.locfileid: "49833338"
 
 ![默认命令栏下拉列表](../../extensibility/ux-guidelines/media/0303-045_dropdownlist.png "0303年 045_DropdownList")<br />默认命令栏下拉列表  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.DropDownPopupBackgroundBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.ComboBoxItemText` |
@@ -1460,7 +1457,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的命令栏下拉选择字段](../../extensibility/ux-guidelines/media/0303-046_dropdownselectionfieldhover.png "0303年 046_DropdownSelectionFieldHover")<br />悬停时的命令栏下拉选择字段  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.DropDownMouseOverBackgroundBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.DropDownMouseOverText` |
@@ -1471,7 +1468,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的命令栏下拉列表按钮](../../extensibility/ux-guidelines/media/0303-047_dropdownbuttonhover.png "0303年 047_DropdownButtonHover")<br />悬停时的命令栏下拉按钮  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.DropDownButtonMouseOverBackground` |
 | 前景（标志符号） | `Environment.DropDownMouseOverGlyph` |
@@ -1480,7 +1477,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的命令栏下拉列表](../../extensibility/ux-guidelines/media/0303-048_dropdownlisthover.png "0303年 048_DropdownListHover")<br />悬停时的命令栏下拉列表  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景（菜单项） | `Environment.ComboBoxItemMouseOverBackground` |
 | 前景（文本） | `Environment.ComboBoxItemMouseOverText` |
@@ -1490,7 +1487,7 @@ ms.locfileid: "49833338"
 
 ![删除&#45;下按下的选择字段](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303年 049_DropdownSelectionFieldPressed")<br />按命令下条形下拉选择字段
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.DropDownMouseDownBackground` |
 | 前景（文本） | `Environment.DropDownMouseDownText` |
@@ -1501,7 +1498,7 @@ ms.locfileid: "49833338"
 
 ![按下的命令栏下拉列表按钮](../../extensibility/ux-guidelines/media/0303-050_dropdownbuttonpressed.png "0303年 050_DropdownButtonPressed")<br />按下的命令栏下拉按钮  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.DropDownButtonMouseDownBackground` |
 | 前景（标志符号） | `Environment.DropDownMouseDownGlyph` |
@@ -1510,7 +1507,7 @@ ms.locfileid: "49833338"
 
 ![禁用命令栏下拉选择字段](../../extensibility/ux-guidelines/media/0303-051_dropdownselectionfielddisabled.png "0303年 051_DropdownSelectionFieldDisabled")<br />已禁用的命令栏下拉选择字段
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.DropDownDisabledBackground` |
 | 前景（文本） | `Environment.DropDownDisabledText` |
@@ -1521,7 +1518,7 @@ ms.locfileid: "49833338"
 
 ![禁用命令栏下拉列表按钮](../../extensibility/ux-guidelines/media/0303-052_dropdownbuttondisabled.png "0303年 052_DropdownButtonDisabled")<br />已禁用的命令栏下拉按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 不可用 |
 | 前景（标志符号） | `Environment.DropDownDisabledGlyph` |
@@ -1540,7 +1537,7 @@ ms.locfileid: "49833338"
 
 ![默认命令栏的拆分按钮](../../extensibility/ux-guidelines/media/0303-054_splitbutton.png "0303年 054_SplitButton")<br />默认命令栏的拆分按钮  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 无 |
 | 前景（文本） | `Environment.CommandBarTextActive` |
@@ -1552,7 +1549,7 @@ ms.locfileid: "49833338"
 
 ![命令栏中的拆分按钮上悬停](../../extensibility/ux-guidelines/media/0303-055_splitbuttonhover.png "0303年 055_SplitButtonHover")<br />命令栏中的拆分按钮上悬停
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarMouseOverBackgroundBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.CommandBarTextHover` |
@@ -1564,7 +1561,7 @@ ms.locfileid: "49833338"
 
 ![按下的命令栏的拆分按钮](../../extensibility/ux-guidelines/media/0303-056_splitbuttonpressed.png "0303年 056_SplitButtonPressed")<br />按下的命令栏中的拆分按钮  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarMouseDownBackgroundBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.CommandBarTextMouseDown` |
@@ -1576,7 +1573,7 @@ ms.locfileid: "49833338"
 
 ![禁用命令栏的拆分按钮](../../extensibility/ux-guidelines/media/0303-057_splitbuttondisabled.png "0303年 057_SplitButtonDisabled")<br />已禁用的命令栏的拆分按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 不可用 |
 | 前景（文本） | `Environment.ComboBoxItemTextInactive` |
@@ -1599,7 +1596,7 @@ ms.locfileid: "49833338"
 
 ![默认命令栏溢出按钮](../../extensibility/ux-guidelines/media/0303-060_overflow.png "0303年 060_Overflow")<br />默认命令栏溢出按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarOptionsBackground` |
 | 前景（标志符号） | `Environment.CommandBarOptionsGlyph` |
@@ -1610,7 +1607,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的命令栏溢出按钮](../../extensibility/ux-guidelines/media/0303-062_overflowoptions.png "0303年 062_OverflowOptions")<br />悬停时的命令栏溢出按钮   
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（标志符号） | `Environment.CommandBarOptionsMouseDownGlyph` |
@@ -1621,7 +1618,7 @@ ms.locfileid: "49833338"
 
 ![按下的溢出](../../extensibility/ux-guidelines/media/0303-064_overflowpressed.png "0303年 064_OverflowPressed")<br />按下的命令栏溢出按钮  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（标志符号） | `Environment.CommandBarOptionsMouseDownGlyph` |
@@ -1644,7 +1641,7 @@ ms.locfileid: "49833338"
 
 **停靠或浮动文档窗口： 这是默认状态**  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 取决于文档类型 |
 | 前景（文本） | 取决于文档类型 |
@@ -1654,7 +1651,7 @@ ms.locfileid: "49833338"
 
 ![默认值为主要目标，浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-067_framefocused.png "0303年 067_FrameFocused")<br />默认值为主要目标，浮动文档窗口框架
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowFloatingFrame` |
 | 前景（文本） | `Environment.ToolWindowFloatingFrame` |
@@ -1666,7 +1663,7 @@ ms.locfileid: "49833338"
 
 ![默认失去焦点的浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-068_frameunfocused.png "0303年 068_FrameUnfocused")<br />默认失去焦点的浮动文档窗口框架
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowFloatingFrameInactive` |
 | 前景（文本） | `Environment.ToolWindowFloatingFrameInactive` |
@@ -1678,7 +1675,7 @@ ms.locfileid: "49833338"
 
 ![已设定焦点，浮动文档窗口框架的悬停](../../extensibility/ux-guidelines/media/0303-069_framefocusedhover.png "0303年 069_FrameFocusedHover")<br />已设定焦点，悬停时的浮动文档窗口框架  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景（标志符号） | `Environment.RaftedWindowButtonHoverActive` |
 | 前景（标志符号） | `Environment.RaftedWindowButtonHoverActiveGlyph` |
@@ -1688,7 +1685,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的失去焦点的浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-070_frameunfocusedhover.png "0303年 070_FrameUnfocusedHover")<br />悬停时的失去焦点的浮动文档窗口框架
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景（标志符号） | `EnvironmentRaftedWindowButtonHoverInactive` |
 | 前景（标志符号） | `Environment.RaftedWindowButtonHoverInactiveGlyph` |
@@ -1698,7 +1695,7 @@ ms.locfileid: "49833338"
 
 ![已设定焦点，按下时浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-071_framefocusedpressed.png "0303年 071_FrameFocusedPressed")<br />已设定焦点，按下时浮动文档窗口框架
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景（标志符号） | `Environment.RaftedWindowButtonDown` |
 | 前景（标志符号） | `Environment.RaftedWindowButtonDownGlyph` |
@@ -1731,7 +1728,7 @@ ms.locfileid: "49833338"
 
 ![选择、 已设定焦点的文档选项卡](../../extensibility/ux-guidelines/media/0303-074_selectedtabfocused.png "0303年 074_SelectedTabFocused")<br />所选的、 已设定焦点的文档选项卡
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.FileTabSelectedGradientTop`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.FileTabSelectedText` |
@@ -1742,7 +1739,7 @@ ms.locfileid: "49833338"
 
 ![已选定、 失去焦点的文档选项卡](../../extensibility/ux-guidelines/media/0303-075_selectedtabunfocused.png "0303年 075_SelectedTabUnfocused")<br />已选定、 失去焦点的文档选项卡
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.FileTabInactiveGradientTop`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.FileTabInactiveText` |
@@ -1753,7 +1750,7 @@ ms.locfileid: "49833338"
 
 ![默认背景文档选项卡](../../extensibility/ux-guidelines/media/0303-076_backgroundtab.png "0303年 076_BackgroundTab")<br />默认背景文档选项卡  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.FileTabBackground` |
 | 前景（文本） | `Environment.FileTabText` |
@@ -1763,7 +1760,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的背景文档选项卡](../../extensibility/ux-guidelines/media/0303-077_backgroundtabhover.png "0303年 077_BackgroundTabHover")<br />悬停时的背景文档选项卡  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.FileTabHotGradientTop`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.FileTabHotText` |
@@ -1783,7 +1780,7 @@ ms.locfileid: "49833338"
 
 ![已设定焦点的选定预览选项卡](../../extensibility/ux-guidelines/media/0303-079_previewtabfocused.png "0303年 079_PreviewTabFocused")<br />已设定焦点的选定预览选项卡
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.FileTabProvisionalSelectedActive` |
 | 前景（文本） | `Environment.FileTabProvisionalSelectedActiveForeground` |
@@ -1794,7 +1791,7 @@ ms.locfileid: "49833338"
 
 ![失去焦点的选定预览选项卡](../../extensibility/ux-guidelines/media/0303-080_previewtabunfocused.png "0303年 080_PreviewTabUnfocused")<br />失去焦点的选定预览选项卡
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.FileTabProvisionalSelectedInactive` |
 | 前景（文本） | `Environment.FileTabProvisionalSelectedInactiveForeground` |
@@ -1805,7 +1802,7 @@ ms.locfileid: "49833338"
 
 ![默认背景预览选项卡](../../extensibility/ux-guidelines/media/0303-081_previewbackgroundtab.png "0303年 081_PreviewBackgroundTab")<br />默认背景预览选项卡  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.FileTabProvisionalInactive` |
 | 前景（文本） | `Environment.FileTabProvisionalInactiveForeground` |
@@ -1815,7 +1812,7 @@ ms.locfileid: "49833338"
 
 ![背景预览选项卡上悬停](../../extensibility/ux-guidelines/media/0303-082_previewbackgroundtabhover.png "0303年 082_PreviewBackgroundTabHover")<br />悬停时的背景预览选项卡  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.FileTabProvisionalHover` |
 | 前景（文本） | `Environment.FileTabProvisionalHoverForeground` |
@@ -1835,7 +1832,7 @@ ms.locfileid: "49833338"
 
 ![默认文档溢出按钮](../../extensibility/ux-guidelines/media/0303-084_overflow.png "0303年 084_Overflow")<br />默认文档溢出按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.DocWellOverflowButtonBackground` |
 | 前景（标志符号） | `Environment.DocWellOverflowButtonGlyph` |
@@ -1845,7 +1842,7 @@ ms.locfileid: "49833338"
 
 ![悬停时的文档溢出按钮](../../extensibility/ux-guidelines/media/0303-085_overflowhover.png "0303年 085_OverflowHover")<br />悬停时的文档溢出按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.DocWellOverflowButtonMouseOverBackground` |
 | 前景（标志符号） | `Environment.DocWellOverflowButtonMouseOverGlyph` |
@@ -1855,7 +1852,7 @@ ms.locfileid: "49833338"
 
 ![在按下文档溢出按钮](../../extensibility/ux-guidelines/media/0303-086_overflowpressed.png "0303年 086_OverflowPressed")<br />在按下文档溢出按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.DocWellOverflowButtonMouseDownBackground` |
 | 前景（标志符号） | `Environment.DocWellOverflowButtonMouseDownGlyph` |
@@ -1876,7 +1873,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 ![默认标记](../../extensibility/ux-guidelines/media/0303-177_tag.png "0303年 177_Tag")<br />默认标记
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |  
 | 背景 | `Tag.Background` |
 | 前景（文本） | `Tag.Background` |
@@ -1885,7 +1882,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 ![悬停时的标记](../../extensibility/ux-guidelines/media/0303-178_taghover.png "0303年 178_TagHover")<br />悬停时的标记  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |  
 | 背景 | `Tag.HoverBackground` |
 | 前景（文本） | `Tag.HoverBackgroundText` |
@@ -1894,7 +1891,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 ![按下标记](../../extensibility/ux-guidelines/media/0303-179_tagpressed.png "0303年 179_TagPressed")<br />按下的标记  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Tag.PressedBackground` |
 | 前景（文本） | `Tag.PressedBackgroundText` |
@@ -1903,7 +1900,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 ![选择标记](../../extensibility/ux-guidelines/media/0303-180_tagselected.png "0303年 180_TagSelected")<br />所选的标记  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Tag.SelectedBackground` |
 | 前景（文本） | `Tag.SelectedBackgroundText` |
@@ -1914,7 +1911,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 ![默认关闭 (&times;) 标记标志符号](../../extensibility/ux-guidelines/media/0303-181_tagglyph.png "0303年 181_TagGlyph")<br />默认关闭 (&times;) 标记标志符号
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |  
 | 背景 | 不可用 |
 | 前景（标志符号） | `Tag.TagHoverGlyph` |
@@ -1923,7 +1920,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 ![关闭 (&times;) 标记标志符号的悬停](../../extensibility/ux-guidelines/media/0303-182_tagglyphhover.png "0303年 182_TagGlyphHover")<br />关闭 (&times;) 悬停时的标记标志符号
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Tag.TagHoverGlyphHoverBackground` |
 | 前景（标志符号） | `Tag.TagHoverGlyphHover` |
@@ -1933,7 +1930,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 ![按下关闭 (&times;) 标记标志符号](../../extensibility/ux-guidelines/media/0303-183_tagglyphpressed.png "0303年 183_TagGlyphPressed")<br />按下关闭 (&times;) 标记标志符号
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Tag.TagHoverGlyphPressedBackground` |
 | 前景（标志符号） | `Tag.TagHoverGlyphPressed` |
@@ -1943,7 +1940,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 ![默认关闭与所选的标记 (&times;) 标志符号](../../extensibility/ux-guidelines/media/0303-184_tagselected.png "0303年 184_TagSelected")<br />默认关闭与所选的标记 (&times;) 标志符号
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 不可用 |
 | 前景（标志符号） | `Tag.TagSelectedGlyph` |
@@ -1953,7 +1950,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 ![选择与关闭标记 (&times;) 上悬停标志符号](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303年 185_TagSelectedHover")<br />选择与关闭标记 (&times;) 上悬停标志符号  
 
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Tag.TagSelectedGlyphHoverBackground` |
 | 前景（标志符号） | `Tag.TagSelectedGlyphHover` |
@@ -1963,7 +1960,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 ![选择，按下关闭的标记 (&times;) 标志符号](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "0303年 186_TagSelectedPressed")<br />选择，按下关闭的标记 (&times;) 标志符号
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Tag.TagSelectedGlyphPressedBackground` |
 | 前景（标志符号） | `Tag.TagSelectedGlyphPressed` |
@@ -1991,7 +1988,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![停靠的工具窗口](../../extensibility/ux-guidelines/media/0303-089_toolwindowdocked.png "0303年 089_ToolWindowDocked")<br />停靠的工具窗口  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowBackground` |
 | Border | `Environment.ToolWindowBorder` |
@@ -2000,7 +1997,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![浮动、 已设定焦点的工具窗口](../../extensibility/ux-guidelines/media/0303-090_toolwindowfocused.png "0303年 090_ToolWindowFocused")<br />浮动、 已设定焦点的工具窗口
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowBackground` |
 | Border | `Environment.MainWindowActiveDefaultBorder` |
@@ -2009,7 +2006,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![浮动、 失去焦点的工具窗口](../../extensibility/ux-guidelines/media/0303-091_toolwindowunfocused.png "0303年 091_ToolWindowUnfocused")<br />浮动、 失去焦点的工具窗口  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowBackground` |
 | Border | `Environment.MainWindowInactiveBorder` |
@@ -2029,7 +2026,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![默认的工具箱子节点](../../extensibility/ux-guidelines/media/0303-191_toolboxchildnode.png "0303年 191_ToolboxChildNode")<br />默认的工具箱子节点
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolboxContent`<br />（标题） |
 | 背景 | `Environment.ToolWindowBackground`<br />（各项或如果没有可用控件的整个窗口） |
@@ -2041,7 +2038,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![悬停时的工具箱子节点](../../extensibility/ux-guidelines/media/0303-192_toolboxchildnodehover.png "0303年 192_ToolboxChildNodeHover")<br />悬停时的工具箱子节点  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolboxContentMouseOver`<br />（仅限单个项） |
 | Border | 无 |
@@ -2053,7 +2050,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![集中的所选的工具箱子节点](../../extensibility/ux-guidelines/media/0303-194_toolboxchildnodefocused.png "0303年 194_ToolboxChildNodeFocused")<br />集中的所选的工具箱子节点
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `TreeView.SelectedItemActive`<br />来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别 |
 | Border | `TreeView.FocusVisualBorder`<br />来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别 |
@@ -2066,7 +2063,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![已选定、 失去焦点的工具箱子节点](../../extensibility/ux-guidelines/media/0303-196_toolboxchildnodeunfocused.png "0303年 196_ToolboxChildNodeUnfocused")<br />已选定、 失去焦点的工具箱子节点  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `TreeView.SelectedItemInactive`<br />来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别 |
 | Border | 无 |
@@ -2086,7 +2083,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![已设定焦点的标题栏](../../extensibility/ux-guidelines/media/0303-093_titlebarfocused.png "0303年 093_TitleBarFocused")<br />已设定焦点的标题栏
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.TitleBarActiveGradientBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.TitleBarActiveText` |
@@ -2097,7 +2094,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![失去焦点的标题栏](../../extensibility/ux-guidelines/media/0303-094_titlebarunfocused.png "0303年 094_TitleBarUnfocused")<br />失去焦点的标题栏
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.TitleBarInactiveGradientBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.TitleBarInactiveText` |
@@ -2116,7 +2113,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![默认情况下，已设定焦点的标题栏按钮](../../extensibility/ux-guidelines/media/0303-096_titlebarbuttonfocused.png "0303年 096_TitleBarButtonFocused")<br />默认情况下，已设定焦点的标题栏按钮  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 不可用 |
 | 前景（标志符号） | `Environment.ToolWindowButtonActiveGlyph` |
@@ -2126,7 +2123,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![默认情况下失去焦点的标题栏按钮](../../extensibility/ux-guidelines/media/0303-097_titlebarbuttonunfocused.png "0303年 097_TitleBarButtonUnfocused")<br />默认情况下失去焦点的标题栏按钮    
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | 不可用 |
 | 前景（标志符号） | `Environment.ToolWindowButtonInactiveGlyph` |
@@ -2136,7 +2133,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![标题栏按钮侧重于悬停](../../extensibility/ux-guidelines/media/0303-098_titlebarbuttonfocusedhover.png "0303年 098_TitleBarButtonFocusedHover")<br />悬停时的已设定焦点的标题栏按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowButtonHoverActive` |
 | 前景（标志符号） | `Environment.ToolWindowButtonHoverActiveGlyph` |
@@ -2146,7 +2143,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![悬停时的失去焦点的标题栏按钮](../../extensibility/ux-guidelines/media/0303-099_titlebarbuttonunfocusedhover.png "0303年 099_TitleBarButtonUnfocusedHover")<br />悬停时的失去焦点的标题栏按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowButtonHoverInactive` |
 | 前景（标志符号） | `Environment.ToolWindowButtonHoverInactiveGlyph` |
@@ -2156,7 +2153,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![标题栏按钮侧重于按](../../extensibility/ux-guidelines/media/0303-100_titlebarbuttonfocusedpressed.png "0303年 100_TitleBarButtonFocusedPressed")<br />按下时的已设定焦点的标题栏按钮
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowButtonDown` |
 | 前景（标志符号） | `Environment.ToolWindowButtonDownActiveGlyph` |
@@ -2166,7 +2163,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![按下时的失去焦点的标题栏按钮](../../extensibility/ux-guidelines/media/0303-101_titlebarbuttonunfocusedpressed.png "0303年 101_TitleBarButtonUnfocusedPressed")<br />按下时的失去焦点的标题栏按钮  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowButtonDown` |
 | 前景（标志符号） | `Environment.ToolWindowButtonDownInactiveGlyph` |
@@ -2183,7 +2180,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![选择、 已设定焦点的工具窗口选项卡](../../extensibility/ux-guidelines/media/0303-103_toolwindowtabfocused.png "0303年 103_ToolWindowTabFocused")<br />已选定、已设定焦点的工具窗口选项卡
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowTabSelectedTab` |
 | 前景（文本） | `Environment.ToolWindowTabSelectedActiveText` |
@@ -2193,7 +2190,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![已选定、 失去焦点的工具窗口选项卡](../../extensibility/ux-guidelines/media/0303-104_toolwindowtabunfocused.png "0303年 104_ToolWindowTabUnfocused")<br />已选定、失去焦点的工具窗口选项卡
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowTabSelectedTab` |
 | 前景（文本） | `Environment.ToolWindowTabSelectedText` |
@@ -2203,7 +2200,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![默认背景工具窗口选项卡](../../extensibility/ux-guidelines/media/0303-105_toolwindowbackgroundtab.png "0303年 105_ToolWindowBackgroundTab")<br />默认背景工具窗口选项卡  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowTabGradientBegin`<br />`Environment.ToolWindowTabGradientEnd`<br />（梯度停止点设置为 Visual Studio 2013 中相同的颜色值。） |
 | 前景（文本） | `Environment.ToolWindowTabText` |
@@ -2213,7 +2210,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![悬停时的背景工具窗口选项卡](../../extensibility/ux-guidelines/media/0303-106_toolwindowbackgroundtabhover.png "0303年 106_ToolWindowBackgroundTabHover")<br />悬停时的背景工具窗口选项卡
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowTabMouseOverBackgroundBegin`<br />`Environment.ToolWindowTabMouseOverBackgroundEnd`<br />（梯度停止点设置为 Visual Studio 2013 中相同的颜色值。） |
 | 前景（文本） | `Environment.ToolWindowTabMouseOverText` |
@@ -2231,7 +2228,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![默认自动隐藏选项卡](../../extensibility/ux-guidelines/media/0303-108_autohidetab.png "0303年 108_AutoHideTab")<br />默认自动隐藏选项卡
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.AutoHideTabBackgroundBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.AutoHideTabText` |
@@ -2241,7 +2238,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 ![悬停时自动隐藏选项卡](../../extensibility/ux-guidelines/media/0303-109_autohidetabhover.png "0303年 109_AutoHideTabHover")<br />悬停时的“自动隐藏”选项卡  
 
-| 元素 | 标记名称：Category.color |
+| 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.AutoHideTabMouseOverText` |

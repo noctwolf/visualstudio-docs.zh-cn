@@ -1,9 +1,6 @@
 ---
 title: 断点相关的方法 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
@@ -14,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7e823c5fef66077ba03d4cb9eec4367b79038db
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4da8292d817649c83f26ebce4abe346e32624a93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152137"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947278"
 ---
 # <a name="breakpoint-related-methods"></a>断点相关的方法
 调试引擎 (DE) 必须支持的设置的断点。 Visual Studio 调试支持以下类型的断点：  
@@ -42,10 +39,10 @@ ms.locfileid: "39152137"
 |方法|描述|  
 |------------|-----------------|  
 |[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|确定指定挂起断点可以将绑定到代码位置。|  
-|[将绑定](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|绑定指定挂起断点到一个或多个代码位置。|  
+|[Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|绑定指定挂起断点到一个或多个代码位置。|  
 |[GetState](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|获取挂起断点的状态。|  
 |[GetBreakpointRequest](../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|获取用于创建挂起断点的断点请求。|  
-|[启用](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|切换挂起断点的启用的状态。|  
+|[Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md)|切换挂起断点的启用的状态。|  
 |[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)|枚举绑定从挂起断点的所有断点。|  
 |[EnumErrorBreakpoints](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|枚举导致的挂起断点的所有错误断点。|  
 |[删除](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|删除挂起断点和从该绑定的所有断点。|  
@@ -59,7 +56,7 @@ ms.locfileid: "39152137"
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|获取包含断点的挂起断点。|  
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|获取绑定断点的状态。|  
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|获取描述断点的断点解决方法。|  
-|[启用](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|启用或禁用断点。|  
+|[Enable](../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|启用或禁用断点。|  
 |[删除](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|删除绑定的断点。|  
   
  解决方法和请求信息需要实现以下[IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md)方法。  

@@ -1,9 +1,6 @@
 ---
-title: 保存自定义文档 |Microsoft 文档
-ms.custom: ''
+title: 保存自定义文档 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - persistence, saving custom documents
@@ -15,36 +12,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5425a1c35816fd85847915029e3b6f2da1ed75a6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8fd55353d09f7e08572eecb6c4729205150c2b03
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932650"
 ---
 # <a name="saving-a-custom-document"></a>保存自定义文档
-环境句柄**保存**，**另存为**，和**保存所有**命令。 当用户单击**保存**，**另存为**，**或全部保存**上**文件**菜单或关闭解决方案，从而导致全部保存，以下进程时发生。  
+环境句柄**保存**，**另存为**，并**全部保存**命令。 当用户单击**保存**，**另存为**，**或全部保存**上**文件**菜单或关闭解决方案，从而导致全部保存，以下执行过程。  
   
- ![客户编辑器保存](../../extensibility/internals/media/private.gif "私有")  
-保存，另存为和全部保存命令处理自定义编辑器  
+ ![客户编辑器保存](../../extensibility/internals/media/private.gif "专用")  
+保存、 另存为和全部保存命令处理的自定义编辑器  
   
- 此过程详细介绍了以下步骤：  
+ 此过程详述以下步骤：  
   
-1.  有关**保存**和**另存为**命令，该环境使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服务以确定活动文档窗口，因此应该因此保存项。 活动文档窗口了解后，环境查找的层次结构的指针和项标识符 (itemID) 中运行的文档表中的文档。 有关详细信息，请参阅[运行 Document 表](../../extensibility/internals/running-document-table.md)。  
+1.  有关**保存**并**另存为**命令，在环境中使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服务以确定活动文档窗口，并应因此保存项。 活动文档窗口了解后，在环境中正在运行的 document 表的文档查找的层次结构的指针和项标识符 (itemID)。 有关详细信息，请参阅[运行文档表](../../extensibility/internals/running-document-table.md)。  
   
-     对于全部保存命令，环境使用信息正在运行的文档表中进行编译的所有项保存的列表。  
+     为全部保存命令，该环境使用中的信息运行文档表编译要保存的所有项的列表。  
   
-2.  当解决方案收到<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用，它循环访问所选的项集的 (即，由公开多个选择<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服务)。  
+2.  当解决方案收到<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用时，它会循环访问选定项的集 (即，公开多个选择<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服务)。  
   
-3.  在所选内容的每个项，该解决方案使用层次结构指针来调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A>方法来确定是否应启用保存菜单命令。 如果一个或多个项都已更新，则启用保存命令。 如果层次结构使用标准编辑器，然后查询的层次结构委托脏状态设置为编辑器中通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>方法。  
+3.  选定内容中的每个项，该解决方案使用层次结构指针来调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A>方法，以确定是否应启用保存菜单命令。 如果一个或多个项是脏的则启用保存命令。 如果在层次结构使用的标准编辑器，然后查询的层次结构委托脏状态设置为编辑器中通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>方法。  
   
-4.  于已更新每个所选项目，该解决方案使用层次结构指针来调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>适当的层次结构上的方法。  
+4.  已更新的每个选定项，该解决方案使用层次结构指针来调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>适当的层次结构上的方法。  
   
-     对于自定义编辑器中，文档数据对象和项目之间的通信是私有的。 因此，这两个对象之间处理任何特殊持久性问题。  
+     对于自定义编辑器中，文档数据对象和项目之间的通信是私有的。 因此，任何特殊的持久性问题被处理这两个对象之间。  
   
     > [!NOTE]
-    >  如果你实现自己的持久性，一定要调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>方法以节省时间。 此方法检查以确保它是安全保存该文件 （例如，文件不是只读的）。  
+    >  如果您实现您自己的持久性，请务必调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>方法来节省时间。 此方法进行检查以确保其安全地保存该文件 （例如，文件不是只读的）。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)

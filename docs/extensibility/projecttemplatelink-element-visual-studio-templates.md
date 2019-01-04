@@ -1,6 +1,5 @@
 ---
 title: ProjectTemplateLink 元素 （Visual Studio 模板） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09cd9a5168f0051834b4f3b1de74ed9cd2e97381
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 356c9d50ebdac052efdb622e26d22e97542a0d03
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561494"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885976"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 元素 （Visual Studio 模板）
 指定的路径 *.vstemplate*多项目模板中的一个项目文件。  

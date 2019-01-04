@@ -1,9 +1,6 @@
 ---
-title: 如何： 将快捷菜单项添加到自定义 SharePoint 项目项类型 |Microsoft Docs
-ms.custom: ''
+title: 如何：将快捷菜单项添加到自定义 SharePoint 项目项类型 |Microsoft Docs
 ms.date: 02/02/2017
-ms.technology:
-- office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,17 +14,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 580839936cfa42b4e76999809cd8917f3eb4f041
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: dc3acaf90f646529da00a89aec6db860c3711fc8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959873"
 ---
-# <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>如何： 将快捷菜单项添加到自定义的 SharePoint 项目项类型
+# <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>如何：将快捷菜单项添加到自定义的 SharePoint 项目项类型
   在定义的自定义 SharePoint 项目项类型时，可以将快捷菜单项添加到项目项。 用户右键单击中的项目项时出现的菜单项**解决方案资源管理器**。  
   
- 以下步骤假定你已定义 SharePoint 项目项类型。 有关详细信息，请参阅[如何： 定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
+ 以下步骤假定你已定义 SharePoint 项目项类型。 有关更多信息，请参见[如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
   
 ### <a name="to-add-a-shortcut-menu-item-to-a-custom-project-item-type"></a>若要将快捷菜单项添加到自定义项目项类型  
   
@@ -58,8 +55,6 @@ ms.locfileid: "36755491"
  若要部署的项目项，创建[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 (VSIX) 包的程序集、 模板和你想要将与项目项一起分发的任何其他文件。 有关详细信息，请参阅[部署的 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
 ## <a name="see-also"></a>请参阅
- [如何： 定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
- [如何： 将属性添加到自定义的 SharePoint 项目项类型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
+ [如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)   
+ [如何：将属性添加到自定义的 SharePoint 项目项类型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)   
  [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)  
-  
- 

@@ -1,9 +1,6 @@
 ---
-title: IDebugAddress |Microsoft 文档
-ms.custom: ''
+title: IDebugAddress |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
 ms.topic: conceptual
 f1_keywords:
 - IDebugAddress
@@ -15,15 +12,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ace2892d4518de8c5a4abaa2c113df914f9fa6b1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf8c262aef3b562f43409f6d62fc533e4d6314ae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100239"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933497"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
-此接口表示项的地址。 它将返回符号处理程序。  
+此接口表示的项的地址。 它会返回符号处理程序。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,7 +28,7 @@ ms.locfileid: "31100239"
 IDebugAddress : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
+## <a name="notes-for-implementers"></a>实施者的说明  
  符号提供程序实现此接口来表示对象的地址。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
@@ -45,15 +42,15 @@ IDebugAddress : IUnknown
 |[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)|检索[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)结构描述一个对象和其位置。|  
   
 ## <a name="remarks"></a>备注  
- 符号提供程序返回了此接口来表示对象并将其位置在特定范围 （例如，函数、 方法或类）。 此接口是从返回并传递给各种方法的符号提供程序和表达式计算器。 通常情况下，符号提供程序是需要解释此接口的内容的唯一实体。  
+ 符号提供程序返回此接口来表示对象并将其位置 （例如，函数、 方法或类） 在特定范围内。 此接口是从返回并传递给各种方法的符号提供程序和表达式计算器。 通常情况下，符号提供程序是需要解释此接口的内容的唯一实体。  
   
 ## <a name="requirements"></a>要求  
  标头： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
