@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba270b4d7240d30db5b20388d6c75782dba6a256
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: e5b3a43862b840c323abd3d96ce0784f69b5db4b
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159719"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561900"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令行参数安装 Visual Studio 2017
 
@@ -56,7 +56,7 @@ ms.locfileid: "53159719"
 | `update` | 更新已安装的产品。 |
 | `repair` | 修复已安装的产品。 |
 | `uninstall` | 卸载已安装的产品。 |
-| `export` | **15.9 版中的新增功能**：将安装所选内容导出到安装配置文件。 |
+| `export` | **15.9 版中的新增功能**：将安装所选内容导出到安装配置文件。 **说明**：仅能与 vs_installer.exe 一起使用。 |
 
 | **安装选项** | **说明** |
 | ----------------------- | --------------- |

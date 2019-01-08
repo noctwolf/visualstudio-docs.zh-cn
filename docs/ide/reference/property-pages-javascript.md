@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a35ee6d086153adc718a1616c0c8f0c8c606fbb7
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: eabc82926c821fb5a8d83637fb9118bc25df82bc
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220025"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684988"
 ---
 # <a name="property-pages-javascript"></a>属性页，JavaScript
 “属性页”提供对项目设置的访问。 可使用“属性页”中显示的页面来更改项目属性。
@@ -39,11 +39,11 @@ ms.locfileid: "50220025"
 
  **配置**
 
- 指定要显示或修改的配置设置。 这些设置包括“调试”（默认）、“版本”、“所有配置”或用户定义的配置。 有关详细信息，请参阅[如何：在 Visual Studio 中设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
+ 指定要显示或修改的配置设置。 这些设置包括“调试”（默认）、“版本”、“所有配置”或用户定义的配置。 有关更多信息，请参见[如何：在 Visual Studio 中设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
  **平台**
 
- 指定要显示或修改的平台设置。 这些设置包括“任何 CPU”（[!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 应用的默认值）、“x64”、“ARM”、“x86”或用户定义的平台。 有关详细信息，请参阅[如何：在 Visual Studio 中设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
+ 指定要显示或修改的平台设置。 这些设置包括“任何 CPU”（[!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 应用的默认值）、“x64”、“ARM”、“x86”或用户定义的平台。 有关更多信息，请参见[如何：在 Visual Studio 中设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
 ## <a name="general-page"></a>常规页
  使用以下选项来设置项目的常规属性。
@@ -73,7 +73,7 @@ ms.locfileid: "50220025"
 
  指定调试器的默认主机。
 
--   选择“本地计算机”可在 Visual Studio 主机计算机上启动应用程序。 有关详细信息，请参阅[在本地计算机上运行应用](../../debugger/run-windows-store-apps-on-the-local-machine.md)。
+-   选择“本地计算机”可在 Visual Studio 主机计算机上启动应用程序。 有关详细信息，请参阅[在本地计算机上运行应用](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
 
 -   选择“模拟器”可在模拟器中启动应用程序。 有关详细信息，请参阅[在模拟器中运行应用](../../debugger/run-windows-store-apps-in-the-simulator.md)。
 

@@ -1,23 +1,21 @@
 ---
 title: 同步设置
-ms.date: 11/21/2018
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-f1_keywords:
-- VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecac148e745eff956151af71a37b23f67a816f56
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 7dcddc06233f439547f0725c1fb39fff26152237
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388486"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348412"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>跨多台计算机同步 Visual Studio 设置
 
@@ -51,11 +49,16 @@ ms.locfileid: "52388486"
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>关闭特定计算机上的同步设置
 
-默认情况下启用 Visual Studio 的同步设置。 可以通过转到“工具” > “选项” > “环境” > “帐户”页并取消选中“登录到 Visual Studio 时，跨设备同步设置”，关闭计算机上的同步设置。 例如，如果决定不同步计算机“A”上的 Visual Studio 设置，那么计算机“A”上的任何设置更改将不会出现在计算机“B”或计算机“C”上。 计算机“B”和“C”将继续与彼此同步，但不与计算机“A”同步。
+默认情况下启用 Visual Studio 的同步设置。 可以通过转到“工具” > “选项” > “环境” > “帐户”页并取消选中“登录到 Visual Studio 时，跨设备同步设置”，关闭计算机上的同步设置。
+
+例如，如果决定不同步计算机“A”上的 Visual Studio 设置，那么计算机“A”上的任何设置更改将不会出现在计算机“B”或计算机“C”上。 计算机“B”和“C”将继续与彼此同步，但不与计算机“A”同步。
+
+> [!NOTE]
+> 如果通过取消选择“工具” > “选项” > “环境” > 帐户页面上的选项选择不对设置进行同步，那么同一台计算机上其他版本的 Visual Studio 不会受到影响。 那些 Visual Studio 的并行安装将继续同步其设置（除非取消选中该选项）。
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>在 Visual Studio 系列产品和版本之间同步设置
 
-可以在 Visual Studio 的任何版本（包括 Community 版本）之间同步设置。 Visual Studio 系列产品之间的设置也是同步的。 但是，这些系列产品中的每一个都可能具有它自己与 Visual Studio 不共享的设置。 例如，特定于计算机“A”上的某种产品的设置将与计算机“B”上的另一种产品共享，但不与计算机“A”或“B”上的 Visual Studio 共享。
+并行安装的各版本的 Visual Studio 设置之间进行了同步。 Visual Studio 系列产品（包括 Blend for Visual Studio）之间的设置也是同步的。 但是，系列产品中的每一个都可能具有它自己的、与 Visual Studio 不共享的设置。 例如，特定于计算机 A 上 Blend for Visual Studio 的设置不与计算机 A 或 B 上的 Visual Studio 共享。
 
 ## <a name="side-by-side-synchronized-settings"></a>并排同步设置
 
@@ -78,4 +81,4 @@ ms.locfileid: "52388486"
 
 - [个性化 IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [环境设置](../ide/environment-settings.md)
-- [“环境”>“帐户选项”对话框](reference/synchronized-settings-environment-options-dialog-box.md)
+- [“环境”>“帐户选项”对话框](reference/accounts-environment-options-dialog-box.md)

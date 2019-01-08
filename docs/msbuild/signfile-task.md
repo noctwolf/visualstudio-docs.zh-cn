@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 765e5b154e7787af7afae8ca1f52338cc061a598
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: eedec77ab44f591532a5a2bb827a46965ec242e7
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220744"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647373"
 ---
 # <a name="signfile-task"></a>SignFile 任务
 
@@ -40,7 +40,7 @@ ms.locfileid: "51220744"
 > [!WARNING]
 > 自 Visual Studio 2013 Update 3 起，此任务有一个新的签名，使你可以指定文件的目标框架版本。 建议尽可能地使用此新签名，因为 MSBuild 过程只在目标框架为 .NET 4.5 或更高版本时使用 SHA-256 哈希。 如果目标框架是 .NET 4.0 或更低版本，将不使用 SHA-256 哈希。
   
-|参数|描述|
+|参数|说明|
 |---------------|-----------------|
 |`CertificateThumbprint`|必选 `String` 参数。<br /><br /> 指定用于签名的证书。 此证书必须在当前用户的个人存储区中。|
 |`SigningTarget`|必选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定要与证书一起签名的文件。|
@@ -73,7 +73,7 @@ ms.locfileid: "51220744"
 ```
 
 > [!NOTE]
-> 证书指纹是该证书的 SHA-1 哈希。 有关详细信息，请参阅[获取受信任的根 CA 证书的 SHA-1 哈希](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\))。
+> 证书指纹是该证书的 SHA-1 哈希。 有关详细信息，请参阅[获取受信任的根 CA 证书的 SHA-1 哈希](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc733076\(v\=ws.10\))。 如果复制并粘贴来自证书详细信息的缩略图，请确保不包含额外的 (3F) 不可见字符，它可能会阻止 `SignFile` 查找证书。
   
 ## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ce2fc60ac2a57baddf62e68a900349ed072f4d
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: cdb7148560dfca966b82d8d9cef617075752a58b
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160083"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307696"
 ---
 # <a name="install-build-tools-into-a-container"></a>将生成工具安装到容器
 
@@ -118,7 +118,7 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
 
 将下面的示例 Dockerfile 保存为磁盘上的新文件。 如果该文件仅仅命名为“Dockerfile”，则默认情况下会识别它。
 
-> [!NOTE]
+> [!WARNING]
 > 此示例 Dockerfile 只排除无法安装到容器的较旧 Windows SDK。 较旧版本会导致生成命令失败。
 
 1. 打开命令提示。
@@ -165,8 +165,12 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
    CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
    ```
 
-   > [!NOTE]
-   > 如果映像直接基于 microsoft/windowsservercore，可能无法正确安装 .NET Framework，且不会指示任何安装错误。 安装完成后，可能无法运行托管代码。 相反，可使映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更高版本为基础。 此外请注意，较新的映像可能使用 PowerShell 作为默认 `SHELL`，这将导致 `RUN` 和 `ENTRYPOINT` 说明失败。
+   > [!WARNING]
+   > 如果映像直接基于 microsoft/windowsservercore，可能无法正确安装 .NET Framework，且不会指示任何安装错误。 安装完成后，可能无法运行托管代码。 相反，可使映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更高版本为基础。 此外请注意，标记为 4.7.1 或更高版本的映像可能使用 PowerShell 作为默认 `SHELL`，这将导致 `RUN` 和 `ENTRYPOINT` 说明失败。
+   >
+   > Visual Studio 2017 版本 15.8 或更高版本（任何产品）无法在 mcr<span></span>.microsoft\.com\/windows\/servercore:1809 或更高版本上正常安装。 不显示任何错误信息。
+   >
+   > 有关详细信息，请参阅[容器的已知问题](build-tools-container-issues.md)。
 
 4. 从该目录处运行以下命令。
 

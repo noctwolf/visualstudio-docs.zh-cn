@@ -1,7 +1,7 @@
 ---
 title: 演练：使用 MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 12/18/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 13493b9ab21386ff5856fd6046e963d362071570
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880144"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53648915"
 ---
 # <a name="walkthrough-use-msbuild"></a>演练：使用 MSBuild
 MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBuild 的构建基块，并演示如何编写、操作和调试 MSBuild 项目。 学习内容：
@@ -116,24 +116,28 @@ Message 任务是 MSBuild 所附带的许多任务之一。 有关可用任务�
 Message 任务将文本属性的字符串值作为输入并显示在输出设备上。 HelloWorld 目标执行 Message 任务两次：第一次显示“Hello”，第二次显示“World”。
 
 ## <a name="build-the-target"></a>生成目标
- 从 **Visual Studio 命令提示符**运行 MSBuild，生成上面定义的 HelloWorld 目标。 使用 -target 或 -t 命令行开关选择目标。
+ 从 Visual Studio 的“开发人员命令提示符”运行 MSBuild，生成上面定义的 HelloWorld 目标。 使用 -target 或 -t 命令行开关选择目标。
 
 > [!NOTE]
->  以下各部分将 **Visual Studio 命令提示符**称为**命令窗口**。
+>  以下各部分将“开发人员命令提示”称为“命令窗口”。
 
 #### <a name="to-build-the-target"></a>生成目标
 
-1.  单击“启动”，然后单击“所有程序”。 在 **Visual Studio Tools** 文件夹中找到并单击“Visual Studio 命令提示符”。
+1. 打开“命令窗口”。
 
-2.  从命令窗口导航到包含项目文件的文件夹，此例中为 D:\BuildApp\BuildApp。
+   (Windows 10) 在任务栏的搜索框中，开始键入工具的名称，例如 `dev` 或 `developer command prompt`。 然后显示一个列表，其中包含与搜索模式匹配的已安装应用。
 
-3.  使用命令开关 -t:HelloWorld 运行 msbuild。 这将选择并生成 HelloWorld 目标：
+   如需手动查找，可在“<visualstudio installation folder>\<>\Common7\Tools”文件夹中查找 LaunchDevCmd.bat 文件。
+
+2. 从命令窗口导航到包含项目文件的文件夹，此例中为 D:\BuildApp\BuildApp。
+
+3. 使用命令开关 -t:HelloWorld 运行 msbuild。 这将选择并生成 HelloWorld 目标：
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  在“命令窗口”检查输出。 应看到两行“Hello”和“World”：
+4. 在“命令窗口”检查输出。 应看到两行“Hello”和“World”：
 
     ```
     Hello
@@ -225,10 +229,10 @@ $(PropertyName)
  几乎所有 MSBuild 元素都可以具有条件属性。 有关使用条件属性的详细讨论，请参阅[条件](../msbuild/msbuild-conditions.md)。
 
 ### <a name="reserved-properties"></a>预留属性
- MSBuild 保留了一些属性名称，用于存储有关项目文件和 MSBuild 二进制文件的信息。 MSBuildToolsPath 就是保留属性的一个示例。 与其他属性一样，可使用 $ 符号引用保留属性。 有关详细信息，请参阅[如何：引用项目文件的名称或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和常见属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
+ MSBuild 保留了一些属性名称，用于存储有关项目文件和 MSBuild 二进制文件的信息。 MSBuildToolsPath 就是保留属性的一个示例。 与其他属性一样，可使用 $ 符号引用保留属性。 有关更多信息，请参见[如何：引用项目文件的名称或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和常见属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
 
 ### <a name="environment-variables"></a>环境变量
- 可使用与生成属性相同的方式引用项目文件中的环境变量。 例如，若要使用项目文件中的 PATH 环境变量，可使用 $(Path)。 如果项目包含与环境变量具有相同名称的属性定义，则项目中的属性将替代环境变量的值。 有关详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。
+ 可使用与生成属性相同的方式引用项目文件中的环境变量。 例如，若要使用项目文件中的 PATH 环境变量，可使用 $(Path)。 如果项目包含与环境变量具有相同名称的属性定义，则项目中的属性将替代环境变量的值。 有关更多信息，请参见[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。
 
 ## <a name="set-properties-from-the-command-line"></a>从命令行设置属性
  可使用 -property 或 -p 命令行开关在命令行中定义属性。 从命令行接收的属性值将替代在项目文件和环境变量中设置的属性值。
@@ -290,7 +294,7 @@ MSBuild 创建配置属性并赋予其“发布”值。
 </ItemGroup>
 ```
 
- 定义包含两个项的项组。 项类型编译有两个值：“Program.cs”和“Properties\AssemblyInfo.cs”。
+ 定义包含两个项的项组。 项类型编译有两个值：Program.cs 和 Properties\AssemblyInfo.cs。
 
  以下代码通过在一个 Include 属性中声明两个文件（用分号分隔）来创建相同的项类型。
 
@@ -388,7 +392,7 @@ MSBuild 创建配置属性并赋予其“发布”值。
 <Photos Include="images\**.jpeg" />
 ```
 
- 将“图片”文件夹和其所有子文件夹中所有文件扩展名为“.jpeg”的文件添加到照片项类型。 若要了解更多示例，请参阅[如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)。
+ 将“图片”文件夹和其所有子文件夹中所有文件扩展名为“.jpeg”的文件添加到照片项类型。 有关更多示例，请参见[如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)。
 
  注意，项在声明时会被添加到项类型。 例如，应用于对象的
 
@@ -409,7 +413,7 @@ MSBuild 创建配置属性并赋予其“发布”值。
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- 将所有文件扩展名为“.cs”的文件添加到编译项类型，除了名称中包含字符串“Designer”的文件。 若要了解更多示例，请参阅[如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)。
+ 将所有文件扩展名为“.cs”的文件添加到编译项类型，除了名称中包含字符串“Designer”的文件。 有关更多示例，请参见[如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)。
 
 Exclude 属性只会影响由 Include 属性添加的项（这两个属性均位于项元素中）。 例如，应用于对象的
 
@@ -562,7 +566,7 @@ Exclude 属性只会影响由 Include 属性添加的项（这两个属性均位
 请注意，此语法中表示的元数据不会造成批处理。
 
 ## <a name="whats-next"></a>后续步骤
- 要了解如何一步步创建简单项目文件，请尝试[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)中的步骤。
+ 要了解如何一步步创建简单项目文件，请尝试[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。
 
 ## <a name="see-also"></a>请参阅
 

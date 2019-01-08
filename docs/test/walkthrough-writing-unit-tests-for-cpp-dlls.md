@@ -1,5 +1,5 @@
 ---
-title: 如何：编写 C/C++ DLL 单元测试
+title: 如何：编写 C++ DLL 单元测试
 ms.date: 11/04/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a596281d156882dffbef6e1c0993f2c91015e960
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877245"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740161"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：编写 C/C++ DLL 单元测试
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：编写 C++ DLL 单元测试
 
 本演练介绍如何使用测试优先方法开发本机 C++ DLL。 基本步骤如下：
 
@@ -329,7 +329,7 @@ ms.locfileid: "49877245"
 
 ## <a name="see-also"></a>请参阅
 
-- [将单元测试添加到现有 C++ 应用程序](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [将单元测试添加到现有 C++ 应用程序](../test/how-to-use-microsoft-test-framework-for-cpp.md)
 - [使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [调试本机代码](../debugger/debugging-native-code.md)
 - [演练：创建和使用动态链接库 (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)

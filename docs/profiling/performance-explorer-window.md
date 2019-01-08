@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f27d1436aaeb0ec75876edf9119dff93f7539483
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6077b17aa89754b3334bd6906a47e422bbd28ab
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582106"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684300"
 ---
 # <a name="performance-explorer-window"></a>“性能资源管理器”窗口
 
-通过 Visual Studio IDE 中的“性能资源管理器”窗口，可以使用 Visual Studio 分析工具来配置和启动性能会话。
+通过 Visual Studio IDE 中的“性能资源管理器”窗口，可以使用 Visual Studio 分析工具来配置和启动性能会话。 如果需要打开该窗口，请遵循[性能分析初学者指南](../profiling/beginners-guide-to-cpu-sampling.md)中的说明。
 
 ## <a name="performance-explorer-toolbar"></a>“性能资源管理器”工具栏
 

@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 9c7a9700996244d653f7a5ce32b78f4edd145d3f
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34000489"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684478"
 ---
-# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>如何：在类设计器中查看类型之间的继承
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>如何：查看类设计器中类型之间的继承
 
 如果基类型和派生类型之间存在继承关系，则可在类设计器中的类图上查看这种关系。 若要创建两个类型之间的继承关系（如果不存在该关系），请参阅[如何：创建类型之间的继承](how-to-create-inheritance-between-types.md)。
 
@@ -50,4 +50,4 @@ ms.locfileid: "34000489"
 ## <a name="see-also"></a>请参阅
 
 - [如何：创建类型之间的关联](how-to-create-associations-between-types.md)
-- [查看类型和关系](viewing-types-and-relationships.md)
+- [查看类型和关系](designing-and-viewing-classes-and-types.md)

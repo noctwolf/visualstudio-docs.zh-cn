@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c79051627bd59ae48b0ad88411a94f4cb36c78
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 408c66d87dbc932e09e1d5744ab5595672a00534
+ms.sourcegitcommit: 8cdc6e2ad2341f34bd6b02859a7c975daa0c9320
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159810"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53307627"
 ---
 # <a name="advanced-example-for-containers"></a>容器的高级示例
 
@@ -91,6 +91,10 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 # Default to PowerShell if no other command specified.
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
+   > [!WARNING]
+   > Visual Studio 2017 版本 15.8 或更高版本（任何产品）无法在 mcr<span></span>.microsoft\.com\/windows\/servercore:1809 或更高版本上正常安装。 不显示任何错误信息。
+   >
+   > 有关详细信息，请参阅[容器的已知问题](build-tools-container-issues.md)。
 
 运行以下命令以在当前工作目录中生成映像：
 

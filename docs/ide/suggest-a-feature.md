@@ -1,43 +1,49 @@
 ---
 title: 功能建议
-description: 介绍了什么是开发人员社区中的功能建议、如何提出功能建议，以及 Microsoft 如何在 Visual Studio 路线图中采纳功能建议
-ms.date: 11/15/2018
+description: 介绍了什么是开发人员社区中的功能建议、如何提出功能建议，以及 Microsoft 如何在 Visual Studio 路线图中采纳功能建议。
+ms.date: 12/17/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 541d8968ea71844d89903b9e4f146e86a15737e2
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 6c92c2d67419b82b11dfb65898d44e0da7901818
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53160031"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592451"
 ---
 # <a name="overview-suggest-a-feature"></a>概述：功能建议
 
 [Visual Studio 开发人员社区](https://developercommunity.visualstudio.com)除了提供当前的问题报告功能，还引入了全新的功能建议体验。 这是一种可用来直接参与 Visual Studio 工程工作流的新方式。
 
-到目前为止，Visual Studio 用户都是使用 UserVoice 论坛来建议新功能。 借助开发人员社区中的功能建议体验，可以从 UserVoice 论坛转换为，使用一个平台提供所有反馈，从而与 Visual Studio 产品团队直接联系。
+![开发者社区中的“功能建议”按钮](media/suggest-a-feature/suggest-feature-button.png)
 
-我们已将最初的一系列功能建议从 UserVoice 论坛迁移到开发人员社区。 迁移依据为反馈造成的社区影响力，以及产品路线图优先级。 如果我们漏迁移了应迁移的功能建议，你可以随时将它添加到开发人员社区中。
+还可以直接在 Visual Studio 中提交功能建议，方法是从 Visual Studio 主窗口右上角附近的“提供反馈”图标中选择“提供建议”：
 
-## <a name="votes"></a>投票
+![Visual Studio 中的“提供建议”菜单](media/suggest-a-feature/provide-suggestion.png)
 
-UserVoice 和开发人员社区的投票系统工作原理不同。 为了保持开发人员社区的投票数完整性，并避免发生投票数据倾斜，我们在各个功能建议旁边以标记形式突出显示了 UserVoice 投票数。 当你继续在功能增强的开发人员社区中对功能建议进行投票时，新投票数与 UserVoice 投票数分开显示。
+选择“提供建议”会转到[开发人员社区](https://developercommunity.visualstudio.com)，可在其中输入建议。
 
 ## <a name="user-voice"></a>UserVoice
 
-UserVoice 现为只读网站，便于你在需要时回顾以前的功能建议，以了解上下文。 所有新功能建议都应在开发人员社区中提交。
+到目前为止，VisualStudio 用户在 User Voice 上提交新的功能建议。 通过向开发人员社区添加“功能建议”功能，可在同一个位置留存针对 Visual Studio 产品团队的所有反馈。
+
+User Voice 网站设为只读模式。 可以根据需要查看上下文，但所有新功能建议须在开发人员社区中提交。
+
+我们将最初的一系列功能建议从 UserVoice 论坛迁移到开发人员社区。 迁移依据为反馈造成的社区影响力，以及产品路线图优先级。 如果我们漏迁移了应迁移的功能建议，你可以随时将它添加到开发人员社区中。
+
+## <a name="votes"></a>投票
+
+开发人员社区中的投票系统与 User Voice 不同。 为了保持开发人员社区的投票数完整性，并避免发生投票数据倾斜，我们在各个功能建议旁边以标记形式突出显示了 UserVoice 投票数。 当你继续在功能增强的开发人员社区中对功能建议进行投票时，新投票数与 UserVoice 投票数分开显示。
 
 ## <a name="suggestion-status"></a>功能建议状态
 
-在你提交功能建议后，状态会指明所提交的功能建议处于生命周期的哪个阶段。 将你的反馈纳入考虑范围并随工作流推进它时，我们使用相应的状态来标记它。
-
-下面列出了功能建议的各种相关状态及其含义说明和颜色指示器。
+在你提交功能建议后，状态会指明所提交的功能建议处于生命周期的哪个阶段。 将你的反馈纳入考虑范围并随工作流推进它时，我们使用相应的状态来标记它。 此处列出了功能建议的各种相关状态及其含义说明和颜色指示器。
 
 ![开发人员社区中功能建议的“新”状态](../ide/media/SuggestStates/New.jpg)
 
@@ -122,3 +128,7 @@ UserVoice 和开发人员社区的投票系统工作原理不同。 为了保持
 我们全面致力于听取功能建议并采取相应措施，以为客户提供有价值的用户体验。 设定对功能建议采取措施的优先级的依据为，它对更广泛社区造成的影响力。 即使我们无法亲自回复每个功能建议，你也可以尽管放心，相应团队会收到你的反馈并进行仔细评估。
 
 回复时间取决于反馈所处的状态。 请查看本文档中的状态说明，以了解回复时间。
+
+## <a name="see-also"></a>请参阅
+
+- [开发人员社区“功能建议”介绍（Visual Studio 博客）](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral)

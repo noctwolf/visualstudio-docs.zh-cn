@@ -1,5 +1,5 @@
 ---
-title: 如何：向项目中添加类图（类设计器）
+title: 如何：向项目添加类图（类设计器）
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 081a80fd6521bc286f931334762a05495b038a37
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901293"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684313"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>如何：向项目添加类图
 
@@ -61,7 +61,7 @@ ms.locfileid: "42901293"
 
 在“解决方案资源管理器”中，打开类文件上下文菜单（右键单击），然后选择“查看类图”。
 
-或
+- 或 -
 
 在“类视图”中，打开命名空间或类型上下文菜单，然后选择“查看类图”。
 
@@ -79,5 +79,3 @@ ms.locfileid: "42901293"
 - [如何：使用类设计器创建类型](how-to-create-types.md)
 - [如何：查看现有类型](how-to-view-existing-types.md)
 - [设计和查看类和类型](designing-and-viewing-classes-and-types.md)
-- [查看类型和关系](viewing-types-and-relationships.md)
-- [使用类图](working-with-class-diagrams.md)

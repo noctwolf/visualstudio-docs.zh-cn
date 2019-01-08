@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db4b47582d03a7f040850dd69e61d5fee2b80020
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815251"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592425"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>演练：使用采样进行命令行分析
 
@@ -43,7 +43,7 @@ ms.locfileid: "34815251"
 采样是一种分析方法，通过此方法可定期轮询有特定进程以确定活动函数。 生成的数据提供对进程进行采样时，函数位于调用堆栈顶部的频率计数。
 
 > [!NOTE]
-> 分析工具的命令行工具位于 Visual Studio 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 PeopleTrax 是 32 位应用程序。
+>  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。  
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>使用采样方法分析 PeopleTrax 应用程序
 

@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f364f3e8fecbe93dad92e008c178d7eb26ff3e2
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062811"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803502"
 ---
 # <a name="edit-python-code"></a>编辑 Python 代码
 
@@ -196,7 +196,7 @@ Visual Studio 中的 Python 支持提供多种方式在代码中快速导航，�
 
 导航栏在每个编辑器窗口的顶部显示且包含两级定义列表。 左侧下拉列表包含当前文件中的顶级类和函数定义；右侧下拉列表显示左侧作用域内的定义列表。 在编辑器中移动时，列表会进行更新，以显示当前上下文，并且还可以从这些列表中选择某项以直接转入。
 
-Visual Studio 编辑器中的 ![Navigation Bar] (media/code-editing-navigation-bar.png)
+![Visual Studio 编辑器中的导航栏](media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > 若要隐藏导航栏，请转到“工具” > “选项” > “文本编辑器” > “Python” > “常规”，然后清除“设置” > “导航栏”。

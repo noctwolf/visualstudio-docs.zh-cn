@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79279c4450e8dbf325ce8b64879ad2cb9569455e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913210"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684426"
 ---
 # <a name="how-to-customize-class-diagrams"></a>如何：自定义类图
 
@@ -129,7 +129,6 @@ ms.locfileid: "49913210"
 
 ## <a name="see-also"></a>请参阅
 
-- [使用类图](working-with-class-diagrams.md)
 - [如何：在成员表示法与关联表示法之间转换](how-to-change-between-member-notation-and-association-notation.md)
 - [如何：查看现有类型](how-to-view-existing-types.md)
-- [查看类型和关系](viewing-types-and-relationships.md)
+- [查看类型和关系](designing-and-viewing-classes-and-types.md)

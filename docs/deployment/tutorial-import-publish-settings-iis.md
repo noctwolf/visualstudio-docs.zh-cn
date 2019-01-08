@@ -1,6 +1,6 @@
 ---
 title: 通过导入发布设置来发布到 IIS
-ms.custom: Create and import a publishing profile to deploy an application from Visual Studio to IIS
+description: 创建并导入发布配置文件，以便将应用程序从 Visual Studio 部署到 IIS
 ms.date: 05/07/2018
 ms.technology: vs-ide-deployment
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6df935578955d3c72b6f4fa61efdf614229bca0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4da4a45566fc6d773f185a6a34f7e02cb093fff5
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808460"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348516"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>通过在 Visual Studio 中导入发布设置将应用程序发布到 IIS
 
@@ -41,7 +41,7 @@ ms.locfileid: "38808460"
 
 * 须安装 Visual Studio 2017 且具有 ASP.NET 和 .NET Framework 开发工作负载。 对于 .NET Core 应用，还需要 .NET Core 工作负载。
 
-    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
+    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 页免费安装。
 
 * 若要从 IIS 生成发布设置文件，必须具有运行 Windows Server 2012 或 Windows Server 2016 的计算机，并且必须正确配置 IIS Web 服务器角色。 还必须安装 ASP.NET 4.5 或 ASP.NET Core。 对于 ASP.NET Core，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 对于 ASP.NET 4.5，请参阅[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 

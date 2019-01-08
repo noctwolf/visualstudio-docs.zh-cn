@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d4d6a352d2ff1b71796d64c34992af493867a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 65cf3b0d716251b41f144f523f12e1284357ed3a
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063258"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647827"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用情况 
 
@@ -84,7 +84,7 @@ ms.locfileid: "53063258"
 
  由代码执行的系统和框架函数称为“外部代码”。 外部代码函数启动和停止应用、绘制 UI、控制线程以及向应用提供其他低级别服务。 在大多数情况下，你不会对外部代码感兴趣，因此 CPU 使用情况调用树可将用户方法的外部函数收集到一个“[外部代码]”节点中。  
   
- 要查看外部代码的调用路径，请在主诊断报表页面上的“筛选器”下拉列表中选择“显示外部代码”，然后选择“应用”。 “CPU 使用情况”页面的“调用树”视图随即展开外部代码调用。  
+ 要查看外部代码的调用路径，请在主诊断报表页面（右窗格）上的“筛选器”下拉列表中选择“显示外部代码”，然后选择“应用”。 “CPU 使用情况”页面的“调用树”视图随即展开外部代码调用。 （“筛选器”下拉菜单在主诊断页面上可用，在详细视图上不可用。）
   
  ![显示外部代码](../profiling/media/cpu_use_wt_filterview.png "Show External Code")  
   

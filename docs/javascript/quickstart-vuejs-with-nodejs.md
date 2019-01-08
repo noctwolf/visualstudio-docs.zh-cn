@@ -15,12 +15,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a48de4bc48f24cc55914ccdb5fdeed0b4ad1d9a8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4f346f75078ff513dbbb91230d564686d6a1e023
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058946"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441478"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入门：使用 Visual Studio 创建第一个 Vue.js 应用
 
@@ -41,7 +41,7 @@ ms.locfileid: "53058946"
 
 1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目”。
 
-1. 在“新建项目”对话框中，在“JavaScript” > “Node.js”或“TypeScript” > “Node.js”下，选择“基本 Vue.js Web 应用程序”并输入项目名称，然后单击“确定”。
+1. 在“新建项目”对话框中，在“JavaScript” > “Node.js”或“TypeScript” > “Node.js”下，选择“基本 Vue.js Web 应用程序”。 输入项目名称，然后单击“确定”。
 
      ![Vue.js 模板](../javascript/media/vuejs-template.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "53058946"
 
 ## <a name="add-a-vue-file-to-the-project"></a>向项目添加一个 .vue 文件
 
-1. 在“解决方案资源管理器”中，右键单击任意文件夹（如 src 文件夹），然后选择“添加” > “新项”。
+1. 在“解决方案资源管理器”中，右键单击任意文件夹（如 src/components 文件夹），然后选择“添加” > “新项”。
 
 1. 选择“JavaScript 单个文件组件”或“TypeScript Vue 单个文件组件”，然后单击“添加”。
 
@@ -85,7 +85,7 @@ ms.locfileid: "53058946"
 
 1. （仅限 TypeScript 项目）在 Visual Studio 中，选择“生成” > “清洁解决方案”。
 
-1. 接下来，选择“生成” > “生成解决方案”以生成项目。 检查“输出”窗口来查看生成结果。
+1. 接下来，选择“生成” > “生成解决方案”以生成项目。 检查“输出”窗口以查看生成结果，并从“显示输出来源”列表中选择“生成”。
 
     Vue.js 项目模板通过配置后期生成事件来使用 `build` npm 脚本。 如果要修改此设置，在“Windows 资源管理器”中打开项目文件 (\<projectname\>.njsproj) 并找到下面的代码行：
 

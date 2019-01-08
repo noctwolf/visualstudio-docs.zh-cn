@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e35d102a30ffc7b80d39f359542bbdc4c00feff6
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 891387d244a805df2929a120a9312697ad79f192
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257181"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53562069"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 C# 或 Visual Basic
 
@@ -151,7 +151,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
 
 应用将继续执行，调用 `doWork`，并于你在其中单击按钮的代码行上暂停。
 
-用于单步执行代码的常见键盘命令包括 F10 和 F11。 有关更多深入的说明，请参阅[初学者指南](../debugger/getting-started-with-the-debugger.md)。
+用于单步执行代码的常见键盘命令包括 F10 和 F11。 如需获取更多详尽介绍，请参阅[初探调试器](../debugger/debugger-feature-tour.md)。
 
 ## <a name="inspect-variables-in-a-datatip"></a>检查数据提示中的变量
 

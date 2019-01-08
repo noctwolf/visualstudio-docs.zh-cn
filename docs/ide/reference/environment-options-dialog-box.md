@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 18ef27d60c5460e43d863b5258bcefe08ee22b17
+ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388762"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53348471"
 ---
 # <a name="environment-options-dialog-box"></a>“选项”对话框 ->“环境”
 
@@ -38,7 +38,7 @@ ms.locfileid: "52388762"
 |若要指定是否启用通知。|[“选项”对话框 ->“环境”->“通知”](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |若要指定快速启动窗口的选项。|[“选项”对话框 ->“环境”->“快速启动”](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |若要指定起始页选项。|[“选项”对话框 ->“环境”->“启动”](../../ide/reference/startup-environment-options-dialog-box.md)|
-|若要指定是否在计算机之间漫游设置。|[“选项”对话框 ->“环境”->“同步设置”](../../ide/reference/synchronized-settings-environment-options-dialog-box.md)|
+|若要指定是否在计算机之间漫游设置。|[“选项”对话框 ->“环境”->“同步设置”](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |了解如何为任务和任务列表设置选项|[“选项”对话框 ->“环境”->“任务列表”](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |更改默认的“主页”和“搜索”页，更改系统源文件编辑器并配置 Internet Explorer 选项。|[“选项”对话框 ->“环境”->“Web 浏览器”](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 

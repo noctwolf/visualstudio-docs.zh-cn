@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 19c3e72dd6f02d97dcb083cd61d7102a6926eb2e
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33958446"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684582"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>在类设计器中使用 Visual C++ 代码
 
@@ -48,7 +48,7 @@ ms.locfileid: "33958446"
 - Typedef
 
 > [!NOTE]
-> 与 UML 类图不同的时你可以在建模项目中创建。 有关详细信息，请参阅 [UML 类图：参考](../../modeling/uml-class-diagrams-reference.md)。
+> 与 UML 类图不同的时你可以在建模项目中创建。 有关详细信息，请参阅 [UML 类图：参考](../../modeling/create-uml-modeling-projects-and-diagrams.md)。
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>类型解析和显示问题的疑难解答
 
@@ -112,8 +112,6 @@ ms.locfileid: "33958446"
 
 ## <a name="see-also"></a>请参阅
 
-- [设计和查看类与类型](designing-and-viewing-classes-and-types.md)
-- [使用类图](working-with-class-diagrams.md)
 - [设计和查看类与类型](designing-and-viewing-classes-and-types.md)
 - [有关类设计器错误的附加信息](additional-information-about-errors.md)
 - [类设计器中的 Visual C++ 类](visual-cpp-classes.md)

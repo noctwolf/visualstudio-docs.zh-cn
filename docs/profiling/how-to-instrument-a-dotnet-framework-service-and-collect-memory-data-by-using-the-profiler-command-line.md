@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: eafd91fe97a4e4ceb33b9dc315b8b9d9014d27ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ebca2945995a0f404c506c0e26ee1b1012d4dfa
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914692"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592867"
 ---
-# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测 .NET Framework 服务并收集内存数据
+# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测 .NET Framework 服务，并收集内存数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服务和收集内存使用情况数据。 可以收集内存分配数据，也可以同时收集内存分配数据和对象生存期数据。  
 
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "49914692"
 > [!NOTE]
 >  如果某服务在计算机启动之后无法重启（此类服务在操作系统启动时启动），则无法使用检测方法分析该服务。  
 > 
->  分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+>  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 
 
 ## <a name="start-the-profiling-session"></a>启动分析会话  
  若要从 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服务收集性能数据，可使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化适当的环境变量，并使用 [VSInstr.exe](../profiling/vsinstr.md) 工具创建服务二进制文件的检测副本。  
@@ -51,7 +51,7 @@ ms.locfileid: "49914692"
 
    -   **/globaltracegc** 和 **/globaltracegclife** 启用内存分配数据和对象生存期数据的收集。  
 
-       |选项|描述|  
+       |选项|说明|  
        |------------|-----------------|  
        |**/globaltracegc**|仅收集内存分配数据。|  
        |**/globaltracegclife**|收集内存分配数据和对象生存期数据。|  
@@ -73,7 +73,7 @@ ms.locfileid: "49914692"
    > [!NOTE]
    >  **/User** 和 **/crosssession** 选项通常为服务所需选项。  
 
-   | 选项 | 描述 |
+   | 选项 | 说明 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | 指定拥有 ASP.NET 工作进程的帐户的域和用户名。 在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。 |
    | [/crosssession](../profiling/crosssession.md) | 启用其他登录会话中的进程分析。 如果 ASP.NET 应用程序在其他会话中运行，则需要此选项。 会话 ID 位于 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
@@ -100,7 +100,7 @@ ms.locfileid: "49914692"
 
 -   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
-    |选项|描述|  
+    |选项|说明|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  

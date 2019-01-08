@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 682010bc4235948918b3bffce70d04d5db0781af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 79cdab9ef8cd127b54117188c9d1a49ad4948c9e
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861626"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53805154"
 ---
-# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入门：初步了解 Visual Studio 部署
+# <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入门：先查看 Visual Studio 中的部署
 
 通过部署应用程序、服务或组件，你可以将其分发以便安装于其他计算机、设备、或服务器上，或云中。 你需要在 Visual Studio 中为所需的部署类型选择适当的方法。 （许多应用类型支持此处未描述的其他部署工具，如命令行部署或 NuGet。）
 
@@ -45,17 +45,17 @@ ms.locfileid: "49861626"
 
     ![选择发布](../deployment/media/quickstart-publish.png)
 
-- **Visual C++ 运行时**：可以使用本地部署或静态链接部署 Visual C++ 运行时。 有关详细信息，请参阅[部署本机桌面应用程序 (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。
+- **Visual C++ 运行时**：可以使用本地部署或静态链接来部署 Visual C++ 运行时。 有关详细信息，请参阅[部署本机桌面应用程序 (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。
 
 ## <a name="publish-to-azure"></a>发布到 Azure
 
-- **ASP.NET**、**ASP.NET Core**、**Python** 和 **Node.js**：可以使用发布工具快速将应用部署到 Azure 应用服务或 Azure 虚拟计算机。 在解决方案资源管理器中，右键单击项目，选择“发布”。 （如果之前已配置任何发布配置文件，必须单击“新建配置文件”。）在发布对话框中，选择“应用服务”或“Azure虚拟机”，然后按照配置步骤操作。
+- **ASP.NET**、**ASP.NET Core**、**Python** 和 **Node.js**：可以使用发布工具快速将应用部署到 Azure 应用服务或 Azure 虚拟机。 在解决方案资源管理器中，右键单击项目，选择“发布”。 （如果之前已配置任何发布配置文件，必须单击“新建配置文件”。）在发布对话框中，选择“应用服务”或“Azure虚拟机”，然后按照配置步骤操作。
 
     ![选择 Azure 应用服务](../deployment/media/quickstart-publish-azure.png "Choose Azure App Service")
 
     在 Visual Studio 2017 版本 15.7 及更高版本中，可将 ASP.NET Core 应用部署到适用于 Linux 的应用服务。
 
-    对于 Python 应用，另请参阅 [Python - 发布到 Azure 应用服务](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)。
+    对于 Python 应用，另请参阅 [Python - 发布到 Azure 应用服务](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)。
 
     若要快速了解，请参阅[发布到 Azure](quickstart-deploy-to-azure.md) 和[发布到 Linux](quickstart-deploy-to-linux.md)。 另请参阅[将 ASP.NET Core 应用发布到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 有关使用 Git 进行部署的信息，请参阅[使用 Git 将 ASP.NET Core 持续部署到 Azure](/aspnet/core/publishing/azure-continuous-deployment)。
 
@@ -76,7 +76,7 @@ ms.locfileid: "49861626"
 
     也可以采用多种不同的方式部署 ASP.NET 应用程序和服务。 有关详细信息，请参阅[部署 ASP.NET Web 应用程序和服务](http://www.asp.net/aspnet/overview/deployment)。
 
-- **Visual c++ 运行时**：可以使用集中部署来部署 Visual C++ 运行时。 有关详细信息，请参阅[部署本机桌面应用程序 (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。
+- **Visual C++ 运行时**：可以使用集中部署来部署 Visual C++ 运行时。 有关详细信息，请参阅[部署本机桌面应用程序 (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。
 
 - **Windows 桌面** 可以使用 ClickOnce 部署将 Windows 桌面应用程序发布到 Web 服务器或网络文件共享。 用户随后只需一次单击即可安装应用程序。 有关详细信息，请参阅[使用 ClickOnce 部署桌面应用](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)和[使用 ClickOnce 部署本机应用](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。
 

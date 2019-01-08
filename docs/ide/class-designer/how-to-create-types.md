@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f1d7ba3fff5bc075f7113ad2a1f2a14e6fa6b91a
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842256"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53685687"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>如何：使用类设计器创建类型
 
@@ -94,5 +94,4 @@ ms.locfileid: "49842256"
 - [如何：创建类型之间的继承](how-to-create-inheritance-between-types.md)
 - [如何：创建类型之间的关联](how-to-create-associations-between-types.md)
 - [创建和配置类型成员](creating-and-configuring-type-members.md)
-- [使用类图](working-with-class-diagrams.md)
 - [设计类和类型](designing-and-viewing-classes-and-types.md)

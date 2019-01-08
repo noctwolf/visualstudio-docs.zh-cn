@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 148d839ccfac7b3a8fb9b75ba4d7e1f632cb5676
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34065112"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684816"
 ---
 # <a name="make-code-work-in-visual-studio"></a>确保代码在 Visual Studio 中正常运行
 
@@ -26,7 +26,7 @@ Visual Studio 提供了一组功能强大的项目构建和调试工具。 在�
 
 ## <a name="build-your-code"></a>生成代码
 
-生成配置有两种基本类型：**调试**和**发布**。 Debug 配置生成较慢、较大的可执行文件，它们允许更丰富的交互式运行时调试体验。 不应发布 Debug 可执行文件。 Release 配置生成较快、经过优化的可执行文件，它们适合用于发布（至少从编译器的角度看）。 默认的生成配置是**调试**。
+生成配置有两种基本类型：“调试”和“发布”。 Debug 配置生成较慢、较大的可执行文件，它们允许更丰富的交互式运行时调试体验。 不应发布 Debug 可执行文件。 Release 配置生成较快、经过优化的可执行文件，它们适合用于发布（至少从编译器的角度看）。 默认的生成配置是**调试**。
 
 生成项目最简单的方法是按 F7，但是还可以在主菜单中选择“生成” > “生成解决方案”开始生成项目。
 
@@ -92,7 +92,7 @@ Visual Studio 2017 包括一系列内置的 [.NET Compiler Platform 分析器](.
 
 ## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>使用灯泡修复或重构代码
 
-通过[快速操作](../ide/quick-actions.md)（可从灯泡或螺丝刀图标访问），可重构代码内联。 灯泡是 C#、C++ 和 Visual Basic 代码中快速、有效修复常见问题的简单方法。 若要访问它们，请右键单击某个警告波浪线并选择“快速操作和重构”。 或者，在光标位于彩色波浪线所在行时，按 Ctrl+. 或在边距中选择灯泡或螺丝刀图标。 将看到可应用于代码行的可能修复或重构方法列表。
+通过灯泡或螺丝刀图标提供的 [快速操作](../ide/quick-actions.md)，可让您重构内联代码 它们是在 C#、C++ 和 Visual Basic 代码中快速、有效地修复常见警告的简便方法。 要访问它们，请右键单击警告波形并选择“快速操作和重构”。 或者，在光标位于彩色波浪线所在行时，按 Ctrl+. 或选择边距中的灯泡或螺丝刀图标。 您将看到可以应用于该行代码的可能修复或重构列表。
 
 ![Visual Studio 灯泡预览](../ide/media/quick-actions-options.png)
 
@@ -144,7 +144,7 @@ Visual Studio 2017 包括一系列内置的 [.NET Compiler Platform 分析器](.
 
 ![Visual Studio 运行时值检查](../ide/media/vs_ide_gs_debug_inspect_value.png)
 
-将鼠标悬停在变量上，查看其当前值和引用。 如果出现意外值，则表示前一代码或调用代码可能出现了 bug。 有关更深入的调试信息，请[了解更多](../debugger/getting-started-with-the-debugger.md)使用调试器的信息。
+将鼠标悬停在变量上，查看其当前值和引用。 如果出现意外值，则表示前一代码或调用代码可能出现了 bug。 有关更深入的调试信息，请[了解更多](../debugger/debugger-feature-tour.md)使用调试器的信息。
 
 此外，Visual Studio 显示“诊断工具”窗口，可从其中观察随时间变化的应用的 CPU 和内存使用情况。 之后在开发应用时，可以使用这些工具查找意外的高 CPU 使用率或内存分配。 结合使用“监视”窗口和断点，确定导致意外的高使用率或未释放的资源的原因。 有关详细信息，请参阅[分析功能简介](../profiling/profiling-feature-tour.md)。
 
@@ -159,5 +159,5 @@ Visual Studio 2017 包括一系列内置的 [.NET Compiler Platform 分析器](.
 ## <a name="see-also"></a>请参阅
 
 - [调试器功能简介](../debugger/debugger-feature-tour.md)
-- [了解更多使用调试器的信息](../debugger/getting-started-with-the-debugger.md)
+- [了解更多使用调试器的信息](../debugger/debugger-feature-tour.md)
 - [生成和修复代码](../ide/code-generation-in-visual-studio.md)

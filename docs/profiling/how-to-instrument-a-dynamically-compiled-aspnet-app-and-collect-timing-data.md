@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: bcc5d167fdd53a597fb171881ae61281c8280c8d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 653b4c9b04f3a126e4c63384d99fafce6c9cfcff
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894568"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592477"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>如何：使用命令行通过探查器检测动态编译的 ASP.NET Web 应用程序并收集详细的计时数据
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>如何：使用探查器命令行检测动态编译的 ASP.NET web 应用程序，并收集详细计时数据
 
 本文介绍如何使用检测分析方法和 Visual Studio 分析工具命令行工具为动态编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序收集详细的计时数据。
 
 > [!NOTE]
-> 分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
+>  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
 
 要从 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序收集性能数据，请修改目标应用程序的 web.config 文件，让 [VSInstr.exe](../profiling/vsinstr.md) 工具能够检测动态编译的应用程序文件。 接着，使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具，在 Web 服务器上设置适当的环境变量以启用分析，然后重启计算机。
 
@@ -29,7 +29,7 @@ ms.locfileid: "49894568"
 
 ## <a name="configure-the-aspnet-web-application-and-the-web-server"></a>配置 ASP.NET Web 应用程序和 Web 服务器
 
-1. 修改目标应用程序的 web.config 文件。 请参阅[如何：修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md)。
+1. 修改目标应用程序的 web.config 文件。 请参阅[操作说明：将 web.Config 文件修改为检测和分析动态编译的 ASP.NET web 应用程序](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md)。
 
 2. 打开一个命令提示符窗口。
 
@@ -58,7 +58,7 @@ ms.locfileid: "49894568"
      > [!NOTE]
      > **/user** 和 **/crosssession** 选项通常为 ASP.NET 应用程序所需选项。
 
-     | 选项 | 描述 |
+     | 选项 | 说明 |
      | - | - |
      | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | 指定拥有 ASP.NET 工作进程的帐户的域和用户名。 在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。 |
      | [/crosssession](../profiling/crosssession.md) | 启用其他登录会话中的进程分析。 如果 ASP.NET 应用程序在其他会话中运行，则需要此选项。 会话标识符位于 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
@@ -77,7 +77,7 @@ ms.locfileid: "49894568"
 
 - 以下选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
 
-    |选项|描述|
+    |选项|说明|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|

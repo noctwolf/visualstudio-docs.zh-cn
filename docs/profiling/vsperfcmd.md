@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: b4aa3a045b34271eb421339751aa5c763479eec0
+ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320977"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53647840"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 VSPerfCmd.exe 工具用于启动和停止性能数据收集。 它使用以下语法：  
@@ -32,7 +32,7 @@ VSPerfCmd [/U] [/options]
   
  下表描述了 VSPerfCmd.exe 工具选项。  
   
-|选项|描述|  
+|选项|说明|  
 |------------|-----------------|  
 |**U**|以 Unicode 形式写入重定向的控制台输出。 必须是指定的第一个选项。|  
 |[Start](../profiling/start.md) **:** `mode`|在指定模式下启动分析服务。|  
@@ -53,24 +53,24 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|停止指定进程的数据收集。|  
 |[ThreadOn 和 ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|在通过调用 VSPerfCmdThreadOff 暂停分析后，恢复对指定进程的分析。 仅在使用检测方法进行分析时使用 ThreadOn。|  
 |[ThreadOn 和 ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|暂停对指定线程的分析。 仅在使用检测方法进行分析时使用“ThreadOff”。|  
-|[Mark](../profiling/mark.md) **:** _MarkNum_[**,**_MarkText_**]**|使用可选文本将一个标记插入到分析数据文件中。|  
+|[Mark](../profiling/mark.md)**：** MarkNum[,MarkText]|使用可选文本将一个标记插入到分析数据文件中。|  
   
 ## <a name="sample-method-options"></a>示例方法选项  
  只有在使用采样分析方法时才能使用以下选项。  
   
-|选项|描述|  
+|选项|说明|  
 |------------|-----------------|  
-|[Launch](../profiling/launch.md) **:** *Executable*|启动指定的应用程序并开始分析。|  
-|[Args](../profiling/args.md) **:** *Arguments*|指定要传递到已启动应用程序的命令行参数。|  
+|[启动](../profiling/launch.md)**：** 可执行文件|启动指定的应用程序并开始分析。|  
+|[参数](../profiling/args.md)**：** 参数|指定要传递到已启动应用程序的命令行参数。|  
 |[控制台](../profiling/console.md)|在新的命令提示符窗口中启动指定命令。|  
-|[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|开始分析指定进程。 进程可由进程 ID 或进程名称标识。|  
+|[附加](../profiling/attach.md)**：** PID[,PID]|开始分析指定进程。 进程可由进程 ID 或进程名称标识。|  
 |[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|停止分析指定进程。 进程可由进程 ID 或进程名称标识。 如果未指定进程，将停止所有进程分析。|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|收集 .NET 内存分配数据和对象生存期数据。 仅与 VSPerfCmdLaunch 选项一起使用。|  
   
 ### <a name="sample-interval-options"></a>示例间隔选项  
  以下选项指定采样间隔的类型和持续时间。 默认值为 Timer。 还可以使用 Counter 选项将 CPU 计数器指定为间隔。 这些选项只能通过 Launch 或分析会话的第一个 Attach指定。  
   
-|选项|描述|  
+|选项|说明|  
 |------------|-----------------|  
 |[PF](../profiling/pf.md)[**:**_n_]|有关每个第 n 个页面错误的示例（默认值=10）。|  
 |[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|有关每个第 n 个系统调用的示例（默认值=10）。|  
@@ -81,15 +81,15 @@ VSPerfCmd [/U] [/options]
   
  必须在使用管理凭据运行的命令提示符下执行 Admin 选项。  
   
-|选项|描述|  
+|选项|说明|  
 |------------|-----------------|  
 |**Admin:Security**, \<**ALLOW&#124;DENY**>, *Right*[ *Right*], \<*User*&#124;*Group*>|允许或拒绝指定用户或组访问分析服务。<br /><br /> `Right` 可以是：<br /><br /> CrossSession - 允许用户访问此服务以执行跨会话分析。<br /><br /> SampleProfiling - 允许用户访问此驱动程序，以启用采样分析。 此外，用于在跟踪分析期间访问内核转换信息。<br /><br /> FullAccess - 允许用户访问 CrossSession 和 SampleProfiling。|  
 |**Admin:Security, List**|列出分析服务的当前状态并列出用户权限。|  
-|**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|启动、停止、安装或卸载分析服务组件（服务）或内核模式设备驱动程序（驱动程序）。|  
-|**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|在重启后，启用或禁用自动启动分析服务（服务）或内核模式设备驱动程序（驱动程序）。|  
+|**管理员：**\<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|启动、停止、安装或卸载分析服务组件（服务）或内核模式设备驱动程序（驱动程序）。|  
+|**管理员：**\<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|在重启后，启用或禁用自动启动分析服务（服务）或内核模式设备驱动程序（驱动程序）。|  
   
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
- VSPerfCmd /Driver 选项现已过时。 将 VsPerfCmdAdmin 选项用于此功能。  
+ VSPerfCmd /Driver 选项现已过时。 将 VsPerfCmd Admin 选项用于此功能。  
   
 ## <a name="see-also"></a>请参阅  
  [VSInstr](../profiling/vsinstr.md)   

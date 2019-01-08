@@ -11,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c3eb73949ab84548c6eb58e7cf4389dbeb8fc4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 13983379dec4ec998172d0d11e0a7810c8cf02c0
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179055"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561676"
 ---
 # <a name="step-2-run-your-program"></a>步骤 2：运行程序
 一旦创建新的解决方案，实际上就生成了所运行的程序。 该程序并未执行其他操作，它只是显示了一个在标题栏中显示“Form1”的空窗口。 但该程序确实在运行，您即将查明这一点。
 
- ![视频链接](../data-tools/media/playvideo.gif)有关本主题的视频版本，请观看[教程 1：在 Visual Basic 中创建图片查看器 - 视频 1](http://go.microsoft.com/fwlink/?LinkId=205209) 或[教程 1：在 C# 中创建图片查看器 - 视频 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
+ ![视频链接](../data-tools/media/playvideo.gif)有关此主题的视频版本，请参阅[教程 1：在 Visual Basic 中创建图片查看器 - 视频 1](http://go.microsoft.com/fwlink/?LinkId=205209) 或[教程 1：在 C# 中创建图片查看器 - 视频 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
 
 ## <a name="to-run-your-program"></a>运行程序
 
@@ -55,10 +55,10 @@ Windows 窗体应用程序正在运行****
     -   选择“Form1”窗口上角的 X 按钮。
 
     > [!NOTE]
-    >  在从 IDE 内部运行程序时，这一操作称为“调试”，因为通常将使用此操作来查找并修复程序中的 Bug（错误）。 虽然此程序很小，并且实际上不执行任何操作，但它仍是一个真正的程序。 您可以执行相同的过程来运行和调试其他程序。 要了解有关调试的详细信息，请参阅[调试程序基础知识](../debugger/getting-started-with-the-debugger.md)。
+    >  在从 IDE 内部运行程序时，这一操作称为“调试”，因为通常将使用此操作来查找并修复程序中的 Bug（错误）。 虽然此程序很小，并且实际上不执行任何操作，但它仍是一个真正的程序。 您可以执行相同的过程来运行和调试其他程序。 要了解有关调试的详细信息，请参阅[初探调试器](../debugger/debugger-feature-tour.md)。
 
 ## <a name="to-continue-or-review"></a>继续或查看
 
--   要转到下一个教程步骤，请参阅[步骤 3：设置窗体属性](../ide/step-3-set-your-form-properties.md)。
+-   若要转到下一个教程步骤，请参阅[步骤 3：设置窗体属性](../ide/step-3-set-your-form-properties.md)。
 
 -   若要返回上一个教程步骤，请参阅[步骤 1：创建 Windows 窗体应用程序项目](../ide/step-1-create-a-windows-forms-application-project.md)。

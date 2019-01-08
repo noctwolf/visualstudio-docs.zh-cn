@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a2158663defe02dc51e91e888d47f325db7226a
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 731097ac74a4c1dfd5db74d55549b8a2b9c33176
+ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645141"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53684975"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 工作效率指南
 
@@ -37,7 +37,7 @@ ms.locfileid: "51645141"
 
 Visual Studio 常用快捷方式如下：
 
-| 快捷方式（所有配置文件） | 命令 | 描述 |
+| 快捷方式（所有配置文件） | 命令 | 说明 |
 |-|-|-|
 | Ctrl + T | 转到全部 | 导航到任何文件/类型/成员/符号声明 |
 | F12（也可使用 Ctrl+单击） | 转到定义 | 导航到定义符号的位置 |
@@ -115,7 +115,7 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 | 转到定义 | F12 或 Ctrl+单击| 按住 Ctrl，同时单击以导航到定义 |
 | 查看定义 | Alt+F12 | 定义的内联视图 |
 | 结构可视化工具 | 括号中的灰色虚线 | 悬停鼠标查看代码结构 |
-| 导航到反编译的程序集 | F12 或 Ctrl+单击 | 通过启用以下功能导航到外部源（使用 ILSpy 反编译）：“工具” > “选项” > “文本编辑器” > “C#” > “高级” > “启用导航到反编译源”。 |
+| 导航到反编译的程序集 | F12 或 Ctrl+单击 | 通过启用该功能导航到外部源（使用 ILSpy 进行了反编译）：“工具” > “选项” > “文本编辑器” > “C#” > “高级” > “启用导航到反编译源”。 |
 
 ![转到全部和查找所有引用](../ide/media/VSIDE_Productivity_Navigation.png)
 
@@ -135,7 +135,7 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 
 - “运行到点击位置”功能具有以下作用：你将鼠标悬停在一行代码旁，点击出现的绿色“运行”图标，则程序会运行到该行停止。
 - 新的异常帮助程序将最重要的信息（如哪些变量在 NullReferenceException 中是“NULL”）置于对话框顶层。
-- [后退](../debugger/how-to-use-intellitrace-step-back.md)让你可以返回到上一个断点或步骤，并查看当时应用程序的状态。
+- [后退](../debugger/view-historical-application-state.md)让你可以返回到上一个断点或步骤，并查看当时应用程序的状态。
 - [快照调试](/azure/application-insights/app-insights-snapshot-debugger)让你可以在引发异常时调查实时 Web 应用的状态（必须是在 Azure 上）。
 
 ![Visual Studio 2017 中的新异常帮助程序](../ide/media/VSGuide_Debugging.png)

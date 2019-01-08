@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 94c27fe4616ffcf541602cc8ab61bbaa26ddbb18
+ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844633"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53592997"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>如何：指定检测前和检测后命令
 
@@ -31,21 +31,7 @@ ms.locfileid: "34844633"
 
 执行命令时所在的工作目录取决于正运行 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 的操作系统以及所分析应用程序的目标平台。
 
- **32 位计算机**
-
-在 32 位计算机上，默认的探查器工具目录为 drive\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools。
-
-**64 位计算机**
-
-在 64 位计算机上，根据所分析应用程序的目标平台指定路径：
-
-- 对于 32 位应用程序，默认的探查器工具目录为：
-
-     drive\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
-
-- 对于 64 位应用程序，默认的探查器工具目录为：
-
-     drive\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
+若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
 
 ## <a name="to-specify-pre-instrument-commands"></a>指定检测前命令
 

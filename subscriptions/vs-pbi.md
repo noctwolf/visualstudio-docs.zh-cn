@@ -3,18 +3,18 @@ title: Visual Studio 订阅中的 Power BI Pro 权益 | Microsoft 文档
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 了解有关所选 Visual Studio 订阅中随附的 Power BI Pro 订阅。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 0fb3033699c3331ec61e6d3fe30dd70fd47cc759
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219531"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739638"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Power BI Pro
 
@@ -73,14 +73,17 @@ ms.locfileid: "50219531"
 
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 可用       |  是|
-| Visual Studio Professional（标准、年度云、月度云） | VL、Azure、零售                                       | 不可用                                                            |NA         |
+| Visual Studio Enterprise（标准）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 可用       |  是|
+| Visual Studio Professional（标准、月度云） | VL、Azure、零售                                       | 不可用                                                            |NA         |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                                            |NA         |
 | MSDN 平台（标准）                                          | VL、零售                                              | 可用       |  是|
 | Visual Studio Dev Essentials | NA  | 不可用 |NA|
 | Visual Studio Enterprise（月度云） | Azure                                       | 不可用                                  |NA|
 
-<sup>1</sup>包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务、Microsoft 最有价值专家 (MVP)、区域总监 (RD)。不包括：Microsoft 合作伙伴网络 (MPN)、FTE、Imagine。
+<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务、Microsoft 最有价值专家 (MVP)、区域总监 (RD)。不包括：Microsoft 合作伙伴网络 (MPN)、FTE、Imagine。
+
+> [!NOTE]
+> Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的功能不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
 
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
@@ -88,15 +91,15 @@ ms.locfileid: "50219531"
 
 ## <a name="frequently-asked-questions"></a>常见问题
 ### <a name="q--if-the-benefit-is-free-why-do-i-have-to-supply-a-credit-card-number"></a>问：如果权益免费，为什么必须提供信用卡卡号？
-答：权益是免费的，但是激活需要使用用于处理付费订单的系统。  可使用两种支付方式。 
+A:权益是免费的，但是激活需要使用用于处理付费订单的系统。  可使用两种支付方式。 
 - 信用卡。  如果提供信用卡卡号，不会对该卡收费。 
 - 转账。  如果选择“转账”作为付款方式，则不需要提供信用卡卡号。  也可以将间隔设置为“每年”。  你将收到一封电子邮件，通知你账单已准备就绪。  账单金额为 0.00 美元。  
 
 ### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>问：订阅许可证中的 Power BI Pro 权益是否可用于生产环境？
-答：是。  
+A:可以。  
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>问：当我尝试激活 Power BI Pro 时，收到一条消息“你已经通过工作获得帐户”。  我仍可以使用此权益吗？
-答：是。  消息表明你登录到一个已有活动 Office 365 租户的域，而你不是其中的管理员。  若要将 Power BI Pro 添加到租户，你必须是该租户的管理员。  要解决此问题，请按照以下步骤创建自己的租户。
+A:可以。  消息表明你登录到一个已有活动 Office 365 租户的域，而你不是其中的管理员。  若要将 Power BI Pro 添加到租户，你必须是该租户的管理员。  要解决此问题，请按照以下步骤创建自己的租户。
 1.  看到你已经通过工作获得帐户的消息时，请点击“新建帐户”。
 
 2.  在下一个屏幕上，提供联系信息，然后单击“下一步”。
@@ -108,8 +111,8 @@ ms.locfileid: "50219531"
 4.  从步骤 6 开始，该过程中的其余步骤与项目正文中列出的步骤相同。
 
 
-### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>问：若我处在政府域，  是否可以使用此权益？ 
-答：不能。  Power BI Pro 权益不能添加到政府域中的租户。 
+### <a name="q--im-on-a-government-tenant--can-i-use-the-benefit"></a>问：若我处在政府租户。  是否可以使用此权益？ 
+A:不是。  Power BI Pro 权益不能添加到政府租户。 
 
 ## <a name="support-resources"></a>支持资源
 -  需要有关 Power BI Pro 的帮助？
