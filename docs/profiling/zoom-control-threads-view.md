@@ -1,8 +1,6 @@
 ---
 title: 缩放控件（线程视图）| Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.zoom
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85297c32274eb3b6573f536be15d621a60b95921
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 87959310b0c34a801ade0ae5ffdb00c75ff9dcc1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938129"
 ---
 # <a name="zoom-control-threads-view"></a>缩放控件（线程视图）
 缩放控件是一个滑块，用于在时间线上进行放大和缩小操作，以便于你关注特定的感兴趣的区域。 因为此控件放大时间线视图的中心位置，所以在放大之前将感兴趣的区域移到中心位置。  

@@ -1,8 +1,6 @@
 ---
 title: FormatUrl 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0c5e29260affb31d94d702fc19dad7704e3c110
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6086c03d3dae5a919b9b30abaecf2957076631b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176169"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845468"
 ---
 # <a name="formaturl-task"></a>FormatUrl 任务
 将 URL 转换为正确的 URL 格式。  
@@ -31,7 +29,7 @@ ms.locfileid: "39176169"
 ## <a name="parameters"></a>参数  
  下表描述了 `FormatUrl` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`InputUrl`|可选 `String` 参数。<br /><br /> 指定要格式化的 URL。|  
 |`OutputUrl`|可选 `String` 输出参数。<br /><br /> 指定已格式化的 URL。|  

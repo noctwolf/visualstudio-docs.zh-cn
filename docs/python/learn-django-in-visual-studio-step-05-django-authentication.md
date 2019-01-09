@@ -4,7 +4,6 @@ titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了 Django Web 项目模板提供的身份验证功能。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 77cc7816a1a05e3b6a883416225717679dd5661b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 26a8268508f4d53a488d2c9d5fd54ef9330b2fc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064068"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820301"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>步骤 5：在 Django 中对用户进行身份验证
 

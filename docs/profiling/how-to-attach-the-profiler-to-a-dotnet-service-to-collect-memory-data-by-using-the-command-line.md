@@ -2,7 +2,6 @@
 title: 将探查器附加到 .NET 服务以收集内存数据
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d2ee1889fabe5a6c9d003688f3090836fb68a1c0
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: e8a70bca0d7a98ad897a8cd0bf0fc980f1d8032a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821329"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>如何：将探查器附加到 .NET 服务，以使用命令行收集内存数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服务并收集内存数据。 可以收集有关内存分配数量和大小的数据，还可以收集有关内存对象生存期的数据。  
@@ -114,7 +113,7 @@ ms.locfileid: "53592674"
 
     -   停止服务。  
 
-         - 或 -  
+         或  
 
     -   键入 **VSPerfCmd /detach**  
 

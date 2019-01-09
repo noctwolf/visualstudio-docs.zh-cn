@@ -2,7 +2,6 @@
 title: 编码的 UI 测试剖析
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c1a8bcc8ee43aa36b8a39cd53f4be4f6882f06
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: dbee9735922b680daad51a698b3e05ad54f31115
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896583"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949305"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>编码的 UI 测试剖析
 
@@ -30,10 +29,10 @@ ms.locfileid: "52896583"
 
 |文件|内容|可编辑？|
 |-|-|-|
-|[UIMap.Designer.cs](#UIMapDesignerFile)|[声明部分](#UIMapDesignerFile)<br /><br /> [UIMap 类](#UIMapClass)（自动生成的分部类）<br /><br /> [方法](#UIMapMethods)<br /><br /> [属性](#UIMapProperties)|否|
+|[UIMap.Designer.cs](#UIMapDesignerFile)|[声明部分](#UIMapDesignerFile)<br /><br /> [UIMap 类](#UIMapClass)（自动生成的分部类）<br /><br /> [方法](#UIMapMethods)<br /><br /> [属性](#UIMapProperties)|No|
 |[UIMap.cs](#UIMapCS)|[UIMap 类](#UIMapCS)（分部类）|是|
 |[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1 类](#CodedUITestCS)<br /><br /> [方法](#CodedUITestMethods)<br /><br /> [属性](#CodedUITestProperties)|是|
-|[UIMap.uitest](#UIMapuitest)|用于测试的 UI 的 XML 映射。|否|
+|[UIMap.uitest](#UIMapuitest)|用于测试的 UI 的 XML 映射。|No|
 
 ###  <a name="UIMapDesignerFile"></a>UIMap.Designer.cs
  此文件包含在测试创建后由**编码的 UI 测试生成器**自动创建的代码。 此文件会在每次更改测试时重新创建，因此，你不可以在其中添加或修改代码。

@@ -1,8 +1,6 @@
 ---
 title: RequiresFramework35SP1Assembly 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5297d1a573542fecc55fa90983befa43df8f3f3d
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 915d837889153cf678695b493a853d9110522bee
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155355"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831922"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly 任务
 确定应用程序是否需要 .NET Framework 3.5 SP1。  
@@ -31,7 +29,7 @@ ms.locfileid: "39155355"
 ## <a name="parameters"></a>参数  
  下表描述了 `RequiresFramework35SP1Assembly` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Assemblies`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定在应用程序中引用的程序集。|  
 |`CreateDesktopShortcut`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，安装期间会在桌面上创建一个快捷方式图标。|  

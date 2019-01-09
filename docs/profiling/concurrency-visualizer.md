@@ -1,8 +1,6 @@
 ---
 title: 并发可视化工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 07/11/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.viewnavigation
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05ed2edd453cd9e267a32bfdd5d9a6b0ad6a7ac3
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 211f941e5ea9e3ae6ed1eeec7f8f558319d0f703
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220652"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908900"
 ---
 # <a name="concurrency-visualizer"></a>并发可视化工具
 > [!NOTE]
@@ -43,7 +41,7 @@ ms.locfileid: "51220652"
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|说明|  
 |-----------|-----------------|  
 |[使用率视图](../profiling/utilization-view.md)|介绍如何在所有处理器中查看和分析系统活动。|  
 |[线程视图](../profiling/threads-view-parallel-performance.md)|介绍如何分析程序中线程之间的交互。|  

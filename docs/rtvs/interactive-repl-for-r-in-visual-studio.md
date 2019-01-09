@@ -3,19 +3,18 @@ title: 适用于 R 的交互式 REPL
 description: 如何为 Visual Studio 中的 R 使用交互 REPL 环境（已与编辑器窗口集成）。
 ms.date: 06/28/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a9e475e108fee9134699b0ee80e59fbf3f5eea32
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 7df300a57120bec2fc93ec7433a7ea9fdd3a2fc8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235293"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947070"
 ---
 # <a name="work-with-the-r-interactive-window"></a>使用 R 交互窗口
 
@@ -52,7 +51,7 @@ REPL 中以前的所有输入和输出都是只读的，不能更改。 但是�
 
 工具栏命令如下所示，其中多数命令具有键盘等效项，并且可在“R 工具” > “会话”和“R 工具” > “工作目录”菜单中获取（或如上所述）：
 
-| Button | 命令 | 组合键 | 描述 | 
+| Button | 命令 | 组合键 | 说明 | 
 | --- | --- | --- | --- |
 | ![“重置”按钮](media/repl-toolbar-01-reset.png) | 重置 | Ctrl+Shift+F10 | 重置交互窗口会话，清除所有变量和历史记录。 |
 | ![“清除”按钮](media/repl-toolbar-02-clear.png) | 清除 | Ctrl + L | 清除交互窗口中显示的输出，不影响会话变量或历史记录。 |

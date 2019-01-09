@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016e2a0641772992c9c3e6f423e105c42ae20ff1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2aff2d43d36fd543eea12d7fc60d3c56271af641
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909817"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088343"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>实现智能宿主帮助程序接口
 [IDebugDocumentHelper 接口](../winscript/reference/idebugdocumenthelper-interface.md)接口极大简化了为活动调试创建智能主机的任务，因为它提供了智能主机所需的许多接口的实现。  
@@ -53,7 +53,7 @@ ms.locfileid: "49909817"
   
      下面的代码概述了此过程，但不包括错误检查或其他可靠的编程技术。  
   
-    ```  
+    ```cpp
     CoCreateInstance(CLSID_ProcessDebugManager, NULL,  
           CLSCTX_INPROC_SERVER | CLSCTX_INPROC_HANDLER  
           | CLSCTX_LOCAL_SERVER,  
@@ -80,13 +80,13 @@ ms.locfileid: "49909817"
 ## <a name="implementing-iactivescriptsitedebug"></a>实现 IActiveScriptSiteDebug  
  若要实现 [IActiveScriptSiteDebug::GetDocumentContextFromPosition](../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)，请获取与给定站点相对应的帮助程序，然后获取给定源上下文的起始文档偏移量，如下所示：  
   
-```  
+```cpp
 pddh->GetScriptBlockInfo(dwSourceContext, NULL, &ulStartPos, NULL);  
 ```  
   
  接下来，使用帮助程序为给定的字符偏移量创建新的文档上下文：  
   
-```  
+```cpp
 pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew);  
 ```  
   

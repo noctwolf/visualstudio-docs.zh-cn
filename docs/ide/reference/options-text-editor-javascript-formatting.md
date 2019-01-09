@@ -2,7 +2,6 @@
 title: 选项，文本编辑器，JavaScript，格式
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa846a25e1383c0c164dfb4747899f5e86237d32
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4719d529d3fc9da7367150cd211a598ebf52770a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853276"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>选项，文本编辑器，JavaScript，格式
 使用“选项”对话框的“格式设置”页在代码编辑器中设置用于代码格式设置的选项。 若要访问此页，请在菜单栏上选择“工具”、“选项”，然后依次展开“文本编辑器”、“JavaScript”和“格式设置”。
@@ -34,7 +33,7 @@ ms.locfileid: "50671048"
 
 ### <a name="uielement-list"></a>UIElement 列表
 
-|选项|描述|
+|选项|说明|
 |------------|-----------------|
 |**按 Enter 时设置已完成行的格式**|选择此选项后，如果按 Enter 键，代码编辑器会自动设置该行的格式。|
 |**输入 ; 时设置已完成语句的格式**|选择此选项后，如果按分号键，代码编辑器会自动设置该行的格式。|
@@ -47,7 +46,7 @@ ms.locfileid: "50671048"
 
 ### <a name="uielement-list"></a>UIElement 列表
 
-|选项|描述|
+|选项|说明|
 |------------|-----------------|
 |**将函数的左大括号置于新行**|选择此选项后，代码编辑器会将与函数关联的左大括号移动到新行。|
 |**将控制块的左大括号置于新行**|选择此选项后，代码编辑器会将与控制块（例如，`if` 和 `while` 控制块）关联的左大括号移动到新行。|
@@ -57,7 +56,7 @@ ms.locfileid: "50671048"
 
 ### <a name="uielement-list"></a>UIElement 列表
 
-|选项|描述|
+|选项|说明|
 |------------|-----------------|
 |**在逗号分隔符后插入空格**|选择此选项后，代码编辑器会在逗号分隔符后添加空格。|
 |**在“for”语句中的分号后插入空格**|选择此选项后，代码编辑器会在 `for` 循环首行的每个分号后添加一个空格。|

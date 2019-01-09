@@ -1,20 +1,19 @@
 ---
-title: 在 Visual Studio 中引入局部变量
+title: 引入本地变量
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 173173e090f285fcaf6fc9d7c94ba85b692d68e2
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 42d3f7da59fc64e70ab453a6dd1f57d95871b684
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948343"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968678"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引入局部变量
 
@@ -24,11 +23,11 @@ ms.locfileid: "51948343"
 
 - Visual Basic
 
-功能：立即生成本地变量以替换现有表达式。
+**功能：** 立即生成本地变量以替换现有表达式。
 
-时机：如果有代码在本地变量中，稍后可轻松地重复使用它们时。
+**使用时机：** 如果有代码在本地变量中，稍后可轻松地重复使用它们时。
 
-原因：可多次复制并粘贴代码以便在各自位置中使用它，但是执行一次操作、将结果存储在本地变量然后始终使用本地变量效果会更好。
+操作原因：可多次复制并粘贴代码以便在各自位置中使用它，但是执行一次操作、将结果存储在本地变量然后始终使用本地变量效果会更好。
 
 ## <a name="how-to"></a>操作说明
 

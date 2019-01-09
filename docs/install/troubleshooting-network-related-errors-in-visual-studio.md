@@ -1,9 +1,7 @@
 ---
 title: 网络或代理错误的疑难解答
 description: 为在防火墙或代理服务器后安装或使用 Visual Studio 时可能会遇到的网络或代理相关错误查找解决方案。
-ms.custom: ''
 ms.date: 02/12/2018
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -18,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d344682f948421bf6d02ff14d41fa26fec1c3f32
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4693a50246493a97e74ba75dc7f516ce72a215ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53047611"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53914937"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>安装或使用 Visual Studio 时与网络相关错误的疑难解答
 

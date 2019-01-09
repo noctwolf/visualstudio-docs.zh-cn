@@ -1,8 +1,6 @@
 ---
 title: MSBuild 项目文件架构引用 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ed3fd3fc60e6c263d7363047ed36b2f0d891a76
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: ea993233409f7df9f99b345184634e4de6e59618
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078935"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852422"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild 项目文件架构引用
 提供列有所有 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML 架构元素及其可用属性和子元素的表。  
@@ -50,7 +48,7 @@ ms.locfileid: "39078935"
 |[ProjectExtensions 元素 (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|  
 |[Property 元素 (MSBuild)](../msbuild/property-element-msbuild.md)|--|条件|  
 |[PropertyGroup 元素 (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*Property*|条件|  
-|[Sdk 元素 (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|name<br /><br /> 版本|  
+|[Sdk 元素 (MSBuild)](../msbuild/sdk-element-msbuild.md)|--|name<br /><br /> Version|  
 |[Target 元素 (MSBuild)](../msbuild/target-element-msbuild.md)|OnError<br /><br /> *Task*|AfterTargets<br /><br /> BeforeTargets<br /><br /> 条件<br /><br /> DependsOnTargets<br /><br /> 输入<br /><br /> KeepDuplicateOutputs<br /><br /> name<br /><br /> 输出<br /><br /> 返回|  
 |[Task 元素 (MSBuild)](../msbuild/task-element-msbuild.md)|输出|条件<br /><br /> ContinueOnError<br /><br /> *Parameter*|  
 |[TaskBody 元素 (MSBuild)](../msbuild/taskbody-element-msbuild.md)|*Data*|评估|  
