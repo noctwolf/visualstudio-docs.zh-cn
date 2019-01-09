@@ -3,7 +3,6 @@ title: 编辑 Python 代码
 description: 对于 Python，Visual Studio 提供丰富的 IntelliSense、代码片段和导航功能，以及格式设置、linting 和重构。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4f364f3e8fecbe93dad92e008c178d7eb26ff3e2
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 62d22b286b6f0e58f6b833ba1975a07a6ab0500b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803502"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964359"
 ---
 # <a name="edit-python-code"></a>编辑 Python 代码
 

@@ -1,10 +1,8 @@
 ---
 title: JavaScript 开发人员编辑功能简介
 description: 此 Visual Studio 代码编辑器简介演示了如何使用 Visual Studio 更轻松地编写、导航和理解 JavaScript 代码。
-ms.custom: ''
 ms.date: 12/13/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-nodejs
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
@@ -13,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 5f511b668c207ae719dbb981d7dc5640f0fa124c
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802691"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967422"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 

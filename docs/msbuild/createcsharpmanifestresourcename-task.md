@@ -1,8 +1,6 @@
 ---
 title: CreateCSharpManifestResourceName 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1feb8610a7a4d94cc51ef81e2261ff6191fba01c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 18f2ea8db1e3f68ef20db09b8b129a50272e44f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920945"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966380"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName 任务
 根据给定的 .resx 文件名或其他资源创建 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 样式的清单名称。  
@@ -32,7 +30,7 @@ ms.locfileid: "49920945"
  下表描述 [CreateCSharpManifestResourceName 任务](../msbuild/createcsharpmanifestresourcename-task.md)的参数。  
 
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 | - | - |
 | `ManifestResourceNames` | <xref:Microsoft.Build.Framework.ITaskItem> `[]` 输出只读参数。<br /><br /> 生成的清单名称。 |
 | `ResourceFiles` | 必选 `String` 参数。<br /><br /> 从中创建 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 清单名称的资源文件名称。 |

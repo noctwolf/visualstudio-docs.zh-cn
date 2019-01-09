@@ -1,8 +1,6 @@
 ---
 title: CombinePath 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e380c6207b3f59b1717ebff6f17261acc7ee52
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 542efb2cb1de44da95f640efbc316dc2cf373212
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946776"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966479"
 ---
 # <a name="combinepath-task"></a>CombinePath 任务
 将指定路径合并到单个路径。  
@@ -31,7 +29,7 @@ ms.locfileid: "37946776"
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 [CombinePath 任务](../msbuild/combinepath-task.md)的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`BasePath`|必选 `String` 参数。<br /><br /> 与其他路径组合的基路径。 可以是相对路径、绝对路径或空白。|  
 |`Paths`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 要与 BasePath 组合成组合路径的各个路径的列表。 路径可以是相对路径，也可以是绝对路径。|  

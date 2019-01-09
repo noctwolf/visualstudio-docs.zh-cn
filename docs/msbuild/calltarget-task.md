@@ -1,8 +1,6 @@
 ---
 title: CallTarget 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4546fc47ddb38fabcd0ff84926d942f6ae10d59e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bff9d8967d02f8950cc5518f00baa9551c93ec76
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962358"
 ---
 # <a name="calltarget-task"></a>CallTarget 任务
 调用项目文件中的指定目标。  
@@ -32,7 +30,7 @@ ms.locfileid: "49874678"
  下表描述了 `CallTarget` 任务的参数。  
 
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 |---------------------------| - |
 | `RunEachTargetSeparately` | 可选的 `Boolean` 输入参数。<br /><br /> 如果为 `true`，则对每个目标调用一次 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎。 如果为 `false`，则调用一次 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎即可生成所有目标。 默认值为 `false`。 |
 | `TargetOutputs` | 可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包括所有生成目标的输出。 |

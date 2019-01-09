@@ -1,8 +1,6 @@
 ---
 title: CPU 和 Windows 计数器 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf9b1d1a336a2567a2d583e0cd68899dd03d42b8
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: ddf173f39accb0bb9d2907349c82accdd4f21b40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592438"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912631"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 计数器
 
@@ -97,7 +95,7 @@ Visual Studio 探查器继续支持特定平台的特定事件。 例如，Penti
 
       **请注意**：单击“取消”可返回到上一个采样配置。
 
-     - 或 -
+     或
 
    - 选择“CPU 计数器”，然后选择“收集 CPU 计数器”。 CPU 计数器列在“可用的计数器”中。
 

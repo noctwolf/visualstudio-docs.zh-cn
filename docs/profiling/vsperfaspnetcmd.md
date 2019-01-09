@@ -1,8 +1,6 @@
 ---
 title: VSPerfASPNetCmd | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools,VSPerfASPNETCmd
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9b175cb5dd0c555aeaaafb30b7927c3fc81bff4
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+ms.openlocfilehash: 9ed7e91579cd9e07aeda8dd355fb8880f1a4fad9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281753"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987059"
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
 通过 VSPerfASPNetCmd.exe 命令行，无需设置环境变量或重启计算机即可分析 ASP.NET 网站。 在分析 ASP.NET 网站时，使用 VSPerfASPNetCmd.exe 而非 [VSPerfCmd](../profiling/vsperfcmd.md)，并且无需使用 VSPerfCmd 提供的其他功能。 有关 VSPerfASPNetCmd 的详细信息，请参阅[使用 VSPerfASPNETCmd 进行快速网站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。 VSPerfASPNetCmd 是使用独立探查器分析 ASP.NET 网站时的首选命令行工具。  
@@ -28,7 +26,7 @@ ms.locfileid: "52281753"
   
 ## <a name="options"></a>选项  
   
-|选项|描述|  
+|选项|说明|  
 |------------|-----------------|  
 |**/Sample** 或 **/s**|使用采样方法分析网站。 **/Sample** 是默认方法。 /Sample 不能与 **/Trace** 一起使用。|  
 |**/Trace** 或 **/t**|使用检测方法分析网站。 /Trace 不能与 **/Sample** 一起使用。|  
