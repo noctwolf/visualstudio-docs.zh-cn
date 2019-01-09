@@ -1,8 +1,6 @@
 ---
 title: “行”视图 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.lines
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c298f6801b5c66a978ac39953eb2edc92838c30
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: a6d34b0ecb7ef7c47acca8d725ffc734e58cae06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844152"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922067"
 ---
 # <a name="lines-view"></a>“行”视图
 “行”视图仅适用于使用采样方法收集的探查器数据， 不适用于使用检测方法收集的数据。  

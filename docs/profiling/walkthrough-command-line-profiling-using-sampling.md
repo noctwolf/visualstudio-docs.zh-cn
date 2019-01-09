@@ -1,8 +1,6 @@
 ---
 title: 演练：使用采样进行命令行分析 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbb5daff9db064cedcfaa6713f5c31a72f961af
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 10fe1aaaa9301429d3ef80fa12713b5cc4fbcc68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886804"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>演练：使用采样进行命令行分析
 
@@ -35,7 +33,7 @@ ms.locfileid: "53592425"
 
 - [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)] 中级理解
 - 使用命令行工具的中级理解
-- [PeopleTrax 示例](../profiling/peopletrax-sample-profiling-tools.md)的副本
+- [PeopleTrax 示例](/visualstudio/profiling/performance-explorer)的副本
 - 若要使用分析提供的信息，最好有可用的调试符号信息。
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>使用采样方法进行命令行分析
