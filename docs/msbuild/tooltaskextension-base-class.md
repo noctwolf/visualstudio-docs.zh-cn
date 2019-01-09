@@ -1,8 +1,6 @@
 ---
 title: ToolTaskExtension 基类 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - MSBuild.ToolTask.ToolCommandFailed
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8856011e8b85f049c53947a785f1479e1db25368
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 07728e5f978fce519fa0acdff28d38b987621593
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888549"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885674"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 基类
 很多任务继承自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类，该类继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类，后者本身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 此继承链向从它们派生的任务添加了几个参数。 本文档中列出了这些参数。  
@@ -31,7 +29,7 @@ ms.locfileid: "49888549"
  下表介绍基类的参数。  
 
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 | - | - |
 | <xref:Microsoft.Build.Utilities.Task.BuildEngine%2A> | 可选 <xref:Microsoft.Build.Framework.IBuildEngine> 参数。<br /><br /> 指定可供任务使用的生成引擎接口。 生成引擎会自动设置此参数，以允许任务回调到其中。 |
 | <xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A> | 可选 <xref:Microsoft.Build.Framework.IBuildEngine2> 参数。<br /><br /> 指定可供任务使用的生成引擎接口。 生成引擎会自动设置此参数，以允许任务回调到其中。<br /><br /> 这是一个便捷属性，使从此类继承的任务作者不必将值从 `IBuildEngine` 强制转换为 `IBuildEngine2`。 |

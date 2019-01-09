@@ -3,7 +3,6 @@ title: Python 的选项和设置
 description: Visual Studio 中与 Python 代码和项目相关的各种设置的引用。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
@@ -19,12 +18,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f5b8c6b3860641dafccac28b24a4be141d90eae5
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 7223d2b39630ab76c915b9e1db68967e3777fd24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220051"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889132"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中的 Python 选项
 
@@ -41,7 +40,7 @@ ms.locfileid: "50220051"
 
 （“工具” > “选项” > “Python”选项卡。）
 
-| 选项 | 默认 | 描述 |
+| 选项 | 默认 | 说明 |
 | --- | --- | --- |
 | **在创建虚拟环境时显示输出窗口**| On | 清除该选项可避免显示输出窗口。 |
 | **在安装或删除包时显示输出窗口** | On | 清除该选项可避免显示输出窗口。 |
@@ -60,7 +59,7 @@ ms.locfileid: "50220051"
 
 （“工具” > “选项” > “Python” > “调试”选项卡。）
 
-| 选项 | 默认 | 描述 |
+| 选项 | 默认 | 说明 |
 | --- | --- | --- |
 | **当存在错误时，在运行前发出提示** | On | 如果设置此选项，系统会提示是否确定要运行包含错误的代码。 清除此选项将禁用警告。 |
 | **在进程异常退出时等待输入**<br/><br/>**在进程正常退出时等待输入** | On（两者皆是） | 通过 Visual Studio 启动的 Python 程序在其自己的控制台窗口中运行。 默认情况下，无论程序如何退出，窗口都会等待用户按键才会关闭。 若要删除提示并自动关闭窗口，请清除其中任一选项或全部清除。 |
@@ -74,7 +73,7 @@ ms.locfileid: "50220051"
 
 （“工具” > “选项” > “Python” > “诊断”选项卡。）
 
-| 选项 | 默认 | 描述 |
+| 选项 | 默认 | 说明 |
 | --- | --- | --- |
 | **包含分析日志** | On | 在使用按钮将诊断保存到文件或将其复制到剪贴板时，包含与已安装 Python 环境分析相关的详细日志。 此选项可能会显著增加所生成文件的大小，但诊断 IntelliSense 问题时通常需要使用此选项。 |
 | **将诊断保存到文件**（按钮） | n/a | 提示输入文件名，然后将日志保存到文本文件。 |
@@ -86,7 +85,7 @@ ms.locfileid: "50220051"
 
 （“工具” > “选项” > “Python” > “交互窗口”选项卡。）
 
-| 选项 | 默认 | 描述 |
+| 选项 | 默认 | 说明 |
 | --- | --- | --- |
 | **脚本** | n/a | 指定启动脚本的常规文件夹，将其应用于所有环境的交互窗口。 请参阅[启动脚本](python-environments-window-tab-reference.md#startup-scripts)。 但请注意，此功能当前无效。 |
 | **向上/向下箭头浏览历史记录** | On | 使用箭头键在交互窗口中浏览历史记录。 清除此设置可改为使用箭头键在交互窗口的输出中浏览。 |
@@ -101,7 +100,7 @@ ms.locfileid: "50220051"
 
 ### <a name="completion-results"></a>完成结果
 
-| 选项 | 默认 | 描述 |
+| 选项 | 默认 | 说明 |
 | --- | --- | --- |
 | **成员完成显示成员的交集** | Off | 如果设置此选项，将仅显示所有可能类型支持的完成。 |
 | **基于搜索字符串筛选列表** | On | 在键入时，对完成建议应用筛选（默认选中）。 |
@@ -109,7 +108,7 @@ ms.locfileid: "50220051"
 
 ### <a name="selection-in-completion-list"></a>完成列表中的选定内容
 
-| 选项 | 默认 | 描述 |
+| 选项 | 默认 | 说明 |
 | --- | --- | --- |
 | **通过键入以下字符提交** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | 这些字符通常位于可能是从完成列表中选取的标识符后面，因此只需键入字符即可轻松提交完成。 可根据需要在列表中删除或添加特定字符。  |
 | **按 Enter 提交当前完成** | On | 如果设置此选项，按 Enter 键将选择并应用当前选择的完成（和上面的字符一样）（但由于没有针对 Enter 的字符，因此它无法直接进入该列表！）。 |
@@ -117,7 +116,7 @@ ms.locfileid: "50220051"
 
 ### <a name="miscellaneous-options"></a>“杂项”选项
 
-| 选项 | 默认 | 描述 |
+| 选项 | 默认 | 说明 |
 | --- | --- | --- |
 | **打开文件时进入大纲模式** | On | 打开 Python 代码文件时，自动在编辑器中打开 Visual Studio 的大纲显示功能。 |
 | **粘贴已删除的 REPL 提示符** | On | 删除粘贴文本中的 >>> 和 ...，可从交互窗口向编辑器轻松传输代码。 可根据需要清除此选项，以保留从其他源粘贴的字符。 |

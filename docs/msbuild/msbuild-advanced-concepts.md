@@ -1,8 +1,6 @@
 ---
 title: MSBuild 高级概念 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, advanced concepts
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d521dbe0f72ccc5622da37495641349a9ec24a8a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d799443722a70db9e0d3816cf0551538e028bc0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077450"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917432"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 高级概念
 本部分中的文档介绍如何使用高级技术来改善使用 MSBuild 运行的版本。  
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|说明|  
 |-----------|-----------------|  
 |[批处理](../msbuild/msbuild-batching.md)|介绍如何根据项元数据批处理生成目标和任务。|  
 |[转换](../msbuild/msbuild-transforms.md)|说明如何使用转换来启用依赖项分析。|  

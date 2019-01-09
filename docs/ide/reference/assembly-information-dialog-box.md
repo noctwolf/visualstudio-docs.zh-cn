@@ -2,7 +2,6 @@
 title: “程序集信息”对话框
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAssemblyInfo
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d3223e5ed1fedff174ccc40149449d8f2a4b70f
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1145c1369f13c04957b4b0f4c4ccf84569773986
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672451"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882982"
 ---
 # <a name="assembly-information-dialog-box"></a>“程序集信息”对话框
 “程序集信息”对话框用于指定 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 全局程序集特性的值，这些特性存储为你的项目自动创建的 AssemblyInfo 文件中。 在“解决方案资源管理器”中，对于 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]，此文件位于“我的项目”节点中（单击“显示所有文件”可以查看它）；对于 **，此文件位于“属性”**[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]下。 有关程序集特性的详细信息，请参阅[特性](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)。
