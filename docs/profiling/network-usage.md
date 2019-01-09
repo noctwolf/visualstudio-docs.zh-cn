@@ -2,7 +2,6 @@
 title: 分析 UWP 应用中的网络使用情况
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06546e3d36e0568c27e4160342ad271a026b7b9e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 195353903ca9f9db8142a6909f3a2a6bab15b4aa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062239"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822818"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP 应用中的网络使用情况
 Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http API](/uwp/api/windows.web.http) 执行的网络操作的数据。 分析数据可以帮助你解决问题（如访问和身份验证问题、不正确的缓存用法和不良的显示和下载性能）。  

@@ -1,8 +1,6 @@
 ---
 title: 项定义 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 2cc550d91c1cccbbc5417300da3618aa52afa69b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178557"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990800"
 ---
 # <a name="item-definitions"></a>项定义
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 使用 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素来启用项目文件中项的静态声明。 但是，只能在项级别添加元数据，即使所有项的元数据均相同，也是如此。 从 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 开始引入了一个名为 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) 的项目元素，从而克服了这一限制。 使用 *ItemDefinitionGroup* 可以定义一组项定义，这些项定义将默认元数据值添加到命名项类型中的所有项中。  

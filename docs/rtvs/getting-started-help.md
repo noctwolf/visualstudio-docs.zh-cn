@@ -3,19 +3,18 @@ title: R 的帮助窗口
 description: 在 Visual Studio 中，R 的相关帮助通过 ? 命令直接集成到交互 对话框。
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6576a701abe699bfe47666acfc21c848dde1f53a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cd8be6e0b89ae0e110e16bcad9975108fa69bd5b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666678"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931916"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>针对 Visual Studio 的 R 工具中的帮助
 

@@ -1,8 +1,6 @@
 ---
 title: 不显示磁盘活动（线程视图）| Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.nodiskreport
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7ab1e30eeb20622964cd410adb0300843b964f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 52b522dfe2f213e75454495fb593165edc282d33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254626"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836304"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>没有要显示的磁盘活动（线程视图）
 无法显示磁盘 I/O 通道中当前时间范围的磁盘活动。 如果缩小或滚动，可能会显示磁盘活动。 此外，请确保没有磁盘通道处于隐藏状态。  

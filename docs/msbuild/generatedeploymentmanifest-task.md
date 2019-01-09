@@ -1,8 +1,6 @@
 ---
 title: GenerateDeploymentManifest 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37ac7c6f1a840a38508e49ca15efdd08c2043da6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6d8f6f45b0a02922f3c91b9d1443000a385eb240
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939639"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932374"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 任务
 
@@ -35,7 +33,7 @@ ms.locfileid: "49939639"
 下表描述了 `GenerateDeploymentManifest` 任务的参数。
 
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 |--------------------------| - |
 | `AssemblyName` | 可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Name` 字段。 如果未指定此参数，则从 `EntryPoint` 或 `InputManifest` 参数中推断名称。 如果无法推断名称，则任务将引发错误。 |
 | `AssemblyVersion` | 可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Version` 字段。 如果未指定此参数，则任务使用值“1.0.0.0”。 |
