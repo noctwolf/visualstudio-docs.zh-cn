@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetStringForVariant |Microsoft 文档
+title: IDebugFormatter::GetStringForVariant |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfc31b0fdbf6d1f4a29b1322dc3a3c4015f9c8ff
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a7b2eefb69435333509c4b9cda986cc75e431f73
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726657"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097443"
 ---
 # <a name="idebugformattergetstringforvariant"></a>IDebugFormatter::GetStringForVariant
-返回表示给定的变量值的字符串。  
+返回一个字符串，表示给定的变体值。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetStringForVariant(  
    VARIANT*  pvar,  
    ULONG     nRadix,  
@@ -40,13 +40,13 @@ HRESULT GetStringForVariant(
   
 #### <a name="parameters"></a>参数  
  `pvar`  
- [in]若要将其表示为一个字符串的变量。  
+ [in]若要表示为一个字符串的变体。  
   
  `nRadix`  
  [in]要用于数字值的基数。  
   
  `pbstrValue`  
- [out]字符串表示`pvar`。  
+ [out]字符串，表示`pvar`。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -56,7 +56,7 @@ HRESULT GetStringForVariant(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法返回表示给定的变量值的字符串。  
+ 此方法返回一个字符串，表示给定变量的值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugFormatter 接口](../../winscript/reference/idebugformatter-interface.md)

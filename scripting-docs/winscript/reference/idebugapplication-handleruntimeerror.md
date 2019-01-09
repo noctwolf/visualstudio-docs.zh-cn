@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleRuntimeError |Microsoft 文档
+title: IDebugApplication::HandleRuntimeError |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eead4780ff061ff9c7280aeee0936c8f64741981
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2a64bc0b3543af322ec092340026e4abdc7380f9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725787"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097313"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
-导致当前线程阻塞，并将错误通知发送到调试器 IDE。  
+导致当前线程被阻塞，并将错误的通知发送到调试器 IDE。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT HandleRuntimeError(  
    IActiveScriptErrorDebug*  pErrorDebug,  
    IActiveScriptSite*        pScriptSite,  
@@ -45,31 +45,31 @@ HRESULT HandleRuntimeError(
  [in]发生的错误。  
   
  `pScriptSite`  
- [in]线程脚本站点。  
+ [in]线程的脚本站点。  
   
  `pbra`  
- [out]当在调试器恢复应用程序时要执行的操作。  
+ [out]在调试器恢复应用程序时要执行的操作。  
   
  `perra`  
- [out]当在调试器恢复应用程序，如果没有错误时要执行的操作。  
+ [out]在调试器恢复应用程序，如果出现错误时要执行的操作。  
   
  `pfCallOnScriptError`  
- [out]这是标志`TRUE`如果应调用引擎`IActiveScriptSite::OnScriptError`方法。  
+ [out]这是标志`TRUE`如果引擎应调用`IActiveScriptSite::OnScriptError`方法。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 语言引擎将导致运行时错误的线程的上下文中调用此方法。 此方法会导致当前线程阻塞，并将发送的错误通知发送到调试器 IDE。 如果调试器 IDE 恢复应用程序，此方法返回与要执行的操作。  
+ 语言引擎会导致运行时错误的线程的上下文中调用此方法。 此方法会导致阻止当前线程，并发送错误通知发送到调试器 IDE。 当调试器 IDE 继续应用程序时，此方法返回要执行的操作。  
   
 > [!NOTE]
->  在运行时错误，可能由要执行此类任务，如枚举堆栈帧或对表达式求值的线程调用语言引擎。  
+>  在运行时错误可能由要执行此类任务，如枚举堆栈帧或对表达式求值的线程调用语言引擎。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)   
  [IActiveScriptErrorDebug 接口](../../winscript/reference/iactivescripterrordebug-interface.md)   
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   

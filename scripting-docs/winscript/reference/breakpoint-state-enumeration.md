@@ -1,5 +1,5 @@
 ---
-title: BREAKPOINT_STATE 枚举 |Microsoft 文档
+title: BREAKPOINT_STATE 枚举 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 881598b39625b02651a4d57456904db60ace80c4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8bb0a1fabc90eea86f440ebca97a9adb1328c401
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640767"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097274"
 ---
 # <a name="breakpointstate-enumeration"></a>BREAKPOINT_STATE 枚举
 指示断点的状态。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 typedef enum tagBREAKPOINT_STATE {  
    BREAKPOINT_DELETED = 0,  
    BREAKPOINT_DISABLED = 1,  
@@ -43,8 +43,8 @@ typedef enum tagBREAKPOINT_STATE {
 |成员|描述|  
 |------------|-----------------|  
 |BREAKPOINT_DELETED|断点不再存在，但仍有对它的引用。|  
-|BREAKPOINT_DISABLED|断点存在，但处于禁用状态。|  
-|BREAKPOINT_ENABLED|断点存在并已启用。|  
+|BREAKPOINT_DISABLED|断点存在但是已禁用。|  
+|BREAKPOINT_ENABLED|断点存在并且已启用。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [活动脚本调试器常量、枚举和结构](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

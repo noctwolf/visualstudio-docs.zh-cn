@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetSize |Microsoft 文档
+title: IDebugDocumentText::GetSize |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3152150c46793a71ec7a46b6ab2097efa06f6fc8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c171b894856141d8c42ae641f1d08b058cd3d9c3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727067"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087022"
 ---
 # <a name="idebugdocumenttextgetsize"></a>IDebugDocumentText::GetSize
 返回文档中的行数和字符数。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetSize(  
    ULONG*  pcNumLines,  
    ULONG*  pcNumChars  
@@ -47,12 +47,12 @@ HRESULT GetSize(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
  此方法返回文档中的行数和字符数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentText 接口](../../winscript/reference/idebugdocumenttext-interface.md)

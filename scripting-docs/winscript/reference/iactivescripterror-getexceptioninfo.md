@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetExceptionInfo |Microsoft 文档
+title: IActiveScriptError::GetExceptionInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8719d1a169c89d7b6cf712a125b6962b9c7a8839
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf48362686a05a958a067cffa1015ffe2d58cecc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645717"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096221"
 ---
 # <a name="iactivescripterrorgetexceptioninfo"></a>IActiveScriptError::GetExceptionInfo
-检索有关脚本引擎运行脚本时出现错误的信息。  
+检索有关脚本引擎运行脚本时发生错误的信息。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetExceptionInfo(  
     EXCEPINFO *pexcepinfo  // structure for exception information  
 );  
@@ -41,7 +41,7 @@ HRESULT GetExceptionInfo(
  [out]地址`EXCEPINFO`接收错误的信息的结构。  
   
 ## <a name="return-value"></a>返回值  
- 返回`S_OK`如果成功，或`E_FAIL`如果发生错误。  
+ 返回`S_OK`如果成功，或`E_FAIL`是否发生错误。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

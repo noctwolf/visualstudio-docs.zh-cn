@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::Start |Microsoft 文档
+title: IDebugExpression::Start |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14d293649e3a6a87c7f594e244378dc2a7e15ac6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c0d7b809f18407bfeb3de59c9cbb6e6e26911ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727597"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093335"
 ---
 # <a name="idebugexpressionstart"></a>IDebugExpression::Start
-开始对表达式求值。  
+开始表达式的计算。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugExpressionCallBack*  pdecb  
 );  
@@ -38,18 +38,18 @@ HRESULT Start(
   
 #### <a name="parameters"></a>参数  
  `pdecb`  
- [in]指示表达式计算过程何时完成的回调。 如果此参数为`NULL`，不触发任何事件，并且客户端必须通过使用轮询表达式状态`QueryIsComplete`。  
+ [in]指示表达式计算过程何时完成的回调。 如果此参数为`NULL`，不触发任何事件，并且客户端必须使用轮询表达式状态`QueryIsComplete`。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法开始的表达式求值。  
+ 此方法首先计算表达式。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)   
  [IDebugExpression 接口](../../winscript/reference/idebugexpression-interface.md)

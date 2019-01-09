@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::Start |Microsoft 文档
+title: IDebugAsyncOperation::Start |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd39053e86dce95fa52ba8576814962d13d8b050
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 099e256496278a33ccae77351641cfdd23447b1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725937"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094778"
 ---
 # <a name="idebugasyncoperationstart"></a>IDebugAsyncOperation::Start
-会导致开始异步操作。  
+将导致异步操作以开始。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT Start(  
    IDebugAsyncOperationCallBack*  padocb  
 );  
@@ -46,12 +46,12 @@ HRESULT Start(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_UNEXPECTED`|运算操作已被挂起。|  
+|`E_UNEXPECTED`|操作已处于挂起状态。|  
   
 ## <a name="remarks"></a>备注  
- 此方法使`IDebugSyncOperation::Execute`获取从线程中以异步方式调用`IDebugSyncOperation::GetTargetThread`。 此方法应仅从调用调试器线程中; 中否则，它将返回之前的操作已完成。  
+ 此方法将导致`IDebugSyncOperation::Execute`获取从线程中异步调用`IDebugSyncOperation::GetTargetThread`。 调用此方法应只从在调试程序线程中;否则，它将不返回直到完成该操作。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
  [IDebugAsyncOperation 接口](../../winscript/reference/idebugasyncoperation-interface.md)   
  [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)   

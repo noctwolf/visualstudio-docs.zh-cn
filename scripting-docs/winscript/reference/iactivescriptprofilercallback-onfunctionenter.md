@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::OnFunctionEnter |Microsoft 文档
+title: IActiveScriptProfilerCallback::OnFunctionEnter |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9af9dc5ce1f4cb0eb5c328c90c20184111afd9b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 887810d12a20045c95b0f837db1592b9b7bf301e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724597"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095376"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionenter"></a>IActiveScriptProfilerCallback::OnFunctionEnter
-通知的脚本引擎是将要执行不是调用到文档对象模型 (DOM) 的函数调用的探查器对象。  
+通知脚本引擎来执行不是到文档对象模型 (DOM) 的调用的函数调用的探查器对象。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT OnFunctionEnter(  
     [in] PROFILER_TOKEN scriptId,   
     [in] PROFILER_TOKEN functionId);  
@@ -36,17 +36,17 @@ HRESULT OnFunctionEnter(
   
 #### <a name="parameters"></a>参数  
  `scriptId`  
- [in]该脚本中函数的唯一 ID。 通过脚本引擎分配有此 ID。  
+ [in]该脚本，该函数属于的唯一 ID。 由脚本引擎分配此 ID。  
   
  `functionId`  
- [in]函数的唯一 ID。 通过脚本引擎分配有此 ID。  
+ [in]函数的唯一 ID。 由脚本引擎分配此 ID。  
   
 ## <a name="return-value"></a>返回值  
- 通过脚本引擎忽略此方法的返回值。  
+ 此方法的返回值是脚本引擎忽略。  
   
 ## <a name="remarks"></a>备注  
- 对于 DOM 调用，脚本引擎调用[IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)而不是`IActiveScriptProfilerCallback::OnFunctionEnter`。 这是由于大量的唯一方法和属性的数组。  
+ 对于 DOM 调用，脚本引擎将调用[IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)而不是`IActiveScriptProfilerCallback::OnFunctionEnter`。 这是由于大量的唯一方法和属性的数组。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)   
  [IActiveScriptProfilerCallback 接口](../../winscript/reference/iactivescriptprofilercallback-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::RemoveGlobalExpressionContextProvider |Microsoft 文档
+title: IDebugApplication::RemoveGlobalExpressionContextProvider |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 791d6a3a237c36c123aea662dc4bb933b97d35d3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5038d85e48b6735c81977d20f295dd4e0868e2e2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725967"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093881"
 ---
 # <a name="idebugapplicationremoveglobalexpressioncontextprovider"></a>IDebugApplication::RemoveGlobalExpressionContextProvider
-删除此应用程序全局表达式上下文提供程序。  
+此应用程序中删除全局表达式上下文提供程序。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT RemoveGlobalExpressionContextProvider(  
    DWORD_PTR  dwCookie  
 );  
@@ -38,7 +38,7 @@ HRESULT RemoveGlobalExpressionContextProvider(
   
 #### <a name="parameters"></a>参数  
  `dwCookie`  
- [in]由返回的 cookie`AddGlobalExpressionContextProvider`方法时已添加的全局上下文提供程序。  
+ [in]返回的 cookie`AddGlobalExpressionContextProvider`方法添加的全局上下文提供程序时。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -48,8 +48,8 @@ HRESULT RemoveGlobalExpressionContextProvider(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- `RemoveGlobalExpressionContextProvider`方法移除来自此应用程序全局表达式上下文提供程序。  
+ `RemoveGlobalExpressionContextProvider`方法从该应用程序中删除全局表达式上下文提供程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)   
  [IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)

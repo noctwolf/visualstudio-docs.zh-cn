@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::BringDocumentToTop |Microsoft 文档
+title: IDebugDocumentHelper::BringDocumentToTop |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34da5d19b927bf80c05675cbc6871b0a26801247
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4992b68d0644e6183e62577bdec9be86f50df592
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726467"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086952"
 ---
 # <a name="idebugdocumenthelperbringdocumenttotop"></a>IDebugDocumentHelper::BringDocumentToTop
-将此文档引入到调试器中的顶部用户界面。  
+本文档提供在调试器中的顶部对用户界面。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT BringDocumentToTop();  
 ```  
   
 #### <a name="parameters"></a>参数  
- 此方法采用任何参数。  
+ 此方法需要任何参数。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -45,7 +45,7 @@ HRESULT BringDocumentToTop();
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 如果未启动，此方法会启动调试器。  
+ 如果未启动，则此方法启动调试器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentHelper 接口](../../winscript/reference/idebugdocumenthelper-interface.md)

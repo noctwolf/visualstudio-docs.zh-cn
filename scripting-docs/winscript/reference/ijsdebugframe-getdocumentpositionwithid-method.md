@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugframe:: Getdocumentpositionwithid 方法 |Microsoft 文档'
+title: 'Ijsdebugframe:: Getdocumentpositionwithid 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f11e9ad51094522adec99ef82681f42ac500a251
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4c37f31ca6b75ca826dbdab93847a1e70ff054c1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727727"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090007"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithid-method"></a>IJsDebugFrame::GetDocumentPositionWithId 方法
-返回此堆栈帧用户级文档中的当前位置。  
+返回此堆栈帧的用户级别文档中的当前位置。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetDocumentPositionWithId(  
    UINT64 *pDocumentId,  
    DWORD *pCharacterOffset,  
@@ -38,18 +38,18 @@ HRESULT GetDocumentPositionWithId(
   
 #### <a name="parameters"></a>参数  
  `pDocumentId`  
- [out]源文档 （指向 IDebugDocumentText） 的唯一 ID。  
+ [out]源文档 （指向 idebugdocumenttext 的指针） 的唯一 ID。  
   
  `pCharacterOffset`  
- [out]从脚本的开头从零开始的字符偏移量。  
+ [out]从脚本开始处的从零开始的字符偏移量。  
   
  `pStatementCharCount`  
- [out]当前的语句，开始的长度 * pCharacterOffset，以字符为单位。  
+ [out]当前语句开始处的长度 * pCharacterOffset，以字符为单位。  
   
 ## <a name="return-value"></a>返回值  
   
 ## <a name="requirements"></a>要求  
  **标头：** jscript9diag.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IJsDebugFrame 接口](../../winscript/reference/ijsdebugframe-interface.md)

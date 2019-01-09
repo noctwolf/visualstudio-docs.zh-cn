@@ -1,5 +1,5 @@
 ---
-title: ERRORRESUMEACTION 枚举 |Microsoft 文档
+title: ERRORRESUMEACTION 枚举 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 914c1d7aa4d2935ea94322ebd257f4135d79e9c0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d78852a05226f5112447dd142c06a2ba55ddba5a
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640607"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090930"
 ---
 # <a name="errorresumeaction-enumeration"></a>ERRORRESUMEACTION 枚举
 描述如何从运行时错误继续。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 typedef enum tagERRORRESUMEACTION {  
    ERRORRESUMEACTION_ReexecuteErrorStatement,  
    ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller,  
@@ -42,9 +42,9 @@ typedef enum tagERRORRESUMEACTION {
   
 |成员|描述|  
 |------------|-----------------|  
-|ERRORRESUMEACTION_ReexecuteErrorStatement|重新执行语句生成错误。|  
-|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|允许处理错误的语言引擎。|  
-|ERRORRESUMEACTION_SkipErrorStatement|恢复后生成错误的语句的代码中执行。|  
+|ERRORRESUMEACTION_ReexecuteErrorStatement|重新执行该语句生成错误。|  
+|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|允许语言引擎处理该错误。|  
+|ERRORRESUMEACTION_SkipErrorStatement|恢复之后的语句生成错误的代码中执行。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [活动脚本调试器常量、枚举和结构](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

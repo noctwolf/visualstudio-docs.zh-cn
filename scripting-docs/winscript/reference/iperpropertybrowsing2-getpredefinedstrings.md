@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a60225e69a04399a3ff0160291b84e9f3fda513c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3bec9643a89d40a7b1e37d019d4211bd7167ee65
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915955"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088603"
 ---
 # <a name="iperpropertybrowsing2getpredefinedstrings"></a>IPerPropertyBrowsing2::GetPredefinedStrings
 允许调用方使用的字符串指针，它表示此属性的可能值的计数数组填充列表框。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetPredefinedStrings(  
    DISPID  dispid,  
    CALPOLESTR*  pCaStrings,  

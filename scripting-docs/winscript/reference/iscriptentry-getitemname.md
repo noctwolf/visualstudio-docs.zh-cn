@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetItemName |Microsoft 文档
+title: IScriptEntry::GetItemName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdbb293afc6f58f8d9d9c1fe27bae467fd36792c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4fc82dbd26fc2b9956b3d32596e5fa730b96f9a8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729087"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093452"
 ---
 # <a name="iscriptentrygetitemname"></a>IScriptEntry::GetItemName
 返回标识的项名称`IScriptEntry`对象。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetItemName(  
    BSTR               *pbstr  
 );  
@@ -43,12 +43,12 @@ HRESULT GetItemName(
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 有关`IScriptScriptlet`对象，通过设置项名称[IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)。 对于其他接口，设置项名称使用[IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md)。  
+ 有关`IScriptScriptlet`对象，通过设置项目名称[IActiveScriptAuthor::AddScriptlet](../../winscript/reference/iactivescriptauthor-addscriptlet.md)。 对于其他接口，设置项名称使用[IScriptEntry::SetItemName](../../winscript/reference/iscriptentry-setitemname.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IScriptEntry 接口](../../winscript/reference/iscriptentry-interface.md)

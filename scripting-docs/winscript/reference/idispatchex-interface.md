@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22ccc54dee335fd8c81343557d2f32c48eb30560
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3a59f30c5b42301d29b73a4a079837423614da49
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837914"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087576"
 ---
 # <a name="idispatchex-interface"></a>IDispatchEx 接口
 `IDispatchEx`的扩展`IDispatch`接口，适合脚本编写语言之类的动态语言的支持的功能。 本部分介绍`IDispatchEx`接口本身之间的差异`IDispatch`和`IDispatchEx`，和扩展的基本原理。 应读者都熟悉`IDispatch`并且有权`IDispatch`文档。  
@@ -71,7 +71,7 @@ ms.locfileid: "49837914"
   
   完整的 HTML 代码是：  
   
-```  
+```html
 <html>  
 <body>  
 <script type="text/javascript">  
@@ -102,7 +102,7 @@ test();
   
  在此同一网页上放置的控件可能从浏览器到脚本引擎获取调度指针。 然后，该控件可以实现函数 test （）：  
   
-```  
+```html
 <html>  
 <body>  
 <script type="text/javascript">  
@@ -138,7 +138,7 @@ function cat()
   
   测试控件的代码：  
   
-```  
+```cpp
    BOOL test(IDispatchEx *pdexScript)  
    {  
       HRESULT hr;  

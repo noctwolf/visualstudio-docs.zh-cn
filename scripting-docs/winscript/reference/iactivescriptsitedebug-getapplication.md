@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::GetApplication |Microsoft 文档
+title: IActiveScriptSiteDebug::GetApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e33bf254d2e688451f1b69a3b3eb1b676a9e9b1a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a485a7195f64754bc28d0c1905d30d6f22747c31
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724757"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090111"
 ---
 # <a name="iactivescriptsitedebuggetapplication"></a>IActiveScriptSiteDebug::GetApplication
 返回与此脚本站点关联的调试应用程序对象。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetApplication(  
    IDebugApplication**  ppda  
 );  
@@ -49,8 +49,8 @@ HRESULT GetApplication(
 |`E_NOTIMPL`|主机不直接支持调试。|  
   
 ## <a name="remarks"></a>备注  
- `GetApplication`方法为提供的方法来定义每个脚本所属的应用程序对象的智能主机。 脚本引擎应尝试调用此方法以获取其包含的应用程序，并采用`IProcessDebugManager::GetDefaultApplication`如果此操作失败。  
+ `GetApplication`方法提供了智能主机来定义每个脚本所属的应用程序对象的方式。 脚本引擎应尝试调用此方法以获取其包含的应用程序并求助于`IProcessDebugManager::GetDefaultApplication`如果此操作失败。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptSiteDebug 接口](../../winscript/reference/iactivescriptsitedebug-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

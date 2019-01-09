@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 591e09596c92476b7664b541d74344099d19ecb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70dcdcfbc31434dd09f83951e7d89d9fd1832168
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874520"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091710"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>开始使用 Roslyn 分析器
 
@@ -39,4 +39,4 @@ ms.locfileid: "53874520"
 - [教程：编写第一个分析器和代码修补程序](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 - [.NET 编译器平台包版本参考](roslyn-version-support.md)
 - [GitHub OSS 站点上的多个文档](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
-- [FxCop 规则实现通过 GitHub 上的 Roslyn 分析器](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
+- [FxCop 规则实现通过 Roslyn 分析器](http://roslynanalyzersstatus.azurewebsites.net/)

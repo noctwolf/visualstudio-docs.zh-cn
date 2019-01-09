@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::ParseScriptText |Microsoft 文档
+title: IActiveScriptAuthor::ParseScriptText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13e81d96ae817b2117f12cb56fd59759f4c2b849
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c5f9e4969795cedd7da80864c1ad69c0d68f8b9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645507"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091801"
 ---
 # <a name="iactivescriptauthorparsescripttext"></a>IActiveScriptAuthor::ParseScriptText
-分析脚本文本，将文本添加到创作引擎，该脚本并创建`IScriptEntry`对应于脚本块的对象。  
+分析脚本文本、 将文本添加到创作引擎，该脚本并创建`IScriptEntry`对应于脚本块的对象。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT ParseScriptText(  
    LPCOLESTR pszCode,  
    LPCOLESTR pszItemName,  
@@ -48,22 +48,22 @@ HRESULT ParseScriptText(
  [in]包含与脚本块关联的项名称的缓冲区地址。  
   
  `pszDelimiter`  
- [in]结束的脚本块分隔符的地址。 当`pszCode`分析从文本流中，主机通常使用分隔符 （如两个单引号），来检测脚本块的末尾。 如果没有定界符来确定该脚本块的结尾，此参数设置为 NULL。  
+ [in]最终的脚本块分隔符的地址。 当`pszCode`进行分析的文本流，从主机通常使用分隔符 （如两个单引号），来检测脚本块的末尾。 如果没有定界符来标识脚本块的末尾，此参数设置为 NULL。  
   
  `dwCookie`  
- [in]应用程序定义的值与新的`IScriptEntry`对象。  
+ [in]与新关联应用程序定义的值`IScriptEntry`对象。  
   
  `dwFlags`  
- [in]未使用。  
+ [in]不使用。  
   
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptAuthor 接口](../../winscript/reference/iactivescriptauthor-interface.md)

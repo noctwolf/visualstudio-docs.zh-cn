@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugbreakpoint:: Delete 方法 |Microsoft 文档'
+title: 'Ijsdebugbreakpoint:: Delete 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,29 +16,29 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f61da0754147e0a449663cc9815501dc8d38e6f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6aa838f928aac6985c5c864853c3abd017f7bcf8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727987"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094167"
 ---
 # <a name="ijsdebugbreakpointdelete-method"></a>IJsDebugBreakPoint::Delete 方法
 删除断点。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT Delete(void);  
 ```  
   
 ## <a name="return-value"></a>返回值  
   
 ## <a name="remarks"></a>备注  
- 如果在已删除断点上调用，则返回 S_FALSE。  
+ 如果对已删除的断点调用，则返回 S_FALSE。  
   
 ## <a name="requirements"></a>要求  
  **标头：** jscript9diag.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IJsDebugBreakPoint 接口](../../winscript/reference/ijsdebugbreakpoint-interface.md)

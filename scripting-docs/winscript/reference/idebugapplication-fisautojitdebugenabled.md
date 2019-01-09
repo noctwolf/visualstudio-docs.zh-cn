@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FIsAutoJitDebugEnabled |Microsoft 文档
+title: IDebugApplication::FIsAutoJitDebugEnabled |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,30 +18,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 268a10cc829e2d217bb9a90b355405dd8f3b15b6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b06d223d76ed741eef6b379ace6b522248ded2e1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725177"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090540"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
-确定在实时 (JIT) 调试器是否已注册到自动调试笨拙主机。  
+确定是否在实时 (JIT) 调试程序已注册到自动调试非智能主机。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 BOOL FIsAutoJitDebugEnabled();  
 ```  
   
 #### <a name="parameters"></a>参数  
- 此方法采用任何参数。  
+ 此方法需要任何参数。  
   
 ## <a name="return-value"></a>返回值  
- 如果该方法成功，并且 JIT 调试器已注册到自动调试笨拙主机，该方法返回`TRUE`。 否则，它将返回 `FALSE`。  
+ 如果该方法成功，并且 JIT 调试器注册到自动调试非智能主机，该方法返回`TRUE`。 否则，它将返回 `FALSE`。  
   
 ## <a name="remarks"></a>备注  
- 此方法可确定如果 JIT 调试器已注册到自动调试笨拙主机。  
+ 此方法用于确定 JIT 调试器注册到自动调试非智能主机。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)

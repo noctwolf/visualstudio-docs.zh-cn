@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetLanguageString |Microsoft 文档
+title: IDebugStackFrame::GetLanguageString |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 724ca98278eb8885d29aad1799f822ac57251597
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cc20c3ce2f5d198e167b83ffddb65cedc84402d7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727507"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087732"
 ---
 # <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
-返回的语言的短或长文本说明。  
+返回语言的短或长文本描述。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetLanguageString(  
    BOOL   fLong,  
    BSTR*  pbstrLanguage  
@@ -39,20 +39,20 @@ HRESULT GetLanguageString(
   
 #### <a name="parameters"></a>参数  
  `fLong`  
- [in]标志，其中`TRUE`返回较长的说明和`FALSE`返回的简短说明。  
+ [in]标志，其中`TRUE`返回的详细说明和`FALSE`返回的简短说明。  
   
  `pbstrLanguage`  
- [out]语言的说明。  
+ [out]语言的描述。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 通常情况下，如果`fLong`是`FALSE`，此方法提供仅与堆栈帧关联的语言的名称。 当`fLong`是`TRUE`，此方法可能提供完整的产品说明。  
+ 通常情况下，如果`fLong`是`FALSE`，此方法提供仅与堆栈帧关联的语言的名称。 当`fLong`是`TRUE`，此方法可能会提供完整的产品说明。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugStackFrame 接口](../../winscript/reference/idebugstackframe-interface.md)

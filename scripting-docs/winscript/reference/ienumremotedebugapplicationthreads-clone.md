@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplicationThreads::Clone |Microsoft 文档
+title: IEnumRemoteDebugApplicationThreads::Clone |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9c0d745d2404df72961a28c9bc29059b7c2ac57
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e64a83b9cf5184e8a7dfe45cc33b698e5bbdd4f6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727157"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091689"
 ---
 # <a name="ienumremotedebugapplicationthreadsclone"></a>IEnumRemoteDebugApplicationThreads::Clone
-创建一个枚举器，其中包含与当前的枚举器相同的状态。  
+创建一个包含与当前枚举数相同的状态的枚举器。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT Clone(  
    IEnumRemoteDebugApplicationThreads**  pperdat  
 );  
@@ -48,7 +48,7 @@ HRESULT Clone(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法创建一个枚举器，其中包含与当前的枚举器相同的状态。  
+ 此方法创建一个包含与当前枚举数相同的状态的枚举器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEnumRemoteDebugApplicationThreads 接口](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)

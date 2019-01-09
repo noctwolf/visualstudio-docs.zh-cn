@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadID |Microsoft 文档
+title: IActiveScript::GetScriptThreadID |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8850319035b7b5e3a9cbbd4bbe4340e1eefacc96
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7b1c68d60b827e7540711cdf6ba34260fb8642ed
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641607"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094869"
 ---
 # <a name="iactivescriptgetscriptthreadid"></a>IActiveScript::GetScriptThreadID
 检索与给定的 Win32 线程关联的线程的脚本引擎定义标识符。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetScriptThreadID(  
     DWORD dwWin32ThreadID,       // Win32 thread identifier.  
     SCRIPTTHREADID *pstidThread  // Receives scripting thread. identifier  
@@ -42,21 +42,21 @@ HRESULT GetScriptThreadID(
  [in]当前进程中正在运行的 Win32 线程的线程标识符。 使用[IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)函数可检索当前正在执行的线程的线程标识符。  
   
  `pstidThread` ,  
- [out]接收与给定的 Win32 线程关联的脚本线程标识符的变量的地址。 此标识符的解释为从左到脚本引擎中，但它可以是只是一份 Windows 线程标识符。 请注意，是否 Win32 线程终止，则此标识符将为未分配并且随后可以分配给另一个线程。  
+ [out]一个变量来接收与给定的 Win32 线程关联的脚本线程标识符的地址。 此标识符的解释为从左到脚本引擎，但它可以只是一份 Windows 线程标识符。 请注意，如果 Win32 线程终止，此标识符将成为未分配，随后可能分配给另一个线程。  
   
 ## <a name="return-value"></a>返回值  
- 返回下列值之一：  
+ 返回以下值之一：  
   
 |返回值|含义|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_POINTER`|指定了无效的指针。|  
-|`E_UNEXPECTED`|不应调用 （例如，脚本引擎具有尚未加载或初始化），因此失败。|  
+|`E_UNEXPECTED`|不应在调用 （例如，脚本引擎具有尚未加载或初始化），因此失败。|  
   
 ## <a name="remarks"></a>备注  
- 检索到的标识符可以如到脚本线程执行控制方法的后续调用中使用[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)方法。  
+ 检索到的标识符可以如对脚本线程执行控制方法的后续调用中使用[iactivescript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)方法。  
   
- 此方法可以从非基本线程调用不会导致为主机对象或设置为非基本标注[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)接口。  
+ 此方法可以从非基础线程调用不会导致到主机对象或一个非基本标注[iactivescript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScript](../../winscript/reference/iactivescript.md)

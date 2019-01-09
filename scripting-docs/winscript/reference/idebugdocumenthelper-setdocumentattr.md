@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDocumentAttr |Microsoft 文档
+title: IDebugDocumentHelper::SetDocumentAttr |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d0fb7fc506c8ed0284fe7d0f4853c6410218865b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e743242366c040c02595642fd594ae184436d282
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725887"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090319"
 ---
 # <a name="idebugdocumenthelpersetdocumentattr"></a>IDebugDocumentHelper::SetDocumentAttr
-设置此文档的特性。  
+设置本文档的特性。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT SetDocumentAttr(  
    TEXT_DOC_ATTR  pszAttributes  
 );  
@@ -48,8 +48,8 @@ HRESULT SetDocumentAttr(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法会设置此文档的属性。  
+ 此方法设置此文档的属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentHelper 接口](../../winscript/reference/idebugdocumenthelper-interface.md)   
  [TEXT_DOC_ATTR 常量](../../winscript/reference/text-doc-attr-constants.md)

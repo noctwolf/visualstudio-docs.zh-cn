@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug |Microsoft 文档
+title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,21 +18,21 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e428f12b3d199603ac341a5e069fcc5ce5d36f93
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 70dd250359d52ae0929fb5fb2c60087f66af2160
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725107"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095116"
 ---
 # <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
-通知主机有关脚本运行时错误过程调试管理器时未找到实时脚本调试器。  
+通知主机有关脚本运行时错误进程调试管理器时未找到恰时脚本调试器。  
   
- 若要在你的主机中实现调试器，你应处理[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)。 根据用户操作，主机可以附加调试器并返回，或者返回 OnScriptErrorDebug 中调试器的起始`pfEnterDebugger`参数。 你还应实现此接口可获取有关运行时错误通知，即使有过程调试管理器可以解释没有外部调试器。  
+ 若要在你的主机中实现一个调试器，您应处理[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)。 根据用户操作，主机可以将附加调试器，并返回，或返回 OnScriptErrorDebug 中调试器的起始`pfEnterDebugger`参数。 此外应实现此接口，用于获取有关运行时错误通知，即使有可由进程调试管理器理解没有外部调试器。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT OnCanNotJITScriptErrorDebug(  
    IActiveScriptErrorDebug*  pErrorDebug  
    BOOL *pfCallOnScriptErrorWhenContinuing  
@@ -44,17 +44,17 @@ HRESULT OnCanNotJITScriptErrorDebug(
  [in]发生的运行时错误。  
   
  `pfCallOnScriptErrorWhenContinuingt`  
- [out]是否要调用[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)如果用户决定继续而不进行调试。  
+ [out]是否需要调用[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)如果用户决定继续而不进行调试。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 你还应实现此接口可看到一条通知。  
+ 此外应实现此接口可收到通知。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptSiteDebugEx 接口](../../winscript/reference/iactivescriptsitedebugex-interface.md)

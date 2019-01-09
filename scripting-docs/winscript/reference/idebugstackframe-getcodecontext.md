@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetCodeContext |Microsoft 文档
+title: IDebugStackFrame::GetCodeContext |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b872e63169f6c2d70cd3476324b3d0071718350
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 14c7acc9070edb0e63dee8c71cb0b16c5f85e4cd
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726907"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095610"
 ---
 # <a name="idebugstackframegetcodecontext"></a>IDebugStackFrame::GetCodeContext
 返回与此堆栈帧关联的当前代码上下文。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetCodeContext(  
    IDebugCodeContext**  ppcc  
 );  
@@ -50,5 +50,5 @@ HRESULT GetCodeContext(
 ## <a name="remarks"></a>备注  
  此方法返回与此堆栈帧关联的当前代码上下文。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugStackFrame 接口](../../winscript/reference/idebugstackframe-interface.md)

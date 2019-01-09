@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetCookie |Microsoft 文档
+title: IScriptNode::GetCookie |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa68f528aeb405ca150cff717ab5e4bebb82027a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e133afbac4b75a5b9c24ee33148edd1114b33452
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733677"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094232"
 ---
 # <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
-返回一个用于将 scriptlet 与该主机对象相关联的应用程序定义值。  
+返回用于将 scriptlet 与该主机对象相关联的应用程序定义的值。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetCookie(  
    DWORD              *pdwCookie  
 );  
@@ -38,18 +38,18 @@ HRESULT GetCookie(
   
 #### <a name="parameters"></a>参数  
  `pdwCookie`  
- [out]有关`IScriptEntry`对象，则返回的应用程序定义的 cookie 值。  
+ [out]有关`IScriptEntry`对象，则返回应用程序定义的 cookie 值。  
   
- 有关`IScriptNode`对象，表示 Web 页上，返回 0。  
+ 有关`IScriptNode`对象，表示网页，返回 0。  
   
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IScriptNode 接口](../../winscript/reference/iscriptnode-interface.md)

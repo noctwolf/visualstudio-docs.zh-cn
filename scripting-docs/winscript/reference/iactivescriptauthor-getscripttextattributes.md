@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetScriptTextAttributes |Microsoft 文档
+title: IActiveScriptAuthor::GetScriptTextAttributes |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aa96623b4356f0a3d17c8b2631840953dac2d51
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 57513e51248e26e39f95871e0dad329e8cc2f82c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645517"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094700"
 ---
 # <a name="iactivescriptauthorgetscripttextattributes"></a>IActiveScriptAuthor::GetScriptTextAttributes
-返回一个脚本块的文本属性。  
+返回脚本块的文本属性。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetScriptTextAttributes(  
     LPCOLESTR        pszCode,  
     ULONG            cch,  
@@ -42,25 +42,25 @@ HRESULT GetScriptTextAttributes(
   
 #### <a name="parameters"></a>参数  
  `pszCode`  
- [在 size_is (`cch`)] 的脚本块的文本。 此字符串没有要终止 null。  
+ [在中，size_is (`cch`)] 的脚本块的文本。 此字符串没有以 null 结束。  
   
  `cch`  
  [in]用于的大小`pszCode`和`pattr`参数。  
   
  `pszDelimiter`  
- [in]结束脚本分隔符的地址。 当`pszCode`分析从文本流中，主机通常使用分隔符 （如两个单引号），来检测 scriptlet 的末尾。 如果没有定界符来确定该脚本块的结尾，此参数设置为 NULL。  
+ [in]脚本结束分隔符的地址。 当`pszCode`进行分析的文本流，从主机通常使用分隔符 （如两个单引号），来检测 scriptlet 的末尾。 如果没有定界符来标识脚本块的末尾，此参数设置为 NULL。  
   
  `dwFlags`  
- [in]与脚本块文本特性关联的标志。 可以是以下值的组合：  
+ [in]与脚本块的文本属性相关联的标志。 可以是以下值的组合：  
   
-|常量|值|描述|  
+|返回的常量|“值”|描述|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|从 0x0001|确定具有 SOURCETEXT_ATTR_IDENTIFIER 属性的标识符，并标识圆点运算符具有 SOURCETEXT_ATTR_MEMBERLOOKUP 属性。|  
+|GETATTRTYPE_DEPSCAN|0x0001|标识具有 SOURCETEXT_ATTR_IDENTIFIER 属性的标识符和标识具有 SOURCETEXT_ATTR_MEMBERLOOKUP 属性的圆点运算符。|  
 |GETATTRFLAG_THIS|0x0100|标识具有 SOURCETEXT_ATTR_THIS 属性的当前对象。|  
-|GETATTRFLAG_HUMANTEXT|0x8000|标识具有 SOURCETEXT_ATTR_HUMANTEXT 特性的字符串内容和注释文本。|  
+|GETATTRFLAG_HUMANTEXT|0x8000|标识具有 SOURCETEXT_ATTR_HUMANTEXT 属性的字符串内容和注释文本。|  
   
  `pattr`  
- [传入、 传出 size_is (`cch`)] 的脚本块代码的颜色信息。  
+ [in、 out size_is (`cch`)] 的脚本块代码的颜色信息。  
   
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -71,6 +71,6 @@ HRESULT GetScriptTextAttributes(
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptAuthor 接口](../../winscript/reference/iactivescriptauthor-interface.md)   
  [SOURCE_TEXT_ATTR 枚举](../../winscript/reference/source-text-attr-enumeration.md)

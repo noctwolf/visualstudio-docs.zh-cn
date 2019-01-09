@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionCallBack::onComplete |Microsoft 文档
+title: IDebugExpressionCallBack::onComplete |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa3d7d6173161407619174607eae221e4513cbcd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1470d71dcc5e54f1bd38c740993642d2798bff87
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727547"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096975"
 ---
 # <a name="idebugexpressioncallbackoncomplete"></a>IDebugExpressionCallBack::onComplete
 指示表达式计算已完成。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT onComplete();  
 ```  
   
 #### <a name="parameters"></a>参数  
- 此方法采用任何参数。  
+ 此方法需要任何参数。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -45,8 +45,8 @@ HRESULT onComplete();
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 完成表达式计算时，调用此方法。 `IDebugExpression::GetResultAsString`方法可以从内调用此事件处理程序。  
+ 表达式计算完成时，调用此方法。 `IDebugExpression::GetResultAsString`方法可以从内部调用此事件处理程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugExpressionCallBack 接口](../../winscript/reference/idebugexpressioncallback-interface.md)   
  [IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)

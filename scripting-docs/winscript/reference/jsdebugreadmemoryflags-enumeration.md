@@ -1,5 +1,5 @@
 ---
-title: JsDebugReadMemoryFlags 枚举 |Microsoft 文档
+title: JsDebugReadMemoryFlags 枚举 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7efb5170bf0314e95b1acded39a897c2236a29ff
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bef1f16ebcf678452f2fe4b0df3ade6350120f05
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733707"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094024"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>JsDebugReadMemoryFlags 枚举
 读取内存时用于指定行为的标志。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebugReadMemoryFlags;  
 ```  
   
@@ -38,11 +38,11 @@ enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebug
   
 |名称|描述|  
 |----------|-----------------|  
-|`JsDebugAllowPartialRead`|指示调用方想要成功如果仅内存的一部分读取成功的读取的操作。 如果此设置，如果地址无效，将只会引发 E_JsDEBUG_INVALID_MEMORY_ADDRESS 错误。 如果清除此标志，如果请求的任何的内存部分是不可读，将会引发 E_JsDEBUG_INVALID_MEMORY_ADDRESS 错误。|  
-|`None`|指示调用方为 ReadMemory 想默认行为。|  
+|`JsDebugAllowPartialRead`|指示调用方想要读取的操作，如果只有部分内存读取成功。 如果此设置，E_JsDEBUG_INVALID_MEMORY_ADDRESS 错误将仅引发 Address 是否无效。 如果清除此标志，如果请求的任何的内存部分是不可读，将会引发 E_JsDEBUG_INVALID_MEMORY_ADDRESS 错误。|  
+|`None`|指示调用方希望 ReadMemory 的默认行为。|  
   
 ## <a name="requirements"></a>要求  
  **标头：** jscript9diag.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Windows 脚本接口参考](../../winscript/reference/windows-script-interfaces-reference.md)

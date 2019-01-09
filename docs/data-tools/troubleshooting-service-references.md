@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: ecedfce45ab30d70138511ab0c87206bb35a2148
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919464"
 ---
 # <a name="troubleshoot-service-references"></a>服务引用疑难解答
 
@@ -31,7 +30,7 @@ ms.locfileid: "39180420"
 
 ## <a name="error-returning-data-from-a-service"></a>从服务返回数据时出错
 
-当您返回`DataSet`或`DataTable`从一种服务，可能会收到"传入消息的最大大小配额已超出"异常。 默认情况下，`MaxReceivedMessageSize`某些绑定属性设置为相对较小的值，以降低遭受拒绝服务攻击。 可以增大此值以避免此异常。 有关详细信息，请参阅<xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>。
+当您返回`DataSet`或`DataTable`从一种服务，可能会收到"传入消息的最大大小配额已超出"异常。 默认情况下，`MaxReceivedMessageSize`某些绑定属性设置为相对较小的值，以降低遭受拒绝服务攻击。 可以增大此值以避免此异常。 有关更多信息，请参见<xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>。
 
 修复此错误的方法：
 
@@ -49,7 +48,7 @@ ms.locfileid: "39180420"
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>通过远程桌面访问服务时出错
 
-当用户访问通过远程桌面连接和用户的 Web 承载的 WCF 服务不具有管理权限，使用 NTLM 身份验证。 如果用户没有管理权限，用户可能会收到以下错误消息:"HTTP 请求是未经授权的客户端身份验证方案 Anonymous。 从服务器收到的身份验证标头是 NTLM"。
+当用户访问通过远程桌面连接和用户的 Web 承载的 WCF 服务不具有管理权限，使用 NTLM 身份验证。 如果用户没有管理权限，用户可能会收到以下错误消息："HTTP 请求是未经授权的客户端身份验证方案 Anonymous。 从服务器收到的身份验证标头是 NTLM"。
 
 修复此错误的方法：
 
@@ -84,7 +83,7 @@ ms.locfileid: "39180420"
 
 4.  加载该 WCF 服务项目。
 
-5.  在中**Configuration Manager**对话框中，将**活动解决方案配置**到**调试**。 有关详细信息，请参阅[如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)。
+5.  在中**Configuration Manager**对话框中，将**活动解决方案配置**到**调试**。 有关更多信息，请参见[如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)。
 
 6.  在中**解决方案资源管理器**，选择的 WCF 服务项目。
 
@@ -96,7 +95,7 @@ ms.locfileid: "39180420"
 
 若要解决此错误，请禁用 RSS 源：
 
-1.  在 Internet Explorer 中，在**工具**菜单上，单击**Internet 选项**。
+1.  在 Internet Explorer 中，单击“工具”菜单中的“Internet 选项”。**
 
 2.  上**内容**选项卡上，在**馈送**部分中，单击**设置**。
 

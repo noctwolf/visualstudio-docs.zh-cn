@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManager::RemoveApplication |Microsoft 文档
+title: IMachineDebugManager::RemoveApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ee371ded11f38b5e049e236c92292d6f662f525
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3b9b4124429c1a303cd66f4ccbfad8aba46ef3ad
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728807"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097704"
 ---
 # <a name="imachinedebugmanagerremoveapplication"></a>IMachineDebugManager::RemoveApplication
-从运行中移除应用程序应用程序列表。  
+删除应用程序从正在运行的应用程序列表。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT RemoveApplication(  
    DWORD  dwAppCookie  
 );  
@@ -38,19 +38,19 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>参数  
  `dwAppCookie`  
- [in]应用程序已添加到应用程序列表时提供该 cookie。  
+ [in]应用程序已添加到应用程序列表时提供的 cookie。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 过程调试管理器调用此方法时`IProcessDebugManager::RemoveApplication`调用。  
+ 进程调试管理器调用此方法时`IProcessDebugManager::RemoveApplication`调用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)   
  [IMachineDebugManager 接口](../../winscript/reference/imachinedebugmanager-interface.md)   
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

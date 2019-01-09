@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::Attach |Microsoft 文档
+title: 'Idebugdocumenthelper:: Attach |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97ddb49f61e9df4044eb6e16b853e6cf8155162a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f0f397f70d994d0997163a06766d32c35e9b2ab7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726967"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090137"
 ---
 # <a name="idebugdocumenthelperattach"></a>IDebugDocumentHelper::Attach
-将此文档添加到文档树中。  
+将此文档添加到文档树。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT Attach(  
    IDebugDocumentHelper*  pddhParent  
 );  
@@ -38,7 +38,7 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>参数  
  `pddhParent`  
- [in]文档树会添加本文档的位置。 可能为 NULL。  
+ [in]本文档的将其添加在文档树。 可以为 NULL。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -48,8 +48,8 @@ HRESULT Attach(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法将此文档添加到文档树，使用`pddhParent`与父项。 如果`pddhParent`是`NULL`，本文档将顶级文档。  
+ 此方法将此文档添加到文档树、 使用`pddhParent`作为父级。 如果`pddhParent`是`NULL`，本文档将是顶级文档。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   
  [IDebugDocumentHelper 接口](../../winscript/reference/idebugdocumenthelper-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: ISetNextStatement::SetNextStatement |Microsoft 文档
+title: ISetNextStatement::SetNextStatement |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d21dafcd8cdb762e39f0cfcbde1162dd66c275ec
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2f21814d0739b304921108fcfdb3c3da80bee9b6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733877"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093114"
 ---
 # <a name="isetnextstatementsetnextstatement"></a>ISetNextStatement::SetNextStatement
-此方法将更新的脚本解释程序可以执行的下一步代码上下文。  
+此方法更新脚本解释器可以执行的下一步代码上下文。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT SetNextStatement(  
    IDebugStackFrame*  pStackFrame,  
    IDebugCodeContext*  pCodeContext  
@@ -40,7 +40,7 @@ HRESULT SetNextStatement(
  [in]指向堆栈帧对象的指针。  
   
  `pCodeContext`  
- [in]与代码的上下文对象的指针。  
+ [in]对代码上下文对象的指针。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -51,5 +51,5 @@ HRESULT SetNextStatement(
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ISetNextStatement 接口](../../winscript/reference/isetnextstatement-interface.md)

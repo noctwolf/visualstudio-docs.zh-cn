@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::AddGlobalExpressionContextProvider |Microsoft 文档
+title: IDebugApplication::AddGlobalExpressionContextProvider |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cf88dfac1d102ace3f132e7ab61265c704c0b18
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a17e952ef48041d8354753d27d7c40fef4599d55
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725377"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086822"
 ---
 # <a name="idebugapplicationaddglobalexpressioncontextprovider"></a>IDebugApplication::AddGlobalExpressionContextProvider
-添加到此应用程序全局表达式上下文提供程序。  
+将全局表达式上下文提供程序添加到此应用程序。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT AddGlobalExpressionContextProvider(  
    IProvideExpressionContexts*  pdsfs,  
    DWORD_PTR*                   pdwCookie  
@@ -52,8 +52,8 @@ HRESULT AddGlobalExpressionContextProvider(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法添加到此应用程序全局表达式上下文提供程序。  
+ 此方法将全局表达式上下文提供程序添加到此应用程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugApplication::RemoveGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-removeglobalexpressioncontextprovider.md)

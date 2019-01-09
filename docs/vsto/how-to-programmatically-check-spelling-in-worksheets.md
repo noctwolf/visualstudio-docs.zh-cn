@@ -10,17 +10,17 @@ helpviewer_keywords:
 - spelling checker, worksheets
 - worksheets, checking spelling
 - spelling, checking in worksheets
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea589f30c026ddf946cb43811818b54d3df9b2e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1aa881034458405babbe7777e1d5c689ed1b05c9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899965"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090501"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>如何：以编程方式检查工作表中的拼写
   可以通过编程方式在工作表中检查单词的拼写。 如果工作表中存在任何拼写错误的单词，则“拼写”  对话框会自动出现。  

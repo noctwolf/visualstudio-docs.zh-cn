@@ -1,5 +1,5 @@
 ---
-title: 'Iactivescriptprofilercallback3:: Setwebworkerid 方法 |Microsoft 文档'
+title: IActiveScriptProfilerCallback3::SetWebWorkerId 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,25 +12,25 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 426767b8d4d23964d6bfaa7102ee53b550e7ab9b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f4025dbee7b8b5b246163a1919aec335a8863937
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724607"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094428"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId 方法
-通知探查器有关要用于此分析会话的辅助 ID。 如果函数不在页的上下文中执行的则不会调用此方法。 值`webWorkerId`对于每个工作进程，从 1 开始的 1 为增量。 ID 值不应是稳定超出会话，并且仅对辅助进程已创建的顺序对应。  
+通知事件探查器关于要使用此分析会话的辅助 ID。 如果该函数不在页面的上下文中执行的则不调用此方法。 值`webWorkerId`每个辅助角色，从 1 开始的 1 为增量。 ID 值不应保持不变超过一个会话，并仅对辅助角色已创建的顺序相对应。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT SetWebWorkerId([in] DWORD webWorkerId);  
 ```  
   
 #### <a name="parameters"></a>参数  
  `webWorkerId`  
- Web 辅助进程 id。  
+ Web 工作线程 id。  
   
 ## <a name="return-value"></a>返回值  
- 通过脚本引擎忽略此方法的返回值。
+ 此方法的返回值是脚本引擎忽略。

@@ -1,5 +1,5 @@
 ---
-title: SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND 枚举 |Microsoft 文档
+title: SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND 枚举 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fe5b308ea75956d9e5826b4daadaef3a823141f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 997c5149467591a7612e6ff10b0efcc3efbc91bf
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734147"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087797"
 ---
 # <a name="scripterrordebugexceptionthrownkind-enumeration"></a>SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND 枚举
 显示已引发异常的类型。 此枚举由[IActiveScriptErrorDebug110::GetExceptionThrownKind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md)方法。  
@@ -27,7 +27,7 @@ ms.locfileid: "24734147"
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 typedef SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND  
 ```  
   
@@ -39,5 +39,5 @@ typedef SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND
 |ETK_USER_UNHANDLED|0x00000001|此异常未在用户代码中进行处理。|  
 |ETK_UNHANDLED|0x00000002|此异常未在代码中进行处理。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptErrorDebug110 接口](../../winscript/reference/iactivescripterrordebug110-interface.md)

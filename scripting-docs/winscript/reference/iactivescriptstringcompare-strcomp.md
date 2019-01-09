@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare::StrComp |Microsoft 文档
+title: IActiveScriptStringCompare::StrComp |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b92b29f4e40f5e8de567337957aabbcb3c057fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b2fea6ae4d5819680f38d19f2cd6ea1cf9bf9b5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725067"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090098"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
 定义脚本引擎的字符串比较方法。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT StrComp(  
 // The first string:  
     [in] BSTR bszStr1,    
@@ -49,22 +49,22 @@ HRESULT StrComp(
  第二个字符串。  
   
  `iRet`  
- 比较的结果。 0 如果`bszStr1`和`bszStr2`是相同的; 则为-1 `bszStr1`  <  `bszStr2`; 如果`bszStr1`  >  `bszStr2`。  
+ 比较的结果。 0`bszStr1`并`bszStr2`完全相同; 如果`bszStr1`  <  `bszStr2`; 1，如果`bszStr1`  >  `bszStr2`。  
   
 ## <a name="return-value"></a>返回值  
- 返回下列值之一：  
+ 返回以下值之一：  
   
 |返回值|含义|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|自变量无效。|  
-|`E_UNEXPECTED`|不应调用 （例如，脚本引擎具有尚未加载或初始化）。|  
+|`E_UNEXPECTED`|不应在调用 （例如，脚本引擎具有尚未加载或初始化）。|  
   
 ## <a name="remarks"></a>备注  
- 执行字符串比较每次调用此方法。  
+ 此方法是执行字符串比较每次调用。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何重载的字符串比较函数。 当你使用重载允许[IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)设置 SCRIPTPROP_STRINGCOMPAREINSTANCE。  
+ 下面的示例演示如何重载的字符串比较函数。 当您使用重载允许[IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)设置 SCRIPTPROP_STRINGCOMPAREINSTANCE。  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  
@@ -101,5 +101,5 @@ interface IActiveScriptStringCompare : IUnknown
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptStringCompare 接口](../../winscript/reference/iactivescriptstringcompare-interface.md)

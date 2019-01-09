@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], checking spelling
 - spelling checker, documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d300d51d6c244623ff330c5fa443c6a332d6c3f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19dc596851ba8ca8b2ea3ef50e7d151220354e3b
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942903"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087758"
 ---
 # <a name="how-to-programmatically-check-spelling-in-documents"></a>如何：以编程方式检查文档中的拼写
   若要检查文档中的拼写错误，请使用<xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A>方法。 此方法返回一个布尔值，该值指示所提供的参数是否拼写正确。  

@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptSite |Microsoft 文档
+title: 'Iactivescript:: Setscriptsite |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11fa9003abb03c42adcbf3a548bb5b90d763a344
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b2a96732e904c7249dc5228ef414c3315012ec56
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645567"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097430"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
-通知的脚本引擎[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)主机提供的接口站点。 调用此方法之前任何其他[IActiveScript](../../winscript/reference/iactivescript.md)使用接口方法。  
+通知的脚本引擎[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)接口由主机提供的站点。 任何其他之前调用此方法[IActiveScript](../../winscript/reference/iactivescript.md)使用接口方法。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT SetScriptSite(  
     IActiveScriptSite *pScriptSite  // address of host script site  
 );  
@@ -38,18 +38,18 @@ HRESULT SetScriptSite(
   
 #### <a name="parameters"></a>参数  
  `pScriptSite`  
- [in]要与脚本引擎的此实例相关联的主机提供的脚本站点的地址。 站点必须唯一地分配给此脚本的引擎实例;它不能与其他脚本引擎中共享。  
+ [in]要与脚本引擎的此实例相关联的主机提供的脚本站点地址。 站点必须唯一地分配给此脚本的引擎实例;它不能与其他脚本引擎共享。  
   
 ## <a name="return-value"></a>返回值  
- 返回下列值之一：  
+ 返回以下值之一：  
   
 |返回值|含义|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
-|`E_FAIL`|出现未知的错误;脚本引擎无法完成初始化站点。|  
-|`E_INVALIDARG`|自变量无效。|  
+|`E_FAIL`|出现未知的错误;脚本引擎无法完成正在初始化站点。|  
+|`E_INVALIDARG`|参数无效。|  
 |`E_POINTER`|指定了无效的指针。|  
-|`E_UNEXPECTED`|不应调用 （例如，已设置站点）。|  
+|`E_UNEXPECTED`|不应在调用 （例如，已设置站点）。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScript](../../winscript/reference/iactivescript.md)

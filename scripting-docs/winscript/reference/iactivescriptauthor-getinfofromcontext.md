@@ -18,19 +18,19 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3465552b99b2185ea475c5479f044ee7b27704ae
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2d32e2864f42fa9a2bfc30cfe83da7d4e021dfd0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281242"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088863"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 返回类型的代码块中的信息和给定的字符的定位点位置。 IntelliSense、 全局列表和参数的提示，这提供有关成员的信息。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetInfoFromContext(  
    LPCOLESTR  pszCode,  
    ULONG      cchCode,  
@@ -58,7 +58,7 @@ HRESULT GetInfoFromContext(
  `dwListTypesRequested`  
  [in]请求列表类型。 可以是以下值的组合：  
   
-|返回的常量|“值”|描述|  
+|返回的常量|值|描述|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_NOLIST|0x0000|没有列表。|  
 |SCRIPT_CMPL_MEMBERLIST|0x0001|成员的列表。|  
@@ -97,7 +97,7 @@ HRESULT GetInfoFromContext(
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

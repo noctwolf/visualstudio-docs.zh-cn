@@ -20,19 +20,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7c4b71938d960d3825030c42e965b6510ca575b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 82ba1488692f8e8b59063b8f9a52b0682d27e7f8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802519"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096442"
 ---
 # <a name="return-statement-outside-of-function"></a>“return”语句在函数之外
 您使用`return`全局作用域中的代码的语句。 `return`语句应仅出现在函数体。  
   
- 调用的函数`()`运算符是一个表达式。 所有表达式都具有值;`return`语句用于指定函数所返回的值。 常规形式为：  
+ 调用的函数`()`运算符是一个表达式。 所有表达式都具有值;`return`语句用于指定函数返回的值。 常规形式为：  
   
-```  
+```js
   
 return [ expression ];  
 ```  

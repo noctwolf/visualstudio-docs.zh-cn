@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetFileName |Microsoft 文档
+title: IDebugDocumentHost::GetFileName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 909c431a389a2589d48b6228534b16675ea41383
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 55b3518b6d73793df712ed9deccb5e27c320a9d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726127"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097144"
 ---
 # <a name="idebugdocumenthostgetfilename"></a>IDebugDocumentHost::GetFileName
 返回不包含路径信息的文档的名称。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetFileName(  
    BSTR*  pbstrShortName  
 );  
@@ -48,7 +48,7 @@ HRESULT GetFileName(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法返回文档不包含路径信息的短的名称。 短名称通常使用在情况下如**另存为...** 对话框。  
+ 此方法返回文档不包含路径信息的短的名称。 短名称通常使用情况如**另存为...** 对话框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentHost 接口](../../winscript/reference/idebugdocumenthost-interface.md)

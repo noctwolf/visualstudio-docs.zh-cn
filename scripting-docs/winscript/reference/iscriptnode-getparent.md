@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetParent |Microsoft 文档
+title: IScriptNode::GetParent |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1da2f68de40a66b98b97ab7c7eb1d63748f1e07a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b45fc7be1a5178e952fefcd794171410d149a1f4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733637"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090020"
 ---
 # <a name="iscriptnodegetparent"></a>IScriptNode::GetParent
-返回`IScriptNode`是对象的父级的对象。  
+返回`IScriptNode`是父对象的对象。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetParent(  
    IScriptNode       **ppsnParent  
 );  
@@ -38,7 +38,7 @@ HRESULT GetParent(
   
 #### <a name="parameters"></a>参数  
  `ppsnParent`  
- [out]接收指向的变量的地址`IScriptNode`接口的父实例。  
+ [out]一个变量来接收指向指针的地址`IScriptNode`接口的父实例。  
   
  如果类实现`IScriptEntry`或`IScriptScriptlet`、`IScriptNode`返回对象。  
   
@@ -53,5 +53,5 @@ HRESULT GetParent(
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IScriptNode 接口](../../winscript/reference/iscriptnode-interface.md)

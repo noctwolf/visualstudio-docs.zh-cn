@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_baseDataOffset |Microsoft 文档
-ms.custom: ''
+title: IDiaSymbol::get_baseDataOffset |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 014c90f32a5d46f7d3937953ee0683be7d8c968b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 0db92804ac10a011bcb7697da5e8899406295acb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461250"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923882"
 ---
 # <a name="idiasymbolgetbasedataoffset"></a>IDiaSymbol::get_baseDataOffset
 检索基本数据偏移量。  
@@ -31,7 +29,7 @@ HRESULT get_baseDataOffset(
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]指向的指针`DWORD`，保存的基本数据偏移量。  
+ [out]一个指向`DWORD`，它持有的基本数据偏移量。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  

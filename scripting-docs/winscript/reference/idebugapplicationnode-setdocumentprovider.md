@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::SetDocumentProvider |Microsoft 文档
+title: IDebugApplicationNode::SetDocumentProvider |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95c80bf04c129b2410b97b2e01861a1007457239
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 135f5603513905fdc00aa7d720b9d8cc6703cb0f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725467"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096156"
 ---
 # <a name="idebugapplicationnodesetdocumentprovider"></a>IDebugApplicationNode::SetDocumentProvider
 设置此应用程序节点的文档提供程序。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT SetDocumentProvider(  
    IDebugDocumentProvider*  pddp  
 );  
@@ -50,5 +50,5 @@ HRESULT SetDocumentProvider(
 ## <a name="remarks"></a>备注  
  此方法设置此应用程序节点的文档提供程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplicationNode 接口](../../winscript/reference/idebugapplicationnode-interface.md)

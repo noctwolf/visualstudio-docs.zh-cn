@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::HandleBreakPoint |Microsoft 文档
+title: IDebugApplication::HandleBreakPoint |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16b05533c566cb90529766d81fb7197dbc284664
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0478d0154ee79c1781885b94ae342e421e61e5e1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726137"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095363"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
-导致当前线程阻塞，并将断点的通知发送到调试器 IDE。  
+导致当前线程被阻塞，并将断点的通知发送到调试器 IDE。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT HandleBreakPoint(  
    BREAKREASON         br,  
    BREAKRESUMEACTION*  pbra  
@@ -42,7 +42,7 @@ HRESULT HandleBreakPoint(
  [in]为中断的原因。  
   
  `pbra`  
- [out]当在调试器恢复应用程序时要执行的操作。  
+ [out]在调试器恢复应用程序时要执行的操作。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -52,14 +52,14 @@ HRESULT HandleBreakPoint(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 语言引擎命中断点的线程的上下文中调用此方法。 此方法阻止当前线程，并将断点通知发送到调试器 IDE。 如果调试器恢复应用程序，`pbra`参数指定要执行的操作。  
+ 语言引擎遇到断点的线程的上下文中调用此方法。 此方法阻止当前线程，并将断点通知发送到调试器 IDE。 当调试器继续应用程序，`pbra`参数指定要执行的操作。  
   
 > [!NOTE]
->  语言引擎可能调用线程执行任务，如枚举堆栈帧或在断点过程中计算表达式。  
+>  语言引擎不调用由线程执行任务，例如枚举堆栈帧中，或者在该断点的表达式进行计算。  
   
- 此方法使`IApplicationDebugger::onHandleBreakPoint`调用。  
+ 此方法将导致`IApplicationDebugger::onHandleBreakPoint`调用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)   
  [IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)   
  [BREAKREASON 枚举](../../winscript/reference/breakreason-enumeration.md)   

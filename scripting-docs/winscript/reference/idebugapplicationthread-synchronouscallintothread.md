@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::SynchronousCallIntoThread |Microsoft 文档
+title: IDebugApplicationThread::SynchronousCallIntoThread |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdeb57380975f19424f8b7da783846b5aae976ed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e5e25f42b2bce66cf3bb7ab3e69d3711e2526ae1
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726457"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097053"
 ---
 # <a name="idebugapplicationthreadsynchronouscallintothread"></a>IDebugApplicationThread::SynchronousCallIntoThread
-提供了为使调用方在应用程序线程中运行代码的机制。  
+提供了为使调用方应用程序线程中运行代码的机制。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT SynchronousCallIntoThread(  
    IDebugThreadCall*  pstcb,  
    DWORD_PTR          dwParam1,  
@@ -62,6 +62,6 @@ HRESULT SynchronousCallIntoThread(
 ## <a name="remarks"></a>备注  
  此方法提供了为使调用方在调试器线程中运行代码的机制。 语言引擎和主机通常使用此方法以实现基于其单个线程实现自由线程对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplicationThread 接口](../../winscript/reference/idebugapplicationthread-interface.md)   
  [IDebugThreadCall 接口](../../winscript/reference/idebugthreadcall-interface.md)

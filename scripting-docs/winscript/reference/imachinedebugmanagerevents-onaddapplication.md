@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerEvents::onAddApplication |Microsoft 文档
+title: IMachineDebugManagerEvents::onAddApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 887ce7f723713c335d72a6353c20765c7b695031
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 613461eada0113592ccb356374d70be4da626481
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729077"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086640"
 ---
 # <a name="imachinedebugmanagereventsonaddapplication"></a>IMachineDebugManagerEvents::onAddApplication
-处理事件时应用程序添加到运行应用程序列表。  
+处理事件时应用程序添加到正在运行的应用程序列表。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT onAddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwAppCookie  
@@ -39,21 +39,21 @@ HRESULT onAddApplication(
   
 #### <a name="parameters"></a>参数  
  `pda`  
- [in]已添加到运行的应用程序应用程序列表。  
+ [in]已添加到正在运行的应用程序的应用程序列表。  
   
  `dwAppCookie`  
- [in]应用程序已添加到应用程序列表时提供该 cookie。  
+ [in]应用程序已添加到应用程序列表时提供的 cookie。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法指示应用程序已添加到运行应用程序列表。  
+ 此方法指示应用程序已添加到正在运行的应用程序列表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IMachineDebugManagerEvents 接口](../../winscript/reference/imachinedebugmanagerevents-interface.md)   
  [IMachineDebugManagerEvents::onRemoveApplication](../../winscript/reference/imachinedebugmanagerevents-onremoveapplication.md)

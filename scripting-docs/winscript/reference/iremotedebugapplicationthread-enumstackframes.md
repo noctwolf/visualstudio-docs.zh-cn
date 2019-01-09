@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::EnumStackFrames |Microsoft 文档
+title: IRemoteDebugApplicationThread::EnumStackFrames |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c754ce92a342163acc07b69c097af5df4c226cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 20abe2c10a0959f00e67d98ac405b74c35a0c032
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729007"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093259"
 ---
 # <a name="iremotedebugapplicationthreadenumstackframes"></a>IRemoteDebugApplicationThread::EnumStackFrames
-返回与此线程的堆栈帧的枚举数。  
+返回与此线程的堆栈帧的枚举器。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -38,7 +38,7 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>参数  
  `ppedsf`  
- [out]与此线程的堆栈帧枚举数。  
+ [out]与此线程的堆栈帧的一个枚举器。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -48,7 +48,7 @@ HRESULT EnumStackFrames(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 在断点，必须从调用此方法。 堆栈帧枚举器应返回堆栈顶部开始的帧开头最近入栈的帧。  
+ 断点中，必须从调用此方法。 堆栈帧枚举器应返回的帧的堆栈顶部开始从最新入栈帧开始。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IRemoteDebugApplicationThread 接口](../../winscript/reference/iremotedebugapplicationthread-interface.md)

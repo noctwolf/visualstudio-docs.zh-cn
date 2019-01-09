@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl3 接口 |Microsoft 文档
+title: IActiveScriptProfilerControl3 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,22 +12,22 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eed00579acfb09217183a1dd1d858a1e99257a2c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bebe351608b3136ac00a059bffab3535141e7fca
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724447"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097131"
 ---
 # <a name="iactivescriptprofilercontrol3-interface"></a>IActiveScriptProfilerControl3 接口
-提供对与脚本引擎关联的 GC 堆对象进行枚举的方法。  
+提供的方法来枚举与脚本引擎关联的 GC 堆对象。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 interface IActiveScriptProfilerControl3 : IActiveScriptProfilerControl2  
 ```  
   
 ## <a name="methods"></a>方法  
  [IActiveScriptProfilerControl3::EnumHeap 方法](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)  
- 返回一个接口 ([IActiveScriptProfilerHeapEnum 接口](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) 可用来循环访问的关联的脚本引擎的上下文中的 GC 堆对象。
+ 返回的接口 ([IActiveScriptProfilerHeapEnum 接口](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) 可用于循环访问关联的脚本引擎的上下文中的 GC 堆对象。

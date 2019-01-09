@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugprocess:: Performasyncbreak 方法 |Microsoft 文档'
+title: 'Ijsdebugprocess:: Performasyncbreak 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e2d3ad50c1be5da0f4e93748227933d5f1ffd92
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a614bbfdde117ba223ca3f8f3d8b9b77c44c4393
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728087"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089136"
 ---
 # <a name="ijsdebugprocessperformasyncbreak-method"></a>IJsDebugProcess::PerformAsyncBreak 方法
-在中断模式下导致它执行中断下一个脚本指令将脚本引擎。  
+将脚本引擎放入中断模式会导致它为在下一个脚本指令发生中断。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT PerformAsyncBreak(  
    DWORD threadId  
 );  
@@ -43,5 +43,5 @@ HRESULT PerformAsyncBreak(
 ## <a name="requirements"></a>要求  
  **标头：** jscript9diag.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IJsDebugProcess 接口](../../winscript/reference/ijsdebugprocess-interface.md)

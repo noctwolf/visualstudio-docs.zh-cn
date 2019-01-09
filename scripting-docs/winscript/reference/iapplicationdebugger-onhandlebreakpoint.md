@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onHandleBreakPoint |Microsoft 文档
+title: IApplicationDebugger::onHandleBreakPoint |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3be067d3b8c3e3268ac2caf1614b70efff6f665
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ebcb24b437b2c77f0dc76f5e753974c8dd299d17
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725297"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090566"
 ---
 # <a name="iapplicationdebuggeronhandlebreakpoint"></a>IApplicationDebugger::onHandleBreakPoint
 处理断点事件。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT onHandleBreakPoint(  
    IRemoteDebugApplicationThread*  prpt,  
    BREAKREASON                     br,  
@@ -43,7 +43,7 @@ HRESULT onHandleBreakPoint(
  [in]断点发生的位置中的线程。  
   
  `br`  
- [in]断点的原因。  
+ [in]该断点的原因。  
   
  `pError`  
  [in]运行时错误信息时提供的值`br`是会发生 BREAKREASON_ERROR。  
@@ -58,9 +58,9 @@ HRESULT onHandleBreakPoint(
 ## <a name="remarks"></a>备注  
  命中断点时调用此方法和`IDebugApplication::HandleBreakPoint`调用。  
   
- 应用程序将仍挂起，直到调试器 IDE 调用`IRemoteDebugApplication::ResumeFromBreakPoint`。  
+ 调试器 IDE 调用之前，应用程序将保持挂起`IRemoteDebugApplication::ResumeFromBreakPoint`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IApplicationDebugger 接口](../../winscript/reference/iapplicationdebugger-interface.md)   
  [IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
  [IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   

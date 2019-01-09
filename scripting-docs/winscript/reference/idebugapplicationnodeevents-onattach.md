@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAttach |Microsoft 文档
+title: IDebugApplicationNodeEvents::onAttach |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a45fff15ce4f7faf6cf8714cbf01289e69f67691
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85147e667f4e83698e23792a43020641974482a6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725957"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091255"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-处理表明调试应用程序节点对象已附加到父节点的事件。  
+处理以表明调试应用程序节点对象已附加到父节点的事件。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT onAttach(  
    IDebugApplicationNode*  prddpParent  
 );  
@@ -38,7 +38,7 @@ HRESULT onAttach(
   
 #### <a name="parameters"></a>参数  
  `prddpParent`  
- [in]调试应用程序节点是节点的父级。  
+ [in]调试应用程序节点的此节点的父级。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -50,9 +50,9 @@ HRESULT onAttach(
 ## <a name="remarks"></a>备注  
  此方法处理表明调试应用程序节点对象已附加到父节点的事件。  
   
- 实现者`IDebugApplicationNode`接口引发此事件。  
+ 实施者`IDebugApplicationNode`接口引发此事件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplicationNodeEvents 接口](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
  [IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)   
  [IDebugApplicationNode 接口](../../winscript/reference/idebugapplicationnode-interface.md)

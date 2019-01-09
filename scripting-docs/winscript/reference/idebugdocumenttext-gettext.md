@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetText |Microsoft 文档
+title: IDebugDocumentText::GetText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a1006304974fab4959ad6313ffdc26793cdd345
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 77cc255bcd04754cbfde4638b67a85f6fdc0a922
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728077"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091983"
 ---
 # <a name="idebugdocumenttextgettext"></a>IDebugDocumentText::GetText
-检索字符和/或与字符位置范围关联的字符属性。  
+检索字符和/或字符位置范围与关联的字符属性。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetText(  
    ULONG              cCharacterPosition,  
    WCHAR*             pcharText,  
@@ -42,30 +42,30 @@ HRESULT GetText(
   
 #### <a name="parameters"></a>参数  
  `cCharacterPosition`  
- [in]启动范围内的字符位置的位置。  
+ [in]开始位置范围内的字符位置。  
   
  `pcharText`  
- [在中，out]字符文本缓冲区。 缓冲区必须大到足以保留`cMaxChars`字符。 如果此参数为 NULL，则该方法不返回字符。  
+ [in、 out]字符文本缓冲区。 缓冲区必须足够大以保存`cMaxChars`字符。 如果此参数为 NULL，则该方法不返回字符。  
   
  `pstaTextAttr`  
- [在中，out]字符属性缓冲区。 缓冲区必须大到足以保留`cMaxChars`字符。 如果此参数为 NULL，则该方法不返回属性。  
+ [in、 out]字符属性缓冲区。 缓冲区必须足够大以保存`cMaxChars`字符。 如果此参数为 NULL，则该方法不返回特性。  
   
  `pcNumChars`  
- [在中，out]返回字符/属性数。 此参数必须设置为零之前调用此方法。  
+ [in、 out]返回字符/属性数。 此参数必须设置为零之前调用此方法。  
   
  `cMaxChars`  
- [in]字符位置范围中的字符数。 此外指定要返回字符最大的数量。  
+ [in]中的字符位置范围的字符数。 此外指定要返回字符最大的数目。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法检索字符和/或与字符位置范围关联的字符属性。 字符位置范围被指定字符位置和的字符数。  
+ 此方法检索字符和/或字符位置范围与关联的字符属性。 字符位置范围被指定字符位置和字符数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentText 接口](../../winscript/reference/idebugdocumenttext-interface.md)   
  [SOURCE_TEXT_ATTR 枚举](../../winscript/reference/source-text-attr-enumeration.md)

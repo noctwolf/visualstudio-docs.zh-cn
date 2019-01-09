@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetScriptBlockInfo |Microsoft 文档
+title: IDebugDocumentHelper::GetScriptBlockInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7e8dc63b8419424ed3fa01f67d3e77f0bc2b57f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fd12aff51c661c2ba5af9ef909bfa481d22101d6
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726207"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095285"
 ---
 # <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
-检索字符和对应于一个脚本块的脚本引擎的范围内。  
+检索一的系列字符和对应的脚本块的脚本引擎。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetScriptBlockInfo(  
    DWORD_PTR        dwSourceContext,  
    IActiveScript**  ppasd,  
@@ -44,10 +44,10 @@ HRESULT GetScriptBlockInfo(
  [in]脚本块的源上下文。  
   
  `ppasd`  
- [out]此脚本块与脚本引擎。  
+ [out]此脚本块的脚本引擎。  
   
  `piCharPos`  
- [out]脚本块的起始位置。  
+ [out]脚本块的开始位置。  
   
  `cChars`  
  [out]脚本块中的字符数。  
@@ -60,7 +60,7 @@ HRESULT GetScriptBlockInfo(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法检索字符和对应于一个脚本块的脚本引擎的范围内。  
+ 此方法检索一的系列字符和对应的脚本块的脚本引擎。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentHelper 接口](../../winscript/reference/idebugdocumenthelper-interface.md)

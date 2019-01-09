@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetName |Microsoft 文档
+title: IScriptEntry::GetName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc518e87414d051e9b1393b60b5874a0204b78b2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c388340c35afe2ae7e5e7d0f5078e70b46c0b1bc
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729547"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090878"
 ---
 # <a name="iscriptentrygetname"></a>IScriptEntry::GetName
-对于表示单个对象 （如函数） 的条目，返回对象的名称。  
+对于表示单个对象 （如某个函数） 的条目，返回的对象的名称。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetName(  
    BSTR               *pbstr  
 );  
@@ -40,17 +40,17 @@ HRESULT GetName(
  `pbstr`  
  [out]所表示的对象的名称`IScriptEntry`脚本块。 如果输入不表示单个对象，则返回 NULL。  
   
- 子项表示单个函数对象。  
+ 子条目都代表一个函数对象。  
   
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IScriptEntry 接口](../../winscript/reference/iscriptentry-interface.md)   
- [IScriptNode:: CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)
+ [IScriptNode::CreateChildEntry](../../winscript/reference/iscriptnode-createchildentry.md)

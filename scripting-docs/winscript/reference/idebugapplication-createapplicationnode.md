@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::CreateApplicationNode |Microsoft 文档
+title: IDebugApplication::CreateApplicationNode |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26ed66921175659d7125a0e32a043e7ebcf98cc6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 71aea5c3a7efb6534daab5fc916187c0f56122b3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725247"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095545"
 ---
 # <a name="idebugapplicationcreateapplicationnode"></a>IDebugApplication::CreateApplicationNode
 创建一个新的应用程序节点与特定文档提供程序相关联。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT CreateApplicationNode(  
    IDebugApplicationNode**  ppdanNew  
 );  
@@ -48,7 +48,7 @@ HRESULT CreateApplicationNode(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 新的应用程序节点不可见，直到将其附加到父节点。  
+ 新的应用程序节点不可见，直到它附加到父节点。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)

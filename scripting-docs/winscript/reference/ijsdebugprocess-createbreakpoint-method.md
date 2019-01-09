@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugprocess:: Createbreakpoint 方法 |Microsoft 文档'
+title: 'Ijsdebugprocess:: Createbreakpoint 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10d734f32d092d341dbb1b02a5cc7a0c127223a4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 661e584133f4ec3c4e571d157a63844c5b1145b7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728117"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097560"
 ---
 # <a name="ijsdebugprocesscreatebreakpoint-method"></a>IJsDebugProcess::CreateBreakPoint 方法
-将指定的文档位置设置断点。  
+将指定的文档位置处设置断点。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT CreateBreakPoint(  
    UINT64 documentId,  
    DWORD characterOffset,  
@@ -40,10 +40,10 @@ HRESULT CreateBreakPoint(
   
 #### <a name="parameters"></a>参数  
  `documentId`  
- [in]指向 IDebugDocumentText 指针。  
+ [in]指针指向 IDebugDocumentText。  
   
  `characterOffset`  
- [in]字符相对于文件的开头的偏移量。  
+ [in]从文件开头的字符偏移量。  
   
  `characterCount`  
  [in]应在其中插入断点文档文本的长度。  
@@ -52,12 +52,12 @@ HRESULT CreateBreakPoint(
  [in]指定是否启用断点。  
   
  `ppDebugBreakPoint`  
- [out]表示已创建的断点对象。  
+ [out]表示已创建的断点的对象。  
   
 ## <a name="return-value"></a>返回值  
   
 ## <a name="requirements"></a>要求  
  **标头：** jscript9diag.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IJsDebugProcess 接口](../../winscript/reference/ijsdebugprocess-interface.md)
