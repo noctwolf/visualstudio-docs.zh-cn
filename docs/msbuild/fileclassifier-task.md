@@ -1,8 +1,6 @@
 ---
 title: FileClassifier 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -19,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eea3fbb882a2ed2b8036b6fe5bbb280d99c0f270
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e14ff5857676746c630bc8a7187571d3adb8f4e8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177028"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820756"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 任务
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> 任务将一组源资源分类为将嵌入到程序集的源资源。 如果资源不可本地化，则将其嵌入主应用程序程序集；否则，将其嵌入附属程序集。  
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`CLREmbeddedResource`|未使用。|  
 |`CLRResourceFiles`|未使用。|  

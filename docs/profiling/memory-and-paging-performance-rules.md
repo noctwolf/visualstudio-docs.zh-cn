@@ -1,8 +1,6 @@
 ---
 title: 内存和分页性能规则 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: f37972b2-efe4-4a1c-a5d1-a246ccd76817
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec1acb6763d408f9f13ec3044e2cd8137d34e634
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: 572e645ea83d2523b7af0d867de07e758577882b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988736"
 ---
 # <a name="memory-and-paging-performance-rules"></a>内存和分页性能规则
 内存和分页类别中的性能规则确定在分析运行期间能影响应用程序性能和响应能力的分页活动。  
