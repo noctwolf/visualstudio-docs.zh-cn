@@ -1,8 +1,6 @@
 ---
 title: CreateVisualBasicManifestResourceName 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4c4c4e93f157ef88452a7108e595dc7cd9a9ccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 948b27aa9e2b800929d9f507535aee1395d45344
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871221"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName 任务
 根据给定的 .resx 文件名或其他资源创建 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 样式的清单名称。  
@@ -32,7 +30,7 @@ ms.locfileid: "49849471"
  下表描述 [CreateVisualBasicManifestResourceName 任务](../msbuild/createvisualbasicmanifestresourcename-task.md)的参数。  
 
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 | - | - |
 | `ManifestResourceNames` | <xref:Microsoft.Build.Framework.ITaskItem> `[]` 输出只读参数。<br /><br /> 生成的清单名称。 |
 | `ResourceFiles` | 必选 `String` 参数。<br /><br /> 从中创建 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 清单名称的资源文件名称。 |

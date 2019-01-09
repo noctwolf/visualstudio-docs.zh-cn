@@ -1,8 +1,6 @@
 ---
 title: .NET 内存“分配”视图 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a473a7c6758fe58c82f8894822d3a250165a43
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f866eba741dd84286bc969e64b8c36068c824a90
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933672"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895540"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 内存分配视图
 “分配”视图列出在分析运行期间创建的类型。 每个类型都是一个调用树的根节点，该调用树显示导致分配该类型的函数执行路径。  
@@ -40,7 +38,7 @@ ms.locfileid: "49933672"
   
 -   若要显示最活跃的路径，请右键单击类型或函数，再单击“展开热路径”。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**名称**|已分配类型或函数的名称。|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  

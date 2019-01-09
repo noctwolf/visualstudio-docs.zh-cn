@@ -1,8 +1,6 @@
 ---
 title: .NET Framework 目标错误疑难解答 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: troubleshooting
 f1_keywords:
 - vs.FrameworkTargetingErrors
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e97a5d77fe5305e4cfe879ea82b9397e5e8babef
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 44be4be33f0aa951b00f9237903ddcbf2c415309
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739881"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893605"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>.NET Framework 目标错误疑难解答
 本主题介绍可能由引用问题导致的 MSBuild 错误以及解决这些错误的方法。
