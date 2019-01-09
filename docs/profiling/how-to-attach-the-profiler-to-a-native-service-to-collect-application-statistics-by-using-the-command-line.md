@@ -1,8 +1,6 @@
 ---
 title: 如何：将探查器附加到本机服务，以使用命令行收集应用程序统计信息 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: f783817f-77a0-4eb8-985b-ec3b77eadc42
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf21bb9ba2c2b0747a94fbfbfbb0c03e222337a6
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: e58bec5034e5a75d2d5ded45a1557b8ea9119f76
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592711"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882956"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：将探查器附加到本机服务，以使用命令行收集应用程序统计信息
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加本机服务，以及如何使用采样方法收集性能统计信息。  
@@ -97,7 +95,7 @@ ms.locfileid: "53592711"
 
     -   停止服务。  
 
-         - 或 -  
+         或  
 
     -   键入 **VSPerfCmd /detach**  
 

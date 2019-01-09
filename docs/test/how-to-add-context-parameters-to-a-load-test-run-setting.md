@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: cefa93a6f65b4b84b4ece5a4eb428d909dd0596d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 378fc29fa7f867eee1be9e30e58c80149d1ed835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898383"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：向负载测试运行设置中添加上下文参数
 
@@ -62,7 +61,7 @@ ms.locfileid: "53048484"
 
      一个新上下文参数将添加到负载测试树中“运行设置”文件夹的“上下文参数”文件夹。
 
-     - 或 -
+     或
 
      如果运行设置已经包含“上下文参数”文件夹，则可以右键单击该文件夹，然后选择“添加上下文参数”。
 

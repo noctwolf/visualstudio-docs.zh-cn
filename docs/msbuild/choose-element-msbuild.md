@@ -1,8 +1,6 @@
 ---
 title: Choose 元素 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Choose
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7847f8b1dbea5ac5dbd2f9c1ed492c9172e539b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 227cf3ff0f065c535da10d23363044f33972a28e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53823255"
 ---
 # <a name="choose-element-msbuild"></a>Choose 元素 (MSBuild)
 评估子元素，选择一组 `ItemGroup` 元素和/或 `PropertyGroup` 元素进行评估。  
@@ -57,14 +55,14 @@ ms.locfileid: "49895465"
 
 ### <a name="child-elements"></a>子元素  
 
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|可选元素。<br /><br /> 当所有 `When` 元素的条件的计算结果为 `false` 时，指定要计算的代码块 `PropertyGroup` 和 `ItemGroup` 元素。 `Choose` 元素中可能没有或只有一个 `Otherwise` 元素，并且它必须是最后一个元素。|  
 |[When](../msbuild/when-element-msbuild.md)|必需的元素。<br /><br /> 指定一个可能的代码块供 `Choose` 元素选择。 `Choose` 元素中可能有一个或多个 `When` 元素。|  
 
 ### <a name="parent-elements"></a>父元素  
 
-| 元素 | 描述 |
+| 元素 | 说明 |
 | - | - |
 | [Otherwise](../msbuild/otherwise-element-msbuild.md) | 当所有 `When` 元素的条件的计算结果为 `false` 时，指定要执行的代码块。 |
 | [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。 |

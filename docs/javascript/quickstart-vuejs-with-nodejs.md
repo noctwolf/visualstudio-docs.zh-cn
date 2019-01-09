@@ -4,7 +4,6 @@ description: 在此快速入门中，将使用针对 Visual Studio 的 Node.js �
 ms.custom: seodec18
 ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-nodejs
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -15,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4f346f75078ff513dbbb91230d564686d6a1e023
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: 61554a784c5e3f2abaa8987116854893408b2ded
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853887"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入门：使用 Visual Studio 创建第一个 Vue.js 应用
 
@@ -110,5 +109,5 @@ ms.locfileid: "53441478"
 ## <a name="next-steps"></a>后续步骤
 
 - 浏览 [Node.js 和 Express 教程](../nodejs/tutorial-nodejs.md)
-- 浏览 [Node.js 和 React 教程](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+- 浏览 [Node.js 和 React 教程](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
 - [将应用部署到 Linux 应用服务](../javascript/publish-nodejs-app-azure.md)

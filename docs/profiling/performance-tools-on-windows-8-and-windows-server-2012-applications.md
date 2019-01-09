@@ -1,20 +1,18 @@
 ---
 title: Windows 8 和 Windows Server 2012 应用程序上的性能工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 06/19/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca8434f6aaf0137da51612665833150b783d01d1
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 9fe876d5244ad18d1d2635caa1717ca9eb0e29ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592932"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832289"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 应用程序上的性能工具
 
@@ -39,7 +37,7 @@ Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual
 
 有关分析 UWP 应用的详细信息，请参阅以下文章：
 
-- [在本地计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-the-local-machine.md)
+- [在本地计算机上运行 UWP 应用](/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)
 - [在远程计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [首先了解分析工具](profiling-feature-tour.md)
 - [JavaScript 内存](../profiling/javascript-memory.md)
