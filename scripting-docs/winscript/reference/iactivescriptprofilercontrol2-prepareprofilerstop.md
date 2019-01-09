@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl2::PrepareProfilerStop |Microsoft 文档
+title: IActiveScriptProfilerControl2::PrepareProfilerStop |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,24 +14,24 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78078cd874be1d7d3d169be2d3d70e65866be3fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 086ec8b4a126c65162638afde4d8081269757e1c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724517"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089513"
 ---
 # <a name="iactivescriptprofilercontrol2prepareprofilerstop"></a>IActiveScriptProfilerControl2::PrepareProfilerStop
-通知探查器将停止所有适用的脚本引擎上进行分析。 通过使用此方法，你可以获取完整的调用堆栈，如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]时停止分析运行。  
+通知探查器要停止分析在所有适用的脚本引擎。 通过使用此方法，您可以获得完整的调用堆栈，如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]时停止分析正在运行。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT PrepareProfilerStop();  
 ```  
   
 #### <a name="parameters"></a>参数  
- 方法不接受任何参数。  
+ 方法不采用任何参数。  
   
 ## <a name="return-value"></a>返回值  
  返回一个 HRESULT。 可能的值如下：  
@@ -40,12 +40,12 @@ HRESULT PrepareProfilerStop();
 |------------------|-------------|  
 |`S_OK`|方法成功。|  
 |`E_FAIL`|无法启动分析。|  
-|`S_FALSE`|未运行脚本时，已停止分析。|  
+|`S_FALSE`|分析已停止时不运行脚本。|  
 |`ACTIVPROF_E_PROFILER_ABSENT`|未启用分析。|  
   
 ## <a name="remarks"></a>备注  
- 调用`IActiveScriptProfilerControl2::PrepareProfilerStop`可确保将发送事件调用堆栈中的函数。 此方法必须在调用之前停止任何当前选项卡上的脚本引擎上进行分析。可以针对任何脚本引擎调用方法。  
+ 调用`IActiveScriptProfilerControl2::PrepareProfilerStop`可确保将发送事件的调用堆栈中的函数。 此方法必须在调用之前停止在当前选项卡上的任何脚本引擎上进行分析。可以为任何脚本引擎调用该方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
  [IActiveScriptProfilerControl2 接口](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

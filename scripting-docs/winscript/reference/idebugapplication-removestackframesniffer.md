@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::RemoveStackFrameSniffer |Microsoft 文档
+title: IDebugApplication::RemoveStackFrameSniffer |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11289972dbd39d2e6221fb223a0d933ed90589c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 46b46c8ba2cd4e87492c5cc23330baf0da27ef41
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725717"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087914"
 ---
 # <a name="idebugapplicationremovestackframesniffer"></a>IDebugApplication::RemoveStackFrameSniffer
-来自此应用程序移除堆栈帧枚举器提供程序。  
+删除此应用程序中的堆栈帧的枚举器提供程序。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT RemoveStackFrameSniffer(  
    DWORD  dwCookie  
 );  
@@ -38,19 +38,19 @@ HRESULT RemoveStackFrameSniffer(
   
 #### <a name="parameters"></a>参数  
  `dwCookie`  
- [in]由返回的 cookie`AddStackFrameSniffer`方法时的堆栈帧枚举器提供程序已添加。  
+ [in]返回的 cookie`AddStackFrameSniffer`方法时的堆栈帧的枚举器提供程序已添加。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- `RemoveStackFrameSniffer`方法移除来自此应用程序的堆栈帧枚举器提供程序。  
+ `RemoveStackFrameSniffer`方法从该应用程序中移除的堆栈帧的枚举器提供程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)   
  [IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)   
  [IDebugStackFrameSniffer 接口](../../winscript/reference/idebugstackframesniffer-interface.md)

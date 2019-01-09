@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetScriptletTextAttributes |Microsoft 文档
+title: IActiveScriptAuthor::GetScriptletTextAttributes |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b01fba7d0e8eb80fed51b1ff0ebd3a8816bacb01
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0973b2943ed76a7baa231a287476b237cd45e257
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645687"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095454"
 ---
 # <a name="iactivescriptauthorgetscriptlettextattributes"></a>IActiveScriptAuthor::GetScriptletTextAttributes
-返回 scriptlet 的文本属性。  
+返回 scriptlet 文本的属性。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetScriptletTextAttributes(  
    LPCOLESTR pszCode,  
    ULONG cch,  
@@ -42,25 +42,25 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>参数  
  `pszCode`  
- [在 size_is (`cch`)] 的 scriptlet 文本。 此字符串没有要终止 null。  
+ [在中，size_is (`cch`)] 的 scriptlet 文本。 此字符串没有以 null 结束。  
   
  `cch`  
  [in]用于的大小`pszCode`和`pattr`参数。  
   
  `pszDelimiter`  
- [in]最终的 scriptlet 分隔符的地址。 当`pszCode`分析从文本流中，主机通常使用分隔符 （如两个单引号），来检测 scriptlet 的末尾。 如果无分隔符用于确定 scriptlet 的结尾，此参数设置为 NULL。  
+ [in]结束 scriptlet 分隔符的地址。 当`pszCode`进行分析的文本流，从主机通常使用分隔符 （如两个单引号），来检测 scriptlet 的末尾。 如果没有分隔符用于标识 scriptlet 的末尾，此参数设置为 NULL。  
   
  `dwFlags`  
- [in]与 scriptlet 文本特性关联的标志。 可以是以下值的组合。  
+ [in]与 scriptlet 文本属性相关联的标志。 可以是以下值的组合。  
   
-|常量|值|描述|  
+|返回的常量|“值”|描述|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|从 0x0001|确定具有 SOURCETEXT_ATTR_IDENTIFIER 属性的标识符，并标识圆点运算符具有 SOURCETEXT_ATTR_MEMBERLOOKUP 属性。|  
+|GETATTRTYPE_DEPSCAN|0x0001|标识具有 SOURCETEXT_ATTR_IDENTIFIER 属性的标识符和标识具有 SOURCETEXT_ATTR_MEMBERLOOKUP 属性的圆点运算符。|  
 |GETATTRFLAG_THIS|0x0100|标识具有 SOURCETEXT_ATTR_THIS 属性的当前对象。|  
-|GETATTRFLAG_HUMANTEXT|0x8000|标识具有 SOURCETEXT_ATTR_HUMANTEXT 特性的字符串内容和注释文本。|  
+|GETATTRFLAG_HUMANTEXT|0x8000|标识具有 SOURCETEXT_ATTR_HUMANTEXT 属性的字符串内容和注释文本。|  
   
  `pattr`  
- [传入、 传出 size_is (`cch`)] scriptlet 代码的颜色信息。  
+ [in、 out size_is (`cch`)] 的 scriptlet 代码的颜色信息。  
   
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -71,7 +71,7 @@ HRESULT GetScriptletTextAttributes(
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptAuthor 接口](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)   
  [SOURCE_TEXT_ATTR 枚举](../../winscript/reference/source-text-attr-enumeration.md)

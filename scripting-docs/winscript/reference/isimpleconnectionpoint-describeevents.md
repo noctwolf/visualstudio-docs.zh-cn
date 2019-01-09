@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::DescribeEvents |Microsoft 文档
+title: ISimpleConnectionPoint::DescribeEvents |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42dab9558d46eae0fbb640c60264a79877708321
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 43a20a2d9580c80bc6aea5d22c6a0713f4843634
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734017"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088499"
 ---
 # <a name="isimpleconnectionpointdescribeevents"></a>ISimpleConnectionPoint::DescribeEvents
-在指定范围的事件中返回的 DISPID 和每个事件的名称。  
+在指定范围的事件返回的 DISPID 和每个事件的名称。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT DescribeEvents(  
    ULONG    iEvent,  
    ULONG    cEvents,  
@@ -45,7 +45,7 @@ HRESULT DescribeEvents(
  [in]要检索的第一个事件的索引。  
   
  `cEvents`  
- [in]要检索的事件的数目。  
+ [in]要检索的事件数。  
   
  `prgid`  
  [out]事件的 DISPID 值的数组。  
@@ -54,7 +54,7 @@ HRESULT DescribeEvents(
  [out]事件名称的数组。  
   
  `pcEventsFetched`  
- [out]实际读取的事件数。  
+ [out]实际提取的事件数。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -62,11 +62,11 @@ HRESULT DescribeEvents(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`S_FALSE`|不是可用请求的更多的事件。 使用 DISPID_NULL 和 null BSTR 表示不可用的事件。|  
+|`S_FALSE`|比请求的更多的事件。 使用 DISPID_NULL 和 null BSTR 表示不可用的事件。|  
 |`E_INVALIDARG`|无法不提取任何元素。|  
   
 ## <a name="remarks"></a>备注  
- 此方法返回的事件指定范围中的 DISPID 和每个事件的名称。  
+ 此方法返回在指定范围的事件的 DISPID 和每个事件的名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ISimpleConnectionPoint 接口](../../winscript/reference/isimpleconnectionpoint-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::DefineScriptBlock |Microsoft 文档
+title: 'Idebugdocumenthelper:: Definescriptblock |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b6ec86dacc2e3a8f3d9e28a6db744b778ff01eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0037df270bc95faaba4d2f04cce65902d08dc6e9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726997"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087992"
 ---
 # <a name="idebugdocumenthelperdefinescriptblock"></a>IDebugDocumentHelper::DefineScriptBlock
-指示帮助器特定范围的字符，是由给定的脚本引擎处理的脚本块。  
+指示特定范围的字符，是由给定的脚本引擎处理的脚本块帮助程序。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT DefineScriptBlock(  
    ULONG           ulCharOffset,  
    ULONG           cChars,  
@@ -42,16 +42,16 @@ HRESULT DefineScriptBlock(
   
 #### <a name="parameters"></a>参数  
  `ulCharOffset`  
- [in]脚本块的起始位置。  
+ [in]脚本块的开始位置。  
   
  `cChars`  
  [in]脚本块中的字符数。  
   
  `pas`  
- [in]此脚本块与脚本引擎。  
+ [in]此脚本块的脚本引擎。  
   
  `fScriptlet`  
- [in]该标志指示脚本块是否 scriptlet。  
+ [in]指示脚本块是否 scriptlet 的标志。  
   
  `pdwSourceContext`  
  [out]脚本块的源上下文。  
@@ -59,18 +59,18 @@ HRESULT DefineScriptBlock(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 当其文档包含嵌入式的脚本块，智能主机可以使用此方法。 语言引擎可以使用此方法时其代码包含对其他语言的嵌入式的脚本。  
+ 智能主机可以使用此方法时其文档包含嵌入式的脚本块。 当其代码包含对其他语言的嵌入式的脚本时，语言引擎可以使用此方法。  
   
- 脚本引擎负责所有语法颜色设置和代码上下文查找，脚本块中。  
+ 脚本引擎负责进行中的所有语法着色和代码上下文查找脚本块。  
   
- `DefineScriptBlock`添加文本后，应调用方法 (例如，使用`IDebugDocumentHelper::AddDBCSText`方法)，但在该脚本之前已分析块 (例如，使用`IActiveScriptParse ::ParseScriptText`方法)。  
+ `DefineScriptBlock`添加文本后，应调用方法 (例如，使用`IDebugDocumentHelper::AddDBCSText`方法)，但该脚本之前已分析块 (例如，使用`IActiveScriptParse ::ParseScriptText`方法)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentHelper 接口](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [Idebugdocumenthelper:: Adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

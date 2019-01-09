@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugstackwalker:: Getnext 方法 |Microsoft 文档'
+title: 'Ijsdebugstackwalker:: Getnext 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 695bb6cecc2a27565dce21b4a965ad08d90d7be7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6e5b1b1257556ab17aa5dcac7b7f4525063dfb1d
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728437"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090763"
 ---
 # <a name="ijsdebugstackwalkergetnext-method"></a>IJsDebugStackWalker::GetNext 方法
 获取下一个帧。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetNext(  
    IJsDebugFrame **ppFrame  
 );  
@@ -41,10 +41,10 @@ HRESULT GetNext(
 ## <a name="return-value"></a>返回值  
   
 ## <a name="remarks"></a>备注  
- 当没有要枚举不多个堆栈帧时返回 E_JsDEBUG_OUTSIDE_OF_VM  
+ 没有更多的堆栈帧来枚举时，返回 E_JsDEBUG_OUTSIDE_OF_VM  
   
 ## <a name="requirements"></a>要求  
  **标头：** jscript9diag.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IJsDebugStackWalker 接口](../../winscript/reference/ijsdebugstackwalker-interface.md)

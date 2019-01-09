@@ -1,5 +1,5 @@
 ---
-title: ICanHandleException::CanHandleException |Microsoft 文档
+title: ICanHandleException::CanHandleException |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15612330f160f694202bb2158f970e0633fe53bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 784463f9e465aac005f5454be28a0043069dcb69
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725267"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089994"
 ---
 # <a name="icanhandleexceptioncanhandleexception"></a>ICanHandleException::CanHandleException
-确定脚本引擎的调用方可以处理指定的异常。  
+确定是否脚本引擎的调用方可以处理指定的异常。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT CanHandleException(  
    EXCEPINFO*  pExcepInfo,  
    VARIANT*    pvar  
@@ -39,22 +39,22 @@ HRESULT CanHandleException(
   
 #### <a name="parameters"></a>参数  
  `pExcepInfo`  
- [in]指向`EXCEPINFO`结构，它包含发现没有异常处理程序的情况下报告的信息。  
+ [in]指向`EXCEPINFO`结构，它包含不发现任何异常处理程序的情况下报告的信息。  
   
  `pvar`  
- [in]与异常，如由引发值关联的值`throw`语句。 此参数可以为 `NULL`。  
+ [in]关联的异常，如引发的值的值`throw`语句。 此参数可以为 `NULL`。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|`S_OK`|调用方能够处理该异常|  
-|`E_FAIL`|调用方无法处理的异常。|  
+|`S_OK`|调用方可以处理异常|  
+|`E_FAIL`|调用方无法处理该异常。|  
   
 ## <a name="remarks"></a>备注  
- 如果调用`IDispatchEx::InvokeEx`，或类似方法，将引发异常，支持的脚本的调用方链中的调用方的脚本引擎检查`ICanHandleException`接口，并指示它能够处理该异常。 如果没有调用方可以处理异常，就会停止脚本引擎。  
+ 如果调用`IDispatchEx::InvokeEx`，或类似的方法会导致异常，支持的脚本的调用方链中的调用方的脚本引擎检查`ICanHandleException`接口，并指示它能够处理该异常。 如果没有调用方可以处理异常，脚本引擎就会停止。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ICanHandleException 接口](../../winscript/reference/icanhandleexception-interface.md)   
  [IDispatchEx::InvokeEx](../../winscript/reference/idispatchex-invokeex.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onRemoveChild |Microsoft 文档
+title: IDebugApplicationNodeEvents::onRemoveChild |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a62f187286f66f8adff8acda339e02a02bc6225
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fab0d9e70a3c3536043b4050b2f34bf2ae7ab32c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725987"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092192"
 ---
 # <a name="idebugapplicationnodeeventsonremovechild"></a>IDebugApplicationNodeEvents::onRemoveChild
-处理事件时从调试应用程序节点对象中删除一个子节点。  
+处理事件时从调试应用程序节点对象中删除的子节点。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT onRemoveChild(  
    IDebugApplicationNode*  prddpChild  
 );  
@@ -48,11 +48,11 @@ HRESULT onRemoveChild(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法可处理事件时从调试应用程序节点对象中删除一个子节点。  
+ 此方法可处理事件时从调试应用程序节点对象中删除的子节点。  
   
- 实现者`IDebugApplicationNode`接口引发此事件。  
+ 实施者`IDebugApplicationNode`接口引发此事件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplicationNodeEvents 接口](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
  [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
  [IDebugApplicationNode 接口](../../winscript/reference/idebugapplicationnode-interface.md)

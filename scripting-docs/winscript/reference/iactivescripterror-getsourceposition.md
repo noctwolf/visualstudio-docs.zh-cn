@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetSourcePosition |Microsoft 文档
+title: IActiveScriptError::GetSourcePosition |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d63310a8ba5cfda39d48a482eaf7c345cd492adc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: fb5adfe508b7b5d3de0cf7f508d8c801a36adf1f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645837"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097365"
 ---
 # <a name="iactivescripterrorgetsourceposition"></a>IActiveScriptError::GetSourcePosition
 检索错误发生时脚本引擎已运行脚本的源代码中的位置。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetSourcePosition(  
     DWORD *pdwSourceContext,  // context cookie  
     ULONG *pulLineNumber,     // line number of error  
@@ -40,16 +40,16 @@ HRESULT GetSourcePosition(
   
 #### <a name="parameters"></a>参数  
  `pdwSourceContext`  
- [out]接收标识上下文 cookie 变量的地址。 此参数的解释取决于宿主应用程序。  
+ [out]接收 cookie 标识上下文变量的地址。 此参数的解释取决于主机应用程序。  
   
  `pulLineNumber`  
- [out]在发生错误的源文件中接收的行号的变量的地址。  
+ [out]发生错误的源文件中接收的行号的变量的地址。  
   
  `pichCharPosition`  
- [out]一个变量来接收发生错误的行中的字符位置的地址。  
+ [out]一个变量来接收错误发生位置的行中的字符位置的地址。  
   
 ## <a name="return-value"></a>返回值  
- 返回`S_OK`如果成功，或`E_FAIL`如果检索不到位置。  
+ 返回`S_OK`如果成功，或`E_FAIL`如果检索不到该位置。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

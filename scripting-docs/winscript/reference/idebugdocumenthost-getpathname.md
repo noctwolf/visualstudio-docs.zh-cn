@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetPathName |Microsoft 文档
+title: IDebugDocumentHost::GetPathName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42fffa160a1f5b55dc9ba0287c2fdf3073e27e0d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5c33844ade2367ffeb7690306a5febbabde2f016
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726667"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096026"
 ---
 # <a name="idebugdocumenthostgetpathname"></a>IDebugDocumentHost::GetPathName
 返回文档的源文件的完整路径和文件名称。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetPathName(  
    BSTR*  pbstrLongName,  
    BOOL*  pfIsOriginalFile  
@@ -42,12 +42,12 @@ HRESULT GetPathName(
  [out]包含长名称的字符串。  
   
  `pfIsOriginalFile`  
- [out]一个标志，它是 true 如果`pbstrLongName`否则引用的原始文件为 false 的文档。  
+ [out]一个标志，它是如果`pbstrLongName`否则引用的原始文件为 false 的文档。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
 |`E_FAIL`|可以创建或确定任何源文件。|  
@@ -55,5 +55,5 @@ HRESULT GetPathName(
 ## <a name="remarks"></a>备注  
  此方法返回文档的源文件的完整路径和文件的名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentHost 接口](../../winscript/reference/idebugdocumenthost-interface.md)

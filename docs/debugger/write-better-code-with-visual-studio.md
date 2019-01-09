@@ -2,10 +2,9 @@
 title: 通过编写更优质的 C# 代码来修复 bug
 description: 了解如何编写更好的代码更少 bug
 ms.custom:
-- debug-experiments
+- debug-experiment
 - seodec18
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -14,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e3aaebd02754556f028f53a190160f502ef9ca
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a6be1f46c8a529eb7f2e7d21e34fb1a58458a3de
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53051670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967571"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>通过编写更好地修复 bugC#使用 Visual Studio 代码
 
-调试代码可能非常耗时-，有时会令人沮丧-任务。 它需要时间来了解如何有效地调试，但功能强大的 IDE，类似于 Visual Studio 可以使您的工作变得更加轻松。 IDE 可以帮助您更快地调试代码并不只是的但它还可以帮助您编写更好的代码更少的 bug。 我们在本文中的目标是提供全面的调试过程中，以便您了解何时使用代码分析器、 何时使用调试器，以及何时使用其他工具。  
+调试代码可能非常耗时-，有时会令人沮丧-任务。 它需要时间来了解如何有效地调试，但功能强大的 IDE，类似于 Visual Studio 可以使您的工作变得更加轻松。 IDE 可以帮助您更快地调试代码并不只是的但它还可以帮助您编写更好的代码更少的 bug。 我们在本文中的目标是提供全面的调试过程中，以便您了解何时使用代码分析器、 何时使用调试器，以及何时使用其他工具。
 
 在本文中，我们介绍如何利用 IDE，以便提高工作效率调试会话。 我们提到了多项任务，例如：
 
@@ -305,7 +304,7 @@ namespace Console_Parse_JSON_DotNetCore
 
             for (int i = 0; i < users.Length; i++)
             {
-                List<User> result = localDB.FindAll(delegate (User u) { 
+                List<User> result = localDB.FindAll(delegate (User u) {
                     return u.lastname == users[i].lastname;
                     });
                 foreach (var item in result)
@@ -317,7 +316,7 @@ namespace Console_Parse_JSON_DotNetCore
             Console.ReadKey();
         }
 
-        // Deserialize a JSON stream to a User object.  
+        // Deserialize a JSON stream to a User object.
         public static User[] ReadToObject(string json)
         {
             User deserializedUser = new User();

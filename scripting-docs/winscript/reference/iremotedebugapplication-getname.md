@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::GetName |Microsoft 文档
+title: IRemoteDebugApplication::GetName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99a998249d8e2b5d57d93f086f25501831546dbd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: acdce6ab03f6858cc6af85e34b115753564d5dd9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728697"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089045"
 ---
 # <a name="iremotedebugapplicationgetname"></a>IRemoteDebugApplication::GetName
 返回此应用程序节点的名称。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetName(  
    BSTR*  pbstrName  
 );  
@@ -50,5 +50,5 @@ HRESULT GetName(
 ## <a name="remarks"></a>备注  
  此方法返回此应用程序节点的名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IRemoteDebugApplication 接口](../../winscript/reference/iremotedebugapplication-interface.md)

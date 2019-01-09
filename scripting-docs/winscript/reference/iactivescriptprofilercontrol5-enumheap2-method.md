@@ -1,5 +1,5 @@
 ---
-title: 'Iactivescriptprofilercontrol5:: Enumheap2 方法 |Microsoft 文档'
+title: IActiveScriptProfilerControl5::EnumHeap2 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,27 +12,27 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c493acdb2843877c506d9d84e145a79ac2d60d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 21661953edbdba2314b88aad5fb55451b06b51a8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724657"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097625"
 ---
 # <a name="iactivescriptprofilercontrol5enumheap2-method"></a>IActiveScriptProfilerControl5::EnumHeap2 方法
-返回一个接口 ([IActiveScriptProfilerHeapEnum 接口](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) 可用来循环访问的关联的脚本引擎的上下文中的 GC 堆对象。  
+返回的接口 ([IActiveScriptProfilerHeapEnum 接口](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)) 可用于循环访问关联的脚本引擎的上下文中的 GC 堆对象。  
   
- 你可以在任一调试调用此方法或释放模式。 在 UI 线程处于空闲状态时，应调用此方法。 调用该方法后，应针对除外的脚本引擎执行任何操作[iactivescriptprofilerheapenum:: Next 方法](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)直到[iactivescriptprofilerheapenum:: Next 方法](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)返回 S_FALSE 或[IActiveScriptProfilerHeapEnum 接口](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)发布接口指针。  
+ 可以调用此方法在调试或发布模式。 UI 线程处于空闲状态时，应调用此方法。 调用该方法后，应执行任何操作的脚本引擎除外[iactivescriptprofilerheapenum:: Next 方法](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)直到[iactivescriptprofilerheapenum:: Next 方法](../../winscript/reference/iactivescriptprofilerheapenum-next-method.md)，则返回 S_FALSE 或[IActiveScriptProfilerHeapEnum 接口](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)释放接口指针。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT EnumHeap2(    [in] PROFILER_HEAP_ENUM_FLAGS enumFlags,    [out] IActiveScriptProfilerHeapEnum** ppEnum);  
 ```  
   
 #### <a name="parameters"></a>参数  
  enumFlags  
- 值，该值指定是否公开了有关在对象关系指向的对象的额外信息。 额外的信息可能指明指向的对象是否为 getter 或 setter 方法。 有关详细信息，请参阅[PROFILER_HEAP_ENUM_FLAGS 枚举](../../winscript/reference/profiler-heap-enum-flags-enumeration.md)。  
+ 值，该值指定是否公开有关对象关系中指向的对象的额外信息。 附加信息可能指示指向的对象是否为 getter 或 setter 方法。 有关详细信息，请参阅[PROFILER_HEAP_ENUM_FLAGS 枚举](../../winscript/reference/profiler-heap-enum-flags-enumeration.md)。  
   
  ppEnum  
  [out]返回[IActiveScriptProfilerHeapEnum 接口](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)。  
@@ -42,6 +42,6 @@ HRESULT EnumHeap2(    [in] PROFILER_HEAP_ENUM_FLAGS enumFlags,    [out] IActiveS
   
 |返回值|含义|  
 |------------------|-------------|  
-|`S_OK`|已成功完成堆枚举。|  
-|`E_OUTOFMEMORY`|没有足够的内存可用于执行堆枚举。|  
+|`S_OK`|堆枚举已成功完成。|  
+|`E_OUTOFMEMORY`|没有足够内存可用于执行堆枚举。|  
 |`E_FAIL`|出现内部错误。|

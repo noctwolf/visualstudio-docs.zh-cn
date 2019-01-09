@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberName |Microsoft 文档
+title: IDispatchEx::GetMemberName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63489dad447ece245e14e483127cb67327d55fe5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4f042fa0f8fb087b796e306074152f11afd7fed4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727917"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091476"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 检索成员的名称。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetMemberName(  
    DISPID id,  
    BSTR *pbstrName  
@@ -39,22 +39,22 @@ HRESULT GetMemberName(
   
 #### <a name="parameters"></a>参数  
  `id`  
- 标识成员。 使用`GetDispID`或`GetNextDispID`若要获取调度标识符。  
+ 标识成员。 使用`GetDispID`或`GetNextDispID`若要获取的调度标识符。  
   
  `pbstrName`  
- 地址`BSTR`接收成员的名称。 调用应用程序负责释放此值。  
+ 地址`BSTR`，它接收的成员的名称。 调用应用程序负责释放此值。  
   
 ## <a name="return-value"></a>返回值  
- 返回下列值之一：  
+ 返回以下值之一：  
   
 |||  
 |-|-|  
 |`S_OK`|成功。|  
-|`DISP_E_UNKNOWNNAME`|名称未知。|  
+|`DISP_E_UNKNOWNNAME`|不知道名称。|  
   
 ## <a name="example"></a>示例  
   
-```  
+```cpp
 HRESULT hr;  
    BSTR bstrName;  
    DISPID dispid;  
@@ -75,7 +75,7 @@ HRESULT hr;
    }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDispatchEx 接口](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

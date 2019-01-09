@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberProperties |Microsoft 文档
+title: IDispatchEx::GetMemberProperties |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d216bb7b21c8895337b9925007637c00d0deb37
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 51e01ef3fa6d5e0611875f6402b79e53f8c83cac
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729657"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088187"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 检索成员的属性。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetMemberProperties(  
    DISPID id,  
    DWORD grfdexFetch,  
@@ -40,49 +40,49 @@ HRESULT GetMemberProperties(
   
 #### <a name="parameters"></a>参数  
  `id`  
- 标识成员。 使用`GetDispID`或`GetNextDispID`若要获取调度标识符。  
+ 标识成员。 使用`GetDispID`或`GetNextDispID`若要获取的调度标识符。  
   
  `grfdexFetch`  
  确定要检索的属性。 这可以是下列出的值的组合`pgrfdex`和/或以下值的组合：  
   
 |值|含义|  
 |-----------|-------------|  
-|grfdexPropCanAll|将合并 fdexPropCanGet、 fdexPropCanPut、 fdexPropCanPutRef、 fdexPropCanCall、 fdexPropCanConstruct 和 fdexPropCanSourceEvents。|  
-|grfdexPropCannotAll|将合并 fdexPropCannotGet、 fdexPropCannotPut、 fdexPropCannotPutRef、 fdexPropCannotCall、 fdexPropCannotConstruct 和 fdexPropCannotSourceEvents。|  
-|grfdexPropExtraAll|将 fdexPropNoSideEffects 和 fdexPropDynamicType 合并。|  
-|grfdexPropAll|将合并 grfdexPropCanAll、 grfdexPropCannotAll 和 grfdexPropExtraAll。|  
+|grfdexPropCanAll|FdexPropCanGet、 fdexPropCanPut、 fdexPropCanPutRef、 fdexPropCanCall、 fdexPropCanConstruct 和 fdexPropCanSourceEvents 相结合。|  
+|grfdexPropCannotAll|FdexPropCannotGet、 fdexPropCannotPut、 fdexPropCannotPutRef、 fdexPropCannotCall、 fdexPropCannotConstruct 和 fdexPropCannotSourceEvents 相结合。|  
+|grfdexPropExtraAll|FdexPropNoSideEffects 和 fdexPropDynamicType 相结合。|  
+|grfdexPropAll|GrfdexPropCanAll、 grfdexPropCannotAll 和 grfdexPropExtraAll 相结合。|  
   
  `pgrfdex`  
- 地址`DWORD`接收请求的属性。 这可以是以下值的组合：  
+ 地址`DWORD`用于接收请求的属性。 这可以是以下值的组合：  
   
 |值|含义|  
 |-----------|-------------|  
 |fdexPropCanGet|可以使用 DISPATCH_PROPERTYGET 获取该成员。|  
-|fdexPropCannotGet|无法使用 DISPATCH_PROPERTYGET 获得成员。|  
-|fdexPropCanPut|可以使用 DISPATCH_PROPERTYPUT 设置成员。|  
-|fdexPropCannotPut|成员不能通过 DISPATCH_PROPERTYPUT 设置。|  
-|fdexPropCanPutRef|可以使用 DISPATCH_PROPERTYPUTREF 设置成员。|  
-|fdexPropCannotPutRef|成员不能通过 DISPATCH_PROPERTYPUTREF 设置。|  
-|fdexPropNoSideEffects|成员没有任何副作用。 例如，调试器无法安全地 get/组/调用此成员而无需更改正在调试的脚本的状态。|  
-|fdexPropDynamicType|成员是动态的并且可在对象的生命周期中更改。|  
-|fdexPropCanCall|可以作为一种方法使用 DISPATCH_METHOD 调用成员。|  
-|fdexPropCannotCall|不能作为一种方法使用 DISPATCH_METHOD 调用成员。|  
-|fdexPropCanConstruct|可以作为构造函数使用 DISPATCH_CONSTRUCT 调用成员。|  
-|fdexPropCannotConstruct|不能作为构造函数使用 DISPATCH_CONSTRUCT 调用成员。|  
+|fdexPropCannotGet|不能使用 DISPATCH_PROPERTYGET 获取该成员。|  
+|fdexPropCanPut|可以使用 DISPATCH_PROPERTYPUT 设置该成员。|  
+|fdexPropCannotPut|该成员不能使用 DISPATCH_PROPERTYPUT 进行设置。|  
+|fdexPropCanPutRef|可以使用 DISPATCH_PROPERTYPUTREF 设置该成员。|  
+|fdexPropCannotPutRef|该成员不能使用 DISPATCH_PROPERTYPUTREF 进行设置。|  
+|fdexPropNoSideEffects|该成员没有任何副作用。 例如，调试程序可以安全地 get/set/调用此成员而不更改脚本正在调试的状态。|  
+|fdexPropDynamicType|该成员是动态的可以更改对象的生存期内。|  
+|fdexPropCanCall|作为使用 DISPATCH_METHOD 的方法，可以调用该成员。|  
+|fdexPropCannotCall|作为使用 DISPATCH_METHOD 方法不能调用该成员。|  
+|fdexPropCanConstruct|可以作为构造函数使用 DISPATCH_CONSTRUCT 调用该成员。|  
+|fdexPropCannotConstruct|不能作为构造函数使用 DISPATCH_CONSTRUCT 调用该成员。|  
 |fdexPropCanSourceEvents|成员可以激发事件。|  
-|fdexPropCannotSourceEvents|成员不能激发事件。|  
+|fdexPropCannotSourceEvents|成员无法激发事件。|  
   
 ## <a name="return-value"></a>返回值  
- 返回下列值之一：  
+ 返回以下值之一：  
   
 |||  
 |-|-|  
 |`S_OK`|成功。|  
-|`DISP_E_UNKNOWNNAME`|名称未知。|  
+|`DISP_E_UNKNOWNNAME`|不知道名称。|  
   
 ## <a name="example"></a>示例  
   
-```  
+```cpp
 BSTR bstrName;  
    DISPID dispid;  
    IDispatchEx *pdex;   
@@ -97,7 +97,7 @@ BSTR bstrName;
    }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDispatchEx 接口](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

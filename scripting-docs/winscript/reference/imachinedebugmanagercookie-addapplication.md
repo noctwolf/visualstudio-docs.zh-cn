@@ -1,5 +1,5 @@
 ---
-title: IMachineDebugManagerCookie::AddApplication |Microsoft 文档
+title: IMachineDebugManagerCookie::AddApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c452c4fe2826c7c5372c7598a14731e14077925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ef3dc3bddd0259eb4dd3a1fc874cbadbc16195d9
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728627"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090657"
 ---
 # <a name="imachinedebugmanagercookieaddapplication"></a>IMachineDebugManagerCookie::AddApplication
-添加应用程序与运行应用程序列表。  
+将添加到正在运行的应用程序的应用程序列表。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT AddApplication(  
    IRemoteDebugApplication*  pda,  
    DWORD                     dwDebugAppCookie,  
@@ -40,25 +40,25 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>参数  
  `pda`  
- [in]应用程序与运行应用程序列表。  
+ [in]为正在运行的应用程序的应用程序列表。  
   
  `dwDebugAppCookie`  
  [in]一个标识的调试应用程序的 cookie。  
   
  `pdwAppCookie`  
- [out]一个用于从机调试管理器中删除应用程序的 cookie。  
+ [out]一个用于从计算机调试管理器删除应用程序的 cookie。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 过程调试管理器调用此方法时`IProcessDebugManager::AddApplication`调用。  
+ 进程调试管理器调用此方法时`IProcessDebugManager::AddApplication`调用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IMachineDebugManagerCookie 接口](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
  [IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

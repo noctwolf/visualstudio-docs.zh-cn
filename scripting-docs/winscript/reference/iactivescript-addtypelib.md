@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::AddTypeLib |Microsoft 文档
+title: IActiveScript::AddTypeLib |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2be7cf033b4b5dd4d99b19a3b71ed53e32af855
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 695edbd6f5356959785e54dc38f28b68c8c0400e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640867"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092535"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-将类型库添加到脚本的命名空间。 它类似于`#include`C/c + + 中的指令。 它允许一组预定义的类定义，如项`typedefs`，并命名要添加到运行时环境提供给脚本使用的常量。  
+将类型库添加到该脚本在命名空间。 它类似于`#include`C/c + + 中的指令。 它允许一组预定义项目类的定义，如`typedefs`，和命名的常量添加到可供脚本运行时环境。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT AddTypeLib(  
     REFGUID guidTypeLib,  // CLSID of type library  
     DWORD dwMaj,          // major version number  
@@ -50,21 +50,21 @@ HRESULT AddTypeLib(
  [in]次版本号。  
   
  `dwFlags`  
- [in]选项的标志。 可以是以下值：  
+ [in]选项标志。 可以是以下值：  
   
 |值|含义|  
 |-----------|-------------|  
 |SCRIPTTYPELIB_ISCONTROL|类型库描述主机所使用的 ActiveX 控件。|  
   
 ## <a name="return-value"></a>返回值  
- 返回下列值之一：  
+ 返回以下值之一：  
   
 |返回值|含义|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
-|`E_INVALIDARG`|自变量无效。|  
-|`E_UNEXPECTED`|不应调用 （例如，脚本引擎具有尚未加载或初始化）。|  
+|`E_INVALIDARG`|参数无效。|  
+|`E_UNEXPECTED`|不应在调用 （例如，脚本引擎具有尚未加载或初始化）。|  
 |`TYPE_E_CANTLOADLIBRARY`|无法加载指定的类型库。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScript](../../winscript/reference/iactivescript.md)

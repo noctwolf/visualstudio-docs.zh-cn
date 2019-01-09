@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::ScriptCompiled |Microsoft 文档
+title: IActiveScriptProfilerCallback::ScriptCompiled |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ea1823087b323f2acc9b87edfce48bbe9f924bd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf653e5623506a68e6353e3d9f97077592e87941
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724697"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091502"
 ---
 # <a name="iactivescriptprofilercallbackscriptcompiled"></a>IActiveScriptProfilerCallback::ScriptCompiled
-通知探查器对象的脚本引擎编译的脚本。 为每个编译的脚本调用此方法。  
+通知探查器对象的脚本引擎编译脚本。 为编译每个脚本调用此方法。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT ScriptCompiled(  
     [in] PROFILER_TOKEN scriptId,  
     [in] PROFILER_SCRIPT_TYPE type,  
@@ -37,19 +37,19 @@ HRESULT ScriptCompiled(
   
 #### <a name="parameters"></a>参数  
  `scriptId`  
- [in]已编译的脚本唯一 ID。 通过脚本引擎分配有此 ID。  
+ [in]编译该脚本唯一 ID。 由脚本引擎分配此 ID。  
   
  `type`  
- [in]已编译的脚本的类型。 中定义的值[PROFILER_SCRIPT_TYPE 枚举](../../winscript/reference/profiler-script-type-enumeration.md)。  
+ [in]已编译的脚本的类型。 在中定义的值[PROFILER_SCRIPT_TYPE 枚举](../../winscript/reference/profiler-script-type-enumeration.md)。  
   
  `pIDebugDocumentContext`  
- [in]如果可用，请指向的指针`IUnknown`探查器必须查询的接口[IDebugDocumentContext 接口](../../winscript/reference/idebugdocumentcontext-interface.md)指针。 否则，这将为 null。  
+ [in]如果可用，一个指向`IUnknown`探查器必须查询接口[IDebugDocumentContext 接口](../../winscript/reference/idebugdocumentcontext-interface.md)指针。 否则，这将为 null。  
   
 ## <a name="return-value"></a>返回值  
- 通过脚本引擎忽略此方法的返回值。  
+ 此方法的返回值是脚本引擎忽略。  
   
 ## <a name="remarks"></a>备注  
- 仅当主机支持此功能，脚本引擎可以提供的文档上下文。  
+ 仅当主机支持此功能，脚本引擎可以提供文档上下文。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptProfilerCallback 接口](../../winscript/reference/iactivescriptprofilercallback-interface.md)

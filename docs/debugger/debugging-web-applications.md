@@ -1,8 +1,6 @@
 ---
 title: 调试 Web 应用程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: faafe243d5bf60e83d060334d8591bdb4cd9bbb3
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 7f494e365de28603d2231323fa1ab501b826c28e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923029"
 ---
 # <a name="debugging-web-applications"></a>调试 Web 应用程序
 本节说明如何调试几种类型的 Web 应用程序。  
@@ -39,7 +37,7 @@ ms.locfileid: "53561624"
  描述启用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序调试所需的步骤。  
   
 ## <a name="see-also"></a>请参阅  
- [Debugging Web Applications and Script](../debugger/debugging-web-applications-and-script.md) （调试 Web 应用程序和脚本）  
+ [Debugging Web Applications and Script](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications) （调试 Web 应用程序和脚本）  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
  [先来看一下调试器](../debugger/debugger-feature-tour.md) [Visual Studio 中调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)

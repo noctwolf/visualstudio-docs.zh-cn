@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetChild |Microsoft 文档
+title: IScriptNode::GetChild |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d127b1b8a8db0c6d272e50d33b523fbe182a9e21
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 55cd6cf5233e850e4109128e322d3fc5bd0b1355
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734217"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086588"
 ---
 # <a name="iscriptnodegetchild"></a>IScriptNode::GetChild
-返回位于指定索引的节点中的子级。  
+返回位于指定索引中的节点的子级。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetChild(  
    ULONG              isn,  
    IScriptNode        **ppsn  
@@ -39,12 +39,12 @@ HRESULT GetChild(
   
 #### <a name="parameters"></a>参数  
  `isn`  
- [in]父代中的子级的索引。  
+ [in]子对象的父代中的索引。  
   
  `ppsn`  
- [out]接收指向的变量的地址`IScriptNode`接口的子实例。  
+ [out]一个变量来接收指向指针的地址`IScriptNode`接口的子实例。  
   
- 有关`IScriptNode`表示网页上的对象，此参数将返回一个对象，包含脚本块。  
+ 有关`IScriptNode`表示网页的对象，此参数返回一个对象，包含一个脚本块。  
   
  有关`IScriptEntry`指定脚本块的对象，此参数返回指定的函数的对象。  
   
@@ -56,7 +56,7 @@ HRESULT GetChild(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 有关`IScriptEntry`指定的函数对象的对象和`IScriptScriptlet`对象，此方法失败，因为不存在子条目。  
+ 有关`IScriptEntry`指定的函数对象的对象和`IScriptScriptlet`对象，此方法失败，因为没有子条目。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IScriptNode 接口](../../winscript/reference/iscriptnode-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::GetEventName |Microsoft 文档
+title: IScriptScriptlet::GetEventName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 600eb4aff3bcefea31eb5fec76a2dc3cdce62a05
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4bffd1a3d518a5166c81934d5f3c7508f62284d5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733667"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097781"
 ---
 # <a name="iscriptscriptletgeteventname"></a>IScriptScriptlet::GetEventName
-返回与 scriptlet 关联的事件的名称。  
+返回与 scriptlet 相关联的事件的名称。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetEventName(  
    BSTR               *pbstr  
 );  
@@ -38,7 +38,7 @@ HRESULT GetEventName(
   
 #### <a name="parameters"></a>参数  
  `pbstr`  
- [out]包含与关联的事件名称的缓冲区`IScriptScriptlet`对象。  
+ [out]包含与之关联的事件名称的缓冲区`IScriptScriptlet`对象。  
   
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -49,5 +49,5 @@ HRESULT GetEventName(
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IScriptScriptlet 接口](../../winscript/reference/iscriptscriptlet-interface.md)

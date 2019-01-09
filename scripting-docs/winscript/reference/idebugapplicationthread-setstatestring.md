@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::SetStateString |Microsoft 文档
+title: IDebugApplicationThread::SetStateString |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eafe5477759dbad109e5ae6294b477d56f9ee14
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4190bef0ca5cbedf709e65fafd1f49911ebb6510
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726197"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090189"
 ---
 # <a name="idebugapplicationthreadsetstatestring"></a>IDebugApplicationThread::SetStateString
 设置线程状态的说明。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT SetStateString(  
    LPCOLESTR  pstrState  
 );  
@@ -48,7 +48,7 @@ HRESULT SetStateString(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法设置的线程状态的说明。  
+ 此方法设置线程状态的说明。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplicationThread 接口](../../winscript/reference/idebugapplicationthread-interface.md)

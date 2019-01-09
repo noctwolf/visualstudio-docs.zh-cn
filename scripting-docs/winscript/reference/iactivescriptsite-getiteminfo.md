@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetItemInfo |Microsoft 文档
+title: 'Iactivescriptsite:: Getiteminfo |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccb898c14571d1f1fd1fcae7cb0b9a6d322f2754
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f4dc6515d64406870ca10f003d7cea515c49b7d8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725417"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095883"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
-允许要获取有关与添加的项的信息的脚本引擎[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)方法。  
+允许脚本引擎来获取有关与添加的项的信息[iactivescript:: Addnameditem](../../winscript/reference/iactivescript-addnameditem.md)方法。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetItemInfo(  
     LPCOLESTR pstrName,     // address of item name  
     DWORD dwReturnMask,     // bit mask for information retrieval  
@@ -41,34 +41,34 @@ HRESULT GetItemInfo(
   
 #### <a name="parameters"></a>参数  
  `pstrName`  
- [in]与中指定的项关联的名称[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)方法。  
+ [in]与作为中指定的项关联的名称[iactivescript:: Addnameditem](../../winscript/reference/iactivescript-addnameditem.md)方法。  
   
  `dwReturnMask`  
- [in]一个位掩码，指定应返回哪些项目的信息。 脚本引擎应请求信息可能的最小量，因为某些返回参数 (例如， `ITypeInfo`) 可能需要相当长的时间才能加载或生成。 可以是以下值的组合：  
+ [in]一个位掩码，指定应返回有关项目的哪些信息。 脚本引擎应请求可能的最小信息量，因为一些返回参数 (例如， `ITypeInfo`) 可能需要相当长的时间才能加载或生成。 可以是以下值的组合：  
   
-|值|含义|  
+|“值”|含义|  
 |-----------|-------------|  
-|SCRIPTINFO_IUNKNOWN|返回`IUnknown`为此项目的接口。|  
-|SCRIPTINFO_ITYPEINFO|返回`ITypeInfo`为此项目的接口。|  
+|SCRIPTINFO_IUNKNOWN|返回`IUnknown`此项的接口。|  
+|SCRIPTINFO_ITYPEINFO|返回`ITypeInfo`此项的接口。|  
   
  `ppunkItem`  
- [out]接收指向的变量的地址`IUnknown`与给定项相关联的接口。 可以使用脚本引擎`IUnknown::QueryInterface`方法来获取`IDispatch`项的接口。 如果此参数接收 NULL`dwReturnMask`不包括 SCRIPTINFO_IUNKNOWN 值。 此外，接收 NULL，如果没有与项名称; 关联的对象使用此机制来创建一个简单的类时，SCRIPTITEM_CODEONLY 标志设置添加了命名的项[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)方法。  
+ [out]接收指向的变量的地址`IUnknown`与给定项相关联的接口。 可以使用脚本引擎`IUnknown::QueryInterface`方法来获取`IDispatch`项的接口。 如果此参数会收到 NULL`dwReturnMask`不包括 SCRIPTINFO_IUNKNOWN 值。 此外，收到 NULL，如果没有与项目名称; 关联的对象使用此机制 SCRIPTITEM_CODEONLY 标志设置添加命名的项时创建一个简单的类[iactivescript:: Addnameditem](../../winscript/reference/iactivescript-addnameditem.md)方法。  
   
  `ppTypeInfo`  
- [out]接收指向的变量的地址`ITypeInfo`与项关联的接口。 如果此参数接收 NULL`dwReturnMask`不包括 SCRIPTINFO_ITYPEINFO 值，或如果没有可用于此项目类型信息。 如果类型信息不可用，该对象不能源事件，并且必须使用实现名称绑定`IDispatch::GetIDsOfNames`方法。 请注意，`ITypeInfo`检索的接口描述项的组件类 (TKIND_COCLASS)，因为该对象可能支持多个接口和事件接口。 如果项支持`IProvideMultipleTypeInfo`接口，`ITypeInfo`接口检索等同于索引零`ITypeInfo`将使用获得的`IProvideMultipleTypeInfo::GetInfoOfIndex`方法。  
+ [out]接收指向的变量的地址`ITypeInfo`与项关联的接口。 如果此参数会收到 NULL`dwReturnMask`不包括 SCRIPTINFO_ITYPEINFO 值，或类型信息不是可用于此项。 如果类型信息不可用，该对象不能获得事件，并且必须使用实现名称绑定`IDispatch::GetIDsOfNames`方法。 请注意，`ITypeInfo`检索到的接口描述项的组件类 (TKIND_COCLASS)，因为该对象可能支持多个接口和事件接口。 如果项支持`IProvideMultipleTypeInfo`接口，`ITypeInfo`检索到的接口是索引零相同`ITypeInfo`将使用获取的`IProvideMultipleTypeInfo::GetInfoOfIndex`方法。  
   
 ## <a name="return-value"></a>返回值  
- 返回下列值之一：  
+ 返回以下值之一：  
   
 |返回值|含义|  
 |------------------|-------------|  
 |`S_OK`|成功。|  
-|`E_INVALIDARG`|自变量无效。|  
+|`E_INVALIDARG`|参数无效。|  
 |`E_POINTER`|指定了无效的指针。|  
 |`TYPE_E_ELEMENTNOTFOUND`|找不到指定名称的项。|  
   
 ## <a name="remarks"></a>备注  
- 此方法只检索信息由`dwReturnMask`参数; 这将提高性能。 例如，如果`ITypeInfo`接口不需要的项，它只需中未指定`dwReturnMask`。  
+ 此方法检索由信息`dwReturnMask`参数; 这可以提高性能。 例如，如果`ITypeInfo`接口不需要的项，它只需中未指定`dwReturnMask`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

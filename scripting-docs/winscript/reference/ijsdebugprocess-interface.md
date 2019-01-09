@@ -1,5 +1,5 @@
 ---
-title: IJsDebugProcess 接口 |Microsoft 文档
+title: IJsDebugProcess 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2a81104f51ca1a66c493779146b7eaa102ea300
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ecdec77a8bcb3c1fb8a1dc64c63b363b4f001fde
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728567"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086653"
 ---
 # <a name="ijsdebugprocess-interface"></a>IJsDebugProcess 接口
 提供用于检查和控制目标进程的例程。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 IJsDebugProcess : public IUnknown;  
 ```  
   
@@ -34,12 +34,12 @@ IJsDebugProcess : public IUnknown;
   
 |名称|描述|  
 |----------|-----------------|  
-|[IJsDebugProcess::CreateBreakPoint 方法](../../winscript/reference/ijsdebugprocess-createbreakpoint-method.md)|将指定的文档位置设置断点。|  
+|[IJsDebugProcess::CreateBreakPoint 方法](../../winscript/reference/ijsdebugprocess-createbreakpoint-method.md)|将指定的文档位置处设置断点。|  
 |[IJsDebugProcess::CreateStackWalker 方法](../../winscript/reference/ijsdebugprocess-createstackwalker-method.md)|堆栈查看器的工厂方法。|  
-|[IJsDebugProcess::PerformAsyncBreak 方法](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|在中断模式下导致它执行中断下一个脚本指令将脚本引擎。|  
+|[IJsDebugProcess::PerformAsyncBreak 方法](../../winscript/reference/ijsdebugprocess-performasyncbreak-method.md)|将脚本引擎放入中断模式会导致它为在下一个脚本指令发生中断。|  
   
 ## <a name="requirements"></a>要求  
  **标头：** jscript9diag.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Windows 脚本接口参考](../../winscript/reference/windows-script-interfaces-reference.md)

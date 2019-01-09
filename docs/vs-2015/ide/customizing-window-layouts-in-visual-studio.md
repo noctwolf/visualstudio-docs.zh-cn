@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -29,12 +28,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e37adb6296a805b8a0fd06196e7ccf1acf5bc32e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057556"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934370"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>在 Visual Studio 中自定义窗口布局
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +57,7 @@ ms.locfileid: "53057556"
  如果需要在文档中一次查看或编辑两个位置，可以拆分窗口。 若要将文档划分为两个独立滚动部分，请单击 **“窗口”** 菜单上的 **“拆分”** 。 单击 **“窗口”** 菜单上的 **“取消拆分”** 还原为单一视图。
 
 ### <a name="toolbars"></a>工具栏
- 可以通过拖动或通过使用 **“自定义”** 对话框排列工具栏。 有关如何定位和自定义工具栏的详细信息，请参阅[如何： 自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
+ 可以通过拖动或通过使用 **“自定义”** 对话框排列工具栏。 有关如何定位和自定义工具栏的详细信息，请参阅[如何：自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
 
 ## <a name="arranging-and-docking-windows"></a>排列和停靠窗口
  文档窗口和工具窗口都可以 *“停靠”*，以便其在 IDE 窗口框架中具有位置或大小，或作为独立于 IDE 的单独窗口而浮动。 工具窗口可停靠在 IDE 框架内任意位置，某些工具窗口可作为选项卡式窗口停靠在编辑器框架中。 文档窗口可以停靠在编辑器框架内，且可按选项卡顺序固定到其当前位置。 可以停靠多个窗口，使其共同浮动在 IDE 上方或外部的同一个“筏”中。 也可以隐藏或最小化工具窗口。
@@ -182,7 +181,7 @@ ms.locfileid: "53057556"
 
 ## <a name="related-topics"></a>相关主题
 
-|标题|说明|
+|Title|说明|
 |-----------|-----------------|
 |[窗口类型](../misc/kinds-of-windows.md)|讨论 IDE 中的工具窗口与文档窗口的区别。|
 |[如何：排列和停靠窗口](../misc/how-to-arrange-and-dock-windows.md)|描述如何停靠、自动隐藏和平铺窗口，还描述如何重置窗口布局。|

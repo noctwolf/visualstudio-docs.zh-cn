@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetCurrentScriptThreadID |Microsoft 文档
+title: IActiveScript::GetCurrentScriptThreadID |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5921dc4d0f9a9bf0d505fece0f47354cb16d440c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bac3b5755328e643c26c8f3746af6648d8ac06aa
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640787"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094623"
 ---
 # <a name="iactivescriptgetcurrentscriptthreadid"></a>IActiveScript::GetCurrentScriptThreadID
-检索当前正在执行的线程的脚本引擎定义标识符。 标识符可以如脚本线程执行控制方法的后续调用中使用[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)方法。  
+检索当前正在执行的线程的脚本引擎定义标识符。 标识符可以如对脚本线程执行控制方法的后续调用中使用[iactivescript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)方法。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetCurrentScriptThreadID(  
     SCRIPTTHREADID *pstidThread  // receives scripting thread identifier  
 );  
@@ -38,13 +38,13 @@ HRESULT GetCurrentScriptThreadID(
   
 #### <a name="parameters"></a>参数  
  `pstidThread`  
- [out]接收与当前线程关联的脚本线程标识符的变量的地址。 此标识符的解释为从左到脚本引擎中，但它可以是只是一份 Windows 线程标识符。 如果 Win32 线程终止，此标识符将为未分配，并且随后可以分配给另一个线程。  
+ [out]一个变量来接收与当前线程关联的脚本线程标识符的地址。 此标识符的解释为从左到脚本引擎，但它可以只是一份 Windows 线程标识符。 如果 Win32 线程终止，此标识符将成为未分配，并且随后可分配给另一个线程。  
   
 ## <a name="return-value"></a>返回值  
  返回`S_OK`如果成功，或`E_POINTER`如果指定了无效的指针。  
   
 ## <a name="remarks"></a>备注  
- 此方法可以从非基本线程调用不会导致为主机对象或设置为非基本标注[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)接口。  
+ 此方法可以从非基础线程调用不会导致到主机对象或一个非基本标注[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScript](../../winscript/reference/iactivescript.md)

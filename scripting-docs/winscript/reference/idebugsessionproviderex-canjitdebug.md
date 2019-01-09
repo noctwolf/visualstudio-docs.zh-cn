@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProviderEx:CanJITDebug |Microsoft 文档
+title: IDebugSessionProviderEx:CanJITDebug |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1dd2f9245f6691b2faaae75e064a299a22c59255
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: edde03cbb72f090bf6e8432721866de06d7b439e
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726867"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087459"
 ---
 # <a name="idebugsessionproviderexcanjitdebug"></a>IDebugSessionProviderEx:CanJITDebug
-确定是否可以与实时调试调试指定的进程。  
+确定指定的进程是否可调试实时调试。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT CanJITDebug(  
    DWORD  pid  
 );  
@@ -36,7 +36,7 @@ HRESULT CanJITDebug(
   
 #### <a name="parameters"></a>参数  
  `pid`  
- [in]要调试进程的进程标识符。  
+ [in]要调试的进程的进程标识符。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -47,5 +47,5 @@ HRESULT CanJITDebug(
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugSessionProviderEx 接口](../../winscript/reference/idebugsessionproviderex-interface.md)

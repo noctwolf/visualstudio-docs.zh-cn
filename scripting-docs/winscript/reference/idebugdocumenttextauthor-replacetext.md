@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::ReplaceText |Microsoft 文档
+title: IDebugDocumentTextAuthor::ReplaceText |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aa7ef34d035ad89a096414c285b4f66a4f4fa1e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 579d0ef243de7cd9bfcb821e75aa5ca213712a88
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726697"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090592"
 ---
 # <a name="idebugdocumenttextauthorreplacetext"></a>IDebugDocumentTextAuthor::ReplaceText
 替换文档中的文本。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT ReplaceText(  
    ULONG    cCharacterPosition,  
    ULONG    cNumToReplace,  
@@ -46,17 +46,17 @@ HRESULT ReplaceText(
  [in]要替换的字符数。  
   
  `pcharText[]`  
- [in]包含新的字符来替换旧的字符的缓冲区。  
+ [in]包含要替换旧的字符的新字符的缓冲区。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
  此方法将替换文档中的文本。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentTextAuthor 接口](../../winscript/reference/idebugdocumenttextauthor-interface.md)

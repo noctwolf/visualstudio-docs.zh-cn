@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::DisconnectDebugger |Microsoft 文档
+title: IRemoteDebugApplication::DisconnectDebugger |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: facbe73a404ace07ad91e403a26e94008d0a3e67
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e7146082d0311ec758024fdc4d50e4506bd3ec85
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729197"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094661"
 ---
 # <a name="iremotedebugapplicationdisconnectdebugger"></a>IRemoteDebugApplication::DisconnectDebugger
 断开当前的调试器与应用程序的连接。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT DisconnectDebugger();  
 ```  
   
 #### <a name="parameters"></a>参数  
- 此方法采用任何参数。  
+ 此方法需要任何参数。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -45,7 +45,7 @@ HRESULT DisconnectDebugger();
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法在应用程序中断开当前的调试器。  
+ 此方法从应用程序断开连接当前的调试器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IRemoteDebugApplication 接口](../../winscript/reference/iremotedebugapplication-interface.md)

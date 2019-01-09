@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ResumeFromBreakPoint |Microsoft 文档
+title: IRemoteDebugApplication::ResumeFromBreakPoint |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5da5fdbaaf74f463161f1a98bbad7d4d147b418d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0603ef19426e27324daa39bf769e2c0667477be3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729857"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089071"
 ---
 # <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
-继续的应用程序当前正在断点。  
+继续当前断点的应用程序。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT ResumeFromBreakPoint(  
    IRemoteDebugApplicationThread*  prptFocus,  
    BREAKRESUMEACTION               bra,  
@@ -40,10 +40,10 @@ HRESULT ResumeFromBreakPoint(
   
 #### <a name="parameters"></a>参数  
  `prptFocus`  
- [in]单步执行模式，这是通过单步执行模式影响的线程。  
+ [in]单步执行模式，这是受到影响的单步执行模式的线程。  
   
  `bra`  
- [in]一旦恢复了应用程序执行的操作。  
+ [in]要在恢复应用程序时执行的操作。  
   
  `era`  
  [in]要在应用程序因出错而停止的情况下执行的操作。  
@@ -51,14 +51,14 @@ HRESULT ResumeFromBreakPoint(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法继续的应用程序当前正在断点。  
+ 此方法将继续当前断点的应用程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IRemoteDebugApplication 接口](../../winscript/reference/iremotedebugapplication-interface.md)   
  [BREAKRESUMEACTION 枚举](../../winscript/reference/breakresumeaction-enumeration.md)   
  [ERRORRESUMEACTION 枚举](../../winscript/reference/errorresumeaction-enumeration.md)

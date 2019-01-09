@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnDestroyThread |Microsoft 文档
+title: IRemoteDebugApplicationEvents::OnDestroyThread |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af2d671a6c93cde39c2e3e644243d666e1cd5d46
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 53e07b7f90068dac5b39b1dedfd2bb91d65540f2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728417"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086471"
 ---
 # <a name="iremotedebugapplicationeventsondestroythread"></a>IRemoteDebugApplicationEvents::OnDestroyThread
 处理线程销毁事件。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT OnDestroyThread(  
    IRemoteDebugApplicationThread*  prdat  
 );  
@@ -43,12 +43,12 @@ HRESULT OnDestroyThread(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
  此方法可处理线程销毁事件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IRemoteDebugApplicationEvents 接口](../../winscript/reference/iremotedebugapplicationevents-interface.md)

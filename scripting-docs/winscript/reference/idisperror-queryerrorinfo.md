@@ -1,5 +1,5 @@
 ---
-title: IDispError::QueryErrorInfo |Microsoft 文档
+title: IDispError::QueryErrorInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a165edf2d8f9a0b386daa0035ece1a722401a443
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 01c33ab9ef187f5bf9d6146e23c4534a33844cec
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726977"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091775"
 ---
 # <a name="idisperrorqueryerrorinfo"></a>IDispError::QueryErrorInfo
-检索特定类型的错误信息。  
+检索特定类型的错误的信息。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT QueryErrorInfo(  
    GUID  guidErrorType,  
    IDispError**  ppde  
@@ -42,7 +42,7 @@ HRESULT QueryErrorInfo(
  [in]指定错误类型的 GUID。  
   
  `ppde`  
- [out]指定的 IDispError 对象。  
+ [out]指定 IDispError 对象。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -52,10 +52,10 @@ HRESULT QueryErrorInfo(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- `QueryErrorInfo`方法检索特定类型的错误信息。  
+ `QueryErrorInfo`方法检索特定类型的错误的信息。  
   
 > [!NOTE]
 >  未实现此方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDispError 接口](../../winscript/reference/idisperror-interface.md)

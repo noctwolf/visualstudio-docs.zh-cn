@@ -1,5 +1,5 @@
 ---
-title: IDebugCookie::SetDebugCookie |Microsoft 文档
+title: IDebugCookie::SetDebugCookie |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1155b00750cfe2a91625ba0f531622f381467198
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d67ea7f4cc8a27364226a613c77d837f476c2530
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725817"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095038"
 ---
 # <a name="idebugcookiesetdebugcookie"></a>IDebugCookie::SetDebugCookie
 设置调试应用程序 cookie。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT SetDebugCookie(  
    DWORD  dwDebugAppCookie  
 );  
@@ -48,7 +48,7 @@ HRESULT SetDebugCookie(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 此方法会设置该调试应用程序 cookie，允许多个调试器附加到进程。  
+ 此方法设置调试应用程序 cookie，从而允许多个调试器附加到进程。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugCookie 接口](../../winscript/reference/idebugcookie-interface.md)

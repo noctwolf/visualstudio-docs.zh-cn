@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Unadvise |Microsoft 文档
+title: ISimpleConnectionPoint::Unadvise |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f926f206bb8a27e6265fd147909a5adb13c3543
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 83fdf8f6a6e9378d328a9df61b1561a1ae747ae8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733897"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089255"
 ---
 # <a name="isimpleconnectionpointunadvise"></a>ISimpleConnectionPoint::Unadvise
-终止通过以前建立的通知连接`ISimpleConnectionPoint::Advise`。  
+终止先前通过建立的通知连接`ISimpleConnectionPoint::Advise`。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT Unadvise(  
    DWORD  dwCookie  
 );  
@@ -38,7 +38,7 @@ HRESULT Unadvise(
   
 #### <a name="parameters"></a>参数  
  `dwCookie`  
- [in]连接后，若要终止，从返回的令牌`ISimpleConnectionPoint::Advise`。  
+ [in]若要终止，从返回的连接令牌`ISimpleConnectionPoint::Advise`。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -48,7 +48,7 @@ HRESULT Unadvise(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 终止时通知连接，连接点调用`Release`期间连接已保存的指针上方法`ISimpleConnectionPoint::Advise`方法。 调用反向`AddRef`期间执行`ISimpleConnectionPoint::Advise`当连接点调用通知接收器`QueryInterface`。  
+ 连接终止的通知连接时, 点调用`Release`期间连接的指针上的已保存方法`ISimpleConnectionPoint::Advise`方法。 调用反转`AddRef`的执行期间`ISimpleConnectionPoint::Advise`的连接点时调用的通知接收器`QueryInterface`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ISimpleConnectionPoint 接口](../../winscript/reference/isimpleconnectionpoint-interface.md)

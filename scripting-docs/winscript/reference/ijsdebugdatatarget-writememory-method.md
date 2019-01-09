@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Writememory 方法 |Microsoft 文档'
+title: 'Ijsdebugdatatarget:: Writememory 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed562c1cbdd645da6cca87e45f272c25f8bc0d4b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2dfc8db8d79dbca388b1792a58169b7dbe17151
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727897"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089279"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>IJsDebugDataTarget::WriteMemory 方法
 读取目标进程的内存。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT WriteMemory(  
    UINT64 address,  
    const BYTE *pMemory,  
@@ -38,21 +38,21 @@ HRESULT WriteMemory(
   
 #### <a name="parameters"></a>参数  
  `address`  
- [in]从中写入目标进程的内存基址。  
+ [in]要写入目标进程的内存基址。  
   
  `pMemory`  
  [in]要写入指定的进程的地址空间中的数据。  
   
  `size`  
- [in]要写入到进程的字节数。  
+ [in]要写入进程的字节数。  
   
 ## <a name="return-value"></a>返回值  
   
 ## <a name="remarks"></a>备注  
- 数据传输发生之前，系统将验证的基址和指定大小的内存中的所有数据以进行写访问，可访问，并且如果它是不可访问，该函数将引发 E_JsDEBUG_INVALID_MEMORY_ADDRESS 错误。  
+ 传输数据之前，系统将验证的基址和指定大小的内存中的所有数据以进行写访问，可访问，并且如果它是不可访问，该函数将引发 E_JsDEBUG_INVALID_MEMORY_ADDRESS 错误。  
   
 ## <a name="requirements"></a>要求  
  **标头：** jscript9diag.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IJsDebugDataTarget 接口](../../winscript/reference/ijsdebugdatatarget-interface.md)

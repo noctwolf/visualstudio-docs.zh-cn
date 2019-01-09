@@ -10,17 +10,17 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], attachments
 - mail items [Office development in Visual Studio], attachments
 - attachments [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d8290d354f811795ba83975c406565d17817fa0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ff75135169bbe2fd138a5e55dedbc859194d4455
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866460"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54090735"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>如何：以编程方式将文件附加到 Outlook 电子邮件项
   此示例将文件附加到新的邮件项，并将其发送到 Armando Pinto。 该示例假定一个人名叫 Armando Pinto 存在作为接收方。  

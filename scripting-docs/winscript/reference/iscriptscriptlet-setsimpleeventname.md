@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSimpleEventName |Microsoft 文档
+title: IScriptScriptlet::SetSimpleEventName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 958478d8c8ead6500711a7866a784235adb869b8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 78e1ec5cddd28bc80a29789bf800eb49d0236972
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733757"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091463"
 ---
 # <a name="iscriptscriptletsetsimpleeventname"></a>IScriptScriptlet::SetSimpleEventName
-设置与 scriptlet 相关联的简单事件名称。 这是不包含任何空格的单个词名称。  
+设置与 scriptlet 相关联的简单事件名称。 这是不包含任何空白区域的单个词名称。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT SetSimpleEventName(  
    LPCOLESTR          psz  
 );  
@@ -38,7 +38,7 @@ HRESULT SetSimpleEventName(
   
 #### <a name="parameters"></a>参数  
  `psz`  
- [in]包含与关联的简单事件名称的缓冲区`IScriptScriptlet`对象。  
+ [in]包含与之关联的简单事件名称的缓冲区`IScriptScriptlet`对象。  
   
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -49,5 +49,5 @@ HRESULT SetSimpleEventName(
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IScriptScriptlet 接口](../../winscript/reference/iscriptscriptlet-interface.md)

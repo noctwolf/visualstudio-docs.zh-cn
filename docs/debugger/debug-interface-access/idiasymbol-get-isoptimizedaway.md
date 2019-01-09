@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isOptimizedAway |Microsoft 文档
-ms.custom: ''
+title: IDiaSymbol::get_isOptimizedAway |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a0dd37a718a468b43547cf77b8611264f909564
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 887bcaae0e87aabd3f2ecd9a051d33b0b41ed771
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462339"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917392"
 ---
 # <a name="idiasymbolgetisoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
-指定是否变量优化掉。  
+指定该变量优化掉。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,7 +29,7 @@ HRESULT get_isOptimizedAway(
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]指向的指针`BOOL`，它指定是否变量优化掉。  
+ [out]一个指向`BOOL`，它指定该变量优化掉。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  

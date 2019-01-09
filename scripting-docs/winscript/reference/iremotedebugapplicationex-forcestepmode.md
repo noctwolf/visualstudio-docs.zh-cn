@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEx:ForceStepMode |Microsoft 文档
+title: IRemoteDebugApplicationEx:ForceStepMode |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: add26689122ffe4944b4bbad15106a825d43ccf0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 771c17fdb8f2bea77959bc53b8d98fd10399a142
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728897"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094752"
 ---
 # <a name="iremotedebugapplicationexforcestepmode"></a>IRemoteDebugApplicationEx:ForceStepMode
-强制为单步模式调试器。  
+强制调试器单步执行模式。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT ForceStepMode(  
    IRemoteDebugApplicationThread*  pStepThread  
 );  
@@ -38,16 +38,16 @@ HRESULT ForceStepMode(
   
 #### <a name="parameters"></a>参数  
  `pStepThread`  
- [in]进程调试监视器来单步的线程。 如果为 null，则 PDM 清除其单步执行的线程。  
+ [in]进程调试监视器单步的线程。 如果为 null，PDM 清除其单步执行线程。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IRemoteDebugApplicationEx 接口](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)

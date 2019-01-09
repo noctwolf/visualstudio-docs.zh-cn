@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStatEx |Microsoft 文档
+title: IActiveScriptStats::GetStatEx |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb8adf27811f3046de7b447e537443ef129a8c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 824546b64323f7fb88c4ec016f8420169afa665c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725087"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097326"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
 返回自定义脚本统计信息。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetStatEx(  
    REFGUID  guid,  
    ULONG*   pluHi,  
@@ -43,10 +43,10 @@ HRESULT GetStatEx(
  [in]指定要返回的统计信息。 语义的统计信息对应于特定 GUID 是完全定义的引擎。  
   
  `pluHi`  
- [out]表示该统计信息的 64 位无符号整数的高 32 位。  
+ [out]表示统计信息的 64 位无符号整数的高 32 位。  
   
  `pluLo`  
- [out]表示该统计信息的 64 位无符号整数的低 32 位。  
+ [out]表示统计信息的 64 位无符号整数的低 32 位。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -57,11 +57,11 @@ HRESULT GetStatEx(
 |`E_NOTIMPL`|未实现方法。|  
   
 ## <a name="remarks"></a>备注  
- 此方法允许自定义脚本引擎能够将自定义主机返回统计信息的有意义。  
+ 此方法允许自定义脚本引擎返回统计信息的自定义主机到有意义。  
   
 > [!NOTE]
->  当前未实现此方法。  
+>  目前尚未实现此方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
  [IActiveScriptStats 接口](../../winscript/reference/iactivescriptstats-interface.md)

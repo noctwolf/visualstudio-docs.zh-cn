@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteInterruptPoll::QueryContinue |Microsoft 文档
+title: IActiveScriptSiteInterruptPoll::QueryContinue |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,24 +18,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93323d500ae7e99957c365d60741fa612ba0fc34
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9b43211dca57a404d5625cfc2d7ede67a70a0a40
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725157"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087979"
 ---
 # <a name="iactivescriptsiteinterruptpollquerycontinue"></a>IActiveScriptSiteInterruptPoll::QueryContinue
-允许主机可以指定脚本应终止。  
+使宿主可以指定应终止脚本。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT QueryContinue();  
 ```  
   
 #### <a name="parameters"></a>参数  
- 此方法采用任何参数。  
+ 此方法需要任何参数。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -43,13 +43,13 @@ HRESULT QueryContinue();
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|调用成功，且主机允许脚本继续运行。|  
-|`S_FALSE`|成功的调用和脚本终止主机请求。|  
+|`S_FALSE`|成功的调用和脚本终止的主机请求。|  
   
 ## <a name="remarks"></a>备注  
- 托管的脚本应终止除非的返回值`QueryContinue`方法是`S_OK`。 返回值`S_FALSE`指示主机显式请求脚本终止。  
+ 除非承载的脚本应终止的返回值`QueryContinue`方法是`S_OK`。 返回值为`S_FALSE`指示主机显式请求脚本终止。  
   
  可以使用多线程的主机`IActiveScript::InterruptScriptThread`方法终止脚本。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptSiteInterruptPoll 接口](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

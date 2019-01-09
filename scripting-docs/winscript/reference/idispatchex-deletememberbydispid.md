@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByDispID |Microsoft 文档
+title: IDispatchEx::DeleteMemberByDispID |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 573eb60dc901e43706835c4d627b25bd54bbe751
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: de99e74cf12939a31c99cdc59ce8ad7fd685ae03
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727747"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086861"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
-删除一个成员的 DISPID。  
+删除成员的 DISPID。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT DeleteMemberByDispID(  
     DISPID id  
 );  
@@ -38,10 +38,10 @@ HRESULT DeleteMemberByDispID(
   
 #### <a name="parameters"></a>参数  
  `id`  
- 成员标识符。 使用`GetDispID`或`GetNextDispID`若要获取调度标识符。  
+ 成员标识符。 使用`GetDispID`或`GetNextDispID`若要获取的调度标识符。  
   
 ## <a name="return-value"></a>返回值  
- 返回下列值之一：  
+ 返回以下值之一：  
   
 |||  
 |-|-|  
@@ -49,13 +49,13 @@ HRESULT DeleteMemberByDispID(
 |`S_FALSE`|成员存在，但不能删除。|  
   
 ## <a name="remarks"></a>备注  
- 如果删除成员，则需要保持对有效 DISPID `GetNextDispID`。  
+ 如果删除该成员，则需要保持有效，DISPID `GetNextDispID`。  
   
- 如果删除具有给定名称的成员，并且以后重新创建具有相同名称的成员，DISPID 应相同。 （只有大小写不同的成员名称是否"相同"与对象相关。）  
+ 如果删除具有给定名称的成员，并且以后重新创建具有相同名称的成员，DISPID 应相同。 （仅大小写不同的成员名称是否"相同"与对象相关。）  
   
 ## <a name="example"></a>示例  
   
-```  
+```cpp
 BSTR bstrName;  
 DISPID dispid;  
 IDispatchEx *pdex;   
@@ -65,7 +65,7 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
     pdex->DeleteMemberByDispID(dispid);  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDispatchEx 接口](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

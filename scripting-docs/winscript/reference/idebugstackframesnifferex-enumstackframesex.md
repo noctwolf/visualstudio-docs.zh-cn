@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSnifferEx::EnumStackFramesEx |Microsoft 文档
+title: IDebugStackFrameSnifferEx::EnumStackFramesEx |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a96a382c1dce73731fdd4326d8b0d1c35b7aa33
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c34ce267113ae5576a8b3bdca9ac34d4abc00f7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727577"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086966"
 ---
 # <a name="idebugstackframesnifferexenumstackframesex"></a>IDebugStackFrameSnifferEx::EnumStackFramesEx
-返回当前线程的堆栈帧的枚举。  
+返回当前线程的堆栈帧的枚举器。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT EnumStackFramesEx(  
    DWORD_PTR                dwSpMin,  
    IEnumDebugStackFrames**  ppedsf  
@@ -39,7 +39,7 @@ HRESULT EnumStackFramesEx(
   
 #### <a name="parameters"></a>参数  
  `dwSpMin`  
- [in]枚举堆栈帧较低的地址限制。  
+ [in]枚举堆栈帧的较低的地址限制。  
   
  `ppedsf`  
  [out]当前线程的堆栈帧的枚举器。  
@@ -47,12 +47,12 @@ HRESULT EnumStackFramesEx(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 堆栈帧枚举器返回具有最近入栈的帧的堆栈顶部开始的帧。 枚举器包含仅具有地址大于或等于的堆栈帧`dwSpMin`。  
+ 堆栈帧枚举器返回具有最新入栈帧的堆栈顶部开始的帧。 枚举数包含仅具有地址大于或等于堆栈帧`dwSpMin`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugStackFrameSnifferEx 接口](../../winscript/reference/idebugstackframesnifferex-interface.md)

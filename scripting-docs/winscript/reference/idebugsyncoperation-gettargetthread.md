@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::GetTargetThread |Microsoft 文档
+title: IDebugSyncOperation::GetTargetThread |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df3e65d53e20dd51d045f26855c4f5e058dff159
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a4ff27e3d91abe19608bbe10051814d7e0f71af7
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726877"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096702"
 ---
 # <a name="idebugsyncoperationgettargetthread"></a>IDebugSyncOperation::GetTargetThread
 返回此同步操作的目标应用程序线程。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetTargetThread(  
    IDebugApplicationThread**  ppatTarget  
 );  
@@ -38,7 +38,7 @@ HRESULT GetTargetThread(
   
 #### <a name="parameters"></a>参数  
  `ppatTarget`  
- [out]此同步操作的中的目标应用程序线程。  
+ [out]此同步操作在目标应用程序线程。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -50,5 +50,5 @@ HRESULT GetTargetThread(
 ## <a name="remarks"></a>备注  
  此方法返回此同步操作的目标应用程序线程。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugSyncOperation 接口](../../winscript/reference/idebugsyncoperation-interface.md)

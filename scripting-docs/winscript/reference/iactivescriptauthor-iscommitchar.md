@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::IsCommitChar |Microsoft 文档
+title: IActiveScriptAuthor::IsCommitChar |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67dcdd7107372ee2766d59374a1d5aa9eb98576d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8c2446cf57417434a1925fab24f51e8b34694775
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645557"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096169"
 ---
 # <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
-返回一个值，该值指示给定的字符是否应由应用程序触发语句完成提交。  
+返回一个值，指示给定的字符是否应由应用程序触发语句完成提交。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT IsCommitChar(  
    OLECHAR    ch,  
    BOOL       *pfcommit  
@@ -42,7 +42,7 @@ HRESULT IsCommitChar(
  [in]要测试的字符。  
   
  `pfcommit`  
- [out]`True`如果字符是提交字符; 否则为`False`。  
+ [out]`True`字符是否提交字符; 否则为`False`。  
   
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -53,5 +53,5 @@ HRESULT IsCommitChar(
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptAuthor 接口](../../winscript/reference/iactivescriptauthor-interface.md)

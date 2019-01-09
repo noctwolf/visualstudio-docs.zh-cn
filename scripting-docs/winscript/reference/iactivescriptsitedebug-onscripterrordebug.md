@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug::OnScriptErrorDebug |Microsoft 文档
+title: IActiveScriptSiteDebug::OnScriptErrorDebug |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a669d435d84295b22af4298936babf8439eaefa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5680d22ffa5ec648afaced5e98f651e35758f929
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724987"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092113"
 ---
 # <a name="iactivescriptsitedebugonscripterrordebug"></a>IActiveScriptSiteDebug::OnScriptErrorDebug
-允许智能主机，以便确定如何处理运行时错误。  
+允许智能主机以确定如何处理运行时错误。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT OnScriptErrorDebug(  
    IActiveScriptErrorDebug*  pErrorDebug,  
    BOOL*                     pfEnterDebugger,  
@@ -43,20 +43,20 @@ HRESULT OnScriptErrorDebug(
  [in]发生的运行时错误  
   
  `pfEnterDebugger`  
- [out]标志，该值指示是否将错误传递到调试器执行 JIT 调试。  
+ [out]指示是否将错误传递给调试程序执行 JIT 调试标记。  
   
  `pfCallOnScriptErrorWhenContinuing`  
- [out]标志，该值指示是否调用`IActiveScriptSite::OnScriptError`当用户决定继续而不进行调试。  
+ [out]指示是否将调用`IActiveScriptSite::OnScriptError`当用户决定继续而不进行调试。  
   
 ## <a name="return-value"></a>返回值  
- 该方法返回 `HRESULT`。 可能的值包括，但不限于以下表中的值。  
+ 该方法返回 `HRESULT`。 可能的值包括但不限于以下表中的值。  
   
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 智能宿主可以使用此方法来确定如何处理运行时错误。  
+ 智能主机可以使用此方法来确定如何处理运行时错误。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptSiteDebug 接口](../../winscript/reference/iactivescriptsitedebug-interface.md)

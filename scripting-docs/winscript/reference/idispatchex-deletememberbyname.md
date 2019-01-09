@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByName |Microsoft 文档
+title: IDispatchEx::DeleteMemberByName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5cb9a9dfd979954c42101fde41819d7e12db59e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1866b5135d2c98ccacb34c2c776c69dd7d25db3f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728127"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096429"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
-按名称删除成员。  
+按名称删除一个成员。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT DeleteMemberByName(  
    BSTR bstrName,  
    DWORD grfdex  
@@ -39,18 +39,18 @@ HRESULT DeleteMemberByName(
   
 #### <a name="parameters"></a>参数  
  `bstrName`  
- 要删除的成员名称。  
+ 要删除的成员的名称。  
   
  `grfdex`  
- 确定是否区分大小写的成员名称。 这可以是下列值之一：  
+ 确定成员名称是否区分大小写。 这可以是下列值之一：  
   
 |值|含义|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|在区分大小写方式中进行的名称查找的请求。 可以忽略不支持区分大小写查找的对象。|  
-|fdexNameCaseInsensitive|在不区分大小写方式中进行的名称查找的请求。 可以忽略不支持不区分大小写查找的对象。|  
+|fdexNameCaseSensitive|名称查找区分大小写的方式完成的请求。 可以忽略不支持区分大小写查找的对象。|  
+|fdexNameCaseInsensitive|该名称查找可在不区分大小写的方式完成的请求。 可以忽略不支持不区分大小写查找的对象。|  
   
 ## <a name="return-value"></a>返回值  
- 返回下列值之一：  
+ 返回以下值之一：  
   
 |||  
 |-|-|  
@@ -58,13 +58,13 @@ HRESULT DeleteMemberByName(
 |`S_FALSE`|成员存在，但不能删除。|  
   
 ## <a name="remarks"></a>备注  
- 如果删除成员，则需要保持对有效 DISPID `GetNextDispID`。  
+ 如果删除该成员，则需要保持有效，DISPID `GetNextDispID`。  
   
- 如果删除具有给定名称的成员，并且以后重新创建具有相同名称的成员，DISPID 应相同。 （只有大小写不同的成员是否"相同"与对象相关。）  
+ 如果删除具有给定名称的成员，并且以后重新创建具有相同名称的成员，DISPID 应相同。 （仅大小写不同的成员是否是"相同"与对象相关。）  
   
 ## <a name="example"></a>示例  
   
-```  
+```cpp
 BSTR bstrName;  
 IDispatchEx *pdex;  
   
@@ -72,5 +72,5 @@ IDispatchEx *pdex;
 pdex->DeleteMemberByName(bstrName, fdexNameCaseSensitive);  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDispatchEx 接口](../../winscript/reference/idispatchex-interface.md)

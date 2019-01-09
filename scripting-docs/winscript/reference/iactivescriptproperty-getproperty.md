@@ -18,19 +18,19 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cd5c7ac948a9001688de69f9db9ee31624ca33d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0e68cb73b1b94b84d5133e1c7489bc8bf6309aea
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284134"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091294"
 ---
 # <a name="iactivescriptpropertygetproperty"></a>IActiveScriptProperty::GetProperty
 获取由参数指定的属性。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetProperty(  
 // The property value:  
     uint dwProperty,    
@@ -53,7 +53,7 @@ HRESULT GetProperty(
   
  允许使用值`dwProperty`以下表所述。  
   
-|返回的常量|“值”|含义|  
+|返回的常量|值|含义|  
 |--------------|-----------|-------------|  
 |SCRIPTPROP_INTEGERMODE|0x00003000|强制将整数模式而不是浮动点模式中的脚本引擎。|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|允许脚本引擎要替换的字符串比较功能。|  

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEx:GetHostPid |Microsoft 文档
+title: IRemoteDebugApplicationEx:GetHostPid |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ffb5ff1d23c832f5710abf6d97199afe3f777b67
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7570abb8436a49fb80f548d1a7136bf0fe7e0814
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728577"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54091450"
 ---
 # <a name="iremotedebugapplicationexgethostpid"></a>IRemoteDebugApplicationEx:GetHostPid
 返回主机应用程序的进程 ID。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetHostPid(  
    DWORD*  dwHostPid  
 );  
@@ -43,12 +43,12 @@ HRESULT GetHostPid(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
  由 IDE。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IRemoteDebugApplicationEx 接口](http://msdn.microsoft.com/en-us/2f65fa67-06b7-4053-8945-22383ab66343)

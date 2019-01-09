@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::QueryCurrentThreadIsDebuggerThread |Microsoft 文档
+title: IDebugApplication::QueryCurrentThreadIsDebuggerThread |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,35 +18,35 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bbd09a19212df3c91bf8222eb78b88f7c0b674fd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 12febbc2cc7aeaee5113c38837e073bba10d7a17
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725337"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087628"
 ---
 # <a name="idebugapplicationquerycurrentthreadisdebuggerthread"></a>IDebugApplication::QueryCurrentThreadIsDebuggerThread
-确定当前正在运行的线程是否调试器线程。  
+确定当前正在运行的线程是调试器线程。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT QueryCurrentThreadIsDebuggerThread();  
 ```  
   
 #### <a name="parameters"></a>参数  
- 此方法采用任何参数。  
+ 此方法需要任何参数。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|`S_OK`|方法成功和当前正在运行的线程是调试器线程。|  
+|`S_OK`|该方法成功，并且当前正在运行的线程是调试器线程。|  
 |`S_FALSE`|当前正在运行的线程不是调试器线程。|  
   
 ## <a name="remarks"></a>备注  
- 此方法确定是否当前正在运行的线程为调试器线程。  
+ 此方法确定当前正在运行的线程是调试器线程。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)

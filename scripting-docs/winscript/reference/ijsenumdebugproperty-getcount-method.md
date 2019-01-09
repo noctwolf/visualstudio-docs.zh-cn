@@ -1,5 +1,5 @@
 ---
-title: 'Ijsenumdebugproperty:: Getcount 方法 |Microsoft 文档'
+title: 'Ijsenumdebugproperty:: Getcount 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2ab4f9dc2ae3e6668fa13b27b1b91714563cd6f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c078ef4f5136a23d67f9d4bcc7169c52d2c3c861
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727687"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54095597"
 ---
 # <a name="ijsenumdebugpropertygetcount-method"></a>IJsEnumDebugProperty::GetCount 方法
-获取该对象的属性数目。  
+获取该对象的属性数。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetCount(  
    ULONG *pCount  
 );  
@@ -43,5 +43,5 @@ HRESULT GetCount(
 ## <a name="requirements"></a>要求  
  **标头：** jscript9diag.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IJsEnumDebugProperty 接口](../../winscript/reference/ijsenumdebugproperty-interface.md)

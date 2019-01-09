@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback2::OnFunctionEnterByName |Microsoft 文档
+title: IActiveScriptProfilerCallback2::OnFunctionEnterByName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea74d9e9e00485c86d26bb01c486992f85ffeb8f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 40c527881c45a935344aa5444d7397ccdb6d99e4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724487"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54092490"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionenterbyname"></a>IActiveScriptProfilerCallback2::OnFunctionEnterByName
-通知脚本引擎将执行文档对象模型 (DOM) 函数调用的探查器对象。  
+通知探查器对象的脚本引擎会执行文档对象模型 (DOM) 函数调用。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT OnFunctionEnterByName(  
     [in] [string] const WCHAR *pwszFunctionName,  
     [in] PROFILER_SCRIPT_TYPE scriptType);  
@@ -34,17 +34,17 @@ HRESULT OnFunctionEnterByName(
   
 #### <a name="parameters"></a>参数  
  `pwszFunctionName`  
- [in]脚本引擎将执行的函数名称。  
+ [in]脚本引擎会执行该函数的名称。  
   
  `scriptType`  
- [in]函数的类型。 有关有效值的说明，请参阅[PROFILER_SCRIPT_TYPE 枚举](../../winscript/reference/profiler-script-type-enumeration.md)。  
+ [in]该函数的类型。 有关有效值的说明，请参阅[PROFILER_SCRIPT_TYPE 枚举](../../winscript/reference/profiler-script-type-enumeration.md)。  
   
 ## <a name="return-value"></a>返回值  
- 通过脚本引擎忽略此方法的返回值。  
+ 此方法的返回值是脚本引擎忽略。  
   
 ## <a name="remarks"></a>备注  
  对于 DOM 调用，脚本引擎调用此方法而不是调用[IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)。 这是由于大量的唯一方法和属性的数组。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)   
  [IActiveScriptProfilerCallback2 接口](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

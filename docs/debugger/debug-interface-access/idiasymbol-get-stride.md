@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_stride |Microsoft 文档
-ms.custom: ''
+title: IDiaSymbol::get_stride |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 30f32bd7f69d303ec6050534f54e389cd2f69873
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e6fccc85095b6868db4cfc403cfee58160341afb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906679"
 ---
 # <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
-检索矩阵或 strided 数组的步幅。  
+检索 strided 数组的矩阵的跨距。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,7 +29,7 @@ HRESULT get_stride(
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]指向的指针`DWORD`保存 stride。  
+ [out]一个指向`DWORD`保存跨距。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  

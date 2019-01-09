@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddNamedItem |Microsoft 文档
+title: IActiveScriptAuthor::AddNamedItem |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83d2597f8468bb97d20da655a56a751191ec4b55
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 85c434ea17d41fb98300289c3161349f9d9f5a2f
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645607"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094856"
 ---
 # <a name="iactivescriptauthoraddnameditem"></a>IActiveScriptAuthor::AddNamedItem
-将根级别项的名称添加到引擎的命名空间创作的脚本。 A*根级别项*是可以包含属性和方法，并且，还可以包含事件源的对象。  
+将根级别项的名称添加到引擎的命名空间创作的脚本。 一个*根级别项*是包含属性和方法，并且，还可以包含事件源的对象。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT AddNamedItem(  
    LPCOLESTR          pszName,  
    DWORD              dwFlags,  
@@ -40,19 +40,19 @@ HRESULT AddNamedItem(
   
 #### <a name="parameters"></a>参数  
  `pszName`  
- [in]查看脚本中的项的名称。 名称必须唯一且可持久化。  
+ [in]从脚本来查看的项的名称。 名称必须唯一且可持久化。  
   
  `dwFlags`  
- [in]与命名的项关联的标志。 可以是以下值的组合：  
+ [in]与命名项关联的标志。 可以是以下值的组合：  
   
-|常量|值|描述|  
+|返回的常量|“值”|描述|  
 |--------------|-----------|-----------------|  
-|SCRIPTITEM_ISVISIBLE|0x00000002|指示项的名称可用脚本的命名空间中。 这允许访问的项的属性、 方法和事件。<br /><br /> 按照约定，项目的属性包括项的子成员。 因此，所有子对象属性和方法 （和其子成员，以递归方式） 可访问。|  
-|SCRIPTITEM_ISSOURCE|0x00000004|指示项的源的事件，该脚本可以脚本事件处理程序。|  
-|SCRIPTITEM_GLOBALMEMBERS|0x00000008|指示项的全局属性和方法与脚本关联的集合。 其成员被编写为全局变量和方法。|  
-|SCRIPTITEM_ISPERSISTENT|0x00000040|指示是否已保存创作引擎的脚本应保存该项。|  
-|SCRIPTITEM_CODEONLY|0x00000200|表示命名的项表示的仅限代码的对象，它不具有成员来创作。|  
-|SCRIPTITEM_NOCODE|0x00000400|表示命名的项就是的名称在添加、，它具有执行任何操作来创作。|  
+|SCRIPTITEM_ISVISIBLE|0x00000002|指示项的名称是脚本的命名空间中可用。 这允许访问项的属性、 方法和事件。<br /><br /> 按照约定，项的属性包括项的子成员。 因此，所有子对象属性和方法 （和自身的子成员，以递归方式） 进行访问。|  
+|SCRIPTITEM_ISSOURCE|0x00000004|指示该脚本可以具有脚本事件处理程序的项目源的事件。|  
+|SCRIPTITEM_GLOBALMEMBERS|0x00000008|指示该项全局属性和方法以与脚本关联的集合。 其成员被编写为全局变量和方法。|  
+|SCRIPTITEM_ISPERSISTENT|0x00000040|指示是否保存脚本创作引擎应保存该项。|  
+|SCRIPTITEM_CODEONLY|0x00000200|指示命名的项表示仅限代码的对象，并且它不具有成员来创作。|  
+|SCRIPTITEM_NOCODE|0x00000400|指示命名的项是要添加的名称，并且没有要创作。|  
   
  `pdisp`  
  [in]`IDispatch`的`NamedItem`用于收集方法、 属性或事件源的对象。  
@@ -60,12 +60,12 @@ HRESULT AddNamedItem(
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptAuthor 接口](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::RemoveNamedItem](../../winscript/reference/iactivescriptauthor-removenameditem.md)

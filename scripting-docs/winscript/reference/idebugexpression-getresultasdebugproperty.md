@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsDebugProperty |Microsoft 文档
+title: IDebugExpression::GetResultAsDebugProperty |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6ce67df5dd55bd8c1ae55bb19fe2a19aed9e40f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6aebe983c33416d1c3d12d18c272fd1e4de27467
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727107"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093101"
 ---
 # <a name="idebugexpressiongetresultasdebugproperty"></a>IDebugExpression::GetResultAsDebugProperty
-返回为调试属性和操作的返回值的表达式计算的结果。  
+返回表达式计算作为一种调试属性和操作的返回值的结果。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetResultAsDebugProperty(  
    HRESULT*          phrResult,  
    IDebugProperty**  ppdp  
@@ -50,13 +50,13 @@ HRESULT GetResultAsDebugProperty(
 |值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_PENDING`|操作仍处于挂起状态。|  
+|`E_PENDING`|该操作仍是挂起。|  
   
 ## <a name="remarks"></a>备注  
  此方法返回作为表达式计算的结果`IDebugProperty`和操作的`HRESULT`。  
   
- 此方法返回`S_OK`和`phrResult`返回`E_ABORT`如果`Abort`将中止此操作。  
+ 此方法返回`S_OK`并`phrResult`返回`E_ABORT`如果`Abort`中止操作。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugExpression 接口](../../winscript/reference/idebugexpression-interface.md)   
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)

@@ -1,5 +1,5 @@
 ---
-title: IJsEnumDebugProperty 接口 |Microsoft 文档
+title: IJsEnumDebugProperty 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b4dfa2fab54c4475c603c3e4cbecc046ea90ab9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e7e30580952c7086a48a148b9bff4483cba98d4
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728057"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088252"
 ---
 # <a name="ijsenumdebugproperty-interface"></a>IJsEnumDebugProperty 接口
-提供浏览操作的属性。  
+提供属性浏览操作。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 IJsEnumDebugProperty : public IUnknown;  
 ```  
   
@@ -34,11 +34,11 @@ IJsEnumDebugProperty : public IUnknown;
   
 |名称|描述|  
 |----------|-----------------|  
-|[IJsEnumDebugProperty::GetCount 方法](../../winscript/reference/ijsenumdebugproperty-getcount-method.md)|获取该对象的属性数目。|  
+|[IJsEnumDebugProperty::GetCount 方法](../../winscript/reference/ijsenumdebugproperty-getcount-method.md)|获取该对象的属性数。|  
 |[IJsEnumDebugProperty::Next 方法](../../winscript/reference/ijsenumdebugproperty-next-method.md)|读取此对象的属性。|  
   
 ## <a name="requirements"></a>要求  
  **标头：** jscript9diag.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Windows 脚本接口参考](../../winscript/reference/windows-script-interfaces-reference.md)

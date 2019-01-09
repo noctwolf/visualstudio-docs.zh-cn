@@ -11,17 +11,17 @@ helpviewer_keywords:
 - StartCaching method
 - data caching [Office development in Visual Studio], programmatically
 - data [Office development in Visual Studio], caching
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd125e105681aa389a0c1b213fc5373b1177db6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46411ef1827f6a5adead8ff58e42eaf68e6c58ae
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960691"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088486"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>如何：以编程方式缓存中的 Office 文档的数据源
   你可以以编程方式将数据对象添加到文档中的数据缓存通过调用`StartCaching`方法的主机项，如<xref:Microsoft.Office.Tools.Word.Document>， <xref:Microsoft.Office.Tools.Excel.Workbook>，或<xref:Microsoft.Office.Tools.Excel.Worksheet>。 从数据缓存中删除数据对象，通过调用`StopCaching`宿主项的方法。

@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext::GetDocumentContext |Microsoft 文档
+title: IDebugCodeContext::GetDocumentContext |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 098d57a5ff0ba14b1dd493ad772eee595a10ec9a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e69ecf79c369b0ac99f0a598681e1a02a5dd21b0
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725647"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54096533"
 ---
 # <a name="idebugcodecontextgetdocumentcontext"></a>IDebugCodeContext::GetDocumentContext
-返回与此代码上下文关联的文档上下文。  
+返回与此代码的上下文关联的文档上下文。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetDocumentContext(  
    IDebugDocumentContext**  ppsc  
 );  
@@ -38,7 +38,7 @@ HRESULT GetDocumentContext(
   
 #### <a name="parameters"></a>参数  
  `ppsc`  
- [out]与此代码上下文关联的文档上下文。  
+ [out]与此代码的上下文关联的文档上下文。  
   
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -48,7 +48,7 @@ HRESULT GetDocumentContext(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 对于文本文档，字符位置范围应包括整个语句的文本。 这使调试器 IDE 以突出显示当前的源语句。  
+ 用于文本文档的字符位置范围应包括整个语句的文本。 这使调试器 IDE 以突出显示当前的源语句。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugCodeContext 接口](../../winscript/reference/idebugcodecontext-interface.md)

@@ -20,17 +20,17 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce142e07a47b73778ebae6b26452806b3a036d41
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 53f32da997b775e01959df5abc7e72fb55c1b194
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802395"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086692"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>“break”不能位于循环外
 你尝试使用**中断**位于循环外的关键字。 **中断**关键字用于终止循环或`switch`语句。 它必须在循环的正文中嵌入或`switch`语句。 但是，**标签**可以按照 break 关键字。  
   
-```  
+```js
 break labelname;  
 ```  
   

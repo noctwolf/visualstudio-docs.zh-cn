@@ -1,5 +1,5 @@
 ---
-title: 'Ijsdebugdatatarget:: Readnullterminatedstring 方法 |Microsoft 文档'
+title: 'Ijsdebugdatatarget:: Readnullterminatedstring 方法 |Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,19 +16,19 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94cb90b8b44aa5dab13a2e916dec22ae950e77ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a681dcedf873f0cb96f47b14278f47271cd43ec8
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729497"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54093322"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>IJsDebugDataTarget::ReadNullTerminatedString 方法
-从目标中读取指定的数目的字符。  
+从目标读取指定的数量的字符。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT ReadNullTerminatedString(  
    UINT64 address,  
    UINT16 characterSize,  
@@ -42,21 +42,21 @@ HRESULT ReadNullTerminatedString(
  [in]要读取的地址。  
   
  `characterSize`  
- [in] 的字符串中每个字符的大小  
+ [in] 字符串中的每个字符的大小  
   
  `maxCharacters`  
- [in]要读取的字符最大数量。 maxCharacters 应是合理的。 多个 128 MB 内存的任何请求将失败。  如果字符串大于 maxCharacters，maxCharacters 后将被截断的结果字符串。  
+ [in]要读取的字符数目上限。 maxCharacters 应是合理的。 大于 128 MB 的内存的任何请求将失败。  如果字符串大于 maxCharacters，结果字符串将在 maxCharacters 后被截断。  
   
  `pString`  
- [out]从目标读取 BSTR。  
+ [out]从目标中读取 BSTR。  
   
 ## <a name="return-value"></a>返回值  
   
 ## <a name="remarks"></a>备注  
- 如果被截断，则返回 S_FALSE。  
+ 如果截断，则返回 S_FALSE。  
   
 ## <a name="requirements"></a>要求  
  **标头：** jscript9diag.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IJsDebugDataTarget 接口](../../winscript/reference/ijsdebugdatatarget-interface.md)

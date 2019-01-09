@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetBody |Microsoft 文档
+title: IScriptEntry::SetBody |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06ee232aa730366e9a23e15cdc45f6734b9ef744
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 993ffe59abb9458e1b400633430f708e7520599c
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729137"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54088577"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
 设置的正文中的文本`IScriptEntry`脚本块或`IScriptScriptlet`scriptlet。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT SetBody(  
    LPCOLESTR          psz  
 );  
@@ -42,7 +42,7 @@ HRESULT SetBody(
   
  有关`IScriptEntry`函数块`psz`是函数体。  
   
- 有关`IScriptScriptlet`对象 (它派生自`IScriptEntry`)， `psz` scriptlet 的脚本文本。  
+ 有关`IScriptScriptlet`对象 (派生自`IScriptEntry`)，`psz`是 scriptlet 的脚本文本。  
   
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -53,6 +53,6 @@ HRESULT SetBody(
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IScriptEntry 接口](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)

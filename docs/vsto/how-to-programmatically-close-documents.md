@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], closing
 - Word [Office development in Visual Studio], closing documents
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7aa33ff010b85d2916c60875297709588534947d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbe8e29ea42f92e072e3afffca95d6be59765434
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930213"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087043"
 ---
 # <a name="how-to-programmatically-close-documents"></a>如何：以编程方式关闭文档
   可以关闭活动文档，也可以指定关闭某个文档。  

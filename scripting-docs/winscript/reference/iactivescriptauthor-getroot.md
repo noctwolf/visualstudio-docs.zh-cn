@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetRoot |Microsoft 文档
+title: IActiveScriptAuthor::GetRoot |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb20a896d54c2b8e85c93014e6bd8ad3c906f55c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c19e15eb0c425be843c5487bd3128831c7578c31
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645547"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097079"
 ---
 # <a name="iactivescriptauthorgetroot"></a>IActiveScriptAuthor::GetRoot
-返回`IScriptNode`作者脚本树的根。  
+返回`IScriptNode`作者的脚本树的根。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT GetRoot(  
    IScriptNode        **ppsp  
 );  
@@ -38,17 +38,17 @@ HRESULT GetRoot(
   
 #### <a name="parameters"></a>参数  
  `ppsp`  
- [out]接收指向的变量的地址`IScriptNode`的根节点的接口。  
+ [out]一个变量来接收指向指针的地址`IScriptNode`根节点的接口。  
   
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptAuthor 接口](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IScriptNode 接口](../../winscript/reference/iscriptnode-interface.md)

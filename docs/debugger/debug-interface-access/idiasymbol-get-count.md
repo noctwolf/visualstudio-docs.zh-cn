@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_count |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56382811c88f865b45f3e027ced6a78d0d7b80ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c0c63eed47093a8713512ce2586d1a019d303dc6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899833"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985873"
 ---
 # <a name="idiasymbolgetcount"></a>IDiaSymbol::get_count
 检索列表或数组中的项目数。  
@@ -27,7 +25,7 @@ ms.locfileid: "49899833"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_count (   
+HRESULT get_count (   
    DWORD* pRetVal  
 );  
 ```  
@@ -44,7 +42,7 @@ HRESULT get_count (
   
 ## <a name="requirements"></a>要求  
   
-|需求|描述|  
+|需求|说明|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v7.0|  

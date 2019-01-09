@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSniffer::EnumStackFrames |Microsoft 文档
+title: IDebugStackFrameSniffer::EnumStackFrames |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d64d896dcc14a280a74f64f5093b6708a7fcb5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 245908b543bf1482022846801e5ac7d2f557ebb5
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726787"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54089298"
 ---
 # <a name="idebugstackframesnifferenumstackframes"></a>IDebugStackFrameSniffer::EnumStackFrames
-返回当前线程的堆栈帧的枚举。  
+返回当前线程的堆栈帧的枚举器。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT EnumStackFrames(  
    IEnumDebugStackFrames**  ppedsf  
 );  
@@ -48,7 +48,7 @@ HRESULT EnumStackFrames(
 |`S_OK`|方法成功。|  
   
 ## <a name="remarks"></a>备注  
- 堆栈帧枚举器返回的帧的堆栈的顶部开始从最近推入帧开始。  
+ 堆栈帧枚举器返回的帧的堆栈顶部开始从最新入栈帧开始。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugStackFrameSniffer 接口](../../winscript/reference/idebugstackframesniffer-interface.md)

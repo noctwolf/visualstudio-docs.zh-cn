@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSubItemName |Microsoft 文档
+title: IScriptScriptlet::SetSubItemName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0d038330d502dd9a230fdb82c14d36732fed7e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 777a69e47ed7f88851cae0d20f2eb23ee6978296
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733867"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54097705"
 ---
 # <a name="iscriptscriptletsetsubitemname"></a>IScriptScriptlet::SetSubItemName
-设置 scriptlet 对象主机的完全限定名称中的最后一个标识符。  
+Scriptlet 的对象主机的完全限定名称中设置的最后一个标识符。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT SetSubItemName(  
    LPCOLESTR          psz  
 );  
@@ -38,9 +38,9 @@ HRESULT SetSubItemName(
   
 #### <a name="parameters"></a>参数  
  `psz`  
- 如果主机的完全限定 scriptlet 名称有多个级别，`psz`是在第二个级别的标识符的缓冲区地址。  
+ 如果主机的完全限定 scriptlet 的名称有多个级别，`psz`是在第二个级别的标识符的缓冲区地址。  
   
- 如果主机的完全限定 scriptlet 名称有一个级别，`psz`是在第一个级别的标识符的缓冲区地址。  
+ 如果主机的完全限定 scriptlet 的名称有一个级别，`psz`是在第一个级别的标识符的缓冲区地址。  
   
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -51,5 +51,5 @@ HRESULT SetSubItemName(
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IScriptScriptlet 接口](../../winscript/reference/iscriptscriptlet-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnScriptTerminate |Microsoft 文档
+title: IActiveScriptSite::OnScriptTerminate |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eef8bd2a3f2e2a4eb4fd4b5f0e35fcd9acfe5bc9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f8ff7c3d531b46fa6681776e79fbb73f6d1efca2
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724797"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54087108"
 ---
 # <a name="iactivescriptsiteonscriptterminate"></a>IActiveScriptSite::OnScriptTerminate
 通知主机脚本已完成执行。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT OnScriptTerminate(  
     VARIANT *pvarResult,   // address of script results  
     EXCEPINFO *pexcepinfo  // address of structure with exception information  
@@ -39,16 +39,16 @@ HRESULT OnScriptTerminate(
   
 #### <a name="parameters"></a>参数  
  `pvarResult`  
- [in]包含脚本的结果，将变量的地址或`NULL`如果脚本不生成任何结果。  
+ [in]包含脚本结果中，将变量的地址或`NULL`如果脚本不生成任何结果。  
   
  `pexcepinfo`  
- [in]地址`EXCEPINFO`包含时脚本终止，生成的异常信息的结构或`NULL`如果不生成异常。  
+ [in]地址`EXCEPINFO`结构，其中包含异常信息时该脚本终止，生成或`NULL`如果不生成任何异常。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回 `S_OK`。  
   
 ## <a name="remarks"></a>备注  
- 脚本引擎调用此方法对的调用之前[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)方法，设置了 SCRIPTSTATE_INITIALIZED 标志完成。 可以使用此方法以返回到主机的完成状态和结果。 请注意，许多的脚本语言，基于从主机中接收事件，具有由主机定义的有效期。 在这种情况下，可能永远不会调用此方法。  
+ 脚本引擎将调用此方法之前调用[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)完成方法，设置了 SCRIPTSTATE_INITIALIZED 标志。 此方法可用于完成状态和结果返回到主机。 请注意，许多脚本语言，基于主机的接收器事件，由主机定义的有效期。 在这种情况下，可能永远不会调用此方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

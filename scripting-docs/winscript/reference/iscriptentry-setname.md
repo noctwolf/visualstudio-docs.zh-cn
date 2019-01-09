@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetName |Microsoft 文档
+title: IScriptEntry::SetName |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43e167ce48c208b6f552984fe2db9ec9d48c72eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2c7929d9d073e7b21030dcddc3db04abc977bdd3
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729407"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54086666"
 ---
 # <a name="iscriptentrysetname"></a>IScriptEntry::SetName
-对于表示单个对象 （如函数） 的条目，设置对象的名称。  
+对于表示单个对象 （如某个函数） 的条目，设置的对象的名称。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cpp
 HRESULT SetName(  
    LPCOLESTR          psz  
 );  
@@ -38,7 +38,7 @@ HRESULT SetName(
   
 #### <a name="parameters"></a>参数  
  `psz`  
- [in]新名称`IScriptEntry`对象。  
+ [in]新名称的`IScriptEntry`对象。  
   
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
@@ -49,6 +49,6 @@ HRESULT SetName(
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IScriptEntry 接口](../../winscript/reference/iscriptentry-interface.md)   
  [IScriptEntry::GetName](../../winscript/reference/iscriptentry-getname.md)
