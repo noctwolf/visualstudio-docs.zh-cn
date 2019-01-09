@@ -1,8 +1,6 @@
 ---
 title: 演练：使用 MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 12/18/2018
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13493b9ab21386ff5856fd6046e963d362071570
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+ms.openlocfilehash: e73fd5e679ae4b35fa47926f6737b980ef700e4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648915"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956915"
 ---
 # <a name="walkthrough-use-msbuild"></a>演练：使用 MSBuild
 MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBuild 的构建基块，并演示如何编写、操作和调试 MSBuild 项目。 学习内容：

@@ -1,8 +1,6 @@
 ---
 title: WriteCodeFragment 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6246c66299bb713c8b024feefa12eb883e2c0c76
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 85ec6fc761ed117004357ed56f90a058e58f7f10
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231088"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870237"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment 任务
 根据指定的生成代码片段，生成临时代码文件。 不会删除该文件。  
@@ -31,7 +29,7 @@ ms.locfileid: "39231088"
 ## <a name="parameters"></a>参数  
  下表描述了 `WriteCodeFragment` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`AssemblyAttributes`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 要编写的属性的说明。 项目 `Include` 值是属性的完整类型名称，例如“System.AssemblyVersionAttribute”。<br /><br /> 每个元数据都是参数的名称/值对，必须为类型 `String`。 某些属性只允许使用位置构造函数参数。 但可在任何属性中使用这些参数。 若要设置位置构造函数属性，请使用类似于“_Parameter1”、“_Parameter2”等元数据名称。<br /><br /> 不能跳过参数索引。|  
 |`Language`|必选 `String` 参数。<br /><br /> 指定要生成的代码的语言。<br /><br /> `Language` 可以是任何可用于 CodeDom 提供程序的语言，例如“C#”或“VisualBasic”。 发出的文件将具有该语言的默认文件扩展名。|  

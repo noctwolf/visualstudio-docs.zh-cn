@@ -1,8 +1,6 @@
 ---
 title: FindUnderPath 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#FindUnderPath
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1f7ea93011878e9e47a5daa843a71d904318ce4
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 865e291e24bfb161f43e8fb5192a08e93cdb75d0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946516"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869094"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath 任务
 确定指定项集合中的哪些项具有指定文件夹及其子文件夹的路径。  
@@ -33,7 +31,7 @@ ms.locfileid: "37946516"
 ## <a name="parameters"></a>参数  
  下表描述了 `FindUnderPath` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Files`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定应将其路径与 `Path` 参数指定的路径进行比较的文件。|  
 |`InPath`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包括在指定路径下找到的项。|  

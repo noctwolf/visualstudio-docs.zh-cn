@@ -1,8 +1,6 @@
 ---
 title: 如何：使用命令行通过探查器启动独立应用程序并收集应用程序统计信息 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea9027f6589c7d7993aab1652fd89117239940a
-ms.sourcegitcommit: 34840a954ed3446c789e80ee87da6cbf1203cbb5
+ms.openlocfilehash: 3fb8f3ca57ce189dc0bcecff5c755860f219a7ad
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53592906"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926608"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>如何：使用探查器启动独立应用程序，并通过命令行收集应用程序统计信息
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动独立（客户端）应用程序，以及如何使用采样方法收集性能统计信息。  
@@ -98,7 +96,7 @@ ms.locfileid: "53592906"
 
     -   关闭目标应用程序。  
 
-         - 或 -  
+         或  
 
     -   键入 **VSPerfCmd /detach**  
 

@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b54e0f73f4f0d504df3757ffc881b2282fc9471
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 694085412a674731934ac75d62bd2c904e3c7176
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066101"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860213"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio 团队资源管理器 2017 组件目录
 
@@ -48,7 +47,7 @@ ms.locfileid: "53066101"
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Visual Studio 核心编辑器 | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 用户的 Visual Studio 起始页 | 15.0.27128.1 | Optional
@@ -57,7 +56,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 用户的 Visual 
 
 这些组件不随附于任何工作负载，但可选择作为单个组件。
 
-组件 ID | name | 版本
+组件 ID | name | Version
 --- | --- | ---
 n/a | 不可用 | n/a
 

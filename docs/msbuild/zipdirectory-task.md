@@ -1,10 +1,8 @@
 ---
 title: ZipDirectory 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fffaa61a494c507aedf22238d22c861ba9f11bc
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 320fd3a62c3283b0c442f0f7bbc3df5512eb7bcc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671035"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930955"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory 任务
 根据目录内容创建 .zip 存档。
@@ -40,7 +38,7 @@ ms.locfileid: "50671035"
 ## <a name="parameters"></a>参数  
  下表描述了 `ZipDirectory` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`DestinationFile`|<xref:Microsoft.Build.Framework.ITaskItem> 参数（必选）<br /><br /> 要创建的 .zip 文件的完整路径。|
 |`Overwrite`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则跳过要覆盖的目标文件（如有）。 默认为 `false`。|

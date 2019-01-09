@@ -2,7 +2,6 @@
 title: DevEnv ProjectConfig 开关
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - /projectconfig Devenv switch
@@ -22,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f5d4479658b450074ba35f2759a273bb584e0a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7ca481d23757cc9022042db42a6d4be477880367
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764649"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967912"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 
@@ -47,8 +46,8 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 |/clean|清理在生成过程中创建的所有中间文件和输出目录。|
 |/rebuild|清理然后生成 /project 参数所指定的项目。|
 |/deploy|指定生成或重新生成后部署该项目。|
-|*SolnConfigName*|必须的。 将应用于 SolutionName 中命名的解决方案的解决方案配置的名称。 如果有多个可用的解决方案平台，还必须指定平台，例如“调试 \|Win32”。|
-|*SolutionName*|必须的。 解决方案文件的完整路径和名称。|
+|*SolnConfigName*|必需。 将应用于 SolutionName 中命名的解决方案的解决方案配置的名称。 如果有多个可用的解决方案平台，还必须指定平台，例如“调试 \|Win32”。|
+|*SolutionName*|必需。 解决方案文件的完整路径和名称。|
 |/project ProjName|可选。 解决方案中项目文件的路径和名称。 可以输入从 SolutionName 文件夹到项目文件的相对路径、项目的显示名称或项目文件的完整路径和名称。|
 |/projectconfig ProjConfigName|可选。 要应用于 /project 参数所指定项目的项目生成配置的名称。 如果有多个可用的解决方案平台，还必须指定平台，例如“调试 \|Win32”。|
 

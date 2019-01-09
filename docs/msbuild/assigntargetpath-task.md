@@ -1,8 +1,6 @@
 ---
 title: AssignTargetPath 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccbd96de96e750c0f149924ab69785e077591755
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8a711c20198b117b53536f9b0fe043a468eb8a0b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946610"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930656"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath 任务
 此任务接受文件列表，并添加 `<TargetPath>` 属性（如果尚未指定）。  
@@ -28,7 +26,7 @@ ms.locfileid: "37946610"
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `AssignTargetPath` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`RootFolder`|可选的 `string` 输入参数。<br /><br /> 包含文件夹的路径，该文件夹包含目标链接。|  
 |`Files`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输入参数。<br /><br /> 包含传入的文件列表。|  

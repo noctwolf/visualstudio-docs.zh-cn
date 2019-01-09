@@ -1,8 +1,6 @@
 ---
 title: 常用的 MSBuild 项目项 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3b51046ce3a4b589cb77ce27d1e103a6b8a6c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 15d2a2a51297fd10388b89a2fbe1220ccd327231
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937507"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951701"
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，项是对一个或多个文件的命名引用。 项包含元数据（如文件名、路径和版本号）。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有项目类型具有几个通用项。 在文件 Microsoft.Build.CommonTypes.xsd 中定义了这些项。  
@@ -33,7 +31,7 @@ ms.locfileid: "49937507"
 ### <a name="reference"></a>参考  
  表示项目中的程序集（托管）引用。  
 
-|项元数据名称|描述|  
+|项元数据名称|说明|  
 |---------------|-----------------|  
 |HintPath|可选的字符串。 程序集的相对或绝对路径。|  
 |name|可选的字符串。 程序集的显示名称，例如“System.Windows.Forms”。|  
@@ -45,7 +43,7 @@ ms.locfileid: "49937507"
 ### <a name="comreference"></a>COMReference  
  表示项目中的 COM（非托管）组件引用。  
 
-|项元数据名称|描述|  
+|项元数据名称|说明|  
 |---------------|-----------------|  
 |name|可选的字符串。 组件的显示名称。|  
 |GUID|可选的字符串。 组件的 GUID，形式为 {12345678-1234-1234-1234-1234567891234}。|  
@@ -58,14 +56,14 @@ ms.locfileid: "49937507"
 ### <a name="comfilereference"></a>COMFileReference  
  表示馈送到 ResolvedComreference 目标中的类型库的列表。  
 
-|项元数据名称|描述|  
+|项元数据名称|说明|  
 |---------------|-----------------|  
 |WrapperTool|可选的字符串。 对组件使用的包装工具的名称，例如“tlbimp”。|  
 
 ### <a name="nativereference"></a>NativeReference  
  表示本机清单文件或对此类文件的引用。  
 
-|项元数据名称|描述|  
+|项元数据名称|说明|  
 |---------------|-----------------|  
 |name|必选字符串。 清单文件基名称。|  
 |HintPath|必选字符串。 清单文件的相对路径。|  
@@ -73,7 +71,7 @@ ms.locfileid: "49937507"
 ### <a name="projectreference"></a>ProjectReference  
  表示对另一个项目的引用。  
 
-|项元数据名称|描述|  
+|项元数据名称|说明|  
 |---------------|-----------------|  
 |name|可选的字符串。 引用的显示名称。|  
 |项目|可选的字符串。 引用的 GUID，形式为 {12345678-1234-1234-1234-1234567891234}。|  
@@ -84,7 +82,7 @@ ms.locfileid: "49937507"
  表示编译器的源文件。  
 
 
-| 项元数据名称 | 描述 |
+| 项元数据名称 | 说明 |
 |-----------------------| - |
 | DependentUpon | 可选的字符串。 指定该文件正确编译所依赖的文件。 |
 | AutoGen | 可选的布尔值。 指示是否已由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 为项目生成了文件。 |
@@ -96,7 +94,7 @@ ms.locfileid: "49937507"
  表示要在生成的程序集中嵌入的资源。  
 
 
-| 项元数据名称 | 描述 |
+| 项元数据名称 | 说明 |
 |-----------------------| - |
 | DependentUpon | 可选的字符串。 指定该文件正确编译所依赖的文件 |
 | Generator | 必选字符串。 在此项上运行的任何文件生成器的名称。 |
@@ -111,7 +109,7 @@ ms.locfileid: "49937507"
  表示不会编译到项目中，但可能会嵌入到其中或随其一起发布的文件。  
 
 
-| 项元数据名称 | 描述 |
+| 项元数据名称 | 说明 |
 |-----------------------| - |
 | DependentUpon | 可选的字符串。 指定该文件正确编译所依赖的文件。 |
 | Generator | 必选字符串。 在此项上运行的任何文件生成器的名称。 |
@@ -127,7 +125,7 @@ ms.locfileid: "49937507"
  表示不应在生成过程中具有角色的文件。  
 
 
-| 项元数据名称 | 描述 |
+| 项元数据名称 | 说明 |
 |-----------------------| - |
 | DependentUpon | 可选的字符串。 指定该文件正确编译所依赖的文件。 |
 | Generator | 必选字符串。 在此项上运行的任何文件生成器的名称。 |
