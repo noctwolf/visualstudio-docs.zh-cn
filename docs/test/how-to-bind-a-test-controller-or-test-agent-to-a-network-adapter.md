@@ -12,13 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 59a71b57c76fbb0650824efb29afe585c62162f9
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4d83dcd0d5c791089c2d699517cb75a5a3e24b33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891055"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>如何：将测试控制器或测试代理绑定到网络适配器
 
@@ -51,7 +50,7 @@ ms.locfileid: "53065942"
 
 2.  在结果窗格中的“名称”列中，右键单击“Visual Studio Test Controller”服务，然后选择“停止”。
 
-     - 或 -
+     或
 
      使用提升的权限打开命令提示符，并在命令行执行以下命令：
 

@@ -1,20 +1,18 @@
 ---
 title: Windows 8 和 Windows Server 2012 应用程序上的性能工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 06/19/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404a8a3f40d5d84d60fe4822fb692e4f48a57503
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 9fe876d5244ad18d1d2635caa1717ca9eb0e29ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220796"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832289"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 应用程序上的性能工具
 
@@ -39,7 +37,7 @@ Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual
 
 有关分析 UWP 应用的详细信息，请参阅以下文章：
 
-- [在本地计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-the-local-machine.md)
+- [在本地计算机上运行 UWP 应用](/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)
 - [在远程计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [首先了解分析工具](profiling-feature-tour.md)
 - [JavaScript 内存](../profiling/javascript-memory.md)
@@ -65,7 +63,7 @@ Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual
 
 你使用两个命令行工具收集 Windows 8 和 Windows Server 2012 设备上的分析数据，这些设备包括未安装 Visual Studio 的设备：
 
-|工具名称|描述|
+|工具名称|说明|
 |---------------|-----------------|
 |[VSPerf](../profiling/vsperf.md)|从 UWP 应用收集分析数据，并从 Windows 8 桌面应用程序和 Windows Server 2012 应用程序收集采样分析数据。|
 |[VSPerfCmd](../profiling/vsperfcmd.md)|从在 Windows 8 桌面和 Windows Server 2012 上运行的应用收集检测、并发和层交互分析数据。 从之前版本的 Windows 收集所有类型的分析数据。|
@@ -76,7 +74,7 @@ Windows 8 和 Windows Server 2012 中新增的增强安全功能需要对 Visual
 
 - 从 [MSDN 网站](http://go.microsoft.com/fwlink/?LinkID=219549)上下载这些工具作为 Visual Studio 远程工具的一部分。
 
-- 从你的 Visual Studio 计算机复制并运行独立探查器工具安装程序。 安装程序位于 %VSInstallDir%\Team Tools\Performance Tools\Setups 文件夹。 为远程计算机的操作系统 (x86/x64) 选择安装程序。
+- 从你的 Visual Studio 计算机复制并运行独立探查器工具安装程序。 若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 为远程计算机的操作系统 (x86/x64) 选择安装程序。
 
 > [!NOTE]
 > 若要收集 TIP 分析数据，必须从远程计算机上的 Visual Studio 计算机安装独立探查器。

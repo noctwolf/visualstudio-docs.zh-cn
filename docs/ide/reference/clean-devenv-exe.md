@@ -2,7 +2,6 @@
 title: -Clean (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - builds [Team System], cleaning files
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7827f11a93e517f81eb03cfe2e33305859b4d78
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 051485646b7ff19ddae40518215c410d05fa4849
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948850"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906886"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 清理所有中间文件和输出目录。
@@ -34,7 +33,7 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
 ## <a name="arguments"></a>自变量
  `FileName`
 
- 必须的。 解决方案文件或项目文件的完整路径和名称。
+ 必需。 解决方案文件或项目文件的完整路径和名称。
 
  /project `ProjName`
 

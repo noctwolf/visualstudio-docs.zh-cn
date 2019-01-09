@@ -1,8 +1,6 @@
 ---
 title: XmlPoke 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d38510799984e1ea690c9c145b7d7664b338f5e
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 6a12991a8ea3de4348ce87686feadd7bc7681968
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934227"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 任务
 
@@ -33,7 +31,7 @@ ms.locfileid: "39231257"
 
  下表描述了 `XmlPoke` 任务的参数。
   
-|参数|描述|
+|参数|说明|
 |---------------|-----------------|
 |`Namespaces`|可选 `String` 参数。<br /><br /> 指定 XPath 查询前缀的命名空间。 `Namespaces` 是 XML 代码片段，由 `Namespace` 元素组成，包含 `Prefix` 和 `Uri` 属性。 属性 `Prefix` 指定与 `Uri` 属性中指定的命名空间关联的前缀。 不要使用空的 `Prefix`。|
 |`Query`|可选 `String` 参数。<br /><br /> 指定 XPath 查询。|

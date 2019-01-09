@@ -2,7 +2,6 @@
 title: 如何：在成员表示法与关联表示法之间转换（类设计器）
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - notation, member
@@ -15,19 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdb4f28fc367b309a015a3faa8f749e2512db879
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 56ffdcaf2a78933d52fe3a19e2c34deb5c303401
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957796"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952636"
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>如何：在类设计器中在成员表示法与关联表示法之间转换
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>如何：在类设计器中的成员表示法与关联表示法之间转换
 
 在“类设计器”中，可以更改类图表示两种类型（从成员表示法到关联表示法）之间的关联关系的方式，反之亦然。 通常，显示为关联行的成员可提供类型关联方式的有用可视化。
 
 > [!NOTE]
-> 关联关系可以表示为成员属性或字段。 若要将成员表示法更改为关联表示法，其中一种类型必须具有另一种类型的成员。 若要将关联表示法更改为成员表示法，则必须通过关联行连接这两种类型。 有关详细信息，请参阅[如何：创建类型之间的关联](how-to-create-associations-between-types.md)。 如果项目包含多个类图，则更改某个类图显示关联关系的方式仅会影响该类图。 若要更改另一个类图显示关联关系的方式，请打开或显示该类图并执行以下步骤。
+> 关联关系可以表示为成员属性或字段。 若要将成员表示法更改为关联表示法，其中一种类型必须具有另一种类型的成员。 若要将关联表示法更改为成员表示法，则必须通过关联行连接这两种类型。 有关更多信息，请参见[如何：创建类型之间的关联](how-to-create-associations-between-types.md)。 如果项目包含多个类图，则更改某个类图显示关联关系的方式仅会影响该类图。 若要更改另一个类图显示关联关系的方式，请打开或显示该类图并执行以下步骤。
 
 ## <a name="to-change-member-notation-to-association-notation"></a>将成员表示法更改为关联表示法
 
@@ -48,5 +47,5 @@ ms.locfileid: "33957796"
 
 - [如何：创建类型之间的继承](how-to-create-inheritance-between-types.md)
 - [如何：查看类型之间的继承](how-to-view-inheritance-between-types.md)
-- [查看类型和关系](viewing-types-and-relationships.md)
+- [查看类型和关系](designing-and-viewing-classes-and-types.md)
 - [如何：可视化集合关联](how-to-visualize-a-collection-association.md)

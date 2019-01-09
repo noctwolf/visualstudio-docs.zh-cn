@@ -1,8 +1,6 @@
 ---
 title: 如何：安装独立探查器 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, installing stand-alone profiler
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c9e7c6ec4a34d59c45b2a56abedaa6d3fd2974
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2f5068ff6b167e9cfda14799f799a397a322ff3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942434"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987111"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>如何：安装独立探查器
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供了一个基于命令行的独立探查器，它可在没有安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 的情况下运行。 当计算机没有安装或无法安装开发环境时会发生这种情况。 例如，不应在生产 Web 服务器上安装开发环境。  
@@ -27,13 +25,15 @@ ms.locfileid: "49942434"
 >  使用独立探查器收集 ASP.NET 网站的性能数据时，建议使用 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 命令行工具，而非 [VSPerfCmd](../profiling/vsperfcmd.md) 工具。  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>安装独立探查器  
-  
-1. 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 安装媒体上包含 \Standalone Profiler 路径的目录中，找到独立探查器安装程序 (vs_profiler.exe)，然后运行该安装程序。  
+
+1. 下载[用于 Visual Studio 的性能工具](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio-2017)。
+
+1. 在下载性能工具的位置，找到并运行独立配置文件安装程序(vs_standaloneprofiler.exe)。
   
 2. 将 vsintr.exe 和 msdis150.dll 的路径添加到系统路径。  
   
    > [!NOTE]
-   >  执行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的默认安装时，vsinstr.exe 和 msdis150.dll 位于 \Program Files\Visual Studio 10\Team Tools\Performance Tools 中。  
+   >  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 
   
 3. 在命令提示符处，键入 VSInstr。  
   
@@ -54,6 +54,6 @@ ms.locfileid: "49942434"
 ## <a name="see-also"></a>请参阅  
  [通过命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [演练：使用采样进行命令行分析](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
- [演练：使用检测进行命令行分析](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
+ [演练：使用检测进行命令行分析](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications)   
  [如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

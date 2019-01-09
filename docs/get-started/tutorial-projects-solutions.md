@@ -2,23 +2,24 @@
 title: 项目和解决方案简介
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
+ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4967f687f214e544aa65526144803ce31e99d7
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: 25450c2bb2965852e2077fc234548f224e070ff8
+ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159329"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53441738"
 ---
 # <a name="learn-about-projects-and-solutions"></a>了解项目和解决方案
 
-在这篇介绍性的文章中，我们将探讨在 Visual Studio 中创建解决方案和项目的含义。 解决方案是一个容器，用于组织一个或多个相关的代码项目，例如，一个类库和一个对应的测试项目。 我们会介绍项目的属性和其中包含的一些文件。 此外，我们还会在一个项目中创建对另一项目的引用。
+在这篇介绍性的文章中，我们将探讨在 Visual Studio 中创建解决方案和项目的含义。 解决方案是一个容器，用于组织一个或多个相关的代码项目，例如，一个类库项目和一个对应的测试项目。 我们会介绍项目的属性和其中包含的一些文件。 此外，我们还会在一个项目中创建对另一项目的引用。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
@@ -29,7 +30,7 @@ ms.locfileid: "53159329"
 
 ## <a name="solutions-and-projects"></a>解决方案和项目
 
-解决方案是 Visual Studio 用来组织一个或多个相关项目的容器。 在 Visual Studio 中打开解决方案时，它会自动加载其包含的所有项目。
+尽管其名称如此，但解决方案并不是“答案”。 解决方案仅仅是 Visual Studio 用来组织一个或多个相关项目的容器。 在 Visual Studio 中打开解决方案时，它会自动加载包含的所有项目。
 
 ### <a name="create-a-solution"></a>创建解决方案
 

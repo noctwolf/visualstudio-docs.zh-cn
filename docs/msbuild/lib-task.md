@@ -1,8 +1,6 @@
 ---
 title: LIB 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df6011cb1c706069135a133dd37a34e54203b22b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 54a9fc4a75d49699087f7fb2ca80c3b8c17ddc8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079619"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922015"
 ---
 # <a name="lib-task"></a>LIB 任务
 包装 Microsoft 32 位库管理器工具 (lib.exe)。 库管理器创建并管理通用对象文件格式 (COFF) 对象文件的库。 库管理器还可以创建导出文件和导入库，以便引用导出的定义。 有关详细信息，请参阅 [LIB 参考](/cpp/build/reference/lib-reference)和[运行 LIB](/cpp/build/reference/running-lib)。  
@@ -40,7 +38,7 @@ ms.locfileid: "39079619"
 ## <a name="parameters"></a>参数  
  下表介绍了 **LIB** 任务的参数。 大多数任务参数都对应于命令行选项。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |**AdditionalDependencies**|可选 **String []** 参数。<br /><br /> 指定要添加到命令行的附加项。|  
 |**AdditionalLibraryDirectories**|可选 **String []** 参数。<br /><br /> 重写环境库路径。 指定目录名。<br /><br /> 有关详细信息，请参阅 [/LIBPATH（附加的 Libpath）](/cpp/build/reference/libpath-additional-libpath)。|  

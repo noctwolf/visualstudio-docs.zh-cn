@@ -1,8 +1,7 @@
 ---
-title: 如何：可视化集合关联（类设计器）
+title: 如何：直观显示集合关联（类设计器）
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
@@ -17,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24dc8b21fbdacb5da2795b215cd8503b08cf3449
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: acf1fd75770888f492833235f09a381d0836be34
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33995876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925389"
 ---
-# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>如何：在类设计器中可视化集合关联
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>如何：直观显示类设计器中的集合关联
 
 属于其他类型的集合的属性和字段可在类图上作为集合关联显示。 普通关联可将字段或属性显示为行，此行将拥有的类链接到字段的类型，与此不同，集合关联作为行显示，此行将拥有的类链接到已收集的类型。
 
@@ -42,4 +41,3 @@ ms.locfileid: "33995876"
 
 - [如何：创建类型之间的关联](how-to-create-associations-between-types.md)
 - [设计类和类型](designing-and-viewing-classes-and-types.md)
-- [查看类型和关系](viewing-types-and-relationships.md)

@@ -1,8 +1,6 @@
 ---
 title: Message 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Message
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b61bf9def1ba37667302850527715eed1db4ff
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 84f169d221ad8e6920844f2ccc2675277bb4af74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178327"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869828"
 ---
 # <a name="message-task"></a>Message 任务
 在生成期间记录消息。  
@@ -33,7 +31,7 @@ ms.locfileid: "39178327"
 ## <a name="parameters"></a>参数  
  下表描述了 `Message` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Importance`|可选 `String` 参数。<br /><br /> 指定消息的重要性。 此参数的值可以是 `high`、`normal` 或 `low`。 默认值为 `normal`。|  
 |`Text`|可选 `String` 参数。<br /><br /> 要记录的错误文本。|  

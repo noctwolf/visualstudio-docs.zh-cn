@@ -1,8 +1,6 @@
 ---
 title: MIDL 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
@@ -28,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1affc4d84b8ea44cbaed51f656c8a3e97e04f97a
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 724c4de3ca582a98d22eaf1bcb3a8761bb4eff55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219804"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860827"
 ---
 # <a name="midl-task"></a>MIDL 任务
 包装 Microsoft 接口定义语言 (MIDL) 编译器工具 (midl.exe)。 有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)。  
@@ -89,7 +87,7 @@ ms.locfileid: "50219804"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**Signed**|**/char signed**|  
     |**Unsigned**|**/char unsigned**|  
@@ -113,7 +111,7 @@ ms.locfileid: "50219804"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**无**|**/error none**|  
     |**EnableCustom**|**/error**|  
@@ -169,7 +167,7 @@ ms.locfileid: "50219804"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**无**|**/client none**|  
     |**Stub**|**/client stub**|  
@@ -184,7 +182,7 @@ ms.locfileid: "50219804"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**无**|**/server none**|  
     |**Stub**|**/server stub**|  
@@ -335,7 +333,7 @@ ms.locfileid: "50219804"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**NotSet**|*\<none>*|  
     |**Win32**|**/env win32**|  
@@ -358,7 +356,7 @@ ms.locfileid: "50219804"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  

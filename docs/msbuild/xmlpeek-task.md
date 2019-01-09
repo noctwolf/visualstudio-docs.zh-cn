@@ -1,8 +1,6 @@
 ---
 title: XmlPeek 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2430d742c07483dd28ca1cd188d9695205e9c91
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 214320724d7bcda2c126d577deabda20a61c6104
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231042"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865908"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 任务
 从 XML 文件返回 XPath 查询指定的值。  
@@ -31,7 +29,7 @@ ms.locfileid: "39231042"
 ## <a name="parameters"></a>参数  
  下表描述了 `XmlPeek` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Namespaces`|可选 `String` 参数。<br /><br /> 指定 XPath 查询前缀的命名空间。|  
 |`Query`|可选 `String` 参数。<br /><br /> 指定 XPath 查询。|  

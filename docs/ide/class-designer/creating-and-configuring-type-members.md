@@ -2,7 +2,6 @@
 title: 创建和配置类型成员（类设计器）
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
@@ -31,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7063b536c50cff39bfeb3adabe989b3cd9a56ddf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49938794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828132"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在类设计器中创建和配置类型成员
 
@@ -59,12 +58,12 @@ ms.locfileid: "49938794"
 
 |任务|支持内容|
 |----------| - |
-|**开始：** 创建并配置类型成员之前，必须打开“类详细信息”窗口。|- [打开“类详细信息”窗口](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [“类详细信息”用法说明](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [显示只读信息](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**开始操作：** 创建并配置类型成员之前，必须打开“类详细信息”窗口。|- [打开“类详细信息”窗口](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [“类详细信息”用法说明](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [显示只读信息](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
 |**创建和修改类型成员：** 可以使用“类详细信息”窗口创建新成员、修改成员并向方法中添加参数。|- [创建成员](creating-and-configuring-type-members.md#create-members)<br />- [修改类型成员](creating-and-configuring-type-members.md#modify-type-members)<br />- [向方法中添加参数](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>打开“类详细信息”窗口
 
-默认情况下，在打开一个新类图时，“类详细信息”窗口会自动显示。 请参阅[如何：向项目添加类图](how-to-add-class-diagrams-to-projects.md)。 也可以通过以下方式打开“类详细信息”窗口：
+默认情况下，在打开一个新类图时，“类详细信息”窗口会自动显示。 请参阅[操作说明：向项目添加类图](how-to-add-class-diagrams-to-projects.md)。 也可以通过以下方式打开“类详细信息”窗口：
 
 - 右键单击关系图中的任何类以显示上下文菜单，然后选择“类详细信息”。
 
@@ -124,7 +123,7 @@ ms.locfileid: "49938794"
 
 4.  或者，也可指定有关成员的其他详细信息，例如成员类型。
 
-     注意：还可使用键盘快捷方式创建成员。 有关详细信息，请参阅[类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)。
+     **注意：** 还可使用键盘快捷方式创建成员。 有关详细信息，请参阅[类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)。
 
 ## <a name="modify-type-members"></a>修改类型成员
 
@@ -209,7 +208,7 @@ ms.locfileid: "49938794"
 
      成员的最后一个参数行的“名称”单元格中包含文本“<add parameter>”。 单击此单元格可创建新的参数。 有关详细信息，请参阅[向方法中添加参数](creating-and-configuring-type-members.md#add-parameters-to-methods)。
 
-“属性”窗口中显示的参数属性与“类详细信息”窗口中显示的相同：“名称”、“类型”、“修饰符”、“摘要”以及“可选的默认值”属性。 在一个位置更改某个属性将使该属性的值在全局范围内得到更新，包括这个属性值在其他位置的显示。
+“属性”窗口显示的参数属性与“类详细信息”窗口中显示的相同：“名称”、“类型”、“修饰符”、“摘要”以及“可选默认值”属性。 在一个位置更改某个属性将使该属性的值在全局范围内得到更新，包括这个属性值在其他位置的显示。
 
 > [!NOTE]
 > 若要向委托中添加参数，请参阅[创建成员](creating-and-configuring-type-members.md#create-members)。
@@ -320,5 +319,5 @@ ms.locfileid: "49938794"
 
 ## <a name="see-also"></a>请参阅
 
-- [查看类型和关系](viewing-types-and-relationships.md)
+- [查看类型和关系](designing-and-viewing-classes-and-types.md)
 - [重构类和类型](refactoring-classes-and-types.md)

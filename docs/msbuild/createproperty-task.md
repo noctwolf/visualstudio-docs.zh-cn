@@ -1,8 +1,6 @@
 ---
 title: CreateProperty 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateProperty
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5b281a33856e1db2b45ccade79f7490cfd808ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71c36b19b0fd44d6668cb497dccafaf12843a492
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884732"
 ---
 # <a name="createproperty-task"></a>CreateProperty 任务
 使用传入的值填充属性。 通过该操作可以将值从一个属性或字符串复制到另一个属性或字符串。  
@@ -34,7 +32,7 @@ ms.locfileid: "49948819"
  下表描述了 `CreateProperty` 任务的参数。  
 
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 |------------------| - |
 | `Value` | 可选 `String` 输出参数。<br /><br /> 指定要复制到新属性的值。 |
 | `ValueSetByTask` | 可选 `String` 输出参数。<br /><br /> 包含与 `Value` 参数相同的值。 在由于输出是最新的而跳过封闭目标的情况下，仅当需要避免由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 设置输出属性时，使用此参数。 |

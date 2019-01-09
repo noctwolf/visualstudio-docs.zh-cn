@@ -3,7 +3,6 @@ title: 在 Azure 虚拟机上使用 Visual Studio
 titleSuffix: ''
 description: 了解如何在 Azure 虚拟机上使用 Visual Studio
 ms.date: 09/12/2018
-ms.technology: vs-acquisition
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc3ceb0caa8e5b8e135c2fad3bbab28c51773ae6
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: f139c93eeb64a56f0bd422137417e5ad6e36cb11
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836619"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -32,13 +31,13 @@ ms.locfileid: "53159966"
 
 ## <a name="what-configurations-and-versions-are-available"></a>提供了哪些可用的配置和版本？
 
-在 Azure Marketplace 中，可以看到最新主要版本的映像：Visual Studio 2017 和 Visual Studio 2015。 对于每个主要版本，可以看到最初发布的 (RTW) 版本和最新更新的版本。 其中每个版本都提供 Visual Studio Enterprise 和 Visual Studio Community 版本。 这些映像至少每月更新一次，以包含最新的 Visual Studio 和 Windows 更新。 映像的名称保持不变，但每个映像的说明将包含已安装的产品版本和映像的“截至”日期。
+在 Azure Marketplace 中，可以看到最新主要版本的映像：Visual Studio 2017 和 Visual Studio 2015。  我们最近为即将上市的主版本 Visual Studio 2019 添加了预览版支持。  对于每个发布的主版本，可以看到最初发布的 (RTW) 版本和最新更新的版本。  其中每个版本都提供 Visual Studio Enterprise 和 Visual Studio Community 版本。  这些映像至少每月更新一次，以包含最新的 Visual Studio 和 Windows 更新。  映像的名称保持不变，但每个映像的说明将包含已安装的产品版本和映像的“截至”日期。
 
 | 发行版本                                              | 版本                     |     产品版本      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|   Visual Studio 2019：预览版（预览版 1）                   |           企业         | 16.0.0 预览版 1 |
-| Visual Studio 2017：最新（版本 15.9）                    |    Enterprise，Community     |      版本 15.9.0      |
-|         Visual Studio 2017：RTW                              |    Enterprise，Community     |      版本 15.0.18     |
+|    Visual Studio 2019：预览版（预览版 1）                   |           企业         | 16.0.0 预览版 1 |
+| Visual Studio 2017：最新（版本 15.9）                    |    Enterprise，Community     |      版本 15.9.4      |
+|         Visual Studio 2017：RTW                              |    Enterprise，Community     |      版本 15.0.20     |
 |   Visual Studio 2015：最新（更新 3）                      |    Enterprise，Community     |  版本 14.0.25431.01   |
 |         Visual Studio 2015：RTW                              |             无             | （已过维护期限）  |
 

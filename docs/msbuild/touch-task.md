@@ -1,8 +1,6 @@
 ---
 title: Touch 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Touch
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d1d4b8093e9cd5e4c41e88573fa80c131fd7caf
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c9ce9b12d67a43f290f6a83e85668233050d4047
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154890"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854719"
 ---
 # <a name="touch-task"></a>Touch 任务
 设置文件的访问和修改时间。  
@@ -33,7 +31,7 @@ ms.locfileid: "39154890"
 ## <a name="parameters"></a>参数  
  下表描述了 `Touch` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`AlwaysCreate`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，将创建任何尚未存在的文件。|  
 |`Files`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要改动的文件集合。|  

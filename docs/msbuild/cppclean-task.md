@@ -1,8 +1,6 @@
 ---
 title: CPPClean 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.cppclean
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 749d60c764f522d188b45b4ecf7302d69b6cd64b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fbf575db0289f0b5bbb5fbcd0bf47605871e52c6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966367"
 ---
 # <a name="cppclean-task"></a>CPPClean 任务
 删除生成 Visual C++ 项目时 MSBuild 创建的临时文件。 删除生成文件的过程称为“清除”。  
@@ -34,7 +32,7 @@ ms.locfileid: "39179074"
 ## <a name="parameters"></a>参数  
  下表描述了 CPPClean 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |DeletedFiles|可选 `ITaskItem[]` 输出参数。<br /><br /> 定义可由任务使用和发出的 MSBuild 输出文件项的数组。|  
 |DoDelete|可选 **Boolean** 参数。<br /><br /> 如果为 `true`，则清除临时生成文件。|  

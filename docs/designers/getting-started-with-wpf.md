@@ -2,7 +2,6 @@
 title: 什么是 WPF？
 ms.date: 04/16/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d041fb03b4a35b0ed68d386e21ca1ec92a0e3588
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 5585bf577bac21ec448f551f432589676b636e8b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986214"
 ---
 # <a name="get-started-with-wpf"></a>WPF 入门
 
@@ -27,7 +26,7 @@ Windows Presentation Foundation (WPF) 是一个可创建桌面客户端应用程
 |-|-|
 |我希望直接开始使用...|[演练：我的第一个 WPF 桌面应用程序](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |我想比较 XAML 设计工具...|[在 Visual Studio 和 Blend for Visual Studio 中设计 XAML](../designers/designing-xaml-in-visual-studio.md)|
-|是否是初次使用 .NET？|[.NET Framework 概述](/dotnet/framework/get-started/overview)<br /><br /> [应用程序要点](/dotnet/standard/application-essentials)<br /><br /> [Visual C# 和 Visual Basic 入门](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|
+|是否是初次使用 .NET？|[.NET Framework 概述](/dotnet/framework/get-started/overview)<br /><br /> [应用程序要点](/dotnet/standard/application-essentials)<br /><br /> [Visual C# 和 Visual Basic 入门](../ide/quickstart-visual-basic-console.md)|
 |有关 WPF 的详细信息...|[WPF 概述](../designers/introduction-to-wpf.md)<br /><br /> [XAML 概述 (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [控件](/dotnet/framework/wpf/controls/)<br /><br /> [数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [使用 LINQ to XML 进行 WPF 数据绑定](../designers/wpf-data-binding-with-linq-to-xml-overview.md)|
 |是否是 Windows 窗体开发人员？|[Windows 窗体控件和等效的 WPF 控件](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [WPF 和 Windows 窗体互操作中受支持的方案](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 

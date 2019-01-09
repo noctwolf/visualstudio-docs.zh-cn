@@ -1,8 +1,6 @@
 ---
 title: 阻塞时间分析报告 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.blocking
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93288759ebcea6fd88777feeb1764ac41c57acc4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4621170ba1ab37ef22bf8a2a974d01d36ddfb705
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865779"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946417"
 ---
 # <a name="blocking-time-profile-report"></a>阻塞时间分析报告
 分析报告提供特定于每个阻塞类别（例如，“I/O”或“同步”）的调用堆栈的合计阻塞时间数据。 优先报告列出抢占当前进程的进程以及抢占实例数。 为了生成阻塞分析报告，工具会收集阻塞 API 调用并将它们累计到调用堆栈树中。 这些报告中显示的数据因当前时间范围、隐藏线程和以下两个可能应用的筛选器而异：  
@@ -33,7 +31,7 @@ ms.locfileid: "49865779"
 ## <a name="blocking-time-report-columns"></a>阻塞时间报告列  
  下表显示每个阻塞时间报表的列。  
   
-|列名称|描述|  
+|列名称|说明|  
 |-----------------|-----------------|  
 |**名称**|调用堆栈每个级别的函数的名称。|  
 |**实例**|可见时间段内阻塞调用的实例数。|  

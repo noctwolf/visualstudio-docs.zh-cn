@@ -2,7 +2,6 @@
 title: “类视图”和“对象浏览器”图标
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - icons, in Object Browser
@@ -18,22 +17,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff94e67291bff8dc00d3fa63976f283da485f6a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29d39c210a14934ba50ace92692bee944b6b75c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844387"
 ---
 # <a name="class-view-and-object-browser-icons"></a>“类视图”和“对象浏览器”图标
 
 “类视图”和“对象浏览器”显示表示代码实体的图标，如命名空间、类、函数和变量。 下表展示和描述了图标。
 
-|图标|描述|图标|描述|
+|图标|说明|图标|说明|
 |----------|-----------------|----------|-----------------|
 |![命名空间符号](../ide/media/vxnamespace_icon.gif)|命名空间|![声明符号](../ide/media/vxmethod_icon.gif)|方法或函数|
 |![“类”图标](../ide/media/vxclass_icon.gif)|类|![运算符符号](../ide/media/vxoperator_icon.gif)|运算符|
-|![棒棒糖形状的接口符号](../ide/media/vxinterface_icon.gif)|接口|![属性符号](../ide/media/vxproperty_icon.gif)|属性|
+|![棒棒糖形状的接口符号](../ide/media/vxinterface_icon.gif)|接口|![属性符号](../ide/media/vxproperty_icon.gif)|Property|
 |![结构符号](../ide/media/vxstruct_icon.gif)|结构|![“字段”图标](../ide/media/vxfield_icon.gif)|字段或变量|
 |![联合符号](../ide/media/vxunion_icon.gif)|联合|![事件符号](../ide/media/vxevent_icon.gif)|事件|
 |![枚举符号](../ide/media/vxenum_icon.gif)|Enum|![“常量”图标](../ide/media/vxconstant_icon.gif)|返回的常量|
@@ -49,7 +48,7 @@ ms.locfileid: "34745784"
 
 以下信号图标应用于所有原有的图标并指示它们的辅助功能。
 
-|图标|描述|
+|图标|说明|
 |----------|-----------------|
 |\<无信号图标>|Public。 可从此组件中的任何地方访问，也可从任何引用它的组件访问。|
 |![信号 Protected 符号](../ide/media/vxsignal_icon_key.gif)|Protected。 从包含类或类型访问，或者从由包含类或类型派生的类型访问。|

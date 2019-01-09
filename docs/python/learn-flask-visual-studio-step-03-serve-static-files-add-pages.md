@@ -2,9 +2,8 @@
 title: 了解 Visual Studio 中的 Flask 教程步骤 3，静态文件和页面
 titleSuffix: ''
 description: Visual Studio 项目上下文中 Flask 基础知识的演练，具体演示了如何提供静态文件、将页面添加到应用和使用模板继承
-ms.date: 09/04/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 906c44ca3b1d0771202e78910870d38f9d4fb995
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 15c336a0f026211f37c2435586e0e18df96ecf0f
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065020"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060785"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步骤 3：提供静态文件、添加页面和使用模板继承
 

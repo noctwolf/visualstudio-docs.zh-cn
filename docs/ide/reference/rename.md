@@ -1,8 +1,7 @@
 ---
-title: 在 Visual Studio 中重构重命名
+title: 重构重命名
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cde6fb353db2fc018104a031dd17b943b2b2247
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: a24c8a44cbd7d3c889d92c34c9eac0c5b015be65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295951"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881005"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>“重命名代码符号”重构
 
@@ -29,11 +28,11 @@ ms.locfileid: "51295951"
 
 - Visual Basic
 
-功能：重命名代码符号的标识符，例如字段、本地变量、方法、命名空间、属性和类型。
+**功能：** 重命名代码符号的标识符，例如字段、本地变量、方法、命名空间、属性和类型。
 
-时机：想要安全地进行重命名（无需查找所有实例）并复制/粘贴新名称。
+**使用时机：** 想要安全地进行重命名（无需查找所有实例）并复制/粘贴新名称。
 
-原因：复制和粘贴整个项目的新名称可能会导致错误。 此重构工具将准确地执行重命名操作。
+操作原因：复制和粘贴整个项目的新名称可能会导致错误。 此重构工具将准确地执行重命名操作。
 
 ## <a name="how-to"></a>操作说明
 

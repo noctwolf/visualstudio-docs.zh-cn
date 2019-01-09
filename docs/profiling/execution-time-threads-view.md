@@ -1,8 +1,6 @@
 ---
 title: 执行时间（“线程”视图）| Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.execution
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b06532771aaa432deccb8040c7dd7e5962dd15f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 4131b70a0d76f5245152e397032f55833421c424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905950"
 ---
 # <a name="execution-time-threads-view"></a>执行时间（“线程”视图）
 当系统中的线程主动在逻辑内核上工作时，线程视图时间线中的这些段表示执行时间。  

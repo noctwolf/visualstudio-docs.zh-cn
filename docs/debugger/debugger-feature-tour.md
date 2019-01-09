@@ -3,7 +3,6 @@ title: VS 2017 中的调试入门
 description: 开始使用 Visual Studio 调试器调试应用程序
 ms.custom: mvc
 ms.date: 06/15/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf7bcba0ceaa71b933d4875cd5eee28d7cea0028
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904963"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>初步了解 Visual Studio 调试器
 
@@ -174,7 +173,7 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 可双击代码行来查看该源代码，这也会更改调试器正在检查的当前范围。 此操作不会使调试器前进。
 
-还可使用“调用堆栈”窗口中的右键单击菜单执行其他操作。 例如，你可将断点插入到指定的函数中，使用“运行到光标处”重启应用，然后检查源代码。 请参阅[如何：检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
+还可使用“调用堆栈”窗口中的右键单击菜单执行其他操作。 例如，你可将断点插入到指定的函数中，使用“运行到光标处”重启应用，然后检查源代码。 请参阅[操作说明：检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
 
 ## <a name="exception"></a> 检查异常
 
@@ -215,7 +214,7 @@ IntelliTrace 后退会在每个断点处及调试器步骤事件发生时自动�
 
 ## <a name="next-steps"></a>后续步骤
 
-在本教程中，你已快速了解了许多调试器功能。 建议使用示例应用程序更深入地了解这些功能
+在本教程中，你已快速了解了许多调试器功能。 你可能会需要更深入地了解其中一个功能，例如断点。
 
 > [!div class="nextstepaction"]
-> [了解如何使用 Visual Studio 进行调试](../debugger/getting-started-with-the-debugger.md)
+> [了解如何使用断点](../debugger/using-breakpoints.md)

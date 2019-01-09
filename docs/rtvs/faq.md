@@ -3,19 +3,18 @@ title: 针对 Visual Studio 的 R 工具常见问题解答
 description: 有关 Visual Studio 中的 R 的常见问题。
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: reference
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 1da67a213ed1add0ce670ca133163538e2cde1b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235206"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913851"
 ---
 # <a name="frequently-asked-questions"></a>常见问题
 
@@ -81,7 +80,7 @@ ms.locfileid: "36235206"
 
 **问：建议对 RTVS 项目采用哪种 .gitignore 设置**？
 
-答： Github 继续使用所推荐 .gitignore 文件的主存储库。 请访问 [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
+答： Github 继续使用所推荐 .gitignore 文件的主存储库。 请访问：[R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>远程服务
 

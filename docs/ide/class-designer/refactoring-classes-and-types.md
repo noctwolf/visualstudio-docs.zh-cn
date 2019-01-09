@@ -2,7 +2,6 @@
 title: 在类设计器中重命名并移动类和类型
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5683f28150089335f04e9cf2e5274ad3ff413c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e85c4b760bab242ba5aa43f0e1aab0936565af33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922518"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891461"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>在类设计器中重构类和类型
 
@@ -40,8 +39,8 @@ ms.locfileid: "49922518"
 |任务|支持内容|
 |----------| - |
 |**重构类：** 可以通过重构操作将类拆分为分部类或实现抽象基类。|-   [如何：将类拆分为分部类](how-to-split-a-class-into-partial-classes.md)|
-|**使用接口：** 在类设计器中，可以在类图上实现接口，方法是将它连接到为接口方法提供代码的类。|-   [如何：实现接口](how-to-implement-an-interface.md)|
-|**重构类型、类型成员和参数：** 通过使用类设计器，可以重命名类型、重写类型成员，或将它们从一种类型移动到另一种类型。 此外还可创建可以为 null 的类型。|-   [重命名类型和类型成员](#rename-types-and-type-members)<br />-   [将类型成员从一个类型移到另一个类型](#move-type-members-from-one-type-to-another)<br />-   [如何：创建可以为 Null 的类型](how-to-create-a-nullable-type.md)|
+|**使用接口：** 在类设计器中，可以在类图上将接口连接至为接口方法提供代码的类，以此来实现接口。|-   [如何：实现接口](how-to-implement-an-interface.md)|
+|**重构类型、类型成员和参数：** 通过使用类设计器，可以重命名类型、重写类型成员，或将它们从一种类型移动到另一种类型。 此外还可创建可以为 null 的类型。|-   [重命名类型和类型成员](#rename-types-and-type-members)<br />-   [将类型成员从一个类型移到另一个类型](#move-type-members-from-one-type-to-another)<br />-   [如何：创建可以为 null 的类型](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>重命名类型和类型成员
 
@@ -90,5 +89,4 @@ ms.locfileid: "49922518"
 
 ## <a name="see-also"></a>请参阅
 
-- [查看类型和关系](viewing-types-and-relationships.md)
-- [设计类和类型](designing-classes-and-types.md)
+- [设计类和类型](designing-and-viewing-classes-and-types.md)

@@ -3,7 +3,6 @@ title: 创建 Node.js 和 React 应用
 description: 在本教程中，使用 Visual Studio 的 Node.js 工具创建应用
 ms.custom: mvc
 ms.date: 11/01/2018
-ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9203b07767d38443dbad8cc619a40971ca09f2c6
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.openlocfilehash: a89a54999e6db5139178b20a0794d4dc594e0e45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750781"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874172"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 
@@ -258,7 +257,7 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
     }
     ```
 
-    webpack 配置代码指示 Webpack 使用 TypeScript 加载程序转译 JSX。
+    webpack 配置代码指示 webpack 使用 TypeScript 加载程序转译 JSX。
 
 1. 打开 tsconfig.json 并使用以下代码替换默认代码，以下代码指定 TypeScript 编译器选项：
 

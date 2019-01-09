@@ -3,7 +3,6 @@ title: 编辑 Python 代码
 description: 对于 Python，Visual Studio 提供丰富的 IntelliSense、代码片段和导航功能，以及格式设置、linting 和重构。
 ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15020111702d68c8c35fb09655018215e3a11d3b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 62d22b286b6f0e58f6b833ba1975a07a6ab0500b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964359"
 ---
 # <a name="edit-python-code"></a>编辑 Python 代码
 
@@ -196,7 +195,7 @@ Visual Studio 中的 Python 支持提供多种方式在代码中快速导航，�
 
 导航栏在每个编辑器窗口的顶部显示且包含两级定义列表。 左侧下拉列表包含当前文件中的顶级类和函数定义；右侧下拉列表显示左侧作用域内的定义列表。 在编辑器中移动时，列表会进行更新，以显示当前上下文，并且还可以从这些列表中选择某项以直接转入。
 
-Visual Studio 编辑器中的 ![Navigation Bar] (media/code-editing-navigation-bar.png)
+![Visual Studio 编辑器中的导航栏](media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > 若要隐藏导航栏，请转到“工具” > “选项” > “文本编辑器” > “Python” > “常规”，然后清除“设置” > “导航栏”。

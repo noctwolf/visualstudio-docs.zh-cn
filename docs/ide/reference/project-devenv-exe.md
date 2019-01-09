@@ -2,7 +2,6 @@
 title: -Project (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - /project Devenv switch
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b18e4715eb711160d0adcc95c6a19e4b90bcc94
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 2c73167c5529eda0f97f414e7c0e2d76083b7bb0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948213"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921609"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 标识在指定解决方案配置中要生成、清理、重新生成或部署的单个项目。
@@ -53,11 +52,11 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 
  `SolnConfigName`
 
- 必须的。 将应用于 `SolutionName` 中命名的解决方案的解决方案配置的名称。
+ 必需。 将应用于 `SolutionName` 中命名的解决方案的解决方案配置的名称。
 
  `SolutionName`
 
- 必须的。 解决方案文件的完整路径和名称。
+ 必需。 解决方案文件的完整路径和名称。
 
  /project `ProjName`
 

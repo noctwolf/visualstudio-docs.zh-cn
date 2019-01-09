@@ -2,9 +2,8 @@
 title: 了解 Visual Studio 中的 Flask 教程步骤 5，投票项目模板
 titleSuffix: ''
 description: Visual Studio 项目上下文中 Flask 基础知识的演练，具体介绍了投票 Flask Web 项目和投票 Flask/Jade Web 项目模板的功能。
-ms.date: 09/04/2018
+ms.date: 01/07/2019
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -13,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a29e222df2a8443e9d5210c0382125cdc65a814f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 9ecbfb1c9b399327bede2fe479f0518a26e107e7
+ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065994"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060811"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步骤 5：使用投票 Flask Web 项目模板
 

@@ -2,7 +2,6 @@
 title: “切换断点”命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - debug.togglebreakpoint
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14f4d60bcbf7c7f394d62cc881c78ef9aa51e545
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7a2e9857e752d01f03e7d9219c5e030dae921cc9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946801"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833748"
 ---
 # <a name="toggle-breakpoint-command"></a>“切换断点”命令
 在文件中的当前位置，根据其当前状态打开或关闭断点。
@@ -47,4 +46,4 @@ Debug.ToggleBreakpoint [text]
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [“命令”窗口](../../ide/reference/command-window.md)
 - [“查找/命令”框](../../ide/find-command-box.md)
-- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

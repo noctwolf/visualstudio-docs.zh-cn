@@ -1,8 +1,6 @@
 ---
 title: RC 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0db327943dcaf9b14a921cf4437b6c23874b4380
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 156de08e8bd0ed2a8cadd0653facfa99d352cb20
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219427"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915583"
 ---
 # <a name="rc-task"></a>RC 任务
 包装 Microsoft Windows 资源编译器工具 rc.exe。 RC 任务将游标、图标、位图、对话框和字体等资源编译为一个资源 (.res) 文件。 有关详细信息，请参阅[资源编译器](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler)。
@@ -37,7 +35,7 @@ ms.locfileid: "50219427"
 ## <a name="parameters"></a>参数  
  下表描述了 RC 任务的参数。 大多数任务参数和若干组参数都对应于命令行选项。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|可选 **String []** 参数。<br /><br /> 将目录添加到在其中搜索包含文件的目录列表中。<br /><br /> 有关详细信息，请参阅[使用 RC（RC 命令行）](http://go.microsoft.com/fwlink/?LinkId=155730)中的 /I 选项。|  
 |**AdditionalOptions**|可选 **String** 参数。<br /><br /> 命令行选项列表，例如，/\<option1> /\<option2> /\<option#>。 使用此参数可指定未由任何其他 RC 任务参数表示的命令行选项。<br /><br /> 有关详细信息，请参阅[使用 RC（RC 命令行）](http://go.microsoft.com/fwlink/?LinkId=155730)中的选项。|  

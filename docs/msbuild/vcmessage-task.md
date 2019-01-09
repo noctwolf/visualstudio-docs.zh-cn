@@ -1,8 +1,6 @@
 ---
 title: VCMessage 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 06/27/2018
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - vc.task.vcmessage
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66c245f78c27521e9db53327f8dfdc567ed0e995
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: f51abd957f5a39cdc3af1f34bf3af28999ab80fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154134"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928956"
 ---
 # <a name="vcmessage-task"></a>VCMessage 任务
 记录生成期间的警告消息和错误消息。  
@@ -37,7 +35,7 @@ ms.locfileid: "39154134"
 ## <a name="parameters"></a>参数  
  下表描述了 VCMessage 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |**参数**|可选 **String** 参数。<br /><br /> 要显示的消息列表（以分号分隔）。|  
 |**代码**|必需的 **String** 参数。<br /><br /> 限定消息的错误号。|  

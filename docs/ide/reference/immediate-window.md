@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 768824995bcc0c99cc4c6ad400888e056619b6b7
+ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942993"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53561663"
 ---
 # <a name="immediate-window"></a>即时窗口
 **即时**窗口用于调试和计算表达式、执行语句、输出变量值等。 借助即时窗口，用户可输入要在调试期间使用开发语言计算或执行的表达式。 若要显示**即时**窗口，请打开要编辑的项目，然后从“调试”菜单中选择“窗口”，再选择“即时”，或按 CTRL+ALT+I。
@@ -76,7 +76,7 @@ ms.locfileid: "49942993"
 
     **即时**窗口将运行 `MyFunction` 并显示 `4`。
 
-如果函数或子例程包含断点，则 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 会在适当断点处中断执行。 随后即可使用调试器窗口检查程序状态。 有关详细信息，请参阅[演练：在设计时调试](../../debugger/walkthrough-debugging-at-design-time.md)。
+如果函数或子例程包含断点，则 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 会在适当断点处中断执行。 随后即可使用调试器窗口检查程序状态。 有关详细信息，请参见[演练：在设计时调试](../../debugger/walkthrough-debugging-at-design-time.md)。
 
 不能在需要启动执行环境的项目类型（包括 [!INCLUDE[trprVSTOshort](../../ide/reference/includes/trprvstoshort_md.md)] 项目、Web 项目、智能设备项目和 SQL 项目）中使用设计时表达式计算。
 
@@ -128,8 +128,7 @@ ms.locfileid: "49942993"
 
 - [使用调试器浏览代码](../../debugger/navigating-through-code-with-the-debugger.md)
 - [“命令”窗口](../../ide/reference/command-window.md)
-- [在 Visual Studio 中进行调试](../../debugger/debugging-in-visual-studio.md)
-- [调试器基础知识](../../debugger/getting-started-with-the-debugger.md)
+- [初探调试器](../../debugger/debugger-feature-tour.md)   
 - [演练：在设计时调试](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [在 Visual Studio 中使用正则表达式](../../ide/using-regular-expressions-in-visual-studio.md)

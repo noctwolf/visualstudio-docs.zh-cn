@@ -1,8 +1,6 @@
 ---
 title: “模块”视图 - 采样数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97b3289119ec77c191d540285b235bab443ab6f3
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bb4c4e3d9181fecd3c9aa2d91201deadb09de7c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256863"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892973"
 ---
 # <a name="modules-view---sampling-data"></a>“模块”视图 - 采样数据
 采样数据的“模块”视图显示按分析数据中采样的模块分组的性能数据。 每个模块都是一个层次结构树的根。 模块的采样函数在模块节点下列出。  
@@ -28,7 +26,7 @@ ms.locfileid: "35256863"
   
  如果在收集样本时执行函数（即函数处于调用堆栈顶部），则执行的源行和指令地址在函数节点下列出。 因为在执行行或指令时会为源行或指令指针收集数据，所以非独占和独占值对于行数据和指令数据始终是相同的。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**名称**|模块、函数、行号或指令指针地址的名称。|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  

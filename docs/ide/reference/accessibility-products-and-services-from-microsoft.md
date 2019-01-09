@@ -3,7 +3,6 @@ title: Microsoft 提供的辅助功能产品和服务
 description: 详细了解 Microsoft 提供的产品和服务，这些产品和服务有助于使我们的操作系统、程序和应用程序更易于包括残障人士在内的所有人使用。
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -21,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7e209e609caf073a7360bad3d0991a6fbd873989
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886314"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的辅助功能产品和服务
 

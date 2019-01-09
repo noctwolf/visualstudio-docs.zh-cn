@@ -2,7 +2,6 @@
 title: 如何：使用类设计器创建类型
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 131c09b170e86858d8a2855092404208fe06fa91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842256"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916463"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>如何：使用类设计器创建类型
 
@@ -94,5 +93,4 @@ ms.locfileid: "49842256"
 - [如何：创建类型之间的继承](how-to-create-inheritance-between-types.md)
 - [如何：创建类型之间的关联](how-to-create-associations-between-types.md)
 - [创建和配置类型成员](creating-and-configuring-type-members.md)
-- [使用类图](working-with-class-diagrams.md)
 - [设计类和类型](designing-and-viewing-classes-and-types.md)

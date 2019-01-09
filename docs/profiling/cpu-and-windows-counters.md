@@ -1,8 +1,6 @@
 ---
 title: CPU 和 Windows 计数器 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.counters
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ddf173f39accb0bb9d2907349c82accdd4f21b40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865916"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912631"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 计数器
 
@@ -113,7 +111,7 @@ Visual Studio 探查器继续支持特定平台的特定事件。 例如，Penti
 
 4. 从“计数器类别”列表中，选择一个计数器组。 该组的 Windows 计数器将显示在列表框中。
 
-     **请注意**：单击“取消”可返回到上一个计数器收集配置。
+     **注意：** 单击“取消”可返回到上一个计数器收集配置。
 
 ### <a name="command-line"></a>命令行
 
@@ -127,9 +125,7 @@ Visual Studio 探查器继续支持特定平台的特定事件。 例如，Penti
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     其中 *\<Visual Studio Performance Tools Directory>* 是 Visual Studio 安装的性能工具目录的路径，通常为
-
-     C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     其中 *\<Visual Studio Performance Tools Directory>* 是 Visual Studio 安装的性能工具目录的路径。 若要获取性能工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
 
 ## <a name="see-also"></a>请参阅
 
