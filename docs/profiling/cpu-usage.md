@@ -2,7 +2,6 @@
 title: 分析 CPU 使用率 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
@@ -10,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d4d6a352d2ff1b71796d64c34992af493867a
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a82c47c6815d4bf792a09a0b44dc21edbad68479
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988441"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用情况 
 
@@ -84,7 +83,7 @@ ms.locfileid: "53063258"
 
  由代码执行的系统和框架函数称为“外部代码”。 外部代码函数启动和停止应用、绘制 UI、控制线程以及向应用提供其他低级别服务。 在大多数情况下，你不会对外部代码感兴趣，因此 CPU 使用情况调用树可将用户方法的外部函数收集到一个“[外部代码]”节点中。  
   
- 要查看外部代码的调用路径，请在主诊断报表页面上的“筛选器”下拉列表中选择“显示外部代码”，然后选择“应用”。 “CPU 使用情况”页面的“调用树”视图随即展开外部代码调用。  
+ 要查看外部代码的调用路径，请在主诊断报表页面（右窗格）上的“筛选器”下拉列表中选择“显示外部代码”，然后选择“应用”。 “CPU 使用情况”页面的“调用树”视图随即展开外部代码调用。 （“筛选器”下拉菜单在主诊断页面上可用，在详细视图上不可用。）
   
  ![显示外部代码](../profiling/media/cpu_use_wt_filterview.png "Show External Code")  
   

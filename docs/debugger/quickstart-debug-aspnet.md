@@ -3,7 +3,6 @@ title: 调试 ASP.NET
 description: 使用 Visual Studio 调试器调试 ASP.NET
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 74671401b3e3eaeae5840110dfc37c926266f98a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6ac201b124f460a3918034095cd3f86e49141a7b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636982"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900595"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 ASP.NET
 
@@ -103,7 +102,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
 
 应用将继续执行，并于你在其中单击按钮的代码行上暂停。
 
-用于单步执行代码的常见键盘命令包括 F10 和 F11。 有关更多深入的说明，请参阅[初学者指南](../debugger/getting-started-with-the-debugger.md)。
+用于单步执行代码的常见键盘命令包括 F10 和 F11。 如需获取更多详尽介绍，请参阅[初探调试器](../debugger/debugger-feature-tour.md)。
 
 ## <a name="inspect-variables-in-a-datatip"></a>检查数据提示中的变量
 

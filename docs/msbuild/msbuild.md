@@ -1,8 +1,6 @@
 ---
 title: MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, about MSBuild
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3ea25520428783aaedc12e1666475feb104b583
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928797"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是一个用于生成应用程序的平台。 此引擎（也称为 MSBuild）为项目文件提供了一个 XML 架构，用于控制生成平台处理和生成软件的方式。 Visual Studio 会使用 MSBuild，但它不依赖于 Visual Studio。 通过在项目或解决方案文件中调用 msbuild.exe，可以在未安装 Visual Studio 的环境中安排和生成产品。
@@ -29,7 +27,7 @@ ms.locfileid: "49876719"
 
  下面的示例介绍了什么情况下可使用 MSBuild 命令行而不是 Visual Studio IDE 来运行生成。
 
--   未安装 Visual Studio。
+-   未安装 Visual Studio。 （[下载 MSBuild 且不使用 Visual Studio](https://visualstudio.microsoft.com/downloads/?q=build+tools)）
 
 -   你想要使用 64 位版本的 MSBuild。 通常情况下不必使用此版本的 MSBuild，但它可以让 MSBuild 访问更多内存。
 
@@ -67,7 +65,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 ##  <a name="project-file"></a>项目文件
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 使用基于 XML 的项目文件格式，既简单又可扩展。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件格式允许开发者描述要生成的项，以及如何针对不同的操作系统和配置生成这些项。 另外，这种项目文件格式还允许开发人员创作可重用的生成规则，这些规则可以包含到不同的文件中，以便可以在产品内的不同项目之间一致地执行生成。
 
- 以下各节介绍了 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件格式的一些基本元素。 有关如何创建基本项目文件的教程，请参阅[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。
+ 以下各节介绍了 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件格式的一些基本元素。 有关如何创建基本项目文件的教程，请参见[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。
 
 ###  <a name="BKMK_Properties"></a>属性
  属性表示可用于配置生成的键/值对。 属性的声明方式是：创建一个与属性同名的元素，将其指定为 [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) 元素的子元素。 例如，下面的代码将创建一个名为 `BuildDir` 的属性，其值为 `Build`。
@@ -170,9 +168,9 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 ## <a name="see-also"></a>请参阅
 
-| 标题 | 描述 |
+| Title | 说明 |
 | - | - |
-| [演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | 演示如何只使用文本编辑器以增量方式创建基本项目文件。 |
+| [演练：从头创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | 演示如何只使用文本编辑器以增量方式创建基本项目文件。 |
 | [演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md) | 介绍 MSBuild 的构建基块，并演示如何在不关闭 Visual Studio IDE 的情况下编写、操作和调试 MSBuild 项目。 |
 | [MSBuild 概念](../msbuild/msbuild-concepts.md) | 演示 MSBuild 的四个生成块：属性、项、目标和任务。 |
 | [项](../msbuild/msbuild-items.md) | 介绍 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 文件格式背后的常规概念，以及所有这些概念之间的关系。 |
@@ -182,7 +180,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 | [条件](../msbuild/msbuild-conditions.md) | 论述如何在 MSBuild 元素中使用 `Condition` 特性。 |
 | [高级概念](../msbuild/msbuild-advanced-concepts.md) | 演示批处理、执行转换、多目标和其他高级技术。 |
 | [MSBuild 中的日志记录](../msbuild/logging-in-msbuild.md) | 介绍如何记录生成事件、消息和错误。 |
-| [其他资源](../msbuild/additional-msbuild-resources.md) | 列出社区和支持资源，用于了解有关 MSBuild 的更多信息。 |
+| [其他资源](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | 列出社区和支持资源，用于了解有关 MSBuild 的更多信息。 |
 
 ## <a name="reference"></a>参考
  [MSBuild 参考](../msbuild/msbuild-reference.md) 指向包含参考信息的主题的链接。

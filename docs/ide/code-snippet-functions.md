@@ -2,7 +2,6 @@
 title: 代码段函数
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - code snippets [Visual Studio], functions
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3362bae41b540ee097e1109848680a11d37a272
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7cf31fed530447af986d96418d06cf46f02b14b1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512130"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907808"
 ---
 # <a name="code-snippet-functions"></a>代码片段函数
 
@@ -29,7 +28,7 @@ ms.locfileid: "39512130"
 
 下表介绍可与代码片段中的 `Function` 元素一起使用的函数。
 
-|函数|描述|语言|
+|函数|说明|语言|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|为 `EnumerationLiteral` 参数指定的枚举成员生成一个switch 语句和一组 case 语句。 `EnumerationLiteral` 参数必须是枚举文本的引用或是枚举类型。|C#|
 |`ClassName()`|返回包含插入的代码片段的类的名称。|C#|

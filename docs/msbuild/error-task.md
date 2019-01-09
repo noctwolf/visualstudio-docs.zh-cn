@@ -1,8 +1,6 @@
 ---
 title: Error 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Error
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9568b27b65045c1b3a4495adff83f0b972e342f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d9e55fe148ccb973a6fdcbf0722d354d91cc1816
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911260"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833013"
 ---
 # <a name="error-task"></a>Error 任务
 基于评估的条件语句，停止生成操作并记录错误。  
@@ -34,7 +32,7 @@ ms.locfileid: "49911260"
  下表描述了 `Error` 任务的参数。  
 
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 |---------------| - |
 | `Code` | 可选 `String` 参数。<br /><br /> 与错误关联的错误代码。 |
 | `File` | 可选 `String` 参数。<br /><br /> 包含错误的文件的名称。 如果未提供任何文件名称，将使用包含 Error 任务的文件。 |

@@ -1,8 +1,6 @@
 ---
 title: 并发可视化工具 SDK | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.sdk.about
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c02959f30f89b8f7c79527026404099a4452a827
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a9898037e7dc6beae5d984856ff5c12b74183049
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53884965"
 ---
 # <a name="concurrency-visualizer-sdk"></a>并发可视化工具 SDK
 可通过使用并发可视化工具 SDK 检测源代码，以在并发可视化工具中显示附加信息。 可以在代码中将其他数据与阶段和事件关联。 这些其他的可视化被称为标记。  有关介绍性演练，请参阅 [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405)（并发可视化工具 SDK 简介）。  
@@ -123,7 +121,7 @@ ms.locfileid: "34691181"
   
 ## <a name="see-also"></a>请参阅  
   
-|标题|描述|  
+|Title|说明|  
 |-----------|-----------------|  
 |[C++ 库参考](../profiling/cpp-library-reference.md)|介绍用于 C++ 的并发可视化工具 API。|  
 |[C 库参考](../profiling/c-library-reference.md)|介绍用于 C 的并发可视化工具 API。|  

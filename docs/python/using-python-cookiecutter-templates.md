@@ -3,7 +3,6 @@ title: 通过 Python 使用 CookieCutter 模板
 description: Visual Studio 支持图形 Cookiecutter 扩展，以发现 Python 代码的模板并从这些模板创建项目。
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ca47c1410fd11c32cbce95b9adc5a62c6c26dcf
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057186"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958230"
 ---
 # <a name="use-the-cookiecutter-extension"></a>使用 Cookiecutter 扩展
 
@@ -97,7 +96,7 @@ Cookiecutter 主页上显示可选择的模板列表，分为以下几组：
 
 通过在特定于 Visual Studio 的 cookiecutter.json 文件（并且 Cookiecutter CLI 忽略了该文件）中指定其他元数据，可以改进此呈现。 所有属性都是可选的：
 
-| 属性 | 说明 |
+| Property | 说明 |
 | --- | --- |
 | Label | 指定编辑器上方显示的关于变量的内容，而不是变量名称。 |
 | 说明 | 指定编辑控件上显示的工具提示，而不是该变量的默认值。 |

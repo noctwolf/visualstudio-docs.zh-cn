@@ -2,7 +2,6 @@
 title: 管理外部工具
 ms.date: 11/20/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eeeee2e6e7ae5d043124faaa79bc6bad7c527702
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945878"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53904174"
 ---
 # <a name="manage-external-tools"></a>管理外部工具
 
@@ -52,7 +51,7 @@ ms.locfileid: "31945878"
 
 以下是在定义外部工具时可以使用的参数的完整列表：
 
-|name|参数|描述|
+|name|参数|说明|
 |----------|--------------|-----------------|
 |项路径|$(ItemPath)|当前文件的完整文件名（驱动器 + 路径 + 文件名）。|
 |项目录|$(ItemDir)|当前文件的目录（驱动器 + 路径）。|

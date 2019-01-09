@@ -3,19 +3,18 @@ title: 衡量应用中的内存使用情况
 description: 在使用集成了调试器的诊断工具进行调试时，查找内存泄漏和低效内存。
 ms.custom: seodec18
 ms.date: 04/25/2017
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 622f35ccbe29130dea3b35b96373da0c8b39e0b7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 62bf07ba0f5f63daa369e88795824f53f9109ce6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942289"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>在 Visual Studio 中衡量内存使用情况
 使用集成了调试器的内存使用情况诊断工具在进行调试时查找内存泄漏和低效内存。 通过内存使用率工具可以拍摄托管和本机内存堆的一个或多个快照，帮助理解对象类型的内存使用率影响。 可以收集 .NET、本机或混合模式（.NET 和本机）应用的快照。  

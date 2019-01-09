@@ -1,8 +1,6 @@
 ---
 title: FindAppConfigFile 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04a8209ca6856ba550a45c7f67480d1e89db49a3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2ec28617c66b4fc3b759f3ba1b491a20217c70a5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946204"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937525"
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile 任务
 在提供的列表中查找 app.config 文件（若有）。  
@@ -31,7 +29,7 @@ ms.locfileid: "37946204"
 ## <a name="parameters"></a>参数  
  下表描述了 `FindAppConfigFile` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`AppConfigFile`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 指定在列表中发现的第一个匹配项（如有）。|  
 |`PrimaryList`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要在其中进行搜索的主列表。|  

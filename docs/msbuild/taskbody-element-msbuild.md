@@ -1,8 +1,6 @@
 ---
 title: TaskBody 元素 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f0a3f24c5c8634301663f19dab9078bb37405b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5dcddcc0a050698f6e73f12df87316c344da42ec
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876550"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931234"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody 元素 (MSBuild)
 包含传递给 `UsingTask` `TaskFactory` 的数据。 有关详细信息，请参阅 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
@@ -43,19 +41,19 @@ ms.locfileid: "49876550"
 
 ### <a name="attributes"></a>特性  
 
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
 |`Evaluate`|可选布尔属性。<br /><br /> 如果值为 `true`，任务实例化时，MSBuild 对所有内部元素求值，并在将信息传递到 `TaskFactory` 前扩展项和属性。|  
 
 ### <a name="child-elements"></a>子元素  
 
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |数据|`TaskBody` 标记之间的文本一字不差地发送到 `TaskFactory`。|  
 
 ### <a name="parent-elements"></a>父元素  
 
-| 元素 | 描述 |
+| 元素 | 说明 |
 | - | - |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | 提供在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中注册任务的方法。 项目中可能有零个或零个以上的 `UsingTask` 元素。 |
 

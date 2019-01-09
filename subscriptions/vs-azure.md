@@ -3,18 +3,18 @@ title: Microsoft Azure 权益 | Microsoft 文档
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 10/3/2017
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 了解如何激活 Visual Studio 订阅中包含的 Azure 权益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a97dbd638c4840266f22c46610f78ec5b2d527d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 15bfbd9439b19599b7453e8df49024a0f91f2cf4
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862331"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739807"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 
@@ -26,11 +26,9 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 
 |                 订阅级别/计划                 |           好处           |                         是否续订？                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
-|              Visual Studio Enterprise Standard               |     150 美元月信用额度     |                             是                             |
-|               Visual Studio Enterprise 年度                |     150 美元月信用额度     |                             是                             |
+|              Visual Studio Enterprise Standard               |     150 美元月信用额度     |                             是                             ||
 |               Visual Studio Enterprise 月度               |        不可用        |                                                             |
-|             Visual Studio Professional Standard              |     50 美元月信用额度      |                             是                             |
-|              Visual Studio Professional 年度               |     50 美元月信用额度      |                             是                             |
+|             Visual Studio Professional Standard              |     50 美元月信用额度      |                             是                            
 |              Visual Studio Professional 月度              |        不可用        |                                                             |
 |                    Visual Studio Test Pro                    |     50 美元月信用额度      |                             是                             |
 |                        MSDN 平台                        |     100 美元月信用额度     |                             是                             |
@@ -46,6 +44,11 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 | Visual Studio Enterprise – MCT 软件和服务开发人员 |     150 美元月信用额度     |                             是                             |
 
 *包括不得转售 (NFR)、Microsoft 最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)
+
+
+> [!NOTE]
+> Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
+
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
@@ -74,7 +77,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 ## <a name="faq"></a>FAQ
 
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>问：如何从 Azure 门户提交技术支持事件？
-答：从 Azure 门户提交支持事件是一个三步过程。
+A:从 Azure 门户提交支持事件是一个三步过程。
 1. 激活技术支持权益，并获取合同 ID 访问 ID。
 2. 将支持合同链接到 Azure 订阅。
 3. 提交支持事件。
@@ -83,7 +86,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>问：我收到一条消息，指出我对 Azure 的访问即将结束。  若要继续使用 Azure，我该做什么呢？
 
-答：因为你使用的 Azure 权益是与 Visual Studio 订阅相关联的，而该订阅已过期或已删除，所以会收到此电子邮件。  要继续使用 Azure，你有多个选择：
+A:因为你使用的 Azure 权益是与 Visual Studio 订阅相关联的，而该订阅已过期或已删除，所以会收到此电子邮件。  要继续使用 Azure，你有多个选择：
 
 **建议操作：**
 

@@ -1,8 +1,6 @@
 ---
 title: GetWinFXPath 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -20,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ace14a3238142be4d703b4d2e0fa457288b00458
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 63c8b6c0834f427103240ae0b9d11f5958d1b41c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852825"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822581"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath 任务
 <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> 任务返回当前 [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] 运行时的目录。  
   
 ## <a name="task-parameters"></a>任务参数  
   
-| 参数 | 描述 |
+| 参数 | 说明 |
 |-------------------| - |
 | `WinFXPath` | 可选的 **String** 输出参数。<br /><br /> 指定 [!INCLUDE[TLA2#tla_winfx](../msbuild/includes/tla2sharptla_winfx_md.md)] 运行时的实际路径。 |
 | `WinFXNativePath` | 必需的 **String** 参数。<br /><br /> 指定本机 [!INCLUDE[TLA2#tla_titlewinfx](../msbuild/includes/tla2sharptla_titlewinfx_md.md)] 运行时的路径。 |

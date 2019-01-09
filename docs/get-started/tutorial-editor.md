@@ -1,8 +1,9 @@
 ---
-title: 编辑简介
+title: 代码编辑器中的编辑功能简介
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
+ms.technology: vs-ide-general
+ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
@@ -11,20 +12,21 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2f451ecfb73e0c1ac69da4e48f3d2c8033aa51
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 6c3953f69d263b948e84f0d1aa48d878cd39afe6
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027629"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803328"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 
 在这个 10 分钟的 Visual Studio 代码编辑器简介中，我们会向文件添加代码，了解 Visual Studio 编写、导航和了解代码的简便方法。
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
+> [!TIP]
+> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
-本文假定你已熟悉编程语言。 如果不熟悉，则建议首先查看其中一个编程快速入门，如使用 [Python](../ide/quickstart-python.md) 或 [C#](../ide/tutorial-csharp-aspnet-core.md) 创建 Web 应用，或使用 [Visual Basic](../ide/quickstart-visual-basic-console.md) 或 [C++](../ide/getting-started-with-cpp-in-visual-studio.md) 创建控制台应用。
+本文假定你已熟悉编程语言。 如果不熟悉，则建议首先查看其中一个编程快速入门，如使用 [Python](../ide/quickstart-python.md) 或 [C#](../get-started/csharp/tutorial-aspnet-core.md) 创建 Web 应用，或使用 [Visual Basic](../ide/quickstart-visual-basic-console.md) 或 [C++](../ide/getting-started-with-cpp-in-visual-studio.md) 创建控制台应用。
 
 ## <a name="create-a-new-code-file"></a>创建新代码文件
 
@@ -42,7 +44,7 @@ ms.locfileid: "53027629"
 
 Visual Studio 提供了实用的代码片段，可用于快速方便地生成常用代码块。 [代码片段](../ide/code-snippets.md)可用于不同编程语言，包括 C#、Visual Basic 和 C++。 我们将 C# `void Main` 代码片段添加到文件。
 
-1. 将光标放在文件中最后一个右大括号 } 的上方，然后键入字符 `svm`（它代表 `static void Main`，如果不知道这是什么意思，无需太过担心）。
+1. 将光标停在文件中最后的结束括号 } 的上方，并键入字符 `svm`。 （`svm` 代表 `static void Main`；[Main()](/dotnet/csharp/programming-guide/main-and-command-args/) 方法是 C# 应用程序的入口点。）
 
    随即将出现一个弹出对话框，其中包含有关 `svm` 代码片段的信息。
 
@@ -50,7 +52,7 @@ Visual Studio 提供了实用的代码片段，可用于快速方便地生成常
 
 1. 按 Tab 两次，插入代码片段。
 
-   你会看到 `static void Main()` 方法签名被添加到文件。 [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) 方法是 C# 应用程序的入口点。
+   你会看到 `static void Main()` 方法签名被添加到文件。
 
 对于不同编程语言，可用的代码片段不同。 依次选择“编辑” > “IntelliSense” > “插入代码片段”，然后选择语言的文件夹，即可查看该语言的可用代码片段。 对于 C#，该列表如下所示：
 

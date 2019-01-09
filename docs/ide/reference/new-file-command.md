@@ -2,7 +2,6 @@
 title: “新建文件”命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.newfile
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b4d68f53343b2523347f89977fe2bd602d64742
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: eb4ccae573813811567033dfa574c94e1bf809b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179952"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932111"
 ---
 # <a name="new-file-command"></a>“新建文件”命令
 创建新文件并将其打开。 该文件显示在“杂项文件”文件夹下。
@@ -76,4 +75,4 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 - [“命令”窗口](../../ide/reference/command-window.md)
 - [即时窗口](../../ide/reference/immediate-window.md)
 - [“查找/命令”框](../../ide/find-command-box.md)
-- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

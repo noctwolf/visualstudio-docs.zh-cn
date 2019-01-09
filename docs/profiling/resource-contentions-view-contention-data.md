@@ -1,8 +1,6 @@
 ---
 title: “资源争用”视图 - 争用数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcecontention
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33a27d5f2b14effc9d8a90e903b34822d81edfb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 662ae2c4b96320dda0d3f9f4efb350ed0e61be0f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584134"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870503"
 ---
 # <a name="resource-contentions-view---contention-data"></a>“资源争用”视图 - 争用数据
 “资源争用”视图列出作为争用事件源的资源的争用数据。 如果由于另一个线程中的函数已获取对资源的独占访问权限，因此线程中的函数被迫等待获取对资源的访问权限，则会发生争用事件。 每个资源都是显示争用事件中产生的函数执行路径的调用树的根节点。  
@@ -41,7 +39,7 @@ ms.locfileid: "31584134"
   
 ## <a name="navigating-the-resource-allocation-view"></a>导航资源分配视图  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**名称**|资源或函数的名称。|  
 |**独占阻塞的时间**|-   对于资源，是阻止访问资源并导致线程等待的总时间。<br />-   对于函数，是此函数在函数体中执行代码时阻止此函数的这些实例访问父资源的时间。 不包含此函数调用的函数中的阻塞时间。|  

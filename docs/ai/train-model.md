@@ -9,15 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
 ms.service: multiple
-ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 937f5f1606e24a40c0c5ffe90f739cc68df7e4b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49882387"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872062"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>在 Azure Batch AI 中训练 AI 模型
 
@@ -54,7 +53,7 @@ Batch AI 是一种托管服务，使数据科学家和 AI 研究人员可以在 
 
     ![示例库](media/train-model/mnist-startup.png)
 
-8. <strong>右键单击 MNIST 项目的“提交作业”****</strong>
+8. <strong>右键单击“MNIST 项目”的“提交作业”</strong>
 
     ![示例库](media/train-model/submit-job.png)
 9. 选择“Azure Batch AI”群集，然后单击“导入”。 选择 `AzureBatchAI_TF_MNIST.json` 文件以快速填充一些默认值，如要使用的 Docker 映像。 然后单击“提交”

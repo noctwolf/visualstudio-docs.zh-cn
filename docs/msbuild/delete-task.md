@@ -1,8 +1,6 @@
 ---
 title: Delete 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Delete
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd4e0d4aa2567656e8aa37f88b59128bb60a786c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: a61a81c3a3d3644f82f955b362b74fd990351c05
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851425"
 ---
 # <a name="delete-task"></a>Delete 任务
 删除指定的文件。  
@@ -33,7 +31,7 @@ ms.locfileid: "37946181"
 ## <a name="parameters"></a>参数  
  下表描述了 `Delete` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`DeletedFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 指定已成功删除的文件。|  
 |`Files`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要删除的文件。|  

@@ -2,7 +2,6 @@
 title: 使用类视图、调用层次结构、对象浏览器和代码定义窗口查看代码结构
 ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
@@ -27,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a271dfaba8fe533fee84799a0585a29d97e9c70
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 4b3419c7f6b08fbedbe7af684a5c3b2de8967b55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336134"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880908"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>使用不同的工具窗口查看代码结构
 
@@ -194,7 +193,7 @@ ms.locfileid: "34336134"
 |**快速操作和重构**||
 |**重命名**||
 |生成包含文件的关系图||
-|查看定义||
+|**查看定义**||
 |**转到定义**|查找定义（或分部类的多个定义）并将它们显示在“查找结果”窗口中。|
 |转到声明||
 |**查找所有引用**|查找解决方案中对类型或成员的引用。|

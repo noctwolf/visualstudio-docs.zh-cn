@@ -1,8 +1,6 @@
 ---
 title: 函数详细信息视图 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functiondetails
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bfc700f0757d99686e28942ff796cf117b1456f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6ba470b4ec9ef3bc52f9c7250649fc098c999149
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951218"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945335"
 ---
 # <a name="function-details-view"></a>函数详细信息视图
 “函数详细信息视图”窗口显示以下信息：  
@@ -72,7 +70,7 @@ ms.locfileid: "49951218"
 ## <a name="function-performance-details"></a>函数性能详细信息  
  “函数性能详细信息”表提供所选函数的性能指标的摘要数据。 同时显示值和百分比。 在“性能指标”列表中指定图表和详细信息表中显示的分析数据。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**独占**|- 执行函数体时产生的性能指标的量。|  
 |**在调用中**|- 所选函数所调用的函数中产生的性能指标的量。|  

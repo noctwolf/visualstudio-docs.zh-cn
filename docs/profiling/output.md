@@ -1,8 +1,6 @@
 ---
 title: Output | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 5e286e61-4548-42cf-a635-e608c5edbe2b
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f152a1c282688fb00428274e450d7073dfa946
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 4bca95dea2ac381d28d2c2a4043f94dcfb6fd6e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922244"
 ---
 # <a name="output"></a>输出
 “Output”选项指定用于性能会话的分析数据文件的名称。 “Output”必须与“Start”选项配合使用。  

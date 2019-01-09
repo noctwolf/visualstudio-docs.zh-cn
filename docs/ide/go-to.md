@@ -2,7 +2,6 @@
 title: 依次转到文件、符号和行
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, go to
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ac8ccada5b515c2af99607fe27ad059fbf00c021
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986357"
 ---
 # <a name="find-code-using-go-to-commands"></a>使用“转到”命令查找代码
 
@@ -54,12 +53,12 @@ Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快
 
 要缩小对特定类型的码位元素的搜索范围，可以在搜索框中指定一个前缀，也可以从以下五个筛选器图标中选择一个：
 
-前缀 | 图标 | 快捷键 | 描述
+前缀 | 图标 | 快捷键 | 说明
 :-: | - | - | -
 :| ![行图标](media/gotoall-line-icon.png) | Ctrl+G | 转到指定行号
 f| ![文件图标](media/gotoall-files-icon.png) | Ctrl+1、Ctrl+F | 转到指定文件
 r| ![“最近使用的文件”图标](media/gotoall-recent-files-icon.png) | **Ctrl**+**1****Ctrl**+**R** | 转到最近访问的指定文件
-t| ![类型图标](media/gotoall-types-icon.png) | Ctrl+1、Ctrl+T | 转到指定类型
+T| ![类型图标](media/gotoall-types-icon.png) | Ctrl+1、Ctrl+T | 转到指定类型
 m| ![成员图标](media/gotoall-members-icon.png) | Ctrl+1、Ctrl+M | 转到指定成员
 \#| ![符号图标](media/gotoall-symbols-icon.png) | Ctrl+1、Ctrl+S | 转到指定符号
 
@@ -67,7 +66,7 @@ m| ![成员图标](media/gotoall-members-icon.png) | Ctrl+1、Ctrl+M | 转到指
 
 要将搜索范围缩小到特定位置，请从这两个文档图标中选择一个：
 
-图标 | 描述
+图标 | 说明
 ---- | ---
 ![当前文档](media/gotoall_currentdocument.png) | 仅搜索当前文档
 ![外部文档](media/gotoall_external.png) | 除了项目/解决方案中的文档外还搜索外部文档
@@ -82,7 +81,7 @@ m| ![成员图标](media/gotoall-members-icon.png) | Ctrl+1、Ctrl+M | 转到指
 
 选择齿轮图标 ![齿轮图标](media/gotoall_gear.png) 允许更改此功能的作用方式：
 
-设置 | 描述
+设置 | 说明
 ------- | ---
 使用预览选项卡 | 在 IDE 的预览选项卡中立即显示所选的项
 显示详细信息 | 在窗口的文档注释中显示项目、文件、行和摘要信息

@@ -2,7 +2,6 @@
 title: 类设计器的键盘快捷方式和鼠标快捷方式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.classdetails.window
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87b447c3cf2fbba77584675edf3d34f44a98cb64
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a5cce869c2dacb0b6b4bc3e4031860b6772a9a2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826729"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式
 
@@ -30,7 +29,7 @@ ms.locfileid: "49848496"
 
 类图中支持下列鼠标操作：
 
-|鼠标组合|上下文|描述|
+|鼠标组合|上下文|说明|
 | - |-------------|-----------------|
 |双击|Shape 元素|打开代码编辑器。|
 |双击|棒糖形连接器|展开/折叠棒糖形。|
@@ -58,7 +57,7 @@ ms.locfileid: "49848496"
 
 类图中支持下列键盘操作：
 
-|键|上下文|描述|
+|键|上下文|说明|
 |---------|-------------|-----------------|
 |**箭头键**|在类型形状内|对形状内容的树式导航（支持环绕形状）。 如果当前项可展开，则左键和右键会展开/折叠此项；如果当前项不可展开，则导航到其父级（请参阅视图导航以了解详细行为）。|
 |**箭头键**|顶级形状|定义关系图上的形状。|

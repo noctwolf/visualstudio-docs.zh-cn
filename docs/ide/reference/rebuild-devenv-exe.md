@@ -2,7 +2,6 @@
 title: -Rebuild (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /rebuild switch
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0946137cb259386648b7b3ac2883c33f5724352
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 782a0864c692d8c50932f41077762c994f24eeae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948604"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985678"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 清理然后生成指定解决方案配置。
@@ -35,11 +34,11 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 ## <a name="arguments"></a>自变量
  `SolnConfigName`
 
- 必须的。 用于重新生成在 `SolutionName` 中命名的解决方案的解决方案配置名称。
+ 必需。 用于重新生成在 `SolutionName` 中命名的解决方案的解决方案配置名称。
 
  `SolutionName`
 
- 必须的。 解决方案文件的完整路径和名称。
+ 必需。 解决方案文件的完整路径和名称。
 
  /project `ProjName`
 

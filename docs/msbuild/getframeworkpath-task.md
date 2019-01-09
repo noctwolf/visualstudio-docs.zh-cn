@@ -1,8 +1,6 @@
 ---
 title: GetFrameworkPath 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetFrameworkPath
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fb85642b7eb6a92c11d3d04d2c44eb6c683cff
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2eeee3865a9b2a607df48ca6d9ade1990401f759
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946311"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944850"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath 任务
 检索 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 程序集的路径。  
@@ -33,7 +31,7 @@ ms.locfileid: "37946311"
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `GetFrameworkPath` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`FrameworkVersion11Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 1.1 版程序集的路径（如存在）。 否则返回 `null`。|  
 |`FrameworkVersion20Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 2.0 版程序集的路径（如存在）。 否则返回 `null`。|  

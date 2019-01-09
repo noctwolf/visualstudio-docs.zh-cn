@@ -1,8 +1,6 @@
 ---
 title: FindInList 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54562e26e0da5568ba74d40425cf377260d41000
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f083d44578a4fe61029c707b3798191c5b8b3665
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865630"
 ---
 # <a name="findinlist-task"></a>FindInList 任务
 在指定的列表中查找具有匹配的 itemspec 的项。  
@@ -31,7 +29,7 @@ ms.locfileid: "37945115"
 ## <a name="parameters"></a>参数  
  下表描述了 [FindInList 任务](../msbuild/findinlist-task.md)的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`CaseSensitive`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则搜索区分大小写，否则不区分大小写。 默认值是 `true`。|  
 |`FindLastMatch`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则返回最后一个匹配项；否则返回第一个匹配项。 默认值是 `false`。|  

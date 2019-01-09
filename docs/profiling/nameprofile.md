@@ -1,8 +1,6 @@
 ---
 title: NameProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - NameProfile
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df6fce197a184167b66025191f43b07ebd08ffa7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fccec3a48b4ae4fa640f95b2884b11b61f2aae06
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819584"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846777"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 函数会将字符串分配给指定的进程或线程。  
@@ -51,7 +49,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
   指示性能数据集合可应用到的分析级别。 以下 PROFILE_CONTROL_LEVEL 值可用于指示性能数据集合可应用到的三个级别之一：  
   
-|枚举器|描述|  
+|枚举器|说明|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|全局级别设置影响分析运行中的所有进程和线程。|  
 |PROFILE_PROCESSLEVEL|进程级别设置影响指定进程包含的所有线程。|  
@@ -64,7 +62,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>属性值/返回值  
  函数通过使用 **PROFILE_COMMAND_STATUS** 枚举来指示成功或失败。 返回值可以是下列值之一：  
   
-|枚举器|描述|  
+|枚举器|说明|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|指定的分析元素不存在。|  
 |NAME_ERROR_INVALID_NAME|名称无效。|  

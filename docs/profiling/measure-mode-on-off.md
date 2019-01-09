@@ -1,8 +1,6 @@
 ---
 title: 开启/关闭度量模式 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.measure
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73f995fa0aa87d434f9cd7f19d751045c4081a95
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: be23f8bd454790065f7d30bc283c52089e964692
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237414"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53912605"
 ---
 # <a name="measure-mode-onoff"></a>打开/关闭度量模式
 通过使用此工具，可以精确地测量时间线中的时间长度。 若要启用度量模式，请单击“度量”按钮（它具有一个标尺图标），然后在时间线中拖动。 注意在拖动时，指针下面的区域会用黄色突出显示，度量的时间显示在工具栏中该按钮的右侧。 拖动时动态计算此值，以便能够立即看到特定事件占用的时间。 释放鼠标按钮后，时间值保持可见。  

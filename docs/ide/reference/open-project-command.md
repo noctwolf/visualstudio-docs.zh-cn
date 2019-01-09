@@ -2,7 +2,6 @@
 title: “打开项目”命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openproject
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff848ded38b0f59d3894ec4f78dd79ec9d182b8
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 34a6783e71d2a6dfee718aa441fbb3007aa71fa9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924143"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946235"
 ---
 # <a name="open-project-command"></a>打开项目命令
 
@@ -38,7 +37,7 @@ File.OpenProject filename
 
 `filename`
 
-必须的。 要打开的项目或解决方案的完整路径和文件名。
+必需。 要打开的项目或解决方案的完整路径和文件名。
 
 > [!NOTE]
 > `filename` 参数的语法要求用引号将包含空格的路径括起来。

@@ -1,8 +1,6 @@
 ---
 title: Output 元素 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 03/13/2017
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Output
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df135901c0272777c3d76220218042e4dc41a145
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 238e863481360671c77b7994fb1d98ac3ee96589
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817062"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853263"
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 存储项和属性中的任务输出值。  
@@ -48,7 +46,7 @@ ms.locfileid: "49817062"
 
 ### <a name="attributes"></a>特性  
 
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
 |`TaskParameter`|必需的特性。<br /><br /> 任务输出参数的名称。|  
 |`PropertyName`|`PropertyName` 或 `ItemName` 特性是必需的。<br /><br /> 接收任务输出参数值的属性。 然后，项目可引用具有 $(\<PropertyName>) 语法的属性。 此属性名称可以是新属性名称，也可以是项目中已定义的名称。<br /><br /> 在已使用 `ItemName` 的情况下，不能使用该特性。|  
@@ -60,7 +58,7 @@ ms.locfileid: "49817062"
 
 ### <a name="parent-elements"></a>父元素  
 
-| 元素 | 描述 |
+| 元素 | 说明 |
 | - | - |
 | [Task](../msbuild/task-element-msbuild.md) | 创建并执行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务的实例。 |
 

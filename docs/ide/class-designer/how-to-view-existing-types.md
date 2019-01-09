@@ -2,7 +2,6 @@
 title: 如何：查看现有类型（类设计器）
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: e78e92e5d6f8b21dde2660491a944620ac19069b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916661"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>如何：在类设计器中查看现有类型
 
@@ -29,11 +28,11 @@ ms.locfileid: "33956648"
 
 你可以查看本地类型和引用类型。 本地类型存在于当前打开的项目中，是可读/写的。 被引用的类型存在于其他项目中或被引用程序集中，是只读的。
 
-若要设计类图上的新类型，请参阅[如何：使用类设计器创建类型](how-to-create-types.md)。
+若要在类图上设计新类型，请参阅[如何：使用类设计器创建类型](how-to-create-types.md)。
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>在类图上查看项目中的类型
 
-1.  从解决方案资源管理器的项目中，打开现有类图 (.cd) 文件。 如果不存在任何类图，请向项目中添加新类图。 请参阅[如何：向项目添加类图](how-to-add-class-diagrams-to-projects.md)。
+1.  从解决方案资源管理器的项目中，打开现有类图 (.cd) 文件。 如果不存在任何类图，请向项目中添加新类图。 请参阅[操作说明：向项目添加类图](how-to-add-class-diagrams-to-projects.md)。
 
 2.  从解决方案资源管理器的项目中，将源代码文件拖动到类图中。
 
@@ -67,4 +66,4 @@ ms.locfileid: "33956648"
 
 - [如何：查看类型之间的继承](how-to-view-inheritance-between-types.md)
 - [如何：自定义类图](how-to-customize-class-diagrams.md)
-- [查看类型和关系](viewing-types-and-relationships.md)
+- [查看类型和关系](designing-and-viewing-classes-and-types.md)

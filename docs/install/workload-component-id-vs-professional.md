@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c4d3a37f0327137cd1398b64efc2a0fb4be088
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: cb164c9bc4da0768ef41645bf378fe83ad0b1ef6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068605"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957970"
 ---
 # <a name="visual-studio-professional-2017-component-directory"></a>Visual Studio Professional 2017 组件目录
 
@@ -48,7 +47,7 @@ ms.locfileid: "53068605"
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Visual Studio 核心编辑器 | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 用户的 Visual Studio 起始页 | 15.0.27128.1 | Optional
@@ -61,7 +60,7 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 用户的 Visual 
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 语言服务 | 15.0.26720.2 | 必需
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Microsoft Azure WebJobs 工具 | 15.7.27617.1 | 必需
@@ -155,7 +154,7 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 语言服务 | 15.0.26720.2 | 建议
 Component.Microsoft.Web.LibraryManager | 库管理器 | 15.8.27705.0 | 建议
@@ -216,7 +215,7 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面语言支持 | 15.8.2
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Component.Anaconda3.x64 | Anaconda3（64 位）(5.2.0) | 5.2.0 | 建议
 Microsoft.Component.CookiecutterTools | Cookiecutter 模板支持 | 15.0.26621.2 | 建议
@@ -261,7 +260,7 @@ Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 |
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | 必需
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必需
@@ -336,7 +335,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开�
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 开发工具 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目标包 | 15.6.27406.0 | 必需
@@ -356,7 +355,7 @@ Component.UnityEngine.x86 | Unity 5.6 32 位编辑器 | 15.6.27406.0 | 建议
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Component.MDD.Linux | 适用于 Linux 开发的 Visual C++ | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 15.6.27406.0 | 必需
@@ -376,7 +375,7 @@ Component.MDD.Linux.GCC.arm | 嵌入和 IoT 开发 | 15.6.27309.0 | Optional
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必需
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必需
@@ -431,7 +430,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 15.6.27406.0 | 必需
@@ -489,7 +488,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Component.Android.SDK19.Private | Android SDK 安装（API 级别 19）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.9.28107.0 | 必需
 Component.Android.SDK21.Private | Android SDK 安装（API 级别 21）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.9.28016.0 | 必需
@@ -520,7 +519,7 @@ Component.MDD.IOS | C++ iOS 开发工具 | 15.0.26621.2 | Optional
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 语言服务 | 15.0.26720.2 | 必需
 Component.Microsoft.Web.LibraryManager | 库管理器 | 15.8.27705.0 | 必需
@@ -588,7 +587,7 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 开发时 IIS 支持 | 15
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Component.Xamarin | Xamarin | 15.8.27906.1 | 必需
 Component.Xamarin.RemotedSimulator | Xamarin 远程模拟器 | 15.6.27323.2 | 必需
@@ -630,7 +629,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | 适用于 Xamarin 的通用 
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 语言服务 | 15.0.26720.2 | 必需
 Component.Microsoft.Web.LibraryManager | 库管理器 | 15.8.27705.0 | 必需
@@ -718,7 +717,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | 必需
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.8.27729.1 | 必需
@@ -744,7 +743,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.9 v14.16
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 语言服务 | 15.0.26720.2 | 必需
 Component.Microsoft.Web.LibraryManager | 库管理器 | 15.8.27705.0 | 必需
@@ -811,7 +810,7 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 开发工�
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Python 语言支持 | 15.0.26823.1 | 必需
 Component.CPython3.x64 | Python 3（64 位）(3.6.6) | 3.6.6 | 建议
@@ -894,7 +893,7 @@ Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决�
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | 必需
 Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | 必需
@@ -956,7 +955,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | 必需
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必需
@@ -992,7 +991,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.9 v14.16
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Component.CordovaToolset.6.3.1 | Cordova 6.3.1 工具集 | 15.7.27625.0 | 必需
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | 必需
@@ -1024,7 +1023,7 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | 适用于 Cordova 的通用 
 
 这些组件不随附于任何工作负载，但可选择作为单个组件。
 
-组件 ID | name | 版本
+组件 ID | name | Version
 --- | --- | ---
 Component.Android.Emulator | 适用于 Android 的 Visual Studio 仿真程序 | 15.6.27413.0
 Component.Android.NDK.R11C | Android NDK (R11C) | 11.3.14

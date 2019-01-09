@@ -1,9 +1,7 @@
 ---
 title: 零基础调试代码
 description: 如果是第一次进行调试，请了解一些原则，以帮助你使用 Visual Studio 在调试模式下运行应用
-ms.custom: ''
 ms.date: 07/06/2018
-ms.technology: vs-ide-debug
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2540f5ed20ae07ab317c0ea23f35de386117fa13
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 35f9e866f58d52b7f74ac0a136b0eeb49382c612
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561507"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927319"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>零基础调试的方法
 

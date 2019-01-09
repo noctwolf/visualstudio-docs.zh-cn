@@ -1,8 +1,6 @@
 ---
 title: GetAssemblyIdentity 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetAssemblyIdentity
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8762bb1207d7715a14effab7aee2d5d3ba5199b1
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: eff5fdff9d96db1dd1fc2244b8ebec9437481c49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946584"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829942"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity 任务
 从指定的文件检索程序集标识并输出标识信息。  
@@ -33,7 +31,7 @@ ms.locfileid: "37946584"
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `GetAssemblyIdentity` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Assemblies`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包含检索到的程序集标识。|  
 |`AssemblyFiles`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要从中检索标识的文件。|  

@@ -1,8 +1,6 @@
 ---
 title: CPU 平均利用率 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cpu.percentage
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fee580cdd708c555682f0309759678dee38ad2b1
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8c4c9eeffe2ac0a3b08d8379a50bb88e3c52cbfe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262305"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988905"
 ---
 # <a name="average-cpu-utilization"></a>CPU 平均利用率
 显示在进程持续时间内，已分析的进程对系统逻辑核心的平均利用率。 此图形不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。  

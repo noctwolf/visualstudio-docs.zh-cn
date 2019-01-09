@@ -3,7 +3,6 @@ title: 调试 c + +
 description: 调试本机代码中使用 Visual Studio 调试器
 ms.custom: mvc
 ms.date: 08/06/2018
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 036774134f705d95fbc526a9e6a336ac43005820
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 015dc86890c6d60cf7326a554aa419ac0fe1645c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639771"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986474"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入门： 使用 Visual Studio 调试器借助 C++ 进行调试
 
@@ -103,7 +102,7 @@ Visual Studio 调试器提供了许多有助调试应用的强大功能。本主
 
 应用继续执行并调用 `doWork`，然后在你单击该按钮时在其所在的代码行上暂停。
 
-用于单步执行代码的常见键盘命令包括 F10 和 F11。有关更多深入说明，请参阅[初学者指南](../debugger/getting-started-with-the-debugger.md)。
+用于单步执行代码的常见键盘命令包括 F10 和 F11。 如需获取更多详尽介绍，请参阅[初探调试器](../debugger/debugger-feature-tour.md)。
 
 ## <a name="inspect-variables-in-a-datatip"></a>检查数据提示中的变量
 

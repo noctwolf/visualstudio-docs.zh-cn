@@ -14,16 +14,15 @@ author: kuhlenh
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a54a3d6b967e7652c25e24922d7bd3b49141cc17
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: f99f18af416ead93c9327afcda6de0196da81566
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769756"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833852"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 编码约定设置
 
@@ -329,7 +328,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 此规则不接受“true”或“false”值；此规则接受下表中的值：
 
-| “值” | 描述 |
+| 值 | 说明 |
 | ----- |:----------- |
 | always | 优先指定可访问性修饰符 |
 | for\_non\_interface_members | 优先声明可访问性修饰符，公共接口成员除外。 这与往常相同，并且已添加以用于未来验证（如果 C# 添加默认接口方法）。 |
@@ -994,7 +993,7 @@ csharp_style_var_elsewhere = true:suggestion
 
 此规则接受下表中的值：
 
-| “值” | 描述 |
+| “值” | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用方法的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，优先使用方法的 expression-bodied 成员 |
@@ -1014,7 +1013,7 @@ public int GetAge() { return this.Age; }
 
 此规则接受下表中的值：
 
-| “值” | 描述 |
+| “值” | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用构造函数的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用构造函数的 expression-bodied 成员 |
@@ -1034,7 +1033,7 @@ public Customer(int age) { Age = age; }
 
 此规则接受下表中的值：
 
-| “值” | 描述 |
+| 值 | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用运算符的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用运算符的 expression-bodied 成员 |
@@ -1056,7 +1055,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 此规则接受下表中的值：
 
-| “值” | 描述 |
+| 值 | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用属性的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用属性的 expression-bodied 成员 |
@@ -1076,7 +1075,7 @@ public int Age { get { return _age; }}
 
 此规则接受下表中的值：
 
-| “值” | 描述 |
+| 值 | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用索引器的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用索引器的 expression-bodied 成员 |
@@ -1096,7 +1095,7 @@ public T this[int i] { get { return _values[i]; } }
 
 此规则接受下表中的值：
 
-| “值” | 描述 |
+| “值” | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用访问器的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用访问器的 expression-bodied 成员 |
@@ -1485,7 +1484,7 @@ dotnet_sort_system_directives_first = true
 
 此规则与左大括号 `{` 应放在前面代码的同一行还是新行上有关。 对于此规则，无需指定“true”或“false”。 改为指定“全部”、“无”或一个或多个码位元素，如方法或属性，从而定义此规则的应用时间。 下表列出了允许值的完整列表：
 
-| “值” | 描述
+| 值 | 说明
 | ------------- |:-------------|
 | accessors, anonymous_methods, anonymous_types, control_blocks, events, indexers, lambdas, local_functions, methods, object_collection_array_initializers, properties, types.<br>（对于多种值，请使用“,”分隔）。 | 需要将大括号置于指定码位元素的新行中（也称为“Allman”样式） |
 | 全部 | 对于所有表达式，需要将大括号置于新行（“Allman”样式） |
@@ -1750,7 +1749,7 @@ default:
 
 此规则不接受“true”或“false”值；此规则接受下表中的值：
 
-| “值” | 描述 |
+| “值” | 说明 |
 | ----- |:----------- |
 | flush_left | 标签置于最左侧的列 |
 | one_less_than_current | 将标签置于比当前上下文少一个缩进的位置 |
@@ -1893,7 +1892,7 @@ MyMethod(argument);
 
 此规则接受下表中的一个或多个值：
 
-| “值” | 描述 |
+| 值 | 说明 |
 | ----- |:------------|
 | control_flow_statements | 在控制流语句的括号之间放置空格 |
 | 表达式 | 在表达式的括号之间放置空格 |
@@ -1980,7 +1979,7 @@ class C :I
 
 此规则接受下表中的一个值：
 
-| “值” | 描述 |
+| “值” | 说明 |
 | ----- |:------------|
 | before_and_after | 在二元运算符前后插入空格 |
 | 无 | 删除二元运算符前后的空格 |

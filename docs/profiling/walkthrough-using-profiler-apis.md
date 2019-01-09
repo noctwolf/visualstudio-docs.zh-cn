@@ -1,8 +1,6 @@
 ---
 title: 演练：使用探查器 API | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, walkthroughs
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 09368aceed6828e63c0e5c9d20a77d1787bc2c57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891263"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>演练：使用探查器 API
 
@@ -32,9 +30,11 @@ ms.locfileid: "49928056"
   
  通过 Visual Studio 探查器，可以限制数据收集。 本演练提供一个示例，说明如何使用探查器 API 限制数据收集。 Visual Studio 探查器提供一个 API，用于从应用程序内部控制数据收集。  
   
- 对于本机代码，Visual Studio 探查器 API 位于 VSPerf.dll 中。 头文件 VSPerf.h 和导入库 VSPerf.lib 位于 Microsoft Visual Studio 9\Team Tools\Performance Tools 目录中。  
+ 对于本机代码，Visual Studio 探查器 API 位于 VSPerf.dll 中。 头文件 VSPerf.h 和导入库 VSPerf.lib 位于 Microsoft Visual Studio \2017\Team Tools\Performance Tools\PerfSDK 目录。  对于 64 位应用，文件夹为 Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK
   
- 对于托管代码，探查器 API 位于 Microsoft.VisualStudio.Profiler.dll 中。 此 DLL 位于 Microsoft Visual Studio 9\Team Tools\Performance Tools 目录中。 有关更多信息，请参见<xref:Microsoft.VisualStudio.Profiler>。  
+ 对于托管代码，探查器 API 位于 Microsoft.VisualStudio.Profiler.dll 中。 此 DLL 位于 Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools 目录。 对于 64 位应用，文件夹为 Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64。 有关更多信息，请参见<xref:Microsoft.VisualStudio.Profiler>。 
+ 
+  
   
 ## <a name="prerequisites"></a>系统必备  
  本演练假定用户选择的开发环境配置为支持调试和采样。 以下主题概述了这些系统必备：  
@@ -60,7 +60,7 @@ DataCollection.CurrentId);
 1.  在 Visual Studio 中创建一个新的 C# 项目，或使用命令行生成，具体取决于用户的选择。  
   
     > [!NOTE]
-    >  生成必须引用 Microsoft.VisualStudio.Profiler.dll 库，该库位于 Microsoft Visual Studio 9\Team Tools\Performance Tools 目录中。  
+    >  生成必须引用 Microsoft.VisualStudio.Profiler.dll 库，该库位于 Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools 目录。  
   
 2.  将以下代码复制并粘贴到项目中：  
   
@@ -151,17 +151,17 @@ DataCollection.CurrentId);
   
      **VsPerfCLREnv /traceon**  
   
-3.  键入下面的命令：VSInstr \<filename>.exe  
+3.  键入以下命令：**VSInstr\<filename>.exe**  
   
-4.  键入下面的命令：VSPerfCmd /start:trace /output:\<filename>.vsp  
+4.  键入以下命令：**VSPerfCmd /start:trace /output:\<filename>.vsp**  
   
-5.  键入下面的命令：VSPerfCmd /globaloff  
+5.  键入以下命令：**VSPerfCmd /globaloff**  
   
 6.  执行程序。  
   
-7.  键入下面的命令：VSPerfCmd /shutdown  
+7.  键入以下命令：**VSPerfCmd /shutdown**  
   
-8.  键入下面的命令：VSPerfReport /calltrace:\<filename>.vsp  
+8.  键入以下命令：**VSPerfReport /calltrace:\<>.vsp**  
   
      当前目录中即会创建一个 .csv 文件，该文件包含得到的性能数据。  
   

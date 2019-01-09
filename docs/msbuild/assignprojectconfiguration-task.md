@@ -1,8 +1,6 @@
 ---
 title: AssignProjectConfiguration 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5fefc8098d94967b06bbe60f398a8a734d55202
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f9e758fe7128c9ae9562c400008ab8573d7d8df6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850883"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 任务
 此任务接受列表配置字符串，并将其分配给指定的项目。  
@@ -28,7 +26,7 @@ ms.locfileid: "37946597"
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `AssignProjectConfiguration` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`SolutionConfigurationContents`|可选 `string` 输出参数。<br /><br /> 包含 XML 字符串，该字符串包含每个项目的项目配置。 这些配置分配给已命名的项目。|  
 |`DefaultToVcxPlatformMapping`|可选 `string` 输出参数。<br /><br /> 包含以分号分隔的映射列表，这些映射是从大多数类型使用的平台名称到 .vcxproj 文件使用的平台名称的映射。<br /><br /> 例如:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  

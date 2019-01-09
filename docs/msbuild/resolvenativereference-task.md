@@ -1,8 +1,6 @@
 ---
 title: ResolveNativeReference 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveNativeReference
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6770452e26eae111624909078da3a880503a184
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9cb8d697351d29bbba8a5df47ce9bfdf6ca82ea6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151289"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53915176"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference 任务
 解析本机引用。 实现 <xref:Microsoft.Build.Tasks.ResolveNativeReference> 类。 此类支持 .NET Framework 基础结构，但不适合直接在代码中使用。  
@@ -33,7 +31,7 @@ ms.locfileid: "39151289"
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `ResolveNativeReference` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`AdditionalSearchPaths`|必选 <xref:System.String?displayProperty=fullName>`[]` 参数。<br /><br /> 获取或设置用于解析本机引用的程序集标识的搜索路径。|  
 |`ContainedComComponents`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 获取或设置本机程序集的 COM 组件。|  

@@ -3,24 +3,24 @@ title: 提供给 Microsoft 合作伙伴网络 (MPN) 中的合作伙伴的 Visual
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 03/16/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 有关在 MPN 中提供的订阅、应用的规则以及提供的订阅数的详细信息。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 72889ca5d206a8f04562b3a91e5d116339279417
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49876759"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53739447"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>提供给 Microsoft 合作伙伴网络 (MPN) 中的合作伙伴的 Visual Studio 订阅
 具备相应资格或在 MPN 中购买了Action Pack 的合作伙伴可以使用 Visual Studio 订阅。 这些订阅按用户授权，并且仅在分配给为合作伙伴公司工作的特定命名用户时才有效。
 
 ## <a name="subscriptions-for-partners-with-an-mpn-competency"></a>面向具备 MPN 资格的合作伙伴的订阅
-具备白银或黄金资格的合作伙伴可获得核心数量的 Visual Studio Enterprise 订阅。 如果合作伙伴拥有至少一项黄金资格，则此核心权益会发生变化。 Visual Studio Enterprise 订阅是一种自定义产品，大致等效于 [Visual Studio Enterprise 年度云订购](https://visualstudio.microsoft.com/vs/pricing/)，但取消了某些权益（其中许多是作为一般 MPN 权益单独向合作伙伴提供的，而不是包含在通过 MPN 提供的 Visual Studio Enterprise 订阅中）。
+具备白银或黄金资格的合作伙伴可获得核心数量的 Visual Studio Enterprise 订阅。 如果合作伙伴拥有至少一项黄金资格，则此核心权益会发生变化。 Visual Studio Enterprise 订阅是一种自定义产品，大致等效于 [Visual Studio Enterprise 标准订阅](https://visualstudio.microsoft.com/vs/pricing/)，但取消了某些权益（其中许多是作为一般 MPN 权益单独向合作伙伴提供的，而不是包含在通过 MPN 提供的 Visual Studio Enterprise 订阅中）。
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>拥有至少一种任意类型的资格时的 Visual Studio 核心权益
 

@@ -1,8 +1,6 @@
 ---
 title: 如何：将检测限定为特定函数 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 042ef6ef7a562f03f84184a86944a93f99c1d13e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d0135ea7d3a99f54b8bc61fb77c5b1657992033c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815151"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895053"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：将检测限定为特定函数
 通过在“性能会话”属性页的“高级”页或目标二进制文件的属性页中设置选项，可以将检测和数据收集限定为一个或多个函数：  
@@ -46,7 +44,7 @@ ms.locfileid: "49815151"
     `FuncSpec` 是命名空间和函数名。 其格式为 `Namespace`**::**`FunctionName`。 可使用分号分隔多个函数。 可使用星号 (\*) 指定一个或多个字符的通配符。 例如，/include:MyNS::\\* 指定 MyNS 命名空间中的所有函数。  
   
    > [!NOTE]
-   >  若要列出某个二进制文件中的函数，请在分析工具安装目录（通常是 [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]安装目录下的 \Team Tools\Performance Tools 目录）中打开命令提示符窗口，然后键入 **vsinstr /DumpFuncs**  
+   >  若要列出二进制文件中的函数，请在分析工具安装目录中打开命令提示符窗口（参见[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)），然后键入 **vsinstr /DumpFuncs**  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>将检测限定为二进制文件中的特定函数  
   
@@ -65,7 +63,7 @@ ms.locfileid: "49815151"
     `FuncSpec` 是命名空间和函数名。 其格式为 `Namespace`**::**`FunctionName`。 可使用分号分隔多个函数。 可使用星号 (\*) 指定一个或多个字符的通配符。 例如，/include:MyNS::\\* 指定 MyNS 命名空间中的所有函数。  
   
    > [!NOTE]
-   >  若要列出某个二进制文件中的函数，请在分析工具安装目录（通常是 [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]安装目录下的 \Team Tools\Performance Tools 目录）中打开命令提示符窗口，然后键入 **vsinstr /DumpFuncs**  
+   >  若要列出二进制文件中的函数，请在分析工具安装目录中打开命令提示符窗口（参见[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)），然后键入 **vsinstr /DumpFuncs**  
   
 ## <a name="see-also"></a>请参阅  
  [控制数据收集](../profiling/controlling-data-collection.md)   

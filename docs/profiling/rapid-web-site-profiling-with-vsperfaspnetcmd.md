@@ -1,8 +1,6 @@
 ---
 title: 使用 VSPerfASPNETCmd 进行快速网站分析 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - proflilng tools,VSPerfASPNETCmd
@@ -12,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ad2c1411a47acd0219223fe928e4150368c80a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ac8ec48f7e860d4588a1d133792ceeb1c26add45
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43780679"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53849640"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 进行快速网站分析
 
-通过 VSPerfASPNETCmd 命令行工具可轻松分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序。 与 [VSPerfCmd](../profiling/vsperfcmd.md) 命令行工具相比，减少了选项、不必设置任何环境变量以及无需重启计算机。 使用 **VSPerfASPNETCmd** 是使用独立探查器进行分析时的首选方法。 有关详细信息，请参阅[如何：安装独立探查器](../profiling/how-to-install-the-stand-alone-profiler.md)。
+通过 VSPerfASPNETCmd 命令行工具可轻松分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序。 与 [VSPerfCmd](../profiling/vsperfcmd.md) 命令行工具相比，减少了选项、不必设置任何环境变量以及无需重启计算机。 使用 **VSPerfASPNETCmd** 是使用独立探查器进行分析时的首选方法。 有关更多信息，请参见[如何：安装独立探查器](../profiling/how-to-install-the-stand-alone-profiler.md)。
 
 > [!NOTE]
 > Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
@@ -29,7 +27,7 @@ ms.locfileid: "43780679"
  在某些情况下（如收集并发数据或暂停并恢复分析），使用 **VSPerfCmd** 是首选分析方法。
 
 > [!NOTE]
-> 分析工具的命令行工具位于 Visual Studio 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，请使用位于 32 位 \Team Tools\Performance Tools 目录中的 VSPerfASPNETCmd 工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
+>  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。  
 
 ## <a name="profile-an-aspnet-application"></a>分析 ASP.NET 应用程序
 
@@ -100,7 +98,7 @@ ms.locfileid: "43780679"
 
 可以将以下任何选项添加到本节前面列出的命令（**vsperfaspnetcmd /shutdown** 命令除外）。
 
-|选项|描述|
+|选项|说明|
 |------------|-----------------|
 |**/Output:** `VspFile`|默认情况下，在当前目录中创建分析数据 (.vsp) 文件，文件名为 PerformanceReport.vsp。 使用 /Output 选项可指定其他位置、文件名或两者。|
 |**/PackSymbols:Off**|默认情况下，VsPerfASPNETCmd 会将符号（函数和参数名等）嵌入 .vsp 文件中。 嵌入符号可能会使分析数据文件非常大。 如果在分析数据时可以访问包含符号的 .pdb 文件，则使用 /packsymbols:off 选项禁用符号的嵌入。|

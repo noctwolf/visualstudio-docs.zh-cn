@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.workload:
 - multiple
-ms.openlocfilehash: 48d95724c64d1335067139a8e036febdef137d52
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 1d30541cc060a96f075b85f5f6a011e4ff9da19a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048442"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918689"
 ---
 # <a name="visual-studio-test-controller-2017-component-directory"></a>Visual Studio Test Controller 2017 组件目录
 
@@ -48,7 +47,7 @@ ms.locfileid: "53048442"
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | 测试控制器核心功能 | 15.6.27309.0 | 必需
 
@@ -56,7 +55,7 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestController | 测试控制器
 
 这些组件不随附于任何工作负载，但可选择作为单个组件。
 
-组件 ID | name | 版本
+组件 ID | name | Version
 --- | --- | ---
 n/a | 不可用 | n/a
 

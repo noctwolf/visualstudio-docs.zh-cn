@@ -2,7 +2,6 @@
 title: -Deploy (devenv.exe)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /deploy switch
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0297058fea98568551f54d8960e62f80bb35ccd7
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: 9af9d2b51a2421141892c1988cc67b63d1b15e26
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920639"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 生成或重新生成后部署解决方案。 仅适用于托管代码项目。
@@ -34,11 +33,11 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 ## <a name="arguments"></a>自变量
  `SolnConfigName`
 
- 必须的。 `SolutionName` 中指定了将用于生成解决方案的解决方案配置的名称。
+ 必需。 `SolutionName` 中指定了将用于生成解决方案的解决方案配置的名称。
 
  `SolutionName`
 
- 必须的。 解决方案文件的完整路径和名称。
+ 必需。 解决方案文件的完整路径和名称。
 
  /project `ProjName`
 

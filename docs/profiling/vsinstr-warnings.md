@@ -1,8 +1,6 @@
 ---
 title: VSInstr 警告 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - instrumentation, VSInstr tool
@@ -16,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a306276e015d06fe3becf297d0bb5834f640a1a7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 716cf80a9b93f5a018c31af0d36d3212a858f3b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571641"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888590"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出了由 VSInstr.exe 工具发出的警告。 可使用 NOWARN 选项及警告编号来禁止显示警告。  
   
-|警告编号|描述|  
+|警告编号|说明|  
 |--------------------|-----------------|  
 |**VSP2000**|内部错误。 无法获取此可执行文件的模块文件名。|  
 |**VSP2001**|\<程序集名称> 是强名称程序集。 必须先对其重新签名，然后才能执行它。<br /><br /> 当检测到签名程序集时，将发出此警告。 可使用 sn.exe 工具重新签名二进制，或暂时关闭强名称要求。 有关详细信息，请参阅 [Sn.exe （强名称工具）](/dotnet/framework/tools/sn-exe-strong-name-tool)。|  

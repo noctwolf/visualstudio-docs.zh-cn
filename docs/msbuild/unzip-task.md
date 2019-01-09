@@ -1,10 +1,8 @@
 ---
 title: Unzip 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f633e741cf72596708963d89973eb039b18b4e88
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 386e0e76161982a4bedf6bb188381314d47e42e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151208"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53882742"
 ---
 # <a name="unzip-task"></a>Unzip 任务
 将 .zip 存档解压缩到指定位置。
@@ -40,7 +38,7 @@ ms.locfileid: "39151208"
 ## <a name="parameters"></a>参数  
  下表描述了 `Unzip` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`DestinationFolder`|<xref:Microsoft.Build.Framework.ITaskItem> 参数（必选）<br /><br /> 指定文件要解压到的目的文件夹。|
 |`OverwriteReadOnlyFiles`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则覆盖只读文件。 默认为 `false`。|

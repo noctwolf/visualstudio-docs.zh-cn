@@ -2,9 +2,8 @@
 title: 使用命令行参数安装 Visual Studio
 titleSuffix: ''
 description: 了解如何使用命令行参数来控制或自定义 Visual Studio 安装。
-ms.custom: seodec18
 ms.date: 11/14/2018
-ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba270b4d7240d30db5b20388d6c75782dba6a256
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53159719"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869656"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令行参数安装 Visual Studio 2017
 
@@ -56,7 +55,7 @@ ms.locfileid: "53159719"
 | `update` | 更新已安装的产品。 |
 | `repair` | 修复已安装的产品。 |
 | `uninstall` | 卸载已安装的产品。 |
-| `export` | **15.9 版中的新增功能**：将安装所选内容导出到安装配置文件。 |
+| `export` | **15.9 版中的新增功能**：将安装所选内容导出到安装配置文件。 **说明**：仅能与 vs_installer.exe 一起使用。 |
 
 | **安装选项** | **说明** |
 | ----------------------- | --------------- |

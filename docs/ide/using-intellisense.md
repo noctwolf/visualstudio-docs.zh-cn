@@ -2,7 +2,6 @@
 title: 参数信息、成员列表和快速信息
 ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vc.tools.intellisense
@@ -17,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 2adb067377ac417073785df63d68e51040752218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953071"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 IntelliSense
 
-IntelliSense 是一种代码补全辅助工具，它包含许多功能：成员列表、参数信息、快速信息和完成单词。 使用这些功能，可以详细了解使用的代码、跟踪键入的参数，还可通过轻敲几个按键来添加属性和方法调用。
+IntelliSense 是代码完成辅助工具，它包含许多功能：成员列表、参数信息、快速信息和完成单词。 使用这些功能，可以详细了解使用的代码、跟踪键入的参数，还可通过轻敲几个按键来添加属性和方法调用。
 
 IntelliSense 的许多方面只支持特定语言。 有关不同语言的 IntelliSense 的详细信息，请参阅[另请参阅](#see-also)部分中列出的主题。
 
@@ -54,7 +53,7 @@ IntelliSense 的许多方面只支持特定语言。 有关不同语言的 Intel
 
 ![参数信息](../ide/media/vs2015_param_info.png)
 
-当用 XML 文档注释批注函数和参数时，相关注释也将显示为“参数信息”。 有关详细信息，请参阅[提供 XML 代码注释](../ide/supplying-xml-code-comments.md)。
+当用 XML 文档注释批注函数和参数时，相关注释也将显示为“参数信息”。 有关详细信息，请参阅[提供 XML 代码注释](reference/generate-xml-documentation-comments.md)。
 
 可以通过选择“编辑” > “IntelliSense” > “参数信息”、按 Ctrl+Shift+空格键或选择编辑器工具栏上的“参数信息”，手动调用“参数信息”。
 
@@ -104,4 +103,4 @@ MessageBox( hWnd, "String literal|")
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)
 - [JavaScript IntelliSense](../ide/javascript-intellisense.md)
 - [编写和重构代码 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
-- [提供 XML 代码注释](../ide/supplying-xml-code-comments.md)
+- [提供 XML 代码注释](reference/generate-xml-documentation-comments.md)

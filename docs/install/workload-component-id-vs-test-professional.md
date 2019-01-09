@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.workload:
 - multiple
-ms.openlocfilehash: fa09c844d4ea0fa1b6d4c255f10af6bda4f3128c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d166a0e0c2d21b9df80cce046d81b92806e16f87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53049271"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937590"
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017 组件目录
 
@@ -48,7 +47,7 @@ ms.locfileid: "53049271"
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft 测试管理器 | 15.6.27406.0 | 必需
@@ -57,7 +56,7 @@ Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft 测�
 
 这些组件不随附于任何工作负载，但可选择作为单个组件。
 
-组件 ID | name | 版本
+组件 ID | name | Version
 --- | --- | ---
 n/a | 不可用 | n/a
 

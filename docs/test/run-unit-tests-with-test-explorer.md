@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 177882e93377e428814d6a529c9826f4bf9e1ea2
+ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939495"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740393"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
@@ -55,7 +55,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ### <a name="run-tests-after-every-build"></a>每次生成后运行测试
 
-|Button|描述|
+|Button|说明|
 |-|-|
 |![生成后运行](../test/media/ute_runafterbuild_btn.png)|要在每个本地生成后运行单元测试，请在标准菜单上选择“测试”，然后在测试资源管理器的工具栏上选择“生成后运行测试”。|
 
@@ -99,10 +99,10 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ### <a name="test-explorer-groups"></a>测试资源管理器组
 
-|Group|描述|
+|Group|说明|
 |-|-----------------|
-|**持续时间**|按执行时间对测试进行分组： **“快速”**、 **“中速”** 和 **“慢速”**。|
-|**结果**|按执行结果对测试进行分组： **“失败的测试”**、 **“跳过的测试”**、 **“通过的测试”**。|
+|**持续时间**|按执行时间对测试进行分组：快速、中等和慢速。|
+|**结果**|按执行结果对测试进行分组：失败的测试、跳过的测试和通过的测试。|
 |**特征**|按你定义的类别/值对对测试进行分组。 用于指定特征类别和值的语法由单元测试框架定义。|
 |**Project**|按项目名称对测试进行分组。|
 
@@ -114,7 +114,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
  在适用于托管应用的 Microsoft 单元测试框架中，在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 属性中定义特征名称/值对。 测试框架还包括以下预定义特征：
 
-|特征|描述|
+|特征|说明|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|“所有者”类别由单元测试框架定义，并要求你提供所有者的字符串值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|“优先级”类别由单元测试框架定义，并要求你提供优先级的整数值。|
@@ -142,7 +142,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 > [!NOTE]
 > 搜索不区分大小，并将指定字符串与条件值的任何部分匹配。
 
-|限定符|描述|
+|限定符|说明|
 |-|-----------------|
 |**特征**|搜索特征类别和值的匹配项。 用于指定特征类别和值的语法由单元测试框架定义。|
 |**Project**|搜索测试项目名称的匹配项。|
@@ -150,7 +150,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 |**文件路径**|搜索测试源文件的完全限定文件名的匹配项。|
 |**完全限定名**|搜索测试命名空间、类和方法的完全限定文件名的匹配项。|
 |**输出**|搜索写入标准输出 (stdout) 或标准错误 (stderr) 的用户定义错误消息。 用于指定输出消息的语法由单元测试框架定义。|
-|**结果**|搜索测试资源管理器类别名的匹配项： **“失败的测试”**、 **“跳过的测试”**、 **“通过的测试”**。|
+|**结果**|搜索“测试资源管理器”类别名中的匹配项：失败的测试、跳过的测试和通过的测试。|
 
 若要排除筛选结果的一个子集，请使用以下语法：
 
@@ -187,7 +187,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 2. 在测试资源管理器中，选择测试方法，然后选择上下文菜单中的 **“调试选定的测试”** 。
 
-   有关该调试程序的详细信息，请参阅[在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)。
+   有关该调试程序的详细信息，请参阅[在 Visual Studio 中进行调试](../debugger/debugger-feature-tour.md)。
 
 ### <a name="diagnose-test-method-performance-issues"></a>诊断测试方法性能问题
 

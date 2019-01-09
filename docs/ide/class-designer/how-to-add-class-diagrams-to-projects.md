@@ -1,8 +1,7 @@
 ---
-title: 如何：向项目中添加类图（类设计器）
+title: 如何：向项目添加类图（类设计器）
 ms.date: 05/08/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 4df2047109ebd89b7dee621373bf30b9f55747a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901293"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866447"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>如何：向项目添加类图
 
@@ -79,5 +78,3 @@ ms.locfileid: "42901293"
 - [如何：使用类设计器创建类型](how-to-create-types.md)
 - [如何：查看现有类型](how-to-view-existing-types.md)
 - [设计和查看类和类型](designing-and-viewing-classes-and-types.md)
-- [查看类型和关系](viewing-types-and-relationships.md)
-- [使用类图](working-with-class-diagrams.md)

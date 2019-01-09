@@ -2,21 +2,20 @@
 title: 滚动条的地图模式和滚动条模式
 ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f60d7f573ed275ff4d827e0a4209f21444ee64c
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: c5fc435f2fe350c177cbff0e526d2f0221a93b89
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219947"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965066"
 ---
-# <a name="how-to-customize-the-scroll-bar"></a>操作说明：自定义滚动条
+# <a name="how-to-customize-the-scroll-bar"></a>如何：自定义滚动条
 
 处理很长的代码文件时，可能很难跟踪所有代码在文件中的位置。 可自定义代码编辑器的滚动条，以了解代码的整体使用情况。
 

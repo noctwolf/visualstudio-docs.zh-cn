@@ -9,12 +9,12 @@ description: 了解如何获取和管理 Visual Studio 订阅中的产品密钥�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cdd37aae3e0a3e3caebafa026fd5dcf3922c0998
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900847"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53803819"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 订阅中的产品密钥
 
@@ -32,14 +32,14 @@ Visual Studio 订阅允许访问一系列 Microsoft 产品来设计、开发、�
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>产品的零售版本和批量许可版本
 Visual Studio 订阅提供一系列零售版本和批量许可版本的 Microsoft 产品。 某些由“下载”提供的产品仅有零售版本或批量许可版本；某些则兼具两种版本。 通常，Windows、Windows Server 和 Office 客户端产品等需要激活的产品仅通过“下载”提供零售版本。
 
-批量许可客户也可从批量许可服务中心 (VSLC) 下载软件，从而获得产品的批量许可版本（以及相应的产品密钥）。  客户所在组织的指定管理员负责管理 VLSC 的访问权限。
+批量许可客户也可从批量许可服务中心 (VLSC) 下载软件，从而获得产品的批量许可版本（以及相应的产品密钥）。  客户所在组织的指定管理员负责管理 VLSC 的访问权限。
 
 ## <a name="daily-product-key-claim-limits"></a>每日产品密钥索取上限
 Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划的合法订阅者就其投资获得软件和权益的价值。 为实现此承诺，Microsoft 对 Visual Studio 订阅实施了每日密钥索取上限。 每日密钥索取上限限定了每个订阅每日可索取的密钥数量。
 
 除 Visual Studio Professional (MPN) 的每日密钥索取上限为 7 个以外，所有 Visual Studio 订阅（包括通过 MPN、BizSpark、MCT 软件与服务和 MCT 提供的订阅）的每日密钥索取上限都是 10 个。
 
-注意：密钥索取上限可能会发生更改。 请在此处查看最新的索取上限。
+注意:密钥索取上限可能更改。 请在此处查看最新的索取上限。
 
 如果 24 小时内索取的密钥数量已达到订阅所允许的最大数量，那么将会看到错误提示，告知你已达到索取上限。 限制每隔 24 小时重置一次，从太平洋时间的凌晨 12:01 开始。
 
@@ -58,7 +58,7 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 
 ### <a name="product-key-types"></a>产品密钥类型
 
-|    密钥类型           |    描述                                                                                                                                                                                                           |
+|    密钥类型           |    说明                                                                                                                                                                                                           |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    不适用                    |    安装此产品不需要密钥。                                                       |
 |    零售                     |    零售密钥允许多次激活，适用于产品的零售版本。 在许多情况下，每个密钥允许激活 10 次，不过在同一台计算机中通常允许激活更多次。                                                       |

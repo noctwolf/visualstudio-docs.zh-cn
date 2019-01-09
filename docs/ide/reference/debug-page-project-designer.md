@@ -2,7 +2,6 @@
 title: “项目设计器”->“调试”页
 ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e7bc849a48161fdf1763517f90514dfb464b74e
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: f383701017e9fb830333f7a9869aac99684333a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090018"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848254"
 ---
 # <a name="debug-page-project-designer"></a>“项目设计器”->“调试”页
 
@@ -85,8 +84,8 @@ ms.locfileid: "37090018"
 
 ## <a name="see-also"></a>请参阅
 
-- [在 Visual Studio 中进行调试](../../debugger/debugging-in-visual-studio.md)
+- [在 Visual Studio 中进行调试](../../debugger/debugger-feature-tour.md)
 - [C# 调试配置的项目设置](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Visual Basic 调试配置的项目设置](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [如何：使用受限权限对 ClickOnce 应用程序进行调试](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [如何：使用受限权限调试 ClickOnce 应用程序](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [如何：创建和编辑配置](../../ide/how-to-create-and-edit-configurations.md)

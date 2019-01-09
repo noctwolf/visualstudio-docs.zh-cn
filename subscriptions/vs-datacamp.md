@@ -3,18 +3,18 @@ title: 使用选定的 Visual Studio 订阅中的 DataCamp 权益，立即增强
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/30/2018
+ms.date: 12/19/2018
 ms.topic: Get-Started-Article
 description: 了解有关所选 Visual Studio 订阅中随附的 DataCamp 培训订阅。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 47199fc27491843985326f3ceee5dd6fbf3677ad
+ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863901"
+ms.lasthandoff: 12/27/2018
+ms.locfileid: "53802142"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 DataCamp 培训权益
 
@@ -35,19 +35,16 @@ DataCamp 权益的持续时间取决于你的 Visual Studio 订阅。
    > ![DataCamp 创建新帐户](_img/vs-datacamp/vs-datacamp-create-account.png)
    > 
    > [!NOTE]
-   > 开始创建帐户时，可能会收到以下错误消息：“糟糕！  促销代码无效或已过期。”  发生这种情况是因为促销代码创建后会在几分钟后过期。  如果收到此消息，只需返回到[“权益”](https://my.visualstudio.com/benefits)页，然后单击“DataCamp 权益”磁贴上的 **“激活”** 链接。
+   > 开始创建帐户时，可能会收到以下错误消息：“抱歉！  促销代码无效或已过期。”  发生这种情况是因为促销代码创建后会在几分钟后过期。  如果收到此消息，只需返回到[“权益”](https://my.visualstudio.com/benefits)页，然后单击“DataCamp 权益”磁贴上的 **“激活”** 链接。
 
 4. 创建了帐户之后，你便可以选择学习路径。  选项包括：
     - 学习适用于数据科学的 R
     - 开始学习适用于数据科学的 Python
     - 发展数据科学技能组合
 
-
-~~~
-Just click on your chosen path to get started.
-> [!div class="mx-imgBorder"]
-> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
-~~~
+   只需单击所选路径即可开始学习。
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp 选择路径](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
 5. 选择了路径之后，可以通过选择目标来进一步细化学习路径。  例如，如果选择“发展数据科学技能组合”路径，则会看到以下选项。 选择一个选项，或单击“我不确定。向我显示职业路径”以创建更广泛的路径。
    > [!div class="mx-imgBorder"]
@@ -72,18 +69,21 @@ Just click on your chosen path to get started.
 
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、 | 3 个月       |  不是。  仅对新订阅者可用          |
-| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 3 个月                                                            |  不是。  仅对新订阅者可用           |
+| Visual Studio Enterprise（标准）   | VL、Azure、零售、 | 3 个月       |  不是。  仅对新订阅者可用          |
+| Visual Studio Professional（标准） | VL、Azure、零售                                       | 3 个月                                                            |  不是。  仅对新订阅者可用           |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 可用                                             |  不是。  仅对新订阅者可用           |
 | MSDN 平台（标准）                                          | VL、零售                                              | 可用                                              |  不是。  仅对新订阅者可用           |
 | Visual Studio Dev Essentials | 不可用  | 2 个月 | 不是。 仅对新订阅者可用 |
-| Visual Studio Enterprise（标准、年度云）  | NFR<sup>1</sup> |不可用  | 不可用 |
+| Visual Studio Enterprise（标准）  | NFR<sup>1</sup> |不可用  | 不可用 |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 
 
 
 <sup>1</sup>包括：不得转售 (NFR)、FTE、Microsoft 最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine
 
+
+> [!NOTE]
+> Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
 
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。

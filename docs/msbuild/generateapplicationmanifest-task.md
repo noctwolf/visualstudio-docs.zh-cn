@@ -1,8 +1,6 @@
 ---
 title: GenerateApplicationManifest 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9526c2c62d9ace81127c61ef313cf55971fc1692
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 54f3739795b5fb3257ba82c52bf9f9df7edaa62b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49888874"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900686"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 任务
 生成 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序清单或本机清单。 本机清单通过为组件定义唯一标识，并标识组成该组件的所有程序集和文件来描述组件。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序清单通过指示应用程序的入口点并指定应用程序安全级别来扩展本机清单。  
@@ -35,7 +33,7 @@ ms.locfileid: "49888874"
  下表描述了 `GenerateApplicationManifest` 任务的参数。  
 
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 |---------------------------------| - |
 | `AssemblyName` | 可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Name` 字段。 如果未指定此参数，则从 `EntryPoint` 或 `InputManifest` 参数中推断名称。 如果无法创建任何名称，该任务将引发错误。 |
 | `AssemblyVersion` | 可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Version` 字段。 如果未指定此参数，请使用默认值“1.0.0.0”。 |
@@ -76,7 +74,7 @@ ms.locfileid: "49888874"
 
 ## <a name="item-metadata"></a>项元数据  
 
-|元数据名称|描述|  
+|元数据名称|说明|  
 |-------------------|-----------------|  
 |`DependencyType`|指示依赖项是随应用程序一起发布并安装还是一个必备组件。 此元数据对所有依赖项均有效，但不可用于文件。 可用于此元数据的值有：<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Install 是默认值。|  
 |`AssemblyType`|指示依赖项是托管程序集还是本机程序集。 此元数据对所有依赖项均有效，但不可用于文件。 可用于此元数据的值有：<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` 是默认值，指示清单生成器将自动确定程序集类型。|  

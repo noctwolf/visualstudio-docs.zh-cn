@@ -1,8 +1,6 @@
 ---
 title: 并发可视化工具命令行实用工具 (CVCollectionCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a24bea13687d58d4d9b9d9dc8ecf0bec86595759
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a5c2dfa42df5ce7dd5d9bf421df4ad4b001fdb57
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951231"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986838"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>并发可视化工具命令行实用工具 (CVCollectionCmd)
 可以使用并发可视化工具命令行实用程序 (CVCollectionCmd.exe) 以从命令行收集跟踪，使你可以在 Visual Studio 的并发可视化工具中查看它们。 这些工具可以在未安装 Visual Studio 的计算机上使用。  
@@ -40,7 +38,7 @@ ms.locfileid: "49951231"
 
  **CvCollectionCmd /?**  
 
-|选项|描述|参数|返回值|  
+|选项|说明|参数|返回值|  
 |------------|-----------------|----------------|-------------------|  
 |查询|返回是否可以启动收集。|无|如果准备开始启动收集，则为 0。<br /><br /> 如果收集已在进行中，则为 1。<br /><br /> 如果收集未在进行，但是已经启用一个或多个必需的 [ETW](/dotnet/framework/wcf/samples/etw-tracing) 会话，则为 2。|  
 |启动|在并发可视化工具下运行指定的进程。|可执行文件的路径。|如果运行已成功，则为 0。<br /><br /> 如果因为目标应用程序无法启动而运行失败，则为 1。<br /><br /> 如果因为 CVCollectionCmd 没有足够的权限写入指定的输出目录而运行失败，则为 13。|  
@@ -64,7 +62,7 @@ ms.locfileid: "49951231"
  此配置文件基于 XML 文件。 以下是有效的标记和值：  
 
 
-| 标记 | 描述 | 值 |
+| 标记 | 说明 | 值 |
 |-------------------------| - | - |
 | 配置 | 划分整体配置文件。 | 必须包含以下元素：<br /><br /> -   MinorVersion<br />-   MajorVersion |
 | MajorVersion | 指定配置文件的主要版本。 | 对于 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 项目，必须为 1。 如果不是 1，则实用工具不起作用。 |

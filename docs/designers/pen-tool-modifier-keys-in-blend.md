@@ -2,7 +2,6 @@
 title: Blend 中的“笔”工具修改键
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c3ab14c6-a320-46db-a6b3-7fd1ca261587
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddedc1d46c82c20580575a85db92b2c8049c813e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b6608ede14ab35697462777fcd7b8f4a58e68358
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908729"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831688"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend 中的“笔”工具修改键
 下表列出了在使用“笔”工具 ![笔工具](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png) 创建路径时可用于修改此路径的快捷方式。 “笔”工具还可用于在现有路径上添加或删除点，或联接两个现有路径。

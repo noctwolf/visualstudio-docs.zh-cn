@@ -13,17 +13,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.workload:
 - multiple
-ms.openlocfilehash: d75fe8a1dee373dc7d8b48ac1f03c3a2592c705e
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5d21bb5e5c1de8250607af377386d4987ffbdbae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048378"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946300"
 ---
 # <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 组件目录
 
@@ -48,7 +47,7 @@ ms.locfileid: "53048378"
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
-组件 ID | name | 版本 | 依赖项类型
+组件 ID | name | Version | 依赖项类型
 --- | --- | --- | ---
 Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | 测试代理核心功能 | 15.0.27019.1 | 必需
 
@@ -56,7 +55,7 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | 测试代理核心�
 
 这些组件不随附于任何工作负载，但可选择作为单个组件。
 
-组件 ID | name | 版本
+组件 ID | name | Version
 --- | --- | ---
 n/a | 不可用 | n/a
 
