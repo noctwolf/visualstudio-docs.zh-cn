@@ -1,8 +1,6 @@
 ---
 title: 项函数 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, Item functions
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85dd03080a9dda58532d656161c3c44ae4943251
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5d731cf14fca91920d5da6b6232f1a9bd4feb0b9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081343"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821279"
 ---
 # <a name="item-functions"></a>项函数
 从 MSBuild 4.0 开始，任务和目标中的代码可以调用项函数来获取项目中各项的相关信息。 这些函数简化 Distinct() 项的获取过程，并且比循环遍历项的速度更快。  
@@ -53,7 +51,7 @@ ms.locfileid: "39081343"
 ## <a name="intrinsic-item-functions"></a>内部项函数  
  下表列出了可用于各项的内部函数。  
   
-|函数|示例|描述|  
+|函数|示例|说明|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|返回项计数。|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|返回每个项的 `Path.DirectoryName` 等效项。|  
