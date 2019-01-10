@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 439120b80350081e1770ccce619d51b92673feef
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d23da01a9f36501789991b7d261a819879fd50ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53048049"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962251"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>如何：向负载测试添加额外的运行设置
 
@@ -40,7 +39,7 @@ ms.locfileid: "53048049"
 
      此时将显示“属性”窗口，其中包含了所选运行设置的属性。
 
-5.  在“属性”窗口中，使用“名称”属性文本框为新运行设置指定一个名称，该名称描述此运行设置的目的（例如“Run Setting: Five minute run”）。
+5.  在“属性”窗口中，使用“名称”属性文本框为新运行设置指定一个名称，该名称描述此运行设置的目的（例如“Run Setting: Five minute run”）**。
 
 6.  使用“属性窗口”更改运行设置。 例如，将运行持续时间更改为“00:05:00”以使测试运行五分钟。
 
