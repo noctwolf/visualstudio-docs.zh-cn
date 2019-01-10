@@ -2,7 +2,6 @@
 title: 启动调试会话的 UWP 应用 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.IVCAppHostRemoteDebugPageObject.MachineName
@@ -36,12 +35,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 181dec6bfa6ebe96528c39b74d68375b8eb7fcb8
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3c2ef4e92cddb302e67f99c921750d4e9e83d98e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062404"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901975"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>启动 UWP 应用的调试会话
   
@@ -209,4 +208,4 @@ ms.locfileid: "53062404"
 > 若要将附加到 JavaScript 应用程序的最简单方法是关闭所有其他 JavaScript 应用。 或者，可以记下运行的 Pid *wwahost.exe*进程在 Windows 任务管理器之前启动应用。 当启动应用，其*wwahost.exe* PID 将不同于先前记下的一个。  
 
 ## <a name="see-also"></a>请参阅  
- [在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)   
+ [在 Visual Studio 中调试应用](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   

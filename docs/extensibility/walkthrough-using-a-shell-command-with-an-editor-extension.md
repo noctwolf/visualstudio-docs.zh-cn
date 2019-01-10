@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fb6ce04e32f30411e8e1a60757774a4f2b36807
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b62ffce08ecf5b6397bdda0b1f9fb6c1b83d7b63
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941539"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154332"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>演练：使用编辑器扩展中使用 shell 命令
 从 VSPackage，你可以向编辑器中添加功能，如菜单命令。 本演练演示如何将修饰添加到在编辑器中的文本视图中，通过调用菜单命令。  
@@ -101,7 +101,7 @@ ms.locfileid: "53941539"
   
 3.  以下代码添加到`using`语句。  
   
-    ```vb  
+    ```csharp
     using Microsoft.VisualStudio.Text;  
     ```  
   
@@ -218,7 +218,7 @@ ms.locfileid: "53941539"
   
         Grid.SetColumn(rect, 0);  
         Grid.SetRow(rect, 0);  
-         Grid.SetRowSpan(rect, 2);  
+        Grid.SetRowSpan(rect, 2);  
         Grid.SetColumnSpan(rect, 3);  
         Grid.SetRow(tb1, 0);  
         Grid.SetColumn(tb1, 1);  
@@ -229,7 +229,7 @@ ms.locfileid: "53941539"
         this.commentGrid.Children.Add(tb2);  
   
         Canvas.SetLeft(this.commentGrid, Math.Max(viewRightEdge - this.commentGrid.Width - 20.0, textRightEdge + 20.0));  
-         Canvas.SetTop(this.commentGrid, textGeometry.GetRenderBounds(solidPen).Top);  
+        Canvas.SetTop(this.commentGrid, textGeometry.GetRenderBounds(solidPen).Top);  
   
         this.Children.Add(this.commentGrid);  
     }  
@@ -386,27 +386,6 @@ ms.locfileid: "53941539"
     ```  
   
 8.  添加`OnBufferChanged`事件处理程序。  
-  
-    ```csharp  
-    private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
-    {  
-        //Make a list of all comments that have a span of at least one character after applying the change. There is no need to raise a changed event for the deleted adornments. The adornments are deleted only if a text change would cause the view to reformat the line and discard the adornments.  
-        IList<CommentAdornment> keptComments = new List<CommentAdornment>(this.comments.Count);  
-  
-        foreach (CommentAdornment comment in this.comments)  
-        {  
-            Span span = comment.Span.GetSpan(e.After);  
-            //if a comment does not span at least one character, its text was deleted.   
-            if (span.Length != 0)  
-            {  
-                keptComments.Add(comment);  
-            }  
-        }  
-  
-        this.comments = keptComments;  
-    }  
-  
-    ```  
   
      [!code-csharp[VSSDKMenuCommandTest#21](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_2.cs)]
      [!code-vb[VSSDKMenuCommandTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_2.vb)]  
@@ -642,10 +621,10 @@ ms.locfileid: "53941539"
     using CommentAdornmentTest;  
     ```  
   
-3.  删除`ShowMessageBox()`方法并添加下面的命令处理程序。  
+3.  删除`Execute()`方法并添加下面的命令处理程序。  
   
     ```csharp  
-    private void AddAdornmentHandler(object sender, EventArgs e)  
+    private async void AddAdornmentHandler(object sender, EventArgs e)  
     {  
     }  
     ```  
@@ -653,9 +632,9 @@ ms.locfileid: "53941539"
 4.  添加代码以获取活动视图。 必须获取`SVsTextManager`若要获取活动的 Visual Studio shell 的`IVsTextView`。  
   
     ```csharp  
-    private void AddAdornmentHandler(object sender, EventArgs e)  
+    private async void AddAdornmentHandler(object sender, EventArgs e)  
     {  
-        IVsTextManager txtMgr = (IVsTextManager)ServiceProvider.GetService(typeof(SVsTextManager));  
+        IVsTextManager txtMgr = (IVsTextManager) await ServiceProvider.GetServiceAsync(typeof(SVsTextManager));  
         IVsTextView vTextView = null;  
         int mustHaveFocus = 1;  
         txtMgr.GetActiveView(mustHaveFocus, null, out vTextView);  
@@ -665,9 +644,9 @@ ms.locfileid: "53941539"
 5.  如果此文本视图编辑器文本视图的实例，则您可以将其转换为<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>接口，然后获取<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>及其关联<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>。 使用<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>调用`Connector.Execute()`方法，用于获取注释修饰提供程序并添加了修饰。 命令处理程序现在应如下所示代码所示：  
   
     ```csharp  
-    private void AddAdornmentHandler(object sender, EventArgs e)  
+    private async void AddAdornmentHandler(object sender, EventArgs e)  
     {  
-        IVsTextManager txtMgr = (IVsTextManager)ServiceProvider.GetService(typeof(SVsTextManager));  
+        IVsTextManager txtMgr = (IVsTextManager) await ServiceProvider.GetServiceAsync(typeof(SVsTextManager));  
         IVsTextView vTextView = null;  
         int mustHaveFocus = 1;  
         txtMgr.GetActiveView(mustHaveFocus, null, out vTextView);  
@@ -675,7 +654,7 @@ ms.locfileid: "53941539"
          if (userData == null)  
         {  
             Console.WriteLine("No text view is currently open");  
-                            return;  
+            return;  
         }  
         IWpfTextViewHost viewHost;  
         object holder;  
@@ -689,24 +668,15 @@ ms.locfileid: "53941539"
 6.  将 AddAdornmentHandler 方法设置为 AddAdornment 构造函数中的 AddAdornment 命令的处理程序。  
   
     ```csharp  
-    private AddAdornment(Package package)  
-    {  
-        if (package == null)  
-        {  
-            throw new ArgumentNullException(nameof(package));  
-        }  
-  
-        this.package = package;  
-  
-        OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
-        if (commandService != null)  
-        {  
-            CommandID menuCommandID = new CommandID(MenuGroup, CommandId);  
-            EventHandler eventHandler = this.AddAdornmentHandler;  
-            MenuCommand menuItem = new MenuCommand(eventHandler, menuCommandID);  
-            commandService.AddCommand(menuItem);  
-        }  
-    }  
+    private AddAdornment(AsyncPackage package, OleMenuCommandService commandService)
+    {
+        this.package = package ?? throw new ArgumentNullException(nameof(package));
+        commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
+
+        var menuCommandID = new CommandID(CommandSet, CommandId);
+        var menuItem = new MenuCommand(this.AddAdornmentHandler, menuCommandID);
+        commandService.AddCommand(menuItem);
+    } 
     ```  
   
 ## <a name="build-and-test-the-code"></a>生成和测试代码  

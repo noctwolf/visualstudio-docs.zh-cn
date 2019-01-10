@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd25b7ed02cb8d45ae693eacdb397a250d2456e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80d68a254cf2d1a896be86072d50a13be2f7a44f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847819"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154416"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>使用菜单命令创建扩展
 本演练演示如何创建一个扩展按钮可启动记事本的菜单命令。  
@@ -121,6 +121,6 @@ ms.locfileid: "53847819"
   
 4. 将 IntelliSense、 代码建议和其他功能添加到现有的代码编辑器：[将编辑器和语言服务扩展](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. 将选项和属性页和用户设置添加到您的扩展插件：[扩展属性和属性窗口](../extensibility/extending-properties-and-the-property-window.md)和[扩展用户设置和 Ooptions](../extensibility/extending-user-settings-and-options.md)  
+5. 将选项和属性页和用户设置添加到您的扩展插件：[扩展属性和属性窗口](../extensibility/extending-properties-and-the-property-window.md)和[扩展用户设置和选项](../extensibility/extending-user-settings-and-options.md)  
   
    其他类型的扩展需要更多工作，如创建新的项目类型 ([扩展项目](../extensibility/extending-projects.md))，创建新的编辑器类型 ([创建自定义编辑器和设计器](../extensibility/creating-custom-editors-and-designers.md))，或实现你独立 shell 中的扩展：[Visual Studio 独立 shell](/visualstudio/extensibility/shell/visual-studio-isolated-shell)

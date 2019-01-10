@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isAcceleratorStubFunction |Microsoft 文档
-ms.custom: ''
+title: IDiaSymbol::get_isAcceleratorStubFunction |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cddf6be53925ed6f9cd613f7e7a19cca9f00cace
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 2314142f2080b25a81610ee74f3f627d151651f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956565"
 ---
 # <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
-指示是否符号对应于顶级函数符号的着色器对应于的快捷键编译`parallel_for_each`调用。  
+指示是否符号对应于顶层函数符号的着色器编译到相对应的快捷键`parallel_for_each`调用。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,7 +29,7 @@ HRESULT get_isAcceleratorStubFunction(
   
 #### <a name="parameters"></a>参数  
  `pFlag`  
- [out]指向的指针`BOOL`，该值指示是否符号对应于顶级函数符号的着色器对应于的快捷键编译`parallel_for_each`调用。  
+ [out]一个指向`BOOL`，该值指示是否符号对应于顶层函数符号的着色器编译到相对应的快捷键`parallel_for_each`调用。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  

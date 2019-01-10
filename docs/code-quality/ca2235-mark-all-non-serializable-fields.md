@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 946e666faae07128378fc8063422446a39bd0791
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986565"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154145"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235:标记所有不可序列化的字段
 
@@ -38,7 +38,9 @@ ms.locfileid: "53986565"
  在可以序列化的类型中声明了类型不可序列化的实例字段。
 
 ## <a name="rule-description"></a>规则说明
- 可序列化类型是指将标有<xref:System.SerializableAttribute?displayProperty=fullName>属性。 当序列化类型时，<xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName>类型包含不可序列化的类型的实例字段而引发异常。
+ 可序列化类型是指将标有<xref:System.SerializableAttribute?displayProperty=fullName>属性。 当序列化类型时，<xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName>如果该类型包含不可序列化的类型的实例字段会引发异常。
+ 
+ 一种例外是当类型使用自定义序列化通过<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>接口。 实现此接口的类型提供其自己的序列化逻辑，并且因此 CA2235 不会触发这种类型的非可序列化的实例字段。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请应用<xref:System.NonSerializedAttribute?displayProperty=fullName>属性不是可序列化的字段。

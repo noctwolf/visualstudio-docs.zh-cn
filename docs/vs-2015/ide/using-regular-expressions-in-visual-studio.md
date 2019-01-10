@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 90639e9f3f24a7985255e0a7ea42e303b9917739
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 5ca54797fe9a8aa4adac7883aaeda761ba08509d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059426"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959581"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +40,7 @@ Visual Studio 使用 .NET Framework 正则表达式来查找和替换文本。 �
 > 在 Windows 操作系统中，大多数行以“\r\n”（回车符后跟新行）结束。 这些字符不可见，但在编辑器中存在并传递给 .NET 正则表达式服务。
 
 > [!TIP]
-> 有关在替换模式中使用的正则表达式的信息，请参阅[替换](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)。 若要使用已编号的捕获组，语法是 `$1`用于指定编号组）和 `(x)`（指定相关组）。 例如，已分组的正则表达式`(\d)([a-z])`以下字符串中查找四个匹配项：**1a 2b 3c 4d**。 替换字符串 `z$1` 将该字符串转换为 **z1 z2 z3 z4**。
+> 有关在替换模式中使用的正则表达式的信息，请参阅[替换](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)。 若要使用已编号的捕获组，语法是 `$1`用于指定编号组）和 `(x)`（指定相关组）。 例如，已分组的正则表达式`(\d)([a-z])`以下字符串中查找四个匹配项：1a 2b 3c 4d**。 替换字符串 `z$1` 将该字符串转换为 **z1 z2 z3 z4**。
 
 ## <a name="regular-expression-examples"></a>正则表达式示例
 
