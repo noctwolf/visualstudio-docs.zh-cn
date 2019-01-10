@@ -1,5 +1,5 @@
 ---
-title: 调试安装的 UWP 应用包 |Microsoft Docs
+title: 调试已安装的 UWP 应用包 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/07/2018
 ms.topic: conceptual
@@ -27,12 +27,12 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 01/02/2019
 ms.locfileid: "53879739"
 ---
-# <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>调试 Visual Studio 中安装的 UWP 应用包
+# <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>在 Visual Studio 中调试已安装的 UWP 应用包
 
-Visual Studio 可以调试在 Windows 10 计算机和 Xbox、 HoloLens 和 IoT 设备上的已安装通用 Windows 平台 (UWP) 应用程序包。 
+Visual Studio 可以调试 Windows 10 计算机以及 Xbox、HoloLens 和 IoT 设备上已安装的通用 Windows 平台 (UWP) 应用包。 
 
 >[!NOTE]
->在电话上不支持的 visual Studio 调试已安装的 UWP 应用的。
+>手机不支持 Visual Studio 调试已安装的 UWP 应用。
    
 有关调试 UWP 应用的详细信息，请参阅博客文章上[调试已安装的应用包](https://blogs.msdn.microsoft.com/devops/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/)并[构建通用 Windows 应用 (UWP)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/)。
 
@@ -56,11 +56,11 @@ Visual Studio 可以调试在 Windows 10 计算机和 Xbox、 HoloLens 和 IoT �
   
 ## <a name="remote"></a> 调试远程计算机或设备上已安装的 UWP 应用
 
-Visual Studio 调试已安装的 UWP 应用的 Windows 10 设备或远程 post 的创建者的更新 Windows 10 计算机上的第一次它在目标设备上安装远程调试工具。 
+Visual Studio 首次调试 Windows 10 设备或后创意者更新 Windows 10 远程计算机上已安装的 UWP 应用时，会在目标设备上安装远程调试工具。 
 
-1. [启用开发人员模式](/windows/uwp/get-started/enable-your-device-for-development)Visual Studio 计算机和远程设备或计算机上。
+1. 在 Visual Studio 计算机和远程设备/计算机上[启用开发人员模式](/windows/uwp/get-started/enable-your-device-for-development)。
    
-1. 如果要连接到远程计算机运行前的创建者的更新 Windows 10 中，[手动安装并启动远程调试器](../debugger/remote-debugging.md)远程计算机上。
+1. 如果要连接到运行预创意者更新 Windows 10 的远程计算机，请在该远程计算机上[手动安装并启动远程调试器](../debugger/remote-debugging.md)。
    
 1. 在 Visual Studio 计算机上，选择**调试** > **其他调试目标** > **调试安装的应用程序包**。
    
@@ -90,9 +90,9 @@ Visual Studio 调试已安装的 UWP 应用的 Windows 10 设备或远程 post �
 当开始第一次调试连接 Xbox、 HoloLens 或 IoT 设备上安装的应用包时，Visual Studio 安装的目标设备的远程调试器的正确版本。 安装远程调试器可能需要一些时间和消息**正在启动远程调试器**显示在它的执行过程。
 
 >[!NOTE]
->目前，Xbox 或 HoloLens 设备重启应用，如果已运行，则附加调试器。
+>目前，Xbox 或 HoloLens 设备附加调试器时，如果已运行则重启应用。
 
-UWP 应用的远程部署的详细信息，请参阅[部署和调试 UWP 应用](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)并[远程计算机上的调试 UWP 应用](run-windows-store-apps-on-a-remote-machine.md)。 
+对于UWP 应用远程部署的更多信息，请参阅[部署和调试 UWP 应用](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)并[远程计算机上的调试 UWP 应用](run-windows-store-apps-on-a-remote-machine.md)。 
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)  

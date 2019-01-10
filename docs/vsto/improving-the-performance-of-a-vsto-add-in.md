@@ -51,13 +51,13 @@ ms.locfileid: "53937278"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>配置 Windows Installer 解决方案以按需加载 VSTO 外接程序
 
-1.  在注册表中，设置`LoadBehavior`的条目**_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _外接程序 ID_** 关键**0x10**。
+1.  在注册表中，设置`LoadBehavior`的条目 **_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _外接程序 ID_** 关键**0x10**。
 
      有关详细信息，请参阅[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>将解决方案配置为在调试解决方案时按需加载 VSTO 外接程序
 
-1.  创建一个脚本，设置`LoadBehavior`的条目**_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _外接程序 ID_** 关键**0x10**。
+1.  创建一个脚本，设置`LoadBehavior`的条目 **_根_\Software\Microsoft\Office\\_ApplicationName_\Addins\\ _外接程序 ID_** 关键**0x10**。
 
      下面的代码演示了此脚本的一个示例。
 
