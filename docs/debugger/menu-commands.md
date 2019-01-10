@@ -1,8 +1,6 @@
 ---
-title: 菜单命令 |Microsoft 文档
-ms.custom: ''
+title: 菜单命令 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, menu commands
@@ -13,15 +11,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d494fa3f5aa50cc761152e015df34e76341ed074
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 59afcb8db6fbfa8aa2e6891b954b486eb4ec197e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830672"
 ---
 # <a name="menu-commands"></a>菜单命令
-此部分中的帮助主题列出在 Spy + + 菜单上可用的命令。  
+在本部分中的帮助主题列出 Spy + + 菜单上可用的命令。  
   
 ## <a name="in-this-section"></a>本节内容  
  [“监视”菜单命令](../debugger/spy-menu-commands.md)  
@@ -50,7 +48,7 @@ ms.locfileid: "31476031"
  引入了 Spy + + 工具，并说明如何使用它。  
   
  [Spy++ 视图](../debugger/spy-increment-views.md)  
- 说明 windows、 消息、 进程和线程 Spy + + 树视图。  
+ 介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [Spy++ 参考](../debugger/spy-increment-reference.md)  
- 包括本部分中，并部分描述每个 Spy + + 对话框。
+ 包括本部分中，以及各节描述每个 Spy + + 对话框。

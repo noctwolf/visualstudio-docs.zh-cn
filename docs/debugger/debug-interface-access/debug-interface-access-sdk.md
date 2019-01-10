@@ -1,8 +1,6 @@
 ---
 title: 调试接口访问 SDK |Microsoft Docs
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 279f5b883ca359c38ad8d357d153d02ea022b9da
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
-ms.translationtype: MT
+ms.openlocfilehash: bdc5a980c9019fdaf330db9602f0b8445456c7c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889561"
 ---
 # <a name="debug-interface-access-sdk"></a>调试接口访问 SDK
 
@@ -38,7 +36,7 @@ Microsoft 调试接口访问软件开发工具包 (DIA SDK) 提供了调试信�
 [符号和符号标记](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
 讨论如何在 DIA API 中使用符号和符号标记。
 
-[参考](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+[引用](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
 包含接口、 方法、 枚举和结构 DIA API。
 
 [Dia2dump 示例](../../debugger/debug-interface-access/dia2dump-sample.md)  

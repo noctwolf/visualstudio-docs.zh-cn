@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14a0e5b6b746356e38dfc71c26f53ced5a470e34
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 556f82d99fd6ea811f4198dc7abffb3ab32d47fd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066791"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821252"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>在 Visual Studio 中的实体框架工具
 
@@ -46,7 +45,7 @@ Entity Framework 是一种对象关系映射技术，使.NET 开发人员能够�
 
 ## <a name="related-topics"></a>相关主题
 
-| 标题 | 说明 |
+| Title | 说明 |
 | - | - |
 | [ADO.NET 实体框架](/dotnet/framework/data/adonet/ef/index) | 介绍如何使用[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]工具，其中[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]提供创建应用程序。 |
 | [实体数据模型](/dotnet/framework/data/adonet/entity-data-model) | 提供用于处理数据的基础上构建的应用程序使用链接和信息[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]。 |

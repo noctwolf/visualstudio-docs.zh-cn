@@ -1,8 +1,6 @@
 ---
 title: 格式说明符在调试器中的 (C#) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -27,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c69792b5f925141b95d28a5e2c5255e12011668
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: f01951a45a2e50f6dac093924627fe178011c9f0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305385"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899007"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>格式说明符在C#Visual Studio 调试器中
 你可以在其中一个值中显示的格式**监视**窗口是通过使用格式说明符。 此外可以使用中的格式说明符**即时**窗口中，**命令**窗口中，在[跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，并在源窗口中。 如果暂停这些窗口中的表达式，该结果将显示在[数据提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中指定的格式显示。  

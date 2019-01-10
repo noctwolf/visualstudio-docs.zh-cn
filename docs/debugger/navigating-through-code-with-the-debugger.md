@@ -2,7 +2,6 @@
 title: 使用调试器导航代码 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/12/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -16,16 +15,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f951732704b178c2726d60f20fc4fedcbd4cde90
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 66478505fe59ef65eb703fef6be8941deebe3d49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53068268"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931419"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器浏览代码
 
-Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显示其执行流。 可以使用键盘快捷方式、 调试命令、 断点以及其他功能来快速访问你想要检查的代码。 熟悉的调试器导航命令和快捷方式可以更快、 更轻松地查找和解决应用程序问题。  如果这是你在尝试调试的代码的第一个时间，可能需要阅读[通过编写更好地修复 bugC#代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
+Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显示其执行流。 可以使用键盘快捷方式、 调试命令、 断点以及其他功能来快速访问你想要检查的代码。 熟悉的调试器导航命令和快捷方式可以更快、 更轻松地查找和解决应用程序问题。  如果这是你首次尝试调试代码，则在阅读本文之前，可能需要阅读[通过编写更好的 C# 代码修复 bug](../debugger/write-better-code-with-visual-studio.md)和[适用于初学者的调试](../debugger/debugging-absolute-beginners.md)。
   
 ## <a name="basic-debugging"></a>基础调试  
 

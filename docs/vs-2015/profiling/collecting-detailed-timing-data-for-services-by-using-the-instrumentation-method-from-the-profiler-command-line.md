@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d454bb625f51f336b4b127848aad7c57a73f0456
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 396fe5511e1ef027b8dff1af350e2fa5b883e980
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845494"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>从探查器命令行使用检测方法收集服务的详细计时数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "51795071"
   
 |任务|相关内容|  
 |----------|---------------------|  
-|**分析 .NET 服务**|-   [如何：检测 .NET 服务和收集详细计时数据](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
+|**分析 .NET 服务**|-   [如何：检测 .NET 服务并收集详细计时数据](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
 |**添加层交互数据**|-   [收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
 |**分析 C/C++ 服务**|-   [如何：检测本机服务并收集详细计时数据](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|  
   
@@ -49,7 +49,7 @@ ms.locfileid: "51795071"
 |任务|相关内容|  
 |----------|---------------------|  
 |**分析独立（客户端）应用程序**|-   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
-|**分析 ASP.NET Web 应用程序**|-   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**分析 ASP.NET Web 应用程序**|-   [使用检测收集详细计时数据](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>分析检测数据视图和报告  
  [检测方法数据视图](../profiling/instrumentation-method-data-views.md)

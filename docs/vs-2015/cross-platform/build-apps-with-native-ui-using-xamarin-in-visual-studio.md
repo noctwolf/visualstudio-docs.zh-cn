@@ -5,20 +5,19 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7a17f8468eca37b5b977aa6b892e268bda5376ba
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: addc983ce8490e8c1dc1b84a98223cc1b23a76f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066232"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931046"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>在 Visual Studio 中使用 Xamarin 生成具有本机 UI 的应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -253,7 +252,7 @@ ms.locfileid: "53066232"
 
 7.  在“属性”窗口中，设置这些属性（注意：它有助于使用“属性”窗口工具栏中的排序按钮对列表进行按字母顺序排序）：
 
-    |属性|值|
+    |Property|“值”|
     |--------------|-----------|
     |**text**|**根据“邮政编码”进行搜索**|
     |**id**|`@+id/ZipCodeSearchLabel`|
@@ -307,7 +306,7 @@ ms.locfileid: "53066232"
 
 10. 在“工具箱”中，将“数字”控件拖动到“RelativeLayout”上，然后将其放置在“邮政编码”标签下。 然后设置以下属性：
 
-    |属性|值|
+    |Property|值|
     |--------------|-----------|
     |**id**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
@@ -330,7 +329,7 @@ ms.locfileid: "53066232"
 
 11. 在“工具箱”中，将“按钮”拖动到“RelativeLayout”控件上，然后将其放置在 zipCodeEntry 控件的右侧。 然后设置这些属性：
 
-    |属性|值|
+    |Property|“值”|
     |--------------|-----------|
     |**id**|`@+id/weatherBtn`|
     |**文本**|**获取天气信息**|

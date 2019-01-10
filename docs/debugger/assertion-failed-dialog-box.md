@@ -1,8 +1,6 @@
 ---
-title: 断言失败对话框 |Microsoft 文档
-ms.custom: ''
+title: 断言失败对话框 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.assertions
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14be93cb60be53d98f13852ac6fcc1fd725e2d0e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 4d13d216a47d77d4948fe7ec28bffd0d750433a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824842"
 ---
 # <a name="assertion-failed-dialog-box"></a>“断言失败”对话框
 断言语句指定在程序的某些特定点应为真的条件。 如果该条件不为 true，则断言失败、程序的执行中断且此对话框将出现。  

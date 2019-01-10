@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_parambasepointerregisterid |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b74250c453f42b4591bb87ef0a281d74de3b489
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cd02fde67db2b72d34df9d04a16ebc9c80d197e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852877"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833091"
 ---
 # <a name="idiasymbolgetparambasepointerregisterid"></a>IDiaSymbol::get_paramBasePointerRegisterId
 检索到的参数包含基指针寄存器的 ID。 何时使用[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)设置为`SymTagFunction`。  
@@ -27,7 +25,7 @@ ms.locfileid: "49852877"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_paramBasePointerRegisterId (   
+HRESULT get_paramBasePointerRegisterId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -45,7 +43,7 @@ HRESULT get_paramBasePointerRegisterId (
 ## <a name="remarks"></a>备注  
   
 ## <a name="requirements"></a>要求  
- 标头： Dia2.h  
+ 标头：dia2.h  
   
  库： diaguids.lib  
   

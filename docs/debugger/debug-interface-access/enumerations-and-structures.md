@@ -1,8 +1,6 @@
 ---
-title: 枚举和结构 |Microsoft 文档
-ms.custom: ''
+title: 枚举和结构 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -17,15 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc3b2b74c6539cbbdfd1a7e99c88c0b1e65c5cc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c8f994e83e6817062878ef7a0d8e6cd9981b3ec9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462047"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988078"
 ---
 # <a name="enumerations-and-structures"></a>枚举和结构
-这些是枚举和结构 DIA SDK 使用。  
+这些是枚举和 DIA SDK 使用的结构。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -34,25 +32,25 @@ ms.locfileid: "31462047"
  指定符号的基本类型。  
   
  [CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)  
- 指定可见性 （访问级别） 成员函数和变量的作用的域。  
+ 指定的成员函数和变量的可见性 （访问级别） 的范围。  
   
  [CV_call_e 枚举](../../debugger/debug-interface-access/cv-call-e.md)  
  指定的函数的调用约定。  
   
  [CV_CFL_LANG 枚举](../../debugger/debug-interface-access/cv-cfl-lang.md)  
- 指定的应用程序或链接的模块的源代码语言。  
+ 指定应用程序或链接的模块的源代码语言。  
   
  [CV_CPU_TYPE_e 枚举](../../debugger/debug-interface-access/cv-cpu-type-e.md)  
  指定目标处理器。  
   
  [CV_HREG_e 枚举](../../debugger/debug-interface-access/cv-hreg-e.md)  
- 指定目标寄存器。  
+ 指定目标注册。  
   
  [DataKind 枚举](../../debugger/debug-interface-access/datakind.md)  
- 指示数据值的特定范围。  
+ 指示特定的数据值范围。  
   
  [LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)  
- 指示在符号中包含的位置信息的类型。  
+ 指示符号中包含的位置信息的类型。  
   
  [MemoryTypeEnum 枚举](../../debugger/debug-interface-access/memorytypeenum.md)  
  指定要访问的内存的类型。  
@@ -70,18 +68,18 @@ ms.locfileid: "31462047"
  指定转换 （thunk） 类型。  
   
  [UdtKind 枚举](../../debugger/debug-interface-access/udtkind.md)  
- 描述的各种用户定义类型 (UDT)。  
+ 介绍不同的用户定义类型 (UDT)。  
   
 ## <a name="structures"></a>结构  
  [DiaAddressMapEntry 结构](../../debugger/debug-interface-access/diaaddressmapentry.md)  
- 描述地址映射中的项。  
+ 描述在映射的地址中的项。  
   
 ## <a name="related-sections"></a>相关章节  
  [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
  指定由 DIA SDK 提供的接口。  
   
  [常量（调试接口访问 SDK）](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
- 指定可用 DIA SDK 中的常量。  
+ 指定是在 DIA SDK 中提供的常量。  
   
 ## <a name="see-also"></a>请参阅  
- [参考](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+ [引用](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

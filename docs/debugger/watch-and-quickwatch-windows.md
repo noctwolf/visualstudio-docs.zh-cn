@@ -2,7 +2,6 @@
 title: 在变量上设置监视 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/11/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 898c79f3985e24f52620f12dc25ad6044d05ac64
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: b01c0a80c9e45aa56f2a627b73659e7558257e35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059478"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936500"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>监视使用监视窗口和快速监视的变量 
 
@@ -31,7 +30,7 @@ ms.locfileid: "53059478"
 
 **观看**windows 可以在调试时一次显示多个变量。 **快速监视**对话框一次仅显示单个变量，并可以继续调试之前，必须关闭。
 
-如果这是你在尝试调试的代码的第一个时间，可能需要阅读[通过编写更好地修复 bugC#代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
+如果这是你首次尝试调试代码，则在阅读本文之前，可能需要阅读[通过编写更好的 C# 代码修复 bug](../debugger/write-better-code-with-visual-studio.md)和[适用于初学者的调试](../debugger/debugging-absolute-beginners.md)。
 
 ## <a name="observe-variables-with-a-watch-window"></a>观察使用监视窗口变量
 

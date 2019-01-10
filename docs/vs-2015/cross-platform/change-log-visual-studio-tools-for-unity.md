@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -14,12 +13,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: e23608f3fbbb14bd6d8f8c0494cb1ae2784358fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807187"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837964"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>更改日志（Visual Studio Tools for Unity）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +125,7 @@ Visual Studio Tools for Unity 更改日志。
 
 -   修复对 Windows 应用商店应用的 UnityEngine 和 UnityEditor 程序集的引用。
 
--   修复在调试器中逐步执行时出现的错误：无法逐步执行，一般异常。
+-   已修复在调试器中单步执行时的错误：无法单步执行，一般异常。
 
 -   修复了 Visual Studio 2015 中的命中次数断点。
 
@@ -212,7 +211,7 @@ Visual Studio Tools for Unity 更改日志。
 
 -   **Unity：** 在项目文件生成过程中查找 .rsp 文件中的不安全标志和自定义定义。
 
--   **UI：** Visual Studio 中已添加的 Visual Studio Tools for Unity“选项”  对话框。
+-   **UI：** Visual Studio 中已添加的 Visual Studio Tools for Unity“选项”对话框。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -597,21 +596,21 @@ Visual Studio Tools for Unity 更改日志。
 
 -   修复了 bug UV-48：键入双引号有时会产生错误并中断所有函数（代码完成、语法突出显示等）。
 
--   修复了 bug UV-46：单击 Visual Studio 的“错误列表”时重复打开脚本文件 (UnityScript)。
+-   已修复 bug UVS-46：单击 Visual Studio 的“错误列表”时重复打开脚本文件 (UnityScript)。
 
--   修复了 bug UV-42：状态栏中的 Unity 连接徽标不处理 VS 2012 中的鼠标事件。
+-   已修复 bug UVS-42：状态栏中的 Unity 连接徽标不处理 VS 2012 中的鼠标事件。
 
--   修复了 bug UV-44：VS 2012 中的 CTRL+SHIFT+Q 不可用于 Quick MonoBehaviours。
+-   已修复 bug UVS-44：VS 2012 中的 CTRL+SHIFT+Q 不可用于 Quick MonoBehaviours。
 
--   修复了 bug UV-40：VS2012“深色”主题中窗口为非活动状态时，Unity 项目资源管理器中的选定项目不可读。
+-   已修复 bug UV-40：VS2012“深色”主题中窗口为非活动状态时，Unity 项目资源管理器中的选定项目不可读。
 
--   修复了 bug UV-39：转义字符串标记化问题。
+-   已修复 bug UV-39：转义字符串标记化问题。
 
--   修复了 bug UV-35：检查相变量时调用对象上的 ToString。
+-   已修复 bug UV-35：检查相变量时调用对象上的 ToString。
 
--   修复了 bug UV-27：“转到符号”窗口与 VS2012 中的“深色”主题不一致。
+-   已修复 bug UV-27：“转到符号”窗口与 VS2012 中的“深色”主题不一致。
 
--   修复了 bug UV-11：协同程序中的局部变量。
+-   已修复 bug UVS-11：协同例程中的局部变量。
 
 ## <a name="11--beta-release"></a>1.1 – Beta 版本
  发布日期 2014-10-09
@@ -717,9 +716,9 @@ Visual Studio Tools for Unity 更改日志。
 
 -   修复了在加载的程序集中为表达式计算搜索类型的方式。
 
--   修复了 bug UV-21：对 Unity 对象分配的评估不起作用。
+-   已修复 bug UV-21：对 Unity 对象分配的评估不起作用。
 
--   修复了 bug UV-21：评估对 Unity Math API 的方法调用时的指针无效。
+-   已修复 bug UV-21：评估对 Unity Math API 的方法调用时的指针无效。
 
 ## <a name="108"></a>1.0.8
  发布时间 2012-09-26
@@ -818,4 +817,3 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="10--initial-release"></a>1.0 – 初始版本
  发布时间 2012-08-22
-

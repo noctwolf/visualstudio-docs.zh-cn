@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 493b96d4c66c35a242efd4957288d215ab2877ed
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bd2cf85abd5b36ba0a3797ef711b4c9364b35c4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063284"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945192"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>如何：将 Visual c + + 项目升级到 Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +29,7 @@ Visual Studio 2017 的最新文档，请参阅[Visual c + + 移植和升级指�
 
 当你首次打开在早期版本的 Visual Studio 中创建的 Visual C++ 项目时，系统可能会提示你更新项目。 该消息会询问你是否想要升级到 Visual C++ 编译器和库的最新版本。 升级的选项取决于用于创建该项目的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的版本。
 
- 您可以使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 打开、编辑和生成在 [!INCLUDE[win8](../includes/win8-md.md)] 中创建的 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 项目，但要创建新的 [!INCLUDE[win8](../includes/win8-md.md)] 项目，您必须使用 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]。 （若要创建 [!INCLUDE[win81](../includes/win81-md.md)] 项目，必须使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]。）
+ 你可以使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 打开、编辑和生成在 [!INCLUDE[win8](../includes/win8-md.md)] 中创建的 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]项目，但要创建新的 [!INCLUDE[win8](../includes/win8-md.md)] 项目，你必须使用 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]。 （若要创建 [!INCLUDE[win81](../includes/win81-md.md)] 项目，必须使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]。）
 
  若要创建 Windows 10 项目，必须使用 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]。
 
@@ -38,7 +37,7 @@ Visual Studio 2017 的最新文档，请参阅[Visual c + + 移植和升级指�
 
 -   如果项目 (.vcproj) 是在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之前的 [!INCLUDE[vs2010](../includes/vs2010-md.md)]版本中创建的，则你必须更新项目。
 
--   如果项目 (.vcxproj) 是在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]、[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中创建的，则你有两个选择：
+-   如果项目 (.vcxproj) 是在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]、  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中创建的，则你有两个选择：
 
     -   你可以跳过更新。 如果 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 有权访问 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1、[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中的 Visual C++ 工具，则它将加载项目而不进行任何更改。 可以通过在具有 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]的同一台计算机上安装用于创建项目的 Visual Studio 版本，来提供此访问权限 。 有关详细信息，请参阅 [Installing Visual Studio Versions Side-by-Side](../install/install-visual-studio-versions-side-by-side.md)。
 

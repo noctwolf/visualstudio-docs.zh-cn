@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenuminjectedsources:: Clone |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bca7bd10b7092654d1bd7c7bf8c0f0f18ee72a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a89830fb39786b2e2318f051d5bf25a16a9e8178
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950984"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888401"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
 创建一个包含当前枚举数形式的相同枚举状态的枚举器。  
@@ -27,7 +25,7 @@ ms.locfileid: "49950984"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT Clone (   
+HRESULT Clone (   
    IDiaEnumInjectedSources** ppenum  
 );  
 ```  

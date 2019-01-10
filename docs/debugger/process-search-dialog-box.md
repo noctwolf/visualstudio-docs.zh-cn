@@ -1,8 +1,6 @@
 ---
-title: 处理搜索对话框 |Microsoft 文档
-ms.custom: ''
+title: 处理搜索对话框 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process Search
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5f133833114398ceb257fcceeaab7e7f4f5da2c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: c795671f6e8f5f47d8b0da7e36fbb1f81ab95c28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475504"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958050"
 ---
 # <a name="process-search-dialog-box"></a>“进程搜索”对话框
 使用此对话框来查找和选择的节点中的特定进程[进程视图](../debugger/processes-view.md)。 若要显示此对话框中，将焦点移至**进程**视图窗口。 然后选择**查找进程**从**搜索**菜单。  
@@ -31,17 +29,17 @@ ms.locfileid: "31475504"
  要搜索的模块字符串。  
   
  **搜索方向向上或向下**  
- 搜索初始方向。  
+ 搜索的初始传递方向。  
   
 ## <a name="related-sections"></a>相关章节  
- [进程视图中的进程搜索](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- 说明如何在进程视图中查找特定的进程。  
+ [在进程视图中的进程搜索](../debugger/how-to-search-for-a-process-in-processes-view.md)  
+ 介绍如何在进程视图中查找特定的进程。  
   
  [进程视图](../debugger/processes-view.md)  
- 显示活动进程的树视图。  
+ 显示活动流程的树视图。  
   
  [Spy++ 视图](../debugger/spy-increment-views.md)  
- 说明 windows、 消息、 进程和线程 Spy + + 树视图。  
+ 介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
  引入了 Spy + + 工具，并说明如何使用它。  
@@ -50,4 +48,4 @@ ms.locfileid: "31475504"
  用于显示在进程视图中选择的进程的属性。  
   
  [Spy++ 参考](../debugger/spy-increment-reference.md)  
- 包含描述每个 Spy + + 菜单和对话框框中的部分。
+ 包含描述每个 Spy + + 菜单和对话框中的各个部分。

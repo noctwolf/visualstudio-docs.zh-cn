@@ -1,8 +1,6 @@
 ---
 title: 调试器项目设置 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a027307ef960a8b0185daa34374e20270bf2fa19
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 5d10cac5cec53440da687717e6737bd38ff35f8f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152979"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865869"
 ---
 # <a name="debugger-project-settings"></a>调试器项目设置
 某些项目设置也对调试产生影响。 这些设置确定诸如调试器查看的目录、用于启动程序的命令和命令参数以及为程序创建的调试信息的类型等内容。 可以在 **“属性页”** 对话框中更改这些设置。  
@@ -53,7 +51,7 @@ ms.locfileid: "39152979"
  [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  描述调试器如何使用符号文件和源文件来显示调试信息。  
   
- [在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)  
+ [在 Visual Studio 中调试应用](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
  描述如何调试 UWP 应用。 （Windows 开发人员中心）  
   
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)  

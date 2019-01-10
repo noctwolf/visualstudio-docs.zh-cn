@@ -1,8 +1,6 @@
 ---
-title: 如何： 从 DLL 项目进行调试 |Microsoft Docs
-ms.custom: ''
+title: 如何：从 DLL 项目进行调试 |Microsoft Docs
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e006bbd27acc0fa88cfee1b22cb435acba1e282e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6dd7ec8938b8b7f94ba649affe48f170172f887b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388249"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854058"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>如何： 从 Visual Studio 中的 DLL 项目进行调试 (C#，c + +、 Visual Basic 中， F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>如何：从 Visual Studio 中的 DLL 项目进行调试 (C#，c + +、 Visual Basic 中， F#)
 
 调试 DLL 项目的一种方法是在 DLL 项目属性中指定调用应用。 然后可以开始调试 DLL 项目本身中。 若要运行此方法，该应用必须调用同一个 DLL 中与你配置的一个相同的位置。 如果应用程序查找和加载不同版本的 DLL，该版本将不包含您的断点。 调试 Dll 的其他方法，请参阅[调试 DLL 项目](../debugger/debugging-dll-projects.md)。
   
-如果托管的应用程序调用本机 DLL 或本机应用调用的托管的 DLL，您可以调试 DLL 和调用应用。 有关详细信息，请参见[如何：在混合模式下调试](../debugger/how-to-debug-in-mixed-mode.md)。   
+如果托管的应用程序调用本机 DLL 或本机应用调用的托管的 DLL，您可以调试 DLL 和调用应用。 有关更多信息，请参见[如何：在混合模式下调试](../debugger/how-to-debug-in-mixed-mode.md)。   
 
 本机和托管 DLL 项目具有不同的设置以指定调用应用程序。 
 

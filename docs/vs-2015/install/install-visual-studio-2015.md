@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +22,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 761264d80c04f0e2ce13a365071f56739d6961a2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828051"
 ---
 # <a name="install-visual-studio-2015"></a>安装 Visual Studio 2015
 
@@ -93,7 +92,7 @@ ms.locfileid: "53055162"
 |-------------|-----------------------|
 |Visual Studio Enterprise|vs_enterprise.exe|
 |Visual Studio Professional|vs_professional.exe|
-|Visual Studio 社区|vs_community.exe|
+|Visual Studio Community|vs_community.exe|
 
 ###  <a name="BKMK_Website"></a> 从产品网站下载
  请访问[Visual Studio 下载](http://go.microsoft.com/fwlink/?LinkId=517106)页，然后选择所需的 Visual Studio 的版本。
@@ -188,7 +187,7 @@ ms.locfileid: "53055162"
 
 ##  <a name="relatedTopics"></a>相关主题
 
-|标题|说明|
+|Title|说明|
 |-----------|-----------------|
 |[创建 Visual Studio 的脱机安装](../install/create-an-offline-installation-of-visual-studio.md)|介绍如何安装 Visual Studio 未连接到 Internet 时。
 |[并行安装 Visual Studio 版本](../install/install-visual-studio-versions-side-by-side.md)|提供有关如何在同一台计算机上安装多个 Visual Studio 版本的信息。|

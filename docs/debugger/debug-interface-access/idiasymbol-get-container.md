@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_container |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d293971cfcd0723485d4a5b21d4e431de64ddd65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f9b528806091bb0b84e8bd2d10b4594b4bf4d018
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822730"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935874"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 此函数检索指向表示父/容器的此符号的符号。  
@@ -44,7 +42,7 @@ HRESULT get_container(
   
 ## <a name="requirements"></a>要求  
   
-|需求|描述|  
+|需求|说明|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

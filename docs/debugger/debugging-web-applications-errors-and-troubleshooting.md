@@ -2,7 +2,6 @@
 title: 调试 web 应用-错误和故障排除
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b089e3d095131e998729dc5d7a270d859673b2c7
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 660e02cab12206fda374fec8e008023952690fac
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053646"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53827412"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>调试 Web 应用程序：错误和疑难解答
 当尝试调试 Web 应用程序时，可能遇到下列错误。  
@@ -58,4 +57,4 @@ ms.locfileid: "53053646"
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
- [调试 Web 应用程序和脚本](../debugger/debugging-web-applications-and-script.md)
+ [调试 Web 应用程序和脚本](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

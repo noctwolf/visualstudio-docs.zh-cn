@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 260676ee54a9410bb7bfc8d90bd3d044c403169d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: bbe52509eb298c33077c81a69e02a813c29b7ce0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788298"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959730"
 ---
 # <a name="collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>使用探查器命令行从 ASP.NET Web 应用程序收集内存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,8 +37,8 @@ ms.locfileid: "51788298"
 |任务|相关内容|  
 |----------|---------------------|  
 |将探查器附加到正在运行的 ASP.NET 应用程序|-   [如何：将探查器附加到 ASP.NET Web 应用程序以收集内存数据](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
-|检测静态编译的二进制文件|-   [如何：检测静态编译的 ASP.NET 应用程序并收集内存数据](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
-|检测动态编译的二进制文件|-   [如何：检测动态编译的 ASP.NET 应用程序并收集内存数据](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|检测静态编译的二进制文件|-   [如何：检测静态编译的 ASP.NET 应用程序，并收集内存数据](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|检测动态编译的二进制文件|-   [如何：检测动态编译的 ASP.NET 应用程序，并收集内存数据](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="related-tasks"></a>相关任务  
   
@@ -47,7 +47,7 @@ ms.locfileid: "51788298"
 |任务|相关内容|  
 |----------|---------------------|  
 |**使用采样方法进行分析**|-   [使用采样法收集应用程序统计信息](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
-|**使用检测方法进行分析**|-   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**使用检测方法进行分析**|-   [使用检测收集详细计时数据](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**分析资源争用和线程活动**|-   [收集并发数据](../profiling/collecting-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line.md)|  
   
 ### <a name="profiling-net-framework-memory-data"></a>分析 .NET Framework 内存数据  

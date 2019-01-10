@@ -1,8 +1,6 @@
 ---
-title: 'Idiasymbol:: Get_hasalloca |Microsoft 文档'
-ms.custom: ''
+title: 'Idiasymbol:: Get_hasalloca |Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,35 +12,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e701f6b851b48345c9dcbcf3f2482d7c6c0951
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ecc7029ab515f1e47f52eb086aa0f099c13fc65c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465520"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990615"
 ---
 # <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
-检索用于指定该函数是否包含对的调用的标志`alloca`（用于在堆栈上分配内存）。  
+检索一个标志，指定该函数是否包含对的调用`alloca`（这用于在堆栈上分配内存）。  
   
 ## <a name="syntax"></a>语法  
   
 ```  
-[C++]HRESULT get_hasAlloca(   BOOL *pFlag);  
+[C++]HRESULT get_hasAlloca(   BOOL *pFlag);  
 ```  
   
 #### <a name="parameters"></a>参数  
  `pFlag`  
- [out]返回`TRUE`如果该函数包含调用`alloca`; 否则为返回`FALSE`。  
+ [out]返回`TRUE`如果该函数包含对的调用`alloca`; 否则为返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="requirements"></a>要求  
   
-|需求|描述|  
+|需求|说明|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

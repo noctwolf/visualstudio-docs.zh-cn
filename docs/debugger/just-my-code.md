@@ -1,8 +1,6 @@
 ---
 title: 调试用户代码与仅我的代码 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e36c528b71bb49b29265890ca6c48863f01be9
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 99c31291e31821f79e23f507e37003c571a8ab7c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952042"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>调试用户代码仅使用仅我的代码 
 
@@ -137,12 +135,12 @@ C + + 中启用仅我的代码是使用相同[/JMC （仅我的代码的调试�
   
 ```  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
-|`Function`|必须的。 将一个或多个函数指定为非用户函数。|  
-|`Name`|必须的。 ECMA-262 格式的正则表达式，指定要匹配的完整函数名。 例如:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知调试器将 `MyNS::MyClass` 中的所有方法都视为非用户代码。 匹配区分大小写。|  
+|`Function`|必需。 将一个或多个函数指定为非用户函数。|  
+|`Name`|必需。 ECMA-262 格式的正则表达式，指定要匹配的完整函数名。 例如:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知调试器将 `MyNS::MyClass` 中的所有方法都视为非用户代码。 匹配区分大小写。|  
 |`Module`|可选。 ECMA-262 格式的正则表达式，指定包含函数的模块的完整路径。 匹配不区分大小写。|  
-|`Action`|必须的。 以下区分大小写的值之一：<br /><br /> `NoStepInto`  -告知调试器单步执行函数。<br /> `StepInto`  -告知调试器单步执行函数，重写任何其他`NoStepInto`为匹配的函数。|  
+|`Action`|必需。 以下区分大小写的值之一：<br /><br /> `NoStepInto`  -告知调试器单步执行函数。<br /> `StepInto`  -告知调试器单步执行函数，重写任何其他`NoStepInto`为匹配的函数。|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 自定义 c + + 调用堆栈行为  
 
@@ -175,22 +173,22 @@ C + + 中启用仅我的代码是使用相同[/JMC （仅我的代码的调试�
   
  **模块元素属性**  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`Name`|必须的。 模块的完整路径。 可以使用 Windows 通配符`?`（零个或一个字符） 和`*`（零个或多个字符）。 例如，应用于对象的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 告知调试器中的所有模块都视为*\3rdParty\UtilLibs*外部代码的任何驱动器上。|  
+|`Name`|必需。 模块的完整路径。 可以使用 Windows 通配符`?`（零个或一个字符） 和`*`（零个或多个字符）。 例如，应用于对象的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 告知调试器中的所有模块都视为*\3rdParty\UtilLibs*外部代码的任何驱动器上。|  
 |`Company`|可选。 发布在可执行文件中嵌入的模块的公司的名称。 可以使用此特性消除模块歧义。|  
   
  **文件元素属性**  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`Name`|必须的。 要视为外部代码的源文件的完整路径。 可以在指定路径时使用 Windows 通配符 `?` 和 `*`。|  
+|`Name`|必需。 要视为外部代码的源文件的完整路径。 可以在指定路径时使用 Windows 通配符 `?` 和 `*`。|  
   
  **函数元素属性**  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`Name`|必须的。 要视为外部代码的函数的完全限定的名称。|  
+|`Name`|必需。 要视为外部代码的函数的完全限定的名称。|  
 |`Module`|可选。 包含函数的模块的名称或完整路径。 可以使用此特性区分具有相同名称的函数。|  
 |`ExceptionImplementation`|设置为 `true` 时，调用堆栈显示的是引发异常的函数，而不是此函数。|  
   

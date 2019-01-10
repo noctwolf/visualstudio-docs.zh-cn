@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
-ms.translationtype: MTE95
+ms.openlocfilehash: 6b1f884018be97e49dfa9c300a2ad126fa185cf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305333"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932780"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将 WPF 控件绑定到数据
 
@@ -56,8 +55,8 @@ ms.locfileid: "52305333"
 | - | - | - |
 | 数据集 | 是 | 是 |
 | [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | 是 | 是 |
-| 服务 | 是 | 否 |
-| 对象 | 是 | 否 |
+| 服务 | 是 | No |
+| 对象 | 是 | No |
 
 ### <a name="datasets"></a>数据集
 

@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_numberOfColumns |Microsoft 文档
-ms.custom: ''
+title: IDiaSymbol::get_numberOfColumns |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d01c4e3c13168ebf36e24388986b1c86cfe6f92
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 24c6078cd1246e5bcb13938e31f65e67f5615e4a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464893"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53953191"
 ---
 # <a name="idiasymbolgetnumberofcolumns"></a>IDiaSymbol::get_numberOfColumns
-检索矩阵中的列的数。  
+检索矩阵中的列数。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,7 +29,7 @@ HRESULT get_numberOfColumns(
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]指向的指针`DWORD`在矩阵中包含的列数。  
+ [out]一个指向`DWORD`在矩阵中包含的列数。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  

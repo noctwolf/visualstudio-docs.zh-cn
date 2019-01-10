@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_builtInKind |Microsoft 文档
-ms.custom: ''
+title: IDiaSymbol::get_builtInKind |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a53bea46c2abcffa820da132162d7efb55c3da9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: bbfa28749e01ad6874e10fd1a17243f79536e694
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462615"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966182"
 ---
 # <a name="idiasymbolgetbuiltinkind"></a>IDiaSymbol::get_builtInKind
 检索 HLSL 类型的内置类型。  
@@ -31,7 +29,7 @@ HRESULT get_buildInKind(
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]指向的指针`DWORD`保存是内置类型的 HLSL 类型。  
+ [out]一个指向`DWORD`，保留内置类型的 HLSL 类型。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  

@@ -2,7 +2,6 @@
 title: 图形诊断 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics
@@ -12,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e40a8ce0f2785aa606922d3f9c49f3aad48f7591
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: fb7289759499c4715fba712ed52f1664b3dc3c3b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058611"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890925"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断
 Visual Studio*图形诊断*是一套用于记录、 然后分析 Direct3D 应用中的呈现和性能问题的工具。 可对在 Windows PC 上、在 Windows 设备模拟器中或在远程 PC 或设备上本地运行的应用使用图形诊断。  
@@ -80,8 +79,7 @@ Visual Studio*图形诊断*是一套用于记录、 然后分析 Direct3D 应用
 
 ## <a name="related-sections"></a>相关章节  
 
-| 标题 | 说明 |
+| Title | 说明 |
 | - | - |
-| [调试器功能简介](../debugging-in-visual-studio.md) | 介绍 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的调试功能。 |
+| [调试器功能简介](/visualstudio/debugger/debugger-feature-tour) | 介绍 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的调试功能。 |
 | [DirectX 图形和游戏](http://go.microsoft.com/fwlink/?LinkId=256498) | 提供讨论 DirectX 图形技术的文章。 |
-

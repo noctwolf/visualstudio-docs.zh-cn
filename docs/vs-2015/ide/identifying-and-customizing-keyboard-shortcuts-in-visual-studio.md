@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -24,12 +23,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac425903ade4dbf90f094376927d46629b1c675d
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3dbb6c9c778ed1010c90a901fa9ee9e2e9299252
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053994"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931172"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>在 Visual Studio 中标识并自定义键盘快捷键
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +95,7 @@ ms.locfileid: "53053994"
      例如，如果希望快捷方式适用于所有上下文，可选择“全局”。 你可以使用没有在另一个编辑器中映射（为“全局”）的任何快捷键。 否则，编辑器将会重写快捷键。
 
     > [!NOTE]
-    >  不能分配下列键中的键盘快捷方式的一部分**Global**:打印 Scrn/Sys Rq、 Scroll Lock、 Pause/Break、 选项卡、 Caps Lock、 Insert、 Home、 结束、 Page Up、 Page Down、 Windows 徽标键、 应用程序键、 任何箭头键或 Enter;Num Lock，删除或清除位于数字键盘;或 Ctrl + Alt + Delete。
+    >  以下键不能用于构成“全局”范围中的键盘快捷方式：打印 Scrn/Sys Rq、 Scroll Lock、 Pause/Break、 选项卡、 Caps Lock、 Insert、 Home、 结束、 Page Up、 Page Down、 Windows 徽标键、 应用程序键、 任何箭头键或 Enter;Num Lock，删除或清除位于数字键盘;或 Ctrl + Alt + Delete。
 
 6.  在“按快捷键”框中，输入要使用的快捷方式。
 

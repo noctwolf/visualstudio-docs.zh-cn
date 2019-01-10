@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_hasdebuginfo |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e442bab5b0c7670ca3b42fa24f396252a46331
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 738428e2d1d26e3f94398d3b1967f10140fd668b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849377"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985886"
 ---
 # <a name="idiasymbolgethasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
 检索一个标志，指定如果[编译单位](../../debugger/debug-interface-access/compiland.md)包含调试信息。  
@@ -44,7 +42,7 @@ HRESULT get_hasDebugInfo(
   
 ## <a name="requirements"></a>要求  
   
-|需求|描述|  
+|需求|说明|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

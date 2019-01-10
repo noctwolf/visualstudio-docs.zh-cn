@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_typeid |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 448110b86356e264992d5c47adabebb220bf5361
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c5d431e904a80618658eca3bfc1c96bf0b701fd3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865864"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834017"
 ---
 # <a name="idiasymbolgettypeid"></a>IDiaSymbol::get_typeId
 检索的符号的类型标识符。  
@@ -27,7 +25,7 @@ ms.locfileid: "49865864"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_typeId (   
+HRESULT get_typeId (   
    DWORD* pRetVal  
 );  
 ```  

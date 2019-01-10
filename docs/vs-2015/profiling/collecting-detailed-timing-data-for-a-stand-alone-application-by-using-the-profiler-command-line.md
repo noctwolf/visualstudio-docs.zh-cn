@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9a84a4dbbeee9c8d4738406023cdb86df09504e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 89ca6cfb99fad4364c8e6a1e180821d5d547b7ce
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721928"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925792"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>使用探查器命令行收集独立应用程序的详细计时数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ ms.locfileid: "51721928"
   
 |任务|相关的内容|  
 |----------|---------------------|  
-|**使用检测分析 .NET Framework 应用程序**|-   [如何：检测 .NET 组件并收集详细计时数据](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**使用检测分析 C/C++ 应用程序**|-   [如何：检测本机组件和收集详细计时数据](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**使用检测分析 .NET Framework 应用程序**|-   [如何：检测 .NET 组件，并收集详细计时数据](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**使用检测分析 C/C++ 应用程序**|-   [如何：检测本机组件，并收集详细计时数据](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
 |**添加层交互数据**|-   [收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>相关任务  
@@ -51,7 +51,7 @@ ms.locfileid: "51721928"
   
 |任务|相关内容|  
 |----------|---------------------|  
-|**分析 ASP.NET 应用程序**|-   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**分析 ASP.NET 应用程序**|-   [使用检测收集详细计时数据](/visualstudio/profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method?view=vs-2015)|  
 |**分析服务**|-   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>分析检测数据视图和报告  

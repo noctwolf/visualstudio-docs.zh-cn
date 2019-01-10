@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_constructor |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d54e0dce9d792efa93beb35d5e2a215db672031
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fd380adab64dbc082fde9346d9e4c7767c9a4e55
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908900"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923765"
 ---
 # <a name="idiasymbolgetconstructor"></a>IDiaSymbol::get_constructor
 检索指定用户定义数据类型是否具有构造函数或析构函数的标志。  
@@ -27,7 +25,7 @@ ms.locfileid: "49908900"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_constructor (   
+HRESULT get_constructor (   
    BOOL* pRetVal  
 );  
 ```  
@@ -44,7 +42,7 @@ HRESULT get_constructor (
   
 ## <a name="requirements"></a>要求  
   
-|需求|描述|  
+|需求|说明|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v7.0|  

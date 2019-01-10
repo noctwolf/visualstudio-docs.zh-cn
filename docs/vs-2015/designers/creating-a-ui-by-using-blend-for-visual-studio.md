@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -16,12 +15,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f77fba9ed184d5def85aa7ca260b7c552dddbfd1
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a9b1bc090e46ddcb413b3c362af133e10eaaf50c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53054536"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883141"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 创建 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +58,7 @@ Blend for Visual Studio 可帮助设计基于 XAML 的 Windows 桌面、Web、[W
 |![](../designers/media/b1-5.png "B1_5")|**资产工具** - 访问“资产”面板并显示库中最近用过的资产。|![标注 E](../designers/media/b5-label-e.png "b5_label_E")|**文本控件**|
 |||![标注 F](../designers/media/b5-label-f.png "b5_label_F")|**常见控件**|
 
- 观看简短视频![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [工具栏](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)。
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [工具栏](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4)。
 
 ##  <a name="Assets"></a>“资产”面板概览
  可在“资产”面板中找到所有控件，它类似于 Visual Studio 中的“工具箱”。 除控件外，“资产”面板还包括所有可添加到美工板的内容，例如样式、媒体、行为和效果等。
@@ -126,7 +125,7 @@ Blend for Visual Studio 可帮助设计基于 XAML 的 Windows 桌面、Web、[W
 |                     ![标注 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **渐变滑块** - 仅当选择渐变画笔时才显示。                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **显示高级属性** - 查看不常用属性的类别。                                                                      |
 
- 观看简短视频![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [属性面板](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)。
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [属性面板](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7)。
 
 ## <a name="see-also"></a>请参阅
  [插入控件并修改其行为](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)[对象进行动画处理](../designers/animate-objects-in-xaml-designer.md)[绘制形状和路径](../designers/draw-shapes-and-paths.md) [Visual Studio 和 Blend for Visual Studio 中设计 XAML](../designers/designing-xaml-in-visual-studio.md)

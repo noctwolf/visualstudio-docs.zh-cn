@@ -1,8 +1,6 @@
 ---
-title: ManagedType |Microsoft 文档
-ms.custom: ''
+title: ManagedType |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,22 +14,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d7f9058c207ff7830a6e3580e0a5bc66759973ef
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 486739ae466431397e514d3248857fc606a74d6a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469745"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888239"
 ---
 # <a name="managedtype"></a>ManagedType
-托管的类型 （由元数据或与 C# 等语言的内存和资源管理功能的本机定义任何符号） 由标识`SymTagManagedType`符号。  
+托管的类型 (如定义的元数据或本机的内存和资源的管理功能的语言到任何符号C#) 由`SymTagManagedType`符号。  
   
 ## <a name="properties"></a>属性  
- 下表显示了此符号类型的其他有效属性。  
+ 下表显示此符号类型的其他有效属性。  
   
-|属性|数据类型|描述|  
+|Property|数据类型|说明|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|托管的符号名称。|  
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|托管符号的名称。|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|索引 ID 的符号。|  
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返回`SymTagManagedType`(之一[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)值)。|  
   
