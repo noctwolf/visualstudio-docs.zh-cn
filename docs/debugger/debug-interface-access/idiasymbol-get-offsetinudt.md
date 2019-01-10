@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_offsetinudt |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48b13de8a9d1680ae4e2a6a94a4fda120a74a18e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 286565200cba61e5c2fd990de8d6ddb19c3e5ff1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911416"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985743"
 ---
 # <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
 检索到用户定义类型 (UDT) 的用户定义的类型中的成员开始的偏移量。  
@@ -27,7 +25,7 @@ ms.locfileid: "49911416"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_offsetInUdt(   
+HRESULT get_offsetInUdt(   
    DWORD* pRetVal)  
 );  
 ```  
@@ -46,7 +44,7 @@ HRESULT get_offsetInUdt(
  仅在优化版本中的本地记录中使用此函数。  
   
 ## <a name="requirements"></a>要求  
- 标头： Dia2.h  
+ 标头：dia2.h  
   
  库： diaguids.lib  
   

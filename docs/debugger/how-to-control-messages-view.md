@@ -1,8 +1,6 @@
 ---
-title: 如何： 控制消息视图 |Microsoft Docs
-ms.custom: ''
+title: 如何：控制消息视图 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, Messages View
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b83107d4dda72aea7db9e9c911305c96de7097
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 299bed89ecd2c73b1f8e8fe976bf570a19a6b20f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836367"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944387"
 ---
 # <a name="how-to-control-messages-view"></a>如何：控制消息视图
 使用 Spy + +，具有相当大的控制权的内容[消息视图](../debugger/messages-view.md)窗口。 你可以[启动和停止](../debugger/how-to-start-and-stop-the-message-log-display.md)消息显示在任何时间，并且您可以指定：  

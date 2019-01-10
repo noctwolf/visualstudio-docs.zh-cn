@@ -1,8 +1,6 @@
 ---
 title: 使用无 C 运行时库运行时检查 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.runtime
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4fb9f61242490b30e1b89132f4e79fbb56d48de
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 1ae0b5831ef6007832438c4d589c4385711666dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056011"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921924"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>使用无 C 运行库的运行时检查
 如果链接无 C 运行时库的应用程序，使用 **/NODEFAULTLIB**，并想要使用运行时检查，则必须链接 runtmchk.lib。  
@@ -63,7 +61,7 @@ extern "C" _RTC_error_fnW __cdecl _CRT_RTC_INITW(
 }  
 ```  
   
- 安装了默认错误报告函数后，可以使用 `_RTC_SetErrorFuncW` 安装附加错误报告函数。 有关详细信息，请参阅[_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)。  
+ 安装了默认错误报告函数后，可以使用 `_RTC_SetErrorFuncW` 安装附加错误报告函数。 有关详细信息，请参阅 [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw)。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：使用本机运行时检查](../debugger/how-to-use-native-run-time-checks.md)

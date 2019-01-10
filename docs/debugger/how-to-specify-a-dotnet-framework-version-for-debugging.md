@@ -2,7 +2,6 @@
 title: 指定用于调试的.NET Framework 版本 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 86289c9a93a0bb9e0f7756443d79f4a1a6dd38a6
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 855dedd3073614c913abcc619babdaad03d61797
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056003"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893822"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>如何：指定用于调试的.NET Framework 版本 (C#，Visual Basic 中， F#)
 
@@ -47,7 +46,7 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
   
 3. 在“注册表编辑器”中打开 HKEY_LOCAL_MACHINE 文件夹。  
   
-4. 定位到。HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
+4. 导航到 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
     如果该密钥不存在，请右键单击 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine，然后单击“新建密钥”。 命名新的密钥`{449EC4CC-30D2-4032-9256-EE18EB41B62B}`。  
   

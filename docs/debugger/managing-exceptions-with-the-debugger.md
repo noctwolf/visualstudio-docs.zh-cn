@@ -2,7 +2,6 @@
 title: 管理调试器的异常 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/09/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
@@ -34,12 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4694ec66c9769f9433c08e74e4d0a14a952c2
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
+ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561520"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54094805"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>管理 Visual Studio 中调试器的异常
 
@@ -217,7 +216,7 @@ public class GenericException<T> : Exception
 
    ![异常的额外条件](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. 对于每个条件行中，键入模块的名称并更改到的比较运算符列表**等于**或**不等于**。 你可以指定通配符 (* *\\* * *) 中指定多个模块的名称。
+3. 对于每个条件行中，键入模块的名称并更改到的比较运算符列表**等于**或**不等于**。 你可以指定通配符 (**\\\***) 中指定多个模块的名称。
 
 4. 如果你需要删除条件，请选择**X**条件行尾。
 

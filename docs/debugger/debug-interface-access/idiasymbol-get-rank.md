@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_rank |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc12e9251bd452edc3fdede1a5f7414462162301
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6689694c3256ce463eaf70aa32215b39f907efe3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847690"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919821"
 ---
 # <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
 检索 FORTRAN 多维数组的秩 （维数）。  
@@ -27,7 +25,7 @@ ms.locfileid: "49847690"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_rank (   
+HRESULT get_rank (   
    DWORD* pRetVal  
 );  
 ```  

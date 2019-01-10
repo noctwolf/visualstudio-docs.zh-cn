@@ -1,8 +1,6 @@
 ---
 title: 禁用在实时调试器 |Microsoft Docs
-ms.custom: ''
 ms.date: 05/23/18
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 147e16bab14a6a038622804cf9c57e5fdc92bf02
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
+ms.openlocfilehash: f946c44039407ac413fb0b49234a8590025e12d3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959782"
 ---
-# <a name="disable-the-just-in-time-debugger"></a>禁用在实时调试器 
+# <a name="disable-the-just-in-time-debugger"></a>禁用实时调试器 
 
 实时调试器对话框中可能会打开正在运行的应用，在发生错误时，并阻止该应用程序继续。 
 
@@ -46,4 +44,3 @@ ms.locfileid: "49382774"
 禁用在实时调试后，应用程序可能能够处理错误和正常运行。 
 
 如果应用程序仍然具有未处理的错误，可能会看到错误消息，或应用程序可能会崩溃或挂起。 修复该错误之前，应用程序不会正常运行。 你可以尝试以与应用程序的所有者联系并要求他们修复此错误。
-

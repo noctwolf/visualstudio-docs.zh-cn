@@ -1,8 +1,6 @@
 ---
 title: 使用实时调试器进行调试 |Microsoft Docs
-ms.custom: ''
 ms.date: 09/24/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bd9685a5ea9bc2e6e0dc94f7fbff395fab523e
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831545"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用实时调试器进行调试
 
@@ -107,7 +105,7 @@ ms.locfileid: "53562056"
 
 对于此示例中，你将使C#控制台应用，在 Visual Studio 中，将引发[NullReferenceException](/dotnet/api/system.nullreferenceexception)。
 
-1. 在 Visual Studio 中，创建C#控制台应用程序 (**文件** > **新建** > **项目** > **Visual C#**   > **控制台应用程序**) 名为*ThrowsNullException*。 在 Visual Studio 中创建项目的详细信息，请参阅[演练：创建简单的应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+1. 在 Visual Studio 中，创建C#控制台应用程序 (**文件** > **新建** > **项目** > **Visual C#**   > **控制台应用程序**) 名为*ThrowsNullException*。 在 Visual Studio 中创建项目的详细信息，请参阅[演练：创建简单的应用程序](/visualstudio/get-started/csharp/tutorial-wpf)
    
 1. 当在 Visual Studio 中打开项目时，打开*Program.cs*文件。 将打印到控制台的行，然后引发 NullReferenceException 的以下代码替换为 main （） 方法：
    
@@ -198,4 +196,4 @@ ms.locfileid: "53562056"
 - [调试器安全](../debugger/debugger-security.md)
 - [初探调试器](../debugger/debugger-feature-tour.md)
 - [选项，调试，在实时对话框](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [安全警告附加到不受信任的用户所拥有的进程可能很危险。如果以下信息看上去可疑或者你无法确定，请勿附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [安全警告：附加到不受信任的用户所拥有的进程可能很危险。如果以下信息看上去可疑或者你无法确定，请勿附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

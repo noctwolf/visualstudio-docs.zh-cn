@@ -2,7 +2,6 @@
 title: 调试 Web 窗体 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d28ebc797715614aefaf7206f170157d4f4485f2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 66456257e72609183feb5f331c6d5d384c040a61
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055149"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822173"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>演练：调试 Web 窗体
 本演练中的步骤向你演示如何调试 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序（也称为 Web 窗体）。 此外，还会演示如何启动和停止执行、设置断点以及在“监视”窗口中检查变量。

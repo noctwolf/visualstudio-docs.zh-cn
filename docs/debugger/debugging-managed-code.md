@@ -1,8 +1,6 @@
 ---
 title: 调试托管的代码 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92d8da8c03cb2b76e0b47043085af66731958b4b
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561887"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867035"
 ---
 # <a name="debugging-managed-code"></a>调试托管代码
 
@@ -77,7 +75,7 @@ ms.locfileid: "53561887"
 [调试和分析](/dotnet/framework/debug-trace-profile/index)  
 探讨如何调试 .NET Framework 应用程序和配置需求。
 
-[调试脚本和 Web 应用程序](../debugger/debugging-web-applications-and-script.md)  
+[调试脚本和 Web 应用程序](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
 描述在调试脚本和 Web 应用程序时可能会遇到的常见调试问题和技术。
 
 [Visual Studio 2015 中调试器的新增功能](../debugger/what-s-new-for-the-debugger-in-visual-studio.md)  

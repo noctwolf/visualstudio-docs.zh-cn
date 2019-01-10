@@ -1,8 +1,6 @@
 ---
 title: 调试本机代码 |Microsoft Docs
-ms.custom: ''
 ms.date: 04/11/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d8339d494845b5babe18835647868cad4c3323a
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: 86e94b083300558df271091f5a28990b8e3d3d74
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561965"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870763"
 ---
 # <a name="debugging-native-code"></a>调试本机代码
 本节讲述本机应用程序的一些常见调试问题和调试技术。 本节阐述的技术属于高级别技术。 使用 Visual Studio 调试器的机制，请参阅[先来看一下调试器](../debugger/debugger-feature-tour.md))。  

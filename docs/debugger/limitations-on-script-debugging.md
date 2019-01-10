@@ -1,8 +1,6 @@
 ---
 title: 脚本调试的限制 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c85f990d08a41bd4b4ee25190d0c5b6bd99d340
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 565f483c12e3d91bd68919537feb06af5029abc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825953"
 ---
 # <a name="limitations-on-script-debugging"></a>脚本调试的限制
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支持对客户端脚本进行调试，但受本主题中的限制约束。  
@@ -34,7 +32,7 @@ ms.locfileid: "37058017"
   
 -   必须在 `<script>` 块的内部设置断点。 如果断点位于内联脚本或 `<% %>` 块中，则无法进行映射。  
   
--   页的浏览器 URL 必须包含页名称。 例如 http://microsoft.com/default.apsx 。 断点映射不能识别从地址的重定向如 http://microsoft.com 为默认页。  
+-   页的浏览器 URL 必须包含页名称。 例如 http://microsoft.com/default.apsx。 断点映射不能识别从地址的重定向如 http://microsoft.com为默认页。  
   
 -   断点必须设置在由浏览器 URL 指定的页内，而不能设置在该页包括的 ASPX 控件 (ascx) 文件、母版页或其他文件中。 无法映射包含的页中设置的断点。  
   
@@ -43,7 +41,7 @@ ms.locfileid: "37058017"
 -   对于 `<script id="">` 块中设置的断点，断点映射将忽略 `id` 特性。  
   
 ## <a name="breakpoint-mapping-and-duplicate-lines"></a>断点映射和重复行  
- 为了查找服务器端脚本和客户端脚本中的对应位置，断点映射算法将逐行检查代码。 该算法假定每一行都是唯一的。 如果有两行或更多行包含相同的代码，而断点设置在其中一个重复行上，则断点映射算法可能会在客户端文件中选择错误的重复行。 若要避免这种情况，请向设置了断点的行中添加一条注释。 例如：  
+ 为了查找服务器端脚本和客户端脚本中的对应位置，断点映射算法将逐行检查代码。 该算法假定每一行都是唯一的。 如果有两行或更多行包含相同的代码，而断点设置在其中一个重复行上，则断点映射算法可能会在客户端文件中选择错误的重复行。 若要避免这种情况，请向设置了断点的行中添加一条注释。 例如:  
   
 ```csharp
 i++ ;  

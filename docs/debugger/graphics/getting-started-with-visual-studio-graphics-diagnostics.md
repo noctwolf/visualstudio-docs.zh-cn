@@ -2,19 +2,18 @@
 title: 图形诊断入门 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/26/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422a0fa4ea44cb3a605b8905282a5fe2a7e71e4c
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d92969a52ac7ce97b31ab2e00e16d1d9913cd401
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53055460"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919250"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断入门
 在此部分中，你会准备首次使用图形诊断，然后从 Direct3D 应用捕获帧并在图形分析器中检查它们。  

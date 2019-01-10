@@ -1,8 +1,6 @@
 ---
 title: 在模拟器中运行 UWP 应用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e9e023bd560a67323a4a2fcf5e42acec6919d6c
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: 76803a268d06de276b8158a583f307d3f7e2f242
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53685713"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886470"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模拟器中运行 UWP 应用
 适用于 UWP 应用的 Visual Studio 模拟器是模拟的 UWP 应用的桌面应用程序。 通常情况下，想要在本地计算机、 连接的设备或远程计算机上进行调试。 但是，在某些情况下，你可能想要使用的 Visual Studio 模拟器来模拟不同的物理屏幕大小和分辨率。 此外可以模拟常用的触摸和旋转事件，并模拟网络连接属性。
@@ -151,4 +149,4 @@ ms.locfileid: "53685713"
  可以通过按来关闭模拟器**CTRL + ALT + F4**。
 
 ## <a name="see-also"></a>请参阅
- [从 Visual Studio 运行应用](../debugger/run-store-apps-from-visual-studio.md)
+ [从 Visual Studio 运行应用](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

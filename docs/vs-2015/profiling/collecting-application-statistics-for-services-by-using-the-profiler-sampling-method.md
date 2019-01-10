@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54aad4b8fb2282c1f2d5514f50b67c82ee1c4f53
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 37e08c4b9af5c4d870be1ddf7bac0cba677f5cf3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726811"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947724"
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>使用探查器采样方法收集服务的应用程序统计信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "51726811"
 |任务|相关内容|  
 |----------|---------------------|  
 |**分析独立（客户端）应用程序**|-   [使用采样法收集应用程序统计信息](../profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
-|**分析 ASP.NET Web 应用程序**|-   [使用采样法收集应用程序统计信息](../profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line.md)|  
+|**分析 ASP.NET Web 应用程序**|-   [使用采样法收集应用程序统计信息](/visualstudio/profiling/collecting-concurrency-data-for-an-aspnet-web-application?view=vs-2015)|  
   
 ### <a name="analyzing-sampling-data-views-and-reports"></a>分析采样数据视图和报告  
  [采样方法数据视图](../profiling/profiler-sampling-method-data-views.md)

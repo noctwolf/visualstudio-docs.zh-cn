@@ -1,8 +1,6 @@
 ---
-title: 使用 Spy + + |Microsoft 文档
-ms.custom: ''
+title: 使用 Spy + + |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Using Spy++
@@ -12,41 +10,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdb5356ecfe31bce8c8f429add2e78e495f40cd5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a316f2fa786697511a98ae06e5fc52e86412d6b3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943270"
 ---
 # <a name="using-spy"></a>使用 Spy++
-Spy + + （spyxx 执行操作。EXE) 是基于 Win32 的实用程序，使您的系统的进程、 线程、 窗口和窗口消息的图形视图。 Spy + + 帮助的此部分包括以下的帮助主题：  
+Spy + + （spyxx 执行操作。EXE) 是一个基于 Win32 的实用工具，可提供系统的进程、 线程、 窗口和窗口消息的图形视图。 Spy + + 帮助的此部分包括以下帮助主题：  
   
 ## <a name="in-this-section"></a>本节内容  
  [Spy++ 简介](../debugger/introducing-spy-increment.md)  
- 说明的信息可以显示使用 Spy + + 工具的类型。  
+ 介绍可以使用 Spy + + 工具显示的信息类型。  
   
  [如何：启动 Spy++](../debugger/how-to-start-spy-increment.md)  
- 说明如何从工具菜单启动 Spy + +。  
+ 介绍如何从工具菜单启动 Spy + +。  
   
  [Spy++ 工具栏](../debugger/spy-increment-toolbar.md)  
- 描述了 Spy + + 工具栏上的可用命令。  
+ 介绍在 Spy + + 工具栏上可用的命令。  
   
  [如何：显示 Spy++ 视图](../debugger/how-to-display-spy-increment-views.md)  
- 如何显示窗口视图、 消息视图、 进程视图和线程视图。  
+ 如何显示 Windows 视图、 消息视图、 进程视图和线程视图。  
   
  [如何：刷新视图](../debugger/how-to-refresh-the-view.md)  
- 介绍的刷新命令。  
+ 介绍了刷新命令。  
   
  [如何：更改字体](../debugger/how-to-change-fonts.md)  
- 说明如何更改视图的显示方式。  
+ 说明如何更改视图的显示的方式。  
   
  [如何：展开和折叠 Spy++ 树](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
- 说明如何操作视图。  
+ 介绍如何操作视图。  
   
 ## <a name="related-sections"></a>相关章节  
  [Spy++ 视图](../debugger/spy-increment-views.md)  
- 说明 windows、 消息、 进程和线程 Spy + + 树视图。  
+ 介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [Spy++ 参考](../debugger/spy-increment-reference.md)  
- 包含描述每个 Spy + + 菜单和对话框框中的部分。
+ 包含描述每个 Spy + + 菜单和对话框中的各个部分。

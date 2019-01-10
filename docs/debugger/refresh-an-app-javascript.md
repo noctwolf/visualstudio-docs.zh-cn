@@ -1,8 +1,6 @@
 ---
-title: 刷新的 UWP 应用 |Microsoft 文档
-ms.custom: ''
+title: 刷新的 UWP 应用 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,16 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a45564f34fe0167821febb511a023c01f7c38358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 43f232157ef9237ba9d401f473ab0db1b1260f40
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476275"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828717"
 ---
-# <a name="refresh-a-uwp-app-in-visual-studio"></a>刷新 Visual Studio 中的 UWP 应用
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>刷新在 Visual Studio 中的 UWP 应用
   
- 你进行调试，然后刷新通过选择使用 JavaScript UWP 应用时，可以对你的代码进行更改**刷新 Windows 应用程序**按钮上**调试**工具栏。 选择此按钮将重新加载应用程序，但不会停止并重新启动调试器。 通过“刷新”功能，可修改 HTML、CSS 和 JavaScript 代码并迅速看到结果。 适用于 UWP 应用支持此功能。  
+ 你进行调试，然后刷新通过选择使用 JavaScript 的 UWP 应用时，可以对代码进行更改**刷新 Windows 应用**按钮**调试**工具栏。 选择此按钮将重新加载应用程序，但不会停止并重新启动调试器。 通过“刷新”功能，可修改 HTML、CSS 和 JavaScript 代码并迅速看到结果。 适用于 UWP 应用支持此功能。  
   
  刷新功能不保持应用程序状态，也不反映对应用程序的以下更改：  
   
@@ -48,7 +46,7 @@ ms.locfileid: "31476275"
   
 ### <a name="to-refresh-an-app"></a>刷新应用程序  
   
-1.  使用 Visual Studio 中打开你 UWP 项目中，选择**本地计算机**作为调试目标。
+1.  在 Visual Studio 中打开 UWP 项目，选择**本地计算机**作为调试目标。
   
      ![选择调试目标列表](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -56,11 +54,11 @@ ms.locfileid: "31476275"
   
 4.  切换到 Visual Studio。 
   
-5.  在 UWP 应用的主页页中，编辑一些 HTML。
+5.  在 UWP 应用的主页中，编辑一些 HTML。
   
-7.  单击**刷新 Windows 应用程序**按钮，如下所示像这样：![刷新 Windows 应用程序按钮](../debugger/media/js_refresh.png "JS_Refresh")。 （或按 F4。）  
+7.  单击“刷新 Windows 应用程序”**按钮，该按钮类似于此：**。![刷新 Windows 应用按钮](../debugger/media/js_refresh.png "JS_Refresh")。 （或按 F4。）  
   
-8.  切换到该应用程序。 重新加载应用程序和更新的 HTML 用于呈现应用程序。
+8.  切换到该应用程序。 重新加载应用程序和更新后的 HTML 用于呈现应用程序。
   
 ## <a name="see-also"></a>请参阅  
  [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

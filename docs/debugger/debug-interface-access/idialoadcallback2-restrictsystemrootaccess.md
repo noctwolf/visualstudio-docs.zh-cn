@@ -1,8 +1,6 @@
 ---
-title: 'Idialoadcallback2:: Restrictsystemrootaccess |Microsoft 文档'
-ms.custom: ''
+title: IDiaLoadCallback2::RestrictSystemRootAccess |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 000d0b5ce21b6b50b1abab76aa8bf4a7bb1cd62a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 340e6a8cffbf681bb9e976664ccbbe15e6b00786
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460477"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53918705"
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
-确定是否在系统根目录中允许搜索.pdb 文件。  
+确定是否在系统根目录下允许搜索.pdb 文件。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,7 +32,7 @@ HRESULT RestrictSystemRootAccess();
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 之外的任何返回代码`S_OK`阻止搜索.pdb 文件的系统根目录。  
+ 以外的任何返回代码`S_OK`阻止搜索.pdb 文件系统根目录。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

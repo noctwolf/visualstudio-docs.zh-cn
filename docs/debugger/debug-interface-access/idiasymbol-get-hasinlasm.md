@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_hasinlasm |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c582e57a7cc2302d1afb9b9cfe4ac479bcdd0bdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e924b7a2c1d2fe3d0d28585924f68648a4a07ce4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847729"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859771"
 ---
 # <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
 检索一个标志，指定该函数是否包含内联程序集。  
@@ -44,7 +42,7 @@ HRESULT get_hasInlAsm(
   
 ## <a name="requirements"></a>要求  
   
-|需求|描述|  
+|需求|说明|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

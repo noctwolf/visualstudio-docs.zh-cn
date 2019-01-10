@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1ad74243c70b4ca7aaa8460759abbc898d30bb9
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 733d1d3f1c105116a97d198a9bb4fa1bf1c1c2f1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757144"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885205"
 ---
 # <a name="edit-data-in-datasets"></a>编辑数据集中的数据
 编辑任何数据库中的表中的数据一样编辑数据的表中的数据。 过程可以包括插入、 更新和删除表中的记录。 在数据绑定窗体中，可以指定哪些字段是用户可编辑。 在这些情况下，数据绑定基础结构可处理所有更改跟踪，以便所做的更改可以发送回数据库更高版本。 如果以编程方式对数据进行编辑，并且你想要将这些更改发送回数据库，必须使用的对象和为您做的更改跟踪的方法。

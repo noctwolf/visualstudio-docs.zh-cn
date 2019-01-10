@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_liveRangeStartRelativeVirtualAddress |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 872547326edb54fc5b843bdd74a8035e1119dca0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2ccc2fb2bb6c998ed73bf2d834c28cb34babbafa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948065"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837857"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 返回本地符号无效的地址范围的开头。  
@@ -27,7 +25,7 @@ ms.locfileid: "49948065"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_liveRangeStartRelativeVirtualAddress (   
+HRESULT get_liveRangeStartRelativeVirtualAddress (   
    DWORD* address  
 );  
 ```  
@@ -45,7 +43,7 @@ HRESULT get_liveRangeStartRelativeVirtualAddress (
 ## <a name="remarks"></a>备注  
   
 ## <a name="requirements"></a>要求  
- 标头： Dia2.h  
+ 标头：dia2.h  
   
  库： diaguids.lib  
   

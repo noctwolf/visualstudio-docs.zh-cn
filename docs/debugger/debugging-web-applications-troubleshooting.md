@@ -2,7 +2,6 @@
 title: 调试 web 应用程序的故障排除 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5f931a9942a89ae56836b5fbe91473b9dc9f568
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 664ec654d52b8b5c17ff89429ba1f78033cfffc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063990"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923580"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>调试 Web 应用程序：疑难解答
 本节包含可用于解决错误的公共过程。  
@@ -37,5 +36,5 @@ ms.locfileid: "53063990"
  [调试 Web 应用程序：错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  解释疑难解答和错误解分析。  
   
- [调试 Web 应用程序和脚本](../debugger/debugging-web-applications-and-script.md)  
+ [调试 Web 应用程序和脚本](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
  概述如何调试 Web 应用程序，例如，[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]、XML Web services 和 ATL Server 项目。

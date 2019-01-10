@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_arrayindextypeid |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc761032c3a64200057f5e793aca80b1684c0d20
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 013f3283b4a362e05a9fd7d9bf80c70963991b50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990524"
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
 检索的符号的数组索引类型标识符。  
@@ -27,7 +25,7 @@ ms.locfileid: "49818648"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_arrayIndexTypeId (   
+HRESULT get_arrayIndexTypeId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -47,7 +45,7 @@ HRESULT get_arrayIndexTypeId (
   
 ## <a name="requirements"></a>要求  
   
-|需求|描述|  
+|需求|说明|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v7.0|  

@@ -1,8 +1,6 @@
 ---
 title: C/c + + 断言 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -30,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c91ff9d752e2043829b3ea310606a9d8b82b1e1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6428f79085ca2a79fdc02a6d4d4ceb191d02f5bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845987"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894384"
 ---
 # <a name="cc-assertions"></a>C/C++ 断言
 断言语句指定您希望在您的程序中的点，则返回 true 的条件。 如果该条件不为 true，则断言失败，程序的执行被中断，并[断言失败对话框](../debugger/assertion-failed-dialog-box.md)出现。  

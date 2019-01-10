@@ -2,7 +2,6 @@
 title: 编写可视化工具C#|Microsoft Docs
 ms.custom: seodec18
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 872f1a899bf9731dd86d5d9c14e5639c2a4630aa
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 79127504259fde6e3b8d0a917b7a83554eaf23cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925217"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>演练：用 C# 编写可视化工具 #
 本演练演示如何使用 C# 编写简单的可视化工具。 本演练中创建的可视化工具使用 Windows 窗体消息框显示字符串的内容。 此简单字符串可视化工具不是特别有用，但它显示创建更有用的其他数据类型的可视化工具时必须遵循的基本步骤。

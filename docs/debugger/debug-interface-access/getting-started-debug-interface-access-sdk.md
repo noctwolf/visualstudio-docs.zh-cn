@@ -1,8 +1,6 @@
 ---
 title: 入门 （调试接口访问 SDK） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5cfcad351f19f48678d575e11b074375c6aaadc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ee77d4b7f8f1073ce638c8933f468b369d772a71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887288"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961720"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>入门（调试接口访问 SDK）
 调试接口访问 (DIA) SDK 将向您提供指导文档和示例，说明了如何使用 DIA API。 在 DIA SDK 中使用接口和方法，可以开发自定义应用程序打开的文件.pdb 和.dbg 文件并搜索其内容的符号、 值、 属性、 地址和其他调试信息。 此 SDK 还提供了与 c + + 应用程序中的符号关联的属性引用表。  

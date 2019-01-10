@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_acceleratorPointerTags |Microsoft 文档
-ms.custom: ''
+title: IDiaSymbol::get_acceleratorPointerTags |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24db7164335a8deffbac7cb4f62207a974f6efb9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5e65def0ac8e94b2f113332981f57c051896f6bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460666"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875454"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
 对 c + + AMP 快捷键存根 （stub） 函数返回对应的所有快捷键指针标记值。  
@@ -36,10 +34,10 @@ HRESULT get_acceleratorPointerTags(
  [in]输出数组的大小`pPointerTags`。  
   
  `pcnt`  
- [out]C + + AMP 快捷键存根 （stub） 函数中的加速器指针标记计数。  
+ [out]在 c + + AMP 快捷键存根 （stub） 函数中使用加速器指针标记的计数。  
   
  `pPointerTags`  
- [out]A`DWORD`用 c + + AMP 快捷键存根 （stub） 函数中的加速器指针标记值填充的数组指针。  
+ [out]一个`DWORD`填入中 c + + AMP 快捷键存根 （stub） 函数的加速器指针标记值的数组指针。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  

@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_localbasepointerregisterid |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7775de97e8bdd37223b772999f30f5808bf1b2b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 040905a1e61f84e36bc2f01191a69ca1eceda0f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819975"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896755"
 ---
 # <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
 检索到堆栈上的本地变量包含基指针寄存器的 ID。 何时使用[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)设置为`SymTagFunction`。  
@@ -27,7 +25,7 @@ ms.locfileid: "49819975"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_localBasePointerRegisterId (   
+HRESULT get_localBasePointerRegisterId (   
    DWORD* pRetVal  
 );  
 ```  
@@ -45,7 +43,7 @@ HRESULT get_localBasePointerRegisterId (
 ## <a name="remarks"></a>备注  
   
 ## <a name="requirements"></a>要求  
- 标头： Dia2.h  
+ 标头：dia2.h  
   
  库： diaguids.lib  
   

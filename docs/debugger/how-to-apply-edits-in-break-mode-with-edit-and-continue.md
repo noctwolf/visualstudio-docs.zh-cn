@@ -2,7 +2,6 @@
 title: 在中断模式下使用编辑并继续应用编辑 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
@@ -24,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fdf27353462645916f14fe10c2fdc521504024b
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: a8b63a93984fc65790bd8fcdadf8294cadf8e04e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684257"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821696"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何：应用编辑在中断模式下使用编辑并继续 (Visual Basic)
 可以在中断模式下使用“编辑并继续”编辑代码，然后不必停止和重新启动执行即可继续。  
@@ -42,11 +41,11 @@ ms.locfileid: "53684257"
   
     -   在代码中设置断点，从“调试”菜单选择“开始调试”，然后等待应用程序命中断点。  
   
-         - 或 -  
+         或  
   
     -   开始调试，然后从“调试”菜单中选择“全部中断”。  
   
-         - 或 -  
+         或  
   
     -   异常发生时，选择**启用编辑**上**异常助手**。  
   

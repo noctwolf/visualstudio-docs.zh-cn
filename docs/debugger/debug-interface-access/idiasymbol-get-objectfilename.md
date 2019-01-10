@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_objectFileName |Microsoft 文档
-ms.custom: ''
+title: IDiaSymbol::get_objectFileName |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 683e789e1edbe9f256847ad1e7d5fb7d13616608
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 928bd2b10c95a840323ba87fd9c5347520cf03c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463785"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927254"
 ---
 # <a name="idiasymbolgetobjectfilename"></a>IDiaSymbol::get_objectFileName
-检索对象的文件名。  
+检索对象文件名的名称。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,7 +29,7 @@ HRESULT get_objectFilename(
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]指向的指针`BSTR`保存的对象文件名称。  
+ [out]一个指向`BSTR`保存对象文件名称。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  

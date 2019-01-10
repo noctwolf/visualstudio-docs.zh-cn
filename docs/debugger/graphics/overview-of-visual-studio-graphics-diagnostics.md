@@ -2,19 +2,18 @@
 title: 图形诊断概述 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a88bcdad960e79c64a463fecf88bbf893b0181b0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 25b15e45d464c78aa24fa6fed7292b3eb7140835
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059108"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831373"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断概述
 Visual Studio“图形诊断”是一套工具，用于记录、然后分析 Direct3D 应用中的呈现问题和性能问题。 可以在 Windows PC 上或在远程 PC 或设备上本地运行的应用程序上使用图形诊断。  
@@ -53,7 +52,7 @@ Visual Studio“图形诊断”是一套工具，用于记录、然后分析 Dir
 ### <a name="gpu-usage"></a>GPU 使用情况  
  图形诊断还可以分析你的 Direct3D 应用的性能。 由于录制图形事件的详细信息会扭曲分析数据，所以这是独立于帧捕获的，将通过图形分析器进行检查来使用。  
   
- 有关详细信息，请参阅 [GPU 使用情况](gpu-usage.md)。  
+ 有关详细信息，请参阅 [GPU 使用情况](/visualstudio/profiling/gpu-usage)。  
   
 ### <a name="directx-control-panel"></a>DirectX 控制面板  
  DirectX 控制面板是 DirectX 的一个组件，你可以使用此控制面板更改 DirectX 的行为方式，例如，可以启用 DirectX 运行时组件的调试版本、选择报告的调试消息类型，以及不允许使用某些图形硬件功能以模拟功能较少的硬件。 对 DirectX 的这一控制级别可帮助你调试和测试 DirectX 应用程序。 可以从 Visual Studio 访问 DirectX 控制面板。  

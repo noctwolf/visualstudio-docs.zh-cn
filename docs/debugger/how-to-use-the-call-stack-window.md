@@ -2,7 +2,6 @@
 title: 在调试器中查看调用堆栈 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/29/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.callstack
@@ -30,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3b266ee44b326749ed555df77dee66b8e82aae
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe9ba9f39a88a968524517a6c23f16ffa1aff0d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987474"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>查看调用堆栈，并使用调试器中的调用堆栈窗口
 

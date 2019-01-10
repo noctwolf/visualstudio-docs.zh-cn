@@ -16,15 +16,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ae05111b1a075515d8011daaf8626e5da7f506e1
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b4cd6004519573064683d87a35d1b3c49711edb6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867928"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>向“数据源”窗口添加自定义控件
 
@@ -80,7 +79,7 @@ ms.locfileid: "52389077"
 
      控件必须具有以下属性之一。
 
-    |特性|描述|
+    |特性|说明|
     |---------------|-----------------|
     |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|此属性显示的数据，单个列 （或属性） 的简单控件上实现如<xref:System.Windows.Forms.TextBox>。|
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|此属性显示数据列表 （或表） 的控件上实现如<xref:System.Windows.Forms.DataGridView>。|

@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::get_isVirtualInheritance |Microsoft 文档
-ms.custom: ''
+title: IDiaSymbol::get_isVirtualInheritance |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c10757f1077e67422799f8f3a477dc3c1675c868
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b8cdb798f565ef18107f1000b23473c120b9e9a7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956597"
 ---
 # <a name="idiasymbolgetisvirtualinheritance"></a>IDiaSymbol::get_isVirtualInheritance
 指定是否`this`指针指向一个具有虚拟继承数据成员。  
@@ -31,7 +29,7 @@ HRESULT get_isVirtualInheritance(
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]指向的指针`BOOL`，它指定是否`this`指针指向一个具有虚拟继承数据成员。  
+ [out]一个指向`BOOL`，它指定是否`this`指针指向一个具有虚拟继承数据成员。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  

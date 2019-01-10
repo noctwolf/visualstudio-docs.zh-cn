@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_isdataaligned |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4c2d43129eadb0b0779086fc5dba0860c735cac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c22796ab2d54d2b0d21920372aceccc9bdce2e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837797"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933724"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 检索一个标志，指定是否已为某些特定的内存边界对齐用户定义类型 (UDT)。  
@@ -47,7 +45,7 @@ HRESULT get_isDataAligned(
   
 ## <a name="requirements"></a>要求  
   
-|需求|描述|  
+|需求|说明|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

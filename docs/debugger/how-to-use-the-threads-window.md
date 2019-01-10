@@ -1,9 +1,7 @@
 ---
 title: 调试多线程应用程序
 description: 调试在 Visual Studio 中使用线程窗口和调试位置工具栏
-ms.custom: ''
 ms.date: 11/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd66d7f9d8f214e8e7166a77162553b694e20cc5
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389398"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893702"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>演练： 调试多线程的应用使用线程窗口
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>演练：调试多线程的应用使用线程窗口
 
 多个 Visual Studio 用户界面元素帮助您调试多线程应用程序。 本文介绍了在代码编辑器窗口中，多线程调试功能**调试位置**工具栏上，并**线程**窗口。 有关其他工具来调试多线程应用程序的信息，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。 
   
@@ -99,7 +97,7 @@ ms.locfileid: "52389398"
 
 1. 打开**调试位置**通过选择工具栏**视图** > **工具栏** > **调试位置**。 此外可以右键单击工具栏区域中，然后选择**调试位置**。 
    
-1. **调试位置**工具栏具有三个字段：**进程**，**线程**，以及**堆栈帧**。 下拉列表**线程**列表，并记下有多少线程。 在中**线程**列表中，当前正在执行的线程标记供**>** 符号。 
+1. **调试位置**工具栏具有三个字段：**进程**，**线程**，和**堆栈帧**。 下拉列表**线程**列表，并记下有多少线程。 在中**线程**列表中，当前正在执行的线程标记供**>** 符号。 
    
 1. 在源代码窗口中，将鼠标悬停在滚动条槽中的线程标记图标，并在数据提示中选择标记图标 （或一个空的标志图标）。 标志图标将变为红色。 
    

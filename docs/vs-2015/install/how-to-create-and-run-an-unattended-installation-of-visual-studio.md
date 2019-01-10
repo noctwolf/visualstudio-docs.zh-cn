@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-install
+ms.technology: vs-ide-install
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +16,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bc1a6ba1a36dd7514257fcbb8ba4c26ca1ee6116
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 0045ff701947f834bd38dfff7c90b7388e9353b7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065514"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951925"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>如何：创建和运行 Visual Studio 的无人参与的安装
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,7 +177,7 @@ ms.locfileid: "53065514"
 
 2.  输入产品密钥。
 
-     (有关详细信息，请参阅[如何：查找 Visual Studio 产品密钥](../install/how-to-locate-the-visual-studio-product-key.md)和[如何：部署 Visual Studio 时自动应用产品密钥](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)主题。)
+     有关详细信息，请参阅[如何：查找 Visual Studio 产品密钥](../install/how-to-locate-the-visual-studio-product-key.md)和[如何：部署 Visual Studio 时自动应用产品密钥](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)主题。)
 
 ## <a name="see-also"></a>请参阅
  [安装 Visual Studio](../install/install-visual-studio-2015.md)

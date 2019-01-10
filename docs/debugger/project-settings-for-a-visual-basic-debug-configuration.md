@@ -2,7 +2,6 @@
 title: 调试配置的 VB 项目设置 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vbProjectPropertiesDebug
@@ -24,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d70ec195418b46a022ca73d6ac3656de8e652f06
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 200d09c77c7ff4c22ed51b4cc93ec724d30dd17b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059686"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878492"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Project Settings for a Visual Basic Debug Configuration
 可以在“属性页”窗口中更改 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 调试配置的项目设置，这在[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)中进行了探讨。 下表显示“属性页”窗口中与调试器有关的设置的位置。  

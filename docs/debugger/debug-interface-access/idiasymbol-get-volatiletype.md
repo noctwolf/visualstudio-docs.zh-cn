@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_volatiletype |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02baf9777a1b7cc208903fe5e63a378013b581e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d491a43e65ed7e6c06a5c94e94b62230db1634dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851018"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864315"
 ---
 # <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
 检索指定用户定义数据类型 (UDT) 是易失性的标志。  
@@ -27,7 +25,7 @@ ms.locfileid: "49851018"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_volatileType (   
+HRESULT get_volatileType (   
    BOOL* pRetVal  
 );  
 ```  
