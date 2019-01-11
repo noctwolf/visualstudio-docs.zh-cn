@@ -204,7 +204,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 * 在 Visual Studio 2015 中打开你的项目。
 * 生成项目并确认输出是否正确生成 VSIX 中。
 * 导航到你的项目目录。
-* 打开*\bin\Debug*文件夹。
+* 打开 *\bin\Debug* 文件夹。
 * 双击 VSIX 文件，并在 Visual Studio 2015 和 Visual Studio 2017 上安装您的扩展插件。
 * 请确保你可以查看扩展的**工具** > **扩展和更新**中**已安装**部分。
 * 尝试运行/使用要检查其运行的扩展。
