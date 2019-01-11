@@ -20,11 +20,11 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 01/02/2019
 ms.locfileid: "53863990"
 ---
-# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>调试实时 ASP.NET Azure 应用程序使用快照调试程序
+# <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 调试实时 ASP.NET Azure 应用
 
-你感兴趣的代码执行时，快照调试程序将生产中应用的快照。 要指示调试程序拍摄快照，可在代码中设置 snappoints 和 logpoints。 使用调试程序，可精确查看出错的内容，而不影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
+Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍摄快照。 若要指示该调试器拍摄快照，可以在代码中设置快照点和记录点。 通过该调试器，可精确查看出错的内容，而不会影响生产应用程序的流量。 Snapshot Debugger 有助于大幅减少解决生产环境中出现的问题所需的时间。
 
-Snappoint 和 logpoint 类似于断点，但与断点不同，snappoint 不暂停应用程序时命中。 通常情况下，捕获快照在吸附点需 10-20 毫秒。
+快照点和记录点类似于断点，但与断点不同的是，快照点不会在命中时停止应用程序。 通常，在快照点捕获快照需要 10-20 毫秒。
 
 在本教程中，你将：
 
