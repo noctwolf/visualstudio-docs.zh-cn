@@ -1,8 +1,6 @@
 ---
 title: CrossSession | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 112983b543a602bca7105ad1b5b69c5995eadeb0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 192ddfb7312dff13b457f36940220f0bb17fe2c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774609"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53909250"
 ---
 # <a name="crosssession"></a>CrossSession
 通过 VSPerfCmd.exe“CrossSession”选项，探查器可从任何控制台会话收集数据。 “CrossSession”选项必须与“Start”选项一起使用。  
@@ -37,7 +35,7 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
  **Start:** `Method`  
  “Start”选项可将探查器初始化为指定的分析方法。  
   
- **Attach:** _PID_[**,**_PID_]  
+ **Attach：** PID[,PID]  
  开始分析指定进程。  
   
  **Detach**[**:**_PID_[,_PID_]]  

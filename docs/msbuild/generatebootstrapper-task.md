@@ -1,8 +1,6 @@
 ---
 title: GenerateBootstrapper 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateBootstrapper
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53ad85f77d014d534d625b8d08e36b7eb8c01f7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65e8980df4d98e4d7c76df43f32d7ca0a224e699
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891837"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 任务
 提供自动化方式来检测、下载和安装应用程序及其必备组件。 它可以作为集成不同的安装程序的单个安装程序为组成应用程序的所有组件提供服务。  
@@ -94,11 +92,11 @@ ms.locfileid: "49895715"
   
    指定一个位置，以供引导程序查找要安装的安装必备组件。 此参数可以具有下列值：  
   
-  - `HomeSite`：指示必备组件正由组件供应商联系托管。  
+  - `HomeSite`：指示必备组件正由组件供应商托管。  
   
   - `Relative`：指示必备组件位于应用程序的同一位置。  
   
-  - `Absolute`：指示所有组件在集中式 URL 处找到。 此值应与 `ComponentsUrl` 输入参数结合使用。  
+  - `Absolute`：指示所有组件都可在集中式 URL 处找到。 此值应与 `ComponentsUrl` 输入参数结合使用。  
   
     如果未指定 `ComponentsLocation`，则默认情况下使用 `HomeSite`。  
   

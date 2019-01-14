@@ -1,9 +1,7 @@
 ---
-title: 步骤 8：添加方法以验证玩家是否获胜
-ms.custom: ''
+title: 步骤 8：添加验证玩家是否获胜的方法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b4e8085c3ff3de8037827769331eac83325ff8
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3d06338a92722b6e969d45960eb449b0a6dcf2a3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748005"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53930916"
 ---
-# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>步骤 8：添加方法以验证玩家是否获胜
+# <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>步骤 8：添加验证玩家是否获胜的方法
 你已创建了一个有趣的游戏，但需要添加其他项来完成制作。 该游戏应当在玩家获胜时结束，因此您需要添加 `CheckForWinner()` 方法以验证玩家是否获胜。
 
 ## <a name="to-add-a-method-to-verify-whether-the-player-won"></a>添加方法以验证玩家是否获胜
@@ -44,4 +42,4 @@ ms.locfileid: "34748005"
 
 -   要转到下一个教程步骤，请参阅[步骤 9：尝试其他功能](../ide/step-9-try-other-features.md)。
 
--   要返回到上一个教程步骤，请参阅[步骤 7：保持对可见](../ide/step-7-keep-pairs-visible.md)。
+-   要返回上一个教程步骤，请参阅[步骤 7：保持对可见](../ide/step-7-keep-pairs-visible.md)。

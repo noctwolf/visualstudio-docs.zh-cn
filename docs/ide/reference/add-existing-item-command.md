@@ -2,7 +2,6 @@
 title: “添加现有项”命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - project.addexistingitem
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4647fd5ca2cc5199c1f9b85e5237dd57d95dbbd
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fd74b6af128ee8b624c022cbbf72c5de4edc7997
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704546"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873984"
 ---
 # <a name="add-existing-item-command"></a>“添加现有项”命令
 将现有文件添加到当前解决方案中并打开它。
@@ -35,7 +34,7 @@ File.AddExistingItem filename [/e:editorname]
  `filename`（必需）。 待添加到当前解决方案的项的完整路径、文件名称和扩展名。 如果文件路径或文件名称包含空格，则将整个路径放在引号内。
 
 ## <a name="switches"></a>开关
- /e: `editorname`（可选）。 将在其中打开文件的编辑器的名称。 如果指定该参数，但未提供编辑器名称，则会出现“打开方式”对话框。
+ /e:`editorname`（可选）。 将在其中打开文件的编辑器的名称。 如果指定该参数，但未提供编辑器名称，则会出现“打开方式”对话框。
 
  /e:`editorname` 参数语法使用“打开方式”对话框中显示的编辑器名称，并用引号括起来。 例如，若要在源代码编辑器中打开样式表，对于 /e:`editorname` 参数，应输入以下内容。
 
@@ -58,4 +57,4 @@ File.AddExistingItem filename [/e:editorname]
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [“命令”窗口](../../ide/reference/command-window.md)
 - [“查找/命令”框](../../ide/find-command-box.md)
-- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

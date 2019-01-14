@@ -2,7 +2,6 @@
 title: 文件属性，JavaScript
 ms.date: 06/21/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -27,17 +26,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db9809c48b9226e05b7617c860af524b1ac6daf6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8706264733faf147c2f53ffceff401ca42432d6b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910225"
 ---
 # <a name="file-properties-javascript"></a>文件属性，JavaScript
 文件属性可用于指示项目系统应对文件执行的操作。 例如，可以设置文件属性，指示是否应将文件作为资源文件添加到包。
 
- 可以在解决方案资源管理器中选择任何文件，然后在“属性”窗口中检查其属性。 JavaScript 文件具有四个属性：复制到输出目录、包操作、文件名和文件路径。
+ 可以在解决方案资源管理器中选择任何文件，然后在“属性”窗口中检查其属性。 JavaScript 文件具有四个属性：“复制到输出目录”、“包操作”、“文件名”和“文件路径”。
 
 ## <a name="file-properties"></a>文件属性
  本部分介绍 JavaScript 文件的共同属性。
@@ -91,7 +90,7 @@ ms.locfileid: "31947919"
 ### <a name="uri"></a>URI
  显示必须包含在项目的 HTML 或 JavaScript 文件中才能将文件作为源文件包含在内的 URI。
 
-### <a name="version"></a>版本
+### <a name="version"></a>Version
  显示引用的版本。
 
 ## <a name="see-also"></a>请参阅

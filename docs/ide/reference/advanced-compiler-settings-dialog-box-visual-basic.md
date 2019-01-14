@@ -2,7 +2,6 @@
 title: “高级编译器设置”对话框 (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 593bb95e45ecdbda14eba49425ce5db08369e6cf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 34880d96effb9c1c77c1d88c22f61967741b693e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783683"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878268"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>“高级编译器设置”对话框 (Visual Basic)
 
@@ -31,7 +30,7 @@ ms.locfileid: "38783683"
 
 2.  在“项目”菜单上，单击“属性”。 当“项目设计器”出现时，单击“编译”选项卡。
 
-3.  在[“编译”->“项目设计器”(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)上，依次选择“配置”和“平台”。 在简化生成配置中，不会显示“配置”和“平台”列表。 有关详细信息，请参阅[如何：设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
+3.  在[“编译”->“项目设计器”(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)上，依次选择“配置”和“平台”。 在简化生成配置中，不会显示“配置”和“平台”列表。 有关更多信息，请参见[如何：设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
 4.  单击“高级编译选项”。
 
@@ -73,7 +72,7 @@ ms.locfileid: "38783683"
 
  **自定义常量**
 
- 在此文本框中输入应用程序的任何自定义常量。 条目应用逗号分隔开，格式为：Name1="Value1",Name2="Value2",Name3="Value3"。
+ 在此文本框中输入应用程序的任何自定义常量。 条目应使用以下形式用逗号分隔：**Name1="Value1",Name2="Value2",Name3="Value3"**。
 
 ## <a name="other-settings"></a>其他设置
 

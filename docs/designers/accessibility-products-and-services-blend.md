@@ -2,7 +2,6 @@
 title: 辅助功能产品和服务 (Blend)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ba8557f6-231a-4d8b-80dd-80397e87a17f
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 849f0aea9c8c3bce391247704b4e551b5f7dafdf
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: be4a39747150d0be0e550afddf8048d4e207521d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890043"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965851"
 ---
 # <a name="accessibility-products-and-services-blend"></a>辅助功能产品和服务 (Blend)
 Microsoft 致力于让每位用户可以更便捷地使用其产品和服务。 以下各节提供有关使得残障人士更易访问 Microsoft Windows 的功能、产品和服务的信息：

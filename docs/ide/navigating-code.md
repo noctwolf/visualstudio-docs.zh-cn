@@ -2,7 +2,6 @@
 title: 代码导航命令
 ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 467dec8039a50b225bda53de9b19b8539f6604be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53877427"
 ---
 # <a name="navigate-code"></a>导航代码
 
@@ -80,17 +79,17 @@ Visual Studio 提供了许多用于在编辑器中导航代码的方法。 本�
 
 - “转到行”(Ctrl+G)：移到活动文档中的指定行号。
 
-- **转到所有（Ctrl+T 或 Ctrl+,）**：移到指定的行、类型、文件、成员或符号。
+- “转到全部”（Ctrl+T 或 Ctrl+：移到指定的行、类型、文件、成员或符号。
 
-- **转到文件（Ctrl+1、Ctrl+F）**：移到解决方案中的指定文件。
+- “转到文件”（Ctrl+1、Ctrl+F）：移到解决方案中的指定文件。
 
-- **转到最近使用的文件（Ctrl+1、Ctr+R）**：转到解决方案中最近访问过的指定文件（Visual Studio 2017 版本 15.8 中的新增内容）。
+- “转到最近使用的文件”（Ctrl+1、Ctr+R）：转到解决方案中最近访问过的指定文件（Visual Studio 2017 版本 15.8 中的新增内容）。
 
-- **转到类型（Ctrl+1、Ctrl+T）**：移到解决方案中的指定类型。
+- “转到类型”（Ctrl+1、Ctrl+T）：移到解决方案中的指定类型。
 
-- **转到成员（Ctrl+1、Ctrl+M）**：移到解决方案中的指定成员。
+- “转到成员”（Ctrl+1、Ctrl+M）：移到解决方案中的指定成员。
 
-- **转到符号（Ctrl+1、Ctrl+S）**：移到解决方案中的指定符号。
+- “转到符号”（Ctrl+1、Ctrl+S）：移到解决方案中的指定符号。
 
 在 Visual Studio 2017 版本 15.8 及更高版本中，还提供了以下“转到”导航命令：
 
@@ -111,7 +110,7 @@ Visual Studio 提供了许多用于在编辑器中导航代码的方法。 本�
 
 ## <a name="peek-definition"></a>查看定义
 
-“查看定义”会在窗口中显示所选元素的定义，用户无需离开在代码编辑器中的当前位置。 有关详细信息，请参阅[如何：使用“查看定义”查看和编辑代码](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)和[“转到定义”和“查看定义”](../ide/go-to-and-peek-definition.md)。
+“查看定义”会在窗口中显示所选元素的定义，用户无需离开在代码编辑器中的当前位置。 有关更多信息，请参见[如何：使用“查看定义”](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)和[“转到定义和查看定义”](../ide/go-to-and-peek-definition.md)查看和编辑代码。
 
 输入 | 函数
 ------------ | ---
@@ -150,7 +149,7 @@ Visual Studio 提供了许多用于在编辑器中导航代码的方法。 本�
 
 ## <a name="enhanced-scroll-bar"></a>增强型滚动条
 
-可以在代码窗口中使用增强型滚动条获取代码的鸟瞰视图。 在映射模式下，当游标在滚动条中上下移动时可评审代码的预览。 有关详细信息，请参阅[如何：通过自定义滚动条来跟踪代码](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)。
+可以在代码窗口中使用增强型滚动条获取代码的鸟瞰视图。 在映射模式下，当游标在滚动条中上下移动时可评审代码的预览。 有关更多信息，请参见[如何：通过自定义滚动条来跟踪代码](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)。
 
 ## <a name="codelens-information"></a>CodeLens 信息
 

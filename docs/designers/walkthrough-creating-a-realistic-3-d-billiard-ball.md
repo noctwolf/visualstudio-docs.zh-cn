@@ -2,7 +2,6 @@
 title: 演练：创建真实的三维台球
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f8596e8a2064f09ff817a768dd7ec994e3c920
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 75b7b405ba9e25a94c8db22c4ddf5e4a0aedad09
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847638"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53913473"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>演练：创建真实的三维台球
 
@@ -101,7 +100,7 @@ ms.locfileid: "49847638"
 
 - 或者也可通过配置着色器图的 MaterialDiffuse 属性来调整照明的呈现方式。 若要访问着色器图的属性，请选择设计表面的空白区域，然后在“属性”窗口中找到要访问的属性。
 
-有关如何在着色器中应用朗伯照明的详细信息，请参阅[如何：创建基本 Lambert 着色器](../designers/how-to-create-a-basic-lambert-shader.md)。
+有关如何在着色器中应用 Lambert 光照的详细信息，请参阅[如何：创建基本 Lambert 着色器](../designers/how-to-create-a-basic-lambert-shader.md)。
 
 使用朗伯照明后，台球应如下所示：
 
@@ -123,7 +122,7 @@ ms.locfileid: "49847638"
 
 2. 或者也可配置着色器图的反射属性（“MaterialSpecular”和“MaterialSpecularPower”），调整反射高光的呈现方式。 若要访问着色器图的属性，请选择设计表面的空白区域，然后在“属性”窗口中找到要访问的属性。
 
-   有关如何在着色器中应用反射高光的详细信息，请参阅[如何：创建基本 Phong 着色器](../designers/how-to-create-a-basic-phong-shader.md)。
+   有关如何在着色器中应用镜面高光的详细信息，请参阅[如何：创建基本 Phong 着色器](../designers/how-to-create-a-basic-phong-shader.md)。
 
    应用反射照明后，台球应如下所示：
 
@@ -212,7 +211,7 @@ ms.locfileid: "49847638"
 ## <a name="see-also"></a>请参阅
 
 - [如何：导出着色器](../designers/how-to-export-a-shader.md)
-- [如何：向 3D 模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [着色器设计器](../designers/shader-designer.md)
 - [图像编辑器](../designers/image-editor.md)
 - [着色器设计器节点](../designers/shader-designer-nodes.md)

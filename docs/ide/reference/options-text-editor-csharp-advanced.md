@@ -2,7 +2,6 @@
 title: 选项，文本编辑器，C#，高级
 ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cfbc6d57e5bfd3c6a8f317967448039a9b3f5e4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4fdb52b4fbdeac437a3833e0030acedfa382f81c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670710"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887901"
 ---
 # <a name="options-text-editor-c-advanced"></a>选项，文本编辑器，C#，高级
 
@@ -126,7 +125,7 @@ ms.locfileid: "50670710"
 
 ## <a name="see-also"></a>请参阅
 
-- [如何项文档生成项插入 XML 注释](../../ide/reference/generate-xml-documentation-comments.md)
+- [如何：为文档生成插入 XML 注释](../../ide/reference/generate-xml-documentation-comments.md)
 - [XML 文档注释（C# 编程指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [使用 XML 注释记录代码（C# 指南）](/dotnet/csharp/codedoc)
 - [设置语言特定的编辑器选项](../../ide/reference/setting-language-specific-editor-options.md)

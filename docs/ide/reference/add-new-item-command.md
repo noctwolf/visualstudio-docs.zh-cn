@@ -2,7 +2,6 @@
 title: “添加新项”命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - project.addnewitem
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8084cdebf4cba1bf3bb79ac1fbf386837b977d97
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8c094e30c9491783733e49901fb297c36c1e94f9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705042"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952467"
 ---
 # <a name="add-new-item-command"></a>“添加新项”命令
 将新的解决方案项，如.htm、.css、.txt 或框架集添加到当前解决方案中并打开它。
@@ -35,7 +34,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
  `filename`（可选）。 要添加到解决方案的项的路径和文件名。
 
 ## <a name="switches"></a>开关
- /t: `templatename`（可选）。 指定要创建的文件类型。 如果未给定模板名称，则默认创建一个文本文件。
+ /t:`templatename`（可选）。 指定要创建的文件类型。 如果未给定模板名称，则默认创建一个文本文件。
 
  /t:`templatename` 参数语法反映在“添加新解决方案项”对话框中找到的信息。 必须输入完整类别，后跟文件类型，类别名称与文件类型用反斜杠 (`\`) 隔开，并将整个字符串括在引号内。
 
@@ -45,7 +44,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 /t:"General\Style Sheet"
 ```
 
- /e: `editorname`（可选）。 将在其中打开文件的编辑器的名称。 如果指定该参数，但未提供编辑器名称，则会出现“打开方式”对话框。
+ /e:`editorname`（可选）。 将在其中打开文件的编辑器的名称。 如果指定该参数，但未提供编辑器名称，则会出现“打开方式”对话框。
 
  /e:`editorname` 参数语法使用“打开方式”对话框中显示的编辑器名称，并用引号括起来。
 
@@ -67,4 +66,4 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
 - [“命令”窗口](../../ide/reference/command-window.md)
 - [“查找/命令”框](../../ide/find-command-box.md)
-- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

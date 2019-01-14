@@ -1,8 +1,6 @@
 ---
 title: 如何：收集 CPU 计数器数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.cpucounters
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d5bb2d554ee67a4a2c83decba017e9a1f0fe1e9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ab80ba010a91df11efac21366a812015defa3b23
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813903"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53897230"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 计数器数据
 
@@ -45,7 +43,7 @@ CPU 事件计数器用于收集特定于硬件的性能数据。 本文演示如
 
 - 通过检测进行分析时，从一个或多个计数器中收集数据。
 
-- 通过采样进行分析时，指定一个计数器事件作为采样间隔。 有关详细信息，请参阅[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)。
+- 通过采样进行分析时，指定一个计数器事件作为采样间隔。 有关更多信息，请参见[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)。
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>通过检测进行分析时收集 CPU 性能计数器数据
 

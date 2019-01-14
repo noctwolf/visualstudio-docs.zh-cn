@@ -3,7 +3,6 @@ title: 数据科学和分析应用程序工作负载
 description: Visual Studio 工作负载汇集了 Python、R、F# 及其各自的运行时分发版本，包括 Anaconda。
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: ebaf77963968edd61aa0109c7b16964af7fac90c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627064"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891159"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>在 Visual Studio 中安装数据科学支持
 
@@ -62,11 +61,11 @@ SQL Server 支持使用 R 和 Python 直接在 SQL Server 内执行高级分析�
 
 - **不必移动数据**：可以在数据库中生成 R 和 Python 应用程序，而不必将数据从数据库移到应用程序或模型。 此功能消除了安全性、合规性、管理和完整性方面的障碍，以及来回移动大量数据导致的一系列类似问题。 还可以使用客户端计算机内存无法容纳的数据集。
 
-- 轻松部署：准备好 R 或 Python 模型后，只需将它嵌入 T-SQL 脚本，即可部署到生产环境。 之后，用任何语言编写的任何 SQL 客户端应用程序就都能通过存储过程调用充分利用这些模型和智能。 无需特定的 R 或 Python 集成。
+- **轻松部署**：准备好 R 或 Python 模型后，只需将它嵌入 T-SQL 脚本，即可部署到生产环境。 之后，用任何语言编写的任何 SQL 客户端应用程序就都能通过存储过程调用充分利用这些模型和智能。 无需特定的 R 或 Python 集成。
 
 - **企业级性能和可缩放性**：可将 SQL Server 的内存中表和列存储索引等高级功能与 RevoScaleR 和 RevoScalePy 程序包中的高性能、可缩放 API 结合使用。 不必移动数据还意味着在数据增长或想要提高应用程序性能时不存在客户端内存约束。
 
-- **丰富的扩展性**：可在 SQL Server 中安装和运行任何最新的开源 R 或 Python 程序包，从而基于 SQL Server 中的大量数据生成深入学习和 AI 应用程序。 在 SQL Server 中安装程序包与在本地计算机上安装程序包一样简单。
+- **丰富的扩展性**：可在 SQL Server 中安装和运行任何最新的开源 R 或 Python 程序包，从而基于 SQL Server 中的大量数据生成深度学习和 AI 应用程序。 在 SQL Server 中安装程序包与在本地计算机上安装程序包一样简单。
 
 - **广泛的可用性，且不增加任何成本**：SQL Server 2017 及更高版本的所有版本（包括 Express Edition）均提供 R 和 Python 集成。 （SQL Server 2016 及更高版本提供 R 支持。）
 

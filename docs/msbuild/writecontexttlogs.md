@@ -1,8 +1,6 @@
 ---
 title: WriteContextTLogs | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 apiname:
 - WriteContextTLogs
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a01dbd11411204affa082bfa0772530662657853
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9c06c77ef75f279be85435fc507cc82ef6984f66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39230790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828389"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 写入当前上下文的日志文件。  
@@ -44,7 +42,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT。  
   
 ## <a name="requirements"></a>要求  
- 标头：FileTracker.h  
+ **标头：** FileTracker.h  
   
 ## <a name="see-also"></a>请参阅  
  [WriteAllTLogs](../msbuild/writealltlogs.md)

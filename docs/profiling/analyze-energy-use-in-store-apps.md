@@ -1,8 +1,6 @@
 ---
 title: 分析 UWP 应用中的能量使用 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 345d2c744aeffe84517377ed99f486ab02d5e00c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220730"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860853"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP 应用中的能量使用
 Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备上的 UWP 应用的功率和能耗情况，这些低功率平板设备在所有时间或部分时间内靠自有电池运行。 在电池供电的设备上，如果应用程序使用过多的能量，可能导致客户非常不满，最终客户甚至可能将其卸载。 能量利用的优化可使更多的客户选择并使用你的应用程序。  
@@ -29,9 +27,9 @@ Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备
  “能耗”探查器在分析会话期间捕获设备的显示器、CPU 和网络连接的活动。 然后生成这些活动所使用功率的估计值和分析会话使用的总能量。  
   
 > [!NOTE]
->  能耗探查器使用标准参考设备硬件（具有可能运行你的应用程序的低功率平板电脑设备的代表性）的软件模型来估计功率和能量使用情况。 若要提供最佳估计值，我们建议你收集低功率平板电脑设备上的分布曲线数据。  
+> 能耗探查器使用标准参考设备硬件（具有可能运行你的应用程序的低功率平板电脑设备的代表性）的软件模型来估计功率和能量使用情况。 若要提供最佳估计值，我们建议你收集低功率平板电脑设备上的分布曲线数据。  
 >   
->  虽然该模型可提供多种低功率设备的合理估计值，但你分析的设备的实际值可能不同。 使用这些值来查找相对于其他资源使用消耗能量多的显示器、CPU 和网络活动，因此这些活动可能是最适合优化的部分。  
+> 虽然该模型可提供多种低功率设备的合理估计值，但你分析的设备的实际值可能不同。 使用这些值来查找相对于其他资源使用消耗能量多的显示器、CPU 和网络活动，因此这些活动可能是最适合优化的部分。  
   
  “能量消耗”探查器使用下面 *功率* 和 *能量*的定义：  
   
@@ -54,13 +52,13 @@ Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备
   
  **向 C#、Visual Basic、C++ 代码添加标记**  
   
- 若要向 C#、Visual Basic、C++ 代码添加标记，请先创建一个 [Windows.Foundation.Diagnostics LoggingChannel](xref:Windows.Foundation.Diagnostics.LoggingChannel) 对象。 然后在代码中要标记的位置插入对 [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) 方法的调用。 在调用中使用 [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) 。  
+ 要向 C#、Visual Basic、C++ 代码添加标记，请先创建一个 <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=fullName> 对象。 然后在代码中要标记的位置插入对 <xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A?displayProperty=nameWithType> 方法的调用。 在调用中使用 [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) 。  
   
  执行此方法时，用户标记将与消息一起添加到分析数据中。  
   
 > [!NOTE]
 > - Windows.Foundation.Diagnostics LoggingChannel 实现 [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) 接口（在 C# 和 VB 中表现为 [System.IDisposable](/dotnet/api/system.idisposable)）。若要避免操作系统资源泄露，请在完成日志记录通道时调用 [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel)（在 C# 和 VB 中为 [Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel)）。  
->   -   每个打开的日志记录通道都必须有唯一的名称。 尝试创建与未释放的通道同名的新日志记录通道会导致出现异常。  
+>  - 每个打开的日志记录通道都必须有唯一的名称。 尝试创建与未释放的通道同名的新日志记录通道会导致出现异常。  
   
  有关示例，请参阅 Windows SDK 示例 [LoggingSession 示例](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)。  
   
@@ -151,8 +149,9 @@ if (performance && performance.mark) {
   
      使用 UWP 应用的 Visual Studio 模拟器可以模拟网络信息 API 的数据连接属性。 请参阅[在模拟器中运行 UWP 应用](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
--   **“JavaScript 函数计时”** 和 **“CPU 使用量”** 工具有助于降低由低效函数导致的 CPU 负载。 请参阅[分析 CPU 使用情况](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md)。
+-   **“JavaScript 函数计时”** 和 **“CPU 使用量”** 工具有助于降低由低效函数导致的 CPU 负载。 请参阅[分析 CPU 使用情况](/visualstudio/profiling/beginners-guide-to-performance-profiling)。
 
 ## <a name="see-also"></a>请参阅
- [使用 Visual Studio 分析](../profiling/index.md)  
- [首先了解分析工具](../profiling/profiling-feature-tour.md)
+
+- [使用 Visual Studio 分析](../profiling/index.md)  
+- [首先了解分析工具](../profiling/profiling-feature-tour.md)

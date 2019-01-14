@@ -3,7 +3,6 @@ title: 如何：设置 IDE 辅助功能选项
 description: 了解如何在 Visual Studio 中设置辅助功能选项，让每个人可以更轻松地使用其集成开发环境 (IDE) ，包括那些视力较差和写作能力有限的人。
 ms.date: 08/22/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 3c8fa92644221149d3405eea25b1c85e229861e4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906769"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：设置 IDE 辅助功能选项
 
@@ -90,7 +89,7 @@ ms.locfileid: "52388421"
 
 4.  从“显示项”中选择要更改其显示方式的项，例如“纯文本”、“指示器边距”、“可见空白”、“HTML 特性名”或“XML 特性”。
 
-5.  从下列选项中选择显示设置：“项前景”、“项背景”和“粗体”。
+5.  从以下选项中选择显示设置：“项前景色”、“项背景色”和“粗体”。
 
 6.  选择 **“确定”**。
 

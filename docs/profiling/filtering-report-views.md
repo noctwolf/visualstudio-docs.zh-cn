@@ -1,8 +1,6 @@
 ---
 title: 筛选报告视图 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8e172f6693b4efcff1cfff3eb8c79178bb9f90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d4922020a6020630ce54767e788b14a1ed7c0462
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919164"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53986370"
 ---
 # <a name="filter-report-views"></a>筛选报告视图
 可以将筛选器应用于分析数据文件，限制“性能报告”视图中显示的和导出到报告文件的分析数据。 可以将报告现定于两个时间戳值之间的数据，并可以将数据限定于特定的进程和线程。 可以将筛选器保存到文件，然后通过导入保存的筛选器，在另一分析数据文件中创建筛选器。  
   
- 通过在“摘要”视图中使用图形时间线，还可以将报告限制到某一时间段。 请参阅[如何：从摘要时间线中筛选报告视图](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
+ 通过在“摘要”视图中使用图形时间线，还可以将报告限制到某一时间段。 请参阅[操作说明：从摘要时间线中筛选报表视图](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
   
- 若要从报告中排除系统和第三方代码，请参阅[如何：筛选分析工具报告视图以显示“仅我的代码”](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
+ 要从报告中排除系统和第三方代码，请参阅[如何：将分析工具报告视图筛选为显示仅我的代码](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
 ## <a name="procedures"></a>过程  
   
@@ -36,7 +34,7 @@ ms.locfileid: "49919164"
   
 2.  对于要添加到筛选器的每个子句，在行的下列字段中，选择或输入值。  
   
-    |字段|描述|  
+    |字段|说明|  
     |-----------|-----------------|  
     |And/Or|如果此子句和下一个子句必须都为 true 才能匹配结果，则选择“与”。 如果此子句或下一个子句为 true 即可匹配结果，则选择“或”。|  
     |**字段**|从显示的数据字段列表中选择要在筛选器子句中使用的报告字段。|  

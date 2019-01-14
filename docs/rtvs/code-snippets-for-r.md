@@ -3,19 +3,18 @@ title: R 的代码片段
 description: Visual Studio 中的 R 的代码片段提供快捷方式，可用于快速插入任意长度的代码块，有助于避免反复键入相似的代码。
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0c9db243b3903ddcbaa310bbf5ba3fd911eee7fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0b9a06a747fb0169c22f251c1beb22dad3b86c9e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35667725"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860892"
 ---
 # <a name="code-snippets"></a>代码片段
 
@@ -38,7 +37,7 @@ Visual Studio 中的代码片段提供了一些快捷方式，可用于快速插
 
 ![R 的代码片段对话框](media/code-snippet-dialog.png)
 
-要创建自定义代码片段，请按照[演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)中的说明进行操作。 最终，代码片段只是一个 XML 文件。 例如，以下代码是管道操作（快捷方式 `>`）的代码片段：
+要创建自定义代码片段，请遵照说明进行操作：[演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)。 最终，代码片段只是一个 XML 文件。 例如，以下代码是管道操作（快捷方式 `>`）的代码片段：
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

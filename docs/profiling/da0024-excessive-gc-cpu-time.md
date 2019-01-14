@@ -1,8 +1,6 @@
 ---
 title: DA0024：GC 占用的 CPU 时间过多 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.DA0024
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b0efeca2dde4decc81dba4a3cd6eaa0249d5d6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5e058748c1614641fd831f7c159d3cf7e2ac59d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881789"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881336"
 ---
-# <a name="da0024-excessive-gc-cpu-time"></a>DA0024：垃圾回收占用的 CPU 时间过多
+# <a name="da0024-excessive-gc-cpu-time"></a>DA0024：GC 占用的 CPU 时间过多
 
 |||  
 |-|-|  
@@ -44,7 +42,7 @@ ms.locfileid: "49881789"
  如果垃圾回收所用的时间明显超过应用程序处理总时间，则将触发此规则。  
 
 > [!NOTE]
->  垃圾回收所用时间的比例较高但未超过应用程序处理总时间时，不会触发此规则，而会触发 [DA0023：垃圾回收占用的 CPU 时间很多](../profiling/da0023-high-gc-cpu-time.md)警告。  
+>  当垃圾回收所用的时间比例很大但与应用程序总处理时间相比并不过量时，不会触发此规则，而是触发 [DA0023：GC 占用的 CPU 时间多](../profiling/da0023-high-gc-cpu-time.md)警告。  
 
 ## <a name="how-to-investigate-a-warning"></a>如何调查警告  
  双击“错误列表”窗口中的消息，导航到分析数据的[标记视图](../profiling/marks-view.md)。 查找 **.NET CLR Memory\\% Time in GC** 列。 确定程序执行中是否存在托管内存垃圾回收的开销高于其他阶段的某个阶段。 将 %Time in GC 的值与**第 0 代回收 #****第 1 代回收 #**、 **第 2 代回收 #** 值中报告的垃圾回收速率进行比较。  

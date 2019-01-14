@@ -2,7 +2,6 @@
 title: “项目设计器”->“签名”页
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
-ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
+ms.openlocfilehash: d59f81a8bedd62e7127d5541f943f0b0c26b8905
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49459785"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856639"
 ---
 # <a name="signing-page-project-designer"></a>“项目设计器”->“签名”页
 使用“项目设计器”的“签名”页对应用程序和部署清单及程序集进行签名（强名称签名）。
@@ -40,7 +39,7 @@ ms.locfileid: "49459785"
 ## <a name="application-and-deployment-manifest-signing"></a>应用程序和部署清单签名
  “为 ClickOnce 清单签名”复选框
 
- 选中此复选框以使用公钥/私钥对对应用程序和部署清单进行签名。 有关如何执行此操作的详细信息，请参阅[如何：对应用程序和部署清单进行签名](../../ide/how-to-sign-application-and-deployment-manifests.md)。
+ 选中此复选框以使用公钥/私钥对对应用程序和部署清单进行签名。 有关如何执行此操作的详细信息，请参阅[如何：对应用程序和部署清单签名](../../ide/how-to-sign-application-and-deployment-manifests.md)。
 
  “从存储区选择”按钮
 
@@ -101,7 +100,7 @@ ms.locfileid: "49459785"
 
 - [项目属性引用](../../ide/reference/project-properties-reference.md)
 - [管理程序集签名和清单签名](../../ide/managing-assembly-and-manifest-signing.md)
-- [如何：对应用程序和部署清单进行签名](../../ide/how-to-sign-application-and-deployment-manifests.md)
-- [如何：对程序集进行签名 (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
+- [如何：对应用程序和部署清单签名](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [如何：为程序集签名 (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [如何：使用强名称为程序集签名](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [具有强名称的程序集](/dotnet/framework/app-domains/strong-named-assemblies)

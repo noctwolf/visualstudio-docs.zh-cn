@@ -2,7 +2,6 @@
 title: 分析 UWP 应用中的 JavaScript 内存使用情况 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -20,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0871e428d57d9bb4da85a16963f539ecd08d96
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: fca1abfe267d877dbe5eec45ecf29c9f73781ce8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962371"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>分析 UWP 应用中的 JavaScript 内存使用情况
 JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内存使用情况，在使用 JavaScript 为 Windows 构建的 UWP 应用中查找内存泄漏。 受支持的应用包括通用 Windows 应用的应用。
@@ -99,7 +98,7 @@ JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内
 -   [查看快照差异](#view-a-snapshot-diff).显示快照之间的差异值。 这些视图将显示对象大小和对象计数方面的差异。  
   
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak  
- 以下是可帮助你更有效地使用 JavaScript 内存分析器的工作流步骤。 如果你怀疑你的应用程序有内存泄漏，这些步骤将非常有用。 有关引导用户在正在运行的应用中完成内存泄露查找过程的教程，请参阅[演练：查找内存泄漏 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
+ 以下是可帮助你更有效地使用 JavaScript 内存分析器的工作流步骤。 如果你怀疑你的应用程序有内存泄漏，这些步骤将非常有用。 有关引导你在正在运行的应用中完成内存泄露查找过程的教程，请参阅[演练：查找内存泄漏 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
   
 1. 在 Visual Studio 中打开应用程序。  
   
@@ -141,7 +140,7 @@ JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内
   
     - 差异堆大小（堆大小下的左侧链接）。 此链接文本显示当前快照的堆大小和前一个快照的堆大小之间的差异。  
   
-    - 差异对象计数（对象计数下的右侧链接）。 此链接文本将显示两个值（例如，+1858 / -1765）：第一个值是自前一个快照以来添加的新对象的数量，第二个值是自前一个快照以来移除的对象的数量。  
+    - 差异对象计数（对象计数下的右侧链接）。 链接文本显示两个值（例如，+ 1858 / -1765）：第一个值是自前一个快照以来添加的新对象的数量；第二个值是自前一个快照以来删除的对象的数量。  
   
       这些链接将打开堆上类型差异快照详细信息视图，该视图按保留大小或对象计数排序，具体取决于你打开的链接。  
   
@@ -197,7 +196,7 @@ JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内
   
 -   对象计数。 此计数仅显示在应用程序中创建的对象，并筛选出由 JavaScript 运行时创建的内置对象。 对象计数链接到快照详细信息的类型视图。  
   
--   对象计数差异。 这将显示两个值：第一个值是自前一个快照以来添加的新对象的数量；第二个值是自前一个快照以来移除的对象的数量。 例如，此图显示自快照 #1 以来，总共添加了 1,859 个对象，移除了 1,733 个对象。 如果对象总计数增加，则此信息后面会跟一个红色向上箭头；如果对象总计数减少，则此信息后面将跟一个绿色向下箭头。 如果对象计数未发生更改，则将显示文本 **“无更改”** 而不是数字。 对于第一个快照，将显示文本 **“基线”**。 对象计数差异链接到快照差异的类型视图。  
+-   对象计数差异。 这将显示两个值：第一个值是自前一个快照以来添加的新对象的数量；第二个值是自前一个快照以来删除的对象的数量。 例如，此图显示自快照 #1 以来，总共添加了 1,859 个对象，移除了 1,733 个对象。 如果对象总计数增加，则此信息后面会跟一个红色向上箭头；如果对象总计数减少，则此信息后面将跟一个绿色向下箭头。 如果对象计数未发生更改，则将显示文本 **“无更改”** 而不是数字。 对于第一个快照，将显示文本 **“基线”**。 对象计数差异链接到快照差异的类型视图。  
   
 -   在拍摄快照时屏幕的快照。  
   
@@ -359,7 +358,7 @@ if (performance && performance.mark) {
   
     -   某些对象可能会提供 `dispose` 方法和建议以供使用。 例如，若调用列表的 `dispose` 方法，则应在 [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) 上调用 `createFiltered` ，然后离开页面。  
   
-    -   可能需要移除一个或多个事件侦听器。 有关更多信息，请参见 [View DOM event listeners](../debugger/view-dom-event-listeners.md)。  
+    -   可能需要移除一个或多个事件侦听器。 有关更多信息，请参见 [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css)。  
   
 -   观看 [此视频](https://channel9.msdn.com/Events/Build/2013/3-316) （来自 Build 2013 大会，与 JavaScript 内存分析器相关）的后半部分。  
   

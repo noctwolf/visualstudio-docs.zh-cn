@@ -1,8 +1,6 @@
 ---
 title: SuspendProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - SuspendProfile
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae610539ded12c626fb69bffcc973d0424ca2f08
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 27c52c3821bb545efb8fe16365b11c9820db9214
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668470"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952120"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile` 方法递增指定分析级别的挂起/继续计数器的值。  
@@ -35,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
   
  指示性能数据集合可应用到的分析级别。 以下 PROFILE_CONTROL_LEVEL 枚举器可用于指示性能数据集合可应用到的三个级别之一：  
   
-|枚举器|描述|  
+|枚举器|说明|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|全局级别设置影响分析运行中的所有进程和线程。|  
 |PROFILE_PROCESSLEVEL|进程级别设置影响指定进程包含的所有线程。|  
@@ -48,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 ## <a name="property-valuereturn-value"></a>属性值/返回值  
  函数通过使用 **PROFILE_COMMAND_STATUS** 枚举来指示成功或失败。 返回值可以是下列值之一：  
   
-|枚举器|描述|  
+|枚举器|说明|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|分析元素 ID 不存在。|  
 |PROFILE_ERROR_LEVEL_NOEXIST|指定的分析级别不存在。|  

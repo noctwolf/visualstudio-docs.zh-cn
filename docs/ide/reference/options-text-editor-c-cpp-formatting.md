@@ -1,8 +1,7 @@
 ---
-title: 选项、文本编辑器、C/C++ 和格式
+title: 选项，文本编辑器，C/C++，格式
 ms.date: 04/30/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
@@ -18,14 +17,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 6aa4c543d19c43bd397d7d18a185a73a4bf161a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53960743"
 ---
-# <a name="options-text-editor-cc-formatting"></a>选项、文本编辑器、C/C++ 和格式
+# <a name="options-text-editor-cc-formatting"></a>选项，文本编辑器，C/C++，格式
 
 使用 C 或 C++ 进行编程时，请使用以下属性页更改代码编辑器的默认行为。
 
@@ -40,7 +39,7 @@ ms.locfileid: "36235136"
 
 此页面有一些选项，可用于在键入语句和块时设置其格式。
 
-Visual Studio 2017 版本 15.7 及更高版本：此页面还包含用于配置 [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) 版本 5.0 支持的选项。 ClangFormat 是一款实用工具，能够根据 .clang-format 或 _clang-format 文件中可配置的一组规则轻松设置代码样式和格式。
+**Visual Studio 2017 版本 15.7 及更高版本**：此页面还包含用于配置 [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) 版本 5.0 支持的选项。 ClangFormat 是一款实用工具，能够根据 .clang-format 或 _clang-format 文件中可配置的一组规则轻松设置代码样式和格式。
 
 ### <a name="configuring-clangformat-options"></a>配置 ClangFormat 选项
 

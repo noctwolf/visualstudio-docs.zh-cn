@@ -2,7 +2,6 @@
 title: 如何：修改三维模型的透视点
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 352685e6b31aa688ff51f9564f141fa800c348d8
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 8c66d7b16451a2ee3e545b4737b0ecd12c47d413
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977807"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822299"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>如何：修改三维模型的透视点
 
@@ -46,5 +45,5 @@ ms.locfileid: "38977807"
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：创建基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)
+- [如何：创建基本三维模型](../designers/how-to-create-a-basic-3-d-model.md)
 - [模型编辑器](../designers/model-editor.md)

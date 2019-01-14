@@ -3,7 +3,6 @@ title: 使用分析工具衡量性能
 description: 简要了解 Visual Studio 中提供的各种诊断工具。
 ms.custom: mvc
 ms.date: 05/18/2017
-ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -13,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 9cfa2bcb98e686c04af359900a3c925686659df5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880307"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入门：首先了解分析工具
 
@@ -168,4 +167,4 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
 |[JavaScript 内存](../profiling/javascript-memory.md)|否|HTML 适用，XAML 不适用|否|
 
 ## <a name="see-also"></a>请参阅  
- [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)
+ [在 Visual Studio 中进行调试](/visualstudio/debugger/debugger-feature-tour)

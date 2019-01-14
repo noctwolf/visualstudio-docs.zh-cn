@@ -1,8 +1,6 @@
 ---
 title: 如何：选择要生成的文件 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef956b94ca263dac5ce57c7b122576060bb7a05
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2fd4475f149627776480fb54ec821298bf74b700
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820663"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875402"
 ---
 # <a name="how-to-select-the-files-to-build"></a>如何：选择要生成的文件
 如果生成包含多个文件的项目，可以在项目文件中分别列出每个文件，也可以使用通配符将一个目录或一组嵌套目录中的所有文件都包括进去。  
@@ -172,5 +170,5 @@ ms.locfileid: "49820663"
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [如何：将文件排除在生成过程外](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)   
  [项](../msbuild/msbuild-items.md)

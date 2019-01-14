@@ -2,7 +2,6 @@
 title: “选项”对话框 ->“环境”->“Web 浏览器”
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
@@ -24,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56bd77bb833e0fcc7e4e6e35304387d23b7c3f52
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 9bdfc727e3214292aade933abde6d6671c4b02fe
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955154"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“Web 浏览器”
 
@@ -55,7 +54,7 @@ ms.locfileid: "52389440"
 
 -   **源编辑器**：选择此选项可在[编辑器](../../ide/writing-code-in-the-code-and-text-editor.md)中查看源。
 
--   **HTML 编辑器**：选择此选项可在 [HTML 设计器](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)中查看源。 使用此选项可在两个视图之一中编辑网页：设计视图或基于标准文本的源视图。
+-   **HTML 编辑器**：选择此选项可在 [HTML 设计器](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)中查看源。 使用此选择以两种视图之一编辑网页：设计视图或标准的基于文本的源视图。
 
 -   **外部编辑器** 选择此选项可在其他编辑器中查看源。 指定所选任何编辑器（例如 Notepad.exe）的路径。
 

@@ -1,9 +1,7 @@
 ---
 title: 步骤 6：命名按钮控件
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b11bace93efc253ffcb0f8d2b97ecc57c7462bb8
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 39ded8694e5ec4b071193f74aa5fded5ddb54560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820353"
 ---
 # <a name="step-6-name-your-button-controls"></a>步骤 6：命名按钮控件
 窗体上只有一个 <xref:System.Windows.Forms.PictureBox>。 当添加此控件时，IDE 自动将其命名为“pictureBox1” 。 只有一个名为“checkBox1”的 <xref:System.Windows.Forms.CheckBox>。 很快，你将编写一些代码，并且这些代码将引用到上述的 CheckBox 和 PictureBox。 因为上述每种控件都只有一个控件，所以当你在代码中看到  “pictureBox1”或  “checkBox1”时，应知道其中的含义。
@@ -26,7 +24,7 @@ ms.locfileid: "34748392"
 
  窗体上包含四个按钮，IDE 将它们分别命名为“button1” 、“button2” 、“button3” 和 “button4”。 只看这些按钮的当前名称，你并不知道哪个按钮是“关闭”  按钮，哪个按钮是“显示图片”  按钮。 这就是为按钮控件提供包含更多信息的名字会很有帮助的原因。
 
- ![视频链接](../data-tools/media/playvideo.gif)有关本主题的视频版本，请观看[教程 1：在 Visual Basic 中创建图片查看器 - 视频 3](http://go.microsoft.com/fwlink/?LinkId=205213) 或[教程 1：在 C# 中创建图片查看器 - 视频 3](http://go.microsoft.com/fwlink/?LinkId=205202)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
+ ![视频链接](../data-tools/media/playvideo.gif)有关此主题的视频版本，请参阅[教程 1：在 Visual Basic 中创建图片查看器 - 视频 3](http://go.microsoft.com/fwlink/?LinkId=205213) 或[教程 1：在 C# 中创建图片查看器 - 视频 3](http://go.microsoft.com/fwlink/?LinkId=205202)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
 
 ## <a name="to-name-your-button-controls"></a>要命名按钮控件
 
@@ -36,7 +34,7 @@ ms.locfileid: "34748392"
 带有 closeButton 名称的“属性”窗口
 
     > [!NOTE]
-    >  如果尝试将按钮的名称更改为 （在单词“close”和“Button”之间有一个空格），则 IDE 将显示错误消息“属性值无效”。 控件名称中不允许使用空格和一些其他字符。
+    >  如果尝试将按钮的名称更改为 closeButton（在单词“close”和“Button”之间有一个空格），则 IDE 将显示错误消息：“属性值无效。” 控件名称中不允许使用空格和一些其他字符。
 
 2.  将其他三个按钮重命名为“backgroundButton” 、 “clearButton”和“showButton” 。 你可通过选择“属性”  窗口中的控件选择器下拉列表来验证这些名称。 新的按钮名称将出现。
 
@@ -77,6 +75,6 @@ ms.locfileid: "34748392"
 
 ## <a name="to-continue-or-review"></a>继续或查看
 
--   若要转到下一个教程步骤，请参阅[步骤 7：向窗体添加对话框组件](../ide/step-7-add-dialog-components-to-your-form.md)。
+-   要转到下一个教程步骤，请参阅[步骤 7：向窗体添加对话框组件](../ide/step-7-add-dialog-components-to-your-form.md)。
 
--   若要返回上一个教程步骤，请参阅[步骤 5：向窗体添加控件](../ide/step-5-add-controls-to-your-form.md)。
+-   要返回上一个教程步骤，请参阅[步骤 5：向窗体添加控件](../ide/step-5-add-controls-to-your-form.md)。

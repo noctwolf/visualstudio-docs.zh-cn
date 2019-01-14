@@ -1,8 +1,7 @@
 ---
-title: 如何：打印类关系图（类设计器）
+title: 如何：打印类图（类设计器）
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - printing [Visual Studio], class diagrams
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8408eb638d8a8961e144c2e09da896817ae9bea2
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: e4b38967badbed94c946b04a1434150912c32859
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956661"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916249"
 ---
 # <a name="how-to-print-class-diagrams"></a>如何：打印类图
 

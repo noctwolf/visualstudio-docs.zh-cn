@@ -1,9 +1,7 @@
 ---
 title: MSBuild 项 | Microsoft Docs
 description: 使用 ItemGroup 的 MSBuild Include 属性指定要包含在生成中的文件
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: d0714a4edc4b1bfe2a97492bfac85a1a62db1dc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443592"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898672"
 ---
 # <a name="msbuild-items"></a>MSBuild 项
 MSBuild 项是生成系统的输入，通常表示文件（文件在 `Include` 属性中指定）。 根据项元素名称，将其组成不同的项类型。 项类型是项的命名列表，可用作任务参数。 任务使用项值来执行生成过程。  
@@ -55,9 +53,9 @@ MSBuild 项是生成系统的输入，通常表示文件（文件在 `Include` �
 -   从 .NET Framework 3.5 起，`Target` 元素可能会包含 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素，后者可能会包含项元素。  
   
 ##  <a name="reference-items-in-a-project-file"></a>在项目文件中引用项  
- 若要在整个项目文件中引用项类型，请使用语法 @(\<ItemType>)。 例如，使用 `@(Compile)` 引用前面示例中的项类型。 使用此语法，将项类型指定为该任务的参数，从而将项传递到任务。 有关详细信息，请参阅[如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)。  
+ 若要在整个项目文件中引用项类型，请使用语法 @(\<ItemType>)。 例如，使用 `@(Compile)` 引用前面示例中的项类型。 使用此语法，将项类型指定为该任务的参数，从而将项传递到任务。 有关更多信息，请参见[如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)。  
   
- 默认情况下，项类型的项展开时由分号 (;) 分隔。 可使用语法 @(\<ItemType>, '\<separator>') 指定非默认分隔符。 有关详细信息，请参阅[如何：显示用逗号分隔的项列表](../msbuild/how-to-display-an-item-list-separated-with-commas.md)。  
+ 默认情况下，项类型的项展开时由分号 (;) 分隔。 可使用语法 @(\<ItemType>, '\<separator>') 指定非默认分隔符。 有关更多信息，请参见[如何：显示用逗号分隔的项列表](../msbuild/how-to-display-an-item-list-separated-with-commas.md)。  
   
 ##  <a name="use-wildcards-to-specify-items"></a>使用通配符指定项  
 
@@ -99,7 +97,7 @@ MSBuild 项是生成系统的输入，通常表示文件（文件在 `Include` �
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- 有关详细信息，请参阅[如何：将文件排除在生成过程外](../msbuild/how-to-exclude-files-from-the-build.md)。  
+ 有关更多信息，请参见[如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)。  
   
 ##  <a name="item-metadata"></a>项元数据  
  除 `Include` 和 `Exclude` 属性中的信息外，项可能还包含元数据。 对于需要关于项的详细信息的任务，或需对任务和目标进行批处理的任务，可使用元数据。 有关详细信息，请参阅[批处理](../msbuild/msbuild-batching.md)。  
@@ -327,7 +325,7 @@ Output:
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
  [如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)   
- [如何：将文件排除在生成过程外](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)   
  [如何：显示用逗号分隔的项列表](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [项定义](../msbuild/item-definitions.md)   
  [批处理](../msbuild/msbuild-batching.md)   

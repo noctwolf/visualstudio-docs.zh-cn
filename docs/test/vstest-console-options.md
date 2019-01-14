@@ -2,7 +2,6 @@
 title: VSTest.Console.exe 命令行选项
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
@@ -12,12 +11,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4394fe8d7920f4127f5043808003d400bc991590
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 1c185622baeb3ad00bf5139190fe5c4fe627ba5e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220965"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870750"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令行选项
 
@@ -32,7 +31,7 @@ VSTest.Console.exe 是用于运行测试的命令行工具。 可在命令行上
 
 下表列出了 VSTest.Console.exe 的所有选项以及对应的简短说明。 在命令行上键入 `VSTest.Console/?` 可以看到类似的摘要。
 
-| 选项 | 描述 |
+| 选项 | 说明 |
 |---|---|
 |**[测试文件]**|从指定文件运行测试。 用空格分隔多个测试文件名。<br />示例：`mytestproject.dll`、`mytestproject.dll myothertestproject.exe`|
 |**/Settings:[文件名]**|使用其他设置（如数据收集器）运行测试。<br />示例：`/Settings:Local.RunSettings`|
@@ -46,7 +45,7 @@ VSTest.Console.exe 是用于运行测试的命令行工具。 可在命令行上
 |**/Framework: [Framework 版本]**|要用于测试执行的目标 .NET Framework 版本。<br />有效值为 Framework35、Framework40、Framework45 和 FrameworkUap10。<br />如果将目标框架指定为 Framework35，则测试在 CLR 4.0“兼容模式”下运行。<br />示例：`/Framework:framework40`|
 |**/TestCaseFilter:[表达式]**|运行与给定表达式匹配的测试。<br /><Expression\> 的格式为 <property\>=<value\>[\|<Expression\>]。<br />示例：`/TestCaseFilter:"Priority=1"`<br />示例：`/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />/TestCaseFilter 命令行选项不能与 /Tests 命令行选项一起使用。 <br />有关创建和使用表达式的信息，请参阅 [TestCase 筛选](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)。|
 |**/?**|显示使用情况信息。|
-|**/Logger:[*uri/friendlyname*]**|为测试结果指定一个记录器。<br />示例：若要将结果记录到 Visual Studio 测试结果文件 (TRX)，请使用 /Logger:trx。<br />示例：若要将测试结果发布到 Team Foundation Server，请使用 TfsPublisher：<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<build name\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
+|**/Logger:[*uri/friendlyname*]**|为测试结果指定一个记录器。<br />示例:要将结果记录到 Visual Studio 测试结果文件 (TRX)，请使用 /Logger:trx。<br />示例:要将测试结果发布到 Team Foundation Server，请使用 TfsPublisher：<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<build name\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
 |**/ListTests:[文件名]**|列出给定测试容器中的已发现的测试。|
 |**/ListDiscoverers**|列出已安装的测试发现器。|
 |**/ListExecutors**|列出已安装的测试执行器。|

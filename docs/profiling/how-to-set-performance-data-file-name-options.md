@@ -1,8 +1,6 @@
 ---
 title: 如何：设置性能数据文件名选项 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f9d47107d8a5e0fb4c10e058c2fc4c7ca3ed5e
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 6e0027457e099c57423989070e6f30f275d7982e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844464"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990563"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>如何：设置性能数据文件名选项
 
@@ -27,7 +25,7 @@ ms.locfileid: "34844464"
 
 |||
 |-|-|
-|*Path*|包含报告的目录。 默认位置为解决方案文件夹或用户项目和解决方案的默认位置。|
+|*路径*|包含报告的目录。 默认位置为解决方案文件夹或用户项目和解决方案的默认位置。|
 |*VSP-File*|分析数据文件的名称。 默认名称是所分析的解决方案或可执行文件的名称。|
 |*YYMMDD*|显示收集分析数据的年、月、日的日期戳。|
 |*(N)*|如果存在多个分析数据文件，文件名后会用括号加上递增的数字。|

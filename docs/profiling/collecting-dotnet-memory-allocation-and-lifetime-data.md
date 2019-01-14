@@ -1,8 +1,6 @@
 ---
 title: 收集 .NET 内存分配数据和生存期数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2484072a0f85b002ff2e59512f44ca0826540fd3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2095b06347c577811cdeb91d0a9039a140758c86
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775201"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898042"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>收集 .NET 内存分配和生存期数据
 
@@ -74,8 +72,8 @@ Visual Studio 分析工具支持收集 .NET 内存分配和对象生存期数据
 
 |任务|相关内容|
 |----------|---------------------|
-|在“二进制文件”  页上，为检测的模块副本指定位置。 默认情况下，原始二进制文件会被移动到备份文件夹中。|- [如何：重新指定检测后的二进制文件的位置](../profiling/how-to-relocate-instrumented-binaries.md)|
-|在“检测”  页上，从分析中排除小函数以减少分析开销，在 ASP.NET Web 页中分析 JavaScript 代码，并指定要在检测过程之前和之后在命令提示符处运行的命令。|- [如何：在检测中排除或添加短函数](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [如何：分析网页中的 JavaScript 代码](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [如何：指定检测前和检测后命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
+|在“二进制文件”  页上，为检测的模块副本指定位置。 默认情况下，原始二进制文件会被移动到备份文件夹中。|- [如何：重定位已检测的二进制文件](../profiling/how-to-relocate-instrumented-binaries.md)|
+|在“检测”  页上，从分析中排除小函数以减少分析开销，在 ASP.NET Web 页中分析 JavaScript 代码，并指定要在检测过程之前和之后在命令提示符处运行的命令。|- [如何：在检测中排除或包括短函数](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [如何：分析网页中的 JavaScript 代码](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [如何：指定检测前和检测后命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
 |在“CPU 计数器”  页上，指定要添加到分析数据的一个或多个处理器性能计数器。|- [如何：收集 CPU 计数器数据](../profiling/how-to-collect-cpu-counter-data.md)|
 |在“高级”页上，指定所需的任何其他 VSInstr 选项，例如用于包含或排除特定函数的选项。 有关 VSInstr 选项的详细信息，请参阅 [VSInstr](../profiling/vsinstr.md)|- [如何：指定其他检测选项](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [如何：将检测限定为特定函数](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 

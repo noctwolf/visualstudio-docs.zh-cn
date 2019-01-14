@@ -1,8 +1,7 @@
 ---
-title: 如何：创建基本朗伯着色器
+title: 如何：创建基本 Lambert 着色器
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d71a59e0173be60779675f838fad20943eabc85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 622209951ba3321a8278e0f65058459591af7d38
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913249"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850345"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>如何：创建基本朗伯着色器
 

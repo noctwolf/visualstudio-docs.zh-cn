@@ -1,8 +1,6 @@
 ---
 title: 如何：生成具有资源的项目 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - resource files, compiling with MSBuild
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7724969a4677bc0d8480b794ae72b2dbee74a86
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 42e13de45afb9594731fc96907187ec9376eed76
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180342"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934293"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>如何：生成具有资源的项目
 如果你正在构建一个项目的本地化版本，则所有用户界面元素必须都分入不同语言的资源文件。 如果该项目仅使用字符串，则资源文件使用文本文件。 或者，可以将 .resx 文件用作资源文件。  

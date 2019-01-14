@@ -2,7 +2,6 @@
 title: “项目设计器”->“代码分析”
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs29106
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b711ecd6d12e424afed00296d8d95bd93cbb10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bc06740c56beac2dc092fb421a92f9d59d044d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860123"
 ---
 # <a name="code-analysis-project-designer"></a>“项目设计器”->“代码分析”
 包含可供你选择用于运行代码的代码分析工具。 工具报告有关程序集的信息，例如违反了 Microsoft .NET Framework 设计准则中规定的编程和设计规则。
@@ -78,4 +77,4 @@ ms.locfileid: "31944669"
 
 - [托管代码的代码分析警告](../../code-quality/code-analysis-for-managed-code-warnings.md)
 - [托管代码的代码分析概述](../../code-quality/code-analysis-for-managed-code-overview.md)
-- [演练：对托管代码进行代码缺陷分析](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+- [演练：分析托管代码的代码缺陷](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

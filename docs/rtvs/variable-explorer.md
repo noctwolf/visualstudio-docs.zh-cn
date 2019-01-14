@@ -3,19 +3,18 @@ title: 适用于 R 的变量资源管理器
 description: Visual Studio 中的变量资源管理器显示当前 R 会话中给定作用域中的所有变量。
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: fbd20c362c407148262d8e1e61e15d22d9cbcf2f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 8969379727da2f7e01e15fcb10150195bc32749e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978120"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988931"
 ---
 # <a name="variable-explorer"></a>变量资源管理器
 
@@ -71,7 +70,7 @@ n <- c(1,2,3,5,8,13)
 
 ## <a name="import-data-into-variable-explorer"></a>将数据导入变量资源管理器
 
-“变量资源管理器”工具栏上的两个命令也可通过“R 工具” > “数据”菜单提供，可用于将外部 CSV 数据集导入 R 会话：“从 Web URL 将数据集导入 R 会话”和“从文本文件将数据集导入 R 会话”。
+“变量资源管理器”工具栏上的两个命令（也可通过“R 工具” > “数据”菜单提供）将外部 CSV 数据集导入 R 会话：“从 Web URL 将数据集导入 R 会话”和“从文本文件将数据集导入 R 会话”。
 
 确定要导入的 CSV 文件后，Visual Studio 会显示一个“导入数据集”对话框，在其中可以选择数据文件的解析方式（即，采用什么字段分隔符以及如何处理引号）。 还可以预览导入的数据帧和原始数据文件：
 

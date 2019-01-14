@@ -1,8 +1,6 @@
 ---
 title: 运行带或不带调试器的分析工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d088978e166f24f624b8ae05cdeb04137d8135
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: f80f6018583194e352210057f31b741ae1b6ac2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948707"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941409"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>运行带/不带调试器的分析工具
 
@@ -116,17 +114,17 @@ Visual Studio 提供了性能测量值和分析工具选择。 某些工具（�
 ## <a name="see-also"></a>请参阅
 
 以下是诊断开发团队的博客文章和 MSDN 文章：  
- [MSDN 杂志：在 Visual Studio 2015 中调试时分析性能](https://msdn.microsoft.com/magazine/dn973013.aspx)
+ [MSDN 杂志：在 Visual Studio 2015 中进行调试的同时分析性能](https://msdn.microsoft.com/magazine/dn973013.aspx)
   
  [MSDN 杂志：使用 IntelliTrace 更快地诊断问题](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
  [博客文章：使用 Visual Studio 2015 中的内存使用率工具诊断事件处理程序漏洞](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
   
- [视频：使用 Microsoft Visual Studio Ultimate 2015 中的 IntelliTrace 进行历史调试](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
+ [视频：使用 Microsoft Visual Studio Ultimate 2015 中的 IntelliTrace 进行历史记录调试](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
   
  [视频：使用 Visual Studio 2015 调试性能问题](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [性能提示：使用 Visual Studio 进行调试时的性能信息概览](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+ [性能提示：使用 Visual Studio 调试时快速查看性能信息](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
   
  [Visual Studio 2015 中的“诊断工具”调试器窗口](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   

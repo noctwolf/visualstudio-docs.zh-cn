@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 19634186e13574c322c2e9bcc636dda3a823b158
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 0c39eecadee0cad44c0e448051869b77022282e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911895"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>如何：用户节奏测试组合模型的对节奏延迟应用分布
 
@@ -30,11 +29,11 @@ ms.locfileid: "52896182"
 
 “对节奏延迟应用分布”的值可以设置为 true 或 false：
 
-- True：方案应用“编辑测试组合”对话框的“每个用户每小时的测试数”列中的值指定的常规统计分布延迟。 有关详细信息，请参阅[编辑文本组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+- **True**：方案应用“编辑测试组合”对话框的“每个用户每小时的测试数”列中的值指定的常规统计分布延迟。 有关详细信息，请参阅[编辑文本组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
      例如，假定你将测试的“编辑测试组合”对话框中的“每个用户每小时的测试数”值设置为每小时 2 个测试。 如果“对节奏延迟应用分布”属性设置为“True”，则会将常规统计分布应用于测试之间的等待时间。 用户每小时仍将运行 2 个测试，但是两次测试之间不一定要有 30 分钟的延迟。 第一个测试可以在 4 分钟后运行，第二个测试可以在 45 分钟后运行。
 
-- False：测试以你为“编辑测试组合”对话框的“每个用户每小时的测试数”列中的值指定的节奏运行。 有关详细信息，请参阅[编辑文本组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+- **False**：测试以你为“编辑测试组合”对话框的“每个用户每小时的测试数”列中的值指定的节奏运行。 有关详细信息，请参阅[编辑文本组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
      例如，假定你将测试的“编辑测试组合”对话框中的“每个用户每小时的测试数”值设置为每小时 2 个测试。 如果“对节奏延迟应用分布”属性设置为“False”，则测试运行时没有机动时间。 测试的运行间隔将为 30 分钟。 这样可以确保每小时执行 2 个测试。
 

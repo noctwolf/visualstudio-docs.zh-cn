@@ -1,8 +1,6 @@
 ---
 title: VSInstr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, instrumentation
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2526938274299cc5a90319749531f80e8bd3a90d
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 1e1c5d548ae8e197523fb92ed130ebeebb04af3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220542"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945764"
 ---
 # <a name="vsinstr"></a>VSInstr
 VSInstr 工具用于检测二进制文件。 使用以下语法调用该工具：  
@@ -35,7 +33,7 @@ VSInstr [/U] filename [/options]
   
  下表描述了 VSInstr 工具选项：  
   
-|选项|描述|  
+|选项|说明|  
 |-------------|-----------------|  
 |**Help** 或 **?**|显示帮助。|  
 |**U**|以 Unicode 形式写入重定向的控制台输出。 它必须是指定的第一个选项。|  
@@ -46,13 +44,13 @@ VSInstr [/U] filename [/options]
 |**DumpFuncs**|列出指定映像中的函数。 未执行任何检测。|  
 |**ExcludeSmallFuncs**|从检测中排除较小的函数，它们是不执行任何函数调用的短函数。 “ExcludeSmallFuncs”选项提供了更少的检测开销，因此提高了检测速度。<br /><br /> 排除较小的函数也可减少进行分析所需的 .vsp 文件的大小和时间。|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|插入可用于标识 .vsp 报表文件中数据区域的开始或结束处的分析标记（用于分隔报表中的数据的标识符）。<br /><br /> **Before** - 紧邻在目标函数进入前。<br /><br /> **After** - 紧邻目标函数退出后。<br /><br /> **Top** - 紧邻目标函数进入后。<br /><br /> **Bottom** - 紧邻目标函数中的每个返回值前。<br /><br /> `funcname` - 目标函数的名称<br /><br /> `Markid` - 用作分析标记的标识符的正整数（长整型）。|  
-|**Coverage**|执行覆盖率检测。 它仅可与下列选项一起使用：Verbose、OutputPath、Exclude 和 Logfile。|  
+|**Coverage**|执行覆盖率检测。 它只能用于以下选项：“Verbose”、“OutputPath”、“Exclude”和“Logfile”。|  
 |**Verbose**|“Verbose”选项用于查看检测进程的相关详细信息。|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|取消所有或特定警告。<br /><br /> `Message Number` - 警告编号。 如果省略 `Message Number`，则会取消所有警告。<br /><br /> 有关详细信息，请参阅 [VSInstr 警告](../profiling/vsinstr-warnings.md)。|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|指定以下 VSInstr 数据收集控制选项的分析级别：<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread** - 指定线程级别的数据集合控制功能。 仅为当前线程启动或停止分析。 其他线程的分析状态不会受到影响。 默认值为 thread。<br /><br /> **Process** - 指定进程级别的分析数据集合控制功能。 为当前进程中的所有线程启动或停止分析。 其他进程的分析状态不会受到影响。<br /><br /> **Global** - 指定全局级别（跨进程）的数据集合控制功能。<br /><br /> 如果未指定分析级别，则会出现错误。|  
 |**Start** `:{` **Inside** `&#124;` **Outside** `},funcname`|将数据收集的范围限制为该函数所调用的目标函数和子函数。<br /><br /> **Inside** - 紧邻在目标函数的入口后插入 StartProfile 函数。 紧邻在目标函数中的每次返回前插入 StopProfile 函数。<br /><br /> **Outside** - 紧邻在对目标函数的每次调用前插入 StopProfile 函数。 紧邻在对目标函数的每次调用后插入 StopProfile 函数。<br /><br /> `funcname` - 目标函数的名称。|  
 |**Suspend** `:{` **Inside** `&#124;` **Outside** `},funcname`|排除该函数所调用的目标函数和子函数的数据集合。<br /><br /> **Inside** - 紧邻在目标函数的入口后插入 SuspendProfile 函数。 紧邻在目标函数中的每次返回前插入 ResumeProfile 函数。<br /><br /> **Outside** - 紧邻在目标函数的入口前插入 SuspendProfile 函数。 从目标函数中退出后立即插入 ResumeProfile 函数。<br /><br /> `funcname` - 目标函数的名称。<br /><br /> 如果目标函数包含 StartProfile 函数，则会在其之前插入 SuspendProfile 函数。 如果目标函数包含 StopProfile 函数，则会在其之后插入 ResumeProfile 函数。|  
-|**StartOnly:** `{` **Before** `&#124;` **After** `&#124;` **Top** `&#124;` **Bottom** `},funcname`|在分析运行期间开始数据收集。 它将在指定位置处插入 StartProfile API 函数。<br /><br /> **Before** - 紧邻在目标函数进入前。<br /><br /> **After** - 紧邻目标函数退出后。<br /><br /> **Top** - 紧邻目标函数进入后。<br /><br /> **Bottom** - 紧邻目标函数中的每个返回值前。<br /><br /> `funcname` - 目标函数的名称。|  
+|**StartOnly：**`{` **Before** `&#124;` **After** `&#124;` **Top** `&#124;` **Bottom** `},funcname`|在分析运行期间开始数据收集。 它将在指定位置处插入 StartProfile API 函数。<br /><br /> **Before** - 紧邻在目标函数进入前。<br /><br /> **After** - 紧邻目标函数退出后。<br /><br /> **Top** - 紧邻目标函数进入后。<br /><br /> **Bottom** - 紧邻目标函数中的每个返回值前。<br /><br /> `funcname` - 目标函数的名称。|  
 |**StopOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在分析运行期间停止数据收集。 它将在指定位置处插入 StopProfile 函数。<br /><br /> **Before** - 紧邻在目标函数进入前。<br /><br /> **After** - 紧邻目标函数退出后。<br /><br /> **Top** - 紧邻目标函数进入后。<br /><br /> **Bottom** - 紧邻目标函数中的每个返回值前。<br /><br /> `funcname` - 目标函数的名称。|  
 |**SuspendOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在分析运行期间停止数据收集。 它将在指定位置处插入 SuspendProfile API 函数。<br /><br /> **Before** - 紧邻在目标函数进入前。<br /><br /> **After** - 紧邻目标函数退出后。<br /><br /> **Top** - 紧邻目标函数进入后。<br /><br /> **Bottom** - 紧邻目标函数中的每个返回值前。<br /><br /> `funcname` - 目标函数的名称。<br /><br /> 如果目标函数包含 StartProfile 函数，则会在其之前插入 SuspendProfile 函数。|  
 |**ResumeOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在分析运行期间开始或恢复数据收集。<br /><br /> 它通常用于在 **SuspendOnly** 选项已停止分析后开始分析。 它将在指定位置处插入 ResumeProfile API 函数。<br /><br /> **Before** - 紧邻在目标函数进入前。<br /><br /> **After** - 紧邻目标函数退出后。<br /><br /> **Top** - 紧邻目标函数进入后。<br /><br /> **Bottom** - 紧邻目标函数中的每个返回值前。<br /><br /> `funcname` - 目标函数的名称。<br /><br /> 如果目标函数包含 StopProfile 函数，则会在其之后插入 ResumeProfile 函数。|  

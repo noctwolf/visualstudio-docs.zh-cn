@@ -2,7 +2,6 @@
 title: “项目设计器”->“服务”页
 ms.date: 01/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba03b4aea25decef39983d203db12dfbedc516d9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4c3e40108f6bca3226e6f39eb2eb4b09437a4f1e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177014"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952376"
 ---
 # <a name="services-page-project-designer"></a>“项目设计器”->“服务”页
 
@@ -53,7 +52,7 @@ ms.locfileid: "39177014"
 
  **使用 Forms 身份验证**
 
- 指示验证提供程序将使用 Forms 身份验证。 这意味着应用程序必须提供用户界面以供登录。 有关详细信息，请参阅[如何：使用客户端应用程序服务来实现用户登录](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)。
+ 指示验证提供程序将使用 Forms 身份验证。 这意味着应用程序必须提供用户界面以供登录。 有关更多信息，请参见[如何：使用客户端应用程序服务实现用户登录](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services)。
 
  **身份验证服务位置**
 

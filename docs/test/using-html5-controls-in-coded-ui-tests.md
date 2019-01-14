@@ -2,19 +2,18 @@
 title: 在编码的 UI 测试中使用 HTML5 控件
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52896181"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53883021"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在编码的 UI 测试中使用 HTML5 控件
 
@@ -75,7 +74,7 @@ ms.locfileid: "52896181"
 
  **搜索属性：**`HtmlVideo` 的搜索属性为 `Id`、`Name` 和 `Title`。
 
- **筛选器属性：**`HtmlVideo` 的筛选器属性为 `Src`、`Poster`、`Class`、`ControlDefinition` 和 `TagInstance`。
+ **筛选器属性：**`HtmlVideo` 的筛选属性为 `Src`、`Poster``Class``ControlDefinition` 和 `TagInstance`。
 
 > [!NOTE]
 > 如果使用 -30s 或 +30s 标签对视频后退或快进，将聚合标签以定位到相应的时间。

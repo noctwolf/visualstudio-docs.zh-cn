@@ -1,8 +1,6 @@
 ---
 title: “指令指针”(IP) 视图 — 争用数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1157183bcb7cd13f2683d6d6dac32cfb81d8974
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: cb7e4712c47376c6e7389085b78e2e01c58f6d88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845072"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853471"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>“指令指针”(IP) 视图 — 争用数据
 争用数据的 IP 视图列出分析运行期间被阻止执行的程序集指令的数据。  
   
  下表说明“指令指针”视图中各列的值。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**独占阻塞的时间**|该函数中的阻塞时间。|  
 |**独占阻塞的时间百分比**|执行指令时的阻塞时间所占的百分比。|  
@@ -45,7 +43,7 @@ ms.locfileid: "34845072"
 |**源行结束**|此指令在源文件中的结束行号。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
+ [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“指令指针”(IP) 视图](../profiling/instruction-pointers-ips-view.md)   
  [“指令指针”(IP) 视图 - 采样](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [“指令指针”(IP) 视图](../profiling/instruction-pointers-ips-view-sampling-data.md)

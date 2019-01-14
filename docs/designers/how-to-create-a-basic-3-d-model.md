@@ -2,7 +2,6 @@
 title: 如何：创建基本三维模型
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6242b80c1dcefe0e1a3a35561337a75e6098d25d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aeff9ce5ad4085c77443775fccb82e0eb9e6739d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913440"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929612"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>如何：创建基本三维模型
 
@@ -72,10 +71,10 @@ ms.locfileid: "49913440"
 
    ![简约建筑的已完成模型](../designers/media/gfx_model_demo_house_final.png)
 
-   下一步，可以将着色器应用于此三维模型。 相关信息，请参阅[如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
+   下一步，可以将着色器应用于此三维模型。 有关详细信息，请参阅[如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：构建 3D 地形模型](../designers/how-to-model-3-d-terrain.md)
+- [如何：构建三维地形模型](../designers/how-to-model-3-d-terrain.md)
 - [模型编辑器](../designers/model-editor.md)
 - [着色器设计器](../designers/shader-designer.md)

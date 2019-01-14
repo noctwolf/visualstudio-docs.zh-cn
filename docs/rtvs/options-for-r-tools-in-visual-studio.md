@@ -3,7 +3,6 @@ title: R 工具选项
 description: Visual Studio 中有关 R 语言及相关功能的选项的参考。
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: reference
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
@@ -15,12 +14,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a40ed2fd72862bde3494edd0c74aebcca6b55711
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 2d48f59be1bb8e41e5cb587a6c5defcfb6e3227f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37342738"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900556"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>针对 Visual Studio 的 R 工具选项
 
@@ -30,10 +29,10 @@ ms.locfileid: "37342738"
 
 可通过以下方法访问特定于 R 的选项和设置。 必选中“选项”对话框底部的“显示所有设置”框，才可显示所有这些部分。
 
-- 代码格式设置选项（请参阅[编辑器选项](editing-r-code-in-visual-studio.md#editor-options)）：选择“工具” > “选项”菜单，然后选择“文本编辑器” > “R” > “格式设置”
-- Linter 选项（请参阅 [Linting](linting-r-code.md)）：选择“工具” > “选项”菜单，然后选择“文本编辑器” > “R” > “Lint”
-- 高级编辑器选项（[在本文中介绍](#text-editor--r--advanced-options)）：选择“工具” > “选项”菜单，然后选择“文本编辑器” > “R” > “高级”
-- 行为选项（[在本文中介绍](#r-tools--advanced-options)）：选择“R 工具” > “选项”菜单，或者选择“工具” > “选项”，然后滚动到“R 工具”。
+- 代码格式设置选项（请参阅[编辑器选项](editing-r-code-in-visual-studio.md#editor-options)）：菜单中的“工具” > “选项”，然后选择“文本编辑器” > “R” > “格式设置”
+- Linter 选项（请参阅 [Linting](linting-r-code.md)）：菜单中的“工具” > “选项”，然后选择“文本编辑器” > “R” > “Lint”
+- 高级编辑器选项（[本文中所述](#text-editor--r--advanced-options)）：菜单中的“工具” > “选项”，然后选择“文本编辑器” > “R” > “高级”
+- 行为选项（[本文中所述](#r-tools--advanced-options)）：菜单中的“R 工具” > “选项”，或“工具” > “选项”，然后向下滚动到“R 工具”。
 
 “R 工具” > “数据科学设置”命令还会影响整个 Visual Studio 中的众多不同设置。 下一部分中对此命令进行了介绍。
 
@@ -69,20 +68,20 @@ ms.locfileid: "37342738"
 
 以下选项控制在[变量资源管理器](variable-explorer.md)和调试器窗口（如监视和局部变量）中处理值的方式（请参阅[调试 R 代码](debugging-r-in-visual-studio.md)）。
 
-| 选项 | 默认值 | 描述 |
+| 选项 | 默认值 | 说明 |
 | --- | --- | --- |
 | 评估活动绑定 | `True` | 如果为 `True`，可确保在检查变量和属性时始终看到最新值。 风险是计算表达式的值可能产生副作用，具体取决于实现方式。 |
 | 显示以圆点作为前缀的变量 | `False` | 指定是否显示以 `.` 作为前缀的变量。 |
 
 ### <a name="grid-view"></a>网格视图
 
-| 选项 | 默认值 | 描述 |
+| 选项 | 默认值 | 说明 |
 | --- | --- | --- |
 | 动态评估 | `False` | 默认情况下，`View(<expression>)` 函数将数据快照用作数据帧，其中包含大型数据集，会占用大量内存。 将此选项设置为 `True` 时，会在刷新网格以仅提取显示的数据时，对表达式求值。 但是，如果表达式更改，数据也会随之更改，这可能不适合 dplyr pip 表达式。 |
 
 ### <a name="help"></a>帮助
 
-| 选项 | 默认值 | 描述 |
+| 选项 | 默认值 | 说明 |
 | --- | --- | --- |
 | F1 Web 浏览器 | `Internal` | 控制使用 Ctrl+F1 搜索术语时帮助的显示方式。 如果设置为 `Internal`，帮助将在 Visual Studio 的工具窗口内呈现。 如果设置为 `External`，帮助将出现在默认的 Web 浏览器中。 |
 | F1 Web 搜索字符串 | `R site:stackoverflow.com` | 控制在编辑器中的术语上按 Ctrl+F1 时，向搜索引擎传递搜索词的方式。 默认情况下，字符串为 `R site:stackoverflow.com`，它将 `R` 追加到搜索词。 `site:stackoverflow.com` 是向搜索引擎发出的指令，告知搜索引擎将搜索范围限定在 `stackoverflow.com` 域内的页面内。 |
@@ -90,7 +89,7 @@ ms.locfileid: "37342738"
 
 ### <a name="history"></a>历史记录
 
-| 选项 | 默认值 | 描述 |
+| 选项 | 默认值 | 说明 |
 | --- | --- | --- |
 | 始终保存历史记录 | `True` | 控制每当关闭项目时，RTVS 是否将命令历史记录写入工作目录中的 .RHistory 文件。 即使在退出前不保存项目，历史记录也仍会被保存。 |
 | 重置搜索筛选器 | `True` | 确定历史记录窗口是否可以筛选命令历史记录，以便只显示子字符串与“R 历史记录”对话框中的筛选器术语匹配的命令。 此设置确定每次运行新命令或切换到新项目时，是否重置历史记录搜索筛选器，这将触发加载其他 .RHistory 文件。 使用筛选器集运行命令时，以及想要知道刚运行的命令为何未在历史记录中显示时，使用默认设置 `True` 可最大限度减少意外情况的发生。 |
@@ -98,32 +97,32 @@ ms.locfileid: "37342738"
 
 ### <a name="html"></a>HTML
 
-| 选项 | 默认值 | 描述 |
+| 选项 | 默认值 | 说明 |
 | --- | --- | --- |
 | HTML 页面浏览器 | `External` | 确定在哪个位置呈现 `ggvis` 绘图或 `shiny` 应用程序等内容。 值为 `Internal` 时，在 Visual Studio 的工具窗口中显示 HTML 输出，而值为 `External` 时，在默认浏览器中显示 HTML 输出。 |
 
 ### <a name="logging"></a>日志记录
 
-| 选项 | 默认值 | 描述 |
+| 选项 | 默认值 | 说明 |
 | --- | --- | --- |
 | 日志事件 | `Normal` | 控制用于 RTVS 诊断的日志记录的详细级别。 使用默认设置 `Normal` 可在 `TEMP` 目录中创建一个日志文件。 如果设置为 `Traffic`，RTVS 将记录所有命令和会话中的响应。 这些日志文件始终都将保存在计算机中，但对诊断 RTVS 中的问题可能十分有用。 |
 
 ### <a name="markdown"></a>Markdown
 
-| 选项 | 默认值 | 描述 |
+| 选项 | 默认值 | 说明 |
 | --- | --- | --- |
 | Markdown 预览浏览器 | `External` | 确定在何处显示 RMarkdown HTML 输出。 使用值 `Internal` 时，在 Visual Studio 的工具窗口中显示 RMarkdown HTML 文档，而使用值 `External` 时，使用默认浏览器显示 RMarkdown HTML。 |
 
 ### <a name="r-engine"></a>R 引擎
 
-| 选项 | 默认值 | 描述 |
+| 选项 | 默认值 | 说明 |
 | --- | --- | --- |
 | 代码页 | `(OS Default)` | 设置 R 的代码页（区域设置）。默认情况下，使用的是操作系统的基础区域设置。 |
 | CRAN 镜像 | `(Use .Rprofile)` | 设置用于包安装的默认 CRAN 镜像。 `Use .Rprofile` 的默认设置沿用 .RProfile 文件中的 CRAN 镜像设置。 |
 
 ### <a name="workspace"></a>工作区
 
-| 选项 | 默认值 | 描述 |
+| 选项 | 默认值 | 说明 |
 | --- | --- | --- |
 | 在打开项目时加载工作区 | `No` | 如果设置为 `Yes`，则会在打开项目后将会话数据从 .RData 文件加载到全局环境中。 |
 | 提示在重置时保存工作区 | `Yes` | 如果设置为 `No`，在交互窗口中单击“重置”按钮时，不会出现保存工作区的提示。 |

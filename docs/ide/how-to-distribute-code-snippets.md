@@ -2,7 +2,6 @@
 title: 如何：分发代码片段
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cd6aba7c20c920c0c4351a1e9aa263fc73cd4415
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e624f313c66df09c7496babe08a32dfd8453829c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380412"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836057"
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：分发代码片段
 
@@ -29,7 +28,7 @@ ms.locfileid: "39380412"
 
 ## <a name="set-up-the-extension"></a>设置扩展
 
-在此过程中，将使用在[演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)中创建的相同 Hello World 代码片段。 我们提供 .snippet 文本，因此无需返回该演练并获取相关代码片段。
+在此过程中，将使用相同的 Hello World 代码片段，该代码片段创建自[演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)。 我们提供 .snippet 文本，因此无需返回该演练并获取相关代码片段。
 
 1. 创建名为 **TestSnippet** 的新 VSIX 项目。 （“文件” > “新建” > “项目” > “Visual C#”（或“Visual Basic”） > “扩展性”。）
 
@@ -103,7 +102,7 @@ ms.locfileid: "39380412"
 
 4. 测试代码片段。 在实验实例中，打开 Visual Basic 项目，并打开一个代码文件。 将光标置于代码中的某处，右键单击，然后在上下文菜单中选择“插入片段”。
 
-5. 将看到 HelloWorldVB 显示为一个文件夹。 双击该选项。 将会看到一个弹出窗口“<插入片段: HelloWorldVB >”，该窗口中包含下拉列表“HelloWorldVB”。 单击 HelloWorldVB 下拉列表。 将看到添加到文件的以下行：
+5. 将看到 HelloWorldVB 显示为一个文件夹。 双击该选项。 应会看到弹出窗口插入代码段：HelloWorldVB >，其包含“HelloWorldVB”下拉列表。 单击 HelloWorldVB 下拉列表。 将看到添加到文件的以下行：
 
     ```vb
     Console.WriteLine("Hello, World!")

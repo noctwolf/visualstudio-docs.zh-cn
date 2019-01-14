@@ -1,8 +1,6 @@
 ---
 title: 性能工具问题疑难解答 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 432afd3051d7deb04fe32c02d163e59e324f6b60
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668237"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870831"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>性能工具问题疑难解答
 使用分析工具时，可能会遇到以下问题之一：  
@@ -27,13 +25,13 @@ ms.locfileid: "35668237"
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>分析工具未收集任何数据  
  分析应用程序之后，未创建分析数据 (.vsp) 文件，你在“输出”窗口或命令窗口中收到以下警告：  
   
- PRF0025: 未收集到任何数据。  
+ PRF0025：未收集到任何数据。  
   
  此问题可能由多个问题导致：  
   
 -   使用采样或 .NET 内存方法分析的进程启动的子进程成为执行应用程序工作的进程。 例如，某些应用程序读取命令行以确定它们是作为 Windows 应用程序还是命令行应用程序启动。 如果请求了 Windows 应用程序，则原始进程会启动一个配置为 Windows 应用程序的新进程，然后原始进程退出。 因为分析工具不会自动收集子进程的数据，所以不会收集任何数据。  
   
-     若要在这种情况下收集分析数据，请将探查器附加到子进程而不是使用探查器启动应用程序。 有关详细信息，请参阅[如何：在正在运行的进程中附加和分离性能工具](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)和[附加 (VSPerfCmd)](../profiling/attach.md)  
+     若要在这种情况下收集分析数据，请将探查器附加到子进程而不是使用探查器启动应用程序。 有关更多信息，请参见[如何：在正在运行的进程中附加和拆离性能工具](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)和[附加 (VSPerfCmd)](../profiling/attach.md)  
   
 ## <a name="performance-views-and-reports-display-numbers-for-function-names"></a>性能视图和报告显示函数名的编号  
  分析应用程序之后，在报告和视图中看到编号而不是函数名。  

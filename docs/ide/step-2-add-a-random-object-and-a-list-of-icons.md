@@ -1,9 +1,7 @@
 ---
 title: 步骤 2：添加 Random 对象和图标列表
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c9c837fdb812b18f72e768b8ee528118b28777
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a8e9787d3f130bc6fb6597b3e8a5a6a8483029d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746827"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907211"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步骤 2：添加 Random 对象和图标列表
 在本步骤中，你要为游戏创建一组匹配的符号。 每个符号将添加到窗体上 TableLayoutPanel 中的两个随机单元格。 为此，请使用两个 `new` 语句创建两个对象。 第一个是 <xref:System.Random> 对象，类似于数学测验游戏中使用的对象。 此代码中使用它来随机选择 TableLayoutPanel 中的单元格。 第二个对象是用于存储随机选择的符号的 <xref:System.Collections.Generic.List%601> 对象，你可能没有见过。
@@ -43,7 +41,7 @@ ms.locfileid: "34746827"
 
      如果你分小段查看代码（和备注），理解起来会更容易。 你的程序可以使用 list 对象跟踪多个不同类型的项目。 列表可以包含数字、true/false 值、文本或其他对象。 你甚至可以有一个包含其他 list 对象的 list 对象。 列表中的项目称为“元素”，每个列表只包含一种元素。 所以数字列表只包含数字，你不能向该列表中添加文本。 同样，你也不能向 true/false 值列表中添加数字。
 
-     当使用 `List` 语句创建 `new` 对象时，你需要指定要在其中存储的数据类型。 因此，“IntelliSense”窗口顶部的工具提示会显示列表中的元素类型。 `List<string>`（Visual C# 中）和 `List(Of String)`（Visual Basic 中）的含义也在于此：这是存储 `List` 数据类型的元素的 `string` 对象。 程序使用字符串来存储文本，该文本是“IntelliSense”窗口右侧的工具提示将告诉你的文本。
+     当使用 `List` 语句创建 `new` 对象时，你需要指定要在其中存储的数据类型。 因此，“IntelliSense”窗口顶部的工具提示会显示列表中的元素类型。 同样，这也是 `List<string>`（Visual C# 中）和 `List(Of String)`（Visual Basic 中）的含义：它是包含 `string` 数据类型的元素的 `List` 对象。 程序使用字符串来存储文本，该文本是“IntelliSense”窗口右侧的工具提示将告诉你的文本。
 
 4.  请考虑为什么在 Visual Basic 中必须首先创建临时数组，但在 Visual C# 中可以使用一条语句创建列表。 这是因为 Visual C# 语言具有“集合初始值设定项”，从而准备了可以接受值的列表。 在 Visual Basic 中，你可以使用集合初始值设定项。 但是，为了与以前版本的 Visual Basic 兼容，我们建议你使用上面的代码。
 
@@ -56,4 +54,4 @@ ms.locfileid: "34746827"
 
 -   若要转到下一个教程步骤，请参阅[步骤 3：向每个标签分配一个随机图标](../ide/step-3-assign-a-random-icon-to-each-label.md)。
 
--   若要返回上一个教程步骤，请参阅[步骤 1：创建项目并向窗体添加表格](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)。
+-   若要返回上一个教程步骤，请参阅[步骤 1：创建项目并向窗体添加表](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)。

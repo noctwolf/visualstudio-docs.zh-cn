@@ -1,9 +1,7 @@
 ---
 title: 步骤 4：使用 TableLayoutPanel 控件设置窗体布局
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164b0974d751dcfd164efab765432c1f9c23458c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5f60d39cb14bfb471e677a8c231091e97d3016a6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821330"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步骤 4：使用 TableLayoutPanel 控件设置窗体布局
 在此步骤中，向窗体添加一个 <xref:System.Windows.Forms.TableLayoutPanel> 控件。 TableLayoutPanel 可帮助在窗体中正确地对齐您稍后将添加的控件。
 
- ![视频链接](../data-tools/media/playvideo.gif)有关本主题的视频版本，请观看[教程 1：在 Visual Basic 中创建图片查看器 - 视频 2](http://go.microsoft.com/fwlink/?LinkId=205211) 或[教程 1：在 C# 中创建图片查看器 - 视频 2](http://go.microsoft.com/fwlink/?LinkId=205200)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
+ ![视频链接](../data-tools/media/playvideo.gif)有关此主题的视频版本，请参阅[教程 1：在 Visual Basic 中创建图片查看器 - 视频 2](http://go.microsoft.com/fwlink/?LinkId=205211) 或[教程 1：在 C# 中创建图片查看器 - 视频 2](http://go.microsoft.com/fwlink/?LinkId=205200)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
 
 ## <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>使用 TableLayoutPanel 控件设置窗体布局
 
@@ -62,7 +60,7 @@ TableLayoutPanel 控件
 7.  将 TableLayoutPanel 的“停靠”属性设置为“填充”后，此面板将填充整个窗体。 如果再次调整窗体的大小，则 TableLayoutPanel 将保持停靠状态，并自行调整大小以适合窗体。
 
     > [!NOTE]
-    >  TableLayoutPanel 与 Microsoft Office Word 中的表类似：它具有行和列，并且个别单元格可以跨多个行和列。 每个单元格都可以存放一个控件（例如按钮、复选框或标签）。 TableLayoutPanel 将具有一个跨其整个顶部行的 <xref:System.Windows.Forms.PictureBox> 控件、一个位于其左下方单元格中的 <xref:System.Windows.Forms.CheckBox> 控件和四个位于其右下方单元格中的 <xref:System.Windows.Forms.Button> 控件。
+    >  TableLayoutPanel 的工作方式类似于 Microsoft Office Word 中的表：它有行和列，并且单个单元格可以跨多个行和列。 每个单元格都可以存放一个控件（例如按钮、复选框或标签）。 TableLayoutPanel 将具有一个跨其整个顶部行的 <xref:System.Windows.Forms.PictureBox> 控件、一个位于其左下方单元格中的 <xref:System.Windows.Forms.CheckBox> 控件和四个位于其右下方单元格中的 <xref:System.Windows.Forms.Button> 控件。
 
 8.  TableLayoutPanel 当前具有两个大小相等的行和两个大小相等的列。 您需要调整它们，以使顶部行和右侧列更大一些。 在“Windows 窗体设计器”中选择“TableLayoutPanel”。 在右上角有一个小的黑色三角形按钮，如下所示。
 
@@ -90,6 +88,6 @@ TableLayoutPanel 列和行样式
 
 ## <a name="to-continue-or-review"></a>继续或查看
 
--   若要转到下一个教程步骤，请参阅[步骤 5：向窗体添加控件](../ide/step-5-add-controls-to-your-form.md)。
+-   要转到下一个教程步骤，请参阅[步骤 5：向窗体添加控件](../ide/step-5-add-controls-to-your-form.md)。
 
--   若要返回上一个教程步骤，请参阅[步骤 3：设置窗体属性](../ide/step-3-set-your-form-properties.md)。
+-   要返回上一个教程步骤，请参阅[步骤 3：设置窗体属性](../ide/step-3-set-your-form-properties.md)。

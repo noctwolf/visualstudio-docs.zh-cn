@@ -1,8 +1,6 @@
 ---
 title: 了解性能收集方法 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.methodpage
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9bde4e313b9baf4975f5bff247fac248f3a090ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668242"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53825784"
 ---
 # <a name="understand-performance-collection-methods"></a>了解性能收集方法
 
@@ -27,7 +25,7 @@ Visual Studio 分析工具提供了五种可以用于收集性能数据的方法
 > [!NOTE]
 > Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
 |[采样](#sampling)|收集有关应用程序执行的工作的统计数据。|
 |[检测](#instrumentation)|收集有关每个函数调用的详细计时信息。|
@@ -133,5 +131,5 @@ Visual Studio 分析工具提供了五种可以用于收集性能数据的方法
 
 ## <a name="see-also"></a>请参阅
 
-[如何：为 Web 站点收集性能数据](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
+[如何：收集网站性能数据](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
 [性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)

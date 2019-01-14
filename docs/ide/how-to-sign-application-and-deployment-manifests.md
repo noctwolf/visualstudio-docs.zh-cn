@@ -1,8 +1,7 @@
 ---
-title: 如何：对应用程序和部署清单进行签名
+title: 如何：对应用程序和部署清单签名
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -19,14 +18,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 45199d736e1402c67ca84ced8db95d81534a7c3a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381942"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852909"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单进行签名
+# <a name="how-to-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单签名
 
 如果想要通过使用 ClickOnce 部署发布应用程序，则必须通过验证码技术使用公钥/私钥对应用程序和部署清单进行签名。 可以使用 Windows 证书存储或密钥文件中的证书对清单进行签名。
 
@@ -34,7 +33,7 @@ ms.locfileid: "39381942"
 
  对于基于 .exe 的应用程序，对 ClickOnce 清单进行签名是可选的。 有关详细信息，请参阅本文档的“生成未签名的清单”部分。
 
- 有关创建密钥文件的信息，请参阅[如何：创建公钥/私钥对](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)。
+ 有关创建密钥文件的详细信息，请参阅[如何：创建公钥/私钥对](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)。
 
 > [!NOTE]
 > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 仅支持具有 .pfx 扩展名的个人信息交换 (PFX) 密钥文件。 但是，可通过单击项目属性“签名”页上的“从存储中选择”，从当前用户的 Windows 证书存储中选择其他类型的证书。
@@ -94,7 +93,7 @@ ms.locfileid: "39381942"
 
 2.  在“签名”页上，清除“为 ClickOnce 清单签名”复选框。
 
-3.  重置发布版本，以使应用程序仅有一个版本可用。 默认情况下，每次发布应用程序时，Visual Studio 都会自动递增发布版本的版本号。 有关详细，请参阅[如何：设置 ClickOnce 发布版本](../deployment/how-to-set-the-clickonce-publish-version.md)。
+3.  重置发布版本，以使应用程序仅有一个版本可用。 默认情况下，每次发布应用程序时，Visual Studio 都会自动递增发布版本的版本号。 有关更多信息，请参见[如何：设置 ClickOnce 发布版本](../deployment/how-to-set-the-clickonce-publish-version.md)。
 
 4.  发布应用程序。
 

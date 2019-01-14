@@ -1,8 +1,6 @@
 ---
 title: MSBuild 属性 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f5743e9532a50089317f0c28917927f514eb4709
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879182"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987033"
 ---
 # <a name="msbuild-properties"></a>MSBuild 属性
 属性是可用于配置生成的名称/值对。 属性可用于将值传递给任务，评估条件和存储将在整个项目文件中引用的值。  
@@ -46,7 +44,7 @@ ms.locfileid: "48879182"
 ## <a name="reserved-properties"></a>预留属性  
  MSBuild 保留了一些属性名称，用于存储有关项目文件和 MSBuild 二进制文件的信息。 与其他属性一样，可使用 $ 符号引用这些属性。 例如，$(MSBuildProjectFile) 会返回项目文件的完整文件名，包括文件扩展名。  
   
- 有关详细信息，请参阅[如何：引用项目文件的名称或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和常见属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
+ 有关更多信息，请参见[如何：引用项目文件的名称或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和常见属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
   
 ## <a name="environment-properties"></a>环境属性  
  可以引用项目文件中的环境变量，方法与引用保留属性相同。 例如，若要使用项目文件中的 `PATH` 环境变量，可使用 $(Path)。 如果项目包含与环境属性具有相同名称的属性定义，则项目中的属性将覆盖环境变量的值。  
@@ -58,7 +56,7 @@ ms.locfileid: "48879182"
 > [!TIP]
 >  并非所有的环境变量都被读入并成为初始属性。 系统将忽略变量名称不是有效 MSBuild 属性名称的所有环境变量（例如“386”）。  
   
- 有关详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
+ 有关更多信息，请参见[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
   
 ## <a name="registry-properties"></a>注册表属性  
  可使用以下语法读取系统注册表值，其中 `Hive` 是注册表配置单元（例如 HKEY_LOCAL_MACHINE），`Key` 是密钥名称，`SubKey` 是子密钥名称，`Value` 是子密钥的值。  
@@ -94,7 +92,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
   
  还可使用 MSBuild 任务的 `Properties` 属性为多项目生成中的子项目设置或修改全局属性。 除非使用 MSBuild 任务的 `RemoveProperties` 属性来指定不准备转发的属性列表，否则全局属性同样会转发到子项目。 有关详细信息，请参阅 [MSBuild 任务](../msbuild/msbuild-task.md)。
   
- 如果您在项目标记中使用 `TreatAsLocalProperty` 特性指定一个属性，则全局属性值不会重写项目文件中设置的属性值。 有关详细信息，请参阅[项目元素 (MSBuild)](../msbuild/project-element-msbuild.md) 和[如何：使用不同选项生成相同的源文件](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。  
+ 如果您在项目标记中使用 `TreatAsLocalProperty` 特性指定一个属性，则全局属性值不会重写项目文件中设置的属性值。 有关详细信息，请参阅 [Project 元素 (MSBuild)](../msbuild/project-element-msbuild.md)和[如何：使用不同选项生成相同的源文件](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。  
   
 ## <a name="property-functions"></a>属性函数  
  从 .NET Framework 版本 4 开始，可以使用属性函数来计算 MSBuild 脚本。 可在生成脚本中读取系统时间、比较字符串、匹配正则表达式及执行其他操作，而无需使用 MSBuild 任务。  

@@ -88,7 +88,7 @@ ms.locfileid: "51817433"
 
 %SUBSCRIBER NAME% 你好
 
-已向你分配 Visual Studio 订阅。 请访问 https://my.visualstudio.com，并使用 %DIRECTORY ADDRESS% 地址登录，以激活和访问你的订阅。
+已向你分配 Visual Studio 订阅。 请访问 https://my.visualstudio.com ，并使用 %DIRECTORY ADDRESS% 地址登录，以激活和访问你的订阅。
 
 如果遇到问题，请联系支持团队 (https://visualstudio.microsoft.com/subscriptions/support/))。
 
@@ -111,7 +111,7 @@ ms.locfileid: "51817433"
 
 在向订阅者分配订阅后，他们将收到一封电子邮件，要求他们访问 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 以利用其订阅权益。  当尝试登录时，Visual Studio 订阅登录将失败，并显示一条错误，指出帐户无法识别。  在登录 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 之前，请要求订阅者遵循这些指示。  如有必要，可在分配订阅后使用此[模板](#notifying-your-subscribers-using-personal-accounts)来通知订阅者。
 
-1. 导航到 https://my.visualstudio.com，然后单击“创建新的 Microsoft 帐户”。
+1. 导航到 https://my.visualstudio.com ，然后单击“创建新的 Microsoft 帐户”。
 
 2. 填写字段：
    - 在 Someone@example.com 框中输入接收欢迎电子邮件的电子邮件地址
@@ -133,7 +133,7 @@ ms.locfileid: "51817433"
 
 %SUBSCRIBER NAME% 你好
 
-我们已向你分配了 Visual Studio 订阅，你可以按照欢迎电子邮件的指示登录 https://my.visualstudio.com。  虽然这是使用权益的正确网站，但我们的组织要求你在访问该网站之前执行一些额外步骤。  请按照以下说明帮助你创建一个与我们的公司电子邮件地址绑定的“Microsoft帐户”。  完成这些步骤后，可使用你的电子邮件地址来访问订阅权益。
+我们已向你分配了 Visual Studio 订阅，你可以按照欢迎电子邮件的指示登录 https://my.visualstudio.com 。  虽然这是使用权益的正确网站，但我们的组织要求你在访问该网站之前执行一些额外步骤。  请按照以下说明帮助你创建一个与我们的公司电子邮件地址绑定的“Microsoft帐户”。  完成这些步骤后，可使用你的电子邮件地址来访问订阅权益。
 1. 访问 https://my.visualstudio.com
 
 2. 单击右侧的“创建新的 Microsoft 帐户”

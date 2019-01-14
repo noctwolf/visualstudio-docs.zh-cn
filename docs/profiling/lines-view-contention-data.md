@@ -1,8 +1,6 @@
 ---
 title: “行”视图 — 争用数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c0afb540a314d1e980e9b0a6ccace0b36145cce6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905421"
 ---
 # <a name="lines-view---contention-data"></a>“行”视图 - 争用数据
 争用数据的“行”视图列出分析运行期间收集样本时所执行语句的性能数据。 在源文件中，一个语句可分散在多行中，而一行也可包括多个语句。  
@@ -40,7 +38,7 @@ ms.locfileid: "49890044"
   
   下表介绍“行视图”报告中的各列。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**独占阻塞的时间**|因争用事件而阻滞此语句执行语句中代码的时间长度。 不包括语句所调用的函数中的阻塞时间。|  
 |**独占阻塞的时间百分比**|语句的独占阻塞时间占进程中所有阻塞时间的百分比。|  
@@ -65,7 +63,7 @@ ms.locfileid: "49890044"
 |**源行结束**|该语句在源文件中的结束行号。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
+ [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“行”视图](../profiling/lines-view.md)   
  [“行”视图 - 采样](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [“行”视图](../profiling/lines-view-sampling-data.md)

@@ -2,7 +2,6 @@
 title: 有关使用代码段的最佳做法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8c7a04f2a2fb2ef59a41953c82da4254f213084
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d95b1b95d1859d29f82f7de45aa6ddb9cde7554f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179526"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53908913"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>有关使用代码片段的最佳做法
 
@@ -25,7 +24,7 @@ ms.locfileid: "39179526"
 
 ## <a name="handling-exceptions"></a>处理异常
 
-通常情况下，代码片段 Try…Catch 块可捕获和重新引发所有异常。 这可能并不适合你的项目。 对于每个异常，可通过几种方法进行响应。 相关示例请参阅[如何：使用 try/catch 处理异常 (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) 和 [Try...Catch...Finally 语句 (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)。
+通常情况下，代码片段 Try…Catch 块可捕获和重新引发所有异常。 这可能并不适合你的项目。 对于每个异常，可通过几种方法进行响应。 相关示例，请参阅[如何：使用 try/catch 处理异常 (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) 和 [Try...Catch...Finally 语句 (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)。
 
 ## <a name="file-locations"></a>文件位置
 

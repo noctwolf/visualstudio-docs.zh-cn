@@ -1,8 +1,6 @@
 ---
 title: “调用树”视图 - 争用数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40e28eb246b2c4611a15dc4ce2cf6b1b02dd0100
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 86a4e29425e710818dee68e28dcc306c3c14ab85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263176"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927501"
 ---
 # <a name="call-tree-view---contention-data"></a>“调用树”视图 - 争用数据
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都列出它所调用的所有函数、函数被阻止的次数，以及函数由于与其他线程或进程争用资源而被阻止的时间量。  
@@ -34,7 +32,7 @@ ms.locfileid: "34263176"
   
  设置根节点后，将从视图中排除所选节点的子树之外的所有其他条目。 若要将根节点重置回原始节点，可在“调用树”视图中右键单击，然后单击“重置根节点”。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**独占阻塞的时间**|阻止此执行路径中此函数的实例在分析运行中执行的时间。 此时间不包括此函数调用的子函数的阻塞时间。|  
 |**独占阻塞的时间百分比**|此执行路径中此函数的独占阻塞时间占分析运行中的所有阻塞时间的百分比。|  
@@ -55,7 +53,7 @@ ms.locfileid: "34263176"
 |**源文件**|此函数的定义所在的源文件。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
+ [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“调用树”视图](../profiling/call-tree-view.md)   
  [“调用树”视图 - 检测](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [“调用树”视图 - 采样](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   

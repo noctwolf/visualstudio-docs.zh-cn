@@ -1,8 +1,6 @@
 ---
 title: ResolveAssemblyReference 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveAssemblyReference
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7378aca5d06c7d1c49d7b46261060caf7a005db
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 7bf4b4250098303d1fcba8334281fe9c337226b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637651"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942393"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 任务
 确定依赖指定程序集的所有程序集，其中包括第二级和第 `n` 级的依赖项。  
@@ -36,7 +34,7 @@ ms.locfileid: "39637651"
 ## <a name="parameters"></a>参数  
  下表描述了 `ResolveAssemblyReference` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`AllowedAssemblyExtensions`|可选 `String[]` 参数。<br /><br /> 将在解析引用时使用的程序集文件扩展名。 默认文件扩展名为 .exe 和 .dll。|  
 |`AllowedRelatedFileExtensions`|可选 `String[]` 参数。<br /><br /> 要用于搜索彼此相互关联的文件的文件扩展名。 默认扩展名是 .pdb 和 .xml。|  
@@ -67,11 +65,11 @@ ms.locfileid: "39637651"
 |`ResolvedFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 包含已解析为完整路径的所有主引用列表。<br /><br /> 此参数中的项选择性地包含以下项的元数据：<br /><br /> -   `CopyLocal`： `Boolean` 值。 指示给定引用是否应复制到输出目录。<br />-   `FusionName`： `String` 值。 指定此依赖项的名称。<br />-   `ResolvedFrom`： `String` 值。 指定已从中解析此文件的文字搜索路径。|  
 |`SatelliteFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 指定找到的任何附属文件。 如果导致此项存在的引用或依赖项是 CopyLocal=true，则这些将为 CopyLocal=true。<br /><br /> 此参数中的项选择性地包含以下项的元数据：<br /><br /> -   `CopyLocal`： `Boolean` 值。 指示给定引用是否应复制到输出目录。 如果导致此项存在的引用或依赖项具有为 `true` 的 `CopyLocal` 值，则这个值为 `true`。<br />-   `DestinationSubDirectory`： `String` 值。 指定要复制此项到的相对目标目录。|  
 |`ScatterFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 包含与某个给定的程序集关联的散点文件。<br /><br /> 此参数中的项选择性地包含以下项的元数据：<br /><br /> -   `CopyLocal`： `Boolean` 值。 指示给定引用是否应复制到输出目录。|  
-|`SearchPaths`|必选 `String[]` 参数。<br /><br /> 指定目录或特殊位置，将在其中进行搜索以找到磁盘上表示程序集的文件。 列出搜索路径的顺序非常重要。 对于每个程序集，从左到右搜索路径的列表。 当找到表示该程序集的文件时，该搜索即停止，并且开始搜索下一个程序集。<br /><br /> 此参数接受以分号分隔的值列表，这些值可以是目录路径，也可以是下表中的特殊文本值：<br /><br /> -   `{HintPathFromItem}`：指定该任务将检查基项的 `HintPath` 元数据。<br />-   `{CandidateAssemblyFiles}`：指定该任务将检查通过 `CandidateAssemblyFiles` 参数传入的文件。<br />-   `{Registry:` \<AssemblyFoldersBase>、\<RuntimeVersion>、\<AssemblyFoldersSuffix>`}`：指定该任务将在注册表中指定的其他文件夹中搜索。 \<AssemblyFoldersBase>、\<RuntimeVersion> 和 \<AssemblyFoldersSuffix> 应替换为要搜索的注册表位置的特定值。 常见目标中的默认规范是 {Registry:$(FrameworkRegistryBase)、$(TargetFrameworkVersion)、$(AssemblyFoldersSuffix)、$(AssemblyFoldersExConditions)}。<br />-   `{AssemblyFolders}`：指定该任务将使用 Visual Studio.NET 2003 finding-assemblies-from-registry（从注册表查找程序集）方案。<br />-   `{GAC}`：指定该任务将在全局程序集缓存 (GAC) 中搜索。<br />-   `{RawFileName}`：指定该任务将项的 `Include` 值视为确切的路径和文件名。|  
+|`SearchPaths`|必选 `String[]` 参数。<br /><br /> 指定目录或特殊位置，将在其中进行搜索以找到磁盘上表示程序集的文件。 列出搜索路径的顺序非常重要。 对于每个程序集，从左到右搜索路径的列表。 当找到表示该程序集的文件时，该搜索即停止，并且开始搜索下一个程序集。<br /><br /> 此参数接受以分号分隔的值列表，这些值可以是目录路径，也可以是下表中的特殊文本值：<br /><br /> -   `{HintPathFromItem}`：指定任务将检查基项的 `HintPath` 元数据。<br />-   `{CandidateAssemblyFiles}`：指定任务将检查通过 `CandidateAssemblyFiles` 参数传入的文件。<br />-   `{Registry:` \<AssemblyFoldersBase>、\<RuntimeVersion>、\<AssemblyFoldersSuffix>`}`：指定任务将在注册表中指定的其他文件夹中进行搜索。 \<AssemblyFoldersBase>、\<RuntimeVersion> 和 \<AssemblyFoldersSuffix> 应替换为要搜索的注册表位置的特定值。 常见目标中的默认规范是 {Registry:$(FrameworkRegistryBase)、$(TargetFrameworkVersion)、$(AssemblyFoldersSuffix)、$(AssemblyFoldersExConditions)}。<br />-   `{AssemblyFolders}`：指定任务将使用 Visual Studio.NET 2003 finding-assemblies-from-registry（从注册表查找程序集）方案。<br />-   `{GAC}`：指定任务将在全局程序集缓存 (GAC) 中搜索。<br />-   `{RawFileName}`：指定任务将项的 `Include` 值视为确切的路径和文件名。|  
 |`SerializationAssemblyFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 包含找到的任何 XML 序列化程序集。 如果导致此项存在的引用或依赖项是 CopyLocal=true，则这些项被标记为 CopyLocal=true。<br /><br /> `Boolean` 元数据 CopyLocal 指示给定的引用是否应该复制到输出目录。|  
 |`Silent`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则不记录任何信息。 默认值为 `false`。|  
 |`StateFile`|可选 `String` 参数。<br /><br /> 指定一个文件名，该文件名表示用于保存此任务的中间生成状态的位置。|  
-|`SuggestedRedirects`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 针对每个不同的冲突程序集标识包含一个项，而不考虑 `AutoUnify` 参数的值。 这包括发现在应用程序配置文件中没有合适的 bindingRedirect 条目的每个区域性 和 PKT。<br /><br /> 每个项选择性地包含以下信息：<br /><br /> -   `Include` 特性：包含版本字段值为 0.0.0.0 的程序集系列的完整名称<br />-   `MaxVersion` 项元数据：包含的最大的版本号。|  
+|`SuggestedRedirects`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 针对每个不同的冲突程序集标识包含一个项，而不考虑 `AutoUnify` 参数的值。 这包括发现在应用程序配置文件中没有合适的 bindingRedirect 条目的每个区域性 和 PKT。<br /><br /> 每个项选择性地包含以下信息：<br /><br /> -   `Include` 属性：包含版本字段值为 0.0.0.0 的程序集系列的完整名称<br />-   `MaxVersion` 项元数据：包含的最大版本号。|  
 |`TargetedRuntimeVersion`|可选 `String` 参数。<br /><br /> 指定设为目标的运行时版本，例如，2.0.57027 或 v2.0.57027。|  
 |`TargetFrameworkDirectories`|可选 `String[]` 参数。<br /><br /> 指定目标框架目录的路径。 需要此参数来确定生成的项的 CopyLocal 状态。<br /><br /> 如果未指定此参数，则没有生成的项将具有为 `true` 的 CopyLocal 值，除非在其源项上显式具有为 `true` 的 `Private` 元数据值。|  
 |`TargetFrameworkMoniker`|可选 `String` 参数。<br /><br /> 要监视的 TargetFrameworkMoniker（如果有）。 这用于日志记录。|  

@@ -2,7 +2,6 @@
 title: 在 Visual Basic 中配置警告
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8cb2cec8258813fa9c93c466afb607ce88acc7e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 83ba1314f23ecc2d9166aac6fdc5d722a4fefe95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865956"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866564"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>在 Visual Basic 中配置警告
 
@@ -52,7 +51,7 @@ ms.locfileid: "49865956"
 ## <a name="examples"></a>示例
  下表包含命令行参数示例，并对每个参数的作用进行了说明。
 
-|参数|描述|
+|参数|说明|
 |--------------|-----------------|
 |`vbc /warnaserror`|指定应将所有警告都视为错误。|
 |`vbc /warnaserror:42024`|指定应将 42024 警告视为错误。|
@@ -67,57 +66,57 @@ ms.locfileid: "49865956"
 ### <a name="implicit-conversion-warning"></a>隐式转换警告
  针对隐式转换的实例生成。 使用 `&` 运算符时，这些实例不包含从内部数值类型到字符串的隐式转换。 新项目的默认值为 Off。
 
- ID：42016
+ ID:42016
 
 ### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>后期绑定方法调用和重载决策警告
  针对后期绑定的实例生成。 新项目的默认值为 Off。
 
- ID：42017
+ ID:42017
 
 ### <a name="operands-of-type-object-warnings"></a>“Object”类型的操作数警告
  当出现会引发“Option Strict On”错误的 `Object` 类型的操作数时生成。 新项目的默认值为 On。
 
- ID：42018 和 42019
+ ID:42018 和 42019
 
 ### <a name="declarations-require-as-clause-warnings"></a>声明需要“As”子句警告
  当缺少 `As` 子句的变量、函数或属性声明会引发“Option Strict On”错误时生成。 假定未指定类型的变量属于类型 `Object`。 新项目的默认值为 On。
 
- ID：42020（变量声明）、42021（函数声明）和 42022（属性声明）。
+ ID:42020（变量声明）、42021（函数声明）和 42022（属性声明）。
 
 ### <a name="possible-null-reference-exception-warnings"></a>可能的 Null 引用异常警告
  当尚未向变量赋值就使用该变量时生成。 新项目的默认值为 On。
 
- ID：42104, 42030
+ ID:42104、42030
 
 ### <a name="unused-local-variable-warning"></a>未使用的局部变量警告
  当声明了局部变量但从未引用该变量时生成。 默认值为 On。
 
- ID：42024
+ ID:42024
 
 ### <a name="access-of-shared-member-through-instance-variable-warning"></a>通过实例变量访问共享成员警告
  通过可能有副作用的实例访问共享成员时，或者通过不是表达式右侧或正作为参数传入的实例变量访问共享成员时生成。 新项目的默认值为 On。
 
- ID：42025
+ ID:42025
 
 ### <a name="recursive-operator-or-property-access-warnings"></a>递归运算符或属性访问警告
  当例程主体使用定义它的同一运算符或属性时生成。 新项目的默认值为 On。
 
- ID：42004（运算符）、42026（属性）
+ ID:42004（运算符）、42026（属性）
 
 ### <a name="function-or-operator-without-return-value-warning"></a>没有返回值的函数或运算符警告
  当函数或运算符未指定返回值时生成。 这包括忽略与函数同名的隐式局部变量的 `Set`。 新项目的默认值为 On。
 
- ID：42105（函数）、42016（运算符）
+ ID:42105（函数）、42016（运算符）
 
 ### <a name="overloads-modifier-used-in-a-module-warning"></a>在模块中使用重载修饰符警告
  在 `Module` 中使用 `Overloads` 时生成。 新项目的默认值为 On。
 
- ID：42028
+ ID:42028
 
 ### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>重复或重叠的 Catch 块警告
  当因某个 `Catch` 块与其他已定义的 `Catch` 块相关联而从未到达该块时生成。 新项目的默认值为 On。
 
- ID：42029、42031
+ ID:42029、42031
 
 ## <a name="see-also"></a>请参阅
 

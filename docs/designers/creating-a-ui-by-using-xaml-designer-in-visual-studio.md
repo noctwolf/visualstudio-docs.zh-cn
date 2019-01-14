@@ -2,7 +2,6 @@
 title: 使用 XAML 设计器创建 UI
 ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b991b50ab2ee329adaaff7a31c2dbb4f2d5bb806
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: a47c0f9718f43c86375f9ff8668d2dfa1efa9785
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220991"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880399"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 设计器创建 UI
 
@@ -123,11 +122,11 @@ XAML 设计器提供 XAML 视图和应用程序呈现的 XAML 标记的同步设
 
 **方向**
 
-为应用程序指定不同的方向：“横向”  或“纵向” 。
+为应用程序指定不同的方向：“横向”或“纵向”。
 
 **边缘**
 
-为应用程序指定不同的边缘对齐方式：“两者” 、“左对齐” 、“右对齐” 或“无” 。
+为应用程序指定不同的边缘对齐方式：“两者”、“左对齐”、“右对齐”或“无”。
 
 **高对比度**
 
@@ -201,4 +200,4 @@ XAML 设计器中的“文档大纲”窗口有助于执行这些任务：
 
 - [在 XAML 设计器中使用元素](../designers/working-with-elements-in-xaml-designer.md)
 - [如何创建和应用资源](../designers/how-to-create-and-apply-a-resource.md)
-- [演练：将数据绑定到 XAML 设计器](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+- [演练：在 XAML 设计器中绑定数据](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

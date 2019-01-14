@@ -2,7 +2,6 @@
 title: 以双向语言创建应用程序
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f93dea099d9223347c727f3e7a838fcb78d3742
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 26c3ea5073d4b53c0a9d75c18722f1569aff8646
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863629"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891610"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>以双向语言创建应用程序
 
@@ -43,7 +42,7 @@ ms.locfileid: "48863629"
 
 -   **对象名称** 可使用双向语言向解决方案、项目、文件、文件夹等分配名称。 在代码中，可针对变量名、类名、对象名、特性名、元数据名和其他元素名使用双向语言。
 
--   **文件编码** 可使用特定语言的编码或 Unicode 编码保存和打开文件。 有关详细信息，请参阅[如何：保存和打开带有编码的文件](../ide/how-to-save-and-open-files-with-encoding.md)。
+-   **文件编码** 可使用特定语言的编码或 Unicode 编码保存和打开文件。 有关更多信息，请参见[如何：保存和打开带有编码的文件](../ide/how-to-save-and-open-files-with-encoding.md)。
 
 ## <a name="features-with-limited-or-no-support"></a>不完全支持或不支持的功能
  Visual Studio 不完全支持（在有些情况下根本不支持）双向语言应用程序的其他常见功能。 这些方法包括：

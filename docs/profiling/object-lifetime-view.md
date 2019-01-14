@@ -1,8 +1,6 @@
 ---
 title: “对象生存期”视图 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.objectlifetime
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 247c81d46ee8f5ae916a2a024620e4f4eb864194
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8175a8337f15517e0b9c88ae3f5405148a4b22b2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255614"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934964"
 ---
 # <a name="object-lifetime-view"></a>“对象生存期”视图
 在“性能会话”属性页上选中“还收集 .NET 对象的生存期数据”时，可以使用“对象生存期”视图。  
@@ -34,7 +32,7 @@ ms.locfileid: "35255614"
   
 ## <a name="general"></a>常规  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**类名**|所分配类型的类名。|  
 |**进程 ID**|分析运行的进程 ID。|  
@@ -45,7 +43,7 @@ ms.locfileid: "35255614"
 ## <a name="instance-data"></a>实例数据  
  实例数据指示在分析运行期间，所创建的该类型的对象数，以及垃圾回收器解除分配的对象所属的代。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**实例**|此类型对象的分配数。|  
 |**总实例数百分比**|在分析运行期间进行的分配总数的百分比。|  
@@ -57,7 +55,7 @@ ms.locfileid: "35255614"
 ## <a name="size-byte-data"></a>大小（字节）数据  
  大小（字节）数据指示在分析运行期间，所创建的该类型对象的大小，以及解除对象分配时所属的每个代中回收的内存量。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**已分配的总字节数**|此类型所有实例的总字节数。|  
 |**总字节数百分比**|在分析运行期间，为此类型的实例分配的总字节数的百分比。|  
@@ -68,7 +66,7 @@ ms.locfileid: "35255614"
 ## <a name="large-object-heap-data"></a>大型对象堆数据  
  .NET 内存分配器在标准托管堆以外的位置管理大型对象。 大型对象堆数据指示在此位置管理的类型对象的数目和大小。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**已收集的大型对象堆实例数**|位于大型对象堆中，且在分析运行期间收集的此类型实例的数目。|  
 |**已收集的大型对象堆字节数**|位于大型对象堆中，且在分析运行期间收集的此类型实例的大小（以字节为单位）。|  

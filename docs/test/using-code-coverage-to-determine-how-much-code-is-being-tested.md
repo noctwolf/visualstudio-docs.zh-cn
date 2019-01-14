@@ -2,7 +2,6 @@
 title: 代码覆盖率测试
 ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc8b08b68bb6c48fa22abaa90ba8b0b9daa25e89
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 3ff77dc6c434a58ee916ea1eb4ffcab932d7a675
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958126"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用代码覆盖率确定所测试的代码量
 
@@ -42,7 +41,7 @@ ms.locfileid: "46370934"
 
 2. 若要查看已运行的行，请选择![显示代码覆盖率着色图标](../test/media/codecoverage-showcoloringicon.png)**显示代码覆盖率着色**。
 
-   若要更改颜色或使用加粗，请选择“工具” > “选项” > “环境” > “字体和颜色” > “显示其设置: 文本编辑器”。 在“显示项”下，调整覆盖率项。
+   要更改颜色或使用加粗，请选择“工具” > “选项” > “环境” > “字体和颜色” > “显示其设置: 文本编辑器”。 在“显示项”下，调整覆盖率项。
 
 3. 如果结果显示覆盖率较低，请调查代码的哪些部分没有执行测试，并编写更多测试来覆盖它们。 开发团队通常以大约 80% 的代码覆盖率为目标。 在某些情况下，较低的覆盖率是可接受的。 例如，当某代码是从标准模板生成时，可接受较低的覆盖率。
 
