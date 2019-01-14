@@ -1,8 +1,6 @@
 ---
 title: FormatVersion 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -15,26 +13,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f9cae12a66e2b442d6c42032d3f4bf65942127
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7f9b2cf2daff750f626f35b8c98f8269577b4099
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946243"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53934065"
 ---
 # <a name="formatversion-task"></a>FormatVersion 任务
 将修订号追加到版本号。  
   
--   案例 #1：输入：Version=\<undefined>; Revision=\<don't care>; 输出：OutputVersion ="1.0.0.0"  
+-   案例 #1：输入：Version=\<undefined>;  Revision=\<don't care>;   Output:OutputVersion="1.0.0.0"  
   
--   案例 #2：输入：Version="1.0.0.*"  Revision="5" 输出：OutputVersion="1.0.0.5"  
+-   案例 #2：输入：Version="1.0.0.*"  Revision="5"  Output:OutputVersion="1.0.0.5"  
   
--   案例 #3：输入：Version="1.0.0.0" Revision=\<don't care>; 输出：OutputVersion ="1.0.0.0"  
+-   案例 #3：输入：Version="1.0.0.0"  Revision=\<don't care>;  Output:OutputVersion="1.0.0.0"  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `FormatVersion` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`FormatType`|可选 `String` 参数。<br /><br /> 指定格式类型。<br /><br /> -“Version”= 版本。<br />-“Path”=将“.”替换为“_”；|  
 |`OutputVersion`|可选 `String` 输出参数。<br /><br /> 指定包含修订号的输出版本。|  

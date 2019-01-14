@@ -1,8 +1,6 @@
 ---
 title: MSBuild 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a4d7a296902695007541e4c21c661f659fbbaab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3f6ab2b5656d70c455f9ea67fe13d463ddcb85c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861600"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831240"
 ---
 # <a name="msbuild-task"></a>MSBuild 任务
 从另一 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目生成 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目。  
@@ -34,7 +32,7 @@ ms.locfileid: "49861600"
  下表描述了 `MSBuild` 任务的参数。  
 
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 |-----------------------------------| - |
 | `BuildInParallel` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，会并行生成 `Projects` 参数中指定的项目（如有可能）。 默认值为 `false`。 |
 | `Projects` | 必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要生成的项目文件。 |
@@ -46,7 +44,7 @@ ms.locfileid: "49861600"
 | `StopOnFirstFailure` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，当其中一个项目生成失败时，则不会再生成其他项目。 目前在并行生成时（具有多个处理器）不支持此参数。 |
 | `TargetAndPropertyListSeparators` | 可选 `String[]` 参数。<br /><br /> 将目标和属性的列表指定为 `Project` 项元数据）。 进行处理前，分隔符为非转义的。 例如 %3B（转义的“;”）将被视为未转义的“;”。 |
 | `TargetOutputs` | 可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 返回出自所有项目文件的生成目标的输出。 仅返回出自所指定目标的输出，不返回存在于目标所依赖的目标上的任何输出。<br /><br /> `TargetOutputs` 参数还包含以下元数据：<br /><br /> -   `MSBuildSourceProjectFile`：包含设置输出的目标的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件。<br />-   `MSBuildSourceTargetName`：设置输出的目标。 **注意：** 如果要分别识别每个项目文件或目标中的输出，请为每个项目文件或目标分别运行 `MSBuild` 任务。 如果只运行一次 `MSBuild` 任务来生成所有的项目文件，则会将所有目标的输出收集到一个数组中。 |
-| `Targets` | 可选 `String` 参数。<br /><br /> 指定要在项目文件中生成的一个或多个目标。 使用分号分隔一系列目标名称。 如果未在 `MSBuild` 任务中指定任何目标，则会生成在项目文件中指定的默认目标。 **注意：** 目标必须发生在所有的项目文件中。 如果它们不发生在所有文件中，则会出现生成错误。 |
+| `Targets` | 可选 `String` 参数。<br /><br /> 指定要在项目文件中生成的一个或多个目标。 使用分号分隔一系列目标名称。 如果未在 `MSBuild` 任务中指定任何目标，则会生成在项目文件中指定的默认目标。 **注意：** 目标必须发生在所有项目文件中。 如果它们不发生在所有文件中，则会出现生成错误。 |
 | `ToolsVersion` | 可选 `String` 参数。<br /><br /> 指定生成项目被传递到此任务时要使用的 `ToolsVersion`。<br /><br /> 使 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务能够生成一个项目，该项目以 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的其他版本为目标，而不是项目中指定的版本。 有效值为 `2.0`、`3.0` 和 `3.5`。 默认值是 `3.5`。 |
 | `UnloadProjectsOnCompletion` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则在操作完成后，将立即卸载项目。 |
 | `UseResultsCache` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则将返回缓存的结果（如果存在）。<br /><br />  如果运行 MSBuild 任务，其结果将被缓存在作用域中 <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> 作为生成项的列表 |

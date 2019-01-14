@@ -1,8 +1,6 @@
 ---
 title: GenerateResource 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateResource
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c830b640b3efb4e963d62402bbf68d1bc7dff0e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c879ddc38b2dd3988878119f87c3d777aea7c09d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176949"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917496"
 ---
 # <a name="generateresource-task"></a>GenerateResource 任务
 将文本 .txt 和 .resx（基于 XML 的资源格式）文件转换为公共语言运行时二进制 .resources 文件，这些 .resources 文件可嵌入到运行时二进制可执行文件中或编译到附属程序集中。 此任务通常用于将 .txt 或 .resx 文件转换为 .resources 文件。 `GenerateResource` 任务在功能上类似于 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)。  
@@ -33,7 +31,7 @@ ms.locfileid: "39176949"
 ## <a name="parameters"></a>参数  
  下表描述了 `GenerateResource` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`AdditionalInputs`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 包含此任务完成的依赖项检查的其他输入。 例如，项目和目标通常应该为输入，以便在对它们进行更新时，所有资源都重新生成。|  
 |`EnvironmentVariables`|可选 `String[]` 参数。<br /><br /> 除（或选择性替代）常规环境块外，还指定应传递到生成的 resgen.exe 中的环境变量的名称/值对数组。|  
@@ -46,10 +44,10 @@ ms.locfileid: "39176949"
 |`PublicClass`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则会将强类型的资源类创建为公共类。|  
 |`References`|可选 `String[]` 参数。<br /><br /> 要从中加载 .resx 文件中的类型的引用。 .resx 文件数据元素可能具有 .NET 类型。 读取 .resx 文件时，必须对此进行解析。 通常，使用标准类型加载规则可成功解析。 如果在 `References` 中提供程序集，则它们具有优先级。<br /><br /> 强类型资源不要求此参数。|  
 |`SdkToolsPath`|可选 `String` 参数。<br /><br /> 指定 SDK 工具（例如 resgen.exe）的路径。|  
-|`Sources`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要转换的项。 传递到此参数的项必须具有以下文件扩展名之一：<br /><br /> -   .txt：指定要转换的文本文件的扩展名。 文本文件只能包含字符串资源。<br />-   .resx：指定要转换的基于 XML 的资源文件的扩展名。<br />-   .restext：指定相同的格式为 .txt。 如果要在生成过程中明确区分包含资源的源文件与其他源文件，则这个不相同的扩展名非常有用。<br />-   .resources：指定要转换的资源文件的扩展名。|  
+|`Sources`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要转换的项。 传递到此参数的项必须具有以下文件扩展名之一：<br /><br /> -   .txt：指定要转换的文本文件的扩展名。 文本文件只能包含字符串资源。<br />-   .resx：指定要转换的基于 XML 的资源文件的扩展名。<br />-   .restext：指定与 .txt 相同的格式。 如果要在生成过程中明确区分包含资源的源文件与其他源文件，则这个不相同的扩展名非常有用。<br />-   .resources：指定要转换的资源文件的扩展名。|  
 |`StateFile`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定用于加速 .resx 输入文件中链接的依赖项检查的可选缓存文件的路径。|  
 |`StronglyTypedClassName`|可选 `String` 参数。<br /><br /> 指定强类型资源类的类名。 如果未指定此参数，则使用资源文件的基名称。|  
-|`StronglyTypedFilename`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定源文件的文件名。 如果未指定此参数，则会将类的名称用作基文件名，其扩展名取决于语言。 例如：MyClass.cs。|  
+|`StronglyTypedFilename`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定源文件的文件名。 如果未指定此参数，则会将类的名称用作基文件名，其扩展名取决于语言。 例如:MyClass.cs。|  
 |`StronglyTypedLanguage`|可选 `String` 参数。<br /><br /> 指定在为强类型资源生成类源时要使用的语言。 此参数必须与 CodeDomProvider 所使用的其中一种语言完全匹配。 例如 `VB` 或 `C#`。<br /><br /> 通过将值传递给此参数来指示任务生成强类型资源。|  
 |`StronglyTypedManifestPrefix`|可选 `String` 参数。<br /><br /> 指定要在强类型资源的生成类源中使用的资源命名空间或清单前缀。|  
 |`StronglyTypedNamespace`|可选 `String` 参数。<br /><br /> 指定要用于强类型资源的生成类源的命名空间。 如果未指定此参数，则任何强类型资源都会位于全局命名空间中。|  
@@ -87,7 +85,7 @@ ms.locfileid: "39176949"
  假定程序集命名为 myAssembly，则以下代码会生成一个名为 someQualifier.someResource.resources 的嵌入资源：  
   
 ```xml  
-<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
+<ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
  如果没有 \<LogicalName> 元数据，则资源会命名为 myAssembly.myResource.resources。  此示例仅适用于 Visual Basic 和 Visual C# 生成过程。  

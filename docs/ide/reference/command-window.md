@@ -2,7 +2,6 @@
 title: “命令”窗口
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.CommandWindow
@@ -18,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 567553895437bc013a7415ce305bfd863d46994a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905944"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841854"
 ---
 # <a name="command-window"></a>“命令”窗口
 “命令”窗口用于直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中执行命令或别名。 可以执行菜单命令和不在任何菜单上出现的命令。 若要显示“命令”窗口，请在“视图”菜单中选择“其他窗口”，然后选择“命令窗口”。
@@ -110,7 +109,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
  插入符号在引号内或引号外的作用相同。 如果插入符号是行的最后一个字符，则忽略不计。 此处显示的示例演示如何搜索模式“^t”。
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>对带有空格的路径名称使用引号
- 例如，如果要打开的文件的路径中含有空格，必须在包含空格的路径或路径段两边添加双引号：C:\\"Program Files" 或 "C:\Program Files"。
+ 例如，如果要打开具有包含空格的路径的文件，必须在包含空格的路径或路径段两边添加双引号：C:\\"Program Files" 或 "C:\Program Files"。
 
 ## <a name="see-also"></a>请参阅
 

@@ -11,13 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: a15f771d2afa2b5c8e02eed99b3168a537365a3f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 360d3da6d88d053b24c11591e55c218bf3e5563b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895296"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942091"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>编辑负载模式以便为虚拟用户活动建模
 
@@ -58,17 +57,17 @@ ms.locfileid: "52895296"
 
  分级负载模式可用于在负载测试运行时增加服务器上的负载，这样你就能够看到性能如何随着用户负载的增加而发生变化。 例如，若要查看用户负载增加到 2000 个用户时服务器的性能如何，你可以使用具有以下属性的分级负载模式来运行一个 10 小时的负载测试：
 
-- 初始用户计数：100
+- **初始用户计数**：100
 
-- 最大用户计数：2000
+- **最大用户计数**：2,000
 
-- 单步持续时间(秒)：1,800
+- **单步持续时间（秒）**：1,800
 
-- 单步负载增加时间(秒)：20
+- **单步负载增加时间（秒）**：20
 
-- 单步用户计数：100
+- **单步用户计数**：100
 
-  这些设置可使负载测试在 100、200、300 直至 2,000 个用户的用户负载下运行 30 分钟（1,800 秒）。 请特别注意“单步负载增加时间”属性，因为在这些属性中，它是“新建负载测试向导”中唯一不可选的属性。 通过此属性，可从某一步逐渐（而不是一下）增加到下一步（例如，从 100 个用户增加到 200 个用户）。 在此示例中，用户负载将在 20 秒内从 100 个用户增加到 200 用户，即每秒增加 5 个用户。 有关详细信息，请参阅[如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)。
+  这些设置可使负载测试在 100、200、300 直至 2,000 个用户的用户负载下运行 30 分钟（1,800 秒）。 请特别注意“单步负载增加时间”属性，因为在这些属性中，它是“新建负载测试向导”中唯一不可选的属性。 通过此属性，可从某一步逐渐（而不是一下）增加到下一步（例如，从 100 个用户增加到 200 个用户）。 在此示例中，用户负载将在 20 秒内从 100 个用户增加到 200 用户，即每秒增加 5 个用户。 有关更多信息，请参见[如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)。
 
 ### <a name="goal-based"></a>基于目标的负载模式
 
@@ -82,7 +81,7 @@ ms.locfileid: "52895296"
 
   下表中，示例演示具有以下属性设置的基于目标的模式：
 
-|属性组|属性|“值”|
+|属性组|Property|值|
 |-|--------------|-|
 |性能计数器|类别|处理器|
 |性能计数器|计算机|ContosoServer1|
@@ -112,10 +111,10 @@ ms.locfileid: "52895296"
 
 |任务|相关主题|
 |-|-----------------------|
-|为负载测试指定初始负载模式：使用“新建负载测试向导”创建负载测试时，要选择一种负载模式。|-   [更改负载模式](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
-|为负载测试编辑负载模式：创建负载测试后，可以在“负载测试编辑器”中编辑负载模式。|-   [如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|指定负载测试方案中的虚拟用户是否应包含 Web 缓存数据：可以更改“新用户的百分比”属性以影响负载测试模拟由虚拟用户的 Web 浏览器执行的 Web 缓存的方式。|-   [如何：指定使用 Web 缓存数据的虚拟用户的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
-|**指定分级负载模式的单步负载增加时间：** 通过“单步负载增加时间”属性，可从某一步逐渐（而不是一下）增加到下一步（例如，从 100 个用户增加到 200 个用户）。|-   [如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**为负载测试指定初始负载模式：** 使用“新建负载测试向导”创建负载测试时，要选择一种负载模式。|-   [更改负载模式](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
+|**为负载测试编辑负载模式：** 创建负载测试后，可以在“负载测试编辑器”中编辑负载模式。|-   [如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**指定负载测试方案中的虚拟用户是否应包含 Web 缓存数据：** 可以更改“新用户的百分比”属性以影响负载测试模拟由虚拟用户的 Web 浏览器执行的 Web 缓存的方式。|-   [如何：指定使用 Web 高速缓存数据的虚拟用户的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**为分级负载模式指定单步负载增加时间：** 通过“单步负载增加时间”属性，可从某一步逐渐（而不是一下）增加到下一步（例如，从 100 个用户增加到 200 个用户）。|-   [如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="change-the-load-pattern"></a>更改负载模式
 
@@ -128,7 +127,7 @@ ms.locfileid: "52895296"
  负载模式指定在负载测试期间活动的虚拟用户的数目以及添加新用户的速率。 可以从三种可用模式中进行选择：分级模式、常数模式和基于目标的模式。 有关详细信息，请参阅[在负载测试方案中使用负载模式指定虚拟用户数](../test/edit-load-patterns-to-model-virtual-user-activities.md)。
 
 > [!NOTE]
-> 也可以使用负载测试插件通过编程方式更改负载属性。 有关详细信息，请参阅[如何：创建负载测试插件](../test/how-to-create-a-load-test-plug-in.md)。
+> 也可以使用负载测试插件通过编程方式更改负载属性。 有关更多信息，请参见[如何：创建负载测试插件](../test/how-to-create-a-load-test-plug-in.md)。
 
 
 ### <a name="to-change-the-load-pattern"></a>更改负载模式
@@ -158,5 +157,5 @@ ms.locfileid: "52895296"
 ## <a name="see-also"></a>请参阅
 
 - [编辑负载测试方案](../test/edit-load-test-scenarios.md)
-- [如何：指定使用 Web 缓存数据的虚拟用户的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
+- [如何：指定使用 Web 高速缓存数据的虚拟用户的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
 - [如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)

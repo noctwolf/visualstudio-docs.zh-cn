@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 1470ab88cb21a7a80fa46f57f944ec5df21d544f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 8fd8d07274d67f590de1ab22a3bdfa641b07f847
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52894408"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832133"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用测试设置在测试期间包括屏幕和语音录制
 
@@ -52,11 +51,11 @@ ms.locfileid: "52894408"
 
 6.  在“屏幕录制质量”下，配置以下下拉列表选项：
 
-    1.  **帧速率**：指定要在屏幕和语音录制中使用的每秒帧数。 默认值为 4 帧/每秒。 可指定介于 2 和 20 之间的值。
+    1.  **帧速率：** 指定要在屏幕和语音录制中使用的每秒帧数。 默认值为 4 帧/每秒。 可指定介于 2 和 20 之间的值。
 
-    2.  **比特率**：指定要在屏幕和语音录制器中使用的每秒 KB 数。 默认值为 512。 可指定介于 512 和 10,000 之间的值。
+    2.  **比特率：** 指定要在屏幕和语音录制器中使用的每秒 KB 数。 默认值为 512。 可指定介于 512 和 10,000 之间的值。
 
-    3.  **品质(1-100)**：可以通过选择介于 1 和 100 之间的范围来指定屏幕和语音录制的品质。 默认值为 50（中等范围）。
+    3.  **品质 (1-100)：** 可以通过选择介于 1 和 100 之间的范围来指定屏幕和语音录制的品质。 默认值为 50（中等范围）。
 
 7.  选择 **“确定”**。 现在已为测试设置配置和保存了诊断跟踪收集器设置。
 

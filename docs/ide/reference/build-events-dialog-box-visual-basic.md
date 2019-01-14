@@ -2,7 +2,6 @@
 title: “生成事件”对话框 (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesBuildEvents
@@ -18,16 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e81a9308439af6a0dd688440dc6aa193a66eabf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 5899c8fc2b9e064ac326106a289d8309421e21f2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219349"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937018"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>“生成事件”对话框 (Visual Basic)
 
-使用“生成事件”对话框可以指定生成配置说明。 还可以指定运行任何预生成或生成后事件所依据的条件。 有关详细信息，请参阅[如何：指定生成事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)。
+使用“生成事件”对话框可以指定生成配置说明。 还可以指定运行任何预生成或生成后事件所依据的条件。 有关更多信息，请参见[如何：指定生成事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)。
 
 预生成事件命令行
 

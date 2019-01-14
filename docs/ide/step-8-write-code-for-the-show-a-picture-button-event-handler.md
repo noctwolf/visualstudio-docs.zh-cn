@@ -1,9 +1,7 @@
 ---
 title: 步骤 8：为“显示图片”按钮事件处理程序编写代码
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 author: TerryGLee
@@ -11,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2c76a6eb760e55659c7da4df2a1a341426f0c6e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: be9163ce831f556310a17b72c3833d9756ddf952
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671802"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887888"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步骤 8：为“显示图片”按钮事件处理程序编写代码
 
@@ -28,7 +26,7 @@ ms.locfileid: "50671802"
 
 IDE 提供一种名为 IntelliSense 的强大工具，可帮助您编写代码。 当您输入代码时，IDE 会打开一个框，其中显示与您所输入的部分单词对应的完整建议内容。 它尝试确定您接下来要做的事情，并自动跳到您从列表中选择的最后一项。 您可以使用向上键或向下键在列表中进行移动，也可以继续键入字母以缩小选择范围。 当你看到所需的选项时，请选择 Tab 键以将其选中。 或者，也可以忽略不需要的建议。
 
-![视频链接](../data-tools/media/playvideo.gif)有关本主题的视频版本，请观看[教程 1：在 Visual Basic 中创建图片查看器 - 视频 4](https://msdn.microsoft.com/vstudio/gg315355.aspx)。 此视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
+![视频链接](../data-tools/media/playvideo.gif)有关此主题的视频版本，请参阅[教程 1：在 Visual Basic 中创建图片查看器 - 视频 4](https://msdn.microsoft.com/vstudio/gg315355.aspx)。 此视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>为“显示图片”按钮事件处理程序编写代码
 
@@ -65,7 +63,7 @@ IDE 提供一种名为 IntelliSense 的强大工具，可帮助您编写代码�
 
          若要了解有关 `ShowDialog()` 方法的详细信息，请参阅 [ShowDialog 方法](<xref:System.Windows.Forms.Form.ShowDialog%2A>)。
 
-    5.  对控件或组件使用方法（称为“调用方法”）时，需要添加圆括号。 因此请在 `ShowDialog` 中紧接着“g”之后输入左括号和右括号 `()`，现在它看起来应像“openFileDialog1.ShowDialog()”。
+    5.  对控件或组件使用方法（称为“调用方法”）时，需要添加圆括号。 因此，在 `ShowDialog` 中的“g”之后立即输入左括号和右括号：`()` 它现在应该看起来像“openFileDialog1.ShowDialog()”。
 
         > [!NOTE]
         > 方法是所有程序的重要组成部分，本教程演示了方法的多种使用方式。 可以调用组件的方法告诉组件要执行的操作，这与调用“OpenFileDialog”组件的 `ShowDialog()` 方法的方式类似。 您可创建自己的方法来使程序执行操作，如您现在正构建的名为 `showButton_Click()` 方法的方法，该方法将在用户选择一个按钮时打开对话框和图片。
@@ -97,6 +95,6 @@ IDE 提供一种名为 IntelliSense 的强大工具，可帮助您编写代码�
 
 ## <a name="to-continue-or-review"></a>继续或查看
 
--   若要转到下一个教程步骤，请参阅[步骤 9：评审代码、为代码添加注释和测试代码](../ide/step-9-review-comment-and-test-your-code.md)。
+-   要转到下一个教程步骤，请参阅[步骤 9：检查代码、为代码添加注释和测试代码](../ide/step-9-review-comment-and-test-your-code.md)。
 
--   若要返回上一个教程步骤，请参阅[步骤 7：向窗体添加对话组件](../ide/step-7-add-dialog-components-to-your-form.md)。
+-   要返回上一个教程步骤，请参阅[步骤 7：向窗体添加对话框组件](../ide/step-7-add-dialog-components-to-your-form.md)。

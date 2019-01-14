@@ -2,7 +2,6 @@
 title: “高级服务设置”对话框
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedServices
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 78cc44d71b1f9cb2f449d4aafdff22271b1c63ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 251a78ebe56a9ba2c88444da879970c590ece029
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946593"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917220"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>“高级服务设置”对话框
 使用客户端应用程序服务，可简便地从 Windows 窗体和 Windows Presentation Foundation (WPF) 应用程序访问 [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] 登录、角色和配置文件服务。 可以使用“项目设计器”的“服务”页，配置客户端应用程序服务。 有关“服务”页的详细信息，请参阅[“项目设计器”->“服务”页](../../ide/reference/services-page-project-designer.md)。
@@ -42,7 +41,7 @@ ms.locfileid: "31946593"
 
  调用 <xref:System.Web.Security.RolePrincipal.IsInRole%2A> 方法时，角色提供程序将访问缓存的角色值或角色服务。 若要以编程方式清除缓存并强制此方法访问远程服务，请调用 <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A> 方法。
 
- **使用自定义连接字符串**指定客户端服务提供程序是否将使用自定义数据存储进行本地缓存。 默认情况下，服务提供商将使用本地文件系统进行缓存。 选中此选项将自动使用默认连接字符串填充文本框。 可以保留默认连接字符串以自动生成和使用 SQL Server Compact Edition 数据库，或者可以为现有 SQL Server 数据库指定连接字符串。 有关详细信息，请参阅[如何：配置客户端应用程序服务](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)。 默认情况下清除此选项。
+ **使用自定义连接字符串**指定客户端服务提供程序是否将使用自定义数据存储进行本地缓存。 默认情况下，服务提供商将使用本地文件系统进行缓存。 选中此选项将自动使用默认连接字符串填充文本框。 可以保留默认连接字符串以自动生成和使用 SQL Server Compact Edition 数据库，或者可以为现有 SQL Server 数据库指定连接字符串。 有关更多信息，请参见[如何：配置客户端应用程序服务](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)。 默认情况下清除此选项。
 
 ## <a name="see-also"></a>请参阅
 

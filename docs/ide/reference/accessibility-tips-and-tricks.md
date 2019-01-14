@@ -3,7 +3,6 @@ title: Visual Studio 的辅助功能提示和技巧
 description: 了解有关提示和技巧的详细信息，通过这些信息，每位用户（包括残疾人士）都可更加轻松地使用 Visual Studio 集成开发环境 (IDE)。
 ms.date: 09/15/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
@@ -13,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 76ceb25180b8c0e15603251901f1c9281ce6893c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349200"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929583"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 的辅助功能提示和技巧
 
@@ -50,22 +49,22 @@ Visual Studio 编辑器包括很多文本“修饰”，比如灯泡、错误和
 
 与许多工具窗口一样，Visual Studio IDE 也具有多个工具栏。 可使用以下快捷键访问这些工具栏。
 
-|功能|描述|组合键|
+|功能|说明|组合键|
 |-------------|-----------------| - |
 |IDE 工具栏|选择“标准”工具栏上的第一个按钮。|**Alt****Ctrl** + **Tab**|
-|工具窗口工具栏|将焦点移动到工具窗口中的工具栏。 <br> <br> 注意：此方法适用于大多数工具窗口，但仅限焦点位于工具窗口的情况。 此外，还必须在按 Alt 键前按 Shift 键。 在一些工具窗口（如团队资源管理器）中，必须先按住 Shift 键一会才能按 Alt 键。|**Shift** + **Alt**|
+|工具窗口工具栏|将焦点移动到工具窗口中的工具栏。 <br> <br> **注意：** 此方法适用于大多数工具窗口，但仅限焦点位于工具窗口的情况。 此外，还必须在按 Alt 键前按 Shift 键。 在一些工具窗口（如团队资源管理器）中，必须先按住 Shift 键一会才能按 Alt 键。|**Shift** + **Alt**|
 |工具栏|转到下一工具栏中的第一项（当焦点位于工具栏时）。|**Ctrl** + **Tab**|
 
 ### <a name="other-useful-shortcut-key-combinations"></a>其他有用的快捷组合键
 
 下面是其他一些有用的快捷组合键。
 
-|功能|描述|组合键|
+|功能|说明|组合键|
 |-------------|-----------------| - |
-|IDE|打开或关闭高对比度。 <br> <br> 备注：标准 Windows 快捷方式|**左 Alt + 左 Shift + PrtScn**|
-|对话框|选中或清除对话框中的复选框选项。 <br> <br> 备注：标准 Windows 快捷方式|**空格键**|
-|上下文菜单|打开上下文菜单（右键单击）。 <br> <br> 备注：标准 Windows 快捷方式|**Shift** + **F10**|
-|菜单|通过使用快捷键快速访问菜单项。 在菜单中按 Alt 键 + 带下划线的字母可激活命令。 例如，若要查看 Visual Studio 中的“打开项目”对话框，则应按 Alt + F + O + P。  <br><br> 备注：标准 Windows 快捷方式|**Alt** + **[字母]**|
+|IDE|打开或关闭高对比度。 <br> <br> **注意：** 标准 Windows 快捷方式|**左 Alt + 左 Shift + PrtScn**|
+|对话框|选中或清除对话框中的复选框选项。 <br> <br> **注意：** 标准 Windows 快捷方式|**空格键**|
+|上下文菜单|打开上下文菜单（右键单击）。 <br> <br> **注意：** 标准 Windows 快捷方式|**Shift** + **F10**|
+|菜单|通过使用快捷键快速访问菜单项。 在菜单中按 Alt 键 + 带下划线的字母可激活命令。 例如，若要查看 Visual Studio 中的“打开项目”对话框，则应按 Alt + F + O + P。  <br><br> **注意：** 标准 Windows 快捷方式|**Alt** + **[字母]**|
 |工具箱窗口|在工具箱选项卡之间移动。|**Ctrl** + **向上键**<br /><br /> 和<br /><br /> **Ctrl** + **向下键**|
 |工具箱窗口|将工具箱中的控件添加到窗体或设计器。|**Enter**|
 |“选项”对话框 ->“环境”->“键盘”|删除在“按快捷键”选项中输入的组合键。|**Backspace**|

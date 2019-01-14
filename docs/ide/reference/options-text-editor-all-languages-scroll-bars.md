@@ -2,7 +2,6 @@
 title: “选项”->“文本编辑器”->“所有语言”->“滚动条”
 ms.date: 10/25/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdff9d71055ff1357bff82d27fa8df5916e0a699
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 881f995dc8f4c675691f7eaa63d26acefd4b3d01
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53876781"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>“选项”->“文本编辑器”->“所有语言”->“滚动条”
 使用此对话框可更改代码编辑器滚动条的默认行为。 若要显示这些选项，请选择“工具”菜单中的“选项”。 在“文本编辑器”中，展开“所有语言”子文件夹，然后选择“滚动条”。
@@ -65,4 +64,4 @@ ms.locfileid: "50220670"
 
 ## <a name="see-also"></a>请参阅
 
-- [操作说明：自定义滚动条](../how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [如何：自定义滚动条](../how-to-track-your-code-by-customizing-the-scrollbar.md)

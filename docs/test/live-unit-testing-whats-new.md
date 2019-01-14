@@ -2,7 +2,6 @@
 title: Live Unit Testing 中的新增功能
 ms.date: 10-11-2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f3324d12d4bfc82e7980a690853b78321215205
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2f032d062a751186c0abdaa37e5fb451d981e4c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586462"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53962741"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing 中的新增功能
 
@@ -35,11 +34,11 @@ ms.locfileid: "39586462"
 
 - **与任务中心通知集成**。 Visual Studio IDE 现在在任务中心显示 Live Unit Testing 后台处理通知，以便用户可以轻松地了解启用 Live Unit Testing 后发生的情况。 这解决了在大型解决方案中启动 Live Unit Testing 的关键问题。 之前，在覆盖率图标显示前的数分钟，用户无法确定 Live Unit Testing 是否实际已被启用以及它是否在正常运行。 现在不会这样了！
 
-- **MSTest 框架版本 1 支持**：Live Unit Testing 已经可与三个常用单元测试框架配合使用：xUnit、NUnit 以及 MSTest。 之前，Live Unit Testing 仅在 MSTest 单元测试项目使用 MS Test 版本 2 时有效。 从 Visual Studio 2017 版本 15.4 开始，它现在还支持 MSTest 版本 1。 
+- **支持 MSTest 框架版本 1**：Live Unit Testing 已经可与三个常用单元测试框架配合使用：xUnit、NUnit 以及 MSTest。 之前，Live Unit Testing 仅在 MSTest 单元测试项目使用 MS Test 版本 2 时有效。 从 Visual Studio 2017 版本 15.4 开始，它现在还支持 MSTest 版本 1。 
 
-- **可靠性和性能**：Live Unit Testing 现在可确保系统能够更好地检测出项目尚未完全完成加载的情况，并可避免 Live Unit Testing 出现崩溃。 生成性能改进还可在系统知道项目文件未进行任何更改时避免重新计算 MSBuild 项目。  
+- **可靠性和性能**：Live Unit Testing 现可确保系统能够更好地检测出项目尚未完全完成加载的情况，并可避免 Live Unit Testing 出现崩溃。 生成性能改进还可在系统知道项目文件未进行任何更改时避免重新计算 MSBuild 项目。  
 
-- **其他用户界面优化**：右键单击手势中令人费解的“实时测试集 - 包括/排除”选项已更名为“Live Unit Testing 包括/排除”。 “测试” > “Live Unit Testing”菜单的“重置清理”选项已被删除。 现可通过依次选择“工具” > “选项” > “Live Unit Testing”，然后选择“删除持久化数据”访问该选项。
+- **其他用户界面改进**：右键单击手势中令人费解的“实时测试集 - 包括/排除”选项已更名为“Live Unit Testing 包括/排除”。 “测试” > “Live Unit Testing”菜单的“重置清理”选项已被删除。 现可通过依次选择“工具” > “选项” > “Live Unit Testing”，然后选择“删除持久化数据”访问该选项。
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>适用于 Visual Studio 2017 版本 15.3 的 Live Unit Testing 中的新增功能
 
@@ -67,4 +66,3 @@ ms.locfileid: "39586462"
 ## <a name="see-also"></a>请参阅
 - [Live Unit Testing 简介](live-unit-testing-intro.md)   
 - [使用 Visual Studio 2017 执行 Live Unit Testing](live-unit-testing.md)
-

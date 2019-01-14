@@ -1,8 +1,6 @@
 ---
-title: 如何：重定位被检测二进制文件 | Microsoft Docs
-ms.custom: ''
+title: 如何：重新指定检测后的二进制文件的位置 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.binaries
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a060506f818ac000611fc0c29988ed324ae89226
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: f8b50c5b76ea5b22bc9d734d32e433db1c7594d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893073"
 ---
-# <a name="how-to-relocate-instrumented-binaries"></a>如何：重新指定检测后的二进制文件的位置
+# <a name="how-to-relocate-instrumented-binaries"></a>如何：重定位检测后的二进制文件
 
 在检测期间，探测器将插入二进制文件来评估应用程序性能。 通过选择重定位已检测的二进制文件，将检测原始二进制文件的副本，并将其放在指定位置。 如果不想要探查器重命名原始的二进制文件，可以选择此选项。 如果没有重定位该二进制文件，则将覆盖该二进制文件的原始版本。
 

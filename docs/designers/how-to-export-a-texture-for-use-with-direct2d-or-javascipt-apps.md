@@ -1,8 +1,7 @@
 ---
-title: 如何：导出纹理以用于 Direct2D 或 Javascipt 应用程序
+title: 如何：导出纹理以用于 Direct2D 或 Javascipt 应用
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c748e8b380da906ca9fb8fc8588efa6ffcc44980
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aad52a3ff4849702421303bdbaa3af8d1c073d87
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826352"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850829"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>如何：导出纹理以用于 Direct2D 或 Javascipt 应用
 
@@ -37,7 +36,7 @@ ms.locfileid: "49826352"
 
 Direct2D 的上下文中使用的纹理必须符合这些 Direct2D 内部呈现约定：
 
--   Direct2D 通过使用预乘的 Alpha 实现透明度和半透明度。 与 Direct2D 一起使用的纹理必须包含预乘的 Alpha，即使该纹理不使用透明度或半透明度也是如此。 有关预乘的 Alpha 的详细信息，请参阅[如何：导出包含自左乘的 Alpha 的纹理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)。
+-   Direct2D 通过使用预乘的 Alpha 实现透明度和半透明度。 与 Direct2D 一起使用的纹理必须包含预乘的 Alpha，即使该纹理不使用透明度或半透明度也是如此。 有关预乘 Alpha 的详细信息，请参阅[如何：导出包含预乘 Alpha 的纹理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)。
 
 -   必须通过使用以下块压缩格式之一以 .dds 格式应用纹理：
 

@@ -2,7 +2,6 @@
 title: 如何：指定生成事件 (Visual Basic)
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -16,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24eb6d7637f949abf60eeb2d0659fac1bfa1cae7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60f1ab9444c38514646a5ef1147b3f1b0473289e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831727"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828860"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定生成事件 (Visual Basic)
 
@@ -50,7 +49,7 @@ Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译�
     > [!NOTE]
     > 如果预生成事件或生成后事件未成功完成，可通过使用除零 (0) 之外的代码退出事件操作来终止生成，这表示操作成功。
 
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>示例：如何使用生成后事件更改清单信息
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>示例:如何使用生成后事件更改清单信息
 
 以下过程演示如何使用从生成后事件（项目目录中的 .exe.manifest 文件）调用的 .exe 命令在应用程序清单中设置最低的操作系统版本。 最低的操作系统版本是由四个部分组成的数字组合，例如 4.10.0.0。 为此，该命令将更改清单的 `<dependentOS>` 部分：
 

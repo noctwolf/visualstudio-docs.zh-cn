@@ -1,8 +1,6 @@
 ---
 title: “标记”视图 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.marks
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93dbaf0d8c3d1f3542683a05b175c43c0c43b948
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: e162e234a5f0596073df12f7791cdb3e3126cf9c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220705"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53873877"
 ---
 # <a name="marks-view"></a>“标记”视图
 “标记”视图显示插入到应用程序的采样和 ETW 事件。  
   
  在报表中预先填充的默认标记可用来标记程序开始和程序结束。  
   
- 来自自动生成的标记的 Windows 计数器数据也显示在此视图中。 有关详细信息，请参阅[如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)。  
+ 来自自动生成的标记的 Windows 计数器数据也显示在此视图中。 有关更多信息，请参见[如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)。  
   
  若要创建两个标记之间的筛选器，请选择标记，右键单击，然后单击“添加筛选器(按标记)”或“添加筛选器(按时间戳)”。  
   

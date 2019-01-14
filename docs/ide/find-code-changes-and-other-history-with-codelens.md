@@ -2,7 +2,6 @@
 title: 使用 CodeLens 查找代码更改和其他历史记录
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 623a0a0515059a903f59d9c9b330876584c40f64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220295"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860591"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
 
@@ -119,7 +118,7 @@ ms.locfileid: "50220295"
 
 团队可能会有多个分支（例如，一个主分支和一个子开发分支），以降低破坏稳定代码的风险。
 
-![CodeLens：在对代码进行分支时查找](../ide/media/codelensfirstbranchconceptual.png)
+![CodeLens：查找何时对你的代码进行了分支](../ide/media/codelensfirstbranchconceptual.png)
 
 按 Alt+6 可了解在主要分支中更改代码的人数和所做更改数：
 
@@ -129,7 +128,7 @@ ms.locfileid: "50220295"
 
 若要了解何时对代码进行了分支，导航到子分支中的代码。 然后，选择“更改”指示器或按 Alt+6：
 
-![CodeLens：在对代码进行分支时查找](../ide/media/codelens-first-branch.png)
+![CodeLens：查找何时对你的代码进行了分支](../ide/media/codelens-first-branch.png)
 
 ### <a name="find-incoming-changes-from-other-branches"></a>查找来自其他分支的传入更改
 
@@ -167,12 +166,12 @@ ms.locfileid: "50220295"
 |--------------| - |
 |![CodeLens：“从当前分支进行更改”图标](../ide/media/codelensbranchcurrenticon.png)|当前的分支|
 |![CodeLens：“从父分支进行更改”图标](../ide/media/codelensbranchparenticon.png)|父分支|
-|![CodeLens ：“从子分支进行更改”图标](../ide/media/codelensbranchchildicon.png)|子分支|
+|![CodeLens：“从子分支进行更改”图标](../ide/media/codelensbranchchildicon.png)|子分支|
 |![CodeLens：“从对等分支进行更改”图标](../ide/media/codelensbranchpeericon.png)|对等分支|
 |![CodeLens：“从更远分支进行更改”图标](../ide/media/codelensbranchfurtherawayicon.png)|比父、子或对等更进一步的分支|
 |![CodeLens：“从父分支进行合并”图标](../ide/media/codelensbranchmergefromparenticon.png)|从父分支到子分支的合并|
 |![CodeLens：“从子分支进行合并”图标](../ide/media/codelensbranchmergefromchildicon.png)|从子分支到父分支的合并|
-|![CodeLens：“从不相关的分支进行合并”图标](../ide/media/codelensbranchmergefromunrelatedicon.png)|来自不相关分支的合并（baseless 合并）|
+|![CodeLens：“从不相关分支进行合并”图标](../ide/media/codelensbranchmergefromunrelatedicon.png)|来自不相关分支的合并（baseless 合并）|
 
 ## <a name="linked-work-items"></a>链接的工作项
 
@@ -241,7 +240,7 @@ ms.locfileid: "50220295"
 
 ### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>问：如何关闭或打开 CodeLens 或选择要查看的指示器？
 
-**答：**  可以关闭或打开指示器，引用指示器除外。 转到“工具” > “选项” > “文本编辑器” > “所有语言” > “CodeLens”。
+**答：** 可以关闭或打开指示器，引用指示器除外。 转到“工具” > “选项” > “文本编辑器” > “所有语言” > “CodeLens”。
 
 指示器打开后，你也可以从指示器上打开“CodeLens”选项。
 
@@ -253,7 +252,7 @@ ms.locfileid: "50220295"
 
 ### <a name="q-where-is-codelens"></a>问：CodeLens 位于何处？
 
-答：CodeLens 出现在方法、类、索引器和属性级别的 C# 和 Visual Basic 代码中。 对于所有其他文件类型，CodeLens 出现在文件级别。
+**答：** CodeLens 出现在方法、类、索引器和属性级别的 C# 和 Visual Basic 代码中。 对于所有其他文件类型，CodeLens 出现在文件级别。
 
 - 确保 CodeLens 开启。 转到“工具” > “选项” > “文本编辑器” > “所有语言” > “CodeLens”。
 
@@ -265,7 +264,7 @@ ms.locfileid: "50220295"
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>问：为什么没有看见提交的工作项详情？
 
-**问：** 可能是因为 CodeLens 无法查找到 Azure Boards 或 TFS 中的工作项。 检查是否连接到具有这些工作项的项目，以及你是否有权限查看这些工作项。 如果提交说明中关于 Azure Boards 或 TFS 中工作项 ID 的信息有误，工作项详细信息可能也不会显示。
+**答：** 可能是因为 CodeLens 无法查找到 Azure Boards 或 TFS 中的工作项。 检查是否连接到具有这些工作项的项目，以及你是否有权限查看这些工作项。 如果提交说明中关于 Azure Boards 或 TFS 中工作项 ID 的信息有误，工作项详细信息可能也不会显示。
 
 ### <a name="q-why-dont-i-see-the-skype-indicators"></a>问：为什么没有看见 Skype 指示器？
 
@@ -283,7 +282,7 @@ CodeLens 不支持安装不同版本的 Lync 或 Skype。 可能不会针对所�
 
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>问：如何更改 CodeLens 的字体和颜色？
 
-**答：** 转到“工具” > “选项” > “环境” > “字体和颜色”
+**答：** 转到“工具” > “选项” > “环境” > “字体和颜色”。
 
 ![CodeLens - 更改字体和颜色设置](../ide/media/codelensoptionsfontscolorssettings.png)
 
@@ -297,7 +296,7 @@ CodeLens 不支持安装不同版本的 Lync 或 Skype。 可能不会针对所�
 
 4. 按 Tab 转到“显示其设置”列表，然后按向下键选择“CodeLens”。
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>问：我是否能移动 CodeLens 提醒显示？
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>问：我是否能移动 CodeLens 平视显示？
 
 **答：** 可以，选择![“停靠”图标](../ide/media/codelensdockwindow.png)，将 CodeLens 作为窗口停靠。
 

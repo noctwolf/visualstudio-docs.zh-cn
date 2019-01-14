@@ -1,8 +1,6 @@
 ---
-title: DA0038：锁争用率很高 | Microsoft Docs
-ms.custom: ''
+title: DA0038：锁争用率高 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.38
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54788c20552380d22df8bad783d5012ac7157899
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c670ab939f2535c7dfcdf2d2db8a53e06bcd58db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922050"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845910"
 ---
-# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：锁争用率很高
+# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：锁争用率高
 
 |||  
 |-|-|  
@@ -48,7 +46,7 @@ ms.locfileid: "49922050"
  分析运行期间采用的测量值表明锁争用过高时，将触发此规则。 锁争用将延迟执行等待锁的线程。 即使是在低端硬件上运行的单元测试或负载测试中的少量锁争用，也应进行调查。  
 
 > [!NOTE]
->  分析数据中报告的锁争用率过高时，将触发 [DA0039：锁争用率非常高](../profiling/da0039-very-high-rate-of-lock-contentions.md)警告消息，不会触发此信息消息。  
+>  当分析数据中报告的锁争用率过高时，将触发[DA0039：锁争用率高](../profiling/da0039-very-high-rate-of-lock-contentions.md)警告消息，而不不会触发此信息性消息。  
 
 ## <a name="how-to-investigate-a-warning"></a>如何调查警告  
  双击消息导航到分析数据的[“标记”](../profiling/marks-view.md)视图。  查找 **.NET CLR LocksAndThreads\Contention Rate / sec** 列。 确定是否存在特定阶段的程序执行，其中锁争用高于其他阶段。  

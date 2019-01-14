@@ -1,8 +1,6 @@
 ---
 title: “调用方 - 被调用方”视图 - 争用数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Caller/Callee view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f919bd6b3fdad1a9c7412960e14d8c9f4cf5af67
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: db4b0bf6e29be1607fcf05557c8089074efa9f78
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263145"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902901"
 ---
 # <a name="callercallee-view----contention-data"></a>“调用方/被调用方”视图 - 争用数据
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的争用信息。 “调用方/被调用方”视图包含三个网格。  
@@ -28,7 +26,7 @@ ms.locfileid: "34263145"
   
  **由当前函数调用的函数**在底部网格中显示，当前函数调用子函数时，它会显示所选函数的被调用方（子）函数的争用信息。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**Type**|函数的上下文：<br /><br /> -   **0** - 当前函数<br />-   **1** - 调用当前函数的函数<br />-   **2** - 当前函数调用的函数<br /><br /> 仅在 [VSPerfReport](../profiling/vsperfreport.md) 命令行报表中。|  
 |**独占阻塞的时间**|-   对于当前函数，为阻止此函数在函数体中执行代码的时间。 不包含此函数调用的函数中阻塞的时间。<br />-   对于调用方函数，为此函数调用当前函数时当前函数的部分独占阻塞的时间。<br />-   对于被调用方函数，为当前函数调用此函数时阻止此函数执行其自身代码的时间。 不包含被调用方函数调用的子函数中阻塞的时间。|  
@@ -50,7 +48,7 @@ ms.locfileid: "34263145"
 |**源文件**|此函数的定义所在的源文件。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
+ [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“调用方/被调用方”视图](../profiling/caller-callee-view.md)   
  [“调用方/被调用方”视图 - 采样数据](../profiling/caller-callee-view-sampling-data.md)   
  [“调用方/被调用方”视图 - .NET 内存检测数据](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   

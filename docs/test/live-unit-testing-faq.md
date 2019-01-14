@@ -2,7 +2,6 @@
 title: Live Unit Testing 常见问题解答
 ms.date: 2017-10-03
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -11,12 +10,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c0c81bc8413b9d1698e2ad7c21d0d9f397834ea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849068"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935588"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常见问题解答
 
@@ -97,7 +96,7 @@ Live Unit Testing 是否适用于 .NET Core？
 
 如果解决方案需要为检测 (Live Unit Testing) 而生成的自定义步骤，但非检测的“常规”生成不需要，可向项目或 .targets 文件添加代码，检查 `BuildingForLiveUnitTesting` 属性并执行自定义生成前/后步骤。 还可以选择删除特定的生成步骤（如发布或生成包），或将生成步骤（如复制先决条件）添加到基于此项目属性的 Live Unit Testing 生成。 基于此属性自定义生成不会以任何方式改变常规生成，只会影响 Live Unit Testing 生成。
 
-例如，常规生成过程中可能有生成 NuGet 包的目标。 可能不需要每次编辑后都生成 NuGet 包。 因此，可以通过执行以下操作在 Live Unit Testing 生成中禁用该目标：  
+例如，常规生成过程中可能有生成 NuGet 包的目标。 可能不需要每次编辑后都生成 NuGet 包。 因此，可以通过执行以下操作在 Live Unit Testing 生成中禁用该目标：  
 
 ```xml
 <Target Name="GenerateNuGetPackages" BeforeTargets="AfterBuild" Condition="'$(BuildingForLiveUnitTesting)' != 'true'">
@@ -112,7 +111,7 @@ Live Unit Testing 尝试生成解决方案时为什么出现了以下错误：�
 
 例如，如果生成过程如下所示替代 `<OutputPath>`：
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -122,7 +121,7 @@ Live Unit Testing 尝试生成解决方案时为什么出现了以下错误：�
 
 然后可使用以下 XML 替换它：
 
-```xml 
+```xml 
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -138,14 +137,14 @@ Live Unit Testing 尝试生成解决方案时为什么出现了以下错误：�
 ## <a name="set-the-location-of-build-artifacts"></a>设置生成项目的位置
 **我想要将 Live Unit Testing 生成的项目转到特定位置，而不是 .vs 文件夹下的默认位置。可如何进行更改？**
 
-将 `LiveUnitTesting_BuildRoot` 用户级环境变量设置为想要放置 Live Unit Testing 生成项目的路径。 
+将 `LiveUnitTesting_BuildRoot` 用户级环境变量设置为想要放置 Live Unit Testing 生成项目的路径。 
 
 ## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>测试资源管理器与Live Unit Testing 测试运行 
 从测试资源管理器窗口运行测试与在 Live Unit Testing 中运行测试有何不同之处？
 
 有几个区别：
 
-- 从测试资源管理器窗口运行或调试测试将运行常规二进制文件，而 Live Unit Testing 运行已检测二进制文件。 如果想要调试已检测的二进制文件，可在测试方法中添加 [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch) 方法调用，这会导致每当执行该方法时（包括其由 Live Unit Testing 执行时）都启动调试器，然后可附加和调试已检测的二进制文件。 但我们希望检测对于大多数用户方案是透明的，不需要调试要检测的二进制文件。
+- 从测试资源管理器窗口运行或调试测试将运行常规二进制文件，而 Live Unit Testing 运行已检测二进制文件。 如果想要调试已检测的二进制文件，可在测试方法中添加 [Debugger.Launch](xref:System.Diagnostics.Debugger.Launch)  方法调用，这会导致每当执行该方法时（包括其由 Live Unit Testing 执行时）都启动调试器，然后可附加和调试已检测的二进制文件。 但我们希望检测对于大多数用户方案是透明的，不需要调试要检测的二进制文件。
 
 - Live Unit Testing 不会创建新的应用程序域来运行测试，但从测试资源管理器窗口运行的测试确实会创建新的应用程序域。
 
@@ -203,7 +202,7 @@ Visual Studio 2017 版本 15.3 已修复此问题，再也不会遇到了。 请
 
 如果解决方案的生成过程生成的源代码属于解决方案本身，并且生成目标文件没有指定相应的输入和输出，即使没有进行编辑，也可生成解决方案。 应给定目标一个输入和输出列表，使 MSBuild 可执行适当的最新检查，并确定是否需要新的生成。
 
-Live Unit Testing 只要检测到源文件已更改，就会启动一个生成。 由于解决方案的生成过程生成源文件，Live Unit Testing 将进入一个无限的生成循环。 但如果 Live Unit Testing 启动第二次生成时（从上一生成中检测到新生成的源代码文件后）检查了目标的输入和输出，它将中断该生成循环，因为输入和输出检查将表明所有内容都为最新。  
+Live Unit Testing 只要检测到源文件已更改，就会启动一个生成。 由于解决方案的生成过程生成源文件，Live Unit Testing 将进入一个无限的生成循环。 但如果 Live Unit Testing 启动第二次生成时（从上一生成中检测到新生成的源代码文件后）检查了目标的输入和输出，它将中断该生成循环，因为输入和输出检查将表明所有内容都为最新。  
 
 ## <a name="lightweight-solution-load"></a>轻量级解决方案加载
 Live Unit Testing 如何与轻型解决方案加载功能配合使用？
@@ -223,12 +222,12 @@ Live Unit Testing 暂不能很好地支持轻型解决方案加载功能。 仅�
 
 Visual Studio 2017 版本 15.3 已修复此问题，再也不会遇到了。 请升级到此版 Visual Studio。
 
-对于较旧版本的 Visual Studio 2017，这是一个已知问题。 若要解决此问题，需要在添加或排除测试后，编辑任何文件。 
+对于较旧版本的 Visual Studio 2017，这是一个已知问题。 若要解决此问题，需要在添加或排除测试后，编辑任何文件。 
 
 ## <a name="editor-icons"></a>编辑器图标
 **为什么即使 Live Unit Testing 似乎正基于“输出”窗口中的消息运行测试，但仍在编辑器中看不到任何图标？**
 
-如果 Live Unit Testing 正在操作的程序集出于任何原因未进行检测，则可能无法在编辑器中看到图标。 例如，Live Unit Testing 与设置 `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>` 的项目不兼容。 在这种情况下，需要将生成过程更新为，删除此设置或将设置更改为 `true`，以便 Live Unit Testing 可以正常运行。 
+如果 Live Unit Testing 正在操作的程序集出于任何原因未进行检测，则可能无法在编辑器中看到图标。 例如，Live Unit Testing 与设置 `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>` 的项目不兼容。 在这种情况下，需要将生成过程更新为，删除此设置或将设置更改为 `true`，以便 Live Unit Testing 可以正常运行。 
 
 ## <a name="capture-logs"></a>捕获日志
 如何收集更详细的日志到文件 Bug 报告？

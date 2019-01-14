@@ -2,7 +2,6 @@
 title: 管理程序集和清单签名
 ms.date: 02/17/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb2113ed091d99ed66b13955ea468c376bba9490
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1c3795c2887e9d7516f3e9f781e42a2629e2a0b5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927566"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理程序集和清单签名
 
@@ -70,7 +69,7 @@ ms.locfileid: "39379561"
 
 如果仅对公钥具有访问权限，可以使用延迟签名来推迟分配密钥。 可通过选择“仅延迟签名”复选框来启用延迟签名。 延迟签名的项目将不会运行，并且无法调试。 但是，可以通过 [Sn.exe 强名称工具](/dotnet/framework/tools/sn-exe-strong-name-tool)及 `-Vr` 选项，在开发过程中跳过验证。
 
-有关对清单进行签名的详细信息，请参阅[如何：对应用程序和部署清单进行签名](../ide/how-to-sign-application-and-deployment-manifests.md)。
+有关对清单签名的详细信息，请参阅[如何：对应用程序和部署清单签名](../ide/how-to-sign-application-and-deployment-manifests.md)。
 
 ## <a name="see-also"></a>请参阅
 

@@ -1,8 +1,6 @@
 ---
 title: “调用关系树”视图 - 采样数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Call Tree view
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90035daf13008122e7d529408a6de0389b311628
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c71ff415ea121f5fb8a28eb8365e601414ba5d0a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262364"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53917483"
 ---
 # <a name="call-tree-view---sampling-data"></a>“调用树”视图 - 采样数据
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。  
@@ -38,7 +36,7 @@ ms.locfileid: "34262364"
   
  设置根节点后，将从视图中排除所选节点的子树之外的所有其他条目。 若要将根节点重置回原始节点，请在“调用树视图”窗口中右键单击并选择“重置根节点”。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
@@ -55,7 +53,7 @@ ms.locfileid: "34262364"
 |**非独占样本数百分比**|调用关系树中的父函数调用此函数时，分析运行中属于此函数的非独占样本的所有样本数的百分比。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
+ [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“调用树”视图 - 探查器采样数据](../profiling/call-Tree-view-sampling-data.md)   
  [“调用树”视图 - 采样](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [“调用树”视图 - 检测](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   

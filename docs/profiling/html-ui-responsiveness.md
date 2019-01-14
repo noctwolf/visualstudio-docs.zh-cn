@@ -2,7 +2,6 @@
 title: 分析 UWP 应用中的 HTML UI 响应能力 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -17,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: b3b9cbbeaf94c231de518b6129a11327b69767f4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51221043"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843523"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析中通用 Windows 应用中的 HTML UI 响应能力
 本主题介绍如何使用 UI 响应能力探查器（一种可用于 Windows 通用应用的性能工具）隔离应用中的性能问题。  
@@ -69,7 +68,7 @@ ms.locfileid: "51221043"
 6.  若要停止分析探查器收集的应用程序和视图数据，请选择 **“停止收集”**。  
   
 ## <a name="isolate-an-issue"></a>隔离问题  
- 下一节会提供帮助你隔离性能问题的建议。 有关如何通过使用样本性能测试应用来标识和修复性能问题的分步说明，请参阅[演练：改进 UI 响应能力 (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md)。  
+ 下一节会提供帮助你隔离性能问题的建议。 有关如何通过使用样本性能测试应用来标识和修复性能问题的分步说明，请参阅[演练：改进 UI 响应能力 (HTML)](/visualstudio/profiling/html-ui-responsiveness)。  
   
 ###  <a name="Workflow"></a> 隔离 UI 响应能力问题  
  以下是建议的工作流步骤，可帮助你更有效地使用 UI 响应能力探查器：  
@@ -188,7 +187,7 @@ if (performance.mark && performance.measure) {
 -   导航事件，在导航到其他页面时发生。 此事件的工具提示显示目标页面 URL。  
   
 ###  <a name="CPUUtilization"></a> 查看 CPU 使用率  
- 通过“CPU 使用率”图可确定 CPU 活动过多的时间段。 该图提供一段时间内应用程序的 CPU 平均消耗量信息。 信息使用了彩色编码来表示以下具体类别： **“加载”**、 **“脚本”**、垃圾回收（**“GC”**）、 **“样式”**、 **“呈现”** 和 **“图像解码”**。 有关这些类别的详细信息，请参阅本主题后面部分的 [Profiler event reference](#profiler-event-reference) 。  
+ 通过“CPU 使用率”图可确定 CPU 活动过多的时间段。 该图提供一段时间内应用程序的 CPU 平均消耗量信息。 信息使用了彩色编码来表示以下特定类别：“正在加载”、“脚本”、垃圾回收 (GC)、“样式”、“渲染”和“图像解码”。 有关这些类别的详细信息，请参阅本主题后面部分的 [Profiler event reference](#profiler-event-reference) 。  
   
  “CPU 使用率”图显示在所有应用程序线程上花费的时间，它将一个或多个 CPU 的 CPU 使用率值合并为一个百分比值。 当多个 CPU 正在使用时，CPU 使用率值可能超过 100%。  
   
@@ -328,7 +327,7 @@ if (performance.mark && performance.measure) {
 |事件|事件类别|在出现以下情况时发生|  
 |-----------|--------------------|-----------------|  
 |CSS 解析|“加载”|发现了新 CSS 内容，而且尝试解析 CSS 内容。|  
-|HTML 解析|加载|发现了新 HTML 内容，而且尝试将此内容解析到节点并将内容插入到 DOM 树。|  
+|HTML 解析|“加载”|发现了新 HTML 内容，而且尝试将此内容解析到节点并将内容插入到 DOM 树。|  
 |HTTP 请求|“加载”|在 DOM 中找到了远程资源，或者创建了生成 HTTP 请求的 XMLHttpRequest。|  
 |推理下载|“加载”|已在页面的 HTML 内容中搜索所需的资源，以便快速调度对资源的后续 HTTP 请求。|  
 |动画帧回调函数|“脚本”|浏览器即将呈现另一个帧，这触发了应用程序提供的回调函数。|  
@@ -338,7 +337,7 @@ if (performance.mark && performance.measure) {
 |转变观察器|“脚本”|已修改一个或多个观察到的 DOM 元素，这导致执行与 MutationObserver 关联的回调。|  
 |脚本计算|“脚本”|在 DOM 中找到了新的脚本元素，并且尝试解析和执行此脚本。|  
 |计时器|“脚本”|计划的计时器过时，从而导致执行其关联的回调函数。|  
-|Windows 运行时异步回调函数|脚本|Windows 运行时对象完成了触发 `Promise` 回调函数的异步操作。|  
+|Windows 运行时异步回调函数|“脚本”|Windows 运行时对象完成了触发 `Promise` 回调函数的异步操作。|  
 |Windows 运行时事件|“脚本”|Windows 运行时对象上发生的事件触发了注册侦听器。|  
 |垃圾回收|“GC”|收集不再使用的对象的内存所用的时间。|  
 |CSS 计算|“样式”|已对 DOM 进行更改，要求重新计算所有受影响的元素的样式属性。|  

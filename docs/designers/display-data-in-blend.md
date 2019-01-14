@@ -2,7 +2,6 @@
 title: 显示 Blend 中的数据
 ms.date: 03/06/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae09c6921bc4f6e0b3bb2a91eb9c3972c997d566
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: cae026f0b4a7be3a0ed9a389f3f6d9b8a6a911f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282165"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924392"
 ---
 # <a name="display-data-in-blend"></a>显示 Blend 中的数据
 
@@ -33,9 +32,9 @@ ms.locfileid: "44282165"
 
 ![“在运行应用程序时启用”菜单项](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
- **观看简短视频：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG)[从头开始创建示例数据](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2)。
+ **观看短片：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG) [从头开始创建示例数据](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2)。
 
- **观看简短视频：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG)[将一些数据绑定与 Blend 混合](https://www.youtube.com/watch?v=LSwPB6CAvjg)。
+ **观看短片：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG) [将一些数据绑定与 Blend 混合](https://www.youtube.com/watch?v=LSwPB6CAvjg)。
 
 ## <a name="generate-sample-data-from-a-class"></a>从类生成示例数据
 
@@ -43,13 +42,13 @@ ms.locfileid: "44282165"
 
 若要从类生成示例数据，请打开一个 XAML 文档，然后在“数据”面板中，单击“创建示例数据”![创建示例数据图标](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png)按钮，然后单击“从类创建示例数据”。
 
-**观看简短视频：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG)[从类中创建示例数据](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML)。
+**观看短片：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG) [从类开始创建示例数据](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML)。
 
-**观看简短视频：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG) [通过 Blend 混合数据绑定](https://www.youtube.com/watch?v=LSwPB6CAvjg)。
+**观看短片：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG) [将一些数据绑定与 Blend 混合](https://www.youtube.com/watch?v=LSwPB6CAvjg)。
 
 ## <a name="show-live-data-in-a-wpf-application"></a>在 WPF 应用程序中显示实时数据
 
-**观看简短视频：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG)[创建 XML 数据源](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata)。
+**观看短片：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG) [创建 XML 数据源](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata)。
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>在应用商店或 Phone 应用中显示实时数据
 

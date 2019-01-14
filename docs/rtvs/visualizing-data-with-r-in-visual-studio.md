@@ -3,19 +3,18 @@ title: 使用 R 可视化数据
 description: 在 Visual Studio 中如何使用绘图窗口从 R 程序中绘制数据。
 ms.date: 06/29/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235212"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859076"
 ---
 # <a name="create-visual-data-plots-with-r"></a>使用 R 创建可视数据图
 
@@ -47,7 +46,7 @@ ms.locfileid: "36235212"
 
 绘图窗口工具栏会保存适用的命令，其中大部分命令可通过“R 工具” > “绘图”菜单使用。
 
-| Button | 命令 | 描述 | 
+| Button | 命令 | 说明 | 
 | --- | --- | --- |
 | ![“新建绘图窗口”按钮](media/plotting-toolbar-01-new-plot-window.png) | 新建绘图窗口 | 创建具有自己的历史记录的单独绘图窗口。 请参阅[多个绘图窗口](#multiple-plot-windows)。 |
 | ![“激活绘图窗口”按钮](media/plotting-toolbar-02-activate-plot-window.png) | 激活绘图窗口 | 将当前绘图窗口设置为活动窗口，以便将后续 `plot` 命令呈现给该窗口。 请参阅[多个绘图窗口](#multiple-plot-windows)。 请参阅[多个绘图窗口](#multiple-plot-windows)。 |

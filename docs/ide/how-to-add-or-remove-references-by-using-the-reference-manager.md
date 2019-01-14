@@ -2,7 +2,6 @@
 title: 在引用管理器中添加引用
 ms.date: 04/11/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -23,12 +22,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4e3e21f38f8b4f60678aa4bb767368393c666cab
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839266"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53856275"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
 
@@ -72,7 +71,7 @@ ms.locfileid: "49839266"
 
 1. “框架”列出组成目标框架的所有程序集。
 
-    针对 Windows 8.x Store 应用的项目在项目创建时默认包含对目标 [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] 中所有程序集的引用。 在托管项目中，“解决方案资源管理器”的“引用”文件夹下的只读节点表示对整个框架的引用。 因此，“框架”选项卡不从框架枚举任何程序集，而是显示以下消息：“已引用所有框架程序集**Framework**。 请使用对象浏览器浏览框架中的引用”。 对于桌面项目，“框架”选项卡枚举目标框架中的程序集，用户必须添加应用程序所需的引用。
+    针对 Windows 8.x Store 应用的项目在项目创建时默认包含对目标 [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] 中所有程序集的引用。 在托管项目中，“解决方案资源管理器”的“引用”文件夹下的只读节点表示对整个框架的引用。 因此，“框架”选项卡不从框架枚举任何程序集，而是显示以下消息：“已引用所有框架程序集。 请使用对象浏览器浏览框架中的引用”。 对于桌面项目，“框架”选项卡枚举目标框架中的程序集，用户必须添加应用程序所需的引用。
 
 2. “扩展”列出了组件和控件的外部供应商为扩展目标框架而开发的所有程序集。 根据用户应用程序的用途，可能需要这些程序集。
 
@@ -94,7 +93,7 @@ ms.locfileid: "49839266"
 
 - 使用最新版本的 .NET Framework 的组件与以早期版本的 .NET Framework 为目标的项目不兼容。
 
-    若要深入了解如何更改项目的目标 .NET Framework 版本，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+    有关如何更改项目的目标 .NET Framework 版本的信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 - 使用 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 的组件与以 [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] 为目标的项目不兼容。
 

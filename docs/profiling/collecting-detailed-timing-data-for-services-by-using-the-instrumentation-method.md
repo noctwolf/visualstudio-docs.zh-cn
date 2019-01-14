@@ -1,8 +1,6 @@
 ---
 title: 从探查器命令行使用检测方法收集服务的详细计时数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c0dd9fef26538ef6f7208fc32ea00591eb5c608
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 693bd44fe9945d5f86ea405fbc8c2ccbd3e15560
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53946339"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>使用检测方法通过探查器命令行收集服务的详细计时数据
 本部分介绍从命令行使用检测方法收集 Windows 服务的详细性能数据的步骤和选项。  
@@ -47,4 +45,3 @@ ms.locfileid: "34335822"
   
 ### <a name="analyze-instrumentation-data-views-and-reports"></a>分析检测数据视图和报告  
  [检测方法数据视图](../profiling/instrumentation-method-data-views.md)
-

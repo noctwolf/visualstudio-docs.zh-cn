@@ -1,8 +1,6 @@
 ---
 title: “函数”视图 — 争用数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7444a4d3e8ad6e3f5fdd91d34058e20e13caf38
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: b92d19c48f91d6094136d0ac8d2d6b276b59707d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237537"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53920019"
 ---
 # <a name="functions-view---contention-data"></a>“函数”视图 - 争用数据
 争用数据的“函数”报告视图列出了分析运行期间阻止执行的函数。  
   
  下表介绍了使用并发方法收集的分析数据文件的“函数”视图中显示的值。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**独占阻塞的时间**|阻止此函数执行函数体内代码的时间。 不包含此函数调用的函数中的阻塞时间。|  
 |**独占阻塞的时间百分比**|此函数的独占阻止时间占分析运行期间所有阻止时间的百分比。|  
@@ -44,7 +42,7 @@ ms.locfileid: "35237537"
 |**源文件**|此函数的定义所在的源文件。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
+ [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“函数”视图](../profiling/functions-view.md)   
  [“函数”视图 - 检测](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [“函数”视图 - 采样](../profiling/functions-view-dotnet-memory-sampling-data.md)   

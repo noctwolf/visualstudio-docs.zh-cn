@@ -1,8 +1,6 @@
 ---
 title: 如何：选择收集方法 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, choosing collection method
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54efd3d68e81908d3843525b588d9c28cc1be3ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8502f37e02fb668905dec2b548aba9229e8e7051
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921283"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833266"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：选择收集方法
 
@@ -32,7 +30,7 @@ Visual Studio 分析工具支持三种收集性能数据的方法：采样、检
 
 - 在向导的第一页上，选择下列选项之一：
 
-| 选项 | 描述 |
+| 选项 | 说明 |
 |----------------------------| - |
 | **CPU 采样** | 收集对初始分析和分析 CPU 使用率问题非常有用的应用程序统计信息。 |
 | **检测** | 收集对重点分析和分析输入/输出性能问题非常有用的详细的计时数据。 |

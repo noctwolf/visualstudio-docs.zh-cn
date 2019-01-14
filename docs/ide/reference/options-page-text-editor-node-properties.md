@@ -2,7 +2,6 @@
 title: “选项”页 ->“文本编辑器”节点属性
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16bdece503babe9a50bc83d64da582d390843b6
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3339884fe14b0dbc40fe9297f06b0462696b8040
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50670814"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935666"
 ---
 # <a name="options-page-text-editor-node-properties"></a>“选项”页 ->“文本编辑器”节点属性
 本文档描述了与“选项”对话框的“文本编辑器”类别 `DTE.Properties("TextEditor", <Property Page>)` 关联的一些页面（或属性集合）。 每个小节的标题都是用于访问 `Properties` 集合的调用，而每个小节中的表都列出了集合中的属性。
@@ -28,7 +27,7 @@ ms.locfileid: "50670814"
 ## <a name="general"></a>常规
  `DTE.Properties("TextEditor", "General")`
 
-|属性项名称|“值”|描述|
+|属性项名称|“值”|说明|
 | - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Boolean)|如果为 `True`，当有选定内容时按 Escape 会导致插入点移动到在初始化创建选定内容的操作之前的位置。 如果为 `False`，则将插入点移动到选定内容的另一端。|
 |DragNDropTextEditing|Get/Set (Boolean)|确定是否可以将文本的选定区域从文档中的一个位置拖动到其他位置，以执行复制或剪切/粘贴操作。|
@@ -47,7 +46,7 @@ ms.locfileid: "50670814"
 
  编辑文本文件时，`PlainText` 编辑器选项会影响编辑器设置。 每种编程语言和每个 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 程序包都有其自身特定的**文本编辑器**设置。 例如，若要查看或更改 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 编辑器设置，请使用 `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`。 对于“SQL 脚本”编辑器设置，请使用 `DTE.Properties("TextEditor", "SQL ")`。
 
-|属性项名称|“值”|描述|
+|属性项名称|值|说明|
 | - |-----------|-----------------|
 |AutoListMembers|Get/Set (Boolean)|确定用户在变量引用后面键入句点时是否自动显示可用成员列表。|
 |AutoListParams|Get/Set (Boolean)|确定用户在函数名后面键入“(”时是否自动显示参数列表的说明。|
@@ -56,7 +55,7 @@ ms.locfileid: "50670814"
 |WordWrap|Get/Set (Boolean)|确定视图是否将较长的行在字边界处换行。 将此属性设置为 `true` 会导致将 `VirtualSpace` 属性项（位于此列表中）设置为 `false`。|
 |WordWrapGlyphs|Get/Set (Boolean)|在行的末尾显示标志符号；这表明该行会换到下一行。|
 |EnableLeftClickForURLs|Get/Set (Boolean)|确定编辑器是否为 URL 加下划线，并且是否启用单击鼠标左键时跳转到系统注册的 Web 浏览器中的 URL。|
-|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|确定缩进样式：“默认”、“智能”或“无”。|
+|IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|确定缩进样式：默认、智能或 None。|
 |TabSize|Get/Set (Long)|表示等于一个制表符的空格数。不能将整数设置在 1 至 60（包含 1 和 60）的范围之外。|
 |InsertTabs|Get/Set (Boolean)|如果为 `True`，则缩进时使用 Tab 字符。|
 |IndentSize|Get/Set (Long)|表示等于一个缩进级别的空格数。 不能将整数值设置在 1 至 60（包含 1 和 60）的范围之外。|

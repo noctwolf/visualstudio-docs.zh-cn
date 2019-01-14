@@ -2,19 +2,18 @@
 title: 修改 Blend 中对象的样式
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae494a82e92086cfa0e8e2a69b7f7eee022807a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3cd8b8d9b3f9a12fa69cf708b0f7a3b16bae83d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906782"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>修改 Blend 中对象的样式
 
@@ -48,9 +47,9 @@ ms.locfileid: "31917197"
 
 可以一次性设计控件的外观和行为，然后将该设计应用于其他控件，以便不必分别进行维护。
 
-是否应使用样式？：如果只是想设置默认属性（如按钮的颜色），请使用样式。 即使在应用了样式之后，也可以修改控件。
+**是否应使用样式？**：如果只是想设置默认属性（如按钮的颜色），请使用样式。 即使在应用了样式之后，也可以修改控件。
 
-是否应使用模板？：如果想要更改控件的结构，请使用模板。 假设将图形或徽标转换为按钮。 在向控件应用模板之后，无法修改控件。
+**是否应使用模板？**：如果想要更改控件的结构，请使用模板。 假设将图形或徽标转换为按钮。 在向控件应用模板之后，无法修改控件。
 
 ### <a name="create-a-template-or-style"></a>创建模板或样式
 
@@ -88,13 +87,13 @@ ms.locfileid: "31917197"
 
 选择控件，在[属性面板](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel)中，找到“样式”或“模板”属性。 选择“高级选项”，然后在快捷菜单上单击“重置”。
 
-## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>可视状态：基于其状态更改控件的外观
+## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>可视状态：根据控件状态更改其外观
 
 控件可以基于用户交互而具有不同的视觉外观。 例如，可以在用户单击时使按钮变为绿色，也可以运行动画。 可使用过渡缩短或延长可视状态之间的时间。
 
 ![鼠标悬停状态](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-观看短片：![播放按钮](../designers/media/bldadminconsoleinitialconfigicon.PNG) [管理 WPF 控件的状态](https://www.youtube.com/watch?v=m0PlkF5i6uw)。
+**观看短片：**![播放按钮](../designers/media/bldadminconsoleinitialconfigicon.PNG) [管理 WPF 控件的状态](https://www.youtube.com/watch?v=m0PlkF5i6uw)。
 
 ## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>资源：创建颜色、样式和模板，并在以后重复使用它们
 

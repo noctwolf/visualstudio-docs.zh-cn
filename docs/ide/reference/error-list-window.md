@@ -2,7 +2,6 @@
 title: “错误列表”窗口
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ErrorList
@@ -17,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 069f2a4957338ec3ab29855d9629712c7eb7cdcc
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 50cc9a5198df29385519364455eda319b5aeae68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389048"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963866"
 ---
 # <a name="error-list-window"></a>“错误列表”窗口
 
@@ -55,7 +54,7 @@ ms.locfileid: "52389048"
 
 可以限制搜索范围，以对多组错误进行分析和处理。 例如，你可能希望集中处理阻碍项目编译的核心错误。 范围限定选项包括：
 
-1.  **打开的文档**：显示已打开文档的错误、警告和消息。
+1.  **打开的文档**：显示已打开的文档的错误、警告和消息。
 
 2.  **当前项目**：显示当前“编辑器”中选定文档的项目或“解决方案资源管理器”中的选定项目的错误、警告和消息。
 
@@ -86,7 +85,7 @@ ms.locfileid: "52389048"
 
 显示错误代码。
 
-描述
+说明
 
 显示条目的文本。
 

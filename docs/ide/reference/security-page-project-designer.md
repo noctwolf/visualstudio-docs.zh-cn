@@ -2,7 +2,6 @@
 title: ”项目设计器“ ->“安全”页
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75877dfd8620af9d3fdfecb5cfcb10761a739515
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 30b09fee21dd7f028615612c27c3aab468a22055
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949574"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53987948"
 ---
 # <a name="security-page-project-designer"></a>”项目设计器“ ->“安全”页
 
@@ -38,7 +37,7 @@ ms.locfileid: "31949574"
 > 使用“发布”向导发布应用程序时，会自动启用此选项。
 
 
- 选中此选项后，可以从以下两个单选按钮中选择一个：“这是完全信任的应用程序”或“这是部分信任的应用程序”。
+ 选择此选项时，可以选择以下两个单选按钮之一：“这是完全信任应用程序”或“这是部分信任应用程序”。
 
  对于 WPF Web 浏览器应用程序项目，默认选择此选项。
 
@@ -80,9 +79,9 @@ ms.locfileid: "31949574"
 - <xref:System.Security.Permissions.MediaPermission>
 - [ClickOnce 应用程序的代码访问安全性](../../deployment/code-access-security-for-clickonce-applications.md)
 - [如何：启用 ClickOnce 安全设置](../../deployment/how-to-enable-clickonce-security-settings.md)
-- [如何：为 ClickOnce 应用程序设置安全区域](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [如何：设置 ClickOnce 应用程序的安全区域](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [如何：设置 ClickOnce 应用程序的自定义权限](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [如何：使用受限权限对 ClickOnce 应用程序进行调试](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [如何：使用受限权限调试 ClickOnce 应用程序](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [ClickOnce 安全和部署](../../deployment/clickonce-security-and-deployment.md)
 - [项目属性引用](../../ide/reference/project-properties-reference.md)
 - [“高级安全设置”对话框](../../ide/reference/advanced-security-settings-dialog-box.md)

@@ -10,13 +10,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 8e4584d386cb61aaf7809c8bb5ab748e49543c7e
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: c9aecfd8309e795a5905bd1aaca5c14a4df51283
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53857061"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>演练：使用虚拟用户活动图隔离问题
 
@@ -109,6 +108,6 @@ ms.locfileid: "52895920"
 
 - [在详细信息视图中分析虚拟用户活动](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)
-- [如何：为分布式负载测试创建测试设置](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [如何：为分发的负载测试创建测试设置](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)
 - [使用测试设置收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)

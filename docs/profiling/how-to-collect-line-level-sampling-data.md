@@ -1,8 +1,6 @@
 ---
 title: 如何：收集行级采样数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, line-level sampling
@@ -12,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0920c9a506adaf562a8acc77b2b030e461f11ed1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7dc61ae776d75331eaaf2974f0eda139b601089
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934882"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53952029"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>如何：收集行级采样数据
+# <a name="how-to-collect-line-level-sampling-data"></a>如何：收集行级别采样数据
 行级采样是探查器确定占用大量处理器时间的函数在代码中的位置，如具有高独占样本的函数，处理器需要耗费大量时间。  
   
 ## <a name="overview"></a>概述  

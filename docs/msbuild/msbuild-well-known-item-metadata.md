@@ -1,8 +1,6 @@
 ---
 title: MSBuild 常见的项元数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d1ec2d2ade7162f08db954d8a7bebe059a21878
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b46fd624b0ea3517cef75ba381638db2e3d94aaa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154555"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53841520"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 常见的项元数据
 下表描述了创建每个项时分配给该项的元数据。 在每个示例中，以下项声明用于将文件 C:\MyProject\Source\Program.cs 包含在项目中。  
@@ -34,7 +32,7 @@ ms.locfileid: "39154555"
 </ItemGroup>  
 ```  
   
-|项元数据|描述|  
+|项元数据|说明|  
 |-------------------|-----------------|  
 |%(FullPath)|包含项的完整路径。 例如:<br /><br /> C:\MyProject\Source\Program.cs|  
 |%(RootDir)|包含项的根目录。 例如:<br /><br /> C:\\|  

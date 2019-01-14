@@ -1,8 +1,6 @@
 ---
 title: 从命令行分析 ASP.NET Web 应用程序 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - profiling ASP.NET applications
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 03cb8a6b28ed5f5fece49644d9b1df2608f3e36d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2b2f4602e56a89452635ebe0ad94dbc1664c2fb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895660"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835339"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>通过命令行分析 ASP.NET Web 应用程序
 本部分介绍如下进程的步骤和选项：使用命令行中的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序的性能数据。  
@@ -30,9 +28,9 @@ ms.locfileid: "49895660"
   
 | 任务 | 相关内容 |
 | - | - |
-| **轻松收集基本的 ASP.NET 分析数据：** 使用 **VSPerfASPNETCmd** 工具收集采样、检测、.NET 内存、争用或不具有配置要求的层交互数据，以及 **VSPerfCmd** 所需的 Internet 信息服务 (IIS) 重启。 **VSPerfASPNETCmd** 不允许收集额外数据或控制数据收集。 **注意：****VSPerfASPNETCmd** 是使用独立探查器分析 ASP.NET 网站的首选工具。 | -   [使用 VSPerfASPNETCmd 进行快速网站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) |
+| **轻松收集基本的 ASP.NET 分析数据：** 使用“VSPerfASPNETCmd”工具收集采样、检测、.NET 内存、争用或层交互数据，而不需要配置要求以及“VSPerfCmd”所需的 Internet Information Services (IIS) 重启。 **VSPerfASPNETCmd** 不允许收集额外数据或控制数据收集。 **注意：**“VSPerfASPNETCmd”是使用独立探查器分析 ASP.NET 网站的首选工具。 | -   [使用 VSPerfASPNETCmd 进行快速网站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md) |
 | **收集应用程序统计信息：** 使用采样法收集性能统计信息。 采样数据适用于分析 CPU 使用率问题以及了解应用程序的常规性能特征。 | -   [使用采样收集应用程序统计信息](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md) |
-| **收集详细计时数据：** 使用检测方法收集详细计时信息。 检测数据可用于分析 IO 问题和精细分析应用程序方案。 | -   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md) |
+| **收集详细计时信息：** 使用检测方法收集详细计时信息。 检测数据可用于分析 IO 问题和精细分析应用程序方案。 | -   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md) |
 | **收集 .NET 内存数据：** 使用采样法或检测法收集显示分配对象的大小和数量的 .NET 内存分配数据。 还可以收集对象生存期数据，此数据显示在每次垃圾回收生成中回收的对象的大小和数量。 | -   [收集内存数据](../profiling/collecting-memory-data-from-an-aspnet-web-application.md) |
 | **收集并发数据：** 使用并发方法收集资源争用数据。 **注意：** Web 应用程序不支持收集线程活动和可视化数据。 | -   [收集并发数据](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md) |
 | **添加层交互数据：** 可以添加有关 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序对 Microsoft [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 数据库进行的同步 [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] 调用的性能数据。 | -   [收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md) |

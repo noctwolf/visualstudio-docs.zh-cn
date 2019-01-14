@@ -2,7 +2,6 @@
 title: C# 代码片段
 ms.date: 06/05/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - snippets [C#]
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: feec485f752ac13b43310e4afd97bdfaac93ee51
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: be3af132a84b37043cf185beb26293ef5618439b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849159"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53858233"
 ---
 # <a name="c-code-snippets"></a>C# 代码片段
 
@@ -33,7 +32,7 @@ ms.locfileid: "49849159"
 
 Visual Studio for C# 默认包含以下代码片段。
 
-|名称（或快捷方式）|描述|要插入代码片段的有效位置|
+|名称（或快捷方式）|说明|要插入代码片段的有效位置|
 | - |-----------------| - |
 |#if|创建 [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) 指令和 [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif) 指令。|任何位置。|
 |#region|创建 [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) 指令和 [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion) 指令。|任何位置。|

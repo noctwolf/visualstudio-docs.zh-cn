@@ -3,7 +3,6 @@ title: 用于设计易于访问的应用程序的资源
 description: 了解如何创建易于访问的应用程序，以便让残障人士更轻松地使用它们。
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility, Windows applications
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642d5a327982454c9eaf4e5233451d5dba499e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 10b63de96ce56005abeb59de35b533693edcff53
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671711"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959620"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>用于设计易于访问的应用程序的资源
 
@@ -37,7 +36,7 @@ ms.locfileid: "50671711"
 
 ## <a name="windows-applications"></a>Windows 应用程序
 
-* **[演练：创建可访问的基于 Windows 的应用程序](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**：本文提供用于在示例 Windows 应用程序中包含针对 Certified for Windows 徽标的五个辅助功能需求的分步说明。
+* **[演练：创建基于 Windows 的可访问应用程序](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** 本文提供分步说明，阐释如何在示例 Windows 应用程序中包含针对“Windows 认证”徽标的五个辅助功能要求。
 
 * **键盘用户界面设计的准则** 此技术文章介绍如何设计用户可以从键盘导航的 Windows 应用程序。 有关详细信息，请参阅[键盘用户界面设计的准则](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)。
 
@@ -45,7 +44,7 @@ ms.locfileid: "50671711"
 
 ## <a name="websites"></a>网站
 
--   [演练：使用图像控件、菜单控件以及 AutoPostBack 的辅助功能准则](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) 本文提供用于在示例网页中包含可访问控件的分步说明。 还提供针对 Web 的一些辅助功能设计提示。
+-   [演练：使用图像控件、菜单控件以及 AutoPostBack 的辅助功能准则](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) 本文提供分步说明，阐释如何在示例网页中包含可访问控件。 还提供针对 Web 的一些辅助功能设计提示。
 
 -   **使用 DHTML 创建可访问网页** 此技术文章列出了可访问的 HTML 4.0 元素以及可访问 Web 设计提示。 有关详细信息，请参阅[使用 DHTML 创建可访问的网页](https://msdn.microsoft.com/library/ms528445.aspx)。
 

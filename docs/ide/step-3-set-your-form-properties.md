@@ -1,9 +1,7 @@
 ---
 title: 步骤 3：设置窗体属性
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 author: TerryGLee
@@ -11,17 +9,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c0cde54cb95c9e9d9cb237e8241425c70766e669
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c891a8aa535b9e2bc000f3d115b580f3a220a44b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821262"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968506"
 ---
 # <a name="step-3-set-your-form-properties"></a>步骤 3：设置窗体属性
 接下来，使用“属性”窗口更改窗体的外观。
 
- ![视频链接](../data-tools/media/playvideo.gif)有关本主题的视频版本，请观看[教程 1：在 Visual Basic 中创建图片查看器 - 视频 1](http://go.microsoft.com/fwlink/?LinkId=205209) 或[教程 1：在 C# 中创建图片查看器 - 视频 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
+ ![视频链接](../data-tools/media/playvideo.gif)有关此主题的视频版本，请参阅[教程 1：在 Visual Basic 中创建图片查看器 - 视频 1](http://go.microsoft.com/fwlink/?LinkId=205209) 或[教程 1：在 C# 中创建图片查看器 - 视频 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
 
 ## <a name="to-set-your-form-properties"></a>设置窗体属性
 
@@ -71,6 +69,6 @@ ms.locfileid: "49821262"
 
 ## <a name="to-continue-or-review"></a>继续或查看
 
--   若要转到下一个教程步骤，请参阅[步骤 4：使用 TableLayoutPanel 控件设置窗体的布局](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。
+-   要转到下一个教程步骤，请参阅[步骤 4：使用 TableLayoutPanel 控件设置窗体布局](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。
 
--   若要返回上一个教程步骤，请参阅[步骤 2：运行程序](../ide/step-2-run-your-program.md)。
+-   要返回上一个教程步骤，请参阅[步骤 2：运行程序](../ide/step-2-run-your-program.md)。

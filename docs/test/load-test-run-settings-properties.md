@@ -9,13 +9,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
-ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 73c561cf7f79345751b62b53ec3b7da4f74e2e52
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53860200"
 ---
 # <a name="load-test-run-settings-properties"></a>负载测试运行设置属性
 
@@ -29,7 +28,7 @@ ms.locfileid: "52895491"
 
 ## <a name="general-properties"></a>常规属性
 
-|属性|定义|
+|Property|定义|
 |-|----------------|
 |**说明**|对运行设置的说明。|
 |每种类型的最大错误数|为负载测试保存的每种类型的最大错误数。<br /><br /> 如果需要，可以增大此数字，但这样还会增加负载测试结果的大小和处理时间。|
@@ -41,24 +40,24 @@ ms.locfileid: "52895491"
 
 ## <a name="logging-properties"></a>日志记录属性
 
-|属性|定义|
+|Property|定义|
 |-|----------------|
 |最大测试日志数|指定为负载测试保存的最大测试日志数。 达到为最大测试日志数输入的值时，负载测试将停止收集日志。 因此，将在测试开头（而不是结尾）收集日志。 负载测试将继续运行，直到完成。|
 |为已完成测试保存日志的频率|指定写入测试日志的频率。 该数字指示将测试保存到测试日志的频率为每达到输入的测试数即保存一次。 例如，如果输入的值为 10，则指定第 10 个、20 个、30 个等测试将写入测试日志。 如果将该值设置为 0，则指定不保存任何测试日志。|
-|测试未通过时保存日志|一个布尔值，它确定负载测试中测试未通过时是否保存测试日志。 默认值为 `True`。<br /><br /> 有关详细信息，请参阅[如何：指定是否将测试失败保存到测试日志中](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|测试未通过时保存日志|一个布尔值，它确定负载测试中测试未通过时是否保存测试日志。 默认值为 `True`。<br /><br /> 有关更多信息，请参见[如何：指定是否将测试失败保存到测试日志中](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
  有关详细信息，请参阅[修改负载测试日志记录设置](../test/modify-load-test-logging-settings.md)。
 
 ## <a name="results-properties"></a>结果属性
 
-|属性|定义|
+|Property|定义|
 |-|----------------|
 |存储类型|存储在负载测试中获得的性能计数器的方式。 提供了以下选项：<br /><br /> -   “数据库”- 需要具有“负载测试结果存储区”的 SQL 数据库。<br />-   无。|
-|计时详细信息存储|用于确定要在“负载测试结果存储区”中存储哪些详细信息。 三个值可用：<br /><br /> -   “AllIndividualDetails”- 在“负载测试结果存储区”中收集并存储在负载测试期间运行或发出的每个测试、事务和页的单个计时值。 如果要在负载测试分析器中使用“虚拟用户活动图”，则必须使用此值。<br />     有关详细信息，请参阅[在“详细信息”视图中分析虚拟用户活动](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。<br />-   “None”- 不收集任何单个计时值。 这是 Visual Studio 2013 Update 4 及更高版本的默认值。<br />-   “StatisticsOnly”- 在“负载测试结果存储区”中只收集并存储统计信息，而不是在负载测试期间执行或发出的每个测试、事务和页的单个计时值。<br /><br /> 有关详细信息，请参阅[如何：指定“计时详细信息存储”属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。|
+|计时详细信息存储|用于确定要在“负载测试结果存储区”中存储哪些详细信息。 三个值可用：<br /><br /> -   “AllIndividualDetails”- 在“负载测试结果存储区”中收集并存储在负载测试期间运行或发出的每个测试、事务和页的单个计时值。 如果要在负载测试分析器中使用“虚拟用户活动图”，则必须使用此值。<br />     有关详细信息，请参阅[在“详细信息”视图中分析虚拟用户活动](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。<br />-   “None”- 不收集任何单个计时值。 这是 Visual Studio 2013 Update 4 及更高版本的默认值。<br />-   “StatisticsOnly”- 在“负载测试结果存储区”中只收集并存储统计信息，而不是在负载测试期间执行或发出的每个测试、事务和页的单个计时值。<br /><br /> 有关更多信息，请参见[如何：指定计时详细信息存储属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。|
 
 ## <a name="sql-tracing-properties"></a>SQL 跟踪属性
 
-|属性|定义|
+|Property|定义|
 |-|----------------|
 |跟踪 SQL 操作的最短持续时间|要由 SQL 跟踪捕获的 SQL 操作的最短持续时间（以毫秒为单位）。 例如，当尝试查找在负载下速度慢的 SQL 操作时，这可以使你忽略快速完成的操作。|
 |SQL 跟踪连接字符串|用于访问要跟踪的数据库的连接字符串。|
@@ -67,31 +66,31 @@ ms.locfileid: "52895491"
 
 ## <a name="test-iterations-properties"></a>测试迭代属性
 
-|属性|定义|
+|Property|定义|
 |-|----------------|
 |测试迭代|指定在完成负载测试之前要运行的单个测试的总数。 只有当“使用测试迭代”属性为 `True` 时，才应用此属性。|
 |使用测试迭代|如果“使用测试迭代”为 `True`，负载测试将一直运行，直到负载测试中已完成单个测试的总数达到“测试迭代”属性指定的数量为止。 在这种情况下，将忽略基于时间的设置，包括“预热持续时间”、“运行持续时间”和“冷却持续时间”。 如果“使用测试迭代”为 `False`，将应用所有计时设置，而忽略“测试迭代”。|
 
- 有关详细信息，请参阅[如何：在运行设置中指定测试迭代数](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)。
+ 有关更多信息，请参见[如何：在运行设置中指定测试迭代次数](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)。
 
 ## <a name="timing-properties"></a>执行时间属性
 
-|属性|定义|
+|Property|定义|
 |-|----------------|
 |冷却持续时间|测试冷却阶段的持续时间，以 hh:mm:ss 格式表示。 负载测试结束时，其中的单个测试可能仍在运行。 在冷却阶段，这些测试可以继续运行，直到它们运行完毕或者直到冷却阶段结束。 默认情况下没有冷却阶段，负载测试结束时根据“运行持续时间”设置来终止单个测试。|
 |运行持续时间|测试的长度，格式为 hh:mm:ss。|
-|采样率|捕获性能计数器值的时间间隔，格式为 hh:mm:ss。<br /><br /> 有关详细信息，请参阅[如何：指定采样率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。|
+|采样率|捕获性能计数器值的时间间隔，格式为 hh:mm:ss。<br /><br /> 有关更多信息，请参见[如何：指定采样率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。|
 |预热持续时间|从测试开始到开始记录数据样本之间的时间段，格式为 hh:mm:ss。 这段时间通常用于在记录采样值之前使负载虚拟用户达到特定的负载级别。 在预热期结束之前捕获的采样值将显示在“负载测试分析器”中。|
 
 ## <a name="webtest-connections-properties"></a>WebTest 连接属性
 
-|属性|定义|
+|Property|定义|
 |-|----------------|
 |WebTest 连接模型|对于在负载测试中运行的 Web 性能测试，此参数控制从负载测试代理到 Web 服务器之间的连接的用法。 有三个 Web 性能测试连接模型选项可用：<br /><br /> -   “每个用户的连接”模型模拟使用真实浏览器的用户的行为。 模拟 Internet Explorer 6 或 Internet Explorer 7 时，运行 Web 性能测试的每个虚拟用户都使用一个或两个到 Web 服务器的专用连接。 当在 Web 性能测试中发出第一个请求时，即建立第一个连接。 当一个页包含多个从属请求时，可能要使用第二个连接。 这些请求将使用两个连接并行发出。 在 Web 性能测试中的后续请求中，将重用这些连接。 当 Web 性能测试完成时，将关闭这些连接。 此模型的一个缺点是代理计算机上保持打开状态的连接的数量可能很多（高达用户负载的两倍）。 因此，支持此高连接计数所需的资源可能会限制可从单个驱动负载测试代理驱动的用户负载。 模拟 Internet Explorer 8 时，支持六个并发连接。<br />-   “连接池”模型在多个虚拟 Web 性能测试用户之间共享 Web 服务器的连接，从而节约负载测试代理上的资源。 如果用户负载大于连接池大小，则不同虚拟用户运行的 Web 性能测试将共享同一连接。 这意味着，当一个 Web 性能测试正在使用连接时，另一个 Web 性能测试可能需要等待才能发出请求。 负载测试性能计数器 Average Connection Wait Time（平均连接等待时间）将跟踪 Web 性能测试在提交请求之前的平均等待时间。 此数字应小于页的平均响应时间。 否则，连接池大小可能会太小。<br />-   “每个测试迭代的连接”模型指定对每个测试迭代使用专用连接。|
 |WebTest 连接池大小|这指定要在负载测试代理和 Web 服务器之间建立的最多连接数。 此参数只适用于“连接池”模型。|
 
 ##  <a name="change-run-setting-properties"></a>更改运行设置属性
- 可以向具有不同属性设置的负载测试中添加更多的运行设置，以便能够在不同条件下运行负载测试。 例如，可以添加新测试设置，并使用一个不同的采样率，或指定一个较长的运行持续时间。 一次只能使用一个运行设置，并且必须通过将要使用的运行设置标记为活动来指定该运行设置。 有关示例，请参阅[如何：为负载测试选择活动运行设置](../test/how-to-select-the-active-run-setting-for-a-load-test.md)。
+ 可以向具有不同属性设置的负载测试中添加更多的运行设置，以便能够在不同条件下运行负载测试。 例如，可以添加新测试设置，并使用一个不同的采样率，或指定一个较长的运行持续时间。 一次只能使用一个运行设置，并且必须通过将要使用的运行设置标记为活动来指定该运行设置。 有关示例，请参见 [如何：为负载测试选择活动运行设置](../test/how-to-select-the-active-run-setting-for-a-load-test.md)。
 
 ### <a name="to-change-run-settings"></a>更改运行设置
 

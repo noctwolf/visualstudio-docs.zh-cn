@@ -1,8 +1,6 @@
 ---
 title: Exec 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Exec
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbefb90cad3b2aa3e6e7b0870548d44567ea8914
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 6fd259f00fdb5af2e3125782bda28c17858eff80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959243"
 ---
 # <a name="exec-task"></a>Exec 任务
 通过使用指定的参数来运行指定程序或命令。  
@@ -33,7 +31,7 @@ ms.locfileid: "48817316"
 ## <a name="parameters"></a>参数  
  下表描述了 `Exec` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Command`|必选 `String` 参数。<br /><br /> 要运行的命令。 可以是系统命令（例如 attrib），也可以是可执行文件（例如 program.exe、runprogram.bat 或 setup.msi）。<br /><br /> 此参数可包含多行命令。 或者，可将多个命令放在批文件中，然后使用此参数运行文件。|  
 |`ConsoleOutput`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 每个项输出都是工具发出的标准输出或标准错误流的一行。 仅当 `ConsoleToMsBuild` 设置为 `true`，才会捕获此信息。|
@@ -47,7 +45,7 @@ ms.locfileid: "48817316"
 |`Outputs`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包含任务的输出项。 `Exec` 任务自身不会设置这些项。 相反，你可以提供这些项，使得任务看似已对其进行了设置，以便于稍后在项目中使用。|  
 |`StdErrEncoding`|可选 `String` 输出参数。<br /><br /> 指定捕获的任务标准错误流的编码。 默认值为当前控制台输出编码。|  
 |`StdOutEncoding`|可选 `String` 输出参数。<br /><br /> 指定捕获的任务标准输出流的编码。 默认值为当前控制台输出编码。|  
-|`WorkingDirectory`|可选 `String` 参数。<br /><br /> 指定要在其中运行命令的目录。<br /><br />默认值：项目当前的工作目录。|  
+|`WorkingDirectory`|可选 `String` 参数。<br /><br /> 指定要在其中运行命令的目录。<br /><br />默认：项目当前的工作目录。|  
   
 ## <a name="remarks"></a>备注  
  在要执行的作业的特定 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务不可用时，此任务会非常有用。 但是，与更加具体的任务不同，`Exec` 任务不能根据运行的工具或命令的结果执行其他处理或条件操作。

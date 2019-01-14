@@ -3,19 +3,18 @@ title: 适用于解决方案资源管理器的文件嵌套规则
 ms.date: 05/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - file nesting
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928693"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831149"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>在解决方案资源管理器中自定义文件嵌套
 
@@ -136,7 +135,7 @@ ms.locfileid: "49928693"
 
 ![特定于解决方案和项目的嵌套规则](media/filenesting_solutionprojectspecific.png)
 
-特定于解决方案和特定于项目的设置与活动的 Visual Studio 设置结合。 例如，可能有一个空白的特定于项目的设置文件，但是解决方案资源管理器仍是嵌套文件。 嵌套行为来自特定于解决方案的设置或 Visual Studio 设置。 合并文件嵌套设置的优先顺序是：Visual Studio > 解决方案 > 项目。
+特定于解决方案和特定于项目的设置与活动的 Visual Studio 设置结合。 例如，可能有一个空白的特定于项目的设置文件，但是解决方案资源管理器仍是嵌套文件。 嵌套行为来自特定于解决方案的设置或 Visual Studio 设置。 合并文件嵌套设置的优先顺序是：“Visual Studio”>“解决方案”>“项目”。
 
 可以通过启用“工具” > “选项” > “ASP.NET Core” > “文件嵌套”下的选项“忽略解决方案和项目设置”，指示 Visual Studio 忽略特定于解决方案和特定于项目的设置，即使是文件位于磁盘上。
 

@@ -1,9 +1,7 @@
 ---
-title: 步骤 4：向每个标签添加一个 click 事件处理程序
-ms.custom: ''
+title: 步骤 4：向每个标签添加一个 Click 事件处理程序
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 author: TerryGLee
@@ -11,14 +9,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04054d353e0260e7a38a189fc6946aacd353b6c4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc39a2d92b4c0851d6d7c17b1c988ab0c1f0b184
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897948"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942822"
 ---
-# <a name="step-4-add-a-click-event-handler-to-each-label"></a>步骤 4：向每个标签添加一个 click 事件处理程序
+# <a name="step-4-add-a-click-event-handler-to-each-label"></a>步骤 4：向每个标签添加一个 Click 事件处理程序
 
 匹配游戏的运行原理如下所示：
 
@@ -59,6 +57,6 @@ ms.locfileid: "49897948"
 
 ## <a name="to-continue-or-review"></a>继续或查看
 
--   若要转到下一个教程步骤，请参阅[步骤 5：添加标签引用](../ide/step-5-add-label-references.md)。
+-   要转到下一个教程步骤，请参阅[步骤 5：添加标签引用](../ide/step-5-add-label-references.md)。
 
--   若要返回上一个教程步骤，请参阅[步骤 3：向每个标签分配一个随机图标](../ide/step-3-assign-a-random-icon-to-each-label.md)。
+-   要返回上一个教程步骤，请参阅[步骤 3：向每个标签分配一个随机图标](../ide/step-3-assign-a-random-icon-to-each-label.md)。

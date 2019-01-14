@@ -3,19 +3,18 @@ title: 远程 R 工作区
 description: 如何设置远程 R 工作区并从 Visual Studio 连接到该工作区。
 ms.date: 12/04/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6a5dfb136c975634bd4f8915d1f5eb1c9d023e98
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837779"
 ---
 # <a name="set-up-remote-workspaces"></a>设置远程工作区
 
@@ -173,11 +172,11 @@ RTVS 要求通过 HTTP 实现所有与远程服务器的通信，这就要求服
 
 1. 用户帐户：为每个要访问远程计算机的用户创建帐户。 可创建标准（非特权）本地用户帐户，也可将 R 服务器计算机加入到域，并将相应的安全组添加到 `Users` 安全组。
 
-1. 防火墙规则：默认情况下 `R Host Broker` 在 TCP 端口 5444 上进行侦听。 因此，请确保已同时为入站和出站流量启用 Windows 防火墙规则（对于安装包和类似的方案，出站是必需的）。  R 服务安装程序为内置的 Windows 防火墙自动设置这些规则。 但是，如果正在使用第三方防火墙，则需手动为 `R Host Broker` 开启端口 5444。
+1. 防火墙规则：默认情况下，`R Host Broker` 侦听 TCP 端口 5444。 因此，请确保已同时为入站和出站流量启用 Windows 防火墙规则（对于安装包和类似的方案，出站是必需的）。  R 服务安装程序为内置的 Windows 防火墙自动设置这些规则。 但是，如果正在使用第三方防火墙，则需手动为 `R Host Broker` 开启端口 5444。
 
 1. Azure 配置：如果远程计算机是 Azure 上的虚拟机，则也会为 Azure 网络内的入站流量开启端口 5444，使其不受 Windows 防火墙影响。 有关详细信息，请参阅 Azure 文档中的[使用网络安全组筛选网络流量](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg)。
 
-1. 告知 R 主机代理要加载哪个 SSL 证书：如果正在 Intranet 服务器上安装证书，则服务器的完全限定域名与其 NETBIOS 名称有可能相同。 在这种情况下，无需进行任何操作，因为加载的是默认证书。
+1. 告知 R 主机代理要加载的 SSL 证书：如果要在 Intranet 服务器上安装证书，则服务器的完全限定域名可能与其 NETBIOS 名称相同。 在这种情况下，无需进行任何操作，因为加载的是默认证书。
 
     但是，如果正在面向 Internet 的服务器（如 Azure VM）上安装证书，请使用服务器的完全限定域名 (FQDN)，这是因为面向 Internet 的服务器的 FQDN 不可能与其 NETBIOS 名称相同。
 

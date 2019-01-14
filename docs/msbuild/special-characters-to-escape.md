@@ -1,8 +1,6 @@
 ---
 title: 要转义的特殊字符 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a57316904aa1075484a4d33c6e2259586c88fe78
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: dc3c69553912a8881e56c5b33d5d5afa3ef5e4fc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151375"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847108"
 ---
 # <a name="special-characters-to-escape"></a>要转义的特殊字符
 仅当特殊字符在使用它们的上下文中具有特殊意义时，才必须对特殊字符进行转义。 例如，星号 (*) 仅在项定义的“Include”和“Exclude”属性对 <xref:Microsoft.Build.Tasks.CreateItem> 的调用中是特殊字符。 在所有其他情况下，星号都将被视为原义星号。 虽然不需要转义项目文件中无处不在的星号，但做也没有坏处。  
@@ -32,7 +30,7 @@ ms.locfileid: "39151375"
   
  要转义的特殊字符的完整列表紧跟：  
   
-|字符|描述|  
+|字符|说明|  
 |---------------|-----------------|  
 |%|百分号，用于引用元数据。|  
 |$|美元符号，用于引用属性。|  

@@ -2,7 +2,6 @@
 title: 如何：创建类型之间的继承（类设计器）
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritanceline
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8151020294f4fd5574a1de886509c5b11f0a326
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b94d89f6051b47f8500886348b335754abae9b72
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956674"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53925558"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>如何：在类设计器中创建类型之间的继承
 
@@ -30,7 +29,7 @@ ms.locfileid: "33956674"
 
 1.  从解决方案资源管理器的项目中，打开一个类图 (.cd) 文件。
 
-     如果你尚未拥有类图，请创建一个。 请参阅[如何：向项目添加类图](how-to-add-class-diagrams-to-projects.md)。
+     如果你尚未拥有类图，请创建一个。 请参阅[操作说明：向项目添加类图](how-to-add-class-diagrams-to-projects.md)。
 
 2.  在“工具箱”的“类设计器”下，单击“继承”。
 

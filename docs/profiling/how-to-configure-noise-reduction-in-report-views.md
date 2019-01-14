@@ -1,8 +1,6 @@
 ---
-title: 如何：在报告视图中配置降噪 | Microsoft Docs
-ms.custom: ''
+title: 如何：在报表视图中配置降噪 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.noisereduction.dialog
@@ -16,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 460251aaa89c22d7bb1320d19882af4f68736cc0
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 1fa84eecc96c836b3430b691b5d8f8b1cd3d0926
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875240"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在报告视图中配置降噪
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在报表视图中配置降噪
 通过限制“调用关系树”视图和“分配”视图中显示的数据量，可针对降噪配置性能报表。 通过使用降噪，性能问题能够更加醒目。 分析性能报告时，这非常有用。  
   
  降噪配置选项包括以下设置：  
@@ -80,6 +78,6 @@ ms.locfileid: "34815179"
   
 ## <a name="see-also"></a>请参阅  
  [自定义性能工具报告视图](../profiling/customizing-performance-tools-report-views.md)   
- [如何：在检测中排除或添加短函数](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
+ [如何：在检测中排除或包括短函数](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [“调用关系树”视图](../profiling/call-tree-view.md)   
  [“分配”视图](../profiling/dotnet-memory-allocations-view.md)

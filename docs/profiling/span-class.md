@@ -1,8 +1,6 @@
 ---
 title: span 类 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - cvmarkersobj/Concurrency::diagnostic::span
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1a33a99b129cd4a0fa1969553d55c81af310295
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b1a430ebba3435673c90f85c6270c308c58612d9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893913"
 ---
 # <a name="span-class"></a>span 类
 定义应用程序的一个阶段。  
@@ -34,7 +32,7 @@ class span;
   
 ### <a name="public-constructors"></a>公共构造函数  
   
-|name|描述|  
+|name|说明|  
 |----------|-----------------|  
 |[span::span 构造函数](../profiling/span-span-constructor.md)|初始化 `span` 类的新实例。|  
 |[span::~span 析构函数](../profiling/span-tilde-span-destructor.md)|销毁 `span` 对象并释放其资源。|  

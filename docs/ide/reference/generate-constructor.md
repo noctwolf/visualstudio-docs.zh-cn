@@ -2,19 +2,18 @@
 title: 生成构造函数快速操作
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b267bee0c78de19ffa0d443f515375eeae949a
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 6c7f46bd93e476c3f9ffe08831c5016a449ee4bc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895293"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>在 Visual Studio 中生成构造函数
 
@@ -24,11 +23,11 @@ ms.locfileid: "51295821"
 
 - Visual Basic
 
-功能：为类上的新构造函数快速生成代码。
+**功能：** 为类上的新构造函数快速生成代码。
 
-时机：想要引入新构造函数，并想要自动以适当的方式声明它，或要修改现有的构造函数时。
+**使用时机：** 想要引入新构造函数，并想要自动以适当的方式声明它，或要修改现有的构造函数时。
 
-原因：可以在使用该构造函数之前对其进行声明，但此功能可自动使用适当的参数生成它。 此外，修改现有的构造函数需要更新所有的调用站点，使用此功能自动更新时除外。
+操作原因：可以在使用该构造函数之前对其进行声明，但此功能可自动使用适当的参数生成它。 此外，修改现有的构造函数需要更新所有的调用站点，使用此功能自动更新时除外。
 
 方法：有多种生成构造函数的方法：
 

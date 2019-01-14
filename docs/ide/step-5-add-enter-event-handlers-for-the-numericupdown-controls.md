@@ -1,9 +1,7 @@
 ---
 title: 步骤 5：为 NumericUpDown 控件添加 Enter 事件处理程序
-ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
@@ -11,18 +9,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e05d6cc201819d37e77587529ffd79a740003a10
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 393e43a44045f4551fbf567f1de037e77dbae00e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747914"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53846894"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步骤 5：为 NumericUpDown 控件添加 Enter 事件处理程序
 在本教程的第 5 部分中，将添加 <xref:System.Windows.Forms.Control.Enter> 事件处理程序，以便在输入测验问题的答案时变得轻松一些。 当测验对象选择每个 <xref:System.Windows.Forms.NumericUpDown> 控件中的当前值并开始输入其他值时，此代码将立即选中并清除该当前值。
 
 > [!NOTE]
->  本主题是基本编码概念教程系列中的一部分。 若要概览本教程，请参阅[教程 2：创建计时数学测验](../ide/tutorial-2-create-a-timed-math-quiz.md)。
+>  本主题是基本编码概念教程系列中的一部分。 有关本教程的概述，请参阅[教程 2：创建计时数学测验](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 
 ## <a name="to-verify-the-default-behavior"></a>验证默认行为
 
@@ -72,6 +70,6 @@ ms.locfileid: "34747914"
 
 ## <a name="to-continue-or-review"></a>继续或查看
 
--   若要转到下一个教程步骤，请参阅[步骤 6：添加减法问题](../ide/step-6-add-a-subtraction-problem.md)。
+-   要转到下一个教程步骤，请参阅[步骤 6：添加减法问题](../ide/step-6-add-a-subtraction-problem.md)。
 
--   若要返回上一个教程步骤，请参阅[步骤 4：添加 CheckTheAnswer() 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)。
+-   要返回上一个教程步骤，请参阅[步骤 4：添加 CheckTheAnswer() 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)。

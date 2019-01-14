@@ -1,8 +1,6 @@
 ---
 title: 比较属性和项 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e27f9973bc24cf7d45e86e9982d40cdb20a367ba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177109"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942354"
 ---
 # <a name="compare-properties-and-items"></a>比较属性和项
 MSBuild 属性和项都用于将信息传递给任务、评估条件，以及存储可在整个项目文件中引用的值。  
@@ -69,7 +67,7 @@ MSBuild 属性和项都用于将信息传递给任务、评估条件，以及存
 </PropertyGroup>  
 ```  
   
- 项类型 OutputDir 具有值为“KeyFiles\\;Certificates\\”的 `Include` 属性。 MSBuild 将此字符串分析为两个项：KeyFiles\ 和Certificates\\。 当项类型 OutputDir 用作 OutputDirList 属性的值时，MSBuild 会将项类型转换或“平展”到用分号分隔的字符串“KeyFiles\\;Certificates\\”。  
+ 项类型 OutputDir 具有值为“KeyFiles\\;Certificates\\”的 `Include` 属性。 MSBuild 将此字符串分析为两项：KeyFiles\ 和 Certificates\\。 当项类型 OutputDir 用作 OutputDirList 属性的值时，MSBuild 会将项类型转换或“平展”到用分号分隔的字符串“KeyFiles\\;Certificates\\”。  
   
 ## <a name="properties-and-items-in-tasks"></a>任务中的属性和项  
  对于 MSBuild 任务，属性和项用作输入和输出。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  

@@ -2,7 +2,6 @@
 title: 动态符号执行 | Microsoft IntelliTest 开发人员测试工具
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
@@ -11,16 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 33bd31c59de85f70d653d2de912b8c9bc5bb0e30
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295886"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53834667"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用动态符号执行的输入生成
 
-IntelliTest 通过分析程序中的分支条件为[参数化单元测试](test-generation.md#parameterized-unit-testing)生成输入。 测试输入的选择依据是它们是否可触发程序的新分支行为。 分析是一个增量过程。 它针对正式测试输入参数 I提炼了谓词 q: I -> {true, false}。q 表示的一组 IntelliTest 已观察到的行为。 最初，q := false，因为尚未观察到任何行为。
+IntelliTest 通过分析程序中的分支条件为[参数化单元测试](test-generation.md#parameterized-unit-testing)生成输入。 测试输入的选择依据是它们是否可触发程序的新分支行为。 分析是一个增量过程。 它针对正式测试输入参数“I”提炼了谓词“q: I -> {true, false}”。“q”表示的一组 IntelliTest 已观察到的行为。 最初，q := false，因为尚未观察到任何行为。
 
 循环的步骤如下：
 
@@ -29,7 +28,7 @@ IntelliTest 通过分析程序中的分支条件为[参数化单元测试](test-
 
 1. IntelliTest 使用所选输入 i 执行测试，并监视测试以及受测程序的执行情况。
 
-1. 在执行期间，程序采用由该程序的所有条件分支决定的特定路径。 确定执行的所有条件集称为“路径条件”，在形式输入参数中写作谓词 p: I -> {true, false}。 IntelliTest 计算此谓词的表示形式。
+1. 在执行期间，程序采用由该程序的所有条件分支决定的特定路径。 确定执行的所有条件集称为路径条件，在形式输入参数中写作谓词“p: I -> {true, false}”。 IntelliTest 计算此谓词的表示形式。
 
 1. IntelliTest 设置 q := (q or p)。 换言之，它会记录观察到的由 p 表示的路径这一事实。
 

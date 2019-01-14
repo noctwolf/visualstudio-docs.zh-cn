@@ -2,7 +2,6 @@
 title: “在文件中查找”命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - edit.findinfiles
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4cf5078bb16d90744b83dfd99cf0c1da663149a
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 9aab2251f8859cb8e6a5699ba3cd2d4828bd32a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53831201"
 ---
 # <a name="find-in-files-command"></a>“在文件中查找”命令
 若要搜索文件，请使用“查找和替换”窗口的“在文件中查找”选项卡上的可用选项子集。
@@ -39,9 +38,9 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="switches"></a>开关
  /case 或 /c（可选）。 仅当大小写字符和 `findwhat` 参数中指定的字符大小写完全匹配时才会出现匹配。
 
- /ext: `extensions`（可选）。 指定要搜索的文件的文件扩展名。 如果未指定，则使用以前输入的扩展名（如果输入过）。
+ /ext：`extensions`（可选）。 指定要搜索的文件的文件扩展名。 如果未指定，则使用以前输入的扩展名（如果输入过）。
 
- /lookin: `searchpath`（可选）。 要搜索的目录。 如果路径包含空格，则将整个路径放在引号内。
+ /lookin：`searchpath`（可选）。 要搜索的目录。 如果路径包含空格，则将整个路径放在引号内。
 
  /names 或 /n（可选）。 显示包含匹配项的文件名列表。
 
@@ -78,4 +77,4 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 - [“命令”窗口](../../ide/reference/command-window.md)
 - [“查找/命令”框](../../ide/find-command-box.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
-- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

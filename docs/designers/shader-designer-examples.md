@@ -2,7 +2,6 @@
 title: 着色器设计器示例
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f12f5dee-63ab-4376-9952-7f87f269e9c4
 author: gewarren
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57df80d73beda1b792c0f066d986901b8e4f339b
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 3ef12409a1c0c90a94a7284f3d6d7576bb241b62
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53959805"
 ---
 # <a name="shader-designer-examples"></a>着色器设计器示例
 
@@ -26,7 +25,7 @@ ms.locfileid: "38978217"
 |||
 |-|-|
 |[如何：创建基本颜色着色器](../designers/how-to-create-a-basic-color-shader.md)|演示将常量颜色应用于对象的着色器。|
-|[如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)|演示将经典朗伯照明模型应用于对象的着色器。|
+|[如何：创建基本 Lambert 着色器](../designers/how-to-create-a-basic-lambert-shader.md)|演示将经典朗伯照明模型应用于对象的着色器。|
 |[如何：创建基本 Phong 着色器](../designers/how-to-create-a-basic-phong-shader.md)|演示将经典 Phong 照明模型应用于对象的着色器。|
 |[如何：创建基本纹理着色器](../designers/how-to-create-a-basic-texture-shader.md)|演示将纹理应用于对象的着色器。|
 |[如何：创建灰度纹理着色器](../designers/how-to-create-a-grayscale-texture-shader.md)|演示在呈现期间将纹理转换为灰度并将其应用于对象的着色器。|

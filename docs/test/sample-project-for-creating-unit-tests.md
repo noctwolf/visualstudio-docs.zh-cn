@@ -3,7 +3,6 @@ title: 用于创建单元测试的示例代码
 description: 本文提供可以使用 Visual Studio 中的单元测试进行测试的示例代码。
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-test
 ms.topic: sample
 helpviewer_keywords:
 - unit test sample [Visual Studio]
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: deddf46a479e0ab8d4e0bebbaf3fffe4d90b622d
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: b98e8fc926917d4da8bc805110f464ead24d405c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51293442"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898942"
 ---
 # <a name="sample-code-for-testing"></a>用于测试的示例代码
 
@@ -130,7 +129,7 @@ namespace BankAccountNS
 
 ## <a name="create-the-project"></a>创建项目
 
-若要使用此代码，需要先在 Visual Studio 中为其创建一个项目。 按照[演练：创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test)中创建该项目的步骤操作。
+若要使用此代码，需要先在 Visual Studio 中为其创建一个项目。 请按照[演练：创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#create-a-project-to-test)中的步骤创建项目。
 
 ## <a name="see-also"></a>请参阅
 

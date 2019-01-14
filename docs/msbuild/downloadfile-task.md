@@ -1,10 +1,8 @@
 ---
 title: DownloadFile 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
-ms.technology: msbuild
 ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14b5daafbc4c11547515b9d77be2877eb07bcb8b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cb7b67c4ad567587278c805485e0b8e65ca44e94
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945339"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832919"
 ---
 # <a name="downloadfile-task"></a>DownloadFile 任务
 使用超文本传输协议 (HTTP) 下载指定文件。
@@ -40,7 +38,7 @@ ms.locfileid: "37945339"
 ## <a name="parameters"></a>参数  
  下表描述了 `DownloadFile` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`DestinationFileName`|可选的 <xref:Microsoft.Build.Framework.ITaskItem> 参数<br /><br /> 要用于所下载文件的名称。  默认情况下，文件名派生自 `SourceUrl` 或者远程服务器。|
 |`DestinationFolder`|必选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定文件要下载到的目的文件夹。  如果不存在，则创建一个文件夹。|

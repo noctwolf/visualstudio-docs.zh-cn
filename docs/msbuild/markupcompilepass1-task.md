@@ -1,8 +1,6 @@
 ---
 title: MarkupCompilePass1 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: msbuild
 ms.topic: reference
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9db623dd06db06a1dfee3e22345564f888431d1c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52b6e36e06ee74f974d2d774af806a234835cff0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855322"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906873"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 任务
 
@@ -32,12 +30,12 @@ ms.locfileid: "49855322"
 
 ## <a name="task-parameters"></a>任务参数
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 | - | - |
 | `AllGeneratedFiles` | 可选的 **ITaskItem[]** 输出参数。<br /><br /> 包含由 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> 任务生成的文件的完整列表。 |
 | `AlwaysCompileMarkupFilesInSeparateDomain` | 可选 **Boolean** 参数。<br /><br /> 指定是否在单独的 <xref:System.AppDomain> 下运行该任务。 如果此参数返回 false，则任务将在与 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 相同的 <xref:System.AppDomain> 中运行，且运行速度更快。 如果该参数返回 true，则任务将在独立于 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] 的另一个 <xref:System.AppDomain> 中运行，且运行速度更慢。 |
 | `ApplicationMarkup` | 可选的 **ITaskItem[]** 参数。<br /><br /> 指定应用程序定义 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 文件的名称。 |
-| `AssembliesGeneratedDuringBuild` | 可选 **String []** 参数。<br /><br /> 指定在生成过程中对更改的程序集的引用。 例如，Visual Studio 解决方案可能包含一个引用了另一个项目的已编译输出的项目。 在这种情况下，可以将第二个项目的已编译输出添加到 **AssembliesGeneratedDuringBuild** 参数。<br /><br /> 注意：**AssembliesGeneratedDuringBuild** 参数必须包含对生成解决方案所生成的一组完整程序集的引用。 |
+| `AssembliesGeneratedDuringBuild` | 可选 **String []** 参数。<br /><br /> 指定在生成过程中对更改的程序集的引用。 例如，Visual Studio 解决方案可能包含一个引用了另一个项目的已编译输出的项目。 在这种情况下，可以将第二个项目的已编译输出添加到 **AssembliesGeneratedDuringBuild** 参数。<br /><br /> 注意:“AssembliesGeneratedDuringBuild”参数必须包含对生成解决方案所生成的一组完整程序集的引用。 |
 | `AssemblyName` | 必需的 **String** 参数。<br /><br /> 指定为项目生成的程序集的简称。 例如，如果项目生成一个名为 *WinExeAssembly.exe* 的 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 可执行文件，则 **AssemblyName** 参数的值为 **WinExeAssembly**。 |
 | `AssemblyPublicKeyToken` | 可选 **String** 参数。<br /><br /> 指定程序集的公钥标记。 |
 | `AssemblyVersion` | 可选 **String** 参数。<br /><br /> 指定程序集的版本号。 |

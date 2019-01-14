@@ -9,20 +9,20 @@ description: 了解一些 Visual Studio 订阅中随附的 Office 365 权益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: eef2adf189650da528c2f76df88ff8b648ad7ba4
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d68c8847dc9ab6f4daeaceb07dbd4023ca2148f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802103"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968386"
 ---
-# <a name="office-365-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Office 365
+# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Office 365 Pro Plus
 
-出色地完成工作。 使用不断更新的应用随时随地工作。 Office 365 是随附高级应用的订阅，如 Word、Excel、PowerPoint、OneNote、Outlook、Publisher 和 Access（Publisher 和 Access 仅适用于 PC）。 这些应用可安装在多台设备上，包括 PC、Mac、iPad、iPhone、Android 平板电脑和 Android 手机。 Office 365 还随附其他服务，如 1TB OneDrive 存储空间、每月 60 分钟 Skype 通话，以及 Microsoft 聊天和电话支持。 借助订阅，可获取最新版应用，并自动接收已发布的更新。
+出色地完成工作。 使用不断更新的应用随时随地工作。 Office 365 Pro Plus 订阅随附以下高级应用：Word、Excel、PowerPoint、OneNote、Outlook、Publisher 和 Access（Publisher 和 Access 仅适用于电脑）。 这些应用可安装在多台设备上，包括 PC、Mac、iPad、iPhone、Android 平板电脑和 Android 手机。 Office 365 还随附其他服务，如 1TB OneDrive 存储空间、每月 60 分钟 Skype 通话，以及 Microsoft 聊天和电话支持。 借助订阅，可获取最新版应用，并自动接收已发布的更新。
 
-## <a name="getting-started-with-office-365"></a>开始使用 Office 365
+## <a name="getting-started-with-office-365-pro-plus"></a>开始使用 Office 365 Pro Plus
 
-若要下载和激活 Office 365，请按照下面这些步骤操作：
+请按照以下步骤下载并激活 Office 365 Pro Plus：
 1. 登录 Visual Studio Enterprise 订阅。  
 2. 单击“下载”选项卡。
 3. 此时，系统会列出特别推荐的下载内容。 在 Office 列表中，选择“Office 365”。 

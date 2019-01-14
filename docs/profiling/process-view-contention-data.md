@@ -1,8 +1,6 @@
 ---
 title: “进程”视图 - 争用数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Process view
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c8772bd6426632093bb23cc3094fe42ad433a8d
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: c5eb2a476dd093bf661e40f88795598e4878c313
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257808"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943884"
 ---
 # <a name="process-view---contention-data"></a>“进程”视图 - 争用数据
 “进程”视图显示在分析运行期间执行的进程和线程的争用数据。  
@@ -26,7 +24,7 @@ ms.locfileid: "35257808"
   
  下表说明“进程”视图表中各列的值。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**开始时间**|从分析开始到进程或线程启动的毫秒数或处理器周期数。|  
 |**阻塞的时间**|在此期间阻止进程或线程的函数执行的总时间。|  
@@ -41,5 +39,5 @@ ms.locfileid: "35257808"
 |**唯一 ID**|探查器生成的标识符，对进程或线程是唯一的。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
+ [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“进程”视图](../profiling/process-view.md)

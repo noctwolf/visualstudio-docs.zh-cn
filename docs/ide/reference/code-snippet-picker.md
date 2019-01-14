@@ -2,7 +2,6 @@
 title: 代码段选择器
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
-ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 774ee47f02fe146caade0540be5ee2fb7f59904e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 03503c2ea708dd9093e4ee7b3490879724c3f7d2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944175"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53887641"
 ---
 # <a name="code-snippet-picker"></a>代码段选择器
 
@@ -44,7 +43,7 @@ Visual Studio 代码编辑器提供一种代码片段选择器，让你单击几
 
 - SQL：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后单击“插入片段”。
 
-在大多数 Visual Studio 开发语言中，可使用“代码片段管理器”将文件夹添加到文件夹列表，代码片段选择器会在该列表中扫描 XML 片段文件。 也可以创建自己的片段添加到该列表。 详情请参阅[演练：创建代码片段](../../ide/walkthrough-creating-a-code-snippet.md)。
+在大多数 Visual Studio 开发语言中，可使用“代码片段管理器”将文件夹添加到文件夹列表，代码片段选择器会在该列表中扫描 XML 片段文件。 也可以创建自己的片段添加到该列表。 有关详细信息，请参见[演练：创建代码片段](../../ide/walkthrough-creating-a-code-snippet.md)。
 
 ## <a name="uielement-list"></a>UIElement 列表
 
