@@ -17,7 +17,7 @@ ms.locfileid: "53838302"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以进行远程调试
 
-在网络中保护的 Windows 防火墙，防火墙必须配置为允许远程调试。 Visual Studio 和远程调试工具尝试在安装或启动时，打开正确的防火墙端口，但可能还需要打开端口或手动允许应用程序。 
+在受 Windows 防火墙保护的网络上，必须将防火墙配置为允许远程调试。 Visual Studio 和远程调试工具会尝试在安装或启动期间打开正确的防火墙端口，但可能还需要手动打开端口或允许应用。 
 
 本主题介绍如何配置 Windows 防火墙以启用 Windows 10，8/8.1 和 7; 上的远程调试和 Windows Server 2012 R2、 2012年和 2008 R2 计算机。 Visual Studio 和远程计算机无需运行相同的操作系统。 例如，Visual Studio 计算机可以运行 Windows 10，而远程计算机可以运行 Windows Server 2012 R2。      
   
@@ -26,7 +26,7 @@ ms.locfileid: "53838302"
 
 ## <a name="configure-ports-for-remote-debugging"></a>配置用于远程调试的端口  
 
-Visual Studio 和远程调试器尝试在安装或启动期间打开正确的端口。 但是，在某些情况下，如第三方防火墙，你可能需要手动打开端口。 
+Visual Studio 和远程调试器会尝试在安装或启动期间打开正确的端口。 但在某些情况下（例如第三方防火墙），可能需要手动打开端口。 
 
 **若要打开的端口：**
   
@@ -48,15 +48,15 @@ Visual Studio 和远程调试器尝试在安装或启动期间打开正确的端
 
    新规则应出现和中选定**入站规则**或**出站规则**列表。
 
-### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>启用远程调试的远程计算机上的端口
+### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>远程计算机上支持远程调试的端口
 
 对于远程调试，必须在远程计算机上打开以下端口：
 
 |**端口**|**传入/传出**|**协议**|**说明**|   
 |-|-|-|-|
-|4022|传入|TCP|用于 VS 2017。 通过为每个 Visual Studio 版本 2 此端口号递增。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|  
-|4023|传入|TCP|用于 VS 2017。 通过为每个 Visual Studio 版本 2 此端口号递增。 此端口是仅用于远程调试从 64 位版本的远程调试器的 32 位进程。 有关详细信息，请参阅[Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。| 
-|3702|传出|UDP|（可选）所需的远程调试器发现。|    
+|4022|传入|TCP|用于 VS 2017。 端口号针对每个 Visual Studio 版本递增 2。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|  
+|4023|传入|TCP|用于 VS 2017。 端口号针对每个 Visual Studio 版本递增 2。 此端口是仅用于远程调试从 64 位版本的远程调试器的 32 位进程。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。| 
+|3702|传出|UDP|（可选）进行远程调试器发现的必需项。|    
   
 如果选择**使用托管兼容模式**下**工具** > **选项** > **调试**，打开这些附加远程调试器端口。 调试器托管兼容模式，使旧、 Visual Studio 2010 版本的调试器。 
 
@@ -72,9 +72,9 @@ Visual Studio 和远程调试器尝试在安装或启动期间打开正确的端
 |500, 4500|传出|UDP|如果你的域策略需要通过 IPSec 进行网络通信，则需要。|  
 |80|传出|TCP|Web 服务器调试所必需。|
 
-若要允许特定应用程序通过 Windows 防火墙，请参阅[配置通过 Windows 防火墙的远程调试](#configure-remote-debugging-through-windows-firewall)。 
+若要允许特定应用通过 Windows 防火墙，请参阅[配置通过 Windows 防火墙的远程调试](#configure-remote-debugging-through-windows-firewall)。 
 
-## <a name="configure-remote-debugging-through-windows-firewall"></a>配置通过 Windows 防火墙的远程调试
+## <a name="configure-remote-debugging-through-windows-firewall"></a>配置 Windows 防火墙以进行远程调试
 
 可以在远程计算机上安装远程调试工具，或从共享文件夹运行它们。 在任一情况下，必须正确配置远程计算机防火墙。 
 
@@ -82,7 +82,7 @@ Visual Studio 和远程调试器尝试在安装或启动期间打开正确的端
   
 *\<Visual Studio 安装目录\>\\Common7\\IDE\\远程调试器\\\<x86*， *x64*，或*Appx*\> 
   
-### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>允许和配置远程调试器通过 Windows 防火墙 
+### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>配置并允许远程调试器通过 Windows 防火墙 
   
 1. 在 Windows 中**启动**菜单中，搜索并打开**Windows 防火墙**，或**Windows Defender 防火墙**。 
   
@@ -98,7 +98,7 @@ Visual Studio 和远程调试器尝试在安装或启动期间打开正确的端
 
 ## <a name="troubleshooting"></a>远程调试连接进行故障排除
   
-如果您不能与远程调试器附加到您的应用程序，请确保远程调试的防火墙端口，协议、 网络类型和应用程序设置是否都正确。 
+如果不能将远程调试器附加到应用，请确保远程调试的防火墙端口、协议、网络类型和应用设置是否都正确。 
 
 - 在 Windows 中**启动**菜单中，搜索并打开**Windows 防火墙**，然后选择**允许的应用程序通过 Windows 防火墙**。 请确保**远程调试器**或**Visual Studio 远程调试器**将出现在**允许的应用程序和功能**列出了与所选的复选框和正确的网络类型选择。 如果不是，[添加正确的应用和设置](#configure-remote-debugging-through-windows-firewall)。
   

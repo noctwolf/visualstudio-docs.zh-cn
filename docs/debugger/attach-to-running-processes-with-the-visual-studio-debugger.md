@@ -2,7 +2,6 @@
 title: 将附加到正在运行调试器的进程 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 09/27/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -29,15 +28,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 499e1200f858530db0caad69d93bd4416f756405
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 0d2609c76c39924794e2a9623e9e70c037c20415
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561637"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53899608"
 ---
-# <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到运行的进程
-你可将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。 进程正在运行后，选择**调试** > **附加到进程**或按**Ctrl**+**Alt** +**P** Visual Studio 中，并使用**附加到进程**对话框，可以将调试器附加到进程。
+# <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到正在运行的进程
+可将 Visual Studio 调试器附加到本地或远程计算机上正在运行的进程。 进程运行后，在 Visual Studio 中选择“调试” > “附加到进程”，或按 **Ctrl**+**Alt**+**P**，然后使用“附加到进程”对话框将调试器附加到进程。
 
 可以使用**附加到进程**若要调试在本地或远程计算机上的运行应用，同时调试多个进程、 调试在 Visual Studio 中创建的应用或调试您开始从 Visual Studio 中使用时没有任何应用附加调试程序。 例如，如果您正在运行不带调试器的应用，并且遇到一个异常，可以然后将调试器附加到进程中运行应用程序，并开始调试。
 
@@ -46,13 +45,13 @@ ms.locfileid: "53561637"
 > [!TIP]
 > 不确定是否使用**附加到进程**为调试方案？ 请参阅[常见调试方案](#BKMK_Scenarios)。 
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> 将附加到在本地计算机上正在运行的进程  
+##  <a name="BKMK_Attach_to_a_running_process"></a> 附加到本地计算机上正在运行的进程  
 
 若要快速重新附加到以前附加到进程，请参阅[重新附加到进程](#BKMK_reattach)。 
 
 若要调试远程计算机上的进程，请参阅[附加到远程计算机上的进程](#BKMK_Attach_to_a_process_on_a_remote_computer)。
 
-**若要将附加到本地计算机上的进程：**  
+附加到本地计算机上的进程：  
 
 1. 在 Visual Studio 中，选择**调试** > **附加到进程**(或按**Ctrl**+**Alt** + **P**) 以打开**附加到进程**对话框。
   
@@ -60,16 +59,16 @@ ms.locfileid: "53561637"
   
    ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
   
-2. 在中**可用进程**列表，查找并选择想要将附加到进程。  
+2. 在“可用进程”列表中，找到并选择要附加到的一个或多个进程。  
 
-   - 若要快速选择一个进程，请键入其名称或中的第一个字母**筛选进程**框。 
+   - 若要快速选择一个进程，请在“筛选进程”框中键入其名称或首字母。 
   
-   - 如果不知道进程名称，浏览列表中，或请参阅[常见调试方案](#BKMK_Scenarios)的一些常见的进程名称。 
+   - 如果不知道进程名称，请浏览列表或参阅[常见调试方案](#BKMK_Scenarios)，了解一些常见的进程名称。 
   
    >[!TIP]
-   >进程可以启动和停止在后台，而**附加到进程**对话框处于打开状态，因此运行进程的列表可能不始终是最新内容。 可以选择**刷新**任何时候若要查看当前列表。 
+   >“附加到进程”对话框处于打开状态时，进程可以在后台启动和停止，因此正在运行的进程列表可能不总是最新的内容。 可随时选择“刷新”以查看当前列表。 
   
-3. 在中**将附加到**字段中，请确保你打算调试的代码类型已经列出。 默认值**自动**设置对于大多数应用程序类型的工作原理。 
+3. 在“附加到”字段中，确保已列出计划调试的代码类型。 默认的“自动”设置适用于大多数应用类型。 
   
    若要手动选择代码类型：
    1. 单击 **“选择”**。 
@@ -80,11 +79,11 @@ ms.locfileid: "53561637"
 4. 选择**附加**。
   
 >[!NOTE]
->你可以附加到多个应用程序以进行调试，但一次只能有一个应用是在调试器中处于活动状态。 可以在 Visual Studio 中设置活动的应用程序**调试位置**工具栏或**进程**窗口。  
+>可附加到多个应用进行调试，但一次只能有一个应用在调试器中处于活动状态。 可在 Visual Studio 的“调试位置”工具栏或“进程”窗口中设置活动的应用。  
 
 ##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>附加到远程计算机上的进程  
 
-您还可以选择在远程计算机**附加到进程**对话框中，查看该计算机上运行的可用进程的列表，并将附加到一个或多个进程以进行调试。 远程调试器 (*msvsmon.exe*) 必须在远程计算机上运行。 有关详细信息，请参阅[远程调试](../debugger/remote-debugging.md)。 
+还可以在“附加到进程”对话框中选择一台远程计算机，查看该计算机上运行的可用进程列表，并附加到一个或多个进程以进行调试。 远程调试器 (msvsmon.exe) 必须在远程计算机上运行。 有关详细信息，请参阅[远程调试](../debugger/remote-debugging.md)。 
 
 用于调试已部署到 IIS 的 ASP.NET 应用程序的更完整说明，请参阅[远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。
 
@@ -92,10 +91,10 @@ ms.locfileid: "53561637"
 
 1. 在 Visual Studio 中，选择**调试** > **附加到进程**(或按**Ctrl**+**Alt** + **P**) 以打开**附加到进程**对话框。
   
-2. **连接类型**应**默认**在大多数情况下。 在中**连接目标**框中，选择远程计算机，使用以下方法之一：
+2. 在大多数情况下，“连接类型”应为“默认值”。 在“连接目标”框中，使用以下方法之一选择远程计算机：
 
    - 选择下拉箭头旁边**连接目标**，并从下拉列表中选择计算机名称。  
-   - 键入中的计算机名称**连接目标**框。
+   - 在“连接目标”框中键入计算机名称。
       
      > [!NOTE]
      > 如果您不能使用远程计算机名称进行连接，请尝试使用 IP 和端口地址 (例如， `123.45.678.9:4022`)。 Visual Studio 2017 x64 远程调试器的默认端口 4022。 有关其他远程调试器端口分配，请参阅[远程调试器端口分配](remote-debugger-port-assignments.md)。  
@@ -103,25 +102,25 @@ ms.locfileid: "53561637"
    - 选择**查找**按钮旁边**连接目标**框，以打开**远程连接**对话框。 **远程连接**对话框会列出本地子网上，或直接连接到您的计算机的所有设备。 你可能需要[打开 UDP 端口 3702](../debugger/remote-debugger-port-assignments.md)服务器以发现远程设备上。 选择的计算机或所需的设备，然后单击**选择**。 
   
    > [!NOTE]
-   > **连接类型**调试会话之间保持设置。 **连接目标**设置成功的调试连接出现与此目标的情况下，只有在调试会话之间保持。
+   > “连接类型”设置在调试会话之间保持不变。 而“连接目标”设置只有在成功与该目标建立了调试连接时才会在调试会话之间保持不变。
 
 3. 单击**刷新**来填充**可用进程**列表。
      
     >[!TIP]
-    >进程可以启动和停止在后台，而**附加到进程**对话框处于打开状态，因此运行进程的列表可能不始终是最新内容。 可以选择**刷新**任何时候若要查看当前列表。 
+    >“附加到进程”对话框处于打开状态时，进程可以在后台启动和停止，因此正在运行的进程列表可能不总是最新的内容。 可随时选择“刷新”以查看当前列表。 
      
-4. 在中**可用进程**列表，查找并选择想要将附加到进程。  
+4. 在“可用进程”列表中，找到并选择要附加到的一个或多个进程。  
 
-   - 若要快速选择一个进程，请键入其名称或中的第一个字母**筛选进程**框。 
+   - 若要快速选择一个进程，请在“筛选进程”框中键入其名称或首字母。 
   
-   - 如果不知道进程名称，浏览列表中，或请参阅[常见调试方案](#BKMK_Scenarios)的一些常见的进程名称。 
+   - 如果不知道进程名称，请浏览列表或参阅[常见调试方案](#BKMK_Scenarios)，了解一些常见的进程名称。 
   
    - 若要查找的所有用户帐户下运行的进程，请选择**显示所有用户的进程**复选框。
       
      >[!NOTE]
      >如果尝试附加到不受信任的用户帐户拥有的进程，则会出现安全警告对话框确认。 有关详细信息请参阅[安全警告：附加到不受信任的用户所拥有的进程可能很危险。如果以下信息看上去可疑或者你无法确定，请勿附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
       
-5. 在中**将附加到**字段中，请确保你打算调试的代码类型已经列出。 默认值**自动**设置对于大多数应用程序类型的工作原理。 
+5. 在“附加到”字段中，确保已列出计划调试的代码类型。 默认的“自动”设置适用于大多数应用类型。 
   
    若要手动选择代码类型：
    1. 单击 **“选择”**。 
@@ -132,7 +131,7 @@ ms.locfileid: "53561637"
 6. 选择**附加**。
   
 >[!NOTE]
->你可以附加到多个应用程序以进行调试，但一次只能有一个应用是在调试器中处于活动状态。 可以在 Visual Studio 中设置活动的应用程序**调试位置**工具栏或**进程**窗口。  
+>可附加到多个应用进行调试，但一次只能有一个应用在调试器中处于活动状态。 可在 Visual Studio 的“调试位置”工具栏或“进程”窗口中设置活动的应用程。  
 
 在某些情况下，在远程桌面 (Terminal Services) 会话中，调试时**可用进程**列表不会显示所有可用进程。 如果以具有有限的用户帐户的用户身份运行 Visual Studio**可用进程**列表不会显示在会话 0 中运行的进程。 会话 0 用于服务和其他服务器进程，包括*w3wp.exe*。 你可以通过以下方法解决该问题：使用管理员帐户运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 或从服务器控制台而不是“终端服务”会话运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 
 
@@ -147,9 +146,9 @@ ms.locfileid: "53561637"
 
 ## <a name="BKMK_Scenarios"></a> 常见的调试方案
 
-若要帮助您确定是否使用**附加到进程**和哪些要附加到进程下, 表显示了一些常见的调试方案，其中包含指向详细说明 （如果有）。 （列表并不详尽。） 
+为帮助确定是否使用“附加到进程”以及要附加到哪个进程，下表显示了一些常见的调试方案，并提供了指向更多可用说明的链接。 （该列表并不详尽。） 
 
-对于某些应用类型，例如通用 Windows 应用 (UWP) 应用不直接连接到进程名称，但使用**调试安装的应用程序包**菜单选项在 Visual Studio 中 （请参见表）。
+对于某些应用类型，如通用 Windows 应用 (UWP)，不能直接附加到进程名称，而需使用 Visual Studio 中的“调试已安装的应用包”菜单选项（请参阅表）。
 
 为使调试器附加到用 C++ 编写的代码，该代码需要发出 `DebuggableAttribute`。 可通过链接 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) 链接器选项将它自动添加到代码中。
 
@@ -173,7 +172,7 @@ ms.locfileid: "53561637"
 
 若要使用的全部功能 （如命中断点） 的 Visual Studio 调试器附加到进程，该应用程序必须完全匹配的本地源和符号。 也就是说，调试器必须能够加载正确[符号 (.pdb) 文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。 默认情况下，这需要调试版本。
 
-远程调试的情况下，必须具有的源代码 （或对源代码的副本），它已经在 Visual Studio 中打开。 在远程计算机上的已编译的应用二进制文件必须来自同一个生成，在本地计算机上。
+对于远程调试方案，必须已在 Visual Studio 中打开了源代码（或源代码的副本）。 远程计算机上编译的应用二进制文件必须与本地计算机上的源自同一个生成。
 
 某些本地调试的情况下，您可以调试在 Visual Studio 中与源不能访问正确的符号文件存在与该应用程序。 默认情况下，这需要调试版本。 有关详细信息，请参阅[指定符号和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
   
@@ -210,4 +209,3 @@ ms.locfileid: "53561637"
  [调试多个进程](../debugger/debug-multiple-processes.md)   
  [实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [远程调试](../debugger/remote-debugging.md)
- 

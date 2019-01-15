@@ -1,5 +1,5 @@
 ---
-title: C/c + + 断言 |Microsoft Docs
+title: C/C++ 断言 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -36,17 +36,17 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53894384"
 ---
 # <a name="cc-assertions"></a>C/C++ 断言
-断言语句指定您希望在您的程序中的点，则返回 true 的条件。 如果该条件不为 true，则断言失败，程序的执行被中断，并[断言失败对话框](../debugger/assertion-failed-dialog-box.md)出现。  
+断言语句指定你预期程序中的某个点为 true 的条件。 如果该条件不为 true，则断言失败，程序执行中断并显示[“断言失败”对话框](../debugger/assertion-failed-dialog-box.md)。  
 
- Visual c + + 支持基于以下构造的断言语句：  
+ Visual C++ 支持基于以下构造的断言语句：  
 
 - MFC 程序的 MFC 断言。  
 
-- [ATLASSERT](/cpp/atl/reference/debugging-and-error-reporting-macros#atlassert)的程序的使用 atl。  
+- 使用 ATL 的程序的 [ATLASSERT](/cpp/atl/reference/debugging-and-error-reporting-macros#atlassert)。  
 
 - 使用 C 运行时库的程序的 CRT 断言。  
 
-- ANSI [assert 函数](/cpp/c-runtime-library/reference/assert-macro-assert-wassert)其他 C/c + + 程序。  
+- 其他 C/C++ 程序的 ANSI [assert 函数](/cpp/c-runtime-library/reference/assert-macro-assert-wassert)。  
 
   可以使用断言来捕捉逻辑错误、 检查操作的结果和测试应处理的错误条件。  
 

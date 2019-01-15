@@ -30,7 +30,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 > [!div class="checklist"]
 > * 启动快照调试器
-> * 设置吸附点，以及查看快照
+> * 设置快照点，以及查看快照
 > * 设置记录点
 
 ## <a name="prerequisites"></a>系统必备
@@ -59,7 +59,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
     选择第一次**附加 Snapshot Debugger**，系统会提示你在 Azure 应用服务上安装 Snapshot Debugger 站点扩展。 此安装需要重新启动你的 Azure 应用服务。
 
-   Visual Studio 现在处于调试模式下的快照。
+   Visual Studio 现在处于快照调试模式下。
 
     > [!NOTE]
     > Application Insights 站点扩展还支持快照调试。 如果你遇到的"站点扩展已过期"错误消息，请参阅[故障排除提示和已知的问题的快照调试](../debugger/debug-live-azure-apps-troubleshooting.md)升级的详细信息。
@@ -70,30 +70,30 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
    ![检查模块窗口](../debugger/media/snapshot-modules.png)
 
-## <a name="set-a-snappoint"></a>设置吸附点
+## <a name="set-a-snappoint"></a>设置快照点
 
-1. 在代码编辑器中，单击你感兴趣设置吸附点的代码行旁边的左滚动条槽。 请确保它是您知道将执行的代码。
+1. 在代码编辑器中，单击你感兴趣的代码行旁边的左滚动条槽以设置快照点。 请确保它是你已知将执行的代码。
 
-   ![设置吸附点](../debugger/media/snapshot-set-snappoint.png)
+   ![设置快照点](../debugger/media/snapshot-set-snappoint.png)
 
 2. 单击**开始收集**若要打开吸附点。
 
-   ![开启吸附点](../debugger/media/snapshot-start-collection.png)
+   ![开启快照点](../debugger/media/snapshot-start-collection.png)
 
     > [!TIP]
-    > 不能步骤时查看快照，但可以将多个吸附点放置在你的代码遵循不同的代码行处的执行。 如果在代码中有多个吸附点，快照调试程序可以确保相应快照从相同的最终用户会话。 快照调试程序执行此操作即使有多个用户点击您的应用程序。
+    > 查看快照时，不能执行步骤，但可以在代码中放置多个快照点以在不同代码行处跟进执行。 如果代码中有多个快照点，快照调试器可以确保对应的快照来自相同的最终用户会话。 即使有多个用户点击应用，快照调试器仍会执行此操作。
 
-## <a name="take-a-snapshot"></a>拍摄快照
+## <a name="take-a-snapshot"></a>获取快照
 
-吸附点启用，则它将捕获快照时的吸附点放置的位置的代码行执行。 此执行可能引起您的服务器上的实际请求。 若要强制您吸附点以命中，请转到你的网站的浏览器视图并采取任何措施需要导致要进行点击你吸附点。
+启用快照点后，它将在快照点所在的代码行执行时捕获快照。 此执行可能由服务器上的实际请求引起。 若要强制命中快照点，请转到网站的浏览器视图，并执行命中快照点所需的任何操作。
 
 ## <a name="inspect-snapshot-data"></a>检查快照数据
 
 1. 当命中吸附点时，快照将出现在诊断工具窗口。 若要打开此窗口，请选择**调试 / Windows / 显示诊断工具**。
 
-   ![打开吸附点](../debugger/media/snapshot-diagsession-window.png)
+   ![打开快照点](../debugger/media/snapshot-diagsession-window.png)
 
-1. 双击吸附点，用于在代码编辑器中打开快照。
+1. 双击快照点，以在代码编辑器中打开快照。
 
    ![检查快照数据](../debugger/media/snapshot-inspect-data.png)
 
@@ -105,9 +105,9 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 **需要帮助？** 请参阅[疑难解答和已知的问题](../debugger/debug-live-azure-apps-troubleshooting.md)并[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)页。
 
-## <a name="set-a-conditional-snappoint"></a>设置条件的吸附点
+## <a name="set-a-conditional-snappoint"></a>设置条件性快照点
 
-如果很难重新创建应用程序中的某一特定状态，请考虑使用的条件的吸附点是否可以帮助。 条件的吸附点帮助您避免拍摄快照，直到应用程序进入所需的状态，例如当一个变量具有你想要检查的特定值。 可以设置使用表达式，筛选器条件或命中次数。
+如果难以在应用中重新创建某一特定状态，请考虑使用条件性快照点是否会有所帮助。 条件性快照点可帮助避免在应用进入所需状态前获取快照，例如，变量具有你想要检查的特定值的情况。 可以使用表达式、筛选器或命中次数设置表达式。
 
 #### <a name="to-create-a-conditional-snappoint"></a>若要创建条件的吸附点
 

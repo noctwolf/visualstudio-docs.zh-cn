@@ -18,4 +18,4 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53898838"
 ---
 # <a name="about-microsoft-spy"></a>关于 Microsoft Spy++
-此对话框用于显示版权、 版本、 所有权和有关 Spy + + 的其他信息。
+此对话框用于显示有关 Spy++ 的版权、版本、所有权和其他信息。
