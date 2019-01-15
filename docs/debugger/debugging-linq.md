@@ -27,7 +27,7 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53871000"
 ---
 # <a name="debugging-linq"></a>调试 LINQ
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支持对语言集成查询 (LINQ) 代码进行调试，但是有一些限制。 大多数调试功能都使用 LINQ 语句，其中包括单步执行、设置断点以及在调试器窗口中查看结果。 本主题介绍 LINQ 调试的主要限制。  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支持对语言集成查询 (LINQ) 代码进行调试，但是有一些限制。 大多数调试功能都对 LINQ 语句有效，其中包括单步执行、设置断点以及在调试器窗口中查看结果。 本主题介绍 LINQ 调试的主要限制。  
   
 ##  <a name="BKMK_ViewingLINQResults"></a> 查看 LINQ 结果  
  使用数据提示功能、“监视”窗口和“快速监视”对话框，可以查看 LINQ 语句的结果。 在使用源窗口时，可以将指针停放在源窗口中的某个查询上，这样会出现“数据提示”。 可以将一个 LINQ 变量复制并粘贴到“监视”窗口或“快速监视”对话框中。  
@@ -44,12 +44,12 @@ ms.locfileid: "53871000"
  调试 LINQ 代码时，单步执行具有一些你应知道的行为差异。  
   
 ### <a name="linq-to-sql"></a>LINQ to SQL  
- 在 LINQ to SQL 查询中，谓词代码不受调试器控制。 因此，无法进入并单步执行谓词代码。 任何编译为表达式树的查询都会产生不受调试器控制的代码。  
+ 在 LINQ to SQL 查询中，谓词代码不受调试器控制。 因此，无法单步执行谓词代码。 任何编译为表达式树的查询都会产生不受调试器控制的代码。  
   
 ### <a name="stepping-in-visual-basic"></a>Visual Basic 中的单步执行  
- 在单步执行 Visual Basic 程序且调试器遇到查询声明时，调试器不会进入并单步执行该声明，而是将整个声明作为单个语句突出显示。 发生此行为的原因是查询直到调用时才进行计算。 有关详细信息，请参阅[在 Visual Basic 中的 LINQ 简介](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)。  
+ 单步执行 Visual Basic 程序且调试器遇到查询声明时，调试器不会单步执行该声明，而是将整个声明作为单个语句突出显示。 发生此行为的原因是查询直到被调用时才进行计算。 有关详细信息，请参阅[Visual Basic 中的 LINQ 简介](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)。  
   
- 如果单步执行下面的代码示例，则调试器会将查询声明或查询创建作为单个语句突出显示。  
+ 如果单步执行下面的示例代码，调试器会将查询声明或查询创建作为单个语句突出显示。  
   
 ```vb
 Function MyFunction(ByVal x As Char)  
@@ -69,7 +69,7 @@ Sub Main()
 End Sub  
 ```  
   
- 当你再次单步执行时，调试器会突出显示 `For Each cur In x`。 在下一步中，调试器会进入并单步执行函数 `MyFunction`。 在单步执行 `MyFunction` 后，调试器跳回到 `Console.WriteLine(cur.ToSting())`。 调试器在任何时候都不会单步执行查询声明中的谓词代码，尽管调试器的确会计算该代码。  
+ 再次单步执行时，调试器会突出显示 `For Each cur In x`。 在下一步中，调试器会单步执行函数 `MyFunction`。 单步调试 `MyFunction` 后，调试器跳回到 `Console.WriteLine(cur.ToSting())`。 调试器在任何时候都不会单步执行查询声明中的谓词代码，但调试器的确会计算该代码。  
   
 ### <a name="replacing-a-predicate-with-a-function-to-enable-stepping-visual-basic"></a>用函数替换谓词以启用单步执行 (Visual Basic)  
  如果必须单步执行谓词代码以便达到调试目的，则可以将谓词替换为对包含原始谓词代码的函数的调用。 例如，假定你具有下面的代码：  
@@ -102,10 +102,10 @@ Function IsEven(item As =Integer) as Boolean
 End Function  
 ```  
   
- 修改后的查询在每次遍历 `IsEven` 时都会调用函数 `items`。 你可以使用调试器窗口来查看每个“item”是否满足指定条件，并且可以单步执行 `IsEven` 中的代码。 此示例中的谓词相当简单。 但是，如果必须调试一个更复杂的谓词，这种技术也会十分有用。  
+ 修改后的查询在每次遍历 `IsEven` 时都会调用函数 `items`。 可以使用调试器窗口来查看每个“item”是否满足指定条件，并且可以单步执行 `IsEven` 中的代码。 此示例中的谓词相当简单。 但是，如果必须调试一个更复杂的谓词，这种方法也会十分有用。  
   
 ##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> LINQ 不支持“编辑并继续”  
- 编辑并继续支持对 LINQ 查询与限制的更改。 有关详细信息，请参阅[EnC 受支持的更改](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
+ Edit and Continue 支持对 LINQ 查询的更改，但有一些限制。 有关详细信息，请参阅 [EnC 支持的更改](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)
   
 ## <a name="see-also"></a>请参阅
 

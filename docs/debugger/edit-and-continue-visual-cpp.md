@@ -1,5 +1,5 @@
 ---
-title: 编辑并继续 （Visual c + +） |Microsoft Docs
+title: Edit and Continue (Visual C++)
 ms.date: 05/31/2017
 ms.topic: conceptual
 dev_langs:
@@ -25,9 +25,9 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53922989"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
-可以使用 Visual C++ 项目中的“编辑并继续”。 请参阅[支持的代码更改 （c + +）](../debugger/supported-code-changes-cpp.md)有关限制的编辑并继续的信息。
+可以在 Visual C++ 项目中使用 Edit and Continue。 请参阅[支持的代码更改 (C++)](../debugger/supported-code-changes-cpp.md)，了解有关 Edit and Continue 的限制的信息。
   
-有关 Visual Studio 2015 Update 3 的改进的详细信息，请参阅[c + + 编辑并继续在 Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)。  
+有关 Visual Studio 2015 Update 3 功能改进的详细信息，请参阅 [Visual Studio 2015 Update 3 中的 C++ Edit and Continue](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)。  
   
  在 Visual Studio 2013 Update 3 中引入的 [/Zo（增强优化调试）](/cpp/build/reference/zo-enhance-optimized-debugging)编译器选项将其他信息添加到 .pdb（符号）文件中，用于未使用 [/Od（禁用（调试））](https://msdn.microsoft.com/library/aafb762y.aspx)选项进行编译的二进制文件。  
   

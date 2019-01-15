@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 525766d69e892bd6560cd9d9cd280d8ed061c56c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 710c7728069a7166d67ab39239b360634fb80509
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946602"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269496"
 ---
 # <a name="pick-activity-designer"></a>Pick 活动设计器
 
@@ -30,7 +30,7 @@ ms.locfileid: "53946602"
 
 访问**选取**中的活动设计器**控制流**类别**工具箱**。 **选取**活动设计器可以从拖动**工具箱**无论通常放置活动设计器，有关示例，在何处放置到工作流设计器图面和**序列**活动设计器。 之后将它放到工作流设计器，它会创建<xref:System.Activities.Statements.Pick>活动，其中默认情况下包含两个空<xref:System.Activities.Statements.PickBranch>活动时，具有的元素显示为 Branch1 和 Branch2 的名称。 二者各自<xref:System.Activities.Statements.PickBranch.DisplayName%2A>属性值可以在中编辑**PickBranch**活动设计器标头中或在**属性**窗口为每个分支。
 
-有两种方法来添加<xref:System.Activities.Statements.PickBranch>活动的集合<xref:System.Activities.Statements.Pick>对象： 拖放**PickBranch**设计器从**工具箱**或通过使用从上下文菜单内**选取**设计图面。 有关详细信息，请参阅[PickBranch](../workflow-designer/pickbranch-activity-designer.md)主题。 请注意的唯一项，可以放置在**选取**活动设计器是**PickBranch**活动设计器。
+有两种方法来添加<xref:System.Activities.Statements.PickBranch>活动的集合<xref:System.Activities.Statements.Pick>对象： 拖放**PickBranch**从设计器**工具箱**或通过使用右键单击菜单从内部**选取**设计图面。 有关详细信息，请参阅[PickBranch](../workflow-designer/pickbranch-activity-designer.md)主题。 请注意的唯一项，可以放置在**选取**活动设计器是**PickBranch**活动设计器。
 
 ### <a name="pick-activity-properties-in-the-workflow-designer"></a>工作流设计器中的 Pick 活动属性
 

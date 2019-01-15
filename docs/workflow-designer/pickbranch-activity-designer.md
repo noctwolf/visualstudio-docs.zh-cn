@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3a692d08a8117eca4bbd4765cc9d21ba7b8c770
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 86948845f2537f0785daeebbc349292891a7a3e2
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860252"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269860"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 活动设计器
 
@@ -32,7 +32,7 @@ ms.locfileid: "53860252"
 
 两个空<xref:System.Activities.Statements.PickBranch>的对象显示名称**Branch1**和**分支 2**默认情况下创建的元素作为<xref:System.Activities.Statements.Pick>活动时**选取**活动设计器最初放置到工作流设计器。 二者各自<xref:System.Activities.Statements.PickBranch.DisplayName%2A>属性值可以在中编辑**PickBranch**设计器标头中或在**属性**窗口为每个分支。
 
-有两种方法来添加<xref:System.Activities.Statements.PickBranch>对象的集合<xref:System.Activities.Statements.Pick>对象： 拖放**PickBranch**设计器从**工具箱**，或通过使用从上下文菜单内**选取**设计图面：
+有两种方法来添加<xref:System.Activities.Statements.PickBranch>对象的集合<xref:System.Activities.Statements.Pick>对象： 拖放**PickBranch**从设计器**工具箱**，或通过使用中的右键单击菜单内**选取**设计图面：
 
 - **PickBranch**设计器创建<xref:System.Activities.Statements.PickBranch>时从拖动**工具箱**放到的分支之一**选取**上的活动设计器工作流设计器图面。 新 <xref:System.Activities.Statements.PickBranch> 对象可放置在 <xref:System.Activities.Statements.Pick> 设计器内已包含在集合中的任何现有 <xref:System.Activities.Statements.PickBranch> 元素的左侧或右侧。 当拖动**PickBranch**拖动到设计器**选取**用鼠标，设计器**选取**设计器使用一个垂直的蓝灰条来指示何处<xref:System.Activities.Statements.PickBranch>添加作为给定的鼠标放置位置。
 

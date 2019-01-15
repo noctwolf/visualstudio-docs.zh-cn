@@ -29,7 +29,7 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53985298"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>“数据集可视化工具”对话框
-使用数据集可视化工具可以查看 DataSet、DataTable、DataView 或 DataViewManager 对象的内容。 通过在调试器变量窗口或数据提示中单击这些对象之一的“值”旁显示的放大镜图标，可以访问此可视化工具。  
+使用 DataSet 可视化工具可以查看 DataSet、DataTable、DataView 或 DataViewManager 对象的内容。 通过在调试器变量窗口或 DataTip 中，单击一个对象的值旁边显示的放大镜图标，即可访问该可视化工具。  
   
  可以在此可视化工具中对这些对象进行更改。 所做的更改会在提交一个行后立即保存。  
   

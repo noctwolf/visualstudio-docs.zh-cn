@@ -18,7 +18,7 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53944082"
 ---
 # <a name="how-to-change-fonts"></a>如何：更改字体
-您可以更改字体、 字体样式和 Spy + + 窗口的字体大小。  
+可更改 Spy++ 窗口的字体、字体样式和字体大小。  
   
 ### <a name="to-change-font-options"></a>若要更改字体选项  
   

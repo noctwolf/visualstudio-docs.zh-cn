@@ -20,7 +20,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 01/02/2019
 ms.locfileid: "53944400"
 ---
-# <a name="debug-a-webview-control-in-a-uwp-app"></a>调试 WebView 控件中的 UWP 应用
+# <a name="debug-a-webview-control-in-a-uwp-app"></a>调试 UWP 应用中的 WebView 控件
   
  若要检查并调试 Windows 运行时应用中的 `WebView` 控件，你可以在启动应用时配置 Visual Studio 以附加脚本调试器。 使用两种方法与之交互`WebView`控制是否使用调试器：  
   

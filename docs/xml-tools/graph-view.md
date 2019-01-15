@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7623198cc31e8ee955f00cd06b7ca91f8d32a31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 252b22305579f3c0beccdca0a5464f7d08bbc985
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826989"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269899"
 ---
 # <a name="graph-view"></a>图形视图
 
@@ -42,7 +42,7 @@ ms.locfileid: "53826989"
 
  图形视图底部的痕迹栏显示所选节点在架构集中所处的位置。 如果选择了多个项，则痕迹栏将为空。
 
-## <a name="context-menu"></a>上下文菜单
+## <a name="context-right-click-menu"></a>上下文 （右键单击） 菜单
 
  下表介绍了图形视图的设计图面上所有节点的可用选项。
 
@@ -92,7 +92,7 @@ ms.locfileid: "53826989"
 
 ## <a name="properties-window"></a>“属性”窗口
 
- 使用上下文菜单可初始打开**属性**窗口。 默认情况下**属性**窗口显示在 Visual Studio 的右下角中。 当您单击的内容模型视图中呈现的节点时，该节点的属性将显示在**属性**窗口。
+ 使用上下文 （右键单击） 菜单可初始打开**属性**窗口。 默认情况下**属性**窗口显示在 Visual Studio 的右下角中。 当您单击的内容模型视图中呈现的节点时，该节点的属性将显示在**属性**窗口。
 
 ## <a name="xsd-toolbar"></a>XSD 工具栏
 
@@ -141,7 +141,7 @@ ms.locfileid: "53826989"
 
 ## <a name="xml-editor-integration"></a>XML 编辑器集成
 
- 可通过以下方法在图形视图和 XML 编辑器之间来回切换：单击某个节点，然后使用“查看代码”上下文菜单。
+ 您可以来回切换关系图视图和 XML 编辑器之间通过单击某个节点并使用查看代码上下文 （右键单击） 菜单。
 
  如果在 XML 编辑器中对架构集进行更改，则相应的更改会在图形视图中同步。 有关详细信息，请参阅[与 XML 编辑器集成](../xml-tools/integration-with-xml-editor.md)。
 

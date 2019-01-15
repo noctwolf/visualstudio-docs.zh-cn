@@ -101,7 +101,7 @@ ms.locfileid: "53949477"
 ##  <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> 利用调试堆查找缓冲区溢出  
  程序员遇到的两种最常见而又难处理的问题是，覆盖已分配缓冲区的末尾以及内存泄漏（未能在不再需要某些分配后将其释放）。 调试堆提供功能强大的工具来解决这类内存分配问题。  
   
- 堆函数的“Debug”版本调用“Release”版本中使用的标准版本或基版本。 当请求内存块时，调试堆管理器从基堆分配略大于所请求的块的内存块，并返回指向该块中属于您的部分的指针。 例如，假定应用程序包含调用：`malloc( 10 )`。 在发布版本中， [malloc](/cpp/c-runtime-library/reference/malloc)将调用基堆分配例程以请求分配 10 个字节。 在调试版本中，但是，`malloc`将调用[_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)，随后就其可以调用基堆分配例程以请求分配 10 个字节加上大约 36 个字节的额外内存。 调试堆中产生的所有内存块在单个链接列表中连接起来，按照分配时间排序。  
+ 堆函数的“调试”版本调用“发布”版本中使用的标准版本或基版本。 请求内存块时，调试堆管理器从基堆分配略大于所请求的块的内存块，并返回指向该块中属于你的部分的指针。 例如，假定应用程序包含调用：`malloc( 10 )`。 在发布版本中，[malloc](/cpp/c-runtime-library/reference/malloc) 将调用基堆分配例程以请求分配 10 个字节。 但在调试版本中，`malloc`将调用 [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)，它随后将调用基堆分配例程以请求分配 10 个字节加上大约 36 个字节的额外内存。 调试堆中产生的所有内存块在单个链接列表中连接起来，按照分配时间排序。  
   
  调试堆例程分配的附加内存的用途为：存储簿记信息，存储将调试内存块链接在一起的指针，以及形成数据两侧的小缓冲区（用于捕捉已分配区域的覆盖）。  
   
@@ -152,7 +152,7 @@ typedef struct _CrtMemBlockHeader
  对 [malloc](/cpp/c-runtime-library/reference/malloc) 或 [calloc](/cpp/c-runtime-library/reference/calloc) 的调用将创建“普通”块。 如果打算只使用“普通”块而不需要“客户端”块，则建议定义 [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)，使所有堆分配调用映射到它们在“Debug”版本中的调试等效项。 这将允许将关于每个分配调用的文件名和行号信息存储到对应的块头中。  
   
  `_CRT_BLOCK`  
- 由许多运行库函数内部分配的内存块被标记为 CRT 块，以便可以单独处理这些块。 结果，泄漏检测和其他操作不需要受这些块影响。 分配永不可以分配、重新分配或释放任何 CRT 类型的块。  
+ 许多运行时库函数在内部分配的内存块被标记为 CRT 块，以便它们可以单独进行处理。 因此，泄漏检测和其他操作无需受它们的影响。 分配操作决不能分配、重新分配或释放任何 CRT 类型的块。  
   
  `_CLIENT_BLOCK`  
  出于调试目的，应用程序可以专门跟踪一组给定的分配，方法是使用对调试堆函数的显式调用将它们作为该类型的内存块进行分配。 例如，MFC 以“客户端”块类型分配所有的 CObjects；其他应用程序则可能在“客户端”块中保留不同的内存对象。 还可以指定“客户端”块的子类型以获得更大的跟踪粒度。 若要指定“客户端”块子类型，请将该数字向左移 16 位，并将它与 `OR` 进行 `_CLIENT_BLOCK` 运算。 例如:  
@@ -165,7 +165,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  客户端提供的挂钩函数（用于转储在“客户端”块中存储的对象）可以使用 [_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient) 进行安装，然后，每当调试函数转储“客户端”块时均会调用该挂钩函数。 同样，对于调试堆中的每个“客户端”块，可以使用 [_CrtDoForAllClientObjects](/cpp/c-runtime-library/reference/crtdoforallclientobjects) 来调用应用程序提供的给定函数。  
   
  **_FREE_BLOCK**  
- 通常，所释放的块将从列表中移除。 为了检查并未仍在向已释放的内存写入数据，或为了模拟内存不足情况，可以选择在链接列表上保留已释放块，将其标记为“可用”，并用已知字节值（当前为 0xDD）填充。  
+ 通常，释放的块会从列表中删除。 若要检查释放的内存是否仍在被写入数据或要模拟内存不足的情况，可以选择将释放的块保留在链接列表中，将它们标记为“可用”，并使用已知字节值（当前为 0xDD）进行填充。  
   
  **_IGNORE_BLOCK**  
  有可能在一段时间内关闭调试堆操作。 在该时间段内，内存块保留在列表上，但被标记为“忽略”块。  
@@ -201,7 +201,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ##  <a name="BKMK_Configure_the_debug_heap"></a> 配置调试堆  
- 对于堆函数（例如 `malloc`、`free`、`calloc`、`realloc`、`new` 和 `delete`）的所有调用均解析为这些函数在调试堆中运行的调试版本。 当释放内存块时，调试堆自动检查已分配区域两侧的缓冲区的完整性，如果发生覆盖，将发出错误报告。  
+ 对堆函数（例如 `malloc`、`free`、`calloc`、`realloc`、`new` 和 `delete`）的所有调用均解析为这些函数在调试堆中运行的调试版本。 释放内存块时，调试堆自动检查已分配区域两侧的缓冲区的完整性，并在发生覆盖时发出错误报告。  
   
  **使用调试堆**  
   
@@ -294,7 +294,7 @@ typedef struct _CrtMemState
 } _CrtMemState;  
 ```  
   
- 该结构保存指向调试堆的链接列表中的第一个（最近分配的）块的指针。 然后，它在两个数组中记录列表中每种类型的内存块（_NORMAL_BLOCK、`_CLIENT_BLOCK`、_FREE_BLOCK 等等）的个数，以及每种类型的块中分配的字节数。 最后，它记录到该点为止堆中总共分配的最大字节数以及当前分配的字节数。  
+ 此结构保存指向调试堆的链接列表中的第一个（最近分配的）块的指针。 然后，在两个数组中，它记录该列表中每种类型的内存块（_NORMAL_BLOCK、`_CLIENT_BLOCK`、_FREE_BLOCK 等）的数量，以及在每种类型的块中分配的字节数。 最后，它记录到那时为止在整个堆中分配的最高字节数，以及当前分配的字节数。  
   
  **其他 CRT 报告函数**  
   

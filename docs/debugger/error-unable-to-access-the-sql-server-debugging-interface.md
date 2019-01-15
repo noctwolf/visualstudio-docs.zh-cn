@@ -23,7 +23,7 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53988509"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>错误：无法访问 SQL Server 调试接口
-当在未启用 SQL 调试的计算机上尝试 SQL 调试时，此消息会出现。  
+尝试在未启用 SQL 调试的计算机上进行 SQL 调试时，会出现此消息。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   

@@ -30,7 +30,7 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53880174"
 ---
 # <a name="assertions-in-managed-code"></a>托管代码中的断言
-断言（或 `Assert` 语句）测试你指定为 `Assert` 语句的自变量的条件。 如果此条件的计算结果为 true，则不发生操作。 如果此条件的计算结果 false，则断言失败。 如果正在使用调试版本运行，则程序将进入中断模式。  
+断言（或 `Assert` 语句）测试一个你指定为 `Assert` 语句的自变量的条件。 如果该条件的计算结果为 true，则不会执行任何操作。 如果条件的计算结果为 false，则断言失败。 如果正使用调试版本运行，程序将进入中断模式。  
   
 ##  <a name="BKMK_In_this_topic"></a> 在本主题中  
  [System.Diagnostics 命名空间中的断言](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
@@ -48,14 +48,14 @@ ms.locfileid: "53880174"
  [在配置文件中设置断言](#BKMK_Setting_assertions_in_configuration_files)  
   
 ##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a>System.Diagnostics 命名空间中的断言  
- 在 Visual Basic 和 Visual C# 中，可以使用 `Assert` 或 <xref:System.Diagnostics.Debug>（二者位于 <xref:System.Diagnostics.Trace> 命名空间中）中的 <xref:System.Diagnostics> 方法。 程序的发行版中不包含 <xref:System.Diagnostics.Debug> 类方法，因此它们不增大发行代码的大小，也不会减慢发行代码的速度。  
+ 在 Visual Basic 和 Visual C# 中，可使用位于 <xref:System.Diagnostics> 命名空间中的 <xref:System.Diagnostics.Debug> 或 <xref:System.Diagnostics.Trace> 的 `Assert` 方法。 <xref:System.Diagnostics.Debug> 类方法未包含在程序的“发布”版本中，因此它们不会增加发布代码的大小或降低发布代码的速度。  
   
  C++ 不支持 <xref:System.Diagnostics.Debug> 类方法。 可将 <xref:System.Diagnostics.Trace> 类与条件编译（如 `#ifdef DEBUG`... `#endif`）一起使用来达到相同的效果。  
   
  [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_Debug_Assert_method"></a> Debug.Assert 方法  
- 可随意使用 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 方法测试条件（如果代码正确，该条件应为 true）。 例如，假设已编写一个整数除法函数。 根据数学规则，除数绝不能为零。 可以使用断言测试这一点：  
+ 自由使用 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 方法来测试代码正确时应为 true 的条件。 例如，假设已编写一个整数除法函数。 根据数学规则，除数绝不能为零。 可使用断言来对此进行测试：  
   
 ```VB  
 Function IntegerDivide(ByVal dividend As Integer, ByVal divisor As Integer) As Integer  
@@ -102,7 +102,7 @@ Trace.Assert ( amount <= balance );
 savingsAccount.Withdraw ( amount );  
 ```  
   
- 请注意，在创建代码的发行版时，对 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 方法的调用将消失。 这意味着，检查余额的调用将在发行版本中消失。 若要解决此问题，您应将 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 替换为在发行版中不会消失的 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>：  
+ 请注意，在创建代码的发布版时，对 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 方法的调用会消失。 这意味着检查余额的调用在发布版中消失。 若要解决此问题，应将 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 替换为在发布版本中不会消失的 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>：  
   
  与对 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 的调用不同，对 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 的调用会增加发行版的开销。  
   
@@ -133,7 +133,7 @@ temp = meas( i );
 Debug.Assert ( temp != 0 );  
 ```  
   
- 甚至在使用 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 时，也需要避免将函数调用放置到 `Assert` 语句中。 这样的调用应是安全的，因为发行版中没有消除 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 语句。 但是，如果习惯上避免这样的结构，则使用 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 时犯错的可能性会很小。  
+ 甚至在使用 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 时，可能仍需要避免将函数调用置于 `Assert` 语句中。 此类调用应该是安全的，因为在发布版中不会清除 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 语句。 但是，如果你习惯了避免使用此类结构，则在使用 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 时出错的可能性就会很小。  
   
  [在本主题中](#BKMK_In_this_topic)  
   

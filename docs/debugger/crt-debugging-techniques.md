@@ -27,7 +27,7 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53889106"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 调试方法
-如果调试使用 C 运行库的程序，这些调试方法可能会有用。  
+如果调试使用 C 运行时库的程序，这些调试方法可能会有用。  
   
 ## <a name="in-this-section"></a>本节内容  
  [CRT 调试库使用](../debugger/crt-debug-library-use.md)  

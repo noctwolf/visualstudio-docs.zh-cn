@@ -19,7 +19,7 @@ ms.locfileid: "53828480"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 扩展性的 API 参考
 
-可参考本节中的信息，使用 IntelliTrace 扩展性 API 以在应用程序中读取并解码 .itrace 文件。  
+通过参考本节中的信息，可使用 IntelliTrace 扩展性 API 以读取和解码应用程序中的 .itrace 文件。  
   
 ## <a name="in-this-section"></a>本节内容
 
