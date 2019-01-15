@@ -1,8 +1,6 @@
 ---
 title: 托管代码中的断言 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -24,18 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07f422348a10bbe6d5c02a50073c9486a679cfaf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce83c69893e4623dc5989561d0edfb6415708d56
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892059"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880174"
 ---
 # <a name="assertions-in-managed-code"></a>托管代码中的断言
 断言（或 `Assert` 语句）测试你指定为 `Assert` 语句的自变量的条件。 如果此条件的计算结果为 true，则不发生操作。 如果此条件的计算结果 false，则断言失败。 如果正在使用调试版本运行，则程序将进入中断模式。  
   
 ##  <a name="BKMK_In_this_topic"></a> 在本主题中  
- [在 System.Diagnostics Namespace 中断言](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
+ [System.Diagnostics 命名空间中的断言](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
   
  [Debug.Assert 方法](#BKMK_The_Debug_Assert_method)  
   
@@ -43,16 +41,16 @@ ms.locfileid: "49892059"
   
  [跟踪和调试需求](#BKMK_Trace_and_Debug_Requirements)  
   
- [断言自变量](#BKMK_Assert_arguments)  
+ [断言参数](#BKMK_Assert_arguments)  
   
  [自定义断言行为](#BKMK_Customizing_Assert_behavior)  
   
  [在配置文件中设置断言](#BKMK_Setting_assertions_in_configuration_files)  
   
-##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> 在 System.Diagnostics Namespace 中断言  
+##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a>System.Diagnostics 命名空间中的断言  
  在 Visual Basic 和 Visual C# 中，可以使用 `Assert` 或 <xref:System.Diagnostics.Debug>（二者位于 <xref:System.Diagnostics.Trace> 命名空间中）中的 <xref:System.Diagnostics> 方法。 程序的发行版中不包含 <xref:System.Diagnostics.Debug> 类方法，因此它们不增大发行代码的大小，也不会减慢发行代码的速度。  
   
- C++ 不支持 <xref:System.Diagnostics.Debug> 类方法。 可以通过使用实现相同的效果<xref:System.Diagnostics.Trace>类使用条件编译，如`#ifdef DEBUG`...`#endif`.  
+ C++ 不支持 <xref:System.Diagnostics.Debug> 类方法。 可将 <xref:System.Diagnostics.Trace> 类与条件编译（如 `#ifdef DEBUG`... `#endif`）一起使用来达到相同的效果。  
   
  [在本主题中](#BKMK_In_this_topic)  
   
@@ -156,10 +154,10 @@ Debug.Assert ( temp != 0 );
   
   如果需要在 C# 或 Visual Basic 发行版中使用 DEBUG 方法，您必须在“发布”配置中定义 DEBUG 符号。  
   
-  C++ 不支持 <xref:System.Diagnostics.Debug> 类方法。 可以通过使用实现相同的效果<xref:System.Diagnostics.Trace>类使用条件编译，如`#ifdef DEBUG`...`#endif`. 您可以定义中的这些符号**\<项目 > 属性页**对话框。 有关详细信息，请参阅[更改为 Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或[更改 C 或 c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
+  C++ 不支持 <xref:System.Diagnostics.Debug> 类方法。 可将 <xref:System.Diagnostics.Trace> 类与条件编译（如 `#ifdef DEBUG`... `#endif`）一起使用来达到相同的效果。 可以在“\<项目> 属性页”对话框中定义这些符号。 有关详细信息，请参阅[为 Visual Basic 调试配置更改项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或[更改 C 或 C++ 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
-##  <a name="BKMK_Assert_arguments"></a> 断言自变量  
- <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 最多有三个参数。 第一个自变量是强制的，它是要检查的条件。 如果您调用<xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName>或<xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>只有一个参数与`Assert`方法检查条件，并且如果结果为 false，则输出到调用堆栈的内容**输出**窗口。 下面的示例显示 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>：  
+##  <a name="BKMK_Assert_arguments"></a> 断言参数  
+ <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 最多有三个自变量。 第一个自变量是强制的，它是要检查的条件。 如果调用仅带一个参数的 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> 或 <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>，则 `Assert` 方法将检查条件，并且如果结果为 false，则向“输出”窗口输出调用堆栈的内容。 下面的示例显示 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>：  
   
 ```VB  
 Debug.Assert(stacksize > 0)  
@@ -199,11 +197,11 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Customizing_Assert_behavior"></a> 自定义断言行为  
- 如果在用户界面模式中运行你的应用程序`Assert`方法将显示**断言失败**对话框中的条件失败时。 断言失败时发生的操作受<xref:System.Diagnostics.Debug.Listeners%2A>或<xref:System.Diagnostics.Trace.Listeners%2A>属性。  
+ 如果在用户界面模式中运行应用程序，则当条件失败时，`Assert` 方法将显示“断言失败”对话框。 断言失败时发生的操作由 <xref:System.Diagnostics.Debug.Listeners%2A> 或 <xref:System.Diagnostics.Trace.Listeners%2A> 属性控制。  
   
  可以通过向 <xref:System.Diagnostics.TraceListener> 集合添加 `Listeners` 对象、从 <xref:System.Diagnostics.TraceListener> 集合中移除 `Listeners` 或者重写现有 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 的 `TraceListener` 方法来自定义输出行为，使其变得不同。  
   
- 例如，您可以重写<xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName>方法将写入事件日志而不是显示**断言失败**对话框。  
+ 例如，可以替代 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 方法来对事件日志进行写入而不是显示“断言失败”对话框。  
   
  若要通过此方式自定义输出，您的程序必须包含侦听器，并且必须从 <xref:System.Diagnostics.TraceListener> 继承并重写其 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 方法。  
   
@@ -219,6 +217,6 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>   
  [调试器安全](../debugger/debugger-security.md)   
  [跟踪应用程序和在应用程序中插入检测点](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)   
- [如何：使用跟踪和调试进行条件编译](/dotnet/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug)   
+ [如何：使用跟踪和调试执行有条件编译](/dotnet/framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug)   
  [C#、F#、和 Visual Basic 项目类型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [调试托管代码](../debugger/debugging-managed-code.md)

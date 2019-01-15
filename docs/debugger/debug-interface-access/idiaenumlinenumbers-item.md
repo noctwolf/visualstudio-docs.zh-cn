@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumlinenumbers:: Item |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 851abd08093be885a49103a96a866b6700337d27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e7c7ef6bd9292c9f730731383cb4474915c17985
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820730"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
 通过索引中检索行号。  
@@ -27,7 +25,7 @@ ms.locfileid: "49931787"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT Item (   
+HRESULT Item (   
    DWORD            index,  
    IDiaLineNumber** lineNumber  
 );  
@@ -37,7 +35,7 @@ HRESULT Item (
  索引  
  [in]索引[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)要检索对象。 索引是 0 到范围内`count`-1，其中`count`返回的[idiaenumlinenumbers:: Get_count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)方法。  
   
- 行号  
+ lineNumber  
  [out]返回[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)对象，表示所需的行号。  
   
 ## <a name="return-value"></a>返回值  

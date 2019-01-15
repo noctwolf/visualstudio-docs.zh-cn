@@ -1,8 +1,6 @@
 ---
 title: 调试错误和警告对话框 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VS.WebClient.AccessRequiredDialog
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb7ed7b66483bcda01df00e92907801d994553e9
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 918c59d1da1c1d84b4e9cb2cea8e54b4dc632fc7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279038"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938810"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>“调试错误和警告”对话框
 以下是在调试应用程序时可能遇到的错误和警告对话框。  
@@ -42,13 +40,13 @@ ms.locfileid: "44279038"
   
  [“调试会话的可执行文件”对话框](../debugger/executable-for-debugging-session-dialog-box.md)  
   
- [未能应用代码更改对话框](../debugger/edit-and-continue-dialog-box-cpp.md)  
+ [“应用代码更改失败”对话框](../debugger/edit-and-continue-dialog-box-cpp.md)  
   
  [“Microsoft Visual Studio 调试器（引发异常）”对话框](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
- [没有可用于当前的位置对话框的源代码](../debugger/no-source-available.md)  
+ [“没有可用于当前位置的源代码”对话框](../debugger/no-source-available.md)  
   
- [无符号信息对话框](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [“无符号化信息”对话框](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [“解析多义性”对话框](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -56,17 +54,17 @@ ms.locfileid: "44279038"
   
  [无法连接到计算机](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
   
- [错误：由于系统上启用了内核调试程序，因此不可能进行调试](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [错误：无法进行调试，因为系统上已启用内核调试程序](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>相关章节  
- [调试脚本和 Web： 错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [调试脚本和 Web:错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
  [远程调试错误](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
  [附加错误](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))  
   
- [SQL 调试安装程序问题疑难解答](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))  
+ [SQL 调试安装程序疑难解答](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))  
   
- [调试 Visual c + + 常见问题](../debugger/debugging-native-code-faqs.md)  
+ [调试 Visual C++ 常见问题](../debugger/debugging-native-code-faqs.md)  
   
  [调试器安全](../debugger/debugger-security.md)

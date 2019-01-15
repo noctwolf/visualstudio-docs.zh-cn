@@ -1,8 +1,6 @@
 ---
 title: 将消息发送到输出窗口 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,14 +26,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02bdd2c6d83e13887a8051ab4101627ba14220fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 18ea526fdff312ce46cdb63b6c74e0e0a2600116
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724479"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53906743"
 ---
-# <a name="send-messages-to-the-output-window"></a>将消息发送到输出窗口
+# <a name="send-messages-to-the-output-window"></a>将消息发送到“输出”窗口
 
 可以将运行时消息写入**输出**窗口中使用<xref:System.Diagnostics.Debug>类或<xref:System.Diagnostics.Trace>类，该类是一部分的<xref:System.Diagnostics>类库。 使用<xref:System.Diagnostics.Debug>如果您只希望输出中类*调试*程序的版本。 使用<xref:System.Diagnostics.Trace>类，如果你想在这种输出*调试*并*发行*版本。  
   
@@ -59,8 +57,8 @@ ms.locfileid: "51724479"
 - 退出的线程。  
   
 ## <a name="see-also"></a>请参阅  
- [调试器安全](../debugger/debugger-security.md)   
+ [调试器安全性](../debugger/debugger-security.md)   
  [输出窗口](../ide/reference/output-window.md)   
  [跟踪和检测应用程序](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
- [C#F#，和 Visual Basic 项目类型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [调试托管的代码](../debugger/debugging-managed-code.md)
+ [C#、F# 和 Visual Basic 项目类型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [调试托管代码](../debugger/debugging-managed-code.md)

@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8f7371418df19ec8452334641c7c9414328e557
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 66a13ac6f23caa3e6ccf28d5d68c03b3fe7fdb4f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305008"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923869"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>如何：连接到服务中的数据
 
@@ -32,7 +31,7 @@ ms.locfileid: "52305008"
 在向导完成，服务引用添加到你的项目，并可立即在[数据源窗口](add-new-data-sources.md#data-sources-window)。
 
 > [!NOTE]
-> “数据源”**窗口中显示的项取决于该服务返回的信息。 某些服务可能没有为“数据源配置向导”**创建可绑定的对象提供足够的信息。 例如，如果该服务返回的非类型化数据集，显示任何项中**数据源**完成该向导时的窗口。 这是因为非类型化数据集不提供架构，所以该向导没有足够的信息来创建数据源。
+> “数据源”窗口中显示的项取决于该服务返回的信息。 某些服务可能没有为“数据源配置”向导创建可绑定的对象提供足够的信息。 例如，如果该服务返回的非类型化数据集，显示任何项中**数据源**完成该向导时的窗口。 这是因为非类型化数据集不提供架构，所以该向导没有足够的信息来创建数据源。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -53,7 +52,7 @@ ms.locfileid: "52305008"
 
 6.  单击 **“完成”**。
 
-     ** 数据源随即添加到{2&gt;“数据源”&lt;2}窗口中。
+     数据源随即添加到“数据源”窗口中。
 
 ## <a name="next-steps"></a>后续步骤
 

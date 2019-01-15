@@ -1,8 +1,6 @@
 ---
-title: COM 服务器和容器调试 |Microsoft 文档
-ms.custom: ''
+title: 调试 COM 服务器和容器 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -23,24 +21,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4c23d362a930f28ccb1a097de44a936e55cacf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 4e67d5ed5fbab83edb9b2aeea99e22a71c52424e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458172"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923976"
 ---
 # <a name="com-server-and-container-debugging"></a>调试 COM 服务器和容器
 COM 应用程序执行若干不直接受程序员控制的任务。 DLL 间的通信、对象的使用计数和剪贴板操作只是可能遇到意外行为的少数几个情况。 发生这种情况时，第一步是抓住问题的根源。  
   
  Visual Studio 调试器支持单步通过和单步执行容器和服务器。 这包括单步执行远程过程调用 (RPC) 的能力。  
   
-##  <a name="BKMK_COMServerandContainerintheSameSolution"></a> 调试 COM 服务器和同一解决方案中的容器  
+##  <a name="BKMK_COMServerandContainerintheSameSolution"></a> 使用同一解决方案调试 COM 服务器和容器  
  可以使用同一解决方案中的两个项目来调试 COM 服务器和容器。 在每个项目和调试中设置适当的断点。 当容器对服务器进行调用而遇到断点时，容器将一直等到服务器代码返回（即等到完成调试）。  
   
  调试 COM 容器类似于调试标准程序。 一个不同的情况是当调试生成回调的事件时（如在容器应用程序上拖动数据）。 这种情况下，必须在回调函数中设置断点。  
   
-##  <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> 调试没有容器信息的服务器应用程序  
+##  <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> 在没有容器信息的情况下调试服务器应用程序  
  如果不必或不想容器应用程序使用调试信息，那么开始调试服务器应用程序可分三步进行：  
   
 1.  像对待普通的应用程序一样开始调试服务器。  
@@ -50,11 +48,11 @@ COM 应用程序执行若干不直接受程序员控制的任务。 DLL 间的�
 3.  启动容器应用程序。  
   
 ##  <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> 调试服务器和域隔离 (SDI) 应用程序  
- 如果你正在调试的 SDI 服务器应用程序，你必须指定`/Embedding`或`/Automation`中**命令行自变量**中的属性*项目*属性页对话框中，C/c + +，C# 中，或Visual Basic 项目。  
+ 如果调试的是 SDI 服务器应用程序，对于 C/C++、C# 或 Visual Basic 项目，必须在“项目属性页”对话框中的“命令行参数”属性中指定 `/Embedding` 或 `/Automation`。  
   
  使用这些命令行自变量，调试器可以像从容器中启动服务器应用程序一样启动它。 从程序管理器或文件管理器启动容器将导致容器使用在调试器中启动的服务器实例。  
   
- 访问*项目*属性页对话框中，右键单击解决方案资源管理器中的项目，然后从快捷菜单选择属性。 若要找到“命令行自变量”属性，请展开“配置属性”类别并单击“调试”页。  
+ 若要访问“项目属性页”对话框，请在解决方案资源管理器中右键单击项目，然后从快捷菜单中选择“属性”。 若要找到“命令行自变量”属性，请展开“配置属性”类别并单击“调试”页。  
   
 ## <a name="see-also"></a>请参阅  
  [调试 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)

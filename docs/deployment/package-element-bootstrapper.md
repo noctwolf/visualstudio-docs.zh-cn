@@ -1,8 +1,6 @@
 ---
 title: '&lt;包&gt;元素 （引导程序） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49867ddc897a9c1a1241a891a3ba3de866d84688
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: df0972595710422294f9c37c5f0abad9c6e433ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899235"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868610"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;包&gt;元素 （引导程序）
 `Package`元素是包文件内的顶级 XML 元素。  
@@ -146,11 +144,11 @@ ms.locfileid: "49899235"
  `Package`元素是必需的。 它具有以下属性。  
 
 
-| 特性 | 描述 |
+| 特性 | 说明 |
 |--------------------| - |
-| `Culture` | 必须的。 定义用于此包，确定要使用的语言的区域性。 此属性是一个项`Strings`元素，它在安装过程中列出的产品名称和错误消息的特定于区域性的字符串。 |
-| `Name` | 必须的。 如向开发人员工具中显示的包的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 此属性是一个项`Strings`元素，它应包含`String`具有元素`Name`和`Culture`属性设置为匹配`Name`并`Culture`的属性`Package`。 |
-| `LicenseAgreement` | 可选。 在分发包，其中包含最终用户许可协议 (EULA) 中指定的文件的名称。  此文件可以是纯文本 (*.txt*) 或丰富文本格式。 (*.rtf*) |
+| `Culture` | 必需。 定义用于此包，确定要使用的语言的区域性。 此属性是一个项`Strings`元素，它在安装过程中列出的产品名称和错误消息的特定于区域性的字符串。 |
+| `Name` | 必需。 如向开发人员工具中显示的包的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 此属性是一个项`Strings`元素，它应包含`String`具有元素`Name`和`Culture`属性设置为匹配`Name`并`Culture`的属性`Package`。 |
+| `LicenseAgreement` | 可选。 在分发包，其中包含最终用户许可协议 (EULA) 中指定的文件的名称。  此文件可以是纯文本 (*.txt*) 或丰富文本格式。 (.rtf) |
 
 ## <a name="example"></a>示例  
  下面的代码示例显示了用于重新分发的完整包文件[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。  
@@ -191,4 +189,4 @@ ms.locfileid: "49899235"
 ```  
 
 ## <a name="see-also"></a>请参阅  
- [产品和包架构参考](../deployment/product-and-package-schema-reference.md)
+ [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

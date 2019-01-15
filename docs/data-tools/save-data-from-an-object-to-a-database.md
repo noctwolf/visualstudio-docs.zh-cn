@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1203b3b129b42ca65b94cd7a4b9cebf108740f4
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 76b2673e81bcf15227195a299711848100bcd499
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750944"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968587"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>将数据从对象保存到数据库
 
@@ -35,7 +34,7 @@ ms.locfileid: "50750944"
 > [!NOTE]
 > 在配置 TableAdapter 时，主查询必须提供足够的信息供`DBDirect`方法来创建。 例如，如果 TableAdapter 查询的数据配置不具有定义的主键列的表中，它不会生成`DBDirect`方法。
 
-|TableAdapter DBDirect 方法|描述|
+|TableAdapter DBDirect 方法|说明|
 | - |-----------------|
 |`TableAdapter.Insert`|将新记录添加到数据库并使您能够在各列的值作为方法参数中传递。|
 |`TableAdapter.Update`|更新现有数据库中的记录。 `Update`方法采用原始的和新列作为方法参数的值。 用于查找的原始记录的原始值和新值用于更新该记录。<br /><br /> `TableAdapter.Update`方法还用于协调回数据库的数据集的更改，通过采用<xref:System.Data.DataSet>， <xref:System.Data.DataTable>， <xref:System.Data.DataRow>，或数组<xref:System.Data.DataRow>的方法参数。|

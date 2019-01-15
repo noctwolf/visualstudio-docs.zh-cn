@@ -1,8 +1,6 @@
 ---
 title: 创建引导程序包
-ms.custom: ''
 ms.date: 05/02/2018
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -22,26 +20,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
-ms.translationtype: MT
+ms.openlocfilehash: 158befc5b401feb700a2effff7378b1edac6a2c9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512179"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878385"
 ---
 # <a name="create-bootstrapper-packages"></a>创建引导程序包
-安装程序是可以配置为检测和安装可再发行组件，如 Windows 安装程序的一般安装程序 (*.msi*) 文件和可执行程序。 安装程序也称为“引导程序”。 它通过一组 XML 清单进行编程，这些清单指定用于管理组件安装的元数据。  每个可再发行组件或必备组件，显示在**先决条件**ClickOnce 的对话框是一个引导程序包。 一个引导程序包是一组目录和文件，其中包含用于说明系统必备组件的安装方式的清单文件。 
+安装程序是可配置为检测并安装可再发行组件（如 Windows Installer (.msi) 文件和可执行程序）的一般安装程序。 安装程序也称为“引导程序”。 它通过一组 XML 清单进行编程，这些清单指定用于管理组件安装的元数据。  每个可再发行组件或必备组件，显示在**先决条件**ClickOnce 的对话框是一个引导程序包。 一个引导程序包是一组目录和文件，其中包含用于说明系统必备组件的安装方式的清单文件。 
   
-引导程序首先检测是否已安装所有系统必备组件。 如果未安装系统必备组件，引导程序将首先显示相关许可协议。 其次，最终用户接受许可协议之后，将开始安装系统必备组件。 否则，如果检测到所有的系统必备组件，引导程序将直接启动应用程序的安装程序。  
+引导程序首先检测是否已安装所有系统必备组件。 如果未安装系统必备组件，引导程序将首先显示相关许可协议。 接着，在最终用户接受许可协议后，将开始安装相应的系统必备组件。 否则，如果检测到所有的系统必备组件，引导程序将直接启动应用程序的安装程序。  
   
 ## <a name="create-custom-bootstrapper-packages"></a>创建自定义引导程序包  
-可以使用 Visual Studio 中的 XML 编辑器来生成引导程序清单。 若要查看创建引导程序包的示例，请参阅[演练： 创建带有隐私提示的自定义引导程序](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)。  
+可以使用 Visual Studio 中的 XML 编辑器来生成引导程序清单。 若要查看创建引导程序包的示例，请参阅[演练：创建带有隐私提示的自定义引导程序](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md)。  
   
 若要创建引导程序包，你必须创建产品清单，每个本地化版本的组件，包清单。
   
-* 产品清单*product.xml*，包含包的任何非特定于语言的元数据。 它包含可再发行组件的所有本地化版本通用的元数据。  若要创建此文件，请参阅[如何： 创建产品清单](../deployment/how-to-create-a-product-manifest.md)。
+* 产品清单*product.xml*，包含包的任何非特定于语言的元数据。 它包含可再发行组件的所有本地化版本通用的元数据。  若要创建此文件，请参阅[如何：创建产品清单](../deployment/how-to-create-a-product-manifest.md)
   
-* 包清单*package.xml*，包含特定于语言的元数据; 它通常包含本地化的错误消息。 必须至少为组件的每个本地化版本提供一个程序包清单。 若要创建此文件，请参阅[如何： 创建程序包清单](../deployment/how-to-create-a-package-manifest.md)。
+* 包清单*package.xml*，包含特定于语言的元数据; 它通常包含本地化的错误消息。 必须至少为组件的每个本地化版本提供一个程序包清单。 若要创建此文件，请参阅[如何：创建包清单](../deployment/how-to-create-a-package-manifest.md)
   
 在创建这两个文件之后，请将产品清单文件放置在一个依据自定义引导程序命名的文件夹中。 程序包清单文件将放置到一个依据区域设置命名的文件夹中。 例如，如果程序包清单文件针对的是英语版的再发行程序，请将该文件放置在一个名为 en 的文件夹中。 对于每个区域设置（如 ja 代表日语，de 代表德语）重复此过程。 最终的自定义引导程序包的文件夹结构将如下所示。  
 
@@ -60,7 +58,7 @@ ms.locfileid: "39512179"
         package.xml
     ```
   
-接下来，将可再发行文件复制到引导程序文件夹位置。 有关详细信息，请参阅[如何： 创建本地化的引导程序包](../deployment/how-to-create-a-localized-bootstrapper-package.md)。
+接下来，将可再发行文件复制到引导程序文件夹位置。 有关更多信息，请参见[如何：创建已本地化的引导程序包](../deployment/how-to-create-a-localized-bootstrapper-package.md)。
  
     *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
     
@@ -72,32 +70,32 @@ ms.locfileid: "39512179"
   
     *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
   
-在 64 位系统上使用以下注册表项：  
+在 64 位系统上，请使用以下注册表项：  
   
     *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
   
 每个可再发行组件均位于程序包目录下它们自己的子文件夹中。 产品清单和可再发行文件必须放入此子文件夹。 必须根据区域性名称命名的子文件夹中放置的组件和包清单的本地化的版本。  
   
-引导程序包这些文件复制到引导程序文件夹后，会自动出现在 Visual Studio**先决条件**对话框。 如果未显示自定义引导程序包，关闭并重新打开**先决条件**对话框。 有关详细信息，请参阅[系统必备组件对话框](../ide/reference/prerequisites-dialog-box.md)。  
+在将这些文件复制到引导程序文件夹中之后，相应的引导程序包将自动出现在 Visual Studio 的“系统必备”对话框中。 如果自定义引导程序包未显示，请关闭并重新打开“系统必备”对话框。 有关详细信息，请参阅 [“系统必备”对话框](../ide/reference/prerequisites-dialog-box.md)。  
   
 下表显示由引导程序自动填充的属性。  
   
-|属性|描述|  
+|Property|说明|  
 |--------------|-----------------|  
 |ApplicationName|应用程序的名称。|  
-|ProcessorArchitecture|可执行文件的目标平台的处理器和每字位数。 包括以下值：<br /><br /> -Intel<br />-IA64<br />-AMD64|  
+|ProcessorArchitecture|可执行文件的目标平台的处理器和每字位数。 包括以下值：<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
 |[Version9x](/windows/desktop/Msi/version9x)|Microsoft Windows 95、Windows 98 或 Windows ME 操作系统的版本号。 版本的语法是 Major.Minor.ServicePack。|  
-|[自](/windows/desktop/Msi/versionnt)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 操作系统的版本号。 版本的语法是 Major.Minor.ServicePack。|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 操作系统的版本号。 版本的语法是 Major.Minor.ServicePack。|  
 |[VersionMSI](/windows/desktop/Msi/versionmsi)|Windows 安装程序程序集 (msi.dll) 在安装过程中运行的版本。|  
 |[AdminUser](/windows/desktop/Msi/adminuser)|如果用户具有管理员特权，则设置此属性。 值为 true 或 false。|  
-|InstallMode|安装模式指示需要安装组件的位置。 包括以下值：<br /><br /> 从供应商的网站安装-HomeSite-先决条件。<br />从你选择的位置安装-SpecificSite-先决条件。<br />从与应用程序相同的位置安装-SameSite-先决条件。|  
+|InstallMode|安装模式指示需要安装组件的位置。 包括以下值：<br /><br /> -   HomeSite - 从供应商的网站安装系统必备组件。<br />-   SpecificSite - 从选定的位置安装系统必备组件。<br />-   SameSite - 从与应用程序相同的位置安装系统必备组件。|  
   
 ## <a name="separate-redistributables-from-application-installations"></a>从应用程序安装的独立可再发行组件  
 你可以阻止在安装项目中部署可再发行文件。 为此，请在 .NET Framework 目录的 RedistList 文件夹中创建一个可再发行文件列表：  
   
 `%ProgramFiles%\Microsoft.NET\RedistList`  
   
-可再发行组件列表是一个 XML 文件，您应使用以下格式命名： *\<公司名称 >。\<组件名称 >。RedistList.xml*。 因此，例如，如果该组件名为 DataWidgets 且由 Acme，使用*Acme.DataWidgets.RedistList.xml*。 可再发行文件列表的内容的示例可能像下面这样：  
+可再发行组件列表是一个 XML 文件，您应使用以下格式命名：*\<公司名称 >。\<组件名称 >。RedistList.xml*。 举例来说，如果组件名为 DataWidgets 且由 Acme 开发，则使用 Acme.DataWidgets.RedistList.xml。 可再发行文件列表的内容的示例可能像下面这样：  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -107,7 +105,7 @@ ms.locfileid: "39512179"
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 与 ClickOnce 应用程序安装的必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [系统必备组件对话框](../ide/reference/prerequisites-dialog-box.md)   
- [产品和包架构参考](../deployment/product-and-package-schema-reference.md)   
- [使用 Visual Studio 2005 引导程序来开始您的安装](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [如何：将系统必备与 ClickOnce 应用程序一起安装](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [“系统必备”对话框](../ide/reference/prerequisites-dialog-box.md)   
+ [产品和包架构引用](../deployment/product-and-package-schema-reference.md)   
+ [使用 Visual Studio 2005 引导程序来开始安装](http://go.microsoft.com/fwlink/?LinkId=107537)

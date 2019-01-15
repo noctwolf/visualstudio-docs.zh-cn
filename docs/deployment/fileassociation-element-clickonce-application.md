@@ -1,8 +1,6 @@
 ---
 title: '&lt;fileAssociation&gt;元素 （ClickOnce 应用程序） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62e099f949af3cc3ea336663224c1dd92726ac53
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 78cdb22f2d87b67d5a29e8031358193526fa4b71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080020"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866158"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;元素 （ClickOnce 应用程序）
 标识要与应用程序相关联的文件扩展。  
@@ -42,12 +40,12 @@ ms.locfileid: "39080020"
 ## <a name="elements-and-attributes"></a>元素和属性  
  `fileAssociation` 元素是可选的。 元素具有以下属性。  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`extension`|必须的。 要与应用程序相关联的文件扩展名。|  
-|`description`|必须的。 使用 shell 的文件类型的说明。|  
-|`progid`|必须的。 唯一标识文件类型的名称。|  
-|`defaultIcon`|必须的。 指定要使用此扩展名的文件的图标。 必须通过使用指定的图标文件[\<文件 > 元素](../deployment/file-element-clickonce-application.md)内[\<程序集 > 元素](../deployment/assembly-element-clickonce-application.md)，其中包含此元素。|  
+|`extension`|必需。 要与应用程序相关联的文件扩展名。|  
+|`description`|必需。 使用 shell 的文件类型的说明。|  
+|`progid`|必需。 唯一标识文件类型的名称。|  
+|`defaultIcon`|必需。 指定要使用此扩展名的文件的图标。 必须通过使用指定的图标文件[\<文件 > 元素](../deployment/file-element-clickonce-application.md)内[\<程序集 > 元素](../deployment/assembly-element-clickonce-application.md)，其中包含此元素。|  
   
 ## <a name="remarks"></a>备注  
  此元素必须包含的 XML 命名空间引用"urn： 架构-microsoft-com:clickonce.v1"。 如果`<fileAssociation>`元素，它必须出现后`<application>`元素中其父级[\<程序集 > 元素](../deployment/assembly-element-clickonce-application.md)。  

@@ -1,8 +1,6 @@
 ---
-title: 演练： 下载 ClickOnce 部署 API 使用设计器中使用按需程序集 |Microsoft Docs
-ms.custom: ''
+title: 演练：下载 ClickOnce 部署 API 使用设计器中使用按需程序集 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20df3172b2745a50f697b09ffe0bf95eaad4f39f
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 067591347a89b8a56d6e271614500c7d3880be80
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388996"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878596"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练： 下载 ClickOnce 部署 API 使用设计器中使用按需程序集
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：下载 ClickOnce 部署 API 使用设计器中使用按需程序集
 默认情况下， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序中包含的所有程序集都会在应用程序首次运行时进行下载。 但是，可能有一小部分用户使用部分应用程序。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将应用程序中的某些程序集标记为“可选”，以及如何在公共语言运行时需要它们时使用 <xref:System.Deployment.Application> 命名空间中的类下载它们。
 
 > [!NOTE]
@@ -81,11 +79,11 @@ ms.locfileid: "52388996"
 
 4.  展开“组”  下拉框，然后选择“新建” 。 输入名称 `ClickOnceLibrary` 作为新的组名称。
 
-5.  继续发布应用程序，如中所述[如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+5.  继续发布应用程序，如中所述[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>使用清单生成和编辑工具在 ClickOnce 应用程序中将程序集标记为可选 — 图形客户端 (MageUI.exe)
 
-1. 创建你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]清单中所述[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+1. 创建你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]清单中所述[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
 2. 关闭 MageUI.exe 之前，选择包含部署应用程序清单的选项卡，然后在该选项卡中选择“文件”  选项卡。
 
@@ -93,7 +91,7 @@ ms.locfileid: "52388996"
 
 ## <a name="test-the-new-assembly"></a>测试新程序集
 
-测试按需程序集
+测试按需程序集：
 
 1. 启动使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署的应用程序。
 

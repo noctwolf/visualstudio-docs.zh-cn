@@ -1,8 +1,6 @@
 ---
 title: 关于寄存器窗口 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5364bf8ba45e4b569649920175c6e94fc46128ed
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: a08b7f3731de490443cc56a418c75974bf9ff722
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561796"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53919529"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>有关 Visual Studio 中的寄存器窗口 (C#，c + +、 Visual Basic 中， F#)
 
@@ -52,5 +50,5 @@ ms.locfileid: "53561796"
  为避免杂乱，“寄存器”窗口中的寄存器按组显示。 右键单击“寄存器”窗口，可以看到一个包含组列表的快捷菜单，可根据需要显示或隐藏它。  
   
 ## <a name="see-also"></a>请参阅  
- [如何：使用寄存器窗口](../debugger/how-to-use-the-registers-window.md)   
+ [如何：使用“寄存器”窗口](../debugger/how-to-use-the-registers-window.md)   
  [初探调试器](../debugger/debugger-feature-tour.md)

@@ -1,8 +1,6 @@
 ---
 title: '&lt;compatibleFrameworks&gt;元素 （ClickOnce 部署） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -16,29 +14,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44329fc4c2ec5e9f2f8352d69ea487f23cbe3c5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: df45e5bc3f9294ac1a53353ec784d83c9220f1cf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077680"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900947"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt;元素 （ClickOnce 部署）
 标识此应用程序可在其上安装和运行的 .NET Framework 版本。  
   
 > [!NOTE]
->  [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)不支持`compatibleFrameworks`元素时保存应用程序清单已签名证书使用[ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。 相反，必须使用[ *Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。  
+>  [*MageUI.exe* ](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)不支持`compatibleFrameworks`元素时保存应用程序清单已签名证书使用[ *MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。 这种情况下必须使用 [Mage.exe](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。  
   
 ## <a name="syntax"></a>语法  
   
 ```xml  
 <compatibleFrameworks  
-      SupportUrl>   
+      SupportUrl>   
    <framework  
       targetVersion  
       profile  
       supportedRuntime  
-   />   
+   />   
 </ compatibleFrameworks>  
 ```  
   
@@ -47,18 +45,18 @@ ms.locfileid: "39077680"
   
  下表列出了该属性的`compatibleFrameworks`元素支持。  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
 |`S` `upportUrl`|可选。 指定首选的兼容.NET Framework 版本，可以下载的 URL。|  
   
 ## <a name="framework"></a>框架  
- 必须的。 下表列出了属性的`framework`元素支持。  
+ 必需。 下表列出了属性的`framework`元素支持。  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`targetVersion`|必须的。 指定的目标.NET Framework 的版本号。|  
-|`profile`|必须的。 指定目标.NET Framework 的配置文件。|  
-|`supportedRuntime`|必须的。 指定的目标.NET Framework 与相关联的运行时的版本号。|  
+|`targetVersion`|必需。 指定的目标.NET Framework 的版本号。|  
+|`profile`|必需。 指定目标.NET Framework 的配置文件。|  
+|`supportedRuntime`|必需。 指定的目标.NET Framework 与相关联的运行时的版本号。|  
   
 ## <a name="remarks"></a>备注  
   

@@ -223,21 +223,20 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
-ms.translationtype: MT
+ms.openlocfilehash: a02b82fbd3f32c2174d571ff923b8a219a66c9b6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932715"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>在论坛上的数据访问错误疑难解答
 
 在 Microsoft Developer Network (MSDN) 公共论坛中，可以找到有关对错误和警告进行疑难解答的帮助。 此处有一些与数据相关的论坛 MSDN 上：
 
-- [Windows 窗体数据控件和数据绑定](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
+- [Windows 窗体数据控制和数据绑定](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
 - [ADO.NET 数据集论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 

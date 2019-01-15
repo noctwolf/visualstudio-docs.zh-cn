@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findInlineeLinesByAddr |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbf31de5c3a20ecf21a8e293657d4ed3a7eff1e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a26692a7c8715150cad071b9c0871e0b8ad9e239
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925794"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896664"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
 检索一个枚举，它允许客户端可以循环访问的所有函数的内联，直接或间接地，由指定的父符号的行号信息且包含在指定的地址范围。  
@@ -25,7 +23,7 @@ ms.locfileid: "49925794"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT findInlineeLinesByAddr (   
+HRESULT findInlineeLinesByAddr (   
    IDiaSymbol*           parent,   DWORD                 isect,   DWORD                 offset,   DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  
 );  

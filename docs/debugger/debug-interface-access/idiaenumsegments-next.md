@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumsegments:: Next |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9966555c673904a423de1b215e438b5db15479
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 56ac8d4811cdad62f22d3d8101dc1530652bcb52
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951023"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889938"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
 检索指定的数目的枚举序列中的段。  
@@ -27,7 +25,7 @@ ms.locfileid: "49951023"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG         celt,   
    IDiaSegment** rgelt,  
    ULONG*        pceltFetched  
@@ -45,7 +43,7 @@ HRESULT Next (
  [out]返回在提取枚举器中的段数。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果没有更多的段。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果没有更多的段。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)   

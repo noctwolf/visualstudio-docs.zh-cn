@@ -1,8 +1,6 @@
 ---
-title: 如何： 指定调试器设置 |Microsoft Docs
-ms.custom: ''
+title: 如何：指定调试器设置 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,25 +19,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d309c8d0395869e1a86b4b01dfaba4245447bd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 454b6259a7417e66637a40ff09c4eb51536f19d8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847173"
 ---
 # <a name="how-to-specify-debugger-settings"></a>如何：指定调试器设置
-在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可为调试器行为指定各种设置，包括如何显示变量，是否显示某些警告，如何设置断点以及中断如何影响正在运行的程序。 在调试器中指定设置**选项**对话框。  
+在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可为调试器行为指定各种设置，包括如何显示变量，是否显示某些警告，如何设置断点以及中断如何影响正在运行的程序。 在“选项”对话框中可以指定调试器设置。  
   
 ### <a name="to-set-debugger-options"></a>设置调试器选项  
   
 1.  在 **“工具”** 菜单上，单击 **“选项”**。  
   
-2.  在中**选项**对话框中，打开**调试**文件夹。  
+2.  在“选项”对话框中打开“调试”文件夹。  
   
-3.  在中**调试**文件夹中，选择所需的选项的类别。  
+3.  在“调试”文件夹中选择所需选项的类别。  
   
-     最常用的选项位于**常规**类别。 有关详细信息，请参阅[General，Debugging，Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
+     最常用的选项位于“常规”类别中。 有关更多信息，请参见 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
   
 4.  选择或清除所需选项。 按 F1 可获得有关选项的帮助。  
   

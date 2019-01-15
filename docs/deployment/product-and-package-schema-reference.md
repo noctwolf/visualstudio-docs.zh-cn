@@ -1,8 +1,6 @@
 ---
 title: 产品和包架构引用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
@@ -27,19 +25,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fae53ad5143df91d74ad9c5e3cd19c1bdafd0da
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 4fe8a7e30c61105cc78d0e23ac35683e72e82ffc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080644"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53844664"
 ---
-# <a name="product-and-package-schema-reference"></a>产品和包架构参考
+# <a name="product-and-package-schema-reference"></a>产品和包架构引用
 一个*产品文件*是一个描述所有所需的外部依赖关系的 XML 清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 外部依赖关系的示例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft 数据访问组件 (MDAC)。 包文件类似于产品文件，但用于安装依赖于区域性的组件的依赖项，如本地化程序集、 许可协议和文档。  
   
  产品和包文件包含的顶级`Product`或`Package`元素，其中每个包含下列元素。  
   
-|元素|描述|特性|  
+|元素|说明|特性|  
 |-------------|-----------------|----------------|  
 |[\<产品 > 元素](../deployment/product-element-bootstrapper.md)|所需的产品文件的顶级元素。|无|  
 |[\<包 > 元素](../deployment/package-element-bootstrapper.md)|必需的包文件的顶级元素。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  

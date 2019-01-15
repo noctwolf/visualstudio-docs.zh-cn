@@ -1,8 +1,6 @@
 ---
 title: 部署 ClickOnce 应用程序进行测试和生产服务器无需重新签名 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,18 +19,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abfa170fe0f30cbc4fac941a6d77d0ac8b407f7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3622d7033ac334ad69a86ffb6e1ba6789658a1f7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846585"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53833117"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>无需重新签名部署 ClickOnce 应用程序测试和生产服务器
 本文介绍 ClickOnce 在.NET Framework 版本 3.5，而无需重新签名或更改 ClickOnce 使从多个网络位置的 ClickOnce 应用程序的部署清单中引入的一项功能。  
   
 > [!NOTE]
->  重新签名仍是用于部署新版本的应用程序的首选的方法。 只要有可能，使用重新签名的方法。 有关详细信息，请参阅[ *Mage.exe* （清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。  
+>  重新签名仍是用于部署新版本的应用程序的首选的方法。 只要有可能，使用重新签名的方法。 有关详细信息，请参阅 [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。  
   
  第三方开发人员和 Isv 可以选择启用此功能，使其客户更新他们的应用程序更轻松。 在以下情况下，可以使用此功能：  
   
@@ -52,17 +50,17 @@ ms.locfileid: "49846585"
   
  需要记住的重要一点是，应用程序排除`deploymentProvider`不能更改其安装位置期间更新，直到它们寄送包含的更新`deploymentProvider`再次标记。  
   
- 下面是两个示例来说明这一点。 在第一个示例中，发布 ClickOnce 应用程序不具有`deploymentProvider`标记，，并要求用户从 http://www.adatum.com/MyApplication/ 。 如果你决定想要发布的应用程序的下一个更新 http://subdomain.adatum.com/MyApplication/，没有任何办法来表明此驻留在的部署清单中的 http://www.adatum.com/MyApplication/ 。 您可以执行两个操作之一：  
+ 下面是两个示例来说明这一点。 在第一个示例中，发布 ClickOnce 应用程序不具有`deploymentProvider`标记，，并要求用户从 http://www.adatum.com/MyApplication/。 如果你决定想要发布的应用程序的下一个更新 http://subdomain.adatum.com/MyApplication/，没有任何办法来表明此驻留在的部署清单中的 http://www.adatum.com/MyApplication/。 您可以执行两个操作之一：  
   
 - 告知用户卸载以前的版本，并从新位置中安装新版本。  
   
-- 包括在更新 http://www.adatum.com/MyApplication/，其中包含 `deploymentProvider` 指向 http://www.adatum.com/MyApplication/ 。 然后，释放更高版本与另一个更新 `deploymentProvider` 指向 http://subdomain.adatum.com/MyApplication/ 。  
+- 包括在更新 http://www.adatum.com/MyApplication/，其中包含`deploymentProvider`指向 http://www.adatum.com/MyApplication/。 然后，释放更高版本与另一个更新`deploymentProvider`指向 http://subdomain.adatum.com/MyApplication/。  
   
   在第二个示例中，发布 ClickOnce 应用程序指定`deploymentProvider`，然后决定将其删除。 一次新版本而无需`deploymentProvider`下载客户端，您不能将重定向到之前发布了应用程序的版本，用于更新的路径`deploymentProvider`还原。 与第一个示例一样`deploymentProvider`最初必须指向当前的更新位置，而不是新位置。 在此情况下，如果你尝试插入`deploymentProvider`，是指 http://subdomain.adatum.com/MyApplication/，则下一次更新将失败。  
   
 ## <a name="create-a-deployment"></a>创建部署  
- 有关创建可从不同的网络位置部署的部署的分步指导，请参阅[演练： 手动部署 ClickOnce 应用程序，不需要重新签名并且保留署名信息](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
+ 有关创建可从不同的网络位置部署的部署的分步指导，请参阅[演练：手动部署 ClickOnce 应用程序，不需要重新签名并且保留署名信息](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [*Mage.exe* （清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
- [*MageUI.exe* （清单生成和编辑工具，图形化客户端）](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
+ [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
+ [MageUI.exe（图形化客户端中的清单生成和编辑工具）](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)

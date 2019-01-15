@@ -1,8 +1,6 @@
 ---
-title: 警告： 脚本调试已禁用 |Microsoft 文档
-ms.custom: ''
+title: 警告:脚本调试已禁用 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.scriptdisabled
@@ -17,27 +15,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d491d9c3b81f508523bf87d88c0bad27822e4c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9b2cff26e977d6d7e1079e558ed0dc40fa305f6c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53940435"
 ---
-# <a name="warning-script-debugging-disabled"></a>警告：脚本调试已禁用
+# <a name="warning-script-debugging-disabled"></a>警告:脚本调试已禁用
 脚本调试当前在 Internet Explorer 中禁用  
   
  尝试在未在 Internet Explorer 中启用脚本调试的情况下调试脚本时，会出现此警告。 出于安全考虑，默认情况下，Internet Explorer 禁用脚本调试。  
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>在 Internet Explorer 中启用脚本调试  
   
-1.  Internet explorer 的**工具**菜单上，选择**Internet 选项**。  
+1.  在 Internet Explorer 的“工具”菜单上选择“Internet 选项”。  
   
 2.  在“Internet 选项”  对话框中，单击“高级”  选项卡。  
   
-3.  上**高级**选项卡上，查看**设置**框中，**浏览**类别。  
+3.  在“高级”选项卡上，在“设置”框中查找“浏览”类别。  
   
-4.  清除**禁用脚本调试 (Internet Explorer)**。  
+4.  清除“禁用脚本调试(Internet Explorer)”。  
   
 5.  单击 **“确定”**。  
   

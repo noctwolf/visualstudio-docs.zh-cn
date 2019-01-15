@@ -1,8 +1,6 @@
 ---
-title: 演练： 调试因着色引起的呈现错误 |Microsoft Docs
-ms.custom: ''
+title: 演练：调试因着色引起的呈现错误 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 202f2fb0cdbfec6e52a2938365105f3d15327445
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c90143ae45fba3299cf3eccbcd412d768fcc3738
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920529"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828402"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>演练：调试因着色引起的呈现错误
 本演练演示如何使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]图形诊断工具调查由于着色器 bug 而错误着色的对象。  
@@ -52,7 +50,7 @@ ms.locfileid: "49920529"
   
 1. 打开“图形像素历史记录”  窗口。 在“图形诊断”  工具栏上，选择“像素历史记录” 。  
   
-2. 选择要检查的像素。 在图形日志文档窗口中，选择一个未正确着色的对象上的像素：  
+2. 选择要检查的像素。 在图形日志文档窗口上，选择未正确着色的对象上的某个像素：  
   
     ![选择一个像素会显示有关其历史记录的信息。](media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
   
@@ -62,7 +60,7 @@ ms.locfileid: "49920529"
   
     请注意，像素着色器的结果是完全不透明的黑色 （0，0，0，1），而**输出合并器**结合使用此像素着色器**上一步**这样的像素颜色的**结果**也是完全不透明的黑色。  
   
-   检查错误着色的像素并发现像素着色器输出不是预期的颜色后，可以使用 HLSL 调试器检查像素着色器，找出对象的颜色发生了什么情况。 你可以使用 HLSL 调试器检查 HLSL 变量在执行期间的状态，分步执行 HLSL 代码，并设置断点以帮助诊断问题。  
+   检查错误着色的像素并发现像素着色器输出不是预期的颜色后，可以使用 HLSL 调试器检查像素着色器，找出对象的颜色发生的问题。 你可以使用 HLSL 调试器检查 HLSL 变量在执行期间的状态，分步执行 HLSL 代码，并设置断点以帮助诊断问题。  
   
 #### <a name="to-examine-the-pixel-shader"></a>检查像素着色器  
   
@@ -84,7 +82,7 @@ ms.locfileid: "49920529"
   
 2. 找到顶点着色器的输出结构，它是像素着色器的输入。 在这种情况下，此结构名为 `output`。 检查顶点着色器代码，您会发现 `color` 结构的 `output` 成员已显式设置为完全不透明黑，可能是某人进行调试所产生的结果。  
   
-3. 确认绝不会从输入结构中复制颜色成员。 因为的值`output.color`设置为完全不透明的黑色之前`output`返回结构，它是一个好办法，确保值`output`上一行上不正确初始化。 在您看到 `output.color` 的值时，逐句通过顶点着色器代码，直至到达将 `output.color`设置为黑色的行。 请注意，在 `output.color` 设置为黑色之前，其值不进行初始化。 这可确认应修改而不是删除将 `output.color` 设置为黑色的代码行。  
+3. 确认绝不会从输入结构中复制颜色成员。 由于 `output.color` 的值仅在返回 `output` 结构之前设置为完全不透明黑，因此最好确保在上一行上没有正确初始化 `output` 的值。 在您看到 `output.color` 的值时，逐句通过顶点着色器代码，直至到达将 `output.color`设置为黑色的行。 请注意，在 `output.color` 设置为黑色之前，其值不进行初始化。 这可确认应修改而不是删除将 `output.color` 设置为黑色的代码行。  
   
     !["Output.color"的值为黑色。](media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")  
   

@@ -1,8 +1,6 @@
 ---
-title: 如何： 停止代码更改 |Microsoft Docs
-ms.custom: ''
+title: 如何：停止代码更改 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 24aa925ef22c7322e7c3a2531bcb8ee492981096
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903668"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843250"
 ---
 # <a name="how-to-stop-code-changes"></a>如何：停止代码更改
 当“编辑并继续”处于应用代码更改的过程中时，您可以停止该操作。  
@@ -34,7 +32,7 @@ ms.locfileid: "49903668"
   
 ### <a name="to-stop-applying-code-changes"></a>停止应用代码更改  
   
-- 选择**停止应用代码更改**从**调试**菜单。  
+- 从“调试”菜单中选择“停止应用代码更改”。  
   
   该菜单项仅在应用代码更改时才可见。  
   

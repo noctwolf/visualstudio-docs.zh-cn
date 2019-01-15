@@ -1,8 +1,6 @@
 ---
-title: IDiaSymbol::getSrcLineOnTypeDefn |Microsoft 文档
-ms.custom: ''
+title: IDiaSymbol::getSrcLineOnTypeDefn |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c2e105848a8c56f86eb71ef4c57dcd75c5f604
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3f0a185a04f1cbcfb6b8c53256d23e7beac22f50
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470597"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911034"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
-检索表示在其中定义指定的用户定义类型的源文件和行号。  
+检索表示指定的用户定义类型定义位置的源代码文件和行号。  
   
 ## <a name="syntax"></a>语法  
   
@@ -31,7 +29,7 @@ HRESULT getSrcLineOnTypeDefn(
   
 #### <a name="parameters"></a>参数  
  `ppResult`  
- [out]A`IDiaLineNumber`对象，其中包含源文件和行号其中的用户定义。  
+ [out]一个`IDiaLineNumber`对象，其中包含源文件和行号的用户定义。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  

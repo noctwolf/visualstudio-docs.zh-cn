@@ -1,8 +1,6 @@
 ---
 title: 可视化工具体系结构 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,29 +13,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e9c9f9012cc2811e0462586abe062e25a5478c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a7a4ac05283b010ca7a549c9bc6829061e420e30
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836601"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822944"
 ---
 # <a name="visualizer-architecture"></a>可视化工具体系结构
 调试器可视化工具的结构由两部分组成：  
   
-- *调试器端*程序在 Visual Studio 调试器中运行。 调试器端代码创建并显示可视化工具的用户界面。  
+- “调试器端”在 Visual Studio 调试器中运行。 调试器端代码创建并显示可视化工具的用户界面。  
   
-- *调试对象端*在 Visual Studio 正在调试的进程中运行 (*调试对象*)。  
+- “调试对象端”在 Visual Studio 正在调试的进程（“调试对象”）中运行。  
   
-  可视化工具是使调试器能够显示一个调试器组件 (*可视化*) 有意义且易于理解的窗体中的数据对象的内容。 某些可视化工具还支持数据对象编辑。 通过编写自定义可视化工具，可以扩展调试器的功能，使其能够处理你自己的自定义数据类型。  
+  可视化工具是一个调试器组件，借助它，调试器即可以一种有意义且易理解的方式将数据对象的内容显示（“可视化”）出来。 某些可视化工具还支持数据对象编辑。 通过编写自定义可视化工具，可以扩展调试器的功能，使其能够处理你自己的自定义数据类型。  
   
-  要可视化的数据对象位于要调试的进程内 (*调试对象*过程)。 用于显示数据的用户界面在 Visual Studio 调试器进程内创建：  
+  要进行可视化处理的数据对象位于要调试的进程（“调试对象”进程）中。 用于显示数据的用户界面在 Visual Studio 调试器进程内创建：  
   
 |调试器进程|调试对象进程|  
 |----------------------|----------------------|  
 |调试器用户界面（数据提示、监视窗口、快速监视）|要可视化的数据对象|  
   
- 若要在调试器界面中可视化数据对象，则需要一些代码，以实现两个进程间的通信。 由此可见，可视化工具体系结构由两个部分组成：*调试器端*代码和*调试对象端*代码。  
+ 若要在调试器界面中可视化数据对象，则需要一些代码，以实现两个进程间的通信。 由此可见，可视化工具的体系结构由两部分组成：“调试器端”代码和“调试对象端”代码。  
   
  调试器端代码用于创建其自身用户界面，该界面可从调试器界面调用，例如数据提示、监视窗口或快速监视。 可以使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 类和 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> 界面来创建可视化工具界面。 与所有的可视化工具 API 一样，DialogDebuggerVisualizer 和 IDialogVisualizerService 可在 <xref:Microsoft.VisualStudio.DebuggerVisualizers> 命名空间中找到。  
   
@@ -88,8 +86,8 @@ ms.locfileid: "49836601"
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> - 或 -<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 编写可视化工具](../debugger/how-to-write-a-visualizer.md)   
- [演练： 用 C# 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [演练： 用 Visual Basic 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
- [演练： 用 Visual Basic 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
+ [如何：编写可视化工具](/visualstudio/debugger/create-custom-visualizers-of-data)   
+ [演练：用 C# 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [演练：用 Visual Basic 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
+ [演练：用 Visual Basic 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [可视化工具安全注意事项](../debugger/visualizer-security-considerations.md)

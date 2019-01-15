@@ -1,8 +1,6 @@
 ---
-title: CRT 调试技术 |Microsoft 文档
-ms.custom: ''
+title: CRT 调试技术 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.debugging
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 890dec4a47a4dd49fa75521aaad068d331652a92
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 99edc41e86d492e8a38341917de1a5d7543dc93d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458422"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889106"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 调试方法
 如果调试使用 C 运行库的程序，这些调试方法可能会有用。  
@@ -36,7 +34,7 @@ ms.locfileid: "31458422"
  描述由 C 运行库提供的调试支持并提供有关访问这些工具的说明。  
   
  [用于报告的宏](../debugger/macros-for-reporting.md)  
- 相关信息提供 **_RPTn**和 **_RPTFn**宏 （在 CRTDBG 中定义。H)，它们取代了的`printf`语句进行调试。  
+ 提供有关 _RPTn 和 _RPTFn 宏（在 CRTDBG.H 中定义）的信息，它们取代了用于调试的 `printf` 语句。  
   
  [堆分配函数的调试版本](../debugger/debug-versions-of-heap-allocation-functions.md)  
  讨论堆分配函数的特殊“Debug”版本，包括：CRT 如何映射调用、显式调用它们的好处、如何避免转换、跟踪客户端块中单独的分配类型和不调用 _DEBUG 的结果。  

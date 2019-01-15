@@ -1,8 +1,6 @@
 ---
 title: 'Idiastackframe:: Get_cplusplusexceptionhandling |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca89decdad3a9cb7fdec221a515341639985dbda
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 98047835046342731d5c04f0370b5b1be37ac8c6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49936417"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53889497"
 ---
 # <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 检索一个标志，指示 c + + 异常处理有效。  
@@ -27,7 +25,7 @@ ms.locfileid: "49936417"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_cplusplusExceptionHandling (   
+HRESULT get_cplusplusExceptionHandling (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_cplusplusExceptionHandling (
  [out]返回`TRUE`如果 c + + 异常处理有效此帧中; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持的属性。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果不支持的属性。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
  C + + 异常处理不是结构化相同或系统异常处理。  

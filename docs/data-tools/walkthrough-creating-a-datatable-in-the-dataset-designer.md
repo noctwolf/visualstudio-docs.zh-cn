@@ -1,5 +1,5 @@
 ---
-title: 演练：在数据集设计器中创建数据表
+title: 演练：数据集设计器中创建数据表
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2cff383b6e06d8793a7730c36df01e2538b02c36
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 505c27787b033a6ccee9f89a19962d5fc81b9912
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174482"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824829"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>演练： 在数据集设计器中创建数据表
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>演练：在数据集设计器中创建数据表
 
 本演练说明了如何创建<xref:System.Data.DataTable>（不带 TableAdapter) 使用**数据集设计器**。 有关创建包含 Tableadapter 的数据表的信息，请参阅[创建和配置 Tableadapter](../data-tools/create-and-configure-tableadapters.md)。
 
@@ -29,7 +28,7 @@ ms.locfileid: "37174482"
 
 1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
 
-2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
+2. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
 
 3. 在中间窗格中，选择**Windows 窗体应用**项目类型。
 
@@ -39,7 +38,7 @@ ms.locfileid: "37174482"
 
 ## <a name="add-a-new-dataset-to-the-application"></a>将新的数据集添加到应用程序
 
-1.  上**项目**菜单中，选择**添加新项**。
+1.  在“项目”菜单上，选择“添加新项”。
 
      “添加新项”对话框随即出现。
 
@@ -63,7 +62,7 @@ ms.locfileid: "37174482"
 
 2.  名称列`SongID`。
 
-3.  在中**属性**窗口中，将<xref:System.Data.DataColumn.DataType%2A>属性设置为<xref:System.Int16?displayProperty=fullName>。
+3.  在“属性”  窗口中，将 <xref:System.Data.DataColumn.DataType%2A> 属性设置为 <xref:System.Int16?displayProperty=fullName>。
 
 4.  重复此过程，并添加以下列：
 

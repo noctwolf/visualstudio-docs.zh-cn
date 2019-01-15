@@ -1,8 +1,6 @@
 ---
 title: Dia2dump 示例 |Microsoft Docs
-ms.custom: ''
 ms.date: 07/24/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e44abdce737df335133d5e54b6b022c97f639a
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
-ms.translationtype: MT
+ms.openlocfilehash: 93c103387ff2acd7b041fc103bc519e9ac166593
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252276"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859641"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 示例
 
@@ -50,7 +48,7 @@ Dia2dump 示例随 Visual Studio 安装，并包含文件的解决方案和源�
 
 1. 在中**附加包含目录**属性中，选择下拉列表控件，然后选择**编辑**。
 
-1. 在中**附加包含目录**对话框中的，编辑字段中输入`$(VSInstallDir)DIA SDK\include`目录。 将此目录以保证编译器可以找到 dia2.h 文件添加。 选择**确定**以保存所做的更改。
+1. 在中**附加包含目录**对话框中的，编辑字段中输入`$(VSInstallDir)DIA SDK\include`目录。 将此目录以保证编译器可以找到 dia2.h 文件添加。 选择“确定”以保存更改。
 
 1. 选择**确定**若要将所做的更改保存到项目属性。
 

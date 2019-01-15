@@ -1,8 +1,6 @@
 ---
-title: 调试，选项对话框 |Microsoft 文档
-ms.custom: ''
+title: 选项对话框的调试 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -23,15 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 200b466699f5513c74740f871e926c86fd085909
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9de6c966a2b58cd603094a846238f2f91c80359b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935107"
 ---
 # <a name="debugging-options-dialog-box"></a>“选项”对话框 ->“调试”
-**调试**文件夹，请在**选项**对话框中，在**工具**菜单上，提供以下页，使您能够指定调试器工具选项。  
+“工具”菜单上的“选项”对话框中的“调试”文件夹提供以下页，可以使用它们来指定调试器工具选项。  
   
 -   [“选项”对话框 ->“调试”->“常规”](../debugger/general-debugging-options-dialog-box.md)  
   
@@ -39,7 +37,7 @@ ms.locfileid: "31472876"
   
 -   [“选项”对话框 ->“调试”->“输出”窗口](../debugger/output-window-debugging-options-dialog-box.md)  
   
--   [符号，调试，选项对话框](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+-   [“符号”、“调试”、“选项”对话框](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md) [Visual Studio 中调试](../debugger/index.md)  

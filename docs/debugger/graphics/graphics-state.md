@@ -1,8 +1,6 @@
 ---
-title: 图形状态 |Microsoft 文档
-ms.custom: ''
+title: 图形状态 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b45e5d922a5f2ed5a2ba15086c708c734d25e95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 80a69c1da16e8e43c1a306a8659bb8e41bed21e7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476375"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968097"
 ---
 # <a name="graphics-state"></a>图形状态
 Visual Studio 图形诊断中的“状态”窗口可帮助你了解当前事件（如绘图调用）时为活动状态的图形状态。  
@@ -28,7 +26,7 @@ Visual Studio 图形诊断中的“状态”窗口可帮助你了解当前事件
 ### <a name="state-views"></a>状态视图  
  你可以通过多种不同方式查看状态表：  
   
-|视图|描述|  
+|视图|说明|  
 |----------|-----------------|  
 |API 输入状态视图|此视图将以类似于构成状态的 Direct3D 对象的布局显示状态。|  
 |逻辑输入状态视图|此视图在逻辑视图中显示状态，该逻辑视图不会映射构成状态的 Direct3D 对象的布局。|  
@@ -38,21 +36,21 @@ Visual Studio 图形诊断中的“状态”窗口可帮助你了解当前事件
   
 -   在“状态”窗口中标题栏下面的左上方，选择对应于你想要使用的状态视图样式的按钮。  
   
-    -   **显示 API 输入的状态视图**  
+    -   **显示 API 输入状态视图**  
   
     -   **显示逻辑状态视图**  
   
     -   **显示固定状态视图**  
   
 > [!IMPORTANT]
->  你必须将状态固定到**显示 API 输入状态**或**显示逻辑状态**为其显示在视图**显示固定状态视图**。  
+>  必须固定“显示 API 输入状态”或“显示逻辑状态”视图中的状态，以便它在“显示固定状态视图”中显示。  
   
 ### <a name="state-table-format"></a>状态表格式  
  “状态”窗口显示了多个信息列。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
-|名称|状态项的名称。 如果此项表示状态的捆绑包，则可以展开该项以显示它。<br /><br /> 在**API 输入状态视图**和**逻辑状态视图**状态，缩进名称以显示状态之间的层次结构关系。<br /><br /> 在**固定状态视图**状态时，在平面列表中显示完全限定的名称。|  
+|name|状态项的名称。 如果此项表示状态的捆绑包，则可以展开该项以显示它。<br /><br /> 在“API 输入状态视图”和“逻辑状态视图”状态中，缩进名称以显示状态之间的层次结构关系。<br /><br /> 在“固定状态视图”状态中，完全限定名显示在简单列表中。|  
 |值|状态项的值。|  
 |类型|状态项的类型。|  
   

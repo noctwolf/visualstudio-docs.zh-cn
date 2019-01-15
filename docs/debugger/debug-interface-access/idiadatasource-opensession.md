@@ -1,8 +1,6 @@
 ---
 title: 'Idiadatasource:: Opensession |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8266102e8bc2c347ed8a554a3c64d9504f1e863b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bea16f7ff0f723979ded9962a8ff9e620227f8ea
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933503"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53843107"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 将打开一个会话，用于查询符号。  
@@ -27,7 +25,7 @@ ms.locfileid: "49933503"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT openSession (   
+HRESULT openSession (   
    IDiaSession** ppSession  
 );  
 ```  
@@ -39,10 +37,10 @@ HRESULT openSession (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。  
   
-|“值”|描述|  
+|“值”|说明|  
 |-----------|-----------------|  
 |E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)对象之前尚未初始化了一个来源为符号。|  
-|E_INVALIDARG|无效`ppSession`参数。|  
+|E_INVALIDARG|`ppSession` 参数无效。|  
 |E_OUTOFMEMORY|内存不足，无法打开会话。|  
   
 ## <a name="remarks"></a>备注  

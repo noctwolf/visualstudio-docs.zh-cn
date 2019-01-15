@@ -1,8 +1,6 @@
 ---
 title: 什么是 Visual Studio 2017 中调试器的新增功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 01/22/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,33 +18,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 342cb6c1f014c94bd86363415177ec747b0dc1b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fee8523f48dd94b0ebeacd87dd7d04f6fa172a91
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898133"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>什么是调试器中的新增功能 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 调试器包括这些新功能：
 
-- 15.5 中中的新增功能**快照调试器**感兴趣的代码执行时，获取在生产中的应用的快照。 要指示调试程序拍摄快照，可在代码中设置 snappoints 和 logpoints。 使用调试程序，可精确查看出错的内容，而不影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
+- 15.5 中的新增功能：当执行感兴趣的代码时，快照调试程序会为生产中的应用拍摄快照。 要指示调试程序拍摄快照，可在代码中设置 snappoints 和 logpoints。 使用调试程序，可精确查看出错的内容，而不影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
 
     快照集合适用于在 Azure App Service 中运行的以下 Web 应用：
 
   * 在 .NET Framework 4.6.1 或更高版本上运行的 ASP.NET 应用程序。
   * 在 Windows 中的 .Net Core 2.0 或更高版本上运行的 ASP.NET Core 应用程序。
 
-    有关详细信息，请参阅[调试实时 ASP.NET 应用中使用快照调试程序](../debugger/debug-live-azure-applications.md)。
+    有关详细信息，请参阅[使用 Snapshot Debugger 调试实时 ASP.NET 应用](../debugger/debug-live-azure-applications.md)。
 
 - 仅在 Visual Studio Enterprise 15.5 中的新增**IntelliTrace 后退**单步执行事件也会自动编制每个断点和调试程序应用程序的快照。 凭借记录的快照便可以返回到上一个断点或步骤，并查看当时应用程序的状态。 如果希望查看以前的应用程序状态，但不想重新启动调试或重新创建所需应用状态，使用 IntelliTrace 后退可以节省时间。
 
     可以通过使用调试工具栏中的“后退”和前进”按钮浏览和查看快照。 这些按钮用于浏览“诊断工具”窗口中“事件”选项卡上显示的事件。
 
-    ![单步执行向后和向前按钮](../debugger/media/intellitrace-step-back-icons-description.png  "后退一步和前进按钮")
+    ![“后退”和“前进”按钮](../debugger/media/intellitrace-step-back-icons-description.png  "Step Backward and Forward buttons")
 
-    有关详细信息，请参阅[检查上一应用程序状态使用 IntelliTrace](../debugger/view-historical-application-state.md)页。
+    有关详细信息，请参阅[使用 IntelliTrace 检查上一应用状态](../debugger/view-historical-application-state.md)页。
 
 - **异常帮助器**替换异常助手，将出现在错误发生位置的非模式对话框。 **异常帮助程序**提供更快地访问任何内部异常，调试器使用 （如果可用），其他分析和立即访问**异常设置**异常。 异常帮助器还可以拖动到浮点视图，如果它阻止您需要查看的内容。
 

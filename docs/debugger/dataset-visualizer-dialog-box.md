@@ -1,8 +1,6 @@
 ---
-title: 数据集可视化工具对话框 |Microsoft 文档
-ms.custom: ''
+title: 数据集可视化工具对话框 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: caa7e79ed33871cbcd816cd09edfe84b167e1702
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 29cbefaa2993b894b9868b6719ecf5fde1d832e1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457262"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985298"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>“数据集可视化工具”对话框
 使用数据集可视化工具可以查看 DataSet、DataTable、DataView 或 DataViewManager 对象的内容。 通过在调试器变量窗口或数据提示中单击这些对象之一的“值”旁显示的放大镜图标，可以访问此可视化工具。  
@@ -43,4 +41,4 @@ ms.locfileid: "31457262"
  [调试器安全](../debugger/debugger-security.md)   
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)   
  [调试器窗口](../debugger/debugger-windows.md)   
- [在数据提示中查看数据值](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
+ [查看数据提示中的数据值](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

@@ -1,8 +1,6 @@
 ---
 title: 调试 LINQ |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8511c3ac9efd79b712680bfe3f9d5611f3c5aa9c
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 13c6b8eb4db3448b52ace999f379eab7bea20523
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349421"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871000"
 ---
 # <a name="debugging-linq"></a>调试 LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支持对语言集成查询 (LINQ) 代码进行调试，但是有一些限制。 大多数调试功能都使用 LINQ 语句，其中包括单步执行、设置断点以及在调试器窗口中查看结果。 本主题介绍 LINQ 调试的主要限制。  
@@ -34,7 +32,7 @@ ms.locfileid: "51349421"
 ##  <a name="BKMK_ViewingLINQResults"></a> 查看 LINQ 结果  
  使用数据提示功能、“监视”窗口和“快速监视”对话框，可以查看 LINQ 语句的结果。 在使用源窗口时，可以将指针停放在源窗口中的某个查询上，这样会出现“数据提示”。 可以将一个 LINQ 变量复制并粘贴到“监视”窗口或“快速监视”对话框中。  
   
- 在 LINQ 中，查询不会在创建或声明时进行计算，而只在使用时才进行计算。 因此，查询经过计算后才具有值。 有关查询创建和计算的完整说明，请参阅[LINQ 查询 (C#) 简介](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)或[编写你的第一个 LINQ 查询](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query)。  
+ 在 LINQ 中，查询不会在创建或声明时进行计算，而只在使用时才进行计算。 因此，查询经过计算后才具有值。 有关查询创建和计算的完整说明，请参阅[LINQ 查询简介 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)或[编写您的第一个 LINQ 查询](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query)。  
   
  若要显示某个查询的结果，调试器必须计算该查询。 在调试器中查看 LINQ 查询结果时，这种隐式计算具有的某些影响，应当加以考虑：  
   
@@ -106,12 +104,12 @@ End Function
   
  修改后的查询在每次遍历 `IsEven` 时都会调用函数 `items`。 你可以使用调试器窗口来查看每个“item”是否满足指定条件，并且可以单步执行 `IsEven` 中的代码。 此示例中的谓词相当简单。 但是，如果必须调试一个更复杂的谓词，这种技术也会十分有用。  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> 编辑并继续 LINQ 不支持  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> LINQ 不支持“编辑并继续”  
  编辑并继续支持对 LINQ 查询与限制的更改。 有关详细信息，请参阅[EnC 受支持的更改](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>请参阅
 
-- [SQL 调试](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6\(v\=vs.100\))
+- [调试 SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6\(v\=vs.100\))
 - [管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)
 - [LINQ 查询简介 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)
 - [Visual Basic 中的 LINQ 简介](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)

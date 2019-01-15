@@ -1,8 +1,6 @@
 ---
 title: 'Idiasectioncontrib:: Get_read |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40919422ebdb60a6262d57958e961b1312f6fba4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6a7e4dd66a04ba74d097ddec0b9a2e379317ab28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861355"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948662"
 ---
 # <a name="idiasectioncontribgetread"></a>IDiaSectionContrib::get_read
 检索一个标志，指示是否可以读取部分。  
@@ -27,7 +25,7 @@ ms.locfileid: "49861355"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_read (   
+HRESULT get_read (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_read (
  [out]返回`TRUE`如果可以读取部分; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

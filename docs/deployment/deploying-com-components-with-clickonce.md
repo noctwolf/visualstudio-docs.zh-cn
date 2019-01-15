@@ -1,8 +1,6 @@
 ---
 title: 使用 ClickOnce 部署 COM 组件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348742"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888447"
 ---
-# <a name="deploy-com-components-with-clickonce"></a>将 COM 组件与 ClickOnce 部署
+# <a name="deploy-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 组件
 旧的 COM 组件的部署具有传统上是一个困难的任务。 组件需要全局注册，因此可能会导致重叠的应用程序之间的意外副作用。 这种情况下通常不是.NET Framework 应用程序中的问题由于完全独立于应用程序或组件的并行兼容。 Visual Studio，可部署在 Windows XP 或更高版本的操作系统上的独立的 COM 组件。  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供了一种简单而安全的机制，用于部署.NET 应用程序。 但是，如果您的应用程序使用旧的 COM 组件，您需要采取其他步骤进行部署。 本主题介绍如何部署独立的 COM 组件并引用本机组件 （例如，从 Visual Basic 6.0 或 Visual c + +）。  
@@ -139,7 +137,7 @@ ms.locfileid: "51348742"
   
 2. 在发布向导中，在本地计算机的磁盘，则可以访问并检查已发布的文件中指定的位置。  
   
-3. 单击**完成**发布应用程序。  
+3. 单击“完成”以发布应用程序。  
   
    如果您检查已发布的文件，您将注意 sysmon.ocx 文件是包含。 该控件是控件的完全独立于此应用程序，这意味着，如果最终用户的计算机已使用不同版本的另一个应用程序，将不会影响与此应用程序。  
   
@@ -165,7 +163,7 @@ ms.locfileid: "51348742"
   
 - 该组件管理系统，例如，设备驱动程序的打印后台处理程序的物理或虚拟设备。  
   
-- 该组件是可再发行组件的数据访问。 数据应用程序通常需要单独的数据的访问可再发行组件才能运行安装。 不应尝试隔离组件，如 Microsoft ADO 数据控件、 Microsoft OLE DB 或 Microsoft 数据访问组件 (MDAC)。 相反，如果你的应用程序使用 MDAC 或 SQL Server Express，您应该将它们设置为系统必备组件;请参阅[如何： 与 ClickOnce 应用程序的安装必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
+- 该组件是可再发行组件的数据访问。 数据应用程序通常需要单独的数据的访问可再发行组件才能运行安装。 不应尝试隔离组件，如 Microsoft ADO 数据控件、 Microsoft OLE DB 或 Microsoft 数据访问组件 (MDAC)。 相反，如果你的应用程序使用 MDAC 或 SQL Server Express，您应该将它们设置为系统必备组件;请参阅[如何：将系统必备与 ClickOnce 应用程序一起安装](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)  
   
   在某些情况下，可能会使组件开发人员重新设计免注册 com。 如果无法做到这一点，仍可以生成和发布应用程序依赖于它们通过使用引导程序的标准注册方案。 有关详细信息，请参阅[创建引导程序包](../deployment/creating-bootstrapper-packages.md)。  
   

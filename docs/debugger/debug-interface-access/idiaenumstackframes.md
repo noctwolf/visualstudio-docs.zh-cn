@@ -1,8 +1,6 @@
 ---
-title: IDiaEnumStackFrames |Microsoft 文档
-ms.custom: ''
+title: IDiaEnumStackFrames |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,21 +12,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64539a1f10cfa2a263e36095cea40e58244ef6d8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1aef0291b4048cf7b673ec9b2791b3b6b6c00846
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459787"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53879648"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
-枚举各种可用的堆栈帧。  
+枚举可用的各种堆栈帧。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
-|方法|描述|  
+|方法|说明|  
 |------------|-----------------|  
-|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|从枚举序列中检索指定的数量的堆栈帧元素。|  
+|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|枚举序列中检索指定的数量的堆栈帧元素。|  
 |[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|将枚举序列重置到开头。|  
   
 ## <a name="remarks"></a>备注  
@@ -37,7 +35,7 @@ ms.locfileid: "31459787"
  通过调用来获取此接口[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)或[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)方法。  
   
 ## <a name="example"></a>示例  
- 此示例演示如何获取和使用`IDiaEnumStackFrames`接口。 请参阅[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)接口的实现的`PrintStackFrame`函数。  
+ 此示例演示如何获取和使用`IDiaEnumStackFrames`接口。 请参阅[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)接口的实现`PrintStackFrame`函数。  
   
 ```C++  
 void DumpStackFrames(IDiaStackWalker*     pStackWalker,  
@@ -65,14 +63,14 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 ```  
   
 ## <a name="requirements"></a>要求  
- 标头： Dia2.h  
+ 标头：dia2.h  
   
  库： diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>请参阅  
- [接口 （调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   
  [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)   
  [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)

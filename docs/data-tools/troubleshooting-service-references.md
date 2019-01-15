@@ -95,7 +95,7 @@ ms.locfileid: "53919464"
 
 若要解决此错误，请禁用 RSS 源：
 
-1.  在 Internet Explorer 中，单击“工具”菜单中的“Internet 选项”。**
+1.  在 Internet Explorer 中，单击“工具”菜单中的“Internet 选项”。
 
 2.  上**内容**选项卡上，在**馈送**部分中，单击**设置**。
 

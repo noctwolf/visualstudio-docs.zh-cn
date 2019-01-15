@@ -1,8 +1,6 @@
 ---
 title: 字符串可视化工具中查看字符串 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/10/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -22,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb447a29ea669dbea3a68312884760f8984cc2de
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d4808e1a6f3086e15162bf2f25c1df369ab90866
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388551"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53901225"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>在 Visual Studio 中的字符串可视化工具中查看字符串
 
 在 Visual Studio 中进行调试时，可以使用内置字符串可视化工具查看字符串。 字符串可视化工具显示对于数据提示或调试器窗口而言过长的字符串。 它还可以帮助识别格式错误的字符串。
 
-内置字符串可视化工具包括纯文本、XML、HTML 和 JSON 选项。 还可以从 **“自动”** 或其他调试器窗口打开一些其他类型的可视化工具，例如 WPF 对象。
+内置字符串可视化工具包括纯文本、 XML、 HTML 和 JSON 选项。 您还可以从打开几个其他类型，如 WPF 对象可视化工具**自动**或其他调试器窗口。
 
 ## <a name="open-a-string-visualizer"></a>打开字符串可视化工具
 
@@ -43,9 +41,9 @@ ms.locfileid: "52388551"
 
 ## <a name="view-string-visualizer-data"></a>查看字符串可视化工具数据
 
-在字符串可视化工具窗口中，“**表达式**”字段显示当前悬停在其上方的变量或表达式，“**值**”字段显示字符串值。
+在字符串可视化工具窗口中，**表达式**字段显示的变量或表达式要悬停，并**值**字段显示的字符串值。
 
-空白“**值**”意味着所选的可视化工具不能识别该字符串。 例如，“**XML 可视化工具**”为没有 XML 标记的文本字符串或 JSON 字符串显示空白“**值**”。
+空白**值**意味着所选的可视化工具不能识别该字符串。 例如， **XML 可视化工具**显示空白**值**无 XML 标记，一个文本字符串或 JSON 字符串。
 
 若要查看所选的可视化工具无法识别的字符串，请选择**文本可视化工具**。 **文本可视化工具**显示纯文本。
 

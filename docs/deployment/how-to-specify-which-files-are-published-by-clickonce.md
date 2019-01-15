@@ -1,8 +1,6 @@
 ---
-title: 如何： 指定通过 ClickOnce 发布的文件 |Microsoft Docs
-ms.custom: ''
+title: 如何：指定通过 ClickOnce 发布的文件 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efe2e5ab9f2074c1706f14ac52f655921af4b9a2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: e11c336f891ae71968a3b325a66a50d4d9a79446
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080459"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53826950"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>如何： 指定通过 ClickOnce 发布的文件
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>如何：指定通过 ClickOnce 发布的文件
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]随应用程序部署项目中的应用程序，所有非代码文件。 在某些情况下，可能不希望或需要发布某些文件，或者可能想要安装某些基于条件的文件。 Visual Studio 提供的功能，若要排除的文件，将文件标记为数据文件或系统必备组件，并创建用于条件性安装的文件组。  
   
  文件，以[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在中管理应用程序**应用程序文件**对话框中，可通过访问**发布**页**项目设计器**。  
@@ -39,7 +37,7 @@ ms.locfileid: "39080459"
   
 -   例如，SQL 数据库数据文件 (*.mdf*并 *.mdb*) 文件和 XML 文件将被标记为数据文件默认情况下。  
   
--   程序集的引用 (*.dll*文件) 时添加引用，如下所示指定： 如果**Copy Local**是**False**，作为必备组件的默认标记程序集 (**必备组件 （自动）**) 之前安装了应用程序必须位于 GAC 中。 如果**Copy Local**是**True**，该程序集标记为应用程序程序集默认情况下 (**包括 （自动）**) 和要复制到位于安装的应用程序文件夹。 COM 引用将显示在**应用程序文件**对话框中 (作为 *.ocx*文件) 仅当其**独立**属性设置为**True**。 默认情况下，它将被包含。  
+-   程序集的引用 (*.dll*文件) 时添加引用，如下所示指定：如果**Copy Local**是**False**，默认情况下作为系统必备程序集标记 (**必备组件 （自动）**) 之前安装了应用程序必须位于 GAC 中。 如果**Copy Local**是**True**，该程序集标记为应用程序程序集默认情况下 (**包括 （自动）**) 和要复制到位于安装的应用程序文件夹。 COM 引用将显示在**应用程序文件**对话框中 (作为 *.ocx*文件) 仅当其**独立**属性设置为**True**。 默认情况下，它将被包含。  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>若要将文件添加到应用程序文件对话框  
   
@@ -51,7 +49,7 @@ ms.locfileid: "39080459"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**应用程序文件**按钮以打开**应用程序文件**对话框。  
   
@@ -63,7 +61,7 @@ ms.locfileid: "39080459"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**应用程序文件**按钮以打开**应用程序文件**对话框。  
   
@@ -75,7 +73,7 @@ ms.locfileid: "39080459"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**应用程序文件**按钮以打开**应用程序文件**对话框。  
   
@@ -87,7 +85,7 @@ ms.locfileid: "39080459"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**应用程序文件**按钮以打开**应用程序文件**对话框。  
   
@@ -104,7 +102,7 @@ ms.locfileid: "39080459"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**应用程序文件**按钮以打开**应用程序文件**对话框。  
   
@@ -117,4 +115,4 @@ ms.locfileid: "39080459"
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

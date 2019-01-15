@@ -1,8 +1,6 @@
 ---
 title: 设置调试和发布配置 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.builds
@@ -33,24 +31,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a65a3331c210bdfb4143ff890180fdc7d663229
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 33b33f25b1049afcf71a67af02927e25887d1621
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257220"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837753"
 ---
-# <a name="set-debug-and-release-configurations-in-visual-studio"></a>设置调试和发布 Visual Studio 中的配置
+# <a name="set-debug-and-release-configurations-in-visual-studio"></a>在 Visual Studio 中设置调试和发布配置
 
 Visual Studio 项目具有针对你的程序的单独发布和调试配置。 生成用于调试的调试版本和最终发布分发的版本。
 
 在调试配置中，您的程序将编译使用完整符号调试信息，不进行优化。 优化会使调试复杂化，因为源代码和生成的指令之间的关系更加复杂。
 
-您的程序的发布配置具有任何符号调试信息进行了完全优化。 调试信息可以生成.pdb 文件中[具体取决于编译器选项](#BKMK_symbols_release)的使用。 创建.pdb 文件可能很有用，如果您稍后必须调试发行版本。
+您的程序的发布配置具有任何符号调试信息进行了完全优化。 [根据使用的编译器选项](#BKMK_symbols_release)，可在 .pdb 文件中生成调试信息。 创建.pdb 文件可能很有用，如果您稍后必须调试发行版本。
 
 有关生成配置的详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)。
 
-你可以将生成配置从**生成**菜单中的，从工具栏中，或在项目属性页。 项目属性页是特定于语言的。 下面的过程演示如何从菜单和工具栏更改生成配置。 有关如何更改中采用不同语言的项目的生成配置的详细信息，请参阅[另请参阅](#see-also)下面一节。
+可以从“生成”菜单、从工具栏或在项目的属性页中更改生成配置。 项目属性页是特定于语言的。 下面的过程演示如何从菜单和工具栏更改生成配置。 有关如何更改中采用不同语言的项目的生成配置的详细信息，请参阅[另请参阅](#see-also)下面一节。
 
 ## <a name="change-the-build-configuration"></a>更改生成配置
 
@@ -60,7 +58,7 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
 
 或
 
-* 在工具栏中，选择**调试**或**发行**从**解决方案配置**列表。
+* 在工具栏上，从“解决方案配置”列表选择“调试”或“发布”。
 
   ![工具栏生成配置](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
@@ -69,13 +67,13 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
 您可以选择生成符号 (.pdb) 文件以及调试要包含的信息。 对于大多数项目类型，编译器将生成默认情况下调试的符号文件和发布版本，而其他默认设置因项目类型和 Visual Studio 版本而异。
 
 > [!IMPORTANT]
-> 调试器只会为可执行文件加载与该可执行文件生成之时所创建的 .pdb 文件完全匹配的 .pdb 文件（即该 .pdb 文件必须是原始 .pdb 文件或其副本）。 有关详细信息，请参阅[为什么 Visual Studio 要求调试器符号文件完全匹配与同时生成的二进制文件？](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+> 调试器只会为可执行文件加载与该可执行文件生成之时所创建的 .pdb 文件完全匹配的 .pdb 文件（即该 .pdb 文件必须是原始 .pdb 文件或其副本）。 有关详细信息，请参阅 [为什么 Visual Studio 要求调试器符号文件必须与同时生成的二进制文件完全匹配？](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
 
 每个项目类型可能具有不同的方式设置这些选项。
 
-### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>生成 C#、 ASP.NET 或 Visual Basic 项目的符号文件
+### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>生成的符号文件C#，ASP.NET 或 Visual 基本项目
 
-在 C# 或 Visual Basic 调试配置的项目设置的详细信息，请参阅[调试配置适用于 C# 项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)或[项目设置适用于 Visual Basic 调试配置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+有关详细信息中的调试配置的项目设置C#或 Visual Basic，请参阅[项目设置为C#调试配置](../debugger/project-settings-for-csharp-debug-configurations.md)或[项目的 Visual Basic 调试设置配置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)。
 
 1. 在“解决方案资源管理器”中，选择项目。
 
@@ -89,9 +87,9 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
 
 6. 在中**调试信息**列表 (或**生成调试信息**在 Visual Basic 中的列表)，选择**完整**， **pdb**，或**可移植**。
 
-   可移植的格式是为.NET Core 的最新的跨平台格式。 有关选项的详细信息，请参阅[高级生成设置对话框 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。
+   可移植格式是.NET Core 的最新的跨平台格式。 有关选项的详细信息，请参阅[高级生成设置对话框 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。
 
-   ![在 C# 中生成的生成 Pdb](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   ![为在云中生成的 Pdb C# ](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
 7. 生成你的项目。
 

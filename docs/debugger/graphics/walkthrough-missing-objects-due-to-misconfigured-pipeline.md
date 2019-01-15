@@ -1,8 +1,6 @@
 ---
-title: 演练： 因而缺少对象管线 |Microsoft Docs
-ms.custom: ''
+title: 演练：因配置错误管道而缺少对象 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
@@ -10,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e313b7db1306465bce530eea41e875227abc0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4619876794abb07a76a38af78d21e51f8a1e86dc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49855178"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863964"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>演练：因管线误配置而缺少对象
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>演练：因管道误配置而缺少对象
 本演练演示如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具来调查由于未设置的像素着色器而缺失的对象。  
   
  此演练阐释了以下任务：  
@@ -73,7 +71,7 @@ ms.locfileid: "49855178"
   
 #### <a name="to-examine-device-context"></a>检查设备上下文  
   
-1. 打开“d3d11 设备上下文” 。 在**图形管道阶段**窗口中，选择**ID3D11DeviceContext**链接，属于的`DrawIndexed`显示在窗口顶部的调用。  
+1. 打开“d3d11 设备上下文” 。 在“图形管道阶段”窗口中，选择属于显示在窗口顶部的 `DrawIndexed` 调用的“ID3D11DeviceContext”链接。  
   
 2. 检查显示在“d3d11 设备上下文”  选项卡的设备状态，以确认绘制调用期间没有像素着色器处于活动状态。 在此方案中，“着色器常规信息” （显示在“像素着色器状态” 下）指示着色器为“NULL” ：  
   

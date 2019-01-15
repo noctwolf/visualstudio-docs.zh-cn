@@ -1,8 +1,6 @@
 ---
-title: 如何： 单步执行 WCF 服务 |Microsoft Docs
-ms.custom: ''
+title: 如何：单步执行 WCF 服务 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cad65b893867a18133bbf9492a1c1786b24a81ed
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f361369aef97aaa894a1a1929149356d3177cc3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49912157"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53890730"
 ---
 # <a name="how-to-step-into-wcf-services"></a>如何：单步执行 WCF 服务
 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中，可以单步执行 WCF 服务。 如果 WCF 服务与客户端位于同一 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中，则可以命中 WCF 服务内部的断点。  
@@ -34,7 +32,7 @@ ms.locfileid: "49912157"
   
 1. 创建一个同时包含 WCF 客户端和 WCF 服务项目的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案。  
   
-2. 在解决方案资源管理器，右键单击 WCF 客户端项目，然后单击**设为启动项目**。  
+2. 在解决方案资源管理器中，右键单击“WCF 客户端”项目，再单击“设为启动项目”。  
   
 3. 在 app.config 或 web.config 文件中启用调试。 有关详细信息，请参阅[WCF 调试的限制](../debugger/limitations-on-wcf-debugging.md)。  
   
@@ -45,4 +43,4 @@ ms.locfileid: "49912157"
 ## <a name="see-also"></a>请参阅  
  [调试 WCF 服务](../debugger/debugging-wcf-services.md)   
  [WCF 调试的限制](../debugger/limitations-on-wcf-debugging.md)   
- [如何：调试自托管的 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+ [如何：调试自托管 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

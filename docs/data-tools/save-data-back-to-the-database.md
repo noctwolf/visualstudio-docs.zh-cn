@@ -19,15 +19,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ef3d2b5fd9f5172a79daef185d7153905976ba88
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916902"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989120"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 
@@ -43,13 +42,13 @@ ms.locfileid: "49916902"
 
 如果您熟悉使用 Tableadapter，您可以直接跳转到以下主题之一：
 
-|主题|描述|
+|主题|说明|
 |-----------|-----------------|
 |[将新记录插入数据库](../data-tools/insert-new-records-into-a-database.md)|如何执行更新和插入使用 Tableadapter 或命令对象|
 |[使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)|如何执行与 Tableadapter 的更新|
 |[分层更新](../data-tools/hierarchical-update.md)|如何从具有两个或多个相关表的数据集执行的更新|
 |[处理并发异常](../data-tools/handle-a-concurrency-exception.md)|如何在两个用户尝试同时更改相同的数据在数据库中时处理异常|
-|[如何： 使用事务保存数据](../data-tools/save-data-by-using-a-transaction.md)|如何将数据保存在事务中使用的系统。 事务命名空间和 TransactionScope 对象|
+|[如何：使用事务保存数据](../data-tools/save-data-by-using-a-transaction.md)|如何将数据保存在事务中使用的系统。 事务命名空间和 TransactionScope 对象|
 |[将数据保存在事务中](../data-tools/save-data-in-a-transaction.md)|创建 Windows 窗体应用程序来演示保存到数据库在事务内的数据的演练|
 |[将数据保存到数据库（多个表）](../data-tools/save-data-to-a-database-multiple-tables.md)|如何编辑记录并将更改保存回数据库的多个表中|
 |[将数据从对象保存到数据库](../data-tools/save-data-from-an-object-to-a-database.md)|如何将数据传递到数据库的数据集在不是使用 TableAdapter DbDirect 方法的对象从|
@@ -72,21 +71,21 @@ ms.locfileid: "49916902"
 
 当合并数据集，您可以传递布尔参数 (`preserveChanges`)，它告诉<xref:System.Data.DataSet.Merge%2A>方法是否保留在目标数据集中的现有修改。 由于数据集维护记录的多个版本，务必要时刻牢记合并多个记录的版本。 下表显示了如何合并两个数据集中的记录：
 
-|DataRowVersion|目标数据集|源数据集|
+|DataRowVersion|目标数据库|源数据集|
 | - | - | - |
 |原始|James Wilson|James C.Wilson|
 |当前|Jim Wilson|James C.Wilson|
 
 调用<xref:System.Data.DataSet.Merge%2A>方法使用了上表`preserveChanges=false targetDataset.Merge(sourceDataset)`将导致以下数据：
 
-|DataRowVersion|目标数据集|源数据集|
+|DataRowVersion|目标数据库|源数据集|
 | - | - | - |
 |原始|James C.Wilson|James C.Wilson|
 |当前|James C.Wilson|James C.Wilson|
 
 调用<xref:System.Data.DataSet.Merge%2A>方法替换`preserveChanges = true targetDataset.Merge(sourceDataset, true)`将导致以下数据：
 
-|DataRowVersion|目标数据集|源数据集|
+|DataRowVersion|目标数据库|源数据集|
 | - | - | - |
 |原始|James C.Wilson|James C.Wilson|
 |当前|Jim Wilson|James C.Wilson|
@@ -127,7 +126,7 @@ ms.locfileid: "49916902"
 
 下表详细说明的可能值<xref:System.Data.DataRowState>枚举：
 
-|DataRowState 值|描述|
+|DataRowState 值|说明|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|行添加到的项作为<xref:System.Data.DataRowCollection>。 (处于此状态的行不具有相应的原始版本，因为它不存在时最后一个<xref:System.Data.DataRow.AcceptChanges%2A>调用方法)。|
 |<xref:System.Data.DataRowState.Deleted>|使用已删除该行<xref:System.Data.DataRow.Delete%2A>的<xref:System.Data.DataRow>对象。|
@@ -141,7 +140,7 @@ ms.locfileid: "49916902"
 
 下表详细说明的可能值<xref:System.Data.DataRowVersion>枚举：
 
-|DataRowVersion 值|描述|
+|DataRowVersion 值|说明|
 | - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|一条记录的当前版本包含在上次记录执行的所有修改<xref:System.Data.DataRow.AcceptChanges%2A>调用。 如果行已被删除，则没有当前版本。|
 |<xref:System.Data.DataRowVersion.Default>|一条记录，定义数据集架构或数据源的默认值。|
@@ -226,7 +225,7 @@ ms.locfileid: "49916902"
 - 数据在后端，通过将数据发送到数据源 — 例如，数据库，并使其能够接受或拒绝数据。 如果您正在使用的数据库，具有复杂的功能来验证数据并提供错误的信息，这可以是一个实用的方法，因为可以验证无论它是从哪里的数据。 但是，这种方法可能不适合特定于应用程序的验证要求。 此外，让数据源验证数据可能会导致大量的往返到数据源，具体取决于你的应用程序如何由后端引发的验证错误的解决方法。
 
    > [!IMPORTANT]
-   > 使用与数据命令时<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>属性设置为<xref:System.Data.CommandType.Text>，仔细检查并向其传递到数据库之前从客户端发送的信息。 恶意用户可能会尝试发送 （注入） 已修改或其他 SQL 语句，以获得未经授权的访问或破坏数据库。 将内容传输到数据库的用户输入之前，始终验证信息有效。 它是始终使用参数化的查询或存储的过程时可能是最佳做法。
+   > 使用与数据命令时<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>属性设置为<xref:System.Data.CommandType.Text>，仔细检查并向其传递到数据库之前从客户端发送的信息。 恶意用户会设法发送（注入）经过修改或附加的 SQL 语句，企图对数据库进行未经授权的访问或破坏数据库。 将内容传输到数据库的用户输入之前，始终验证信息有效。 它是始终使用参数化的查询或存储的过程时可能是最佳做法。
 
 ## <a name="transmit-updates-to-the-data-source"></a>传输到数据源的更新
 
@@ -281,4 +280,4 @@ ms.locfileid: "49916902"
 - [使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)
 - [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [验证数据](validate-data-in-datasets.md)
-- [如何： 添加、 修改和删除实体 (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [如何：添加、 修改和删除实体 (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

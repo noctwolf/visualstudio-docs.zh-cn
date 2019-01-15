@@ -1,8 +1,6 @@
 ---
 title: '&lt;RelatedProducts&gt;元素 （引导程序） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.MissingDependency
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c541a9775025183a3b3ffbf21ef5b72c3f00cc87
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 2ad76eb01e17f76bff0f1f81941675ad670a24ff
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077798"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967380"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;元素 （引导程序）
 `RelatedProducts`元素定义取决于或当前产品中包含其他产品。  
@@ -59,7 +57,7 @@ ms.locfileid: "39077798"
   
  `DependsOnProduct` 具有以下属性。  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
 |`Code`|所含的产品，由指定的代号`ProductCode`属性的`Product`元素。 有关详细信息，请参阅[\<产品 > 元素](../deployment/product-element-bootstrapper.md)。|  
   
@@ -71,7 +69,7 @@ ms.locfileid: "39077798"
   
  `IncludesProduct` 具有以下属性。  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
 |`Code`|所含的产品，由指定的代号`ProductCode`属性的`Product`元素。 有关详细信息，请参阅[\<产品 > 元素](../deployment/product-element-bootstrapper.md)。|  
   

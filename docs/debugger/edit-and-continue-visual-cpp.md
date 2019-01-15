@@ -1,8 +1,6 @@
 ---
 title: 编辑并继续 （Visual c + +） |Microsoft Docs
-ms.custom: ''
 ms.date: 05/31/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,21 +17,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e468f75abbadbe46ea973a5c04d2e286fcfaca5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5be5c3cb48f2cd9846c9b40c967cf830c30f4d8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867697"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922989"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 可以使用 Visual C++ 项目中的“编辑并继续”。 请参阅[支持的代码更改 （c + +）](../debugger/supported-code-changes-cpp.md)有关限制的编辑并继续的信息。
   
 有关 Visual Studio 2015 Update 3 的改进的详细信息，请参阅[c + + 编辑并继续在 Visual Studio 2015 Update 3](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)。  
   
- [/Zo （增强优化调试）](/cpp/build/reference/zo-enhance-optimized-debugging)在 Visual Studio 2013 Update 3 中引入的编译器选项将其他信息添加到.pdb （符号） 文件以二进制文件的编译而无需[/Od （禁用 （调试））](https://msdn.microsoft.com/library/aafb762y.aspx)选项。  
+ 在 Visual Studio 2013 Update 3 中引入的 [/Zo（增强优化调试）](/cpp/build/reference/zo-enhance-optimized-debugging)编译器选项将其他信息添加到 .pdb（符号）文件中，用于未使用 [/Od（禁用（调试））](https://msdn.microsoft.com/library/aafb762y.aspx)选项进行编译的二进制文件。  
   
- **/Zo**禁用编辑并继续。 请参阅[如何： 调试优化的代码](../debugger/how-to-debug-optimized-code.md)。  
+ **/Zo**禁用编辑并继续。 请参阅[操作说明：调试优化的代码](../debugger/how-to-debug-optimized-code.md)。  
   
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> 启用或禁用“编辑并继续”  
  如果要对代码进行编辑而又不希望在当前调试会话过程中应用这些编辑，则可以禁用自动调用“编辑并继续”。 也可以重新启用“编辑并继续”的自动操作。
@@ -45,18 +43,18 @@ ms.locfileid: "49867697"
 
 2. 在 **“工具”** 菜单上，选择 **“选项”**。
   
-3. 在中**选项**对话框中，选择**调试 > 常规**。
+3. 在“选项”对话框中，选择“调试”>“常规”文件夹。
 
 4. 若要启用，请选择**启用编辑并继续**。 若要禁用，请清除该复选框。
   
 5. 在“编辑并继续”  组中，选中或取消选中“启用本机编辑并继续”  复选框。  
   
-   更改此设置将影响进行的所有项目。 更改此设置后，不必重新生成应用程序。 如果生成应用程序从命令行或从生成文件，但在 Visual Studio 环境中调试，则可以仍使用编辑并继续如果您设置 **/ZI**选项。  
+   更改此设置将影响进行的所有项目。 更改此设置后，不必重新生成应用程序。 如果从命令行或从生成文件生成应用程序但在 Visual Studio 环境中调试，则在设置了 /ZI 选项的情况下，仍可以使用“编辑并继续”。  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> 如何显式应用代码更改  
  在 Visual C++ 中，“编辑并继续”可以以两种方法应用代码更改。 代码更改可在选择执行命令时隐式应用，也可使用 **“应用代码更改”** 命令显式应用。  
   
- 当显式应用代码更改时，程序保持在中断模式-不会执行。  
+ 当显式应用代码更改时，程序保持在中断模式下，不会执行。  
   
 -   若要显式应用代码更改，在 **调试** 菜单上，选择 **应用代码更改**。  
   
