@@ -22,7 +22,7 @@ ms.locfileid: "53838302"
 本主题介绍如何配置 Windows 防火墙以启用 Windows 10，8/8.1 和 7; 上的远程调试和 Windows Server 2012 R2、 2012年和 2008 R2 计算机。 Visual Studio 和远程计算机无需运行相同的操作系统。 例如，Visual Studio 计算机可以运行 Windows 10，而远程计算机可以运行 Windows Server 2012 R2。      
   
 >[!NOTE]
->有关配置 Windows 防火墙的说明略有不同，在不同操作系统上和较旧版本的 Windows。 Windows 8/8.1、 Windows 10 和 Windows Server 2012 设置使用单词*应用程序*，而 Windows 7 和 Windows Server 2008 使用单词*程序*。  
+>对于不同的操作系统和旧版 Windows，配置 Windows 防火墙的说明略有不同。 Windows 8/8.1、Windows 10 和 Windows Server 2012 设置使用“*应用*”一词，而 Windows 7 和 Windows Server 2008 使用“*程序*”一词。  
 
 ## <a name="configure-ports-for-remote-debugging"></a>配置用于远程调试的端口  
 
@@ -30,9 +30,9 @@ Visual Studio 和远程调试器会尝试在安装或启动期间打开正确的
 
 **若要打开的端口：**
   
-1. 在 Windows 中**启动**菜单中，搜索并打开**高级安全 Windows 防火墙**。 在 Windows 10 中，这是**具有高级安全性的 Windows Defender 防火墙**。
+1. 在 Windows“开始”菜单中，搜索并打开“高级安全 Windows 防火墙”。 在 Windows 10 中，则是“高级安全性 Windows Defender 防火墙”。
    
-1. 对于新的传入端口，选择**入站规则**，然后选择**新规则**。 对于传出的规则，请选择**出站规则**相反。
+1. 对于新的传入端口，选择“入站规则”，然后选择“新规则”。 对于传出端口，则选择“出站规则”。
 
 1. 在中**新建入站规则向导**，选择**端口**，然后选择**下一步**。 
    
@@ -84,7 +84,7 @@ Visual Studio 和远程调试器会尝试在安装或启动期间打开正确的
   
 ### <a name="allow-and-configure-the-remote-debugger-through-windows-firewall"></a>配置并允许远程调试器通过 Windows 防火墙 
   
-1. 在 Windows 中**启动**菜单中，搜索并打开**Windows 防火墙**，或**Windows Defender 防火墙**。 
+1. 在 Windows“开始”菜单中，搜索并打开“Windows 防火墙”或“Windows Defender 防火墙”。  
   
 1. 选择**允许通过 Windows 防火墙的应用程序**。  
   
@@ -100,9 +100,9 @@ Visual Studio 和远程调试器会尝试在安装或启动期间打开正确的
   
 如果不能将远程调试器附加到应用，请确保远程调试的防火墙端口、协议、网络类型和应用设置是否都正确。 
 
-- 在 Windows 中**启动**菜单中，搜索并打开**Windows 防火墙**，然后选择**允许的应用程序通过 Windows 防火墙**。 请确保**远程调试器**或**Visual Studio 远程调试器**将出现在**允许的应用程序和功能**列出了与所选的复选框和正确的网络类型选择。 如果不是，[添加正确的应用和设置](#configure-remote-debugging-through-windows-firewall)。
+- 在 Windows“开始”菜单中，搜索并打开“Windows 防火墙”，然后选择“允许应用通过 Windows 防火墙”。 请确保“远程调试器”或“Visual Studio 远程调试器”出现在“允许的应用和功能”列表中并且其复选框已选中，同时选择了网络类型。 如果不是这样，请[添加正确的应用和设置](#configure-remote-debugging-through-windows-firewall)。
   
-- 在 Windows 中**启动**菜单中，搜索并打开**高级安全 Windows 防火墙**。 请确保**远程调试器**或**Visual Studio 远程调试器**下将显示**入站规则**(和 （可选），**出站规则**)使用一个绿色的复选标记图标，和的所有设置都均正确。 
+- 在 Windows“开始”菜单中，搜索并打开“高级安全 Windows 防火墙”。 请确保“远程调试器”或“Visual Studio 远程调试器”在“入站规则”和“出站规则”（可选）下显示并带有绿色的复选标记图标，以及确保所有设置正确。 
   
   - 若要查看或更改规则设置，请右键单击**远程调试器**应用程序在列表中，选择**属性**。 使用**属性**选项卡来启用或禁用规则，或更改端口号、 协议或网络类型。 
   - 如果规则列表中看不到远程调试器应用[添加并配置了正确的端口](#configure-ports-for-remote-debugging)。 
