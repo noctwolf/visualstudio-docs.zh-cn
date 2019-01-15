@@ -1,5 +1,5 @@
 ---
-title: 格式说明符在调试器中 （c + +） |Microsoft Docs
+title: 调试器中的格式说明符 (C++) | Microsoft Docs
 ms.date: 11/20/2018
 ms.topic: conceptual
 f1_keywords:
