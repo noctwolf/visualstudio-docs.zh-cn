@@ -1,8 +1,6 @@
 ---
-title: 如何： 在消息视图中的消息搜索 |Microsoft Docs
-ms.custom: ''
+title: 如何：消息在消息视图中搜索 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Message Search dialog box
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c00eea2034651298ff62bc50741971fc0369a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1b92cee00b93541ddc75a4c3210d77c61a82f640
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844908"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863376"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>如何：在消息视图中搜索消息
 可以通过将其句柄、 类型或消息 ID 用作搜索条件来搜索特定的消息在消息视图中。 其中的任何一 — 或组合 — 将是有效的搜索条件。 此外可以指定搜索的初始传递方向。 在对话框中的字段是预先加载了当前所选消息的属性。  

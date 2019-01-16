@@ -3,7 +3,6 @@ title: 了解如何调试多线程应用程序
 description: 使用 Visual Studio 中的并行堆栈和并行监视窗口进行调试
 ms.custom: H1HackMay2017
 ms.date: 11/16/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a6ded522a917dd7207da7731850303535e19fdb
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948980"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863285"
 ---
 # <a name="get-started-debugging-multithreaded-applications"></a>开始调试多线程应用程序
 Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线程应用程序。 本教程演示如何使用线程标记**并行堆栈**窗口中，**并行监视**窗口中，条件断点，并筛选器断点。 完成本教程将使您熟悉用于调试多线程应用程序的 Visual Studio 功能。
@@ -35,11 +34,11 @@ Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线
 
 这两个主题提供有关使用其他多线程调试工具的其他信息：
 
-- 若要使用**调试位置**工具栏和**线程**窗口中，请参阅[演练： 调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
+- 若要使用**调试位置**工具栏和**线程**窗口中，请参阅[演练：调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
 
-- 有关使用的示例<xref:System.Threading.Tasks.Task>（托管代码） 和并发运行时 （c + +），请参阅[演练： 调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)。 有关适用于最多线程应用程序类型的常规调试提示，读取该主题和此。
+- 有关使用的示例<xref:System.Threading.Tasks.Task>（托管代码） 和并发运行时 （c + +），请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)。 有关适用于最多线程应用程序类型的常规调试提示，读取该主题和此。
   
-首先需要一个多线程应用程序项目。 以下是一个示例。  
+首先需要一个多线程应用程序项目。 下面是一个示例。  
   
 ## <a name="create-a-multithreaded-app-project"></a>创建一个多线程应用程序项目  
   
@@ -47,7 +46,7 @@ Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线
   
      此时将出现 “新建项目” 对话框。  
   
-2.  选择一种语言：**可视化C#** ， **Visual c + +**，或**Visual Basic**。  
+2.  选择语言**Visual C#** ， **Visual c + +**，或**Visual Basic**。  
   
 3.  下**Windows 桌面**，选择**控制台应用**。  
   
@@ -194,7 +193,7 @@ Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线
     End Class
     ```
   
-7.  上**文件**菜单中，选择**全部保存**。  
+7.  在“文件”菜单上，选择“全部保存”。  
   
 ## <a name="debug-the-multithreaded-app"></a>调试多线程应用程序  
   
@@ -258,7 +257,7 @@ Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线
     您可以执行各种操作从这些右键单击菜单中，但对于本教程中我们将显示多个中的这些详细信息**并行监视**窗口 （下一节）。
 
     > [!NOTE]
-    > 若要查看列表视图，每个线程上的信息，请使用**线程**窗口相反。 请参阅[演练： 调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
+    > 若要查看列表视图，每个线程上的信息，请使用**线程**窗口相反。 请参阅[演练：调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
 
 ### <a name="set-a-watch-on-a-variable"></a>对变量设置监视
 
@@ -346,5 +345,5 @@ Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线
 ## <a name="see-also"></a>请参阅  
 [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
 [如何：在调试时切换到另一个线程](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[如何： 使用并行堆栈窗口](../debugger/using-the-parallel-stacks-window.md)  
+[如何：使用并行堆栈窗口](../debugger/using-the-parallel-stacks-window.md)  
 [如何：使用“并行监视”窗口](../debugger/how-to-use-the-parallel-watch-window.md)  

@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a0b540eb6f8e8c09845e069275a0a901c2809806
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886366"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270289"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
 域特定语言 (DSL) 解决方案将生成一个 API，可用于读取和更新 Visual Studio 中的 dsl 的实例。 此 API 将定义在从 DSL 定义生成的代码中。 本主题介绍了生成的 API。
@@ -191,7 +191,7 @@ ms.locfileid: "53886366"
 
  `CommandSet.cs`
 
- 在关系图上可见的上下文菜单命令。 可以改写此集或向其添加项。 此文件包含命令的代码。 菜单上的命令的位置由 Commands.vsct 文件确定。 有关详细信息，请参阅[编写用户命令和操作](../modeling/writing-user-commands-and-actions.md)。
+ 右键单击菜单命令在关系图上可见的。 可以改写此集或向其添加项。 此文件包含命令的代码。 菜单上的命令的位置由 Commands.vsct 文件确定。 有关详细信息，请参阅[编写用户命令和操作](../modeling/writing-user-commands-and-actions.md)。
 
  `Constants.cs`
 
@@ -281,7 +281,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- 如关系图上下文菜单中，菜单上查找标准菜单命令**编辑**菜单中，依次类推。 命令的代码是 CommandSet.cs。 可以重定位或修改标准命令，并可以添加自己的命令。 有关详细信息，请参阅[编写用户命令和操作](../modeling/writing-user-commands-and-actions.md)。
+ 如关系图快捷 （上下文） 菜单中，菜单上找到的标准菜单命令**编辑**菜单中，依次类推。 命令的代码是 CommandSet.cs。 可以重定位或修改标准命令，并可以添加自己的命令。 有关详细信息，请参阅[编写用户命令和操作](../modeling/writing-user-commands-and-actions.md)。
 
  `ModelExplorer.cs`
 
@@ -291,7 +291,7 @@ namespace Company.EmbedInForm
 
  如果想要使模型资源管理器中的选择与关系图选择保持同步，可使用以下代码：
 
-```
+```csharp
 protected override void OnSelectionChanged(global::System.EventArgs e)
 {
 base.OnSelectionChanged(e);

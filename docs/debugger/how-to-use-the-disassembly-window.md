@@ -2,7 +2,6 @@
 title: 在调试器中查看反汇编代码 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/30/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c35432bdd01b9b79c2afaa266d8078caf04bd62b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c3af42271e3d08a7910c1eae01bcd6563e46dda1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063831"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922213"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器中查看反汇编代码 (C#，c + +、 Visual Basic 中， F#)
 
@@ -57,7 +56,7 @@ ms.locfileid: "53063831"
 
 若要在其原始的数字格式，而不是作为程序集语言，请查看计算机代码的说明，请使用**内存**窗口或 select**代码字节**的快捷菜单中**反汇编**窗口。
 
-## <a name="use-the-disassembly-window"></a>使用反汇编窗口
+## <a name="use-the-disassembly-window"></a>使用“反汇编”窗口
 
 若要启用**反汇编**窗口下**工具** > **选项**(或**工具** >  **选项**) >**调试**，选择**启用地址级调试**。
 
@@ -74,4 +73,4 @@ ms.locfileid: "53063831"
 
 * [在内存中向上或向下翻页](../debugger/how-to-page-up-or-down-in-memory.md)
 * [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)
-* [如何：使用寄存器窗口](../debugger/how-to-use-the-registers-window.md)
+* [如何：使用“寄存器”窗口](../debugger/how-to-use-the-registers-window.md)

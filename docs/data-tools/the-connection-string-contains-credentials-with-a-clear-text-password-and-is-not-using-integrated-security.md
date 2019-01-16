@@ -7,24 +7,23 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bcd459208529441022669e799e3c59b16b4ef682
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 2f7d9c945d3e8897114f165464c0823cce3ceeae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854747"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>连接字符串包含的凭据具有明文密码并且未使用集成安全性
 
-是否要将此敏感信息随连接字符串一起保存到当前 DBML 文件和应用程序配置文件中?  单击**否**保存不包含敏感信息的连接字符串。
+是否要将此敏感信息随连接字符串一起保存到当前 DBML 文件和应用程序配置文件中?  单击“否”可在保存连接字符串时不保存敏感信息。
 
 在使用包含敏感信息（连接字符串中包含的密码）的数据连接时，可以选择将敏感信息随连接字符串一起保存到项目 DBML 文件和应用程序配置文件中，或者选择不保存敏感信息。
 
 > [!WARNING]
-> 显式设置**连接**属性**应用程序设置**属性设置为**False**将密码添加到 DBML 文件。
+> 将“连接”属性“应用程序设置”属性显式设置为“False”可将密码添加到 DBML 文件中。
 
 ## <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>将敏感信息随连接字符串一起保存在项目的应用程序设置中
 
@@ -41,4 +40,4 @@ ms.locfileid: "37174070"
 ## <a name="see-also"></a>请参阅
 
 - [O-R 设计器消息](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

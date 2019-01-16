@@ -1,9 +1,7 @@
 ---
 title: 创建本机对象的自定义视图
 description: 使用 Natvis 框架自定义 Visual Studio 调试器中显示本机类型的方式
-ms.custom: ''
 ms.date: 10/31/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -15,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 937692f11cbd642da823d6f7d13bcd90de59b388
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: MT
+ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000856"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821187"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>在调试器中创建本机对象的自定义视图
 
-Visual Studio *Natvis* framework 自定义本机类型如出现在调试器变量窗口的方式**局部变量**和**观看**windows，在**数据提示**。 Natvis 可视化效果可使创建在调试期间更可见的类型。 
+Visual Studio *Natvis* 框架可以自定义本机类型在调试器变量窗口（例如**局部变量**、**监视**以及**数据提示**窗口）中显示的方式。 Natvis 的可视化功能可以让你创建的类型在调试期间更加直观清晰。 
 
-Natvis 替换*autoexp.dat*了 XML 语法、 更好的诊断、 版本控制，Visual Studio 的早期版本中的文件和支持的多个文件。  
+Natvis 替换了 Visual Studio 早期版本中的 *autoexp.dat* 文件，提供了 XML 语法、更好的诊断功能、版本控制功能以及多文件支持功能。  
 
 Natvis 并不适用于：
 
@@ -169,7 +167,7 @@ Natvis 可视化效果使用 C++ 表达式指定需显示的数据项。 除了�
 ##  <a name="BKMK_Syntax_reference"></a> Natvis 语法参考  
 
 ###  <a name="BKMK_AutoVisualizer"></a> AutoVisualizer 元素  
-`AutoVisualizer`元素是根节点 *.natvis*文件，并包含命名空间`xmlns:`属性。 
+`AutoVisualizer` 元素是 .natvis 文件的根节点并包含命名空间 `xmlns:` 属性。 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
@@ -213,7 +211,7 @@ Natvis 可视化效果使用 C++ 表达式指定需显示的数据项。 除了�
 </Type>  
 ```  
 
-可以使用宏 $T1 和 $T2，引用在可视化条目中的模板参数等。 若要查找这些宏的示例，请参阅 *.natvis*文件随 Visual Studio。  
+可以使用宏 $T1 和 $T2，引用在可视化条目中的模板参数等。 要查找这些宏的示例，请参阅随 Visual Studio 一起提供的 .natvis 文件。  
 
 ####  <a name="BKMK_Visualizer_type_matching"></a> 可视化工具类型匹配  
 如果可视化条目无法进行验证，则使用下一个可用的可视化效果。  
@@ -421,7 +419,7 @@ Natvis 可视化效果使用 C++ 表达式指定需显示的数据项。 除了�
 
 `ArrayItems`节点必须具有：  
 
-- 一个`Size`（求值表达式必须为整数） 为使调试器了解数组长度。  
+- 用于使调试器了解数组长度的 `Size` 表达式（必须计算为整数）。  
 - 一个`ValuePointer`指向第一个元素的表达式 (它必须是不是元素类型的指针`void*`)。  
 
 数组下限的默认值为 0。 若要覆盖的值，请使用`LowerBound`元素。 *.Natvis*文件随 Visual Studio 提供了示例。  
@@ -448,7 +446,7 @@ Natvis 可视化效果使用 C++ 表达式指定需显示的数据项。 除了�
 
 - `Direction` 指定数组是行优先顺序还是列优先顺序中。 
 - `Rank` 指定数组的秩。 
-- `Size`元素接受的隐式`$i`参数，它将替换为维索引以查找该维度中数组的长度。 在上一示例中，表达式`_M_extent.M_base[0]`应为提供的第 0 个维度长度`_M_extent._M_base[1]`当月 1 日起，依次类推。  
+- `Size` 元素接受将其替换为维索引以查找该维度中数组的长度的隐式 `$i` 参数。 在上一示例中，表达式`_M_extent.M_base[0]`应为提供的第 0 个维度长度`_M_extent._M_base[1]`当月 1 日起，依次类推。  
 
 下面是一个二维`Concurrency::array`对象在调试器窗口中所示：  
 
@@ -539,8 +537,8 @@ Natvis 可视化效果使用 C++ 表达式指定需显示的数据项。 除了�
 
 `CustomListItems` 支持以下内部函数：
 
-- `strlen`, `wcslen`, `strnlen`, `wcsnlen`, `strcmp`, `wcscmp`, `_stricmp`, `_strcmpi`, `_wcsicmp`, `strncmp`, `wcsncmp`, `_strnicmp`, `_wcsnicmp`, `memcmp`, `memicmp`, `wmemcmp`, `strchr`, `wcschr`, `memchr`, `wmemchr`, `strstr`, `wcsstr`, `__log2`, `__findNonNull`
-- `GetLastError`, `TlsGetValue`, `DecodeHString`, `WindowsGetStringLen`, `WindowsGetStringRawBuffer`, `WindowsCompareStringOrdinal`, `RoInspectCapturedStackBackTrace`, `CoDecodeProxy`, `GetEnvBlockLength`, `DecodeWinRTRestrictedException`, `DynamicMemberLookup`, `DecodePointer`, `DynamicCast`
+- `strlen`、`wcslen`、`strnlen`、`wcsnlen`、`strcmp`、`wcscmp`、`_stricmp`、`_strcmpi`、`_wcsicmp`、`strncmp`、`wcsncmp`、`_strnicmp`、`_wcsnicmp`、`memcmp`、`memicmp`、`wmemcmp`、`strchr`、`wcschr`、`memchr`、`wmemchr`、`strstr`、`wcsstr`、`__log2`、`__findNonNull`
+- `GetLastError`、`TlsGetValue`、`DecodeHString`、`WindowsGetStringLen`、`WindowsGetStringRawBuffer`、`WindowsCompareStringOrdinal`、`RoInspectCapturedStackBackTrace`、`CoDecodeProxy`、`GetEnvBlockLength`、`DecodeWinRTRestrictedException`、`DynamicMemberLookup`、`DecodePointer`、`DynamicCast`
 - `ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] and operator(index<>)`
 - `ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)`
 - `ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] and operator(tiled_index<>)`
@@ -582,7 +580,7 @@ Natvis 可视化效果使用 C++ 表达式指定需显示的数据项。 除了�
 
  ![自动&#95;ptr&#60;矢量&#60;int&#62; &#62;默认扩展](../debugger/media/dbg_natvis_expand_expandeditem_default.png "默认扩展")  
 
- 若要查看矢量的值，必须向下钻取两个级别在变量窗口中，通过传递`_Myptr`成员。 通过添加`ExpandedItem`元素，则可以消除`_Myptr`变量，从层次结构，并直接查看矢量元素：  
+ 若要查看矢量的值，必须向下钻取两个级别在变量窗口中，通过传递`_Myptr`成员。 通过添加 `ExpandedItem` 元素，可以消除层次结构中的 `_Myptr` 变量并直接查看矢量元素：  
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">  
@@ -607,10 +605,10 @@ Natvis 可视化效果使用 C++ 表达式指定需显示的数据项。 除了�
 </Type>  
 ```  
 
-**Nd**格式说明符，这将关闭与匹配的派生类的可视化效果，在此有必要。 否则为表达式`*(CFrameworkElement*)this`会导致`CPanel`可视化效果，以应用，同样，因为默认可视化类型匹配规则认为最适合的选项。 使用**nd**格式说明符指示调试器使用基类可视化效果或默认扩展，如果基类没有可视化效果。  
+关闭派生类的可视化匹配的 nd 格式说明符肯定在这。 否则为表达式`*(CFrameworkElement*)this`会导致`CPanel`可视化效果，以应用，同样，因为默认可视化类型匹配规则认为最适合的选项。 使用**nd**格式说明符指示调试器使用基类可视化效果或默认扩展，如果基类没有可视化效果。  
 
-####  <a name="BKMK_Synthetic_Item_expansion"></a> 综合 item 展开  
- 虽然`ExpandedItem`元素通过消除层次结构，提供数据的逼真的内容视图`Synthetic`节点则恰好相反。 它允许你创建人工子元素的不是表达式的结果。 人工元素可以具有其自己的子元素。 在下面的示例中， `Concurrency::array` 类型的可视化效果使用 `Synthetic` 节点向用户显示诊断消息：  
+####  <a name="BKMK_Synthetic_Item_expansion"></a> Synthetic Item 展开  
+ `ExpandedItem` 元素通过消除层次结构提供更简单的数据视图，`Synthetic` 节点则恰好相反。 它允许你创建人工子元素的不是表达式的结果。 人工元素可以具有其自己的子元素。 在下面的示例中， `Concurrency::array` 类型的可视化效果使用 `Synthetic` 节点向用户显示诊断消息：  
 
 ```xml
 <Type Name="Concurrency::array&lt;*,*&gt;">  
@@ -632,7 +630,7 @@ Natvis 可视化效果使用 C++ 表达式指定需显示的数据项。 除了�
  ![通过综合元素扩展的 concurrency:: array](../debugger/media/dbg_natvis_expand_synthetic.png "具有综合元素扩展的 concurrency:: array")  
 
 ###  <a name="BKMK_HResult"></a> HResult 元素 
- `HResult`元素可用于自定义显示的信息**HRESULT**调试器窗口中。 `HRValue`元素必须包含的 32 位值**HRESULT**要进行自定义。 `HRDescription`元素包含要在调试器窗口中显示的信息。  
+ `HResult`元素可用于自定义显示的信息**HRESULT**调试器窗口中。 `HRValue` 元素必须包含要自定义的 HRESULT 的 32 位值。 `HRDescription`元素包含要在调试器窗口中显示的信息。  
 
 ```xml
 
@@ -661,7 +659,7 @@ Natvis 可视化效果使用 C++ 表达式指定需显示的数据项。 除了�
 
 - 一个`ServiceId`  -  `Id`特性对标识`UIVisualizer`。 `ServiceId`是包公开的服务，可视化工具的 GUID。 `Id` 如果服务提供多个，是可视化工具，用于区分开来的唯一标识符。 在上述示例中，相同的可视化工具服务提供两个可视化工具。  
   
-- `MenuName`属性定义要在调试器中的放大镜图标旁边的下拉列表中显示的可视化工具名称。 例如：  
+- `MenuName`属性定义要在调试器中的放大镜图标旁边的下拉列表中显示的可视化工具名称。 例如:  
 
   ![UIVisualizer 菜单快捷方式菜单](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer 菜单快捷方式菜单")  
 

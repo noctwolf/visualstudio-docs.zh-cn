@@ -1,8 +1,6 @@
 ---
-title: 如何： 使用 ClickOnce 部署可在多个版本的.NET Framework 运行的应用程序 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用 ClickOnce 部署可在多个版本的.NET Framework 运行的应用程序 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a5262814f6ccfb28ba796140e52175e2fe940a9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a8732099ab3ef663c6fc253592736bcddbfde55a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842763"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943111"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何： 使用 ClickOnce 部署可以在多个版本的.NET framework 运行的应用程序
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何：使用 ClickOnce 部署可以在多个版本 .NET Framework 上运行的应用程序
 可以部署应用程序面向.NET Framework 的多个版本的使用 ClickOnce 部署技术。 这将要求您生成并更新应用程序和部署清单。  
   
 > [!NOTE]
@@ -47,7 +45,7 @@ ms.locfileid: "49842763"
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>若要生成应用程序和部署清单  
   
--   使用项目设计器的发布页或发布向导发布应用程序并生成应用程序和部署清单文件。 有关详细信息，请参阅[如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)或[发布页上，项目设计器](../ide/reference/publish-page-project-designer.md)。  
+-   使用项目设计器的发布页或发布向导发布应用程序并生成应用程序和部署清单文件。 有关更多信息，请参见[如何：发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)或[发布页上，项目设计器](../ide/reference/publish-page-project-designer.md)。  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>若要更改部署清单，若要列出多个.NET Framework 版本  
   
@@ -59,7 +57,7 @@ ms.locfileid: "49842763"
   
     |.NET Framework 版本|XML|  
     |----------------------------|---------|  
-    |4 个客户端|\<framework targetVersion ="4.0"profile ="客户端"supportedRuntime ="4.0.30319"/ >|  
+    |4 客户端|\<framework targetVersion ="4.0"profile ="客户端"supportedRuntime ="4.0.30319"/ >|  
     |4 完整|\<framework targetVersion ="4.0"profile ="完整"supportedRuntime ="4.0.30319"/ >|  
     |3.5 客户端|\<framework targetVersion ="3.5"的配置文件 ="客户端"supportedRuntime ="2.0.50727"/ >|  
     |3.5 完整|\<framework targetVersion ="3.5"的配置文件 ="完整"supportedRuntime ="2.0.50727"/ >|  
@@ -75,7 +73,7 @@ ms.locfileid: "49842763"
   
     |.NET framework 运行时版本|XML|  
     |------------------------------------|---------|  
-    |4 个客户端|\<supportedRuntime 版本 ="v4.0.30319"sku ="。NETFramework，Version = v4.0，Profile = Client"/ >|  
+    |4 客户端|\<supportedRuntime 版本 ="v4.0.30319"sku ="。NETFramework，Version = v4.0，Profile = Client"/ >|  
     |4 完整|\<supportedRuntime 版本 ="v4.0.30319"sku ="。NETFramework，Version = v4.0"/ >|  
     |3.5 完整|\<supportedRuntime version="v2.0.50727"/ >|  
     |3.5 客户端|\<supportedRuntime 版本 ="v2.0.50727"sku ="客户端"/ >|  
@@ -102,7 +100,7 @@ ms.locfileid: "49842763"
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>若要更新和重新签名的应用程序和部署清单  
   
--   更新和应用程序和部署清单重新签名。 有关详细信息，请参阅[如何： 对应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+-   更新和应用程序和部署清单重新签名。 有关更多信息，请参见[如何：对应用程序清单和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   

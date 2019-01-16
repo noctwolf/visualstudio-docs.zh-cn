@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findChildrenEx |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5304c77dd772a1aa74b90d89df7eb73361ab7561
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7014bf0b42e9fcaab313c6b89d0caf1f1678a297
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836796"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928699"
 ---
 # <a name="idiasymbolfindchildrenex"></a>IDiaSymbol::findChildrenEx
 检索的符号的子级。 返回本地符号包括实时范围信息，如果程序通过优化编译上。  
@@ -27,7 +25,7 @@ ms.locfileid: "49836796"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT findChildrenEx (   
+HRESULT findChildrenEx (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  
@@ -55,7 +53,7 @@ HRESULT findChildrenEx (
  此方法是扩展的版本[idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)。  
   
 ## <a name="requirements"></a>要求  
- 标头： Dia2.h  
+ 标头：dia2.h  
   
  库： diaguids.lib  
   
@@ -65,5 +63,5 @@ HRESULT findChildrenEx (
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)

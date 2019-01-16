@@ -1,8 +1,6 @@
 ---
 title: '&lt;计划&gt;元素 （引导程序） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e891064b0f2ac522312b2bb654c4d05e9f7bf47c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 850c94274f783c306fe31fde4d86c9563c928adf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078249"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894293"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;计划&gt;元素 （引导程序）
 `Schedules`元素包含`Schedule`元素，用于定义在定义的命令的特定时间`Command`元素应运行。  
@@ -42,16 +40,16 @@ ms.locfileid: "39078249"
 ```  
   
 ## <a name="elements-and-attributes"></a>元素和属性  
- `Schedules`元素是子元素的`Product`元素。 每个`Product`元素可能具有最多一个`Schedules`元素。 `Schedules`元素没有任何属性。  
+ `Schedules`元素是子元素的`Product`元素。 每个`Product`元素可能具有最多一个`Schedules`元素。 `Schedules` 元素没有属性。  
   
 ## <a name="schedule"></a>计划  
  `Schedule`元素是子元素的`Schedules`元素。 一个`Schedules`元素必须至少一个`Schedule`元素。  
   
  `Schedule` 具有以下属性。  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`Name`|必须的。 计划项的名称。 这对应于`ScheduleName`属性的`Command`元素。 当`Command`引用指定的计划，在所指示的时间，将仅执行`Schedule`元素。 此外可能与之关联的计划`FailIf`和`BypassIf`元素，将这些条件测试限制为按指定计划执行。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
+|`Name`|必需。 计划项的名称。 这对应于`ScheduleName`属性的`Command`元素。 当`Command`引用指定的计划，在所指示的时间，将仅执行`Schedule`元素。 此外可能与之关联的计划`FailIf`和`BypassIf`元素，将这些条件测试限制为按指定计划执行。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
   
  给定`Schedule`元素可能具有一个以下子节点。  
   
@@ -66,4 +64,4 @@ ms.locfileid: "39078249"
   
 ## <a name="see-also"></a>请参阅  
  [\<产品 > 元素](../deployment/product-element-bootstrapper.md)   
- [产品和包架构参考](../deployment/product-and-package-schema-reference.md)
+ [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

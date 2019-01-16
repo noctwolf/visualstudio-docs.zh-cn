@@ -1,8 +1,6 @@
 ---
-title: 如何： 创建程序包清单 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建程序包清单 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a0c448bcf629c4e914393cb8eabad93ced574c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: a1f965bdbd19193bfaa942d5f3635b0652f0e9c4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154624"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53943468"
 ---
-# <a name="how-to-create-a-package-manifest"></a>如何： 创建程序包清单
+# <a name="how-to-create-a-package-manifest"></a>如何：创建程序包清单
 若要部署应用程序的先决条件，你可以使用引导程序包。 引导程序包包含一个单一产品清单文件，但是包清单的每个区域设置。 在不同的本地化版本之间共享的功能应进入产品清单。  
   
- 有关包清单的详细信息，请参阅[如何： 创建产品清单](../deployment/how-to-create-a-product-manifest.md)。  
+ 有关包清单的详细信息，请参阅[如何：创建产品清单](../deployment/how-to-create-a-product-manifest.md)  
   
 ## <a name="create-the-package-manifest"></a>创建程序包清单  
   
@@ -101,4 +99,4 @@ installing this package.</String>
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [产品和包架构参考](../deployment/product-and-package-schema-reference.md)
+ [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

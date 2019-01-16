@@ -1,8 +1,6 @@
 ---
-title: 如何： 显示 WPF 跟踪信息 |Microsoft 文档
-ms.custom: ''
+title: 如何：显示 WPF 跟踪信息 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,49 +16,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99fc861c627a094f9f5e4e67a6b034ecdd407688
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 63708c133a4ce8c7deafc9c6861a9960d8327061
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476219"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53893401"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>如何：显示 WPF 跟踪信息
-[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 可以接收来自 WPF 应用程序的调试跟踪信息以及显示在该信息**输出**窗口。 若要显示调试跟踪信息，必须启用 WPF 跟踪。  
+[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 可接收来自 WPF 应用程序的调试跟踪信息，并将该信息显示在“输出”窗口中。 若要显示调试跟踪信息，必须启用 WPF 跟踪。  
   
- 可以在 App.Config 文件中启用 WPF 跟踪，或通过使用 <xref:System.Diagnostics.PresentationTraceSources> 类以编程方式启用 WPF 跟踪。 若要启用 WPF 跟踪更简单的方法是使用**选项**窗口。 不支持针对 Web 应用程序的 WPF 跟踪。  
+ 可以在 App.Config 文件中启用 WPF 跟踪，或通过使用 <xref:System.Diagnostics.PresentationTraceSources> 类以编程方式启用 WPF 跟踪。 启用 WPF 跟踪的一种更简单方式是使用“选项”窗口。 不支持针对 Web 应用程序的 WPF 跟踪。  
   
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>启用或自定义 WPF 跟踪信息  
   
 1.  在“工具”菜单上选择“选项”。  
   
-2.  在**选项**对话框中，在左侧框中，打开**调试**节点。  
+2.  在“选项”对话框内左侧的框中，打开“调试”节点。  
   
-3.  下**调试**，单击**输出窗口**。  
+3.  在“调试”下，单击“输出窗口”。  
   
-4.  下**常规输出设置**，选择**所有调试输出**。  
+4.  在“常规输出设置”下，选择“所有调试输出”。  
   
-5.  在右侧框中，查找**WPF 跟踪设置**。  
+5.  在右侧的框中，查找“WPF 跟踪设置”。  
   
-6.  打开**WPF 跟踪设置**节点。  
+6.  打开“WPF 跟踪设置”节点。  
   
-7.  下**WPF 跟踪设置**，单击你想要启用的设置的类别 (例如，**数据绑定**)。  
+7.  在“WPF 跟踪设置”下，单击要启用的设置的类别（例如，“数据绑定”）。  
   
-     下拉列表控件中将出现设置列下一步**数据绑定**或您单击的任何类别。  
+     “数据绑定”或单击的任何类别旁边的“设置”列中将出现一个下拉列表控件。  
   
-8.  单击下拉列表并选择你想要查看的跟踪信息的类型：**所有**，**严重**，**错误**，**警告**， **信息**，**详细**，或**ActivityTracing**。  
+8.  单击下拉列表并选择你想要查看的跟踪信息的类型：**所有**，**关键**，**错误**，**警告**，**信息**，**详细**，或**ActivityTracing**。  
   
-     **关键**启用仅关键事件的跟踪。  
+     如果选择“严重”，则仅启用“严重”事件的跟踪。  
   
-     **错误**启用严重和错误事件的跟踪。  
+     如果选择“错误”，则启用“严重”和“错误”事件的跟踪。  
   
-     **警告**启用跟踪的严重、 错误和警告事件。  
+     如果选择“警告”，则启用“严重”、“错误”和“警告”事件的跟踪。  
   
-     **信息**启用严重、 错误、 警告和信息事件的跟踪。  
+     如果选择“信息”，则启用“严重”、“错误”、“警告”和“信息”事件的跟踪。  
   
-     **详细**启用严重、 错误、 警告、 信息和详细的事件的跟踪。  
+     如果选择“详细”，则启用“严重”、“错误”、“警告”、“信息”和“详细”事件的跟踪。  
   
-     **ActivityTracing**启用停止、 开始、 挂起、 传输和恢复事件的跟踪。  
+     如果选择“活动跟踪”，则启用“停止”、“启动”、“挂起”、“传输”和“继续”事件的跟踪。  
   
      有关这些跟踪信息级别的含义的更多信息，请参见 <xref:System.Diagnostics.SourceLevels>。  
   
@@ -70,19 +68,19 @@ ms.locfileid: "31476219"
   
 1.  在“工具”菜单上选择“选项”。  
   
-2.  在**选项**对话框中，在左侧框中，打开**调试**节点。  
+2.  在“选项”对话框内左侧的框中，打开“调试”节点。  
   
-3.  下**调试**，单击**输出窗口**。  
+3.  在“调试”下，单击“输出窗口”。  
   
-4.  在右侧框中，查找**WPF 跟踪设置**。  
+4.  在右侧的框中，查找“WPF 跟踪设置”。  
   
-5.  打开**WPF 跟踪设置**节点。  
+5.  打开“WPF 跟踪设置”节点。  
   
-6.  下**WPF 跟踪设置**，单击你想要启用的设置的类别 (例如，**数据绑定**)。  
+6.  在“WPF 跟踪设置”下，单击要启用的设置的类别（例如，“数据绑定”）。  
   
-     下拉列表控件中将出现设置列下一步**数据绑定**或您单击的任何类别。  
+     “数据绑定”或单击的任何类别旁边的“设置”列中将出现一个下拉列表控件。  
   
-7.  单击下拉列表并选择**关闭**。  
+7.  单击该下拉列表并选择“关闭”。  
   
 8.  单击 **“确定”**。  
   

@@ -1,8 +1,6 @@
 ---
 title: '&lt;InstallChecks&gt;元素 （引导程序） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8004ccdcbd320479bcc1e343443ebdb017ee77f3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ccd9fa5ea1f7963d4864e276bd05011be817de2c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896687"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53865976"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;元素 （引导程序）
 `InstallChecks`元素支持启动各种对本地计算机以确保所有适当的应用程序的必备组件都已安装的测试。  
@@ -74,12 +72,12 @@ ms.locfileid: "49896687"
 ## <a name="assemblycheck"></a>AssemblyCheck  
  此元素是可选的子元素的`InstallChecks`。 为每个实例`AssemblyCheck`，引导程序将确保元素标识的程序集位于全局程序集缓存 (GAC)。 它不包含任何元素，并具有以下属性。  
 
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`Property`|必须的。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
-|`Name`|必须的。 要检查的程序集的完全限定的名称。|  
-|`PublicKeyToken`|必须的。 与此强名称程序集关联的公钥的缩写的形式。 存储在 GAC 中的所有程序集必须具有一个名称、 版本和公钥。|  
-|`Version`|必须的。 该程序集的版本。<br /><br /> 版本号采用格式\<*主版本*>。\<*次要版本*>。\<*生成版本*>。\<*修订版本*>。|  
+|`Property`|必需。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
+|`Name`|必需。 要检查的程序集的完全限定的名称。|  
+|`PublicKeyToken`|必需。 与此强名称程序集关联的公钥的缩写的形式。 存储在 GAC 中的所有程序集必须具有一个名称、 版本和公钥。|  
+|`Version`|必需。 该程序集的版本。<br /><br /> 版本号采用格式\<*主版本*>。\<*次要版本*>。\<*生成版本*>。\<*修订版本*>。|  
 |`Language`|可选。 本地化程序集的语言。 默认值为 `neutral`。|  
 |`ProcessorArchitecture`|可选。 此安装的目标计算机处理器。 默认值为 `msil`。|  
 
@@ -88,10 +86,10 @@ ms.locfileid: "49896687"
 
  `ExternalCheck` 不包含任何元素，并具有以下属性。  
 
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`Property`|必须的。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
-|`PackageFile`|必须的。 要执行的外部程序。 该程序必须是安装程序分发包的一部分。|  
+|`Property`|必需。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
+|`PackageFile`|必需。 要执行的外部程序。 该程序必须是安装程序分发包的一部分。|  
 |`Arguments`|可选。 提供的名为可执行文件的命令行自变量`PackageFile`。|  
 
 ## <a name="filecheck"></a>文件签  
@@ -100,11 +98,11 @@ ms.locfileid: "49896687"
  `FileCheck` 不包含任何元素，并具有以下属性。  
 
 
-| 特性 | 描述 |
+| 特性 | 说明 |
 |-----------------| - |
-| `Property` | 必须的。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。 |
-| `FileName` | 必须的。 要查找的文件的名称。 |
-| `SearchPath` | 必须的。 磁盘或在其中查找文件的文件夹中。 这必须是相对路径，如果`SpecialFolder`分配; 否则，它必须是绝对路径。 |
+| `Property` | 必需。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。 |
+| `FileName` | 必需。 要查找的文件的名称。 |
+| `SearchPath` | 必需。 磁盘或在其中查找文件的文件夹中。 这必须是相对路径，如果`SpecialFolder`分配; 否则，它必须是绝对路径。 |
 | `SpecialFolder` | 可选。 为 Windows 或到有特殊的意义的文件夹[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 默认值是解释`SearchPath`为绝对路径。 包括以下有效值：<br /><br /> `AppDataFolder`。 为此应用程序数据文件夹[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序; 特定于当前用户。<br /><br /> `CommonAppDataFolder`。 所有用户都使用的应用程序数据文件夹。<br /><br /> `CommonFilesFolder`。 当前用户的公共文件文件夹。<br /><br /> `LocalDataAppFolder`。 非漫游应用程序数据文件夹。<br /><br /> `ProgramFilesFolder`。 标准的 32 位应用程序的 Program Files 文件夹。<br /><br /> `StartUpFolder`。 包含在系统启动时启动的所有应用程序的文件夹。<br /><br /> `SystemFolder`。 包含 32 位系统 Dll 的文件夹。<br /><br /> `WindowsFolder`。 包含 Windows 系统安装的文件夹。<br /><br /> `WindowsVolume`。 驱动器或分区包含 Windows 系统安装中。 |
 | `SearchDepth` | 可选。 在此处搜索已命名的文件的子文件夹深度。 深度优先搜索。 默认值为 0，将搜索限制到指定的顶级文件夹`SpecialFolder`并**SearchPath**。 |
 
@@ -113,10 +111,10 @@ ms.locfileid: "49896687"
 
  `MsiProductCheck` 不包含任何元素，并具有以下属性。  
 
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`Property`|必须的。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
-|`Product`|必须的。 已安装的产品 GUID。|  
+|`Property`|必需。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
+|`Product`|必需。 已安装的产品 GUID。|  
 |`Feature`|可选。 已安装的应用程序的特定功能的 GUID。|  
 
 ## <a name="registrycheck"></a>RegistryCheck  
@@ -124,10 +122,10 @@ ms.locfileid: "49896687"
 
  `RegistryCheck` 不包含任何元素，并具有以下属性。  
 
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`Property`|必须的。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
-|`Key`|必须的。 注册表项的名称。|  
+|`Property`|必需。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
+|`Key`|必需。 注册表项的名称。|  
 |`Value`|可选。 要检索的注册表值的名称。 默认值是返回默认值的文本。 `Value` 必须是字符串或一个 dword 值。|  
 
 ## <a name="registryfilecheck"></a>RegistryFileCheck  
@@ -135,10 +133,10 @@ ms.locfileid: "49896687"
 
  `RegistryFileCheck` 不包含任何元素，并具有以下属性。  
 
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`Property`|必须的。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
-|`Key`|必须的。 注册表项的名称。 其值解释为文件的路径，除非`File`属性设置。 如果该键不存在，`Property`未设置。|  
+|`Property`|必需。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
+|`Key`|必需。 注册表项的名称。 其值解释为文件的路径，除非`File`属性设置。 如果该键不存在，`Property`未设置。|  
 |`Value`|可选。 要检索的注册表值的名称。 默认值是返回默认值的文本。 `Value` 必须是字符串。|  
 |`FileName`|可选。 文件的名称。 如果指定，获取从注册表项的值被假定为一个目录路径，而此名称追加到它。 如果未指定，从注册表返回的值被假定为一个文件的完整路径。|  
 |`SearchDepth`|可选。 在此处搜索已命名的文件的子文件夹深度。 深度优先搜索。 默认值为 0，将搜索限制到指定的注册表项值的顶级文件夹。|  
@@ -167,7 +165,7 @@ ms.locfileid: "49896687"
 ## <a name="predefined-properties"></a>预定义的属性  
  下表列出`BypassIf`和`FailIf`元素：  
 
-|属性|说明|可能的值|  
+|Property|说明|可能的值|  
 |--------------|-----------|---------------------|  
 |`Version9X`|在 Windows 9 X 操作系统的版本号。|4.10 = Windows 98|  
 |`VersionNT`|基于 Windows NT 的操作系统的版本号。|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professional SP2<br /><br /> 5.2.0 = Windows Server 2003|  
@@ -184,4 +182,4 @@ ms.locfileid: "49896687"
 
 ## <a name="see-also"></a>请参阅  
  [\<命令 > 元素](../deployment/commands-element-bootstrapper.md)   
- [产品和包架构参考](../deployment/product-and-package-schema-reference.md)
+ [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

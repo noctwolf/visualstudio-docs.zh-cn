@@ -1,8 +1,6 @@
 ---
-title: 如何： 与 ClickOnce 应用程序一起安装的必备组件 |Microsoft Docs
-ms.custom: ''
+title: 如何：与 ClickOnce 应用程序一起安装的必备组件 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e363b021f8dfb82aa641a1baac4d2f33e0bd3d2e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 2e474bba5168867180f0f50a927ea4c71ebe0370
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152469"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907847"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>如何： 与 ClickOnce 应用程序安装的必备组件
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>如何：将必备组件与 ClickOnce 应用程序一起安装
 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序要求的计算机上安装.NET Framework 的正确版本之前可运行; 许多应用程序具有其他系统必备组件。 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序中，可以选择一组的系统必备组件以与你的应用程序一起打包。 在安装时，检查会执行针对每个必备项，以确定它是否已存在;如果在安装之前将不安装[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  
   
  而不是打包和发布系统必备组件，还可以指定组件的下载位置。 例如，而不是将与每个发布的应用程序的必备组件，您可以使用集中式的文件共享或包含的所有系统必备组件的安装程序的 Web 位置，在安装时，将下载的组件和从该位置安装。  
   
 > [!IMPORTANT]
->  应将必备组件安装程序的包添加到开发计算机中，然后发布您的第一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 有关详细信息，请参阅[如何： 与 ClickOnce 应用程序包括先决条件](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)。  
+>  应将必备组件安装程序的包添加到开发计算机中，然后发布您的第一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 有关更多信息，请参见[如何：将必备组件与 ClickOnce 应用程序一起添加](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)。  
   
  在中管理的先决条件**先决条件**对话框中，可通过访问**发布**窗格**项目设计器**。  
   
@@ -71,4 +69,4 @@ ms.locfileid: "39152469"
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

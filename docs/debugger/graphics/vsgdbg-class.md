@@ -1,8 +1,6 @@
 ---
-title: VsgDbg 类 |Microsoft 文档
-ms.custom: ''
+title: VsgDbg 类 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 6722263c-ccef-40c7-a0ae-87a863fbab00
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c48142d3458cf3c85b0391fcf33dc7238d16abb2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: f457d35725a0a6041fe82b06853a6dffdf69b53d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474763"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53922450"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg 类
 表示用于以编程方式控制图形诊断的应用内组件的接口。  
@@ -31,23 +29,23 @@ class VsgDbg;
   
 ### <a name="public-constructors"></a>公共构造函数  
   
-|名称|描述|  
+|name|说明|  
 |----------|-----------------|  
-|[VsgDbg::VsgDbg（构造函数）](vsgdbg-vsgdbg-constructor.md)|构造的实例`VsgDbg`类并 （可选） 准备图形诊断以主动捕获并记录图形信息的应用内组件。|  
+|[VsgDbg::VsgDbg（构造函数）](vsgdbg-vsgdbg-constructor.md)|构造一个实例`VsgDbg`类，并根据需要准备图形诊断来主动捕获并记录图形信息的应用内组件。|  
 |[VsgDbg::~VsgDbg（析构函数）](vsgdbg-tilde-vsgdbg-destructor.md)|销毁实例`VsgDbg`类。|  
   
 ### <a name="public-methods"></a>公共方法  
   
-|名称|描述|  
+|name|说明|  
 |----------|-----------------|  
-|[AddMessage](addmessage.md)|将自定义消息添加到图形诊断 HUD （提醒显示）。|  
+|[AddMessage](addmessage.md)|将自定义消息添加到图形诊断 HUD（提醒显示）。|  
 |[BeginCapture](begincapture.md)|开始将结尾的捕获时间间隔`EndCapture`。|  
 |[CaptureCurrentFrame](capturecurrentframe.md)|将当前帧的剩余部分捕获到图形日志文件。|  
 |[复制（编程捕获）](copy-programmatic-capture.md)|将活动图形日志 (.vsglog) 文件的内容复制到新文件。|  
 |[EndCapture](endcapture.md)|结束以 `BeginCapture` 开始的捕获时间间隔。|  
-|[Init](init.md)|准备图形诊断以主动捕获并记录图形信息的应用内组件。|  
-|[ToggleHUD](togglehud.md)|切换在图形诊断 HUD 覆盖区上，打开或关闭。|  
+|[Init](init.md)|准备图形诊断来主动捕获并记录图形信息的应用内组件。|  
+|[ToggleHUD](togglehud.md)|打开或关闭切换图形诊断 HUD 覆盖。|  
 |[UnInit](uninit.md)|完成图形日志文件，将其关闭，并且在应用主动记录图形信息时释放已使用的资源。|  
   
 ## <a name="remarks"></a>备注  
- `VsgDbg`类表示的接口，可用于以编程方式控制图形诊断功能。 你可以使用一些功能，即使你当前不捕获和记录图形信息;这包括`AddMessage`成员函数和`ToggleHUD`成员函数。 其他成员函数准备图形诊断工具启动或停止活动捕获图形信息的应用内组件，或必须在应用主动捕获并记录到图形日志文件的图形信息时调用。
+ `VsgDbg`类表示可用于以编程方式控制图形诊断功能的接口。 可以使用一些功能，即使在未主动捕获并记录图形信息;这包括`AddMessage`成员函数和`ToggleHUD`成员函数。 其他成员函数准备图形诊断工具启动或停止活动捕获图形信息的应用内组件，或当应用主动捕获并记录到图形日志文件的图形信息时，必须调用。

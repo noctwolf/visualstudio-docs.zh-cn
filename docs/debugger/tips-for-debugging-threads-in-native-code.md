@@ -1,8 +1,6 @@
 ---
-title: 调试本机代码中的线程的提示 |Microsoft 文档
-ms.custom: ''
+title: 调试本机代码中的线程的提示 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,19 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c98f6bb1a738111d32b26c5b923abe41367e621e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: f8787af757a65a25cdd03240bd3942030120ad48
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476167"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53910069"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>调试本机代码中的线程时的提示
 下面是在调试本机代码中的线程时可以使用的一些提示：  
   
--   通过键入来查看线程信息块的内容`@TIB`中**监视**窗口或**快速监视**对话框。  
+-   可以通过在“监视”窗口或“快速监视”对话框中键入 `@TIB` 来查看“线程信息块”的内容。  
   
--   你可以通过输入查看当前线程的最后一个错误代码`@Err`中**监视**窗口或**快速监视**对话框。  
+-   可以通过在“监视”窗口或“快速监视”对话框中输入 `@Err` 来查看当前线程的上一个错误代码。  
   
 -   可以使用 C 运行库 (CRT) 函数来调试多线程应用程序。 有关详细信息，请参阅 [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)。  
   

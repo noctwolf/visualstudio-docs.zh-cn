@@ -1,8 +1,6 @@
 ---
 title: '&lt;PackageFiles&gt;元素 （引导程序） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: fd2436f7aa3fe24e90f380cf523b3affa6579e2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813760"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990342"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt;元素 （引导程序）
 `PackageFiles`元素包含`PackageFile`元素，后者定义为执行的安装包`Command`元素。  
@@ -46,7 +44,7 @@ ms.locfileid: "49813760"
 ## <a name="elements-and-attributes"></a>元素和属性  
  `PackageFiles` 元素具有以下属性。  
 
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
 |`CopyAllPackageFiles`|可选。 如果设置为`false`，安装程序将仅下载文件从引用`Command`元素。 如果设置为`true`，将下载所有文件。<br /><br /> 如果设置为`IfNotHomesite`，安装程序的行为相同像`False`如果`ComponentsLocation`设置为`HomeSite`，并将否则具有相同行为像`True`。 此设置可用于允许包本身是引导程序，以在 HomeSite 方案中执行其自己的行为。<br /><br /> 默认值为 `true`。|  
 
@@ -56,9 +54,9 @@ ms.locfileid: "49813760"
  `PackageFile` 具有以下属性。  
 
 
-| 特性 | 描述 |
+| 特性 | 说明 |
 |---------------| - |
-| `Name` | 必须的。 包文件的名称。 这是名称的`Command`元素将引用此项定义的包将安装在其下的条件。 此值还用作的键`Strings`表以检索这样的工具的本地化的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将用于描述包。 |
+| `Name` | 必需。 包文件的名称。 这是名称的`Command`元素将引用此项定义的包将安装在其下的条件。 此值还用作的键`Strings`表以检索这样的工具的本地化的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将用于描述包。 |
 | `HomeSite` | 可选。 在远程服务器上，如果不包括与安装程序的包的位置。 |
 | `CopyOnBuild` | 可选。 指定引导程序在生成时是否应将复制到磁盘上的包文件。 默认值为 true。 |
 | `PublicKey` | 加密的包的证书签名者的公钥。 如果使用`HomeSite`使用; 否则为可选。 |
@@ -79,4 +77,4 @@ ms.locfileid: "49813760"
 ## <a name="see-also"></a>请参阅  
  [\<产品 > 元素](../deployment/product-element-bootstrapper.md)   
  [\<包 > 元素](../deployment/package-element-bootstrapper.md)   
- [产品和包架构参考](../deployment/product-and-package-schema-reference.md)
+ [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

@@ -1,8 +1,6 @@
 ---
-title: 调试 COM 和 ActiveX |Microsoft 文档
-ms.custom: ''
+title: 调试 COM 和 ActiveX |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab4bb2de79d0148154bfe7d9fceb70de322efda8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1dca4e8c0dd9317406603dcf4cd1bc93190fede3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468420"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820848"
 ---
 # <a name="com-and-activex-debugging"></a>调试 COM 和 ActiveX
 本节提供有关调试 COM 应用程序和 ActiveX 控件的提示。  

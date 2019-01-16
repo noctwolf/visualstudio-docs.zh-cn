@@ -12,20 +12,19 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3f9cf8c6a75e5f2a517931bf0fd858ea8f8f860c
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
-ms.translationtype: MT
+ms.openlocfilehash: a47ce13b907d393fae156737a4f20fffe0cddc65
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907165"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 层数据应用程序概述
 *N 层*数据应用程序是数据应用程序，分为多个*层*。 也称为"分布式应用程序"和"多层应用程序"，n 层应用程序分离到相互独立的层的客户端和服务器之间分布处理。 当开发访问数据的应用程序时，应清楚地区分组成应用程序的各个层。
 
-典型的 n 层应用程序包括表示层、 中间层和数据层。 单独的 n 层应用程序中的各个层的最简单方法是创建每个层都想要包括在应用程序中的离散项目。 例如，表示层可能是 Windows 窗体应用程序，而数据访问逻辑可以是位于中间层中的类库。 此外，表示层可能与数据访问逻辑在中间层通过服务之类的服务通信。 将应用程序组件分离到不同的层可提高应用程序的可维护性和可伸缩性。 有利于采用新技术，可应用于单个层而无需重新设计整个解决方案执行此操作。 此外，n 层应用程序通常将敏感信息存储在中间层中，以便与表示层隔离。
+典型的 n 层应用程序包括一个表示层、一个中间层和一个数据层。 单独的 n 层应用程序中的各个层的最简单方法是创建每个层都想要包括在应用程序中的离散项目。 例如，表示层可能是 Windows 窗体应用程序，而数据访问逻辑可以是位于中间层中的类库。 此外，表示层可能与数据访问逻辑在中间层通过服务之类的服务通信。 将应用程序组件分离到不同的层可提高应用程序的可维护性和可伸缩性。 有利于采用新技术，可应用于单个层而无需重新设计整个解决方案执行此操作。 此外，n 层应用程序通常将敏感信息存储在中间层中，以便与表示层隔离。
 
 Visual Studio 包含多种功能，可帮助开发人员创建 n 层应用程序：
 
@@ -77,13 +76,13 @@ Visual Studio 包含多种功能，可帮助开发人员创建 n 层应用程序
 
 [将数据集和 TableAdapter 分离到不同的项目中](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
-[演练： 创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+[演练：创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
-[N 层和远程应用程序使用 LINQ 到 SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+[使用 LINQ to SQL 的 n 层和远程应用程序](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
 ## <a name="see-also"></a>请参阅
 
-- [演练： 创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [演练：创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [分层更新](../data-tools/hierarchical-update.md)
 - [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)
 - [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)

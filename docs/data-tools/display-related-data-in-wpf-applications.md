@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f37fdeb7ddd305c7c258958d92c08cf1d8f2a4a8
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5666197598eae96322c79724555b2cd884be70cd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304592"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824270"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>在 WPF 应用程序中显示相关数据
 
@@ -33,9 +32,9 @@ ms.locfileid: "52304592"
 
 ## <a name="to-create-controls-that-display-related-records"></a>若要创建显示相关的记录的控件
 
-1. 在“数据”**菜单上单击“显示数据源”**，打开“数据源”**窗口。
+1. 在“数据”菜单上单击“显示数据源”，打开“数据源”窗口。
 
-2. 单击“添加新数据源”**，然后完成“数据源配置向导”**。
+2. 单击“添加新数据源”，然后完成“数据源配置”向导。
 
 3. 打开 WPF 设计器中，并确保该设计器包含有效的放置目标中的项的容器**数据源**窗口。
 

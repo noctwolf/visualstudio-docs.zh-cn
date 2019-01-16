@@ -1,8 +1,6 @@
 ---
 title: 'Idiasession:: Findchildren |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16033fc289e5a1fe2a8331e927bba51ce1671fd2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 3d2e0db2ec3f1f8f50dce061900ac086deca7777
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916275"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 检索指定的父标识符相匹配的名称和符号类型的所有子级。  
@@ -27,7 +25,7 @@ ms.locfileid: "49896162"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT findChildren (   
+HRESULT findChildren (   
    IDiaSymbol*       parent,  
    SymTagEnum        symtag,  
    LPCOLESTR         name,  

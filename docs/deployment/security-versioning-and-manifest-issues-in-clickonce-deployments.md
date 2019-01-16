@@ -1,8 +1,6 @@
 ---
 title: 安全、 版本和 ClickOnce 部署中的清单问题 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ae835b53960ca6952b71c10a2348f707785e16
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 366e384ec01c67a1beb6b08b018365cbb3c73bf4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081740"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927137"
 ---
-# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>安全、 版本和 ClickOnce 部署中的清单问题
+# <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全、版本控制和清单问题
 
 有多种问题[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]安全性、 应用程序版本控制和清单的语法和语义可能会导致[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署未成功完成。
 
@@ -51,7 +49,7 @@ ms.locfileid: "39081740"
 
 有关详细信息和有关如何更改联机应用程序配额的说明，请参阅[ClickOnce 缓存概述](../deployment/clickonce-cache-overview.md)。
 
-## <a name="versioning-issues"></a>版本控制问题
+## <a name="versioning-issues"></a>版本问题
 
 如果将强名称分配给您的程序集并递增程序集的版本号以反映应用程序更新，可能会遇到问题。 使用强名称的程序集的引用编译的任何程序集必须自行重新编译，或该程序集将尝试引用较旧版本。 程序集将尝试此操作由于程序集在其绑定请求中使用旧的版本值。
 
@@ -98,6 +96,6 @@ ms.locfileid: "39081740"
 
 ## <a name="see-also"></a>请参阅
 
-[ClickOnce 部署进行故障排除](../deployment/troubleshooting-clickonce-deployments.md)  
+[ClickOnce 部署疑难解答](../deployment/troubleshooting-clickonce-deployments.md)  
 [Securw ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)  
 [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)

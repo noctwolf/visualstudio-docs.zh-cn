@@ -21,7 +21,7 @@ ms.locfileid: "53990774"
 # <a name="callback-functions-implemented-by-the-ide"></a>通过 IDE 实现的回调函数
 为了使与集成为尽可能，并提供了统一的最终用户体验，无缝集成的开发环境 (IDE) 的源代码管理插件可以使用通过 IDE 实现的回调函数。 该插件可调用这些函数在将信息传递到 IDE; 源代码管理操作期间的适当时间IDE 可以显示此信息作为其本机用户界面中的嵌入元素。 用户必须在此方案中比如果插件，则使用自己的 UI 不太零碎的体验。  
   
- 必需的标头文件是*scc.h*。 默认位置是*\Program Files\VSIP 8.0\EnvSDK\common\inc\\*。 它也是已在源控件插件示例的 VSIP 文件夹*\Program Files\VSIP 8.0\MSSCCI\\*。  
+ 必需的标头文件是*scc.h*。 默认位置是 *\Program Files\VSIP 8.0\EnvSDK\common\inc\\*。 它也是已在源控件插件示例的 VSIP 文件夹 *\Program Files\VSIP 8.0\MSSCCI\\*。  
   
 ## <a name="in-this-section"></a>本节内容  
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  

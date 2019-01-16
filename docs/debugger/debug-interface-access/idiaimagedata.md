@@ -1,8 +1,6 @@
 ---
-title: IDiaImageData |Microsoft 文档
-ms.custom: ''
+title: IDiaImageData |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,39 +12,39 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fae8401d7702351e4d51d8b8d485ece87a9478b9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 4f10f12f8f9f08335e6234757c5254efca78dd18
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463008"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53894124"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
-公开基位置和内存的偏移量的模块或图像的详细的信息。  
+公开的模块或映像的基的位置和内存偏移量的详细信息。  
   
 ## <a name="syntax"></a>语法  
   
 ```  
-IDiaImageData : IUnknown  
+IDiaImageData : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDiaImageData`。  
   
-|方法|描述|  
+|方法|说明|  
 |------------|-----------------|  
 |[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|检索虚拟内存中的位置相对于应用程序的模块。|  
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|检索虚拟内存中的映像的位置。|  
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|检索其中应基于映像的内存位置。|  
   
 ## <a name="remarks"></a>备注  
- 一些调试流 （XDATA，PDATA） 包含也存储在映像中的数据的副本。 这些流式传输的数据可以为查询对象`IDiaImageData`接口。 请参阅本主题的详细信息"的调用方备注"部分。  
+ 某些调试流 （XDATA、 PDATA） 包含也存储在映像中的数据的副本。 这些流式传输的数据可以用于查询对象`IDiaImageData`接口。 请参阅本主题的详细信息"的调用方备注"部分。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 通过调用来获取此接口`QueryInterface`上[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)对象。 请注意，并非所有调试流式处理支持`IDiaImageData`接口。 例如，当前仅 XDATA 和 PDATA 流支持`IDiaImageData`接口。  
+ 通过调用来获取此接口`QueryInterface`上[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)对象。 请注意，并非所有调试流支持`IDiaImageData`接口。 例如，当前仅 XDATA 和 PDATA 流支持`IDiaImageData`接口。  
   
 ## <a name="example"></a>示例  
- 此示例中搜索所有支持任何流调试流`IDiaImageData`接口。 如果找到此类流，则会显示该流某些信息。  
+ 此示例将搜索所有支持的任何流的调试流`IDiaImageData`接口。 如果找到此类流，则显示该流的一些信息。  
   
 ```C++  
 void ShowImageData(IDiaSession *pSession)  
@@ -113,12 +111,12 @@ void ShowImageData(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>要求  
- 标头： Dia2.h  
+ 标头：dia2.h  
   
  库： diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>请参阅  
- [接口 （调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

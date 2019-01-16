@@ -1,8 +1,6 @@
 ---
 title: 调试远程计算机上的 UWP 应用 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/05/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0350358c2225851619a84216c929b8d7435dc4e3
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
-ms.translationtype: MT
+ms.openlocfilehash: 8fec6295fce7f100b0dc8c602a41f95e1af7d64f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750702"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892246"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>调试从 Visual Studio 的远程计算机上的 UWP 应用
   
@@ -78,7 +76,7 @@ Visual Studio 可用于运行、 调试、 分析和测试另一台计算机或�
 >[!TIP]
 >如果不能按名称连接到远程设备，请尝试使用其 IP 地址。 若要确定 IP 地址，在远程设备上，输入**ipconfig**命令窗口中。 IP 地址显示为**IPv4 地址**。  
     
-## <a name="BKMK_download"></a> 下载并安装用于 Visual Studio 远程工具
+## <a name="BKMK_download"></a> 为 Visual Studio 下载和安装远程工具
 
 对于 Visual Studio 中调试远程计算机上的应用，在远程计算机必须运行远程工具用于 Visual Studio。 
 
@@ -110,5 +108,5 @@ Visual Studio 可用于运行、 调试、 分析和测试另一台计算机或�
   
 ## <a name="see-also"></a>请参阅  
  [高级远程部署选项](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
- [使用 Visual Studio 测试 UWP 应用](../test/testing-store-apps-with-visual-studio.md)   
+ [使用 Visual Studio 测试 UWP 应用](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio/)   
  [在 Visual Studio 中调试 UWP 应用](debugging-windows-store-and-windows-universal-apps.md)

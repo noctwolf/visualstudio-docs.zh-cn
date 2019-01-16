@@ -1,8 +1,6 @@
 ---
 title: 创建托管对象的自定义视图 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.data.elements
@@ -25,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 970051c5f53c152ea6fee334c3c1f856172b5ed9
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 389deb0b6504ca5c7a3716399429f176e5dc7870
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280540"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53861431"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>创建托管对象的自定义视图
 可以在调试器变量窗口中自定义 Visual Studio 显示数据类型的方式。  
@@ -41,7 +39,7 @@ ms.locfileid: "44280540"
  在 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 代码中，Visual Basic 不支持 DebuggerBrowsable 特性。 此项限制在 .NET Framework 较高版本中已经删除。  
   
 ## <a name="visualizers"></a>可视化工具  
- 可以编写可视化工具来显示任何托管数据类型。 有关详细信息，请参阅[如何： 编写可视化工具](../debugger/how-to-write-a-visualizer.md)。  
+ 可以编写可视化工具来显示任何托管数据类型。 有关更多信息，请参见[如何：编写可视化工具](/visualstudio/debugger/create-custom-visualizers-of-data)。  
   
 ## <a name="native-code"></a>本机代码  
  对于本机代码，可以将自定义数据类型扩展添加到 autoexp.dat 文件中，该文件位于 Program Files\Microsoft Visual Studio 11.0\Common7\Packages\Debugger 目录中。 有关如何编写 `autoexp` 规则的说明就在该文件中。  
@@ -49,10 +47,10 @@ ms.locfileid: "44280540"
 > [!CAUTION]
 >  在 Visual Studio 的不同版本中，此文件的结构和 autoexp 规则的语法可能不同。  
   
- 通过编写表达式计算器外接程序，还可以自定义本机类型视图。 有关详细信息，请参阅[EEAddIn 示例： 调试表达式计算器外接程序](https://msdn.microsoft.com/library/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
+ 通过编写表达式计算器外接程序，还可以自定义本机类型视图。 有关详细信息，请参阅[EEAddIn 示例：调试表达式计算器外接程序](https://msdn.microsoft.com/library/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
   
 ## <a name="see-also"></a>请参阅  
- [使用 DebuggerTypeProxy 特性](../debugger/using-debuggertypeproxy-attribute.md)   
- [使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)   
- [监视窗口和快速监视 Windows](../debugger/watch-and-quickwatch-windows.md)   
+ [使用 DebuggerTypeProxy 属性](../debugger/using-debuggertypeproxy-attribute.md)   
+ [使用 DebuggerDisplay 属性](../debugger/using-the-debuggerdisplay-attribute.md)   
+ [“监视”和“快速监视”窗口](../debugger/watch-and-quickwatch-windows.md)   
  [使用调试器显示特性增强调试](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

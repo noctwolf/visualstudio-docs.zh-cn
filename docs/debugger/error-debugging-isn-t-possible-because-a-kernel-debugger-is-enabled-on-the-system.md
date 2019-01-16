@@ -1,8 +1,6 @@
 ---
-title: 错误： 调试并不&#39;t 可能由于系统上启用了内核调试器 |Microsoft Docs
-ms.custom: ''
+title: 错误：调试并不&#39;t 可能由于系统上启用了内核调试器 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa8aa820330264357341948a468d58d98c86056
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d8a0e615f1283a1aaf742a70961c26c3b6b35037
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853970"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832826"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>错误： 调试并不&#39;t 可能由于系统上启用了内核调试器
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>错误：调试并不&#39;t 可能由于系统上启用了内核调试器
 调试托管代码时，你可能会收到以下错误消息：  
   
 ```cmd
@@ -76,7 +74,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>对所有会话禁用内核调试（其他 Windows 操作系统）  
   
-1.  系统驱动器上查找 boot.ini (通常是 c:\\)。 boot.ini 文件可能是隐藏文件并且是只读的。 因此，您必须使用以下命令才能看到它：  
+1.  在系统驱动器（通常为 C:\\）上查找 boot.ini。 boot.ini 文件可能是隐藏文件并且是只读的。 因此，您必须使用以下命令才能看到它：  
   
     ```cmd
     dir /ASH  

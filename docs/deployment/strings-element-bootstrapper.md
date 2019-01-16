@@ -1,8 +1,6 @@
 ---
 title: '&lt;字符串&gt;元素 （引导程序） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.NoStringsForCulture
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 5b1cc6f4341f1a4ffdc01ec22b559fb1fa72cb66
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077667"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53886859"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;字符串&gt;元素 （引导程序）
 定义产品名称、 包名称和安装错误消息的本地化的字符串。  
@@ -49,9 +47,9 @@ ms.locfileid: "39077667"
   
  `String` 具有以下属性。  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`Name`|必须的。 字符串的名称。|  
+|`Name`|必需。 字符串的名称。|  
   
 ## <a name="example"></a>示例  
  下面的代码示例指定了所有的英文字符串[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安装程序。  

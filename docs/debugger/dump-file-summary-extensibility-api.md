@@ -1,8 +1,6 @@
 ---
-title: 转储文件摘要扩展性 API |Microsoft 文档
-ms.custom: ''
+title: 转储文件摘要扩展性 API |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c4bd5b5102219af530d7159b5481447b9c4e7ea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ade8a24e8371fe78286b794ad0437b9f50ae30cc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471016"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53938914"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>转储文件摘要扩展性 API
-在本部分中使用扩展性 Api，你可以扩展。Exe 项目系统和**转储摘要**页面以适用于您自己的自定义调试引擎。  
+在此部分中使用扩展性 API，可以扩展 .Exe 项目系统和“转储摘要”页面以配合自己的自定义调试引擎使用。  
   
 ## <a name="in-this-section"></a>本节内容  
- 用于扩展 Api**转储摘要**页和。Exe 项目系统有以下命名空间中：  
+ 可在以下命名空间中找到用于扩展“转储摘要”页面和 .Exe 项目系统的 API：  
   
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>  
   

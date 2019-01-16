@@ -1,8 +1,6 @@
 ---
 title: 查找内存泄漏的 CRT 库 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -31,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b797e8c8068523b4c782c4d7f02a3853c1d37d1
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: e29ef610fdfe114525e7da22b58635e0f3e4a3af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050100"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931022"
 ---
-# <a name="find-memory-leaks-with-the-crt-library"></a>查找内存泄漏 CRT 库
+# <a name="find-memory-leaks-with-the-crt-library"></a>使用 CRT 库查找内存泄漏
 
 在 C/c + + 应用程序中最难捉摸也硬检测 bug 都是内存泄漏。 内存泄漏未能正确释放以前分配的内存中的结果。 少量内存泄漏不开始时，会注意到，但随着时间的推移可能导致性能不佳范围到发生故障时应用程序内存不足的症状。 将占用所有可用内存可能会导致其他应用崩溃的泄漏应用，创建不清楚哪些应用程序负责。 即使无害的内存泄漏可能表示应更正其他问题。  
 
@@ -183,7 +181,7 @@ Object dump complete.
 
 可以使用分配编号在内存分配位置设置断点。  
 
-**若要设置使用监视窗口的内存分配断点：**  
+**使用“监视”窗口设置内存分配断点：**  
 
 1. 您的应用程序的起点附近设置断点并开始调试。  
    
@@ -195,7 +193,7 @@ Object dump complete.
    
 1. 按 **Enter**。  
    
-   调试器将计算调用，并将结果放入  “值”列。 此值将为**为-1**如果你尚未在内存分配上设置任何断点。  
+   调试器将计算调用，并将结果放入  “值”列。 如果没有在内存分配上设置任何断点，该值将为 -1。  
    
 1. 在中**值**列中，值替换为要调试程序执行中断的内存分配的分配编号。  
 
@@ -203,7 +201,7 @@ Object dump complete.
 
 在对象上设置数据断点可能也有帮助。 有关详细信息，请参阅[使用断点](../debugger/using-breakpoints.md)。  
 
-你也可以在代码中设置内存分配断点。 您可以设置：  
+你也可以在代码中设置内存分配断点。 可以这样设置：  
 
 ```cpp
 _crtBreakAlloc = 18;  
@@ -263,5 +261,5 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 
 ## <a name="see-also"></a>请参阅  
  [CRT 调试堆详细信息](../debugger/crt-debug-heap-details.md)   
- [调试器安全](../debugger/debugger-security.md)   
+ [调试器安全性](../debugger/debugger-security.md)   
  [调试本机代码](../debugger/debugging-native-code.md)

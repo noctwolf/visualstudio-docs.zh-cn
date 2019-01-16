@@ -1,8 +1,6 @@
 ---
 title: 使用 DebuggerDisplay 特性 |Microsoft Docs
-ms.custom: ''
 ms.date: 08/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C#], debugger
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 922e9eea80344d5a02e4f54f173b374ca7faa78e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926197"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951675"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 特性
 <xref:System.Diagnostics.DebuggerDisplayAttribute> 控制对象、属性或字段在调试器变量窗口中的显示方式。 此特性可应用于类型、委托、属性、字段和程序集。  
@@ -35,7 +33,7 @@ ms.locfileid: "49926197"
   
  下表显示 `DebuggerDisplay` 特性的一些可能用法和示例输出。  
   
-|特性|在值列中显示的输出|  
+|特性|显示在“值”列中的输出|  
 |---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> 在具有 `x` 和 `y`字段的类型上使用。|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`参数语法在不同的语言中会有所不同。 因此，使用时要小心。|`String value is [5, 6, 6]`|  
@@ -76,15 +74,15 @@ csc /t:library autoexp.cs
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
 public sealed class MyClass   
-{      
-    public int count { get; set; }      
-    public bool flag { get; set; }      
+{      
+    public int count { get; set; }      
+    public bool flag { get; set; }      
     private string DebuggerDisplay  
-   {         
+   {         
         get  
         {  
              return string.Format("Object {0}", count - 2);  
-        }      
+        }      
     }  
 }  
 ```  
@@ -96,7 +94,7 @@ public sealed class MyClass
 |**名称**|**“值”**|**Type**|  
 |--------------|---------------|--------------|  
 |键|"three"|object {string}|  
-|“值”|3|object {int}|  
+|值|3|object {int}|  
   
 ```csharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  
@@ -177,7 +175,7 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [使用 DebuggerTypeProxy 特性](../debugger/using-debuggertypeproxy-attribute.md)   
+ [使用 DebuggerTypeProxy 属性](../debugger/using-debuggertypeproxy-attribute.md)   
  [创建托管对象的自定义视图](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)   
  [使用调试器显示特性增强调试](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

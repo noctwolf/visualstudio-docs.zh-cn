@@ -1,8 +1,6 @@
 ---
 title: 在 UWP 应用中调试 HTML 和 CSS |Microsoft Docs
-ms.custom: ''
 ms.date: 07/17/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6e812d60daf7e084835c0de9549cd58ff2711fea
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0ea34ba58ec882121b40ca7e7585fa0cb0419356
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916681"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53892710"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 应用中调试 HTML 和 CSS
   
@@ -31,7 +29,7 @@ ms.locfileid: "49916681"
   
  通过使用 DOM 检查工具所提供的交互式调试模型，你可以查看并修改所呈现的 HTML 和 CSS 代码。 你可以在不停止并重新启动调试器的情况下执行这一切操作。
   
- 有关其他 JavaScript 调试功能，例如使用 JavaScript 控制台窗口，并设置断点，请参阅[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)并[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)。  
+ 有关其他 JavaScript 调试功能，例如使用 JavaScript 控制台窗口，并设置断点，请参阅[快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)并[在 Visual Studio 中调试应用](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)。  
   
 ##  <a name="InspectingDOM"></a> 检查实时 DOM  
  DOM 资源管理器展示所呈现的页面的视图，还可使用 DOM 资源管理器更改值并立即看到结果。 这使你可以在无需停止和重新启动调试器的情况下测试更改。 使用此方法与页面进行交互时不更改项目中的源代码，因此当发现代码中要更正的内容时，请对源代码作出更改。  
@@ -47,7 +45,7 @@ ms.locfileid: "49916681"
   
 - 检查如何将 CSS 样式应用到页元素，并跟踪已应用的规则。  
   
-  调试应用程序时，通常需要在 DOM 资源管理器中选择元素。 选择某个元素后，DOM 资源管理器右侧选项卡上显示的值将自动更新，以反映 DOM 资源管理器中的选定元素。 这些选项卡是：“样式” 、“计算” 、“布局” 。 UWP 应用还支持**事件**并**更改**选项卡。 有关选择元素的详细信息，请参见 [Selecting elements](#SelectingElements)。  
+  调试应用程序时，通常需要在 DOM 资源管理器中选择元素。 选择某个元素后，DOM 资源管理器右侧选项卡上显示的值将自动更新，以反映 DOM 资源管理器中的选定元素。 以下是在选项卡：**样式**，**计算**，**布局**。 UWP 应用还支持**事件**并**更改**选项卡。 有关选择元素的详细信息，请参见 [Selecting elements](#SelectingElements)。  
   
 > [!TIP]
 >  如果“DOM 资源管理器”窗口已关闭，请依次选择“调试” > >  以重新打开它。 仅在脚本调试会话期间显示该窗口。  
@@ -159,7 +157,7 @@ ms.locfileid: "49916681"
    > [!TIP]
    >  可按 Alt+Tab 或 F12，在 Visual Studio 和正在运行的应用程序之间切换。  
   
-10. 在“DOM 资源管理器”窗口中，选择 ID 为 `"fView"`的部分的 DIV 元素。 使用箭头键可以查看并选择正确的 DIV 元素。 （向右箭头键可以查看元素的子元素。）  
+10. 在“DOM 资源管理器”窗口中，选择 ID 为 `"fView"`的部分的 DIV 元素。 使用箭头键可以查看并选择正确的 DIV 元素。 （使用向右键可以查看元素的子元素。）  
   
      ![DOM 资源管理器](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
@@ -172,7 +170,7 @@ ms.locfileid: "49916681"
   
      此选项卡显示选定 DOM 元素的每个属性的计算值或最终值。  
   
-12. 打开高度 CSS 规则。 请注意，没有一个级联样式设置为 100px，似乎与为设置的 100%的高度值不一致`#fView`CSS 选择器。 `#fView` 选择器的带有删除线的文本指示内联样式优先于该样式。  
+12. 打开高度 CSS 规则。 请注意，有一个级联样式设置为 100px，似乎与为 `#fView` CSS 选择器设置的 100% 的高度值不一致。 `#fView` 选择器的带有删除线的文本指示内联样式优先于该样式。  
   
      下图显示了 **“已计算”** 选项卡。  
   
@@ -199,7 +197,7 @@ ms.locfileid: "49916681"
   
      情况有所好转。 然而，还有一个问题有待解决，那就是边距看上去太大。  
   
-19. 若要调查，切换到 Visual Studio 并选择**布局**选项卡查看元素的框模型。  
+19. 要进行调查，请切换到 Visual Studio 并选择“布局”选项卡查看元素的框模型。  
   
      在中**布局**选项卡上，可以看到如下：  
   
@@ -225,7 +223,7 @@ ms.locfileid: "49916681"
   
 2.  打开 default.html，然后通过将 `"fView"` DIV 元素的 height 和 width 均设置为 100%，对源代码进行修改。  
   
-3.  选择“调试”工具栏上的 **“刷新 Windows 应用程序”** 按钮（或按 F4）。 按钮外观如下所示：![刷新 Windows 应用程序按钮](../debugger/media/js_refresh.png "JS_Refresh")。  
+3.  选择“调试”工具栏上的 **“刷新 Windows 应用程序”** 按钮（或按 F4）。 该按钮如下所示：。![刷新 Windows 应用按钮](../debugger/media/js_refresh.png "JS_Refresh")。  
   
      随后将重新加载应用程序页面，并且模拟器或 Phone 仿真程序将返回前台。  
   
@@ -256,10 +254,10 @@ ms.locfileid: "49916681"
 >  指针悬停在元素上方时突出显示的元素在 Windows Phone 模拟器中仅部分受支持。  
   
 ## <a name="see-also"></a>请参阅  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
+ [Debug apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
+ [刷新应用 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [调试 WebView 控件](../debugger/debug-a-webview-control.md)   
  [键盘快捷键](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [调试 HTML、 CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [调试 HTML、CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [产品支持和辅助功能](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

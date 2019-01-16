@@ -20,15 +20,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5a0a8846719c6ad57e65e1e308e9884e81e1997d
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: e485223f73a74a97dd388a9c78dd4cf543a92350
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174717"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936186"
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 验证数据是输入到数据对象的值符合数据集的架构内的约束的确认过程。 验证过程还确认这些值都遵循已为你的应用程序建立的规则。 最好验证之前将更新发送到基础数据库的数据。 这将减少错误，以及潜在的应用程序和数据库之间的往返行程量。
@@ -40,9 +39,9 @@ ms.locfileid: "37174717"
 ## <a name="validate-data"></a>验证数据
  在数据集中的验证是按以下方式实现的：
 
--   通过创建自己的特定于应用程序的验证，可在更改过程中检查各个数据列中的值。 有关详细信息，请参阅[如何： 在列更改过程中验证数据](validate-data-in-datasets.md)。
+-   通过创建自己的特定于应用程序的验证，可在更改过程中检查各个数据列中的值。 有关更多信息，请参见[如何：在列更改过程中验证数据](validate-data-in-datasets.md)。
 
--   通过创建自己的特定于应用程序的验证，可以检查整个数据时对值的数据行发生了变化。 有关详细信息，请参阅[如何： 在行更改过程中验证数据](validate-data-in-datasets.md)。
+-   通过创建自己的特定于应用程序的验证，可以检查整个数据时对值的数据行发生了变化。 有关更多信息，请参见[如何：在行更改过程中验证数据](validate-data-in-datasets.md)。
 
 -   通过创建关键字、 唯一约束，等等为数据集的实际架构定义的一部分。
 
@@ -66,7 +65,7 @@ ms.locfileid: "37174717"
 
 ## <a name="data-update-events"></a>数据更新事件
 
-|事件|描述|
+|事件|说明|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|正在更改的列中值。 该事件，传递的行和列以及建议的新值。|
 |<xref:System.Data.DataTable.ColumnChanged>|列中的值已更改。 该事件，传递的行和列以及建议的值。|
@@ -90,7 +89,7 @@ ms.locfileid: "37174717"
 
 -   通过设置列错误拒绝建议的值 (<xref:System.Data.DataRow.SetColumnError%2A>) 从列更改事件处理程序中。
 
--   （可选） 使用<xref:System.Windows.Forms.ErrorProvider>控件来向用户显示一条错误消息。 有关详细信息，请参阅[ErrorProvider 组件](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms)。
+-   （可选） 使用<xref:System.Windows.Forms.ErrorProvider>控件来向用户显示一条错误消息。 有关详细信息，请参阅 [ErrorProvider 组件](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms)。
 
 此外可以在执行验证<xref:System.Data.DataTable.RowChanging>事件。
 
@@ -99,7 +98,7 @@ ms.locfileid: "37174717"
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>若要验证数据的行时将更改 (Visual Basic)
 
-1.  打开中的数据集**数据集设计器**。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  在“数据集设计器”中打开数据集。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  双击想要验证的表的标题栏。 此操作将自动创建<xref:System.Data.DataTable.RowChanging>事件处理程序<xref:System.Data.DataTable>数据集的分部类文件中。
 
@@ -108,9 +107,9 @@ ms.locfileid: "37174717"
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
-### <a name="to-validate-data-when-a-row-changes-c"></a>若要验证数据的行时更改 (C#)
+### <a name="to-validate-data-when-a-row-changes-c"></a>若要验证数据行发生更改时 (C#)
 
-1.  打开中的数据集**数据集设计器**。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  在“数据集设计器”中打开数据集。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  双击想要验证的表的标题栏。 此操作将创建的分部类文件<xref:System.Data.DataTable>。
 
@@ -212,5 +211,5 @@ ms.locfileid: "37174717"
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)
-- [如何： 验证 Windows 窗体 DataGridView 控件中的数据](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [如何： 显示与 Windows 窗体 ErrorProvider 组件窗体验证的错误图标](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [如何：验证 Windows 窗体 DataGridView 控件中的数据](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [如何：显示窗体验证与 Windows 窗体 ErrorProvider 组件的错误图标](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

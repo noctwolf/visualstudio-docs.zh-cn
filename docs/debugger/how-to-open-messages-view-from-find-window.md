@@ -1,8 +1,6 @@
 ---
-title: 如何： 从查找窗口打开消息视图 |Microsoft Docs
-ms.custom: ''
+title: 如何：从查找窗口打开消息视图 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Messages View in Spy++, opening
@@ -13,14 +11,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08f832e61bdb39bc87b59fdd64deab8cd86382a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: acd3df773748fe85832868b0286613f86ecbe8a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847084"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>如何：从查找窗口打开消息视图
+# <a name="how-to-open-messages-view-from-find-window"></a>如何：从“查找”窗口打开消息视图
 您可能会发现使用方便**查找窗口**对话框以选择目标窗口中，然后打开该窗口的消息视图。  
 
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>若要打开消息视图窗口使用查找窗口对话框  
@@ -39,7 +37,7 @@ ms.locfileid: "49839214"
 
 4. 下**显示**，选择**消息**。  
 
-5. 按**确定**。  
+5. 按“确定”。  
 
     空白[消息视图](../debugger/messages-view.md)窗口将打开，和一个**消息**菜单添加到 Spy + + 工具栏。  
 

@@ -18,15 +18,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 673c364c1750afbaa4b319c40550be7cfac3b53b
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
-ms.translationtype: MT
+ms.openlocfilehash: 260ea65af041e6a50afb163f697d5ff366cff825
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131968"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53835979"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填充数据集
 
@@ -37,13 +36,13 @@ TableAdapter 组件填充数据库，基于一个或多个查询或您指定的�
 
 TableAdapter 操作有关的详细信息，您可以直接跳到以下主题之一：
 
-|主题|描述|
+|主题|说明|
 |-----------|-----------------|
 |[创建和配置 Tableadapter](../data-tools/create-and-configure-tableadapters.md)|如何使用设计器创建和配置 Tableadapter|
 |[创建参数化 TableAdapter 查询](../data-tools/create-parameterized-tableadapter-queries.md)|如何使用户能够为 TableAdapter 过程或查询提供参数|
 |[使用 TableAdapter 直接访问数据库](../data-tools/directly-access-the-database-with-a-tableadapter.md)|如何使用 Tableadapter 的 Dbdirect 方法|
 |[在填充数据集时关闭约束](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|如何更新数据时使用 foreign key 约束|
-|[如何扩展 TableAdapter 的功能](../data-tools/fill-datasets-by-using-tableadapters.md)|如何将自定义代码添加到 Tableadapter|
+|[如何：扩展 TableAdapter 的功能](../data-tools/fill-datasets-by-using-tableadapters.md)|如何将自定义代码添加到 Tableadapter|
 |[将 XML 数据读入到数据集中](../data-tools/read-xml-data-into-a-dataset.md)|如何使用 XML|
 
 <a name="tableadapter-overview"></a>
@@ -54,7 +53,7 @@ Tableadapter 是设计器生成的组件，连接到数据库、 运行的查询
 
 ![客户端应用程序中的数据流](../data-tools/media/clientdatadiagram.gif)
 
-Tableadapter 的设计时**数据集设计器**，不会作为嵌套类的生成的 TableAdapter 类<xref:System.Data.DataSet>。 它们位于特定于每个数据集的单独命名空间中。 例如，如果您有一个名为的数据集`NorthwindDataSet`，与关联的 Tableadapter<xref:System.Data.DataTable>中的 s`NorthwindDataSet`会采用`NorthwindDataSetTableAdapters`命名空间。 若要以编程方式访问特定的 TableAdapter，您必须声明 TableAdapter 的新实例。 例如：
+Tableadapter 的设计时**数据集设计器**，不会作为嵌套类的生成的 TableAdapter 类<xref:System.Data.DataSet>。 它们位于特定于每个数据集的单独命名空间中。 例如，如果您有一个名为的数据集`NorthwindDataSet`，与关联的 Tableadapter<xref:System.Data.DataTable>中的 s`NorthwindDataSet`会采用`NorthwindDataSetTableAdapters`命名空间。 若要以编程方式访问特定的 TableAdapter，您必须声明 TableAdapter 的新实例。 例如:
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -91,7 +90,7 @@ TableAdapter 类不是属于[!INCLUDE[dnprdnshort](../code-quality/includes/dnpr
 
 以下是常用的方法和 Tableadapter 的属性：
 
-|成员|描述|
+|成员|说明|
 |------------|-----------------|
 |`TableAdapter.Fill`|TableAdapter 的关联的数据的 TableAdapter 的结果表中填充`SELECT`命令。|
 |`TableAdapter.Update`|将更改发送回数据库，并返回一个整数，表示更新影响的行数。 有关详细信息，请参阅[使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)。|
@@ -116,7 +115,7 @@ Tableadapter 使用数据命令来读取和写入数据库中。 使用 TableAda
 
 ## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter 支持可以为 null 的类型
 
-Tableadapter 支持可以为 null 的类型`Nullable(Of T)`和`T?`。 若要深入了解 Visual Basic 中可以为 null 的类型，请参阅[可以为 null 的值类型](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)。 有关 C# 中可以为 null 类型的详细信息，请参阅[使用 null 的类型](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)。
+Tableadapter 支持可以为 null 的类型`Nullable(Of T)`和`T?`。 若要深入了解 Visual Basic 中可以为 null 的类型，请参阅[可以为 null 的值类型](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)。 有关详细信息中可以为 null 的类型C#，请参阅[使用 null 的类型](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)。
 
 <a name="tableadaptermanager-reference"></a>
 
@@ -128,7 +127,7 @@ TableAdapterManager 类不是属于[!INCLUDE[dnprdnshort](../code-quality/includ
 
 以下是常用的方法和属性`TableAdapterManager`类：
 
-|成员|描述|
+|成员|说明|
 |------------|-----------------|
 |`UpdateAll` 方法|将保存数据的所有表中的所有数据。|
 |`BackUpDataSetBeforeUpdate` 属性|确定是否在执行前创建数据集的备份副本`TableAdapterManager.UpdateAll`方法。一个布尔值。|
@@ -137,7 +136,7 @@ TableAdapterManager 类不是属于[!INCLUDE[dnprdnshort](../code-quality/includ
 
 ## <a name="security"></a>安全性
 
-CommandType 属性设置为使用数据命令时<xref:System.Data.CommandType.Text>，仔细检查并向其传递到数据库之前从客户端发送的信息。 恶意用户可能会尝试发送 （注入） 已修改或其他 SQL 语句，以获得未经授权的访问或破坏数据库。 将内容传输到数据库的用户输入之前，始终验证信息有效。 一种最佳做法是始终使用参数化的查询或存储的过程在可能的情况。
+CommandType 属性设置为使用数据命令时<xref:System.Data.CommandType.Text>，仔细检查并向其传递到数据库之前从客户端发送的信息。 恶意用户会设法发送（注入）经过修改或附加的 SQL 语句，企图对数据库进行未经授权的访问或破坏数据库。 将内容传输到数据库的用户输入之前，始终验证信息有效。 一种最佳做法是始终使用参数化的查询或存储的过程在可能的情况。
 
 ## <a name="see-also"></a>请参阅
 

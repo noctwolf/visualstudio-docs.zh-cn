@@ -1,8 +1,6 @@
 ---
 title: 部署 64 位应用程序的必备组件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -20,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80ed8d652a36235ef43ce0cdeb78729d560be476
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 86d7512101adf58f13a07481910ab1c28251b8da
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831258"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53885246"
 ---
-# <a name="deploy-prerequisites-for-64-bit-applications"></a>部署 64 位应用程序的先决条件
-ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台是**x86**对于 32 位平台， **x64**的计算机支持 AMD64 和 EM64T 指令集，并**Itanium**为 64 位 Itanium 处理器。  
+# <a name="deploy-prerequisites-for-64-bit-applications"></a>部署 64 位应用程序的系统必备
+ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台为“x86”（32 位平台）、“x64”（支持 AMD64 和 EM64T 指令集的计算机）以及“Itanium”（64 位 Itanium 处理器）。  
 
 ## <a name="prerequisites"></a>系统必备  
  下表列出了可用作 64 位应用程序安装的系统必备组件的可再发行组件。  
@@ -38,13 +36,13 @@ ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台是**
 
 | 可再发行组件 | x64 支持 | IA64 支持 |
 | - |-------------|--------------|
-| [!INCLUDE[vsto_runtime](../deployment/includes/vsto_runtime_md.md)] | 是 | 否 |
-| Visual C++ 2010 运行库 (IA64) | 否 | 是 |
-| Visual C++ 2010 运行库 (x64) | 是 | 否 |
+| [!INCLUDE[vsto_runtime](../deployment/includes/vsto_runtime_md.md)] | 是 | No |
+| Visual C++ 2010 运行库 (IA64) | No | 是 |
+| Visual C++ 2010 运行库 (x64) | 是 | No |
 | Microsoft .NET Framework 4（x86 和 x64） | 是 | |
 | Microsoft .NET Framework 4 Client Profil（x86 和 x64） | 是 | |
 
 ## <a name="see-also"></a>请参阅  
  [部署应用程序、 服务和组件](../deployment/deploying-applications-services-and-components.md)   
- [如何： 与 ClickOnce 应用程序安装的必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [如何：将系统必备与 ClickOnce 应用程序一起安装](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [64 位应用程序](/dotnet/framework/64-bit-apps)

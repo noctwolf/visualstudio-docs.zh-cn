@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd24485d02d20bf4ab1b5def30e34b8d14a71cb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9b4631b320138d045e910c612c1fa4558a07e56
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955248"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269219"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>演练：分析托管的代码进行代码缺陷
 
@@ -183,13 +183,11 @@ ms.locfileid: "53955248"
 
 ## <a name="exclude-code-analysis-warnings"></a>排除代码分析警告
 
-### <a name="to-exclude-code-defect-warnings"></a>若要排除代码缺陷警告
-
 1. 对于每一个剩余警告，请执行以下操作：
 
     1. 选择在警告**错误列表**。
 
-    1. 右键单击菜单或上下文菜单中选择**禁止** > **在禁止显示文件**。
+    1. 右键单击菜单 （上下文菜单） 中，选择**禁止** > **在禁止显示文件**。
 
 1. 重新生成项目。
 
