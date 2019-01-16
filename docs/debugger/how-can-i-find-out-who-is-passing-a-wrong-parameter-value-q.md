@@ -43,7 +43,7 @@ ms.locfileid: "53988091"
   
 3.  在“断点条件”对话框中，单击“条件”复选框。 请参阅[高级断点](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)。  
   
-4.  在文本框中输入一个表达式（例如 `Var==3`），此处 `Var` 是包含错误值的参数的名称，`3` 是传给此参数的错误值。  
+4.  在文本框中输入一个表达式，例如 `Var==3`，此处 `Var` 是包含错误值的参数名称，`3` 是传给此参数的错误值。  
   
 5.  选择“为真”单选按钮，单击“确定”按钮。  
   

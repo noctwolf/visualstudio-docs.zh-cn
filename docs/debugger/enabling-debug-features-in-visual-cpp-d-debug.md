@@ -1,5 +1,5 @@
 ---
-title: 启用调试 Visual c + + 中的功能 (-D_DEBUG) |Microsoft Docs
+title: 在 Visual C++ 中启用调试功能 (-D_DEBUG) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:

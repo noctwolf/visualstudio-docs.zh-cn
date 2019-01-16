@@ -22,9 +22,9 @@ ms.locfileid: "53821187"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>在调试器中创建本机对象的自定义视图
 
-Visual Studio *Natvis* framework 自定义本机类型如出现在调试器变量窗口的方式**局部变量**和**观看**windows，在**数据提示**。 Natvis 可视化效果可使创建在调试期间更可见的类型。 
+Visual Studio *Natvis* 框架可以自定义本机类型在调试器变量窗口（例如**局部变量**、**监视**以及**数据提示**窗口）中显示的方式。 Natvis 的可视化功能可以让你创建的类型在调试期间更加直观清晰。 
 
-Natvis 替换*autoexp.dat*了 XML 语法、 更好的诊断、 版本控制，Visual Studio 的早期版本中的文件和支持的多个文件。  
+Natvis 替换了 Visual Studio 早期版本中的 *autoexp.dat* 文件，提供了 XML 语法、更好的诊断功能、版本控制功能以及多文件支持功能。  
 
 Natvis 并不适用于：
 

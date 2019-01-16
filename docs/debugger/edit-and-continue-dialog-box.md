@@ -1,5 +1,5 @@
 ---
-title: 编辑并继续对话框的 |Microsoft Docs
+title: “编辑并继续”对话框 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:

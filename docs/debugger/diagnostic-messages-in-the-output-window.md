@@ -40,11 +40,11 @@ ms.locfileid: "53906743"
 ## <a name="output-methods"></a>输出方法  
  <xref:System.Diagnostics.Trace> 和 <xref:System.Diagnostics.Debug> 类提供下列输出方法：  
   
-- 在不中断执行情况下输出信息的各种 `Write` 方法。 这些方法取代了在 Visual Basic 早期版本中使用的 `Debug.Print` 方法。  
+- 各种 `Write` 方法，在执行不中断的情况下输出信息。 这些方法取代了在 Visual Basic 早期版本中使用的 `Debug.Print` 方法。  
   
 - <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 和<xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>方法，指定的条件失败时中断执行并输出信息。 默认情况下，`Assert` 方法显示对话框中的信息。 有关详细信息，请参阅[托管代码中的断言](../debugger/assertions-in-managed-code.md)。  
   
-- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName>和<xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>始终中断执行并输出信息的方法。 默认情况下，`Fail` 方法在对话框中显示信息。  
+- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName>和<xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>始终中断执行并输出信息的方法。 默认情况下，在对话框中显示 `Fail` 方法信息。  
   
 **输出**窗口可以还显示有关的信息：  
   

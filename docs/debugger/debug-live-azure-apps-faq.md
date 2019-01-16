@@ -17,7 +17,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 01/02/2019
 ms.locfileid: "53924158"
 ---
-# <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>快照调试 Visual Studio 中的常见问题
+# <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>在 Visual Studio 中进行快照调试的常见问答解答
 
 下面是一系列调试实时 Azure 应用程序使用快照调试程序时可能出现的问题。
 

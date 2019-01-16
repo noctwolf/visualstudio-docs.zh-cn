@@ -40,7 +40,7 @@ ms.locfileid: "53942208"
   
     1.  在“开始”菜单上，指向“附件”，然后单击“命令提示”。  
   
-    2.  在 Windows 命令提示处，键入：  
+    2.  在 Windows 命令提示符中，键入：  
   
          `net use /delete computer_name`  
   
