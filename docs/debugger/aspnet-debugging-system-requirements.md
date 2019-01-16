@@ -37,14 +37,14 @@ ms.locfileid: "53824033"
 ## <a name="security-requirements"></a>安全性要求  
  对于远程调试，本地和远程计算机必须位于域设置或工作组设置上。  
   
- 若要调试[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]（宿主应用程序池） 的工作进程，您必须有权调试该进程。 默认情况下[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]低于 IIS 6.0 的应用程序以运行**ASPNET**用户。 在 IIS 6.0 和 IIS 7.0**网络服务**帐户是默认值。 如果辅助进程作为 **“ASPNET”** 或 **“NETWORK SERVICE”** 运行，则您必须具有管理员特权才能对它进行调试。
+ 若要调试 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程（由应用程序池托管），则必须具有调试该进程的权限。 默认情况下，IIS 6.0 之前的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序作为“ASPNET”用户运行。 在 IIS 6.0 和 IIS 7.0 中，“网络服务”帐户为默认帐户。 如果工作进程作为“ASPNET”或“网络服务”运行，则必须具有管理员权限才能对其进行调试。
 
  > [!IMPORTANT]
  > 从 Windows Server 2008 R2 开始，我们建议使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)作为为每个应用程序池标识。
   
  [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程的名称根据调试方案和 IIS 版本的不同而不同。 有关更多信息，请参见[如何：查找 ASP.NET 进程名称](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。  
   
- 可以通过编辑运行 IIS 的服务器上的 machine.config 文件来更改用于运行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程的用户帐户。 实现此目的的最佳方式是使用 **“Internet 信息服务(IIS)管理器”**。 有关更多信息，请参见[如何：在用户帐户下运行工作进程](../debugger/how-to-run-the-worker-process-under-a-user-account.md)。  
+ 可以通过编辑运行 IIS 的服务器上的 machine.config 文件来更改运行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程的用户帐户。 执行此操作的最佳方式是使用 Internet Information Services (IIS) 管理器。 有关详细信息，请参阅[如何：在用户帐户下运行工作进程](../debugger/how-to-run-the-worker-process-under-a-user-account.md)。  
   
  如果将 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程更改为在自己的用户帐户下运行，则即使不是运行 IIS 的服务器上的管理员也可。  
   
