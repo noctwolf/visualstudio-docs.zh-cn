@@ -1,5 +1,5 @@
 ---
-title: 在保存数据前提交数据绑定控件上的进程内编辑
+title: 在保存数据前提交数据绑定控件中正在进行的编辑
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,37 +17,36 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 34cf76adc56078303352bef9f01cef5ba774e2be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: e4ab8d46bd9c19a747231f87eb7ef0bd40025c69
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921600"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53824400"
 ---
-# <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>在保存数据前提交数据绑定控件上的进程内编辑
+# <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>在保存数据前提交数据绑定控件中正在进行的编辑
 
-当编辑数据绑定控件中的值，用户必须关闭当前的记录，以将更新后的值提交到该控件绑定到基础数据源中导航。 当拖动项时从[数据源窗口](add-new-data-sources.md)拖到窗体，拖放的第一项生成的代码插入**保存**按钮单击事件的<xref:System.Windows.Forms.BindingNavigator>。 此代码调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法<xref:System.Windows.Forms.BindingSource>。 因此，调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法生成仅为第一个<xref:System.Windows.Forms.BindingSource>，它将添加到窗体。
+在编辑数据绑定控件中的值时，用户必须导航过当前记录，若要提交到该控件绑定到基础数据源的更新后的值。 当将项从[数据源窗口](add-new-data-sources.md)拖到窗体，则删除的第一项生成的代码插入**保存**按钮单击事件的<xref:System.Windows.Forms.BindingNavigator>。 此代码将调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法的<xref:System.Windows.Forms.BindingSource>。 因此，调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法生成仅对第一个<xref:System.Windows.Forms.BindingSource>，添加到窗体。
 
-<xref:System.Windows.Forms.BindingSource.EndEdit%2A>调用将提交在过程中，当前正在编辑的任何数据绑定控件中的任何更改。 因此，如果数据绑定控件仍然具有焦点并且单击**保存**按钮，所有挂起的编辑，因为在执行真正的保存之前提交事务，控件 (`TableAdapterManager.UpdateAll`方法)。
+<xref:System.Windows.Forms.BindingSource.EndEdit%2A> 调用将提交当前正在编辑的任何数据绑定控件中的所有更改。 因此，如果数据绑定控件仍具有焦点，则单击“保存”按钮后，会先提交该控件中所有挂起的编辑，然后再执行真正的保存（`TableAdapterManager.UpdateAll` 方法）。
 
-你可以配置应用程序以自动提交更改，即使用户尝试保存数据，而不保存的一部分提交所做的更改，过程。
+即使在用户尝试保存数据，而提交所做的更改，保存的一部分，可以配置为自动提交更改，应用程序进程。
 
 > [!NOTE]
-> 设计器添加`BindingSource.EndEdit`代码仅为第一个项目拖放到窗体。 因此，你必须添加要调用的代码行<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法为每个<xref:System.Windows.Forms.BindingSource>窗体上。 你可以将手动添加代码行以调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法为每个<xref:System.Windows.Forms.BindingSource>。 或者，可以添加`EndEditOnAllBindingSources`到窗体的方法，在执行保存之前调用它。
+> 设计器添加`BindingSource.EndEdit`代码仅对第一项的拖放到窗体上。 因此，您必须添加要调用的代码行<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法为每个<xref:System.Windows.Forms.BindingSource>窗体上。 您可以手动添加一行代码来调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法为每个<xref:System.Windows.Forms.BindingSource>。 或者，可以添加`EndEditOnAllBindingSources`到窗体的方法，并在执行保存之前调用它。
 
-下面的代码使用[LINQ （语言集成查询）](/dotnet/csharp/linq/)查询以循环访问所有<xref:System.Windows.Forms.BindingSource>组件和调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法为每个<xref:System.Windows.Forms.BindingSource>窗体上。
+下面的代码使用[LINQ （语言集成查询）](/dotnet/csharp/linq/)查询，以循环访问所有<xref:System.Windows.Forms.BindingSource>组件和调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法为每个<xref:System.Windows.Forms.BindingSource>窗体上。
 
-## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>若要调用 EndEdit 的窗体上的所有 BindingSource 组件
+## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>若要在窗体上的所有 BindingSource 组件都调用 EndEdit
 
-1.  将以下代码添加到窗体包含<xref:System.Windows.Forms.BindingSource>组件。
+1.  将以下代码添加到包含的窗体<xref:System.Windows.Forms.BindingSource>组件。
 
      [!code-csharp[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#1](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_1.vb)]
 
-2.  添加以下调用以保存该窗体的数据的紧前面的代码行 (`TableAdapterManager.UpdateAll()`方法):
+2.  添加以下调用以保存窗体的数据的紧前面的代码行 (`TableAdapterManager.UpdateAll()`方法):
 
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]

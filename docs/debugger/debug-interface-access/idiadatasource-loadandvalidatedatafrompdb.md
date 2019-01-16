@@ -1,8 +1,6 @@
 ---
 title: 'Idiadatasource:: Loadandvalidatedatafrompdb |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 272b43f7e33ce495aabd53f33022bdeaf4b951fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 88bb10e46d9007878282338aff0379c57eca2aba
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911697"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
 打开和验证程序数据库 (.pdb) 文件匹配，所提供的签名信息并准备将.pdb 文件作为调试数据源。  
@@ -27,7 +25,7 @@ ms.locfileid: "49948897"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT loadAndValidateDataFromPdb (   
+HRESULT loadAndValidateDataFromPdb (   
    LPCOLESTR pdbPath,  
    GUID*     pcsig70,  
    DWORD     sig,  
@@ -51,7 +49,7 @@ HRESULT loadAndValidateDataFromPdb (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。  
   
-|“值”|描述|  
+|“值”|说明|  
 |-----------|-----------------|  
 |E_PDB_NOT_FOUND|无法打开该文件，或该文件具有无效的格式。|  
 |E_PDB_FORMAT|尝试访问具有过时的格式的文件。|  
@@ -91,6 +89,6 @@ if (FAILED(hr))
   
 ## <a name="see-also"></a>请参阅  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [Idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [Idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
+ [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
+ [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
  [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

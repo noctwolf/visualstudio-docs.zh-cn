@@ -1,8 +1,6 @@
 ---
-title: 如何： 在进程视图中的进程搜索 |Microsoft Docs
-ms.custom: ''
+title: 如何：搜索在进程视图中进程 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Processes view
@@ -13,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8129516476977e526cde9c3eb3dbe546bdbe3876
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4ba4d0f6aee4b81e5be4c9ff896043bd8a164abb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53988749"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在进程视图中搜索进程
 可以通过将其进程 ID 或模块字符串用作搜索条件来搜索特定的进程在进程视图中。 此外可以指定搜索的初始传递方向。 进程树中，在对话框中的字段将显示所选的进程的属性。  

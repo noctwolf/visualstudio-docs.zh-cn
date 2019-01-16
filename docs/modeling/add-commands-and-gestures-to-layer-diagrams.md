@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2322980bcc3cc1c18052b7949cc9e4752ebfaa9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb7dfe94363d757c1ac15a8a44d21d69304c1e60
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940857"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270133"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>向依赖项关系图添加命令和手势
 
-您可以定义上下文菜单命令和笔势处理程序在 Visual Studio 中的依赖项关系图上。 可以将这些扩展打包到 Visual Studio 集成扩展 (VSIX) 中，以便将其分发给其他 Visual Studio 用户。
+可以定义右键单击菜单命令和笔势处理程序在 Visual Studio 中的依赖项关系图上。 可以将这些扩展打包到 Visual Studio 集成扩展 (VSIX) 中，以便将其分发给其他 Visual Studio 用户。
 
 如果你愿意，可以在同一 Visual Studio 项目中定义多个命令和笔势处理程序。 还可以将多个此类项目合并到一个 VSIX 中。 例如，可以定义包含层命令和域特定语言的单个 VSIX。
 
@@ -95,7 +95,7 @@ ms.locfileid: "53940857"
    |Microsoft.VisualStudio.ArchitectureTools.Extensibility|修改关系图上的形状|
    |System.ComponentModel.Composition|使用 Managed Extensibility Framework (MEF) 定义组件|
    |Microsoft.VisualStudio.Modeling.Sdk.[版本号]|定义建模扩展|
-   |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|更新形状和关系图|
+   |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本号]|更新形状和关系图|
 
 5.  编辑 C# 类库项目中的类文件，以包含你的扩展的代码。 有关详细信息，请参阅以下章节之一：
 

@@ -8,20 +8,21 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a741a506338066dddbee2cdbfd701ad3bfb4c922
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea0b73470bc9f3bed76328c55d823cef3c5b8e9e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929693"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269314"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>控制颜色、线型和其他形状属性
-某些形状属性如颜色可以公开-即，链接到形状的域属性。 其他人需要进行直接控制。
+
+某些形状属性，如颜色可以公开。 也就是说，属性可以链接到形状的域属性。 其他人需要进行直接控制。
 
 ## <a name="exposing-a-property"></a>公开属性
  某些形状属性，如颜色可以链接到域属性的值。
 
- 在 DSL 定义中，选择形状、 连接符或关系图类。 在其上下文菜单，选择**公开添加**，然后选择所需的属性，如填充颜色。
+ 在 DSL 定义中，选择形状、 连接符或关系图类。 其右键单击菜单上，选择**公开添加**，然后选择所需的属性，如填充颜色。
 
  现在，该形状具有域设置的属性，您可以在程序代码中或以用户身份。
 

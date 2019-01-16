@@ -1,8 +1,6 @@
 ---
-title: 类符号类型的层次结构 |Microsoft 文档
-ms.custom: ''
+title: 类符号类型的层次结构 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,38 +12,38 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa8aeb208c4015d205efbfe018ee324a8ba0ede6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: fa257de86367f2531cce5c57080cd059856fa82a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468847"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902849"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>符号类型的类层次结构
-下表介绍类层次结构中的符号类型。  
+下表介绍的类层次结构中的符号类型。  
   
 ## <a name="symbol-types"></a>符号类型  
   
-|符号类型|描述|  
+|符号类型|说明|  
 |-----------------|-----------------|  
-|[UDT](../../debugger/debug-interface-access/udt.md)|用于表示每个类、 结构和联合的符号。|  
+|[UDT](../../debugger/debug-interface-access/udt.md)|符号用于表示每个类、 结构和联合。|  
 |[枚举（调试接口访问 SDK）](../../debugger/debug-interface-access/enum-debug-interface-access-sdk.md)|枚举类型的符号。|  
 |[PointerType](../../debugger/debug-interface-access/pointertype.md)|指针类型的符号。|  
 |[ArrayType](../../debugger/debug-interface-access/arraytype.md)|数组类型的符号。|  
-|[BaseType](../../debugger/debug-interface-access/basetype.md)|基类型的符号|  
+|[BaseType](../../debugger/debug-interface-access/basetype.md)|对基类型的符号|  
 |[Typedef（调试接口访问 SDK）](../../debugger/debug-interface-access/typedef-debug-interface-access-sdk.md)|引入了其他类型的名称的符号。|  
-|[BaseClass](../../debugger/debug-interface-access/baseclass.md)|用于每个基类的用户定义的类型 (UDT) 符号。|  
+|[BaseClass](../../debugger/debug-interface-access/baseclass.md)|用于用户定义类型 (UDT) 的每个基类的符号。|  
 |[友元（调试接口访问 SDK）](../../debugger/debug-interface-access/friend-debug-interface-access-sdk.md)|友元类和友元函数的符号。|  
-|[FunctionType](../../debugger/debug-interface-access/functiontype.md)|对于每个唯一的函数签名的符号。|  
-|[FunctionArgType](../../debugger/debug-interface-access/functionargtype.md)|函数为每个参数的符号。|  
+|[FunctionType](../../debugger/debug-interface-access/functiontype.md)|对于每个唯一函数签名的符号。|  
+|[FunctionArgType](../../debugger/debug-interface-access/functionargtype.md)|每个参数的函数的的符号。|  
 |[VTableShape](../../debugger/debug-interface-access/vtableshape.md)|虚拟表的大小的符号。|  
 |[VTable](../../debugger/debug-interface-access/vtable.md)|一个虚拟表的符号。|  
-|[CustomType](../../debugger/debug-interface-access/customtype.md)|供应商定义的类型的符号。|  
-|[ManagedType](../../debugger/debug-interface-access/managedtype.md)|对于在元数据中定义的类型的符号。|  
+|[CustomType](../../debugger/debug-interface-access/customtype.md)|对于供应商定义的类型的符号。|  
+|[ManagedType](../../debugger/debug-interface-access/managedtype.md)|对于元数据中定义的类型的符号。|  
 |[维度](../../debugger/debug-interface-access/dimension.md)|数组维数的符号。|  
   
 > [!NOTE]
->  每个符号可以容纳有关的符号，以及对其他符号的引用的属性。 中的各个符号主题列出了这些属性。  
+>  每个符号可以保存有关符号，以及对其他符号的引用信息的属性。 单个符号主题中列出了这些属性。  
   
 ## <a name="see-also"></a>请参阅  
  [CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)   

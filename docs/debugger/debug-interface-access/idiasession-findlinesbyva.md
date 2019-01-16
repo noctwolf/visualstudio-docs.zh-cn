@@ -1,8 +1,6 @@
 ---
 title: 'Idiasession:: Findlinesbyva |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c199411504db6d4465b6e02f4ffaad988c48b46c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c7c94558cb7ee4c3cb71b323f3dc50fcec7cc100
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870648"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838604"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 检索指定的虚拟地址 (VA) 范围中包含行的行号信息。  
@@ -27,7 +25,7 @@ ms.locfileid: "49870648"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT findLinesByVA (   
+HRESULT findLinesByVA (   
    ULONGLONG             va,  
    DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  

@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
@@ -14,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3ef644984b7c7fd364d389fb437b04f02d96b566
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: a1c58ca9d567db88fb8267d56e071c11ba8aef27
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53056316"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870224"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>在 Visual Studio 中设计 XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,25 +33,25 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 ### <a name="shared-capabilities"></a>共享功能
  对于最基本的任务，IDE for Visual Studio 和 Blend for Visual Studio 共享一组相同的窗口和功能（其中有一些细微的差异）。 一些要点包括：
 
--   **一致的用户界面：** 您可以设计您的应用程序的熟悉的上下文中的 Visual Studio 用户界面，这使 Ide 之间的切换成为更加愉快且高效的体验。 Blend for Visual Studio 使用 Visual Studio 深色主题，该主题可提高你的内容与用户界面之间的对比度，从而帮助你专注于正在设计的内容。 请参阅[使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
+-   **一致的用户界面：** 可以在熟悉的 Visual Studio 用户界面环境中设计应用程序，这会使 IDE 之间的切换成为更加愉快且高效的体验。 Blend for Visual Studio 使用 Visual Studio 深色主题，该主题可提高你的内容与用户界面之间的对比度，从而帮助你专注于正在设计的内容。 请参阅[使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
 
      ![Blend for Visual Studio IDE](../designers/media/blendide.png "BlendIDE")
 
--   XAML IntelliSense这两个 Ide 都支持所有常见功能期望从 IntelliSense 包括语句完成、 对常见编辑器操作，如注释和格式设置代码，并导航到资源、 绑定和代码的支持。
+-   **XAML IntelliSense：** 两个 IDE 都支持期望从 IntelliSense 获得的所有常见功能，包括语句完成、对常见编辑器操作（如对代码进行注释和格式设置）的支持以及针对资源、绑定和代码进行的导航。
 
--   基础调试功能现在可以在 Blend 中，包括设置断点来调试正在运行的应用在代码中进行调试。 为了保持与 Visual Studio 一致的调试体验，Blend for Visual Studio 包含大多数 Visual Studio 调试窗口和工具栏。 高级调试功能（如诊断和代码分析）仅在 Visual Studio 中可用。 请参阅 [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)。
+-   **基础调试功能：** 现在可以在 Blend 中进行调试，包括在代码中设置断点来调试正在运行的应用。 为了保持与 Visual Studio 一致的调试体验，Blend for Visual Studio 包含大多数 Visual Studio 调试窗口和工具栏。 高级调试功能（如诊断和代码分析）仅在 Visual Studio 中可用。 请参阅 [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)。
 
--   文件重新加载体验可编辑 Blend for Visual Studio 或 Visual Studio 中的 XAML 文件，并使它们之间切换时自动重载编辑的文件。 若要最大程度减少工作流中断，现在可以在文件重载对话框中设置文件重载首选项。
+-   **文件重载体验：** 可以在 Blend for Visual Studio 或 Visual Studio 中编辑 XAML 文件，并且在它们之间切换时自动重载编辑后的文件。 若要最大程度减少工作流中断，现在可以在文件重载对话框中设置文件重载首选项。
 
      ![文件重载体验](../designers/media/blendfilereload.png "BlendFileReload")
 
--   **已同步的布局和设置：** 自定义布局可以保存并应用工具窗口布局自定义项。 使用相同 Microsoft 帐户登录时，Visual Studio 会在计算机之间为 Visual Studio 和 Blend for Visual Studio 同步这些自定义项和首选项。 请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+-   **已同步的布局和设置：** 通过自定义布局可以保存并应用工具窗口布局自定义项。 使用相同 Microsoft 帐户登录时，Visual Studio 会在计算机之间为 Visual Studio 和 Blend for Visual Studio 同步这些自定义项和首选项。 请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
--   **一个常见的解决方案资源管理器：** 在解决方案资源管理器为您提供您的项目和其文件，以及可用于访问与之关联的命令的结构化视图。 借助解决方案资源管理器，可以更方便地处理大型企业项目。 请参阅[解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)。
+-   **通用的解决方案资源管理器：** 解决方案资源管理器可提供项目及其文件的组织有序的视图，并且可用于访问与它们关联的命令。 借助解决方案资源管理器，可以更方便地处理大型企业项目。 请参阅[解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)。
 
--   团队资源管理器使用团队资源管理器可以管理您的项目与 GIT 或 TFS 存储库，以促进团队协作。 请参阅 [在团队资源管理器中工作](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)。
+-   **团队资源管理器：** 通过团队资源管理器可以使用 GIT 或 TFS 存储库管理项目以促进团队协作。 请参阅 [在团队资源管理器中工作](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)。
 
--   NuGet你可以管理 Visual Studio 和 Blend for Visual Studio 中的 NuGet 包。 NuGet 是用于 .NET Framework 的程序包管理器，它简化了从解决方案安装和删除程序包的过程。
+-   **NuGet：** 可以在 Visual Studio 和 Blend for Visual Studio 中管理 NuGet 包。 NuGet 是用于 .NET Framework 的程序包管理器，它简化了从解决方案安装和删除程序包的过程。
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的高级功能
  若要提高工作效率，请考虑对以下任务使用 Blend for Visual Studio。 Blend for Visual Studio 在这些领域中可提供比单独 Visual Studio 设计器或代码更快的速度和更多的功能。

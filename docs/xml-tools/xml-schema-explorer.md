@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb49560074b3a4c43efe13ea568207b52536e562
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37733ddb09fb726c5407888af91db2bc32713799
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918974"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268495"
 ---
 # <a name="xml-schema-explorer"></a>XML 架构资源管理器
 
@@ -40,7 +40,7 @@ ms.locfileid: "53918974"
 
 -   如果你位于[起始视图](../xml-tools/start-view.md)，单击**XML 架构资源管理器**链接。
 
--   如果你位于[关系图视图](../xml-tools/graph-view.md)或[内容模型视图](../xml-tools/content-model-view.md)和工作区中有节点，请使用上下文菜单选择**XML 架构资源管理器**。
+-   如果你位于[关系图视图](../xml-tools/graph-view.md)或[内容模型视图](../xml-tools/content-model-view.md)和工作区中有节点，请使用上下文 （右键单击） 菜单选择**XML 架构资源管理器**。
 
 -   您还可以选择**XML 架构资源管理器**从**视图**菜单。
 

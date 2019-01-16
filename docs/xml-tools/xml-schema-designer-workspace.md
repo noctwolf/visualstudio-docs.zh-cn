@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab8d2a0e8e3a243828db3f39e95801eafeee5efb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbedf6454ae97ee97d29d836dd8f8012fb6ca222
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825249"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269145"
 ---
 # <a name="xml-schema-designer-workspace"></a>XML 架构设计器工作区
 
@@ -30,7 +30,7 @@ XML 架构设计器（XSD 设计器）是一个图形工具，可帮助您浏览
 
 -   拖放到全局节点、 文件节点和命名空间节点从**XML 架构资源管理器**到的任何三个视图。 有关详细信息，请参阅中的"拖放节点"部分[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)。
 
--   使用中的上下文菜单**XML 架构资源管理器**。 有关详细信息，请参阅[上下文菜单](../xml-tools/context-menus-xml-schema-explorer.md)。
+-   使用中的上下文 （右键单击） 菜单**XML 架构资源管理器**。 有关详细信息，请参阅[上下文菜单](../xml-tools/context-menus-xml-schema-explorer.md)。
 
 -   在 XSD 资源管理器中执行搜索，并单击**突出显示的节点添加到工作区**摘要结果窗格上的按钮。 有关详细信息，请参阅[搜索架构集](../xml-tools/searching-the-schema-set.md)。
 
@@ -40,7 +40,7 @@ XML 架构设计器（XSD 设计器）是一个图形工具，可帮助您浏览
 
 -   XSD 设计器工具栏。
 
--   内容模型视图和图形视图的上下文菜单。
+-   内容模型视图和图形视图的上下文 （右键单击） 菜单。
 
 -   起始视图页上的水印、空内容模型视图上的水印或图形视图上的水印。
 

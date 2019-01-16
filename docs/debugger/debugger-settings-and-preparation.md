@@ -1,8 +1,6 @@
 ---
 title: 调试器设置和准备工作 |Microsoft Docs
-ms.custom: ''
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug
@@ -20,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f32b5e68dec6696f6947fe78883c64b4c3caa322
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 62b0d4684a82d2642875ce767d748d7ed8259a8e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926828"
 ---
 # <a name="debugger-settings-and-preparation"></a>调试器设置和准备
 本节描述与调试器相关的属性设置，以及为了使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器调试程序所需要的准备工作。 如果在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用项目模板创建程序，则调试配置中将为你正确配置这些设置。  
   
- 有关详细信息，请参阅[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。  
+ 有关更多信息，请参见[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
  [调试器项目设置](../debugger/debugger-project-settings.md)  

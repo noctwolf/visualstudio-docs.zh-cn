@@ -35,17 +35,17 @@ ms.locfileid: "53944293"
   
 ### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>启用 ASP.NET 异常调试和“仅我的代码”  
   
-1.  在“调试”**菜单上，单击“异常”**。  
+1.  在“调试”菜单上，单击“异常”。  
   
-     将出现“异常”**对话框。  
+     随即会出现“异常”对话框。  
   
-2.  在“公共语言运行时异常”**行上，选择“引发”** 或“用户未处理的”**。  
+2.  在“公共语言运行时异常”行上，选择“引发”或“用户未处理的异常”。  
   
-     若要使用“用户未处理的”**设置，必须启用“仅我的代码”**。  
+     若要使用“用户未处理的异常”设置，必须启用“仅我的代码”。  
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>采用 ASP.NET 异常处理的最佳做法  
   
--   在可能引发你知道如何处理的可预见异常的代码周围放置 `try ... catch` 块。 例如，如果应用程序调用 XML Web services 或直接调用 SQL Server，则应该将该代码置于 try … catch** 块中，因为此过程中可能会发生大量异常。
+-   在可能引发你知道如何处理的可预见异常的代码周围放置 `try ... catch` 块。 例如，如果应用程序调用 XML Web services 或直接调用 SQL Server，则应将该代码置于 try … catch 块中，因为此过程中可能会发生大量异常。
 
 ## <a name="see-also"></a>请参阅
 [调试 ASP.NET 应用程序](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

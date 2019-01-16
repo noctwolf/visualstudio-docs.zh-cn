@@ -1,8 +1,6 @@
 ---
 title: IDiaTable |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9b792876e281f73f4df0246734403812a72aea
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: df042bc8edcdf8e93ba775797f1d099b24e90343
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056405"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863717"
 ---
 # <a name="idiatable"></a>IDiaTable
 枚举 DIA 数据源表。  
@@ -27,13 +25,13 @@ ms.locfileid: "37056405"
 ## <a name="syntax"></a>语法  
   
 ```  
-IDiaTable : IEnumUnknown  
+IDiaTable : IEnumUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDiaTable`。  
   
-|方法|描述|  
+|方法|说明|  
 |------------|-----------------|  
 |[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|检索[IEnumVARIANT 接口](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)此枚举器的版本。|  
 |[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|检索表的名称。|  
@@ -133,14 +131,14 @@ void UseTable(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>要求  
- 标头： Dia2.h  
+ 标头：dia2.h  
   
  库： diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>请参阅  
- [接口 （调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [Idiaenumtables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
+ [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
  [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)

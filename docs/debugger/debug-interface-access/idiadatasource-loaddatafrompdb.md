@@ -1,8 +1,6 @@
 ---
 title: 'Idiadatasource:: Loaddatafrompdb |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d1ed1d6edf2fc9ccc30f824cbfdf9ff67f0c2a5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 89d5433fea2350b8270611ad9145420b9d1ec688
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918813"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53964450"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 此时将打开并准备程序数据库 (.pdb) 文件用作调试数据源。  
@@ -39,7 +37,7 @@ HRESULT loadDataFromPdb (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。  
   
-|“值”|描述|  
+|值|说明|  
 |-----------|-----------------|  
 |E_PDB_NOT_FOUND|无法打开该文件，或确定该文件具有无效的格式。|  
 |E_PDB_FORMAT|尝试访问具有过时的格式的文件。|  
@@ -67,6 +65,6 @@ if (FAILED(hr))
   
 ## <a name="see-also"></a>请参阅  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [Idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [Idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)   
+ [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
+ [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)   
  [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

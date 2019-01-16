@@ -1,8 +1,6 @@
 ---
 title: 'Idiaframedata:: Get_lengthprolog |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 635d435cd81286c96a3949168dc27f2b8983c4d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7ab2331c5138e11921c33fdbfacf54bc4d9d7ce2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843075"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53838315"
 ---
 # <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
 检索块中的序言代码的字节数。  
@@ -27,7 +25,7 @@ ms.locfileid: "49843075"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_lengthProlog (   
+HRESULT get_lengthProlog (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_lengthProlog (
  [out]返回的序言代码的字节数。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
  序言代码是一系列的说明，可以保留寄存器、 设置的 CPU 的状态，并建立函数的堆栈。  

@@ -1,8 +1,6 @@
 ---
 title: 调试器中的表达式 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/07/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 035d66590c6b6087c56887a4eaa2b0538406f87b
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 7b6d4461768490d67d4d1226ae7c7877dc3c9010
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257246"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837233"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的表达式
 Visual Studio 调试器包括表达式计算器，当您在 **“快速监视”** 对话框、 **“监视”** 窗口或 **“即时”** 窗口中输入表达式时，这些计算器可以对其进行计算。 这些表达式计算器还可以在 **“断点”** 窗口和调试器中的许多其他位置使用。
@@ -34,10 +32,10 @@ Visual Studio 调试器包括表达式计算器，当您在 **“快速监视”
  以下各节介绍了 Visual Studio 支持的语言表达式计算的限制。
   
 ## <a name="f-expressions-are-not-supported"></a>不支持 F# 表达式。  
- 无法识别 F# 表达式。 如果正在调试 F# 代码，你需要在向调试器窗口或对话框中输入表达式之前，将表达式转换为 C# 语法。 当把表达式从 F # 转换到 C# 时，请务必记住 C# 使用 `==` 运算符来测试相等性，而 F # 使用单个 `=`。  
+ 无法识别 F# 表达式。 如果正在调试 F# 代码，你需要在向调试器窗口或对话框中输入表达式之前，将表达式转换为 C# 语法。 当把表达式从 F# 转换到 C# 时，请务必记住 C# 使用 `==` 运算符来测试相等性，而 F# 使用单个 `=`。  
   
 ## <a name="c-expressions"></a>C++ 表达式  
- 有关将上下文运算符用于 C++ 中的表达式的信息，请参阅 [Context Operator (C++)](../debugger/context-operator-cpp.md)。  
+ 有关将上下文运算符用于 C++ 中的表达式的信息，请参阅 [上下文运算符 (C++)](../debugger/context-operator-cpp.md)。  
   
 ### <a name="unsupported-expressions-in-c"></a>不支持的 C++ 表达式  
   
@@ -61,7 +59,7 @@ new Date(2,3,1985)
 ```  
   
 #### <a name="preprocessor-macros"></a>预处理器宏  
- 调试器中不支持预处理器宏。 例如，如果常量 `VALUE` 被声明为： `#define VALUE 3`，则不能使用“监视” `VALUE`**窗口中的** 。 若要避免此限制，只要有可能就应将 `#define`替换为枚举和函数。  
+ 调试器中不支持预处理器宏。 例如，如果常量 `VALUE` 被声明为： `#define VALUE 3`，则不能使用 **监视** 窗口中的 `VALUE` 。 若要避免此限制，只要有可能就应将 `#define`替换为枚举和函数。  
   
 ### <a name="using-namespace-declarations"></a>使用命名空间声明  
  不能使用 `using namespace` 声明。  若要访问一个类型名称或当前命名空间之外的变量，必须使用完全限定的名称。  
@@ -207,7 +205,7 @@ int main()
 -   命名空间或模块级的关键字，如 `End Sub` 或 `Module`。  
   
 ## <a name="see-also"></a>请参阅  
- [C + + 中的格式说明符](../debugger/format-specifiers-in-cpp.md)   
+ [C++ 中的格式说明符](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)   
  [伪变量](../debugger/pseudovariables.md)

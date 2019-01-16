@@ -1,8 +1,6 @@
 ---
-title: 如何： 验证 IIS 属性设置 |Microsoft Docs
-ms.custom: ''
+title: 如何：验证 IIS 属性设置 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f98796a7fd9546c8377eefcc4ad25fb90e549544
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: b2bfc72fbae9383b54a31f2252ab60b101903a4e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389482"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926875"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>如何：验证 IIS 属性设置
 
@@ -61,7 +59,7 @@ ms.locfileid: "52389482"
 
    3.  单击“确定”以关闭“身份验证方法”对话框。
 
-5. 对于 ATL Server 应用程序，请验证 DEBUG 谓词是否与您的 ISAPI 扩展相关联。 有关详细信息，请参阅[如何： 将相关联调试谓词进行扩展的](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)。
+5. 对于 ATL Server 应用程序，请验证 DEBUG 谓词是否与您的 ISAPI 扩展相关联。 有关更多信息，请参见[如何：将 DEBUG 谓词与扩展相关联](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)。
 
 6. 对于 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序，请确保应用程序的虚拟文件夹中具有在“Internet Information Services (IIS) 管理器”、“Internet 服务管理器”或“Internet Information Services”中设置的应用程序名称。
 

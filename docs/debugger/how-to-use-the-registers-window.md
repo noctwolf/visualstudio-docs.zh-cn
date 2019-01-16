@@ -2,7 +2,6 @@
 title: 在调试器中查看注册值 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/19/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.registers
@@ -25,16 +24,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31d9b9a9243bdf5bd39ebddf90ffa0ea32b23072
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 8622bb1288324429ad346834930559d1435ac6d5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058436"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867574"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>在寄存器窗口中查看注册值 (C#，c + +、 Visual Basic 中， F#)
 
-**注册**Visual Studio 在调试期间，窗口显示寄存器内容。 有关寄存器背后概念的简要介绍并**注册**窗口中，请参阅[调试基础知识: 寄存器窗口](../debugger/debugging-basics-registers-window.md)。
+**注册**Visual Studio 在调试期间，窗口显示寄存器内容。 有关寄存器背后概念的简要介绍并**注册**窗口中，请参阅[调试基础知识：“寄存器”窗口](../debugger/debugging-basics-registers-window.md).
 
 > [!NOTE]
 > 寄存器信息不可用的脚本或 SQL 应用。
@@ -56,5 +55,5 @@ ms.locfileid: "53058436"
 
 ### <a name="see-also"></a>请参阅
 
-- [调试基础知识: 寄存器窗口](../debugger/debugging-basics-registers-window.md)
+- [调试基础知识：“寄存器”窗口](../debugger/debugging-basics-registers-window.md)
 - [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)

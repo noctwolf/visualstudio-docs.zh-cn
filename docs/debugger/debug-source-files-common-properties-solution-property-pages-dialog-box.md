@@ -1,8 +1,6 @@
 ---
-title: 调试源通用的属性，解决方案属性页对话框中 |Microsoft 文档
-ms.custom: ''
+title: 调试通用属性解决方案属性页源对话框 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.FindSource
@@ -24,23 +22,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 844d189b9dd11945f4257b1fc9dfbd3117ac5199
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a722422306a16ee7e2dc340448f0e082f8a1f014
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470759"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931903"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>“解决方案属性页”对话框 ->“通用属性”->“调试源文件”
 该属性页指定调试解决方案时调试器查找源文件的位置。  
   
- 访问**调试源文件**属性页中，右键单击你的解决方案中**解决方案资源管理器**和选择**属性**从快捷菜单。 展开**通用属性**文件夹，然后单击**调试源文件**页。  
+ 若要访问“调试源文件”属性页，请在“解决方案资源管理器”中右键单击你的解决方案，并从快捷菜单中选择“属性”。 展开“公共属性”文件夹并单击“调试源文件”页。  
   
  **包含源代码的目录**  
  包含在调试解决方案时调试器搜索源文件的目录的列表。 还可搜索指定目录的子目录。  
   
  **不查找这些源文件**  
- 输入不希望调试器读取的任何文件的名称。 如果调试器在以上指定的某个目录中找到这些文件之一，它将忽略该文件。 如果**查找源**时进行调试，而您单击对话框中出现**取消**，要搜索的文件获取添加到此列表中，以使调试器不再继续搜索该文件。  
+ 输入不希望调试器读取的任何文件的名称。 如果调试器在以上指定的某个目录中找到这些文件之一，它将忽略该文件。 如果在调试时出现“查找源”对话框，而你单击“取消”，那么所搜索的文件将被添加到此列表中，以使调试器不再继续搜索该文件。  
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   

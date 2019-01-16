@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_undecoratednameex |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de8eb57e8b1e31be835163e67fa12e3cd6556892
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 715ab90837441974c05176c69c53366199e3543c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53932176"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 检索部分或全部 c + + 的未修饰名称修饰 （链接） 名称。  
@@ -27,7 +25,7 @@ ms.locfileid: "49930656"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_undecoratedNameEx(   
+HRESULT get_undecoratedNameEx(   
    DWORD undecorateOptions,  
    BSTR* pRetval  
 );  
@@ -52,7 +50,7 @@ HRESULT get_undecoratedNameEx(
 > [!NOTE]
 >  标记名称未定义在 DIA SDK 中，因此您需要将声明添加到你的代码，或使用原始值。  
   
-|Flag|值|描述|  
+|Flag|值|说明|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|启用完全 undecoration。|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|从删除前导下划线 Microsoft 扩展关键字。|  
@@ -60,8 +58,8 @@ HRESULT get_undecoratedNameEx(
 |UNDNAME_NO_FUNCTION_RETURNS|0x0004|禁用扩展的主声明的返回类型。|  
 |UNDNAME_NO_ALLOCATION_MODEL|0x0008|禁用声明模型的扩展。|  
 |UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|禁用扩展的声明语言说明符。|  
-|UNDNAME_RESERVED1|0x0020|保留。|  
-|UNDNAME_RESERVED2|0x0040|保留。|  
+|UNDNAME_RESERVED1|0x0020|已保留。|  
+|UNDNAME_RESERVED2|0x0040|已保留。|  
 |UNDNAME_NO_THISTYPE|0x0060|禁用所有修饰符上`this`类型。|  
 |UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|禁用扩展的成员的访问说明符。|  
 |UNDNAME_NO_THROW_SIGNATURES|0x0100|禁用扩展"抛出的签名的"函数和函数的指针。|  

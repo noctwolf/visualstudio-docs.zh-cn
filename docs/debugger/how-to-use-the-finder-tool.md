@@ -1,8 +1,6 @@
 ---
-title: 如何： 使用查找程序工具 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用查找程序工具 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e002682b45d03ef5f9bc93a36bbd9781b46d62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c63e91cbbda335aea77992583bf3983c08354079
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943071"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53965257"
 ---
 # <a name="how-to-use-the-finder-tool"></a>如何：使用查找程序工具
 可以使用中查找程序工具**查找窗口**对话框以显示窗口属性或消息。 查找程序工具还可以找到已禁用的子窗口，并识别哪个窗口以突出显示如果禁用子级窗口重叠。  
@@ -48,11 +46,11 @@ ms.locfileid: "49943071"
   
 4. 下**显示**，选择**属性**或**消息**。  
   
-5. 按**确定**。  
+5. 按“确定”。  
   
     如果所选**属性**，则[窗口属性对话框](../debugger/window-properties-dialog-box.md)随即打开。 如果所选**消息**即[消息视图](../debugger/messages-view.md)窗口随即打开。  
   
 ## <a name="see-also"></a>请参阅  
- [Spy + + 视图](../debugger/spy-increment-views.md)   
- [使用 Spy + +](../debugger/using-spy-increment.md)   
+ [Spy++ 视图](../debugger/spy-increment-views.md)   
+ [使用 Spy++](../debugger/using-spy-increment.md)   
  [Spy++ 参考](../debugger/spy-increment-reference.md)

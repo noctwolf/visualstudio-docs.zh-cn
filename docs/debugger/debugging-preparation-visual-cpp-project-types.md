@@ -2,7 +2,6 @@
 title: 准备调试 c + + 项目 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d31881bed3e40db5080d642c0d3043ef2da704
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: fd76689d52bce7f77f61d7998eec683abec30555
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968149"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>调试准备：Visual C++ 项目类型
 本节描述如何调试用 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目模板创建的基本项目类型。  

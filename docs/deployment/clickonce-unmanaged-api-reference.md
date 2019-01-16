@@ -1,6 +1,5 @@
 ---
 title: ClickOnce 非托管 API 参考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -12,7 +11,6 @@ api_type:
 - COM
 topic_type:
 - apiref
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -30,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 121b9b3be3c7f942f3ed1d5f7f2600f24d684e2d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 584dc441e54e89fea77667cac98cdad78bac5b2d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082127"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53968129"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 非托管 API 参考
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dfshim.dll 从非托管的公共 Api。  
@@ -54,10 +52,10 @@ ms.locfileid: "39082127"
   
 ### <a name="parameters"></a>参数  
   
-|参数|描述|类型|  
+|参数|说明|类型|  
 |---------------|-----------------|----------|  
-|`pcwzActivationUrl`|一个指向`ActivationURL`。|LPCWSTR|  
-|`pcwzPathToDeploymentManifest`|一个指向`PathToDeploymentManifest`。|LPCWSTR|  
+|`pcwzActivationUrl`|指向 `ActivationURL` 的指针。|LPCWSTR|  
+|`pcwzPathToDeploymentManifest`|指向 `PathToDeploymentManifest` 的指针。|LPCWSTR|  
 |`pwzApplicationIdentity`|指向用于接收一个以 NULL 结尾的字符串，指定完整的应用程序标识返回的缓冲区的指针。|LPWSTR|  
 |`pdwIdentityBufferLength`|长度的 DWORD 的指针`pwzApplicationIdentity`中 WCHARs 缓冲区。 这包括 NULL 终止字符的空间。|LPDWORD|  
 |`pwzProcessorArchitecture`|指向用于接收一个以 NULL 结尾的字符串，指定应用程序部署，则清单的处理器体系结构的缓冲区的指针。|LPWSTR|  
@@ -82,7 +80,7 @@ ms.locfileid: "39082127"
   
 ### <a name="parameters"></a>参数  
   
-|参数|描述|类型|  
+|参数|说明|类型|  
 |---------------|-----------------|----------|  
 |`deploymentUrl`|指向包含部署清单的 URL 的以 NULL 结尾的字符串的指针。|LPCWSTR|  
 |`data`|留待将来使用。 必须为 NULL。|LPVOID|  

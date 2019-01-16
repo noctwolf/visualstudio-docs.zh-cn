@@ -123,7 +123,7 @@ ms.locfileid: "53829468"
 **在模块加载时取消 JIT 优化(仅限托管)**：  
 在附加调试器的情况下，加载模块并编译 JIT 后，禁用托管代码的 JIT 优化。 禁用优化可能更易于调试某些问题，尽管这会降低性能。 如果正在使用“仅我的代码”，则取消 JIT 优化会导致非用户代码显示为用户代码（“我的代码”）。 有关详细信息，请参阅[JIT 优化和调试](../debugger/jit-optimization-and-debugging.md)。
 
-**对 ASP.NET 启用 JavaScript 调试(Chrome、Edge 和 IE)**：  
+**对 ASP.NET 启用 JavaScript 调试(Chrome、Microsoft Edge 和 IE)**：  
 启用脚本调试程序对 ASP.NET 应用程序。 在 Chrome 中的第一次使用，可能需要登录到浏览器来启用已安装的 Chrome 扩展。 禁用此选项可还原为旧行为。
 
 **启用适用于 UWP JavaScript 应用的 Edge 开发人员工具(实验版)**：  

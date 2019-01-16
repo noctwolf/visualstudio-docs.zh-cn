@@ -1,8 +1,6 @@
 ---
 title: '&lt;trustInfo&gt;元素 （ClickOnce 应用程序） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
@@ -24,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: eb8494f9602b22f5b5997216a3aa74189e27f3e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941214"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53870490"
 ---
-# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;元素 （ClickOnce 应用程序）
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 元素（ClickOnce 应用程序）
 描述应用程序要在客户端计算机上运行所需的最低安全权限。  
   
 ## <a name="syntax"></a>语法  
@@ -72,38 +70,38 @@ ms.locfileid: "49941214"
  `trustInfo` 元素是必需的，它位于 `asm.v2` 命名空间中。 它没有属性，并包含下列元素。  
   
 ## <a name="security"></a>安全性  
- 必须的。 此元素是 `trustInfo` 元素的子元素。 它包含 `applicationRequestMinimum` 元素，但没有属性。  
+ 必需。 此元素是 `trustInfo` 元素的子元素。 它包含 `applicationRequestMinimum` 元素，但没有属性。  
   
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
- 必须的。 此元素是 `security` 元素的子元素，并且包含 `PermissionSet`、 `assemblyRequest`和 `defaultAssemblyRequest`元素。 此元素没有属性。  
+ 必需。 此元素是 `security` 元素的子元素，并且包含 `PermissionSet`、 `assemblyRequest`和 `defaultAssemblyRequest`元素。 此元素没有属性。  
   
 ## <a name="permissionset"></a>PermissionSet  
- 必须的。 此元素是 `applicationRequestMinimum` 元素的子元素，并且包含 `IPermission` 元素。 此元素具有以下属性。  
+ 必需。 此元素是 `applicationRequestMinimum` 元素的子元素，并且包含 `IPermission` 元素。 此元素具有以下属性。  
   
 -   `ID`  
   
-     必须的。 标识权限集。 此属性可为任意值。 在 `defaultAssemblyRequest` 和 `assemblyRequest` 属性中引用此 ID。  
+     必需。 标识权限集。 此属性可为任意值。 在 `defaultAssemblyRequest` 和 `assemblyRequest` 属性中引用此 ID。  
   
 -   `version`  
   
-     必须的。 标识权限的版本。 此值通常为 `1`。  
+     必需。 标识权限的版本。 此值通常为 `1`。  
   
 ## <a name="ipermission"></a>IPermission  
  可选。 此元素是 `PermissionSet` 元素的子元素。 `IPermission` 元素完全标识 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]中的权限类。 `IPermission` 元素具有以下属性，但可具有与权限类上属性对应的其他属性。 若要找出特定权限的语法，请参阅 Security.config 文件中列出的示例。  
   
 -   `class`  
   
-     必须的。 按强名称来标识权限类。 例如，下面的代码标识 `FileDialogPermission` 类型。  
+     必需。 按强名称来标识权限类。 例如，下面的代码标识 `FileDialogPermission` 类型。  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
 -   `version`  
   
-     必须的。 标识权限的版本。 此值通常为 `1`。  
+     必需。 标识权限的版本。 此值通常为 `1`。  
   
 -   `Unrestricted`  
   
-     必须的。 标识应用程序是否需要不受限制地授予此权限。 如果为 `true`，则权限授予是无条件的。 如果为 `false`或者未定义此属性，则它根据 `IPermission` 标记上定义的特定于权限的属性进行限制。 以下列权限为例：  
+     必需。 标识应用程序是否需要不受限制地授予此权限。 如果为 `true`，则权限授予是无条件的。 如果为 `false`或者未定义此属性，则它根据 `IPermission` 标记上定义的特定于权限的属性进行限制。 以下列权限为例：  
   
     ```xml  
     <IPermission  
@@ -130,11 +128,11 @@ ms.locfileid: "49941214"
   
 -   `Name`  
   
-     必须的。 标识程序集名称。  
+     必需。 标识程序集名称。  
   
 -   `permissionSetReference`  
   
-     必须的。 标识此程序集必需的权限集的 ID。 在 `PermissionSet` 元素中声明权限集。  
+     必需。 标识此程序集必需的权限集的 ID。 在 `PermissionSet` 元素中声明权限集。  
   
 ## <a name="requestedprivileges"></a>requestedPrivileges  
  可选。 此元素是 `security` 元素的子元素，并且包含 `requestedExecutionLevel` 元素。 此元素没有属性。  
@@ -144,7 +142,7 @@ ms.locfileid: "49941214"
   
 - `Level`  
   
-   必须的。 标识应用程序正在请求的安全级别。 可能的值有：  
+   必需。 标识应用程序正在请求的安全级别。 可能的值有：  
   
    `asInvoker`，不请求其他权限。 此级别不需要其他信任提示。  
   

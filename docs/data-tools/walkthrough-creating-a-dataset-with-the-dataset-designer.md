@@ -12,17 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32a093e59d918f34ddf5da9cbb5edb13c96b2777
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: e79646609bf592b7a8d71d3e0ba8660c65520715
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117922"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53868504"
 ---
-# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>演练： 使用数据集设计器创建数据集
+# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>演练：使用数据集设计器创建数据集
 
 在本演练中创建数据集使用**数据集设计器**。 本文将指导您完成创建新的项目并添加新的过程**数据集**到它的项。 您将了解如何创建不使用向导根据数据库中的表的表。
 
@@ -44,11 +43,11 @@ ms.locfileid: "37117922"
 
        后不久，查询完成执行，并创建 Northwind 数据库。
 
-## <a name="create-a-new-windows-forms-application-project"></a>创建一个新的 Windows 窗体应用程序项目
+## <a name="create-a-new-windows-forms-application-project"></a>创建新的 Windows 窗体应用程序项目
 
 1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
 
-2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
+2. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
 
 3. 在中间窗格中，选择**Windows 窗体应用**项目类型。
 
@@ -58,7 +57,7 @@ ms.locfileid: "37117922"
 
 ## <a name="add-a-new-dataset-to-the-application"></a>将新的数据集添加到应用程序
 
-1.  上**项目**菜单中，选择**添加新项**。
+1.  在“项目”菜单上，选择“添加新项”。
 
      “添加新项”对话框随即出现。
 
@@ -70,7 +69,7 @@ ms.locfileid: "37117922"
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>在服务器资源管理器中创建数据连接
 
-1.  上**视图**菜单上，单击**服务器资源管理器**。
+1.  在“视图”菜单上，单击“服务器资源管理器”。
 
 2.  在中**服务器资源管理器**，单击**连接到数据库**按钮。
 

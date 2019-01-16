@@ -1,8 +1,6 @@
 ---
-title: 调试本机代码常见问题 |Microsoft 文档
-ms.custom: ''
+title: 调试本机代码常见问题 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.faq
@@ -22,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4de62bc77003d22398e826f388489e57a372ebea
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: a38feec1e95dd474623924aca896a24753c8ae17
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866928"
 ---
 # <a name="debugging-native-code-faqs"></a>调试本机代码常见问题
 下面的主题包含一些常见问题的答案：  
@@ -36,11 +34,11 @@ ms.locfileid: "31482056"
   
 -   [如何调试访问冲突？](../debugger/how-can-i-debug-an-access-violation-q.md)  
   
--   [如何查明我指针是否会损坏内存地址？](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)  
+-   [如何查明指针是否会损坏内存地址？](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)  
   
 -   [如何查明谁在传递错误的参数值？](../debugger/how-can-i-find-out-who-is-passing-a-wrong-parameter-value-q.md)  
   
--   [当调用函数数百次，调用失败？](../debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md)  
+-   [如何在调用一个函数数百次的情况下确定哪次调用失败了？](../debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md)  
   
 -   [可以在哪里查阅 Win32 错误代码？](../debugger/where-can-i-look-up-win32-error-codes-q.md)  
   
@@ -48,7 +46,7 @@ ms.locfileid: "31482056"
   
 -   [调试前台程序时如何使用调试器窗口？](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)  
   
--   [如果在 MFC 中暂停，如何可以我回到调用 MFC 的函数？](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
+-   [如果在 MFC 中暂停，如何重新回到调用 MFC 的函数？](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   

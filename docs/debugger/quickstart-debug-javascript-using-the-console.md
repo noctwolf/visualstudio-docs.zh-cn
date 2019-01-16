@@ -1,8 +1,6 @@
 ---
 title: 使用控制台调试 JavaScript |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.JavaScriptConsole
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c76f9c533fd83584c12f03b4e0c0f1d44e281c8e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d97b7d8a4143ba48e0b5c411539deeb85a0cd70f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840377"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用控制台调试 JavaScript
   
@@ -45,7 +43,7 @@ ms.locfileid: "49861821"
 > [!TIP]
 >  如果 JavaScript 控制台窗口处于关闭状态，请依次选择“调试” >  >  以重新打开它。 该窗口仅在脚本调试会话期间出现。  
   
- 使用“JavaScript 控制台”窗口，你可以在无需停止和重新启动调试器的情况下与应用交互。 有关详细信息，请参阅[刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 有关其他 JavaScript 调试功能，如使用 DOM 资源管理器和设置断点，请参阅[快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)并[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)。  
+ 使用“JavaScript 控制台”窗口，你可以在无需停止和重新启动调试器的情况下与应用交互。 有关详细信息，请参阅[刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 有关其他 JavaScript 调试功能，如使用 DOM 资源管理器和设置断点，请参阅[快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)并[在 Visual Studio 中调试应用](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)。  
   
 ##  <a name="InteractiveConsole"></a> 使用“JavaScript 控制台”窗口进行调试  
  以下步骤会创建一个 `FlipView` 应用并演示如何以交互方式调试 JavaScript 编码错误。  
@@ -181,7 +179,7 @@ ms.locfileid: "49861821"
   
 13. 选择绿色箭头符号以运行脚本。  
   
-14. 按 Ctrl + Alt + M 以将控制台输入提示切换到单行模式，然后选择**清除输入**（红色"X"） 以从输入提示符中删除代码。  
+14. 按 Ctrl+Alt+M 以将控制台输入提示切换为单行模式，然后选择“清除输入”（红色“X”）以从输入提示符中删除代码。  
   
 15. 在提示符下，键入 `Data.items.length = 3` ，并按 Enter。 这会从数据中移除额外的元素。  
   
@@ -191,7 +189,7 @@ ms.locfileid: "49861821"
   
 18. 选择 **“仿真程序 8.1 WVGA 4 英寸 512MB”** > **“停止调试”** 或按 Shift+F5 停止调试，然后修复源代码。  
   
-     有关完整 default.html 页包含更正后的示例代码，请参阅[调试 HTML、 CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)。  
+     有关包含更正后的示例代码的完整 default.html 页面，请参阅[调试 HTML、CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)。  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> 交互式调试和中断模式  
  可以在使用 JavaScript 调试工具（如 JavaScript 控制台窗口）时使用断点和单步执行代码。 当在调试器中运行的程序遇到断点时，调试器会临时挂起程序的执行。 当执行挂起时，程序会从运行模式切换为中断模式。 可以随时恢复执行。  
@@ -239,7 +237,7 @@ ms.locfileid: "49861821"
   
  单行模式提供输入历史记录。 可以使用向上键和向下键在输入历史记录中进行导航。 运行脚本时，单行模式会清除输入提示。 若要在单行模式下运行脚本，请按 Enter。  
   
- 运行脚本时，多行模式不清除输入提示。 当从多行模式切换到单行模式时，您可以通过按来清除输入的行**清除输入**（红色"X"）。 若要在多行模式下运行脚本，请按 Ctrl+Enter 或选择窗口右下角的箭头符号。  
+ 运行脚本时，多行模式不清除输入提示。 从多行模式切换到单行模式时，可以通过按“清除输入”（红色“X”）来清除输入行。 若要在多行模式下运行脚本，请按 Ctrl+Enter 或选择窗口右下角的箭头符号。  
   
 ##  <a name="Switching"></a> 切换脚本执行上下文  
  JavaScript 控制台窗口允许一次与单个执行上下文（表示 Web 平台主机 (WWAHost.exe) 的单个实例）进行交互。 在某些情况下，应用可能会启动主机的另一个实例，例如在使用 `iframe`、共享协定、Web 辅助进程或 `WebView` 控件时。 如果主机的另一个实例正在运行，则可以通过在 **“目标”** 列表中选择执行上下文，在运行应用时选择不同的执行上下文。  
@@ -251,11 +249,11 @@ ms.locfileid: "49861821"
  你也可以使用 `cd` 命令切换执行上下文，但是你必须知道其他执行上下文的名称并且你使用的引用必须在范围内。 **“目标”** 列表提供更好的方式来访问其他执行上下文。   
   
 ## <a name="see-also"></a>请参阅  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Debug apps in Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)   
  [JavaScript Console commands](../debugger/javascript-console-commands.md)   
- [刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
+ [刷新应用 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [键盘快捷键](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [调试 HTML、 CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [调试 HTML、CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
  [调试 WebView 控件](../debugger/debug-a-webview-control.md)   
  [产品支持和辅助功能](https://visualstudio.microsoft.com/vs/support/)

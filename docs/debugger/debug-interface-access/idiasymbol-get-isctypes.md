@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::get_isCTypes |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17829a23ca50ba5c4638e3bb97e020ad99e42b0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c91c59c3253826164e3b591d9222ae9f0b2bcd58
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916148"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53864590"
 ---
 # <a name="idiasymbolgetisctypes"></a>IDiaSymbol::get_isCTypes
 检索一个标志，指示符号文件是否包含 C 类型。  
@@ -47,7 +45,7 @@ HRESULT get_isCTypes(
   
 ## <a name="requirements"></a>要求  
   
-|需求|描述|  
+|需求|说明|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

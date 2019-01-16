@@ -19,15 +19,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d128216f84228c9cd4946f9a38c6c1b7845f92f1
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
-ms.translationtype: MT
+ms.openlocfilehash: aaf566c211cd79657b67a5af72d53c718cd2507a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951454"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>在填充数据集时关闭约束
 
@@ -47,9 +46,9 @@ ms.locfileid: "37117233"
 
 ## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>若要暂停使用数据集设计器更新约束
 
-1.  打开中的数据集**数据集设计器**。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  在“数据集设计器”中打开数据集。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
-2.  在中**属性**窗口中，将<xref:System.Data.DataSet.EnforceConstraints%2A>属性设置为`false`。
+2.  在“属性”  窗口中，将 <xref:System.Data.DataSet.EnforceConstraints%2A> 属性设置为 `false`。
 
 ## <a name="see-also"></a>请参阅
 

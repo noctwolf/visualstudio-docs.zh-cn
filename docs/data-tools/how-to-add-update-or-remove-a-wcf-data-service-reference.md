@@ -1,5 +1,5 @@
 ---
-title: 如何：添加、更新或移除 WCF 数据服务引用
+title: 如何：添加、更新或删除 WCF 数据服务引用
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,17 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9099c1ee0b1ed3af108c11792f7629453dfbf7c6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4553dda8efd4d176312839bdc4eda449a6aa70b4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948243"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何： 添加、 更新或删除 WCF 数据服务引用
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何：添加、更新或删除 WCF 数据服务引用
 一个*服务参考*使得访问一个或多个项目[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。 使用**添加服务引用**对话框可以搜索[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]在当前解决方案中，本地、 在本地网络，或在 Internet 上。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -94,4 +93,4 @@ ms.locfileid: "49819031"
 
 ## <a name="see-also"></a>请参阅
 
-- [在 Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

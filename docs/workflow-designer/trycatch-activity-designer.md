@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 280f844ec08ea5e75a78d2e9ea1596b0fb7162eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4a62b660f2deb2b3ab3a092cdfd586a56b2bcb8
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858987"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269808"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 活动设计器
 
@@ -34,7 +34,7 @@ ms.locfileid: "53858987"
 
 单击右上角的展开按钮**TryCatch**设计器才能看到**尝试**，**捕获**，以及**最后**中展开的视图。 若要添加 catch，请单击**添加新捕获**按钮**TryCatch**设计器。 该按钮将变为类型组合框。 选择一个异常类型，然后按 Enter 键添加该 catch。 添加后**捕获**，catch 区域将展开，活动可以放入以定义该 catch 的执行逻辑。 请注意，在展开的 catch 区域右侧有一个文本框。 可以使用此文本框为异常变量命名。 异常变量仅可用于在同一活动**捕获**。
 
-**TryCatch**设计器不支持编辑**捕获**。 如果你想要更改的异常类型，则必须删除**捕获**并添加新帐户。 一个**捕获**可以通过选中它然后删除它或使用删除**删除**通过右键单击上下文菜单上的菜单。
+**TryCatch**设计器不支持编辑**捕获**。 如果你想要更改的异常类型，则必须删除**捕获**并添加新帐户。 一个**捕获**可以通过选择它并将它删除或选择删除**删除**访问通过右键单击上下文菜单上。
 
 ### <a name="the-trycatch-properties"></a>TryCatch 属性
 

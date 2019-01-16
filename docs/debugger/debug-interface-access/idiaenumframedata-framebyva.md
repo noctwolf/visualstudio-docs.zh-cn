@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumframedata:: Framebyva |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa12d481811538430385aeda08c1ea01a156d924
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9f905c3aa380c6decd6687ff2332af2f196d0b68
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854008"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851584"
 ---
 # <a name="idiaenumframedataframebyva"></a>IDiaEnumFrameData::frameByVA
 按虚拟地址 (VA) 返回一个帧。  
@@ -27,7 +25,7 @@ ms.locfileid: "49854008"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT frameByVA(   
+HRESULT frameByVA(   
    ULONGLONG       virtualAddress,  
    IDiaFrameData** frame  
 );  
@@ -41,7 +39,7 @@ HRESULT frameByVA(
  [out]返回[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)对象，表示包含提供的地址的帧。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果任何帧数据与指定的地址相不匹配。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果任何帧数据与指定的地址相不匹配。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

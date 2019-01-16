@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c76f769234d8b8c14ccd44d8c2cf4c669bf48ffd
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 5cf04b804ea377723a268c080b96a24442e31486
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305476"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947655"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 应用程序中创建查找表
 
@@ -37,9 +36,9 @@ ms.locfileid: "52305476"
 
     -   数据集或实体数据模型。
 
-    -   WCF 数据服务，WCF 服务或 web 服务。 有关详细信息，请参阅[如何： 连接到服务中的数据](../data-tools/how-to-connect-to-data-in-a-service.md)。
+    -   WCF 数据服务，WCF 服务或 web 服务。 有关更多信息，请参见[如何：连接到服务中的数据](../data-tools/how-to-connect-to-data-in-a-service.md)。
 
-    -   对象 有关详细信息，请参阅[绑定到 Visual Studio 中的对象](bind-objects-in-visual-studio.md)。
+    -   对象。 有关详细信息，请参阅[绑定到 Visual Studio 中的对象](bind-objects-in-visual-studio.md)。
 
     > [!NOTE]
     > 创建查找表之前，必须存在两个相关的表或对象作为项目的数据源。
@@ -48,7 +47,7 @@ ms.locfileid: "52305476"
 
      有关有效放置目标的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
 
-3.  在“数据”**菜单上单击“显示数据源”**，打开“数据源”**窗口。
+3.  在“数据”菜单上单击“显示数据源”，打开“数据源”窗口。
 
 4.  展开中的节点**数据源**窗口中，直至你可看到父表或对象和相关的子表或对象。
 
@@ -83,7 +82,7 @@ ms.locfileid: "52305476"
 
      Visual Studio 来配置查找绑定在控件上设置某些属性。 下表列出了 Visual Studio 会修改的属性。 如果有必要，您可以更改这些属性在 XAML 中或在**属性**窗口。
 
-    |属性|设置说明|
+    |Property|设置说明|
     |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|此属性指定的集合或用于获取在控件中显示的数据的绑定。 Visual Studio 将此属性设置为<xref:System.Windows.Data.CollectionViewSource>拖到控件的父数据。|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|此属性指定的控件中显示的数据项的路径。 Visual Studio 后为主键，具有字符串数据类型将此属性设置为第一列或父数据中的属性。<br /><br /> 如果你想要在父数据中显示不同的列或属性，此属性更改为不同的属性的路径。|

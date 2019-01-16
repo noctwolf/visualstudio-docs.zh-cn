@@ -1,8 +1,6 @@
 ---
 title: 访问 ClickOnce 应用程序中的本地和远程数据 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6f25bb2920f8f50afbd8bfb820e7c852e160865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 5ed1ad3c648a3cf0d8f33d9f15a8cc14c1ebf625
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49943045"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53874861"
 ---
-# <a name="access-local-and-remote-data-in-clickonce-applications"></a>ClickOnce 应用程序中访问本地和远程数据
+# <a name="access-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 应用程序中访问本地数据和远程数据
 大多数应用程序使用或生成数据。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 为你提供多种选项用于在本地及远程读取和写入数据。  
   
 ## <a name="local-data"></a>本地数据  
@@ -39,13 +37,13 @@ ms.locfileid: "49943045"
 ### <a name="clickonce-data-directory"></a>ClickOnce 数据目录  
  本地计算机上安装的每个 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序都有一个数据目录，该数据目录存储在用户的 Documents and Settings 文件夹中。 安装应用程序时，会将 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序中包含的且标记为“数据”文件的所有文件复制到此目录。 数据文件可以是任何类型的文件，最常用的是文本文件、XML 文件和数据库文件（如 Microsoft Access.mdb 文件）。  
   
- 数据目录预期用于应用程序管理的数据，即应用程序显式存储和维护的数据。 应用程序清单中未标记为“数据”的所有静态非依赖文件都将改为驻留在应用程序目录中。 此目录是应用程序的可执行文件 (*.exe*) 文件和程序集位于。  
+ 数据目录预期用于应用程序管理的数据，即应用程序显式存储和维护的数据。 应用程序清单中未标记为“数据”的所有静态非依赖文件都将改为驻留在应用程序目录中。 此目录是应用程序的可执行文件 (.exe) 文件和程序集所在的位置。  
   
 > [!NOTE]
->  卸载 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序时，也会删除其数据目录。 永远不会使用数据目录来存储最终用户管理的数据，如文档。  
+>  卸载 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序时，也会删除其数据目录。 切勿使用数据目录来存储最终用户管理的数据，如文档。  
   
 #### <a name="mark-data-files-in-a-clickonce-distribution"></a>在 ClickOnce 分发中的标记数据文件  
- 若要将现有文件放入数据目录，必须在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的应用程序清单文件中将现有文件标记为数据文件。 有关详细信息，请参阅[如何： 将数据文件包括在 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
+ 若要将现有文件放入数据目录，必须在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的应用程序清单文件中将现有文件标记为数据文件。 有关更多信息，请参见[如何：将数据文件添加到 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
   
 #### <a name="read-from-and-write-to-the-data-directory"></a>读取和写入的数据目录  
  读取数据目录要求你的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序请求读取权限；同样，写入目录也需要写入权限。 如果它被配置为使用完全信任的权限运行，则你的应用程序将自动拥有此权限。 有关提升权限的使用权限提升或受信任的应用程序部署的应用程序的详细信息，请参阅[保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。  
@@ -53,12 +51,12 @@ ms.locfileid: "49943045"
 > [!NOTE]
 >  如果你的组织不使用信任的应用程序部署，并且已经关闭了权限提升，则断言权限将失效。  
   
- 应用程序具有这些权限后，就可以通过对 <xref:System.IO>中的类进行方法调用访问数据目录。 你可以通过使用在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 的 <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> 属性上定义的 <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> 属性，获取 Windows 窗体 <xref:System.Deployment.Application.ApplicationDeployment>应用程序中数据目录的路径。 这是访问数据的最简便方法，并且推荐使用此方法。 下面的代码示例演示如何执行此操作的一个名为文本文件*CSV.txt*包括为数据文件在部署中。  
+ 应用程序具有这些权限后，就可以通过对 <xref:System.IO>中的类进行方法调用访问数据目录。 你可以通过使用在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 的 <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> 属性上定义的 <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> 属性，获取 Windows 窗体 <xref:System.Deployment.Application.ApplicationDeployment>应用程序中数据目录的路径。 这是访问数据的最简便方法，并且推荐使用此方法。 下面的代码示例演示如何对名为 CSV.txt 且已作为数据文件包括到部署中的文本文件执行此操作。  
   
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]  
   
- 有关在部署中将文件标记为数据文件的详细信息，请参阅 [如何：将数据文件包括在 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
+ 将标记为数据文件在部署中的文件的详细信息，请参阅[如何：将数据文件添加到 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)  
   
  你还可以使用 <xref:System.Windows.Forms.Application> 类上的相关变量（如 <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>）来获取数据目录路径。  
   
@@ -71,7 +69,7 @@ ms.locfileid: "49943045"
   
  如果需要更细粒度的数据迁移，则可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署 API 执行从旧数据目录到新数据目录的自定义迁移。 你必须使用 <xref:System.Deployment.Application.ApplicationDeployment.IsFirstRun%2A>测试是否可以下载，使用 <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> 或 <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A>下载更新，以及在更新完成后用自己的方式进行任何自定义数据迁移工作。  
   
-### <a name="isolated-storage"></a>独立的存储  
+### <a name="isolated-storage"></a>独立存储  
  独立存储提供一个 API，用于通过一个简单的 API 创建和访问文件。 存储文件的实际位置对开发人员和用户来说都是隐藏的。  
   
  独立存储适用于 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]的所有版本。 独立存储也适用于部分信任的应用程序，而无需授予其他权限。 如果你的应用程序必须在部分信任环境中运行，但必须维护应用程序特定的数据，则应使用独立存储。  
@@ -110,4 +108,4 @@ ms.locfileid: "49943045"
  大多数情况下，你将不必直接访问数据，但将改为通过写入 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 的 Web 服务器应用程序或 XML Web 服务访问。 如果你的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序是从 Web 服务器部署的，则以这种方式访问数据库通常是最好的方法。 你可以使用部分信任的权限访问服务器，而无需提升你的应用程序权限。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 将数据文件包括在 ClickOnce 应用程序](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+ [如何：将数据文件添加到 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

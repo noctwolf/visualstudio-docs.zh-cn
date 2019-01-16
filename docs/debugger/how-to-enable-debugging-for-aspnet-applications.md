@@ -2,7 +2,6 @@
 title: 为 ASP.NET 应用程序启用调试 |Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 09/21/18
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813414"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53881096"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>调试 Visual Studio 中的 ASP.NET 或 ASP.NET Core 应用
 
@@ -139,7 +138,7 @@ ASP.NET 项目具有*web.config*文件默认情况下，其中包含这两个应
    </configuration>  
    ```
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 自动检测到的任何更改*web.config*文件并应用新的配置设置。 您无需重新启动计算机或 IIS 服务器，以使更改生效。  
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 会自动检测对 Web.config 文件的任何更改，并应用新的配置设置。 您无需重新启动计算机或 IIS 服务器，以使更改生效。  
   
 网站可以使用包含多个虚拟目录和子目录*web.config*中每个文件。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序继承中的配置设置*web.config*文件 URL 路径中的更高级别。 分层*web.config*文件设置应用于所有[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]下面这些层次结构中的应用。 在中设置不同的配置*web.config*文件层次结构中较低级别重写更高版本的文件中的设置。  
   
@@ -184,11 +183,10 @@ ASP.NET 项目具有*web.config*文件默认情况下，其中包含这两个应
 > 调试模式下极大地减少了您的应用程序的性能。 为了获得最佳性能，设置`debug="false"`中*web.config*和部署生产应用程序或进行性能度量时指定的版本生成。  
 
 ## <a name="see-also"></a>请参阅  
-[ASP.NET 调试： 系统要求](aspnet-debugging-system-requirements.md)   
-[如何： 运行辅助进程的用户帐户](how-to-run-the-worker-process-under-a-user-account.md)   
-[如何： 查找 ASP.NET 进程的名称](how-to-find-the-name-of-the-aspnet-process.md)   
-[调试已部署的 web 应用程序](debugging-deployed-web-applications.md)   
-[演练： 调试 web 窗体](walkthrough-debugging-a-web-form.md)   
-[如何： 调试 ASP.NET 异常](how-to-debug-aspnet-exceptions.md)   
-[调试 web 应用程序： 错误和疑难解答](debugging-web-applications-errors-and-troubleshooting.md)
-  
+[ASP.NET 调试：系统要求](aspnet-debugging-system-requirements.md)   
+[如何：在用户帐户下运行工作进程](how-to-run-the-worker-process-under-a-user-account.md)   
+[如何：查找 ASP.NET 进程名称](how-to-find-the-name-of-the-aspnet-process.md)   
+[调试已部署的 Web 应用程序](debugging-deployed-web-applications.md)   
+[演练：调试 Web 窗体](walkthrough-debugging-a-web-form.md)   
+[如何：调试 ASP.NET 异常](how-to-debug-aspnet-exceptions.md)   
+[调试 Web 应用程序：错误和疑难解答](debugging-web-applications-errors-and-troubleshooting.md)

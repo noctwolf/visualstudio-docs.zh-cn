@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findInlineFramesByRVA |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 428b720fc20684d9bee7d25272ecaca0cbab13ab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 504b7953a81b6fd435bcab937f35b598167eb472
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916876"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854836"
 ---
 # <a name="idiasymbolfindinlineframesbyrva"></a>IDiaSymbol::findInlineFramesByRVA
 检索一个枚举，允许客户端用于循环访问所有指定的相对虚拟地址 (RVA) 上的内联框架。  
@@ -25,7 +23,7 @@ ms.locfileid: "49916876"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT findInlineFramesByRVA (    DWORD             rva,  
+HRESULT findInlineFramesByRVA (    DWORD             rva,  
    IDiaEnumSymbols** ppResult  
 );  
 ```  

@@ -14,15 +14,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 38ed283a70716f0f282bdcdf60c18f0f38fc8bb2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864115"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822151"
 ---
 # <a name="create-relationships-between-datasets"></a>创建数据集之间的关系
 包含相关的数据的数据集表，表使用<xref:System.Data.DataRelation>对象来表示表之间的父/子关系，并从另一个返回相关的记录。 通过将相关的表添加到数据集**数据源配置向导**，或**数据集设计器**下创建并配置<xref:System.Data.DataRelation>为您的对象。
@@ -60,7 +59,7 @@ ms.locfileid: "49864115"
 |外键约束规则|操作|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|对父记录所做的更改 （更新或删除） 也由子表中的相关记录中。|
-|<xref:System.Data.Rule.SetNull>|不删除子记录，但子记录中的外键设置为<xref:System.DBNull>。 可以使用此设置，保留子记录作为"孤立"— 即，它们具有与父记录没有关系。 **注意：** 使用此规则可能会导致在子表中的无效数据。|
+|<xref:System.Data.Rule.SetNull>|不删除子记录，但子记录中的外键设置为<xref:System.DBNull>。 可以使用此设置，保留子记录作为"孤立"— 即，它们具有与父记录没有关系。 **注意：** 使用此规则可以导致子表中的数据无效。|
 |<xref:System.Data.Rule.SetDefault>|相关的子记录中的外键设置为其默认值 (由列的建立<xref:System.Data.DataColumn.DefaultValue%2A>属性)。|
 |<xref:System.Data.Rule.None>|相关的子记录到不进行任何更改。 使用此设置时，子记录可以包含对无效的父记录的引用。|
 
@@ -78,7 +77,7 @@ ms.locfileid: "49864115"
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>若要创建的两个数据表之间的关系
 
-1.  打开中的数据集**数据集设计器**。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  在“数据集设计器”中打开数据集。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  拖动**关系**对象从**数据集**工具箱拖到关系中子数据的表。
 
@@ -96,13 +95,13 @@ ms.locfileid: "49864115"
 
 8.  选中或清除**嵌套关系**框。 选择此选项设置<xref:System.Data.DataRelation.Nested%2A>属性设置为`true`，这将导致子行要以 XML 数据形式编写或与同步这些行时嵌套在父列的关系的<xref:System.Xml.XmlDataDocument>。 有关详细信息，请参阅[嵌套 Datarelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations)。
 
-9. 设置对这些表中的记录进行更改时要强制实施的规则。 有关详细信息，请参阅 <xref:System.Data.Rule> 。
+9. 设置对这些表中的记录进行更改时要强制实施的规则。 有关更多信息，请参见<xref:System.Data.Rule>。
 
 10. 单击**确定**来创建关系。 在两个表之间的设计器中显示的关系线。
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>若要在数据集设计器中显示的关系名称
 
-1.  打开中的数据集**数据集设计器**。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  在“数据集设计器”中打开数据集。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  从**数据**菜单中，选择**显示关系标签**命令以显示该关系名称。 清除该命令，以隐藏关系名称。
 

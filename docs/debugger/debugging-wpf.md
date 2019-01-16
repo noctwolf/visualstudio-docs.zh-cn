@@ -31,7 +31,7 @@ ms.locfileid: "53919620"
 | Title | 说明 |
 | - | - |
 | [如何：使用 WPF 树可视化工具](../debugger/how-to-use-the-wpf-tree-visualizer.md) | 可以使用 WPF 树可视化工具浏览 WPF 对象的可视化树，并查看该树中所含对象的 WPF 依赖项属性。 本主题介绍 WPF 树可视化工具的用户界面。 |
-| [如何：显示 WPF 跟踪信息](../debugger/how-to-display-wpf-trace-information.md) | [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可以接收来自 WPF 应用程序的调试跟踪信息，并将该信息显示在{2&gt;“输出”&lt;2}窗口中。 本主题介绍如何启用和自定义 WPF 跟踪信息的显示。 |
+| [如何：显示 WPF 跟踪信息](../debugger/how-to-display-wpf-trace-information.md) | [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可接收来自 WPF 应用程序的调试跟踪信息，并将该信息显示在“输出”窗口中。 本主题介绍如何启用和自定义 WPF 跟踪信息的显示。 |
   
 ## <a name="see-also"></a>请参阅  
  [调试托管代码](../debugger/debugging-managed-code.md)

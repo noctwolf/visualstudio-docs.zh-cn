@@ -10,15 +10,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c52e5f157dcbc6dcfeacf72df465bd3d8d9d172e
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 617d3afece5fbf5da2b347d097df65b5659263f5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304907"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53900108"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows 窗体应用程序中创建查找表
 
@@ -52,12 +51,12 @@ ms.locfileid: "52304907"
 
      查找绑定现在已建立。 请参阅下表中的设置在控件的特定属性。
 
-    |属性|设置说明|
+    |Property|设置说明|
     |--------------| - |
-    |DataSource|Visual Studio 将此属性设置为你拖到控件上的表所创建的 <xref:System.Windows.Forms.BindingSource>（相对于创建该控件时所创建的 <xref:System.Windows.Forms.BindingSource>）。<br /><br /> 如果你需要进行调整，则将此设置为<xref:System.Windows.Forms.BindingSource>具有你想要显示的列的表。|
-    |DisplayMember|对于你拖动到控件上的表，则 Visual Studio 将此属性设置为该主键后的具有字符串数据类型的第一列。<br /><br /> 如果你需要进行调整，其设置为你想要显示的列名称。|
-    |ValueMember|Visual Studio 将此属性设置为参与主键的第一列，或表中的第一列（如果未定义任何键）。<br /><br /> 如果你需要进行调整，其设置为具有你想要显示的列的表中的主键。|
-    |SelectedValue|Visual Studio 将此属性设置为从删除的原始列**数据源**窗口。<br /><br /> 如果你需要进行调整，其设置为相关表中的外键列。|
+    |**数据源**|Visual Studio 将此属性设置拖到控件上的表所创建的 <xref:System.Windows.Forms.BindingSource>（相对于创建该控件时所创建的 <xref:System.Windows.Forms.BindingSource>）。<br /><br /> 如果你需要进行调整，则将此设置为<xref:System.Windows.Forms.BindingSource>具有你想要显示的列的表。|
+    |**DisplayMember**|对于你拖动到控件上的表，则 Visual Studio 将此属性设置为该主键后的具有字符串数据类型的第一列。<br /><br /> 如果你需要进行调整，其设置为你想要显示的列名称。|
+    |**ValueMember**|Visual Studio 将此属性设置为参与主键的第一列，或表中的第一列（如果未定义任何键）。<br /><br /> 如果你需要进行调整，其设置为具有你想要显示的列的表中的主键。|
+    |**SelectedValue**|Visual Studio 将此属性设置为从删除的原始列**数据源**窗口。<br /><br /> 如果你需要进行调整，其设置为相关表中的外键列。|
 
 ## <a name="see-also"></a>请参阅
 

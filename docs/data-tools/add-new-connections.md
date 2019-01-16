@@ -6,15 +6,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: 927edacf968ed92eddea96f93cc4f67cbd137fcc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845010"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53880593"
 ---
 # <a name="add-new-connections"></a>添加新连接
 
@@ -40,7 +39,7 @@ ms.locfileid: "34845010"
 
 这将显示**添加连接**对话框。 在这里，我们已经输入的 SQL Server LocalDB 实例的名称。
 
-![添加新的连接](../data-tools/media/raddata-add-new-connection-dialog.png)
+![添加新连接](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>更改提供程序
 

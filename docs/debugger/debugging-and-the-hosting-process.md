@@ -1,8 +1,6 @@
 ---
 title: 调试和托管进程 |Microsoft Docs
-ms.custom: ''
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,21 +16,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ef28f5724c12fd9897adbaa9125bafe26beb60
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
-ms.translationtype: MT
+ms.openlocfilehash: 98985877a2a85e56e9e1861c3baeaf0c87ad0f9c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468255"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53852185"
 ---
 # <a name="debugging-and-the-hosting-process"></a>调试和承载进程
 Visual Studio 宿主进程提高了调试器性能，并启用了新的调试器功能，如部分信任调试和设计时表达式计算。 如果需要，你可以禁用宿主进程。 以下部分描述用宿主进程和不用宿主进程进行调试的一些差异。
 
 > [!NOTE]
-> 在 Visual Studio 2017 中，使用宿主进程进行调试的选项不再需要和已删除。 有关详细信息，请参阅[调试： Visual Studio 2017 提供到速度向上您最喜欢的工作](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx)。
+> 在 Visual Studio 2017 中，使用宿主进程进行调试的选项不再需要和已删除。 有关详细信息，请参阅[调试。Visual Studio 2017 旨在为你最不喜欢的作业的速度](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx)。
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>部分信任调试和 Click-Once 安全
- 部分信任调试需要宿主进程。 如果禁用宿主进程，部分信任调试将不工作，即使在 **“项目属性”** 的 **“安全”** 页上启用了部分信任安全。 有关详细信息，请参阅[如何： 调试部分信任应用程序](../debugger/how-to-debug-a-partial-trust-application.md)。
+ 部分信任调试需要宿主进程。 如果禁用宿主进程，部分信任调试将不工作，即使在 **“项目属性”** 的 **“安全”** 页上启用了部分信任安全。 有关更多信息，请参见[如何：调试部分信任的应用程序](/visualstudio/debugger/debugger-security)。
 
 ## <a name="design-time-expression-evaluation"></a>设计时表达式计算
  设计时表达式始终使用宿主进程。 如果在 **“项目属性”** 中禁用宿主进程，则禁用了类库项目的设计时表达式计算。 对于其他项目类型，不禁用设计时表达式计算。 相反，Visual Studio 启动实际可执行文件，并将它用于不用宿主进程的设计时计算。 这种差异可能产生不同的结果。
@@ -45,4 +43,4 @@ Visual Studio 宿主进程提高了调试器性能，并启用了新的调试器
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：调试部分信任的应用程序](../debugger/how-to-debug-a-partial-trust-application.md)
+- [如何：调试部分信任的应用程序](/visualstudio/debugger/debugger-security)

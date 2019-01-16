@@ -27,7 +27,7 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53838016"
 ---
 # <a name="edit-and-continue-visual-basic"></a>编辑并继续 (Visual Basic)
-“编辑并继续”是 [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] 调试的一项功能，当代码在中断模式下执行时，使用该功能可以更改代码。 在应用代码编辑后，可以就地继续执行新编辑过的代码并观察效果。  
+“编辑并继续”是 [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] 调试中的一项功能，可让你在中断模式下在代码运行时更改代码。 在应用代码编辑后，可以继续执行新编辑过的代码并观察效果。  
   
  每次进入中断模式时都可以使用“编辑并继续”功能。 在中断模式下，指令指针，在源窗口中的黄色箭头，指向包含将方法或属性正文中的可执行语句的行执行的下一步。
 

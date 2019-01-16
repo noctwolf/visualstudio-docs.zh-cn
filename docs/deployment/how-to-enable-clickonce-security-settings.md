@@ -1,8 +1,6 @@
 ---
-title: 如何： 启用 ClickOnce 安全设置 |Microsoft Docs
-ms.custom: ''
+title: 如何：启用 ClickOnce 安全设置 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f21b58a0ec9e8fe26cb02f72912fd23424cdfc7a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: d736ca95b9095aa1db19445762d4734dc49677a1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150932"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53967263"
 ---
-# <a name="how-to-enable-clickonce-security-settings"></a>如何： 启用 ClickOnce 安全设置
+# <a name="how-to-enable-clickonce-security-settings"></a>如何：启用 ClickOnce 安全设置
 若要发布应用程序，必须启用 ClickOnce 应用程序的代码访问安全性。 当您发布应用程序使用发布向导时，这是自动完成。  
   
  在某些情况下，启用代码访问安全性可能会影响性能时生成或调试应用程序;在这些情况下，你可能想要暂时禁用的安全设置。  
@@ -60,5 +58,4 @@ ms.locfileid: "39150932"
   
 ## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 应用程序的的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
- 
+ [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   

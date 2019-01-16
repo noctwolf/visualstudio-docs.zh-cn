@@ -1,8 +1,6 @@
 ---
 title: 服务器和 ClickOnce 部署中的客户端配置问题 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 444cfa375fd4e2059ddf6458224836cdec6ff18f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7bbc55e5502364c3ca3eb8ca11dec1848490eaf9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849425"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955550"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的服务器和客户端配置问题
 如果在 Windows Server 上使用 Internet 信息服务 (IIS) 和你的部署包含 Windows 无法识别的文件类型，如 Microsoft Word 文件，IIS 将拒绝传输该文件中，并且你的部署将不会成功。  
@@ -51,7 +49,7 @@ ms.locfileid: "49849425"
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce 和代理身份验证  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 从.NET Framework 3.5 的 Windows 集成代理身份验证提供支持。 没有特定 machine.config 指令是必需的。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不等基本或摘要式其他身份验证协议提供支持。  
 
- 此外可以应用于.NET Framework 2.0，若要启用此功能的修补程序。 有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=158730 。  
+ 此外可以应用于.NET Framework 2.0，若要启用此功能的修补程序。 有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkId=158730。  
 
  有关详细信息，请参阅[ \<defaultProxy > 元素 （网络设置）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)。  
 
@@ -97,22 +95,22 @@ ms.locfileid: "49849425"
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 支持从任何 HTTP 1.1 Web 服务器或文件服务器安装的应用程序。 FTP 文件传输协议不支持用于安装应用程序。 可以使用 FTP 发布应用程序。 下表总结了这些差异：  
 
 
-| URL 类型 | 描述 |
+| URL 类型 | 说明 |
 |----------| - |
-| ftp: / / | 您可以将发布[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序使用此协议。 |
+| ftp:// | 您可以将发布[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序使用此协议。 |
 | http:// | 你可以安装[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序使用此协议。 |
 | https:// | 你可以安装[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序使用此协议。 |
 | file:// | 你可以安装[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序使用此协议。 |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows 防火墙  
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2：Windows 防火墙  
  默认情况下，Windows XP SP2 启用 Windows 防火墙。 如果正在开发应用程序在已安装的 Windows XP 的计算机上，您将仍可以发布和运行[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]从正在运行 IIS 的本地服务器的应用程序。 但是，不能访问该服务器正在运行的 IIS 从另一台计算机只有打开 Windows 防火墙。 有关管理 Windows 防火墙的说明，请参阅 Windows 帮助。  
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server： 启用 FrontPage 服务器扩展  
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server启用 FrontPage 服务器扩展  
  Microsoft FrontPage 服务器扩展是必需的应用程序发布到使用 HTTP 的 Windows Web 服务器。  
 
  默认情况下，Windows Server 没有安装的 FrontPage 服务器扩展。 如果你想要使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]若要发布到 HTTP 使用 FrontPage 服务器扩展的 Windows Server Web 服务器，必须先安装 FrontPage 服务器扩展。 可以通过使用 Windows Server 中管理您的服务器管理工具来执行安装。  
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server： 锁定的内容类型  
+## <a name="windows-server-locked-down-content-types"></a>Windows Server锁定的内容类型  
  上的 IIS[!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)]锁定除某些已知的内容类型以外的所有文件类型 (例如， *.htm*， *.html*， *.txt*，依此类推)。 若要启用的部署[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用此服务器应用程序，您需要更改 IIS 设置，以允许下载文件的类型 *.application*， *.manifest*，和任何其他自定义文件类型使用你的应用程序。  
 
  如果部署使用 IIS 服务器，运行*inetmgr.exe*并添加默认网页的新文件类型：  
@@ -136,6 +134,6 @@ ms.locfileid: "49849425"
  有关 IIS 的详细说明，请参阅[如何指定 HTTP 压缩的其他文档类型](http://go.microsoft.com/fwlink/?LinkId=178459)。  
 
 ## <a name="see-also"></a>请参阅  
- [ClickOnce 部署进行故障排除](../deployment/troubleshooting-clickonce-deployments.md)   
+ [ClickOnce 部署疑难解答](../deployment/troubleshooting-clickonce-deployments.md)   
  [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)   
  [应用程序部署必备](../deployment/application-deployment-prerequisites.md)

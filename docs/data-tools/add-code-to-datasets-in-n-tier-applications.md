@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e4c5fbbbe878e14c6c88c872ece2b3d492e3ea7c
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: c2d1784e498cb856cc388b8e7f26dd57f978e79f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844028"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927384"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>向 n 层应用程序中的数据集添加代码
 可以通过创建数据集的分部类文件并将代码添加到该扩展数据集的功能 (而不是将代码添加到*DatasetName*。Dataset.Designer 文件）。 分部类启用划分到多个物理文件的特定类代码。 有关详细信息，请参阅[分部](/dotnet/visual-basic/language-reference/modifiers/partial)或[分部类和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。

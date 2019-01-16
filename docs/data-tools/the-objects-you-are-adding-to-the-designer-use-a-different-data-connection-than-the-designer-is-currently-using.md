@@ -7,15 +7,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2fb26fa8960c652feefa157fb04c31b9ed7abb9
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 23abfbdc1b0bf922e3d15f0181afd7d01aa7ee2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174168"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935653"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>要添加到设计器中的对象使用不同的数据连接与设计器
 
@@ -36,9 +35,9 @@ ms.locfileid: "37174168"
 
 - 单击“否” 。
 
-    操作被取消。 *DataContext.Connection*仍然设置为现有连接。
+    操作被取消。 DataContext.Connection 仍然设置为现有连接。
 
 ## <a name="see-also"></a>请参阅
 
 - [O-R 设计器消息](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

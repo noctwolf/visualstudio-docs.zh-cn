@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_backendmajor |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf32104654d40f314dc3468eaf28dfded6998df9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1e501b50b0ecca922cb52ed5406ba4c62b98de96
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942304"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851490"
 ---
 # <a name="idiasymbolgetbackendmajor"></a>IDiaSymbol::get_backEndMajor
 检索后端主要编译器的版本号。  
@@ -27,7 +25,7 @@ ms.locfileid: "49942304"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_backEndMajor (   
+HRESULT get_backEndMajor (   
    DWORD* pRetVal  
 );  
 ```  
@@ -49,7 +47,7 @@ HRESULT get_backEndMajor (
   
 ## <a name="requirements"></a>要求  
   
-|需求|描述|  
+|需求|说明|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v7.0|  

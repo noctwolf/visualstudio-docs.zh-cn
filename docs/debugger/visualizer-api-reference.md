@@ -1,8 +1,6 @@
 ---
 title: 可视化工具 API 参考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,16 +17,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 686b7353db35b26769bc9be4f64426862b3dae39
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 8f70c806cc848c8f7aba87e2d89f55c480cbc4af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902209"
 ---
 # <a name="visualizer-api-reference"></a>可视化工具 API 参考
 
-可视化工具 API 是专为希望为 Visual Studio 调试器编写可视化工具的用户而提供的。 可视化工具是一种小应用程序，它扩展了 Visual Studio 调试器用户界面的功能。 可视化工具可以显示 （并根据需要编辑） 的可视化工具设计所针对的特定类型数据对象。  
+可视化工具 API 是专为希望为 Visual Studio 调试器编写可视化工具的用户而提供的。 可视化工具是一种小应用程序，它扩展了 Visual Studio 调试器用户界面的功能。 可视化工具可显示（还可以选择进行编辑）它所针对的特定类型的数据对象。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -44,6 +42,6 @@ ms.locfileid: "39155056"
   
 ## <a name="see-also"></a>请参阅
 
- [演练： 用 C# 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [如何： 编写可视化工具](../debugger/how-to-write-a-visualizer.md)   
+ [演练：用 C# 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [如何：编写可视化工具](/visualstudio/debugger/create-custom-visualizers-of-data)   
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)

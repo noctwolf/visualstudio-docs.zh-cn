@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findInlineeLinesByVA |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f004b189a22c510599ae9a5f1c719a151ed7d39f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: f9af3fec19ebdbb07bf5c363e1602b329c4efea6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914900"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53818496"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
 检索一个枚举，允许客户端进行循环访问，将内联，直接或间接地，此符号中指定的虚拟地址 (VA) 中的所有函数的行号信息。  
@@ -25,7 +23,7 @@ ms.locfileid: "49914900"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT findInlineeLinesByVA (   
+HRESULT findInlineeLinesByVA (   
    ULONGLONG             va,  
    DWORD                 length,  
    IDiaEnumLineNumbers** ppResult  

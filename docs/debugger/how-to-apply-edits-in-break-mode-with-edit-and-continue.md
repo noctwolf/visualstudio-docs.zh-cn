@@ -58,7 +58,7 @@ ms.locfileid: "53821696"
   
 3.  在“调试”菜单上，单击“继续”，以继续执行。  
   
-     在你所做的编辑已并入项目并已应用的情况下，你的代码继续执行。  
+     现在将继续执行你的代码，并且已应用的编辑将并入项目中。  
   
 ## <a name="see-also"></a>请参阅  
  [支持代码更改 (C#和 Visual Basic)](../debugger/supported-code-changes-csharp.md)   

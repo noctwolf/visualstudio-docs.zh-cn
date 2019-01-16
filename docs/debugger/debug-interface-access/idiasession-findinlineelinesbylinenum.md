@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findInlineeLinesByLinenum |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 279ccc53176f0e1959ffb3ecd69fcbb39aa59dad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a2a76b80c597024ff4fd4de6b76a7f77092db3e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942603"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966150"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
 检索一个枚举，允许客户端进行循环访问，将内联，直接或间接指定的源文件和行号中的所有函数的行号信息。  
@@ -25,7 +23,7 @@ ms.locfileid: "49942603"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT findInlineeLinesByVA (   
+HRESULT findInlineeLinesByVA (   
    IDiaSymbol*           compiland,  
    IDiaSourceFile*       file,  
    DWORD                 linenum,  
@@ -36,10 +34,10 @@ HRESULT findInlineeLinesByVA (
   
 #### <a name="parameters"></a>参数  
  `compiland`  
- [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，表示要在其中搜索的行号编译单位。 此参数不能为`NULL`。  
+ [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，表示要在其中搜索的行号编译单位。 此参数不能为 `NULL`。  
   
  `file`  
- [in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)对象，表示要在其中搜索源文件。 此参数不能为`NULL`。  
+ [in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)对象，表示要在其中搜索源文件。 此参数不能为 `NULL`。  
   
  `linenum`  
  [in]指定基于 1 的行号。  

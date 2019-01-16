@@ -1,8 +1,6 @@
 ---
-title: 无可用的源 |Microsoft 文档
-ms.custom: ''
+title: 无可用的源 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.nosource
@@ -19,28 +17,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aae4b2428470e3e33477cfdb36699c2c1da20c1f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8673db7f0e31a32e7e4fdf92e447f373b5a29dfa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479724"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945270"
 ---
 # <a name="no-source-available"></a>无可用的源
-你的项目不包含你尝试查看代码的源代码。 原因通常双击中没有源代码的模块**调用堆栈窗口**或**线程窗口**。 可以继续调试，但不能使用源窗口设置断点并在此位置执行其他操作。 如果你需要设置断点，使用**反汇编窗口**相反。  
+你的项目不包含你尝试查看代码的源代码。 原因通常是双击了“调用堆栈”窗口或“线程”窗口中没有源代码的模块。 可以继续调试，但不能使用源窗口设置断点并在此位置执行其他操作。 如果需要设置断点，请改用“反汇编”窗口。  
   
- 在解决方案属性页中，可以更改调试器查找源文件的目录，并通知调试器忽略选定的源文件。 请参阅[调试源通用的属性，解决方案属性页对话框中](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)。  
+ 在解决方案属性页中，可以更改调试器查找源文件的目录，并通知调试器忽略选定的源文件。 请参阅[调试源通用的属性，解决方案属性页对话框](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)。  
   
  **浏览并找到源代码**  
  单击此链接以打开对话框，可从中浏览并找到源代码。  
   
  **显示反汇编**  
- 将启动**反汇编窗口**。  
+ 启动“反汇编窗口”。  
   
  **始终显示缺少的源文件的反汇编**  
- 选择此选项以显示**反汇编窗口**自动没有源可用时。 此设置还可以更改在**选项**对话框中，**调试**类别，**常规**页上，通过选中或清除**显示反汇编如果源不可用**。  
+ 选择此选项可在无可用源时自动显示“反汇编窗口”。 还可通过在“选项”对话框、“调试”类别、“常规”页面中选择或清除“源代码不可用时显示反汇编”来更改此设置。  
   
 ## <a name="see-also"></a>请参阅  
- [调试源通用的属性，解决方案属性页对话框中](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
- [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [“调试源文件”、“通用属性”、“解决方案属性页”对话框](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
+ [指定符号 (.pdb) 文件和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [SOS.dll（SOS 调试扩展）](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

@@ -1,8 +1,6 @@
 ---
-title: 错误： 安全检查失败，因为 IIS 管理服务未响应 |Microsoft Docs
-ms.custom: ''
+title: 错误：安全检查失败，因为 IIS 管理服务未响应 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.iis_not_responding
@@ -18,19 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f307e84f5267036e480ab1ec8118c32ee632bff
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: d590e98fc781093c6461bea78665ec0000875b7f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058056"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53902261"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>错误：安全检查失败，因为 IIS 管理服务没有响应
-当 IIS 管理服务没有响应时，会发生此错误。 这通常表示 IIS 的安装有问题。 首先，验证该服务是否正在运行使用**Services**工具**管理工具**。  
+当 IIS 管理服务没有响应时，会发生此错误。 这通常表示 IIS 的安装有问题。 首先，请使用“管理工具”中的“服务”工具验证该服务是否正在运行。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   重新安装 IIS，使用**添加或删除程序**控制面板。  
+-   使用“添加或删除程序”控制面板重新安装 IIS。  
   
 -   或  
   

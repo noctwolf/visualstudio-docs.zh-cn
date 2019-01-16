@@ -1,8 +1,6 @@
 ---
 title: ClickOnce 参考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
 - VB
@@ -17,18 +15,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e2752181b05719969e787ccf90aaa72ae5b620
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 3353240e5b6d1a1218c4a6afc663c7778867e414
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081561"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945452"
 ---
 # <a name="clickonce-reference"></a>ClickOnce 参考
 以下页面介绍用来表示 ClickOnce 应用程序的 XML 文件的结构。  
   
 ## <a name="in-this-section"></a>本节内容  
- [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)  
+ [ndptecclick](../deployment/clickonce-application-manifest.md)  
  列出并描述的元素和属性组成的应用程序清单。  
   
  [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)  

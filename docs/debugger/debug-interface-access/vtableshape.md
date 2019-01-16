@@ -1,8 +1,6 @@
 ---
-title: VTableShape |Microsoft 文档
-ms.custom: ''
+title: VTableShape |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,25 +13,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 380c6dcd7ad3f6c7f917004f1b8e063e7e367df3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 8b1e6f6500f4968ec94f95f4369366e0e316e615
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481332"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956954"
 ---
 # <a name="vtableshape"></a>VTableShape
-[VTable](../../debugger/debug-interface-access/vtable.md)符号已由标识类子符号`SymTagVTableShape`标记。  
+[VTable](../../debugger/debug-interface-access/vtable.md)符号具有标识的类子符号`SymTagVTableShape`标记。  
   
 ## <a name="properties"></a>属性  
- 下表显示了此符号类型的其他有效属性。  
+ 下表显示此符号类型的其他有效属性。  
   
-|属性|数据类型|描述|  
+|Property|数据类型|说明|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` 如果的 VTable 类标记为常量。|  
 |[IDiaSymbol::get_count](../../debugger/debug-interface-access/idiasymbol-get-count.md)|`DWORD`|VTable 中的条目数。|  
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|封闭编译单位符号。|  
-|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|词法父符号 ID。|  
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|将封闭的编译单位符号。|  
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|词法父符号的 ID。|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|索引 ID 的符号。|  
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返回`SymTagVTableShape`(之一[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)值)。|  
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|`BOOL`|`TRUE` 如果此类的 VTable 是未对齐。|  

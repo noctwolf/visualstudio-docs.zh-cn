@@ -1,8 +1,6 @@
 ---
 title: 调试 DLL 项目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f35a04620da94efca70fb33933f3940005996e29
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
+ms.openlocfilehash: baca738ef60ae727db852d00ed821e024f62c22f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53561689"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53871633"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>调试 Visual Studio 中的 Dll (C#，c + +、 Visual Basic 中， F#)
 
@@ -123,7 +121,7 @@ DLL （动态链接库） 是一个库，包含代码和可由多个应用的数
   
 在开始调试调用应用程序之前，请在 DLL 中设置断点。 请参阅[使用断点](../debugger/using-breakpoints.md)。 DLL 断点命中时，可以逐句通过代码，观察操作在每个行。 有关详细信息，请参阅[在调试器中导航代码](../debugger/navigating-through-code-with-the-debugger.md)。
   
-在调试期间，可以使用**模块**窗口以验证 Dll 并 *.exe*文件在应用加载。 若要打开**模块**窗口中的，调试时，选择**调试** > **Windows** > **模块**。 有关更多信息，请参见[如何：使用模块窗口](../debugger/how-to-use-the-modules-window.md)。 
+在调试期间，可以使用**模块**窗口以验证 Dll 并 *.exe*文件在应用加载。 若要打开**模块**窗口中的，调试时，选择**调试** > **Windows** > **模块**。 有关更多信息，请参见[如何：使用“模块”窗口](../debugger/how-to-use-the-modules-window.md)。 
 
 ###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> 使用即时窗口  
 

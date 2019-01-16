@@ -1,8 +1,6 @@
 ---
 title: '&lt;assemblyIdentity&gt;元素 （ClickOnce 应用程序） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assemblyIdentity
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89b54c52625578b6ba1f7859654804fa1caaad32
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: d83c750cdf08d79fc4402f08cf8a9e3a5ea218f3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53911463"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt;元素 （ClickOnce 应用程序）
 标识应用程序部署在[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。  
@@ -44,17 +42,17 @@ ms.locfileid: "39081265"
 ## <a name="elements-and-attributes"></a>元素和属性  
  `assemblyIdentity`元素是必需的。 它不包含任何子元素，并具有以下属性。  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`Name`|必须的。 标识应用程序的名称。<br /><br /> 如果`Name`包含特殊字符，如单引号或双引号引起来，应用程序可能无法激活。|  
-|`Version`|必须的。 采用以下格式指定该应用程序的版本号： `major.minor.build.revision`|  
+|`Name`|必需。 标识应用程序的名称。<br /><br /> 如果`Name`包含特殊字符，如单引号或双引号引起来，应用程序可能无法激活。|  
+|`Version`|必需。 采用以下格式指定该应用程序的版本号： `major.minor.build.revision`|  
 |`publicKeyToken`|可选。 指定表示最后 8 个字节的 16 字符的十六进制字符串`SHA-1`的应用程序集签名的公钥的哈希值。 使用对目录进行签名的公钥必须为 2048 位或更高版本。<br /><br /> 尽管为程序集签名是可选但建议，但此属性是必需的。 如果程序集未签名，你应从自签名的程序集复制值或使用"虚拟"值均为零。|  
-|`processorArchitecture`|必须的。 指定的处理器。 有效的值是`msil`适用于所有处理器`x86`的 32 位 Windows`IA64`为 64 位 Windows 和`Itanium`Intel 64 位 Itanium 处理器。|  
-|`language`|必须的。 标识两个部分语言代码 (例如， `en-US`) 的程序集。 此元素处于`asmv2`命名空间。 如果未指定，默认值是`neutral`。|  
+|`processorArchitecture`|必需。 指定的处理器。 有效的值是`msil`适用于所有处理器`x86`的 32 位 Windows`IA64`为 64 位 Windows 和`Itanium`Intel 64 位 Itanium 处理器。|  
+|`language`|必需。 标识两个部分语言代码 (例如， `en-US`) 的程序集。 此元素处于`asmv2`命名空间。 如果未指定，默认值是`neutral`。|  
   
 ## <a name="examples"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
  下面的代码示例演示`assemblyIdentity`中的元素[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单。 此代码示例摘自[ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)。  
   
 ### <a name="code"></a>代码  

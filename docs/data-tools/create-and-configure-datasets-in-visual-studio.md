@@ -2,7 +2,6 @@
 title: 创建和配置数据集
 ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.topic: conceptual
 helpviewer_keywords:
 - typed datasets, creating
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23837bcfb1d3761f8ebf23020c15e901833d63b3
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 3cde629114c56f80f0b70e7ef6641bffa7551577
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53829230"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>在 Visual Studio 中创建和配置数据集
 
@@ -50,7 +49,7 @@ ms.locfileid: "52305217"
 
 6. 单击中的数据集节点**解决方案资源管理器**以打开中的数据集**数据集设计器**。 在数据集中每个表都有一个关联`TableAdapter`对象，表示在底部。 表适配器用于填充数据集并根据需要将命令发送到数据库。
 
-   ![Dataset Designer — 数据集设计器](../data-tools/media/dataset-designer.png)
+   ![数据集设计器](../data-tools/media/dataset-designer.png)
 
 7. 连接这些表的关系行表示在数据库中定义的表之间的关系。 默认情况下，在数据库中的 foreign key 约束作为关系，表示与更新和删除规则设置为 none。 通常情况下，这是你想。 但是，可以单击这些线以显示**关系**对话框中，您可以在其中更改分层更新的行为。 有关详细信息，请参阅[中的数据集的关系](../data-tools/relationships-in-datasets.md)并[分层更新](../data-tools/hierarchical-update.md)。
 
@@ -82,7 +81,7 @@ ms.locfileid: "52305217"
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>将独立的数据表添加到数据集
 
-1. 在“数据集设计器”**中打开你的数据集。
+1. 在“数据集设计器”中打开数据集。
 
 2. 拖动<xref:System.Data.DataTable>类派生**数据集**选项卡**工具箱**拖动到**数据集设计器**。
 

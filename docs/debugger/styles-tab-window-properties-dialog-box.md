@@ -1,8 +1,6 @@
 ---
-title: 样式窗口属性对话框中选项卡 |Microsoft 文档
-ms.custom: ''
+title: 设置选项卡上，窗口属性对话框的样式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Styles Tab
@@ -12,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccccced77f508bdced130012645aa475124e87b5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 464f2908784011074754ca68a29edbd52d992c95
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473259"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990316"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>“窗口属性”对话框 ->“样式”选项卡
-使用**样式**选项卡来显示应用于所选的窗口的样式。 若要显示[窗口属性对话框](../debugger/window-properties-dialog-box.md)，焦点移到[Windows 视图](../debugger/windows-view.md)窗口。 在树中，选择任何窗口节点，然后选择**属性**从**视图**菜单。  
+使用**样式**选项卡以显示应用于所选的窗口样式。 若要显示[窗口属性对话框](../debugger/window-properties-dialog-box.md)，将焦点移至[Windows 视图](../debugger/windows-view.md)窗口。 在树中，选择窗口的任何节点，然后选择**属性**从**视图**菜单。  
   
- 以下设置子网上有**样式**选项卡：  
+ 以下设置位于**样式**选项卡：  
   
-|条目|描述|  
+|条目|说明|  
 |-----------|-----------------|  
 |**窗口样式**|窗口的组合样式代码和控件样式，如果适用。|  
-|**扩展的样式**|扩展的窗口样式代码的组合。|
+|**扩展样式**|扩展的窗口样式代码的组合。|

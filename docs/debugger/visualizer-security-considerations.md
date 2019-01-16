@@ -1,8 +1,6 @@
 ---
-title: 可视化工具安全注意事项 |Microsoft 文档
-ms.custom: ''
+title: 可视化工具安全注意事项 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 799cc8700c450fb2d8b81293bf410903e498e19c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 64a9215173b11ea83f988ab548a6301a1532f490
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476512"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53819550"
 ---
 # <a name="visualizer-security-considerations"></a>可视化工具安全注意事项
 编写可视化工具伴有可能的安全威胁。 目前尚未发现利用这些潜在威胁的攻击，但是开发人员应该密切关注此类攻击并采取此处所描述的相应安全预防措施，以防止在将来受到攻击。  
@@ -41,6 +39,6 @@ ms.locfileid: "31476512"
   
 ## <a name="see-also"></a>请参阅  
  [可视化工具体系结构](../debugger/visualizer-architecture.md)   
- [如何： 编写可视化工具](../debugger/how-to-write-a-visualizer.md)   
+ [如何：编写可视化工具](/visualstudio/debugger/create-custom-visualizers-of-data)   
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)   
  [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)
