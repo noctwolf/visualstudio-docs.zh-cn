@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dca4e8c0dd9317406603dcf4cd1bc93190fede3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 6d75b045e16ce6435568b5bb6993a74f3123f779
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820848"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269598"
 ---
 # <a name="com-and-activex-debugging"></a>调试 COM 和 ActiveX
 本节提供有关调试 COM 应用程序和 ActiveX 控件的提示。  
@@ -42,7 +42,7 @@ ms.locfileid: "53820848"
  列出在调试 COM 应用程序时可能会用到的查看器和示例应用程序。  
   
 ## <a name="related-sections"></a>相关章节  
- [调试器功能简介](../debugger/debugger-feature-tour.md)  
+ [初探调试器](../debugger/debugger-feature-tour.md)  
  提供指向调试文档的较大章节的链接。 涉及的信息包括：调试器的新增功能，设置和准备，断点，处理异常，编辑和继续，调试托管代码，调试 Visual C++ 项目，调试 COM 和 ActiveX，调试 DLL，调试 SQL，以及用户界面参考。  
   
 ## <a name="see-also"></a>请参阅  

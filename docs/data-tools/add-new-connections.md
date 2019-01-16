@@ -8,12 +8,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 927edacf968ed92eddea96f93cc4f67cbd137fcc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 73b09384bd57fd4ea0890d107ce641e4b615559f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880593"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154213"
 ---
 # <a name="add-new-connections"></a>添加新连接
 
@@ -25,7 +25,7 @@ ms.locfileid: "53880593"
 
 - Cloud Explorer
 
-   作为 Visual Studio 扩展中手动安装此窗口，通过选择**工具** > **扩展和更新** > **联机** >  **Visual Studio 应用商店**。 提供浏览和连接到 Azure 服务的专用的功能。
+   作为 Visual Studio 扩展中手动安装此窗口，通过选择**工具** > **扩展和更新** > **联机** >  **Visual Studio Marketplace**。 提供浏览和连接到 Azure 服务的专用的功能。
 
 - SQL Server 对象资源管理器
 

@@ -35,7 +35,7 @@ ms.locfileid: "53906743"
 ---
 # <a name="send-messages-to-the-output-window"></a>将消息发送到“输出”窗口
 
-可以将运行时消息写入**输出**窗口中使用<xref:System.Diagnostics.Debug>类或<xref:System.Diagnostics.Trace>类，该类是一部分的<xref:System.Diagnostics>类库。 使用<xref:System.Diagnostics.Debug>如果您只希望输出中类*调试*程序的版本。 使用<xref:System.Diagnostics.Trace>类，如果你想在这种输出*调试*并*发行*版本。  
+可以使用 <xref:System.Diagnostics.Debug> 类或 <xref:System.Diagnostics.Trace> 类将运行时消息发送到**输出**窗口中，这两个类是 <xref:System.Diagnostics> 类库的一部分。 如果只想在程序的*调试*版本中输出，使用 <xref:System.Diagnostics.Debug> 类。 如果想同时在*调试*和*发行*版本中输出，使用 <xref:System.Diagnostics.Trace> 类。   
   
 ## <a name="output-methods"></a>输出方法  
  <xref:System.Diagnostics.Trace> 和 <xref:System.Diagnostics.Debug> 类提供下列输出方法：  
@@ -46,7 +46,7 @@ ms.locfileid: "53906743"
   
 - <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName>和<xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>始终中断执行并输出信息的方法。 默认情况下，在对话框中显示 `Fail` 方法信息。  
   
-**输出**窗口可以还显示有关的信息：  
+**输出**窗口还可以显示下列信息：   
   
 - 调试器已经加载或卸载的模块。  
   

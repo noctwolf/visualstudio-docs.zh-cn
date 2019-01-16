@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9de6c966a2b58cd603094a846238f2f91c80359b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: d920897c831ca1c92b1db5fe3d649ffd7ee67143
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935107"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268768"
 ---
 # <a name="debugging-options-dialog-box"></a>“选项”对话框 ->“调试”
 “工具”菜单上的“选项”对话框中的“调试”文件夹提供以下页，可以使用它们来指定调试器工具选项。  
@@ -41,5 +41,5 @@ ms.locfileid: "53935107"
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md) [Visual Studio 中调试](../debugger/index.md)  
- [调试器功能简介](../debugger/debugger-feature-tour.md)   
+ [初探调试器](../debugger/debugger-feature-tour.md)   
  [调试用户界面参考](../debugger/debugging-user-interface-reference.md)

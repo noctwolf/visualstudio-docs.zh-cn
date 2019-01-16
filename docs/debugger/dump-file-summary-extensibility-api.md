@@ -21,10 +21,10 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53938914"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>转储文件摘要扩展性 API
-在此部分中使用扩展性 API，可以扩展 .Exe 项目系统和“转储摘要”页面以配合自己的自定义调试引擎使用。  
+在本部分中使用扩展性 API，你可以扩展 .Exe 项目系统和**转储摘要**页，以适用于你自己的自定义调试引擎。  
   
 ## <a name="in-this-section"></a>本节内容  
- 可在以下命名空间中找到用于扩展“转储摘要”页面和 .Exe 项目系统的 API：  
+ 用于扩展**转储摘要**页的 API 和 .Exe 项目系统存在于以下命名空间中：   
   
  <xref:Microsoft.VisualStudio.Debugger.VsDebugPresentationExtension>  
   

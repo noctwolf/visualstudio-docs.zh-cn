@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87d74eb960d4e445e457744fd0325e7beb15262e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 530ed2144127e7934d02f5ccc0310d9542671507
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927150"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270055"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 中调试器的工作效率提示和技巧
 
-阅读本主题以了解为 Visual Studio 调试器的工作效率的提示和技巧。 有关调试器的基本功能的信息，请参阅[调试器功能简介](../debugger/debugger-feature-tour.md)。 在本主题中，我们介绍功能教程中不包括某些区域。
+阅读本主题以了解为 Visual Studio 调试器的工作效率的提示和技巧。 有关调试器的基本功能的信息，请参阅[先来看一下调试器](../debugger/debugger-feature-tour.md)。 在本主题中，我们介绍功能教程中不包括某些区域。
 
 ## <a name="pin-data-tips"></a>固定数据提示
 

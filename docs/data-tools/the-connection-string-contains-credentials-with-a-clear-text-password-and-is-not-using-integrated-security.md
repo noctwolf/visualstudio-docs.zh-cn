@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2f7d9c945d3e8897114f165464c0823cce3ceeae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: ef63abe36a5880305f522d75d9e1cb1d7f6995fa
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854747"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204198"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>连接字符串包含的凭据具有明文密码并且未使用集成安全性
 
@@ -25,15 +25,13 @@ ms.locfileid: "53854747"
 > [!WARNING]
 > 将“连接”属性“应用程序设置”属性显式设置为“False”可将密码添加到 DBML 文件中。
 
-## <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>将敏感信息随连接字符串一起保存在项目的应用程序设置中
+## <a name="save-options"></a>保存选项
 
-- 单击 **“是”**。
+- 若要使用的敏感信息保存连接字符串，请选择**是**。
 
    连接字符串将存储为应用程序设置。 连接字符串以纯文本形式包含敏感信息。 DBML 文件不包含敏感信息。
 
-## <a name="to-save-the-connection-string-without-the-sensitive-information-in-the-projects-application-settings"></a>不将敏感信息随连接字符串一起保存在项目的应用程序设置中
-
-- 单击“否” 。
+- 若要保存连接字符串不包含敏感信息，请选择**否**。
 
    连接字符串将存储为应用程序设置，但不包含密码。
 

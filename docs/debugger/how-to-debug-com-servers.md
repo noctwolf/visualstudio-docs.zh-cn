@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6343366478e360631b5a50c8c6d36ca4b31c27cf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: cc8cbf7e087e2198071aef9f77c109f3a7c71640
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853926"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268562"
 ---
 # <a name="how-to-debug-com-servers"></a>如何：调试 COM 服务器
 调试 COM 服务器应用程序会引起一系列不总是容易解决的独特问题。  
@@ -47,4 +47,4 @@ ms.locfileid: "53853926"
  [如何：使用 RPC 调试来调试 COM 客户端和服务器](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [调试 COM 服务器和容器](../debugger/com-server-and-container-debugging.md)   
  [在 Visual Studio 中进行调试](../debugger/index.md)  
- [调试器功能简介](../debugger/debugger-feature-tour.md)
+ [初探调试器](../debugger/debugger-feature-tour.md)

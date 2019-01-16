@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db3239dcb3f4068f41ebd21ad06db09756cbad51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: c2f0ba5d49e0c8a02755bfc9d23d486dcf7f2943
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923109"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154345"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行时最少的用户交互。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 用于发布和更新应用程序使用 ClickOnce 技术部署，如果您已开发您的项目与 Visual Basic 和 Visual 提供完全支持C#。 有关部署 Visual c + + 应用程序的信息，请参阅[Visual c + + 应用程序的 ClickOnce 部署](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。  
@@ -51,16 +51,16 @@ ms.locfileid: "53923109"
  验证码证书用于验证应用程序的发行者的真实性。 通过对应用程序部署使用验证码，ClickOnce 可帮助阻止有害程序饰演本身为来自可信任的源的合法程序。 （可选） 还可以使用证书为应用程序签名和部署清单，以证明文件未被篡改。 有关详细信息，请参阅[ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)。 证书还用于配置客户端计算机具有受信任的发布服务器的列表。 如果应用程序来自受信任的发行者，则它可以安装无需任何用户交互。 有关详细信息，请参阅[受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)。  
   
 ### <a name="code-access-security"></a>代码访问安全性  
- 代码访问 secrity 帮助限制代码对受保护资源的访问权限。 在大多数情况下，可以选择 Internet 或本地 Intranet 区域来限制权限。 使用**安全**页面**ProjectDesigner**请求适合于应用程序的区域。 此外可以调试具有受限的权限来模拟最终用户体验的应用程序。 有关详细信息，请参阅 [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)。  
+ 代码访问安全性帮助限制代码对受保护资源的访问权限。 在大多数情况下，可以选择 Internet 或本地 Intranet 区域来限制权限。 使用**安全**页面**ProjectDesigner**请求适合于应用程序的区域。 此外可以调试具有受限的权限来模拟最终用户体验的应用程序。 有关详细信息，请参阅 [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)。  
   
 ### <a name="clickonce-trust-prompt"></a>ClickOnce 信任提示  
- 如果应用程序请求更多的权限超出允许的区域，可以提示最终用户做出信任决策。 最终用户可以决定是否信任，可以运行 ClickOnce 应用程序，如 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序、 控制台应用程序、 XAML 浏览器应用程序，和 Office 解决方案。 有关更多信息，请参见[如何：配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。  
+ 如果应用程序请求更多的权限超出允许的区域，可以提示最终用户做出信任决策。 最终用户可以决定是否信任，可以运行 ClickOnce 应用程序，如 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序、 控制台应用程序、 XAML 浏览器应用程序，和 Office 解决方案。 有关详细信息，请参阅[如何：配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。  
   
 ## <a name="how-clickonce-deployment-works"></a>ClickOnce 部署的工作原理  
  核心[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署体系结构基于两个 XML 清单文件： 应用程序清单和部署清单。 这些文件用于描述从何处安装 ClickOnce 应用程序、 更新的方式和更新时。  
   
 ### <a name="publish-clickonce-applications"></a>发布 ClickOnce 应用程序  
- 应用程序清单描述应用程序本身。 这包括程序集、 依赖项和文件组成应用程序、 所需的权限，以及更新将在其中可用的位置。 应用程序开发人员通过使用 Visual Studio 或清单生成和编辑工具中的发布向导编写应用程序清单 (*Mage.exe*) 中[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]。 有关更多信息，请参见[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
+ 应用程序清单描述应用程序本身。 这包括程序集、 依赖项和文件组成应用程序、 所需的权限，以及更新将在其中可用的位置。 应用程序开发人员通过使用 Visual Studio 或清单生成和编辑工具中的发布向导编写应用程序清单 (*Mage.exe*) 中[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]。 有关详细信息，请参阅[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
  部署清单描述应用程序的部署方式。 这包括应用程序清单的位置和客户端应运行的应用程序的版本。  
   

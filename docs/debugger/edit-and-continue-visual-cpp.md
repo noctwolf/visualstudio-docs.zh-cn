@@ -29,9 +29,9 @@ ms.locfileid: "53922989"
   
 有关 Visual Studio 2015 Update 3 功能改进的详细信息，请参阅 [Visual Studio 2015 Update 3 中的 C++ Edit and Continue](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)。  
   
- 在 Visual Studio 2013 Update 3 中引入的 [/Zo（增强优化调试）](/cpp/build/reference/zo-enhance-optimized-debugging)编译器选项将其他信息添加到 .pdb（符号）文件中，用于未使用 [/Od（禁用（调试））](https://msdn.microsoft.com/library/aafb762y.aspx)选项进行编译的二进制文件。  
+ Visual Studio 2013 Update 3 中引入的编译器选项 [/Zo（增强优化调试）](/cpp/build/reference/zo-enhance-optimized-debugging) 向 .pdb （符号） 文件中添加了其他信息，用于未使用 [/Od（禁用（调试））](https://msdn.microsoft.com/library/aafb762y.aspx)选项编译的二进制文件。  
   
- **/Zo**禁用编辑并继续。 请参阅[操作说明：调试优化的代码](../debugger/how-to-debug-optimized-code.md)。  
+ **/Zo** 禁用 Edit and Continue。 请参阅[如何：调试优化的代码](../debugger/how-to-debug-optimized-code.md)。  
   
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> 启用或禁用“编辑并继续”  
  如果要对代码进行编辑而又不希望在当前调试会话过程中应用这些编辑，则可以禁用自动调用“编辑并继续”。 也可以重新启用“编辑并继续”的自动操作。
@@ -43,20 +43,20 @@ ms.locfileid: "53922989"
 
 2. 在 **“工具”** 菜单上，选择 **“选项”**。
   
-3. 在“选项”对话框中，选择“调试”>“常规”文件夹。
+3. 在“选项”对话框中，选择“调试”>“常规”。
 
 4. 若要启用，请选择**启用编辑并继续**。 若要禁用，请清除该复选框。
   
-5. 在“编辑并继续”  组中，选中或取消选中“启用本机编辑并继续”  复选框。  
+5. 在“Edit and Continue”组中，选中或取消选中“启用本机 Edit and Continue”复选框。  
   
-   更改此设置将影响进行的所有项目。 更改此设置后，不必重新生成应用程序。 如果从命令行或从生成文件生成应用程序但在 Visual Studio 环境中调试，则在设置了 /ZI 选项的情况下，仍可以使用“编辑并继续”。  
+   更改此设置将影响当前处理的所有项目。 更改此设置后不需要重新生成应用程序。 如果从命令行或生成文件生成应用程序，但在 Visual Studio 环境中调试，则仍可以使用 Edit and Continue（如果已设置“/ZI”选项）。  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> 如何显式应用代码更改  
- 在 Visual C++ 中，“编辑并继续”可以以两种方法应用代码更改。 代码更改可在选择执行命令时隐式应用，也可使用 **“应用代码更改”** 命令显式应用。  
+ 在 Visual C++ 中，“Edit and Continue”可以通过两种方法应用代码更改。 代码更改可在选择执行命令时隐式应用，也可使用 **“应用代码更改”** 命令显式应用。  
   
- 当显式应用代码更改时，程序保持在中断模式下，不会执行。  
+ 选择执行命令时可以隐式应用代码更改；  
   
--   若要显式应用代码更改，在 **调试** 菜单上，选择 **应用代码更改**。  
+-   或者，使用“应用代码更改”命令则可以显式应用代码更改。  
   
 ##  <a name="BKMK_How_to_stop_code_changes"></a> 如何停止代码更改  
  当“编辑并继续”处于应用代码更改的过程中时，您可以停止该操作。  
