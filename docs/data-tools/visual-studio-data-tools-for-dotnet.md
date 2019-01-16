@@ -7,16 +7,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: bf28747e8bd111767fbe314cbb658a38ef059ae2
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 24da256ac835e477465845714cc844ac5bb305d7
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066335"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53872747"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>适用于 NET 的 Visual Studio Data Tools
 
@@ -42,7 +41,7 @@ Visual Studio 和.NET Framework 一起提供广泛的 API 和工具连接到数�
 
 5. 添加自定义代码的内容，如业务规则、 搜索和数据验证，或若要充分利用基础数据库公开的自定义功能。
 
-可以跳过步骤 3 和.NET 应用程序发出命令直接向数据库中，而不是使用模型进行编程。 在这种情况下，您会发现此处的相关文档： [ADO.NET](/dotnet/framework/data/adonet/index)。 请注意，仍可以使用**数据源配置向导**和设计器来填充您自己的内存，然后将 UI 控件数据绑定到这些对象中的对象时生成数据绑定代码。
+可以跳过步骤 3 和.NET 应用程序发出命令直接向数据库中，而不是使用模型进行编程。 在这种情况下，您将找到相关文档：[ADO.NET](/dotnet/framework/data/adonet/index)。 请注意，仍可以使用**数据源配置向导**和设计器来填充您自己的内存，然后将 UI 控件数据绑定到这些对象中的对象时生成数据绑定代码。
 
 ## <a name="see-also"></a>请参阅
 

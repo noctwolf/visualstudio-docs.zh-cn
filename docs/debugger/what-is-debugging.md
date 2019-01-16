@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c61e30e7085ff2f0f8cec5cc84d27efa0ea22be5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6933f3b5dd826eda586c92466bcd9a8cbe6dc527
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830964"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204276"
 ---
 # <a name="what-is-debugging"></a>什么是调试？
 
@@ -44,11 +44,14 @@ Visual Studio 调试器是一个功能强大的工具。 我们演示如何使�
 
 ## <a name="when-to-use-a-debugger"></a>何时使用调试程序
 
-调试器是查找并修复您的应用程序中的 bug 的必备工具。 但是，上下文就是一切，并且务必要利用所有工具任您可释放对象，以帮助您快速消除 bug 或错误。 有时，右侧的"工具"可能是更好的编码做法。 通过了解何时使用其他一些工具与调试器，您将了解如何更有效地使用调试器。 如果您已经知道你需要了解有关调试器的信息，请参阅[零基础调试](../debugger/debugging-absolute-beginners.md)。 否则，请按照中的链接**后续步骤**。
+调试器是查找并修复您的应用程序中的 bug 的必备工具。 但是，上下文就是一切，并且务必要利用所有工具任您可释放对象，以帮助您快速消除 bug 或错误。 有时，右侧的"工具"可能是更好的编码做法。 通过了解何时使用其他一些工具与调试器，您将了解如何更有效地使用调试器。
 
 ## <a name="next-steps"></a>后续步骤
 
-在本文中，你已了解一些常规的调试概念。 接下来，您可以开始学习如何使用 Visual Studio 进行调试以及如何编写更少 bug 的代码。 以下文章说明C#代码示例，但概念适用于 Visual Studio 支持的所有语言。
+在本文中，你已了解一些常规的调试概念。 接下来，您可以开始学习如何使用 Visual Studio 进行调试以及如何编写更少 bug 的代码。 以下文章显示C#代码示例，但概念适用于 Visual Studio 支持的所有语言。
+
+> [!div class="nextstepaction"]
+> [零基础调试](../debugger/debugging-absolute-beginners.md)
 
 > [!div class="nextstepaction"]
 > [通过编写更优质的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)

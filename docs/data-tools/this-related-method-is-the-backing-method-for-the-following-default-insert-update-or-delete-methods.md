@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b5579c8916e81e3c49e9d6e24bf37ed85039c03
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c79492c69f10d97c246d0d56b013fba5af17ec54
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851818"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204000"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>此相关方法是以下默认插入、更新或删除方法的支持方法
 
@@ -22,17 +22,15 @@ ms.locfileid: "53851818"
 
 所选`DataContext`方法当前用作之一`Insert`， `Update`，或`Delete`方法的一个实体类上**O/R 设计器**。 删除所选的方法使实体类，则使用此方法以还原为默认运行时行为的执行插入、 更新或删除在更新过程。
 
-## <a name="to-delete-the-selected-method-causing-the-entity-class-to-use-runtime-updates"></a>删除所选方法，使实体类使用运行时更新
+## <a name="selected-method-options"></a>所选的方法选项
 
-- 单击 **“是”**。
+- 若要删除所选的方法，使实体类使用运行时的更新，请单击**是**。
 
-    所选方法将被删除，并且使用此方法重写更新行为的所有类将还原为使用默认 LINQ to SQL 运行时行为。
+   所选方法将被删除，并且使用此方法重写更新行为的所有类将还原为使用默认 LINQ to SQL 运行时行为。
 
-## <a name="to-close-the-message-box-leaving-the-selected-method-unchanged"></a>关闭消息框，不对所选方法进行更改
+- 若要关闭消息框中，不对所选的方法保持不变，请单击**否**。
 
-- 单击“否” 。
-
-    消息框关闭，不进行任何更改。
+   消息框关闭，不进行任何更改。
 
 ## <a name="see-also"></a>请参阅
 

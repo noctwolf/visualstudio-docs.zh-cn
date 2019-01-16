@@ -33,18 +33,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 647749b2993b41180852aca43f99ce15844c6d71
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094805"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204412"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>管理 Visual Studio 中调试器的异常
 
-异常是执行程序时发生的错误状态的指示。 哪些异常或异常执行中断，组可以让调试程序并想要调试器中断的位置。 调试器中断，它会显示引发异常的位置。 您还可以添加或删除的异常。 使用 Visual Studio 中打开的解决方案中，使用**调试 > Windows > 异常设置**以打开**异常设置**窗口。
+异常是执行程序时发生的错误状态的指示。 哪些异常或异常执行中断，组可以让调试程序并想要调试器中断的位置 （即，在调试器中暂停）。 调试器中断，它会显示引发异常的位置。 您还可以添加或删除的异常。 使用 Visual Studio 中打开的解决方案中，使用**调试 > Windows > 异常设置**以打开**异常设置**窗口。
 
-提供响应最重要的异常处理程序。 此外了解如何配置调试器始终中断执行的一些异常。
+提供响应最重要的异常处理程序。 如果您需要知道如何添加异常的处理程序，请参阅[通过编写更好地修复 bugC#代码](../debugger/write-better-code-with-visual-studio.md)。 此外，了解如何配置调试器始终中断执行的一些异常。
 
 异常发生时，调试程序将一条异常消息写入到“输出”窗口。 它可能会中断执行，在以下情况下，当：
 

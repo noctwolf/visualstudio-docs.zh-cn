@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fee8523f48dd94b0ebeacd87dd7d04f6fa172a91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: fbc48fdc93feebf2f78b6d11ae2b7cc744c46f98
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898133"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269730"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>什么是调试器中的新增功能 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 调试器包括这些新功能：
 
-- 15.5 中的新增功能：当执行感兴趣的代码时，快照调试程序会为生产中的应用拍摄快照。 要指示调试程序拍摄快照，可在代码中设置 snappoints 和 logpoints。 使用调试程序，可精确查看出错的内容，而不影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
+- 15.5 中的新增功能：当执行感兴趣的代码时，快照调试程序会为生产中的应用拍摄快照。 若要指示该调试器拍摄快照，可以在代码中设置快照点和记录点。 通过该调试器，可精确查看出错的内容，而不会影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
 
     快照集合适用于在 Azure App Service 中运行的以下 Web 应用：
 
@@ -71,4 +71,4 @@ ms.locfileid: "53898133"
 ## <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 中进行调试](../debugger/index.md)
-- [调试器功能简介](../debugger/debugger-feature-tour.md)
+- [初探调试器](../debugger/debugger-feature-tour.md)

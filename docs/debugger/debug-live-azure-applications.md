@@ -51,13 +51,13 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 1. 打开你想要快照调试的项目。
 
     > [!IMPORTANT]
-    > 您需要打开到快照调试**相同版本的源代码**，它发布到 Azure 应用服务。
+    > 对于快照调试，需要打开与已发布到 Azure 应用服务的“相同版本的源代码”。
 
-1. 在云资源管理器 (**视图 > 云资源管理器**)，右键单击您的项目部署到 Azure 应用服务，然后选择**附加 Snapshot Debugger**。
+1. 在云资源管理器（“视图”>“云资源管理器”）中，右键单击项目部署到的 Azure 应用服务，然后选择“附加快照调试器”。
 
    ![启动快照调试程序](../debugger/media/snapshot-launch.png)
 
-    选择第一次**附加 Snapshot Debugger**，系统会提示你在 Azure 应用服务上安装 Snapshot Debugger 站点扩展。 此安装需要重新启动你的 Azure 应用服务。
+    第一次选择“附加快照调试器”时，系统会提示在 Azure 应用服务上安装快照调试器站点扩展。 此安装需要重启 Azure 应用服务。
 
    Visual Studio 现在处于快照调试模式下。
 
@@ -66,7 +66,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
    ![快照调试模式](../debugger/media/snapshot-message.png)
 
-   **模块**窗口中显示为 Azure 应用服务的所有模块已都加载时 (选择**调试 / Windows / 模块**要打开此窗口)。
+   “模块”窗口会显示何时已加载了 Azure 应用服务的所有模块（选择“调试”/“窗口”/“模块”可打开此窗口）。
 
    ![检查模块窗口](../debugger/media/snapshot-modules.png)
 
@@ -76,7 +76,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
    ![设置快照点](../debugger/media/snapshot-set-snappoint.png)
 
-2. 单击**开始收集**若要打开吸附点。
+2. 单击“开始收集”以打开快照点。
 
    ![开启快照点](../debugger/media/snapshot-start-collection.png)
 
@@ -89,7 +89,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 ## <a name="inspect-snapshot-data"></a>检查快照数据
 
-1. 当命中吸附点时，快照将出现在诊断工具窗口。 若要打开此窗口，请选择**调试 / Windows / 显示诊断工具**。
+1. 命中快照点时，快照将出现在诊断工具窗口。 若要打开此窗口，请选择“调试”/“窗口”/“显示诊断工具”。
 
    ![打开快照点](../debugger/media/snapshot-diagsession-window.png)
 
@@ -97,11 +97,11 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
    ![检查快照数据](../debugger/media/snapshot-inspect-data.png)
 
-   从此视图中，你可以悬停在变量，以查看数据提示，请使用**局部变量**，**监视**，和**调用堆栈**windows，并计算表达式。
+   在此视图中，可通过将鼠标悬停在变量上来查看数据提示；使用“局部变量”、“监视”和“调用堆栈”窗口；以及计算表达式。
 
-    网站本身仍然为实时事件和最终用户不会受到影响。 默认情况下捕获每个吸附点，只有一个快照： 吸附点捕获快照后关闭。 如果你想要捕获吸附点在另一个快照，您可以将吸附点重新打开通过单击**更新集合**。
+    网站本身仍然是实时的，最终用户不会受到影响。 默认情况下，每个快照点只捕获一个快照：快照点在捕获快照后即关闭。 如果要在此快照点再捕获一个快照，可以通过单击“更新集合”来重新打开快照点。
 
-此外可以向应用添加更多的吸附点，并将其具有**更新集合**按钮。
+还可以向应用添加更多快照点，并使用“更新集合”按钮将其启动。
 
 **需要帮助？** 请参阅[疑难解答和已知的问题](../debugger/debug-live-azure-apps-troubleshooting.md)并[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)页。
 

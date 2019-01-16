@@ -8,19 +8,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 998b94a13f3650446f9f791ffc29c7c863f9df89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0022d94d8bb786340dba5d2d412bbbd46585e35e
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968626"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227689"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>检查 IntelliTrace 历史调试在 Visual Studio 中使用对应用程序
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>检查 IntelliTrace 历史调试在 Visual Studio 中使用对应用程序 (C#，Visual Basic、 c + +)
+
 可以使用[历史调试](../debugger/historical-debugging.md)向后移动和向前浏览应用程序的执行，以查看其状态。  
   
 可以在 Visual Studio Enterprise 版（但不可在 Professional 或 Community 版）中使用 IntelliTrace。  
   
-## <a name="navigate-your-code-with-historical-debugging"></a>导航使用历史调试代码  
+## <a name="navigate-your-code-with-historical-debugging"></a>导航使用历史调试代码
+
  让我们从有 Bug 的简单程序开始。 在 C# 控制台应用程序中，添加以下代码：  
   
 ```csharp  

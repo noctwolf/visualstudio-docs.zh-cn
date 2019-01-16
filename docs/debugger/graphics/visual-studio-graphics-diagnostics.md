@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7289759499c4715fba712ed52f1664b3dc3c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 9c4dda5fef6b2a288e5b4f78bbe6b10422ef5ea2
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890925"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154252"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断
 Visual Studio*图形诊断*是一套用于记录、 然后分析 Direct3D 应用中的呈现和性能问题的工具。 可对在 Windows PC 上、在 Windows 设备模拟器中或在远程 PC 或设备上本地运行的应用使用图形诊断。  
 
- 图形诊断工作流一开始会捕获你的应用如何使用 Direct3D 的记录（在其运行时实时捕获），因此，可以立即对其行为进行分析、共享或保存以供稍候使用。 捕获会话可以从 Visual Studio 或使用命令行捕获工具“dxcap.exe”手动启动和进行控制。 也可以通过使用图形诊断捕获 API 以编程方式启动和控制捕获会话。  
+ 图形诊断工作流一开始会捕获你的应用如何使用 Direct3D 的记录（在其运行时实时捕获），因此，可以立即对其行为进行分析、共享或保存以供稍候使用。 可以启动捕获会话，并将其从 Visual Studio 或使用命令行捕获工具手动控制**dxcap.exe**。 此外可以启动并通过使用图形诊断捕获 Api 以编程方式控制捕获会话。  
 
- 录制捕获会话后，随时都可通过 Visual Studio“图形分析器”播放其内容，还可通过使用与所用应用完全相同的资源和呈现命令来重新创建捕获的帧。 然后使用图形分析器窗口提供的工具，任何捕获的帧都可以得到详尽分析。 这些工具可用于检查任意 Direct3D API 调用、资源、管道状态对象，甚至捕获帧中任何像素的完整历史记录。 通过协同使用这些工具，可以直观地解决呈现问题，从它如何出现在捕获帧中以及如何向下钻取，到应用的资源代码、着色器或图形资产中的根本原因。  
+ 录制捕获会话后，随时都可通过 Visual Studio“图形分析器”播放其内容，还可通过使用与所用应用完全相同的资源和呈现命令来重新创建捕获的帧。 然后，使用图形分析器窗口中提供的工具，任何捕获的帧可以得到详尽分析。 这些工具可用于检查任意 Direct3D API 调用、资源、管道状态对象，甚至捕获帧中任何像素的完整历史记录。 通过协同使用这些工具，可以直观地解决呈现问题，从它如何出现在捕获帧中以及如何向下钻取，到应用的资源代码、着色器或图形资产中的根本原因。  
 
  若要诊断性能问题，可以通过使用“帧分析”工具来分析捕获的帧。 此工具通过自动改变应用使用 Direct3D 的方式并对你的所有变量进行基准检查，探索潜在的性能优化。 过去，你可能为了要找出哪些造成了此差异而进行这样的手动更改或对其进行基准检查。 有了帧分析，你只需对你已知的进行更改即可。  
 

@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57c9516ecb4a61a66db9a27740ec110cec292f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863285"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227975"
 ---
-# <a name="get-started-debugging-multithreaded-applications"></a>开始调试多线程应用程序
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序 (C#，Visual Basic、 c + +)
 Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线程应用程序。 本教程演示如何使用线程标记**并行堆栈**窗口中，**并行监视**窗口中，条件断点，并筛选器断点。 完成本教程将使您熟悉用于调试多线程应用程序的 Visual Studio 功能。
 
 | | |
@@ -36,7 +36,7 @@ Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线
 
 - 若要使用**调试位置**工具栏和**线程**窗口中，请参阅[演练：调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
 
-- 有关使用的示例<xref:System.Threading.Tasks.Task>（托管代码） 和并发运行时 （c + +），请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)。 有关适用于最多线程应用程序类型的常规调试提示，读取该主题和此。
+- 有关使用的示例<xref:System.Threading.Tasks.Task>（托管代码） 和并发运行时 （c + +），请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md) 有关适用于最多线程应用程序类型的常规调试提示，读取该主题和此。
   
 首先需要一个多线程应用程序项目。 下面是一个示例。  
   

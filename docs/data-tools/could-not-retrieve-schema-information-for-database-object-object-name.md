@@ -9,18 +9,16 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4236085ffa0cacade86acfd4ca68caf38e54f165
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 915475b9f20b57871a8228ebde022d0b6ce8f3b6
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885584"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204263"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>未能获取数据库对象 \<对象名称> 的架构信息
 
 将“服务器资源管理器”或“数据库资源管理器”中的对象复制到剪贴板，从数据库中删除，然后再粘贴到设计器上时，通常会显示此消息。 因为该数据库对象不再存在，所以显示此消息。
-
-若要更正此错误，请选择**确定**以关闭对话框。
 
 ## <a name="see-also"></a>请参阅
 

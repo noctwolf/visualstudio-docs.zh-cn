@@ -73,7 +73,7 @@ ms.locfileid: "53829468"
     如果在调试时启用“仅我的代码”，此选项会在没有用户代码（“我的代码”）的情况下发出警告。
 
 **启用 .NET Framework 源代码单步执行**：  
-允许调试器单步执行 .NET Framework 源代码。 自动启用此选项会禁用仅我的代码。 .NET framework 符号将下载到缓存位置。 更改缓存位置与**选项**对话框中，**调试**类别中，**符号**页。
+允许调试器单步执行 .NET Framework 源代码。 启用此选项会自动禁用“仅我的代码”。 .NET Framework 符号将下载到缓存位置。 使用“选项”对话框>“调试类别”>“符号”页面可更改缓存位置。
 
 **单步执行属性和运算符(仅限托管)**：  
 防止调试器单步执行托管代码中的属性和运算符。
@@ -88,9 +88,9 @@ ms.locfileid: "53829468"
 指示 Visual Studio 调试器从实现 SrcSrv (`srcsrv.dll`) 协议的源服务器中获取源文件。 Team Foundation Server 和 Windows 的调试工具是实现协议的两个源服务器。 有关 SrcSrv 设置的详细信息，请参阅[SrcSrv](/windows-hardware/drivers/debugger/srcsrv)文档。 此外，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
 > [!IMPORTANT]
-> 由于读取 .pdb 文件会执行文件中的任意代码，因此请确保信任此服务器。
+> 由于读取 .pdb 文件可在文件中执行任意代码，因此请确保你信任该服务器。
 
-- **将源服务器诊断消息打印到输出窗口**：  
+- **将源服务器诊断消息打印到“输出”窗口**：  
     如果启用源服务器支持，此设置会打开诊断显示。
 
 - **允许源服务器中的部分信任程序集(仅限托管)**：  
@@ -100,10 +100,10 @@ ms.locfileid: "53829468"
     若源服务器支持已启用，此设置将替代运行不受信任的命令时进行提示这一默认行为。
 
 **启用源链接支持**：  
-    告知 Visual Studio 调试器下载源文件 *.pdb*文件包含源链接信息。 源链接的详细信息，请参阅[源链接规范](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md)。
+    告知 Visual Studio 调试器下载包含源链接信息的 .pdb文件的源文件。 有关源链接的详细信息，请参阅[源链接规范](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md)。
 
 > [!IMPORTANT]
->  由于源链接将下载文件使用 http 或 https，因此请确保您信任 *.pdb*文件。
+>  由于源链接将使用 http 或 https 下载文件，因此请确保你信任该 .pdb 文件。
 
 - **对于所有源链接请求，回退到 Git 凭据管理器身份验证**：  
     若源链接支持已启用且源链接请求未通过身份验证，则 Visual Studio 调用 Git 凭据管理器。
@@ -114,8 +114,8 @@ ms.locfileid: "53829468"
 **要求源文件与原始版本完全匹配**：  
 指示调试器验证源文件是否与用于构建待调试的可执行文件的源代码版本匹配。 若版本不匹配，系统会提示你查找匹配的源。 若找不到匹配的源，调试过程中将不会显示源代码。
 
-**将所有输出窗口文本重定向到即时窗口**：  
-将通常显示在“输出”窗口中的所有调试器消息改为发送到“即时”窗口。
+**将所有“输出”窗口文本重定向到“即时”窗口**：  
+将通常显示在“输出”窗口中的所有调试器消息发送到“即时”窗口。
 
 **在变量窗口中显示对象的原始结构**：  
 禁用所有对象的结构视图自定义。 有关视图自定义的详细信息，请参阅[创建 .managed 对象的自定义视图](../debugger/create-custom-views-of-dot-managed-objects.md)。
@@ -123,7 +123,7 @@ ms.locfileid: "53829468"
 **在模块加载时取消 JIT 优化(仅限托管)**：  
 在附加调试器的情况下，加载模块并编译 JIT 后，禁用托管代码的 JIT 优化。 禁用优化可能更易于调试某些问题，尽管这会降低性能。 如果正在使用“仅我的代码”，则取消 JIT 优化会导致非用户代码显示为用户代码（“我的代码”）。 有关详细信息，请参阅[JIT 优化和调试](../debugger/jit-optimization-and-debugging.md)。
 
-**对 ASP.NET 启用 JavaScript 调试(Chrome、Microsoft Edge 和 IE)**：  
+**启用适用于 ASP.NET 的 JavaScript 调试（Chrome、Edge 和 IE）**：  
 启用脚本调试程序对 ASP.NET 应用程序。 在 Chrome 中的第一次使用，可能需要登录到浏览器来启用已安装的 Chrome 扩展。 禁用此选项可还原为旧行为。
 
 **启用适用于 UWP JavaScript 应用的 Edge 开发人员工具(实验版)**：  
