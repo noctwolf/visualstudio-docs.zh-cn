@@ -2,7 +2,6 @@
 title: 调试多线程应用程序 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/06/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
@@ -23,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea1af90ae775ed24f5cceabeca04cdc901f545f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 07710ed0188baf48a567bb3c003f174814c30094
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53059673"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53907878"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中调试多线程应用程序
 线程是操作系统向其授予处理器时间的指令序列。 在操作系统中运行的每个进程都包含至少一个线程。 包含多个线程的进程称为多线程。  
@@ -41,7 +40,7 @@ ms.locfileid: "53059673"
 
 Visual Studio 提供用于在调试多线程应用程序中使用不同的工具。
 
-- 对于线程，用于调试线程的主要工具是**线程**窗口中，源窗口中的线程标记**并行堆栈**窗口中，**并行监视**窗口中，并**调试位置**工具栏。 若要了解如何**线程**窗口和**调试位置**工具栏中，请参阅[演练：使用线程窗口进行调试](../debugger/how-to-use-the-threads-window.md)。 若要了解如何使用**并行堆栈**并**并行监视**windows，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。 这两个主题显示如何使用线程标记。
+- 对于线程，用于调试线程的主要工具是**线程**窗口中，源窗口中的线程标记**并行堆栈**窗口中，**并行监视**窗口中，并**调试位置**工具栏。 若要了解如何**线程**窗口和**调试位置**工具栏中，请参阅[演练：使用“线程”窗口进行调试](../debugger/how-to-use-the-threads-window.md)。 若要了解如何使用**并行堆栈**并**并行监视**windows，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。 这两个主题显示如何使用线程标记。
   
 - 使用的代码[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[并发运行时](/cpp/parallel/concrt/concurrency-runtime/)，用于调试的主要工具是**并行堆栈**窗口中， **并行监视**窗口中，并**任务**窗口中，它还支持 JavaScript。 若要开始，请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)和[演练：调试 c + + AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)。 
 
@@ -64,7 +63,7 @@ Visual Studio 还提供功能强大的断点和跟踪点，在调试多线程应
  [调试多个进程](../debugger/debug-multiple-processes.md)  
  说明如何调试多个进程。
 
- [演练：使用线程窗口进行调试](../debugger/how-to-use-the-threads-window.md)。  
+ [演练：使用“线程”窗口进行调试](../debugger/how-to-use-the-threads-window.md)。  
  演示如何使用的演练**线程**窗口和**调试位置**工具栏。 
 
  [演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)  

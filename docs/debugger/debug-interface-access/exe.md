@@ -1,8 +1,6 @@
 ---
-title: Exe |Microsoft 文档
-ms.custom: ''
+title: Exe |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -17,25 +15,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 899b168428428e0e4df3330691358571d7da9ed1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: b6fdec31314dcce0d5c83adee69de4e4fb2754c0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459735"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53948337"
 ---
 # <a name="exe"></a>Exe
-Exe 是唯一的符号既没有采用词法或类父，因为它表示对.exe 或.dll 文件的全局作用域。 没有具有只有一个符号`SymTagExe`标记每个文件。 [Idiasession:: Get_globalscope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)方法返回的符号。  
+Exe 是唯一的符号不带词法或类父级，因为它表示全局范围的.exe 或.dll 文件。 没有具有只有一个符号`SymTagExe`标记每个文件。 [Idiasession:: Get_globalscope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)方法返回的符号。  
   
 ## <a name="properties"></a>属性  
- 下表显示可用于此符号类型的属性。  
+ 下表显示适用于此符号类型的属性。  
   
-|属性|数据类型|描述|  
+|Property|数据类型|说明|  
 |--------------|---------------|-----------------|  
-|[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|此可执行文件的保留时间。|  
+|[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|此可执行文件的年龄。|  
 |[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID` 此可执行文件。|  
-|[IDiaSymbol::get_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|`BOOL`|`TRUE` 如果与关联的符号文件此可执行文件将包含 C 类型 （仅在 DIA SDK v8.0 或更高版本）。|  
-|[IDiaSymbol::get_isStripped](../../debugger/debug-interface-access/idiasymbol-get-isstripped.md)|`BOOL`|`TRUE` 如果从与此可执行文件 （仅在 DIA SDK v8.0 或更高版本） 关联的符号文件中具有已去除私有符号。|  
+|[IDiaSymbol::get_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|`BOOL`|`TRUE` 如果符号文件与此可执行文件将包含 C 类型 （仅在 DIA SDK v8.0 或更高版本）。|  
+|[IDiaSymbol::get_isStripped](../../debugger/debug-interface-access/idiasymbol-get-isstripped.md)|`BOOL`|`TRUE` 如果从与此可执行文件 （仅在 DIA SDK v8.0 或更高版本） 关联的符号文件中有已去除私有符号。|  
 |[IDiaSymbol::get_machineType](../../debugger/debug-interface-access/idiasymbol-get-machinetype.md)|`DWORD`|值，该值指示目标 CPU (之一[CV_CPU_TYPE_e 枚举](../../debugger/debug-interface-access/cv-cpu-type-e.md)值)。|  
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|.Exe 文件的名称。|  
 |[IDiaSymbol::get_signature](../../debugger/debug-interface-access/idiasymbol-get-signature.md)|`DWORD`|可执行文件的签名。|  
@@ -44,5 +42,5 @@ Exe 是唯一的符号既没有采用词法或类父，因为它表示对.exe �
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|返回`SymTagExe`(之一[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)值)。|  
   
 ## <a name="see-also"></a>请参阅  
- [Idiasession:: Get_globalscope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)   
+ [IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)   
  [符号类型的词法层次结构](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

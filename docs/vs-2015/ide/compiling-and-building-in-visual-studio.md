@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
@@ -17,19 +16,19 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae06d11e1bdd193ebda5223c7c638c3132984147
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931048"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中编译和生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在开发周期中，您可以使用 Visual Studio 频繁生成应用程序和创建程序集和可执行程序。 通过经常生成您的代码，您可以更早地标识编译时错误，如不正确的语法、拼错的关键字和类型不匹配项。 您还可以通过频繁生成并运行调试版本的代码来检测和纠正运行时错误，如逻辑错误和语义错误。
 
- 在完全开发和充分调试项目或解决方案之后，您可以在发行版中编译其组件。 默认情况下，发行版将进行优化，并且设计为比调试版本更小且运行速度更快。 有关详细信息，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。
+ 在完全开发和充分调试项目或解决方案之后，您可以在发行版中编译其组件。 默认情况下，发行版将进行优化，并且设计为比调试版本更小且运行速度更快。 有关详细信息，请参见[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。
 
 ## <a name="choosing-a-build-method"></a>选择一种生成方法
  您可以在命令提示符处使用 IDE 中的默认生成选项或使用 Team Foundation Build 来生成应用程序。 其中的每个选项都将 MSBuild 用作基础技术，并且每种方法都有特定的好处，如下表所示。
@@ -58,4 +57,4 @@ ms.locfileid: "53052645"
 -   通过使用并行生成改进生成性能。 有关详细信息，请参阅[并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)或博客文章 [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)（调整 C++ 并行生成）。
 
 ## <a name="see-also"></a>请参阅
- [演练： 生成应用程序](../ide/walkthrough-building-an-application.md)[了解生成配置](../ide/understanding-build-configurations.md)[了解生成平台](../ide/understanding-build-platforms.md)[构建 （编译） 网站项目](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193)[如何： 创建和删除项目依赖项](../ide/how-to-create-and-remove-project-dependencies.md)
+ [演练：生成应用程序](../ide/walkthrough-building-an-application.md)[了解生成配置](../ide/understanding-build-configurations.md)[了解生成平台](../ide/understanding-build-platforms.md)[构建 （编译） 网站项目](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [如何：创建和删除项目依赖项](../ide/how-to-create-and-remove-project-dependencies.md)
