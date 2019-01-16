@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3d94289baf5cd7b3e4724f205dbfcb5e0ff227eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53931048"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中编译和生成
@@ -57,4 +57,4 @@ ms.locfileid: "53931048"
 -   通过使用并行生成改进生成性能。 有关详细信息，请参阅[并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)或博客文章 [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)（调整 C++ 并行生成）。
 
 ## <a name="see-also"></a>请参阅
- [演练：生成应用程序](../ide/walkthrough-building-an-application.md)[了解生成配置](../ide/understanding-build-configurations.md)[了解生成平台](../ide/understanding-build-platforms.md)[构建 （编译） 网站项目](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [如何：创建和删除项目依赖项](../ide/how-to-create-and-remove-project-dependencies.md)
+ [演练：生成应用程序](../ide/walkthrough-building-an-application.md)[了解生成配置](../ide/understanding-build-configurations.md)[了解生成平台](../ide/understanding-build-platforms.md)[构建 （编译） 网站项目](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [如何：创建和删除项目依赖项。

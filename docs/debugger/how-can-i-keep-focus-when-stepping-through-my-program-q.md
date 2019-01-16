@@ -1,5 +1,5 @@
 ---
-title: 逐句通过我的应用程序时保持焦点 |Microsoft Docs
+title: 在单步跟踪程序时保持焦点 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual

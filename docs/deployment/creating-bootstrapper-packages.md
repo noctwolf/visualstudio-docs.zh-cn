@@ -21,10 +21,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 158befc5b401feb700a2effff7378b1edac6a2c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53878385"
 ---
 # <a name="create-bootstrapper-packages"></a>创建引导程序包
@@ -58,7 +58,7 @@ ms.locfileid: "53878385"
         package.xml
     ```
   
-接下来，将可再发行文件复制到引导程序文件夹位置。 有关更多信息，请参见[如何：创建已本地化的引导程序包](../deployment/how-to-create-a-localized-bootstrapper-package.md)。
+接下来，将可再发行文件复制到引导程序文件夹位置。 有关详细信息，请参阅[如何：创建已本地化的引导程序包](../deployment/how-to-create-a-localized-bootstrapper-package.md)。
  
     *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
     

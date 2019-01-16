@@ -18,10 +18,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 6eae5820e7203b69ed6d08e398aef661d842906a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53837844"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>调试数据绑定 ActiveX 控件
@@ -32,7 +32,7 @@ ms.locfileid: "53837844"
 ## <a name="using-the-test-container"></a>使用测试容器  
  如果需要可以轻松修改以支持控件或容器上的各种接口的容器，则将 ActiveX 测试容器用作调试会话的可执行文件。 在 ActiveX 测试容器中，从“容器”菜单上单击“选项”以启用各种接口。 有关详细信息，请参阅[使用测试容器测试属性和事件](/cpp/mfc/testing-properties-and-events-with-test-container)。  
   
- 如果在调试时需要单步执行容器的代码，请使用容器的调试版本或者使用 ActiveX 测试容器的调试版本。 有关详细信息，请参阅[TSTCON 示例：ActiveX 控件测试容器](https://msdn.microsoft.com/library/72fa40ef-27d3-400c-813f-10b03236e600)。  
+ 如果在调试时需要单步执行容器的代码，请使用容器的调试版本或者使用 ActiveX 测试容器的调试版本。 有关详细信息，请参阅[TSTCON 示例：ActiveX 控件测试容器。  
   
 ## <a name="see-also"></a>请参阅  
  [调试 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)   

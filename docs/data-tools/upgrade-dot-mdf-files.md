@@ -16,10 +16,10 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4e42058d2728d806551ae319112052e664950dab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53863415"
 ---
 # <a name="upgrade-mdf-files"></a>升级 .mdf 文件
@@ -72,7 +72,7 @@ ms.locfileid: "53863415"
 
     -   **将数据库文件附加**:主数据库的物理路径 *.mdf*文件。
 
-    -   **逻辑名称**： 你想要使用该文件的名称。
+    -   逻辑名(&L):你想要使用该文件的名称。
 
 3.  选择“确定”按钮。
 

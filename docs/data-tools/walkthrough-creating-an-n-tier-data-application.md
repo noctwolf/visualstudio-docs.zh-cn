@@ -16,10 +16,10 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53924262"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>演练：创建 n 层数据应用程序
@@ -49,7 +49,7 @@ ms.locfileid: "53924262"
 
 -   编写代码以填充数据表。
 
-![视频链接](../data-tools/media/playvideo.gif)本主题的视频版本，请参阅[视频帮助：创建 N 层数据应用程序](http://go.microsoft.com/fwlink/?LinkId=115188)。
+![视频链接](../data-tools/media/playvideo.gif)本主题的视频版本，请参阅[视频帮助：创建 n 层数据应用程序
 
 ## <a name="prerequisites"></a>系统必备
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
