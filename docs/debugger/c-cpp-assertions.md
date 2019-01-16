@@ -40,13 +40,13 @@ ms.locfileid: "53894384"
 
  Visual C++ 支持基于以下构造的断言语句：  
 
-- MFC 程序的 MFC 断言。  
+- MFC 程序中的 MFC 断言。  
 
-- 使用 ATL 的程序的 [ATLASSERT](/cpp/atl/reference/debugging-and-error-reporting-macros#atlassert)。  
+- 使用 ATL 程序中的 [ATLASSERT](/cpp/atl/reference/debugging-and-error-reporting-macros#atlassert)。  
 
-- 使用 C 运行时库的程序的 CRT 断言。  
+- 使用 C 运行时库程序中的 CRT 断言。  
 
-- 其他 C/C++ 程序的 ANSI [assert 函数](/cpp/c-runtime-library/reference/assert-macro-assert-wassert)。  
+- 其他 C/C++ 程序中的 ANSI [assert 函数](/cpp/c-runtime-library/reference/assert-macro-assert-wassert)。  
 
   可以使用断言来捕捉逻辑错误、 检查操作的结果和测试应处理的错误条件。  
 
@@ -74,7 +74,7 @@ ms.locfileid: "53894384"
 - [查找未处理的错误](#BKMK_Testing_error_conditions_)  
 
 ##  <a name="BKMK_How_assertions_work"></a> 断言的工作原理  
- 当由于 MFC 或 C 运行时库断言就会停止调试器时，然后如果源不可用，调试器导航至断言的发生位置的源文件中的点。 断言消息显示在这种[输出窗口](../ide/reference/output-window.md)并**断言失败**对话框。 可以将复制从断言消息**输出**窗口到文本窗口中，如果你想要将其保存以供将来参考。 **输出**窗口可能包含其他错误信息。 这些消息仔细检查，因为它们提供了断言失败的原因的线索。  
+当调试器由于 MFC 或 C 运行时库断言停止时，如果源文件可用，调试器导航至源文件中断言的发生的位置。 断言消息显示在[输出窗口](../ide/reference/output-window.md) 和 **断言失败** 对话框。 如果你想要将其保存以供将来参考，可以从**输出**窗口复制断言消息到文本窗口中。 **输出** 窗口可能包含其他错误信息。仔细检查这些消息，因为它们提供了导致断言失败的线索。  
 
  使用断言来在开发过程中检测错误。 通常，对于每个假设使用一个断言。 例如，如果假定参数不是 NULL，请使用断言测试这种假设。  
 
