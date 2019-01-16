@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: b9e2f3bf3525977689bcc5bbf917722da76ea9e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53910459"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
@@ -31,11 +31,11 @@ ms.locfileid: "53910459"
 
      [学习教程](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) |                              [浏览文档](https://docs.asp.net/) |                                  [观看视频](http://www.asp.net/vnext)
 
--   **[在 HTML/Javascript (Apache Cordova) 中创建跨平台的移动应用程序](http://taco.visualstudio.com/docs/get-started-first-mobile-app/)**：             Apache Cordova 是基于 HTML/CSS/Javascript 的一个开源跨平台环境。  Javascript 代码在面向特定平台的包装器中进行执行，并启用对设备所有硬件功能的访问。 开发适用于 Apple 应用商店、Android 应用商店和 Windows 应用商店的应用程序。
+-   在 HTML/Javascript (Apache Cordova) 中制作跨平台移动应用。             Apache Cordova 是基于 HTML/CSS/Javascript 的一个开放源代码跨平台环境。  Javascript 代码在面向特定平台的包装器中进行执行，并启用对设备所有硬件功能的访问。 开发适用于 Apple 应用商店、Android 应用商店和 Windows 应用商店的应用程序。
 
      [加载示例](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) | [学习教程](http://taco.visualstudio.com/docs/get-started-first-mobile-app/) |                              [浏览文档](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) |                               [观看视频](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)
 
--   **[在 C# 或 Visual Basic (Xamarin) 中制作跨平台的移动应用程序](../cross-platform/visual-studio-and-xamarin.md)** ：开始使用 Visual Studio 和适用于 Xamarin 的工具从共享代码库创建在 Android、iOS 和通用 Windows 平台上运行的移动应用程序。
+-   在 C# 或 Visual Basic (Xamarin) 中制作跨平台移动应用。开始使用 Visual Studio 和 Xamarin 的工具来创建移动应用程序从共享代码库在 Android、 iOS 和通用 Windows 平台上运行。
 
      加载示例：[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/)（本机 UI）或 [Xamarin 窗体 Todo 示例](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo)（Xamarin.Forms 共享 UI）| [学习教程](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) |                            [浏览文档](https://msdn.microsoft.com/library/mt299001.aspx) |                                 [观看视频](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)
 

@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32338468de994f298b3fe39eae5a3c97d0a98dee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4fad4d5f974f1316e50cc5435c482948edcc892
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822186"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270253"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C++ 代码
 
-本文通过分步演练介绍了 Visual Studio 调试器的功能。 如果需要更加深入地了解调试器功能，请参阅[调试器功能浏览](../debugger/debugger-feature-tour.md)。 当你调试应用时，通常意味着运行附带有调试器的应用程序。 执行此操作时，调试器在运行过程中可提供许多方法让你查看代码的情况。 你可以逐步浏览代码、查看变量中存储的值、设置对变量的监视以查看值何时改变、检查代码的执行路径、查看代码分支是否正在运行等等。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。
+本文通过分步演练介绍了 Visual Studio 调试器的功能。 如果需要更加深入地了解调试器功能，请参阅[初探调试器](../debugger/debugger-feature-tour.md)。 当你调试应用时，通常意味着运行附带有调试器的应用程序。 执行此操作时，调试器在运行过程中可提供许多方法让你查看代码的情况。 你可以逐步浏览代码、查看变量中存储的值、设置对变量的监视以查看值何时改变、检查代码的执行路径、查看代码分支是否正在运行等等。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。
 
 | | |
 |---------|---------|
@@ -312,7 +312,7 @@ ms.locfileid: "53822186"
 
     可双击代码行来查看该源代码，这也会更改调试器正在检查的当前作用域。 此操作不会使调试器前进。
 
-    还可使用“调用堆栈”窗口中的右键单击菜单执行其他操作。 例如，你可将断点插入到指定的函数中，使用“运行到光标处”推进调试器，然后检查源代码。 有关更多信息，请参见[如何：检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
+    还可使用“调用堆栈”窗口中的右键单击菜单执行其他操作。 例如，你可将断点插入到指定的函数中，使用“运行到光标处”推进调试器，然后检查源代码。 有关详细信息，请参阅[如何：检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
 
 ## <a name="change-the-execution-flow"></a>更改执行流
 

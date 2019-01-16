@@ -17,10 +17,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f63bc8b454985e368e344bda925ce306bdf3de7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53934659"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的应用程序部署概述
@@ -80,7 +80,7 @@ ms.locfileid: "53934659"
 -   CertMgr.exe，这是 Internet Explorer 的一个组件，因此存在于 Windows 98 及所有更高版本中。 有关详细信息，请参阅[Certmgr.exe （证书管理器工具）](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)。  
   
 ### <a name="create-a-clickonce-application"></a>创建 ClickOnce 应用程序  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序是一个结合有可描述应用程序并提供安装参数的清单文件的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 客户端应用程序。 可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 中的“发布”  命令将你的程序转换成 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]应用程序。 或者，可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 附带的工具生成 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]部署所需的所有文件。 有关详细步骤[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，请参阅[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序是一个结合有可描述应用程序并提供安装参数的清单文件的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 客户端应用程序。 可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 中的“发布”  命令将你的程序转换成 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]应用程序。 或者，可以使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 附带的工具生成 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]部署所需的所有文件。 有关详细步骤[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，请参阅[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)  
   
  受信任的应用程序部署特定于 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]且只能与 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序一起使用。  
   

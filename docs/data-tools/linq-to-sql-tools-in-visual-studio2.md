@@ -10,10 +10,10 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
 ms.openlocfilehash: 0c4b3c752a2ca28c4cfb4b08b2f51f8b8fc6ac23
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53894150"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Visual Studio 中的 LINQ to SQL 工具
@@ -41,7 +41,7 @@ Visual Studio 将创建 *.dbml*文件，并将其添加到你的解决方案。 
 ![LINQ to SQL 设计器](../data-tools/media/raddata-linq-to-sql-designer.png)
 
 > [!IMPORTANT]
-> **O/R 设计器**是一个简单的对象关系映射器，因为它仅支持 1:1 映射关系。 换句话说，实体类与数据库表或视图之间只能具有 1:1 映射关系。 不支持复杂映射，如将实体类映射到联接表;使用实体框架为复杂的映射。 此外，该设计器还是一个单向代码生成器。 这表示代码文件中只反映对设计器图面所做的更改。 对代码文件的手动更改不会反映在**O/R 设计器**。 在保存设计器并重新生成代码时，将覆盖在代码文件中手动进行的所有更改。 了解如何添加用户代码和扩展由生成的类**O/R 设计器**，请参阅[如何：扩展 O/R 设计器生成的代码](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)。
+> **O/R 设计器**是一个简单的对象关系映射器，因为它仅支持 1:1 映射关系。 换句话说，实体类与数据库表或视图之间只能具有 1:1 映射关系。 不支持复杂映射，如将实体类映射到联接表;使用实体框架为复杂的映射。 此外，该设计器还是一个单向代码生成器。 这表示代码文件中只反映对设计器图面所做的更改。 对代码文件的手动更改不会反映在**O/R 设计器**。 在保存设计器并重新生成代码时，将覆盖在代码文件中手动进行的所有更改。 了解如何添加用户代码和扩展由生成的类**O/R 设计器**，请参阅[如何：扩展 O/R 设计器生成的代码
 
 ## <a name="create-and-configure-the-datacontext"></a>创建和配置 DataContext
 
@@ -49,7 +49,7 @@ Visual Studio 将创建 *.dbml*文件，并将其添加到你的解决方案。 
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>创建实体类映射到数据库表和视图
 
-可以创建实体类映射到表和视图，通过将数据库表和视图从**服务器资源管理器**或**数据库资源管理器**拖到**O/R 设计器**。 正如上一节中所述，<xref:System.Data.Linq.DataContext> 是使用拖动到设计图面上的第一项所提供的连接信息进行配置的。 如果使用不同的连接的后续项添加到**O/R 设计器**，可以更改用于连接<xref:System.Data.Linq.DataContext>。 有关更多信息，请参见[如何：创建映射到表和视图的 LINQ to SQL 类（O/R 设计器）](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)。
+可以创建实体类映射到表和视图，通过将数据库表和视图从**服务器资源管理器**或**数据库资源管理器**拖到**O/R 设计器**。 正如上一节中所述，<xref:System.Data.Linq.DataContext> 是使用拖动到设计图面上的第一项所提供的连接信息进行配置的。 如果使用不同的连接的后续项添加到**O/R 设计器**，可以更改用于连接<xref:System.Data.Linq.DataContext>。 有关详细信息，请参阅[如何：创建映射到表和视图的 LINQ to SQL 类（O/R 设计器）](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)。
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>创建调用存储的过程和函数的 DataContext 方法
 
@@ -60,15 +60,15 @@ Visual Studio 将创建 *.dbml*文件，并将其添加到你的解决方案。 
 
 ## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>配置 DataContext 以使用存储的过程来保存实体类和数据库之间的数据
 
-如上文所述，您可以创建调用存储过程和函数的 <xref:System.Data.Linq.DataContext> 方法。 此外，还可以分配用于 LINQ to SQL 运行时行为，后者将执行插入、 更新和删除的默认的存储的过程。 有关更多信息，请参见[如何：分配存储过程以便执行更新、插入和删除操作（O/R 设计器）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
+如上文所述，您可以创建调用存储过程和函数的 <xref:System.Data.Linq.DataContext> 方法。 此外，还可以分配用于 LINQ to SQL 运行时行为，后者将执行插入、 更新和删除的默认的存储的过程。 有关详细信息，请参阅[如何：分配存储过程以便执行更新、插入和删除操作（O/R 设计器）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
 
 ## <a name="inheritance-and-the-or-designer"></a>继承和 O/R 设计器
 
-类似于其他对象，LINQ to SQL 类可以使用继承，并从其他类派生。 在数据库中，可通过多种方式创建继承关系。 **O/R 设计器**支持通常在关系系统中实现的单表继承概念。 有关更多信息，请参见[如何：使用 O/R 设计器配置继承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)。
+类似于其他对象，LINQ to SQL 类可以使用继承，并从其他类派生。 在数据库中，可通过多种方式创建继承关系。 **O/R 设计器**支持通常在关系系统中实现的单表继承概念。 有关详细信息，请参阅[如何：使用 O/R 设计器配置继承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)。
 
 ## <a name="linq-to-sql-queries"></a>LINQ to SQL 查询
 
-创建的实体类**O/R 设计器**设计用于[语言集成查询 (LINQ)](/dotnet/csharp/linq/)。 有关更多信息，请参见[如何：有关信息的查询](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information)。
+创建的实体类**O/R 设计器**设计用于[语言集成查询 (LINQ)](/dotnet/csharp/linq/)。 有关详细信息，请参阅[如何：有关信息的查询](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information)。
 
 ## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>将生成的 DataContext 和实体类代码分离到不同的命名空间
 

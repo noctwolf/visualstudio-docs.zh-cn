@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "49896940"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
@@ -71,9 +71,9 @@ ms.locfileid: "49896940"
   
 1.  选择想要对齐的元素。 可以通过按住 Ctrl 键的同时选择元素选择多个元素。  
   
-2.  在属性窗口中“布局”部分的“HorizontalAlignment”下，选择以下属性之一：“左”、“中心”、“右”或“拉伸”。  
+2.  在属性窗口中“布局”部分的“HorizontalAlignment”下，选择以下属性之一：“左对齐”、“居中对齐”、“右对齐”或“拉伸对齐”。  
   
-3.  在属性窗口中，在“布局”部分的“VerticalAlignment”下，选择以下属性之一：“顶部”、“中心”、“底部”或“拉伸” , 。  
+3.  在属性窗口中“布局”部分的“VerticalAlignment”下，选择以下属性之一：“顶部对齐”、“居中对齐”、“底部对齐”或“拉伸对齐”。  
   
 #### <a name="to-align-two-or-more-elements-by-using-snaplines"></a>使用对齐线对齐两个或多个元素的步骤  
   

@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 650a0501de3f2c3728c068be13dc096361f9a54f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53893547"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自定义生成事件
@@ -31,7 +31,7 @@ ms.locfileid: "53893547"
 
 -   Visual Basic--[如何：指定生成事件 (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)。
 
--   VisualC#和F#-[如何：指定生成事件 (C#)](../ide/how-to-specify-build-events-csharp.md)。
+-   VisualC#和F#-[如何：指定生成事件 (C#)](../ide/how-to-specify-build-events-csharp.md)
 
 -   Visual C++--[指定生成事件](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc)。
 
@@ -60,4 +60,4 @@ ms.locfileid: "53893547"
     >  以上代码中的 `%I` 在批处理脚本中应是 `%%I`。
 
 ## <a name="see-also"></a>请参阅
- [编译和生成](../ide/compiling-and-building-in-visual-studio.md)[预生成事件/生成后事件命令行对话框](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild 特殊字符](../msbuild/msbuild-special-characters.md)[演练：生成应用程序](../ide/walkthrough-building-an-application.md)
+ [编译和生成](../ide/compiling-and-building-in-visual-studio.md)[预生成事件/生成后事件命令行对话框](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild 特殊字符](../msbuild/msbuild-special-characters.md)[演练：生成应用程序。
