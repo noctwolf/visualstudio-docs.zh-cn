@@ -130,7 +130,7 @@ typedef struct _CrtMemBlockHeader
  */  
 ```  
   
- 该块的用户数据区域两侧的 `NoMansLand` 缓冲区当前大小为 4 个字节，并用调试堆例程所使用的已知字节值填充，以验证尚未覆盖用户内存块限制。 调试堆还用已知值填充新的内存块。 如果选择在堆的链接列表中保留已释放块（如下文所述），则这些已释放块也用已知值填充。 当前，所用的实际字节值如下所示：  
+ 块的用户数据区两侧的 `NoMansLand` 缓冲区当前大小为 4 字节，并填充有调试堆例程用于验证用户内存块的限制是否未被覆盖的已知字节值。 调试堆还使用已知值填充新的内存块。 若选择将释放的块保留在堆的链接列表中（如下文所述），则这些释放的块也会填充一个已知的值。 当前，使用的实际字节值如下：  
   
  NoMansLand (0xFD)  
  应用程序所用内存两侧的“NoMansLand”缓冲区当前用 0xFD 填充。  
@@ -146,16 +146,16 @@ typedef struct _CrtMemBlockHeader
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> 调试堆中的块类型  
- 调试堆中的每个内存块都分配以五种分配类型之一。 出于泄漏检测和状态报告目的对这些类型进行不同地跟踪和报告。 可以指定块的类型，方法是使用对其中一个调试堆分配函数（如 [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)）的直接调用来分配块。 调试堆中的五种内存块类型（在 _CrtMemBlockHeader 结构的 nBlockUse 成员中设置）如下所示：  
+ 调试堆中的每个内存块都被分配给五种分配类型之一。 出于泄漏检测和状态报告的目的，对这些类型进行了不同的跟踪和报告。 可以通过使用对调试堆分配函数之一（如 [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)的直接调用来分配块，从而指定块的类型。 调试堆中五种类型的内存块（在 _ CrtMemBlockHeader 结构的 nBlockUse 成员中设置）如下：  
   
  **_NORMAL_BLOCK**  
- 对 [malloc](/cpp/c-runtime-library/reference/malloc) 或 [calloc](/cpp/c-runtime-library/reference/calloc) 的调用将创建“普通”块。 如果打算只使用“普通”块而不需要“客户端”块，则建议定义 [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)，使所有堆分配调用映射到它们在“Debug”版本中的调试等效项。 这将允许将关于每个分配调用的文件名和行号信息存储到对应的块头中。  
+ 调用 [malloc](/cpp/c-runtime-library/reference/malloc) 或 [calloc](/cpp/c-runtime-library/reference/calloc) 可创建普通块。 如果只打算使用普通块，而不需要客户端块，则可能需要定义 [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)，这将导致所有堆分配调用映射到其调试版本中的调试等效项。 此操作允许将关于每个分配调用的文件名和行号信息存储到对应的块头中。  
   
  `_CRT_BLOCK`  
  许多运行时库函数在内部分配的内存块被标记为 CRT 块，以便它们可以单独进行处理。 因此，泄漏检测和其他操作无需受它们的影响。 分配操作决不能分配、重新分配或释放任何 CRT 类型的块。  
   
  `_CLIENT_BLOCK`  
- 出于调试目的，应用程序可以专门跟踪一组给定的分配，方法是使用对调试堆函数的显式调用将它们作为该类型的内存块进行分配。 例如，MFC 以“客户端”块类型分配所有的 CObjects；其他应用程序则可能在“客户端”块中保留不同的内存对象。 还可以指定“客户端”块的子类型以获得更大的跟踪粒度。 若要指定“客户端”块子类型，请将该数字向左移 16 位，并将它与 `OR` 进行 `_CLIENT_BLOCK` 运算。 例如:  
+ 出于调试目的，应用程序可以专门跟踪一组给定的分配，方法是使用对调试堆函数的显式调用将它们作为该类型的内存块进行分配。 例如，MFC 将所有 Cobject 分配为客户端块；其他应用程序可能会在客户端块中保留不同的内存对象。 还可以指定客户端块的子类型，使跟踪粒度更大。 若要指定客户端块的子类型，请将该数字向左移 16 位，并使用 `_CLIENT_BLOCK` 对其进行 `OR` 运算。 例如:  
   
 ```cpp
 #define MYSUBTYPE 4  
@@ -186,7 +186,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  例如，可以使用对 [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory) 的调用来检查堆在任意点的完整性。 该函数检查堆中的每个内存块，验证内存块头信息有效，并确认尚未修改缓冲区。  
   
  `_CrtSetDbgFlag`  
- 可以使用内部标志 [_crtDbgFlag](/cpp/c-runtime-library/crtdbgflag) 来控制调试堆跟踪分配的方式，该标志可使用 [_CrtSetDbgFlag](/cpp/c-runtime-library/reference/crtsetdbgflag) 函数进行读取和设置。 通过更改该标志，可以指示调试堆在程序退出时检查内存泄漏，并报告检测到的所有泄漏。 类似地，可以指定不将已释放的内存块从链接列表移除，以模拟内存不足情况。 当检查堆时，将完全检查这些已释放的块，以确保它们未受打扰。  
+ 你可以控制调试堆如何使用内部标志 [_crtDbgFlag](/cpp/c-runtime-library/crtdbgflag) 跟踪分配，该标志可以使用 [_CrtSetDbgFlag](/cpp/c-runtime-library/reference/crtsetdbgflag) 函数进行读取和设置。 通过更改此标志，可指示调试堆在程序退出时检查是否存在内存泄漏，并报告检测到的任何泄漏情况。 同样，可以指定释放的内存块不从链接列表中删除，从而模拟内存不足的情况。 检查堆时，会对这些释放的块进行整体检查，确保它们未受到干扰。  
   
  _crtDbgFlag 标志包含下列位域：  
   
@@ -315,13 +315,13 @@ typedef struct _CrtMemState
   
  **唯一分配请求编号和 _crtBreakAlloc**  
   
- 标识发生错误的特定堆分配调用的最简单方法是利用与调试堆中的每个块关联的唯一分配请求编号。 当其中一个转储函数报告某块的有关信息时，该分配请求编号将括在大括号中（例如“{36}”）。  
+ 识别出错的特定堆分配调用的最简单方法是利用与调试堆中的每个块相关联的唯一分配请求编号。 当某个转储函数报告了有关某个块的信息时，此分配请求编号将括在大括号中（例如，“{36}”）。  
   
- 知道某个错误分配块的分配请求编号后，可以将该编号传递给 [_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc) 以创建一个断点。 执行将恰在分配该块以前中断，您可以向回追踪以确定哪个例程执行了错误调用。 为避免重新编译，可以在调试器中完成同样的操作，方法是将 _crtBreakAlloc 设置为所感兴趣的分配请求编号。  
+ 知道了分配不当的块的分配请求编号后，就可以将该编号传递给 [_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc) 以创建断点。 执行将在分配块之前中断，你可以回溯，确定哪个例程导致了错误调用。 若要避免重新编译，可在调试器中通过将 _crtBreakAlloc 设置为所得知的分配请求编号来完成同样的操作。  
   
  **创建分配例程的“Debug”版本**  
   
- 略微复杂的方法是创建自己的分配例程的“Debug”版本，等同于[堆分配函数](../debugger/debug-versions-of-heap-allocation-functions.md)的 _dbg 版本。 然后，可以将源文件和行号自变量传递给基础堆分配例程，并能立即看到错误分配的出处。  
+ 比较复杂方法是创建自己的分配例程的调试版本，与[堆分配函数](../debugger/debug-versions-of-heap-allocation-functions.md)的 _dbg 版本相当。 然后，可将源文件和行号参数传递给基础堆分配例程，便可立即了解错误分配的出处。  
   
  例如，假定您的应用程序包含与下面类似的常用例程：  
   

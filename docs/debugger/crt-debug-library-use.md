@@ -1,5 +1,5 @@
 ---
-title: CRT 调试库使用 |Microsoft Docs
+title: CRT 调试库的使用 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -36,7 +36,7 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53890899"
 ---
 # <a name="crt-debug-library-use"></a>CRT 调试库使用
-C 运行库提供广泛的调试支持。 若要使用 CRT 调试库之一，您必须与链接[/debug](/cpp/build/reference/debug-generate-debug-info)和使用进行编译 **/MDd**， **/MTd**，或者 **/LDd**。  
+C 运行时库提供了广泛的调试支持。 若要使用其中一个 CRT 调试库，则必须与 [/DEBUG](/cpp/build/reference/debug-generate-debug-info) 链接，并使用 /MDd、/MTd 或 /LDd 进行编译  
   
 ## <a name="remarks"></a>备注  
  CRT 调试的主要定义和宏可在 CRTDBG.h 头文件中找到。  
