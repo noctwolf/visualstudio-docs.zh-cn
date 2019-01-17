@@ -1,5 +1,5 @@
 ---
-title: 错误：Kerberos 身份验证失败 |Microsoft Docs
+title: '错误: Kerberos 身份验证失败 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
