@@ -45,7 +45,7 @@ ms.locfileid: "53924158"
 
 是的快照调试可用于在负载下的服务器。 快照调试程序限制并不会捕获快照的情况下没有在服务器上的低可用内存量。
 
-#### <a name="how-do-i-uninstall-the-snapshot-debugger"></a>如何卸载快照调试程序？
+#### <a name="how-do-i-uninstall-the-snapshot-debugger"></a>如何卸载快照调试器？
 
 通过执行以下步骤在应用服务，可以卸载 Snapshot Debugger 站点扩展：
 
@@ -56,5 +56,5 @@ ms.locfileid: "53924158"
 ## <a name="see-also"></a>请参阅
 
 [在 Visual Studio 中进行调试](../debugger/index.md)  
-[调试实时 ASP.NET 应用中使用快照调试程序](../debugger/debug-live-azure-applications.md)  
+[使用快照调试器调试实时 ASP.NET 应用](../debugger/debug-live-azure-applications.md)  
 [快照调试疑难解答和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)
