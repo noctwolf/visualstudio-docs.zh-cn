@@ -29,10 +29,10 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53892439"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件 (C#，c + +、 Visual Basic 中， F#)
@@ -155,7 +155,7 @@ ms.locfileid: "53892439"
   可以限制命令的*srcsrv.dll*可从应用程序的执行 *.pdb*通过列出的允许的命令在名为的文件中的文件*srcsrv.ini*。 位置*srcsrv.ini*所在的同一文件夹中的文件*srcsrv.dll*并*devenv.exe*。  
   
   >[!IMPORTANT]
-  >任意命令都可以在应用中的嵌入 *.pdb*文件中，因此请确保将你想要执行到命令*srcsrv.ini*文件。 任何尝试执行不在“srcsvr.ini”文件中的命令都将导致出现一个确认对话框。 有关详细信息，请参阅[安全警告：调试器必须执行不受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md) 
+  >任意命令都可以在应用中的嵌入 *.pdb*文件中，因此请确保将你想要执行到命令*srcsrv.ini*文件。 任何尝试执行不在“srcsvr.ini”文件中的命令都将导致出现一个确认对话框。 有关详细信息，请参阅[安全警告：调试器必须执行不受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 
   >
   >未对命令参数执行任何验证，因此请慎用受信任的命令。 例如，如果列表中，你*cmd.exe*在你*srcsrv.ini*，恶意用户可能会在上指定参数*cmd.exe*那样会使危险。  
   
@@ -179,7 +179,7 @@ ms.locfileid: "53892439"
     
     *VC\<x >.pdb*文件存储为单独的对象文件中，所有调试信息并驻留在项目生成文件所在的同一目录中。 每次创建对象文件时，C/c + + 编译器都会将合并到的调试信息*VC\<x >.pdb*。 因此，即使每个源文件包含公共头文件，如 *\<windows.h >*，一次，而不是每个对象文件中存储这些标头中的 typedef。 插入的信息包括类型信息，但不包括函数定义等符号信息。  
   
-  - *\<项目 >.pdb* 
+  - *\<project>.pdb* 
     
     *\<项目 >.pdb*文件将存储项目的所有调试信息 *.exe*文件，并驻留在*\debug*子目录。 \<project.pdb文件包含完整的调试信息（包括函数原型），而不仅仅是在 VC\<x>.pdb中找到的类型信息。 
   

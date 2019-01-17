@@ -36,14 +36,14 @@ ms.locfileid: "53848043"
   
 -   远程计算机上没有匹配用户名和密码的帐户。  
   
--   如果 Visual Studio 计算机和远程计算机都在工作组上，则远程计算机上的默认“本地安全策略”设置可能会导致此错误。 “本地安全策略”的默认设置是“仅来宾 - 本地用户以来宾身份验证”。 若要在此设置上调试，必须将远程计算机上的设置更改为“经典 - 本地用户以自己的身份验证”。  
+-   如果 Visual Studio 计算机和远程计算机都在工作组上，远程计算机的默认**本地安全策略**设置可能导致此错误。 **本地安全策略**默认设置为**仅来宾-本地用户以来宾身份验证**。 要在此设置上调试，必须在远程计算机上将设置更改为**经典-本地用户以自己的身份验证**。   
   
 > [!NOTE]
 >  你必须是管理员才能执行以下任务。  
   
 ### <a name="to-open-the-local-security-policy-window"></a>打开“本地安全策略”窗口  
   
-1.  启动 secpol.msc Microsoft 管理控制台管理单元。 在 Windows 搜索、Windows“运行”框中或命令提示符处键入 secpol.msc。  
+1.  启动 **secpol.msc** Microsoft 管理控制台管理单元。 在 Windows 搜索、Windows“运行”框中或命令提示符处键入 secpol.msc。   
   
 ### <a name="to-add-user-rights-assignments"></a>添加用户权限分配  
   
@@ -53,7 +53,7 @@ ms.locfileid: "53848043"
   
 3.  单击“用户权限分配”。  
   
-4.  在“策略”列中双击“调试程序”，查看“本地安全策略设置”对话框中的当前本地组策略分配。  
+4.  在**策略**列中，双击**调试程序**，以在**本地安全策略设置**对话框中查看当前本地组策略分配。  
   
      ![本地安全策略的用户权限](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
   
@@ -69,7 +69,7 @@ ms.locfileid: "53848043"
   
 4.  在中**策略**列中，双击**网络访问：本地帐户的共享和安全模型**。  
   
-5.  在**网络访问：本地帐户的共享和安全模型**对话框框中，将值更改为**经典-本地用户以自己的身份验证**然后单击**应用**按钮。  
+5.  在**网络访问： 本地帐户的共享和安全模型**对话框中，将值更改为**经典-本地用户以自己的身份验证**，然后单击**应用**按钮。  
   
      ![本地安全策略安全选项](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   

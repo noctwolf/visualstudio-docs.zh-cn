@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f53164bd4ffe74be2715d89215e6c9c1b526f2bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 8e0d7c00cf902baa41586301ff338ebfef78c5aa
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847832"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204052"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告:尚未应用对“配置行为”对话框所做的更改
 
@@ -22,13 +22,11 @@ ms.locfileid: "53847832"
 
 **配置行为**对话框可以配置`Insert`， `Update`，和`Delete`为所有可用类的行为。 当选择“类”和“行为”的新组合并且尚未应用以前的更改时，将出现此消息。
 
-## <a name="to-apply-the-change-and-continue"></a>应用更改并继续
+## <a name="change-options"></a>更改选项
 
-- 单击“是”，应用对所选“类”和“行为”的更改。
+- 若要应用更改并继续，请单击**是**。 更改被应用到所选**类**并**行为**。
 
-## <a name="to-cancel-the-previous-change-and-continue"></a>取消以前的更改并继续
-
-- 单击“否”，取消对所选“类”和“行为”的更改。
+- 若要取消以前的更改并继续，请单击**否**。
 
 ## <a name="see-also"></a>请参阅
 

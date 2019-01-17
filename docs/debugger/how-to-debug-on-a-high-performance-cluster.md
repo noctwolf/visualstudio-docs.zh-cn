@@ -9,21 +9,22 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - cluster debugging
-- high-perfomance debugging
+- high-performance debugging
 ms.assetid: a2f0eb07-840e-4f95-a1b1-9509217e5b8f
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d551387b0b784d896ab435f61f9366663e6219
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: cd2b009afac34ebb484d144c345382431c91f5b0
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966451"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228040"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>如何：在高性能群集上调试
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>如何：高性能群集上进行调试 (C#，Visual Basic、 c + +)
+
 在高性能群集上调试多处理程序类似于在远程计算机上调试普通程序。 但是，还有一些其他注意事项。 有关常规远程设置要求，请参阅[远程调试](../debugger/remote-debugging.md)。  
   
  当在高性能群集上进行调试时，可以使用所有可用于远程调试的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试窗口和技术。 但是由于你正在进行远程调试，所以外部控制台窗口不可用。  
@@ -34,7 +35,7 @@ ms.locfileid: "53966451"
   
  调试并行应用程序时，你可能希望在特定的线程、进程或计算机上设置断点。 可以通过创建普通断点，然后添加断点筛选器来做到这一点。  
   
-### <a name="to-open-the-breakpoint-filter-dialog-box"></a>打开“断点筛选器”对话框  
+### <a name="to-open-the-breakpoint-filter-dialog-box"></a>打开“断点筛选器”对话框
   
 1.  在源窗口、“反汇编”窗口、“调用堆栈”窗口或“断点”窗口中右键单击断点标志符号。  
   

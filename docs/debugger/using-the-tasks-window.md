@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dfb95e3bc1a2a1aaf94db229d951773e97d4ef2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 957077335b8df286d6fa2fbd34b6b81874fddbaa
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942835"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227767"
 ---
-# <a name="using-the-tasks-window"></a>使用“任务”窗口
+# <a name="using-the-tasks-window-c-visual-basic-c"></a>使用任务窗口 (C#，Visual Basic、 c + +)
 
 “任务”窗口与“线程”窗口类似，但它显示的是有关 <xref:System.Threading.Tasks.Task?displayProperty=fullName>、[task_handle](/cpp/parallel/concrt/reference/task-group-class) 或 [WinJS.Promise](/previous-versions/windows/apps/br211867(v=win.10)) 对象（而不是各个线程）的信息。 与线程一样，任务表示可并行运行的异步操作；但是，多个任务可以在同一个线程上运行。
 

@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 23abfbdc1b0bf922e3d15f0181afd7d01aa7ee2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: b61507087a3a4d9ac69c7a0f7fd602dcf7f5cc06
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935653"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204302"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>要添加到设计器中的对象使用不同的数据连接与设计器
 
@@ -22,20 +22,18 @@ ms.locfileid: "53935653"
 
 添加到的项时**对象关系设计器**(**O/R 设计器**)，所有项都使用同一个共享的数据连接。 （设计图面表示 <xref:System.Data.Linq.DataContext>，它将单个连接用于图面上的所有对象。）如果添加到设计器中的对象使用的数据连接与设计器当前使用的数据连接不同，则会出现此消息。 若要解决此错误，可以选择保持现有连接。 如果选择这样做，则不会添加所选对象。 您也可以选择添加对象并将 <xref:System.Data.Linq.DataContext> 连接重置为新的连接。
 
-> [!NOTE]
-> 如果单击**是**，所有实体都类上**O/R 设计器**映射到新的连接。
+## <a name="connection-options"></a>连接选项
 
-## <a name="to-replace-the-existing-connection-with-the-connection-used-by-the-selected-object"></a>将现有连接替换为所选对象使用的连接
+- 若要将所选对象使用的连接替换为现有连接，请单击**是**。
 
-- 单击 **“是”**。
+   所选的对象添加到**O/R 设计器**，并*DataContext.Connection*设置为新的连接。
 
-    所选的对象添加到**O/R 设计器**，并*DataContext.Connection*设置为新的连接。
+   > [!NOTE]
+   > 如果单击**是**，所有实体都类上**O/R 设计器**映射到新的连接。
 
-## <a name="to-continue-to-use-the-existing-connection-and-cancel-adding-the-selected-object"></a>继续使用现有连接并取消添加所选对象的操作
+- 若要继续使用现有连接并添加所选的对象的取消，单击**否**。
 
-- 单击“否” 。
-
-    操作被取消。 DataContext.Connection 仍然设置为现有连接。
+   操作被取消。 DataContext.Connection 仍然设置为现有连接。
 
 ## <a name="see-also"></a>请参阅
 

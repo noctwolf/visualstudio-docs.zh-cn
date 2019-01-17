@@ -1,5 +1,5 @@
 ---
-title: 找出谁在传递错误的参数值 |Microsoft Docs
+title: 查明谁在传递错误的参数值 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual

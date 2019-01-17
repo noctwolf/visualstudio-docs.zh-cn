@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ffb9361e06218d3625bfd5d220c38f86a8b70f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e34d138ec65d2508244c6802ccee67d931e87257
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867035"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270201"
 ---
 # <a name="debugging-managed-code"></a>调试托管代码
 
@@ -86,7 +86,7 @@ ms.locfileid: "53867035"
 
 ## <a name="see-also"></a>请参阅
 
-[演练：在设计时调试自定义 Windows 窗体的控件](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
-[调试器安全](../debugger/debugger-security.md)
-[Visual Studio 中调试](../debugger/index.md)
- [调试器功能简介](../debugger/debugger-feature-tour.md)
+[演练：在设计时调试自定义 Windows 窗体控件](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)  
+[调试器安全](../debugger/debugger-security.md)  
+[在 Visual Studio 中进行调试](../debugger/index.md)  
+[初探调试器](../debugger/debugger-feature-tour.md)

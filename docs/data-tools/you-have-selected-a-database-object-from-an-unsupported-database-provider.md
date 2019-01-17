@@ -9,12 +9,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4efaf92c9f4688d6870c1152be27eb4c8f4ed933
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 209ab92e3a24733e2ef4b7b912a36ae920ffffdb
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894436"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204238"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>您从不支持的数据库提供程序选择了数据库对象
 
@@ -23,17 +23,11 @@ ms.locfileid: "53894436"
 > [!NOTE]
 > 仅支持使用用于 SQL Server 的 .NET Framework 数据提供程序的数据连接。
 
-## <a name="to-correct-this-error"></a>更正此错误
+## <a name="options"></a>选项
 
-- 单击 **“确定”**。
+- 单击“确定”，继续设计映射到使用不受支持数据库提供程序的连接的实体类。 使用不支持的数据库提供程序时，可能遇到意外行为。
 
-   你可以继续设计映射到使用不支持的数据库提供程序的连接的实体类。 使用不支持的数据库提供程序时，可能遇到意外行为。
-
-    或
-
-- 单击“取消”。
-
-   操作停止。 创建或使用采用了用于 SQL Server 的 .NET Framework 提供程序的数据连接。
+- 单击**取消**要停止操作。 创建或使用用于 SQL Server 的.NET Framework 提供程序的不同的数据连接。
 
 ## <a name="see-also"></a>请参阅
 

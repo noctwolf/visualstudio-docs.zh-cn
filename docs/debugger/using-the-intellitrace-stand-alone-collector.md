@@ -1,8 +1,6 @@
 ---
 title: 使用 IntelliTrace 独立收集器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -14,14 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbcb39638439261d234c14ff9422badaf6bdeb3
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
-ms.translationtype: HT
+ms.openlocfilehash: 882d357b606ec5bb0419c88dc9c996ccd4a749a6
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684858"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54227715"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 独立收集器
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 独立收集器 (C#，Visual Basic)
+
 **IntelliTrace 独立收集器** 可让你收集生产服务器或其他环境中应用的 IntelliTrace 诊断数据，而无需在目标计算机上安装 Visual Studio 或更改目标系统环境。 IntelliTrace 独立收集器可用于 Web、SharePoint、WPF 和 Windows 窗体应用中。 数据收集完毕后，只需删除收集器以进行卸载。
 
  观看运行中的 IntelliTrace：[收集并分析生成的 IntelliTrace 数据以便进行调试 （第 9 频道视频）](http://go.microsoft.com/fwlink/?LinkID=251851)
@@ -71,7 +70,7 @@ ms.locfileid: "53684858"
 
 5.  [从 Web 应用程序或 SharePoint 应用程序中收集数据](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
-     - 或 -
+     或
 
      [收集托管应用中的数据](#BKMK_Collect_Data_from_Executables)
 
@@ -79,7 +78,7 @@ ms.locfileid: "53684858"
 
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> 安装收集器
 
-1. 在应用服务器上创建收集器目录，如：**C:\IntelliTraceCollector**
+1. 在应用服务器上创建收集器目录，例如：**C:\IntelliTraceCollector**
 
 2. 从 Microsoft 下载中心或 Visual Studio 2013 Update 3 安装文件夹中找到收集器。 [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)：
 
@@ -97,7 +96,7 @@ ms.locfileid: "53684858"
 
      1.  复制以下文件夹中的 IntelliTraceCollection.cab：
 
-          **..\Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
      2.  将 IntelliTraceCollection.cab 放在收集器目录中，如：**C:\IntelliTraceCollector**
 
@@ -120,7 +119,7 @@ ms.locfileid: "53684858"
 
 2.  使用 Windows **icacls** 命令授予服务器管理员访问收集器目录的完全权限。 例如:
 
-     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID >* `":F`
+     `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
 3.  要收集 Web 应用或 SharePoint 应用程序中的数据，请：
 
@@ -128,7 +127,7 @@ ms.locfileid: "53684858"
 
          例如:
 
-         `icacls "C:\IntelliTraceCollector" /grant "` *\<域 \ 用户 id >* `":F`
+         `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2.  授予 Web 应用或 SharePoint 应用程序的应用程序池对收集器目录的读取和执行权限。
 
@@ -168,7 +167,7 @@ ms.locfileid: "53684858"
 
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> 设置 .iTrace 文件目录的权限
 
-1. 在应用服务器上创建 .iTrace 文件目录，如：**C:\IntelliTraceLogFiles**
+1. 在应用服务器上创建 .iTrace 文件目录，例如：**C:\IntelliTraceLogFiles**
 
    > [!NOTE]
    > - 为避免应用速度变慢，请选择本地高速磁盘上不常用的位置。
@@ -192,7 +191,7 @@ ms.locfileid: "53684858"
 
         `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-       - 或 -
+       或
 
    - 要设置 Windows 资源管理器（或文件资源管理器）的权限，请：
 
@@ -214,7 +213,7 @@ ms.locfileid: "53684858"
 
 1.  要开始收集数据，首先以管理员身份打开 PowerShell 命令窗口，然后运行此命令：
 
-     `Start-IntelliTraceCollection` `"` *\<ApplicationPool >* `"`  *\<PathToCollectionPlan >*  *\<FullPathToITraceFileDirectory >*
+     `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
     >  运行此命令后，键入“Y”  确认你希望开始收集数据。
@@ -256,7 +255,7 @@ ms.locfileid: "53684858"
 
 1.  要同时启动应用并收集数据，请使用该语法：
 
-     *\<FullPathToIntelliTraceCollectorExecutable >* `\IntelliTraceSC.exe launch /cp:`  *\<PathToCollectionPlan >* `/f:`  *\<FullPathToITraceFileDirectoryAndFileName >*  *\<PathToAppExecutableFileAndFileName >*
+     *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
      如，要收集名为 **MyApp**的应用中的数据，请：
 
@@ -380,7 +379,7 @@ ms.locfileid: "53684858"
 
 -   从 IntelliTrace 调试 Visual Studio Enterprise 中的会话，请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
--   可通过 Microsoft 测试管理器中的测试会话获取，请参阅 [如何：收集 IntelliTrace 数据以帮助调试难题](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。
+-   Microsoft 测试管理器中的测试会话，请参阅[如何：收集 IntelliTrace 数据以帮助调试难题
 
 ## <a name="where-can-i-get-more-information"></a>在何处可以获取详细信息？
  [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)

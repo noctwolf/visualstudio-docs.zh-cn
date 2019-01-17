@@ -5,29 +5,29 @@ author: conceptdev
 ms.author: crdun
 ms.date: 11/03/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 10b27c26fcef622687b64f225dd04ae966f43cd5
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 59e349b1d784e68c3ef6842834d875ce5d1917bb
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895673"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315548"
 ---
-# <a name="introducing-visual-studio-for-mac"></a>Visual Studio for Mac 介绍
+# <a name="visual-studio-for-mac"></a>Visual Studio for Mac
 
 Visual Studio for Mac 是一个新式且复杂的 IDE，内附有多种用于创建移动、桌面和 Web 应用程序的功能。 它支持以下类型的开发：
 
-* .NET 移动应用：Android、iOS、tvOS、watchOS
-* Mac 桌面应用
-* .NET Core 应用程序
-* ASP.NET Core Web 应用程序
-* 跨平台 Unity 游戏
+- 使用 .NET 的移动应用：Android、iOS、tvOS、watchOS
+- Mac 桌面应用
+- .NET Core 应用程序
+- ASP.NET Core Web 应用程序
+- 跨平台 Unity 游戏
 
 它包括丰富的编辑器、调试、与 iOS/Mac/Android 的本机平台集成和集成源控件等功能。
 
 本文探究了 Visual Studio for Mac 的方方面面，还介绍了哪些功能使其成为了一款创建跨平台应用程序的强大工具。
 
 > [!TIP]
-> Visual Studio 2019 for Mac 预览版现可供测试。 请遵循这些[安装说明](install-preview.md)操作并查看 [IDE 教程](ide-tour.md)。
+> Visual Studio 2019 for Mac 预览版现可供测试。 请按照这些[安装说明](/visualstudio/mac/installation/?view=vsmac-2019)操作，并查看 [2019 IDE 教程](/visualstudio/mac/ide-tour/?view=vsmac-2019)。
 
 ## <a name="installation"></a>安装
 
@@ -55,16 +55,16 @@ F# 是强类型函数编程语言，设计为专门用于在 .NET 上运行。 V
 
 .NET Core 支持包括：
 
-* C# 和 F# IntelliSense。
-* 控制台、库和 Web 应用程序的 .NET Core 项目模板。
-* 完整的调试支持，包括断点、调用堆栈、监视窗口等。
-* NuGet PackageReferences 和基于 MSBuild 的还原。
-* 集成单元测试支持使用 .NET Core SDK 附带的 Visual Studio 测试平台进行运行和调试测试。
-* 从旧的 project.json 格式迁移。
+- C# 和 F# IntelliSense。
+- 控制台、库和 Web 应用程序的 .NET Core 项目模板。
+- 完整的调试支持，包括断点、调用堆栈、监视窗口等。
+- NuGet PackageReferences 和基于 MSBuild 的还原。
+- 集成单元测试支持使用 .NET Core SDK 附带的 Visual Studio 测试平台进行运行和调试测试。
+- 从旧的 project.json 格式迁移。
 
 要开始，请查看 ASP.NET Core Web 应用[动手实验](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
 
-## <a name="xamarin"></a>Xamarin
+## <a name="xamarin-mobile-app-development"></a>Xamarin 移动应用开发
 
 通过对 [Xamarin](https://developer.xamarin.com/) 的卓越支持，可以开发适用于 Android、macOS、iOS、tvOS 和 watchOS 的丰富本机体验。 使用 Xamarin.Forms 跨平台应用程序可以在 Android、iOS 和 macOS 之间共享基于 XAML 的 UI 代码，而不会限制对本机功能的访问。
 
@@ -121,8 +121,8 @@ Xamarin Inspector 提供一个具有用户工具的交互式 C# 控制台。 它
 
 ## <a name="next-steps"></a>后续步骤
 
-* **获取教程** - 若要大致了解 Visual Studio for Mac 中的众多主要功能，请参阅 Visual Studio for Mac [IDE 教程](ide-tour.md)。
-* **安装** - 若要了解如何下载和安装 Visual Studio，请参阅[安装](installation.md)指南。
-* **Xamarin 教程** - 若要了解有关如何使用 Xamarin 开发代码的详细信息，请转到 Xamarin [开发人员中心](https://developer.xamarin.com)。
-* **视频** - 若要了解有关 Visual Studio for Mac 的其他功能和方面，请查看 [Xamarin University](https://university.xamarin.com) 网站上的视频。
-* **动手实验** - 若要开始使用 Visual Studio for Mac 中包含的各种工作负载，请查看[动手实验](https://github.com/Microsoft/vs4mac-labs)。
+- **获取教程** - 若要大致了解 Visual Studio for Mac 中的众多主要功能，请参阅 Visual Studio for Mac [IDE 教程](/visualstudio/mac/ide-tour/)。
+- **安装** - 若要了解如何下载和安装 Visual Studio 2017 for Mac，请参阅[安装](/visualstudio/mac/installation/?view=vsmac-2017)指南。
+- **Xamarin 教程** - 若要了解有关如何使用 Xamarin 开发代码的详细信息，请转到 Xamarin [开发人员中心](https://developer.xamarin.com)。
+- **视频** - 若要了解有关 Visual Studio for Mac 的其他功能和方面，请查看 [Xamarin University](https://university.xamarin.com) 网站上的视频。
+- **动手实验** - 若要开始使用 Visual Studio for Mac 中包含的各种工作负载，请查看[动手实验](https://github.com/Microsoft/vs4mac-labs)。

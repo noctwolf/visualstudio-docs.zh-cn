@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2778148c8762c74d1c836a6f5a1b1fd8c9387e12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: bdbcefe1e0878ef6bf2520edb90ce904e414f211
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884579"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269756"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>远程调试 Visual Studio 中的 Visual c + + 项目
 若要调试在另一台计算机上的 Visual Studio 应用程序、 安装和将在其中部署您的应用程序的计算机上运行远程工具，将项目配置为从 Visual Studio 中，连接到远程计算机然后部署并运行你的应用。
@@ -106,7 +106,7 @@ ms.locfileid: "53884579"
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
- [调试器功能简介](../debugger/debugger-feature-tour.md)   
+ [初探调试器](../debugger/debugger-feature-tour.md)   
  [配置 Windows 防火墙以便进行远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)  
