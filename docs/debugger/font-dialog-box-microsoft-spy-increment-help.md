@@ -18,7 +18,7 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53924405"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>“字体”对话框（Microsoft Spy++ 帮助）
-使用此对话框可以配置中使用的字符字体[Spy + + 视图](../debugger/spy-increment-views.md)窗口。 若要显示此对话框中，展开**视图**菜单，然后选择**字体**。  
+使用此对话框配置 [Spy++ 视图](../debugger/spy-increment-views.md)窗口中使用的字符字体。 若要显示此对话框，请展开“视图”菜单并选择“字体”。  
   
  以下设置将可用：  
   

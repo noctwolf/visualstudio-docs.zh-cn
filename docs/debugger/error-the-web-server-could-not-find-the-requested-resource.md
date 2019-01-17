@@ -1,5 +1,5 @@
 ---
-title: 错误：Web 服务器找不到请求的资源 |Microsoft Docs
+title: 错误：Web 服务器找不到请求的资源 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -28,7 +28,7 @@ ms.locfileid: "53866538"
 
 此错误的另一个可能的原因是未启动 IIS W3SVC 服务。 检查，此服务是否已启动 （灰色） 在服务窗口中 (*services.msc*)。
 
-有大量此错误的可能原因。 几个最常见的原因包括：文件系统中的 IIS 安装或配置、网站配置或权限有问题。 您可以尝试使用浏览器访问资源。 根据 IIS 的配置方式，可能必须在服务器上使用本地浏览器或检查 IIS 错误日志才能获取详细的错误消息。  
+还有许多其他可能的原因会导致此错误。 一些最常见的原因包括 IIS 安装或配置、网站配置或文件系统权限的问题。 可尝试使用浏览器访问资源。 根据 IIS 的配置方式，可能必须使用服务器上的本地浏览器或检查 IIS 错误日志以获取详细的错误消息。  
   
  有关 IIS 的疑难解答的详细信息，请参阅 [IIS 管理](/iis/manage/provisioning-and-managing-iis/iis-management-and-administration)。  
   
