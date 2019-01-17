@@ -38,7 +38,7 @@ ms.locfileid: "53907878"
 
 ## <a name="tools-for-debugging-multithreaded-apps"></a>用于调试多线程应用程序的工具
 
-Visual Studio 提供用于在调试多线程应用程序中使用不同的工具。
+Visual Studio 提供不同的工具用于调试多线程应用程序。
 
 - 对于线程，用于调试线程的主要工具是**线程**窗口中，源窗口中的线程标记**并行堆栈**窗口中，**并行监视**窗口中，并**调试位置**工具栏。 若要了解如何**线程**窗口和**调试位置**工具栏中，请参阅[演练：使用“线程”窗口进行调试](../debugger/how-to-use-the-threads-window.md)。 若要了解如何使用**并行堆栈**并**并行监视**windows，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。 这两个主题显示如何使用线程标记。
   
