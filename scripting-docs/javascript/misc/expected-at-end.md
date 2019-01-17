@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9138a7152dae44ff5f293e1a06de146d66bb125
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803684"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344143"
 ---
 # <a name="expected-end"></a>预期\@结束
 尝试创建一个有条件编译的块的代码，但不是包括<strong>@end</strong>末尾的语句。 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 语句可以有条件地编译括在<strong>@if/ @end</strong>块。  

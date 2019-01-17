@@ -1,5 +1,5 @@
 ---
-title: 缺少对象成员 |Microsoft 文档
+title: 缺少对象成员 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,19 +21,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 84ab153985935bcdf85aed205516610c04dea83f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633227"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344156"
 ---
 # <a name="object-member-expected"></a>缺少对象成员
-您试图对对象的数据成员执行操作，但成员不存在。  
+试图对对象的数据成员执行操作，但该成员不存在。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   请确保正确键入数据成员的名称。  
+-   请确保正确键入的数据成员的名称。  
   
-## <a name="see-also"></a>另请参阅  
- [Object 对象](../../javascript/reference/object-object-javascript.md)   
+## <a name="see-also"></a>请参阅  
+ [对象的对象](../../javascript/reference/object-object-javascript.md)   
  [对象和数组](../../javascript/objects-and-arrays-javascript.md)

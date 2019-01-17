@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2d37ca55dfd701aaeba2af729511a5ae6a4fa5f4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841814"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344377"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>要解码的 URI 不是有效编码
 你试图解码格式不正确的 URI （统一资源标识符）。 Uri 具有特殊的语法;大多数非字母数字字符必须进行编码，才可以在 URI 中使用。 可以使用`encodeURI`并`encodeURIComponent`方法来创建一个 URI，从正常[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]字符串。  

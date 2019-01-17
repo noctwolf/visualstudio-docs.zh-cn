@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo 接口 |Microsoft 文档
+title: IEnumDebugPropertyInfo Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61504d60ccb59a0632376bf8e1ef762382b06326
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 744794a5b68c9d2e256a9d85cd7ce063dbf975ad
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728227"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349954"
 ---
 # <a name="ienumdebugpropertyinfo-interface"></a>IEnumDebugPropertyInfo 接口
 枚举`DebugPropertyInfo`结构。  
@@ -32,11 +32,11 @@ ms.locfileid: "24728227"
 |[IEnumDebugPropertyInfo::Next](../../winscript/reference/ienumdebugpropertyinfo-next.md)|检索指定的数目的`DebugPropertyInfo`枚举序列中的结构。|  
 |[IEnumDebugPropertyInfo::Skip](../../winscript/reference/ienumdebugpropertyinfo-skip.md)|跳过指定的数目的`DebugPropertyInfo`枚举序列中的结构。|  
 |[IEnumDebugPropertyInfo::Reset](../../winscript/reference/ienumdebugpropertyinfo-reset.md)|将枚举序列重置到开头。|  
-|[IEnumDebugPropertyInfo::Clone](../../winscript/reference/ienumdebugpropertyinfo-clone.md)|创建包含与当前的枚举器相同的枚举状态的枚举。|  
+|[IEnumDebugPropertyInfo::Clone](../../winscript/reference/ienumdebugpropertyinfo-clone.md)|创建一个包含当前枚举数形式的相同枚举状态的枚举器。|  
 |[IEnumDebugPropertyInfo::GetCount](../../winscript/reference/ienumdebugpropertyinfo-getcount.md)|获取数`DebugPropertyInfo`枚举器中的结构。|  
   
 ## <a name="requirements"></a>要求  
  标头： dbgprop.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [DebugPropertyInfo 结构](../../winscript/reference/debugpropertyinfo-structure.md)

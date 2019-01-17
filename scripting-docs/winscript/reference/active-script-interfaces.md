@@ -1,5 +1,5 @@
 ---
-title: 活动脚本接口 |Microsoft 文档
+title: 活动脚本接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -15,15 +15,15 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc3bc5ed2b78f2577fdd5a9a715a210240e91e96
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 7607616b2cba72010cc25bcfccc5a373de606302
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641467"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344325"
 ---
 # <a name="active-script-interfaces"></a>活动脚本接口
-ActivScp.h 标头文件提供接口、 枚举和在本部分中列出的错误代码。  
+ActivScp.h 标头文件提供了接口、 枚举和在本部分中列出的错误代码。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -37,11 +37,11 @@ ActivScp.h 标头文件提供接口、 枚举和在本部分中列出的错误�
   
 -   [IActiveScriptParse 接口](../../winscript/reference/iactivescriptparse.md)  
   
--   [IActiveScriptParse32 接口](../../winscript/reference/iactivescriptparse32.md)  
+-   [IActiveScriptParse32 Interface](../../winscript/reference/iactivescriptparse32.md)  
   
 -   [IActiveScriptParseProcedure 接口](../../winscript/reference/iactivescriptparseprocedure.md)  
   
--   [IActiveScriptParseProcedure32 接口](../../winscript/reference/iactivescriptparseprocedure32.md)  
+-   [IActiveScriptParseProcedure32 Interface](../../winscript/reference/iactivescriptparseprocedure32.md)  
   
 -   [IActiveScriptParseProcedureOld 接口](../../winscript/reference/iactivescriptparseprocedureold-interface.md)  
   

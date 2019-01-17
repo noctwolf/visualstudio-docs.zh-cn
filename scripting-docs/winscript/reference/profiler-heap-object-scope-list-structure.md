@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 114b1a55fce34908c4274877583164aff4ec8dba
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088564"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344819"
 ---
 # <a name="profilerheapobjectscopelist-structure"></a>PROFILER_HEAP_OBJECT_SCOPE_LIST 结构
 此结构是函数对象仅与相关联。 作用域列表表示为其中每个作用域是一个具有表示每个给定范围中的变量的关联的属性列表的堆对象的作用域的列表，该函数的闭包。 在某些情况下，作用域可能不可用中的对象和仅其索引的属性列表的名称是可用。  

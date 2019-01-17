@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes 接口 |Microsoft 文档
+title: IEnumDebugApplicationNodes Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf9c4fe6a8d789b1988a9a47b17adcba64b28827
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0e14b5567d96bccd0badb95f75558e0af329a62a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727647"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344187"
 ---
 # <a name="ienumdebugapplicationnodes-interface"></a>IEnumDebugApplicationNodes 接口
 枚举与应用程序关联的节点的子节点。  
   
- 除了从继承的方法`IUnknown`、`IEnumDebugApplicationNodes`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IEnumDebugApplicationNodes`接口公开以下方法。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IEnumDebugApplicationNodes::Next](../../winscript/reference/ienumdebugapplicationnodes-next.md)|检索指定的数量的段中枚举序列。|  
-|[IEnumDebugApplicationNodes::Skip](../../winscript/reference/ienumdebugapplicationnodes-skip.md)|跳过指定的数目的段中枚举序列。|  
+|[IEnumDebugApplicationNodes::Next](../../winscript/reference/ienumdebugapplicationnodes-next.md)|检索指定的数目的枚举序列中的段。|  
+|[IEnumDebugApplicationNodes::Skip](../../winscript/reference/ienumdebugapplicationnodes-skip.md)|将跳过枚举序列中的指定的段数。|  
 |[IEnumDebugApplicationNodes::Reset](../../winscript/reference/ienumdebugapplicationnodes-reset.md)|将枚举序列重置到开头。|  
-|[IEnumDebugApplicationNodes::Clone](../../winscript/reference/ienumdebugapplicationnodes-clone.md)|创建一个枚举器，其中包含与当前的枚举器相同的状态。|
+|[IEnumDebugApplicationNodes::Clone](../../winscript/reference/ienumdebugapplicationnodes-clone.md)|创建一个包含与当前枚举数相同的状态的枚举器。|

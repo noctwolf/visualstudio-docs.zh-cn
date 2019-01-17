@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation 接口 |Microsoft 文档
+title: IDebugSyncOperation 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6705c2aa990aef3cf551a94546bf78a64026cecc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3724ad50771ca49460e130bf93ebc244681bd782
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727007"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349593"
 ---
 # <a name="idebugsyncoperation-interface"></a>IDebugSyncOperation 接口
-允许的脚本引擎抽象需要时嵌套在特定的阻塞线程执行的操作 （如表达式计算）。 该接口还提供用于取消响应操作的机制。  
+允许脚本引擎需要时嵌套在特定受阻线程中执行的操作 （如表达式计算）。 接口还提供了一种机制的取消无响应的操作。  
   
- 除了从继承的方法`IUnknown`、`IDebugSyncOperation`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IDebugSyncOperation`接口公开以下方法。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
