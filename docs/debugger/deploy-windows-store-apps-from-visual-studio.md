@@ -14,34 +14,34 @@ manager: douge
 ms.workload:
 - uwp
 ms.openlocfilehash: 38e3f53a22b7f8dfa84d327fb2c10ef5efacddd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53821310"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>从 Visual Studio 部署 UWP 应用
 
-Visual Studio 部署功能生成和注册在目标设备使用 Visual Studio 中创建的 UWP 应用。 应用的实际注册方法取决于目标设备是本地还是远程：
+Visual Studio 部署功能在目标设备上构建并注册使用 Visual Studio 创建的 UWP 应用。 应用的实际注册方法取决于目标设备是本地还是远程： 
 
 - 如果目标是本地 Visual Studio 计算机，Visual Studio 将从其生成文件夹注册应用。
 
 - 如果目标是远程设备，Visual Studio 会将所需的文件复制到远程计算机并在该设备上注册应用。
 
-从 Visual Studio 调试应用时，部署是自动的，调试方法是使用“启动调试”**选项（键盘：F5) 或**启动但不调试**选项 (键盘：CTRL + F5 你也可以手动部署应用。 手动部署在以下情况中非常有用：
+从 Visual Studio 调试你的应用时，部署是自动进行的，调试方法是使用**开始调试**选项（键盘：F5）或**启动但不调试**选项 （键盘： CTRL+F5）。 你也可以手动部署应用。 手动部署在以下情况中非常有用： 
 
-- 本地或远程计算机上的随机测试。
+- 在本地或远程计算机上进行特别测试。 
 
-- 部署将启动你要调试的另一个应用的应用。
+- 要部署的应用将启动另一个要调试的应用。 
 
-- 部署由另一个应用或方法启动时将进行调试的应用。
+- 部署由另一个应用或方法启动时才进行调试的应用。
 
 ##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> 如何部署 UWP 应用
  手动部署应用是一个非常简单的过程：
 
 1.  如果你要部署到远程设备，请在应用的启动项目的属性项目页中指定设备的名称或 IP 地址。 （执行此操作的步骤在本主题靠后的位置列出)。
 
-2.  在调试器的“Visual Studio”工具栏上，从 **“启动调试”** 按钮旁的下拉列表选择部署目标。
+2.  在调试器的 Visual Studio 工具栏上，从**开始调试**按钮旁的下拉列表中选择部署目标。 
 
      ![本地计算机上运行](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
@@ -68,27 +68,27 @@ Visual Studio 部署功能生成和注册在目标设备使用 Visual Studio 中
 
 4. 有关**目标设备**，选择**远程计算机**。
 
-5. 下**远程计算机**，单击**查找**。
+5. 在**远程计算机** 下，单击**查找**。
 
-6. 您可以键入名称或 IP 地址的远程设备，也可以选择从设备**远程连接**对话框。
+6. 您可以键入远程设备的名称或 IP 地址，也可以从**远程连接**对话框选择设备。
 
     ![选择远程调试器连接对话框](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
-    **远程连接**对话框中显示的设备上的本地网络子网和通过以太网电缆直接连接到 Visual Studio 计算机的任何设备。
+    **远程连接**对话框中显示本地网络子网上的设备，和通过以太网电缆直接连接到 Visual Studio 计算机的任何设备。
 
    **在 JavaScript 或 Visual C++ 项目页中指定远程设备**
 
    ![C&#43; &#43;项目属性以便进行远程调试](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
-7. 从 **“要启动的调试器”** 列表中选择 **“远程调试器”** 。
+7. 从 **要启动的调试器** 列表中选择 **远程调试器** 。
 
-8. 在 **“计算机名称”** 框中输入远程设备的网络名称。 或者，你可以选择框中的下拉箭头，以从“选择远程调试器连接”对话框中选择该设备。
+8. 在 **“计算机名称”** 框中输入远程设备的网络名称。 或者，你可以选择框中的下拉箭头，从“选择远程调试器连接”对话框中选择该设备。
 
    **在 Visual C# 和 Visual Basic 项目页中指定远程设备**
 
    ![管理项目属性以便进行远程调试](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")
 
-9. 从 **“目标设备”** 列表中选择 **“远程计算机”** 。
+9. 对于**目标设备**，选择**远程计算机**。
 
 10. 在 **“远程计算机”** 框中输入远程设备的网络名称，或单击 **“查找”** ，从 **“选择远程调试器连接”** 对话框中选择该设备。
 
@@ -98,7 +98,7 @@ Visual Studio 部署功能生成和注册在目标设备使用 Visual Studio 中
 
 **允许网络环回**
 
-出于安全原因，UWP 或[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]以标准方式安装应用程序不允许进行网络调用安装的设备。 默认情况下，Visual Studio 部署功能为所部署的应用程序创建此规则的例外。 通过此例外，在一台计算机上即可测试通信过程。 向 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]提交应用之前，应在没有例外的情况下测试应用。
+出于安全原因，以标准方式安装的 UWP 或 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用程序不可以对其所在的设备进行网络调用。 默认情况下，Visual Studio 部署功能会针对部署的应用为此规则创建一个例外。 通过此例外，你可以在一台计算机上测试通信过程。 向 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)] 提交应用之前，应该在不使用该例外的情况下测试你的应用。
 
 若要从应用中移除网络环回例外，请执行以下操作：
 
@@ -108,7 +108,7 @@ Visual Studio 部署功能生成和注册在目标设备使用 Visual Studio 中
 
 **不启动，但在启动时调试我的代码 (C#和 Visual Basic) / 启动应用程序 （JavaScript 和 c + +）**
 
-配置部署以在应用启动时自动启动调试会话：
+将部署配置为在应用程序启动时，自动启动调试会话：
 
 - 在C#和 Visual Basic 调试属性页中，检查**不启动，但在启动时调试我的代码**复选框。
 

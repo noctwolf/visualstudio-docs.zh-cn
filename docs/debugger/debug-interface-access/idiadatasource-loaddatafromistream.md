@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef5bdbd070d7be6898fa89a24af2208c2acf1ccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 0ced7def09c9a5ba95c149f5f8507e3571d120ad
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880684"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154158"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 准备存储在内存中数据的流通过访问程序数据库 (.pdb) 文件中的调试数据。  
@@ -37,10 +37,10 @@ HRESULT loadDataFromIStream ( 
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。  
   
-|值|说明|  
+|“值”|说明|  
 |-----------|-----------------|  
 |E_PDB_FORMAT|尝试访问具有过时的格式的文件。|  
-|E_INVALIDARG|Invalidparameter。|  
+|E_INVALIDARG|参数无效。|  
 |E_UNEXPECTED|已准备好数据源。|  
   
 ## <a name="remarks"></a>备注  

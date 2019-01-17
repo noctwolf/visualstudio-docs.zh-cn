@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e23f61f7de4b2723e7be18b6beb76b17fd278cf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947408"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204478"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>检查自动和局部变量窗口中的变量
 
-在调试时，“自动”和“局部变量”窗口会显示变量值。 在调试会话期间，windows 才可用。 “自动”窗口显示在当前断点周围使用的变量。 “局部变量”窗口显示在局部范围内定义的变量，通常是当前函数或方法。 如果这是你首次尝试调试代码，则在阅读本文之前，可能需要阅读[通过编写更好的 C# 代码修复 bug](../debugger/write-better-code-with-visual-studio.md)和[适用于初学者的调试](../debugger/debugging-absolute-beginners.md)。
+在调试时，“自动”和“局部变量”窗口会显示变量值。 在调试会话期间，windows 才可用。 “自动”窗口显示在当前断点周围使用的变量。 “局部变量”窗口显示在局部范围内定义的变量，通常是当前函数或方法。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)和[编写更优质的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)。
 
  “自动”窗口可用于 C#、Visual Basic、C++ 和 Python 代码，但不可用于 JavaScript 或 F#。
 
@@ -39,7 +39,7 @@ ms.locfileid: "53947408"
 
 数组和对象在“自动”和“局部变量”窗口中显示为树控件。 选择变量名左侧的箭头，展开视图以显示字段和属性。 下面是“局部变量”窗口中 <xref:System.IO.FileStream?displayProperty=fullName> 对象的示例：
 
-![局部变量 FileStream](../debugger/media/locals-filestream.png "局部变量 FileStream")
+![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
 
 “局部变量”或“自动”窗口中的红色值表示自上次评估后值已更改。 可能是在上一个调试会话中进行了更改，也可能是你已在窗口中更改了值。
 
@@ -89,7 +89,7 @@ ms.locfileid: "53947408"
 
    在 `c = 3;` 行上设置断点并启动调试器。执行暂停时，“自动”窗口随即显示：
 
-   ![自动 CSharp](../debugger/media/autos-csharp.png "自动 CSharp")
+   ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
 
    `c` 的值为 0，因为尚未执行 `c = 3` 行。
 
@@ -109,7 +109,7 @@ ms.locfileid: "53947408"
 
     在 `e = 5;` 行设置断点并运行调试器。执行停止时，“自动”窗口随即显示：
 
-    ![自动 c + +](../debugger/media/autos-cplus.png "自动 c + +")
+    ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
 
     未初始化变量 `e`，因为尚未执行 `e = 5` 行。
     

@@ -1,9 +1,17 @@
-# [Visual Studio for Mac 介绍](index.md)
-# [IDE 教程](ide-tour.md)
+---
+ms.openlocfilehash: 641b6b74f523223e48178bdd69ac03b4c3d3392c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315470"
+---
+# [Visual Studio for Mac](index.md)
+# [IDE 教程](/visualstudio/mac/ide-tour/)
 
-# [安装](installation.md)
+# [安装](/visualstudio/mac/installation/)
 ## [在防火墙或代理背后安装和使用](install-behind-a-firewall-or-proxy-server.md)
-## [安装预览发行版](install-preview.md)
+## [安装预览版](install-preview.md)
 ## [更新](update.md)
 ## [卸载](uninstall.md)
 
@@ -65,6 +73,7 @@
 ### [使用 Unity 工具](using-vsmac-tools-unity.md)
 ### [在 Unity 中使用 .NET 4.x](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [更改日志](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
+## [使用 Xamarin 的移动应用](/xamarin/)
 
 # [辅助功能](accessibility.md)
 

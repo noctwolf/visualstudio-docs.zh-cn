@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a11a24d92453d1d4fed0dd0ca91cf9b225f7b92
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 1836fac34088b8cc0a144da47d011de9948d8fbb
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860905"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228027"
 ---
-# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>使用 IntelliTrace 在部署后诊断问题
+# <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>使用 IntelliTrace 部署后诊断问题 (C#，Visual Basic)
 
 要在使用 IntelliTrace 部署后诊断 ASP.NET Web 应用中的问题，请加入发行版本信息，以便 Visual Studio 自动查找调试 IntelliTrace 日志所需的正确源文件及符号文件。
 
@@ -31,7 +31,7 @@ ms.locfileid: "53860905"
 
 -   Visual Studio Enterprise（并非 Professional 或 Community 版），用于查看诊断数据并使用 IntelliTrace 调试代码的
 
-##  <a name="SetUpBuild">步骤 1：</a>包括在发布的生成信息
+##  <a name="SetUpBuild"></a> 步骤 1：在发布中包含生成信息
  设置生成过程，为 Web 项目创建生成清单（BuildInfo.config 文件）并在发布中包含此清单。 此清单包含有关项目、源代码管理和用于创建特定生成的生成系统的信息。 在你打开 IntelliTrace 日志以查看记录的事件时，此信息可帮助 Visual Studio 查找匹配的源和符号。
 
 ###  <a name="AutomatedBuild"></a> 使用 Team Foundation Server 为自动化生成创建生成清单
@@ -40,19 +40,19 @@ ms.locfileid: "53860905"
 
 ####  <a name="TFS2017"></a> Azure DevOps 和 Team Foundation Server 2017
 
-Visual Studio 2017 不包括*BuildInfo.config*文件，它已不推荐使用，之后被删除。 若要在部署后调试 ASP.NET web 应用程序，请使用以下方法之一：
+Visual Studio 2017 不包括 BuildInfo.config 文件，该文件已弃用并删除。 若要在部署后调试 ASP.NET Web 应用，请使用以下方法之一：
 
 * 对于部署到 Azure，请使用[Application Insights](https://docs.microsoft.com/azure/application-insights/)。
 
-* 如果需要使用 IntelliTrace，在 Visual Studio 中打开项目并从匹配生成加载符号文件。 您可以加载符号文件从**模块**窗口中或通过配置中的符号**工具** > **选项** > **调试**  > **符号**。
+* 如果需要使用 IntelliTrace，请在 Visual Studio 中打开项目，并从匹配的生成中加载符号文件。 可以从**模块**窗口加载符号文件，或通过在**工具** > **选项** > **调试** > **符号**中配置符号来进行加载。
 
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
- 设置生成管道以将源、 生成和符号的位置添加到生成清单 （BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。
+ 设置生成管道以将源代码、生成和符号的位置添加到生成清单（BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。
 
 1.  [编辑生成管道或创建新的生成管道。](/azure/devops/pipelines/get-started-designer?view=vsts)
 
-     ![查看生成在 TFS 2013 中的管道](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+     ![查看 TFS 2013 中的生成管道](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
 2.  选择默认模板 (TfvcTemplate.12.xaml) 或自己的自定义模板。
 
@@ -90,7 +90,7 @@ Visual Studio 2017 不包括*BuildInfo.config*文件，它已不推荐使用，�
 
 6.  运行新的生成。
 
-    转到[步骤 1。发布你的应用](#DeployRelease)
+    转到步骤 1。发布你的应用](#DeployRelease)
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 或 2010
  若要为项目自动创建生成清单（BuildInfo.config 文件）并将其置于你的项目的输出文件夹中，请执行以下步骤。 此文件在输出文件夹中显示为“*ProjectName*.BuildInfo.config”，但是在你发布应用后将在部署文件夹中重命名为“BuildInfo.config”。
@@ -115,7 +115,7 @@ Visual Studio 2017 不包括*BuildInfo.config*文件，它已不推荐使用，�
 
 4.  运行新的生成。
 
-    转到[步骤 1。发布你的应用](#DeployRelease)
+    转到步骤 1。发布你的应用](#DeployRelease)
 
 ###  <a name="ManualBuild"></a> 使用 Visual Studio 为手动生成创建生成清单
  若要为项目自动创建生成清单（BuildInfo.config 文件）并将其置于你的项目的输出文件夹中，请执行以下步骤。 此文件在输出文件夹中显示为“*ProjectName*.BuildInfo.config”，但是在你发布应用后将在部署文件夹中重命名为“BuildInfo.config”。
@@ -142,18 +142,18 @@ Visual Studio 2017 不包括*BuildInfo.config*文件，它已不推荐使用，�
 
 4.  运行新的生成。
 
-    转到[步骤 1。发布你的应用](#DeployRelease)
+    转到步骤 1。发布你的应用](#DeployRelease)
 
 ###  <a name="MSBuild"></a> 使用 MSBuild.exe 为手动生成创建生成清单
  运行生成时添加这些生成参数：
 
- **/p:GenerateBuildInfoConfigFile = true**
+ **/p:GenerateBuildInfoConfigFile=True**
 
  **/p:IncludeServerNameInBuildInfo=True**
 
  **/p:BuildSymbolStorePath=**\<*path to symbols*>
 
-##  <a name="DeployRelease">步骤 2：</a>发布你的应用
+##  <a name="DeployRelease"></a> 步骤 2：发布你的应用
  如果使用生成过程创建的 [Web.Deploy 包](https://msdn.microsoft.com/library/dd394698.aspx) 来部署你的应用，则生成清单从“*ProjectName*.BuildInfo.config”自动重命名为“BuildInfo.config”，并在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。
 
  如果你使用其他方法部署应用，请确保生成清单从“*ProjectName*.BuildInfo.config”重命名为“BuildInfo.config”，并且在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。
@@ -298,7 +298,7 @@ Visual Studio 2017 不包括*BuildInfo.config*文件，它已不推荐使用，�
 
     - **GitSourceControl**:位置**GitSourceControl**架构
 
-    - **RepositoryUrl**：用于 Team Foundation Server、项目集合和 Git 存储库的 URI
+    - RepositoryUrl为 Team Foundation Server、 项目集合和 Git 存储库 URI
 
     - **ProjectPath**:应用程序的项目文件 （.csproj 或.vbproj） 的路径
 

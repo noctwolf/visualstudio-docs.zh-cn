@@ -1,5 +1,5 @@
 ---
-title: IntelliTrace |Microsoft Docs
+title: IntelliTrace | Microsoft Docs
 ms.date: 09/19/2018
 ms.topic: conceptual
 f1_keywords:
@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d38ea825596d4edb38898b36296bde86f0f4c37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 332f737d7dc404f42623c338eef3f2dc759d2d6f
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842403"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227325"
 ---
-# <a name="intellitrace"></a>IntelliTrace
+# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic、 c + +)
 
 使用 IntelliTrace 记录和跟踪代码的执行历史记录时，可缩短调试应用程序所用的时间。 你可以更轻松地发现 Bug，因为 IntelliTrace 让你能够：
 
@@ -53,7 +53,7 @@ ms.locfileid: "53842403"
 | | |
 |---------------------| - |
 | **完全支持** | - 使用 .NET Framework 2.0 或更高版本的 Visual Basic 和 Visual C# 应用程序。<br/>你可以调试大多数应用程序，包括 ASP.NET、Microsoft Azure、Windows 窗体、WCF、WPF、Windows 工作流、SharePoint 2010、SharePoint 2013 和 64 位应用。<br/>若要调试 SharePoint 应用程序使用 IntelliTrace，请参阅[演练：使用 IntelliTrace 调试 SharePoint 应用程序](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要调试 IntelliTrace 使用 Microsoft Azure 应用程序，请参阅[调试已发布的云服务使用 IntelliTrace 和 Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services)。 |
-| **有限支持** | -面向 Windows 支持查看快照使用 IntelliTrace 后退本机应用。 支持唯一的调试器和异常事件。<br />-.NET core 和 ASP.NET Core 应用某些仅事件 （MVC 控制器、 ADO.NET 和 HTTPClicent 事件） 中支持本地调试。 独立收集器不支持.NET Core 或 ASP.NET Core 应用。<br />- 实验证明的 F# 应用<br />-UWP 应用仅支持事件 |
+| **有限支持** | -面向 Windows 支持查看快照使用 IntelliTrace 后退 c + + 应用程序。 支持唯一的调试器和异常事件。<br />-.NET core 和 ASP.NET Core 应用某些仅事件 （MVC 控制器、 ADO.NET 和 HTTPClient 事件） 中支持本地调试。 独立收集器不支持.NET Core 或 ASP.NET Core 应用。<br />- 实验证明的 F# 应用<br />-UWP 应用仅支持事件 |
 | **不支持** | -其他语言和脚本<br />- Windows 服务、Silverlight、Xbox 或 [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] 应用 |
 
 > [!NOTE]
