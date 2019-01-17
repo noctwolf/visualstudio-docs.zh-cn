@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf9e610236cc50ccd809413bbe80e2eaad31a87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dc3e25b55f5f30ebfeb9f790baba0bb5ad8797c
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840637"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54270188"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 
@@ -216,7 +216,7 @@ ms.locfileid: "53840637"
 
 如果尝试从“编码的 UI 测试生成器”选择“添加断言”工具时，想要选择的控件失去焦点并且消失：
 
-有时，添加控件并验证它们的属性时，可能必须使用键盘。 例如，尝试录制使用上下文菜单控件的编码的 UI 测试时，如果尝试从“编码的 UI 测试生成器”选择“添加断言”工具，则在该控件中的菜单项列表会失去焦点并消失。 下图说明了这一点，如果尝试使用“添加断言”工具选择上下文菜单，Internet Explorer 中的上下文菜单会失去焦点并且消失。
+有时，添加控件并验证它们的属性时，可能必须使用键盘。 例如，尝试录制使用右键单击菜单控件的编码的 UI 测试时，如果尝试从“编码的 UI 测试生成器”选择“添加断言”工具，则在该控件中的菜单项列表会失去焦点并消失。 下图说明了这一点，如果尝试使用“添加断言”工具选择右键单击菜单，Internet Explorer 中的右键单击菜单会失去焦点并且消失。
 
 ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 
