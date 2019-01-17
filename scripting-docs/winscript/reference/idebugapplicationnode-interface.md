@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode 接口 |Microsoft 文档
+title: IDebugApplicationNode Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 110e04d1c990f1b22f9740d8118a47f485dd041e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d7bd38a0fbbdd596f6a1f6bb040190dddca78bf9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725997"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348992"
 ---
 # <a name="idebugapplicationnode-interface"></a>IDebugApplicationNode 接口
 `IDebugApplicationNode`接口扩展的功能`IDebugDocumentProvider`通过提供项目树中的上下文的接口。  
   
- 除了从继承的方法`IDebugDocumentProvider`、`IDebugApplicationNode`接口公开以下方法。  
+ 除了继承的方法之外`IDebugDocumentProvider`，则`IDebugApplicationNode`接口公开以下方法。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDebugApplicationNode::EnumChildren](../../winscript/reference/idebugapplicationnode-enumchildren.md)|枚举此应用程序节点的子的节点。|  
+|[IDebugApplicationNode::EnumChildren](../../winscript/reference/idebugapplicationnode-enumchildren.md)|枚举此应用程序节点的子节点。|  
 |[IDebugApplicationNode::GetParent](../../winscript/reference/idebugapplicationnode-getparent.md)|返回此应用程序节点的父节点。|  
 |[IDebugApplicationNode::SetDocumentProvider](../../winscript/reference/idebugapplicationnode-setdocumentprovider.md)|设置此应用程序节点的文档提供程序。|  
 |[IDebugApplicationNode::Close](../../winscript/reference/idebugapplicationnode-close.md)|使此应用程序释放所有引用并进入非活动状态。|  

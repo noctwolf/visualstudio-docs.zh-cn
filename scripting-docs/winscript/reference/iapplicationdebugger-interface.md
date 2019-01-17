@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger 接口 |Microsoft 文档
+title: IApplicationDebugger 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a16cd1bc891c7d682cc1097cd1b6cb5efd5438db
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8b364422afcdf72deaee3d56123a71672769ed61
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725407"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348316"
 ---
 # <a name="iapplicationdebugger-interface"></a>IApplicationDebugger 接口
-由调试器所公开的主接口。 除了从继承的方法`IUnknown`、`IApplicationDebugger`接口公开以下方法。  
+由调试器所公开的主接口。 除了继承的方法之外`IUnknown`，则`IApplicationDebugger`接口公开以下方法。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IApplicationDebugger::QueryAlive](../../winscript/reference/iapplicationdebugger-queryalive.md)|指示调试器是否处于响应状态。|  
-|[IApplicationDebugger::CreateInstanceAtDebugger](../../winscript/reference/iapplicationdebugger-createinstanceatdebugger.md)|允许调试器进程中的对象的创建，由代码，它是扩展进程到调试器。|  
+|[IApplicationDebugger::QueryAlive](../../winscript/reference/iapplicationdebugger-queryalive.md)|指示调试器是否响应。|  
+|[IApplicationDebugger::CreateInstanceAtDebugger](../../winscript/reference/iapplicationdebugger-createinstanceatdebugger.md)|通过代码在调试器进程中允许创建的对象，它是-进程外调试器。|  
 |[IApplicationDebugger::onDebugOutput](../../winscript/reference/iapplicationdebugger-ondebugoutput.md)|处理调试输出事件。|  
 |[IApplicationDebugger::onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)|处理断点事件。|  
 |[IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)|处理调试应用程序关闭事件。|  

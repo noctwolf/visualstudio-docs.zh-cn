@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100::SetFilterForEventSink |Microsoft 文档
+title: IDebugApplicationNode100::SetFilterForEventSink | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6db8ea26787427844a92417bf525dba271063cba
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4b273b770a1d82edbf5bbbe26c0865060234b852
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726007"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346483"
 ---
 # <a name="idebugapplicationnode100setfilterforeventsink"></a>IDebugApplicationNode100::SetFilterForEventSink
-对特定设置的筛选器[IDebugApplicationNodeEvents 接口](../../winscript/reference/idebugapplicationnodeevents-interface.md)实现。 它允许脚本调试器，若要筛选出编译器生成的子应用程序节点，以便 PDM 将不再发送这些创建或删除时的事件。 默认情况下，将发送所有节点。  
+对特定设置的筛选器[IDebugApplicationNodeEvents 接口](../../winscript/reference/idebugapplicationnodeevents-interface.md)实现。 它允许脚本调试器，若要筛选出编译器生成子应用程序节点，以便 PDM 将不再发送事件时，以下是创建或删除。 默认情况下，将发送的所有节点。  
   
 > [!IMPORTANT]
->  [IDebugApplicationNode100 接口](../../winscript/reference/idebugapplicationnode100-interface.md)是实现的 PDM 10.0 版和更高版本。 在 activdbg100.h 中发现。  
+>  [IDebugApplicationNode100 接口](../../winscript/reference/idebugapplicationnode100-interface.md)是实现由 PDM 10.0 版及更高版本。 在 activdbg100.h 中发现。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,10 +35,10 @@ HRESULT SetFilterForEventSink(        [in] DWORD dwCookie,        [in] APPLICATI
   
 #### <a name="parameters"></a>参数  
  `dwCookie`  
- 筛选器 cookie。  
+ 筛选器的 cookie。  
   
  `filter`  
  筛选器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplicationNode100 接口](../../winscript/reference/idebugapplicationnode100-interface.md)

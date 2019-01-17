@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 23b1bcc42db9daace5a57b56346f5abe58232173
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802389"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349813"
 ---
 # <a name="expected-"></a>应有“:”
 尝试创建表达式中使用三元条件运算符，但不是包括第二个和第三个操作数之间的冒号。 三元 （三个操作数） 条件运算符之间需要一个冒号 (true) 第二个和第三个 (false) 操作数。  

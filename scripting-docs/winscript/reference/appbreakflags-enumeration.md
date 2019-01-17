@@ -1,5 +1,5 @@
 ---
-title: APPBREAKFLAGS 枚举 |Microsoft 文档
+title: APPBREAKFLAGS 枚举 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 126dcd704a60b591b71913f2e8e739de35c14636
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49d9cef3583def8cd23e135b960e46979446b3bb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641677"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349018"
 ---
 # <a name="appbreakflags-enumeration"></a>APPBREAKFLAGS 枚举
 指示当前的应用程序和线程调试状态。  
@@ -38,19 +38,19 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 |成员|值|描述|  
 |------------|-----------|-----------------|  
-|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|语言引擎应与 BREAKREASON_DEBUGGER_BLOCK 立即中断所有线程上。|  
+|APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|语言引擎应与 BREAKREASON_DEBUGGER_BLOCK 立即中断对所有线程。|  
 |APPBREAKFLAG_DEBUGGER_HALT|0x00000002|语言引擎应与 BREAKREASON_DEBUGGER_HALT 立即中断。|  
-|APPBREAKFLAG_STEP|0x00010000|语言引擎应在 BREAKREASON_STEP 的单步执行线程立即中断执行。|  
-|APPBREAKFLAG_NESTED|0x00020000|该应用程序位于嵌套执行在断点处。|  
+|APPBREAKFLAG_STEP|0x00010000|语言引擎应立即中断 BREAKREASON_STEP 的单步执行线程中。|  
+|APPBREAKFLAG_NESTED|0x00020000|在应用程序处于嵌套执行在断点处。|  
 |APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|调试器在源级别单步执行。|  
 |APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|调试器在字节代码级别单步执行。|  
 |APPBREAKFLAG_STEPTYPE_MACHINE|0x00200000|调试器在计算机级别单步执行。|  
-|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|将分离出来的步骤类型掩码。|  
-|APPBREAKFLAG_IN_BREAKPOINT|0x80000000|断点是正在进行。|  
+|APPBREAKFLAG_STEPTYPE_MASK|0x00F00000|分离出步骤类型的掩码。|  
+|APPBREAKFLAG_IN_BREAKPOINT|0x80000000|断点是正在进行中。|  
   
 ## <a name="remarks"></a>备注  
- 一些标志指定语言引擎应在下一个时机到来，处中断，而其他标志指定调试器单步执行模式。  
+ 某些标志指定语言引擎应在下次有机会，处中断，而其他标志指定调试器单步执行模式。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [活动脚本调试器常量、 枚举和结构](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
  [BREAKREASON 枚举](../../winscript/reference/breakreason-enumeration.md)

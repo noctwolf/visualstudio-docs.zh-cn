@@ -1,5 +1,5 @@
 ---
-title: 运算符摘要 (JavaScript) |Microsoft 文档
+title: 运算符摘要 (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -18,12 +18,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 302ad9c9a853fb7ed7f24de9669d0cc7a66195aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 85eb607ed868d034860d44b3ecaf69a5d8d55c89
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753570"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349317"
 ---
 # <a name="operator-summary-javascript"></a>运算符摘要 (JavaScript)
 下表列出[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]中它们各自的类别的运算符。  
@@ -36,7 +36,7 @@ ms.locfileid: "29753570"
 |[递减](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[除法](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
 |[递增](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[Remainder](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[其余部分](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[乘法](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[减法](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[一元求反](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
@@ -87,5 +87,5 @@ ms.locfileid: "29753570"
   
  [void](../../javascript/reference/void-operator-decrementjavascript.md)  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]

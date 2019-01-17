@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter 接口 |Microsoft 文档
+title: IDebugFormatter 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97f95aa1ecb91f6caca187939a79a6f09cd2108f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 353a85ab51252c92086fa478d95b2e29ab3db62d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729167"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348030"
 ---
 # <a name="idebugformatter-interface"></a>IDebugFormatter 接口
-允许的语言或 IDE 以自定义变量值或 VARTYPE 类型与字符串之间的转换。  
+允许语言或 IDE 自定义 VARIANT 值或 VARTYPE 类型与字符串之间的转换。  
   
- 除了从继承的方法`IUnknown`、`IDebugFormatter`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IDebugFormatter`接口公开以下方法。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDebugFormatter::GetStringForVariant](../../winscript/reference/idebugformatter-getstringforvariant.md)|返回表示给定的变量值的字符串。|  
+|[IDebugFormatter::GetStringForVariant](../../winscript/reference/idebugformatter-getstringforvariant.md)|返回一个字符串，表示给定的变体值。|  
 |[IDebugFormatter::GetVariantForString](../../winscript/reference/idebugformatter-getvariantforstring.md)|返回包含给定的字符串的变量。|  
-|[IDebugFormatter::GetStringForVarType](../../winscript/reference/idebugformatter-getstringforvartype.md)|返回表示给定的 VARTYPE 值的字符串。|
+|[IDebugFormatter::GetStringForVarType](../../winscript/reference/idebugformatter-getstringforvartype.md)|返回一个字符串，表示给定的 VARTYPE 值。|

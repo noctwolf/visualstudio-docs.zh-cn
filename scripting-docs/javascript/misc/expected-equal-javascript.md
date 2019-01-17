@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0ba826bdc4af9e4c87c0e5a85d47caffc187f00
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: dfdc5856eecf6eef0e2308d4ce20734fbb47bb12
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802259"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348602"
 ---
 # <a name="expected--javascript"></a>应有“=”(JavaScript)
 尝试创建一个变量以与条件编译语句一起使用，但未将放置在变量与你想要为其分配的值之间以等号。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100 接口 |Microsoft 文档
+title: IDebugApplicationNode100 Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,24 +14,24 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af79614d38ef55776b660329f51931be70b7f52e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4a6cbe92c6789b702adc69f598a995f84c01ef86
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725807"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347445"
 ---
 # <a name="idebugapplicationnode100-interface"></a>IDebugApplicationNode100 接口
-`IDebugApplicationNode100`接口扩展的功能[IDebugApplicationNode 接口](../../winscript/reference/idebugapplicationnode-interface.md)。 此接口的实例可以通过调用的实现 QueryInterface [IDebugApplicationNode 接口](../../winscript/reference/idebugapplicationnode-interface.md)。  
+`IDebugApplicationNode100`接口扩展的功能[IDebugApplicationNode 接口](../../winscript/reference/idebugapplicationnode-interface.md)。 您可以对的实现调用 QueryInterface 来获取此接口的实例[IDebugApplicationNode 接口](../../winscript/reference/idebugapplicationnode-interface.md)。  
   
 > [!IMPORTANT]
->  实现此接口由 PDM 10.0 版和更高。 在 activdbg100.h 中发现。  
+>  此接口由 PDM 10.0 版及更高版本实现。 在 activdbg100.h 中发现。  
   
 ## <a name="methods"></a>方法  
  `IDebugApplicationNode100` 接口公开以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)|获取由指定的筛选器隐藏的文本文档。|  
+|[IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)|获取指定的筛选器隐藏的文本文档。|  
 |[IDebugApplicationNode100::QueryIsChildNode](../../winscript/reference/idebugapplicationnode100-queryischildnode.md)|确定此节点的子节点之一是否属于指定的文档。|  
-|[IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)|对特定设置的筛选器[IDebugApplicationNodeEvents 接口](../../winscript/reference/idebugapplicationnodeevents-interface.md)实现。 它允许脚本调试器，若要筛选出编译器生成的子应用程序节点，以便 PDM 将不再发送事件时创建或删除节点。 默认情况下，将发送所有节点。|
+|[IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)|对特定设置的筛选器[IDebugApplicationNodeEvents 接口](../../winscript/reference/idebugapplicationnodeevents-interface.md)实现。 它允许脚本调试器，若要筛选出编译器生成子应用程序节点，以便 PDM 将不再发送事件时创建或删除节点。 默认情况下，将发送的所有节点。|

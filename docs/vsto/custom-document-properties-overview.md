@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bd76957844008975f67c6c1cb504aa0388b9e91b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fe5c77827c23f5547f8e5bd411a33b03bfd37f8
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936888"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349499"
 ---
 # <a name="custom-document-properties-overview"></a>自定义文档属性概述
 
@@ -30,15 +30,15 @@ ms.locfileid: "53936888"
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="assemblyname"></a>\_程序集名称
+## <a name="assemblyname"></a>\_AssemblyName
 
 此属性包含的接口中的 Office 解决方案加载程序组件的 CLSID [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 CLSID 值为 4E3C66D5-58 D 4-491E-A7D4-64AF99AF6E8B。 永远不应更改此值。
 
-## <a name="assemblylocation"></a>\_程序集位置
+## <a name="assemblylocation"></a>\_AssemblyLocation
 
 此属性包含用于自定义提供有关部署清单的详细信息的字符串。 有关清单的详细信息，请参阅[应用程序和部署清单在 Office 解决方案中](../vsto/application-and-deployment-manifests-in-office-solutions.md)。
 
- The_AssemblyLocation 属性值可以具有不同的格式，具体取决于解决方案的部署方式：
+ \_AssemblyLocation 属性值可以具有不同的格式，具体取决于解决方案的部署方式：
 
 - 如果发布的解决方案安装从 Web 站点、 UNC 路径或 CD 或 USB 驱动器，_AssemblyLocation 属性具有格式*部署清单路径*|*SolutionID*。 以下字符串是一个示例：
 

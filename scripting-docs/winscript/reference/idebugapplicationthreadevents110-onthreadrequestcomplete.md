@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThreadEvents110::OnThreadRequestComplete |Microsoft 文档
+title: IDebugApplicationThreadEvents110::OnThreadRequestComplete | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4541ca6dbdb4756a5b1eee286e929385143323de
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 775aa19c3343450c6f185de949cb0328f2df4b7a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725677"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347718"
 ---
 # <a name="idebugapplicationthreadevents110onthreadrequestcomplete"></a>IDebugApplicationThreadEvents110::OnThreadRequestComplete
 调用到使用 PDM 的线程的线程切换已完成。  
@@ -36,5 +36,5 @@ HRESULT OnThreadRequestComplete( void );
 #### <a name="parameters"></a>参数  
  此方法没有任何参数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplicationThreadEvents110 接口](../../winscript/reference/idebugapplicationthreadevents110-interface.md)

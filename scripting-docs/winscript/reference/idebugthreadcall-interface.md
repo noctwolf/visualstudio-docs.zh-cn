@@ -1,5 +1,5 @@
 ---
-title: IDebugThreadCall 接口 |Microsoft 文档
+title: IDebugThreadCall 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2b1b500aec08520166d9092edfa6a58c1df0fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a2167538f2251d961dfcad4a873658d9635a612e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726937"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346262"
 ---
 # <a name="idebugthreadcall-interface"></a>IDebugThreadCall 接口
-`IDebugThreadCall`接口通常由与跨线程调用的组件实现`IDebugThread`封送处理过程调试管理器 (PDM) 提供的实现。  
+`IDebugThreadCall`界面通常由组件可以使用的跨线程调用实现`IDebugThread`封送由进程调试管理器 (PDM) 提供实现。  
   
- PDM 调用`IDebugThreadCall`中所需的线程，接口和`IDebugThreadCall`接口将调度到的所需的实现调用。 `IDebugThreadCall`接口将强制转换到相应的页首参数中传递的参数信息。  
+ PDM 调用`IDebugThreadCall`中所需的线程，接口和`IDebugThreadCall`接口将调度到所需的实现调用。 `IDebugThreadCall`接口将强制转换到适当的顶部的参数中传递的参数信息。  
   
  `IDebugThreadCall`接口是自由线程对象。  
   
 ## <a name="methods"></a>方法  
- 除了从继承的方法`IUnknown`、`IDebugThreadCall`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IDebugThreadCall`接口公开以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  

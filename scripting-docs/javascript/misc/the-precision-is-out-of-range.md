@@ -1,5 +1,5 @@
 ---
-title: 精度超出了范围 |Microsoft 文档
+title: 精度不在范围内 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 73fb9c7fb35aa33214806ac1d89f4c3f1b9a479e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633337"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347068"
 ---
 # <a name="the-precision-is-out-of-range"></a>精度超出范围
-尝试向函数传递了无效自变量**Number.prototype.toPrecision**。 自变量**toPrecision**必须介于 1 和 21 （含） 之间。  
+尝试向函数传递了无效的参数**Number.prototype.toPrecision**。 参数**toPrecision**必须介于 1 和 21 （含） 之间。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   确保自变量`toPrecision`不太大或太小。  
+-   确保参数`toPrecision`不是太大或太小。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [toPrecision 方法 (Number)](../../javascript/reference/toprecision-method-number-javascript.md)

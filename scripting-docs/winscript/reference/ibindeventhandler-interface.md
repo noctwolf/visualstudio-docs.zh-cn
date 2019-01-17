@@ -1,5 +1,5 @@
 ---
-title: IBindEventHandler 接口 |Microsoft 文档
+title: IBindEventHandler 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 600981f2b395627e5ece597c637da500072ff94f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6bad504bf1fc417e185759b1def641d366c778c5
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725097"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346847"
 ---
 # <a name="ibindeventhandler-interface"></a>IBindEventHandler 接口
-允许调用方提供一个处理指定的事件处理程序对象。  
+允许调用方提供处理指定的事件处理程序的对象。  
   
 ## <a name="methods"></a>方法  
- 除了从继承的方法`IUnknown`、`IBindEventHandler`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IBindEventHandler`接口公开以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IBindEventHandler::BindHandler](../../winscript/reference/ibindeventhandler-bindhandler.md)|将事件绑定到对象。|
+|[IBindEventHandler::BindHandler](../../winscript/reference/ibindeventhandler-bindhandler.md)|将事件绑定到一个对象。|

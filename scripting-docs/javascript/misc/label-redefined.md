@@ -1,5 +1,5 @@
 ---
-title: 标签被重定义 |Microsoft 文档
+title: 重新定义的标签 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,20 +21,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6aff2415c08718e8b4ee82f817de337c9cda80f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633017"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347809"
 ---
 # <a name="label-redefined"></a>标签被重定义
-创建新的标签，但赋予了它的现有标签的名称。 标签可用于标记代码块，但在指定的范围内，它们必须是唯一的。  
+创建新标签，但为它提供了现有标签的名称。 可以使用标签来标记代码块，但在指定的范围内，它们必须唯一。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   确保在程序中使用的所有标签在其各自的范围内唯一。  
+-   确保在程序中使用的所有标签都都在其各自的范围内唯一。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [标记的语句](../../javascript/reference/labeled-statement-javascript.md)   
  [switch 语句](../../javascript/reference/switch-statement-javascript.md)   
  [break 语句](../../javascript/reference/break-statement-javascript.md)   

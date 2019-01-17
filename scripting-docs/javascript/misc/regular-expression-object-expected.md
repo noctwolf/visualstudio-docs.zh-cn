@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1b8e3c48b116680fe73d4cc318038cb2c13c4164
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280306"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346106"
 ---
 # <a name="regular-expression-object-expected"></a>应为正则表达式对象
 你尝试调用**RegExp.prototype.toString**或**RegExp.prototype.valueOf**方法以外的类型的对象上`RegExp`。 调用此类型的对象的类型必须是`RegExp`。  

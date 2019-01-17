@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation 接口 |Microsoft 文档
+title: IDebugAsyncOperation 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,24 +14,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 157ed1248535855fcb53ca2eb6f49427fea94149
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c0088fddd2661d6711c9a18495f4b8704f782b3c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726097"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349981"
 ---
 # <a name="idebugasyncoperation-interface"></a>IDebugAsyncOperation 接口
-过程调试管理器实现`IDebugAsyncOperation`接口。 语言引擎调用`IDebugApplication::CreateAsyncDebugOperation`方法来获取对此接口的引用。 可以使用语言引擎`IDebugAsyncOperation`接口，以提供对同步调试操作的异步访问。  
+进程调试管理器实现`IDebugAsyncOperation`接口。 语言引擎将调用`IDebugApplication::CreateAsyncDebugOperation`方法来获取对此接口的引用。 语言引擎可以使用`IDebugAsyncOperation`接口，以提供对同步调试操作的异步访问。  
   
- 除了从继承的方法`IUnknown`、`IDebugAsyncOperation`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IDebugAsyncOperation`接口公开以下方法。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
 |方法|描述|  
 |------------|-----------------|  
 |[IDebugAsyncOperation::GetSyncDebugOperation](../../winscript/reference/idebugasyncoperation-getsyncdebugoperation.md)|返回与此对象关联的同步调试操作。|  
-|[IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)|会导致开始异步操作。|  
+|[IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)|将导致异步操作以开始。|  
 |[IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)|取消操作。|  
 |[IDebugAsyncOperation::QueryIsComplete](../../winscript/reference/idebugasyncoperation-queryiscomplete.md)|确定是否已完成调试操作。|  
-|[IDebugAsyncOperation::GetResult](../../winscript/reference/idebugasyncoperation-getresult.md)|提供的返回值和从同步调试操作返回的对象参数。|
+|[IDebugAsyncOperation::GetResult](../../winscript/reference/idebugasyncoperation-getresult.md)|提供的返回值和返回对象从同步调试操作的参数。|
