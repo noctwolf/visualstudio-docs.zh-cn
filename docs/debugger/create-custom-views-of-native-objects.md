@@ -45,11 +45,11 @@ Natvis 并不适用于：
 
 ![使用可视化工具的 TextBox 数据](../debugger/media/dbg_natvis_textbox_visualizer.png "使用可视化工具的 TextBox 数据")  
 
-##  <a name="BKMK_Using_Natvis_files"></a>使用 c + + 项目中的.natvis 文件  
+##  <a name="BKMK_Using_Natvis_files"></a>在 C++ 项目中使用 .natvis 文件  
 
 使用 Natvis *.natvis*文件指定可视化规则。 一个 *.natvis*文件是 XML 文件与 *.natvis*扩展。 Natvis 架构中定义 *%VSINSTALLDIR%\Xml\Schemas\natvis.xsd*。  
 
-基本结构 *.natvis*文件是一个或多个`Type`元素表示可视化条目。 每个的完全限定的名称`Type`元素中指定其`Name`属性。  
+*.natvis* 文件的基本结构由一个或多个代表可视化条目的 `Type` 元素构成。 每个 `Type` 元素的完全限定名称都在其 `Name` 属性中指定。  
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
@@ -82,45 +82,45 @@ Visual Studio 提供了一些 *.natvis*中的文件 *%VSINSTALLDIR%\Common7\Pack
    
    新文件添加到**解决方案资源管理器**，并在 Visual Studio 文档窗格中打开。 
 
-Visual Studio 调试器加载 *.natvis* c + + 项目中的文件自动，并且默认情况下，还包括在 *.pdb*文件时生成项目。 如果生成应用程序进行调试时，调试器将加载 *.natvis*文件从 *.pdb*文件，即使你没有打开该项目。 如果不想 *.natvis*文件中包含 *.pdb*，你可以从生成中排除它 *.pdb*文件。
+Visual Studio 调试器会自动在 C++ 项目中加载 *.natvis* 文件，默认情况下，还会在生成项目时，在 *.pdb* 文件中包含它们。 在调试生成的应用时，调试器会从 *.pdb* 文件加载 *.natvis* 文件，即使你没有打开该项目也是如此。 如果不想在 *.pdb* 中包含 *.natvis* 文件，可以从生成的 *.pdb* 文件中将其排除。
 
-**若要排除 *.natvis*文件从 *.pdb*:**
+**从 *.pdb* 中排除 *.natvis* 文件：**
 
-1. 选择 *.natvis*中的文件**解决方案资源管理器**，然后选择**属性**图标，或右键单击该文件并选择**属性**.
+1. 在**解决方案资源管理器**中选择 *.natvis* 文件，然后选择**属性**图标，或右键单击该文件并选择**属性**。
    
 1. 按下**从生成中排除**旁边的箭头并选择**是**，然后选择**确定**。  
 
 >[!NOTE]
->对于调试可执行文件的项目，使用解决方案项添加任何 *.natvis*不在的文件 *.pdb*，因为没有可用的 c + + 项目。  
+>如果是调试可执行的项目，则使用解决方案项来添加 *.pdb* 中不包含的 *.natvis* 文件，因为没有可用的 C++ 项目。  
 
 >[!NOTE]
->从加载 Natvis 规则 *.pdb*仅适用于类型的模块中的 *.pdb*引用。 例如，如果*则 Module1.pdb*具有名为的类型的 Natvis 条目`Test`，它仅适用于`Test`类*Module1.dll*。 如果另一个模块还定义一个名为类`Test`，则*则 Module1.pdb* Natvis 条目将不适用于到它。  
+>从 *.pdb* 加载的 Natvis 规则仅适用于 *.pdb* 引用的模块中的类型。 例如，如果 *Module1.pdb* 包含一个名为 `Test` 的类型的 Natvis 条目，则它仅适用于 *Module1.dll* 中的 `Test` 类。 如果另一个模块也定义了一个名为 `Test` 的类，则 *Module1.pdb* 的 Natvis 条目不适用于它。   
 
 ### <a name="BKMK_natvis_location"></a> Natvis 文件位置  
 
-您可以添加 *.natvis*文件到你的用户目录或系统目录中，如果你希望它们适用于多个项目。  
+如果你希望将 *.natvis* 文件应用于多个项目，可以将它们添加到用户目录或系统目录中。   
 
 将按照以下顺序来评估 *.Natvis* 文件：  
 
-1. 任何 *.natvis*文件中嵌入 *.pdb*你进行调试时，除非加载的项目中存在的同名文件。  
+1. 所调试的 *.pdb* 文件中内嵌的所有的 *.natvis* 文件，除非加载的项目中存在同名文件。  
 
-1. 任何 *.natvis*中加载的 c + + 项目或顶级解决方案的文件。 此组包括所有已加载的 c + + 项目，包括其他语言中的类库，但不是项目。 
+1. 加载的 C++ 项目或顶级解决方案中的所有 *.natvis* 文件。 这包括所有已加载的 C++ 项目（包括类库），但不包括其他语言的项目。 
 
 1.  特定于用户的 Natvis 目录 (例如， *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*)。  
 
-1.  系统级 Natvis 目录 (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 此目录已 *.natvis*随 Visual Studio 一起安装的文件。 如果您具有管理员权限，可以将文件添加到此目录中。  
+1.  系统级 Natvis 目录 (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 此目录中包含随 Visual Studio 一起安装的 *.natvis* 文件。 如果你具有管理员权限，可以将文件添加到此目录中。  
 
 ## <a name="modify-natvis-files-while-debugging"></a>在调试时修改.natvis 文件  
 
-您可以修改 *.natvis*调试其项目时 IDE 中的文件。 在进行调试的 Visual Studio 的相同实例中打开该文件，修改它，并将其保存。 立即保存该文件， **Watch**并**局部变量**windows 更新以反映更改。 
+你可以在调试项目时，在 IDE 中修改 *.natvis* 文件。 在用于调试的同一个 Visual Studio 实例中打开该文件，进行修改，然后保存。 保存后，**监视**和**局部变量**窗口就会随之更新，显示所做的更改。 
 
-此外可以添加或删除 *.natvis*中进行调试，并且 Visual Studio 将添加或删除相关的可视化效果的解决方案文件。  
+你还可以在调试的解决方案中添加或删除 *.natvis* 文件，Visual Studio 会随之添加或删除相关的可视化效果。  
 
-无法更新 *.natvis*文件中嵌入 *.pdb*文件进行调试时。  
+在调试时，无法更新 *.pdb* 文件中内嵌的 *.natvis* 文件。   
 
-如果你修改 *.natvis*文件在 Visual Studio 外部所做的更改不会自动生效。 若要更新在调试器窗口，可以重新评估 **.natvisreload**命令，在**监视**窗口。 然后更改才会生效，无需重新启动调试会话。  
+如果你在 Visual Studio 以外修改 *.natvis* 文件，所做的更改不会自动生效。 若要更新调试器窗口，可以在**监视**窗口中重新计算 **.natvisreload** 命令。 更改随后就会生效，无需重新启动调试会话。  
 
-此外使用 **.natvisreload**命令，将升级 *.natvis*到较新版本的文件。 例如， *.natvis*文件可能签入源代码管理，并且你想要的其他人所做选取最新更改。 
+还可以使用 **.natvisreload** 命令将 *.natvis* 文件升级到较新的版本。 例如，*.natvis* 文件可能被纳入了源代码管理中，并且你需要获取其他人最近所做的更改。 
 
 ##  <a name="BKMK_Expressions_and_formatting"></a> 表达式和格式化  
 Natvis 的可视化功能使用 C++ 表达式来指定要显示的数据项。 除了[上下文运算符 (C++)](../debugger/context-operator-cpp.md) 中所述的、调试器中的 C++ 表达式的增强功能和限制外，还要注意以下事项：  
@@ -150,7 +150,7 @@ Natvis 的可视化功能使用 C++ 表达式来指定要显示的数据项。 �
 ```  
 
 
-在中**Watch**窗口中，使用 **，查看**格式说明符来指定替代视图。 简单视图将显示为**vec,view(simple)**:  
+在**监视**窗口中，使用 **,view** 格式说明符来指定替代视图。 simple 视图将显示为 **vec,view(simple)**：  
 
 ![具有简单视图的监视窗口](../debugger/media/watch-simpleview.png "具有简单视图的监视窗口")  
 
@@ -167,7 +167,7 @@ Natvis 的可视化功能使用 C++ 表达式来指定要显示的数据项。 �
 ##  <a name="BKMK_Syntax_reference"></a> Natvis 语法参考  
 
 ###  <a name="BKMK_AutoVisualizer"></a> AutoVisualizer 元素  
-`AutoVisualizer` 元素是 .natvis 文件的根节点并包含命名空间 `xmlns:` 属性。 
+`AutoVisualizer` 元素是 *.natvis* 文件的根节点，并包含命名空间 `xmlns:` 属性。 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
@@ -211,7 +211,7 @@ Natvis 的可视化功能使用 C++ 表达式来指定要显示的数据项。 �
 </Type>  
 ```  
 
-可以使用宏 $T1 和 $T2，引用在可视化条目中的模板参数等。 要查找这些宏的示例，请参阅随 Visual Studio 一起提供的 .natvis 文件。  
+可以使用 $T1 和 $T2 这样的宏，在可视化条目中引用模板参数。 有关这些宏的示例，请参阅 Visual Studio 随附的 *.natvis* 文件。  
 
 ####  <a name="BKMK_Visualizer_type_matching"></a> 可视化工具类型匹配  
 如果无法验证某个可视化条目，则使用下一个可用的可视化效果。  
@@ -229,7 +229,7 @@ Natvis 的可视化功能使用 C++ 表达式来指定要显示的数据项。 �
 
 #### <a name="priority-attribute"></a>优先级特性  
 
-可选`Priority`属性指定要在其中使用备用定义的顺序，如果某个定义无法分析。 可能值`Priority`是： `Low`， `MediumLow`，`Medium`， `MediumHigh`，并`High`。 默认值为 `Medium`。 `Priority`属性用于区分仅内相同的优先级 *.natvis*文件。  
+如果某个定义的分析失败，可选的 `Priority` 属性会指定使用备用定义的顺序。 `Priority` 的值包括：`Low`、`MediumLow`、`Medium`、`MediumHigh` 和 `High`。 默认值为 `Medium`。 `Priority`属性只区分同一个 *.natvis* 文件中的优先级。  
 
 下面的示例会首先分析与 2015 STL 匹配的条目。 如果分析失败，就会使用 STL 的 2013 版本的备用条目：  
 
@@ -391,12 +391,12 @@ Natvis 的可视化功能使用 C++ 表达式来指定要显示的数据项。 �
 
 调试器将计算 `Width` 和 `Height` 元素中指定的表达式，然后在变量窗口的**值**列中显示值。 
 
-调试器会自动创建 **[原始视图]** 为每个自定义扩展的节点。 上面的屏幕截图显示 **[原始视图]** 展开节点，以显示该对象的默认原始视图与其 Natvis 可视化的区别。 默认展开创建基类的子树，并列出所有数据成员的类的基类作为子级。  
+调试器会为每个自定义展开自动创建 **[Raw View]** 节点。 上面的屏幕截图中的 **[Raw View]** 节点是展开的，显示了对象的默认原始视图与其 Natvis 可视化效果的区别。 默认展开会为基类创建一个子树，并将基类的所有数据成员以子项的形式列出。  
 
 > [!NOTE]
 > 如果项元素的表达式指向一个复杂类型，**项**节点本身是可展开。  
 
-####  <a name="BKMK_ArrayItems_expansion"></a> Size  
+####  <a name="BKMK_ArrayItems_expansion"></a> ArrayItems 展开  
 使用 `ArrayItems` 节点，让 Visual Studio 调试器将类型解释为一个数组并显示其各个元素。 `std::vector` 的可视化效果是一个很好的示例：  
 
 ```xml
@@ -571,7 +571,7 @@ Natvis 的可视化功能使用 C++ 表达式来指定要显示的数据项。 �
 </Type>  
 ```  
 
-语法是类似于`LinkedListItems`节点。 `LeftPointer``RightPointer`，和`ValueNode`树节点类的上下文中计算。 `ValueNode` 可以保留为空或使用`this`来指代`TreeItems`节点本身。  
+语法类似于 `LinkedListItems` 节点。 `LeftPointer`、`RightPointer` 和 `ValueNode` 是在树节点类的上下文中计算的。 `ValueNode` 可以保留为空或使用 `this` 来引用 `TreeItems` 节点本身。  
 
 ####  <a name="BKMK_ExpandedItem_expansion"></a> ExpandedItem 展开  
  通过将基类或数据成员的属性显示为可视化类型的子项，`ExpandedItem` 元素生成了一个聚合的子视图。 调试器将计算指定的表达式，并将结果的子节点附加到该可视化类型的子列表中。 
@@ -580,7 +580,7 @@ Natvis 的可视化功能使用 C++ 表达式来指定要显示的数据项。 �
 
  ![自动&#95;ptr&#60;矢量&#60;int&#62; &#62;默认扩展](../debugger/media/dbg_natvis_expand_expandeditem_default.png "默认扩展")  
 
- 若要查看矢量的值，必须向下钻取两个级别在变量窗口中，通过传递`_Myptr`成员。 通过添加 `ExpandedItem` 元素，可以消除层次结构中的 `_Myptr` 变量并直接查看矢量元素：  
+ 要查看矢量的值，就必须在变量窗口中穿过 `_Myptr` 成员，向下深入两个级别。 通过添加 `ExpandedItem` 元素，就可以从层次结构中去除 `_Myptr` 变量并直接查看矢量元素：  
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">  
@@ -630,7 +630,7 @@ Natvis 的可视化功能使用 C++ 表达式来指定要显示的数据项。 �
  ![通过综合元素扩展的 concurrency:: array](../debugger/media/dbg_natvis_expand_synthetic.png "具有综合元素扩展的 concurrency:: array")  
 
 ###  <a name="BKMK_HResult"></a> HResult 元素 
- `HResult`元素可用于自定义显示的信息**HRESULT**调试器窗口中。 `HRValue` 元素必须包含要自定义的 HRESULT 的 32 位值。 `HRDescription`元素包含要在调试器窗口中显示的信息。  
+ 借助 `HResult` 元素，你可以自定义显示在调试器窗口中的 **HRESULT** 信息。 `HRValue` 元素必须包含要自定义的 **HRESULT** 的 32 位值。 `HRDescription` 元素包含要显示在调试器窗口中的信息。  
 
 ```xml
 
