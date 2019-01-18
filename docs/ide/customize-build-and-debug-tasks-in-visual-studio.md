@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 434ba3e01313e79c734b67b65c7cff0530f4d41d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2662c09c4d131f52b0426a910d9dd4b60e6b3459
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836319"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270120"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>自定义“打开文件夹”开发的生成和调试任务
 
@@ -32,8 +32,8 @@ Visual Studio 清楚如何运行多种语言和代码库，但它并不清楚如
 
 |文件名|目标|
 |-|-|
-|tasks.vs.json|指定自定义生成命令和编译器开关，以及任意（与非生成相关）任务。<br>通过“解决方案资源管理器”上下文菜单项“配置任务”进行访问。|
-|*launch.vs.json*|指定用于调试的命令行参数。<br>通过“解决方案资源管理器”上下文菜单项“调试和启动设置”进行访问。|
+|tasks.vs.json|指定自定义生成命令和编译器开关，以及任意（与非生成相关）任务。<br>通过“解决方案资源管理器”右键单击菜单项“配置任务”进行访问。|
+|*launch.vs.json*|指定用于调试的命令行参数。<br>通过“解决方案资源管理器”右键单击菜单项“调试和启动设置”进行访问。|
 |*VSWorkspaceSettings.json*|泛型设置可能会影响任务和启动。 例如，定义 VSWorkspaceSettings.json 中的 `envVars` 会将指定的环境变量添加到外部运行命令。<br>手动创建此文件。|
 
 这些 .json 文件位于代码库根文件夹中一个名为 .vs 的隐藏文件夹中。 当你在“解决方案资源管理器”中的文件或文件夹上选择“配置任务”或“调试和启动设置”时，Visual Studio 会根据需要创建 tasks.vs.json 和 launch.vs.json 文件。 这些 json 文件通常处于隐藏状态，因为一般情况下用户不希望在源控件中打开这些文件。 但是如果要在源控件中打开这些文件，请将其拖入代码库的根目录，将在此处显示这些文件。
@@ -47,7 +47,7 @@ Visual Studio 清楚如何运行多种语言和代码库，但它并不清楚如
 
 ![“配置任务”菜单](../ide/media/customize-configure-tasks-menu.png)
 
-这将创建（或打开）.vs 文件夹中的 tasks.vs.json 文件。 可以在此文件中定义生成任务或任意任务，然后使用从“解决方案资源管理器”上下文菜单中给出的名称来调用它。
+这将创建（或打开）.vs 文件夹中的 tasks.vs.json 文件。 可以在此文件中定义生成任务或任意任务，再使用通过“解决方案资源管理器”右键单击菜单命名的名称来调用它。
 
 可以将自定义任务添加到单个文件，也可以将其添加到某个特定类型的所有文件。 例如，可以将 NuGet 包文件配置为具有“还原包”任务，也可以将所有源文件配置为具有静态分析任务，例如所有 .js 文件的 linter。
 
@@ -118,7 +118,7 @@ bin:
 }
 ```
 
-在 tasks.vs.json 中定义生成任务后，将其他上下文菜单项添加到“解决方案资源管理器”的相应文件中。 此示例中会将“生成”、“重新生成”和“清除”选项添加至任何生成文件文件的上下文菜单中。
+当你在 tasks.vs.json 中定义生成任务后，其他右键单击菜单（关联菜单）项会被添加到“解决方案资源管理器”的相应文件中。 此示例中会将“生成”、“重新生成”和“清除”选项添加至任何生成文件文件的上下文菜单中。
 
 ![带“生成”、“重新生成”和“清除”命令的生成文件上下文菜单](media/customize-build-rebuild-clean.png)
 
@@ -148,7 +148,7 @@ bin:
 }
 ```
 
-- `taskName` 指定上下文菜单中显示的名称。
+- `taskName` 指定右键单击菜单中显示的名称。
 - `appliesTo` 指定可在其中执行命令的文件。
 - `command` 属性指定要调用的命令。 在此示例中，`COMSPEC` 环境变量用于识别命令行解释器，尤其是 cmd.exe。
 - `args` 属性指定要传递到调用命令的参数。

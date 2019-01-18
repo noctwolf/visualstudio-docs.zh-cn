@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 5923e3106ad93608effe2604d4305cc0f3038a58
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 2c040d0375a8ecb2872e148331166ecae45040cf
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802795"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154045"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 
@@ -123,7 +123,7 @@ ms.locfileid: "53802795"
 
  准备好运行应用并看到其外观时，请使用 Android Emulator。 它快速、可靠且易于安装和配置。
 
- 也可以使用 C++ 和通用 Windows 平台 (UWP) 应用项目模板生成面向全部 Windows 10 设备的应用。 有关此操作的详细信息，请参阅本主题中的上述[面向 Windows 10 设备](#WindowsHTML)部分。
+ 也可以使用 C++ 和通用 Windows 平台 (UWP) 应用项目模板，生成定目标到全部 Windows 10 设备的应用。 有关此操作的详细信息，请参阅本主题中的上述[面向 Windows 10 设备](#WindowsHTML)部分。
 
  可创建静态（或动态）共享库，在 Android 和 Windows 间共享 C++ 代码。
 

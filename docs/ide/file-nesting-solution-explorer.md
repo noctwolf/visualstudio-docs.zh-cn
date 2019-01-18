@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3ba20e0df156cf2bba77bb919e55016692630ce7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4e2767b5b4286dbf57cca6a3b1445cae55fe1a5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831149"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269276"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>在解决方案资源管理器中自定义文件嵌套
 
@@ -131,7 +131,7 @@ ms.locfileid: "53831149"
 
 ## <a name="create-solution-specific-and-project-specific-settings"></a>创建特定于解决方案和特定于项目的设置
 
-可以通过每个解决方案和项目的上下文菜单创建特定于解决方案和特定于项目的设置：
+可以通过每个解决方案和项目的右键单击菜单（关联菜单），创建解决方案专用设置和项目专用设置：
 
 ![特定于解决方案和项目的嵌套规则](media/filenesting_solutionprojectspecific.png)
 

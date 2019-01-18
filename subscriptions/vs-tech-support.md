@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的技术支持权�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: e2e5b66988ba5ff5aedede2e1cef112a3b204919
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740419"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315509"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>激活 Visual Studio 订阅中的技术支持权益
 
@@ -85,11 +85,8 @@ ms.locfileid: "53740419"
 若要将 Visual Studio 订阅技术支持权益用于与 Azure 相关的问题，需要将合约 ID 和访问 ID 链接到 Azure 订阅。
 
 1.  访问 https://portal.azure.com 并登录
-2.  从左侧导航中，单击“帮助 + 支持”
-3.  在“支持”下单击“链接支持合约”
-4.  输入在上面 #1 中提供的“访问 ID”和“合同 ID”。
-
-完成这些步骤后，便能够选择与 Visual Studio 订阅权益关联的支持计划。  （计划名称可能包含“MSDN”。）
+2.  在左侧导航栏中，单击“帮助 + 支持”
+3.  单击“支持”下的“新建支持请求”
 
 ## <a name="eligibility"></a>资格
 

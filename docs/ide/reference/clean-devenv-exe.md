@@ -1,64 +1,78 @@
 ---
 title: -Clean (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - builds [Team System], cleaning files
-- clean Devenv switch
-- /clean Devenv switch
-- Devenv, /clean switch
+- Clean Devenv switch
+- /Clean Devenv switch
+- Devenv, /Clean switch
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 051485646b7ff19ddae40518215c410d05fa4849
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd2271ca3a2a674d569bc20ad6b45642e460108f
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906886"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269561"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
+
 清理所有中间文件和输出目录。
 
 ## <a name="syntax"></a>语法
 
-```
-devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
+```shell
+devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>自变量
- `FileName`
 
- 必需。 解决方案文件或项目文件的完整路径和名称。
+- *SolutionName*
 
- /project `ProjName`
+  必需。 解决方案文件的完整路径和名称。
 
- 可选。 解决方案中项目文件的路径和名称。 可以输入从 `SolutionName` 文件夹到项目文件的相对路径、项目的显示名称或项目文件的完整路径和名称。
+- Config
 
- /projectconfig `ProjConfigName`
+  可选。 用于为 SolutionName 中命名的解决方案清理中间文件的配置（如 `Debug` 或 `Release`）。 如果有多个解决方案平台可用，还必须指定平台（例如，`Debug|Win32`）。 如果未指定此参数或字符串为空 (`""`)，工具便会使用解决方案的有效配置。
 
- 可选。 清理命名的 `/project` 时要使用的项目生成配置的名称。
+- `/Project` ProjName
+
+  可选。 解决方案中项目文件的路径和名称。 可以将项目在 SolutionName 文件夹中的显示名称或相对路径输入到项目文件中。 也可以输入项目文件的完整路径和名称。
+
+- `/ProjectConfig` ProjConfigName
+
+  可选。 要在清理已命名 `/Project` 时使用的项目生成配置的名称（如 `Debug` 或 `Release`）。 如果有多个解决方案平台可用，还必须指定平台（例如，`Debug|Win32`）。 如果此开关已指定，它会替代 Config 参数。
+
+- `/Out` OutputFilename
+
+  可选。 要将工具输出发送到的文件的文件名。 如果文件已有，工具将输出追加到文件末尾。
 
 ## <a name="remarks"></a>备注
- 在集成开发环境 (IDE) 中，此开关执行与“清理解决方案”菜单命令相同的功能。
 
- 用双引号将含有空格的字符串引起来。
+在 IDE 中，此开关执行与“清理解决方案”菜单命令相同的功能。
 
- “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示清理和生成的摘要信息（包括错误）。
+用双引号将含有空格的字符串引起来。
+
+与清理和生成相关的摘要信息（包括错误）可以显示在“命令”窗口中，也可以显示在使用 [/Out](out-devenv-exe.md) 开关指定的任何日志文件中。
+
+如果 `/Project` 开关未指定，便会对解决方案中的所有项目完成清理操作，即使已将 FileName 指定为项目文件，也不例外。
 
 ## <a name="example"></a>示例
- 第一个示例使用解决方案文件中指定的默认配置清理 `MySolution` 解决方案。
 
- 第二个示例使用 `MySolution` 的 `Debug` 解决方案配置中的 `Debug` 项目生成配置来清理 `CSharpConsoleApp` 项目。
+第一个示例使用解决方案文件中指定的默认配置清理 `MySolution` 解决方案。
 
-```
-Devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean
+第二个示例使用 `MySolution` 中的 `Debug` 项目生成配置来清理项目 `CSharpWinApp`。
 
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean
+
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean "Debug" /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
 ```
 
 ## <a name="see-also"></a>请参阅

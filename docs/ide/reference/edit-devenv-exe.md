@@ -1,10 +1,11 @@
 ---
 title: -Edit (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- Devenv, /edit switch
+- Edit Devenv switch
+- Devenv, /Edit switch
 - /Edit Devenv switch
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
 author: gewarren
@@ -12,41 +13,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ccbd3a693313b870378021e6404424cfb11f199
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb5ae37d3e4dc0973320c68f9db169cdbf7d663a
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907983"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227676"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
-在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的现有实例中打开指定文件。
+
+在现有 Visual Studio 实例中打开指定文件。
 
 ## <a name="syntax"></a>语法
 
-```cmd
-Devenv /edit [file1[ file2]]
+```shell
+devenv /Edit [File1[ FileN]...]
 ```
 
 ## <a name="arguments"></a>自变量
- `file1`
 
- 可选。 要在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的现有实例中打开的文件。 如果不存在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的实例，使用简化窗口布局创建新实例，并在新实例中打开 `file1`。
+- File1
 
- `file2`
+  可选。 要在现有 Visual Studio 实例中打开的文件。 如果没有 Visual Studio 实例，便会新建包含简化窗口布局的实例，且工具会在新实例中打开 File1。
 
- 可选。 要在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的现有实例中打开的一个或多个其他文件。
+- FileN
+
+  可选。 要在现有 Visual Studio 实例中打开的一个或多个其他文件。
 
 ## <a name="remarks"></a>备注
- 如果未指定文件但存在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的现有实例，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的现有实例会接收焦点。 如果未指定文件但存在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的现有实例，会通过简化窗口布局创建 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的新实例。
 
- 如果 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的现有实例处于模式状态，例如，如果[选项对话框](../../ide/reference/options-dialog-box-visual-studio.md)是打开状态，文件将在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 退出模式状态时在现有实例中打开。
+如果文件未指定，现有 Visual Studio 实例便会接收焦点。 如果文件未指定且没有 Visual Studio 实例，工具会创建包含简化窗口布局的实例。
+
+如果现有 Visual Studio 实例处于模式状态，那么文件会在 Visual Studio 退出模式状态时在现有实例中打开。 例如，当[“选项”对话框](../../ide/reference/options-dialog-box-visual-studio.md)打开时，可能会出现这种情况。
 
 ## <a name="example"></a>示例
- 此示例在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的现有实例中打开文件 `MyFile.cs` 或在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的新实例中打开文件（如果没有现有实例）。
 
-```cmd
+第一个示例在现有 Visual Studio 实例中打开文件 `MyFile.cs`。 如果没有 Visual Studio 实例，工具在新实例中打开文件。 第二个示例也是相似的，区别在于它打开三个文件，而不是只打开一个文件。
+
+```shell
 devenv /edit MyFile.cs
+
+devenv /edit MyFile1.cs MyFile2.cs MyFile3.cs
 ```
 
 ## <a name="see-also"></a>请参阅

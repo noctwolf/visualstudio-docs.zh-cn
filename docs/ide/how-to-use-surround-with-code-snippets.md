@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3d306d9399ee9454d1967c24a734c5d9b9b2eb9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11e31d46af00620b9e8ac9f45fe79946eea4eb1a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908797"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270146"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>如何：使用外侧代码片段
 
-下列过程描述如何使用环绕代码片段。 可通过以下三种方式使用外侧代码片段：键盘快捷方式、“编辑”菜单和上下文菜单。
+下列过程描述如何使用环绕代码片段。 可通过以下三种方式使用范围陈述式代码片段：键盘快捷键、“编辑”菜单和右键单击菜单（或关联菜单）。
 
 ## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>通过键盘快捷方式使用环绕代码片段
 

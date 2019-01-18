@@ -8,12 +8,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: eb441d5987a4e1defde83d4ca9737cc27ab278fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eff82db5a7ca5c5a18c7d89017dfae892d209fbf
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840877"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270042"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 
@@ -37,7 +37,7 @@ C++ 单元测试项目支持 [CodeLens](../ide/find-code-changes-and-other-histo
 
 **Visual Studio 2017 版本 15.5**
 
-- **Google Test 适配器**作为“使用 C++ 的桌面开发”工作负荷的默认组件包含在内。 它具有可以在解决方案资源管理器中通过解决方案节点上的“添加新项目”上下文菜单添加到解决方案的项目模板，以及可以通过“工具” > “选项”配置的选项。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 Google Test](how-to-use-google-test-for-cpp.md)。
+- **Google Test 适配器**作为“使用 C++ 的桌面开发”工作负荷的默认组件包含在内。 它包含可通过“解决方案资源管理器”中解决方案节点上的“添加新项目”右键单击菜单添加到解决方案的项目模板，以及可通过“工具” > “选项”配置的选项。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 Google Test](how-to-use-google-test-for-cpp.md)。
 
 - **Boost.Test** 作为“使用 C++ 的桌面开发”工作负荷的默认组件包含在内。 它与“测试资源管理器”集成，但当前没有项目模板，因此必须手动配置。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 Boost.Test](how-to-use-boost-test-for-cpp.md)。
 

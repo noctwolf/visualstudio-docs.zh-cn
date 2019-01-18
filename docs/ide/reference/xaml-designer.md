@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d8dc2ff0f0bc010dd225372c0c96badd9251eae8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ef58fb7b1f58eb9d7618981251bdc7981142500
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964294"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315535"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 设计器选项页
 
@@ -65,7 +65,7 @@ ms.locfileid: "53964294"
 |||
 |-|-|
 |**创建时自动命名交互元素**|指定在向设计器添加新的交互元素时是否为该元素提供一个默认名称。|
-|**创建元素时自动插入布局属性**|指定在向设计器添加新元素时是否为该元素提供布局属性。|
+|**创建元素时自动插入布局属性**|指定在向设计器添加新元素时是否为该元素提供布局属性。 布局属性是影响控件布局的属性（例如，Margin 和 VerticalAlignment）。 下面的 XAML 展示了如何在选择和不选择此选项的情况下创建按钮：<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|
 |**使用基于象限的布局**|指定当前所选控件是否与最近的父容器边缘对齐。 如果清除此复选框，在移动或创建操作期间将不会更改控件对齐方式。|
 |**自动填充工具箱项**|指定当前解决方案中的用户控件和自定义控件是否自动显示在工具箱中。|
 

@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87758b0f75b3b38f67f72f4a32122fa9d0955335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb74e49cb72274292b56a01f0ec654ebe6e44815
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939974"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227273"
 ---
-# <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>在 Visual Studio 中使用 IntelliTrace 后退检查上一应用状态
+# <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>在 Visual Studio (Visual Studio Enterprise) 中，使用 IntelliTrace 单步后退来检查旧应用状态
 
 IntelliTrace 后退会在每个断点处及调试器步骤事件发生时自动拍摄应用程序的快照。 凭借记录的快照便可以返回到上一个断点或步骤，并查看当时应用程序的状态。 如果希望查看以前的应用程序状态，但不想重新启动调试或重新创建所需应用状态，使用 IntelliTrace 后退可以节省时间。
 
@@ -26,7 +26,7 @@ IntelliTrace 后退会在每个断点处及调试器步骤事件发生时自动�
 在本教程中，你将：
 
 > [!div class="checklist"]
-> * 启用 Intellitrace 事件和快照
+> * 启用 IntelliTrace 事件和快照
 > * 使用后退和前进命令导航事件
 > * 查看事件快照
   
