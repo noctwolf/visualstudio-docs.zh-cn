@@ -1,5 +1,5 @@
 ---
-title: 常规选项卡上，线程属性对话框 |Microsoft Docs
+title: 常规选项卡，线程属性对话框 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:

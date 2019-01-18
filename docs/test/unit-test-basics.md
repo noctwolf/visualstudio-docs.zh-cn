@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1689f6780f88dd57d41090969082de7ac5685d
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: e5b08592fdd60bf88ce703b1b97bd5485cc307ab
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060798"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270175"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -83,7 +83,7 @@ public void Withdraw(double amount)
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>生成单元测试项目和单元测试存根
 
-1. 在代码编辑器窗口中，从上下文菜单右键单击并选择“创建单元测试”  。
+1. 在代码编辑器窗口中，右键单击并从右键单击菜单中选择“创建单元测试”。
 
     ![从编辑器窗口查看上下文菜单](../test/media/createunittestsrightclick.png)
 
@@ -218,7 +218,7 @@ public void My_Test ()
 
 ![从测试资源管理器工具栏运行测试](../test/media/ute_toolbar.png)
 
-你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。 运行一组测试后，测试运行的摘要将出现在“测试资源管理器”窗口的底部。 选择一个测试以在底部窗格中查看该测试的详细信息。 从上下文菜单中选择“打开测试”（快捷键：“F12”），显示所选测试的源代码。
+你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。 运行一组测试后，测试运行的摘要将出现在“测试资源管理器”窗口的底部。 选择一个测试以在底部窗格中查看该测试的详细信息。 选择右键单击菜单中的“打开测试”（快捷键：“F12”），显示所选测试的源代码。
 
 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
