@@ -257,7 +257,7 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 查找内存泄漏的一项技术开始上来`_CrtMemCheckpoint`的开头和结尾的您的应用程序，然后使用在调用`_CrtMemDifference`可以比较的结果。 如果`_CrtMemDifference`显示了内存泄漏，可以添加更多`_CrtMemCheckpoint`调用来划分程序使用二进制搜索，直到你已隔离找到泄漏源。  
 
 ## <a name="false-positives"></a>误报  
- `_CrtDumpMemoryLeaks` 如果库将内部分配标记为普通块而不是 CRT 块或客户端块可能给出错误地指示内存泄漏。 在这种情况下， `_CrtDumpMemoryLeaks` 无法区分用户分配和内部库分配。 如果在 `_CrtDumpMemoryLeaks`调用点之后运行库分配的全局析构函数，则每个内部库分配都会报告为内存泄漏。 版本早于可能会导致 Visual Studio.NET 的标准模板库`_CrtDumpMemoryLeaks`以报告此类的假正值。  
+ 如果一个库将内部分配的内存块标记为普通块而不是 CRT 块或客户端块，则 `_CrtDumpMemoryLeaks` 会给出错误的内存泄漏指示。 在这种情况下， `_CrtDumpMemoryLeaks` 无法区分用户和内部库分配的内存块。 如果库分配的全局析构函数在你调用`_CrtDumpMemoryLeaks`之后运行，则每个内部库分配都会报告为内存泄漏。 版本早于 Visual Studio.NET 的标准模板库可能导致 `_CrtDumpMemoryLeaks` 误报。  
 
 ## <a name="see-also"></a>请参阅  
  [CRT 调试堆详细信息](../debugger/crt-debug-heap-details.md)   

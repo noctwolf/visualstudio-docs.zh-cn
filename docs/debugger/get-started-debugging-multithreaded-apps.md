@@ -228,7 +228,7 @@ Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线
 
 1.  在调试工具栏中，选择**源中显示线程**按钮![在源中显示线程](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")。
 
-2. 按**F11**一次以前进的调试器一个代码行。
+2. 按一下 **F11** 使调试器前进一个代码行。
   
 3.  查看窗口左侧的滚动条槽。 在此行中，你会看到*线程标记*图标![线程标记](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，类似于两个扭曲的线程。 线程标记指示线程在此位置停止。
 

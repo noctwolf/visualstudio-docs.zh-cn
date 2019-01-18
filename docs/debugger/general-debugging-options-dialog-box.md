@@ -47,9 +47,9 @@ ms.locfileid: "53829468"
 
 2. 当在应用程序域 1 中运行的托管代码调用应用程序域 2 中的托管代码，而应用程序域 2 中的代码却引发异常时。 请参阅[使用应用程序域编程](/dotnet/articles/framework/app-domains/index)。
 
-3. 当代码调用一个函数通过使用反射，而该函数将引发异常。 请参阅[反射](/dotnet/framework/reflection-and-codedom/reflection)。
+3. 代码通过使用反射调用一个函数时且该函数引发异常。 请参阅[反射](/dotnet/framework/reflection-and-codedom/reflection)。
 
-在 2 和 3 的情况，异常有时由捕获中的托管代码`mscorlib`而不是公共语言运行时。 此选项不影响在 `mscorlib` 捕获到异常时中断。
+在 2 和 3 的情况下，异常有时由 `mscorlib` 中的托管代码而非由公共语言运行时捕获。 此选项不影响针对 `mscorlib` 捕获的异常执行中断。
 
 **启用地址级调试**：  
 启用在地址级上进行调试的高级功能（“反汇编”窗口、“寄存器”窗口和地址断点）。
@@ -58,10 +58,10 @@ ms.locfileid: "53829468"
     会自动显示**反汇编**窗口时调试的代码的源是为其不可用。
 
 **启用断点筛选器**：  
-允许你在断点上设置筛选器，使其仅影响特定的进程、线程或计算机。
+可在断点上设置筛选器，使其仅影响特定进程、线程或计算机。
 
 **使用新的异常帮助器**：  
-使替换异常助手异常帮助器 (Visual Studio 2017)。
+启用异常帮助器 (Visual Studio 2017) 来替换异常助手。
 
 > [!NOTE]
 > 对于托管代码，此选项之前已调用**启用异常助手**。
@@ -124,13 +124,13 @@ ms.locfileid: "53829468"
 在附加调试器的情况下，加载模块并编译 JIT 后，禁用托管代码的 JIT 优化。 禁用优化可能更易于调试某些问题，尽管这会降低性能。 如果正在使用“仅我的代码”，则取消 JIT 优化会导致非用户代码显示为用户代码（“我的代码”）。 有关详细信息，请参阅[JIT 优化和调试](../debugger/jit-optimization-and-debugging.md)。
 
 **启用适用于 ASP.NET 的 JavaScript 调试（Chrome、Edge 和 IE）**：  
-启用脚本调试程序对 ASP.NET 应用程序。 在 Chrome 中的第一次使用，可能需要登录到浏览器来启用已安装的 Chrome 扩展。 禁用此选项可还原为旧行为。
+为 ASP.NET 应用启用脚本调试。 第一次在 Chrome 中使用时，可能需要登录到浏览器来启用已安装的 Chrome 扩展。 禁用此选项可还原为旧行为。
 
 **启用适用于 UWP JavaScript 应用的 Edge 开发人员工具(实验版)**：  
-启用适用于 UWP JavaScript 应用在 Edge 中开发人员工具。
+在 Edge 中启用适用于 UWP JavaScript 应用的开发人员工具。
 
 **对 ASP.NET 启用旧版 Chrome JavaScript 调试器**：  
-启用旧版 Chrome JavaScript 脚本调试器对 ASP.NET 应用程序。 在 Chrome 中的第一次使用，可能需要登录到浏览器来启用已安装的 Chrome 扩展。
+启用旧版 Chrome JavaScript 脚本调试器对 ASP.NET 应用程序。 第一次在 Chrome 中使用时，可能需要登录到浏览器来启用已安装的 Chrome 扩展。
 
 **在以管理员身份运行 Visual Studio 时使用试验性方法启动 Chrome JavaScript 调试**：  
 告知 Visual Studio 尝试在 JavaScript 调试期间启动 Chrome 的新方法。
@@ -149,15 +149,15 @@ ms.locfileid: "53829468"
 **使用托管兼容模式**：  
 将默认调试引擎替换为旧版本，以支持以下方案：
 
-- 使用.NET Framework 语言不C#，Visual Basic 或F#，它提供其自己的表达式计算器 (包括 C + + CLI)。
+- 使用 C#、Visual Basic 或 F# 以外的 .NET Framework 语言，该语言提供自己的表达式计算器（包括 C + + CLI）。
 
-- 你想要在混合的模式调试过程中 c + + 项目启用编辑并继续。
+- 想要在混合模式调试过程中为 C++ 项目启用“编辑并继续”。
 
 > [!NOTE]
 > 选择托管兼容模式会禁用仅在默认调试引擎中实现某些功能。 在 Visual Studio 2012 中取代旧调试引擎。
 
 **使用旧版 C# 和 VB 表达式计算器**：  
-调试器将使用 Visual Studio 2013C#或 Visual Basic 表达式计算器而不是基于 Visual Studio 2015 Roslyn 的表达式计算器。
+调试器将使用 Visual Studio 2013 C# 或 Visual Basic 表达式计算器而不是 Visual Studio 2015 基于 Roslyn 的表达式计算器。
 
 **当使用自定义调试器可视化工具时对潜在的不安全进程(仅限托管)发出警告**：  
 当使用在调试对象进程中运行代码的自定义调试器可视化工具时，Visual Studio 会发出警告，因为它可能在运行不安全代码。
@@ -172,10 +172,10 @@ ms.locfileid: "53829468"
     选定了其上下文的 XAML 元素在“实时可视化树”窗口中也会被选中。
 
 - **在应用程序中显示运行时工具**：  
-    演示**实时可视化树**在正在调试的 XAML 应用程序的主窗口工具栏中的命令。 Visual Studio 2015 Update 2 中引入了此选项。
+    在正在调试的 XAML 应用程序的主窗口工具栏中，显示**实时可视化树**命令。 Visual Studio 2015 Update 2 中引入了此选项。
 
 - **启用“XAML 编辑并继续”**：  
-    可以使用编辑并继续使用 XAML 代码的功能。
+    允许将“编辑并继续”功能与 XAML 代码结合使用。
 
 **调试时启用诊断工具**：  
 在进行调试时，将显示“诊断工具”窗口。
@@ -187,7 +187,7 @@ ms.locfileid: "53829468"
 调试时启用编辑并继续功能。
 
 - **启用本机“编辑并继续”**：  
-    在调试本机 C++ 代码时，你可以使用“编辑并继续”功能。 有关详细信息，请参阅[编辑并继续 （Visual c + +）](../debugger/edit-and-continue-visual-cpp.md)。
+    在调试本机 C++ 代码时，可以使用“编辑并继续”功能。 有关详细信息，请参阅[编辑并继续 (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)。
 
 - **继续应用更改（仅限本机）**：  
     在从中断状态继续该过程时，Visual Studio 会自动编译并应用你所做的任何未完成的代码更改。 如果未选中，可以选择使用“调试”菜单下的“应用代码更改”项来应用更改。

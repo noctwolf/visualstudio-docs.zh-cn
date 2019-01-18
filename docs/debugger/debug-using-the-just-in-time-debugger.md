@@ -44,9 +44,9 @@ ms.locfileid: "53831545"
    
 1. 选择“确定”。
 
-如果启用了实时中调试器，但它未打开时应用程序崩溃或错误，请参阅[进行故障排除实时调试](#jit_errors)。
+如果启用了实时调试器，但它并未在应用程序崩溃或出错时打开，请参阅[实时调试疑难解答](#jit_errors)。
 
-## <a name="disable-just-in-time-debugging-from-the-windows-registry"></a>禁用在实时调试从 Windows 注册表
+## <a name="disable-just-in-time-debugging-from-the-windows-registry"></a>从 Windows 注册表禁用实时调试
 
 即便在你的计算机中不再安装有 Visual Studio，仍可启用实时调试。 如果不能再安装 Visual Studio，则可以禁用中实时调试通过编辑 Windows 注册表。
 
