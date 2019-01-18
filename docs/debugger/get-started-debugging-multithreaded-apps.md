@@ -26,37 +26,37 @@ ms.lasthandoff: 01/11/2019
 ms.locfileid: "54227975"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序 (C#，Visual Basic、 c + +)
-Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线程应用程序。 本教程演示如何使用线程标记**并行堆栈**窗口中，**并行监视**窗口中，条件断点，并筛选器断点。 完成本教程将使您熟悉用于调试多线程应用程序的 Visual Studio 功能。
+Visual Studio 提供多种工具和用户界面元素，用于调试多线程应用程序。 本教程演示如何使用线程标记、“并行堆栈”窗口、“并行监视”窗口、条件断点、筛选器断点。 完成本教程只需数分钟，然后你就会熟悉用于调试多线程应用程序的功能。
 
 | | |
 |---------|---------|
 | ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | [观看视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171)上显示了类似的步骤的多线程调试。 |
 
-这两个主题提供有关使用其他多线程调试工具的其他信息：
+下面两个主题额外介绍了如何使用其他多线程调试工具：
 
-- 若要使用**调试位置**工具栏和**线程**窗口中，请参阅[演练：调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
+- 若要使用“调试位置”工具栏和“线程”窗口，请参阅[演练：调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
 
-- 有关使用的示例<xref:System.Threading.Tasks.Task>（托管代码） 和并发运行时 （c + +），请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md) 有关适用于最多线程应用程序类型的常规调试提示，读取该主题和此。
+- 如需使用 <xref:System.Threading.Tasks.Task>（托管代码）和并发运行时 (C++) 的示例，请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)。 有关适用于大多数多线程应用程序类型的常规调试技巧，请阅读该主题和本主题。
   
-首先需要一个多线程应用程序项目。 下面是一个示例。  
+首先需要一个多线程应用程序项目。 示例如下。  
   
-## <a name="create-a-multithreaded-app-project"></a>创建一个多线程应用程序项目  
+## <a name="create-a-multithreaded-app-project"></a>创建一个多线程应用项目  
   
-1.  在“文件”菜单上，选择“新建” > “项目”。  
+1.  在“文件”菜单上，选择“新建” > “项目”。   
   
-     此时将出现 “新建项目” 对话框。  
+     此时将出现“新建项目”对话框。  
   
-2.  选择语言**Visual C#** ， **Visual c + +**，或**Visual Basic**。  
+2.  选择语言：**Visual C#**、**Visual C++** 或 **Visual Basic**。  
   
-3.  下**Windows 桌面**，选择**控制台应用**。  
+3.  在“Windows 桌面”下，选择“控制台应用”。   
   
-4.  在中**名称**字段中，输入 MyThreadWalkthroughApp。  
+4.  在“名称”字段中，输入 MyThreadWalkthroughApp。   
   
 5.  选择“确定”。  
   
-     新的控制台项目随即显示。 创建项目后，会出现一个源代码文件。 根据您选择的语言，源文件可能会调用*Program.cs*， *MyThreadWalkthroughApp.cpp*，或*Module1.vb*。  
+     新的控制台项目随即显示。 创建该项目后，将显示源文件。 根据所选语言，源文件名称可能是 Program.cs、MyThreadWalkthroughApp.cpp 或 Module1.vb。  
   
-6.  删除出现在源代码文件中的代码并将它替换下面列出的相应示例代码。
+6.  删除出现在源文件中的代码，将其替换为下面列出的相应示例代码。
 
     ```csharp
     using System;
@@ -193,7 +193,7 @@ Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线
     End Class
     ```
   
-7.  在“文件”菜单上，选择“全部保存”。  
+7.  在“文件”菜单上，单击“全部保存”。  
   
 ## <a name="debug-the-multithreaded-app"></a>调试多线程应用程序  
   
@@ -218,19 +218,19 @@ Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线
   
     滚动条槽中的红色圆圈指示在此位置设置断点。 
   
-2. 上**调试**菜单中，选择**开始调试**(**F5**)。  
+2. 在“调试”菜单上，单击“开始调试(F5)”。   
   
-    Visual Studio 生成该解决方案、 应用程序开始运行附带，调试器，然后应用程序停止在断点处。  
+    Visual Studio 将生成该解决方案，应用在附加了调试器的情况下开始运行，然后在断点处停止。  
   
 3. 在源代码编辑器中，找到包含该断点的行。
   
-### <a name="ShowThreadsInSource"></a>发现线程标记  
+### <a name="ShowThreadsInSource"></a>发现线程标记   
 
-1.  在调试工具栏中，选择**源中显示线程**按钮![在源中显示线程](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")。
+1.  在调试工具栏中，单击“在源中显示线程”按钮![在源中显示线程](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")。
 
 2. 按一下 **F11** 使调试器前进一个代码行。
   
-3.  查看窗口左侧的滚动条槽。 在此行中，你会看到*线程标记*图标![线程标记](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，类似于两个扭曲的线程。 线程标记指示线程在此位置停止。
+3.  查看窗口左侧的滚动条槽。 在此行中，会看到线程标记 图标![线程标记](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，类似于一条双绞线。 线程标记指示线程在此位置停止。
 
     线程标记可能会部分隐藏的断点。 
   
@@ -343,7 +343,7 @@ Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线
     > 当您推进调试器进度时，将运行所有线程。 但是，调试器不会中断到其他线程上的代码中，除非其中一个其他线程遇到断点。 
   
 ## <a name="see-also"></a>请参阅  
-[调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
+[调试多线程应用](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
 [如何：在调试时切换到另一个线程](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
 [如何：使用并行堆栈窗口](../debugger/using-the-parallel-stacks-window.md)  
 [如何：使用“并行监视”窗口](../debugger/how-to-use-the-parallel-watch-window.md)  
