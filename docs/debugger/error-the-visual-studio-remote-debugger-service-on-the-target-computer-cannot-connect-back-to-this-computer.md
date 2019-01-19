@@ -24,7 +24,7 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53963280"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>错误：目标计算机上的 Visual Studio 远程调试器服务无法重新连接到此计算机
-此错误表示“Visual Studio 远程调试器”服务正在运行，但是运行它的用户帐户在连接到正在从中进行调试的计算机时无法进行身份验证。  
+此错误表示“Visual Studio 远程调试器”服务正在运行，但是运行它的用户帐户在尝试连接正在从中进行调试的计算机时无法进行身份验证。  
   
  下表显示可访问该计算机的帐户：  
   

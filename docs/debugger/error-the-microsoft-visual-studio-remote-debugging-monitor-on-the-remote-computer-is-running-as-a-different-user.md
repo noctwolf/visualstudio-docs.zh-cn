@@ -34,7 +34,7 @@ ms.locfileid: "53911294"
  远程计算机上的“Microsoft Visual Studio 远程调试监视器”正在以其他用户身份运行。  
   
 ## <a name="cause"></a>原因  
- 当您正在“无身份验证”模式下进行调试，而启动 msvsmon 的用户不是运行 Visual Studio 的用户时，会出现此消息。  
+ 如果正在“无身份验证”模式下进行调试，而启动 msvsmon 的用户不是运行 Visual Studio 的用户，则会收到此消息。  
   
 ## <a name="solution"></a>解决方案  
  最安全也是最好的解决方案是，以与运行 Visual Studio 的相同用户帐户运行远程调试监视器 (msvsmon.exe)。 如果无法做到这一点，则可以在远程调试监视器的“选项”对话框中选中“允许任何用户进行调试”选项，使用其他用户帐户运行远程调试监视器。  

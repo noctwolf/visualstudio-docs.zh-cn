@@ -20,12 +20,12 @@ ms.locfileid: "53831545"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用实时调试器进行调试
 
-在实时调试可以 Visual Studio 会自动启动时运行外部 Visual Studio 错误或崩溃的应用。 使用中的实时调试，可以测试在 Visual Studio 外部的应用程序，并打开 Visual Studio 开始调试时出现问题。
+当一个在 Visual Studio 之外运行的应用发生错误或崩溃时，实时调试可自动启动 Visual Studio。 使用实时调试，可以测试 Visual Studio 外部的应用，并可在出现问题时打开 Visual Studio 开始调试。
 
-在实时调试适用于 Windows 桌面应用。 它并不适用于通用 Windows 应用，或对于本机应用程序，例如可视化工具中托管的托管代码。
+实时调试适用于 Windows 桌面应用。 它不适用于通用 Windows 应用，也不适用于托管在本机应用程序（如可视化器）中的托管代码。
 
 > [!TIP]
-> 如果只是想要停止实时调试器对话框中，使其不显示，但不安装 Visual Studio，请参阅[禁用实时调试器](../debugger/just-in-time-debugging-in-visual-studio.md)。 如果一次安装 Visual Studio，您可能需要[禁用在实时调试从 Windows 注册表](#disable-just-in-time-debugging-from-the-windows-registry)。 
+> 如果只想让实时调试器对话框停止显示，而不安装 Visual Studio，请参阅[禁用实时调试器](../debugger/just-in-time-debugging-in-visual-studio.md)。 如果已安装 Visual Studio，可能需要[从 Windows 注册表禁用实时调试](#disable-just-in-time-debugging-from-the-windows-registry)。 
 
 ##  <a name="BKMK_Enabling"></a> 启用或禁用在实时 Visual Studio 中调试
 
@@ -48,7 +48,7 @@ ms.locfileid: "53831545"
 
 ## <a name="disable-just-in-time-debugging-from-the-windows-registry"></a>从 Windows 注册表禁用实时调试
 
-即便在你的计算机中不再安装有 Visual Studio，仍可启用实时调试。 如果不能再安装 Visual Studio，则可以禁用中实时调试通过编辑 Windows 注册表。
+即便计算机中不再安装有 Visual Studio，仍可启用实时调试。 如果不再安装 Visual Studio，则可以通过编辑 Windows 注册表来禁用实时调试。
 
 **通过编辑注册表禁用实时调试：**
 
@@ -72,13 +72,13 @@ ms.locfileid: "53831545"
 
 5.  关闭**注册表编辑器**窗口。
 
-## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>启用在实时调试的 Windows 窗体
+## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>启用 Windows 窗体的实时调试
 
-默认情况下，Windows 窗体应用程序有一个顶级异常处理程序，可让应用能够恢复时保持运行。 如果 Windows 窗体应用程序将引发未处理的异常，则会显示以下对话框：
+默认情况下，Windows 窗体应用具有一个顶级异常处理程序，可让应用保持运行（如果能够恢复）。 如果 Windows 窗体应用引发未处理的异常，则会显示以下对话框：
 
 ![Windows 窗体未经处理的异常](../debugger/media/windowsformsunhandledexception.png "Windows 窗体未经处理的异常")
 
-若要启用实时调试而不标准 Windows 窗体错误处理，请添加这些设置：
+若要启用实时调试而不是标准 Windows 窗体错误处理，请添加以下设置：
 
 -  在中`system.windows.forms`一部分*machine.config*或*\<应用名称 >。 exe.config*文件中，将`jitDebugging`值设为`true`:
     
@@ -99,11 +99,11 @@ ms.locfileid: "53831545"
 ## <a name="BKMK_Using_JIT"></a>使用在实时调试
  此示例将指导你完成在实时调试时，应用程序引发错误。
 
- - 您必须具有 Visual Studio 安装，请遵循以下步骤。 如果未安装 Visual Studio，则可以下载免费[Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)。
+ - 必须安装 Visual Studio，才能按照以下步骤操作。 如果未安装 Visual Studio，则可以免费下载 [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)。
    
  - 请确保在实时调试[启用](#BKMK_Enabling)中**工具** > **选项** > **调试** > **中实时**。
 
-对于此示例中，你将使C#控制台应用，在 Visual Studio 中，将引发[NullReferenceException](/dotnet/api/system.nullreferenceexception)。
+本示例会在 Visual Studio 中创建 C# 控制台应用，该应用可引发 [NullReferenceException](/dotnet/api/system.nullreferenceexception)。
 
 1. 在 Visual Studio 中，创建C#控制台应用程序 (**文件** > **新建** > **项目** > **Visual C#**   > **控制台应用程序**) 名为*ThrowsNullException*。 在 Visual Studio 中创建项目的详细信息，请参阅[演练：创建简单的应用程序](/visualstudio/get-started/csharp/tutorial-wpf)
    
@@ -138,20 +138,20 @@ ms.locfileid: "53831545"
    
 1. 选择“确定”。
    
-   ThrowsNullException 项目可打开 Visual Studio 的新实例中引发异常的代码行处停止执行：
+   ThrowsNullException 项目会在 Visual Studio 的新实例中打开，并在引发异常的代码行处停止执行：
    
    ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
 
-你可以开始调试在这里。 如果调试真正的应用程序，您需要找出原因代码抛出异常。
+可以从此时开始调试。 如果调试的是真实应用，则需要找出代码引发异常的原因。
 
 > [!CAUTION]
 > 如果您的应用程序包含不受信任的代码，则会出现安全警告对话框中，使您决定是否要继续进行调试。 继续调试之前，确定是否信任相应代码。 代码是你自己编写的吗？ 如果该应用程序正在远程计算机上运行，你是否认识进程的名称？ 如果在本地运行应用程序，请考虑在您的计算机上运行的恶意代码的可能性。 如果您决定是否值得信任的代码，选择**确定**。 否则，选择“取消”。
 
 ## <a name="jit_errors"></a> 排查在实时调试 
 
-如果在实时调试不时启动应用程序崩溃，即使它在 Visual Studio 中启用：
+如果在应用崩溃时实时调试不启动，即使 Visual Studio 中已启用实时调试也是如此，则：
 
-- Windows 错误报告无法接管的错误处理您的计算机上。 
+- Windows 错误报告可能会接管计算机上的错误处理。 
   
   若要解决此问题，请使用注册表编辑器中添加**DWORD 值**的**禁用**，与**值数据**的**1**，对以下注册表项：
   
@@ -163,7 +163,7 @@ ms.locfileid: "53831545"
   
   有关详细信息，请参阅[。WER 设置](https://docs.microsoft.com/windows/desktop/wer/wer-settings)。
   
-- 已知的 Windows 问题可能导致实时中调试程序失败。 
+- 已知的 Windows 问题可能导致实时调试器启动失败。 
   
   解决方法是添加**DWORD 值**的**自动**，与**值数据**的**1**，对以下注册表项：
   
@@ -182,13 +182,13 @@ ms.locfileid: "53831545"
 
 - **未能启动调试器，因为没有用户登录。**
 
-    没有用户登录到控制台，因此没有用户会话来显示实时中调试对话框。
+    没有用户登录到控制台，因此没有用户会话来显示实时调试对话框。
 
     要解决此问题，请登录到计算机。
 
 - **类没有注册。**
 
-    调试器尝试创建未注册，可能由于安装问题的 COM 类。
+    调试器试图创建的 COM 类未进行注册，可能是由安装问题导致。
 
     若要解决此问题，请使用 Visual Studio 安装程序重新安装或修复 Visual Studio 安装。
 

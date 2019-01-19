@@ -58,7 +58,7 @@ ms.locfileid: "53879077"
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。  
+ 介绍 Spy + + 工具，并说明如何使用它。  
   
  [“窗口搜索”对话框](../debugger/window-search-dialog-box.md)  
  用于查找特定窗口 Windows 视图中的节点。  

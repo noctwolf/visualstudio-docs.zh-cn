@@ -27,7 +27,7 @@ ms.locfileid: "53893560"
  如果 XAML 或代码隐藏文件不符合语言的格式设置规则，则将出现语法错误。 错误的说明有助于理解如何更正该错误。 该列表还指定了出现错误的文件名称和行号。 XAML 错误在“结果”面板中的“标记”选项卡上列出。  
 
 > [!TIP]
->  XAML 是一个基于 XML 的标记语言并遵循 XML 语法规则。  
+>  XAML 是一种基于 XML 的标记语言，并遵循 XML 语法规则。  
 
  XAML 语法错误的某些常见原因如下：  
 
@@ -35,7 +35,7 @@ ms.locfileid: "53893560"
 
 - 特性或文本字符串前后丢失问号。  
 
-- XAML 元素丢失结束标记。  
+- XAML 元素缺少结束标记。  
 
 - XAML 元素出现在不允许使用的位置。  
 
@@ -111,7 +111,7 @@ ms.locfileid: "53893560"
 
 5. 双击"属性 Mame 中不存在<http://schemas.microsoft.com/winfx/2006/xaml>命名空间。" “Mame”中的“M”应为“N”。 将“M”替换为“N”。 现在可以分析 XAML，应用程序将显示在设计图面上。  
 
-    ![调试在 Blend for Visual Studio 中的 XAML](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")  
+    ![在 Blend for Visual Studio 中调试 XAML](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")  
 
     按 Ctrl+Shift+B 生成项目，并确认没有剩余错误。  
 

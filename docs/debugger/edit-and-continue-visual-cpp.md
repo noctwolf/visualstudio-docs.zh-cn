@@ -37,7 +37,7 @@ ms.locfileid: "53922989"
  如果要对代码进行编辑而又不希望在当前调试会话过程中应用这些编辑，则可以禁用自动调用“编辑并继续”。 也可以重新启用“编辑并继续”的自动操作。
 
 > [!IMPORTANT]
-> 有关所需的生成设置和功能兼容性的其他信息，请参阅 [c + + 编辑并继续使用 Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/。
+> 有关所需生成设置和功能兼容性的其他信息，请参阅 [Visual Studio 2015 Update 3 中的 C++“编辑并继续”] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/。
   
 1. 如果您在调试会话，停止调试 (**Shift + F5**)。
 
@@ -67,10 +67,10 @@ ms.locfileid: "53922989"
   
   该菜单项仅在应用代码更改时才可见。  
   
-  如果选择了改选项，就不会进行任何代码更改。  
+  如果选择了该选项，就不会提交任何代码更改。  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> 如何重置执行点  
- 在“编辑并继续”应用更改时，一些代码更改会使执行点移动到新的位置。 “编辑并继续”尽可能正确地放置执行点，但是并非所有情况下的结果都正确。  
+ 在“编辑并继续”应用了更改后，一些代码更改会使执行点移动到新的位置。 “编辑并继续”会尽可能正确地放置执行点，但是并非所有情况下的结果都正确。  
   
  在 Visual C++ 中，当执行点发生更改时，会显示一个对话框来告知您此情况。 在继续调试之前，应验证位置是否正确。 如果位置不正确，则使用 **“设置下一语句”** 命令。 有关详细信息，请参阅 [设置下一个要执行的语句](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute)。  
   

@@ -1,5 +1,5 @@
 ---
-title: 检查使用历史调试对应用程序 |Microsoft Docs
+title: 使用历史调试检查应用程序 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
@@ -17,11 +17,11 @@ ms.locfileid: "54227689"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>检查 IntelliTrace 历史调试在 Visual Studio 中使用对应用程序 (C#，Visual Basic、 c + +)
 
-可以使用[历史调试](../debugger/historical-debugging.md)向后移动和向前浏览应用程序的执行，以查看其状态。  
+可以使用[历史调试](../debugger/historical-debugging.md)向后和向前移动来浏览应用程序的执行情况，以查看其执行状态。  
   
 可以在 Visual Studio Enterprise 版（但不可在 Professional 或 Community 版）中使用 IntelliTrace。  
   
-## <a name="navigate-your-code-with-historical-debugging"></a>导航使用历史调试代码
+## <a name="navigate-your-code-with-historical-debugging"></a>使用历史调试浏览代码
 
  让我们从有 Bug 的简单程序开始。 在 C# 控制台应用程序中，添加以下代码：  
   
