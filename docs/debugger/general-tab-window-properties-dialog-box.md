@@ -1,5 +1,5 @@
 ---
-title: 常规选项卡、 窗口属性对话框 |Microsoft Docs
+title: 常规选项卡，窗口属性对话框 |Microsoft 文档
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -18,9 +18,9 @@ ms.lasthandoff: 01/02/2019
 ms.locfileid: "53874610"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>“窗口属性”对话框 ->“常规”选项卡
-使用**常规**选项卡以显示有关所选的窗口的信息。 若要显示[窗口属性对话框](../debugger/window-properties-dialog-box.md)，将焦点移至[Windows 视图](../debugger/windows-view.md)窗口。 在树中，选择窗口的任何节点，然后选择**属性**从**视图**菜单。  
+使用“常规”选项卡来显示所选窗口的信息。 若要显示[窗口属性对话框](../debugger/window-properties-dialog-box.md)，将焦点移动到 [Windows 视图](../debugger/windows-view.md)窗口。 在树中选择任意窗口节点，然后从“视图”菜单选择“属性”。   
   
- 以下设置位于**常规**选项卡：  
+ “常规”选项卡中有以下可用设置：   
   
 |条目|说明|  
 |-----------|-----------------|  
