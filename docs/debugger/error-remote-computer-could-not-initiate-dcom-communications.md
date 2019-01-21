@@ -1,5 +1,5 @@
 ---
-title: 错误：远程计算机未能启动 DCOM 通信 |Microsoft Docs
+title: 错误：远程计算机未能启动 DCOM 通信 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:

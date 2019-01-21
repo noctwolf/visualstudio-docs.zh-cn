@@ -1,5 +1,5 @@
 ---
-title: 错误：SQL 可以&#39;t 不到 Ssdebugps |Microsoft Docs
+title: 错误：SQL 找不到 Ssdebugps | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -22,7 +22,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 01/09/2019
 ms.locfileid: "54153662"
 ---
-# <a name="error-sql-can39t-find-ssdebugps"></a>错误：SQL 可以&#39;t 不到 Ssdebugps
+# <a name="error-sql-can39t-find-ssdebugps"></a>错误：SQL 找不到 Ssdebugps
 
 SSDEBUGPS.dll 为 SQL Server Debugging Host 组件。
 
