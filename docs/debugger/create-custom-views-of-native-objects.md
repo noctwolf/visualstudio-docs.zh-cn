@@ -657,13 +657,13 @@ Natvis 的可视化功能使用 C++ 表达式来指定要显示的数据项。 �
 </AutoVisualizer>  
 ```  
 
-- 一个`ServiceId`  -  `Id`特性对标识`UIVisualizer`。 `ServiceId`是包公开的服务，可视化工具的 GUID。 `Id` 如果服务提供多个，是可视化工具，用于区分开来的唯一标识符。 在上述示例中，相同的可视化工具服务提供两个可视化工具。  
+- `ServiceId` - `Id` 属性对用来标识 `UIVisualizer`。 `ServiceId` 是可视化工具包公开的服务的 GUID。 如果服务提供了多个可视化工具，`Id` 是用来区分它们的唯一标识符。 在上面的示例中，同一个可视化工具服务提供了两个可视化工具。  
   
 - `MenuName` 属性用于定义可视化工具名称，该名称会显示在调试器的放大镜图标旁边的下拉列表中。 例如:  
 
   ![UIVisualizer 菜单快捷方式菜单](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer 菜单快捷方式菜单")  
 
-每种类型中定义 *.natvis*文件都必须显式列出可以将其显示任何 UI 可视化工具。 调试器会匹配类型条目中的可视化工具引用的已注册的可视化工具。 例如，以下类型条目`std::vector`引用`UIVisualizer`在前面的示例。  
+*.natvis* 文件中定义的每种类型都必须明确列出能够显示它的所有 UI 可视化工具。 调试器会将类型条目中的可视化工具引用与注册的可视化工具相匹配。 例如，下面的 `std::vector` 类型条目引用的是前一个示例中的 `UIVisualizer`。  
 
 ```xml
 <Type Name="std::vector&lt;int,*&gt;">  

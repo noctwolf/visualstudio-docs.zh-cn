@@ -23,7 +23,7 @@ ms.locfileid: "54270055"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 调试器在工作效率方面的提示和技巧
 
-阅读本主题以了解为 Visual Studio 调试器的工作效率的提示和技巧。 有关调试器的基本功能的信息，请参阅[先来看一下调试器](../debugger/debugger-feature-tour.md)。 在本主题中，我们介绍功能教程中不包括某些区域。
+通过阅读本主题，了解 Visual Studio 调试器在工作效率方面的一些提示和技巧。 有关调试器的基本功能的信息，请参阅[先来看一下调试器](../debugger/debugger-feature-tour.md)。 在本主题中，我们将了解功能介绍中没有涉及的一些领域。
 
 ## <a name="pin-data-tips"></a>固定数据提示
 
