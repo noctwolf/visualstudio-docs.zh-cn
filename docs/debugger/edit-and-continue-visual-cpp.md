@@ -72,7 +72,7 @@ ms.locfileid: "53922989"
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> 如何重置执行点  
  在“编辑并继续”应用了更改后，一些代码更改会使执行点移动到新的位置。 “编辑并继续”会尽可能正确地放置执行点，但是并非所有情况下的结果都正确。  
   
- 在 Visual C++ 中，当执行点发生更改时，会显示一个对话框来告知您此情况。 在继续调试之前，应验证位置是否正确。 如果位置不正确，则使用 **“设置下一语句”** 命令。 有关详细信息，请参阅 [设置下一个要执行的语句](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute)。  
+ 在 Visual C++ 中，当执行点发生更改时，会显示一个对话框来提示此情况。 在继续调试之前，应验证位置是否正确。 如果位置不正确，则使用**设置下一语句**命令。 有关详细信息，请参阅[设置下一个要执行的语句](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute)。  
   
 ##  <a name="BKMK_How_to_work_with_stale_code"></a> 如何使用陈旧代码  
  在某些情况下，“编辑并继续”无法将代码更改立即应用于可执行文件，但如果您继续调试，则可能会在稍后应用代码更改。 当编辑某个调用当前函数的函数，或将多于 64 个字节的新变量添加到调用堆栈上的函数时，就会发生这种情况。  
