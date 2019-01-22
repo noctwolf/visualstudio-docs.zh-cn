@@ -25,24 +25,24 @@ ms.locfileid: "53068349"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>检查自动和局部变量窗口中的变量
 
-在调试时，**自动** 和 **局部变量** 窗口会显示变量值。 在调试会话期间，这两个窗口才可用。 **自动** 窗口显示在当前断点周围使用的变量。 **局部变量** 窗口显示在当前代码作用域内定义的变量，通常是当前函数或方法定义的变量。 如果现在是你首次尝试调试代码，则在阅读本文之前，可能需要阅读[通过编写更好的 C# 代码修复 bug](../debugger/write-better-code-with-visual-studio.md)和[适用于初学者的调试](../debugger/debugging-absolute-beginners.md)。
+在调试时，“自动变量”和“局部变量”窗口会显示变量值。仅在调试会话期间，这两个窗口才可用。“自动变量”窗口显示当前断点周围使用的变量。“局部变量”窗口显示在局部范围内定义的变量，通常是当前函数或方法。如果是首次尝试调试代码，那么在阅读本文前，可能需要阅读[面向初学者的调试](../debugger/debugging-absolute-beginners.md)和[通过编写更好的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)****************。
 
- **自动** 窗口可用于 C#、Visual Basic、C++ 和 Python 代码，但不可用于 JavaScript 或 F#。
+“自动变量”窗口可用于 C#、Visual Basic、C++ 和 Python 代码，但不可用于 JavaScript 或 F# **** 。
 
-若要打开 **自动** 窗口，请在调试时选择 **调试** > **窗口** > **自动** ，或按 **Ctrl** + **Alt** + **V**  >  **A** 。  
+若要打开“自动变量”窗口，请在调试时依次选择“调试”>“窗口”>“自动变量”，或按 Ctrl+Alt+V > A******调试**************************。 
 
-若要打开 **局部变量** 窗口，请在调试时选择 **调试** > **窗口** > **局部变量** ，或按 **Alt** + **4** 。
+若要打开“局部变量”窗口，请在调试时选择“调试”>“窗口”>“局部变量”，或按 Alt+4************************ 。
 
 > [!NOTE]
-> 本主题适用于 Visual Studio Windows版。 对于 Visual Studio Mac 版 ，请参阅[ Visual Studio for Mac 的数据可视化效果](/visualstudio/mac/data-visualizations)。
+> 本主题适用于 Visual Studio Windows 版。对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 的数据可视化效果](/visualstudio/mac/data-visualizations)。
 
 ## <a name="use-the-autos-and-locals-windows"></a>使用自动和局部变量窗口
 
-数组和对象在 **自动** 和 **局部变量** 窗口中显示为树控件。 选择变量名左侧的箭头，以展开所属字段和属性。以下是 **局部变量** 窗口中 <xref:System.IO.FileStream?displayProperty=fullName> 对象示例：
+数组和对象在“自动变量”和“局部变量”窗口中显示为树形控件。选择变量名称左侧的箭头可展开视图，以显示字段和属性。以下是“局部变量”窗口中 <xref:System.IO.FileStream?displayProperty=fullName> 对象的示例************：
 
 ![局部变量 FileStream](../debugger/media/locals-filestream.png "局部变量 FileStream")
 
-**局部变量** 或 **自动** 窗口中的红色值表示在最后一次计算中已更改的值。 此更改可能是来自上一个调试会话，也可能是你已在窗口中更改了值。
+“局部变量”或“自动变量”窗口中的红色值表示自上次评估后值已更改。此更改可能是在上一个调试会话中进行的，也可能是在窗口中更改了值********。
 
 调试器窗口中的默认数字格式为十进制。 若要将其更改为十六进制，请在“局部变量”或“自动”窗口中右键单击，然后选择“十六进制显示”。 此更改会影响所有调试器窗口。
 
