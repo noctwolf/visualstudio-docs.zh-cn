@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f2955a9efae219cf992936a8b64cac672a0cd680
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
+ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869656"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54403962"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令行参数安装 Visual Studio 2017
 
@@ -77,7 +77,8 @@ ms.locfileid: "53869656"
 | `--help, --?, -h, -?` | 显示此页的脱机版本。 |
 | `--config <path>` | 15.9 版中的可选和新增功能：在安装或修改操作期间，这将根据以前保存的安装配置文件确定要添加的工作负载和组件。 此操作是附加的，如果文件中不存在任何工作负载或组件，也不会删除任何工作负载或组件。 此外，不会添加不适用于该产品的项目。 在导出操作期间，这将确定保存安装配置文件的位置。 |
 
-> 注意:指定多个工作负载和组件时，必须对每项重复运行 `--add` 或 `--remove` 命令行开关。
+> [!IMPORTANT]
+> 指定多个工作负载和组件时，必须对每项重复运行 `--add` 或 `--remove` 命令行开关。
 
 | **布局选项** | **说明** |
 | ----------------------- | --------------- |

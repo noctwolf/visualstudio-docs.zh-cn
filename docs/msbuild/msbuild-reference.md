@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f365410421f490aeac1534eebc01630849ef1195
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8966512e2d2ad58edaff41ac21301dfce437152c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872260"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347692"
 ---
 # <a name="msbuild-reference"></a>MSBuild 参考
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的生成系统。 可通过以下链接查看包含 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 参考信息的主题。  
@@ -71,9 +71,6 @@ ms.locfileid: "53872260"
 ## <a name="see-also"></a>请参阅  
  [MSBuild 概述](../msbuild/msbuild.md)     
  介绍了 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，并收录了介绍如何使用它来生成项目的主题链接。  
-  
- [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
- 包含 Conversion 命名空间引用。  
   
  [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  包含 Evaluation 命名空间引用。  

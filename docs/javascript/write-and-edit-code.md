@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc5666ca037276d5b148151e2b41756b105dc2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41e8628e6d747d523dae12448d81f39ad5de964b
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967422"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398281"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 
@@ -26,9 +26,6 @@ ms.locfileid: "53967422"
 > 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。 根据所展开的应用开发的类型，可能需要使用 Visual Studio 安装 Node.js 开发工作负荷。
 
 本文假定你已熟悉 JavaScript 开发。 如果不熟悉，建议先浏览教程（如[创建 Node.js 和 Express 应用](../javascript/tutorial-nodejs.md)）。
-
-> [!TIP]
-> 若要继续执行本文中的操作，请确保为 Visual Studio 选择了 JavaScript 设置。 有关为集成开发环境 (IDE) 选择设置的信息，请参阅[环境设置](../ide/environment-settings.md)。 导入设置时，请导入 JavaScript 设置。
 
 ## <a name="add-a-new-project-file"></a>添加新的项目文件
 
@@ -96,7 +93,7 @@ JavaScript 注释字符 `//` 添加到了每个所选行的开始处，从而为
 
    ![“速览定义”窗口](../javascript/media/write-code-peek-definition.png)
 
-1. 选择弹出窗口右上方的“x”小框，关闭“速览定义”窗口。
+选择弹出窗口右上方的“x”小框，关闭“速览定义”窗口。
 
 ## <a name="use-code-snippets"></a>使用代码片段
 
