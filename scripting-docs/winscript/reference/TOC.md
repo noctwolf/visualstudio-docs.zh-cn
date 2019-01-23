@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: a4e7ebc12419567fb5a5fe8499fb33cbb0d63d9e
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348680"
----
 # [Windows 脚本接口参考](windows-script-interfaces-reference.md)
 ## [活动脚本接口](active-script-interfaces.md)
 ### [活动脚本常量、枚举和错误代码](active-script-constants-enumerations-and-error-codes.md)
