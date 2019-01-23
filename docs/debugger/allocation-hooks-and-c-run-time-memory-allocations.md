@@ -1,5 +1,5 @@
----
-title: 分配挂钩和 C 运行时内存分配 |Microsoft Docs
+﻿---
+title: 分配挂钩和 C 运行时内存分配 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
