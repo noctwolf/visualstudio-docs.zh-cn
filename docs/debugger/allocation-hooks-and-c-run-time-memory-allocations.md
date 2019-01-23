@@ -1,5 +1,5 @@
 ---
-title: 分配挂钩函数和 C 运行时内存分配 |Microsoft Docs
+title: 分配挂钩和 C 运行时内存分配 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -29,17 +29,17 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 07/03/2018
 ms.locfileid: "37433095"
 ---
-# <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>分配挂钩函数和 C 运行时内存分配
-对分配挂钩函数的一个非常重要限制是，它们必须显式忽略`_CRT_BLOCK`块。  这些块是C运行时库函数，内部进行内存分配的，如果它们调用任何C运行时库函数，就会分配内部内存。 可通过将如下代码，放到分配挂钩函数开始处，来忽略`_CRT_BLOCK`块：  
+# <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>分配挂钩和 C 运行时内存分配
+分配挂钩函数具有一个非常重要的限制，即这些函数必须显式忽略 `_CRT_BLOCK` 块。这些块是 C 运行时库函数内部进行的内存分配（如果它们对分配内部内存的 C 运行时库进行任何调用）。可以通过在分配挂钩函数的开头包含以下代码来忽略 `_CRT_BLOCK` 块：  
   
 ```cpp
 if ( nBlockUse == _CRT_BLOCK )  
     return( TRUE );  
 ```  
   
- 如果您的分配挂钩不忽略`_CRT_BLOCK`块，那么在挂钩函数中调用任何 C 运行时库函数，可以使用程序陷入无限循环。例如，`printf` 执行内部分配。 如果挂钩代码调用`printf`，则产生的内存分配，将导致您的再次调用挂钩函数，于是将再次调用 **printf** ，依此类推，直到堆栈溢出。 如果需要报告 `_CRT_BLOCK` 分配内存操作，回避该限制的一种方法是，使用 Windows API 函数而不是 C 运行时函数来进行格式化和输出。 因为 Windows Api 不使用 C 运行库堆，所以它们不会因捕获您的分配挂钩，而陷入无穷循环。  
+ 如果分配挂钩不忽略 `_CRT_BLOCK` 块，那么在挂钩函数中调用任何 C 运行时库函数，都可以使用程序陷入无限循环。例如，`printf` 执行内部分配。如果挂钩代码调用 `printf`，生成的内存分配将导致再次调用挂钩，从而再次调用 printf ，依此类推，直到堆栈溢出。如果需要报告 `_CRT_BLOCK` 分配内存操作，回避该限制的一种方法是，使用 Windows API 函数而不是 C 运行时函数来进行格式设置和输出。由于 Windows API 不使用 C 运行库堆，因此不会让分配挂钩陷入无穷循环****。  
   
- 如果您检查运行时库源文件，您将看到默认的分配挂钩函数， **CrtDefaultAllocHook** (只是简单的返回 **TRUE** )，位于其自身的单独的源文件DBGHOOK.C。 如果希望在应用程序中的**main**函数之前，运行时代码执行内存分配时，分配挂钩函数挂钩被调用，您可以放置你自己的默认函数，代替[_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook)。  
+ 如果要检查运行时库源文件，则将看到默认的分配挂钩函数 CrtDefaultAllocHook (仅会返回“TRUE” )位于其自身的单独源文件 DBGHOOK.C 中。如果希望调用分配挂钩，即使对于在应用程序中的 main 函数之前执行的运行时代码所做的内存分配，也可以使用自己的其中一个函数来替换默认函数，而不是使用 [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook)************。  
   
 ## <a name="see-also"></a>请参阅  
  [编写调试挂钩函数](../debugger/debug-hook-function-writing.md)   
