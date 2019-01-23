@@ -17,18 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52a2c396bc6a6e5e09d72d8a1f9a1ac7486bb280
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac2597b5b87f75402dcc6553096c0bfcf3d30cf1
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881018"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380089"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
 针对[版本 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017) 而更新
 
 想从 Visual Studio 早期版本升级？ 以下是 Visual Studio 2017 的优势：为任何开发、应用和平台提供无与伦比的效率。 使用 Visual Studio 2017 开发适用于 Android、iOS、Windows、Linux、Web 和云的应用。 快速编码、轻松调试和诊断、时常测试，并且可以放心地进行发布。 还可通过构建自己的扩展，以便扩展和自定义 Visual Studio。 此版本发布之后，可使用版本控制、更具敏捷性且可高效协作！
+
+>[!div class="button"]
+>[下载 Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 以下是我们自上一版本 Visual Studio 2015 以来所做更改的高级扼要重述：
 
@@ -50,11 +53,9 @@ ms.locfileid: "53881018"
 
 ### <a name="a-new-setup-experience"></a>新的安装体验
 
-[下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 或[检查 Visual Studio 系统要求](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
+通过 Visual Studio，可以在需要时更轻松快速地安装所需功能。 而且，还能完全卸载干净。
 
- 通过 Visual Studio，可以在需要时更轻松快速地安装所需功能。 而且，还能完全卸载干净。
-
- 安装 Visual Studio 时，可以注意到最重要的更改是全新的安装体验。 在“工作负荷”选项卡上，你将看到表示常见框架、语言和平台的分组安装选项。 它涵盖 Windows、Linux 和 iOS 上从 .NET 桌面开发到 C++ 应用程序开发的所有内容。
+安装 Visual Studio 时，可以注意到最重要的更改是全新的安装体验。 在“工作负荷”选项卡上，你将看到表示常见框架、语言和平台的分组安装选项。 它涵盖 Windows、Linux 和 iOS 上从 .NET 桌面开发到 C++ 应用程序开发的所有内容。
 
 选择所需的工作负载，并在需要时对其进行更改。
 
@@ -245,7 +246,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>在实时 Azure 应用程序中使用 snappoints 和 logpoints 调试实时 ASP.NET 应用
 
-**15.5 中的新增功能**：当执行感兴趣的代码时，Snapshot Debugger 会为生产中的应用拍摄快照。 要指示调试程序拍摄快照，可在代码中设置 snappoints 和 logpoints。 使用调试程序，可精确查看出错的内容，而不影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
+**15.5 中的新增功能**：当执行感兴趣的代码时，Snapshot Debugger 会为生产中的应用拍摄快照。 若要指示该调试器拍摄快照，可以在代码中设置快照点和记录点。 通过该调试器，可精确查看出错的内容，而不会影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
 
 快照集合适用于在 Azure App Service 中运行的以下 Web 应用：
 

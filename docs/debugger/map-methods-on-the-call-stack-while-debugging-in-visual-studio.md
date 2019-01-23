@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a00ca75135c2c2f29ef04d428e028e31054480
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8729b722465eb01d1e497e99ef13ecbedb66f91e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960834"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417923"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>调试时创建的可调用堆栈 
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>创建进行调试时的调用堆栈的直观映射 (C#，Visual Basic、 c + +、 JavaScript)
 
 创建代码映射，以便在调试时对调用堆栈进行可视化跟踪。 可以在映射中进行标注以跟踪代码执行的操作，以便专注于查找 Bug。
 
@@ -53,7 +53,7 @@ ms.locfileid: "53960834"
 
 ##  <a name="MapStack"></a>映射调用堆栈
 
-1. 在 Visual Studio Enterprise C#，Visual Basic、 c + +、 JavaScript 或 X + + 项目中，通过选择启动调试**调试** > **开始调试**或按**F5**.
+1. 在 Visual Studio Enterprise C#，Visual Basic、 c + + 或 JavaScript 项目中，通过选择启动调试**调试** > **开始调试**或按**F5**.
    
 1. 你的应用进入中断模式或你单步执行函数后，选择**调试** > **代码图**，或按**Ctrl**+**Shift**+**`**.
 

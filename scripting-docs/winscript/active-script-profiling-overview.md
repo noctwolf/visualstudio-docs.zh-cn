@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9413e8b6e6db0c81eb1853c24506d20c8d06f3e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8f207261af82f8f5e64710df5177e891a6a47c1a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571437"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347497"
 ---
 # <a name="active-script-profiling-overview"></a>活动脚本分析概述
 [活动脚本探查器接口](../winscript/reference/active-script-profiler-interfaces.md)启用分析脚本引擎。 活动脚本分析由以下部分组成：  
@@ -44,5 +44,5 @@ ms.locfileid: "24571437"
 ## <a name="profiler"></a>探查器  
  发生各种事件时，探查器会收到来自语言引擎的调用。 探查器必须注册为 COM 对象，并且必须实现 [IActiveScriptProfilerCallback](../winscript/reference/iactivescriptprofilercallback-interface.md) 接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Active Script Profiler 接口](../winscript/reference/active-script-profiler-interfaces.md)

@@ -6,12 +6,13 @@ ms.author: crdun
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: acd8f3bc4f5fefa0a0c8b273856579067fb33c6a
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.custom: video
+ms.openlocfilehash: 17acdd63b5632cf141cc5407ce8e09be3e3a69a0
+ms.sourcegitcommit: a260df15214b3198a28ca4e312263942cf6f4ce7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315895"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443775"
 ---
 # <a name="install-visual-studio-2019-for-mac-preview"></a>安装 Visual Studio 2019 for Mac 预览版
 
@@ -90,6 +91,10 @@ ms.locfileid: "54315895"
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 应用、ASP.NET Core Web 应用、Unity 游戏开发
 
 有关其他工作负载，请参阅[工作负载](/visualstudio/mac/workloads)页。
+
+## <a name="related-video"></a>相关视频
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
 ## <a name="see-also"></a>请参阅
 
