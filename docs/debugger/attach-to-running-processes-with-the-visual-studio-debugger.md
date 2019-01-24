@@ -1,5 +1,5 @@
 ---
-title: 将附加到正在运行调试器的进程 |Microsoft Docs
+title: 使用 Visual Studio 调试器附加到正在运行的进程 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 09/27/2018
 ms.topic: conceptual
@@ -40,7 +40,7 @@ ms.locfileid: "53899608"
 
 可以使用**附加到进程**若要调试在本地或远程计算机上的运行应用，同时调试多个进程、 调试在 Visual Studio 中创建的应用或调试您开始从 Visual Studio 中使用时没有任何应用附加调试程序。 例如，如果您正在运行不带调试器的应用，并且遇到一个异常，可以然后将调试器附加到进程中运行应用程序，并开始调试。
 
-有关在 Visual Studio 基本调试的信息，请参阅[先来看一下调试器](../debugger/debugger-feature-tour.md)。
+有关 Visual Studio 中基本调试的信息，请参阅[调试器入门](../debugger/debugger-feature-tour.md)。
 
 > [!TIP]
 > 不确定是否使用**附加到进程**为调试方案？ 请参阅[常见调试方案](#BKMK_Scenarios)。 
@@ -172,9 +172,9 @@ ms.locfileid: "53899608"
 
 若要使用的全部功能 （如命中断点） 的 Visual Studio 调试器附加到进程，该应用程序必须完全匹配的本地源和符号。 也就是说，调试器必须能够加载正确[符号 (.pdb) 文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。 默认情况下，这需要调试版本。
 
-对于远程调试方案，必须已在 Visual Studio 中打开了源代码（或源代码的副本）。 远程计算机上编译的应用二进制文件必须与本地计算机上的源自同一个生成。
+对于远程调试方案，必须已在 Visual Studio 中打开了源代码（或源代码的副本）。 远程计算机上编译的应用二进制文件必须与本地计算机上的源自同一版本。
 
-某些本地调试的情况下，您可以调试在 Visual Studio 中与源不能访问正确的符号文件存在与该应用程序。 默认情况下，这需要调试版本。 有关详细信息，请参阅[指定符号和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
+在某些本地调试方案中，如果应用中存在正确的符号文件，则可以在 Visual Studio 中进行调试而无法访问源。 默认情况下，这需要调试版本。 有关详细信息，请参阅[指定符号和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
   
 ##  <a name="BKMK_Troubleshoot_attach_errors"></a>排查附加错误  
  当调试器附加到一个正在运行的进程时，该进程可能包含一种或多种类型的代码。 可在 **“选择代码类型”** 对话框中显示并选择可将调试器附加到的代码类型。  
