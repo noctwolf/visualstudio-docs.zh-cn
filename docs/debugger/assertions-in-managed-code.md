@@ -1,4 +1,4 @@
----
+﻿---
 title: 托管代码中的断言 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
@@ -32,10 +32,10 @@ ms.lasthandoff: 10/23/2018
 ms.locfileid: "49892059"
 ---
 # <a name="assertions-in-managed-code"></a>托管代码中的断言
-断言（或 `Assert` 语句）测试你指定为 `Assert` 语句的自变量的条件。 如果此条件的计算结果为 true，则不发生操作。 如果此条件的计算结果 false，则断言失败。 如果正在使用调试版本运行，则程序将进入中断模式。  
+断言（或 `Assert` 语句）测试你指定为 `Assert` 语句的自变量的条件。 如果此条件的计算结果为 true，则不发生操作。 如果此条件的计算结果为 false，则断言失败。 如果正在使用调试版本运行，则程序将进入中断模式。  
   
 ##  <a name="BKMK_In_this_topic"></a> 在本主题中  
- [在 System.Diagnostics Namespace 中断言](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
+ [在 System.Diagnostics 命名空间中断言](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
   
  [Debug.Assert 方法](#BKMK_The_Debug_Assert_method)  
   
@@ -49,15 +49,15 @@ ms.locfileid: "49892059"
   
  [在配置文件中设置断言](#BKMK_Setting_assertions_in_configuration_files)  
   
-##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> 在 System.Diagnostics Namespace 中断言  
- 在 Visual Basic 和 Visual C# 中，可以使用 `Assert` 或 <xref:System.Diagnostics.Debug>（二者位于 <xref:System.Diagnostics.Trace> 命名空间中）中的 <xref:System.Diagnostics> 方法。 程序的发行版中不包含 <xref:System.Diagnostics.Debug> 类方法，因此它们不增大发行代码的大小，也不会减慢发行代码的速度。  
+##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> 在 System.Diagnostics 命名空间中断言  
+ 在 Visual Basic 和 Visual C# 中，可以使用 `Assert` 或 <xref:System.Diagnostics.Debug>（二者位于 <xref:System.Diagnostics.Trace> 命名空间中）中的 <xref:System.Diagnostics> 方法。 程序的发行版中不包含 <xref:System.Diagnostics.Debug> 类方法，因为这样做不会增加发行版代码的大小，也不会减慢发行代码的速度。  
   
  C++ 不支持 <xref:System.Diagnostics.Debug> 类方法。 可以通过使用实现相同的效果<xref:System.Diagnostics.Trace>类使用条件编译，如`#ifdef DEBUG`...`#endif`.  
   
  [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_Debug_Assert_method"></a> Debug.Assert 方法  
- 可随意使用 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 方法测试条件（如果代码正确，该条件应为 true）。 例如，假设已编写一个整数除法函数。 根据数学规则，除数绝不能为零。 可以使用断言测试这一点：  
+ 可随意使用 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 方法来测试条件（如果代码正确，这些条件应为 true）。 例如，假设已编写一个整数除法函数。 根据数学规则，除数绝不能为零。 可以使用断言测试这一点： 
   
 ```VB  
 Function IntegerDivide(ByVal dividend As Integer, ByVal divisor As Integer) As Integer  
@@ -199,7 +199,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Customizing_Assert_behavior"></a> 自定义断言行为  
- 如果以用户界面模式运行应用程序，则 `Assert` 方法会在条件失败时显示“断言失败”对话框。 断言失败时发生的操作由 <xref:System.Diagnostics.Debug.Listeners%2A> 或 <xref:System.Diagnostics.Trace.Listeners%2A> 属性控制。  
+ 如果在用户界面模式中运行你的应用程序，当运行 `Assert` 方法条件失败时，将显示“断言失败”对话框。 <xref:System.Diagnostics.Debug.Listeners%2A> 或 <xref:System.Diagnostics.Trace.Listeners%2A> 属性控制断言失败时发生的操作。  
   
  可以通过向 <xref:System.Diagnostics.TraceListener> 集合添加 `Listeners` 对象、从 <xref:System.Diagnostics.TraceListener> 集合中移除 `Listeners` 或者重写现有 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 的 `TraceListener` 方法来自定义输出行为，使其变得不同。  
   
