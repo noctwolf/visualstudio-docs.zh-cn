@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats 接口 |Microsoft 文档
+title: IActiveScriptStats 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d459b89bde609dfdf5963d4b6b10b24db4706a7e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: da69920ca78ad47e283fa8f99a28d037edbbe44d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725047"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350136"
 ---
 # <a name="iactivescriptstats-interface"></a>IActiveScriptStats 接口
-允许主机查询正在运行的脚本的统计信息。 主机可以使用此信息来确定是否脚本已太长时间才能完成。  
+使宿主可以查询正在运行的脚本的统计信息。 主机可以使用此信息以确定是否脚本具有执行操作太长时间才能完成。  
   
- 除了从继承的方法`IUnknown`、`IActiveScriptStats`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IActiveScriptStats`接口公开以下方法。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   

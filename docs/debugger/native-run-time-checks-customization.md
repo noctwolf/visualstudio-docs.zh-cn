@@ -1,8 +1,6 @@
 ---
 title: 本机运行时检查自定义 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.crt
@@ -24,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6df61b1e0fde088fca87fa7a99f5590768889b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7530f875b3eb14766e32b1237871e6ec48d4bb85
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853919"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836228"
 ---
 # <a name="native-run-time-checks-customization"></a>本机运行时检查自定义
 使用编译 **/RTC** （运行时检查），或使用`runtime_checks`杂注，C 运行时库提供了本机运行时检查。 某些情况下，可能需要自定义运行时检查：  
@@ -38,11 +36,11 @@ ms.locfileid: "49853919"
   
 - 为第三方调试器的运行时检查信息指定输出目标。  
   
-- 报告用 C 运行库发布版本编译的程序中的运行时检查信息。 该库的发布版本不使用 `_CrtDbgReportW` 报告运行时错误。 相反，它们显示**Assert**对话框中的为每个运行时错误。  
+- 报告用 C 运行库发布版本编译的程序中的运行时检查信息。 该库的发布版本不使用 `_CrtDbgReportW` 报告运行时错误。 相反，它们为每个运行时错误显示“断言”对话框。  
   
   若要自定义运行时错误检查，可以：  
   
-- 编写一个运行时错误报告函数。 有关详细信息，请参阅[如何： 编写运行时错误报告函数](../debugger/how-to-write-a-run-time-error-reporting-function.md)。  
+- 编写一个运行时错误报告函数。 有关更多信息，请参见[如何：编写运行时错误报告函数](../debugger/how-to-write-a-run-time-error-reporting-function.md)。  
   
 - 自定义错误消息目标。  
   
@@ -57,6 +55,6 @@ ms.locfileid: "49853919"
  `_RTC_NumErrors` 返回运行时错误检查所检测到的错误类型的数量。 要得到每个错误的简短说明，可以从 0 循环到 `_RTC_NumErrors` 的返回值，并在每次循环中将迭代值传递给 `_RTC_GetErrDesc`。 有关详细信息，请参阅[_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors)并[_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc)。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 使用本机运行时检查](../debugger/how-to-use-native-run-time-checks.md)   
+ [如何：使用本机运行时检查](../debugger/how-to-use-native-run-time-checks.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [_CrtDbgReport、_CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

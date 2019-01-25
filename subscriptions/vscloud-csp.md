@@ -9,12 +9,12 @@ description: 有关云解决方案提供商如何为客户购买和管理 Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9e400373d56e494e9292a086c55c07795a75d989
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 7ca04ab81462c2126068ed5a5710cee663944431
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739570"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270003"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>为客户购买和管理 Visual Studio 云订阅
 
@@ -24,7 +24,7 @@ ms.locfileid: "53739570"
 
 
 > [!NOTE]
-> Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的功能不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
+> Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
 
 
 ## <a name="prerequisites"></a>系统必备
@@ -46,7 +46,7 @@ ms.locfileid: "53739570"
 0. 选择“Visual Studio Marketplace”。
 0. 确保客户名位于右上角。
 0. 选择“订阅”。
-0. 为 Visual Studio 选择 Enterprise 或 Professional，以及月度或年度。
+0. 选择“Visual Studio Enterprise”或“Visual Studio Professional”。
 0. 选择“购买”。
 0. 选择用于为购买计费 Azure 订阅。
 0. 输入客户所需的用户数量。

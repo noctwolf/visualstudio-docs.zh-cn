@@ -1,55 +1,63 @@
 ---
-title: -Runexit (devenv.exe)
-ms.date: 11/04/2016
+title: -RunExit (devenv.exe)
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- runexit Devenv switch
-- Devenv, /runexit switch
-- /runexit Devenv switch
+- RunExit Devenv switch
+- Devenv, /RunExit switch
+- /RunExit Devenv switch
 ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa715c97310edc447610b0c0ae61226ab5334f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ebeba5afc1eb50703f62e386f7453d7c0c3c1f6
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955115"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227182"
 ---
-# <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
+# <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
+
 编译和运行指定的项目或解决方案，然后关闭集成开发环境 (IDE)。
 
 ## <a name="syntax"></a>语法
 
-```
-devenv /runexit {SolutionName|ProjectName}
+```shell
+devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 ```
 
 ## <a name="arguments"></a>自变量
- `SolutionName`
 
- 必需。 解决方案文件的完整路径和名称。
+- *SolutionName*
 
- `ProjectName`
+  解决方案文件的完整路径和名称。
 
- 必需。 项目文件的完整路径和名称。
+- *ProjectName*
+
+  项目文件的完整路径和名称。
+
+- `/Out` OutputFilename
+
+  可选。 要将工具输出发送到的文件的文件名。 如果文件已有，工具将输出追加到文件末尾。
 
 ## <a name="remarks"></a>备注
- 根据为活动解决方案配置指定的设置编译并运行指定项目或解决方案。 此开关会在项目或解决方案处于运行状态时最小化 IDE，会在项目或解决方案完成运行后关闭 IDE。
 
--   用双引号将含有空格的字符串引起来。
+根据为活动解决方案配置指定的设置编译并运行指定项目或解决方案。 此开关在项目或解决方案运行时最小化 IDE。 它在项目或解决方案完成运行后关闭 IDE。
 
--   “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示摘要信息（包括错误）。
+- 用双引号将含有空格的字符串引起来。
+
+- “命令”窗口或使用 `/Out` 开关指定的任何日志文件中都可显示摘要信息（包括错误）。
 
 ## <a name="example"></a>示例
- 此示例会在最小化的 IDE 中使用活动部署配置运行解决方案 `MySolution`，然后关闭 IDE。
+
+此示例会在最小化的 IDE 中使用活动部署配置运行解决方案 `MySolution`，然后关闭 IDE。
 
 ```
-devenv /runexit "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
+devenv /runexit "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
 ## <a name="see-also"></a>请参阅

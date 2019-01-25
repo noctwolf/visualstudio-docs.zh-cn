@@ -1,8 +1,6 @@
 ---
 title: 'Idiaframedata:: Execute |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b8f904ac8add69db0c6d1760b5427cb8c802ae
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6be6c631f9ea0db47829f305f90bd1c296de2f28
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918336"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958732"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 执行堆栈展开并在堆栈遍历帧界面中返回结果。  
@@ -27,7 +25,7 @@ ms.locfileid: "49918336"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT execute (   
+HRESULT execute (   
    IDiaStackWalkFrame* frame  
 );  
 ```  
@@ -39,7 +37,7 @@ HRESULT execute (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。  
   
-|“值”|描述|  
+|“值”|说明|  
 |-----------|-----------------|  
 |E_DIA_INPROLOG|无法执行序言代码中的堆栈帧。|  
 |E_DIA_SYNTAX|分析帧程序中遇到错误。|  

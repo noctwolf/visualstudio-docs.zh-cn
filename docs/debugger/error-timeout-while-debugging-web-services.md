@@ -1,8 +1,6 @@
 ---
-title: 错误： 调试 Web 服务时的超时 |Microsoft Docs
-ms.custom: ''
+title: 错误：调试 Web 服务时超时 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 dev_langs:
 - CSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41c6793e1fdf4e3ed2d7e42fbd32bd20ad9f494a
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
-ms.translationtype: MT
+ms.openlocfilehash: 98d112528ace581c9173e82af63c502e2124315a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056263"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53832564"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>错误：调试 Web 服务时超时
 在从调用代码单步执行 XML Web service 时，调用有时可能会超时，结果是你无法继续调试。 您可能会看到下面这样的错误信息。  

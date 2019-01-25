@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aee62651d6517444eb33aef272a212e5a12f55e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b68da672fdd0986d0a0bce5c56a13683325d737
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944371"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54268885"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>调试器不能显示源代码或反汇编
 此错误显示如下：  
@@ -36,6 +36,7 @@ ms.locfileid: "53944371"
   
 -   出于安全考虑，可能禁止调试器从在调试的程序中读取堆栈、线程和其他上下文信息。 如果正在调试 Web 应用程序，且没有访问虚拟内存的正确权限，则这种情况最可能发生。 将虚拟目录的安全设置为 Anonymous 并再次尝试。  
   
-## <a name="see-also"></a>请参阅  
- [在 Visual Studio 中调试](../debugger/index.md)[调试器功能简介](../debugger/debugger-feature-tour.md)   
+## <a name="see-also"></a>请参阅
+ [在 Visual Studio 中进行调试](../debugger/index.md)  
+ [初探调试器](../debugger/debugger-feature-tour.md)  
  [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 53f32da997b775e01959df5abc7e72fb55c1b194
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54086692"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345040"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>“break”不能位于循环外
 你尝试使用**中断**位于循环外的关键字。 **中断**关键字用于终止循环或`switch`语句。 它必须在循环的正文中嵌入或`switch`语句。 但是，**标签**可以按照 break 关键字。  

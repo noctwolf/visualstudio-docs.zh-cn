@@ -2,7 +2,6 @@
 title: 准备调试C#， F#，和 VB 项目 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67833f3b4387c0606c3ce1f0b99cac50f0c0b501
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 703c00868eca2f48c06bb24cc45a533411a8147c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53063443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53866876"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>调试准备：C#、F# 和 Visual Basic 项目类型
 本节主题描述如何调试由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目模板创建的 C#、F# 和 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目类型。  

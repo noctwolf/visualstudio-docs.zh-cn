@@ -8,16 +8,15 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 4c247d693da287581b8ab163880e9cecf4aeb17c
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: b13b7e8e23367fe83afb9e3ccf1a081f369867af
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304912"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53895475"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>适用于 C++ 的 Visual Studio Data Tools
 
@@ -25,11 +24,11 @@ ms.locfileid: "52304912"
 
 若要连接到 SQL 数据库，本机 c + + 应用程序可以使用 ODBC 和 OLE DB 驱动程序和 Windows 附带的 ADO 提供程序。 这些可以连接到支持这些接口的任何数据库。 ODBC 驱动程序是标准。 提供 OLE DB 是为了向后兼容。 这些数据技术的详细信息，请参阅[Windows 数据访问组件](/previous-versions/windows/desktop/ms692897(v=vs.85))。
 
-若要利用 SQL Server 2005 中的自定义功能和更高版本，使用[SQL Server 本机客户端](/sql/relational-databases/native-client/sql-server-native-client)。 Native client 还包含 SQL Server ODBC 驱动程序和一个本机动态链接库 (DLL) 中的 SQL Server OLE DB 提供程序。 这些支持使用 Microsoft SQL server 的本机代码 Api （ODBC、 OLE DB 和 ADO） 的应用程序。 SQL Server Native Client 随同 SQL Server Data Tools 安装。 编程指南是此处： [SQL Server 本机客户端编程](/sql/relational-databases/native-client/sql-server-native-client-programming)。
+若要利用 SQL Server 2005 中的自定义功能和更高版本，使用[SQL Server 本机客户端](/sql/relational-databases/native-client/sql-server-native-client)。 Native client 还包含 SQL Server ODBC 驱动程序和一个本机动态链接库 (DLL) 中的 SQL Server OLE DB 提供程序。 这些支持使用 Microsoft SQL server 的本机代码 Api （ODBC、 OLE DB 和 ADO） 的应用程序。 SQL Server Native Client 随同 SQL Server Data Tools 安装。 此处是编程指南：[SQL Server 本机客户端编程](/sql/relational-databases/native-client/sql-server-native-client-programming)。
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>若要从 c + + 应用程序连接到 localDB 通过 ODBC 和 SQL Native Client
 
-1. 安装 SQL Server Data Tools
+1. 安装 SQL Server Data Tools。
 
 2. 如果你需要可连接到的示例 SQL 数据库，下载 Northwind 数据库，并将其解压缩到新位置。
 
@@ -58,7 +57,7 @@ ms.locfileid: "52304912"
    #include <sqlncli.h>
    ```
 
-    请注意，该示例不实际使用任何本机客户端功能，因此不需要为其进行编译和运行前面的步骤。 但项目现在已配置为你要使用此功能。 有关详细信息，请参阅 [SQL Server Native Client Programming](/sql/relational-databases/native-client/sql-server-native-client)（SQL Server Native Client 编程）
+    请注意，该示例不实际使用任何本机客户端功能，因此不需要为其进行编译和运行前面的步骤。 但项目现在已配置为你要使用此功能。 有关详细信息，请参阅 [SQL Server Native Client 编程](/sql/relational-databases/native-client/sql-server-native-client)。
 
 7. 指定要使用 ODBC 子系统中的驱动程序。 该示例将作为命令行参数传递中的驱动程序连接字符串属性。 在中**项目** > **属性** > **调试**，添加此参数，命令：
 
@@ -66,7 +65,7 @@ ms.locfileid: "52304912"
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. 按 F5 生成并运行该应用程序。 应看到一个对话框会提示你输入的数据库驱动程序中。 输入`(localdb)\MSSQLLocalDB`，并检查**使用信任连接**。 按“确定”： 应会看到具有消息，以表明成功的连接的控制台。 此外应该看到命令提示符下可以在其中键入 SQL 语句中。 以下屏幕显示的示例查询和结果：
+8. 按 F5 生成并运行该应用程序。 应看到一个对话框会提示你输入的数据库驱动程序中。 输入`(localdb)\MSSQLLocalDB`，并检查**使用信任连接**。 按“确定”。 应会看到具有消息，以表明成功的连接的控制台。 此外应该看到命令提示符下可以在其中键入 SQL 语句中。 以下屏幕显示的示例查询和结果：
 
    ![ODBC 示例查询输出](../data-tools/media/raddata-odbc-sample-query-output.png)
 

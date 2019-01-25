@@ -1,5 +1,5 @@
 ---
-title: 应为标识符 (JavaScript) |Microsoft 文档
+title: 应为标识符 (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,16 +21,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ff69e433aaa68f88102219cdaf3a77746779370f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632867"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349226"
 ---
 # <a name="expected-identifier-javascript"></a>应为标识符 (JavaScript)
-你标识符以外的上下文中使用其中一个是必需。 标识符可以是：  
+你以外的标识符的上下文中使用其中一个所需。 标识符可以是：  
   
--   变量中，  
+-   一个变量，  
   
 -   一个属性，  
   
@@ -40,7 +40,7 @@ ms.locfileid: "24632867"
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   使一个标识符等号左侧出现，请更改表达式。  
+-   更改表达式，使标识符出现在等号左侧。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用数组](../../javascript/advanced/using-arrays-javascript.md)

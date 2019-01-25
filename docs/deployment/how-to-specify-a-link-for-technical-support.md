@@ -1,8 +1,6 @@
 ---
-title: 如何： 指定技术支持链接 |Microsoft Docs
-ms.custom: ''
+title: 如何：指定技术支持链接 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27014dd06f3d368ea0777a8f9e16c27a6d7d7884
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: a322dde6ae616f2909a0a33721d28d1309c66fae
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078821"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53933935"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>如何： 指定技术支持链接
+# <a name="how-to-specify-a-link-for-technical-support"></a>如何：指定技术支持链接
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序中，**支持 URL**属性标识网页或文件共享，用户可以转到要获取有关应用程序的信息。 此属性是可选的;如果提供，该 URL 将显示在应用程序的入口**添加或删除程序**对话框。  
   
  **支持 URL**属性可以设置上**发布**页**项目设计器**。  
@@ -38,7 +36,7 @@ ms.locfileid: "39078821"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**选项**按钮以打开**发布选项**对话框。  
   
@@ -48,4 +46,4 @@ ms.locfileid: "39078821"
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

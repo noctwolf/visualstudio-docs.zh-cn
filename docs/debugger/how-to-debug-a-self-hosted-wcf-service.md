@@ -1,8 +1,6 @@
 ---
-title: 如何： 调试自我托管的 WCF 服务 |Microsoft Docs
-ms.custom: ''
+title: 如何：调试自我托管的 WCF 服务 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 255ca0f7d472060d110135536d76de99dc46a18e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1a847071fa62e0ae168a5c830bd7f52a80edf740
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872117"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956122"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：调试自我托管的 WCF 服务
-一个*自我托管服务*是不会在 IIS 中，WCF 服务主机内运行的 WCF 服务或[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]开发服务器。 若要调试自托管的 WCF 的最简单方法是配置[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]以启动客户端和服务器选择时**启动调试**上**调试**菜单。  
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：调试自托管 WCF 服务
+“自承载服务”是指不在 IIS、WCF 服务主机或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 开发服务器内部运行的 WCF 服务。 若要调试自托管的 WCF 的最简单方法是配置[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]以启动客户端和服务器选择时**启动调试**上**调试**菜单。  
   
  如果内部，或者不能以这种方式，如 NT 服务启动进程自承载 WCF 服务不能使用此方法。 相反，可以执行以下操作：  
   
@@ -47,7 +45,7 @@ ms.locfileid: "49872117"
   
    2.  单击**设置启动项目**。  
   
-   3.  在中**解决方案\<名称 > 属性**对话框中，选择**多个启动项目**。  
+   3.  在“解决方案 \<名称> 属性”对话框中选择“多启动项目”。  
   
    4.  在中**多个启动项目**网格中的，对应于服务器项目中，在行上单击**操作**，然后选择**启动**。  
   

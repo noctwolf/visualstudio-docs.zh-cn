@@ -1,5 +1,5 @@
 ---
-title: 活动脚本调试器常量、 枚举和结构 |Microsoft 文档
+title: 活动脚本调试器常量、 枚举和结构 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bd41fe91fdf030b957d800248343198f2617018
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 913c1b243bcc9c7a6653025fbfcb4f941df2950e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24642067"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345430"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>活动脚本调试器常量、枚举和结构
 下面的常量、枚举和结构由 Active Debugging 接口使用。  
@@ -31,7 +31,7 @@ ms.locfileid: "24642067"
 |常量|描述|  
 |---------------|-----------------|  
 |[APPBREAKFLAGS 常量](../../winscript/reference/appbreakflags-enumeration.md)|指示当前的应用程序和线程调试状态。|  
-|[DEBUG_TEXT 常量](../../winscript/reference/debug-text-constants.md)|选项过程中使用的标志[IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md)。|  
+|[DEBUG_TEXT 常量](../../winscript/reference/debug-text-constants.md)|期间使用的选项标志[IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md)。|  
 |[TEXT_DOC_ATTR 常量](../../winscript/reference/text-doc-attr-constants.md)|描述文档的特性。|  
   
 |枚举|描述|  

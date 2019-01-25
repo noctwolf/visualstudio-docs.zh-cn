@@ -1,5 +1,5 @@
 ---
-title: 非法赋值 (JavaScript) |Microsoft 文档
+title: 非法赋值 (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ed35b2751ff9dfbde62845caaf874cccfbc05805
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632887"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54350149"
 ---
 # <a name="illegal-assignment-javascript"></a>非法赋值 (JavaScript)
-你试图将值分配到只读的标识符。 无法将值分配到只读的标识符。 例如，主机定义的对象和外部 COM 对象。  
+你试图将值分配为只读的标识符。 不能将值分配到只读的标识符。 例如，主机定义的对象和外部 COM 对象。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
 -   现在将值分配给只读的标识符。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [赋值运算符 (=)](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)

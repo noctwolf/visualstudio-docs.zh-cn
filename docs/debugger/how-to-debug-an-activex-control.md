@@ -1,8 +1,6 @@
 ---
-title: 如何： 调试 ActiveX 控件 |Microsoft Docs
-ms.custom: ''
+title: 如何：调试 ActiveX 控件 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.controls.debug
@@ -26,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d53c2601bc8c4490f9ca43a7e213a90d66b26aac
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 059dde50a01c1c71545a187043e60a32a9e68309
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389288"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269678"
 ---
 # <a name="how-to-debug-an-activex-control"></a>如何：调试 ActiveX 控件
 
@@ -64,4 +62,4 @@ ms.locfileid: "52389288"
 - [使用测试容器测试属性和事件](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [调试 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)
 - [在 Visual Studio 中进行调试](../debugger/index.md)
-- [调试器功能简介](../debugger/debugger-feature-tour.md)
+- [初探调试器](../debugger/debugger-feature-tour.md)

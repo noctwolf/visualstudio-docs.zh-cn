@@ -1,5 +1,5 @@
 ---
-title: 调试属性接口 |Microsoft 文档
+title: Debug Property 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -15,18 +15,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b45800a1c8fa570299dc8950b3e8979fe949faaf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 64e2aa684862d6b05b1a4051c31d23656a741c37
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641177"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344597"
 ---
 # <a name="debug-property-interfaces"></a>调试属性接口
-DbgProp.h 标头文件提供了本部分中列出的接口。  
+DbgProp.h 标头文件提供了在本部分中列出的接口。  
   
 ## <a name="in-this-section"></a>本节内容  
- 以下接口、 结构和枚举描述正在调试的应用程序的分层属性：  
+ 以下接口、 结构和枚举说明正在调试的应用程序的层次结构属性：  
   
 -   [IDebugProperty 接口](../../winscript/reference/idebugproperty-interface.md)  
   

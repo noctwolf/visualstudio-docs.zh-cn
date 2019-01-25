@@ -1,8 +1,6 @@
 ---
-title: 键盘快捷键 （HTML 和 JavaScript） |Microsoft 文档
-ms.custom: ''
+title: 键盘快捷键 （HTML 和 JavaScript） |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07a528c0dda6237efc280644040a48d42c4b0f85
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 5dda5bdb73ea4d673341309f24985455ecc2ce35
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475491"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53949464"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>键盘快捷键（HTML 和 JavaScript）
   
- 调试使用 HTML 和 JavaScript UWP 应用的 Visual Studio 中的键盘快捷键。  
+ 键盘快捷方式在 Visual Studio 中调试使用 HTML 和 JavaScript 的 UWP 应用。  
   
 ## <a name="general-shortcuts"></a>常规快捷方式  
- 这些快捷方式适用于使用 HTML 和 JavaScript UWP 应用的所有工具。  
+ 这些快捷方式适用于使用 HTML 和 JavaScript 的 UWP 应用的所有工具。  
   
 |操作|快捷键|  
 |------------|--------------|  
@@ -51,12 +49,12 @@ ms.locfileid: "31475491"
 |操作|快捷键|  
 |------------|--------------|  
 |选择元素|Ctrl+B|  
-|显示和使用时隐藏网页高亮框之间进行切换**选择元素**|Ctrl+Shift+I|  
-|提交更改使用**编辑为 HTML**|Ctrl+Enter|  
-|放弃更改使用**编辑为 HTML**|Esc|  
+|使用“选择元素”时在显示和隐藏网页高亮框之间进行切换|Ctrl+Shift+I|  
+|使用“以 HTML 的形式编辑”提交更改|Ctrl+Enter|  
+|使用“以 HTML 的形式编辑”放弃更改|Esc|  
 |使选定的 CSS 值增加 1|向上键|  
 |使选定的 CSS 值减少 1|向下键|  
   
 ## <a name="see-also"></a>请参阅  
- [快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
- [快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+ [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)

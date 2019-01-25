@@ -1,8 +1,6 @@
 ---
 title: '&lt;入口点&gt;元素 （ClickOnce 应用程序） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#commandLine
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56996f83f0ac8d9e7b2bce81ab7e2c8e13faee52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: e37021c6c8492b0c882a84cbb88fe1cd9b5458e6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934621"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53950259"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;入口点&gt;元素 （ClickOnce 应用程序）
 标识应为程序集时执行此[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]客户端计算机上运行应用程序。  
@@ -56,25 +54,25 @@ ms.locfileid: "49934621"
 
  `entryPoint` 元素具有以下属性。  
 
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
 |`name`|可选。 .NET Framework 不使用此值。|  
 
  `entryPoint` 具有下列元素。  
 
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- 必须的。 角色`assemblyIdentity`，其属性的定义[ \<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-application.md)。  
+ 必需。 角色`assemblyIdentity`，其属性的定义[ \<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-application.md)。  
 
  `processorArchitecture`此元素的属性和`processorArchitecture`属性中定义`assemblyIdentity`其他位置中应用程序清单必须匹配。  
 
-## <a name="commandline"></a>命令行  
- 必须的。 必须是子元素的`entryPoint`元素。 它不包含任何子元素，并具有以下属性。  
+## <a name="commandline"></a>commandLine  
+ 必需。 必须是子元素的`entryPoint`元素。 它不包含任何子元素，并具有以下属性。  
 
 
-| 特性 | 描述 |
+| 特性 | 说明 |
 |--------------| - |
-| `file` | 必须的。 启动程序集的本地引用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 此值不能包含正斜杠 （/） 或反斜杠 (\\) 路径分隔符。 |
-| `parameters` | 必须的。 描述要执行的入口点的操作。 唯一有效的值是`run`; 如果提供空字符串，则`run`假定。 |
+| `file` | 必需。 启动程序集的本地引用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 此值不能包含正斜杠 （/） 或反斜杠 (\\) 路径分隔符。 |
+| `parameters` | 必需。 描述要执行的入口点的操作。 唯一有效的值是`run`; 如果提供空字符串，则`run`假定。 |
 
 ## <a name="customhostrequired"></a>customHostRequired  
  可选。 如果包含，指定此部署包含将在自定义主机内部署的组件，也不是独立的应用程序。  
@@ -90,12 +88,12 @@ ms.locfileid: "49934621"
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  
 ```  
 
- 包括 customUX 元素的应用程序必须提供自定义安装程序，则使用<xref:System.Deployment.Application.InPlaceHostingManager>类来执行安装操作。 不能通过双击其清单或 setup.exe 先决条件引导程序安装的应用程序与此元素。 自定义安装程序可以创建开始菜单项、 快捷方式，以及添加或删除程序条目。 如果自定义安装程序不会创建一个添加或删除程序条目，它必须将存储提供的订阅标识符<xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A>属性，并使用户更高版本卸载该应用程序，通过调用<xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A>方法。 有关详细信息，请参阅[演练： 为 ClickOnce 应用程序创建自定义安装程序](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)。  
+ 包括 customUX 元素的应用程序必须提供自定义安装程序，则使用<xref:System.Deployment.Application.InPlaceHostingManager>类来执行安装操作。 不能通过双击其清单或 setup.exe 先决条件引导程序安装的应用程序与此元素。 自定义安装程序可以创建开始菜单项、 快捷方式，以及添加或删除程序条目。 如果自定义安装程序不会创建一个添加或删除程序条目，它必须将存储提供的订阅标识符<xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A>属性，并使用户更高版本卸载该应用程序，通过调用<xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A>方法。 有关详细信息，请参见[演练：创建 ClickOnce 应用程序的自定义安装程序](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)。  
 
 ## <a name="remarks"></a>备注  
  此元素标识的程序集和入口点[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  
 
- 不能使用`commandLine`将参数传递到你的应用程序在运行时。 您可以访问的查询字符串参数[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]从应用程序的部署<xref:System.AppDomain>。 有关详细信息，请参阅[如何： 在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。  
+ 不能使用`commandLine`将参数传递到你的应用程序在运行时。 您可以访问的查询字符串参数[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]从应用程序的部署<xref:System.AppDomain>。 有关更多信息，请参见[如何：在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。  
 
 ## <a name="example"></a>示例  
  下面的代码示例演示`entryPoint`元素中的应用程序清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 此代码示例是为提供一个更大示例的一部分[ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)主题。  

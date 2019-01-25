@@ -1,8 +1,6 @@
 ---
-title: 如何： 使用本机运行时检查 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用本机运行时检查 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
@@ -39,12 +37,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc4e4b9ee24bc7be9126866ae804f1b3c6d6dba6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ae7b736a3273a9b20af0ee0be035a3059c473d67
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860807"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269639"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>如何：使用本机运行时检查
 在 Visual C++ 中，可以使用本机 [runtime_checks](/cpp/preprocessor/runtime-checks) 捕获常见的运行时错误，例如：  
@@ -81,6 +79,6 @@ ms.locfileid: "49860807"
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
- [调试器功能简介](../debugger/debugger-feature-tour.md)   
+ [初探调试器](../debugger/debugger-feature-tour.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [运行时错误检查](/cpp/c-runtime-library/run-time-error-checking)

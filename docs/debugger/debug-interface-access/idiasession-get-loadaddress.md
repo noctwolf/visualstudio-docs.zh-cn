@@ -1,8 +1,6 @@
 ---
 title: 'Idiasession:: Get_loadaddress |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de904777cf09e3289efae71bf585ece9c6444a8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: bd52a6cba05c4757eaefcc1518d4e659c4c89643
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864291"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951256"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
 检索对应于此符号存储区中的符号的可执行文件的加载地址。  
@@ -27,7 +25,7 @@ ms.locfileid: "49864291"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_loadAddress (   
+HRESULT get_loadAddress (   
    ULONGLONG* pRetVal  
 );  
 ```  

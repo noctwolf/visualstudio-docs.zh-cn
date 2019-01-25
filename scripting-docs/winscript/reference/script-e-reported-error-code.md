@@ -1,5 +1,5 @@
 ---
-title: SCRIPT_E_REPORTED 错误代码 |Microsoft 文档
+title: SCRIPT_E_REPORTED 错误代码 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 018cdb5c5fef4e12dc62cf4a06ef0e2b52a98216
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 3a4ced10b24d80b30ddacd2b2d7c4c04312d576a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734047"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349200"
 ---
 # <a name="scriptereported-error-code"></a>SCRIPT_E_REPORTED 错误代码
-脚本引擎已报告未经处理的异常通过主机到[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)。 主机可以忽略此错误。  
+脚本引擎已报告通过主机到未经处理的异常[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)。 主机可以忽略此错误。  
   
 ## <a name="syntax"></a>语法  
   
@@ -28,5 +28,5 @@ ms.locfileid: "24734047"
 SCRIPT_E_REPORTED   0x80020101L  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [活动脚本常量、枚举和错误代码](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

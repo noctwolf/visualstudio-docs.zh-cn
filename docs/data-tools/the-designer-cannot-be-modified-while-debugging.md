@@ -7,23 +7,22 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bed9629c40d4d7b7e93ccd250474ea90b44ab7c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: MT
+ms.openlocfilehash: 5224866db3fb0499a386bd1d3bea1ac0e6b06f2a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53935393"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>调试时无法修改设计器
 
-当尝试在修改项时，会出现此消息**O/R 设计器**应用程序在调试模式下的运行时。 在调试模式下运行应用程序时**O/R 设计器**是只读的。
+应用程序以调试模式运行时，如果试图对 O/R 设计器中的项进行修改，则会出现此消息。 应用程序以调试模式运行时，O/R 设计器是只读的。
 
 若要更正此错误，请选择**停止调试**上**调试**菜单。 应用程序将停止调试，并可以修改中的项**O/R 设计器**。
 
 ## <a name="see-also"></a>请参阅
 
 - [O-R 设计器消息](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

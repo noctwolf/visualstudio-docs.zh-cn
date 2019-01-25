@@ -1,8 +1,6 @@
 ---
 title: 'Idiasegment:: Get_frame |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0911d342f7db341165bdbae426ab784e40b73347
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 90dbe786155fa11e5bf1df9ed113362382838d2f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49935715"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53898670"
 ---
 # <a name="idiasegmentgetframe"></a>IDiaSegment::get_frame
 检索段数目。  
@@ -27,7 +25,7 @@ ms.locfileid: "49935715"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_frame (   
+HRESULT get_frame (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_frame (
  [out]返回段数量。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

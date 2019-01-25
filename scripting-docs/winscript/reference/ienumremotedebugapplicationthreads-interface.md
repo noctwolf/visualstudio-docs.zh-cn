@@ -1,5 +1,5 @@
 ---
-title: IEnumRemoteDebugApplicationThreads 接口 |Microsoft 文档
+title: IEnumRemoteDebugApplicationThreads 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d261e9dfaaf06145554eb80e2e9f63e8d429082d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 89f773ee24c2b50499d7d89bf590250f599b0edb
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729107"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349941"
 ---
 # <a name="ienumremotedebugapplicationthreads-interface"></a>IEnumRemoteDebugApplicationThreads 接口
 枚举应用程序中正在运行的线程。  
   
- 除了从继承的方法`IUnknown`、`IEnumRemoteDebugApplicationThreads`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IEnumRemoteDebugApplicationThreads`接口公开以下方法。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IEnumRemoteDebugApplicationThreads::Next](../../winscript/reference/ienumremotedebugapplicationthreads-next.md)|检索指定的数量的段中枚举序列。|  
-|[IEnumRemoteDebugApplicationThreads::Skip](../../winscript/reference/ienumremotedebugapplicationthreads-skip.md)|跳过指定的数目的段中枚举序列。|  
+|[IEnumRemoteDebugApplicationThreads::Next](../../winscript/reference/ienumremotedebugapplicationthreads-next.md)|检索指定的数目的枚举序列中的段。|  
+|[IEnumRemoteDebugApplicationThreads::Skip](../../winscript/reference/ienumremotedebugapplicationthreads-skip.md)|将跳过枚举序列中的指定的段数。|  
 |[IEnumRemoteDebugApplicationThreads::Reset](../../winscript/reference/ienumremotedebugapplicationthreads-reset.md)|将枚举序列重置到开头。|  
-|[IEnumRemoteDebugApplicationThreads::Clone](../../winscript/reference/ienumremotedebugapplicationthreads-clone.md)|创建一个枚举器，其中包含与当前的枚举器相同的状态。|
+|[IEnumRemoteDebugApplicationThreads::Clone](../../winscript/reference/ienumremotedebugapplicationthreads-clone.md)|创建一个包含与当前枚举数相同的状态的枚举器。|

@@ -1,40 +1,22 @@
 ---
 title: 选项，文本编辑器，常规
-ms.date: 11/04/2016
+ms.date: 01/18/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.TOOLSOPTIONSPAGES.TEXT_EDITOR.SQL_SERVER_TOOLS.GENERAL
-- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 - VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
 - VS.ToolsOptionsPages.Text_Editor.SQL.General
 - vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.XML.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.CSS
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text.General
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp.General
-- VS.ToolsOptionsPages.Text_Editor.All_Languages
 - VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.Basic.General
 - VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.F#.Tabs
-- VS.ToolsOptionsPages.Text_Editor.F#
 - VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
-- VS.ToolsOptionsPages.Text_Editor.C/C++.General
-- VS.ToolsOptionsPages.Text_Editor.Plain_Text
-- VS.ToolsOptionsPages.Text_Editor.HTML
-- VS.ToolsOptionsPages.Text_Editor.XAML.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.F#.General
 - VS.ToolsOptionsPages.Text_Editor.XOML.General
 - VS.ToolsOptionsPages.Text_Editor.SQL
-- vs.toolsoptionspages.text_editor.c/c++
 - VS.ToolsOptionsPages.Text_Editor.SQL_Script
-- VS.ToolsOptionsPages.Text_Editor.T-SQL90.General
 - VS.ToolsOptionsPages.Text_Editor.General
-- VS.ToolsOptionsPages.Text_Editor.CSharp
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
 helpviewer_keywords:
@@ -48,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fdd4e366451dd81738305893727554e8b07ffb04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871325"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417793"
 ---
 # <a name="options-text-editor-general"></a>选项，文本编辑器，常规
 
@@ -75,7 +57,17 @@ ms.locfileid: "53871325"
 
 ### <a name="auto-detect-utf-8-encoding-without-signature"></a>自动检测不带签名的 UTF-8 编码
 
-默认情况下，编辑器通过搜索字节顺序标记或字符集标记检测编码。 如果在当前文档中两者均未找到，代码编辑器将尝试通过扫描字节序列，自动检测 UTF-8 编码。 若要禁用自动检测编码，请清除此选项。
+默认情况下，编辑器通过搜索字节顺序标记或字符集标记检测编码。 如果在当前文档中两者均未找到，代码编辑器会尝试通过扫描字节序列来自动检测 UTF-8 编码。 若要禁用自动检测编码，请清除此选项。
+
+### <a name="follow-project-coding-conventions"></a>遵循项目编码约定
+
+如果你选中此选项，项目的指定编码约定就会替代你对个人项目使用的任何编码约定。
+
+### <a name="enable-mouse-click-to-perform-go-to-definition"></a>启用通过鼠标单击执行“转到定义”
+
+如果选中此选项，可以在单击鼠标的同时，按 Ctrl 并将鼠标悬停在元素之上。 这样，就可以转到选定元素的定义了。 也可以从“使用修改键”下拉列表中选择“Alt”或“Ctrl + Alt”。
+
+选中“在速览视图中打开定义”复选框，可以在窗口中显示元素定义，而无需离开代码编辑器中的当前位置。 
 
 ## <a name="display"></a>显示
 
@@ -89,11 +81,15 @@ ms.locfileid: "53871325"
 
 ### <a name="indicator-margin"></a>指示器边距
 
-勾选此项后，将显示编辑器文本区域的左侧边缘外的垂直边距。 在此边距内单击时，会显示与文本有关的图标和工具提示。 例如，指示器边距内会出现断点或任务列表快捷方式。 但不显示指示器边距信息。
+勾选此项后，将显示编辑器文本区域的左侧边缘外的垂直边距。 在此边距内单击时，会显示与文本有关的图标和工具提示。 例如，指示器边距内会出现断点或任务列表快捷方式。 指示器边距信息不会打印输出。
 
 ### <a name="highlight-current-line"></a>突出显示当前行
 
 勾选此项后，光标所在代码行周围会显示一个灰色框。
+
+### <a name="show-structure-guide-lines"></a>显示结构参考线
+
+如果你选中此选项，与结构化代码块对齐的竖线就会在编辑器中显示，这样你就能轻松识别各个代码块了。
 
 ## <a name="see-also"></a>请参阅
 

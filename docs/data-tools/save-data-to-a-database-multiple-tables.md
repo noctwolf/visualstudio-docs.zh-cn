@@ -15,15 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4e5ca1e9903089cbcc9daf99e8c8d49d170b1c8
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2a9cde551796d43cf94c20a9e54768ea9df3ddb5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388810"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53924795"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库（多个表）
 
@@ -39,7 +38,7 @@ ms.locfileid: "52388810"
 
 -   设置控件中的项[数据源窗口](add-new-data-sources.md#data-sources-window)。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
--   通过将某些项从“数据源”**窗口拖到你的窗体上来创建数据绑定控件。
+-   通过将某些项从“数据源”窗口拖动到窗体上来创建数据绑定控件。
 
 -   修改数据集中每个表中的几个记录。
 
@@ -75,17 +74,17 @@ ms.locfileid: "52388810"
 
 4. 将项目命名**UpdateMultipleTablesWalkthrough**，然后选择**确定**。
 
-     “UpdateMultipleTablesWalkthrough”**项目即被创建并添加到“解决方案资源管理器”** 中。
+     创建“UpdateMultipleTablesWalkthrough”项目并将其添加到“解决方案资源管理器”中。
 
 ## <a name="create-the-data-source"></a>创建数据源
 
-此步骤使用“数据源配置向导”**从 Northwind 数据库创建一个数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何： 安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
+此步骤使用“数据源配置向导”从 Northwind 数据库创建一个数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何：安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 1. 上**数据**菜单中，选择**显示数据源**。
 
-   将打开“数据源”**窗口。
+   “数据源”窗口随即打开。
 
-2. 在“数据源”**窗口中，选择“添加新数据源”** 以启动“数据源配置向导”**。
+2. 在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。
 
 3. 上**选择数据源类型**屏幕上，选择**数据库**，然后选择**下一步**。
 
@@ -95,7 +94,7 @@ ms.locfileid: "52388810"
 
          或
 
-    -   选择“新建连接”**以打开“添加/修改连接”** 对话框。
+    -   选择“新建连接”，打开“添加/修改连接”对话框。
 
 5. 如果你的数据库需要密码，选择选项以包括敏感数据，然后选择**下一步**。
 
@@ -105,7 +104,7 @@ ms.locfileid: "52388810"
 
 8. 选择**客户**并**订单**表，并选择**完成**。
 
-     “NorthwindDataSet”**将添加到你的项目，这些表将显示在“数据源”** 窗口中。
+     “NorthwindDataSet”将添加到项目，这些表将显示在“数据源”窗口中。
 
 ## <a name="set-the-controls-to-be-created"></a>设置要创建的控件
 
@@ -119,22 +118,22 @@ ms.locfileid: "52388810"
 
 ## <a name="create-the-data-bound-form"></a>创建数据绑定窗体
 
-通过将某些项从“数据源”**窗口拖到你的窗体上，可创建数据绑定控件。
+通过将某些项从“数据源”窗口拖到窗体，可创建数据绑定控件。
 
-1. 将主“Customers”**节点从“数据源”** 窗口拖到“Form1”上。
+1. 将主“Customers”节点从“数据源”窗口拖到“Form1”上。
 
      带有描述性标签的数据绑定控件将显示在窗体上，同时还显示一个工具条 (<xref:System.Windows.Forms.BindingNavigator>)，用于在记录间进行导航。 一个[NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)， `CustomersTableAdapter`， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>组件栏中出现。
 
-2. 将相关的“Orders”**节点从“数据源”** 窗口拖到“Form1”**上。
+2. 将相关的“Orders”节点从“数据源”窗口拖到“Form1”上。
 
     > [!NOTE]
-    > 相关的“Orders”**节点位于“Fax”** 列下，该节点是“Customers”**节点的子节点。
+    > 相关的“Orders”节点位于“Fax”列下，该节点是“Customers”节点的子节点。
 
      用于导航记录的 <xref:System.Windows.Forms.DataGridView> 控件和工具栏（<xref:System.Windows.Forms.BindingNavigator>）将显示在窗体上。 `OrdersTableAdapter`和<xref:System.Windows.Forms.BindingSource>组件栏中出现。
 
 ## <a name="add-code-to-update-the-database"></a>添加代码以更新数据库
 
-通过调用“Customers”`Update`和“Orders”**TableAdapter 的**  方法，可更新数据库。 默认情况下，事件处理程序**保存**按钮的<xref:System.Windows.Forms.BindingNavigator>添加到窗体的代码以将更新发送到数据库。 此过程修改代码以将更新发送正确的顺序。这将消除产生引用完整性错误的可能性。 该代码还将通过在 try-catch 块中包装更新调用来实现错误处理。 可以根据应用程序的需要修改代码。
+通过调用“Customers”和“Orders”TableAdapter 的 `Update` 方法，可更新数据库。 默认情况下，事件处理程序**保存**按钮的<xref:System.Windows.Forms.BindingNavigator>添加到窗体的代码以将更新发送到数据库。 此过程修改代码以将更新发送正确的顺序。这将消除产生引用完整性错误的可能性。 该代码还将通过在 try-catch 块中包装更新调用来实现错误处理。 可以根据应用程序的需要修改代码。
 
 > [!NOTE]
 > 为清楚起见，本演练不使用事务。 但是，如果要更新两个或多个相关表，包含在一个事务内的所有更新逻辑。 事务是一个过程，可确保提交任何更改之前，对数据库的所有相关的更改成功。 有关详细信息，请参阅[事务和并发性](/dotnet/framework/data/adonet/transactions-and-concurrency)。

@@ -1,8 +1,6 @@
 ---
-title: 错误： Windows 文件共享已配置...|Microsoft 文档
-ms.custom: ''
+title: 错误：Windows 文件共享已配置...|Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 591b051cb6164f4c8d260be3de29833154c96255
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3bc3388bcf80d471c8dc6d45b0035f74d57abc93
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472784"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53942208"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>错误：已配置 Windows 文件共享...
 已配置 Windows 文件共享，因此您将使用另一不同的用户名连接到远程计算机。 这与远程调试不兼容  
@@ -40,9 +38,9 @@ ms.locfileid: "31472784"
   
      . 中断与远程计算机的连接，然后重新配置文件共享，以便使用您的帐户名称连接至其他计算机：  
   
-    1.  上**启动**菜单上，指向**附件**，然后单击**命令提示符**。  
+    1.  在“开始”菜单上，指向“附件”，然后单击“命令提示”。  
   
-    2.  在 Windows 命令提示处，键入：  
+    2.  在 Windows 命令提示符中，键入：  
   
          `net use /delete computer_name`  
   

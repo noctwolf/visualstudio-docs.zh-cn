@@ -1,8 +1,6 @@
 ---
-title: 如何： 在托管代码中设置线程名称 |Microsoft 文档
-ms.custom: ''
+title: 如何：在托管代码中设置线程名称 |Microsoft Docs
 ms.date: 04/27/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -20,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 39a732f691cbed525e853d74b5cf4e4abb55eb47
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 01869f320318f6708b04fce539ada95211468131
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472296"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53867639"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>如何：在托管代码中设置线程名称
-在 Visual Studio 的任何版本中都可以使用线程命名功能。 线程命名功能用于跟踪中的线程非常有用**线程**窗口。
+在 Visual Studio 的任何版本中都可以使用线程命名功能。 线程命名功能对跟踪“线程”窗口中的线程非常有用。
   
  若要在托管代码中设置线程名称，请使用 <xref:System.Threading.Thread.Name%2A> 属性。  
   

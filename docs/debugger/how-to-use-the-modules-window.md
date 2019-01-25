@@ -3,7 +3,6 @@ title: 查看 Dll 和可执行文件
 titleSuffix: Visual Studio Modules window
 ms.custom: seodec18
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
@@ -26,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec90c7f797c8b25337a23a12321352ff487a12ca
-ms.sourcegitcommit: 6efb9378a82924cb133912d207c6da4bd5a0b9c2
+ms.openlocfilehash: 81f0e9bb20e7024a06c2db7c073b4d2a1d92fecc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53443920"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53956824"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在模块窗口中查看 DLL 和可执行文件（C＃、C++、Visual Basic、F＃）
  
@@ -40,7 +39,7 @@ ms.locfileid: "53443920"
 > [!NOTE]
 > 模块窗口不是适用于 SQL 或脚本调试。 
   
-## <a name="use-the-modules-window"></a>使用模块窗口
+## <a name="use-the-modules-window"></a>使用“模块”窗口
 
 若要打开模块窗口中，在进行调试时，请选择**调试** > **Windows** > **模块**(或按**Ctrl + Alt + U**). 
 

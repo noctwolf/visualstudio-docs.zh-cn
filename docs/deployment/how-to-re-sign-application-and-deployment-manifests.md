@@ -1,8 +1,6 @@
 ---
-title: 如何： 应用程序和部署清单重新签名 |Microsoft Docs
-ms.custom: ''
+title: 如何：应用程序和部署清单重新签名 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,20 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: d5276f77226930b7ad49aea3253321ed3c8082be
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280670"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53937969"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何： 对应用程序和部署清单重新签名
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何：对应用程序清单和部署清单重新签名
 对 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序 (xbap) 或 Office 解决方案的应用程序清单中的部署属性进行更改后，必须重新签名的应用程序和部署清单与证书。 此过程有助于确保不会在最终用户计算机上安装经过篡改的文件。  
   
  你的客户想要为应用程序签名和部署清单具有自己的证书时可能会重新对清单签名的另一种情况。  
   
-## <a name="re-sign-the-application-and-deployment-manifests"></a>应用程序和部署清单重新签名  
- 此过程假定您已对你的应用程序清单文件中做出了更改 (*.manifest*)。 有关详细信息，请参阅[如何： 更改部署属性](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472)。  
+## <a name="re-sign-the-application-and-deployment-manifests"></a>对应用程序清单和部署清单重新签名  
+ 此过程假定您已对你的应用程序清单文件中做出了更改 (*.manifest*)。 有关更多信息，请参见[如何：更改部署属性](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472)。  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>使用 Mage.exe 重新签名的应用程序和部署清单  
   
@@ -116,12 +114,12 @@ ms.locfileid: "44280670"
   
 ## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 应用程序的的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
- [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)   
+ [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
+ [ClickOnce 和验证码](../deployment/clickonce-and-authenticode.md)   
  [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)   
- [如何： 启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)   
- [如何： 设置 ClickOnce 应用程序安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [如何： 设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [如何： 调试 ClickOnce 应用程序使用受限权限](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [如何： 为 ClickOnce 应用程序的客户端计算机添加受信任的发行者](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [如何： 配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
+ [如何：启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [如何：设置 ClickOnce 应用程序的安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [如何：使用受限权限调试 ClickOnce 应用程序](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [如何：为 ClickOnce 应用程序向客户端计算机添加受信任的发布者](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [如何：配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

@@ -2,7 +2,6 @@
 title: 在调试器中设置符号 (.pdb) 和源文件
 ms.custom: seodec18
 ms.date: 10/08/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba2f7794b052712d35bbdadb02a0ea8551dc78b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: d970d2b761b2987bc74e94eb5bfefa8f0ffc78ec
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060441"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53892439"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件 (C#，c + +、 Visual Basic 中， F#)
 
@@ -180,7 +179,7 @@ ms.locfileid: "53060441"
     
     *VC\<x >.pdb*文件存储为单独的对象文件中，所有调试信息并驻留在项目生成文件所在的同一目录中。 每次创建对象文件时，C/c + + 编译器都会将合并到的调试信息*VC\<x >.pdb*。 因此，即使每个源文件包含公共头文件，如 *\<windows.h >*，一次，而不是每个对象文件中存储这些标头中的 typedef。 插入的信息包括类型信息，但不包括函数定义等符号信息。  
   
-  - *\<项目 >.pdb* 
+  - *\<project>.pdb* 
     
     *\<项目 >.pdb*文件将存储项目的所有调试信息 *.exe*文件，并驻留在*\debug*子目录。 \<project.pdb文件包含完整的调试信息（包括函数原型），而不仅仅是在 VC\<x>.pdb中找到的类型信息。 
   
@@ -204,7 +203,7 @@ ms.locfileid: "53060441"
 
 可以使用**模块**，**调用堆栈**，**局部变量**，**自动**，或任何**监视**窗口加载符号或调试时更改符号选项。 有关详细信息，请参阅[更深入了解如何将调试器附加到您的应用程序](../debugger/debugger-tips-and-tricks.md#modules_window)。
 
-### <a name="use-the-modules-window"></a>使用模块窗口
+### <a name="use-the-modules-window"></a>使用“模块”窗口
 
 在调试期间，**模块**窗口显示了调试器将视为用户代码，或我的代码和其符号加载状态的代码模块。 此外可以监视符号加载状态、 加载符号，并更改符号选项在**模块**窗口。
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aa96b9204e81a2947e4eb4dca4bd7b9d5b8b341
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904174"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154058"
 ---
 # <a name="manage-external-tools"></a>管理外部工具
 
@@ -65,8 +65,8 @@ ms.locfileid: "53904174"
 |Target Name|$(TargetName)|要生成的项的文件名。|
 |目标扩展名|$(TargetExt)|要生成的项的文件扩展名。|
 |二进制目录|$(BinDir)|正在生成的二进制文件的最终位置（定义为驱动器 + 路径）。|
-|项目目录|$(ProjDir)|当前项目的目录（驱动器 + 路径）。|
-|项目文件名|$(ProjFileName)|当前项目的文件名（驱动器 + 路径 + 文件名）。|
+|项目目录|$(ProjectDir)|当前项目的目录（驱动器 + 路径）。|
+|项目文件名|$(ProjectFileName)|当前项目的文件名（驱动器 + 路径 + 文件名）。|
 |解决方案目录|$(SolutionDir)|当前解决方案的目录（驱动器 + 路径）。|
 |解决方案文件名|$(SolutionFileName)|当前解决方案的文件名（驱动器 + 路径 + 文件名）。|
 

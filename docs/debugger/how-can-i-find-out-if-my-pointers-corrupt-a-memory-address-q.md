@@ -1,5 +1,5 @@
 ---
-title: 查明指针损坏内存地址 |Microsoft Docs
+title: 查明指针是否损坏了内存地址 | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -42,7 +42,7 @@ ms.locfileid: "53821894"
   
 1.  在 0x00408000 处设置一个数据断点。 请参阅[设置数据更改断点（仅限本机 C++）](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only)。  
   
-2.  当命中断点时，使用“内存”窗口查看从 0x00408000 开始的内存内容。 有关详细信息，请参阅[内存 Windows](../debugger/memory-windows.md)。  
+2.  当命中断点时，使用“内存”窗口，以查看从 0x00408000 开始的内存内容。 有关详细信息，请参阅[内存窗口](../debugger/memory-windows.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)   

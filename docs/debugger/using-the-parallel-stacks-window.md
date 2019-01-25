@@ -1,8 +1,6 @@
 ---
 title: 在并行堆栈窗口中查看线程 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelstacks
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ee9d52f63f3158979f2f018ea44d5b68d6612c1
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
+ms.openlocfilehash: 4e08171c02288f89e706c80ab6dfd5ef9538318c
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562329"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227936"
 ---
-# <a name="view-threads-and-tasks-in-the-parallel-stacks-window"></a>在并行堆栈窗口中查看线程和任务
+# <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>在并行堆栈窗口中查看线程和任务 (C#，Visual Basic、 c + +)
 
 **并行堆栈**窗口可用于调试多线程应用程序。 它具有多个视图：
 

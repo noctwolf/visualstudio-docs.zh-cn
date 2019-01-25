@@ -1,8 +1,6 @@
 ---
-title: 如何： 查看脚本文档 |Microsoft 文档
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology: vs-ide-debug
+title: 如何：查看脚本文档 |Microsoft Docs
+ms.date: 01/08/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,25 +15,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfa273f98cebdf61f865e03a02c9b2d5f22bfa9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ca9eff00f76bd62abce3c3dae061958af546e483
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474724"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204130"
 ---
-# <a name="how-to-view-script-documents"></a>如何：查看脚本文档
-在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的早期版本中，从服务器端脚本生成的客户端脚本文件显示在“脚本资源管理器”窗口中。 “脚本资源管理器”窗口通常是隐藏的，因此客户端脚本的可用性并非总是显而易见。  
+# <a name="how-to-view-script-documents-javascript"></a>如何：查看脚本文档 (JavaScript)
+
+服务器端脚本文件将显示在解决方案资源管理器。 客户端脚本文件仅在调试模式或中断模式下显示。 客户端脚本文件显示在**脚本文档**节点。  
   
- 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中，从服务器端脚本生成的客户端脚本文件显示在解决方案资源管理器中，后者默认情况下是可见的。 已经放弃了“脚本资源管理器”窗口。  
-  
- 客户端脚本文件仅在调试模式或中断模式下显示。 它们将出现在**脚本文档**节点。  
-  
- 服务器端脚本文件始终可见。 它们将出现在**\<网站路径名 >** 节点。 节点的名称类似于以下示例： `c:\...\Website2\`  
+> [!NOTE]
+> 上一步[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]，在脚本资源管理器窗口中出现过从服务器端脚本生成的客户端脚本文件。
   
 ### <a name="to-view-a-server-side-script-document"></a>查看服务器端脚本文档  
   
-1.  在**解决方案资源管理器**，打开**\<网站路径名 >** 节点。  
+1.  在“解决方案资源管理器”中，打开“\<网站路径名>”节点。  
   
 2.  双击要查看的脚本文件。  
   
@@ -43,7 +39,7 @@ ms.locfileid: "31474724"
   
 ### <a name="to-view-a-client-side-script-document"></a>查看客户端脚本文档  
   
-1.  在**解决方案资源管理器**，打开**脚本文档**节点。  
+1.  在“解决方案资源管理器”中，打开“脚本文档”节点。  
   
 2.  双击要查看的脚本文件。  
   

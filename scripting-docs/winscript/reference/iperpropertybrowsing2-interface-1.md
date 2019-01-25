@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2 接口 1 |Microsoft 文档
+title: IPerPropertyBrowsing2 接口 1 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75a0a7ef30bca2205789a63ea577808c11582791
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bded7159b72fc8c1ae8408611ce858105e6734da
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728387"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344016"
 ---
 # <a name="iperpropertybrowsing2-interface-1"></a>IPerPropertyBrowsing2 接口 1
 访问属性页中的信息提供的对象。  
@@ -32,10 +32,10 @@ ms.locfileid: "24728387"
   
 |方法|描述|  
 |------------|-----------------|  
-|`GetDisplayString`|返回指定的属性描述一个文本字符串。|  
-|`MapPropertyToPage`|返回的 CLSID 的允许操作的指定属性的属性页。|  
-|`GetPredefinedStrings`|返回字符串的计数的数组 (`LPOLESTR`指针) 列出允许指定的属性可以接受的值的说明。|  
-|`SetPredefinedValue`|将属性的值设置为预定义的值由标记标识`dwCookie.`|  
+|`GetDisplayString`|返回描述指定的属性的文本字符串。|  
+|`MapPropertyToPage`|返回允许对操作的指定属性的属性页的 CLSID。|  
+|`GetPredefinedStrings`|返回计数的字符串数组 (`LPOLESTR`指针) 列出了允许的值指定的属性可接受的说明。|  
+|`SetPredefinedValue`|属性的值设置为令牌标识的预定义值 `dwCookie.`|  
   
 ## <a name="requirements"></a>要求  
  标头： dbgprop.h

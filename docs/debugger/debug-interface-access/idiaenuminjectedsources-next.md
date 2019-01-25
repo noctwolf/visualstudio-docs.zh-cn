@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenuminjectedsources:: Next |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42b0e76bea62e27d0afe12b8c16eb4e6775edd61
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 097fd17523d72a8e909c044dddb34f6a50e99fc5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845077"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53989719"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
 检索指定的数目的枚举序列中的插入源。  
@@ -27,7 +25,7 @@ ms.locfileid: "49845077"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG                celt,   
    IDiaInjectedSource** rgelt,  
    ULONG*               pceltFetched  
@@ -45,7 +43,7 @@ HRESULT Next (
  [out]返回多个插入的源中提取枚举器。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果没有更多插入的源。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果没有更多插入的源。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   

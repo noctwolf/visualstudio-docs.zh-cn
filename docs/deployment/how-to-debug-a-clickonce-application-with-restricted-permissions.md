@@ -1,8 +1,6 @@
 ---
-title: 如何： 调试具有受限权限的 ClickOnce 应用程序 |Microsoft Docs
-ms.custom: ''
+title: 如何：调试具有受限权限的 ClickOnce 应用程序 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c30766b50692052ec9fdd04c5ec1b156738c47b5
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 880966e78bd2e27159b1ede81c07aa15aa994e75
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53921252"
 ---
-# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>如何： 调试 ClickOnce 应用程序使用受限权限
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>如何：使用受限权限调试 ClickOnce 应用程序
 作为开发人员，你很可能使用完全信任权限运行开发计算机，因此在调试 ClickOnce 应用程序时不会遇到最终用户在使用受限权限运行它时可能会遇到的相同安全异常。  
   
  为了捕获这些异常，你需要使用与最终用户相同的权限来调试应用程序。 可以在 **“项目设计器”** 的 **“安全”** 页上启用使用受限权限进行调试。  
@@ -61,7 +59,7 @@ ms.locfileid: "39152966"
 6.  在“调试此应用程序，就如同它是从以下 URL 位置下载的一样”  文本框中，输入 URL 或网络路径。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 应用程序的的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
+ [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)

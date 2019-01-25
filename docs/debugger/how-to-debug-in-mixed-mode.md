@@ -1,8 +1,6 @@
 ---
-title: 如何： 在混合模式调试 |Microsoft Docs
-ms.custom: ''
+title: 如何：在混合模式调试 |Microsoft Docs
 ms.date: 11/05/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1439dce6930b71e29141031e93175e0a6aaa519c
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: db26a3a68b15dcd6252f6bd02a540e105c993b54
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389467"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53896053"
 ---
-# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>如何： 在混合模式调试 (C#，c + +、 Visual Basic)
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>如何：在混合模式调试 (C#，c + +、 Visual Basic)
 
 以下过程介绍如何为托管和本机代码组合在一起，也称为混合模式调试启用调试。 有两个混合模式调试方案：
 
@@ -36,7 +34,7 @@ ms.locfileid: "52389467"
 
 可以让调用应用程序项目中的托管和本机调试器**属性**页。 设置本机和托管应用程序之间存在差异。
 
-如果没有向调用应用程序的项目的访问权限，则可以调试 DLL 项目的 DLL。 您不需要混合的模式调试只是 DLL 项目。 有关详细信息，请参阅 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)。
+如果没有向调用应用程序的项目的访问权限，则可以调试 DLL 项目的 DLL。 您不需要混合的模式调试只是 DLL 项目。 有关更多信息，请参见[如何：从 DLL 项目调试](../debugger/how-to-debug-from-a-dll-project.md)。
 
 > [!NOTE]
 > 对话框和命令可能与本文中，具体取决于您的 Visual Studio 设置或版本中的不同。 若要更改您的设置，请选择**工具** > **导入和导出设置**。 有关详细信息，请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
@@ -47,7 +45,7 @@ ms.locfileid: "52389467"
 
 1. 在中**\<项目 > 属性页**对话框中，展开**配置属性**，然后选择**调试**。
 
-1. 将“调试器类型”**设置为“混合”** 或“自动”**。
+1. 将“调试器类型”设置为“混合”或“自动”。
 
 1. 选择“确定”。
 
@@ -68,4 +66,4 @@ ms.locfileid: "52389467"
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：从 DLL 项目进行调试](../debugger/how-to-debug-from-a-dll-project.md)
+- [如何：从 DLL 项目调试](../debugger/how-to-debug-from-a-dll-project.md)

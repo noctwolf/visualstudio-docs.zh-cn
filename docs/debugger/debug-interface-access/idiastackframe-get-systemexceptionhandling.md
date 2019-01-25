@@ -1,8 +1,6 @@
 ---
 title: IDiaStackFrame::get_systemExceptionHandling |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 196bc890458d820b4280144e6f6a76655e7d8c93
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: cc73c3dc8231665faf77f7697bc4c5ded538c84c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923870"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961681"
 ---
 # <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
 检索一个标志，指示系统异常处理是否生效。  
@@ -27,7 +25,7 @@ ms.locfileid: "49923870"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_systemExceptionHandling (   
+HRESULT get_systemExceptionHandling (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_systemExceptionHandling (
  [out]返回`TRUE`如果系统异常处理有效此帧中; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持的属性。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果不支持的属性。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
  系统异常处理也称为是结构化的异常处理。 这不是与 c + + 异常处理相同的功能。  

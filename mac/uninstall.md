@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 4a0ecef49d8c3493ff6094be66f1d05ad588077c
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295665"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204328"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
 
@@ -34,10 +34,11 @@ ms.locfileid: "51295665"
 
 可通过使用[卸载脚本](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)一次性卸载 Visual Studio 和 Xamarin 组件。
 
-卸载脚本中包含本文中出现的大部分命令。 由于可能存在外部依赖关系，脚本中忽略了两个主要部分：
+卸载脚本中包含本文中出现的大部分命令。 由于可能存在外部依赖项，因此脚本中省略了三个主要部分。 若要将此删除，请跳转到下面的相关部分，并手动删除：
 
-- **卸载 Mono**
-- **卸载 Android AVD**
+- **[卸载 Mono](#uninstall-mono-sdk-mdk)**
+- **[卸载 Android AVD](#uninstall-android-avd)**
+- **[卸载 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)**
 
 要运行脚本，请执行以下步骤：
 
@@ -45,13 +46,13 @@ ms.locfileid: "51295665"
 2. 打开“终端”，并将工作目录更改为下载脚本的位置：
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. 使脚本可执行，并通过 **sudo** 运行它：
 
     ```bash
-    $ chmod +x ./uninstall-vsmac.sh
-    $ sudo ./uninstall-vsmac.sh
+    chmod +x ./uninstall-vsmac.sh
+    sudo ./uninstall-vsmac.sh
     ```
 4. 最后，删除卸载脚本。
 
@@ -65,13 +66,13 @@ ms.locfileid: "51295665"
 2. 打开“终端”，并将工作目录更改为下载脚本的位置：
 
     ```bash
-    $ cd /location/of/file
+    cd /location/of/file
     ```
 3. 使脚本可执行，并通过 **sudo** 运行它：
 
     ```bash
-    $ chmod +x ./dotnet-uninstall-pkgs.sh
-    $ sudo ./dotnet-uninstall-pkgs.sh
+    chmod +x ./dotnet-uninstall-pkgs.sh
+    sudo ./dotnet-uninstall-pkgs.sh
     ```
 4. 最后，删除 .NET Core 卸载脚本。
 
@@ -93,10 +94,16 @@ rm -rf ~/Library/Preferences/Visual\ Studio
 rm -rf ~/Library/Logs/VisualStudio
 rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
-rm -rf ~/Library/Developer/Xamarin
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 ```
+
+可能还要删除以下包含各种 Xamarin 文件和文件夹的目录。 不过，这样做前，应注意此目录包含 Android 签名密钥。 有关详细信息，请参阅**[卸载 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)** 部分：
+
+```bash
+rm -rf ~/Library/Developer/Xamarin
+```
+
 
 ## <a name="uninstall-mono-sdk-mdk"></a>卸载 Mono SDK (MDK)
 
@@ -130,6 +137,9 @@ sudo rm -rf /Library/Frameworks/Xamarin.Android.framework
 ### <a name="uninstall-android-sdk-and-java-sdk"></a>卸载 Android SDK 和 Java SDK
 
 开发 Android 应用程序需要 Android SDK。 要完全删除 Android SDK 的所有部分，请在 ~/Library/Developer/Xamarin/ 中找到相关文件，并将其移到回收站。
+
+> [!WARNING]
+> 应注意，Visual Studio for Mac 生成的 Android 签名密钥位于 `~/Library/Developer/Xamarin/Keystore` 中。 请务必适当备份，或避免在要保留密钥存储时删除此目录。
 
 不必卸载 Java SDK (JDK)，因为它已预先打包为 Mac OS X/macOS 一部分。
 

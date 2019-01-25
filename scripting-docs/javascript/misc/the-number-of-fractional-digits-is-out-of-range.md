@@ -1,5 +1,5 @@
 ---
-title: 小数位数超出范围 |Microsoft 文档
+title: 小数位数不在范围内 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 17ffec5e6b4cfff85b49f61e7105ca8ce3d75c78
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633177"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348459"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>小数位数超出范围
-尝试向函数传递了无效自变量**Number.prototype.toExponential**。 函数的参数**toExponential()** 必须是介于 0 到 20 （含） 之间。  
+尝试向函数传递了无效的参数**Number.prototype.toExponential**。 函数的参数**toExponential()** 必须介于 0 到 20 （含） 之间。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   确保自变量**toExponential()** 不太大或太小。  
+-   确保为参数**toExponential()** 不是太大或太小。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [toExponential 方法 (Number)](../../javascript/reference/toexponential-method-number-javascript.md)

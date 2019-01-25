@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptState |Microsoft Docs
+title: IActiveScript::GetScriptState | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a64067679e1c56831002494c579ffdeba84a1abe
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096572"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346626"
 ---
 # <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
 检索脚本引擎的当前的状态。 此方法可以从非基础线程调用不会导致到主机对象或一个非基本标注[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)接口。  

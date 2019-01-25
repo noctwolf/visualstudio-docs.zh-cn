@@ -1,5 +1,5 @@
 ---
-title: ICanHandleException 接口 |Microsoft 文档
+title: ICanHandleException Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bfd9fe2c766d3c390382ccfbcf2a8fd2319e48f5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 23b886b9960742abf94cc44c3631a1123fc0e83d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725207"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349967"
 ---
 # <a name="icanhandleexception-interface"></a>ICanHandleException 接口
-允许调用方的脚本引擎的调用方，来指定哪些异常句柄。  
+允许调用方的脚本引擎的调用方以指定哪些异常句柄。  
   
 ## <a name="methods"></a>方法  
- 除了从继承的方法`IUnknown`、`ICanHandleException`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`ICanHandleException`接口公开以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[ICanHandleException::CanHandleException](../../winscript/reference/icanhandleexception-canhandleexception.md)|确定脚本引擎的调用方可以处理指定的异常。|
+|[ICanHandleException::CanHandleException](../../winscript/reference/icanhandleexception-canhandleexception.md)|确定是否脚本引擎的调用方可以处理指定的异常。|

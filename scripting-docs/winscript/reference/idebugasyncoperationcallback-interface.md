@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperationCallBack 接口 |Microsoft 文档
+title: IDebugAsyncOperationCallBack Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,19 +14,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a776592ba09031e633a82f10e8d0ed9852db4b6e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 84b5ac06d0b284a7a1f65481e0cdf8947117f260
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726437"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347887"
 ---
 # <a name="idebugasyncoperationcallback-interface"></a>IDebugAsyncOperationCallBack 接口
-提供与相关的进度的状态事件`IDebugAsyncOperation`接口评估。  
+提供与 `IDebugAsyncOperation` 接口计算进度相关的状态事件。  
   
 ## <a name="methods"></a>方法  
- 除了从继承的方法`IUnknown`、`IDebugAsyncOperationCallBack`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IDebugAsyncOperationCallBack`接口公开以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDebugAsyncOperationCallBack::onComplete](../../winscript/reference/idebugasyncoperationcallback-oncomplete.md)|用信号通知，结果是从异步调试操作可用。|
+|[IDebugAsyncOperationCallBack::onComplete](../../winscript/reference/idebugasyncoperationcallback-oncomplete.md)|发出信号，结果是可从异步调试操作。|

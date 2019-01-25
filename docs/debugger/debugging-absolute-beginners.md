@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35f9e866f58d52b7f74ac0a136b0eeb49382c612
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15facda7bcb2b07dd071aaf0e40c44d265a01826
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927319"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204503"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>零基础调试的方法
 
@@ -64,9 +64,9 @@ ms.locfileid: "53927319"
 
 在调试程序中运行应用（也称为“调试模式”），这意味着调试程序会主动监视程序运行时发生的所有事情。 此外允许在任何时候暂停应用以检查其状态，然后逐行单步调试代码以查看发生的每个细节。
 
-在 Visual Studio 中，通过使用调试工具栏中的 F5（或“调试” > “开始调试”菜单按钮或“开始调试”按钮![开始调试](../debugger/media/dbg-tour-start-debugging.png "Start Debugging")）来进入调试模式。 如果发生任何异常，则 Visual Studio 的异常帮助程序会找到发生异常的确切位置，并提供其他有用信息。
+在 Visual Studio 中，通过使用调试工具栏中的 F5（或“调试” > “开始调试”菜单按钮或“开始调试”按钮![开始调试](../debugger/media/dbg-tour-start-debugging.png "Start Debugging")）来进入调试模式。 如果发生任何异常，则 Visual Studio 的异常帮助程序会找到发生异常的确切位置，并提供其他有用信息。 若要详细了解如何处理代码中的异常，请参阅[通过编写更优质 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)。
 
-如果未收到异常，则你可能清楚在代码中查找问题的位置。 可在此处将断点与调试程序配合使用，使你有机会更仔细地检查代码。 断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在何处暂停正在运行的代码，以查看变量的值或内存的行为，或代码运行的顺序。
+如果未收到异常，则你可能清楚在代码中查找问题的位置。 可在此处结合使用断点和调试器，这样便有机会更仔细地检查代码。 断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在何处暂停正在运行的代码，以查看变量的值或内存的行为，或代码运行的顺序。
 
 在 Visual Studio 中，可通过单击代码行旁边的左边距来快速设置断点。 或将光标置于行并按 F9。
 

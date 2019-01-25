@@ -1,5 +1,5 @@
 ---
-title: 缺少 JavaScript 对象 |Microsoft 文档
+title: 缺少 JavaScript 对象 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,19 +21,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 28514e4f1691364f68c2f60f3cab3bb0c18b1d12
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633037"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348004"
 ---
 # <a name="javascript-object-expected"></a>缺少 JavaScript 对象
-尝试将非[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]对要求的内置函数的对象[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]对象。 各种内置功能需要在中定义对象[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]（而不是由主机或外部组件和控件一样定义的对象）。  
+尝试将非[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]要求的内置函数的对象[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]对象。 各种内置函数需要中定义的对象[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]（而不是对象定义的主机或外部组件和控件一样）。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   请确保你正在传入的作为一个参数的正确类型的对象。  
+-   请确保您正在传入的因为参数是正确类型的对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [对象和数组](../../javascript/objects-and-arrays-javascript.md)   
  [使用数组](../../javascript/advanced/using-arrays-javascript.md)

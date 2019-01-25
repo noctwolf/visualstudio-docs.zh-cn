@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::SynchronousCallInMainThread |Microsoft 文档
+title: IDebugApplication110::SynchronousCallInMainThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef52ebfe8bfccecc0eea2383787a5b2698a5ce5f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d3ebe79563ed6dbd57de759b79a452f280918010
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725797"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349655"
 ---
 # <a name="idebugapplication110synchronouscallinmainthread"></a>IDebugApplication110::SynchronousCallInMainThread
-主线程上进行同步调用。  
+将主线程上同步调用。  
   
 > [!IMPORTANT]
 >  [IDebugApplication110 接口](../../winscript/reference/idebugapplication110-interface.md)是实现由 PDM v11.0 和更高版本。 在 activdbg100.h 中发现。  
@@ -44,10 +44,10 @@ HRESULT SynchronousCallInMainThread([in] IDebugThreadCall* pptc, [in] DWORD_PTR 
  调用的第一个参数。  
   
  `dwParam2`  
- 调用第二个参数。  
+ 调用的第二个参数。  
   
  `dwParam3`  
  调用的第三个参数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplication110 接口](../../winscript/reference/idebugapplication110-interface.md)

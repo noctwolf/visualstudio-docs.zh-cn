@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8bacc61ec9c254ce662854a08fe6a508977a72e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51730191"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>“函数”视图 - .NET 内存检测数据
@@ -30,7 +30,7 @@ ms.locfileid: "51730191"
   
 ## <a name="general"></a>常规  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**函数名**|函数名。|  
 |**函数地址**|函数的地址。|  
@@ -49,7 +49,7 @@ ms.locfileid: "51730191"
   
  独占内存值指示由函数（但不由其子函数）创建的对象的数量和大小。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**非独占分配数**|在此函数及此函数所调用的函数中所创建的对象总数。|  
 |**非独占分配数百分比**|分析运行期间分配的属于此函数的非独占分配的所有对象数的百分比。|  
@@ -63,7 +63,7 @@ ms.locfileid: "51730191"
 ## <a name="elapsed-inclusive-values"></a>已用非独占值  
  已用非独占值表示函数位于调用堆栈上的时间。 此时间包括子函数中和对操作系统的调用中所用的时间，如上下文切换和输入/输出操作。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**已用非独占时间**|对此函数的所有调用的总已用非独占时间。|  
 |**已用非独占时间百分比**|此函数的已用非独占时间占分析运行期间所用的总已用非独占时间的百分比。|  
@@ -74,7 +74,7 @@ ms.locfileid: "51730191"
 ## <a name="elapsed-exclusive-values"></a>已用独占值  
  已用独占值表示函数在调用堆栈顶部直接执行的时间。 此时间包括对操作系统的调用所用的时间，如上下文切换和输入/输出操作，但不包括子函数所用的时间。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**已用独占时间**|对此函数的所有调用的总已用独占时间。|  
 |**已用独占时间百分比**|此函数的总已用独占时间占分析运行期间所用的总已用独占时间的百分比。|  
@@ -85,7 +85,7 @@ ms.locfileid: "51730191"
 ## <a name="application-inclusive-values"></a>应用程序非独占值  
  应用程序非独占值表示函数位于调用堆栈上的时间。 此时间不包括对操作系统的调用中所用的时间，如上下文切换和输入/输出操作，但包括子函数中所用的时间。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**应用程序非独占时间**|对此函数的所有调用的总应用程序非独占时间。|  
 |**应用程序非独占时间百分比**|此函数的应用程序总非独占时间占分析运行期间所用的总已用非独占时间的百分比。|  
@@ -96,7 +96,7 @@ ms.locfileid: "51730191"
 ## <a name="application-exclusive-values"></a>应用程序独占值  
  应用程序独占值表示函数在调用堆栈顶部直接执行的时间。 此时间不包括对操作系统的调用中所用的时间，如上下文切换和输入/输出操作，也不包括子函数中所用的时间。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**应用程序独占时间**|对此函数的所有调用的总应用程序独占时间。|  
 |**应用程序独占时间百分比**|此函数的应用程序总独占时间占分析运行期间所用的总已用独占时间的百分比。|  
@@ -105,7 +105,7 @@ ms.locfileid: "51730191"
 |**最短应用程序独占时间**|对此函数的调用的最短应用程序独占时间。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
+ [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“函数”视图 - 采样](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [“函数”视图](../profiling/functions-view-instrumentation-data.md)   
  [“函数”视图](../profiling/functions-view-sampling-data.md)

@@ -12,12 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8d6f6758b32f55a7567f1828e8902cd4ad3c906e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9023f094ca662a270d7a28609e09f012d8f445c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952993"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154358"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>如何：收集 IntelliTrace 数据以帮助调试难题
 
@@ -61,7 +61,7 @@ IntelliTrace 文件中收集的数据可减少重现和诊断代码中的错误�
      此代理允许你为 IntelliTrace 和测试影响诊断数据适配器收集有关从客户端到 Web 服务器的 http 调用的信息。
 
     > [!WARNING]
-    > 如果决定对正用于 Internet Information Server (IIS) 上的应用程序池（您打算在此处收集 Intellitrace 数据）的标识使用自定义帐户，则必须在 IIS 计算机上为正在使用的自定义帐户创建本地用户配置文件。 您可以为自定义帐户创建本地配置文件，方法是本地登录到 IIS 计算机一次，或使用自定义帐户凭据运行以下命令行：
+    > 如果决定对正用于 Internet Information Server (IIS) 上应用程序池（打算在其中收集 IntelliTrace 数据）的标识使用自定义帐户，必须在 IIS 计算机上为正在使用的自定义帐户创建本地用户配置文件。 您可以为自定义帐户创建本地配置文件，方法是本地登录到 IIS 计算机一次，或使用自定义帐户凭据运行以下命令行：
     >
     > runas /user:domain\name /profile cmd.exe
 

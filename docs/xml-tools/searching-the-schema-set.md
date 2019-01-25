@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26be8121c679cc2614440f8e28f52b383dbe944c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fdb4a680fc2bbfc9a55d93d17f9ef95d45fc6186
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836564"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270068"
 ---
 # <a name="search-the-schema-set"></a>搜索架构集
 
@@ -40,7 +40,7 @@ ms.locfileid: "53836564"
 
 ## <a name="schema-specific-search"></a>架构特定的搜索
 
- **XML 架构资源管理器**还可以使用的上下文菜单访问的内置搜索**XML 架构资源管理器**。 有关可用的上下文菜单的详细信息，请参阅[上下文菜单](../xml-tools/context-menus-xml-schema-explorer.md)。 此外可以从起始视图; 执行特定于架构的搜索有关详细信息，请参阅中的"架构集详细信息"部分[起始视图](../xml-tools/start-view.md)主题。
+ **XML 架构资源管理器**还可以使用的上下文 （右键单击） 菜单访问的内置搜索**XML 架构资源管理器**。 有关可用的上下文菜单的详细信息，请参阅[上下文菜单](../xml-tools/context-menus-xml-schema-explorer.md)。 此外可以从起始视图; 执行特定于架构的搜索有关详细信息，请参阅中的"架构集详细信息"部分[起始视图](../xml-tools/start-view.md)主题。
 
 ## <a name="display-and-navigate-search-results"></a>显示和导航搜索结果
 

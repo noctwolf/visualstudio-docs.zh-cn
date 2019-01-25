@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110 接口 |Microsoft 文档
+title: IDebugApplication110 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd7c283e925db5b42b4d04bfc42ea087ecc22b6f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b13208d6a507ea4ed3157606f358b6b0168180cf
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726057"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349551"
 ---
 # <a name="idebugapplication110-interface"></a>IDebugApplication110 接口
-`IDebugApplication110`接口扩展的功能[IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)。 此接口的实例可以通过调用的实现 QueryInterface [IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)。  
+`IDebugApplication110`接口扩展的功能[IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)。 您可以对的实现调用 QueryInterface 来获取此接口的实例[IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)。  
   
 > [!IMPORTANT]
 >  此接口由 PDM v11.0 和更高版本实现。 在 activdbg100.h 中发现。  
@@ -32,6 +32,6 @@ ms.locfileid: "24726057"
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDebugApplication110::SynchronousCallInMainThread](../../winscript/reference/idebugapplication110-synchronouscallinmainthread.md)|主线程上进行同步调用。|  
-|[IDebugApplication110::AsynchronousCallInMainThread](../../winscript/reference/idebugapplication110-asynchronouscallinmainthread.md)|在主线程中进行异步调用。|  
-|[IDebugApplication110::CallableWaitForHandles](../../winscript/reference/idebugapplication110-callablewaitforhandles.md)|等待任何指定的句柄发送信号，同时允许跨线程调用发布到此线程。 必须从调试器线程调用此方法。|
+|[IDebugApplication110::SynchronousCallInMainThread](../../winscript/reference/idebugapplication110-synchronouscallinmainthread.md)|将主线程上同步调用。|  
+|[IDebugApplication110::AsynchronousCallInMainThread](../../winscript/reference/idebugapplication110-asynchronouscallinmainthread.md)|在主线程上进行异步调用。|  
+|[IDebugApplication110::CallableWaitForHandles](../../winscript/reference/idebugapplication110-callablewaitforhandles.md)|等待任何指定的句柄，以向发出信号，同时允许跨线程调用发布到此线程。 必须从调试器线程调用此方法。|

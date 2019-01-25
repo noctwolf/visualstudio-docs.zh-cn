@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220217"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345482"
 ---
 # <a name="active-script-debugging-overview"></a>活动脚本调试概述
 活动脚本调试接口可以进行中性语言调试和中性主机调试，并支持各种开发环境。  
@@ -126,7 +126,7 @@ ms.locfileid: "50220217"
   [IDebugStackFrameSnifferEx 接口](../winscript/reference/idebugstackframesnifferex-interface.md)  
   枚举 PDM 的逻辑堆栈帧。  
   
-## <a name="hosts"></a>宿主  
+## <a name="hosts"></a>主机  
  主机：  
   
 - 承载语言引擎。  

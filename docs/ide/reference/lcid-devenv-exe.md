@@ -1,47 +1,54 @@
 ---
 title: -LCID (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - language default
 - locale IDs, setting for IDE
+- Devenv, /L switch
 - Devenv, /LCID switch
 - locale IDs
-- /l Devenv switch
+- L Devenv switch
+- /L Devenv switch
 - LCID devenv switch
-- /lcid Devenv switch
+- /LCID Devenv switch
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c3f8633721a4568b81fab31d8fe91a4c33be2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 42da279a64f04bca7775440f803e7a26e6bd2dc8
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852061"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227299"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
-设置集成开发环境 (IDE) 内文本、货币和其他值使用的默认语言。
+
+设置用于 IDE 内文本、货币和其他值的默认语言。
 
 ## <a name="syntax"></a>语法
 
-```cmd
-devenv {/LCID|/l} LocaleID
+```shell
+devenv {/LCID|/L} LocaleID
 ```
 
 ## <a name="arguments"></a>自变量
- `LocaleID`（必需）。 指定的语言的 LCID（区域设置 ID）。
+
+- *LocaleID*
+
+  必需。 指定的语言的区域设置标识符 (LCID)。
 
 ## <a name="remarks"></a>备注
- 加载 IDE 并设置环境的默认自然语言。 此更改保留在会话中，并反映在 IDE 的“选项”对话框中“环境”选项的“国际设置”窗格上。
 
- 如果指定的语言在用户的系统上不可用，则忽略 /LCID 开关。
+加载 IDE 并设置环境的默认自然语言。 此更改跨会话暂留，IDE 在“工具” > “选项” > “环境” > “国际设置” > “语言”框中显示此更改。
 
- 下表列出了受 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持的语言的 LCID。
+如果指定的语言对系统不可用，`/LCID` 开关遭忽略。
+
+下表列出了 Visual Studio 支持的语言的 LCID。
 
 |语言|LCID|
 |--------------|----------|
@@ -56,9 +63,10 @@ devenv {/LCID|/l} LocaleID
 |西班牙语|3082|
 
 ## <a name="example"></a>示例
- 此示例加载具有英语资源字符串的 IDE。
 
-```cmd
+此示例加载具有英语资源字符串的 IDE。
+
+```shell
 devenv /LCID 1033
 ```
 

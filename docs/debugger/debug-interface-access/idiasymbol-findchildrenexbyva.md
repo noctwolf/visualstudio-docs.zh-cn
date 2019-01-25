@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findChildrenExByVA |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fa4f64570977a1b3546f933aa7c55e5e69ddcd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 7b9a3f790acd7a285468810f981fd7e0210563eb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909923"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53931137"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
 检索在指定的虚拟地址有效的符号的子级。  
@@ -27,7 +25,7 @@ ms.locfileid: "49909923"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT findChildrenExByVA (   
+HRESULT findChildrenExByVA (   
    enum SymTagEnum   symtag,  
    LPCOLESTR         name,  
    DWORD             compareFlags,  
@@ -59,7 +57,7 @@ HRESULT findChildrenExByVA (
  返回本地符号包括实时范围信息。  
   
 ## <a name="requirements"></a>要求  
- 标头： Dia2.h  
+ 标头：dia2.h  
   
  库： diaguids.lib  
   
@@ -69,5 +67,5 @@ HRESULT findChildrenExByVA (
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)

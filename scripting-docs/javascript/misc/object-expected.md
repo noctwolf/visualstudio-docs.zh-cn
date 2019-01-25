@@ -1,5 +1,5 @@
 ---
-title: 缺少对象 |Microsoft 文档
+title: 缺少对象 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,12 +20,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6add25325653627d23eb699ab53c0f2799c8322f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 49d66c82081af06bf23a43922629a579a6d6f590
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632807"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345781"
 ---
 # <a name="object-expected"></a>缺少对象
 你尝试调用了 `Object` 类型以外的对象上的方法或属性，或在需要 `Object` 时传递了 `Object` 类型以外的参数。  
@@ -34,7 +34,7 @@ ms.locfileid: "24632807"
   
 -   仅调用类型为 `Object` 的对象上的方法或属性。  
   
--   如果非对象参数发生错误，则传递类型为 `Object` 的对象。  
+-   如果非对象自变量发生错误，则传递类型为 `Object` 的对象。  
   
 -   检查是否正在调用未定义的或 null 引用而不是类型为 `Object` 的对象。  
   
@@ -52,6 +52,6 @@ ms.locfileid: "24632807"
     }  
     ```  
   
-## <a name="see-also"></a>另请参阅  
- [Object 对象](../../javascript/reference/object-object-javascript.md)   
+## <a name="see-also"></a>请参阅  
+ [对象的对象](../../javascript/reference/object-object-javascript.md)   
  [对象和数组](../../javascript/objects-and-arrays-javascript.md)

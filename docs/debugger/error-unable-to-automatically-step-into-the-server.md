@@ -1,8 +1,6 @@
 ---
-title: 错误： 无法自动单步执行服务器 |Microsoft Docs
-ms.custom: ''
+title: 错误：无法自动单步执行服务器 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.causality_no_server_response
@@ -19,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37298dcbb2443755136c4c57eb4633fcb3197a87
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0d2c1a36555f9861fabe30937c6ecde856277cdf
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849510"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53955901"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>错误：无法自动单步执行服务器
 此错误显示如下：  
@@ -37,8 +35,8 @@ ms.locfileid: "49849510"
   
 - [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序的 web.config 文件未将调试设置为“true”（请参见 [ASP.NET 应用程序中的调试模式](../debugger/how-to-enable-debugging-for-aspnet-applications.md)）。  
   
-- 在安装 Visual Studio 后安装了某个版本的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应在安装 Visual Studio 之前安装。 若要解决此问题，请使用 Windows**控制面板 > 程序和功能**来修复 Visual Studio 安装。  
+- 在安装 Visual Studio 后安装了某个版本的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应在安装 Visual Studio 之前安装。 若要修复此问题，请使用“Window 控制面板”>“程序和功能”来修复 Visual Studio 安装。  
   
 ## <a name="see-also"></a>请参阅  
- [远程调试错误和故障排除](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

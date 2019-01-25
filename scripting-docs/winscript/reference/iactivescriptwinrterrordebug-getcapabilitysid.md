@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptWinRTErrorDebug::GetCapabilitySid |Microsoft 文档
+title: IActiveScriptWinRTErrorDebug::GetCapabilitySid | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78d53b498ba88fae50cfaca106a65a2bb07d21a5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 2e0e9f642e780b745f8b66734893345618a43460
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724937"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349812"
 ---
 # <a name="iactivescriptwinrterrordebuggetcapabilitysid"></a>IActiveScriptWinRTErrorDebug::GetCapabilitySid
-如果可用，则返回 Windows 运行时错误，的功能 SID。  
+如果可用，则返回 Windows 运行时错误的功能的 SID。  
   
 > [!IMPORTANT]
 >  [IActiveScriptWinRTErrorDebug 接口](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)是实现由 PDM v11.0 和更高版本。 在 activdbg100.h 中发现。  
@@ -35,7 +35,7 @@ HRESULT GetCapabilitySid([out] BSTR * capabilitySid);
   
 #### <a name="parameters"></a>参数  
  `capabilitySid`  
- SID 的错误中的功能。  
+ 此功能的错误的 SID。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptWinRTErrorDebug 接口](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)

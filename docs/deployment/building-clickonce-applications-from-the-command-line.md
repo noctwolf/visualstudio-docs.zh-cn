@@ -1,8 +1,6 @@
 ---
 title: 生成 ClickOnce 应用程序从命令行 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1484466e3d1b1a43a6ff28c2526dbb478ef7392d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 41161a41b1e2d1e13c5b9d8ebfad47c558570206
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853280"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926260"
 ---
-# <a name="build-clickonce-applications-from-the-command-line"></a>生成 ClickOnce 应用程序从命令行
+# <a name="build-clickonce-applications-from-the-command-line"></a>从命令行生成 ClickOnce 应用程序
 在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，可以生成命令行中的项目，即使它们在集成的开发环境 (IDE) 中创建。 事实上，您可以重新生成与创建的项目[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]仅有的另一台计算机上[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安装。 这允许你在重现生成使用自动化的过程，例如，在中心生成实验室或使用高级脚本编写技术生成项目本身的范围之外。  
   
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>使用 MSBuild 来重现 ClickOnce 应用程序部署  
@@ -35,9 +33,9 @@ ms.locfileid: "49853280"
   
  "目标"是一个指示符，MSBuild 如何处理命令。 主要目标是"生成"目标和"发布"目标。 生成目标相当于选择生成命令 （或按 f5 键） 在 IDE 中。 如果只想要生成你的项目，可以实现此目的通过键入`msbuild`。 此命令有效，因为生成目标是生成的所有项目的默认目标[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]。 这意味着您不显式需要指定 build 目标。 因此，键入`msbuild`是相同的操作键入`msbuild /target:build`。  
   
- `/target:publish`命令告知 MSBuild 调用发布目标。 发布目标取决于生成目标。 这意味着发布操作是生成操作的超集。 例如，如果对一个 Visual Basic 或 C# 源代码文件进行了更改，相应的程序集将自动重新生成由发布操作。  
+ `/target:publish`命令告知 MSBuild 调用发布目标。 发布目标取决于生成目标。 这意味着发布操作是生成操作的超集。 例如，如果对一个 Visual Basic 进行了更改或C#自动将由发布操作重新生成源文件，相应的程序集。  
   
- 有关生成完整的信息[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用 Mage.exe 命令行工具创建的部署你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]清单，请参阅[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+ 有关生成完整的信息[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用 Mage.exe 命令行工具创建的部署你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]清单，请参阅[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>创建和生成基本 ClickOnce 应用程序使用 MSBuild  
   
@@ -159,7 +157,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL、 SupportUrl、 PublishURL，和 UpdateURL  
  下表显示了 ClickOnce 部署的四个 URL 选项。  
   
-|URL 选项|描述|  
+|URL 选项|说明|  
 |----------------|-----------------|  
 |`PublishURL`|所需发布 ClickOnce 应用程序到 Web 站点。|  
 |`InstallURL`|可选。 设置此 URL 选项，则不同于安装站点时`PublishURL`。 例如，可以设置`PublishURL`到一个 FTP 路径和一组`InstallURL`为 Web URL。|  
@@ -170,5 +168,5 @@ msbuild /target:publish /property:BootstrapperEnabled=false
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   
- [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
- [演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+ [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
+ [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

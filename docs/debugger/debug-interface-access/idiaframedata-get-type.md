@@ -1,8 +1,6 @@
 ---
 title: 'Idiaframedata:: Get_type |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0209a715ece3e1fa760080ad7ccf0803d11950df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 9ee35b5884696d2d9faade5ceb2ec16945d3991c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837558"
 ---
 # <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
 检索特定于编译器的帧类型。  
@@ -27,7 +25,7 @@ ms.locfileid: "49834586"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_type (   
+HRESULT get_type (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_type (
  [out]返回一个值从[StackFrameTypeEnum 枚举](../../debugger/debug-interface-access/stackframetypeenum.md)枚举，指示特定于编译器的帧类型。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

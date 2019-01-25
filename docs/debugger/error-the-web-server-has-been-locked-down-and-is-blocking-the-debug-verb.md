@@ -1,8 +1,6 @@
 ---
-title: 错误： Web 服务器已被锁定，正在阻塞 DEBUG 谓词 |Microsoft 文档
-ms.custom: ''
+title: 错误：Web 服务器已被锁定，并阻止 DEBUG 谓词 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2537868da6c72df9a68c492b650c72d8a980fcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 3d36221eb65c1f2302877993b7dc494411290ae3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473993"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941552"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>错误：Web 服务器已被锁定，正在阻塞 DEBUG 谓词
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>错误：Web 服务器已被锁定，并阻止 DEBUG 谓词
 由于运行了 IIS 锁定工具并且安装并激活了 URLScan，单步执行 Web 应用程序或 XML Web services 失败。 这种情况下将禁止 IIS 接收 DEBUG 谓词。  
   
  URLScan 是与 IIS 锁定工具一同使用的安全工具，它使 IIS 网站管理员能够关闭不必要的功能并限制服务器处理的 HTTP 请求类型。 通过阻塞特定的 HTTP 请求，URLScan 安全工具可防止有潜在危害的请求到达服务器造成损害。  
@@ -38,7 +36,7 @@ ms.locfileid: "31473993"
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  创建一份该文件，并将其命名**Urlscan.old**。  
+2.  创建此文件的副本并将它命名为 Urlscan.old。  
   
 3.  使用“记事本”或选定的文本编辑器打开 Urlscan.ini 文件的原始副本。  
   
@@ -51,5 +49,5 @@ ms.locfileid: "31473993"
 7.  重新启动服务器或重新启动 IIS。  
   
 ## <a name="see-also"></a>请参阅  
- [调试 Web 应用程序： 错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [错误：Web 服务器未能找到请求的资源](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+ [调试 Web 应用程序：错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [错误：Web 服务器找不到所请求的资源](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

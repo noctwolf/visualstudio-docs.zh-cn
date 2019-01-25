@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1e1e01721ae261b756bd6f3567b8f06dc73f12
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 143a40c1a2e3602460419465cb84d6ffa44d853c
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921333"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269847"
 ---
 # <a name="find-references-in-your-code"></a>在代码中查找引用
 
@@ -40,13 +40,13 @@ ms.locfileid: "53921333"
 
 - 按 F8 转到下一个引用，或者按 Shift + F8 转到上一个引用。
 - 对引用按 Enter 键，或双击引用在代码中转到此引用。
-- 在引用的上下文菜单中，选择“转到上一位置”或“转到下一位置”命令。
+- 在引用的右键单击菜单（关联菜单）中，选择“转到上一位置”或“转到下一位置”命令。
 - 选择向上箭头和向下箭头键（如果已在“选项”对话框中启用）。 要启用此功能，请在菜单栏上依次选择“工具” > “选项” > “环境” > “选项卡和窗口” > “预览选项卡”，然后选中“允许在预览选项卡中打开新文件”和“在查找结果中预览选定的文件”框。
 
 ## <a name="change-reference-groupings"></a>更改引用分组
 默认情况下，引用是先按项目进行分组，然后再按定义进行分组。 不过，可以更改工具栏上“分组依据:”下拉列表框中的设置，从而更改此分组顺序。 例如，可以将其从默认设置“先按项目，然后按定义”更改为“先按定义，然后按项目”，也能更改为其他设置。
 
-虽然“定义”和“项目”是默认使用的两个分组，但可以在选定项的上下文菜单中选择“分组”命令，从而添加其他分组。 如果解决方案有许多文件和路径，那么添加其他分组将会很有帮助。
+虽然“定义”和“项目”是默认使用的两个分组，但可以在选定项的右键单击菜单或关联菜单中选择“分组”命令，从而添加其他分组。 如果解决方案有许多文件和路径，那么添加其他分组将会很有帮助。
 
 ## <a name="see-also"></a>请参阅
 

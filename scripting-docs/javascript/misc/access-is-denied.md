@@ -20,11 +20,11 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 9b49f60395a853d7dfda91738ccccaba9d585b46
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295158"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349473"
 ---
 # <a name="access-is-denied"></a>拒绝访问
 脚本尝试从当前页的主机以外的源访问数据。 后跟 Internet Explorer 及其他浏览器的同一初始策略允许脚本只从具备当前页 URL 的同一方案、主机和端口的源访问数据。  

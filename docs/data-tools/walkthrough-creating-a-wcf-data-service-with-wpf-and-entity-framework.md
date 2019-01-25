@@ -1,5 +1,5 @@
 ---
-title: 演练：使用 WPF 和 Entity Framework 创建 WCF Data Service
+title: 演练：通过 WPF 和实体框架创建 WCF 数据服务
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +15,16 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: cbafb006091956ce5359bc6b575accd057b2ee37
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: b0353688be3b6fa62a0f33338461eeab78ee33d1
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305346"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53888499"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练：使用 WPF 和 Entity Framework 创建 WCF Data Service
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练：通过 WPF 和实体框架创建 WCF 数据服务
 本演练演示如何创建一个承载于 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序中的简单 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，然后从 Windows 窗体应用程序中访问它。
 
 在本演练中你：
@@ -291,4 +290,4 @@ ms.locfileid: "52305346"
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [如何：添加、更新或删除 WCF Data Service 引用](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [如何：添加、更新或删除 WCF 数据服务引用](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

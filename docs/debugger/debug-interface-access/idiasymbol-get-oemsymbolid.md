@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_oemsymbolid |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b15cbfc289a88059960603159db3a7d57fd011
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d12001e11e69bed1fe306e36192291dd9a06a35a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917162"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53848319"
 ---
 # <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
 检索原始设备制造商 (OEM) 符号的 ID 值。  
@@ -27,7 +25,7 @@ ms.locfileid: "49917162"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_oemSymbolId (   
+HRESULT get_oemSymbolId (   
    DWORD* pRetVal  
 );  
 ```  

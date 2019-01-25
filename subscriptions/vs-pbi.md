@@ -9,16 +9,19 @@ description: 了解有关所选 Visual Studio 订阅中随附的 Power BI Pro �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0fb3033699c3331ec61e6d3fe30dd70fd47cc759
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: a437dd537caa75865a245a22387a4db53d94927f
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739638"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380184"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Power BI Pro
 
 将数据转换为丰富的视觉对象，便于你进行收集和组织。
+
+> [!Note]
+> 此 Power BI 许可证可用于在安全环境中了解和试验 Power BI 功能，而不会影响更大的生产/开发/测试环境。  当前的 Power BI 版本要求，订阅者必须创建自己的租户，才能强制执行分隔。 如果需要公司租户中有与公司凭据相关联的 Power BI 许可证，请与公司管理员合作，共同购买和分配许可证。
 
 ## <a name="activation-steps"></a>激活步骤
 若要使用 Power BI Pro，需要设置一个帐户或使用现有帐户登录。
@@ -80,10 +83,10 @@ ms.locfileid: "53739638"
 | Visual Studio Dev Essentials | NA  | 不可用 |NA|
 | Visual Studio Enterprise（月度云） | Azure                                       | 不可用                                  |NA|
 
-<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务、Microsoft 最有价值专家 (MVP)、区域总监 (RD)。不包括：Microsoft 合作伙伴网络 (MPN)、FTE、Imagine。
+<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务、最有价值专家 (MVP)、区域总监 (RD)。不包括：Microsoft 合作伙伴网络 (MPN)、FTE、Imagine。
 
 > [!NOTE]
-> Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的功能不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
+> Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
 
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
@@ -95,8 +98,10 @@ A:权益是免费的，但是激活需要使用用于处理付费订单的系统
 - 信用卡。  如果提供信用卡卡号，不会对该卡收费。 
 - 转账。  如果选择“转账”作为付款方式，则不需要提供信用卡卡号。  也可以将间隔设置为“每年”。  你将收到一封电子邮件，通知你账单已准备就绪。  账单金额为 0.00 美元。  
 
-### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>问：订阅许可证中的 Power BI Pro 权益是否可用于生产环境？
-A:可以。  
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licensed-for-use-in-a-production-environment"></a>问：我已获授权可以在生产环境中使用的订阅中是否随附 Power BI Pro 权益？
+A:是，可以在生产环境中使用它，但有两个重要注意事项：
+- 此产品/服务要求，必须在它自己的租户上安装。  如果需要公司租户中有与公司凭据相关联的 Power BI 许可证，请与公司管理员合作，共同购买和分配许可证。 
+- 此 Power BI Pro 权益无法用于政府租户。  
 
 ### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>问：当我尝试激活 Power BI Pro 时，收到一条消息“你已经通过工作获得帐户”。  我仍可以使用此权益吗？
 A:可以。  消息表明你登录到一个已有活动 Office 365 租户的域，而你不是其中的管理员。  若要将 Power BI Pro 添加到租户，你必须是该租户的管理员。  要解决此问题，请按照以下步骤创建自己的租户。

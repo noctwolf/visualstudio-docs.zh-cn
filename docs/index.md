@@ -6,12 +6,6 @@ titleSuffix: ''
 description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来开发适用于你的平台和设备的应用程序、服务和工具。
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: f84c7155fb46e462f899e0037deab925ecbbcda6
-ms.sourcegitcommit: 35bebf794f528d73d82602e096fd97d7b8f82c25
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53562134"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -141,8 +135,8 @@ Python</a>
                                                                 </li>
                                                                 <li>
                                                                     <a class="barLink" href="/visualstudio/javascript/">
-                                                                        <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="Node.js icon">
-Node.js</a>
+                                                                        <img src="https://docs.microsoft.com/media/logos/logo_js.svg" alt="JavaScript logo">
+JavaScript</a>
                                                                 </li>
                                                             </ul>
                                                         </td>
@@ -527,7 +521,7 @@ Unity 游戏</a>
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/scripting/">
+                                                <a href="/visualstudio/javascript/">
                                                     <h3>JavaScript</h3>
                                                     <p>轻型、跨平台的脚本语言，通常用于使 Web 页面更具交互性。</p>
                                                 </a>

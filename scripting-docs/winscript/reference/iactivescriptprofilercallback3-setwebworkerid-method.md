@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f4025dbee7b8b5b246163a1919aec335a8863937
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094428"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347211"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId 方法
 通知事件探查器关于要使用此分析会话的辅助 ID。 如果该函数不在页面的上下文中执行的则不调用此方法。 值`webWorkerId`每个辅助角色，从 1 开始的 1 为增量。 ID 值不应保持不变超过一个会话，并仅对辅助角色已创建的顺序相对应。  

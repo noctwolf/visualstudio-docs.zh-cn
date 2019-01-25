@@ -1,8 +1,6 @@
 ---
 title: 取消阻止远程工具下载
-ms.custom: ''
 ms.date: 07/19/2018
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
 - remote debugging, unblock download
@@ -11,14 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0586b8f0699ec2eca5843d59df1b6ddd7cecbd3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
-ms.translationtype: MT
+ms.openlocfilehash: bfc212dff46cea4de494f46a439026c7d5a851bb
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53905340"
 ---
-# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>如何： 取消阻止 Windows Server 上的远程工具下载
+# <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>如何：取消阻止 Windows Server 上的远程工具下载
 
 在 Windows Server 上的 Internet Explorer 中的默认安全设置可以使下载组件，如远程工具实现起来非常耗时。
 

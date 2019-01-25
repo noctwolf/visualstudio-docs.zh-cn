@@ -1,8 +1,6 @@
 ---
 title: 'Idialinenumber:: Get_length |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08462f0ffb70663583398352cd980c744cd7648e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 34e36486f95964169200cee7c41ac8eaebc27960
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849861"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53916408"
 ---
 # <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
 检索在块中的字节数。  
@@ -27,7 +25,7 @@ ms.locfileid: "49849861"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_length (   
+HRESULT get_length (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_length (
  [out]在块中返回字节的数。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
  块是在行上的源代码的长度由[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)对象。  

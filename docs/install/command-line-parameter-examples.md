@@ -1,7 +1,7 @@
 ---
 title: 安装的命令行参数示例
 description: 自定义这些示例，以创建自己的 Visual Studio 命令行安装。
-ms.date: 11/14/2018
+ms.date: 01/16/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6584d1b1864712a1c97b8d2405e7b366c5dd69d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ba829976e699f9087f9833f5578e80037f999c8
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989982"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380160"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Visual Studio 2017 安装命令行参数示例
 
@@ -28,7 +28,9 @@ ms.locfileid: "53989982"
 > 所有命令都需要进行管理提升，如果没有通过提升的提示符启动进程，将显示用户帐户控制提示。
 >
 > [!NOTE]
->  可以在命令行末尾使用 `^` 字符，将多行连接到一个命令中。 也可以直接在一行中编写这些代码行。 在 PowerShell 中，等效字符为反引号 (`` ` ``)。
+> 可以在命令行末尾使用 `^` 字符，将多行连接到一个命令中。 也可以直接在一行中编写这些代码行。 在 PowerShell 中，等效字符为反引号 (`` ` ``)。
+
+有关可使用命令行安装的工作负载和组件列表，请参阅 [Visual Studio 工作负载和组件 ID](workload-and-component-ids.md) 页。
 
 ## <a name="using---installpath"></a>Using --installPath
 
@@ -83,13 +85,15 @@ ms.locfileid: "53989982"
    --includeRecommended
   ```
 
-## <a name="using---includerecommended"></a>Using --includeRecommended
+## <a name="using---all"></a>使用 --all
 
 * 启动交互式安装 Visual Studio 2017 Enterprise 版本中的所有工作负载和组件：
 
   ```cmd
-  vs_enterprise.exe --all --includeRecommended --includeOptional
+  vs_enterprise.exe --all
   ```
+
+## <a name="using---includerecommended"></a>Using --includeRecommended
 
 * 借助 Node.js 开发支持，在已安装 Visual Studio 2017 Community 版本的计算机上安装 Visual Studio 2017 Professional 的第二个命名实例：
 
@@ -169,3 +173,4 @@ vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 * [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [创建 Visual Studio 2017 的脱机安装](create-an-offline-installation-of-visual-studio.md)
+* [Visual Studio 工作负荷和组件 ID](workload-and-component-ids.md)

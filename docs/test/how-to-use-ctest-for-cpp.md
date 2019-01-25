@@ -8,12 +8,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: d02c4546b98e2a7551f4454088acfc6a54637e4f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 057f243b0246bac1796fe160550e83f922593830
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925454"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270214"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用适用于 C++ 的 CTest
 
@@ -35,7 +35,7 @@ Visual Studio 中的 CMake 支持不涉及 Visual Studio 项目系统。 因此�
 
 ## <a name="to-run-tests-visual-studio-2017-version-155"></a>运行测试（Visual Studio 2017 版本 15.5）
 
-在 Visual Studio 2017 版本 15.5中，CTest 没有与“测试资源管理器”集成。 可以从 CMake 主菜单，或是在“解决方案资源管理器”中从 CMakeLists.txt 文件的上下文菜单运行测试。 测试结果会定向到 Visual Studio 输出窗口。
+在 Visual Studio 2017 版本 15.5中，CTest 没有与“测试资源管理器”集成。 可以通过 CMake 主菜单或“解决方案资源管理器”中 CMakeLists.txt 文件的右键单击菜单来运行测试。 测试结果会定向到 Visual Studio 输出窗口。
 
 ![在 VS2017 15.5 中运行 CTest 测试](media/cpp-cmake-run-tests.png)
 

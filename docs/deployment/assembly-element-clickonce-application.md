@@ -1,8 +1,6 @@
 ---
 title: '&lt;程序集&gt;元素 （ClickOnce 应用程序） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#assembly
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd872053117388e9e08dcb8c4c2bfedcba622fd4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 35c8193c2210d2a16a7d73164b551adb5a0f06bd
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53878346"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;程序集&gt;元素 （ClickOnce 应用程序）
 应用程序清单的的顶级元素。  
@@ -48,11 +46,11 @@ ms.locfileid: "39077085"
   
  程序集的子元素也必须通过继承或使用标记，这些命名空间中。  
   
- `assembly`元素具有以下属性。  
+ `assembly` 元素具有以下属性。  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
-|`manifestVersion`|必须的。 `manifestVersion`属性必须设置为`1.0`。|  
+|`manifestVersion`|必需。 `manifestVersion`属性必须设置为`1.0`。|  
   
 ## <a name="example"></a>示例  
  下面的代码示例演示`assembly`元素中的应用程序清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 此代码示例摘自[ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)。  
@@ -73,4 +71,4 @@ ms.locfileid: "39077085"
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)   
- [\<程序集 > 元素](../deployment/assembly-element-clickonce-deployment.md)
+ [\<assembly> 元素](../deployment/assembly-element-clickonce-deployment.md)

@@ -1,8 +1,6 @@
 ---
-title: 演练： 手动部署 ClickOnce 应用程序 |Microsoft Docs
-ms.custom: ''
+title: 演练：手动部署 ClickOnce 应用程序 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -22,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f25c0e0b60a3b0f52df534db8f3593a26a435a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 652c7eee2e4b3830966882afd4a9b9b31c8aceb3
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902868"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53923265"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>演练： 手动部署 ClickOnce 应用程序
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>演练：手动部署 ClickOnce 应用程序
 如果您不能使用 Visual Studio 部署应用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，或者需要使用高级的部署功能，如受信任的应用程序部署，应使用*Mage.exe*命令行工具来创建你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]清单。 本演练介绍如何创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]通过使用命令行版本的部署 (*Mage.exe*) 或图形版本 (*MageUI.exe*) 的清单生成和编辑工具。  
   
 ## <a name="prerequisites"></a>系统必备  
@@ -45,7 +43,7 @@ ms.locfileid: "49902868"
   
 - 确定如何将分布式部署。  
   
-   分布选项包括： Web、 文件共享或 CD。 有关详细信息，请参阅 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。  
+   分布选项包括：Web、 文件共享或 CD。 有关详细信息，请参阅 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。  
   
 - 确定应用程序是否需要提升的信任级别。  
   
@@ -62,7 +60,7 @@ ms.locfileid: "49902868"
   
    您需要确定你的应用程序是否包含具有用户帐户控制 (UAC) 信息的清单，如`<dependentAssembly>`元素。 若要检查的应用程序清单，可以使用 Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035)实用程序。  
   
-   如果你的应用程序包含具有 UAC 的详细信息的清单，您必须重新生成不带 UAC 的信息。 对于 C# 项目在 Visual Studio 中，打开项目属性并选择应用程序选项卡。在中**清单**下拉列表中，选择**创建不带清单的应用程序**。 对于 Visual Basic 项目在 Visual Studio 中，打开项目属性，选择应用程序选项卡，然后单击**查看 UAC 设置**。 在打开清单文件中，删除的所有元素内单个`<asmv1:assembly>`元素。  
+   如果你的应用程序包含具有 UAC 的详细信息的清单，您必须重新生成不带 UAC 的信息。 有关C#项目在 Visual Studio 中，打开项目属性并选择应用程序选项卡。在中**清单**下拉列表中，选择**创建不带清单的应用程序**。 对于 Visual Basic 项目在 Visual Studio 中，打开项目属性，选择应用程序选项卡，然后单击**查看 UAC 设置**。 在打开清单文件中，删除的所有元素内单个`<asmv1:assembly>`元素。  
   
 - 确定应用程序是否需要客户端计算机上的系统必备组件。  
   
@@ -114,7 +112,7 @@ ms.locfileid: "49902868"
   
 10. 将在部署目录中的所有文件复制到部署目标或媒体中。 这可能是网站或 FTP 站点、 文件共享或 CD-ROM 上的文件夹。  
   
-11. 向用户提供 URL、 UNC 或安装应用程序所需的物理介质。 如果提供的 URL 或 UNC，则必须向你的用户的完整路径的部署清单。 例如，如果 AppToDeploy 部署到 http://webserver01/ AppToDeploy 目录中，在完整的 URL 路径应 http://webserver01/AppToDeploy/AppToDeploy.application 。   
+11. 向用户提供 URL、 UNC 或安装应用程序所需的物理介质。 如果提供的 URL 或 UNC，则必须向你的用户的完整路径的部署清单。 例如，如果部署到 AppToDeploy http://webserver01/ AppToDeploy 目录中的完整 URL 路径会 http://webserver01/AppToDeploy/AppToDeploy.application。  
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>若要使用 MageUI.exe 图形工具部署应用程序  
   
@@ -189,7 +187,7 @@ ms.locfileid: "49902868"
   
 28. 将在部署目录中的所有文件复制到部署目标或媒体中。 这可能是网站或 FTP 站点、 文件共享或 CD-ROM 上的文件夹。  
   
-29. 向用户提供 URL、 UNC 或安装应用程序所需的物理介质。 如果提供的 URL 或 UNC，您必须为用户提供的部署清单的完整路径。 例如，如果 AppToDeploy 部署到 http://webserver01/ AppToDeploy 目录中，在完整的 URL 路径应 http://webserver01/AppToDeploy/AppToDeploy.application 。   
+29. 向用户提供 URL、 UNC 或安装应用程序所需的物理介质。 如果提供的 URL 或 UNC，您必须为用户提供的部署清单的完整路径。 例如，如果部署到 AppToDeploy http://webserver01/ AppToDeploy 目录中的完整 URL 路径会 http://webserver01/AppToDeploy/AppToDeploy.application。  
   
 ## <a name="next-steps"></a>后续步骤  
  当你需要进行部署的应用程序的新版本时，创建新版本命名的新目录 — 1.0.0.1—and 例如，将新的应用程序文件复制到新目录。 接下来，您需要按照前面的步骤来创建和注册一个新的应用程序清单，并更新和部署清单进行签名。 请务必指定相同的更高版本中均*Mage.exe* `-New`和`-Update`调用，作为[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]仅更新更高版本中，最重要的最左侧的整数。 如果您使用了*MageUI.exe*，你可以更新部署清单通过打开它，选择**应用程序引用**选项卡上，单击**选择清单**按钮，并然后选择更新的应用程序清单。  

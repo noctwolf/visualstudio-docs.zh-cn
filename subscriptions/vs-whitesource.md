@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的 WhiteSource Bol
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d9f4db463dad3ee2fbb216284791018dc504d7b6
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 4169036161e19092a78133207261f2fe434c1316
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739979"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380021"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 WhiteSource Bolt
 
@@ -41,20 +41,18 @@ ms.locfileid: "53739979"
    - 从 Microsoft Visual Studio Marketplace [安装](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) WhiteSource Bolt 扩展。 如果无权安装扩展，请参阅[安装适用于 Azure DevOps Services 的免费扩展](/azure/devops/marketplace/install-vsts-extension?view=vsts)。
 
 
-~~~
-Click the green **Install** button if you are using Azure DevOps Services, or the **Download** button for Team Foundation Server.  For this example, we will use Azure DevOps Services.
+如果使用的是 Azure DevOps Services，请单击绿色的“安装”按钮；如果使用的是 Team Foundation Server，请单击“下载”按钮。  此示例中，我们将使用 Azure DevOps Services。
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Extension](_img\vs-whitesource\vs-whitesource-download-install.png)
+> ![WhiteSource 权益安装扩展](_img/vs-whitesource/vs-whitesource-download-install.png)
 
-- Next, select the Azure DevOps organization you want to use and click **Confirm**.  (If you have not yet set up Azure DevOps Services, visit the [Benefits](https://my.visualstudio.com/benefits) page and activate your Azure DevOps Services benefit.)
+- 接下来，选择要使用的 Azure DevOps 组织，然后单击“确认”。  （如果尚未设置 Azure DevOps Services，请访问[权益](https://my.visualstudio.com/benefits)页面并激活 Azure DevOps Services 权益。）
 
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Confirm Account](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+> ![WhiteSource 权益确认帐户](_img/vs-whitesource/vs-whitesource-confirm-account.png)
 
-- You’ll receive a confirmation that the extension is installed and ready to use.  Click **Get started** to return to the WhiteSource Bolt page and continue.
+- 你会收到一条确认信息，指示该扩展已安装并可以使用。  单击“开始”返回 WhiteSource Bolt 页面，然后继续。
 > [!div class="mx-imgBorder"]
-> ![WhiteSource Benefit Install Complete](_img\vs-whitesource\vs-whitesource-install-complete.png)
-~~~
+> ![WhiteSource 权益安装完毕](_img/vs-whitesource/vs-whitesource-install-complete.png)
 
 5. 打开 Azure DevOps 项目仪表板，单击“Azure Pipelines”菜单，然后选择“WhiteSource Bolt”。
    > [!div class="mx-imgBorder"]
@@ -86,7 +84,7 @@ Click the green **Install** button if you are using Azure DevOps Services, or th
 | Visual Studio Dev Essentials | NA  | 不可用 |NA |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup>包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：其他的不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Microsoft 合作伙伴网络（专业）。
+<sup>1</sup>  包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：其他不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Microsoft 合作伙伴网络 (Professional)。
 
 
 > [!NOTE]

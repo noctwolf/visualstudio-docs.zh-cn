@@ -1,8 +1,6 @@
 ---
-title: 编写调试挂钩函数 |Microsoft 文档
-ms.custom: ''
+title: 编写调试挂钩函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vc.hooks
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 365196a01ba9e62ef0b26eb3a99278d4d77a4dd4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 9218c36f550c61484054d180ecb4dccb1ca53f3d
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457337"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947499"
 ---
 # <a name="debug-hook-function-writing"></a>编写调试挂钩函数
 本节描述了你可以编写的自定义调试挂钩函数，它允许你在调试器的正常处理中将代码插入某些预定义的点中。  
@@ -41,7 +39,7 @@ ms.locfileid: "31457337"
  定义分配挂钩函数，探讨它的不同用法，指出限制并提供原型。  
   
  [分配挂钩和 CRT 内存分配](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)  
- 描述分配挂钩函数在调用分配内部内存的 C 运行库函数时，在显式忽略 `_CRT_BLOCK` 块方面所受的限制。 本主题还列出将出现哪些后果，如果您的分配挂钩未忽略`_CRT_BLOCK`（有示例） 的数据块以及如何更改默认分配挂钩函数， **CrtDefaultAllocHook**。  
+ 描述分配挂钩函数在调用分配内部内存的 C 运行库函数时，在显式忽略 `_CRT_BLOCK` 块方面所受的限制。 本主题还使用示例列出了分配挂钩不忽略 `_CRT_BLOCK` 块的后果，并描述如何更改默认分配挂钩函数 CrtDefaultAllocHook。  
   
  [报表挂钩函数](../debugger/report-hook-functions.md)  
  讨论 `_CrtSetReportHook`，可以使用它筛选报告以集中于特定的分配类型。 本主题还提供原型。  

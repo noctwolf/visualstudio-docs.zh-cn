@@ -1,8 +1,6 @@
 ---
-title: 如何： 管理 ClickOnce 应用程序的更新 |Microsoft Docs
-ms.custom: ''
+title: 如何：管理 ClickOnce 应用程序的更新 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bd9d8d7e88bc9ee8c8b041571ddaa258067c300
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 95436528b42c4b32e15048b771a36daf32a22c1c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283647"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53945894"
 ---
-# <a name="how-to-manage-updates-for-a-clickonce-application"></a>如何： 管理 ClickOnce 应用程序的更新
+# <a name="how-to-manage-updates-for-a-clickonce-application"></a>如何：管理 ClickOnce 应用程序的更新
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序可以自动或以编程方式检查更新。 作为开发人员，您可以自由地指定何时以及如何执行更新检查更新是否强制性的以及应用程序应检查更新。  
   
  可以配置要在应用程序启动后检查更新之前在应用程序启动，自动或在设置的时间间隔的应用程序。 此外可以指定所需的最低版本;也就是说，如果用户的版本低于所需的版本安装更新。  
@@ -45,7 +43,7 @@ ms.locfileid: "44283647"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**更新**按钮以打开**应用程序更新**对话框。  
   
@@ -53,11 +51,11 @@ ms.locfileid: "44283647"
   
 5.  在中**选择应用程序应检查更新时**部分中，选择**应用程序启动前**。 这可确保始终连接到网络的用户使用最新的更新运行应用程序。  
   
-### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>若要在应用程序启动后检查在后台更新  
+### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>在应用程序启动后在后台检查更新  
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**更新**按钮以打开**应用程序更新**对话框。  
   
@@ -71,7 +69,7 @@ ms.locfileid: "44283647"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**更新**按钮以打开**应用程序更新**对话框。  
   
@@ -83,7 +81,7 @@ ms.locfileid: "44283647"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**更新**按钮以打开**应用程序更新**对话框。  
   
@@ -95,7 +93,7 @@ ms.locfileid: "44283647"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**更新**按钮以打开**应用程序更新**对话框。  
   
@@ -103,14 +101,14 @@ ms.locfileid: "44283647"
   
 5.  在中**更新位置**字段中，输入完全限定 url，使用以下格式的更新位置*http://Hostname/ApplicationName*，或使用以下格式的 UNC 路径 *\\\Server\ApplicationName*，或单击**浏览**按钮以浏览更新位置。 更新位置为应用程序将寻找其自身的更新版本。  
   
-6.  在用户将选择检查更新的 Windows 窗体上创建一个按钮、 菜单项或其他用户界面项。 从该项目的事件处理程序，调用方法来检查并安装更新。 可以为此类方法中找到的 Visual Basic 和 Visual C# 代码示例[如何： 使用 ClickOnce 部署 API 以编程方式的应用程序更新检查](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)。  
+6.  在用户将选择检查更新的 Windows 窗体上创建一个按钮、 菜单项或其他用户界面项。 从该项目的事件处理程序，调用方法来检查并安装更新。 您可以找到示例的 Visual Basic 和 VisualC#中的此类的方法的代码[如何：使用 ClickOnce 部署 API 以编程方式检查是否有应用程序更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)  
   
 7.  构建应用程序。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [应用程序更新对话框](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))   
+ [“应用程序更新”对话框](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))   
  [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [如何： 使用 ClickOnce 部署 API 以编程方式的应用程序更新检查](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
+ [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [如何：使用 ClickOnce 部署 API 以编程方式检查是否有应用程序更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

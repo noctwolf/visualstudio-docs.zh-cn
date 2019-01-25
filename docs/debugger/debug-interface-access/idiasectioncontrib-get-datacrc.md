@@ -1,8 +1,6 @@
 ---
 title: 'Idiasectioncontrib:: Get_datacrc |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 872f4cf70d24ce1da1dd5cf193632ffb2f55a320
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1a11d36a92c2b2251a2313ba627012904457d354
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903083"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53851831"
 ---
 # <a name="idiasectioncontribgetdatacrc"></a>IDiaSectionContrib::get_dataCrc
 检索的部分中的数据的循环冗余检查 (CRC)。  
@@ -27,7 +25,7 @@ ms.locfileid: "49903083"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_dataCrc (   
+HRESULT get_dataCrc (   
    DWORD* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_dataCrc (
  [out]返回的部分中的数据的 CRC。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

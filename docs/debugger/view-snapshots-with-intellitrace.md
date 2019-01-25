@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebaacc2b3d90821605c804bec390c887a27cec0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2ce52e970187e2d18679b60522a24899a5e43e8
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915570"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227559"
 ---
-# <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>使用 IntelliTrace 后退查看快照 (Visual Studio Enterprise)
+# <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise-c-visual-basic-c"></a>使用 IntelliTrace 单步后退来查看快照 (Visual Studio Enterprise)（C#、Visual Basic、C++）
 
 IntelliTrace 后退会在每个断点处及调试器步骤事件发生时自动拍摄应用程序的快照。 凭借记录的快照便可以返回到上一个断点或步骤，并查看当时应用程序的状态。 如果希望查看以前的应用程序状态，但不想重新启动调试或重新创建所需应用状态，使用 IntelliTrace 后退可以节省时间。
 

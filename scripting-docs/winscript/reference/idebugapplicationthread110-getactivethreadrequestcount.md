@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::GetActiveThreadRequestCount |Microsoft 文档
+title: IDebugApplicationThread110::GetActiveThreadRequestCount | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb4d19bb77a4380c3c0a04f7e7808b82ca3f6ae4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8bd776aedd4df61797419795afb8dcc8afeb9318
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726277"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348177"
 ---
 # <a name="idebugapplicationthread110getactivethreadrequestcount"></a>IDebugApplicationThread110::GetActiveThreadRequestCount
-返回从切换当前正在处理的机制的 PDM 的线程的线程请求数。 该数字通常是 0 或 1。 但是，数可能会更高如果一个线程调用开始处理，但会触发外的线程的同步调用或否则为挂起线程，并且允许再次处理的传入调用 (例如，通过触发[IRemoteDebugApplicationEvents 接口](../../winscript/reference/iremotedebugapplicationevents-interface.md)调试器线程发出的事件)。  
+从 PDM 的线程切换当前正在处理的机制返回线程请求的数。 此数字通常是 0 或 1。 但是，如果数字可能会更高版本一个线程调用开始处理，但触发同步调用线程，带或否则为将线程挂起并允许再次处理的传入呼叫 (例如，通过触发[IRemoteDebugApplicationEvents 接口](../../winscript/reference/iremotedebugapplicationevents-interface.md)事件，该调试器线程上发出事件)。  
   
 > [!IMPORTANT]
 >  [IDebugApplicationThread110 接口](../../winscript/reference/idebugapplicationthread110-interface.md)是实现由 PDM v11.0 和更高版本。 在 activdbg100.h 中发现。  
@@ -37,5 +37,5 @@ HRESULT GetActiveThreadRequestCount([out, annotation("_Out_")] UINT * puiThreadR
  `puiThreadRequests`  
  [out]线程请求数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplicationThread110 接口](../../winscript/reference/idebugapplicationthread110-interface.md)

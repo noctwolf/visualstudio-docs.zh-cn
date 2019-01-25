@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d5d4b4c50a02a92d150a87788e6dc307dd2f8e64
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11ff8764395f10a4937143d6f51d220f970193af
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865513"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270227"
 ---
 # <a name="code-generation-in-a-build-process"></a>生成过程中的代码生成
 
@@ -58,7 +58,7 @@ ms.locfileid: "53865513"
 
 您将必须编辑项目文件在 MSBuild 中配置的一些功能。
 
-在中**解决方案资源管理器**，选择**卸载**从你的项目的上下文菜单。 这允许你在 XML 编辑器中编辑 .csproj 或 .vbproj 文件。
+在中**解决方案资源管理器**，选择**卸载**从你的项目的右键单击菜单。 这允许你在 XML 编辑器中编辑 .csproj 或 .vbproj 文件。
 
 完成编辑后，选择**重新加载**。
 

@@ -1,8 +1,6 @@
 ---
 title: Mip 贴图生成变量 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
 author: mikejo5000
@@ -10,12 +8,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b2d1e537152020b42fdff38fab1200b9cf7668
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ca094c4a29e18ebde5ac33f1c35c2a53d60c2327
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908530"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836538"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 生成变量
 对非呈现器目标的纹理启用 mip 贴图。  
@@ -45,7 +43,7 @@ ms.locfileid: "49908530"
   如果已为纹理自动生成 mip 贴图，则会在播放期间修改对 `ID3D11Device::CreateShaderResourceView` 的调用，以在纹理采样期间使用 mip 链。  
   
 ## <a name="example"></a>示例  
- **Mip 贴图生成**可以通过使用如下代码重现变体：  
+ 通过使用如下代码，可重现“Mip 贴图生成”变体：  
   
 ```cpp
 D3D11_TEXTURE2D_DESC texture_description;  

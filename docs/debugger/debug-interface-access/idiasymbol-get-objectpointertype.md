@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_objectpointertype |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c82c52fc49b76e6c3adb8b58bb03fafa28531f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4e21418da2516553f2c62e2c746e6a75e3f67cbc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866397"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53961733"
 ---
 # <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
 检索类方法的对象指针的类型。  
@@ -27,7 +25,7 @@ ms.locfileid: "49866397"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_objectPointerType (   
+HRESULT get_objectPointerType (   
    IDiaSymbol** pRetVal  
 );  
 ```  

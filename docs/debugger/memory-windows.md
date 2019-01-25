@@ -2,7 +2,6 @@
 title: 在调试器中查看变量占用的内存 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 10/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
@@ -25,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdf8e5fc5ee0ac34b4c295f6cc593e0a93b548ae
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 3e56ad2c36e4b7a22cfb74e020c31e93f4846872
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257255"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53837220"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>使用 Visual Studio 调试器中的内存窗口 (C#，c + +、 Visual Basic 中， F#)
 
@@ -49,7 +48,7 @@ ms.locfileid: "52257255"
 >[!IMPORTANT]
 >若要启用**内存**windows**启用地址级调试**必须在所选**工具** > **选项**（或**调试** > **选项**) >**调试** > **常规**。 
 
-**若要打开内存窗口**
+**打开“内存”窗口**
   
 1. 请确保**启用地址级调试**中选择**工具** > **选项**(或**调试** > **选项**) >**调试** > **常规**。 
    
@@ -81,26 +80,26 @@ ms.locfileid: "52257255"
   
 ## <a name="customize-the-memory-window"></a>自定义内存窗口 
 
-默认情况下，内存内容以十六进制格式显示为 1 字节整数，窗口宽度决定了显示的列数。 可以自定义的方式**内存**窗口显示内存内容。  
+默认情况下，内存内容以十六进制格式显示为 1 字节整数，窗口宽度决定了显示的列数。 可以自定义“内存”窗口显示内存内容的方式。  
   
-**若要更改内存内容的格式：**  
+**更改内存内容的格式：**  
   
 -  在中右击**内存**窗口中，并从上下文菜单中选择所需的格式。  
   
-**若要更改内存窗口中的列数：**
+**更改“内存”窗口中的列数：**
   
 - 选择向下箭头旁边**列**字段，然后选择要显示，或选择的列数**自动**根据窗口宽度自动调整。  
   
 如果不希望的内容**内存**窗口更改为您的应用程序运行时，可以关闭活动表达式计算。 
 
-**若要切换活动计算：**  
+**切换活动计算：**  
   
 - 在中右击**内存**窗口中，然后选择**自动重新计算**的上下文菜单中。 
 
   >[!NOTE]
   >Live 表达式评估具有切换功能，并且默认情况下，因此选择位于**自动重新计算**会将其关闭。 选择**自动重新计算**再次开启。 
   
-可以隐藏或显示在顶部工具栏**内存**窗口。 不将有权**地址**字段或其他工具时隐藏工具栏。  
+可以隐藏或显示“内存”窗口顶部的工具栏。 不将有权**地址**字段或其他工具时隐藏工具栏。  
   
 **若要切换工具栏上显示：**  
   
@@ -110,7 +109,7 @@ ms.locfileid: "52257255"
 
 在本机代码应用中，可以将寄存器名称用作活动表达式。 例如，可以使用堆栈指针跟踪堆栈。  
   
-**若要跟踪内存中的指针：**
+**跟踪内存中的指针：**
   
 1. 在中**内存**窗口**地址**字段中，输入一个指针表达式，为当前作用域中。 根据所使用的语言，可能必须取消引用指针。  
   
@@ -119,4 +118,4 @@ ms.locfileid: "52257255"
    当使用调试命令如**步骤**，在显示的内存地址**地址**字段，然后在顶部**内存**窗口将自动更改为指针更改。  
   
 ## <a name="see-also"></a>请参阅  
- [在调试器中查看数据](../debugger/viewing-data-in-the-debugger.md)
+ [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)

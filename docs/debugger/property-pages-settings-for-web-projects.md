@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09aeb8d97c1caf3eca067cd7992eb96c9d7ef7c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 717e57a4c4ba739236fa3b66a444dd854d357dcc
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892658"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204289"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 项目的属性页设置
 如[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)中所述，可以在“属性页”对话框中更改网站调试配置的属性设置。 下表显示“属性页”对话框中与调试器有关的设置的位置。  
   
-### <a name="configuration-properties-folder-start-options-category"></a>“配置属性”文件夹（“启动选项”类别）  
+### <a name="start-options-category"></a>启动选项类别
   
 | **设置** | **说明** |
 | - | - |

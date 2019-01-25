@@ -1,8 +1,6 @@
 ---
-title: 如何： 指定 ClickOnce 部署的详细日志文件 |Microsoft Docs
-ms.custom: ''
+title: 如何：指定 ClickOnce 部署的详细日志文件 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbb3214df1cd51baf731f8a16f39b2c5a59933bb
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 1c00dd94c9d8ad6702a7f54e461b50f476f0be33
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078737"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53840247"
 ---
-# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>如何： 指定 ClickOnce 部署的详细日志文件
+# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>如何：指定 ClickOnce 部署的详细日志文件
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 维护所有部署的活动日志文件。 这些日志记录与安装、 初始化、 更新和卸载相关的详细信息[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。 若要增加详细信息，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]写入这些日志文件，使用注册表编辑器 (*regedit.exe*) 来指定详细级别。  
   
 > [!CAUTION]
@@ -43,4 +41,4 @@ ms.locfileid: "39078737"
 4.  设置`LogVerbosityLevel`值设为`1`。  
   
 ## <a name="see-also"></a>请参阅  
- [ClickOnce 部署进行故障排除](../deployment/troubleshooting-clickonce-deployments.md)
+ [ClickOnce 部署疑难解答](../deployment/troubleshooting-clickonce-deployments.md)

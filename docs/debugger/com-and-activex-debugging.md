@@ -1,8 +1,6 @@
 ---
-title: 调试 COM 和 ActiveX |Microsoft 文档
-ms.custom: ''
+title: 调试 COM 和 ActiveX |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab4bb2de79d0148154bfe7d9fceb70de322efda8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 6d75b045e16ce6435568b5bb6993a74f3123f779
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468420"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269598"
 ---
 # <a name="com-and-activex-debugging"></a>调试 COM 和 ActiveX
 本节提供有关调试 COM 应用程序和 ActiveX 控件的提示。  
@@ -44,7 +42,7 @@ ms.locfileid: "31468420"
  列出在调试 COM 应用程序时可能会用到的查看器和示例应用程序。  
   
 ## <a name="related-sections"></a>相关章节  
- [调试器功能简介](../debugger/debugger-feature-tour.md)  
+ [初探调试器](../debugger/debugger-feature-tour.md)  
  提供指向调试文档的较大章节的链接。 涉及的信息包括：调试器的新增功能，设置和准备，断点，处理异常，编辑和继续，调试托管代码，调试 Visual C++ 项目，调试 COM 和 ActiveX，调试 DLL，调试 SQL，以及用户界面参考。  
   
 ## <a name="see-also"></a>请参阅  

@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a9b96ae54c91e80fe34c817f710cb400e61f9876
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "51768508"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>保存和导出性能工具数据
@@ -28,7 +28,7 @@ ms.locfileid: "51768508"
 
 本主题介绍如何保存和导出性能数据文件。  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> 如何：将性能数据文件另存为已分析的报告文件  
+##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> 操作说明：将性能数据文件另存为已分析的报表文件  
  可将分析数据 (.vsp) 文件的筛选后/未筛选视图另存为已分析的报告 (.vsps) 文件。 已分析的报告文件可在报表视图窗口中查看，远远小于原始的 .vsp 文件。 但是，不能对 .vsps 文件的数据应用筛选器。 可以在性能资源管理器中创建已分析的报告文件，而无需在集成开发环境 (IDE) 中打开该文件，或者可打开并筛选 .vsp 文件再保存结果。  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>保存性能资源管理器中已分析的性能报告  
@@ -51,7 +51,7 @@ ms.locfileid: "51768508"
   
 5.  单击“保存”   
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>如何：将分析工具报告导出到 Xml 或 Csv 文件  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>如何：将分析工具报表导出为 .xml 或 .csv 文件  
  可以将 .vsp 文件或 .vsps 分析数据文件中的一个或多个报表视图导出为逗号分隔的文件或 XML 文件。 导出前，可在报表视图窗口中筛选数据，或者可从“性能资源管理器”  窗口导出整个数据文件的报表视图。  
   
 > [!NOTE]
@@ -69,7 +69,7 @@ ms.locfileid: "51768508"
   
 4.  在“报告导出位置” 下，指定目录。  
   
-5.  下**报告导出格式**，选择 （逗号分隔） (*.csv) 或 XML 数据 (\*.xml)。  
+5.  在“报告导出格式”下，选择“(逗号分隔) (*.csv)”或“XML 数据(\*.xml)”。  
   
 6.  单击“导出” 。  
   
@@ -89,7 +89,7 @@ ms.locfileid: "51768508"
   
 6.  在“报告导出位置” 下，指定目录。  
   
-7.  下**报告导出格式**，选择 （逗号分隔） (*.csv) 或 XML 数据 (\*.xml)。  
+7.  在“报告导出格式”下，选择“(逗号分隔) (*.csv)”或“XML 数据(\*.xml)”。  
   
 8.  单击“导出” 。  
   

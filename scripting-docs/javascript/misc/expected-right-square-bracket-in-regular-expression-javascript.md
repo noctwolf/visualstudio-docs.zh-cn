@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e0b34ae4bdf04d261647b9096cda13eec75617c5
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804411"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349421"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>正则表达式中应有“]”(JavaScript)
 尝试创建字符类的正则表达式匹配项，但并未包含右方括号。 通过将它们放在方括号内，各个文本字符的组合可以组合成字符类。 字符类匹配包含任何一个字符。 例如，/ [abc] 匹配任何一个字母"a"、"b"或"c"。  

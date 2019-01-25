@@ -1,5 +1,5 @@
 ---
-title: IDebugHelper 接口 |Microsoft 文档
+title: IDebugHelper 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f0f70ecb8ead264d0d4b074f8fc1d9e3a6091eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ba760dc15cc0a3d3f2f0d80f3a16c5621582bc11
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727307"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347471"
 ---
 # <a name="idebughelper-interface"></a>IDebugHelper 接口
-作为对象浏览器和简单的连接点的工厂。 过程调试管理器 (PDM) 实现此接口，供脚本引擎。  
+充当对象浏览器和简单的连接点的工厂。 进程调试管理器 (PDM) 实现此接口，这由脚本引擎。  
   
- 除了从继承的方法`IUnknown`、`IDebugHelper`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IDebugHelper`接口公开以下方法。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
 |方法|描述|  
 |------------|-----------------|  
 |[IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)|返回包装一个变体的属性浏览器。|  
-|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|返回包装的变体，和允许的变体值或 VARTYPE 类型为字符串的自定义转换的属性浏览器。|  
-|[IDebugHelper::CreateSimpleConnectionPoint](../../winscript/reference/idebughelper-createsimpleconnectionpoint.md)|返回一个事件的接口，用于包装给定`IDispatch`对象。|
+|[IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)|返回包装变体，并允许自定义转换的变体的值或 VARTYPE 类型为字符串的属性浏览器。|  
+|[IDebugHelper::CreateSimpleConnectionPoint](../../winscript/reference/idebughelper-createsimpleconnectionpoint.md)|返回包装的事件接口给定`IDispatch`对象。|

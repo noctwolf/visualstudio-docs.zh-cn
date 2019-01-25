@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e5a9aad4aaecb629f5860fadf56e35a55455be63
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.openlocfilehash: 17a56fcf0c89ef63033cdcd538e5b9cf9e3efe49
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783085"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53928284"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>向 n 层应用程序中的 TableAdapter 添加代码
 您可以通过为 TableAdapter 创建分部类文件并向其中添加代码来扩展 TableAdapter 的功能 (而不是将代码添加到*DatasetName.DataSet.Designer*文件)。 分部类启用划分到多个物理文件的特定类代码。 有关详细信息，请参阅[分部](/dotnet/visual-basic/language-reference/modifiers/partial)或[分部 （类型）](/dotnet/csharp/language-reference/keywords/partial-type)。
@@ -31,7 +30,7 @@ ms.locfileid: "38783085"
 默认情况下，单独的数据集和 TableAdapter 代码后结果将是每个项目中的离散类文件。 原始项目将包含名为的文件*DatasetName.Designer.vb* (或*DatasetName.Designer.cs*)，其中包含 TableAdapter 代码。 中指定的项目**数据集项目**属性具有名为的文件*DatasetName.DataSet.Designer.vb* (或*DatasetName.DataSet.Designer.cs*)，包含的数据集代码。
 
 > [!NOTE]
->  当你将数据集和 Tableadapter (通过设置**数据集项目**属性)，将不会自动移动项目中的现有数据集分部类。 向数据集项目，必须手动移动现有数据集分部类。
+>  分离数据集与 TableAdapter（通过设置“数据集项目”属性）时，将不会自动移动项目中现有的数据集分部类。 向数据集项目，必须手动移动现有数据集分部类。
 
 > [!NOTE]
 > 数据集提供了用于生成功能<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.RowChanging>事件处理程序时需要验证。 有关详细信息，请参阅[向 n 层数据集添加验证](../data-tools/add-validation-to-an-n-tier-dataset.md)。

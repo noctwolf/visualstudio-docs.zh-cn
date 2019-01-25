@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptWinRTErrorDebug::GetRestrictedErrorReference |Microsoft 文档
+title: IActiveScriptWinRTErrorDebug::GetRestrictedErrorReference |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36d1fecfa1069836a3a1eb41adc8fb58a16e1dbc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f801171848537a564ec30e2677a716e6ee7f6cc9
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724977"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344130"
 ---
 # <a name="iactivescriptwinrterrordebuggetrestrictederrorreference"></a>IActiveScriptWinRTErrorDebug::GetRestrictedErrorReference
 如果可用，则返回 Windows 运行时限制引用错误。  
@@ -35,7 +35,7 @@ HRESULT GetRestrictedErrorReference([out] BSTR * referenceString);
   
 #### <a name="parameters"></a>参数  
  `referenceString`  
- [out]引用的错误字符串。  
+ [out]引用错误字符串。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IActiveScriptWinRTErrorDebug 接口](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)

@@ -1,11 +1,9 @@
 ---
 title: 编辑并继续错误消息对话框 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/15/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
-- vs.debug.ENC.SupportedButNotAvaiable
+- vs.debug.ENC.SupportedButNotAvailable
 - vs.debug.ENC.CannotEditWhileException
 dev_langs:
 - CSharp
@@ -20,16 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 69305bdd1791d428c11910d5fc6540f13ad6a137
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388697"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154032"
 ---
 # <a name="edit-and-continue-error-message"></a>编辑并继续的错误消息 
 
-**编辑并继续**中一种代码语言，支持编辑并继续，调试时，会显示错误消息框，但编辑并继续不适用于所做的代码更改。 错误消息提供了更详细的说明。 若要响应对话框中，选择**确定**按钮以关闭对话框并取消编辑尝试。  
+当你对支持“编辑并继续”的代码语言进行调试，但“编辑并继续”并不适用于你所做的代码更改时，会显示“编辑并继续”错误消息框。 该错误消息提供了更详细的说明。 若要响应该对话框，选择**确定**按钮以关闭对话框并取消编辑尝试。  
 
 此错误消息的可能原因包括：  
 
@@ -37,7 +35,7 @@ ms.locfileid: "52388697"
 -   尝试编辑优化的代码。 您可能需要从发布版本切换到调试版本。
 -   尝试编辑代码时它正在运行，而不是在调试器中暂停时。 请尝试[设置断点](../debugger/using-breakpoints.md)，和编辑代码时暂停。
 -   尝试启用仅非托管调试时编辑托管的代码。 编辑并继续不适用于[混合模式调试](../debugger/how-to-debug-in-mixed-mode.md)。
--   进行代码更改，不支持编辑并继续的编程语言。 详细信息，请参阅文章[支持中的代码更改C# ](supported-code-changes-csharp.md)，[不受支持的 Visual Basic 编辑并继续中的编辑](unsupported-edits-in-visual-basic-edit-and-continue.md)，并[支持 c + + 代码更改](supported-code-changes-cpp.md).
+-   进行代码更改，不支持编辑并继续的编程语言。 详细信息，请参阅文章[支持中的代码更改C# ](supported-code-changes-csharp.md)，[不受支持的 Visual Basic 编辑并继续中的编辑](/visualstudio/debugger/supported-code-changes-csharp)，并[支持 c + + 代码更改](supported-code-changes-cpp.md).
 -   尝试在你所附，而不是启动从调试的应用中编辑代码**调试**菜单。  
 -   尝试在灾难恢复进行调试时编辑代码。Watson 转储。  
 -   尝试编辑代码后会发生未处理的异常，并选择**展开调用堆栈上未经处理的异常**未选中。  

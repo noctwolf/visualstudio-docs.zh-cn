@@ -1,8 +1,6 @@
 ---
 title: 'Idiasession:: Findfile |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c8fa5c6f3cd8ec3cf1cead397eadadb99e050d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 72b010b60ef911dea970bf68567fc75a8c29e04f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909936"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53875924"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
 检索由编译单位和名称的源文件。  
@@ -27,7 +25,7 @@ ms.locfileid: "49909936"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT findFile (   
+HRESULT findFile (   
    IDiaSymbol*           pCompiland,  
    LPCOLESTR             name,  
    DWORD                 option,  

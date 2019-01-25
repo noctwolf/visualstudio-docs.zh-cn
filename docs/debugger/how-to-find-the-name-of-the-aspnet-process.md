@@ -1,8 +1,6 @@
 ---
 title: 查找正在运行的 ASP.NET 进程 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6bbb2aed6f7218170e26b736d82ba0f3d88b2fae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 4a65269f9fd99b31ee797be0d5e27559daa1f25a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751774"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53836161"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>查找 ASP.NET 进程的名称
 
@@ -47,6 +45,6 @@ ms.locfileid: "51751774"
 **另请参阅：**
 
  [附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
- [远程调试 web 应用程序的先决条件](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
+ [远程调试 web 应用程序的先决条件](/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer)   
  [系统要求](../debugger/aspnet-debugging-system-requirements.md)   
  [调试 ASP.NET 应用程序](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

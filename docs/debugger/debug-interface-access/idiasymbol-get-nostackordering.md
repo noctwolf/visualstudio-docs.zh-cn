@@ -1,8 +1,6 @@
 ---
 title: 'Idiasymbol:: Get_nostackordering |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82f0b0b25c90a4cba2de6fb45164d9a6bf77446c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6b9f570c6ae2e101e319d9789c7e8c7d391008c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53963584"
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
 此函数可检索一个标志，指示是否可以作为堆栈缓冲区检查的一部分实现没有堆栈排序 ([/GS （缓冲区安全检查）](/cpp/build/reference/gs-buffer-security-check)编译器选项)。  
@@ -44,7 +42,7 @@ HRESULT get_noStackOrdering(
   
 ## <a name="requirements"></a>要求  
   
-|需求|描述|  
+|需求|说明|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

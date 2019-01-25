@@ -1,5 +1,5 @@
 ---
-title: 无效数字 |Microsoft 文档
+title: 无效数字 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,15 +21,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e7903bec2f21465cbe31ecc05f00182680ed77c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632907"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346808"
 ---
 # <a name="invalid-number"></a>无效数字
 无效数字 (ErrbadNumber 1013)  
   
- 你尝试使用在 JavaScript 中无效的数量。  
+ 您尝试使用不是在 JavaScript 中有效的数字。  
   
- 有关有效的数字的信息，请参阅[Number 对象](../../javascript/reference/number-object-javascript.md)。
+ 有关有效的数字信息，请参阅[Number 对象](../../javascript/reference/number-object-javascript.md)。

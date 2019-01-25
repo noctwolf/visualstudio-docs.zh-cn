@@ -6,15 +6,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
-ms.translationtype: MT
+ms.openlocfilehash: 73b09384bd57fd4ea0890d107ce641e4b615559f
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845010"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154213"
 ---
 # <a name="add-new-connections"></a>添加新连接
 
@@ -26,7 +25,7 @@ ms.locfileid: "34845010"
 
 - Cloud Explorer
 
-   作为 Visual Studio 扩展中手动安装此窗口，通过选择**工具** > **扩展和更新** > **联机** >  **Visual Studio 应用商店**。 提供浏览和连接到 Azure 服务的专用的功能。
+   作为 Visual Studio 扩展中手动安装此窗口，通过选择**工具** > **扩展和更新** > **联机** >  **Visual Studio Marketplace**。 提供浏览和连接到 Azure 服务的专用的功能。
 
 - SQL Server 对象资源管理器
 
@@ -40,7 +39,7 @@ ms.locfileid: "34845010"
 
 这将显示**添加连接**对话框。 在这里，我们已经输入的 SQL Server LocalDB 实例的名称。
 
-![添加新的连接](../data-tools/media/raddata-add-new-connection-dialog.png)
+![添加新连接](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>更改提供程序
 

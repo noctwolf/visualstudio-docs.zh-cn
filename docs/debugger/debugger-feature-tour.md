@@ -1,8 +1,8 @@
 ---
-title: VS 2017 中的调试入门
+title: 使用 Visual Studio 调试应用
 description: 开始使用 Visual Studio 调试器调试应用程序
 ms.custom: mvc
-ms.date: 06/15/2018
+ms.date: 01/09/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7bcba0ceaa71b933d4875cd5eee28d7cea0028
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a6363149165c9718300eec1074fdfc006709b3d3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904963"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227884"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>初步了解 Visual Studio 调试器
 
@@ -185,7 +185,7 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 在此示例中，`DirectoryInfo` 调用在存储于 `value` 变量中的空字符串上引发了错误。
 
-异常帮助程序是帮助调试错误的好功能。 你还可以执行其他操作，如查看错误详细信息及从异常帮助程序添加监视。 或者，如有需要可更改引发特定异常的条件。
+异常帮助程序是帮助调试错误的好功能。 你还可以执行其他操作，如查看错误详细信息及从异常帮助程序添加监视。 或者，如有需要可更改引发特定异常的条件。 若要详细了解如何处理代码中的异常，请参阅[通过编写更优质 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)。
 
 > [!NOTE]
 > 异常帮助程序取代 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中的异常情况助手。
@@ -194,7 +194,7 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>在 Azure 应用服务中调试实时 ASP.NET 应用
 
-当执行感兴趣的代码时，Snapshot Debugger 会为生产中的应用拍摄快照。 要指示调试程序拍摄快照，可在代码中设置 snappoints 和 logpoints。 使用调试程序，可精确查看出错的内容，而不影响生产应用程序的流量。 快照调试程序有助于大幅减少用于解决生产环境中发生的问题的时间。
+当执行感兴趣的代码时，Snapshot Debugger 会为生产中的应用拍摄快照。 若要指示该调试器拍摄快照，可以在代码中设置快照点和记录点。 通过该调试器，可精确查看出错的内容，而不会影响生产应用程序的流量。 Snapshot Debugger 有助于大幅减少解决生产环境中出现的问题所需的时间。
 
 ![启动快照调试程序](../debugger/media/snapshot-launch.png "Launch the snapshot debugger")
 

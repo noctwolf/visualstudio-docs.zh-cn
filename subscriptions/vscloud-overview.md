@@ -9,12 +9,12 @@ description: 按月或按年租赁 Visual Studio Professional 或 Visual Studio 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d045e407c030e02ef648c2594a7f2bfa5e97d40f
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 23926cd28032c1e1b201312220770a83a269c839
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740216"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269743"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>购买 Visual Studio Professional 和 Visual Studio Enterprise 云订阅
 
@@ -37,9 +37,7 @@ ms.locfileid: "53740216"
 
 1.  登录到[“Visual Studio Marketplace”&gt;“订阅”](https://marketplace.visualstudio.com/subscriptions)。
 
-2.  选择想购买的订阅，例如：
-    > [!div class="mx-imgBorder"]
-    > ![购买 Visual Studio 订阅](_img/buy-vs-subscriptions/buy-vs-sub-start.png)
+2.  选择要购买的订阅，如“Visual Studio Professional - 每月订阅”。
 
 3.  选择用于计费的 Azure 订阅。 如果没有 Azure 订阅，可新建一个。
     > [!div class="mx-imgBorder"]

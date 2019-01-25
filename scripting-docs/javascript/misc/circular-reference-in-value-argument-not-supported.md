@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949417"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349062"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>不支持在值自变量中进行循环引用
 尝试调用`JSON.stringify`不是有效的值。 `value`参数、 数组或对象，包含循环引用。  
