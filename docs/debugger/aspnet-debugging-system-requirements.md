@@ -39,20 +39,20 @@ ms.locfileid: "49915342"
 ## <a name="security-requirements"></a>安全性要求  
  对于远程调试，本地和远程计算机必须位于域设置或工作组设置上。  
   
- 若要调试[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]（宿主应用程序池） 的工作进程，您必须有权调试该进程。 默认情况下[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序优先在 IIS 6.0  中运行 **ASPNET** 用户。 在 IIS 6.0 和 IIS 7.0 中默认帐户是 **NETWORK SERVICE** 。 如果辅助进程作为 **ASPNET** 或 **“NETWORK SERVICE”** 运行，则您必须具有管理员特权才能对它进行调试。
+ 若要调试 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程（由应用程序池托管），您必须有权调试该进程。 默认情况下，IIS 6.0 之前的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序作为 **ASPNET** 用户运行。 在 IIS 6.0 和 IIS 7.0 中，**网络服务** 是默认帐户。 如果工作进程作为 **ASPNET** 或 **“网络服务”** 运行，则您必须具有管理员特权才能对它进行调试。
 
  > [!IMPORTANT]
  > 从 Windows Server 2008 R2 开始，我们建议使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)作为为每个应用程序池标识。
   
  [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程的名称根据调试方案和 IIS 版本的不同而不同。 有关详细信息，请参阅[如何：查找 ASP.NET 进程的名称](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。  
   
- 可以通过编辑运行 IIS 服务器上的 machine.config 文件，来更改用于运行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程的用户帐户。 实现此目的的最佳方式是使用 **Internet 信息服务(IIS)管理器**。 有关详细信息，请参阅[如何： 以用户帐户运行辅助进程](../debugger/how-to-run-the-worker-process-under-a-user-account.md)。  
+ 可以通过编辑运行 IIS 的服务器上的 machine.config 文件，来更改用于运行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程的用户帐户。 执行此操作的最佳方式是使用 **Internet Information Services (IIS) 管理器**。 有关详细信息，请参阅[如何： 在用户帐户下运行工作进程](../debugger/how-to-run-the-worker-process-under-a-user-account.md)。
   
  如果将 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程更改为在您自己的用户帐户下运行，则您不必是运行 IIS 服务器上的管理员。  
   
 > [!CAUTION]
->  在将 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程更改为使用其他帐户运行之前，应考虑如果 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程在使用该帐户运行时，受到黑客攻击后，将可能出现哪些后果。 ASPNET 和 NETWORK SERVICE 用户帐户以最低的权限运行，从而降低了进程受到攻击时可能造成的损坏程度。 如果必须将 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程更改为使用具有较高权限的帐户运行，则会增大受损的可能性。  
+>  在将 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程更改为在其他帐户下运行之前，应考虑如果 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程在该帐户下运行时遭到黑客攻击可能会产生的后果。 “ASPNET”和“网络服务”用户帐户以最低的权限运行，减少了进程被黑客攻击时可能造成的损害。 如果必须将 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程更改为在具有更大权限的帐户下运行，则会增加受损的可能性。 
   
 ## <a name="see-also"></a>请参阅  
  [调试 ASP.NET 应用程序](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
- [如何：以用户帐户运行辅助进程](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+ [如何：在用户帐户下运行工作进程](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
