@@ -57,7 +57,7 @@ ms.locfileid: "49892059"
  [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_Debug_Assert_method"></a> Debug.Assert 方法  
- 可随意使用 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 方法做为测试条件（如果代码正确，该条件应为 true）。 例如，假设已编写一个整数除法函数。 根据数学规则，除数绝不能为零。 可以使用断言测试这一点：  
+ 可随意使用 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 方法来测试条件（如果代码正确，这些条件应为 true）。 例如，假设已编写一个整数除法函数。 根据数学规则，除数绝不能为零。 可以使用断言测试这一点： 
   
 ```VB  
 Function IntegerDivide(ByVal dividend As Integer, ByVal divisor As Integer) As Integer  
@@ -199,7 +199,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Customizing_Assert_behavior"></a> 自定义断言行为  
- 如果在用户界面模式中运行你的应用程序，当运行 `Assert` 方法条件失败时，将显示**断言失败**对话框。 <xref:System.Diagnostics.Debug.Listeners%2A>或<xref:System.Diagnostics.Trace.Listeners%2A>属性控制断言失败时发生的操作。  
+ 如果在用户界面模式中运行你的应用程序，当运行 `Assert` 方法条件失败时，将显示“断言失败”对话框。 <xref:System.Diagnostics.Debug.Listeners%2A> 或 <xref:System.Diagnostics.Trace.Listeners%2A> 属性控制断言失败时发生的操作。  
   
  可以通过向 <xref:System.Diagnostics.TraceListener> 集合添加 `Listeners` 对象、从 <xref:System.Diagnostics.TraceListener> 集合中移除 `Listeners` 或者重写现有 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 的 `TraceListener` 方法来自定义输出行为，使其变得不同。  
   
