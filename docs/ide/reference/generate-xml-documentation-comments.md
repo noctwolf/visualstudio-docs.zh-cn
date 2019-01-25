@@ -8,16 +8,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05104b9c734b35226fcd9a964372802f351605df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b10a0bae3a9e3b0ce5f9135669cb788f0ddce9d
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964278"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380379"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>如何：为文档生成项插入 XML 注释
 
-Visual Studio 可自动生成标准的 XML 文档注释结构，进而帮助记录类和方法等代码元素。 在编译时，可生成一个包含文档注释的 XML 文件。 可随附 .NET 程序集一并分发编译器生成的 XML 文件，让 Visual Studio 和其他 IDE 能够快速显示类型和成员信息。 此外，可以通过 [DocFX](https://dotnet.github.io/docfx/) 和 [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) 等工具运行 XML 文件，由此生成 API 引用网站。
+Visual Studio 可自动生成标准的 XML 文档注释结构，进而帮助记录类和方法等代码元素。 在编译时，可生成一个包含文档注释的 XML 文件。
+
+> [!TIP]
+> 若要了解如何配置已生成 XML 文件的名称和位置，请参阅[使用 XML 注释将代码文档化（C# 指南）](/dotnet/csharp/codedoc)。
+
+可随附 .NET 程序集一并分发编译器生成的 XML 文件，让 Visual Studio 和其他 IDE 能够快速显示类型和成员信息。 此外，可以通过 [DocFX](https://dotnet.github.io/docfx/) 和 [Sandcastle](https://www.microsoft.com/download/details.aspx?id=10526) 等工具运行 XML 文件，由此生成 API 引用网站。
 
 > [!NOTE]
 > 可在 [C#](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments) 和 [Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation) 中使用自动插入 XML 文档注释的“插入注释”命令。 但可在 C++ 文件中手动插入 [XML 文档注释](/cpp/ide/xml-documentation-visual-cpp)，这样仍可在编译时生成 XML 文档文件。

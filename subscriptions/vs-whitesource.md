@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的 WhiteSource Bol
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a19c2a8882c7de27feef68416b6152e4a173ad54
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 4169036161e19092a78133207261f2fe434c1316
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154429"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380021"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 WhiteSource Bolt
 
@@ -84,7 +84,7 @@ ms.locfileid: "54154429"
 | Visual Studio Dev Essentials | NA  | 不可用 |NA |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup>  *包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：其他的不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Microsoft 合作伙伴网络（专业）*。
+<sup>1</sup>  包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：其他不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Microsoft 合作伙伴网络 (Professional)。
 
 
 > [!NOTE]

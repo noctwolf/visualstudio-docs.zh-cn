@@ -1,7 +1,7 @@
 ---
 title: 创建基于网络的安装
 description: 了解如何创建用于在企业中部署 Visual Studio 的网络安装点。
-ms.date: 10/17/2017
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8005aaea5e799ece8a5e217ca28ecd553e6787
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee0eadc9d682e41737df00f81b6443daf5e21fb6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966727"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349915"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 的网络安装
 
@@ -30,7 +30,7 @@ ms.locfileid: "53966727"
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>下载 Visual Studio 引导程序
 
-**下载**所需的 Visual Studio 版本。 请确保单击“保存”，然后单击“打开文件夹”。
+下载所需的 Visual Studio 版本。 请确保单击“保存”，然后单击“打开文件夹”。
 
 安装程序可执行文件&mdash;具体而言是引导程序文件&mdash;应与下面其中一项匹配。
 
@@ -115,11 +115,15 @@ ms.locfileid: "53966727"
 
 管理员可以通过安装脚本将 Visual Studio 部署到客户端工作站上。 拥有管理员权限的用户也可以直接从共享运行安装程序，从而在自己的计算机上安装 Visual Studio。
 
-- 用户可以通过运行以下命令进行安装： <br>```\\server\products\VS2017\vs_enterprise.exe```
-- 管理员可以通过运行以下命令在无人参与模式下进行安装： <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
+* 用户可以通过运行以下命令进行安装： <br>```\\server\products\VS2017\vs_enterprise.exe```
+* 管理员可以通过运行以下命令在无人参与模式下进行安装： <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
 
+> [!IMPORTANT]
+> 为了防止错误出现，请确保完全安装路径的长度小于 80 个字符。
+>
 > [!TIP]
 > 如果作为批处理文件的一部分执行，`--wait` 选项可确保 `vs_enterprise.exe` 进程先等待安装完成，再返回退出代码。 若企业管理员要在已完成的安装上执行进一步操作（例如，[向已成功的安装应用产品密钥](automatically-apply-product-keys-when-deploying-visual-studio.md)），此方法十分有用，但需要等待安装完成以处理从该安装返回的代码。  如果不使用 `--wait``vs_enterprise.exe` 进程将在安装完成前退出，并返回一个不能表示安装操作状态的不准确的退出代码。
+
 
 从布局安装时，安装内容将从布局中获取。 但是，如果选择不在布局中的组件，则会从 Internet 获取它。  要阻止 Visual Studio 安装程序下载布局中缺少的任何内容，请使用 `--noWeb` 选项。  如果使用 `--noWeb`，但布局中缺少要安装的选定内容，安装就会失败。
 

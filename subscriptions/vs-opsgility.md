@@ -9,12 +9,12 @@ description: 了解选定 Visual Studio 订阅随附的 Skill Me Up 培训权益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: f69caa191a824f4f97ab3604b799e2b2b624f28e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: c057eda862ffc0ef556d878a0afb3d1dd106918c
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739703"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380203"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Skill Me Up 培训权益（由 Opsgility 提供技术支持）
 
@@ -46,10 +46,10 @@ ms.locfileid: "53739703"
 | Visual Studio Dev Essentials | NA  | 不可用 | NA  |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-不包括：Microsoft 合作伙伴网络 (MPN)、Microsoft 最有价值专家 (MVP)、Microsoft 认证培训师、BizSpark、Imagine、NFR、FTE
+不包括：Microsoft 合作伙伴网络 (MPN)、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 认证培训师、BizSpark、Imagine、NFR、FTE
 
 > [!NOTE]
-> Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的功能不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
+> Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
 
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。

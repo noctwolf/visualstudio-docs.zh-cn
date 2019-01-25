@@ -1,7 +1,7 @@
 ---
 title: 创建脱机安装
 description: 了解如何在 Internet 连接不可靠或带宽较低时脱机安装 Visual Studio。
-ms.date: 08/28/2018
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8359a3b0d96c92a897532edffa7c6ac0b193cd3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7be6077d89ffc302ae556c94ed270f8cfd760c38
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952390"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345248"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 脱机安装缓存
 
@@ -65,6 +65,9 @@ Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中�
 
 请打开命令提示符，并使用以下示例中的任一命令。 此处列出的示例假定用户使用的是 Visual Studio 社区版；请根据版本相应调整命令。
 
+> [!TIP]
+> 为了防止错误出现，请确保完全安装路径的长度小于 80 个字符。
+
 - 对于 .NET Web 和.NET 桌面开发，请运行：
 
    ```vs_community.exe --layout c:\vs2017layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US```
@@ -81,10 +84,10 @@ Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中�
 
    ```vs_community.exe --layout c:\vs2017layout --lang en-US```
 
-如果要安装非英语语言，请从[语言区域设置列表](#list-of-language-locales)中将 `en-US` 更改为区域设置。 然后，使用此[可用组件和工作负载列表](workload-and-component-ids.md)，进一步自定义安装缓存。
+  > [!NOTE]
+  > 完整的 Visual Studio 2017 布局至少需要 35GB 磁盘空间。 若要了解如何创建仅包含要安装的组件的布局，请参阅[使用命令行参数安装 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)。
 
-> [!IMPORTANT]
-> 完整的 Visual Studio 2017 布局至少需要 35 GB 磁盘空间，可能需要一段时间才能下载完成。 有关如何创建仅具有要安装的组件的布局的信息，请参阅[使用命令行参数安装 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)。
+如果要安装非英语语言，请从[语言区域设置列表](#list-of-language-locales)中将 `en-US` 更改为区域设置。 然后，使用此[可用组件和工作负载列表](workload-and-component-ids.md)，进一步自定义安装缓存。
 
 ### <a name="step-3---install-visual-studio-from-the-local-cache"></a>步骤 3 - 从本地缓存安装 Visual Studio
 

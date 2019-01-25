@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的技术支持权�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e2e5b66988ba5ff5aedede2e1cef112a3b204919
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: be2fcf753c73055d647e9a924dfec306d49ce202
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315509"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380253"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>激活 Visual Studio 订阅中的技术支持权益
 
@@ -99,7 +99,7 @@ ms.locfileid: "54315509"
 | Visual Studio Dev Essentials | NA | 不可用 |NA|
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup> 包括：Imagine 高级版。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine 标准、Microsoft 最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务。
+<sup>1</sup> 包括：Imagine 高级版。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine Standard、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务。
 
 <sup>2</sup> 包括：Imagine 标准版。
 

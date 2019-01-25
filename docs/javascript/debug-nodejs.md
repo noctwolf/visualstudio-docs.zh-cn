@@ -1,6 +1,6 @@
 ---
-title: 调试 Node.js 应用
-description: Visual Studio 支持在 Visual Studio 中调试 Node.js 应用程序
+title: 调试 JavaScript 或 TypeScript 应用
+description: Visual Studio 支持在 Visual Studio 中调试 JavaScript 和 TypeScript 应用
 ms.date: 12/03/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,16 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6e0ba454a00fb2cebdfaa8ba5fdba63ef3ed2748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29b58d588a07be8ba25ab844da171222c57df545
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955888"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398229"
 ---
-# <a name="debug-a-nodejs-app-in-visual-studio"></a>在 Visual Studio 中调试 Node.js 应用
+# <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中调试 JavaScript 或 TypeScript 应用
 
 可以使用 Visual Studio 调试 JavaScript 和 TypeScript 代码。 可以设置和命中断点、附加调试器、检查变量、查看调用堆栈以及使用其他调试功能。
+
+> [!TIP]
+> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。 根据所展开的应用开发的类型，可能需要使用 Visual Studio 安装 Node.js 开发工作负荷。
 
 ## <a name="debug-server-side-script"></a>调试服务器端脚本
 
