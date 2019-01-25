@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b5f256639fbef222042ca3137eb9d19c2a97d702
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280372"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344689"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>正则表达式中有语法错误 (JavaScript)
 在搜索字符串的结构违反了一个或多个语法规则的[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]正则表达式。  

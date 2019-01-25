@@ -1,5 +1,5 @@
 ---
-title: 函数没有有效的原型对象 |Microsoft 文档
+title: 函数没有有效的原型对象 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,19 +21,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a4e2cbf198a452cd61f1355682ea3041436d2a27
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633007"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346691"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>函数没有有效的原型对象
-你尝试使用**instanceof**以确定其中是否已从特定函数类，派生的对象，但是重新定义对象的`prototype`属性为`null`，或外部的对象类型 (这两个不是有效[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]对象)。 外部对象可以是主机对象模型 （例如，Internet Explorer 的文档或窗口对象） 中的对象或外部 COM 对象。  
+你尝试使用**instanceof**若要确定是否已从特定函数类派生的对象，但重新定义对象的`prototype`属性为`null`，或外部的对象类型 (这两个不是有效[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]对象)。 外部对象可以是主机对象模型 （例如，Internet Explorer 的文档或窗口对象） 中的对象或一个外部 COM 对象。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   确保函数的`prototype`属性引用为有效[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]对象。  
+-   请确保该函数的`prototype`属性是指一个有效[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [函数对象](../../javascript/reference/function-object-javascript.md)   
  [prototype 属性 (Object)](../../javascript/reference/prototype-property-object-javascript.md)

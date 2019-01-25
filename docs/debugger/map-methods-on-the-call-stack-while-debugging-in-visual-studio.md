@@ -1,8 +1,6 @@
 ---
 title: 创建调用堆栈的直观映射 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
@@ -31,18 +29,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ede973d96ffe21fb9406bb471400ffa8e2b69251
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 8729b722465eb01d1e497e99ef13ecbedb66f91e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389573"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417923"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging"></a>调试时创建的可调用堆栈 
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>创建进行调试时的调用堆栈的直观映射 (C#，Visual Basic、 c + +、 JavaScript)
 
 创建代码映射，以便在调试时对调用堆栈进行可视化跟踪。 可以在映射中进行标注以跟踪代码执行的操作，以便专注于查找 Bug。
 
-演练，请观看此视频：[视频： 使用代码图调试器集成 (通道 9) 直观地调试](http://go.microsoft.com/fwlink/?LinkId=293418)
+有关演练，请观看此视频：[视频：直观地调试与代码图调试器集成 (通道 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 有关命令和操作可以使用代码图的详细信息，请参阅[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
 
@@ -55,7 +53,7 @@ ms.locfileid: "52389573"
 
 ##  <a name="MapStack"></a>映射调用堆栈
 
-1. 在 Visual Studio Enterprise C#，Visual Basic、 c + +、 JavaScript 或 X + + 项目中，通过选择启动调试**调试** > **开始调试**或按**F5**.
+1. 在 Visual Studio Enterprise C#，Visual Basic、 c + + 或 JavaScript 项目中，通过选择启动调试**调试** > **开始调试**或按**F5**.
    
 1. 你的应用进入中断模式或你单步执行函数后，选择**调试** > **代码图**，或按**Ctrl**+**Shift**+**`**.
 

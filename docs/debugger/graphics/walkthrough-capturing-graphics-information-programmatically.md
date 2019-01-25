@@ -1,20 +1,18 @@
 ---
-title: 演练： 以编程方式捕获图形信息 |Microsoft Docs
-ms.custom: ''
+title: 演练：以编程方式捕获图形信息 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 659e370d664b3db2c3624d73164b4489cc2680a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 18ea39346689d2a9a68d34e1e9189f2cab300b02
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933282"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850682"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>演练：以编程方式捕获图形信息
 你可以使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断以编程方式从 Direct3D 应用中捕获图形信息。  
@@ -28,7 +26,7 @@ ms.locfileid: "49933282"
 -   当在手动测试中难以预计和捕获呈现问题，但可用通过使用有关运行时的应用状态信息以编程方式预测呈现问题时，调用 `CaptureCurrentFrame`。  
   
 ##  <a name="CaptureDX11_2"></a> Windows 10 中的编程捕获  
- 本演练的本部分演示了 Windows 10 中，它使用可靠捕获方法上使用 DirectX 11.2 API 的应用中的编程捕获。
+ 本部分演练演示了在 Windows 10 上使用 DirectX 11.2 API 的应用中的编程捕获，它使用可靠捕获方法。
   
  本部分显示如何完成这些任务：  
   
@@ -42,7 +40,7 @@ ms.locfileid: "49933282"
 >  以前的编程捕获的实现针对 Visual studio 远程工具依赖于[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]来提供捕获功能。
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>准备你的应用以使用编程捕获  
- 若要在应用中使用编程捕获，它必须包括必要的标头。 这些标头是 Windows 10 SDK 的一部分。  
+ 若要在应用中使用编程捕获，它必须包括必要的标头。 这些标头属于 Windows 10 SDK。  
   
 ##### <a name="to-include-programmatic-capture-headers"></a>包括编程捕获标头  
   
@@ -56,7 +54,7 @@ ms.locfileid: "49933282"
     ```  
   
     > [!IMPORTANT]
-    >  不包括标头文件 vsgcapture.h—which 支持编程捕获在 Windows 8.0 及更早版本，若要在 Windows 10 应用中执行编程捕获。 此标头无法与 DirectX 11.2 兼容。 如果此文件包括包含 d3d11_2.h 标头后，则编译器会发出警告。 如果之前 d3d11_2.h 包含 vsgcapture.h，则不会启动该应用程序。  
+    >  请勿包括头文件 vsgcapture.h（支持 Windows 8.0 及更早版本上的编程捕获）来在 Windows 10 应用中执行编程捕获。 此标头无法与 DirectX 11.2 兼容。 如果此文件包括包含 d3d11_2.h 标头后，则编译器会发出警告。 如果之前 d3d11_2.h 包含 vsgcapture.h，则不会启动该应用程序。  
   
     > [!NOTE]
     >  如果你的计算机上安装了 DirectX SDK（2010 年 6 月），并且你的项目的包括路径包含 `%DXSDK_DIR%includex86`，请将它移动到包括路径末尾。 针对你的库路径执行相同操作。  
@@ -117,6 +115,6 @@ ms.locfileid: "49933282"
 -   了解如何使用图形诊断工具分析捕获的图形信息。 请参阅[概述](overview-of-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 捕获图形信息](walkthrough-capturing-graphics-information.md)   
+ [演练：捕获图形信息](walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](capturing-graphics-information.md)   
  [命令行捕获工具](command-line-capture-tool.md)

@@ -18,18 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dede10e7488bf36cbf8920572ceea0e21f6f6583
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59f7b21530ff51697daca40b5c9f412682f7df89
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898068"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204396"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在代码编辑器中的数据提示中的视图数据值
 
-使用数据提示功能，可以在调试期间方便地查看程序中变量的有关信息。 数据提示功能只能在中断模式下可用，并且只对当前执行范围内的变量有效。 如果这是你首次尝试调试代码，则在阅读本文之前，可能需要阅读[通过编写更好的 C# 代码修复 bug](../debugger/write-better-code-with-visual-studio.md)和[适用于初学者的调试](../debugger/debugging-absolute-beginners.md)。
-
-如果这是你第一次调试，你可能需要阅读[更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)阅读本文之前。
+使用数据提示功能，可以在调试期间方便地查看程序中变量的有关信息。 数据提示功能只能在中断模式下可用，并且只对当前执行范围内的变量有效。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)和[编写更优质的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)。
   
 ## <a name="work-with-datatips"></a>使用数据提示
 

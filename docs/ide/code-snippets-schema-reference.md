@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e16df68ef36ee38b20be4da0150ca6550cd3644
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864707"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315587"
 ---
 # <a name="code-snippets-schema-reference"></a>代码片段架构参考
 
@@ -547,7 +547,7 @@ $selected$ is a great color. I love $selected$.
 |[Code 元素](../ide/code-snippets-schema-reference.md#code-element)|必需的元素。 指定要插入到文档文件中的代码。 `Code` 元素中必须有且仅有一个 `Snippet` 元素。|
 |[Declarations 元素](../ide/code-snippets-schema-reference.md#declarations-element)|可选元素。 指定作为某个代码段组成部分的文本和对象，你可以对该代码段进行编辑。 `Declarations` 元素中可能有零个或一个 `Snippet` 元素。|
 |[Imports 元素](../ide/code-snippets-schema-reference.md#imports-element)|可选元素。 对单个 `Import` 元素进行分组。 `Imports` 元素中可能有零个或一个 `Snippet` 元素。|
-||可选元素。 对单个 `Reference` 元素进行分组。 `References` 元素中可能有零个或一个 `Snippet` 元素。|
+|[References 元素](../ide/code-snippets-schema-reference.md#references-element)|可选元素。 对单个 `Reference` 元素进行分组。 `References` 元素中可能有零个或一个 `Snippet` 元素。|
 
 |父元素|说明|
 | - |-----------------|

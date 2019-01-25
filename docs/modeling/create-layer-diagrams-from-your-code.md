@@ -13,16 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44b957f18061024278710683a63d250f16ae2e4d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846160"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761409"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>从代码创建依赖项关系图
 
-若要可视化软件系统的高级逻辑体系结构，创建*依赖项关系图*Visual Studio 中。 为了确保你的代码保持与此设计保持一致，请使用验证代码依赖项关系图。 您可以创建 Visual C# 和 Visual Basic 项目的依赖项关系图。 若要查看哪些版本的 Visual Studio 支持此功能，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要可视化软件系统的高级逻辑体系结构，创建*依赖项关系图*Visual Studio 中。 为了确保你的代码保持与此设计保持一致，请使用验证代码依赖项关系图。 您可以创建 Visual C# 和 Visual Basic 项目的依赖项关系图。 若要查看哪些版本的 Visual Studio 支持此功能，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)。
 
 ![创建依赖项关系图](../modeling/media/layerdiagramvisualizecode.png)
 
@@ -52,7 +52,7 @@ ms.locfileid: "53846160"
 
 4.  在中**添加到建模项目**，浏览到并在解决方案中选择一个现有建模项目。
 
-     - 或 -
+     或
 
      选择**创建一个新建模项目**将一个新建模项目添加到解决方案。
 
@@ -159,6 +159,7 @@ ms.locfileid: "53846160"
 
 ## <a name="see-also"></a>请参阅
 
+- [对体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [视频：验证你在真实时间中的体系结构依赖关系](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [依赖项关系图：引用](../modeling/layer-diagrams-reference.md)
 - [依赖项关系图：指导原则](../modeling/layer-diagrams-guidelines.md)

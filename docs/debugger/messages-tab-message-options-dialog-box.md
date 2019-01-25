@@ -1,8 +1,6 @@
 ---
 title: 消息选项卡上，消息选项对话框 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - message options, Messages
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55906da398f7f52460523cb74a77945d84037ebc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1f7675039f8e5f5fb5c1d5899b96682ab60a2bc0
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866761"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53830583"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>“消息选项”对话框 ->“消息”选项卡
 使用**消息**选项卡以选择列表中的消息类型[消息视图](../debugger/messages-view.md)，并指定消息搜索条件。 若要显示[消息选项对话框](../debugger/message-options-dialog-box.md)，选择**日志消息**从**Spy**菜单。  
@@ -26,7 +24,7 @@ ms.locfileid: "49866761"
   
  以下设置位于**消息**选项卡：  
   
- **查看的消息**  
+ **要查看的消息**  
  选择要查看的特定消息。 在创建新的消息窗口时，它可以显示所有消息。 筛选来自消息时**消息**选项卡上，该筛选器仅适用于新消息，不均已显示在 Windows 视图中的消息。  
   
  **消息组**  
@@ -42,5 +40,5 @@ ms.locfileid: "49866761"
   
   中的灰色的复选框**消息组**指示**查看的消息**为该组中的消息，已修改列表框中; 不是所有在该组中的消息类型选择。  
   
-  **将设置保存为默认值**  
+  **保存为默认设置**  
   将以供将来使用的当前设置保存为消息搜索选项。 退出 Spy + + 时，还会保存这些设置。

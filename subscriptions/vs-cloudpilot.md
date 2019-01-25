@@ -9,12 +9,12 @@ description: 了解有关所选 Visual Studio 订阅中包含的可用 CloudPilo
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a5e3f4b3026afd528f8eeec42de157265b18013a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 90a71ec94e1fbd102cf731fef94394096b1e0ba7
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740031"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380118"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CloudPilot 权益
 
@@ -68,12 +68,12 @@ ms.locfileid: "53740031"
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                             |  不可用           |
 | MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不可用          |
 | Visual Studio Dev Essentials | 不可用  | 不可用 | 不可用 |
-| Visual Studio Enterprise（标准、年度云）  | NFR<sup>1</sup> |不可用  | 不可用 |
+| Visual Studio Enterprise（标准）  | NFR<sup>1</sup> |不可用  | 不可用 |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 
 
 
-<sup>1</sup>包括：不得转售 (NFR)、FTE、Microsoft 最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine{0}
+<sup>1</sup>  包括：不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine
 
 
 > [!NOTE]

@@ -12,15 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11f7249f30b1866ca7c4aea4bbefa850a5353c0f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 396afaf7b2cd5821db05ee4a6291d976fc852878
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305580"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847951"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自定义 Visual Studio 创建数据绑定控件的标题的方式
 
@@ -33,7 +32,7 @@ ms.locfileid: "52305580"
 
 下表介绍控件标题标签的注册表值。
 
-|注册表项|描述|
+|注册表项|说明|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|用于与您的模式匹配正则表达式。|
 |**SmartCaptionReplacement**|要显示中匹配的任何组的格式**SmartCaptionExpression**。|
@@ -44,13 +43,13 @@ ms.locfileid: "52305580"
 |注册表项|默认值|说明|
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**(\\\p{Ll}) (\\\p{Lu})&#124;_ +**|匹配后跟一个大写字符或下划线的小写字符。|
-|**SmartCaptionReplacement**|“$103”|**1 美元**表示匹配在第一个表达式，表达式的括号中的任意字符以及 **$2**表示匹配在第二个括号中的任意字符。 替换为第一个匹配项、 空格和第二个匹配项。|
+|**SmartCaptionReplacement**|**$1 $2**|**1 美元**表示匹配在第一个表达式，表达式的括号中的任意字符以及 **$2**表示匹配在第二个括号中的任意字符。 替换为第一个匹配项、 空格和第二个匹配项。|
 |**SmartCaptionSuffix**|**:**|表示字符追加到返回的字符串。 例如，如果标题是`Company Name`，后缀使得 `Company Name:`|
 
 > [!CAUTION]
 > 你应执行任何操作在注册表编辑器时请格外小心。 在编辑之前备份注册表。 如果在注册表编辑器使用不当可能导致严重的问题，可能需要重新安装操作系统。 Microsoft 不保证可以解决通过注册表编辑器使用不当导致的问题。 使用注册表编辑器的风险由您自己承担。
 >
-> 以下知识库文章包含有关备份、 编辑和还原注册表的说明： [Microsoft Windows 注册表说明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-我们; 256986)
+> 以下知识库文章包含有关备份、 编辑和还原注册表的说明：[Microsoft Windows 注册表说明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-我们; 256986)
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>修改智能隐藏式字幕行为的数据源窗口
 

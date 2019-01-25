@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0efbf39ec7000055bdaa978eab06417dae8b183
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bca0dacf2fd649db91fb37756c1670af403b4e95
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869185"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269398"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>类设计器中的 Visual C++ typedef
 
@@ -44,7 +44,7 @@ typedef class coord
 
 类和结构可在自身内声明嵌套的 typedef。 在“类设计器”中，类和结构形状可将嵌套的 typedef 声明显示为嵌套的形状。
 
-Typedef 形状支持上下文菜单中的“显示为关联”和“显示为集合关联”命令。
+Typedef 形状支持右键单击菜单（关联菜单）中的“显示为关联”和“显示为集合关联”命令。
 
 ### <a name="class-typedef-example"></a>类 typedef 示例
 

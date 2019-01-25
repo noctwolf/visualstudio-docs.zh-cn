@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f01d9d35f8b2c122fb61f4fd9b3a8a22090b21
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 934615be23ebb025740521d35e31fee9f0a6ec47
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918751"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315574"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 下表列出了在 Visual Studio 项目文件中定义的或者在 MSBuild 提供的 .targets 文件中包括的经常使用的属性。  
@@ -85,9 +85,11 @@ ms.locfileid: "53918751"
 | OutputPath | 相对于项目目录，例如 bin\Debug，指定输出目录的路径。 |
 | OutputType | 指定输出文件的文件格式。 此参数可以具有下列值之一：<br /><br /> -   Library。 创建一个代码库。 （默认值）。<br />-   Exe。 创建控制台应用程序。<br />-   Module。 创建一个模块。<br />-   Winexe。 创建一个基于 Windows 的程序。<br /><br /> 此属性等效于 vbc.exe 编译器的 `/target` 开关。 |
 | OverwriteReadOnlyFiles | 一个布尔值，指示要让生成覆盖只读文件还是触发错误。 |
+| PathMap | 指定如何将物理路径映射到编译器输出的源路径名称。 此属性等效于 csc.exe 编译器的 `/pathmap` 开关。 |
 | PdbFile | 正在发出的 .pdb 文件的文件名。 此属性等效于 csc.exe 编译器的 `/pdb` 开关。 |
 | 平台 | 生成所面向的操作系统。 有效值是“Any CPU”、“x86”和“x64”。 |
 | ProduceReferenceAssembly | 一个布尔值，设置为 `true` 时，可为当前程序集生成[引用程序集](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md)。 使用此功能时，`Deterministic` 应为 `true`。 此属性对应于 vbc.exe 和 csc.exe 编译器的 `/refout` 开关。 |
+| ProduceOnlyReferenceAssembly | 布尔值，指示编译器仅发出引用程序集，而不是已编译代码。 无法与 `ProduceReferenceAssembly` 一起使用。  此属性对应于 vbc.exe 和 csc.exe 编译器的 `/refonly` 开关。 |
 | RemoveIntegerChecks | 一个布尔值，指示是否禁用整数溢出错误检查。 默认值为 `false`。 此属性等效于 vbc.exe 编译器的 `/removeintchecks` 开关。 |
 | SGenUseProxyTypes | 一个布尔值，指示是否应由 SGen.exe 生成代理类型。<br /><br /> SGen 目标使用此属性来设置 UseProxyTypes 标志。 此属性默认为 true，并且没有更高属性的 UI。 若要生成非 webservice 类型的序列化程序集，请在导入 Microsoft.Common.Targets 或 C#/VB.targets 之前将此属性添加到项目文件并将其设为 false。 |
 | SGenToolPath | 一个可选的工具路径，指示在当前版本的 SGen.exe 被重写时可以获得 SGen.exe 的位置。 |

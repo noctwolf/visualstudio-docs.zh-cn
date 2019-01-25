@@ -1,7 +1,7 @@
 ---
 title: 安装脱机安装所需的证书
 description: 了解如何安装 Visual Studio 脱机安装的证书。
-ms.date: 08/30/2017
+ms.date: 01/15/2019
 ms.custom: seodec18
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fd5e55d4f92c38c58aa7207f7770e7123b2127d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b804620ead343723dfafa5ebb108ccf4b51b1571
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948584"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380172"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安装 Visual Studio 脱机安装所需的证书
 
@@ -65,11 +65,11 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
    **更新**：对于 Visual Studio 2017 版本 15.8 预览版 2 或更高版本，使用以下命令创建批处理文件：
 
    ```cmd
-   certmgr.exe -add [layout path]\certificates\manifestSignCertificates.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
+   certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
 
-   certmgr.exe -add [layout path]\certificates\manifestCounterSignCertificates.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
+   certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
 
-   certmgr.exe -add [layout path]\certificates\vs_installer_opc.SignCertificates.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
 3. 将批处理文件部署到客户端。 应从提升的进程中运行此命令。

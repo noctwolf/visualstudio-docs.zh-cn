@@ -15,12 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c23d2571b021532b1a78a8207844561cc0c659b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21c4f8a7c1f8e5d5449f576740e8f901d25d9006
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837168"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269526"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>生成和运行编码的 Web 性能测试
 
@@ -86,7 +86,7 @@ ms.locfileid: "53837168"
 ## <a name="qa"></a>问题解答
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>问：是否能一次运行多个测试？
- **答：** 可以，请使用解决方案资源管理器中的上下文菜单。
+ **答：** 能，请使用“解决方案资源管理器”中的右键单击菜单（关联菜单）。
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>问：我是否应在生成编码的测试之前和之后添加数据源？
  **答：** 可在你生成编码的测试之前更轻松地添加[数据源](../test/add-a-data-source-to-a-web-performance-test.md)，因为将为你自动生成代码。

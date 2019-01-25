@@ -1,8 +1,6 @@
 ---
 title: 'Idiasectioncontrib:: Get_code |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 122b9ad10413e9ba89bf309011e2449e9f6707fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 207eb1768f298421cc4ec9c6887065f4aafb51fa
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866371"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53828467"
 ---
 # <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
 检索一个标志，指示的部分是否包含可执行代码。  
@@ -27,7 +25,7 @@ ms.locfileid: "49866371"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_code (   
+HRESULT get_code (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_code (
  [out]返回`TRUE`的部分包含可执行代码; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

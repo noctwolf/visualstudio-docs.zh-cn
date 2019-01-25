@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6c344105010e406ef4936fdcca58baffbd610088
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802337"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347419"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>正则表达式中应有“)”(JavaScript)
 试图创建正则表达式捕获、 断言或组，但不是包括右括号。 括号的正则表达式中具有多个用途。 首先，它们用来捕获子表达式，若要指定断言，或将模式组合在一起，以便可以将项视为单个单元通过 *，+、？、，等等。  

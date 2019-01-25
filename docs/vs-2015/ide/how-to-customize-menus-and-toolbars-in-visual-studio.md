@@ -5,8 +5,7 @@ ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
@@ -33,14 +32,14 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3196aac35a05d915f1f4c3b58547e0787e9a1afc
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: e9b9f755379644cbc3dd5b4a06fae44b2416f251
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066699"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53820924"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：自定义菜单和 Visual Studio 中的工具栏
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自定义菜单和工具栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在自定义 Visual Studio 时，你不仅可以添加和移除工具栏及菜单栏上的菜单，而且还可以添加和移除与任何给定工具栏或菜单有关的命令。
@@ -96,7 +95,7 @@ ms.locfileid: "53066699"
          你也可以拖动工具栏的左边缘，将其移动到主停靠区域内的任何位置。
 
         > [!NOTE]
-        >  有关如何改进的可用性和可访问性的工具栏的详细信息，请参阅[如何： 设置 IDE 辅助功能选项](../ide/reference/how-to-set-ide-accessibility-options.md)。
+        >  有关如何改进工具栏的可用性和辅助功能的详细信息，请参阅[如何：设置 IDE 辅助功能选项](../ide/reference/how-to-set-ide-accessibility-options.md)。
 
 ##  <a name="bkmk_customize"></a>自定义菜单或工具栏
 

@@ -1,8 +1,6 @@
 ---
-title: 调试 HTML 和 CSS 代码示例 |Microsoft 文档
-ms.custom: ''
+title: 调试 HTML 和 CSS 示例代码 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 182cda17cdd8a9b08a6e0d8b0130efa887be6368
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456788"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53947551"
 ---
 # <a name="debug-html-and-css-sample-code"></a>调试 HTML 和 CSS 示例代码
   
- 本主题中的代码是示例文件[快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。 此版本的代码中修复了快速入门中有意出现的错误。  
+ 本主题中的代码是示例文件[快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md) 此版本的代码中修复了快速入门中有意出现的错误。  
   
 ## <a name="sample-code"></a>代码示例  
- 中使用了以下 HTML 代码\<正文 > 了快速入门中的标记。  
+ 快速入门中的 \<body> 标记中使用了以下 HTML 代码。  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  

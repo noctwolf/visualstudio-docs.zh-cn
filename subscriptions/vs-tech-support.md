@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的技术支持权�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 635280cf52ca82af67ec1b3fc321f5ea6955128a
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: be2fcf753c73055d647e9a924dfec306d49ce202
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740419"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380253"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>激活 Visual Studio 订阅中的技术支持权益
 
@@ -85,11 +85,8 @@ ms.locfileid: "53740419"
 若要将 Visual Studio 订阅技术支持权益用于与 Azure 相关的问题，需要将合约 ID 和访问 ID 链接到 Azure 订阅。
 
 1.  访问 https://portal.azure.com 并登录
-2.  从左侧导航中，单击“帮助 + 支持”
-3.  在“支持”下单击“链接支持合约”
-4.  输入在上面 #1 中提供的“访问 ID”和“合同 ID”。
-
-完成这些步骤后，便能够选择与 Visual Studio 订阅权益关联的支持计划。  （计划名称可能包含“MSDN”。）
+2.  在左侧导航栏中，单击“帮助 + 支持”
+3.  单击“支持”下的“新建支持请求”
 
 ## <a name="eligibility"></a>资格
 
@@ -102,7 +99,7 @@ ms.locfileid: "53740419"
 | Visual Studio Dev Essentials | NA | 不可用 |NA|
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup> 包括：Imagine 高级版。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine 标准、Microsoft 最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务。
+<sup>1</sup> 包括：Imagine 高级版。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine Standard、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务。
 
 <sup>2</sup> 包括：Imagine 标准版。
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 349a395312344ab2abcf7c3a5242e7a92cd5e902
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95302b61da30cc2034edfe495a695efb510430d3
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868899"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269834"
 ---
 # <a name="view-type-and-member-definitions"></a>查看类型和成员定义
 
@@ -27,7 +27,7 @@ ms.locfileid: "53868899"
 
 ## <a name="go-to-definition"></a>转到定义
 
-“转到定义”功能可导航到类型或成员的源，并且在新选项卡中打开结果。如果使用键盘，请将文本游标放置在符号名称内部的某个位置，然后按 F12。 如果使用鼠标，请从上下文菜单选择“转到定义”或使用以下部分中所述的“Ctrl + 单击”功能。
+“转到定义”功能可导航到类型或成员的源，并且在新选项卡中打开结果。如果使用键盘，请将文本游标放置在符号名称内部的某个位置，然后按 F12。 如果使用鼠标，请选择右键单击菜单中的“转到定义”，或使用以下部分中描述的“Ctrl + 单击”功能。
 
 ### <a name="ctrl-click-go-to-definition"></a>Ctrl + 单击转到定义
 
@@ -41,7 +41,7 @@ ms.locfileid: "53868899"
 
 ## <a name="peek-definition"></a>查看定义
 
-“速览定义”功能有助于预览类型的定义，无需离开编辑器中的当前位置。 如果使用键盘，请将文本游标放置在类型或成员名称内的某个地方，然后按 Alt + F12。 如果使用鼠标，可以在上下文菜单中选择“预览定义”。 在 Visual Studio 2017 的 15.4 版本及更高版本中，使用鼠标快速查看定义可以采用新的方式。 首先，转到“工具” > “选项” > “文本编辑器” > “常规”。 选择“在速览视图中打开定义”选项然后单击“确定”关闭“选项”对话框。
+“速览定义”功能有助于预览类型的定义，无需离开编辑器中的当前位置。 如果使用键盘，请将文本游标放置在类型或成员名称内的某个地方，然后按 Alt + F12。 如果使用鼠标，可以选择右键单击菜单中的“速览定义”。 在 Visual Studio 2017 的 15.4 版本及更高版本中，使用鼠标快速查看定义可以采用新的方式。 首先，转到“工具” > “选项” > “文本编辑器” > “常规”。 选择“在速览视图中打开定义”选项然后单击“确定”关闭“选项”对话框。
 
 ![设置鼠标单击速览定义选项](../ide/media/editor_options_peek_view.png)
 
@@ -51,7 +51,7 @@ ms.locfileid: "53868899"
 
 如果在弹出式窗口中查看另一个定义，则将启动痕迹路径，即使用弹出式窗口上方显示的圆形菜单和箭头进行导航。
 
-有关更多信息，请参见[如何：使用“查看定义”(Alt+F12) 查看和编辑代码](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
+有关详细信息，请参阅[如何：使用“查看定义”(Alt+F12) 查看和编辑代码](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
 
 ## <a name="view-metadata-as-source-code-c"></a>查看作为源代码的元数据 (C#)
 

@@ -1,5 +1,5 @@
 ---
-title: IVariantChangeType 接口 |Microsoft 文档
+title: IVariantChangeType 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,19 +18,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95b1b761195a3b004ddaf13d17eafd2c8fe9982b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0c0bbd5ec7795498d9f04cc516a56d01c78bdb7c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733827"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349252"
 ---
 # <a name="ivariantchangetype-interface"></a>IVariantChangeType 接口
 允许调用方将从一种类型的变体值转换为另一个。  
   
 ## <a name="methods"></a>方法  
- 除了从继承的方法`IUnknown`、`IVariantChangeType`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IVariantChangeType`接口公开以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IVariantChangeType::ChangeType](../../winscript/reference/ivariantchangetype-changetype.md)|可将变量值并创建具有指定类型的新变量。|
+|[IVariantChangeType::ChangeType](../../winscript/reference/ivariantchangetype-changetype.md)|采用变量值并创建具有指定类型的新变体。|

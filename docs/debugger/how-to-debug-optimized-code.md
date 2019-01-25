@@ -1,8 +1,6 @@
 ---
-title: 如何： 调试优化的代码 |Microsoft Docs
-ms.custom: ''
+title: 如何：调试优化的代码 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -23,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6e212129c17ec7b4fe6cb9a6808c91cb302deb3
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 648af91d4b71be65e1f5befef1c3a84225bfabfe
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52387852"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154319"
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：调试优化的代码
 
@@ -76,7 +74,7 @@ ms.locfileid: "52387852"
 
 8. 如果为“`Custom`”选择了“`Optimization`”选项，现在便可为属性列表中显示的其他任何属性设置选项。
 
-9. 选择项目属性页中的配置属性、C/C++、命令行节点，并把 `(`[/Zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)` 添加到“其他选项”文本框。
+9. 选择配置属性、 C/c + + 项目属性页中，命令行节点，并添加`(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)`到**其他选项**文本框。
 
     > [!WARNING]
     >  `/Zo` 需要 Visual Studio 2013 Update 3 或更高版本。

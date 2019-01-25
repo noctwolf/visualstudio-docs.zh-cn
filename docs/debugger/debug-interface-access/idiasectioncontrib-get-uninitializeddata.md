@@ -1,8 +1,6 @@
 ---
 title: 'Idiasectioncontrib:: Get_uninitializeddata |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f0929897f5dba77282fa056b5b1a00e05782c9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 46ee13b8d6718152552ef075437e95566c997155
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916317"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951480"
 ---
 # <a name="idiasectioncontribgetuninitializeddata"></a>IDiaSectionContrib::get_uninitializedData
 检索一个标志，指示的部分是否包含未初始化的数据。  
@@ -27,7 +25,7 @@ ms.locfileid: "49916317"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_uninitializedData (   
+HRESULT get_uninitializedData (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_uninitializedData (
  [out]返回`TRUE`的部分包含未初始化的数据; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

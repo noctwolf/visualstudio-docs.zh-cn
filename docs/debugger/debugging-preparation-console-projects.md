@@ -2,7 +2,6 @@
 title: 准备调试控制台项目 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 dev_langs:
 - CSharp
@@ -19,16 +18,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c588bfffbf11d4abd26fbae1490cf0039373c3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: c8c5ae8995e86ebe90d6a9d6612c35005896e039
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53057070"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53926354"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>调试准备：控制台项目 (C#，c + +、 Visual Basic 中， F#)
 
-准备调试控制台项目类似于准备调试 Windows 项目，但是有一些额外的注意事项。 有关详细信息，请参阅[Windows 窗体应用程序](../debugger/debugging-preparation-windows-forms-applications.md)，并[调试准备： Windows 窗体应用程序 (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 由于所有控制台应用程序的相似性，本主题介绍以下项目类型：  
+准备调试控制台项目类似于准备调试 Windows 项目，但是有一些额外的注意事项。 有关详细信息，请参阅[Windows 窗体应用程序](../debugger/debugging-preparation-windows-forms-applications.md)，和[调试准备：Windows 窗体应用程序 (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 由于所有控制台应用程序的相似性，本主题介绍以下项目类型：  
   
 - C#Visual Basic 中，并F#控制台应用程序  
   
@@ -51,7 +50,7 @@ ms.locfileid: "53057070"
   
 - 在代码编辑器中，右击某行并选择**运行到光标处**。  
   
-  调试控制台应用程序时，您可能希望从命令提示符处而不是从 Visual Studio 中启动该应用程序。 在这种情况下，可以从命令提示处启动应用程序并将 Visual Studio 调试器附加到该应用程序。 有关详细信息，请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+  调试控制台应用程序时，你可能希望从命令提示符处而不是从 Visual Studio 中启动该应用程序。 在这种情况下，可以从命令提示处启动应用程序并将 Visual Studio 调试器附加到该应用程序。 有关详细信息，请参阅[附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
   当从 Visual Studio 中启动控制台应用程序时，“控制台”窗口有时会出现在 Visual Studio 窗口的后面。 如果尝试从 Visual Studio 中启动控制台应用程序但似乎未产生任何结果，请尝试移动 Visual Studio 窗口。  
   

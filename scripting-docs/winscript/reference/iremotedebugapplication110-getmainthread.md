@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication110::GetMainThread |Microsoft 文档
+title: IRemoteDebugApplication110::GetMainThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2dc420f3c59a59373c6e3a2be9e7254eea451585
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 20d895f8bd6d4919def00625e9f285afdfe4f866
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729287"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349855"
 ---
 # <a name="iremotedebugapplication110getmainthread"></a>IRemoteDebugApplication110::GetMainThread
-对于调用的主机返回主线程[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)，否则将返回 E_FAIL。  
+主线程返回对调用的宿主[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)，否则将返回 E_FAIL。  
   
 > [!IMPORTANT]
 >  [IRemoteDebugApplication 接口](../../winscript/reference/iremotedebugapplication-interface.md)是实现由 PDM v11.0 和更高版本。 在 activdbg100.h 中发现。  
@@ -37,6 +37,6 @@ HRESULT GetMainThread([out] IRemoteDebugApplicationThread **ppThread);
  `ppThread`  
  [out]主[IRemoteDebugApplicationThread 接口](../../winscript/reference/iremotedebugapplicationthread-interface.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IRemoteDebugApplication 接口](../../winscript/reference/iremotedebugapplication-interface.md)   
  [IRemoteDebugApplication110 接口](../../winscript/reference/iremotedebugapplication110-interface.md)

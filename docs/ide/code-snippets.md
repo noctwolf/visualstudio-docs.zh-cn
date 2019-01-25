@@ -18,16 +18,16 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: fc02a504cb6fa36a13992cf188eb0c14b6836fb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c539e2a20f7fa32ccba86a56831c71b17fdbefa5
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889223"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269399"
 ---
 # <a name="code-snippets"></a>代码片段
 
-代码片段是小块可重用的代码，可使用上下文菜单命令或热键组合将其插入代码文件中。 代码片段通常包含常用的代码块（如 `try-finally` 或 `if-else` 块），可用于插入整个类或方法。
+代码片段是小块可重用代码，可通过右键单击菜单（关联菜单）命令或热键组合插入到代码文件中。 代码片段通常包含常用的代码块（如 `try-finally` 或 `if-else` 块），可用于插入整个类或方法。
 
 > [!NOTE]
 > 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[代码片段 (Visual Studio for Mac)](/visualstudio/mac/snippets)。
@@ -61,7 +61,7 @@ finally
 }
 ```
 
-可通过两种方式插入此代码片段：在代码窗口上下文菜单中依次单击“插入代码段”和“Visual C#”，键入 `tryf`，然后按 Tab。或者，可键入 `tryf`，再按 Tab 两次。
+若要插入此代码片段，可以依次单击代码窗口的右键单击菜单（关联菜单）中的“插入代码片段”和“Visual C#”，键入“`tryf`”，再按 Tab 键。或者，可键入 `tryf`，再按 Tab 两次。
 
 外侧代码片段的示例：在 C++ 快捷方式中，`if` 可用作插入代码片段，或者可用作外侧代码片段。 如果选择一行（例如 `return FALSE;`），然后单击“外侧代码” > “if”，即可让代码片段将围绕此行展开：
 

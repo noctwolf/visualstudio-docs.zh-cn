@@ -1,6 +1,6 @@
 ---
-title: Node.js 中的单元测试
-description: Visual Studio 使用针对 Visual Studio 的 Node.js 工具提供支持单元测试 JavaScript 代码
+title: 对 JavaScript 和 TypeScript 代码进行单元测试
+description: Visual Studio 支持使用针对 Visual Studio 的 Node.js 工具对 JavaScript 和 TypeScript 代码进行单元测试
 ms.date: 06/06/2018
 ms.topic: conceptual
 ms.devlang: javascript
@@ -11,14 +11,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a65fc53f72e2e7a90b03f376ced55fffbe9ecbf8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 75f40dc5abe10f75dccad91fa96d7e149267dc47
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952759"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398216"
 ---
-# <a name="unit-testing-in-nodejs"></a>Node.js 中的单元测试
+# <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>在 Visual Studio 中对 JavaScript 和 TypeScript 代码进行单元测试
 
 通过针对 Visual Studio 的 Node.js 工具可以在无需切换到命令提示符的情况下，使用一些常用 JavaScript 框架写入和运行单元测试。
 

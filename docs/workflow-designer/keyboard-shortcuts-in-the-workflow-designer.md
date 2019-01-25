@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 326a377cd93e15c52a699dfb83c7ec111866cc0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c092a4bcb419039b145bccf3f6c0cd952f0ff85
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858651"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269574"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流设计器中的键盘快捷键
 
@@ -54,7 +54,7 @@ ms.locfileid: "53858651"
 
 - 若要调整流程图的大小，请使用箭头键移动某个活动经过该流程图的当前边框。 将自动调整流程图的大小。
 
-- 若要将某个活动设置为开始节点，请使用**设置为 StartNode**命令的上下文菜单中。
+- 若要将某个活动设置为开始节点，请使用**设置为 StartNode**中右键单击菜单命令。
 
 - 连接活动：
 

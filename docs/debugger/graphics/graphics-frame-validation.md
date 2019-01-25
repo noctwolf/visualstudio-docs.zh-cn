@@ -1,8 +1,6 @@
 ---
 title: 图形帧验证 |Microsoft Docs
-ms.custom: ''
 ms.date: 03/02/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.FrameValidation
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cdfdee83a9c78069b3f086ef84b280ba9328e4f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 2add8032a1fa5da983c66ab5cfabede78f4c65c8
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53891769"
 ---
 # <a name="graphics-frame-validation"></a>图形帧验证
 <!-- VERSIONLESS --> Visual Studio 2017 和更好的支持**帧验证**工具。  帧验证窗口中显示错误和警告事件列表与相关联。  若要查看此窗口，请选择**视图 > 帧验证**菜单。
@@ -36,5 +34,5 @@ ms.locfileid: "49850875"
 | 事件 | 与错误或警告关联的事件。 |
 
 ## <a name="see-also"></a>请参阅  
-[图形诊断 （调试 DirectX 图形）](visual-studio-graphics-diagnostics.md)   
+[图形诊断（调试 DirectX 图形）](visual-studio-graphics-diagnostics.md)   
 <!-- /VERSIONLESS -->

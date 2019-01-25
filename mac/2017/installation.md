@@ -1,19 +1,20 @@
 ---
-title: 安装 Visual Studio for Mac
+title: 安装 Visual Studio 2017 for Mac
 description: 有关如何安装 Visual Studio for Mac 和跨平台开发所需附加组件的说明。
 author: conceptdev
 ms.author: crdun
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: e725234cadc301d5e0e369131efd53c1c69d6337
-ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
+ms.custom: video
+ms.openlocfilehash: 2dca1fdeace3a69fee231c1c31d3db75587e8294
+ms.sourcegitcommit: a260df15214b3198a28ca4e312263942cf6f4ce7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53158952"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443788"
 ---
-# <a name="set-up-and-install-visual-studio-for-mac"></a>设置和安装 Visual Studio for Mac
+# <a name="install-visual-studio-2017-for-mac"></a>安装 Visual Studio 2017 for Mac
 
 ## <a name="requirements"></a>要求
 
@@ -21,12 +22,12 @@ ms.locfileid: "53158952"
 
 要结合使用 iOS 和 Visual Studio，需要以下各项：
 
-* 运行 macOS Sierra 10.12 或更高版本的 Mac
-* Xcode 8.3 或更高版本。 通常建议使用稳定的最新版本。
-* 一个 Apple ID。 如果没有 Apple ID，请在 https://appleid.apple.com 新建一个。 需要 Apple ID 才可安装和登录 Xcode。
+- 运行 macOS Sierra 10.12 或更高版本的 Mac
+- Xcode 8.3 或更高版本。 通常建议使用稳定的最新版本。
+- 一个 Apple ID。 如果没有 Apple ID，请在 https://appleid.apple.com 新建一个。 需要 Apple ID 才可安装和登录 Xcode。
 
-> [!TIP]
-> Visual Studio 2019 for Mac 预览版[现可供](install-preview.md)测试。
+> [!NOTE]
+> Visual Studio 2019 for Mac 预览版[现可供安装](installation.md?view=vsmac-2019)和测试。
 
 ## <a name="install"></a>安装
 
@@ -62,7 +63,7 @@ ms.locfileid: "53158952"
       - 完全跨平台的 Xamarin 应用 - 选择“Android”、“iOS”和“macOS”平台。
    * **.NET Core 应用程序** - 选择“.NET Core”平台。
    * **ASP.NET Core Web 应用程序** - 选择“.NET Core”平台。
-   * **跨平台 Unity 游戏开发** - 除 Visual Studio for Mac 之外，无需安装其他任何平台。 若要详细了解如何安装 Unity 扩展，请参阅 [Unity 安装指南](setup-vsmac-tools-unity.md)。
+   * **跨平台 Unity 游戏开发** - 除 Visual Studio for Mac 之外，无需安装其他任何平台。 若要详细了解如何安装 Unity 扩展，请参阅 [Unity 安装指南](/visualstudio/macm/setup-vsmac-tools-unity)。
 
    此安装屏幕显示每个组件的版本和大小。 可单击每个组件查看该组件的依赖项列表（对于 Android），该组件下载的其他包（对于 .NET Core），或任何其他所需应用程序（对于 iOS 和 macOS）：
 
@@ -95,7 +96,7 @@ ms.locfileid: "53158952"
 
 配置网络以允许访问下列位置：
 
-* [Visual Studio 终结点](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+- [Visual Studio 终结点](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -114,7 +115,11 @@ ms.locfileid: "53158952"
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 应用、ASP.NET Core Web 应用、Unity 游戏开发
 
-有关其他工作负载，请参阅[工作负载](workloads.md)页。
+有关其他工作负载，请参阅[工作负载](/visualstudio/mac/workloads)页。
+
+## <a name="related-video"></a>相关视频
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Acquisition/player]
 
 ## <a name="see-also"></a>请参阅
 

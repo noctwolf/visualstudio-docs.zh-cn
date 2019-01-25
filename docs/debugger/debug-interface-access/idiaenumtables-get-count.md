@@ -1,8 +1,6 @@
 ---
-title: 'Idiaenumtables:: Get_count |Microsoft 文档'
-ms.custom: ''
+title: 'Idiaenumtables:: Get_count |Microsoft Docs'
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f25c7c734afb6f39fceb0584164ddab894a02925
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 05f254abc58471f6fffa810a6b8f2283595efdb9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459875"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53863311"
 ---
 # <a name="idiaenumtablesgetcount"></a>IDiaEnumTables::get_Count
 检索表的数目。  
@@ -27,14 +25,14 @@ ms.locfileid: "31459875"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_Count (    LONG* pRetVal  
+HRESULT get_Count (    LONG* pRetVal  
 );  
   
 ```  
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回表的数目。  
+ [out]返回的表的数量。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

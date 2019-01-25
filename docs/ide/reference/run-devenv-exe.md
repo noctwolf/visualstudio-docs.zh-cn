@@ -1,58 +1,66 @@
 ---
 title: -Run (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- /run Devenv
-- run Devenv switch
+- /Run Devenv
+- Run Devenv switch
 - applications [Visual Studio], running
-- /r Devenv switch
-- Devenv, /run switch
-- r Devenv switch (/r)
+- /R Devenv switch
+- Devenv, /Run switch
+- R Devenv switch (/R)
 ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f46afb431b998b5fd937d24178a602f6aea81eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db6653bf0b44d186ad30f3d1dffa367db7fe354b
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921739"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227468"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
+
 编译并运行指定的项目或解决方案。
 
 ## <a name="syntax"></a>语法
 
-```cmd
-devenv {/run|/r} {SolutionName|ProjectName}
+```shell
+devenv {/Run|/R} {SolutionName|ProjectName} [/Out OutputFilename]
 ```
 
 ## <a name="arguments"></a>自变量
- `SolutionName`
 
- 必需。 解决方案文件的完整路径和名称。
+- *SolutionName*
 
- `ProjectName`
+  解决方案文件的完整路径和名称。
 
- 必需。 项目文件的完整路径和名称。
+- *ProjectName*
+
+  项目文件的完整路径和名称。
+
+- `/Out` OutputFilename
+
+  可选。 要将工具输出发送到的文件的文件名。 如果文件已有，工具将输出追加到文件末尾。
 
 ## <a name="remarks"></a>备注
- 根据为活动解决方案配置指定的设置编译并运行指定项目或解决方案。 此开关启动集成开发环境 (IDE) ，并在项目或解决方案已完成运行后让该环境保持活动状态。
 
--   用双引号将含有空格的字符串引起来。
+根据为活动解决方案配置指定的设置编译并运行指定项目或解决方案。 此开关启动 IDE，并在项目或解决方案已完成运行后让它一直处于活动状态。
 
--   “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示摘要信息（包括错误）。
+- 用双引号将含有空格的字符串引起来。
+
+- “命令”窗口或使用 `/Out` 开关指定的任何日志文件中都可显示摘要信息（包括错误）。
 
 ## <a name="example"></a>示例
- 该示例使用活动部署配置运行解决方案 `MySolution`。
 
-```cmd
-devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"
+该示例使用活动部署配置运行解决方案 `MySolution`。
+
+```shell
+devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
 ## <a name="see-also"></a>请参阅

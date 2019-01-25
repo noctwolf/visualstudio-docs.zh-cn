@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e46353f7e38a1822d5cbcc21441d1d4dccdf5c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 120ca4ac409641af7b3a2b303830288cbcb0d20a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968600"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270240"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>创建数据驱动的编码的 UI 测试
 
@@ -64,11 +64,11 @@ ms.locfileid: "53968600"
    }
    ```
 
-5. 使用 `AddNumbers()` 方法验证测试正常运行。 将游标放在上面所示的测试方法中，打开上下文菜单，然后选择“运行测试”。 （键盘快捷键：Ctrl+R，T）。
+5. 使用 `AddNumbers()` 方法验证测试正常运行。 将光标放在上面所示的测试方法中，打开右键单击菜单，再选择“运行测试”。 （键盘快捷键：Ctrl+R，T）。
 
     表明测试通过还是失败的测试结果会显示在“测试资源管理器”窗口中。 若要打开测试资源管理器窗口，请从“测试”菜单中选择“窗口”，然后选择“测试资源管理器”。
 
-6. 因为数据源还可以用于断言参数值（供测试用于验证预期的值），所以通过添加断言来验证这两个数的总和是正确的。 将游标放在上面所示的测试方法中，打开上下文菜单，然后依次选择“为编码的 UI 测试生成代码”、“使用编码的 UI 测试生成器”。
+6. 因为数据源还可以用于断言参数值（供测试用于验证预期的值），所以通过添加断言来验证这两个数的总和是正确的。 将光标放在上面所示的测试方法中，打开右键单击菜单，再依次选择“为已编码 UI 测试生成代码”和“使用已编码 UI 测试生成器”。
 
     映射显示总和的计算器中的文本控件。
 
@@ -93,7 +93,7 @@ ms.locfileid: "53968600"
    }
    ```
 
-9. 通过 `ValidateSum()` 方法验证测试正常运行。 将游标放在上面所示的测试方法中，打开上下文菜单，然后选择“运行测试”。 （键盘快捷键：Ctrl+R，T）。
+9. 通过 `ValidateSum()` 方法验证测试正常运行。 将光标放在上面所示的测试方法中，打开右键单击菜单，再选择“运行测试”。 （键盘快捷键：Ctrl+R，T）。
 
      在这一点上，所有参数值在方法中都定义为常量。 然后，创建数据集，让测试成为数据驱动的测试。
 

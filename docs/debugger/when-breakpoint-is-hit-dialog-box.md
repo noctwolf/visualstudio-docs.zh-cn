@@ -1,8 +1,6 @@
 ---
-title: 断点时命中的对话框 |Microsoft 文档
-ms.custom: ''
+title: 断点时命中对话框 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.whenbreakpointishit
@@ -19,24 +17,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2d0940764e64f9179eb8346c271afa6136b72f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 560a79892ee50f3d151971f46bcc2c2b7f205d3f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475033"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53845611"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>“命中断点时”对话框
-使用此对话框中，你可以自定义当命中断点时出现的操作。  
+使用此对话框，您可以自定义命中断点时，会发生的操作。  
   
 ## <a name="uielement-list"></a>UIElement 列表  
  **打印消息**  
- 将打印消息，使用 DebuggerDisplay 语法。 有关详细信息，请参阅[使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)。  
+ 打印一条消息，使用 DebuggerDisplay 语法。 有关详细信息，请参阅[使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)。  
   
- 此文本框还支持 （如 $ADDRESS) 可由本身或 DebuggerDisplay 表达式的大括号内使用的特殊关键字。 在对话框中列出了可用的关键字。  
+ 此文本框还支持可用于单独或 DebuggerDisplay 表达式的大括号内的特殊关键字 （如 $ADDRESS)。 在对话框中列出了可用的关键字。  
   
  **继续执行**  
- 启用此控件时，才**打印消息**选择。 选择此控件，你可以使用断点作为跟踪点跟踪程序执行，而不是重大时命中位置。  
+ 仅在选择“打印消息”时启用此控件。 选择此控件，可以使用断点与跟踪点跟踪程序执行，而不是重大时命中位置。  
   
 ## <a name="see-also"></a>请参阅  
  [使用断点](../debugger/using-breakpoints.md)   

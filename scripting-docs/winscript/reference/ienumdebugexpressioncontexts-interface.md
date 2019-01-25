@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExpressionContexts 接口 |Microsoft 文档
+title: IEnumDebugExpressionContexts Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,23 +14,23 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f48a9bcf42b0aadd3716924e120bff403d87769d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 691fe68e78567026bd6ad96883b59aa276481191
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728357"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347588"
 ---
 # <a name="ienumdebugexpressioncontexts-interface"></a>IEnumDebugExpressionContexts 接口
-枚举的集合`IDebugExpressionContexts`对象。  
+枚举 `IDebugExpressionContexts` 对象的集合。  
   
- 除了从继承的方法`IUnknown`、`IEnumDebugExpressionContexts`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IEnumDebugExpressionContexts`接口公开以下方法。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|检索指定的数量的段中枚举序列。|  
-|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|跳过指定的数目的段中枚举序列。|  
+|[IEnumDebugExpressionContexts::Next](../../winscript/reference/ienumdebugexpressioncontexts-next.md)|检索指定的数目的枚举序列中的段。|  
+|[IEnumDebugExpressionContexts::Skip](../../winscript/reference/ienumdebugexpressioncontexts-skip.md)|将跳过枚举序列中的指定的段数。|  
 |[IEnumDebugExpressionContexts::Reset](../../winscript/reference/ienumdebugexpressioncontexts-reset.md)|将枚举序列重置到开头。|  
-|[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|创建一个枚举器，其中包含与当前的枚举器相同的状态。|
+|[IEnumDebugExpressionContexts::Clone](../../winscript/reference/ienumdebugexpressioncontexts-clone.md)|创建一个包含与当前枚举数相同的状态的枚举器。|

@@ -1,6 +1,6 @@
 ---
 title: 选项，文本编辑器，C#，高级
-ms.date: 10/29/2018
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4fdb52b4fbdeac437a3833e0030acedfa382f81c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887901"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398294"
 ---
 # <a name="options-text-editor-c-advanced"></a>选项，文本编辑器，C#，高级
 
@@ -109,13 +109,17 @@ ms.locfileid: "53887901"
 
 - 显示过程行分隔符
 
-   文本编辑器指示过程的可视范围。 在项目的 .vb 源文件中，在下表列出的位置处绘制行：
+   文本编辑器指示过程的可视范围。 在项目的 .cs 源文件中，在下表列出的位置处绘制行：
 
-   |.vb 源文件中的位置|行位置示例|
+   |.cs 源文件中的位置|行位置示例|
    |---------------------------------|------------------------------|
    |在块声明构造结束之后|-   在类、结构、模块、接口或枚举的末尾<br />-   在属性、函数或子类之后<br />-   不在属性中的 get 和 set 子句之间|
    |在一组单行构造之后|-   在类文件中的导入语句之后，在类型定义之前<br />-   在类中声明的变量之后，在所有过程之前|
    |在单行声明（非块级声明）之后|-   在导入语句、继承语句、变量声明、事件声明、委托声明和 DLL 声明语句之后|
+
+## <a name="block-structure-guides"></a>块结构指南
+
+如果选中这些复选框，可以在代码中的大括号 ({}) 之间显示虚竖线。 然后，就可以轻松查看声明级构造和代码级构造的各个代码块了。
 
 ## <a name="editor-help"></a>编辑器帮助
 

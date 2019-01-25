@@ -1,8 +1,6 @@
 ---
 title: ClickOnce 和应用程序设置 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3cf6320401f58cd8ea1733e3b972202ba9b6d3
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 40077a30a49842187c24b4cf8b0cba18b3d0a46a
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081089"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53850961"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 和应用程序设置
 Windows 窗体的应用程序设置，可以轻松地创建、 存储和维护自定义应用程序和客户端上的用户首选项。 以下文档介绍了在 ClickOnce 应用程序中，应用程序设置文件的工作方式和用户升级到下一版本时，ClickOnce 如何迁移设置。  
@@ -55,7 +53,7 @@ Windows 窗体的应用程序设置，可以轻松地创建、 存储和维护�
  ClickOnce 并不适用于漫游设置，它允许您以跟随你跨计算机在网络上的设置文件。 如果您需要漫游设置，将需要以实现将设置存储在网络上的应用程序设置提供程序或开发自己的自定义设置类来存储在远程计算机上的设置。 在设置提供程序的详细信息，请参阅[应用程序设置体系结构](/dotnet/framework/winforms/advanced/application-settings-architecture)。  
   
 ## <a name="see-also"></a>请参阅  
- [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
+ [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)   
  [应用程序设置概述](/dotnet/framework/winforms/advanced/application-settings-overview)   
  [ClickOnce 缓存概述](../deployment/clickonce-cache-overview.md)   
- [ClickOnce 应用程序中访问本地和远程数据](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [在 ClickOnce 应用程序中访问本地数据和远程数据](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

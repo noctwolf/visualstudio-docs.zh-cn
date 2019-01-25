@@ -1,8 +1,6 @@
 ---
-title: 编辑并继续对话框的 |Microsoft Docs
-ms.custom: ''
+title: “编辑并继续”对话框 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.ENC.welcome
@@ -19,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1556897fe3efb2e8b1a4060ff8de20ca159a68d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: 3ebec5936249e0d4e9764438060c13411cec8a0c
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279136"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53985915"
 ---
 # <a name="edit-and-continue-dialog-box"></a>“编辑并继续”对话框
-（仅限本机）当您已在调试时编辑代码时，会显示此对话框并**编辑并继续**识别它可以应用代码更改。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。  
+（仅限本机）当你在调试过程中编辑了代码并且**编辑并继续**识别出可以应用代码更改时，会显示该对话框。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。  
   
- **永远不会显示此对话框**  
- 如果选择此复选框，**编辑并继续**将应用代码更改，而不要求在将来的权限。 您可以打开此警告再次转到**选项**对话框中，打开**调试**文件夹，单击**编辑并继续**页，然后选择**由调试命令调用**并**首先询问**。  
+ **不再显示此对话框**  
+ 如果选中此复选框，则“编辑并继续”以后将在不要求权限的情况下应用代码更改。 通过转到“选项”对话框，打开“调试”文件夹、单击“编辑并继续”页，然后选择“由调试命令调用”和“首先询问”，即可重新打开此警告。  
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   

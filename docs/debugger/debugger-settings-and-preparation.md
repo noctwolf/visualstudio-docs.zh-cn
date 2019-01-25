@@ -1,8 +1,6 @@
 ---
 title: 调试器设置和准备工作 |Microsoft Docs
-ms.custom: ''
 ms.date: 08/01/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug
@@ -20,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f32b5e68dec6696f6947fe78883c64b4c3caa322
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 5f1f4b9604afc511dcbb1362461a2e8c11c7098e
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257025"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269769"
 ---
 # <a name="debugger-settings-and-preparation"></a>调试器设置和准备
 本节描述与调试器相关的属性设置，以及为了使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器调试程序所需要的准备工作。 如果在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用项目模板创建程序，则调试配置中将为你正确配置这些设置。  
@@ -54,4 +52,4 @@ ms.locfileid: "52257025"
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
- [调试器功能简介](../debugger/debugger-feature-tour.md)
+ [初探调试器](../debugger/debugger-feature-tour.md)

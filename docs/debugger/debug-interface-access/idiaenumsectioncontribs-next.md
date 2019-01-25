@@ -1,8 +1,6 @@
 ---
 title: 'Idiaenumsectioncontribs:: Next |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 630914434defea47254597ca0e392379b70a3283
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 915588402264ac6ba7076f3e9cd95b347b946689
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818947"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53936264"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 检索指定的数目的枚举序列中的部分发布内容。  
@@ -27,7 +25,7 @@ ms.locfileid: "49818947"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT Next(   
+HRESULT Next(   
    ULONG                celt,   
    IDiaSectionContrib** rgelt,  
    ULONG*               pceltFetched  
@@ -45,7 +43,7 @@ HRESULT Next(
  [out]返回中提取的枚举器部分发布内容的数量。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果没有更多的部分发布内容。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果没有更多的部分发布内容。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   

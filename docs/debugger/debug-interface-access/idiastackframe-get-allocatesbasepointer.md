@@ -1,8 +1,6 @@
 ---
 title: IDiaStackFrame::get_allocatesBasePointer |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a746cc5ceeba8df4a023e10c09ecfe511be557b6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 223c8ded44770cc84ed61d35819cd840bca1248b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848769"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951506"
 ---
 # <a name="idiastackframegetallocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
 检索一个标志，指示是否将基指针分配此地址范围中的代码。  
@@ -27,7 +25,7 @@ ms.locfileid: "49848769"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT get_allocatesBasePointer (   
+HRESULT get_allocatesBasePointer (   
    BOOL* pRetVal  
 );  
 ```  
@@ -37,7 +35,7 @@ HRESULT get_allocatesBasePointer (
  [out]返回`TRUE`基指针分配并供其代码在此帧中; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持的属性。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果不支持的属性。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

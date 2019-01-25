@@ -1,8 +1,6 @@
 ---
-title: 如何： 调试 OnStart 方法 |Microsoft 文档
-ms.custom: ''
+title: 如何：调试 OnStart 方法 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -21,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d438a8d6dcd80ec8d9dcce2fb4943e8b5614442c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 53106b0d933c25d69ecd0b455b89f68c09b9a169
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481848"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53822931"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>如何：调试 OnStart 方法
-通过启动 Windows 服务并将调试器附加到服务进程，可以调试 Windows 服务。 有关详细信息，请参阅 [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)。 但是，若要调试 Windows 服务的 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 方法，必须从该方法内部启动调试器。  
+通过启动 Windows 服务并将调试器附加到服务进程，可以调试 Windows 服务。 有关更多信息，请参见[如何：调试 Windows 服务应用程序](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)。 但是，若要调试 Windows 服务的 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 方法，必须从该方法内部启动调试器。  
   
 1.  将对 <xref:System.Diagnostics.Debugger.Launch%2A> 的调用添加到 `OnStart()`方法的开头。  
   
@@ -46,7 +44,7 @@ ms.locfileid: "31481848"
   
      ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")  
   
-3.  选择**是，调试\<服务名称 >。**  
+3.  选择“是，调试 \<服务名>。”  
   
 4.  在“实时调试器”窗口中，选择你想要用于调试的 Visual Studio 版本。  
   

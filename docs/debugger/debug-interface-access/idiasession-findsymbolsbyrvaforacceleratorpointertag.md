@@ -1,8 +1,6 @@
 ---
 title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d936e8110443cc42e77ea523a5b3df288e28d8c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ad2a0656b03fb057b631319e922a83605fa62a6e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887262"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53859459"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
 提供相应的标记值，则此方法将返回在指定的父 Accelerator 存根 （stub） 函数在指定的相对虚拟地址中包含的符号的枚举。  
@@ -25,7 +23,7 @@ ms.locfileid: "49887262"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
+HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
    IDiaSymbol*           parent,  
    DWORD                 tagValue,  
    DWORD                 rva,  

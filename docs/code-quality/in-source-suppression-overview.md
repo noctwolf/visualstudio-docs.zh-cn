@@ -1,6 +1,6 @@
 ---
 title: 禁止显示代码分析警告
-ms.date: 08/03/2018
+ms.date: 12/01/2018
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a377f08a8f0a3397aee778a71c74457420dec70f
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932863"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835053"
 ---
 # <a name="suppress-code-analysis-warnings"></a>禁止显示代码分析警告
 
@@ -66,17 +66,19 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **MessageId** -为每个消息问题的唯一标识符。
 
-- **作用域**-取消该警告的目标。 如果未指定目标，则将它设置为属性的目标。 受支持的作用域包括：
+- **作用域**-取消该警告的目标。 如果未指定目标，则将它设置为属性的目标。 支持[作用域](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope)包括以下：
 
-    - 模块
+   - `module`
 
-    - 命名空间
+   - `resource`
 
-    - 资源
+   - `type`
 
-    - 类型
+   - `member`
 
-    - 成员
+   - `namespace` -此作用域禁止显示警告对自身的命名空间。 它不会取消对类型的命名空间中的警告。
+
+   - `namespaceanddescendants` -（新的 Visual Studio 2019) 此作用域禁止显示警告中的命名空间和所有后代的符号。 `namespaceanddescendants`值仅适用于 Roslyn 分析器，并且二进制的、 基于 FxCop 的静态分析被忽略。
 
 - **目标**-用于取消该警告将目标指定的标识符。 它必须包含完全限定的项的名称。
 
@@ -151,7 +153,7 @@ public class Animal
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> 禁止显示警告，其中包含命名空间范围内时，它将阻止对自身的命名空间的警告。 它不会取消该警告针对在命名空间内的类型。
+> 禁止显示警告，其中包含当`namespace`作用域，它将阻止对自身的命名空间的警告。 它不会取消该警告针对在命名空间内的类型。
 
 可以通过指定显式作用域表示任何禁止显示。 在全局级别还必须遵循这些禁止显示。 不能通过修饰类型来指定成员级禁止显示。
 
@@ -168,5 +170,6 @@ public class Animal
 
 ## <a name="see-also"></a>请参阅
 
+- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
 - [使用 Roslyn 分析器](../code-quality/use-roslyn-analyzers.md)

@@ -1,5 +1,5 @@
 ---
-title: 未找到标签 |Microsoft 文档
+title: 找不到标签 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,22 +21,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: df36f35b8e681c22e38f19b00fb25b680c6323ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633077"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346965"
 ---
 # <a name="label-not-found"></a>未找到标签
-你所做的引用不存在的标签。 标签可用于将块的代码，但在指定的作用域内标记，必须是唯一的。  
+您所做的引用不存在的标签。 标签可用于将标记块的代码，但在指定作用域内，必须是唯一的。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   检查以确保的标签名称拼写正确。  
+-   检查以确保标签名称拼写正确。  
   
--   确保所有标签引用都所引用的标签都已在当前范围中 （这包括向前的定义） 中定义。  
+-   请确保所有标签引用都所引用的标签都已经在当前作用域 （这包括向前的定义） 定义。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [标记的语句](../../javascript/reference/labeled-statement-javascript.md)   
  [switch 语句](../../javascript/reference/switch-statement-javascript.md)   
  [break 语句](../../javascript/reference/break-statement-javascript.md)   

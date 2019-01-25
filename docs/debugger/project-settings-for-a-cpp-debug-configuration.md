@@ -2,7 +2,6 @@
 title: C + + 调试配置的项目设置
 ms.custom: seodec18
 ms.date: 11/26/2018
-ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - VC.Project.VCDebugSettings.WebBrowser.DebuggerType
@@ -113,15 +112,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 951b46bfc6ef0910731dfe76cc9913f2c4a423ad
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 4351553d5df55dd5dceeffe542ff542a9487d6e5
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066891"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53957905"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 调试配置的项目设置
-可以更改 C 或 Visual c + + 调试配置中的项目设置**属性页**对话框中，如中所述[如何： 设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示“属性页”对话框中与调试器有关的设置的位置。  
+可以更改 C 或 Visual c + + 调试配置中的项目设置**属性页**对话框中，如中所述[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示“属性页”对话框中与调试器有关的设置的位置。  
   
 > [!NOTE]
 >  中的调试项目设置**配置属性/调试**类别和有不同于 UWP 应用的 c + + 编写的组件。 请参阅[启动调试会话 (VB、 C#，c + + 和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。  

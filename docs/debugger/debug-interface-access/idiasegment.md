@@ -1,8 +1,6 @@
 ---
-title: IDiaSegment |Microsoft 文档
-ms.custom: ''
+title: IDiaSegment |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,45 +12,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1547f91730d00babad6a0727686ff67357f910b3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 4f4cc24d64d3d1b1f8ab3e4182c21d451763b15e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465559"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847186"
 ---
 # <a name="idiasegment"></a>IDiaSegment
-将数据从节号线段的地址空间映射。  
+将数据从节号线段的地址空间的映射。  
   
 ## <a name="syntax"></a>语法  
   
 ```  
-IDiaSegment : IUnknown  
+IDiaSegment : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDiaSegment`。  
   
-|方法|描述|  
+|方法|说明|  
 |------------|-----------------|  
 |[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|检索段数目。|  
 |[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|检索部分的开始处的段中的偏移量。|  
-|[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|检索段中的字节的数。|  
+|[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|检索在段中的字节数。|  
 |[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|检索一个标志，指示是否可以读取段。|  
 |[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|检索一个标志，指示是否可以修改段。|  
 |[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|检索一个标志，指示段是可执行文件。|  
 |[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|检索映射到此段的节号。|  
-|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|检索部分开头的相对虚拟地址 (RVA)。|  
-|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|检索部分开头的虚拟地址 (VA)。|  
+|[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|检索部分的开头的相对虚拟的地址 (RVA)。|  
+|[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|检索部分的开头的虚拟地址 (VA)。|  
   
 ## <a name="remarks"></a>备注  
- 由于 DIA SDK 已执行翻译从节偏移量到相对虚拟地址，将不会使大多数应用程序使用的段映射中的信息。  
+ DIA SDK 已执行翻译从节偏移量到相对虚拟地址，因为大多数应用程序不会使用的段映射中的信息。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  通过调用来获取此接口[idiaenumsegments:: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)或[idiaenumsegments:: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)方法。 请参阅详细信息的示例。  
   
 ## <a name="example"></a>示例  
- 此函数的表和接近符号显示的所有段的地址。  
+ 此函数的表和最近的符号显示的所有段的地址。  
   
 ```C++  
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)  
@@ -96,13 +94,13 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>要求  
- 标头： Dia2.h  
+ 标头：dia2.h  
   
  库： diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>请参阅  
- [接口 （调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumsegments:: Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
+ [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)   
  [IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)

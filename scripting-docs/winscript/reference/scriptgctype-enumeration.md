@@ -1,5 +1,5 @@
 ---
-title: SCRIPTGCTYPE 枚举 |Microsoft 文档
+title: SCRIPTGCTYPE 枚举 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d42187cc7467bea9d777f35bb208c4e42cabb31
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b25ffb530bf16fff0008bb73b55ecb0c523efe0d
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24734167"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349096"
 ---
 # <a name="scriptgctype-enumeration"></a>SCRIPTGCTYPE 枚举
 若要执行的垃圾回收的类型。 在中使用[IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md)方法。  
@@ -32,8 +32,8 @@ typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGC
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE_NORMAL|执行正常的垃圾回收。 整数值为 0。|  
-|SCRIPTGCTYPE_EXHAUSTIVE|执行详尽的垃圾回收。 整数值为 1。|  
+|SCRIPTGCTYPE_NORMAL|执行常规垃圾回收。 整数值为 0。|  
+|SCRIPTGCTYPE_EXHAUSTIVE|执行操作的详尽的垃圾回收。 整数值为 1。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [活动脚本常量、枚举和错误代码](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

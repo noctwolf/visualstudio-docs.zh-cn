@@ -1,8 +1,6 @@
 ---
 title: 'Idiadatasource:: Loaddatafromistream |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e66bba9cc7fc6f63c725a71cbf601f8015a70b82
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 0ced7def09c9a5ba95c149f5f8507e3571d120ad
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874418"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154158"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 准备存储在内存中数据的流通过访问程序数据库 (.pdb) 文件中的调试数据。  
@@ -27,7 +25,7 @@ ms.locfileid: "49874418"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT loadDataFromIStream (   
+HRESULT loadDataFromIStream (   
    IStream* pIStream  
 );  
 ```  
@@ -39,10 +37,10 @@ HRESULT loadDataFromIStream (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。  
   
-|“值”|描述|  
+|“值”|说明|  
 |-----------|-----------------|  
 |E_PDB_FORMAT|尝试访问具有过时的格式的文件。|  
-|E_INVALIDARG|Invalidparameter。|  
+|E_INVALIDARG|参数无效。|  
 |E_UNEXPECTED|已准备好数据源。|  
   
 ## <a name="remarks"></a>备注  
@@ -56,6 +54,6 @@ HRESULT loadDataFromIStream (
   
 ## <a name="see-also"></a>请参阅  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [Idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [Idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
+ [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
+ [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
  [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)

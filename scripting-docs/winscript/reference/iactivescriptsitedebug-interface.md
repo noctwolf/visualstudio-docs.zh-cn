@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug 接口 |Microsoft 文档
+title: IActiveScriptSiteDebug 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9b36054deeceb0528fb7ea399cc41d8edbbb47e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 339325686d2a98e34c6e9f96056612769a9e110e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724737"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348303"
 ---
 # <a name="iactivescriptsitedebug-interface"></a>IActiveScriptSiteDebug 接口
-智能主机实现`IActiveScriptSiteDebug`接口进行文档管理和参与调试。 `IActiveScriptSite`对象通常提供的实现`IActiveScriptSiteDebug`接口。 如果此操作后，调用`IActiveScriptSite::QueryInterface`方法来获取`IActiveScriptSiteDebug`接口。  
+智能主机实现`IActiveScriptSiteDebug`界面，用于执行文档管理和参与调试。 `IActiveScriptSite`对象通常提供的实现`IActiveScriptSiteDebug`接口。 如果此操作后，调用`IActiveScriptSite::QueryInterface`方法来获取`IActiveScriptSiteDebug`接口。  
   
- 除了从继承的方法`IUnknown`、`IActiveScriptSiteDebug`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IActiveScriptSiteDebug`接口公开以下方法。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
@@ -32,5 +32,5 @@ ms.locfileid: "24724737"
 |------------|-----------------|  
 |[IActiveScriptSiteDebug::GetDocumentContextFromPosition](../../winscript/reference/iactivescriptsitedebug-getdocumentcontextfromposition.md)|语言引擎用于委派`IDebugCodeContext::GetSourceContext`。|  
 |[IActiveScriptSiteDebug::GetApplication](../../winscript/reference/iactivescriptsitedebug-getapplication.md)|返回与此脚本站点关联的调试应用程序对象。|  
-|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|获取应在脚本下添加文档的应用程序节点。|  
-|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|允许智能主机，以便确定如何处理运行时错误。|
+|[IActiveScriptSiteDebug::GetRootApplicationNode](../../winscript/reference/iactivescriptsitedebug-getrootapplicationnode.md)|获取应在哪个脚本添加文档的应用程序节点。|  
+|[IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md)|允许智能主机以确定如何处理运行时错误。|

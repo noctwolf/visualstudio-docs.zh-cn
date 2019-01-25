@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsObjectInitialization::Initialize |Microsoft 文档
+title: IWebAppDiagnosticsObjectInitialization::Initialize | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32dab78619635f9603fa33794810deef9685a7d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 067d690b463d80c5aa76394be8dabe08ad39baad
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733797"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344078"
 ---
 # <a name="iwebappdiagnosticsobjectinitializationinitialize"></a>IWebAppDiagnosticsObjectInitialization::Initialize
-初始化对象创建与[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)。  
+初始化与创建的对象[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)。  
   
 > [!IMPORTANT]
->  [IWebAppDiagnosticsObjectInitialization 接口](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)找到在 activdbg100.h 中发现。  
+>  [IWebAppDiagnosticsObjectInitialization 接口](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)在 activdbg100.h 中找到。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,7 +35,7 @@ HRESULT Initialize(        [in, annotation("__in")] HANDLE_PTR hPassedHandle,   
   
 #### <a name="parameters"></a>参数  
  `hPassedHandle`  
- 传递到的句柄[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)中的方法`hPassToObject`参数。  
+ 句柄传递给[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)中的方法`hPassToObject`参数。  
   
  `pDebugApplication`  
  创建对象时 PDM 应用程序。

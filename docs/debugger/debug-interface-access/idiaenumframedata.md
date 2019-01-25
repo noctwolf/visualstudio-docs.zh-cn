@@ -1,8 +1,6 @@
 ---
-title: IDiaEnumFrameData |Microsoft 文档
-ms.custom: ''
+title: IDiaEnumFrameData | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,36 +12,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c39057a77da9b459852e0b591ea8d69186ee6f8d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 65917b88144bfe86c9159772588888c590e2cd7e
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466922"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53876284"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
-枚举中的数据源包含的各种帧数据元素。  
+枚举数据源中包含的各种框架的数据元素。  
   
 ## <a name="syntax"></a>语法  
   
 ```  
-IDiaEnumFrameData : IUnknown  
+IDiaEnumFrameData : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDiaEnumFrameData`。  
   
-|方法|描述|  
+|方法|说明|  
 |------------|-----------------|  
-|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|检索`IEnumVARIANT Interface`的此枚举器的版本。|  
-|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|检索帧数据元素的数目。|  
-|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|通过索引中检索框架数据元素。|  
+|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|检索`IEnumVARIANT Interface`此枚举器的版本。|  
+|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|检索帧数据元素数。|  
+|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|通过索引中检索帧数据元素。|  
 |[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|检索指定的数目的帧枚举序列中的数据元素。|  
-|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|跳过指定的数目的帧枚举序列中的数据元素。|  
+|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|跳过枚举序列中的帧数据元素的指定的数目。|  
 |[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|将枚举序列重置到开头。|  
-|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|创建包含与当前的枚举器相同的枚举状态的枚举。|  
-|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|按相对虚拟地址 (RVA) 返回帧。|  
-|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|按虚拟地址 (VA) 返回帧。|  
+|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|创建一个包含当前枚举数形式的相同枚举状态的枚举器。|  
+|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|按相对虚拟地址 (RVA) 返回一个帧。|  
+|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|按虚拟地址 (VA) 返回一个帧。|  
   
 ## <a name="remarks"></a>备注  
   
@@ -51,7 +49,7 @@ IDiaEnumFrameData : IUnknown
  获取此接口从[idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法。 请参阅详细信息的示例。  
   
 ## <a name="example"></a>示例  
- 此示例演示如何获取 (`GetEnumFrameData`函数) 并使用 (`ShowFrameData`函数)`IDiaEnumFrameData`接口。 请参阅[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)举例说明的接口`PrintFrameData`函数。  
+ 此示例演示如何获取 (`GetEnumFrameData`函数)，并使用 (`ShowFrameData`函数)`IDiaEnumFrameData`接口。 请参阅[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)接口的示例`PrintFrameData`函数。  
   
 ```C++  
   
@@ -103,13 +101,13 @@ void ShowFrameData(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>要求  
- **标头：** Dia2.h  
+ **标头：** dia2.h  
   
  **库：** diaguids.lib  
   
  **DLL:** msdia80.dll  
   
 ## <a name="see-also"></a>请参阅  
- [接口 （调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
+ [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

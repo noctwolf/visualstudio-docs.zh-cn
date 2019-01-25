@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a3a0a415af9cddcba63040fd445de7869921e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79d39aa23e752ee0ce6f95b6a6d8c419dbd51d9a
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918607"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269990"
 ---
 # <a name="toolbox"></a>工具箱
 
@@ -40,7 +40,7 @@ ms.locfileid: "53918607"
 
 默认情况下，“工具箱”折叠在 Visual Studio IDE 左侧，并在光标移至其上方时显示。 可固定“工具箱”（通过单击工具栏上的“固定”图标），这样它就可以在光标移动时仍一直处于打开状态。 也可以取消停靠“工具箱”窗口，并将它拖到屏幕上的任何位置。 若要停靠、取消停靠和隐藏“工具箱”，可以右键单击它的工具栏，并选择其中一个选项。
 
-若要重新排列“工具箱”选项卡中的项，或添加自定义选项卡和项，可以使用上下文菜单中的下列命令：
+若要重新排列“工具箱”选项卡中的项，或添加自定义选项卡和项，可以使用右键单击菜单中的下列命令：
 
 - 重命名项 - 重命名所选的项。
 

@@ -1,11 +1,9 @@
 ---
 title: 使用 DebuggerDisplay 特性 |Microsoft Docs
-ms.custom: ''
-ms.date: 08/09/2017
-ms.technology: vs-ide-debug
+ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- attributes [C#], debugger
+- attributes, debugger
 - DebuggerDisplay attribute
 - DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
@@ -14,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: ecbbad832ad206a0a8192d57d2642bc68a8e3902
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926197"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54228053"
 ---
-# <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 特性
+# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-ccli"></a>使用 DebuggerDisplay 特性 (C#，Visual Basic、 C + + CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> 控制对象、属性或字段在调试器变量窗口中的显示方式。 此特性可应用于类型、委托、属性、字段和程序集。  
   
  `DebuggerDisplay` 特性有一个参数，此参数是要在值列中为类型的实例显示的字符串。 此字符串可以包含大括号（`{` 和 `}`）。 一对大括号之间的文本将作为字段、属性或方法进行计算。  
@@ -32,10 +30,13 @@ ms.locfileid: "49926197"
   
 > [!IMPORTANT]
 >  如果在“工具”/“选项”/“调试”  对话框中选中了“在变量窗口中显示对象的原始结构”  复选框，则将忽略 `DebuggerDisplay` 特性。  
+
+> [!NOTE]
+> 对于本机代码，此属性只支持 C + + /cli 代码。
   
  下表显示 `DebuggerDisplay` 特性的一些可能用法和示例输出。  
   
-|特性|在值列中显示的输出|  
+|特性|显示在“值”列中的输出|  
 |---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> 在具有 `x` 和 `y`字段的类型上使用。|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`参数语法在不同的语言中会有所不同。 因此，使用时要小心。|`String value is [5, 6, 6]`|  
@@ -76,15 +77,15 @@ csc /t:library autoexp.cs
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
 public sealed class MyClass   
-{      
-    public int count { get; set; }      
-    public bool flag { get; set; }      
+{      
+    public int count { get; set; }      
+    public bool flag { get; set; }      
     private string DebuggerDisplay  
-   {         
+   {         
         get  
         {  
              return string.Format("Object {0}", count - 2);  
-        }      
+        }      
     }  
 }  
 ```  
@@ -177,7 +178,7 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [使用 DebuggerTypeProxy 特性](../debugger/using-debuggertypeproxy-attribute.md)   
+ [使用 DebuggerTypeProxy 属性](../debugger/using-debuggertypeproxy-attribute.md)   
  [创建托管对象的自定义视图](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)   
  [使用调试器显示特性增强调试](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

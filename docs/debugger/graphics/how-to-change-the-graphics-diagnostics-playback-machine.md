@@ -1,8 +1,6 @@
 ---
-title: 如何： 更改图形诊断播放机 |Microsoft 文档
-ms.custom: ''
+title: 如何：更改图形诊断播放机 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 author: mikejo5000
@@ -10,45 +8,45 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 143ae65b8d7db584546c250bf5d032450bf220aa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: 015878da1d2e8c144787ba94d7f5394ebea4f4c6
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473866"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53854342"
 ---
-# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：更改图形诊断播放机
-通过使用本地计算机，或通过使用远程计算机或设备，你可以播放图形信息。  
+# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：更改图形诊断播放计算机
+使用本地计算机，或使用远程计算机或设备，你可以播放图形信息。  
   
-## <a name="choosing-a-playback-machine"></a>选择播放机  
- 播放计算机是计算机或用于播放图形日志中的图形事件的设备。 通常情况下，本地计算机是最方便的选项，但具有不同的硬件或驱动程序版本与计算机中捕获它; 计算机上的呈现问题可能不会重现在此情况下，你可以选择更好地再现该问题的远程播放计算机，并仍使用你的开发计算机进行诊断。  
+## <a name="choosing-a-playback-machine"></a>选择播放计算机  
+ 播放计算机是在计算机或用于播放图形日志中的图形事件的设备。 通常情况下，在本地计算机是最方便的选项，但呈现问题可能不会捕获其中; 具有不同的硬件或驱动程序版本计算机的计算机上重现在此情况下，可以选择更好地重现问题的远程播放计算机并仍使用你的开发计算机进行诊断。  
   
-#### <a name="to-use-the-local-machine-to-play-back-graphics-information"></a>若要使用本地计算机来播放图形信息  
+#### <a name="to-use-the-local-machine-to-play-back-graphics-information"></a>若要使用本地计算机播放图形信息  
   
-1.  在图形日志文档窗口上，选择**播放机**链接。 **远程调试器连接**对话框随即出现。  
+1.  在图形日志文档窗口中，选择**播放机**链接。 **远程调试器连接**对话框随即出现。  
   
-2.  下**手动配置**中**地址**属性，输入`localhost`。  
+2.  下**手动配置**，在**地址**属性中，输入`localhost`。  
   
-3.  设置**身份验证模式**属性**无**。  
+3.  设置**身份验证模式**属性设置为**None**。  
   
-4.  选择**选择**按钮。  
+4.  选择“选择”按钮。  
   
 #### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>若要使用远程计算机播放图形信息  
   
-1.  在图形日志文档窗口上，选择**播放机**链接。 **远程调试器连接**对话框随即出现。  
+1.  在图形日志文档窗口中，选择**播放机**链接。 **远程调试器连接**对话框随即出现。  
   
-2.  下**手动配置**中**地址**属性，输入的 Windows 域名或 IP 地址的计算机或你想要用于播放图形信息的设备。  
+2.  下**手动配置**，在**地址**属性，输入 Windows 域名或 IP 地址的计算机或你想要用于播放图形信息的设备。  
   
-3.  指定你想要用于保护与播放计算机的连接的授权的类型。  
+3.  指定想要用于保护与播放计算机的连接的授权类型。  
   
-    -   对于 Windows 身份验证设置**身份验证模式**属性**Windows**。  
+    -   对于 Windows 身份验证设置**身份验证模式**属性设置为**Windows**。  
   
-    -   不进行身份验证，设置**身份验证模式**属性**无**。  
+    -   对于无身份验证设置**身份验证模式**属性设置为**None**。  
   
-4.  选择**选择**按钮。  
+4.  选择“选择”按钮。  
   
 > [!NOTE]
->  **远程调试器连接**对话框也可能显示直接连接到你的开发计算机或者位于同一子网上的远程调试目标。 你可以使用这些远程调试目标之一作为图形诊断播放机而无需手动配置它。 在**远程调试器连接**对话框框中，选择你想，然后选择目标**选择**按钮。  
+>  **远程调试器连接**对话框还可能显示直接连接到你的开发计算机或同一子网的远程调试目标。 您可以使用远程调试目标： 作为图形诊断播放计算机无需手动配置。 在中**远程调试器连接**对话框框中，选择您想，然后选择的目标**选择**按钮。  
   
 ## <a name="see-also"></a>请参阅  
  [图形日志文档](graphics-log-document.md)

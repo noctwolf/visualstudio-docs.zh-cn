@@ -1,19 +1,18 @@
 ---
 title: Visual Studio for Mac 教程
 description: Visual Studio for Mac 提供用于在 macOS 上生成 .NET 应用程序的集成开发环境，包括 ASP.NET Core 网站和适用于 iOS、Android、Mac 和 Xamarin.Forms 的 Xamarin 项目。
-zone_pivot_groups: mac-ide-version
 author: conceptdev
 ms.author: crdun
 ms.date: 11/03/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: e1787f6d396121263d91633a4ee6d4dd8ed2c35f
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 99ad6cfcda7bf271853aff5c095bbb0664b3b592
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52895790"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54315825"
 ---
-# <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac 教程
+# <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac 导览
 
 Visual Studio for Mac 将 Xamarin 以移动为中心的 IDE 和 Xamarin Studio 发展为 Mac 上的移动优先和云优先的开发环境。 通过这款受开发人员关注的工具，可以使用 .NET 针对用户所需的所有平台创建适用的应用程序。
 
@@ -25,25 +24,7 @@ Visual Studio for Mac 的用户体验 (UX) 与 Windows 版对应产品相似，�
 
 Visual Studio for Mac 分为多个部分，用于管理应用程序文件和设置、创建应用程序代码以及进行调试。
 
-::: zone pivot="vsmac2019"
-
-## <a name="visual-studio-for-mac-2019-start-window"></a>Visual Studio for Mac 2019 启动窗口
-
-> [!TIP]
-> Visual Studio 2019 for Mac 预览版现[可供下载](install-preview.md)和测试。
-
-启动 Visual Studio for Mac 2019 预览版时，新用户将看到登录窗口。 使用 Microsoft 帐户登录以激活付费许可证（如果有）或链接到 Azure 订阅。 可以按下“跳过”，然后通过“Visual Studio”>“登录”菜单项登录：
-
-![登录到 Microsoft 帐户](media/ide-tour-2019-start-signin.png)
-
-登录用户将看到新启动窗口，其中显示了最近项目的列表，以及用于打开现有项目或创建新项目的按钮：
-
-![从最近的项目中选择，或创建新项目](media/ide-tour-2019-start-projects.png)
-
-::: zone-end
-::: zone pivot="vsmac2017"
-
-## <a name="welcome-screen-in-visual-studio-for-mac-2017"></a>Visual Studio for Mac 2017 中的欢迎屏幕
+## <a name="welcome-screen"></a>欢迎屏幕
 
 启动时，Visual Studio for Mac 将显示“欢迎屏幕”：
 
@@ -55,8 +36,6 @@ Visual Studio for Mac 分为多个部分，用于管理应用程序文件和设�
 - 入门 - 为开始使用 Visual Studio for Mac 的开发人员提供到实用主题的快速访问。
 - 最新解决方案 - 提供到最近打开的解决方案的快速访问和用于打开或创建项目的便捷按钮。
 - 开发人员新闻 - 有助于了解 Microsoft 开发人员的最新信息的新闻源。
-
-::: zone-end
 
 ## <a name="solutions-and-projects"></a>解决方案和项目
 
@@ -74,7 +53,7 @@ Solution Pad 在解决方案中组织项目：
 
 在此位置，源代码、资源、用户界面和依赖关系的文件被组织到特定于平台的项目中。
 
-有关在 Visual Studio for Mac 中使用项目和解决方案的详细信息，请参阅[项目和解决方案](projects-and-solutions.md)一文。
+有关在 Visual Studio for Mac 中使用项目和解决方案的详细信息，请参阅[项目和解决方案](/visualstudio/mac/projects-and-solutions)一文。
 
 ## <a name="assembly-references"></a>程序集引用
 
@@ -86,7 +65,7 @@ Solution Pad 在解决方案中组织项目：
 
 ![“编辑引用”对话框](media/ide-tour-image20.png)
 
-有关在 Visual Studio for Mac 中使用引用的详细信息，请参阅[管理项目中的引用](managing-references-in-a-project.md)一文。
+有关在 Visual Studio for Mac 中使用引用的详细信息，请参阅[管理项目中的引用](/visualstudio/mac/managing-references-in-a-project)一文。
 
 ## <a name="dependencies--packages"></a>依赖关系/包
 
@@ -98,19 +77,19 @@ NuGet 是 .NET 开发最常用的程序包管理器。 通过 Visual Studio 的 
 
 ![添加 NuGet 包](media/ide-tour-image21.png)
 
-可在[在项目中包括 NuGet 包](nuget-walkthrough.md)一文中找到在应用程序中使用 NuGet 包的相关信息。
+可在[在项目中包括 NuGet 包](/visualstudio/mac/nuget-walkthrough)一文中找到在应用程序中使用 NuGet 包的相关信息。
 
 ## <a name="refactoring"></a>重构
 
-Visual Studio for Mac 提供用于重构代码的两种有用途径：上下文操作和源分析。 可在[重构](refactoring.md)一文中阅读更多相关信息。
+使用 Visual Studio for Mac，可通过以下两种实用方法来重构代码：上下文操作和源分析。 可在[重构](/visualstudio/mac/refactoring)一文中阅读更多相关信息。
 
 ## <a name="debugging"></a>调试
 
-Visual Studio for Mac 具有本机调试器，支持 Xamarin.iOS、Xamarin.Mac 和 Xamarin.Android 应用程序的调试。 Visual Studio for Mac 使用 Mono 软调试器，该调试器在 Mono 运行时中实施，以便 IDE 跨所有平台调试托管代码。 有关调试的其他信息，请访问[调试](debugging.md)一文。
+Visual Studio for Mac 具有本机调试器，支持 Xamarin.iOS、Xamarin.Mac 和 Xamarin.Android 应用程序的调试。 Visual Studio for Mac 使用 Mono 软调试器，该调试器在 Mono 运行时中实施，以便 IDE 跨所有平台调试托管代码。 有关调试的其他信息，请访问[调试](/visualstudio/mac/debugging)一文。
 
 调试器包含丰富的可视化工具，可用于字符串、颜色、URL、大小、坐标和贝塞尔曲线等特殊类型。
 
-有关调试器的数据可视化效果的详细信息，请访问[数据可视化效果](data-visualizations.md)一文。
+有关调试器的数据可视化效果的详细信息，请访问[数据可视化效果](/visualstudio/mac/data-visualizations)一文。
 
 ## <a name="version-control"></a>版本控制
 
@@ -122,7 +101,7 @@ Visual Studio for Mac 与 Git 和 Subversion 源控件系统集成。 源控件�
 
 ![Solution Pad 中的未提交文件](media/ide-tour-image23.png)
 
-有关在 Visual Studio 中使用版本控制的详细信息，请参阅[版本控制](version-control.md)一文。
+有关在 Visual Studio 中使用版本控制的详细信息，请参阅[版本控制](/visualstudio/mac/version-control)一文。
 
 ## <a name="see-also"></a>请参阅
 

@@ -17,12 +17,12 @@ manager: douge
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6b1f884018be97e49dfa9c300a2ad126fa185cf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: HT
+ms.openlocfilehash: 3c3737174843a8b9ff77ecdfb592e1275b88c84c
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932780"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154390"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将 WPF 控件绑定到数据
 
@@ -99,7 +99,7 @@ Visual Studio 将生成执行以下操作的 XAML：
 当将对象或属性从**数据源**设计器中，Visual Studio 窗口生成[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]创建数据绑定控件 （或将现有控件绑定到对象或属性）。 但是，Visual Studio 不生成代码以用数据填充该对象。 你必须自己编写此代码。
 
 > [!NOTE]
-> 自定义类都必须是公共的并在默认情况下，具有无参数构造函数。 它们在其语法中具有"dot"can'tbe 嵌套类。 有关详细信息，请参阅[XAML 及 WPF 的自定义类](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)。
+> 自定义类都必须是公共的并在默认情况下，具有无参数构造函数。 它们不能为其语法中具有"dot"的嵌套的类。 有关详细信息，请参阅[XAML 及 WPF 的自定义类](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)。
 
 Visual Studio 生成[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]，执行以下操作：
 

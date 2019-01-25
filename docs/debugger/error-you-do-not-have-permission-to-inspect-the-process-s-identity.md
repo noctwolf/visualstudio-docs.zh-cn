@@ -1,8 +1,6 @@
 ---
-title: 错误： 您没有检查进程权限&#39;s 标识 |Microsoft 文档
-ms.custom: ''
+title: 错误：您没有检查进程的权限&#39;s 标识 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 dev_langs:
 - CSharp
@@ -14,35 +12,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f37cf6f6a1a72435b549942fa03d821c900718a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2424379a016a80d251b53e79799fd0d39e059218
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472010"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941857"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>错误： 您没有检查进程权限&#39;s 标识
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>错误：您没有检查进程的权限&#39;s 标识
 您没有检查进程标识的权限。 这可能是您系统的配置造成的。  
   
  调试器无法检查进程标识，而进程标识是调试的必备信息。 最有可能的原因是“终端服务”被禁用了。 默认情况下，“终端服务”服务是处于启用状态的。 您可按照以下步骤重新启用该服务。  
   
 ### <a name="to-enable-terminal-services"></a>启用“终端服务”  
   
-1.  单击**启动**，然后选择**控制面板**。  
+1.  单击**开始**，然后选择**控制面板**。  
   
-2.  在 Control Panel 中，选择**切换到经典视图**，如有必要，然后双击**管理工具**。  
+2.  在控制面板中，选择**切换到经典视图**（如有必要），然后双击**管理工具**。   
   
-3.  在**管理工具**窗口中，双击**计算机管理**。  
+3.  在“管理工具”窗口中双击“计算机管理”。  
   
-4.  在计算机管理窗口中，展开**服务和应用程序**节点。  
+4.  在“计算机管理”窗口中，展开“服务和应用程序”节点。  
   
-5.  下**服务和应用程序**，单击**服务**。  
+5.  在**服务和应用程序**下，单击**服务**。  
   
      右侧窗格中将出现一个服务列表。  
   
-6.  在**服务**列表中，右键单击**终端服务**，然后选择**属性**。  
+6.  在“服务”列表中，右键单击“终端服务”，然后选择“属性”。  
   
-7.  在**Terminal Services 的属性**窗口，请转到**常规**选项卡并设置**启动类型**到**手动**。  
+7.  在**Terminal Services 的属性**窗口，请转到**常规**选项卡并设置**启动类型**为**手动**。   
   
 8.  单击 **“确定”**。  
   
@@ -52,15 +50,15 @@ ms.locfileid: "31472010"
   
 ### <a name="to-enable-remote-desktop"></a>启用远程桌面  
   
-1.  单击**启动**，然后右键单击**我的电脑**。  
+1.  单击**开始**，然后右键单击**我的电脑**。   
   
-2.  选择“属性”。  
+2.  选择**属性**。   
   
-     **系统属性**显示窗口。  
+     随即出现“系统属性”窗口。  
   
-3.  单击**远程**。  
+3.  单击“远程”。  
   
-4.  下**远程桌面**，选择**允许用户远程连接到此计算机**。  
+4.  在“远程桌面”下，选择“允许用户远程连接到此计算机”。  
   
 5.  单击 **“确定”**。  
   

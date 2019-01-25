@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86e94b083300558df271091f5a28990b8e3d3d74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 872b0e55bb34d7fe0bfa27335ca71165985af1ae
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870763"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269510"
 ---
 # <a name="debugging-native-code"></a>调试本机代码
 本节讲述本机应用程序的一些常见调试问题和调试技术。 本节阐述的技术属于高级别技术。 使用 Visual Studio 调试器的机制，请参阅[先来看一下调试器](../debugger/debugger-feature-tour.md))。  
@@ -67,9 +67,9 @@ ms.locfileid: "53870763"
 
  [调试 DLL 项目](../debugger/debugging-dll-projects.md)提供有关如何调试本机和托管 Dll 的信息。
   
- [调试器功能简介](../debugger/debugger-feature-tour.md)  
+ [初探调试器](../debugger/debugger-feature-tour.md)  
  提供指向调试文档的较大章节的链接。 涉及的信息包括：调试器的新增功能、设置和准备、断点、处理异常、编辑和继续、调试托管代码、调试本机代码、调试 SQL 以及用户界面参考。  
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)  
- [在 Visual Studio 中调试](../debugger/index.md)[调试器功能简介](../debugger/debugger-feature-tour.md)
+ [在 Visual Studio 中进行调试](../debugger/index.md) 

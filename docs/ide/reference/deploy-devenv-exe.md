@@ -1,64 +1,72 @@
 ---
 title: -Deploy (devenv.exe)
-ms.date: 11/04/2016
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
-- Devenv, /deploy switch
-- deploy Devenv switch
+- Devenv, /Deploy switch
+- Deploy Devenv switch
 - deploying applications [Visual Studio], after build
-- /deploy Devenv switch
+- /Deploy Devenv switch
 ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9af9d2b51a2421141892c1988cc67b63d1b15e26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33738e4986b477024d1992da17078ac1368babf4
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920639"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269457"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
+
 生成或重新生成后部署解决方案。 仅适用于托管代码项目。
 
 ## <a name="syntax"></a>语法
 
-```
-devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig ProjConfigName] [/out LogFileName]
+```shell
+devenv SolutionName /Deploy [SolnConfigName [/Project ProjName [/ProjectConfig ProjConfigName]] [/Out OutputFilename]]
 ```
 
 ## <a name="arguments"></a>自变量
- `SolnConfigName`
 
- 必需。 `SolutionName` 中指定了将用于生成解决方案的解决方案配置的名称。
+- *SolutionName*
 
- `SolutionName`
+  必需。 解决方案文件的完整路径和名称。
 
- 必需。 解决方案文件的完整路径和名称。
+- *SolnConfigName*
 
- /project `ProjName`
+  可选。 要用于生成 SolutionName 中命名的解决方案的解决方案配置的名称（如 `Debug` 或 `Release`）。 如果有多个解决方案平台可用，还必须指定平台（例如，`Debug|Win32`）。 如果未指定此参数或字符串为空 (`""`)，工具便会使用解决方案的有效配置。
 
- 可选。 解决方案中项目文件的路径和名称。 可以输入从 `SolutionName` 文件夹到项目文件的相对路径、项目的显示名称或项目文件的完整路径和名称。
+- `/Project` ProjName
 
- /projectconfig `ProjConfigName`
+  可选。 解决方案中项目文件的路径和名称。 可以将项目在 SolutionName 文件夹中的显示名称或相对路径输入到项目文件中。 也可以输入项目文件的完整路径和名称。
 
- 可选。 指定了生成命名的 `/project` 时要使用的项目生成配置的名称。
+- `/ProjectConfig` ProjConfigName
+
+  可选。 要在生成已命名 `/Project` 时使用的项目生成配置的名称（如 `Debug` 或 `Release`）。 如果有多个解决方案平台可用，还必须指定平台（例如，`Debug|Win32`）。 如果此开关已指定，它会替代 SolnConfigName 参数。
+
+- `/Out` OutputFilename
+
+  可选。 要将工具输出发送到的文件的文件名。 如果文件已有，工具将输出追加到文件末尾。
 
 ## <a name="remarks"></a>备注
- 指定的项目必须是部署项目。 如果指定的项目不是部署项目，当传递已生成的项目进行部署时会失败并出现错误。
 
- 用双引号将含有空格的字符串引起来。
+指定的项目必须是部署项目。 如果指定的项目不是部署项目，当已生成的项目进行传递以供部署时，便会失败并出现错误。
 
- “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示生成的摘要信息（包括错误）。
+用双引号将含有空格的字符串引起来。
+
+与生成相关的摘要信息（包括错误）可以显示在“命令”窗口中，也可以显示在使用 [/Out](out-devenv-exe.md) 开关指定的任何日志文件中。
 
 ## <a name="example"></a>示例
- 本示例使用 `MySolution` 的 `Release` 解决方案配置中的 `Release` 项目生成配置来部署 `CSharpConsoleApp` 项目。
 
-```
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release
+下面的示例使用 `MySolution` 中的 `Release` 项目生成配置来部署项目 `CSharpWinApp`。
+
+```shell
+devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release
 ```
 
 ## <a name="see-also"></a>请参阅

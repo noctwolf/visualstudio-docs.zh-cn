@@ -1,8 +1,6 @@
 ---
-title: 如何： 设置 ClickOnce 应用程序的自定义权限 |Microsoft Docs
-ms.custom: ''
+title: 如何：设置 ClickOnce 应用程序的自定义权限 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4003dd1434d55bb43f52ee02801da0f843563456
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 7bfacf983af73ba8acb1f8f9ed2705ad5cd8e544
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077472"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53929210"
 ---
-# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>如何： 设置 ClickOnce 应用程序的自定义权限
+# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>如何：设置 ClickOnce 应用程序的自定义权限
 可以部署对 Internet 或本地 Intranet 区域使用默认权限的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 或者，可以为应用程序所需的特定权限创建自定义区域。 可以通过在“项目设计器”  的“安全” 页上自定义安全权限来执行此操作。  
   
 ### <a name="to-customize-a-permission"></a>自定义权限  
@@ -43,7 +41,7 @@ ms.locfileid: "39077472"
   
 6.  单击“编辑权限 XML” 。  
   
-     *App.manifest* XML 编辑器中打开文件。  
+     随即会在“XML 编辑器”中打开 app.manifest 文件。  
   
 7.  在 `</applicationRequestMinimum>` 元素之前，为应用程序所需的权限添加 XML 代码。  
   
@@ -52,4 +50,4 @@ ms.locfileid: "39077472"
   
 ## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 应用程序的的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
+ [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   

@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的 Azure 权益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 15bfbd9439b19599b7453e8df49024a0f91f2cf4
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: cabfc5a539954a066847b5ed7f62bdddd81ba04c
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739807"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380132"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 
@@ -43,7 +43,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 |      Visual Studio Enterprise – MCT 软件和服务      |     100 美元月信用额度     |                             是                             |
 | Visual Studio Enterprise – MCT 软件和服务开发人员 |     150 美元月信用额度     |                             是                             |
 
-*包括不得转售 (NFR)、Microsoft 最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)
+*包括不得转售 (NFR)、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)
 
 
 > [!NOTE]

@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的 Parasoft Virtua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cb6b04358febf47d3f3332d4b8d10dd96b20ba6b
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 654a3f357f6bc8d6caf3dbaa551c7856a2154fd2
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53739664"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54379944"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Parasoft Virtualize/SOAtest Professional 桌面
 
@@ -83,11 +83,11 @@ ms.locfileid: "53739664"
 | Visual Studio Dev Essentials | NA  | 不可用|NA |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup>  *包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 最有价值专家 (MVP)、区域总监 (RD)。MCT 软件和服务。
+<sup>1</sup>  *包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。MCT 软件和服务。
 
 
 > [!NOTE]
-> Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的功能不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
+> Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
 
 
 ## <a name="support-resources"></a>支持资源

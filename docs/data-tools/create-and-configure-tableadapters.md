@@ -13,15 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
-ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b720072d5ccd695ff1e7006bda5221ae00db06ef
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
-ms.translationtype: MT
+ms.openlocfilehash: a363c9964b88196e31f5ba05a4244fabdf00f90f
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582341"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53966870"
 ---
 # <a name="create-and-configure-tableadapters"></a>创建和配置 TableAdapter
 
@@ -58,7 +57,7 @@ Tableadapter 的简介，请参阅[使用 Tableadapter 填充数据集](../data-
 > [!NOTE]
 > 分配给 SELECT 命令的存储的过程是通过调用 TableAdapter 的方法，命名该向导的下一步中运行。 默认方法是`Fill`，因此通常用来运行 SELECT 过程的代码是`TableAdapter.Fill(tableName)`。 如果更改中的默认名称`Fill`，将替换`Fill`名称分配和"TableAdapter"替换为 TableAdapter 的实际名称 (例如， `CustomersTableAdapter`)。
 
-- 选择**创建方法以将更新发送到数据库直接**选项等同于设置`GenerateDBDirectMethods`属性设为 true。 原始的 SQL 语句不会提供足够的信息或查询不是可更新的查询时，选项将不可用。 发生此情况，例如，在**加入**查询和返回单个 （标量） 值的查询。
+- 选择**创建方法以将更新发送到数据库直接**选项等同于设置`GenerateDBDirectMethods`属性设为 true。 当原始 SQL 语句未提供足够的信息或查询不是可更新的查询时，此选项不可用。 发生此情况，例如，在**加入**查询和返回单个 （标量） 值的查询。
 
 **高级选项**向导中，您可以：
 
@@ -82,7 +81,7 @@ TableAdapter 查询配置向导可用于创建和编辑其他查询的 TableAdap
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>若要开始使用新查询的 TableAdapter 查询配置向导
 
-1.  打开中的数据集**数据集设计器**。
+1.  在“数据集设计器”中打开数据集。
 
 2.  如果要创建一个新的查询，请拖动**查询**对象从**数据集**选项卡**工具箱**拖到<xref:System.Data.DataTable>，或选择**添加查询**TableAdapter 的快捷菜单中。 您还可以拖动**查询**对象拖放到的空白区域**数据集设计器**，这将创建没有关联的 TableAdapter <xref:System.Data.DataTable>。 这些查询可以只返回单个 （标量） 值或运行的 UPDATE、 INSERT 或删除对数据库的命令。
 

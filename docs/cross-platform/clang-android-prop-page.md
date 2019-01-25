@@ -43,16 +43,16 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: efceeb201a7f1afcbf7cc2c6d46619301284d823
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: ab2fa6c3b2eac94159ef5e95cb022a627c3acee2
+ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232112"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54154306"
 ---
 # <a name="clang-project-properties-android-c"></a>Clang 项目属性 (Android C++)
 
-属性 | 描述 | 选项
+Property | 说明 | 选项
 --- | ---| ---
 附加包含目录 | 指定一个或多个要添加到包含路径中的目录；存在多个目录时，请用分号分隔。 (-I[path])。
 调试信息格式 | 指定编译器生成的调试信息的类型。 | 无 - 没有生成调试信息，因此编译可能会更快。<br>完全调试信息 (DWARF2) - 生成了 DWARF2 调试信息。<br>行号信息 - 仅生成行号信息。<br>
@@ -67,7 +67,7 @@ ms.locfileid: "39232112"
 启用函数级别链接 | 允许编译器以打包函数 (COMDAT) 形式对各个函数进行打包。 需进行此操作后才能编辑并继续工作。     (ffunction-sections)。
 启用数据级别链接 | 启用链接器优化，通过在一个独立的分区中发出每个数据项来删除未使用的数据。
 启用高级 SIMD (Neon) | 针对 NEON 浮点硬件启用代码生成。 仅适用于 ARM 架构。
-浮点 ABI | 选择浮点 ABI 选项。 | Soft -“Soft”可使编译器生成包含浮点运算库调用的输出。<br>SoftFP -“SoftFP”允许使用硬件浮点指令生成代码，但仍然使用软浮点调用约定。<br>Hard -“Hard”允许生成浮点指令和使用 FPU 特定的调用约定。<br>
+浮点 ABI | 选择浮点 ABI 选项。 | Soft -“Soft”可使编译器生成包含浮点运算库调用的输出。<br>SoftFP -“SoftFP”允许使用硬件浮点指令生成代码，但仍然使用软浮点调用约定。<br>**Hard** - 使用“Hard”，可以生成浮点指令，并使用 FPU 专用调用约定。<br>
 安全检查 | 安全检查有助于检查堆栈缓冲区是否超负荷运行，它是一种常见的尝试攻击程序安全的命令。 (fstack-protector)。 | 禁用安全检查 - 禁用安全检查。<br>启用安全检查 - 启用安全检查。 (fstack-protector)<br>
 位置无关代码 | 生成位置无关代码 (PIC) 以便在共享库中使用。
 使用短枚举 | 枚举类型仅用作可能值的输入集需要的字节数。

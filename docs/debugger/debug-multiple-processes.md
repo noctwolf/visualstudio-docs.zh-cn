@@ -1,8 +1,6 @@
 ---
 title: 调试多个进程 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/20/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b306bcca4ac8cc0568fc609ec25c8b335d18010
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: ffe28dbf30b1b4f40c69f565cc1e97524ce382b4
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52305645"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227377"
 ---
-# <a name="debug-multiple-processes"></a>调试多个进程
+# <a name="debug-multiple-processes-c-visual-basic-c"></a>调试多个进程 (C#，Visual Basic、 c + +)
 
 Visual Studio 可以调试包含多个进程的解决方案。 可以启动和进程之间切换、 中断、 继续，并单步执行源、 停止调试和结束或从单个进程中分离。  
 
@@ -50,7 +48,7 @@ Visual Studio 可以调试包含多个进程的解决方案。 可以启动和�
    
 1. 选择**当前所选内容**，**单启动项目**和项目文件，或**多个启动项目**。 
 
-   如果选择**多个启动项目**，可以更改启动顺序和操作需要针对每个项目：**启动**，**启动但不调试**，或者**无**。  
+   如果选择**多个启动项目**，可以更改启动顺序和操作需要针对每个项目：**启动**，**启动但不调试**，或**None**。  
    
 1. 选择**Apply**，或**确定**应用并关闭对话框。 
 
@@ -58,7 +56,7 @@ Visual Studio 可以调试包含多个进程的解决方案。 可以启动和�
 
 调试器还可以*附加*到在 Visual Studio，包括在远程设备上的外部进程中运行的应用。 附加到应用后，可以使用 Visual Studio 调试器。 调试功能可能会受到限制。 这取决于是否用调试信息生成应用程序、 是否有权访问应用的源代码，和 JIT 编译器是否正在跟踪调试信息。  
   
-有关详细信息，请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+有关详细信息，请参阅[附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
 **附加到正在运行的进程：**  
   
@@ -122,7 +120,7 @@ Visual Studio 可以调试包含多个进程的解决方案。 可以启动和�
 ###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a>查找源文件和符号 (.pdb) 文件  
 若要导航的进程的源代码，调试器需要访问其源文件和符号文件。 有关详细信息，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
-如果无法访问进程的文件，可以通过使用导航**反汇编**窗口。 有关详细信息，请参阅[如何： 使用反汇编窗口](../debugger/how-to-use-the-disassembly-window.md)。  
+如果无法访问进程的文件，可以通过使用导航**反汇编**窗口。 有关详细信息，请参阅[如何：使用“反汇编”窗口](../debugger/how-to-use-the-disassembly-window.md)。  
 
 ###  <a name="BKMK_Switch_between_processes"></a>在进程之间切换  
 

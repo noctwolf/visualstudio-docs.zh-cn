@@ -2,7 +2,6 @@
 title: 在 Visual Basic 编写可视化工具 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69534dbcd3a51ce5c6e4478c6fcc40a770de2548
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe98206e5183cbfbcacfe0a2849d09308bc7dba2
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53065443"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53951990"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>演练：在 Visual Basic 编写可视化工具
+# <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>演练：用 Visual Basic 编写可视化工具
 本演练演示如何使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编写简单的可视化工具。 本演练中创建的可视化工具使用 Windows 窗体消息框显示字符串的内容。 此简单字符串可视化工具是一个基本示例，将演示如何创建更加适合您项目的其他数据类型的可视化工具。
 
 > [!NOTE]

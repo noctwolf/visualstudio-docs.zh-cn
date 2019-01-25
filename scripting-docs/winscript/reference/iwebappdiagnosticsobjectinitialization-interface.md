@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsObjectInitialization 接口 |Microsoft 文档
+title: IWebAppDiagnosticsObjectInitialization 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,24 +14,24 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 159b81a336accea4e4e8c035119d5525de71ae90
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c892d3eceea65f16c69bfd2202b1f64181773532
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733857"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348043"
 ---
 # <a name="iwebappdiagnosticsobjectinitialization-interface"></a>IWebAppDiagnosticsObjectInitialization 接口
-可以在实现类上实现此接口[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)。 [IWebAppDiagnosticsSetup 接口](../../winscript/reference/iwebappdiagnosticssetup-interface.md)由实现的对象实现[IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)。 在大多数情况下此对象是 PDM。  
+可以实现的类上实现此接口[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)。 [IWebAppDiagnosticsSetup 接口](../../winscript/reference/iwebappdiagnosticssetup-interface.md)实现的对象由实现[IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)。 在大多数情况下此对象是 PDM。  
   
- 创建对象后， [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md)调用与对 PDM 调试应用程序的引用和`hPassToObject`参数`CreateObjectWithSiteAtWebApp`。  
+ 创建对象后， [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) PDM 调试应用程序的引用调用并`hPassToObject`参数的`CreateObjectWithSiteAtWebApp`。  
   
 > [!IMPORTANT]
->  `IWebAppDiagnosticsObjectInitialization`在 activdbg100.h 中发现找到。  
+>  `IWebAppDiagnosticsObjectInitialization` 在 activdbg100.h 中找到。  
   
 ## <a name="methods"></a>方法  
  此接口公开以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md)|初始化对象。|
+|[IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md)|初始化的对象。|

@@ -1,8 +1,6 @@
 ---
-title: 如何： 调试插入的代码 |Microsoft Docs
-ms.custom: ''
+title: 如何：调试插入的代码 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.injected
@@ -26,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8efcc5780b27967644330e55dc540333a19105a2
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: c9cb24bb4ea3f1edbb36f8e0f1219f6a0c653ec8
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389333"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53920626"
 ---
 # <a name="how-to-debug-injected-code"></a>如何：调试插入的代码
 

@@ -11,20 +11,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd076e19a1732309a07feccca899669741b6482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95eff5fee76b755ba30d6ec5b74d990b2b250f72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964632"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800951"
 ---
 # <a name="list-of-available-services"></a>可用服务的列表
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和 Visual Studio SDK 支持以下服务。 某些程序包提供其自己的服务未在此处列出的 — 例如，语言服务不具有单个服务的 GUID。 必须使用的语言名称以在注册表中找到的语言服务的 GUID。  
-  
- 使用服务 Guid 此处列出或获取来自其他源 （例如，语言服务） 来获取的主要接口或基接口与每个服务所示。  
-  
-## <a name="the-services"></a>服务  
-  
+
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和 Visual Studio SDK 支持以下服务。 某些程序包提供其自己的服务未在此处列出的 — 例如，语言服务不具有单个服务的 GUID。 必须使用的语言名称以在注册表中找到的语言服务的 GUID。
+
+使用服务 Guid 此处列出或获取来自其他源 （例如，语言服务） 来获取的主要接口或基接口与每个服务所示。
+
+## <a name="the-services"></a>服务
+
 | 服务 | 接口 | Visual Studio | Visual Studio 2005 | 描述 |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | 是 | 是 | 使用 Vspackage 获取<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>ActiveX 控件以便于异步数据传输中的接口。 |
@@ -156,7 +157,7 @@ ms.locfileid: "53964632"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | 是 | 是 | 使 VSPackage 可以向 Url 的最近使用过的 (MRU) 列表添加 URL 并获取 MRU 列表中的所有 Url 的列表。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | 是 | 是 | 启用以获取包的一部分的包可能会置于该窗口框架的 VSPackage。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | 是 | 是 | 提供对与特定的元数据文件相关联的 XML 格式文档文件的访问。 |
-  
-## <a name="see-also"></a>请参阅  
- [COM 和托管的服务](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
- [使用并提供服务](../../extensibility/using-and-providing-services.md)
+
+## <a name="see-also"></a>请参阅
+
+- [使用并提供服务](../../extensibility/using-and-providing-services.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite |Microsoft 文档
+title: IActiveScriptSite | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,29 +14,29 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c23dba403a7889fe46817a21ed8e4be65b1c05b4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b7ebbd5301ea1d8ea7cabf235ae3f3c7bb1ba3b2
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725007"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346886"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
-由主机后，可以创建一个网站，用于 Windows 脚本引擎实现。 通常情况下，此站点将与所有对象都可见的脚本 （例如，ActiveX 控件） 的容器相关联。 通常情况下，此容器将对应于文档或正在查看的页面。 例如，Microsoft Internet Explorer 中，将创建此类容器正在显示每个 HTML 页面。 每个 ActiveX 控件 （或其他自动化对象） 上的网页和脚本引擎本身，将为此容器中的可枚举。  
+实现的主机来创建 Windows 脚本引擎的站点。 通常情况下，此站点将会向脚本 （例如，ActiveX 控件） 的所有对象的容器与相关联。 通常情况下，此容器将对应于正在查看的页的文档。 例如，Microsoft Internet Explorer 中，将创建此类容器显示每个 HTML 页。 每个 ActiveX 控件 （或其他自动化对象） 上的网页和脚本引擎本身，将可枚举此容器中。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
 |||  
 |-|-|  
 |方法|描述|  
-|[IActiveScriptSite::GetLCID](../../winscript/reference/iactivescriptsite-getlcid.md)|检索由主机使用用于显示用户界面元素的区域设置标识符。|  
-|[IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)|获取有关已添加到引擎通过调用某个项的信息[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)方法。|  
+|[IActiveScriptSite::GetLCID](../../winscript/reference/iactivescriptsite-getlcid.md)|检索主机使用用于显示用户界面元素的区域设置标识符。|  
+|[IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)|获取有关已添加到引擎通过调用某个项的信息[iactivescript:: Addnameditem](../../winscript/reference/iactivescript-addnameditem.md)方法。|  
 |[IActiveScriptSite::GetDocVersionString](../../winscript/reference/iactivescriptsite-getdocversionstring.md)|检索唯一标识当前的文档版本从主机的角度来看是主机定义的字符串。|  
 |[IActiveScriptSite::OnScriptTerminate](../../winscript/reference/iactivescriptsite-onscriptterminate.md)|当脚本已完成执行时调用。|  
 |[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)|通知主机脚本引擎已更改状态。|  
 |[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)|通知主机引擎运行脚本时发生了执行错误。|  
-|[IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md)|通知主机脚本引擎已开始执行脚本代码。|  
-|[IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md)|通知主机脚本引擎已返回从执行脚本代码。|  
+|[IActiveScriptSite::OnEnterScript](../../winscript/reference/iactivescriptsite-onenterscript.md)|通知主机脚本引擎已开始执行的脚本代码。|  
+|[IActiveScriptSite::OnLeaveScript](../../winscript/reference/iactivescriptsite-onleavescript.md)|通知主机脚本引擎已返回执行脚本代码。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [活动脚本接口](../../winscript/reference/active-script-interfaces.md)

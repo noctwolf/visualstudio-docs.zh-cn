@@ -1,5 +1,5 @@
 ---
-title: 活动脚本常量、 枚举和错误代码 |Microsoft 文档
+title: 活动脚本常量、 枚举和错误代码 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,37 +12,37 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb4165a5471c8e79827f0f7605cef575e82bab75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f5e25070aa92a9464bfc92433c0d2b7763232fb6
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641567"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347614"
 ---
 # <a name="active-script-constants-enumerations-and-error-codes"></a>活动脚本常量、枚举和错误代码
-本部分介绍的枚举和使用在 Windows 脚本引擎中的错误代码。  
+本部分介绍枚举和错误代码在 Windows 脚本引擎中使用。  
   
 ## <a name="constants"></a>常量  
   
-|常量|描述|  
+|返回的常量|描述|  
 |--------------|-----------------|  
-|[SCRIPTTHREADID 常量](../../winscript/reference/scriptthreadid-constants.md)|指定的线程的类型。|  
+|[SCRIPTTHREADID 常量](../../winscript/reference/scriptthreadid-constants.md)|指定线程的类型。|  
   
-## <a name="properties"></a>属性  
+## <a name="properties"></a>Properties  
   
 |属性|描述|  
 |--------------|-----------------|  
-|[SCRIPTPROP_HOSTKEEPALIVE 属性](../../winscript/reference/scriptprop-hostkeepalive-property.md)|用于指定应保持脚本引擎完全正常运行，如果有未处理引用。|  
+|[SCRIPTPROP_HOSTKEEPALIVE 属性](../../winscript/reference/scriptprop-hostkeepalive-property.md)|用于指定应保留脚本引擎完全正常运行，如果有未完成的引用。|  
   
 ## <a name="enumerations"></a>枚举  
   
 |枚举|描述|  
 |-----------------|-----------------|  
 |[SCRIPTGCTYPE 枚举](../../winscript/reference/scriptgctype-enumeration.md)|若要执行的垃圾回收的类型。|  
-|[SCRIPTLANGUAGEVERSION 枚举](../../winscript/reference/scriptlanguageversion-enumeration.md)|指定脚本版本的可能。|  
-|[SCRIPTSTATE 枚举](../../winscript/reference/scriptstate-enumeration.md)|指定的脚本引擎的状态。|  
+|[SCRIPTLANGUAGEVERSION 枚举](../../winscript/reference/scriptlanguageversion-enumeration.md)|指定可能的脚本版本。|  
+|[SCRIPTSTATE 枚举](../../winscript/reference/scriptstate-enumeration.md)|指定脚本引擎的状态。|  
 |||  
-|[SCRIPTTHREADSTATE 枚举](../../winscript/reference/scriptthreadstate-enumeration.md)|指定脚本引擎中的线程的状态。|  
+|[SCRIPTTHREADSTATE 枚举](../../winscript/reference/scriptthreadstate-enumeration.md)|脚本引擎中指定的线程的状态。|  
 |[SCRIPTTRACEINFO 枚举](../../winscript/reference/scripttraceinfo-enumeration.md)|表示正在跟踪的脚本事件。 在中使用[iactivescriptsitetraceinfo:: Sendscripttraceinfo 方法](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md)。|  
 |[SCRIPTUICHANDLING 枚举](../../winscript/reference/scriptuichandling-enumeration.md)|表示应处理 UI 控件的方式。|  
 |[SCRIPTUICITEM 枚举](../../winscript/reference/scriptuicitem-enumeration.md)|表示 UI 项的类型。 在中使用[iactivescriptsiteuicontrol:: Getuibehavior 方法](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md)。|  
@@ -55,5 +55,5 @@ ms.locfileid: "24641567"
 |[SCRIPT_E_RECORDED 错误代码](../../winscript/reference/script-e-recorded-error-code.md)|脚本引擎和主机之间传递了错误。|  
 |[SCRIPT_E_REPORTED 错误代码](../../winscript/reference/script-e-reported-error-code.md)|脚本引擎已报告到的主机未处理的异常。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [活动脚本接口](../../winscript/reference/active-script-interfaces.md)

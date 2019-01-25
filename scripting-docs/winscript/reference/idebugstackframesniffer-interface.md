@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSniffer 接口 |Microsoft 文档
+title: IDebugStackFrameSniffer 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c104d24f27900a6ff0eb8e8f72644f820bf5a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 41fff384bc9075d94fcfa84d94350fec72ebc64a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24726797"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54348875"
 ---
 # <a name="idebugstackframesniffer-interface"></a>IDebugStackFrameSniffer 接口
-使您能够枚举已知的组件的逻辑的堆栈帧。 脚本引擎通常实现此接口。 此接口以查找所有堆栈帧过程调试 manager 使用与给定线程关联。  
+提供了一种方法来枚举逻辑堆栈帧已知的组件。 脚本引擎通常情况下实现此接口。 此接口以查找所有堆栈帧进程调试管理器使用与给定线程相关联。  
   
 > [!NOTE]
->  调试程序调用此接口从在感兴趣的线程中。 脚本引擎必须标识当前线程，并返回相应的枚举器。  
+>  调试程序调用此接口中所需的线程。 脚本引擎必须确定当前线程，并返回相应的枚举器。  
   
 ## <a name="methods"></a>方法  
- 除了从继承的方法`IUnknown`、`IDebugStackFrameSniffer`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IDebugStackFrameSniffer`接口公开以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDebugStackFrameSniffer::EnumStackFrames](../../winscript/reference/idebugstackframesniffer-enumstackframes.md)|返回当前线程的堆栈帧的枚举。|
+|[IDebugStackFrameSniffer::EnumStackFrames](../../winscript/reference/idebugstackframesniffer-enumstackframes.md)|返回当前线程的堆栈帧的枚举器。|

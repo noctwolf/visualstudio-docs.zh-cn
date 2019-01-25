@@ -1,12 +1,11 @@
 ---
 title: Visual Studio 中的 JavaScript | Microsoft Docs
 ms.custom: ''
-ms.date: 04/10/2017
-ms.prod: windows-client-threshold
+ms.date: 01/15/2019
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
-- devlang-javascript
+- vs-nodejs
 ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
@@ -17,13 +16,13 @@ ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
-manager: ghogen
-ms.openlocfilehash: 75c234b2a3b16d3bcbe05da9f0818c73be0412db
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+manager: douge
+ms.openlocfilehash: 1045c515870d2574bfb86d12396c5572b01ddda4
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880759"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398369"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -57,14 +56,14 @@ TypeScript 的主要功能之一是可以将 ES6+ 代码转译为 ES5 或 ES3，
 
 Tsconfig 文件的必需设置如下：
 
- - `allowJs`：必须将此值设置为 `true` 才能识别 JavaScript 文件。 默认值为 `false`，因为 TypeScript 编译为 JavaScript，并且编译器不应包含刚刚编译的文件。
- - `outDir`：应将此值设置为未包含在项目中的位置，从而不会检测到已发出的 JavaScript 文件，然后将其包含在项目中（请参阅 `exclude`）。
- - `module`：如果使用模块，此设置将告知编译器发出的代码应使用哪种模块格式，例如用于节点或捆绑程序的 `commonjs`（如 Browserify）。
- - `exclude`：此设置指明不包括在项目中的文件夹。
+ - `allowJs`：必须将此值设置为 `true`，才能识别 JavaScript 文件。 默认值为 `false`，因为 TypeScript 编译为 JavaScript，并且编译器不应包含刚刚编译的文件。
+ - `outDir`：应将此值设置为未包含在项目中的位置，这样就不会检测已发出 JavaScript 文件并将文件添加到项目中（请参阅 `exclude`）。
+ - `module`：如果使用的是模块，此设置会指示编译器已发出代码应使用哪种模块格式（例如，用于节点的 `commonjs`，或 Browserify 等捆绑程序）。
+ - `exclude`：此设置指明不要在项目中添加的文件夹。
  应向此设置添加输出位置和非项目文件夹（如 `node_modules` 或 `temp`）。
- - `enableAutoDiscovery`：此设置按上面所述启用定义文件的自动检测和下载功能。
- - `compileOnSave`：此设置会告知编译器是否应该在 Visual Studio 中保存源文件时进行重新编译。
- - `typeAcquisition`：这组设置控制自动类型获取的行为（[本部分](/visualstudio/ide/javascript-intellisense#Auto)中会有进一步的说明）
+ - `enableAutoDiscovery`：此设置按上面所述启用自动检测和下载定义文件。
+ - `compileOnSave`：此设置指示编译器是否只要在 Visual Studio 中保存源文件时就应重新编译。
+ - `typeAcquisition`：这组设置控制自动类型获取的行为（[这一部分](/visualstudio/ide/javascript-intellisense#Auto)进一步说明了这一点）
 
 为了将 JavaScript 文件转换为 CommonJS 模块并将其放置在 `./out` 文件夹中，可以使用以下 `tsconfig.json` 文件：
 
@@ -131,7 +130,7 @@ exports.default = Subscription_1.Subscription;
 下图显示了在 `comps.tsx` TypeScript 文件中定义 React 组件，然后从 `app.jsx` 文件中使用此组件，通过 IntelliSense 在 JSX 表达式中实现补全和记录。
 此处不需要 TypeScript，此特定示例刚好包含了一些 TypeScript 代码。
 
-<img src="./media/react.png" height="500" width="640"/>
+![JSX 语法](../javascript/media/js-react.png)
 
 > [!NOTE]
 > 若要将 JSX 语法转换为 React 调用，必须将 `"jsx": "react"` 设置添加到 `tsconfig.json` 文件中的 `compilerOptions`。
@@ -190,7 +189,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 - `bootstrap`、`jquery`、`jquery-validation` 和 `jquery-validation-unobtrusive` 在 `bower.json` 中列出
 - `kendo-ui` 已手动添加到 lib文件夹
 
-![文件夹结构](./media/folderStructure.png)
+![文件夹结构](../javascript/media/js-folderstructure.png)
 
 可以使用以下 `tsconfig.json` 来确保语言服务仅分析 `js` 文件夹中的源文件，但仍然提取 `.d.ts` 文件并将其用于 `lib` 文件夹中的库。
 

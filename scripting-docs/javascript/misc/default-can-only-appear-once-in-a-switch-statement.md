@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a4f254825e27793999932b772ac4bc2512908fae
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803878"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347302"
 ---
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>“default”在“switch”语句中只能出现一次
 你尝试使用**默认**多次 switch 语句内的语句。 默认情况下始终是 switch 语句 （它是 fall-through 事例） 中的最后一个 case 语句。  

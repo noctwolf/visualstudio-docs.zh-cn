@@ -1,5 +1,5 @@
 ---
-title: 无效的替换器自变量 |Microsoft 文档
+title: 无效的替换器参数 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,22 +20,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 588909bae9c5cf198d3108490111b36d5a2d182b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0f144e733bf115cc98bf61b23a2ed3e4e3cda1e0
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632857"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346210"
 ---
 # <a name="invalid-replacer-argument"></a>无效的替换器自变量
-尝试调用`JSON.stringify`不是有效的参数。 `replacer`自变量必须是一个函数或数组。  
+尝试调用`JSON.stringify`不是有效的参数。 `replacer`参数必须为一个函数或数组。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   更改`replacer`对一个函数或数组自变量。  
+-   更改`replacer`函数或数组参数。  
   
 ## <a name="example"></a>示例  
- 此示例中的代码将导致运行时错误，因为`memberfilter`是而不是函数或数组的对象。  
+ 在此示例代码会导致运行时错误，因为`memberfilter`是而不是函数或数组的对象。  
   
 ```JavaScript  
 var contact = new Object();  
@@ -49,7 +49,7 @@ var memberfilter = new Object();
 var jsontext = JSON.stringify(contact, memberfilter, "\t");  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [JSON 对象](../../javascript/reference/json-object-javascript.md)   
  [JSON.parse 函数](../../javascript/reference/json-parse-function-javascript.md)   
  [JavaScript 运行时错误](../../javascript/reference/javascript-run-time-errors.md)

@@ -1,8 +1,7 @@
 ---
-title: 远程调试在 IIS 和 Azure 上的 ASP.NET Core |Microsoft 文档
+title: 远程调试 IIS 和 Azure 上的 ASP.NET Core |Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 05/21/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
 author: mikejo5000
@@ -12,21 +11,21 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 821da7c5d131acea62e944055ec6c450e4bc5154
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
-ms.translationtype: MT
+ms.openlocfilehash: 1658e8df9950ed7b9be060663204511a09d8c626
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101103"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "53839091"
 ---
-# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 在 Azure 中的 IIS 上的远程调试 ASP.NET Core
+# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 中的 Azure 中的 IIS 上的远程调试 ASP.NET Core
 
-本指南说明如何设置和配置 Visual Studio 2017 ASP.NET Core 应用，将其部署到 IIS 使用 Azure，并从 Visual Studio 中附加远程调试器。
+本指南介绍如何设置和配置 Visual Studio 2017 ASP.NET Core 应用，将其部署到 IIS，使用 Azure，并从 Visual Studio 附加远程调试器。
 
 在 Azure 上的远程调试的推荐的方式取决于你的方案：
 
-* 若要调试在 Azure App Service 上的 ASP.NET Core，请参阅[调试 Azure 应用程序使用快照调试器](../debugger/debug-live-azure-applications.md)。 这是建议的方法。
-* 若要调试 ASP.NET Core 上使用更加传统的调试功能的 Azure App Service，请按照本主题中的步骤 (请参阅明[在 Azure App Service 上进行远程调试](#remote_debug_azure_app_service))。
+* 若要调试 Azure 应用服务上的 ASP.NET Core，请参阅[使用快照调试程序调试 Azure 应用](../debugger/debug-live-azure-applications.md)。 这是建议的方法。
+* 若要调试使用更传统的调试功能的 Azure 应用服务上的 ASP.NET Core，请按照本主题中的步骤 (请参阅的部分[在 Azure 应用服务上进行远程调试](#remote_debug_azure_app_service))。
 
     在此方案中，必须将部署到 Azure 将应用程序从 Visual Studio，但不是需要手动安装或配置 IIS 或远程调试器 （这些组件使用虚线表示），如下图中所示。
 
@@ -38,7 +37,7 @@ ms.locfileid: "49101103"
 
     ![远程调试器组件](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
 
-* 若要调试在 Azure Service Fabric 上的 ASP.NET Core，请参阅[调试远程 Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。
+* 若要调试 Azure Service Fabric 上的 ASP.NET Core，请参阅[调试远程 Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。
 
 > [!WARNING]
 > 请务必删除时的步骤完成此教程中创建的 Azure 资源。 这样可以避免产生不必要的费用。
@@ -52,27 +51,27 @@ ms.locfileid: "49101103"
 
 1. 创建新的 ASP.NET Core 应用程序。 (选择**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET Core Web 应用程序**)。
 
-    在**ASP.NET Core** 模板部分中，选择**Web 应用程序**。
+    在中**ASP.NET Core**模板部分中，选择**Web 应用程序**。
 
-2. 请确保**ASP.NET Core 2.0**选中，则，**启用 Docker 支持**是**不**选且**身份验证**设置为**无身份验证**。
+2. 请确保**ASP.NET Core 2.0**已选中的**启用 Docker 支持**是**不**所选并且**身份验证**设置为**无身份验证**。
 
 3. 将项目命名**MyASPApp**然后单击**确定**以创建新的解决方案。
 
 4. 打开 About.cshtml.cs 文件，并在中设置断点`OnGet`方法 (在较旧模板中，打开 HomeController.cs 而是和中设置断点`About()`方法)。
 
-## <a name="remote_debug_azure_app_service"></a> 在 Azure App Service 上的远程调试 ASP.NET Core
+## <a name="remote_debug_azure_app_service"></a> Azure 应用服务上的远程调试 ASP.NET Core
 
-从 Visual Studio 中，可快速发布和调试你的应用的 IIS 完全预配实例。 但是，预设的 IIS 配置，并且不能自定义它。 有关详细说明，请参阅[ASP.NET Core web 应用部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果需要自定义 IIS 的功能，请尝试调试[Azure VM](#remote_debug_azure_vm)。) 
+从 Visual Studio 中，可快速发布和调试你的应用的 IIS 完全预配实例。 但是，预设的 IIS 配置，并且不能自定义它。 有关详细说明，请参阅[将 ASP.NET Core web 应用部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果需要自定义 IIS 的功能，请尝试调试[Azure VM](#remote_debug_azure_vm)。) 
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>若要部署的应用程序和使用服务器资源管理器进行远程调试
 
 1. 在 Visual Studio 中，右键单击项目节点并选择**发布**。
 
-    如果你以前配置了任何发布配置文件，**发布**窗格会显示。 单击**新的配置文件**。
+    如果先前配置了任何发布配置文件，则“发布”窗格会显示。 单击**新的配置文件**。
 
 1. 选择**Azure 应用服务**从**发布**对话框中，选择**新建**，并按照提示来发布。
 
-    有关详细说明，请参阅[ASP.NET Core web 应用部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
+    有关详细说明，请参阅[使用 Visual Studio 将 ASP.NET Core Web 应用部署到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 
     ![发布到 Azure 应用服务](../debugger/media/remotedbg_azure_app_service_profile.png)
 
@@ -84,7 +83,7 @@ ms.locfileid: "49101103"
 
     就这么简单！ 本主题中的步骤的其余部分适用于 Azure VM 上远程调试。
 
-## <a name="remote_debug_azure_vm"></a> 在 Azure VM 上的远程调试 ASP.NET Core
+## <a name="remote_debug_azure_vm"></a> 在 Azure VM 上远程调试 ASP.NET Core
 
 可以创建服务器的 Azure VM 的 Windows，然后安装和配置 IIS 和其他所需的软件组件。 这要花更多的时间比部署到 Azure 应用服务，要求你按照本教程中的剩余步骤。
 
@@ -113,12 +112,12 @@ ms.locfileid: "49101103"
 
 ### <a name="install-aspnet-core-on-windows-server"></a>在 Windows Server 上安装 ASP.NET Core
 
-1. 安装[.NET Core Windows 服务器承载](https://aka.ms/dotnetcore-2-windowshosting)主机系统上的软件包。 捆绑包将安装.NET Core 运行时，.NET Core 库和 ASP.NET Core 模块。 有关更多深入说明，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
+1. 在托管系统上安装 [.NET Core Windows Server 托管捆绑包](https://aka.ms/dotnetcore-2-windowshosting)。 捆绑包可安装 .NET Core 运行时、.NET Core 库和 ASP.NET Core 模块。 有关更多深入说明，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
     > [!NOTE]
-    > 如果系统没有连接到 Internet，获取并安装 *[Microsoft Visual c + + 2015年可再发行组件](https://www.microsoft.com/download/details.aspx?id=53840)* 之前安装.NET Core Windows 服务器承载捆绑。
+    > 如果系统没有 Internet 连接，请先获取并安装 [Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)，再安装 .NET Core Windows Server 托管捆绑包。
 
-3. 重新启动系统 (或执行**net stop was /y 和**跟**net start w3svc**在命令提示符下，若要应用到系统路径的更改)。
+3. 重启系统（或在命令提示符处依次执行“net stop was /y”和“net start w3svc”，了解系统路径的更改）。
 
 ## <a name="choose-a-deployment-option"></a>选择部署选项
 
@@ -139,15 +138,15 @@ ms.locfileid: "49101103"
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
 
-### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>在 Windows Server 上的 IIS 中创建的发布设置文件
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>在 Windows Server 上的 IIS 中创建发布设置文件
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
 
-### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>导入 Visual Studio 中的发布设置和部署
+### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>在 Visual Studio 中导入发布设置并进行部署
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-应用程序成功部署后，应自动启动。 如果从 Visual Studio 不启动应用程序，请在 IIS 中启动应用程序。 对于 ASP.NET Core，你需要确保应用程序池字段**DefaultAppPool**设置为**无托管代码**。
+应用成功部署后，它应自动启动。 如果从 Visual Studio 不启动应用程序，请在 IIS 中启动应用程序。 对于 ASP.NET Core，需要确保将 DefaultAppPool 的应用程序池字段设置为“无托管代码”。
 
 1. 在中**设置**对话框中，通过单击调试启用**下一步**，选择**调试**配置，然后选择**删除其他文件目标**下**文件发布**选项。
 
@@ -199,10 +198,10 @@ ms.locfileid: "49101103"
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 中，您可以将重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...**(Shift + Alt + P)。 
+    > 在 Visual Studio 2017 中，您可以将重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...** Shift+Alt+P 
 
-3. 将限定符字段设置为**\<远程计算机名称 >: 4022**。
-4. 单击**刷新**。
+3. 将限定符字段设置为“\<remote computer name>:4022”。
+4. 单击“刷新”。
     “可用进程”  窗口中将显示某些进程。
 
     如果看不到任何进程，请尝试使用的 IP 地址而不远程计算机名称 （端口是必需的）。 可以使用`ipconfig`获取 IPv4 地址的命令行中。
@@ -211,22 +210,22 @@ ms.locfileid: "49101103"
 
 5. 勾选“显示所有用户的进程”  。
 
-6. 键入要快速查找的进程名称的首字母*dotnet.exe* （适用于 ASP.NET Core)。
+6. 键入进程名称，可以快速找到的第一个字母*dotnet.exe* （适用于 ASP.NET Core)。
    
-   对于 ASP.NET Core 应用程序，以前的进程名称是*dnx.exe*。
+   ASP.NET Core 应用，以前的过程名称为*dnx.exe*。
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
 
 7. 单击 **“附加”**。
 
-8. 打开远程计算机的网站。 在浏览器中，转到**http://\<远程计算机名称 >**。
+8. 打开远程计算机的网站。 在浏览器中，转到 http://\<remote computer name>。
     
     将显示 ASP.NET 网页。
 9. 在运行的 ASP.NET 应用程序，单击链接到**有关**页。
 
     应在 Visual Studio 中命中断点。
 
-### <a name="bkmk_openports"></a> 故障排除： 打开 Windows Server 上的所需的端口
+### <a name="bkmk_openports">疑难解答</a>Windows Server 上打开所需的端口
 
 在大多数系统中，所需的端口被打开的 ASP.NET 和远程调试器安装。 但是，如果你解决部署问题和应用程序托管在防火墙后面，你可能需要验证正确的端口打开。
 
@@ -240,4 +239,3 @@ ms.locfileid: "49101103"
 
 此外，应已 ASP.NET 安装可打开这些端口：
 - 8172-（可选） 所需的 Web 部署来部署该应用程序从 Visual Studio
-

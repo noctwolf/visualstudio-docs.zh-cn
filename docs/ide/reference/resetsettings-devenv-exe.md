@@ -1,58 +1,75 @@
 ---
 title: -ResetSettings (devenv.exe)
-ms.date: 11/16/2018
+ms.date: 12/10/2018
 ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /ResetSettings switch
 - ResetSettings switch
 - /ResetSettings Devenv switch
+- settings [Visual Studio], resetting
 ms.assetid: 1d41021c-6f58-4bd5-b122-d1c995812192
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 160cbf93cee8ff778a4f84ee833c7fac3d7f26b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52c3576b10fdc88563b3689e4b37d71b7f4659cd
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830659"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227546"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
-还原 Visual Studio 的默认设置，自动启动 Visual Studio IDE。 可选择将这些设置重置为指定的 vssettings 文件。
+还原 Visual Studio 的默认设置，自动启动 Visual Studio IDE。 此开关视需要将这些设置重置为指定的设置文件。
 
-默认设置由首次启动 Visual Studio 时选择的配置文件决定。
+默认设置来自在 Visual Studio 首次启动时被选择的配置文件。
 
 > [!TIP]
 > 若要了解如何使用集成开发环境 (IDE) 重置设置，请参阅[重置设置](../environment-settings.md#reset-settings)。
 
 ## <a name="syntax"></a>语法
 
-```cmd
-Devenv /ResetSettings SettingsFile
+```shell
+devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 ```
 
 ## <a name="arguments"></a>自变量
 
-`SettingsFile`
+- *SettingsFile*
 
-vssettings 文件的完整路径和名称应用于 Visual Studio。
+  可选。 应用于 Visual Studio 的设置文件的完整路径和文件名。
 
-若要还原常规开发设置配置文件，请使用 `General`。
+- DefaultCollectionSpecifier
+
+  可选。 表示要还原的默认设置集合的说明符。 从表中列出的默认集合说明符中选择一个。
+
+  | 默认集合名称 | 集合说明符 |
+  | --- | --- |
+  | **常规** | `General` |
+  | **JavaScript** | `JavaScript` |
+  | **Visual Basic** | `VB` |
+  | **Visual C#** | `CSharp` |
+  | **Visual C++** | `VC` |
+  | **Web 开发** | `Web` |
+  | **Web 开发（仅代码）** | `WebCode` |
 
 ## <a name="remarks"></a>备注
 
-如果未指定任何 `SettingsFile`，在下次启动 Visual Studio 时，系统将提示选择默认的设置集合。
+如果没有指定 SettingsFile，IDE 使用现有设置打开。
 
 ## <a name="example"></a>示例
 
-下面的命令行应用 `MySettings.vssettings` 文件中存储的设置。
+第一个示例应用文件 `MySettings.vssettings` 中存储的设置。
 
-```cmd
-Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
+第二个示例还原 Visual C# 默认配置文件。
+
+```shell
+devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
+
+devenv /resetsettings CSharp
 ```
 
 ## <a name="see-also"></a>请参阅

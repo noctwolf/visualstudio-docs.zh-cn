@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: de50a5ee6e65540b1a2052f61eae211074780417
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 537059a78ccc316b7b74a8300961b57b4e6e6f95
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989165"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269977"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -93,7 +93,7 @@ public void Debit(double amount)
 
 5. 在“BankTests”项目中，添加对“Bank”项目的引用。
 
-   在解决方案资源管理器中，选择“BankTests”项目中的“引用”，然后从上下文菜单中选择“添加引用”。
+   在“解决方案资源管理器”中，依次选择“BankTests”项目中的“引用”，以及右键单击菜单中的“添加引用”。
 
 6. 在“引用管理器”对话框中，展开“解决方案”，然后选中“Bank”项。
 
@@ -103,7 +103,7 @@ public void Debit(double amount)
 
 ### <a name="rename-a-class-file"></a>重命名类文件
 
-在“解决方案资源管理器”中，从 BankTests 项目中选择 UnitTest1.cs 文件。 从上下文菜单中，选择“重命名”，然后将该文件重命名为 BankAccountTests.cs。 在询问是否希望重命名项目中对码位元素 `UnitTest1` 的所有引用的对话框中，选择“是”。
+在“解决方案资源管理器”中，从 BankTests 项目中选择 UnitTest1.cs 文件。 在右键单击菜单中，选择“重命名”，再将文件重命名为 BankAccountTests.cs。 在询问是否希望重命名项目中对码位元素 `UnitTest1` 的所有引用的对话框中，选择“是”。
 
 此步骤会将类的名称更改为 `BankAccountTests`。 BankAccountTests.cs 文件现包含下列代码：
 

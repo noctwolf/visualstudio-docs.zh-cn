@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c3477926161da09d0b669d32316933d967ee98
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5f81c38d63659261281f35704edf0ecde3ccd94
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908887"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269821"
 ---
 # <a name="create-solutions-and-projects"></a>创建解决方案和项目
 
@@ -129,7 +129,7 @@ ms.locfileid: "53908887"
 
 ### <a name="to-permanently-delete-a-solution"></a>永久删除解决方案
 
-1. 在“解决方案资源管理器”中，在要删除的解决方案的上下文菜单上选择“在文件资源管理器中打开文件夹”。
+1. 在“解决方案资源管理器”中，在要删除的解决方案的右键单击菜单（关联菜单）中，选择“在文件资源管理器中打开文件夹”。
 
 1. 在文件资源管理器中，导航到上一级。
 

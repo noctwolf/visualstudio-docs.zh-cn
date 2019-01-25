@@ -1,8 +1,6 @@
 ---
 title: IDiaSymbol::findInlineeLines |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -12,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1be3a9576ab36bd57bde8889c6e55b0139277e8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 008328536e7fe465594f4fbfec25a52aa2a1ed64
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49947961"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53927072"
 ---
 # <a name="idiasymbolfindinlineelines"></a>IDiaSymbol::findInlineeLines
 检索一个枚举，允许客户端来循环访问的所有函数的内联，直接或间接地，此符号中的行号信息。  
@@ -25,7 +23,7 @@ ms.locfileid: "49947961"
 ## <a name="syntax"></a>语法  
   
 ```C++  
-HRESULT findInlineeLines (   
+HRESULT findInlineeLines (   
    IDiaEnumLineNumbers** ppResult  
 );  
 ```  

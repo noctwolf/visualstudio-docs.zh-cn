@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode100::GetExcludedDocuments |Microsoft 文档
+title: IDebugApplicationNode100::GetExcludedDocuments |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ad8e8e2bbe8c643385bb4a989367d58d7c38725
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 9de24002733ddd2918e59c908502a7daf4dd8e5a
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725607"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346717"
 ---
 # <a name="idebugapplicationnode100getexcludeddocuments"></a>IDebugApplicationNode100::GetExcludedDocuments
-获取由指定的筛选器隐藏的文本文档。  
+获取指定的筛选器隐藏的文本文档。  
   
 > [!IMPORTANT]
->  [IDebugApplicationNode100 接口](../../winscript/reference/idebugapplicationnode100-interface.md)是实现的 PDM 10.0 版和更高版本。 在 activdbg100.h 中发现。  
+>  [IDebugApplicationNode100 接口](../../winscript/reference/idebugapplicationnode100-interface.md)是实现由 PDM 10.0 版及更高版本。 在 activdbg100.h 中发现。  
   
 ## <a name="syntax"></a>语法  
   
@@ -40,5 +40,5 @@ HRESULT GetExcludedDocuments(        [in] APPLICATION_NODE_EVENT_FILTER filter, 
  `pDocuments`  
  文档集。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugApplicationNode100 接口](../../winscript/reference/idebugapplicationnode100-interface.md)

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1336d5bba93fa12010dadce2a47504fa84995f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 66d618999fc2ae3e94316f64e20a82516efbeb38
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890704"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269795"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>演练：创建代码片段
 只需几步操作即可创建代码片段。 你需要做的就是创建一个 XML 文件，填写适当的元素，并向其中添加代码。 此外还可以向代码中添加引用和替换参数。 可以在“代码片段管理器”（“工具” > “代码片段管理器”）中使用“导入”按钮向 Visual Studio 的安装添加代码片段。
@@ -79,7 +79,7 @@ ms.locfileid: "53890704"
 
      %USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets
 
-6.  通过打开 Visual Basic 项目并打开代码文件，测试代码片段。 在文件中，从上下文菜单选择“代码片段” > “插入代码片段”，然后选择“我的代码片段”。 应看到一个名为“我的 Visual Basic 代码片段”的代码片段。 双击该选项。
+6.  通过打开 Visual Basic 项目并打开代码文件，测试代码片段。 在文件中，依次选择右键单击菜单中的“代码片段” > “插入代码片段”，再选择“我的代码片段”。 应看到一个名为“我的 Visual Basic 代码片段”的代码片段。 双击该选项。
 
     `Console.WriteLine("Hello, World!")` 会插入到代码文件中。
 

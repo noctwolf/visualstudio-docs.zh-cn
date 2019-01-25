@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare 接口 |Microsoft 文档
+title: IActiveScriptStringCompare Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9aed02fc797317d6231f2192841afd0ad7771ea
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 53d395ae2b7528e2e4983dc625ca98405d2b3bed
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724887"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344871"
 ---
 # <a name="iactivescriptstringcompare-interface"></a>IActiveScriptStringCompare 接口
 `IActiveScriptCompare`接口用于定义脚本引擎的字符串比较方法。  
@@ -34,5 +34,5 @@ ms.locfileid: "24724887"
 |------------|-----------------|  
 |[IActiveScriptStringCompare::StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md)|定义脚本引擎的字符串比较方法。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [活动脚本接口](../../winscript/reference/active-script-interfaces.md)

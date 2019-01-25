@@ -1,5 +1,5 @@
 ---
-title: IWebAppDiagnosticsSetup::DiagnosticsSupported |Microsoft 文档
+title: IWebAppDiagnosticsSetup::DiagnosticsSupported |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5706d868f0096d486629c18c3d700349af92cc92
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: df9296ac251d93105229fc0af365f6797a413f2b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24733977"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54349681"
 ---
 # <a name="iwebappdiagnosticssetupdiagnosticssupported"></a>IWebAppDiagnosticsSetup::DiagnosticsSupported
-确定是否对此应用程序支持诊断。 如果[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)已经对实现具有非 NULL 值，此接口的对象调用[DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)返回`true`。 如果不是，它返回`false`和调用[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)失败。  
+确定此应用程序是否支持诊断。 如果[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)实现此接口具有一个非 NULL 值，在对象上名为[DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)返回`true`。 如果不是，它将返回`false`并调用[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)失败。  
   
 > [!IMPORTANT]
 >  [IWebAppDiagnosticsSetup 接口](../../winscript/reference/iwebappdiagnosticssetup-interface.md)是实现由 PDM v11.0 和更高版本。 在 activdbg100 中找到。  
@@ -35,4 +35,4 @@ HRESULT DiagnosticsSupported(        [out, retval] VARIANT_BOOL* pRetVal        
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- 如果[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)已经对实现具有非 NULL 值，此接口的对象调用[DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)返回`true`。 如果不是，它返回`false`，并调用[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)失败。
+ 如果[SetSite](http://go.microsoft.com/fwlink/?LinkId=232439)实现此接口具有一个非 NULL 值，在对象上名为[DiagnosticsSupported](../../winscript/reference/iwebappdiagnosticssetup-diagnosticssupported.md)返回`true`。 如果不是，它将返回`false`，并调用[IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md)失败。

@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bcbf844ced2bb74ddfea9bd62d68877b7a3c969c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092880"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54347341"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>条件编译已关闭
 你尝试使用条件编译变量，但不将首次启用条件性编译上。 打开条件编译告知[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]编译器将解释为条件编译变量，开头的标识符。 为此，可开始使用该语句将条件代码：  

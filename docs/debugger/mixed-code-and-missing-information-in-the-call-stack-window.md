@@ -1,8 +1,6 @@
----
+﻿---
 title: 混合代码和调用堆栈窗口中缺少的信息 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 dev_langs:
 - CSharp
@@ -25,19 +23,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdcde5a0a597d038015c80f5d26add66158542ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 184e1b9a189ced74f93eef92a79c1c7121fdba2b
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850927"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53941107"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>“调用堆栈”窗口中的混合代码与丢失信息
-由于托管代码和本机代码的调用堆栈之间存在差异，因此当代码类型混杂时，调试器无法始终显示完整的调用堆栈。当本机代码调用托管的代码时，你可能会在“调用堆栈”窗口中注意到以下差异： 
+由于托管代码和本机代码的调用堆栈之间存在差异，因此对于混合的代码类型，调试器不能始终显示完整的调用堆栈。 本机代码调用托管代码时，可能会注意到“调用堆栈”窗口中的内容与实际情况存在如下差异：  
   
--“调用堆栈”窗口中可能缺少托管代码正上方的本机框架。有关详细信息，请参阅[如何：在调用堆栈窗口中缺少本机框架时跳出托管代码](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)
+- 紧邻托管代码之上的本机框架可能从“调用堆栈”窗口中消失。 有关更多信息，请参见[如何：在“调用堆栈”窗口中缺少本机框架时单步执行完托管代码](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)。  
   
-- 对于在调试器外部启动的混合模式应用程序，“调用堆栈”窗口可能仅显示托管代码，而不会显示任何本机框架。
+- 对于在调试器以外启动的混合模式应用程序，“调用堆栈”窗口可能只显示托管代码，而不显示任何本机框架。  
   
   这两种情况都极为少见。 在多数对托管代码的本机调用中，都会正确显示调用堆栈。  
   

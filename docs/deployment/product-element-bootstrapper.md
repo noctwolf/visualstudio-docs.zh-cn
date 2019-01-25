@@ -1,8 +1,6 @@
 ---
 title: '&lt;产品&gt;元素 （引导程序） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -17,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90179df4595ea58a771dd941ea388555b52c7374
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
-ms.translationtype: MT
+ms.openlocfilehash: 32e1689331ff41cec007c98be5410b518f1e44e9
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080400"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53821226"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;产品&gt;元素 （引导程序）
 `Product`元素是产品文件内的顶级 XML 元素。  
@@ -142,7 +140,7 @@ ProductCode
 ## <a name="elements-and-attributes"></a>元素和属性  
  `Product`元素必需的产品文件中。 它具有以下特性。  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
 |`ProductCode`|该产品的唯一标识符。|  
   
@@ -252,4 +250,4 @@ ProductCode
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [产品和包架构参考](../deployment/product-and-package-schema-reference.md)
+ [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

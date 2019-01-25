@@ -1,8 +1,6 @@
 ---
-title: 如何： 检查应用程序更新使用 ClickOnce 部署 API 以编程方式 |Microsoft Docs
-ms.custom: ''
+title: 如何：检查应用程序更新使用 ClickOnce 部署 API 以编程方式 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25585dce22f74c8e8b2f6aef253ea00c3a6ad4e8
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: a890a7ad0a3b65580f5ef08d33774182c8916140
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151388"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53869961"
 ---
-# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>如何： 使用 ClickOnce 部署 API 以编程方式的应用程序更新检查
+# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>如何：使用 ClickOnce 部署 API 以编程方式检查是否有应用程序更新
 ClickOnce 提供两种方法在部署之后更新的应用程序。 在第一种方法，可以配置 ClickOnce 部署自动检查更新在一定时间间隔。 在第二个方法中，可以编写使用的代码<xref:System.Deployment.Application.ApplicationDeployment>类，以检查更新的基于事件，如用户请求。  
   
  以下过程显示执行以编程方式更新一些代码，还介绍了如何配置 ClickOnce 部署，以便以编程方式更新检查。  
@@ -32,7 +30,7 @@ ClickOnce 提供两种方法在部署之后更新的应用程序。 在第一种
  若要以编程方式更新 ClickOnce 应用程序，必须指定更新的位置。 这有时称为部署提供程序。 有关设置此属性的详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
   
 > [!NOTE]
->  此外可以使用如下所述来部署你的应用程序从一个位置，但从另一个更新的技术。 有关详细信息，请参阅[如何： 指定部署更新的其他位置](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)。  
+>  此外可以使用如下所述来部署你的应用程序从一个位置，但从另一个更新的技术。 有关更多信息，请参见[如何：指定部署更新的替换位置](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)。  
   
 ### <a name="to-check-for-updates-programmatically"></a>若要以编程方式检查更新  
   
@@ -48,7 +46,7 @@ ClickOnce 提供两种方法在部署之后更新的应用程序。 在第一种
   
 ### <a name="use-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>使用 Mage.exe 部署以编程方式检查更新的应用程序  
   
--   按照说明部署你的应用程序中所述使用 Mage.exe[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 在调用 Mage.exe 生成部署清单，请确保使用命令行开关`providerUrl`，并指定 ClickOnce 检查更新的位置的 URL。 如果你的应用程序将更新从[ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp)，例如，若要生成的部署清单的调用可能如下所示：  
+-   按照说明部署你的应用程序中所述使用 Mage.exe[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 在调用 Mage.exe 生成部署清单，请确保使用命令行开关`providerUrl`，并指定 ClickOnce 检查更新的位置的 URL。 如果你的应用程序将更新从[ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp)，例如，若要生成的部署清单的调用可能如下所示：  
   
     ```cmd 
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  
@@ -56,12 +54,12 @@ ClickOnce 提供两种方法在部署之后更新的应用程序。 在第一种
   
 ### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>使用 MageUI.exe 部署以编程方式检查更新的应用程序  
   
--   按照说明部署你的应用程序中所述使用 Mage.exe[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 上**部署选项**选项卡上，设置**开始位置**字段检查更新的 ClickOnce 应用程序清单。 上**更新选项**选项卡上，清除**此应用程序应检查更新**复选框。  
+-   按照说明部署你的应用程序中所述使用 Mage.exe[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 上**部署选项**选项卡上，设置**开始位置**字段检查更新的 ClickOnce 应用程序清单。 上**更新选项**选项卡上，清除**此应用程序应检查更新**复选框。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  你的应用程序必须具有完全信任权限，用于以编程方式更新。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 指定部署更新的其他位置](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
+ [如何：指定部署更新的替换位置](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
  [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

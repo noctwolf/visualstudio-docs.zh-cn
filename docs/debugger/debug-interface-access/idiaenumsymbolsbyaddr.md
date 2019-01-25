@@ -1,8 +1,6 @@
 ---
-title: IDiaEnumSymbolsByAddr |Microsoft 文档
-ms.custom: ''
+title: IDiaEnumSymbolsByAddr |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -14,42 +12,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f974076f9947ac318e0d0edfd5afa14bac5aab61
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: ce1e0fd6d480b327efc2ac880925f78029f32067
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462790"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53958285"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
-通过地址枚举数据源中包含的各种符号。  
+通过地址来枚举数据源中包含的各种符号。  
   
 ## <a name="syntax"></a>语法  
   
 ```  
-IDiaEnumSymbolsByAddr : IUnknown  
+IDiaEnumSymbolsByAddr : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDiaEnumSymbolsByAddr`。  
   
-|方法|描述|  
+|方法|说明|  
 |------------|-----------------|  
-|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|通过执行的部分和偏移量的查找将枚举数。|  
-|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|通过按相对虚拟地址 (RVA) 执行查找将枚举数。|  
-|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|通过执行查找的虚拟地址 (VA) 将枚举数。|  
-|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|通过地址来检索顺序的下一步符号。 通过提取的元素数目来更新枚举器位置。|  
-|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|通过地址来检索顺序中的上一个符号。 通过提取的元素数目来更新枚举器位置。|  
-|[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|创建对象的副本。|  
+|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|枚举数定位通过查找的部分和偏移量。|  
+|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|枚举数定位通过按相对虚拟地址 (RVA) 执行查找。|  
+|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|枚举数定位通过按虚拟地址 (VA) 执行查找。|  
+|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|检索地址按顺序的下一个符号。 通过提取的元素数来更新枚举器位置。|  
+|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|按地址检索顺序中的上一个符号。 通过提取的元素数来更新枚举器位置。|  
+|[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|创建一个对象的副本。|  
   
 ## <a name="remarks"></a>备注  
- 此接口提供按地址分组的符号。 若要使用按类型，例如分组的符号`SymTagUDT`（用户定义类型） 或`SymTagBaseClass`，使用[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)接口。  
+ 此接口提供按地址分组的符号。 若要使用符号的类型，例如分组`SymTagUDT`（用户定义类型） 或`SymTagBaseClass`，使用[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)接口。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  通过调用来获取此接口[idiasession:: Getsymbolsbyaddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)方法。  
   
 ## <a name="example"></a>示例  
- 此函数将显示的名称和地址的相对虚拟地址按排序的所有符号。  
+ 此函数可显示的名称和地址的相对虚拟地址按排序的所有符号。  
   
 ```C++  
 void ShowSymbolsByAddress(IDiaSession *pSession)  
@@ -96,13 +94,13 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 ```  
   
 ## <a name="requirements"></a>要求  
- 标头： Dia2.h  
+ 标头：dia2.h  
   
  库： diaguids.lib  
   
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>请参阅  
- [接口 （调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiasession:: Getsymbolsbyaddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)   
+ [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

@@ -1,8 +1,6 @@
 ---
-title: 错误： 无法连接到机&lt;名称&gt;。 在网络上找不到计算机。 | Microsoft Docs
-ms.custom: ''
+title: 错误：无法连接到计算机&lt;名称&gt;。 网络上找不到该计算机。 | Microsoft Docs
 ms.date: 11/04/2016
-ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.remote.dcom_disabled
@@ -18,14 +16,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e0654148823d40277bdd9c6b6d8ec5b881fdb80
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
-ms.translationtype: MT
+ms.openlocfilehash: e4c9bc3c72a2ff97fc67f31f44041feed2185551
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480054"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53847368"
 ---
-# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>错误： 无法连接到机&lt;名称&gt;。 在网络上找不到计算机。
+# <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>错误：无法连接到计算机&lt;名称&gt;。 网络上找不到该计算机。
 如果满足下列某项条件，则会发生此行为：  
   
 -   您与远程计算机的连接中断。  

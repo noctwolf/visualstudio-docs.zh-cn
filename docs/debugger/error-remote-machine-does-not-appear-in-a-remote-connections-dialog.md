@@ -1,5 +1,5 @@
 ---
-title: 错误：远程计算机未显示在远程连接对话框中，|Microsoft Docs
+title: 错误：远程计算机未显示在远程连接对话框中 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:

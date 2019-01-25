@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteTraceInfo 接口 |Microsoft 文档
+title: IActiveScriptSiteTraceInfo Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2db76a81d94dcc18d1c89ec33929d25d62a68cf
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 00785a14733ff1f76a170ddc6a020bbf79fc0f32
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725057"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344455"
 ---
 # <a name="iactivescriptsitetraceinfo-interface"></a>IActiveScriptSiteTraceInfo 接口
-提供的方法来发送脚本跟踪信息。  
+提供发送脚本跟踪信息的方法。  
   
 ## <a name="methods"></a>方法  
   

@@ -1,5 +1,5 @@
 ---
-title: 错误：不支持混合的模式调试的 IA64 进程 |Microsoft Docs
+title: 错误：不支持对 IA64 进程执行混合模式调试 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:

@@ -1,5 +1,5 @@
 ---
-title: IDebugCookie 接口 |Microsoft 文档
+title: IDebugCookie 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23f6796c278807951bbc7cfa37bec48e4dd73f4e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d47995fbf6c713af0f1d0213dbf5c3c98d54a0e
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24725977"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54344015"
 ---
 # <a name="idebugcookie-interface"></a>IDebugCookie 接口
-允许调试 cookie，若要设置，以用于`IMachineDebugManagerCookie`接口。 有关详细信息，请参阅[IMachineDebugManagerCookie 接口](../../winscript/reference/imachinedebugmanagercookie-interface.md)。 此接口是实现通过过程调试管理器 (PDM) 由和使用脚本调试器。  
+允许设置，以用于调试 cookie`IMachineDebugManagerCookie`接口。 有关详细信息，请参阅[IMachineDebugManagerCookie 接口](../../winscript/reference/imachinedebugmanagercookie-interface.md)。 此接口已实现的进程调试管理器 (PDM) 和已使用脚本调试器。  
   
 ## <a name="methods"></a>方法  
- 除了从继承的方法`IUnknown`、`IDebugCookie`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IDebugCookie`接口公开以下方法。  
   
 |方法|描述|  
 |------------|-----------------|  
 |[IDebugCookie::SetDebugCookie](../../winscript/reference/idebugcookie-setdebugcookie.md)|设置调试应用程序 cookie。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IMachineDebugManagerCookie 接口](../../winscript/reference/imachinedebugmanagercookie-interface.md)

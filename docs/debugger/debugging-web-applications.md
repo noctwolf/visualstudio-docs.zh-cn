@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f494e365de28603d2231323fa1ab501b826c28e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f8827bea4ad3819c7915c34793dfe3b2164d5bb
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923029"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269626"
 ---
 # <a name="debugging-web-applications"></a>调试 Web 应用程序
 本节说明如何调试几种类型的 Web 应用程序。  
@@ -37,7 +37,7 @@ ms.locfileid: "53923029"
  描述启用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序调试所需的步骤。  
   
 ## <a name="see-also"></a>请参阅  
- [Debugging Web Applications and Script](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications) （调试 Web 应用程序和脚本）  
- [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
- [先来看一下调试器](../debugger/debugger-feature-tour.md) [Visual Studio 中调试](../debugger/index.md)  
- [调试器功能简介](../debugger/debugger-feature-tour.md)
+ [调试 Web 应用程序和脚本](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
+ [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)  
+ [初探调试器](../debugger/debugger-feature-tour.md)  
+ [在 Visual Studio 中进行调试](../debugger/index.md)

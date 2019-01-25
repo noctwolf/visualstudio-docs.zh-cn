@@ -19,10 +19,10 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
+ms.lasthandoff: 01/16/2019
 ms.locfileid: "53837285"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中，使用 XAML 设计器创建 UI
@@ -91,9 +91,9 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
 
  **显示** 为应用指定不同的显示大小和分辨率。
 
- **方向**指定不同的应用的方向：**横向**或**纵向**。
+ **方向**指定不同的应用的方向：“横向”或“纵向”。
 
- **边缘**指定不同的边缘对齐方式，为你的应用：**这两**，**左**，**右侧**，或**无**。
+ **边缘**指定不同的边缘对齐方式，为你的应用：“两者”、“左对齐”、“右对齐”或“无”。
 
  **高对比度** 根据选定的对比度设置预览应用。 如果将此设置的值不是“默认值” ，将重写 App.xaml 中的 `RequestedTheme` 属性设置。
 
@@ -142,4 +142,4 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
  每个属性值的右侧是一个“属性标记”  ，显示为一个方框符号。 属性标记的外观指示是否有数据绑定到或有资源应用于该属性。 例如，白色方框符号指示默认值，黑色方框符号通常指示已应用某个本地资源，而橙色方框通常指示已应用某个数据绑定。 单击属性标记时，可以导航到一种样式的定义、打开数据绑定生成器或打开资源选取器。
 
 ## <a name="see-also"></a>请参阅
- [使用 XAML 设计器中的元素](../designers/working-with-elements-in-xaml-designer.md)[如何创建和应用资源](../designers/how-to-create-and-apply-a-resource.md)[演练：绑定到 XAML 设计器中的数据](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [使用 XAML 设计器中的元素](../designers/working-with-elements-in-xaml-designer.md)[如何创建和应用资源](../designers/how-to-create-and-apply-a-resource.md)[演练：在 XAML 设计器中绑定数据](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

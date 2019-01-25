@@ -2,19 +2,18 @@
 title: 快照调试程序的起始页
 ms.date: 07/14/2018
 robots: noindex, nofollow
-ms.technology: vs-ide-debug
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b5b48aeeb0cfcaeed72a06bfb6709892c58de7
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
-ms.translationtype: MT
+ms.openlocfilehash: c9c2e5ec77a2abf07ca396166d4cc2ae9792cacc
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "39310107"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53853731"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>快照调试程序入门
 
@@ -68,7 +67,7 @@ Visual Studio 快照调试器现在连接到你的服务，可以开始收集快
 
 可以在上找到有关快照调试程序的详细信息[文档页](../debug-live-azure-applications.md)。 详细了解如何设置条件以使其更轻松地发现 bug。
 
-## <a name="dont-show-me-this-again"></a>不显示此信息
+## <a name="dont-show-me-this-again"></a>不再显示此信息
 
 若要永远不会显示快照调试程序起始页再次连接 Snapshot Debugger 时，更改**显示会话启动此入门页**选项**工具** >  **选项** > **快照调试器**。 
 

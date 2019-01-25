@@ -2,7 +2,6 @@
 title: JavaScript 控制台命令 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 07/17/2017
-ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -14,16 +13,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: c546e3f1938a7dddc3dd48fa9d941b9f7d2e7048
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: bf978f336070e9bd90f90f399f4b6c3d8598877e
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53052217"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53990930"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 控制台命令
   
- 你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 有关演示如何使用该窗口的示例，请参阅[快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主题中的信息适用于 UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用。 有关 Cordova 应用中受支持控制台命令的信息，请参阅 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 有关在 Internet Explorer F12 工具中使用控制台的信息，请参阅 [本主题](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))。  
+ 你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 有关演示如何使用该窗口的示例，请参阅[快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) 本主题中的信息适用于 UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用。 有关 Cordova 应用中受支持控制台命令的信息，请参阅 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 有关在 Internet Explorer F12 工具中使用控制台的信息，请参阅 [本主题](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))。  
   
  如果 JavaScript 控制台窗口已关闭，则可以打开它通过选择 Visual Studio 中调试时，**调试** > **Windows** > **JavaScript控制台**。  
   
@@ -66,7 +65,7 @@ ms.locfileid: "53052217"
   
 |命令|说明|示例|  
 |-------------|-----------------|-------------|  
-|`$0`，`$1`，`$2`，`$3`，`$4`|将指定元素返回到控制台窗口。 `$0` 返回当前在 DOM 资源管理器中选择的元素，`$1` 返回以前在 DOM 资源管理器中选择的元素，依此类推，最多可返回第四个以前选择的元素。|$3|  
+|`$0`, `$1`, `$2`, `$3`, `$4`|将指定元素返回到控制台窗口。 `$0` 返回当前在 DOM 资源管理器中选择的元素，`$1` 返回以前在 DOM 资源管理器中选择的元素，依此类推，最多可返回第四个以前选择的元素。|$3|  
 |`$(id)`|按 ID 返回元素。 这是 `document.getElementById(id)`的快捷方式命令，其中 `id` 是一个表示元素 ID 的字符串。|`$("contenthost")`|  
 |`$$(selector)`|使用 CSS 选择器语法返回与指定选择器匹配的元素的数组。 这是 `document.querySelectorAll()`的快捷方式命令。|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|用于将表达式计算的上下文从页面的默认顶级窗口改为指定框架的窗口。 无参数调用 `cd()` 可使上下文返回顶级窗口。|`cd();`<br /><br /> `cd(myframe);`|  
@@ -131,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
+ [快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
  [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

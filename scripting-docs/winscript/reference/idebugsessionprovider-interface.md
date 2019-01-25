@@ -1,5 +1,5 @@
 ---
-title: IDebugSessionProvider 接口 |Microsoft 文档
+title: IDebugSessionProvider 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,20 +14,20 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e61b1e5e794c68e34250f958cdda0f50b68334c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d6d17546d5461a1ad76b144bf2652672ab4aa675
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727137"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54345141"
 ---
 # <a name="idebugsessionprovider-interface"></a>IDebugSessionProvider 接口
-提供由调试器 IDE 以启用主机和语言的主界面启动调试。 它将建立一个正在运行的应用程序的调试会话。 此接口由机调试管理器实现。  
+由调试器 IDE 来启用主机和语言提供的主界面启动调试。 它将建立一个正在运行的应用程序的调试会话。 此接口由计算机调试管理器实现。  
   
- 除了从继承的方法`IUnknown`、`IDebugSessionProvider`接口公开以下方法。  
+ 除了继承的方法之外`IUnknown`，则`IDebugSessionProvider`接口公开以下方法。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDebugSessionProvider::StartDebugSession](../../winscript/reference/idebugsessionprovider-startdebugsession.md)|启动与指定的应用程序的调试会话。|
+|[IDebugSessionProvider::StartDebugSession](../../winscript/reference/idebugsessionprovider-startdebugsession.md)|启动具有指定的应用程序的调试会话。|

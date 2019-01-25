@@ -15,22 +15,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66478505fe59ef65eb703fef6be8941deebe3d49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
+ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931419"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54204479"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器浏览代码
 
-Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显示其执行流。 可以使用键盘快捷方式、 调试命令、 断点以及其他功能来快速访问你想要检查的代码。 熟悉的调试器导航命令和快捷方式可以更快、 更轻松地查找和解决应用程序问题。  如果这是你首次尝试调试代码，则在阅读本文之前，可能需要阅读[通过编写更好的 C# 代码修复 bug](../debugger/write-better-code-with-visual-studio.md)和[适用于初学者的调试](../debugger/debugging-absolute-beginners.md)。
+Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显示其执行流。 可以使用键盘快捷方式、 调试命令、 断点以及其他功能来快速访问你想要检查的代码。 熟悉的调试器导航命令和快捷方式可以更快、 更轻松地查找和解决应用程序问题。  如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)和[编写更优质的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)。
   
 ## <a name="basic-debugging"></a>基础调试  
 
 若要启动附有调试器的应用程序，按**F5**，选择**调试** > **开始调试**，或者在 Visual Studio 工具栏中选择绿色箭头。  
   
- ![DBG&#95;基础知识&#95;启动&#95;调试](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
 当你进行调试时，黄色突出显示框显示了将执行下一步的代码行。  
   

@@ -8,12 +8,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9470027e84e33bb3acdd64756db86c951c845d3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dbb34804e827ddd0eefdaf4585ba517034a31392
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883021"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269886"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在编码的 UI 测试中使用 HTML5 控件
 
@@ -39,11 +39,11 @@ ms.locfileid: "53883021"
 
 |操作|录制|生成的代码|
 |-|---------------|-|
-|**播放音频**<br /><br /> 直接通过控件，或通过控件上下文菜单。|从 00:00:00 开始播放 \<名称> 音频|HtmlAudio.Play(TimeSpan)|
+|**播放音频**<br /><br /> 直接通过控件，或通过控件的右键单击菜单。|从 00:00:00 开始播放 \<名称> 音频|HtmlAudio.Play(TimeSpan)|
 |**搜寻音频中的特定时间**|搜寻 \<名称> 音频的 00:01:48|HtmlAudio.Seek(TimeSpan)|
-|**暂停音频**<br /><br /> 直接通过控件，或通过控件上下文菜单。|在 00:01:53 暂停 \<名称> 音频|HtmlAudio.Pause(TimeSpan)|
-|**音频静音**<br /><br /> 直接通过控件，或通过控件上下文菜单。|使 \<名称> 音频静音|HtmlAudio.Mute()|
-|**取消静音音频**<br /><br /> 直接通过控件，或通过控件上下文菜单。|使 \<名称> 音频取消静音|HtmlAudio.Unmute()|
+|**暂停音频**<br /><br /> 直接通过控件，或通过控件的右键单击菜单。|在 00:01:53 暂停 \<名称> 音频|HtmlAudio.Pause(TimeSpan)|
+|**音频静音**<br /><br /> 直接通过控件，或通过控件的右键单击菜单。|使 \<名称> 音频静音|HtmlAudio.Mute()|
+|**取消静音音频**<br /><br /> 直接通过控件，或通过控件的右键单击菜单。|使 \<名称> 音频取消静音|HtmlAudio.Unmute()|
 |**更改音频音量**|将 \<名称> 音频的音量设为 79%|HtmlAudio.SetVolume(float)|
 
 有关可在其添加断言的属性列表，请参阅 [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement)。
@@ -63,11 +63,11 @@ ms.locfileid: "53883021"
 
 |操作|录制|生成的代码|
 |-|---------------|-|
-|**播放视频**<br /><br /> 直接通过控件，或通过控件上下文菜单。|从 00:00:00 开始播放 \<名称> 视频|HtmlVideo.Play(TimeSpan)|
+|**播放视频**<br /><br /> 直接通过控件，或通过控件的右键单击菜单。|从 00:00:00 开始播放 \<名称> 视频|HtmlVideo.Play(TimeSpan)|
 |**搜寻视频中的特定时间**|搜寻 \<名称> 视频的 00:01:48|HtmlVideo.Seek(TimeSpan)|
-|**暂停视频**<br /><br /> 直接通过控件，或通过控件上下文菜单。|在 00:01:53 暂停 \<名称> 视频|HtmlVideo.Pause(TimeSpan)|
-|**视频静音**<br /><br /> 直接通过控件，或通过控件上下文菜单。|使 \<名称> 视频静音|HtmlVideo.Mute()|
-|**取消静音视频**<br /><br /> 直接通过控件，或通过控件上下文菜单。|使 \<名称> 视频取消静音|HtmlVideo.Unmute()|
+|**暂停视频**<br /><br /> 直接通过控件，或通过控件的右键单击菜单。|在 00:01:53 暂停 \<名称> 视频|HtmlVideo.Pause(TimeSpan)|
+|**视频静音**<br /><br /> 直接通过控件，或通过控件的右键单击菜单。|使 \<名称> 视频静音|HtmlVideo.Mute()|
+|**取消静音视频**<br /><br /> 直接通过控件，或通过控件的右键单击菜单。|使 \<名称> 视频取消静音|HtmlVideo.Unmute()|
 |**更改视频音量**|将 \<名称> 视频的音量设为 79%||
 
 有关可在其添加断言的属性列表，请参阅 [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video)。

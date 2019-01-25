@@ -1,8 +1,6 @@
 ---
 title: ClickOnce 部署疑难解答 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/04/2016
-ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,33 +18,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af05eee471581df756d17bc00e1f3a18fa032598
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
-ms.translationtype: MT
+ms.openlocfilehash: 25d352666b66202b40d5d1d397aa36a978f695a4
+ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153171"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53944478"
 ---
-# <a name="troubleshoot-clickonce-deployments"></a>ClickOnce 部署进行故障排除
+# <a name="troubleshoot-clickonce-deployments"></a>ClickOnce 部署疑难解答
 本主题可帮助您诊断和解决最常见的问题与[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。  
   
  在大多数情况下，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序将下载到用户的计算机并运行而无需任何问题。 有某些情况下，但是，Web 服务器或应用程序配置问题导致无法预料的问题。  
 
 ## <a name="deployment-considerations"></a>部署注意事项
 
- [如何： 设置 ClickOnce 部署错误的自定义日志文件位置](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
+ [如何：设置 ClickOnce 部署错误的自定义日志文件位置](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
  介绍如何重定向所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]到单个日志文件的计算机上的激活失败。  
   
- [如何： 指定 ClickOnce 部署的详细日志文件](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
+ [如何：指定 ClickOnce 部署的详细日志文件](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
  介绍如何提高详细信息，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]写入到日志文件。  
   
  [ClickOnce 部署中的服务器和客户端配置问题](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
  介绍你可能会导致困难下载的 Web 服务器的配置的各种问题[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  
   
- [安全、 版本和 ClickOnce 部署中的清单问题](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
+ [ClickOnce 部署中的安全、版本控制和清单问题](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
  介绍周围的其他问题[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。  
   
- [ClickOnce 部署中的特定错误进行故障排除](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  
+ [ClickOnce 部署中特定错误的疑难解答](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  
  描述特定情况下，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署不能成功，并提供解决问题的步骤。  
   
  [调试使用 System.Deployment.Application 的 ClickOnce 应用程序](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)  

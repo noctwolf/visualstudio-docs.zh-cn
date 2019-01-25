@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 65ba6a0528dee5a0b430787ee4332ca3dab5bdec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89e64c88311848d53a114a1f58f711edbe3856e7
+ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858062"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54269873"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
@@ -46,7 +46,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 - 若要运行默认组中的所有测试，请选择“运行”，然后选择菜单上的组。
 
-- 选择你希望运行的各个测试，打开选定测试的上下文菜单，然后选择 **“运行选定的测试”**。
+- 选择要运行的各个测试，打开选定测试的右键单击菜单，再选择“运行选定测试”。
 
 - 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
@@ -84,7 +84,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ### <a name="view-the-source-code-of-a-test-method"></a>查看测试方法的源代码
 
- 若要在 Visual Studio 编辑器中显示测试方法的源代码，请选择该测试，然后在上下文菜单中选择“打开测试”（键盘：F12）。
+ 若要在 Visual Studio 编辑器中显示测试方法的源代码，请依次选择测试和右键单击菜单中的“打开测试”（键盘快捷键：F12）。
 
 ## <a name="group-and-filter-the-test-list"></a>分组和筛选测试列表
 
@@ -165,9 +165,9 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
  ![选择播放列表](../test/media/ute_playlist.png)
 
- **若要创建播放列表**，请在测试资源管理器中选择一个或多个测试。 在上下文菜单中，依次选择“添加到播放列表” > “新建播放列表”。 保存具有该名称的文件，并定位到你在 **“创建新的播放列表”** 对话框中指定的位置。
+ **若要创建播放列表**，请在测试资源管理器中选择一个或多个测试。 在右键单击菜单中，依次选择“添加到播放列表” > “NewPlaylist”。 保存具有该名称的文件，并定位到你在 **“创建新的播放列表”** 对话框中指定的位置。
 
- **若要将测试添加到播放列表**，请在测试资源管理器中选择一个或多个测试。 在上下文菜单中，选择 **“添加到播放列表”**，然后选择你希望将测试添加到的播放列表。
+ **若要将测试添加到播放列表**，请在测试资源管理器中选择一个或多个测试。 在右键单击菜单中，依次选择“添加到播放列表”和要将测试添加到的播放列表。
 
  要打开播放列表，请从 Visual Studio 菜单中依次选择“测试” > “播放列表”，然后从“最近使用的播放列表”列表中选择，或选择“打开播放列表”以指定播放列表的名称和位置。
 
@@ -184,13 +184,13 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
     > [!NOTE]
     > 因为测试方法可以按任何顺序运行，请在你想要调试的所有测试方法中设置断点。
 
-2. 在测试资源管理器中，选择测试方法，然后选择上下文菜单中的 **“调试选定的测试”** 。
+2. 在测试资源管理器中，依次选择测试方法和右键单击菜单中的“调试选定测试”。
 
    有关该调试程序的详细信息，请参阅[在 Visual Studio 中进行调试](../debugger/debugger-feature-tour.md)。
 
 ### <a name="diagnose-test-method-performance-issues"></a>诊断测试方法性能问题
 
- 要诊断测试方法花费过多时间的原因，请在测试资源管理器中选择该方法，然后在上下文菜单中选择“配置文件”。 请参阅[性能资源管理器](../profiling/performance-explorer.md)。
+ 若要诊断测试方法为何花费过多时间，请在测试资源管理器中依次选择方法和右键单击菜单中的“配置文件”。 请参阅[性能资源管理器](../profiling/performance-explorer.md)。
 
 ### <a name="analyze-unit-test-code-coverage"></a>分析单元测试代码覆盖率
 

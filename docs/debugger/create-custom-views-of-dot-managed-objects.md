@@ -1,8 +1,6 @@
 ---
-title: 创建托管对象的自定义视图 |Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology: vs-ide-debug
+title: 创建对象的自定义视图 |Microsoft Docs
+ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.data.elements
@@ -12,7 +10,7 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- data types [C#], custom
+- data types, custom
 - custom data types
 - managed code, custom data types
 - autoexp.dat file
@@ -25,34 +23,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 970051c5f53c152ea6fee334c3c1f856172b5ed9
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: MT
+ms.openlocfilehash: c2e4b2d34df1a1e870247112892d4cd00ff887f3
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280540"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227637"
 ---
-# <a name="create-custom-views-of-managed-objects"></a>创建托管对象的自定义视图
+# <a name="create-custom-views-of-objects-c-visual-basic-c"></a>创建自定义视图的对象 (C#，Visual Basic、 c + +)
 可以在调试器变量窗口中自定义 Visual Studio 显示数据类型的方式。  
+
+## <a name="native-code"></a>本机代码
+
+对于 c + + 代码中，您可以添加自定义数据类型扩展使用 Natvis 框架，如中所述[在调试器中创建本机对象的自定义视图](/visualstudio/debugger/create-custom-views-of-native-objects)。 对于 C + + /cli CLI 代码中，您还可以使用本文中的此处所述的特性。
+
+## <a name="attributes"></a>特性
+
+在C#，Visual Basic 和 c + + (C + + CLI 代码仅限)，可以添加自定义数据使用的扩展<xref:System.Diagnostics.DebuggerTypeProxyAttribute>， <xref:System.Diagnostics.DebuggerDisplayAttribute>，并<xref:System.Diagnostics.DebuggerBrowsableAttribute>。  
   
-## <a name="attributes"></a>特性  
- 在 C# 和 Visual Basic 中，可以使用 <xref:System.Diagnostics.DebuggerTypeProxyAttribute>、<xref:System.Diagnostics.DebuggerDisplayAttribute> 和 <xref:System.Diagnostics.DebuggerBrowsableAttribute> 来添加自定义数据的扩展。  
-  
- 在 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 代码中，Visual Basic 不支持 DebuggerBrowsable 特性。 此项限制在 .NET Framework 较高版本中已经删除。  
-  
-## <a name="visualizers"></a>可视化工具  
- 可以编写可视化工具来显示任何托管数据类型。 有关详细信息，请参阅[如何： 编写可视化工具](../debugger/how-to-write-a-visualizer.md)。  
-  
-## <a name="native-code"></a>本机代码  
- 对于本机代码，可以将自定义数据类型扩展添加到 autoexp.dat 文件中，该文件位于 Program Files\Microsoft Visual Studio 11.0\Common7\Packages\Debugger 目录中。 有关如何编写 `autoexp` 规则的说明就在该文件中。  
-  
-> [!CAUTION]
->  在 Visual Studio 的不同版本中，此文件的结构和 autoexp 规则的语法可能不同。  
-  
- 通过编写表达式计算器外接程序，还可以自定义本机类型视图。 有关详细信息，请参阅[EEAddIn 示例： 调试表达式计算器外接程序](https://msdn.microsoft.com/library/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
+在 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 代码中，Visual Basic 不支持 DebuggerBrowsable 特性。 此项限制在 .NET Framework 较高版本中已经删除。    
+
+## <a name="visualizers"></a>可视化工具
+
+可以编写可视化工具来显示任何托管数据类型。 有关详细信息，请参阅[如何：编写可视化工具](/visualstudio/debugger/create-custom-visualizers-of-data)。
   
 ## <a name="see-also"></a>请参阅  
- [使用 DebuggerTypeProxy 特性](../debugger/using-debuggertypeproxy-attribute.md)   
- [使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)   
- [监视窗口和快速监视 Windows](../debugger/watch-and-quickwatch-windows.md)   
+ [使用 DebuggerTypeProxy 属性](../debugger/using-debuggertypeproxy-attribute.md)   
+ [使用 DebuggerDisplay 属性](../debugger/using-the-debuggerdisplay-attribute.md)   
+ [“监视”和“快速监视”窗口](../debugger/watch-and-quickwatch-windows.md)   
  [使用调试器显示特性增强调试](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

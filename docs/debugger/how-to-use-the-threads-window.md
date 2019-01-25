@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86e85fd7f5d8c767b64d55efd0837de9f99b340
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d320c4cc2a224dd17ea85337e38fb43ae8aa5bd
+ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893702"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54227663"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window"></a>演练：调试多线程的应用使用线程窗口
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>演练：调试多线程的应用使用线程窗口 (C#，Visual Basic、 c + +)
 
 多个 Visual Studio 用户界面元素帮助您调试多线程应用程序。 本文介绍了在代码编辑器窗口中，多线程调试功能**调试位置**工具栏上，并**线程**窗口。 有关其他工具来调试多线程应用程序的信息，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。 
   

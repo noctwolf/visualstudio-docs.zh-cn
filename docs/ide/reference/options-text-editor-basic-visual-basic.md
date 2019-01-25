@@ -1,6 +1,6 @@
 ---
 title: “选项”>“文本编辑器”>“基本(VB)”>“高级”
-ms.date: 11/04/2016
+ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
@@ -19,19 +19,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2178b61aa3cd2aa83314f00c231d564a10944
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
+ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871234"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54398242"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>“选项”>“文本编辑器”>“基本(Visual Basic)”>“高级”
-在“选项”（“工具”菜单）对话框的“文本编辑器”文件夹下的“Basic”文件夹中，“VB 专用”属性页包含以下属性：
+在“选项”（“工具”菜单）对话框中“文本编辑器”文件夹的“基本”文件夹内，“VB 专用”属性页包含以下属性：
+
+## <a name="analysis"></a>分析
+
+- 启用完整解决方案分析
+
+   针对解决方案中的所有文件启用代码分析，而不仅针对打开的代码文件。 详情请参阅[完整解决方案分析](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)。
+
+## <a name="using-directives"></a>Using 指令
+
+- 对 using 排序时将“System”指令排在第一位
+
+   当你选择右键单击菜单中的“删除和排序 Using”命令后，它会对 `using` 指令进行排序，并将“System”命名空间置于列表顶部。
+   
+- 单独的 using 指令组
+
+   当你选择右键单击菜单中的“删除和排序 Using”命令后，它会在具有相同根命名空间的指令组之间插入空行，以将 `using` 指令分隔开来。
+   
+- 建议对引用程序集中的类型使用 using 
+- 建议对 NuGet 包中的类型使用 using 
+
+   选择这些选项时，[快速操作](../quick-actions.md)可用于安装 NuGet 包，并为未引用的类型添加 `using` 指令。
+
+   ![用于在 Visual Studio 中安装 NuGet 包的快速操作](media/nuget-lightbulb.png)
+  
+
+## <a name="highlighting"></a>Highlighting
 
  **启用突出显示引用和关键字**
 
-文本编辑器可突出显示符号的所有实例或子句中的所有关键字，例如 `If..Then`、`While...End While` 或 `Try...Catch...Finally`。 可以在突出显示的引用或关键字之间进行导航，具体方法为按 Ctrl + Shift + 向下箭头，或按 Ctrl + Shift + 向上箭头。
+文本编辑器可以突出显示所有符号实例或子句中的所有关键字，如 `If..Then`、`While...End While` 或 `Try...Catch...Finally`。 可以在突出显示的引用或关键字之间进行导航，具体方法为按 Ctrl + Shift + 向下箭头，或按 Ctrl + Shift + 向上箭头。
+
+## <a name="outlining"></a>大纲显示
 
 **启用大纲显示模式**
 
@@ -47,7 +75,13 @@ ms.locfileid: "53871234"
 |在一组单行构造之后|-   在类文件中的导入语句之后，在类型定义之前<br />-   在类中声明的变量之后，在所有过程之前|
 |在单行声明（非块级声明）之后|-   在导入语句、继承语句、变量声明、事件声明、委托声明和 DLL 声明语句之后|
 
- **整齐排列代码（重新设置格式）** 文本编辑器会适当地重新设置代码格式。 选定此选项后，代码编辑器会：
+## <a name="block-structure-guides"></a>块结构指南
+
+如果选中这些复选框，可以在代码中的大括号 ({}) 之间显示虚竖线。 这样一来，就可以轻松查看声明级构造和代码级构造的各个代码块了。
+
+## <a name="editor-help"></a>编辑器帮助
+
+**整齐排列代码（重新设置格式）** 文本编辑器会适当地重新设置代码格式。 选定此选项后，代码编辑器会：
 
 -   将代码与正确的制表符位置对齐
 
@@ -65,7 +99,7 @@ ms.locfileid: "53871234"
 
 **自动插入最终构造**
 
- 例如，在你键入过程声明的第一行 `Sub Main—` 并按 Enter 后，文本编辑器会添加匹配的 `End Sub` 行。 同样，如果添加一个 [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) 循环，文本编辑器会添加一个匹配的 `Next` 语句。 选定此选项后，代码编辑器会自动添加最终构造。
+例如，如果你键入过程声明的第一行 `Sub Main` 并按 Enter，文本编辑器就会添加匹配的 `End Sub` 行。 同样，如果添加一个 [For](/dotnet/visual-basic/language-reference/statements/for-next-statement) 循环，文本编辑器会添加一个匹配的 `Next` 语句。 选定此选项后，代码编辑器会自动添加最终构造。
 
 **自动插入 Interface 和 MustOverride 成员**
 

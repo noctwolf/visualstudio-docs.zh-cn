@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo 接口 |Microsoft 文档
+title: IEnumDebugExtendedPropertyInfo 接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c46815ff1fadd359e3200223dfe9041b6089ad3b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 53e8c4c7a517415497b21f80d9bf469877d7888f
+ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24728167"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54346028"
 ---
 # <a name="ienumdebugextendedpropertyinfo-interface"></a>IEnumDebugExtendedPropertyInfo 接口
 枚举`ExtendedDebugPropertyInfo`结构。  
@@ -33,7 +33,7 @@ ms.locfileid: "24728167"
   
 |方法|描述|  
 |------------|-----------------|  
-|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|创建包含与当前的枚举器相同的枚举状态的枚举。|  
+|[IEnumDebugExtendedPropertyInfo::Clone](../../winscript/reference/ienumdebugextendedpropertyinfo-clone.md)|创建一个包含当前枚举数形式的相同枚举状态的枚举器。|  
 |[IEnumDebugExtendedPropertyInfo::GetCount](../../winscript/reference/ienumdebugextendedpropertyinfo-getcount.md)|获取数`ExtendedDebugPropertyInfo`枚举器中的结构。|  
 |[IEnumDebugExtendedPropertyInfo::Next](../../winscript/reference/ienumdebugextendedpropertyinfo-next.md)|检索指定的数目的`ExtendedDebugPropertyInfo`枚举序列中的结构。|  
 |[IEnumDebugExtendedPropertyInfo::Skip](../../winscript/reference/ienumdebugextendedpropertyinfo-skip.md)|跳过指定的数目的`ExtendedDebugPropertyInfo`枚举序列中的结构。|  
@@ -42,5 +42,5 @@ ms.locfileid: "24728167"
 ## <a name="requirements"></a>要求  
  标头： dbgprop.h  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ExtendedDebugPropertyInfo 结构](../../winscript/reference/extendeddebugpropertyinfo-structure.md)
