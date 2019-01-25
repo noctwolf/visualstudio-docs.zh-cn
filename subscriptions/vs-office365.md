@@ -9,12 +9,12 @@ description: 了解一些 Visual Studio 订阅中随附的 Office 365 权益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d68c8847dc9ab6f4daeaceb07dbd4023ca2148f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
+ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968386"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380143"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Office 365 Pro Plus
 
@@ -63,7 +63,7 @@ ms.locfileid: "53968386"
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 | Visual Studio Dev Essentials | 不可用  | 不可用 |不可用 |
 
-<sup>1</sup>包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Microsoft 最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络。
+<sup>1</sup>  包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络。
 
 
 > [!NOTE]
