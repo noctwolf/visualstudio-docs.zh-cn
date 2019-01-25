@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 716cf80a9b93f5a018c31af0d36d3212a858f3b2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d0b201d22b93b7c023627887f0fc033da360fe9
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888590"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417858"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出了由 VSInstr.exe 工具发出的警告。 可使用 NOWARN 选项及警告编号来禁止显示警告。  
   
 |警告编号|说明|  
 |--------------------|-----------------|  
+|**VSP1026**|不引用 MSCorLib 的库不支持覆盖率。 这通常是可移植库会遇到的情况。|  
 |**VSP2000**|内部错误。 无法获取此可执行文件的模块文件名。|  
 |**VSP2001**|\<程序集名称> 是强名称程序集。 必须先对其重新签名，然后才能执行它。<br /><br /> 当检测到签名程序集时，将发出此警告。 可使用 sn.exe 工具重新签名二进制，或暂时关闭强名称要求。 有关详细信息，请参阅 [Sn.exe （强名称工具）](/dotnet/framework/tools/sn-exe-strong-name-tool)。|  
 |**VSP2002**|未能在文件 \<文件名> 中找到函数 \<函数名><br /><br /> 如果无法在指定文件中找到某个函数，将出现此警告。|  
