@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 5030e70a-241d-474a-ba8c-e3b1cf947ff0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 337d5dd0e8a167bd4e49f084d819eb4c1145c6a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cbe90c182ada4d7e69313ff570b2f7d26087170c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837467"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929547"
 ---
 # <a name="ide-constants"></a>IDE 常量
 
@@ -40,7 +40,7 @@ ms.locfileid: "53837467"
 
 ## <a name="editor-factory-flags"></a>编辑器工厂标志
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |[CEF.CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|已过时的标志的第一个参数的按位组合<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>方法。|
 |[CEF.OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|第一个参数的按位组合<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>，方法中，这表示编辑器工厂应执行必需的修补程序。|
@@ -49,7 +49,7 @@ ms.locfileid: "53837467"
 
 ## <a name="visual-studio-errors"></a>Visual Studio 错误
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|返回到异步行为的接口的常量时在相关对象已经忙|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|错误的 HRESULT 的特定于 Visual Studio"不兼容的文档数据"。|
@@ -80,7 +80,7 @@ ms.locfileid: "53837467"
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  描述在 IDE 的哪个组件只是已选择，在<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>调用，例如。
 
-|返回的常量|值|
+|返回的常量|“值”|
 |--------------|-----------|
 |[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
 |[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|

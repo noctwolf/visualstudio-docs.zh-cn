@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcf6c82298d3ce322214b96ea638c2201e3da2d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6cb97e6b4c111689cb94c0df7c04c565e96a39cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53851519"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966759"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter 元素 （Visual Studio 模板）
 包含自定义参数名称和从模板创建项目或项时要使用的值。  

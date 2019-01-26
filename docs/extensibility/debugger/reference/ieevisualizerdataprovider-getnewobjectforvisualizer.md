@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 802805be506ce91f0cc3960e2c7c312143077a50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c6f32353e8f35412b68e4a81aa8d8ebe7cd4bc5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895826"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964556"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 此方法获取可视化工具的一个新的对象。 此方法将始终从现有对象创建一个新的对象。  

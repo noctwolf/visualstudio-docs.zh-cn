@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8c243490a88010031bad91d6b45fe5645d21e6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88fb10e4d5b4386791b0a4aa9b2927e97e6006c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826356"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957528"
 ---
 # <a name="custom-parameters"></a>自定义参数
 启动向导后，自定义参数控制操作的向导。 相关 *.vsz*文件提供了一系列集成的开发环境 (IDE) 通过打包并启动该向导时作为一个字符串数组传递到向导的用户定义参数。 向导然后分析的字符串数组，并使用这些信息来控制实际操作的向导。 在这种方式，向导可以自定义功能，具体取决于的内容 *.vsz*文件。  

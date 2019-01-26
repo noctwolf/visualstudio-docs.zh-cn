@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e289dd6d97b5237ad8c523a64749e55393d25fbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 36c22cbb5ca39e48e488851f26786955c9704fda
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875227"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961593"
 ---
 # <a name="web-site-support-templates"></a>网站支持模板
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 网站项目和项模板提供加速开发过程无需从头开始创建新网站项目和项的可重用和可自定义网站项目和项存根。 有关详细信息[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]模板，请参阅[创建项目和项模板](../../ide/creating-project-and-item-templates.md)。
@@ -80,7 +80,7 @@ ms.locfileid: "53875227"
 
      新的 Web 服务的 HTML 页。 语言特性指定源代码语言和代码隐藏特性指定包含与此服务关联的代码隐藏代码的依赖文件。
 
--   服务。 *扩展*
+-   服务。 *extension*
 
      实现服务类的依赖文件。 代码隐藏语言决定*扩展*此文件。
 
@@ -113,7 +113,7 @@ ms.locfileid: "53875227"
 ### <a name="new-class"></a>新的类
  此模板创建新的源文件的空类定义以响应**添加新的类**命令。
 
--   类。 *扩展*
+-   类。 *extension*
 
      实现了空的类的源文件。 代码隐藏语言决定*扩展*此文件。
 
@@ -147,7 +147,7 @@ ms.locfileid: "53875227"
 
      Web 页面的起始内容。 此 Web 页面有一个关联的代码隐藏依赖文件。
 
--   代码隐藏文件。 *扩展*
+-   代码隐藏文件。 *extension*
 
      实现 web 窗体类的依赖文件。 代码隐藏语言决定*扩展*此文件。
 

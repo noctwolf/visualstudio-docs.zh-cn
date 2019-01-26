@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9e709ceb16a95094f14df65d42e7167ef5abdba
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 195ec36affc9ede9efc61ead2cdede8233ebb65a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991238"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928901"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio 的共享的颜色
 当您正在设计使用公共 Visual Studio shell 元素的 UI 或希望界面元素将与类似功能一致时，使用包定义文件中现有的标记名称来选择和分配颜色。 这可确保 UI 与整体 Visual Studio 环境保持一致，并确保它在添加或更新主题时自动更新。  
@@ -106,7 +106,7 @@ ms.locfileid: "53991238"
 
 **复选框： 这是默认状态**  
 
-![复选框](../../extensibility/ux-guidelines/media/0303-162_checkbox.png "0303年 162_Checkbox")<br />默认复选框
+![Check box](../../extensibility/ux-guidelines/media/0303-162_checkbox.png "0303-162_Checkbox")<br />默认复选框
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
@@ -160,7 +160,7 @@ ms.locfileid: "53991238"
 | 标志符号 | `CommonControls.CheckBoxGlyphFocused` |
 
 ### <a name="drop-downs-and-combo-boxes"></a>下拉列表和组合框
-![下拉/组合框 （红线）](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303年 167_DropDownComboBoxRedline")<br />下拉/组合框 （红线）  
+![Drop-down/combo box (redline)](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />下拉/组合框 （红线）  
 
 | 使用... | 请勿使用... |
 | --- | --- |
@@ -169,7 +169,7 @@ ms.locfileid: "53991238"
 
 **下拉列表和组合框： 这是默认状态**  
 
-![默认下拉/组合框](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303年 168_DropDownComboBox")<br />默认下拉/组合框
+![Default drop-down/combo box](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303-168_DropDownComboBox")<br />默认下拉/组合框
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
@@ -182,7 +182,7 @@ ms.locfileid: "53991238"
 
 **下拉列表和组合框： 已禁用状态**  
 
-![已禁用的下拉/组合框](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303年 169_DropDownComboBoxDisabled")<br />已禁用的下拉/组合框
+![Disabled drop-down/combo box](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")<br />已禁用的下拉/组合框
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
@@ -208,7 +208,7 @@ ms.locfileid: "53991238"
 
 **下拉列表和组合框： 按下状态**  
 
-![按下的下拉/组合框](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303年 171_DropDownComboBoxPressed")<br />按下的下拉/组合框  
+![Pressed drop-down/combo box](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")<br />按下的下拉/组合框  
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
@@ -370,7 +370,7 @@ ms.locfileid: "53991238"
 ### <a name="hyperlink"></a>超链接  
 超链接是一个没有前景/背景对的控件。 在所有情况下，使用的超链接前景色，这会在黑色、 灰色，和白色背景上正确显示。 如果在未使用的颜色标记进行超链接控件，您将看到的默认系统颜色"按下"，这将以红色闪烁。 这是控件不使用正确的环境颜色标记的信号。  
 
-![超链接 （红线）](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303年 133_HyperlinkRedline")<br />超链接 （红线）
+![Hyperlink (redline)](../../extensibility/ux-guidelines/media/0303-133_hyperlinkredline.png "0303-133_HyperlinkRedline")<br />超链接 （红线）
 
 | 使用... | 请勿使用... |
 | --- | --- |
@@ -411,7 +411,7 @@ ms.locfileid: "53991238"
 ### <a name="infobars"></a>信息栏  
 信息栏用于提供有关给定上下文的详细信息，始终出现在文档窗口或工具窗口顶部。  
 
-![信息栏 （红线）](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303年 138_InfobarRedline")<br />信息栏 （红线）
+![Infobar (redline)](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303-138_InfobarRedline")<br />信息栏 （红线）
 
 | 使用... | 请勿使用... |
 | --- | --- |
@@ -1146,7 +1146,7 @@ ms.locfileid: "53991238"
 
 **菜单项： 将鼠标悬停状态**  
 
-![菜单悬停](../../extensibility/ux-guidelines/media/0303-013_menuhover.png "0303年 013_MenuHover")<br />悬停时的菜单项
+![Menu hover](../../extensibility/ux-guidelines/media/0303-013_menuhover.png "0303-013_MenuHover")<br />悬停时的菜单项
 
 ![选中的菜单悬停](../../extensibility/ux-guidelines/media/0303-014_menuhoverchecked.png "0303年 014_MenuHoverChecked")<br />检查悬停时的菜单项
 
@@ -2014,7 +2014,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 ### <a name="toolbox-like-windows"></a>类似于工具箱的 windows
 工具箱是 Visual Studio 中的使用频率最高公共工具窗口之一。 它是实质上是具有特殊主题和应用的样式的树控件。  
 
-![类似于工具箱的窗口 （红线）](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "0303年 189_ToolboxRedline")<br />类似于工具箱的窗口 （红线）
+![Toolbox-like window (redline)](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "0303-189_ToolboxRedline")<br />类似于工具箱的窗口 （红线）
 
 | 使用... | 请勿使用... |
 | --- | --- |

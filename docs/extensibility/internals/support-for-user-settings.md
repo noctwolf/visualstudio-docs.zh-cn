@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4394d101ffb158392d8c8e3ed1c9365b6c68ef7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8204f7c6716acaad0183d63b487a8191c5a1dd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930903"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964244"
 ---
 # <a name="support-for-user-settings"></a>支持用户设置
 VSPackage 可以定义一个或多个设置类别，是一组保留在用户选择时的状态变量**导入/导出设置**命令**工具**菜单。 若要启用此持久性，您使用的设置 Api 中[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  
@@ -38,15 +38,15 @@ VSPackage 可以定义一个或多个设置类别，是一组保留在用户选�
 
  注册表项的结构如下图所示：  
 
- HKLM\Software\Microsoft\VisualStudio\\*\<版本 >* \UserSettings\  
+ HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\  
 
- `<CSPName`> = '#12345' s  
+ `<CSPName`>= s '#12345'  
 
  包 = ' {XXXXXX XXXX XXXX XXXX XXXXXXXXX}  
 
- 类别 = ' {YYYYYY YYYY YYYY YYYY YYYYYYYYY}  
+ Category = '{YYYYYY YYYY YYYY YYYY YYYYYYYYY}'  
 
- ResourcePackage = ' {ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}  
+ ResourcePackage = '{ZZZZZZ ZZZZ ZZZZ ZZZZ ZZZZZZZZZ}'  
 
  AlternateParent = CategoryName  
 

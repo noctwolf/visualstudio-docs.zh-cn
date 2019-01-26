@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c85d867d042ea51023fc20259814a27b108e150
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d68ef2eb1dfd153cb4d5048901cc824c87585a35
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875162"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968643"
 ---
 # <a name="address-dpi-issues"></a>解决 DPI 问题
 越来越多的设备随"高分辨率"屏幕。 这些屏幕通常有超过 200 个像素 / 英寸 (ppi)。 使用这些计算机上的应用程序将需要纵向扩展以满足需要查看设备的正常查看距离处的内容的内容。 截至 2014 年的高密度显示的主要目标是移动计算设备 （平板电脑、 蛤便携式计算机和手机）。  
@@ -94,9 +94,9 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
 - LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (函数允许扩展在 X / Y 轴)  
   
-- int 空间 = DpiHelper.LogicalToDeviceUnitsX (10);  
+- int space = DpiHelper.LogicalToDeviceUnitsX (10);  
   
-- int 高度 = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
+- int height = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
   有 LogicalToDeviceUnits 重载以允许缩放对象，如 Rect、 点和大小。  
   

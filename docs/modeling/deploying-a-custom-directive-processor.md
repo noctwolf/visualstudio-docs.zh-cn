@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 167d008d2e773e4b3d026d3d196ce80bdbd95b13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6563691022fdd1694af69e872aa0d37803c2191c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911645"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956163"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自定义指令处理器
 
@@ -159,7 +159,7 @@ ms.locfileid: "53911645"
  这种自定义指令处理器的安装方法是最不方便的一种方法。 这种方法不能方便地启用和禁用指令处理器，也不能方便地向其他用户分发指令处理器。
 
 > [!CAUTION]
->  错误编辑注册表会严重损坏系统。 更改注册表之前，请务必备份计算机中的所有重要数据。
+>  注册表编辑不当可能会严重损坏系统。 更改注册表之前，请务必备份计算机中的所有重要数据。
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>通过设置注册表项注册指令处理器
 

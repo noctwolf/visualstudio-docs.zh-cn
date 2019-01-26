@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25c8af779c8c943e7145c44d8e64f814977f88aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df36d255f5277ff9c91901b1ebe12daaef3c7c19
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966935"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959757"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio 模板架构参考
 本部分包含有关中的 XML 元素的信息 *.vstemplate*文件，这些文件用于存储项目模板、 项模板和初学者工具包的元数据文件。
@@ -43,7 +43,7 @@ ms.locfileid: "53966935"
 |[文件夹](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> 文件夹|name|
 ||[已弃用]|--|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|
-|[隐藏](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
+|[Hidden](../extensibility/hidden-element-visual-studio-templates.md)|--|--|
 |[图标](../extensibility/icon-element-visual-studio-templates.md)|--|package<br /><br /> Id|
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|--|--|
@@ -57,7 +57,7 @@ ms.locfileid: "53966935"
 |[ProjectItem （项目模板）](../extensibility/projectitem-element-visual-studio-project-templates.md)|--|TargetFileName<br /><br /> ReplaceParameters<br /><br /> OpenInEditor<br /><br /> OpenOrder<br /><br /> OpenInWebBrowser<br /><br /> OpenInHelpBrowser|
 |[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|--|--|
 |[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|--|ProjectName|
-|[项目类型](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|
+|[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|
 |[引用](../extensibility/reference-element-visual-studio-templates.md)|Assembly|--|
