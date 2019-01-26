@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], extending a node
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e39d108d78782413cd120e2a00b97f85784004b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5eb475c5311ecbe578f169ae07e156e0aa85c068
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940422"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870826"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>如何：扩展服务器资源管理器中的 SharePoint 节点
   您可以扩展节点下的**SharePoint 连接**中的节点**服务器资源管理器**。 当你想要将新的子节点、 快捷菜单项或属性添加到现有节点时，这很有用。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。  
@@ -49,7 +49,7 @@ ms.locfileid: "53940422"
   
 6.  中的实现<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A>方法，使用成员*nodeType*参数，将功能添加到节点。 此参数是<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType>提供对中定义的事件的访问的对象<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents>接口。 例如，你可以处理以下事件：  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>：处理此事件，以便将新的子节点添加到节点。 有关更多信息，请参见[如何：将自定义 SharePoint 节点添加到服务器资源管理器](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)。  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>：处理此事件，以便将新的子节点添加到节点。 有关详细信息，请参阅[如何：将自定义 SharePoint 节点添加到服务器资源管理器](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)。  
   
     -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeMenuItemsRequested>：处理此事件，以便将自定义的快捷菜单项添加到节点。  
   

@@ -9,17 +9,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88f417ef8835e0614a2bf13b3717f19e3718feaf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 501145cf923efa979a0dd6bace3ebf4798ad1ba2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845121"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875451"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>迁移到.NET Framework 4 或更高版本的 Office 解决方案
   如果 Office 项目的目标框架更改为[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本从.NET Framework 的早期版本，执行一些其他步骤可能还需要继续开发和最终用户计算机上运行该解决方案。 有关详细信息，请参阅[所需更改即可运行迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。  

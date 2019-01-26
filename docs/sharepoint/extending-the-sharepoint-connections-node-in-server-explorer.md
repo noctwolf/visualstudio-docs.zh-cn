@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], extending a node
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36e99b5d239b48add1de5c281c35e698607500d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c10906f21a6379d0f1797fa7986e33a401de32f5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933922"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876130"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>扩展服务器资源管理器中的 SharePoint 连接节点
   在 Visual Studio 中，您可以使用连接到开发计算机上的本地 SharePoint 站点**SharePoint 连接**中的节点**服务器资源管理器**窗口。 此节点显示许多组件的本地 SharePoint 站点层次结构树视图中。 例如，您可以在本地站点上查看列表、 文档库和内容类型。 有关使用详细信息**服务器资源管理器**若要连接到本地 SharePoint 站点，请参阅[使用服务器资源管理器浏览 SharePoint 连接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)。  
@@ -27,9 +27,9 @@ ms.locfileid: "53933922"
  您可以扩展**SharePoint 连接**节点通过创建扩展的现有节点，或通过创建自定义节点类型，并将其添加到节点的层次结构。  
   
 ## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>用于扩展 SharePoint 连接节点的任务
- 若要扩展的现有节点，创建一个 Visual Studio 扩展，实现<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>接口。 扩展一个节点时，您可以将功能添加到如快捷菜单项或自定义属性节点。 有关更多信息，请参见[如何：扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。  
+ 若要扩展的现有节点，创建一个 Visual Studio 扩展，实现<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>接口。 扩展一个节点时，您可以将功能添加到如快捷菜单项或自定义属性节点。 有关详细信息，请参阅[如何：扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。  
   
- 若要创建自定义节点类型，创建一个 Visual Studio 扩展，实现<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>接口。 如果你想要显示的不会显示在 SharePoint 站点的组件创建自定义节点**服务器资源管理器**默认情况下。 例如，**服务器资源管理器**不会的显示可以添加 Web 部件库中的默认值，但您在 SharePoint 站点执行此自定义节点。 有关更多信息，请参见[如何：将自定义 SharePoint 节点添加到服务器资源管理器](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)和[演练：扩展服务器资源管理器以显示 Web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。  
+ 若要创建自定义节点类型，创建一个 Visual Studio 扩展，实现<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>接口。 如果你想要显示的不会显示在 SharePoint 站点的组件创建自定义节点**服务器资源管理器**默认情况下。 例如，**服务器资源管理器**不会的显示可以添加 Web 部件库中的默认值，但您在 SharePoint 站点执行此自定义节点。 有关详细信息，请参阅[如何：将自定义 SharePoint 节点添加到服务器资源管理器](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)和[演练：扩展服务器资源管理器以显示 Web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。  
   
 ## <a name="add-custom-properties-to-nodes"></a>将自定义属性添加到节点
  当你扩展的节点，或创建自定义节点类型时，可以将自定义属性添加到节点。 属性将显示在**属性**窗口时选择的节点。  

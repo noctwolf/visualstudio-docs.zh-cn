@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], binding data
 - data binding [Office development in Visual Studio], Word
 - data [Office development in Visual Studio], simple binding data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df572f63ec6bb8a77a854144dd2ff4a165148c41
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39fcb9444fd3d4cde218cdc92e083d28342d8342
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828415"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872269"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>演练：在 VSTO 外接程序项目中的简单数据绑定
 
@@ -59,7 +59,7 @@ ms.locfileid: "53828415"
 
 1.  使用 Visual Basic 或 C# 创建一个名为“从数据库填充文档” 的 Word VSTO 外接程序项目。
 
-     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 将打开*ThisAddIn.vb*或*ThisAddIn.cs*文件，并将**从数据库填充文档**项目到**解决方案资源管理器**.
 

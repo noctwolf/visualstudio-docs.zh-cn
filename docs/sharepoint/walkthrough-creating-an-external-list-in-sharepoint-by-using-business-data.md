@@ -14,17 +14,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 930edf4483d946c92a0c3c21242bfe0bb421a229
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918779"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874170"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>演练：使用业务数据在 SharePoint 中创建外部列表
 
@@ -76,7 +76,7 @@ ms.locfileid: "53918779"
 
 1. 在菜单栏上依次选择**工具** > **连接到数据库**。
 
-     **添加连接**对话框随即打开。
+     随即会打开“添加连接”对话框。
 
 2. 将连接添加到 SQL Server AdventureWorks 示例数据库。
 
@@ -187,7 +187,7 @@ ms.locfileid: "53918779"
     |FirstName|System.String|
     |LastName|System.String|
     |电话|System.String|
-    |电子邮件地址|System.String|
+    |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
     |PasswordHash|System.String|

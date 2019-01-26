@@ -9,22 +9,22 @@ helpviewer_keywords:
 - SharePoint project items, defining your own types
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44b791c5855838cc8108902305d016fe7f9900ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca3bfbf6ecd773f0a7c3147a44eb02a5c260764b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950480"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872789"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>如何：将属性添加到自定义的 SharePoint 项目项类型
   在定义的自定义 SharePoint 项目项类型时，您可以向项目项添加属性。 属性将出现在**属性**窗口中选择项目项时**解决方案资源管理器**。  
   
- 以下步骤假定你已定义 SharePoint 项目项类型。 有关更多信息，请参见[如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
+ 以下步骤假定你已定义 SharePoint 项目项类型。 有关详细信息，请参阅[如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。  
   
 ### <a name="to-add-a-property-to-a-definition-of-a-project-item-type"></a>若要将属性添加到项目项类型定义  
   

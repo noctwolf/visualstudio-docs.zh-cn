@@ -11,15 +11,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], control layout
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee790707a5c1c74f3227f74874c66bb4438e7ab0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 87ec74628bad3d4c0e2031b8399e279bc9b5229d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991170"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873114"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>如何：管理操作窗格上的控件布局
   操作窗格停靠到的文档或工作表右侧默认设置。但是，它可停靠到左侧、 顶部或底部。 如果使用多个用户控件，可以编写代码以正确堆栈操作窗格上的用户控件。 有关详细信息，请参阅[操作窗格概述](../vsto/actions-pane-overview.md)。  
@@ -29,14 +29,14 @@ ms.locfileid: "53991170"
  控件的堆叠顺序取决于操作窗格是否停靠垂直或水平。  
   
 > [!NOTE]  
->  如果在用户调整在运行时操作窗格，可以设置要与操作窗格重设大小的控件。 你可以使用 Windows 窗体控件的 <xref:System.Windows.Forms.Control.Anchor%2A> 属性将控件定位到操作窗格。 有关更多信息，请参见[如何：Windows 窗体上的控件的定位点](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)。  
+>  如果在用户调整在运行时操作窗格，可以设置要与操作窗格重设大小的控件。 你可以使用 Windows 窗体控件的 <xref:System.Windows.Forms.Control.Anchor%2A> 属性将控件定位到操作窗格。 有关详细信息，请参阅[如何：Windows 窗体上的控件的定位点](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)。  
   
 > [!NOTE]  
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>若要设置操作窗格控件的堆叠顺序  
   
-1.  打开包含操作窗格具有多个用户控件或嵌套的操作窗格控件的 Microsoft Office Word 文档级项目。 有关更多信息，请参见[如何：将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。  
+1.  打开包含操作窗格具有多个用户控件或嵌套的操作窗格控件的 Microsoft Office Word 文档级项目。 有关详细信息，请参阅[如何：将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。  
   
 2.  右键单击**ThisDocument.cs**或**ThisDocument.vb**中**解决方案资源管理器**，然后单击**查看代码**。  
   

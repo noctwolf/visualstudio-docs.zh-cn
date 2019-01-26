@@ -14,17 +14,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, list instances
 - SharePoint development in Visual Studio, fields
 - SharePoint development in Visual Studio, content types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9bd2673ec63c9476217e13fad40f2316fcdf1886
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9742f314ff3f2e6b980eaa2fd914def3b05e0a51
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852526"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874583"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>演练：创建 SharePoint 网站栏、 内容类型和列表
   以下过程演示如何创建自定义 SharePoint 站点列，或*字段*— 以及使用的站点列的内容类型。 它还演示如何创建使用新的内容类型的列表。  

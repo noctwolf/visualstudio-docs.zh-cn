@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfd1d1e434826a652525fb7e7151ecf0e8e13b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b2affcb8339027f146a629b47db57154b173591
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912985"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871385"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>演练：创建和调试 SharePoint 工作流解决方案
   本演练演示如何创建一个基本顺序工作流模板。 工作流检查以确定文档是否已评审的共享的文档库的属性。 如果已查看过该文档，则工作流完成。  
@@ -164,7 +164,7 @@ ms.locfileid: "53912985"
   
     |属性|“值”|  
     |--------------|-----------|  
-    |**correlationToken**|**workflowToken**|  
+    |**CorrelationToken**|**workflowToken**|  
     |**调用**|**onWorkflowItemChanged**|  
   
 ## <a name="handle-activity-events"></a>处理活动事件

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], updating using controls
 - controls [Office development in Visual Studio], updating documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a16a9bffef76d904349f36e7cd2705ef89b13832
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 512edf8c6f694c0c8dc22c3b614f4f9b47145db8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943231"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871411"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>演练：更新的图表中使用单选按钮的文档
   此演练演示如何使用 Microsoft Office Word 文档级自定义中的单选按钮，为用户提供在文档中选择图表样式的选项。  
@@ -49,7 +49,7 @@ ms.locfileid: "53943231"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  使用名称创建一个 Word 文档项目**我的图表选项**。 在向导中，选择**创建一个新文档**。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  使用名称创建一个 Word 文档项目**我的图表选项**。 在向导中，选择**创建一个新文档**。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新的 Word 文档并将添加**我的图表选项**投影到**解决方案资源管理器**。  
   
@@ -97,7 +97,7 @@ ms.locfileid: "53943231"
   
 3.  添加另一个**单选按钮**向用户控件，并更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**barChart**|  
     |**文本**|**条形图**|  
@@ -111,7 +111,7 @@ ms.locfileid: "53943231"
   
 5.  添加第四个**单选按钮**向用户控件，并更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**名称**|**areaBlockChart**|  
     |**文本**|**面积图**|  

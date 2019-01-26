@@ -11,15 +11,15 @@ helpviewer_keywords:
 - columns [Office development in Visual Studio], adding to Word tables
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 539cb8311e59d43325091fd4ff0cd54e5838e854
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 122a30b25099d924702012bf1e2d7b8adcbafdca
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909081"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875415"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>如何：以编程方式向 Word 表中添加行和列
   在 Microsoft Office Word 表中，单元格组织为行和列。 你可以使用 <xref:Microsoft.Office.Interop.Word.Rows> 对象的 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法将行添加到表，并可以使用 <xref:Microsoft.Office.Interop.Word.Columns> 对象的 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法添加列。  
@@ -37,7 +37,7 @@ ms.locfileid: "53909081"
 > - Word 2010 文档  
 > - Word 2010 模板  
 > 
->   如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Word**程序集，然后必须使用该程序集的类以向表添加行和列。 有关更多信息，请参见[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Word 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189588)。  
+>   如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Word**程序集，然后必须使用该程序集的类以向表添加行和列。 有关详细信息，请参阅[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Word 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189588)。  
   
 ### <a name="to-add-a-row-to-a-table"></a>向表中添加行  
   
@@ -59,7 +59,7 @@ ms.locfileid: "53909081"
 > [!IMPORTANT]  
 >  此代码仅在你使用 Word VSTO 外接程序模板创建的项目中运行。  
 >   
->  如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Word**程序集，然后必须使用该程序集的类以向表添加行和列。 有关更多信息，请参见[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Word 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189588)。  
+>  如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Word**程序集，然后必须使用该程序集的类以向表添加行和列。 有关详细信息，请参阅[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Word 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189588)。  
   
 ### <a name="to-add-a-row-to-a-table"></a>向表中添加行  
   

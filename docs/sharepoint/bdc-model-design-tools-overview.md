@@ -18,17 +18,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], method details
 - BDC [SharePoint development in Visual Studio], BDC Explorer
 - BDC [SharePoint development in Visual Studio], designer
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b2a094d33088adb9aa3fc2c0fba953030c781b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 533a49db6e528ba75da9cbe232e7875413ed0724
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923330"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871478"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型设计工具概述
   可以通过使用 BDC 设计器中，设计业务数据连接 (BDC) 模型**BDC 方法详细信息**窗口中，并**BDC 资源管理器**。  
@@ -71,7 +71,7 @@ ms.locfileid: "53923330"
 > [!NOTE]  
 >  对原始的类型描述符的更改不会影响该类型描述符的副本。  
   
- 有关更多信息，请参见[如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
+ 有关详细信息，请参阅[如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
 ## <a name="see-also"></a>请参阅
  [如何：创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)   

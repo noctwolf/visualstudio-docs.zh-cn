@@ -13,17 +13,17 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], Publish Wizard
 - Office applications [Office development in Visual Studio], Publish Wizard
 - Publish Wizard, Office solutions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1a76a333b8a692a8d7dc0a2c0f093e2eaf586c33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0ba0e629ba04ec3df6b3be950f59fb34da46364
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965916"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871931"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>发布向导 （在 Visual Studio 中的 Office 开发）
   使用**发布向导**若要将解决方案文件复制到指定位置，创建清单文件，并创建安装程序。  

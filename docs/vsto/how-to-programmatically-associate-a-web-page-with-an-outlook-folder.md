@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Web pages [Office development in Visual Studio], Outlook folders
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6dc6bec7ecbf872d10045cb24e007edec893585
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: c60ac58c59adaacd66a7c56b4c394d596cfd6b24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089630"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871268"
 ---
 # <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>如何：以编程方式将网页与 Outlook 文件夹相关联
   此示例检查名为`HtmlView`Microsoft Office Outlook 中。 如果文件夹不存在，代码会创建该文件夹，并为其分配到 Web 页。 如果该文件夹存在，代码将显示该文件夹的内容。  

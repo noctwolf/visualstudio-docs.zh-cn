@@ -18,17 +18,17 @@ helpviewer_keywords:
 - customizing the Ribbon, defining behavior
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aec5c0d2fbbf46978a42cfe2808e708eb4a2b35e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d668e53738e1a77cfed4b84c7a292cdc503af6c3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929570"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869432"
 ---
 # <a name="ribbon-xml"></a>功能区 XML
   功能区 (XML) 项，您可以使用 XML 自定义功能区。 如果你想要自定义功能区 （可视化设计器） 项不支持一种方法在功能区，请使用功能区 (XML) 项。 可以对每个项执行的操作的比较，请参阅[功能区概述](../vsto/Ribbon-overview.md)。  
@@ -117,7 +117,7 @@ ms.locfileid: "53929570"
 |-------------|-----------------|  
 |**customUI**|表示 VSTO 外接程序项目的自定义功能区。|  
 |**ribbon**|表示功能区。|  
-|**选项卡**|表示一组功能区选项卡。|  
+|**tabs**|表示一组功能区选项卡。|  
 |**选项卡**|表示单个功能区选项卡。|  
 |**group**|表示功能区选项卡上的一组控件。|  
   
@@ -128,7 +128,7 @@ ms.locfileid: "53929570"
 |**onLoad**|**customUI**|标识应用程序加载功能区时调用的方法。|  
 |**idMso**|**选项卡**|标识要显示在功能区中的内置选项卡。|  
 |**id**|**group**|标识组。|  
-|**标签**|**group**|指定在组上显示的文本。|  
+|**label**|**group**|指定在组上显示的文本。|  
   
  功能区 XML 文件中的默认元素和特性是可用元素和特性一小部分。 有关可用元素和属性的完整列表，请参阅技术文章[为开发人员 (第 2 部分，共 3 部分) 自定义 Office (2007) 功能区用户界面](/previous-versions/office/developer/office-2007/aa338199(v=office.12))。  
   

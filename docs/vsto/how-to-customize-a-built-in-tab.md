@@ -10,15 +10,15 @@ helpviewer_keywords:
 - built-in tabs [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9f2506ae22b3d33870c4e636a27f100b70358c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 939c9c6d2d50e9feb6a50d9b49b84620d96a03cc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859407"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872217"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>如何：自定义内置选项卡
   可以将组和控件添加到内置选项卡。内置选项卡是已在 Microsoft Office 应用程序功能区的选项卡。 例如，**数据**选项卡是在 Excel 中的内置选项卡。 创建自定义组时，它显示在选项卡末尾，但可以在选项卡上任意移动你的组。  
@@ -33,7 +33,7 @@ ms.locfileid: "53859407"
 1.  右键单击功能区代码文件中的**解决方案资源管理器**，然后单击**视图设计器**。  
   
     > [!NOTE]  
-    >  如果功能区代码文件未出现在**解决方案资源管理器**，则必须添加**功能区项**到你的项目。 请参阅[操作说明：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
+    >  如果功能区代码文件未出现在**解决方案资源管理器**，则必须添加**功能区项**到你的项目。 请参阅[如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
   
 2.  右键单击功能区设计器中，在任何选项卡，然后单击**属性**。  
   

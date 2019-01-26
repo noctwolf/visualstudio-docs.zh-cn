@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, additional resources
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 699ae68db1c9f28cd5cd164cc027ac5b6bd65fe8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6626f9dbc6f0b17ba3e02a66d2f104873089a616
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883264"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873387"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>开发 Office 解决方案的其他资源
   Visual Studio 中的 Microsoft Office 开发人员工具仅代表用于扩展 Office 应用程序的许多方法中的一种。 Office 应用程序还具有一些内置功能，如 Open XML 格式，这是 Visual Studio 中的 Office 开发人员工具所不提供的或本文档中未介绍的功能。  

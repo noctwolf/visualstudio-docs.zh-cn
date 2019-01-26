@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint project service
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dfd18de91848c8aabbdabc91fd37763418bb938a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26f6b2c86b58e2faf2c4a0f37277c271d77e7f02
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891597"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868989"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何：检索 SharePoint 项目服务
   您可以访问以下类型的解决方案中的 SharePoint 项目服务：  
@@ -93,7 +93,7 @@ ms.locfileid: "53891597"
   
  在 VSPackage 中，可以请求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>对象通过使用以下方法之一：  
   
-- <xref:System.IServiceProvider.GetService%2A>方法的派生的托管 VSPackage<xref:Microsoft.VisualStudio.Shell.Package>类。 有关更多信息，请参见[如何：获取服务](../extensibility/how-to-get-a-service.md)。  
+- <xref:System.IServiceProvider.GetService%2A>方法的派生的托管 VSPackage<xref:Microsoft.VisualStudio.Shell.Package>类。 有关详细信息，请参阅[如何：获取服务](../extensibility/how-to-get-a-service.md)。  
   
 - 静态<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。 有关详细信息，请参阅[使用 GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice)。  
   

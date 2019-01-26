@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designer
 - Web Parts [SharePoint development in Visual Studio], adding
 - Web Parts [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55104f4e1728208c93dc80080a42059963e3c7a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a109ee84cc79596323dcdceff2ad86c4de15b0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858443"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870699"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>如何：使用设计器创建 SharePoint Web 部件
   可以通过添加创建的 web 部件**可视 Web 部件**向任何 SharePoint 项目项。 这可以向 web 部件添加控件和代码的 Visual Studio 中打开的 Visual Web Developer 设计器。 可视 web 部件功能上相同 web 部件一样。 唯一的区别是您设计 Visual Web Developer 设计器中的可视 web 部件。  

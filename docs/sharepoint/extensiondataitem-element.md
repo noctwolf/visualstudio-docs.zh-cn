@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ExtensionDataItem element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d95459be48b6d5e87b1a312e68e6ebea2645cb29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f5a547194de87a7fe151c3530720a078ca01438
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916934"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873075"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 元素
   自定义数据项中键/值格式的 SharePoint 项目项与相关联。 键和值必须为字符串。  
@@ -55,7 +55,7 @@ ms.locfileid: "53916934"
   
 |||  
 |-|-|  
-|**命名空间**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel| 
+|**命名空间**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel| 
 |**架构名称**|SharePoint 项目项架构|  
 |**验证文件**|ProjectItemModelSchema.xsd|  
 |**可以为空**|否|  

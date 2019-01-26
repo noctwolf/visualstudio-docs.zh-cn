@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, project and project item templates
 - SharePoint development in Visual Studio, templates
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71590e2cd5ece2a025b2aef3dfa0baf612fb2808
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f2479d58dfb8e1e28a2de230c0838ef8c8f3768
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936290"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872191"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 项目和项目项模板
   以下各节描述了可用的 SharePoint 项目和项目项模板以及如何使用它们。 
@@ -57,7 +57,7 @@ ms.locfileid: "53936290"
  *SharePoint 2010 Silverlight Web 部件*项目使你创建的 web 部件的 SharePoint 显示 Silverlight 应用程序。 创建此项目时，可以指定是否要添加到该新的 Silverlight 应用程序或引用一个现有。 有关详细信息，请参阅[为 SharePoint 创建 web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)和[演练：创建显示 SharePoint OData 的 Silverlight web 部件](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)。  
   
 ### <a name="sharepoint-2010-visual-web-part"></a>SharePoint 2010 可视 web 部件
- 一个*SharePoint 2010 可视 Web 部件*项目包括*Elements.xml*定义文件**Web 部件**项，和一个**用户控件**项. 您可以通过拖动或从 Visual Studio 工具箱将控件复制到用户控件的图面设计 visual web 部件的外观。 有关更多信息，请参见[如何：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)和[构建基块：Web 部件](http://go.microsoft.com/fwlink/?LinkId=179438)。  
+ 一个*SharePoint 2010 可视 Web 部件*项目包括*Elements.xml*定义文件**Web 部件**项，和一个**用户控件**项. 您可以通过拖动或从 Visual Studio 工具箱将控件复制到用户控件的图面设计 visual web 部件的外观。 有关详细信息，请参阅[如何：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)和[构建基块：Web 部件](http://go.microsoft.com/fwlink/?LinkId=179438)。  
   
 ### <a name="import-sharepoint-2010-solution-package"></a>导入 SharePoint 2010 解决方案包
  *导入 SharePoint 2010 解决方案包*项目，可以导入现有的 SharePoint 2010 站点，导出到 SharePoint 解决方案的全部或部分 (*.wsp*) 文件，在 Visual Studio。 一旦导入到 Visual Studio，你可以自定义其项并重新部署它们。 有关详细信息，请参阅[从现有的 SharePoint 网站导入项目](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)。  
@@ -71,10 +71,10 @@ ms.locfileid: "53936290"
  若要查看中的 SharePoint 项目项模板**解决方案资源管理器**，打开 SharePoint 项目的快捷菜单，然后选择**添加**，**新项**。 展开**SharePoint**节点下的**Visual C#** 或**Visual Basic**，然后选择**2010年**。  
   
 ### <a name="application-page-farm-solution-only"></a>应用程序页上 （仅场解决方案）
- **（仅场解决方案） 的应用程序页上**项，您可以设计[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]的 SharePoint 网站的 web 页。 可以仅在场解决方案中使用的应用程序页。 此项目项仅向场解决方案。 有关更多信息，请参见[如何：创建应用程序页](../sharepoint/how-to-create-an-application-page.md)并[应用程序 _layouts 的页类型](http://go.microsoft.com/fwlink/?LinkId=179434)。  
+ **（仅场解决方案） 的应用程序页上**项，您可以设计[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]的 SharePoint 网站的 web 页。 可以仅在场解决方案中使用的应用程序页。 此项目项仅向场解决方案。 有关详细信息，请参阅[如何：创建应用程序页](../sharepoint/how-to-create-an-application-page.md)并[应用程序 _layouts 的页类型](http://go.microsoft.com/fwlink/?LinkId=179434)。  
   
 ### <a name="business-data-connectivity-model-farm-solution-only"></a>业务数据连接模型 （仅场解决方案）
- 一个**业务数据连接模型 （仅场解决方案）** 项使你可以集成业务数据在 SharePoint 中。 业务数据可以来源于后端服务器应用程序，如[!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)]，Siebel 和服务广告协议 (SAP)。 可以仅在场解决方案中使用业务数据连接模型。 此项目项仅向场解决方案。 有关更多信息，请参见[如何：创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)，[如何：使用资源文件指定本地化的名称、 属性和权限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)，和[新增功能：Business Connectivity Services](http://go.microsoft.com/fwlink/?LinkId=179411)。  
+ 一个**业务数据连接模型 （仅场解决方案）** 项使你可以集成业务数据在 SharePoint 中。 业务数据可以来源于后端服务器应用程序，如[!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)]，Siebel 和服务广告协议 (SAP)。 可以仅在场解决方案中使用业务数据连接模型。 此项目项仅向场解决方案。 有关详细信息，请参阅[如何：创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)，[如何：使用资源文件指定本地化的名称、 属性和权限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)，和[新增功能：Business Connectivity Services](http://go.microsoft.com/fwlink/?LinkId=179411)。  
   
 ### <a name="content-type"></a>内容类型
  *内容类型*项可用于创建基于现有的 （基本） 内容类型，如文档、 公告或任务的自定义内容类型。 自定义内容类型作为基内容类型以及你定义的任何站点列 （字段） 提供相同的属性和字段。 例如，可以创建基于在 SharePoint 中涉及的基本联系人内容类型的自定义联系人内容类型。 您可以通过更改现有的站点列，或将更多的站点列添加到已包含基内容类型中的自定义内容类型。  
@@ -100,7 +100,7 @@ ms.locfileid: "53936290"
   
 - 列表工作流事件  
   
-  事件接收方项目项创建**事件接收器**文件夹中包含的所有事件的事件处理程序创建的项目中时指定一个类文件**SharePoint 自定义项向导**。 事件接收器类可以处理添加、 更新、 删除，或移除项，如文件、 字段、 项、 列表、 附件、 web 部件和工作流时，SharePoint 站点发生的事件。 有关更多信息，请参见[如何：创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)和[构建基块：事件处理](http://go.microsoft.com/fwlink/?LinkId=179416)。  
+  事件接收方项目项创建**事件接收器**文件夹中包含的所有事件的事件处理程序创建的项目中时指定一个类文件**SharePoint 自定义项向导**。 事件接收器类可以处理添加、 更新、 删除，或移除项，如文件、 字段、 项、 列表、 附件、 web 部件和工作流时，SharePoint 站点发生的事件。 有关详细信息，请参阅[如何：创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)和[构建基块：事件处理](http://go.microsoft.com/fwlink/?LinkId=179416)。  
   
 ### <a name="list"></a>列表  
  列表是可重用基 SharePoint 列表定义，如日历或任务列表的实例。 将列表添加到你的解决方案之后, 列表设计器，可将站点列添加到列表并创建自定义列表的列。 这包括从内容类型的站点列。 您可以指定*视图*有关列表，用于确定将显示在列表中的列。 有关详细信息，请参见[演练：创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)和[构建基块：列表和文档库](http://go.microsoft.com/fwlink/?LinkId=179421)。  
@@ -135,10 +135,10 @@ ms.locfileid: "53936290"
  一个*用户控件*是可以向其中添加其他 ASP.NET 控件和 SharePoint 控件的自定义的可重用控件。 用户控件可以添加到应用程序页和 web 部件在 SharePoint 中运行。 此项目项可仅在场解决方案。 此项目项仅向场解决方案。 有关详细信息，请参阅[为 Web 部件或应用程序页创建可重用控件](http://go.microsoft.com/fwlink/?LinkId=226841)。  
   
 ### <a name="visual-web-part"></a>可视 web 部件
- 一个*可视 web 部件*项目项包括*Elements.xml*定义文件**Web 部件**项，和一个**用户控件**项。 您可以通过拖动或从 Visual Studio 工具箱将控件复制到用户控件的图面设计 visual web 部件的外观。 有关更多信息，请参见[如何：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)和[构建基块：Web 部件](http://go.microsoft.com/fwlink/?LinkId=179438)。  
+ 一个*可视 web 部件*项目项包括*Elements.xml*定义文件**Web 部件**项，和一个**用户控件**项。 您可以通过拖动或从 Visual Studio 工具箱将控件复制到用户控件的图面设计 visual web 部件的外观。 有关详细信息，请参阅[如何：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)和[构建基块：Web 部件](http://go.microsoft.com/fwlink/?LinkId=179438)。  
   
 ### <a name="web-part"></a>Web 部件
- 一个*web 部件*是特殊类型的名为 Web 部件页的页内运行的服务器端控件。 它们是 SharePoint 站点上显示的页的构建基块。 Web 部件项提供使你可以设计 web 部件的 SharePoint 站点的文件。 有关更多信息，请参见[如何：创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)和[构建基块：Web 部件](http://go.microsoft.com/fwlink/?LinkId=179438)。  
+ 一个*web 部件*是特殊类型的名为 Web 部件页的页内运行的服务器端控件。 它们是 SharePoint 站点上显示的页的构建基块。 Web 部件项提供使你可以设计 web 部件的 SharePoint 站点的文件。 有关详细信息，请参阅[如何：创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)和[构建基块：Web 部件](http://go.microsoft.com/fwlink/?LinkId=179438)。  
   
 ## <a name="see-also"></a>请参阅
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], extending
 - SharePoint project items, extending
 - SharePoint development in Visual Studio, extending project items
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a32182b4df4851bb7befb1a95af70d2e4da6666c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da564057cc0a761bb05806b26758a37ed854f585
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868662"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873296"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>演练：扩展 SharePoint 项目项类型
   可以使用**业务数据连接模型**项目项以在 SharePoint 中创建业务数据连接 (BDC) 服务的模型。 默认情况下，通过使用此项目项，创建模型时模型中的数据是不向用户显示。 此外必须在 SharePoint 以使用户能够查看的数据创建外部列表。  

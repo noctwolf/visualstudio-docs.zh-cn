@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7e09124e3204240f188c65e10865bbf221e15358
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1f452b79432d8a7a5833b46bf427490ce205ef5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958886"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872594"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>演练：创建基本站点定义项目
   本演练演示如何创建包含与上它的某些控件的可视 Web 部件的基本网站定义。 为清楚起见，您创建的可视化 Web 部件有仅几个控件。 但是，可以创建包含更多的功能的更复杂的 SharePoint 网站定义。  
@@ -49,7 +49,7 @@ ms.locfileid: "53958886"
   
 1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。 如果您的 IDE 设置为使用 Visual Basic 开发设置，请在菜单栏上，选择**文件** > **新项目**。  
   
-    此时将出现 “新建项目” 对话框。  
+    此时将出现“新建项目”对话框。  
   
 2. 展开**Visual C#** 节点或**Visual Basic**节点，展开**SharePoint**节点，然后选择**2010年**节点。  
   

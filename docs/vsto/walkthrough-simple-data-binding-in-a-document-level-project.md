@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Database field [Office development in Visual Studio]
 - data [Office development in Visual Studio], binding data
 - simple data binding [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9967d830d72355f23173a7dfc6f1a95be073959
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ae634a87e8b105df88fed4168b6a70909efbc7f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895482"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868988"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>演练：在文档级项目中的简单数据绑定
   本演练演示在文档级项目中的数据绑定的基础知识。 SQL Server 数据库中的单个数据字段绑定到在 Microsoft Office Excel 中的命名区域。 本演练还演示如何添加控件，您可以滚动浏览表中的所有记录。  
@@ -54,7 +54,7 @@ ms.locfileid: "53895482"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1. 使用名称创建的 Excel 工作簿项目**我的简单数据绑定**，使用 Visual Basic 或 C#。 请确保**创建一个新文档**处于选中状态。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1. 使用名称创建的 Excel 工作簿项目**我的简单数据绑定**，使用 Visual Basic 或 C#。 请确保**创建一个新文档**处于选中状态。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
    Visual Studio 设计器中打开新 Excel 工作簿并将添加**我的简单数据绑定**投影到**解决方案资源管理器**。  
   
@@ -185,11 +185,11 @@ ms.locfileid: "53895482"
 ## <a name="next-steps"></a>后续步骤  
  本演练演示绑定到数据库中的字段的命名的范围的基础知识。 以下是接下来可能要执行的一些任务：  
   
--   缓存数据，以便可以脱机使用。 有关更多信息，请参见[如何：脱机时或者在服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
+-   缓存数据，以便可以脱机使用。 有关详细信息，请参阅[如何：脱机时或者在服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
   
 -   将单元格到多个列在表中，而不是绑定到的一个字段。 有关详细信息，请参见[演练：在文档级项目中的复杂数据绑定](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)。  
   
--   使用<xref:System.Windows.Forms.BindingNavigator>控件滚动显示记录。 有关更多信息，请参见[如何：使用 Windows 窗体 BindingNavigator 控件导航数据](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。  
+-   使用<xref:System.Windows.Forms.BindingNavigator>控件滚动显示记录。 有关详细信息，请参阅[如何：使用 Windows 窗体 BindingNavigator 控件导航数据](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。  
   
 ## <a name="see-also"></a>请参阅  
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   

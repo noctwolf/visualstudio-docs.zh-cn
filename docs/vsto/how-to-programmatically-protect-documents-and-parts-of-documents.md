@@ -9,17 +9,17 @@ helpviewer_keywords:
 - document protection
 - documents [Office development in Visual Studio], document protection
 - Word documents, protection
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 030cc69a2a89f81f728afc4e6367ddd6c2d81990
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d72f7c0136921592c8327dc0c101acd63388631
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991105"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872568"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>如何：以编程方式保护文档和文档的某些部分
   你可以为 Microsoft Office Word 文档添加保护，以防止用户对文档进行任何编辑操作。  
@@ -31,7 +31,7 @@ ms.locfileid: "53991105"
 > [!NOTE]  
 >  下面的示例未使用密码保护；但是，在添加文档保护时，你可能想考虑使用密码。 有关详细信息，请参阅文档保护器示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
   
- 你也可以使用内容控件来保护文档的各个部分。 有关更多信息，请参见[如何：使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
+ 你也可以使用内容控件来保护文档的各个部分。 有关详细信息，请参阅[如何：使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
   
 ## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>保护属于文档级自定义文档  
   

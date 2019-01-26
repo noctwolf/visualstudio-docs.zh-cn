@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <friendlyName> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30355920b2ee41ca3b31216101cb2dc46e608b77
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d038e825173f95ddfe4106022c7c9924090b3a5f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930552"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873101"
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName&gt;元素 （Visual Studio 中的 Office 开发）
   `friendlyName` 命名空间的 `vstov4` 元素存储已安装程序列表中出现的名称。

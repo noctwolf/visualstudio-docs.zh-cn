@@ -8,23 +8,23 @@ dev_langs:
 helpviewer_keywords:
 - user controls [SharePoint development in Visual Studio], creating
 - SharePoint development in Visual Studio, user controls
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7d042c42bae59c6dbf92f0e381444cc011b40db0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b1605705b161dfdb8b5857dcab6075d9a997a55
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842812"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874560"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>创建 web 部件或应用程序页的可重用的控件
   在 Visual Studio 中，你可以创建可由 SharePoint 中运行的应用程序页和 Web 部件使用的自定义可重用控件。 这些控件称为用户控件。 用户控件是一种工作方式非常类似于 ASP.NET 网页的复合控件，可以将现有的 Web 服务器控件和标记添加到用户控件，并定义用于控制属性和方法。 您然后可以将它们嵌入在 ASP.NET Web 页面，其中作为一个单元中。  
   
 ## <a name="create-a-user-control"></a>创建用户控件
- 若要创建的用户控件，添加**用户控件**到**空 SharePoint 项目**。 有关更多信息，请参见[如何：创建 SharePoint 应用程序页或 web 部件的用户控件](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)。  
+ 若要创建的用户控件，添加**用户控件**到**空 SharePoint 项目**。 有关详细信息，请参阅[如何：创建 SharePoint 应用程序页或 web 部件的用户控件](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)。  
   
  当您将添加**用户控件**项，Visual Studio 在项目中，创建一个文件夹，然后将多个文件添加到的文件夹。 下表介绍每个文件。  
   

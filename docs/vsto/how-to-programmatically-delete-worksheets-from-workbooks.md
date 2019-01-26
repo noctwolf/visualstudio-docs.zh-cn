@@ -10,15 +10,15 @@ helpviewer_keywords:
 - worksheets, deleting
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b857a84560fe5f8745458154c85494791b579db
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 14fde2a6c0bc1303a69b2bed47af89f2696487e8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154239"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870173"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>如何：以编程方式从工作簿中删除工作表
   可以删除工作簿中的任意工作表。 若要删除工作表，请使用该工作表主机项或通过使用工作簿的表集合访问该工作表。  
@@ -36,7 +36,7 @@ ms.locfileid: "54154239"
 > - Excel 2010 工作簿  
 > - Excel 2010 模板  
 > 
->   如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Excel**程序集，然后必须使用该程序集的类来打开工作簿或删除工作表。 有关更多信息，请参见[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Excel 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189585)。  
+>   如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Excel**程序集，然后必须使用该程序集的类来打开工作簿或删除工作表。 有关详细信息，请参阅[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Excel 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189585)。  
   
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>使用工作表主机项删除工作表  
   
@@ -55,7 +55,7 @@ ms.locfileid: "54154239"
   下面的代码引用的索引号的表，从而删除该工作表从工作簿**表**集合。 此代码假定以编程方式创建了一个新工作表。  
   
 > [!IMPORTANT]  
->  如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Excel**程序集，然后必须使用该程序集的类来打开工作簿或删除工作表。 有关更多信息，请参见[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Excel 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189585)。  
+>  如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Excel**程序集，然后必须使用该程序集的类来打开工作簿或删除工作表。 有关详细信息，请参阅[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Excel 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189585)。  
   
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 工作簿的表集合删除工作表  
   

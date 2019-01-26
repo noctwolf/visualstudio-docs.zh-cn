@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 - Developer tab [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8346a1f23cc9aa02291aa994a0cea51b7810345
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30ff440914448a08ae7d2d50319fbc91e9a43ee2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906795"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869731"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>如何：功能区上显示开发人员选项卡
   访问**开发人员**选项卡上的 Office 应用程序功能区中，您必须将其配置为显示该选项卡，因为它不会显示默认情况下。 例如，如果要向 Word 的文档级自定义项添加一个 <xref:Microsoft.Office.Tools.Word.GroupContentControl>，则必须显示该选项卡。  
