@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c49ce750b48372e9233a788b4f98b6ece5e2a1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d6810212b10052077ab5adeddbca69dbd5fb339
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927644"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976269"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多个项目连接设置的应用程序
 源代码管理插件使用源控制插件 API 版本 1.2，生成可用于批处理操作执行相同的源代码管理操作跨多个项目或多个连接上下文。 若要消除冗余，每个项目对话框从用户体验，可以使用批处理。  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fc2b74b32c0fb90a578644df0065e24eb8e373f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5124088599eced9d5ae6bc17365d06dc36f81987
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830899"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027888"
 ---
 # <a name="sccadd-function"></a>SccAdd 函数
 此函数将新文件添加到源代码管理系统。  
@@ -82,7 +82,7 @@ SCCRTN SccAdd(
   
  下面是列表中使用标志`pfOptions`数组：  
   
-|选项|“值”|含义|  
+|选项|值|含义|  
 |------------|-----------|-------------|  
 |SCC_FILETYPE_AUTO|0x00|源代码管理插件应检测到的文件类型。|  
 |SCC_FILETYPE_TEXT|0x01|指示一个 ASCII 文本文件。|  

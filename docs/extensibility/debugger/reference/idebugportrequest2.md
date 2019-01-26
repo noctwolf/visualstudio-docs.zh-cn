@@ -1,5 +1,5 @@
 ---
-title: IDebugPortRequest2 |Microsoft Docs
+title: IDebugPortRequest2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a05f84d685ac33203461dfc1b0f515cb45f67c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 218aef6d65578d67fdc14f61aa090c81476c25af
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876924"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975734"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 此接口描述一个端口。 此描述用于将端口添加到端口提供程序。  
@@ -53,5 +53,5 @@ IDebugPortRequest2 : IUnknown
   
 ## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
- [端口](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)   
+ [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)   
  [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)

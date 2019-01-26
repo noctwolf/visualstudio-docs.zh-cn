@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 599ad877-3a15-426c-bf17-5de15427365f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 40a4326924d83d4604f512f41f85e7adb8d21bb6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154145"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54975044"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235:标记所有不可序列化的字段
 
@@ -39,7 +39,7 @@ ms.locfileid: "54154145"
 
 ## <a name="rule-description"></a>规则说明
  可序列化类型是指将标有<xref:System.SerializableAttribute?displayProperty=fullName>属性。 当序列化类型时，<xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName>如果该类型包含不可序列化的类型的实例字段会引发异常。
- 
+
  一种例外是当类型使用自定义序列化通过<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>接口。 实现此接口的类型提供其自己的序列化逻辑，并且因此 CA2235 不会触发这种类型的非可序列化的实例字段。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突

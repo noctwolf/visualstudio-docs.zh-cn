@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bca879905e524e80205878034773349ddff06460
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d92a8ae5d0581ae5b36276fcf857371d0ae2f8b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907159"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993439"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文本和 Visual Studio 的帮助
 ##  <a name="BKMK_UITextAndTerminology"></a> UI 文本和术语  
@@ -68,7 +68,7 @@ ms.locfileid: "53907159"
   
  **在 Visual Studio 中的补充文本**  
   
-#### <a name="infotips"></a>信息提示  
+#### <a name="infotips"></a>InfoTips  
  通常情况下，说明文本可能太长，在 UI 中定位的就地或可能仅向新用户，还觉得自己象混乱有经验的用户很有用。 在这种情况下，应为工具提示信息提示下放置的教学/信息性文本。  
   
  信息提示应放置的控件，它们与相关，并且应使用尚不显眼的特定信息提示图标附近明显。  
@@ -281,7 +281,7 @@ ms.locfileid: "53907159"
 #### <a name="instructional-and-supplemental-text-in-dialogs"></a>在对话框中的说明和补充文本  
  在支持复杂的任务的对话框，可能需要在顶部的对话框中或接近复杂的控件通常提供在 UI 中的说明文本。 请参阅[UI 文本和术语](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology)有关编写样式的详细信息。  
   
-#### <a name="infotips"></a>信息提示  
+#### <a name="infotips"></a>InfoTips  
  通常情况下，说明文本可能耗时较长，若要在 UI 中的位置中的位置，或者可能仅向新用户，还觉得自己象混乱有经验的用户很有用。 在这种情况下，应为工具提示信息提示下放置的教学/信息性文本。  
   
  信息提示应放置的控件，它们与相关，并且应使用尚不显眼的特定信息提示图标附近明显。  

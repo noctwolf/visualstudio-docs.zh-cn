@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, escape sequences
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4f38d82ab220b348ad9e74d3c257be1d4e3b9c87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4b88786c8403347e6526a7a097afcee69889b2a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887086"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031080"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>在文本模板中使用转义序列
 在文本模板生成文本模板标记并 （在 C# 仅代码），可以使用转义序列转义控制字符和引号引起来。

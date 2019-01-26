@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daca7b7d49bcd9aa817f26ad485ec35394f50aff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c4cc6728600fc4bf605c0600014897025cc27ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941844"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988033"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>旧版语言服务分析器和扫描程序
 分析器是语言服务的核心。 托管包框架 (MPF) 语言类需要一个语言分析器，以选择要显示的代码有关的信息。 分析器将文本分隔成词法标记，然后确定这些令牌的类型和功能。  

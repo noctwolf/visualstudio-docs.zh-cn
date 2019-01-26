@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8b6ea7865bdf9a6fcf3b57f7a463fab83cbbf75b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4cc5cf725b47c740bc14a57870e589c5de4e8c1b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934565"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980422"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>域特定语言工具用户界面的概述
 当首次在 Visual Studio 中打开的域特定语言工具 （DSL 工具） 解决方案时，用户界面类似于下图。

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 61bf00b2-8293-49d3-b919-1efb0dec9151
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77dfa1c1bd97739035caf2030f45d2088b9cf12e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd3d151fcc8e305dff0114c9734e9ad59d55af67
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943754"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989203"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>当断点绑定或解除绑定
 不能在调用的时绑定断点时[IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)方法中，绑定时间，并创建的断点的时间不同。  

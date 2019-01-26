@@ -5,20 +5,20 @@ ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 563c9206e72788cc26eccdfab7d0e0993d14d1a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c385c7abda5ccf45914cf990770704156dd701a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948766"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000804"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>演练：起始页上保存用户设置
 您可以保留用户设置的起始页。 通过完成本演练，您可以创建将设置保存到注册表，当用户单击某个按钮，然后检索该设置，每次加载起始页的控件。 起始页项目模板包括一个可自定义用户控件，并且默认开始页 XAML 将调用该控件，因为您无需修改启动页本身。  
   
- 在本演练中实例化的设置存储出现的实例<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore>接口，它读取并写入以下注册表位置时调用它：**HKCU\Software\Microsoft\VisualStudio\14.0\\\<集合名称 >**  
+ 在本演练中实例化的设置存储出现的实例<xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore>接口，它读取并写入以下注册表位置时调用它：**HKCU\Software\Microsoft\VisualStudio\14.0\\\<CollectionName>**  
   
  当 Visual Studio 的实验实例中运行它时，设置存储读取并写入**HKCU\Software\Microsoft\VisualStudio\14.0Exp\\\<集合名称 >。**  
   

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7df128995c114c724c7a25ebe4949be935a3c496
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41e56368497d3a8058437ea726488874081f4d45
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929732"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069721"
 ---
 # <a name="evaluate-expressions"></a>对表达式求值
 从字符串向下传递来自创建表达式**自动**，**监视**，**快速监视**，或者**即时**windows。 当计算表达式时，它生成一个包含名称和类型的变量或参数，并且其值的可打印字符串。 此字符串显示在相应的 IDE 窗口。  
