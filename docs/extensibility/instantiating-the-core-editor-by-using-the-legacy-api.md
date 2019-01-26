@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14583d242c260e4b0f1a754d53faf35b645be666
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 292e30a094cd78954e48817324a44ebacda7a78a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838159"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934529"
 ---
 # <a name="instantiate-the-core-editor-by-using-the-legacy-api"></a>通过使用传统的 API 实例核心编辑器
 在编辑器负责进行文本编辑功能，如插入、 删除、 复制和粘贴。 它将结合这两个函数由语言服务，如文本颜色设置、 缩进和 IntelliSense 语句完成功能提供这些函数。  

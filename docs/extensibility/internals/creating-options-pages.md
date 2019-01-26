@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 879d094051efd6a64af1c43cb96be71fbc67f5ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f85e27b64fb8c50f5d1d3ba06702ee7699f8989b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820632"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034761"
 ---
 # <a name="create-options-pages"></a>创建选项页
 在中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]托管的包框架类派生自<xref:Microsoft.VisualStudio.Shell.DialogPage>扩展[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE，方法是添加**选项**页下**工具**菜单。  

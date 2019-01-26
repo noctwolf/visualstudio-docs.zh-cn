@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess3::GetHostingProcessLanguage |Microsoft Docs
+title: IDebugProcess3::GetHostingProcessLanguage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 52fca002-a9ef-43b1-9192-afbe7bb59ad4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ded6166b9eee894b2e1f55bfa2272cc537c460e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c93dd521708b6ee13c80d683eec8941186ff2e9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854225"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031316"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
 此方法返回`GUID`表示此过程的语言设置通过调用[SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)。  

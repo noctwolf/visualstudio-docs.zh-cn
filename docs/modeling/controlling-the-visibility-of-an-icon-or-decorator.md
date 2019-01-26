@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a8fc55493aab5a19a175b75b7b1d808e9fa156e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 731ca1a7091af81abb5b9ed2521cc41f575747cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877557"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933745"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制图标或修饰器的可见性
 一个*修饰器*为图标或特定于域的语言 (DSL) 中的一个形状显示的文本行。 可以进行修饰器出现，并根据模型中的属性的状态会消失。 例如上表示一个人的形状，, 可能有不同的图标显示具体取决于该人员的性别，子项，数等等。
@@ -65,7 +65,7 @@ ms.locfileid: "53877557"
 
      **名称**例如**DecoratorControl**
 
-     **类型** = `Boolean`
+     **Type** = `Boolean`
 
      有关详细信息，请参阅[计算和自定义存储属性](../modeling/calculated-and-custom-storage-properties.md)。
 

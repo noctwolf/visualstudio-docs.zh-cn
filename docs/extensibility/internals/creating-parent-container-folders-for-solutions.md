@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49c07cbb4ea87c33b0b22ed7db323018be2f2b11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 531e1cbf3e8489fd68d2bbd94c9a66af3c817a00
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889093"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929934"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>创建父容器的解决方案文件夹
 在源控制插件 API 版本 1.2，用户可以指定一个根源控制目标的解决方案中的所有 web 项目。 此单个根称为超级统一根 (SUR)。  
@@ -56,14 +56,14 @@ ms.locfileid: "53889093"
   
 |解决方案包含|有关磁盘位置|数据库默认结构|  
 |-----------------------|-----------------------|--------------------------------|  
-|*sln1.sln*<br /><br /> Web1<br /><br /> Web2|*C:\Solutions\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/ < user_choice > / sln1<br /><br /> $/ < user_choice >/C/Web1<br /><br /> $/ < user_choice > / Web2|  
-|*sln1.sln*<br /><br /> Web1<br /><br /> Win1|*C:\Solutions\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\solutions\sln1\Win1*|$/ < user_choice > / sln1<br /><br /> $/ < user_choice >/D/web1<br /><br /> $/ < user_choice >/sln1/win1|  
+|*sln1.sln*<br /><br /> Web1<br /><br /> Web2|*C:\Solutions\sln1*<br /><br /> *C:\Inetpub\wwwroot\Web1*<br /><br /> \\\server\wwwroot$\Web2|$/<user_choice>/sln1<br /><br /> $/<user_choice>/C/Web1<br /><br /> $/<user_choice>/Web2|  
+|*sln1.sln*<br /><br /> Web1<br /><br /> Win1|*C:\Solutions\sln1*<br /><br /> *D:\Inetpub\wwwroot\Web1*<br /><br /> *C:\solutions\sln1\Win1*|$/<user_choice>/sln1<br /><br /> $/<user_choice>/D/web1<br /><br /> $/<user_choice>/sln1/win1|  
   
  无论该操作已取消或因出错而失败创建 SUR 文件夹和子文件夹。 它们不会自动删除在取消或错误状态。  
   
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 如果源代码管理插件不会返回默认为版本 1.1 行为`SCC_CAP_CREATESUBPROJECT`和`SCC_CAP_GETPARENTPROJECT`功能标志。 此外，用户的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以选择将以下键的值设置还原到版本 1.1 行为*dword: 00000001*:  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateSolutionRootFolderInSourceControl** = *dword: 00000001*
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl** = *dword:00000001*
   
 ## <a name="see-also"></a>请参阅  
  [什么是源控制插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

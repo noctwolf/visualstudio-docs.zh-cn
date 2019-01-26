@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e28364360cf636273384480a35cd07468b9b7e6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 573fcbce3b395f7f351d57208998b0b63b175559
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845572"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039145"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 元素 （Visual Studio 模板）
 
@@ -26,7 +26,7 @@ ms.locfileid: "53845572"
 > [!IMPORTANT]
 > 在 Visual Studio 2017 版本 15.6 版中，启动**目标框架版本**下拉列表中不再是中的显示模板的筛选器**模板**一部分**新项目**对话框。 相反，**目标框架版本**用作所选模板的 framework 选取器下拉列表。
 
- \<VSTemplate > \<TemplateData > \<MaxFrameworkVersion >
+ \<VSTemplate> \<TemplateData> \<MaxFrameworkVersion>
 
 ## <a name="syntax"></a>语法
 

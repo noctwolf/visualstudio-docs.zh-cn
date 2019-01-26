@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f7b9b24e9e8ec5a0539a14fe57b92e8c59b68f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84a27e392552a7194fc4aced6f2ba4a985968c87
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836983"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034150"
 ---
 # <a name="command-flag-eelement"></a>命令标志 Eelement
 修改其父元素。  
@@ -35,7 +35,7 @@ ms.locfileid: "53836983"
   
 ### <a name="child-elements"></a>子元素  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |AllowParams|指示用户可以输入中的命令参数**命令**窗口中键入该命令的规范名称时。<br /><br /> 适用于： `Button`|  
 |AlwaysCreate|即使它具有任何组或按钮创建菜单。<br /><br /> 适用于： `Menu`|  
@@ -47,7 +47,7 @@ ms.locfileid: "53836983"
 |DontCache|在开发环境不会缓存`QueryStatus`方法此命令的结果。<br /><br /> 对于菜单，这将告知菜单控制器不来缓存其菜单项的文本。 当菜单包含动态项或项具有动态文本时，请使用此标志。<br /><br /> 对有效： `Button`， `Menu`|  
 |DynamicItemStart|指示动态列表的开头。 这使环境来通过连续调用生成的列表`QueryStatus`直到返回 OLECMDERR_E_UNSUPPORTED 标志的列表项上的方法。 这适用于项如最近使用 (过的 MRU) 列表和窗口列表。<br /><br /> 适用于： `Button`|  
 |DynamicVisibility|可以通过更改该命令的可见性`QueryStatus`方法或通过上下文中包含的 GUID`VisibilityConstraints`部分。<br /><br /> 适用于显示菜单和工具窗口工具栏上，但不是显示在主窗口的顶级工具栏上的命令。 顶级工具栏项可以禁用，但没有隐藏，请从返回 OLECMDF_INVISIBLE 标志时`QueryStatus`方法。 可以隐藏工具窗口工具栏显示的工具栏命令。<br /><br /> 在菜单上，此标志还指示，它应自动隐藏时隐藏所有其成员。 此标志通常分配给子菜单因为顶级菜单已有此行为。<br /><br /> 此标志应结合`DefaultInvisible`标志。<br /><br /> 对有效： `Button`， `Combo`， `Menu`|  
-|筛选键|请参阅下的筛选键主题[组合元素](../extensibility/combo-element.md)。<br /><br /> 适用于： `Combo`|  
+|FilterKeys|请参阅下的筛选键主题[组合元素](../extensibility/combo-element.md)。<br /><br /> 适用于： `Combo`|  
 |FixMenuController|如果此命令置于菜单控制器，该命令始终是默认设置;也就是说，选择该命令时选择的菜单控制器按钮本身时。 如果菜单控制器`TextIsAnchorCommand`标志设置，则菜单控制器还会有该命令从其文本`FixMenuController`标志。<br /><br /> 菜单控制器上的只有一个命令应具有`FixMenuController`标志。 如果因此标记多个命令，在菜单中的最后一个命令将成为默认命令。<br /><br /> 适用于： `Button`|  
 |IconAndText|在菜单和工具栏上显示的图标和文本。<br /><br /> 对有效： `Button`， `Combo`， `Menu`|  
 |NoAutoComplete|禁用自动完成功能。<br /><br /> 适用于： `Combo`|  

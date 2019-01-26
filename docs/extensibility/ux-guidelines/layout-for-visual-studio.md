@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e82ed0f65a8546cc16decce84c3cca01237694d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db9ffd8fa53b42092678075a68dbe655b8e7c653
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898747"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930838"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio 的布局
 Visual Studio 对话框大部分[实用程序对话框布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)，这是 unthemed 对话框该遵循标准[Windows Desktop 对话框布局原则](/windows/desktop/uxguide/win-dialog-box)。 在 Visual Studio 移动以刷新其 UI 时，一些更加醒目的对话框具有建立它们为产品定义体验的新设计。 这些[主题对话框布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)具有主题化的外观。  
