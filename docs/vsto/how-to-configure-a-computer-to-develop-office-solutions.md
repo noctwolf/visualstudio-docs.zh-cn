@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, installing tools
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a55249c82f6404b0a7e60af95ae1c1b177a761d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99dd7bea33fa534be8dceb0fb888ac50e23cd01d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899793"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865578"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>如何：配置计算机以开发 Office 解决方案
   若要配置开发计算机以便可以使用 Visual Studio 中的 Microsoft Office 开发人员工具，请按照本主题中的说明进行操作。 必须在本地计算机上具有管理特权才能执行这些步骤。  

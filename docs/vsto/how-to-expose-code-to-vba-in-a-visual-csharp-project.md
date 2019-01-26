@@ -13,20 +13,20 @@ helpviewer_keywords:
 - exposing code to VBA
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f49ccc064f06908ed9c965f20773bd15d4753b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3734fab9915d1a1940789a52f278cb0b4f4c7063
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872578"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866213"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何：向视觉对象中的 VBA 公开代码C#项目
   如果您希望两种类型的代码与彼此进行交互，您可以公开 Visual C# 项目中为 Visual Basic for Applications (VBA) 代码的代码。  
   
- Visual C# 过程是不同于 Visual Basic 过程。 有关更多信息，请参见[如何：向 VBA 公开代码在 Visual Basic 项目中的](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)。  
+ Visual C# 过程是不同于 Visual Basic 过程。 有关详细信息，请参阅[如何：向 VBA 公开代码在 Visual Basic 项目中的](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   

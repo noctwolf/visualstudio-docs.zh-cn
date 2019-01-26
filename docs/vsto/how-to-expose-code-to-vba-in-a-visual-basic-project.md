@@ -13,22 +13,22 @@ helpviewer_keywords:
 - host items [Office development in Visual Studio], exposing code to VBA
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a534d32dc8e9352c10a214fbd70ec361b82aed1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2da62fa4c5fc79fc217c165746e9f1fd062d3461
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900987"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867307"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>如何：向 VBA 公开代码在 Visual Basic 项目中
   您可以公开中的代码[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]项目到 Visual Basic for Applications (VBA) 代码，如果您希望两种类型的代码与彼此进行交互。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Visual Basic 过程是不同于 Visual C# 过程。 有关更多信息，请参见[如何：在 Visual C 中向 VBA 代码公开&#35;项目](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。  
+ Visual Basic 过程是不同于 Visual C# 过程。 有关详细信息，请参阅[如何：在 Visual C 中向 VBA 代码公开&#35;项目](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。  
   
  该过程与不同主机项类中的代码比其他类中的代码：  
   

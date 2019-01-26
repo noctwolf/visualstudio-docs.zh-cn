@@ -12,17 +12,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], parameter
 - Business Data Connectivity service [SharePoint development in Visual Studio], method parameters
 - BDC [SharePoint development in Visual Studio], method parameters
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f7d0e0ab164bf30c341ca093908be3661452d19
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0d55c345d9cd0e57d7af2ed359cf4bd9a4f06cd9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866252"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868113"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>如何：将参数添加到方法
   若要将信息传递到方法或从方法返回的信息，请使用参数。 所有方法必须都具有至少一个参数。 有关如何设计用于支持你想要创建的方法的类型的参数的详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
@@ -51,7 +51,7 @@ ms.locfileid: "53866252"
   
      若要为你创建的类型方法选择哪个方向的详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
-8.  修改该参数的类型描述符。 有关更多信息，请参见[如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
+8.  修改该参数的类型描述符。 有关详细信息，请参阅[如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
 ## <a name="see-also"></a>请参阅
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   

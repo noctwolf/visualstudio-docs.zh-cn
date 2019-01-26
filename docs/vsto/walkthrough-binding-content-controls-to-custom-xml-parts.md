@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], content controls
 - DropDownListContentControl, binding items to a custom XML part
 - DatePickerContentControl, binding to a custom XML part
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5989100376dd04d1fcfa57efff11042f2e2c8454
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 123282862f8ab6e7400f14a1aa07942885257e17
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899647"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864730"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>演练：将内容控件绑定到自定义 XML 部件
   本演练演示如何将对 Word 的文档级自定义项中的内容控件绑定到存储在文档中的 XML 数据。  
@@ -59,7 +59,7 @@ ms.locfileid: "53899647"
   
 ### <a name="to-create-a-new-word-document-project"></a>创建新的 Word 文档项目  
   
-1.  具有名称创建一个 Word 文档项目**为 employeecontrols**。 创建解决方案的新文档。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  具有名称创建一个 Word 文档项目**为 employeecontrols**。 创建解决方案的新文档。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在设计器中打开新的 Word 文档并将添加**为 employeecontrols**投影到**解决方案资源管理器**。  
   
@@ -85,7 +85,7 @@ ms.locfileid: "53899647"
 5. 在功能区中，选择**开发人员**选项卡。  
   
    > [!NOTE]  
-   >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关更多信息，请参见[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+   >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 6. 在中**控件**组中，选择**文本**按钮![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")添加<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>到第一个单元格。  
   
@@ -269,7 +269,7 @@ ms.locfileid: "53899647"
   
 ### <a name="to-test-the-content-controls"></a>若要测试内容控件  
   
-1.  按**F5**以运行该项目。  
+1.  按 F5 运行项目。  
   
 2.  验证文档中的表格类似于下表。 第二列中的每个字符串的均来自文档的自定义 XML 部件中的元素。  
   
@@ -277,7 +277,7 @@ ms.locfileid: "53899647"
     |-|-|  
     |**员工姓名**|**Karina Leal**|  
     |**雇佣日期**|**1999 年 4 月 1日日**|  
-    |**标题**|**管理器**|  
+    |**标题**|**Manager**|  
   
 3.  选择右侧的单元格**员工姓名**单元格并键入不同的名称。  
   
@@ -314,7 +314,7 @@ ms.locfileid: "53899647"
   
 -   关闭该文档时修改自定义 XML 部件中的数据。 下次用户打开文档时，绑定到的 XML 元素的内容控件将显示新的数据。  
   
--   使用内容控件保护文档的某些部分。 有关更多信息，请参见[如何：使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
+-   使用内容控件保护文档的某些部分。 有关详细信息，请参阅[如何：使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [通过使用扩展的对象自动化 Word](../vsto/automating-word-by-using-extended-objects.md)   
