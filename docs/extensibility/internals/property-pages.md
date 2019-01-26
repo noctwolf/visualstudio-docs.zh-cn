@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f7aa506e806cc83876475a2fea0a3a949a7198f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b450c6aca73ccef253e2006df485a530664b4c66
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837883"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002495"
 ---
 # <a name="property-pages"></a>属性页
 用户可以查看和更改项目依赖于配置和-独立属性使用属性页。 一个**属性页**中启用按钮**属性**窗口或对象，它提供所选对象的属性页面视图的解决方案资源管理器工具栏上。 属性页创建的环境，并可用于解决方案和项目。 它们，但是，也可以是可进行的项目项使用的配置相关的属性。 在项目中的文件需要不同的编译器开关设置才能正确生成时，可能会使用此功能。  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5083d45b1613147912f29cd5dcc7daa93e16110c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1146c7ed7bfc0d3f09d6c1848bf52345661bf0c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878947"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995029"
 ---
 # <a name="about-file-name-extensions"></a>有关文件扩展名
 当你注册 VSPackage 的文件扩展名时，您将其与关联的版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 这是重要如果多个是的一个版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的计算机上安装。  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 713b44c9ccf360af04086b32c121f7e26c0e67d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8330ab390a80f882ee8a72f04e70d50e55595752
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859365"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986834"
 ---
 # <a name="expose-types-to-visual-designers"></a>可视化设计器向公开类型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须具有访问的类和类型定义在设计时才能显示一个可视化设计器。 从一组预定义的包含完整的依赖项集的当前项目 （引用以及其依赖项） 的程序集加载的类。 可能还会对访问类和自定义工具生成的文件中定义的类型所需的可视化设计器。  

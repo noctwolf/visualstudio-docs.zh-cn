@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4786b0ba6ee981ce14b60b1af87252e3d9582a0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5629bcd7e4db81cd7a46d71d9f0e9928d5eaab15
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885622"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995253"
 ---
 # <a name="customizing-copy-behavior"></a>自定义复制行为
 在域特定语言 (DSL) 创建使用 Visual Studio 可视化和建模 SDK，可以更改当用户复制并粘贴元素时，会发生什么情况。
@@ -210,7 +210,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ```
 
  **让用户拖放元素。**
-请参阅[操作说明：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)。
+请参阅[如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)。
 
 ## <a name="customizeLinks"></a> 自定义链接复制行为
  当用户复制元素时，标准行为是还会复制所有嵌入元素。 可以修改标准复制行为。 在 DSL 定义中，选择在一侧的关系并在属性窗口中设置的角色**传播复制**值。
