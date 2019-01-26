@@ -10,17 +10,17 @@ helpviewer_keywords:
 - managed controls, resizing
 - worksheets, resizing
 - Windows Forms controls [Office development in Visual Studio], resizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67ec290959263282c9a6f924ca9d6ba2c67b5930
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe63ef8be7c17482f0af864c45b29d8e2dd51189
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927345"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863872"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>如何：调整工作表单元格中的控件的大小
   调整列或工作表上的行，单元格内的任何主机控件自动调整大小后的高度或宽度调整了大小的单元格。 默认情况下，Windows 窗体控件执行操作不自动调整。  

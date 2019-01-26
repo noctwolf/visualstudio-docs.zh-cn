@@ -22,13 +22,13 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c329704ee7f2ea19f56d3bd9201783a04d967de7
 ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/02/2019
 ms.locfileid: "53938651"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>尝试联系远程计算机时出现 DCOM 错误。 拒绝访问。
-远程调试使用 DCOM 在以下情况下进行本地和远程计算机之间的通信：  
+在以下情况下，远程调试使用 DCOM 在本地和远程计算机之间进行通信：  
   
 - 调试器设置为了“本机兼容性模式”，或在“工具”>“选项”>“调试”页内选中了“托管兼容模式”  
   

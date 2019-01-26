@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Word [Office development in Visual Studio], dialog boxes
 - dialog boxes, Word
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38e9fd10171bcc5be20f061217ff85b85ae3b52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e954533957fc655c49145fec9505679d376eedb9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829058"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872529"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>如何：以编程方式使用 Word 中的内置对话框
   在使用 Microsoft Office Word，有些的时候需要显示用户输入的对话框。 尽管可以创建你自己，但可能还想要采用的使用在 Word 中，内置对话框框中公开的方法<xref:Microsoft.Office.Interop.Word.Dialogs>的集合<xref:Microsoft.Office.Interop.Word.Application>对象。 这使您能够访问 200 的内置对话框框中，以枚举表示。  

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - NamedRange control, events
 - worksheets, events
 - worksheets, automating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 020d10aec83cd9249378c326f02ba37c3721b126
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0bf7591ad85519f3d68e6f341d325a65f4021fff
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910813"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875727"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>演练：针对 NamedRange 控件的事件进行编程
   本演练演示如何添加<xref:Microsoft.Office.Tools.Excel.NamedRange>对 Microsoft Office Excel 工作表和对其事件通过使用 Visual Studio 中的 Office 开发工具进行编程控制。  
@@ -51,7 +51,7 @@ ms.locfileid: "53910813"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  使用名称创建的 Excel 工作簿项目**我的名为范围活动**。 请确保**创建一个新文档**处于选中状态。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  使用名称创建的 Excel 工作簿项目**我的名为范围活动**。 请确保**创建一个新文档**处于选中状态。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新 Excel 工作簿并将添加**我的名为范围活动**投影到**解决方案资源管理器**。  
   

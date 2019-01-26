@@ -10,15 +10,15 @@ helpviewer_keywords:
 - spelling checker, documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 19dc596851ba8ca8b2ea3ef50e7d151220354e3b
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 78e0819650f7e7156f4f957312425e7853c20c77
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087758"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875701"
 ---
 # <a name="how-to-programmatically-check-spelling-in-documents"></a>如何：以编程方式检查文档中的拼写
   若要检查文档中的拼写错误，请使用<xref:Microsoft.Office.Interop.Word._Application.CheckSpelling%2A>方法。 此方法返回一个布尔值，该值指示所提供的参数是否拼写正确。  
