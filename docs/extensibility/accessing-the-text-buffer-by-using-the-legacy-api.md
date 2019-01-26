@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba58811c800501b5397465192ffbdec4c80160a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dfd4535eb0d792e323143bdebd4b5e17a048e1d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915002"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972662"
 ---
 # <a name="access-the-text-buffer-by-using-the-legacy-api"></a>通过使用传统的 API 访问的文本缓冲区
 文本是负责管理文本流和文件暂留。 尽管缓冲区可以读取或写入其他格式与缓冲区的所有普通通信执行通过使用 Unicode。 在传统的 Api 中的文本缓冲区可以使用一个-或二维坐标系统以确定在缓冲区中的字符位置。  

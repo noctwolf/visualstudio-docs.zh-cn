@@ -13,15 +13,15 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89f39fd11e5f42a61fa322edddf83afef1d2fc4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7937ad591435c1b6b83e779abdddd995ee198a2d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821239"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943073"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 
@@ -146,7 +146,7 @@ Dinner Now 必须估计满足新的需求所需的成本。 这部分取决于�
 |**代码图或关系图**|**显示**|
 |-|-|
 |*代码图*<br /><br /> 请参阅：<br /><br /> - [映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)<br />- [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)<br />- [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|代码中的依赖关系以及其他关系。<br /><br /> 例如，Dinner Now 首先会查看程序集代码图，大致了解这些程序集及其依赖关系。 他们可以深入探讨代码图，浏览这些程序集中的命名空间和类。<br /><br /> Dinner Now 还可以创建代码图来浏览特定区域和代码中其他类型的关系。 他们借助解决方案资源管理器来帮助查找和选择感兴趣的区域和关系。|
-|*基于代码的类图*<br /><br /> 请参阅[操作说明：将类图添加到项目 （类设计器）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|代码中的现有类|
+|*基于代码的类图*<br /><br /> 请参阅[如何：将类图添加到项目 （类设计器）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|代码中的现有类|
 
  例如，开发人员创建一个代码图。 她调整了该代码图的范围，以侧重于将受到新方案影响的区域。 代码图上选中并突出显示了这些区域：
 
@@ -166,7 +166,7 @@ Dinner Now 必须估计满足新的需求所需的成本。 这部分取决于�
 
 |**关系图**|**描述**|
 |-|-|
-|*基于代码的类图*<br /><br /> 请参阅[操作说明：将类图添加到项目 （类设计器）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|代码中的现有类。|
+|*基于代码的类图*<br /><br /> 请参阅[如何：将类图添加到项目 （类设计器）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|代码中的现有类。|
 
 ### <a name="ValidatingCode"></a> 使代码与设计保持一致
  Dinner Now 必须确保更新的代码与设计保持一致。 他们创建依赖项关系图的功能层的描述系统中，指定到了这些层，并将解决方案项目之间存在的依赖关系。
@@ -331,7 +331,7 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 |**关系图**|**描述**|
 |-|-|
 |依赖项关系图|系统的逻辑体系结构。 使用依赖项验证以确保代码保持与设计保持一致。<br /><br /> 若要帮助您识别现有 dependencys 或预期的 dependencys、 创建代码映射和相关的项进行分组。 若要创建依赖项关系图，请参阅：<br /><br /> - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图：指导原则](../modeling/layer-diagrams-guidelines.md)|
-|类图（基于代码）|针对某个特定项目的代码中的现有类。<br /><br /> 要可视化和修改代码中的现有类，请使用类设计器。<br /><br /> 请参阅[操作说明：将类图添加到项目 （类设计器）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|
+|类图（基于代码）|针对某个特定项目的代码中的现有类。<br /><br /> 要可视化和修改代码中的现有类，请使用类设计器。<br /><br /> 请参阅[如何：将类图添加到项目 （类设计器）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|
 
 ### <a name="DefineClasses"></a> 定义类型的术语表：类图
  类图定义参与系统的实体、术语或概念以及它们之间的关系。 例如，可以在开发过程中使用这些关系图来描述每个类的属性和操作，无论其实现语言或样式如何。

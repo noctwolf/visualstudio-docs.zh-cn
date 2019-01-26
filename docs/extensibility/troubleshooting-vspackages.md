@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ba413fa4b5a77c8c4f7fc9dfc9aa3c4ab87d31d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea9e8b271f98774e8bda0121b94b37e0266bf028
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835966"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982463"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackages 故障排除
 以下是常见的问题可能与你的 VSPackage 并解决问题的提示。  
@@ -50,7 +50,7 @@ ms.locfileid: "53835966"
   
 5. 活动日志中检查。  
   
-    有关更多信息，请参见[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
+    有关详细信息，请参阅[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
   
 6. 有关由 IDE 引发的异常的详细信息，请单击**异常**上**调试**菜单启用例外。 在中**异常**对话框中选择要了解详细信息的异常的类型。  
   
@@ -66,7 +66,7 @@ ms.locfileid: "53835966"
   
    1.  在注册表的程序包部分中找到的 vspackage 的 CLSID:  
   
-        HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \Packages  
+        HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages  
   
    2.  验证给定 SatelliteDll 子项的路径正确。  
   
@@ -89,7 +89,7 @@ ms.locfileid: "53835966"
   
 2.  使用活动日志。  
   
-     通过将信息写入到的关键点的活动日志跟踪 VSPackage 行为。 此方法时，尤其是零售环境中运行 VSPackage。 有关更多信息，请参见[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
+     通过将信息写入到的关键点的活动日志跟踪 VSPackage 行为。 此方法时，尤其是零售环境中运行 VSPackage。 有关详细信息，请参阅[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
   
 3.  使用公共符号。  
   
@@ -119,7 +119,7 @@ ms.locfileid: "53835966"
   
 2. 对于非托管代码中，找到的 VSPackage 中 CLSID [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID 注册表节点：  
   
-    HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID  
   
    请确保 InprocServer32 项具有 VSPackage dll 的正确路径。  
   
