@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, programming
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f3fea8dded35e00ee42430c8373309ada8a65f61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e45ad94cca8f8bba617dbfd27328661cddc9f7f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991199"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040575"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>编写代码以自定义域特定语言
 
@@ -23,7 +23,7 @@ ms.locfileid: "53991199"
 
 有几个可以在其中编写代码，它使用 DSL 的上下文：
 
--   **自定义命令。** 可以创建命令，用户可以通过右键单击关系图中，调用以及其可以修改模型。 有关更多信息，请参见[如何：将命令添加到快捷菜单](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
+-   **自定义命令。** 可以创建命令，用户可以通过右键单击关系图中，调用以及其可以修改模型。 有关详细信息，请参阅[如何：将命令添加到快捷菜单](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
 -   **验证。** 可以编写代码，用于验证在模型处于正确状态。 有关详细信息，请参阅[特定于域的语言中的验证](../modeling/validation-in-a-domain-specific-language.md)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "53991199"
 
 -   **文本转换。** 您可以编写文本模板包含的代码，以便访问模型，并生成一个文本文件，例如若要生成程序代码。 有关详细信息，请参阅[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)。
 
--   **其他 Visual Studio 扩展。** 您可以编写单独的 VSIX 扩展的读取和修改模型。 有关更多信息，请参见[如何：从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+-   **其他 Visual Studio 扩展。** 您可以编写单独的 VSIX 扩展的读取和修改模型。 有关详细信息，请参阅[如何：从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
 在 DslDefinition.dsl 中定义的类的实例保存在名为的数据结构*内存中存储*(IMS) 或*存储区*。 你始终在 DSL 中定义的类构造函数作为自变量需要存储区。 例如，如果你的 DSL 定义一个名为示例类：
 

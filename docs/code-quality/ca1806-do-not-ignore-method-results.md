@@ -16,13 +16,13 @@ dev_langs:
 - CPP
 - CSharp
 - VB
-manager: douge
-ms.openlocfilehash: 865c4d26758021b0f0200f7834d02cd34f22bc8a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 4ac122534a42cb78b80d1a12004a8db3d1b5b203
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954193"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043630"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806:不要忽略方法结果
 
@@ -54,7 +54,7 @@ ms.locfileid: "53954193"
 
  如果方法 A 调用 B，方法，但不使用新方法 B 返回的字符串实例。 将该实例作为参数传递给另一种方法，将实例分配给一个变量。 或者，如果不需要移除此调用。
 
- - 或 -
+ 或
 
  如果方法 A 调用 B，方法，但不会使用相应的 HRESULT 或错误代码，该方法返回。 使用中的条件语句的结果、 将结果分配给一个变量，或将其作为参数传递给另一种方法。
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2af41600ed809259cd7512a7fc0a146047a37ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f2deb04f14af93846b0b5a9e13dca14eb5ed710
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818870"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020147"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>文档数据和自定义编辑器中的文档视图
 自定义编辑器由两部分组成： 文档数据对象和文档视图对象。 顾名思义，文档数据对象表示要显示的文本数据。 同样，文档视图对象 （或"视图"） 表示要在其中显示文档数据对象的一个或多个 windows。  
