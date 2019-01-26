@@ -35,15 +35,15 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1656f40cd0d75c73f9f1e4b3a74a6f2b7e7ad0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a837aec3c5f87b51c5874f2fa7bd3f155479b6c2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956539"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868844"
 ---
 # <a name="content-controls"></a>内容控件
   借助内容控件，可设计出具有以下功能的文档和模板：  
@@ -69,7 +69,7 @@ ms.locfileid: "53956539"
   
 - 将文档或模板中的某些部分绑定到数据。 可以将内容控件绑定到数据库字段、[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 中的托管对象、文档中存储的 XML 元素以及其他数据源。  
   
-  在文档级项目中，可以在设计时或运行时向文档中添加内容控件。 在 VSTO 外接程序项目中，可以在运行时向任何打开的文档中添加内容控件。 有关更多信息，请参见[如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
+  在文档级项目中，可以在设计时或运行时向文档中添加内容控件。 在 VSTO 外接程序项目中，可以在运行时向任何打开的文档中添加内容控件。 有关详细信息，请参阅[如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
   
 > [!NOTE]  
 >  仅在以 Open XML 格式保存的文档中，可以使用内容控件。 不能在 Word 97-2003 文档中保存的文档中使用内容控件 (*.doc*) 格式。  
@@ -94,7 +94,7 @@ ms.locfileid: "53956539"
 ### <a name="drop-down-list"></a>下拉列表  
  下拉列表显示了用户可以选择的项目列表。 和组合框不同的是，下拉列表不允许用户添加或编辑项。 有关详细信息，请参阅 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 类型。  
   
-### <a name="group"></a>分组  
+### <a name="group"></a>Group  
  分组控件定义了文档中用户无法编辑或删除的受保护区域。 分组控件可以包含任何文档项，例如文本、表格、图形和其他内容控件。 有关详细信息，请参阅 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 类型。  
   
 ### <a name="picture"></a>Picture  
@@ -109,7 +109,7 @@ ms.locfileid: "53956539"
 ### <a name="generic-content-control"></a>通用内容控件  
  通用内容控件是可以表示任何可用类型的内容控件的 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 通过使用 <xref:Microsoft.Office.Tools.Word.ContentControl.Type%2A> 属性，可以更改 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象，使其行为与其他类型的内容控件一样。 例如，若要创建表示纯文本控件的 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象，可以在运行时更改此对象，使它的行为与组合框的一样。  
   
- 只能在运行时创建 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象，而无法在设计时创建。 有关更多信息，请参见[如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
+ 只能在运行时创建 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象，而无法在设计时创建。 有关详细信息，请参阅[如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
   
 ## <a name="common-features-of-content-controls"></a>内容控件的常用功能  
  大多数内容控件共享一组可用于执行共同任务的成员。 下表描述了使用这些成员可执行的一些任务。  
@@ -167,7 +167,7 @@ ms.locfileid: "53956539"
   
  在文档级和 VSTO 外接程序项目中，可以使用控件中 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 属性的 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 方法，以编程方式将内容控件绑定到数据源。 如果这样做，在字符串中传递**文本**到*propertyName*参数的<xref:System.Windows.Forms.ControlBindingsCollection.Add%2A>方法。 **文本**属性是内容控件的默认数据绑定属性。  
   
- 内容控件还支持双向数据绑定，在这种绑定形式下，控件中的更改会更新到数据源。 有关更多信息，请参见[如何：使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
+ 内容控件还支持双向数据绑定，在这种绑定形式下，控件中的更改会更新到数据源。 有关详细信息，请参阅[如何：使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
   
 > [!NOTE]  
 >  内容控件不支持复杂数据绑定。 如果使用 Windows 窗体数据模型将 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 或 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 绑定到数据源，用户在单击控件时只能看到单个值。 如果希望将这些控件绑定到可供用户选择的一组数据值，则可以将这些控件绑定到自定义 XML 部件中的元素。  
