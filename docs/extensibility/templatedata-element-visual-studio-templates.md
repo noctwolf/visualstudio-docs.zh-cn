@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da6bc128d194a491df580418a13af7e6112e9e45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bae9005c8acc1272c8ca2142f929bffc03c54e16
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878648"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033475"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 元素（Visual Studio 模板）
 将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
   
 ## <a name="syntax"></a>语法  
   
@@ -51,7 +51,7 @@ ms.locfileid: "53878648"
 | [名称](../extensibility/name-element-visual-studio-templates.md) | 必需的元素。<br /><br /> 指定的模板的名称中出现**新的项目**或**添加新项**对话框。 |
 | [说明](../extensibility/description-element-visual-studio-templates.md) | 必需的元素。<br /><br /> 指定模板的说明中所示**新的项目**或**添加新项**对话框。 |
 | [图标](../extensibility/icon-element-visual-studio-templates.md) | 必需的元素。<br /><br /> 指定的路径和用作中显示该图标的图像文件的文件名**新的项目**或**添加新项**对话框中的，为模板。 |
-| [项目类型](../extensibility/projecttype-element-visual-studio-templates.md) | 必需的元素。<br /><br /> 将分类的项目模板，使其显示在指定的组**新的项目**对话框。 |
+| [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | 必需的元素。<br /><br /> 将分类的项目模板，使其显示在指定的组**新的项目**对话框。 |
 | [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | 可选元素。<br /><br /> 将分类的项目模板，使其出现在中的指定子类别下**新的项目**对话框。 |
 | [TemplateID](../extensibility/templateid-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定模板 id。 |
 | [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定模板组 id。 |
@@ -61,7 +61,7 @@ ms.locfileid: "53878648"
 | [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定是否在创建时，Visual Studio 项目系统将生成项目或项的默认名称。 |
 | [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定是否可以为临时项目创建项目。 |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定是否**浏览**按钮现已推出**新项目**对话框，以便用户可以轻松地修改保存新项目的默认目录。 |
-| [隐藏](../extensibility/hidden-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定模板是否出现在**新的项目**或**添加新项**对话框。 |
+| [Hidden](../extensibility/hidden-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定模板是否出现在**新的项目**或**添加新项**对话框。 |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | 可选元素。<br /><br /> 指定将显示在此模板的父类别数**新的项目**对话框。 |
 | [LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | 可选元素。 |
 | [LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md) | 可选元素。<br /><br /> 指定是否**位置**文本框中**新项目**对话框的已启用、 禁用或隐藏项目模板。 |

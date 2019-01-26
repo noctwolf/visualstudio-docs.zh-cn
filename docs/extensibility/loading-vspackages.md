@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477ac9b0b97a7544402f0f70204b8ecf7b43ba95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe619a93b7e099f70e223c022d56dc4eb6e3df09
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925824"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012464"
 ---
 # <a name="load-vspackages"></a>加载 Vspackage
 Vspackage 加载到 Visual Studio 中，仅当其功能是必需的。 例如，加载 VSPackage 时 Visual Studio 使用项目工厂或 VSPackage 实现的服务。 此功能被称为延迟的加载，这尽可能使用以提高性能。  

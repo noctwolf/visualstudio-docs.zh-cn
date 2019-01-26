@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1e579ab9e42ffd7448e3c0dbe62766c058e6f01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874597"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969085"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>如何：访问内置的字体和颜色 ccheme
 Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关联的字体和颜色的方案。 您可以访问通过此方案<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口。
@@ -49,7 +49,7 @@ Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关�
 
 1.  构造一个特殊类型的类别中的以下位置的注册表条目：
 
-     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio 版本 > \FontAndColors\\\<类别 >*]
+     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
 
      *\<类别 >* 类别的非本地化名称。
 

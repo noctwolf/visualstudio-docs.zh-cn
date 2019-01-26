@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::GetCount |Microsoft Docs
+title: IEnumDebugAddresses::GetCount | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f2ca8ff8-539f-457c-83f8-9bbf97618065
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8696e42459058e0f55f5d9a8de57b74eb2fcd48
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c180f188dcd5ae722b19faa8730d5ccd4f56c28f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836382"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994194"
 ---
 # <a name="ienumdebugaddressesgetcount"></a>IEnumDebugAddresses::GetCount
 此方法返回的枚举中的元素数。  

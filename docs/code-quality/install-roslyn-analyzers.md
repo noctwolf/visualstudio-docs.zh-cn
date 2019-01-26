@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Roslyn analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d828fbf2bce435c067b6bc1cc66ce379f3304988
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6a9c2dcbbee307578f837b8472b1026c0aa7a2f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929453"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969573"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>安装.NET Compiler Platform 分析器
 
@@ -31,7 +31,7 @@ Visual Studio 2017 包括一组核心.NET 编译器平台 (*Roslyn*) 分析器�
 
    > [!NOTE]
    > 对于每个分析器包 www.nuget.org 页显示您要粘贴的命令**程序包管理器控制台**。 甚至还有一个方便的按钮文本复制到剪贴板。
-   > 
+   >
    > ![NuGet.org 页面显示包管理器控制台命令](media/nuget-install-command.png)
 
    分析器程序集安装并显示在**解决方案资源管理器**下**引用** > **分析器**。

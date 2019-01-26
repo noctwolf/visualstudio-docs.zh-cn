@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0ec0995068cafe277c95bd125f91d2d1d3df16b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f6b8b9b220a9fa81ea8cf43de18bcf3820f5336
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968665"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016676"
 ---
 # <a name="image-library-viewer"></a>图像库查看器
 Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从而允许用户在相同的方式将 Visual Studio 中处理它们。 用户可以更改背景、 大小、 DPI、 高对比度和其他设置。 该工具也会显示正在加载信息为每个映像清单和映像清单中显示的每个映像的源信息。 此工具可用于：  
@@ -92,7 +92,7 @@ Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从
 |CommonProgramFiles|%Commonprogramfiles%环境变量的值|  
 |LocalAppData|%Localappdata%环境变量的值|  
 |ManifestFolder|包含清单的文件的文件夹|  
-|我的文档|当前用户的我的文档文件夹的完整路径|  
+|MyDocuments|当前用户的我的文档文件夹的完整路径|  
 |ProgramFiles|%Programfiles%环境变量的值|  
 |系统|Windows\System32 文件夹|  
 |WinDir|%Windir%环境变量的值|  
@@ -138,10 +138,10 @@ Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从
 ||||  
 |-|-|-|  
 |**元素**|**属性 （全部所需）**|**定义**|  
-|\<大小 >|值|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|  
-|\<SizeRange >|MinSize、 MaxSize|将映像从 MinSize 到最大大小 （以设备为单位） （含限值） 使用源。 图将方形。|  
+|\<Size>|值|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|  
+|\<SizeRange>|MinSize, MaxSize|将映像从 MinSize 到最大大小 （以设备为单位） （含限值） 使用源。 图将方形。|  
 |\<维度 >|宽度、 高度|源将用于给定的宽度和高度 （以设备为单位） 的映像。|  
-|\<DimensionRange >|MinWidth，MinHeight，<br /><br /> MaxWidth MaxHeight|源将用于从最小宽度/高度 （以设备为单位） 的最大宽度/高度的图像 （含）。|  
+|\<DimensionRange>|MinWidth，MinHeight，<br /><br /> MaxWidth MaxHeight|源将用于从最小宽度/高度 （以设备为单位） 的最大宽度/高度的图像 （含）。|  
   
  一个\<源 > 元素还具有一个可选\<NativeResource > 子元素，定义\<源 > 从本机程序集而不是托管程序集加载的。  
   

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Shell |Microsoft Docs
+title: Visual Studio Shell | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 006b5f3ee19eddb528e339a6a056e2ad0d258fa8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1f8d63827b654da4dcd3d609854e0c14201df8d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865487"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031313"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell 是中的集成主代理[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 在 shell 提供了必要的功能，以允许 Vspackage 共享通用的服务。 由于体系结构的目标[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]背心在 Vspackage 中的主要功能是 shell 是一个框架，可提供基本功能并支持跨-在 Vspackage 及其组件之间进行通信。  

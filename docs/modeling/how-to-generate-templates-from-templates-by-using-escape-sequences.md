@@ -6,16 +6,16 @@ helpviewer_keywords:
 - text templates, generating templates from templates
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8aa0d2203db6080260bc702429758fbd7f6b1a4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b286f3ac432da786a0fbdf5f6c03c2e18075e18e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938142"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020338"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>如何：使用转义序列基于模板生成模板
 可以创建用于创建另一个文本模板，为其生成的文本输出的文本模板。 若要执行此操作，必须使用转义序列来描述文本模板标记。 如果不使用转义序列，生成的文本模板将具有预定义的含义。 有关在文本模板中使用转义序列的详细信息，请参阅[在文本模板中使用转义序列](../modeling/using-escape-sequences-in-text-templates.md)。

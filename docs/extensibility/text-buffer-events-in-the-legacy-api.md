@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62bf7670a40b2cf8094793f833dfa7bcc038cdb3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfa7c6852db66635b0a2b9d955a090b98dd1b61e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909809"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041563"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>传统的 API 中的文本缓冲区事件
 文本缓冲区对象会发出多个不同的事件，您可以对不同的情况下作出响应。  
   
- 当使用传统的 API 时，应以接收通知的文本缓冲区更改来实现以下接口。 显示文本缓冲区使用的接口`IConnectionPointContainer`接口上要接收通知的行的文本缓冲区更改从缓冲区。 有关更多信息，请参见[如何：注册文本缓冲区事件与传统的 API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)。 情况下`IVsTextStreamEvents`或`IVsTextLinesEvents`接口，则返回的更改以任一一或或双三维坐标，分别。  
+ 当使用传统的 API 时，应以接收通知的文本缓冲区更改来实现以下接口。 显示文本缓冲区使用的接口`IConnectionPointContainer`接口上要接收通知的行的文本缓冲区更改从缓冲区。 有关详细信息，请参阅[如何：注册文本缓冲区事件与传统的 API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)。 情况下`IVsTextStreamEvents`或`IVsTextLinesEvents`接口，则返回的更改以任一一或或双三维坐标，分别。  
   
 ## <a name="text-buffer-interfaces"></a>文本缓冲区接口  
  以下是实现文本缓冲区对象的接口。  

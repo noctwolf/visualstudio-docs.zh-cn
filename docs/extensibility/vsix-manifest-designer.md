@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54ad66452151142b3ad18a97591a5cf774896a14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0559f003ec09b6f3b0a12fd8f429f5dc83e6322d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852344"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993557"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 清单设计器
 修改 VSIX 包清单文件，这会设置 Visual Studio 扩展的安装行为。  
@@ -50,7 +50,7 @@ ms.locfileid: "53852344"
   **产品 ID**  
   指定此包的唯一标识信息。  
   
-  **作者**  
+  **Author**  
   指定扩展的作者的名称。  
   
   **Version**  

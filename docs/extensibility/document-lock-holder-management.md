@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2f2da0e351f8444ef9966b00551b941830dda3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 320f394aa08a3be7f1dfc571b3aa80aaecadead6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986435"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983891"
 ---
 # <a name="document-lock-holder-management"></a>文档锁持有者管理
 运行文档表 (RDT) 维护打开的文档和它们具有的任何编辑锁的计数。 以编程方式编辑在后台，而用户看到在文档窗口中打开的文档时，您可以编辑锁放置 RDT 中的文档。 通过修改通过图形用户界面的多个文件的设计人员通常使用此功能。
