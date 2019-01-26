@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb5ba251df3271e704ea4b455c5cc47003ab8e2e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e3663ec203c7b445c60b17627f1458fcd231a25
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933617"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866072"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>如何：在部署或收回 SharePoint 项目时运行代码
   如果你想要部署或收回 SharePoint 项目时执行其他任务，可以处理由 Visual Studio 引发事件。 有关详细信息，请参阅[扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。  
@@ -32,7 +32,7 @@ ms.locfileid: "53933617"
   
    -   [如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
-2. 在扩展中，访问<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>对象。 有关更多信息，请参见[如何：检索 SharePoint 项目服务](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)。  
+2. 在扩展中，访问<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>对象。 有关详细信息，请参阅[如何：检索 SharePoint 项目服务](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)。  
   
 3. 处理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted>和<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted>项目服务的事件。  
   

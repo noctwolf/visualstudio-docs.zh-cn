@@ -7,17 +7,17 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f1bfb5a4b46e7f965e66e82ee1506252bd3eba1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f07b17ddb38ad94709739dcc9e0b3489220c2c0b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873916"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862977"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>在计算机上未安装 Microsoft Office
   Visual Studio 找不到对应于项目类型的 Microsoft Office 应用程序。 如果你正在开发 VSTO 外接程序项目，则意味着你无法调试或运行项目。 如果你正在尝试创建一个文档级项目，这意味着你无法创建项目。  

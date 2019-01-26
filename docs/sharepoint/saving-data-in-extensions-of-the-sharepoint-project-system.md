@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], saving string data
 - projects [SharePoint development in Visual Studio], saving string data
 - SharePoint projects, saving string data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7f0210a24df180e93aa8772f08b91e7312f5ccc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 373f031795238c599d15eec92f1730289662c3a0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829244"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866537"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>将数据保存在 SharePoint 项目系统的扩展
   扩展 SharePoint 项目系统时，可以保存字符串数据的 SharePoint 项目关闭后仍然存在。 数据是与特定项目项或项目本身通常相关联。  

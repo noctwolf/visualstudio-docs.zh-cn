@@ -23,15 +23,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], Excel
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 38db6bf4c29694813b41a88b0d5d62a1672cd6b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb370be32929436fb6d37ff70837470ee8196689
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856847"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863794"
 ---
 # <a name="excel-solutions"></a>Excel 解决方案
   Visual Studio 提供可用于创建 Microsoft Office Excel 的文档级自定义项和 VSTO 外接程序的项目模板。 你可以使用这些解决方案自动化 Excel、扩展 Excel 功能以及自定义 Excel 用户界面 (UI)。 有关文档级自定义项和 VSTO 外接程序之间的差异的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -59,7 +59,7 @@ ms.locfileid: "53856847"
 ##  <a name="doclevel"></a> 开发 Excel 的文档级自定义项  
  Microsoft Office Excel 的文档级自定义项包含与特定工作簿相关联的程序集。 该程序集通常可通过自定义 UI 和自动化 Excel 扩展工作簿。 不同于与 Excel 自身相关联的 VSTO 外接程序，在自定义项中实现的功能仅当相关联的工作簿在 Excel 中打开时才可用。  
 
- 若要创建 Excel 文档级自定义项目，使用 Excel 工作簿或 Excel 模板项目模板中的**新的项目**对话框中的 Visual Studio。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+ 若要创建 Excel 文档级自定义项目，使用 Excel 工作簿或 Excel 模板项目模板中的**新的项目**对话框中的 Visual Studio。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
 
  有关如何使用文档级自定义项工作的详细信息，请参阅[的文档级自定义体系结构](../vsto/architecture-of-document-level-customizations.md)。  
 
@@ -71,7 +71,7 @@ ms.locfileid: "53856847"
 ##  <a name="applevel"></a> 开发适用于 Excel VSTO 外接程序  
  Microsoft Office Excel 的 VSTO 外接程序包含由 Excel 加载的程序集。 该程序集通常可通过自定义 UI 和自动化 Excel 扩展 Excel。 不同的文档级自定义项，这是与特定工作簿相关联，在 VSTO 外接程序中实现的功能不局限于任何单个工作簿。  
 
- 若要创建 Excel VSTO 外接程序项目，使用 Excel 工作簿或 Excel 模板项目模板中的**新的项目**对话框中的 Visual Studio。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+ 若要创建 Excel VSTO 外接程序项目，使用 Excel 工作簿或 Excel 模板项目模板中的**新的项目**对话框中的 Visual Studio。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
 
  有关 VSTO 外接程序工作原理的常规信息，请参阅 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。
 

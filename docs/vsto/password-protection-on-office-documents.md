@@ -11,17 +11,17 @@ helpviewer_keywords:
 - passwords [Office development in Visual Studio], document protections
 - documents [Office development in Visual Studio], restricted permissions
 - Office documents [Office development in Visual Studio, restricted permissions
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4603a6f5722279ccdaf057d30d3bc6e911c4c47e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 062196206d881ebb5a10f4bd7b14d892dbbbe0e9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856996"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872197"
 ---
 # <a name="password-protection-on-office-documents"></a>Office 文档上的密码保护
   就可以在 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿上设置密码，以便它们不能打开的人不知道密码。 此选项将称为**处于打开状态的密码**。  

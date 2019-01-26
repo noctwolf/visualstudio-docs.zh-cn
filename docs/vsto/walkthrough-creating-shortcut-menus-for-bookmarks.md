@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Bookmark control, events
 - shortcut menus, Word
 - menus, creating in Office applications
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cf987c458fb3a79c17fc6efedb34fefd8a53179
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fb09bc2ee3f9278026be2046ff249fb2ca4c558f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940543"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863989"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>演练：创建书签的快捷菜单
   本演练演示如何创建快捷方式菜单<xref:Microsoft.Office.Tools.Word.Bookmark>Word 的文档级自定义项中的控件。 后在用户右键单击一个书签中的文本，快捷菜单会显示，并将用于设置文本格式的用户选项。  
@@ -51,7 +51,7 @@ ms.locfileid: "53940543"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
--   创建具有名称的 Word 文档项目**我的书签快捷方式菜单**。 在向导中，选择**创建一个新文档**。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+-   创建具有名称的 Word 文档项目**我的书签快捷方式菜单**。 在向导中，选择**创建一个新文档**。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新的 Word 文档并将添加**我的书签快捷方式菜单**投影到**解决方案资源管理器**。  
   
@@ -88,7 +88,7 @@ ms.locfileid: "53940543"
   
 ### <a name="to-add-commands-to-a-shortcut-menu"></a>若要将命令添加到快捷菜单  
   
-1.  添加**功能区 XML**到项目的项。 有关更多信息，请参见[如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
+1.  添加**功能区 XML**到项目的项。 有关详细信息，请参阅[如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
   
 2.  在中**解决方案资源管理器**，选择**ThisDocument.cs**或**ThisDocument.vb**。  
   
