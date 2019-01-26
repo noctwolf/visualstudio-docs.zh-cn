@@ -9,22 +9,22 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b28db9329debba9e46606d0f57117e4f01a8f26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1cf39b2ec563d76d5fb580e3c3e37a8e47bd4f0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906912"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868399"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>如何：添加和删除使用包设计器的功能和包项
   创建 SharePoint 解决方案时，Visual Studio 会将默认的 SharePoint 功能添加到解决方案中的包。 然后才能最终部署，可以添加和删除 SharePoint 项目项和修改 SharePoint 包的功能。  
   
- 或者，可以使用打包资源管理器添加和删除 SharePoint 项目项。 您还可以查看和更改层次结构的 SharePoint 项目项和放入包 (.wsp) 的功能。 有关更多信息，请参见[如何：添加和删除使用打包资源管理器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
+ 或者，可以使用打包资源管理器添加和删除 SharePoint 项目项。 您还可以查看和更改层次结构的 SharePoint 项目项和放入包 (.wsp) 的功能。 有关详细信息，请参阅[如何：添加和删除使用打包资源管理器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
   
 ## <a name="add-features-to-a-sharepoint-package"></a>将功能添加到 SharePoint 包  
  在包设计器可用于将功能添加到 SharePoint 包。  
@@ -33,7 +33,7 @@ ms.locfileid: "53906912"
   
 1. 打开**包设计器**。  
   
-    有关更多信息，请参见[如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
+    有关详细信息，请参阅[如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
   
 2. 通过执行一个或多个以下步骤添加一个或多个 SharePoint 功能：  
   

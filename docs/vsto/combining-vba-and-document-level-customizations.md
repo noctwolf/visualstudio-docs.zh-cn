@@ -21,15 +21,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7217665d0d5b9ea594b605739916e017184730fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa94c6a3b86abe53e374f8d797158bcded55f440
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987883"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866670"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>结合 VBA 和文档级自定义项
   在属于 Microsoft Office Word 或 Microsoft Office Excel 的文档级自定义项的文档中，可以使用 Visual Basic for Applications (VBA) 代码。 可以从自定义程序集调用文档中的 VBA 代码，也可以将项目配置为使文档中的 VBA 代码能够调用自定义程序集中的代码。  

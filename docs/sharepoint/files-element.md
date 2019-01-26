@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Files element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e27e3192ec0d9a312c3cfc0a3521daf534c68e9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b25bb220d3c22af280a486de115193af38c85dbe
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922293"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864522"
 ---
 # <a name="files-element"></a>Files 元素
   指定要部署使用 SharePoint 项目项，如功能元素文件和依赖的非 SharePoint 项目的输出的文件。  
@@ -51,13 +51,13 @@ ms.locfileid: "53922293"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[项目项](../sharepoint/projectitem-element.md)|表示 SharePoint 项目项。 此元素的必需的根元素的`.spdata`文件。|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 项目项。 此元素的必需的根元素的`.spdata`文件。|  
   
 ## <a name="element-information"></a>元素信息
   
 |||  
 |-|-|  
-|**命名空间**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空间**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**架构名称**|SharePoint 项目项架构|  
 |**验证文件**|ProjectItemModelSchema.xsd|  
 |**可以为空**|否|  

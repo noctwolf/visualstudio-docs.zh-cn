@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], projects
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2b8b142c7950ee45a5c870c30658d795fe44c89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958392"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867948"
 ---
 # <a name="debug-office-projects"></a>调试 Office 项目
   可使用与用于其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 项目相同的 Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 工具来调试 Office 项目。 调试 Office 项目时也可使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 调试器的功能（如插入断点和查看 **“局部变量”** 窗口中的变量）。 有关详细信息[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试工具，请参阅[在 Visual Studio 中调试](../debugger/debugging-in-visual-studio.md)。

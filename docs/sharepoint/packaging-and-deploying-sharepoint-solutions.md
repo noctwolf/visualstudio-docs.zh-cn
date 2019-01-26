@@ -9,17 +9,17 @@ helpviewer_keywords:
 - packaging [SharePoint development in Visual Studio]
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, packaging and deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1213d4dd2cdd347fe1d29f594fa7614df50b1e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a50d7088cdeb868ef4170e3b4b76fbf129151626
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849014"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867632"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>打包和部署 SharePoint 解决方案
   通常情况下，SharePoint 解决方案部署到 SharePoint 服务器通过使用解决方案包 (.wsp) 文件。 若要将你的 SharePoint 项目项组织到功能并创建要部署您的 SharePoint 功能的程序包，可以使用 Visual Studio。  
@@ -76,7 +76,7 @@ ms.locfileid: "53849014"
   
   在 Visual Studio 中的 SharePoint 开发工具具有验证规则，以帮助确保解决方案包的位置正确。 此外，这些规则确认 *.wsp*可以成功部署和 SharePoint 服务器上激活解决方案文件。 有关功能的 XML 架构的详细信息，请参阅[功能架构](http://go.microsoft.com/fwlink/?LinkID=169192)。  
   
-  可以向 SharePoint 项目系统中添加自定义功能和包验证规则。 有关更多信息，请参见[如何：创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。  
+  可以向 SharePoint 项目系统中添加自定义功能和包验证规则。 有关详细信息，请参阅[如何：创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。  
   
   有关打包资源管理器的详细信息，请参阅[如何：添加和删除使用打包资源管理器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
   

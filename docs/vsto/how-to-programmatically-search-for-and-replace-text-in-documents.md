@@ -11,17 +11,17 @@ helpviewer_keywords:
 - text searches, documents
 - text [Office development in Visual Studio], searching in documents
 - text [Office development in Visual Studio], text searches
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ccd9fc41ce0be5aa209098dd574f142b22ad2996
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 677a7484a6c0356635dd2d6f8353e8b27c38a562
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823670"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864028"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>如何：以编程方式搜索和替换文档中的文本
   <xref:Microsoft.Office.Interop.Word.Find> 对象是 <xref:Microsoft.Office.Interop.Word.Selection> 和 <xref:Microsoft.Office.Interop.Word.Range> 对象的成员，可使用其中任何一个来搜索 Microsoft Office Word 文档中的文本。 替换命令是查找命令的扩展。  

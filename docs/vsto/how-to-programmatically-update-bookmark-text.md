@@ -9,17 +9,17 @@ helpviewer_keywords:
 - bookmarks, updating text
 - text [Office development in Visual Studio], updating in bookmarks
 - Bookmark control, updating contents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cdbecf7ea507fdf630ebd3cc4bf50092826292dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e85b4df6b7ad9a01a6a0f1c7369c03fd3779c6c6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864331"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863261"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>如何：以编程方式更新书签文本
   你可以将文本插入 Microsoft Office Word 文档中的占位符书签，以便稍后能够检索到该文本，或替换书签中的文本。 如果你正在开发文档级自定义项，则还可以更新绑定到数据的 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件中的文本。 有关详细信息，请参阅[将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。  

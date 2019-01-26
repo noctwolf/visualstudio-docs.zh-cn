@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], multiple Ribbons
 - toolbars [Office development in Visual Studio]
 - custom Ribbon, multiple Ribbons
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff1cda312fdc007c1c700d2edf6576dcc91d87e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4022720a787801405915fe92a10b93a850a0d2f3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989197"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867723"
 ---
 # <a name="ribbon-overview"></a>功能区概述
   功能区是一种方法，以便可以更轻松地找到整理相关的命令。 命令显示为功能区上的控件。 控件整理为*组*沿应用程序窗口上边缘处呈水平条。 在选项卡上，相关组进行了整理。  
@@ -37,7 +37,7 @@ ms.locfileid: "53989197"
   
 - **功能区 （可视化设计器）**  
   
-- **功能区 (XML)**  
+- **Ribbon (XML)**  
   
   例如，若要自定义 Excel 功能区，则将功能区项添加到 Excel VSTO 外接程序项目中。  
   

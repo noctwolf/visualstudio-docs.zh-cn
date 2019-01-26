@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f83447bcceb010f5a479d61c250e703daa1aab1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da1b31b7cc1436c90437a9e2b5ef66adfee825b1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894845"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867892"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>如何：创建 SharePoint 命令
   如果你想要在 SharePoint 工具扩展中使用服务器对象模型，则必须创建一个自定义*SharePoint 命令*来调用 API。 直接调入服务器对象模型的程序集中定义的 SharePoint 命令。  
@@ -30,7 +30,7 @@ ms.locfileid: "53894845"
   
     -   面向.NET Framework 3.5。 有关选择的目标框架的详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
-    -   面向 AnyCPU 或 x64 平台。 默认情况下，类库项目的目标平台为 AnyCPU。 有关选择目标平台的详细信息，请参阅[如何：配置项目以面向平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
+    -   面向 AnyCPU 或 x64 平台。 默认情况下，类库项目的目标平台为 AnyCPU。 有关选择目标平台的详细信息，请参阅[如何：将项目配置为面向平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
   
     > [!NOTE]  
     >  不能定义 SharePoint 工具扩展，在同一项目中实现 SharePoint 命令，因为 SharePoint 命令针对.NET Framework 3.5 和 SharePoint 工具扩展目标[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。 必须定义任何由你在一个单独的项目中的扩展的 SharePoint 命令。 有关详细信息，请参阅[部署的 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
@@ -57,7 +57,7 @@ ms.locfileid: "53894845"
   
 4.  将应用<xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute>方法。 此属性指定该命令; 的唯一标识符此标识符不需要与方法名称匹配。  
   
-     从 SharePoint 工具扩展调用命令时，必须指定相同的唯一标识符。 有关更多信息，请参见[如何：执行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)。  
+     从 SharePoint 工具扩展调用命令时，必须指定相同的唯一标识符。 有关详细信息，请参阅[如何：执行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)。  
   
 ## <a name="example"></a>示例  
  下面的代码示例演示了具有标识符的 SharePoint 命令`Contoso.Commands.UpgradeSolution`。 此命令使用服务器对象模型中的 Api 来升级到已部署的解决方案。  

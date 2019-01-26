@@ -9,17 +9,17 @@ helpviewer_keywords:
 - worksheets, changing formatting using managed controls
 - worksheets, check box controls
 - controls [Office development in Visual Studio], adding to worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: adc12d920fd3dc128bf23f92508fef8d239b4e8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30e89adf2d93e67a63071f79ded213a3dcff6385
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935094"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871021"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>演练：更改工作表格式设置使用 CheckBox 控件
   本演练显示了使用 Microsoft Office Excel 工作表上的复选框来更改格式设置基础的知识。 将使用 Visual Studio 中的 Office 开发工具创建并将代码添加到你的项目。 若要查看已完成的示例，请参阅 Excel 控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
@@ -49,7 +49,7 @@ ms.locfileid: "53935094"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  使用名称创建的 Excel 工作簿项目**我 Excel 格式设置**。 请确保**创建一个新文档**处于选中状态。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  使用名称创建的 Excel 工作簿项目**我 Excel 格式设置**。 请确保**创建一个新文档**处于选中状态。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新 Excel 工作簿并将添加**我 Excel 格式设置**投影到**解决方案资源管理器**。  
   
@@ -80,7 +80,7 @@ ms.locfileid: "53935094"
   
 6.  拖动第三个复选框，或其附近单元格**B6**并更改以下属性：  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**名称**|**applyUnderlineFont**|  
     |**文本**|**用下划线标出**|  

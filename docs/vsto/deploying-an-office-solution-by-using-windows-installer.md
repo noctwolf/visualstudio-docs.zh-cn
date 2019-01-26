@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 946a8dc884db4492e9bb557fa6000059d9912fd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91349edaeb864e913351e79846825fb67f2d7d97
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966046"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864080"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 解决方案
 了解如何使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]为你的 Office 解决方案创建 Windows Installer。  
@@ -326,8 +326,8 @@ ms.locfileid: "53966046"
 
 | Office 版本<br /><br /> | InstallShield 配置路径<br /><br /> |
 |----------------------------| - |
-| 32 位<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 位<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 位<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 位<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **根据 Windows 版本创建的基于计算机的安装程序**  
 
@@ -335,8 +335,8 @@ ms.locfileid: "53966046"
 
 | Windows 版本<br /><br /> | InstallShield 配置路径<br /><br /> |
 |-----------------------------| - |
-| 32 位<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 位<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 位<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 位<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]  
    >    64 位 Windows 的安装程序需要两个注册表路径，因为它是用户可以在运行 64 位 Windows 的计算机上运行 32 位和 64 位版本的 Office。  

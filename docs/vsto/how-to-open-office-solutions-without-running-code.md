@@ -15,15 +15,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], opening without running code
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59cee99ad603ec1a03f8beffd36b82d4b83ed308
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47c6d80a6d2d9c9ee63d13eca6bcb8a479ea2aad
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930091"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867744"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>如何：打开 Office 解决方案但不运行代码
   创建具有托管的代码扩展的 Microsoft Office 解决方案运行，即使最终用户 Office 应用程序中的安全设置设为高。 这是因为.NET 程序集代码安全性由 Microsoft.NET Framework 中，不是由 Microsoft Office。  

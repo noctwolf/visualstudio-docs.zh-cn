@@ -10,17 +10,17 @@ helpviewer_keywords:
 - SharePoint commands
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: acee9055fc250f158e05945f0db30c9ffb0fee14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3cd7c3654de0ffc9be98420fb0a823de21eef756
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957892"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867697"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>演练：扩展服务器资源管理器以显示 web 部件
   在 Visual Studio 中，你可以使用**SharePoint 连接**的节点**服务器资源管理器**来查看 SharePoint 站点上的组件。 但是，**服务器资源管理器**默认情况下不会显示某些组件。 在本演练中，你将扩展**服务器资源管理器**，以便它显示在 Web 部件库在每个连接 SharePoint 站点。  

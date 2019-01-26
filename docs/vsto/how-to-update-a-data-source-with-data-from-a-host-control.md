@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], updating a data source from a document
 - host controls [Office development in Visual Studio], data source updates
 - Office documents [Office development in Visual Studio, data sources
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ffacf89146932f5a8d1521ea922e27b12fb57151
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f35b5a67ce43d2e727aa052a8165fbdf7123eda0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933011"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863107"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何：使用主机控件中的数据更新数据源
   可以将宿主控件绑定到数据源，然后使用在此控件中对数据所做的更改来更新该数据源。 此过程包括以下两个主要步骤：  
@@ -63,7 +63,7 @@ ms.locfileid: "53933011"
      > [!NOTE]  
      >  System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 选项不适用于 Word 主机控件，因为 Word 不提供文档更改或控件更改通知。 但是，此选项可用于 Word 文档中的 Windows 窗体控件。  
   
-     下面的示例将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件配置为当该控件中的值更改时自动更新数据源。 此示例假定你有一个名为 `namedRange1` 的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件，且其 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 属性已绑定到数据源中的一个字段。  
+     下面的示例将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件配置为当该控件中的值更改时自动更新数据源。 此示例假定你有一个名为 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 `namedRange1` 控件，且其 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 属性已绑定到数据源中的一个字段。  
   
      [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]  

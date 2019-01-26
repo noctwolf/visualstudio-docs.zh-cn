@@ -10,17 +10,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, remote deployment
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1473d1c9ea9d876eb539e9672c1675ce06d9762d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4aafc503ff2b8dffed5b70d17f4eb488baf72704
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835667"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865081"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何：部署、 发布和升级远程服务器上的 SharePoint 解决方案
   除了对本地系统中部署 SharePoint 解决方案，可以将沙盒 SharePoint 解决方案发布到远程站点或本地 SharePoint 站点中。 远程发布进程副本 *.wsp*文件到 SharePoint 服务器，安装解决方案，然后再启用您激活解决方案。 对其进行更改之后，你还可以升级远程 SharePoint 解决方案安装。  

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89b03298d1a0bb180e3eab706383e48ecd75cd7f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: faa71d4cefabbb59e7b9b5255cfebf3677e257a5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915898"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865744"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>演练：从 VBA 调用 VSTO 外接程序中的代码
   本演练演示如何向其他 Microsoft Office 解决方案（包括 Visual Basic for Applications (VBA) 和 COM VSTO 外接程序）公开 VSTO 外接程序中的对象。  
@@ -54,7 +54,7 @@ ms.locfileid: "53915898"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  使用 Excel VSTO 外接程序项目模板，创建一个名为 **ExcelImportData**的 Excel VSTO 外接程序项目。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  使用 Excel VSTO 外接程序项目模板，创建一个名为 **ExcelImportData**的 Excel VSTO 外接程序项目。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此时将打开 **ThisAddIn.cs** 或 **ThisAddIn.vb** 代码文件，并将 **“ExcelImportData”** 项目添加到 **“解决方案资源管理器”**。  
   
@@ -113,7 +113,7 @@ ms.locfileid: "53915898"
 3.  在功能区上，单击 **“开发人员”** 选项卡。  
   
     > [!NOTE]  
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关更多信息，请参见[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 4.  在 **“代码”** 组中，单击 **“Visual Basic”**。  
   

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], Updater
 - Business Data Connectivity service [SharePoint development in Visual Studio], updating entity instances
 - BDC [SharePoint development in Visual Studio], updating entity instances
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8a68ed8809b30444829dc09bb5c1fcb2386c4a92
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 435674325acdb8b415f0a706f3bca8753d704160
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872513"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864154"
 ---
 # <a name="how-to-add-an-updater-method"></a>如何：添加 Updater 方法
   可以让用户可以通过创建更新 SharePoint 外部列表中的业务数据*Updater*方法。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - errors [Office development in Visual Studio], user interface errors
 - user interfaces [Office development in Visual Studio], errors
 - application-level add-ins [Office development in Visual Studio], user interface errors
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a11f6bcff5d16a6fc12de5db7e1a7410b4357fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 466b316340f922d13ed559791d1340912c4cecfd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819702"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862910"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>如何：显示外接程序用户界面错误
   默认情况下，如果 VSTO 外接程序尝试操作 Microsoft Office 用户界面 (UI) 和失败，将不显示任何错误消息。 但是，你可以配置 Microsoft Office 应用程序以显示与 UI 相关的错误的消息。 这些消息可用于帮助确定为何未显示自定义功能区，或者为何功能区出现但控件未出现。  

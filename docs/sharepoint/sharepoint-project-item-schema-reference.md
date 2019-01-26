@@ -18,17 +18,17 @@ helpviewer_keywords:
 - ProjectItemFile element
 - ExtensionDataItem element
 - ProjectItem element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2023eb4828ab5ac59a45dd72040177a654176d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c261115b21d1067b7494d09ad8031b3f4dc5a8c5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895800"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864912"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint 项目项架构参考
   Visual Studio 将使用 SharePoint 项目项架构验证的内容 *.spdata*文件。 *.Spdata*文件指定的内容和 SharePoint 项目项的行为。 SharePoint 项目项的内容的详细信息，请参阅[创建项模板和项目模板的 SharePoint 项目项](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
@@ -44,7 +44,7 @@ ms.locfileid: "53895800"
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|表示部署到 SharePoint 时，包含与某个功能的属性值的集合。 将功能部署后，你可以在代码中访问的属性值。|  
 |[FeatureProperty](../sharepoint/featureproperty-element.md)|表示部署到 SharePoint 时，将包括与某个功能的自定义属性。 将功能部署后，您可以在代码中访问属性。|  
 |[文件](../sharepoint/files-element.md)|指定要使用的 SharePoint 项目项，如功能元素文件或项目的输出进行部署的文件。|  
-|[项目项](../sharepoint/projectitem-element.md)|表示 SharePoint 项目项。|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 项目项。|  
 |[ProjectItemFile](../sharepoint/projectitemfile-element.md)|表示 SharePoint 文件，如功能元素文件部署到 SharePoint 时，包含与项目项。|  
 |[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|表示映射的文件夹。|  
 |[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|表示要部署到 SharePoint 时，包含与项目项的项目的输出。|  

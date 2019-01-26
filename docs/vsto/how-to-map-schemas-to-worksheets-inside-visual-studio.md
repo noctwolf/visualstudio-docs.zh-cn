@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], XML schemas
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1be044131ab7248e971e5030f0d35467773587e1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d01d68404314b366e968f0c2551352d8501ed9ae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849914"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866329"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>如何：将架构映射到 Visual Studio 内部的工作表
   在 Visual Studio 中打开工作表时，可以将 XML 架构映射到工作表。 使用 Visual Studio 外部打开工作簿时使用的相同 Microsoft Office Excel 工具。 Office 项目创建相同的对象是否将架构映射到工作表之前或之后创建 Excel 解决方案。  
@@ -41,7 +41,7 @@ ms.locfileid: "53849914"
 3.  在功能区上，单击 **“开发人员”** 选项卡。  
   
     > [!NOTE]  
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关更多信息，请参见[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 4.  在中**XML**组中，单击**源**。  
   

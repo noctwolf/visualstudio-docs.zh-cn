@@ -10,17 +10,17 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], properties
 - document properties [Office development in Visual Studio]
 - Excel [Office development in Visual Studio], document properties
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 43c74a206ecbe544a6ccb32448104e17a48aaee6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 51add739e6303a62eb3333c4a173fa0d2e58f2f1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825417"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54862624"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>如何：读取和写入到文档属性
   可以存储文档以及文档属性。 Office 应用程序提供了许多内置的属性，例如作者、标题和主题。 本主题演示如何在 Microsoft Office Excel 和 Microsoft Office Word 中设置文档属性。  

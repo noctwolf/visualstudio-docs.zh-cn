@@ -12,17 +12,17 @@ helpviewer_keywords:
 - globalizing [SharePoint development in Visual Studio]
 - localizing [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, localizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b653efc0cce8d8fb2b3e28b8e6c61e6371b4f6e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb23307326d1018238354997b98a0cef48efc2c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837351"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864366"
 ---
 # <a name="localize-sharepoint-solutions"></a>本地化 SharePoint 解决方案
 
@@ -54,7 +54,7 @@ ms.locfileid: "53837351"
  有三个区域，您通常本地化中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 应用程序： 功能、 ASPX 页面标记和代码。 为便于说明，以下各节假定您有你想要本地化为德语和日语的 SharePoint 解决方案。 默认语言为英语。  
   
 ### <a name="localize-features"></a>本地化功能
- 若要本地化功能，必须以替换引用的已翻译的标题和已本地化的资源文件中字符串的表达式的硬编码的标题和说明的功能。 进行此更改中的**功能设计器**中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关更多信息，请参见[如何：本地化功能](../sharepoint/how-to-localize-a-feature.md)。  
+ 若要本地化功能，必须以替换引用的已翻译的标题和已本地化的资源文件中字符串的表达式的硬编码的标题和说明的功能。 进行此更改中的**功能设计器**中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关详细信息，请参阅[如何：本地化功能](../sharepoint/how-to-localize-a-feature.md)。  
   
  若要将英语功能本地化为德语和日语，您将三个资源文件项目项添加到你的项目： 一个用于英语、 德语和日语。 功能资源文件不能用于本地化 ASPX 标记或代码;需要为其单独的资源文件。  
   
@@ -104,7 +104,7 @@ $Resources:String ID
 <asp:literal ID="Literal1" runat="server" Text="<%$Resources:Resource1, String9%>" />  
 ```  
   
- 有关更多信息，请参见[如何：本地化 ASPX 标记](../sharepoint/how-to-localize-aspx-markup.md)。  
+ 有关详细信息，请参阅[如何：本地化 ASPX 标记](../sharepoint/how-to-localize-aspx-markup.md)。  
   
 ### <a name="localize-code"></a>本地化代码
  除了本地化功能字符串和[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]标记中，您还必须本地化消息字符串和解决方案代码中出现的错误字符串。 本地化信息和错误消息包含在附属程序集中。 附属程序集包含的用户均可见，如字符串[!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)]文本和输出消息，如异常。  
@@ -121,7 +121,7 @@ $Resources:String ID
 HttpContext.GetGlobalResourceObject("<Resource File Name>", "<String ID>")  
 ```  
   
- 有关更多信息，请参见[如何：本地化代码](../sharepoint/how-to-localize-code.md)。  
+ 有关详细信息，请参阅[如何：本地化代码](../sharepoint/how-to-localize-code.md)。  
   
 #### <a name="web-part-code-localization"></a>Web 部件代码本地化
  Web 部件包括自定义属性编辑器功能，其中包括使用硬编码的字符串，例如 WebDisplayName、 Category 和 WebDescription 代码属性。 若要替换这些属性的字符串值，请创建单独的类派生特性的类。 在这些类中，设置该属性的属性。 特性属性依赖于类的基类。 例如，WebDisplayName 特性属性为 DisplayNameValue，WebDescription 特性属性为 DescriptionValue。  

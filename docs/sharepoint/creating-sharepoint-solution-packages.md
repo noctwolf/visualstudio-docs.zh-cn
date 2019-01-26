@@ -8,27 +8,27 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 - packages [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d275b7d2e4ccfea5d89148b6b46883fa32e6560
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 059bf8068ad3a14d01f0a8167900563eebdff215
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966659"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867983"
 ---
 # <a name="create-sharepoint-solution-packages"></a>创建 SharePoint 解决方案包
   通过使用包设计器，可以创建和自定义部署包。 例如，可以添加 SharePoint 项目项和功能，重置 IIS 服务器、 设置功能激活作用域，并识别功能依赖关系。 在设计器还会生成一个清单，描述每个包的 XML 文件。  
   
 ## <a name="packaging-tools"></a>打包工具
- 可以使用**包设计器**以自定义的包，并生成清单。 可以包括多个 SharePoint 项目项、 配置是否应重置，请在 Web 服务器，并将其设置部署服务器类型。 有关更多信息，请参见[如何：添加和删除使用包设计器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)。  
+ 可以使用**包设计器**以自定义的包，并生成清单。 可以包括多个 SharePoint 项目项、 配置是否应重置，请在 Web 服务器，并将其设置部署服务器类型。 有关详细信息，请参阅[如何：添加和删除使用包设计器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)。  
   
- 或者，可以使用**打包资源管理器**若要修改的功能和包文件中的项 (*.wsp*)。 有关更多信息，请参见[如何：添加和删除使用打包资源管理器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
+ 或者，可以使用**打包资源管理器**若要修改的功能和包文件中的项 (*.wsp*)。 有关详细信息，请参阅[如何：添加和删除使用打包资源管理器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
   
- 可以使用 Visual Studio 和 MSBuild 创建包 (*.wsp*) 要部署 SharePoint 解决方案的文件。 此过程会生成所需的 SharePoint 部署清单文件。 有关更多信息，请参见[如何：使用 MSBuild 任务创建 SharePoint 解决方案包](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)。  
+ 可以使用 Visual Studio 和 MSBuild 创建包 (*.wsp*) 要部署 SharePoint 解决方案的文件。 此过程会生成所需的 SharePoint 部署清单文件。 有关详细信息，请参阅[如何：使用 MSBuild 任务创建 SharePoint 解决方案包](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)。  
   
 ## <a name="package-designer-options"></a>包设计器选项
  下表显示的属性可以自定义中使用的 SharePoint 包**包设计器**。  
@@ -37,7 +37,7 @@ ms.locfileid: "53966659"
 |-------------------------------|------------------------------------|  
 |name|必需。 包的默认名称设置为*ProjectName*。|  
 |重置 web 服务器|可选。 如果你想要重新启动 Web 服务器后的，请选择 *.wsp*文件安装在 SharePoint 服务器上。|  
-|部署服务器类型|必需。 默认情况下，作用域设置为应用程序服务器。<br /><br /> 应用程序服务器：描述承载服务的服务器。<br /><br /> WebFrontEnd:描述承载网站的服务器。|  
+|部署服务器类型|必需。 默认情况下，作用域设置为应用程序服务器。<br /><br /> ApplicationServer:描述承载服务的服务器。<br /><br /> WebFrontEnd:描述承载网站的服务器。|  
 |解决方案中的项|所有 SharePoint 项目项和可以添加到包的功能。|  
 |包中的项|可选。 所有 SharePoint 项目和想要部署包中的功能。|  
   

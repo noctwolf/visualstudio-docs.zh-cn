@@ -15,15 +15,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25cfbeba37be0d11e05b4524f5e683cfa798da6e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74a6c196bbde0ae6765627e768dd926b992d374d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964645"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868269"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>文档级自定义项中的缓存的数据
   文档级自定义项的主要目标是将数据从 Office 文档中的视图。 数据是指存储在文档中，包括数字和文本的信息。 视图是指用户界面和 Microsoft Office Word 和 Microsoft Office Excel 对象模型。  
@@ -56,7 +56,7 @@ ms.locfileid: "53964645"
   
 ||数据缓存|自定义 XML 部件|  
 |-|----------------|----------------------|  
-|哪些 Office 应用程序可以使用这些？|以下应用程序的文档级自定义：<br /><br /> -Excel<br />-Word|以下应用程序的文档级和应用程序级别解决方案：<br /><br /> -Excel<br />-PowerPoint<br />-Word|  
+|哪些 Office 应用程序可以使用这些？|以下应用程序的文档级自定义：<br /><br /> -   Excel<br />-   Word|以下应用程序的文档级和应用程序级别解决方案：<br /><br /> -   Excel<br />-   PowerPoint<br />-   Word|  
 |您可以存储哪些类型的数据？|中满足某些要求将自定义程序集的任何公共对象。 有关详细信息，请参阅[缓存数据](../vsto/caching-data.md)。|任何 XML 数据。|  
 |您可以访问而无需启动 Microsoft Office 应用程序的数据？|是的通过使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类提供的[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。|是的通过使用中的类<xref:System.IO.Packaging>命名空间，或使用 Open XML 格式 SDK。|  
   

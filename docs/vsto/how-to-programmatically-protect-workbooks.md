@@ -12,24 +12,24 @@ helpviewer_keywords:
 - document protection, removing from workbooks
 - document protection, adding to workbooks
 - workbooks, protecting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b41eed7ee8b20cc807ada75ee0a4c1ccd1519fc6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5333504ed534373b6bb65902edb2566953de7a59
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900765"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863677"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>如何：以编程方式保护工作簿
   你可以保护 Microsoft Office Excel 工作簿，以便用户不能添加或删除工作表，并还以编程方式取消保护工作簿。 （可选） 可以指定一个密码，指示是否希望保护 （因此，用户不能移动表），该结构以及指示是否要保护的工作簿的 windows。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- 保护工作簿不会阻止用户编辑单元格。 若要保护的数据，您必须保护工作表。 有关更多信息，请参见[如何：以编程方式保护工作表](../vsto/how-to-programmatically-protect-worksheets.md)。  
+ 保护工作簿不会阻止用户编辑单元格。 若要保护的数据，您必须保护工作表。 有关详细信息，请参阅[如何：以编程方式保护工作表](../vsto/how-to-programmatically-protect-worksheets.md)。  
   
  下面的代码示例使用变量来存放从用户获得的密码。  
   

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - exporting Ribbon
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1f50ec718e1f3a6c9780d956f9b845abd890bb1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 706c200a1327ed63cc0a37f002f6bb745cbea3ae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894056"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876208"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>如何：将功能区从功能区设计器导出到功能区 XML
   **功能区 （可视化设计器）** 项不支持的功能区自定义的所有可能类型。 若要以高级方式自定义功能区，可以将功能区从设计器导出到功能区 XML，并直接编辑 XML。  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f5f11b09c5fd44b59ed47702d0eee2e6f563223
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e829a3c9a8621856f70fbd8d3a99fb68c6b2a352
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856587"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863755"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>如何：向工作表添加 XMLMappedRange 控件
   在将 XML 元素映射到 Microsoft Office Excel 中的单元格时，Visual Studio 会自动添加<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>到工作表中的控件。  
@@ -37,7 +37,7 @@ ms.locfileid: "53856587"
 3.  上**开发人员**选项卡上，单击**源**。  
   
     > [!NOTE]  
-    >  如果**开发人员**选项卡不在功能区上可见，则必须启用它。 有关更多信息，请参见[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果**开发人员**选项卡不在功能区上可见，则必须启用它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
      **XML 源**此时将显示任务窗格。  
   

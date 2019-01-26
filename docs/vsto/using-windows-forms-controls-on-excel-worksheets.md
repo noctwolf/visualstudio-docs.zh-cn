@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], Excel
 - Excel [Office development in Visual Studio], Windows Forms controls
 - controls [Office development in Visual Studio], Window Forms controls
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: abc3e08a867af9b04d7ce1da1449f108a099b238
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 144bcf1d9b0b96944e1493471106fe8aa6c8031b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823414"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871528"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>使用 Excel 工作表上的 Windows 窗体控件
   以相同方式向 Windows 窗体添加控件，可以向 Microsoft Office Excel 工作簿添加 Windows 窗体控件。 有关使用文档上的控件的常规信息，请参阅[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
@@ -30,7 +30,7 @@ ms.locfileid: "53823414"
  有一些特定于 Excel 的几个注意事项。  
   
 ### <a name="match-control-size-to-cell-size"></a>匹配控件大小与单元格大小  
- 可以将控件设置为当父单元格的大小更改时自动重设大小。 有关更多信息，请参见[如何：调整工作表单元格中的控件的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)。  
+ 可以将控件设置为当父单元格的大小更改时自动重设大小。 有关详细信息，请参阅[如何：调整工作表单元格中的控件的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)。  
   
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>添加由所有工作表共享的组件  
  可以将希望在所有工作表之间共享的组件（如 <xref:System.Data.DataSet>）添加到工作簿设计器而不是工作表。 该组件将出现在组件栏中。  

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - ranges, extending
 - documents [Office development in Visual Studio], extending ranges
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f6bfb4979285753a5dd15dd4fe4dabfab013309
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed2df2d844383ab0cfc26d67104d03644e1db671
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919659"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868857"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>如何：以编程方式扩展文档中的范围
   定义 Microsoft Office Word 文档中的 <xref:Microsoft.Office.Interop.Word.Range> 对象后，可以通过使用 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法来更改其起点和终点。 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>并<xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A>方法不采用相同的两个自变量*单元*并*计数*。 *计数*参数是要移动的单位数和*单元*参数可以是下列任一<xref:Microsoft.Office.Interop.Word.WdUnits>值：  
@@ -49,7 +49,7 @@ ms.locfileid: "53919659"
   
 ## <a name="to-extend-a-range"></a>若要扩展范围  
   
-1.  定义字符的范围。 有关更多信息，请参见[如何：以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)。  
+1.  定义字符的范围。 有关详细信息，请参阅[如何：以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)。  
   
      下面的代码示例可用于文档级自定义项。  
   

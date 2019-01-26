@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], adding entity instances
 - BDC [SharePoint development in Visual Studio], adding entities
 - Business Data Connectivity service [SharePoint development in Visual Studio], Creator
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01ad692065a51d51fc1f6b72acc563688da3a217
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe40d6f8b5032dbbffeeda3edaff3b1c89aadb3f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925415"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867151"
 ---
 # <a name="how-to-add-a-creator-method"></a>如何：添加 Creator 方法
   创建者方法将新数据添加到的数据源的实体。 业务数据连接 (BDC) 服务调用此方法时用户选择**新项**按钮**功能区**的基于模型的列表。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  

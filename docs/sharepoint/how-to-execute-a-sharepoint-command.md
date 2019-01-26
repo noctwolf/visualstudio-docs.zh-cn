@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio], executing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6e529420db8261e87c856e2fc80ef436bbc3e73
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: acf9ec69c308c62d55899351594fca01ac18bf97
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953113"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865315"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>如何：执行 SharePoint 命令
   如果你想要在 SharePoint 工具扩展中使用服务器对象模型，则必须创建一个自定义*SharePoint 命令*来调用 API。 定义该命令并将其部署与 SharePoint 工具扩展插件后，您的扩展插件可以执行命令来调入 SharePoint 服务器对象模型。 若要执行此命令，使用 ExecuteCommand 方法之一<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>对象。  

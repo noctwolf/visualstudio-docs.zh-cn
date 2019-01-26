@@ -10,17 +10,17 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint projects, creating custom templates
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6c683166eb2192a32e1d829800abed16db43e0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9edaadff5fd1e4f180f38b7609c90c031656792
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832146"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864600"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>演练：使用项目模板，第 1 部分创建站点栏项目项
   SharePoint 项目是针对一个或多个 SharePoint 项目项的容器。 可以通过创建自己的 SharePoint 项目项类型，然后将其关联到的项目模板来扩展 Visual Studio 中的 SharePoint 项目系统。 在此演练中，将为创建网站栏中，定义项目项类型，然后将创建可用于创建包含网站栏项目项的新项目的项目模板。
@@ -230,7 +230,7 @@ ms.locfileid: "53832146"
 
 - *Feature1.feature*
 
-- *包*
+- *Package.package*
 
 - *SiteColumnProjectTemplate.vstemplate*
 

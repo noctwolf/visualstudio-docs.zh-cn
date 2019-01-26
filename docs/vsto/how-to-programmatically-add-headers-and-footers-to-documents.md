@@ -12,15 +12,15 @@ helpviewer_keywords:
 - footers, adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e06c59fc61bff25268acc1ab70a90b68a1b9101d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e9c12af1cfbcbebe080e40dc5cbf83975c15080
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848449"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869861"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>如何：以编程方式向文档添加页眉和页脚
   可以通过使用 <xref:Microsoft.Office.Interop.Word.Section> 的 <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> 属性和 <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> 属性将文本添加到文档中的页眉和页脚。 文档各部分均包含三个页眉和页脚：  

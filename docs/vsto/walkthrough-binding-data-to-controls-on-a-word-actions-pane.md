@@ -12,17 +12,17 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], actions panes
 - actions panes [Office development in Visual Studio], binding controls
 - smart documents [Office development in Visual Studio], data binding
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a113cbdffffb202a832ce145c4507bf5845ff52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49d307b687943ec99e04166b66e9ca5b15efb2a3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926445"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866802"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>演练：将数据绑定到 Word 操作窗格上的控件
   本演练演示了数据绑定到 Word 中的操作窗格上的控件。 控件演示 SQL Server 数据库中表之间的主/从关系。  
@@ -58,7 +58,7 @@ ms.locfileid: "53926445"
   
 1.  使用名称创建一个 Word 文档项目**我的 Word 操作窗格**。 在向导中，选择**创建一个新文档**。  
   
-     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新的 Word 文档并将添加**我的 Word 操作窗格**投影到**解决方案资源管理器**。  
   

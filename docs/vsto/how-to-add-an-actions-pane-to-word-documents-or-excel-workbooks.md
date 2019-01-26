@@ -12,15 +12,15 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4630834f1673e1c96ca67b90a8bb329951f53de1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ad0a482b38d91ae7812e794a56e0eb380cd016a8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827015"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867946"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>如何：将操作窗格添加到 Word 文档或 Excel 工作簿
   若要将操作窗格添加到 Microsoft Office Word 文档或 Microsoft Excel 工作簿，首先创建 Windows 窗体用户控件。 然后，将用户控件添加到<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>的属性`ThisDocument.ActionsPane`字段 (Word) 或`ThisWorkbook.ActionsPane`在项目中的字段 (Excel)。  

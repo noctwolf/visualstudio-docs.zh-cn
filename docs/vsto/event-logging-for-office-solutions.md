@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, event viewer
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cca606022a8b35ba43f9174925aac978835d289
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 029a4390036474d651f9e23becbb3660f097ed13
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857048"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867658"
 ---
 # <a name="event-logging-for-office-solutions"></a>Office 解决方案的事件日志
   你可以使用 Windows 事件查看器来查看当你安装或卸载 Office 解决方案时，由 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 捕捉到的异常消息。 你可使用事件记录器中的这些消息来解决安装和部署问题。  

@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - FeatureProperty element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3dc58683d2cff7e6c25493924b63666c390cdffc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c9407e78a32ad9f9d8ee4ecd1ae4462409decfc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991183"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867905"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty 元素
   表示部署到 SharePoint 时，将包括与某个功能的自定义属性。 将功能部署后，您可以在代码中访问属性。  
@@ -55,7 +55,7 @@ ms.locfileid: "53991183"
   
 |||  
 |-|-|  
-|**命名空间**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空间**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**架构名称**|SharePoint 项目项架构|  
 |**验证文件**|ProjectItemModelSchema.xsd|  
 |**可以为空**|否|  

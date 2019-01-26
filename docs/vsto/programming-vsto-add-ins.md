@@ -27,17 +27,17 @@ helpviewer_keywords:
 - ThisAddIn_Startup
 - application-level add-ins [Office development in Visual Studio], programming
 - ThisAddIn_Shutdown
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3520eb8af160a12de5cb74fa40094004e041c0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef06079322b521abca2aa1fb6becf720c4ad86c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830646"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867242"
 ---
 # <a name="program-vsto-add-ins"></a>VSTO 外接程序
   通过创建 VSTO 外接程序扩展 Microsoft Office 应用程序时，可以直接接针对项目中的 `ThisAddIn` 类编写代码。 此类可用于执行下列任务，例如：访问 Microsoft Office 主机应用程序的对象模型、自定义应用程序的用户界面 (UI) 和向其他 Office 解决方公开 VSTO 外接程序中的对象。  
@@ -125,7 +125,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 |通过实现可扩展性接口，在 Microsoft Office 系统中自定义功能。|重写 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法以返回实现该接口的类的实例。 有关详细信息，请参阅[使用扩展性接口自定义 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)。 **注意：** 若要自定义功能区 UI，你可以重写 <xref:Microsoft.Office.Tools.AddInBase.CreateRibbonExtensibilityObject%2A> 方法。|  
   
 ### <a name="understand-the-design-of-the-thisaddin-class"></a>了解 ThisAddIn 类的设计  
- 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的项目中， <xref:Microsoft.Office.Tools.AddIn> 是一个接口。 `ThisAddIn` 类是从 <xref:Microsoft.Office.Tools.AddInBase> 类派生的。 此基类会将对其成员的所有调用都重定向到 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 中 <xref:Microsoft.Office.Tools.AddIn> 接口的内部实现。  
+ 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的项目中， <xref:Microsoft.Office.Tools.AddIn> 是一个接口。 `ThisAddIn` 类是从 <xref:Microsoft.Office.Tools.AddInBase> 类派生的。 此基类会将对其成员的所有调用都重定向到 <xref:Microsoft.Office.Tools.AddIn> 中 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]接口的内部实现。  
   
  在 Outlook 的 VSTO 外接程序项目中，`ThisAddIn` 类派生自面向 .NET Framework 3.5 的项目中的 `Microsoft.Office.Tools.Outlook.OutlookAddIn` 类，以及面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 的项目中的 <xref:Microsoft.Office.Tools.Outlook.OutlookAddInBase>。 这些基类提供了一些附加功能以支持窗体区域。 有关窗体区域的详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。  
   

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - missing field [Office development in Visual Studio]
 - optional parameters [Office development in Visual Studio]
 - parameters [Office development in Visual Studio], optional
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34f19c7fa27893b071251f61d01f2dd9c9809d3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0a65799bb3a92d1747d365ecd341d1d7835747a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905093"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868256"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office 解决方案中的可选参数
   Microsoft Office 应用程序的对象模型中的许多方法都接受可选参数。 如果使用 Visual Basic 在 Visual Studio 中开发 Office 解决方案，你不必为可选参数传递值，因为系统会为每个缺少的参数自动使用默认值。 在大多数情况下，也可以省略 Visual C# 项目中的可选参数。 但是，您不能省略可选**ref**的参数`ThisDocument`在文档级 Word 项目中的类。  

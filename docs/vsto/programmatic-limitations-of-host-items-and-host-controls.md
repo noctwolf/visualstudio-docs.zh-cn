@@ -25,17 +25,17 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], host items
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70e68a47d4685e3bba9e58fb225f2105f8bdabe4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: facf78a9c737dbaa0d3a48e93d8424d5288f683a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966020"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865458"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>主机项和主机控件的编程限制
   每个宿主项和宿主控件的行为都类似于相应的本机 Microsoft Office Word 或 Microsoft Office Excel 对象，并且具有附加功能。 但是，在运行时宿主项和宿主控件的行为与本机 Office 对象之间存在一些本质区别。  

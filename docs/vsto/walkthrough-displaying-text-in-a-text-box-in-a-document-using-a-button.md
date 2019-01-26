@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - text boxes, displaying text in documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 188fc5d954bb41ced952e48874816bdfd503765b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dd685ea02dc8943edc1aa214b97b61d0fa9ff35b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910134"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863612"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>演练：在文本框中使用按钮在文档中显示文本
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中使用按钮和文本框。  
@@ -46,7 +46,7 @@ ms.locfileid: "53910134"
   
 1.  使用名称创建一个 Word 文档项目**我的 Word 按钮**。 在向导中，选择**创建一个新文档**。  
   
-     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新的 Word 文档并将添加**我的 Word 按钮**投影到**解决方案资源管理器**。  
   
@@ -68,7 +68,7 @@ ms.locfileid: "53910134"
   
 5. 拖动**按钮**控制对文档和更改以下属性。  
   
-   |属性|值|  
+   |属性|“值”|  
    |--------------|-----------|  
    |**名称**|**insertText**|  
    |**文本**|**插入文本**|  

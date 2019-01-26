@@ -11,17 +11,17 @@ helpviewer_keywords:
 - registry keys [Office development in Visual Studio]
 - application-level add-ins [Office development in Visual Studio], registry entries
 - registry entries [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3436ddcdcb8c521985487738d4045e1e1bbd830a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8360194e9efc59634162781fd3b4e0787c1c3260
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909107"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870160"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 外接程序的注册表项
   部署使用 Visual Studio 创建的 VSTO 外接程序时，必须创建一组特定的注册表项。 这些注册表项可提供一些信息，使 Microsoft Office 应用程序能够发现和加载 VSTO 外接程序。  
@@ -59,19 +59,19 @@ ms.locfileid: "53909107"
   
 |Office 版本|配置路径|  
 |--------------------|------------------------|  
-|32 位|*根*\Software\Microsoft\Office\\*应用程序名称*\Addins\\*外接程序 ID*|  
-|64 位|*根*\Software\Wow6432Node\Microsoft\Office\\*应用程序名称*\Addins\\*外接程序 ID*|  
+|32 位|*Root*\Software\Microsoft\Office\\*application name*\Addins\\*add-in ID*|  
+|64 位|*Root*\Software\Wow6432Node\Microsoft\Office\\*application name*\Addins\\*add-in ID*|  
   
  **Visio**  
   
 |Office 版本|配置路径|  
 |--------------------|------------------------|  
-|32 位|*根*\Software\Microsoft\Visio\Addins\\*外接程序 ID*|  
-|64 位|*根*\Software\Wow6432Node\Visio\Addins\\*外接程序 ID*|  
+|32 位|*Root*\Software\Microsoft\Visio\Addins\\*add-in ID*|  
+|64 位|*Root*\Software\Wow6432Node\Visio\Addins\\*add-in ID*|  
   
  下表列出了此注册表项下的条目。  
   
-|条目|类型|值|  
+|条目|类型|“值”|  
 |-----------|----------|-----------|  
 |**说明**|REG_SZ|必需。 VSTO 外接程序的简短说明。<br /><br /> 当用户在 Microsoft Office 应用程序的 **“选项”** 对话框的 **“外接程序”** 窗格中选择 VSTO 外接程序时，将会显示此说明。|  
 |**FriendlyName**|REG_SZ|必需。 Microsoft Office 应用程序中的 **“COM 外接程序”** 对话框中显示的 VSTO 外接程序的描述性名称。 默认值为 VSTO 外接程序 ID。|  
@@ -81,7 +81,7 @@ ms.locfileid: "53909107"
 ###  <a name="OutlookEntries"></a> Outlook 窗体区域的注册表项  
  如果在 Outlook 的 VSTO 外接程序中创建自定义窗体区域，则会使用其他注册表项在 Outlook 中注册该窗体区域。 这些项是在针对窗体区域支持的每个邮件类别的不同注册表项下创建的。 这些注册表项位于以下位置，其中*根*是**HKEY_CURRENT_USER**或**HKEY_LOCAL_MACHINE**。  
   
- *根*\Software\Microsoft\Office\Outlook\FormRegions\\*message 类*  
+ *Root*\Software\Microsoft\Office\Outlook\FormRegions\\*message class*  
   
  与所有 VSTO 外接程序共享的其他注册表项类似，生成项目时，Visual Studio 会在开发计算机上创建窗体区域注册表项。 如果使用 ClickOnce 来部署 VSTO 外接程序中，最终用户计算机上自动创建的注册表项。 如果使用 Windows Installer 部署 VSTO 外接程序中，您必须配置 InstallShield Limited Edition 项目最终用户计算机上创建注册表项。  
   

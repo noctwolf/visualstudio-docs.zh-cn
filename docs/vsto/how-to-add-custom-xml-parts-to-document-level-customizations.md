@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], custom XML parts
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80d8b809464cd9209b8125595fef8793fc052943
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb87650156f5ed0060170b0b9f809924d2326fce
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846381"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868022"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>如何：将自定义 XML 部件添加到文档级自定义项
   你可以通过在文档级自定义中创建自定义 XML 部件将 XML 数据存储在 Microsoft Office Excel 工作表或 Microsoft Office Word 文档中。 有关详细信息，请参阅[自定义 XML 部件概述](../vsto/custom-xml-parts-overview.md)。  
