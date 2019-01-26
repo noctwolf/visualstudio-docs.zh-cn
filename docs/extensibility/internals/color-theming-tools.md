@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 89ab5741-c664-4b45-8662-3dd01a5761be
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2512cd4d8e5dfb68ab9db3d467b183ba201442ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 856af3b73e20cfb320eb83b0650dadb5c6ff6d0c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836278"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949960"
 ---
 # <a name="color-theme-tools"></a>颜色主题工具
 Visual Studio SDK 提供了许多工具来帮助你创建和管理颜色主题。  

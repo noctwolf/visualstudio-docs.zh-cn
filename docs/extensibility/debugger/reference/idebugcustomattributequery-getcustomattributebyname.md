@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d82e650a1254635719cc663a6dab14456952084
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1867b2524508a5c786cfe42bea68dc0ff5ea76d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912566"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941335"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 检索在给定其名称的自定义属性。  
@@ -50,7 +50,7 @@ int GetCustomAttributeByName(
  [out]以字节为单位的长度`ppBlob`参数。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 如果自定义特性不存在，将返回`S_FALSE`。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 如果自定义特性不存在，将返回`S_FALSE`。 否则，返回错误代码。  
   
 ## <a name="example"></a>示例  
  下面的示例演示如何实现此方法对于**CDebugClassFieldSymbol**对象，它公开[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)接口。  

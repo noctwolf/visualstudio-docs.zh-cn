@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22fdb969112278fafb636e0162db4ebc93b9a657
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3726ee6995e770d89e5916a922c0546439c3ba14
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820405"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953505"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何：将扩展性项目迁移到 Visual Studio 2017
 
@@ -98,13 +98,13 @@ ms.locfileid: "53820405"
 
   ![添加 roslyn 必备组件](media/add-roslyn-prerequisite.png)
 
-* 按**确定**。
+* 按“确定”。
 
 ## <a name="update-debug-settings-for-the-project"></a>更新项目的调试设置
 
 如果你想要调试你的 Visual Studio 实验实例中的扩展，请确保项目设置**调试** > **启动操作**具有**启动外部程序：** 值设置为*devenv.exe* Visual Studio 2017 安装的文件。
 
-它可能如下所示：*C:\Program 文件 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
+它可能如下所示：*C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![启动外部程序](media/start-external-program.png)
 
@@ -175,7 +175,7 @@ WPF | 托管桌面工作负载核心 | Microsoft.VisualStudio.Component.ManagedD
 
 如果不确定哪个组件包含特定的二进制文件，下载[组件-> 二进制映射电子表格](https://aka.ms/vs2017componentid-binaries)。
 
-### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017 ComponentBinaryMapping.xlsx
+### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
 在 Excel 表中有四列：**组件名称**， **ComponentId**，**版本**，并且**二进制 / 文件名称**。  可以使用筛选器来搜索和查找特定组件和二进制文件。
 

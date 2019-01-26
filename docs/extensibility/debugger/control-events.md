@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 0fc63484-5fb6-4887-9ea4-1905b459ca9d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1a9fda07e49df71790419e487b3906799433a2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4cd9fc3d55f06aa196d5b9cbe0ee7aefa8f2036
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820473"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980149"
 ---
 # <a name="control-events"></a>控件事件
 必须将事件发送程序的受控的执行过程。 使用的所有事件发送[IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md)界面，并且具有需要实现的属性[IDebugEvent2::GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md)方法。  

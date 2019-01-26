@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c512d242cffc39af5d159dbe720047de7a226bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4c6f09f6a29ff19c8ad43495502010713e77aa0f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898566"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938388"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio 的应用程序模式
 ##  <a name="BKMK_WindowInteractions"></a> 窗口的交互  
@@ -511,19 +511,19 @@ Specialty"签名"对话框可能主题化。 主题对话框具有独特的外�
 | 没有修饰符 | 目标 | 将引用添加到原始项 | 将引用添加到原始项 |  
 | 没有修饰符 | 源 | 对原始项删除引用 | 将保留原始项目 |  
 | 没有修饰符 | 结果 | `DROPEFFECT_MOVE` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_LINK` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 |  
-| 按住 shift + 拖动 | 操作 | 移动 | 不删除 |  
-| 按住 shift + 拖动 | 目标 | 将引用添加到原始项 | 不删除 |  
-| 按住 shift + 拖动 | 源 | 对原始项删除引用 | 不删除 |  
-| 按住 shift + 拖动 | 结果 | `DROPEFFECT_MOVE` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | 不删除 |  
-| Ctrl + 拖 | 操作 | 复制 | 不删除 |  
-| Ctrl + 拖 | 目标 | 将引用添加到原始项 | 不删除 |  
-| Ctrl + 拖 | 源 | 将保留原始项目引用 | 不删除 |  
-| Ctrl + 拖 | 结果 | `DROPEFFECT_COPY` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | 不删除 |  
-| Ctrl + Shift + 拖动 | 操作 | 链接 | 链接 |  
-| Ctrl + Shift + 拖动 | 目标 | 将引用添加到原始项 | 将引用添加到原始项 |  
-| Ctrl + Shift + 拖动 | 源 | 将保留原始项目引用 | 将保留原始项目 |  
-| Ctrl + Shift + 拖动 | 结果 | `DROPEFFECT_LINK` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_LINK` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 |  
-| Ctrl + Shift + 拖动 | 说明 | 与 Windows 资源管理器中的快捷方式拖放行为相同。 ||  
+| Shift+Drag | 操作 | 移动 | 不删除 |  
+| Shift+Drag | 目标 | 将引用添加到原始项 | 不删除 |  
+| Shift+Drag | 源 | 对原始项删除引用 | 不删除 |  
+| Shift+Drag | 结果 | `DROPEFFECT_MOVE` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | 不删除 |  
+| Ctrl+Drag | 操作 | 复制 | 不删除 |  
+| Ctrl+Drag | 目标 | 将引用添加到原始项 | 不删除 |  
+| Ctrl+Drag | 源 | 将保留原始项目引用 | 不删除 |  
+| Ctrl+Drag | 结果 | `DROPEFFECT_COPY` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | 不删除 |  
+| Ctrl+Shift+Drag | 操作 | 链接 | 链接 |  
+| Ctrl+Shift+Drag | 目标 | 将引用添加到原始项 | 将引用添加到原始项 |  
+| Ctrl+Shift+Drag | 源 | 将保留原始项目引用 | 将保留原始项目 |  
+| Ctrl+Shift+Drag | 结果 | `DROPEFFECT_LINK` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_LINK` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 |  
+| Ctrl+Shift+Drag | 说明 | 与 Windows 资源管理器中的快捷方式拖放行为相同。 ||  
 | 剪切/粘贴 | 操作 | 移动 | 链接 |  
 | 剪切/粘贴 | 目标 | 将引用添加到原始项 | 将引用添加到原始项 |  
 | 剪切/粘贴 | 源 | 将保留原始项目引用|将保留原始项目 |  
@@ -542,15 +542,15 @@ Specialty"签名"对话框可能主题化。 主题对话框具有独特的外�
 | 没有修饰符 | 操作 | 移动 | 移动 |
 | 没有修饰符 | 目标 | 复制到目标位置的项 | 复制到目标位置的项 |
 | 没有修饰符 | 源 | 对原始项删除引用 | 对原始项删除引用 |
-| 按住 shift + 拖动 | 操作 | 移动 | 移动 |
-| 按住 shift + 拖动 | 目标 | 复制到目标位置的项 | 复制到目标位置的项 |
-| 按住 shift + 拖动 | 源 | 对原始项删除引用 | 从原始位置中删除项 |
-| 按住 shift + 拖动 | 结果 | `DROPEFFECT_MOVE` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_MOVE` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 |
-| Ctrl + 拖 | 操作 | 复制 | 复制 |
-| Ctrl + 拖 | 目标 | 复制到目标位置的项 | 复制到目标位置的项 |
-| Ctrl + 拖 | 源 | 将保留原始项目引用 | 将保留原始项目引用 |
-| Ctrl + 拖 | 结果 | `DROPEFFECT_COPY` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_COPY` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 |
-| Ctrl + Shift + 拖动 | | 不删除 | 不删除 |
+| Shift+Drag | 操作 | 移动 | 移动 |
+| Shift+Drag | 目标 | 复制到目标位置的项 | 复制到目标位置的项 |
+| Shift+Drag | 源 | 对原始项删除引用 | 从原始位置中删除项 |
+| Shift+Drag | 结果 | `DROPEFFECT_MOVE` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_MOVE` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 |
+| Ctrl+Drag | 操作 | 复制 | 复制 |
+| Ctrl+Drag | 目标 | 复制到目标位置的项 | 复制到目标位置的项 |
+| Ctrl+Drag | 源 | 将保留原始项目引用 | 将保留原始项目引用 |
+| Ctrl+Drag | 结果 | `DROPEFFECT_COPY` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_COPY` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 |
+| Ctrl+Shift+Drag | | 不删除 | 不删除 |
 | 剪切/粘贴 | 操作 | 移动 | 移动 |
 | 剪切/粘贴 | 目标 | 复制到目标位置的项 | 复制到目标位置的项 |
 | 剪切/粘贴 | 源 | 对原始项删除引用 | 从原始位置中删除项 |
@@ -569,18 +569,18 @@ Specialty"签名"对话框可能主题化。 主题对话框具有独特的外�
 | 没有修饰符 | 目标 | 将引用添加到原始项 | 复制到目标位置的项 |
 | 没有修饰符 | 源 | 对原始项删除引用 | 对原始项删除引用 |
 | 没有修饰符 | 结果 | `DROPEFFECT_ MOVE` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_ MOVE` 作为从操作返回`::Drop`和从存储中的原始位置删除项 |
-| 按住 shift + 拖动 | 操作 | 移动 | 移动 |
-| 按住 shift + 拖动 | 目标 | 将引用添加到原始项 | 复制到目标位置的项 |
-| 按住 shift + 拖动 | 源 | 对原始项删除引用 | 从原始位置中删除项 | 
-| 按住 shift + 拖动 | 结果 | `DROPEFFECT_ MOVE` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_ MOVE` 作为从操作返回`::Drop`和从存储中的原始位置删除项 |
-| Ctrl + 拖 | 操作 | 复制 | 复制 |
-| Ctrl + 拖 | 目标 | 将引用添加到原始项 | 复制到目标位置的项 |
-| Ctrl + 拖 | 源 | 将保留原始项目引用 | 将保留原始项目 |
-| Ctrl + 拖 | 结果 | `DROPEFFECT_ COPY` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_ COPY` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 |
-| Ctrl + Shift + 拖动 | 操作 | 链接 | 链接 |
-| Ctrl + Shift + 拖动 | 目标 | 将引用添加到原始项 | 将引用添加到原始源项 |
-| Ctrl + Shift + 拖动 | 源 | 将保留原始项目引用 | 将保留原始项目 |
-| Ctrl + Shift + 拖动 | 结果 | `DROPEFFECT_ LINK` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_ LINK` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 |
+| Shift+Drag | 操作 | 移动 | 移动 |
+| Shift+Drag | 目标 | 将引用添加到原始项 | 复制到目标位置的项 |
+| Shift+Drag | 源 | 对原始项删除引用 | 从原始位置中删除项 | 
+| Shift+Drag | 结果 | `DROPEFFECT_ MOVE` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_ MOVE` 作为从操作返回`::Drop`和从存储中的原始位置删除项 |
+| Ctrl+Drag | 操作 | 复制 | 复制 |
+| Ctrl+Drag | 目标 | 将引用添加到原始项 | 复制到目标位置的项 |
+| Ctrl+Drag | 源 | 将保留原始项目引用 | 将保留原始项目 |
+| Ctrl+Drag | 结果 | `DROPEFFECT_ COPY` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_ COPY` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 |
+| Ctrl+Shift+Drag | 操作 | 链接 | 链接 |
+| Ctrl+Shift+Drag | 目标 | 将引用添加到原始项 | 将引用添加到原始源项 |
+| Ctrl+Shift+Drag | 源 | 将保留原始项目引用 | 将保留原始项目 |
+| Ctrl+Shift+Drag | 结果 | `DROPEFFECT_ LINK` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 | `DROPEFFECT_ LINK` 作为从操作返回`::Drop`和项目仍保留在存储中的原始位置 |
 | 剪切/粘贴 | 操作 | 移动 | 移动 |
 | 剪切/粘贴 | 目标 | 复制到目标位置的项 | 复制到目标位置的项 |
 | 剪切/粘贴 | 源 | 对原始项删除引用 | 从原始位置中删除项 |

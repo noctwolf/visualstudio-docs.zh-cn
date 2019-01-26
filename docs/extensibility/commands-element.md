@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 704a37b1aeb211921b962fd816af89abb686a14e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d846039532f5279a8945ada465d4d8029ddd8aff
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955927"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940188"
 ---
 # <a name="commands-element"></a>Commands 元素
 表示 VSPackage 工具栏上的命令的集合。 该集合中可以具有最多五个小节中，如下所示： 菜单、 组、 按钮、 combos 和位图。  

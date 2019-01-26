@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 523c7de972958eff9224896d3a59543163eb7b9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9219ffe7289da1a8d6477d17cb4212ff876510c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936810"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945159"
 ---
 # <a name="supporting-source-control"></a>支持源代码管理
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持文件签出、 签入和你的项目或编辑器的其他源代码管理操作。 作为源控制客户端[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]旨在与源代码管理包，如交互[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，后者提供存档、 版本控制和一组动态定义的文件的控件功能。  

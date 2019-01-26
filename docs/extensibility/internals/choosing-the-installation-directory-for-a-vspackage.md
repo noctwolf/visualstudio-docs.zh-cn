@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df13749a16ad107c864fa1dcf1b3e0f4e7cbed41
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e452523c8789214d35281840cb307d329e485ada
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926289"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978537"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>为 VSPackage 选择安装目录
 VSPackage 和及其支持文件必须位于用户的文件系统上。 位置取决于 VSPackage 是否托管或非托管，通过并行版本控制方案和用户的选择。  
@@ -29,11 +29,11 @@ VSPackage 和及其支持文件必须位于用户的文件系统上。 位置取
   
  如果通过并行方案使用版本控制的 VSPackage，你可以使用子目录来存储不同版本。 例如：
 
- *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2002年\\*
+ *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2002\\*
   
- *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2003年\\*
+ *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2003\\*
   
- *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2005年\\*
+ *&lt;ProgramFilesFolder&gt;\\&lt;MyCompany&gt;\\&lt;MyVSPackageProduct&gt;\\V1.0\\2005\\*
   
 ## <a name="managed-vspackages"></a>托管的 VSPackage  
  也可以在任何位置安装托管的 Vspackage。 但是，应考虑始终将它们安装到全局程序集缓存 (GAC) 来减少程序集加载时间。 托管的 Vspackage 始终是强名称的程序集，因为它们安装在 GAC 中意味着仅在安装时，采用其强名称签名验证。 文件系统中的其他位置安装了强名称的程序集必须具有每次加载时验证其签名。 当用户在 GAC 中安装托管的 Vspackage 时，使用 regpkg 工具 **/assembly**开关来写入注册表项指向程序集的强名称。  

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a09926abb9118a4116ae826607d5a741b3872ffb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ba516701ec232cb49edfee9888625789b544d62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865013"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948643"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>旧版语言服务中的语法着色
 语法颜色设置是一项功能，使不同的编程语言来显示不同的颜色和样式中的源代码文件中的元素。 若要支持此功能，您需要提供分析器或扫描程序识别词法元素或在文件中的标记的类型。 许多语言的着色它们以不同的方式加以区别关键字、 分隔符 （例如圆括号或大括号） 和注释。  
