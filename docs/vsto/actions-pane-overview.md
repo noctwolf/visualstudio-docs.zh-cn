@@ -13,15 +13,15 @@ helpviewer_keywords:
 - user controls [Office development in Visual Studio], actions panes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de9e6a7f148612716cee55b5a21a26f1bcf04d9b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 947b5730ce459751ec281749d369a9770c074df3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821122"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875944"
 ---
 # <a name="actions-pane-overview"></a>操作窗格概述
   操作窗格是可自定义**文档操作**附加到特定的 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿的任务窗格。 操作窗格中进行托管 Office 任务窗格，以及其他内置任务窗格，如**XML 源**在 Excel 中的任务窗格或**样式和格式**Word 中的任务窗格。 可使用 Windows 窗体控件或 WPF 控件来设计操作窗格用户界面。
@@ -92,7 +92,7 @@ ms.locfileid: "53821122"
 2.  在中**显示/隐藏**组中，单击**文档操作**切换按钮。  
 
 ## <a name="program-actions-pane-events"></a>程序操作窗格事件  
- 你可以将多个用户控件添加到操作窗格，然后编写代码，以便通过显示和隐藏用户控件对文档上的事件做出响应。 如果将 XML 架构元素映射到文档，则在每次插入点位于其中一个 XML 元素的内部时都可在操作窗格中显示某些用户控件。 有关更多信息，请参见[如何：将架构映射到 Visual Studio 内部的 Word 文档](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)和[如何：将架构映射到 Visual Studio 内部的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)。  
+ 你可以将多个用户控件添加到操作窗格，然后编写代码，以便通过显示和隐藏用户控件对文档上的事件做出响应。 如果将 XML 架构元素映射到文档，则在每次插入点位于其中一个 XML 元素的内部时都可在操作窗格中显示某些用户控件。 有关详细信息，请参阅[如何：将架构映射到 Visual Studio 内部的 Word 文档](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)和[如何：将架构映射到 Visual Studio 内部的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)。  
 
  你还可以编写代码以响应任意对象的事件，包括主机控件、应用程序或文档事件。 有关详细信息，请参见[演练：针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
 
@@ -105,7 +105,7 @@ ms.locfileid: "53821122"
  如果在操作窗格上控件的 <xref:System.Windows.Forms.Control.Validating> 事件处理程序中显示一个消息框，则可能在焦点从控件移动到消息框上时再次引发该事件。 若要避免此问题，请使用 <xref:System.Windows.Forms.ErrorProvider> 控件来显示任意验证错误消息。  
 
 ## <a name="user-control-stacking-order"></a>用户控件堆叠顺序  
- 如果你正在使用多个用户控件，则无论用户控件是垂直停靠还是水平停靠，你都可以编写代码以在操作窗格上堆叠这些控件。 可以使用 <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 属性的 <xref:Microsoft.Office.Tools.StackStyle> 枚举来设置操作窗格上用户控件的堆叠顺序。 有关更多信息，请参见[如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)  
+ 如果你正在使用多个用户控件，则无论用户控件是垂直停靠还是水平停靠，你都可以编写代码以在操作窗格上堆叠这些控件。 可以使用 <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 属性的 <xref:Microsoft.Office.Tools.StackStyle> 枚举来设置操作窗格上用户控件的堆叠顺序。 有关详细信息，请参阅[如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)  
 
  <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 属性可以接受下列 <xref:Microsoft.Office.Tools.StackStyle> 枚举值。  
 
@@ -123,7 +123,7 @@ ms.locfileid: "53821122"
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]  
 
 ## <a name="anchor-controls"></a>定位控件  
- 如果在用户调整在运行时操作窗格中，控件可以调整大小与操作窗格。 你可以使用 Windows 窗体控件的 <xref:System.Windows.Forms.Control.Anchor%2A> 属性将控件定位到操作窗格。 还可以相同方式将 Windows 窗体控件定位到用户控件上。 有关更多信息，请参见[如何：Windows 窗体上的控件的定位点](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)。  
+ 如果在用户调整在运行时操作窗格中，控件可以调整大小与操作窗格。 你可以使用 Windows 窗体控件的 <xref:System.Windows.Forms.Control.Anchor%2A> 属性将控件定位到操作窗格。 还可以相同方式将 Windows 窗体控件定位到用户控件上。 有关详细信息，请参阅[如何：Windows 窗体上的控件的定位点](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)。  
 
 ## <a name="resize-the-actions-pane"></a>调整大小操作窗格  
  无法直接更改 <xref:Microsoft.Office.Tools.ActionsPane> 的大小，因为 <xref:Microsoft.Office.Tools.ActionsPane> 内嵌在任务窗格中。 但是，通过设置表示任务窗格的 <xref:Microsoft.Office.Core.CommandBar> 的 <xref:Microsoft.Office.Core.CommandBar.Width%2A> 属性，即可以编程方式更改任务窗格的宽度。 无论任务窗格时水平停靠的还是浮动的，都可更改它的高度。  
@@ -142,7 +142,7 @@ ms.locfileid: "53821122"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]  
 
 > [!NOTE]  
->  最终用户可随时手动重新定位任务窗格。 无法确保任务窗格将始终停靠在你以编程方式指示的位置。 但是，你可以检查方向更改，并确保操作窗格上的控件以正确的方向堆叠。 有关更多信息，请参见[如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)。  
+>  最终用户可随时手动重新定位任务窗格。 无法确保任务窗格将始终停靠在你以编程方式指示的位置。 但是，你可以检查方向更改，并确保操作窗格上的控件以正确的方向堆叠。 有关详细信息，请参阅[如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)。  
 
  设置<xref:Microsoft.Office.Tools.ActionsPane.Top%2A>并<xref:Microsoft.Office.Tools.ActionsPane.Left%2A>的属性<xref:Microsoft.Office.Tools.ActionsPane>不会更改其位置，因为<xref:Microsoft.Office.Tools.ActionsPane>对象内嵌在任务窗格。  
 

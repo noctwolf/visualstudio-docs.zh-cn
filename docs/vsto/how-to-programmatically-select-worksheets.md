@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - worksheets, selecting
 - Excel projects, selecting worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ef332127c8c4127e78e495ca13f3b26fa64d335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ecb6872d56d4dc7f54f3ef73e0f8dafed06d2e6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924470"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863106"
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>如何：以编程方式选择工作表
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> 方法选择指定的对象，从而将用户的选择移到新对象上。 如果想要将焦点移到对象上，而不更改用户的选择，请使用 <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> 方法。  

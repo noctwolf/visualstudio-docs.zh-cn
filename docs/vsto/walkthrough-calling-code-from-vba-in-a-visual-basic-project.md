@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, Visual Basic for Applications and
 - calling code from VBA
 - document-level customizations [Office development in Visual Studio], calling code
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b58f2cb729b84d814addc07dcb9840e26bb2a767
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e402e54e04f95e9faf4365e9b3d359da2d951a8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917652"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869458"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>演练：在 Visual Basic 项目中从 VBA 调用代码
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中从文档的 Visual Basic for Applications (VBA) 代码中调用方法。 该过程包括三个基本步骤：向 `ThisDocument` 主机项类添加方法，向 VBA 代码公开方法，然后从文档中的 VBA 代码调用方法。  
@@ -69,7 +69,7 @@ ms.locfileid: "53917652"
 3.  在功能区上，单击 **“开发人员”** 选项卡。  
   
     > [!NOTE]  
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关更多信息，请参见[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 4.  在 **“代码”** 组中，单击 **“Visual Basic”**。  
   

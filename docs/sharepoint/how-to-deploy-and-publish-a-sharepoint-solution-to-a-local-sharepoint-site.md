@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - deploying [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8dd0dd78ca8f6b6f9791a657546cabc0d098b563
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2efdc339500786de87c35b4caeb3c85cef5191b7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835314"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864093"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>如何：部署和发布到本地 SharePoint 站点的 SharePoint 解决方案
   可以部署或在开发计算机上将 SharePoint 解决方案发布到本地 SharePoint 服务器。 部署进程副本 *.wsp*文件到 SharePoint 服务器，安装该解决方案，然后激活功能。 发布处理仅副本 *.wsp*到 SharePoint 服务器的文件并将其安装。 您必须手动激活它，以使它在 SharePoint 中。  

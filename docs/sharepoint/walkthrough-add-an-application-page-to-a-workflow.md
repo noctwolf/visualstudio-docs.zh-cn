@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, adding applications page to workflow
 - application page [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb0dfa7212cae1dd4e7c62f71f423c0f8fd275d9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 930252a509466fa65a7cbdf2eabac35cfeb25081
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938194"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865823"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>演练：将应用程序页添加到工作流
   本演练演示如何添加显示数据派生自工作流到工作流项目的应用程序页。 它建立在本主题中介绍的项目[演练：使用关联和初始化表单创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - collaborative development [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d8c6d19442a1735ee90db52e4c5f1a98e1fe860
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 897b90c9b370d61cfe8f3202e0f3c5c33ce6f613
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876492"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875961"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>合作开发 Office 解决方案
   多个开发人员可以从事方式协同工作上的其他 Visual Studio 项目完全相同的 Office 项目。 即使在不同的位置安装 Office，visual Studio 正确定位每台计算机上的 Microsoft Office 安装。 但是，有需要注意的一些重要注意事项。  

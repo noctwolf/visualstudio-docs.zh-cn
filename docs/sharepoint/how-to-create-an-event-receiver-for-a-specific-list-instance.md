@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, event receivers
 - event receivers [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a92b86d7e02487ff333fb8517086f9c6221d35ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00d92665fd34dda82e521cb8459b71412a6edc9e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818857"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865263"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：创建事件接收器的特定列表实例
   列表实例事件接收方响应的列表定义的任何实例中发生的事件。 虽然事件接收方模板不会启用特定列表实例的目标，你可修改的范围限定为列表定义以响应特定列表实例中的事件的事件接收器。  

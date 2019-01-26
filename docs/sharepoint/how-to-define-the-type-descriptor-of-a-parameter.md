@@ -10,17 +10,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], parameter types
 - BDC [SharePoint development in Visual Studio], type descriptor
 - Business Data Connectivity service [SharePoint development in Visual Studio], parameter types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15b8a9dff10c88ce46ecfa5565eb9f411ce59798
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1911f9b6a0031c53177ff15815dbb7ad16e4100a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953152"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866787"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>如何：定义参数的类型描述符
   类型描述符包含描述参数的数据类型的属性。 可以定义字段、实体或实体集合的类型描述符。 有关详细信息，请参阅[TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))。  
@@ -95,19 +95,19 @@ ms.locfileid: "53953152"
   
       下面的示例设置的值**TypeName**属性设置为你的项目中的类的集合。  
   
-      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace。` `BdcModel1.Contact，BdcModel1]  
+      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` `BdcModel1.Contact, BdcModel1]`  
   
    - 对于你的解决方案中的程序集的类型，完全限定名包括类型名称、程序集名称、版本号、区域性和公钥标记。  
   
       下面的示例设置的值**TypeName**属性设置为在你的解决方案中引用的程序集中的类型的集合。  
   
-      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact、 myAssemblyName，版本 = 4.0.0.0，区域性 = 中性，PublicKeyToken = b77a5c561934e089]  
+      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]`  
   
    - 对于 BDC 对象模型中定义的类型，完全限定名仅包括命名空间和类型名称。  
   
       下面的示例设置的值**TypeName**属性设置为 BDC 对象模型中定义的类型的集合。  
   
-      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]  
+      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]`  
   
 6. 在中**BDC 方法详细信息**窗口中，打开类型描述符显示的列表，然后选择**编辑**。  
   

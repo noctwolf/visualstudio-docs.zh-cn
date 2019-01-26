@@ -10,17 +10,17 @@ helpviewer_keywords:
 - RecentFiles property
 - Excel [Office development in Visual Studio], recently used files listing
 - recent file list, Excel
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 850dc26b9a5f270b3806d9623795535d34cf8f4b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6451aa5427799f0905d19b7b90e87f8cca3d0bbd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989592"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863183"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>如何：以编程方式列出最近使用的工作簿文件
   <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>属性返回一个集合，包含显示最近使用的文件的 Microsoft Office Excel 列表中的所有文件的名称。 该列表的长度而异，具体取决于用户选择要保留的文件数量。 在范围内，可以显示结果。  

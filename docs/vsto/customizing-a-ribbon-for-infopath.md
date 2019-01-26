@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], InfoPath
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c69ef50662bd1b98e896d1b8d3933d23be26123c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe67ec83337d06ec567b9f57335efa7db6bd38b5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837252"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863053"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>自定义 InfoPath 功能区
   在 Microsoft Office InfoPath 中自定义功能区时，必须考虑自定义功能区在应用程序中出现的位置。 [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 可以在以下三种类型的 InfoPath 应用程序窗口中显示功能区：  

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], adding controls
 - actions panes [Office development in Visual Studio], creating in Word
 - actions panes [Office development in Visual Studio], adding controls
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e868f8639aa8803e1ba9631bf46929bc917be3f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49a570a68d2ce301ff103c3587e3246a725a1f42
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943085"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866266"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>演练：从操作窗格的文档中插入文本
   本演练演示如何在 Microsoft Office Word 文档中创建操作窗格。 操作窗格包含两个控件收集输入，然后将文本发送到该文档。  
@@ -48,7 +48,7 @@ ms.locfileid: "53943085"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  使用名称创建一个 Word 文档项目**我的基本操作窗格**。 在向导中，选择**创建一个新文档**。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  使用名称创建一个 Word 文档项目**我的基本操作窗格**。 在向导中，选择**创建一个新文档**。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新的 Word 文档并将添加**我的基本操作窗格**投影到**解决方案资源管理器**。  
   
@@ -111,7 +111,7 @@ ms.locfileid: "53943085"
   
     |属性|值|  
     |--------------|-----------|  
-    |**名称**|**GetName**|  
+    |**名称**|**getName**|  
     |**Size**|**130, 20**|  
   
 5.  添加另一个**标签**控制对操作窗格控件，并更改**文本**属性设置为**地址**。  
@@ -120,14 +120,14 @@ ms.locfileid: "53943085"
   
     |属性|值|  
     |--------------|-----------|  
-    |**名称**|**GetAddress**|  
+    |**名称**|**getAddress**|  
     |**接受返回**|**True**|  
     |**多行**|**True**|  
     |**Size**|**130, 40**|  
   
 7.  添加**按钮**控制对操作窗格控件，并更改以下属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**addText**|  
     |**文本**|**插入**|  
@@ -175,7 +175,7 @@ ms.locfileid: "53943085"
 ## <a name="next-steps"></a>后续步骤  
  以下是接下来可能要执行的一些任务：  
   
--   在 Excel 中创建操作窗格。 有关更多信息，请参见[如何：将操作窗格添加到 Excel 工作簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))。  
+-   在 Excel 中创建操作窗格。 有关详细信息，请参阅[如何：将操作窗格添加到 Excel 工作簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))。  
   
 -   将数据绑定到操作窗格上的控件。 有关详细信息，请参见[演练：将数据绑定到 Word 操作窗格上的控件](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。  
   

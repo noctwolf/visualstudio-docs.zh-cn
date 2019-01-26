@@ -13,15 +13,15 @@ helpviewer_keywords:
 - <addin> element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ab185a1341192542d4e35ad01aa2d5ce5fba748
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90ad45aa77ce5e383f258c0fcaa10030b46dd1c4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867719"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864314"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;外接程序&gt;元素 （Visual Studio 中的 Office 开发）
   **外接程序**元素的`vstav3`命名空间包含特定于 Microsoft Office VSTO 外接程序和文档级自定义使用 Visual Studio 开发的信息。

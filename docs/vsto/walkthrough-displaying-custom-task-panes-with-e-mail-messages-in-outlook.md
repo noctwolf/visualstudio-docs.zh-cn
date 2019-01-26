@@ -11,17 +11,17 @@ helpviewer_keywords:
 - displaying custom task panes in e-mail
 - e-mail [Office development in Visual Studio], custom task panes displayed in
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 322cb9b2136adab37a4506b8332d7d6477ab75ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b9a9e3d5fba8b9aeea2124f79522642d4320783
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926576"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867775"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>演练：在 Outlook 中显示电子邮件消息的自定义任务的窗格
   本演练演示如何显示创建或打开的每个电子邮件的自定义任务窗格的唯一实例。 用户可以通过使用每封电子邮件功能区中的按钮显示或隐藏自定义任务窗格。  
@@ -64,7 +64,7 @@ ms.locfileid: "53926576"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  创建名为 **OutlookMailItemTaskPane** 的“Outlook 外接程序” 项目。 使用“Outlook 外接程序”  项目模板。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  创建名为 **OutlookMailItemTaskPane** 的“Outlook 外接程序” 项目。 使用“Outlook 外接程序”  项目模板。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此时将打开 *ThisAddIn.cs* 或 *ThisAddIn.vb* 代码文件，并将“OutlookMailItemTaskPane”  项目添加到“解决方案资源管理器” 。  
   

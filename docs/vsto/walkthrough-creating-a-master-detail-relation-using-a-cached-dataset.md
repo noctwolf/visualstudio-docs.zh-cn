@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - master-detail tables [Office development in Visual Studio], walkthroughs
 - data caching [Office development in Visual Studio], Master/Detail Relation
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c75ee922694e80b5ba70e4743d397cdf465169e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07c286a9166421272866662dea4c244fa50eb168
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823644"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875649"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>演练：创建使用缓存的数据集的主从关系
   本演练演示在工作表上创建主/从关系以及缓存数据，以便可以脱机使用该解决方案。  
@@ -54,7 +54,7 @@ ms.locfileid: "53823644"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1. 使用名称创建的 Excel 工作簿项目**我的大纲-细节**，使用 Visual Basic 或 C#。 请确保**创建一个新文档**处于选中状态。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1. 使用名称创建的 Excel 工作簿项目**我的大纲-细节**，使用 Visual Basic 或 C#。 请确保**创建一个新文档**处于选中状态。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
    Visual Studio 设计器中打开新 Excel 工作簿并将添加**我的母版-详细信息**投影到**解决方案资源管理器**。  
   

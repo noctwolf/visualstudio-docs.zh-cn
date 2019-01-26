@@ -24,15 +24,15 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], debugging
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8733c4e068bd7c4be2674e302707b81cc180cfd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4ab9fafbc56149bb1c1476ae9632ca81988dcd3
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963238"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866160"
 ---
 # <a name="build-office-solutions"></a>生成 Office 解决方案
   通常情况下，生成和调试 Office 项目与在 Visual Studio 中生成和调试其他类型的项目（例如 Windows 窗体）相同。 本部分的主题介绍存在的差异。 有关如何生成应用程序的常规信息，请参阅[编译并在 Visual Studio 中生成](../ide/compiling-and-building-in-visual-studio.md)。

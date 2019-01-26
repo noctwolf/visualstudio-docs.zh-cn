@@ -18,17 +18,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 - SharePoint development in Visual Studio, troubleshooting
 - SharePoint development in Visual Studio, deployment conflict resolution
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a12e24ea0db662931651feb3031ec0da71926f24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878700"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868035"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>SharePoint 打包和部署进行故障排除
   本主题论述了您在打包和部署 SharePoint 解决方案时可能遇到的各种问题。
@@ -40,7 +40,7 @@ ms.locfileid: "53878700"
  可以通过包设计器向包中添加项目输出。 但是，在添加项目输出时，请确保项目的平台与 SharePoint 解决方案的平台匹配。 我们建议你使用**任何 CPU**你想要将部署到 SharePoint 服务器的程序集的目标平台。 有关详细信息，请参阅[编译页，项目设计器&#40;Visual Basic&#41; ](../ide/reference/compile-page-project-designer-visual-basic.md)并[高级编译器设置对话框&#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)。
 
 ## <a name="validation-warnings-and-errors"></a>验证警告和错误
- Visual Studio 中的 SharePoint 开发工具将执行验证步骤来验证解决方案包的格式是否正确。 也可以为功能和包创建自定义验证步骤。 有关更多信息，请参见[如何：创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。
+ Visual Studio 中的 SharePoint 开发工具将执行验证步骤来验证解决方案包的格式是否正确。 也可以为功能和包创建自定义验证步骤。 有关详细信息，请参阅[如何：创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。
 
 ## <a name="deployment-conflict-resolution"></a>部署冲突解决方法
  在部署 SharePoint 解决方案时，当服务器上的项与解决方案包中的项具有相同的名称、URL 或 ID 时，您可能会发现冲突。 您可以更改**部署冲突解决方法**属性来解决、 报告或忽略模块、 Web 部件、 列表实例和内容类型的冲突。

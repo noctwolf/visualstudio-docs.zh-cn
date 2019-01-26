@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9a954c00c616ff156d786386c92d41dcbe85c13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6bc1e74e4ae288adcbb2890dda6ab4e4534802a0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53818321"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865653"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>如何：使用 MSBuild 任务创建 SharePoint 解决方案包
   可以生成、 清除和验证 SharePoint 包 (*.wsp*) 在开发计算机上使用命令行 MSBuild 任务。 这些命令还可用于生成计算机上使用 Team Foundation Server 自动生成过程。  

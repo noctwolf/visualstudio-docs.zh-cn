@@ -20,15 +20,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], creating projects
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66263d8453fc550f0edb9c81d9c424f04a07c1b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38be1ae60dd86160bc9b107ffc0bdd19f7a1e56d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902235"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867177"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何：在 Visual Studio 中创建 Office 项目
   可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]创建 VSTO 外接程序和文档级自定义 Microsoft Office 应用程序。 有关这些类型的项目的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -41,7 +41,7 @@ ms.locfileid: "53902235"
   
 1. 在“文件”菜单上，选择“新建” > “项目”。 如果你的集成的开发环境 (IDE) 设置为使用[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]开发设置，然后在**文件**菜单中，选择**新建** > **项目**。  
   
-    此时将出现 “新建项目” 对话框。  
+    此时将出现“新建项目”对话框。  
   
    > [!NOTE]  
    >  默认情况下，Office 项目均面向 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]。 有关详细信息，请参阅[.NET Framework 客户端配置文件](/dotnet/framework/deployment/client-profile)。  
@@ -61,9 +61,9 @@ ms.locfileid: "53902235"
   
     位置具有以下格式：  
   
-   * [*驱动器*\]\:  
+   * [*drive*\]\:  
   
-   * \\\\*服务器*\\*共享*  
+   * \\\\*Server*\\*Share*  
   
      不允许在该位置中使用以下字符：  
   
@@ -92,7 +92,7 @@ ms.locfileid: "53902235"
   
 1. 在“文件”菜单上，选择“新建” > “项目”。 如果您的 IDE 设置上使用 Visual Basic 开发设置**文件**菜单中，选择**新建** > **项目**。  
   
-    此时将出现 “新建项目” 对话框。  
+    此时将出现“新建项目”对话框。  
   
    > [!NOTE]  
    >  默认情况下，Office 项目均面向 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]。  有关详细信息，请参阅[.NET Framework 客户端配置文件](/dotnet/framework/deployment/client-profile)。  
@@ -123,9 +123,9 @@ ms.locfileid: "53902235"
   
     位置具有以下格式：  
   
-   - [*驱动器*\]\:  
+   - [*drive*\]\:  
   
-   - \\\\*服务器*\\*共享*  
+   - \\\\*Server*\\*Share*  
   
      不允许在该位置中使用以下字符：  
   

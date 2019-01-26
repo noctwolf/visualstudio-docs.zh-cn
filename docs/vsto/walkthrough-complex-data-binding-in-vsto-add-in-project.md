@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], Excel
 - data [Office development in Visual Studio], binding data
 - complex data [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce629e01192137474382452690e6d7051bb163ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f9346b448a64e6e1e89081d628865911897e37eb
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831766"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867554"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>演练：VSTO 外接程序项目中的复杂数据绑定
   可以将数据绑定到 VSTO 外接程序项目中的宿主控件和 Windows 窗体控件。 本演练演示如何在运行时向 Microsoft Office Excel 工作表中添加控件并将控件绑定到数据。
@@ -54,7 +54,7 @@ ms.locfileid: "53831766"
 
 1.  使用 Visual Basic 或 C# 创建一个名为“从数据库填充工作表” 的 Excel VSTO 外接程序项目。
 
-     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 会打开 `ThisAddIn.vb` 或 `ThisAddIn.cs` 文件，并将“从数据库填充工作表”  项目附加到“解决方案资源管理器” 中。
 

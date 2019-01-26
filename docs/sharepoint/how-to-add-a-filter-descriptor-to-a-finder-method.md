@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], add a filter
 - BDC [SharePoint development in Visual Studio], add a filter
 - BDC [SharePoint development in Visual Studio], filter descriptors
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf1909f6c57ed82ba5afcfd30f6586e9bd4d6d14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f21cecee163b6d79d22d008314c0dcf54a313032
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877765"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866134"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：将筛选器描述符添加到 Finder 方法
   筛选器描述符，它们执行之前将值传递给方法的模型的使用者。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
@@ -29,7 +29,7 @@ ms.locfileid: "53877765"
   
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>若要将筛选器描述符添加到 Finder 方法  
   
-1.  在中**BDC 方法详细信息**窗口中，展开的 Finder 方法节点，展开**参数**节点，然后添加一个输入的参数。 有关更多信息，请参见[如何：将参数添加到方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)。  
+1.  在中**BDC 方法详细信息**窗口中，展开的 Finder 方法节点，展开**参数**节点，然后添加一个输入的参数。 有关详细信息，请参阅[如何：将参数添加到方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)。  
   
 2.  在中**方法的详细信息**窗口中，选择该参数的类型描述符。  
   

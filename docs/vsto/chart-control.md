@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Chart control [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: edeaa0df7841795548637cabbd471daad9d2e878
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f31cfeab76018658ada9cc449af287cfca4abf4f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826200"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867047"
 ---
 # <a name="chart-control"></a>图表控件
   <xref:Microsoft.Office.Tools.Excel.Chart> 控件是公开事件的图表对象。 当将图表添加到工作表时，Visual Studio 将创建 <xref:Microsoft.Office.Tools.Excel.Chart> 对象，你可以直接针对此对象编程而无需遍历 Microsoft Office Excel 对象模型。  
@@ -31,7 +31,7 @@ ms.locfileid: "53826200"
 ## <a name="create-the-control"></a>创建控件  
  您可以添加<xref:Microsoft.Office.Tools.Excel.Chart>到 Microsoft Office Excel 工作表在设计时或在运行时在文档级项目中的控件。  
   
- 您可以添加<xref:Microsoft.Office.Tools.Excel.Chart>向在 VSTO 外接程序中的运行时工作表中的控件。 有关更多信息，请参见[如何：将图表控件添加到工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)。  
+ 您可以添加<xref:Microsoft.Office.Tools.Excel.Chart>向在 VSTO 外接程序中的运行时工作表中的控件。 有关详细信息，请参阅[如何：将图表控件添加到工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)。  
   
 > [!NOTE]  
 >  工作表关闭时，动态创建的图表控件不作为主机控件保留在工作表中。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  

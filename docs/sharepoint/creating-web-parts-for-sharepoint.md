@@ -18,17 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, Web Parts
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1efe8524521be590e920818f919a7a52d8fba7e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eff779f70cb5b17d03befddce971a4bbb15ca142
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879129"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865876"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>为 SharePoint 创建 web 部件
   通过使用 web 部件，可以使用浏览器中修改内容、 外观和行为的 SharePoint 站点页面。 Web 部件是在 web 部件页中运行的服务器端控件： 它们是在 SharePoint 网站显示的页的构建基块。 请参阅[构建基块：Web 部件](http://go.microsoft.com/fwlink/?LinkID=182097)。  
@@ -49,10 +49,10 @@ ms.locfileid: "53879129"
 |.webpart 文件|提供 SharePoint web 部件库中显示 web 部件所需的信息。|  
 |代码文件|包含的方法，将控件添加到 web 部件和生成 web 部件中的自定义内容。|  
   
- 有关更多信息，请参见[如何：创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)。  
+ 有关详细信息，请参阅[如何：创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)。  
   
 ### <a name="visual-web-part-item"></a>可视 web 部件项
- 可视 web 部件是您在 Visual Studio 中使用 Visual Web Developer 设计器创建的 web 部件。 可视 web 部件功能与任何其他 web 部件相同。 若要添加到 web 部件控件，如按钮和文本框中，您将代码添加到 XML 文件。 但是，您将控件添加到可视 web 部件拖动或复制到 web 部件上从 Visual Studio**工具箱**。 在设计器在 XML 文件中然后生成所需的代码。 请参阅[操作说明：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。  
+ 可视 web 部件是您在 Visual Studio 中使用 Visual Web Developer 设计器创建的 web 部件。 可视 web 部件功能与任何其他 web 部件相同。 若要添加到 web 部件控件，如按钮和文本框中，您将代码添加到 XML 文件。 但是，您将控件添加到可视 web 部件拖动或复制到 web 部件上从 Visual Studio**工具箱**。 在设计器在 XML 文件中然后生成所需的代码。 请参阅[如何：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。  
   
 ## <a name="sharepoint-controls"></a>SharePoint 控件
  Visual Studio 提供了一些控件，用于创建 SharePoint 页，如应用程序页。 这些控件显示在**工具箱**下**SharePoint 控件**。 这些控件的功能派生[Microsoft.SharePoint.WebControls](http://go.microsoft.com/fwlink/?LinkId=235315)命名空间，其中包含 SharePoint 站点和列表页面所使用的 ASP.NET 服务器控件。  

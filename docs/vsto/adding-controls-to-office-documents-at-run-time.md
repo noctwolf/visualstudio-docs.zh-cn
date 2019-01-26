@@ -20,15 +20,15 @@ helpviewer_keywords:
 - helper methods [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be96a6967657a79d1e3bed9336ebb530accba2a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dc71ba33180fa466b8d457d084faad05c61ec40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842783"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869182"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>在运行时向 Office 文档添加控件
   可以将控件添加到 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿在运行时。 此外可以在运行时删除它们。 添加或删除在运行时中的控件称为*动态控件*。  
@@ -110,7 +110,7 @@ ms.locfileid: "53842783"
 
 - 对于 Excel，使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> 对象的 <xref:Microsoft.Office.Tools.Excel.ControlCollection> 方法。  
 
-- 对于 Word，使用 <xref:Microsoft.Office.Tools.Word.ControlCollection> 对象的 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> 方法。  
+- 对于 Word，使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> 对象的 <xref:Microsoft.Office.Tools.Word.ControlCollection> 方法。  
 
   若要添加控件，请将 <xref:System.Windows.Forms.Control>、控件的位置和可唯一标识控件的名称传递给 `AddControl` 方法。 `AddControl` 方法将返回定义控件与工作表或文档的交互方式的对象。 `AddControl`方法将返回<xref:Microsoft.Office.Tools.Excel.ControlSite>（针对 Excel) 或<xref:Microsoft.Office.Tools.Word.ControlSite>对象 （针对 Word)。  
 
@@ -132,7 +132,7 @@ ms.locfileid: "53842783"
 
 - 若要访问多个控件共享的成员，请使用 `ControlSite`、`OLEObject` 或 `OLEControl` 对象。  
 
-  如果访问 <xref:System.Windows.Forms.Control> 中的共享成员，可能会失败，同时不发出任何警告或通知，也可能会产生无效的结果。 务必使用 `ControlSite`、`OLEObject` 或 `OLEControl` 对象的方法或属性，除非所需的方法或属性不可用；只有在这种情况下才应引用 <xref:System.Windows.Forms.Control>。  
+  如果访问 <xref:System.Windows.Forms.Control>中的共享成员，可能会失败，同时不发出任何警告或通知，也可能会产生无效的结果。 务必使用 `ControlSite`、`OLEObject` 或 `OLEControl` 对象的方法或属性，除非所需的方法或属性不可用；只有在这种情况下才应引用 <xref:System.Windows.Forms.Control>。  
 
   例如，<xref:Microsoft.Office.Tools.Excel.ControlSite> 类和 <xref:System.Windows.Forms.Control> 类都拥有 `Top` 属性。 若要获取或设置控件顶部和文档开头之间的距离，请使用 <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> 的 <xref:Microsoft.Office.Tools.Excel.ControlSite>属性，而不是 <xref:System.Windows.Forms.Control.Top%2A> 的 <xref:System.Windows.Forms.Control>属性。  
 

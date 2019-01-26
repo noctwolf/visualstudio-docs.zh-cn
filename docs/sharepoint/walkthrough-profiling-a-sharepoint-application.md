@@ -10,17 +10,17 @@ helpviewer_keywords:
 - performance testing [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, performance testing
 - profiling [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e5fb918761cc8e8d68aaaaa5e6a420bb6758a1e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4cb4e2ac95a17adc918be50fa351a35174f128b1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913812"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867515"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>演练：分析 SharePoint 应用程序
   本演练演示在 Visual Studio 中如何使用分析工具优化 SharePoint 应用程序的性能。 此示例应用程序是 SharePoint 功能事件接收器，其中包含降低功能事件接收器性能的空闲循环。 Visual Studio 探查器，可以找到和消除开销最大 （最慢执行） 项目的一部分，也称为*热路径*。  

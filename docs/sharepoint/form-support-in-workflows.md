@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f459b9e637c057ceb08f4db18fb0efa12e0592e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0cda1d413eac76136e3ea40bfec02322927c2368
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857966"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868792"
 ---
 # <a name="form-support-in-workflows"></a>在工作流中的窗体支持
   可以在工作流中使用四种类型的窗体： 关联、 初始化、 任务和修改。 这些窗体类型可以基于 ASPX 窗体或 InfoPath 窗体。 级别支持[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供了用于特定窗体取决于若干因素下, 表中所述。 有关工作流窗体类型的详细信息，请参阅[工作流窗体概述](http://go.microsoft.com/fwlink/?LinkId=185228)。  

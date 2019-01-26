@@ -9,22 +9,22 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1211b0bdc3625b915221cfafaa5377d371aaa25
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1cbcdc11eab419c6f98ab1ec823c6073286ffe2f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880856"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868126"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何：添加和删除功能和包项使用打包资源管理器
   若要配置要部署的 SharePoint 项和功能的程序包，可以使用打包资源管理器。 .Wsp 文件中，可以调整的 SharePoint 项目项和功能。  
   
- 或者，可以使用打包设计器来查看和重新排列要更改的激活顺序的功能。 有关更多信息，请参见[如何：添加和删除使用包设计器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)。  
+ 或者，可以使用打包设计器来查看和重新排列要更改的激活顺序的功能。 有关详细信息，请参阅[如何：添加和删除使用包设计器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)。  
   
 ## <a name="open-the-packaging-explorer"></a>打开打包资源管理器  
  您可以使用以下过程打开打包资源管理器，如果你的 Visual Studio 解决方案包含至少一个 SharePoint 项目。 或者，打包资源管理器将自动打开功能或包设计器中查看时。 关闭所有的功能和包设计器后，打包资源管理器也会关闭。  

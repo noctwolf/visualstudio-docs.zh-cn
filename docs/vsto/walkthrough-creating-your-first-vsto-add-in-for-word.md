@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, creating your first project
 - add-ins [Office development in Visual Studio], creating your first project
 - Word [Office development in Visual Studio], creating your first project
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f8cd238c64b32501a42900d37723c350e84673f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4ada075dc9f64fb7febc402cdbe690c7dbc9b9f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948967"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868321"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>演练：为 Word 创建第一个 VSTO 外接程序
   本介绍性演练说明如何创建 Microsoft Office Word 的 VSTO 外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的文档无关。  
@@ -91,7 +91,7 @@ ms.locfileid: "53948967"
   
    为了在保存文档后对其进行修改，前面的代码示例使用以下对象：  
   
--   `ThisAddIn` 类的 `Application` 字段。 `Application` 字段返回一个 <xref:Microsoft.Office.Interop.Word.Application> 对象，该对象表示 Word 的当前实例。  
+-   `Application` 类的 `ThisAddIn` 字段。 `Application` 字段返回一个 <xref:Microsoft.Office.Interop.Word.Application> 对象，该对象表示 Word 的当前实例。  
   
 -   `Doc` 事件的事件处理程序的 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 参数。 `Doc` 参数是一个 <xref:Microsoft.Office.Interop.Word.Document> 对象，用于表示已保存的文档。 有关详细信息，请参阅[Word 对象模型概述](../vsto/word-object-model-overview.md)。  
   

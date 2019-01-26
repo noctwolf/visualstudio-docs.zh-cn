@@ -36,17 +36,17 @@ helpviewer_keywords:
 - Visual Studio, Office documents in
 - worksheets [Office development in Visual Studio]
 - VST.Designer.ExcelVST.Designer.Word
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9a0ac865dff8ec1eb0fe8a2b97cad9b6ab5e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5d3017d293b8288df9b5d7bdbe09fe2e901fa58
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842706"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865978"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>在 Visual Studio 环境中的 office 项目
   Microsoft Office 项目的开发体验与 Visual Studio 中其他类型的项目（如 Windows 窗体项目）相似。 当你创建或打开 Office 项目时，项目项会出现在 **“解决方案资源管理器”** 中。 对于文档级项目，文档（即 Word 文档或 Excel 工作簿）将在 Visual Studio 中打开，该文档的行为就如同一个可视化设计器。

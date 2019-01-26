@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], form regions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b5145701f72bed183dbcff3c3fbe48f757740f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7bd30624c2948b12885af3a29eb095227cf795f9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842184"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865770"
 ---
 # <a name="create-outlook-form-regions"></a>创建 Outlook 窗体区域
   窗体区域可用于自定义 Microsoft Office Outlook 窗体。 Visual Studio 提供了高级工具，可使你更轻松地设计、开发和调试窗体区域。  
@@ -76,7 +76,7 @@ ms.locfileid: "53842184"
 |Replacement|将窗体区域作为替换 Outlook 窗体默认页的新页添加。|  
 |全部替换|使用窗体区域替换整个 Outlook 窗体。|  
   
- 也可使用向导来指定显示条件及选择要扩展的窗体类型。 有关更多信息，请参见[如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
+ 也可使用向导来指定显示条件及选择要扩展的窗体类型。 有关详细信息，请参阅[如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
   
  在向导中所做的选择将影响其他向导页中可用的选项。 例如，如果您选择**相邻**或**单独**中**创建新的 Outlook 窗体区域**页上，则**标题**和**说明**字段中都不可用**提供说明性文本并选择显示首选项**页。 这是因为 Outlook 在显示相邻或独立的窗体区域时并不使用这些字段。  
   
@@ -104,7 +104,7 @@ ms.locfileid: "53842184"
 ###  <a name="AddingExistingFormRegion"></a> 将现有的窗体区域添加到你的项目  
  如果具有在其他 Outlook 项目中使用的 Outlook 窗体区域，可通过使用 **“添加现有项”** 对话框在当前 Outlook VSTO 外接程序项目中重新使用它。  
   
- 现有的窗体区域必须具有代码文件 (*.vb*或 *.cs*); 不能添加 Outlook 窗体存储 (*.ofs*) 通过使用文件**添加现有项**对话框。 但是，可通过导入 Outlook 窗体存储文件来创建新的窗体区域。 有关更多信息，请参见[如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
+ 现有的窗体区域必须具有代码文件 (*.vb*或 *.cs*); 不能添加 Outlook 窗体存储 (*.ofs*) 通过使用文件**添加现有项**对话框。 但是，可通过导入 Outlook 窗体存储文件来创建新的窗体区域。 有关详细信息，请参阅[如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
   
 ##  <a name="UsingFormRegionDesigner"></a> 使用窗体区域设计器  
  窗体区域设计器可帮助你设计窗体区域的布局和外观。 可以将托管的控件拖到设计器图面中，双击控件以打开事件处理程序，然后中设置属性**属性**窗口。  
@@ -133,7 +133,7 @@ ms.locfileid: "53842184"
   
  若要处理 Visual Basic 项目中的事件，从代码编辑器顶部的方法名列表中选择一个事件。  
   
- 若要处理 C# 项目中的事件，订阅 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 方法中的控件事件。 有关更多信息，请参见[如何：订阅和取消订阅事件&#40;C&#35;编程指南&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events)。  
+ 若要处理 C# 项目中的事件，订阅 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 方法中的控件事件。 有关详细信息，请参阅[如何：订阅和取消订阅事件&#40;C&#35;编程指南&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events)。  
   
  可在窗体区域工厂类的 `InitializeManifest` 方法中更改窗体区域属性。  
   
@@ -153,7 +153,7 @@ ms.locfileid: "53842184"
   
 |事件|描述|  
 |-----------|-----------------|  
-|FormRegionInitializing|在初始化窗体区域之前发生。 可检查此事件处理程序中的条件以确定 Outlook 是否应显示窗体区域。 有关更多信息，请参见[如何：防止 Outlook 显示窗体区域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)。|  
+|FormRegionInitializing|在初始化窗体区域之前发生。 可检查此事件处理程序中的条件以确定 Outlook 是否应显示窗体区域。 有关详细信息，请参阅[如何：防止 Outlook 显示窗体区域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)。|  
 |FormRegionShowing|在创建窗体区域的实例之后且在窗体区域显示之前发生。|  
 |FormRegionClosed|在窗体区域关闭之前发生。|  
   

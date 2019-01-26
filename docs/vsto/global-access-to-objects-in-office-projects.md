@@ -27,15 +27,15 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 843eba9cceefb2360ed24284a80f4359d092fd89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f937acf163d3a9a1fed2e1dc83fa944c89c4b71a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909068"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54864457"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>对 Office 项目中的对象的全局访问
   创建 Office 项目时，Visual Studio 将在项目中自动生成一个名为 `Globals` 的类。 可以使用 `Globals` 类在运行时从项目中的任何代码访问多个不同的项目项。  

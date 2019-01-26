@@ -9,15 +9,15 @@ helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6de8e63331c4cb5250ceadd6f7394dd54319e499
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b416d48b8e5351f0a6ddf037fa80b442888bbe2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856405"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866826"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>全球化和本地化的 Excel 解决方案
   本节包含有关 Microsoft Office Excel 解决方案的特殊注意事项的信息，这些解决方案将在具有 Windows 非英语设置的计算机上运行。 全球化和本地化 Microsoft Office 解决方案过程中所遇到的大多数问题与使用 Visual Studio 创建其他各种解决方案时遇到的问题相同。 有关常规信息，请参阅[Globalize 和本地化应用程序](../ide/globalizing-and-localizing-applications.md)。
@@ -36,7 +36,7 @@ ms.locfileid: "53856405"
 
  即使你对由托管代码传递或操作的数据使用英语（美国）格式，Excel 仍然会根据最终用户的区域设置来正确解释并显示数据。 Excel 可以正确设置数据格式，因为托管代码将区域设置 ID 1033 与数据一起传递，这表示数据为英语（美国）格式，因此必须重新设置格式，使其与用户的区域设置相匹配。
 
- 例如，如果最终用户将其设置为德语 （德国） 区域设置的区域选项，他们期望日期 2005 年 6 月 29 日，要设置格式的这种方式：29.06.2005。 但是，如果你的解决方案将日期传递给 Excel 作为一个字符串，必须格式对应于英语 （美国） 格式的日期：2005 年 6 月 29 日。 如果将单元格格式化为日期单元格，则 Excel 将采用德语（德国）格式显示日期。
+ 例如，如果最终用户将其设置为德语 （德国） 区域设置的区域选项，他们期望日期 2005 年 6 月 29 日，要设置格式的这种方式：29.06.2005. 但是，如果你的解决方案将日期传递给 Excel 作为一个字符串，必须格式对应于英语 （美国） 格式的日期：6/29/2005. 如果将单元格格式化为日期单元格，则 Excel 将采用德语（德国）格式显示日期。
 
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>将其他区域设置 Id 传递给 Excel 对象模型
  公共语言运行时 (CLR) 会自动将区域设置 ID 1033 传递到接受区分区域设置的数据的 Excel 对象模型中的所有方法和属性。 无法为调入对象模型的所有调用自动更改此行为。 但是，通过使用 <xref:System.Type.InvokeMember%2A> 来调用方法以及将区域设置 ID 传递到方法的 *culture* 参数，可以将不同的区域设置 ID 传递到特定的方法。

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - controls, data binding
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc5136b3e5c5ea09c5574e1fd3ec7ab457181112
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce13d0154e2cbd04a593500e14a3c1dd43a870dd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898627"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863807"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>将数据绑定到 Office 解决方案中的控件
   可以将 Microsoft Office Word 文档或 Microsoft Office Excel 工作表中的 Windows 窗体控件和 *宿主控件* 绑定到某个数据源，以便这些控件自动显示数据。 可以将数据绑定到应用程序级项目和文档级项目中的控件。  
@@ -52,7 +52,7 @@ ms.locfileid: "53898627"
 ## <a name="complex-data-binding"></a>复杂数据绑定  
  当控件属性绑定到多个数据元素（例如数据表中的多个列）时，即存在复杂数据绑定。 Excel 的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件是唯一支持复杂数据绑定的宿主控件。 此外，还有很多支持复杂数据绑定的 Windows 窗体控件，例如 <xref:System.Windows.Forms.DataGridView> 控件。  
   
- 若要执行复杂数据绑定，请将控件的 `DataSource` 属性设置为复杂数据绑定支持的数据源对象。 例如，<xref:Microsoft.Office.Tools.Excel.ListObject> 控件的 <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 属性可以绑定到一个数据表中的多个列。 数据表中的所有数据都在 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件中显示，而当数据表中的数据发生更改时， <xref:Microsoft.Office.Tools.Excel.ListObject> 也会发生更改。 有关可用于复杂数据绑定的数据源的列表，请参阅[支持的 Windows 窗体数据源](/dotnet/framework/winforms/data-sources-supported-by-windows-forms)。  
+ 若要执行复杂数据绑定，请将控件的 `DataSource` 属性设置为复杂数据绑定支持的数据源对象。 例如， <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 控件的 <xref:Microsoft.Office.Tools.Excel.ListObject> 属性可以绑定到一个数据表中的多个列。 数据表中的所有数据都在 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件中显示，而当数据表中的数据发生更改时， <xref:Microsoft.Office.Tools.Excel.ListObject> 也会发生更改。 有关可用于复杂数据绑定的数据源的列表，请参阅[支持的 Windows 窗体数据源](/dotnet/framework/winforms/data-sources-supported-by-windows-forms)。  
   
  下面的代码示例创建具有两个 <xref:System.Data.DataSet> 对象的 <xref:System.Data.DataTable> ，并使用数据填充其中一个表。 代码随后将 <xref:Microsoft.Office.Tools.Excel.ListObject> 绑定到包含数据的表。 此示例适用于 Excel 文档级项目。  
   
@@ -98,7 +98,7 @@ ms.locfileid: "53898627"
   
  如果使用 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件执行复杂数据绑定，则无需显式更新内存中数据源。 在这种情况下，无需其他代码，更改即会自动发送到内存中数据源。  
   
- 有关更多信息，请参见[如何：使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
+ 有关详细信息，请参阅[如何：使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [如何实现:使用在 Excel 中的数据库数据？](http://go.microsoft.com/fwlink/?LinkID=130287)   

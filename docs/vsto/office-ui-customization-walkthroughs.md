@@ -10,17 +10,17 @@ helpviewer_keywords:
 - smart documents, walkthroughs
 - walkthroughs [Office development in Visual Studio], smart tags
 - walkthroughs [Office development in Visual Studio], action panes
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9632fb12ec5567f527c0a5368af5645a91cddeb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 705d79dce456a244a0729d60fb8033429541030a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826580"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54863326"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Office UI 自定义演练
   下列演练演示了如何使用文档级自定义项和 VSTO 外接程序来自定义 Microsoft Office 应用程序的用户界面 (UI)。  

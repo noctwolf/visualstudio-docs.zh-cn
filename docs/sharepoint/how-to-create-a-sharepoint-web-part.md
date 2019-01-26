@@ -8,20 +8,20 @@ dev_langs:
 helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], adding
 - Web Parts [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 43d776a4031cabfd027c96105f3e71a93ea1c07f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b66cd0b380612502bb982efd464607a4759f9c4b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858418"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870787"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>如何：创建 SharePoint web 部件
-  可以创建并通过添加自定义 web 部件**Web 部件**向任何 SharePoint 项目项，然后编辑 web 部件或使用设计器的代码文件。 有关更多信息，请参见[如何：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。  
+  可以创建并通过添加自定义 web 部件**Web 部件**向任何 SharePoint 项目项，然后编辑 web 部件或使用设计器的代码文件。 有关详细信息，请参阅[如何：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。  
   
 ### <a name="to-create-a-sharepoint-web-part"></a>若要创建一个 SharePoint web 部件
   

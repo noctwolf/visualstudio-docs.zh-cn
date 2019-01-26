@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39432f20620a3c7e6f374b09943fc73c2d4d2903
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd142b71de2919f1f44f36134ce286e58229bae5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885895"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866108"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>演练：创建 SharePoint 项目扩展
   本演练演示如何创建 SharePoint 项目扩展。 项目扩展可用于对等添加、 删除或重命名项目时的项目级事件做出响应。 此外可以添加自定义属性或属性值发生更改时进行响应。 与项目项扩展不同项目扩展将不能为与特定的 SharePoint 项目类型关联。 该扩展时创建的项目扩展，请加载任何类型的 SharePoint 项目中打开时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  

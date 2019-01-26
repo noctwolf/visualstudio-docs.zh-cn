@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
 - Business Data Connectivity service [SharePoint development in Visual Studio], data
 - BDC [SharePoint development in Visual Studio], data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 194f2e0c88a0cbce9ef34f77246cf7969066833e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d04a3fcfac93ffbb6a2a6c60363e4906898e0c7f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934435"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865471"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>将业务数据集成到 SharePoint
   可以将业务数据集成到 SharePoint。 业务数据可以来源于后端服务器应用程序，如[!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)]，Siebel，SAP，或 Web 服务。 用户可以查看、 添加、 更新或通过使用外部列表或业务数据 Web 部件在 SharePoint 中删除的业务数据。  用户也可以访问此数据的 Microsoft Office 应用程序，例如 Microsoft Outlook 中脱机。 有关详细信息，请参阅[其中可以显示外部数据的](http://go.microsoft.com/fwlink/?LinkId=169295)。  

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66113dae824397f46829a539a016f452cedc0383
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4bdd98dfc9437fb9090ce813f7d8458747b20196
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967250"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866735"
 ---
 # <a name="cache-data"></a>缓存数据
   可以缓存文档级自定义项中的数据对象，以便脱机或而无需打开 Microsoft Office Word 或 Microsoft Office Excel，可以访问的数据。 若要缓存对象，该对象必须满足某些要求的数据类型。 .NET Framework 中的许多常见数据类型满足这些要求，包括<xref:System.String>， <xref:System.Data.DataSet>，和<xref:System.Data.DataTable>。  
@@ -28,9 +28,9 @@ ms.locfileid: "53967250"
   
  有两种方法将对象添加到数据缓存：  
   
-- 若要生成解决方案时，将对象添加到数据缓存，应用<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>对象声明的属性。 有关更多信息，请参见[如何：脱机时或者在服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
+- 若要生成解决方案时，将对象添加到数据缓存，应用<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>对象声明的属性。 有关详细信息，请参阅[如何：脱机时或者在服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
   
-- 若要以编程方式将对象添加到数据缓存在运行时，使用`StartCaching`方法的主机项，如`ThisDocument`或`ThisWorkbook`类。 有关更多信息，请参见[如何：以编程方式缓存中的 Office 文档的数据源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)。  
+- 若要以编程方式将对象添加到数据缓存在运行时，使用`StartCaching`方法的主机项，如`ThisDocument`或`ThisWorkbook`类。 有关详细信息，请参阅[如何：以编程方式缓存中的 Office 文档的数据源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)。  
   
   将对象添加到数据缓存后，可以访问并修改的缓存的数据，而无需启动 Word 或 Excel。 有关详细信息，请参阅[访问服务器上的文档中的数据](../vsto/accessing-data-in-documents-on-the-server.md)。  
   
@@ -76,7 +76,7 @@ ms.locfileid: "53967250"
 ## <a name="persist-changes-to-cached-data-in-password-protected-documents"></a>保存到受密码保护的文档中的缓存数据的更改  
  如果缓存中使用密码保护的文档数据对象，将不保存对缓存数据的更改。 通过重写两种方法，可以将更改保存到缓存的数据。 重写这些方法时保存文档时，暂时删除保护并重新应用保存后也能保护操作已完成。  
   
- 有关更多信息，请参见[如何：在受密码保护的文档中缓存数据](../vsto/how-to-cache-data-in-a-password-protected-document.md)。  
+ 有关详细信息，请参阅[如何：在受密码保护的文档中缓存数据](../vsto/how-to-cache-data-in-a-password-protected-document.md)。  
   
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>将 null 值添加到数据缓存时防止数据丢失  
  在将对象添加到数据缓存时，所有缓存的对象必须初始化为非**null**值之前保存并关闭文档。 如果任何缓存的对象具有**null**值时保存和关闭，文档[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]自动将数据缓存中删除所有缓存的对象。  

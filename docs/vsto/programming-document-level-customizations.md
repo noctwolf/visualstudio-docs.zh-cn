@@ -22,17 +22,17 @@ helpviewer_keywords:
 - Sheet2 class
 - document-level customizations [Office development in Visual Studio], programming
 - application development [Office development in Visual Studio], document-level customizations
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d559e358e50295368f68ad02ebb7532353a98b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9eb0243a99b1730a911c65aebdf1f7c2d763959e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925441"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54866801"
 ---
 # <a name="program-document-level-customizations"></a>文档级自定义项进行编程
   在使用文档级自定义项扩展 Microsoft Office Word 或 Microsoft Office Excel 时，可以执行以下任务：  
@@ -146,7 +146,7 @@ Globals.ThisDocument.Save();
   
 - 向功能区上的内置选项卡添加自定义组。  
   
-   有关更多信息，请参见[如何：自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)。  
+   有关详细信息，请参阅[如何：自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)。  
   
   有关自定义 UI 的 Microsoft Office 应用程序的详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。  
   

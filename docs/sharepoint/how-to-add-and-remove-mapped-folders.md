@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, mapped folders
 - mapped folders [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 302b161620961b3b89a616bf4dc998c7a5745456
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 357eb8c16487f625d4c2a7c675e3709f2190ca03
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823912"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871853"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>如何： 添加和移除映射的文件夹
   一些常用的文件夹在 SharePoint 中，如图像和布局，深度嵌套的文件层次结构中。 可以将这些文件夹映射到 SharePoint 项目来更轻松地访问它们。 映射的文件夹是 SharePoint 项目中的 SharePoint 服务器安装文件的物理位置相对应的文件夹。  
