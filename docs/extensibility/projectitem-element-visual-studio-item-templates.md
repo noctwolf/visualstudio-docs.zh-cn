@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a27c297dd9b33bbbe02b7addb827323505a7156d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de479c78d5699fc904174368044a82af5dd64103
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956057"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980721"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 元素 （Visual Studio 项模板）
 指定在项模板中包含的文件。  
@@ -27,9 +27,9 @@ ms.locfileid: "53956057"
 > [!NOTE]
 >  `ProjectItem`元素接受不同的属性，具体取决于该模板是针对某个项目或项。 本主题介绍了`ProjectItem`项目元素。 有关的说明`ProjectItem`元素的项目模板，请参阅[ProjectItem 元素 （Visual Studio 项目模板）](../extensibility/projectitem-element-visual-studio-project-templates.md)。  
   
- \<VSTemplate >  
- \<TemplateContent >  
- \<ProjectItem >  
+ \<VSTemplate>  
+ \<TemplateContent>  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>语法  
   
@@ -80,7 +80,7 @@ ms.locfileid: "53956057"
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- 通过此模板创建项目后，文件名称基于用户输入中的名称**添加新项**对话框。 创建多文件项模板时，这是非常有用。 有关更多信息，请参见[如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)并[模板参数](../ide/template-parameters.md)。  
+ 通过此模板创建项目后，文件名称基于用户输入中的名称**添加新项**对话框。 创建多文件项模板时，这是非常有用。 有关详细信息，请参阅[如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)并[模板参数](../ide/template-parameters.md)。  
   
 ## <a name="example"></a>示例  
  下面的示例演示为标准项模板的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]类。  

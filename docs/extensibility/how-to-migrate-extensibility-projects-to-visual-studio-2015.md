@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 456661c06934063041f06c36c20eee72d52c5b4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0939fd9499f9699d5672fe5bb7ef580ffe75489
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915330"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021476"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>如何：将扩展性项目迁移到 Visual Studio 2015
 下面介绍了如何升级您的扩展插件。  
@@ -29,7 +29,7 @@ ms.locfileid: "53915330"
   
 2.  在升级完成后，将外部程序的路径更改为新版本的*devenv.exe*。 右键单击项目节点中的**解决方案资源管理器**，然后选择**属性**。 在中**调试**选项卡上，找到由文本框**启动外部程序**和更改的路径*devenv.exe*到 Visual Studio 2015 路径，其中应如下所示：  
   
-     *%ProgramFiles%\Microsoft visual Studio 14.0\Common7\IDE\devenv.exe*  
+     *%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe*  
   
 3.  添加对的引用*Microsoft.VisualStudio.Shell.14.0.dll*。 (右键单击项目节点中的**解决方案资源管理器**，然后选择**添加** > **引用**。 选择**扩展**选项卡，然后检查**microsoft.visualstudio.shell.14.0 的引用**。)  
   
@@ -39,7 +39,7 @@ ms.locfileid: "53915330"
   
 ### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>若要更新到 NuGet VS SDK 引用程序集的可扩展性项目  
   
-1.  确定你的项目需要的 VS SDK 引用程序集。  在中**解决方案资源管理器**，展开项目的**引用**节点和检查列表中的项目引用。  VS SDK 的引用程序集将具有前缀**Microsoft.VisualStudio**名称中 (例如：Microsoft.visualstudio.shell.14.0 的引用）。  
+1.  确定你的项目需要的 VS SDK 引用程序集。  在中**解决方案资源管理器**，展开项目的**引用**节点和检查列表中的项目引用。  VS SDK 的引用程序集将具有前缀**Microsoft.VisualStudio**名称中 (例如：Microsoft.VisualStudio.Shell.14.0).  
   
 2.  通过选择它们，右键单击并选择从项目删除 VS SDK 引用程序集**删除**。  
   

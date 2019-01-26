@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d76c440c3c763b93c14ad03d9f48e6c977e9e5fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 270cdaac1f58aefaf13535218613f50bbf645b59
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866996"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981284"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>旧版 API 中使用文本标记
 文本标记是区域的文本的浮动的范围内的缓冲区中，可能会影响显示和文本的行为。 标记包括断点、 书签、 波浪形下划线和只读区域。 文本标记为基本上不同于语法颜色设置。 语法颜色设置是通信与文本的区域关联的语言语法的快速方法。 Windows 重新绘制屏幕时速度很重要时通常所请求语法颜色设置。 语法颜色设置更改文本的颜色。 文本标记可以更改许多其他文本属性。 文本标记可以"浮动"并将应用特殊行为和颜色设置。  

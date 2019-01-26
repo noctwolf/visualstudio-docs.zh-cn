@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 7a29f9c8813950cda5907b7f0f96141d00d562fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d9a1826e8c06d947e05bf7201f2963a7bac860f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887758"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039574"
 ---
 # <a name="how-to--with-text-templates"></a>如何：使用文本模板 ... 
 在 Visual Studio 中的文本模板提供任何类型的生成文本的有用的方法。 可以使用文本模板生成文本，在你的应用程序的一部分运行时和在设计时生成的某些项目代码。 本主题总结了最常要求"如何实现...？" 问题。
@@ -34,7 +34,7 @@ ms.locfileid: "53887758"
 
 -   将运行时文本模板添加到你的项目。 此模板创建在代码中，可以实例化和用于生成文本的类。 在构造函数参数，可以将数据传递给它。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
--   如果你想要从仅在运行时提供的模板生成，可以使用标准文本模板。 如果你正在编写一个 Visual Studio 扩展，可以调用文本模板化服务。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，可以使用文本模板化引擎。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。
+-   如果你想要从仅在运行时提供的模板生成，可以使用标准文本模板。 如果你正在编写一个 Visual Studio 扩展，可以调用文本模板化服务。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，可以使用文本模板化引擎。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。
 
      使用\<#@parameter#> 指令将参数传递给这些模板。 有关详细信息，请参阅[T4 参数指令](../modeling/t4-parameter-directive.md)。
 

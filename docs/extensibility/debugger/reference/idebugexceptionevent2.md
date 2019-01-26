@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2 |Microsoft Docs
+title: IDebugExceptionEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1348e83a3b07240fcb1c5e6ae4819ea85e4c054
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1ac5c3aceb9519d66c185f78bdde37861467ecdf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929862"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983869"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 在当前正在执行的程序中引发异常时，调试引擎 (DE) 会将此接口发送到会话调试管理器 (SDM)。  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37ff40861352759ea01c8ad3cb4cb623ca32a754
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 355101179e54839fbe5060ce2bc5cdf583ec7d3a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827791"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997489"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>验证旧版语言服务中的断点
 断点指示它在调试器中运行时程序执行应停止的特定点。 用户可以在源文件中的任意行上放置一个断点，因为在编辑器并不知道什么构成了断点的有效位置。 启动调试器时，所有标记断点 （称为挂起断点） 将绑定到正在运行的程序中的相应位置。 在同一时间断点进行验证，以便确保它们将标记有效的代码位置。 例如上一条注释, 的断点无效，因为在源代码中该位置没有任何代码。 调试器将禁用无效的断点。  

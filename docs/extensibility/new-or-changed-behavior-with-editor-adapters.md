@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d32cad965c4165a8f81e9b880121bb54ab1738b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15e6e2a1258c698aeb10da95719034f705d0b685
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901605"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987319"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>新的或更改行为与编辑器适配器
 如果要更新已针对早期版本的 Visual Studio 核心编辑器，编写的代码，并且你打算使用的编辑器适配器 （或填充程序） 而不是使用新的 API，你应注意的以下编辑器适配器的行为差异相对于以前的核心编辑器。  
@@ -120,7 +120,7 @@ ms.locfileid: "53901605"
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A>方法将失败，如果不实现的类中传递<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2>或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>。 不再支持自定义 Win32 所有者描述弹出窗口。  
   
-#### <a name="smarttags"></a>智能标记  
+#### <a name="smarttags"></a>SmartTags  
  没有适配器支持的智能标记，创建<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>， <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>，和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2>接口。  
   
 #### <a name="dte"></a>DTE  

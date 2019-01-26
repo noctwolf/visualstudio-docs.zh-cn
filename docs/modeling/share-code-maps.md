@@ -4,16 +4,16 @@ ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: c80c99effebab8d2dffa53621af8f7c60bcad629
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4f53f349b4bc2f578ad007761df32e5c4145dbc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900803"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984491"
 ---
 # <a name="share-code-maps"></a>共享代码图
 
@@ -23,7 +23,7 @@ ms.locfileid: "53900803"
 
 使用“文件”  菜单保存代码图。
 
-- 或 -
+或
 
 若要保存代码图作为特定项目的一部分图工具栏上，选择**共享** > **移动\<CodeMapName > 到.dgml**，然后选择你想要保存的项目映射。
 

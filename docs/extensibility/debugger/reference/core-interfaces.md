@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791e76b462a7ae12ac11b9eb5f33c94baff49888
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afb66ea504a51a726b1645b0886cf19f1d0ae940
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919568"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981343"
 ---
 # <a name="core-interfaces"></a>核心接口
 以下接口是用于通过使用扩展调试器的核心接口[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。  
@@ -27,7 +27,7 @@ ms.locfileid: "53919568"
 
 - [上下文](#Contexts)  
 
-- [核心服务器](#CoreServer)  
+- [Core Server](#CoreServer)  
 
 - [调试引擎](#DebugEngines)  
 
@@ -93,7 +93,7 @@ ms.locfileid: "53919568"
 |---------------|--------------------|-----------------|  
 |[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|表示代码指令的起始位置。|  
 |[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|扩展了[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)接口以便可以检索模块并处理的接口。|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS DE|表示文档中的位置。|  
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, DE|表示文档中的位置。|  
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|表示在其中计算表达式的上下文。|  
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|表示内存字节的集合中的起始位置。|  
 |[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|表示在断点或异常的堆栈帧上下文。|  
@@ -127,12 +127,12 @@ ms.locfileid: "53919568"
 |---------------|--------------------|-----------------|  
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|由 DE 发送，以请求要打开的文档。|  
 |[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|表示从文档的反汇编指令的流。|  
-|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS DE|表示由 DE，指定名称和类 ID (CLSID) 提供的文档。|  
+|[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS, DE|表示由 DE，指定名称和类 ID (CLSID) 提供的文档。|  
 |[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|DE EE|表示调试文档的校验和并可将组件之间传递校验和。|  
-|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS DE|表示文档上下文中，与特定语句和代码上下文相对应的文档中的位置。|  
-|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS DE|表示文档中的常规位置。|  
+|[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, DE|表示文档上下文中，与特定语句和代码上下文相对应的文档中的位置。|  
+|[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS, DE|表示文档中的常规位置。|  
 |[IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)|VS|表示源文件中作为字符偏移量的位置。|  
-|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS DE|表示文本文档提供的 DE (派生自[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md))，提供的实际文本。|  
+|[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, DE|表示文本文档提供的 DE (派生自[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md))，提供的实际文本。|  
 |[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|由 DE 发送，以指定对内存中的源文件的更改。|  
 
 ##  <a name="Events"></a> 事件  
@@ -164,7 +164,7 @@ ms.locfileid: "53919568"
 | [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md) | DE | 加载或卸载模块时，由 DE 发送。 |
 | [IDebugNoSymbolsEvent2](../../../extensibility/debugger/reference/idebugnosymbolsevent2.md) | DE | 信号[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]调试器用户界面以警告符号不找不到启动可执行文件的用户。 |
 | [IDebugOutputStringEvent2](../../../extensibility/debugger/reference/idebugoutputstringevent2.md) | DE | 若要使 IDE 显示 DE 由发送的任意字符串。 |
-| [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) | VS DE | 端口发送的任何侦听器与通信端口事件。 |
+| [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) | VS, DE | 端口发送的任何侦听器与通信端口事件。 |
 | [IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md) | DE PS | DE 或发送端口时创建一个进程。 |
 | [IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md) | DE PS | 当一个进程已被销毁时发送 DE 或端口。 |
 | [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) | DE PS | 在创建程序时，由 DE 或端口发送。 |
@@ -215,9 +215,9 @@ ms.locfileid: "53919568"
 
 | 接口 | 由实现 | 描述 |
 | - |----------------| - |
-| [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md) | VS PS | 表示本地计算机上的默认端口。 |
+| [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md) | VS, PS | 表示本地计算机上的默认端口。 |
 | [IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md) | VS | 允许使用 DCOM 提出的调试引擎[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI，以确保该防火墙将阻止远程调试。 |
-| [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) | VS PS | 表示的端口。 |
+| [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) | VS, PS | 表示的端口。 |
 | [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) | PS | 端口发送的任何侦听器与通信端口事件。 |
 | [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md) | PS | 表示可启动和终止进程的端口。 |
 | [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) | PS | 用于注册和注销具有端口; 的程序允许的端口，以跟踪当前正在调试的程序。 |
@@ -227,7 +227,7 @@ ms.locfileid: "53919568"
 | [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md) | PS | 表示可以保留的端口的供应商 （保存到磁盘） 的端口信息创建它。 |
 | [IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md) | PS | 使[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI 来显示内的文本**传输信息**一部分**附加到进程**对话框。 |
 | [IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md) | VS | 允许的目标计算机的信息进行查询。 |
-| [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) | VS PS | 表示一个枚举，通过一组的端口。 |
+| [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) | VS, PS | 表示一个枚举，通过一组的端口。 |
 | [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) | VS | 通过端口供应商提供的一组表示一个枚举。 |
 
 ##  <a name="Processes"></a> 进程  
@@ -235,8 +235,8 @@ ms.locfileid: "53919568"
 
 |接口|由实现|描述|  
 |---------------|--------------------|-----------------|  
-|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS，DE|表示在计算机运行的进程。|  
-|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS，DE|表示积极支持的进程调试 (用于替换步骤，继续，并在执行方法[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)接口)。|  
+|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, DE|表示在计算机运行的进程。|  
+|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, DE|表示积极支持的进程调试 (用于替换步骤，继续，并在执行方法[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)接口)。|  
 |[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|DE PS|DE 或发送端口时创建一个进程。|  
 |[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|DE PS|当一个进程已被销毁时发送 DE 或端口。|  
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|表示必须跟踪哪些会话附加到它的进程。|  

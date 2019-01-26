@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: d9c0329f-4b0b-4fda-8061-cce69f2f502d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41237c927368ff98f8e0eaa61cc1bb5717446674
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b23602fd9f425b4943544a2af3b815a5363685a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929745"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034579"
 ---
 # <a name="web-projects"></a>Web 项目
 Web 项目系统是创建 Web 项目的项目系统。 反过来，web 项目创建 Web 应用程序。 您可以编写一个 Web 页面使用传统编程语言中，如[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，以收集和处理来自用户的信息，将其存储在数据库中，依次类推。 Web 页面和相关联的代码称为智能的网页。  

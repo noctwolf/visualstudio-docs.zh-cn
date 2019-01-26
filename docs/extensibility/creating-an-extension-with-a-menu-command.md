@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80d68a254cf2d1a896be86072d50a13be2f7a44f
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: df27b6b85cff218526b1a69897b5809ebf28ae20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154416"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041147"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>使用菜单命令创建扩展
 本演练演示如何创建一个扩展按钮可启动记事本的菜单命令。  
@@ -98,7 +98,7 @@ ms.locfileid: "54154416"
   
  您可以找到 *.vsix*文件中此扩展*FirstMenuCommand* bin 目录。 具体而言，假定您已生成的发布配置，则将为：  
   
- *\<代码目录 > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix*  
+ *\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix*  
   
  若要安装扩展，您的朋友需要关闭所有打开的 Visual Studio 实例，然后双击 *.vsix*文件中，此时会出现**VSIX 安装程序**。 将文件复制到 *%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions*目录。  
   

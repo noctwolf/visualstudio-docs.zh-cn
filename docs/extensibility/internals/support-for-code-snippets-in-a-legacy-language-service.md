@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5437f511eda582f2de7b28cc35716b0148df254
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6fb944ce92613a4352d7b69c0975d39791be2cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852940"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948981"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>旧版语言服务中的代码片段支持
 代码片段是一段代码将插入到源文件。 在代码段是使用一组字段的基于 XML 的模板。 插入代码段，并可以具有不同的值，具体取决于在其中插入片段的上下文后，将突出显示这些字段。 立即插入代码段后，可以设置的语言服务的格式代码段。  
@@ -86,10 +86,10 @@ ms.locfileid: "53852940"
 |元素|描述|  
 |-------------|-----------------|  
 |%LCID%|区域设置 id。|  
-|%Installroot%|Visual Studio 中，例如，C:\Program Files\Microsoft Visual Studio 8 中的根安装文件夹。|  
-|%Projdir%|包含当前项目的文件夹。|  
-|%Projitem%|包含当前项目项的文件夹。|  
-|%Testdocs%|文件夹中的用户的设置文件夹，例如，C:\Documents and Settings\\ *[username]* documents\visual Studio\8。|  
+|%InstallRoot%|Visual Studio 中，例如，C:\Program Files\Microsoft Visual Studio 8 中的根安装文件夹。|  
+|%ProjDir%|包含当前项目的文件夹。|  
+|%ProjItem%|包含当前项目项的文件夹。|  
+|%TestDocs%|文件夹中的用户的设置文件夹，例如，C:\Documents and Settings\\ *[username]* documents\visual Studio\8。|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>启用语言服务的代码片段  
  通过添加启用语言服务的代码片段<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>属性为你的 VSPackage (请参阅[注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)有关详细信息)。 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A>并<xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A>参数是可选的但应包括`SearchPaths`命名参数来告知**代码片段管理器**您的代码段的位置。  

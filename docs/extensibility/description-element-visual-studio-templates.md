@@ -8,21 +8,21 @@ helpviewer_keywords:
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88b01dfad315d003840bb2eb5f97c7f0022f85e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15e80a56569fbfcbd513a9ed741f118534916518
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906730"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982801"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description 元素 （Visual Studio 模板）
 指定模板的说明中所示**新的项目**或**添加新项**对话框。  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<说明 >  
   
 ## <a name="syntax"></a>语法  

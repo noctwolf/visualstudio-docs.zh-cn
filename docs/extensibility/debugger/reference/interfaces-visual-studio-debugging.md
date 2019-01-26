@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 79875cbb-f946-49d4-94eb-941d0e1a40b2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a25e66f6ee86ed0241efceae084d0e8e7abc3488
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3983bf78664bf7fb611f61013d480e157c44548f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889039"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949815"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>接口（Visual Studio 调试）
 下的内容和 Vtable 顺序中的接口上的表中每个接口，方法是按字母顺序列出。  

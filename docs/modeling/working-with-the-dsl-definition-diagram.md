@@ -13,16 +13,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Bring Tree Here
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2c95d1a096d2b7d90292711ae53117321e54746b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6924e73d97b282b4027244c542684c2090520437
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888421"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039237"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定义图表
 关系图的[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]定义是用于定义特定于域的语言的重要工具。 你可以将元素添加到域模型并定义关系图上的关系，也可以修改关系图的布局以使其更具可读性。
