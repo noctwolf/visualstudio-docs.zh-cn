@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0e2c2f5f4914fafbf37daa5fbc8a9218c8e0482
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a09d116ed59492376944612ab95eb19bbac71e40
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913372"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030582"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 元素 （Visual Studio 模板）
 指定的预览图像，为的文件名称，将出现在任何一个的预览图像**新的项目**或**添加新项**对话框。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<PreviewImage >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<PreviewImage>  
   
 ## <a name="syntax"></a>语法  
   

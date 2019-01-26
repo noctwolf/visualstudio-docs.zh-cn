@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8388bb28fc4504bee4fa8734adb1f6e690031600
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db820ba35f53366aa6a8e4f88d758ade97b44bd7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822899"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026861"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>支持多个版本的 Visual Studio
 术语 *-并行*意味着您可以安装和维护多个版本的同一台计算机上的产品。 对 Vspackage，这意味着用户可以有多个 Visual Studio 版本安装在同一台计算机上。 但是，不能具有你的 Vspackage 加载到单个版本的 Visual Studio 的并行的版本。  

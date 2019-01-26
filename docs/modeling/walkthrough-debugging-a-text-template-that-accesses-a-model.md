@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9041adb5ddb8ac76dde15069ce117ea8ad3c6e66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50190afd6dfbda054ab7c1636bb0f0f89984117a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914537"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004491"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>演练：调试文本模板访问模型
 当您修改或在域特定语言解决方案中添加文本模板时，可能会收到错误，当引擎转换模板源代码或对其进行编译生成的代码。 下面的演练演示了一些可以执行的操作来调试文本模板。
@@ -158,7 +158,7 @@ ms.locfileid: "53914537"
 
      (C#)
 
-     **正在编译转换：由 Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation 不包含 ExampleModel 的定义**
+     **正在编译转换：Microsoft.VisualStudio.TextTemplating\<GUID>.GeneratedTextTransformation 不包含 ExampleModel 的定义**
 
      (Visual Basic)
 

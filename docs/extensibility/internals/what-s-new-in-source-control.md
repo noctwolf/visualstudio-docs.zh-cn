@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c373e061ba7aa057babccd178354f4577b2c74fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0eb0d88d0e4cf2628ef2c9c8ed2c9070f25aac9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937958"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004768"
 ---
 # <a name="what39s-new-in-source-control"></a>什么&#39;s 源代码管理中的新增功能
 在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]可以通过实现源代码管理 VSPackage 提供深度集成的源代码控制解决方案。 本部分介绍的源代码管理 Vspackage 功能并提供实现步骤的概述。  

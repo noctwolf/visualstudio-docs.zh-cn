@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b61aa726a7088d08db6d759a9835816dcaf826a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea1e91ef3f3ea7bdbefaf0cd13f9cac742b17701
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941055"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014934"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>确定哪个编辑器打开文件在项目中
 当用户打开文件时在项目中时，环境都要通过轮询处理过程，最终打开适当的编辑器或设计器中的为该文件。 受雇于环境的初始过程是相同的标准和自定义编辑器。 在环境中使用的各种条件轮询的编辑器，用于打开文件时，VSPackage 必须在此过程中协调环境。  

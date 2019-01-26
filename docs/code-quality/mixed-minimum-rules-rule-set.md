@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4cc4ddb6a8d6ceb7fd6d7f0874f9f0fdfd66981
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32592ce00088e4072ed6fc614c5af44004e7a2c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830383"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009704"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>“混合最少量规则”规则集
 Microsoft 混合最少量规则重点关注支持公共语言运行时，包括潜在安全漏洞和应用程序崩溃在 c + + 项目中最关键问题。 应包括任何自定义规则集中设置为支持公共语言运行时在 c + + 项目创建此规则。
