@@ -9,22 +9,22 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ba38984b5c49dbf834286414e61734fe46069876
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb52456aaa9b74944b400b5c6a39e40341b97d17
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964132"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868506"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>如何：将快捷菜单项添加到 SharePoint 项目
   可以将快捷菜单项添加到任何 SharePoint 项目。 用户右键单击项目节点中的时出现的菜单项**解决方案资源管理器**。  
   
- 以下步骤假定你已创建了一个项目扩展。 有关更多信息，请参见[如何：创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
+ 以下步骤假定你已创建了一个项目扩展。 有关详细信息，请参阅[如何：创建 SharePoint 项目扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
   
 ### <a name="to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>若要将快捷菜单项添加到 SharePoint 项目  
   

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b52a8a497f27b2d2a3928df997c3a9d10ad21995
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d754d7be732931cf3d50cf28db396b5040e3874
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895722"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870186"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>如何：向 Word 文档添加 XMLNodes 控件
   **重要**设置 Microsoft Word 有关本主题中的信息是提供的以独占方式适合的权益和使用个人和组织用户位于美国州和其领土的外部或使用，或开发运行的程序，在 2010 年 1 月，Microsoft 中删除的特定功能实现的时间之前已由 Microsoft 许可的 Microsoft Word 产品被与 Microsoft Word 中的自定义 XML。 有关 Microsoft Word 此信息可能不读取或使用的个人或组织在美国或其区域使用，或开发在 Microsoft Word 2010 年 1 月 10 日之后，由 Microsoft 已许可的产品运行的程序中;这些产品不将行为与相同产品许可在该日期之前或购买，美国以外的使用许可。  
@@ -39,7 +39,7 @@ ms.locfileid: "53895722"
 1.  在 Visual Studio 设计器中，在功能区中，在文档中，单击**开发人员**选项卡。  
   
     > [!NOTE]  
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关更多信息，请参见[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 2.  在中**XML**组中，单击**架构**。  
   

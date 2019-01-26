@@ -10,17 +10,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, reusable workflows
 - importing items [SharePoint development in Visual Studio]
 - reusable workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 05ef3a0a4b1fe95396966b083b457e0970ebda48
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 329d38e8c258148830347a506ceef5845c1cf268
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916609"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874271"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>导入可重用工作流的准则
   若要导入在 SharePoint Designer 中创建的可重用工作流，请使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中的“导入可重用 SharePoint 2010 工作流”项目模板。 此模板导入*声明性**工作流*([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-仅)，并将其转换*代码工作流*，这是可以使用增强的工作流[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]代码。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [演练：SharePoint Designer 可重用工作流导入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)。  

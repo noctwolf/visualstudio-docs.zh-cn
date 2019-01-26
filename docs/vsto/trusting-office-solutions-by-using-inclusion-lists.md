@@ -10,17 +10,17 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio], about inclusion lists
 - security [Office development in Visual Studio], inclusion lists
 - inclusion lists [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 819225c152c4436340714dd2f5ecb31f5ec6b2f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b0e3df3562fe9a7bcbf2ca9cdc899b9303eb19a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857661"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868601"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>使用包含列表信任 Office 解决方案
   包含列表让用户能够向使用标识发布者的证书进行签名的 Office 解决方案授予信任。 包含列表是用户特定的，并可用于文档级自定义项和 VSTO 外接程序。  
@@ -37,7 +37,7 @@ ms.locfileid: "53857661"
   
  如果禁用提示，则只能安装具有受信任和已知证书的解决方案。 如果将提示级别设置为需要验证码，解决方案必须使用来自已知颁发机构的证书进行签名，但不需要链接至受信任的根证书颁发机构的证书（受信任的证书）。 如果允许提示，则可以使用具有未知标识的证书进行对解决方案进行签名。 在此场景中，信任决定取决于最终用户，并且临时证书即足以安装解决方案。  
   
- 有关更多信息，请参见[如何：配置包含列表安全性](../vsto/how-to-configure-inclusion-list-security.md)和表 2 将提示级别下注册表项值启动效果中, 标题为[配置 ClickOnce 受信发布方](http://go.microsoft.com/fwlink/?LinkId=94774)。  
+ 有关详细信息，请参阅[如何：配置包含列表安全性](../vsto/how-to-configure-inclusion-list-security.md)和表 2 将提示级别下注册表项值启动效果中, 标题为[配置 ClickOnce 受信发布方](http://go.microsoft.com/fwlink/?LinkId=94774)。  
   
 ## <a name="structure-of-the-inclusion-list"></a>包含列表的结构  
  一个有效的包含列表条目由两部分组成：部署清单的路径和用于对解决方案进行签名的公钥。 将解决方案添加到包含列表后，则将其视为受信任。 运行 Office 解决方案时，Office 应用程序将比较包含列表中的公钥与部署清单中的签名密钥，从而验证当前正在运行的解决方案与原始受信任版本是否相同。  

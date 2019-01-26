@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - controls [Office development in Visual Studio], resizing
 - Bookmark control, resizing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1a700164ceea11bf83467048140c79723908b619
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f23094aae38cb1b0dc89a2b30ab7a812d7a9cb66
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942432"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869796"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>如何：调整书签控件的大小
   当你将 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件添加到 Microsoft Office Word 文档时，可以设置它的大小。 稍后还可以重设其大小。  
@@ -39,7 +39,7 @@ ms.locfileid: "53942432"
   
    如果将对书签的大小或位置作出重大更改，此方法很有用。  
   
-  在文档级项目中，你可以在设计时或在运行时向项目中的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 在 VSTO 外接程序项目中，可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>向任何打开的文档在运行时的控件。 有关更多信息，请参见[如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
+  在文档级项目中，你可以在设计时或在运行时向项目中的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 在 VSTO 外接程序项目中，可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>向任何打开的文档在运行时的控件。 有关详细信息，请参阅[如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   

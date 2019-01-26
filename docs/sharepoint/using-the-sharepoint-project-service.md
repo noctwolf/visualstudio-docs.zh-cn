@@ -8,22 +8,22 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint project service
 - SharePoint development in Visual Studio, extensibility features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a8416d38629c8970e9cc90e0d873138970b16258
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90df435e2c6c20b43d12169b32780eefc22c1d70
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875814"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871541"
 ---
 # <a name="use-the-sharepoint-project-service"></a>使用 SharePoint 项目服务
   SharePoint 项目系统包括一项可以用于执行项目系统相关任务的项目服务。 该项目服务是一个 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 对象。  
   
- 你可以在任何 SharePoint 工具扩展中访问该 SharePoint 项目服务。 你还可在其他类型的 Visual Studio 中访问该项目服务，例如加载项和 VSPackage。 有关更多信息，请参见[如何：检索 SharePoint 项目服务](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)。  
+ 你可以在任何 SharePoint 工具扩展中访问该 SharePoint 项目服务。 你还可在其他类型的 Visual Studio 中访问该项目服务，例如加载项和 VSPackage。 有关详细信息，请参阅[如何：检索 SharePoint 项目服务](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)。  
   
 ## <a name="project-service-features"></a>项目服务功能
  下表列出了你可以使用 SharePoint 项目服务执行的任务，以及用于执行每项任务的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 方法或属性。  

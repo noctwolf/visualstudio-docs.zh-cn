@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, samples
 - SharePoint development in Visual Studio, walkthroughs
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2624f40c93e470651f5c285abd51de9dbcfd4b8d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a62ee1c081399cdbaaa586256a25f859e02acbc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892515"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874011"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 开发示例和演练
   本部分包含示例应用程序、 示例代码和分步演练介绍了语法、 结构和技术用于构建 SharePoint 解决方案。  

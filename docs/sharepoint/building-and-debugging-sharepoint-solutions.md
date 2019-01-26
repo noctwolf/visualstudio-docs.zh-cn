@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, building and debugging
 - SharePoint development in Visual Studio, debugging
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ab8fe8b7a6a26e855e603a2f2969c894ff7da50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1cdcf71821bd0f7e9739bc194834500c2dfc6fd
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987189"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871554"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>生成和调试 SharePoint 解决方案
   一般情况下，生成和调试 SharePoint 解决方案是生成和调试其他类型中的项目的相同[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 本部分的主题介绍存在的差异。  
@@ -34,7 +34,7 @@ ms.locfileid: "53987189"
 |包中间文件。|*\<项目名称 > \pkgobj\debug*或*\<项目名称 > \pkgobj\release*|  
   
 ## <a name="build-sharepoint-solutions"></a>构建 SharePoint 解决方案
- 若要生成 SharePoint 解决方案，在开发计算机必须安装 SharePoint 服务器的正确版本。 否则，构建 SharePoint 解决方案是与生成其他类型中的项目的相同[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关更多信息，请参见[如何：构建 SharePoint 解决方案](../sharepoint/how-to-build-sharepoint-solutions.md)。  
+ 若要生成 SharePoint 解决方案，在开发计算机必须安装 SharePoint 服务器的正确版本。 否则，构建 SharePoint 解决方案是与生成其他类型中的项目的相同[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关详细信息，请参阅[如何：构建 SharePoint 解决方案](../sharepoint/how-to-build-sharepoint-solutions.md)。  
   
 ## <a name="debug-and-test-sharepoint-solutions"></a>调试和测试 SharePoint 解决方案
  在调试时前,[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]副本 *.wsp*包到 SharePoint 服务器激活的站点和 Web 范围的功能，并在某些情况下，将启动项目。 在某些情况下，您可能必须手动打开项目。 有关详细信息，请参阅[进行故障排除 SharePoint 解决方案](../sharepoint/troubleshooting-sharepoint-solutions.md)并[调试 SharePoint 解决方案](../sharepoint/debugging-sharepoint-solutions.md)。  
