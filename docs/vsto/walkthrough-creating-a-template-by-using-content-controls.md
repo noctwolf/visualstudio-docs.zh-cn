@@ -9,17 +9,17 @@ helpviewer_keywords:
 - building blocks [Office development in Visual Studio]
 - Word [Office development in Visual Studio], creating documents
 - content controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ad53a4e3e834959cbc37d2063a5dd2d1b0d7f6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b2bc96a9df16c43c8fe4e66dbed4079a1ae3a40
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931981"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874167"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>演练：使用内容控件创建模板
   本演练演示如何创建使用内容控件在 Microsoft Office Word 模板中创建可重用结构化内容的文档级自定义项。  
@@ -56,7 +56,7 @@ ms.locfileid: "53931981"
   
 ### <a name="to-create-a-new-word-template-project"></a>创建新的 Word 模板项目  
   
-1.  具有名称创建一个 Word 模板项目**MyBuildingBlockTemplate**。 在向导中，选择在解决方案中创建新的文档。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  具有名称创建一个 Word 模板项目**MyBuildingBlockTemplate**。 在向导中，选择在解决方案中创建新的文档。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在设计器中打开新的 Word 模板，并将添加**MyBuildingBlockTemplate**投影到**解决方案资源管理器**。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "53931981"
 5. 在功能区上，单击 **“开发人员”** 选项卡。  
   
    > [!NOTE]  
-   >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关更多信息，请参见[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+   >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 6. 在中**控件**组中，单击**文本**按钮![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")添加<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>到第一个单元格。  
   
@@ -189,7 +189,7 @@ ms.locfileid: "53931981"
   
 ### <a name="to-test-the-employee-table"></a>测试员工表  
   
-1.  按**F5**以运行该项目。  
+1.  按 F5 运行项目。  
   
 2.  单击**选择你的第一个构建基块**以显示第一个构建基块库内容控件。  
   

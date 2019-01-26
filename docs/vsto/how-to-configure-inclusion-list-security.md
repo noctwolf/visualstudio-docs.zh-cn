@@ -10,15 +10,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026cdef278f87ec4367dd88a8530a35425452b75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c8ea1c94254bc37edc15e0c267592e921003426
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895566"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868675"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>如何：配置包含列表安全性
   如果您具有管理员权限，则可以配置[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示，以控制最终用户是否可以通过将信任决策保存到包含列表中安装 Office 解决方案的选择。 有关包含列表的信息，请参阅[使用包含列表信任 Office 解决方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。  
@@ -40,13 +40,13 @@ ms.locfileid: "53895566"
   
 1.  打开注册表编辑器：  
   
-    1.  单击**启动**，然后单击**运行**。  
+    1.  单击“开始”，然后单击“运行”。  
   
     2.  在中**开放**框中，键入**regedt32.exe**，然后单击**确定**。  
   
 2.  找到以下注册表项：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      如果不存在该键，则创建它。  
   
@@ -99,13 +99,13 @@ ms.locfileid: "53895566"
   
 1.  打开注册表编辑器：  
   
-    1.  单击**启动**，然后单击**运行**。  
+    1.  单击“开始”，然后单击“运行”。  
   
     2.  在中**开放**框中，键入**regedt32.exe**，然后单击**确定**。  
   
 2.  找到以下注册表项：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
      如果不存在该键，则创建它。  
   
@@ -158,13 +158,13 @@ ms.locfileid: "53895566"
   
 1.  打开注册表编辑器：  
   
-    1.  单击**启动**，然后单击**运行**。  
+    1.  单击“开始”，然后单击“运行”。  
   
     2.  在中**开放**框中，键入**regedt32.exe**，然后单击**确定**。  
   
 2.  如果这确实不存在，请创建以下注册表项：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
   
 3.  添加以下作为子项**字符串值**，如果它们尚不存在，及其相关的值。  
   
