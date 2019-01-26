@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f42c7a384b4f46864e4c79d386cd82ca39949a61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70ec77254ec4d76e978b685441bb8d6e3df1b802
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938337"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54921217"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>如何：使用事务更新模型
 事务，请确保对在存储区所做的更改被视为一个组。 可以提交或回滚作为一个单元进行分组的更改。

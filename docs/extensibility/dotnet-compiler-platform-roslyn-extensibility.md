@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dc687421123769e36594a11b2c34dd86fe0ebf1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26196b18c6e44ec8f0697fbc656f2934eff1904b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892960"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918805"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET 编译器平台 (&quot;Roslyn&quot;) 扩展性
 .NET 编译器平台 ("Roslyn") 的核心任务是打开的 C# 和 Visual Basic 编译器，并允许工具和开发人员能够在丰富的信息的编译器中共享具有有关程序。 代码分析工具提高代码质量和代码生成器的帮助，在应用程序的构造。 随着工具更智能，他们需要访问越来越多的仅由编译器拥有极深代码知识。 而不是作为不透明转换器 （中的源代码和对象代码），Roslyn 编译器提供的 Api 可用于与代码相关工具和应用程序中的任务。

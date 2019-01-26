@@ -13,15 +13,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], message classes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5795931b5d964b6eb7a104338756066068f38510
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ac0b74981b7e4a364bbc551be132b79cc432448
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923343"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875818"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>将窗体区域与 Outlook 消息类相关联
   您可以指定哪些 Microsoft Office Outlook 项显示的窗体区域，通过将窗体区域与每个项的消息类相关联。 例如，如果你想要将窗体区域附加到邮件项的底部，则可以将窗体区域与`IPM.Note`message 类。  
@@ -58,7 +58,7 @@ ms.locfileid: "53923343"
 ### <a name="use-the-new-outlook-form-region-wizard"></a>使用新建 Outlook 窗体区域向导  
  在最后一页**新建 Outlook 窗体区域**向导，您可以选择标准的 message 类并键入你想要将与窗体区域关联的自定义 message 类的名称。  
   
- 标准邮件类不可用，如果窗体区域设计为替换整个窗体或窗体的默认页。 可以指定仅为窗体，将新页面添加到窗体或，附加到窗体的底部标准邮件类名称。 有关更多信息，请参见[如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
+ 标准邮件类不可用，如果窗体区域设计为替换整个窗体或窗体的默认页。 可以指定仅为窗体，将新页面添加到窗体或，附加到窗体的底部标准邮件类名称。 有关详细信息，请参阅[如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
   
  若要包含一个或多个自定义邮件类，请在**哪些自定义邮件类将显示此窗体区域？** 框。  
   
@@ -97,7 +97,7 @@ ms.locfileid: "53923343"
   
 - 不能超过 256 个字符的每个邮件类名称。  
   
-- 如果窗体区域替换整个窗体或窗体的默认页，则不包括标准的 message 类的名称。 可以指定仅为窗体，将新页面添加到窗体或，附加到窗体的底部标准邮件类名称。 有关更多信息，请参见[如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
+- 如果窗体区域替换整个窗体或窗体的默认页，则不包括标准的 message 类的名称。 可以指定仅为窗体，将新页面添加到窗体或，附加到窗体的底部标准邮件类名称。 有关详细信息，请参阅[如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。  
   
   生成项目时，visual Studio 会验证 message 类名的格式。  
   

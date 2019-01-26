@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ProjectItemFolder element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdecca0b987efd22d4ddd9d3555ede2601b8205e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a4a0f60afb35a3e52e3e7b8f00afaef29cf409e
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855612"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875584"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder 元素
   表示映射的文件夹。  
@@ -49,7 +49,7 @@ ms.locfileid: "53855612"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[项目项](../sharepoint/projectitem-element.md)|表示 SharePoint 项目项。 此元素是必需的根元素 *.spdata*文件。|  
+|[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 项目项。 此元素是必需的根元素 *.spdata*文件。|  
   
 ## <a name="remarks"></a>备注  
  有关映射的文件夹的详细信息，请参阅[如何： 添加和移除映射的文件夹](../sharepoint/how-to-add-and-remove-mapped-folders.md)。  
@@ -58,7 +58,7 @@ ms.locfileid: "53855612"
   
 |||  
 |-|-|  
-|**命名空间**|http<nolink>: //schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|  
+|**命名空间**|http<nolink>://schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|  
 |**架构名称**|SharePoint 项目项架构|  
 |**验证文件**|ProjectItemModelSchema.xsd|  
 |**可以为空**|否|  

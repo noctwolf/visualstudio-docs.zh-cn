@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eacbe69488d605d9cde2fb219a8adbca1419361b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68647dbcbeaedd8ce3a6a493b685142434eec2c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904291"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923089"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>设计 XML 命令表格 (.vsct) 文件
 XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPackage。 命令项包括按钮、 组合框、 菜单、 工具栏和命令项的组。 本文介绍 XML 命令表文件、 它们如何影响命令项和菜单，以及如何创建它们。
@@ -64,7 +64,7 @@ XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPacka
        
 新的编译器*vsct.exe*，将同时编译 *.ctc*并 *.vsct*文件。 旧*ctc.exe*编译器，但是，将不识别或编译 *.vsct*文件。
 
-可以使用*vsct.exe*编译器要转换的现有 *.cto*文件到 *.vsct*文件。 有关更多信息，请参见[如何：从现有.cto 文件创建.vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)。
+可以使用*vsct.exe*编译器要转换的现有 *.cto*文件到 *.vsct*文件。 有关详细信息，请参阅[如何：从现有.cto 文件创建.vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)。
 
 ## <a name="the-vsct-file-elements"></a>.Vsct 文件元素
  命令表具有以下层次结构和元素：
@@ -117,7 +117,7 @@ XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPacka
 
  在开发期间，就可以对多个 VSPackage 项目来创建并注册可能会导致令人困惑的混乱，在 IDE 中的实验性注册表配置单元。 若要解决此问题，可以重新设置为默认设置以删除所有已注册的 Vspackage 和可能会对 IDE 进行的任何更改实验性配置单元。 若要重置实验性配置单元，请使用 Visual Studio SDK 随附的 CreateExpInstance.exe 工具。 您可以找到在：
 
- *%Programfiles (x86) %\Visual Studio\\\<版本 > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
+ *%PROGRAMFILES(x86)%\Visual Studio\\\<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
 
  使用命令来运行该工具**CreateExpInstance /Reset**。 请记住，此工具从中删除实验性配置单元通常不随一起安装的所有已注册的 Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
 

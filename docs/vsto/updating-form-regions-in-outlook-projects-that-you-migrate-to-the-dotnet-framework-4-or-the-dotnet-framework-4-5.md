@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 84005dfa85c637d2ff5677e6ad02b811bd0cb671
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 61cab3cfb81ef1d4ccecfce5194334042a8c2268
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842799"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870280"
 ---
 # <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Outlook 项目中的窗体区域
   如果具有窗体区域的 Outlook VSTO 外接程序项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须对生成的窗体区域代码和在运行时实例化某些窗体区域类的任何代码进行更改。  
@@ -165,7 +165,7 @@ ms.locfileid: "53842799"
     this.olkTextBox1 = this.GetFormRegionControl<Microsoft.Office.Interop.Outlook.OlkTextBox>("OlkTextBox1");  
     ```  
   
-     下面的代码示例演示如何初始化面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 的项目中的控件。 在此代码中， <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase.GetFormRegionControl%2A> 方法不具有类型参数。 必须将返回值强制转换为正在初始化的控件的类型。  
+     下面的代码示例演示如何初始化面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的项目中的控件。 在此代码中， <xref:Microsoft.Office.Tools.Outlook.ImportedFormRegionBase.GetFormRegionControl%2A> 方法不具有类型参数。 必须将返回值强制转换为正在初始化的控件的类型。  
   
     ```vb  
     Me.olkTextBox1 = CType(GetFormRegionControl("OlkTextBox1"), Microsoft.Office.Interop.Outlook.OlkTextBox)  

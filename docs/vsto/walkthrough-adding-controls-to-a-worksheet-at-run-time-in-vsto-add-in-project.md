@@ -10,17 +10,17 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets at run time
 - application-level add-ins [Office development in Visual Studio], adding controls
 - worksheets, adding controls at run time
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5aa574abb6f0d14d17a9bfb73c28a6c330885bc2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8dde4832a128dd061f8a0982158ac1074f94820
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968639"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875805"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>演练：将控件添加到在运行时在 VSTO 外接程序项目中的工作表
   可通过使用 Excel VSTO 外接程序向任何打开的工作表添加控件。 本演练演示如何利用功能区使用户能够向工作表添加 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.ListObject>。 有关信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
@@ -49,7 +49,7 @@ ms.locfileid: "53968639"
   
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>若要新建 Excel VSTO 外接程序项目  
   
-1.  在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，创建一个 Excel VSTO 外接程序项目名称**ExcelDynamicControls**。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，创建一个 Excel VSTO 外接程序项目名称**ExcelDynamicControls**。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  添加对的引用**Microsoft.Office.Tools.Excel.v4.0.Utilities.dll**程序集。 在本演练稍后内容中，需要此引用以编程方式将 Windows 窗体控件添加到工作表。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "53968639"
   
 5.  在 **“属性”** 窗口中，更改下列属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**名称**|**Button**|  
     |**标签**|**Button**|  
@@ -84,7 +84,7 @@ ms.locfileid: "53968639"
   
 7.  添加到一个第三个复选框**group1**，然后将更改以下属性。  
   
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**名称**|**ListObject**|  
     |**标签**|**ListObject**|  

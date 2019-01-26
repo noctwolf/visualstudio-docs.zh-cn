@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 67ae8af6-3752-49e8-8ce3-007aca5f7982
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8318b4611695e80eb492694c405d81dffd3cbfe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 787eb0fd3cf865eb4b800c9470cf0c3d77d45975
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847978"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958389"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>将目录添加到添加新项对话框
 下面的代码示例演示如何注册一组新的目录**添加新项**对话框。 目录**添加新项**对话框是不同的每个项目。 因此下, 注册目录**项目**子项中, 找到**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**。

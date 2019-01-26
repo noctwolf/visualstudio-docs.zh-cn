@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8c0e18146361cfbe89433d79962afcb89de3061
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a97bcd23bd4ac3f69ab39a31a48dabc62e00a3a1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961304"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876026"
 ---
 # <a name="ribbon-object-model-overview"></a>功能区对象模型概述
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]公开可用于获取和设置在运行时的功能区控件的属性的强类型化的对象模型。 例如，您可以动态填充菜单控件，或显示和隐藏控件根据上下文。 向功能区，但只能在功能区加载 Office 应用程序之前，还可以添加选项卡、 组和控件。 有关信息，请参阅[设置属性变为只读](#SettingReadOnlyProperties)。  
@@ -37,7 +37,7 @@ ms.locfileid: "53961304"
 |事件|描述|  
 |-----------|-----------------|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|当 Office 应用程序加载功能区自定义项时引发。 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>事件处理程序会自动添加到功能区代码文件。 使用此事件处理程序运行时在功能区加载自定义代码。|  
-|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|您可以在功能区自定义项的缓存映像时在功能区加载。 如果您编写代码以缓存此事件处理程序中的功能区映像，可以获取略微的性能提升。 有关详细信息，请参阅<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>。|  
+|<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|您可以在功能区自定义项的缓存映像时在功能区加载。 如果您编写代码以缓存此事件处理程序中的功能区映像，可以获取略微的性能提升。 有关详细信息，请参阅 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>。|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|功能区实例关闭时引发。|  
   
 ##  <a name="RibbonControlClasses"></a> 功能区控件  
@@ -52,14 +52,14 @@ ms.locfileid: "53961304"
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|  
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
 |**组合框**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
-|**下拉列表中**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
-|**编辑框**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
+|**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
+|**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Gallery**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**组**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**标签**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
 |**菜单**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**分隔符**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
-|**拆分按钮**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
+|**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |Tab|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
   
@@ -136,10 +136,10 @@ ms.locfileid: "53961304"
 |--------------|--------------------------|  
 |**BoxStyle**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
-|**列数**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
+|**ColumnCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ControlId**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**DialogLauncher**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
-|**动态**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
+|**Dynamic**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Global**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**组**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
 |**ImageName**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
@@ -148,13 +148,13 @@ ms.locfileid: "53961304"
 |**名称**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|  
 |**位置**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|  
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
-|**行计数**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
+|**RowCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ShowItemImage**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ShowItemLabel**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**ShowItemSelection**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**SizeString**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**StartFromScratch**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
-|**选项卡**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
+|**Tabs**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|  
 |**标题**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
   
 ### <a name="set-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>在 Outlook 检查器中设置属性的显示功能区  
@@ -181,7 +181,7 @@ ms.locfileid: "53961304"
   
 |参数|描述|  
 |---------------|-----------------|  
-|*发件人*|<xref:System.Object>它表示引发事件的控件。|  
+|*sender*|<xref:System.Object>它表示引发事件的控件。|  
 |*e*|一个<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs>，其中包含<xref:Microsoft.Office.Core.IRibbonControl>。 使用此控件可访问的任何属性都在提供的功能区对象模型中不可用[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。|  
   
 ## <a name="see-also"></a>请参阅  

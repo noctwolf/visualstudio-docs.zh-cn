@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689a612ad277291f72af5527300b4d49f76f173f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5d65617a354bc5e752d138bc2cf80261ba2736a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828636"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955139"
 ---
 # <a name="registering-a-legacy-language-service"></a>注册旧版语言服务
 以下各节提供了列表的注册表项的各种语言服务中的可用选项[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
@@ -29,9 +29,9 @@ ms.locfileid: "53828636"
   
 |name|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
-|(默认)|REG_SZ|*\<GUID &GT;*|语言服务的 GUID。|  
+|(默认)|REG_SZ|*\<GUID>*|语言服务的 GUID。|  
 |LangResID|REG_DWORD|0x0 0xffff|资源的字符串标识符 (ResID) 的语言的本地化的文本名称。|  
-|package|REG_SZ|*\<GUID &GT;*|VSPackage 的 GUID。|  
+|package|REG_SZ|*\<GUID>*|VSPackage 的 GUID。|  
 |ShowCompletion|REG_DWORD|0-1|指定是否**语句结束**中的选项**选项**启用对话框。|  
 |ShowSmartIndent|REG_DWORD|0-1|指定是否要选择的选项**智能**中缩进**选项**对话框的已启用。|  
 |RequestStockColors|REG_DWORD|0-1|指定是否自定义或默认颜色用于颜色关键字。|  
@@ -85,7 +85,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |name|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
-|(默认)|REG_SZ|resID|此选项页的本地化的显示名称。 名称可以是文字文本或 #`nnn`，其中`nnn`是附属 DLL 指定 VSPackage 中的字符串资源 ID。|  
+|(默认)|REG_SZ|ResID|此选项页的本地化的显示名称。 名称可以是文字文本或 #`nnn`，其中`nnn`是附属 DLL 指定 VSPackage 中的字符串资源 ID。|  
 |package|REG_SZ|*GUID*|实现此选项页的 VSPackage 的 GUID。|  
 |页|REG_SZ|*GUID*|要通过调用从 VSPackage 请求的属性页 GUID<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>方法。 如果此注册表项不存在，注册表项将描述的节点，不是页面。|  
   
@@ -138,10 +138,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |----------|----------|-----------|-----------------|  
 |(默认)|REG_SZ|""|未使用;可以将您的姓名的文档。|  
 |DefaultToolboxTab|REG_SZ|""|要在编辑器处于活动状态时将默认的工具箱选项卡的名称。|  
-|DisplayName|REG_SZ|resID|中显示姓名**打开**对话框。 名称的标准格式字符串资源 ID 或名称。|  
+|DisplayName|REG_SZ|ResID|中显示姓名**打开**对话框。 名称的标准格式字符串资源 ID 或名称。|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|用于**打开**菜单命令。 如果您不想要列出特定文件类型的可用编辑器的列表中的默认文本编辑器，将此值设置为 1。|  
-|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|用于任何语言服务，可以使用代码页支持打开文件。 例如，当您打开.txt 文件通过使用**打开**命令时，使用在源代码编辑器，无需编码提供选项。<br /><br /> 子项的名称指定的 GUID 是代码页编辑器工厂;在此特定的注册表项中指定的链接的 GUID 是正则编辑器工厂。 此项的目的是，如果 IDE 不会使用默认编辑器中打开一个文件，IDE 将尝试使用列表中的下一步的编辑器。 此下一步编辑器不应为代码页编辑器工厂，因为此编辑器工厂基本上是相同的编辑器工厂的失败。|  
-|package|REG_SZ|*\<GUID &GT;*|显示名称 ResID 的 VSPackage GUID。|  
+|LinkedEditorGUID|REG_SZ|*\<GUID>*|用于任何语言服务，可以使用代码页支持打开文件。 例如，当您打开.txt 文件通过使用**打开**命令时，使用在源代码编辑器，无需编码提供选项。<br /><br /> 子项的名称指定的 GUID 是代码页编辑器工厂;在此特定的注册表项中指定的链接的 GUID 是正则编辑器工厂。 此项的目的是，如果 IDE 不会使用默认编辑器中打开一个文件，IDE 将尝试使用列表中的下一步的编辑器。 此下一步编辑器不应为代码页编辑器工厂，因为此编辑器工厂基本上是相同的编辑器工厂的失败。|  
+|package|REG_SZ|*\<GUID>*|显示名称 ResID 的 VSPackage GUID。|  
   
 ### <a name="example"></a>示例  
   
@@ -162,7 +162,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |name|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |(默认)|REG_SZ||未使用。|  
-|*\<GUID &GT;*|REG_SZ|""|支持的逻辑视图的键。 您可以根据需要可以具有任意数量。 注册表项的名称是什么是重要的是，没有值，该值始终为空字符串。|  
+|*\<GUID>*|REG_SZ|""|支持的逻辑视图的键。 您可以根据需要可以具有任意数量。 注册表项的名称是什么是重要的是，没有值，该值始终为空字符串。|  
   
 ### <a name="example"></a>示例  
   
@@ -184,7 +184,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |name|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |(默认)|REG_SZ||未使用。|  
-|*\<ext >*|REG_DWORD|0 0xffffffff|扩展的相对优先级。 如果两个或多个语言共享相同的扩展名，请选择优先级较高的语言。|  
+|*\<ext>*|REG_DWORD|0 0xffffffff|扩展的相对优先级。 如果两个或多个语言共享相同的扩展名，请选择优先级较高的语言。|  
   
  此外，当前用户的默认编辑器选择存储在 HKEY_Current_User\Software\Microsoft\VisualStudio\\*X.Y*\Default 编辑器\\*ext*。自定义项中选择的语言服务的 GUID。 此方法将当前用户的优先。  
   

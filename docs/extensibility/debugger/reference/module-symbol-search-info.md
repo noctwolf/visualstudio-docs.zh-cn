@@ -1,5 +1,5 @@
 ---
-title: MODULE_SYMBOL_SEARCH_INFO |Microsoft Docs
+title: MODULE_SYMBOL_SEARCH_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e6bf29280345e1029a0732d36666ceba78ba2ed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70ac576cb246f3da6e38a17cfde2b9a0490ec470
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826661"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917284"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
 包含有关已搜索的符号搜索路径的状态信息。  
@@ -51,7 +51,7 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
   
  如果`bstrVerboseSearchInfo`字段不为空，则它包含搜索路径和该搜索的结果的列表。 列表格式与跟省略号 （"..."） 后, 跟结果的路径。 如果有多个路径结果对，然后由"\r\n"（回车符-/ 换行） 对分隔每个对。 该模式如下所示：  
   
- \<路径 >...\<结果 > \r\n\<路径 >...\<结果 > \r\n\<路径 >...\<结果 >  
+ \<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>  
   
  请注意，最后一项没有 \r\n 序列。  
   

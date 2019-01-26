@@ -10,17 +10,17 @@ helpviewer_keywords:
 - SharePoint project items, defining your own types
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint development in Visual Studio, defining new project item types
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e3cae6558bdce8206340f10d570a620ba0fb1972
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f4164b9d66e0a171a00d81e1044c5078298ec60
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932319"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876013"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>演练：使用项模板，第 1 部分创建自定义操作项目项
   可以通过创建你自己的项目项类型来扩展 Visual Studio 中的 SharePoint 项目系统。 在本演练中，将创建可以添加到 SharePoint 项目，以便在 SharePoint 站点上创建自定义操作项目项。 自定义操作添加的菜单项**站点操作**菜单中的 SharePoint 站点。

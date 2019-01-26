@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac673709ea648a3c0fb6602797af90f86f33f0e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e01a0030d4c8948652cdfc8706bb620190fd45b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949714"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923011"
 ---
 # <a name="making-commands-available"></a>提供可用命令
 当多个 Vspackage 添加到 Visual Studio 中时，用户界面 (UI) 可能会变得 overcrowded 命令。 您可以编写您的程序包以帮助减少此问题，请按如下所示：

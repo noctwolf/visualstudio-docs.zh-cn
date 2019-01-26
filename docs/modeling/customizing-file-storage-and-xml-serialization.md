@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 443d6ebd98c8e4a5c583658d46663e34769f72de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a42e82d95f855cfa444c30c61a9f2a03cc79ec4b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858241"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918573"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自定义文件存储和 XML 序列化
 
@@ -153,7 +153,7 @@ ms.locfileid: "53858241"
 
      创建从域类与具有的名字对象密钥属性的另一个类继承关系。
 
-### <a name="avoid-duplicate-monikers"></a>避免重复名字对象
+### <a name="avoid-duplicate-monikers"></a>Avoid Duplicate Monikers
 
 如果使用限定键的名字对象，就可以在用户的模型中的两个元素可能在键属性具有相同的值。 例如，如果 DSL 具有类有一个属性名称的人员，用户可以设置的两个元素的名称相同。 尽管可能是该模型保存到文件，它将不重新加载正确。
 

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - document protection [Office development in Visual Studio]
 - Word [Office development in Visual Studio], restricted permissions
 - GroupContentControl
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8498eac9c34c9876c22eb9f04723b62e40f70ca4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f12eb0e43b1868d93a155354756b10b9661e560
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989252"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875519"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何：使用内容控件保护文档的某些部分
   当你保护文档的一部分时，将阻止用户更改或删除文档该部分中的内容。 通过使用内容控件，有以下几种方法来保护 Microsoft Office Word 文档的各个部分：  
@@ -37,7 +37,7 @@ ms.locfileid: "53989252"
 ##  <a name="EditDeleteControl"></a> 保护内容控件  
  你可以阻止用户编辑或删除内容控件通过在设计时或在运行时在文档级项目中设置控件的属性。  
   
- 还可以使用 VSTO 外接程序项目保护在运行时添加到文档中的内容控件。 有关更多信息，请参见[如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
+ 还可以使用 VSTO 外接程序项目保护在运行时添加到文档中的内容控件。 有关详细信息，请参阅[如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
   
 ### <a name="to-protect-a-content-control-at-design-time"></a>若要在设计时保护内容控件  
   
@@ -66,7 +66,7 @@ ms.locfileid: "53989252"
      [!code-csharp[Trin_WordAddInDynamicControls#14](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#14)]  
   
 ## <a name="protect-a-part-of-a-document-that-is-not-in-a-content-control"></a>保护不在内容控件中的文档的一部分  
- 可通过将文档的某一区域放置到 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 中，阻止用户更改该区域。 此方法在以下应用场景中很有用：  
+ 可通过将文档的某一区域放置到 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 中，阻止用户更改该区域。 这在以下应用场景中很有用：  
   
 -   想要保护不包含内容控件的区域。  
   
@@ -82,7 +82,7 @@ ms.locfileid: "53989252"
 2.  在功能区上，单击 **“开发人员”** 选项卡。  
   
     > [!NOTE]  
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关更多信息，请参见[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 3.  在中**控件**组中，单击**组**下拉列表按钮，然后再单击**组**。  
   

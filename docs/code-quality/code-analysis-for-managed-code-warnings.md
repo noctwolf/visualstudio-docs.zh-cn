@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3840fc6ee7a5ef0075463462062f78c1a3d2a0c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8c86728488d74e5eebc277e87e87c96098915f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876135"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957931"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>托管代码的代码分析警告
 托管代码分析工具可以发出警告，指示托管代码库中存在违反规则的情况。 这些警告将被分类到各个规则领域，例如设计、本地化、性能和安全性。 每个警告表示一次托管代码分析规则冲突。 本部分深入讨论每个托管代码分析警告，并提供相关示例。
