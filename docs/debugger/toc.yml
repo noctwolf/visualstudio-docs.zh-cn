@@ -254,7 +254,7 @@ items:
         href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
       - name: 尝试联系远程计算机时出现 DCOM 错误。 拒绝访问。
         href: a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied.md
-      - name: 远程计算机上的 Microsoft Visual Studio 远程调试监视器正在以其他用户身份运行
+      - name: 远程计算机上的 Microsoft Visual Studio 远程调试监视器正在以其他用户身份运行 |Microsoft Docs
         href: error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user.md
       - name: 无法自动单步执行服务器
         href: error-unable-to-automatically-step-into-the-server.md
@@ -515,11 +515,6 @@ items:
         - name: 调试 COM 服务器和容器
           href: com-server-and-container-debugging.md
           items:
-          - name: 调试 COM 服务器
-            href: how-to-debug-com-servers.md
-            items:
-            - name: SDI 服务器应用程序
-              href: sdi-server-applications.md
           - name: 使用 RPC 调试来调试 COM 客户端和服务器
             href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
         - name: 调试 ActiveX 控件
@@ -840,9 +835,9 @@ items:
   items:
   - name: Visual Studio 中调试器的新增功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 149cc7c04aad0d070a538ef32aa6b14c015eee56
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8b5579f74964cb645fd21ba04ce0e8708a1517e
+ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947473"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417936"
