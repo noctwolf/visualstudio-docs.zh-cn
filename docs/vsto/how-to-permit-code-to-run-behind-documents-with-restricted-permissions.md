@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df2f16a434cd4e2907e3e5d9a6054967b8a6abf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6030165e7b24bdba5c7fa6e223b915e5cf4c85c8
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949331"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870251"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>如何：允许代码以使用受限权限的文档的后台运行
   Microsoft Office 信息权限管理 (IRM) 功能可用于限制对文档或工作簿的权限。 默认情况下，受限制的 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿后的代码不被允许运行。 可以更改默认值，使托管的代码扩展可以访问的对象模型，该解决方案将适用。  

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - workbooks, saving in XML format
 - workbooks, saving
 - workbooks, saving backup copies
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab05bee8e58ca17d697dc0d3414662fc50ab4234
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcc0869b8d255ba91e1a1fd017c93cdb24346b27
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829166"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874544"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>如何：以编程方式保存工作簿
   可通过多种方式保存工作簿。 可以保存工作簿而不更改路径。 如果以前没有保存过工作簿，则应该通过指定一个路径来保存工作簿。 如果没有显式路径，Microsoft Office Excel 会使用创建文件时为其指定的名称将文件保存在当前文件夹中。 还可以保存工作簿的副本，而不修改内存中打开的工作簿。  
@@ -50,7 +50,7 @@ ms.locfileid: "53829166"
   
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>保存与文档级自定义项关联的工作簿  
   
-1.  调用 `ThisWorkbook` 类的 <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> 方法。 若要使用下面的代码示例，请在 `ThisWorkbook` 类中运行它。  
+1.  调用 <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> 类的 `ThisWorkbook` 方法。 若要使用下面的代码示例，请在 `ThisWorkbook` 类中运行它。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#5)]
      [!code-vb[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#5)]  
@@ -67,7 +67,7 @@ ms.locfileid: "53829166"
   
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>保存与文档级自定义项关联的工作簿  
   
-1.  调用 `ThisWorkbook` 类的 <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> 方法。 若要使用下面的代码示例，请在 `ThisWorkbook` 类中运行它。  
+1.  调用 <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> 类的 `ThisWorkbook` 方法。 若要使用下面的代码示例，请在 `ThisWorkbook` 类中运行它。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#6)]
      [!code-vb[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#6)]  

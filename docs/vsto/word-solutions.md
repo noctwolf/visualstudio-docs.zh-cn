@@ -21,17 +21,17 @@ helpviewer_keywords:
 - user interfaces [Office development in Visual Studio], Word
 - Office documents [Office development in Visual Studio, Word
 - document-level customizations [Office development in Visual Studio], Word
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81154d0cab5760fa3b6a9d2418c9669258fca01f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9c5f5bc13a8ca77268c5333cbe44a8b6729df4d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986747"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874843"
 ---
 # <a name="word-solutions"></a>Word 解决方案
   Visual Studio 提供可用于创建适用于 Microsoft Office Word 的文档级自定义项和 VSTO 外接程序的项目模板。 你可以使用这些解决方案来实现 Word 自动化、扩展 Word 功能以及自定义 Word 用户界面 (UI)。 有关文档级自定义项和 VSTO 外接程序之间的差异的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -59,7 +59,7 @@ ms.locfileid: "53986747"
 ##  <a name="doclevel"></a> 开发 Word 的文档级自定义项  
  Microsoft Office Word 的文档级自定义项包含与特定文档相关联的程序集。 此程序集通常可通过自定义 UI 和自动化 Word 来扩展文档。 不同于与 Word 自身相关联的 VSTO 外接程序，在自定义中实现的功能只有当关联文档在 Word 中打开时才可用。  
   
- 若要创建 Word 的文档级自定义项目，可使用 Visual Studio 的 **“新建项目”** 对话框中的“Word 文档”或“Word 模板”项目模板。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+ 若要创建 Word 的文档级自定义项目，可使用 Visual Studio 的 **“新建项目”** 对话框中的“Word 文档”或“Word 模板”项目模板。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
  详细了解如何使用文档级自定义项工作[的文档级自定义体系结构](../vsto/architecture-of-document-level-customizations.md)。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "53986747"
 ##  <a name="applevel"></a> 开发 Word 的 VSTO 外接程序  
  Microsoft Office Word 的 VSTO 外接程序包含由 Word 加载的程序集。 此程序集通常可通过自定义 UI 和自动化 Word 来扩展 Word。 不同的文档级自定义项，这是与特定文档相关联，在 VSTO 外接程序中实现的功能不局限于任何单个文档。  
   
- 若要创建 Word 的 VSTO 外接程序项目，可使用 Visual Studio 的 **“新建项目”** 对话框中的 Word 外接程序项目模板。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+ 若要创建 Word 的 VSTO 外接程序项目，可使用 Visual Studio 的 **“新建项目”** 对话框中的 Word 外接程序项目模板。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
  有关 VSTO 外接程序工作原理的常规信息，请参阅 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。  
   

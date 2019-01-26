@@ -14,15 +14,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], adding
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de5e5a549a912a84634c2025a3cfa71e4f6688ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: adc1b788c01dca16663fa769ffd69904b04e8a98
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846316"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870995"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>如何：向 Outlook 外接程序项目添加窗体区域
   使用  “新建 Outlook 窗体区域”向导创建窗体区域，从而扩展标准或自定义 Microsoft Office Outlook 窗体。 你可以在 Visual Studio 中创建一个新的窗体区域并设计用户界面，也可以导入在 Outlook 中设计的窗体区域并添加 Visual Basic 或 C# 代码。  
@@ -33,7 +33,7 @@ ms.locfileid: "53846316"
   
 ### <a name="to-add-a-new-form-region-to-an-outlook-project"></a>向 Outlook 项目中添加新的窗体区域  
   
-1.  在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中打开或创建 Outlook VSTO 外接程序项目。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中打开或创建 Outlook VSTO 外接程序项目。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  在 “解决方案资源管理器”中，选择 Outlook VSTO 外接程序项目节点。  
   

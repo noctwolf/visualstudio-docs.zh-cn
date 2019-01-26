@@ -12,15 +12,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a60470d43842384103462fe69c4beba72bdc452d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aba47e277b1c109bf4b0d03efb5694733f45760c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912331"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871879"
 ---
 # <a name="grant-trust-to-documents"></a>向文档授予信任
   文档级项目与应用程序级项目具有相同的安全要求：使用证书对清单进行签名，或单击信任提示。 此外，文档或工作簿必须位于指定为受信任位置的目录中。  
@@ -41,7 +41,7 @@ ms.locfileid: "53912331"
   
 -   尽管通过使用受信任的位置使文档本身受到信任，但仍需要其他权限来信任该自定义项。 可以通过使用证书对清单进行签名、 单击信任提示，或安装的 Office 解决方案授予完全信任的自定义*Program Files*目录。  
   
--   可以在与程序集相同或不同的目录中存储文档级解决方案的文档或工作薄。 例如，文档可以位于 SharePoint 服务器，而程序集可以位于网络文件共享中。 有关更多信息，请参见[如何：使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)。  
+-   可以在与程序集相同或不同的目录中存储文档级解决方案的文档或工作薄。 例如，文档可以位于 SharePoint 服务器，而程序集可以位于网络文件共享中。 有关详细信息，请参阅[如何：使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)。  
   
 ## <a name="see-also"></a>请参阅  
  [向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)   

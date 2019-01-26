@@ -22,22 +22,22 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Windows Forms controls
 - Windows Forms controls [Office development in Visual Studio], about Windows Forms controls
 - Office applications [Office development in Visual Studio], Windows Forms
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48778074587e5cf6e4a51ff2386a437e9c3922d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbadf9f2e431cfe441b2cd3ef3694f38e019de49
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902488"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872334"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows 窗体控件在 Office 文档概述
   Windows 窗体控件是用户可与之交互以便输入或操作数据的对象。 在 Microsoft Office Excel 和 Microsoft Office Word 文档级项目中，您可以添加 Windows 窗体控件的文档或工作簿项目中在设计时，或以编程方式可以在运行时添加这些控件。 以编程方式可以向任何打开的文档或工作表在 VSTO 外接程序中的运行时添加这些控件，Excel 或 Word。  
   
- 有关更多信息，请参见[如何：将 Windows 窗体控件添加到 Office 文档](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
+ 有关详细信息，请参阅[如何：将 Windows 窗体控件添加到 Office 文档](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
@@ -118,7 +118,7 @@ ms.locfileid: "53902488"
  某些情况下，代码不会进行加载而仅显示位图，例如当用户在设计模式下打开工作簿时。 而且，如果用户在未安装 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的计算机上打开工作簿，自定义项将无法运行以加载控件，因此只有控件的位图是可见的。 在保存工作簿并将其发送给其他用户之前，应总是从工作簿上的控件中删除个人信息，以确保不会意外泄漏你的个人信息。  
   
 ### <a name="match-control-size-to-cell-size-on-an-excel-worksheet"></a>在 Excel 工作表的单元格大小匹配控件大小  
- 可以将控件设置为当父单元格的大小更改时自动重设大小。 有关更多信息，请参见[如何：调整工作表单元格中的控件的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)。  
+ 可以将控件设置为当父单元格的大小更改时自动重设大小。 有关详细信息，请参阅[如何：调整工作表单元格中的控件的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)。  
   
 ### <a name="add-components-that-are-shared-by-all-worksheets"></a>添加由所有工作表共享的组件  
  可以将希望在所有工作表之间共享的组件（如 <xref:System.Data.DataSet>）添加到工作簿设计器而不是工作表。 该组件将出现在组件栏中。  

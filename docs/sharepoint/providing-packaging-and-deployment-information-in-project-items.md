@@ -19,17 +19,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, feature receiver
 - feature receiver [SharePoint development in Visual Studio]
 - safe controls [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ec29871cc6e5062f2d44fb8938872b5f0531f2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 248bf442924ab427b41875272771d2d55708f233
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843016"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870069"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>提供在项目项中的打包和部署信息
   中的所有 SharePoint 项目项[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]具有可用于项目部署到 SharePoint 时提供额外的数据的属性。 这些属性如下所示：  
@@ -79,14 +79,14 @@ ms.locfileid: "53843016"
   
  项目输出引用通常是程序集，但在某些情况下 （例如 Silverlight 项目） 可以是其他文件类型。  
   
- 有关更多信息，请参见[如何：添加项目输出引用](../sharepoint/how-to-add-a-project-output-reference.md)。  
+ 有关详细信息，请参阅[如何：添加项目输出引用](../sharepoint/how-to-add-a-project-output-reference.md)。  
   
 ## <a name="safe-control-entries"></a>安全控件项
  SharePoint 提供了一种安全机制，称为安全控件项，以限制到特定控件的不受信任用户的访问。 根据设计，SharePoint 允许不受信任的用户上传并在 SharePoint 服务器上创建 ASPX 页。 若要防止这些用户将不安全代码添加到 ASPX 页，SharePoint 会限制其访问权限*安全控件*。 安全控件是 ASPX 控件和指定为安全的 Web 部件，并且由你的站点上的任何用户。 有关详细信息，请参阅[步骤 4:将 Web 部件添加到安全控件列表](http://go.microsoft.com/fwlink/?LinkID=171014)。  
   
  中的每个 SharePoint 项目项[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]具有一个名为属性**安全控件项**具有两个布尔子属性：**安全**并**安全应对脚本**。 “安全”属性指定不受信任的用户是否能访问控件。 安全应对脚本属性指定是否不受信任的用户可以查看和更改控件的属性。  
   
- 安全控件项集进行引用。 通过输入项目项中的安全控件项添加到项目的程序集**安全控件项**属性。 但是，您还可以向项目的程序集通过添加安全控件项**高级**选项卡**包设计器**时向包中添加其他程序集。 有关更多信息，请参见[如何：将控件标记为安全控件](../sharepoint/how-to-mark-controls-as-safe-controls.md)或[Web 部件程序集注册为安全控件](http://go.microsoft.com/fwlink/?LinkID=171013)。  
+ 安全控件项集进行引用。 通过输入项目项中的安全控件项添加到项目的程序集**安全控件项**属性。 但是，您还可以向项目的程序集通过添加安全控件项**高级**选项卡**包设计器**时向包中添加其他程序集。 有关详细信息，请参阅[如何：将控件标记为安全控件](../sharepoint/how-to-mark-controls-as-safe-controls.md)或[Web 部件程序集注册为安全控件](http://go.microsoft.com/fwlink/?LinkID=171013)。  
   
 ### <a name="xml-entries-for-safe-controls"></a>XML 项的安全控件
  时安全控件项添加到项目项或对项目的程序集时，引用写入包清单采用以下格式：  

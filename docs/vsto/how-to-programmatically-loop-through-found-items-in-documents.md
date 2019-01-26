@@ -9,17 +9,17 @@ helpviewer_keywords:
 - loops, through found items in documents
 - documents [Office development in Visual Studio], searching
 - text [Office development in Visual Studio], searching in documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a04cf49d1414ae1cedf2d157237e53883182eb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17c379f9c2f2ae1fbd7dac36b174bd0718cefeb2
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961833"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872672"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>如何：以编程方式遍历在文档中找到的项
   <xref:Microsoft.Office.Interop.Word.Find>类具有<xref:Microsoft.Office.Interop.Word.Find.Found%2A>属性，它返回**true**每当找到搜索的项。 你可以使用 <xref:Microsoft.Office.Interop.Word.Range> 方法循环访问在 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 中找到的所有实例。  

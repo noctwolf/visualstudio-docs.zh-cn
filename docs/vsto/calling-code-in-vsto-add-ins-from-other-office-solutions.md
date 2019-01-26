@@ -14,15 +14,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c347000d75beb628c01c5a8f8275d4755db776f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14ea47b000adb3f60a0925659ff869d25e8ed8f4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910264"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874860"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>从其他 Office 解决方案调用 VSTO 外接程序中的代码
   可以向其他解决方案（包括其他 Microsoft Office 解决方案）公开 VSTO 外接程序中的对象。 如果 VSTO 外接程序提供了你希望使其他解决方案能够使用的服务，这一点非常有用。 例如，如果您有执行从 Web 服务的财务数据计算的 Microsoft Office Excel 的 VSTO 外接程序中，其他解决方案可以通过调用 Excel VSTO 外接程序在运行时执行这些计算。  

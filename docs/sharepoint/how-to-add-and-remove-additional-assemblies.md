@@ -9,17 +9,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9653fe6ab79e3615ecb231d19dd9ee20133faf6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 242ba7fa389a832b1299f00c47ba22a67efc5fbc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887005"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873634"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>如何：添加和删除其他程序集
   如果 SharePoint 包依赖于其他程序集的功能或数据，则可以将程序集添加到解决方案包 (.wsp)。 这样一来，在 SharePoint 服务器可确保自定义程序集随包一起安装。  
@@ -31,7 +31,7 @@ ms.locfileid: "53887005"
   
 #### <a name="to-add-an-existing-assembly"></a>若要添加的现有程序集  
   
-1.  打开**包设计器**。 有关更多信息，请参见[如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
+1.  打开**包设计器**。 有关详细信息，请参阅[如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
   
 2.  选择**高级**选项卡。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "53887005"
   
 1.  打开**包设计器**。  
   
-     有关更多信息，请参见[如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
+     有关详细信息，请参阅[如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
   
 2.  选择**高级**选项卡。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "53887005"
   
 #### <a name="to-delete-an-existing-assembly"></a>若要删除的现有程序集  
   
-1.  打开**包设计器**。 有关更多信息，请参见[如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
+1.  打开**包设计器**。 有关详细信息，请参阅[如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)。  
   
 2.  选择**高级**选项卡。  
   

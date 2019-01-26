@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae4be83ffb98985f03d674b851040e19a01d01c7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67a04436c26f16b07e209ddb907a0e1e7d282548
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902875"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869052"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 项目
   如果你的一个 Excel 或 Word 项目使用以下任何功能，且如果目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须修改你的代码：  
@@ -133,7 +133,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
   
 - `Chart` *n*: <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
-  在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，上面所列的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 中的类型是接口，而不是类。 面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中生成的类派生自 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 中的以下新类：  
+  在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，上面所列的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 中的类型是接口，而不是类。 面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中生成的类派生自 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的以下新类：  
   
 - `ThisDocument`: <xref:Microsoft.Office.Tools.Word.DocumentBase>  
   

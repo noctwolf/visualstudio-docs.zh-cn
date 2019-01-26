@@ -12,17 +12,17 @@ helpviewer_keywords:
 - object models [Office development in Visual Studio], Word
 - objects [Office development in Visual Studio], Office object models
 - Office object models
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4d550389e6659388c39fc6a2953eeb816c8eb01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a946dc469fe03eb5ad8b42ffc68ef13370542d5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922246"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875194"
 ---
 # <a name="word-object-model-overview"></a>Word 对象模型概述
   在 Visual Studio 中开发 Word 解决方案时，会与 Word 对象模型进行交互。 此对象模型包含 Word 的主互操作程序集中所提供的类和接口，并在 <xref:Microsoft.Office.Interop.Word> 命名空间中进行定义。  

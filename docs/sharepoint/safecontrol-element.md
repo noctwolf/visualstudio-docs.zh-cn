@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SafeControl element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a56936ed867cdadfb938b9804fbcaeb2560e6d86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a05fe8be5097933351eec4816ee3faa0f92a3e37
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864133"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869512"
 ---
 # <a name="safecontrol-element"></a>SafeControl 元素
   表示一个 ASPX 控件或指定为安全的任何用户访问 SharePoint 站点上任何 ASPX 页上的 Web 部件。  
@@ -45,7 +45,7 @@ ms.locfileid: "53864133"
 |**IsSafeAgainstScript**|可选**xs: boolean**属性。<br /><br /> 指定不受信任的用户是否可以查看或编辑 Web 部件的 ASPX 控件的属性。|  
 |**名称**|可选**xs: string**属性。<br /><br /> 此集合中的安全控件项的名称。|  
 |**命名空间**|可选**xs: string**属性。<br /><br /> Web 部件的 ASPX 控件的命名空间。|  
-|**类型名称**|可选**xs: string**属性。<br /><br /> Web 部件的 ASPX 控件的类型名称。|  
+|**TypeName**|可选**xs: string**属性。<br /><br /> Web 部件的 ASPX 控件的类型名称。|  
   
 ### <a name="child-elements"></a>子元素
  无。  
@@ -63,7 +63,7 @@ ms.locfileid: "53864133"
   
 |||  
 |-|-|  
-|**命名空间**|http<nolink>: //schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
+|**命名空间**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|  
 |**架构名称**|SharePoint 项目项架构|  
 |**验证文件**|ProjectItemModelSchema.xsd|  
 |**可以为空**|否|  

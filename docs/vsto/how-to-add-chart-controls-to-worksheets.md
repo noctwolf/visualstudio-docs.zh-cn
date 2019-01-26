@@ -10,15 +10,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 577c0531e73ad5586386c478611e57daa7e651d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89da5b9c960c3df426a4ae96c99e2628540fc6ae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967461"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873790"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>如何：将图表控件添加到工作表
   您可以添加<xref:Microsoft.Office.Tools.Excel.Chart>到 Microsoft Office Excel 工作表在设计时和运行时在文档级自定义项中的控件。 您还可以添加<xref:Microsoft.Office.Tools.Excel.Chart>在运行时在 VSTO 外接程序中的控件。  

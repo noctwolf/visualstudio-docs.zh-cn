@@ -10,17 +10,17 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], document protection
 - document protection, adding to worksheets
 - worksheets, protecting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dce13f8ec89f57b595f1147d99325004e89275e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1cd97cc6f85930523b6f0be02385dcb85b7af93d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936927"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872776"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>如何：以编程方式保护工作表
   Microsoft Office Excel 中的保护功能可帮助防止用户和代码修改工作表中的对象。 默认情况下，开启保护之后，将锁定所有单元格。  

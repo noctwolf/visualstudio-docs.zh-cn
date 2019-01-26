@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66e3566b7bfabb7ec2049632937beaa697246403
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b2709426cca892e60d864fa62695b2eef8c776b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868321"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874037"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>创建 SharePoint 站点定义
   中的 SharePoint 站点定义项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，可以创建*网站定义*，它可作为新的 SharePoint 站点的基础。 这些定义不仅确定的外观和行为的 SharePoint 站点，但还自己的默认内容和功能。 在定义中，您可以放入预配置的列表、 内容类型、 事件接收器、 图像和其他项。 例如 SharePoint 包含某些网站定义（如 BLOG）。 当创建了基于博客站点定义的网站时，站点将包含列表、 Web 部件和博客网站所需的其他项。  
@@ -36,9 +36,9 @@ ms.locfileid: "53868321"
   
 |文件名|描述|  
 |---------------|-----------------|  
-|*Default.aspx*|新的 SharePoint 站点默认 ASPX 主页。|  
-|*Onet.xml*|指定新站点的配置、 站点定义模板，默认行为的组件。 这些设置可以包含的内容类型启用的默认列表视图，文档模板文件，如属性和 Web 部件包含与该站点。 默认情况下，`Modules`部分列出了要添加到 SharePoint 站点，如何配置这些设置的文件。|  
-|*webtemp_\<SiteDefinitionName >.xml*|指定将出现在站点定义配置**模板选择**一部分**新的 SharePoint 站点**页。|  
+|*default.aspx*|新的 SharePoint 站点默认 ASPX 主页。|  
+|*onet.xml*|指定新站点的配置、 站点定义模板，默认行为的组件。 这些设置可以包含的内容类型启用的默认列表视图，文档模板文件，如属性和 Web 部件包含与该站点。 默认情况下，`Modules`部分列出了要添加到 SharePoint 站点，如何配置这些设置的文件。|  
+|*webtemp_\<SiteDefinitionName>.xml*|指定将出现在站点定义配置**模板选择**一部分**新的 SharePoint 站点**页。|  
   
  默认情况下，所有站点定义都存储在*\<驱动器： > \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates*文件夹。 每个站点定义具有自己的子文件夹。  
   

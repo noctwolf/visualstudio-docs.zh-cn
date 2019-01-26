@@ -12,17 +12,17 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Office object models
 - Visio object model
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 040144b1e18e216ef8ceadbd218cd42ccf7c40f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbdcecc11a260130128c60c222da10c249a58799
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848462"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869315"
 ---
 # <a name="visio-object-model-overview"></a>Visio 对象模型概述
   要为 Microsoft Office Visio 开发 Office 解决方案，则可以与 Visio 对象模型进行交互。 此对象模型包含 Visio 中主互操作程序集所提供的类和接口，并在 `Microsoft.Office.Interop.Visio` 命名空间中定义。  

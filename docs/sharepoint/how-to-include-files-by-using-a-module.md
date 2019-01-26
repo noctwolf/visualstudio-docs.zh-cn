@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, modules
 - modules [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d0cfe558c21a941ed5cc16eccef2e014acfbcdb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c08e04dd6ca95e691c33ce77bdedf6a655ee5b4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923485"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871723"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>如何：通过使用模块包括文件
   *模块*(不要与混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]模块) 是，你可以部署到 SharePoint 的文件，如 ASPX 母版页、 文本文件或图像的容器。  

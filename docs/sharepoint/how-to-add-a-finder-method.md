@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], Finder method
 - Business Data Connectivity service [SharePoint development in Visual Studio], get entities
 - BDC [SharePoint development in Visual Studio], Finder method
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40a3cb4457f3078e843b89349fd850d83b8a1c67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ae5b1dfca8a083f12aa05d96378c3df348766a0
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963444"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872880"
 ---
 # <a name="how-to-add-a-finder-method"></a>如何：添加 Finder 方法
   若要启用业务数据连接 (BDC) 服务，以显示 web 部件或列表中的实体的列表，必须创建*Finder*方法。 查找程序方法是一种特殊的方法返回的实体实例的集合。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
@@ -31,7 +31,7 @@ ms.locfileid: "53963444"
   
 1. 上**BDC 设计器**，选择实体。  
   
-    有关更多信息，请参见[如何：将实体添加到模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
+    有关详细信息，请参阅[如何：将实体添加到模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
   
 2. 在菜单栏上依次选择**视图** > **其他 Windows** > **BDC 方法详细信息**。  
   

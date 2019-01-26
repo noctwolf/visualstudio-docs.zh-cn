@@ -11,17 +11,17 @@ helpviewer_keywords:
 - check boxes, Word documents
 - documents [Office development in Visual Studio], check box controls
 - controls [Office development in Visual Studio], adding to documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e33d7b683e55f570961d9f9f8f77ea1491db3f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4ab82b47a69509ee151675d483ae5cff859d12d
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913864"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871034"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>演练：更改文档格式设置使用 CheckBox 控件
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中使用 Windows 窗体控件来更改文本格式。  
@@ -52,7 +52,7 @@ ms.locfileid: "53913864"
   
 1.  使用名称创建一个 Word 文档项目**我的 Word 格式**。 在向导中，选择**创建一个新文档**。  
   
-     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新的 Word 文档并将添加**我的 Word 格式**投影到**解决方案资源管理器**。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "53913864"
   
 3.  在 **“属性”** 窗口中，更改下列属性。  
   
-    |属性|“值”|  
+    |属性|值|  
     |--------------|-----------|  
     |**名称**|**applyBoldFont**|  
     |**文本**|**加粗**|  

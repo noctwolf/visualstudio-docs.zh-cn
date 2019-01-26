@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], sorting in worksheets
 - worksheets, sorting data
 - sorting data, in worksheets
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d895f7ba8e192361ea262263af053da868a21e65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10280b9d95892ceb8cb0445a46f1cfd51ea49f48
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960584"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870501"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>如何：以编程方式对工作表中的数据进行排序
   在运行时，可以对工作表区域和列表中所包含数据进行排序。 以下代码先按第一列中的数据对名为 `Fruits` 的多列区域进行排序，然后按第二列中的数据进行相同操作。  

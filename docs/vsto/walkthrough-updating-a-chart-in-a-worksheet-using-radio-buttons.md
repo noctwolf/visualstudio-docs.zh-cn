@@ -9,17 +9,17 @@ helpviewer_keywords:
 - worksheets, updating using managed controls
 - controls [Office development in Visual Studio], updating worksheets
 - worksheets, using radio buttons
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e165fc0a02f3185c74f4a3eb4b0fe9536f71fb66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae451b42642cd3c124b3fe9d5df627c2306a2020
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891929"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54873868"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>演练：使用单选按钮更新工作表中的图表
   本演练显示了使用 Microsoft Office Excel 工作表上的单选按钮为用户提供选项之间快速切换的方法的基础知识。 在这种情况下，选项更改图表的样式。  
@@ -57,7 +57,7 @@ ms.locfileid: "53891929"
 
 4. 添加到以下数据**图表数据**使用 A4 的单元格的左上角和 E8 右下角。  
 
-   ||第 1 季度|第 2 季度|第 3 季度|第 4 季度|  
+   ||Q1|Q2|Q3|Q4|  
    |-|--------|--------|--------|--------|  
    |西部|500|550|550|600|  
    |东部|600|625|675|700|  
@@ -93,7 +93,7 @@ ms.locfileid: "53891929"
 
 1.  使用名称创建的 Excel 工作簿项目**我的 Excel 图表**。 在向导中，选择**复制现有文档**。  
 
-     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
 
 2.  单击**浏览**按钮，然后浏览到在本演练前面创建的工作簿。  
 
@@ -108,7 +108,7 @@ ms.locfileid: "53891929"
 
 1.  选择<xref:Microsoft.Office.Tools.Excel.Chart>设计器中控制和更改中的以下属性**属性**窗口。  
 
-    |属性|值|  
+    |属性|“值”|  
     |--------------|-----------|  
     |**名称**|**dataChart**|  
     |**HasLegend**|**false**|  

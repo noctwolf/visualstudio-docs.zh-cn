@@ -12,17 +12,17 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], automating applications
 - custom task panes [Office development in Visual Studio], PowerPoint
 - task panes [Office development in Visual Studio], automating applications
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 511fc73397355c8870f53a410d79ff1ab73321f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3689b72ef13856ebf3df419377c5bed4ffb88982
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915083"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874862"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>演练：自动执行从自定义任务窗格应用程序
   本演练演示了如何创建实现 PowerPoint 自动化的自定义任务窗格。 当用户单击自定义任务窗格中的 <xref:System.Windows.Forms.MonthCalendar> 控件时，自定义任务窗格向一张幻灯片中插入日期。  
@@ -54,7 +54,7 @@ ms.locfileid: "53915083"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  使用 PowerPoint 外接程序项目模板创建名为 **MyAddIn**的 PowerPoint VSTO 外接程序项目。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  使用 PowerPoint 外接程序项目模板创建名为 **MyAddIn**的 PowerPoint VSTO 外接程序项目。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将打开 **ThisAddIn.cs** 或 **ThisAddIn.vb** 代码文件并将 **MyAddIn** 项目添加到 **解决方案资源管理器**中。  
   

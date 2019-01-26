@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c47f76c2371737b10c5eb58566cef388aff5fcd7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 627469dd3227d82ce1cc97af25d2b8a4537541e5
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968412"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868439"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>如何：在受密码保护的文档中缓存数据
   如果将数据添加到文档或使用密码保护的工作簿中的数据缓存，不会自动保存对缓存数据的更改。 通过重写在项目中的两种方法，可以将更改保存到缓存的数据。  

@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, features
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 704973591b1bcdcb849e847e9c5e7cefc78f0202
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: baedf731a61a13bd6592298e8505dc4a445819e1
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924236"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871892"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>如何：添加和删除功能依赖关系
   SharePoint 功能可能依赖的功能或数据的其他功能。 在这些情况下，可以将这些其他功能为您的功能标记为依赖项。 这样一来，SharePoint 服务器会确保你的功能被激活之前激活相关功能。  

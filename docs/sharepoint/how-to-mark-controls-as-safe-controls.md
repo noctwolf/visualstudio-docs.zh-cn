@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, safe controls
 - SharePoint development in Visual Studio, advanced packaging tools
 - safe controls [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87e99937239ad080d24bf997d6c2de2a5d8f73ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3f0ff39658aca76318174143da52e17594ace24
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989369"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875444"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>如何：将控件标记为安全控件
   为了安全，SharePoint 区分防止脚本注入的 Web 控件和 Web 控件不是。 受保护的控件，或*安全控件*，可以由不受信任的用户访问。 您可以将标记为安全控件项属性的 SharePoint 项目项中或在中安全控件**包设计器**时向包中添加程序集。 有关详细信息，请参见  
@@ -85,7 +85,7 @@ ms.locfileid: "53989369"
   
 12. 下表中所输入的属性的值。  
   
-    |属性名|“值”|  
+    |属性名|值|  
     |-------------------|-----------|  
     |命名空间|完全限定命名空间进行控制，如**BdcModelProject1.VisualWebPart1**。|  
     |类型名称|Button1|  
@@ -102,7 +102,7 @@ ms.locfileid: "53989369"
   
 15. 下表中所输入的属性的值。  
   
-    |属性名|值|  
+    |属性名|“值”|  
     |-------------------|-----------|  
     |命名空间|完全限定命名空间进行控制，如**BdcModelProject1.VisualWebPart1**。|  
     |类型名称|TextBox1|  

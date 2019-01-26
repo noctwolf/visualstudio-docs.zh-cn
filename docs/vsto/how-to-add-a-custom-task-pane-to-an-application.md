@@ -10,15 +10,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], adding to application
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0241cfa4b377d35a639b7aa193a38b44135078e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24053fcc8918b80e05031739c36059e82ea024a7
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822779"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874388"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>如何：向应用程序添加自定义任务窗格
   你可以通过使用 VSTO 外接程序向上面列出的应用程序添加自定义任务窗格。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
@@ -32,7 +32,7 @@ ms.locfileid: "53822779"
   
 ### <a name="to-add-a-custom-task-pane-to-an-application"></a>若要向应用程序添加自定义任务窗格  
   
-1.  为上面列出的应用程序之一打开或创建 VSTO 外接程序项目。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  为上面列出的应用程序之一打开或创建 VSTO 外接程序项目。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  在 **“项目”** 菜单上，单击 **“添加用户控件”**。  
   
@@ -49,7 +49,7 @@ ms.locfileid: "53822779"
      [!code-vb[Trin_TaskPaneBasic#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#1)]
      [!code-csharp[Trin_TaskPaneBasic#1](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#1)]  
   
-7.  将以下代码添加到 `ThisAddIn_Startup` 事件处理程序中。 此代码通过将 `MyUserControl` 对象添加到 `CustomTaskPanes` 集合来创建新 <xref:Microsoft.Office.Tools.CustomTaskPane>。 代码还将显示任务窗格。  
+7.  将以下代码添加到 `ThisAddIn_Startup` 事件处理程序中。 此代码通过将 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象添加到 `MyUserControl` 集合来创建新 `CustomTaskPanes` 。 代码还将显示任务窗格。  
   
      [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
      [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]  

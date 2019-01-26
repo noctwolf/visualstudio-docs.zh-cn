@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office project types in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1911feec92e802fb8534623c903bb6461832bf2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f03cef62b9fb82e259abac608c6c9c6725019f38
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935967"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875129"
 ---
 # <a name="design-and-create-office-solutions"></a>设计和创建 Office 解决方案
   Visual Studio 提供可用于创建几种不同类型的 Office 解决方案的项目模板。 文档的此部分将介绍项目模板和提供有关创建 Office 项目的指导。 有关如何创建你的项目后实现代码和用户界面自定义的信息，请参阅[开发 Office 解决方案](../vsto/developing-office-solutions.md)。  
@@ -50,7 +50,7 @@ ms.locfileid: "53935967"
   
   但是，在 Visual Studio 更改目标框架之后，你可能需要修改项目中的某些代码才能使用某些功能。 有关如何更改目标框架的详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。 可能需要在项目中进行更改的详细信息，请参阅[迁移 Office 解决方案为.NET Framework 4 或更高版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)。  
   
-  如果 Visual Studio 更改为你的项目的目标.NET Framework，并且打算使用 ClickOnce 来部署你的解决方案，请确保还选择在.NET Framework 中的相应版本**先决条件**对话框。 此选择不会在你更改项目的目标框架时自动更改。 有关更多信息，请参见[如何：若要运行 Office 解决方案的最终用户计算机上安装的必备组件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
+  如果 Visual Studio 更改为你的项目的目标.NET Framework，并且打算使用 ClickOnce 来部署你的解决方案，请确保还选择在.NET Framework 中的相应版本**先决条件**对话框。 此选择不会在你更改项目的目标框架时自动更改。 有关详细信息，请参阅[如何：若要运行 Office 解决方案的最终用户计算机上安装的必备组件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
   
 > [!NOTE]  
 >  不能面向通过使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 创建的 Office 项目中的 .NET Framework 3.5 或更早版本。 通过使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 创建的 Office 项目需要在 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] 中首次引入的功能  
@@ -63,7 +63,7 @@ ms.locfileid: "53935967"
 ### <a name="understand-the-client-profile"></a>了解客户端配置文件  
  .NET Framework Client Profile 是完整版 .NET Framework 的子集。 如果只需使用 .NET Framework 中的客户端功能，并且想要为你的 Office 解决方案提供最快的部署体验，则可以面向 .NET Framework Client Profile。 有关详细信息，请参阅[.NET Framework 客户端配置文件](/dotnet/framework/deployment/client-profile)。  
   
- 当创建面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 的 Office 项目时，默认情况下，将面向 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]。 如果想要开发完整的 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]，则必须在项目创建之后设置此选项。 有关更多信息，请参见[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
+ 当创建面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 的 Office 项目时，默认情况下，将面向 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]。 如果想要开发完整的 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]，则必须在项目创建之后设置此选项。 有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
 ## <a name="create-solutions-for-the-64-bit-edition-of-microsoft-office"></a>为 64 位版本的 Microsoft Office 创建解决方案  
  Microsoft Office 可提供 64 位和 32 位版本。 若要创建可以在这两种版本中运行的 Office 解决方案，你的项目的目标平台设置必须设置为**任何 CPU**。 这是 Office 项目的默认值。 有关详细信息，请参阅[生成 Office 解决方案](../vsto/building-office-solutions.md)。  
