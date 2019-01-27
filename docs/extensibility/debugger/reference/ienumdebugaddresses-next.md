@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::Next |Microsoft Docs
+title: IEnumDebugAddresses::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 941e4be7-858d-433a-9259-18d0d017be9e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803352e451078b4208af1c3987620d59901d2fc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7727bb27e3b41cf009d7b00cd168b7a3182f9aef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872682"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980535"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
 此方法返回枚举中的下一组元素。  
@@ -51,7 +51,7 @@ int Next(
  [out]返回中实际返回的元素数目`rgelt`。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果无法返回请求的元素数少于; 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果无法返回请求的元素数少于; 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)   
