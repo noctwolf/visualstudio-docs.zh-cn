@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf60283dd56268ff7b47b5f0e81ebb23ee28197
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ca4723d24c45a11422eae4b7d8b288671e0b921
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930617"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041082"
 ---
 # <a name="registering-project-and-item-templates"></a>注册项目和项模板
 项目类型必须注册其项目和项目项模板的位置的目录。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用与您的项目类型关联的注册信息以确定要在中显示**添加新项目**并**添加新项**对话框。  
@@ -111,7 +111,7 @@ ms.locfileid: "53930617"
 
  \Form  
 
- \Web 页  
+ \Web Page  
 
  \HelperFiles （包含多文件项目项中使用的文件）  
 

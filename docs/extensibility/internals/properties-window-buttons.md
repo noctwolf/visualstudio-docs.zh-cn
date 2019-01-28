@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3229f95f81fe839b0dd84cd7d1294600c21bbc0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d21e8d13ef8af83b12d30b6c78c253f371a11c30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933989"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973858"
 ---
 # <a name="properties-window-buttons"></a>属性窗口按钮
 具体取决于开发语言和产品类型，某些按钮显示的工具栏上的默认情况下**属性**窗口。 在所有情况下，**按分类顺序**， **Alphabetized**，**属性**，以及**属性页**按钮的显示。 在 Visual C# 和 Visual Basic**事件**按钮还会显示。 在某些 Visual c + + 项目中， **VC + + 消息**并**VC 重写**按钮的显示。 对于其他项目类型可能会显示其他按钮。 有关中的按钮的详细信息**属性**窗口中，请参阅[属性窗口](../../ide/reference/properties-window.md)。  

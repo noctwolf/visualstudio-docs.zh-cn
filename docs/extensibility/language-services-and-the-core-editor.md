@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f3380545ce78defb57be8944881309ea2ab2990
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21785e7aed4e59e9ee7852bdb5474f7c1ca9d95f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929885"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031729"
 ---
 # <a name="language-services-and-the-core-editor"></a>语言服务和核心编辑器
 在 Visual Studio 中的编辑器经常与相关联的语言服务。 除此之外，语言服务都会提供语法着色、 语句完成、 IntelliSense 和文本格式设置。  

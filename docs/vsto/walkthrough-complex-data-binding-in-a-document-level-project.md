@@ -10,17 +10,17 @@ helpviewer_keywords:
 - complex data [Office development in Visual Studio]
 - multiple column data binding [Office development in Visual Studio]
 - data binding [Office development in Visual Studio], multiple columns
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5030db198ab253a417e770ec7dc022a99cfafbd8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5da24d43173a0124849855bf9184f3a823230d3a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964044"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54865003"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>演练：在文档级项目中的复杂数据绑定
   本演练演示在文档级项目中的复杂数据绑定的基础知识。 可以将 Microsoft Office Excel 工作表中的多个单元格绑定到 Northwind SQL Server 数据库中的字段。  
@@ -55,7 +55,7 @@ ms.locfileid: "53964044"
   
 1.  使用名称创建的 Excel 工作簿项目**我的复杂数据绑定**。 在向导中，选择**创建一个新文档**。  
   
-     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新 Excel 工作簿并将添加**我的复杂数据绑定**投影到**解决方案资源管理器**。  
   
@@ -217,7 +217,7 @@ ms.locfileid: "53964044"
 ## <a name="next-steps"></a>后续步骤  
  本演练演示在数据库中的表绑定到列表对象的基础知识。 以下是接下来可能要执行的一些任务：  
   
--   缓存数据，以便可以脱机使用。 有关更多信息，请参见[如何：脱机时或者在服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
+-   缓存数据，以便可以脱机使用。 有关详细信息，请参阅[如何：脱机时或者在服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
   
 -   部署解决方案。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
   

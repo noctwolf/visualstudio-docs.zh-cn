@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51833f22a445916d9b76955893e4ff5c567cf4f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bd77c125f6ac7b7efa8d0979658c7933dc1b9ec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948941"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936981"
 ---
 # <a name="solution-user-options-suo-file"></a>解决方案用户选项 (.Suo) 文件
 解决方案用户选项 (.suo) 文件包含每个用户解决方案选项。 此文件应不会签入到源代码管理。  

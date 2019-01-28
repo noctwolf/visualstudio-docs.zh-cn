@@ -9,17 +9,17 @@ helpviewer_keywords:
 - primary interop assemblies
 - assemblies [Office development in Visual Studio], primary interop assemblies
 - Office primary interop assemblies
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f83a2b61a80616fdcdb8b48c7501b4fa47f0b99c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79651c3404256b3abd7750cdfc20b33abe44c477
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926725"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876104"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主互操作程序集
 
@@ -59,11 +59,11 @@ Visual Studio 在开发计算机上使用不同的 PIA 集。 这些不同的程
   
 Visual Studio 将这些 PIA 副本安装在开发计算机的下列位置：  
   
-- *%ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14*  
+- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14*  
   
   (或 *%programfiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14* 64 位操作系统上)  
   
-- *%ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15*  
+- *%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15*  
   
   (或 *%programfiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15* 64 位操作系统上)  
   
@@ -79,7 +79,7 @@ Visual Studio 将这些 PIA 副本安装在开发计算机的下列位置：
 
 Visual Studio 中的每个 Office 项目模板旨在与单个 Microsoft Office 应用程序配合使用。 若要使用多个 Microsoft Office 应用程序的功能，或者使用 Visual Studio 中没有项目的应用程序或组件的功能，必须添加对所需 PIA 的引用。  
   
-在大多数情况下，应添加对由下的 Visual Studio 安装的 Pia 引用`%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\`目录。 这些版本的程序集显示**Framework**选项卡**引用管理器**对话框。 有关更多信息，请参见[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。  
+在大多数情况下，应添加对由下的 Visual Studio 安装的 Pia 引用`%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\`目录。 这些版本的程序集显示**Framework**选项卡**引用管理器**对话框。 有关详细信息，请参阅[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。  
   
 如果你在全局程序集缓存中安装并注册了 PIA，则这些版本的程序集显示在 **“引用管理器”** 对话框的 **“COM”** 选项卡上。 你应当避免添加对这些版本的程序集的引用，因为使用它们时可能会出现某些开发问题。 例如，如果你在全局程序集缓存中注册了 PIA 的不同版本，则项目将自动绑定到你最后一次注册的程序集版本，即使在 **“引用管理器”** 对话框的 **“COM”** 选项卡上指定了其他程序集版本也是如此。  
   
@@ -123,7 +123,7 @@ Visual Studio 中的每个 Office 项目模板旨在与单个 Microsoft Office �
 
 例如，当引用 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 程序集的解决方案在装有同一主互操作程序集的 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的计算机上运行时，绑定重定向程序集会指示 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 运行时加载 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的主互操作程序集。 
 
-有关更多信息，请参见[如何：启用和禁用自动绑定重定向](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)。  
+有关详细信息，请参阅[如何：启用和禁用自动绑定重定向](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)。  
   
 ## <a name="see-also"></a>请参阅  
 

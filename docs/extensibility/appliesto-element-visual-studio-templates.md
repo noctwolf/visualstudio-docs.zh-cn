@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c760c4a66a3f1d4bc9e3956d2d7dc824145d7cc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8616d2cf922f1522f44470bc76ed3b80e3ef9ceb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912777"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008889"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 元素 （Visual Studio 模板）
 指定一个可选表达式以匹配一个或多个功能。 （请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>）。 项目类型通过层次结构将功能公开为属性 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>。 这使得具有公共适用功能的多个项目类型可以共享此模板。  
@@ -23,9 +23,9 @@ ms.locfileid: "53912777"
   
  在 Visual Studio 2013 Update 2 中引入。 若要引用正确的版本，请参阅[引用程序集提供的 Visual Studio 2013 SDK 更新 2](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb)。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<AppliesTo >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<AppliesTo>  
   
 ## <a name="syntax"></a>语法  
   

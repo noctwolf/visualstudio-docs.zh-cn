@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e0c522c4-f759-4c32-ae87-7abcb573e77d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1db97097f27b05f576f579feedc18c709900c6c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 278ac763f0d81687d149d61bd36c4ad67b5cbdf6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821667"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043318"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 创建方法的静态局部变量的枚举器。  

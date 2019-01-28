@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0879d18922e730d9cd737bdefde52576b6b03638
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b09dc2d578ade421d35bb17dfbdf01e93313bbdb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948558"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926861"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>类型可视化工具和自定义查看器
 类型可视化工具是以特定格式显示一段数据的组件。 格式完全是由谁来实现可视化工具，无论是最终用户或第三方供应商的可视化工具。  

@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9ee2f0e2353023f1864c892ecc377050ea87923d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cdad251b4440219285ba1341663b7531634ed806
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865409"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942219"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定义的属性
 DslDefinition 属性定义*域特定语言*定义属性，如版本编号。 DslDefinition 属性将显示在**属性**窗口时单击关系图中的空白区域*域特定语言设计器*。
@@ -27,17 +27,17 @@ DslDefinition 属性定义*域特定语言*定义属性，如版本编号。 Dsl
 |属性|描述|默认|
 |-|-|-|
 |访问修饰符|确定域类的访问修饰符是否为公用或内部。|public|
-|自定义特性|自定义的域类的属性。<br /><br /> **请注意**使用浏览按钮将属性添加。|\<无 >|
+|自定义特性|自定义的域类的属性。<br /><br /> **请注意**使用浏览按钮将属性添加。|\<none>|
 |公司名称|在系统注册表中的当前公司名称的名称。|当前的公司名称|
 |name|此域类的名称。|当前名称|
 |命名空间|隶属于此域类的命名空间。|当前命名空间|
-|包 Guid|为此 DSL 生成的 Visual Studio 包 guid。|\<无 >|
-|包 Namespace|为此 DSL 生成的 Visual Studio 包命名空间。|\<无 >|
-|产品名称|将注册为此 DSL 生成的 Visual Studio 包的产品名称。|\<无 >|
-|说明|与此域类相关联的注释。|\<无 >|
-|描述|此域类的说明。|\<无 >|
-|显示名称|将此域类生成的设计器中显示的名称。|\<无 >|
-|帮助关键字|与此域类关联的帮助关键字。|\<无 >|
+|包 Guid|为此 DSL 生成的 Visual Studio 包 guid。|\<none>|
+|包 Namespace|为此 DSL 生成的 Visual Studio 包命名空间。|\<none>|
+|产品名称|将注册为此 DSL 生成的 Visual Studio 包的产品名称。|\<none>|
+|说明|与此域类相关联的注释。|\<none>|
+|描述|此域类的说明。|\<none>|
+|显示名称|将此域类生成的设计器中显示的名称。|\<none>|
+|帮助关键字|与此域类关联的帮助关键字。|\<none>|
 |生成|有关此特定于域的语言定义的增量生成数。|0|
 |主要版本|有关此特定于域的语言定义的增量的主要版本号。|1|
 |次要版本|有关此特定于域的语言定义的增量的次要版本号。|0|

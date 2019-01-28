@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0bdc3421-3ceb-4182-b30c-a992fbfcc35d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0969147ce4f454f7720f26f72b46cab6e91c37bf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4bfa7127a645ea2d53a85784297d8da43ee59038
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937959"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939226"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105:数组字段不应为只读
 
@@ -45,7 +45,7 @@ ms.locfileid: "53937959"
 
 若要解决由该规则标识的安全漏洞，不要依赖于可公开访问的只读数组的内容。 强烈建议你使用以下过程之一：
 
-- 将不能更改的强类型集合替换为数组。 有关详细信息，请参阅<xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>。
+- 将不能更改的强类型集合替换为数组。 有关详细信息，请参阅 <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>。
 
 - 使用返回私有数组副本的方法替换公共字段。 你的代码不依赖于克隆，因为如果，则不存在风险修改元素。
 

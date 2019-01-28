@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, generated code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 2a1a32f60f1cee19310af76e1f4b82a4dfe2f828
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270289"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033279"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
 域特定语言 (DSL) 解决方案将生成一个 API，可用于读取和更新 Visual Studio 中的 dsl 的实例。 此 API 将定义在从 DSL 定义生成的代码中。 本主题介绍了生成的 API。

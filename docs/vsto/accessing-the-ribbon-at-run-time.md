@@ -12,15 +12,15 @@ helpviewer_keywords:
 - RibbonManager class
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85002184620d9ca76890a98eeb8ef522772c5879
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e408b475b4ba7ac912826af3021c371b3af57f4c
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989485"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876221"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>在运行时在功能区的访问
   可编辑代码以显示、隐藏和修改功能区以及使用户能够从自定义任务窗格、操作窗格或 Outlook 窗体区域中的控件运行代码。  

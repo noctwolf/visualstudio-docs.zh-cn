@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a4ec2f9fa5fbd6e0fbbdd57bf6de6f2c9dfb0fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987046"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023910"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -310,13 +310,13 @@ F1 流关系图：
 
    - 对于 32 位操作系统：
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em>\\< 命名空间\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner<em>\\<namespace\></em>
 
       "位置"="脱机"
 
    - 对于 64 位操作系统：
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em>\\< 命名空间\></em>
+      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em>\\<namespace\></em>
 
       "位置"="脱机"
 
@@ -351,18 +351,18 @@ HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 帮助键：在�
 
 | 属性 （HTML 表示形式） | 描述 |
 | - | - |
-| \< 元 name="Microsoft.Help.Locale"内容 ="[语言代码]"/ > | 设置本主题中的区域设置。 如果在主题中使用此标记，则它必须使用只需一次并且必须插入以上任何其他 Microsoft 帮助标记该域。 如果未使用此标记，通过使用断字符与该键关联的产品区域设置中，如果指定它，则为索引的主题的正文文本否则为 en-我们使用断字符。 ISOC RFC 4646 符合此标记。 若要确保 Microsoft 帮助正确工作，而不是常规的语言属性使用此属性。 |
-| \< 元 name="Microsoft.Help.TopicLocale"内容 ="[语言代码]"/ > | 设置本主题中的区域设置时也可使用其他区域设置。 如果在主题中使用此标记，则必须使用它只需一次。 该目录包含多个语言的内容时，请使用此标记。 在目录中的多个主题可以有相同的 ID，但每次必须指定唯一 TopicLocale。 指定匹配的区域设置 TopicLocale 的主题是目录的目录中显示的主题。 但是，在搜索结果中显示的主题的所有语言版本。 |
+| \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | 设置本主题中的区域设置。 如果在主题中使用此标记，则它必须使用只需一次并且必须插入以上任何其他 Microsoft 帮助标记该域。 如果未使用此标记，通过使用断字符与该键关联的产品区域设置中，如果指定它，则为索引的主题的正文文本否则为 en-我们使用断字符。 ISOC RFC 4646 符合此标记。 若要确保 Microsoft 帮助正确工作，而不是常规的语言属性使用此属性。 |
+| \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | 设置本主题中的区域设置时也可使用其他区域设置。 如果在主题中使用此标记，则必须使用它只需一次。 该目录包含多个语言的内容时，请使用此标记。 在目录中的多个主题可以有相同的 ID，但每次必须指定唯一 TopicLocale。 指定匹配的区域设置 TopicLocale 的主题是目录的目录中显示的主题。 但是，在搜索结果中显示的主题的所有语言版本。 |
 | \< 标题 > [Title] \< /t > | 指定此主题的标题。 此标记是必需的并且必须使用在主题中的只是一次。 如果该主题的正文不包含标题\<d i v > 部分中，此标题将显示在主题以及目录中。 |
-| \< 元名称 ="Microsoft.Help.Keywords"内容 ="[aKeywordPhrase]"/ > | 指定在帮助查看器的索引窗格中显示的链接的文本。 单击该链接时，将显示主题。 你可以指定多个索引关键字主题，或如果不希望出现在索引中本主题的链接，则可以忽略此标记。 从早期版本的帮助"K"关键字可以转换为此属性。 |
-| \< 元 name="Microsoft.Help.Id"内容 ="[TopicID]"/ > | 设置本主题的标识符。 此标记是必需的并且必须使用在主题中的只是一次。 ID 必须是唯一的目录中的主题，具有相同的区域设置。 在另一个主题中，可以创建此主题的链接，通过使用此 id。 |
-| \< 元 name="Microsoft.Help.F1"content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ > | 指定此主题的 F1 关键字。 你可以指定多个主题的 F1 关键字，或如果不希望应用程序用户按 F1 时要显示本主题，则可以忽略此标记。 通常情况下，只需一个 F1 关键字指定主题。 从早期版本的帮助的"F"关键字可以转换为此属性。 |
-| \< 元名称 ="Description"content ="[主题 description]"/ > | 提供了此主题中的内容的简短摘要。 如果在主题中使用此标记，则必须使用它只需一次。 此属性可直接通过查询库中;它不存储在索引文件。 |
-| 元 name="Microsoft.Help.TocParent"内容 ="[parent_Id]"/ > | 指定目录中的本主题的父主题。 此标记是必需的并且必须使用在主题中的只是一次。 值是父级的 Microsoft.Help.Id。 本主题可以只是一个表中的内容的位置。 "-1"被视为目录根的主题 ID。 在[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]，该网页是帮助查看器主页。 这是我们明确将 TocParent = 1 添加到一些主题，以确保，它们显示在顶部级别相同的原因。 帮助查看器主页上是系统页面并因此不可替换。 如果 VSP 尝试添加 id 为-1 页，它可能会添加到内容集，但帮助查看器将始终使用系统页的帮助查看器主页 |
-| \< 元 name="Microsoft.Help.TocOrder"内容 ="[正整数]"/ > | 指定的目录中本主题的显示位置相对于其对等主题。 此标记是必需的并且必须使用在主题中的只是一次。 值是一个整数。 指定的值较小的整数的主题的主题，它指定更高价值整数上方会出现。 |
-| \< 元 name="Microsoft.Help.Product"内容 ="[product code]"/ > | 指定本主题介绍该产品。 如果在主题中使用此标记，则必须使用它只需一次。 此外可以作为参数传递给帮助索引器提供此信息。 |
+| \< meta name=" Microsoft.Help.Keywords" content="[aKeywordPhrase]"/> | 指定在帮助查看器的索引窗格中显示的链接的文本。 单击该链接时，将显示主题。 你可以指定多个索引关键字主题，或如果不希望出现在索引中本主题的链接，则可以忽略此标记。 从早期版本的帮助"K"关键字可以转换为此属性。 |
+| \< meta name="Microsoft.Help.Id" content="[TopicID]"/> | 设置本主题的标识符。 此标记是必需的并且必须使用在主题中的只是一次。 ID 必须是唯一的目录中的主题，具有相同的区域设置。 在另一个主题中，可以创建此主题的链接，通过使用此 id。 |
+| \< meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/> | 指定此主题的 F1 关键字。 你可以指定多个主题的 F1 关键字，或如果不希望应用程序用户按 F1 时要显示本主题，则可以忽略此标记。 通常情况下，只需一个 F1 关键字指定主题。 从早期版本的帮助的"F"关键字可以转换为此属性。 |
+| \< meta name="Description" content="[topic description]" /> | 提供了此主题中的内容的简短摘要。 如果在主题中使用此标记，则必须使用它只需一次。 此属性可直接通过查询库中;它不存储在索引文件。 |
+| meta name="Microsoft.Help.TocParent" content="[parent_Id]"/> | 指定目录中的本主题的父主题。 此标记是必需的并且必须使用在主题中的只是一次。 值是父级的 Microsoft.Help.Id。 本主题可以只是一个表中的内容的位置。 "-1"被视为目录根的主题 ID。 在[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]，该网页是帮助查看器主页。 这是我们明确将 TocParent = 1 添加到一些主题，以确保，它们显示在顶部级别相同的原因。 帮助查看器主页上是系统页面并因此不可替换。 如果 VSP 尝试添加 id 为-1 页，它可能会添加到内容集，但帮助查看器将始终使用系统页的帮助查看器主页 |
+| \< meta name="Microsoft.Help.TocOrder" content="[positive integer]"/> | 指定的目录中本主题的显示位置相对于其对等主题。 此标记是必需的并且必须使用在主题中的只是一次。 值是一个整数。 指定的值较小的整数的主题的主题，它指定更高价值整数上方会出现。 |
+| \< meta name="Microsoft.Help.Product" content="[product code]"/> | 指定本主题介绍该产品。 如果在主题中使用此标记，则必须使用它只需一次。 此外可以作为参数传递给帮助索引器提供此信息。 |
 | \< 元 name="Microsoft.Help.ProductVersion"内容 ="[版本号]"/ > | 指定本主题介绍该产品的版本。 如果在主题中使用此标记，则必须使用它只需一次。 此外可以作为参数传递给帮助索引器提供此信息。 |
-| \< 元 name="Microsoft.Help.Category"内容 ="[string]"/ > | 按产品用于标识子节的内容。 可以标识多个小节的一个主题，或如果不希望标识任何子节的链接，则可以忽略此标记。 此标记用于目标 Os 和 TargetFrameworkMoniker 存储属性，当一个主题转换从早期版本的帮助。 内容的格式为 AttributeName:AttributeValue。 |
+| \< meta name="Microsoft.Help.Category" content="[string]"/> | 按产品用于标识子节的内容。 可以标识多个小节的一个主题，或如果不希望标识任何子节的链接，则可以忽略此标记。 此标记用于目标 Os 和 TargetFrameworkMoniker 存储属性，当一个主题转换从早期版本的帮助。 内容的格式为 AttributeName:AttributeValue。 |
 | \< 元 name="Microsoft.Help.TopicVersion 内容 ="[主题版本编号]"/ > | 在目录中存在多个版本时，请指定此版本的主题。 Microsoft.Help.Id 不保证是唯一的因为多个版本的主题的目录中存在，例如，目录中包含的主题针对.NET Framework 3.5 和主题，针对.NET Framework 4 和都具有相同的 Micro 时此标记时需要软。Help.Id。 |
 | \< 元名称 ="SelfBranded"content ="[TRUE 或 FALSE]"/ > | 指定本主题使用 Help Library 管理器启动品牌包或特定于主题的品牌包。 此标记必须为 TRUE 或 FALSE。 如果其值为 TRUE，则关联的主题的品牌包重写 Help Library 管理器启动，以便运行安装程序，即使它不同于其他内容的呈现呈现主题时设置的品牌包。 如果为 FALSE，基于 Help Library 管理器启动时设置的品牌包呈现当前主题。 默认情况下，Help Library 管理器假定自品牌，除非 SelfBranded 变量声明为 TRUE; 否则为 false因此，不需要声明\<元名称 ="SelfBranded"content ="FALSE"/ >。 |
 
@@ -452,7 +452,7 @@ Branding.xml 文件包含用于本主题包含时一致地呈现在主题中的�
 | 功能： | **反馈、 页脚和徽标** |
 | 使用: | 提供客户提供有关当前通过电子邮件主题的反馈的反馈控件。  版权文本内容。  徽标定义。 |
 | **元素** | **值 （这些字符串可修改以满足内容采用者需要。）** |
-| 版权所有 | © 2013 Microsoft Corporation。 保留所有权利。 |
+| 版权所有 | © 2013 Microsoft Corporation. 保留所有权利。 |
 | SendFeedback | \<a ="{0}" {1}> 发送反馈 \< /a > 有关此主题的 Microsoft。 |
 | FeedbackLink | |
 | LogoTitle | [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] |
@@ -510,7 +510,7 @@ Branding.xml 文件包含用于本主题包含时一致地呈现在主题中的�
 | HomePageNoBooksInstalled | 您的计算机上不找到任何内容。 |
 | HomePageHelpSettings | 帮助内容设置 |
 | HomePageHelpSettingsText | \<p > 您的当前设置是本地帮助。 帮助查看器显示已安装在计算机的内容。\<b / > 若要更改您的源的帮助内容，在 Visual Studio 菜单栏上，选择\<s p a n style ="{0}"> 帮助，请设置帮助首选项\</s p a n >。\<b / > \< /p > |
-| 兆字节 | MB |
+| MegaByte | MB |
 
 **branding.js**
 
@@ -523,7 +523,7 @@ Branding.js 文件包含由 Visual Studio 帮助查看器标记元素的 JavaScr
 |获取用户代码语言|setUserPreferenceLang|将索引映射到代码语言的 #|
 |设置和获取 cookie 值|getCookie setCookie||
 |继承的成员|changeMembersLabel|展开/折叠继承的成员|
-|当 SelfBranded = False|onLoad|读取查询字符串来检查其是否打印请求。  设置所有 codesnippets 将重点放在用户的首选选项卡。如果是打印请求，然后设置 isPrinterFriendly 为 true。 检查高对比度模式。|
+|When SelfBranded=False|onLoad|读取查询字符串来检查其是否打印请求。  设置所有 codesnippets 将重点放在用户的首选选项卡。如果是打印请求，然后设置 isPrinterFriendly 为 true。 检查高对比度模式。|
 |代码片段|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
 ||ChangeTab||
@@ -545,7 +545,7 @@ Branding.js 文件包含由 Visual Studio 帮助查看器标记元素的 JavaScr
 ||captionsOnOff(id)||
 ||toSeconds(t)||
 ||getAllComments(node)||
-||styleRectify （styleName，styleValue）||
+||styleRectify(styleName, styleValue)||
 ||showCC(id)||
 ||subtitle(id)||
 
@@ -557,22 +557,22 @@ Branding.js 文件包含由 Visual Studio 帮助查看器标记元素的 JavaScr
 |-|-|-|
 |**文件**|**使用**|**显示内容源**|
 |homepage.htm|这是当前安装的内容，并相应向有关其内容的用户提供的任何其他消息将显示一个页面。  此文件具有其他的元数据属性"Microsoft.Help.Id"内容 ="-1"将此顶部本地内容目录的内容。||
-||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.xml、 标记\<HomePageTitle >|
-||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.xml、 标记\<HomePageIntroduction >|
-||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.xml、 标记\<HomePageContentInstallText >|
-||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|标题部分 Branding.xml 标记\<HomePageInstalledBooks >，从应用程序中，生成的数据\<HomePageNoBooksInstalled > 时则会安装没有书籍。|
-||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|标题部分 Branding.xml 标记\<HomePageHelpSettings >，部分文本\<HomePageHelpSettingsText >。|
+||<META_HOME_PAGE_TITLE_ADD />|Branding.xml、 标记\<HomePageTitle >|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Branding.xml、 标记\<HomePageIntroduction >|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.xml、 标记\<HomePageContentInstallText >|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD />|标题部分 Branding.xml 标记\<HomePageInstalledBooks >，从应用程序中，生成的数据\<HomePageNoBooksInstalled > 时则会安装没有书籍。|
+||<HOME_PAGE_SETTINGS_SECTION_ADD />|标题部分 Branding.xml 标记\<HomePageHelpSettings >，部分文本\<HomePageHelpSettingsText >。|
 |topiccorrupted.htm|当一个主题存在于本地集中，但由于某种原因不能显示 （已损坏的内容）。||
-||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.xml、 标记\<TopicCorruptedTitle >|
-||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.xml、 标记\<TopicCorruptedViewOnlineText >|
+||<META_TOPIC_CORRUPTED_TITLE_ADD />|Branding.xml、 标记\<TopicCorruptedTitle >|
+||<TOPIC_CORRUPTED_SECTION_ADD />|Branding.xml、 标记\<TopicCorruptedViewOnlineText >|
 |topicnotfound.htm|当一个主题中未找到本地内容设置，也不提供联机||
-||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.xml、 标记\<TopicNotFoundTitle >|
-||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Branding.xml、 标记\<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|
-||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.xml、 标记\<TopicNotFoundText >|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.xml、 标记\<TopicNotFoundTitle >|
+||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.xml, tag \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.xml、 标记\<TopicNotFoundText >|
 |contentnotinstalled.htm|当已安装了该产品没有本地内容。||
-||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.xml、 标记\<ContentNotInstalledTitle >|
-||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.xml、 标记\<ContentNotInstalledDownloadContentText >|
-||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.xml、 标记\<ContentNotInstalledText >|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD />|Branding.xml、 标记\<ContentNotInstalledTitle >|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD />|Branding.xml、 标记\<ContentNotInstalledDownloadContentText >|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD />|Branding.xml、 标记\<ContentNotInstalledText >|
 
 **CSS 文件**
 
@@ -801,7 +801,7 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
     [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 集成的 Shell:
 
-    C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-美国
+    C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-US
 
     密钥：CatalogName 字符串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 文档。 对于 ISO Shell 中，这是你目录的名称。
 
@@ -809,7 +809,7 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
 9. 用于测试的内容存储的示例集成 Shell 命令行。 ISO Shell 中，将更改相应以匹配该产品的目录和 launchingApp 值。
 
-     "C:\Program 文件 (x86) \Microsoft Help Viewer\v2.3\HlpViewer.exe"/catalogName VisualStudio15 /helpQuery 方法 ="页 （& i) = ContosoTopic0"/launchingApp Microsoft，visual Studio，12.0
+     "C:\Program Files (x86)\Microsoft Help Viewer\v2.3\HlpViewer.exe" /catalogName VisualStudio15 /helpQuery method="page&id=ContosoTopic0" /launchingApp Microsoft,VisualStudio,12.0
 
 10. 启动 Contoso 应用程序 （从 Contoso 应用根目录开始）。 在 ISO Shell 中，选择**帮助**菜单项，并更改**设置帮助首选项**到**使用本地帮助**。
 

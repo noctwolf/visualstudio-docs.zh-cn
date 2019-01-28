@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, browsing SharePoint sites
 - SharePoint development in Visual Studio, SharePoint Connections
 - SharePoint Connections [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d3804b97967cffb299393e7e3a8866e51a2e3224
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 825bf975d877cd6b0844e86aabff605daa30a900
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931354"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875480"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>通过使用服务器资源管理器浏览 SharePoint 连接
   你现在可以浏览中的本地 SharePoint 连接**服务器资源管理器**。 通过使用这种方法，您可以在系统上浏览 SharePoint 网站的组件。 SharePoint 网站组件，例如列表定义和内容类型出现在名为节点**SharePoint 连接**中的树视图**服务器资源管理器**。 若要显示**服务器资源管理器**，在菜单栏上依次选择**视图** > **服务器资源管理器**。 除了显示 SharePoint 网站组件以外，通过使用快捷菜单命令，你还可以移除项、查看它们的属性或刷新树视图。  

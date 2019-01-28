@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 403b9649feb24ca06cb24762f1b0cf484bed0612
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a5df2026672f415df688ebc3389ff57606c815
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875415"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003229"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>使用特定命令的位标志
 可以通过设置单个值的一个或多个位修改多个源控制插件 API 中的函数的行为。 这些值称为位标志。 使用源控制插件 API 的各种位标志下面详细介绍，通过使用这些函数进行分组。  
@@ -59,7 +59,7 @@ ms.locfileid: "53875415"
 ## <a name="populatedirlist-flags"></a>PopulateDirList 标志  
  通过使用这些标志[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)中`fOptions`参数。  
   
-|选项值|“值”|描述|  
+|选项值|值|描述|  
 |------------------|-----------|-----------------|  
 |SCC_PDL_ONELEVEL|0x0000|检查只有一个级别的 （这是默认值） 的目录的目录。|  
 |SCC_PDL_RECURSIVE|0x0001|以递归方式检查每个给定目录下的所有目录。|  
@@ -101,9 +101,9 @@ ms.locfileid: "53875415"
 |`SCC_OPT_EQ_DISABLE`|0x00L|事件队列活动挂起。|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_EQ_ENABLE`|0x01L|启用事件队列日志记录。|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_HCM_NO`|0L|（默认值）有没有取消模式;如果需要，必须提供插件。|`SCC_OPT_HASCANCELMODE`|  
-|`SCC_OPT_HCM_YES`|1 L|IDE 处理取消。|`SCC_OPT_HASCANCELMODE`|  
+|`SCC_OPT_HCM_YES`|1L|IDE 处理取消。|`SCC_OPT_HASCANCELMODE`|  
 |`SCC_OPT_SCO_NO`|0L|（默认值）确定以从插件 UI，则签出设置工作目录。|`SCC_OPT_SCCCHECKOUTONLY`|  
-|`SCC_OPT_SCO_YES`|1 L|无插件的 UI 签出，没有工作目录。|`SCC_OPT_SCCCHECKOUTONLY`|  
+|`SCC_OPT_SCO_YES`|1L|无插件的 UI 签出，没有工作目录。|`SCC_OPT_SCCCHECKOUTONLY`|  
   
 ## <a name="see-also"></a>请参阅  
  [源代码管理插件](../extensibility/source-control-plug-ins.md)

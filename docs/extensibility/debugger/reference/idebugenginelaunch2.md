@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2 |Microsoft Docs
+title: IDebugEngineLaunch2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5eaf2ad8-3fbf-446e-b48b-5327ad3f5255
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06ca3d52c58ea1d8aff78936f8b7240e1b77e9c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 052ca349749d30a8e27c6104384fd2953c9e5162
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934260"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925976"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
 由调试引擎 (DE) 来启动和终止程序。  

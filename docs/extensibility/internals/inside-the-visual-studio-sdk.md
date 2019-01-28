@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821140"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978264"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探究 Visual Studio SDK
 本部分提供有关 Visual Studio 扩展，其中包括 Visual Studio 体系结构、 组件、 服务、 架构、 实用工具和类似的内容的详细信息。
@@ -102,7 +102,7 @@ ms.locfileid: "53821140"
 ## <a name="properties-and-options"></a>属性和选项
  **属性**窗口显示单个或多个选定的项的属性：[将属性扩展](../../extensibility/internals/extending-properties.md)选项页包含一系列的适用于特定组件，例如，一种编程语言或 VSPackage 的选项：[选项和选项页](../../extensibility/internals/options-and-options-pages.md)。 设置为通常与 UI 相关的功能，可以导入和导出：[支持用户设置](../../extensibility/internals/support-for-user-settings.md)。
 
-## <a name="visual-studio-services"></a>Visual Studio 服务
+## <a name="visual-studio-services"></a>Visual Studio Services
  服务提供了一组特定的组件使用的接口。 Visual Studio 提供了一组可由任何组件，包括扩展的服务。 例如，Visual Studio 服务，工具窗口，以显示或隐藏动态，启用对帮助、 状态栏或 UI 事件的访问。 在 Visual Studio 编辑器还提供可由编辑器扩展导入的服务。 有关详细信息，请参阅[使用和提供服务](../../extensibility/using-and-providing-services.md)。
 
 ## <a name="debugger"></a>调试器

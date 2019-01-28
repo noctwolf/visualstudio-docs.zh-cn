@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 679a743db707b7354fe104721ea8dd709e151217
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2bce8ffbfc1aebe10bd6bd9a84fe59c51dcaa273
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827437"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027550"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何：公开库提供对对象管理器的符号列表
 符号浏览工具中，**类视图**，**对象浏览器**，**调用浏览器**并**查找符号结果**，将为新数据传送到请求传递给[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器。 对象管理器查找合适的库，并请求新的符号列表。 这些库通过提供到请求的数据来响应[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>接口。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>接口以获取数据，并使用它来填充或更新符号浏览工具的视图。  

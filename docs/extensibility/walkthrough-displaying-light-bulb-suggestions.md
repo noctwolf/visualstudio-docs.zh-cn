@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ce64b3fe8d41d1ceb865555d93e6e464b25fb42
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a1f54efc4b61decd88c9cc322597bcc0be513ed
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935003"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027745"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>演练：显示灯泡建议
 电灯泡是 Visual Studio 编辑器中展开此项可显示的一组操作，例如，通过内置的代码分析器或重构代码标识的问题的修补程序的图标。  

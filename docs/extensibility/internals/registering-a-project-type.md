@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e3c5aa9dd5784f6d987a433b0f402547e8f7d8b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9b1413acafd4358d4b29435a0cd62edd5a8ce22e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826382"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940825"
 ---
 # <a name="registering-a-project-type"></a>注册项目类型
 在创建新项目类型时，必须创建注册表项，使[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]来识别和处理您的项目类型。 您通常使用注册表脚本 (.rgs) 文件创建这些注册表项。  
@@ -222,7 +222,7 @@ ms.locfileid: "53826382"
   
 |name|类型|数据|描述|  
 |----------|----------|----------|-----------------|  
-|%Clsid_package%|REG_SZ|`,1000,1`|要检索的菜单信息的资源。|  
+|%CLSID_Package%|REG_SZ|`,1000,1`|要检索的菜单信息的资源。|  
   
  下面的所有示例都位于注册表项 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates] 下。  
   

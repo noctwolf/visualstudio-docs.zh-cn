@@ -22,15 +22,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a3bb4f99c4a77a398cb1f5e3765ee6353a367fb7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2898f4ed7c10e46801def2f409074f41004b343
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923148"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875844"
 ---
 # <a name="custom-task-panes"></a>自定义任务窗格
   任务窗格是一种用户界面面板，通常停靠在 Microsoft Office 应用程序中窗口的一侧。 自定义任务窗格为你提供了一钟方法，使你可以创建自己的任务窗格并为用户提供熟悉的界面来访问你的解决方案的功能。 例如，界面中可以包含运行代码以修改文档或显示来自数据源的数据的控件。  
@@ -56,7 +56,7 @@ ms.locfileid: "53923148"
   
 2. 通过将用户控件传递到 VSTO 外接程序中的 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> 对象来实例化自定义任务窗格。 此集合返回一个新的 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象，可用于修改任务窗格的外观并响应用户事件。  
   
-   有关更多信息，请参见[如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
+   有关详细信息，请参阅[如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
   
 ### <a name="create-the-user-interface"></a>创建用户界面  
  使用 Visual Studio 中的 Office 开发工具创建的所有自定义任务窗格均包含一个 <xref:System.Windows.Forms.UserControl> 对象。 此用户控件提供自定义任务窗格的用户界面。 在设计时或在运行时，您可以创建用户控件。 如果在设计时创建用户控件，则可使用 Windows 窗体设计器来构造任务窗格的用户界面。  

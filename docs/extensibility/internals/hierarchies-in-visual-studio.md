@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49d058752d41604ec6560d18096c68e6566ab01e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20e8dcb947b84652f818ab38ed441e39e27942e9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852659"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033396"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio 中的层次结构
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 显示为一个项目*层次结构*。 在 IDE 中，层次结构是的节点，其中每个节点都有一组相关联的属性的树。 一个*项目层次结构*是保存项目的项目、 项目的关系和相关联的项目的属性和命令的容器。  

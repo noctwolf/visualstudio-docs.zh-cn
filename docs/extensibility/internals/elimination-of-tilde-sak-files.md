@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37d2d8fbbd98e75b398caec9e4c2f36a5853ba4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 701bb929bae7b5103e274810cf0ad3a222118781
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862809"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951269"
 ---
 # <a name="elimination-of-sak-files"></a>消除了 ~ SAK 文件
 在源控件插件 API 1.2 *~ SAK*功能标志已替换为文件和新的函数，检测是否将源控件插件支持*MSSCCPRJ*文件和共享方式签出。  
   
-## <a name="sak-files"></a>~ SAK 文件  
+## <a name="sak-files"></a>~SAK files  
 Visual Studio.NET 2003 中创建临时文件带有前缀 *~ SAK*。 这些文件用于确定是否支持源代码管理插件：  
   
 - *MSSCCPRJ.SCC*文件。  
@@ -45,7 +45,7 @@ Visual Studio.NET 2003 中创建临时文件带有前缀 *~ SAK*。 这些文件
   
  如果源代码管理插件支持创建和使用*MSSCCPRJ.SCC*文件，然后它会声明`SCC_CAP_SCCFILE`功能和实现[SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)。 此函数调用的文件列表。 该函数将返回`TRUE' or 'FALSE`为每个文件，以指示是否应使用 Visual Studio *MSSCCPRJ.SCC*为它的文件。 如果选择不支持这些新功能和函数的源代码管理插件，它可以使用以下注册表项来禁用这些文件的创建：  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword: 00000001*  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*  
   
 > [!NOTE]
 >  如果此注册表项设置为*dword:00000000*，等效于键不存在，并且 Visual Studio 仍尝试创建临时文件。 但是，如果注册表项设置为*dword: 00000001*，Visual Studio 不会尝试创建临时文件。 而是假定的源代码管理插件不支持*MSSCCPRJ.SCC*文件，并不支持共享方式签出。  

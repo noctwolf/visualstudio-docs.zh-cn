@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3401523e7c8026b59f6737a8f0599b4df74a445f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0a22adb627edcbda6f823c659b20f41524b83a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943507"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949020"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>生成新项目：实质上，第二部分
 在[生成新项目：实质上，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我们已了解如何**新建项目**填充框的对话框。 让我们假定你已选择了**Visual C# Windows 应用程序**中，已填写**名称**并**位置**文本框中，然后单击确定。  

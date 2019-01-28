@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c281aa989abc32e4287e49d05af03b198adc013
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 52ced7e134efd0de9d2f61b039e5c851ba1387a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832630"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931591"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio 的常见控件模式
 ##  <a name="BKMK_CommonControls"></a> 公共控件  
@@ -300,13 +300,13 @@ ms.locfileid: "53832630"
   
 | 函数 | Button |  
 | --- | --- |  
-| 添加 | ![图形"添加"按钮](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703 08_ButtonAdd") |
-| 删除 | ![图形"删除"按钮](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703 09_ButtonRemove") |
+| 添加 | ![Graphical "Add" button](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
+| 删除 | ![Graphical "Remove" button](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
 | 全部添加 | ![图形"全部添加"按钮](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703 10_ButtonAddAll") |
-| 删除所有 | ![图形"全部删除"按钮](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703 11_ButtonRemoveAll") |
+| 删除所有 | ![Graphical "Remove All" button](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | 上移 | ![图形"上移"按钮](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703 12_ButtonMoveUp") |
 | 下移 | ![图形"下移"按钮](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703 13_ButtonMoveDown") |
-| 删除 | ![图形"删除"按钮](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703 14_ButtonDelete") |
+| 删除 | ![Graphical "Delete" button](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
   
 ##### <a name="sizing-and-spacing"></a>调整大小和间距  
 大小调整图形按钮简短版本的相同 **[浏览...]** 按钮 （26 x 23 像素为单位）：  

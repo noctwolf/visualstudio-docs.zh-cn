@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: c74b7547ea62942670b2c5442d16f460dc738f84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb603a6a99335d17d204fe342cf8d696d8e9021a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836085"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919806"
 ---
 # <a name="customizing-text-and-image-fields"></a>自定义文本和图像字段
 形状中定义的文本修饰器时，它表示由文本字段。 有关 TextFields 和其他 ShapeFields 的初始化的示例，在 DSL 解决方案中检查 Dsl\GeneratedCode\Shapes.cs。

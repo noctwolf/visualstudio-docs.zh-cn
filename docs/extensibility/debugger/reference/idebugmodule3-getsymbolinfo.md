@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::GetSymbolInfo |Microsoft Docs
+title: IDebugModule3::GetSymbolInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fb03186d623c63fd4c3ff950140918244397115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8273a8111eb087202a1b97ec042e8d1bd21f637a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945751"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992823"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 检索的符号，以及搜索每个路径的结果的搜索路径的列表。  
@@ -56,7 +56,7 @@ int GetSymbolInfo(
 ## <a name="remarks"></a>备注  
  如果`bstrVerboseSearchInfo`字段的`MODULE_SYMBOL_SEARCH_INFO`结构不为空，则它包含搜索路径和该搜索的结果的列表。 列表格式与跟省略号 （"..."） 后, 跟结果的路径。 如果有多个路径结果对，然后由"\r\n"（回车符-/ 换行） 对分隔每个对。 该模式如下所示：  
   
- \<路径 >...\<结果 > \r\n\<路径 >...\<结果 > \r\n\<路径 >...\<结果 >  
+ \<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>  
   
  请注意，最后一项没有 \r\n 序列。  
   

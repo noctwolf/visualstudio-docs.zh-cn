@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e669b86a84f21dd6187558fc0a853c875d5d2e71
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46564673417f93d139f554dbe67d1970ec7c5519
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953006"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988566"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>演练：使用快捷键与编辑器扩展
 您可以在编辑器扩展中响应键盘快捷方式。 下面的演练演示如何使用快捷键将视图修饰添加到文本视图。 本演练基于视区修饰编辑器模板，并且可以使用添加修饰 + 字符。  
@@ -35,7 +35,7 @@ ms.locfileid: "53953006"
   
     Microsoft.VisualStudio.OLE.Interop  
   
-    Microsoft.visualstudio.shell.14.0 的引用  
+    Microsoft.VisualStudio.Shell.14.0  
   
     Microsoft.VisualStudio.TextManager.Interop  
   

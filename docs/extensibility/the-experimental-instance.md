@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cacee26fb84774eb7f1043d940419561bc55ec36
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f77770b799c3d437f9f1a223dfe8d5c139b65ee
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917366"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966941"
 ---
 # <a name="the-experimental-instance"></a>实验实例
 为了保证从未经测试的应用程序可能会更改其在 Visual Studio 开发环境，请 VSSDK 提供了可用于试验的实验性空间。 像往常一样，使用 Visual Studio 开发新应用程序，但通过使用此实验实例中运行它们。  
@@ -26,7 +26,7 @@ ms.locfileid: "53917366"
   
  如果你想要启动特定的解决方案之外的 Visual Studio 实验实例，请在命令窗口运行以下命令：  
   
- "*\<Visual studio 安装路径 >* \Common7\IDE\devenv.exe"RootSuffix Exp  
+ "*\<Visual studio installation path>* \Common7\IDE\devenv.exe" /RootSuffix Exp  
   
 > [!NOTE]
 >  实验实例写入到注册表`<version number>Exp`和`<version number>Exp_Config`节点。 有关示例的 Visual Studio 2015 的实验性注册表区域是  

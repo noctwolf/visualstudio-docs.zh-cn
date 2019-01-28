@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d549ab4af45a2571b2d20d47215109f57b3f3384
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e86b6163a581a2bd7233596b3871a82f356b3ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930708"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988761"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>注册和选择（源代码管理 VSPackage）
 源代码管理 VSPackage 必须注册才能公开到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 如果注册了多个源代码管理 VSPackage，用户可以选择在适当的时候加载的 VSPackage。 请参阅[Vspackage](../../extensibility/internals/vspackages.md)有关 Vspackage 以及如何将它们注册的更多详细信息。  
@@ -41,9 +41,9 @@ ms.locfileid: "53930708"
   
 | 项名称 | 条目 |
 | - | - |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | （默认值） = rg_sz: {ID_SccProvider} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | （默认值） = rg_sz:\<包的友好名称 ><br /><br /> 服务 = rg_sz: {SID_SccPkgService} |
-| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | （默认值） = rg_sz: #\<本地化名称的资源 ID ><br /><br /> 包 = rg_sz: {ID_Package} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | (default) = rg_sz:{ID_SccProvider} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | （默认值） = rg_sz:\<包的友好名称 ><br /><br /> Service = rg_sz:{SID_SccPkgService} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | （默认值） = rg_sz: #\<本地化名称的资源 ID ><br /><br /> Package = rg_sz:{ID_Package} |
 | `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (请注意，键名称， `SourceCodeControl`，已由[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]不是可用的选择和\<包名称 >。) | （默认值） = rg_sz: {ID_Package} |
   
 ## <a name="selecting-a-source-control-package"></a>选择源代码管理包  

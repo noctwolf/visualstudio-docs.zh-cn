@@ -1,5 +1,5 @@
 ---
-title: ATTACH_REASON |Microsoft Docs
+title: ATTACH_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f40958cabdf1da8aa44cd7e226ed7219429af2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d5a7cb8cfbc4efc2ffd90a58c0c0650b677ed8d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931221"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54966278"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 指定调试引擎 (DE) 的原因，若要将附加到程序节点。  

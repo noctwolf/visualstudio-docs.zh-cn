@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugErrorBreakpoints2::Skip |Microsoft Docs
+title: IEnumDebugErrorBreakpoints2::Skip | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a5a02b38-4e3a-4f0e-b529-f770c3485c8b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd921a978f58d5fa6356ae5d3a1413bcdf5c2d66
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed384d7dca15c6485f00f2cf95727a91530ec755
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850250"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938927"
 ---
 # <a name="ienumdebugerrorbreakpoints2skip"></a>IEnumDebugErrorBreakpoints2::Skip
 跳过指定数量的元素。  
@@ -41,7 +41,7 @@ int Skip(
  [in]要跳过的元素数。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果`celt`大于剩余的元素数; 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果`celt`大于剩余的元素数; 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
  如果`celt`指定的值数比大剩余元素的枚举设置为结束和`S_FALSE`返回。  

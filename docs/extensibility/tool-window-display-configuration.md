@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60e9b8e2ac19ec54134e536d38fac7e4ffbf9034
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 089b0ac1a30a7605df61d5e5e5545e6f4c80549a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877726"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973403"
 ---
 # <a name="tool-window-display-configuration"></a>工具窗口中显示配置
 可选值中指定了当 VSPackage 注册为工具窗口中，默认位置、 大小、 停靠样式和其他可见性信息。 工具窗口注册的详细信息，请参阅[工具 Windows 注册表中](../extensibility/tool-windows-in-the-registry.md)  
@@ -39,9 +39,9 @@ HKEY_LOCAL_MACHINE\
 | name | 类型 | 数据 | 描述 |
 |-----------------|-----------| - | - |
 | name | REG_SZ | "此处显示短名称" | 描述的工具窗口的短名称。 仅用于在注册表中的引用。 |
-| Float | REG_SZ | "X1，Y1，X2，Y2" | 四个逗号分隔的值。 X1，Y1 是工具窗口的左上角的坐标。 X2，Y2 是右下角的坐标。 所有值都均以屏幕坐标。 |
+| Float | REG_SZ | "X1,Y1,X2,Y2" | 四个逗号分隔的值。 X1，Y1 是工具窗口的左上角的坐标。 X2，Y2 是右下角的坐标。 所有值都均以屏幕坐标。 |
 | 样式 | REG_SZ | "MDI"<br /><br /> "浮动"<br /><br /> "链接"<br /><br /> "选项卡式"<br /><br /> "AlwaysFloat" | 关键字指定初始显示工具窗口的状态。<br /><br /> "MDI"= 与 MDI 窗口停靠在一起。<br /><br /> "浮动"= 浮动。<br /><br /> "链接"= 与另一个窗口 （在窗口中的项中指定） 链接。<br /><br /> "选项卡式"= 与另一个工具窗口结合使用。<br /><br /> "AlwaysFloat"= 不固定。<br /><br /> 有关详细信息，请参阅下面的注释部分。 |
-| 窗口 | REG_SZ | *\<GUID &GT;* | 到工具窗口可以链接或选项卡式窗口的 GUID。 GUID 可能属于一个你自己的 windows 或 windows 中的一个[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE。 |
+| 窗口 | REG_SZ | *\<GUID>* | 到工具窗口可以链接或选项卡式窗口的 GUID。 GUID 可能属于一个你自己的 windows 或 windows 中的一个[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE。 |
 | 方向 | REG_SZ | "Left"<br /><br /> "右"<br /><br /> "Top"<br /><br /> "底部" | 请参阅下面的注释部分。 |
 | DontForceCreate | REG_DWORD | 0 或 1 | 此条目存在后，其值不为零，窗口加载，但不是会立即显示。 |
 
@@ -88,7 +88,7 @@ HKEY_LOCAL_MACHINE\
 |name|类型|数据|描述|  
 |----------|----------|----------|-----------------|  
 |(默认)|REG_SZ|无|将保留为空。|  
-|*\<GUID &GT;*|REG_DWORD 或 REG_SZ|0 或描述性字符串。|可选。 项的名称必须是命令的需要可见性的 GUID。 值只保留一个信息性的字符串。 通常情况下，值是`reg_dword`设置为 0。|  
+|*\<GUID>*|REG_DWORD 或 REG_SZ|0 或描述性字符串。|可选。 项的名称必须是命令的需要可见性的 GUID。 值只保留一个信息性的字符串。 通常情况下，值是`reg_dword`设置为 0。|  
 
 ### <a name="example"></a>示例  
 

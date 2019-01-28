@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fc3aa99fd54234cdc21250a39052b37d233a70b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 12fd392043ab40354874a0644563cd31282f967d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943283"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004625"
 ---
 # <a name="vscodewindowmanager-object"></a>VSCodeWindowManager 对象
 语言服务实现代码窗口管理器，并负责管理修饰 （例如，下拉栏）。 有关详细信息，请参阅[使用旧版 API 自定义代码 Windows](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)。  

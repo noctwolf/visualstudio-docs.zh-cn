@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f323bde8719090815e76cf9887630930e5151da7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80bfefacf73e1ed7209ee7b40eec4c180e16904d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915291"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949696"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>什么&#39;中的源控制插件 API 版本 1.2
 本部分重点介绍在源控件插件 API 版本 1.2 中的高级的源代码代码控件功能。 下面列出了版本 1.2 中的新增功能：  

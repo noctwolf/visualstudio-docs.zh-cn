@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_STRING |Microsoft Docs
+title: BP_LOCATION_CODE_STRING | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee33cff1ba8ee6ce278a9bb11f8967d4dd377173
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6fedefecdc59c7daf8dd1aa1b2ab015a5071ea25
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925269"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000207"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
 用于设置基于用户可以从集成的开发环境 (IDE) 中输入的字符串的代码断点。  

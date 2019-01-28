@@ -11,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b907fc1dec31cee62ebebc2a1fb3676f77c407e2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fd39590ab2d236d0ad66eea204b1a0d7170408a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887719"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982047"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 元素（Visual Studio 模板）
 指定 Web 项目模板是完全相同的多个语言，以及是否**语言**上启用选项**添加新项**对话框。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<SupportsLanguageDropDown >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<SupportsLanguageDropDown>  
   
 ## <a name="syntax"></a>语法  
   

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea506479226ed8585296208064bd3533cf0a5783
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a7abb030ab98976a6e55a5d297cf510f01842e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922831"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929122"
 ---
 # <a name="create-a-software-development-kit"></a>创建软件开发工具包
 软件开发工具包 (SDK) 是一系列 Api，您可以参考作为 Visual Studio 中的单个项。 **引用管理器**对话框会列出与项目相关的所有 Sdk。 向项目添加 SDK，Api 时，Visual Studio 中提供。  
@@ -75,7 +75,7 @@ ms.locfileid: "53922831"
 
 1.  注册表项中指定它：  
 
-     **HKLM\Software\Microsoft\Microsoft Sdk\<目标平台 > \v<platform version number>\ExtensionSDKs\<SDKName >\<SDKVersion >**\  
+     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs\<SDKName>\<SDKVersion>**\  
 
      并添加具有值 （默认值） 子项`<path to SDK><SDKName><SDKVersion>`。  
 

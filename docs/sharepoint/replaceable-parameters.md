@@ -10,16 +10,16 @@ helpviewer_keywords:
 - tokens [SharePoint development in Visual Studio]
 - replaceable parameters [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, replaceable parameters
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload: office
-ms.openlocfilehash: 762ef5ca27fade9a8ec58f6e0b7f5b60e4baaccb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 792c7faf9ed704dd01226c750e9898965111c414
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989158"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871944"
 ---
 # <a name="replaceable-parameters"></a>可替换参数
   可替换参数，或*令牌*，可以使用项目文件中为其实际值不在设计时已知的 SharePoint 解决方案项提供值。 它们类似于标准[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]模板标记。 有关详细信息，请参阅[模板参数](../ide/template-parameters.md)。  
@@ -65,8 +65,8 @@ ms.locfileid: "53989158"
 |$SharePoint.Feature.DeploymentPath$|包含在包中的功能文件夹的名称。 此令牌将等于功能设计器中的"部署路径"属性。 一个示例值是"Project1_Feature1"。|  
 |$SharePoint.Feature.Id$|包含功能的 SharePoint ID。 此令牌，因为与所有功能级别令牌，可以使用仅由一项功能，通过包中包含的文件不直接添加到一项功能之外的包。|  
 |$SharePoint.ProjectItem.Name$|作为从中获取项目项 （不文件名称） 的名称**ISharePointProjectItem.Name**。|  
-|$SharePoint.Type。\<GUID >。AssemblyQualifiedName $|与标记的 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 匹配的类型的程序集限定名。 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 的格式为小写，并与 Guid.ToString("D") 格式（即 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx）对应。|  
-|$SharePoint.Type。\<GUID >。FullName $|在令牌中的 GUID 匹配的类型的全名。 GUID 的格式为小写，并对应于 Guid.ToString("D") 格式 (即，xxxxxxxx xxxx-xxxx-xxxx-在左右加上)。|  
+|$SharePoint.Type.\<GUID>.AssemblyQualifiedName$|与标记的 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 匹配的类型的程序集限定名。 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 的格式为小写，并与 Guid.ToString("D") 格式（即 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx）对应。|  
+|$SharePoint.Type.\<GUID>.FullName$|在令牌中的 GUID 匹配的类型的全名。 GUID 的格式为小写，并对应于 Guid.ToString("D") 格式 (即，xxxxxxxx xxxx-xxxx-xxxx-在左右加上)。|  
   
 ## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>将扩展添加到标记替换文件扩展名列表
  虽然从理论上由属于 SharePoint 项目项包含在包中，默认情况下，任何文件使用令牌[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]令牌仅在包文件中，清单文件，并具有以下扩展名的文件中搜索：  

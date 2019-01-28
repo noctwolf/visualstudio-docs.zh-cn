@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fba22a2b2dacec57439b66abe6607c248ed1914
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b67df621b4eb82529a4b17470e31946476becdfa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926039"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005925"
 ---
 # <a name="adapt-legacy-code-to-the-editor"></a>调整到编辑器的旧代码
 在 Visual Studio 编辑器具有许多功能，可以从现有代码组件访问。 以下说明介绍如何改编非 MEF 组件，例如，VSPackage，使用编辑器的功能。 此外说明了如何使用适配器来托管和非托管代码中获取的编辑器中的服务。  

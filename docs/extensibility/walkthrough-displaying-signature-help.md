@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 796b15b603ee314425d895279f6abff8e9d7e713
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5923efe859f6fe04468e6659d8df46b8b3d2a1cd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986721"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981124"
 ---
 # <a name="walkthrough-display-signature-help"></a>演练：显示签名帮助
 签名帮助 (也称为*的参数信息*) 工具提示中显示的一种方法的签名，当用户键入的参数列表开始字符 （通常是一个左括号）。 参数和参数分隔符 （通常为逗号） 类型化，工具提示会更新以显示下一个参数以粗体显示。 可以按以下方式定义签名帮助： 在语言服务的上下文中，定义自己的文件扩展名和内容类型和显示签名帮助只是该类型，或为现有内容类型 (例如，"text") 显示签名帮助。 本演练演示如何显示为"text"内容类型的签名帮助。  
@@ -45,7 +45,7 @@ ms.locfileid: "53986721"
   
      Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.visualstudio.shell.14.0 的引用  
+     Microsoft.VisualStudio.Shell.14.0  
   
      Microsoft.VisualStudio.TextManager.Interop  
   

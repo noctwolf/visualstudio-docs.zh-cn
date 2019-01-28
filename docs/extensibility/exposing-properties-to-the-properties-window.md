@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e696e1dc71af4dbcfc408e169c1a6e5ba8984921
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2e396afabe6ea54668e4dedbbf743f6b91a065e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921833"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998568"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>公开属性设置为属性窗口
 本演练中公开的对象的公共属性**属性**窗口。 对这些属性进行的更改会反映在**属性**窗口。  

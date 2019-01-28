@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3fa5972a520825b8c7622bd07e23d53910339ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7ae9333fd0e003bae6c823f7ae778dfc4b3770c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852646"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041199"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自定义用户界面 （源代码管理 VSPackage）
 VSPackage 声明其菜单项和通过 Visual Studio 命令表及其默认状态 (*.vsct*) 文件。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 在加载 VSPackage 之前为其默认状态显示的菜单项。 随后，<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用方法来启用或禁用菜单项。  

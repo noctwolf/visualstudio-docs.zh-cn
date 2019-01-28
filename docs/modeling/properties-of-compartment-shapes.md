@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, compartment shape
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6a15432e170c814a6e80aebb86a9db31d073a98b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc2527739c40802f3e21ea4fabebfc20fb09cdcc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835216"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962126"
 ---
 # <a name="properties-of-compartment-shapes"></a>分段形状的属性
 隔离舱形状是一种可用于在特定于域的语言显示域类的形状。 你可以展开和折叠隔离舱。
@@ -39,7 +39,7 @@ ms.locfileid: "53835216"
 |轮廓粗细|此形状的边框粗细。|0.03125|
 |文本颜色|使用与此形状相关联的文本修饰器的颜色。|黑色|
 |访问修饰符|隔离舱形状的访问级别 (`public`或`internal`)。|Public|
-|自定义特性|用于将属性添加到此隔离舱形状从生成的源代码类|\<无 >|
+|自定义特性|用于将属性添加到此隔离舱形状从生成的源代码类|\<none>|
 |生成双派生|如果`True`，将生成的基类和一个分部类 （以支持通过重写自定义）。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
 |具有自定义构造函数|如果`True`，将在源代码中提供自定义构造函数。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
 |继承修饰符|描述的隔离舱形状从生成的源代码类继承的类型 (`none`，`abstract`或`sealed`)。|无|
@@ -47,14 +47,14 @@ ms.locfileid: "53835216"
 |name|此形状的名称。|当前名称|
 |命名空间|与此形状相关联的命名空间。|当前命名空间|
 |工具提示类型|如何定义工具提示 （固定的变量，或无）。 如果固定，然后的值`Fixed Tooltip Text`属性用作工具提示; 如果变量，然后在工具提示中定义自定义代码。|无|
-|说明|与此形状相关联的非正式说明。|\<无 >|
+|说明|与此形状相关联的非正式说明。|\<none>|
 |初始高度|此形状，以英寸为单位的初始高度。 对于隔离舱形状，这是仅标头部分的高度，无法调整大小。|1|
 |初始宽度|此形状，以英寸为单位的初始宽度。|1.5|
 |作为属性公开的填充颜色<br /><br /> 公开的填充渐变模式<br /><br /> 作为属性公开轮廓颜色<br /><br /> 作为属性公开边框虚线线型<br /><br /> 公开为属性的边框粗细<br /><br /> 公开文本颜色|如果`True`，用户可以设置形状的规定的属性。 若要将此项设置，请右键单击形状定义，然后单击**公开添加**。|False|
-|描述|用于记录生成的设计器。|\<无 >|
-|显示名称|将此形状的生成设计器中显示的名称。|\<无 >|
-|固定工具提示文本|用于固定工具提示文本。|\<无 >|
-|帮助关键字|用于索引此形状的 F1 帮助关键字。|\<无 >|
+|描述|用于记录生成的设计器。|\<none>|
+|显示名称|将此形状的生成设计器中显示的名称。|\<none>|
+|固定工具提示文本|用于固定工具提示文本。|\<none>|
+|帮助关键字|用于索引此形状的 F1 帮助关键字。|\<none>|
 
 ## <a name="see-also"></a>请参阅
 

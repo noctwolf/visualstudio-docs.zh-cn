@@ -1,5 +1,5 @@
 ---
-title: DEBUG_PROPERTY_INFO |Microsoft Docs
+title: DEBUG_PROPERTY_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbb1a135cfca3e358d740f6c6ef23b2040843ff4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29c02335f83438bf727a5daacd01d88c99e8d038
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927124"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972751"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 包含有关调试属性的信息。  
@@ -64,7 +64,7 @@ public struct DEBUG_PROPERTY_INFO { 
  bstrValue  
  形式的格式化字符串的属性值。  
   
- 属性  
+ pProperty  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)此结构所描述的对象。  
   
  dwAttrib  

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 597fc90ff7b98018aab0fa11fb44fb1bc152272e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c1a44327205f9bdbdab00ac3554f501c52e1c36
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895436"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967542"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 代码工具清单是一个控制台应用程序的 Visual Studio 映像服务获取.imagemanifest 文件，并生成包装文件或文件的引用 c + + 中的图像清单值C#，Visual Studio VB 或.vsct 文件扩展插件。 此工具生成可用于从 Visual Studio 映像服务直接请求映像或传递通过 Api 清单的值，如果代码不会处理任何其自己的 UI 和呈现的包装器文件。  
@@ -40,11 +40,11 @@ ms.locfileid: "53895436"
   
  **示例**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest 命令  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace： 我:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>说明  
   

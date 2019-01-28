@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fad03b6c06b23f7acd34894cf70197895e44b31
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00143d181629eee4cfe4b3d49f05cc0641f1ec4c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960912"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029201"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 编译器命令行标志
 Visual Studio 命令表 (VSCT) 编译器提供命令行开关以确保成功编译的.vsct 文件。  

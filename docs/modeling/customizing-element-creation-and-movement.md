@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e56688d74647c12340fcf9755dca3de282806773
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821030"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933021"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自定义元素创建和移动
 
@@ -39,7 +39,7 @@ ms.locfileid: "53821030"
 
 EMD 的职责是确定如何对象组应合并到模型中的特定位置。 具体而言，它决定采用何种关系应实例化，若要将合并的组链接到模型。 您还可以自定义其设置属性并创建其他对象。
 
-![DSL&#45;EMD&#95;合并](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 在定义嵌入关系时，会自动生成 EMD。 当用户将新的子实例添加到父，EMD 此默认设置创建的关系的实例。 可以通过添加自定义代码例如修改这些默认 EMDs。
 

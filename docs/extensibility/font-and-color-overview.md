@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d1d409c86f018cb0c661a6a6bb36ccc1911d11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e73d021e89ea59ada88e79ce3235e7f08f75b10f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966481"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983997"
 ---
 # <a name="font-and-color-overview"></a>字体和颜色的概述
 本主题讨论中的文本字体和颜色设置[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。 它还引入了类别和显示项的概念并介绍 Vspackage 和核心编辑器如何使用文本特性。  
@@ -71,7 +71,7 @@ ms.locfileid: "53966481"
   
 - 可以使用内置的显示项从**文本 EditorCategory**和对其进行扩展。  
   
-   有关更多信息，请参见[如何：使用内置的可着色项](../extensibility/internals/how-to-use-built-in-colorable-items.md)并[自定义可着色项](../extensibility/internals/custom-colorable-items.md)。  
+   有关详细信息，请参阅[如何：使用内置的可着色项](../extensibility/internals/how-to-use-built-in-colorable-items.md)并[自定义可着色项](../extensibility/internals/custom-colorable-items.md)。  
   
 - 自动持久化的当前状态的两个内置和自定义显示的项**文本编辑器**类别。  
   

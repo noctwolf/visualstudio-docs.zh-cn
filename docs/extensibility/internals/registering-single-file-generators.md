@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ba4bb20eb5e3a98d20a3272a603e53a772b5f1b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7de9afbb29b40717f662384c0a139f0cd76a769
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880966"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029266"
 ---
 # <a name="registering-single-file-generators"></a>注册单个文件生成器
 若要使自定义工具中可用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，因此必须注册该[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以实例化并将其关联与特定项目类型。  

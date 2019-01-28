@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a048ce1e89de65e805d01971de5c4221b13be826
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 14dfc5237f505306c28954a93eb848673f0d3387
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956567"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936094"
 ---
 # <a name="walkthrough-display-matching-braces"></a>演练：显示匹配大括号
 实现基于语言的功能，例如，大括号匹配通过定义您希望匹配，括在括号的内，并将文本标记标记添加到匹配大括号，当脱字号上一个大括号。 可以定义一种语言的上下文中的大括号、 定义您自己的文件扩展名和内容类型和应用标签来只是该类型或将标记应用到现有内容类型 （例如"text")。 下面的演练演示如何将应用标记为"text"内容类型匹配的大括号。  

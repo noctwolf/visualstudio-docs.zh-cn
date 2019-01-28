@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4b13613c93c96b2ce709a9c9e1d082d0f7e8242
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39c3de415e7c0c8f95380a76de7f8f8a717d97d4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826635"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015428"
 ---
 # <a name="using-the-automation-model"></a>使用自动化模型
 你的 VSPackage 连接到自动化后，您可以通过调用获取的属性和方法<xref:EnvDTE.DTEClass.GetObject%2A>方法<xref:EnvDTE._DTE>对象，并传递表示要检索的对象的字符串。  

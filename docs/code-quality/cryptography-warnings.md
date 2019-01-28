@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: d96723ea-a293-488d-b9db-adb437e50cdd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff3ffef284c0cbf1503d573ba01c7a88c1c5e95
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15c70941f1c450b4df0e485266611835208306fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964171"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928147"
 ---
 # <a name="cryptography-warnings"></a>加密警告
 加密警告支持通过正确使用加密提高库和应用程序的安全性。 这些警告帮助防止程序中出现安全漏洞。 如果你禁用其中的某个警告，你应当在代码中清楚标出原因，同时将你的开发项目通知指定的安全负责人。

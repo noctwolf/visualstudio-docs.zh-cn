@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1fee65200d026200de5196d1396191d759aded8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c5055da98dd13c5f9f97a28bb420b5ee28d52c10
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990852"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948396"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 颜色编译器
 Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Visual Studio 主题的.xml 文件的控制台应用程序并将其向.pkgdef 文件，以便可以在 Visual Studio 中使用这些颜色。 因为可以轻松比较.xml 文件之间的差异，此工具可用于管理源控件中的自定义颜色。 它还可以挂接到生成环境，以便生成的输出是一个有效的.pkgdef 文件。  
@@ -82,7 +82,7 @@ Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Vi
 |name|[必需]类别的名称|  
 |GUID|[必需]该类别的 GUID （必须匹配 GUID 格式）|  
   
- **颜色**  
+ **Color**  
   
  \<颜色 > 元素定义的组件或 UI 的状态的颜色。 一种颜色的首选命名方案是 [UI 类型] [State]。 不要使用"颜色"一词，因为它是冗余。 一种颜色应清楚地指示元素类型和的情况下，或"状态，"将为其应用颜色。 一种颜色不能为空，并且必须包含一个或两个\<背景 > 和\<前台 > 元素。 颜色元素的定义如下：  
   

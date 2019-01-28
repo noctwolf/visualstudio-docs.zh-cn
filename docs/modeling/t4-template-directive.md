@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8f60f061e62fecc15a92f313489f4053ed19016
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885283"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974248"
 ---
 # <a name="t4-template-directive"></a>T4 模板指令
 
@@ -36,7 +36,7 @@ Visual Studio T4 文本模板通常以开头`template`指令，指定应如何�
 `compilerOptions="optimize+"`
 
 有效值：
- 
+
 任何有效的编译器选项。
 
 对运行时（预处理过的）模板忽略。
@@ -46,14 +46,14 @@ Visual Studio T4 文本模板通常以开头`template`指令，指定应如何�
 ## <a name="culture-attribute"></a>culture 特性
 
 示例:
- 
+
 `culture="de-CH"`
 
 有效值：
- 
+
 ""，不变的区域性，它是默认值。
 
-表示为 xx-XX 形式字符串的区域性。 例如：en-US、ja-JP、de-CH、de-DE。 有关详细信息，请参阅<xref:System.Globalization.CultureInfo?displayProperty=fullName>。
+表示为 xx-XX 形式字符串的区域性。 例如：en-US、ja-JP、de-CH、de-DE。 有关详细信息，请参阅 <xref:System.Globalization.CultureInfo?displayProperty=fullName>。
 
 Culture 特性指定将表达式块转换为文本时要使用的区域性。
 
@@ -66,11 +66,11 @@ debug="true"
 ```
 
 有效值：
- 
+
 `true`
- 
+
 `false`（默认值）
- 
+
 如果 `debug` 特性为 `true`，则中间代码文件将包含使调试器能够更精确地识别模板中出现中断或异常的位置的信息。
 
 为设计时模板的中间代码文件将写入到您 **%TEMP%** 目录。
@@ -88,9 +88,9 @@ hostspecific="true"
 有效值：
 
 `true`
- 
+
 `false`（默认值）
- 
+
 `trueFromBase`
 
 如果将此特性的值设置为 `true`，则会将名为 `Host` 的属性添加到由文本模板生成的类中。 该属性是对转换引擎的宿主的引用，并声明为 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。 如果已经定义了自定义宿主，则可以将其转换为自定义主机类型。

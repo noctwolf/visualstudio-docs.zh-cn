@@ -1,5 +1,5 @@
 ---
-title: PDB_TYPE |Microsoft Docs
+title: PDB_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1c1bb772-77d6-4870-90b2-fd9247d0004e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: caa171ec3f0d9718f40f2c1c77b2ba692466b3cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 82cea5721a68c9c4a11a53caa7c7db89b69ac72a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910498"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941887"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 此结构指定来自 PDB 符号字段类型有关的信息。  

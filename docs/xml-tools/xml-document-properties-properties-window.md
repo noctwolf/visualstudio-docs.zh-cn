@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a89e6f12cb3e061abc4ebbe30cfe8d3a92138df6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46f832992b85c181738f11976e7fb0f59de1bd89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913305"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920887"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 文档属性，属性窗口
 
@@ -45,7 +45,7 @@ ms.locfileid: "53913305"
 
  也可以输入架构的路径。 如果指定了多个架构，每个架构路径必须加双引号。
 
- **样式表**
+ **Stylesheet**
 
  用于转换文档的 XSLT 文件时**显示 XSLT 输出**使用命令。 如果时，此字段为空**显示 XSLT 输出**使用命令时，编辑器使用中提供的值`xml-stylesheet`处理指令的文档，或它提示您输入文件名。
 

@@ -15,17 +15,17 @@ helpviewer_keywords:
 - worksheets, Excel
 - worksheets
 - events [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76766ddde90b63821b34bd561f8d1977d730f49c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b89b91e8a1fd93953dae6dad28019b2203cf537
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866733"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876273"
 ---
 # <a name="worksheet-host-item"></a>工作表主机项
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项这种类型从 Excel 的主互操作程序集扩展 <xref:Microsoft.Office.Interop.Excel.Worksheet> 类型。 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项提供与 <xref:Microsoft.Office.Interop.Excel.Worksheet> 对象完全相同的属性、方法和事件，但它还公开其他事件并充当宿主控件和 Windows 窗体控件的容器。  
@@ -35,7 +35,7 @@ ms.locfileid: "53866733"
  在文档级项目中，可以在设计时将 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项添加到项目。 在 VSTO 外接程序项目中，您可以生成<xref:Microsoft.Office.Tools.Excel.Worksheet>主机在运行时的项。  
   
 ## <a name="understand-worksheet-host-items-in-document-level-projects"></a>了解文档级项目中的工作表宿主项  
- 为 Excel 创建文档级项目时，Visual Studio 会自动在项目中创建三个 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项。 这些工作表的默认名称分别为 `Sheet1`、`Sheet2` 和 `Sheet3`。 如果基于现有工作簿创建项目，则宿主项的数目取决于工作簿中工作表的数目。  
+ 为 Excel 创建文档级项目时，Visual Studio 会自动在项目中创建三个 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项。 这些工作表的默认名称分别为 `Sheet1`、 `Sheet2`和 `Sheet3`。 如果基于现有工作簿创建项目，则宿主项的数目取决于工作簿中工作表的数目。  
   
  利用这些工作表类，你可以访问 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项的成员，以在自定义项中执行基本任务，例如修改工作表的内容。 也可以使用这些类将控件添加到工作表。 通过组合不同的控件集并编写代码，可将控件绑定到数据、从用户处收集信息并响应用户操作。 有关详细信息，请参阅[程序文档级自定义项](../vsto/programming-document-level-customizations.md)。  
   

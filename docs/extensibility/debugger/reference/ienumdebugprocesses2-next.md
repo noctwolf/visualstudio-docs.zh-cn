@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProcesses2::Next |Microsoft Docs
+title: IEnumDebugProcesses2::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: abef89eb-198b-49cd-a4c9-17bce6cac0e1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 551b62bcf5ff45ef6e423fb97adb5e14fbe6d822
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c487e5f852e791cfae8222a7e1715100220e2d3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892476"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006949"
 ---
 # <a name="ienumdebugprocesses2next"></a>IEnumDebugProcesses2::Next
 枚举中返回下一组元素。  
@@ -51,7 +51,7 @@ int Next(
  [out]返回中实际返回的元素数目`rgelt`。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果无法返回请求的元素数少于; 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果无法返回请求的元素数少于; 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)   

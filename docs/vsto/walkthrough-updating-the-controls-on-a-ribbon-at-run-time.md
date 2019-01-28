@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dynamic menu
 - dynamic menus [Office development in Visual Studio]
 - Ribbon [Office development in Visual Studio], updating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd318be64bb15f72a0bd0147e2b14e79301fb7d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4bad52a02cb87f611293283deb3743c6e148e688
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926907"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875909"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>演练：更新在运行时功能区上的控件
 
@@ -65,7 +65,7 @@ ms.locfileid: "53926907"
 
 3.  将项目保存到默认项目目录中。
 
-     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
 ## <a name="design-a-custom-ribbon-group"></a>设计自定义功能区组
 

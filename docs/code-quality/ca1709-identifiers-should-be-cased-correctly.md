@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f633d1a7-4ca4-40ae-b207-ec571c5fb083
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e954b3e3d346775d87cfcc8bb46bddca2b16056a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8cc8ee2f406c858bc06427327a453542fbaed2a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881722"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55037533"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709:标识符的大小写应当正确
 
@@ -59,7 +59,7 @@ ms.locfileid: "53881722"
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  它可以安全地禁止显示此警告，如果有自己的命名约定，或者如果标识符表示正确的名称，例如，一家公司或一种技术的名称。
 
- 您还可以添加特定的字词、 缩写和首字母缩写词给代码分析自定义字典。 指定自定义字典中的字词不会导致违反此规则。 有关更多信息，请参见[如何：自定义代码分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ 您还可以添加特定的字词、 缩写和首字母缩写词给代码分析自定义字典。 指定自定义字典中的字词不会导致违反此规则。 有关详细信息，请参阅[如何：自定义代码分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 ## <a name="related-rules"></a>相关的规则
  [CA1708:标识符不应不同于用例的详细信息](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

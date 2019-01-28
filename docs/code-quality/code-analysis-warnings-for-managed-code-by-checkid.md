@@ -256,15 +256,15 @@ f1_keywords:
 ms.assetid: 5cb221f6-dc59-4abf-9bfa-adbd6f907f96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba3d5d157cebe48212128a6eeb0312f9f67c2f3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55a4f53915e50275df0876d50564b3f30add1d5f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935977"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010319"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>按 checkid 排列的托管代码的代码分析警告
 
@@ -401,7 +401,7 @@ ms.locfileid: "53935977"
 | CA1812 | [CA1812:避免未实例化的内部类](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | 程序集级别类型的实例不是由程序集中的代码创建的。 |
 | CA1813 | [CA1813:避免使用未密封的特性](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET Framework 类库提供用于检索自定义特性的方法。 默认情况下，这些方法搜索特性继承层次结构。 通过密封特性，将无需搜索继承层次结构，且能够提高性能。 |
 | CA1814 | [CA1814： 与通过多维首选使用交错的数组](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | 交错数组是元素为数组的数组。 构成元素的数组可以是不同的大小，以减少某些数据集的浪费空间。 |
-| CA1815 | [CA1815:重写 equals 和相等运算符对值类型](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | 对于值类型，Equals 的继承的实现使用反射库，并比较所有字段的内容。 反射需要消耗大量计算资源，可能没有必要比较每一个字段是否相等。 如果希望用户对实例进行比较或排序，或者希望用户将实例用作哈希表键，则值类型应实现 Equals。 |
+| CA1815 | [CA1815:替代值类型上的 Equals 和相等运算符](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | 对于值类型，Equals 的继承的实现使用反射库，并比较所有字段的内容。 反射需要消耗大量计算资源，可能没有必要比较每一个字段是否相等。 如果希望用户对实例进行比较或排序，或者希望用户将实例用作哈希表键，则值类型应实现 Equals。 |
 | CA1816 | [CA1816:调用 GC。SuppressFinalize 正确](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | 实现 Dispose 方法不会调用 GC。SuppressFinalize;或不是实现 Dispose 方法调用 GC。SuppressFinalize;或使用方法调用 GC。SuppressFinalize 和传递内容以外此 （我在 Visual Basic 中）。 |
 | CA1819 | [CA1819:属性不应返回数组](../code-quality/ca1819-properties-should-not-return-arrays.md) | 即使属性是只读的，该属性返回的数组也不是写保护的。 若要使数组不会被更改，属性必须返回数组的副本。 通常，用户不能理解调用这种属性的负面性能影响。 |
 | CA1820 | [CA1820:测试有空字符串，使用字符串长度](../code-quality/ca1820-test-for-empty-strings-using-string-length.md) | 使用 String.Length 属性或 String.IsNullOrEmpty 方法比较字符串要比使用 Equals 的速度快得多。 |

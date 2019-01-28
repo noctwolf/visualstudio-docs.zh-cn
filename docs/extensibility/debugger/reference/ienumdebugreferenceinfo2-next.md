@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 70b31a57-1701-4757-9e7e-63ec60a71b3c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2ae764ec5dfd1c7d1ae9c3e514037955b009742
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5043de69946153396e8d69865bb9f0cd9e082882
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852844"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003088"
 ---
 # <a name="ienumdebugreferenceinfo2next"></a>IEnumDebugReferenceInfo2::Next
 枚举中返回下一组元素。  
@@ -51,7 +51,7 @@ int Next(
  [out]返回中实际返回的元素数目`rgelt`。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果无法返回请求的元素数少于; 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果无法返回请求的元素数少于; 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)   

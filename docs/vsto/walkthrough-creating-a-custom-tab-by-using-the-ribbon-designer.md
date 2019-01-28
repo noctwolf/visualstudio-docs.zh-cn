@@ -12,17 +12,17 @@ helpviewer_keywords:
 - customizing the Ribbon, tabs
 - custom Ribbon, tabs
 - Custom tab [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4eda44b274a9720ac067f486706c7404853b0ffc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 30d05c39c9216385d4255055c5d660f79b529ab6
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917587"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54876091"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>演练：使用功能区设计器创建自定义选项卡
   使用功能区设计器，可以创建自定义选项卡，然后在其中添加和放置控件。  
@@ -52,7 +52,7 @@ ms.locfileid: "53917587"
   
 ### <a name="to-create-an-excel-workbook-project"></a>创建 Excel 工作簿项目  
   
--   使用名称创建的 Excel 工作簿项目**为 myexcelribbon**。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+-   使用名称创建的 Excel 工作簿项目**为 myexcelribbon**。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
      Visual Studio 设计器中打开新的工作簿并将添加**为 myexcelribbon**投影到**解决方案资源管理器**。  
   

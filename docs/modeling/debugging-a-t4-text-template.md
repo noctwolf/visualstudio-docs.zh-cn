@@ -7,16 +7,16 @@ helpviewer_keywords:
 - text templates, debugging
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 608cb5881d7e2bc6911fb6a0f7b90f79ca448f9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93990d8437df75ff290d6c471f5f2ff38f710959
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885989"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033903"
 ---
 # <a name="debugging-a-t4-text-template"></a>调试 T4 文本模板
 您可以在文本模板中设置断点。 若要调试的设计时文本模板，将文本模板文件，保存，然后选择**调试 T4 模板**在解决方案资源管理器中的文件的快捷菜单上。 若要调试的运行时文本模板，只需调试它所属的应用程序。

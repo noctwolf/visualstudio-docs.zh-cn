@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7c14b7702acff281ab32483930559b5fe521044
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c066f3673f6f51b01ebf00e9f594551fee03641
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942367"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54867359"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>演练：设计 Outlook 窗体区域
   自定义窗体区域扩展标准或自定义 Microsoft Office Outlook 窗体。 在本演练中，你将设计作为新页出现在联系人项目的检查器窗口中的自定义窗体区域。 通过将地址信息发送到 Windows Live 本地搜索网站，此窗体区域将显示为联系人列出的每个地址的映射。 有关窗体区域的信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。  
@@ -59,7 +59,7 @@ ms.locfileid: "53942367"
   
 3.  将项目保存到任一目录。  
   
-     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 ## <a name="add-a-form-region-to-the-outlook-vsto-add-in-project"></a>向 Outlook VSTO 外接程序项目添加窗体区域  
  Outlook VSTO 外接程序解决方案可包含一个或多个 Outlook 窗体区域项。 使用将窗体区域项添加到你的项目**新建 Outlook 窗体区域**向导。  
@@ -143,7 +143,7 @@ ms.locfileid: "53942367"
   
 ### <a name="to-test-the-map-it-form-region"></a>测试 Map It 窗体区域  
   
-1.  按**F5**以运行该项目。  
+1.  按 F5 运行项目。  
   
      Outlook 将打开。  
   
@@ -155,7 +155,7 @@ ms.locfileid: "53942367"
     |------------------|-------------|  
     |**业务**|**4567 Main St.Buffalo 纽约州**|  
     |**主文件夹**|**1234 北部 St.Buffalo 纽约州**|  
-    |**其他**|**3456 Main St.华盛顿州西雅图**|  
+    |**其他**|**3456 Main St. Seattle, WA**|  
   
 4.  保存并关闭联系人项目。  
   

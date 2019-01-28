@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0172f9412bff791ae2446d6cffcd9d302c7c3ef8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dfe0405406405dc1e09e18c49f7de7b4aecd7fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923622"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013322"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 引用（Visual Studio 调试）
 参考部分包含的 API，一个指南，其中显示了语法和用法的所有 API 元素，概念性概述和具有多种类型的代码示例。 按以下类别按字母顺序排列的所有引用。  
@@ -27,7 +27,7 @@ ms.locfileid: "53923622"
 |S_OK|成功。|0x00000000|  
 |E_UNEXPECTED|意外的失败。|0x8000FFFF|  
 |E_NOTIMPL|未实现。|0x80004001|  
-|E_OUTOFMEMORY|内存不足，无法完成操作。|已用完 0x8007000E|  
+|E_OUTOFMEMORY|内存不足，无法完成操作。|0x8007000E|  
 |E_INVALIDARG|一个或多个参数均无效。|0x80070057|  
 |E_NOINTERFACE|支持任何此类接口。|0x80004002|  
 |E_POINTER|无效的指针。|0x80004003|  

@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - importing form regions
 - form regions [Office development in Visual Studio], importing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfb7365d6e8d336d2cfae24286b6df087430e635
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aeac6711691de4113ace572790df0bf6ac674dae
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956174"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870225"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>演练：导入在 Outlook 中设计的窗体区域
   此演练演示如何在 Microsoft Office Outlook 中设计窗体区域，然后通过使用“新建窗体区域”  向导将窗体区域导入 Outlook VSTO 外接程序项目。 通过在 Outlook 中设计窗体区域，可以将本机 Outlook 控件添加到绑定到 Outlook 数据的窗体区域。 导入窗体区域后，可以处理每个控件的事件。  
@@ -55,7 +55,7 @@ ms.locfileid: "53956174"
   
 1.  启动 Microsoft Office Outlook。  
   
-2.  在 Outlook 中，在“开发人员”  选项卡中，单击“设计窗体” 。 有关更多信息，请参见[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
+2.  在 Outlook 中，在“开发人员”  选项卡中，单击“设计窗体” 。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
 3.  在“设计窗体”  框中，单击“任务” ，然后单击“打开” 。  
   
@@ -124,7 +124,7 @@ ms.locfileid: "53956174"
   
 3.  将项目保存到默认项目目录中。  
   
-     有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 ## <a name="import-the-form-region"></a>导入窗体区域  
  可使用“新建 Outlook 窗体区域”  向导将 Outlook 中设计的窗体区域导入 Outlook VSTO 外接程序项目。  
@@ -208,7 +208,7 @@ ms.locfileid: "53956174"
   
 ### <a name="to-test-the-form-region"></a>测试窗体区域  
   
-1.  按**F5**以运行该项目。  
+1.  按 F5 运行项目。  
   
      Outlook 启动。  
   

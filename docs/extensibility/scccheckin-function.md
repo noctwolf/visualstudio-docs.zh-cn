@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d86530497620dfab79490e6128cff29cb2fb2d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a211c7e3c338c962c75d31871515c4398dd04406
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822857"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998464"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函数
 此函数之前签出文件签入源代码管理系统，存储所做的更改和创建的新版本。 此函数调用计数、 签入的文件的名称的数组。  
@@ -61,14 +61,14 @@ SCCRTN SccCheckin (
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功签入文件。|  
 |SCC_E_FILENOTCONTROLLED|所选的文件不是源代码管理下。|  
 |SCC_E_ACCESSFAILURE|访问源代码管理系统，很可能是由于网络或争用问题时出现问题时。 建议重试。|  
 |SCC_E_NONSPECIFICERROR|非特定故障。 未签入文件。|  
 |SCC_E_NOTCHECKEDOUT|用户不具有签出该文件，因此不能将其签入。|  
-|SCC_E_CHECKINCONFLICT|无法执行签入，因为：<br /><br /> -其他用户签入提前和`bAutoReconcile`是 false。<br /><br /> - 或 -<br /><br /> -自动合并不能执行的操作 （例如，文件是二进制文件）。|  
+|SCC_E_CHECKINCONFLICT|无法执行签入，因为：<br /><br /> -其他用户签入提前和`bAutoReconcile`是 false。<br /><br /> 或<br /><br /> -自动合并不能执行的操作 （例如，文件是二进制文件）。|  
 |SCC_E_VERIFYMERGE|文件已自动合并，但未签等待用户验证。|  
 |SCC_E_FIXMERGE|文件已自动合并，但未签由于必须手动解决合并冲突。|  
 |SCC_E_NOTAUTHORIZED|不允许用户执行此操作。|  

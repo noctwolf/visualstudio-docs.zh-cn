@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 5b181f5b-6c7a-4e46-a783-360e1da427a0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 000b1780b0124d579ed0b9481c7d18966663ca51
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e5781676bdcfe4af131926e2d3ed1a49414da4b1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987309"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965297"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>托管代码的“扩展的更正规则”规则集
 Microsoft 扩展的正确性规则规则集可最大化代码分析来报告逻辑和框架使用错误。 着重强调了在特定方案，例如 COM 互操作性和移动应用程序上。 应考虑包含此规则集如果其中一种情形适用于你的项目，或在项目中找到其他问题。
@@ -143,7 +143,7 @@ Microsoft 扩展的正确性规则规则集可最大化代码分析来报告逻�
 |[CA2144](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|透明代码不应从字节数组加载程序集|
 |[CA2145](../code-quality/ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md)|不应使用 SuppressUnmanagedCodeSecurityAttribute 修饰透明方法|
 |[CA2204](../code-quality/ca2204-literals-should-be-spelled-correctly.md)|文字应正确拼写|
-|[CA2211 非常量](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|非常量字段不应是可见的|
+|[CA2211](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|非常量字段不应是可见的|
 |[CA2217](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)|不要使用 FlagsAttribute 标记枚举|
 |[CA2218](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)|重写 Equals 时重写 GetHashCode|
 |[CA2219](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)|在异常子句中不引发异常|

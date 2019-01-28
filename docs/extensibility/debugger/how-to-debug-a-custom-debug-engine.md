@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26e227af6eb15874e6f79dd890a20a76d62d1a96
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8ecd36719170fdc027667e15c6b3913fba86cd9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962384"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958974"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>如何：调试自定义调试引擎
 项目类型启动的调试引擎 (DE) 从<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法。 这意味着，受控制的实例的启动 DE[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]控制项目类型。 但是，该实例的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]不能调试 DE。 接下来是使你能够调试自定义设备的步骤。  

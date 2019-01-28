@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3f65b6d4daeb928cab1c59aaa5f1f2ded3225e6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea0e10413581e7047b92b640f105023b0a1a8ff3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898211"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979577"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>旧版语言服务中的自动窗口支持
 **自动**窗口将显示如变量和参数 （无论是由于一个断点或异常） 暂停正在调试的程序时作用域中的表达式。 表达式可以包含变量，本地或全局和局部范围内已更改的参数。 **自动**窗口还可以包括类、 结构或某些其他类型的实例化。 表达式计算器可以计算的任何内容可能会显示在**自动**窗口。  

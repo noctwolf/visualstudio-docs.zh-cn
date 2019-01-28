@@ -17,16 +17,16 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a883b82da76fff2fc4b298de7263320c069a501b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 473bbcfa7d9c83b8011fc849a246c30b86cce6a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948389"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54980210"
 ---
 # <a name="dependency-diagrams-reference"></a>依赖项关系图： 参考
 
@@ -57,7 +57,7 @@ ms.locfileid: "53948389"
 
 下表描述了可以使用依赖项关系图上的元素。
 
-|**形状**|**元素**|**说明**|
+|**Shape**|**元素**|**说明**|
 |-|-|-|
 |1|**层**|系统中的物理项目的逻辑组。 这些项目可以是命名空间、项目、类、方法等。<br /><br /> 若要查看链接到某个层的项目，打开层的快捷菜单，然后选择**查看链接**以打开**层资源管理器**。<br /><br /> 有关详细信息，请参阅[层资源管理器](#Explorer)。<br /><br /> -   **禁止 Namespace 依赖项**-指定与此层相关联的项目不能依赖于指定的命名空间。<br />-   **禁止的命名空间**-指定与此层相关联的项目不得属于指定的命名空间。<br />-   **所需的命名空间**-指定与此层相关联的项目必须属于某个指定的命名空间。|
 |2|**依赖关系**|指示某个层可以使用另一层的功能，但反之则不然。<br /><br /> -   **方向**-指定依赖项的方向。|

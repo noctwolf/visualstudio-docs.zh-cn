@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 86b86442-4293-4cad-9fe2-876eef65f426
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d81594265f19eed0530aaeb06aebc777630bfbf7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d75976ba9c677bb9b8f6c32623f81834471e10a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986968"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021515"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>如何：使用注册表设置管理专用库
 如果你是管理员或独立 Shell 扩展开发人员，您可以控制对控件、 模板和工具在 Visual Studio 库、 示例库或专用库的访问。 若要使库可用或不可用，请创建 *.pkgdef*文件，用于描述已修改的注册表项和其值。  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43ba49107c1f3b2ab72db024b8dbfd01d8eab857
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc2cfc74b192be01b9b5ce258d2686dda1b8ccc7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832549"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929999"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>创建基本项目系统，第 1 部分
 在 Visual Studio 中，项目是开发人员用于组织源代码文件和其他资产的容器。 项目显示为解决方案中的子级**解决方案资源管理器**。 项目可组织、 生成、 调试和部署的源代码和创建对 Web 服务、 数据库和其他资源的引用。  
@@ -68,7 +68,7 @@ ms.locfileid: "53832549"
   
 ### <a name="to-create-a-basic-project-template"></a>若要创建基本项目模板  
   
-1. 添加到项目中，一个在其他三个文件夹：*Templates\Projects\SimpleProject*。 (在**解决方案资源管理器**，右键单击**SimpleProject**项目节点，指向**添加**，然后单击**新文件夹**。 将文件夹命名为*模板*。 在中*模板*文件夹中，添加名为的文件夹*项目*。 在*项目*文件夹中，添加名为的文件夹*SimpleProject*。)  
+1. 添加到项目中，一个在其他三个文件夹：*Templates\Projects\SimpleProject*. (在**解决方案资源管理器**，右键单击**SimpleProject**项目节点，指向**添加**，然后单击**新文件夹**。 将文件夹命名为*模板*。 在中*模板*文件夹中，添加名为的文件夹*项目*。 在*项目*文件夹中，添加名为的文件夹*SimpleProject*。)  
   
 2. 在中*Templates\Projects\SimpleProject*文件夹中，添加要用作名为的图标的位图图像文件*SimpleProject.ico*。 当您单击**添加**，打开图标编辑器。  
   
@@ -261,7 +261,7 @@ Templates
   
     4.  添加对下列程序集的引用：  
   
-        -   `Microsoft.VisualStudio.Designer.Interfaces` (在 *\<VSSDK 安装 > \VisualStudioIntegration\Common\Assemblies\v2.0*)  
+        -   `Microsoft.VisualStudio.Designer.Interfaces` (in *\<VSSDK install>\VisualStudioIntegration\Common\Assemblies\v2.0*)  
   
         -   `WindowsBase`  
   
@@ -456,7 +456,7 @@ Templates
   
 2. 在中**属性**windows，减至 16 × 16 像素的位图。 请以不同的位图。  
   
-    ![简单项目命令](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3. 在中**属性**窗口中，更改**生成操作**的位图**嵌入的资源**。  
   

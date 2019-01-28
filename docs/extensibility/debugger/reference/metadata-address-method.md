@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_METHOD |Microsoft Docs
+title: METADATA_ADDRESS_METHOD | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac55d884655788dc84615ee8fa6e764ca58c45d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 69aa56b2db1b8b4de27209d4bb57195ee8872579
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901199"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923610"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 此结构表示类的方法的地址。  
@@ -49,7 +49,7 @@ public struct METADATA_ADDRESS_METHOD {
  dwOffset  
  从类开始到此方法 （可以代表偏移量到 vtable） 的偏移量。  
   
- dw 版本  
+ dwVersion  
  （此值是唯一的符号提供程序） 的方法的版本。  
   
 ## <a name="remarks"></a>备注  

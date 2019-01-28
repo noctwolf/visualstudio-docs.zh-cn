@@ -10,16 +10,16 @@ helpviewer_keywords:
 - graph documents, analyzing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f23b00a1ee4ee437214453d221824313883f7435
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04e4d51fba62c56ce39fd34d8179f73baeeea77a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938285"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025912"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>使用代码图分析器查找潜在问题
 
@@ -39,7 +39,7 @@ ms.locfileid: "53938285"
 |-|-|
 |**循环引用分析器**|每个其他节点上也具有循环依赖项。 **注意：** 中的循环依赖关系**泛型**组时不会显示在地图上相应的组。|
 |**查找中心分析器**|位于前 25% 个高度连接的节点当中<br /><br /> **若要隐藏代码图上的所有其他节点**<br /><br /> -打开代码图的快捷菜单中，选择**高级**，**选择**，**隐藏未选内容**。<br />     代码图会隐藏未选定的节点，并且分析器会将新节点标识为中心。|
-|**未引用的节点分析器**|不具有来自任何其他节点的引用。 注意：在假设不使用代码之前，验证每种情况。 无法在代码中以静态方式找到某些依赖项，如 XAML 依赖项和运行时依赖项。|
+|**未引用的节点分析器**|不具有来自任何其他节点的引用。 注意：在假设不使用代码之前，验证每种情况。 不能在代码中以静态方式找到某些依赖项，如 XAML 依赖项和运行时依赖项。|
 
 在你应用代码图分析器之后，它们将继续运行。 如果更改代码图，应用的任何分析器将自动重新处理更新的代码图。 若要停止运行分析器，请在代码图工具栏上，选择**布局** > **分析器**。 关闭所选的分析器。
 

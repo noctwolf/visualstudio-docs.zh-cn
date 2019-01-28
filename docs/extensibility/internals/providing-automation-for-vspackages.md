@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fad1d3145a50238dbc2b00cc450a5065bd5e0a04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50d707c42196d727a35ca7c9d9cef250c60f7d5b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926836"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018067"
 ---
 # <a name="providing-automation-for-vspackages"></a>提供适用于 VSPackage 的自动化
 有两种主要方法来提供你的 Vspackage 的自动化： 通过实现特定于 VSPackage 的对象以及通过实现标准自动化对象。 通常情况下，这些一起用于扩展自动化模型的环境。  
@@ -33,7 +33,7 @@ ms.locfileid: "53926836"
  环境的事件体系结构提供了可追加您自己的特定于 VSPackage 的对象的另一个位置。 例如，通过创建您自己的唯一事件的对象，可以扩展项目的环境的事件模型。 您可能想要提供自己的新项添加到项目类型时的事件。 有关详细信息，请参阅[公开事件](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)。  
   
 #### <a name="window-objects"></a>窗口对象  
- Windows 可以传递回特定于 VSPackage 的自动化对象返回给调用时环境。 实现派生自的对象<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>，<xref:EnvDTE.IExtensibleObject>或`IDispatch`，将返回传递属性，扩展在其中确定位置的窗口对象。 例如，这种方法可用于提供在窗口框架中放置的控件的自动化。 此对象以及它可能会延长的任何其他对象的语义是由您负责进行设计。 有关更多信息，请参见[如何：提供适用于 Windows 的自动化](../../extensibility/internals/how-to-provide-automation-for-windows.md)。  
+ Windows 可以传递回特定于 VSPackage 的自动化对象返回给调用时环境。 实现派生自的对象<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>，<xref:EnvDTE.IExtensibleObject>或`IDispatch`，将返回传递属性，扩展在其中确定位置的窗口对象。 例如，这种方法可用于提供在窗口框架中放置的控件的自动化。 此对象以及它可能会延长的任何其他对象的语义是由您负责进行设计。 有关详细信息，请参阅[如何：提供适用于 Windows 的自动化](../../extensibility/internals/how-to-provide-automation-for-windows.md)。  
   
 #### <a name="options-pages-on-the-tools-menu"></a>在工具菜单上的选项页  
  可以创建页以扩展工具选项自动化模型通过实现页面并将信息添加到注册表，以创建你自己的选项。 然后，可以像任何其他选项页的环境对象模型调用您的页面。 如果要添加到 Vspackage 通过环境的功能的设计需要选项页，则应添加的自动化支持。 有关详细信息，请参阅[选项页的自动化支持](../../extensibility/internals/automation-support-for-options-pages.md)。  

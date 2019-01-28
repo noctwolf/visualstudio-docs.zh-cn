@@ -8,17 +8,17 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], printing Visio documents
 - documents [Office development in Visual Studio], printing Visio documents
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3f5e8ff7f7577c779349b49fc291f91d02c90094
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2abcf439abfe240bace83ca7ecb88ef5b9940944
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845520"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54872477"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>如何：以编程方式打印 Visio 文档
   你可以打印完整的 Microsoft Office Visio 文档或仅打印某一特定页。  
@@ -29,7 +29,7 @@ ms.locfileid: "53845520"
   
 ### <a name="to-print-a-complete-document"></a>打印完整的文档  
   
--   调用要打印的 `Microsoft.Office.Interop.Visio.Document` 对象的 `Microsoft.Office.Interop.Visio.Document.Print` 方法。  
+-   调用要打印的 `Microsoft.Office.Interop.Visio.Document.Print` 对象的 `Microsoft.Office.Interop.Visio.Document` 方法。  
   
      下面的代码示例将打印活动文档。 若要使用此示例，请从项目的 `ThisAddIn` 类中运行代码。  
   
@@ -40,7 +40,7 @@ ms.locfileid: "53845520"
   
 ### <a name="to-print-a-page-of-a-document"></a>打印文档的某一页  
   
--   调用要打印的 `Microsoft.Office.Interop.Visio.Pages` 对象的 `Microsoft.Office.Interop.Visio.Pages.Print` 方法。  
+-   调用要打印的 `Microsoft.Office.Interop.Visio.Pages.Print` 对象的 `Microsoft.Office.Interop.Visio.Pages` 方法。  
   
      下面的代码示例打印活动文档的第一页。 若要使用此示例，请从项目的 `ThisAddIn` 类中运行代码。  
   

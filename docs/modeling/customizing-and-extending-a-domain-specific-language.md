@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 165798341f08afd3b55e8f6b8092457f022a0634
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 967a5ddd369700e66aec4d910ece9115f5809c98
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960003"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035258"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自定义和扩展域特定语言
 Visual Studio 建模和可视化效果 SDK (VMSDK) 提供了可以在其中定义建模工具的多个级别：
@@ -55,14 +55,14 @@ Visual Studio 建模和可视化效果 SDK (VMSDK) 提供了可以在其中定�
 |删除、 重新设置父级，或删除元素时重新链接相关的元素。|设置**传播删除**关系角色的值。 对于更复杂的影响，重写`ShouldVisitRelationship`并`ShouldVisitRolePlayer`中的方法`MyDslDeleteClosure`类，如**DomainModel.cs**<br /><br /> 请参阅[自定义删除行为](../modeling/customizing-deletion-behavior.md)|
 |保留形状布局和外观上复制和拖放。|将形状和连接线添加到复制`ElementGroupPrototype`。 重写的最简便方法是 `ElementOperations.CreateElementGroupPrototype()`<br /><br /> 请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)。|
 |在所选位置（例如当前光标位置）粘贴形状。|重写`ClipboardCommandSet.ProcessOnCopy()`若要使用特定于位置的新版`ElementOperations.Merge().`请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)。|
-|在粘贴上创建其他链接|重写 ClipboardCommandSet.ProcessOnPasteCommand()|
-|启用从拖放此关系图中，其他 Dsl 和 Windows 元素|请参阅[操作说明：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|在粘贴上创建其他链接|Override ClipboardCommandSet.ProcessOnPasteCommand()|
+|启用从拖放此关系图中，其他 Dsl 和 Windows 元素|请参阅[如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |允许的形状或工具拖放到子形状，例如端口，如同已拖动到父级上。|元素合并指令在类上定义目标对象，将转发到父级的拖放的对象。 请参阅[自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)。|
 |允许的形状或工具拖动到形状上，并让其他链接或创建的对象。 例如，若要允许拖放到它是要链接的项的注释。|在目标域类上定义元素合并指令，定义要生成的链接。 在复杂的情况下，可以添加自定义代码。 请参阅[自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)。|
 |使用一种工具创建一的组元素。 例如，具有一组固定的端口组件。|重写 ToolboxHelper.cs 中的工具箱初始化方法。 创建包含元素和其关系链接元素组原型 (EGP)。 请参阅[自定义工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)。<br /><br /> 中 EGP，包括主体和端口形状，或者定义 BoundsRules EGP 实例化时定位端口形状。 请参阅[BoundsRules 约束形状位置和大小](../modeling/boundsrules-constrain-shape-location-and-size.md)。|
 |使用一个连接工具将实例化几种类型的关系。|将链接连接指令 (LCD) 添加到该工具由调用连接生成器。 LCDs 确定两个元素的类型中的关系类型。 若要使这取决于元素的状态，可以添加自定义代码。 请参阅[自定义工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)。|
 |粘滞工具-用户可以双击任何工具连续创建多个形状或连接符。|在 DSL 资源管理器中选择`Editor`节点。 在属性窗口中设置**使用粘滞工具箱项**。|
-|定义菜单命令|请参阅[操作说明：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|定义菜单命令|请参阅[如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
 |约束具有验证规则的模型|请参阅[域特定语言中的验证](../modeling/validation-in-a-domain-specific-language.md)|
 |从 DSL 中生成代码、 配置文件或文档。|[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)|
 |自定义模型的方式保存到文件。|请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)|

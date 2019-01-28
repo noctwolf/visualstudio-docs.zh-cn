@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9682e774533d9aa350d52b777ec783ea2abe9463
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca1cb693977a5197bdf6adfe399ed269e0211a00
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896079"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071067"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>选择域特定语言解决方案模板
 若要创建域特定语言解决方案，请选择一个特定于域的语言设计器向导中提供的解决方案模板。 通过选择最近似你想要创建的语言的模板，可以尽量减少您必须对起始解决方案进行的修改。

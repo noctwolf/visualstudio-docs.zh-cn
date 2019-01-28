@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07f896a2e9c5f7f039e349b17d4016fb27a60493
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8d5074dab25b539a7243b800abf8b6fa505bd8f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937564"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949332"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 将当前指令指针设置为给定的代码上下文。  
@@ -48,7 +48,7 @@ int SetNextStatement ( 
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了其他可能的值。  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|下一条语句不能为帧堆栈上更深入的堆栈帧中。|  
 |E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|下一条语句不是堆栈中任何帧与相关联。|  

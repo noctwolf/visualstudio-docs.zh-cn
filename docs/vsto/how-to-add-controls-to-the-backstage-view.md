@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Microsoft Office Menu
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6500118f775f9dfab75b615f28fab9e166a0104a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5334a931709f4ddfb0206c86f84f49f535a540fa
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924652"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54871684"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>如何：将控件添加到 Backstage 视图
   可以使用功能区设计器将控件添加到单击时打开的菜单**文件**选项卡。当运行该应用程序，您将添加到的控件**文件**选项卡显示名为的组**外接程序**。  

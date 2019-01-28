@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b525602e5f328fefde5e552c9c99a845f369a81a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7a4d4224d96cbd886fa0447e1160484596e2641
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869872"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984335"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>使用 Visual Studio 互操作程序集
 Visual Studio 互操作程序集允许访问提供 Visual Studio 可扩展性的 COM 接口的托管应用程序。 没有直接的 COM 接口和其互操作的版本之间的一些差异。 例如，Hresult 通常表示为一个整数值和需要为异常，相同的方式进行处理和参数 (尤其是 out 参数） 的处理方式不同。  

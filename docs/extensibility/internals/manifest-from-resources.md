@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1affa200527e770dc87c51c4bb6f7b8a088fcc0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 286ec5b71691777af601c00e26c2db5772bd5f1a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959362"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993970"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 从资源工具清单是采用一系列图像资源 （.png 或.xaml 文件），并生成.imagemanifest 文件，以允许与 Visual Studio 映像服务一起使用这些映像的控制台应用程序。 此外，此工具可用于将图像添加到现有.imagemanifest。 此工具可用于添加到 Visual Studio 扩展的映像支持高 DPI 和主题。 生成的.imagemanifest 文件应包含在和部署 Visual Studio 扩展 (.vsix) 的一部分。  
@@ -21,7 +21,7 @@ ms.locfileid: "53959362"
 ## <a name="how-to-use-the-tool"></a>如何使用该工具  
  **语法**  
   
- ManifestFromResources /resources:\<Dir1 >;\<Img1 > /assembly:\<程序集名称 >\<可选参数 >  
+ ManifestFromResources /resources:\<Dir1>;\<Img1> /assembly:\<AssemblyName> \<Optional Args>  
   
  **参数**  
   
@@ -43,9 +43,9 @@ ms.locfileid: "53959362"
   
  **示例**  
   
--   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
+-   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
 -   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   

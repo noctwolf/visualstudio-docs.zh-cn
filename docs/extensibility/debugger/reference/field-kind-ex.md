@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND_EX |Microsoft Docs
+title: FIELD_KIND_EX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6954aaf92c5d77ad4d8f51e6b342bfc021b37a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ab27dfe2c1f391711b5eeabe73b38a41df38cc46
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870870"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954261"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 枚举其他类型的字段的[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象可包含。 此枚举扩展[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)枚举。  

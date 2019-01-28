@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 7e7d4ae54563ea862ee0f7637b5ac6a54ac30eab
 ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/02/2019
 ms.locfileid: "53838302"
@@ -19,7 +19,7 @@ ms.locfileid: "53838302"
 
 在受 Windows 防火墙保护的网络上，必须将防火墙配置为允许远程调试。 Visual Studio 和远程调试工具会尝试在安装或启动期间打开正确的防火墙端口，但可能还需要手动打开端口或允许应用。 
 
-本主题介绍如何配置 Windows 防火墙以启用 Windows 10，8/8.1 和 7; 上的远程调试和 Windows Server 2012 R2、 2012年和 2008 R2 计算机。 Visual Studio 和远程计算机无需运行相同的操作系统。 例如，Visual Studio 计算机可以运行 Windows 10，而远程计算机可以运行 Windows Server 2012 R2。      
+本主题介绍如何在 Windows 10、8/8.1 和 7 以及 Windows Server 2012 R2、2012 和 2008 R2 计算机上配置 Windows 防火墙，以进行远程调试。 Visual Studio 和远程计算机无需运行相同的操作系统。 例如，运行 Visual Studio 的计算机可以使用 Windows 10 ，而远程计算机可以运行 Windows Server 2012 R2。      
   
 >[!NOTE]
 >对于不同的操作系统和旧版 Windows，配置 Windows 防火墙的说明略有不同。 Windows 8/8.1、Windows 10 和 Windows Server 2012 设置使用“*应用*”一词，而 Windows 7 和 Windows Server 2008 使用“*程序*”一词。  

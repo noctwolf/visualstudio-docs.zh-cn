@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], deleting entity instances
 - Business Data Connectivity service [SharePoint development in Visual Studio], deleting data
 - Business Data Connectivity service [SharePoint development in Visual Studio], removing data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b1ddbd45771637ffcdd2ad1b6d553b8c497982b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cad4de5ed1b31d02d9136b5ec2b46be71f54fea4
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924171"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54870878"
 ---
 # <a name="how-to-add-a-deleter-method"></a>如何：添加 Deleter 方法
   可以启用最终用户可以向模型添加 Deleter 方法从 SharePoint 站点上的外部列表中删除数据记录。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  

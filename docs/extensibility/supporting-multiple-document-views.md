@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e55eed8ffd2651ced96f192972127e710a565eaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba85e4a6974330cf28ce6ef3f1c30c6688765802
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830724"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956332"
 ---
 # <a name="supporting-multiple-document-views"></a>支持多个文档视图
 通过为您的编辑器创建单独的文档数据和文档视图对象，可以提供多个文档的视图。 一些额外的文档视图会非常有用的情况是：  
@@ -39,4 +39,4 @@ ms.locfileid: "53830724"
   
  默认情况下，每个视图 （文档视图对象） 包含在其自己的窗口框架 (<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>)。 如先前所述，但是，文档数据可以显示多个视图中。 若要启用此功能，Visual Studio，请检查 RDT 以确定有问题的文档是否已在编辑器中打开。 当调用 IDE<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>若要创建编辑器中中, 非 NULL 值返回`punkDocDataExisting`参数指示文档已在另一个编辑器中打开。 有关详细了解如何 RDT 函数，请参阅[运行文档表](../extensibility/internals/running-document-table.md)。  
   
- 在你<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>实现中，检查文档数据对象中返回`punkDocDataExisting`以确定是否适合你的编辑器的文档数据。 （例如，仅 HTML 数据应显示 HTML 编辑器。）如果适用，编辑器工厂应为数据提供第二个视图。 如果`punkDocDataExisting`参数不是`NULL`，很可能也文档数据对象是在另一个编辑器中打开，或者可在更有可能，文档数据已在具有相同编辑器中的不同视图中打开。 如果编辑器工厂不支持的其他编辑器中打开的文档数据时，Visual Studio 无法打开编辑器工厂。 有关更多信息，请参见[如何：将视图文档数据附加](../extensibility/how-to-attach-views-to-document-data.md)。
+ 在你<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>实现中，检查文档数据对象中返回`punkDocDataExisting`以确定是否适合你的编辑器的文档数据。 （例如，仅 HTML 数据应显示 HTML 编辑器。）如果适用，编辑器工厂应为数据提供第二个视图。 如果`punkDocDataExisting`参数不是`NULL`，很可能也文档数据对象是在另一个编辑器中打开，或者可在更有可能，文档数据已在具有相同编辑器中的不同视图中打开。 如果编辑器工厂不支持的其他编辑器中打开的文档数据时，Visual Studio 无法打开编辑器工厂。 有关详细信息，请参阅[如何：将视图文档数据附加](../extensibility/how-to-attach-views-to-document-data.md)。
