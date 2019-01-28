@@ -6,13 +6,13 @@ ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
-manager: douge
-ms.openlocfilehash: 79a3aa8fd2d86b7c64d719dc745138b970b92d3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 93117ddabe3184d5e1900b68f058a7a5f3dba711
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886632"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030504"
 ---
 # <a name="debugging-in-visual-studio"></a>在 Visual Studio 中进行调试
 
@@ -48,7 +48,7 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>编写具有更少 bug 的 C# 代码！</h3>
+                        <h3>调试技术和工具</h3>
                     </div>
                 </div>
             </div>
