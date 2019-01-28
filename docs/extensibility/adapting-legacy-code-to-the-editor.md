@@ -61,7 +61,7 @@ internal IVsEditorAdaptersFactoryService editorFactory;
 ## <a name="creating-adapters-in-unmanaged-code"></a>创建非托管代码中的适配器  
  注册适配器的所有类是在本地共同创建的可以通过使用实例化`VsLocalCreateInstance()`函数。  
   
- 所有适配器都创建的使用中定义的 Guid *vsshlids.h*中的文件*\..\VisualStudioIntegration\Common\Inc\\*的 Visual Studio SDK 的文件夹安装。 若要创建的 VsTextBufferAdapter 实例，请使用下面的代码。  
+ 所有适配器都创建的使用中定义的 Guid *vsshlids.h* 中的文件 *\..\VisualStudioIntegration\Common\Inc\\* 的 Visual Studio SDK 的文件夹安装。 若要创建的 VsTextBufferAdapter 实例，请使用下面的代码。  
   
 ```  
 IVsTextBuffer *pBuf = NULL;  
@@ -94,7 +94,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 ### <a name="to-get-an-ivxtextbuffer"></a>若要获取 IVxTextBuffer  
   
-1.  定义 IVx\*接口位于*VSEditor.h*文件中*\..\VisualStudioIntegration\Common\Inc\\* Visual Studio 的文件夹SDK 安装。  
+1.  定义 IVx\*接口位于 *VSEditor.h* 文件中 *\..\VisualStudioIntegration\Common\Inc\\* Visual Studio 的文件夹SDK 安装。  
   
 2.  通过使用下面的代码实例化的文本缓冲区`IVsUserData->GetData()`方法。 在下面的代码中，`pData`是一个指向`IVsUserData`对象。  
   
@@ -123,7 +123,7 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
   
 ### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>若要使用 Visual Studio 编辑器组件从非 MEF 组件  
   
-1.  添加对的引用*Microsoft.VisualStudio.ComponentModelHost.dll*中的程序集*\..\Common7\IDE\\*的 Visual Studio 安装文件夹。 请确保`CopyLocal`设置为`false`。  
+1.  添加对的引用 *Microsoft.VisualStudio.ComponentModelHost.dll* 中的程序集 *\..\Common7\IDE\\* 的 Visual Studio 安装文件夹。 请确保`CopyLocal`设置为`false`。  
   
 2.  添加一个私有`IComponentModel`到想要使用 Visual Studio 编辑器服务，按如下所示的类的成员。  
   
