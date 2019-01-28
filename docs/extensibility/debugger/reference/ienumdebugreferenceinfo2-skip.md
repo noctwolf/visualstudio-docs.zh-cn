@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 12f07ed8-92bd-47b5-9113-f73fec5bdde6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669105167ceeb1f02901b47929274dee567a251a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c87e544cb3cbc1bb1b8b68edd05a85ef885d3ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888814"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991887"
 ---
 # <a name="ienumdebugreferenceinfo2skip"></a>IEnumDebugReferenceInfo2::Skip
 跳过指定数量的元素。  
@@ -41,7 +41,7 @@ int Skip(
  [in]要跳过的元素数。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果`celt`大于剩余的元素数; 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果`celt`大于剩余的元素数; 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
  如果`celt`指定的值数比大剩余元素的枚举设置为结束和`S_FALSE`返回。  

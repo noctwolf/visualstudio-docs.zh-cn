@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b84c554427d443d54d117b72cec5a423e10e7887
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8edfce1eb86169581acfa2ace857a766b899ee6b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872916"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992513"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
 Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控件项模板允许你创建的控件，将自动添加到**工具箱**时安装该扩展。 本主题演示如何使用模板创建简单的计数器控件，可以将它们分发给其他用户。  
@@ -51,7 +51,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
   
 5.  在中**属性**窗口中，设置以下值： 在设计图面上的控件。  
   
-    |控件|属性|值|  
+    |控件|属性|“值”|  
     |-------------|--------------|-----------|  
     |`Label1`|**文本**|""|  
     |`Button1`|**名称**|btnReset|  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d99916c31e35f7494a402ff4c5d1a7b182a0c52d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abc4824a3e90250401d720aefedda80189419c85
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907957"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010046"
 ---
 # <a name="language-service-and-editor-extension-points"></a>语言服务和编辑器扩展点
 该编辑器还提供可以扩展为 Managed Extensibility Framework (MEF) 组件部件，其中包括大多数语言服务功能的扩展点。 主要扩展点类别如下：  
@@ -91,7 +91,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
   
 - ENC  
   
-- 中文本  
+- FindResults  
   
 - F#  
   
@@ -176,7 +176,7 @@ internal static ClassificationTypeDefinition CSharpTestDefinition;
   
 - "其他错误"  
   
-- "警告"  
+- "warning"  
   
   若要发现可用分类类型的列表，请导入<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>，可以维护编辑器分类类型的集合。 下面的代码将此服务作为属性导入。  
   

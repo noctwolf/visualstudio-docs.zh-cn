@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 992fd9a6f45d607538f1091eb7a652984595cc34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3986a90754f073fa28ecce11ff0053ecad512289
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954495"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54957918"
 ---
 # <a name="model-for-source-control-packages"></a>源代码管理包的模型
 以下模型表示源控件实现的示例。 在模型中，您可以看到必须实现的接口和必须调用环境服务。 类似于所有服务，实际调用通过该服务获取特定接口的方法。 类的名称进行标识，以便更轻松地查看如何执行源代码管理。  

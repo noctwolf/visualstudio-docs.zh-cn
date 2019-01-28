@@ -8,19 +8,19 @@ f1_keywords:
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aaac9c6148aee2b39d0231f7b893bcfaf89e301
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 538a9d7b0a895b5cc50c04c107dad55d1c662f3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880671"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977501"
 ---
 # <a name="workflow-designer-shell-features"></a>工作流设计器 Shell 功能
 
-工作流设计器由三个主要 UI 区域组成： 设计器图面、 其上方的痕迹导航栏和下面的 shell。 痕迹栏位于屏幕的顶部，用于显示当前根活动的祖先列表。 有关更多信息，请参见[如何：使用痕迹导航](../workflow-designer/how-to-use-breadcrumb-navigation.md)。 设计器图面位于屏幕的中央，用于撰写工作流。 Shell 位于屏幕的底部，包含用于管理当前视图的若干按钮。
+工作流设计器由三个主要 UI 区域组成： 设计器图面、 其上方的痕迹导航栏和下面的 shell。 痕迹栏位于屏幕的顶部，用于显示当前根活动的祖先列表。 有关详细信息，请参阅[如何：使用痕迹导航](../workflow-designer/how-to-use-breadcrumb-navigation.md)。 设计器图面位于屏幕的中央，用于撰写工作流。 Shell 位于屏幕的底部，包含用于管理当前视图的若干按钮。
 
 ## <a name="shell-features"></a>Shell 功能
  Shell 栏的右侧有几个按钮，可用于缩放工作流，使工作流的内容适合屏幕的大小，还可以显示或隐藏摘要图。 使用键盘快捷键 Ctrl++ 和 Ctrl+- 也可以放大和缩小工作流。

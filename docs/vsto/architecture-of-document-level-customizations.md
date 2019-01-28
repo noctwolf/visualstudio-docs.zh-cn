@@ -17,15 +17,15 @@ helpviewer_keywords:
 - architecture [Office development in Visual Studio], document-level customizations
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26f65905cc4a8175ca39532db9716bdba1f03b10
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e80fbe0244c897f626c6fba248447881a92594a
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917372"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54868440"
 ---
 # <a name="architecture-of-document-level-customizations"></a>文档级自定义项的体系结构
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包括用于为 Microsoft Office Word 和 Microsoft Office Excel 创建文档级自定义项的项目。 本主题介绍文档级自定义项的以下方面：  
@@ -79,7 +79,7 @@ ms.locfileid: "53917372"
 |开发人员使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]编写 Word 和 Excel 可以访问的代码。<br /><br /> 尽管看上去可能像是开发人员正在创建一个运行 Word 或 Excel 的可执行文件，但这一过程的实际工作方式却不是这样的。 文档与一个程序集关联，并包含指向该程序集的指针。 打开文档时，Word 或 Excel 会定位该程序集并针对所有已处理的事件运行代码。|使用该解决方案的人员只需像打开任何其他 Microsoft Office 文件一样打开文档或工作簿（或根据模板创建新文档）即可。<br /><br /> 程序集在文档或工作簿中提供自定义项，例如使用当前数据自动填充它，或显示对话框以请求输入信息。|  
   
 ### <a name="supported-document-formats-for-document-level-customizations"></a>对于文档级自定义支持文档格式  
- 在创建自定义项项目时，可以选择想要在项目中使用的文档的格式。 有关更多信息，请参见[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+ 在创建自定义项项目时，可以选择想要在项目中使用的文档的格式。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
  下表列出了可在 Excel 和 Word 的文档级自定义项中使用的文档格式。  
   

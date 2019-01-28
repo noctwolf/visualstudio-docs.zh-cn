@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d31e52ab2f158b73a0076414b6d18e0b7421b04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a9b868054813f65e15c3dfd422be7240df09e284
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825706"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956748"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：强制执行可维护的代码使用代码分析签入策略
 
@@ -50,7 +50,7 @@ Team foundation 版本控制的管理员可以将代码分析可维护性规则�
 
    - 复杂性：**CA1502 AvoidExcessiveComplexity** -阈值：在超过 25 种的警告
 
-   - 可维护性索引：**CA1505 AvoidUnmaintainableCode** -阈值：少于 20 发出警告
+   - 可维护性索引：**CA1505 AvoidUnmaintainableCode** - Threshold:少于 20 发出警告
 
    - 类耦合度：**CA1506 AvoidExcessiveClassCoupling** -阈值：在多个类的 80 和多个方法，为 30 的警告
 

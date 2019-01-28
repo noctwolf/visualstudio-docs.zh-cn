@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, tables
 - Word [Office development in Visual Studio], tables
 - documents [Office development in Visual Studio], tables
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68d15eab133eebd31ae9119ad8e512b691fc0f4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2e0d8d176aed6456a2a5bef57f906e509e5093dc
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829928"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54869653"
 ---
 # <a name="work-with-tables"></a>使用表
   本部分中的主题提供有关使用 Microsoft Office Word 的对象模型处理 Office 项目中的表的分步过程和代码示例。 某些情况下，在 VSTO 外接程序中执行这些任务的方式与在文档级自定义项中执行它们的方式是不同的。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::CauseBreak |Microsoft Docs
+title: IDebugProcess2::CauseBreak | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: efda8865-2319-4d53-90bf-6d9d74cd5195
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a52a360773443b1b179ad3cdec91f3924cedc9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e74f8b64dd2cd9b15a215d6cc7c051bee92bf3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923015"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958051"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 下一步，它是程序在此过程中运行代码的请求中断并发送[IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)事件对象。  

@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 514e3efe56c18288a596d4414512064ed4dcc157
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a9d7c2713e7bc37a47cce91ef2da4acade45b88
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940727"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920326"
 ---
 # <a name="how-to-use-xml-snippets"></a>如何：使用 XML 代码段
 
@@ -109,7 +109,7 @@ ms.locfileid: "53940727"
 
 按下**Enter**或**Esc**取消字段编辑并使编辑器返回正常状态。
 
-可以通过修改更改可编辑的代码段字段的默认颜色**代码片段字段**中设置**字体和颜色**窗格**选项**对话框。 有关更多信息，请参见[如何：更改编辑器中的字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+可以通过修改更改可编辑的代码段字段的默认颜色**代码片段字段**中设置**字体和颜色**窗格**选项**对话框。 有关详细信息，请参阅[如何：更改编辑器中的字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
 ## <a name="see-also"></a>请参阅
 

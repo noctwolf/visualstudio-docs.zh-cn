@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27c12228de5a49d0b61cc61e5c1233343430b686
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 393cc1ea5835b66c18a9f4ca46b9f2ac0a88860a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934052"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031820"
 ---
 # <a name="localize-menu-commands"></a>本地化菜单命令
 您可以通过创建本地化提供菜单和工具栏命令的本地化的文本 *.vsct*文件，并本地化 *.resx*为你的 VSPackage，以及然后更新项目文件将合并的文件更改。  
@@ -46,7 +46,7 @@ ms.locfileid: "53934052"
   
       下面的示例显示了英语和西班牙语按钮文本命令，以打开家族树资源管理器工具窗口。  
   
-      [*FamilyTree.en US.vsct*]  
+      [*FamilyTree.en-US.vsct*]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -59,7 +59,7 @@ ms.locfileid: "53934052"
    </Button>  
    ```  
   
-    [*FamilyTree.es ES.vsct*]  
+    [*FamilyTree.es-ES.vsct*]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -90,7 +90,7 @@ ms.locfileid: "53934052"
   
 5.  打开每个 *.resx*文件若要修改的字符串值以适合特定的语言和区域性。 下面的示例显示了一个工具窗口的标题栏的已本地化的资源定义。  
   
-     [*Resources.en-us.resx*]  
+     [*Resources.en-US.resx*]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a75ea45216e49aecaac452c1d92ff5a98dd7015c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8406d0ca1615ef1f784312827e3a21d0a96b04a8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940253"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016559"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>通过使用传统的 API 提供的语言服务上下文
 有两个选项的语言服务以提供用户上下文中使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器： 提供文本标记的上下文，或提供所有的用户上下文。 下面概述了每个之间的差异。  
@@ -28,7 +28,7 @@ ms.locfileid: "53940253"
 ## <a name="provide-all-user-context-to-the-editor"></a>为编辑器提供所有的用户上下文  
  如果您要创建语言服务，并且使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器，然后，可以实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>接口来为你的语言服务提供的上下文。  
   
- 有关实现的`IVsLanguageContextProvider`，上下文包 （集合） 附加到编辑器，它是负责更新上下文包。 当**动态帮助**窗口调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A>接口对此上下文包在空闲时，上下文包查询更新的编辑器。 在编辑器然后通知语言服务，它应更新编辑器中，并将指针传递到上下文包。 这是通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A>从编辑器到语言服务的方法。 到上下文包使用的指针，该语言服务可以现在添加和删除属性和关键字。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>。  
+ 有关实现的`IVsLanguageContextProvider`，上下文包 （集合） 附加到编辑器，它是负责更新上下文包。 当**动态帮助**窗口调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.Update%2A>接口对此上下文包在空闲时，上下文包查询更新的编辑器。 在编辑器然后通知语言服务，它应更新编辑器中，并将指针传递到上下文包。 这是通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider.UpdateLanguageContext%2A>从编辑器到语言服务的方法。 到上下文包使用的指针，该语言服务可以现在添加和删除属性和关键字。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>。  
   
  有两种不同方式实现`IVsLanguageContextProvider`:  
   

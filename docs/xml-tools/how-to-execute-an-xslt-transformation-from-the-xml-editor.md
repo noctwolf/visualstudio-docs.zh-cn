@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fccad81c2990a93e78f329e2ee4af070d6e5c97
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 742e78eca883dd2e9e9fc5ecfa8ec5381f003b61
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866512"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987565"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>如何：从 XML 编辑器中执行 XSLT 转换
 
@@ -32,7 +32,7 @@ ms.locfileid: "53866512"
 
     -   将 `xml-stylesheet` 处理指令添加到 XML 文档中。 例如，将以下行 `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` 添加到文档序言中。
 
-         - 或 -
+         或
 
     -   添加 XSLT 样式表使用**属性**窗口。 在文档中**属性窗口**，单击**浏览**按钮**样式表**字段中，选择 XSLT 样式表，并单击**打开**.
 

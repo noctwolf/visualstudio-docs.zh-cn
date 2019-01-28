@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d3117aa61658fe056e6ac48fe8ab4eb4831882b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 090f70776ab3323be55d13888f29d4855386a511
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874584"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020888"
 ---
 # <a name="solutions-overview"></a>解决方案概述
 一种解决方案是协同工作以创建应用程序的一个或多个项目的分组。 与解决方案有关的项目和状态信息存储在两个不同的解决方案文件。 解决方案 (.sln) 文件是基于文本的并可放置在源代码管理下和用户之间共享。 解决方案用户选项 (.suo) 文件是二进制文件。 因此，.suo 文件不能放置在源代码管理下，包含特定于用户的信息。  

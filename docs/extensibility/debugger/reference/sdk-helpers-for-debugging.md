@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6655b96ed51cd7cce5e94ce96cedf97517f1872a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6455e4999f5115aee50fa1605103c4dadcc165dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942406"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951724"
 ---
 # <a name="sdk-helpers-for-debugging"></a>用于调试的 SDK 帮助程序
 这些函数和声明是用于在 c + + 中实现的调试引擎中，表达式计算器和符号提供程序的全局帮助器函数。  
@@ -230,7 +230,7 @@ HRESULT EnumMetricSections(
 |metricShowNonUserCode|将此设置为非零值，显示非代码。|  
 |metricJustMyCodeStepping|将此设置为非零值，指示单步执行，可以仅在用户代码中。|  
 |metricCLSID|特定的指标类型的对象的的 CLSID。|  
-|MetricName|特定的指标类型的对象的用户友好名称。|  
+|metricName|特定的指标类型的对象的用户友好名称。|  
 |metricLanguage|语言名称。|  
   
 ## <a name="registry-locations"></a>注册表位置  
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
 > [!NOTE]
 >  大多数情况下，度量值将写入到 HKEY_LOCAL_MACHINE 项。 但是，有时 HKEY_CURRENT_USER 将是目标项。 Dbgmetric.lib 处理这两个密钥。 度量值时，它将搜索 HKEY_CURRENT_USER 中，然后 HKEY_LOCAL_MACHINE。 它会将设置度量值，当参数指定要使用哪个顶级密钥。  
   
- *[注册表项]*\  
+ *[registry key]*\  
   
  `Software`\  
   
@@ -251,22 +251,22 @@ HRESULT EnumMetricSections(
   
  *[指标根]*\  
   
- *[指标类型]*\  
+ *[metric type]*\  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
 |占位符|描述|  
 |-----------------|-----------------|  
-|*[注册表项]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|  
+|*[registry key]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|  
 |*[版本根]*|Visual Studio 的版本 (例如， `7.0`， `7.1`，或`8.0`)。 但是，此根目录还可以修改使用 **/rootsuffix**切换到**devenv.exe**。 VSIP，对于此修饰符通常是**Exp**，因此，则版本根将是，例如，8.0Exp。|  
 |*[指标根]*|这可以是`AD7Metrics`或`AD7Metrics(Debug)`，取决于是否使用 dbgmetric.lib 的调试版本。 **注意：** 指示是否使用 dbgmetric.lib 时，此命名约定应遵守如果必须调试和发布之间的差异必须反映在注册表中的版本。|  
-|*[指标类型]*|要写入的度量值的类型： `Engine`， `ExpressionEvaluator`， `SymbolProvider`，等等。这些都被定义为如下所示为 dbgmetric.h `metricTypeXXXX`，其中`XXXX`是特定类型名称。|  
+|*[metric type]*|要写入的度量值的类型： `Engine`， `ExpressionEvaluator`， `SymbolProvider`，等等。这些都被定义为如下所示为 dbgmetric.h `metricTypeXXXX`，其中`XXXX`是特定类型名称。|  
 |*[metric]*|要将分配一个值，以便将跃点设置的项的名称。 度量值的实际组织取决于指标类型。|  
-|*[跃点值]*|分配给该度量值的值。 应具有的值 （字符串、 数字等） 的类型取决于该度量值。|  
+|*[metric value]*|分配给该度量值的值。 应具有的值 （字符串、 数字等） 的类型取决于该度量值。|  
   
 > [!NOTE]
 >  格式存储所有 Guid `{GUID}`。 例如 `{123D150B-FA18-461C-B218-45B3E4589F9B}`。  
@@ -280,11 +280,11 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[类 guid]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
  `PortSupplier`\  
   
@@ -295,7 +295,7 @@ HRESULT EnumMetricSections(
 |占位符|描述|  
 |-----------------|-----------------|  
 |*[引擎 guid]*|调试引擎的 GUID。|  
-|*[类 guid]*|实现此调试引擎的类的 GUID。|  
+|*[class guid]*|实现此调试引擎的类的 GUID。|  
 |*[端口供应商 guid]*|端口提供程序，如果有的 GUID。 许多的调试引擎使用默认端口提供程序，并因此不指定其自己的供应商。 在此情况下，该子项`PortSupplier`将不会出现。|  
   
 ### <a name="port-suppliers"></a>端口提供程序  
@@ -307,14 +307,14 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[类 guid]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
 |占位符|描述|  
 |-----------------|-----------------|  
 |*[端口供应商 guid]*|端口提供程序的 GUID|  
-|*[类 guid]*|实现此端口提供程序的类的 GUID|  
+|*[class guid]*|实现此端口提供程序的类的 GUID|  
   
 ### <a name="symbol-providers"></a>符号提供程序  
  以下是在注册表中的符号供应商指标的组织。 `SymbolProvider` 是符号提供程序的指标类型名称，对应于 *[指标类型]*。  
@@ -327,22 +327,22 @@ HRESULT EnumMetricSections(
   
  `CLSID` = *[类 guid]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
  `metadata`\  
   
  `CLSID` = *[类 guid]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
 |占位符|描述|  
 |-----------------|-----------------|  
 |*[符号提供程序 guid]*|符号提供程序的 GUID|  
-|*[类 guid]*|实现此符号提供程序的类的 GUID|  
+|*[class guid]*|实现此符号提供程序的类的 GUID|  
   
 ### <a name="expression-evaluators"></a>表达式计算器  
  以下是在注册表中的表达式计算器指标的组织。 `ExpressionEvaluator` 表达式计算器的指标类型名称和对应于 *[指标类型]*。  
@@ -354,13 +354,13 @@ HRESULT EnumMetricSections(
   
  *[语言 guid]*\  
   
- *[供应商 guid]*\  
+ *[vendor guid]*\  
   
  `CLSID` = *[类 guid]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
  `Engine`\  
   
@@ -370,9 +370,9 @@ HRESULT EnumMetricSections(
   
 |占位符|描述|  
 |-----------------|-----------------|  
-|*[语言 guid]*|一种语言的 GUID|  
-|*[供应商 guid]*|供应商的 GUID|  
-|*[类 guid]*|实现此表达式计算器的类的 GUID|  
+|*[language guid]*|一种语言的 GUID|  
+|*[vendor guid]*|供应商的 GUID|  
+|*[class guid]*|实现此表达式计算器的类的 GUID|  
 |*[调试引擎 guid]*|此表达式计算器适用于调试引擎的 GUID|  
   
 ### <a name="expression-evaluator-extensions"></a>表达式计算器扩展  
@@ -382,9 +382,9 @@ HRESULT EnumMetricSections(
   
  *[扩展 guid]*\  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
 |占位符|描述|  
 |-----------------|-----------------|  
@@ -399,23 +399,23 @@ HRESULT EnumMetricSections(
   
  *[异常类型]*\  
   
- *[异常]*\  
+ *[exception]*\  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
- *[异常]*\  
+ *[exception]*\  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
- *[metric] = [跃点值]*  
+ *[metric] = [metric value]*  
   
 |占位符|描述|  
 |-----------------|-----------------|  
 |*[调试引擎 guid]*|支持异常的调试引擎的 GUID。|  
-|*[异常类型]*|子项标识可以处理的异常的类的一个常规标题。 典型的名称是**c + + 异常**， **Win32 异常**，**公共语言运行时异常**，以及**本机运行时检查**。 这些名称也用于标识特定类别的用户的例外。|  
-|*[异常]*|异常的名称： 例如， **_com_error**或**控制中断**。 这些名称还用于确定向用户特定异常。|  
+|*[exception types]*|子项标识可以处理的异常的类的一个常规标题。 典型的名称是**c + + 异常**， **Win32 异常**，**公共语言运行时异常**，以及**本机运行时检查**。 这些名称也用于标识特定类别的用户的例外。|  
+|*[exception]*|异常的名称： 例如， **_com_error**或**控制中断**。 这些名称还用于确定向用户特定异常。|  
   
 ## <a name="requirements"></a>要求  
  这些文件位于[!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]SDK 安装目录 (默认情况下 *[驱动器]* \Program Files\Microsoft Visual Studio 2010 SDK\\)。  

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4529011b9e896c2fdbff5595acd5c1a94cbb9e7a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 278f06376ede2ceb26ccc6ed31d7f4666a0882c0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846830"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936627"
 ---
 # <a name="create-a-source-control-vspackage"></a>创建源代码管理 VSPackage
 本文档包括指向与集成的源代码管理包的体系结构概述[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，定义要实现的接口和服务将使用的 API 和示例演示一个简单的源控制包实现。  

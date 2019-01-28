@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], controls
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0645c7cd3d030b553457abace8d7cdee07984011
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5515cd9169e86555df3585ee17778f6bdd92746f
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930591"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875922"
 ---
 # <a name="controls-on-office-documents"></a>Office 文档上的控件
   你可以在 Visual Studio 中使用 Office 开发工具将 Windows 窗体控件和 *主机控件* 添加到 Word 文档和 Excel 工作表。 主机控件是在 Word 和 Excel 对象模型中扩展各种用户界面 (UI) 对象的对象。  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81f17bf830a9d7566ad00b062d81edcd7e1a242a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a2c3cf1a1a5ee17a3ecdb6ed6b097b3ff4dde18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913115"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976701"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 将读取的指针移动反汇编流给定数量的相对于指定位置的说明中。  
@@ -56,7 +56,7 @@ int Seek( 
  [in]要移动相对于指定的位置的指令数`dwSeekStart`。 此值可以是负数，以向后移动。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果搜寻位置到可用的指令的一个点，该列表。 否则，返回错误代码。  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果搜寻位置到可用的指令的一个点，该列表。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
  如果搜索到列表的开头之前位置，读取的位置设置为列表中的第一个指令。 如果看到的是将其置于列表末尾之后，读取的位置设置的最后一个指令列表中。  

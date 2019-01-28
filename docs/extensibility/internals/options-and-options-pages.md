@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73eb5ab6c139d4ce6bdfb8a5a310ca447ce4267c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 466dc5ea2c3ca4a4f9045a43781598c7e84168ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872117"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930025"
 ---
 # <a name="options-and-options-pages"></a>选项和选项页
 单击**选项**上**工具**菜单打开**选项**对话框。 在此对话框中选项统称为选项页。 在导航窗格中的树控件包括选项类别和每个类别都有选项页。 当选择一个页面时，其选项将显示在右窗格中。 这些页面，您可以更改的值确定的 VSPackage 状态的选项。  

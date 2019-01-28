@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d447090585a2314899bb2d6246c6fb450a9e767d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef91cc3d3bcec479fd6619662d40fbfeffb82131
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956044"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989947"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>将项目添加到添加新项对话框
 将项添加到的过程**添加新项**对话框的开头的注册表项。 以下注册表项中所示**AddItemTemplates**部分包含的路径和名称的目录中提供哪些项**添加新项**放入对话框。  
@@ -29,7 +29,7 @@ ms.locfileid: "53956044"
 
  **\\{C061DB26-5833-11D2-96F5-000000000000}\\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
 
- **@** = 6 
+ **@** = #6 
 
  **TemplatesDir** = \\&lt;Visual Studio SDK 安装路径&gt;\\VSIntegration\\&lt;SomeFolder&gt; \\&lt;SomePackage&gt;\\&lt;SomeProject&gt;\\&lt;SomeProjectItems&gt;
 
@@ -38,8 +38,8 @@ ms.locfileid: "53956044"
 
 | name | 类型 | 数据 (从 *.rgs*文件) | 描述 |
 |------------------|-----------| - | - |
-| @ （默认值） | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY % | 资源 ID**添加项**模板。 |
-| Val TemplatesDir | REG_SZ | %Template_path%\\&lt;SomeProjectItems&gt; | 在对话框中显示的项目项的路径**添加新项**向导。 |
+| @ （默认值） | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | 资源 ID**添加项**模板。 |
+| Val TemplatesDir | REG_SZ | %TEMPLATE_PATH%\\&lt;SomeProjectItems&gt; | 在对话框中显示的项目项的路径**添加新项**向导。 |
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | 确定文件中显示的树节点中的排序顺序**添加新项**对话框。 |
 
 > [!NOTE]

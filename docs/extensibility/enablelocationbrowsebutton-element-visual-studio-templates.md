@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1db73787a8d593b0d48b438d08d083c623c18bd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 129212c690a9cf35b5c8a26893c366a79e58e39c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854979"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54934083"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 元素 （Visual Studio 模板）
 指定是否**浏览**按钮现已推出**新项目**对话框，以便用户可以轻松地修改保存新项目的默认目录。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<EnableLocationBrowseButton >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<EnableLocationBrowseButton>  
   
 ## <a name="syntax"></a>语法  
   

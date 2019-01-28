@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca665aa59f7e7595be08084d0a1073416dbd9954
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 897e12608e0ca91e6ae8b6b58d703616b42be10c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849721"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017795"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>开始使用源代码管理 Vspackage
 源代码管理 VSPackage 是源代码管理插件的更高级替代方法。 有关源代码管理插件的详细信息，请参阅[创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)。 源代码管理 VSPackage 启用对源控件模型、 功能和用户界面 (UI) 的完全控制和集成到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]作为 VSPackage 的环境。  

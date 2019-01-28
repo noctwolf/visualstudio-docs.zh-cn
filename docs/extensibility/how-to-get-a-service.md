@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 635a02daf6f6501679cc2a38cd252b1e1ebec7a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e848b3e54d1e3beb6b9681112cd55b74caa6a482
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990024"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949852"
 ---
 # <a name="how-to-get-a-service"></a>如何：获取服务
 通常需要获取 Visual Studio 服务访问不同的功能。 一般情况下，Visual Studio 服务提供了一个或多个接口，可以使用。 你可以从 VSPackage 获取大多数服务。  
@@ -39,7 +39,7 @@ ms.locfileid: "53990024"
   
    ```  
   
-    此代码获取 SVsActivityLog 服务并将强制转换到<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口，可用于写入活动日志。 有关示例，请参阅[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
+    此代码获取 SVsActivityLog 服务并将强制转换到<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口，可用于写入活动日志。 有关示例，请参见 [如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
   
 4. 生成项目并启动调试。 将显示在实验实例。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "53990024"
   
  静态<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法依赖于任何 VSPackage 派生自第一次进行初始化的缓存的服务提供商<xref:Microsoft.VisualStudio.Shell.Package>确定位置。  
   
- 因为之前确定位置 VSPackage 调用 VSPackage 构造函数，全球服务不可用通常从 VSPackage 构造函数内。 请参阅[操作说明：排查服务问题](../extensibility/how-to-troubleshoot-services.md)的一种解决方法。  
+ 因为之前确定位置 VSPackage 调用 VSPackage 构造函数，全球服务不可用通常从 VSPackage 构造函数内。 请参阅[如何：排查服务问题](../extensibility/how-to-troubleshoot-services.md)的一种解决方法。  
   
  下面是方法的在工具窗口或其他非 VSPackage 元素中获取服务的示例。  
   

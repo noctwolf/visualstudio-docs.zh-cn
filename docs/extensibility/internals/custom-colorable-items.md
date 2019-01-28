@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5777c5bf6340ac25888bf4a8446c61a68757c6fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 690770c2091d3c0a983b91b9a25afc3d3eb4b348
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989745"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974014"
 ---
 # <a name="custom-colorable-items"></a>自定义可着色项
 您可以实现自定义可着色项为语言服务的一部分，着色，例如关键字和注释，覆盖类型的列表。  
@@ -30,7 +30,7 @@ ms.locfileid: "53989745"
 > [!CAUTION]
 >  要避免与现有的可着色项名称发生冲突的可着色项名称中，应包括的语言名称。 如果在开发过程中更改了一可着色项的名称，必须重置缓存创建第一次访问了你可着色的项。 你可以重置缓存的实验性**CreateExpInstance**工具，它随 Visual Studio SDK，通常在目录中：  
 >   
->  *C:\Program 文件 (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+>  *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >   
 >  若要重置缓存，请输入**CreateExpInstance /Reset**。 有关详细信息**CreateExpInstance**，请参阅[CreateExpInstance 实用工具](../../extensibility/internals/createexpinstance-utility.md)。  
   

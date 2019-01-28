@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d4bfa27ac2a71e53418ac1be1f9a377f06aede7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b065d54f41ce2e3122a51f133e360b3340186c97
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870172"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937842"
 ---
 # <a name="button-element"></a>Button 元素
 定义一个元素，用户可与之交互。 按钮可为不同类型：按钮、 MenuButton 和 SplitDropDown。  
@@ -51,7 +51,7 @@ ms.locfileid: "53870172"
 |-------------|-----------------|  
 |[父元素](../extensibility/parent-element.md)|可选。 按钮的父元素。|  
 |[Icon 元素](../extensibility/icon-element.md)|可选。 与按钮关联的图标。|  
-|[Command flag 元素](../extensibility/command-flag-element.md)|必需。 一个按钮 CommandFlag 有效值如下所示。<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly|  
+|[Command flag 元素](../extensibility/command-flag-element.md)|必需。 一个按钮 CommandFlag 有效值如下所示。<br /><br /> - AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> - IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> -Pict<br /><br /> - PostExec<br /><br /> -ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly|  
 |[Strings 元素](../extensibility/strings-element.md)|必需。 子[ButtonText 元素](../extensibility/buttontext-element.md)必须定义。|  
 |批注|可选注释。|  
   

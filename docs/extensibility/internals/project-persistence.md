@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 475120f72962d0ab1c5c0dd6e8441349dfc8086c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15b605d4beffc85c2ac5e8803d627c13dd4c7d38
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890045"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021801"
 ---
 # <a name="project-persistence"></a>项目持久性
 持久性是你的项目的关键设计注意事项。 大多数项目使用项目项代表文件;[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]还支持其数据是不基于文件的项目。 必须保留这两个拥有的项目和项目文件的文件。 IDE 指示要保存本身或项目项的项目。  

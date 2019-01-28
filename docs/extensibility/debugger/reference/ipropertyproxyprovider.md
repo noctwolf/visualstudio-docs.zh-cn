@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyProvider |Microsoft Docs
+title: IPropertyProxyProvider | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f12925c362d3c87b6eb6724c28936333519e844f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 716f3caedd2b3da9ce115148ecf15b33834238fc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877093"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953872"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 此接口提供了一个代理界面，用于查看和更改对象的数据。  

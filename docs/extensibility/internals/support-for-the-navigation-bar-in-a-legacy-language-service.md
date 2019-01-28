@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9fc9d4339978f84b02a5c922c06139031924bf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcfb3d754db6696a213806c9188d34105d127fb5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868808"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032951"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>旧版语言服务中的导航栏支持
 在的编辑器视图顶部的导航栏显示文件中的类型和成员。 在左侧的下拉列表中显示类型和成员显示在右侧下拉列表。 当用户选择一种类型时，该类型的第一行放置插入符号。 当用户选择成员时，将插入符号放置在上成员的定义。 下拉列表框会更新以反映当前插入符号的位置。  

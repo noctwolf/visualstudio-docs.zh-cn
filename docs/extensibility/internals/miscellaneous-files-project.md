@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 281213751cb25a05e8298ee35ba43453d48ed250
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4305b5a65ee8303fa98cc3a25202fe1fca38e571
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853104"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923761"
 ---
 # <a name="miscellaneous-files-project"></a>杂项文件项目
 当用户打开项目项时，IDE 将分配给杂项文件项目不是解决方案中的任何项目的成员的任何项目。  
   
  项目扮演重要角色确定当用户打开项目项时，将使用的编辑器。 可以设计一个项目以使用特定于项目的编辑器或标准编辑器打开某些文件。  
   
- 特定于项目的编辑器通常要求用户具有特殊知识，或者使用从项目的特殊接口。 有关更多信息，请参见[如何：打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)。  
+ 特定于项目的编辑器通常要求用户具有特殊知识，或者使用从项目的特殊接口。 有关详细信息，请参阅[如何：打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)。  
   
  标准编辑器可以打开任何项目中的特定扩展的任何文件。 用户可以自定义某些标准编辑器中，如[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]文本编辑器中的，对于项目，但仍保留了其公共的字符。 通过使用创建标准编辑器<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法。  
   

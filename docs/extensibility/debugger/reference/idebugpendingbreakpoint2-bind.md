@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Bind |Microsoft Docs
+title: IDebugPendingBreakpoint2::Bind | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 46e3f307-219d-40cd-a929-d41399c60ecf
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 916addd046bc804f7ef796b7c1218f7e5d007df2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea73240d6797daaee2cb51796800282bf5b60008
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819454"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933758"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
 将此挂起断点绑定到一个或多个代码位置。  

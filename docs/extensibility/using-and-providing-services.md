@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c0b415ba-b825-4da0-9faf-8a60a663e302
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f547afd33166a6a7b10284e6cb55e73baeefc861
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e58ace81dbf3b39ed9e7707a50c1f7beae35e88f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886275"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989268"
 ---
 # <a name="using-and-providing-services"></a>使用并提供服务
-服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供了一组特定的另一个 VSPackage 来使用的接口。 例如，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]提供了<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>服务到任何 VSPackage 它加载。 此服务提供<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口，可用于写入活动日志。 有关更多信息，请参见[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
+服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供了一组特定的另一个 VSPackage 来使用的接口。 例如，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]提供了<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>服务到任何 VSPackage 它加载。 此服务提供<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口，可用于写入活动日志。 有关详细信息，请参阅[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
   
  Vspackage 可以提供其自己的使用的服务<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService>接口...  
   

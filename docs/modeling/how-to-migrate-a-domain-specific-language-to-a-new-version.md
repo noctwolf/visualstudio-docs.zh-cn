@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: b53d604fdf9c18a2e5552d787f7a69ff4c92df2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c2ff1a820e5ac8492b627ac61ddfa234c71b5890
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955063"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932332"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：将域特定语言迁移至新版本
 你可以迁移项目的定义和使用特定于域的语言设置为[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]的版本从[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]一起分发[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]。

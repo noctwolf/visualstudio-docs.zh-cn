@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpoint2 |Microsoft Docs
+title: IDebugErrorBreakpoint2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1f2a4b94-3713-46e9-8272-3917187792bd
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd26a84ef9fc3df6d1850d729e4ff52cef55161c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: de2acab356ad31282e5a11cafd347867ca376258
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962264"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930129"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 此接口表示一个错误或警告断点，如无效的位置、 无效的表达式或为何挂起断点具有未绑定 （代码不会加载尚未，依此类推） 的原因。  

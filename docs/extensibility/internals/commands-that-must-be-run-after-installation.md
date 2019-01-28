@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 691cabb67df53faf23c23e2fa3f05f0ca68038a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bd5fdae152cf3810d9b9bc95596081473eecc965
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915544"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942521"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必须在安装后运行的命令
 如果您将通过你扩展部署 *.msi*文件中，您必须运行**devenv /setup**作为您的安装顺序 for Visual Studio 以发现你的扩展的一部分。  

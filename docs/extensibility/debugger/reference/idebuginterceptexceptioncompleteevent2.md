@@ -1,5 +1,5 @@
 ---
-title: IDebugInterceptExceptionCompleteEvent2 |Microsoft Docs
+title: IDebugInterceptExceptionCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8ebc256b-5428-4ed6-a505-6aedc8242b8e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910c8d3fe94d047eb2323a2e1d9f309875bc1a88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a54ea7c9745eedf2fe86aed2df29a380447e154
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837922"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932774"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
 DE 完成后被拦截事件的处理，此接口是由调试引擎 (DE) 发送到会话调试管理器 (SDM) 中。  

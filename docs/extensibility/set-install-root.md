@@ -5,27 +5,27 @@ ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 847ce9bc55e93f292ffdfe6f237e8c39eeac9fd4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc8d0ccac452d82ed1a2f5fbce7c88fd82efc1d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968493"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983100"
 ---
 # <a name="installing-outside-the-extensions-folder"></a>在扩展文件夹外安装
 
 从 Visual Studio 2017 和 VSIX v3 （版本 3），现在支持用于安装扩展文件夹外的扩展资产。 目前，作为有效的安装位置 （其中 [INSTALLDIR] 映射到 Visual Studio 实例的安装目录），会启用以下位置：
 
-* [INSTALLDIR] \MSBuild
-* [INSTALLDIR] \Xml\Schemas
-* [INSTALLDIR] \Common7\IDE\PublicAssemblies
-* [INSTALLDIR] \Licenses
-* [INSTALLDIR] \Common7\IDE\ReferenceAssemblies
-* [INSTALLDIR] \Common7\IDE\RemoteDebugger
-* [INSTALLDIR] \Common7\IDE\VC\VCTargets
+* [INSTALLDIR]\MSBuild
+* [INSTALLDIR]\Xml\Schemas
+* [INSTALLDIR]\Common7\IDE\PublicAssemblies
+* [INSTALLDIR]\Licenses
+* [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
+* [INSTALLDIR]\Common7\IDE\RemoteDebugger
+* [INSTALLDIR]\Common7\IDE\VC\VCTargets
 
 >**注意：** VSIX 格式不允许您安装 VS 安装文件夹结构之外。
 

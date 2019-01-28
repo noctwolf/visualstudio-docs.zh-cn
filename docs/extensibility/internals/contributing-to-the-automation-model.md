@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6db9cd21b56fb4d31a97fea9f16541377a8de1f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d05a73fbe94bc754f60a2f261e47cd0f242e3b94
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952597"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958662"
 ---
 # <a name="contribute-to-the-automation-model"></a>参与自动化模型
 Visual Studio 提供一组自动化接口的自定义环境。 自动化模型是使最终用户能够创建 Visual Studio 加载项和扩展的对象模型。  

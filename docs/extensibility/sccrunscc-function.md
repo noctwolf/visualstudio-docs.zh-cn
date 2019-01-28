@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f9798f280d271299037c001e71f9c9f5ed1940f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a08e365bf934914fba31af5e7404d4be32b37b5f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956451"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996215"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函数
 此函数调用的源代码管理管理工具。  
@@ -64,7 +64,7 @@ SCCRTN SccRunScc(
   
  使用计数和当前所选文件的文件名称的数组调用此函数。 如果管理工具支持，可以使用的文件列表预先选择管理界面; 中的文件否则，可以忽略列表。  
   
- 当用户选择时，通常调用此函数**启动\<源代码管理服务器 >** 从**文件** -> **源代码管理**菜单。 这**启动**菜单选项可以始终处于禁用状态，或甚至隐藏通过设置注册表项。 请参阅[操作说明：安装源代码管理插件](../extensibility/internals/how-to-install-a-source-control-plug-in.md)有关详细信息。 仅当调用此函数[SccInitialize](../extensibility/sccinitialize-function.md)返回`SCC_CAP_RUNSCC`功能位 (请参阅[功能标志](../extensibility/capability-flags.md)有关此权益以及其他功能位的详细信息)。  
+ 当用户选择时，通常调用此函数**启动\<源代码管理服务器 >** 从**文件** -> **源代码管理**菜单。 这**启动**菜单选项可以始终处于禁用状态，或甚至隐藏通过设置注册表项。 请参阅[如何：安装源代码管理插件](../extensibility/internals/how-to-install-a-source-control-plug-in.md)有关详细信息。 仅当调用此函数[SccInitialize](../extensibility/sccinitialize-function.md)返回`SCC_CAP_RUNSCC`功能位 (请参阅[功能标志](../extensibility/capability-flags.md)有关此权益以及其他功能位的详细信息)。  
   
 ## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   

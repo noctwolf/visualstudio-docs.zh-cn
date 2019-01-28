@@ -9,16 +9,16 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13ffde9d399e0535f7cf6790f199ba4924156636
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924418"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012178"
 ---
 # <a name="dependency-diagrams-guidelines"></a>依赖项关系图： 准则
 
@@ -31,7 +31,7 @@ ms.locfileid: "53924418"
 
 ## <a name="what-is-a-dependency-diagram"></a>什么是依赖项关系图？
 
-类似于传统的体系结构示意图，依赖项关系图标识的主要组件或功能单元的设计和及其相互依赖关系。 在关系图中，每个节点称为*层*，表示命名空间、 项目或其他项目的逻辑组。 您可以绘制出您的设计中存在的依赖关系。 与传统的体系结构关系图不同的是，您可以验证源代码中的实际依赖关系符合您指定的预期依赖关系。 通过在[!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]上验证常规生成的一部分，您可以确保程序代码继续符合系统的体系结构将来的更改。 请参阅[依赖项关系图：引用](../modeling/layer-diagrams-reference.md)。
+类似于传统的体系结构示意图，依赖项关系图标识的主要组件或功能单元的设计和及其相互依赖关系。 在关系图中，每个节点称为*层*，表示命名空间、 项目或其他项目的逻辑组。 您可以绘制出您的设计中存在的依赖关系。 与传统的体系结构关系图不同的是，您可以验证源代码中的实际依赖关系符合您指定的预期依赖关系。 通过在[!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]上验证常规生成的一部分，您可以确保程序代码继续符合系统的体系结构将来的更改。 请参阅[依赖项关系图：参考](../modeling/layer-diagrams-reference.md)。
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>如何设计或更新您的应用程序的依赖项关系图
 

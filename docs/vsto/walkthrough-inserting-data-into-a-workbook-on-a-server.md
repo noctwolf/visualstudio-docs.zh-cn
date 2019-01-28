@@ -11,17 +11,17 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], accessing on server
 - documents [Office development in Visual Studio], server-side data access
 - workbooks [Office development in Visual Studio], inserting data
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aeba8355a4d7b9934f045a828efc251500d3e77c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 194ec4111d5cc4a34879377695667d97032402b9
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947135"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54875935"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>演练：将数据插入到的服务器上的工作簿
   本演练演示如何将数据插入到一个数据集，而不启动 Excel，通过使用 Microsoft Office Excel 工作簿中缓存<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类。
@@ -100,7 +100,7 @@ ms.locfileid: "53947135"
 
 5. 如果具有现有连接到 AdventureWorksLT 数据库，选择此连接，然后单击**下一步**。
 
-    否则，单击“新建连接” ，然后使用“添加连接”  对话框创建新连接。 有关更多信息，请参见[如何：连接到数据库中的数据](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)。
+    否则，单击“新建连接” ，然后使用“添加连接”  对话框创建新连接。 有关详细信息，请参阅[如何：连接到数据库中的数据](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)。
 
 6. 在“将连接字符串保存到应用程序配置文件中”  页中，单击“下一步” 。
 

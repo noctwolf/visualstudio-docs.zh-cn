@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad57ead773e2daa8cc17937156e199cd7dddbbde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 857f4dda6c21ad53acb9963080257a580c342a80
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850396"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978394"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>演练：将功能添加到自定义编辑器
 创建自定义编辑器后，您可以向其添加更多的功能。  
@@ -115,7 +115,7 @@ ms.locfileid: "53850396"
   
 12. 实现上下文相关帮助支持。  
   
-     此步骤允许您提供的 F1 帮助和动态帮助窗口支持你的编辑器中的项。 有关更多信息，请参见[如何：为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)。  
+     此步骤允许您提供的 F1 帮助和动态帮助窗口支持你的编辑器中的项。 有关详细信息，请参阅[如何：为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)。  
   
 13. 通过实现公开自动化对象模型从你的编辑器`IDispatch`接口。  
   

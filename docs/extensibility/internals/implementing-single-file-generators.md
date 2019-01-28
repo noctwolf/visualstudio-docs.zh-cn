@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 728a1748d4c78bd93bf827290404f65607076b6a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a3dcc7266bd5e2a7e40c4dfbb4b549c30a1338ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847777"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942930"
 ---
 # <a name="implementing-single-file-generators"></a>实现单个文件生成器
 自定义工具，有时称为单文件生成器 — 可用于扩展[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]和[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]项目中的系统[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 自定义工具是实现的 COM 组件<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>接口。 使用此接口，自定义工具将单个输入的文件转换为单个输出文件。 转换的结果可能是源代码中，或任何其他输出这一点非常有用。 自定义工具生成的代码文件的两个示例是在响应中的可视化设计器和使用 Web 服务描述语言 (WSDL) 生成的文件的更改生成代码。  

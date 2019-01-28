@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea38b05f48969b80f9f8888f8bbd3c6a1a4e5657
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19ad0da444f99e0fbf618d97729c64a1e5ed5666
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904937"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971814"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自定义代码分析字典
 代码分析使用内置的字典来检查拼写、 语法的情况下和.NET Framework 准则的其他命名约定中的错误代码中的标识符。 可以创建要添加、 删除或修改条款、 缩写和首字母缩写词到内置词典的自定义词典 Xml 文件。
@@ -64,13 +64,13 @@ ms.locfileid: "53904937"
 
 - [字典/单词/无法识别的/中的单词](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
-- [字典/单词/已弃用/术语 [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [Dictionary/Words/Deprecated/Term[@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
-- [字典/单词/复合/术语 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [Dictionary/Words/Compound/Term[@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
-- [字典/单词/DiscreteExceptions/术语](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
-- [字典/首字母缩写词/CasingExceptions/首字母缩略词](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [Dictionary/Acronyms/CasingExceptions/Acronym](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> 字典/单词/识别/中的单词
  若要包括的代码分析会正确标识的字词列表中的一个术语，拼写，作为字典/单词/识别/Word 元素的内部文本添加术语。 字典/单词/识别/Word 元素中的条款不区分大小写。
@@ -140,7 +140,7 @@ ms.locfileid: "53904937"
 
 -   [CA2204:应正确拼写文本](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
-###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> 字典/单词/已弃用/术语 [@PreferredAlternate]
+###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dictionary/Words/Deprecated/Term[@PreferredAlternate]
  若要在代码分析可确定为不推荐使用的术语列表中包含一个术语，将添加为字典/单词/已弃用/术语元素的内部文本的一词。 不推荐使用的术语是一个单词的拼写正确，但不应使用。
 
  若要包含在警告中建议的替代字词，字词元素 PreferredAlternate 属性中指定备用服务器。 如果不希望建议一个替代，可以将属性值留空。
@@ -176,7 +176,7 @@ ms.locfileid: "53904937"
 
 -   [CA1726:使用首选的词条](../code-quality/ca1726-use-preferred-terms.md)
 
-###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> 字典/单词/复合/术语 [@CompoundAlternate]
+###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Dictionary/Words/Compound/Term[@CompoundAlternate]
  内置词典标识作为单一的离散的术语，而不是一个复合术语的一些术语。 若要与搜索条件的代码分析标识为一个组合词列表中包括一个术语，并指定正确的大小写的字词，添加一词作为字典/单词/复合/术语元素的内部文本。 术语元素 CompoundAlternate 属性中指定的单个单词利用不同的单词 （Pascal 大小写） 的第一个字母组成的复合术语。 请注意，内部文本中指定的术语自动添加到字典/单词/DiscreteExceptions 列表。
 
 - 字典/单词中的不推荐使用的词条/已弃用/术语元素不是区分大小写。
@@ -232,7 +232,7 @@ ms.locfileid: "53904937"
 
 -   [CA1702:复合词应采用正确的大小写](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
 
-###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> 字典/首字母缩写词/CasingExceptions/首字母缩略词
+###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Dictionary/Acronyms/CasingExceptions/Acronym
  中的代码分析将标识为拼写正确的字词列表包括首字母缩略词并指示如何的首字母缩写词大小写被选中时规则的组合词，将字词添加为字典/首字母缩写词/CasingExceptions 的内部文本 /首字母缩略词元素。 字典/首字母缩写词/CasingExceptions/首字母缩略词元素中的首字母缩写是区分大小写。
 
  **示例**

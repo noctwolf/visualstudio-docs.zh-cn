@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d3c6a0f74f6f9f684e35c927bafc2ead7c19485
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7d21e69bbcfbacd50070b7f5787059ca81e464c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967743"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54933420"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>使用互操作程序集来确定命令状态
 VSPackage 必须跟踪的它可以处理的命令的状态。 当启用或禁用你的 VSPackage 中处理的命令变得无法确定在环境。 它是你的 VSPackage 以通知有关命令状态的环境的责任，例如，常规状态命令，如**剪切**，**副本**，并**粘贴**。  

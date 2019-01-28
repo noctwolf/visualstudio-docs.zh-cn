@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 178cd43486a9553f70853c9df0e106ac3ece78f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81deac9f46c03cac997f555f817bba5831409bca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908431"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968695"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>实现自定义类别和显示项
 VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]通过自定义类别和显示项的集成的开发环境 (IDE)。
@@ -113,7 +113,7 @@ VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](.
 
      IDE 调用相应的方法遵循的用户修改**字体和颜色**页。 例如，它调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A>如果选择新字体的方法。
 
-     - 或 -
+     或
 
 -   轮询更改 IDE。
 

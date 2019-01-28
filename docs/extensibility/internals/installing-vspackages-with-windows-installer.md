@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0efb1b5c45595383f62d08399906cbb1b546479
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09ad066f234813ee9109e987de4d189a16e8fe18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827830"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001639"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>使用 Windows Installer 安装 VSPackage
 将集成到你的 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]需要不止将文件复制到用户的计算机。 你的 VSPackage 的安装程序必须安装 VSPackage 和其依赖的文件，并注册并将它们到集成[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 你的 VSPackage 可以利用集成功能，例如上显示一个图标[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]初始屏幕和关于对话框。  

@@ -6,6 +6,12 @@ titleSuffix: ''
 description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来开发适用于你的平台和设备的应用程序、服务和工具。
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: bddd51f4544c1eb96c309330d6cda04e6589db44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55032199"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -101,7 +107,7 @@ ms.custom: seodec18
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h2>选择语言</h2>
+                                                <h2>学习教程</h2>
                                                 <table cellpadding="0" cellspacing="0" border="0">
                                                     <tr>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">

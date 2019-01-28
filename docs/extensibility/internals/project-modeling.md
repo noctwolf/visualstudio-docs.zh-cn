@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d835ee2062a6feec2fbb13991cc448b0b0b7b7a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da49deb7d4cf73ab3f70f5b55e1ceeef005c9f03
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968373"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927354"
 ---
 # <a name="project-modeling"></a>项目建模
 提供的自动化，你的项目实现标准项目对象的下一步：<xref:EnvDTE.Projects>并`ProjectItems`集合;`Project`和<xref:EnvDTE.ProjectItem>对象; 以及对您的实现唯一剩余的对象。 Dteinternal.h 文件中定义这些标准的对象。 BscPrj 示例中提供了标准的对象的一个实现。 可以为模型中使用这些类来创建您自己的标准项目对象，突出显示的-同时与来自其他项目类型的项目对象。  

@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 436b327e090d11d6e0e54f1a908e3e871d2b846a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4d0a001e50347b4ec0603aa0aa97af25233e4179
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857116"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944145"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>在程序代码中导航和更新模型
 
@@ -130,7 +130,7 @@ ms.locfileid: "53857116"
 -   ElementLink-所有关系都是 ElementLinks
 
 ##  <a name="transaction"></a> 执行在事务内的更改
- 每当你的程序代码更改存储区中的任何内容时，它必须在事务内执行。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.Modeling.Transaction>。
+ 每当你的程序代码更改存储区中的任何内容时，它必须在事务内执行。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Modeling.Transaction>。
 
  管理事务的最简便的方法是使用`using`语句括在`try...catch`语句：
 
@@ -191,7 +191,7 @@ using (Transaction t =
 
 - 设置新元素，尤其是为其属性的属性`IsName`在 DslDefinition 是如此。 此标志将标记来标识其所有者中唯一的元素的属性。 在这种情况下，Name 属性具有该标志。
 
-- 到存储区中，必须已加载此 DSL 的 DSL 定义。 如果你正在编写如菜单命令扩展，这通常是已，则返回 true。 在其他情况下，你可以显式将模型加载到存储中，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>加载它。 有关更多信息，请参见[如何：从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
+- 到存储区中，必须已加载此 DSL 的 DSL 定义。 如果你正在编写如菜单命令扩展，这通常是已，则返回 true。 在其他情况下，你可以显式将模型加载到存储中，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>加载它。 有关详细信息，请参阅[如何：从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。
 
   当以这种方式创建一个元素时，形状将自动创建 （如果 DSL 具有关系图）。 它显示在自动分配的位置中，使用默认形状、 颜色和其他功能。 如果你想要控制在何处以及如何显示的相关联的形状，请参阅[创建元素和其形状](#merge)。
 
@@ -474,7 +474,7 @@ partial class MyDiagram
  您还可以设置颜色和其他公开的属性的连接器使用此方法。
 
 ### <a name="use-transactions"></a>使用事务的事务
- 形状、 连接符和关系图是子类型的<xref:Microsoft.VisualStudio.Modeling.ModelElement>和实时存储区中。 仅在事务内，因此必须对其进行更改。 有关更多信息，请参见[如何：使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
+ 形状、 连接符和关系图是子类型的<xref:Microsoft.VisualStudio.Modeling.ModelElement>和实时存储区中。 仅在事务内，因此必须对其进行更改。 有关详细信息，请参阅[如何：使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
 ##  <a name="docdata"></a> 文档视图和文档数据
  ![标准关系图类型的类图](../modeling/media/dsldiagramsanddocs.png)

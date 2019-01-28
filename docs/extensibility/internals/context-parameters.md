@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b69aa04583186e20df77f13f54499448b36eb29c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1290fe9aa9b8fc017856d776aa718ff3d1810df1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902612"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931669"
 ---
 # <a name="context-parameters"></a>上下文参数
 在中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 中，您可以添加到向导**新建项目**，**添加新项**，或**添加子项目**对话框。 添加了的向导位于**文件**菜单或通过右键单击项目中的**解决方案资源管理器**。 IDE 将上下文参数传递给该向导的实现。 IDE 调用向导时，上下文参数定义项目的状态。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugStepCompleteEvent2 |Microsoft Docs
+title: IDebugStepCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f39495d2e2150f880c62be1f4349465ce5aa2e48
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 09f7d20954f23825cca9b69a774d6316f1a89982
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936992"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919776"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 当正在调试的程序完成单步执行、 逐过程执行或跳出源代码或语句或指令的行时，此接口是调试引擎 (DE) 发送到会话调试管理器 (SDM) 中。  

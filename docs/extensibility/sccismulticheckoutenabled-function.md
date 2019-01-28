@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6721639d-e475-4766-81b5-ee40a280fc70
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ded0e14a1a3d7cbbe1261328672bb6aad89d6628
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 883f67482881b40c9d685604e1ee30fa33d4048b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874740"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55013504"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled 函数
 此函数检查源代码管理插件是否允许多次签出文件。  
@@ -41,7 +41,7 @@ SCCRTN SccIsMultiCheckoutEnabled(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|检查成功。|  
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|非特定故障。|  

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - walkthroughs [Domain-Specific Language Tools]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: a415657c86f6f4a6f54ce4273e49ad6302ae77b4
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 365e5cae52eb9b1982900faa68afdd72de9e1337
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270030"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028471"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：向快捷菜单中添加命令
 
@@ -33,7 +33,7 @@ ms.locfileid: "54270030"
    有关示例，请参阅[可视化和建模 SDK 网站](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
 > [!NOTE]
-> 通过在 CommandSet.cs 中重写方法，还可以修改某些现有命令（例如剪切、粘贴、全选和打印）的行为。 有关更多信息，请参见[如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+> 通过在 CommandSet.cs 中重写方法，还可以修改某些现有命令（例如剪切、粘贴、全选和打印）的行为。 有关详细信息，请参阅[如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
 ## <a name="define-a-command-using-mef"></a>定义使用 MEF 命令
 
@@ -241,7 +241,7 @@ OnStatus 方法不应更改“存储”的状态。
 ### <a name="define-what-the-command-does"></a>定义命令可执行操作
  对于每个命令，定义在用户单击菜单命令时执行所需操作的 `OnMenu...` 方法。
 
- 如果要对模型元素进行更改，则必须在事务内执行此操作。 有关更多信息，请参见[如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+ 如果要对模型元素进行更改，则必须在事务内执行此操作。 有关详细信息，请参阅[如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
  在此示例中，`ClassShape`、`ModelClass` 和 `Comment` 是在 DSL 中定义的类型，该 DSL 派生自类关系图 DSL 模板。
 

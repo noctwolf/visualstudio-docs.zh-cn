@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 81f5d1004d359ce9ac3ab6f56d5a8d84f51273f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55faad5ee76819320384d977100bf02e482b79ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872393"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940123"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>域特定语言入门
 
@@ -385,7 +385,7 @@ DSL 定义中可以指定模型关系图上的显示方式。 您可以选择使
 ## <a name="validation-and-commands"></a>验证和命令
  可以通过添加验证约束来开发此 DSL 进一步。 这些约束是可以定义，请确保在模型处于正确状态的方法。 例如，您可以子级的出生日期晚于其父项的定义一个约束以确保。 验证功能显示警告，如果 DSL 用户尝试保存模型，可断开的任何约束。 有关详细信息，请参阅[特定于域的语言中的验证](../modeling/validation-in-a-domain-specific-language.md)。
 
- 此外可以定义用户可调用的菜单命令。 命令可以修改模型。 它们还可以进行交互与 Visual Studio 中的其他模型和外部资源。 有关更多信息，请参见[如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+ 此外可以定义用户可调用的菜单命令。 命令可以修改模型。 它们还可以进行交互与 Visual Studio 中的其他模型和外部资源。 有关详细信息，请参阅[如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
 ## <a name="deploying-the-dsl"></a>部署 DSL
  若要允许其他用户使用域特定语言，您分发的 Visual Studio 扩展 (VSIX) 文件。 生成 DSL 解决方案时，这被创建。

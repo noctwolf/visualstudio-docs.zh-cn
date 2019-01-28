@@ -10,16 +10,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: aeeacdd9fc52f26a14930f0756be463ac4f87eec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9fd859c3d7fe7af56df976d0e46182dd7f1c6fc6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943767"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964192"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：创建域特定语言解决方案
 使用专用的 Visual Studio 解决方案，可创建域特定语言 (DSL)。
@@ -45,7 +45,7 @@ ms.locfileid: "53943767"
 
    1. 在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。
 
-   2. 此时将出现 “新建项目” 对话框。
+   2. 此时将出现“新建项目”对话框。
 
    3. 下**项目类型**，展开**其他项目类型**节点，然后单击**扩展性**。
 

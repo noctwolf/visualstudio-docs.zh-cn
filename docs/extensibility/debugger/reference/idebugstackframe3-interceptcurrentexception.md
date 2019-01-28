@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::InterceptCurrentException |Microsoft Docs
+title: IDebugStackFrame3::InterceptCurrentException | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57bcb44cf872ae559cba83dae1e85f613f3dd910
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60dfc107cfa65e1a2310c27305a5bc3fe69bd7d5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962397"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006888"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 当它想要截获的当前异常时由当前堆栈帧上的调试器调用。  

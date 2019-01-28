@@ -16,13 +16,13 @@ description: 了解如何使用 Visual Studio 2017 中的免费 Dotfuscator 社�
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 946a799c8041f7d75174696ef83e1cf6c1219f2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 2760f56feabf5b5dfe90adf1b83856a456c9515d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958058"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987058"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator 社区版 (CE)
 

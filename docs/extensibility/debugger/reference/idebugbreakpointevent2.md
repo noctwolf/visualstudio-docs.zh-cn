@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointEvent2 |Microsoft Docs
+title: IDebugBreakpointEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 50b3a7a7-331b-42c8-922c-ff3522ebe1da
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e6a6ecfd5a099ab6f532509438dadd63b49ee27
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79b49d42495f0eacda304b4be0fb1dbc9dde6a97
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960597"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010215"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 当程序在断点处停止时，调试引擎 (DE) 会将此接口发送到会话调试管理器 (SDM)。  

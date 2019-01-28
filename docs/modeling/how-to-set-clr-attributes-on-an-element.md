@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5b9a96f70febc6a33d80557a09cc8bc8e1adf2f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54b4340fe72552f3287a5c6ebec55c9c9d326ac1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938077"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932267"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>如何：在元素上设置 CLR 属性
 自定义属性是特殊属性，可以添加到域元素、 形状、 连接符和关系图。 您可以添加任何属性继承自`System.Attribute`类。
@@ -40,7 +40,7 @@ ms.locfileid: "53938077"
 
      **自定义特性**属性现在显示的属性采用以下格式：
 
-     `[` *AttributeName* `(` *ParameterName* `=` *类型* `)]`
+     `[` *AttributeName* `(` *ParameterName* `=` *Type* `)]`
 
 ## <a name="see-also"></a>请参阅
 

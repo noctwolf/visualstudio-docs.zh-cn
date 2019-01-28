@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd9ee5e1d86982b2e1b0a8495c9b43a14f43988
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 612fa233ceaa2fdee16a75b25f15576d631bd30b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875292"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917528"
 ---
 # <a name="debugger-user-interface-xslt"></a>调试程序用户界面 (XSLT)
 
@@ -91,7 +91,7 @@ ms.locfileid: "53875292"
 
 -   不允许使用用户定义函数。
 
-有关更多信息，请参见[如何：计算 XPath 表达式](../xml-tools/how-to-evaluate-an-xpath-expression.md)。
+有关详细信息，请参阅[如何：计算 XPath 表达式](../xml-tools/how-to-evaluate-an-xpath-expression.md)。
 
 ## <a name="disassembly-window"></a>“反汇编”窗口
  “反汇编”窗口显示 XSLT 编译器生成的程序集代码。 此窗口的用法与所有其他 Visual Studio 反汇编窗口相同。
@@ -101,5 +101,5 @@ ms.locfileid: "53875292"
 ## <a name="see-also"></a>请参阅
 
 - [调试 XSLT](../xml-tools/debugging-xslt.md)
-- [初探调试器](../debugger/debugger-feature-tour.md)   
+- [初探调试器](../debugger/debugger-feature-tour.md)
 - [检查 Visual Studio 中的自动和局部变量窗口中的变量](../debugger/autos-and-locals-windows.md)

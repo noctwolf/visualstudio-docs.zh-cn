@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c74868621725d916177df73f648766f706b71d40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc197968fa6b4995544df89de6f69718d27b80c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950324"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922035"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project 元素 （Visual Studio 模板）
 指定的文件或目录将添加到项目。  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<Project>  
   
 ## <a name="syntax"></a>语法  
@@ -57,7 +57,7 @@ ms.locfileid: "53950324"
 |元素|描述|  
 |-------------|-----------------|  
 |[文件夹](../extensibility/folder-element-visual-studio-project-templates.md)|可选元素。<br /><br /> 指定要添加到项目的文件夹。|  
-|[项目项](../extensibility/projectitem-element-visual-studio-project-templates.md)|可选元素。<br /><br /> 指定要向项目中添加的文件。|  
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|可选元素。<br /><br /> 指定要向项目中添加的文件。|  
   
 ### <a name="parent-elements"></a>父元素  
   

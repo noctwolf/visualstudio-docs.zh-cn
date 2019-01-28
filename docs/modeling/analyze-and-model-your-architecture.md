@@ -28,15 +28,15 @@ helpviewer_keywords:
 - applications, designing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 986c32b0994e2b5ed0434e9d9a6b672dc0fbefff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1bb0d17b5fc6767669fd58f666d0505f38961dc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855044"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986041"
 ---
 # <a name="analyze-and-model-your-architecture"></a>对体系结构进行分析和建模
 
@@ -97,7 +97,7 @@ DSL 是为特定目的而设计的一种表示法。 在 Visual Studio 中通常
 
 **典型用法：**
 
--   生成或配置应用程序的各部分。 若要开发表示法和工具，则需要进行工作。 其产生的结果，与 UML 自定义相比，会更好地适应你的域。
+-   生成或配置应用程序的各部分。 若要开发表示法和工具，则需要进行工作。 其产生的结果，与 UML 自定义相比，会更好地适合你的域。
 -   适用于大型项目或在某些产品系列中（其中 DSL 及其工具的开发投资会通过该产品在多个项目中的使用而回收）。
 
 **请参阅：**

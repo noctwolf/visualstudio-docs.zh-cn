@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81e9d0c92b70ce8499bc737547223d231fcc0009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c58c248650c0ba1e5fdc1fc5c9310b3e4530fbe4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873890"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994522"
 ---
 # <a name="project-priority"></a>项目优先级
 项目项通常是解决方案中只有一个项目的成员。 因此，IDE 可以轻松地确定使用哪个项目打开的项。 但是，如果项是多个项目的成员，IDE 将使用优先级方案来确定打开的项的最佳项目。  

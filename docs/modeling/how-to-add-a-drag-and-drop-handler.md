@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 90385b233e859bf1cdd8ea1617b94efe58ec4cbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70aceff2ab56e4b884d4746cc2ba582138fe7f3b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876388"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54990300"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：添加拖放处理程序
 
@@ -69,7 +69,7 @@ using System.Linq;
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -当用户双击的形状或关系图时，调用此方法。
 
-     有关更多信息，请参见[如何：截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。
+     有关详细信息，请参阅[如何：截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。
 
 定义 `IsAcceptableDropItem(e)` 以确定拖动项是否是可接受的，并定义 ProcessDragDropItem(e) 以在放置该项后更新模型。 这些方法必须先从事件参数中提取项。 有关如何执行该操作的信息，请参阅[如何获取对拖动项的引用](#extracting)。
 

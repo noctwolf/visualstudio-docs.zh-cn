@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a60a050f6403abec471b02e44696081f07c347a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3da94ae10da4632eafda48f145d9bb099d4c3207
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954800"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965128"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225:运算符重载具有命名的备用项
 
@@ -44,21 +44,21 @@ ms.locfileid: "53954800"
 |+ （二进制）|+|+ （二进制）|添加|
 |+=|+=|+=|添加|
 |&|And|&|BitwiseAnd|
-|&=|和 =|&=|BitwiseAnd|
+|&=|And=|&=|BitwiseAnd|
 |&#124;|Or|&#124;|BitwiseOr|
-|&#124;=|或 =|&#124;=|BitwiseOr|
+|&#124;=|Or=|&#124;=|BitwiseOr|
 |--|不可用|--|递减|
 |/|/|/|除|
 |/=|/=|/=|除|
 |==|=|==|Equals|
 |^|Xor|^|Xor|
-|^=|异或 =|^=|Xor|
+|^=|Xor=|^=|Xor|
 |>|>|>|比较|
 |>=|>=|>=|比较|
 |++|不可用|++|递增|
 |<>|!=|Equals|
-|<<|<<|<<|左向右|
-|<<=|<<=|<<=|左向右|
+|<<|<<|<<|LeftShift|
+|<<=|<<=|<<=|LeftShift|
 |<|<|<|比较|
 |<=|<=|\<=|比较|
 |&&|不可用|&&|LogicalAnd|
@@ -69,11 +69,11 @@ ms.locfileid: "53954800"
 |* （二进制）|*|*|相乘|
 |*=|不可用|*=|相乘|
 |~|Not|~|OnesComplement|
-|>>|>>|>>|组合键|
-=|不可用|>>=|组合键|
+|>>|>>|>>|RightShift|
+=|不可用|>>=|RightShift|
 |-（二进制）|-（二进制）|-（二进制）|减|
 |-=|不可用|-=|减|
-|true|为 true 时|不可用|IsTrue （属性）|
+|true|IsTrue|不可用|IsTrue （属性）|
 |-（一元）|不可用|-|求反|
 |+ （一元）|不可用|+|Plus|
 |False|IsFalse|False|IsTrue （属性）|

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0761956cd18945a50bdb45fa7624a72f645683e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 744b18e3b52105679f9b6a82083d6ffd7fe9268d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831779"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969806"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函数
 此函数具有给定名称指定现有父项目下创建子项目`lpParentProjPath`参数。  
@@ -61,7 +61,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功创建子项目。|  
 |SCC_E_INITIALIZEFAILED|无法初始化父项目。|  
@@ -85,7 +85,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreateSubProject 和 SccGetParentProjectPath 的技术说明  
  将解决方案和项目添加到源代码管理中简化了 Visual Studio 以最大程度减少系统会提示用户选择源代码管理系统中的位置的次数。 如果源代码管理插件支持两个新函数，这些更改激活由 Visual Studio`SccCreateSubProject`和`SccGetParentProjectPath`。 但是，可以使用以下注册表项来禁用这些更改并还原到以前的 Visual Studio (源控制插件 API 版本 1.1) 行为：  
   
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateSolutionRootFolderInSourceControl"= dword: 00000001**  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001**  
   
  如果此注册表项不存在，或设置为 dword:00000000，Visual Studio 将尝试使用新函数`SccCreateSubProject`和`SccGetParentProjectPath`。  
   

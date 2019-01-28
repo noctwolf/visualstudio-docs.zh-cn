@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 148640c7522f133c780703df4052ef3235d8493a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c91f9aec4bd3db9a9495b2a05ce5153bf45f2f52
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986630"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009760"
 ---
 # <a name="walkthrough-display-statement-completion"></a>演练：显示语句完成
 可以通过定义您想要提供完成的标识符，然后触发完成会话实现的基于语言的语句结束。 可以在语言服务的上下文中定义的语句结束、 定义您自己的文件扩展名和内容类型，然后显示完成只是该类型。 或者，可以触发的现有内容类型完成 — 例如，"纯文本"。 本演练演示如何触发"纯文本"内容类型，这是文本文件的内容类型的语句完成。 "Text"内容类型是所有其他内容类型，包括代码和 XML 文件的上级。  
@@ -45,7 +45,7 @@ ms.locfileid: "53986630"
   
      Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.visualstudio.shell.14.0 的引用  
+     Microsoft.VisualStudio.Shell.14.0  
   
      Microsoft.VisualStudio.Shell.Immutable.10.0  
   

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 7b06883f-35de-41e2-9a9e-d3edba236f17
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97ebd46d985a58ac0caffb81bf9acd77f5942077
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1cd49b27804e35e28395c78a6e177db1461a54f4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935237"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943365"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>删除 .Proj 和 .Sln 文件中的源代码管理信息
 在版本 1.2 的源控制插件 API SCC 的信息存储在 MSSCCPRJ。SCC 文件。 MSSCCPRJ 的优点。SCC 文件是 SCC 信息是源不的控制，就像在.proj 和.sln 文件中。  

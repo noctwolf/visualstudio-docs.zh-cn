@@ -7,13 +7,13 @@ helpviewer_keywords:
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
-manager: douge
-ms.openlocfilehash: 3b33d84f62db9cfe1371ffc540830f63d93e67d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 0923b179c3a2237c6923a7f889c802239d824fb1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926234"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935704"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands 与OleMenuCommands
 可以通过从派生来创建菜单命令<xref:System.ComponentModel.Design.MenuCommand>或从<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>对象，并实现相应的事件处理程序。 在大多数情况下可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就和 VSPackage 项目模板工作方式一样，但有时你可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
@@ -135,7 +135,7 @@ ms.locfileid: "53926234"
   
      [!code-csharp[ButtonGroup#22](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_6.cs)]  
   
-     Visual Studio 包模板提供了两个集合：`GuidList` 和 `PkgCmdIDList`，以保留命令的 GUID 和 ID。 对于由模板添加的命令，会将其自动填充，但对于你手动添加的命令，你还必须将 ID 条目添加到 `PkgCmdIdList` 类。  
+     Visual Studio 包模板提供了两个集合： `GuidList` 和 `PkgCmdIDList`，以保留命令的 GUID 和 ID。 对于由模板添加的命令，会将其自动填充，但对于你手动添加的命令，你还必须将 ID 条目添加到 `PkgCmdIdList` 类。  
   
      或者，你可以使用 GUID 的原始字符串值和 ID 的整数值来填充 <xref:System.ComponentModel.Design.CommandID> 对象。  
   
@@ -145,7 +145,7 @@ ms.locfileid: "53926234"
   
      <xref:System.ComponentModel.Design.MenuCommand> 适用于静态命令。 动态菜单项显示需要 QueryStatus 事件处理程序。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 添加会在命令的主机菜单打开时发生的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件以及某些其他属性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。  
   
-     由包模板创建的命令默认传递给包类的 `Initialize()` 方法中的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 对象。  
+     由包模板创建的命令默认传递给包类的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 方法中的 `Initialize()` 对象。  
   
 4.  <xref:System.ComponentModel.Design.MenuCommand> 适用于静态命令。 动态菜单项显示需要 QueryStatus 事件处理程序。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 添加会在命令的主机菜单打开时发生的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件以及某些其他属性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。  
   
@@ -207,7 +207,7 @@ ms.locfileid: "53926234"
   
 1. 为有效命令返回 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 。  
   
-2. 设置 `prgCmds` 参数的 `cmdf` 元素。  
+2. 设置 `cmdf` 参数的 `prgCmds` 元素。  
   
     `cmdf` 元素的值是来源于 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 枚举的值的逻辑联合，这些值使用逻辑 OR (`|`) 运算符组合在一起。  
   
@@ -235,7 +235,7 @@ ms.locfileid: "53926234"
   
       `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXTMENU`  
   
-   - 如果该命令使用 `TEXTCHANGES` 标志，请将 `pCmdText` 参数的 `rgwz` 元素设置为命令的新文本并将 `pCmdText` 参数的 `cwActual` 元素设置为命令字符串的大小。  
+   - 如果该命令使用 `TEXTCHANGES` 标志，请将 `rgwz` 参数的 `pCmdText` 元素设置为命令的新文本并将 `cwActual` 参数的 `pCmdText` 元素设置为命令字符串的大小。  
   
      对于错误条件， <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法必须处理以下的错误情况：  
   

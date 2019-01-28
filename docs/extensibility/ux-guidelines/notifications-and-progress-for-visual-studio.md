@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c0241a16caec1fd25b3ccd177042af3be90a6b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ecc47391c3ab80b0c8752de840c6accfb66f0212
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942666"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936692"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Visual Studio 的通知和进度
 ##  <a name="BKMK_NotificationSystems"></a> 通知系统  
@@ -111,7 +111,7 @@ ms.locfileid: "53942666"
 ####  <a name="BKMK_EmbeddedStatusBars"></a> 嵌入式的状态栏  
  IDE 状态栏是动态的使用其客户端区域上下文设置为活动文档窗口和更新用户的上下文和/或系统响应上的信息，因为很难维护连续显示的信息或提供长期的状态异步进程。 例如，IDE 状态栏会显示不适合的多个运行和/或立即可操作的项选择的测试运行结果的通知。 请务必保留此类上下文中的文档或工具窗口进行了选择用户或将启动一个进程的状态信息。  
   
- ![嵌入式的状态栏](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901年 09_EmbeddedStatusBar")  
+ ![Embedded status bar](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901-09_EmbeddedStatusBar")  
   
  **在 Visual Studio 中的嵌入式的状态栏**  
   

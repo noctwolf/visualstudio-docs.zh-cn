@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21826a432dbbebb6ae38db4ed5b1ca33d95cf9f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d66af0c4ce83feb1153cfd53bf12d8ae40f38b69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941513"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071002"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 元素 （Visual Studio 模板）
 将分类的项目模板，使其显示在指定的组**新的项目**或**添加新项**对话框。  
@@ -26,9 +26,9 @@ ms.locfileid: "53941513"
 > [!WARNING]
 >  启动 Visual Studio 2012 中的 c + + 支持项目模板。 不支持在 Visual Studio 2010 及更早版本的 c + +。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<项目类型 >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ProjectType>  
   
 ## <a name="syntax"></a>语法  
   

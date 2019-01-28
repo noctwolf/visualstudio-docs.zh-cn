@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c971f753656ad876ba3a2401ddd2033f02cbac0a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54b4d1b3b1dca44acc092cb3a9a639c196ce8e50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831753"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010059"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>语言服务和编辑器扩展入门
 编辑器扩展可用于将语言服务功能，例如大纲显示、 大括号匹配、 IntelliSense 和灯泡添加到您自己的编程语言或任何内容类型。 此外可以自定义外观和行为的 Visual Studio 编辑器中，例如着色、 边距、 修饰和其他可视元素的文本。 您还可以定义自己的类型的内容，并指定的外观和行为的内容将显示的文本视图。  
@@ -64,7 +64,7 @@ ms.locfileid: "53831753"
 ## <a name="run-extensions-in-the-experimental-instance"></a>在实验实例中运行扩展  
  通过将其部署在以下实验性文件夹 （在 Windows Vista 和 Windows 7） 中开发扩展时，可以使你的 Visual Studio 的工作版本：  
   
- *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{公司}\\{ExtensionID}*  
+ *{%LOCALAPPDATA%}\VisualStudio\10.0Exp\Extensions\\{Company}\\{ExtensionID}*  
   
  其中 *%LOCALAPPDATA%* 是登录的用户的名称*公司*是拥有该扩展，该公司的名称并*ExtensionID*是扩展的 ID。  
   

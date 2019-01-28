@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec02b9077108687b02e76db22f6349253bdbcb1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b424ab73861a5875554d8c6a658c1f1b4bc72035
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841565"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54963198"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 此接口表示一个自定义属性，并可以提供名称、 父级和类类型的属性。  

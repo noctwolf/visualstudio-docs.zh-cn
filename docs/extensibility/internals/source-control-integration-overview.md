@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0a354ebafe81b707fa6b0560e473a753a36685d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee148a9455e9d1fc0f5615ecc03d15154bff20a7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902979"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919312"
 ---
 # <a name="source-control-integration-overview"></a>源代码管理集成概述
 本部分将进行比较的两种方法来将集成到 Visual Studio 源代码管理;源代码管理插件并提供了源代码管理解决方案，并突出显示新的源代码管理功能的 VSPackage。 Visual Studio 支持源代码管理 Vspackage 和源代码控制插件之间手动切换，以及自动基于解决方案的切换。  

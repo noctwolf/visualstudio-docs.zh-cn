@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5fc57c894c1e3a616062f01cc46103b4714fa35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ee170d42390ed04292be28740dde4d597b7f7d9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849040"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005400"
 ---
 # <a name="how-to-edit-xml-files"></a>如何：编辑 XML 文件
 
@@ -59,7 +59,7 @@ ms.locfileid: "53849040"
 
 1.  从**文件**菜单中，选择**新建**，然后选择**项目**。
 
-     此时将出现 “新建项目” 对话框。
+     此时将出现“新建项目”对话框。
 
 2.  选择您的选择，选择的代码语言**空项目**，然后单击**确定**。
 

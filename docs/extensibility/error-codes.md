@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d9139ca59394c8d5de69ddf77f51bf57b8b7619
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f05a28ab046c1c0221162bce623a2ccf983f3d43
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931968"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958142"
 ---
 # <a name="error-codes"></a>错误代码
 当源控制插件 API 函数将返回错误时，它应是以下的错误代码之一。 所有错误都是负数，警告或信息性错误代码都为正数，并且成功是 0。  
   
-|错误代码|值|描述|  
+|错误代码|“值”|描述|  
 |----------------|-----------|-----------------|  
 |`SCC_I_SHARESUBPROJOK`|7|插件支持从源代码管理中两个步骤中添加文件。 有关详细信息，请参阅[SccSetOption](../extensibility/sccsetoption-function.md)。|  
 |`SCC_I_FILEDIFFERS`|6|本地文件是不同于源代码管理数据库中的文件 (例如， [SccDiff](../extensibility/sccdiff-function.md)可能会返回此值)。|  

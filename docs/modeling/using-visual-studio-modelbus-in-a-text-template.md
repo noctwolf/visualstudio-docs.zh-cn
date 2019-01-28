@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 69884d3dd52f2aaab04dac8f32f18d286f5929af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3db39365705a019672154c24e54dce01a09390e8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828233"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030921"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>在文本模板中使用 Visual Studio ModelBus
 如果您编写读取模型，其中包含 Visual Studio ModelBus 引用的文本模板，可能需要解析要访问的目标模型的引用。 在这种情况下，您需要调整文本模板和引用特定于域的语言 (Dsl):

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62824c46e682b0418b8797d6adee0b504f04b414
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 852b4284bbbf59ce8f3964d98f0464e583f1444f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987202"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028668"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>在中断模式下的表达式计算
 以下部分介绍调试器处于中断模式下，必须执行表达式计算时，会发生的过程。  
@@ -31,7 +31,7 @@ ms.locfileid: "53987202"
   
 3.  如果 ParseText 不会返回 S_OK，则返回错误的原因。  
   
-     -否则为-  
+     -otherwise-  
   
      如果 ParseText 不返回 S_OK，SDM 可以然后调用[IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或[IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)从分析得出的表达式获取最终值。  
   

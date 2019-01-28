@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8306eb62317807913aa0d23e19b6fb5adc4dfa53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba9f4123b69a2decbcc46433e85082a4897b378d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961950"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999465"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 模板清单架构参考
 此架构描述了 Visual Studio 模板清单的格式 (*.vstman*) 生成的 Visual Studio 项目或项模板的文件。 位置和有关模板的其他相关信息，还介绍了架构。  
@@ -51,7 +51,7 @@ ms.locfileid: "53961950"
   
 -   **RelativePathOnDisk**:磁盘上的模板文件的相对路径。 此位置还定义模板的放置在模板树中所示**新的项目**或**新项**对话框。 有关模板部署为一个目录和单个文件，此路径是指包含模板文件的目录。 有关模板部署为 *.zip*文件，此路径应为路径 *.zip*文件。  
   
--   * * VSTemplateHeader:一个[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)描述该标头的元素。  
+-   **VSTemplateHeader:一个[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)描述该标头的元素。  
   
 ### <a name="parent-element"></a>父元素  
  **VSTemplateManifest**  
