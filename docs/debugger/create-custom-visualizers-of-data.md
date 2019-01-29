@@ -1,8 +1,6 @@
 ---
 title: 创建自定义数据可视化工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/07/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -21,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
-ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
-ms.translationtype: MT
+ms.openlocfilehash: 9bb693e509eb12b01d3c70f8f341b39de06e5797
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51607817"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54204383"
 ---
-# <a name="create-custom-data-visualizers"></a>创建自定义数据可视化工具 
+# <a name="create-custom-data-visualizers"></a>创建自定义数据可视化工具
  一个*可视化工具*属于[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]调试器用户界面中以适合其数据类型的方式显示变量或对象。 例如，HTML 可视化工具解释 HTML 字符串，并显示结果，就像在浏览器窗口中显示。 位图可视化工具解释位图结构并显示它所代表的图形。 某些可视化工具可让你还可以查看的数据修改。
 
  [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 调试器包括六个标准可视化工具。 文本、 HTML、 XML 和 JSON 可视化工具处理字符串对象。 WPF 树可视化工具显示 WPF 对象可视化树的属性。 数据集可视化工具一种用于 DataSet、 DataView 和 DataTable 对象。 
@@ -42,13 +40,13 @@ ms.locfileid: "51607817"
  > [!NOTE]
  > 若要创建的本机代码的自定义可视化工具，请参阅[SQLite 本机调试器可视化工具](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer)示例。 对于 UWP 和 Windows 8.x 应用程序不支持自定义可视化工具。
 
-您可以编写除任何托管类的对象的自定义可视化工具<xref:System.Object>和<xref:System.Array>。  
+可以为任何托管类（除 <xref:System.Object> 和 <xref:System.Array> 之外）的对象编写自定义可视化工具。  
   
 调试器可视化工具的结构由两部分组成：  
   
 - *调试器端*运行在 Visual Studio 调试器中，并创建并显示可视化工具用户界面。  
   
-- *调试对象端*在 Visual Studio 正在调试的进程中运行 (*调试对象*)。 调试对象进程中存在要实现可视化效果 （例如，字符串对象） 的数据对象。 调试对象端将对象发送到调试器端，在您创建的用户界面中显示。  
+- “调试对象端”在 Visual Studio 正在调试的进程（“调试对象”）中运行。 调试对象进程中存在要实现可视化效果 （例如，字符串对象） 的数据对象。 调试对象端将对象发送到调试器端，在您创建的用户界面中显示。  
 
 在调试器端接收中的数据对象*对象提供程序*实现<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>接口。 调试对象端将通过对象发送*对象源*，它派生自<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>。 
 
@@ -94,4 +92,4 @@ ms.locfileid: "51607817"
   
  [可视化工具 API 参考](../debugger/visualizer-api-reference.md)  
   
- [在调试器中查看数据](../debugger/viewing-data-in-the-debugger.md)
+ [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)

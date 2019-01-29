@@ -1,8 +1,6 @@
 ---
 title: 在调试器中查看线程 |Microsoft Docs
-ms.custom: ''
 ms.date: 10/29/2018
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
@@ -25,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 764eb46fb387e1a007362b02a0f62cf478c771fe
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+ms.openlocfilehash: d9759b988e592b122866701b398eec55aedd8e95
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066218"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54228014"
 ---
-# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window"></a>通过使用线程窗口在 Visual Studio 调试器中查看主题
+# <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>通过使用线程窗口在 Visual Studio 调试器中查看的主题 (C#，Visual Basic、 c + +)
 在中**线程**窗口中，您可以检查和使用的线程中进行调试的应用程序。 有关如何使用的分步指导**线程**窗口中，请参阅[演练：使用线程窗口调试](../debugger/how-to-use-the-threads-window.md)。
 
 ## <a name="use-the-threads-window"></a>使用“线程”窗口 
@@ -40,29 +38,29 @@ ms.locfileid: "53066218"
   
 - **标记**在此未标记的专栏中，可以标记要特别注意的线程。 有关如何标记一个线程的信息，请参阅[如何： 标记线程和取消标记线程](../debugger/how-to-flag-and-unflag-threads.md)。  
   
-- 当前线程在此未标记的列，黄色箭头指示当前线程。 概述箭头指示非当前线程的当前调试器上下文。
+- **当前线程**： 在此未标记的列，黄色箭头指示当前线程。 概述箭头指示非当前线程的当前调试器上下文。
   
 - **ID**显示每个线程的标识号。  
   
-- 托管 ID显示托管线程的托管的标识号。  
+- **托管 ID**： 显示托管线程的托管的标识号。  
   
 - **Category**。显示为用户界面线程、 远程过程调用处理程序或工作线程的线程的类别。 一个特殊类别标识应用程序的主线程。  
   
-- /Name:如果有的话，或按名称标识每个线程\<无名称 >。  
+- **名称**： 如果有的话，或按名称标识每个线程\<无名称 >。  
   
-- **位置**显示线程正在其中运行。 可以展开此位置以显示线程的完整调用堆栈。  
+- **location**：显示线程正在其中运行。 可以展开此位置以显示线程的完整调用堆栈。  
   
-- 优先级（默认情况下隐藏） 的高级的列，显示系统已分配给每个线程的优先级。  
+- **优先级**： 高级的列 （默认情况下隐藏），显示系统已分配给每个线程的优先级。  
   
-- 关联掩码高级的列 （默认情况下隐藏），显示了每个线程的处理器关联掩码。 在多处理器系统中，关联掩码确定线程可以在哪些处理器上运行。  
+- **关联掩码**： 高级的列 （默认情况下隐藏），显示了每个线程的处理器关联掩码。 在多处理器系统中，关联掩码确定线程可以在哪些处理器上运行。  
   
-- 挂起项计数高级的列 （默认情况下隐藏），显示挂起项计数。 此计数确定线程是否可以运行。 有关挂起计数的详细信息，请参阅[冻结和解冻线程](#freeze-and-thaw-threads)。  
+- **挂起项计数**： 高级的列 （默认情况下隐藏），显示挂起项计数。 此计数确定线程是否可以运行。 有关挂起计数的详细信息，请参阅[冻结和解冻线程](#freeze-and-thaw-threads)。  
   
-- 进程名（默认情况下隐藏） 的高级的列，显示每个线程所属的进程。 在调试多个进程时，此列中的数据很有用。  
+- **进程名称**： 高级的列 （默认情况下隐藏），显示每个线程所属的进程。 在调试多个进程时，此列中的数据很有用。  
 
-- 进程 ID（默认情况下隐藏） 的高级的列，显示每个线程所属的进程 ID。 
+- **进程 ID**： 为每个线程所属的高级的列 （默认情况下隐藏），显示进程 ID。 
 
-- 传输限定符高级的列 （默认情况下隐藏） 唯一标识调试器连接到的计算机。 
+- **传输限定符**： 高级的列 （默认情况下隐藏），唯一标识调试器连接到计算机。 
   
 ### <a name="to-display-the-threads-window-in-break-mode-or-run-mode"></a>以中断模式或运行模式显示“线程”窗口  
   
@@ -73,7 +71,7 @@ ms.locfileid: "53066218"
 -   在顶部的工具栏**线程**窗口中，选择**列**。 然后，选中或清除要显示或隐藏的列的名称。  
 
 ## <a name="display-flagged-threads"></a>显示标记的线程  
- 在“线程”窗口中，可以用图标标记来标记要格外关注的线程。 有关更多信息，请参见[如何：标记线程和取消标记线程](../debugger/how-to-flag-and-unflag-threads.md)。 在“线程”窗口中，可以选择显示所有线程或仅显示标记的线程。  
+ 在“线程”窗口中，可以用图标标记来标记要格外关注的线程。 有关详细信息，请参阅[如何：标记线程和取消标记线程](../debugger/how-to-flag-and-unflag-threads.md)。 在“线程”窗口中，可以选择显示所有线程或仅显示标记的线程。  
   
 ### <a name="to-display-only-flagged-threads"></a>仅显示标记的线程  
   
