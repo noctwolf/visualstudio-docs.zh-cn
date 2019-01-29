@@ -1,8 +1,6 @@
 ---
 title: 图形帧分析 |Microsoft Docs
-ms.custom: ''
 ms.date: 02/09/2017
-ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
@@ -11,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0ae541830adab222b07d1f16ce99e4957e380e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4aced0df16791e44c7fd8be67ccc22343b1272fa
+ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838096"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54154371"
 ---
 # <a name="graphics-frame-analysis"></a>图形帧分析
 使用 Visual Studio 图形分析器中的图形帧分析可分析并优化你的 Direct3D 游戏或应用的呈现性能。  
@@ -28,7 +26,7 @@ ms.locfileid: "49838096"
   
 - 帧分析可以生成硬件配置和设备的性能信息，而非捕获信息的硬件配置和设备的性能信息。  
   
-- 帧分析可以从之前捕获的信息生成新的性能摘要-例如，当 GPU 驱动程序进行了优化或公开附加调试功能。  
+- 帧分析可以从之前捕获的信息中生成新的性能摘要，例如，在 GPU 驱动程序已优化或公开附加调试功能时。  
   
   除了这些优点以外，帧分析还可以对播放期间帧得以呈现的方式作出更改，以便它可以显示这些更改可能如何影响应用的呈现性能的相关信息。 你可以使用这些信息在可能的优化策略中进行决策，而无需实施所有策略，然后捕获并比较所有结果。  
   
@@ -37,14 +35,14 @@ ms.locfileid: "49838096"
   若要查看演示，帧分析可以为你的应用执行的操作，可以观看[Visual Studio 图形帧分析](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool)第 9 频道上的视频。  
   
 ## <a name="using-frame-analysis"></a>使用帧分析  
- 在可以使用帧分析之前，你必须在应用运行时从应用中捕获图形信息，正如你在使用任何其他图形分析器工具时进行的操作。 然后，在图形日志文档 (.vsglog) 窗口中，选择**帧分析**选项卡。  
+ 在可以使用帧分析之前，你必须在应用运行时从应用中捕获图形信息，正如你在使用任何其他图形分析器工具时进行的操作。 然后，在图形日志文档 (.vsglog) 窗口中，选择“帧分析”选项卡。  
   
  ![选择帧分析选项卡](media/pix_frame_analysis_select_tab.png "pix_frame_analysis_select_tab")  
   
  在分析完成之后，将显示结果。 帧分析选项卡顶部将显示时间线和摘要表。 选项卡底部将显示详细信息表。 如果在播放期间产生错误或警告，则将在时间线上对它们进行汇总；你可以遵循此处的链接以了解错误和警告的详细信息。  
   
 ### <a name="interpreting-results"></a>解释结果  
- 通过解释每个变体的结果，可推断有关你的应用的呈现性能和行为的有用信息。 有关呈现变体的详细信息，请参阅[变体](#Variants)这篇文章中更高版本。  
+ 通过解释每个变体的结果，可推断有关你的应用的呈现性能和行为的有用信息。 有关呈现变体的详细信息，请参阅本文后面的[变体](#Variants)。  
   
  有些结果直接指示变体如何影响呈现性能：  
   
@@ -64,7 +62,7 @@ ms.locfileid: "49838096"
   
 - 如果“一半/四分之一纹理尺寸”变体显示显著的性能提升，则很可能你的纹理占用了太多内存、消耗了太多带宽，或使用了效率低下的纹理缓存。 如果此变体显示性能中没有更改，则你很可能可以使用更大、细节更多的纹理，而无需性能开销。  
   
-  当硬件计数器可用时，你可以使用它们收集有关应用可能会遭遇呈现性能问题原因的非常详细的信息。 所有功能级别 9.2 和更高版本设备都支持深度封闭查询 (**封闭的像素为单位**计数器) 和时间戳。 其他硬件计数器也可能可用，这取决于 GPU 制造商是否实施了硬件计数器并在驱动程序中公开了这些计数器。 你可以使用这些计数器来确认摘要表中显示的结果的确切成因，例如，你可以通过检查深度测试封闭的像素的百分比，确定过度绘制是否是一个因素。  
+  当硬件计数器可用时，你可以使用它们收集有关应用可能会遭遇呈现性能问题原因的非常详细的信息。 所有功能级别 9.2 和更高设备支持深度封闭查询（“封闭的像素”计数器）以及时间戳。 其他硬件计数器也可能可用，这取决于 GPU 制造商是否实施了硬件计数器并在驱动程序中公开了这些计数器。 你可以使用这些计数器来确认摘要表中显示的结果的确切成因，例如，你可以通过检查深度测试封闭的像素的百分比，确定过度绘制是否是一个因素。  
   
 ### <a name="timeline-and-summary-table"></a>时间线和摘要表  
  默认情况下，显示时间线和摘要表，并且折叠其他部分。  
@@ -172,23 +170,23 @@ ms.locfileid: "49838096"
 ### <a name="warp"></a>WARP  
  帧分析旨在用于配置和提升真实硬件上的呈现性能。 不阻止在 WARP 设备上运行帧分析，但它通常不是做因为在高端 CPU 上运行的 WARP 的慢甚至功能最少的现代 Gpu 中，并且 WARP 的性能可能大不相同具体取决于特定的 CPU上运行。  
   
-##  <a name="Variants"></a> 变体  
- 帧分析可以在播放期间呈现帧的方式为每个更改称为*变体*。 帧分析检查的变体对应于你为了提升应用的呈现性能或视觉质量可能做出的相对容易的常见更改，例如，减小纹理大小、使用纹理压缩或启用不同种类的抗锯齿。 这些变体将重写应用的常用呈现上下文和参数。 摘要如下：  
+##  <a name="Variants"></a> 变量  
+ 播放期间，帧分析对呈现帧的方式所做出的每个更改称为“变体”。 帧分析检查的变体对应于你为了提升应用的呈现性能或视觉质量可能做出的相对容易的常见更改，例如，减小纹理大小、使用纹理压缩或启用不同种类的抗锯齿。 这些变体将重写应用的常用呈现上下文和参数。 摘要如下：  
   
-|变体|描述|  
+|变体|说明|  
 |-------------|-----------------|  
-|**1x1 视区大小**|将所有呈现器目标上的视口尺寸缩小为 1x1 像素。<br /><br /> 有关详细信息，请参阅[1x1 视口大小变体](1x1-viewport-size-variant.md)|  
-|**0 x MSAA**|在所有呈现器目标上禁用多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅[0 x / 2 x / 4 msaa 变体](0x-2x-4x-msaa-variants.md)|  
-|**2x MSAA**|在所有呈现器目标上启用 2x 多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅[0 x / 2 x / 4 msaa 变体](0x-2x-4x-msaa-variants.md)|  
-|**4x MSAA**|在所有呈现器目标上启用 4x 多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅[0 x / 2 x / 4 msaa 变体](0x-2x-4x-msaa-variants.md)|  
+|**1x1 视区大小**|将所有呈现器目标上的视口尺寸缩小为 1x1 像素。<br /><br /> 有关详细信息，请参阅 [1x1 视区大小变体](1x1-viewport-size-variant.md)|  
+|**0x MSAA**|在所有呈现器目标上禁用多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅 [0x/2x/4x MSAA 变体](0x-2x-4x-msaa-variants.md)|  
+|**2x MSAA**|在所有呈现器目标上启用 2x 多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅 [0x/2x/4x MSAA 变体](0x-2x-4x-msaa-variants.md)|  
+|**4x MSAA**|在所有呈现器目标上启用 4x 多重采样抗锯齿 (MSAA)。<br /><br /> 有关详细信息，请参阅 [0x/2x/4x MSAA 变体](0x-2x-4x-msaa-variants.md)|  
 |**点纹理筛选**|针对所有相应的纹理采样，将筛选模式设置为 `DXD11_FILTER_MIN_MAG_MIP_POINT`（点纹理筛选）。<br /><br /> 有关详细信息，请参阅[Point、 Bilinear、 Trilinear 和 Anisotropic 纹理过滤变体](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
 |**双线性纹理筛选**|针对所有相应的纹理采样，将筛选模式设置为 `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT`（双线性纹理筛选）。<br /><br /> 有关详细信息，请参阅[Point、 Bilinear、 Trilinear 和 Anisotropic 纹理过滤变体](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
-|**三线性纹理筛选**|针对所有相应的纹理采样，将筛选模式设置为 `DXD11_FILTER_MIN_MAG_MIP_LINEAR`（三线性纹理筛选）。<br /><br /> 有关详细信息，请参阅[Point、 Bilinear、 Trilinear 和 Anisotropic 纹理过滤变体](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
-|**各向异性纹理筛选**|筛选模式设置为`DXD11_FILTER_ANISOTROPIC`并`MaxAnisotropy`到`16`(16 x 各向异性纹理筛选) 的所有相应的纹理采样。<br /><br /> 有关详细信息，请参阅[Point、 Bilinear、 Trilinear 和 Anisotropic 纹理过滤变体](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
-|**16bpp 呈现器目标格式**|针对所有呈现器目标和后台缓冲区，将像素格式设置为 `DXGI_FORMAT_B5G6R5_UNORM`（16bpp，565 格式）。<br /><br /> 有关详细信息，请参阅[16bpp 呈现目标格式变体](16bpp-render-target-format-variant.md)|  
-|**Mip 贴图生成**|对非呈现器目标的所有纹理启用 Mip 贴图。<br /><br /> 有关详细信息，请参阅[Mip 贴图生成变体](mip-map-generation-variant.md)。|  
-|**一半纹理尺寸**|将非呈现器目标的所有纹理上的纹理尺寸减小为其每种尺寸的原始大小的一半。 例如，256x128 纹理将减小为 128x64 纹素。<br /><br /> 有关详细信息，请参阅[half/quarter 纹理维度变体](half-quarter-texture-dimensions-variant.md)。|  
-|**四分之一纹理尺寸**|将非呈现器目标的所有纹理上的纹理尺寸减小为其每种尺寸的原始大小的四分之一。 例如，256x128 纹理将减小为 64x32 纹素。<br /><br /> 有关详细信息，请参阅[half/quarter 纹理维度变体](half-quarter-texture-dimensions-variant.md)。|  
-|**BC 纹理压缩**|对所有包含 B8G8R8X8、B8G8R8A8 或 R8G8B8A8 像素格式变体的纹理启用块压缩。 通过使用 BC1 压缩 B8G8R8X8 格式变体；通过使用 BC3 压缩 B8G8R8A8 和 R8G8B8A8 格式变体。<br /><br /> 有关详细信息，请参阅[BC 纹理压缩变体](bc-texture-compression-variant.md)。|  
+|**三双线性纹理筛选**|针对所有相应的纹理采样，将筛选模式设置为 `DXD11_FILTER_MIN_MAG_MIP_LINEAR`（三线性纹理筛选）。<br /><br /> 有关详细信息，请参阅[Point、 Bilinear、 Trilinear 和 Anisotropic 纹理过滤变体](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
+|**各向异性纹理筛选**|针对所有相应的纹理采用，将筛选模式设置为 `DXD11_FILTER_ANISOTROPIC`，并将 `MaxAnisotropy` 设置为 `16`（16x 各向异性纹理筛选）。<br /><br /> 有关详细信息，请参阅[Point、 Bilinear、 Trilinear 和 Anisotropic 纹理过滤变体](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md)。|  
+|**16bpp 呈现器目标格式**|针对所有呈现器目标和后台缓冲区，将像素格式设置为 `DXGI_FORMAT_B5G6R5_UNORM`（16bpp，565 格式）。<br /><br /> 有关详细信息，请参阅 [16bpp 呈现目标格式变体](16bpp-render-target-format-variant.md)|  
+|**Mip 贴图生成**|对非呈现器目标的所有纹理启用 Mip 贴图。<br /><br /> 有关详细信息，请参阅 [Mip 贴图生成变体](mip-map-generation-variant.md)。|  
+|**一半纹理尺寸**|将非呈现器目标的所有纹理上的纹理尺寸减小为其每种尺寸的原始大小的一半。 例如，256x128 纹理将减小为 128x64 纹素。<br /><br /> 有关详细信息，请参阅 [Half/Quarter 纹理维度变体](half-quarter-texture-dimensions-variant.md)。|  
+|**四分之一纹理尺寸**|将非呈现器目标的所有纹理上的纹理尺寸减小为其每种尺寸的原始大小的四分之一。 例如，256x128 纹理将减小为 64x32 纹素。<br /><br /> 有关详细信息，请参阅 [Half/Quarter 纹理维度变体](half-quarter-texture-dimensions-variant.md)。|  
+|**BC 纹理压缩**|对所有包含 B8G8R8X8、B8G8R8A8 或 R8G8B8A8 像素格式变体的纹理启用块压缩。 通过使用 BC1 压缩 B8G8R8X8 格式变体；通过使用 BC3 压缩 B8G8R8A8 和 R8G8B8A8 格式变体。<br /><br /> 有关详细信息，请参阅 [BC 纹理压缩变体](bc-texture-compression-variant.md)。|  
   
- 大多数变体的结果是强制性规定：“将纹理大小减小一半速度会快 25%”或“启用 2x MSAA 速度仅慢 2%”。 其他变体可能会需要更多解释，例如，如果将视口尺寸更改为 1x1 的变体显示较大的性能提升，则可能指示呈现遇到低填充率瓶颈；或者，如果性能未出现显著变化，则可能指示呈现遇到顶点处理瓶颈。
+ 大多数变体的结果是强制性规定："减少了一半纹理大小是速度更快 25%"或者"启用 2x MSAA 速度仅慢 2%"。 其他变体可能会需要更多解释，例如，如果将视口尺寸更改为 1x1 的变体显示较大的性能提升，则可能指示呈现遇到低填充率瓶颈；或者，如果性能未出现显著变化，则可能指示呈现遇到顶点处理瓶颈。
