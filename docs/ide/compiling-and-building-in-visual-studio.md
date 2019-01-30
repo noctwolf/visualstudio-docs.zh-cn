@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7681ad9cd109dbc8da266721d9d8382d3552eda6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: d091791a7ad5f7146aa6f916393e051388587dd7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53062588"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023322"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>在 Visual Studio 中编译和生成
 
@@ -39,7 +39,7 @@ ms.locfileid: "53062588"
 本节中的文档将详细介绍基于 IDE 的生成过程。 有关其他方法的详细信息，请分别参阅 [MSBuild](../msbuild/msbuild.md) 和 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中编译和生成](/visualstudio/mac/compiling-and-building)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中编译和生成](/visualstudio/mac/compiling-and-building)。
 
 ## <a name="overview-of-building-from-the-ide"></a>从 IDE 生成的概述
 

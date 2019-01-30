@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d617d6fec273997f135010271de1df0240f58594
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56dbbded2f141ab2e4be02c81f4e40fd6f523809
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915463"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55020797"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport 命令行工具可用于创建报表，这些报表使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具分析数据文件。 默认的报表格式为 .csv 文件。  
@@ -42,7 +42,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
  `vspfilename1 and vspfilename2` 必须是有效的 .vsp 或.vsps 文件。  
   
 ## <a name="symbol-files"></a>符号文件  
- 为了显示函数名称和行号等符号信息，VSPerfReport 要求访问被分析组件的符号 (.PDB) 文件以及 Windows 符号文件。 有关更多信息，请参见[如何：通过命令行指定符号文件位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)。  
+ 为了显示函数名称和行号等符号信息，VSPerfReport 要求访问被分析组件的符号 (.PDB) 文件以及 Windows 符号文件。 有关详细信息，请参阅[如何：通过命令行指定符号文件位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md)。  
   
 ## <a name="general-report-options"></a>常规报告选项  
  下表说明了常规报表格式设置选项和用于选择要报告的数据的选项。  

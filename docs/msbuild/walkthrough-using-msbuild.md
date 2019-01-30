@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e73fd5e679ae4b35fa47926f6737b980ef700e4a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac73f7c7915c3142cd496ebf8a76bb22995028b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956915"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947057"
 ---
 # <a name="walkthrough-use-msbuild"></a>演练：使用 MSBuild
 MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBuild 的构建基块，并演示如何编写、操作和调试 MSBuild 项目。 学习内容：
@@ -227,10 +227,10 @@ $(PropertyName)
  几乎所有 MSBuild 元素都可以具有条件属性。 有关使用条件属性的详细讨论，请参阅[条件](../msbuild/msbuild-conditions.md)。
 
 ### <a name="reserved-properties"></a>预留属性
- MSBuild 保留了一些属性名称，用于存储有关项目文件和 MSBuild 二进制文件的信息。 MSBuildToolsPath 就是保留属性的一个示例。 与其他属性一样，可使用 $ 符号引用保留属性。 有关更多信息，请参见[如何：引用项目文件的名称或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和常见属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
+ MSBuild 保留了一些属性名称，用于存储有关项目文件和 MSBuild 二进制文件的信息。 MSBuildToolsPath 就是保留属性的一个示例。 与其他属性一样，可使用 $ 符号引用保留属性。 有关详细信息，请参阅[如何：引用项目文件的名称或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和常见属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。
 
 ### <a name="environment-variables"></a>环境变量
- 可使用与生成属性相同的方式引用项目文件中的环境变量。 例如，若要使用项目文件中的 PATH 环境变量，可使用 $(Path)。 如果项目包含与环境变量具有相同名称的属性定义，则项目中的属性将替代环境变量的值。 有关更多信息，请参见[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。
+ 可使用与生成属性相同的方式引用项目文件中的环境变量。 例如，若要使用项目文件中的 PATH 环境变量，可使用 $(Path)。 如果项目包含与环境变量具有相同名称的属性定义，则项目中的属性将替代环境变量的值。 有关详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。
 
 ## <a name="set-properties-from-the-command-line"></a>从命令行设置属性
  可使用 -property 或 -p 命令行开关在命令行中定义属性。 从命令行接收的属性值将替代在项目文件和环境变量中设置的属性值。

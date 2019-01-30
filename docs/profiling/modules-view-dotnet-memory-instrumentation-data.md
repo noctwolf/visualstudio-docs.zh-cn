@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4519d9a70b085cf3a5f5ea6a6687bff3cd21346
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9ca3e5ff5c80083d9124fa2cedee46a4a579e41a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823453"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000401"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>“模块”视图 - .NET 内存检测数据
 使用检测方法收集的 .NET 内存分配数据的“模块”视图按分析运行期间执行的模块对内存和计时数据进行分组。 模块的各函数的分析数据在模块节点下列出。  

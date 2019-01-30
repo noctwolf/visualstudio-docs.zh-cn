@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: f0d62318-b0e8-49c6-9a30-9f7a6adef2f6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec59cde780a1d6b05ea6a5d42d458ec50c48e385
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e8064d0dbc3ffd3437c4f7377d3cd4ada8e5eb86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990185"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930480"
 ---
 # <a name="command-line-profiling-of-services"></a>通过命令行分析服务
 本部分介绍从命令行使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集 Windows 服务的性能数据的步骤和选项。  

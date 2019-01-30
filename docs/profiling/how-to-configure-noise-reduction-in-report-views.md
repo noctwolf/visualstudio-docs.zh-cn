@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fa84eecc96c836b3430b691b5d8f8b1cd3d0926
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a6d72df07578701da33213be62d197be9c71ef5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875240"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992849"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在报表视图中配置降噪
 通过限制“调用关系树”视图和“分配”视图中显示的数据量，可针对降噪配置性能报表。 通过使用降噪，性能问题能够更加醒目。 分析性能报告时，这非常有用。  

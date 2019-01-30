@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 author: stevehoag
 ms.author: shoag
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: a7f0279249be7b5a48b342f1de26179af7b89f80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf58ea2ada658f7a1548ed81c875b19d33f81a91
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843779"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981686"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>开发通用 Windows 平台 (UWP) 的应用
 使用通用 Windows 平台和我们的一项 Windows 核心，可在任何 Windows 10 设备上（从电话到桌面）运行同一应用。 使用 Visual Studio 和通用 Windows 应用开发工具创建这些通用 Windows 应用。

@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6e44597fe9a770b76ba043d74f6048dc50a5e031
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81364c4f6cb963d713fc0a63c1f0076268a84b78
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950389"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964634"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>使用测试组合模型在负载测试中模拟网站或应用程序的预期实际使用情况
 
@@ -78,13 +78,13 @@ ms.locfileid: "53950389"
 
    例如，假定你将测试的“编辑测试组合”对话框中的“每个用户每小时的测试数”值设置为每小时 2 个测试。 如果“对节奏延迟应用分布”属性设置为“False”，则测试运行时基本上没有机动时间。 测试的运行间隔将为 30 分钟。 这样可以确保每小时执行 2 个测试。
 
-  有关更多信息，请参见[如何：在使用用户节奏测试组合模型时对节奏延迟应用分布](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)。
+  有关详细信息，请参阅[如何：在使用用户节奏测试组合模型时对节奏延迟应用分布](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)。
 
 ###  <a name="SequentialOrder"></a> 顺序
  如果选择“基于顺序测试顺序”选项，则每个虚拟用户将按照测试的定义顺序运行方案中的所有测试。
 
 ## <a name="test-iterations-property"></a>“测试迭代”属性
- 在“运行设置”属性中，可以为“测试迭代”属性指定值。 此值是要在负载测试中运行的测试迭代的数目。 启动了指定数目的测试迭代后，将不再启动任何其他的测试迭代，而不管任何负载配置文件的设置。 完成了指定数目的测试迭代后，负载测试将结束。 有关更多信息，请参见[如何：在运行设置中指定测试迭代次数](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)。
+ 在“运行设置”属性中，可以为“测试迭代”属性指定值。 此值是要在负载测试中运行的测试迭代的数目。 启动了指定数目的测试迭代后，将不再启动任何其他的测试迭代，而不管任何负载配置文件的设置。 完成了指定数目的测试迭代后，负载测试将结束。 有关详细信息，请参阅[如何：在运行设置中指定测试迭代次数](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)。
 
 ## <a name="initialize-and-terminate-tests"></a>初始化测试和终止测试
  可以选择要在每个虚拟用户的负载测试会话的开始和结束时运行的测试。 有关详细信息，请参阅[编辑文本组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。

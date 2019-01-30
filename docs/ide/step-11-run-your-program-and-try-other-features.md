@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0a00b328c85758c2be824377d04a0b3cfe122f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85377ed374447ca4508b93c89bd01434d43c5dad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968240"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042889"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>步骤 11：运行程序并尝试其他功能
 您的程序已完成并已做好运行准备。 可以运行程序并设置 <xref:System.Windows.Forms.PictureBox> 的背景色。 若要了解更多信息，请尝试通过以下操作来改进程序：更改窗体的颜色、自定义按钮和复选框以及更改窗体的属性。

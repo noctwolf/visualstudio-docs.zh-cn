@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d5d9022362b39dea4e9a36155c4c1b3b056c6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10f97a5cbc51e2f42af1601e8abd43d1e3529e9d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940568"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942186"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>在 IDE 中启动生成
 自定义项目系统必须使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 启动生成。 本文介绍这一要求的原因并概述具体过程。  

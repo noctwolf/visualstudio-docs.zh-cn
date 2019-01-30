@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8812db301b4e58b89ac8ab879625b7cf101ad94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eaeebaf4a6b935d59152e9f15e01cfae88ff6f92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913948"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974313"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>通过使用检测收集详细计时数据
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具检测方法将分析代码注入到模块的副本中。 该代码记录分析运行期间模块中函数的每次进入、退出和函数调用。 在收集有关你的代码的某一部分的详细计时信息，以及了解输入和输出操作对应用程序性能的影响时，该检测方法会十分有用。  

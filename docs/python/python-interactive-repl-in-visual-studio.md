@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d092feee3327af0f7ee7c439eb4c9fc1e74e9138
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 601527ee9fadb3ac9bda196df71ac75501635e9e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835641"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992381"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 交互窗口
 
@@ -31,11 +31,11 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 | 标准 | 默认 REPL，直接与 Python 通信 | 标准编辑（多行等）。 | 是，通过 `$attach` | No |
 | 调试 | 默认 REPL，与已调试的 Python 进程通信 | 标准编辑 | 仅调试 | No |
 | IPython | REPL 与 IPython 后端通信 | IPython 命令，Pylab 的便利 | No | 是，在 REPL 中内联 |
-| 带 Pylab 的 IPython | REPL 与 IPython 后端通信 | 标准 IPython | No | 是，单独窗口 | 
+| 带 Pylab 的 IPython | REPL 与 IPython 后端通信 | 标准 IPython | No | 是，单独窗口 |
 
 本文介绍标准 REPL 模式和调试 REPL 模式。 有关 IPython 模式的详细信息，请参阅[使用 IPython REPL](interactive-repl-ipython.md)。
 
-有关包含示例的详细演练，包括与编辑器的交互（如 Ctrl+Enter），请参阅[教程步骤 3：使用交互 REPL 窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。 
+有关包含示例的详细演练，包括与编辑器的交互（如 Ctrl+Enter），请参阅[教程步骤 3：使用交互 REPL 窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。
 
 |   |   |
 |---|---|

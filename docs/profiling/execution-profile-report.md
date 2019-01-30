@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c8128472-a8ed-46f4-b1c8-a25358d6f2c1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b90bdc015e31d2c9c4313be874b7f38a58a7ac45
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44912d26682479b37eaa13483320ffe093f40b5c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986539"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964056"
 ---
 # <a name="execution-profile-report"></a>执行分析报告
 执行分析报告是传统的采样分析。 线程在逻辑内核上运行期间内，将大约每毫秒进行一次采样，并且并发可视化工具可通过调用累积的堆栈集构建典型的调用关系树。 此表中的数据可能受到当前时间范围、隐藏线程和可能应用的筛选器的影响：  

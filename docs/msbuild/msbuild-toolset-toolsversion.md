@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c681ab49ba7fe6de60aa68cdec923cdf9f677fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a8b1e43a311936a35b15cf7a73c4f00a4793268
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841221"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947615"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 工具集 (ToolsVersion)
 MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通常，MSBuild 工具集包括 microsoft.common.tasks 文件、microsoft.common.targets 文件以及编译器（如 csc.exe 和 vbc.exe）。 大多数工具集可用于将应用程序编译为多个版本的 .NET Framework 以及多个系统平台。 但 MSBuild 2.0 工具集仅可用于面向 .NET Framework 2.0。

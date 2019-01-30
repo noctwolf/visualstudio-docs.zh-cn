@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4922020a6020630ce54767e788b14a1ed7c0462
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f64789bafa8fe5077678715a7439cbd1c1bf03b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986370"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927198"
 ---
 # <a name="filter-report-views"></a>筛选报告视图
 可以将筛选器应用于分析数据文件，限制“性能报告”视图中显示的和导出到报告文件的分析数据。 可以将报告现定于两个时间戳值之间的数据，并可以将数据限定于特定的进程和线程。 可以将筛选器保存到文件，然后通过导入保存的筛选器，在另一分析数据文件中创建筛选器。  
   
- 通过在“摘要”视图中使用图形时间线，还可以将报告限制到某一时间段。 请参阅[操作说明：从摘要时间线中筛选报表视图](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
+ 通过在“摘要”视图中使用图形时间线，还可以将报告限制到某一时间段。 请参阅[如何：从摘要时间线中筛选报表视图](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
   
  要从报告中排除系统和第三方代码，请参阅[如何：将分析工具报告视图筛选为显示仅我的代码](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   

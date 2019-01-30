@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: fdd41576-797e-4312-8520-fee7bb767e4a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d87c57ecd83ada45bddcbfba4b743d9c147c856
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb4fd061bb5e09cb7b03ab047d62736449421b22
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908952"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923813"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：将探查器附加到 .NET Framework 独立应用程序，以使用命令行收集并发数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到正在运行的 .NET Framework 独立（客户端）应用程序，并收集进程和线程并发数据。  
