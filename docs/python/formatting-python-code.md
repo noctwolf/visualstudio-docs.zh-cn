@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b830640284fe5b44a76b5f7d2424e2c1ccd24ea0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49733b4a63ccffef64ca2fca3ba1f969eca2609b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850211"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012516"
 ---
 # <a name="format-python-code"></a>设置 Python 代码格式
 
@@ -44,8 +44,8 @@ ms.locfileid: "53850211"
 下表提供关于各种选项的示例：
 
 | 类定义选项 | 已选中 | 清除 |
-| --- | --- | --- | 
-| **在类定义名称和基列表之间插入空格** | `class X (object): pass` | `class X(object): pass` | 
+| --- | --- | --- |
+| **在类定义名称和基列表之间插入空格** | `class X (object): pass` | `class X(object): pass` |
 | **在基列表括号内插入空格** | `class X( object ): pass` | `class X(object): pass` |
 | **在空的基列表括号内插入空格** | `class X( ): pass` | `class X(): pass` |
 
@@ -53,7 +53,7 @@ ms.locfileid: "53850211"
 
 | 函数定义选项 | 已选中 | 清除 |
 | --- | --- | --- |
-| **在函数声明名称和参数列表间插入空格** | `def X (): pass` | `def X(): pass` | 
+| **在函数声明名称和参数列表间插入空格** | `def X (): pass` | `def X(): pass` |
 | **在参数列表括号内插入空格** | `def X( a, b ): pass` | `def X(a, b): pass` |
 | **在空的参数列表括号内插入空格** | `def X( ): pass` | `def X(): pass` |
 | **在默认参数值中的“=”周围插入空格** | `includes X(a = 42): pass` | `includes X(a=42): pass` |

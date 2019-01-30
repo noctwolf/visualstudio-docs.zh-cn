@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 76aa076f4813cf2719f1ecc2d009c44788dae9f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9894c62975da0353fd9e920fa5596e7e0ebeb26
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900673"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54935847"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>使用负载测试分析器分析负载测试结果
 
@@ -49,6 +49,6 @@ ms.locfileid: "53900673"
 |任务|关联主题|
 |-|-|
 |**访问负载测试的结果：** 在从“负载测试编辑器”运行负载测试时，负载测试结果会自动打开，并且正在运行的负载测试将显示在“负载测试分析器”中。|-   [如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)|
-|**向负载测试添加分析注释：** 执行分析时，可以向负载测试添加注释。 这些注释将随负载测试结果一起永久保存。 输入的说明也显示在与负载测试编辑器中“打开和管理测试结果”对话框中的负载测试关联的“说明”列中。<br /><br /> 有关更多信息，请参见[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。<br /><br /> 此外，在为负载测试结果创建 Excel 报表时也会显示注释。<br /><br /> 有关详细信息，请参阅[报告负载测试结果以比较测试或进行趋势分析](../test/compare-load-test-results.md)。||
+|**向负载测试添加分析注释：** 执行分析时，可以向负载测试添加注释。 这些注释将随负载测试结果一起永久保存。 输入的说明也显示在与负载测试编辑器中“打开和管理测试结果”对话框中的负载测试关联的“说明”列中。<br /><br /> 有关详细信息，请参阅[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。<br /><br /> 此外，在为负载测试结果创建 Excel 报表时也会显示注释。<br /><br /> 有关详细信息，请参阅[报告负载测试结果以比较测试或进行趋势分析](../test/compare-load-test-results.md)。||
 |**分析负载测试的结果：** 访问负载测试运行数据之后，才能分析结果数据。 可以通过查看“负载测试摘要”来快速了解结果。 负载测试摘要以简洁、易读的格式显示关键结果。<br /><br /> 可以打印负载测试摘要， 以便于在向利益干系人传达结果时使用。<br /><br /> 你可以使用结果中的关系图和表来分析负载测试结果的详细信息。 其中包括“错误”、“页面”、“请求”、“SQL 跟踪”、“测试”、“阈值”和“事务”。|-   [负载测试结果摘要概述](../test/load-test-results-summary-overview.md)<br />-   [如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)<br />-   [分析阈值规则冲突](../test/analyze-threshold-rule-violations-in-load-tests.md)<br />-   [在关系图视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)<br />-   [在表视图中分析负载测试结果和错误](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)|
 |**分析负载测试结果中的虚拟用户活动，帮助隔离性能问题：** 可使用虚拟用户活动图来直观显示虚拟用户在负载测试期间正在执行的操作。 这可以帮助你隔离 CPU 峰值或每秒请求数谷值，并确定在这些峰值和谷值期间运行的是哪些测试或页面。|-   [在详细信息视图中分析虚拟用户活动](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)|

@@ -9,15 +9,15 @@ dev_langs:
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5dffe82511e75889ea588cb23b1f19490f991ab0
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: c46644b18188475bd6389a795625209f74a7d9b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251902"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021983"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>使用 C++ 安装跨平台移动开发
 
@@ -136,7 +136,7 @@ ms.locfileid: "39251902"
 
    默认情况下，安装程序将 Apache Ant 放置在以下路径：C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps。
 
-- [适用于 Android 的 Microsoft Visual Studio 模拟器](https://aka.ms/vscomemudownload)
+- [适用于 Android 的 Microsoft Visual Studio 仿真程序](https://aka.ms/vscomemudownload)
 
    适用于 Android 的 Microsoft Visual Studio 模拟器是用于测试和调试代码的可选模拟器。 发布适用于 Android 的 Visual Studio 模拟器后，Google 更新了其 Android 模拟器，以通过 Intel 的 HAXM 使用硬件加速。 建议尽可能使用 Google 加速模拟器，因为它可以访问最新的 Android OS 映像和 Google Play 服务。
 

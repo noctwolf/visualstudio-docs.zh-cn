@@ -9,17 +9,17 @@ ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b36051f3a316f2b00ebdd08110f22346a910512
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c41aac277136de164ba7148e26fc9c0f422b2eef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853913"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014609"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>快速入门：使用 Visual Studio 创建第一个 C# 控制台应用
 
@@ -49,7 +49,7 @@ ms.locfileid: "53853913"
 
 ## <a name="create-the-application"></a>创建应用程序
 
-选择 C# 项目模板并为项目命名后，Visual Studio 会创建一个简单的“Hello World”应用程序。 
+选择 C# 项目模板并为项目命名后，Visual Studio 会创建一个简单的“Hello World”应用程序。
 
 （若要执行此操作，调用 <xref:System.Console.WriteLine%2A> 方法在控制台窗口中 显示文本字符串“Hello World!”。）
 

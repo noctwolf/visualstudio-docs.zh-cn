@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45199d736e1402c67ca84ced8db95d81534a7c3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f394acb8ef939b3d550ed0966fe002aab75b6b22
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852909"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001951"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单签名
 
@@ -93,7 +93,7 @@ ms.locfileid: "53852909"
 
 2.  在“签名”页上，清除“为 ClickOnce 清单签名”复选框。
 
-3.  重置发布版本，以使应用程序仅有一个版本可用。 默认情况下，每次发布应用程序时，Visual Studio 都会自动递增发布版本的版本号。 有关更多信息，请参见[如何：设置 ClickOnce 发布版本](../deployment/how-to-set-the-clickonce-publish-version.md)。
+3.  重置发布版本，以使应用程序仅有一个版本可用。 默认情况下，每次发布应用程序时，Visual Studio 都会自动递增发布版本的版本号。 有关详细信息，请参阅[如何：设置 ClickOnce 发布版本](../deployment/how-to-set-the-clickonce-publish-version.md)。
 
 4.  发布应用程序。
 

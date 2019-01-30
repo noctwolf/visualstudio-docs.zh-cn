@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b1c1da6bd493fc53419ef5b371b74488002e27
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6240846439cd966e461722a2cda18a20bbfb478
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938600"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029188"
 ---
 # <a name="summary-view---sampling-data"></a>“摘要”视图 - 采样数据
 “摘要”视图显示有关分析运行中性能开销最大的函数的信息。 有关详细信息（包括通知链接和报告列表的说明），请参阅[“摘要”视图](../profiling/summary-view.md)。  
@@ -25,7 +25,7 @@ ms.locfileid: "53938600"
 >  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 ## <a name="timeline-graph"></a>时间线关系图  
- “摘要”视图中的时间线关系图显示在进行分析的时间内分析的应用程序的处理器 (CPU) 利用率百分比。 可以使用时间线关系图将视图筛选到所选时间范围。 有关更多信息，请参见[如何：从摘要时间线中筛选报表视图](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
+ “摘要”视图中的时间线关系图显示在进行分析的时间内分析的应用程序的处理器 (CPU) 利用率百分比。 可以使用时间线关系图将视图筛选到所选时间范围。 有关详细信息，请参阅[如何：从摘要时间线中筛选报表视图](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
   
 ## <a name="hot-path"></a>热路径  
  “热路径”显示在其中收集了最多样本的执行路径。 可以单击某个函数以显示该函数的“函数详细信息”视图。 若要显示函数的其他视图，请右键单击函数，然后单击列表中的视图。  

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 535b11f4ee27bd30301b983b34075a3d70947162
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f18d712eb8c135b67c37ca22ae4ae944ad6b934
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853355"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979226"
 ---
 # <a name="manage-channels"></a>管理通道
 在并发可视化工具的“线程视图”中，可以整理进程的各个通道，以便查看特定模式。 您可以将通道排序、上下移动，以及隐藏或显示这些通道。  

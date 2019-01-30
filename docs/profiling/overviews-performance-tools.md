@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db30d1754d12dd167a89b569e67e4d375486443f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7ac619a77dbe8f12b3436f2b1b087478c19473b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989930"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001025"
 ---
 # <a name="overviews-performance-tools"></a>概述（性能工具）
 本节提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的概念和术语概述，这些工具可以用于度量正在开发的应用程序的性能特征。  

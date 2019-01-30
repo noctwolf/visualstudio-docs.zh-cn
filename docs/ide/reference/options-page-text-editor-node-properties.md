@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3339884fe14b0dbc40fe9297f06b0462696b8040
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ccb698083b6c24f0f7deed70e17f6a1e6b1f5b95
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935666"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977052"
 ---
 # <a name="options-page-text-editor-node-properties"></a>“选项”页 ->“文本编辑器”节点属性
 本文档描述了与“选项”对话框的“文本编辑器”类别 `DTE.Properties("TextEditor", <Property Page>)` 关联的一些页面（或属性集合）。 每个小节的标题都是用于访问 `Properties` 集合的调用，而每个小节中的表都列出了集合中的属性。
@@ -27,7 +27,7 @@ ms.locfileid: "53935666"
 ## <a name="general"></a>常规
  `DTE.Properties("TextEditor", "General")`
 
-|属性项名称|“值”|说明|
+|属性项名称|值|说明|
 | - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Boolean)|如果为 `True`，当有选定内容时按 Escape 会导致插入点移动到在初始化创建选定内容的操作之前的位置。 如果为 `False`，则将插入点移动到选定内容的另一端。|
 |DragNDropTextEditing|Get/Set (Boolean)|确定是否可以将文本的选定区域从文档中的一个位置拖动到其他位置，以执行复制或剪切/粘贴操作。|

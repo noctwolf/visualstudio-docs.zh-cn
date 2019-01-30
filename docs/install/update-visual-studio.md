@@ -12,15 +12,15 @@ helpviewer_keywords:
 - changing Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6452e2c53c58d0eb863efc509e42445fe1aa23e3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 35f509b9896a9a3c672fb2d432958d94637cc529
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828428"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031063"
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>将 Visual Studio 2017 更新到最新版本
 
@@ -32,7 +32,7 @@ ms.locfileid: "53828428"
 > 若要安装、更新或修改 Visual Studio，必须使用具有管理权限的帐户登录。 有关详细信息，请参阅[用户权限与 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[更新 Visual Studio for Mac](/visualstudio/mac/update)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[更新 Visual Studio for Mac](/visualstudio/mac/update)。
 
 ## <a name="update-visual-studio-2017-version-156-or-later"></a>更新 Visual Studio 2017 版本 15.6 或更高版本
 

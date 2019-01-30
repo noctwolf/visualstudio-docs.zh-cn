@@ -1,6 +1,6 @@
 ---
 title: Visual c + + 项目扩展性
-ms.date: 09/12/2018
+ms.date: 01/25/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 499e3776e81fcde3e89eb3436e3938f2feafb137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e38ff6cf2912ccc18c27f517a35c7a543325a8eb
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013699"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232047"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 项目系统可扩展性和工具集集成
 
@@ -274,6 +274,8 @@ Microsoft.Cpp.Common.Tasks.dll 实现这些任务：
 
 - `SetEnv`
 
+- `GetOutOfDateItems`
+
 如果有工具执行相同的操作的现有工具和 （和相同 clang cl 和 CL） 具有类似的命令行开关，则可以对这两个使用相同的任务。
 
 如果需要创建新任务的生成工具，可以从以下选项中进行选择：
@@ -294,11 +296,14 @@ Microsoft.Cpp.Common.Tasks.dll 实现这些任务：
 
 默认 MSBuild 增量生成目标将使用`Inputs`和`Outputs`属性。 如果你指定它们，MSBuild 会调用目标仅当任何输入的所有输出比更高版本的时间戳。 源代码文件通常包括或导入其他文件和生成工具生成不同的输出，具体取决于工具选项，因为它很难指定所有可能的输入和 MSBuild 目标中的输出。
 
-若要管理此问题，c + + 生成使用另一种技术来支持增量生成。 大多数目标没有指定输入和输出，并因此，始终在生成过程进行。 调用的目标的任务编写所有信息输入，并将输出到*tlog* .tlog 扩展名的文件。 .Tlog 文件由更高版本生成，以检查内容已更改，并且需要重新生成，并且什么是最新状态。
+若要管理此问题，c + + 生成使用另一种技术来支持增量生成。 大多数目标没有指定输入和输出，并因此，始终在生成过程进行。 调用的目标的任务编写所有信息输入，并将输出到*tlog* .tlog 扩展名的文件。 .Tlog 文件由更高版本生成，以检查内容已更改，并且需要重新生成，并且什么是最新状态。 .Tlog 文件也是默认生成最新检查在 IDE 中的唯一来源。
 
 若要确定所有输入和输出，本机工具任务使用 tracker.exe 并[FileTracker](/dotnet/api/microsoft.build.utilities.filetracker) MSBuild 提供的类。
 
 Microsoft.Build.CPPTasks.Common.dll 定义`TrackedVCToolTask`公共抽象基类。 大部分本机工具任务都派生自此类。
+
+从 Visual Studio 2017 更新 15.8 开始，你可以使用`GetOutOfDateItems`Microsoft.Cpp.Common.Tasks.dll 以生成具有已知的输入和输出的自定义目标的.tlog 文件中实现的任务。
+或者，可以通过使用创建它们`WriteLinesToFile`任务。 请参阅`_WriteMasmTlogs`中的 target `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets*作为示例。
 
 ## <a name="tlog-files"></a>.tlog 文件
 
@@ -314,7 +319,6 @@ MSBuild 提供了这些帮助器类读取和写入.tlog 文件：
 
 命令行的.tlog 文件包含在生成中使用命令行有关的信息。 它们仅用于增量生成，不是最新检查，因此内部格式由生成它们的 MSBuild 任务。
 
-如果由任务创建.tlog 文件，最好使用这些帮助器类来创建它们。 但是，因为现在仅在.tlog 文件上依赖于默认的最新检查，有时它是更方便地生成它们而无需任务的目标中。 可以使用编写它们`WriteLinesToFile`任务。 请参阅`_WriteMasmTlogs`中的 target `$(VCTargetsPath)` \\ *BuildCustomizations*\\*masm.targets*作为示例。
 
 ### <a name="read-tlog-format"></a>阅读的.tlog 格式
 

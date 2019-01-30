@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 0908d354-aa5c-4518-8631-e25b8e7649e5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa2aa1820fabef8a14355190984e83f3ee52054
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c1970c8a026e509cb31a9a58a0ae42777425bef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947096"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945276"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>“调用方/被调用方”视图 - 检测数据
 “调用方/被调用方”视图显示调用树中所选函数及其父函数和子函数的分析信息。 “调用方/被调用方”视图包含三个网格。  

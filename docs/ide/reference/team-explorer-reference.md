@@ -5,13 +5,13 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
-ms.openlocfilehash: c4feda1f01e08807041efb9ae9b3d0bbe84d24b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.manager: jillfra
+ms.openlocfilehash: 063c002b77761a14bf6a0bae8452b7ff28bd1b99
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840747"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918728"
 ---
 # <a name="team-explorer-reference"></a>团队资源管理器参考
 
@@ -80,8 +80,12 @@ ms.locfileid: "53840747"
 - [使用 Outlook 以电子邮件的形式发送查询结果列表](/azure/devops/boards/queries/share-plans)
 - [在 Excel 中从查询创建报表](/azure/devops/report/excel/create-status-and-trend-excel-reports)（仅针对 TFS）
 
+::: moniker range=">= vs-2019"
+
 > [!NOTE]
 > Visual Studio 2019 预览版 1 中新增一个[工作项体验](/azure/devops/boards/work-items/set-work-item-experience-vs)。 有关在 Visual Studio 2019 预览版 1 中查看工作项的信息，请参阅[查看和添加工作项](/azure/devops/boards/work-items/view-add-work-items)。
+
+::: moniker-end
 
 ## <a name="builds-page"></a>“生成”页
 

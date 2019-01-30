@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bae9beac69daf78bfd6a8604c4364af857dff0a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c4f04d1d919123bca787c6175696224042f79725
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845949"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948191"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>在 Visual Studio 中管理 npm 包
 
@@ -36,7 +36,7 @@ ms.locfileid: "53845949"
 
 ![从解决方案资源管理器安装新的 npm 包](../javascript/media/solution-explorer-install-package.png)
 
-在此窗口中可以搜索包、指定选项并安装。 
+在此窗口中可以搜索包、指定选项并安装。
 
 ![搜索 npm 包](../javascript/media/search-package.png)
 
@@ -73,10 +73,10 @@ npm 包显示在解决方案资源管理器中。 “npm”节点下的条目模
 在窗口中，可以使用如下命令来安装包：
 
 `.npm install azure@4.2.3`
- 
+
  > [!Tip]
- > 默认情况下，npm 将在项目的主目录中执行。 如果解决方案中有多个项目，请在方括号中指定项目的名称或路径。 
+ > 默认情况下，npm 将在项目的主目录中执行。 如果解决方案中有多个项目，请在方括号中指定项目的名称或路径。
  > `.npm [MyProjectNameOrPath] install azure@4.2.3`
 
  > [!Tip]
- > 如果项目不包含 package.json 文件，请使用 `.npm init -y` 创建含默认条目的新 package.json 文件。 
+ > 如果项目不包含 package.json 文件，请使用 `.npm init -y` 创建含默认条目的新 package.json 文件。

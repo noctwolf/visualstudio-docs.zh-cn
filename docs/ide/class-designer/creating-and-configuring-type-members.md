@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7063b536c50cff39bfeb3adabe989b3cd9a56ddf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ba5c26ece60c6689509054b733109ee11799ccd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828132"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010072"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在类设计器中创建和配置类型成员
 
@@ -63,7 +63,7 @@ ms.locfileid: "53828132"
 
 ## <a name="open-the-class-details-window"></a>打开“类详细信息”窗口
 
-默认情况下，在打开一个新类图时，“类详细信息”窗口会自动显示。 请参阅[操作说明：向项目添加类图](how-to-add-class-diagrams-to-projects.md)。 也可以通过以下方式打开“类详细信息”窗口：
+默认情况下，在打开一个新类图时，“类详细信息”窗口会自动显示。 请参阅[如何：向项目添加类图](how-to-add-class-diagrams-to-projects.md)。 也可以通过以下方式打开“类详细信息”窗口：
 
 - 右键单击关系图中的任何类以显示上下文菜单，然后选择“类详细信息”。
 

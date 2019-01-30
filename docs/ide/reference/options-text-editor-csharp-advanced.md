@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: db27509faf1c3d83eab1cd6c8fcd6b5b70fab48e
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 69f0d2f89901632ab4f500879fc89e3b6ca1e0ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398294"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959718"
 ---
 # <a name="options-text-editor-c-advanced"></a>选项，文本编辑器，C#，高级
 
@@ -47,7 +47,7 @@ ms.locfileid: "54398294"
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    排序后：
 
    ```csharp
@@ -58,7 +58,7 @@ ms.locfileid: "54398294"
    using FluentValidation;
    using Newtonsoft.Json;
    ```
-   
+
 - 单独的 using 指令组
 
    当你选择右键单击菜单中的“删除和排序 Using”命令后，它会在具有相同根命名空间的指令组之间插入空行，以将 `using` 指令分隔开来。
@@ -73,28 +73,28 @@ ms.locfileid: "54398294"
    using Newtonsoft.Json;
    using System;
    ```
-   
+
    排序后：
-   
+
    ```csharp
    using AutoMapper;
-   
+
    using FluentValidation;
-   
+
    using Newtonsoft.Json;
-   
+
    using System;
    using System.Collections.Generic;
    using System.Linq;
    ```
-   
-- 建议对引用程序集中的类型使用 using 
-- 建议对 NuGet 包中的类型使用 using 
+
+- 建议对引用程序集中的类型使用 using
+- 建议对 NuGet 包中的类型使用 using
 
    选择这些选项时，[快速操作](../quick-actions.md)可用于安装 NuGet 包，并为未引用的类型添加 `using` 指令。
 
    ![用于在 Visual Studio 中安装 NuGet 包的快速操作](media/nuget-lightbulb.png)
-  
+
 ## <a name="highlighting"></a>Highlighting
 
 - 突出显示对光标下符号的引用

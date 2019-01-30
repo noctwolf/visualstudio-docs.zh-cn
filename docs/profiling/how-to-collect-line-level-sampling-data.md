@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7dc61ae776d75331eaaf2974f0eda139b601089
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af1e0bfd6aff9e7816feee5a627274f2645cf0b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952029"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959156"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>如何：收集行级别采样数据
 行级采样是探查器确定占用大量处理器时间的函数在代码中的位置，如具有高独占样本的函数，处理器需要耗费大量时间。  

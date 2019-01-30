@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: da624c06-8741-4afb-aad1-f8c0002f3de2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2ac6322f7264f6a6816b6724f0e477c7daa977c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8142899669d998a3d7e51366c482532f1fa415a6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833464"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948253"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>“调用方/被调用方”视图 - .NET 内存检测数据
 通过使用检测方法收集 .NET 内存分析数据的“调用方/被调用方”视图，此视图显示所选函数的分配和计时数据及该所选函数的父函数和子函数。 “调用方/被调用方”视图包含三个网格。  

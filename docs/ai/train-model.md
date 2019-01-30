@@ -11,12 +11,12 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - azure
-ms.openlocfilehash: 937f5f1606e24a40c0c5ffe90f739cc68df7e4b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6a8592950fafa1d0ffc564aafaab4371b315088
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872062"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55041628"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>在 Azure Batch AI 中训练 AI 模型
 
@@ -34,7 +34,7 @@ Batch AI 是一种托管服务，使数据科学家和 AI 研究人员可以在 
 
 3. 选择“视图”>“团队资源管理器...”，打开“团队资源管理器”窗口，可在该窗口中连接到 GitHub 或 Azure DevOps Services，或者克隆存储库。
 
-    ![显示 Azure DevOps、GitHub 并克隆存储库的“团队资源管理器”窗口](media/train-model/team-explorer.png)
+    ![显示 Azure DevOps、GitHub 并克隆存储库的“团队资源管理器”窗口](media/train-model/team-explorer-devops.png)
 
 4. 在“本地 Git 存储库”下的 URL 字段中，输入 `https://github.com/Microsoft/samples-for-ai`，为克隆文件输入一个文件夹，然后选择“克隆”。
 

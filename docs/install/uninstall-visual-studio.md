@@ -12,22 +12,22 @@ f1_keywords:
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9539f8ec113c9a59e6d0eeb1975393ee63286a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1ccfc82c911472bba8a85f832daed8aa332f3ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823187"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070417"
 ---
 # <a name="uninstall-visual-studio-2017"></a>卸载 Visual Studio 2017
 
 此页面介绍如何卸载 Visual Studio（一个面向开发人员的工作效率工具集成套件）。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请查阅[卸载 Visual Studio for Mac](/visualstudio/mac/uninstall)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请查阅[卸载 Visual Studio for Mac](/visualstudio/mac/uninstall)。
 
 1. 在计算机上找到 Visual Studio 安装程序。
 

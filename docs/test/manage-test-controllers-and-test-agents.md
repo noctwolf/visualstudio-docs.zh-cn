@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b687504ae69d7b133aba107c7705eeb50f6f8953
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23eb4163758a51fafecf8231da4614fad449c750
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891396"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932709"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>管理测试控制器和测试代理
 
@@ -137,7 +137,7 @@ ms.locfileid: "53891396"
 
 1. （可选）在“测试代理”窗格中，选择要为其更改属性的测试代理计算机。
 
-1. 选择“属性”。
+1. 选择**属性**。 
 
 1. 根据需要更改以下测试代理属性：
 

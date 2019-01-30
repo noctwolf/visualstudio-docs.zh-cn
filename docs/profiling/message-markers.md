@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 721f40ca-5af2-4a01-b8b6-2b90f6cb7f89
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13cd156263584fb65c2e69df9f86e4610fc5eb3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afdd3c12535c86f5fc7b4a3270613568f9fd997e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846498"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033786"
 ---
 # <a name="message-markers"></a>消息标记
 消息标记代表日志输出。 消息是特定线程在特定时间发出的字符串。 可以将消息导出到文本文件，以便与其他工具一起使用。 可以将鼠标指针放在并发可视化工具中的某一消息上，以便查看消息字符串。 可以在[标记报告](../profiling/markers-report.md)中查看所有消息标记。  下图显示消息标记。  

@@ -13,18 +13,18 @@ helpviewer_keywords:
 ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 70447148922382cef3e5c3fb9b7ba24613033c35
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 38be19487e72dfab9af64837fb3723cb0bceb06e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834290"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952127"
 ---
 # <a name="load-test-results-summary-overview"></a>负载测试结果摘要概述
 
-运行负载测试后，可以查看负载测试摘要以快速了解结果。 负载测试摘要以简洁、易读的格式提供关键结果。 你还可以打印负载测试摘要， 以便于在向利益干系人传达结果时使用。 当你从以前运行的负载测试打开负载测试结果时，负载测试摘要也是默认视图。 有关更多信息，请参见[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
+运行负载测试后，可以查看负载测试摘要以快速了解结果。 负载测试摘要以简洁、易读的格式提供关键结果。 你还可以打印负载测试摘要， 以便于在向利益干系人传达结果时使用。 当你从以前运行的负载测试打开负载测试结果时，负载测试摘要也是默认视图。 有关详细信息，请参阅[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
 ![“摘要”视图](../test/media/ltest_summaryview.png)
 
@@ -71,7 +71,7 @@ ms.locfileid: "53834290"
 
 ## <a name="key-statistic-top-5-slowest-pages"></a>关键统计信息：最慢的前 5 个页面
 
-“最慢的页面”一节包含负载测试中最慢的 5 个页面。 此节显示每个页面的 URL 和平均页面加载时间。 这些页面按降序列出。 可选择某个页面的 URL 以打开“页”表和查看该页面的更多详细信息。 有关更多信息，请参见[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
+“最慢的页面”一节包含负载测试中最慢的 5 个页面。 此节显示每个页面的 URL 和平均页面加载时间。 这些页面按降序列出。 可选择某个页面的 URL 以打开“页”表和查看该页面的更多详细信息。 有关详细信息，请参阅[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
 
 “95% 页面时间(秒)”的百分比值报告，95% 的页面在此时间内完成（以秒为单位）。
 
@@ -94,7 +94,7 @@ ms.locfileid: "53834290"
 
 ## <a name="page-results"></a>页结果
 
-“页结果”一节包含负载测试中所有网页的列表。 此节显示 URL、方案、测试的名称、平均页面时间以及计数。 可选择某个页面的 URL 以打开“页”表和查看该页面的更多详细信息。 有关更多信息，请参见[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
+“页结果”一节包含负载测试中所有网页的列表。 此节显示 URL、方案、测试的名称、平均页面时间以及计数。 可选择某个页面的 URL 以打开“页”表和查看该页面的更多详细信息。 有关详细信息，请参阅[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
 
 > [!NOTE]
 > 通过选择此节标题左侧的箭头，可以折叠和展开此节。
