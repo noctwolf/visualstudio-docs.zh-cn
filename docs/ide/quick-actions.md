@@ -5,18 +5,18 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cad90eeea8f4fccb3a331fc3c41d072e03dca80c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d1d129e1a7448e814f01c5a60f282fec028ee4a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904664"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982216"
 ---
 # <a name="quick-actions"></a>快速操作
 
@@ -30,7 +30,7 @@ ms.locfileid: "53904664"
 - 生成代码（例如，[引入局部变量](../ide/reference/introduce-local-variable.md)）
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[重构 (Visual Studio for Mac)](/visualstudio/mac/refactoring)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[重构 (Visual Studio for Mac)](/visualstudio/mac/refactoring)。
 
 可使用灯泡![灯泡图标](media/light-bulb-icon.png)或螺丝刀![螺丝刀图标](media/screwdriver-icon.png)图标，或按“Ctrl”应用快速操作。+ 当光标位于可操作的代码行上时， 如果出现指示错误的红色波形曲线，且 Visual Studio 有针对该错误的可用修复方法，会显示一个错误灯泡![错误灯泡图标](media/error-light-bulb-icon.png)。
 

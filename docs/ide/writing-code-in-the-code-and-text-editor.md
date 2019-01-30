@@ -8,22 +8,22 @@ helpviewer_keywords:
 - code editor [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e92749c7e18913685fdedac3a9404ace0705ac3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 993b3156084f0f780da168bcafd406012e8cd704
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891743"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022828"
 ---
 # <a name="features-of-the-code-editor"></a>代码编辑器功能
 
 Visual Studio 编辑器提供了许多功能，可方便你更加轻松地编写和管理代码和文本。 可通过使用大纲显示来展开和折叠不同的代码块。 可通过使用 IntelliSense、“对象浏览器”以及调用层次结构，了解有关代码的详细信息。 可使用“转到”、“转到定义”和“查找所有引用”等功能查找代码。 可以将插入代码块和代码片段，并且可以通过“使用时生成” 等功能生成代码。 如果之前从未用过 Visual Studio 编辑器，请参阅[编辑代码](https://visualstudio.microsoft.com/vs/features/ide/)进行快速概览。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[源编辑器 (Visual Studio for Mac)](/visualstudio/mac/source-editor)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[源编辑器 (Visual Studio for Mac)](/visualstudio/mac/source-editor)。
 
 可以使用多种不同的方式查看自己的代码。 默认情况下，“解决方案资源管理器” 显示按文件组织的代码。 可以单击窗口底部的“类视图”选项卡，查看按类组织的代码。
 

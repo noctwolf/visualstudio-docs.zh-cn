@@ -10,16 +10,16 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 537059a78ccc316b7b74a8300961b57b4e6e6f95
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 130cb83e078a0f7c2924349dcd13692d3fe9125a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269977"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924595"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -38,9 +38,9 @@ ms.locfileid: "54269977"
 
 1. 打开 Visual Studio。
 
-2. 在“文件”菜单上，选择“新建” > “项目”。
+2. 在“文件”菜单上，选择“新建” > “项目”。 
 
-   此时将出现 “新建项目” 对话框。
+   此时将出现“新建项目”对话框。
 
 3. 在 **“已安装的模板”** 下单击 **“Visual C#”**。
 

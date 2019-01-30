@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b08ddcb278bb2c5f9ea4c8a5de66a184fe9fac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7be4c53ebdfcf339d63b6c9a6987aba3d82ab12c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859823"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959520"
 ---
 # <a name="options-page-debugging-node-properties"></a>“选项”页 ->“调试”节点属性
 下表描述了与“选项”对话框的“调试”类别 `DTE.Properties("Debugging", <Property Page>)` 关联的页面（或属性集合）。
@@ -73,7 +73,7 @@ ms.locfileid: "53859823"
 ## <a name="native"></a>Native
  `DTE.Properties("Debugging", "Native")`
 
-|属性项名称|值|说明|
+|属性项名称|“值”|说明|
 | - |-----------|-----------------|
 |LoadDllExports|Get/Set (Boolean)|确定调试器是否加载 DLL 导出表。|
 |EnableRPC|Get/Set (Boolean)|确定调试器是否可以单步执行 COM 远程过程调用。|

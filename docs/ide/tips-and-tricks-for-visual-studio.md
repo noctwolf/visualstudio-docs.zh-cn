@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d821d736bc73dbc64c947396ead683f59c4be0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6755ab33f3d68a4cfdedbd9835fbde62532b504d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897808"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042629"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的键盘快捷方式
 
@@ -23,7 +23,7 @@ ms.locfileid: "53897808"
 > 此处列出的快捷方式只介绍一部分可用的键盘快捷方式。 有关更完整的列表，请参阅 [默认键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中的常用键盘快捷方式](/visualstudio/mac/keyboard-shortcuts)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中的常用键盘快捷方式](/visualstudio/mac/keyboard-shortcuts)。
 
 ## <a name="window-management"></a>窗口管理
 

@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 69c74548340e8b8f642fa1e373bdd424c3c81a69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417793"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989739"
 ---
 # <a name="options-text-editor-general"></a>选项，文本编辑器，常规
 
@@ -67,7 +67,7 @@ ms.locfileid: "54417793"
 
 如果选中此选项，可以在单击鼠标的同时，按 Ctrl 并将鼠标悬停在元素之上。 这样，就可以转到选定元素的定义了。 也可以从“使用修改键”下拉列表中选择“Alt”或“Ctrl + Alt”。
 
-选中“在速览视图中打开定义”复选框，可以在窗口中显示元素定义，而无需离开代码编辑器中的当前位置。 
+选中“在速览视图中打开定义”复选框，可以在窗口中显示元素定义，而无需离开代码编辑器中的当前位置。
 
 ## <a name="display"></a>显示
 

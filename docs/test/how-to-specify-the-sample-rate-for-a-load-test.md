@@ -7,14 +7,14 @@ helpviewer_keywords:
 ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 896975330db08a0121aedd4bf3bea38f660e17fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7e637f7692f545ed3ef9e92cae219e9bbbb3d8ec
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931263"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976019"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>如何：为负载测试运行设置指定采样率
 
@@ -24,7 +24,7 @@ ms.locfileid: "53931263"
 
 使用“负载测试编辑器”，可以在“属性”窗口中编辑运行设置的“采样率”属性值。 有关运行设置属性及其说明的完整列表，请参见[负载测试运行设置属性](../test/load-test-run-settings-properties.md)。
 
-根据负载测试的长度，为负载测试运行设置的“采样率”属性选择适当的值。 较小的采样速率（如 5 秒默认值）需要占用负载测试结果数据库中的更多空间。 对于更长的负载测试，增加采样速率会减少收集的数据量。 有关更多信息，请参见[如何：为负载测试运行设置指定采样率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
+根据负载测试的长度，为负载测试运行设置的“采样率”属性选择适当的值。 较小的采样速率（如 5 秒默认值）需要占用负载测试结果数据库中的更多空间。 对于更长的负载测试，增加采样速率会减少收集的数据量。 有关详细信息，请参阅[如何：为负载测试运行设置指定采样率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)。
 
 下面是有关采样速率的一些准则：
 

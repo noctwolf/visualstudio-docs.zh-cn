@@ -2,19 +2,19 @@
 title: 将许可证分配给 Visual Studio 订阅 | Microsoft Docs
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 07/16/2018
 ms.topic: conceptual
 description: 了解管理员如何将许可证分配给订阅者
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6f0bbded7682bd8f7162ae415c6c83711df04a04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4dfec16161f6cd6b875b38738a9340e12d62f975
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931228"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970118"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 订阅管理员门户中分配许可证
 
@@ -46,7 +46,7 @@ ms.locfileid: "49931228"
 
     如果要向订阅添加自己的引用说明，则可以在“添加引用”部分执行操作。
    > [!div class="mx-imgBorder"]
-   > ![向每个订阅添加自己的引用说明](media/add-subscriber-reference-notes.png) 
+   > ![向每个订阅添加自己的引用说明](media/add-subscriber-reference-notes.png)
 
     完成选择选项和输入订阅者数据后，选择“添加订阅者”弹出窗口底部的“添加”。
    > [!div class="mx-imgBorder"]
@@ -54,7 +54,7 @@ ms.locfileid: "49931228"
 
 4. 添加订阅者后，系统会向新订阅者自动发送一封分配电子邮件，为其提供进一步说明。 通过选中订阅者和单击顶部菜单中的“重新发送”按钮，可以随时再次发送分配电子邮件。
    > [!div class="mx-imgBorder"]
-   > ![随时向任何用户或多个用户重新发送激活电子邮件](media/resend-subscriber-activation-emails.png) 
+   > ![随时向任何用户或多个用户重新发送激活电子邮件](media/resend-subscriber-activation-emails.png)
 
 ## <a name="bulk-assignments"></a>批量分配
 
@@ -65,7 +65,7 @@ ms.locfileid: "49931228"
 2. 批量分配会使用 Microsoft Excel 模板上传订阅者。 在“上传多个订阅者”对话框中，单击“下载”下载模板。
    > [!div class="mx-imgBorder"]
    > ![下载 Excel 模板以上传多个订阅者](media/download-template-upload-subscribers.png)
-   > 
+   >
    > [!NOTE]
    > 请务必下载本模板的最新版本。 如果使用旧版本，批量上传可能会失败。
 

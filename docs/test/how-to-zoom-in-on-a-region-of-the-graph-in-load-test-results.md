@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4026c8077c45fa7f383f59eda0595c8a97eba58d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49d47a0784c3f3c1ffb40b861da929e74d839abb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823511"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54948968"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>如何：放大负载测试结果中关系图的区域
 
@@ -58,7 +58,7 @@ ms.locfileid: "53823511"
 
      \- 或 -
 
-     查看上一次运行的负载测试的详细信息。 有关更多信息，请参见[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
+     查看上一次运行的负载测试的详细信息。 有关详细信息，请参阅[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
 3.  如果未显示关系图，请选择“关系图”。
 

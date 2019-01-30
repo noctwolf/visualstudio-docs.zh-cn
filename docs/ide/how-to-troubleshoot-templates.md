@@ -7,13 +7,13 @@ helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4908716ce5f984aef6dbd3d482a26e1aeb94623d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: cc8507388e4ef9311aeb5345e5f91bd43340f5d0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890912"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027407"
 ---
 # <a name="how-to-troubleshoot-templates"></a>如何：模板疑难解答
 

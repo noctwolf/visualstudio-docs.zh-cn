@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4645b1a9bb594e5e4b2ca7220c6eda32947ab4f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b986efd252c212665d98c93d5452d510008e2dae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833615"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997268"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“任务列表”
 
@@ -58,7 +58,7 @@ ms.locfileid: "53833615"
 > 如果未按标记在“标记列表”中显示的样子键入所需标记，那么注释任务不会在“任务列表”中显示。
 
 
- 优先级
+ Priority
 
  设置使用所选标记的任务的优先级。 将在“任务列表”中为以此标记开头的任务注释自动分配指定的优先级。
 

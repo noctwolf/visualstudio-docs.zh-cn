@@ -12,17 +12,17 @@ helpviewer_keywords:
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f99f18af416ead93c9327afcda6de0196da81566
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9cbcdb26b333bc0d4ba0d96d5a81d652666c6c86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833852"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54956085"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 编码约定设置
 
@@ -328,7 +328,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 此规则不接受“true”或“false”值；此规则接受下表中的值：
 
-| 值 | 说明 |
+| “值” | 说明 |
 | ----- |:----------- |
 | always | 优先指定可访问性修饰符 |
 | for\_non\_interface_members | 优先声明可访问性修饰符，公共接口成员除外。 这与往常相同，并且已添加以用于未来验证（如果 C# 添加默认接口方法）。 |
@@ -1013,7 +1013,7 @@ public int GetAge() { return this.Age; }
 
 此规则接受下表中的值：
 
-| “值” | 说明 |
+| 值 | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用构造函数的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用构造函数的 expression-bodied 成员 |
@@ -1095,7 +1095,7 @@ public T this[int i] { get { return _values[i]; } }
 
 此规则接受下表中的值：
 
-| “值” | 说明 |
+| 值 | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用访问器的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用访问器的 expression-bodied 成员 |

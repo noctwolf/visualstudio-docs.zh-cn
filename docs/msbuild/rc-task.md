@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 156de08e8bd0ed2a8cadd0653facfa99d352cb20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac85538456f87464f951dd18b733db50d60b4038
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915583"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039184"
 ---
 # <a name="rc-task"></a>RC 任务
 包装 Microsoft Windows 资源编译器工具 rc.exe。 RC 任务将游标、图标、位图、对话框和字体等资源编译为一个资源 (.res) 文件。 有关详细信息，请参阅[资源编译器](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler)。

@@ -5,15 +5,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6db68827b94deb461fe812e333d3fcbb44afc4f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 29176082a91ca5a66b44d2a30318f0b53452bad4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850909"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988202"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>播放期间让编码 UI 测试等待特定事件
 
@@ -26,7 +26,7 @@ ms.locfileid: "53850909"
 Visual Studio Enterprise
 
 > [!TIP]
-> 使用编码的 UI 测试编辑器，还可以在操作之前添加延迟。 有关更多信息，请参见[如何：使用编码的 UI 测试编辑器在 UI 操作之前插入延迟](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)。
+> 使用编码的 UI 测试编辑器，还可以在操作之前添加延迟。 有关详细信息，请参阅[如何：使用编码的 UI 测试编辑器在 UI 操作之前插入延迟](editing-coded-ui-tests-using-the-coded-ui-test-editor.md#insert-a-delay-before-a-ui-action)。
 
 **UITestControl.WaitForControlXXX() 方法**
 

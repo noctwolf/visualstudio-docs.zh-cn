@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58df3c16de6fd7a4eba95fabb0d67e900ba8152d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32bd10c1260309856eba14a3a42d2acaac939f6e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917418"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029214"
 ---
 # <a name="summary-view---resource-contention-view"></a>“摘要”视图 - 资源争用视图
 “摘要”视图显示有关应用程序中线程或进程在其中挂起、同时等待访问资源的事件的信息。  
@@ -23,7 +23,7 @@ ms.locfileid: "53917418"
  有关详细信息（包括通知链接和报告列表的说明），请参阅[“摘要”视图](../profiling/summary-view.md)。  
   
 ## <a name="timeline-graph"></a>时间线关系图  
- “摘要”视图中的时间线关系图显示在进行分析的时间内分析的应用程序的争用事件数。 可以使用时间线关系图将视图筛选到所选时间范围。 有关更多信息，请参见[如何：从摘要时间线中筛选报表视图](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
+ “摘要”视图中的时间线关系图显示在进行分析的时间内分析的应用程序的争用事件数。 可以使用时间线关系图将视图筛选到所选时间范围。 有关详细信息，请参阅[如何：从摘要时间线中筛选报表视图](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
   
 ## <a name="most-contended-resources"></a>争用最激烈的资源  
  “争用最激烈的资源”列出应用程序中导致最多争用事件的资源。 可以单击某个资源名以显示“争用”视图。 “争用”视图按线程提供资源争用的详细时间线。  

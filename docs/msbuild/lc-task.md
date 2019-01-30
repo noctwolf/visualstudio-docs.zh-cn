@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d5a53472-6f2a-42b8-a6db-593ca99c9790
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fee34977f790589194ec120ea88515bcf884a9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eb0e4d6cbcceb92485f3427e5e18a8d7e7fc18c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921768"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54989557"
 ---
 # <a name="lc-task"></a>LC 任务
 包装 LC.exe 文件，它可从 .licx 文件生成 .license 文件。 有关 LC.exe 的详细信息，请参阅 [Lc.exe（许可证编译器）](/dotnet/framework/tools/lc-exe-license-compiler)。  

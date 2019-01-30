@@ -19,21 +19,21 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6209daea293859df16212560255f50d7f7ffff28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3612e3b04fc27460922f90e48666397ce9fb3b73
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822498"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042981"
 ---
 # <a name="manage-references-in-a-project"></a>管理项目中的引用
 
 在对外部组件或连接的服务编写代码之前，你的项目必须首先包含对它的引用。 引用实质上是项目文件中包含 Visual Studio 定位组件或服务所需信息的条目。
 
-若要添加引用，请右键单击“解决方案资源管理器”中的“引用”或“依赖项”节点，然后选择“添加引用”。 还可以右键单击项目节点，然后选择“添加” > “引用”。 有关更多信息，请参见[如何：添加或删除引用](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。
+若要添加引用，请右键单击“解决方案资源管理器”中的“引用”或“依赖项”节点，然后选择“添加引用”。 还可以右键单击项目节点，然后选择“添加” > “引用”。 有关详细信息，请参阅[如何：添加或删除引用](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)。
 
 ![在 Visual C&#43;&#43; 中添加引用](../ide/media/vs2015_cpp_add_reference.png)
 

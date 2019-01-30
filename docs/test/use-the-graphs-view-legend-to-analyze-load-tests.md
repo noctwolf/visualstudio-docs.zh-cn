@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d6d152849eacc83674d95573e2b78088d66aed94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9f67a9312703dafc5430522c9be6ffe6c25c7d18
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913328"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938668"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>使用关系图视图图例分析负载测试
 
@@ -43,7 +43,7 @@ ms.locfileid: "53913328"
     > [!NOTE]
     > 当负载测试正在运行时，“最后一个”列才会显示在负载测试分析器的图例中。
 
-     有关更多信息，请参见[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+     有关详细信息，请参阅[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
 在图例中选择某一项可实现以下操作：
 

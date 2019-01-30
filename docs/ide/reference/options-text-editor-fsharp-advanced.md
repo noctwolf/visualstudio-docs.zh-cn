@@ -4,18 +4,18 @@ ms.date: 01/16/2019
 ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.FSharp.Advanced
+- VS.ToolsOptionsPages.Text_Editor.F%2523.Advanced
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b58f22983d11e44a863c834188cc938282c2626
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 9a3158708215303be4dc0bd66202a165cf3a5d4a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398362"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955708"
 ---
 # <a name="options-text-editor-f-advanced"></a>“选项”>“文本编辑器”>“F#”>“高级”
 
@@ -23,12 +23,12 @@ ms.locfileid: "54398362"
 
 ## <a name="block-structure-guides"></a>块结构指南
 
-如果选中此复选框，可以在代码中的大括号 ({}) 之间显示虚竖线。 这样一来，就可以轻松识别各个代码块了。
-  
+如果你选中此选项，与结构化代码块对齐的竖线就会在编辑器中显示，这样你就能轻松识别各个代码块了。
+
 ## <a name="outlining"></a>大纲显示
 
 如果选中此复选框，可以自动大纲显示代码文件，从而创建可折叠代码块。
-  
+
 ## <a name="see-also"></a>请参阅
 
 - [“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)

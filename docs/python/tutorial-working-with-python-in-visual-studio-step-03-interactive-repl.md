@@ -2,22 +2,22 @@
 title: Visual Studio 中的 Python 教程步骤 3，交互式 REPL
 titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 功能的核心教程的第 3 步，介绍了 Python 交互式 REPL 窗口。
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9cc9bc13f26707132703851dea5cc3c7de351601
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf51a53301ad65debe2bb69d33ce8a159aa9612f
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986825"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231878"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>步骤 3：使用交互式 REPL 窗口
 
@@ -74,7 +74,7 @@ ms.locfileid: "53986825"
     ![在交互窗口中编辑以前的语句](media/vs-getting-started-python-16-interactive6.png)
 
 1. 反复尝试使用不同的单步执行设置，直到找到最喜欢的值。 也可以延长范围（例如 `range(0, 1800, 12)`）使波形重复。
- 
+
 1. 如果对在交互窗口中编写的代码感到满意，可选择代码，单击右键，选择“复制代码”(Ctrl+Shift+C)，然后粘贴到编辑器中。 注意 Visual Studio 的这一特殊功能如何自动省略所有输出以及 `>>>` 和 `...` 提示符。 例如，下图演示如何对包含提示符和输出的选定内容使用“复制代码”命令：
 
     ![交互窗口中用于包含提示符和输出的选定内容的“复制代码”命令](media/vs-getting-started-python-17-interactive7.png)

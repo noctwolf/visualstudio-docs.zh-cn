@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9f6eb0d5-d9e9-4bec-b627-445065610bce
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 370fbea6d819b5c9f51b2bd9e3182fd37244af3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2279baf0f0e692cc0034827205e2c7468c0a9b27
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934026"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947798"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>如何：启动和结束性能数据收集
 启动分析之前，必须将要分析的目标二进制文件添加到性能会话中。 若要添加目标，请在“性能资源管理器”中右键单击“目标”，然后单击“添加目标二进制文件”。 在“添加目标二进制文件”对话框中，选择文件名，然后单击“打开”。 将添加一个新的二进制文件。  
@@ -31,7 +31,7 @@ ms.locfileid: "53934026"
   
     -   **启动并启用分析功能** — 启动应用程序并立即开始分析。  
   
-    -   **启动并暂停分析** — 启动应用程序，但不开始分析。 可以通过在“数据收集控制”窗口中选择“恢复收集”来启动分析。 有关更多信息，请参见[如何：暂停和恢复性能数据收集](../profiling/how-to-pause-and-resume-performance-data-collection.md)。  
+    -   **启动并暂停分析** — 启动应用程序，但不开始分析。 可以通过在“数据收集控制”窗口中选择“恢复收集”来启动分析。 有关详细信息，请参阅[如何：暂停和恢复性能数据收集](../profiling/how-to-pause-and-resume-performance-data-collection.md)。  
   
 ### <a name="to-end-profiling"></a>结束分析  
   

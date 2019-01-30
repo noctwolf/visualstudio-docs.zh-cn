@@ -6,14 +6,14 @@ helpviewer_keywords:
 - editorconfig [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2714972a292a9086bd8aa40e77aa3b65eefb8e5e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2043fb01a67a916ebf13fada7c03111c7a80510
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935354"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027108"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 
@@ -24,7 +24,7 @@ ms.locfileid: "53935354"
 在 Visual Studio 中将 EditorConfig 文件添加到你的项目时，现有代码的格式设置不会更改，除非设置文档格式（在默认配置文件中单击“编辑” > “高级” > “设置文档格式”或按 Ctrl+K、Ctrl+D）。 但任何新的代码行都将根据 EditorConfig 设置设置格式。 可定义希望“设置文档格式”在[“设置格式”选项](reference/options-text-editor-csharp-formatting.md#format-document-settings)页面上应用的 EditorConfig 设置。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[Visual Studio for Mac 中的 EditorConfig](/visualstudio/mac/editorconfig)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[Visual Studio for Mac 中的 EditorConfig](/visualstudio/mac/editorconfig)。
 
 ## <a name="coding-consistency"></a>编码一致性
 

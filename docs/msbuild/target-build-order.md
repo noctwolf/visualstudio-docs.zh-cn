@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96eb3aacfd83ad60ae6c0e0f1fa95209136307ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c2b306e926e784afb0558210f090efdfc1496b31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881521"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959442"
 ---
 # <a name="target-build-order"></a>目标生成顺序
 如果目标的输入取决于另一目标的输出，那么必须将目标排序。 可使用这些属性指定目标运行的顺序：  
@@ -43,7 +43,7 @@ ms.locfileid: "53881521"
   
  导入的项目可能有自己的 `InitialTargets` 属性。 所有初始目标都聚集在一起并按顺序运行。  
   
- 有关更多信息，请参见[如何：指定首先生成的目标](../msbuild/how-to-specify-which-target-to-build-first.md)。  
+ 有关详细信息，请参阅[如何：指定首先生成的目标](../msbuild/how-to-specify-which-target-to-build-first.md)。  
   
 ## <a name="default-targets"></a>默认目标  
  如果未在命令行上显式指定某个目标，[Project](../msbuild/project-element-msbuild.md) 元素的 `DefaultTargets` 属性可指定将生成哪个或哪些目标。  
@@ -62,7 +62,7 @@ ms.locfileid: "53881521"
   
  导入的项目可能有自己的 `DefaultTargets` 属性。 第一个出现的 `DefaultTargets` 属性将确定要运行的默认目标。  
   
- 有关更多信息，请参见[如何：指定首先生成的目标](../msbuild/how-to-specify-which-target-to-build-first.md)。  
+ 有关详细信息，请参阅[如何：指定首先生成的目标](../msbuild/how-to-specify-which-target-to-build-first.md)。  
   
 ## <a name="first-target"></a>第一个目标  
  如果没有初始目标、默认目标或命令行目标，那么 MSBuild 会先运行项目文件中或任意导入的项目文件中出现的第一个目标。  
