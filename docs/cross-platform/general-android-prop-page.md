@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.assetid: 65f4868b-b864-4989-a275-1e51869ef599
 author: corob
 ms.author: mblome
-manager: douge
+manager: jillfra
 f1_keywords:
 - VC.Project.VCConfiguration.OutputDirectory
 - VC.Project.VCConfiguration.IntermediateDirectory
@@ -22,16 +22,16 @@ f1_keywords:
 - VC.Project.VCConfiguration.ThumbMode
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b72cbb0d2660507a0578781c79a7cbdf60be7d8b
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 4bb6f26fe40b639b43cb803577a785fa9b48823d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252233"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54949904"
 ---
 # <a name="general-project-properties-android-c"></a>常规项目属性 (Android C++)
 
-属性 | 描述 | 选项
+Property | 说明 | 选项
 --- | ---| ---
 输出目录 | 指定输出文件目录的相对路径；可以包含环境变量。
 中间目录 | 指定中间文件目录的相对路径；可以包含环境变量。
