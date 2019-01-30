@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e75a5da65343a08f0c94be27837e70f4078192d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aec25bac7d1851095a9c7c5d96766b2326fb36ac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893044"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943060"
 ---
 # <a name="compare-performance-data-files"></a>比较性能数据文件
 凭借分析工具数据文件比较功能，可以选择两个报表文件（.vsp 或 .vsp 文件）并生成报告，显示从一个分析会话到另一个分析会话出现的差异、性能回归和改进。  

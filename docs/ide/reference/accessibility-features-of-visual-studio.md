@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28a4d386dcaa6525acb450bcabb2f459637a8cbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1b9a42279680f6cb0b2f617428af49114bbc993c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866473"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937517"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的辅助功能
 
@@ -38,7 +38,7 @@ ms.locfileid: "53866473"
 -   方法和参数功能的自动完成
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 辅助功能](/visualstudio/mac/accessibility)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 辅助功能](/visualstudio/mac/accessibility)。
 
 > [!IMPORTANT]
 > 本节中的信息仅适用于美国境内获得 Microsoft 产品许可证的用户。 如果在美国以外的其他国家/地区获取到该产品，那么可以使用软件包附带的分公司信息卡或访问[“Microsoft 支持”的“联系我们”页面](http://support.microsoft.com/ContactUs)，然后单击“查找 Microsoft 全球办事处”链接（靠近网页底部）。 这一页面提供了载有 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本节中描述的产品和服务类型。 有关辅助功能的信息有其他语言版本，包括日语和法语。

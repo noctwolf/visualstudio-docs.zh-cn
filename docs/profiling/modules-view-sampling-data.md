@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4c4e3d9181fecd3c9aa2d91201deadb09de7c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3daf206adeedc26645c50a2fe092de3d4bfde980
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892973"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952205"
 ---
 # <a name="modules-view---sampling-data"></a>“模块”视图 - 采样数据
 采样数据的“模块”视图显示按分析数据中采样的模块分组的性能数据。 每个模块都是一个层次结构树的根。 模块的采样函数在模块节点下列出。  

@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 718c8cfdf7b4d03ea0c1c3b5f9f4a120a5997a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8077b08765e1db372ec9f19c39e62f10dd2c285a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935458"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069910"
 ---
 # <a name="exploration-bounds"></a>浏览边界
 
@@ -106,7 +106,7 @@ for (int i=0; i<100; i++) { }
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -144,10 +144,10 @@ MaxRuns 和 MaxRunsWithUniquePaths 这两个设置的关系如下所示：
 
 此浏览边界背后的动机是包含循环或递归的任何代码可能具有无限数目的执行路径，因此必须在[输入生成](input-generation.md)期间限制 IntelliTest。
 
-MaxRuns 和 MaxRunsWithUniquePaths 这两个设置的关系如下所示： 
+MaxRuns 和 MaxRunsWithUniquePaths 这两个设置的关系如下所示：
 
 * IntelliTest 将使用不同的测试输入调用参数化测试方法最多 MaxRuns 次。
-* 如果执行代码是确定的，IntelliTest 每次将使用不同的执行路径。 但在某些情况下，执行代码可能会使用不同的输入沿用之前使用过的执行路径。 
+* 如果执行代码是确定的，IntelliTest 每次将使用不同的执行路径。 但在某些情况下，执行代码可能会使用不同的输入沿用之前使用过的执行路径。
 * IntelliTest 计算找到的唯一执行路径数；此数目受 MaxRunsWithUniquePaths 选项限制。
 
 <a name="maxexceptions"></a>

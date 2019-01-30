@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34880d96effb9c1c77c1d88c22f61967741b693e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d32432631f254ca3a9a67d95862f8017fd61ac17
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878268"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941322"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>“高级编译器设置”对话框 (Visual Basic)
 
@@ -30,7 +30,7 @@ ms.locfileid: "53878268"
 
 2.  在“项目”菜单上，单击“属性”。 当“项目设计器”出现时，单击“编译”选项卡。
 
-3.  在[“编译”->“项目设计器”(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)上，依次选择“配置”和“平台”。 在简化生成配置中，不会显示“配置”和“平台”列表。 有关更多信息，请参见[如何：设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
+3.  在[“编译”->“项目设计器”(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)上，依次选择“配置”和“平台”。 在简化生成配置中，不会显示“配置”和“平台”列表。 有关详细信息，请参阅[如何：设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
 4.  单击“高级编译选项”。
 

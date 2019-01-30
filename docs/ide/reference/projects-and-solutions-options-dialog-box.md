@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 466df9ad82ef4bdc4b4cb3d699b53c0568f3b08a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d513cf50ba29b594924309450cdef67684ccfd6b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926303"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039522"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”页
 
@@ -88,11 +88,11 @@ ms.locfileid: "53926303"
 
 ### <a name="user-project-templates-location"></a>用户项目模板位置
 
-指定“新建项目”对话框中使用的默认位置来创建“我的模板”的列表。 有关更多信息，请参见[如何：查找和组织模板](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+指定“新建项目”对话框中使用的默认位置来创建“我的模板”的列表。 有关详细信息，请参阅[如何：查找和组织模板](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ### <a name="user-item-templates-location"></a>用户项模板位置
 
-指定“添加新项”对话框中使用的默认位置来创建“我的模板”的列表。 有关更多信息，请参见[如何：查找和组织模板](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+指定“添加新项”对话框中使用的默认位置来创建“我的模板”的列表。 有关详细信息，请参阅[如何：查找和组织模板](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ## <a name="see-also"></a>请参阅
 

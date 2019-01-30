@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 74118aee63a67310656926d84300ba180ff74188
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 6a179dc2dc8f3851b1b75ca840b55e07e1ff6a30
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060824"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927510"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步骤 4：使用完整的 Flask Web 项目模板
 
@@ -163,7 +163,7 @@ index.html 和 contact.html 使用相同的结构，在“内容”块中提供�
 
 如本文开头所述，Visual Studio 提供“Flask/Jade Web 项目”模板，该模板创建的应用程序与“Flask Web 项目”生成的应用程序在视觉上相同。 主要区别在于它使用 Jade 模板引擎，该引擎是 Jinja 的扩展，Jinja 使用更简洁的语言来实现相同的概念。 具体来说，例如，Jade 使用关键字而不是括在 {% %} 分隔符中的标记，使你可以使用关键字引用 CSS 样式和 HTML 元素。
 
-要启用 Jade，项目模板首先在 requirements.txt 中包含 pyjade 包。 
+要启用 Jade，项目模板首先在 requirements.txt 中包含 pyjade 包。
 
 该应用的 \_\_init\_\_.py 文件包含一行
 

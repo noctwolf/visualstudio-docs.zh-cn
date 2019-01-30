@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: b2773344-8081-4116-85a1-58f770448f6a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e162e234a5f0596073df12f7791cdb3e3126cf9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 799185aa3ea1caa84c64d2887506d666fdc68577
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873877"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996371"
 ---
 # <a name="marks-view"></a>“标记”视图
 “标记”视图显示插入到应用程序的采样和 ETW 事件。  
   
  在报表中预先填充的默认标记可用来标记程序开始和程序结束。  
   
- 来自自动生成的标记的 Windows 计数器数据也显示在此视图中。 有关更多信息，请参见[如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)。  
+ 来自自动生成的标记的 Windows 计数器数据也显示在此视图中。 有关详细信息，请参阅[如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)。  
   
  若要创建两个标记之间的筛选器，请选择标记，右键单击，然后单击“添加筛选器(按标记)”或“添加筛选器(按时间戳)”。  
   

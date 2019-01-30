@@ -6,21 +6,21 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 93e2887b15ff3f53634d68774ab31d3b4bfb7aaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da72f68d72a435ebf7fe90a7a7d5b6141e409f07
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925493"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918363"
 ---
 # <a name="debug-r-in-visual-studio"></a>在 Visual Studio 中调试 R
 
 针对 Visual Studio 的 R 工具 (RTVS) 集成了 Visual Studio 的完整调试体验（请参阅[在 Visual Studio 中进行调试](/visualstudio/debugger/debugger-feature-tour)）。 此支持包括断点、附加到运行进程、检查和监视变量以及检查调用堆栈。 本文随后探讨了 R 和 RTVS 独有的调试特性性。
 
-在 R 项目中启动 R 启动文件的调试器与启动其他项目类型的调试器相同：使用“调试” > “启动调试”、按 F5 键，或选择调试工具栏上的“源化启动文件”： 
+在 R 项目中启动 R 启动文件的调试器与启动其他项目类型的调试器相同：使用“调试” > “启动调试”、按 F5 键，或选择调试工具栏上的“源化启动文件”：
 
 ![R 的调试器启动按钮](media/debugger-start-button.png)
 

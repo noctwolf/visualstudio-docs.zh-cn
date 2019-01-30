@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: da1c1ad76802496108284dcb6fc037bfd7443180
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e0098db138aa476a9ec66c7d9f79f6c112f256e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940909"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923907"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测动态编译的 ASP.NET web 应用程序，并收集内存数据
 本主题介绍如何使用检测分析方法和 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具为动态编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序收集详细的 .NET 内存分配和对象生存期数据。  
@@ -31,7 +31,7 @@ ms.locfileid: "53940909"
 
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>配置 ASP.NET Web 应用程序和 Web 服务器  
 
-1.  修改目标应用程序的 web.config 文件。 请参阅[操作说明：将 web.Config 文件修改为检测和分析动态编译的 ASP.NET web 应用程序](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md)。  
+1.  修改目标应用程序的 web.config 文件。 请参阅[如何：将 web.Config 文件修改为检测和分析动态编译的 ASP.NET web 应用程序](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md)。  
 
 2.  在承载 Web 应用程序的计算机上打开命令提示符窗口。  
 

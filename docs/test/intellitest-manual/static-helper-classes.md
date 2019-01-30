@@ -6,16 +6,16 @@ ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 09799a4625791efa137dc9b97b7c3ad9a041feae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56493da196a0d53ead738b2eff6d10a2f9328c37
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897795"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54929320"
 ---
 # <a name="static-helper-classes"></a>静态帮助程序类
 
@@ -131,7 +131,7 @@ public static class MathEx {
 public partial class MathExTests {
      [PexMethod]
      public int SquareTest(int a) {
-        int result = MathEx.Square(a); 
+        int result = MathEx.Square(a);
         // storing result
         return result;
      }
@@ -149,7 +149,8 @@ public partial class MathExTests {
 
 **示例**
 
-此示例演示了如何实现 PexAssume.Arrays.ElementsAreNotNull 方法。 在该方法中会忽略对数组值长度的约束，以避免 IntelliTest 尝试生成其他大小的数组。 只在此处忽略该约束。 如果经测试代码对不同数组长度的处理方式不同，IntelliTest 无法根据对经测试代码的约束生成不同大小的数组。
+此示例演示了如何实现 PexAssume.Arrays.ElementsAreNotNull 方法。
+在该方法中会忽略对数组值长度的约束，以避免 IntelliTest 尝试生成其他大小的数组。 只在此处忽略该约束。 如果经测试代码对不同数组长度的处理方式不同，IntelliTest 无法根据对经测试代码的约束生成不同大小的数组。
 
 ```csharp
 public static void AreElementsNotNull<T>(T[] value)

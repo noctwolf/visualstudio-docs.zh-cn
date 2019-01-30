@@ -14,15 +14,15 @@ f1_keywords:
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83c7a2b0d0004b1f96a1c46ab120814179f77d26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9011a6614c59b033925cb2266d4e16a4f131a119
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956526"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54923839"
 ---
 # <a name="property-pages-javascript"></a>属性页，JavaScript
 “属性页”提供对项目设置的访问。 可使用“属性页”中显示的页面来更改项目属性。
@@ -38,11 +38,11 @@ ms.locfileid: "53956526"
 
  **配置**
 
- 指定要显示或修改的配置设置。 这些设置包括“调试”（默认）、“版本”、“所有配置”或用户定义的配置。 有关更多信息，请参见[如何：在 Visual Studio 中设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
+ 指定要显示或修改的配置设置。 这些设置包括“调试”（默认）、“版本”、“所有配置”或用户定义的配置。 有关详细信息，请参阅[如何：在 Visual Studio 中设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
  **平台**
 
- 指定要显示或修改的平台设置。 这些设置包括“任何 CPU”（[!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 应用的默认值）、“x64”、“ARM”、“x86”或用户定义的平台。 有关更多信息，请参见[如何：在 Visual Studio 中设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
+ 指定要显示或修改的平台设置。 这些设置包括“任何 CPU”（[!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 应用的默认值）、“x64”、“ARM”、“x86”或用户定义的平台。 有关详细信息，请参阅[如何：在 Visual Studio 中设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
 ## <a name="general-page"></a>常规页
  使用以下选项来设置项目的常规属性。

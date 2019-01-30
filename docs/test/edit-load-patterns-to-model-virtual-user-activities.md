@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 360d3da6d88d053b24c11591e55c218bf3e5563b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4f8e80fa9568bf418b972a3e2dd77d9141ba829f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942091"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932722"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>编辑负载模式以便为虚拟用户活动建模
 
@@ -67,7 +67,7 @@ ms.locfileid: "53942091"
 
 - **单步用户计数**：100
 
-  这些设置可使负载测试在 100、200、300 直至 2,000 个用户的用户负载下运行 30 分钟（1,800 秒）。 请特别注意“单步负载增加时间”属性，因为在这些属性中，它是“新建负载测试向导”中唯一不可选的属性。 通过此属性，可从某一步逐渐（而不是一下）增加到下一步（例如，从 100 个用户增加到 200 个用户）。 在此示例中，用户负载将在 20 秒内从 100 个用户增加到 200 用户，即每秒增加 5 个用户。 有关更多信息，请参见[如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)。
+  这些设置可使负载测试在 100、200、300 直至 2,000 个用户的用户负载下运行 30 分钟（1,800 秒）。 请特别注意“单步负载增加时间”属性，因为在这些属性中，它是“新建负载测试向导”中唯一不可选的属性。 通过此属性，可从某一步逐渐（而不是一下）增加到下一步（例如，从 100 个用户增加到 200 个用户）。 在此示例中，用户负载将在 20 秒内从 100 个用户增加到 200 用户，即每秒增加 5 个用户。 有关详细信息，请参阅[如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)。
 
 ### <a name="goal-based"></a>基于目标的负载模式
 
@@ -127,7 +127,7 @@ ms.locfileid: "53942091"
  负载模式指定在负载测试期间活动的虚拟用户的数目以及添加新用户的速率。 可以从三种可用模式中进行选择：分级模式、常数模式和基于目标的模式。 有关详细信息，请参阅[在负载测试方案中使用负载模式指定虚拟用户数](../test/edit-load-patterns-to-model-virtual-user-activities.md)。
 
 > [!NOTE]
-> 也可以使用负载测试插件通过编程方式更改负载属性。 有关更多信息，请参见[如何：创建负载测试插件](../test/how-to-create-a-load-test-plug-in.md)。
+> 也可以使用负载测试插件通过编程方式更改负载属性。 有关详细信息，请参阅[如何：创建负载测试插件](../test/how-to-create-a-load-test-plug-in.md)。
 
 
 ### <a name="to-change-the-load-pattern"></a>更改负载模式

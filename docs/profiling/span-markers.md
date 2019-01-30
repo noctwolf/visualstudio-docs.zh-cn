@@ -7,15 +7,15 @@ f1_keywords:
 ms.assetid: 736b7765-9c71-44d7-85e5-79787d13d91c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dcb2ceb3c61c0f4624130eb1293c108d72149fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10e8dad4427f9eba3e8ad4e91a39b65f6729a87a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948532"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924637"
 ---
 # <a name="span-markers"></a>范围标记
 范围标记表示应用程序一个有意义的阶段。 例如，可以用范围表示正在处理某特定工作项的时间间隔。 范围的长度表示相应的应用程序阶段的持续时间。 下图显示并发可视化工具中的一个范围：  

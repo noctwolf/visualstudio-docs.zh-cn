@@ -7,13 +7,13 @@ helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d921257e202e3b8175fcfd01910c00ece4306136
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 766df44bc5b793b589120de928f7c21e424e9f69
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952256"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003326"
 ---
 # <a name="how-to-create-item-templates"></a>如何：创建项模板
 
@@ -25,7 +25,7 @@ ms.locfileid: "53952256"
 
 1. 向项目添加一项，并在需要时修改它。
 
-1. 修改代码文件，以指示应进行参数替换的位置。 有关更多信息，请参见[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)。
+1. 修改代码文件，以指示应进行参数替换的位置。 有关详细信息，请参阅[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)。
 
 1. 在“项目”菜单上，选择“导出模板”。
 
@@ -122,7 +122,7 @@ ms.locfileid: "53952256"
 
 1. 在**个Windows资源管理器**中，选择要包含在模板中的文件。 右键单击所选文件，然后选择“发送至” > “压缩的文件夹（zip 格式）”。 所选的文件将压缩到一个 .zip 文件中。
 
-1. 复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2017 中，默认目录是 %USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates。 有关更多信息，请参见[如何：查找和组织项目和项模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+1. 复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2017 中，默认目录是 %USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates。 有关详细信息，请参阅[如何：查找和组织项目和项模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ## <a name="see-also"></a>请参阅
 

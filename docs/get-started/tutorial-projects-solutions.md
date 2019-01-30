@@ -7,15 +7,15 @@ ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25450c2bb2965852e2077fc234548f224e070ff8
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: f62e963af28a165246ba7e0ec977d7fd2149d622
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441738"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033760"
 ---
 # <a name="learn-about-projects-and-solutions"></a>了解项目和解决方案
 
@@ -30,7 +30,7 @@ ms.locfileid: "53441738"
 
 ## <a name="solutions-and-projects"></a>解决方案和项目
 
-尽管其名称如此，但解决方案并不是“答案”。 解决方案仅仅是 Visual Studio 用来组织一个或多个相关项目的容器。 在 Visual Studio 中打开解决方案时，它会自动加载包含的所有项目。
+尽管其名称如此，但解决方案并不是“答案”。 解决方案仅仅是 Visual Studio 用来组织一个或多个相关项目的容器。 在 Visual Studio 中打开解决方案时，它会自动加载其中包含的所有项目。
 
 ### <a name="create-a-solution"></a>创建解决方案
 

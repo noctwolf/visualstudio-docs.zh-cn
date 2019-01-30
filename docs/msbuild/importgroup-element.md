@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21dcaa5e4192c2ee4dd223da5cad560ded220275
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97d5aeac5115dfa251b42c824b88a779e22ad6a4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928985"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978329"
 ---
 # <a name="importgroup-element"></a>ImportGroup 元素
 包含在可选条件下进行分组的 `Import` 元素的集合。 有关详细信息，请参阅 [Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)。  

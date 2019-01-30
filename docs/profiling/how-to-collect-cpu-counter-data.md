@@ -9,15 +9,15 @@ helpviewer_keywords:
 - performance tools, portable CPU counters
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab80ba010a91df11efac21366a812015defa3b23
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae991730caf5e83e9632d7b9a871a62778463098
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897230"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928563"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 计数器数据
 
@@ -43,7 +43,7 @@ CPU 事件计数器用于收集特定于硬件的性能数据。 本文演示如
 
 - 通过检测进行分析时，从一个或多个计数器中收集数据。
 
-- 通过采样进行分析时，指定一个计数器事件作为采样间隔。 有关更多信息，请参见[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)。
+- 通过采样进行分析时，指定一个计数器事件作为采样间隔。 有关详细信息，请参阅[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)。
 
 ## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>通过检测进行分析时收集 CPU 性能计数器数据
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: e8e0f253dbd1f97bc2b485b2e18dd6a5d40db1c2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315587"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002029"
 ---
 # <a name="code-snippets-schema-reference"></a>代码片段架构参考
 
@@ -123,7 +123,7 @@ $selected$ is a great color. I love $selected$.
 
 - **类型**  -  该可选属性用于指定代码片段包含的代码的类型，以及编译代码片段时代码片段必须插入的位置。 值可以是下列任一值：
 
-   |值|说明|
+   |“值”|说明|
    |-----|-----------|
    |`method body`|指定代码段为方法体，因此必须插入到方法声明中。|
    |`method decl`|指定代码段为方法，因此必须插入到类或模块中。|

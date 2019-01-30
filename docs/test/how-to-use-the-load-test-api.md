@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: ee66a15788e9ae640142c269e388846a59311190
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fddd81ae64a53943e08457f4ed4a8c19f5d62ab0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926052"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54970877"
 ---
 # <a name="how-to-use-the-load-test-api"></a>如何：使用负载测试 API
 
@@ -27,7 +27,7 @@ Visual Studio 支持可以控制或增强负载测试的负载测试插件。 �
 > [!TIP]
 > 可使用对象浏览器来检查 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 命名空间。 Visual C# 和 Visual Basic 编辑器均为使用此命名空间中的类编写代码提供了 IntelliSense 支持。
 
-还可以创建 Web 性能测试插件。 有关更多信息，请参见[如何：创建 Web 性能测试插件](../test/how-to-create-a-web-performance-test-plug-in.md)和[如何：创建请求级插件](../test/how-to-create-a-request-level-plug-in.md)。
+还可以创建 Web 性能测试插件。 有关详细信息，请参阅[如何：创建 Web 性能测试插件](../test/how-to-create-a-web-performance-test-plug-in.md)和[如何：创建请求级插件](../test/how-to-create-a-request-level-plug-in.md)。
 
 ## <a name="to-use-the-loadtesting-namespace"></a>使用 LoadTesting 命名空间
 

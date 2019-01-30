@@ -8,22 +8,22 @@ helpviewer_keywords:
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c2c9b1ff1380fc8a8f4a96f64a45a0a7fbd1b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d372bf84d6b43547be160a50e52afffccd42bc89
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925857"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035563"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>用 MSBuild 获取生成日志
 
 使用 MSBuild 开关，可指定要查看的生成数据量，以及是否要将生成数据保存到一个或多个文件。 还可指定一个自定义记录器来收集生成数据。 对于本主题未涉及的 MSBuild 命令行开关的相关信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
   
 > [!NOTE]
-> 如果使用 Visual Studio IDE 生成项目，则可通过查看生成日志排除这些生成中的故障。 有关更多信息，请参见[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)。
+> 如果使用 Visual Studio IDE 生成项目，则可通过查看生成日志排除这些生成中的故障。 有关详细信息，请参阅[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)。
   
 ## <a name="set-the-level-of-detail"></a>设置详细信息级别  
 

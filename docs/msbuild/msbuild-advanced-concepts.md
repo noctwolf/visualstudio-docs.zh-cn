@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f34a558a-ebd9-49bd-8510-32a2b581a4af
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d799443722a70db9e0d3816cf0551538e028bc0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e532f76c628c486e9d19a24bef92fbcdbc5562f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917432"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001338"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 高级概念
 本部分中的文档介绍如何使用高级技术来改善使用 MSBuild 运行的版本。  

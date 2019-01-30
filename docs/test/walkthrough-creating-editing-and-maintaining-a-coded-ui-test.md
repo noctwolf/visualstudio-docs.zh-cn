@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9bb64cae648f8ad747100fb0e27f83617603c804
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7659de6e90ca13172459b1bcc1e305e14a91cfc
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878229"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231956"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>演练：创建、编辑和维护编码的 UI 测试
 
@@ -25,7 +25,7 @@ ms.locfileid: "53878229"
 
 1.  在“文件”菜单上，指向“新建”，然后选择“项目”。
 
-     此时将出现 “新建项目” 对话框。
+     此时将出现“新建项目”对话框。
 
 2.  在“已安装”窗格中，展开 **Visual C#**，然后选择“Windows 桌面”。
 
@@ -354,11 +354,7 @@ ms.locfileid: "53878229"
 
 ## <a name="videos"></a>视频
 
-![视频链接](../data-tools/media/playvideo.gif)[编码的 UI 测试入门](http://go.microsoft.com/fwlink/?LinkID=230573)
-
-![视频链接](../data-tools/media/playvideo.gif)[编码的 UI 测试的维护和调试](http://go.microsoft.com/fwlink/?LinkID=230574)
-
-![视频链接](../data-tools/media/playvideo.gif)[手写编码的 UI 测试](http://go.microsoft.com/fwlink/?LinkID=230575)
+![视频链接](../data-tools/media/playvideo.gif)[编码的 UI 测试入门](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
 ## <a name="faq"></a>FAQ
 

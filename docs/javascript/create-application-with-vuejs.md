@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 37d44112630797ecbc8621a885412ef4014610fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4b912f523be0380858d639dbf43a4c53bc358c6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857717"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947018"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>使用针对 Visual Studio 的 Node.js 工具创建 Vue.js 应用程序
 
@@ -176,6 +176,7 @@ vue-cli 3.0 出现未知问题阻止自动执行生成过程。 每次尝试刷�
 * 使用 vue-cli 3.0 时，无法在项目属性上将命令 `npm run build` 作为预生成的事件运行。
 
 ## <a name="see-also"></a>请参阅
-https://vuejs.org/v2/guide - Vue 入门指南。  
-https://github.com/vuejs/vue-cli - Vue CLI 项目。  
-https://webpack.js.org/configuration/ - Webpack 配置文档。
+
+- https://vuejs.org/v2/guide - Vue 入门指南。
+- https://github.com/vuejs/vue-cli - Vue CLI 项目。
+- https://webpack.js.org/configuration/ - Webpack 配置文档。

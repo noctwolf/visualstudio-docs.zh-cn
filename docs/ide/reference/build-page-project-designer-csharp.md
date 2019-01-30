@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b690340440cfeeb13cecd82ed39109f688d24760
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 91257834562a0aa04f5a9a98ec3435ca9d603149
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908012"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930610"
 ---
 # <a name="build-page-project-designer-c"></a>“项目设计器”->“生成”页 (C#)
 使用“项目设计器”的“生成”页指定项目的生成配置属性。 此页仅适用于 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 项目。
@@ -32,11 +32,11 @@ ms.locfileid: "53908012"
 通过以下选项，可选择要显示或修改的配置和平台。
 
 > [!NOTE]
-> 使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 因此，不会显示这些选项。 有关更多信息，请参见[如何：设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
+> 使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 因此，不会显示这些选项。 有关详细信息，请参阅[如何：设置调试和发布配置](../../debugger/how-to-set-debug-and-release-configurations.md)。
 
 **配置**指定要显示或修改的配置设置。 设置可以是“活动(调试)”（默认设置）、“调试”、“发布”或“所有配置”。
 
-**平台**指定要显示或修改的平台设置。 默认设置是“活动(任意 CPU)”。 可使用“配置管理器”更改活动平台。 有关更多信息，请参见[如何：创建和编辑配置](../../ide/how-to-create-and-edit-configurations.md)。
+**平台**指定要显示或修改的平台设置。 默认设置是“活动(任意 CPU)”。 可使用“配置管理器”更改活动平台。 有关详细信息，请参阅[如何：创建和编辑配置](../../ide/how-to-create-and-edit-configurations.md)。
 
 ## <a name="general"></a>常规
 通过以下选项，可配置多个 C# 编译器设置。

@@ -6,18 +6,18 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 5bfa048f7f836e2e4108c3d30a1dfb89b764c59c
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: d7cfcb3a288103bd79ff0196073411e81c3bf8b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060735"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943112"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure 应用服务 (Windows) 上设置 Python 环境
 
@@ -126,7 +126,7 @@ FastCGI 是在请求级别工作的接口。 IIS 接收传入的连接，并将�
 
 - `PYTHONPATH` 的值可以自由扩展，但必须包括你的应用的根目录。
 - `WSGI_HANDLER` 必须指向可从你的应用导入的 WSGI 应用。
-- `WSGI_LOG` 为可选，但建议在调试应用时使用。 
+- `WSGI_LOG` 为可选，但建议在调试应用时使用。
 
 有关 Bottle、Flask 和 Django Web 应用的 web.config 内容的更多详细信息，请参阅[发布到 Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 

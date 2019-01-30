@@ -20,14 +20,14 @@ helpviewer_keywords:
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1aba6044c877ca5cfadf81c9c88595f7bcf0fff9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47ae8101deb4682d4e236fae57a5dad510fe7302
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962631"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936381"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在负载测试分析器的表视图中分析负载测试结果和错误
 
@@ -54,7 +54,7 @@ ms.locfileid: "53962631"
 |表名称|说明|
 |-|-|
 |错误|显示在负载测试运行期间发生的错误的列表。 有关详细信息，请参阅[分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)和本主题中的[“错误”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table)。|
-|Pages|显示在负载测试运行期间访问的页的列表。 此表中的某些数据仅在负载测试完成后才可用。 有关更多信息，请参见[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。|
+|Pages|显示在负载测试运行期间访问的页的列表。 此表中的某些数据仅在负载测试完成后才可用。 有关详细信息，请参阅[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。|
 |请求|显示负载测试期间发出的各个请求的详细信息。 其中包括所有 HTTP 请求以及相关请求（如图像）。 有关详细信息，请参阅本主题中的[“请求”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table)。|
 |SQL 跟踪|显示 SQL 跟踪的结果。 此表仅在负载测试完成后、并且在测试期间使用了 SQL 跟踪的情况下才可用。 有关详细信息，请参阅本主题中的 [SQL 跟踪数据表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table)。|
 |测试|显示负载测试期间各个测试运行的详细信息。 有关详细信息，请参阅本主题中的[“测试”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table)。|
@@ -65,7 +65,7 @@ ms.locfileid: "53962631"
 
 ## <a name="collect-percentile-data"></a>收集百分比数据
 
- 有些负载测试表可能包含一些附加列，其中包含基于网络模拟分成若干个组的百分点数据和响应时间。 默认情况下，不收集这些数据。 仅当你将结果保存到数据库而不是本地保存时，百分比数据才可用。 有关详细信息，请参阅[管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。 此外，若要收集此数据，请在“负载测试编辑器”中的“运行设置”节点下，选择要更改的特定运行设置节点。 在“属性”窗口中，为“计时详细信息存储”属性，选择“StatisticsOnly”或“AllIndividualDetails”。 有关更多信息，请参见[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
+ 有些负载测试表可能包含一些附加列，其中包含基于网络模拟分成若干个组的百分点数据和响应时间。 默认情况下，不收集这些数据。 仅当你将结果保存到数据库而不是本地保存时，百分比数据才可用。 有关详细信息，请参阅[管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。 此外，若要收集此数据，请在“负载测试编辑器”中的“运行设置”节点下，选择要更改的特定运行设置节点。 在“属性”窗口中，为“计时详细信息存储”属性，选择“StatisticsOnly”或“AllIndividualDetails”。 有关详细信息，请参阅[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。
 
 ## <a name="the-requests-table"></a>请求表
 
@@ -117,7 +117,7 @@ ms.locfileid: "53962631"
  下表列出了“事务”表中的列。
 
 > [!NOTE]
-> 若要查看所有列，必须启用与活动的运行设置关联的“计时详细信息存储”属性。 有关更多信息，请参见[如何：指定计时详细信息存储属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
+> 若要查看所有列，必须启用与活动的运行设置关联的“计时详细信息存储”属性。 有关详细信息，请参阅[如何：指定计时详细信息存储属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
 
 |列|说明|可见，但没有计时详细信息|
 |-|-|-|

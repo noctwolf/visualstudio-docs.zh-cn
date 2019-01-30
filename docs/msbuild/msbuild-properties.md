@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5743e9532a50089317f0c28917927f514eb4709
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 44f098cf1a7e8535dfcf533721c24638bdddd975
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987033"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070092"
 ---
 # <a name="msbuild-properties"></a>MSBuild 属性
 属性是可用于配置生成的名称/值对。 属性可用于将值传递给任务，评估条件和存储将在整个项目文件中引用的值。  
@@ -44,7 +44,7 @@ ms.locfileid: "53987033"
 ## <a name="reserved-properties"></a>预留属性  
  MSBuild 保留了一些属性名称，用于存储有关项目文件和 MSBuild 二进制文件的信息。 与其他属性一样，可使用 $ 符号引用这些属性。 例如，$(MSBuildProjectFile) 会返回项目文件的完整文件名，包括文件扩展名。  
   
- 有关更多信息，请参见[如何：引用项目文件的名称或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和常见属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
+ 有关详细信息，请参阅[如何：引用项目文件的名称或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留和常见属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
   
 ## <a name="environment-properties"></a>环境属性  
  可以引用项目文件中的环境变量，方法与引用保留属性相同。 例如，若要使用项目文件中的 `PATH` 环境变量，可使用 $(Path)。 如果项目包含与环境属性具有相同名称的属性定义，则项目中的属性将覆盖环境变量的值。  
@@ -56,7 +56,7 @@ ms.locfileid: "53987033"
 > [!TIP]
 >  并非所有的环境变量都被读入并成为初始属性。 系统将忽略变量名称不是有效 MSBuild 属性名称的所有环境变量（例如“386”）。  
   
- 有关更多信息，请参见[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
+ 有关详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
   
 ## <a name="registry-properties"></a>注册表属性  
  可使用以下语法读取系统注册表值，其中 `Hive` 是注册表配置单元（例如 HKEY_LOCAL_MACHINE），`Key` 是密钥名称，`SubKey` 是子密钥名称，`Value` 是子密钥的值。  

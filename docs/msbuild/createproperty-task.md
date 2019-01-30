@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: fbc31a88-62d4-43d2-b739-68ef3fac38f5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71c36b19b0fd44d6668cb497dccafaf12843a492
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 684f55b4b660c48c4186755737b3bc64c6e62788
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884732"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55042668"
 ---
 # <a name="createproperty-task"></a>CreateProperty 任务
 使用传入的值填充属性。 通过该操作可以将值从一个属性或字符串复制到另一个属性或字符串。  
