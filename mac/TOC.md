@@ -52,6 +52,11 @@
 ## [设置 Subversion 存储库](set-up-subversion-repository.md)
 ## [使用 Subversion](working-with-subversion.md)
 
+# [Web 应用部署](web-app-deployment.md)
+## [发布到 Azure 应用服务](publish-app-svc.md)
+## [发布到文件夹](publish-folder.md)
+
+
 # [工作负载](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
