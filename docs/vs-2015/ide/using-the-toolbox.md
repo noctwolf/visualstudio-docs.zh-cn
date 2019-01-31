@@ -1,14 +1,9 @@
 ---
 title: 使用工具箱 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.chooseitems
 - vs.toolboxpages.activexcontrols
@@ -31,13 +26,13 @@ ms.assetid: 82e7cb43-4d0b-4e17-b7b0-43f96c22c3c2
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 28f142a011f86afe70bfe83fd2cec274548c7b50
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c8498397e45aad889d575c4ec337d107755b2dba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173142"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788260"
 ---
 # <a name="using-the-toolbox"></a>使用工具箱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,6 +68,3 @@ ms.locfileid: "49173142"
   
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>创建和分布自定义工具箱控件  
  可在 Visual Basic 或 Visual C# 中创建自定义工具箱控件，可以从创建基于 [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) 或 [Windows 窗体](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)的项目模板开始。 然后，可使用[工具箱控件安装程序](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)将控件分发给团队成员或将它发布到 Web 上。
-
-
-

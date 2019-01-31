@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 58e9dc24-baf6-4ab8-916c-aea28b72e3b0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 132f00ccca207a854832568585c4d2594c79a337
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88c48782a808a5af7ee8dabf314996af6e305e0e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853757"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54982814"
 ---
 # <a name="message-properties-dialog-box"></a>“消息属性”对话框
 使用此对话框中，若要了解有关特定的消息的详细信息。 若要显示此对话框中，将焦点移至[消息视图](../debugger/messages-view.md)窗口。 在树中，选择消息的任何节点，然后选择**属性**从**视图**菜单。  
@@ -64,4 +64,4 @@ ms.locfileid: "53853757"
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。
+ 介绍 Spy + + 工具，并说明如何使用它。

@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: b938a91b-be96-416f-83bc-4177e7f3929a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 724f250e6f41203bc1fe56c88703609e67072783
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aeb64c445acc0881ce808f9261c42f5205c4d979
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908366"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009513"
 ---
 # <a name="debugging-deployed-aspnet-applications"></a>调试已部署的 ASP.NET 应用程序
-若要使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试已部署的应用程序，必须附加到 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程，并确保调试器能够访问该应用程序的符号。 此外，还必须找到并打开该应用程序的源文件。 有关详细信息，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)，[如何： 查找 ASP.NET 进程的名称](../debugger/how-to-find-the-name-of-the-aspnet-process.md)和[系统要求](../debugger/aspnet-debugging-system-requirements.md)。  
+若要使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试已部署的应用程序，必须附加到 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程，并确保调试器能够访问该应用程序的符号。 此外，还必须找到并打开该应用程序的源文件。 有关详细信息，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)，[如何：查找 ASP.NET 进程的名称](../debugger/how-to-find-the-name-of-the-aspnet-process.md)，并[系统要求](../debugger/aspnet-debugging-system-requirements.md)。  
 
 > [!WARNING]
 > 如果附加到 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程中开始调试并命中断点，工作进程中所有的托管代码都将暂停。 工作进程中暂停的所有托管代码会导致服务器上的所有用户的工作中断。 在生产服务器上进行调试之前，请考虑对生产工作的潜在影响。  

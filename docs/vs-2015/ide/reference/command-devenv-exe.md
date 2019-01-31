@@ -1,14 +1,9 @@
 ---
 title: -Command (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /command switch
 - /command Devenv switch
@@ -16,13 +11,13 @@ ms.assetid: 13c20cd6-f09d-400a-8b7b-ecc266a32cef
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5f95d8758da77f1b720f0a1b6ca74f7ac753d805
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 317103b514a04ca149940513e4e70c2799037e62
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254356"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775896"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ devenv /command CommandName
   
 ## <a name="arguments"></a>自变量  
  `CommandName`  
- 必须的。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 命令或其别名的完整名称括在双引号内。 有关命令和别名语法的详细信息，请参阅 [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)。  
+ 必需。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 命令或其别名的完整名称括在双引号内。 有关命令和别名语法的详细信息，请参阅 [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)。  
   
 ## <a name="remarks"></a>备注  
  启动完成后，IDE 将执行已命名的命令。 如果使用此开关，IDE 将不会在启动时显示 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 起始页。  
@@ -55,6 +50,3 @@ devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
 ## <a name="see-also"></a>请参阅  
  [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

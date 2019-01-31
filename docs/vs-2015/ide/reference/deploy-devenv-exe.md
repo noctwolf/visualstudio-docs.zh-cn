@@ -1,14 +1,9 @@
 ---
 title: -Deploy (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /deploy switch
 - deploy Devenv switch
@@ -18,13 +13,13 @@ ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f3883cac01795f4dc5a1e3b0a3d9b58adc176c06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 16ac851c59f084a4d9e98998754e7b9d20afaf81
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172180"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804524"
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,10 +35,10 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
   
 ## <a name="arguments"></a>自变量  
  `SolnConfigName`  
- 必须的。 `SolutionName` 中指定了将用于生成解决方案的解决方案配置的名称。  
+ 必需。 `SolutionName` 中指定了将用于生成解决方案的解决方案配置的名称。  
   
  `SolutionName`  
- 必须的。 解决方案文件的完整路径和名称。  
+ 必需。 解决方案文件的完整路径和名称。  
   
  /project `ProjName`  
  可选。 解决方案中项目文件的路径和名称。 可以输入从 `SolutionName` 文件夹到项目文件的相对路径、项目的显示名称或项目文件的完整路径和名称。  
@@ -72,6 +67,3 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
  [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

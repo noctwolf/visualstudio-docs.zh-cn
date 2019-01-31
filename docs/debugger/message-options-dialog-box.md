@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 88ad85af-3f56-4df1-98b6-fab34c1e5874
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3f71e33bbb52506760d5b83f50e459473df8077
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6e8017eb180c76a18c889d764ba73c684419a77a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861742"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996423"
 ---
 # <a name="message-options-dialog-box"></a>“消息选项”对话框
 使用此对话框中选择要在中列出的消息[消息视图](../debugger/messages-view.md)。 若要显示此对话框中，选择**日志消息**从**Spy**菜单。  
@@ -54,4 +54,4 @@ ms.locfileid: "53861742"
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。
+ 介绍 Spy + + 工具，并说明如何使用它。

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e32ea7053d79a64e0c1502ed251d55f6150500a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8719f3dc6d892801135d14d093c265445e90fcb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882713"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55021528"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>演练：创建自定义引导程序带有隐私提示
 你可以配置 ClickOnce 应用程序具有更高版本的文件版本和程序集版本的程序集变得可用时自动更新。 若要确保你的客户同意此行为，可以向他们显示隐私提示。 然后，他们可以选择是否要自动更新的应用程序的权限授予。 如果应用程序不允许自动更新，它不会安装。  

@@ -9,13 +9,13 @@ ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e4366061cc6eba29f630cb51757ddc2ace58970
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066233"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764843"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>在 Visual Studio 2015 中调试入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 2015 提供一组强大的集成项目生成和调试工具。 本
  你已经想到了编辑器并创建了一些代码。 现在，你想要开始调试该代码。 与大多数 IDE 一样，Visual Studio 2015 有两个调试阶段：生成代码以捕获并解决项目和编译器错误；在环境中运行代码以捕获并解决运行时和动态错误。
 
 ### <a name="configuring-a-build"></a>配置生成
- 有两种基本类型的生成配置：调试和发布** 第一种配置生成更慢、更大的可执行文件，此可执行程序实现更丰富的交互式运行时调试体验，但应永远不会投入市场销售。 第二种配置生成更快、更优化的可执行文件，此可执行文件适合投入市场销售（至少从编译器的角度来看是这样）。
+ 生成配置有两种基本类型：“调试”和“发布”。 第一种配置生成更慢、更大的可执行文件，此可执行程序实现更丰富的交互式运行时调试体验，但应永远不会投入市场销售。 第二种配置生成更快、更优化的可执行文件，此可执行文件适合投入市场销售（至少从编译器的角度来看是这样）。
 
  默认的生成配置是**调试**。
 

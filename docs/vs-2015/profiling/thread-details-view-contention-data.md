@@ -1,14 +1,9 @@
 ---
 title: “线程详细信息”视图 - 争用数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.threaddetails
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 874c3b1c-88d8-479a-bb35-1291d9aa8e67
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da2cac3503f97976fe5c0918f86e5b25f2b89329
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5d8ecbeca226d558774c12f4bec45ac26f66a808
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795644"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762119"
 ---
 # <a name="thread-details-view---contention-data"></a>“线程详细信息”视图 - 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +55,10 @@ ms.locfileid: "51795644"
   
 -   在时间线关系图中，单击资源的名称或 ID。  
   
-     所选资源的[“资源详细信息”](../profiling/resource-details-view-contention-data.md)视图会出现。  
+     所选资源的“资源详细信息”[](../profiling/resource-details-view-contention-data.md)视图会出现。  
   
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>在“进程”窗口中查看线程争用数据  
   
 -   在时间线关系图中，单击“总计”。  
   
      [“进程视图”](../profiling/process-view-contention-data.md)会出现，其中包含所选线程。
-
-
-

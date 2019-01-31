@@ -1,23 +1,19 @@
 ---
 title: 跨平台移动开发
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c259a8c84a59f99f647f908ded8b272ed4e943a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2052dda4062ea120c529a03c3c0c7e43a4c8421
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858826"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789288"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,7 +117,7 @@ ms.locfileid: "53858826"
 |**了解更多信息**|
 |--------------------|
 |[安装 Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Visual Studio Tools for Apache Cordova 入门](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
+|[Visual Studio Tools for Apache Cordova 入门](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
 |[了解适用于 Android 的 Visual Studio 仿真程序](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a>构建面向 Android 和 Windows 的应用 (C++)
@@ -167,7 +163,7 @@ ms.locfileid: "53858826"
 
 |**了解更多信息**|
 |--------------------|
-|[了解有关使用 Visual Studio 构建 Unity 游戏的更多信息](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
+|[了解有关使用 Visual Studio 构建 Unity 游戏的更多信息](https://www.visualstudio.com/features/unitytools-vs.aspx)|
 |[了解有关 Visual Studio Tools for Unity 的详细信息](../cross-platform/visual-studio-tools-for-unity.md) （MSDN 库）|
 |[开始使用 Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) （MSDN 库）|
 |[了解关于 Visual Studio Tools for Unity 2.0 预览版的最新增强功能](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) （Visual Studio 博客）|
