@@ -1,25 +1,20 @@
 ---
 title: 参数节点 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bb15b19ebdef04facdb66d4b97042bb47e4cb5fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 110f380f7450d611de5786fb865bdee8e64195f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276285"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764166"
 ---
 # <a name="parameter-nodes"></a>参数节点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ ms.locfileid: "49276285"
 |**材料光泽度**|用于描述反射高光的强度的标量值。<br /><br /> 光泽度越强，反射高光则会越强烈并且越深远。<br /><br /> **输出：**<br /><br /> `Output`: `float`<br /> 一个指数项，描述当前像素上反射高光的强度。|**访问**<br /> 如果允许从模型编辑器设置属性，则为“公共”；否则为“私有”。<br /><br /> **值**<br /> 用于定义当前像素上反射高光的强度的指数。|  
 |**标准化时间**|以秒为单位的时间，标准化为 [0, 1] 范围，如此一来，当时间达到 1时则会重置为 0。<br /><br /> 可将其用作着色器计算中的参数，例如用来对纹理坐标、颜色值或其他属性进行动画处理。<br /><br /> **输出：**<br /><br /> `Output`: `float`<br /> 标准化时间，以秒为单位。|无|  
 |**时间**|时间值（以秒计）。<br /><br /> 可将其用作着色器计算中的参数，例如用来对纹理坐标、颜色值或其他属性进行动画处理。<br /><br /> **输出：**<br /><br /> `Output`: `float`<br /> 时间（以秒为单位）。|无|
-
-
-

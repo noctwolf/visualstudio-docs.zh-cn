@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 720b4479-a8bc-4fec-860e-80c1a0780405
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b747d888ecea4235e34acd169b9230884c7454ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f159dcc58a096033516fdd272819b9eb1ad916d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843958"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922647"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>概述（调试接口访问 SDK）
 DIA SDK 用于访问 Microsoft 调试信息。 DIA SDK 提供了基于 COM 的 API 集，消除了需要重写代码，当 Microsoft 发生更改时的调试信息的格式。 DIA SDK 还允许您从以前版本的调试信息，位于由生成的.pdb 和.dbg 文件中的选定的一组读取[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]5.0 及更高版本。  

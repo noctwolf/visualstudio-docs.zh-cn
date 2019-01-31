@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 9d1aab27-9ac0-4096-8e12-c47503acb2e9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59afcb8db6fbfa8aa2e6891b954b486eb4ec197e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c83c0f09fbf7e6d595cbdd3e40c6add2cf7e8ae
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830672"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927549"
 ---
 # <a name="menu-commands"></a>菜单命令
 在本部分中的帮助主题列出 Spy + + 菜单上可用的命令。  
@@ -45,7 +45,7 @@ ms.locfileid: "53830672"
   
 ## <a name="related-sections"></a>相关章节  
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。  
+ 介绍 Spy + + 工具，并说明如何使用它。  
   
  [Spy++ 视图](../debugger/spy-increment-views.md)  
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  

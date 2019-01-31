@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 83dc9bd74615c60a5a39d7b095b4466f332eb60e
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 5caee086f05fa6f8115704b21ba57a2192ee0ebd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54270016"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961983"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 设计器创建 UI
 
@@ -162,7 +162,7 @@ XAML 设计器中的“文档大纲”窗口有助于执行这些任务：
 
 - 创建和修改控件元素的模板。
 
-- 对所选元素使用右键单击菜单（上下文菜单）。 同一个菜单对美工板中的所选元素也可用。
+- 使用选定元素的右键单击菜单（关联菜单）。 同一个菜单对美工板中的所选元素也可用。
 
 若要查看“文档大纲”窗口，请依次在菜单栏上选择“查看” > “其他窗口” > “文档大纲”。
 

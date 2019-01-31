@@ -1,14 +1,9 @@
 ---
 title: ShowWebBrowser 命令 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - view.showwebbrowser
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f9bf9668a690347988e3148cf90da69ec3b33ca2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c1fca2c1c1dde167c8028d6ad4d543e108a488b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171946"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798208"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ View.ShowWebBrowser URL [/new][/ext]
   
 ## <a name="arguments"></a>自变量  
  `URL`  
- 必须的。 网站的 URL（统一资源定位器）。  
+ 必需。 网站的 URL（统一资源定位器）。  
   
 ## <a name="switches"></a>开关  
  /new  
@@ -64,6 +59,3 @@ View.ShowWebBrowser URL [/new][/ext]
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

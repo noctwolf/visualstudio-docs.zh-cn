@@ -1,14 +1,9 @@
 ---
 title: “线程”视图（并行性能） | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.threadblocking
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 39457684ba19ecbb0ad2ef82caa349e67cdaf8a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756337"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756799"
 ---
 # <a name="threads-view-parallel-performance"></a>线程视图（并行性能）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -156,6 +151,3 @@ ms.locfileid: "51756337"
   
 ## <a name="see-also"></a>请参阅  
  [并发可视化工具](../profiling/concurrency-visualizer.md)
-
-
-

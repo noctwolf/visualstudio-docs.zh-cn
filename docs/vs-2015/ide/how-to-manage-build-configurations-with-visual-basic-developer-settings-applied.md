@@ -1,14 +1,9 @@
 ---
-title: 如何：在应用 Visual Basic 开发人员设置后管理生成配置 | Microsoft Docs
-ms.custom: ''
+title: 如何：管理应用的 Visual Basic 开发人员设置生成配置 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, building with Visual Basic settings
 - MSBuild, debug build
@@ -21,13 +16,13 @@ ms.assetid: eaea6e0b-6c61-4869-8d63-d372c745a23c
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b191b5d4223d32e4d620c779f5813c0db651a6cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d6a315adb859445c5efa15df5b8366815bfc86d7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300555"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784778"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在应用 Visual Basic 开发人员设置后管理生成配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "49300555"
 默认情况下，应用 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 开发人员设置后，所有高级生成配置选项都将隐藏。 本主题说明如何手动启用这些设置。  
   
 ## <a name="enabling-advanced-build-configurations"></a>启用高级生成配置  
- 默认情况下，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 开发人员设置将隐藏用于打开“Configuration Manager”对话框以及[项目设计器中](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)的“配置”和“平台”列表的选项。  
+ 默认情况下，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 开发人员设置将隐藏用于打开“Configuration Manager”对话框以及[项目设计器中](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)的“配置”和“平台”列表的选项。  
   
 #### <a name="to-enable-advanced-build-configurations"></a>启用高级生成配置  
   
@@ -55,6 +50,3 @@ ms.locfileid: "49300555"
 ## <a name="see-also"></a>请参阅  
  [了解生成配置](../ide/understanding-build-configurations.md)   
  [编译和生成](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 如何：创建和编辑配置 | Microsoft Docs
-ms.custom: ''
+title: 如何：创建和编辑配置 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - solution build configurations, editing
 - build configurations, creating
@@ -23,13 +18,13 @@ ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f171c337f73db495b7b71aded24f669b6e613a07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887782"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54767324"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：创建和编辑配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ ms.locfileid: "49887782"
   
      “属性页”窗口随即打开。  
   
-     可以针对配置设置属性。 例如，针对“发布”配置，可以指定生成解决方案时优化代码，对于“调试”配置，可以指定包含 `DEBUG` 条件编译符号。 有关属性页设置的详细信息，请参阅[项目设计器简介](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)。  
+     可以针对配置设置属性。 例如，针对“发布”配置，可以指定生成解决方案时优化代码，对于“调试”配置，可以指定包含 `DEBUG` 条件编译符号。 有关属性页设置的详细信息，请参阅[项目设计器简介](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)。  
   
 ## <a name="creating-and-modifying-project-configurations"></a>创建和修改项目配置  
   
@@ -131,7 +126,4 @@ ms.locfileid: "49887782"
 ## <a name="see-also"></a>请参阅  
  [了解生成配置](../ide/understanding-build-configurations.md)   
  [在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
-
-
-
+ [(NIB) 如何：修改项目属性和配置设置](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

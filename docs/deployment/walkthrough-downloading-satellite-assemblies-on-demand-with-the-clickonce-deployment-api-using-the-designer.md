@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db13440155ca27c9a71e523cea4f0ef69b9eaacf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 25659368933dc2c841eb35f0f53014b42e455f7a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925805"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031050"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：下载按需使用 ClickOnce 部署 API 使用设计器的附属程序集
 通过使用附属程序集，可以为多个区域性配置 Windows 窗体应用程序。 *附属程序集* 是一种包含除应用程序默认区域性以外区域性的应用程序资源的程序集。  

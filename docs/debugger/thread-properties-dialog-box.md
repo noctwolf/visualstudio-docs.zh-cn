@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30f45bf4ef30ead2740cad45101f6eed6d7c2a1e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21beeecd4910f2b2f4b5c47ecb694abd31ecedd5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985993"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54944990"
 ---
 # <a name="thread-properties-dialog-box"></a>“线程属性”对话框
 使用此对话框可以查找有关特定线程的更多信息。 若要显示此对话框中，将焦点移至[线程视图](../debugger/threads-view.md)窗口中或打开[消息视图](../debugger/messages-view.md)展开一条消息。 在树中，选择任一线程节点，然后选择**属性**从**视图**菜单。  
@@ -44,4 +44,4 @@ ms.locfileid: "53985993"
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。
+ 介绍 Spy + + 工具，并说明如何使用它。

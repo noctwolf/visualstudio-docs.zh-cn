@@ -1,24 +1,19 @@
 ---
 title: 使用仿真器隔离 Sharepoint 2010 应用的单元测试 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4c2922d5be6c3326dac3b0c2667e5210ec908722
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b111ee037fe02e3c98d0628a4c358c56153c2053
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49915446"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802682"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>使用模拟器分离 Sharepoint 2010 应用程序的单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -159,7 +154,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
 ###  <a name="BKMK__Running_a_test_method_in_the_emulation_context"></a>运行启用了仿真的测试方法  
  安装包会向项目添加对所需库的引用。 为便于在现有测试类中使用仿真程序，请添加命名空间 `Microsoft.SharePoint.Emulators` 和 `Microsoft.QualityTools.Testing.Emulators`。  
   
- 若要在测试方法中支持仿真，请将方法主体包装到创建`SharePointEmulationScope` 对象的 `using` 语句中。 例如：  
+ 若要在测试方法中支持仿真，请将方法主体包装到创建`SharePointEmulationScope` 对象的 `using` 语句中。 例如:  
   
 ```csharp  
   
@@ -597,6 +592,3 @@ namspace MySPAppTests
  [使用编码的 UI 测试来测试 SharePoint 2010 应用](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)   
  [SharePoint 2010 和 2013 应用程序的 Web 性能和负载测试](http://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
  [开发 SharePoint 解决方案](http://msdn.microsoft.com/library/059bce0f-c301-4234-a0b4-9c14b7cdfa3e)
-
-
-

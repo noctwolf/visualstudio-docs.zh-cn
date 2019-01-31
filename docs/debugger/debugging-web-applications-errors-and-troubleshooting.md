@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 63f2742e-2031-48a8-9773-d9b547c62230
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660e02cab12206fda374fec8e008023952690fac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9cc3bafc89b30d3f98dd4615eae22ee76c9e0ea6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53827412"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018262"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>调试 Web 应用程序：错误和疑难解答
 当尝试调试 Web 应用程序时，可能遇到下列错误。  

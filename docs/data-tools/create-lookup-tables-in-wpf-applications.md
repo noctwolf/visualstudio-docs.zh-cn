@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5cf04b804ea377723a268c080b96a24442e31486
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed448c44b46098a6ccaa7ac1194acd76bd64c089
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947655"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988904"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 应用程序中创建查找表
 
@@ -36,7 +36,7 @@ ms.locfileid: "53947655"
 
     -   数据集或实体数据模型。
 
-    -   WCF 数据服务，WCF 服务或 web 服务。 有关更多信息，请参见[如何：连接到服务中的数据](../data-tools/how-to-connect-to-data-in-a-service.md)。
+    -   WCF 数据服务，WCF 服务或 web 服务。 有关详细信息，请参阅[如何：连接到服务中的数据](../data-tools/how-to-connect-to-data-in-a-service.md)。
 
     -   对象。 有关详细信息，请参阅[绑定到 Visual Studio 中的对象](bind-objects-in-visual-studio.md)。
 

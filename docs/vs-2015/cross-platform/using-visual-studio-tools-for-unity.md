@@ -1,25 +1,20 @@
 ---
 title: 使用 Visual Studio Tools for Unity | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: a7dbe0e13691e5ac0dbf67945728bada3ef4e57f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90926994f6cf67e36260dc85e29accaa88e519ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771316"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777376"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ ms.locfileid: "51771316"
   
 ##### <a name="to-view-the-unity-project-explorer"></a>查看 Unity 项目资源管理器  
   
-- 在 Visual Studio 的主菜单上选择“视图”，然后选择“Unity 项目资源管理器”。 键盘：**Alt+Shift+E**  
+- 在 Visual Studio 的主菜单上选择“视图”，然后选择“Unity 项目资源管理器”。 键盘:**Alt+Shift+E**  
   
    ![查看 Unity 项目资源管理器窗口。](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
   
@@ -193,4 +188,3 @@ ms.locfileid: "51771316"
      需要调试 PDB 文件（因为它们包含 DLL 的调试符号），并将 DLL 代码映射到其源代码形式。 Visual Studio Tools for Unity 将使用来自 DLL 和 PDB 的信息来创建一个 DLL.MDB 文件，此文件是 Unity 脚本引擎所使用的调试符号格式。  
   
 4. 调试代码。 现在可以同时调试 DLL 源代码以及 Unity 项目的源代码，并使用所有熟悉的调试功能，如断点和单步调试代码。
-

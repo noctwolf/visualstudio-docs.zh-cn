@@ -1,14 +1,9 @@
 ---
 title: 如何：在多个项目文件中使用同一目标 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, importing
 - MSBuild, using the same target in multiple project files
@@ -16,13 +11,13 @@ ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7b886c4865d715c4fee4e9385288f2e4eb15baa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9e0f787426846137038adf16b9373012f3deeb25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223335"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54769324"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：在多个项目文件中使用同一目标
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "49223335"
   
 1.  在正在导入的项目文件中，定义所有在已导入项目中作为属性和项的参数使用的属性和项。  
   
-2.  使用 `Import` 元素导入项目。 例如：  
+2.  使用 `Import` 元素导入项目。 例如:  
   
      `<Import Project="MyCommon.targets"/>`  
   
@@ -123,6 +118,3 @@ ms.locfileid: "49223335"
 ## <a name="see-also"></a>请参阅  
  [Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)   
  [目标](../msbuild/msbuild-targets.md)
-
-
-

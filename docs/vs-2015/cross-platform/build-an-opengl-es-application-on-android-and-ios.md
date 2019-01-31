@@ -1,27 +1,22 @@
 ---
 title: 在 Android 和 iOS 上生成 OpenGL ES 应用程序 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
 caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 4978c8196553dba5566ec63fbfcd133d06b6dd6f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 648286cca70641d005e27682fe911a783421e6fa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733410"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758091"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Build an OpenGL ES Application on Android and iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,4 +152,3 @@ ms.locfileid: "51733410"
  ![编辑器中的“项目上下文切换器”下拉列表](../cross-platform/media/cppmdd-opengles-contextswitcher.png "CPPMDD_OpenGLES_ContextSwitcher")  
   
  当前项目中的 IntelliSense 问题都标有红色的波浪线。 其他项目中的问题都标有紫色波浪线。 默认情况下，Visual Studio 不支持 Java 或 Objective-C 文件的代码着色或 IntelliSense。 但是，仍可以修改源文件和更改资源来设置应用程序名称、图标和其他实现详细信息。
-

@@ -1,14 +1,9 @@
 ---
-title: 如何：创建和删除项目依赖项 | Microsoft Docs
-ms.custom: ''
+title: 如何：创建和删除项目依赖项 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ProjectDependenciesDlg
 helpviewer_keywords:
@@ -22,15 +17,15 @@ ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cc63ef7159b0f11b3d170e0b4123f337ba413d65
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823835"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799767"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>如何：创建和移除项目依赖项
+# <a name="how-to-create-and-remove-project-dependencies"></a>如何：创建和删除项目依赖项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 生成包含多个项目的解决方案时，可能需要首先生成某些项目，然后才能生成由其他项目使用的代码。 当一个项目使用另一个项目生成的可执行代码时，生成代码的项目则称为使用代码的项目的项目依赖项。 可在“项目依赖项”对话框中定义此类依赖关系。  
@@ -71,7 +66,4 @@ ms.locfileid: "49823835"
  [在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [编译和生成](../ide/compiling-and-building-in-visual-studio.md)   
  [了解生成配置](../ide/understanding-build-configurations.md)   
- [NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
-
-
-
+ [(NIB) 如何：修改项目属性和配置设置](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

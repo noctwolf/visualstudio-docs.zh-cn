@@ -1,14 +1,9 @@
 ---
 title: GenerateTemporaryTargetAssembly 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 92b6539c-6897-45e0-8989-0c234bbfe782
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1dd1df7ce9d7672917296207e38a846ff69aba5a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f3f537e6f9f1712e3d103a0d425265153bf2152e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205154"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774678"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "49205154"
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`AssemblyName`|必需的 **String** 参数。<br /><br /> 指定为项目生成的程序集的短名称，该名称同时也是临时生成的目标程序集的名称。 例如，如果项目生成一个名为 **WinExeAssembly.exe** 的 [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] 可执行文件，则 **AssemblyName** 参数的值为 **WinExeAssembly**。|  
 |`CompileTargetName`|必需的 **String** 参数。<br /><br /> 指定用于从源代码文件生成程序集的 [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] 目标的名称。 **CompileTargetName** 的典型值为 **CoreCompile**。|  
@@ -86,6 +81,3 @@ ms.locfileid: "49205154"
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [Building a WPF Application (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) （生成 WPF 应用程序 (WPF)）  
  [WPF XAML Browser Applications Overview](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)（WPF XAML 浏览器应用程序概述）
-
-
-

@@ -17,22 +17,22 @@ helpviewer_keywords:
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 949febb1b6d1aae01ae46b586721e1cf238549de
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348521"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002042"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：创建和编辑配置
 
 可以为一个解决方案创建多个生成配置。 例如，可以配置调试生成供测试人员用于查找和修复问题，也可以配置不同种类的生成，供你分发给不同的客户。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中创建和编辑配置](/visualstudio/mac/create-and-edit-configurations)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中创建和编辑配置](/visualstudio/mac/create-and-edit-configurations)。
 
 ## <a name="create-build-configurations"></a>创建生成配置
 

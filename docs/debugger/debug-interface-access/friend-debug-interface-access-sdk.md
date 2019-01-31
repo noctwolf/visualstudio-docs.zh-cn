@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5147a170-41ce-4727-8ace-c318e8d11647
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb8b1dc7d54cc913a1ed1986576fa559c7134bd2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c08137af6e26cf5970d055a04ba6a5c5ce92c62
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868256"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54969728"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>友元（调试接口访问 SDK）
 友元类和友元函数通过标识`SymTagFriend`符号。 它们是用户定义类型 (Udt) 的父级的子级，并且具有[idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)属性。  

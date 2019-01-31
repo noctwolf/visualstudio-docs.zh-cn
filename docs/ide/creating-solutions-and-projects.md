@@ -13,15 +13,15 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5f81c38d63659261281f35704edf0ecde3ccd94
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: eba7b2a54b2f883dddff02a17cb6bc666869ec24
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269821"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025106"
 ---
 # <a name="create-solutions-and-projects"></a>创建解决方案和项目
 
@@ -30,7 +30,7 @@ ms.locfileid: "54269821"
 ![解决方案/项目层次结构](./media/vside-proj-soln.png)
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中创建项目](/visualstudio/mac/create-new-projects)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中创建项目](/visualstudio/mac/create-new-projects)。
 
 可在名为“解决方案资源管理器”的工具窗口中查看解决方案和项目。 以下屏幕截图显示“解决方案资源管理器”中的一个示例解决方案 (BikeSharing.Xamarin-UWP)，该解决方案 包含两个项目：BikeSharing.Clients.Core 和 BikeSharing.Clients.Windows。 每个项目均包含多个文件、文件夹和引用。 粗体形式的项目名称是*启动项目*；即，运行应用时启动的项目。 可以指定将哪个项目作为启动项目。
 

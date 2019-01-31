@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 32cdb45a57b218645e6f9eaa84c5e198aeacc620
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89bf81ceb4621159d7a222124e5d6f2f88a5afdd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987636"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938442"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>如何：使用 Microsoft Word 手动创建负载测试性能报告
 
@@ -27,7 +27,7 @@ ms.locfileid: "53987636"
 > 可以将表视图中的纯文本和详细信息视图中的屏幕快照复制到 Microsoft Word，但复制的内容不会以 HTML 格式应用，需要另外进行格式设置和编辑。
 
 > [!TIP]
-> 也可以自动生成有组织的 Microsoft Excel 报表。 有关更多信息，请参见[如何：使用 Microsoft Excel 创建负载测试性能报告](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)。
+> 也可以自动生成有组织的 Microsoft Excel 报表。 有关详细信息，请参阅[如何：使用 Microsoft Excel 创建负载测试性能报告](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)。
 
 ## <a name="copy-summary-view-data"></a>复制摘要视图数据
 
@@ -45,7 +45,7 @@ ms.locfileid: "53987636"
 
 1.  在“负载测试结果”中，如果当前未显示关系图视图，请选择工具栏上的“关系图”。
 
-2.  （可选）对要复制到 Microsoft Word 文档中的特定关系图进行放大，如下图所示。 有关更多信息，请参见[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+2.  （可选）对要复制到 Microsoft Word 文档中的特定关系图进行放大，如下图所示。 有关详细信息，请参阅[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
      ![图形视图缩放控件](../test/media/ltest_zoomcontrol.png)
 

@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a72784b0ab265c090f2efd9c5949698118b559ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 897b5b82b00235404c599f77b8909b007fc80bb8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857009"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987682"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>控制 R 代码在工作区中的运行位置
 
@@ -34,7 +34,7 @@ ms.locfileid: "53857009"
 
 ## <a name="local-workspaces"></a>本地工作区
 
-本地工作区列表显示所有安装在计算机上的 R 解释器。 
+本地工作区列表显示所有安装在计算机上的 R 解释器。
 
 启动时，Visual Studio 会尝试浏览 HKEY_LOCAL_MACHINE\Software\R-Core\\ 注册表项，以自动检测已安装的所有 R 版本。 由于仅在启动时执行此检查，因此安装新的 R 解释器时需要重启 Visual Studio。
 
@@ -129,7 +129,7 @@ RTVS 一次仅绑定到一个工作区中。 绑定的工作区通过“工作�
 
 ![包含文件传输设置的项目属性运行选项卡](media/workspaces-remote-file-transfer-filter-settings.png)
 
-在此处，“运行时传输文件”属性决定 RTVS 是否自动复制项目文件。 然后，“要传输的文件”值将准确筛选出传输的文件。 默认仅复制 .R、.Rmd、.sql、.md 和 .cpp 文件。 此行为可避免在每次运行时不慎将大型数据文件复制到服务器。 
+在此处，“运行时传输文件”属性决定 RTVS 是否自动复制项目文件。 然后，“要传输的文件”值将准确筛选出传输的文件。 默认仅复制 .R、.Rmd、.sql、.md 和 .cpp 文件。 此行为可避免在每次运行时不慎将大型数据文件复制到服务器。
 
 ## <a name="copy-files-from-a-remote-workspace"></a>从远程工作区复制文件
 

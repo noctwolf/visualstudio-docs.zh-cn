@@ -1,14 +1,9 @@
 ---
 title: “选项”对话框 ->“环境”->“查找和替换”| Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.FindReplace
 - VS.ToolsOptionsPages.Environment.FindandReplace
@@ -19,13 +14,13 @@ ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4c60e89624c1245415ee887e44ad8d7df24bf8d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cc374d536997c05aed644a80fe3826283d208569
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250615"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758177"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“查找和替换”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "49250615"
 使用“选项”对话框的此页，可以控制消息框及查找和替换操作的其他方面。 单击“选项”，扩展“环境”，然后单击“查找和替换”，即可从“工具”菜单访问此对话框。 如果此页未出现在列表中，请在“选项”对话框中选择“显示所有设置”。  
   
 > [!NOTE]
->  对话框中的可用选项以及显示的菜单命令的名称和位置可能与“帮助”中的描述不同，具体取决于您的当前设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  对话框中的可用选项以及显示的菜单命令的名称和位置可能与“帮助”中的描述不同，具体取决于您的当前设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="uielement-list"></a>UIElement 列表  
  显示信息性消息  
@@ -62,6 +57,3 @@ ms.locfileid: "49250615"
   
 ## <a name="see-also"></a>请参阅  
  [查找和替换文本](../../ide/finding-and-replacing-text.md)
-
-
-

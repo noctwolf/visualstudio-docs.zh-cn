@@ -1,14 +1,9 @@
 ---
 title: “项目设计器”->“生成”页 (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a377db0ac82b672d053e59c621714945fa9b515c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 066535309c7001c3f7a951f68321f7530a06ed05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837173"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805316"
 ---
 # <a name="build-page-project-designer-c"></a>“项目设计器”->“生成”页 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49837173"
  通过以下选项，可选择要显示或修改的配置和平台。  
   
 > [!NOTE]
->  使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 因此，不会显示这些选项。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+>  使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 因此，不会显示这些选项。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  **配置**  
  指定要显示或修改的配置设置。 设置可以是“活动(调试)”（默认设置）、“调试”、“发布”或“所有配置”。  
@@ -109,9 +104,9 @@ ms.locfileid: "49837173"
  以下设置用于配置生成过程的输出选项。  
   
  “输出路径”  
- 指定该项目配置的输出文件的位置。 在此框中输入生成输出的路径，或选择“浏览”按钮指定路径。 请注意，该路径是相对的；如果输入绝对路径，将保存为相对路径。 默认路径为 bin\Debug 或 bin\Release\\。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定该项目配置的输出文件的位置。 在此框中输入生成输出的路径，或选择“浏览”按钮指定路径。 请注意，该路径是相对的；如果输入绝对路径，将保存为相对路径。 默认路径为 bin\Debug 或 bin\Release\\。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
- 使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 使用“调试”菜单 (F5) 中的“生成”命令，会将生成放置在调试位置中（无论指定的“输出路径”为何）。 但是，“生成”菜单上的“生成”命令会将其放在指定的位置。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 使用“调试”菜单 (F5) 中的“生成”命令，会将生成放置在调试位置中（无论指定的“输出路径”为何）。 但是，“生成”菜单上的“生成”命令会将其放在指定的位置。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  “XML 文档文件”  
  指定要在其中处理文档注释的文件名称。 有关详细信息，请参阅 [/doc（C# 编译器选项）](http://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a)。  
@@ -128,6 +123,3 @@ ms.locfileid: "49837173"
 ## <a name="see-also"></a>请参阅  
  [项目属性引用](../../ide/reference/project-properties-reference.md)   
  [C# 编译器选项](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)
-
-
-

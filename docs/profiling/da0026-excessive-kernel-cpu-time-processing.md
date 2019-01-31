@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20abd86d12db44dac1a2b3a7772e90dee1b2721f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a22f797f8099da7b33afb0e0b6f05bd932f67c1c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855450"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54971958"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026：处理过程的内核 CPU 时间过长
 
@@ -38,4 +38,4 @@ ms.locfileid: "53855450"
  应用程序在内核模式下花费的时间相对较多则可能需要进一步调查。 将用户模式应用程序转换到内核模式，执行 I/O 操作、等待线程或进程同步基元，或执行系统调用。 可调查应用程序执行的系统调用的类型，以及调查基于系统调用选择收集示例调用堆栈的选项时，哪些函数对系统调用负责。  
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
- 若要调查应用程序执行的系统调用的类型，可再次运行分析，并基于系统调用选择收集示例的选项。 请参阅[操作说明：选择采样事件](../profiling/how-to-choose-sampling-events.md)以了解详细信息（如果在 IDE 内部运行分析工具）。 如果通过命令行运行分析工具，请参阅分析工具命令行工具引用中 [VSPerfCmd](../profiling/vsperfcmd.md) 文章的采样间隔选项部分。
+ 若要调查应用程序执行的系统调用的类型，可再次运行分析，并基于系统调用选择收集示例的选项。 请参阅[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)以了解详细信息（如果在 IDE 内部运行分析工具）。 如果通过命令行运行分析工具，请参阅分析工具命令行工具引用中 [VSPerfCmd](../profiling/vsperfcmd.md) 文章的采样间隔选项部分。

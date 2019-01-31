@@ -8,17 +8,17 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37061173a7bc0b3d9c3b9b7e011428ec3a297b72
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899751"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043708"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>在 Visual Studio 中开发 JavaScript 和 TypeScript 代码，而无需解决方案或项目
 
@@ -32,9 +32,9 @@ Visual Studio 2017 引入了[开发代码而无需项目或解决方案](../ide/
 
 ## <a name="npm-integration"></a>npm 集成
 
-如果打开的文件夹包含 package.json 文件，可以右键单击 package.json，显示特定于 npm 的上下文菜单（快捷菜单）。 
+如果打开的文件夹包含 package.json 文件，可以右键单击 package.json，显示特定于 npm 的上下文菜单（快捷菜单）。
 
-![解决方案资源管理器中的 npm 菜单](../javascript/media/solution-explorer-npm-ctx.png) 
+![解决方案资源管理器中的 npm 菜单](../javascript/media/solution-explorer-npm-ctx.png)
 
 在快捷菜单中，可以管理由 npm 安装的包，如同使用项目文件时[管理 npm 包](npm-package-management.md)一样。
 
@@ -43,7 +43,8 @@ Visual Studio 2017 引入了[开发代码而无需项目或解决方案](../ide/
 ## <a name="build-and-debug"></a>生成和调试
 
 ### <a name="packagejson"></a>package.json
-如果文件夹中的 package.json 指定 `main` 元素，“调试”命令将出现在 package.json 的右击快捷菜单中。 单击此项将启动 node.exe，使用指定脚本作为其参数。
+如果文件夹中的 package.json 指定 `main` 元素，“调试”命令将出现在 package.json 的右击快捷菜单中。
+单击此项将启动 node.exe，使用指定脚本作为其参数。
 
 ### <a name="javascript-files"></a>JavaScript 文件
 右键单击文件并从快捷菜单中选择“调试”，可以调试 JavaScript 文件。 这将启动 node.exe，使用该 JavaScript 文件作为其参数。

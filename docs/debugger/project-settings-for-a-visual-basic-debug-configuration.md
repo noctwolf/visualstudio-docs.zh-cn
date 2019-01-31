@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 72a8483a-af0b-4403-8b0d-ee9ad71ee435
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 200d09c77c7ff4c22ed51b4cc93ec724d30dd17b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e2f8315717b91a257d09b5de671698796f732543
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878492"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004729"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Project Settings for a Visual Basic Debug Configuration
 可以在“属性页”窗口中更改 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 调试配置的项目设置，这在[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)中进行了探讨。 下表显示“属性页”窗口中与调试器有关的设置的位置。  
@@ -41,7 +41,7 @@ ms.locfileid: "53878492"
 | 设置 | 说明 |
 |------------------------------| - |
 | **配置** | 设置编译应用程序的模式。 在“活动(调试)”、“调试”、“发布”和“所有配置”之间进行选择。 |
-| **启动操作** | 这组控件指定在从“调试”菜单中选择“启动”时将发生的操作。<br /><br /> -   “启动项目”是默认值，用于启动启动项目以供调试。 <br />-   “启动外部程序”用于启动和附加到不属于 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目的程序。 有关详细信息，请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。<br />-   “使用 URL 启动浏览器”可用于调试 Web 应用程序。 |
+| **启动操作** | 这组控件指定在从“调试”菜单中选择“启动”时将发生的操作。<br /><br /> -   “启动项目”是默认值，用于启动启动项目以供调试。 <br />-   “启动外部程序”用于启动和附加到不属于 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目的程序。 有关详细信息，请参阅[附加到运行中的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。<br />-   “使用 URL 启动浏览器”可用于调试 Web 应用程序。 |
 | **命令行参数** | 指定要调试的程序的命令行自变量。 该命令名是在“启动外部程序”中指定的程序名。 如果“启动操作”设置为“启动 URL”，则忽略命令行自变量。 |
 | **工作目录** | 指定被调试的程序的工作目录。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，工作目录就是启动应用程序所在的目录。 默认工作目录是 \bin\Debug 或 \bin\Release，具体取决于当前配置。 |
 | **使用远程计算机** | 选中此复选框后，将启用远程调试。 在文本框中，可以键入出于调试目的运行应用程序的远程计算机的名称或 [Msvsmon 服务器名称](../debugger/remote-debugging.md)。 该 EXE 在远程计算机上的位置是由“生成”选项卡中的“输出路径”属性指定的。此位置必须是远程计算机上的共享目录。 |

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: b7ce8696-ebb8-4354-a767-f76b8ada4ac1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e67d5ed5fbab83edb9b2aeea99e22a71c52424e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9e6969d8bf49390e0dd79a1a201e272bc0aae84e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923976"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015285"
 ---
 # <a name="com-server-and-container-debugging"></a>调试 COM 服务器和容器
 COM 应用程序执行程序员直接控制之外的许多任务。 DLL 之间的通信、对象的使用计数和剪贴板操作只是你可能会遇到意外行为的几个方面。 发生这种情况时，第一步是找到问题的根源。  

@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 202d4f8f62aeb19836c30e76751d8a2c5b6f3033
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2d2d637dfb74a6d3a0e4c8b4ae346aa8236f28a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963280"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018886"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>错误：目标计算机上的 Visual Studio 远程调试器服务无法重新连接到此计算机 | Microsoft Docs
 此错误表示“Visual Studio 远程调试器”服务正在运行，但是运行它的用户帐户在尝试连接正在从中进行调试的计算机时无法进行身份验证。  
@@ -76,4 +76,4 @@ ms.locfileid: "53963280"
   
 ## <a name="see-also"></a>请参阅  
  [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [远程调试](../debugger/remote-debugging.md)

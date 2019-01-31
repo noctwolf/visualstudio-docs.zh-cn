@@ -1,25 +1,20 @@
 ---
 title: 实用程序节点 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1d85735c5fb355163f2003a27a96675ed097d66e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5907b388e59b136a2d89b02348e7ac3d2b25d63c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174416"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783858"
 ---
 # <a name="utility-nodes"></a>实用程序节点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +32,3 @@ ms.locfileid: "49174416"
 |**遮罩向量**|指定矢量的遮罩分量。<br /><br /> 可将此用于从某个颜色值中移除特定颜色通道，或阻止特定分量对后续计算产生影响。<br /><br /> **输入：**<br /><br /> `Vector`: `float4`<br /> 要遮罩的矢量。<br /><br /> **输出：**<br /><br /> `Output`: `float4`<br /> 已遮罩的矢量。|**红色/X**<br /> 若要遮住红色 (x) 分量，则为 **False**；否则为 **True**。<br /><br /> **绿色/Y**<br /> 若要遮住绿色 (y) 分量，则为 **False**；否则为 **True**。<br /><br /> **蓝色/Z**<br /> 若要遮住蓝色 (z) 分量，则为 **False**；否则为 **True**。<br /><br /> **Alpha/W**<br /> 若要遮住 alpha (w) 分量，则为 **False**；否则为 **True**。|  
 |**反射矢量**|基于照相机的位置，计算正切空间中当前像素的反射矢量。<br /><br /> 可以将此用于计算反射、立方体贴图坐标和反射照明量<br /><br /> **输入：**<br /><br /> `Tangent Space Surface Normal`: `float3`<br /> 当前像素的表面法线，在当前像素的切线空间中定义。 可将此用于干扰明显的表面法线，如法线贴图所示。<br /><br /> **输出：**<br /><br /> `Output`: `float3`<br /> 反射矢量。|无|  
 |**反射**|通过使用指定的表面法线，根据 Phong 照明模型计算反射照明量。<br /><br /> 反射照明赋予对象（例如水、塑料或金属）闪亮、反光的外观。<br /><br /> **输入：**<br /><br /> `Surface Normal`: `float3`<br /> 当前像素的表面法线，在当前像素的切线空间中定义。 可将此用于干扰明显的表面法线，如法线贴图所示。<br /><br /> **输出：**<br /><br /> `Output`: `float3`<br /> 反射高光的颜色量。|无|
-
-
-

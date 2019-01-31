@@ -1,14 +1,9 @@
 ---
 title: “高级生成设置”对话框 (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9f3d62f6cd393dfccdaeb9047bac4780546f0087
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f4336ef93eded7ed1d56a8ee34fff0189813da17
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811966"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763343"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>“高级生成设置”对话框 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ ms.locfileid: "49811966"
   针对整数算法语句不在 [checked](http://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d) 或 [unchecked](http://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e) 关键字范围内并且产生的值超出数据类型范围的情况，指定此时是否会导致运行时异常。有关详细信息，请参阅 [/checked（C# 编译器选项）](http://msdn.microsoft.com/library/fb7475d3-e6a6-4e6d-b86c-69e7a74c854b)。  
   
   **不引用 mscorlib.dll**  
-  指定是否将 mscorlib.dll 导入程序，从而定义整个<xref:System>命名空间。 如果想要定义或创建自己的 <xref:System> 命名空间和对象，请选中此框。 有关详细信息，请参阅 [/nostdlib（C# 编译器选项）](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f)。  
+  指定是否将 mscorlib.dll 导入程序，同时定义整个 <xref:System> 命名空间。 如果想要定义或创建自己的 <xref:System> 命名空间和对象，请选中此框。 有关详细信息，请参阅 [/nostdlib（C# 编译器选项）](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f)。  
   
 ## <a name="output"></a>输出  
  使用以下选项可以指定高级输出选项。  
@@ -85,6 +80,3 @@ ms.locfileid: "49811966"
 ## <a name="see-also"></a>请参阅  
  [（C# 编译器选项）](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)   
  [“项目设计器”->“生成”页 (C#)](../../ide/reference/build-page-project-designer-csharp.md)
-
-
-

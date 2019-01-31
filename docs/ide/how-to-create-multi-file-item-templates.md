@@ -9,13 +9,13 @@ helpviewer_keywords:
 - item templates, creating multi-file item templates
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0bffe46fa392a09b29eef224aaa50f5e02db826a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 52d66f06dc5364780ea31ea8845b5654c4df155f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877648"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985756"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：创建多文件项模板
 
@@ -58,7 +58,7 @@ ms.locfileid: "53877648"
 
    所选的文件将压缩到一个 .zip 文件中。
 
-1. 将该 .zip 文件复制到用户项模板位置。 默认情况下，该目录为 %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates。 有关更多信息，请参见[如何：查找和组织模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+1. 将该 .zip 文件复制到用户项模板位置。 默认情况下，该目录为 %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates。 有关详细信息，请参阅[如何：查找和组织模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 1. 关闭 Visual Studio，然后重新打开它。
 

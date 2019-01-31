@@ -7,15 +7,15 @@ ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f7f3cc2d39a28052a0f34eed8ab36d224d4b8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d01686d3e0bbc034095ae1b4ec54e5995fc6462f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934354"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958727"
 ---
 # <a name="overview-report-a-problem"></a>概述：报告问题
 
@@ -63,7 +63,7 @@ ms.locfileid: "53934354"
 
 - - -
 
-![开发人员社区上问题报告的“已关闭 - 已有修补程序”状态](../ide/media/ProblemStates/ClosedFixed.jpg) 
+![开发人员社区上问题报告的“已关闭 - 已有修补程序”状态](../ide/media/ProblemStates/ClosedFixed.jpg)
 
 “已关闭 - 已有修补程序”表示已针对此问题发布了修补程序。 该问题现在也标有“已有修补程序版本:”标签，用于指定发布版本。
 

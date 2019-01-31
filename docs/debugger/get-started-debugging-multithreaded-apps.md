@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a198213daa90a1370cba056a8c522495e06c94
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227975"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231969"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序 (C#，Visual Basic、 c + +)
 Visual Studio 提供多种工具和用户界面元素，用于调试多线程应用程序。 本教程演示如何使用线程标记、“并行堆栈”窗口、“并行监视”窗口、条件断点、筛选器断点。 完成本教程只需数分钟，然后你就会熟悉用于调试多线程应用程序的功能。
@@ -34,9 +34,9 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 
 下面两个主题额外介绍了如何使用其他多线程调试工具：
 
-- 若要使用“调试位置”工具栏和“线程”窗口，请参阅[演练：调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
+- 若要使用**调试位置**工具栏和**线程**窗口中，请参阅[演练：调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
 
-- 如需使用 <xref:System.Threading.Tasks.Task>（托管代码）和并发运行时 (C++) 的示例，请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)。 有关适用于大多数多线程应用程序类型的常规调试技巧，请阅读该主题和本主题。
+- 有关使用的示例<xref:System.Threading.Tasks.Task>（托管代码） 和并发运行时 （c + +），请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md) 有关适用于大多数多线程应用程序类型的常规调试技巧，请阅读该主题和本主题。
   
 首先需要一个多线程应用程序项目。 示例如下。  
   
@@ -46,7 +46,7 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
   
      此时将出现“新建项目”对话框。  
   
-2.  选择语言：**Visual C#**、**Visual C++** 或 **Visual Basic**。  
+2.  选择语言**Visual C#** ， **Visual c + +**，或**Visual Basic**。  
   
 3.  在“Windows 桌面”下，选择“控制台应用”。   
   
@@ -106,39 +106,37 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
     ```
 
     ```C++
-    #include "stdafx.h"
+    #include "pch.h"
     #include <thread>
     #include <iostream>
     #include <vector>
-
-    using namespace;
 
     int count = 0;
 
     void doSomeWork() {
 
-        cout << "The doSomeWork function is running on another thread." << endl;
+        std::cout << "The doSomeWork function is running on another thread." << std::endl;
         int data = count++;
         // Pause for a moment to provide a delay to make
         // threads more apparent.
-        this_thread::sleep_for(chrono::seconds(3));
-        cout << "The function called by the worker thread has ended." << endl;
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+        std::cout << "The function called by the worker thread has ended." << std::endl;
     }
 
     int main() {
-        vector<thread> threads;
+        std::vector<std::thread> threads;
 
         for (int i = 0; i < 10; ++i) {
 
-            threads.push_back(thread(doSomeWork));
-            cout << "The Main() thread calls this after starting the new thread" << endl;
-        }
+            threads.push_back(std::thread(doSomeWork));
+            std::cout << "The Main() thread calls this after starting the new thread" << std::endl;
+    }
 
-        for (auto& thread : threads) {
-            thread.join();
-        }
+    for (auto& thread : threads) {
+        thread.join();
+    }
 
-        return 0;
+    return 0;
     }
     ```
 
@@ -194,6 +192,8 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
     ```
   
 7.  在“文件”菜单上，单击“全部保存”。  
+
+8. (仅限 Visual Basic)在解决方案资源管理器 （右窗格），右键单击项目节点，选择**属性**。 下**应用程序**选项卡上，更改**启动对象**到**简单**。
   
 ## <a name="debug-the-multithreaded-app"></a>调试多线程应用程序  
   
@@ -205,8 +205,8 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
     ```  
   
     ```C++  
-    this_thread::sleep_for(chrono::seconds(3));
-    cout << "The function called by the worker thread has ended." << endl; 
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    std::cout << "The function called by the worker thread has ended." << std::endl; 
     ```  
 
     ```VB
@@ -214,7 +214,7 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
     Console.WriteLine()
     ```
 
-1. 左键单击中的左滚动条槽`Thread.Sleep`或`this_thread::sleep_for`语句将新断点。  
+1. 左键单击中的左滚动条槽`Thread.Sleep`或`std::this_thread::sleep_for`语句将新断点。  
   
     滚动条槽中的红色圆圈指示在此位置设置断点。 
   
@@ -316,7 +316,7 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 
 ### <a name="bkmk_follow_a_thread"></a> 请按照具有条件断点的单一线程
 
-可以在调试器中对单线程的执行情况进行跟踪。 一种方法是冻结不感兴趣的线程。 在某些情况下，可能需要在不冻结其它线程的情况下跟踪单个线程，例如重现特定 Bug。 若要在不冻结其他线程的情况下跟踪某个线程，必须避免在不感兴趣的线程上中断。 可以通过设置[条件断点](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)执行此操作。
+可以在调试器中对单线程的执行情况进行跟踪。 一种方法是冻结不感兴趣的线程。 在某些情况下，可能需要在不冻结其它线程的情况下跟踪单个线程，例如重现特定 Bug。 若要在不冻结其他线程的情况下跟踪某个线程，必须避免在不感兴趣的线程上中断。 您可以执行此操作通过设置[条件断点](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)。
 
 可以根据不同的条件（例如，线程名称或线程 ID）来设置断点。 如果你知道数据对于每个线程都是唯一的，则可根据该数据设置条件断点。 这是常见的调试场景，即相比于特定的线程，你对某些特定的数据值更感兴趣。
 

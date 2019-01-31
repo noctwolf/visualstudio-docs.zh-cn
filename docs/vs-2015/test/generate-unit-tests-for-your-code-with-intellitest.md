@@ -1,26 +1,21 @@
 ---
 title: 使用 IntelliTest 为你的代码生成单元测试 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6743db0b10d8df4f131f8125b3e2f83bca262054
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c6d880ef434eafd7aee3ffbc5f7d8f80a68a4b25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226507"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790501"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 为你的代码生成单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,7 +118,7 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
  如果添加了断言并重新运行 IntelliTest，它将检查断言的有效性，如果断言无效，则测试失败。  
   
 ###  <a name="NoRun"></a> 问：是否可以无需首先运行 IntelliTest 便生成参数化单元测试？  
- **答：** 可以，在类或方法中单击右键，然后选择 **创建 IntelliTest**。  
+ **答：** 可以，在类或方法中单击右键，然后选择“创建 IntelliTest”。  
   
  ![右键单击编辑器，选择“创建 IntelliTest”](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")  
   
@@ -132,7 +127,7 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
  ![使用 MSTest 默认值创建 IntelliTest](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")  
   
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>问：是否可以将其他单元测试框架用于 IntelliTest？  
- **答：** 可以，请按照下列步骤 [查找和安装其他框架](../test/install-third-party-unit-test-frameworks.md)。 重新启动 Visual Studio 并重新打开你的解决方案后，在类或方法中单击右键，然后选择 **创建 IntelliTest**。 请在此处选择已安装的框架：  
+ **答：** 可以，请按照下列步骤[查找和安装其他框架](../test/install-third-party-unit-test-frameworks.md)。 重新启动 Visual Studio 并重新打开你的解决方案后，在类或方法中单击右键，然后选择 **创建 IntelliTest**。 请在此处选择已安装的框架：  
   
  ![选择 IntelliTest 的其他单元测试框架](../test/media/pexcreateintellitestextensions.png "PEXCreateIntelliTestExtensions")  
   
@@ -140,6 +135,3 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
   
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>问：是否可以了解有关如何生成测试的详细信息？  
  **答：** 可以，要获取高级概述，请阅读此 [博客文章](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)。
-
-
-

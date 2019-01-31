@@ -1,27 +1,22 @@
 ---
 title: 跨平台移动开发示例 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
 caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 204aafd41427f46c86146b9867880137cf1b096b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 64f5022d0d4aca15583606caa5215d06357edcf1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795266"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783757"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>跨平台移动开发示例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +55,3 @@ Visual C++ 安装的用于跨平台移动开发的若干模板生成完整的示
   若要在 Visual Studio 中打开其中一个示例，请下载 zip 文件并在资源管理器中打开所下载文件的“属性”  页。 选择“解除阻止”  按钮，然后选择“确定” 。 将 zip 文件的内容解压缩到一个方便的位置，然后在解压缩后的示例中打开 C++ 文件夹，并打开解决方案文件。  
   
   若要生成示例，请按 F7，或在菜单栏上依次选择“生成” 、“生成解决方案” 。
-

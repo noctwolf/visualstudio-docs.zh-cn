@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 7f11b2e3-3fb5-449d-b07c-6ecf1d6a487d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05a1cc9e4847b9ffa2c873b137c35bfbf6f83f83
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5dc69ca726ddf2f2167be7c52038f3963492281
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968110"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014856"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>“选项”对话框 ->“调试”->“实时”
 若要访问“实时”页，请转到“工具”菜单，然后单击“选项”。 在“选项”对话框中，展开“调试”节点并选择“实时”。 使用该页，你可以为托管代码、本机代码和脚本启用实时调试。 有关详细信息，请参阅[实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)。  

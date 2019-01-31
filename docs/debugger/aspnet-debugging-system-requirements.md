@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 7810b9b2-debf-4271-8fc7-1df031123255
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 334f2887b85cf0c58ace27cfca65984b29067246
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d86b27a27884c0b8764c28a25ffb8ea9623efd9c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824033"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025368"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 调试：系统要求
 本主题描述了 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 调试方案的软件和安全性要求：  
@@ -42,7 +42,7 @@ ms.locfileid: "53824033"
  > [!IMPORTANT]
  > 从 Windows Server 2008 R2 开始，我们建议使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)作为为每个应用程序池标识。
   
- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程的名称根据调试方案和 IIS 版本的不同而不同。 有关更多信息，请参见[如何：查找 ASP.NET 进程名称](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。  
+ [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程的名称根据调试方案和 IIS 版本的不同而不同。 有关详细信息，请参阅[如何：查找 ASP.NET 进程名称](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。  
   
  可以通过编辑运行 IIS 的服务器上的 machine.config 文件来更改运行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程的用户帐户。 执行此操作的最佳方式是使用 Internet Information Services (IIS) 管理器。 有关详细信息，请参阅[如何：在用户帐户下运行工作进程](../debugger/how-to-run-the-worker-process-under-a-user-account.md)。  
   

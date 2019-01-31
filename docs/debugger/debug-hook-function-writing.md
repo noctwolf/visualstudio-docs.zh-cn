@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 5510635f-cf69-4907-b72d-ae27af1f19af
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9218c36f550c61484054d180ecb4dccb1ca53f3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1ff144a30646ec29c022ba8e55c950e086179337
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947499"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941936"
 ---
 # <a name="debug-hook-function-writing"></a>编写调试挂钩函数
 本节描述了你可以编写的自定义调试挂钩函数，它允许你在调试器的正常处理中将代码插入某些预定义的点中。  

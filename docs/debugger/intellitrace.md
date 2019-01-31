@@ -17,15 +17,15 @@ helpviewer_keywords:
 - IntelliTrace, debugging after a crash
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 332f737d7dc404f42623c338eef3f2dc759d2d6f
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 408864d2f105762cbaede528f8794595a34b3b29
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227325"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973325"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic、 c + +)
 
@@ -37,7 +37,7 @@ ms.locfileid: "54227325"
 
 - 调试难以重现或在部署中出现的错误
 
-可以在 Visual Studio Enterprise 版（但不可在 Professional 或 Community 版）中使用 IntelliTrace。
+可以在 Visual Studio 企业版（但不可在专业版或社区版）中使用 IntelliTrace。
 
 ## <a name="what-do-you-want-to-do"></a>你希望做什么？
 

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3622d7033ac334ad69a86ffb6e1ba6789658a1f7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5214eef80f7417bb319fc0157c233901a12ee86
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833117"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994389"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>无需重新签名部署 ClickOnce 应用程序测试和生产服务器
 本文介绍 ClickOnce 在.NET Framework 版本 3.5，而无需重新签名或更改 ClickOnce 使从多个网络位置的 ClickOnce 应用程序的部署清单中引入的一项功能。  

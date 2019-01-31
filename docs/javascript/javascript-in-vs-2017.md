@@ -16,13 +16,13 @@ ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
-manager: douge
-ms.openlocfilehash: 1045c515870d2574bfb86d12396c5572b01ddda4
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+manager: jillfra
+ms.openlocfilehash: ee22803c7a479c6d22821a9a6b267cd72938792e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398369"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012997"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -206,7 +206,8 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
   }
 }
 ```
-# <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>故障排除 已为以下项目禁用 JavaScript language service
+
+## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>故障排除 已为以下项目禁用 JavaScript language service
 打开一个含有大量内容的 JavaScript 项目时，可能会收到一条消息，内容为“已为以下项目禁用 JavaScript language service”。 出现大量 JavaScript 源的最常见原因是由于包含源代码超过 20MB 项目限制的库。
 
 优化项目的简单方法是在项目根目录中添加 `tsconfig.json` 文件，让语言服务知道可以放心忽略哪些文件。 使用以下示例排除存储库的最常见目录：
@@ -231,7 +232,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 }
 ```
 
-根据需要添加更多目录。 其他一些示例包括“vendor”或“wwwroot/lib”目录。 
+根据需要添加更多目录。 其他一些示例包括“vendor”或“wwwroot/lib”目录。
 
 > [!NOTE]
 > 也可使用编译器属性 `disableSizeLimit` 来禁用 20MB 检查限制。 使用此属性时请特别小心，因为禁用该限制可能会导致语言服务故障。

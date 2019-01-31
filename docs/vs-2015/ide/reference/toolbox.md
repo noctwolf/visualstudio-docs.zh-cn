@@ -1,14 +1,9 @@
 ---
 title: 工具箱 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
 - vs.toolbox
@@ -20,13 +15,13 @@ ms.assetid: b754dad3-1f32-464f-8b9f-065e17e0bc22
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8c12fe819d46eae073367d10c50deec9ee7b4c26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9f296cda3fb7b57ed323dd8b1a6bbff949b9a6d1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241470"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799793"
 ---
 # <a name="toolbox"></a>工具箱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "49241470"
  “工具箱”仅显示与正在使用的文件类型相对应的项。 你可以在工具箱中进行搜索，以进一步筛选显示的项。 如果你的项目需要客户端配置文件不支持的控件，则可以通过编辑项目属性将你的项目设置为面向整个框架。  
   
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="help-on-toolbox-tabs"></a>“工具箱”选项卡上的帮助  
  以下文档提供有关特定“工具箱”选项卡的详细信息。  
@@ -58,6 +53,3 @@ ms.locfileid: "49241470"
   
 ## <a name="see-also"></a>请参阅  
  [使用工具箱](../../ide/using-the-toolbox.md)
-
-
-

@@ -1,13 +1,9 @@
 ---
 title: 如何：IDE 中移动 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - environments [Visual Studio], navigation
 - documents [Visual Studio], navigating
@@ -21,13 +17,13 @@ ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4c252f709875133be7b4106a55cd853fbb309635
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 94629a2e64d154313711b3e8968b28959d3341e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880979"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805414"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>如何：在 Visual Studio IDE 中移动
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +31,7 @@ ms.locfileid: "53880979"
 集成开发环境 (IDE) 的设计旨在使你可以根据首选项或项目要求，以几种不同方式在窗口间和文件间移动。 可以选择在编辑器中打开的文件之间循环切换，或在 IDE 中所有活动工具窗口之间循环。 还可以直接切换到在编辑器中任何打开的文件，而不考虑上一次访问的顺序。 在 IDE 中工作时，这些功能有助于提高工作效率。
 
 > [!NOTE]
->  对话框中的可用选项以及显示的菜单命令的名称和位置可能与“帮助”中的描述不同，具体取决于您的当前设置或版本。 此帮助页是根据“常规开发设置”而编写的。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+>  对话框中的可用选项以及显示的菜单命令的名称和位置可能与“帮助”中的描述不同，具体取决于您的当前设置或版本。 此帮助页是根据“常规开发设置”而编写的。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
 ## <a name="keyboard-shortcuts"></a>键盘快捷键
  Visual Studio 中几乎每个菜单命令都具有键盘快捷方式。 你也可以创建自己的自定义快捷方式。 有关详细信息，请参阅[标识并自定义键盘快捷方式](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。

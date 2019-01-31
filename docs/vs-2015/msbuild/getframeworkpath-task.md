@@ -1,14 +1,9 @@
 ---
 title: GetFrameworkPath 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GetFrameworkPath
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 5b7bcdd7-d4a0-442d-af29-8aadb3b10598
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dcad656c058fffaf3f075b195cb1f105079a8e5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d3820cca54cd7d5d2e93e48909627d4200f38983
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248594"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787215"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49248594"
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `GetFrameworkPath` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`FrameworkVersion11Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 1.1 版程序集的路径（如存在）。 否则返回 `null`。|  
 |`FrameworkVersion20Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 2.0 版程序集的路径（如存在）。 否则返回 `null`。|  
@@ -72,6 +67,3 @@ ms.locfileid: "49248594"
 ## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)
-
-
-

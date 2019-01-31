@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c90143ae45fba3299cf3eccbcd412d768fcc3738
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4876cee807f38d141aa7aa3cb4166c54c3b91cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828402"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017040"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>演练：调试因着色引起的呈现错误
 本演练演示如何使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]图形诊断工具调查由于着色器 bug 而错误着色的对象。  

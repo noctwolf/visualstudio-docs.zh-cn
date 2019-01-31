@@ -1,14 +1,9 @@
 ---
 title: /Run (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /run Devenv
 - run Devenv switch
@@ -20,13 +15,13 @@ ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9fb26412d6abb2c438088bf42bef620d5c8bb2d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 120ff132ac33a156cdf734ee0e17f4cfade9380c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257538"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768888"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,10 +37,10 @@ devenv {/run|/r} {SolutionName|ProjectName}
   
 ## <a name="arguments"></a>自变量  
  `SolutionName`  
- 必须的。 解决方案文件的完整路径和名称。  
+ 必需。 解决方案文件的完整路径和名称。  
   
  `ProjectName`  
- 必须的。 项目文件的完整路径和名称。  
+ 必需。 项目文件的完整路径和名称。  
   
 ## <a name="remarks"></a>备注  
  根据为活动解决方案配置指定的设置编译并运行指定项目或解决方案。 此开关启动集成开发环境 (IDE) ，并在项目或解决方案已完成运行后让该环境保持活动状态。  
@@ -67,6 +62,3 @@ devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Proje
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

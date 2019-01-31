@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 7047bf18-5779-4f6e-872c-66e2fc47c969
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ea80d579b6ddf72955f83a7197b3d21fe01a34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a42774d2f91afe0e3b469a97a17763950b4bdc2e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886577"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968120"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>指定分析工具命令行工具的路径
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具的路径不添加到 PATH 环境变量中。 在 32 位计算机上，这些工具位于单个目录中。 64 位计算机上有这些分析工具的 32 位和 64 位版本。  

@@ -1,14 +1,9 @@
 ---
 title: 如何：引用项目文件的名称或位置 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - locations, referencing
 - locations
@@ -21,13 +16,13 @@ ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8631d10d56a35f8cf4ef6024d087bf94ec89b9d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a5d07c374e75bd7f042f466f13fc5727241e252
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780997"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：引用项目文件的名称或位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49845727"
   
 #### <a name="to-use-the-msbuildprojectname-property"></a>使用 MSBuildProjectName 属性  
   
-- 使用 $() 表示法在项目文件中引用属性，就像引用任何其他属性一样。 例如：  
+- 使用 $() 表示法在项目文件中引用属性，就像引用任何其他属性一样。 例如:  
   
   ```  
   <CSC Sources = "@(CSFile)"   
@@ -84,5 +79,3 @@ ms.locfileid: "49845727"
 ## <a name="see-also"></a>请参阅  
 [MSBuild](msbuild.md)  
  [MSBuild 保留属性和已知属性](../msbuild/msbuild-reserved-and-well-known-properties.md)
-
-

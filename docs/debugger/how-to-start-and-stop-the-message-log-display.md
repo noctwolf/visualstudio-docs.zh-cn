@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3036611c-acf3-42b6-b5d7-1a0c653f6af9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec0241dfe65d093492ebb3f2e828c9068f1f0736
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5c0f3d2cda787d751f45ae2da9344b62f89ac50c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926616"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025457"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>如何：开始和停止消息日志显示
 当[消息视图](../debugger/messages-view.md)窗口处于活动状态，**开始日志记录**或**停止日志记录**选择显示在 Spy + +**消息**菜单中，并对应**启动日志记录**或**停止日志记录**工具栏按钮将变为活动状态。  

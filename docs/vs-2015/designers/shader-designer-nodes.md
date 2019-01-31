@@ -1,25 +1,20 @@
 ---
 title: 着色器设计器节点 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f41d1d3d934ecd85ac36d24d704db561d42faa97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 659ac2dadd5500ef3cd4a4a3e7c3b36b91e9cc49
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293496"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793259"
 ---
 # <a name="shader-designer-nodes"></a>着色器设计器节点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "49293496"
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|说明|  
 |-----------|-----------------|  
 |[常量节点](../designers/constant-nodes.md)|介绍可在着色器计算中用来表示文本值和内插顶点状态信息的节点。 因为顶点状态是内插的，因此每个像素的顶点状态不同，每个像素着色器实例会接收不同版本的常量。|  
 |[参数节点](../designers/parameter-nodes.md)|介绍可在着色器计算中用来表示照相机位置、材料属性、照明参数、时间和其他应用状态信息的节点。|  
@@ -57,6 +52,3 @@ ms.locfileid: "49293496"
 |[数学运算节点](../designers/math-nodes.md)|介绍可用来执行代数、逻辑、三角函数和其他数学运算的节点，这些运算直接映射到 HLSL 指令。|  
 |[实用程序节点](../designers/utility-nodes.md)|介绍可用来执行常见照明计算和其他常见运算的节点，这些操作不直接映射到 HLSL 指令。|  
 |[筛选节点](../designers/filter-nodes.md)|介绍可用来执行纹理筛选和颜色筛选的节点。|
-
-
-

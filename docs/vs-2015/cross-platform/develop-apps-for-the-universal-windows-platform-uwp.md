@@ -1,25 +1,20 @@
 ---
 title: 开发面向通用 Windows 平台 (UWP) 的应用 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 24dfca5d4ac8432cbe659bb42ca54d0398c47c04
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 949cbbc7146fc744f549201a98f61d82a80185e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787013"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>开发面向通用 Windows 平台 (UWP) 的应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +49,9 @@ ms.locfileid: "51766475"
   
   如果选择使用 Visual Studio 2015 在除 Windows 10 外的平台上开发通用 Windows 应用，存在以下限制：  
   
-- Windows 8.1：不能在本地运行应用（仅在远程 Windows 10 设备上运行）。 可使用 Visual Studio 中的仿真程序，但不能使用模拟器。  
+- Windows 8.1不能 （仅在远程 Windows 10 设备） 上运行应用程序本地。 可使用 Visual Studio 中的仿真程序，但不能使用模拟器。  
   
-- Windows 7：不能在本地运行应用（仅在远程 Windows 10 设备上运行）。 不能使用 Visual Studio 中的仿真程序或模拟器。  
+- Windows 7：不能 （仅在远程 Windows 10 设备） 上运行应用程序本地。 不能使用 Visual Studio 中的仿真程序或模拟器。  
   
   如果开发平台是 Windows 10，只能使用 XAML 设计器。  
   
@@ -66,4 +61,3 @@ ms.locfileid: "51766475"
  如果你有现有的 Windows 应用商店 8.1 应用、Windows Phone 8.1 应用或使用 Visual Studio 2015 RC 创建的通用 Windows 应用，则 [移植这些现有的应用](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 以使用最新的通用 Windows 平台。  
   
  创建通用 Windows 应用后，必须 [将应用打包](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) 以将其安装在 Windows 10 设备或提交到 Windows 应用商店。
-

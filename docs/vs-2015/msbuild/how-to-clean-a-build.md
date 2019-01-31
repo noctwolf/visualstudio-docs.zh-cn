@@ -1,14 +1,9 @@
 ---
 title: 如何：清理生成 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, cleaning a build
@@ -18,13 +13,13 @@ ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c7b9811785808204fdd776617eec9cdeeaad317
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aa90a0d10b06559b3f4f46fd8dc0c5da4cef981e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229666"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780742"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清理生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49229666"
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  如果目录不存在，使用 [MakeDir](../msbuild/makedir-task.md) 任务创建目录。 例如：  
+2.  如果目录不存在，使用 [MakeDir](../msbuild/makedir-task.md) 任务创建目录。 例如:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -52,14 +47,14 @@ ms.locfileid: "49229666"
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>删除目录和目录中包含的所有文件  
   
--   使用 `RemoveDir` 任务删除目录。 例如：  
+-   使用 `RemoveDir` 任务删除目录。 例如:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   
 ## <a name="example"></a>示例  
  以下代码示例项目包含一个新目标 `Clean`，该目标使用 `RemoveDir` 任务删除目录和该目录中包含的所有文件和目录。 此外，在此示例中，`Compile` 目标还将为清理生成时删除的输出项创建一个单独的目录。  
   
- 由于 `Compile` 被定义为默认目标，因此，除非另外指定一个或多个目标，否则会自动使用该默认目标。 使用命令行开关 /target 另外指定一个目标。 例如：  
+ 由于 `Compile` 被定义为默认目标，因此，除非另外指定一个或多个目标，否则会自动使用该默认目标。 使用命令行开关 /target 另外指定一个目标。 例如:  
   
  `msbuild <file name>.proj /target:Clean`  
   
@@ -113,6 +108,3 @@ ms.locfileid: "49229666"
  [RemoveDir 任务](../msbuild/removedir-task.md)   
  [Csc 任务](../msbuild/csc-task.md)   
  [目标](../msbuild/msbuild-targets.md)
-
-
-

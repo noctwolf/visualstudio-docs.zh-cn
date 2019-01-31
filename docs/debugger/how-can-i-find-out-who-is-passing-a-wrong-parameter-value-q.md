@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 1f1ae455-0e25-4e9d-b33f-53908f5bd6ce
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffcff71a8897796d64c608df698932da4fd9774f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8d33e1ae22da7980b9f4228243e93568864535ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988091"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069195"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>如何查明谁在传递错误的参数值？
 ## <a name="problem-description"></a>问题描述  
@@ -49,7 +49,7 @@ ms.locfileid: "53988091"
   
 6.  现在再次运行程序。 当 `Var` 参数的值为 `3` 时，断点导致程序在函数开始处暂停。  
   
-7.  然后可以使用“调用堆栈”窗口查找调用函数并定位到其源代码。 有关更多信息，请参见[如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)。  
+7.  然后可以使用“调用堆栈”窗口查找调用函数并定位到其源代码。 有关详细信息，请参阅[如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)   

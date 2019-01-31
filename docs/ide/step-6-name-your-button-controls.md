@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39ded8694e5ec4b071193f74aa5fded5ddb54560
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19ae13c13ce4f8574df8a6a5ffbf432fab555810
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820353"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55043588"
 ---
 # <a name="step-6-name-your-button-controls"></a>步骤 6：命名按钮控件
 窗体上只有一个 <xref:System.Windows.Forms.PictureBox>。 当添加此控件时，IDE 自动将其命名为“pictureBox1” 。 只有一个名为“checkBox1”的 <xref:System.Windows.Forms.CheckBox>。 很快，你将编写一些代码，并且这些代码将引用到上述的 CheckBox 和 PictureBox。 因为上述每种控件都只有一个控件，所以当你在代码中看到  “pictureBox1”或  “checkBox1”时，应知道其中的含义。

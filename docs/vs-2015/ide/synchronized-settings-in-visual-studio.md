@@ -1,26 +1,22 @@
 ---
 title: 同步设置
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c6b2d0fd5618c0c0f48c05bc5246170f81a800a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e6ea971705b164a27fc7f65c3ac2d681b1569177
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962500"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758794"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio 中的同步设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +26,7 @@ ms.locfileid: "53962500"
 ## <a name="synchronized-settings"></a>同步设置
  默认情况下，以下设置会进行同步。
 
--   开发设置（必须在首次运行 Visual Studio 时选择一组设置，但是可以随时更改选择。 有关详细信息，请参阅[在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+-   开发设置（必须在首次运行 Visual Studio 时选择一组设置，但是可以随时更改选择。 有关详细信息，请参阅[在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
 -   “工具”|“选项”页中的以下选项：
 

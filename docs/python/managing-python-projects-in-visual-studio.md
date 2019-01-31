@@ -1,22 +1,22 @@
 ---
 title: 管理 Python 应用程序项目
 description: Visual Studio 中的项目管理文件之间的依赖项和应用程序中的关系复杂性。
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825287"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231930"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 项目
 
@@ -113,7 +113,7 @@ Visual Studio 提供多种方法用于从零开始，或根据现有代码设置
 
 要将现有项添加为链接，请右键单击项目中要添加文件所在的文件夹，然后选择“添加” > “退出项”。 在出现的对话框中，选择一个文件，然后从“添加”按钮上的下拉列表中选择“添加为链接”。 如果没有冲突文件，此命令会在所选文件夹中创建一个链接。 但是，如果已存在具有相同名称的文件或项目中已存在该文件的链接，将不会添加链接。
 
-如果尝试链接到项目文件夹中已存在的文件，会添加该文件作为普通文件而不是作为链接。 要将文件转换为链接，请选择“文件” > “另存为”，将文件保存到项目层次结构外的位置；Visual Studio 会自动将其转换为链接。 同样，通过使用“文件” > “另存为”将文件保存在项目层次结构内的某个位置，可以将链接转换回文件。 
+如果尝试链接到项目文件夹中已存在的文件，会添加该文件作为普通文件而不是作为链接。 要将文件转换为链接，请选择“文件” > “另存为”，将文件保存到项目层次结构外的位置；Visual Studio 会自动将其转换为链接。 同样，通过使用“文件” > “另存为”将文件保存在项目层次结构内的某个位置，可以将链接转换回文件。
 
 如果在解决方案资源管理器中移动链接文件，则链接会移动，但实际文件不会受到影响。 同样，删除链接仅会删除该链接，而不会影响文件。
 

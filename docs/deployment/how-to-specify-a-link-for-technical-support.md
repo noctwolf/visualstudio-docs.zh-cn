@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 500aebee-545e-4831-a78b-b8671a008015
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a322dde6ae616f2909a0a33721d28d1309c66fae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f90c020f5bfed1c6b4bd3c63aed67b8ffede7b6
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933935"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016490"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>如何：指定技术支持链接
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序中，**支持 URL**属性标识网页或文件共享，用户可以转到要获取有关应用程序的信息。 此属性是可选的;如果提供，该 URL 将显示在应用程序的入口**添加或删除程序**对话框。  

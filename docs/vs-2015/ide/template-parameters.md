@@ -1,14 +1,9 @@
 ---
 title: 模板参数 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 1b567143-08c6-4d7a-b484-49f0671754fe
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238896"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787087"
 ---
 # <a name="template-parameters"></a>模板参数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "49238896"
 在对模板进行实例化时，您可以通过在模板中使用参数来替换模板的关键部分的值，如类名和命名空间。 用户在“新建项目”或“添加新项”对话框中单击“确定”时，后台运行的模板向导会替换这些参数。  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>声明和启用模板参数  
- 模板参数以 $参数$ 的格式进行声明。 例如：  
+ 模板参数以 $参数$ 的格式进行声明。 例如:  
   
 -   $safeprojectname$  
   
@@ -58,7 +53,7 @@ ms.locfileid: "49238896"
 > [!NOTE]
 >  模板参数区分大小写。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`clrversion`|公共语言运行时 (CLR) 的当前版本。|  
 |`GUID [1-10]`|一个用于替换项目文件中的项目 GUID 的 GUID。 可指定最多 10 个唯一的 GUID（例如，`guid1)`。|  
@@ -79,7 +74,7 @@ ms.locfileid: "49238896"
 ## <a name="custom-template-parameters"></a>自定义模板参数  
  除了在参数替换过程中使用的默认保留的模板参数之外，还可以指定自己的模板参数和值。有关详细信息，请参阅 [CustomParameters 元素（Visual Studio 模板）](../extensibility/customparameters-element-visual-studio-templates.md)  
   
-## <a name="example-replacing-files-names"></a>示例：替换文件名  
+## <a name="example-replacing-files-names"></a>示例:替换文件名  
  可以使用属性为 `TargetFileName` 的参数为项目项指定变量文件名。 例如，可以指定 .exe 文件使用由 `$projectname$` 指定的项目名称作为文件名。  
   
 ```  
@@ -93,7 +88,7 @@ ms.locfileid: "49238896"
 </TemplateContent>  
 ```  
   
-## <a name="example-using-the-project-name-for-the-namespace-name"></a>示例：使用项目名称作为命名空间名称  
+## <a name="example-using-the-project-name-for-the-namespace-name"></a>示例:使用 Namespace 名称的项目名称  
  要将项目名称用于 Visual C# 类文件 Class1.cs 中的命名空间，请使用以下语法：  
   
 ```  
@@ -130,6 +125,3 @@ namespace $safeprojectname$
   
 ## <a name="see-also"></a>请参阅  
  [自定义模板](../ide/customizing-project-and-item-templates.md)
-
-
-

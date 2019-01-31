@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee80d19dea5956c85c844863ffd41ec94c486486
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99e19df05aea81c9fe2b73fd1020318f3482d1bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841672"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964231"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>如何：引用 Windows 符号信息
 Visual Studio 分析工具使用符号 (.pdb) 文件来解析符号名称，例如，程序二进制文件中的函数名称。 可以按照以下步骤为本地计算机上的 Windows 版本自动下载和更新正确的 .pdb 文件。  

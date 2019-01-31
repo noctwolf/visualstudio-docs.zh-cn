@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25492d3f6d152369bdabaad5eafc05f5e8822132
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c37492bfe514536ff94cf8c51a616e2df69b891e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879353"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010202"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>如何选择用于项目的 Python 环境
 
@@ -46,7 +46,7 @@ Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的�
 
 ## <a name="use-virtual-environments"></a>使用虚拟环境
 
-虚拟环境是特定 Python 解释器和一组特定库的独特组合，它与其他全局环境以及 conda 环境不同。 虚拟环境特定于项目，但保留在项目文件夹中。 该文件夹包含环境中已安装的库，还有一个 pyvenv.cfg 文件用于指定到文件系统中其他位置的环境基础解释器的路径。 （即，虚拟环境中没有解释器副本，只有解释器链接。） 
+虚拟环境是特定 Python 解释器和一组特定库的独特组合，它与其他全局环境以及 conda 环境不同。 虚拟环境特定于项目，但保留在项目文件夹中。 该文件夹包含环境中已安装的库，还有一个 pyvenv.cfg 文件用于指定到文件系统中其他位置的环境基础解释器的路径。 （即，虚拟环境中没有解释器副本，只有解释器链接。）
 
 使用虚拟环境的一项优势是，随着项目的开发，虚拟环境始终反映出项目的确切依赖项。 （另一方面，无论是否在项目中使用库，共享的全局环境中都包含任意数量的库。）随后即可通过虚拟环境轻松创建 requirements.txt 文件，此文件之后用于在另一台开发/生产计算机上重新安装上述依赖项。 有关详细信息，请参阅[使用 requirements.txt 管理所需的包](managing-required-packages-with-requirements-txt.md)。
 

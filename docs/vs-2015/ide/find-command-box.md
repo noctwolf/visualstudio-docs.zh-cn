@@ -1,14 +1,9 @@
 ---
 title: “查找/命令”框 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c81736dd-7a26-4e11-95c8-c2a2e56d7a41
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0e818df222e9b7343facc989c1b61be30c098b64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b8bddc27eb4a59b65796c7837ae4561e5d56a5d5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172559"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801220"
 ---
 # <a name="findcommand-box"></a>“查找/命令”框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49172559"
  默认情况下，如果在“查找/命令”框中指定了文本，然后选择了 Enter 键，Visual Studio 会使用“在文件中查找”对话框中指定的选项搜索当前文档或工具窗口。 有关详细信息，请参阅 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)。  
   
 ## <a name="entering-commands"></a>输入命令  
- 要使用“查找/命令”框发布单个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令或别名，而不是搜索文本，请输入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令，并在该命令前面加一个大于 (>) 符号。 例如：  
+ 要使用“查找/命令”框发布单个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令或别名，而不是搜索文本，请输入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令，并在该命令前面加一个大于 (>) 符号。 例如:  
   
 ```  
 >File.NewFile c:\temp\MyFile /t:"General\Text File"  
@@ -61,6 +56,3 @@ ms.locfileid: "49172559"
 ## <a name="see-also"></a>请参阅  
  [“命令”窗口](../ide/reference/command-window.md)   
  [查找和替换文本](../ide/finding-and-replacing-text.md)
-
-
-

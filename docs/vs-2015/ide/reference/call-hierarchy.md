@@ -1,14 +1,9 @@
 ---
 title: 调用层次结构 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c55bda01-d7de-4823-8f9a-1bcc37dbb74a
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4846d00172c3d71be1f8a8dbdf68cf4e7fd1f065
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851100"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774769"
 ---
 # <a name="call-hierarchy"></a>调用层次结构
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ ms.locfileid: "49851100"
 ## <a name="shortcut-menu-items"></a>快捷菜单项  
  下表描述了在树状视图窗格中右键单击某个节点时，可以使用的多个快捷菜单选项。  
   
-|上下文菜单项|描述|  
+|上下文菜单项|说明|  
 |-----------------------|-----------------|  
 |**作为新根添加**|将选定节点添加为树状视图窗格中的新根节点。 这样就可以集中关注特定子树。|  
 |**移除根**|从树视图窗格中删除所选根节点。 只有根节点有此选项。<br /><br /> 还可以使用“移除根”工具栏按钮来移除选定的根节点。|  
@@ -74,6 +69,3 @@ ms.locfileid: "49851100"
 |**查找所有引用**|在选定节点上运行“查找所有引用”命令。 这会在项目中查找所有引用某个类或成员的代码行。<br /><br /> 还可以使用 Shift+F12 在选定节点上运行“查找所有引用”命令。|  
 |**复制**|复制选定节点（但不包含其子节点）的内容。|  
 |**刷新**|折叠选定节点，重新展开它后便可显示最新的信息。|
-
-
-

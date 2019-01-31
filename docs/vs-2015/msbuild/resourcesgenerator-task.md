@@ -1,14 +1,9 @@
 ---
 title: ResourcesGenerator 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: e782bbac-9ee6-472b-8171-3ee008c77b4e
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4d2d470c91d6303976e5afcbffc7f4eff968ea04
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f53f6f66b30509b56fbaf7cf54eecd0fe93b1434
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805392"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49173298"
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`OutputPath`|必需的 **String** 参数。<br /><br /> 指定输出目录的路径。 如果该路径不是绝对路径，则将其视作根项目目录的相对路径。|  
 |`OutputResourcesFile`|必需的 **ITaskItem[]** 输出参数。<br /><br /> 指定生成的 .resources 文件的路径和名称。 如果该路径不是绝对路径，则生成根项目目录的相对 .resources 文件。|  
@@ -67,6 +62,3 @@ ms.locfileid: "49173298"
  [MSBuild 参考](../msbuild/msbuild-reference.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [Building a WPF Application (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)（生成 WPF 应用程序 (WPF)）
-
-
-

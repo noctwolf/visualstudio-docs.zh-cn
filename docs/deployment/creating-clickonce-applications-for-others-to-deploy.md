@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e5b0d5abde8ae58628f05765c170b9979738275
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c2cd72eef70ac25108358d1e37b414a618e8fe88
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878765"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968749"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>创建供其他人部署的 ClickOnce 应用程序
 并非所有开发人员正在创建 ClickOnce 部署都计划来部署应用程序本身。 其中许多只需将其应用程序打包使用 ClickOnce，然后将文件提交给客户，如大公司。 客户将成为一个负责承载其网络上的应用程序。 本主题讨论了一些在 3.5 版之前的.NET Framework 的版本中的此类部署中固有的问题。 然后，它介绍通过使用新的"使用信任的清单"功能在.NET Framework 3.5 中提供的一个新的解决方案。 最后，则可以确定创建的客户仍在使用较旧版本的.NET Framework 的 ClickOnce 部署的建议策略。  

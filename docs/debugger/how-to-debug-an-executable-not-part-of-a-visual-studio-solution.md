@@ -17,21 +17,21 @@ helpviewer_keywords:
 ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6930360254111533ac635a404d203a87bbdd767e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ae2ea60a4f2427cbe1509a8fa05c787d44b19d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874305"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019130"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>调试不是 Visual Studio 解决方案的一部分在应用程序 (c + +， C#，Visual Basic 中， F#)
 
 你可能想要调试应用程序 (*.exe*文件) 的不是 Visual Studio 解决方案的一部分。 你或其他人可能已创建 Visual Studio 外部的应用或从其他位置获取应用程序。 
 
-若要调试的应用程序在 Visual Studio 中不存在的常用方法是启动 Visual Studio 外部应用程序，然后附加到使用其**附加到进程**Visual Studio 调试器中。 有关详细信息，请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+若要调试的应用程序在 Visual Studio 中不存在的常用方法是启动 Visual Studio 外部应用程序，然后附加到使用其**附加到进程**Visual Studio 调试器中。 有关详细信息，请参阅[附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
 附加到应用程序需要花费几秒钟的手动步骤。 由于这种延迟，附加将不会有帮助调试的启动问题，或的应用程序不会等待用户输入而迅速完成。 
 

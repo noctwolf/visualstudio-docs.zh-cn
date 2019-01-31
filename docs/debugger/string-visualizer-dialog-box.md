@@ -1,4 +1,4 @@
-﻿---
+---
 title: 字符串可视化工具中查看字符串 |Microsoft Docs
 ms.date: 10/10/2018
 ms.topic: reference
@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 080fd8f1-72b0-461f-8451-3c84d5dc51df
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4808e1a6f3086e15162bf2f25c1df369ab90866
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88ad69182a422d1fa1ee04eb35f973d0d1f7ea1c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901225"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968890"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>在 Visual Studio 中的字符串可视化工具中查看字符串
 
@@ -61,7 +61,7 @@ ms.locfileid: "53901225"
 
 ### <a name="view-html-string-data"></a>查看 HTML 字符串数据
 
-格式正确的 HTML 字符串的显示方式与在浏览器中的呈现方式相似，如下图所示。格式错误的 HTML 可能显示为纯文本。
+格式正确的 HTML 字符串的显示方式与在浏览器中的呈现方式相似，如下图所示。 格式错误的 HTML 可能显示为纯文本。
 
 ![HTML 字符串可视化工具](../debugger/media/dbg-string-visualizers-html.png "HTML 字符串可视化工具")
 

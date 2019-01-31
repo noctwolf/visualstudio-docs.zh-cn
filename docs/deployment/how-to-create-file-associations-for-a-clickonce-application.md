@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 835230c8-3177-440f-85e3-e40f1d8b4f9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 956aa3e87863ca39127c1f8579128f7cb408977c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f311705a6cb898ee9bff81a3bbad3890aea92c7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842815"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947304"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>如何：创建 ClickOnce 应用程序的文件关联
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 这样，当用户打开这些类型的文件将自动启动该应用程序，应用程序可以与一个或多个文件扩展名相关联。 添加到的文件名称扩展支持[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序非常简单。  
@@ -41,7 +41,7 @@ ms.locfileid: "53842815"
   
    - `progid`：唯一地标识要将其标记在注册表中的文件类型的字符串。  
   
-   - `defaultIcon`：若要使用此文件类型图标。 必须为应用程序清单中的文件资源添加图标。 有关更多信息，请参见[如何：将数据文件添加到 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
+   - `defaultIcon`：若要使用此文件类型图标。 必须为应用程序清单中的文件资源添加图标。 有关详细信息，请参阅[如何：将数据文件添加到 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
   
      有关的示例`file`并`fileAssociation`元素，请参阅[ \<fileAssociation > 元素](../deployment/fileassociation-element-clickonce-application.md)。  
   

@@ -8,14 +8,14 @@ helpviewer_keywords:
 ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: d23da01a9f36501789991b7d261a819879fd50ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81e745ff44e01f0e699b590cc573c7a1d4c4c9c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962251"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55022971"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>如何：向负载测试添加额外的运行设置
 
@@ -46,7 +46,7 @@ ms.locfileid: "53962251"
     > [!NOTE]
     > 有关运行设置属性及其说明的完整列表，请参阅[负载测试运行设置属性](../test/load-test-run-settings-properties.md)。
 
-     现在可以通过以下方式指定您希望使用已添加的运行设置：将其设置为“活动”。 有关更多信息，请参见[如何：为负载测试选择活动运行设置](../test/how-to-select-the-active-run-setting-for-a-load-test.md)。
+     现在可以通过以下方式指定您希望使用已添加的运行设置：将其设置为“活动”。 有关详细信息，请参阅[如何：为负载测试选择活动运行设置](../test/how-to-select-the-active-run-setting-for-a-load-test.md)。
 
 ## <a name="see-also"></a>请参阅
 

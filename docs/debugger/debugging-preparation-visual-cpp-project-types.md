@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd76689d52bce7f77f61d7998eec683abec30555
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 223a04eada43d9ca69bf5f2d6b5a36ce2d7a5933
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968149"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979161"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>调试准备：Visual C++ 项目类型
 本节描述如何调试用 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目模板创建的基本项目类型。  
@@ -64,7 +64,7 @@ ms.locfileid: "53968149"
   
  Win32 应用程序包括 MFC 应用程序和 ATL 项目。 Win32 应用程序使用 Windows API，也可使用 MFC 或 ATL，但不使用公共语言运行时 (CLR)。 但是，它们可以调用使用 CLR 的托管代码。  
   
- 下面的过程解释如何在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试 Win32 项目。 调试 Win32 应用程序的另一种方法是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之外启动并附加到该应用程序。 有关详细信息，请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+ 下面的过程解释如何在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试 Win32 项目。 调试 Win32 应用程序的另一种方法是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 之外启动并附加到该应用程序。 有关详细信息，请参阅[附加到运行中的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
 ###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a>调试 C 或 C++ Win32 应用程序  
   
@@ -72,7 +72,7 @@ ms.locfileid: "53968149"
   
 2.  在“调试”菜单上选择“启动”。  
   
-3.  使用中讨论的技术进行调试[先来看一下调试器](../debugger/debugger-feature-tour.md)。  
+3.  使用 [初步了解调试器](../debugger/debugger-feature-tour.md) 中讨论的技术进行调试。   
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a>手动设置调试配置  
   
@@ -97,7 +97,7 @@ ms.locfileid: "53968149"
    [在本主题中](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a>Windows 窗体应用程序 (.NET)  
- “Windows 窗体应用程序 (.NET)”模板可创建 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]Windows 窗体应用程序。 有关更多信息，请参见[如何：创建一个 Windows 应用程序项目](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))。  
+ “Windows 窗体应用程序 (.NET)”模板可创建 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]Windows 窗体应用程序。 有关详细信息，请参阅[如何：创建一个 Windows 应用程序项目](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))。  
   
  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试此类应用程序类似于在托管的 Windows 窗体应用程序中进行调试。  
   

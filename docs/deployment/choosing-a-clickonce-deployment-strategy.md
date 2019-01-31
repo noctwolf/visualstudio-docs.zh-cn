@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 98bcab65-ab8b-4ed1-9adc-fdacf92b8106
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e752160c7406f858a2aa370a542efe14eb82e3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dcb25faba045f9af9a00bd544ae4031e9da239a0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931098"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985050"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>选择 ClickOnce 部署策略
 有三种不同的策略用于部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序；所选择的策略主要取决于要部署的应用程序的类型。 下面介绍了这三种部署策略：  
@@ -39,7 +39,7 @@ ms.locfileid: "53931098"
   
  因为此策略依赖于网络连接，所以最适合将部署到可以访问局域网或高速 Internet 连接的用户的应用程序。  
   
- 如果从 Web 部署应用程序，则可以在使用 URL 激活应用程序时将自变量传递给应用程序。 有关更多信息，请参见[如何：在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。 无法将参数传递给使用本文档中描述的任何其他方法激活的应用程序。  
+ 如果从 Web 部署应用程序，则可以在使用 URL 激活应用程序时将自变量传递给应用程序。 有关详细信息，请参阅[如何：在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。 无法将参数传递给使用本文档中描述的任何其他方法激活的应用程序。  
   
  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中启用此部署策略，请在发布向导的“安装方式”页上单击“从 Web”或“从 UNC 路径或文件共享”。  
   

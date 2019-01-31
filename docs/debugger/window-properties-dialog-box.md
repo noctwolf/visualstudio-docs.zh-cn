@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: c70e9429-fb0c-452a-9626-79f168393e44
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8a1371e8c87b98bdc30a4172be7420686cf21e0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f49164149e642544a4a814378e7aa0bc95caf5c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53909237"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979200"
 ---
 # <a name="window-properties-dialog-box"></a>“窗口属性”对话框
-使用此对话框中，若要了解有关特定窗口的详细信息。 若要显示此对话框中，将焦点移至[Windows 视图](../debugger/windows-view.md)窗口。 在树中，选择窗口的任何节点，然后选择**属性**从**视图**菜单。  
+使用此对话框中，若要了解有关特定窗口的详细信息。 若要显示此对话框中，将焦点移至[Windows 视图](../debugger/windows-view.md)窗口。 在树中选择任意窗口节点，然后从“视图”菜单选择“属性”。   
   
 ## <a name="in-this-section"></a>本节内容  
  [“常规”选项卡。“窗口属性”对话框](../debugger/general-tab-window-properties-dialog-box.md)  
@@ -56,4 +56,4 @@ ms.locfileid: "53909237"
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。
+ 介绍 Spy + + 工具，并说明如何使用它。

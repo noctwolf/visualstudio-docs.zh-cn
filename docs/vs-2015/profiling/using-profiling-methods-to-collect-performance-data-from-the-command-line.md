@@ -1,25 +1,20 @@
 ---
 title: 从命令行使用分析方法收集性能数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d3b4d992c59332075e79a3bcb355d3b5b7b9d8f8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 274508c0152571a36caf18bb481b1a23d9640d99
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898172"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761375"
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>从命令行使用分析方法收集性能数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,6 +91,3 @@ ms.locfileid: "53898172"
  [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [分析服务](../profiling/command-line-profiling-of-services.md)
-
-
-

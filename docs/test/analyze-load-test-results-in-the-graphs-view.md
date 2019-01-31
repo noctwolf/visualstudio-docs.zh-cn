@@ -14,14 +14,14 @@ helpviewer_keywords:
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: f27689d5e3c322a539a0db5ee1f93c569cb181a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d1d5899211283301bde2944eb07b67b6d7b59a4f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914551"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012620"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在负载测试分析器的关系图视图中分析负载测试结果
 
@@ -33,7 +33,7 @@ ms.locfileid: "53914551"
 
 一次最多可显示四个关系图面板。 通过使用面板布局工具栏按钮，可以在不同的面板布局之间进行切换。
 
-系统提供了一些内置的关系图。 你既可以按原样使用这些内置关系图，也可以对它们进行自定义。 此外，还可以创建自己的关系图。 有关更多信息，请参见[如何：在关系图上添加和删除计数器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)和[如何：创建自定义图形](../test/how-to-create-custom-graphs-in-load-test-results.md)。
+系统提供了一些内置的关系图。 你既可以按原样使用这些内置关系图，也可以对它们进行自定义。 此外，还可以创建自己的关系图。 有关详细信息，请参阅[如何：在关系图上添加和删除计数器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)和[如何：创建自定义图形](../test/how-to-create-custom-graphs-in-load-test-results.md)。
 
 ## <a name="built-in-graphs"></a>内置关系图
 
@@ -53,7 +53,7 @@ ms.locfileid: "53914551"
 > [!NOTE]
 > 只有响应时间性能计数器可以添加到自动生成的响应时间关系图中。
 
- 计数器信息同时显示在关系图中和关系图下方的图例中。 也可以放大关系图的某一部分。 有关更多信息，请参见[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
+ 计数器信息同时显示在关系图中和关系图下方的图例中。 也可以放大关系图的某一部分。 有关详细信息，请参阅[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
 ## <a name="counters-displayed-in-graphs"></a>关系图中显示的计数器
 

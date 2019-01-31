@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: c60867af-f814-4fac-8f06-3c39cbefc7ea
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece3caef0619f580441d8b689ae8a89fbd0b91a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 861129a6251f0142a22cd916cddbfd95d03b22db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886158"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938547"
 ---
 # <a name="spy-views"></a>Spy++ 视图
 Spy + + 在计算机上显示的树视图的 windows、 消息、 进程和线程可用。  
@@ -39,7 +39,7 @@ Spy + + 在计算机上显示的树视图的 windows、 消息、 进程和线�
  用于在 Spy + + 视图窗口中查找特定节点的对话框。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。  
+ 介绍 Spy + + 工具，并说明如何使用它。  
   
  [Spy++ 参考](../debugger/spy-increment-reference.md)  
  包含描述每个 Spy + + 菜单和对话框中的各个部分。

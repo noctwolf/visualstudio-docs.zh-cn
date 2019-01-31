@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8e1ab784-5f85-4e2b-8ef9-e5d59ca4dbcb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b36afc1098a5045bfefcb92fb2a3fda36d81ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a67b683f92a7fc05f8c6c25cead9921959aa550
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938690"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959351"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>“选项”页 ->“字体和颜色”节点属性
 本文档介绍某个工具窗口的字体和颜色属性，该窗口注册显示在“选项”对话框“环境”类别中的”字体和颜色”下。 这支持可着色项组的动态特性，安装或卸载 VSPackages 时，这些特性可能会发生更改。
