@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 4ad3fe5c-3dfb-4913-b2eb-a0b635751c18
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fefd2c2957ea7f659d3cbf7a0c866cc3586b2ae3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ea8f2b9fc9b6cc2694db94e156f1a182fb98e29
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934461"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55011593"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Visual Basic 中的 Stop 语句
 Visual Basic Stop 语句提供了一种以编程方式设置断点的替换方法。 当调试器遇到 Stop 语句时，它将中断程序的执行（进入中断模式）。 C# 程序员可通过调用 System.Diagnostics.Debugger.Break 达到同样的效果。  

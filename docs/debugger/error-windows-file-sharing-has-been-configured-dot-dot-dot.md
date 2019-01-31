@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bc3388bcf80d471c8dc6d45b0035f74d57abc93
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 257d7a0ce597cc8cbbadca975ee3db60d4e3adcc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942208"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951841"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>错误：已配置 Windows 文件共享...
 已配置 Windows 文件共享，因此您将使用另一不同的用户名连接到远程计算机。 这与远程调试不兼容  

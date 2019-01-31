@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 0f17e96a-2e06-42c9-a877-3e5e670ee0ef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14d52ee800d048ea9973fd6a26bdc0836c58a722
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fa3191533bb28071f4161017e35f91a5a9c4b3e5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839357"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54999257"
 ---
 # <a name="data-debug-interface-access-sdk"></a>数据（调试界面访问 SDK）
 所有变量，如参数、 局部变量、 全局变量和类成员，由都标识`SymTagData`符号。 常量值 (`LocIsConstant`) 还可以标识与此类型。  

@@ -1,14 +1,9 @@
 ---
 title: “选项”->“文本编辑器”->“所有语言”| Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.General
@@ -24,13 +19,13 @@ ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 987e0339f2d27405c81ce05b6a30181a1469be7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0abb0a38e63231dfddea391b3a63a73ae982bd24
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884168"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802553"
 ---
 # <a name="options-text-editor-all-languages"></a>选项、文本编辑器、所有语言
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49884168"
  当在“常规”选项页上为某些编程语言选择了一个选项，而没有为其他编程语言选择该选项时，会显示一个灰色复选标记。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="statement-completion"></a>语句结束  
  自动列出成员  
@@ -105,6 +100,3 @@ ms.locfileid: "49884168"
  [“选项”->“文本编辑器”->“所有语言”->“制表符”](../../ide/reference/options-text-editor-all-languages-tabs.md)   
  [“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)   
  [使用 IntelliSense](../../ide/using-intellisense.md)
-
-
-

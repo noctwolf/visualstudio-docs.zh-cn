@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 511a0697-c68a-4988-9e29-8d0166ca044a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f16206b4c537c141bd90615580934c4481ddf06
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 817e6f31d9282caf77c9f403c7e5555075726d2d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880658"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54943794"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中的快照调试疑难解答和已知问题
 
@@ -85,5 +85,5 @@ ms.locfileid: "53880658"
 ## <a name="see-also"></a>请参阅
 
 [在 Visual Studio 中进行调试](../debugger/index.md)  
-[调试实时 ASP.NET 应用中使用快照调试程序](../debugger/debug-live-azure-applications.md)  
+[使用快照调试器调试实时 ASP.NET 应用](../debugger/debug-live-azure-applications.md)  
 [快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)  

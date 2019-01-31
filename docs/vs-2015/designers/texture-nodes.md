@@ -1,25 +1,20 @@
 ---
 title: 纹理节点 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bda107323b24940ed8cab18a61f9e491f8392f53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e43329cb15eaf41ccb8859521bd45eff6f749c10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252351"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779835"
 ---
 # <a name="texture-nodes"></a>纹理节点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ ms.locfileid: "49252351"
 |**纹理维度**|输出 2-D 纹理贴图的宽度和高度。<br /><br /> 可以使用纹理维度考虑着色器中纹理的宽度和高度。<br /><br /> **输出：**<br /><br /> `Output`: `float2`<br /> 纹理的宽度和高度，表示为一个矢量。 宽度存储在矢量的第一个元素中。 高度存储在第二个元素中。|**纹理**<br /> 与纹理维度关联的纹理寄存器。|  
 |**纹素增量**|输出 2-D 纹理贴图纹素之间的增量（距离）。<br /><br /> 可以使用纹素增量对着色器中的相邻纹素值进行采样。<br /><br /> **输出：**<br /><br /> `Output`: `float2`<br /> （沿对角线正方向移动的）从某纹素到下一纹素的增量（距离），表示为标准化纹理空间中的矢量。 可以通过有选择地忽略或否定增量的 U 或 V 坐标，获取所有相邻纹素的位置。|**纹理**<br /> 与纹素增量关联的纹理寄存器。|  
 |**纹理样本**|从 2-D 纹理贴图中采集指定坐标处的颜色样本。<br /><br /> 可使用纹理贴图提供对象图面的颜色细节。<br /><br /> **输入：**<br /><br /> `UV`: `float2`<br /> 采样位置的坐标。<br /><br /> **输出：**<br /><br /> `Output`: `float4`<br /> 颜色样本。|**纹理**<br /> 与采样器关联的纹理寄存器。|
-
-
-

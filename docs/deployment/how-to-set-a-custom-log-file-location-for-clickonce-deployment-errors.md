@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 77424414-7f0e-4b99-94bb-ea130de92d09
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d505fe3a16ace54ae228f7491e5bcf1fc36d67f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0d1b17baf8736031dd4bde1b62a5e9c3684d0fb4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934977"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015311"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>如何：设置 ClickOnce 部署错误的自定义日志文件位置
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 维护所有部署的激活日志文件。 这些日志记录与安装和初始化相关的任何错误[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。 默认情况下，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]创建一个日志文件的每个部署激活。 它会将这些日志文件存储在临时 Internet 文件文件夹中。 发生了激活失败，并在用户单击时，向用户显示的日志文件的部署**详细信息**中出现的错误对话框。  

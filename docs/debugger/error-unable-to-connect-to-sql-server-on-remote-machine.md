@@ -12,15 +12,15 @@ dev_langs:
 - SQL
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9e2e7c489ace9436f101259cccac144e1a933e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a737c9b993a6ffa523cbaa19929821f7d3c2acaf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858521"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023166"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>错误：无法连接到远程计算机上的 SQL Server
 无法连接到远程计算机上 SQL Server*名称*。 访问被拒绝。 请验证远程计算机上是否安装了远程调试器。 如果远程计算机不在域内，或者以本地帐户的身份运行 Visual Studio，那么远程计算机必须拥有与本地帐户的用户名和密码相同的帐户。  

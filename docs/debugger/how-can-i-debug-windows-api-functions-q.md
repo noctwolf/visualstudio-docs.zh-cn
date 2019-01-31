@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 7c126f57-62ab-4d94-9805-632d696ba1f0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10c4804d4d53c22281c11d8afc464cf2ac3732
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b177ec2664014fa547908aa18e19f605a83a8282
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861509"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931877"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>如何调试 Windows API 函数？
 如果要调试加载了 NT 符号的 Windows API 函数，必须执行以下步骤。  
@@ -43,5 +43,5 @@ ms.locfileid: "53861509"
      若要获取修饰的名，请参阅[查看修饰名](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0)。  
   
 ## <a name="see-also"></a>请参阅  
- [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)   
+ [调试本机代码常见问题](../debugger/debugging-native-code-faqs.md)   
  [调试本机代码](../debugger/debugging-native-code.md)

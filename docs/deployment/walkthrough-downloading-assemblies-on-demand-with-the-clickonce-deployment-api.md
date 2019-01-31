@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f600462d1862b9f50e12c5849d9d7175310a4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21b38a952b018420064fc73c2bac5b0f397a18a2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989210"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54916646"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：下载使用 ClickOnce 部署 API 按需程序集
 默认情况下，所有程序集包含在[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]首次运行该应用程序时下载应用程序。 但是，您可能使用的一小组用户应用程序的部分。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将应用程序中的某些程序集标记为“可选”，以及如何在公共语言运行时 (CLR) 需要它们时使用 <xref:System.Deployment.Application> 命名空间中的类下载它们。  

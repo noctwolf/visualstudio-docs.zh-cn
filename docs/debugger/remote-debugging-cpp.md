@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdbcefe1e0878ef6bf2520edb90ce904e414f211
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 88deb9957766b4e4e0802a1eded352a6ccb04f98
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269756"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231566"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>远程调试 Visual Studio 中的 Visual c + + 项目
 若要调试在另一台计算机上的 Visual Studio 应用程序、 安装和将在其中部署您的应用程序的计算机上运行远程工具，将项目配置为从 Visual Studio 中，连接到远程计算机然后部署并运行你的应用。
@@ -96,9 +96,11 @@ ms.locfileid: "54269756"
 11. 在 Visual Studio 计算机上，你应看到在断点处已停止执行。  
   
     > [!TIP]
-    >  或者，你可以采用单独的步骤部署文件。 在“解决方案资源管理器”中，右键单击“mymfc”节点，然后选择“部署”。  
+    > 或者，你可以采用单独的步骤部署文件。 在“解决方案资源管理器”中，右键单击“mymfc”节点，然后选择“部署”。
   
-    如果具有需要由应用程序使用的非代码文件，则需要将其包含在 Visual Studio 项目中。 为其他文件创建项目文件夹（在“解决方案资源管理器”中，单击“添加”>“新建文件夹”）。然后将文件添加到文件夹（在“解决方案资源管理器”，单击“添加”>“现有项目”，然后选择文件）。 在每个文件的“属性”页中，将“复制到输出目录”设置为“始终复制”。
+    如果具有所需的应用程序的非代码文件，则可以指定在**其他文件复制到部署**上**远程 Windows 调试器**页。
+
+    或者，可以在项目中包括的文件，并设置**内容**属性设置为**是**中**属性**页为每个文件。 这些文件复制到**部署目录**中所指定**远程 Windows 调试器**页。 此外可以更改**项类型**到**复制文件**，如果您需要的文件复制到的子文件夹指定其他属性那里**部署目录**。
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>使用远程符号设置调试 
 

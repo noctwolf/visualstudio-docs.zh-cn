@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76ceb25180b8c0e15603251901f1c9281ce6893c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6451b45f8bb98232ea0c3a1b3cb96d37cf303ccc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929583"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010384"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 的辅助功能提示和技巧
 
@@ -27,7 +27,7 @@ ms.locfileid: "53929583"
 Visual Studio 具有内置辅助功能，这些辅助功能与屏幕阅读器以及其他辅助技术兼容。 本主题列出了常见快捷键组合（通过这些快捷键，可以仅使用键盘执行任务），并且介绍了有关使用高对比度主题改进可见性的信息。 同时，它显示了如何使用注释显示有关代码的实用信息以及如何设置生成和断点事件的声音提示。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 辅助功能](/visualstudio/mac/accessibility)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 辅助功能](/visualstudio/mac/accessibility)。
 
 ## <a name="save-your-ide-settings"></a>保存 IDE 设置
 

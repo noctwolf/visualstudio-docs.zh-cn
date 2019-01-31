@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7185d9246eb66b1e6773caea8cf20441d463c1ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26f258290b457493a9e17f4bcdab3ffe06160d74
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858405"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55025926"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Point、Bilinear、Trilinear 和 Anisotropic 纹理过滤变量
 重写相应纹理取样器上的筛选模式。  

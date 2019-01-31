@@ -1,14 +1,9 @@
 ---
 title: 分析性能工具数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance, viewing data
 - performance reports, performance data
@@ -21,13 +16,13 @@ ms.assetid: ae3e198a-b994-4ecb-a633-dec98bd4fd45
 caps.latest.revision: 46
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 57d223cfe71db947a33545d27b6a75947db6b016
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a141e6f02c8457adaee45ddc6905470a747123d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780446"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794299"
 ---
 # <a name="analyzing-performance-tools-data"></a>分析性能工具数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +34,8 @@ ms.locfileid: "51780446"
 |任务|相关内容|  
 |----------|---------------------|  
 |**使用性能规则快速确定问题：** 分析工具性能规则可确定常见问题，帮助轻松导航到包含该问题的源代码。 详细的帮助主题通常可提供解决方案建议。|-   [使用性能规则对数据进行分析](../profiling/using-performance-rules-to-analyze-data.md)|  
-|**了解报告视图详细信息：** 分析工具报告视图为分析运行的进程、线程、模块和函数提供聚合的性能数据。 出现的数据取决于收集数据所用的分析方法。|-   [性能报告视图](../profiling/performance-report-views.md)|  
-|**配置、排序和筛选报告视图：** 可指定要在报表中显示的数据列并对其排序，对报表行进行排序，并筛选数据，使其仅包含指定的时间段。|-   [自定义性能工具报告视图](../profiling/customizing-performance-tools-report-views.md)|  
+|**了解报表视图详细信息：** 分析工具报表视图为分析运行的进程、线程、模块和函数提供聚合的性能数据。 出现的数据取决于收集数据所用的分析方法。|-   [性能报告视图](../profiling/performance-report-views.md)|  
+|**配置、排序和筛选报表视图：** 可指定要在报表中显示的数据列并对其排序，对报表行进行排序，并筛选数据，使其仅包含指定的时间段。|-   [自定义性能工具报告视图](../profiling/customizing-performance-tools-report-views.md)|  
   
 ## <a name="related-sections"></a>相关章节  
  [比较性能数据文件](../profiling/comparing-performance-data-files.md)  
@@ -49,6 +44,3 @@ ms.locfileid: "51780446"
   
 ## <a name="see-also"></a>请参阅  
  [性能资源管理器](../profiling/performance-explorer.md)
-
-
-

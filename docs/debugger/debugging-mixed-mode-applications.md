@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 60e34477-ae4e-48c7-9093-3e37f72e1bc3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e489a57bddec04636e03cfe75b456b0220bf37d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b8f0f2f09d0ee0741fea4af2477ce0e95e00db0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858756"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998451"
 ---
 # <a name="debugging-mixed-mode-applications"></a>调试混合模式应用程序
 混合模式应用程序是任何组合了本机代码 (C++) 与托管代码（在公共语言运行时上运行的 Visual Basic、Visual C# 或 C++）的应用程序。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试混合模式应用程序基本上是透明的；它与调试单模式应用程序没有太大区别。 但有几个特殊的注意事项。

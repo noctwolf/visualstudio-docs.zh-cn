@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 616a426192b15353b2d30a8f910619f5333cb5fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 48babdee829eec50a8b8582e5b48e78b691f1073
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913512"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979044"
 ---
 # <a name="threads-view"></a>线程视图
 线程视图是在系统上的 windows 与关联的所有线程的平面列表。 显示线程 ID 和每个线程的模块名称。 进程不包括在内，但可以轻松地找到拥有所选的线程的进程。  
@@ -45,7 +45,7 @@ ms.locfileid: "53913512"
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。  
+ 介绍 Spy + + 工具，并说明如何使用它。  
   
  [“线程搜索”对话框](../debugger/thread-search-dialog-box.md)  
  用于查找特定线程在线程视图中的节点。  

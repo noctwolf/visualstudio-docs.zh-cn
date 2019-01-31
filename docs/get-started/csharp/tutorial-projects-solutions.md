@@ -7,17 +7,17 @@ ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba7bb7452fd86da4ab449c61c41dc27c865070c3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 3ebc53148e40be1285c554526743c4950465c3a5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738986"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983399"
 ---
 # <a name="learn-about-projects-and-solutions-using-c"></a>通过 C# 了解项目和解决方案
 
@@ -33,7 +33,7 @@ ms.locfileid: "53738986"
 
 ## <a name="solutions-and-projects"></a>解决方案和项目
 
-尽管其名称如此，但解决方案并不是“答案”。 解决方案仅仅是 Visual Studio 用来组织一个或多个相关项目的容器。 在 Visual Studio 中打开解决方案时，它会自动加载包含的所有项目。
+尽管其名称如此，但解决方案并不是“答案”。 解决方案仅仅是 Visual Studio 用来组织一个或多个相关项目的容器。 在 Visual Studio 中打开解决方案时，它会自动加载其中包含的所有项目。
 
 ### <a name="create-a-solution"></a>创建解决方案
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d4736cc8-8961-4089-be9e-d5190ce8353c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ca95259ad8f31822e235c470e437daf0adaadc3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1822ec74903c8baa75ce437b0115cecdfb911c3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865474"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026940"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中的分析工具的新增功能
 
@@ -24,7 +24,7 @@ ms.locfileid: "53865474"
 
 有关其他信息，请参阅 [[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 的发行说明](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag)。
 
-工具中新增“摘要”选项卡，可帮助你聚焦性能分析的关键领域。 此选项卡显示已发生多少个事件，可以拍摄堆的快照，以及快速启用 CPU 使用情况数据收集。 此视图显示任何 [Application Insights](https://azure.microsoft.com/en-us/documentation/articles/app-insights-visual-studio/) 或 [UI 分析](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis)事件。 此外，对于 Visual Studio Enterprise，此视图还显示 IntelliTrace 事件。
+工具中新增“摘要”选项卡，可帮助你聚焦性能分析的关键领域。 此选项卡显示已发生多少个事件，可以拍摄堆的快照，以及快速启用 CPU 使用情况数据收集。 此视图显示任何 [Application Insights](/azure/azure-monitor/app/visual-studio) 或 [UI 分析](/visualstudio/releasenotes/vs2017-relnotes#UIAnalysis)事件。 此外，对于 Visual Studio Enterprise，此视图还显示 IntelliTrace 事件。
 
 ![诊断工具“摘要”选项卡](../profiling/media/DiagToolsSummaryTab-2.png "DiagToolsSummaryTab")
 

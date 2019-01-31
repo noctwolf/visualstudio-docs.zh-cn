@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: abab6d34-c3c2-45c1-a8b6-43c7d3131e7a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2f0ba5d49e0c8a02755bfc9d23d486dcf7f2943
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: b19bba65ebfb8ecec778f33211cfb127acc612bc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154345"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008681"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行时最少的用户交互。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 用于发布和更新应用程序使用 ClickOnce 技术部署，如果您已开发您的项目与 Visual Basic 和 Visual 提供完全支持C#。 有关部署 Visual c + + 应用程序的信息，请参阅[Visual c + + 应用程序的 ClickOnce 部署](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。  

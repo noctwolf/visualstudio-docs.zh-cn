@@ -1,14 +1,9 @@
 ---
 title: .NET 内存“分配”视图 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73a2be1314b01a0a7de73f71794bc94b18f0e851
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760347"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54798802"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 内存分配视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "51760347"
   
 -   若要显示最活跃的路径，请右键单击类型或函数，再单击“展开热路径”。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**名称**|已分配类型或函数的名称。|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
@@ -64,6 +59,3 @@ ms.locfileid: "51760347"
 |**非独占字节数百分比**|-   对于函数，是在分析运行期间，该函数分配的所有父类型非独占分配内存的百分比。<br />-   对于类型，是在分析运行期间，为该类型实例分配的所有内存的百分比。|  
 |**独占字节数**|-   对于函数，是该函数为父类型对象分配的内存字节数。 此数目不包括由其子函数分配的内存。<br />-   对于类型，是在分析运行期间，为该类型实例分配的总字节数。|  
 |**独占字节数百分比**|-   对于函数，是在分析运行期间，该函数分配的所有父类型独占分配内存的百分比。<br />-   对于类型，是在分析运行期间，为该类型实例分配的所有内存的百分比。|
-
-
-

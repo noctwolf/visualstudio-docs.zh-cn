@@ -1,14 +1,9 @@
 ---
 title: “层交互”视图 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.tierinteraction
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: bb4fb21c-f3f7-473a-8b5e-442da4c2c445
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7b69144569738dc09368453faef13f5f38428df2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bd60c855bacaf62beec47c9f977d0ab220ce7ca6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726158"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791929"
 ---
 # <a name="tier-interactions-view"></a>“层交互”视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "51726158"
   
 ## <a name="master-pane"></a>主窗格  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**名称**|-   对于顶层行，是分析的进程或网页的名称。<br />-   对于数据库连接行，是承载数据库的服务器的名称。|  
 |**数据库**|数据库的名称（仅限数据库连接行）。|  
@@ -56,7 +51,7 @@ ms.locfileid: "51726158"
   
 ## <a name="database-connection-details-pane"></a>“数据库连接详细信息”窗格  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**命令文本**|请求的 SQL 查询。|  
 |**查询计数**|运行查询的次数。|  
@@ -64,6 +59,3 @@ ms.locfileid: "51726158"
 |**最大运行时间**|执行查询的实例所用的最大时间。|  
 |**最小运行时间**|执行查询的实例所用的最小时间。|  
 |**平均运行时间**|执行查询的实例所用的平均时间。|
-
-
-

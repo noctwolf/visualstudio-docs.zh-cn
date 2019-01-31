@@ -1,14 +1,9 @@
 ---
 title: 使用 IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
@@ -29,18 +24,18 @@ ms.assetid: 9fdb489b-8b46-4b92-9ccc-c8f8cc184081
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 586a0b31166f3b7696865e54f7d2df9c415315f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197181"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758823"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-IntelliSense 是许多功能的总称：列出成员、参数信息、快速信息和完成单词。 使用这些功能，可以详细了解使用的代码、跟踪键入的参数，还可以通过轻敲几个按键来添加属性和方法调用。  
+IntelliSense 是一系列功能的常规术语：成员列表、参数信息、快速信息和完成单词。 使用这些功能，可以详细了解使用的代码、跟踪键入的参数，还可以通过轻敲几个按键来添加属性和方法调用。  
   
  IntelliSense 的许多方面只支持特定语言。 有关不同语言的 IntelliSense 的详细信息，请参阅“另请参阅”下方列出的主题。  
   
@@ -111,6 +106,3 @@ MessageBox( hWnd, "String literal|") )
  [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)   
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [提供 XML 代码注释](../ide/supplying-xml-code-comments.md)
-
-
-

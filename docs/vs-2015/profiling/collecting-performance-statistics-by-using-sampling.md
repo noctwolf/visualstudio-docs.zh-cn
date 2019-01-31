@@ -1,14 +1,9 @@
 ---
 title: 使用采样收集性能统计信息 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,sampling
 - sampling profiling method
@@ -16,13 +11,13 @@ ms.assetid: 8e36361b-bb3d-40c6-b286-0e68c0ecb915
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a67c6542c2b838de7e80ee23588847cc15c15292
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a557691d06c41fc3d8919be10ff22038975686a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755265"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777100"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>使用采样收集性能统计信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,6 +55,3 @@ ms.locfileid: "51755265"
 |在“Windows 事件”页上，指定一个或多个与采样数据一同收集的“Windows 事件跟踪 (ETW)”事件。|-   [如何：收集 Windows 事件跟踪 (ETW) 数据](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|  
 |在“Windows 计数器”  页上，指定要作为标记添加到分析数据的一个或多个操作系统性能计数器。|-   [如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)|  
 |如果应用程序模块使用多个版本，请在**高级**页上指定要分析的 .NET Framework 运行时的版本。 默认情况下会分析加载的第一个版本。|-   [如何：指定 .NET Framework 运行时](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
-
-
-

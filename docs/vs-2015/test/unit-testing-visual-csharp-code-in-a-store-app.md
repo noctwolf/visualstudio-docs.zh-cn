@@ -1,25 +1,20 @@
 ---
 title: 对应用商店应用中的 Visual C# 代码进行单元测试 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
 caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
-manager: robinr
-ms.openlocfilehash: ae41a5a646860526cbc5b3f6e3c04bfbf7612e2b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6128ca2638f98600c9bfb17e8388cf0a663040a8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901549"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766258"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>对应用商店应用中的 Visual C# 代码进行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -371,6 +366,3 @@ ms.locfileid: "49901549"
   
 > [!NOTE]
 >  若要向测试类添加帮助器方法，请勿向该方法添加 `[TestMethod]` 特性。 测试资源管理器未注册要运行的方法。
-
-
-

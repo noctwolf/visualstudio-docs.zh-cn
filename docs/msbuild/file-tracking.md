@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: e6c66ac0-3464-451f-9192-3b98dca21b4a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b99934091ed617aa6c6bf2163391aa0d79c5414
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 878d4d7e56c51d8a41a0e3cf3e78d6c83ed5d0b5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861661"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55027667"
 ---
 # <a name="file-tracking"></a>文件跟踪
 文件跟踪记录对某个进程及其子进程的 Windows 文件系统的调用。 通过调用下列函数，程序会控制打开和关闭此日志记录的时间，并指定要使用的日志文件。  

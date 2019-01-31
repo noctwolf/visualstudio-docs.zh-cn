@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: f21c197e-565d-4e3f-9b27-4c018c9b87fc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef8beac3b2b9c837cb2e5ee18743c9c640aacc08
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7b0e70e559dc75abd6b8de1b325b9ac300055792
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966570"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039262"
 ---
 # <a name="client-block-hook-functions"></a>客户端块挂钩函数
 如果想要验证或报告存储在 `_CLIENT_BLOCK` 块中的数据的内容，可以专为此目的编写函数。 如同 CRTDBG.H 中所定义的，所编写的函数必须有与下面类似的原型：  

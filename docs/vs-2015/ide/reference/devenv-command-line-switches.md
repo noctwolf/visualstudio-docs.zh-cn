@@ -1,14 +1,9 @@
 ---
 title: Devenv 命令行开关 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
 - builds [Team System], command-line
@@ -25,13 +20,13 @@ ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ee1596cf59fb4ba9b21772cdabc0c875ef8779a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215029"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754966"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令行开关
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -74,7 +69,7 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
 ## <a name="devenv-switches"></a>Devenv 开关  
  使用下列命令行开关显示 IDE 并执行描述的任务。  
   
-|命令行开关|描述|  
+|命令行开关|说明|  
 |-------------------------|-----------------|  
 |[/Command (devenv.exe)](../../ide/reference/command-devenv-exe.md)|启动 IDE 并执行指定的命令。|  
 |[/DebugExe (devenv.exe)](../../ide/reference/debugexe-devenv-exe.md)|在调试器的控制下加载 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 可执行文件。 此开关对 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 或 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 可执行文件不可用。 有关详细信息，请参阅[自动启动调试器中的进程](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。|  
@@ -91,7 +86,7 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
   
  使用下列命令行开关执行描述的任务。 这些命令行开关不显示 IDE。  
   
-|命令行开关|描述|  
+|命令行开关|说明|  
 |-------------------------|-----------------|  
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|在“命令提示符”窗口中显示 devenv 开关的相关帮助信息。<br /><br /> **Devenv /?**|  
 |[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|根据指定解决方案的配置，生成指定的解决方案或项目。<br /><br /> **Devenv myproj.csproj /build**|  
@@ -109,6 +104,3 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
   
 ## <a name="see-also"></a>请参阅  
  [“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

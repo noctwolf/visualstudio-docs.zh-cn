@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 04b104d0-0bd3-4ccb-b164-1de92d234487
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44ee28c0e495b0b3868356d6e5a10890937f70a0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee9d478aa328337d3a2b08c74fcbbf7166580962
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828350"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018340"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 应用程序的代码访问安全性
 ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约束。 因此，了解代码访问安全性的含义并且相应地编写 ClickOnce 应用程序是十分重要的。  
@@ -50,13 +50,13 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
 ## <a name="configure-security-permissions"></a>配置安全权限  
  你始终应该配置 ClickOnce 应用程序，以请求适当的区域来限制代码访问安全性权限。 可以在 **“项目设计器”** 的 **“安全”** 页上配置安全性权限。  
   
- **“项目设计器”** 中的 **“安全”** 页包含 **“启用 ClickOnce 安全设置”** 复选框。 选中此复选框后，安全权限请求会添加到应用程序的部署清单。 安装时，如果请求的权限超出从中部署该应用程序的区域的默认权限，则会提示用户授予权限。 有关更多信息，请参见[如何：启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)。  
+ **“项目设计器”** 中的 **“安全”** 页包含 **“启用 ClickOnce 安全设置”** 复选框。 选中此复选框后，安全权限请求会添加到应用程序的部署清单。 安装时，如果请求的权限超出从中部署该应用程序的区域的默认权限，则会提示用户授予权限。 有关详细信息，请参阅[如何：启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)。  
   
  从不同位置部署的应用程序不经提示就会授予不同级别的权限。 例如，从 Internet 部署应用程序时，它会获得高度受限的权限集。 从本地 Intranet 安装时，它会获得更多权限，从 CD-ROM 安装时，它会获得完全信任权限。  
   
- 作为配置权限的起始点，你可以从 **“安全”** 页上的 **“区域”** 列表选择一个安全区域。 如果可能将从多个区域部署你的应用程序，请选择具有最少权限的区域。 有关更多信息，请参见[如何：设置 ClickOnce 应用程序的安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。  
+ 作为配置权限的起始点，你可以从 **“安全”** 页上的 **“区域”** 列表选择一个安全区域。 如果可能将从多个区域部署你的应用程序，请选择具有最少权限的区域。 有关详细信息，请参阅[如何：设置 ClickOnce 应用程序的安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。  
   
- 可以设置的属性随着权限集变化；并非所有权限集都具有可配置属性。 有关你应用程序可以请求的权限的完整列表的详细信息，请参阅 <xref:System.Security.Permissions>。 有关如何自定义区域设置权限的详细信息，请参阅[如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)  
+ 可以设置的属性随着权限集变化；并非所有权限集都具有可配置属性。 有关你应用程序可以请求的权限的完整列表的详细信息，请参阅 <xref:System.Security.Permissions>。 有关如何自定义区域设置权限的详细信息，请参阅[如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
   
 ## <a name="debug-an-application-that-has-restricted-permissions"></a>调试具有受限权限的应用程序  
  作为开发人员，很可能以完全信任权限运行你的开发计算机。 因此，调试应用程序时你不会看到与用户在使用受限权限运行应用程序时可能看到的安全性异常相同的安全性异常。  
@@ -67,7 +67,7 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
   
  此外，在编写代码时，代码编辑器中的 IntelliSense 功能将禁用未包含在已配置安全权限中的任意成员。  
   
- 有关更多信息，请参见[如何：使用受限权限调试 ClickOnce 应用程序](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。  
+ 有关详细信息，请参阅[如何：使用受限权限调试 ClickOnce 应用程序](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。  
   
 ## <a name="security-permissions-for-browser-hosted-applications"></a>浏览器托管的应用程序的安全权限  
  Visual Studio 为 Windows Presentation Foundation (WPF) 应用程序提供了以下项目类型：  

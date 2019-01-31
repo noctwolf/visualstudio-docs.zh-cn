@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 6ccb1269-d55f-49c4-920d-baedf7de2888
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad9c458891a13a28d9b13ec9674a4a9e829b95a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ba089ace95308ddcf6067920da8484064e797ecd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955274"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55015103"
 ---
 # <a name="graphics-log-document"></a>图形日志文档
 图形日志文档是对你的应用在图形诊断会话下运行时发生的图形事件的记录。 在记录后，你可以在 Visual Studio 图形分析器中检查日志，以诊断呈现和性能问题。  
@@ -42,7 +42,7 @@ ms.locfileid: "53955274"
 ## <a name="playback-machine"></a>播放计算机  
  在“帧列表”的右上角还会显示“播放计算机”。 播放计算机是指用于在之后的图形诊断会话期间，播放图形日志文件中的图形事件的计算机或设备。 通过使用另一台设备而非你的开发计算机来播放捕获的事件，你可以更加准确地重现发生问题所在的执行环境，例如，你可以使用具有不同于开发计算机使用的图形硬件或驱动程序的计算机或其他种类的设备（例如基于 ARM 的 Windows RT 平板电脑或 Windows Phone 设备）。  
 
- 有关如何指定播放计算机的信息，请参阅[如何：更改图形诊断播放机](how-to-change-the-graphics-diagnostics-playback-machine.md)  
+ 有关如何指定播放计算机的信息，请参阅[如何：更改图形诊断播放计算机](how-to-change-the-graphics-diagnostics-playback-machine.md)。  
 
 ## <a name="graphics-log-summary-information"></a>图形日志摘要信息  
  当图形日志文件是活动文档时，“属性”窗口将显示有关托管图形诊断捕获会话的环境的信息。 将显示以下几种类别的信息。  

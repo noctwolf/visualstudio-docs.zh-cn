@@ -1,27 +1,22 @@
 ---
 title: StartProfile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - StartProfile
 ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aff331d138a3cc61ef2a30adf07bb76157f25228
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 994cde18cfe304add796bffa74d2a327e1c63f45
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732722"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774722"
 ---
 # <a name="startprofile"></a>StartProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
   
  指示性能数据集合可应用到的分析级别。 以下 PROFILE_CONTROL_LEVEL 枚举器可用于指示性能数据集合可应用到的三个级别之一：  
   
-|枚举器|描述|  
+|枚举器|说明|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|全局级别设置影响分析运行中的所有进程和线程。|  
 |PROFILE_PROCESSLEVEL|进程级别设置影响指定进程中的所有线程。|  
@@ -54,7 +49,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="property-valuereturn-value"></a>属性值/返回值  
  函数通过使用 **PROFILE_COMMAND_STATUS** 枚举来指示成功或失败。 返回值可以是下列值之一：  
   
-|枚举器|描述|  
+|枚举器|说明|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|分析元素 ID 不存在。|  
 |PROFILE_ERROR_LEVEL_NOEXIST|指定的分析级别不存在。|  
@@ -116,6 +111,3 @@ void ExerciseStartProfile()
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 探查器 API 参考（本机）](../profiling/visual-studio-profiler-api-reference-native.md)
-
-
-

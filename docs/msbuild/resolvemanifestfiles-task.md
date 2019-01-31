@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e1e14f67-9b69-433f-94d4-a783a68676b2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 319d1e5003cf6a46bc7590b3dfcb5d68a1cda767
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4e3d5fd327e6ef9db5029697d502d27574a8a8f7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910709"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55043214"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles 任务
 在生成过程中，将以下各项解析为文件以便生成清单：生成项、依赖项、附属项、内容、调试符号和文档。  

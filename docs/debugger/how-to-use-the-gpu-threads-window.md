@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c647c502-a9f0-48e0-a430-976744a5fa51
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2ee235f5daf0c18bd30fcf804c0672427dc9624
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 4c246aec092cbaea8d5caf22cb8f204d32533ddb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227338"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952816"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>如何：使用 GPU 线程窗口 （c + +）
 在“GPU 线程”窗口中，可以检查和使用在要调试的应用程序中的 GPU 上运行的线程。 有关在 GPU 运行的应用程序的详细信息，请参阅[c + + AMP 概述](/cpp/parallel/amp/cpp-amp-overview)。  

@@ -5,16 +5,16 @@ ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99dc1c6fefae880d10c1dedd080f9abbceba4d1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3aeddaa1b3589857124e4658c758a52def896acd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961759"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983568"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>如何：打开和关闭复数形式（O/R 设计器）
 默认情况下，当您拖放以 s 或 ies 从结尾的数据库对象**服务器资源管理器**或**数据库资源管理器**拖到[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)、生成的实体类的名称从复数形式更改为单数形式。 这样可以更准确地表示实例化的实体类映射到单个数据记录的事实。 例如，添加`Customers`到表**O/R 设计器**导致一个名为的实体类`Customer`因为该类将仅为一个客户保存数据。

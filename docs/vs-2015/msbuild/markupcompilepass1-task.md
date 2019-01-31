@@ -1,14 +1,9 @@
 ---
 title: MarkupCompilePass1 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 693d6945-fd6f-4698-8f64-9dfcb71052d3
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7db6923b0a729d909e22136bd3994af45dfe1da9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bf6f6b9dbd227dbdf28781fc9ac206ca1d8a91b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189353"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790478"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +34,12 @@ ms.locfileid: "49189353"
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`AllGeneratedFiles`|可选的 **ITaskItem[]** 输出参数。<br /><br /> 包含由 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> 任务生成的文件的完整列表。|  
 |`AlwaysCompileMarkupFilesInSeparateDomain`|可选 **Boolean** 参数。<br /><br /> 指定是否在单独的 <xref:System.AppDomain> 下运行该任务。 如果此参数返回 false，则任务将在与 [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] 相同的 <xref:System.AppDomain> 中运行，且运行速度更快。 如果该参数返回 true，则任务将在独立于 [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] 的另一个 <xref:System.AppDomain> 中运行，且运行速度更慢。|  
 |`ApplicationMarkup`|可选的 **ITaskItem[]** 参数。<br /><br /> 指定应用程序定义 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 文件的名称。|  
-|`AssembliesGeneratedDuringBuild`|可选 **String []** 参数。<br /><br /> 指定在生成过程中对更改的程序集的引用。 例如，[!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] 解决方案可能包含一个引用了另一个项目的已编译输出的项目。 在这种情况下，可以将第二个项目的已编译输出添加到 **AssembliesGeneratedDuringBuild** 参数。<br /><br /> 注意：**AssembliesGeneratedDuringBuild** 参数必须包含对生成解决方案所生成的一组完整程序集的引用。|  
+|`AssembliesGeneratedDuringBuild`|可选 **String []** 参数。<br /><br /> 指定在生成过程中对更改的程序集的引用。 例如，[!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] 解决方案可能包含一个引用了另一个项目的已编译输出的项目。 在这种情况下，可以将第二个项目的已编译输出添加到 **AssembliesGeneratedDuringBuild** 参数。<br /><br /> 注意:“AssembliesGeneratedDuringBuild”参数必须包含对生成解决方案所生成的一组完整程序集的引用。|  
 |`AssemblyName`|必需的 **String** 参数。<br /><br /> 指定为项目生成的程序集的简称。 例如，如果项目生成一个名为 **WinExeAssembly.exe** 的 [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] 可执行文件，则 **AssemblyName** 参数的值为 **WinExeAssembly**。|  
 |`AssemblyPublicKeyToken`|可选 **String** 参数。<br /><br /> 指定程序集的公钥标记。|  
 |`AssemblyVersion`|可选 **String** 参数。<br /><br /> 指定程序集的版本号。|  
@@ -133,6 +128,3 @@ ms.locfileid: "49189353"
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [Building a WPF Application (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) （生成 WPF 应用程序 (WPF)）  
  [WPF XAML Browser Applications Overview](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)（WPF XAML 浏览器应用程序概述）
-
-
-

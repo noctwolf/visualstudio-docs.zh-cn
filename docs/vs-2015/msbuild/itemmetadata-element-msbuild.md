@@ -1,14 +1,9 @@
 ---
 title: ItemMetadata 元素 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: e3db5122-202d-43a9-b2f4-3e0ec4ed3d08
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a505d97e59070062de6cb9027258ef9a7127e588
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6bcc8502d5404308246ac3ece80780e6a0ccadd3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226436"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802954"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "49226436"
   
 ### <a name="attributes"></a>特性  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
 |`Condition`|可选特性。<br /><br /> 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
   
@@ -59,7 +54,7 @@ ms.locfileid: "49226436"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[Item](../msbuild/item-element-msbuild.md)|为生成过程定义输入的用户定义元素。|  
   
@@ -84,6 +79,3 @@ ms.locfileid: "49226436"
 ## <a name="see-also"></a>请参阅  
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)   
  [项](../msbuild/msbuild-items.md)
-
-
-

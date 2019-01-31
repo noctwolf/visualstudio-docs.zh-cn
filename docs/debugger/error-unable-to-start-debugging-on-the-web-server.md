@@ -23,15 +23,15 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 804249700ff813de5a45e44787af4f39d4a82ad2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5bf131634dc673fdeefe61fa2238c35fcc2ed8a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856678"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938449"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>错误：无法在 Web 服务器上启动调试
 
@@ -51,7 +51,7 @@ ms.locfileid: "53856678"
 - [远程服务器返回了错误](#server_error)
 - [无法启动 ASP.NET 调试](#aspnet)
 - [调试器无法连接到远程计算机](#cannot_connect)
-- list[请参见有关常见配置错误的帮助。运行在调试器外的网页，可能会提供进一步的信息。](#see_help)
+- [ 请参见有关常见配置错误的帮助。运行在调试器外的网页，可能会提供进一步的信息。](#see_help)
 
 ## <a name="IISlist"></a> IIS 未列出匹配发布的网站 url
 
@@ -61,7 +61,7 @@ ms.locfileid: "53856678"
 
 ## <a name="web_server_config"></a> Web 服务器配置不正确
 
-- 请参阅[错误：Web 服务器配置不正确](../debugger/error-the-web-server-is-not-configured-correctly.md)
+- 请参阅[错误：](../debugger/error-the-web-server-is-not-configured-correctly.md) Web 服务器配置不正确
 
 ## <a name="unabletoconnect"></a> 无法连接到 web 服务器
 
@@ -127,7 +127,7 @@ ms.locfileid: "53856678"
 
 * 请确保在 IIS 上安装正确版本的 ASP.NET。
 
-    IIS 中的ASP.NET 与 Visual Studio 项目的版本不匹配可能会导致此问题。 你可能需要在 web.config 中设置的 framework 版本。若要在 IIS 上安装 ASP.NET，请使用[Web 平台安装程序 (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)。 另请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)或为 ASP.NET Core [使用 IIS 的 Windows 上的主机](https://docs.asp.net/en/latest/publishing/iis.html)。
+    IIS 中的ASP.NET 与 Visual Studio 项目的版本不匹配可能会导致此问题。 您可能需要在 web.config 中设置的 framework 版本。若要在 IIS 上安装 ASP.NET，请使用[Web 平台安装程序 (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)。 另请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)或为 ASP.NET Core [使用 IIS 的 Windows 上的主机](https://docs.asp.net/en/latest/publishing/iis.html)。
   
 * 如果只使用 IP 地址，则解决身份验证错误
 

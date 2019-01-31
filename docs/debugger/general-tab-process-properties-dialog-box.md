@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 86f4d61d-a594-4aac-8960-c5279b4a10fd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52822d3cc503c948c7c1fdc320d850d9e1f84ec6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 41667abc250bc2b2ffc869b714fafbcae8f21297
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927043"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54931955"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>“进程属性”对话框 ->“常规”选项卡
 使用**常规**选项卡以找出特定过程的详细信息。 若要显示[进程属性对话框](../debugger/process-properties-dialog-box.md)，将焦点移至[进程视图](../debugger/processes-view.md)窗口。 在树中，选择任何进程节点，然后选择**属性**从**视图**菜单。  
   
- 以下设置位于**常规**选项卡：  
+ “常规”选项卡中有以下可用设置：   
   
 |条目|说明|  
 |-----------|-----------------|  

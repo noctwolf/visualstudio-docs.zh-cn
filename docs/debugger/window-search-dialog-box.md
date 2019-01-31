@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a57e0bacdbe12b889879eaca417127953f90beb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8dc95b38e755ec9d8e1b14be3c1045d5be0f0bd4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826265"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951490"
 ---
 # <a name="window-search-dialog-box"></a>“窗口搜索”对话框
 使用此对话框来查找和选择的节点中的特定窗口[Windows 视图](../debugger/windows-view.md)。 若要显示此对话框中，将焦点移到 Windows 视图窗口中。 然后选择**查找窗口**从**搜索**菜单。  
@@ -53,7 +53,7 @@ ms.locfileid: "53826265"
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。  
+ 介绍 Spy + + 工具，并说明如何使用它。  
   
  [“查找窗口”对话框](../debugger/find-window-dialog-box.md)  
  用于查看的属性或特定的窗口中的消息。  

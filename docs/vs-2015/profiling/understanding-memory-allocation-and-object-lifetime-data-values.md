@@ -1,14 +1,9 @@
 ---
 title: 了解内存分配数据值和对象生存期数据值 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method
 - Profiling Tools, .NET memory method
@@ -16,13 +11,13 @@ ms.assetid: a22445b3-39a6-4919-8506-2b5b0ceaf77e
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3df4fe3189078da07f282b6f323ca697c763a08b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9ddfc891126e5018757f50a1a04378793fe83c53
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793719"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763150"
 ---
 # <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>了解内存分配数据值和对象生存期数据值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,6 +43,3 @@ ms.locfileid: "51793719"
  .NET Framework 的垃圾回收器会为应用程序管理内存的分配和释放。 为优化垃圾回收器的性能，将托管堆分为三代：第 0 代、第 1 代和第 2 代。 运行时的垃圾回收器将新对象存储在第 0 代中。 未回收的对象将会升级并存储在第 1 代和第 2 代中。  
   
  垃圾回收器通过释放整个代的对象来回收内存。 对于分析的应用程序创建的对象，“对象生存期”视图显示对象的数量和大小以及回收它们时的代。
-
-
-

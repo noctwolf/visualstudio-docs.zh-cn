@@ -1,24 +1,20 @@
 ---
 title: 工作效率提示 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c56b2a2cd49d164fa55eae472eaa11942bead262
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 096de590d49f5d09614bb9149ae6e5218f2ab7ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785682"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio 的工作效率提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,7 +115,7 @@ ms.locfileid: "53928849"
 
 -   **查找对话框、菜单命令和选项**。 在[“快速启动”->“环境”->“选项”对话框](../ide/reference/quick-launch-environment-options-dialog-box.md)中，输入要查找的项的关键字或短语。 例如，如果输入 `new project`，则会出现以下选项：
 
-     图 3.快速启动结果列表 `new project`
+     图 3：快速启动结果列表 `new project`
 
      ![“新建项目”的快速启动结果](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
@@ -155,11 +151,11 @@ ms.locfileid: "53928849"
 
      若要固定某个文件，请选择此文件的选项卡，然后选择“切换固定状态”按钮。
 
--   **将文档和窗口移到其他监视器**。 如果您开发应用软件时使用多个监视器，则可以将编辑器中打开的文件移到另一个监视器，从而更轻松地处理应用程序的各个部分。 还可以将工具窗口（如调试器窗口）移至另一个监视器，并将文档和工具窗口以选项卡形式停靠在一起以创建“竹筏”。 有关更多信息，请参见[如何：排列和停靠窗口](../misc/how-to-arrange-and-dock-windows.md)。
+-   **将文档和窗口移到其他监视器**。 如果您开发应用软件时使用多个监视器，则可以将编辑器中打开的文件移到另一个监视器，从而更轻松地处理应用程序的各个部分。 还可以将工具窗口（如调试器窗口）移至另一个监视器，并将文档和工具窗口以选项卡形式停靠在一起以创建“竹筏”。 有关详细信息，请参阅[如何：排列和停靠窗口](../misc/how-to-arrange-and-dock-windows.md)。
 
      还可以通过创建“解决方案资源管理器”的另一个实例并将其移至其他监视器，以便更轻松地管理文件。 若要创建“解决方案资源管理器”的另一个实例，请打开“解决方案资源管理器”中的快捷菜单，然后选择“新建解决方案资源管理器视图”。
 
--   **自定义在 Visual Studio 中显示的字体**。 您可以更改 IDE 中文本所使用的字体、字号和颜色。 例如，你可以自定义编辑器中特定代码元素的颜色以及工具窗口或整个 IDE 中的字体。 有关更多信息，请参见[如何：更改字体和颜色](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)以及[如何：在编辑器中更改字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+-   **自定义在 Visual Studio 中显示的字体**。 您可以更改 IDE 中文本所使用的字体、字号和颜色。 例如，你可以自定义编辑器中特定代码元素的颜色以及工具窗口或整个 IDE 中的字体。 有关详细信息，请参阅[如何：更改字体和颜色](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)以及[如何：在编辑器中更改字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
 ## <a name="see-also"></a>请参阅
  [常用命令的默认键盘快捷方式](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)[如何：自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)[演练：创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)

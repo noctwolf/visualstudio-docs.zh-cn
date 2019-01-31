@@ -1,14 +1,9 @@
 ---
 title: MSBuild 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3782db2b2c3fb3cdc5d0cc9ed21459c2b2215250
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15a6f0d3a0a50068d05a96994cb01462f07f3258
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772332"
 ---
 # <a name="msbuild-task"></a>MSBuild 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ ms.locfileid: "49878253"
 ## <a name="parameters"></a>参数  
  下表描述了 `MSBuild` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`BuildInParallel`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，会并行生成 `Projects` 参数中指定的项目（如有可能）。 默认值为 `false`。|  
 |`Projects`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要生成的项目文件。|  
-|`Properties`|可选 `String` 参数。<br /><br /> 以分号分隔的作为全局属性应用到子项目的属性名称/值对列表。 指定此参数时，它在功能上等效于使用 [MSBuild.exe ](../msbuild/msbuild-command-line-reference.md) 进行生成时设置具有 **/property** 开关的属性。 例如：<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> 通过 `Properties` 参数将属性传递到项目时，即使已加载了项目文件，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 也会创建项目的新实例。 创建项目的新实例后，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 将其视为具有不同全局属性且可与项目的其他实例并行生成的不同项目。 例如，可同时生成发布配置和调试配置。|  
+|`Properties`|可选 `String` 参数。<br /><br /> 以分号分隔的作为全局属性应用到子项目的属性名称/值对列表。 指定此参数时，它在功能上等效于使用 [MSBuild.exe ](../msbuild/msbuild-command-line-reference.md) 进行生成时设置具有 **/property** 开关的属性。 例如:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> 通过 `Properties` 参数将属性传递到项目时，即使已加载了项目文件，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 也会创建项目的新实例。 创建项目的新实例后，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 将其视为具有不同全局属性且可与项目的其他实例并行生成的不同项目。 例如，可同时生成发布配置和调试配置。|  
 |`RebaseOutputs`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则生成项目中目标输出项的相对路径将其路径调整为相对于调用项目。 默认值为 `false`。|  
 |`RemoveProperties`|可选 `String` 参数。<br /><br /> 指定要删除的全局属性的集。|  
 |`RunEachTargetSeparately`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 任务一次一个地调用被传递到 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 的列表中调用一个目标，不会同时调用目标。 将此参数设置为 `true` 可确保即使先前调用目标失败，也可调用后续目标。 否则，生成错误将停止调用所有后续目标。 默认值为 `false`。|  
@@ -52,7 +47,7 @@ ms.locfileid: "49878253"
 |`StopOnFirstFailure`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，当其中一个项目生成失败时，则不会再生成其他项目。 目前在并行生成时（具有多个处理器）不支持此参数。|  
 |`TargetAndPropertyListSeparators`|可选 `String[]` 参数。<br /><br /> 将目标和属性的列表指定为 `Project` 项元数据）。 进行处理前，分隔符为非转义的。 例如 %3B（转义的“;”）将被视为未转义的“;”。|  
 |`TargetOutputs`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 返回出自所有项目文件的生成目标的输出。 仅返回出自所指定目标的输出，不返回存在于目标所依赖的目标上的任何输出。<br /><br /> `TargetOutputs` 参数还包含以下元数据：<br /><br /> -   `MSBuildSourceProjectFile`：包含设置输出的目标的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件。<br />-   `MSBuildSourceTargetName`：设置输出的目标。 **注意：** 如果要分别识别每个项目文件或目标中的输出，请为每个项目文件或目标分别运行 `MSBuild` 任务。 如果只运行一次 `MSBuild` 任务来生成所有的项目文件，则会将所有目标的输出收集到一个数组中。|  
-|`Targets`|可选 `String` 参数。<br /><br /> 指定要在项目文件中生成的一个或多个目标。 使用分号分隔一系列目标名称。 如果未在 `MSBuild` 任务中指定任何目标，则会生成在项目文件中指定的默认目标。 **注意：** 目标必须发生在所有的项目文件中。 如果它们不发生在所有文件中，则会出现生成错误。|  
+|`Targets`|可选 `String` 参数。<br /><br /> 指定要在项目文件中生成的一个或多个目标。 使用分号分隔一系列目标名称。 如果未在 `MSBuild` 任务中指定任何目标，则会生成在项目文件中指定的默认目标。 **注意：** 目标必须发生在所有项目文件中。 如果它们不发生在所有文件中，则会出现生成错误。|  
 |`ToolsVersion`|可选 `String` 参数。<br /><br /> 指定生成项目被传递到此任务时要使用的 `ToolsVersion`。<br /><br /> 使 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 任务能够生成一个项目，该项目以 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 的其他版本为目标，而不是项目中指定的版本。 有效值为 `2.0`、`3.0` 和 `3.5`。 默认值是 `3.5`。|  
 |`UnloadProjectsOnCompletion`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则在操作完成后，将立即卸载项目。|  
 |`UseResultsCache`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则将返回缓存的结果（如果存在）。 如果运行 MSBuild 任务，会将其结果缓存在某个范围内 (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> 作为生成项的列表|  
@@ -198,6 +193,3 @@ ms.locfileid: "49878253"
 ## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)
-
-
-

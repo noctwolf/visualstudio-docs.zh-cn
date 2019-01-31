@@ -1,14 +1,9 @@
 ---
 title: 如何：收集 Windows 计数器数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.syscounter
 - vs.performance.property.wincounter
@@ -20,13 +15,13 @@ ms.assetid: db4fbac2-bea5-4558-aa8b-160fcccf4b33
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 030a36f2f09465b29faf23b1fc05ad13f4a01326
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2c3e4a9cffd81561af39cef5eb88f4a7745b2dad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753411"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>如何：收集 Windows 计数器数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,6 +57,3 @@ Windows 计数器是在分析期间可按设定的时间间隔收集的系统性
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
  [性能会话属性](../profiling/performance-session-properties.md)   
  [CPU 和 Windows 计数器](../profiling/cpu-and-windows-counters.md)
-
-
-

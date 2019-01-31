@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 59a0dd5f-1cab-4f2f-b780-0ab7399905d5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 067591347a89b8a56d6e271614500c7d3880be80
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 47eed859b0969289a78f4eb13314241e89982f5d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878596"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919299"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：下载 ClickOnce 部署 API 使用设计器中使用按需程序集
 默认情况下， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序中包含的所有程序集都会在应用程序首次运行时进行下载。 但是，可能有一小部分用户使用部分应用程序。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将应用程序中的某些程序集标记为“可选”，以及如何在公共语言运行时需要它们时使用 <xref:System.Deployment.Application> 命名空间中的类下载它们。
@@ -79,7 +79,7 @@ ms.locfileid: "53878596"
 
 4.  展开“组”  下拉框，然后选择“新建” 。 输入名称 `ClickOnceLibrary` 作为新的组名称。
 
-5.  继续发布应用程序，如中所述[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+5.  继续发布应用程序，如中所述[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>使用清单生成和编辑工具在 ClickOnce 应用程序中将程序集标记为可选 — 图形客户端 (MageUI.exe)
 

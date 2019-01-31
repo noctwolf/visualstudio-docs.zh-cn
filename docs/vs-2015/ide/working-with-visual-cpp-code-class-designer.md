@@ -1,14 +1,9 @@
 ---
 title: 使用 Visual C++ 代码（类设计器） | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f777c9bdd0cf2ea300d2df8e7cbfbc8900c25c2a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54765007"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>使用 Visual C++ 代码（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ ms.locfileid: "49929525"
 ### <a name="type-resolution-issues"></a>类型解析问题  
  以下原因可能会导致类设计器无法解析类型：  
   
-- 该类型所在的项目或程序集未从包含类图的项目进行引用。 若要纠正此错误，请添加一个对包含该类型的项目或程序集的引用。 有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+- 该类型所在的项目或程序集未从包含类图的项目进行引用。 若要纠正此错误，请添加一个对包含该类型的项目或程序集的引用。 有关详细信息，请参阅[NIB 如何：添加或删除引用通过使用添加引用对话框中](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 - 由于该类型未处于正确的范围内，因此类设计器无法找到它。 确保代码未缺失 `using`、`imports` 或 `#include` 语句。 还请确保未将该类型（或相关类型）移出它原来所在的命名空间。  
   
@@ -82,7 +77,7 @@ ms.locfileid: "49929525"
   
 - 确保类设计器支持你输入的类型。 请参阅 [C++ 代码元素的限制](#limitations)。  
   
-- 尝试解析的类型。 该类型所在的项目或程序集未从包含类图的项目进行引用。 若要纠正此错误，请添加一个对包含该类型的项目或程序集的引用。 有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+- 尝试解析的类型。 该类型所在的项目或程序集未从包含类图的项目进行引用。 若要纠正此错误，请添加一个对包含该类型的项目或程序集的引用。 有关详细信息，请参阅[NIB 如何：添加或删除引用通过使用添加引用对话框中](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 - 确保该类型位于正确的范围，因此选件类设计器可以找到它。 确保代码未缺失 `using`、`imports` 或 `#include` 语句。 还请确保未将该类型（或相关类型）移出它原来所在的命名空间。  
   
@@ -121,6 +116,3 @@ ms.locfileid: "49929525"
  [类设计器中的 Visual C++ 结构](../ide/visual-cpp-structures-in-class-designer.md)   
  [类设计器中的 Visual C++ 枚举](../ide/visual-cpp-enumerations-in-class-designer.md)   
  [类设计器中的 Visual C++ Typedef](../ide/visual-cpp-typedefs-in-class-designer.md)
-
-
-

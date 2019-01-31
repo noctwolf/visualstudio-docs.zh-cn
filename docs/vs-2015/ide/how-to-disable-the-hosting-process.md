@@ -1,14 +1,9 @@
 ---
-title: 如何：禁用托管进程 | Microsoft Docs
-ms.custom: ''
+title: 如何：禁用托管进程 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - hosting process, disabling
 - vshost.exe, disabling the hosting process
@@ -16,15 +11,15 @@ ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4251e5aac5042b610ed32f95a13ba5d6ffb9d4eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0266e14b3a03e6d8225e7ec9283fe727a9502e53
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848483"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785876"
 ---
-# <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
+# <a name="how-to-disable-the-hosting-process"></a>如何：禁用托管进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 启用承载进程时可能会影响对某些 API 的调用。 在这些情况下，必须禁用托管进程以返回正确的结果。  
@@ -52,7 +47,4 @@ ms.locfileid: "49848483"
 ## <a name="see-also"></a>请参阅  
  [调试和承载进程](../debugger/debugging-and-the-hosting-process.md)   
  [托管进程 (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
- [在应用程序开发过程中生成](http://msdn.microsoft.com/en-us/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
-
-
-
+ [在应用程序开发过程中生成](http://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

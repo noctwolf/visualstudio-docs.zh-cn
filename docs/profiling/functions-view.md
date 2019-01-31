@@ -12,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c2b86a1822c7ec25170ce168af9864c6df740f6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cdca652ebbd7e72675aeff2aa3c5849b7ca2f347
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833337"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54974745"
 ---
 # <a name="functions-view"></a>“函数”视图
 “函数”视图列出分析过程中调用的函数。  
   
  默认情况下，按名称列出函数。 若要按模块查看函数，请在“函数”视图窗口中单击鼠标右键，然后选择“在模块视图中显示”。 随即会显示“模块”视图。  
   
- 若要添加和删除列，请在报告窗口中单击鼠标右键，然后选择“添加/删除列”。 此外，还可通过单击列名对数据进行排序。 有关更多信息，请参见[如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)。  
+ 若要添加和删除列，请在报告窗口中单击鼠标右键，然后选择“添加/删除列”。 此外，还可通过单击列名对数据进行排序。 有关详细信息，请参阅[如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)。  
   
  “函数”视图中的可用列取决于用于收集数据的分析方法（采样法或检测法）以及是否在分析运行期间收集 .NET 内存数据。  
   

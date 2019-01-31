@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eaeead79-aafe-4490-86ff-6ed4cad9c15f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adeff3a6f068c5432f1640cd96752a84228b8ad9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46edc453e16fec43028876d7d590c88651229994
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896105"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965518"
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>如何：在检测中排除或包括短函数
 默认情况下，分析工具会从检测中排除*小型函数*。 小型函数是不执行任何函数调用的短函数。 排除这些小型函数会减少检测开销，从而提高检测速度。 排除小型函数还能减少性能分析数据文件 (.vsp) 的大小和分析所需的时间。 如果排除小型函数，花费在小型函数上的时间会减少，从而减少其父函数的独占和非独占时间。 可以在检测中排除或包括小型函数，具体在以下过程中说明。  

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8b510a07ff60420cc81aed073e7f42445e924d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0abf694bcfb0adf13e3da4fb92bcdc9c180a68fe
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825511"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023140"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：为 ClickOnce 部署中的各个系统必备指定支持 URL
 一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以用于多个先决条件，必须在客户端计算机上可用的测试[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]要运行应用程序。 这些依赖项包括所需的最低版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，操作系统，并且必须预先安装在全局程序集缓存 (GAC) 中的任何程序集的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]但是，无法安装这些必备组件的任何重试。如果找不到一项必备条件，它只是停止安装，并显示一个对话框，说明安装失败的原因。  
@@ -76,7 +76,7 @@ ms.locfileid: "53825511"
    </compatibleFrameworks>  
    ```  
   
-7. 手动修改应用程序清单，必须使用数字证书，请对应用程序清单重新签名，然后更新和对的部署清单重新签名。 使用*Mage.exe*或*MageUI.exe* SDK 工具来完成此任务中的，重新生成使用这些文件作为[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]会删除手动更改。 有关使用 Mage.exe 清单进行重新签名的详细信息，请参阅[如何：对应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)  
+7. 手动修改应用程序清单，必须使用数字证书，请对应用程序清单重新签名，然后更新和对的部署清单重新签名。 使用*Mage.exe*或*MageUI.exe* SDK 工具来完成此任务中的，重新生成使用这些文件作为[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]会删除手动更改。 有关使用 Mage.exe 清单进行重新签名的详细信息，请参阅[如何：对应用程序清单和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  如果应用程序被标记为在部分信任环境中运行时，支持 URL 不被显示在对话框中。  

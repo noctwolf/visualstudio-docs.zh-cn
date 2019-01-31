@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1f4b9604afc511dcbb1362461a2e8c11c7098e
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 036f6918aaeb7fc7dfc0289028e01ea64cbd6736
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269769"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942852"
 ---
 # <a name="debugger-settings-and-preparation"></a>调试器设置和准备
 本节描述与调试器相关的属性设置，以及为了使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器调试程序所需要的准备工作。 如果在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用项目模板创建程序，则调试配置中将为你正确配置这些设置。  

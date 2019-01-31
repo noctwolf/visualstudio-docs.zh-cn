@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: bf008cdc-03f8-496b-868d-4c2644f1d7ee
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ade8a24e8371fe78286b794ad0437b9f50ae30cc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a119addf65fc1b106de3f74e747d9e1e0ae20d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938914"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959039"
 ---
 # <a name="dump-file-summary-extensibility-api"></a>转储文件摘要扩展性 API
 在本部分中使用扩展性 API，你可以扩展 .Exe 项目系统和**转储摘要**页，以适用于你自己的自定义调试引擎。  

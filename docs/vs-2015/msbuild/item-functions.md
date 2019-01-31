@@ -1,27 +1,22 @@
 ---
 title: 项函数 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, Item functions
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 687d740a379bd3b04bd47d0d2e3111bb71e7934d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3477c7f4a9f6368ce8c2ef5a87c101e8ef66f4bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758561"
 ---
 # <a name="item-functions"></a>项函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ ms.locfileid: "49207917"
 ## <a name="intrinsic-item-functions"></a>内部项函数  
  下表列出了可用于各项的内部函数。  
   
-|函数|示例|描述|  
+|函数|示例|说明|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|返回项计数。|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|返回每个项的 `Path.DirectoryName` 等效项。|  
@@ -110,6 +105,3 @@ ms.locfileid: "49207917"
   
 ## <a name="see-also"></a>请参阅  
  [项](../msbuild/msbuild-items.md)
-
-
-

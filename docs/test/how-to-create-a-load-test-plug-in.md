@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1805efbe676273ceac2f0e264e53946eea1be79f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 92a974d233e2d449148a515f3e7bf39f89a95f20
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878557"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54967149"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>如何：创建负载测试插件
 
 可以创建负载测试插件，以便在负载测试运行过程中的不同时间运行代码。 可以创建插件来展开或修改负载测试的内置功能。 例如，可以编写负载测试插件代码，以便在负载测试运行过程中设置或修改负载测试模式。 若要执行此操作，必须创建一个继承 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 接口的类。 此类必须实现此接口的 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> 方法。 有关更多信息，请参见<xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>。
 
 > [!NOTE]
-> 还可以创建 Web 性能测试插件。 有关更多信息，请参见[如何：创建 Web 性能测试插件](../test/how-to-create-a-web-performance-test-plug-in.md)
+> 还可以创建 Web 性能测试插件。 有关详细信息，请参阅[如何：创建 Web 性能测试插件](../test/how-to-create-a-web-performance-test-plug-in.md)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

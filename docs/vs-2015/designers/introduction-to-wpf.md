@@ -1,25 +1,20 @@
 ---
 title: WPF 介绍 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b29e4e241589134c8dfa5b94e997d6603b075ee3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8ed8e7366b438d152abbd6faef91e3f3a0707a61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826344"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756004"
 ---
 # <a name="introduction-to-wpf"></a>WPF 介绍
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,16 +86,16 @@ ms.locfileid: "49826344"
 ```  
   
 ```csharp  
-using System.Windows; // Window, RoutedEventArgs, MessageBox   
+using System.Windows; // Window, RoutedEventArgs, MessageBox   
   
 namespace SDKSample  
 {  
-    public partial class AWindow : Window  
+    public partial class AWindow : Window  
     {  
         public AWindow()  
         {  
-            // InitializeComponent call is required to merge the UI   
-            // that is defined in markup with this class, including    
+            // InitializeComponent call is required to merge the UI   
+            // that is defined in markup with this class, including    
             // setting properties and registering event handlers  
             InitializeComponent();  
         }  
@@ -117,28 +112,28 @@ namespace SDKSample
 ```vb  
 Namespace SDKSample  
   
-    Partial Public Class AWindow  
+    Partial Public Class AWindow  
         Inherits System.Windows.Window  
   
-        Public Sub New()  
+        Public Sub New()  
   
-            ' InitializeComponent call is required to merge the UI   
-            ' that is defined in markup with this class, including    
+            ' InitializeComponent call is required to merge the UI   
+            ' that is defined in markup with this class, including    
             ' setting properties and registering event handlers  
             InitializeComponent()  
   
-        End Sub   
+        End Sub   
   
-        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)  
+        Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)  
   
             ' Show message box when button is clicked  
             MessageBox.Show("Hello, Windows Presentation Foundation!")  
   
-        End Sub   
+        End Sub   
   
-    End Class   
+    End Class   
   
-End Namespace  
+End Namespace  
   
 ```  
   
@@ -198,13 +193,13 @@ End Namespace
   
 - <xref:System.Windows.Controls.DockPanel>：子控件与面板的边缘对齐。  
   
-- <xref:System.Windows.Controls.Grid>：子控件由行和列定位。  
+- <xref:System.Windows.Controls.Grid>：子控件按行和列放置。  
   
 - <xref:System.Windows.Controls.StackPanel>：子控件垂直或水平堆叠。  
   
-- <xref:System.Windows.Controls.VirtualizingStackPanel>：子控件在水平或垂直的行上虚拟化并排列。  
+- <xref:System.Windows.Controls.VirtualizingStackPanel>：子控件在水平或垂直的行上进行虚拟化和排列。  
   
-- <xref:System.Windows.Controls.WrapPanel>：子控件按从左到右的顺序定位，在当前行上的控件超出允许的空间时，换行到下一行。  
+- <xref:System.Windows.Controls.WrapPanel>：子控件按从左到右的顺序放置，在当前行上的控件超出允许的空间时，换行到下一行。  
   
   下面的示例使用 <xref:System.Windows.Controls.DockPanel> 布置几个 <xref:System.Windows.Controls.TextBox> 控件。  
   
@@ -526,6 +521,3 @@ End Namespace
  [WPF 入门](../designers/getting-started-with-wpf.md)   
  [使用 Windows Presentation Foundation 创建现代桌面应用程序](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)   
  [Windows Presentation Foundation](https://msdn.microsoft.com/library/ms754130\(v=vs.100\).aspx)
-
-
-

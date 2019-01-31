@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ed7ef49d-e25f-4a4d-9396-9bc7b4143117
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3abce02ba1804ff619a7d0f24da35747c2f9ff91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af69cd07087da19205ede3bc6576f87bd24279c9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883128"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54979018"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>“停止正在进行的调试”对话框
 当调试器尝试停止调试会话，但停止会话需要一段时间时，会出现此对话框。 停止调试会话通常很快，而此对话框并不出现。 但是，有时从正在调试的所有进程中分离需要额外的时间。 如果停止会话需要的时间超过几秒钟（或者发生分离错误），则会出现此对话框。 如果此对话框经常出现，则可能是由于内部问题，您可能需要与产品支持服务联系。  

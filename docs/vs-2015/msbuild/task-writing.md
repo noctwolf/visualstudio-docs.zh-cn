@@ -1,14 +1,9 @@
 ---
 title: 任务写入 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing tasks
 - tasks, creating for MSBuild
@@ -17,13 +12,13 @@ ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d8cc7968664f201482647861a031a27c850611c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ef637126c75dd05eea2e8bfca76f0fe0bd13ac75
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914705"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794277"
 ---
 # <a name="task-writing"></a>任务写入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -168,7 +163,7 @@ public string RequiredProperty
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
  以下 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 类演示一个从 <xref:Microsoft.Build.Utilities.Task> 帮助器类派生的任务。 该任务返回 `true`，表示执行成功。  
   
 ### <a name="code"></a>代码  
@@ -192,7 +187,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
  以下 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 类演示一个实现 <xref:Microsoft.Build.Framework.ITask> 接口的任务。 该任务返回 `true`，表示执行成功。  
   
 ### <a name="code"></a>代码  
@@ -250,7 +245,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
  此 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 类演示一个从 <xref:Microsoft.Build.Utilities.Task> 帮助器类派生的任务。 它有一个必需的字符串属性，并引发一个由所有注册的记录器显示的事件。  
   
 ### <a name="code"></a>代码  
@@ -258,7 +253,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
  以下示例显示一个调用上一示例任务 SimpleTask3 的项目文件。  
   
 ### <a name="code"></a>代码  
@@ -277,6 +272,3 @@ namespace SimpleTask2
 ## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 1854bca7-d7eb-4502-89bf-b1ee64cb50ef
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce84105fa1a3d7bf5c6f949421b306b5147368a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18485d94aaedcb1f41c0ed747dc6af0be7f7e276
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892350"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952868"
 ---
 # <a name="report-hook-functions"></a>报表挂钩函数
 每次 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtsetreporthook) 生成调试报告时都会调用报告挂钩函数（使用 [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) 安装）。 可以使用报告挂钩函数以及其他项筛选报告以集中于特定类型的分配。 报告挂钩函数应具有如下原型：  

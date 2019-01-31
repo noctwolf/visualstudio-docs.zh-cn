@@ -109,15 +109,15 @@ helpviewer_keywords:
 ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4351553d5df55dd5dceeffe542ff542a9487d6e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 163b3e2d3ac222fd2e495e7a3b71841c818a4a3f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957905"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961840"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 调试配置的项目设置
 可以更改 C 或 Visual c + + 调试配置中的项目设置**属性页**对话框中，如中所述[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示“属性页”对话框中与调试器有关的设置的位置。  
@@ -149,8 +149,8 @@ ms.locfileid: "53957905"
 | **调试加速器类型**（仅限 GPU 调试） | 指定要用于调试的 GPU 设备。 为兼容的 GPU 设备安装设备驱动器将添加其他选项。 默认设置为“GPU - 软件仿真程序”。 |
 | **GPU 默认断点行为**（仅限 GPU 调试） | 指定是否应为 SIMD 经线中的每个线程引发断点事件。 默认设置是仅每次换行引发一次断点事件。 |
 | **Amp 默认快捷键** | 在调试 GPU 代码时，指定默认 AMP 快捷键。 如果问题是由硬件或驱动程序导致，而非你的代码导致，请选择“WARP 软件快捷键”进行调查。 |
-| **部署目录**（远程 Windows 调试器） | 指定项目输出在启动前要被复制的远程计算机上的路径。 路径可以是远程计算机上的网络共享，也可以是到远程计算机上的文件夹的路径。 默认设置为空，这意味着项目输出未复制到网络共享。 若要启用文件的部署，还必须在“配置管理器”对话框中选中“部署”复选框。 有关更多信息，请参见[如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)。 |
-| **其他要部署的文件**（远程 Windows 调试器） | 如果设置的部署目录属性，这是以分号分隔的附加文件复制到部署目录的列表。 默认设置为空，这意味着不会将其他文件复制到部署目录中。 若要启用文件的部署，还必须在“配置管理器”对话框中选中“部署”复选框。 有关更多信息，请参见[如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)。 |
+| **部署目录**（远程 Windows 调试器） | 指定项目输出在启动前要被复制的远程计算机上的路径。 路径可以是远程计算机上的网络共享，也可以是到远程计算机上的文件夹的路径。 默认设置为空，这意味着项目输出未复制到网络共享。 若要启用文件的部署，还必须在“配置管理器”对话框中选中“部署”复选框。 有关详细信息，请参阅[如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)。 |
+| **其他要部署的文件**（远程 Windows 调试器） | 如果设置的部署目录属性，这是以分号分隔的附加文件复制到部署目录的列表。 默认设置为空，这意味着不会将其他文件复制到部署目录中。 若要启用文件的部署，还必须在“配置管理器”对话框中选中“部署”复选框。 有关详细信息，请参阅[如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)。 |
 | **部署 Visual C++ 调试运行库**（远程 Windows 调试器） | 如果“部署目录”属性已设置，则它可以指定当前平台的 Visual C++ 调试运行库是否应被复制到网络共享中。 默认设置为“是”。 |
   
 ## <a name="cc-folder-general-category"></a>“C/C++”文件夹（“常规”类别）  

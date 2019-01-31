@@ -1,27 +1,22 @@
 ---
 title: 项定义 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 35506967ee20ff6c936e2de4a19d7860e154e4c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866566"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796667"
 ---
 # <a name="item-definitions"></a>项定义
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ ms.locfileid: "49866566"
 > [!NOTE]
 >  在本主题的诸多示例中，尽管显示了 ItemDefinitionGroup 元素，但为清楚起见，省略了相应的 ItemGroup 定义。  
   
- ItemGroup 中显式定义的元数据优先于 ItemDefinitionGroup 中的元数据。 ItemDefinitionGroup 中的元数据仅应用于 ItemGroup 中未定义的元数据。 例如：  
+ ItemGroup 中显式定义的元数据优先于 ItemDefinitionGroup 中的元数据。 ItemDefinitionGroup 中的元数据仅应用于 ItemGroup 中未定义的元数据。 例如:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -98,7 +93,7 @@ ms.locfileid: "49866566"
   
 - 最新规范优先。  
   
-  当拥有多个 ItemDefinitionGroup 时，每个后续规范将其元数据添加至先前的定义。 例如：  
+  当拥有多个 ItemDefinitionGroup 时，每个后续规范将其元数据添加至先前的定义。 例如:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -116,7 +111,7 @@ ms.locfileid: "49866566"
   
  在本例中，向“m”和“n”添加元数据“o”。  
   
- 此外，还可以添加先前定义的元数据值。 例如：  
+ 此外，还可以添加先前定义的元数据值。 例如:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -152,7 +147,7 @@ ms.locfileid: "49866566"
 ```  
   
 ## <a name="using-conditions-in-an-itemdefinitiongroup"></a>在 ItemDefinitionGroup 中使用条件  
- 可使用 ItemDefinitionGroup 中的条件来控制元数据的包含。 例如：  
+ 可使用 ItemDefinitionGroup 中的条件来控制元数据的包含。 例如:  
   
 ```  
 <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">  
@@ -167,7 +162,7 @@ ms.locfileid: "49866566"
 > [!NOTE]
 >  在条件中仅支持本地元数据引用。  
   
- 对项（而非定义组）而言，在先前的 ItemDefinitionGroup 中定义的元数据的引用是本地的。 也就是说，引用的范围特定于项\-。 例如：  
+ 对项（而非定义组）而言，在先前的 ItemDefinitionGroup 中定义的元数据的引用是本地的。 也就是说，引用的范围特定于项\-。 例如:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -183,7 +178,7 @@ ms.locfileid: "49866566"
  在此示例中，项"i"的引用在条件中的项"test"。  
   
 ## <a name="overriding-and-deleting-metadata"></a>替代和删除元数据  
- 通过将元数据值设置为空白，在 ItemDefinitionGroup 元素中定义的元数据可以在之后的 ItemDefinitionGroup 元素中被替代。 还可通过将元数据项设置为空值，高效删除元数据项。 例如：  
+ 通过将元数据值设置为空白，在 ItemDefinitionGroup 元素中定义的元数据可以在之后的 ItemDefinitionGroup 元素中被替代。 还可通过将元数据项设置为空值，高效删除元数据项。 例如:  
   
 ```  
 <ItemDefinitionGroup>  
@@ -234,7 +229,7 @@ ms.locfileid: "49866566"
 </ItemDefinitionGroup>  
 ```  
   
- 从[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 开始，ItemGroups 可以自引用。 例如：  
+ 从[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 开始，ItemGroups 可以自引用。 例如:  
   
 ```  
 <ItemGroup>  
@@ -247,6 +242,3 @@ ms.locfileid: "49866566"
   
 ## <a name="see-also"></a>请参阅  
  [批处理](../msbuild/msbuild-batching.md)
-
-
-

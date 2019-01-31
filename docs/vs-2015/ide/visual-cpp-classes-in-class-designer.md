@@ -1,14 +1,9 @@
 ---
 title: 类设计器中的 Visual C++ 类 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d4193dda70aeda8534b9dc2fa3428ca08a9d89fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285683"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787071"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>类设计器中的 Visual C++ 类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ class A {};
 class B : A {};  
 ```  
   
- 也可以只将类 B 拖到类图中，右键单击 B 的类形状，然后单击“显示基类”。 这样可以显示它的基类 A。  
+ 也可以只将类 B 拖到类图中，右键单击 B 的类形状，然后单击“显示基类”。 此操作将显示其基类：答：  
   
 ## <a name="multiple-inheritance"></a>多重继承  
  类设计器支持直观呈现多类继承关系。 当派生类有多个基类的特性时，就会用到*多重继承*。 下面的示例展示了多重继承：  
@@ -59,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 >  C++ 代码不支持“显示派生类”命令。 可以转到类视图，依次展开类型节点和“Derived Types”子文件夹，然后将这些类型拖到类图上，即可显示派生类。  
   
- 有关多类继承的详细信息，请参阅 [(NOTINBUILD) 多重继承](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)和[多个基类](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)。  
+ 有关多类继承的详细信息，请参阅 [(NOTINBUILD) 多重继承](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)和[多个基类](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)。  
   
 ## <a name="abstract-classes"></a>抽象类  
  类设计器支持抽象类（亦称为“抽象基类”）。 这些是永不实例化，但可从中派生其他类的类。 以本文前面“多重继承”部分中的示例为例，可以将 `Bird` 类实例化成各个单独的对象，如下所示：  
@@ -163,7 +158,7 @@ typedef struct
   
  下表列出了一些模板继承示例。  
   
-|Code 元素|类设计器视图|  
+|代码元素|类设计器视图|  
 |------------------|-------------------------|  
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> 类<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> 类<br /><br /> （B 包含在类 C 中的“嵌套类型”下）<br /><br /> `C<T>`<br /><br /> 模板类|  
   
@@ -178,9 +173,6 @@ typedef struct
  [使用 Visual C++ 代码（类设计器）](../ide/working-with-visual-cpp-code-class-designer.md)   
  [类和结构](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
  [匿名类类型](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) 多重继承](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [(NOTINBUILD) 多重继承](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
  [多个基类](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
  [模板](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
-
-
-

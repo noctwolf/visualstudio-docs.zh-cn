@@ -1,14 +1,9 @@
 ---
 title: 性能报告视图筛选器 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, Profiler Report view filter
 - Profiler Report View filter, profiling tools
@@ -16,13 +11,13 @@ ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 26ab5282ece99700b035c45abe4f3a7c6ffee82a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8620e5a372d764fef3a75126af52a6212ecc6cd8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754301"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774628"
 ---
 # <a name="performance-report-view-filter"></a>性能报告视图筛选器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51754301"
   
  可以修改每个筛选器子句以优化结果。 筛选生成器中提供了以下各列。  
   
-|筛选器项|描述|  
+|筛选器项|说明|  
 |-----------------|-----------------|  
 |与/或|如果此子句和下一个子句必须都为 true 才能匹配结果，则选择“与”。 如果此子句或下一个子句为 true 即可匹配结果，则选择“或”。|  
 |字段|从当前报告文件中可用的数据字段列表中选择要在筛选器子句中使用的字段。|  
@@ -47,6 +42,3 @@ ms.locfileid: "51754301"
 ## <a name="see-also"></a>请参阅  
  [分析性能工具数据](../profiling/analyzing-performance-tools-data.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-

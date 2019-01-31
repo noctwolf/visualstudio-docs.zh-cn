@@ -1,14 +1,9 @@
 ---
 title: CodeIndex 命令 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools [Team Foundation Server]
 - TFSConfig
@@ -17,13 +12,13 @@ ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9586348a1862820540613a5f191132c49fa6a74d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 624a2a735032342d4eb47e2393ecae3ea3247891
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282355"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797289"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |----------------|---------------------|  
 |**/indexingStatus**|显示代码索引服务的状态和配置。|  
 |**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**：开始为所有变更集创建索引。<br />-   **off**：停止为所有变更集创建索引。<br />-   **keepupOnly**：停止为之前创建的变更集创建索引，开始仅为新的变更集创建索引。|  
-|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> 可以在服务器路径的开头、末尾或两端使用通配符 (*)。|指定你不希望编制索引的代码文件的列表及其路径。<br /><br /> -   **add**：将不希望编制索引的文件添加到已忽略文件列表。<br />-   **remove**：从已忽略文件列表中移除希望编制索引的文件。<br />-   **removeAll**：清理忽略的文件列表，并开始为所有文件创建索引。<br />-   **view**：查看所有不要编制索引的文件。|  
+|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> 可以在服务器路径的开头、末尾或两端使用通配符 (*)。|指定你不希望编制索引的代码文件的列表及其路径。<br /><br /> -   **add**：将不希望编制索引的文件添加到已忽略文件列表。<br />-   **remove**：从已忽略文件列表中移除希望编制索引的文件。<br />-   **removeAll**：清理忽略的文件列表，并开始为所有文件创建索引。<br />-   **view**：查看所有未编制索引的文件。|  
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|显示超出指定大小（以 KB 为单位）的文件的指定数量。 然后可使用 **/ignoreList** 选项从编制索引中排除这些文件。|  
 |**/reindexAll**|清理以前的索引数据并重新开始创建索引。|  
 |**/destroyCodeIndex [/noPrompt]**|删除代码索引并移除所有索引的数据。 如果使用 **/noPrompt** 选项，则无需确认。|  
@@ -130,8 +125,5 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [Managing server configuration with TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) （使用 TFSConfig 管理服务器配置）  
- [Command-line tools for TFS](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)（TFS 的命令行工具）
-
-
-
+ [Managing server configuration with TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) （使用 TFSConfig 管理服务器配置）  
+ [Command-line tools for TFS](http://msdn.microsoft.com/be8c997a-b97b-4e59-97f5-04db0a601a6c)（TFS 的命令行工具）

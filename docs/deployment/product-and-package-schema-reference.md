@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe8a7e30c61105cc78d0e23ac35683e72e82ffc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2050b3014030cc7fe8687e46a6260e6147440a4d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844664"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953102"
 ---
 # <a name="product-and-package-schema-reference"></a>产品和包架构引用
 一个*产品文件*是一个描述所有所需的外部依赖关系的 XML 清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 外部依赖关系的示例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft 数据访问组件 (MDAC)。 包文件类似于产品文件，但用于安装依赖于区域性的组件的依赖项，如本地化程序集、 许可协议和文档。  

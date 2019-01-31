@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2bfc9e9c45e7bf3413c1733dd57534f3675a2f4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 20e39a356b678d498b97f3fbcaca85b713399e83
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832212"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954054"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 调试方法
 如果要调试 MFC 程序，这些调试技术可能会有用。  
@@ -140,7 +140,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
 
 - 如果希望对内存诊断功能进行更精确的控制，可以通过设置 MFC 全局变量 [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)的值，来有选择地打开和关闭单个内存诊断功能。 该变量可以具有下列值（由枚举类型 **afxMemDF**所指定）。  
 
-  |“值”|说明|  
+  |值|说明|  
   |-----------|-----------------|  
   |**allocMemDF**|打开诊断内存分配器（默认）。|  
   |**delayFreeMemDF**|在调用 `delete` 或 `free` 时延迟释放内存，直到程序退出。 这将使你的程序分配可能的最大内存量。|  

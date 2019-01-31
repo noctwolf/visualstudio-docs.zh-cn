@@ -1,25 +1,20 @@
 ---
 title: 从命令行创建探查器报告 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: c886f8af-2014-4fec-9b24-d98b68ecafb7
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c4cf566affff500d372a980a6f07122c2df33a23
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 489ebd4e5aff3ef9b93ef0d8fe18f9ae8cc85011
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788584"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788780"
 ---
 # <a name="creating-profiler-reports-from-the-command-line"></a>从命令行创建探查器报告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,8 +30,5 @@ ms.locfileid: "51788584"
 |创建基本报告。 创建全部或部分 VSPerfReport 报告类型。|-   [创建基本报告](../profiling/creating-basic-profiling-reports-from-the-command-line.md)|  
 |比较两个分析数据文件。 创建“diff”报告，用于比较两个分析数据文件中的性能数据。|-   [如何：通过命令提示符创建探查器比较报告](../profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt.md)|  
 |查看调用跟踪和 Windows 事件跟踪 (ETW) 数据。 创建调用跟踪报告，报告将列出应用程序函数每个入口点和出口点的计时信息，以及该函数对其他函数的每次调用的计时信息。 或者，创建在分析运行期间收集的所有 ETW 事件的详细列表。|-   [如何：创建调用跟踪报告](../profiling/how-to-create-a-profiling-tools-call-trace-report.md)|  
-|筛选报告。 限制报告，使其仅显示代码中的函数，或仅显示分析数据文件中的特定时间。|-   [如何：从命令行筛选报告](../profiling/how-to-filter-reports-from-the-command-line.md)|  
+|筛选报告。 限制报告，使其仅显示代码中的函数，或仅显示分析数据文件中的特定时间。|-   [如何：通过命令行筛选报告](../profiling/how-to-filter-reports-from-the-command-line.md)|  
 |创建可移植分析数据文件。 若要更轻松地共享分析数据，可以将分析运行的符号嵌入到 .vsp 文件中。 还可以创建经过预先分析的分析数据 (.vsps) 文件，此文件较小，打开速度较快。|-   [创建可移植分析数据文件](../profiling/creating-portable-profiling-data-files-from-the-command-line.md)|
-
-
-

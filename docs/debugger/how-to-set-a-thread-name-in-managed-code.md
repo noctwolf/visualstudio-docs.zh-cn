@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c0c4d74a-0314-4b71-81c9-b0b019347ab8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 01869f320318f6708b04fce539ada95211468131
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b555c324de9ffc26bbe7a6c9231614deb279bfa7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867639"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54994600"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>如何：在托管代码中设置线程名称
 在 Visual Studio 的任何版本中都可以使用线程命名功能。 线程命名功能对跟踪“线程”窗口中的线程非常有用。

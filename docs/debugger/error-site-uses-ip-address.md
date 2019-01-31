@@ -13,15 +13,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66e63a85ecbf42d0d4091a7ce9315c91184078ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d8aa34553f4fb6d4524357f830dbbeabe3296354
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871364"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54981111"
 ---
 # <a name="error-site-uses-ip-address"></a>错误：站点使用 IP 地址
 调试器尝试自动附加到正在使用 IP 地址的 Web 应用程序时，会发生该错误。 如果在 IIS 中将“网站标识”更改为“使用特定 IP 地址”，会发生这种情况。  

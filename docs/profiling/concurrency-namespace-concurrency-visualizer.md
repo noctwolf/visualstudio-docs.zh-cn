@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 001fbfce-a278-4502-aa27-26d65dd61453
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781e5251dcb0580c4e6ae36e33e6af2b16f3a79d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f147957ea7a5a348938d5f18168042ffd236c336
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823783"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029227"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency 命名空间（并发可视化工具）
 `Concurrency` 命名空间提供可让你访问 C++ 的并发运行和并发编程框架的类和函数。 有关详细信息，请参阅[并发运行时](/cpp/parallel/concrt/concurrency-runtime)。  

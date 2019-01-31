@@ -1,14 +1,9 @@
 ---
 title: “选项”对话框 ->“环境”->“文档”| Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
 - VS.ToolsOptionsPages.Environment.Documents
@@ -37,13 +32,13 @@ ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ad1e397b67d04b8e8233a568b675eaf24a29bf59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 57191c1db161dab12175b1c05d4304c8b6f684d7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246202"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778573"
 ---
 # <a name="documents-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“文档”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49246202"
 使用“选项”对话框的此页，可以控制文档在集成开发环境 (IDE) 中的显示，并管理对文档和文件的外部更改。 通过在“工具”菜单上单击“选项”，然后在“环境”节点中选择“文档”，即可访问此对话框。 如果“文档”未出现在列表中，请在“选项”对话框中选择“显示所有设置”。  
   
 > [!NOTE]
->  对话框中的可用选项以及显示的菜单命令的名称和位置可能与“帮助”中的描述不同，具体取决于您的当前设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  对话框中的可用选项以及显示的菜单命令的名称和位置可能与“帮助”中的描述不同，具体取决于您的当前设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  **如果已保存，请再次使用当前文档窗口**  
  选定后，若当前文档已保存，则将其关闭，而后在同一窗口中打开一个新文档。 如果尚未保存当前文档，则保持打开状态，并在单独的窗口中打开新文档。 清除此选项后，新文档始终在单独的窗口中打开。  
@@ -95,6 +90,3 @@ ms.locfileid: "49246202"
  [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)   
  [杂项文件](../../ide/reference/miscellaneous-files.md)   
  [查找和替换文本](../../ide/finding-and-replacing-text.md)
-
-
-

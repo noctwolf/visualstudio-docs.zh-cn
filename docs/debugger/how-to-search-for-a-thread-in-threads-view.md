@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5609a9b3-c279-4426-9e2e-dd87896a6d6f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b0f05398c4b0301bfd509ab972f9aaf70807e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c3b7805f54275c1f2370f981cdd97bdeabfa58c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832159"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55069795"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>如何：在线程视图中搜索线程
 可以通过将其线程 ID 或模块字符串用作搜索条件来搜索特定线程在线程视图中。 此外可以指定搜索的初始传递方向。 在对话框中的字段将线程树中显示所选线程的属性。  

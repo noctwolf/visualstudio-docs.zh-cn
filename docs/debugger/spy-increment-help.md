@@ -7,22 +7,22 @@ helpviewer_keywords:
 ms.assetid: 82155004-8d9e-4875-b7db-237a3cffb530
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 156629fdce19dfe4e503f4af67ca31f99041e231
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9114b9e442f4a6cb8525120d24ba59be99891fef
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855581"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54940097"
 ---
 # <a name="spy-help"></a>Spy++ 帮助
 Spy + + 实用程序的文档包括两个组的常规主题上使用 Spy + + 和 Spy + + 视图上。 后面的 Spy + + 引用，它在每个可用菜单命令和对话框中提供更多详细信息。  
   
 ## <a name="using-spy"></a>使用 Spy++  
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。  
+ 介绍 Spy + + 工具，并说明如何使用它。  
   
  [Spy++ 视图](../debugger/spy-increment-views.md)  
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  

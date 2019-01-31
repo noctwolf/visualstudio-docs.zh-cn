@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 418de18c-bee9-4f24-9cd9-0252d175070d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ab1335b846ecccf31addfa134fc63396dc841b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 324066d1f6bd6ad1719b2dc960de2b2357ec8cbd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861272"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976376"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>如何：自定义 ClickOnce 应用程序的默认网页
 在发布 ClickOnce 应用程序到 Web，Web 页自动生成并随应用程序一起发布。 默认页包含的应用程序和用于安装应用程序、 安装必备组件，或访问 MSDN 上的帮助链接的名称。  
@@ -30,7 +30,7 @@ ms.locfileid: "53861272"
 > [!NOTE]
 >  在页看到的实际链接取决于计算机页查看位置以及要包括的先决条件。  
   
- Web 页面的默认名称是*Publish.htm*; 你可以在名称**项目设计器**。 有关更多信息，请参见[如何：指定 ClickOnce 应用程序的发布页](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)。  
+ Web 页面的默认名称是*Publish.htm*; 你可以在名称**项目设计器**。 有关详细信息，请参阅[如何：指定 ClickOnce 应用程序的发布页](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)。  
   
  *Publish.htm*发布网页时，仅当检测到较新版本。  
   
@@ -39,7 +39,7 @@ ms.locfileid: "53861272"
   
 ### <a name="to-customize-the-publish-web-page"></a>若要自定义 Web 发布页  
   
-1.  发布 ClickOnce 应用程序到 Web 位置。 有关更多信息，请参见[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
+1.  发布 ClickOnce 应用程序到 Web 位置。 有关详细信息，请参阅[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
 2.  在 Web 服务器上，打开*Publish.htm* Visual Web 设计器或另一个 HTML 编辑器中的文件。  
   

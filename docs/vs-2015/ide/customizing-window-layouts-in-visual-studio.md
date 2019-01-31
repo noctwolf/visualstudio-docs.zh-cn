@@ -1,13 +1,9 @@
 ---
 title: 自定义窗口布局
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.windows
 - vs.environment
@@ -27,13 +23,13 @@ ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7a0f6b087f512750ae729d52c0855e3d4981d330
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53934370"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802024"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>在 Visual Studio 中自定义窗口布局
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +77,7 @@ ms.locfileid: "53934370"
   可以通过拖动、使用 **“窗口”** 菜单上的命令或右键单击待排列窗口的标题栏，来排列工具窗口和文档窗口。
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+>  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
 ### <a name="docking-windows"></a>停靠窗口
  单击和拖动工具窗口的标题栏或文档窗口的选项卡时，将显示一个菱形引导标记。 进行拖动操作时，当鼠标光标悬停在菱形中的一个箭头之上时，将出现一个阴影区域，显示如果现在释放鼠标按钮，窗口将停靠的位置。
@@ -186,4 +182,4 @@ ms.locfileid: "53934370"
 |[窗口类型](../misc/kinds-of-windows.md)|讨论 IDE 中的工具窗口与文档窗口的区别。|
 |[如何：排列和停靠窗口](../misc/how-to-arrange-and-dock-windows.md)|描述如何停靠、自动隐藏和平铺窗口，还描述如何重置窗口布局。|
 |[如何：在 IDE 中移动](../ide/how-to-move-around-in-the-visual-studio-ide.md)|描述如何能够按使用顺序在 IDE 中打开的窗口之间循环。 还描述如何能够跳转到特定文档。|
-|[在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|包含有关设置组合，以及这些设置如何影响窗口布局、键盘快捷键和 IDE 中的其他元素的信息。|
+|[在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|包含有关设置组合，以及这些设置如何影响窗口布局、键盘快捷键和 IDE 中的其他元素的信息。|

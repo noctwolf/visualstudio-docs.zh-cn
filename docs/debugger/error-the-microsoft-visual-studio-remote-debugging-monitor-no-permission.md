@@ -16,15 +16,15 @@ helpviewer_keywords:
 - remote debugging, Windows version error
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bd5a9ef53940164c7d83dff0159af4c69f61010
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 80db9cb0e29f2664a02ada17398d5dca8912a0f3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053427"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002413"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>错误：远程计算机上的 Microsoft Visual Studio 远程调试监视器没有连接到此计算机的权限
 当尝试运行 Visual Studio 远程调试监视器 (msvsmon) 的用户在本地计算机上不具有帐户时，会发生此错误。  

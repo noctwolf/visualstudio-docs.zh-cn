@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cff7bea44950c7c956f80567637e007f957c05f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f728551f97c0b402cb4a9f8294a5401759cb338c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940409"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55019354"
 ---
 # <a name="windows-view"></a>窗口视图
 当你首次打开 Spy + + 时，Windows 视图将显示在系统中的所有窗口和控件树。 显示的窗口句柄和类名。 当前桌面窗口是树的顶部。 所有其他窗口是在桌面的子级，并列出根据标准的窗口层次结构。 在下方其父项缩进的可扩展列表中显示同级窗口。  
@@ -46,7 +46,7 @@ Spy++ 窗口视图
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。  
+ 介绍 Spy + + 工具，并说明如何使用它。  
   
  [“查找窗口”对话框](../debugger/find-window-dialog-box.md)  
  用于查看的属性或特定的窗口中的消息。  

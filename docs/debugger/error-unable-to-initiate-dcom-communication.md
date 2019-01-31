@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afdcffecdd1642da2a240c20c1d574e089d3b3c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89dc5ba98d706153b919063563f1d4beecacdde5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941831"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932059"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>错误：无法启动 DCOM 通信
 当本地计算机尝试与远程计算机通信时，发生 DCOM 错误。 这是由于远程服务器上存在防火墙或远程计算机上的 Windows 身份验证已中断。  
@@ -31,4 +31,4 @@ ms.locfileid: "53941831"
 -   若要还原 Windows 身份验证，请尝试重新启动本地计算机和远程计算机。 检查本地和远程计算机上的事件日志以找出 Kerberos 错误，并与域管理员联系以了解已知问题。  
   
 ## <a name="see-also"></a>请参阅  
- [Remote Debugging](../debugger/remote-debugging.md)
+ [远程调试](../debugger/remote-debugging.md)

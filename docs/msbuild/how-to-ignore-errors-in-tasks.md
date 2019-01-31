@@ -8,13 +8,13 @@ helpviewer_keywords:
 ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: f271c2d6dae3857818505829cf2da8a109613e9a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: a6d56c1b4e22250f56592e45d56c433c7ad78065
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852685"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024794"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略任务中的错误
 有时你希望生成能够容忍某些任务中的错误。 如果这些非关键任务失败，你希望生成能够继续进行，因为它仍然可以产生所需的输出。 例如，如果一个项目在每个组件生成之后都使用 `SendMail` 任务发送电子邮件消息，那么即使邮件服务器变得不可用而导致状态邮件无法发送，但依然让生成继续完成，这一情况或许便是可以接受的。 或者，如果在生成过程中，中间文件通常会被删除，但即使无法删除这些文件，那么让生成继续完成也是可以接受的。  

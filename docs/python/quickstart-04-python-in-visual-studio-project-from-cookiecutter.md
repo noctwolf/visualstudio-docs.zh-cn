@@ -6,17 +6,17 @@ ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e4712a5dd73c899e82a8fc6e07331be5b6e6c46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9dd949f921c3d504823e9204e0974617c8a2b3e7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863688"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54953180"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入门：通过 Cookiecutter 模板创建项目
 
@@ -26,7 +26,7 @@ ms.locfileid: "53863688"
 
 1. 启动 Visual Studio。
 
-1. 选择“文件” > “新建” > “从 Cookiecutter”。 此命令会在 Visual Studio 中打开一个窗口，可在窗口中浏览模板。 
+1. 选择“文件” > “新建” > “从 Cookiecutter”。 此命令会在 Visual Studio 中打开一个窗口，可在窗口中浏览模板。
 
     ![从 Cookiecutter 模板新建项目](media/projects-from-cookiecutter1.png)
 
@@ -38,7 +38,7 @@ ms.locfileid: "53863688"
 
 1. 该过程完成后，显示“已成功创建文件”消息。 选择“在解决方案资源管理器中打开”命令打开项目。
 
-1. 按 Ctrl+F5 或选择“调试” > “开始执行(不调试)”运行程序。 
+1. 按 Ctrl+F5 或选择“调试” > “开始执行(不调试)”运行程序。
 
     ![python-sklearn-classifier-cookiecutter 模板项目的输出](media/projects-from-cookiecutter4.png)
 

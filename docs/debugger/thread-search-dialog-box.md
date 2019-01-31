@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 654e2a43c45364c7050c84c3d98ca08f6e03e9c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b25de3d88cb495d869ae76e854eaad476f778bce
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885856"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986106"
 ---
 # <a name="thread-search-dialog-box"></a>“线程搜索”对话框
 使用此对话框来查找和选择的节点中的特定线程[线程视图](../debugger/threads-view.md)。 若要显示此对话框中，将焦点移至**线程**视图窗口。 然后选择**查找线程**从**搜索**菜单。  
@@ -48,4 +48,4 @@ ms.locfileid: "53885856"
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。
+ 介绍 Spy + + 工具，并说明如何使用它。

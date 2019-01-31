@@ -1,14 +1,9 @@
 ---
 title: “调用关系树”视图 - 采样数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Call Tree view
 - Call Tree view
@@ -16,13 +11,13 @@ ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dc324b621bfc3e472d6eb86227a6081e3384d2af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e5b15badb7b5e98c73ccadab41f67c64d60cb05e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798906"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779221"
 ---
 # <a name="call-tree-view---sampling-data"></a>“调用关系树”视图 - 采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "51798906"
   
  设置根节点后，将从视图中排除所选节点的子树之外的所有其他条目。 若要将根节点重置回原始节点，请在“调用树视图”窗口中右键单击并选择“重置根节点”。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
@@ -61,11 +56,8 @@ ms.locfileid: "51798906"
 |**非独占样本数百分比**|调用关系树中的父函数调用此函数时，分析运行中属于此函数的非独占样本的所有样本数的百分比。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
- [“调用关系树”视图 - 探查器采样数据](../profiling/call-tree-view-sampling-data.md)   
+ [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)   
+ [“调用树”视图 - 探查器采样数据](../profiling/call-tree-view-sampling-data.md)   
  [“调用关系树”视图 - 采样](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [“调用关系树”视图 - 检测](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [“调用关系树”视图](../profiling/call-tree-view-instrumentation-data.md)
-
-
-

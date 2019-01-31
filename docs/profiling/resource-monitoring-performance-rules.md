@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e4071820aece2f58f0a1345e1110a80c9f76f0f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 352b4710f520d00eb97de5fd8c2b31be7e172c11
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947915"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54983113"
 ---
 # <a name="resource-monitoring-performance-rules"></a>资源监控性能规则
 资源监控类别中的性能消息提供有关应用程序性能的其他数据。 可以使用此数据分析性能问题。 这些规则是消息性的，针对每次分析运行报告。  

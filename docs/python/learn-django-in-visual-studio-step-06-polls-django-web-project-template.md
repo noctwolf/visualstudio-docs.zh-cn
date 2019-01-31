@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ff970f12bc31866483642772be742fbf6ac1e74b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e7b4741bf7b8644182afb666b8683212ab957c56
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941162"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232021"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步骤 6：使用投票 Django Web 项目模板
 
@@ -375,6 +375,6 @@ admin.site.register(Poll, PollAdmin)
 
 - 在 tests.py 中编写单元测试；Visual Studio 项目模板为这些测试提供起始点，若要了解更多信息，可以在 Django 文档的[编写首个 Django 应用，第 5 部分 - 测试](https://docs.djangoproject.com/en/2.0/intro/tutorial05/)和[在 Django 中进行测试](https://docs.djangoproject.com/en/2.0/topics/testing/)中找到。
 
-- 将应用从 SQLite 更改为生产级数据存储，如 PostgreSQL、MySQL 和 SQL Server（它们都可以在 Azure 上托管）。 如[何时使用 SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org) 中所述，SQLite 适用于低到中等规模的流量站点（一天点击量不足 100K），不建议用于高点击量网站。 此外，它还仅限于一台计算机，因此不能在任何多服务器场景中使用，例如负载均衡和异地复制。 有关 Django 对其他数据库的支持的信息，请参阅[数据库设置](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)。 另外，还可以使用 [Azure SDK for Python](azure-sdk-for-python.md)，以便使用 Azure 存储服务，如表和 blob。
+- 将应用从 SQLite 更改为生产级数据存储，如 PostgreSQL、MySQL 和 SQL Server（它们都可以在 Azure 上托管）。 如[何时使用 SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org) 中所述，SQLite 适用于低到中等规模的流量站点（一天点击量不足 100K），不建议用于高点击量网站。 此外，它还仅限于一台计算机，因此不能在任何多服务器场景中使用，例如负载均衡和异地复制。 有关 Django 对其他数据库的支持的信息，请参阅[数据库设置](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)。 另外，还可以使用 [Azure SDK for Python](/python/azure/?view=azure-python)，以便使用 Azure 存储服务，如表和 blob。
 
 - 在 Azure DevOps 等服务上设置持续集成/持续部署管道。 除了使用源代码管理（通过 Azure Repos、GitHub 或在其他位置）外，还可以将 Azure DevOps 项目配置为自动运行单元测试作为发布的先决条件，并在部署到生产环境之前，将管道配置为部署到暂存服务器以进行附加测试。 此外，Azure DevOps 还与 App Insights 等监视解决方案集成，并使用敏捷规划工具闭合整个周期。 有关详细信息，请参阅[在 Azure DevOps 项目中为 Python 创建 CI/CD 管道](/azure/devops-project/azure-devops-project-python?view=vsts)以及常规 [Azure DevOps 文档](/azure/devops/?view=vsts)。

@@ -1,14 +1,9 @@
 ---
 title: ItemGroup 元素 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ItemGroup
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
 caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5f3a98238e922e08767524c361cdae850c40a4ba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 18d01e5ebe9b1f675fb0af8b2bf5737cf4ab9f78
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257681"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772074"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +49,19 @@ ms.locfileid: "49257681"
   
 ### <a name="attributes"></a>特性  
   
-|特性|描述|  
+|特性|说明|  
 |---------------|-----------------|  
 |`Condition`|可选特性。 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[Item](../msbuild/item-element-msbuild.md)|定义生成过程的输入。 `ItemGroup` 中可能没有或有一些 `Item` 元素。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明|  
 |-------------|-----------------|  
 |[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件必需的根元素。|  
 |[Target](../msbuild/target-element-msbuild.md)|从 .NET Framework 3.5 开始，`ItemGroup` 元素可以出现在 `Target` 元素内部。 有关详细信息，请参阅[目标](../msbuild/msbuild-targets.md)。|  
@@ -97,6 +92,3 @@ ms.locfileid: "49257681"
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)   
  [项](../msbuild/msbuild-items.md)   
  [常用的 MSBuild 项目项](../msbuild/common-msbuild-project-items.md)
-
-
-

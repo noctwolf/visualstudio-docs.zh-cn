@@ -15,20 +15,20 @@ helpviewer_keywords:
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 879dffc554a05d6c90680cd95e5bb934550d2bbd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39c24f35ec68fdfda173cf24d8018102a42ea81b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824595"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976545"
 ---
 # <a name="how-to-create-a-product-manifest"></a>如何：创建产品清单
 若要部署应用程序的先决条件，你可以创建引导程序包。 引导程序包包含一个单一产品清单文件，但是包清单的每个区域设置。 包清单包含包的特定于本地化的方面。 这包括字符串、 最终用户许可协议和语言包。  
   
- 有关产品清单的详细信息，请参阅[如何：创建包清单](../deployment/how-to-create-a-package-manifest.md)  
+ 有关产品清单的详细信息，请参阅[如何：创建包清单](../deployment/how-to-create-a-package-manifest.md)。  
   
 ## <a name="create-the-product-manifest"></a>创建产品清单  
   

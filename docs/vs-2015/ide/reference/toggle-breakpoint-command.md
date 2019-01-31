@@ -1,14 +1,9 @@
 ---
 title: “切换断点”命令 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.togglebreakpoint
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f993d9a0377531b155301bed235c00bf8e6667c4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 11f0598fa20a5293d662bdbb23b7f67c6c0c80b2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223153"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793169"
 ---
 # <a name="toggle-breakpoint-command"></a>“切换断点”命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,6 +50,3 @@ Debug.ToggleBreakpoint [text]
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

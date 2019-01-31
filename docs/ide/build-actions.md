@@ -6,22 +6,22 @@ ms.technology: vs-ide-compile
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eb4c000973afd1eef92d283e5688862413add16
-ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
+ms.openlocfilehash: 45a0e4822bc9b6d20bd2cf63d664e6cba97c77bf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "52002114"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54951295"
 ---
 # <a name="build-actions"></a>生成操作
 
 Visual Studio 项目中的所有文件都具有生成操作。 生成操作控制编译项目时文件发生的情况。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中的生成操作](/visualstudio/mac/build-actions)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中的生成操作](/visualstudio/mac/build-actions)。
 
 ## <a name="set-a-build-action"></a>设置生成操作
 

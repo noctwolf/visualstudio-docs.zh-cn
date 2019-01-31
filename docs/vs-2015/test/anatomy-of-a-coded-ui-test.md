@@ -1,26 +1,21 @@
 ---
 title: 编码的 UI 测试剖析 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
 ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 25
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7595a967a6dae091da6c5a7613a27c602cc1381e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 35222fc9e320bafbaafe1bc19e174649142252c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781172"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>编码的 UI 测试剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,10 +31,10 @@ ms.locfileid: "49202743"
   
 |文件|内容|可编辑？|  
 |----------|--------------|---------------|  
-|[UIMap.Designer.cs](#UIMapDesignerFile)|[声明部分](#UIMapDesignerFile)<br /><br /> [UIMap 类](#UIMapClass)（自动生成的分部类）<br /><br /> [方法](#UIMapMethods)<br /><br /> [属性](#UIMapProperties)|否|  
+|[UIMap.Designer.cs](#UIMapDesignerFile)|[声明部分](#UIMapDesignerFile)<br /><br /> [UIMap 类](#UIMapClass)（自动生成的分部类）<br /><br /> [方法](#UIMapMethods)<br /><br /> [属性](#UIMapProperties)|No|  
 |[UIMap.cs](#UIMapCS)|[UIMap 类](#UIMapCS)（分部类）|是|  
 |[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1 类](#CodedUITestCS)<br /><br /> [方法](#CodedUITestMethods)<br /><br /> [属性](#CodedUITestProperties)|是|  
-|[UIMap.uitest](#UIMapuitest)|用于测试的 UI 的 XML 映射。|否|  
+|[UIMap.uitest](#UIMapuitest)|用于测试的 UI 的 XML 映射。|No|  
   
 ###  <a name="UIMapDesignerFile"></a>UIMap.Designer.cs  
  此文件包含在测试创建后由**编码的 UI 测试生成器**自动创建的代码。 此文件会在每次更改测试时重新创建，因此，你不可以在其中添加或修改代码。  
@@ -288,6 +283,3 @@ public void MyTestCleanup()
  [编码的 UI 测试的最佳做法](../test/best-practices-for-coded-ui-tests.md)   
  [使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)   
  [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

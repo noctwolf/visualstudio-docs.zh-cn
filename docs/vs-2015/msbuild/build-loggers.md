@@ -1,14 +1,9 @@
 ---
 title: 生成记录器 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing loggers
 - MSBuild, logging
@@ -17,13 +12,13 @@ ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dbf27388013b71945879537dffff1e53a7314e7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 306762ff2f9316043782f64532b278f54fddc1d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853227"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801435"
 ---
 # <a name="build-loggers"></a>生成记录器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
  下面的示例包含记录器的完整代码。  
   
 ### <a name="code"></a>代码  
@@ -81,7 +76,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>描述  
+### <a name="description"></a>说明  
  以下示例演示如何实现将日志写入到文件的记录器（而非在控制台窗口中显示记录器）。  
   
 ### <a name="code"></a>代码  
@@ -92,6 +87,3 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
 ## <a name="see-also"></a>请参阅  
  [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)
-
-
-

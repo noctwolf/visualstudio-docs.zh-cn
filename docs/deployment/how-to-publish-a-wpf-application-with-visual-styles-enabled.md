@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb508a84e9c258463ca2a9f3971cd51d55b402c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c9569ca48ac95ff1f2f99948f6fc700ea6dd8902
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861496"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55029305"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：发布已启用视觉样式的 WPF 应用程序
 视觉样式可启用常用控件以基于用户选择的主题更改的外观。 默认情况下，视觉样式未启用的 Windows Presentation Foundation (WPF) 应用程序中，因此你必须手动启用它们。 但是，启用视觉样式的 WPF 应用程序，然后发布该解决方案将导致错误。 本主题介绍如何解决此错误，发布启用了视觉样式的 WPF 应用程序的过程。 视觉样式的详细信息，请参阅[视觉样式概述](/windows/desktop/Controls/visual-styles-overview)。 有关错误消息的详细信息，请参阅[排查 ClickOnce 部署中的特定错误](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。  
@@ -71,7 +71,7 @@ ms.locfileid: "53861496"
   
          此按钮将显示所有项目项，其中包括已排除，以及通常处于隐藏状态。 清单文件显示为一个项目项。  
   
-2.  生成和发布你的解决方案。 有关如何发布解决方案的详细信息，请参阅[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)  
+2.  生成和发布你的解决方案。 有关如何发布解决方案的详细信息，请参阅[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
 ## <a name="create-a-manifest-file"></a>创建清单文件  
   

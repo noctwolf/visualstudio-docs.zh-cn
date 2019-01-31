@@ -1,14 +1,9 @@
 ---
 title: shell 命令 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - tools.shell
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5f760e449921a45f7ad22a3d81376bca432fe24a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 62b4a3e83b368a015cee30284acee0dbab39ca36
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242211"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779303"
 ---
 # <a name="shell-command"></a>shell 命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
   
 ## <a name="arguments"></a>自变量  
  `path`  
- 必须的。 要执行的文件或要打开的文档的路径和文件名。 如果在环境变量 PATH 的某个目录中没有指定的文件，则必须使用完整路径。  
+ 必需。 要执行的文件或要打开的文档的路径和文件名。 如果在环境变量 PATH 的某个目录中没有指定的文件，则必须使用完整路径。  
   
  `args`  
  可选。 要传递给被调用的程序的任何参数。  
@@ -94,6 +89,3 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
  [“输出”窗口](../../ide/reference/output-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: MIDL 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
 - VC.Project.VCMidlTool.ApplicationConfigurationMode
@@ -31,13 +26,13 @@ ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 345cd480cd5e34a6fe4650c9321d3ad9f90db01e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d0398217bb48786067f8392c5e372b0888d060f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215782"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782470"
 ---
 # <a name="midl-task"></a>MIDL 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +115,7 @@ ms.locfileid: "49215782"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**无**|**/error none**|  
     |**EnableCustom**|**/error**|  
@@ -176,7 +171,7 @@ ms.locfileid: "49215782"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**无**|**/client none**|  
     |**Stub**|**/client stub**|  
@@ -191,7 +186,7 @@ ms.locfileid: "49215782"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**无**|**/server none**|  
     |**Stub**|**/server stub**|  
@@ -342,7 +337,7 @@ ms.locfileid: "49215782"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**NotSet**|*\<none>*|  
     |**Win32**|**/env win32**|  
@@ -365,7 +360,7 @@ ms.locfileid: "49215782"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**NewFormat**|**/newtlb**|  
     |**OldFormat**|**/oldtlb**|  
@@ -414,7 +409,7 @@ ms.locfileid: "49215782"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**0**|**/W0**|  
     |**1**|**/W1**|  
@@ -428,6 +423,3 @@ ms.locfileid: "49215782"
   
 ## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)
-
-
-

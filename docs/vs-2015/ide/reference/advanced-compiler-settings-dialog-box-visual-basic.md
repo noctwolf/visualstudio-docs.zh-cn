@@ -1,14 +1,9 @@
 ---
 title: “高级编译器设置”对话框 (Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
 caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dd910b0e0295ca12807b96af189032ffec766429
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1c1932f3b9a065115c7977207b0678fbcd44c2e4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949820"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758879"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>“高级编译器设置”对话框 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "49949820"
   
 2. 在“项目”菜单上，单击“属性”。 当“项目设计器”出现时，单击“编译”选项卡。  
   
-3. 在[“编译”->“项目设计器”(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)上，依次选择“配置”和“平台”。 在简化生成配置中，不会显示“配置”和“平台”列表。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+3. 在[“编译”->“项目设计器”(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)上，依次选择“配置”和“平台”。 在简化生成配置中，不会显示“配置”和“平台”列表。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
 4. 单击“高级编译选项”。  
   
@@ -70,7 +65,7 @@ ms.locfileid: "49949820"
  默认为选中此复选框，指定设置 TRACE 常量。  
   
  **自定义常量**  
- 在此文本框中输入应用程序的任何自定义常量。 条目应用逗号分隔开，格式为：Name1="Value1",Name2="Value2",Name3="Value3"。  
+ 在此文本框中输入应用程序的任何自定义常量。 条目应使用以下形式用逗号分隔：**Name1="Value1",Name2="Value2",Name3="Value3"**。  
   
 ## <a name="other-settings"></a>其他设置  
  **生成序列化程序集**  
@@ -78,6 +73,3 @@ ms.locfileid: "49949820"
   
 ## <a name="see-also"></a>请参阅  
  [“项目设计器”->“编译”页 (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
-
-
-

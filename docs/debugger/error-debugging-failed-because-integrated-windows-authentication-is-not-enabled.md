@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bac4f319967f241a26ce15133497a88332b96be
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7235985db460c4cddf53c8e9d30c33b5b298bf44
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837623"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018457"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>错误：调试失败，因为没有启用集成 Windows 身份验证
 由于身份验证错误，无法对请求调试的用户进行身份验证。 尝试单步执行 Web 应用程序或 XML Web service 时可能会出现此问题。 导致此错误的一种原因是未启用集成 Windows 身份验证。 若要启用该身份验证，请按照“启用集成 Windows 身份验证”中的步骤操作。  

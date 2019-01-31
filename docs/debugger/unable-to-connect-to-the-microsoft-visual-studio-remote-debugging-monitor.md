@@ -12,15 +12,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8babc9b86cc006e120a76a037260b62852e8f041
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e10252a2065e45a1b2dd14e00972415e24738601
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931328"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926925"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 因为远程调试监视器未正确设置远程计算机上，或者由于网络问题或存在防火墙而无法访问远程计算机，可能会出现此消息。
@@ -30,7 +30,7 @@ ms.locfileid: "53931328"
 
 ## <a name="specificerrors"></a>详细的错误消息是什么？
 
-`Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor`消息是泛型。 通常情况下，更具体的消息包含在错误字符串，它们会帮助您确定问题或搜索提供更精确的修补程序的原因。 下面是几个附加到主错误消息的更常见的错误消息：
+`Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor`是通用消息。 通常情况下，更具体的消息包含在错误字符串，也许能够帮助你确定问题或搜索更精确的修补程序的原因。 下面是几个附加到主错误消息的更常见的错误消息：
 
 - [调试器无法连接到远程计算机。调试器无法解析指定的计算机名称](#cannot_connect)
 - [通过远程调试器拒绝连接请求](#rejected)
@@ -166,4 +166,4 @@ Visual Studio 无法连接到远程调试器。 此消息可能会发生以下�
  若要获取更多远程调试器的帮助，请打开远程调试器的帮助页 (**帮助 > 用法**远程调试器中)。
   
 ## <a name="see-also"></a>请参阅  
- [Remote Debugging](../debugger/remote-debugging.md)
+ [远程调试](../debugger/remote-debugging.md)

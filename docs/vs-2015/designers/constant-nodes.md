@@ -1,25 +1,20 @@
 ---
 title: 常量节点 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b062f6190213fc2b18670f50fdd527c4c3f212a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d38a4f8a182562c11dbb742cb26392218edfd981
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260051"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788452"
 ---
 # <a name="constant-nodes"></a>常量节点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ ms.locfileid: "49260051"
 |**切空间灯光方向**|定义在当前像素的切空间中从光源投射出的光线方向的向量。<br /><br /> 它可用于计算切空间中的光照量和反射量。<br /><br /> **输出：**<br /><br /> `Output`: `float3`<br /> 从当前像素到光源的矢量。|无|  
 |**世界法线**|当前像素在世界空间内的表面法线。<br /><br /> 它可用于计算世界空间内的光照量和光照反射。<br /><br /> **输出**<br /><br /> `Output`: `float3`<br /> 当前像素的表面法线。|无|  
 |**世界位置**|当前像素在世界空间内的位置。<br /><br /> **输出**<br /><br /> `Output`: `float4`<br /> 当前像素的位置。|无|
-
-
-
