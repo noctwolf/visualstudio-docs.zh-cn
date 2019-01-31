@@ -1,27 +1,22 @@
 ---
 title: “调用树”视图 - 争用数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 003e25121b3761a6e9440dcd4f0885975e0d98c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47db94f7602a42ae9e5142ef27213a06adb8865c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816447"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791648"
 ---
 # <a name="call-tree-view---contention-data"></a>“调用树”视图 - 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "51816447"
   
  设置根节点后，将从视图中排除所选节点的子树之外的所有其他条目。 若要将根节点重置回原始节点，可在“调用树”视图中右键单击，然后单击“重置根节点”。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**独占阻塞的时间**|阻止此执行路径中此函数的实例在分析运行中执行的时间。 此时间不包括此函数调用的子函数的阻塞时间。|  
 |**独占阻塞的时间百分比**|此执行路径中此函数的独占阻塞时间占分析运行中的所有阻塞时间的百分比。|  
@@ -61,12 +56,9 @@ ms.locfileid: "51816447"
 |**源文件**|此函数的定义所在的源文件。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
+ [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“调用关系树”视图](../profiling/call-tree-view.md)   
  [“调用关系树”视图 - 检测](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [“调用关系树”视图 - 采样](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [“调用关系树”视图](../profiling/call-tree-view-instrumentation-data.md)   
  [“调用关系树”视图](../profiling/call-tree-view-sampling-data.md)
-
-
-
