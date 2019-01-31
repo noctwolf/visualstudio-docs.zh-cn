@@ -17,15 +17,15 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c89898e5f25c552987ee2d3df1c413c608323c2a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e83ce7c067f056e6bb22b6476de5696005359d61
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928745"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55001795"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>远程调试错误和疑难解答
 尝试远程调试时，可能会遇到下面的错误。  
@@ -39,4 +39,4 @@ ms.locfileid: "53928745"
 -   [错误：远程计算机未显示在“远程连接”对话框中](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
 ## <a name="see-also"></a>请参阅  
- [Remote Debugging](../debugger/remote-debugging.md)
+ [远程调试](../debugger/remote-debugging.md)

@@ -8,13 +8,13 @@ ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 26758c63bb1de64c9497b67afc3f55b73238d5e4
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064055"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834434"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>如何报告 Visual Studio 2015 的问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Visual Studio 2017 的最新文档，请参阅[如何报告 Visual Studio 2017 �
 
 如果你遇到 Visual Studio 2015 的问题，我们想要了解它，以便我们可以诊断和修复此错误。  通过使用“报告问题”  工具，你可以收集有关该问题的详细信息，只需单击几次按钮即可将其发送给 Microsoft。
 
- Microsoft 尊重你的隐私。 有关我们如何处理你发送给我们的数据的信息，请参阅 [Microsoft Visual Studio 产品系列隐私声明](https://www.visualstudio.com/en-us/dn948229)。
+ Microsoft 尊重你的隐私。 有关我们如何处理你发送给我们的数据的信息，请参阅 [Microsoft Visual Studio 产品系列隐私声明](https://www.visualstudio.com/dn948229)。
 
 ## <a name="open-the-report-a-problem-tool"></a>打开“报告问题”工具
  在标题栏中单击“快速启动”旁边的用户反馈图标，或单击“帮助”|“发送反馈”|“报告问题”。

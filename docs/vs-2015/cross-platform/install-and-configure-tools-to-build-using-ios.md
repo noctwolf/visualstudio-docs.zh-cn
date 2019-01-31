@@ -1,27 +1,22 @@
 ---
 title: 安装并配置使用 iOS 进行构建的工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
 caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 6a5d5543ace2087db4ed5349e72fcaf53228d8ec
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c1eaa934c83676ee11854701f372b972f3045e66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787804"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792845"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51787804"
 可以使用用于跨平台移动开发的 Visual C++ 来编辑、调试 iOS 代码，并将其部署到 iOS 模拟器或 iOS 设备，但由于许可限制，该代码必须在 Mac 上远程生成和运行。 若要使用 Visual Studio 生成和运行 iOS 应用，需要在 Mac 上安装并配置远程代理 [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)。 该远程代理会处理来自 Visual Studio 的生成请求，并在连接到 Mac 的 iOS 设备上或 Mac 上的 iOS 仿真程序中运行应用。  
   
 > [!NOTE]
->  有关使用云托管 Mac 服务而非 Mac 的信息，请参阅 [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/en-us/docs/build_ios_cloud/)。 此说明适用于使用 Visual Studio Tools for Apache Cordova 进行生成。 若要使用用于跨平台移动开发的 Visual C++ 进行生成的说明，将 vcremote 替换为 vs-mda-remote 即可。  
+>  有关使用云托管 Mac 服务而非 Mac 的信息，请参阅 [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/)。 此说明适用于使用 Visual Studio Tools for Apache Cordova 进行生成。 若要使用用于跨平台移动开发的 Visual C++ 进行生成的说明，将 vcremote 替换为 vs-mda-remote 即可。  
   
  使用 iOS 进行生成的工具安装完成后，请参阅本主题，了解如何快速配置和更新远程代理以便在 Visual Studio 中和 Mac 上进行 iOS 开发。  
   
@@ -53,7 +48,7 @@ ms.locfileid: "51787804"
   
 -   运行 OS X Mavericks 或更高版本的 Mac 计算机  
   
--   [Apple ID](https://appleid.apple.com/)  
+-    [Apple ID](https://appleid.apple.com/)  
   
 -   Apple 提供的活动 [iOS 开发人员计划](https://developer.apple.com/programs/ios/) 帐户  
   
@@ -247,4 +242,3 @@ ms.locfileid: "51787804"
   
 ## <a name="see-also"></a>请参阅  
  [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
-

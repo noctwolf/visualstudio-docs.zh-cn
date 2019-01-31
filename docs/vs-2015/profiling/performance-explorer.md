@@ -1,14 +1,9 @@
 ---
 title: 性能资源管理器 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance
 - vs.performance.wizard.website
@@ -18,13 +13,13 @@ ms.assetid: df52b717-a55d-4b1d-8c2e-d5a6a38042f4
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ad140fcb81215a27381a75f051f07ca231f3deae
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786101"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784095"
 ---
 # <a name="performance-explorer"></a>性能资源管理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +37,16 @@ ms.locfileid: "51786101"
 |任务|相关内容|  
 |----------|---------------------|  
 |**Windows 8 的新技术**|[Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)|  
-|**了解分析概念：** 学习使用分析工具收集、查看和分析代码性能的过程中将用到的概念和术语。|[概述](../profiling/overviews-performance-tools.md)|  
-|**投入进来然后执行此操作：** 学习使用分析工具收集、查看和分析代码性能时将用到的基本过程。 通过实际演练进行尝试。|[入门](../profiling/getting-started-with-performance-tools.md)|  
+|**了解分析概念：** 了解使用分析工具收集、查看和分析代码性能的过程中将用到的概念和术语。|[概述](../profiling/overviews-performance-tools.md)|  
+|**投入进来然后执行此操作：** 了解使用分析工具收集、查看和分析代码性能时将用到的基本过程。 通过实际演练进行尝试。|[入门](../profiling/getting-started-with-performance-tools.md)|  
 |**配置分析会话：** 了解用于指定要分析的项目或二进制文件、选择分析方法、选择要收集的性能数据及设置其他分析会话选项的的高级方法。|[配置性能会话](../profiling/configuring-performance-sessions.md)|  
 |**控制探查器收集的数据：** 了解如何使用性能会话属性和交互式过程来启动和停止分析，以及如何将搜集的性能数据限制为所需的信息。|[控制数据收集](../profiling/controlling-data-collection.md)|  
-|**查找性能问题：** 了解如何查看和分析分析工具报告视图窗口中的收集的性能数据。|[分析性能工具数据](../profiling/analyzing-performance-tools-data.md)|  
+|**查找性能问题：** 了解如何查看和分析“分析工具报表”视图窗口中的收集的性能数据。|[分析性能工具数据](../profiling/analyzing-performance-tools-data.md)|  
 |**分析性能变化：** 了解如何比较两个探查器数据文件以分析性能变化。|[比较性能数据文件](../profiling/comparing-performance-data-files.md)|  
-|**保存和共享结果：** 了解如何保存分析数据进行存档或共享。|[保存和导出性能工具数据](../profiling/saving-and-exporting-performance-tools-data.md)|  
+|**保存和共享结果：** 了解如何保存分析数据以便进行存档或共享。|[保存和导出性能工具数据](../profiling/saving-and-exporting-performance-tools-data.md)|  
 |**自动分析：** 了解如何从命令提示符使用分析工具。|[从命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)|  
 |**以编程方式控制分析：** 了解如何使用托管的和本机分析工具 API 控制直接收集自源代码的数据。|[分析工具 API](../profiling/profiling-tools-apis.md)|  
 |**分析问题疑难解答**|[性能工具问题疑难解答](../profiling/troubleshooting-performance-tools-issues.md)|  
   
 ## <a name="see-also"></a>请参阅  
  [分析工具](../profiling/profiling-tools.md)
-
-
-

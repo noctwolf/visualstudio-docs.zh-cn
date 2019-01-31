@@ -1,14 +1,9 @@
 ---
 title: 管理应用程序资源 (.NET) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
 - msvse_settingsdesigner.err.formatvalue
@@ -26,13 +21,13 @@ ms.assetid: f2582734-8ada-4baa-8a7c-e2ef943ddf7e
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b29f32fa59f719af3efab6901596b682c95a5d57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8319e4e71b313e0c4614f720cb371b339c09d391
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287217"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784769"
 ---
 # <a name="managing-application-resources-net"></a>管理应用程序资源 (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,5 +41,4 @@ ms.locfileid: "49287217"
 ## <a name="working-with-resources"></a>使用资源  
  在托管代码项目中，打开项目属性窗口（在“解决方案资源管理器”  中，右键单击项目节点并选择“属性” ，或在“快速启动”  窗口中键入 **project properties** ，或在“解决方案资源管理器”  窗口中键入 ALT + ENTER）。 选择“资源”  选项卡。如果你的项目尚未包含 .resx 文件，你可以添加一个，添加和删除不同类型的资源，并修改现有资源。  
   
- 若要了解如何使用 C++ 项目中的资源，请参阅 [How to: Create a Resource](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716)（如何：创建资源）。
-
+ 若要了解如何使用 c + + 项目中的资源，请参阅[如何：创建资源](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716)

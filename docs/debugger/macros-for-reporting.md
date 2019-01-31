@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8453f00dda843f6940c518b7ed3ea83c8c261476
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f185aebdd23bffbcf7b793a9e3fbda4a0b55271
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989969"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54959364"
 ---
 # <a name="macros-for-reporting"></a>用于报告的宏
 对于调试，你可以使用 **_RPTn**并 **_RPTFn**在 CRTDBG 中定义的宏。H、 要替换的使用`printf`语句。 无需在 inclose **#ifdef**s，因为它们自动不会显示在你的发布生成时 **_DEBUG**并不定义。  
