@@ -1,22 +1,18 @@
 ---
 title: 导入 XCode 项目 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: aa4b8161-d98f-4a1a-9db3-520133bfc82f
 caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: b0e42c167e87f19781f9544e20e7870789af4ef9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d04c82a5122aae263676a43367105d44e3aa75a5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754155"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788793"
 ---
 # <a name="import-an-xcode-project"></a>导入 XCode 项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,4 +76,3 @@ ms.locfileid: "51754155"
     若要使用向导设置导入 XCode 项目，请选择“导入”。  
   
    “从 XCode 导入”向导会在 Visual Studio 中创建与所选 XCode 项目目标对应的项目。 可与其他 C++ 项目共享的代码会拆分为单独的共享代码和静态库项目。 剩下的代码将放置在可由 Visual Studio 远程生成的 iOS 库和应用程序项目中。 若要深入了解如何在 Visual Studio 和 XCode 间移动代码，请参阅[在 XCode 和 Visual Studio 之间同步更改](../cross-platform/sync-changes-between-xcode-and-visual-studio.md)。
-

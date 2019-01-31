@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6991ea91-5253-451b-923d-22273a3d38b1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880966e78bd2e27159b1ede81c07aa15aa994e75
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 373fa21a0ec588768017bcbcd8b0fdc4587bf091
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53921252"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976519"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>如何：使用受限权限调试 ClickOnce 应用程序
 作为开发人员，你很可能使用完全信任权限运行开发计算机，因此在调试 ClickOnce 应用程序时不会遇到最终用户在使用受限权限运行它时可能会遇到的相同安全异常。  

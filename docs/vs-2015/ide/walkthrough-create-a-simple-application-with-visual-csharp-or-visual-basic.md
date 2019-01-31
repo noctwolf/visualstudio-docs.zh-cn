@@ -1,27 +1,22 @@
 ---
-title: 演练：使用 Visual C# 或 Visual Basic 创建简单应用程序 | Microsoft Docs
-ms.custom: ''
+title: 演练：使用视觉对象创建一个简单的应用程序C#或 Visual Basic |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 51fc073046833165097a8a9a4fb2f169ed3a04e7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851681"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802611"
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>演练：使用 Visual C# 或 Visual Basic 创建简单应用程序
+# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>演练：使用视觉对象创建一个简单的应用程序C#或 Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 通过完成本演练，你将熟悉在使用 Visual Studio 开发应用程序时可使用的许多工具、对话框和设计器。 你将创建一个简单的“Hello, World”样式的应用程序、设计 UI、添加代码并调试错误，同时会更多地了解如何在集成开发环境 (IDE) 中工作。  
@@ -35,14 +30,14 @@ ms.locfileid: "49851681"
  [调试并测试应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  此演练基于 Visual Studio Professional，你将使用其中提供的 WPF 应用程序模板生成用于此演练的项目。 Visual Studio Express for Windows Desktop 也提供此模板，但 Visual Studio Express for Windows 和 Visual Studio Express for Web 不提供。 有关如何使用 Visual Studio Express for Windows 的介绍性信息，请参阅 [Windows 应用商店应用开发人员中心](http://msdn.microsoft.com/windows/apps/br229519)。 有关如何使用 Visual Studio Express for Web 的介绍性信息，请参阅 [Get Started with ASP.NET](http://www.asp.net/get-started)（ASP.NET 入门）。 此外，你的 Visual Studio 版本和你使用的设置将决定某些用户界面元素的名称和位置。 请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  此演练基于 Visual Studio Professional，你将使用其中提供的 WPF 应用程序模板生成用于此演练的项目。 Visual Studio Express for Windows Desktop 也提供此模板，但 Visual Studio Express for Windows 和 Visual Studio Express for Web 不提供。 有关如何使用 Visual Studio Express for Windows 的介绍性信息，请参阅 [Windows 应用商店应用开发人员中心](http://msdn.microsoft.com/windows/apps/br229519)。 有关如何使用 Visual Studio Express for Web 的介绍性信息，请参阅 [Get Started with ASP.NET](http://www.asp.net/get-started)（ASP.NET 入门）。 此外，你的 Visual Studio 版本和你使用的设置将决定某些用户界面元素的名称和位置。 请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ##  <a name="BKMK_ConfigureIDE"></a> 配置 IDE  
  第一次启动 Visual Studio 时，Visual Studio 会提示使用 Microsoft 服务帐户 (MSA)登录， [登录到 Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)。 您不需要登录，而是可以稍后登录。  
   
  在您的 Visual Studio 启动时，您接下来必须选择适用于 IDE 的一组预定义的自定义项的设置组合。 每个设置组合旨在使你更轻松地开发应用程序。  
   
- 此演练假设您应用 **常规开发设置**，这样对 IDE 应用的自定义项数量最少。 如果您已经选择 C# 或 Visual Basic（两者都是很好的选择），您无需更改您的设置。  如果您想要更改您的设置，则可以使用 **导入和导出设置向导**。 请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+ 此演练假设您应用 **常规开发设置**，这样对 IDE 应用的自定义项数量最少。 如果您已经选择 C# 或 Visual Basic（两者都是很好的选择），您无需更改您的设置。  如果您想要更改您的设置，则可以使用 **导入和导出设置向导**。 请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  在你打开 Visual Studio 后，可识别工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口停靠在应用程序窗口的左侧和右侧，其顶部有 **“快速启动”**、菜单栏和标准工具栏。 应用程序窗口的中心是 **“起始页”**。 当您加载解决方案或项目时，编辑器和设计器将显示在 **起始页** 的空间中。 开发应用程序时，大部分时间都将用在此中心区域。  
   
@@ -72,7 +67,7 @@ ms.locfileid: "49851681"
   
    ![应用了深色主题的 IDE](../ide/media/exploreide-darkthemeide.png "ExploreIDE DarkThemeIDE")  
   
-   本演练剩余部分的图片使用的颜色主题是浅色主题。 有关自定义 IDE 的详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+   本演练剩余部分的图片使用的颜色主题是浅色主题。 若要深入了解如何自定义 IDE，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ##  <a name="BKMK_CreateApp"></a> 创建简单的应用程序  
   
@@ -97,7 +92,7 @@ ms.locfileid: "49851681"
   
     ![创建 Visual C# WPF 项目，HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
-   Visual Studio 将创建 HelloWPFApp 项目和解决方案， **解决方案资源管理器** 将显示各种文件。 WPF 设计器在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。  您可以选择只查看可视化视图或 XAML 视图。 （有关详细信息，请参阅 [适用于 Windows 窗体开发人员的 WPF 设计器](http://msdn.microsoft.com/en-us/47ad0909-e89b-4996-b4ac-874d929f94ca)）。 **“解决方案资源管理器”** 中显示以下项：  
+   Visual Studio 将创建 HelloWPFApp 项目和解决方案， **解决方案资源管理器** 将显示各种文件。 WPF 设计器在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。  您可以选择只查看可视化视图或 XAML 视图。 （有关详细信息，请参阅 [适用于 Windows 窗体开发人员的 WPF 设计器](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)）。 “解决方案资源管理器”中显示以下项：  
   
    图 5：项目项  
   
@@ -137,7 +132,7 @@ ms.locfileid: "49851681"
   
    你的窗口应与下图类似：  
   
-   图 7：具有 TextBlock 控件的 Greetings 窗口  
+   图 7.具有 TextBlock 控件的 greetings 窗口  
   
    ![Greetings 窗体上的 TextBlock 控件](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE GreetingswithTextblockonly")  
   
@@ -167,7 +162,7 @@ ms.locfileid: "49851681"
   
     你的窗口应如下所示：  
   
-    图 8：Greetings 窗口中的 RadioButton。  
+    图 8- 20。Greetings 窗口中的单选按钮。  
   
     ![包含文本块和两个单选按钮的 Greetings 窗体](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE Greetingswithradiobuttons")  
   
@@ -264,7 +259,7 @@ ms.locfileid: "49851681"
   
     ![“调试”菜单上的“启动调试”命令](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-    此时将显示对话框，指示 IOException 已发生：无法定位资源“mainwindow.xaml”。  
+    出现一个对话框，指示 IOException 已发生：“找不到资源 'mainwindow.xaml'”。  
   
 2. 选择 **“确定”** 按钮，然后停止调试器。  
   
@@ -340,6 +335,3 @@ ms.locfileid: "49851681"
  [Visual Studio 2015 中的新增功能](../what-s-new-in-visual-studio-2015.md)   
  [Visual Studio 开发入门](../ide/get-started-developing-with-visual-studio.md)   
  [工作效率提示](../ide/productivity-tips-for-visual-studio.md)
-
-
-

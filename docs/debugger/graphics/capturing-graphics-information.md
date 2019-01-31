@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 187ce86e-e340-4f6c-8937-8e8f1027a17f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ad611c2f8dc04eb92ba4be112d32d49808f3c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5f6bbaf9a387a43accfd779c9583687ec98b1813
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838146"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952426"
 ---
 # <a name="capturing-graphics-information"></a>捕获图形信息
 从 Direct3D 应用捕获图形信息，以便使用 Visual Studio 图形分析器来诊断呈现问题和性能问题。  
@@ -78,7 +78,7 @@ ms.locfileid: "53838146"
   
  配置项目以进行远程调试的方式取决于你开发的应用程序类型以及你使用的编程语言。 有关如何配置远程调试 UWP 应用的信息，请参阅[远程计算机上的运行 UWP 应用](../run-windows-store-apps-on-a-remote-machine.md)。 有关如何配置远程调试 Windows 桌面应用程序的信息，请参阅[远程调试](../remote-debugging.md)。  
   
- 之后，可以使用远程计算机或设备播放图形信息，而无论信息从何处捕获。 有关更多信息，请参见[如何：更改图形诊断播放计算机](how-to-change-the-graphics-diagnostics-playback-machine.md)。  
+ 之后，可以使用远程计算机或设备播放图形信息，而无论信息从何处捕获。 有关详细信息，请参阅[如何：更改图形诊断播放计算机](how-to-change-the-graphics-diagnostics-playback-machine.md)。  
   
 ## <a name="capturing-graphics-information-from-the-command-line"></a>从命令行捕获图形信息  
  可使用命令行工具从应用捕获图形信息。 DXCap.exe 这一工具可以快速捕获和播放图形信息，而不使用 Visual Studio 或编程捕获。 具体而言，你可以使用 DXCap.exe 来实现自动化，或在测试环境中使用。 有关 DXCap.exe 的详细信息，请参阅[命令行捕获工具](command-line-capture-tool.md)  

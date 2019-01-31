@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6397944a39a0424211c57ddfe1ad045fce730ec3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9878c3aa3f7ca7ae2a1606e3dd455731c0d9876b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911658"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54917752"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的发布页
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，生成默认网页 (publish.htm) 并将其随应用程序一起发布。 此页包含的应用程序、 安装应用程序和/或任何系统必备组件的链接和帮助主题描述的链接名称[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 **发布页面**为你的项目的属性，可指定的 Web 页面的名称在[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  
   
- 后指定发布页下, 一次发布时，它会复制到发布位置;它不会再次发布如果被覆盖。 如果你想要自定义页面的外观，就可以做到而无需担心丢失所做的更改。 有关更多信息，请参见[如何：自定义 ClickOnce 默认网页](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)。  
+ 后指定发布页下, 一次发布时，它会复制到发布位置;它不会再次发布如果被覆盖。 如果你想要自定义页面的外观，就可以做到而无需担心丢失所做的更改。 有关详细信息，请参阅[如何：自定义 ClickOnce 默认网页](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)。  
   
  **发布页面**可以在属性设置**发布选项**对话框中，可通过访问**发布**窗格**项目设计器**.  
   

@@ -1,14 +1,9 @@
 ---
 title: XDCMake 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.xdcmake
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: caf3803edff01e6ffe650f18aaccef99fc50728f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 58257921634e1afb89dfc0c012728523bc98a2ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204875"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792884"
 ---
 # <a name="xdcmake-task"></a>XDCMake 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "49204875"
 ## <a name="parameters"></a>参数  
  下表介绍了 **XDCMake** 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |**AdditionalDocumentFile**|可选 **String []** 参数。<br /><br /> 指定还要合并的一个或多个 .xdc 文件。<br /><br /> 有关详细信息，请参阅[“XML 文档生成器工具”属性页](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)中的**附加文档文件**说明。 另请参阅 xdcmake.exe 的 **/old** 和 **/Fs** 命令行选项。|  
 |**AdditionalOptions**|可选 **String** 参数。<br /><br /> 在命令行上指定的选项列表。 例如，“*/option1 /option2 /option#*”。 此参数用于指定无法由其他任何 **XDCMake** 任务参数表示的选项。<br /><br /> 有关详细信息，请参阅 [XDCMake 参考](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)、[“XML 文档生成器工具”属性页](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)和 xdcmake.exe 的命令行帮助 (**/?**)。|  
@@ -60,6 +55,3 @@ ms.locfileid: "49204875"
   
 ## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)
-
-
-

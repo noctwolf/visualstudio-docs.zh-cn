@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5be5c3cb48f2cd9846c9b40c967cf830c30f4d8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 281c971e018a775f0e2c8ff700875a9fc0a9a2b7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922989"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54976467"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 可以在 Visual C++ 项目中使用 Edit and Continue。 请参阅[支持的代码更改 (C++)](../debugger/supported-code-changes-cpp.md)，了解有关 Edit and Continue 的限制的信息。
@@ -52,7 +52,7 @@ ms.locfileid: "53922989"
    更改此设置将影响当前处理的所有项目。 更改此设置后不需要重新生成应用程序。 如果从命令行或生成文件生成应用程序，但在 Visual Studio 环境中调试，则仍可以使用 Edit and Continue（如果已设置“/ZI”选项）。  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> 如何显式应用代码更改  
- 在 Visual C++ 中，“Edit and Continue”可以通过两种方法应用代码更改。 代码更改可在选择执行命令时隐式应用，也可使用 **“应用代码更改”** 命令显式应用。  
+ 在 Visual C++ 中，“编辑并继续”可以以两种方法应用代码更改。 代码更改可在选择执行命令时隐式应用，也可使用 **“应用代码更改”** 命令显式应用。  
   
  选择执行命令时可以隐式应用代码更改；  
   
@@ -67,10 +67,10 @@ ms.locfileid: "53922989"
   
   该菜单项仅在应用代码更改时才可见。  
   
-  如果选择了该选项，就不会提交任何代码更改。  
+  如果选择了改选项，就不会进行任何代码更改。  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> 如何重置执行点  
- 在“编辑并继续”应用了更改后，一些代码更改会使执行点移动到新的位置。 “编辑并继续”会尽可能正确地放置执行点，但是并非所有情况下的结果都正确。  
+ 在“编辑并继续”应用更改时，一些代码更改会使执行点移动到新的位置。 “编辑并继续”尽可能正确地放置执行点，但是并非所有情况下的结果都正确。  
   
  在 Visual C++ 中，当执行点发生更改时，会显示一个对话框来提示此情况。 在继续调试之前，应验证位置是否正确。 如果位置不正确，则使用**设置下一语句**命令。 有关详细信息，请参阅[设置下一个要执行的语句](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute)。  
   

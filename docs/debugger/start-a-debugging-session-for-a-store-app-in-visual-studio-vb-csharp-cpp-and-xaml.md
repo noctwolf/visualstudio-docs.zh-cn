@@ -32,15 +32,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3c2ef4e92cddb302e67f99c921750d4e9e83d98e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 02a8a2645453d1f170085998bf12412eb7eb5925
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901975"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54918454"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>启动 UWP 应用的调试会话
   
@@ -198,7 +198,7 @@ ms.locfileid: "53901975"
    
 1. 在中**可用进程**列表中，选择要调试的应用程序进程。  
    
-1. 选择**附加**。  
+1. 选择“附加”。  
   
  Visual Studio 将调试器附加到该进程。 持续执行至抵达某个断点、手动暂停执行、发生无法处理的异常或应用程序结束为止。
 

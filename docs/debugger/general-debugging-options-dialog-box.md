@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fa48ff41739752ff37817192b26483a23579419
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45e4fb01613ab3d1ea2a5d521abccf81471a89bb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829468"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54985758"
 ---
 # <a name="general-debugging-options"></a>常规调试选项
 
@@ -49,7 +49,7 @@ ms.locfileid: "53829468"
 
 3. 代码通过使用反射调用一个函数时且该函数引发异常。 请参阅[反射](/dotnet/framework/reflection-and-codedom/reflection)。
 
-在 2 和 3 的情况下，异常有时由 `mscorlib` 中的托管代码而非由公共语言运行时捕获。 此选项不影响针对 `mscorlib` 捕获的异常执行中断。
+在 2 和 3 的情况下，异常有时由 `mscorlib` 中的托管代码而非由公共语言运行时捕获。 此选项不影响在 `mscorlib` 捕获到异常时中断。
 
 **启用地址级调试**：  
 启用高级功能在地址级上进行调试（“反汇编”窗口、“注册”窗口和地址断点)。
@@ -58,7 +58,7 @@ ms.locfileid: "53829468"
     调试的代码来源不可用时，自动显示“反汇编”窗口。
 
 **启用断点筛选器**：  
-可在断点上设置筛选器，使其仅影响特定进程、线程或计算机。
+允许你在断点上设置筛选器，使其仅影响特定的进程、线程或计算机。
 
 **使用新的异常帮助器**：  
 启用异常帮助器 (Visual Studio 2017) 来替换异常助手。
@@ -187,7 +187,7 @@ ms.locfileid: "53829468"
 调试时启用编辑并继续功能。
 
 - **启用本机“编辑并继续”**：  
-    在调试本机 C++ 代码时，可以使用“编辑并继续”功能。 有关详细信息，请参阅[编辑并继续 (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)。
+    在调试本机 C++ 代码时，你可以使用“编辑并继续”功能。 有关详细信息，请参阅[编辑并继续 (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)。
 
 - **继续执行进程时应用更改（仅限本机）**:   
     从中断状态中恢复并继续执行进程时，Visual Studio 会自动编译并应用任何待执行的代码更改。 可选择使用“调试”菜单下的“应用代码更改”项来应用更改（如果尚未选择）。

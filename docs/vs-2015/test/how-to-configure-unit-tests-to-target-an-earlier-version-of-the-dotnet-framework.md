@@ -1,24 +1,19 @@
 ---
-title: 如何：配置单元测试以面向 .NET Framework 的早期版本 | Microsoft Docs
-ms.custom: ''
+title: 如何：配置单元测试以面向.NET Framework 的早期版本 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 68a0c1b707011026d4fe58d86fc187b0152dae3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892785"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795855"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：配置单元测试以面向 .NET Framework 的早期版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,10 +126,7 @@ ms.locfileid: "49892785"
 8.  在解决方案资源管理器中，从新的 Visual C++ 测试项目的快捷菜单中选择“重载项目”。  
   
 ## <a name="see-also"></a>请参阅  
- [为现有代码创建和运行单元测试](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [为现有代码创建和运行单元测试](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [创建 SharePoint 解决方案](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
  [生成和调试 SharePoint 解决方案](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [“高级编译器设置”对话框 (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
-
-
-

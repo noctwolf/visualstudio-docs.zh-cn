@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e474bba5168867180f0f50a927ea4c71ebe0370
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf4e015da7f5661f0964e9f60d65f39b665fe9d7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907847"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54973962"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>如何：将必备组件与 ClickOnce 应用程序一起安装
 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序要求的计算机上安装.NET Framework 的正确版本之前可运行; 许多应用程序具有其他系统必备组件。 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序中，可以选择一组的系统必备组件以与你的应用程序一起打包。 在安装时，检查会执行针对每个必备项，以确定它是否已存在;如果在安装之前将不安装[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  
@@ -29,7 +29,7 @@ ms.locfileid: "53907847"
  而不是打包和发布系统必备组件，还可以指定组件的下载位置。 例如，而不是将与每个发布的应用程序的必备组件，您可以使用集中式的文件共享或包含的所有系统必备组件的安装程序的 Web 位置，在安装时，将下载的组件和从该位置安装。  
   
 > [!IMPORTANT]
->  应将必备组件安装程序的包添加到开发计算机中，然后发布您的第一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 有关更多信息，请参见[如何：将必备组件与 ClickOnce 应用程序一起添加](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)。  
+>  应将必备组件安装程序的包添加到开发计算机中，然后发布您的第一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 有关详细信息，请参阅[如何：将必备组件与 ClickOnce 应用程序一起添加](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)。  
   
  在中管理的先决条件**先决条件**对话框中，可通过访问**发布**窗格**项目设计器**。  
   

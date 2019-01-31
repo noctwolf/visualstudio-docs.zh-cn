@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c795671f6e8f5f47d8b0da7e36fbb1f81ab95c28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 73d4d32af6e3aa76dd586f665c66d3ef014518ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958050"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961619"
 ---
 # <a name="process-search-dialog-box"></a>“进程搜索”对话框
 使用此对话框来查找和选择的节点中的特定进程[进程视图](../debugger/processes-view.md)。 若要显示此对话框中，将焦点移至**进程**视图窗口。 然后选择**查找进程**从**搜索**菜单。  
@@ -42,7 +42,7 @@ ms.locfileid: "53958050"
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。  
+ 介绍 Spy + + 工具，并说明如何使用它。  
   
  [“进程属性”对话框](../debugger/process-properties-dialog-box.md)  
  用于显示在进程视图中选择的进程的属性。  

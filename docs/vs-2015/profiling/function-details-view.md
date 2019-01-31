@@ -1,14 +1,9 @@
 ---
 title: 函数详细信息视图 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.functiondetails
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e6f2246cfe9eb2ae9ae6641ca316db440f153f92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 107730fbb2dd78ddc9de8eaddc006bf01562af16
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799582"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784465"
 ---
 # <a name="function-details-view"></a>函数详细信息视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +73,7 @@ ms.locfileid: "51799582"
 ## <a name="function-performance-details"></a>函数性能详细信息  
  “函数性能详细信息”表提供所选函数的性能指标的摘要数据。 同时显示值和百分比。 在“性能指标”列表中指定图表和详细信息表中显示的分析数据。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**独占**|- 执行函数体时产生的性能指标的量。|  
 |**在调用中**|- 所选函数所调用的函数中产生的性能指标的量。|  
@@ -119,6 +114,3 @@ ms.locfileid: "51799582"
 |-|-|  
 |**非独占争用数（争用数）**|- 对于**调用函数**，为由该函数调用的所选函数实例中发生的资源争用事件数。 此数量包括由所选函数调用的函数中的争用事件。<br />- 对于**函数体**，为该函数执行自身代码时发生的争用事件总数。 不包括由所选函数调用的函数中发生的争用。<br />- 对于被调用函数，为所选函数调用的函数实例中发生的争用事件数。 此数量包括该函数调用的函数中发生的争用事件。|  
 |**非独占阻塞的时间（阻塞时间）**|- 对于调用函数，为该函数调用的所选函数实例的资源争用事件所用的时间。 此时间包括所选函数调用的函数中的阻塞时间。<br />- 对于**函数体**，为该函数执行自身代码时发生的争用事件中所用的总时间。 不包括所选函数调用的函数中发生的争用。<br />- 对于被调用函数，为所选函数调用的函数实例的资源争用事件中所用的时间。 此时间包括该函数调用的函数中发生的阻塞时间。|
-
-
-

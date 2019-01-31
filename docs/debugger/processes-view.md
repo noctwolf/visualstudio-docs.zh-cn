@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b898713b456afd72f6453bad01028af9090b8dd2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3b3dad44f0c3971ed3b206db9b3c022f8375153a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922950"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024664"
 ---
 # <a name="processes-view"></a>进程视图
 进程视图显示在系统上的所有活动进程树。 显示进程 ID 和模块名称。 如果你想要检查特定系统进程，它通常对应于正在执行的程序，请使用进程视图。 进程标识由模块名称，或者它们被指定"系统进程"。  
@@ -49,7 +49,7 @@ ms.locfileid: "53922950"
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。  
+ 介绍 Spy + + 工具，并说明如何使用它。  
   
  [“进程搜索”对话框](../debugger/process-search-dialog-box.md)  
  用于查找特定的进程在进程视图中的节点。  

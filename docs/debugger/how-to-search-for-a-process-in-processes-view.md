@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 7cb97b37-4a95-4f1b-9eee-4910aa9c115b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ba4d0f6aee4b81e5be4c9ff896043bd8a164abb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d492d741cef4cba98e5c48c1b95116d1dbcffc5e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988749"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54932449"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在进程视图中搜索进程
 可以通过将其进程 ID 或模块字符串用作搜索条件来搜索特定的进程在进程视图中。 此外可以指定搜索的初始传递方向。 进程树中，在对话框中的字段将显示所选的进程的属性。  
