@@ -13,21 +13,21 @@ helpviewer_keywords:
 ms.assetid: bb668527-2288-47bd-a6c8-cecbad76dde2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89a5f1a5e5f90357d2f48ccd295356129da8a398
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cec8e999ef4cf472ceabd56b30ec19c1077e31d1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898710"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992712"
 ---
 # <a name="client-side-script-debugging"></a>客户端脚本调试
 Visual Studio 调试器提供了一个全面的调试环境，以便查找和更正 ASP.NET 页上客户端脚本中的错误。  
   
 ## <a name="opening-script-documents"></a>打开脚本文档  
-可在要查看的“解决方案资源管理器”中查看服务器端和客户端脚本文档的列表。 可以从 **“解决方案资源管理器”** 中打开任何脚本文档。 有关更多信息，请参见[如何：查看脚本文档](../debugger/how-to-view-script-documents.md)。  
+可在要查看的“解决方案资源管理器”中查看服务器端和客户端脚本文档的列表。 可以从 **“解决方案资源管理器”** 中打开任何脚本文档。 有关详细信息，请参阅[如何：查看脚本文档](../debugger/how-to-view-script-documents.md)。  
   
 ## <a name="breakpoint-mapping"></a>断点映射  
  在 Visual Studio 中，不能直接调试服务器端代码，但可以在服务器端文件中设置断点。 Visual Studio 会自动将断点映射到客户端文件中的对应位置，并在客户端代码中创建映射的断点。  
@@ -35,7 +35,7 @@ Visual Studio 调试器提供了一个全面的调试环境，以便查找和更
 ## <a name="manually-or-automatically-attaching-to-script"></a>手动或自动附加到脚本  
  若要开始在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中调试脚本，必须将调试器附加到要调试的脚本中。 这可以手动实现，也可以自动实现。  
   
- 可以通过使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器界面选择要将调试器附加到的正在运行的脚本进程来手动进行附加。 有关更多信息，请参见[如何：附加到脚本](../debugger/how-to-attach-to-script.md)。  
+ 可以通过使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器界面选择要将调试器附加到的正在运行的脚本进程来手动进行附加。 有关详细信息，请参阅[如何：附加到脚本](../debugger/how-to-attach-to-script.md)。  
   
  当出现下列情况之一时，调试器会自动附加到脚本中：  
   

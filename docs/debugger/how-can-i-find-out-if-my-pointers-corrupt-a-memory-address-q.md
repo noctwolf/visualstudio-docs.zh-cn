@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: a147c939-4fb1-415c-8410-cf303781e9e8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fbefd3d70d061e6c02ee8d7d0318f046467d713
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6970192e0c344a2d24389059ed299e20d1ff9bb7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821894"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54947083"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何查明指针是否损坏了内存地址？
 ## <a name="problem-description"></a>问题描述  
@@ -45,5 +45,5 @@ ms.locfileid: "53821894"
 2.  当命中断点时，使用“内存”窗口，以查看从 0x00408000 开始的内存内容。 有关详细信息，请参阅[内存窗口](../debugger/memory-windows.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)   
+ [调试本机代码常见问题](../debugger/debugging-native-code-faqs.md)   
  [调试本机代码](../debugger/debugging-native-code.md)

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5dff3393-fdeb-4129-a2f6-31f653107a82
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bea1024af65ae788cae9909d3b6e86f1ae84dc4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f4a7346d9398ab9743319661efffdaf3f1f4b89b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916752"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018600"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>“为远程调试配置防火墙”对话框
 当 Windows 防火墙阻止调试器通过网络接收信息时，会出现此对话框。 若要继续进行远程调试，则必须在防火墙上打开一个口以使调试器能够接收信息。  
@@ -45,5 +45,5 @@ ms.locfileid: "53916752"
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
- [Remote Debugging](../debugger/remote-debugging.md)  
+ [远程调试](../debugger/remote-debugging.md)  
  [调试用户界面参考](../debugger/debugging-user-interface-reference.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f67a8e354addef7aca298ebac3740702951a17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: db1b4ec3c2ae5fa0b24c3981e2b0296b54aec3cb
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869870"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55016344"
 ---
 # <a name="messages-view"></a>消息视图
 每个窗口都有相关联的消息流。 消息视图窗口会显示此消息流。 显示的窗口句柄、 消息代码和消息。 可以创建线程或进程以及消息视图。 这样，您可以查看发送到特定的进程或线程，尤其是用于捕获窗口初始化消息所拥有的所有窗口的消息。  
@@ -71,7 +71,7 @@ Spy++ 消息视图
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。  
+ 介绍 Spy + + 工具，并说明如何使用它。  
   
  [“消息选项”对话框](../debugger/message-options-dialog-box.md)  
  用于选择要在活动的消息视图中列出的消息。  

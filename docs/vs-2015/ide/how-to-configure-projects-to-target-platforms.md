@@ -1,14 +1,9 @@
 ---
-title: 如何：配置项目以面向目标平台 | Microsoft Docs
-ms.custom: ''
+title: 如何：配置项目以面向目标平台 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project settings [Visual Studio], targeting platforms
 - platforms, targeting specific CPUs
@@ -22,15 +17,15 @@ ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4e2b39aa13316b1b9ca47c5587ffabf6f6a14e68
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ee35a42ea28295869fe05bf6cd1d2c49f12cc39b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843049"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791405"
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>如何：配置项目以面向目标平台
+# <a name="how-to-configure-projects-to-target-platforms"></a>如何：将项目配置为面向平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将应用程序设置为面向不同平台（包括 64 位平台）。 若要深入了解 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中对 64 位平台的支持，请参阅 [64 位应用程序](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。  
@@ -73,6 +68,3 @@ ms.locfileid: "49843049"
  [-platform（C# 编译器选项）](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
  [64 位应用程序](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Visual Studio IDE 64 位支持](../ide/visual-studio-ide-64-bit-support.md)
-
-
-

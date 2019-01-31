@@ -18,16 +18,16 @@ helpviewer_keywords:
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: e485223f73a74a97dd388a9c78dd4cf543a92350
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5a8d533b647861b8185a65c926f1783744cded74
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936186"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004391"
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 验证数据是输入到数据对象的值符合数据集的架构内的约束的确认过程。 验证过程还确认这些值都遵循已为你的应用程序建立的规则。 最好验证之前将更新发送到基础数据库的数据。 这将减少错误，以及潜在的应用程序和数据库之间的往返行程量。
@@ -39,9 +39,9 @@ ms.locfileid: "53936186"
 ## <a name="validate-data"></a>验证数据
  在数据集中的验证是按以下方式实现的：
 
--   通过创建自己的特定于应用程序的验证，可在更改过程中检查各个数据列中的值。 有关更多信息，请参见[如何：在列更改过程中验证数据](validate-data-in-datasets.md)。
+-   通过创建自己的特定于应用程序的验证，可在更改过程中检查各个数据列中的值。 有关详细信息，请参阅[如何：在列更改过程中验证数据](validate-data-in-datasets.md)。
 
--   通过创建自己的特定于应用程序的验证，可以检查整个数据时对值的数据行发生了变化。 有关更多信息，请参见[如何：在行更改过程中验证数据](validate-data-in-datasets.md)。
+-   通过创建自己的特定于应用程序的验证，可以检查整个数据时对值的数据行发生了变化。 有关详细信息，请参阅[如何：在行更改过程中验证数据](validate-data-in-datasets.md)。
 
 -   通过创建关键字、 唯一约束，等等为数据集的实际架构定义的一部分。
 

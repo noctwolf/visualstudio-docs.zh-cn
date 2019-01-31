@@ -1,27 +1,22 @@
 ---
-title: 如何：设置 IDE 辅助功能选项 | Microsoft Docs
-ms.custom: ''
+title: 如何：设置 IDE 辅助功能选项 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 485529a8be2adf57f7b79a3d2f0844d662920448
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b1f70f2f33b8ad0af4f0fa13489cb75be529c322
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867281"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803218"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：设置 IDE 辅助功能选项
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,12 +27,12 @@ ms.locfileid: "49867281"
  此外，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支持 Dvorak 键盘布局，这些布局使最频繁键入的字符使用起来更为方便。 还可以自定义适用于 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 的默认快捷键。 有关详细信息，请参阅[标识并自定义键盘快捷方式](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>编辑器、对话框和工具窗口  
  默认情况下，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 中的对话框和工具窗口使用与操作系统相同的字号和颜色。 IDE 框架、对话框、工具栏和工具窗口的颜色设置是基于配色方案的：深色或浅色。 可在[“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)中更改当前颜色主题。  
   
- 也可以在编辑器的“代码”视图中显示弹出窗口。 弹出窗口可以提示当前对象和参数的可用成员，以便完成函数或语句。 在键入有困难的情况下，这些窗口非常有用。 但是，它们会干扰代码编辑器中的焦点，这可能会对某些用户造成困扰。 通过打开“选项”对话框，并在“选项”对话框的“文本编辑器”->“所有语言”->“常规”页上清除“自动列出成员”和“参数信息”，可以关闭这些窗口。 有关详细信息，请参阅[如何：设置常规编辑器选项](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)。  
+ 也可以在编辑器的“代码”视图中显示弹出窗口。 弹出窗口可以提示当前对象和参数的可用成员，以便完成函数或语句。 在键入有困难的情况下，这些窗口非常有用。 但是，它们会干扰代码编辑器中的焦点，这可能会对某些用户造成困扰。 通过打开“选项”对话框，并在“选项”对话框的“文本编辑器”->“所有语言”->“常规”页上清除“自动列出成员”和“参数信息”，可以关闭这些窗口。 有关详细信息，请参阅[如何：设置常规编辑器选项](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)。  
   
  可以在集成开发环境 (IDE) 中重新排列窗口，以最适合的方式开展工作。 可以停靠、浮动、隐藏或自动隐藏每个工具窗口。  
   
@@ -89,7 +84,7 @@ ms.locfileid: "49867281"
   
 4.  从“显示项”中选择要更改其显示方式的项，例如“纯文本”、“指示器边距”、“可见空白”、“HTML 特性名”或“XML 特性”。  
   
-5.  从下列选项中选择显示设置：“项前景”、“项背景”和“粗体”。  
+5.  从以下选项中选择显示设置：“项前景色”、“项背景色”和“粗体”。  
   
 6.  选择 **“确定”**。  
   
@@ -119,6 +114,3 @@ ms.locfileid: "49867281"
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 的辅助功能](../../ide/reference/accessibility-features-of-visual-studio.md)   
  [用于设计支持辅助功能的应用程序的资源](../../ide/reference/resources-for-designing-accessible-applications.md)
-
-
-

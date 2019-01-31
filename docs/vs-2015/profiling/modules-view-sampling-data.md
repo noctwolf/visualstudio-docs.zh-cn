@@ -1,14 +1,9 @@
 ---
 title: “模块”视图 - 采样数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 - sampling profiling method,Modules view
@@ -16,13 +11,13 @@ ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a885ca96ce58be7448f5b9b814457b38e08a1233
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 04c714576a0207d4168f20a241d6f0c7dd29298c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742492"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784452"
 ---
 # <a name="modules-view---sampling-data"></a>“模块”视图 - 采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "51742492"
   
  如果在收集样本时执行函数（即函数处于调用堆栈顶部），则执行的源行和指令地址在函数节点下列出。 因为在执行行或指令时会为源行或指令指针收集数据，所以非独占和独占值对于行数据和指令数据始终是相同的。  
   
-|列|描述|  
+|列|说明|  
 |------------|-----------------|  
 |**名称**|模块、函数、行号或指令指针地址的名称。|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
@@ -52,6 +47,3 @@ ms.locfileid: "51742492"
  [“模块”视图 - 采样](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [“模块”视图 - 检测](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [“模块”视图](../profiling/modules-view-instrumentation-data.md)
-
-
-

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 查看 Dll 和可执行文件
 titleSuffix: Visual Studio Modules window
 ms.custom: seodec18
@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: d840fdca-b035-4452-b652-72580c831896
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81f0e9bb20e7024a06c2db7c073b4d2a1d92fecc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd628869d8a642cc6debad726f6c82df71a3b1ba
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956824"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014010"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在模块窗口中查看 DLL 和可执行文件（C＃、C++、Visual Basic、F＃）
  
@@ -42,7 +42,7 @@ ms.locfileid: "53956824"
 ## <a name="use-the-modules-window"></a>使用“模块”窗口
 
 若要打开模块窗口中，在进行调试时，请选择**调试** > **Windows** > **模块**(或按**Ctrl + Alt + U**). 
-
+  
 默认情况下，“模块”窗口按加载顺序对模块进行排序。 若要按任意窗口列排序，请选择列顶部的对应标头。  
   
 ## <a name="load-symbols"></a>加载符号  
@@ -75,7 +75,7 @@ ms.locfileid: "53956824"
 
 1.  在“模块”窗口中右键单击所需模块。  
 
-1.  在右键单击菜单中，选择或取消选择“始终自动加载”。更改将在下一个调试会话中生效。
+1.  在右键单击菜单中，选择或取消选择“始终自动加载”。 在下一个调试会话中，更改才会生效。  
   
 ## <a name="see-also"></a>请参阅  
  [中断执行](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   

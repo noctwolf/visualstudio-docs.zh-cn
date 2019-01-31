@@ -1,22 +1,22 @@
 ---
 title: 通过 Python 使用 CookieCutter 模板
 description: Visual Studio 支持图形 Cookiecutter 扩展，以发现 Python 代码的模板并从这些模板创建项目。
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f5123323794d7a333440cb8aa94c51e44c8fc87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b09e46f65d7aeafbf781af2a5e77ae9e4cc17ea0
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958230"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231787"
 ---
 # <a name="use-the-cookiecutter-extension"></a>使用 Cookiecutter 扩展
 
@@ -60,7 +60,7 @@ Cookiecutter 主页上显示可选择的模板列表，分为以下几组：
 
 ![Cookiecutter 选项页](media/cookiecutter-template-options.png)
 
-每个 Cookiecutter 模板定义各自的选项集，并为每个选项指定默认值（显示为每个条目字段中的建议文本）。 如果默认值是使用其他选项的动态值，则通常为代码片段。 
+每个 Cookiecutter 模板定义各自的选项集，并为每个选项指定默认值（显示为每个条目字段中的建议文本）。 如果默认值是使用其他选项的动态值，则通常为代码片段。
 
 使用用户配置文件可为特定选项自定义默认值。 Cookiecutter 扩展检测到用户配置文件时，会使用用户配置的默认值覆盖模板的默认值。 Cookiecutter 文档的[用户配置](https://cookiecutter.readthedocs.io/en/latest/advanced/user_config.html)部分对此行为进行了讨论。
 

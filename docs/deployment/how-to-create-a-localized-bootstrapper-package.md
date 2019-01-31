@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 129f684c7dca4fc8da27286d51a9c3309ed87531
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80896483e0d7d1f3b42fce11ed53cbd253dc1b82
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990394"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030127"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：创建已本地化的引导程序包
 在创建引导程序包以后，可以通过为每个区域设置再创建两个文件（软件许可条款文件（如 eula.rtf）和包清单 (package.xml)）来创建引导程序包的本地化版本。  
@@ -64,7 +64,7 @@ ms.locfileid: "53990394"
   
 2.  创建包含引导程序包的软件许可条款的文件并将其放入新的文件夹中。  
   
-3.  创建名为 package.xml 的包清单并将其放入新的文件夹中。 有关更多信息，请参见[如何：创建包清单](../deployment/how-to-create-a-package-manifest.md)。  
+3.  创建名为 package.xml 的包清单并将其放入新的文件夹中。 有关详细信息，请参阅[如何：创建包清单](../deployment/how-to-create-a-package-manifest.md)。  
   
 4.  更新包清单的 `<Strings>` 部分，使字符串以正确的区域设置语言表示。  
   

@@ -1,5 +1,5 @@
 ---
-title: 如何：将项目配置为面向多个平台
+title: 如何：将项目配置为定目标到多个平台
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 308858941d03f6341cf3d22af074be45d790e16b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4f5a2346a6ae246f9a7676709e35074d71b1437
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930214"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55028681"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：将项目配置为面向多个平台
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：将项目配置为定目标到多个平台
 
 Visual Studio 提供了一种能够同时面向多个不同的 CPU 体系结构或平台的解决方案。 可通过“配置管理器”对话框访问设置这些功能的属性。
 

@@ -2,22 +2,22 @@
 title: Visual Studio 中的 Python 教程步骤 2，编写和运行代码
 titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 功能的核心教程的第 2 步，包括编辑代码和运行项目。
-ms.date: 10/29/2018
+ms.date: 01/28/2019
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 201284ad236b2182ba6c4e69971ff15d0b43a009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6aec7825387c2eda58c76bf885bcd29b0b7bdd1b
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935135"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231774"
 ---
 # <a name="step-2-write-and-run-code"></a>步骤 2：编写并运行代码
 
@@ -46,7 +46,7 @@ ms.locfileid: "53935135"
     ![IntelliSense 语法着色和错误突出显示](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > 由于一个人的开发环境是件非常私人的事情，因此，Visual Studio 允许用户完全控制 Visual Studio 的外观和行为。 选择“工具” > “选项”菜单命令，浏览“环境”和“文本编辑器”选项卡下面的设置。 默认情况下仅显示部分选项；若要查看每种编程语言的每个选项，请选择对话框底部的“显示所有设置”。 
+    > 由于一个人的开发环境是件非常私人的事情，因此，Visual Studio 允许用户完全控制 Visual Studio 的外观和行为。 选择“工具” > “选项”菜单命令，浏览“环境”和“文本编辑器”选项卡下面的设置。 默认情况下仅显示部分选项；若要查看每种编程语言的每个选项，请选择对话框底部的“显示所有设置”。
 
 1. 按 Ctrl+F5 或选择“调试” > “开始执行(不调试)”菜单项，运行到目前为止编写的代码。 如果代码中仍然存在错误，Visual Studio 会发出警告。
 

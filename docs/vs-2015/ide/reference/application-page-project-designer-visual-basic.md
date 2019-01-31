@@ -1,14 +1,9 @@
 ---
 title: “项目设计器”->“应用程序”页 (Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
 - vb.ProjectPropertiesApplication
@@ -19,13 +14,13 @@ ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
 caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d2b23b5570a6372b727906a63ffb51513019df7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 21f94323fbfa7369e3fef93b0f95a8db2ea46ce2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175482"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54774855"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -87,7 +82,7 @@ ms.locfileid: "49175482"
   
  如果“启用应用程序框架”处于选中状态（默认设置），则此列表的标题为“启动窗体”，并且仅显示窗体，因为应用程序框架仅支持启动窗体，不支持对象。  
   
- 如果项目是 WPF 浏览器应用程序，则此列表的标题为“启动 URI”，默认值为“Page1.xaml”。 “启动 URI”列表用于指定应用程序启动时显示的用户界面资源（一种 XAML 元素）。 有关详细信息，请参阅 <xref:System.Windows.Application.StartupUri%2A> 。  
+ 如果项目是 WPF 浏览器应用程序，则此列表的标题为“启动 URI”，默认值为“Page1.xaml”。 “启动 URI”列表用于指定应用程序启动时显示的用户界面资源（一种 XAML 元素）。 有关更多信息，请参见<xref:System.Windows.Application.StartupUri%2A>。  
   
  如果“启用应用程序框架”处于清除状态，则此列表将变为“启动对象”，并且同时显示窗体和带有 `Sub Main` 的类或模块。  
   
@@ -116,7 +111,7 @@ ms.locfileid: "49175482"
  “Windows 应用程序框架属性”节提供以下设置。 仅当“启用应用程序框架”复选框处于选中状态时，这些选项才可用。 本节后面的一节介绍了 Windows Presentation Foundation (WPF) 应用程序的“Windows 应用程序框架属性”设置。  
   
  **启用 XP 视觉样式**  
- 启用或禁用 Windows XP 视觉样式，也称为 *Windows XP 主题*。 Windows XP 视觉样式可启用一些控件，例如带有圆角和动态颜色的控件。 默认为已启用。 有关 Windows XP 视觉样式的详细信息，请参阅 [Windows XP 功能和 Windows 窗体控件](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)。  
+ 启用或禁用 Windows XP 视觉样式，也称为 *Windows XP 主题*。 Windows XP 视觉样式可启用一些控件，例如带有圆角和动态颜色的控件。 默认为已启用。 有关 Windows XP 视觉样式的详细信息，请参阅 [Windows XP 功能和 Windows 窗体控件](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)。  
   
  **生成单个实例应用程序**  
  选中此复选框可防止用户运行应用程序的多个实例。 此复选框的默认设置为清除状态。 此设置允许运行应用程序的多个实例。  
@@ -166,6 +161,3 @@ ms.locfileid: "49175482"
   
 ## <a name="see-also"></a>请参阅  
 [管理应用程序属性](../../ide/application-properties.md) [在 Office 解决方案中编写代码](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

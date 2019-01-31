@@ -15,15 +15,15 @@ helpviewer_keywords:
 - remote debugging, logon failure
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b197913abecbaf2ff74913a41720f464646fc67
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16ba1c2fd9b1bd562171a69a846fed4e37352f54
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848043"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55030439"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>错误：工作组远程登录失败
 此错误显示如下：  
@@ -69,10 +69,10 @@ ms.locfileid: "53848043"
   
 4.  在中**策略**列中，双击**网络访问：本地帐户的共享和安全模型**。  
   
-5.  在**网络访问： 本地帐户的共享和安全模型**对话框中，将值更改为**经典-本地用户以自己的身份验证**，然后单击**应用**按钮。  
+5.  在**网络访问：本地帐户的共享和安全模型**对话框框中，将值更改为**经典-本地用户以自己的身份验证**然后单击**应用**按钮。  
   
      ![本地安全策略安全选项](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   
 ## <a name="see-also"></a>请参阅  
  [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [远程调试](../debugger/remote-debugging.md)

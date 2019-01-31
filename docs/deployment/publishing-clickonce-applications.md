@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9c3ee6bca6ffa338dc4cf609947b98b88c0498
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 273f726daa7b3f467e4c055cfb52e9584a048c2c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930122"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54954626"
 ---
 # <a name="publish-clickonce-applications"></a>发布 ClickOnce 应用程序
 首次发布 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序时，可以使用“发布向导”设置发布属性。 只有几个属性在向导中可用，所有其他属性均设置为其默认值。  
@@ -43,7 +43,7 @@ ms.locfileid: "53930122"
   
 - 更新频率 - 应用程序检查新更新的频率。  
   
-  有关更多信息，请参见[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
+  有关详细信息，请参阅[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
 ## <a name="publish-page"></a>“发布”页面  
  “项目设计器”  上的“发布”  页面用于针对 ClickOnce 部署配置属性。 下表列出主题。  
@@ -61,13 +61,13 @@ ms.locfileid: "53930122"
 ### <a name="application-files-dialog-box"></a>“应用程序文件”对话框  
  在此对话框中，你可以指定如何在项目中对文件分类，以实现发布、动态下载和更新。 它包含一个网格，该网格中列出默认未排除或有下载组的项目文件。  
   
- 若要排除文件，请将文件标记为数据文件或系统必备，并创建文件组以便在 Visual Studio UI 中进行条件安装，请参阅[如何：指定通过 ClickOnce 发布的文件](../deployment/how-to-specify-which-files-are-published-by-clickonce.md)。 你还可以通过使用 Mage.exe 标记数据文件。 有关更多信息，请参见[如何：将数据文件添加到 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
+ 若要排除文件，请将文件标记为数据文件或系统必备，并创建文件组以便在 Visual Studio UI 中进行条件安装，请参阅[如何：指定通过 ClickOnce 发布的文件](../deployment/how-to-specify-which-files-are-published-by-clickonce.md)。 你还可以通过使用 Mage.exe 标记数据文件。 有关详细信息，请参阅[如何：将数据文件添加到 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
   
 ### <a name="prerequisites-dialog-box"></a>“系统必备”对话框  
- 此对话框指定要安装的必备组件以及其安装方式。 有关更多信息，请参见[如何：与 ClickOnce 应用程序安装的必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)并[系统必备组件对话框](../ide/reference/prerequisites-dialog-box.md)。  
+ 此对话框指定要安装的必备组件以及其安装方式。 有关详细信息，请参阅[如何：与 ClickOnce 应用程序安装的必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)并[系统必备组件对话框](../ide/reference/prerequisites-dialog-box.md)。  
   
 ### <a name="application-updates-dialog-box"></a>“应用程序更新”对话框  
- 此对话框指定应如何检查应用程序安装的更新。 有关更多信息，请参见[如何：管理 ClickOnce 应用程序的更新](../deployment/how-to-manage-updates-for-a-clickonce-application.md)。  
+ 此对话框指定应如何检查应用程序安装的更新。 有关详细信息，请参阅[如何：管理 ClickOnce 应用程序的更新](../deployment/how-to-manage-updates-for-a-clickonce-application.md)。  
   
 ### <a name="publish-options-dialog-box"></a>“发布选项”对话框  
  “发布选项”对话框指定应用程序的部署选项。  

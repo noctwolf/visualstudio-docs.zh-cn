@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 35fe324c-45a1-4509-b7be-5c18b4b1b4ab
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd4e953c0a2ecee17c167fbcdda529d7607b9cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 295e2e774d2f6221b9064449e33c6777072aa4d2
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882969"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014570"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>如何：为 ClickOnce 应用程序向客户端计算机添加受信任的发布者
 借助受信任的应用程序部署，可以配置客户端计算机，以便 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序在不提示用户的情况下以更高信任级别运行。 下面的过程演示如何使用命令行工具 CertMgr.exe 将发布者的证书添加到客户端计算机上的“受信任的发布者”存储。  

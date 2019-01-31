@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d320c4cc2a224dd17ea85337e38fb43ae8aa5bd
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: a993dced9be0d5c213c12ae5e40f83be45a537b4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227663"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54952662"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>演练：调试多线程的应用使用线程窗口 (C#，Visual Basic、 c + +)
 
@@ -30,7 +30,7 @@ ms.locfileid: "54227663"
   
 完成本教程，只需要几分钟，并帮助您熟悉的调试多线程应用程序基础知识。
 
-## <a name="create-a-multithreaded-app-project"></a>创建一个多线程应用程序项目  
+## <a name="create-a-multithreaded-app-project"></a>创建一个多线程应用项目  
 
 创建在本教程中使用以下多线程应用程序项目： 
   
@@ -108,7 +108,7 @@ ms.locfileid: "54227663"
    只有标记的线程现在显示在**线程**工具栏中的下拉列表。 若要再次显示所有线程，请选择**仅都显示标记的线程**再次图标。
    
    >[!TIP]
-   >已标记某些线程后，可以将光标放在代码编辑器中，右键单击，然后选择**运行到光标处的已标记线程**。 请确保选择所有标记的线程的代码将访问。 **已标记线程运行到光标处**将暂停，从而使代码更容易控制的执行顺序的选定行上的线程[冻结和解冻线程](#bkmk_freeze)。
+   >已标记某些线程后，可以将光标放在代码编辑器中，右键单击，然后选择**运行到光标处的已标记线程**。 请确保选择所有已标记的线程将达到的代码。 **已标记线程运行到光标处**将暂停，从而使代码更容易控制的执行顺序的选定行上的线程[冻结和解冻线程](#bkmk_freeze)。
    
 1. 若要切换当前正在执行的线程的已标记或取消标记状态，请选择单个标志**切换当前线程已标记状态**工具栏按钮的左侧**仅显示标记的线程**按钮。 将当前线程标记可用于查找当前线程时显示标记的线程。 
    

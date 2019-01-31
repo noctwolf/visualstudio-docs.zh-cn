@@ -1,4 +1,4 @@
-﻿---
+---
 title: 修复程序错误并改进代码
 description: 本文介绍 Visual Studio 可帮助查找和修复代码中的问题（包括生成错误、代码分析、调试工具和单元测试）的一些基本方法。
 ms.date: 05/02/2018
@@ -7,21 +7,21 @@ ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e61c5917ee3d77161c31213d4851472e714d1679
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bab4485953203c9f3b19947b89f76329b6bc277b
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940172"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55017092"
 ---
 # <a name="make-code-work-in-visual-studio"></a>确保代码在 Visual Studio 中正常运行
 
 Visual Studio 提供了一组功能强大的项目构建和调试工具。 在本文中，您将了解 Visual Studio 如何使用生成输出、代码分析、调试工具和单元测试来帮助您在代码中查找问题。
 
-你已经想到了编辑器并创建了一些代码。 现在，需要确保代码正确运行。 与大多数 IDE 一样，Visual Studio 通过两个阶段确保代码正常运行：生成代码以捕获并解决项目和编译器错误，以及运行代码以查找运行时和动态错误。 
+你已经想到了编辑器并创建了一些代码。 现在，需要确保代码正确运行。 与大多数 IDE 一样，Visual Studio 通过两个阶段确保代码正常运行：生成代码以捕获并解决项目和编译器错误，以及运行代码以查找运行时和动态错误。
 
 ## <a name="build-your-code"></a>生成代码
 

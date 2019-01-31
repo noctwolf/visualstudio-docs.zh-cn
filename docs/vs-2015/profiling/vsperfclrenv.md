@@ -1,14 +1,9 @@
 ---
 title: VSPerfCLREnv | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfCLREnv
 - command line, tools
@@ -19,13 +14,13 @@ ms.assetid: 4bc9dd6e-379c-4930-9bba-59a4faa93303
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0ff359904b2b4d8b10dbc180f076606651028e80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7387f2bc55d00695e85df3b023914e8d6fe9696d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741501"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768080"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ VSPerfCmd /Attach:MyService.exe
   
  下表描述了用于检测分析的 VSPerfCLREnv 选项：  
   
-|选项|描述|  
+|选项|说明|  
 |------------|-----------------|  
 |**TraceOn**|启用使用检测方法的分析。 不会启用内存分配分析或对象生存期数据收集。|  
 |**TraceGC**|启用使用检测方法的内存分配分析。 不会启用对象生存期数据收集。|  
@@ -82,7 +77,7 @@ VSPerfCmd /Attach:MyService.exe
   
  下表描述了用于采样分析的 VSPerfCLREnv 选项：  
   
-|选项|描述|  
+|选项|说明|  
 |------------|-----------------|  
 |**SampleOn**|启用使用采样方法的分析。 不会启用内存分配分析或对象生存期数据收集。|  
 |**SampleGC**|启用使用采样方法的内存分配分析。 不会启用对象生存期数据收集。|  
@@ -93,7 +88,7 @@ VSPerfCmd /Attach:MyService.exe
   
  若要分析由操作系统启动、而不是由用户启动的 ASP.NET Web 应用程序等托管服务，请使用用于全局分析的 VSPerfCLREnv 选项。 下表描述了 VSPerfCLREnv 选项的全局版本。 这些选项可在注册表中设置合适的环境变量。  
   
-|选项|描述|  
+|选项|说明|  
 |------------|-----------------|  
 |**GlobalTraceOn**|启用使用检测方法的全局分析。 不会收集内存分配事件或对象生存期数据。|  
 |**GlobalTraceGC**|启用使用检测方法的全局内存分配分析。 不会启用对象生存期数据收集。|  
@@ -106,7 +101,7 @@ VSPerfCmd /Attach:MyService.exe
   
  在分析完托管应用程序后，请使用下列选项之一删除由 VSPerfCLREnv 添加的环境变量。 下表描述了如何删除标准和全局环境变量：  
   
-|选项|描述|  
+|选项|说明|  
 |------------|-----------------|  
 |**Off**|删除用于标准 .NET 分析的环境变量。 在使用了非全局的 VSPerfClrEnv 选项设置探查器环境变量后，使用此选项。|  
 |**GlobalOff**|删除用于全局 .NET 分析的环境变量。 当应用程序由操作系统而非探查器启动时，使用此选项。|  
@@ -118,6 +113,3 @@ VSPerfCmd /Attach:MyService.exe
   
 ## <a name="see-also"></a>请参阅  
  [从命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-

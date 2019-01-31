@@ -6,19 +6,19 @@ ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c156993bf2fe425368a2cfebcaca8ac18ea790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 83a4f4ea1add79ce0317ff5823066a0070a407c1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944621"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024092"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio 中的 R 工具入门
 
-安装了针对 Visual Studio 的 R 工具 (RTVS)（请参阅[安装](installing-r-tools-for-visual-studio.md)）后，很快就能亲身感受这些工具提供的体验。 
+安装了针对 Visual Studio 的 R 工具 (RTVS)（请参阅[安装](installing-r-tools-for-visual-studio.md)）后，很快就能亲身感受这些工具提供的体验。
 
 ## <a name="create-an-r-project"></a>创建 R 项目
 
@@ -93,7 +93,7 @@ ms.locfileid: "53944621"
 
 > [!Tip]
 > 了解编辑模式并按 Ctrl+Enter（或按 Ctrl+A 选择所有内容，然后按 Ctrl+Enter），快速运行代码。 此方法比使用鼠标进行相同的操作更高效。
-> 
+>
 > 此外，还可以将绘图窗口拖放到 Visual Studio 框架外，放置在显示器上任何所需位置。 然后，可轻松将绘图窗口调整为所需大小，然后保存到图像或 PDF 文件中。
 
 1. 再添加几行代码，将另一个绘图包括在内：

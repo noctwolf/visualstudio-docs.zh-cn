@@ -1,14 +1,9 @@
 ---
 title: 类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式（类设计器）| Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.window
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f607046609208804f349eb06e927ab8e72e28992
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247905"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775822"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>类图和“类详细信息”窗口中的键盘快捷键和鼠标快捷方式（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49247905"
 ##  <a name="MouseClassDesigner"></a>在类设计器中使用鼠标  
  类图中支持下列鼠标操作：  
   
-|鼠标组合|上下文|描述|  
+|鼠标组合|上下文|说明|  
 |-----------------------|-------------|-----------------|  
 |双击|Shape 元素|打开代码编辑器。|  
 ||棒糖形连接器|展开/折叠棒糖形。|  
@@ -70,7 +65,7 @@ ms.locfileid: "49247905"
 ##  <a name="KeyboardClassDesigner"></a>在类设计器中使用键盘  
  类图中支持下列键盘操作：  
   
-|键|上下文|描述|  
+|键|上下文|说明|  
 |---------|-------------|-----------------|  
 |箭头键|在类型形状内|对形状内容的树式导航（支持环绕形状）。 如果当前项可展开，则左键和右键会展开/折叠此项；如果当前项不可展开，则导航到其父级（请参阅视图导航以了解详细行为）。|  
 ||顶级形状|定义关系图上的形状。|  
@@ -116,6 +111,3 @@ ms.locfileid: "49247905"
   
 ## <a name="see-also"></a>请参阅  
  [创建和配置类型成员（类设计器）](../ide/creating-and-configuring-type-members-class-designer.md)
-
-
-

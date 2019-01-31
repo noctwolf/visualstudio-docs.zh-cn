@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ee3a262-cda6-48bf-b799-a37edde6c8b8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9d7c7d3710d7bca7fa76b30b7b2d0e97a0dfd50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23214e9a0af3ca506677e5f67b4460fa6d9d8414
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843484"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54968994"
 ---
 # <a name="symbols-and-symbol-tags"></a>符号和符号标记
 使用调试接口访问 (DIA) SDK Api 可以访问的符号作为在程序数据库 (.pdb) 文件中存储有关已编译的程序的调试信息。 所有符号都有[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)和一个[idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)属性。 `symTag`属性指示符号的类型由定义[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举。 `symIndexId`属性是`DWORD`值，该值包含一个符号的每个实例的唯一标识符。  

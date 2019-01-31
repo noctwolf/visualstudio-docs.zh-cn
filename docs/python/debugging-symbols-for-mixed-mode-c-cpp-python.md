@@ -6,16 +6,16 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 909b3ab71a4e204372c291ec6ca5421b500a056a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d61c3bcf9e7d403a73c78700257f1ecfe8a70fd
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885963"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55010150"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>安装用于 Python 解释器的调试符号
 
@@ -51,7 +51,7 @@ Visual Studio 可能会在需要符号的时候（通常是在启动混合模式
 
 1. 选择“工具” > “选项”菜单，然后导航到“调试” > “符号”。
 
-1. 选择工具栏上的“添加”按钮（见下文），输入在其中展开了下载的符号的文件夹位置（即 python.pdb 所在的文件夹，例如 c:\python34\Symbols，如下所示），然后选择“确定”。 
+1. 选择工具栏上的“添加”按钮（见下文），输入在其中展开了下载的符号的文件夹位置（即 python.pdb 所在的文件夹，例如 c:\python34\Symbols，如下所示），然后选择“确定”。
 
     ![混合模式调试器符号选项](media/mixed-mode-debugging-symbols.png)
 
@@ -62,9 +62,9 @@ Visual Studio 可能会在需要符号的时候（通常是在启动混合模式
 
 ## <a name="official-distributions"></a>正式分发
 
-| Python 版本 | 下载 | 
-| --- | --- | 
-| 3.5 及更高版本 | 通过 Python 安装程序安装符号。 | 
+| Python 版本 | 下载 |
+| --- | --- |
+| 3.5 及更高版本 | 通过 Python 安装程序安装符号。 |
 | 3.4.4 | [32 位](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip) - [64 位](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip) |
 | 3.4.3 | [32 位](https://www.python.org/ftp/python/3.4.3/python-3.4.3-pdb.zip) - [64 位](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64-pdb.zip) |
 | 3.4.2 | [32 位](https://www.python.org/ftp/python/3.4.2/python-3.4.2-pdb.zip) - [64 位](https://www.python.org/ftp/python/3.4.2/python-3.4.2.amd64-pdb.zip) |

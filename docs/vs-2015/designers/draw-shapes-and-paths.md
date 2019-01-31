@@ -1,25 +1,20 @@
 ---
 title: 绘制形状和路径 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0f59ecbdf9e69093d5c445cdb6d4780eb3b6f86e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eae8f49efbff2fd2219d0180db3a542f553a8027
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188176"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775345"
 ---
 # <a name="draw-shapes-and-paths"></a>绘制形状和路径
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +99,7 @@ ms.locfileid: "49188176"
 ##  <a name="Convert"></a> 将形状转换为路径  
  若要采用与修改路径相同的方式来修改形状，请将形状转换为路径。  
   
- 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路径：将形状转换为路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [处理路径：将形状转换为路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。  
   
 ##  <a name="Combine"></a> 合并路径  
  可以将路径和形状合并到单个路径中。  
@@ -117,7 +112,7 @@ ms.locfileid: "49188176"
 |![](../designers/media/b1-2.png "B1_2")|相并|![](../designers/media/b1-5.png "B1_5")|排除重叠|  
 |![](../designers/media/b1-3.png "B1_3")|除|![](../designers/media/b1-6.png "B1_6")|减|  
   
- 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路径：合并路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [处理路径：合并路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。  
   
 ##  <a name="Compound"></a> 创建复合路径  
  创建复合路径时，会从结果中减去路径的任何相交部分，生成的路径会采取最底部路径的视觉属性。  
@@ -126,17 +121,14 @@ ms.locfileid: "49188176"
   
  ![](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png "2157a8aa-d9a7-4de4-8de5-b10d28f08a84")  
   
- 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路径：创建复合路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [处理路径：创建复合路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。  
   
 ##  <a name="Clipping"></a> 创建剪切路径  
  剪切路径是应用于另一个对象的路径或形状，可隐藏遮蔽对象处于剪切路径之外的部分。  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  
   
- 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用路径：创建剪切路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [处理路径：创建剪切路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Blend for Visual Studio 创建 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-
