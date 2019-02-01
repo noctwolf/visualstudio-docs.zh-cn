@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: db648e5f-6375-4e2d-aa98-eb7261958927
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f79bd9c0f2bbf2ab3156f5bc49100c9c8aee536
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8af6b4b5f381fe1b1db93e99263c0026e8be408f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947356"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941738"
 ---
 # <a name="debug-64-bit-applications"></a>调试 64 位应用程序
 您可以调试运行于本地计算机或远程计算机上的 64 位应用程序。  
@@ -37,7 +37,7 @@ ms.locfileid: "53947356"
   
 1.  创建一个 Visual Studio 解决方案，例如 C# 控制台应用程序。  
   
-2.  使用配置管理器将配置设置为 64 位。 有关更多信息，请参见[如何：将项目配置为面向平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
+2.  使用配置管理器将配置设置为 64 位。 有关详细信息，请参阅[如何：将项目配置为面向平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
   
 3.  此时将启动 64 位版本的远程调试器 (msvsmon.exe)。 只要具有 64 位配置的解决方案处于启用状态，它就会运行。  
   
@@ -57,4 +57,4 @@ ms.locfileid: "53947356"
  [配置 64 位的程序](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
  [Visual Studio IDE 64 位支持](../ide/visual-studio-ide-64-bit-support.md)   
  [使用转储文件](../debugger/using-dump-files.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [远程调试](../debugger/remote-debugging.md)

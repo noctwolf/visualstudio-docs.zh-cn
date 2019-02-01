@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f8d33007-302d-4549-9dad-47fb33ea60b7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8466a828c0791f931d4b94f646e258c08a2b1bde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 32b5264db1a103c23f4f24aa4fa3a411e6bac614
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918935"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55024612"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 当创建.exe 文件时，提供每个公共符号 （@ 最小值、 每个全局函数和数据符号）`SymTagPublicSymbol`标记。  
@@ -27,7 +27,7 @@ ms.locfileid: "53918935"
 ## <a name="properties"></a>属性  
  下表显示适用于此符号类型的属性。  
   
-|Property|数据类型|说明|  
+|Property|数据类型|说明​​|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|偏移量部分的位置;有关详细信息，请参阅[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)。|  
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|位置; 部分一部分有关详细信息，请参阅[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)。|  

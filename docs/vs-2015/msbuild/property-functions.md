@@ -1,27 +1,22 @@
 ---
 title: 属性函数 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
 caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0194de0a9f14186dc02b17564c77b1b2bc7441be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6ed61d1b65d03053859b5463b574432e0396449a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758356"
 ---
 # <a name="property-functions"></a>属性函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -194,7 +189,7 @@ ms.locfileid: "49920167"
   
  下面列出了 MSBuild 属性函数：  
   
-|函数签名|描述|  
+|函数签名|说明​​|  
 |------------------------|-----------------|  
 |double Add(双精度型值 a, 双精度型值 b)|将两个双精度型值相加。|  
 |long Add(长型值 a, 长型值 b)|将两个长型值相加。|  
@@ -208,7 +203,7 @@ ms.locfileid: "49920167"
 |long Modulo(长型值 a, 长型值 b)|对两个长型值取模。|  
 |string Escape(未转义字符串)|根据 MSBuild 转义规则对字符串进行转义。|  
 |string Unescape(已转义字符串)|根据 MSBuild 转义规则取消对字符串进行转义。|  
-|int BitwiseOr(第一个整型值, 第二个整型值)|对第一个值和第二个值执行按位 `OR`（第一个值 | 第二个值）。|  
+|int BitwiseOr(第一个整型值, 第二个整型值)|对第一个值和第二个值执行按位 `OR`（第一个值 &#124; 第二个值）。|  
 |int BitwiseAnd(第一个整型值, 第二个整型值)|对第一个值和第二个值执行按位 `AND`（第一个值 & 第二个值）。|  
 |int BitwiseXor(第一个整型值, 第二个整型值)|对第一个值和第二个值执行按位 `XOR`（第一个值 ^ 第二个值）。|  
 |int BitwiseNot(第一个整型值)|执行按位 `NOT`（~第一个值）。|  
@@ -252,9 +247,9 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
  下面的示例演示如何使用此函数：  
   
 ```  
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value  
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value  
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))  
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value  
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value  
   
 ```  
   
@@ -341,5 +336,3 @@ Output:
 ## <a name="see-also"></a>请参阅
 [MSBuild 属性](msbuild-properties1.md)   
 [MSBuild 概述](msbuild.md)
-
-

@@ -1,14 +1,9 @@
 ---
 title: 常用的 MSBuild 项目属性 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30371d20e240e5679664a687c5ca098519cac9c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3f5c7c2f587f4c2fb44ab56223dafa2f988c6103
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300048"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758458"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49300048"
   
 ## <a name="list-of-common-properties-and-parameters"></a>通用属性和参数的列表  
   
-|属性或参数名|描述|  
+|属性或参数名|说明​​|  
 |--------------------------------|-----------------|  
 |AdditionalLibPaths|指定其他文件夹，编译器将在这些文件夹中查找引用程序集。|  
 |AddModules|使编译器让指定文件中的所有类型信息可供正在编译的项目使用。 此属性等效于 `/addModules` 编译器开关。|  
@@ -72,7 +67,7 @@ ms.locfileid: "49300048"
 |DisableFastUpToDateCheck|一个只适用于 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的布尔值。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 生成管理器使用名为 FastUpToDateCheck 的进程来确定项目是否必须重新生成才能保持最新。 此进程比使用 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 来确定这一点更快。 通过将 DisableFastUpToDateCheck 属性设置为 `true`，可以跳过 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 生成管理器，并强制生成管理器使用 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 来确定项目是否为最新版本。|  
 |DocumentationFile|作为 XML 文档文件生成的文件的名称。 此名称只包含文件名，不包含路径信息。|  
 |ErrorReport|指定编译器任务报告内部编译器错误的方式。 有效值为“prompt”、“send”或“none”。 此属性等效于 `/errorreport` 编译器开关。|  
-|ExcludeDeploymentUrl|[GenerateDeploymentManifest 任务](../msbuild/generatedeploymentmanifest-task.md)会在项目文件包含下列任何元素时向部署清单中添加 deploymentProvider 标记：<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> 不过，使用 ExcludeDeploymentUrl，可以防止 deploymentProvider 标记添加到部署清单，即使指定了任何上述 URL。 为此，请将以下属性添加到项目文件：<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>`注意：ExcludeDeploymentUrl 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中未显示，并且仅可通过手动编辑项目文件进行设置。 设置此属性不影响在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中发布；即 deploymentProvider 标记仍将添加到 PublishUrl 指定的 URL。|  
+|ExcludeDeploymentUrl|[GenerateDeploymentManifest 任务](../msbuild/generatedeploymentmanifest-task.md)会在项目文件包含下列任何元素时向部署清单中添加 deploymentProvider 标记：<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> 不过，使用 ExcludeDeploymentUrl，可以防止 deploymentProvider 标记添加到部署清单，即使指定了任何上述 URL。 为此，请将以下属性添加到项目文件：<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **注意：** ExcludeDeploymentUrl 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中未显示，并且仅可通过手动编辑项目文件进行设置。 设置此属性不影响在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中发布；即 deploymentProvider 标记仍将添加到 PublishUrl 指定的 URL。|  
 |FileAlignment|指定输出文件各部分的对齐位置，以字节为单位。 有效值为 512、1024、2048、4096、8192。 此属性等效于 `/filealignment` 编译器开关。|  
 |FrameworkPathOverride|指定 mscorlib.dll 和 microsoft.visualbasic.dll 的位置。 此参数等效于 vbc.exe 编译器的 `/sdkpath` 开关。|  
 |GenerateDocumentation|一个布尔型参数，指示是否由生成来生成文档。 如果设置为 `true`，生成过程将生成文档信息，并将此信息与生成任务所创建的可执行文件或库的名称一同放置在 .xml 文件中。|  
@@ -136,6 +131,3 @@ ms.locfileid: "49300048"
   
 ## <a name="see-also"></a>请参阅  
  [常用的 MSBuild 项目项](../msbuild/common-msbuild-project-items.md)
-
-
-

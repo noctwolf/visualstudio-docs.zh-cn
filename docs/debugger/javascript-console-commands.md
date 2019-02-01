@@ -9,16 +9,16 @@ helpviewer_keywords:
 - debugging JavaScript, console [UWP apps]
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: bf978f336070e9bd90f90f399f4b6c3d8598877e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bf9f339283af27f450950d9a79079ea35c97e3b8
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990930"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54941453"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 控制台命令
   
@@ -37,7 +37,7 @@ ms.locfileid: "53990930"
 > [!TIP]
 >  较旧版本的 Visual Studio 不支持完整的命令集。 使用控制台对象上的 IntelliSense 快速获取有关支持命令的信息。  
   
-|命令|说明|示例|  
+|命令|说明​​|示例|  
 |-------------|-----------------|-------------|  
 |`assert(expression, message)`|如果 `expression` 计算结果为 **false**，则发送消息。|`console.assert((x == 1), "assert message: x != 1");`|  
 |`clear()`|清除控制台窗口中的消息（包括脚本错误消息）以及控制台窗口中显示的脚本。 不清除你在控制台输入提示中输入的脚本。|`console.clear();`|  
@@ -63,7 +63,7 @@ ms.locfileid: "53990930"
 ## <a name="miscellaneous-commands"></a>杂项命令  
  JavaScript 控制台窗口中也提供这些命令（它们不能通过代码启用）。  
   
-|命令|说明|示例|  
+|命令|说明​​|示例|  
 |-------------|-----------------|-------------|  
 |`$0`, `$1`, `$2`, `$3`, `$4`|将指定元素返回到控制台窗口。 `$0` 返回当前在 DOM 资源管理器中选择的元素，`$1` 返回以前在 DOM 资源管理器中选择的元素，依此类推，最多可返回第四个以前选择的元素。|$3|  
 |`$(id)`|按 ID 返回元素。 这是 `document.getElementById(id)`的快捷方式命令，其中 `id` 是一个表示元素 ID 的字符串。|`$("contenthost")`|  

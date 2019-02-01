@@ -1,14 +1,9 @@
 ---
 title: AL（程序集链接器）任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AL
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
 caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf0f5995b9f0e2fca0d909b9d0da0dbe6b386978
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b8d70651d319f174f2ed7c1ee81021d89201bbcf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280470"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758637"
 ---
 # <a name="al-assembly-linker-task"></a>AL（程序集链接器）任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ AL 任务包装 AL.exe（一种随 [!INCLUDE[winsdklong](../includes/winsdklong-
 ## <a name="parameters"></a>参数  
  下表描述了 `AL` 任务的参数。  
   
-|参数|描述|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`AlgorithmID`|可选 `String` 参数。<br /><br /> 指定一种算法来对多文件程序集中的所有文件（包含程序集清单的文件除外）进行哈希处理。 有关详细信息，请参阅 [Al.exe（程序集链接器）](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)中 `/algid` 选项的文档。|  
 |`BaseAddress`|可选 `String` 参数。<br /><br /> 指定一个地址，运行时在用户计算机上在该地址加载 DLL。 如果指定 DLL 的基址，而不是让操作系统在进程空间内重新定位 DLL，则应用程序的加载速度会更快。 此参数对应于 [Al.exe（程序集链接器）](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)中的 /base[address] 选项。|  
@@ -103,6 +98,3 @@ AL 任务包装 AL.exe（一种随 [!INCLUDE[winsdklong](../includes/winsdklong-
 ## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [任务](../msbuild/msbuild-tasks.md)
-
-
-

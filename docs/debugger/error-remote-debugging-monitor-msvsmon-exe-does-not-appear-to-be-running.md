@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d143eb9750aecfcadf63fe999df858ae02dd18a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 882e08f155d3da05b63a74850ec966ef71a611c5
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923002"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991029"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>错误：Microsoft Visual Studio 远程调试监视器 (MSVSMON.EXE) 似乎没有在远程计算机上运行。
 此错误消息表示 Visual Studio 未能在远程计算机上找到 Visual Studio 远程调试监视器的正确实例。 必须安装 Visual Studio 远程调试监视器以便进行远程调试。 有关下载和设置远程调试器的信息，请参阅[远程调试](../debugger/remote-debugging.md)。  

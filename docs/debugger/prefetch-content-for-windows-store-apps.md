@@ -9,15 +9,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6f8ebe41f2775dddd5f70c654e21c7dc64adc44e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe9d698e5732c0dfe4c9282e6cfac683e0d4d8b0
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835190"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984218"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>调试 UWP 应用使用 Visual Studio 中的预提取的内容
   
@@ -40,4 +40,4 @@ ms.locfileid: "53835190"
 >  当你添加或修改指定的 Web 内容时，请重复上述步骤。  
   
 ## <a name="see-also"></a>请参阅  
- [博客文章在 Visual Studio 2013 Update 2 中的 Windows 应用商店应用程序触发预提取](https://blogs.msdn.microsoft.com/devops/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+ [博客文章：在 Visual Studio 2013 Update 2 中的 Windows 应用商店应用程序触发预提取](https://blogs.msdn.microsoft.com/devops/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
