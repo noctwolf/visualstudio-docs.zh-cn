@@ -31,7 +31,7 @@ ms.locfileid: "55018600"
 当 Windows 防火墙阻止调试器通过网络接收信息时，会出现此对话框。 若要继续进行远程调试，则必须在防火墙上打开一个口以使调试器能够接收信息。  
   
 > [!CAUTION]
->  如果在防火墙上打开一个口，可能会使计算机暴露在防火墙应该阻止的安全威胁之下。 在 Visual Studio 2015 中，打开一个口进行远程调试将取消阻止端口 4020 和 4021。 在其他版本的 Visual Studio 中，将使用其他端口号。 有关详细信息，请参阅[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。 此外，它还允许调试器打开其他端口。 有关详细信息，请参阅[配置 Windows 防火墙以进行远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。  
+>  如果在防火墙上打开一个入口，则可能会使计算机面临防火墙本应阻止的安全威胁。 在 Visual Studio 2015 中，打开一个入口进行远程调试会取消阻止端口 4020 和 4021。 其他版本的 Visual Studio 中会使用其他端口号。 有关详细信息，请参阅[远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。 此外，这还允许调试器打开其他端口。 有关详细信息，请参阅[配置 Windows 防火墙以进行远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。  
   
 ## <a name="uielement-list"></a>UIElement 列表  
  **取消远程调试**  
