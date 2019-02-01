@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 631ccf0b9bd48278318c857e5b6011898bac72ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42d61b940d7ca30020ece1d1b1aab200360e9b0c
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014596"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424546"
 ---
 # <a name="attach-to-the-program"></a>附加到程序
 与相应的端口注册您的程序后，必须将调试器附加到你想要调试的程序。  
@@ -35,7 +35,7 @@ ms.locfileid: "55014596"
   
    如果要调试的应用程序在同一进程中运行你 DE，则必须实现的以下方法[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md):  
   
-- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)，  
+- [GetHostName](../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)  
   
 - [GetHostPid](../../extensibility/debugger/reference/idebugprogramnode2-gethostpid.md)  
   
