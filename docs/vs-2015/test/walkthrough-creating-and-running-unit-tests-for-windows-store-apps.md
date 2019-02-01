@@ -1,14 +1,9 @@
 ---
-title: 演练：为 Windows 应用商店应用创建和运行单元测试 | Microsoft Docs
-ms.custom: ''
+title: 演练：为创建和运行单元测试 Windows 应用商店应用程序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests
@@ -17,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dcd09c2a19bd96a02075901f6b58da71a1a9bee9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852526"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54754869"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>演练：为 Windows 应用商店应用程序创建和运行单元测试
+# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>演练：为创建和运行单元测试 Windows 应用商店应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用进行单元测试，并包括 Visual C#、Visual Basic 和 Visual C++ 的单元测试库模板。  
@@ -119,7 +114,7 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../includes/win8-a
     >  必须生成解决方案，才能在“测试资源管理器”中更新单元测试列表。  
   
     > [!WARNING]
-    >  Visual Studio 已知问题：生成测试项目之前，必须打开“测试资源管理器”。  
+    >  Visual Studio 中的已知问题：生成测试项目之前，必须打开测试资源管理器。  
   
 3.  在“测试资源管理器”中，选择你创建的单元测试。  
   
@@ -144,7 +139,7 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../includes/win8-a
 ## <a name="external-resources"></a>外部资源  
   
 ### <a name="videos"></a>视频  
- [第 9 频道：对使用 XAML 编写的 Windows 应用商店应用进行单元测试](http://go.microsoft.com/fwlink/?LinkId=226285)  
+ [第 9 频道使用 XAML 生成 Windows 应用商店应用进行单元测试](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>论坛  
  [Visual Studio 单元测试](http://go.microsoft.com/fwlink/?LinkId=224477)  
@@ -155,6 +150,3 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../includes/win8-a
 ## <a name="see-also"></a>请参阅  
  [使用 Visual Studio 测试应用商店应用](../test/testing-store-apps-with-visual-studio.md)   
  [使用 Team Foundation Build 生成并测试 Windows 应用商店应用](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
-
-
-

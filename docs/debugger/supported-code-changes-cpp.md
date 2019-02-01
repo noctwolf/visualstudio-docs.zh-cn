@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03b5c279e3d6aeee6cf0b5f0d9ad2e05e9d22fc6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2064d38400172a3aa7a653cd900431d8b24dcf01
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917665"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55018548"
 ---
 # <a name="supported-code-changes-c"></a>受支持的代码更改 (C++)
 Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但是，在程序执行期间，某些更改无法应用。 若要应用这些更改，您必须停止执行并生成新版本的代码。  

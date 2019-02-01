@@ -1,14 +1,9 @@
 ---
 title: “每线程摘要”报告 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.executionbreakdown
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5a0aa339-03f5-4727-90b3-8950446bbdbe
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7c3c919d666f1e634261895227380de43efc8853
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 06fbc7f8574a5b66e731bb2e7975203866f3eb72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772425"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805376"
 ---
 # <a name="per-thread-summary-report"></a>“每线程摘要”报告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ ms.locfileid: "51772425"
  [同步时间](../profiling/synchronization-time.md)   
  [UI 处理时间](../profiling/ui-processing-time.md)   
  [线程视图](../profiling/threads-view-parallel-performance.md)
-
-
-

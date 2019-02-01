@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 216d3802ddac4e2a4cee2b8ab20d4d3abd381424
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3be7039995c27990a1c5c55bf173ef06e5fee0c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888447"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984699"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 组件
 旧的 COM 组件的部署具有传统上是一个困难的任务。 组件需要全局注册，因此可能会导致重叠的应用程序之间的意外副作用。 这种情况下通常不是.NET Framework 应用程序中的问题由于完全独立于应用程序或组件的并行兼容。 Visual Studio，可部署在 Windows XP 或更高版本的操作系统上的独立的 COM 组件。  

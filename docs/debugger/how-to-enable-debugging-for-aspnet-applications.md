@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: c8723a97f5751b790c946055693064c3b7d12237
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b87a8415bf2df2b8848b4fb619964d981e31ffcf
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881096"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55035245"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>调试 Visual Studio 中的 ASP.NET 或 ASP.NET Core 应用
 
@@ -116,7 +116,7 @@ ASP.NET 项目具有*web.config*文件默认情况下，其中包含这两个应
 
 1. 在 Visual Studio 中打开 ASP.NET 项目*web.config*文件。  
   
-2. *Web.config*是一个 XML 文件，因此包含标记来标记的嵌套的节。 找到`configuration/system.web/compilation`部分。 (如果`compilation`元素不存在，请创建它。)
+2. *Web.config*是一个 XML 文件，因此包含标记来标记的嵌套的节。 找到 `configuration/system.web/compilation` 部分。 (如果`compilation`元素不存在，请创建它。)
   
 3. 请确保`debug`中的属性`compilation`元素设置为`true`。 (如果`compilation`元素不包含`debug`属性，将其添加并将其设置为`true`。) 
   

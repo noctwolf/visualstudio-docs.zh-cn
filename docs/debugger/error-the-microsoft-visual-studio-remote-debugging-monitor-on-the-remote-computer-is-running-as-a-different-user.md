@@ -18,15 +18,15 @@ helpviewer_keywords:
 - msvsmon.exe
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d6d36844883b1acd51d169015a226d584c6c096
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 513d05149ca52e1d2ec1ca057cca722cef097bd1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911294"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55034839"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>错误：远程计算机上的 Microsoft Visual Studio 远程调试监视器正在以其他用户身份运行 |Microsoft Docs
 当尝试执行远程调试时，您可能会收到如下错误信息：  
@@ -44,4 +44,4 @@ ms.locfileid: "53911294"
   
 ## <a name="see-also"></a>请参阅  
  [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [远程调试](../debugger/remote-debugging.md)

@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: f7f08402-610e-47f0-ba10-575dd395a0f0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5273a80864af9253414e37df0ff290fbb374bbaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f974ebc0953331a3564c5b4632a55a40c999c61
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939064"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920066"
 ---
 # <a name="debugging-applications"></a>调试应用程序
 以下各节介绍了对不同类型的应用程序进行调试的信息。 不同类型的应用程序和编程语言，需要的设置和技术也会不同，需要调试的问题也不同。  

@@ -1,25 +1,20 @@
 ---
 title: 使用着色器 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 72325522886ed1bc6ab262152c84fc3660231d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3e0f962440d722a881d7a8de4ed2e7c9a9c7755f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226833"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795905"
 ---
 # <a name="working-with-shaders"></a>使用着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +35,8 @@ ms.locfileid: "49226833"
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|说明​​|  
 |-----------|-----------------|  
 |[着色器设计器](../designers/shader-designer.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 着色器设计器处理着色器。|  
 |[着色器设计器节点](../designers/shader-designer-nodes.md)|讨论可用于实现图形效果的着色器设计器节点的种类。|  
 |[着色器设计器示例](../designers/shader-designer-examples.md)|提供转至演示如何使用着色器设计器来实现常见图形效果的主题的链接。|
-
-
-
