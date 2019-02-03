@@ -1,23 +1,20 @@
 ---
-title: Visual Studio 2015 |Microsoft Docs
+title: Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 772b6cf4-cee5-42d0-bc18-b4eb07e22ff0
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c6bd4e34e25add01de6e6e54c2439c2ca80ccf33
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: 76e1d9c4a7cbfdfc2a7011668eb58a5ea9741d3d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53062478"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780674"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +78,7 @@ Microsoft Visual Studio 2015 是一套用于创建软件的工具，包括通过
 
  下图显示了 VSTS 中托管的解决方案的“团队资源管理器”窗格：
 
- ![Visual Studio 团队资源管理器](../ide/media/vs2015-teamexplorer.png "VS2015_TeamExplorer")
+ ![Visual Studio Team Explorer](../ide/media/vs2015-teamexplorer.png "VS2015_TeamExplorer")
 
 ## <a name="creating-solutions-and-projects"></a>创建解决方案和项目
  尽管可以使用 Visual Studio 浏览单个代码文件，但更常见的是在 *项目*中进行操作。 对应用程序而言，Visual Studio 项目是一个编译为单个二进制可执行文件（例如 .exe、DLL 或 appx）的文件和资源的集合。 而对于非 ASP.NET 网站，则不生成任何可执行文件，因此项目中只包含 HTML、JavaScript 文件和图像。 因为有时可能需要创建多个二进制文件或密切相关的网站，所以 Visual Studio 提供了解决方案的概念，其中可包含多个项目和网站。 创建项目时，实际创建的是解决方案内的项目，并且以后在必要时可向此解决方案添加更多项目。 例如，如果你拥有 DLL 项目，则可以向加载和使用此 DLL 的解决方案添加 .exe 项目。
@@ -136,7 +133,7 @@ Microsoft Visual Studio 2015 是一套用于创建软件的工具，包括通过
 
 8. “转到定义”  上下文菜单选项可直接进入其中定义函数或对象的位置。 还可以在编辑器中右键单击来获取其他导航命令。
 
-9. [对象浏览器](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470)，作为相关的工具，可以检查系统上的 .NET 或 Windows 运行时程序集，以查看其中包含的类型以及这些类型包含的方法和属性。
+9. [对象浏览器](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)，作为相关的工具，可以检查系统上的 .NET 或 Windows 运行时程序集，以查看其中包含的类型以及这些类型包含的方法和属性。
 
      ![显示 System.Timer 的对象浏览器](../ide/media/objectbrowser.png "ObjectBrowser")
 
@@ -157,7 +154,7 @@ Microsoft Visual Studio 2015 是一套用于创建软件的工具，包括通过
 
  [Immediate Window](../ide/reference/immediate-window.md) 使你能够在表达式中键入并立即查看其结果。
 
- [IntelliTrace](http://msdn.microsoft.com/en-us/629e9660-c59a-446b-8c30-290059158f61) 窗口会记录在运行 .NET 程序中的每个方法调用和其他事件，并可帮助快速找到问题来源位置。
+ [IntelliTrace](http://msdn.microsoft.com/629e9660-c59a-446b-8c30-290059158f61) 窗口会记录在运行 .NET 程序中的每个方法调用和其他事件，并可帮助快速找到问题来源位置。
 
  有关详细信息，请参阅 [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)。
 
@@ -172,7 +169,7 @@ Microsoft Visual Studio 2015 是一套用于创建软件的工具，包括通过
 ## <a name="connecting-to-cloud-services-and-databases"></a>连接到云服务和数据库
  Visual Studio 中的“ [服务器资源管理器](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) ”窗口显示个性化帐户（登录时使用的帐户）下托管的所有帐户的资源，包括 SQL Server 实例、Azure、Salesforce.com、Office 365 和网站。
 
- ![服务器资源管理器](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
+ ![Server Explorer](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
  Visual Studio 包括 [Microsoft SQL Server Data Tools](https://msdn.microsoft.com/data/tools.aspx) (SSDT)，使你能够构建、调试、维护和重构数据库。 可使用数据库项目，或直接使用已连接的数据库实例（本地或非本地）。
 

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLinesByAddr |Microsoft Docs
+title: IDiaSymbol::findInlineeLinesByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: f1ab47ca-c851-48ea-9c12-47fb80b31102
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db10bb714fa4ee96030bfce918b01fe877890078
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56b2a70ecd0f8d4b7f9e3d49df0e764923f21fac
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843263"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939603"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
 检索一个枚举，允许客户端进行循环访问，将内联，直接或间接指定的地址范围内此符号中的所有函数的行号信息。  

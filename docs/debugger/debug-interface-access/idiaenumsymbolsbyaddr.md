@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr |Microsoft Docs
+title: IDiaEnumSymbolsByAddr | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37d3dcdf-e4fa-4354-b5e1-8843566b52ac
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1e0fd6d480b327efc2ac880925f78029f32067
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 247ac0a1ae6850b4b1a80553796b67f9098afa99
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958285"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54964296"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 通过地址来枚举数据源中包含的各种符号。  
