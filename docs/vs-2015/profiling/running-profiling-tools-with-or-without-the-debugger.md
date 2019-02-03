@@ -1,25 +1,20 @@
 ---
 title: 运行带或不带调试器的分析工具 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eb36ad055f126ce034fbb7323877b65aa8e3105c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 910c2f6e71820c079eb92fdc7adf61d9e67d0001
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722241"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783385"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>运行带或不带调试器的分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
   
 1. 在 Visual Studio 中打开项目。  
   
-2. 在“调试”菜单上，选择“性能探查器...”（快捷键：Alt + F2）。  
+2. 在“调试”菜单上，选择“性能探查器...”快捷键ALT + F2  
   
 3. 在诊断启动页上，选择要在会话中运行的一个或多个工具。 将仅显示适用于项目类型、操作系统和编程语言的工具。 选择诊断工具时，将禁用对不能在同一诊断会话中运行的工具的选择。 对于 C# Windows 通用应用，你的选择可能如下所示：  
   
@@ -130,21 +125,18 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
  要在远程 PC 或平板电脑上运行诊断会话，需要在远程目标上安装和运行 Visual Studio 远程工具。 对于桌面应用，请参阅[远程调试](../debugger/remote-debugging.md)。  对于 Windows 通用应用，请参阅[在远程计算机上运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>诊断开发团队的博客文章和 MSDN 文章  
- [MSDN 杂志：在 Visual Studio 2015 中调试时分析性能](https://msdn.microsoft.com/magazine/dn973013.aspx)  
+ [MSDN 杂志：在 Visual Studio 2015 中进行调试的同时分析性能](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
  [MSDN 杂志：使用 IntelliTrace 更快地诊断问题](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
  [博客文章：使用 Visual Studio 2015 中的内存使用率工具诊断事件处理程序漏洞](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
   
- [视频：使用 Microsoft Visual Studio Ultimate 2015 中的 IntelliTrace 进行历史调试](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [视频：使用 Microsoft Visual Studio Ultimate 2015 中的 IntelliTrace 进行历史记录调试](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
  [视频：使用 Visual Studio 2015 调试性能问题](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [性能提示：使用 Visual Studio 进行调试时的性能信息概览](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [性能提示：使用 Visual Studio 调试时快速查看性能信息](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
  [Visual Studio 2015 中的“诊断工具”调试器窗口](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
  [Visual Studio Enterprise 2015 中的 IntelliTrace](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
-
-
-

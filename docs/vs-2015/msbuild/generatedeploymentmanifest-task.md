@@ -1,14 +1,9 @@
 ---
 title: GenerateDeploymentManifest 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateDeploymentManifest
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 0734ebda-734d-49c4-9642-8d9d919d45fd
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8ad0b9919c5c567662d78573573f1bf046c93552
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7a564028017e97a10ba0dda51c2e0db23dd1067a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261881"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792937"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "49261881"
 ## <a name="parameters"></a>参数  
  下表描述了 `GenerateDeploymentManifest` 任务的参数。  
   
-|参数|描述|  
+|参数|说明|  
 |---------------|-----------------|  
 |`AssemblyName`|可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Name` 字段。 如果未指定此参数，则从 `EntryPoint` 或 `InputManifest` 参数中推断名称。 如果无法推断名称，则任务将引发错误。|  
 |`AssemblyVersion`|可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Version` 字段。 如果未指定此参数，则任务使用值“1.0.0.0”。|  
@@ -48,8 +43,8 @@ ms.locfileid: "49261881"
 |`DeploymentUrl`|可选 `String` 参数。<br /><br /> 指定应用程序的更新位置。 如果未指定此参数，则不会为应用程序定义更新位置。 但是，如果 `UpdateEnabled` 参数为 `true`，则必须指定更新位置。 指定的值应为完全限定的 URL 或 UNC 路径。|  
 |`Description`|可选 `String` 参数。<br /><br /> 指定应用程序的可选说明。|  
 |`DisallowUrlActivation`|可选 `Boolean` 参数。<br /><br /> 指定当通过 URL 打开应用程序时是否应该自动运行该应用程序。 如果此参数为 `true`，则应用程序只能从“开始”菜单中启动。 此参数的默认值为 `false`。 仅当 `Install` 参数值为 `true` 时才应用此输入。|  
-|`EntryPoint`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指示生成的清单程序集的入口点。 对于 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署清单，此输入指定了 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序清单。<br /><br /> 在 [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] 中，[GenerateApplicationManifest 任务](../msbuild/generateapplicationmanifest-task.md)要求具有 `EntryPoint` 才能生成应用程序清单。 （程序集或本机清单无需 `EntryPoint`。）当出现以下生成错误时强制执行此要求：“MSB3185：未指定清单的入口点。”<br /><br /> 如果未指定 `EntryPoint` 任务参数，则 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 不会发出此错误。 相反，会将 \<customHostSpecified> 标记作为 \<entryPoint> 标记的子级插入，例如：<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> 通过执行以下步骤，可将 DDL 依赖项添加到应用程序清单：<br /><br /> 1.通过调用 <xref:Microsoft.Build.Tasks.ResolveAssemblyReference> 解析程序集引用。<br />2.将上一个任务的输出和程序集本身传递给 <xref:Microsoft.Build.Tasks.ResolveManifestFiles>。<br />3.使用 `Dependencies` 参数将依赖项传递给 <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>。|  
-|`ErrorReportUrl`|可选 [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 指定安装 ClickOnce 过程中显示在对话框中的网页 URL。|  
+|`EntryPoint`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指示生成的清单程序集的入口点。 对于 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署清单，此输入指定了 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序清单。<br /><br /> 在 [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] 中，[GenerateApplicationManifest 任务](../msbuild/generateapplicationmanifest-task.md)要求具有 `EntryPoint` 才能生成应用程序清单。 （程序集或本机清单无需 `EntryPoint`。）此要求已强制执行并生成错误：MSB3185未指定入口点的清单。"<br /><br /> 如果未指定 `EntryPoint` 任务参数，则 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 不会发出此错误。 相反，会将 \<customHostSpecified> 标记作为 \<entryPoint> 标记的子级插入，例如：<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> 通过执行以下步骤，可将 DDL 依赖项添加到应用程序清单：<br /><br /> 1.通过调用 <xref:Microsoft.Build.Tasks.ResolveAssemblyReference> 解析程序集引用。<br />2.将上一个任务的输出和程序集本身传递给 <xref:Microsoft.Build.Tasks.ResolveManifestFiles>。<br />3.使用 `Dependencies` 参数将依赖项传递给 <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>。|  
+|`ErrorReportUrl`|可选 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String 参数。<br /><br /> 指定安装 ClickOnce 过程中显示在对话框中的网页 URL。|  
 |`InputManifest`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指示输入 XML 文档，使其充当清单生成器的基础。 这使得结构化数据（如自定义清单定义）可反映在输出清单中。 XML 文档中的根元素必须是 asmv1 命名空间中的程序集节点。|  
 |`Install`|可选 `Boolean` 参数。<br /><br /> 指定应用程序是已安装应用程序还是仅联机应用程序。 如果此参数为 `true`，则应用程序将安装在用户的“开始”菜单中，并可通过“添加或删除程序”对话框将其删除。 如果此参数为 `false`，则应用程序适用于在网页上联机使用。 此参数的默认值为 `true`。|  
 |`MapFileExtensions`|可选 `Boolean` 参数。<br /><br /> 指定是否使用 .deploy 文件扩展名映射。 如果此参数为 `true`，则每个程序文件都使用 .deploy 文件扩展名发布。 此选项限制文件扩展名的数量（必须取消阻止这些文件扩展名，才能启用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序部署），有助于提升 Web 服务器安全性。 此参数的默认值为 `false`。|  
@@ -76,6 +71,3 @@ ms.locfileid: "49261881"
  [GenerateApplicationManifest 任务](../msbuild/generateapplicationmanifest-task.md)   
  [SignFile 任务](../msbuild/signfile-task.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)
-
-
-

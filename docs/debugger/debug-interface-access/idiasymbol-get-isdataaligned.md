@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddd11a41-6c00-4829-acf4-aa1ace8c21a7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c22796ab2d54d2b0d21920372aceccc9bdce2e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b659dcad7235ae0176e6e4b96fc9e8644912276a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933724"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54986756"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 检索一个标志，指定是否已为某些特定的内存边界对齐用户定义类型 (UDT)。  

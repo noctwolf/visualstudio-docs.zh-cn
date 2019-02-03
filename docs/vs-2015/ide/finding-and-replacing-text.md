@@ -1,14 +1,9 @@
 ---
 title: 查找和替换文本 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.find
 - vs.findreplacecontrol
@@ -41,13 +36,13 @@ ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a0edc40a8a6523c76a6b6f8074a108219152c06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273437"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756873"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,13 +74,10 @@ ms.locfileid: "49273437"
  选择“查找全部”后，“查找结果”窗口随即打开，并列出搜索的匹配项。 在列表中选择一个结果会显示相关联的文件，并突出显示匹配项。 如果文件尚未打开进行编辑，则可以在选项卡右侧的预览选项卡中打开。 可以使用“查找”控件在“查找结果”列表中搜索。  
   
 ### <a name="creating-custom-search-folder-sets"></a>创建自定义搜索文件夹集  
- 可以通过选择定义搜索范围**选择搜索文件夹**按钮 (它看起来像 **...**) 旁边**查找**框。 在“选择搜索文件夹”对话框中，可以指定在其中进行搜索的一组文件夹，并且可以保存规范，供以后重复使用。 只有将远程计算机的驱动器映射到本地计算机后，才可以指定远程计算机上的文件夹。  
+ 通过选择“查找范围”框旁边的“选择搜索文件夹”按钮（类似于...），可以定义搜索范围。 在“选择搜索文件夹”对话框中，可以指定在其中进行搜索的一组文件夹，并且可以保存规范，供以后重复使用。 只有将远程计算机的驱动器映射到本地计算机后，才可以指定远程计算机上的文件夹。  
   
 ### <a name="creating-custom-component-sets"></a>创建自定义组件集  
  通过选择“查找范围”框旁边的“编辑自定义组件集”按钮，可以将组件集定义为搜索范围。 可以指定已安装的 .NET 或 COM 组件，以及包含在解决方案或任何程序集或类型库（.dll、.tlb、.olb、.exe 或 .ocx）中的 Visual Studio 项目。 若要搜索引用，请选择“查找引用”框。  
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

@@ -1,29 +1,24 @@
 ---
 title: 如何：收集行级采样数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, line-level sampling
 ms.assetid: 44803aad-dd39-4c2e-9209-d35185d44983
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 21ef50736e00bd835b4e1bc88530d2aaef30ee82
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a2ba4c8a58a2969ced066c6211fd9faa7326cbcf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767544"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779019"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>如何：收集行级采样数据
+# <a name="how-to-collect-line-level-sampling-data"></a>如何：收集行级别采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 行级采样是探查器确定占用大量处理器时间的函数在代码中的位置，如具有高独占样本的函数，处理器需要耗费大量时间。  
@@ -66,6 +61,3 @@ ms.locfileid: "51767544"
 ## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
  [分析性能工具数据](../profiling/analyzing-performance-tools-data.md)
-
-
-

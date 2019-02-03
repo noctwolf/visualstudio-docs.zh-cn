@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 19e930c2-5fbf-4c83-aae8-a1dc3f8fcae8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fd6b184b72acc2ecd08123160a512e5473e6611
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca3f42f1fb4d02191e19655335189111f33c34fa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966542"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009669"
 ---
 # <a name="cannot-change-value-dialog-box"></a>“无法更改值”对话框
 ## <a name="error"></a>Error  
- `The value of this variable cannot be changed` &#124;`The name` *名称* `does not exist in the current context` &#124; *各种其他消息*  
+ `The value of this variable cannot be changed` &#124; `The name` *name* `does not exist in the current context` &#124; *various other messages*  
   
  在调试器窗口（“自动”、“监视”或“局部变量”窗口）或“快速监视”对话框中，当尝试将变量内容更改为无效值时，会出现该消息框。 例如，如果尝试将整数变量的值设置为字符串，则将出现此消息框。  
   

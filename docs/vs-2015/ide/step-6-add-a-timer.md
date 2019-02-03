@@ -1,25 +1,20 @@
 ---
-title: 步骤 6：添加计时器 | Microsoft Docs
-ms.custom: ''
+title: 步骤 6：添加计时器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 09e7930b-cab6-4a22-9a6f-72e23f489585
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 577ef28c49d769bac8d979330f181c67b8d35687
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 31116171a15a7a38b76451777faaed35dc8b1e52
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293368"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795282"
 ---
 # <a name="step-6-add-a-timer"></a>步骤 6：添加计时器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49293368"
      [!code-csharp[VbExpressTutorial4Step6#7](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step6/cs/form1.cs#7)]
      [!code-vb[VbExpressTutorial4Step6#7](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step6/vb/form1.vb#7)]  
   
-     Tick 事件处理程序将执行三个操作：首先，通过调用 `Stop()` 方法确保计时器没有运行。 然后，它使用两个引用变量 `firstClicked` 和 `secondClicked`，使得玩家选择的两个标签的图标再次不可见。 最后，它将 `firstClicked` 和 `secondClicked` 引用变量重置为 `null`（Visual C# 中）或 `Nothing`（Visual Basic 中）。 这一步很重要，因为程序本身就是这样重置的。 现在，它不跟踪任何 `Label` 控件，并已准备好让玩家再次选择标签。  
+     Tick 事件处理程序将执行三项操作：首先，通过调用 `Stop()` 方法确保计时器没有运行。 然后，它使用两个引用变量 `firstClicked` 和 `secondClicked`，使得玩家选择的两个标签的图标再次不可见。 最后，它将 `firstClicked` 和 `secondClicked` 引用变量重置为 `null`（Visual C# 中）或 `Nothing`（Visual Basic 中）。 这一步很重要，因为程序本身就是这样重置的。 现在，它不跟踪任何 `Label` 控件，并已准备好让玩家再次选择标签。  
   
     > [!NOTE]
     >  `Timer` 对象具有 `Start()` 方法和 `Stop()` 方法，分别用以启动和停止计时器。 如果你在“属性”窗口中将计时器的“Enabled” 属性设置为“True”，则只要程序开始运行，计时器就会开始计时。 但是，如果将该属性保留设置为“False”，则在调用计时器的 `Start()` 方法之前，计时器不会开始计时。 通常，计时器会使用 **Interval** 属性确定在计时周期之间等待的毫秒数，从而反复触发其 Tick 事件。 您可能已经注意到在 Tick 事件中调用计时器的 `Stop()` 方法的方式。 这会将计时器置于“单触发模式”，意味着调用 `Start()` 方法时，计时器会等待指定的间隔时间，触发单个 Tick 事件，然后停止。  
@@ -63,9 +58,6 @@ ms.locfileid: "49293368"
   
 ### <a name="to-continue-or-review"></a>继续或查看  
   
--   若要转到下一个教程步骤，请参阅[步骤 7：保持对可见](../ide/step-7-keep-pairs-visible.md)。  
+-   要转到下一个教程步骤，请参阅[步骤 7：保持对可见](../ide/step-7-keep-pairs-visible.md)  
   
--   若要返回到上一个教程步骤，请参阅[步骤 5：添加标签引用](../ide/step-5-add-label-references.md)。
-
-
-
+-   要返回上一个教程步骤，请参阅[步骤 5：添加标签引用](../ide/step-5-add-label-references.md)。
