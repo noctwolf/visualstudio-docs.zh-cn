@@ -188,7 +188,7 @@ ms.locfileid: "54947473"
 
     应在 Visual Studio 中命中断点。
 
-## <a name="bkmk_openports">疑难解答</a>Windows Server 上打开所需的端口
+## <a name="bkmk_openports"></a> 疑难解答Windows Server 上打开所需的端口
 
 在大多数系统中，所需的端口被打开的 ASP.NET 和远程调试器安装。 但是，您可能需要验证端口打开。
 
