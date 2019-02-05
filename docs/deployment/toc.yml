@@ -41,7 +41,7 @@ items:
       href: /aspnet/core/publishing/azure-continuous-deployment
     - name: 使用 Visual Studio Kubernetes 工具发布到 Kubernetes
       href: tutorial-kubernetes-tools.md
-  - name: Native
+  - name: C++
     items:
     - name: Visual C++ 中的部署...
       href: /cpp/ide/deployment-in-visual-cpp
@@ -107,6 +107,8 @@ items:
     - name: 发布 ClickOnce 应用程序
       href: publishing-clickonce-applications.md
       items:
+      - name: 使用发布向导发布 ClickOnce 应用程序
+        href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
       - name: 创建供其他人部署的 ClickOnce 应用程序
         href: creating-clickonce-applications-for-others-to-deploy.md
       - name: 在不重新签名的情况下，针对测试和生产服务器部署应用
@@ -117,8 +119,6 @@ items:
         href: deploying-com-components-with-clickonce.md
       - name: 从命令行生成 ClickOnce 应用程序
         href: building-clickonce-applications-from-the-command-line.md
-      - name: 使用发布向导发布 ClickOnce 应用程序
-        href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
       - name: 指定 Visual Studio 复制文件的位置
         href: how-to-specify-where-visual-studio-copies-the-files.md
       - name: 指定最终用户从中进行安装的位置
@@ -290,9 +290,9 @@ items:
         href: customerrorreporting-element-clickonce-deployment.md
     - name: ClickOnce 非托管 API 参考
       href: clickonce-unmanaged-api-reference.md
-ms.openlocfilehash: 303890cae6181264f0bcd96e24b27a1065d67d6b
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 427a4156599cbf4ed4fc718c2b5f6199aeef2342
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243973"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484051"
