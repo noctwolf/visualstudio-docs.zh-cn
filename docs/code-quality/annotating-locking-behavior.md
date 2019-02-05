@@ -33,12 +33,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0a9f28da48582ac562f08e3327fb3d80375c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4ee8e68cea1a4f6b708b304b6ca889d29eff0bad
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835286"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690303"
 ---
 # <a name="annotating-locking-behavior"></a>对锁定行为进行批注
 若要避免多线程程序中的并发 Bug，请遵循适当的锁定规则并使用 SAL 批注。
@@ -105,6 +105,19 @@ ms.locfileid: "53835286"
 |`_Interlocked_`|批注变量，与 `_Guarded_by_(_Global_interlock_)` 等效。|
 |`_Interlocked_operand_`|批注的函数参数是各个互锁函数之一的目标操作数。  这些操作数必须具有特定的附加属性。|
 |`_Write_guarded_by_(expr)`|批注变量并表明变量每次受到修改时，`expr` 命名的锁对象的锁计数至少为 1。|
+
+
+## <a name="smart-lock-and-raii-annotations"></a>Smart Lock 和 RAII 批注
+ 通常，智能锁包装本机锁，并管理其生存期。 下表列出了可以用于智能锁和编码支持的模式的 RAII 的批注`move`语义。
+
+|批注|描述|
+|----------------|-----------------|
+|`_Analysis_assume_smart_lock_acquired_`|指示该分析器，以假设智能锁已获取。 此批注需要引用锁类型作为其参数。|
+|`_Analysis_assume_smart_lock_released_`|指示该分析器，以假设已释放的智能的锁。 此批注需要引用锁类型作为其参数。|
+|`_Moves_lock_(target, source)`|介绍`move constructor`传输从锁状态的操作`source`对象传递给`target`。 `target`被认为新构造的对象，因此它具有之前丢失并且被替换的任何状态`source`状态。 `source`还重置为无锁计数或别名目标，但指向它的别名的干净状态保持不变。|
+|`_Replaces_lock_(target, source)`|介绍`move assignment operator`其中从源传输状态前释放目标锁的语义。 这可被视作的组合`_Moves_lock_(target, source)`前面`_Releases_lock_(target)`。|
+|`_Swaps_locks_(left, right)`|介绍标准版`swap`行为假设它的对象`left`和`right`交换它们的状态。 如果存在，则交换的状态包括锁计数与别名化目标。 指向的别名`left`和`right`对象保持不变。|
+|`_Detaches_lock_(detached, lock)`|描述在其中锁包装器类型允许取消关联遭拒与其包含的资源的方案。 它类似于如何`std::unique_ptr`适用于其内部指针： 它允许程序员来提取指针，并使其智能指针容器保持处于初始状态。 支持类似的逻辑`std::unique_lock`，可以在自定义锁包装器实现。 已分离的锁将保留其状态 （锁计数与别名化目标，如果有），而重置包装为包含零个锁计数并无别名的目标，同时保留其自己的别名。 没有针对锁计数 （释放和获取） 操作。 此批注的行为与完全相同`_Moves_lock_`只不过分离的参数应`return`而非`this`。|
 
 ## <a name="see-also"></a>请参阅
 
