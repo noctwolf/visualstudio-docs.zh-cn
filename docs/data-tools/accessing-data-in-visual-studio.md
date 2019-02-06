@@ -15,12 +15,12 @@ manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9b3d41ab51e2f7f7e410e9c8443d864ab46328b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 7bd87013245bd1c9a28ea093433687009f9c35e8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979931"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484142"
 ---
 # <a name="access-data-in-visual-studio"></a>在 Visual Studio 中访问数据
 
@@ -28,7 +28,7 @@ ms.locfileid: "54979931"
 
 对于 JavaScript、 Python、 PHP、 Ruby 或 c + + 中的应用程序，你连接到数据就像任何其他内容，方法是获取库编写的代码。 对于.NET 应用程序，Visual Studio 提供可用于浏览数据源、 创建对象模型来存储和处理数据在内存中，并将数据绑定到用户界面的工具。 Microsoft Azure 提供了用于.NET、 Java、 Node.js、 PHP、 Python、 Ruby 和移动应用和 Visual Studio 中的工具连接到 Azure 存储 Sdk。
 
-以下列表显示了从 Visual Studio 只需几个可以使用许多数据库和存储系统。 [Microsoft Azure](https://azure.microsoft.com/)产品是数据服务，包括所有预配和管理的基础数据存储区。 **Azure 开发**中的工作负荷[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)使您能够直接从 Visual Studio 的 Azure 数据存储。
+以下列表显示了从 Visual Studio 只需几个可以使用许多数据库和存储系统。 [Microsoft Azure](https://azure.microsoft.com/)产品是数据服务，包括所有预配和管理的基础数据存储区。 **Azure 开发**中的工作负荷[Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)使您能够直接从 Visual Studio 的 Azure 数据存储。
 
 ![Azure 开发工作负载](media/azure-development-workload.png)
 
