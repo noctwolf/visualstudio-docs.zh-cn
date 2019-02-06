@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 23148307f372ba094df86344031aaea4c081d826
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f1b1ccaaeb8f51e662c85b7894f9f752dba9c2a8
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918376"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484168"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>欢迎使用 Visual Studio IDE | C#
 
@@ -98,7 +98,7 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 ## <a name="install-the-visual-studio-ide"></a>安装 Visual Studio IDE
 
-这篇概述性文章逐步介绍了如何创建简单项目，以及尝试可以使用 Visual Studio 执行的一些操作，如使用 [IntelliSense](../../ide/using-intellisense.md) 辅助编码、调试应用以在程序执行过程中查看变量值，以及更改颜色主题。 首先，请[下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 并将其安装到系统上。
+这篇概述性文章逐步介绍了如何创建简单项目，以及尝试可以使用 Visual Studio 执行的一些操作，如使用 [IntelliSense](../../ide/using-intellisense.md) 辅助编码、调试应用以在程序执行过程中查看变量值，以及更改颜色主题。 首先，请[下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 并将其安装到系统上。
 
 通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
 

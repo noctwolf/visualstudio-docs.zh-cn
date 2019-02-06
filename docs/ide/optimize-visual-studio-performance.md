@@ -13,12 +13,12 @@ f1_keywords:
 ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: c56bd7bbfdd162a354432814decb2450eff6f360
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e8ed42160d6bdbcc6b68a1652ff725c7e1d75e3a
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070456"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690304"
 ---
 # <a name="optimize-visual-studio-performance"></a>优化 Visual Studio 性能
 
@@ -26,7 +26,7 @@ ms.locfileid: "55070456"
 
 ## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>更新到 Visual Studio 2017 版本 15.6 或更高版本
 
-如果当前使用 Visual Studio 2015，请免费下载 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)，以检查其改进性能。 在 Visual Studio 2017 中，解决方案加载速度要快两到三倍，其他方面的性能也有所改善。 Visual Studio 2017 与 Visual Studio 2015 并行兼容，因此不会因为尝试而丢失任何内容。
+如果当前使用 Visual Studio 2015，请免费下载 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)，以检查其改进性能。 在 Visual Studio 2017 中，解决方案加载速度要快两到三倍，其他方面的性能也有所改善。 Visual Studio 2017 与 Visual Studio 2015 并行兼容，因此不会因为尝试而丢失任何内容。
 
 如果当前使用 Visual Studio 2017，请确保运行版本 15.6 或更高版本。 数据显示，在版本 15.6 中，解决方案的加载速度最高可提升两到三倍。 在[此处](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)下载。
 

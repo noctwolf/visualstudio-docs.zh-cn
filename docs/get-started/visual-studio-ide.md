@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fad0568804c4cd455a195c476cd2cd447ef5827f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f58fd5969a06cadf0ebbbb61f58a9ecbe12ef0d2
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954769"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483778"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>欢迎使用 Visual Studio IDE
 
@@ -98,7 +98,7 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 ## <a name="install-the-visual-studio-ide"></a>安装 Visual Studio IDE
 
-这篇概述性文章将演示创建一个简单项目以及尝试使用 Visual Studio 执行的一些操作，例如更改颜色主题、使用 [IntelliSense](../ide/using-intellisense.md) 辅助编码以及调试应用，以便在程序执行过程中查看变量的值。 首先，请[下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 并将其安装到系统上。
+这篇概述性文章将演示创建一个简单项目以及尝试使用 Visual Studio 执行的一些操作，例如更改颜色主题、使用 [IntelliSense](../ide/using-intellisense.md) 辅助编码以及调试应用，以便在程序执行过程中查看变量的值。 首先，请[下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 并将其安装到系统上。
 
 通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
 

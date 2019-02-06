@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: e817302031ba2ec37102e5b3eb41a5b35460c546
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c9bdc4afb0d5f2b9f9f4ae0385b63372644929f8
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029864"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690237"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教程：在同一个调试会话中调试 C# 和 C++
 
@@ -44,7 +44,7 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 - 使用 C++ 的桌面开发
 - .NET 桌面开发或 .NET Core 跨平台开发，具体取决于你想要创建哪种应用类型。
 
-如果未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 页面，进行免费安装。
+如果未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 页面，进行免费安装。
 
 如果已安装 Visual Studio，但没有所需工作负荷，请选择 Visual Studio“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”。 在 Visual Studio 安装程序中，选择所需工作负荷，然后选择“修改”。
 
