@@ -13,18 +13,18 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 890bec08c29491bbd867c9c8380172cced71d2fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b00cf69a949dcd5ad73120c9ce1fccb2b7af9040
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985703"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690362"
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：分发代码片段
 
 可以向朋友提供代码片段，然后让他们使用代码片段管理器在自己的计算机上安装代码片段。 但是，如果你有若干代码片段要分发或者希望进行范围更广泛的分发，则可以将代码片段文件包含到 Visual Studio 扩展中。 然后，Visual Studio 用户可安装扩展。
 
-要创建 Visual Studio 扩展，你必须安装 Visual Studio SDK。 可在 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页面查找与 Visual Studio 安装匹配的 VSSDK 版本。
+要创建 Visual Studio 扩展，你必须安装 Visual Studio SDK。 可在 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页面查找与 Visual Studio 安装匹配的 VSSDK 版本。
 
 ## <a name="set-up-the-extension"></a>设置扩展
 

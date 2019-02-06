@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b825cd17c11677b95f9400b56cf42c526292e5c5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e9701497def997b96eff50b0713bc3e16a97f63d
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025975"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483856"
 ---
 # <a name="task-writing"></a>任务写入
 任务提供在生成过程中运行的代码。 任务包含在目标中。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 附带一个典型任务库，也可以创建自己的任务。 有关 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 附带的任务库的详细信息，请参阅[任务参考](../msbuild/msbuild-task-reference.md)。  
@@ -74,14 +74,9 @@ namespace MyTasks
         public override bool Execute()  
         {  
             return true;  
-         }  
-  
-        private string myProperty;  
-        public string MyProperty  
-        {  
-            get { return myProperty; }  
-            set { myProperty = value; }  
         }  
+  
+        public string MyProperty { get; set; }
     }  
 }  
 ```  
@@ -122,12 +117,7 @@ public override bool Execute()
 ```csharp
 public class SimpleTask : ITask  
 {  
-    private IBuildEngine buildEngine;  
-    public IBuildEngine BuildEngine  
-    {  
-        get{ return buildEngine; }  
-        set{ buildEngine = value; }  
-    }  
+    public IBuildEngine BuildEngine { get; set; }
   
     public override bool Execute()  
     {  
@@ -145,21 +135,15 @@ public class SimpleTask : ITask
  可以将特定任务属性标记为“必需”，使任何运行该任务的项目文件都必须对这些属性设置值，否则生成将会失败。 将 `[Required]` 特性应用到任务的 .NET 属性，如下所示：  
   
 ```csharp
-private string requiredProperty;  
-  
 [Required]  
-public string RequiredProperty  
-{  
-    get { return requiredProperty; }  
-    set { requiredProperty = value; }  
-}  
+public string RequiredProperty { get; set; }
 ```  
   
  `[Required]` 特性由 <xref:Microsoft.Build.Framework> 命名空间中的 <xref:Microsoft.Build.Framework.RequiredAttribute> 定义。  
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>说明​​  
  以下 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 类演示一个从 <xref:Microsoft.Build.Utilities.Task> 帮助器类派生的任务。 该任务返回 `true`，表示执行成功。  
   
 ### <a name="code"></a>代码  
@@ -183,7 +167,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>说明​​  
  以下 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 类演示一个实现 <xref:Microsoft.Build.Framework.ITask> 接口的任务。 该任务返回 `true`，表示执行成功。  
   
 ### <a name="code"></a>代码  
@@ -200,35 +184,12 @@ namespace SimpleTask2
         //implement a BuildEngine property of type  
         //Microsoft.Build.Framework.IBuildEngine. This is done for  
         //you if you derive from the Task class.  
-        private IBuildEngine buildEngine;  
-        public IBuildEngine BuildEngine  
-        {  
-            get  
-            {  
-                return buildEngine;  
-            }  
-            set  
-            {  
-                buildEngine = value;  
-            }  
-         }  
+        public IBuildEngine BuildEngine { get; set; }
   
         // When implementing the ITask interface, it is necessary to  
-        // implement a HostObject property of type Object.  
+        // implement a HostObject property of type object.  
         // This is done for you if you derive from the Task class.  
-        private Object hostObject;  
-        public Object HostObject  
-        {  
-            get  
-            {  
-                return hostObject;  
-            }  
-  
-            set  
-            {  
-                hostObject = value;  
-            }  
-        }  
+        public object HostObject { get; set; }
   
         public bool Execute()  
         {  
@@ -241,7 +202,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>说明​​  
  此 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 类演示一个从 <xref:Microsoft.Build.Utilities.Task> 帮助器类派生的任务。 它有一个必需的字符串属性，并引发一个由所有注册的记录器显示的事件。  
   
 ### <a name="code"></a>代码  
@@ -249,7 +210,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>说明​​  
  以下示例显示一个调用上一示例任务 SimpleTask3 的项目文件。  
   
 ### <a name="code"></a>代码  

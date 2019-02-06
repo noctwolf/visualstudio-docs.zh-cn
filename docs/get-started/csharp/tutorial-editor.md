@@ -13,19 +13,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a14b33d1b9469b817253812ae711eb5c65c74b70
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc0e143b4ff84422a344caae1e50e88f47af5eeb
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926080"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424559"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 
 在这个 10 分钟的 Visual Studio 代码编辑器简介中，我们会向文件添加代码，了解 Visual Studio 编写、导航和了解代码的简便方法。
 
 > [!TIP]
-> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
+> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
 
 本文假定你已熟悉 C#。 如果不熟悉，建议先看看 [Visual Studio 中的 C# 和 ASP.NET Core 入门教程](tutorial-aspnet-core.md)。
 
