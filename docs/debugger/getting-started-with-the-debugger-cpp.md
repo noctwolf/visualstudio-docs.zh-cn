@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a8acda9d6edf2aace86079f72e27cda76b5a9b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e550bb3ead112ed614bb95c1dc90036a33ef0d09
+ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001986"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690536"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C++ 代码
 
@@ -41,7 +41,7 @@ ms.locfileid: "55001986"
 
 * 须安装 Visual Studio 2017 且具有“C++ 桌面开发”工作负载。
 
-    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 页免费安装。
+    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 页免费安装。
 
     如果需要安装工作负载，但已有 Visual Studio，则单击“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接（选择“文件” > “新建” > “项目”）。 Visual Studio 安装程序启动。 选择“使用 C++ 的桌面开发”工作负载，然后选择“修改”按钮。
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f984a9f7207a8eec77468a3360e2caec5d9400d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c75b635cbdce7662c9e3a30237edb3e004ab7d0c
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036090"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742438"
 ---
 # <a name="receive-activity-designer"></a>Receive 活动设计器
 
@@ -52,7 +52,7 @@ ms.locfileid: "55036090"
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | 指定由此 <xref:System.ServiceModel.Activities.Receive> 活动实现的服务操作的已知类型集合。 此属性应与设置为 <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> 的 <xref:System.Runtime.Serialization.DataContractSerializer> 属性结合使用。 如果使用了 <xref:System.Xml.Serialization.XmlSerializer>，则忽略此项。<br /><br /> 选择旁的省略号按钮**KnownTypes**字段中要显示的属性网格**类型集合编辑器**对话框可以添加相关类型。 有关使用此框的详细信息，请参阅[类型集合编辑器对话框](../workflow-designer/type-collection-editor-dialog-box.md)主题。 |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | False | 指定消息的 <xref:System.Net.Security.ProtectionLevel>。<br /><br /> 1。<xref:System.Net.Security.ProtectionLevel>意味着仅使用身份验证。<br />2。<xref:System.Net.Security.ProtectionLevel>意味着登录数据，以帮助确保传输数据的完整性。<br />3。<xref:System.Net.Security.ProtectionLevel>方法进行加密和签名数据，以帮助确保保密性和传输数据的完整性。 |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | False | 指定 <xref:System.ServiceModel.Activities.Receive> 活动实现的服务操作所使用的序列化程序的类型。 默认值为 <xref:System.Runtime.Serialization.DataContractSerializer>，它使用提供的数据协定将类型实例序列化和反序列化为 XML 流或文档。 如果需要对 XML 进行更多控制，还可使用 <xref:System.Xml.Serialization.XmlSerializer>。 |
-| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | 指定消息的操作标头。 如果显式设置，其默认值为： https://tempuri.org/{service协定命名空间} / {服务协定名称} / {操作名称}。 |
+| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | 指定消息的操作标头。 如果显式设置，其默认值为： `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`。 |
 
 ## <a name="see-also"></a>请参阅
 

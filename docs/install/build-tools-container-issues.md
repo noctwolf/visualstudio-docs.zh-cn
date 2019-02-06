@@ -39,7 +39,7 @@ ms.locfileid: "55010306"
 
 ## <a name="build-tools-container"></a>生成工具容器
 
-使用生成工具容器时可能会出现以下已知问题。 要查看问题是否已修复，或者是否有其他已知问题，请访问 https://developercommunity.visualstudio.com。
+使用生成工具容器时可能会出现以下已知问题。 要查看问题是否已修复，或者是否有其他已知问题，请访问 [https://developercommunity.visualstudio.com](https://developercommunity.visualstudio.com)。
 
 * 在[某些情况](https://github.com/Microsoft/vstest/issues/940)下，IntelliTrace 在容器内可能无法正常工作。
 

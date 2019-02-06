@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 276c2a6bc2d03bb03337404b4ae38bd0a9451fca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0071203200cea00671743fe167ba566ece75d1b2
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029149"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742386"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 加载程序，但在执行任何代码之前，此接口是由调试引擎 (DE) 发送到会话调试管理器 (SDM) 中。  
@@ -33,10 +33,7 @@ IDebugLoadCompleteEvent2 : IUnknown
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  DE 创建并发送此事件对象来报告已成功加载程序。 通过使用发送该事件[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 它附加到正在调试的程序时提供的回调函数。  
-  
-## <a name="remarks"></a>备注  
- 此事件是 stopping 事件，必须具有`EVENT_STOPPING`标志上的事件属性的设置。  
-  
+   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
   
