@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 621e7c44592eb94adbc02644af62920b8b95aa24
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: b6bb89772cf013b27d7f7cfd512d79144ffe235d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53829191"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023949"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 若要调试已部署到 IIS 的 ASP.NET 应用程序，安装和运行远程工具的计算机上在其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
@@ -48,7 +48,7 @@ ms.locfileid: "53829191"
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>创建 ASP.NET 4.5.2 在 Visual Studio 计算机上应用程序
   
-1. 创建新的 MVC ASP.NET 应用程序。 (**文件 > 新建 > 项目**，然后选择<strong>Visual C# > Web > ASP.NET Web 应用程序。在 **ASP.NET 4.5.2</strong>模板部分中，选择**MVC**。 请确保**启用 Docker 支持**未选中并且**身份验证**设置为**无身份验证**。 将项目命名**MyASPApp**。)
+1. 创建新的 MVC ASP.NET 应用程序。 (**文件 > 新建 > 项目**，然后选择<strong>Visual C# > Web > ASP.NET Web 应用程序。在 ASP.NET 4.5.2</strong> 模板部分中，选择 **“MVC”** 。 请确保**启用 Docker 支持**未选中并且**身份验证**设置为**无身份验证**。 将项目命名**MyASPApp**。)
 
 2. 打开 HomeController.cs 文件，并在 `About()` 方法中设置断点。
 
@@ -206,7 +206,7 @@ ms.locfileid: "53829191"
 
     应在 Visual Studio 中命中断点。
 
-## <a name="bkmk_openports">疑难解答</a>Windows Server 上打开所需的端口
+## <a name="bkmk_openports"></a> 疑难解答Windows Server 上打开所需的端口
 
 在大多数系统中，所需的端口被打开的 ASP.NET 和远程调试器安装。 但是，您可能需要验证端口打开。
 
