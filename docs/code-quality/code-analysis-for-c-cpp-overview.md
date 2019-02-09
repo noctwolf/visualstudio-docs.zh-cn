@@ -1,7 +1,6 @@
 ---
 title: C/C++ 代码分析概述
 ms.date: 04/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations, code analysis
@@ -22,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 534421fb2a455fafad785a3bc8d4e6e7013b3931
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896391"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947635"
 ---
 # <a name="code-analysis-for-cc-overview"></a>代码分析 C/c + + 概述
 
@@ -51,11 +50,11 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>#pragma 支持
 
-可以使用`#pragma`指令以将警告视为错误; 启用或禁用警告，并禁止显示警告的代码的各个行。 有关更多信息，请参见[如何：设置 C/c + + 项目的代码分析属性](how-to-set-code-analysis-properties-for-c-cpp-projects.md)。
+可以使用`#pragma`指令以将警告视为错误; 启用或禁用警告，并禁止显示警告的代码的各个行。 有关详细信息，请参阅[如何：设置 C/c + + 项目的代码分析属性](how-to-set-code-analysis-properties-for-c-cpp-projects.md)。
 
 ## <a name="annotation-support"></a>批注的支持
 
-批注可以提高代码分析的准确性。 批注函数参数上提供有关预处理脚本和后续条件的其他信息和返回类型。 有关更多信息，请参见[如何：使用 __analysis_assume 指定其他代码信息](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+批注可以提高代码分析的准确性。 批注函数参数上提供有关预处理脚本和后续条件的其他信息和返回类型。 有关详细信息，请参阅[如何：使用 __analysis_assume 指定其他代码信息](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>签入策略的一部分运行分析工具
 

@@ -7,13 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4f07b75806d331fa0fb21444dee72214706edbcb
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: 410ab74e672d29673674131b30e2412581b9b399
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571156"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954200"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 文本模板编写准则
 这些常规准则可能会有帮助，如果在 Visual Studio 中生成程序代码或其他应用程序资源。 它们不被固定的规则。
