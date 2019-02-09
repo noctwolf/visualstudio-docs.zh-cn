@@ -1,7 +1,6 @@
 ---
 title: 批注结构和类
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -25,12 +24,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d3a964020cf9b5c885e52a948ad1fc229d44db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e37d1ad27fab77e5aff1064ecc83e67ee7cc739d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948928"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935051"
 ---
 # <a name="annotating-structs-and-classes"></a>批注结构和类
 你可以通过使用类似于固定条件注释批注结构和类成员，它们都假定为满足的任何函数调用或进入/退出函数涉及封闭结构作为参数或结果值。
