@@ -2,19 +2,18 @@
 title: R Tools for Visual Studio
 description: 针对 Visual Studio 的 R 工具 (RTVS) 是一个免费的开源扩展，提供多种语言功能，包括 IntelliSense、调试和远程工作区。
 ms.date: 11/13/2017
-ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 542563340287b1d41a6f2c3aedd188e80589e898
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fa12091493bda23c7eae52377f93b45cfe4c6e7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947668"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933556"
 ---
 # <a name="work-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
