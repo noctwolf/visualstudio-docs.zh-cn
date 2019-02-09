@@ -2,18 +2,17 @@
 title: 在 Visual Studio 中的工作区 |Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 3489592a-dc0c-4cd3-9b08-cd367626980a
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 406d55b773a586d5cb0128599e225dabbadf21d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da61f3f46d9737bef6c14cf69a52be1951da28fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876898"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925431"
 ---
 # <a name="workspaces"></a>工作区
 
@@ -180,5 +179,5 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 
 ## <a name="next-steps"></a>后续步骤
 
-* [文件上下文](workspace-file-contexts.md)-文件上下文提供程序打开的文件夹的工作区将代码智能。 
+* [文件上下文](workspace-file-contexts.md)-文件上下文提供程序打开的文件夹的工作区将代码智能。
 * [索引](workspace-indexing.md)-工作区索引收集和保留的工作区的信息。
