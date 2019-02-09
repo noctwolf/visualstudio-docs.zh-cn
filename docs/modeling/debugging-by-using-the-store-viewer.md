@@ -10,13 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 55781c9270210f5aaf368ed4df9d247113d0926f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7fb03dd67168867026c77a30bba412076c0b8408
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031560"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945308"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>使用存储查看器进行调试
 使用存储查看器中，可以检查的状态*存储*由[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]。 存储查看器显示所有在元素属性的元素之间的链接以及特定商店中的域模型元素。

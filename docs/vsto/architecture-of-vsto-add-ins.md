@@ -1,7 +1,6 @@
 ---
 title: VSTO 外接程序的体系结构
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27017978d01252870b7a92a88f49afe595dc1de8
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7067eb8aa869701cca68eb358b0319e38ed2dae4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863638"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970499"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO 外接程序的体系结构
   使用 Visual Studio 中的 Office 开发人员工具创建的 VSTO 外接程序具有强调稳定性和安全性的体系结构功能，并使其能够与 Microsoft Office 紧密合作。 本主题介绍 VSTO 外接程序的以下方面：  

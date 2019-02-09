@@ -1,7 +1,6 @@
 ---
 title: 通过使用扩展的对象自动化 Excel
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -21,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b994206c1721c09f3b1729762ae589293dbae15
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8cc86bf7d258bcabd6d7eec1b838eeebfa94c626
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872659"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949845"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>通过使用扩展的对象自动化 Excel
   当开发 Visual Studio 中的 Excel 解决方案时，可以使用解决方案中的 *主机项* 和 *主机控件*。 这些对象可扩展 Excel 对象模型（即由 Excel 的主互操作程序集公开的对象模型）中某些常用对象，例如 <xref:Microsoft.Office.Interop.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Range> 对象。 扩展的对象行为类似于其所基于的 Excel 对象，但它们可以将其他功能（如“新建事件”）和数据绑定功能添加到对象。  

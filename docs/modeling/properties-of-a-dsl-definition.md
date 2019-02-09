@@ -9,13 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cdad251b4440219285ba1341663b7531634ed806
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e63a5ab794261a395fb091016f177ffca9d35692
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54942219"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911580"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定义的属性
 DslDefinition 属性定义*域特定语言*定义属性，如版本编号。 DslDefinition 属性将显示在**属性**窗口时单击关系图中的空白区域*域特定语言设计器*。
