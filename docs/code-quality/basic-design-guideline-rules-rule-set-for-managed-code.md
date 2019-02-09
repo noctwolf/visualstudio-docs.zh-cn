@@ -1,7 +1,6 @@
 ---
 title: 托管代码的“基本设计准则规则”规则集
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7461ba8a56276666e79cd5432530d2889f2daef7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069949"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913845"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>托管代码的“基本设计准则规则”规则集
 可以使用 Microsoft 基本设计准则规则规则集以专注于使代码更易于理解和使用。 您应包含此规则设置，如果你的项目包括库代码，或者如果你想要强制执行的代码易于维护的最佳实践。
