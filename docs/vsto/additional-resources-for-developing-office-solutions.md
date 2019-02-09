@@ -1,7 +1,6 @@
 ---
 title: 开发 Office 解决方案的其他资源
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6626f9dbc6f0b17ba3e02a66d2f104873089a616
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: ea45bc0bec473983765a7358dabc36a485f520b8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873387"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939458"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>开发 Office 解决方案的其他资源
   Visual Studio 中的 Microsoft Office 开发人员工具仅代表用于扩展 Office 应用程序的许多方法中的一种。 Office 应用程序还具有一些内置功能，如 Open XML 格式，这是 Visual Studio 中的 Office 开发人员工具所不提供的或本文档中未介绍的功能。  

@@ -2,19 +2,18 @@
 title: 工作流设计器的运行时活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 ms.assetid: be18aa36-7909-4dd6-a786-b46959675a58
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d63075745cca4db747bb16f5d45f9dba8f73268
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 54c24949c2f7046eade040498fbbd53962f12440
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036818"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921167"
 ---
 # <a name="runtime-activity-designers"></a>运行时活动设计器
 各运行时活动设计器用于持久保存和终止工作流活动。 在本部分中包含的主题提供如何使用工作流设计器活动设计器的指导。
