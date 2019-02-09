@@ -1,7 +1,6 @@
 ---
 title: 操作窗格概述
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 947b5730ce459751ec281749d369a9770c074df3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 32fef9f6d197e9bd9e8ea29efb05ef0939a28e4d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875944"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924378"
 ---
 # <a name="actions-pane-overview"></a>操作窗格概述
   操作窗格是可自定义**文档操作**附加到特定的 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿的任务窗格。 操作窗格中进行托管 Office 任务窗格，以及其他内置任务窗格，如**XML 源**在 Excel 中的任务窗格或**样式和格式**Word 中的任务窗格。 可使用 Windows 窗体控件或 WPF 控件来设计操作窗格用户界面。

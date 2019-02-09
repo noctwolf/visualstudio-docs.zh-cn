@@ -1,7 +1,6 @@
 ---
 title: 托管代码的“安全规则”规则集
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 564aeac6-03fa-41b0-b655-88179f0ab01b
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b436ad097209b34efdec87061347c8786352679f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 52a7944de897d48322f78e4842756e4389e0026f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944535"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911239"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>托管代码的“安全规则”规则集
 应包括 Microsoft 安全规则规则集以最大程度地报告潜在安全问题数。

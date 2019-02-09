@@ -1,7 +1,6 @@
 ---
 title: 如何：手动运行托管代码的代码分析
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, running
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41c95ca8adc0b02db89af0b7c0ba2f1dafd399f3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 159b13fafdaaa0b6dfaa2f590be2300c6b14425e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000765"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917358"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>如何：手动运行托管代码的代码分析
 代码分析工具为您提供了有关在源代码中可能存在的缺陷的信息。 你可以使用代码项目中，每个生成自动运行代码分析，还可以手动运行代码分析。 在项目属性页代码分析页上指定的规则时运行代码分析签入。 有关详细信息，请参阅[如何：配置托管的代码项目的代码分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
