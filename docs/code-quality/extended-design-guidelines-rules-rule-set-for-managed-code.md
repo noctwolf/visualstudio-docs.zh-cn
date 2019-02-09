@@ -1,7 +1,6 @@
 ---
 title: 托管代码的“扩展的设计准则规则”规则集
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9aeddeed26542b32ed1517939b9f93e3ec7bdbb8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017027"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918164"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>托管代码的“扩展的设计准则规则”规则集
 Microsoft 扩展的设计准则规则规则集扩展了基本设计准则规则，以最大程度地报告的可用性和可维护性问题。 额外的强调置于命名准则。 应考虑包含此规则设置，如果你的项目包括库代码，或者如果你想要强制实施用于编写易于维护的代码的最高标准。
