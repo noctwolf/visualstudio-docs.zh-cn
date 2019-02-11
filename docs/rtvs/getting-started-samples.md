@@ -82,7 +82,7 @@ ms.locfileid: "55023257"
 
 ![比较使用 MKL 的 MLS 和 MRO 与不使用 MKL 的 R 和 MRO](media/samples-speed-comparison.png)
 
-有关 R 与 MRO 和 MLS 的技术比较，请参阅关于该主题的 [Lixun Zhang 详细讨论](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html)。
+有关 R 与 MRO 和 MLS 的技术比较，请参阅关于该主题的 [Lixun Zhang 详细讨论](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html)。
 
 下图比较生成逻辑回归模型所用的运行时间（秒），从而预测航班延误是否将超过 15 分钟。  行数的微小增加会导致 CRAN R 中的运行时间显著增加，而 MLS 的增加量仅约为行数的两倍。 有关此基准的详细信息，请参阅 Benchmarks/rxGlm_benchmark.R 示例。
 
