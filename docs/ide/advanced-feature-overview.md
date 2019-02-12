@@ -6,23 +6,23 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 739426d5d93628c90638fef32526484f27eef3e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea5b321169253202c397d09b9d6daac439213b55
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828493"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089206"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 的功能
 
-[Visual Studio IDE 概述](../get-started/visual-studio-ide.md)一文提供 Visual Studio 的基本简介。 本文介绍的功能可能更适合经验丰富的开发人员或已熟练掌握 Visual Studio 的人员。
+[Visual Studio IDE 概述](../get-started/visual-studio-ide.md)一文提供 Visual Studio 的基本简介。 本文介绍的功能可能更适合有经验的开发人员或已熟悉 Visual Studio 的开发人员。
 
 ## <a name="modular-installation"></a>模块化安装
 
-通过 Visual Studio 的模块化安装程序，可以选择和安装工作负载。工作负载是你习惯使用的编程语言或平台所需的一些功能。 此策略使安装 Visual Studio 占用的空间更小，这也意味着安装和更新速度更快。
+凭借 Visual Studio 的模块化安装程序，可以选择和安装工作负载。 工作负载是你的首选编程语言或平台所需的功能组。 此策略使安装 Visual Studio 占用的空间更小，这也意味着安装和更新速度更快。
 
 如果尚未安装 Visual Studio 2017，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
@@ -72,23 +72,23 @@ Web 推动着现代社会前进，Visual Studio 可以帮助你编写 Web 应用
 
 - 通过使用 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md)，在 C# 中生成 2D 和 3D 游戏。
 
-- 可通过[适用于跨平台开发的 C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)，构建面向 iOS、Android 和 Windows 设备的本机 C++ 应用，并在为 iOS、Android 和 Windows 构建的库中分享通用代码。
+- 生成适用于 iOS、Android 和 Windows 设备的本机 C++ 应用。 通过[适用于跨平台开发的 C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)，在专用于 iOS、Android 和 Windows 的库中分享通用代码。
 
 - 通过 [Android 仿真器](../cross-platform/visual-studio-emulator-for-android.md)部署、测试和调试 Android 应用。
 
 ## <a name="connect-to-databases"></a>连接到数据库
 
-服务器资源管理器有助于你浏览和管理本地、远程以及 Azure、Salesforce.com、Office 365 和网站上的 SQL Server 实例及资产。 若要打开“服务器资源管理器”，请依次选择主菜单上的“视图” > “服务器资源管理器”。 请参阅[添加新连接](../data-tools/add-new-connections.md)，了解有关使用服务器资源管理器的详细信息。
+服务器资源管理器有助于你浏览和管理本地、远程以及 Azure、Salesforce.com、Office 365 和网站上的 SQL Server 实例及资产。 若要打开“服务器资源管理器”，请依次选择主菜单上的“视图” > “服务器资源管理器”。 有关使用服务器资源管理器的详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) 是一个适用于 SQL Server、Azure SQL 数据库和 Azure SQL 数据仓库的强大的开发环境。 通过它可以生成、调试、维护和重构数据库。 可使用数据库项目，或直接使用已连接的数据库实例（本地或非本地）。
 
-Visual Studio 中的 **SQL Server 对象资源管理器**提供类似于 SQL Server Management Studio 中的数据库对象。 使用 SQL Server 对象资源管理器可以执行轻负载数据库管理和设计工作，包括使用 SQL Server 对象资源管理器右侧的上下文菜单编辑表数据、对比架构和执行查询等。
+Visual Studio 中的 **SQL Server 对象资源管理器**提供类似于 SQL Server Management Studio 中的数据库对象。 使用 SQL Server 对象资源管理器可以执行轻负载数据库的管理和设计工作。 工作示例包括使用 SQL Server 对象资源管理器的上下文菜单编辑表数据、对比架构和执行查询等等。
 
 ![SQL Server 对象资源管理器](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="debug-test-and-improve-your-code"></a>调试、测试和改进代码
 
-编写代码时，需要运行并测试该代码以了解 bug 和性能。 使用 Visual Studio 先进的调试系统，可以调试在本地项目、远程设备或[设备仿真器](../cross-platform/visual-studio-emulator-for-android.md)上运行的代码。 可单步执行代码，一次执行一条语句，逐步检查变量。 可设置仅当指定条件为真时才命中的断点。 上述所有操作均可在代码编辑器中管理，因此无需离开代码。 有关在 Visual Studio 中进行调试的详细信息，请参阅[调试器功能简介](../debugger/debugger-feature-tour.md)。
+编写代码时，需要运行并测试该代码以了解 bug 和性能。 使用 Visual Studio 先进的调试系统，可以调试在本地项目、远程设备或[设备仿真器](../cross-platform/visual-studio-emulator-for-android.md)上运行的代码。 可单步执行代码，一次执行一条语句，逐步检查变量。 可设置仅当指定条件为真时才命中的断点。 在代码编辑器中可以管理调试选项，因此无需离开代码。 有关在 Visual Studio 中进行调试的详细信息，请参阅[调试器功能简介](../debugger/debugger-feature-tour.md)。
 
 有关提升应用性能的详细信息，请参阅 Visual Studio 的[分析](../profiling/profiling-feature-tour.md)功能。
 
@@ -96,13 +96,13 @@ Visual Studio 中的 **SQL Server 对象资源管理器**提供类似于 SQL Ser
 
 ## <a name="deploy-your-finished-application"></a>部署完成的应用程序
 
-当应用程序可以部署给用户或客户时，无论是部署到 Microsoft Store 还是 SharePoint 站点，无论是通过 InstallShield 还是 Windows Installer 技术进行部署，Visual Studio 都会提供实现此操作的工具。 这些都可以通过 IDE 进行访问。 有关详细信息，请参阅[部署应用程序、服务和组件](../deployment/deploying-applications-services-and-components.md)。
+当应用程序准备好部署给用户或客户时，Visual Studio 会提供执行此操作的工具。 部署选项会附加到 Microsoft Store、SharePoint 站点或者 InstallShield 或 Windows Installer 技术。 这些都可以通过 IDE 进行访问。 有关详细信息，请参阅[部署应用程序、服务和组件](../deployment/deploying-applications-services-and-components.md)。
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>管理源代码并与他人协作
 
 可以在任意提供商（包括 GitHub）托管的 Git 存储库中管理源代码。 或者，使用 [Azure DevOps Services](/azure/devops/index) 管理整个项目的代码、Bug 和工作项。 若要详细了解如何在 Visual Studio 中使用团队资源管理器管理 Git 存储库，请参阅[开始使用 Git 和 Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio)。 Visual Studio 还内置有其他源代码管理功能。 若要了解详细信息，请参阅 [Visual Studio 2017 中的新 Git 功能（博文）](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/)。
 
-Azure DevOps Services 是基于云的服务，用于规划、托管、自动化和部署软件以及在团队中实现协作。 Azure DevOps Services 支持 Git 存储库（分布式版本控制）和 Team Foundation 版本控制（集中式版本控制），以及用于版本控制系统中存储的代码的持续生成和发布 (CI/CD) 的管道。 Azure DevOps Services 还支持 Scrum、CMMI 和敏捷开发方法。
+Azure DevOps Services 是基于云的服务，用于规划、托管、自动化和部署软件以及在团队中实现协作。 Azure DevOps Services 支持 Git 存储库（分布式版本控制）和 Team Foundation 版本控制（集中式版本控制）。 它们支持用于持续生成和发布 (CI/CD) 版本控制系统中存储的代码的管道。 Azure DevOps Services 还支持 Scrum、CMMI 和敏捷开发方法。
 
 Team Foundation Server (TFS) 是 Visual Studio 的应用程序生命周期管理中心。 它使用单个解决方案，使开发过程中涉及的所有人均可参与该开发过程。 TFS 对于管理异类团队和项目也非常有用。
 
@@ -110,7 +110,7 @@ Team Foundation Server (TFS) 是 Visual Studio 的应用程序生命周期管理
 
 下图展示了 Azure DevOps Services 中托管的解决方案的“团队资源管理器”窗口。
 
-![Visual Studio 团队资源管理器](../ide/media/vs2017_teamexplorer.png)
+![Visual Studio 团队资源管理器](../ide/media/vs2017_teamexplorer_devops.png)
 
 还可以自动执行生成过程以生成团队中的开发人员签入到版本控制的代码。 例如，您可以在夜间或每次签入此代码时生成一个或多个项目。 有关详细信息，请参阅 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
 
@@ -127,4 +127,5 @@ Team Foundation Server (TFS) 是 Visual Studio 的应用程序生命周期管理
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)
-- [Visual Studio 2017 中的新增功能](../ide/whats-new-in-visual-studio.md)
+- [Visual Studio 2017 中的新增功能](../ide/whats-new-visual-studio-2017.md)
+- [Visual Studio 2019 预览版中的新增功能](../ide/whats-new-visual-studio-2019.md)

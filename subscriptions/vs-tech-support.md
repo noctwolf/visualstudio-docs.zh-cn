@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的技术支持权�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: be2fcf753c73055d647e9a924dfec306d49ce202
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380253"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089219"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>激活 Visual Studio 订阅中的技术支持权益
 
@@ -27,7 +27,7 @@ ms.locfileid: "54380253"
 > ![技术支持权益磁贴](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. 若要开始使用技术支持权益，请单击“技术支持”磁贴上的“聊天以激活”。 
+1. 若要开始使用技术支持权益，请转到 https://my.visualstudio.com/Benefits，向下滚动到“支持”部分，在“技术支持”磁贴上单击“聊天激活”。 
 2. 这会启动与代表的聊天会话，他们可创建并提供合约 ID 和访问 ID。 
 3. 若要完成该进程，需向代表提供：
    - 用于登录到订阅的电子邮件地址

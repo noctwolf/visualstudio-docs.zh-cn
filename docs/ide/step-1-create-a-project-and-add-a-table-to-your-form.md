@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da8d951c7bbb96d1c955d9254756ea80925d4969
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9ae3bcb27e86a4646aa345d4cfd010f8d34dd56
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882771"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231800"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步骤 1：创建项目并向窗体添加表
 
@@ -69,7 +69,7 @@ ms.locfileid: "53882771"
 
    5.  选择“Font”属性。 此时应显示一个省略号 (...) 按钮。
 
-   6.  选择省略号按钮，并将“Font”值设置为“Webdings”，将“Font Style”设置为“Bold”，并将“Size”设置为“72”。
+   6.  选择省略号按钮，并将“Font”值设置为“Webdings”，将“Font Style”设置为“Bold”，并将“Size”设置为“48”。
 
    7.  将标签的“Text”属性设置为字母“c”。
 

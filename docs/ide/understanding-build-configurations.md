@@ -24,25 +24,25 @@ helpviewer_keywords:
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 84a2b89bb6479c88de61ec0a0071858522a34e82
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349044"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54927901"
 ---
 # <a name="understand-build-configurations"></a>了解生成配置
 
 您可以存储不同的解决方案配置和项目属性以便在各种生成中使用。 若要创建、选择、修改或删除配置，可以使用“配置管理器”。 若要打开它，请在菜单栏上选择“生成” > “配置管理器”，或在“快速启动”框中键入“配置”。 也可以使用“标准”工具栏上的“解决方案配置”列表，选择配置或打开“配置管理器”。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中生成配置](/visualstudio/mac/configurations)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中生成配置](/visualstudio/mac/configurations)。
 
 > [!NOTE]
-> 如果在工具栏上找不到解决方案配置设置且无法访问“配置管理器”，[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 开发设置可能适用。 有关详细信息，请参阅[如何：在应用 Visual Basic 开发者设置后管理配置](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。
+> 如果在工具栏上找不到解决方案配置设置且无法访问“配置管理器”，[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 开发设置可能适用。 有关详细信息，请参阅[如何：在应用 Visual Basic 开发人员设置后管理生成配置](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。
 
 默认情况下，调试和发布配置包含在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 模板创建的项目中。 调试配置支持应用的调试，而发布配置生成可部署的应用版本。 有关详细信息，请参阅[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 还可以创建自定义解决方案配置和项目配置。 有关详细信息，请参阅[如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)。
 
@@ -90,7 +90,7 @@ ms.locfileid: "51349044"
 
 ## <a name="see-also"></a>请参阅
 
-- [演练：生成应用程序](../ide/walkthrough-building-an-application.md)
+- [演练：构建应用程序](../ide/walkthrough-building-an-application.md)
 - [编译和生成](../ide/compiling-and-building-in-visual-studio.md)
 - [解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)
 - [C/C++ 生成参考](/cpp/build/reference/c-cpp-building-reference)

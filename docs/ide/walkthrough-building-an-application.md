@@ -1,22 +1,22 @@
 ---
-title: 演练：生成应用程序
+title: 演练：构建应用程序
 ms.date: 09/25/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2987df6c8ed8a26c2cf95020e26f67c36721d676
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: adf3ef6be32b36d0bb033486dfb846c55c1fad34
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672777"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926666"
 ---
-# <a name="walkthrough-build-an-application"></a>演练：生成应用程序
+# <a name="walkthrough-build-an-application"></a>演练：构建应用程序
 
 完成本演练后，你会更熟悉使用 Visual Studio 生成应用程序时可配置的多个选项。 将为示例应用程序创建自定义生成配置、隐藏特定警告消息以及增加生成输出信息。
 
@@ -130,7 +130,7 @@ ms.locfileid: "50672777"
 
    ![输出窗口 Visual Basic 生成警告](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   有关详细信息，请参阅[如何：禁止显示编译器警告](../ide/how-to-suppress-compiler-warnings.md)。
+   有关详细信息，请参阅[如何：取消编译器警告](../ide/how-to-suppress-compiler-warnings.md)。
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>在“输出”窗口中显示其他生成详细信息
 

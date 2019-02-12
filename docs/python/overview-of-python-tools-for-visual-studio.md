@@ -7,17 +7,17 @@ ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e37648be6bb9f78aa80027b50b2fea6592d7c9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 699578e564999db55562abaad764cde80fc8b618
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927332"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55232060"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
@@ -40,7 +40,7 @@ Visual Studio 的“Python 环境”窗口（下方为其扩展后的加宽视�
 
 ![“Python 环境”窗口扩展后的视图](media/environments-expanded-view.png)
 
-使用“打开交互窗口”命令，在 Visual Studio 的上下文中以交互方式运行 Python。 使用“在 PowerShell 中打开”命令，在所选环境的文件夹中打开单独的命令窗口。 可从该命令窗口运行任何 python 脚本。 
+使用“打开交互窗口”命令，在 Visual Studio 的上下文中以交互方式运行 Python。 使用“在 PowerShell 中打开”命令，在所选环境的文件夹中打开单独的命令窗口。 可从该命令窗口运行任何 python 脚本。
 
 更多相关信息：
 
@@ -140,7 +140,7 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 项目不仅�
 
 Python 工作负载包括 Azure SDK for Python，用于简化在 Windows、Mac OS X 和 Linux 应用中使用 Azure 服务的过程。
 
-有关详细信息，请参阅 [Azure SDK for Python](azure-sdk-for-python.md)
+有关详细信息，请参阅 [Azure SDK for Python](/python/azure/?view=azure-python)。
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Microsoft Virtual Academy 上的 Python 培训
 

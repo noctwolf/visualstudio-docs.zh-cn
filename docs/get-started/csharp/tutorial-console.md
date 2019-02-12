@@ -1,32 +1,32 @@
 ---
-title: 教程：C# 控制台应用入门
+title: 教程：创建一个简单的 C# 控制台应用程序
 description: 了解如何在 Visual Studio 中分步创建 C# 控制台应用程序。
 ms.custom: seodec18, get-started
-ms.date: 01/10/2019
+ms.date: 01/25/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-dev15
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 6114910f8c4cbeebc0301cc0c2167a49742823a5
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 856c20175fd444c7acf83bdf02526c907a28b92f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204426"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936952"
 ---
-# <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>教程：Visual Studio 中的 C# 控制台应用入门
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教程：在 Visual Studio 中创建一个简单的 C# 控制台应用程序
 
-在本 C# 教程中，你将使用 Visual Studio 创建和运行控制台应用程序，并在此过程中了解 [Visual Studio 集成开发环境 (IDE)](../visual-studio-ide.md) 的部分功能。
+在本 C# 教程中，你将使用 Visual Studio 创建和运行控制台应用程序，并在此过程中了解 Visual Studio 集成开发环境 (IDE) 的部分功能。
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
 
 ## <a name="create-a-project"></a>创建项目
 
@@ -42,19 +42,58 @@ ms.locfileid: "54204426"
 
 ### <a name="add-a-workgroup-optional"></a>添加工作组（可选）
 
-如果未显示“控制台应用(.NET Core)”项目模板，可通过添加“.NET Core 跨平台开发”工作负载获取它。 若要了解如何执行此操作，请参阅常见问题解答中的“[工作负荷是什么，以及如何添加工作负荷？](#workload)” 部分。
+如果未显示“控制台应用(.NET Core)”项目模板，可通过添加“.NET Core 跨平台开发”工作负载获取它。 操作方法如下。
+
+#### <a name="option-1-use-the-new-project-dialog-box"></a>选项 1：使用“新建项目”对话框
+
+1. 选择“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。
+
+   ![选择“新建项目”对话框中的“打开 Visual Studio 安装程序”链接](./media/csharp-open-visual-studio-installer-generic-dark.png)
+
+1. Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改”。
+
+   ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负荷](./media/dot-net-core-xplat-dev-workload.png)
+
+#### <a name="option-2-use-the-tools-menu-bar"></a>选项 2：使用“工具”菜单栏
+
+1. 取消“新建项目”对话框，再依次选择顶部菜单栏中的“工具” > “获取工具和功能”。
+
+1. Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改”。
 
 ## <a name="create-the-app"></a>创建应用
 
-首先，我们将添加代码，创建基础计算器。 然后，调整代码，添加功能。 之后，调试应用，查找并修复错误。 最后，优化代码，使其更高效。
+首先，我们将探讨 C# 中的一些基础整数数学运算。 然后，我们将添加代码，创建基础计算器。 然后，调整代码，添加功能。 之后，调试应用，查找并修复错误。 最后，优化代码，使其更高效。
 
-让我们开始向项目中添加基础计算器代码。
+现在开始在 C# 中进行一些整数数学运算。
 
 1. 在代码编辑器中，删除默认“Hello World”代码。
 
     ![从新的计算器应用中删除默认 Hello World 代码](./media/csharp-console-calculator-deletehelloworld.png)
 
-   具体来说，就是删除在代码编辑器中看到的所有代码。
+   具体而言，删除显示 `Console.WriteLine("Hello World!");` 的行。
+
+1. 在其原位置，键入以下代码：
+
+    ```csharp
+            int a = 42;
+            int b = 119;
+            int c = a + b;
+            Console.WriteLine(c);
+            Console.ReadKey();
+    ```
+1. 选择“计算器”或按“F5”，以运行程序。
+
+   ![选择工具栏中的“计算器”按钮以运行应用程序](./media/csharp-console-calculator-button.png)
+
+   控制台窗口将打开，显示 42 + 119 之和。
+
+1. 现在请尝试使用其他运算符更改 `int c = a + b;`，例如使用 `-` 进行减法运算，使用 `*` 进行乘法运算，或使用 */* 进行除法运算。
+
+    请注意，如果更改运算符并运行程序，则结果也会随之更改。
+
+现在向项目添加一组更复杂的计算器代码以继续。
+
+1. 删除在代码编辑器中看到的所有代码。
 
 1. 在代码编辑器中，输入或粘贴以下新的代码：
 
@@ -165,7 +204,10 @@ ms.locfileid: "54204426"
 
 例如，如果尝试用数字除以 0，或者在应用需要数字字符时输入 Alpha 字符（或者相反），应用将停止工作并返回错误。
 
-现在来演练一些常见的用户输入错误，在[调试器](../../debugger/debugger-feature-tour.md)中查找并修复代码中的这些错误。
+现在来演练一些常见的用户输入错误，在调试器中查找并修复代码中的这些错误。
+
+>[!TIP]
+>有关调试器及其工作原理的详细信息，请参阅[初步了解 Visual Studio 调试器](../../debugger/debugger-feature-tour.md)页面。
 
 ### <a name="fix-the-divide-by-zero-error"></a>修复“被零除”错误
 
@@ -209,7 +251,7 @@ ms.locfileid: "54204426"
 
 #### <a name="revise-the-code"></a>修改代码
 
-我们将应用分为两个类：`calculator` 和 `program`，而不是仅依赖于 `program` 类来处理所有代码。  
+我们将应用分为两个类：`calculator` 和 `program`，而不是仅依赖于 `program` 类来处理所有代码。
 
 `calculator` 类处理大部分计算工作，`program` 类处理用户界面和错误捕获工作。
 
@@ -483,48 +525,6 @@ namespace Calculator
 
 ```
 
-## <a name="quick-answers-faq"></a>快速解答常见问题
-
-下面是一个快速 FAQ，突出介绍了一些关键概念。 常见问题解答还包括按教程中的步骤操作时可能出现的问题的解答。
-
-### <a name="what-is-c"></a>什么是 C#？
-
-C# 是在 .NET Framework 和 .NET Core 上运行的类型安全编程语言。 使用 C#，可以创建 Windows 应用程序、客户端服务器应用程序、数据库应用程序、XML Web Service、分布式组件等。
-
-### <a name="what-is-visual-studio"></a>什么是 Visual Studio？
-
-Visual Studio 是适用于开发人员的生产力工具集成开发套件。 可将其视为可用于创建程序和应用程序的程序。
-
-### <a name="what-is-a-console-app"></a>什么是控制台应用？
-
-控制台应用获取输入，在命令行窗口（也称为 控制台）中显示输出。
-
-### <a name="what-is-net-core"></a>.NET Core 是什么？
-
-.NET Core 是 .NET Framework 的进一步演化。 .NET Framework 允许跨编程语言共享代码，而 .NET Core 增加了跨平台共享代码的功能。 此外，它还为开放源。
-
-（.NET Framework 和 .NET Core 都包括预生成功能库。 它们还包括可用作运行代码的虚拟机的公共语言运行时 (CLR)。）
-
-### <a id="workload"></a>工作负荷是什么，以及如何添加工作负荷？
-
-Visual Studio 中的工作负荷表示一组编程选项和模板，可以使用它们来自定义 Visual Studio 安装。 工作负荷只为所选编程语言和平台安装所需工具。 下面介绍如何安装。
-
-#### <a name="option-1-use-the-new-project-dialog-box"></a>选项 1：使用“新建项目”对话框
-
-1. 选择“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。
-
-   ![选择“新建项目”对话框中的“打开 Visual Studio 安装程序”链接](./media/csharp-open-visual-studio-installer-generic-dark.png)
-
-1. Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改”。
-
-   ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负荷](./media/dot-net-core-xplat-dev-workload.png)
-
-#### <a name="option-2-use-the-tools-menu-bar"></a>选项 2：使用“工具”菜单栏
-
-1. 取消“新建项目”对话框，再依次选择顶部菜单栏中的“工具” > “获取工具和功能”。
-
-1. Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改”。
-
 ## <a name="next-steps"></a>后续步骤
 
 恭喜你完成本教程！ 若要了解详情，请继续学习后续教程。
@@ -534,4 +534,5 @@ Visual Studio 中的工作负荷表示一组编程选项和模板，可以使用
 
 ## <a name="see-also"></a>请参阅
 
-* [面向零基础初学者的 C# 基础知识视频教程](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
+* [视频课程：面向零基础初学者的 C# 基础知识](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
+* [了解如何在 Visual Studio 中调试 C# 代码](tutorial-debugger.md)
