@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 82334ebb6dbcee17954baf0ddd793eb02c37ff43
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63f33d80a89a35d78e1c4465c9367f0674f73f18
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928797"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483843"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>在 Visual Studio 中实现接口
 
@@ -47,8 +47,8 @@ ms.locfileid: "54928797"
       - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
-      - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
+      - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![错误灯泡](media/error-bulb.png) 图标。
+      - 单击 ![错误灯泡](media/error-bulb.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
 
 3. 从下拉菜单中选择“实现接口”。
 

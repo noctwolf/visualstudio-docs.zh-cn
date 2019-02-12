@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4625d8c4b6bce3235fe07682cb6a0e977258adf6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a9a3a72a9b02d51407bf8a1c06c900596ded4ab4
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948175"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742425"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>将类型同步到文件名或反向操作
 
@@ -31,6 +31,9 @@ ms.locfileid: "54948175"
 **使用时机：** 已重命名文件或类型，且尚未更新相应文件或类型进行匹配时。
 
 操作原因：将类型置于具有其他名称的文件中，将很难查找要搜索的内容，反之亦然。 通过重命名类型或文件名，代码变得更具可读性且更易于导航。
+
+> [!NOTE]
+> 此重构尚不可用于 .NET Standard 和 .NET Core 项目。
 
 ## <a name="how-to"></a>操作说明
 
@@ -62,8 +65,6 @@ ms.locfileid: "54948175"
    - Visual Basic：在以下示例中，文件“Employee.vb”被重命名为“Person.vb”以匹配类型名称。
 
        ![内联结果 Visual Basic](media/synctype-result-vb.png)
-
-> ![注意] 此重构尚不可用于 .NET Standard 和 .NET Core 项目。
 
 ## <a name="see-also"></a>请参阅
 

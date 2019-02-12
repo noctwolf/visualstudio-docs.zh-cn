@@ -1,6 +1,6 @@
-# <a name="visual-studio-2017-documentation"></a>Visual Studio 2017 文档
+# <a name="visual-studio-documentation"></a>Visual Studio 文档
 
-欢迎访问! 此存储库包含 Visual Studio 2017 技术文档的源文件。 主题发布在 [docs.microsoft.com](https://docs.microsoft.com/visualstudio) 上。
+欢迎访问! 此存储库包含 Visual Studio 技术文档的源文件。 主题发布在 [docs.microsoft.com](https://docs.microsoft.com/visualstudio) 上。
 
 此存储库已于 2017 年 6 月 23 日从 https://github.com/Microsoft/vsdocs 迁移。 到旧 URL 的流量将重定向到此处。
 

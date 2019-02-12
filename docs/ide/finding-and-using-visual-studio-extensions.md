@@ -1,6 +1,6 @@
 ---
 title: 查找和使用扩展
-ms.date: 06/07/2017
+ms.date: 01/30/2019
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
@@ -15,56 +15,52 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cf5ae1c4109f88e9fca74f59fec09233bbec04d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 766d2e87361ad191b985272a8e1de8a6fa272353
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027849"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484077"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>查找和使用 Visual Studio 扩展
 
 Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了新的或者改进后的 Visual Studio 功能。 可以在此处找到有关 Visual Studio 扩展的详细信息：[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
-你可以使用 **“扩展和更新”** 对话框安装来自网站或其他位置的 Visual Studio 扩展及示例，然后启用、禁用、更新或卸载这些扩展和示例。 （“工具”>“扩展和更新”，或在“快速启动”窗口中键入“扩展”）。 该对话框还显示用于已安装的示例和扩展的更新。 还可以从网站下载扩展，或从其他开发人员处获取它们。
+使用“扩展和更新”对话框来安装和管理 Visual Studio 扩展。 要打开“扩展和更新”对话框，请选择“工具” > “扩展和更新”，或在“快速启动”窗口中键入“扩展”。
 
-> [!NOTE]
-> 从 Visual Studio 2015 开始，Visual Studio Marketplace 上托管的扩展将自动更新。 可以通过 **“扩展和更新”** 对话框更改此设置。  请参阅下面的 **“自动扩展更新”** 部分了解详细信息。
+![Visual Studio 中的“扩展和更新”对话框](media/finding-using-visual-studio-extensions/extensions-and-updates.png)
 
-## <a name="finding-visual-studio-extensions"></a>查找 Visual Studio 扩展
+左侧窗格按照已安装的扩展、Visual Studio Marketplace（联机）上提供的扩展以及有可用更新的扩展对扩展进行分类。 漫游扩展管理器会保留已在 Visual Studio 的任何计算机或实例上安装的所有 Visual Studio 扩展的列表。 它旨在让你更轻松地找到自己喜欢的扩展程序。
+
+## <a name="find-visual-studio-extensions"></a>查找 Visual Studio 扩展
 
 可以安装来自 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) 的扩展。 这些扩展可以是控件、示例、模板、工具或其他组件，用于向 Visual Studio 添加功能。 Visual Studio 支持 VSIX 包格式的扩展，其中包括项目模板、项模板、 **工具箱** 项、托管扩展框架 (MEF) 组件和 VSPackage。 还可以下载和安装基于 MSI 的扩展，但是无法通过 **“扩展和更新”** 对话框启用或禁用它们。 Visual Studio Marketplace 包含 VSIX 和 MSI 扩展。
 
-## <a name="installing-or-uninstalling-visual-studio-extensions"></a>安装或卸载 Visual Studio 扩展
+## <a name="install-or-uninstall-visual-studio-extensions"></a>安装或卸载 Visual Studio 扩展
 
-在 **“扩展和更新”** 中，找到要安装的扩展。 （如果知道扩展的名称或部分名称，则可以在“搜索”窗口中进行搜索。）单击“下载”。  将按计划安装扩展。 等所有 Visual Studio 实例都关闭后便会安装扩展。
+在 **“扩展和更新”** 中，找到要安装的扩展。 （如果知道扩展的名称或部分名称，则可以在“搜索”窗口中进行搜索。）单击“下载”。 按计划安装扩展。 等所有 Visual Studio 实例都关闭后便会安装扩展。
 
 如果尝试安装具有依赖项的扩展，安装程序将验证它们是否已安装。 如果未安装，则 **“扩展和更新”** 对话框将列出安装该扩展之前必须先安装的依赖项。
 
-如果要停止使用一个扩展，你可以将其禁用或卸载。 禁用扩展是使扩展保持安装状态，但不加载。 只能禁用 VSIX 扩展；使用 MSI 安装的扩展只能进行卸载。 找到扩展，然后单击 **“卸载”** 或 **“禁用”**。 必须重新启动 Visual Studio 才能卸载禁用的扩展。
+如果要停止使用一个扩展，你可以将其禁用或卸载。 禁用扩展是使扩展保持安装状态，但不加载。 只能禁用 VSIX 扩展；使用 MSI 安装的扩展只能进行卸载。 找到扩展，然后单击 **“卸载”** 或 **“禁用”**。 重新启动 Visual Studio 以卸载禁用的扩展。
 
 ## <a name="per-user-and-administrative-extensions"></a>每用户扩展和管理扩展
 
 大多数扩展都是每用户扩展，安装在 *%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio version\>\Extensions\\* 文件夹中。 有几个扩展是管理扩展，安装在 *\<Visual Studio 安装文件夹>\Common7\IDE\Extensions\\* 文件夹中。
 
-若要针对可能包含错误或恶意代码的扩展保护你的系统，可以限制每用户扩展，以便只在使用正常用户权限运行 Visual Studio 时加载。 这意味着在使用管理用户权限运行 Visual Studio 时禁用每用户扩展。 若要执行此操作，请转到“扩展和更新”选项页（“工具”>“选项” > “环境” > “扩展和更新”，或仅在“快速启动”窗口中键入“扩展”）。 清除 **“以管理员身份运行时加载每用户扩展”** 复选框，然后重新启动 Visual Studio。
+若要针对可能包含错误或恶意代码的扩展保护你的系统，可以限制每用户扩展，以便只在使用正常用户权限运行 Visual Studio 时加载。 这意味着在使用管理用户权限运行 Visual Studio 时禁用每用户扩展。 若要执行此操作，请转到“扩展和更新”选项页（“工具”>“选项” > “环境” > “扩展和更新”）。 清除 **“以管理员身份运行时加载每用户扩展”** 复选框，然后重新启动 Visual Studio。
 
 ## <a name="automatic-extension-updates"></a>自动扩展更新
 
-Visual Studio Marketplace 有可用的新版本时，每用户扩展将自动更新。  已检测到新版扩展并在后台进行安装，下次重启 Visual Studio 时将运行该新版扩展。
-
-仅每用户扩展可自动更新。  将不会更新为所有用户安装的管理扩展，仍通过“扩展和更新”对话框的“更新”节点手动安装新版本。 可以从“扩展和更新”对话框中的扩展细节窗格中看到哪些扩展将自动更新。
+Visual Studio Marketplace 中有可用的新版本时，将自动更新扩展。 检测到扩展的新版本并已在后台安装。 下次启动 Visual Studio 时，将运行该扩展的新版本。
 
 若要禁用自动更新，可为所有扩展或仅特定扩展禁用该功能。
 
-- 若要为所有扩展禁用自动更新，请在“扩展和更新”对话框上选择“更改扩展和更新设置”链接，并取消选中“自动更新扩展”。
+- 若要为所有扩展禁用自动更新，请选择“扩展和更新”对话框中的“更改扩展和更新设置”链接。 在“选项”对话框中，取消选中“自动更新扩展”。
 
 - 若要为特定扩展禁用自动更新，请取消选中“扩展和更新”对话框右侧的扩展细节窗格中的“自动更新此扩展”选项。
 
-> [!NOTE]
-> 从 Visual Studio 2015 Update 2 开始，可以指定（在“工具”>“选项”>“环境”>“扩展和更新”中）是否需要为每用户扩展、所有用户扩展或两者（默认设置）进行自动更新。
-
-## <a name="extension-crashunresponsiveness-notifications"></a>扩展崩溃/无响应通知
+## <a name="extension-crash-and-unresponsiveness-notifications"></a>扩展崩溃和无响应通知
 
 在新的 Visual Studio 2017（版本 15.3）中，如果 Visual Studio 怀疑扩展已在之前的会话期间发生故障，将会就此发出通知。 Visual Studio 发生故障时，会存储异常堆栈。 下一次 Visual Studio 启动时，它会检查堆栈，同时开始处理叶和构建基础映像。 如果 Visual Studio 确定框架所属的模块属于已安装和已启用的扩展，它将显示一条通知。
 
@@ -75,6 +71,7 @@ Visual Studio Marketplace 有可用的新版本时，每用户扩展将自动更
 - 选择“禁用此扩展”。 Visual Studio 会禁用扩展，并告知是否需要重启系统才能使禁用生效。 如果需要，可以重新启用“扩展和更新”对话框中的扩展。
 
 - 选择“不再显示此消息”。
+
   - 如果通知与以前会话中的故障有关，则在出现与该扩展相关联的故障时，Visual Studio 将不再显示通知。 当无响应可与该扩展相关联，或对于可与其他扩展相关联的故障或无响应，Visual Studio 仍将显示通知。
   - 如果通知与无响应有关，则当该扩展与无响应相关联时，IDE 将不再显示通知。 Visual Studio 仍会显示与该扩展相关的故障通知，以及其他扩展与故障和无响应相关的通知。
 
@@ -116,4 +113,4 @@ Visual Studio Marketplace 有可用的新版本时，每用户扩展将自动更
 Visual Studio 会继续在无需修改的情况下，支持由 Microsoft 安装程序 (MSI) 安装、而不是通过 **“扩展和更新”** 对话框安装的扩展。
 
 > [!TIP]
-> 如果基于 MSI 的扩展包含 extension.vsixmanifest 文件，则扩展会出现在“扩展和更新”对话框中。
+> 如果基于 MSI 的扩展包含 extension.vsixmanifest 文件，则该扩展会出现在“扩展和更新”对话框中。

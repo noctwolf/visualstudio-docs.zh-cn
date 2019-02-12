@@ -12,12 +12,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ee615f688b80ae02bf7986c18e0b05a5c94bc4ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e2e3a734f78a11a4657899eda58ee3a4fe3ff2c6
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020553"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571182"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步骤 2：使用视图和页面模板创建 Django 应用
 
@@ -35,7 +35,7 @@ ms.locfileid: "55020553"
 
 ## <a name="step-2-1-create-an-app-with-a-default-structure"></a>步骤 2-1：创建具有默认结构的应用
 
-Django 应用是一个单独的 Python 包，其中包含一组用于特定用途的相关文件。 一个 Django 项目可以包含任意数量的应用，这反映了一个事实：Web 主机可用于满足单个域名中任意数量的单独入口点。 例如，像 contoso.com 这样的域的 Django 项目可能包含一个面向 www.contoso.com 的应用、一个面向 support.contoso.com 的应用以及一个面向 docs.contoso.com 的应用。 在这种情况下，Django 项目处理网站级 URL 路由和设置（在其 urls.py 和 settings.py 文件中），同时每个应用在其内部路由、视图、模型、静态文件和管理界面中都有其自己的不同样式和行为。
+Django 应用是一个单独的 Python 包，其中包含一组用于特定用途的相关文件。 一个 Django 项目可以包含任意数量的应用，这反映了一个事实：Web 主机可用于满足单个域名中任意数量的单独入口点。 例如，像 contoso.com 这样的域的 Django 项目可能包含一个面向 `www.contoso.com` 的应用、一个面向 support.contoso.com 的应用以及一个面向 docs.contoso.com 的应用。 在这种情况下，Django 项目处理网站级 URL 路由和设置（在其 urls.py 和 settings.py 文件中），同时每个应用在其内部路由、视图、模型、静态文件和管理界面中都有其自己的不同样式和行为。
 
 Django 应用通常以一组标准文件开始。 Visual Studio 提供项模板来初始化 Django 项目中的 Django 应用，并提供起到相同作用的集成菜单命令：
 
@@ -49,7 +49,7 @@ Django 应用通常以一组标准文件开始。 Visual Studio 提供项模板�
 
 ![解决方案资源管理器中的 Django 应用文件](media/django/step02-django-app-in-solution-explorer.png)
 
-| 项 | 说明 |
+| 项 | 说明​​ |
 | --- | --- |
 | **\_\_init\_\_.py** | 将应用标识为包的文件。 |
 | **迁移** | 一个文件夹，Django 在其中存储用于更新数据库以便与模型更改保持一致的脚本。 然后，Django 迁移工具将必要的更改应用到任何以前版本的数据库，以便与当前模型相匹配。 使用迁移，可以将注意力集中在模型上，并让 Django 处理基础数据库架构。 步骤 6 中已对迁移进行了讨论；现在，该文件夹只需包含 \_\_init\_\_.py 文件（指示文件夹定义其自己的 Python 包）。 |

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d448111a9bac5d03fe3bc8e7ba35c0f9fed1d4a6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d4e09602ed62e21a4a5a80a8e6fee301eef30512
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020459"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483713"
 ---
 # <a name="code-snippet-functions"></a>代码片段函数
 
@@ -28,13 +28,13 @@ ms.locfileid: "55020459"
 
 下表介绍可与代码片段中的 `Function` 元素一起使用的函数。
 
-|函数|说明|语言|
+|函数|说明​​|语言|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|为 `EnumerationLiteral` 参数指定的枚举成员生成一个switch 语句和一组 case 语句。 `EnumerationLiteral` 参数必须是枚举文本的引用或是枚举类型。|C#|
+|`GenerateSwitchCases(EnumerationLiteral)`|为 `EnumerationLiteral` 参数指定的枚举成员生成一个switch 语句和一组 case 语句。 `EnumerationLiteral` 参数必须是枚举文本的引用或是枚举类型。|C#|
 |`ClassName()`|返回包含插入的代码片段的类的名称。|C#|
-|`SimpleTypeName(` `TypeName` `)`|在已调用该代码片段的上下文中将 TypeName 参数缩减为其最简单的形式。|C#|
+|`SimpleTypeName(TypeName)`|在已调用该代码片段的上下文中将 TypeName 参数缩减为其最简单的形式。|C#|
 
-## <a name="example"></a>示例
+## <a name="generateswitchcases-example"></a>GenerateSwitchCases 示例
 
 下面的示例演示了如何使用 `GenerateSwitchCases` 函数。 在插入此代码片段并将枚举输入到 `$switch_on$` 文本中时，`$cases$` 文本为枚举中的每个值生成一个 `case` 语句。
 
@@ -76,7 +76,7 @@ ms.locfileid: "55020459"
 </CodeSnippets>
 ```
 
-## <a name="example"></a>示例
+## <a name="classname-example"></a>ClassName 示例
 
 下面的示例演示了如何使用 `ClassName` 函数。 在插入此代码片段时，`$classname$` 文本会替换为代码文件中该位置的封闭类的名称。
 
@@ -123,7 +123,7 @@ ms.locfileid: "55020459"
 </CodeSnippets>
 ```
 
-## <a name="example"></a>示例
+## <a name="simpletypename-example"></a>SimpleTypeName 示例
 
 此示例演示如何使用 `SimpleTypeName` 函数。 在此代码片段插入到代码文件中时，`$SystemConsole$` 文本会替换为在其中调用该代码片段的上下文中 <xref:System.Console> 类型的最简单形式。
 

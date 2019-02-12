@@ -1,22 +1,22 @@
 ---
-title: 使用测试资源管理器运行、生成和调试单元测试
+title: 使用测试资源管理器运行和调试单元测试
 description: 了解如何使用测试资源管理器在 Visual Studio 中运行测试。 本主题介绍如何启用生成后自动测试运行、查看测试结果、对测试列表进行分组和筛选、创建播放列表、调试测试以及使用测试快捷方式。
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
+author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: fd829083cc86d16dd01186bd848c6bc29c062ef5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f7c7e1f5dbe45f9792c1db4afbfbc151a9a2e26
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000295"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484155"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
@@ -54,9 +54,12 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ### <a name="run-tests-after-every-build"></a>每次生成后运行测试
 
-|Button|说明|
+|Button|说明​​|
 |-|-|
 |![生成后运行](../test/media/ute_runafterbuild_btn.png)|要在每个本地生成后运行单元测试，请在标准菜单上选择“测试”，然后在测试资源管理器的工具栏上选择“生成后运行测试”。|
+
+> [!NOTE]
+> 在每次生成后运行单元测试需要 Visual Studio Enterprise 版本。
 
 ## <a name="view-test-results"></a>查看测试结果
 
@@ -84,7 +87,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ### <a name="view-the-source-code-of-a-test-method"></a>查看测试方法的源代码
 
- 若要在 Visual Studio 编辑器中显示测试方法的源代码，请依次选择测试和右键单击菜单中的“打开测试”（键盘快捷键：F12）。
+若要在 Visual Studio 编辑器中显示测试方法的源代码，请依次选择测试和右键单击菜单中的“打开测试”（键盘快捷键：F12）。
 
 ## <a name="group-and-filter-the-test-list"></a>分组和筛选测试列表
 
@@ -92,13 +95,13 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ### <a name="group-tests-in-the-test-list"></a>在测试列表中的测试进行分组
 
- 若要更改测试的组织方式，请依次选择“分组依据”按钮 ![测试资源管理器的分组按钮](../test/media/ute_groupby_btn.png) 旁边的向下箭头和新分组条件。
+若要更改测试的组织方式，请依次选择“分组依据”按钮 ![测试资源管理器的分组按钮](../test/media/ute_groupby_btn.png) 旁边的向下箭头和新分组条件。
 
- ![在测试资源管理器中按类别对测试分组](../test/media/ute_groupbycategory.png)
+![在测试资源管理器中按类别对测试分组](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>测试资源管理器组
 
-|Group|说明|
+|Group|说明​​|
 |-|-----------------|
 |**持续时间**|按执行时间对测试进行分组：快速、中等和慢速。|
 |**结果**|按执行结果对测试进行分组：失败的测试、跳过的测试和通过的测试。|
@@ -107,20 +110,22 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ### <a name="group-by-traits"></a>按特征分组
 
- 特征通常是类别名称/值对，但也可以是单个类别。 特性可以分配给由单元测试框架标识为测试方法的方法。 单元测试框架可以定义特征类别。 你可以向特征类别添加值，以便定义自己的类别名称/值对。 用于指定特征类别和值的语法由单元测试框架定义。
+特征通常是类别名称/值对，但也可以是单个类别。 特性可以分配给由单元测试框架标识为测试方法的方法。 单元测试框架可以定义特征类别。 你可以向特征类别添加值，以便定义自己的类别名称/值对。 用于指定特征类别和值的语法由单元测试框架定义。
 
- **适用于托管代码的 Microsoft 单元测试框架中的特征**
+**适用于托管代码的 Microsoft 单元测试框架中的特征**
 
- 在适用于托管应用的 Microsoft 单元测试框架中，在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 属性中定义特征名称/值对。 测试框架还包括以下预定义特征：
+在适用于托管应用的 Microsoft 单元测试框架中，在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 属性中定义特征名称/值对。 测试框架还包括以下预定义特征：
 
-|特征|说明|
+|特征|说明​​|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|“所有者”类别由单元测试框架定义，并要求你提供所有者的字符串值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|“优先级”类别由单元测试框架定义，并要求你提供优先级的整数值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|你可以通过 TestCategory 属性提供类别而不提供值。 由 TestCategory 属性定义的类别也可以是 TestProperty 属性的类别。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|你可以通过 TestProperty 属性定义特征类别/值对。|
 
- **适用于 C++ 的 Microsoft 单元测试框架中的特征** 请参阅[如何使用适用于 C++ 的 Microsoft 单元测试框架](how-to-use-microsoft-test-framework-for-cpp.md)。
+**适用于 C++ 的 Microsoft 单元测试框架中的特征**
+
+ 请参阅[如何使用适用于 C++ 的 Microsoft 单元测试框架](how-to-use-microsoft-test-framework-for-cpp.md)。
 
 ### <a name="search-and-filter-the-test-list"></a>搜索和筛选测试列表
 
@@ -141,7 +146,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 > [!NOTE]
 > 搜索不区分大小，并将指定字符串与条件值的任何部分匹配。
 
-|限定符|说明|
+|限定符|说明​​|
 |-|-----------------|
 |**特征**|搜索特征类别和值的匹配项。 用于指定特征类别和值的语法由单元测试框架定义。|
 |**Project**|搜索测试项目名称的匹配项。|
@@ -161,21 +166,19 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ## <a name="create-custom-playlists"></a>创建自定义播放列表
 
- 你可以创建和保存想要作为组运行或查看的测试列表。 选择播放列表时，列表中的测试将显示在测试资源管理器中。 你可以将一个测试添加到多个播放列表，并且当你选择默认的 **“所有测试”** 播放列表时，项目中的所有测试都可用。
+你可以创建和保存想要作为组运行或查看的测试列表。 选择播放列表时，列表中的测试将显示在测试资源管理器中。 你可以将一个测试添加到多个播放列表，并且当你选择默认的 **“所有测试”** 播放列表时，项目中的所有测试都可用。
 
- ![选择播放列表](../test/media/ute_playlist.png)
+![选择播放列表](../test/media/ute_playlist.png)
 
- **若要创建播放列表**，请在测试资源管理器中选择一个或多个测试。 在右键单击菜单中，依次选择“添加到播放列表” > “NewPlaylist”。 保存具有该名称的文件，并定位到你在 **“创建新的播放列表”** 对话框中指定的位置。
+**若要创建播放列表**，请在测试资源管理器中选择一个或多个测试。 在右键单击菜单中，依次选择“添加到播放列表” > “NewPlaylist”。 保存具有该名称的文件，并定位到你在 **“创建新的播放列表”** 对话框中指定的位置。
 
- **若要将测试添加到播放列表**，请在测试资源管理器中选择一个或多个测试。 在右键单击菜单中，依次选择“添加到播放列表”和要将测试添加到的播放列表。
+**若要将测试添加到播放列表**，请在测试资源管理器中选择一个或多个测试。 在右键单击菜单中，依次选择“添加到播放列表”和要将测试添加到的播放列表。
 
- 要打开播放列表，请从 Visual Studio 菜单中依次选择“测试” > “播放列表”，然后从“最近使用的播放列表”列表中选择，或选择“打开播放列表”以指定播放列表的名称和位置。
+要打开播放列表，请从 Visual Studio 菜单中依次选择“测试” > “播放列表”，然后从“最近使用的播放列表”列表中选择，或选择“打开播放列表”以指定播放列表的名称和位置。
 
- 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
+如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
 ## <a name="debug-and-analyze-unit-tests"></a>调试并分析单元测试
-
-### <a name="debug-unit-tests"></a>调试单元测试
 
 可以使用测试资源管理器为你的测试启动调试会话。 使用 Visual Studio 调试程序无缝地逐句通过代码将使你在单元测试和所测试项目之间来回反复。 若要开始调试：
 
@@ -190,7 +193,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ### <a name="diagnose-test-method-performance-issues"></a>诊断测试方法性能问题
 
- 若要诊断测试方法为何花费过多时间，请在测试资源管理器中依次选择方法和右键单击菜单中的“配置文件”。 请参阅[性能资源管理器](../profiling/performance-explorer.md)。
+若要诊断测试方法为何花费过多时间，请在测试资源管理器中依次选择方法和右键单击菜单中的“配置文件”。 请参阅[性能资源管理器](../profiling/performance-explorer.md)。
 
 ### <a name="analyze-unit-test-code-coverage"></a>分析单元测试代码覆盖率
 

@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 9cbcdb26b333bc0d4ba0d96d5a81d652666c6c86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d7d07efa862e619961c21962dca20303efed97e
+ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956085"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55742516"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 编码约定设置
 
@@ -328,7 +328,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 此规则不接受“true”或“false”值；此规则接受下表中的值：
 
-| “值” | 说明 |
+| 值 | 说明​​ |
 | ----- |:----------- |
 | always | 优先指定可访问性修饰符 |
 | for\_non\_interface_members | 优先声明可访问性修饰符，公共接口成员除外。 这与往常相同，并且已添加以用于未来验证（如果 C# 添加默认接口方法）。 |
@@ -993,7 +993,7 @@ csharp_style_var_elsewhere = true:suggestion
 
 此规则接受下表中的值：
 
-| “值” | 说明 |
+| 值 | 说明​​ |
 | ----- |:----------- |
 | true | 倾向于使用方法的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，优先使用方法的 expression-bodied 成员 |
@@ -1013,7 +1013,7 @@ public int GetAge() { return this.Age; }
 
 此规则接受下表中的值：
 
-| 值 | 说明 |
+| 值 | 说明​​ |
 | ----- |:----------- |
 | true | 倾向于使用构造函数的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用构造函数的 expression-bodied 成员 |
@@ -1033,7 +1033,7 @@ public Customer(int age) { Age = age; }
 
 此规则接受下表中的值：
 
-| 值 | 说明 |
+| 值 | 说明​​ |
 | ----- |:----------- |
 | true | 倾向于使用运算符的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用运算符的 expression-bodied 成员 |
@@ -1055,7 +1055,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 此规则接受下表中的值：
 
-| 值 | 说明 |
+| “值” | 说明​​ |
 | ----- |:----------- |
 | true | 倾向于使用属性的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用属性的 expression-bodied 成员 |
@@ -1075,7 +1075,7 @@ public int Age { get { return _age; }}
 
 此规则接受下表中的值：
 
-| 值 | 说明 |
+| 值 | 说明​​ |
 | ----- |:----------- |
 | true | 倾向于使用索引器的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用索引器的 expression-bodied 成员 |
@@ -1095,7 +1095,7 @@ public T this[int i] { get { return _values[i]; } }
 
 此规则接受下表中的值：
 
-| 值 | 说明 |
+| 值 | 说明​​ |
 | ----- |:----------- |
 | true | 倾向于使用访问器的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用访问器的 expression-bodied 成员 |
@@ -1390,6 +1390,7 @@ csharp_prefer_braces = true:none
 - .NET 格式设置
     - [组织 using](#usings)
         - dotnet_sort_system_directives_first
+        - dotnet_separate_import_directive_groups
 - C# 格式设置
     - [换行符选项](#newline)
         - csharp_new_line_before_open_brace
@@ -1432,6 +1433,7 @@ csharp_prefer_braces = true:none
 | 规则名称 | 适用的语言 | Visual Studio 默认值 | Visual Studio 2017 版本 |
 | ----------- | -------------------- | ----------------------| ---------------- |
 | dotnet_sort_system_directives_first | C# 和 Visual Basic | true | 15.3 |
+| dotnet_separate_import_directive_groups | C# 和 Visual Basic | true | 15.5 |
 
 **dotnet\_sort\_system\_directives_first**
 
@@ -1460,6 +1462,34 @@ using System.Threading.Tasks;
 dotnet_sort_system_directives_first = true
 ```
 
+dotnet\_separate\_import\_directive\_groups
+
+- 当此规则设置为 true 时，请在 using 指令组之间放置一个空行。
+- 当此规则设置为 false 时，请勿在 using 指令组之间放置空行。
+
+代码示例：
+
+```csharp
+// dotnet_separate_import_directive_groups = true
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+using Octokit;
+
+// dotnet_separate_import_directive_groups = false
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using Octokit;
+```
+
+.editorconfig 文件示例：
+
+```EditorConfig
+# .NET formatting settings:
+[*.{cs,vb}]
+dotnet_separate_import_directive_groups = true
+```
+
 ### <a name="c-formatting-settings"></a>C# 格式设置
 
 本节中的格式设置规则仅适用于 C# 代码。
@@ -1484,7 +1514,7 @@ dotnet_sort_system_directives_first = true
 
 此规则与左大括号 `{` 应放在前面代码的同一行还是新行上有关。 对于此规则，无需指定“true”或“false”。 改为指定“全部”、“无”或一个或多个码位元素，如方法或属性，从而定义此规则的应用时间。 下表列出了允许值的完整列表：
 
-| 值 | 说明
+| 值 | 说明​​
 | ------------- |:-------------|
 | accessors, anonymous_methods, anonymous_types, control_blocks, events, indexers, lambdas, local_functions, methods, object_collection_array_initializers, properties, types.<br>（对于多种值，请使用“,”分隔）。 | 需要将大括号置于指定码位元素的新行中（也称为“Allman”样式） |
 | 全部 | 对于所有表达式，需要将大括号置于新行（“Allman”样式） |
@@ -1749,7 +1779,7 @@ default:
 
 此规则不接受“true”或“false”值；此规则接受下表中的值：
 
-| “值” | 说明 |
+| 值 | 说明​​ |
 | ----- |:----------- |
 | flush_left | 标签置于最左侧的列 |
 | one_less_than_current | 将标签置于比当前上下文少一个缩进的位置 |
@@ -1892,7 +1922,7 @@ MyMethod(argument);
 
 此规则接受下表中的一个或多个值：
 
-| 值 | 说明 |
+| 值 | 说明​​ |
 | ----- |:------------|
 | control_flow_statements | 在控制流语句的括号之间放置空格 |
 | 表达式 | 在表达式的括号之间放置空格 |
@@ -1979,7 +2009,7 @@ class C :I
 
 此规则接受下表中的一个值：
 
-| “值” | 说明 |
+| “值” | 说明​​ |
 | ----- |:------------|
 | before_and_after | 在二元运算符前后插入空格 |
 | 无 | 删除二元运算符前后的空格 |
@@ -2193,6 +2223,7 @@ charset = utf-8-bom
 [*.{cs,vb}]
 # Organize usings
 dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = false
 
 # this. preferences
 dotnet_style_qualification_for_field = false:none

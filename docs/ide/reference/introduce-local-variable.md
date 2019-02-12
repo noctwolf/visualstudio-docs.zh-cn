@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2fcd6032879dc8e218aa782d27a34250982fb7c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 14a595de3b80635ad6974f2abb94bd9645d5a7f7
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961944"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483804"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引入局部变量
 
@@ -47,7 +47,7 @@ ms.locfileid: "54961944"
       - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
+      - 单击 ![左边缘中](media/screwdriver.png) 图标（如果文本光标已在具有突出显示的表达式的行上，它会出现在左边缘）。
 
    ![引入本地预览](media/local-preview-cs.png)
 

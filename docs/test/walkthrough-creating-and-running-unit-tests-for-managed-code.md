@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 130cb83e078a0f7c2924349dcd13692d3fe9125a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12b232bf32be6802ccd82ecad647f2becc95addc
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924595"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484194"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -82,6 +82,11 @@ public void Debit(double amount)
 ## <a name="create-a-unit-test-project"></a>创建单元测试项目
 
 1. 在“文件”菜单上，选择“添加” > “新建项目”。
+
+   > [!TIP]
+   > 还有其他几种方法可以将其他项目添加到现有解决方案中。 可以右键单击“解决方案资源管理器”中的解决方案，然后依次选择“添加” > “新建项目”。 或者，可以依次选择“文件” > “新建” > “项目”，然后在“新建项目”对话框中选择“添加到解决方案”选项：
+   >
+   > ![“新建项目”对话框中的“添加到解决方案”选项](media/add-to-solution.png)
 
 2. 在“新建项目”对话框中，依次展开“已安装”、“Visual C#”，然后选择“测试”。
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8f72638db2403b67a52ed5bc4ff005189526d7e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 746a0099d16196e9cbc2b98d18667acae57777f9
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938349"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483570"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>在 Visual Studio 中生成构造函数
 
@@ -49,7 +49,7 @@ ms.locfileid: "54938349"
       - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在此类中的空行上，它会出现在左边缘）。
+      - 单击 ![左边缘中](media/screwdriver.png) 图标（如果文本光标已在此类中的空行上，它会出现在左边缘）。
 
    ![生成构造函数预览](media/constructor1-preview-cs.png)
 
@@ -80,7 +80,7 @@ ms.locfileid: "54938349"
       - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含选定内容的行上，它会出现在左边缘）。
+      - 单击 ![左边缘中](media/screwdriver.png) 图标（如果文本光标已在包含选定内容的行上，它会出现在左边缘）。
 
       ![生成构造函数预览](media/constructor2-preview-cs.png)
 
@@ -108,8 +108,8 @@ ms.locfileid: "54938349"
       - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
-      - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
+      - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![错误灯泡](media/error-bulb.png) 图标。
+      - 单击 ![错误灯泡](media/error-bulb.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
 
       ![生成构造函数预览](media/constructor-preview-cs.png)
 
@@ -142,8 +142,8 @@ ms.locfileid: "54938349"
       - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
-      - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
+      - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![错误灯泡](media/error-bulb.png) 图标。
+      - 单击 ![错误灯泡](media/error-bulb.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
 
       ![生成构造函数预览](media/constructor4-preview-cs.png)
 
@@ -169,7 +169,7 @@ ms.locfileid: "54938349"
       - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含所添加的参数的行上，它会出现在左边缘）。
+      - 单击 ![左边缘中](media/screwdriver.png) 图标（如果文本光标已在包含所添加的参数的行上，它会出现在左边缘）。
 
    ![生成构造函数预览](media/constructor5-preview-cs.png)
 

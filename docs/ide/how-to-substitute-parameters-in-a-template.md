@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93e553338478bcdead9e283323348b02ac73eaac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 19dcfbca8025ef73cea38e5b2b6e5768ab5e8a1f
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031755"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424273"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>如何：替换模板中的参数
 
@@ -25,7 +25,7 @@ ms.locfileid: "55031755"
 
 以下部分演示了如何修改模板，以将命名空间的名称替换为“安全项目名称”。
 
-## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>使用参数替换命名空间名称
+## <a name="example---namespace-name"></a>示例 - 命名空间名称
 
 1. 将参数插入模板中的一个或多个代码文件中。 例如:
 

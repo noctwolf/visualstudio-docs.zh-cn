@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6451b45f8bb98232ea0c3a1b3cb96d37cf303ccc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 90a9ba0da2ee8c77b66d147c9af5fa560f50f3a0
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010384"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484129"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 的辅助功能提示和技巧
 
@@ -41,7 +41,7 @@ Visual Studio 具有内置辅助功能，这些辅助功能与屏幕阅读器以
 
 ## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>使用注释显示关于代码的实用信息
 
-Visual Studio 编辑器包括很多文本“修饰”，比如灯泡、错误和警告“波形曲线”、定位标记等，这些修饰有助于了解代码行中特定点的特征和功能。 可以使用“显示行注释”命令集帮助发现并浏览这些修饰。
+Visual Studio 编辑器包括很多文本“修饰”，比如螺丝刀和灯泡图标、错误和警告“波形曲线”、定位标记等，这些修饰有助于了解代码行中特定点的特征和功能。 可以使用“显示行注释”命令集帮助发现并浏览这些修饰。
 
   ![使用“显示行批注”命令集](media/show-line-annotations-command-set.png)
 
@@ -49,7 +49,7 @@ Visual Studio 编辑器包括很多文本“修饰”，比如灯泡、错误和
 
 与许多工具窗口一样，Visual Studio IDE 也具有多个工具栏。 可使用以下快捷键访问这些工具栏。
 
-|功能|说明|组合键|
+|功能|说明​​|组合键|
 |-------------|-----------------| - |
 |IDE 工具栏|选择“标准”工具栏上的第一个按钮。|**Alt****Ctrl** + **Tab**|
 |工具窗口工具栏|将焦点移动到工具窗口中的工具栏。 <br> <br> **注意：** 此方法适用于大多数工具窗口，但仅限焦点位于工具窗口的情况。 此外，还必须在按 Alt 键前按 Shift 键。 在一些工具窗口（如团队资源管理器）中，必须先按住 Shift 键一会才能按 Alt 键。|**Shift** + **Alt**|
@@ -59,7 +59,7 @@ Visual Studio 编辑器包括很多文本“修饰”，比如灯泡、错误和
 
 下面是其他一些有用的快捷组合键。
 
-|功能|说明|组合键|
+|功能|说明​​|组合键|
 |-------------|-----------------| - |
 |IDE|打开或关闭高对比度。 <br> <br> **注意：** 标准 Windows 快捷方式|**左 Alt + 左 Shift + PrtScn**|
 |对话框|选中或清除对话框中的复选框选项。 <br> <br> **注意：** 标准 Windows 快捷方式|**空格键**|

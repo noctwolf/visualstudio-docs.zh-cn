@@ -11,12 +11,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 065a4c21be596b409ed82718e0b38c38367612cc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f33c1edec4b4093e9157a59618befa2e1175be49
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039044"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483986"
 ---
 # <a name="code-style-preferences"></a>代码样式首选项
 
@@ -31,7 +31,7 @@ ms.locfileid: "55039044"
 
 ## <a name="preference-and-severity"></a>首选项和严重级别
 
-对于每个项，可使用每行相应的下拉列表设置“首选项”和“严重性”值。 严重性可设置为“无”、“建议”、“警告”或“错误”。 如果想要为某个代码样式启用[快速操作](../ide/quick-actions.md)，请确保“严重性”设置为“无”以外的其他项。 “快速操作”灯泡图标![小灯泡图标](media/vs2015_lightbulbsmall.png)将在使用了非首选样式时出现，你可选择“快速操作”列表上的选项将代码自动重写为首选样式。
+对于每个项，可使用每行相应的下拉列表设置“首选项”和“严重性”值。 严重性可设置为“无”、“建议”、“警告”或“错误”。 如果想要为某个代码样式启用[快速操作](../ide/quick-actions.md)，请确保“严重性”设置为“无”以外的其他项。 “快速操作”灯泡![灯泡](media/vs2015_lightbulbsmall.png)、错误灯泡![错误灯泡](media/error-bulb.png)或螺丝刀![螺丝刀](media/screwdriver.png)图标将在使用了非首选样式时出现，你可选择“快速操作”列表上的选项将代码自动重写为首选样式。
 
 ## <a name="editorconfig-files"></a>EditorConfig 文件
 

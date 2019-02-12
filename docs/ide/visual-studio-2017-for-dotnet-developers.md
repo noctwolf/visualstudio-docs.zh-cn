@@ -11,12 +11,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2fe0c653706212e33b2a60b2d51a8b6cfea5a29
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4181d7d84d1257f40a2e574944a722795f660469
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941387"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55484090"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 工作效率指南
 
@@ -36,7 +36,7 @@ ms.locfileid: "54941387"
 
 Visual Studio 常用快捷方式如下：
 
-| 快捷方式（所有配置文件） | 命令 | 说明 |
+| 快捷方式（所有配置文件） | 命令 | 说明​​ |
 |-|-|-|
 | Ctrl + T | 转到全部 | 导航到任何文件/类型/成员/符号声明 |
 | F12（也可使用 Ctrl+单击） | 转到定义 | 导航到定义符号的位置 |
@@ -81,7 +81,7 @@ Visual Studio 2017 有一种名为“转到全部”(Ctrl+T) 的功能。 通过
 
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>我需要更多重构和代码修补程序
 
-Visual Studio 2017 包含大量重构、代码生成操作和代码修补程序。 红色波浪线表示错误，绿色波浪线表示警告，三个灰色点表示代码建议。 若要访问代码修补程序，可以单击灯泡/螺丝刀图标或按 Ctrl+.  或 Alt+Enter。 每个修补程序都附带一个显示修补工作方式实时代码差异的预览窗口。
+Visual Studio 2017 包含大量重构、代码生成操作和代码修补程序。 红色波浪线表示错误，绿色波浪线表示警告，三个灰色点表示代码建议。 若要访问代码修补程序，可以单击灯泡或螺丝刀图标或按 Ctrl+。 或 Alt+Enter。 每个修补程序都附带一个显示修补工作方式实时代码差异的预览窗口。
 
 - 常用的快速修复和重构包括：
   - *重命名*
@@ -155,7 +155,7 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 | 功能 | 详细信息 | 如何启用 |
 |-|-|-|
 | 在解决方案资源管理器中查找文件 | 突出显示了解决方案资源管理器中活动的文件 | “工具” > “选项” > “项目和解决方案” > “跟踪解决方案资源管理器中的活动项” |
-| 为引用程序集和 NuGet 包中的类型添加 using | 显示灯泡和代码修补程序，对未引用的类型安装 NuGet 包 | “工具” > “选项” > “文本编辑器” > “C#” > “高级” > “建议对引用程序集中的类型使用 using”和“建议对 NuGet 包中的类型使用 using” |
+| 为引用程序集和 NuGet 包中的类型添加 using | 显示错误灯泡和代码修补程序，以便为未引用的类型安装 NuGet 包 | “工具” > “选项” > “文本编辑器” > “C#” > “高级” > “建议对引用程序集中的类型使用 using”和“建议对 NuGet 包中的类型使用 using” |
 | 启用完整解决方案分析 | 请在错误列表中查看解决方案中的所有错误 | “工具” > “选项” > “文本编辑器” > “C#” > “高级” > “启用完整解决方案分析” |
 | 启用导航到反编译源 | 对外部源的类型/成员启用“转到定义”并使用 ILSpy 反编译程序显示方法体 | “工具” > “选项” > “文本编辑器” > “C#” > “高级” > “启用导航到反编译源” |
 | 完成/建议模式 | 更改 IntelliSense 中的完成行为 - 有 IntelliJ 背景的开发人员往往会更改此处的默认设置 | “菜单” > “编辑” > “IntelliSense” > “切换完成模式” |

@@ -11,18 +11,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c46c0094985e8b84e546ef64fbdd268689c5296
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cd80a7d29ae62cac691775e85cc432ac65a6eded
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935015"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424442"
 ---
 # <a name="template-parameters"></a>模板参数
 
 实例化模板时，可替换模板中的值。 若要设置此功能，请使用模板参数。 模板参数可用于替换值，例如模板中的类名和命名空间。 当用户添加新项或项目时，后台运行的模板向导会替换这些参数。
 
-## <a name="declaring-and-enabling-template-parameters"></a>声明和启用模板参数
+## <a name="declare-and-enable-template-parameters"></a>声明和启用模板参数
 
 模板参数以 $参数$ 的格式进行声明。 例如:
 
@@ -32,7 +32,7 @@ ms.locfileid: "54935015"
 
 - $guid5$
 
-### <a name="to-enable-parameter-substitution-in-templates"></a>在模板中启用参数替换
+### <a name="enable-parameter-substitution-in-templates"></a>在模板中启用参数替换
 
 1. 在模板的 .vstemplate 文件中，找到与要为之启用参数替换的项对应的 `ProjectItem` 元素。
 
@@ -46,11 +46,12 @@ ms.locfileid: "54935015"
 
 ## <a name="reserved-template-parameters"></a>保留的模板参数
 
-下表列出可供任何模板使用的保留模板参数。
+下表列出可供任何模板使用的保留的模板参数：
 
-|参数|说明|
+|参数|说明​​|
 |---------------|-----------------|
 |clrversion|公共语言运行时 (CLR) 的当前版本。|
+|ext_*|将 `ext_` 前缀添加到任何参数，以引用父模板的变量。 例如 `ext_safeprojectname`。|
 |guid[1-10]|一个用于替换项目文件中的项目 GUID 的 GUID。 可指定最多 10 个唯一的 GUID（例如，`guid1`）。|
 |itemname|“添加新项”对话框中由用户提供的名称。|
 |machinename|当前的计算机名称（例如，Computer01）。|
@@ -118,6 +119,7 @@ namespace $safeprojectname$
 
 ## <a name="see-also"></a>请参阅
 
+- [如何：替换模板中的参数](how-to-substitute-parameters-in-a-template.md)
 - [自定义模板](../ide/customizing-project-and-item-templates.md)
 - [如何：创建项目模板](../ide/how-to-create-project-templates.md)
 - [模板架构引用](../extensibility/visual-studio-template-schema-reference.md)
