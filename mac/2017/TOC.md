@@ -10,7 +10,7 @@
 
 # [用户帐户](/visualstudio/mac/user-accounts)
 ## [登录](/visualstudio/mac/signing-in)
-## [启用订阅](/visualstudio/mac/activation)
+## [启用订阅](/visualstudio/mac/enable-subscription)
 
 # [自定义 IDE](/visualstudio/mac/customizing-the-ide)
 ## [扩展 Visual Studio for Mac](/visualstudio/mac/extending-visual-studio-mac)

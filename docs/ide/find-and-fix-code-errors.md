@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab4485953203c9f3b19947b89f76329b6bc277b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99b84e02c4ca63d80d6ef80637fcce042c869bcf
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017092"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483765"
 ---
 # <a name="make-code-work-in-visual-studio"></a>确保代码在 Visual Studio 中正常运行
 
@@ -89,9 +89,9 @@ Visual Studio 2017 包括一系列内置的 [.NET Compiler Platform 分析器](.
 
 ![包含警告的 Visual Studio 错误列表](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>使用灯泡修复或重构代码
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>使用“快速操作”修复或重构代码
 
-通过灯泡或螺丝刀图标提供的 [快速操作](../ide/quick-actions.md)，可让您重构内联代码 它们是在 C#、C++ 和 Visual Basic 代码中快速、有效地修复常见警告的简便方法。 要访问它们，请右键单击警告波形并选择“快速操作和重构”。 或者，在光标位于彩色波浪线所在行时，按 Ctrl+. 或选择边距中的灯泡或螺丝刀图标。 您将看到可以应用于该行代码的可能修复或重构列表。
+通过灯泡或螺丝刀图标提供的 [快速操作](../ide/quick-actions.md)，可让您重构内联代码 它们是在 C#、C++ 和 Visual Basic 代码中快速、有效地修复常见警告的简便方法。 要访问它们，请右键单击警告波形并选择“快速操作和重构”。 或者，在光标位于彩色波浪线所在行时，按 Ctrl+. 或选择边距中的灯泡、错误灯泡或螺丝刀图标。 您将看到可以应用于该行代码的可能修复或重构列表。
 
 ![Visual Studio 灯泡预览](../ide/media/quick-actions-options.png)
 

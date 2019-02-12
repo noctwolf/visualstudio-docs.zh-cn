@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ba71906b38fd889f1db42fcb69c689718107c6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aae170d2fb9b824d0c547dec7549ef2fdd8401ee
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951282"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483973"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 任务参考
 任务提供在生成过程中运行的代码。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供以下列表中的任务。 安装 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 时，可使用其他任务来生成 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目。 有关详细信息，请参阅 [Visual C++ 任务](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。  
@@ -28,7 +28,7 @@ ms.locfileid: "54951282"
  除了此部分各主题中列出的参数外，每项任务还有下列参数：  
 
 
-| 参数 | 说明 |
+| 参数 | 说明​​ |
 |-------------------| - |
 | `Condition` | 可选 `String` 参数。<br /><br /> [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎使用 `Boolean` 表达式来确定是否执行此任务。 有关 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 支持的条件的信息，请参阅[条件](../msbuild/msbuild-conditions.md)。 |
 | `ContinueOnError` | 可选参数。 可以包含下列值之一：<br /><br /> -   **WarnAndContinue** 或 **true**。 当任务失败时，[Target](../msbuild/target-element-msbuild.md) 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为警告。<br />-   **ErrorAndContinue**。 当任务失败时，`Target` 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为错误。<br />-   **ErrorAndStop** 或 **false**（默认值）。 当任务失败时，将不会执行 `Target` 元素中的剩余任务和生成，并且整个 `Target` 元素和生成都被视为已失败。<br /><br /> 4.5 之前的 .NET Framework 版本仅支持 `true` 和 `false` 值。<br /><br /> 有关详细信息，请参阅[如何：忽略任务中的错误](../msbuild/how-to-ignore-errors-in-tasks.md)。 |
@@ -130,7 +130,10 @@ ms.locfileid: "54951282"
  [GetAssemblyIdentity 任务](../msbuild/getassemblyidentity-task.md)  
  从指定的文件检索程序集标识并输出标识信息。  
 
- [GetFrameworkPath 任务](../msbuild/getframeworkpath-task.md)  
+ [GetFileHash 任务](../msbuild/getfilehash-task.md)  
+ 计算文件或文件集的内容的校验和。
+
+[GetFrameworkPath 任务](../msbuild/getframeworkpath-task.md)  
  检索 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 程序集的路径。  
 
  [GetFrameworkSdkPath 任务](../msbuild/getframeworksdkpath-task.md)  
@@ -210,6 +213,9 @@ ms.locfileid: "54951282"
 
  [Vbc 任务](../msbuild/vbc-task.md)  
  调用 Visual Basic 编译器以生成可执行文件、动态链接库或代码模块。  
+
+ [VerifyFileHash 任务](../msbuild/verifyfilehash-task.md)  
+ 验证文件是否与预期的文件哈希匹配。
 
  [Warning 任务](../msbuild/warning-task.md)  
  基于评估的条件语句，在生成期间记录警告。  

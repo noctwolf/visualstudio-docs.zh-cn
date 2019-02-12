@@ -10,20 +10,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0ac3acc8b5addf02e510943b6b61ce1c5f0c5b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 52a0b5d046580e5d4dbf499e504cd0ea123ff5b2
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999751"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424377"
 ---
 # <a name="get-started-with-unit-testing"></a>单元测试入门
 
-使用 Visual Studio 定义和运行单元测试，使代码保持正常运行、确保代码覆盖率并在客户之前找到错误和缺陷。
+使用 Visual Studio 定义和运行单元测试，使代码保持正常运行、确保代码覆盖率并在客户之前找到错误和缺陷。 经常运行单元测试，确保代码正常运行。
 
 ## <a name="create-unit-tests"></a>创建单元测试
 
-创建单元测试并经常运行，确保代码正常运行。
+本节从较高层面介绍了如何创建单元测试项目。
+
+> [!TIP]
+> 正在测试的项目“HelloWorld”是一个示例项目，其任何代码不会用于显示。 如果要创建要测试的“HelloWorld”项目，请参阅[创建首个 C# 控制台应用](../ide/quickstart-csharp-console.md)。 有关完整的演练文章，请参阅[创建并运行托管代码的单元测试](walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
 
 1. 创建单元测试项目。
 
@@ -150,6 +153,7 @@ ms.locfileid: "54999751"
 
 ## <a name="see-also"></a>请参阅
 
+* [演练：创建并运行托管代码的单元测试](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [创建单元测试命令](create-unit-tests-menu.md)
 * [使用 IntelliTest 生成测试](generate-unit-tests-for-your-code-with-intellitest.md)
 * [使用测试资源管理器运行测试](run-unit-tests-with-test-explorer.md)

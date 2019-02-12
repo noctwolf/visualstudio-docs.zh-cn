@@ -1,6 +1,6 @@
 ---
 title: 发布到 Linux 上的应用服务
-ms.date: 07/23/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -9,18 +9,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 3e80f96e1af39747a6dfa9fb9737ec11bb5baf00
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12d1df3874388f0c113600e20ca2dbd080d15d10
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951932"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483960"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>使用 Visual Studio 将 ASP.NET Core 应用发布到 Linux 上的应用服务
 
-可使用“发布”工具将 ASP.NET Core 应用发布到 Linux 上的 Azure 应用服务。
+从 Visual Studio 2017 版本 15.7 开始，可以使用以下任一方法将 ASP.NET Core 应用发布到 Azure 应用服务 Linux（使用容器）。
 
-使用“发布”工具部署到 Linux 上的应用服务需要 Visual Studio 2017 版本 15.7。
+* 对于应用的连续（或自动）部署，请将 Azure DevOps 与 [Azure 管道](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops)结合使用。
+
+* 对于应用的一次性（或手动）部署，请使用 Visual Studio 中的“Publish”工具将 ASP.NET Core 应用部署到适用于 Linux 的应用服务（使用容器）。
+
+本文介绍如何使用“Publish”工具进行一次性部署。
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 

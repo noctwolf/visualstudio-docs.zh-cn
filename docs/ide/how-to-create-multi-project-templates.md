@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cefeabffc42722b1fa574a19068eb45c5e850e86
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0b1470620ce6640b3a287a5d86fc6922597258b3
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985911"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424209"
 ---
 # <a name="how-to-create-multi-project-templates"></a>如何：创建多项目模板
 
@@ -69,17 +69,20 @@ ms.locfileid: "54985911"
     </TemplateContent>
     ```
 
-## <a name="to-create-a-multi-project-template-from-an-existing-solution"></a>从现有解决方案中创建多项目模板
+## <a name="create-a-multi-project-template-from-an-existing-solution"></a>从现有解决方案中创建多项目模板
 
 1. 创建一个解决方案，并添加两个或多个项目。
 
 1. 自定义项目，直到可将其导出到模板。
 
+   > [!TIP]
+   > 如果使用的是[模板参数](template-parameters.md)并且想要引用父模板中的变量，请在参数名称前加上前缀 `ext_`。 例如 `$ext_safeprojectname$`。
+
 1. 在“项目”菜单上，选择“导出模板”。
 
    “导出模板向导”随即打开。
 
-1. 在“选择模板类型”页上，选择“项目模板”。 选择要导出到模板的项目，然后选择“下一步”。
+1. 在“选择模板类型”页上，选择“项目模板”。 选择要导出到模板的一个项目，然后选择“下一步”。 （你将针对解决方案中的每个项目重复这些步骤。）
 
 1. 在“选择模板选项”页面上，输入模板的名称和可选说明、图标和预览图像。 选择“完成”。
 

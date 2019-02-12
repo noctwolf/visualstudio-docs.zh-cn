@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f25f9ab44bee749283603b78744c9e01e4e469
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b18e1837fdc673500fae96555dab7fb0195ec42e
+ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992628"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55424235"
 ---
 # <a name="immediate-window"></a>即时窗口
 
@@ -102,7 +102,7 @@ ms.locfileid: "54992628"
 
 如果在**即时**窗口中单击前面的任意行，将自动切换到“标记”模式。 这允许你像在任何文本编辑器中那样选择、编辑和复制以前命令的文本，并将其粘贴到当前行中。
 
-## <a name="the-equals-sign"></a>等号 (=)
+## <a name="the-equals-sign-"></a>等号 (=)
 
 用于输入 `EvaluateStatement` 命令的窗口确定是将等号 (=) 解释为比较运算符还是赋值运算符。
 
