@@ -13,15 +13,15 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
-ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
+ms.openlocfilehash: a83b3c1be5beeeb2ea40fb9d27089a4b559f758a
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54403962"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55089137"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令行参数安装 Visual Studio 2017
 
@@ -37,7 +37,7 @@ ms.locfileid: "54403962"
 - [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 - [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 
-## <a name="list-of-command-line-parameters"></a>命令行参数列表
+## <a name="command-line-parameters"></a>命令行参数
 
  Visual Studio 命令行参数不区分大小写。
 
@@ -56,6 +56,8 @@ ms.locfileid: "54403962"
 | `repair` | 修复已安装的产品。 |
 | `uninstall` | 卸载已安装的产品。 |
 | `export` | **15.9 版中的新增功能**：将安装所选内容导出到安装配置文件。 **说明**：仅能与 vs_installer.exe 一起使用。 |
+
+## <a name="install-options"></a>安装选项
 
 | **安装选项** | **说明** |
 | ----------------------- | --------------- |
@@ -79,6 +81,8 @@ ms.locfileid: "54403962"
 
 > [!IMPORTANT]
 > 指定多个工作负载和组件时，必须对每项重复运行 `--add` 或 `--remove` 命令行开关。
+
+## <a name="layout-options"></a>布局选项
 
 | **布局选项** | **说明** |
 | ----------------------- | --------------- |

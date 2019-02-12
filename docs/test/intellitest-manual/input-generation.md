@@ -6,24 +6,27 @@ ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d08094f122ace8908da7800cba84815b201154db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b210248a9ac27945ee6eb1e2f1d5219c6dd62117
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834667"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936614"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用动态符号执行的输入生成
 
-IntelliTest 通过分析程序中的分支条件为[参数化单元测试](test-generation.md#parameterized-unit-testing)生成输入。 测试输入的选择依据是它们是否可触发程序的新分支行为。 分析是一个增量过程。 它针对正式测试输入参数“I”提炼了谓词“q: I -> {true, false}”。“q”表示的一组 IntelliTest 已观察到的行为。 最初，q := false，因为尚未观察到任何行为。
+IntelliTest 通过分析程序中的分支条件为[参数化单元测试](test-generation.md#parameterized-unit-testing)生成输入。
+测试输入的选择依据是它们是否可触发程序的新分支行为。
+分析是一个增量过程。 它针对正式测试输入参数“I”提炼了谓词“q: I -> {true, false}”。“q”表示的一组 IntelliTest 已观察到的行为。
+最初，q := false，因为尚未观察到任何行为。
 
 循环的步骤如下：
 
-1. IntelliTest 确定输入 i，这样使用[约束求解器](#constraint-solver)使 q(i)=false。 
+1. IntelliTest 确定输入 i，这样使用[约束求解器](#constraint-solver)使 q(i)=false。
    通过构造，输入 i 将采用之前没有见过的执行路径。 最初，这意味着 i可以是任何输入，因为尚未发现任何执行路径。
 
 1. IntelliTest 使用所选输入 i 执行测试，并监视测试以及受测程序的执行情况。
@@ -55,7 +58,8 @@ IntelliTest 使用 [Z3](https://github.com/Z3Prover/z3/wiki) 约束求解器。
 <a name="dynamic-code-coverage"></a>
 ## <a name="dynamic-code-coverage"></a>动态代码覆盖率
 
-运行时监视的一个副作用是 IntelliTest 会收集动态代码覆盖率数据。 这称为“动态”，因为 IntelliTest 只识别已执行的代码，所以它提供覆盖率的绝对值方式与其他覆盖率工具通常采用的方式不同。 
+运行时监视的一个副作用是 IntelliTest 会收集动态代码覆盖率数据。
+这称为“动态”，因为 IntelliTest 只识别已执行的代码，所以它提供覆盖率的绝对值方式与其他覆盖率工具通常采用的方式不同。
 
 例如，当 IntelliTest 报告动态覆盖率为 5/10 基本块时，意思是已覆盖 10 个块中的 5 个，其中到目前为止分析所访问的所有方法（而不是受测程序集中存在的所有方法）中的总块数为 10。
 之后在分析中，随着发现更多的可访问方法，分子（本例中的 5）和分母 (10) 还可能增加。
@@ -80,8 +84,7 @@ IntelliTest 运行测试和受测程序时，将监视执行的指令。 特别�
 这意味着 IntelliTest 必须创建某些类型的对象并设置其字段值。 如果类[可见](#visibility)并具有[可见](#visibility)默认构造函数，IntelliTest 可创建该类的实例。
 如果类的所有字段都[可见](#visibility)，IntelliTest 可自动设置字段。
 
-如果类型不可见或字段不[可见](#visibility)，则 IntelliTest 需要帮助才能创建对象，使对象处于感兴趣的状态以实现最大代码覆盖率。 IntelliTest 可使用反射以任意方式来创建和初始化实例，但这通常不可取，  
-因为它可能会使对象进入正常程序执行期间永远不会出现的状态中。 IntelliTest 会转而依赖用户的提示。
+如果类型不可见或字段不[可见](#visibility)，则 IntelliTest 需要帮助才能创建对象，使对象处于感兴趣的状态以实现最大代码覆盖率。 IntelliTest 可使用反射以任意方式创建和初始化实例，但人们通常并不希望这样，因为这样可能会使对象在正常执行程序期间处于永不出现的状态。 IntelliTest 会转而依赖用户的提示。
 
 <a name="visibility"></a>
 ## <a name="visibility"></a>可见性
@@ -108,7 +111,7 @@ IntelliTest 运行测试和受测程序时，将监视执行的指令。 特别�
 
 如何测试具有接口类型的参数的方法？ 或者具有非密封类的参数的方法？ IntelliTest 不知道之后调用此方法时将使用哪种实现。 可能在测试时甚至没有真正的实现可用。
 
-常规的方法是使用具有显式行为的 mock 对象。 
+常规的方法是使用具有显式行为的 mock 对象。
 
 mock 对象会实现接口（或扩展非密封类）。 它不表示真正的实现，而只是一个允许使用 mock 对象执行测试的快捷方式。 它的行为手动定义为每个使用它的测试用例的一部分。 许多工具使定义 mock 对象及其预期行为变得简单，但仍必须手动定义此行为。
 
@@ -129,7 +132,8 @@ IntelliTest 推理“结构”值的方式类似于它处理[对象](#objects)�
 <a name="arrays-and-strings"></a>
 ## <a name="arrays-and-strings"></a>数组和字符串
 
-IntelliTest 运行测试和受测程序时，将监视执行的指令。 特别是，它将观察程序何时依赖于一个字符串或数组的长度（以及多维数组的下限和长度）。 它还将观察程序如何使用字符串或数组的不同元素。 然后使用[约束求解器](#constraint-solver)确定哪些长度和元素值可能会导致测试和受测程序的行为会以感兴趣的方式表现。
+IntelliTest 运行测试和受测程序时，将监视执行的指令。 特别是，它将观察程序何时依赖于一个字符串或数组的长度（以及多维数组的下限和长度）。
+它还将观察程序如何使用字符串或数组的不同元素。 然后使用[约束求解器](#constraint-solver)确定哪些长度和元素值可能会导致测试和受测程序的行为会以感兴趣的方式表现。
 
 IntelliTest 尝试最大程度地减小触发感兴趣的程序行为所需的数组和字符串的大小。
 

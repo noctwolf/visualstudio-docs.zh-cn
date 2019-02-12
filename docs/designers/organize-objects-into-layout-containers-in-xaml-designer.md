@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5c56dc477b3c788f8d5ebfee4809067c77e08e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 371ac2a3473c8e040167c91c0b126715cd2ae674
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829298"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231812"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>在 XAML 设计器中将对象组织到布局容器中
 
@@ -30,19 +30,7 @@ ms.locfileid: "53829298"
 
 通过选择这些布局面板之一来开始设计你的页面。 页面可以具有多个布局面板。 例如，可从 Grid 布局面板开始，然后将一个 StackPanel 添加到 Grid 中的某个区域，即可在该元素中垂直排列控件。
 
-以下布局面板是最常用的，不过还有一些其他布局面板。 在 Assets 面板中可以找到所有这些内容。
-
-- [网格](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [画布](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+以下布局面板是最常用的，不过还有一些其他布局面板。 在 Visual Studio 的“工具箱”中或 Blend for Visual Studio 的“资产”面板中可以找到它们。
 
 ### <a name="grid"></a>Grid
 
@@ -92,15 +80,7 @@ ms.locfileid: "53829298"
 
 也可以向布局控件添加对象。 布局控件功能不如布局面板那么丰富，在某些情况中这些控件可能很有用。
 
-以下布局控件是最常用的，不过还有一些其他布局控件。 在 Assets 面板中可以找到所有这些内容。
-
-- [边框](#Border)
-
-- [弹出项](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Viewbox](#viewbox)
+以下布局控件是最常用的，不过还有一些其他布局控件。 在 Visual Studio 的“工具箱”中或 Blend for Visual Studio 的“资产”面板中可以找到它们。
 
 ### <a name="border"></a>Border
 

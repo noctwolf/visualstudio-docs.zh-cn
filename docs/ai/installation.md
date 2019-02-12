@@ -11,12 +11,12 @@ ms.devlang: multiple
 ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5101d6b6ddca4a86e635fff70b52429888001a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 744b0861a1cd0f27974765822946f3c6986bdba6
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821096"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231943"
 ---
 # <a name="installation"></a>安装
 
@@ -199,21 +199,32 @@ pip3.5 install Theano==0.9.0
 若要安装 PyTorch，请在终端中运行以下命令：
 
 - **Windows**
-    - 尚没有官方滚轮程序包。 可以下载第三方 [Anaconda PyTorch 程序包](https://anaconda.org/pytorch/repo?type=all)。
-    - 将它解压缩到主目录，例如“C:\Users\test\pytorch”。
-    - 将“C:\Users\test\pytorch\Lib\site-packages”添加到 %PYTHONPATH% 环境变量。
+
+   尚没有官方滚轮程序包。 从 [Anaconda](https://anaconda.org/pytorch/repo?type=all) 或[加利福尼亚大学](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch)可以下载第三方程序包。
+
+   - 将它解压缩到主目录，例如 C:\Users\test\pytorch。
+   - 将 C:\Users\test\pytorch\Lib\site-packages 添加到 %PYTHONPATH% 环境变量。
+
+      ```bash
+      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+      pip3 install torchvision
+      ```
 
 - **macOS**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```
+
     > [!NOTE]
     > macOS 二进制文件不支持 CUDA，如果需要 CUDA，请从源提供程序进行安装
 
 - **Linux**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
     ```
+
     > [!NOTE]
     > 此单个程序包支持 GPU 和 CPU。
 

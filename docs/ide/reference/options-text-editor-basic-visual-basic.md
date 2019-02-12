@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8014ad72978a4b3ee37547a6660f739973ae4e46
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: ccf0e8d76aeaf1f6982d7b776abfd32609e1b3e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398242"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998256"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>“选项”>“文本编辑器”>“基本(Visual Basic)”>“高级”
 在“选项”（“工具”菜单）对话框中“文本编辑器”文件夹的“基本”文件夹内，“VB 专用”属性页包含以下属性：
@@ -40,18 +40,18 @@ ms.locfileid: "54398242"
 - 对 using 排序时将“System”指令排在第一位
 
    当你选择右键单击菜单中的“删除和排序 Using”命令后，它会对 `using` 指令进行排序，并将“System”命名空间置于列表顶部。
-   
+
 - 单独的 using 指令组
 
    当你选择右键单击菜单中的“删除和排序 Using”命令后，它会在具有相同根命名空间的指令组之间插入空行，以将 `using` 指令分隔开来。
-   
-- 建议对引用程序集中的类型使用 using 
-- 建议对 NuGet 包中的类型使用 using 
+
+- 建议对引用程序集中的类型使用 using
+- 建议对 NuGet 包中的类型使用 using
 
    选择这些选项时，[快速操作](../quick-actions.md)可用于安装 NuGet 包，并为未引用的类型添加 `using` 指令。
 
    ![用于在 Visual Studio 中安装 NuGet 包的快速操作](media/nuget-lightbulb.png)
-  
+
 
 ## <a name="highlighting"></a>Highlighting
 
@@ -77,7 +77,7 @@ ms.locfileid: "54398242"
 
 ## <a name="block-structure-guides"></a>块结构指南
 
-如果选中这些复选框，可以在代码中的大括号 ({}) 之间显示虚竖线。 这样一来，就可以轻松查看声明级构造和代码级构造的各个代码块了。
+如果你选中此选项，与结构化代码块对齐的竖线就会在编辑器中显示，这样你就能轻松识别各个代码块了。 例如，在 `Sub` 语句中的 `Sub` 和 `EndSub` 之间会出现一条线。
 
 ## <a name="editor-help"></a>编辑器帮助
 

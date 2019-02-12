@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c1e5da1b-cda1-4545-b46c-0440fba27485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2a9dabddaddaa6d19bbf6e73e2ddcb0011c559ea
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425356"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55012217"
 ---
 # <a name="understand-build-platforms"></a>了解生成平台
 
@@ -37,6 +37,6 @@ ms.locfileid: "32425356"
 
 ## <a name="see-also"></a>请参阅
 
-- [演练：生成应用程序](../ide/walkthrough-building-an-application.md)
+- [演练：构建应用程序](../ide/walkthrough-building-an-application.md)
 - [在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [编译和生成](../ide/compiling-and-building-in-visual-studio.md)

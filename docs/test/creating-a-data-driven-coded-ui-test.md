@@ -1,5 +1,5 @@
 ---
-title: 创建数据驱动的编码的 UI 测试
+title: 数据驱动的编码 UI 测试教程
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -7,15 +7,15 @@ helpviewer_keywords:
 - coded UI tests, data-driven
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 120ca4ac409641af7b3a2b303830288cbcb0d20a
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 28ebaad835888577a8616aab771ba30e4e29c61b
+ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270240"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55231982"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>创建数据驱动的编码的 UI 测试
 
@@ -59,7 +59,8 @@ ms.locfileid: "54270240"
    [TestMethod]
    public void CodedUITestMethod1()
    {
-       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       // To generate code for this test, select "Generate Code for Coded UI Test"
+       // from the shortcut menu and select one of the menu items.
        this.UIMap.AddNumbers();
    }
    ```
@@ -87,7 +88,6 @@ ms.locfileid: "54270240"
    ```csharp
    public void CodedUITestMethod1()
    {
-       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
        this.UIMap.AddNumbers();
        this.UIMap.ValidateSum();
    }
@@ -131,7 +131,6 @@ ms.locfileid: "54270240"
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
     public void CodedUITestMethod1()
     {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
         this.UIMap.AddNumbers();
         this.UIMap.ValidateSum();
     }
@@ -150,7 +149,7 @@ ms.locfileid: "54270240"
 
 ### <a name="step-4---use-the-data-in-the-coded-ui-test"></a>步骤 4 - 将数据用于编码的 UI 测试中
 
-1.  将 `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` 添加到 CodedUITest.cs 文件的顶部：
+1. 将 `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` 添加到 CodedUITest.cs 文件的顶部：
 
     ```csharp
     using System;
@@ -166,16 +165,16 @@ ms.locfileid: "54270240"
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;
     ```
 
-2.  将 `TestContext.DataRow[]` 添加至 `CodedUITestMethod1()` 方法（将使用数据源中的值）。 通过使用控件 `SearchProperties`，数据源值覆盖了分配给 UIMap 控件的常量：
+2. 将 `TestContext.DataRow[]` 添加至 `CodedUITestMethod1()` 方法（将使用数据源中的值）。 通过使用控件 `SearchProperties`，数据源值覆盖了分配给 UIMap 控件的常量：
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();this.UIMap.UICalculatorWindow.UIItemWindow21.UIItem2Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num2"].ToString();
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSumExpectedValues.UIItem2TextDisplayText = TestContext.DataRow["Sum"].ToString();
-        this.UIMap.ValidateSum();
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();
+       this.UIMap.UICalculatorWindow.UIItemWindow2.UIItem2Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num2"].ToString();
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSumExpectedValues.UIItem3TextDisplayText = TestContext.DataRow["Sum"].ToString();
+       this.UIMap.ValidateSum();
     }
     ```
 
@@ -197,15 +196,15 @@ ms.locfileid: "54270240"
 
 ### <a name="step-5---run-the-data-driven-test"></a>步骤 5 - 运行数据驱动的测试
 
-1.  通过再次运行测试来验证现在测试是数据驱动的。
+通过再次运行测试来验证现在测试是数据驱动的。
 
-     使用 .csv 文件中的值，你可以发现测试通过这三个迭代运行。 验证工作仍可进行，并且测试资源管理器中的测试应显示为通过。
+使用 .csv 文件中的值，你可以发现测试通过这三个迭代运行。 验证工作仍可进行，并且测试资源管理器中的测试应显示为通过。
 
 ## <a name="q--a"></a>问题解答
 
-###  <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a>其他数据源类型（如 SQL Express 或 XML）具有哪些数据源属性？
+### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a>其他数据源类型（如 SQL Express 或 XML）具有哪些数据源属性？
 
-你可以将下表中的示例数据源字符串复制到你的代码中并进行必要的自定义，然后就可以使用了。
+**答：** 你可以将下表中的示例数据源字符串复制到你的代码中并进行必要的自定义，然后就可以使用了。
 
 **数据源类型和属性**
 

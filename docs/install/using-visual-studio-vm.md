@@ -13,15 +13,15 @@ helpviewer_keywords:
 - visual studio
 author: PhilLee-MSFT
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f139c93eeb64a56f0bd422137417e5ad6e36cb11
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 415e108da2187b2e3b5057da6b9a3850bd3eb3ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836619"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54926743"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -35,7 +35,7 @@ ms.locfileid: "53836619"
 
 | 发行版本                                              | 版本                     |     产品版本      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019：预览版（预览版 1）                   |           企业         | 16.0.0 预览版 1 |
+|    Visual Studio 2019：预览版（预览版 2）                   |           企业         | 版本 16.0.0 预览版 2 |
 | Visual Studio 2017：最新（版本 15.9）                    |    Enterprise，Community     |      版本 15.9.4      |
 |         Visual Studio 2017：RTW                              |    Enterprise，Community     |      版本 15.0.20     |
 |   Visual Studio 2015：最新（更新 3）                      |    Enterprise，Community     |  版本 14.0.25431.01   |

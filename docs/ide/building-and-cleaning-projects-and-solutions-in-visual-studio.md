@@ -21,22 +21,22 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 25d9f278ab63ddfa4ffbbf72a4899ce99828b720
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349265"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54942748"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中生成和清理项目和解决方案
 
 通过本主题中的过程，学会生成、重新生成或清除解决方案中的所有/部分项目/项目项。 有关分步教程，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中生成和清除项目和解决方案](/visualstudio/mac/building-and-cleaning-projects-and-solutions)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中生成和清除项目和解决方案](/visualstudio/mac/building-and-cleaning-projects-and-solutions)。
 
 > [!NOTE]
 > 你的 Visual Studio 版本中的 UI 可能与此主题中描述的有所不同，具体取决于现用的设置。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具” > “导入和导出设置”，再选择“重置所有设置”。
@@ -70,7 +70,7 @@ ms.locfileid: "51349265"
 
 1.  在菜单栏上，依次选择“工具” > “选项”。
 
-2.  在“选项”对话框中，展开“项目和解决方案”节点，然后选择“生成和运行”页。
+2.  在“选项”对话框框中，展开“项目和解决方案”节点，然后选择“生成和运行”页。
 
      “生成和运行” > “项目和解决方案” > “选项”对话框随即打开。
 

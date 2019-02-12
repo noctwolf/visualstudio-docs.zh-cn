@@ -9,13 +9,13 @@ searchscope: VS Subscription
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.openlocfilehash: 414a7a9ef25740505e08da74cd4dcfce0fe11ce9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 01d1aebf03e71d90e31010a3a5610017c01e1f92
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49927224"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55003400"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的新增功能
 
@@ -33,7 +33,7 @@ ms.locfileid: "49927224"
 
   ![使用“批量添加”按钮添加多个用户](media/bulk-add-multiple-subscribers.png)
 
-* [**导出**](/visualstudio/subscriptions/exporting-subscriptions)：导出用户列表和有关其分配的详细信息。 希望跟踪分配和到期日期时，此类列表非常有用。
+* [**导出**](/visualstudio/subscriptions/exporting-subscriptions)：导出用户列表和分配详情。 希望跟踪分配和到期日期时，此类列表非常有用。
 
    ![使用“导出”按钮将订阅者列表导出到 Excel 中](media/export-subscriber-list-to-csv.png)
 
@@ -48,11 +48,11 @@ ms.locfileid: "49927224"
 
     ![添加新通知电子邮件地址](media/add-new-subscriber-notification-email.png)
 
-  * **通信首选项**：选择要用于发送分配电子邮件的语言。
+  * **通信偏好**：选择要在发送分配电子邮件时使用的语言。
 
     ![更改要在发送通知电子邮件时使用的语言](media/change-subscriber-communication-preference.png)
 
-  * **添加参考**：为你管理的订阅添加参考说明。
+  * **添加参考**：向你管理的订阅添加参考说明。
 
     ![向每个订阅添加自己的引用说明](media/add-subscriber-reference-notes.png)
 
@@ -60,7 +60,7 @@ ms.locfileid: "49927224"
 
   ![随时向任何用户或多个用户重新发送激活电子邮件](media/resend-subscriber-activation-emails.png)
 
-* [**筛选**](search-license.md)：组织和筛选订阅者数据，以最大程度地满足需求。
+* [**筛选器**](search-license.md)：组织和筛选订阅者数据，以最大程度地满足需求。
 
   ![基于可用字段筛选订阅者数据](media/filter-subscriber-data.png)
 
