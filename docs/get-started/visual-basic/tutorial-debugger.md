@@ -15,20 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bcdf55e8e28c479f611d9cea34d57d29249e13b
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: dc450217dc6b0055a14cccd02c471329870a74ac
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424455"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155523"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>教程：学习使用 Visual Studio 调试 Visual Basic 代码
 
 本文通过分步演练介绍了 Visual Studio 调试器的功能。 如果需要更加深入地了解调试器功能，请参阅[初探调试器](../../debugger/debugger-feature-tour.md)。 当你调试应用时，通常意味着运行附带有调试器的应用程序。 执行此操作时，调试器在运行过程中可提供许多方法让你查看代码的情况。 你可以逐步浏览代码、查看变量中存储的值、设置对变量的监视以查看值何时改变、检查代码的执行路径、查看代码分支是否正在运行等等。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../../debugger/debugging-absolute-beginners.md)。
-
-| | |
-|---------|---------|
-| ![视频的摄像机图标](../../install/media/video-icon.png "观看视频") | [观看有关调试的视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)，其中展示了类似的步骤。 |
 
 在本教程中，你将：
 

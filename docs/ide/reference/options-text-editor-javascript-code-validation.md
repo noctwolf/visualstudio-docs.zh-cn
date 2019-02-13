@@ -1,7 +1,6 @@
 ---
 title: 选项, 文本编辑器, JavaScript, 代码验证
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Code_Validation.JavaScript_Errors
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ece72f46500b67325250a6b13d4c79359e0873ac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6f42cda0f80261a0cf499f03e01d52e9a10ae475
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55068885"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925925"
 ---
 # <a name="options-text-editor-javascript-code-validation"></a>选项, 文本编辑器, JavaScript, 代码验证
 使用“代码验证”页的“选项”对话框修改影响 JavaScript 处理错误的方式的设置。 可以通过选择菜单栏上的“工具” > “选项”，然后展开“文本编辑器” > “JavaScript” > “代码验证”来访问“代码验证”页面。

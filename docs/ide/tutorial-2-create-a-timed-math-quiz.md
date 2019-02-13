@@ -1,7 +1,6 @@
 ---
 title: 教程 2：创建计时数学测验
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d8441620f9df135b2fbee51e2dfbbfc6e2f074
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c93ddfc85e318a2095f757c6131b151a5414c884
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943255"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956930"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>教程 2：创建计时数学测验
 
@@ -41,7 +40,7 @@ ms.locfileid: "54943255"
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|说明|
+|Title|说明​​|
 |-----------|-----------------|
 |[步骤 1：创建项目并向窗体添加标签](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|首先创建项目，更改属性并添加 `Label` 控件。|
 |[步骤 2：创建随机加法问题](../ide/step-2-create-a-random-addition-problem.md)|创建一道加法题，然后使用 `Random` 类生成随机数。|

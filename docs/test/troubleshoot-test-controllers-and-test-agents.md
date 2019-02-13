@@ -11,13 +11,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: a570909eff31c26ff1343de976d22faaa1b8dc47
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be34e52df0442e071e666da5e66eb31f041d2941
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042655"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922168"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>负载测试中测试控制器和测试代理的故障排除策略
 
@@ -44,7 +43,7 @@ ms.locfileid: "55042655"
 
 2.  打开 QTController.exe.config 文件。此文件位于控制器安装目录中。
 
-3.  在该文件的系统诊断部分中编辑 `EqtTraceLevel` 开关的项。 您的代码应该与下面的内容类似：
+3.  在该文件的系统诊断部分中编辑 `EqtTraceLevel` 开关的项。 你的代码应该与下面的内容类似：
 
     ```xml
     <system.diagnostics>

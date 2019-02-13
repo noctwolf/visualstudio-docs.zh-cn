@@ -3,7 +3,6 @@ title: 安装或升级问题疑难解答
 description: 有时，你难免遇到一些问题。 如果 Visual Studio 安装或升级失败，可在此页寻求帮助。
 ms.date: 08/01/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1196902df41ec9c465be948415f866280de62e32
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: edb6d9133fdf3a2a7a4109b9f438f86cc0cdec61
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939811"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931567"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 安装和升级问题疑难解答
 
@@ -49,7 +48,7 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 
 1. 关闭 Visual Studio 安装程序。
 2. 删除 Visual Studio 安装程序目录。 通常，该目录是 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`。
-3. 运行 Visual Studio 安装程序引导程序。 引导程序位于“下载”文件夹中，文件名格式为 `vs_[Visual Studio edition]__*.exe`。 如果找不到此应用程序，可以转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，然后单击你的 Visual Studio 版本所对应的“下载”，便可下载引导程序。 然后，运行此可执行文件，重置安装元数据。
+3. 运行 Visual Studio 安装程序引导程序。 引导程序位于“下载”文件夹中，文件名格式为 `vs_[Visual Studio edition]__*.exe`。 如果找不到此应用程序，可以转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页，然后单击你的 Visual Studio 版本所对应的“下载”，便可下载引导程序。 然后，运行此可执行文件，重置安装元数据。
 4. 尝试重新安装或更新 Visual Studio。 如果安装程序仍无法安装，请转到下一步。
 
 ### <a name="step-4---report-a-problem"></a>第 4 步 - 报告问题

@@ -1,7 +1,6 @@
 ---
 title: 解决方案和项目
 ms.date: 10/05/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewsolutionitem
@@ -24,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4f2d68920edad0b2c9e21c0897130b286180689
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f8302c517f28e32c154f688bd9f282070013f812
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55032968"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957824"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目
 
@@ -58,7 +57,7 @@ ms.locfileid: "55032968"
 
 Visual Studio 采用两种文件类型（.sln 和 .suo）来存储解决方案设置：
 
-|扩展名|name|说明|
+|扩展名|name|说明​​|
 |---------------|----------|-----------------|
 |.sln|Visual Studio 解决方案|将项目、项目项和解决方案项组织到解决方案中。|
 |.suo|解决方案用户选项|存储用户级别设置和自定义项，如断点。|

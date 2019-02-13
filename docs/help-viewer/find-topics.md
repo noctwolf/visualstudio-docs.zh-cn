@@ -1,7 +1,6 @@
 ---
 title: 搜索主题（帮助查看器）
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3a101cb18343ca80096b6adc43f54a9daae1a45
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f68bd5803d418f674007fff34aa0fa016c1804a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940812"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918580"
 ---
 # <a name="how-to-search-for-topics"></a>如何：搜索主题
 
@@ -45,7 +44,7 @@ ms.locfileid: "54940812"
 
 下表包括在帮助中进行搜索查询的一些基本规则和指南。
 
-|语法|说明|
+|语法|说明​​|
 |------------|-----------------|
 |区分大小写|搜索不区分大小写。 使用大写或小写字符设置搜索条件。 例如，“OLE”和“ole”返回相同的结果。|
 |字符组合|不能仅搜索单个字母 (a-z) 或单个数字 (0-9)。 如果尝试搜索某些保留字，如“and”、“from”和“with”，它们将被忽略。 有关详细信息，请参阅本主题后面的[搜索中忽略的字](#stopwords)。|

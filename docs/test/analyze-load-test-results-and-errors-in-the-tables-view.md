@@ -21,13 +21,12 @@ ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 47ae8101deb4682d4e236fae57a5dad510fe7302
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98e54e8e1bec7502e7401dc6a13a639e92c1a881
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936381"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941304"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在负载测试分析器的表视图中分析负载测试结果和错误
 
@@ -51,13 +50,13 @@ ms.locfileid: "54936381"
 
 下表列出了可用于分析负载测试运行的表。
 
-|表名称|说明|
+|表名称|说明​​|
 |-|-|
 |错误|显示在负载测试运行期间发生的错误的列表。 有关详细信息，请参阅[分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)和本主题中的[“错误”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table)。|
 |Pages|显示在负载测试运行期间访问的页的列表。 此表中的某些数据仅在负载测试完成后才可用。 有关详细信息，请参阅[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。|
 |请求|显示负载测试期间发出的各个请求的详细信息。 其中包括所有 HTTP 请求以及相关请求（如图像）。 有关详细信息，请参阅本主题中的[“请求”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table)。|
 |SQL 跟踪|显示 SQL 跟踪的结果。 此表仅在负载测试完成后、并且在测试期间使用了 SQL 跟踪的情况下才可用。 有关详细信息，请参阅本主题中的 [SQL 跟踪数据表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table)。|
-|测试|显示负载测试期间各个测试运行的详细信息。 有关详细信息，请参阅本主题中的[“测试”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table)。|
+|计数|显示负载测试期间各个测试运行的详细信息。 有关详细信息，请参阅本主题中的[“测试”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table)。|
 |阈值|显示在负载测试运行期间发生的阈值规则冲突的列表。 有关详细信息，请参阅[分析阈值规则冲突](../test/analyze-threshold-rule-violations-in-load-tests.md)。|
 |事务|显示负载测试运行期间发生的事务的列表。 有关详细信息，请参阅本主题中的[“事务”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-transactions-table)。|
 |代理|仅当负载测试使用测试控制器和测试代理时显示。 显示在负载测试运行期间使用的代理的列表。 “代理”表包含代理所测试的请求数以及这些请求中的失败请求数。 此外，“代理”表还包含代理所测试的负载测试测试组合中的测试数以及这些测试中的失败测试数。|
@@ -73,7 +72,7 @@ ms.locfileid: "54936381"
 
  下表列出了“请求”表中的列：
 
-|列|说明|默认情况下可见|
+|列|说明​​|默认情况下可见|
 |-|-|-|
 |**请求**|请求的 URL。 例如，home.html 或 orange-arrow.gif。|是|
 |**方案**|方案的名称。|是|
@@ -95,7 +94,7 @@ ms.locfileid: "54936381"
 
  下表列出了“测试”表中的列。
 
-|列|说明|默认情况下可见|
+|列|说明​​|默认情况下可见|
 |-|-|-|
 |**测试**|测试的名称。|是|
 |**方案**|方案的名称。|是|
@@ -119,7 +118,7 @@ ms.locfileid: "54936381"
 > [!NOTE]
 > 若要查看所有列，必须启用与活动的运行设置关联的“计时详细信息存储”属性。 有关详细信息，请参阅[如何：指定计时详细信息存储属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
 
-|列|说明|可见，但没有计时详细信息|
+|列|说明​​|可见，但没有计时详细信息|
 |-|-|-|
 |**事务**|事务名称。|是|
 |**方案**|方案的名称。|是|
@@ -145,7 +144,7 @@ ms.locfileid: "54936381"
 
  错误表中包含以下列：
 
-|列|说明|默认情况下可见|
+|列|说明​​|默认情况下可见|
 |-|-|-|
 |类型|错误类型。 例如，HttpError。|是|
 |子类型|错误的子类型。 例如，LoadTestException。|是|
@@ -163,7 +162,7 @@ ms.locfileid: "54936381"
 
 “负载测试错误”表包含以下列：
 
-|列|说明|
+|列|说明​​|
 |-|-|
 |**时间**|负载测试过程中发生错误的时间。|
 |**代理**|发生错误的代理计算机的名称。 使用测试控制器和测试代理运行负载测试时此设置很重要。 有关详细信息，请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。|

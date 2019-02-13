@@ -2,19 +2,18 @@
 title: R 的代码片段
 description: Visual Studio 中的 R 的代码片段提供快捷方式，可用于快速插入任意长度的代码块，有助于避免反复键入相似的代码。
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 0f7dbe2322ceedaf057db67b2c56411abb46a7a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964725"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956358"
 ---
 # <a name="code-snippets"></a>代码片段
 

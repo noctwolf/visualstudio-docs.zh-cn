@@ -4,23 +4,22 @@ description: 概述导航、代码分析、单元测试和其他功能，帮助�
 author: kuhlenh
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4181d7d84d1257f40a2e574944a722795f660469
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55484090"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920595"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 工作效率指南
 
-了解 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 如何提高开发人员的工作效率。 充分利用性能和生产效率改进，如：导航到反编译程序集、键入时的变量名称建议、“测试资源管理器”中的层次结构视图、“转到全部”(Ctrl+T) 导航到文件/类型/成员/符号声明、智能“异常帮助程序”、代码样式配置和执行、以及众多重构和代码修补程序。
+了解 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 如何提高开发人员的工作效率。 充分利用性能和生产效率改进，如：导航到反编译程序集、键入时的变量名称建议、“测试资源管理器”中的层次结构视图、“转到全部”(Ctrl+T) 导航到文件/类型/成员/符号声明、智能“异常帮助程序”、代码样式配置和执行、以及众多重构和代码修补程序。
 
 ## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>我已经习惯了不同扩展/编辑器/IDE 的键盘快捷方式
 
