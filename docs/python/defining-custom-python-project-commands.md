@@ -2,7 +2,6 @@
 title: 为 Python 项目定义自定义菜单命令
 description: 通过编辑项目和目标文件，可以将自定义命令添加到 Visual Studio 中的 Python 项目上下文菜单，用于调用可执行程序、脚本、模块、内联代码片段和 pip。
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d5ef751610510e6b167d2aa7975196d17cb1b72b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3d183041732b5170da4a7e8832346a93dec32451
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965557"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943085"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>为 Python 项目定义自定义命令
 
@@ -132,7 +131,7 @@ Visual Studio 中的某些 Python 项目模板已使用其 .targets 文件添加
 
 ### <a name="target-attributes"></a>Target 属性
 
-| 特性 | 必需 | 说明 |
+| 特性 | 必需 | 说明​​ |
 | --- | --- | --- |
 | name | 是 | Visual Studio 项目中命令的标识符。 必须将此名称添加到 `<PythonCommands>` 组，Python 子菜单上才会显示命令。 |
 | Label | 是 | Python 子菜单中出现的 UI 显示名称。 |
@@ -142,7 +141,7 @@ Visual Studio 中的某些 Python 项目模板已使用其 .targets 文件添加
 
 属性值均不区分大小写。
 
-| 特性 | 必需 | 说明 |
+| 特性 | 必需 | 说明​​ |
 | --- | --- | --- |
 | TargetType | 是 | 指定 Target 属性包含的内容以及如何将其与 Arguments 属性一并使用：<ul><li>**可执行文件：** 运行在 Target 中命名的可执行文件，附加 Arguments 的值，就如在命令行中直接输入一般。 值仅可包含项目名称且不可带有参数。</li><li>**脚本**：向 Target 中的文件名运行 python.exe，再执行 Arguments 中的值。</li><li>**模块**：在 Target 中运行后接模块名的 `python -m`，再运行 Arguments 中的值。</li><li>**代码**：运行 Target 中包含的内联代码。 这会忽略 Arguments 值。</li><li>**pip**：通过 Target 中的命令运行 `pip`，后接 Arguments；但如果 ExecuteIn 设置为“输出”，pip 则假定 `install` 命令并使用 Target 作为包名称。</li></ul> |
 | 目标 | 是 | 要使用的文件名、模块名、代码或 pip 命令（取决于 TargetType）。 |

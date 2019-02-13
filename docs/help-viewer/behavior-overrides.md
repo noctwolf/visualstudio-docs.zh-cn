@@ -1,7 +1,6 @@
 ---
 title: Help Content Manager 重写
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b73feb967e340f66eb243013add0b650916c956
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e5614f182b08c41a7ec2172fe080560a4f78b439
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961421"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918538"
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 重写
 
@@ -32,11 +31,11 @@ ms.locfileid: "54961421"
 
 ### <a name="registry-key-values"></a>注册表项值
 
-|注册表项值|类型|数据|说明|
+|注册表项值|类型|数据|说明​​|
 |------------------|----|----|-----------|
-|NewContentAndUpdateService|字符串|\<服务终结点的 http URL\>|定义唯一的服务终结点|
+|NewContentAndUpdateService|string|\<服务终结点的 http URL\>|定义唯一的服务终结点|
 |UseOnlineHelp|dword|`0` 指定本地帮助，`1` 指定联机帮助|定义联机或脱机帮助（默认）|
-|OnlineBaseUrl|字符串|\<服务终结点的 http URL\>|定义唯一的 F1 终结点|
+|OnlineBaseUrl|string|\<服务终结点的 http URL\>|定义唯一的 F1 终结点|
 |OnlineHelpPreferenceDisabled|dword|`0` 启用或 `1` 禁用联机帮助首选项|禁用联机帮助首选项|
 |DisableManageContent|dword|`0` 启用或 `1` 禁用 Help Viewer 中的“管理内容”选项卡|禁用“管理内容”选项卡|
 |DisableFirstRunHelpSelection|dword|`0` 启用或 `1` 禁用在 Visual Studio 首次启动时配置的帮助功能|禁用首次启动 Visual Studio 时的内容安装|
@@ -57,7 +56,7 @@ ms.locfileid: "54961421"
 
 可通过在注册表编辑器中设置注册表项值，控制以下两种行为。
 
-|任务|注册表项|“值”|数据|
+|任务|注册表项|值|数据|
 |----------|-----|------|----|
 |替代 BITS 作业优先级|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node（64 位计算机上）\Microsoft\Help\v2.3|BITSPriority|**foreground**、**high**、**normal** 或 **low**|
 |指向网络共享上的本地内容存储区|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|“*ContentStoreNetworkShare*”|

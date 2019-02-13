@@ -3,7 +3,6 @@ title: Windows 上 Visual Studio 中的 Python 支持
 titleSuffix: ''
 description: Visual Studio 中的 Python 功能摘要，这些功能让 Visual Studio 成为 Windows 上卓越的 Python IDE（也称为针对 Visual Studio 的 Python 工具，PTVS）。
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 699578e564999db55562abaad764cde80fc8b618
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 39d11b1b3bc17cd8a7329fd6f4c1a8010f461438
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55232060"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155833"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
@@ -30,7 +29,7 @@ Python 目前不支持在 Visual Studio for Mac 中使用，但可通过 Visual 
 若要开始使用 Python，请执行以下操作：
 
 - 按照[安装说明](installing-python-support-in-visual-studio.md)安装 Python 工作负载。
-- 通过本文中各部分的内容熟悉 Visual Studio 的 Python 功能。 还可以[观看视频系列（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)，了解 Visual Studio 中的 Python（共 22 分钟）。
+- 通过本文中各部分的内容熟悉 Visual Studio 的 Python 功能。
 - 阅读一个或多个指导如何创建项目的快速入门教程。 如果不确定，可先从[通过 Flask 创建 Web 应用](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)开始。
 - 按照[在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) 教程操作，获得完整的端到端体验。
 
@@ -44,9 +43,8 @@ Visual Studio 的“Python 环境”窗口（下方为其扩展后的加宽视�
 
 更多相关信息：
 
-- 视频（2 分 35 秒）：[管理 Python 环境](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
-- 文档：[管理 Python 环境](managing-python-environments-in-visual-studio.md)
-- 文档：[“Python 环境”引用](python-environments-window-tab-reference.md)
+- [管理 Python 环境](managing-python-environments-in-visual-studio.md)
+- [“Python 环境”引用](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>多种多样的编辑、IntelliSense 和代码理解
 
@@ -56,7 +54,6 @@ Visual Studio 具备出色的 Python 编辑器，包括语法着色、跨代码�
 
 更多相关信息：
 
-- 视频（2 分 30 秒）：[编辑 Python 代码](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - 文档：[编辑 Python 代码](editing-python-code-in-visual-studio.md)
 - 文档：[格式代码](formatting-python-code.md)
 - 文档：[重构代码](refactoring-python-code.md)
@@ -75,9 +72,8 @@ Visual Studio 还支持 REPL 中的 IPython/Jupyter，包括内联图、.NET 和
 
 更多相关信息：
 
-- 视频（2 分 22 秒：[Python 交互窗口](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
-- 文档：[交互窗口](python-interactive-repl-in-visual-studio.md)
-- 文档：[Visual Studio 中的 IPython](interactive-repl-ipython.md)
+- [交互窗口](python-interactive-repl-in-visual-studio.md)
+- [Visual Studio 中的 IPython](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>项目系统、项目模板和项模板
 
@@ -106,7 +102,6 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 项目不仅�
 
 更多相关信息：
 
-- 视频：[调试 Python（3 分 32 秒）](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
 - 文档：[调试 Python](debugging-python-in-visual-studio.md)
 - 文档：[Python/C++ 混合模式调试](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - 文档：[在 Linux 上进行远程调试](debugging-python-code-on-remote-linux-machines.md)
@@ -120,7 +115,6 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 项目不仅�
 
 更多相关信息：
 
-- 视频：[分析 Python（3 分 0 秒）](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
 - 文档：[Python 分析工具](profiling-python-code-in-visual-studio.md)
 - 常规 Visual Studio 功能文档：[分析功能导览](../profiling/profiling-feature-tour.md)。 （并非所有 Visual Studio 分析功能都可用于 Python）。
 
@@ -132,7 +126,6 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 项目不仅�
 
 更多相关信息：
 
-- 视频：[测试 Python（2 分 31 秒）](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
 - 文档：[Python 的单元测试工具](unit-testing-python-in-visual-studio.md)
 - 常规 Visual Studio 功能文档：[对代码进行单元测试](../test/unit-test-your-code.md)。
 
@@ -141,12 +134,6 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 项目不仅�
 Python 工作负载包括 Azure SDK for Python，用于简化在 Windows、Mac OS X 和 Linux 应用中使用 Azure 服务的过程。
 
 有关详细信息，请参阅 [Azure SDK for Python](/python/azure/?view=azure-python)。
-
-## <a name="python-training-on-microsoft-virtual-academy"></a>Microsoft Virtual Academy 上的 Python 培训
-
-|   |   |
-|---|---|
-| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | <ul><li>[Python 编程简介](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python 初学者：字符串和函数](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python 基础知识：列表和循环](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Python 热点问题](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>问题和解答
 
@@ -314,9 +301,3 @@ Visual Studio 2015 及更早版本可在 [visualstudio.microsoft.com/vs/older-do
 1. 需要 Windows 8 或更高版本。 使用服务器资源管理器中的附加调试器 (Python) 命令需要 [Azure SDK for .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 或更高版本。
 
 1. 需要 Windows 8 或更高版本。
-
-## <a name="additional-resources"></a>其他资源
-
-- [IIS 和 Python 之间的 WFastCGI 桥](https://pypi.org/p/wfastcgi) (pypi.org)
-- [Microsoft Virtual Academy 上的免费 Phthon 课程](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Microsoft Virtual Academy 上的“Python 最常见问题”](https://aka.ms/mva-top-python-questions)

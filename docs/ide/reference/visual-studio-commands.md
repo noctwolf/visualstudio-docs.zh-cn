@@ -1,7 +1,6 @@
 ---
 title: 命令
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, commands
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 015cc736ca9c6c430ca0312d55ab53b58794f01b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041212"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928213"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 
@@ -40,7 +39,7 @@ Visual Studio 命令的转义符是一个插入符号 (^) 字符，其表示紧�
 
 以下命令采用参数和/或开关。
 
-| 命令名： | 说明 |
+| 命令名： | 说明​​ |
 | - | - |
 | [添加现有项](../../ide/reference/add-existing-item-command.md) | 将现有文件添加到当前解决方案中并打开它。 |
 | [添加现有项目](../../ide/reference/add-existing-project-command.md) | 将现有项目添加到当前解决方案中。 |

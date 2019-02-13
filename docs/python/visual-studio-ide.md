@@ -2,7 +2,6 @@
 title: 面向 Python 开发人员的 Visual Studio 概述
 titleSuffix: ''
 ms.date: 12/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97b48daf123ea39cd00070fa95c4b488da9d9163
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 666f0df2e0b210b41155a5c1cd082e969d029e4e
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952946"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155846"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>欢迎使用 Visual Studio IDE | Python
 
@@ -136,4 +135,3 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 - 发现[更多 Visual Studio 功能](../ide/advanced-feature-overview.md)
 - 访问 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 - 阅读 [Visual Studio 博客](https://blogs.msdn.microsoft.com/visualstudio/)
-- 查看 [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) 上的免费 Visual Studio 课程

@@ -1,8 +1,7 @@
 ---
 title: Python 交互式窗口 (REPL)
 description: 使用交互式窗口 (REPL) 在 Visual Studio 中进行快速 Python 代码开发。
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 601527ee9fadb3ac9bda196df71ac75501635e9e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992381"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155651"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 交互窗口
 
@@ -26,7 +25,7 @@ Visual Studio 为每个 Python 环境提供交互读取-评估-打印-循环 (RE
 
 Visual Studio 有大量 Python REPL 模式可供选择：
 
-| REPL | 说明 | 编辑 | 调试 | 图像 |
+| REPL | 说明​​ | 编辑 | 调试 | 图像 |
 | --- | --- | --- | --- | --- |
 | 标准 | 默认 REPL，直接与 Python 通信 | 标准编辑（多行等）。 | 是，通过 `$attach` | No |
 | 调试 | 默认 REPL，与已调试的 Python 进程通信 | 标准编辑 | 仅调试 | No |
@@ -36,10 +35,6 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 本文介绍标准 REPL 模式和调试 REPL 模式。 有关 IPython 模式的详细信息，请参阅[使用 IPython REPL](interactive-repl-ipython.md)。
 
 有关包含示例的详细演练，包括与编辑器的交互（如 Ctrl+Enter），请参阅[教程步骤 3：使用交互 REPL 窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)。
-
-|   |   |
-|---|---|
-| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关交互窗口的信息，请[观看视频 (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567)（2 分 22 秒）。|
 
 ## <a name="open-an-interactive-window"></a>打开交互窗口
 
@@ -78,7 +73,7 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 
 <a name="meta-commands"></a>交互窗口还支持多个元命令。 所有元命令都以 `$` 开头，你可以键入 `$help` 获得元命令和 `$help <command>` 的列表，以获取特定命令的使用情况详细信息。
 
-| 元命令 | 说明 |
+| 元命令 | 说明​​ |
 | --- | --- |
 | `$$` | 插入注释，用于注释会话中的代码。 |
 | `$attach` | 将 Visual Studio 调试器附加到 REPL 窗口进程以启用调试。 |

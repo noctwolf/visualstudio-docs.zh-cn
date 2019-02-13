@@ -1,7 +1,6 @@
 ---
 title: 默认键盘快捷方式
 ms.date: 06/26/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd424618666529bb051c2d774ad195ea3162c1b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d387bbc54d1eb1619ddffbf7e96308834d125826
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954015"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911086"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷方式
 
@@ -1010,7 +1009,7 @@ ms.locfileid: "54954015"
 |-------------| - |
 |其他上下文菜单.或设计器上下文.隐藏方法窗格|**Ctrl+1**|
 
-##  <a name="windows-forms-designer"></a>Windows 窗体设计器
+##  <a name="windows-forms-designer"></a>Windows Forms Designer — Windows 窗体设计器
 
 |命令|键盘快捷键|
 |--------------| - |

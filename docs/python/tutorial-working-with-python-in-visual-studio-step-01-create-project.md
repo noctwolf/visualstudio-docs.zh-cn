@@ -3,7 +3,6 @@ title: Visual Studio 中的 Python 教程步骤 1，创建项目
 titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 功能的核心教程概述和第 1 步，包括系统必备组件和创建新的 Python 项目。
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc6f831d30f578cb03bbb760da410aefff312e99
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 23f843c745d672d9aa4f8dcbfec9c25f7ba98919
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231865"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155209"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>教程：在 Visual Studio 中使用 Python
 
@@ -79,5 +78,3 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
 - [Visual Studio 中的 Python 项目](managing-python-projects-in-visual-studio.md)。
 - [在 python.org 上了解 Python 语言](https://www.python.org)
 - [Python for Beginners](https://www.python.org/about/gettingstarted/)（面向初学者的 Python，python.org）
-- [Microsoft Virtual Academy 上的免费 Phthon 课程](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Microsoft Virtual Academy 上的“Python 最常见问题”](https://aka.ms/mva-top-python-questions)

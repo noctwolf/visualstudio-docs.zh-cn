@@ -1,7 +1,6 @@
 ---
 title: 面向 Visual Basic 开发人员的概述
 ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
@@ -12,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b9777fc9bbe22e394c06152808d35b3f0a549d4
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: ee53c59c0ff3fcc898e30551357733b9d8b71725
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690523"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155703"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>欢迎使用 Visual Studio IDE | Visual Basic
 
@@ -298,4 +297,3 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 - 发现[更多 Visual Studio 功能](../../ide/advanced-feature-overview.md)
 - 访问 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 - 阅读 [Visual Studio 博客](https://blogs.msdn.microsoft.com/visualstudio/)
-- 查看 [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) 上的免费 Visual Studio 课程

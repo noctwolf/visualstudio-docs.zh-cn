@@ -2,19 +2,18 @@
 title: 适用于解决方案资源管理器的文件嵌套规则
 ms.date: 05/25/2018
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 helpviewer_keywords:
 - file nesting
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 185aca140804ff8ce21f7a6075825c2a80816880
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024976"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955981"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>在解决方案资源管理器中自定义文件嵌套
 
