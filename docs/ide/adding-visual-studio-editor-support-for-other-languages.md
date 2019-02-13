@@ -14,15 +14,14 @@ ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: d2eafb2153ec900754a4d1c150612200f04e47f7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1e368d22a876ddb29770416ba5bbbb2a7995d576
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55071028"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950573"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>为其他语言添加 Visual Studio 编辑器支持
 
@@ -75,7 +74,7 @@ Visual Studio 2015 Update 1 及更高版本通过 [TextMate 语法](https://manu
 
 如适用，请在此基路径下添加下列文件夹：
 
-|文件夹名|说明|
+|文件夹名|说明​​|
 |-----------------|-----------------|
 |\\*\<language name>*|语言文件夹。 用语言的名称替换 *\<language name>*。 例如，*\Matlab*。|
 |*\Syntaxes*|语法文件夹。 包含语言的 .json 语法文件，如 Matlab.json。|

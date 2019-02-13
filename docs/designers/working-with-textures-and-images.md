@@ -1,7 +1,6 @@
 ---
 title: 使用纹理和图像
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd520d6a07722063ce1cc5f3c08e4592dbe08351
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5642a2e84766758b5fdf50bc652fd32b585427bf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010995"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933461"
 ---
 # <a name="work-with-textures-and-images"></a>使用纹理和图像
 
@@ -51,7 +50,7 @@ ms.locfileid: "55010995"
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|说明|
+|Title|说明​​|
 |-----------|-----------------|
 |[图像编辑器](../designers/image-editor.md)|介绍如何使用图像编辑器处理纹理和图像。|
 |[图像编辑器示例](../designers/image-editor-examples.md)|提供演示如何使用图像编辑器执行常见图像处理任务的主题的链接。|

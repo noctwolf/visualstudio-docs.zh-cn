@@ -1,7 +1,6 @@
 ---
 title: 用于排除错误的资源
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -94,12 +93,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4736feffbb9c1e81304ff1d47bb7c50c33e92b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 723a9e382256650ae70982d403c2c768fb1f1e8b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950437"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936327"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用于排除集成开发环境错误的资源
 

@@ -1,7 +1,6 @@
 ---
 title: 图像编辑器示例
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 9f887976-25ae-4099-b987-87ea97f98c58
 author: gewarren
@@ -9,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c59c739455a487fef6589b0604f04772777e1a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f9388744cd9ded83a82be96f4c3413ce88470168
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938427"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937329"
 ---
 # <a name="image-editor-examples"></a>图像编辑器示例
 
 本节文档中的文章包含演示如何使用图像编辑器的示例。
 
-|Title|说明|
+|Title|说明​​|
 |-----------|-----------------|
 |[如何：创建基本纹理](../designers/how-to-create-a-basic-texture.md)|演示如何创建基本纹理。|
 |[如何：创建和修改 MIP 级别](../designers/how-to-create-and-modify-mip-levels.md)|演示如何从图像生成 MIP 级别。|

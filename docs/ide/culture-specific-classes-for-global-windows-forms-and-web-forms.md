@@ -1,7 +1,6 @@
 ---
 title: 全球 Windows 窗体和 Web 窗体的区域性特定类
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Windows Forms], classes
@@ -29,12 +28,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c311e9c79e4f2861b8b52852ff7bb9b0217bf22c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3fdb46f79d6b300280c6743a368953bac5c5b02d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948032"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933894"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>全球 Windows 窗体和 Web 窗体的区域性特定类
 

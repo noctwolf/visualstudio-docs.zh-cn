@@ -12,15 +12,14 @@ ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 328d6e35116787f32b22e2ab265f94f497b01af5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 716366366bd9bb7514d042748b07dcb30a3567eb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997242"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923819"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>创建支持简单数据绑定的 Windows 窗体用户控件
 
@@ -121,7 +120,7 @@ ms.locfileid: "54997242"
 
 ## <a name="create-a-data-source-from-your-database"></a>从您的数据库创建数据源
 
-此步骤根据 Northwind 示例数据库中的 `Customers` 表，使用“数据源配置”向导创建数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何：安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
+此步骤根据 Northwind 示例数据库中的 `Customers` 表，使用“数据源配置”向导创建数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何： 安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 1.  若要打开**数据源**窗口，然后在**数据**菜单中，单击**显示数据源**。
 

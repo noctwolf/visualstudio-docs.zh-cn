@@ -1,7 +1,6 @@
 ---
 title: 预生成事件/生成后事件命令行对话框
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -34,12 +33,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa3ec42d90611c4618b786c0263ed0732dca093
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bef757222638d35c0f90d0c25e7836d49d1d1e1f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023283"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939809"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>预生成事件/生成后事件命令行对话框
 可以直接在编辑框中键入[“项目设计器”>“生成事件页”(C#)](../../ide/reference/build-events-page-project-designer-csharp.md)的预生成或生成后事件，或者可以从可用宏的列表中选择预生成和生成后宏。
@@ -72,7 +71,7 @@ ms.locfileid: "55023283"
 ### <a name="macros"></a>宏
  可以使用任何宏来指定文件位置，或在存在多种选择的情况下获取输入文件的实际名称。 这些宏不区分大小写。
 
-|宏|说明|
+|宏|说明​​|
 |-----------|-----------------|
 |`$(ConfigurationName)`|当前项目配置的名称，例如，“调试”。|
 |`$(OutDir)`|相对于项目目录的输出文件目录的路径。 这解析为输出目录属性的值。 它包括尾随反斜杠“\\”。|

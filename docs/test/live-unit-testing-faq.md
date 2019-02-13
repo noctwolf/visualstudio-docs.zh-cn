@@ -1,7 +1,6 @@
 ---
 title: Live Unit Testing 常见问题解答
-ms.date: 2017-10-03
-ms.prod: visual-studio-dev15
+ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: e6e6cf314ed477ade4093f90737e2e1a9c949c8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f3aefd7ec3f50538ed0986c0e6e80acf75b8e84f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935588"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947388"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常见问题解答
 
@@ -139,7 +138,7 @@ Live Unit Testing 尝试生成解决方案时为什么出现了以下错误：�
 
 将 `LiveUnitTesting_BuildRoot` 用户级环境变量设置为想要放置 Live Unit Testing 生成项目的路径。 
 
-## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>测试资源管理器与Live Unit Testing 测试运行 
+## <a name="test-explorer-vs-live-unit-testing-test-runs"></a>测试资源管理器与Live Unit Testing 测试运行
 从测试资源管理器窗口运行测试与在 Live Unit Testing 中运行测试有何不同之处？
 
 有几个区别：
@@ -158,7 +157,7 @@ Live Unit Testing 尝试生成解决方案时为什么出现了以下错误：�
 如何排除测试参与 Live Unit Testing？
 
 请参阅[在 Visual Studio 2017 Enterprise Edition 中使用 Live Unit Testing](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods) 一文的“包括和排除测试项目和测试方法”部分，了解特定于用户的设置。 想要针对特定的编辑会话运行一组特定的测试或者保留个人偏好设置时，包括和排除测试非常有用。
- 
+
 对于特定于解决方案的设置，可采用编程方式应用 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> 属性，避免由 Live Unit Testing 来检测方法、属性、类或结构。 此外，还可以在项目文件中将 `<ExcludeFromCodeCoverage>` 属性设置为 `true`，排除整个项目进行检测。 Live Unit Testing 仍将运行未经检测的测试，但其范围将不进行可视化。
 
 还可检查是否在当前应用程序域中加载 `Microsoft.CodeAnalysis.LiveUnitTesting.Runtime` 并禁用基于其的测试。 例如，可使用 xUnit 执行诸如以下所示的操作：

@@ -14,15 +14,14 @@ ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77e620a5611a912c3abf449241670fdb298036f3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5c970fe4cd1bbd87f54e10be85adf37554c10675
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934304"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950534"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>用 TableAdapter DBDirect 方法保存数据
 
@@ -74,7 +73,7 @@ ms.locfileid: "54934304"
 
 ## <a name="create-a-data-source-from-your-database"></a>从您的数据库创建数据源
 
-此步骤根据 Northwind 示例数据库中的 `Region` 表，使用“数据源配置”向导创建数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何：安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
+此步骤根据 Northwind 示例数据库中的 `Region` 表，使用“数据源配置”向导创建数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何： 安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ### <a name="to-create-the-data-source"></a>创建数据源
 

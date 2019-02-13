@@ -1,7 +1,6 @@
 ---
 title: 属性窗口
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - properties [Visual Studio], Properties Window
@@ -21,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1302b2e035bc884bd6b3e914b848eada79e45236
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de1330f0c7bf835a68fb003a227002207a0f2329
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014986"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928226"
 ---
 # <a name="properties-window"></a>属性窗口
 使用此窗口可查看和更改编辑器和设计器中选中对象的设计时属性和事件。 还可以使用“属性”窗口编辑和查看文件、项目和解决方案属性。 可以在“视图”菜单上找到“属性”窗口。 可以按 F4 打开它，也可以在“快速启动”窗口中键入“属性”打开。

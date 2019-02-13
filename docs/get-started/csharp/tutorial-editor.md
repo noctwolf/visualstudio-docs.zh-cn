@@ -3,7 +3,6 @@ title: C# 开发人员编辑功能简介
 description: 这一 10 分钟的 Visual Studio 代码编辑器简介演示了如何使用 Visual Studio 更轻松地编写、导航和理解 C# 代码。
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 author: gewarren
@@ -13,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc0e143b4ff84422a344caae1e50e88f47af5eeb
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: ebcf76f07eadaee6402facb4fa62a3ac309ebbac
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424559"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933153"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 

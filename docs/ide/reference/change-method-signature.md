@@ -1,7 +1,6 @@
 ---
 title: 重构方法签名
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -14,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc40f71db956e42a566cf3a49b924c601fbe28d1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 89af8235f897858094058981df52d6a3fec8a7d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971255"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934180"
 ---
 # <a name="change-a-method-signature-refactoring"></a>“更改方法签名”重构
 
@@ -61,7 +60,7 @@ ms.locfileid: "54971255"
 
    ![“更改签名”对话框](media/changesignature-dialog-cs.png)
 
-   | Button | 说明
+   | Button | 说明​​
    | ------ | ---
    | 上移/下移 | 在列表中向上和向下移动所选的参数
    | **移除** | 从列表删除所选的参数

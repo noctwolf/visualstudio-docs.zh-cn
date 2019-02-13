@@ -1,7 +1,6 @@
 ---
 title: “选项”对话框 ->“环境”->“键盘”
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Keyboard
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ccba63b30e2fd41441908d32b2988801e00e11
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6d369bae532fae40c2856cce88169137146d826d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54972740"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934635"
 ---
 # <a name="keyboard-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“键盘”
 使用此页设置键盘映射。 有关映射的详细信息，请参阅[标识并自定义键盘快捷方式](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。

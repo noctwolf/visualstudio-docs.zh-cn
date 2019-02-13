@@ -1,19 +1,18 @@
 ---
 title: 编写适用于 C/C++ 的单元测试
 ms.date: 10/09/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: eff82db5a7ca5c5a18c7d89017dfae892d209fbf
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 561b55ee961162adb37cd393cac9ecf8b78c5ade
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270042"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926783"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 
