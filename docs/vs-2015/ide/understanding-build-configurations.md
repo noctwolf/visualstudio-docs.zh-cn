@@ -1,14 +1,9 @@
 ---
 title: 了解生成配置 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - SolutionProperties.ActiveConfig
 - vs.build.newprojectconfiguration
@@ -30,13 +25,13 @@ ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1c7a6304683095b0a3db5c175535d7d28e38eecb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4cde65af7de5ff56c2420116c026c61793fcf983
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304130"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799305"
 ---
 # <a name="understanding-build-configurations"></a>了解生成配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49304130"
 您可以存储不同的解决方案配置和项目属性以便在各种生成中使用。 若要创建、选择、修改或删除配置，可以使用“配置管理器”。 若要打开它，请在菜单栏上依次选择“生成”和“配置管理器”，或在“快速启动”框中键入“配置”。 也可以使用“标准”工具栏上的“解决方案配置”列表，选择配置或打开“配置管理器”。  
   
 > [!NOTE]
->  如果在工具栏上找不到解决方案配置设置且无法访问“配置管理器”，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 开发设置可能适用。 有关详细信息，请参阅[如何：在应用 Visual Basic 开发者设置后管理配置](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。  
+>  如果在工具栏上找不到解决方案配置设置且无法访问“配置管理器”，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 开发设置可能适用。 有关详细信息，请参阅[如何：管理配置应用的 Visual Basic 开发人员设置](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。  
   
  默认情况下，调试和发布配置包含在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模板创建的项目中。 调试配置支持应用的调试，而发布配置生成可部署的应用版本。 有关详细信息，请参阅[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 还可以创建自定义解决方案配置和项目配置。 有关详细信息，请参阅[如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)。  
   
@@ -95,6 +90,3 @@ ms.locfileid: "49304130"
  [解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)   
  [C/C++ 生成参考](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   
  [Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)
-
-
-

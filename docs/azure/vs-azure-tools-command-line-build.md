@@ -4,18 +4,17 @@ description: 为 Azure 构建的命令行
 author: ghogen
 manager: jillfra
 assetId: 94b35d0d-0d35-48b6-b48b-3641377867fd
-ms.prod: visual-studio-dev15
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 713e9ac777a29ed4cb5de07c51f733a2b375e0e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc65d64f4dad2ac38c1f0c64ce6c7297d3c37d3a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139310"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945256"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>通过命令行生成 Azure 项目
 通过使用 Microsoft 生成引擎 (MSBuild)，可以在未安装 Visual Studio 的生成实验室环境中生成产品。 MSBuild 对可扩展且 Microsoft 完全支持的项目文件使用 XML 格式。 通过使用 MSBuild 文件格式，可以描述必须为一个或多个平台和配置生成的项目。

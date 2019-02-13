@@ -18,7 +18,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54779019"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>如何：收集行级别采样数据
+# <a name="how-to-collect-line-level-sampling-data"></a>如何：收集行级采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 行级采样是探查器确定占用大量处理器时间的函数在代码中的位置，如具有高独占样本的函数，处理器需要耗费大量时间。  

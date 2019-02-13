@@ -1,14 +1,9 @@
 ---
 title: MSBuild 条件 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 9d7aa308-b667-48ed-b4c9-a61e49eb0a85
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba55fca6e34cb93af257f32f33df7b7b8c6d6045
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cd5fb6f70504fd89c0d08f7a8aa760b3c7b68323
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286307"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758327"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 条件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +30,13 @@ ms.locfileid: "49286307"
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 支持一组特定的条件，只要允许使用 `Condition` 属性，便应用这些条件。 下表对这些条件进行了说明。  
   
-|条件|描述|  
+|条件|说明​​|  
 |---------------|-----------------|  
-|'`stringA`' == '`stringB`'|如果 `stringA` 等于 `stringB`，则计算结果为 `true`。<br /><br /> 例如：<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> 对于简单的字母数字字符串或布尔值，不需要单引号。 但对于空值，单引号是必需的。|  
-|'`stringA`' != '`stringB`'|如果 `stringA` 不等于 `stringB`，则计算结果为 `true`。<br /><br /> 例如：<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> 对于简单的字母数字字符串或布尔值，不需要单引号。 但对于空值，单引号是必需的。|  
+|'`stringA`' == '`stringB`'|如果 `stringA` 等于 `stringB`，则计算结果为 `true`。<br /><br /> 例如:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> 对于简单的字母数字字符串或布尔值，不需要单引号。 但对于空值，单引号是必需的。|  
+|'`stringA`' != '`stringB`'|如果 `stringA` 不等于 `stringB`，则计算结果为 `true`。<br /><br /> 例如:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> 对于简单的字母数字字符串或布尔值，不需要单引号。 但对于空值，单引号是必需的。|  
 |\<, >, \<=, >=|计算操作数的数值。 如果关系评估为 true，则返回 `true`。 操作数的计算结果必须为十进制或十六进制数。 十六进制数必须以“0x”开头。 **注意：** 在 XML 中，必须对字符 `<` 和 `>` 进行转义。 符号 `<` 表示为 `<`。 符号 `>` 表示为 `>`。|  
-|Exists('`stringA`')|如果存在名为 `stringA` 的文件或文件夹，则计算结果为 `true`。<br /><br /> 例如：<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> 对于简单的字母数字字符串或布尔值，不需要单引号。 但对于空值，单引号是必需的。|  
-|HasTrailingSlash('`stringA`')|如果指定的字符串末尾包含反斜杠 (\\) 或正斜杠 (/) 字符，则计算结果为 `true`。<br /><br /> 例如：<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> 对于简单的字母数字字符串或布尔值，不需要单引号。 但对于空值，单引号是必需的。|  
+|Exists('`stringA`')|如果存在名为 `stringA` 的文件或文件夹，则计算结果为 `true`。<br /><br /> 例如:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> 对于简单的字母数字字符串或布尔值，不需要单引号。 但对于空值，单引号是必需的。|  
+|HasTrailingSlash('`stringA`')|如果指定的字符串末尾包含反斜杠 (\\) 或正斜杠 (/) 字符，则计算结果为 `true`。<br /><br /> 例如:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> 对于简单的字母数字字符串或布尔值，不需要单引号。 但对于空值，单引号是必需的。|  
 |!|如果操作数计算结果为 `false`，则计算结果为 `true`。|  
 |And|如果两个操作数计算结果均为 `true`，则计算结果为 `true`。|  
 |Or|如果至少一个操作数计算结果为 `true`，则计算结果为 `true`。|  
@@ -52,6 +47,3 @@ ms.locfileid: "49286307"
  [MSBuild 参考](../msbuild/msbuild-reference.md)   
  [条件构造](../msbuild/msbuild-conditional-constructs.md)   
  [演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
-
-
-

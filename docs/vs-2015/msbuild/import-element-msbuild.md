@@ -1,14 +1,9 @@
 ---
 title: Import 元素 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Import
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 575fd2e83abd309b67e6e1684fd38b8d5c9953ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b7aee698498fa59c4dc6fee66f89b496f8b21f34
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248464"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804035"
 ---
 # <a name="import-element-msbuild"></a>Import 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49248464"
   
 ### <a name="attributes"></a>特性  
   
-|特性|描述|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`Project`|必需的特性。<br /><br /> 要导入的项目文件的路径。 该路径可以包含通配符。 匹配文件按排序顺序导入。 使用此功能时，只需通过将代码文件添加到目录，即可将代码添加到项目。|  
 |`Condition`|可选特性。<br /><br /> 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
@@ -62,7 +57,7 @@ ms.locfileid: "49248464"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明​​|  
 |-------------|-----------------|  
 |[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件必需的根元素。|  
 |[ImportGroup](../msbuild/importgroup-element.md)|包含在可选条件下进行分组的 `Import` 元素的集合。|  
@@ -123,6 +118,3 @@ ms.locfileid: "49248464"
 ## <a name="see-also"></a>请参阅  
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)   
  [如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
-
-
-

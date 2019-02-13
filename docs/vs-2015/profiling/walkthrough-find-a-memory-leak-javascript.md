@@ -1,14 +1,9 @@
 ---
-title: 演练：查找内存泄漏 (JavaScript) | Microsoft Docs
-ms.custom: ''
+title: 演练：查找内存泄漏 (JavaScript) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744953"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780929"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>演练：查找内存泄漏 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +219,7 @@ ms.locfileid: "51744953"
   
     - 此对象是快照 #2 中的剩余对象，说明可能存在内存泄漏。  
   
-      此时对该应用的一些了解可提供帮助：选择 **“泄漏内存”** 按钮应能移除 DIV 元素和添加元素，因此代码似乎不起作用（也就是说，泄漏了内存）。 下一部分将说明如何修复此问题。  
+      对应用程序的一些了解可在此时帮助：选择**泄漏内存**按钮应能移除 DIV 元素和添加元素，因此代码似乎不起作用 （也就是说，泄漏了内存）。 下一部分将说明如何修复此问题。  
   
     > [!TIP]
     >  有时，定位与 `Global` 对象相关的对象可能有助于确定此问题。 为此，请打开标识符的快捷菜单，然后选择 **“在根视图中显示”**。  
@@ -293,6 +288,3 @@ ms.locfileid: "51744953"
   
 ## <a name="see-also"></a>请参阅  
  [“JavaScript 内存”](../profiling/javascript-memory.md)
-
-
-

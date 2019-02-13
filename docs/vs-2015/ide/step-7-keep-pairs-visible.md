@@ -1,25 +1,20 @@
 ---
-title: 步骤 7：保持对可见 | Microsoft Docs
-ms.custom: ''
+title: 步骤 7：保持对可见 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1b796fa9735337b5cc8f8cb8d955b33bc6a77e76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cb65f5b45c34672679f88c7f6ba12f972f0e0388
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189002"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766308"
 ---
 # <a name="step-7-keep-pairs-visible"></a>步骤 7：保持对可见
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,6 +64,3 @@ ms.locfileid: "49189002"
 -   若要转到下一个教程步骤，请参阅[步骤 8：添加方法以验证玩家是否获胜](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)。  
   
 -   若要返回到上一个教程步骤，请参阅[步骤 6：添加计时器](../ide/step-6-add-a-timer.md)。
-
-
-

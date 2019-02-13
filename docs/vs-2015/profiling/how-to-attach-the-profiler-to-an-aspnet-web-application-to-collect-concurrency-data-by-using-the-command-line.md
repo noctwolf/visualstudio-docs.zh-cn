@@ -1,25 +1,20 @@
 ---
-title: 如何：使用命令行将探查器附加到 ASP.NET Web 应用程序中以收集并发数据 | Microsoft Docs
-ms.custom: ''
+title: 如何：将 Profiler 附加到 ASP.NET Web 应用程序以使用命令行收集并发数据 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 0e215fdd-55f8-43ef-9534-06542eefe223
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ea6f642f3178e06127dc21bc115d70c68525bf0e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6340b30f393fc2690a76febf335883b0ebf6f6ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750140"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801758"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 ASP.NET Web 应用程序中以收集并发数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "51750140"
 
      可将下表中的任意选项与 **/start** 选项一起使用。  
 
-   |                               选项                               |                                                                     描述                                                                      |
+   |                               选项                               |                                                                     说明​​                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` |                           指定要向探查器授予访问权限的帐户的可选域和用户名。                           |
    |           [/crosssession](../profiling/crosssession.md)            |                                               启用其他登录会话中的进程分析。                                                |
@@ -68,7 +63,7 @@ ms.locfileid: "51750140"
 
 -   下表中的 VSPerfCmd 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
-    |选项|描述|  
+    |选项|说明​​|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
@@ -90,6 +85,3 @@ ms.locfileid: "51750140"
 ## <a name="see-also"></a>请参阅  
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [使用 VSPerfASPNETCmd 进行快速网站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 代码片段选择器 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: f0862d48-fbbc-4cfe-b228-24492d5c89c4
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 328ed2afe4c942c2db16ebca214b7a3dfa631138
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789824"
 ---
 # <a name="code-snippet-picker"></a>代码段选择器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,6 +60,3 @@ ms.locfileid: "49845289"
  [Visual Basic IntelliSense 代码片段](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [在代码中设置书签](../../ide/setting-bookmarks-in-code.md)   
  [如何：使用外侧代码片段](../../ide/how-to-use-surround-with-code-snippets.md)
-
-
-

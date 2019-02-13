@@ -1,25 +1,20 @@
 ---
-title: 步骤 5：添加标签引用 | Microsoft Docs
-ms.custom: ''
+title: 步骤 5：添加标签引用 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 829911bc2f08010b9e0d3d9c710862097720d4df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: baae597f606b6333f15ba114d31af2cb0cf28836
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285217"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833660"
 ---
 # <a name="step-5-add-label-references"></a>步骤 5：添加标签引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49285217"
      [!code-csharp[VbExpressTutorial4Step5#5](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs#5)]
      [!code-vb[VbExpressTutorial4Step5#5](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb#5)]  
   
-     这些引用变量看上去类似于你之前用来向窗体添加对象（如 `Timer` 对象、`List` 对象和 `Random` 对象）的语句。 但是，这些语句不会导致窗体中显示两个额外的标签控件，因为这两个语句中都没有 `new` 关键字。 没有 `new` 关键字，就不会创建对象。 这就是将 `firstClicked` 和 `secondClicked` 称为引用变量的原因：它们只跟踪（或引用）`Label` 对象。  
+     这些引用变量看上去类似于你之前用来向窗体添加对象（如 `Timer` 对象、`List` 对象和 `Random` 对象）的语句。 但是，这些语句不会导致窗体中显示两个额外的标签控件，因为这两个语句中都没有 `new` 关键字。 没有 `new` 关键字，就不会创建对象。 这就是 `firstClicked` 和 `secondClicked` 被称为引用变量的原因：它们只跟踪 （或，请参阅）`Label`对象。  
   
      当某变量不跟踪对象时，将设置为特殊的保留值：`null`（Visual C# 中）或 `Nothing`（Visual Basic 中）。 因此，当程序启动时，`firstClicked` 和 `secondClicked` 都设置为 `null` 或 `Nothing`，这意味着两个变量不会跟踪任何对象。  
   
@@ -56,6 +51,3 @@ ms.locfileid: "49285217"
 -   若要转到下一个教程步骤，请参阅[步骤6：添加计时器](../ide/step-6-add-a-timer.md)。  
   
 -   若要转到下一个教程步骤，请参阅[步骤 4：向每个标签添加一个 Click 事件处理程序](../ide/step-4-add-a-click-event-handler-to-each-label.md)。
-
-
-

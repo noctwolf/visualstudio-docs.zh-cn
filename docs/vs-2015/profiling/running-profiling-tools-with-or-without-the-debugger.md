@@ -74,7 +74,7 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
   
 1. 在 Visual Studio 中打开项目。  
   
-2. 在“调试”菜单上，选择“性能探查器...”快捷键ALT + F2  
+2. 在“调试”菜单上，选择“性能探查器...”（快捷键：Alt + F2）。  
   
 3. 在诊断启动页上，选择要在会话中运行的一个或多个工具。 将仅显示适用于项目类型、操作系统和编程语言的工具。 选择诊断工具时，将禁用对不能在同一诊断会话中运行的工具的选择。 对于 C# Windows 通用应用，你的选择可能如下所示：  
   
@@ -125,17 +125,17 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
  要在远程 PC 或平板电脑上运行诊断会话，需要在远程目标上安装和运行 Visual Studio 远程工具。 对于桌面应用，请参阅[远程调试](../debugger/remote-debugging.md)。  对于 Windows 通用应用，请参阅[在远程计算机上运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>诊断开发团队的博客文章和 MSDN 文章  
- [MSDN 杂志：在 Visual Studio 2015 中进行调试的同时分析性能](https://msdn.microsoft.com/magazine/dn973013.aspx)  
+ [MSDN 杂志：在 Visual Studio 2015 中调试时分析性能](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
  [MSDN 杂志：使用 IntelliTrace 更快地诊断问题](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
  [博客文章：使用 Visual Studio 2015 中的内存使用率工具诊断事件处理程序漏洞](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
   
- [视频：使用 Microsoft Visual Studio Ultimate 2015 中的 IntelliTrace 进行历史记录调试](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [视频：使用 Microsoft Visual Studio Ultimate 2015 中的 IntelliTrace 进行历史调试](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
  [视频：使用 Visual Studio 2015 调试性能问题](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [性能提示：使用 Visual Studio 调试时快速查看性能信息](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [性能提示：使用 Visual Studio 进行调试时的性能信息概览](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
  [Visual Studio 2015 中的“诊断工具”调试器窗口](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   

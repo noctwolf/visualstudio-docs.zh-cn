@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fdd69b83702b07aae8a1c39c6c9298201c2f048
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b738a419c93e1741fd2567fb18c9998beb181bd7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862161"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55040627"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 部署中特定错误的疑难解答
 本文列出了在部署时可能发生的以下常见错误[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，并提供了步骤来解决每个问题。  
@@ -104,7 +104,7 @@ ms.locfileid: "53862161"
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>错误消息：无法创建网站\<站点 >。 未安装与 FrontPage 服务器扩展进行通信的组件。  
  确保您有 Microsoft Visual Studio Web 创作组件从发布在计算机上安装。 对于 Express 用户，默认情况下未安装此组件。 有关详细信息，请参阅 [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310)。  
 
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>错误消息：找不到文件 Microsoft.Windows.Common 的控件，版本 = 6.0.0.0，区域性 = *，PublicKeyToken = 6595b64144ccf1df，ProcessorArchitecture =\*，类型 = win32  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>错误消息： 找不到文件 Microsoft.Windows.Common 的控件，版本 = 6.0.0.0，区域性 = *，PublicKeyToken = 6595b64144ccf1df，ProcessorArchitecture =\*，类型 = win32  
  当你尝试发布启用了视觉样式的 WPF 应用程序时，会出现此错误消息。 若要解决此问题，请参阅[如何：发布已启用视觉样式的 WPF 应用程序](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)  
 
 ## <a name="using-mage"></a>使用 Mage  
@@ -123,7 +123,7 @@ ms.locfileid: "53862161"
  下表显示了一些常见的错误消息，在用户安装时，可能会收到客户端计算机用户[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 每个错误消息的最可能原因的错误说明旁边列出。  
 
 
-| 错误消息 | 说明 |
+| 错误消息 | 说明​​ |
 | - | - |
 | 无法启动应用程序。 请联系应用程序发布者。<br /><br /> 无法启动该应用程序。 与应用程序供应商联系以获得帮助。 | 这些是无法启动该应用程序，并可在任何其他特定原因时出现一般错误消息。 通常，应用程序以某种方式损坏，这意味着或的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]存储已损坏。 |
 | 无法继续。 应用程序的格式不正确。 与应用程序发布者联系以获得帮助。<br /><br /> 应用程序验证未成功。 无法继续。<br /><br /> 无法检索应用程序文件。 部署中已损坏的文件。 | 在部署中的清单文件之一是语法上无效，或包含不能为与相应的文件进行对帐的哈希。 此错误也可能表示嵌入在程序集中的清单已损坏。 重新创建你的部署和重新编译应用程序，或查找并在清单中手动修复错误。 |

@@ -1,14 +1,9 @@
 ---
 title: 预生成事件/生成后事件命令行对话框 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
 - vb.ProjectPropertiesBuildEventsBuilder
@@ -38,13 +33,13 @@ ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f4c2f0297195dc1a9be23a1dd8aca980a6e32958
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d3e6597e8b288e85c6bd49d3c8e843fd464bf094
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202509"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753373"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>预生成事件/生成后事件命令行对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ ms.locfileid: "49202509"
 > [!NOTE]
 >  在运行 .bat 文件的所有生成后命令之前添加 `call` 语句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
   
- **宏**  
+ 宏  
  展开编辑框，显示要插入到命令行编辑框的宏列表。  
   
  宏表格  
@@ -74,7 +69,7 @@ ms.locfileid: "49202509"
 ### <a name="macros"></a>宏  
  可以使用任何宏来指定文件位置，或在存在多种选择的情况下获取输入文件的实际名称。 这些宏不区分大小写。  
   
-|宏|描述|  
+|宏|说明​​|  
 |-----------|-----------------|  
 |`$(ConfigurationName)`|当前项目配置的名称，例如，“调试”。|  
 |`$(OutDir)`|相对于项目目录的输出文件目录的路径。 这解析为输出目录属性的值。 它包括尾随反斜杠“\\”。|  
@@ -101,6 +96,3 @@ ms.locfileid: "49202509"
  [“项目设计器”->“生成事件”页 (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)   
  [如何：指定生成事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [如何：指定生成事件 (C#)](../../ide/how-to-specify-build-events-csharp.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
@@ -16,13 +11,13 @@ ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9a2ca3a14c1e4e35da4e8cddfdecb0346740286a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 56c7e5a5a02f2ef5c114665d358e86d768a24a44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837758"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756566"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -196,7 +191,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|说明​​|  
 |-----------|-----------------|  
 |[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|演示如何只使用文本编辑器以增量方式创建基本项目文件。|  
 |[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)|介绍 MSBuild 的构建基块，并演示如何在不关闭 Visual Studio IDE 的情况下编写、操作和调试 MSBuild 项目。|  
@@ -216,8 +211,3 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  词汇表  
  定义常见 MSBuild 术语。
-
-
-
-
-

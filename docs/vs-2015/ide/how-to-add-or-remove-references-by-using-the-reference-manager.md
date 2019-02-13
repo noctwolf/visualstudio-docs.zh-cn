@@ -1,14 +1,9 @@
 ---
-title: 如何：使用引用管理器添加或删除引用 | Microsoft Docs
-ms.custom: ''
+title: 如何：添加或删除引用通过使用引用管理器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
 helpviewer_keywords:
@@ -27,13 +22,13 @@ ms.assetid: 1aabb520-99b0-46c6-9368-21b4d84793eb
 caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917534"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756981"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -159,16 +154,16 @@ ms.locfileid: "49917534"
   
  可以通过两种方式在 Visual Studio 中生成 WinMD 文件：  
   
-- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用托管项目**：[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用项目可通过设置“项目属性”|“输出类型”=“WinMD 文件”来输出 WinMD 二进制文件。 WinMD 文件名必须是其中包含的所有命名空间的超集命名空间。 例如，如果项目包括命名空间 A.B 和 A.B.C，则其输出的 WinMD 的可能名称为 A.winmd 和 A.B.winmd。 如果用户输入与项目中的命名空间集不相交的“项目属性”|“程序集名称”或“项目属性”|“命名空间值”，或者项目中没有超集命名空间，则将生成一个生成警告：“A.winmd”不是此程序集的有效 .winmd 文件名。 Windows 元数据文件中的所有类型必须存在于文件名的子命名空间中。 无法在运行时查找文件名子命名空间中不存在的类型。 在此程序集中，最小的公共命名空间为“CSWSClassLibrary1”。 桌面 Visual Basic 或 Visual C# 项目只能使用通过 [!INCLUDE[win8](../includes/win8-md.md)] SDK 生成的 WinMD（也称为第一方 WinMD），无法生成 WinMD。  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用托管项目**：[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用项目可通过设置“项目属性”|“输出类型”=“WinMD 文件”来输出 WinMD 二进制文件。 WinMD 文件名必须是其中包含的所有命名空间的超集命名空间。 例如，如果项目包括命名空间 A.B 和 A.B.C，则其输出的 WinMD 的可能名称为 A.winmd 和 A.B.winmd。 如果用户输入项目属性&#124;程序集名称或项目属性&#124;不相交的命名空间在项目中的组的 Namespace 值或在项目中没有超集命名空间，生成一个生成警告：A.winmd 不是此程序集的有效.winmd 文件名。 Windows 元数据文件中的所有类型必须存在于文件名的子命名空间中。 无法在运行时查找文件名子命名空间中不存在的类型。 在此程序集中，最小的公共命名空间为“CSWSClassLibrary1”。 桌面 Visual Basic 或 Visual C# 项目只能使用通过 [!INCLUDE[win8](../includes/win8-md.md)] SDK 生成的 WinMD（也称为第一方 WinMD），无法生成 WinMD。  
   
-- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用本机项目**：本机 WinMD 文件仅包含元数据。 它的实现存在于单独 DLL 文件中。 若要生成本机二进制文件，可在“新建项目”对话框中选择“Windows 运行时组件”项目模板，或者从空项目开始并修改项目属性以生成 WinMD 文件。 如果项目中包含不相交的命名空间，则将出现生成错误，告知用户合并命名空间或运行 MSMerge 工具。  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用本机项目**:本机 WinMD 文件仅包含元数据。 它的实现存在于单独 DLL 文件中。 若要生成本机二进制文件，可在“新建项目”对话框中选择“Windows 运行时组件”项目模板，或者从空项目开始并修改项目属性以生成 WinMD 文件。 如果项目中包含不相交的命名空间，则将出现生成错误，告知用户合并命名空间或运行 MSMerge 工具。  
   
   “Windows”选项卡包括两个子组。  
   
 ### <a name="core-subgroup"></a>“核心”子组  
  “核心”子组列出目标 Windows 版本的 SDK 中的所有 WinMD（对于 Windows 运行时元素）。  
   
- 默认情况下，[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用项目在项目创建时包含对 [!INCLUDE[win8](../includes/win8-md.md)] SDK 中所有 WinMD 的引用。 在托管项目中，“解决方案资源管理器”中“引用”文件夹下的只读节点指示对整个 [!INCLUDE[win8](../includes/win8-md.md)] SDK 的引用。 因此，引用管理器中的“核心”子组不从 [!INCLUDE[win8](../includes/win8-md.md)] SDK 枚举任何程序集，而是显示消息：“已引用 Windows SDK。 请使用对象浏览器浏览 Windows SDK 中的引用”。  
+ 默认情况下，[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用项目在项目创建时包含对 [!INCLUDE[win8](../includes/win8-md.md)] SDK 中所有 WinMD 的引用。 在托管项目中，“解决方案资源管理器”中“引用”文件夹下的只读节点指示对整个 [!INCLUDE[win8](../includes/win8-md.md)] SDK 的引用。 相应地，在引用管理器的核心子组不会枚举任何程序集从[!INCLUDE[win8](../includes/win8-md.md)]SDK，而是显示一条消息：“已引用 Windows SDK。 请使用对象浏览器浏览 Windows SDK 中的引用”。  
   
  在桌面项目中，默认情况下不显示“核心”子组。 若要添加 Windows 运行时，可打开项目节点的快捷菜单，选择“卸载项目”，添加以下代码片段，然后重新打开项目（在项目节点上选择“重新加载项目”）。 调用“引用管理器”对话框时，将显示“核心”子组。  
   
@@ -221,8 +216,5 @@ ms.locfileid: "49917534"
  “引用管理器”对话框中的搜索栏在处于焦点的选项卡上运行。 例如，在“解决方案”选项卡处于焦点时，如果用户在搜索栏中键入“System”，则除非解决方案具有包含“System”的项目名称，否则搜索不会返回任何结果。  
   
 ## <a name="see-also"></a>请参阅  
- [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [(NIB) 如何：添加或删除引用通过使用添加引用对话框](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [管理项目中的引用](../ide/managing-references-in-a-project.md)
-
-
-

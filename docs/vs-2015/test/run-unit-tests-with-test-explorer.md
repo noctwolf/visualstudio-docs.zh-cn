@@ -1,26 +1,21 @@
 ---
 title: 使用测试资源管理器运行单元测试 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846832"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805103"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,7 +128,7 @@ ms.locfileid: "49846832"
   
 ### <a name="test-explorer-groups"></a>测试资源管理器组  
   
-|Group|描述|  
+|Group|说明​​|  
 |-----------|-----------------|  
 |**持续时间**|按执行时间对测试进行分组： **“快速”**、 **“中速”** 和 **“慢速”**。|  
 |**结果**|按执行结果对测试进行分组： **“失败的测试”**、 **“跳过的测试”**、 **“通过的测试”**。|  
@@ -149,7 +144,7 @@ ms.locfileid: "49846832"
   
  在适用于托管应用的 Microsoft 单元测试框架中，在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 属性中定义特征名称/值对。 测试框架还包括以下预定义特征：  
   
-|特征|描述|  
+|特征|说明​​|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|“所有者”类别由单元测试框架定义，并要求你提供所有者的字符串值。|  
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|“优先级”类别由单元测试框架定义，并要求你提供优先级的整数值。|  
@@ -182,7 +177,7 @@ TEST_METHOD(Method1)
   
 ### <a name="c-trait-attribute-macros"></a>C++ 特征特性宏  
   
-|宏|描述|  
+|宏|说明​​|  
 |-----------|-----------------|  
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|使用 TEST_METHOD_ATTRIBUTE 宏定义特性。|  
 |`TEST_OWNER(ownerAlias)`|使用预定义的“所有者”特征来指定测试方法的所有者。|  
@@ -208,7 +203,7 @@ TEST_METHOD(Method1)
 > [!NOTE]
 >  搜索不区分大小，并将指定字符串与条件值的任何部分匹配。  
   
-|限定符|描述|  
+|限定符|说明​​|  
 |---------------|-----------------|  
 |**特征**|搜索特征类别和值的匹配项。 用于指定特征类别和值的语法由单元测试框架定义。|  
 |**Project**|搜索测试项目名称的匹配项。|  
@@ -295,11 +290,8 @@ FullName:"MyClass" - FullName:"PerfTest"
 ##  <a name="BKMK_External_resources"></a> 外部资源  
   
 ###  <a name="BKMK_Guidance"></a> 指导  
- [使用 Visual Studio 2012 对连续交付进行测试 - 第 2 章：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [使用 Visual Studio 2012 – 第 2 章对连续交付进行测试：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>请参阅  
  [单元测试代码](../test/unit-test-your-code.md)   
  [将单元测试作为 64 位进程运行](../test/run-a-unit-test-as-a-64-bit-process.md)
-
-
-

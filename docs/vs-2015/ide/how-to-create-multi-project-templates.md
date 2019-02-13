@@ -1,14 +1,9 @@
 ---
-title: 如何：创建多项目模板 | Microsoft Docs
-ms.custom: ''
+title: 如何：创建多项目模板 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project templates
 - project templates, creating multi-project templates
@@ -17,13 +12,13 @@ ms.assetid: 8c7f7065-137e-40ad-868d-37e007270efd
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950844"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755334"
 ---
 # <a name="how-to-create-multi-project-templates"></a>如何：创建多项目模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,14 +49,14 @@ ms.locfileid: "49950844"
   
   多项目模板的根 .vstemplate 文件不同于单项目模板，表现在以下方面：  
   
-- `VSTemplate` 元素的 `Type` 属性包含值：`ProjectGroup`。 例如：  
+- `VSTemplate` 元素的 `Type` 属性包含值：`ProjectGroup`。 例如:  
   
   ```  
   <VSTemplate Version="2.0.0" Type="ProjectGroup"  
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
   ```  
   
-- `TemplateContent` 元素包含的 `ProjectCollection` 元素具有一个或多个用于定义指向所含项目中 .vstemplate 文件的路径的 `ProjectTemplateLink` 元素。 例如：  
+- `TemplateContent` 元素包含的 `ProjectCollection` 元素具有一个或多个用于定义指向所含项目中 .vstemplate 文件的路径的 `ProjectTemplateLink` 元素。 例如:  
   
   ```  
   <TemplateContent>  
@@ -161,6 +156,3 @@ ms.locfileid: "49950844"
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [SolutionFolder 元素（Visual Studio 模板）](../extensibility/solutionfolder-element-visual-studio-templates.md)   
  [ProjectTemplateLink 元素（Visual Studio 模板）](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Visual C# IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [J#]
 - Visual C#, IntelliSense
@@ -17,13 +12,13 @@ ms.assetid: 79ca304d-dc1e-4dc9-a2a6-7808df2e588e
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862198"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54800870"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "49862198"
   C# 中的完成列表也足够智能，可筛选出不相关的标记，并可基于上下文预先选择标记。 有关详细信息，请参阅 [C# 中经过筛选的完成列表](../misc/filtered-completion-lists-in-csharp.md)和 [C# 中预选择的完成列表项](../misc/pre-selected-completion-list-items-in-csharp.md)。  
   
 ###  <a name="CodeSnippets"></a> 完成列表中的代码片段  
- 在 Visual C# 中，完成列表包含代码片段，可助你将预定义的代码体轻松插入程序。 代码片段作为片段的 [Shortcut 元素（Intellisense 代码片段）](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa)出现在完成列表中。  若要了解 Visual C# 中默认情况下可用的代码片段，请参阅 [Visual C# 代码片段](../ide/visual-csharp-code-snippets.md)。  
+ 在 Visual C# 中，完成列表包含代码片段，可助你将预定义的代码体轻松插入程序。 代码片段作为片段的 [Shortcut 元素（Intellisense 代码片段）](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa)出现在完成列表中。  若要了解 Visual C# 中默认情况下可用的代码片段，请参阅 [Visual C# 代码片段](../ide/visual-csharp-code-snippets.md)。  
   
 ###  <a name="Keywords"></a> 完成列表中的语言关键字  
  在 Visual C# 中，完成列表还包括语言关键字。 若要了解 C# 语言关键字，请参阅 [C# 关键字](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)。  
@@ -164,6 +159,3 @@ ms.locfileid: "49862198"
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-
-

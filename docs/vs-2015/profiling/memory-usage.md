@@ -1,25 +1,20 @@
 ---
 title: 内存使用情况 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: bbb58d6c-3362-4ca3-8e87-64b2d4415bf6
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f62137fcbc71df87fb0569ed0516a7ae36d8a30a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6b060f35abf79d76e17f847e6b4b296c253a4b30
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746195"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766103"
 ---
 # <a name="memory-usage"></a>内存使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ ms.locfileid: "51746195"
 >   
 >  ![启用快照](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
->  停止（快捷键： **Shift + F5**）并重新启动调试。  
+>  停止（快捷键：**Shift + F5**) 并重新启动调试。  
   
  每当要捕获内存状态时，请在 **“内存使用率”** 摘要工具栏上选择 **“拍摄快照”** 。  
   
@@ -136,12 +131,8 @@ ms.locfileid: "51746195"
 ## <a name="blogs-and-videos"></a>博客和视频  
  [Visual Studio 2015 中的“诊断工具”调试器窗口](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
- [博客：在 Visual Studio 2015 中进行调试时的内存使用工具](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
+ [博客在 Visual Studio 2015 中调试时的内存使用情况工具](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
   
  [Visual C++ 博客：VS2015 预览版中的本机内存诊断](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
   
- [Visual C++ 博客：Visual Studio 2015 CTP 中的本机内存诊断工具](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
-
-
-
-
+ [Visual C++ 博客：Visual Studio 2015 CTP 的本机内存诊断工具](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)

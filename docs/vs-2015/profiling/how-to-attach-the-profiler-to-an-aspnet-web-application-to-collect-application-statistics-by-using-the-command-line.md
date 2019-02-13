@@ -1,25 +1,20 @@
 ---
-title: 如何：将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集应用程序统计信息 | Microsoft Docs
-ms.custom: ''
+title: 如何：将 Profiler 附加到 ASP.NET Web 应用程序以使用命令行收集应用程序统计信息 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3725ddbe-ce91-4469-991e-8c5ed048c618
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8bed31651ca52097675c9584091b618ea8757192
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 82d873d166e2275e68231dfd0e7f6edbffd04ab1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762435"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781096"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 ASP.NET Web 应用程序中以收集应用程序统计信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ ms.locfileid: "51762435"
    > [!NOTE]
    >  **/user** 和 **/crosssession** 选项通常为 ASP.NET 应用程序所需选项。  
 
-   |                                 选项                                  |                                                                                                                                                        描述                                                                                                                                                        |
+   |                                 选项                                  |                                                                                                                                                        说明​​                                                                                                                                                        |
    |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |                   指定拥有 ASP.NET 工作进程的帐户的域和用户名。 在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。                    |
    |              [/crosssession](../profiling/crosssession.md)              | 启用其他登录会话中的进程分析。 如果 ASP.NET 应用程序在其他会话中运行，则需要此选项。 会话标识符在 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中列出。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
@@ -83,7 +78,7 @@ ms.locfileid: "51762435"
 
    -   默认情况下，性能数据为每 10,000,000 个非暂停处理器时钟周期采样一次。 在 1GH 处理器上，每秒约为 100 次。 可以指定以下 VSPerfCmd 选项之一，更改时钟周期间隔或指定不同的采样事件。  
 
-   |样本事件|描述|  
+   |样本事件|说明​​|  
    |------------------|-----------------|  
    |[/timer](../profiling/timer.md) **:** `Interval`|将采样间隔更改为 `Interval` 所指定的非暂停时钟周期数目。|  
    |[/pf](../profiling/pf.md)[**:**`Interval`]|将采样事件更改为页面错误。 如果已指定 `Interval`，则会设置样本之间的页面错误数目。 默认值为 10。|  
@@ -100,7 +95,7 @@ ms.locfileid: "51762435"
 
 -   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
-    |选项|描述|  
+    |选项|说明​​|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` **/processoff:** `PID`|对由 `PID` 指定的进程，启动 (/processon) 或停止 (/processoff) 数据收集。|  
@@ -134,6 +129,3 @@ ms.locfileid: "51762435"
 ## <a name="see-also"></a>请参阅  
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [采样方法数据视图](../profiling/profiler-sampling-method-data-views.md)
-
-
-
