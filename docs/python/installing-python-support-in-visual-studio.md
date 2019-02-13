@@ -2,7 +2,6 @@
 title: 安装 Python 支持
 description: 如何在 Visual Studio 2017、2015、2013、2012 和 2010 中安装针对 Visual Studio 的 Python 工具 (PTVS)，包括选项和安装位置。
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31fc5a4ffd9f6c973597e59bac6c89823b30d80b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a74c5992699fa321839c671f527c513ae2b9291
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991172"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155482"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -57,7 +56,7 @@ ms.locfileid: "54991172"
 
     ![Visual Studio 安装程序中的 Python 开发选项](media/installation-python-options.png)
 
-    | 选项 | 说明 |
+    | 选项 | 说明​​ |
     | --- | --- |
     | Python 分发版本 | 选择计划使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 分发版本的 32 位和 64 位变型的任意组合。 每个组合都包含分发版本的解释器、运行时和库。 具体来说，Anaconda 是开放数据科学平台，包含各种预安装的包。 （可随时返回 Visual Studio 安装程序来添加或删除分发版本。）**说明**：如果已安装 Visual Studio 安装程序之外的分发版本，则无需检查此处的等效选项。 Visual Studio 会自动检测现有的 Python 安装。 请参阅[“Python 环境”窗口](managing-python-environments-in-visual-studio.md#the-python-environments-window)。 此外，若有比安装程序中所显示的版本更高的 Python 版本可用，可以单独安装较高版本，并且 Visual Studio 会检测到它。 |
     | **Cookiecutter 模板支持** | 安装 Cookiecutter 图形用户界面，用于发现模板、输入模板选项以及创建项目和文件。 请参阅[使用 Cookiecutter 扩展](using-python-cookiecutter-templates.md)。 |
@@ -69,10 +68,6 @@ ms.locfileid: "54991172"
 1. 安装后，安装程序会提供用于修改、启动、修复或卸载 Visual Studio 的选项。 当已安装的所有组件均可使用 Visual Studio 更新时，“修改”按钮将更改为“更新”。 （随后在下拉菜单中提供“修改”选项。）还可搜索“Visual Studio”，从 Windows “开始”菜单启动 Visual Studio 及安装程序。
 
     ![通过安装程序启动、修改或卸载 Visual Studio](media/installation-vs-launch.png)
-
-|   |   |
-|---|---|
-| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关在 Visual Studio 中安装 Python 支持，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567)。|
 
 ### <a name="troubleshooting"></a>疑难解答
 

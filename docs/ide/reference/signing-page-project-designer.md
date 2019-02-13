@@ -1,7 +1,6 @@
 ---
 title: “项目设计器”->“签名”页
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fd9304753574b0e76b70c439a34f6a9a6d65031
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3411d3e9960235f7fbd948e82cf9498377746b7d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958441"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938756"
 ---
 # <a name="signing-page-project-designer"></a>“项目设计器”->“签名”页
 使用“项目设计器”的“签名”页对应用程序和部署清单及程序集进行签名（强名称签名）。

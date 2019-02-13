@@ -2,7 +2,6 @@
 title: F# 工具
 description: 了解 F# 中支持的 Visual Studio 功能。
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
@@ -11,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0eaaf9f82bea6fdba86b6404cfc0ab36384805ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920625"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955852"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>在 Visual Studio 中使用 Visual F# 进行开发
 
@@ -59,7 +58,7 @@ Visual Studio 中提供适用于 F# 的多种项目和项模板。 下图显示�
 
 项目设计器包含按相关功能分组的多个项目属性页。 适用于 F# 项目的大多数页是可用于其他语言的子集，下表提供这些页的说明。 还提供了指向相应 C# 项目设计器页的链接。
 
-|“项目设计器”页|相关链接|说明|
+|“项目设计器”页|相关链接|说明​​|
 | - |-------------|-----------|
 |应用程序|[“应用程序”页，项目设计器](reference/application-page-project-designer-csharp.md)|支持指定应用程序级别设置和属性，例如要创建库还是可执行文件、应用程序面向的 .NET Framework 版本和应用程序使用的资源文件的存储位置的相关信息。|
 |生成|[“项目设计器”->“生成”页](reference/build-page-project-designer-csharp.md)|支持控制代码的编译方式。|
@@ -73,7 +72,7 @@ Visual Studio 中提供适用于 F# 的多种项目和项模板。 下图显示�
 
 下表总结了特定于 F# 的设置：
 
-|“项目设计器”页|设置|说明|
+|“项目设计器”页|设置|说明​​|
 | - |-------|-----------|
 |生成|生成尾调用|选中后即可使用 Microsoft 中间语言 (MSIL) 尾指令。 这将导致对尾递归函数重复使用堆栈帧。 等效于 `--tailcalls` 编译器选项。|
 |生成|其他标志|允许指定其他编译器命令行选项。|
@@ -82,7 +81,7 @@ Visual Studio 中提供适用于 F# 的多种项目和项模板。 下图显示�
 
 F# 中支持 Visual Studio 代码和文本编辑器的以下功能：
 
-|功能|说明|受 F# 支持？|
+|功能|说明​​|受 F# 支持？|
 |-------|-----------|----------------|
 |自动注释|支持对代码部分添加注释或取消注释。|是|
 |自动设置格式|使用标准缩进和样式重新设置代码格式。|No|
@@ -114,7 +113,7 @@ F# 中支持 Visual Studio 代码和文本编辑器的以下功能：
 
 下表总结了 F# 中支持的和不支持的 IntelliSense 功能：
 
-|功能|说明|受 F# 支持？|
+|功能|说明​​|受 F# 支持？|
 |-------|-----------|----------------|
 |自动实现接口|为接口方法生成代码存根。|是|
 |代码片段|将采用通用编码结构的库中的代码注入主题。|No|
@@ -134,7 +133,7 @@ F# 中支持 Visual Studio 代码和文本编辑器的以下功能：
 
 下表总结了调试 F# 代码时的可用功能：
 
-|功能|说明|受 F# 支持？|
+|功能|说明​​|受 F# 支持？|
 |-------|-----------|----------------|
 |“自动”窗口|显示自动或临时变量。|No|
 |断点|支持在调试期间的特定点处暂停代码执行。|是|
@@ -153,7 +152,7 @@ F# 中支持 Visual Studio 代码和文本编辑器的以下功能：
 
 下表总结了 Visual Studio 工具中的 F# 支持。
 
-|工具|说明|受 F# 支持？|
+|工具|说明​​|受 F# 支持？|
 |----|-----------|----------------|
 |调用层次结构|显示代码中的函数调用的嵌套结构。|No|
 |代码度量|收集代码的相关信息，例如行计数。|No|

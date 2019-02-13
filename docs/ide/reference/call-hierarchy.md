@@ -1,7 +1,6 @@
 ---
 title: 查找对方法的调用
 ms.date: 05/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.CallHierarchy
@@ -12,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77142ff9f2923ba21507327ad3f6f487b4f895ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ad95d1c48992b8ecac6715db41aa9d85791999bb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960888"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910358"
 ---
 # <a name="view-call-hierarchy"></a>查看调用层次结构
 
@@ -64,7 +63,7 @@ ms.locfileid: "54960888"
 
 下表描述了在树状视图窗格中右键单击某个节点时，可以使用的多个快捷菜单选项。
 
-|上下文菜单项|说明|
+|上下文菜单项|说明​​|
 | - |-----------------|
 |**作为新根添加**|将选定节点添加为树状视图窗格中的新根节点。 这样就可以集中关注特定子树。|
 |**移除根**|从树视图窗格中删除所选根节点。 只有根节点有此选项。<br /><br /> 还可以使用“移除根”工具栏按钮来移除选定的根节点。|

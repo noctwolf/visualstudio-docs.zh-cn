@@ -3,7 +3,6 @@ title: 学习 Visual Studio 中的 Django 教程的第 6 步，为项目模板�
 titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了投票 Django Web 项目模板的功能，例如管理自定义。
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -12,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e7b4741bf7b8644182afb666b8683212ab957c56
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: a8169dc759091bcc89da64a9676589e473bccf1f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55232021"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957802"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步骤 6：使用投票 Django Web 项目模板
 

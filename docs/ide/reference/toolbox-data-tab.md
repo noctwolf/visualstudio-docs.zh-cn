@@ -1,7 +1,6 @@
 ---
 title: 工具箱，“数据”选项卡
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Data tab
@@ -13,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f30bc874f5ed3debecf24a3259a8b13c9c38d49
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2a83999345cd36f1677eca91b243e1ab3455c8a3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997398"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910761"
 ---
 # <a name="toolbox-data-tab"></a>工具箱，“数据”选项卡
 
@@ -31,7 +30,7 @@ ms.locfileid: "54997398"
 
 若要直接转到某个组件的 .NET Framework 参考页，请针对“工具箱”中的项或设计器栏中的组件项按“F1”。
 
-|name|说明|
+|name|说明​​|
 |----------|-----------------|
 |<xref:System.Data.DataSet>|向窗体或组件中添加类型化或非类型化数据集的实例。 将此对象拖到设计器上后，它将显示一个对话框，可在其中选择一个现有的类型化数据集类或指定希望创建新的非类型化空数据集。 **注意：** 不要使用“工具箱”上的 <xref:System.Data.DataSet> 对象创建新的类型化数据集架构和类。 有关详细信息，请参阅[创建和配置数据集](../../data-tools/create-and-configure-datasets-in-visual-studio.md)。|
 |<xref:System.Windows.Forms.DataGridView>|提供一种以表格格式显示数据的功能强大且灵活的方法。|

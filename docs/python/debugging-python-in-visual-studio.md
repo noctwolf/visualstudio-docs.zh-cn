@@ -2,7 +2,6 @@
 title: 调试 Python 代码
 description: Visual Studio 为 Python 代码提供丰富的调试，包括设置断点、单步执行、检查值、查看异常以及在交互窗口中进行调试。
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cdaaf7964ee7da9a5ae7a1b1bfa0f77631c22622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc6c448a80f9517a3bde0333736f4cb83efb09c6
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036064"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155872"
 ---
 # <a name="debug-your-python-code"></a>调试 Python 代码
 
@@ -27,10 +26,6 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 - [Linux 远程调试](debugging-python-code-on-remote-linux-machines.md)
 - [Python/C++ 混合模式调试](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [混合模式调试的符号](debugging-symbols-for-mixed-mode-c-cpp-python.md)
-
-|   |   |
-|---|---|
-| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关 Python 调试的演示，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567)（3 分 32 秒）。|
 
 <a name="debugging-without-a-project"></a>
 
@@ -71,7 +66,7 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 
 在断点处停止后，可使用多种方法逐句通过代码或在再次中断之前运行代码块。 多个位置和途径可以提供这些命令，包括顶部调试工具栏、“调试”菜单、通过右键单击代码编辑器中的上下文菜单，以及通过键盘快捷方式（但并非所有命令都可以在这些位置提供）：
 
-| 功能 | 击键 | 说明 |
+| 功能 | 击键 | 说明​​ |
 | --- | --- | --- |
 | **Continue** | **F5** | 运行代码，到达下一个断点时停止。 |
 | **逐语句** | F11 | 运行下一语句并停止。 如果下一语句是对函数的调用，调试器将在调用函数的第一行处停止。 |
@@ -137,7 +132,7 @@ HTML、XML 和 JSON 可视化效果显示在单独的弹出窗口中，其中突
 
 ### <a name="launch-mode-options"></a>启动模式选项
 
-| 选项 | 说明 |
+| 选项 | 说明​​ |
 | --- | --- |
 | **标准 Python 启动器** | 使用以可移植 Python（与 CPython、IronPython 和无堆栈 Python 等变量兼容）编写的调试代码。 它提供调试纯 Python 代码的最佳体验。 附加到正在运行的 python.exe 进程时，将使用此启动器。 此外，此启动器还提供针对 CPython 的[混合模式调试](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)，可以无缝地在 C/C++ 代码和 Python 代码之间进行单步执行。 |
 | **Web 启动器** | 在启动时启动默认浏览器并启用模板调试。 请参阅[Web 模板调试](python-web-application-project-templates.md#debugging)部分，了解详细信息。 |
@@ -146,7 +141,7 @@ HTML、XML 和 JSON 可视化效果显示在单独的弹出窗口中，其中突
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>运行选项（搜索路径、启动参数和环境变量）
 
-| 选项 | 说明 |
+| 选项 | 说明​​ |
 | --- | --- |
 | **搜索路径** | 这些值与解决方案资源管理器中项目的搜索路径节点中显示的值匹配。 可以在此处修改该值，但使用解决方案资源管理器更简单，因为可以浏览文件夹和自动将路径转换为相对形式。 |
 | **脚本参数** | 这些参数添加到用于启动脚本的命令中，并且显示在脚本的文件名后。 此处可供脚本使用的第一项为 `sys.argv[1]`，第二项为 `sys.argv[2]`，以此类推。 |
@@ -166,7 +161,7 @@ Python 调试交互窗口（“调试” > “窗口” > “Python 调试交互
 
 除[标准 REPL 命令](python-interactive-repl-in-visual-studio.md#meta-commands)外，调试交互窗口还支持特殊元命令：
 
-| 命令 | 自变量 | 说明 |
+| 命令 | 自变量 | 说明​​ |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | 从当前语句开始运行程序。 |
 | `$down`， `$d` | 在堆栈跟踪中将当前帧下移一级。 |

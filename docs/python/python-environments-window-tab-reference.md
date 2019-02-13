@@ -2,7 +2,6 @@
 title: Python 环境窗口引用
 description: 在 Visual Studio 的 Python 环境窗口中出现的每个选项卡的详细信息。
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa82d2d475d540dfdda31c7dea1bd4681aaeb7a2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 75f04d8045ebafea64634b156a57bc2f50a5009b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982385"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909981"
 ---
 # <a name="python-environments-window-tabs-reference"></a>“Python 环境”窗口选项卡引用
 
@@ -35,7 +34,7 @@ ms.locfileid: "54982385"
 
 ![Python 环境概述选项卡](media/environments-overview-tab.png)
 
-| 命令 | 说明 |
+| 命令 | 说明​​ |
 | --- | --- |
 | **使此环境成为新项目的默认环境** | 设置活动环境，这可能会导致 Visual Studio（2017 版本 15.5 及更高版本）在加载 IntelliSense 数据库时短时间无响应。 含有多个包的环境可能无响应的时间更长。 |
 | **访问分发服务器的网站** | 打开浏览器，访问 Python 分发所提供的 URL。 例如，对于 Python 3.x，会转到 python.org。 |
@@ -61,7 +60,7 @@ ms.locfileid: "54982385"
 
 ![Python 环境配置选项卡](media/environments-configure-tab.png)
 
-| 字段 | 说明 |
+| 字段 | 说明​​ |
 | --- | --- |
 | **说明** | 为环境提供的名称。 |
 | **前缀路径** | 解释程序的基本文件夹位置。 通过填写此值并单击“自动检测”，Visual Studio 会尝试填充其他字段。 |

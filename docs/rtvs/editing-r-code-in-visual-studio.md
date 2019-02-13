@@ -2,19 +2,18 @@
 title: 编辑 R 代码
 description: Visual Studio 为 R 提供量身定制的编辑体验，同时保留所有功能并且能够使用扩展。
 ms.date: 11/05/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 326627f16bb431b582666cccafb6a511cf815718
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2ec13113d8b7707c404a8af9788dacc98b12bb42
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918597"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921232"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>在 Visual Studio 中编辑 R 代码
 
@@ -114,7 +113,7 @@ RTVS 提供一种快捷方式，通过使用函数的参数名来生成 [Roxygen
 
 “R” > “高级”选项卡上的选项特定于 RTVS：
 
-| Group | 选项 | 默认 | 说明 |
+| Group | 选项 | 默认 | 说明​​ |
 | --- | --- | --- | --- |
 | 格式化 | 自动格式设置 | On | 在键入时重格式化代码。 不影响“设置选定内容的格式”或“设置文档的格式”命令。 |
 | | 扩展大括号 | Off | 将左大括号 { 置于新行。 |

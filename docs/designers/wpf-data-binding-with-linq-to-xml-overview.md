@@ -1,7 +1,6 @@
 ---
 title: 使用 LINQ to XML 进行 WPF 数据绑定概述
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da32989ebabb4ef6507f45c652755514f4963ef6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2ef02735ab10d6223e9098a4fa03312507d961cb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984777"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923370"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>使用 LINQ to XML 进行 WPF 数据绑定概述
 
@@ -36,7 +35,7 @@ XAML 和 LINQ to XML 的交互有两种主要方式：
 
 WPF 数据绑定可使 UI 元素将其一个属性与一个数据源相关联。 这种情况的一个简单示例是 <xref:System.Windows.Controls.Label>，其文本表示用户定义对象中一个公共属性的值。 WPF 数据绑定依赖于下列组件：
 
-|组件|说明|
+|组件|说明​​|
 |---------------|-----------------|
 |绑定目标|要与数据源关联的 UI 元素。 WPF 中的可视元素是从 <xref:System.Windows.UIElement> 类派生的。|
 |目标属性|绑定目标的依赖项属性，反映数据绑定源的值。 从中派生 <xref:System.Windows.DependencyObject> 的 <xref:System.Windows.UIElement> 类直接支持依赖项属性。|

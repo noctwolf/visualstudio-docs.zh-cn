@@ -2,7 +2,6 @@
 title: 选择并安装 Python 解释器
 description: Visual Studio 中支持的 Python 解释器的完整列表，并简要说明了可以在哪里找到它们的安装程序。
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 613b9b97e96c721a979e01b9e07adc175b71197b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cafa97873c168102dff66f602d4d117269718810
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54934648"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920998"
 ---
 # <a name="install-python-interpreters"></a>安装 Python 解释器
 
@@ -32,7 +31,7 @@ Visual Studio（所有版本）通过检查注册表（根据 [PEP 514 - Windows
 
 Visual Studio 在[Python 环境”](managing-python-environments-in-visual-studio.md#the-python-environments-window)窗口中显示所有已知环境，并自动检测现有解释器的更新。
 
-| 解释器 | 说明 |
+| 解释器 | 说明​​ |
 | --- | --- |
 | [CPython](https://www.python.org/) | 最常用的“本机”解释器，32 位和 64 位版本可用（建议使用 32 位）。 包括最新的语言功能、最大的 Python 包兼容性、完整的调试支持以及与 [IPython](https://ipython.org/) 的互操作。 另请参阅：[Should I use Python 2 or Python 3?](https://wiki,python.org/moin/Python2orPython3)（应使用 Python 2 还是 Python 3？） 请注意，Visual Studio 2015 及更早版本不支持 Python 3.6+，并且会生成“不支持 Python 版本 3.6”之类的错误。 请改用 Python 3.5 或更早版本。 |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Python 的 .NET 实现，32 位和 64 位版本可用，提供 C#/F#/Visual Basic 互操作、对 .NET API 的访问、标准 Python 调试（但不是 C++ 混合模式调试）和混合 IronPython/C# 调试。 但 IronPython 不支持虚拟环境。 |

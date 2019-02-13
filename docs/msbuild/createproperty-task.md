@@ -18,55 +18,54 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684f55b4b660c48c4186755737b3bc64c6e62788
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea5dc0d2516ab7cf3c4e26b5e8f39328eabe47cb
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042668"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853438"
 ---
 # <a name="createproperty-task"></a>CreateProperty 任务
-使用传入的值填充属性。 通过该操作可以将值从一个属性或字符串复制到另一个属性或字符串。  
+使用传入的值填充属性。 通过该操作可以将值从一个属性或字符串复制到另一个属性或字符串。
 
-## <a name="attributes"></a>特性  
- 下表描述了 `CreateProperty` 任务的参数。  
+## <a name="attributes"></a>特性
+下表描述了 `CreateProperty` 任务的参数。
 
-
-| 参数 | 说明 |
+| 参数 | 说明​​ |
 |------------------| - |
 | `Value` | 可选 `String` 输出参数。<br /><br /> 指定要复制到新属性的值。 |
 | `ValueSetByTask` | 可选 `String` 输出参数。<br /><br /> 包含与 `Value` 参数相同的值。 在由于输出是最新的而跳过封闭目标的情况下，仅当需要避免由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 设置输出属性时，使用此参数。 |
 
-## <a name="remarks"></a>备注  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
+## <a name="remarks"></a>备注
+除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 
-## <a name="example"></a>示例  
- 以下示例在 `CreateProperty` 任务中通过合并 `SourceFilename` 和 `SourceFileExtension` 属性的值创建 `NewFile` 属性。  
+## <a name="example"></a>示例
+以下示例在 `CreateProperty` 任务中通过合并 `SourceFilename` 和 `SourceFileExtension` 属性的值创建 `NewFile` 属性。
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <PropertyGroup>  
-        <SourceFilename>Module1</SourceFilename>  
-        <SourceFileExtension>vb</SourceFileExtension>  
-    </PropertyGroup>  
+    <PropertyGroup>
+        <SourceFilename>Module1</SourceFilename>
+        <SourceFileExtension>vb</SourceFileExtension>
+    </PropertyGroup>
 
-    <Target Name="CreateProperties">  
+    <Target Name="CreateProperties">
 
-        <CreateProperty  
-            Value="$(SourceFilename).$(SourceFileExtension)">  
-            <Output  
-                TaskParameter="Value"  
-                PropertyName="NewFile" />  
-        </CreateProperty>  
+        <CreateProperty
+            Value="$(SourceFilename).$(SourceFileExtension)">
+            <Output
+                TaskParameter="Value"
+                PropertyName="NewFile" />
+        </CreateProperty>
 
-    </Target>  
+    </Target>
 
-</Project>  
-```  
+</Project>
+```
 
- 运行项目后，`NewFile` 属性的值为 Module1.vb。  
+运行项目后，`NewFile` 属性的值为 Module1.vb。
 
-## <a name="see-also"></a>请参阅  
- [任务参考](../msbuild/msbuild-task-reference.md)   
- [任务](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>请参阅
+[任务参考](../msbuild/msbuild-task-reference.md)  
+[任务](../msbuild/msbuild-tasks.md)

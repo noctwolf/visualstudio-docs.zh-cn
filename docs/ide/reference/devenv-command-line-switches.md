@@ -1,7 +1,6 @@
 ---
 title: Devenv 命令行开关
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bc159ffb4fe330f52cf8364fc9f0d07b4bc5979
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a5b7538342cad63d820992fe699e65386f4f3c8e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016195"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908460"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令行开关
 
@@ -63,7 +62,7 @@ ms.locfileid: "55016195"
 
 下面各个命令行开关显示 IDE，并执行所描述的任务。
 
-|命令行开关|说明|
+|命令行开关|说明​​|
 | - |-----------------|
 |[/Command](command-devenv-exe.md)|启动 IDE 并执行指定的命令。<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|在调试器的控制下加载 C++ 可执行文件。 此开关不适用于 Visual Basic 或 C# 可执行文件。 有关详细信息，请参阅[自动启动调试器中的进程](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。<br /><br /> `devenv /debugexe mysln.exe`|
@@ -79,7 +78,7 @@ ms.locfileid: "55016195"
 
 下面各个命令行开关不显示 IDE。
 
-|命令行开关|说明|
+|命令行开关|说明​​|
 | - |-----------------|
 |[/?](q-devenv-exe.md)|在“命令提示符”窗口中显示 `devenv` 开关的相关帮助信息。<br /><br /> 此开关不带参数。|
 |[build](build-devenv-exe.md)|根据指定解决方案的配置，生成指定的解决方案或项目。<br /><br /> `devenv mysln.sln /build`|

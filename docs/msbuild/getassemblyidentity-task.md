@@ -18,32 +18,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c5c716f34ed1603c4f0ed2965c1fd6184f44654
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aadbc72f3d7bb21f313ddaae0de97ec45a7e72a3
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982099"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853763"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity 任务
-从指定的文件检索程序集标识并输出标识信息。  
-  
-## <a name="task-parameters"></a>任务参数  
- 下表描述了 `GetAssemblyIdentity` 任务的参数。  
-  
-|参数|说明|  
-|---------------|-----------------|  
-|`Assemblies`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包含检索到的程序集标识。|  
-|`AssemblyFiles`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要从中检索标识的文件。|  
-  
-## <a name="remarks"></a>备注  
- 由 `Assemblies` 参数输出的项包含名为 `Version`、`PublicKeyToken` 和 `Culture` 的项元数据条目。  
-  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
-  
-## <a name="example"></a>示例  
- 以下示例检索 `MyAssemblies` 项中指定的文件的标识，然后将其输出到 `MyAssemblyIdentities` 项。  
-  
+从指定的文件检索程序集标识并输出标识信息。
+
+## <a name="task-parameters"></a>任务参数
+下表描述了 `GetAssemblyIdentity` 任务的参数。
+
+|参数|说明​​|
+|---------------|-----------------|
+|`Assemblies`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包含检索到的程序集标识。|
+|`AssemblyFiles`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要从中检索标识的文件。|
+
+## <a name="remarks"></a>备注
+由 `Assemblies` 参数输出的项包含名为 `Version`、`PublicKeyToken` 和 `Culture` 的项元数据条目。
+
+除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
+
+## <a name="example"></a>示例
+以下示例检索 `MyAssemblies` 项中指定的文件的标识，然后将其输出到 `MyAssemblyIdentities` 项。
+
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <ItemGroup>
@@ -53,10 +53,10 @@ ms.locfileid: "54982099"
         <GetAssemblyIdentity AssemblyFiles="@(MyAssemblies)">
             <Output TaskParameter="Assemblies" ItemName="MyAssemblyIdentities" />
         </GetAssemblyIdentity>
-    </Target>  
-</Project>  
+    </Target>
+</Project>
 ```
 
-## <a name="see-also"></a>请参阅  
- [任务](../msbuild/msbuild-tasks.md)   
- [任务参考](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>请参阅
+[任务](../msbuild/msbuild-tasks.md)  
+[任务参考](../msbuild/msbuild-task-reference.md)

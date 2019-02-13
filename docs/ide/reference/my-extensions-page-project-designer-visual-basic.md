@@ -1,7 +1,6 @@
 ---
 title: “项目设计器”->“My 扩展”页 (Visual Basic)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesMyExtensions
@@ -14,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 654e96948d738deae78781dacd16b327aac1a141
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d366ed403eba6fbfab4aec22f4542ee5362962f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027901"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923234"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>“项目设计器”->“My 扩展”页 (Visual Basic)
 使用“项目设计器”的“My 扩展”管理项目中的 `My` 命名空间扩展。 使用 `My` 命名空间扩展可以自定义 `My` 命名空间以添加自己的自定义成员。 有关创建自定义 `My` 命名空间扩展的信息，请参阅[扩展 Visual Basic 中的 My 命名空间](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)。

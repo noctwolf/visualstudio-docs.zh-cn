@@ -13,16 +13,15 @@ helpviewer_keywords:
 author: kuhlenh
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 8d7d07efa862e619961c21962dca20303efed97e
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742516"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911866"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 编码约定设置
 
@@ -1013,7 +1012,7 @@ public int GetAge() { return this.Age; }
 
 此规则接受下表中的值：
 
-| 值 | 说明​​ |
+| “值” | 说明​​ |
 | ----- |:----------- |
 | true | 倾向于使用构造函数的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用构造函数的 expression-bodied 成员 |
@@ -1433,7 +1432,7 @@ csharp_prefer_braces = true:none
 | 规则名称 | 适用的语言 | Visual Studio 默认值 | Visual Studio 2017 版本 |
 | ----------- | -------------------- | ----------------------| ---------------- |
 | dotnet_sort_system_directives_first | C# 和 Visual Basic | true | 15.3 |
-| dotnet_separate_import_directive_groups | C# 和 Visual Basic | true | 15.5 |
+| dotnet_separate_import_directive_groups | C# 和 Visual Basic | False | 15.5 |
 
 **dotnet\_sort\_system\_directives_first**
 
@@ -1514,7 +1513,7 @@ dotnet_separate_import_directive_groups = true
 
 此规则与左大括号 `{` 应放在前面代码的同一行还是新行上有关。 对于此规则，无需指定“true”或“false”。 改为指定“全部”、“无”或一个或多个码位元素，如方法或属性，从而定义此规则的应用时间。 下表列出了允许值的完整列表：
 
-| 值 | 说明​​
+| “值” | 说明​​
 | ------------- |:-------------|
 | accessors, anonymous_methods, anonymous_types, control_blocks, events, indexers, lambdas, local_functions, methods, object_collection_array_initializers, properties, types.<br>（对于多种值，请使用“,”分隔）。 | 需要将大括号置于指定码位元素的新行中（也称为“Allman”样式） |
 | 全部 | 对于所有表达式，需要将大括号置于新行（“Allman”样式） |
@@ -2009,7 +2008,7 @@ class C :I
 
 此规则接受下表中的一个值：
 
-| “值” | 说明​​ |
+| 值 | 说明​​ |
 | ----- |:------------|
 | before_and_after | 在二元运算符前后插入空格 |
 | 无 | 删除二元运算符前后的空格 |
