@@ -13,15 +13,14 @@ ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 989eb815a6e55b5ecaed0b960963eb036b73065a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 6df50eb1f8a4d722a0140fd37a6ff0c0d7474a39
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970534"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955266"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>扩展 TableAdapter 的功能
 
@@ -33,7 +32,7 @@ ms.locfileid: "54970534"
 
 ## <a name="locate-tableadapters-in-code"></a>在代码中查找 Tableadapter
 
-Tableadapter 的设计时**数据集设计器**，生成的 TableAdapter 类不是嵌套的类的<xref:System.Data.DataSet>。 TableAdapter 位于基于 TableAdapter 关联数据集的名称的命名空间中。 例如，如果你的应用程序包含名为的数据集`HRDataSet`，Tableadapter 将位于`HRDataSetTableAdapters`命名空间。 (命名约定采用这种模式：数据集名称
+Tableadapter 的设计时**数据集设计器**，生成的 TableAdapter 类不是嵌套的类的<xref:System.Data.DataSet>。 TableAdapter 位于基于 TableAdapter 关联数据集的名称的命名空间中。 例如，如果你的应用程序包含名为的数据集`HRDataSet`，Tableadapter 将位于`HRDataSetTableAdapters`命名空间。 (命名约定采用这种模式： *DatasetName* + `TableAdapters`)。
 
 下面的示例假定名为 `CustomersTableAdapter` 的 TableAdapter 与 `NorthwindDataSet` 一起位于项目中。
 

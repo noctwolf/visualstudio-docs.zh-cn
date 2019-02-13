@@ -2,7 +2,7 @@
 title: Visual Studio 2019 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新增功能。
-ms.date: 01/24/2019
+ms.date: 01/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: '>= vs-2017'
-ms.openlocfilehash: 9f1d2ba67739dd5349a1a361744543089900a371
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
+ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55090094"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55483700"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 预览版中的新增功能
 
@@ -40,7 +40,7 @@ Visual Studio 2019 预览版包含许多常规改进以及可优化开发者生�
 * **[持续创新](#continuous-innovation)**。 智慧与智能、云支持的代码。
 
 > [!NOTE]
-> 有关 Visual Studio 2019 预览版中新增功能的完整列表，请参阅[发行说明](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)。
+> 有关 Visual Studio 2019 预览版中新增功能的完整列表，请参阅[发行说明](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)。 要概要了解我们第二个预览版中的新增功能，请参阅[现已推出 Visual Studio 2019 预览版 2](https://blogs.msdn.microsoft.com/visualstudio/2019/01/24/visual-studio-2019-preview-2-is-now-available/) 博客文章。
 
 ## <a name="personal-and-team-productivity"></a>个人和团队生产力
 
@@ -82,6 +82,8 @@ Visual Studio 2019 预览版包含许多常规改进以及可优化开发者生�
 
    ![Visual Studio 2019 中的新监视窗口和格式化值的功能](media/search-watch-window.png)
 
+有关详细信息，请参阅 [Visual Studio 2019 中的增强功能：在 Watch、Autos、Locals 窗口中搜索对象和属性](https://blogs.msdn.microsoft.com/visualstudio/2019/01/28/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/)博客文章。
+
 ### <a name="visual-studio-live-share"></a>Visual Studio Live Share
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 是一项开发者服务，可让你与团队成员共享代码库及其上下文，并直接从 Visual Studio 内获得即时双向协作。 利用“实时共享”，团队成员可以无缝且安全地读取、导航、编辑和调试已与他们共享的项目。
@@ -110,7 +112,7 @@ Visual Studio 2019 的预览版支持构建适用于任何平台的 [.NET Core 3
 
 如果使用配置了不同显示比例因子的监视器，或远程连接到显示比例因子与主设备不同的计算机，你可能会发现 Visual Studio 看起来比较模糊或以错误的比例呈现。
 
-随着 Visual Studio 2019 预览版 1 的发布，我们迈出了使 Visual Studio 成为按监视器感知 (PMA) 应用程序的第一步。 我们正在努力构建基础工作，确保无论使用何种显示比例因子，Visual Studio 都能正确呈现。
+随着 Visual Studio 2019 预览版的发布，我们正在采取初步措施让 Visual Studio 成为一种按监视器感知 (PMA) 应用程序。 我们正在努力构建基础工作，确保无论使用何种显示比例因子，Visual Studio 都能正确呈现。
 
    ![Visual Studio 2019 中的按监视器感知 (PMA) 呈现](media/per-monitor-aware-dpi-scaling.png)
 
