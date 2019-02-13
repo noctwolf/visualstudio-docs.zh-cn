@@ -32,16 +32,16 @@ helpviewer_keywords:
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80a6633734821eb8d05fb8aa252911f49f719fc1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 677d68aab6f6dfdb39f12ba33002758f61a03a31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847923"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54919936"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务
 
@@ -92,7 +92,7 @@ WCF 客户端组成*代理*这样的应用程序与 WCF 服务进行通信并为
 
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio 中的 WCF 工具
 
-Visual Studio 提供可帮助您创建 WCF 服务和 WCF 客户端工具。 有关演示这些工具的演练，请参阅[演练：在 Windows 窗体中创建简单的 WCF 服务](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)
+Visual Studio 提供可帮助您创建 WCF 服务和 WCF 客户端工具。 有关演示这些工具的演练，请参阅[演练：在 Windows 窗体中创建简单的 WCF 服务
 
 ### <a name="create-and-test-wcf-services"></a>创建和测试 WCF 服务
 
@@ -253,7 +253,7 @@ Visual Studio 简化了创建自动生成代理和使用添加的服务的终结
 
 ## <a name="related-topics"></a>相关主题
 
-| Title | 说明 |
+| Title | 说明​​ |
 | - | - |
 | [演练：在 Windows 窗体中创建简单的 WCF 服务](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | 提供创建和使用 Visual Studio 中的 WCF 服务的分步演示。 |
 | [演练：通过 WPF 和实体框架创建 WCF 数据服务](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | 提供了分步演示如何创建和使用 Visual Studio 中的 WCF 数据服务。 |

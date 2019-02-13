@@ -15,15 +15,14 @@ ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d4e7d85892974b1ef2d4600525b37c45c7ac8fa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 38d41b49335606d390440d11f6df2dc35c7d858b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946173"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950391"
 ---
 # <a name="pass-data-between-forms"></a>在窗体间传递数据
 
@@ -124,7 +123,7 @@ ms.locfileid: "54946173"
 
 3.  将主“Orders”节点从“数据源”窗口拖到“Form2”上。
 
-     “Form2”上显示用于导航记录的 <xref:System.Windows.Forms.DataGridView> 和工具栏 (<xref:System.Windows.Forms.BindingNavigator>)。 组件栏中显示“NorthwindDataSet”、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator>[](../data-tools/dataset-tools-in-visual-studio.md)。
+     “Form2”上显示用于导航记录的 <xref:System.Windows.Forms.DataGridView> 和工具栏 (<xref:System.Windows.Forms.BindingNavigator>)。 组件栏中显示“[NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)”、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator>。
 
 4.  从组件栏删除“OrdersBindingNavigator”。
 
