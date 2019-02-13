@@ -3,10 +3,7 @@ title: Visual Studio 2015 中的新增功能 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
 helpviewer_keywords:
@@ -16,13 +13,13 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+manager: jillfra
+ms.openlocfilehash: 6b3554373d4447aa3bd503668328424b25c43348
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740268"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790728"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 中的新增功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -183,18 +180,18 @@ ms.locfileid: "53740268"
 ### <a name="notification-hub"></a>通知中心
  通知中心的 UI 已经得到了简化，从而使快速浏览更为轻松。 已添加其他类型的通知（包括性能问题、呈现问题和崩溃），并且现在让 Visual Studio 停止显示通知。 有关详细信息，请参阅 [Visual Studio 通知](./ide/visual-studio-notifications.md)。
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens查找你的代码 （仅限 Enterprise 和 Professional 版本） 发生了什么情况
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens：查找代码所发生的变化（仅适用于企业版和专业版）
  专注于工作的同时，查找有关代码的信（不离开编辑器）。 可以针对存储在 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 中的代码查看工作项、bug、代码评审等的更改和其他历史记录。
 
  在 Visual Studio Enterprise 和 Visual Studio Professional 中，你现在可以：
 
 - 获取 Visual Studio 编辑器中整个代码文件的历史记录。
 
-   ![CodeLens获取代码文件的详细信息](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens：获取代码文件的详细信息](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - 查看显示更改你的代码的人员的图。 这可以帮助发现团队更改中的模式并评估它们的影响。
 
-   ![CodeLens作为图形查看代码更改历史记录](./ide/media/codelens.png "CodeLens")
+   ![CodeLens：通过图形查看代码更改历史记录](./ide/media/codelens.png "CodeLens")
 
 - 轻松查看上次更改代码的时间。
 

@@ -1,14 +1,9 @@
 ---
 title: 性能工具入门 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, performance
 - getting started, profiling tools
@@ -16,13 +11,13 @@ ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3503c845bd9b8ef3b5362f689d856dd04b59280f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f075f6a10e34080f6abf406a5f5828d2cf0ea444
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777052"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54770922"
 ---
 # <a name="getting-started-with-performance-tools"></a>性能工具入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,6 +43,3 @@ ms.locfileid: "51777052"
  [分析性能工具数据](../profiling/analyzing-performance-tools-data.md)   
  [使用性能规则对数据进行分析](../profiling/using-performance-rules-to-analyze-data.md)   
  [配置性能会话](../profiling/configuring-performance-sessions.md)
-
-
-

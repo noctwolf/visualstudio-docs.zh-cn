@@ -1,25 +1,20 @@
 ---
 title: 步骤 6：命名按钮控件 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e02c240f8e4146ce1c87fd1d90c30eb7787cef5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a65eb289cf42ba7b9a9bd7d0ad2cfdc1b630a131
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303779"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796824"
 ---
 # <a name="step-6-name-your-button-controls"></a>步骤 6：命名按钮控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,13 +73,10 @@ ms.locfileid: "49303779"
   
      在为控件添加事件处理程序后，通过双击控件或在菜单栏上选择 “视图”、 “代码”，你可以随时从 Windows 窗体设计器返回到控件。  
   
-     生成程序时名称很重要，并且方法（包括事件处理程序）可以具有任何所需的名称。 使用 IDE 添加事件处理程序时，IDE 将基于控件的名称和正在处理的事件创建一个名称。 例如，名为  “showButton”的按钮的 Click 事件称为 `showButton_Click()` 事件处理程序方法。 此外，通常会在方法名称后面添加一对括号 ()，以表明正在讨论的对象是方法。 如果你决定要更改代码的变量名，请右键单击代码中的变量，然后选择 “重构”、 “重命名”。 将重命名代码中变量的所有实例。 请参阅[重命名重构 (C#)](../csharp-ide/rename-refactoring-csharp.md)或[的重构和重命名对话框的](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)有关详细信息。  
+     生成程序时名称很重要，并且方法（包括事件处理程序）可以具有任何所需的名称。 使用 IDE 添加事件处理程序时，IDE 将基于控件的名称和正在处理的事件创建一个名称。 例如，名为  “showButton”的按钮的 Click 事件称为 `showButton_Click()` 事件处理程序方法。 此外，通常会在方法名称后面添加一对括号 ()，以表明正在讨论的对象是方法。 如果你决定要更改代码的变量名，请右键单击代码中的变量，然后选择 “重构”、 “重命名”。 将重命名代码中变量的所有实例。 请参阅[重命名重构 (C#)](../csharp-ide/rename-refactoring-csharp.md)或[的重构和重命名对话框](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)有关详细信息。  
   
 ### <a name="to-continue-or-review"></a>继续或查看  
   
 -   若要转到下一个教程，请参阅[步骤 7：向窗体添加对话框组件](../ide/step-7-add-dialog-components-to-your-form.md)。  
   
 -   若要返回上一个教程，请参阅[步骤 5：向窗体添加控件](../ide/step-5-add-controls-to-your-form.md)。
-
-
-

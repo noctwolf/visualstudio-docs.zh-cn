@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8c5ae8995e86ebe90d6a9d6612c35005896e039
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15ff4af24ac814dca73ee7032da2d66b29df641d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926354"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972204"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>调试准备：控制台项目 (C#，c + +、 Visual Basic 中， F#)
 
@@ -56,7 +56,7 @@ ms.locfileid: "53926354"
   
 ## <a name="see-also"></a>请参阅  
  [调试本机代码](../debugger/debugging-native-code.md)   
- [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
+ [调试托管代码](../debugger/debugging-managed-code.md)   
  [Visual C++ 项目类型](../debugger/debugging-preparation-visual-cpp-project-types.md)   
  [C#、F#、和 Visual Basic 项目类型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [C++ 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)   

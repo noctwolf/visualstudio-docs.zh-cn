@@ -1,13 +1,9 @@
 ---
 title: 使用 XAML 设计器创建 UI
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
@@ -17,13 +13,13 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3bd82bd99901ba0b8df400e3780b17d1baadab0c
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53837285"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795164"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中，使用 XAML 设计器创建 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +87,9 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
 
  **显示** 为应用指定不同的显示大小和分辨率。
 
- **方向**指定不同的应用的方向：“横向”或“纵向”。
+ **方向** 为应用指定不同的方向：“横向”或“纵向”。
 
- **边缘**指定不同的边缘对齐方式，为你的应用：“两者”、“左对齐”、“右对齐”或“无”。
+ **边缘** 为应用指定不同的边缘对齐方式：“两端对齐”、“左对齐”、“右对齐”或“无”。
 
  **高对比度** 根据选定的对比度设置预览应用。 如果将此设置的值不是“默认值” ，将重写 App.xaml 中的 `RequestedTheme` 属性设置。
 
