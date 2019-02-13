@@ -1,7 +1,6 @@
 ---
 title: 单元测试基础
 ms.date: 2016-01-07
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -10,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76bd796bb706b63d2bb8ac022eb610a8a7d22d60
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63d2da519bc51149051a3f2476fb6d3a7623bb39
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024417"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922350"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -227,7 +226,7 @@ public void My_Test ()
 > [!WARNING]
 > 仅在 Visual Studio Enterprise 中支持每次生成后运行单元测试。
 
-|Button|说明|
+|Button|说明​​|
 |-|-|
 |![生成后运行](../test/media/ute_runafterbuild_btn.png)|若要在每个本地生成后运行单元测试，请在标准菜单上选择“测试”，然后在“测试资源管理器”工具栏上选择“生成后运行测试”。|
 
@@ -237,7 +236,7 @@ public void My_Test ()
 
 ![搜索筛选器类别](../test/media/ute_searchfilter.png)
 
-|Button|说明|
+|Button|说明​​|
 |-|-|
 |![测试资源管理器的分组按钮](../test/media/ute_groupby_btn.png)|若要按类别分组测试，请选择“分组依据”  按钮。|
 

@@ -1,7 +1,6 @@
 ---
 title: C# 编辑器格式设置选项
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting.Spacing
@@ -19,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b66acd2ab44db0c38d714c805db152e338da9175
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ec1847f30f5c04bd32ddea85ff95a0808daa8aa7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925170"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934375"
 ---
 # <a name="options-text-editor-c-code-style-formatting"></a>“选项”->“文本编辑器”->“C#”>“代码样式”->“格式设置”
 
@@ -36,7 +35,7 @@ ms.locfileid: "54925170"
 
 这些设置将影响代码编辑器向代码应用格式设置选项的时间。
 
-|Label|说明|
+|Label|说明​​|
 |-----------|-----------------|
 |键入时自动格式化|取消选择时，禁用“format statement on ;”和“format block  on }”选项。|
 |输入 ; 时自动设置语句格式|如果选中此项，会根据为编辑器选择的格式设置选项在完成时对语句进行格式设置。|
@@ -48,7 +47,7 @@ ms.locfileid: "54925170"
 
 这些设置配置“设置文档格式”命令以对文件执行其他代码清理。 有关如何应用这些设置的详细信息，请参阅[“设置文档格式”命令](../code-styles-and-quick-actions.md#format-document-command)。
 
-|Label|说明|相应的 EditorConfig 和工具 > 选项规则|
+|Label|说明​​|相应的 EditorConfig 和工具 > 选项规则|
 |-----------|-----------------|-----------------|-----------------|
 |**应用所有 C# 格式规则（缩进、换行、间距）**|“设置文档格式”命令始终修复格式问题。 此设置不可更改。| [Core EditorConfig 选项](../../ide/create-portable-custom-editor-options.md)<br/>[.NET EditorConfig 格式设置选项](../../ide/editorconfig-code-style-settings-reference.md#formatting-conventions)<br/><br/>“工具” > “选项” > “文本编辑器” > “C#” > “格式设置”> [“缩进”、“新行”、“间距”或“换行”]|
 |**在格式设置期间执行额外的代码清理**|选中后，在 Edit.FormatDocument 命令上应用以下指定规则的修复程序。| 不可用 |

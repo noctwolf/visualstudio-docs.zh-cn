@@ -1,7 +1,6 @@
 ---
 title: 脱机帮助文档
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - hv_general
@@ -20,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac5b6fed30689a69fe90bc0972f8cb292f7691b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987656"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938991"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
@@ -54,7 +53,7 @@ ms.locfileid: "54987656"
 
 ### <a name="navigation-tabs"></a>导航选项卡
 
-|Tab|说明|
+|Tab|说明​​|
 |---|-----------|
 |内容|以层次结构（目录）的形式显示已安装的内容。 可指定用于筛选所示标题的条件。|
 |索引|显示索引词的字母顺序列表。 可搜索索引，指定用于筛选条目的条件，并要求索引条目包含所指定的文本或以此文本开头。|
