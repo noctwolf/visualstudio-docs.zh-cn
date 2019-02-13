@@ -9,13 +9,12 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: a85a74907f36057d52257688960b897724a06502
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1c341345005795b2a4a1f95ef80a6ed2eb045c1b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139286"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948077"
 ---
 # <a name="optimizing-your-azure-code"></a>优化 Azure 代码
 对使用 Microsoft Azure 的应用程序进行编程时，应遵循某些编码做法，以免在云环境中应用程序的伸缩性、行为和性能出现问题。 Microsoft 提供了 Azure 代码分析工具，该工具可识别并确定部分常见问题并帮助你解决这些问题。 可以通过 NuGet 在 Visual Studio 中下载该工具。

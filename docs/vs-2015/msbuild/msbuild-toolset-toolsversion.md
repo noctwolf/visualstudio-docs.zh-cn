@@ -72,7 +72,7 @@ MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通�
   
 - 使用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 方法  
   
-  工具集属性指定工具的路径。 MSBuild 使用项目文件中的 `ToolsVersion` 属性的值以查找相应的注册表项，然后使用该注册表项中的信息来设置工具集属性。 例如，如果 `ToolsVersion` 的值为 `12.0`，则 MSBuild 将根据以下注册表项设置工具集属性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  工具集属性指定工具的路径。 MSBuild 使用项目文件中的 `ToolsVersion` 属性的值以查找相应的注册表项，然后使用该注册表项中的信息来设置工具集属性。 例如，如果 `ToolsVersion` 的值为 `12.0`，则 MSBuild 将根据以下注册表项设置工具集属性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0。  
   
   这些是工具集属性：  
   

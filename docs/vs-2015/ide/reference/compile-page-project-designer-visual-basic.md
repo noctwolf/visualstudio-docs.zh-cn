@@ -1,14 +1,9 @@
 ---
 title: “编译”页，项目设计器 (Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesCompile
 helpviewer_keywords:
@@ -23,13 +18,13 @@ ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
 caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4b369b1aa8d9e6857b29a5c37d13169b2e21ea74
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 928d3c4fe3e90c731f56eba4e7275772fdcd76c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924546"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778907"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>“编译”页, 项目设计器 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,21 +40,21 @@ ms.locfileid: "49924546"
  通过以下设置，可选择要显示或修改的配置和平台。  
   
 > [!NOTE]
->  使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 因此，不会显示“配置”和“平台”列表。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+>  使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 因此，不会显示“配置”和“平台”列表。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  **配置**  
- 指定要显示或修改的配置设置。 这些设置为“调试”（默认）、“发布”或“所有配置”。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)以及[如何：创建和编辑配置](../../ide/how-to-create-and-edit-configurations.md)。  
+ 指定要显示或修改的配置设置。 这些设置为“调试”（默认）、“发布”或“所有配置”。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)和[如何：创建和编辑配置](../../ide/how-to-create-and-edit-configurations.md)。  
   
  **平台**  
- 指定要显示或修改的平台设置。 可指定“任何 CPU”（默认）、“x64”或“x86”。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要显示或修改的平台设置。 可指定“任何 CPU”（默认）、“x64”或“x86”。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
 ## <a name="compiler-configuration-options"></a>编译器配置选项  
  通过以下设置，可设置编译器配置选项。  
   
  **生成输出路径**  
- 指定该项目配置的输出文件的位置。 在此框中键入生成输出的路径，或单击“浏览”按钮选择路径。 请注意，该路径是相对的；如果输入绝对路径，将保存为相对路径。 默认路径为 bin\Debug 或 bin\Release\\。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定该项目配置的输出文件的位置。 在此框中键入生成输出的路径，或单击“浏览”按钮选择路径。 请注意，该路径是相对的；如果输入绝对路径，将保存为相对路径。 默认路径为 bin\Debug 或 bin\Release\\。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
- 使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 使用“调试”菜单 (F5) 中的“生成”命令，会将生成放置在调试位置中（无论指定的“输出路径”为何）。 但是，“生成”菜单上的“生成”命令会将其放在指定的位置。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 使用“调试”菜单 (F5) 中的“生成”命令，会将生成放置在调试位置中（无论指定的“输出路径”为何）。 但是，“生成”菜单上的“生成”命令会将其放在指定的位置。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  Option Explicit  
  指定是否允许隐式声明变量。 选择“开启”，允许显式声明变量。 如果变量在使用之前未被声明，该设置会导致编译器报告错误。 选择“关闭”，允许隐式声明变量。  
@@ -175,11 +170,8 @@ ms.locfileid: "49924546"
   单击此按钮，访问“高级编译器设置”对话框。 使用“高级编译器设置”对话框，指定项目的高级生成配置属性。 此对话框仅适用于 Visual Basic 项目。 有关详细信息，请参阅[“高级编译器设置”对话框 (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [管理编译属性](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
+ [管理编译属性](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [如何：指定生成事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Visual Basic 命令行编译器](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [如何：创建和编辑配置](../../ide/how-to-create-and-edit-configurations.md)
-
-
-

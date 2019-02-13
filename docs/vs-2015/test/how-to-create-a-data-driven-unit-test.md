@@ -1,14 +1,9 @@
 ---
-title: 如何：创建数据驱动的单元测试 | Microsoft Docs
-ms.custom: ''
+title: 如何：创建数据驱动的单元测试 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
 - vs.test.testresults.unittest.datadriven.failure
@@ -19,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 02f55f39a045dcc0cc0b8eddf46134d4a380c9f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889355"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779157"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：创建数据驱动的单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -192,10 +187,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [如何：创建并运行单元测试](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
+ [如何：创建和运行单元测试](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
  [单元测试代码](../test/unit-test-your-code.md)   
  [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)   
  [使用适用于托管代码的 Microsoft 单元测试框架编写 .NET Framework 的单元测试](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
-
-
-

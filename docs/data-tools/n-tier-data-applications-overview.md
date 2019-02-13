@@ -11,15 +11,14 @@ ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 41728d6a2070cfa58a7d94cc8c129720b97ea92f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00bd9dff41e6c57fc6969f4198f96d0e209e2a77
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952647"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943683"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 层数据应用程序概述
 *N 层*数据应用程序是数据应用程序，分为多个*层*。 也称为"分布式应用程序"和"多层应用程序"，n 层应用程序分离到相互独立的层的客户端和服务器之间分布处理。 当开发访问数据的应用程序时，应清楚地区分组成应用程序的各个层。
@@ -76,13 +75,13 @@ Visual Studio 包含多种功能，可帮助开发人员创建 n 层应用程序
 
 [将数据集和 TableAdapter 分离到不同的项目中](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
-[演练：创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+[演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
 [使用 LINQ to SQL 的 n 层和远程应用程序](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
 ## <a name="see-also"></a>请参阅
 
-- [演练：创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [分层更新](../data-tools/hierarchical-update.md)
 - [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)
 - [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)

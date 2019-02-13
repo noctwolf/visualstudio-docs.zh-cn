@@ -14,15 +14,14 @@ ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c291f9437cab79ca1030bdde3d5d3df86547a87
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 945a04213ab902c17459eba6e418aeebea78f6d9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952309"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936611"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库（多个表）
 
@@ -78,7 +77,7 @@ ms.locfileid: "54952309"
 
 ## <a name="create-the-data-source"></a>创建数据源
 
-此步骤使用“数据源配置向导”从 Northwind 数据库创建一个数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何：安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
+此步骤使用“数据源配置向导”从 Northwind 数据库创建一个数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何： 安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 1. 上**数据**菜单中，选择**显示数据源**。
 

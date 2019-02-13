@@ -1,14 +1,9 @@
 ---
-title: 如何：查看现有类型（类设计器）| Microsoft Docs
-ms.custom: ''
+title: 如何：查看现有类型 （类设计器） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: de110a4e-5b51-4a40-9dee-615df4d8f999
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 630902cd789fb3eec0f51ed1cfede3ae54e1ac83
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5eb3891026976c036fb48b16ed5ebfeba909100e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846975"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758138"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>如何：查看现有类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ ms.locfileid: "49846975"
    你还可以将一个或多个类型从类视图中的项目节点拖动到类图中，来查看项目中的类型。  
   
 > [!TIP]
->  如果类视图尚未打开，则从“视图”菜单打开类视图。 有关类视图的详细信息，请参阅[查看类及其成员](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)。  
+>  如果类视图尚未打开，则从“视图”菜单打开类视图。 有关类视图的详细信息，请参阅[查看类及其成员](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)。  
   
  若要在关系图上的默认位置显示类型，请在类视图中选择一个或多个类型，右击选择的类型，再选择“查看类图”。  
   
@@ -74,6 +69,3 @@ ms.locfileid: "49846975"
  [如何：查看类型之间的继承（类设计器）](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [如何：自定义类图（类设计器）](../ide/how-to-customize-class-diagrams-class-designer.md)   
  [查看类型和关系（类设计器）](../ide/viewing-types-and-relationships-class-designer.md)
-
-
-

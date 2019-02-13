@@ -1,24 +1,19 @@
 ---
-title: 演练：创建、编辑和维护编码的 UI 测试 | Microsoft Docs
-ms.custom: ''
+title: 演练：创建、 编辑和维护编码的 UI 测试 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: aff0363b1fe554e55cae7b58d79cd8f765e76d68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c110ace4eba116c578d9d675eeafe4f678ac9d5d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792228"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>演练：创建、编辑和维护编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "49257525"
   
 1.  在“文件”菜单上，指向“新建”，然后选择“项目”。  
   
-     此时将出现 “新建项目” 对话框。  
+     此时将出现“新建项目”对话框。  
   
 2.  在“已安装”窗格中，展开 **Visual C#**，然后选择“Windows 桌面”。  
   
@@ -208,7 +203,7 @@ ms.locfileid: "49257525"
 3.  若要更正此问题，可以使用 `WaitForControlEnabled()` 方法使编码的 UI 测试等待 CheckBox 控件被启用，然后再继续此行。  
   
     > [!WARNING]
-    >  请不要修改 UIMap.Designer.cs 文件。 每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都会覆盖在 UIMapDesigner.cs 文件中进行的所有代码更改。 如果必须修改录制的方法，则必须将其复制到 UIMap.cs 文件并对其重命名。  UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 Coded UITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。  
+    >  请不要修改 UIMap.Designer.cs 文件。 每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都会覆盖在 UIMapDesigner.cs 文件中进行的所有代码更改。 如果必须修改录制的方法，则必须将其复制到 UIMap.cs 文件并对其重命名。 UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 Coded UITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。  
   
 4.  在解决方案资源管理器中，找到编码的 UI 测试项目中的 **UIMap.uitest**。  
   
@@ -381,7 +376,7 @@ ms.locfileid: "49257525"
  ![链接至视频](../data-tools/media/playvideo.gif "PlayVideo") [编码的 UI 测试-DeepDive-第 3 集-手工编码](http://go.microsoft.com/fwlink/?LinkID=230575)  
   
 ### <a name="hands-on-lab"></a>动手实验  
- [MSDN 虚拟实验室：使用 Visual Studio 2010 创建编码的 UI 测试的简介](http://go.microsoft.com/fwlink/?LinkID=22508)  
+ [MSDN 虚拟实验室：介绍如何使用 Visual Studio 2010 创建编码的 UI 测试](http://go.microsoft.com/fwlink/?LinkID=22508)  
   
 ### <a name="faq"></a>FAQ  
  [编码的 UI 测试常见问题 - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -393,9 +388,6 @@ ms.locfileid: "49257525"
   
 ## <a name="see-also"></a>请参阅  
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
- [WPF 设计器入门](http://msdn.microsoft.com/en-us/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
+ [WPF 设计器入门](http://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
  [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [使用编码的 UI 测试编辑器编辑编码的 UI 测试](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
-
-
-

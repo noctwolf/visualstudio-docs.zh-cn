@@ -1,14 +1,9 @@
 ---
 title: 创建解决方案和项目 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -22,13 +17,13 @@ ms.assetid: 836f8ca0-3fc9-4f4b-9090-45f2e4d2e9c8
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893690"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763109"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49893690"
 项目是生成应用程序所需的所有内容的逻辑容器。 从主菜单上选择“文件”|“新建”|“项目”创建项目时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将创建一个解决方案来包含它。 如有必要，可以继续向解决方案添加更多新项目或现有项目。 可以从现有代码文件创建项目，也可创建在使用完毕后删除的临时项目（仅 .NET）。  
   
 > [!NOTE]
->  本主题中的说明基于 Visual Studio Community 版。 您看到的对话框和菜单命令可能与此处描述的有所不同，这取决于您的设置或 Visual Studio 版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  本主题中的说明基于 Visual Studio Community 版。 您看到的对话框和菜单命令可能与此处描述的有所不同，这取决于您的设置或 Visual Studio 版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>从已安装项目模板创建项目  
  从主菜单上依次选择“文件”|“新建”|“项目”，打开“新建项目”对话框。 在“已安装”|“模板”下的左侧窗格中，选择编程语言和平台或技术，然后在中间窗格中选择可用的模板。  
@@ -85,7 +80,7 @@ ms.locfileid: "49893690"
    在创建一个空白解决方案后，您可以通过在 **项目** 菜单上单击 **添加新项** 或 **添加现有项** ，把新的或现有的项目或项添加到解决方案中。  
   
 ### <a name="deleting-solutions"></a>删除解决方案  
- 您可以永久性删除解决方案，但不能使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]来删除解决方案。 在删除解决方案前，把您要再次使用的任何项目移动到其他解决方案中。 然后，使用文件资源管理器删除包含 .sln 和 .suo 解决方案文件的目录。  
+ 您可以永久性删除解决方案，但不能使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]来删除解决方案。 在删除解决方案前，把您要再次使用的任何项目移动到其他解决方案中。 然后，使用文件资源管理器删除包含 .sln 和 .suo 解决方案文件的目录。  
   
 > [!NOTE]
 >  .suo 文件是隐藏文件，在默认的文件资源管理器设置下不会显示。  
@@ -100,7 +95,4 @@ ms.locfileid: "49893690"
   
 ## <a name="see-also"></a>请参阅  
  [解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)   
- [NIB 如何：创建多项目解决方案](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
-
-
-
+ [NIB 如何：创建多项目解决方案](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

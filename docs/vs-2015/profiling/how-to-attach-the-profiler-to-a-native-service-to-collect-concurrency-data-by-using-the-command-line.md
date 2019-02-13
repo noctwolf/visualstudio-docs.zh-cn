@@ -1,25 +1,20 @@
 ---
 title: 如何：使用命令行将探查器附加到本机服务以收集并发数据 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 283a1ee1-b43e-4daf-95ae-1311925a42a8
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6add1c0837e9a1d1308f61112540d00f42617a92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 77aa3500b867b63dd9049307c2e3e5986a1cba61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731443"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780852"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到本机服务以收集并发数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "51731443"
    > [!NOTE]
    >  大多数服务都需要 **/user** 和 **/crosssession** 选项。  
 
-   |                               选项                               |                                                                     描述                                                                      |
+   |                               选项                               |                                                                     说明​​                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` |                           指定要向探查器授予访问权限的帐户的可选域和用户名。                           |
    |           [/crosssession](../profiling/crosssession.md)            |                                               启用其他登录会话中的进程分析。                                                |
@@ -74,7 +69,7 @@ ms.locfileid: "51731443"
 
 -   下表中的选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
-    |选项|描述|  
+    |选项|说明​​|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
@@ -92,6 +87,3 @@ ms.locfileid: "51731443"
 2.  在命令提示符下键入以下命令以关闭探查器：  
 
      **VSPerfCmd** [/shutdown](../profiling/shutdown.md)
-
-
-

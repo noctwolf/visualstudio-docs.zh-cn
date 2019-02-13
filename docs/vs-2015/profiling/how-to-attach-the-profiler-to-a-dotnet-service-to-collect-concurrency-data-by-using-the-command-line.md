@@ -1,25 +1,20 @@
 ---
-title: 如何：使用命令行将探查器附加到 .NET 服务以收集并发数据 | Microsoft Docs
-ms.custom: ''
+title: 如何：Profiler 附加到.NET 服务以使用命令行收集并发数据 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ffbdfe37-8325-44be-bd36-2c8aab2dec7b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b4f4d940f2bb65fe27c826e4ce06d1ead6626d37
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 34db2b987f64329ead90ab6570fd98b78eb4934f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756430"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799681"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 .NET 服务，以收集并发数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +58,7 @@ ms.locfileid: "51756430"
     > [!NOTE]
     >  **/User** 和 **/crosssession** 选项通常为服务所需选项。  
   
-    |选项|描述|  
+    |选项|说明​​|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|指定拥有所分析进程的帐户的域和用户名。 仅在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。|  
     |[/crosssession](../profiling/crosssession.md)|启用其他会话中的进程分析。 在其他的会话中运行该服务时需要此选项。 会话 ID 在 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中列出。 可以将 **/CS** 指定为 **/crosssession** 的缩写。|  
@@ -88,7 +83,7 @@ ms.locfileid: "51756430"
   
 -   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
   
-    |选项|描述|  
+    |选项|说明​​|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
@@ -112,6 +107,3 @@ ms.locfileid: "51756430"
 2.  关闭探查器。 类型：  
   
      **VSPerfCmd**：[关闭](../profiling/shutdown.md)
-
-
-

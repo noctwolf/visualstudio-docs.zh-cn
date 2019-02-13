@@ -1,14 +1,9 @@
 ---
-title: 如何：创建多文件项模板 | Microsoft Docs
-ms.custom: ''
+title: 如何：创建多文件项模板 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
@@ -17,13 +12,13 @@ ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4616cb2f0e908b3228061288da05ce01543afdc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862172"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785895"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：创建多文件项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "49862172"
   
 1.  以创建单文件项模板的方式创建项模板。 有关详细信息，请参阅[如何：创建项模板](../ide/how-to-create-item-templates.md)。  
   
-2.  将 `TargetFileName` 属性添加至每一个 `ProjectItem` 元素。 将 `TargetFileName` 属性的值设为 $fileinputname$.FileExtension，此处 FileExtension 为模板中包含的文件的文件扩展名。 例如：  
+2.  将 `TargetFileName` 属性添加至每一个 `ProjectItem` 元素。 将 `TargetFileName` 属性的值设为 $fileinputname$.FileExtension，此处 FileExtension 为模板中包含的文件的文件扩展名。 例如:  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -93,6 +88,3 @@ ms.locfileid: "49862172"
  [如何：创建项模板](../ide/how-to-create-item-templates.md)   
  [模板参数](../ide/template-parameters.md)   
  [如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)
-
-
-

@@ -9,13 +9,12 @@ ms.custom: seodec18
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: b122b058d42be8970beeed3aa51957fd347d67ea
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3882f52dc38364b0ff325c49964fa907ee8a26ce
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139305"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927940"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>使用 Visual Studio 和 IntelliTrace 调试已发布的 Azure 云服务
 通过 IntelliTrace，可以在某个角色实例在 Azure 中运行时记录该角色实例的大量调试信息。 如果需要查找问题的原因，可以从 Visual Studio 使用 IntelliTrace 日志来单步执行代码，就像它在 Azure 中运行一样。 实际上，当 Azure 应用程序以云服务的形式在 Azure 中运行时，IntelliTrace 将记录关键代码执行和环境数据，并允许从 Visual Studio 中回放已记录的数据。

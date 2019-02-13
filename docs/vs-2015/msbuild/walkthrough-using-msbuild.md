@@ -1,27 +1,22 @@
 ---
 title: 演练：使用 MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49841412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54792215"
 ---
 # <a name="walkthrough-using-msbuild"></a>演练：使用 MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
   
 - 任务是工作的最小单位，换言之，它是生成的“原子”。 任务是可单独执行的组件，具有输入和输出。 目前尚没有在项目文件中引用或定义的任务。 以下各部分介绍如何将项目添加到项目文件。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)主题。  
   
-- 目标是任务的已命名序列。 在项目文件末尾有两个目标，它们目前包含在 HTML注释中：BeforeBuild 和 AfterBuild。  
+- 目标是任务的已命名序列。 有两个目标，请参阅项目文件的末尾，它们目前包含在 HTML 注释中：BeforeBuild 和 AfterBuild。  
   
   ```  
   <Target Name="BeforeBuild">  
@@ -587,5 +582,3 @@ $(PropertyName)
 ## <a name="see-also"></a>请参阅
 [MSBuild 概述](msbuild.md)  
  [MSBuild 参考](../msbuild/msbuild-reference.md)
-
-

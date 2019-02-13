@@ -9,15 +9,14 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 833f4fba621c41a51adca1368c784df313419f97
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945510"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929396"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 
@@ -60,7 +59,7 @@ ms.locfileid: "54945510"
 
 7. 将 T-SQL 脚本粘贴到查询编辑器，然后选择**Execute**按钮。
 
-     后不久，查询完成运行并创建数据库对象。 数据库包含两个表：客户和订单。 这些表最初不包含数据，但在运行，您将创建的应用程序时，您可以添加数据。 数据库还包含四个简单的存储的过程。
+     后不久，查询完成运行并创建数据库对象。 数据库包含两个表： 客户和订单。 这些表最初不包含数据，但在运行，您将创建的应用程序时，您可以添加数据。 数据库还包含四个简单的存储的过程。
 
 ## <a name="create-the-forms-and-add-controls"></a>创建窗体并添加控件
 

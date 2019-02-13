@@ -1,14 +1,9 @@
 ---
-title: 演练：使用配置文件定义数据源 | Microsoft Docs
-ms.custom: ''
+title: 演练：使用配置文件定义数据源 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a6adfc19d16e13449dd673ca7722781f16b4b6cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843036"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835116"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>演练：使用配置文件定义数据源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -224,7 +219,7 @@ ms.locfileid: "49843036"
   
 1.  向测试项目添加一个单元测试。  
   
-     有关详细信息，请参阅[针对现有代码创建并运行单元测试](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)。  
+     有关详细信息，请参阅[针对现有代码创建并运行单元测试](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)。  
   
 2.  将单元测试中自动生成的内容替换为以下代码：  
   
@@ -275,9 +270,6 @@ ms.locfileid: "49843036"
   
 ## <a name="see-also"></a>请参阅  
  [单元测试代码](../test/unit-test-your-code.md)   
- [为现有代码创建和运行单元测试](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [为现有代码创建和运行单元测试](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [测试应用](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [如何：创建数据驱动的单元测试](../test/how-to-create-a-data-driven-unit-test.md)
-
-
-

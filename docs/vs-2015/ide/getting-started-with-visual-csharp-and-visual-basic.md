@@ -1,13 +1,8 @@
 ---
-title: Visual C# 和 Visual Basic 入门 |Microsoft Docs
-ms.custom: ''
+title: 开始使用 VisualC#和 Visual Basic |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - C# tutorial
@@ -20,13 +15,13 @@ ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 747b36d69bfbd0a70c6df67e57174b3baf623543
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253768"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788276"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Visual C# 和 Visual Basic 入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ ms.locfileid: "49253768"
   
  [教程 3：创建匹配游戏](../ide/tutorial-3-create-a-matching-game.md)  
  构建一个匹配游戏，在该游戏中，玩家必须匹配隐藏的图标对。 了解如何执行以下操作：使用 `List` 对象包含多个对象；使用 `foreach` 循环；使用引用变量跟踪窗体状态；构建可用于多个对象的事件处理程序以及使计时器在开始时正好触发一次。
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 特定于 Visual C++ 的 MSBuild 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 05410f0c-7356-4692-bc00-20664421c9ff
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1da9bdb5c181c9fd935987d629f08af1505f0501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c7bebf38462e7ca6d979e22a962f7872a7f764b5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246139"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790293"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>特定于 Visual C++ 的 MSBuild 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,14 +31,14 @@ ms.locfileid: "49246139"
   
  除了特定于每个任务的参数外，每个任务还具有以下参数。  
   
-|参数|描述|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`Condition`|可选 `String` 参数。<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 引擎使用 `Boolean` 表达式来确定是否执行此任务。 有关 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 支持的条件的信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
 |`ContinueOnError`|可选参数。 可以包含下列值之一：<br /><br /> -   **WarnAndContinue** 或 **true**。 当任务失败时，[Target](../msbuild/target-element-msbuild.md) 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为警告<br />-   **ErrorAndContinue**。 当任务失败时，`Target` 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为错误。<br />-   **ErrorAndStop** 或 **false**（默认值）。 当任务失败时，将不会执行 `Target` 元素中的剩余任务和生成，并且整个 `Target` 元素和生成都被视为已失败。<br /><br /> 4.5 之前的 .NET Framework 版本仅支持 `true` 和 `false` 值。<br /><br /> 有关详细信息，请参阅[如何：忽略任务中的错误](../msbuild/how-to-ignore-errors-in-tasks.md)。|  
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|说明​​|  
 |-----------|-----------------|  
 |[BscMake 任务](../msbuild/bscmake-task.md)|包装 Microsoft 浏览信息维护实用工具 (bscmake.exe)。|  
 |[CL 任务](../msbuild/cl-task.md)|包装 Visual C++ 编译器工具 (cl.exe)。|  
@@ -60,6 +55,3 @@ ms.locfileid: "49246139"
 |[MSBuild 参考](../msbuild/msbuild-reference.md)|介绍 MSBuild 系统的元素。|  
 |[任务](../msbuild/msbuild-tasks.md)|介绍任务，这些任务是代码单元，可以组合起来以产生生成。|  
 |[任务写入](../msbuild/task-writing.md)|描述如何创建任务。|
-
-
-

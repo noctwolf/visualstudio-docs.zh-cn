@@ -1,14 +1,9 @@
 ---
-title: 如何：对应用程序和部署清单进行签名 | Microsoft Docs
-ms.custom: ''
+title: 如何：应用程序和部署清单签名 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
 - code signing [Visual Studio], Authenticode
@@ -22,13 +17,13 @@ ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
 caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3162d65f8712c7db55be1bced9f815ecfaa866f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0ccd3d6b6f9c1d995a0aebb4bc1e3007e025ca5e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299713"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784179"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单进行签名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -118,6 +113,3 @@ ms.locfileid: "49299713"
  [如何：创建公钥/私钥对](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [“项目设计器”->“签名”页](../ide/reference/signing-page-project-designer.md)   
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)
-
-
-

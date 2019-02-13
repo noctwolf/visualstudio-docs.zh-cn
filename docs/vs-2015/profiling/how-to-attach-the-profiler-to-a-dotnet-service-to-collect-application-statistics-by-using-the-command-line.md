@@ -1,25 +1,20 @@
 ---
-title: 如何：将探查器附加到 .NET 服务，以使用命令行收集应用程序统计信息 | Microsoft Docs
-ms.custom: ''
+title: 如何：Profiler 附加到.NET 服务以使用命令行收集应用程序统计信息 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8100f04471b0fd5886bed5c5ea815632cb0031db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 402d0c4de07cb827bbad389c447dedd2dc79d7ef
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800830"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760173"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 .NET 服务以收集应用程序统计信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +65,7 @@ ms.locfileid: "51800830"
    > [!NOTE]
    >  **/User** 和 **/crosssession** 选项通常为服务所需选项。  
 
-   |                                 选项                                  |                                                                                                                                          描述                                                                                                                                           |
+   |                                 选项                                  |                                                                                                                                          说明​​                                                                                                                                           |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |      指定拥有所分析进程的帐户的域和用户名。 仅在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。       |
    |              [/crosssession](../profiling/crosssession.md)              | 启用其他会话中的进程分析。 在其他的会话中运行该服务时需要此选项。 会话 ID 在 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中列出。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
@@ -89,7 +84,7 @@ ms.locfileid: "51800830"
 
      默认情况下，性能数据为每 10,000,000 个非暂停处理器时钟周期采样一次。 在 1GH 处理器上，每秒约为 100 次采样。 可以指定以下选项之一，更改时钟周期间隔或指定不同的采样事件。  
 
-   |样本事件|描述|  
+   |样本事件|说明​​|  
    |------------------|-----------------|  
    |[/timer](../profiling/timer.md) **:** `Interval`|将采样间隔更改为 `Interval` 所指定的非暂停时钟周期数目。|  
    |[/pf](../profiling/pf.md)[**:**`Interval`]|将采样事件更改为页面错误。 如果已指定 `Interval`，则会设置样本之间的页面错误数目。 默认值为 10。|  
@@ -105,7 +100,7 @@ ms.locfileid: "51800830"
 
 -   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
-    |选项|描述|  
+    |选项|说明​​|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
@@ -139,6 +134,3 @@ ms.locfileid: "51800830"
 ## <a name="see-also"></a>请参阅  
  [分析服务](../profiling/command-line-profiling-of-services.md)   
  [采样方法数据视图](../profiling/profiler-sampling-method-data-views.md)
-
-
-

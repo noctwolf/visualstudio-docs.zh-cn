@@ -1,14 +1,9 @@
 ---
 title: MSBuild 命令行参考 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +17,13 @@ ms.assetid: edaa65ec-ab8a-42a1-84cb-d76d5b2f4584
 caps.latest.revision: 61
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a1827166829686801743ccc98156a0009e50dc3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e56784e960729292c46d9b1241fc7e3504c6e434
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245903"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54777490"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令行参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,13 +39,13 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ## <a name="arguments"></a>自变量  
   
-|参数|描述|  
+|参数|说明​​|  
 |--------------|-----------------|  
 |`ProjectFile`|在指定项目文件中生成目标。 如果不指定项目文件，则 MSBuild 会在当前工作目录中搜索以“proj”结尾的文件扩展名并使用该文件。 还可以为此参数指定 Visual Studio 解决方案文件。|  
   
 ## <a name="switches"></a>开关  
   
-|开关|缩写形式|描述|  
+|开关|缩写形式|说明​​|  
 |------------|----------------|-----------------|  
 |/help|/? 或 /h|显示用法信息。 以下命令是一个示例：<br /><br /> `msbuild.exe /?`|  
 |/detailedsummary|/ds|在生成日志末尾显示有关生成的配置以及如何将它们安排到节点中的详细信息。|  
@@ -70,7 +65,7 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ### <a name="switches-for-loggers"></a>记录器的开关  
   
-|开关|缩写形式|描述|  
+|开关|缩写形式|说明​​|  
 |------------|----------------|-----------------|  
 |/consoleloggerparameters:<br /><br /> `parameters`|/clp:`parameters`|将指定的参数传递到控制台记录器，后者会在控制台窗口中显示生成信息。 可以指定以下参数：<br /><br /> -   **PerformanceSummary**。 显示在任务、目标和项目中所花费的时间。<br />-   **Summary**。 在末尾显示错误和警告摘要。<br />-   **NoSummary**。 不在末尾显示错误和警告摘要。<br />-   **ErrorsOnly**。 仅显示错误。<br />-   **WarningsOnly**。 仅显示警告。<br />-   **NoItemAndPropertyList**。 如果详细级别设置为 `diagnostic`，则不在每个项目生成开头显示项和属性的列表。<br />-   **ShowCommandLine**。 显示 `TaskCommandLineEvent` 消息。<br />-   **ShowTimestamp**。 将时间戳显示为任何消息的前缀。<br />-   **ShowEventId**。 显示每个已启动事件、已完成事件和消息的事件 ID。<br />-   **ForceNoAlign**。 不将文本与控制台缓冲区大小对齐。<br />-   **DisableConsoleColor**。 将默认控制台颜色用于所有日志记录消息。<br />-   **DisableMPLogging**。 在非多处理器模式下运行时，禁用输出的多处理器日志记录样式。<br />-   **EnableMPLogging**。 启用多处理器日志记录样式（即使在非多处理器模式下运行）。 默认情况下，此日志记录样式处于启用状态。<br />-   **Verbosity**。 重写此记录器的 **/verbosity** 设置。<br /><br /> 使用分号或逗号分隔多个参数，如以下示例所示：<br /><br /> `/consoleloggerparameters:PerformanceSummary;NoSummary /verbosity:minimal`|  
 |/distributedFileLogger|/dfl|将每个 MSBuild 节点的生成输出记录到其自己的文件。 这些文件的初始位置是当前目录。 默认情况下，这些文件命名为“MSBuild*NodeId*.log”。 可以使用 **/fileLoggerParameters** 开关指定文件位置和 fileLogger 的其他参数。<br /><br /> 如果使用 **/fileLoggerParameters** 开关命名日志文件，则分布式记录器会在为每个节点创建日志文件时使用该名称作为模板并将节点 ID 追加到该名称。|  
@@ -97,6 +92,3 @@ msbuild SlnFolders.sln /t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder
 ## <a name="see-also"></a>请参阅  
  [MSBuild 参考](../msbuild/msbuild-reference.md)   
  [常用的 MSBuild 项目属性](../msbuild/common-msbuild-project-properties.md)
-
-
-

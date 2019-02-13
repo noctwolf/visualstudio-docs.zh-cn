@@ -14,15 +14,14 @@ ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0e80e97a82ee2022a6edb5a1bed0826ec8dbf39e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f35aaf5b36da2bf40420bd4461f7d2fa880575e4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008447"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937495"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>将对象绑定作为 Visual Studio 中的数据源
 
@@ -135,7 +134,7 @@ Visual Studio 提供用于为你的应用程序中的数据源使用自定义对
 
 Visual Studio 创建可以直接对数据库执行的 DBDirect 方法。 这些方法不需要 DataSet 或 DataTable 对象。
 
-|TableAdapter DBDirect 方法|说明|
+|TableAdapter DBDirect 方法|说明​​|
 | - |-----------------|
 |`TableAdapter.Insert`|将新记录添加到数据库，您可以在各列的值作为方法参数中传递。|
 |`TableAdapter.Update`|更新现有数据库中的记录。 Update 方法使用原始的和新列的值作为方法参数。 用于查找的原始记录的原始值和新值用于更新该记录。<br /><br /> `TableAdapter.Update`方法还可用于将数据集的更改回数据库中，通过采用<xref:System.Data.DataSet>， <xref:System.Data.DataTable>， <xref:System.Data.DataRow>，或数组<xref:System.Data.DataRow>的方法参数。|

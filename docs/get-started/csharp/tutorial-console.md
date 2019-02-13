@@ -4,7 +4,6 @@ description: 了解如何在 Visual Studio 中分步创建 C# 控制台应用程
 ms.custom: seodec18, get-started
 ms.date: 01/25/2019
 ms.technology: vs-ide-general
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -15,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 856c20175fd444c7acf83bdf02526c907a28b92f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936952"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156067"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教程：在 Visual Studio 中创建一个简单的 C# 控制台应用程序
 
@@ -530,9 +529,8 @@ namespace Calculator
 恭喜你完成本教程！ 若要了解详情，请继续学习后续教程。
 
 > [!div class="nextstepaction"]
-> [C# 教程](/dotnet/csharp/tutorials/)
+> [继续学习更多 C# 教程](/dotnet/csharp/tutorials/)
 
 ## <a name="see-also"></a>请参阅
 
-* [视频课程：面向零基础初学者的 C# 基础知识](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169)
 * [了解如何在 Visual Studio 中调试 C# 代码](tutorial-debugger.md)

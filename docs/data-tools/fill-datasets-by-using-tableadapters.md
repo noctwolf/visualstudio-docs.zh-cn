@@ -17,15 +17,14 @@ ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b069e1ed40c4bd110cba87886ea21ea90a96774b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006159"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937989"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填充数据集
 
@@ -36,7 +35,7 @@ TableAdapter 组件填充数据库，基于一个或多个查询或您指定的�
 
 TableAdapter 操作有关的详细信息，您可以直接跳到以下主题之一：
 
-|主题|说明|
+|主题|说明​​|
 |-----------|-----------------|
 |[创建和配置 Tableadapter](../data-tools/create-and-configure-tableadapters.md)|如何使用设计器创建和配置 Tableadapter|
 |[创建参数化 TableAdapter 查询](../data-tools/create-parameterized-tableadapter-queries.md)|如何使用户能够为 TableAdapter 过程或查询提供参数|
@@ -90,7 +89,7 @@ TableAdapter 类不是属于[!INCLUDE[dnprdnshort](../code-quality/includes/dnpr
 
 以下是常用的方法和 Tableadapter 的属性：
 
-|成员|说明|
+|成员|说明​​|
 |------------|-----------------|
 |`TableAdapter.Fill`|TableAdapter 的关联的数据的 TableAdapter 的结果表中填充`SELECT`命令。|
 |`TableAdapter.Update`|将更改发送回数据库，并返回一个整数，表示更新影响的行数。 有关详细信息，请参阅[使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)。|
@@ -127,7 +126,7 @@ TableAdapterManager 类不是属于[!INCLUDE[dnprdnshort](../code-quality/includ
 
 以下是常用的方法和属性`TableAdapterManager`类：
 
-|成员|说明|
+|成员|说明​​|
 |------------|-----------------|
 |`UpdateAll` 方法|将保存数据的所有表中的所有数据。|
 |`BackUpDataSetBeforeUpdate` 属性|确定是否在执行前创建数据集的备份副本`TableAdapterManager.UpdateAll`方法。一个布尔值。|

@@ -1,32 +1,27 @@
 ---
 title: 泛型方法的单元测试 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3657c3ea41af2aa85177ff47a28797ef7f55cc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914393"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771458"
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-可采用与其他方法完全一样的方式为泛型方法生成单元测试，如[如何：创建和运行单元测试](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)中所述。 以下各节提供有关为泛型方法创建单元测试的信息和示例。  
+您可以生成泛型方法的单元测试完全像您一样的其他方法，如中所述[如何：创建和运行单元测试](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)。 以下各节提供有关为泛型方法创建单元测试的信息和示例。  
   
 ## <a name="type-arguments-and-type-constraints"></a>类型参数和类型约束  
  当 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 为泛型类生成单元测试（例如 `MyList<T>`）时，它会生成两个方法：通用帮助器方法和测试方法。 如果 `MyList<T>` 具有一个或多个类型约束，则类型参数必须满足所有类型约束。 为确保待测试的泛型代码按预期对允许的所有输入均有效，该测试方法将调用具有你希望测试的所有约束的通用帮助器方法。  
@@ -116,7 +111,7 @@ public void SizeOfLinkedListTestHelper<T>()
 [TestMethod()]  
 public void SizeOfLinkedListTest()   
 {  
-    SizeOfLinkedListTestHelper<int>();  // step 6  
+    SizeOfLinkedListTestHelper<int>();  // step 6  
     SizeOfLinkedListTestHelper<char>(); // step 7  
 }  
 ```  
@@ -203,8 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [单元测试的剖析](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [单元测试的剖析](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [单元测试代码](../test/unit-test-your-code.md)
-
-
-

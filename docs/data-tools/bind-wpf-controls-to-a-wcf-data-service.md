@@ -12,16 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b30675b126f6ed50022f4996cbad9de9226eb59
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: eb6b9a9a213932662a548314bcc39c75e9d35bc3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54269912"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909682"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>将 WPF 控件绑定到 WCF 数据服务
 
@@ -79,7 +78,7 @@ ms.locfileid: "54269912"
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>创建实体数据模型服务
 
-若要使用的 WCF 数据服务公开的应用程序的数据，必须定义服务的数据模型。 WCF 数据服务支持两种类型的数据模型：实体数据模型和使用实现的公共语言运行时 (CLR) 对象定义的自定义数据模型<xref:System.Linq.IQueryable%601>接口。 在本演练中，你将为该数据模型创建一个实体数据模型。
+若要使用的 WCF 数据服务公开的应用程序的数据，必须定义服务的数据模型。 WCF 数据服务支持两种类型的数据模型： 实体数据模型和使用实现的公共语言运行时 (CLR) 对象定义的自定义数据模型<xref:System.Linq.IQueryable%601>接口。 在本演练中，你将为该数据模型创建一个实体数据模型。
 
 1. 在 **“项目”** 菜单上，单击 **“添加新项”**。
 
@@ -306,7 +305,7 @@ ms.locfileid: "54269912"
 
 - 了解如何使用 Visual Studio 中的“数据源”窗口将 WPF 控件绑定到其他类型的数据源上。 有关详细信息，请参阅[绑定 WPF 控件添加到数据集](../data-tools/bind-wpf-controls-to-a-dataset.md)。
 
-- 了解如何使用 Visual Studio 中的“数据源”窗口在 WPF 控件中显示相关数据（即父-子关系中的数据）。 有关详细信息，请参见[演练：在 WPF 应用程序中显示相关数据](../data-tools/display-related-data-in-wpf-applications.md)
+- 了解如何使用 Visual Studio 中的“数据源”窗口在 WPF 控件中显示相关数据（即父-子关系中的数据）。 有关详细信息，请参阅[演练： 在 WPF 应用程序中显示相关的数据](../data-tools/display-related-data-in-wpf-applications.md)。
 
 ## <a name="see-also"></a>请参阅
 

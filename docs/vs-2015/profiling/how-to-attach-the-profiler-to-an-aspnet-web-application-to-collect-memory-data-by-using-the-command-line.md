@@ -1,25 +1,20 @@
 ---
-title: 如何：使用命令行将探查器附加到 ASP.NET Web 应用程序以收集内存数据 | Microsoft Docs
-ms.custom: ''
+title: 如何：将 Profiler 附加到 ASP.NET Web 应用程序以使用命令行收集内存数据 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: d608f85a-41ae-4ca7-85e6-b96624dbc83c
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6818c7c23a1ca42fc4537e1024778cd4cab0f177
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1d824a567f5819125837dde401107a050561d08a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794565"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54783467"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 ASP.NET Web 应用程序以收集内存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ ms.locfileid: "51794565"
 
         指定下列选项中的一个且仅指定一个。  
 
-       |选项|描述|  
+       |选项|说明​​|  
        |------------|-----------------|  
        |/globalsamplegc|启用对内存分配数据的收集。|  
        |/globalsamplegclife|启用对内存分配数据和对象生存期数据的收集。|  
@@ -73,7 +68,7 @@ ms.locfileid: "51794565"
    > [!NOTE]
    >  **/user** 和 **/crosssession** 选项通常为 ASP.NET 应用程序所需选项。  
 
-   |                                 选项                                  |                                                                                                                                                        描述                                                                                                                                                        |
+   |                                 选项                                  |                                                                                                                                                        说明​​                                                                                                                                                        |
    |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |                   指定拥有 ASP.NET 工作进程的帐户的域和用户名。 在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。                    |
    |              [/crosssession](../profiling/crosssession.md)              | 启用其他登录会话中的进程分析。 如果 ASP.NET 应用程序在其他会话中运行，则需要此选项。 会话标识符在 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中列出。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
@@ -100,7 +95,7 @@ ms.locfileid: "51794565"
 
 -   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
-    |选项|描述|  
+    |选项|说明​​|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由 `PID` 指定的进程的数据收集。|  
@@ -136,6 +131,3 @@ ms.locfileid: "51794565"
 ## <a name="see-also"></a>请参阅  
  [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)
-
-
-

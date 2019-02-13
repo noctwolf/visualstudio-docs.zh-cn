@@ -1,25 +1,20 @@
 ---
-title: 步骤 3：向每个标签分配一个随机图标 | Microsoft Docs
-ms.custom: ''
+title: 步骤 3：向每个标签分配一个随机图标 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8ce8047cbdf6d487a1b4ff00ae99c617a9548fca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 993f6533a5d654ab183fdee587f4968d7bff8c4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298774"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799662"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步骤 3：向每个标签分配一个随机图标
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "49298774"
   
      第一行将 `control` 变量转换为名为 `iconLabel` 的标签。 第一行之后的行是检查以确保转换起作用的 `if` 语句。 如果转换起作用，则 `if` 语句中的语句将运行。 （你可以回想前面的教程，`if` 语句用于计算你指定的任何条件）。`if` 语句中的第一行将创建一个名为 `randomNumber` 的变量，该变量包含一个与图标列表中的项对应的随机数。 为此，它使用你之前创建的 `Next` 对象的 `Random` 方法。 `Next` 方法将返回此随机数。 此行也使用 `Count` 列表的 `icons` 属性来确定随机数的选择范围。 下一行会将图标列表项之一分配给标签的 `Text` 属性。 本主题后面的部分将介绍已注释掉的行。 最后，`if` 语句中最后一行将从列表中删除已添加到窗体中的图标。  
   
-     请记住，如果你不确定部分代码的行为，可将鼠标指针定位在代码元素的上方，并查看生成的工具提示。 你还可以在使用 Visual Studio 调试器运行程序时，逐步调试每行代码。 有关详细信息，请参阅 [How Do I: Step with The Debugger in Visual Studio?](http://msdn.microsoft.com/vstudio/ee672313.aspx)（如何：在 Visual Studio 中使用调试器逐步调试？）或[使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)。  
+     请记住，如果你不确定部分代码的行为，可将鼠标指针定位在代码元素的上方，并查看生成的工具提示。 你还可以在使用 Visual Studio 调试器运行程序时，逐步调试每行代码。 有关详细信息，请参阅[如何：使用 Visual Studio 中调试程序步骤？](http://msdn.microsoft.com/vstudio/ee672313.aspx)或[使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)有关详细信息。  
   
 3.  若要用图标填充游戏板，你需要在程序启动时调用 `AssignIconsToSquares()` 方法。 如果使用 Visual C#，则在 `Form1` 构造函数中 `InitializeComponent()` 方法调用下方直接添加一条语句，这样窗体便可以调用新方法以在显示之前对自身进行设置。 创建新对象（例如类或结构）时，将调用构造函数。 有关详细信息，请参阅 Visual Basic 中的[构造函数（C# 编程指南）](http://msdn.microsoft.com/library/ace5hbzh.aspx)或[使用构造函数和析构函数](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx)。  
   
@@ -90,6 +85,3 @@ ms.locfileid: "49298774"
 -   若要转到下一个教程步骤，请参阅[步骤 4：向每个标签添加一个 Click 事件处理程序](../ide/step-4-add-a-click-event-handler-to-each-label.md)。  
   
 -   若要返回上一个教程步骤，请参阅[步骤 2：添加随机对象和图标列表](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。
-
-
-

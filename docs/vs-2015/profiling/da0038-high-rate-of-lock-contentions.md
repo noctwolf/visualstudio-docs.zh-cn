@@ -1,14 +1,9 @@
 ---
 title: DA0038：锁争用率很高 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.38
 - vs.performance.rules.DA0038
@@ -17,18 +12,18 @@ ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c160ff4a61e8a0e2879cc0cacc59aae9e951361b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 21d5811493dff235b43d128ab7f62f32702e7961
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761145"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54766197"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：锁争用率很高
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 的最新文档，请参阅[DA0038： 的锁争用率高](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions)docs.microsoft.com 上。  
+Visual Studio 2017 的最新文档，请参阅[DA0038:高锁争用率](https://docs.microsoft.com/visualstudio/profiling/da0038-high-rate-of-lock-contentions)docs.microsoft.com 上。  
   
 |||  
 |-|-|  
@@ -58,7 +53,6 @@ Visual Studio 2017 的最新文档，请参阅[DA0038： 的锁争用率高](htt
 >  分析数据中报告的锁争用率过高时，将触发 [DA0039：锁争用率非常高](../profiling/da0039-very-high-rate-of-lock-contentions.md)警告消息，不会触发此信息消息。  
   
 ## <a name="how-to-investigate-a-warning"></a>如何调查警告  
- 双击消息导航到分析数据的[“标记”](../profiling/marks-view.md)视图。  查找 **.NET CLR LocksAndThreads\Contention Rate / sec** 列。 确定是否存在特定阶段的程序执行，其中锁争用高于其他阶段。  
+ 双击消息导航到分析数据的“标记”[](../profiling/marks-view.md)视图。  查找 **.NET CLR LocksAndThreads\Contention Rate / sec** 列。 确定是否存在特定阶段的程序执行，其中锁争用高于其他阶段。  
   
  仅在未使用并发分析方法时才会触发此规则。 并发分析方法是诊断应用程序中与锁争用相关的性能问题的最好工具。 收集并发分析数据，以便了解应用程序的锁定行为。 包括了解哪些锁争用较严重、等待争用锁时延迟的线程执行时间，以及其中涉及哪些特定代码。 并发分析收集所有锁争用的数据，包括本机 Windows 设备、.NET Framework 类和应用程序引用的任何其他第三方库的锁定行为。 有关 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中的并发分析的详细信息，请参阅[收集线程和处理并发数据](../profiling/collecting-thread-and-process-concurrency-data.md)。 有关命令行中的并发分析的信息的链接，请参阅[使用命令行中的分析方法](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)的**使用并发方法收集资源争用和线程活动数据**部分。
-

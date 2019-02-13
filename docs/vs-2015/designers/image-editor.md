@@ -1,14 +1,9 @@
 ---
 title: 图像编辑器 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
@@ -16,13 +11,13 @@ ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185765"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768298"
 ---
 # <a name="image-editor"></a>图像编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +98,7 @@ ms.locfileid: "49185765"
   
  下表描述“图像编辑器模式”工具栏上的各项，按其从左至右的显示顺序依次列出。  
   
-|工具栏项|描述|  
+|工具栏项|说明​​|  
 |------------------|-----------------|  
 |**选择**|可选择图像的矩形区域。 选择区域后，可执行剪切、复制、移动、缩放、旋转、翻转或删除操作。 若有可用的选择区域，绘图工具仅影响所选区域。|  
 |**不规则选择**|可选择图像的不规则区域。 选择区域后，可执行剪切、复制、移动、缩放、旋转、翻转或删除操作。 若有可用的选择区域，绘图工具仅影响所选区域。|  
@@ -127,7 +122,7 @@ ms.locfileid: "49185765"
   
  下表描述“图像编辑器”工具栏上的项目，按其从上到下的显示顺序列出。  
   
-|工具栏项|描述|  
+|工具栏项|说明​​|  
 |------------------|-----------------|  
 |**铅笔**|使用处于活动状态的颜色选择绘制锯齿笔划。 可在“属性”窗口中设置笔划颜色和粗细。|  
 |**画笔**|使用处于活动状态的颜色选择绘制抗锯齿笔划。 可在“属性”窗口中设置笔划颜色和粗细。|  
@@ -146,7 +141,7 @@ ms.locfileid: "49185765"
 ### <a name="working-with-transparency"></a>使用透明度效果  
  DirectDraw Surface (.dds) 等一些图像格式支持透明度效果。 使用透明度效果的方式有几种，具体取决于所使用的工具。 若要为颜色选择指定透明度级别，可在“属性”窗口中设置颜色选择的 **A** (alpha) 组件。 以下显示了不同类型的工具如何控制透明度的应用方式：  
   
-|工具|描述|  
+|工具|说明​​|  
 |----------|-----------------|  
 |**铅笔**、**画笔**、**喷枪**、**线**、**矩形**、**圆角矩形**、**椭圆形**、**文本**|若要将活动颜色选择与图像混合，在“属性”窗口中，展开“通道”属性组，选中“Alpha”通道上的“绘制”复选框，然后正常绘制即可。<br /><br /> 若要使用活动颜色选择进行绘制并保留图像的 Alpha 值，可取消选中“Alpha”通道的“绘制”复选框，然后正常绘制即可。|  
 |**填充**|若要将活动颜色选择与图像混合，只需选择要填充的区域即可。<br /><br /> 若要使用活动颜色选择（包括 alpha 通道的值）来覆盖图像，请按住 Shift，然后选择要填充的区域。|  
@@ -156,7 +151,7 @@ ms.locfileid: "49185765"
   
  下表对图像属性进行了描述。  
   
-|属性|描述|  
+|Property|说明​​|  
 |--------------|-----------------|  
 |宽度|图像的宽度。|  
 |高度|图像的高度。|  
@@ -203,7 +198,7 @@ ms.locfileid: "49185765"
   
  以下是一些有效的修改组合键：  
   
-|Ctrl|移位|Alt|描述|  
+|Ctrl|移位|Alt|说明​​|  
 |----------|-----------|---------|-----------------|  
 ||||调整所选区域内容的大小。|  
 ||移位||按比例调整所选区域内容的大小。|  
@@ -274,11 +269,8 @@ ms.locfileid: "49185765"
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|说明​​|  
 |-----------|-----------------|  
 |[为游戏和应用使用三维资产](../designers/working-with-3-d-assets-for-games-and-apps.md)|概述了可在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中用来处理图形资产（例如纹理和图像、三维模型和着色器效果）的工具。|  
 |[模型编辑器](../designers/model-editor.md)|介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型编辑器处理三维模型。|  
 |[着色器设计器](../designers/shader-designer.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 着色器设计器处理着色器。|
-
-
-
