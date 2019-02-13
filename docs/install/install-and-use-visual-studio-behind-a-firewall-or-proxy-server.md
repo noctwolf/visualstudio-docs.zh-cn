@@ -3,7 +3,6 @@ title: 在防火墙或代理服务器背后安装和使用
 description: 如果组织使用防火墙或代理服务器，请检查希望列入允许列表或打开的域 URL、端口和协议
 ms.date: 07/10/2018
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -16,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b85e77cf8c1f9c3ac2b51539eec2af55b4ca858
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2bf4e4b1828253d002ab15f80584d7a8c2b2894a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018106"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954642"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务
 
@@ -82,7 +81,7 @@ ms.locfileid: "55018106"
 
 若要确保在防火墙或代理服务器后面使用 Visual Studio 或 Azure 服务时可访问一切所需的内容，以下是应列入白名单的URL 和你可能需要打开的端口及协议。
 
-| 服务或方案 | DNS 终结点 | 协议 | 端口 | 说明 |
+| 服务或方案 | DNS 终结点 | 协议 | 端口 | 说明​​ |
 | - | - | - | - | - |
 | URL<br>解析 | go.microsoft.com<br><br>aka.ms | | | 用于缩短 URL，然后解析为更长的 URL |
 | 起始页 | vsstartpage.blob.core.windows.net | | 443 | 用于显示在 Visual Studio 的起始页上显示的开发人员新闻 |

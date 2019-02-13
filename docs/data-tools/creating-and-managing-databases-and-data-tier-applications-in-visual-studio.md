@@ -8,15 +8,14 @@ ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: bde98c7acb8c4f5c2b8b2cee4fd1c442438da540
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2a86d9511e470c9a810ff58e80e4cae1f9a0cb11
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940968"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924638"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>数据库项目和数据层应用程序
 
@@ -28,9 +27,9 @@ ms.locfileid: "54940968"
 
 | 高级任务 | 支持内容 |
 | - | - |
-| **启动数据层应用程序的开发：** 使用 SQL Server 2008 引入了数据层应用程序 (DAC) 的概念。 DAC 包含的 SQL Server 数据库和支持的客户端-服务器或第 3 层应用程序所使用的实例对象的定义。 DAC 包括数据库对象，如表和视图，以及实例实体，例如登录名。 可以使用 Visual Studio 创建一个 DAC 项目，生成一个 DAC 包文件，并将 DAC 包文件发送到 SQL Server 数据库引擎实例上部署的数据库管理员。 | - [数据层应用程序](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
-| **执行迭代数据库开发：** 开发人员可以签出项目的部分，并在隔离的开发环境中更新它们。 通过使用此类型的环境，可以测试所做的更改，而不影响其他团队的成员。 所做的更改完成后，您将签入版本控制，其他团队成员可以获取所做的更改和生成并将其部署到测试服务器文件。 | - [面向项目的脱机数据库开发 (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [TRANSACT-SQL 调试器 (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
-| **原型制作，验证测试结果和修改数据库脚本和对象：** TRANSACT-SQL 编辑器可用于执行这些常见任务之一。 | - [查询和文本编辑器 (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
+| **启动数据层应用程序的开发：** 与 SQL Server 2008 引入了数据层应用程序 (DAC) 的概念。 DAC 包含的 SQL Server 数据库和支持的客户端-服务器或第 3 层应用程序所使用的实例对象的定义。 DAC 包括数据库对象，如表和视图，以及实例实体，例如登录名。 可以使用 Visual Studio 创建一个 DAC 项目，生成一个 DAC 包文件，并将 DAC 包文件发送到 SQL Server 数据库引擎实例上部署的数据库管理员。 | - [数据层应用程序](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
+| **执行迭代数据库开发：** 开发人员可以签出项目的部分并在隔离的开发环境中更新它们。 通过使用此类型的环境，可以测试所做的更改，而不影响其他团队的成员。 所做的更改完成后，您将签入版本控制，其他团队成员可以获取所做的更改和生成并将其部署到测试服务器文件。 | - [面向项目的脱机数据库开发 (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [TRANSACT-SQL 调试器 (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
+| **原型制作，验证测试结果和修改数据库脚本和对象：** 可以使用 TRANSACT-SQL 编辑器来执行这些常见任务之一。 | - [查询和文本编辑器 (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
 ## <a name="see-also"></a>请参阅
 

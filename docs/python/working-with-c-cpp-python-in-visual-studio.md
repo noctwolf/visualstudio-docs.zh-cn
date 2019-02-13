@@ -2,7 +2,6 @@
 title: 编写 Python 的 C++ 扩展
 description: 使用 Visual Studio、CPython 和 PyBind11 创建适用于 Python 的 C++ 扩展的演练，包括混合模式调试。
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd0e2079edde74155d38646fa5e22b6a11c1c7fd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bb4d2ec524065a79150b35564dd526d0bf13779e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55032418"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914274"
 ---
 # <a name="create-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -121,7 +120,7 @@ ms.locfileid: "55032418"
 
 1. 如下表所述设置特定属性，然后选择“确定”。
 
-    | Tab | Property | 值 |
+    | Tab | Property | “值” |
     | --- | --- | --- |
     | **常规** | **常规** > **目标名称** | 指定想要在 `from...import` 语句中从 Python 引用的模块的名称。 定义 Python 的模块时，在 C++ 中使用相同的名称。 如果想要将项目的名称用作模块名称，请保留默认值 $(ProjectName)。 |
     | | **常规** > **目标扩展名** | **.pyd** |

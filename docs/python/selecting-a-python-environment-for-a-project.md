@@ -1,8 +1,7 @@
 ---
 title: 选择用于项目的 Python 解释器和项目
 description: 可以专门选择 Python 环境（包括 Anaconda 和虚拟环境）以应用于特定项目。
-ms.date: 11/08/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c37492bfe514536ff94cf8c51a616e2df69b891e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6ec1ed469a4384c2ba826f8677a0d4fb4c8fef20
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010202"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987452"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>如何选择用于项目的 Python 环境
 
@@ -38,7 +37,7 @@ Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的�
 
 “Python 环境”节点的上下文菜单还提供其他命令：
 
-| 命令 | 说明 |
+| 命令 | 说明​​ |
 | --- | --- |
 | **添加虚拟环境** | 首先在项目中新建一个虚拟环境。 详情请参阅[创建虚拟环境](#create-a-virtual-environment)。 |
 | **添加现有虚拟环境** | 系统提示你选择一个包含虚拟环境的文件夹并将其添加到“Python 环境”下的列表，但不进行激活。 请参阅[激活现有的虚拟环境](#activate-an-existing-virtual-environment)。 |
