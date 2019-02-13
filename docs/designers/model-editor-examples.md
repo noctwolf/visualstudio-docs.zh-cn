@@ -1,7 +1,6 @@
 ---
 title: 模型编辑器示例
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: dd0f4155-b4f9-4f16-b0fd-3f4cd4c80d5a
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36beb87068361e2cfa02ff69fa293fcad1d10270
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a4fd7bf21c214abfab535f954eb404280234ccb6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936939"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942409"
 ---
 # <a name="model-editor-examples"></a>模型编辑器示例
 
@@ -22,7 +21,7 @@ ms.locfileid: "54936939"
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|说明|
+|Title|说明​​|
 |-----------|-----------------|
 |[如何：创建基本三维模型](../designers/how-to-create-a-basic-3-d-model.md)|介绍如何创建基本三维模型。|
 |[如何：修改三维模型的透视点](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)|介绍如何修改三维模型的透视点和规模。|

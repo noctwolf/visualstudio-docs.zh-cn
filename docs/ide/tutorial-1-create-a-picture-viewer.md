@@ -1,7 +1,6 @@
 ---
 title: 教程 1：创建图片查看器
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -9,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48db0eed985ec22f5a3032d6a601664723dca2ff
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ad05083fa8cb1310e9be0b0dabb8333cb840a466
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931721"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941486"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教程 1：创建图片查看器
 
@@ -53,7 +52,7 @@ ms.locfileid: "54931721"
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|说明|
+|Title|说明​​|
 |-----------|-----------------|
 |[步骤 1：创建 Windows 窗体应用程序项目](../ide/step-1-create-a-windows-forms-application-project.md)|首先创建 Windows 窗体应用程序项目。|
 |[步骤 2：运行程序](../ide/step-2-run-your-program.md)|运行您在上一步中创建的 Windows 窗体应用程序。|

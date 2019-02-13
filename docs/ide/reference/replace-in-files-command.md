@@ -1,7 +1,6 @@
 ---
 title: “在文件中替换”命令
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - edit.replaceinfiles
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5187c3f914a9c276cdc546691b24f123721a7af
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a87b4dcff0bd626947a0d98822150d03fc7c7059
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990077"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935649"
 ---
 # <a name="replace-in-files-command"></a>“在文件中替换”命令
 使用“查找和替换”窗口的“在文件中替换”选项卡上的可用选项子集替换文件中的文本。

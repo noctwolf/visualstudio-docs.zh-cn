@@ -1,7 +1,6 @@
 ---
 title: L2DBForm.xaml 源代码
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: sample
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a04eef2d9d0a9c4c5f36f4a3b6fd8f91f9832a7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b650c65eb81fb087b7783b41065445e1bbea20a0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008746"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931164"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 源代码
 
@@ -86,7 +85,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 
 ## <a name="example"></a>示例
 
-### <a name="description"></a>说明
+### <a name="description"></a>说明​​
 
 > [!NOTE]
 > 建议您将下面的代码复制到代码编辑器（如 Visual Studio 中的 C# 源代码编辑器）中，以便更易于跟踪行号。

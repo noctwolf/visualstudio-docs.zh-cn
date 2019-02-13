@@ -1,7 +1,6 @@
 ---
 title: 使用着色器
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a6bb421f47d381cb5a0e7dac91aa4fc9236f22
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d1f07b293447a10a7d39e24ef42b1faedc27c7d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007407"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934857"
 ---
 # <a name="work-with-shaders"></a>使用着色器
 
@@ -36,7 +35,7 @@ ms.locfileid: "55007407"
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|说明|
+|Title|说明​​|
 |-----------|-----------------|
 |[着色器设计器](../designers/shader-designer.md)|描述如何使用 Visual Studio 着色器设计器处理着色器。|
 |[着色器设计器节点](../designers/shader-designer-nodes.md)|讨论可用于实现图形效果的着色器设计器节点的种类。|
