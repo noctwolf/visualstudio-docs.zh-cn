@@ -1,14 +1,9 @@
 ---
 title: 代码片段架构参考 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
 - snippets [Visual Studio], schema reference
@@ -18,13 +13,13 @@ ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5c62d8a65b1015029f183ea2b617dfe77f9b4f05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188097"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753558"
 ---
 # <a name="code-snippets-schema-reference"></a>代码段架构参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ IntelliSense 代码段是预编写的代码段，你可以随时使用 [!INCLUDE
 </Assembly>  
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Reference 元素](../ide/code-snippets-schema-reference.md#reference)|包含有关代码段所需的程序集引用的信息。|  
   
@@ -76,7 +71,7 @@ IntelliSense 代码段是预编写的代码段，你可以随时使用 [!INCLUDE
   
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|包含有关代码段的常规信息。|  
   
@@ -121,13 +116,13 @@ is a great color. I love Blue.
 </Code>  
 ```  
   
-|特性|描述|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`Delimiter`|可选特性。 指定用于描述代码中的文本和对象的分隔符。 默认情况下，分隔符为 `$`。|  
 |`Kind`|可选特性。 指定代码段包含的代码的类型，以及编译代码段时代码段必须插入的位置。 可用的值有 `method body`、`method decl`、`type decl`、`file` 和 `any`。|  
 |`Language`|必需的特性。 指定代码段的语言。|  
   
-|类型特性值|描述|  
+|类型特性值|说明​​|  
 |--------------------------|-----------------|  
 |`method body`|指定代码段为方法体，因此必须插入到方法声明中。|  
 |`method decl`|指定代码段为方法，因此必须插入到类或模块中。|  
@@ -135,7 +130,7 @@ is a great color. I love Blue.
 |`file`|指定代码段为完整的代码文件。 这些代码段可单独插入到代码文件或命名空间中。|  
 |`any`|指定代码段可插入到任何位置。 此标记可用于上下文独立的代码段（例如注释）。|  
   
-|语言特性值|描述|  
+|语言特性值|说明​​|  
 |------------------------------|-----------------|  
 |`VB`|标识 Visual Basic 代码段。|  
 |`CSharp`|标识 C# 代码段。|  
@@ -145,7 +140,7 @@ is a great color. I love Blue.
 |`SQL`|标识 SQL 代码段。|  
 |`HTML`|标识 HTML 代码段。|  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Snippet 元素](../ide/code-snippets-schema-reference.md#snippet)|包含用于代码段的引用、导入、声明和代码。|  
   
@@ -162,16 +157,16 @@ is a great color. I love Blue.
   
 ```  
   
-|特性|描述|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`Format`|必需的特性。 指定代码段的架构版本。 Format 特性必须是语法为 x.x.x 的字符串，其中每个“x”表示版本号的数值。 Visual Studio 将忽略具有它不理解的 `Format` 特性的代码段。|  
   
-|子元素|描述|  
+|子元素|说明​​|  
 |-------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|必需的元素。 包含有关代码段的常规信息。 代码段中必须有且仅有一个 `Header` 元素。|  
 |[Snippet 元素](../ide/code-snippets-schema-reference.md#snippet)|必需的元素。 包含将由 Visual Studio 插入的代码。 代码段中必须有且仅有一个 `Snippet` 元素。|  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[CodeSnippets 元素](../ide/code-snippets-schema-reference.md#codesnippets)|代码段 XML 架构的根元素。|  
   
@@ -185,7 +180,7 @@ is a great color. I love Blue.
   
 ```  
   
-|子元素|描述|  
+|子元素|说明​​|  
 |-------------------|-----------------|  
 |[CodeSnippet 元素](../ide/code-snippets-schema-reference.md#codesnippet)|可选元素。 所有代码段数据的父元素。 `CodeSnippet` 元素中可能有零个或零个以上的 `CodeSnippets` 元素。|  
   
@@ -200,12 +195,12 @@ is a great color. I love Blue.
   
 ```  
   
-|子元素|描述|  
+|子元素|说明​​|  
 |-------------------|-----------------|  
 |[Literal 元素](../ide/code-snippets-schema-reference.md#literal)|可选元素。 定义你可以编辑的代码段的文本。 `Literal` 元素中可能有零个或零个以上的 `Declarations` 元素。|  
 |[Object 元素](../ide/code-snippets-schema-reference.md#object)|可选元素。 定义你可以编辑的代码段的对象。 `Object` 元素中可能有零个或零个以上的 `Declarations` 元素。|  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Snippet 元素](../ide/code-snippets-schema-reference.md#snippet)|包含用于代码段的引用、导入、声明和代码。|  
   
@@ -219,7 +214,7 @@ is a great color. I love Blue.
   
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Literal 元素](../ide/code-snippets-schema-reference.md#literal)|定义代码段的可编辑文本字段。|  
 |[Object 元素](../ide/code-snippets-schema-reference.md#object)|定义代码段的可编辑对象字段。|  
@@ -235,7 +230,7 @@ is a great color. I love Blue.
 </Description>  
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|包含有关代码段的常规信息。|  
   
@@ -253,7 +248,7 @@ is a great color. I love Blue.
 </Function>  
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Literal 元素](../ide/code-snippets-schema-reference.md#literal)|定义代码段的可编辑文本字段。|  
 |[Object 元素](../ide/code-snippets-schema-reference.md#object)|定义代码段的可编辑对象字段。|  
@@ -276,7 +271,7 @@ is a great color. I love Blue.
   
 ```  
   
-|子元素|描述|  
+|子元素|说明​​|  
 |-------------------|-----------------|  
 |[Author 元素](../ide/code-snippets-schema-reference.md#author)|可选元素。 编写代码段的人员或公司的姓名或名称。 `Author` 元素中可能有零个或一个 `Header` 元素。|  
 |[Description 元素](../ide/code-snippets-schema-reference.md#description)|可选元素。 代码段说明。 `Description` 元素中可能有零个或一个 `Header` 元素。|  
@@ -286,7 +281,7 @@ is a great color. I love Blue.
 |[SnippetTypes 元素](../ide/code-snippets-schema-reference.md#snippettypes)|可选元素。 对 `SnippetType` 元素进行分组。 `SnippetTypes` 元素中可能有零个或一个 `Header` 元素。 如果没有 `SnippetTypes` 元素，代码段将一直有效。|  
 |[Title 元素](../ide/code-snippets-schema-reference.md#title)|必需的元素。 代码段的友好名称。 `Title` 元素中必须有且仅有一个 `Header` 元素。|  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[CodeSnippet 元素](../ide/code-snippets-schema-reference.md#codesnippet)|所有代码段数据的父元素。|  
   
@@ -303,7 +298,7 @@ is a great color. I love Blue.
   
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|包含有关代码段的常规信息。|  
   
@@ -319,7 +314,7 @@ is a great color. I love Blue.
   
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Literal 元素](../ide/code-snippets-schema-reference.md#literal)|定义代码段的可编辑文本字段。|  
 |[Object 元素](../ide/code-snippets-schema-reference.md#object)|定义代码段的可编辑对象字段。|  
@@ -339,11 +334,11 @@ is a great color. I love Blue.
   
 ```  
   
-|子元素|描述|  
+|子元素|说明​​|  
 |-------------------|-----------------|  
 |[Namespace 元素](../ide/code-snippets-schema-reference.md#namespace)|必需的元素。 指定代码段使用的命名空间。 `Namespace` 元素中必须有且仅有一个 `Import` 元素。|  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Imports 元素](../ide/code-snippets-schema-reference.md#imports)|对 **Import** 元素进行分组。|  
   
@@ -359,11 +354,11 @@ is a great color. I love Blue.
 <Imports>  
 ```  
   
-|子元素|描述|  
+|子元素|说明​​|  
 |-------------------|-----------------|  
 |[Import 元素](../ide/code-snippets-schema-reference.md#import)|可选元素。 包含代码段的导入命名空间。 `Imports` 元素中可能有零个或零个以上的 **Import** 元素。|  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Snippet 元素](../ide/code-snippets-schema-reference.md#snippet)|包含用于代码段的引用、导入、声明和代码。|  
   
@@ -376,7 +371,7 @@ is a great color. I love Blue.
 </Keyword>  
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Keywords 元素](../ide/code-snippets-schema-reference.md#keywords)|对单个 `Keyword` 元素进行分组。|  
   
@@ -392,11 +387,11 @@ is a great color. I love Blue.
 <Keywords>  
 ```  
   
-|子元素|描述|  
+|子元素|说明​​|  
 |-------------------|-----------------|  
 |[Keyword 元素](../ide/code-snippets-schema-reference.md#keyword)|可选元素。 包含代码段的各个关键字。 `Keyword` 元素中可能有零个或零个以上的 `Keywords` 元素。|  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|包含有关代码段的常规信息。|  
   
@@ -414,18 +409,18 @@ is a great color. I love Blue.
 </Literal>  
 ```  
   
-|特性|描述|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`Editable`|可选的 `Boolean` 特性。 指定在插入代码段之后是否可以编辑文本。 此特性的默认值为 `true`。|  
   
-|子元素|描述|  
+|子元素|说明​​|  
 |-------------------|-----------------|  
 |[Default 元素](../ide/code-snippets-schema-reference.md#default)|必需的元素。 指定插入代码段时文本的默认值。 `Default` 元素中必须有且仅有一个 `Literal` 元素。|  
 |[Function 元素](../ide/code-snippets-schema-reference.md#function)|可选元素。 指定当文本在 Visual Studio 中获得焦点时要执行的函数。 `Function` 元素中可能有零个或一个 `Literal` 元素。|  
 |[ID 元素](../ide/code-snippets-schema-reference.md#id)|必需的元素。 指定文本的唯一标识符。 `ID` 元素中必须有且仅有一个 `Literal` 元素。|  
 |[ToolTip 元素](../ide/code-snippets-schema-reference.md#tooltip)|可选元素。 描述文本的预期值和用法。 `Literal` 元素中可能有零个或一个 **Tooltip** 元素。|  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Declarations 元素](../ide/code-snippets-schema-reference.md#declarations)|包含代码段的可编辑文本和对象。|  
   
@@ -441,7 +436,7 @@ is a great color. I love Blue.
 </Namespace>  
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Import 元素](../ide/code-snippets-schema-reference.md#import)|导入指定的命名空间。|  
   
@@ -460,11 +455,11 @@ is a great color. I love Blue.
 </Object>  
 ```  
   
-|特性|描述|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`Editable`|可选的 `Boolean` 特性。 指定在插入代码段之后是否可以编辑文本。 此特性的默认值为 `true`。|  
   
-|子元素|描述|  
+|子元素|说明​​|  
 |-------------------|-----------------|  
 |[Default 元素](../ide/code-snippets-schema-reference.md#default)|必需的元素。 指定插入代码段时文本的默认值。 `Default` 元素中必须有且仅有一个 `Literal` 元素。|  
 |[Function 元素](../ide/code-snippets-schema-reference.md#function)|可选元素。 指定当文本在 Visual Studio 中获得焦点时要执行的函数。 `Function` 元素中可能有零个或一个 `Literal` 元素。|  
@@ -472,7 +467,7 @@ is a great color. I love Blue.
 |[ToolTip 元素](../ide/code-snippets-schema-reference.md#tooltip)|可选元素。 描述文本的预期值和用法。 `Literal` 元素中可能有零个或一个 **Tooltip** 元素。|  
 |[Type 元素](../ide/code-snippets-schema-reference.md#type)|必需的元素。 指定对象的类型。 `Type` 元素中必须有且仅有一个 `Object` 元素。|  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Declarations 元素](../ide/code-snippets-schema-reference.md#declarations)|包含代码段的可编辑文本和对象。|  
   
@@ -489,12 +484,12 @@ is a great color. I love Blue.
 </Reference>  
 ```  
   
-|子元素|描述|  
+|子元素|说明​​|  
 |-------------------|-----------------|  
 |[Assembly 元素](../ide/code-snippets-schema-reference.md#assembly)|必需的元素。 包含代码段引用的程序集的名称。 `Assembly` 元素中必须有且仅有一个 `Reference` 元素。|  
 |[Url 元素](../ide/code-snippets-schema-reference.md#url)|可选元素。 包含一个提供有关所引用程序集的详细信息的 URL。 `Url` 元素中可能有零个或一个 `Reference` 元素。|  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[References 元素](../ide/code-snippets-schema-reference.md#references)|对 `Reference` 元素进行分组。|  
   
@@ -510,11 +505,11 @@ is a great color. I love Blue.
 </References>  
 ```  
   
-|子元素|描述|  
+|子元素|说明​​|  
 |-------------------|-----------------|  
 |[Reference 元素](../ide/code-snippets-schema-reference.md#reference)|可选元素。 包含有关代码段的程序集引用的信息。 `Reference` 元素中可能有零个或零个以上的 `References` 元素。|  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Snippet 元素](../ide/code-snippets-schema-reference.md#snippet)|包含用于代码段的引用、导入、声明和代码。|  
   
@@ -530,7 +525,7 @@ is a great color. I love Blue.
 </Shortcut>  
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|包含有关代码段的常规信息。|  
   
@@ -549,14 +544,14 @@ is a great color. I love Blue.
   
 ```  
   
-|子元素|描述|  
+|子元素|说明​​|  
 |-------------------|-----------------|  
 |[Code 元素](../ide/code-snippets-schema-reference.md#code)|必需的元素。 指定要插入到文档文件中的代码。 `Code` 元素中必须有且仅有一个 `Snippet` 元素。|  
 |[Declarations 元素](../ide/code-snippets-schema-reference.md#declarations)|可选元素。 指定作为某个代码段组成部分的文本和对象，你可以对该代码段进行编辑。 `Declarations` 元素中可能有零个或一个 `Snippet` 元素。|  
 |[Imports 元素](../ide/code-snippets-schema-reference.md#imports)|可选元素。 对单个 `Import` 元素进行分组。 `Imports` 元素中可能有零个或一个 `Snippet` 元素。|  
 ||可选元素。 对单个 `Reference` 元素进行分组。 `References` 元素中可能有零个或一个 `Snippet` 元素。|  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[CodeSnippet 元素](../ide/code-snippets-schema-reference.md#codesnippet)|允许你指定一个标题和多个 IntelliSense 代码段，你可以将其插入 Visual Studio 代码文件中。|  
   
@@ -569,7 +564,7 @@ is a great color. I love Blue.
 <SnippetType>  
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[SnippetTypes 元素](../ide/code-snippets-schema-reference.md#snippettypes)|对 `SnippetType` 元素进行分组。|  
   
@@ -591,11 +586,11 @@ is a great color. I love Blue.
 <SnippetTypes>  
 ```  
   
-|子元素|描述|  
+|子元素|说明​​|  
 |-------------------|-----------------|  
 |[SnippetType 元素](../ide/code-snippets-schema-reference.md#snippettype)|可选元素。 指定 Visual Studio 如何将代码段插入到代码中。 `SnippetType` 元素中可能有零个或零个以上的 `SnippetTypes` 元素。|  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|指定有关代码段的常规信息。|  
   
@@ -608,7 +603,7 @@ is a great color. I love Blue.
 <Title>  
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Header 元素](../ide/code-snippets-schema-reference.md#header)|指定有关代码段的常规信息。|  
   
@@ -623,7 +618,7 @@ is a great color. I love Blue.
 </ToolTip>  
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Literal 元素](../ide/code-snippets-schema-reference.md#literal)|定义代码段的可编辑文本字段。|  
 |[Object 元素](../ide/code-snippets-schema-reference.md#object)|定义代码段的可编辑对象字段。|  
@@ -639,7 +634,7 @@ is a great color. I love Blue.
 </Type>  
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Object 元素](../ide/code-snippets-schema-reference.md#object)|定义代码段的可编辑对象字段。|  
   
@@ -657,7 +652,7 @@ is a great color. I love Blue.
 </Url>  
 ```  
   
-|父元素|描述|  
+|父元素|说明​​|  
 |--------------------|-----------------|  
 |[Reference 元素](../ide/code-snippets-schema-reference.md#reference)|指定代码段所需的程序集引用。|  
   
@@ -666,6 +661,3 @@ is a great color. I love Blue.
 ## <a name="see-also"></a>请参阅  
  [代码片段](../ide/code-snippets.md)   
  [演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)
-
-
-

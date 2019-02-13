@@ -1,30 +1,25 @@
 ---
-title: 演练：我的第一个 WPF 桌面应用程序2 | Microsoft Docs
-ms.custom: ''
+title: 演练：我第一个 WPF 桌面应用程序 2 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3c460fa9-2ea1-413f-ae54-54a1f2a499d1
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3607bac8d8cd9808a54e4c8956b3c4d41df8aecb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899274"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795940"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>演练：我的第一个 WPF 桌面应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开发的简介。 你将创建一个包括大多数 WPF 桌面应用程序中的常见元素的基本应用程序：XAML 标记、代码隐藏、应用程序定义、控件、布局、数据绑定和样式。  
+name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开发的简介。 将创建包含的元素所共有的大多数 WPF 桌面应用程序的基本应用程序：XAML 标记、 代码隐藏、 应用程序定义、 控件、 布局、 数据绑定和样式。  
   
 ##  <a name="Create_The_Application_Code_Files"></a> 创建应用程序项目  
  在本部分中，你将创建应用程序基础结构，其中包括项目和主窗口或窗体。  
@@ -981,8 +976,5 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
 - [WPF 中的文档](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>请参阅  
- [演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
+ [演练：创建一个 WPF 桌面应用程序连接到 Azure 移动服务](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   
  [使用 Windows Presentation Foundation 创建新式桌面应用程序](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

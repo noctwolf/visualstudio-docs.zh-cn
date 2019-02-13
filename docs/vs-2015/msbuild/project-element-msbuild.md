@@ -1,14 +1,9 @@
 ---
 title: Project 元素 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Project
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 923cfa4a32362e28705e9f7fddfa3461979f84e4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b26bd7d5f65122695a96dc5339e39044ff93a924
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820016"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752829"
 ---
 # <a name="project-element-msbuild"></a>Project 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ ms.locfileid: "49820016"
   
 ### <a name="attributes"></a>特性  
   
-|       特性        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              描述                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|       特性        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              说明​​                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `DefaultTargets`    |                                                                                                                                                                                                                                                                                                 可选特性。<br /><br /> 如果未指定目标，则默认目标将作为生成的入口点。 使用分号 (;) 分隔多个目标。<br /><br /> 如果未在 `DefaultTargets` 属性或 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 命令行中指定默认目标，那么引擎会在评估 [Import](../msbuild/import-element-msbuild.md) 元素后在项目文件中执行第一个目标。                                                                                                                                                                                                                                                                                                  |
 |    `InitialTargets`    |                                                                                                                                                                                                                                                                                                                                                                                                                                             可选特性。<br /><br /> 会在 `DefaultTargets` 属性中或命令行上指定的目标前运行初始目标。 使用分号 (;) 分隔多个目标。                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -71,7 +66,7 @@ ms.locfileid: "49820016"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明​​|  
 |-------------|-----------------|  
 |[Choose](../msbuild/choose-element-msbuild.md)|可选元素。<br /><br /> 评估子元素，选择一组 `ItemGroup` 元素和/或 `PropertyGroup` 元素进行评估。|  
 |[Import](../msbuild/import-element-msbuild.md)|可选元素。<br /><br /> 启用项目文件，导入另一项目文件。 项目中可能有零个或零个以上的 `Import` 元素。|  
@@ -89,5 +84,3 @@ ms.locfileid: "49820016"
  [命令行参考](../msbuild/msbuild-command-line-reference.md)   
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)   
  [MSBuild](msbuild.md)
-
-

@@ -1,25 +1,20 @@
 ---
-title: 如何：创建基本冯氏色器 | Microsoft Docs
-ms.custom: ''
+title: 如何：创建基本 Phong 着色器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ddb8f32cbf23184da140c3426e88c1f622dea1b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d5e4f1916fb7bfc0672efeddaac5e632692f92f9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832675"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787325"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>如何：创建基本冯氏着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +68,7 @@ ms.locfileid: "49832675"
   
  ![应用于模型的冯氏照明](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")  
   
- 若要深入了解如何将向三维模型应用着色器，请参阅[如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
+ 有关如何向三维模型应用着色器的详细信息，请参阅[如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
@@ -81,6 +76,3 @@ ms.locfileid: "49832675"
  [如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)   
  [着色器设计器](../designers/shader-designer.md)   
  [着色器设计器节点](../designers/shader-designer-nodes.md)
-
-
-

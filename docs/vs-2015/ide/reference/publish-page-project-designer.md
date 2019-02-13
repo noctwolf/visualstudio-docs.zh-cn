@@ -1,14 +1,9 @@
 ---
 title: “项目设计器”->“发布”页 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: 153527c6-8b95-4003-8e8e-03a489d0a629
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1dcd6660ff431bee76fb7f595ed243104136684d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 32b907680155c9631ca5336c2228dd5b8ecce8d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277954"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778599"
 ---
 # <a name="publish-page-project-designer"></a>“项目设计器”->“发布”页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,16 +51,16 @@ ms.locfileid: "49277954"
  对于 WPF Web 浏览器应用程序，“该应用程序也可以脱机使用”  选项处于禁用状态，因为此类应用程序只能联机使用。  
   
  **应用程序文件**  
- 打开 [Application Files Dialog Box](http://msdn.microsoft.com/en-us/b06dff3a-b87a-4caf-996b-7a4acf8137a8)，它用于指定如何以及在何处安装各个文件。  
+ 打开 [Application Files Dialog Box](http://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8)，它用于指定如何以及在何处安装各个文件。  
   
  **系统必备**  
  打开 [Prerequisites Dialog Box](../../ide/reference/prerequisites-dialog-box.md)，它用于指定要与应用程序一起安装的必备组件，如 .NET Framework。  
   
  **更新**  
- 打开 [Application Updates Dialog Box](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)，它用于指定应用程序的更新行为。 选择了“该应用程序只能联机使用”  时不可用。  
+ 打开 [Application Updates Dialog Box](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)，它用于指定应用程序的更新行为。 选择了“该应用程序只能联机使用”  时不可用。  
   
  **选项**  
- 打开 [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，它用于指定其他高级发布选项。  
+ 打开 [Publish Options Dialog Box](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，它用于指定其他高级发布选项。  
   
  **发布版本**  
  设置应用程序的发布版本号；版本号更改时，会将应用程序作为更新发布。 发布版本的每个部分（“主版本”、“次版本” 、“生成号” 、“修订号” ）的最大值可以是 65355 (<xref:System.UInt16.MaxValue>)，这是 <xref:System.Version>允许的最大值。  
@@ -76,7 +71,7 @@ ms.locfileid: "49277954"
  可选。 选择此选项（默认）时，发布版本号的“修订号”  部分会在每次发布应用程序时递增 1。 这将导致应用程序作为更新发布。  
   
  **发布向导**  
- 打开 [Publish Wizard](http://msdn.microsoft.com/en-us/fc6abebd-13d6-48e4-a567-fbc52dad0872)。 完成“发布向导”的效果与运行“生成”  菜单上的“发布”  命令相同。  
+ 打开 [Publish Wizard](http://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872)。 完成“发布向导”的效果与运行“生成”  菜单上的“发布”  命令相同。  
   
  **立即发布**  
  使用当前设置发布应用程序。 等效于“发布向导”中的“完成”按钮。  
@@ -98,6 +93,3 @@ ms.locfileid: "49277954"
  [如何：指定 ClickOnce 应用程序的“开始”菜单名称](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)   
  [如何：指定 ClickOnce 应用程序的发布页](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)   
  [ClickOnce 安全和部署](../../deployment/clickonce-security-and-deployment.md)
-
-
-

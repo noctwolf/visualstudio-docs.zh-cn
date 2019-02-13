@@ -15,15 +15,14 @@ ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8b7ce4e595f9f2bc4b30488dd3cab67efe638afa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6b961af0bf35bb4476f9f336fcf5298bb0bd3651
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953089"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951665"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将 Windows 窗体控件绑定到数据
 
@@ -40,7 +39,8 @@ ms.locfileid: "54953089"
 
 ## <a name="bindingsource-and-bindingnavigator-controls"></a>BindingSource 和 BindingNavigator 控件
 
-<xref:System.Windows.Forms.BindingSource> 组件有两个用途。 首先，当控件绑定到数据时提供一个抽象层。 窗体控件绑定到<xref:System.Windows.Forms.BindingSource>组件而不是直接与数据源。 其次，它可以管理的对象的集合。 添加到类型<xref:System.Windows.Forms.BindingSource>创建该类型的列表。
+
+  <xref:System.Windows.Forms.BindingSource> 组件有两个用途。 首先，当控件绑定到数据时提供一个抽象层。 窗体控件绑定到<xref:System.Windows.Forms.BindingSource>组件而不是直接与数据源。 其次，它可以管理的对象的集合。 添加到类型<xref:System.Windows.Forms.BindingSource>创建该类型的列表。
 
 有关详细信息<xref:System.Windows.Forms.BindingSource>组件，请参阅：
 

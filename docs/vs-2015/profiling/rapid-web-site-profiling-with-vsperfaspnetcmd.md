@@ -1,14 +1,9 @@
 ---
 title: 使用 VSPerfASPNETCmd 进行快速网站分析 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - proflilng tools,VSPerfASPNETCmd
 - VSPerfASPNETCmd
@@ -16,13 +11,13 @@ ms.assetid: 9a9d62a6-549a-45ac-a948-76eb98586ac5
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 80acb5030c61bd986bfbd2a5f2b383ac37a25a0c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1b269ef28218fd51e3a87f331c44096cd80773f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760016"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760292"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 进行快速网站分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,10 +96,7 @@ ms.locfileid: "51760016"
 ## <a name="additional-options"></a>附加选项  
  可以将以下任何选项添加到本节前面列出的命令（**vsperfaspnetcmd /shutdown** 命令除外）。  
   
-|选项|描述|  
+|选项|说明​​|  
 |------------|-----------------|  
 |**/Output:** `VspFile`|默认情况下，在当前目录中创建分析数据 (.vsp) 文件，文件名为 **PerformanceReport.vsp**。 使用 /Output 选项可指定其他位置、文件名或两者。|  
 |**/PackSymbols:Off**|VsPerfASPNETCmd 会将符号（函数和参数名等）嵌入在 .vsp 文件中。 嵌入符号可能会使分析数据文件非常大。 如果在分析数据时可以访问包含符号的 .pdb 文件，则使用 /packsymbols:off 选项禁用符号的嵌入。|
-
-
-

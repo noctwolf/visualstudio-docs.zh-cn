@@ -1,5 +1,5 @@
 ---
-title: 演练：创建 N 层数据应用程序”视频
+title: 演练：创建 N 层数据应用程序
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +12,16 @@ ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: c3ee28514af9db5b0a03ce8b9805ef773c649a42
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993154"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933010"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>演练：创建 n 层数据应用程序
+# <a name="walkthrough-create-an-n-tier-data-application"></a>演练： 创建 n 层数据应用程序
 “N 层”数据应用程序是指用于访问数据且分为多个逻辑层（或“多层”）的应用程序。 通过将应用程序组件分离到相对独立的层中，可以提高应用程序的可维护性和可伸缩性。 该结构之所以具有这种优点，是因为它有利于采用可应用于单个层而无需重新设计整个解决方案的新技术。 N 层体系结构包括一个表示层、一个中间层和一个数据层。 中间层通常包括数据访问层、业务逻辑层和共享组件（例如身份验证和验证）。 数据层则包括关系数据库。 N 层应用程序通常将敏感信息存储在中间层的数据访问层中，目的是将它们与访问表示层的最终用户隔离。 有关详细信息，请参阅[N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)。
 
 在 N 层应用程序中，分离各层的一种方法是为要包括在应用程序中的每一层创建相互独立的项目。 类型化数据集包含一个 `DataSet Project` 属性，该属性决定了生成的数据集和 `TableAdapter` 代码应归属到哪些项目中。
@@ -105,7 +104,7 @@ ms.locfileid: "54993154"
  下一步是创建类型化数据集。 使用这两个数据集类创建类型化数据集 (包括`DataTables`类) 和`TableAdapter`单个项目中的类。 （所有类都将生成到单个文件中。）分离时的数据集和 Tableadapter 到不同的项目，它是移动到其他项目，使数据集类`TableAdapter`原始项目中的类。 因此，最终将包含 Tableadapter （DataAccessTier 项目） 的项目中创建数据集。 使用创建数据集**数据源配置向导**。
 
 > [!NOTE]
-> 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关如何设置 Northwind 示例数据库的信息，请参阅[如何：安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
+> 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关如何设置 Northwind 示例数据库的信息，请参阅[如何： 安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ### <a name="to-create-the-dataset"></a>创建数据集
 
@@ -155,7 +154,7 @@ ms.locfileid: "54993154"
 
 5. 在“生成”菜单上，选择“生成解决方案”。
 
-   将数据集和 TableAdapter 分离到两个类库项目中。 最初包含整个数据集的项目 (`DataAccessTier`) 现在只包含 Tableadapter。 中指定的项目**数据集项目**属性 (`DataEntityTier`) 包含类型化数据集：*NorthwindDataSet.Dataset.Designer.vb* (或*NorthwindDataSet.Dataset.Designer.cs*)。
+   将数据集和 TableAdapter 分离到两个类库项目中。 最初包含整个数据集的项目 (`DataAccessTier`) 现在只包含 Tableadapter。 中指定的项目**数据集项目**属性 (`DataEntityTier`) 包含类型化数据集： *NorthwindDataSet.Dataset.Designer.vb* (或*NorthwindDataSet.Dataset.Designer.cs*)。
 
 > [!NOTE]
 > 分离数据集与 TableAdapter（通过设置“数据集项目”属性）时，将不会自动移动项目中现有的数据集分部类。 你必须手动将它们移到数据集项目中。

@@ -32,16 +32,15 @@ helpviewer_keywords:
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80a6633734821eb8d05fb8aa252911f49f719fc1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b253c4e3447b8d7cd76dcef010adf99addb7bf9d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847923"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933660"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务
 
@@ -92,7 +91,7 @@ WCF 客户端组成*代理*这样的应用程序与 WCF 服务进行通信并为
 
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio 中的 WCF 工具
 
-Visual Studio 提供可帮助您创建 WCF 服务和 WCF 客户端工具。 有关演示这些工具的演练，请参阅[演练：在 Windows 窗体中创建简单的 WCF 服务](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)
+Visual Studio 提供可帮助您创建 WCF 服务和 WCF 客户端工具。 有关演示这些工具的演练，请参阅[演练： 在 Windows 窗体中创建一个简单的 WCF 服务](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)。
 
 ### <a name="create-and-test-wcf-services"></a>创建和测试 WCF 服务
 
@@ -130,7 +129,7 @@ Visual Studio 简化了创建自动生成代理和使用添加的服务的终结
 
 **配置服务引用**对话框中，您可以自定义服务的配置。 可以更改服务的地址，指定访问级别、 异步行为和消息协定类型和配置类型重用。
 
-## <a name="how-to-select-a-service-endpoint"></a>如何：选择服务终结点
+## <a name="how-to-select-a-service-endpoint"></a>如何： 选择服务终结点
 
 某些 Windows Communication Foundation (WCF) 服务公开通过该客户端可能会与服务通信的多个终结点。 例如，服务可能会公开一个终结点使用 HTTP 绑定以及用户名和密码的安全性和使用 FTP 和 Windows 身份验证的第二个终结点。 而第二个可能使用在 intranet 上，访问从服务位于防火墙外的应用程序可能使用第一个终结点。
 
@@ -174,7 +173,7 @@ Visual Studio 简化了创建自动生成代理和使用添加的服务的终结
 
 4.  内部`<EndPoint>`标记，您会发现`name="` *SomeService* `"`参数 (其中*SomeService*表示终结点名称)。 这是可以传递到的终结点名称`endpointConfigurationName As String`的服务引用的构造函数重载。
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>如何：以异步方式调用服务方法
+## <a name="how-to-call-a-service-method-asynchronously"></a>如何： 以异步方式调用服务方法
 
 不能调用 Windows Communication Foundation (WCF) 服务中的大多数方法，可以同步或异步。 以异步方式调用的方法使应用程序可以操作通过慢速连接时调用该方法时继续工作。
 
@@ -193,7 +192,7 @@ Visual Studio 简化了创建自动生成代理和使用添加的服务的终结
 
 3.  在中**配置服务引用**对话框中，选择**生成异步操作**复选框。
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>如何：将由服务返回的数据绑定
+## <a name="how-to-bind-data-returned-by-a-service"></a>如何： 将由服务返回的数据绑定
 
 可以将绑定到控件返回的 Windows Communication Foundation (WCF) 服务，就像可以将任何其他数据源绑定到控件的数据。 如果服务包含返回数据的复合类型添加到 WCF 服务的引用，它们会自动添加到**数据源**窗口。
 
@@ -227,7 +226,7 @@ Visual Studio 简化了创建自动生成代理和使用添加的服务的终结
 
 5.  将节点拖到窗体。 将控件添加到窗体，连同<xref:System.Windows.Forms.BindingSource>组件和一个<xref:System.Windows.Forms.BindingNavigator>组件。
 
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>如何：配置服务以重新使用现有的类型
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>如何： 配置服务以重新使用现有的类型
 
 服务引用添加到项目中，本地项目中生成服务中定义的任何类型。 在许多情况下，这将创建重复的类型，服务使用常见的.NET Framework 类型或共享库中定义类型。
 
@@ -253,15 +252,15 @@ Visual Studio 简化了创建自动生成代理和使用添加的服务的终结
 
 ## <a name="related-topics"></a>相关主题
 
-| Title | 说明 |
+| Title | 说明​​ |
 | - | - |
 | [演练：在 Windows 窗体中创建简单的 WCF 服务](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | 提供创建和使用 Visual Studio 中的 WCF 服务的分步演示。 |
-| [演练：通过 WPF 和实体框架创建 WCF 数据服务](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | 提供了分步演示如何创建和使用 Visual Studio 中的 WCF 数据服务。 |
+| [演练：使用 WPF 和 Entity Framework 创建 WCF Data Service](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | 提供了分步演示如何创建和使用 Visual Studio 中的 WCF 数据服务。 |
 | [使用 WCF 开发工具](/dotnet/framework/wcf/using-the-wcf-development-tools) | 讨论如何创建和测试 Visual Studio 中的 WCF 服务。 |
-| | [如何：添加、更新或删除 WCF 数据服务引用](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
+| | [如何：添加、更新或删除 WCF Data Service 引用](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
 | [服务引用疑难解答](../data-tools/troubleshooting-service-references.md) | 提供服务的引用以及如何阻止它们可以发生的一些常见错误。 |
 | [调试 WCF 服务](../debugger/debugging-wcf-services.md) | 描述常见调试问题和调试 WCF 服务时可能会遇到的技术。 |
-| [演练：创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | 提供有关创建类型化数据集并将 TableAdapter 和数据集代码分离到多个项目中的分步说明。 |
+| [演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | 提供有关创建类型化数据集并将 TableAdapter 和数据集代码分离到多个项目中的分步说明。 |
 | [“配置服务引用”对话框](../data-tools/configure-service-reference-dialog-box.md) | 描述用户界面元素的**配置服务引用**对话框。 |
 
 ## <a name="reference"></a>参考

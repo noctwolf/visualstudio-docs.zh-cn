@@ -6,15 +6,14 @@ ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: b1126279d5a52d981570ddcfc22b07c8c743e723
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b97903e0167ba2aba83ea0cfecdd6084c9270e85
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005119"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911827"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>无法创建关联&lt;关联名称&gt; - 属性类型不匹配
 
@@ -38,4 +37,4 @@ ms.locfileid: "55005119"
 
 - [O-R 设计器消息](../data-tools/o-r-designer-messages.md)
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [如何：创建 LINQ to SQL 类 （O/R 设计器） 之间的关联](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [如何： 创建 LINQ to SQL 类 （O/R 设计器） 之间的关联](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

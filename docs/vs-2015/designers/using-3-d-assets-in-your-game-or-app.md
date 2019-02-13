@@ -1,14 +1,9 @@
 ---
 title: 在游戏或应用程序中使用三维资产 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
 - VC.Project.MeshContentTask.ContentOutput
@@ -20,13 +15,13 @@ ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0ca0150b44bbed9f411af25c5ce3805e553e8272
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775106"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>在游戏或应用程序中使用三维资产
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +87,7 @@ ms.locfileid: "49863589"
 ### <a name="image-content-pipeline-configuration"></a>图像内容管道配置  
  使用图像内容管道工具生成纹理资产时，你可以采用各种方式压缩纹理、指示生成时是否应该生成 MIP 级别，以及更改输出文件的名称。  
   
-|属性|描述|  
+|Property|说明​​|  
 |--------------|-----------------|  
 |压缩|指定用于输出文件的压缩类型。<br /><br /> 可用选项为：<br /><br /> -   不进行压缩<br />-   BC1_UNORM 压缩<br />-   BC1_UNORM_SRGB 压缩<br />-   BC2_UNORM 压缩<br />-   BC2_UNORM_SRGB 压缩<br />-   BC3_UNORM 压缩<br />-   BC3_UNORM_SRGB 压缩<br />-   BC4_UNORM 压缩<br />-   BC4_SNORM 压缩<br />-   BC5_UNORM 压缩<br />-   BC5_SNORM 压缩<br />-   BC6H_UF16 压缩<br />-   BC6H_SF16 压缩<br />-   BC7_UNORM 压缩<br />-   BC7_UNORM_SRGB 压缩<br /><br /> 有关不同版本的 DirectX 中支持哪些压缩格式的信息，请参阅 [DXGI 编程指南](http://go.microsoft.com/fwlink/p/?LinkId=246265)。|  
 |转换为预乘 alpha 格式|若要将输出文件中的图像转换为预乘 alpha 格式，则为“是”；否则为“否”。 仅更改输出文件，源图像未发生更改。|  
@@ -102,14 +97,14 @@ ms.locfileid: "49863589"
 ### <a name="mesh-content-pipeline-configuration"></a>网格内容管道配置  
  使用网格内容管道工具生成网格资产时，你可以更改输出文件的名称。  
   
-|属性|描述|  
+|Property|说明​​|  
 |--------------|-----------------|  
 |内容输出|指定输出文件的名称。 重要说明：更改输出文件的文件扩展名不会影响其文件格式。|  
   
 ### <a name="shader-content-pipeline-configuration"></a>着色器内容管道配置  
  使用着色器内容管道工具生成着色器资产时，你可以更改输出文件的名称。  
   
-|属性|描述|  
+|Property|说明​​|  
 |--------------|-----------------|  
 |内容输出|指定输出文件的名称。 重要说明：更改输出文件的文件扩展名不会影响其文件格式。|  
   
@@ -205,13 +200,10 @@ cbuffer MiscVars : register(b3)
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|说明​​|  
 |-----------|-----------------|  
 |[如何：导出包含 Mipmap 的纹理](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|描述如何使用“图像内容管道”导出包含预计算 mipmap 的纹理。|  
 |[如何：导出包含自左乘的 Alpha 的纹理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|描述如何使用“图像内容管道”导出包含预乘 alpha 值的纹理。|  
 |[如何：导出纹理以用于 Direct2D 或 Javascipt 应用程序](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|描述如何使用“图像内容管道”导出可在 Direct2D 或 JavaScript 应用中使用的纹理。|  
 |[为游戏和应用使用三维资产](../designers/working-with-3-d-assets-for-games-and-apps.md)|描述 Visual Studio 提供的用于创建和操作三维资产（包括纹理和图像、三维模型和着色器）的编辑工具。|  
 |[如何：导出着色器](../designers/how-to-export-a-shader.md)|描述如何从着色器设计器中导出着色器。|
-
-
-

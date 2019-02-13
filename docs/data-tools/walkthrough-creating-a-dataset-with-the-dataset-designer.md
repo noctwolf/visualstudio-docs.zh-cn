@@ -11,17 +11,16 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: ce6d5a6a485a2d72c3a531219455efd425cd991f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d706ab0cf179a4a4efefa8f60143ea8ce9800ef9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003280"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927667"
 ---
-# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>演练：使用数据集设计器创建数据集
+# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>演练： 使用数据集设计器创建数据集
 
 在本演练中创建数据集使用**数据集设计器**。 本文将指导您完成创建新的项目并添加新的过程**数据集**到它的项。 您将了解如何创建不使用向导根据数据库中的表的表。
 

@@ -1,14 +1,9 @@
 ---
 title: 着色器设计器 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
@@ -16,13 +11,13 @@ ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d39f9da4d421591f6a45b4e3dcdccf73d3e1798c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54805456"
 ---
 # <a name="shader-designer"></a>着色器设计器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ ms.locfileid: "49942005"
   
  下表介绍了“着色器设计器模式”工具栏上的项，按其从左至右的显示顺序列出：  
   
-|工具栏项|描述|  
+|工具栏项|说明​​|  
 |------------------|-----------------|  
 |**选择**|启用关系图中节点与边缘的交互。 在此模式下，可以选择节点并移动或删除它们，也可以建立边缘或中断它们。|  
 |**平移**|相对于窗口框架移动着色器图。 若要进行平移，请选择设计图面上的一个点，然后将其四处移动。<br /><br /> 在“选择”模式下，可以按住 Ctrl 键来暂时激活“平移”模式。|  
@@ -188,11 +183,8 @@ ms.locfileid: "49942005"
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|说明​​|  
 |-----------|-----------------|  
 |[为游戏和应用使用三维资产](../designers/working-with-3-d-assets-for-games-and-apps.md)|概述了可用来处理纹理和图像、三维模型和着色器效果的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 工具。|  
 |[图像编辑器](../designers/image-editor.md)|描述如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 图像编辑器处理纹理和图像。|  
 |[模型编辑器](../designers/model-editor.md)|介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型编辑器处理三维模型。|
-
-
-

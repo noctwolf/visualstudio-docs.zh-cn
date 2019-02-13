@@ -7,15 +7,14 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: d5c6a5a1e7dab8f52dc098fb14a1f872d14eedcd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0febbf31dcf9f0ae1e7a4e47dae2e9cf3d291dbf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959221"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909162"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 创建简单的数据应用程序
 
@@ -354,7 +353,7 @@ Visual Studio 生成的默认排列方式是不适合您的应用程序，因此
 
 在 Windows 窗体应用程序中的数据库中的行中导航并执行基本的 CRUD 操作获取具有按钮的 BindingNavigator 对象。 WPF 不提供 BindingNavigator，但它很容易地创建一个。 使用按钮内的水平的 StackPanel，执行该操作并将这些按钮与绑定到方法后面的代码中的命令相关联。
 
-有个 4 命令逻辑部分：（1） 命令、 （2） 绑定、 （3) 按钮和隐藏代码中 （4） 的命令处理程序。
+有个 4 命令逻辑部分: （1） 命令、 （2） 绑定、 （3) 按钮和隐藏代码中 （4） 的命令处理程序。
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>在 XAML 中添加命令、 绑定和按钮
 

@@ -13,15 +13,14 @@ ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f349887512cdfb9a98d64b0880eda45ecd5c186
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 611accb591b63f31ffe6a14535d470f2807f0e99
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54970222"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951730"
 ---
 # <a name="create-relationships-between-datasets"></a>创建数据集之间的关系
 包含相关的数据的数据集表，表使用<xref:System.Data.DataRelation>对象来表示表之间的父/子关系，并从另一个返回相关的记录。 通过将相关的表添加到数据集**数据源配置向导**，或**数据集设计器**下创建并配置<xref:System.Data.DataRelation>为您的对象。
@@ -59,7 +58,7 @@ ms.locfileid: "54970222"
 |外键约束规则|操作|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|对父记录所做的更改 （更新或删除） 也由子表中的相关记录中。|
-|<xref:System.Data.Rule.SetNull>|不删除子记录，但子记录中的外键设置为<xref:System.DBNull>。 可以使用此设置，保留子记录作为"孤立"— 即，它们具有与父记录没有关系。 **注意：** 使用此规则可以导致子表中的数据无效。|
+|<xref:System.Data.Rule.SetNull>|不删除子记录，但子记录中的外键设置为<xref:System.DBNull>。 可以使用此设置，保留子记录作为"孤立"— 即，它们具有与父记录没有关系。 **注意：** 使用此规则可能会导致在子表中的无效数据。|
 |<xref:System.Data.Rule.SetDefault>|相关的子记录中的外键设置为其默认值 (由列的建立<xref:System.Data.DataColumn.DefaultValue%2A>属性)。|
 |<xref:System.Data.Rule.None>|相关的子记录到不进行任何更改。 使用此设置时，子记录可以包含对无效的父记录的引用。|
 
@@ -77,7 +76,7 @@ ms.locfileid: "54970222"
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>若要创建的两个数据表之间的关系
 
-1.  在“数据集设计器”中打开数据集。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  在“数据集设计器”中打开数据集。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  拖动**关系**对象从**数据集**工具箱拖到关系中子数据的表。
 
@@ -101,7 +100,7 @@ ms.locfileid: "54970222"
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>若要在数据集设计器中显示的关系名称
 
-1.  在“数据集设计器”中打开数据集。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  在“数据集设计器”中打开数据集。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  从**数据**菜单中，选择**显示关系标签**命令以显示该关系名称。 清除该命令，以隐藏关系名称。
 

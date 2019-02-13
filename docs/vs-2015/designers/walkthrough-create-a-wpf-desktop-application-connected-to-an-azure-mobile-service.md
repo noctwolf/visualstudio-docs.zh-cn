@@ -1,27 +1,22 @@
 ---
-title: 演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序 | Microsoft Docs
-ms.custom: ''
+title: 演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 8d42620f-553b-4b04-a38b-f6b306d73a50
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9ab2c5bbea358c226407ba83e2a367195ecfef06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270603"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803726"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>演练：创建一个 WPF 桌面应用程序连接到 Azure 移动服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程序，该程序使用 Azure 移动服务来存储和提供数据。  
@@ -556,7 +551,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
 2.  在“新建项目”  文本框中，输入 `Do something`，然后选择“确定”  按钮。  
   
-3.  `Do something else`，然后选择“确定”  按钮。  
+3.   `Do something else`，然后选择“确定”  按钮。  
   
      请注意，已将这两个条目添加到“查询和更新数据”  列表，如下图所示。  
   
@@ -576,6 +571,3 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
 ## <a name="see-also"></a>请参阅  
  [演练：我的第一个 WPF 桌面应用程序](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
  [使用 Windows Presentation Foundation 创建新式桌面应用程序](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
-
-
-

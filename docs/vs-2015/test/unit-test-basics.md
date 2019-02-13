@@ -1,26 +1,21 @@
 ---
 title: 单元测试基础知识 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
 ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 62a451b1004a6e93980d7fb594781e661b06246d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d86834b82dbc130c9e2e4b3cf712b4d23a27e5e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863615"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801178"
 ---
 # <a name="unit-test-basics"></a>单元测试基础
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +49,7 @@ ms.locfileid: "49863615"
   
 -   [快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
--   [使用测试资源管理器对本机代码进行单元测试](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
+-   [使用测试资源管理器对本机代码进行单元测试](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
 ##  <a name="BKMK_The_MyBank_Solution_example"></a> MyBank 解决方案示例  
  在本主题中，我们使用称为 `MyBank` 的虚构应用程序的开发作为示例。 你不需要按照本主题中的说明的实际代码。 测试方法用 C# 编写并使用 Microsoft 单元测试框架为托管代码进行呈现，但是，概念可以轻松地转到其他语言和框架中。  
@@ -349,6 +344,3 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
    ![选择安装的其他单元测试框架](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
    将使用选定的框架创建单元测试存根。
-
-
-

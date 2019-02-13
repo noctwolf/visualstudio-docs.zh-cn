@@ -1,14 +1,9 @@
 ---
 title: “服务的高级设置”对话框 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedServices
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 217d1f6f546df94a66c5b7554a7a1710747cf83c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a7affd12dceeb8802740b7d0cd502ede051f5ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291871"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54779131"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>“高级服务设置”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +33,11 @@ ms.locfileid: "49291871"
 ## <a name="task-list"></a>任务列表  
  [如何：配置客户端应用程序服务](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  
   
- [如何：脱机使用客户端应用程序服务](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
+ [如何：如何脱机使用客户端应用程序服务](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
   
 ## <a name="uielement-list"></a>UIElement 列表  
  **本地保存密码哈希以启用脱机登录**  
- 指定是否本地缓存用户密码的加密形式，以便在应用程序处于脱机模式时允许用户登录。 有关详细信息，请参阅[如何：脱机使用客户端应用程序服务](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)。 默认情况下选择此选项。  
+ 指定是否本地缓存用户密码的加密形式，以便在应用程序处于脱机模式时允许用户登录。 有关详细信息，请参阅[如何：如何脱机使用客户端应用程序服务](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)。 默认情况下选择此选项。  
   
  “每当服务器 Cookie 过期时要求用户重新登录”  
  指定应用程序访问角色或配置文件服务并且服务器身份验证 cookie 已过期时，先前已通过身份验证的用户是否会自动重新验证。 选中此选项可以在 cookie 过期后，拒绝对应用程序服务的访问，并要求进行显式重新验证。 这对于公共位置中部署的应用程序来说非常有用，可确保让应用程序在使用后保持运行状态的用户不会无限期地保持通过身份验证的状态。 默认情况下清除此选项。  
@@ -59,7 +54,4 @@ ms.locfileid: "49291871"
  [客户端应用程序服务](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)   
  [“项目设计器”->“服务”页](../../ide/reference/services-page-project-designer.md)   
  [如何：配置客户端应用程序服务](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
- [如何：脱机使用客户端应用程序服务](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)
-
-
-
+ [如何：如何脱机使用客户端应用程序服务](http://msdn.microsoft.com/f792cb16-8520-4a0f-9dc9-07bfbc454e38)

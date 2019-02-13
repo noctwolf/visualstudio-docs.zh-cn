@@ -1,25 +1,20 @@
 ---
 title: 如何：设置性能数据文件名选项 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 06751d510c38f055036865a8f368c4e0c3298a30
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f3d513010b94c61e09f8bda6a9fb3074ba949bdd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801969"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760409"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>如何：设置性能数据文件名选项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,6 +51,3 @@ ms.locfileid: "51801969"
     |**自动向会话添加新报告**|选中该复选框会自动将数据文件添加到性能会话中。|  
     |**将一个递增的数字附加到生成的报告**|选中该复选框后，如果存在多个同名文件，文件名后会加上递增的数字。 清除该复选框会覆盖现有文件。|  
     |**在数字中使用时间戳**|选中该复选框会为文件名添加日期戳。|
-
-
-

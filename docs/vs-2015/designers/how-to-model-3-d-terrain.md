@@ -1,27 +1,22 @@
 ---
-title: 如何：构建三维地形模型 | Microsoft Docs
-ms.custom: ''
+title: 如何：构建三维地形模型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fae94fe5e7474580f8867f531fc41d0ce6781cf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940510"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54764111"
 ---
-# <a name="how-to-model-3-d-terrain"></a>如何：构建三维地形模型
+# <a name="how-to-model-3-d-terrain"></a>如何：三维地形模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文档说明如何使用模型编辑器创建三维地形模型。  
@@ -77,6 +72,3 @@ ms.locfileid: "49940510"
   
 ## <a name="see-also"></a>请参阅  
  [模型编辑器](../designers/model-editor.md)
-
-
-

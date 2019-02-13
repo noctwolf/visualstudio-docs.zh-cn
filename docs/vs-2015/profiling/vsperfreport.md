@@ -1,14 +1,9 @@
 ---
 title: VSPerfReport | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools, VSPerfReporttool
 - performance tools, VSPerfReport tool
@@ -20,13 +15,13 @@ ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 12b76923a0687125643f95228397d3051cb08c5b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b7667aac348a6f7b208786191c35afe86542862d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806823"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788876"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="general-report-options"></a>常规报表选项  
  下表说明了常规报表格式设置选项和用于选择要报告的数据的选项。  
   
-|选项|描述|  
+|选项|说明​​|  
 |-------------|-----------------|  
 |**U**|报表输出和重定向控制台输出是以 Unicode 形式写入的。 必须是指定的第一个选项。|  
 |**Summary:**[*types*]|创建一个或多个类型的报表。<br /><br /> -   `All` - 生成所有报表类型。<br />-   `CallerCallee` - 函数间的父/子关系。<br />-   `Function` - 调用的函数。<br />-   `CallTree` - 所调用函数的层次结构。<br />-   `Counter` - 所有标记，以及 Windows 性能计数器值。<br />-   `Ip` - 分析的说明。<br />-   `Life` - 已分配对象的生存期（在收集分配数据后可用）。<br />-   `Line` 源代码行配置文件数据。<br />-   `Header` - 报表包含文件头信息。<br />-   `Mark` 所有标记。<br />-   `Module` - 分析的模块。<br />-   `Process` - 分析的进程。<br />-   `Thread` - 分析的线程。<br />-   `Type` - 分配的类型。<br />-   `Contention` - 资源争用。<br />-   `RuleWarnings` - 性能规则问题<br />-   `ETW` - 运行分析期间收集的所有 Windows 事件跟踪 (ETW) 事件。 .etl 数据文件必须位于其原始位置，或位于包含 .vsp 或 .vsps 文件的目录中。|  
@@ -75,7 +70,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="filter-options"></a>筛选器选项  
  下表说明了用于筛选可用数据的选项。  
   
-|选项|描述|  
+|选项|说明​​|  
 |-------------|-----------------|  
 |**JustMyCode**[**:**[`caller`][,`callee`]]|仅显示用户应用程序函数调用；隐藏系统调用。<br /><br /> - 无参数 - 隐藏所有系统函数。<br />-   `caller` - 显示调用应用程序函数的系统函数的一个级别。<br />-   `callee` - 显示由用户应用程序函数调用的系统函数的一个级别。|  
 |**StartTime:**[*value*]|仅显示此值（以毫秒为单位）之后收集的数据。|  
@@ -89,7 +84,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="difference-report-options"></a>差异报表选项  
  下表说明用于比较报表文件的选项。  
   
-|选项|描述|  
+|选项|说明​​|  
 |-------------|-----------------|  
 |**Diff**  `vspfile1 vspfile2`|比较两个报表文件（.vsp 或 .vsps）文件。 使用 diff 选项将忽略摘要选项。|  
 |**Diff:**[*value*]|低于此阈值时，两个值之间的差异将被忽略。 此外，具有低于此阈值的值的数据将不会显示。|  
@@ -99,6 +94,3 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 ## <a name="see-also"></a>请参阅  
  [性能报告视图](../profiling/performance-report-views.md)
-
-
-

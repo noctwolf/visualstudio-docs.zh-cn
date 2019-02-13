@@ -22,7 +22,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54800825"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>如何：手动创建性能会话。
+# <a name="how-to-manually-create-performance-sessions"></a>如何：手动创建性能会话
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可以手动创建性能会话。 不需要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中打开项目，就可以执行该操作。 有关详细信息，请参阅[配置性能会话](../profiling/configuring-performance-sessions.md)。  

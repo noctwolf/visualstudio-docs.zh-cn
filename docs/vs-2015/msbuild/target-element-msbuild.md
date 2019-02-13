@@ -1,14 +1,9 @@
 ---
 title: Target 元素 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
 caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc4224930782e24b20d3e9720c517304b0153f2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6e763c0a39e3785e91733105f8fc18eae324e958
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173402"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758285"
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ ms.locfileid: "49173402"
   
 ### <a name="attributes"></a>特性  
   
-|特性|描述|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`Name`|必需的特性。<br /><br /> 目标的名称。|  
 |`Condition`|可选特性。<br /><br /> 要评估的条件。 如果该条件评估结果为 `false`，那么目标不会执行目标主体或任何在 `DependsOnTargets` 属性中设置的目标。 有关条件的详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
@@ -80,7 +75,7 @@ ms.locfileid: "49173402"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
+|元素|说明​​|  
 |-------------|-----------------|  
 |[Task](../msbuild/task-element-msbuild.md)|创建并执行的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 任务的实例。 目标中可能有零个或零个以上的任务。|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|包含一组用户定义的 `Property` 元素。 自 .NET Framework 3.5 起，`Target` 元素可能包含 `PropertyGroup` 元素。|  
@@ -89,7 +84,7 @@ ms.locfileid: "49173402"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|描述|  
+|元素|说明​​|  
 |-------------|-----------------|  
 |[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件必需的根元素。|  
   
@@ -128,6 +123,3 @@ ms.locfileid: "49173402"
 ## <a name="see-also"></a>请参阅  
  [目标](../msbuild/msbuild-targets.md)   
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

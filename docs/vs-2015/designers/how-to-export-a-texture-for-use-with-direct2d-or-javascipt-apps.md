@@ -1,25 +1,20 @@
 ---
-title: 如何：导出纹理以用于 Direct2D 或 Javascipt 应用程序 | Microsoft Docs
-ms.custom: ''
+title: 如何：导出纹理以用于 Direct2D 或 Javascipt 应用程序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e2b08760e567f6e000e191703695ee0703da7215
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5d5858df00057298f961189173a3943f3e23d2b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812135"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781475"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>如何：导出纹理以用于 Direct2D 或 Javascipt 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,6 +66,3 @@ ms.locfileid: "49812135"
 6. 选择“确定”  按钮。  
   
    生成项目时，图像内容管道会将源映像从工作格式转换为指定的输出格式（转换包括生成预乘的 Alpha），并且结果将被复制到项目的输出目录。
-
-
-

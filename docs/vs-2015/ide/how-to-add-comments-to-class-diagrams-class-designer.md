@@ -1,14 +1,9 @@
 ---
-title: 如何：向类图添加注释（类设计器）| Microsoft Docs
-ms.custom: ''
+title: 如何：将注释添加到类图 （类设计器） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7fbf85c9a64c08aab69672b9e0a005745df44540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 476d117b04b648c2893885700d94a157399cea15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283005"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802417"
 ---
 # <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>如何：向类关系图添加注释（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ ms.locfileid: "49283005"
  [使用类图（类设计器）](../ide/working-with-class-diagrams-class-designer.md)   
  [使用类图（类设计器）](../ide/working-with-class-diagrams-class-designer.md)   
  [如何：自定义类图（类设计器）](../ide/how-to-customize-class-diagrams-class-designer.md)
-
-
-

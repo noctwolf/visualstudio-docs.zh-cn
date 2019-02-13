@@ -1,14 +1,9 @@
 ---
 title: 使用双向语言创建应用程序 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Hebrew character display, creating applications
 - bi-directional language support, about bi-directional language support
@@ -17,13 +12,13 @@ ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 32acd2a58c2482de6fdd7ed10c99a023d41a8cb4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 340dc798cdff3276df78b6cbf13065f7e769cb23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248490"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763448"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>以双向语言创建应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +79,7 @@ ms.locfileid: "49248490"
 -   代码和文本。 在代码编辑器（也是文本编辑器）中，可使用阿拉伯语或希伯来语命名类、函数、变量、属性、字符串文本、特性，等等。 但是，编辑器不支持从右向左的读取顺序；文本总是从左边开始。  
   
     > [!TIP]
-    >  建议将字符串文本放在资源文件中，而不是将其硬编码到程序中。 有关详细信息，请参阅[演练：本地化 Windows 窗体](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
+    >  建议将字符串文本放在资源文件中，而不是将其硬编码到程序中。 有关详细信息，请参见[演练：本地化 Windows 窗体](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
   
     > [!NOTE]
     >  用这些语言命名的对象的引用方式必须保持一致。 例如，如果使用 Kashida 命名阿拉伯语变量，则引用该变量时必须总是使用 Kashida，否则会产生错误。  
@@ -96,4 +91,3 @@ ms.locfileid: "49248490"
  [ASP.NET Web 应用程序的双向支持](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [全球化应用程序](../ide/globalizing-applications.md)   
  [本地化应用程序](../ide/localizing-applications.md)
-

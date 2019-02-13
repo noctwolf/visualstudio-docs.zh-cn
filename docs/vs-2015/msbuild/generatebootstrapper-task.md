@@ -96,11 +96,11 @@ ms.locfileid: "54769218"
   
    指定一个位置，以供引导程序查找要安装的安装必备组件。 此参数可以具有下列值：  
   
-  - `HomeSite`：指示必备组件正由组件供应商托管。  
+  - `HomeSite`：指示必备组件正由组件供应商联系托管。  
   
-  - `Relative`：：指示必备组件位于应用程序的同一位置。  
+  - `Relative`：指示必备组件位于应用程序的同一位置。  
   
-  - `Absolute`：指示所有组件都可在集中式 URL 处找到。 此值应与 `ComponentsUrl` 输入参数结合使用。  
+  - `Absolute`：指示所有组件在集中式 URL 处找到。 此值应与 `ComponentsUrl` 输入参数结合使用。  
   
     如果未指定 `ComponentsLocation`，则默认情况下使用 `HomeSite`。  
   
