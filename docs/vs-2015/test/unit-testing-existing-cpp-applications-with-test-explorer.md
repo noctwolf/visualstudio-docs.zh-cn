@@ -1,24 +1,19 @@
 ---
 title: 使用测试资源管理器对现有 C++ 应用进行单元测试 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 8dab39c5718b8872df5e81281ba9dda886ebf313
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3952f73c214c0d7070005f28140e048136279215
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941199"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54760216"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>用测试资源管理器对现有的 C++ 应用程序进行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,7 +138,7 @@ ms.locfileid: "49941199"
   
 1. 在每个单元测试代码文件中，为所测试项目的标头添加 `#include` 语句。  
   
-2. 向单元测试代码文件添加测试类和方法。 例如：  
+2. 向单元测试代码文件添加测试类和方法。 例如:  
   
    ```cpp  
    #include "stdafx.h"  
@@ -163,7 +158,7 @@ ms.locfileid: "49941199"
    }  
    ```  
   
-   有关详细信息，请参阅[使用测试资源管理器运行单元测试本机代码](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)。  
+   有关详细信息，请参阅[使用测试资源管理器运行单元测试本机代码](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)。  
   
 ## <a name="run-the-tests"></a>运行测试  
   
@@ -172,6 +167,3 @@ ms.locfileid: "49941199"
 2. 在“测试资源管理器”中，选择 **“全部运行”**。  
   
    有关详细信息，请参阅[快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)。
-
-
-

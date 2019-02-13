@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 82013e9a-ef53-4fd2-b451-a6891cdc6307
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73dbb479c7f579739d04a2c378fb984fbba1f72b
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: HT
+ms.openlocfilehash: 05d2a2cbd3cfe59b1d110fdd8b0b7c5fd042d25c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53934888"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54937322"
 ---
 # <a name="how-to-attach-to-script"></a>如何：附加到脚本
 本主题介绍如何手动将 Visual Studio 调试器附加到脚本文件进行调试。  
@@ -61,7 +61,7 @@ ms.locfileid: "53934888"
    所有“调试”菜单执行命令都会影响活动程序。 可从“进程”对话框中断任何已调试的程序。请参阅[使用断点](../debugger/using-breakpoints.md)。  
   
 > [!NOTE]
->  如果尝试附加到不受信任的用户帐户所拥有的进程，则会出现一个安全警告确认对话框。 有关详细信息，请参阅[安全警告：附加到不受信任的用户所拥有的进程可能很危险。如果以下信息看起来可疑或你对此无法确定，请勿附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)  
+>  如果尝试附加到不受信任的用户帐户所拥有的进程，则会出现一个安全警告确认对话框。 有关详细信息，请参阅[安全警告：附加到不受信任的用户所拥有的进程可能很危险。如果以下信息看起来可疑或你对此无法确定，请勿附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。  
   
  在某些情况下，若在“终端服务(远程桌面)”会话中调试，“可用进程”列表不会显示所有可用进程。 在 [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)]或更高版本上，如果以受限用户的身份运行 Visual Studio，“可用进程”列表不会显示会话 0 中运行的进程，该会话用于服务和其他服务器进程（包括 w3wp.exe）。 可通过以下方法解决该问题：使用管理员帐户运行 Visual Studio，或从服务器控制台而非“终端服务”会话运行 Visual Studio。 如果这两种解决方法都不可行，第三种选择是通过在 Windows 命令行键入 vsjitdebugger.exe -p ProcessId 以附加到进程。 可使用 tlist.exe 来确定进程 ID。 若亚获取 tlist.exe，请下载并安装 Windows 调试工具，该工具可在 [Windows 硬件开发中心获得](/windows-hardware/drivers/dashboard/)。  
   

@@ -1,14 +1,9 @@
 ---
 title: 创建和配置类型成员（类设计器）| Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdetails.method
 - vs.classdetails.property
@@ -34,13 +29,13 @@ ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827969"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54795298"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>创建和配置类型成员（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -136,7 +131,7 @@ ms.locfileid: "49827969"
      注意：还可使用键盘快捷方式创建成员。 有关详细信息，请参阅[类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式（类设计器）](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)。  
   
 ##  <a name="ModifyTypeMembers"></a>修改类型成员  
- 类设计器使你能够修改关系图上显示的类型的成员。 你可以修改类图上显示的任何非只读类型的成员。 （请参阅[显示只读信息（类设计器）](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。）通过在设计图面、“属性”窗口和“类详细信息”窗口上使用就地编辑来修改类型成员。  
+ 类设计器使你能够修改关系图上显示的类型的成员。 你可以修改类图上显示的任何非只读类型的成员。 （请参阅[显示只读信息（类设计器）](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。）通过在设计图面、“属性”窗口和“类详细信息”窗口上使用就地编辑来修改类型成员。  
   
  “类详细信息”窗口中显示的所有成员均表示类图中类型的成员。 有四种成员：方法、属性、字段和事件。  
   
@@ -268,7 +263,7 @@ ms.locfileid: "49827969"
   
  除了下面几个特例外，“类详细信息”窗口中的所有单元格都是可编辑的：  
   
-- 整个类型是只读的，比如它位于引用的程序集中时（请参阅[显示只读信息（类设计器）](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。）当你在类设计器中选择形状时，“类详细信息”窗口将以只读方式显示形状的详细信息。  
+- 整个类型是只读的，比如它位于引用的程序集中时（请参阅[显示只读信息（类设计器）](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。）当你在类设计器中选择形状时，“类详细信息”窗口将以只读方式显示形状的详细信息。  
   
 - 对于索引器，名称是只读的，其余内容（类型、修饰符、摘要）都是可编辑的。  
   
@@ -327,7 +322,7 @@ ms.locfileid: "49827969"
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|说明​​|  
 |-----------|-----------------|  
 |[查看类型和关系（类设计器）](../ide/viewing-types-and-relationships-class-designer.md)|你可以在类图中查看你的现有类型、成员和关系。|  
 |[重构类和类型（类设计器）](../ide/refactoring-classes-and-types-class-designer.md)|通过使用重构，你可以轻松地重命名类型和类型成员。 你也可以在类之间移动成员，将一个类拆分为多个分部类，并实现接口。|

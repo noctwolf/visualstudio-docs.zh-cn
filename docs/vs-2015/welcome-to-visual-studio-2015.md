@@ -3,10 +3,7 @@ title: 欢迎使用 Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - msdnstart
 helpviewer_keywords:
@@ -15,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
-manager: crdun
-ms.openlocfilehash: c25afa4447a77c6e8bdeb0abb502235fdba1e203
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+manager: jillfra
+ms.openlocfilehash: 4d71c74f54e2ce2a79ffff44d8054c15bd3b4a86
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53805141"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54835081"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>欢迎使用 Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -53,17 +50,17 @@ ms.locfileid: "53805141"
 ## <a name="build-apps-for-android-ios-and-windows"></a>生成用于 Android、iOS 和 Windows 的应用
  可使用 Visual Studio 生成适用于 Android、iOS 和 Windows 设备的应用。 若要了解详细信息，请参阅[跨平台移动开发](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)。
 
- 有关通用 Windows 应用 (UWP) 的信息，请参阅 [通用 Windows 应用](https://dev.windows.com/en-us/windows-apps)。
+ 有关通用 Windows 应用 (UWP) 的信息，请参阅 [通用 Windows 应用](https://dev.windows.com/windows-apps)。
 
  基于应用要求和要使用的语言选择所需工具。
 
 1.  [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)：针对所有设备的 C# 中的常用基本代码
 
-2.  [使用 Visual Studio 的 Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42):通用基本的 HTML、 CSS 和 JavaScript 或 Typescript 代码
+2.  [Apache Cordova with Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)：用于 HTML、CSS 和 JavaScript 或 Typescript 的常用基本代码
 
 3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md)：C# 中的 2D/3D 游戏开发
 
-4.  [适用于跨平台开发的 c + +](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md):共享的代码库和 c + + 中的应用
+4.  [适用于跨平台开发的 C++](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md)：C++ 中的共享代码库和应用
 
 5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md)：适用于 Android 的 Visual Studio 仿真程序：调试和测试你的 Android 应用而无需考虑 IDE
 
@@ -82,7 +79,7 @@ ms.locfileid: "53805141"
 ## <a name="build-test-and-manage-your-code"></a>生成、测试和管理你的代码
 
 ### <a name="check-in-your-code"></a>签入你的代码
- 如果你在团队中工作，则还需要共享代码的最新版本，以便团队中的每个人都使用相同的基本代码。 Visual Studio 与 Visual Studio Team Services 或 Team Foundation Server 无缝集成，以使用 Git 或 TFVC（Team Foundation 版本控制）提供版本控制。 使用 Visual Studio Team Services 可将代码存储在云中，而无需维护本地服务器。 如果需要具有本地服务器，请使用 Team Foundation Server。 每次创建代码项目时，你都可以选择将其添加到版本控制。 要了解的版本控制系统，最适合你的需求：[使用版本控制](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)
+ 如果你在团队中工作，则还需要共享代码的最新版本，以便团队中的每个人都使用相同的基本代码。 Visual Studio 与 Visual Studio Team Services 或 Team Foundation Server 无缝集成，以使用 Git 或 TFVC（Team Foundation 版本控制）提供版本控制。 使用 Visual Studio Team Services 可将代码存储在云中，而无需维护本地服务器。 如果需要具有本地服务器，请使用 Team Foundation Server。 每次创建代码项目时，你都可以选择将其添加到版本控制。 了解最适合于需求的版本控制系统： [使用版本控制](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)。
 
 ### <a name="build-your-app"></a>生成应用程序
  你可以 [在本地生成应用](./ide/compiling-and-building-in-visual-studio.md) 并确保它正常运行。 然后使用 [调试工具](./debugger/debugging-in-visual-studio.md) 修复与应用有关的任何问题。 或者，可以在共享生成服务器上或在云中生成项目。 自动执行生成过程以生成团队中的开发人员签入到版本控制的代码。 例如，您可以在夜间或每次签入此代码时生成一个或多个项目。
@@ -99,7 +96,7 @@ ms.locfileid: "53805141"
 
 |||||
 |-|-|-|-|
-|[Visual Studio 2015 中的新增功能](./what-s-new-in-visual-studio-2015.md)|[Visual C# 的新增功能](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 的新增功能](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM 的新增功能](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Visual Studio 2015 中的新增功能](./what-s-new-in-visual-studio-2015.md)|[Visual C# 的新增功能](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[.NET Framework 4.6 的新增功能](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[ALM 的新增功能](http://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
 |[C++ 的新增功能](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Visual Basic 的新增功能](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[JavaScript 的新增功能](/visualstudio/scripting-docs/javascript/what-s-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
