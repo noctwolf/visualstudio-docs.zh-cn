@@ -1,7 +1,6 @@
 ---
 title: 着色器设计器节点
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 author: gewarren
@@ -9,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4793a6e4e5b2db841c3d4fded1c1ea41e3de9816
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d5e27f6cc244580ac4f3c72724dd6fdb6d09999
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042018"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928265"
 ---
 # <a name="shader-designer-nodes"></a>着色器设计器节点
 文档本部分文章包含关于用于创建图形效果的各种着色器设计器节点的信息。
@@ -42,7 +41,7 @@ ms.locfileid: "55042018"
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|说明|
+|Title|说明​​|
 |-----------|-----------------|
 |[常量节点](../designers/constant-nodes.md)|介绍可在着色器计算中用来表示文本值和内插顶点状态信息的节点。 因为顶点状态是内插的，因此每个像素的顶点状态不同，每个像素着色器实例会接收不同版本的常量。|
 |[参数节点](../designers/parameter-nodes.md)|介绍可在着色器计算中用来表示照相机位置、材料属性、照明参数、时间和其他应用状态信息的节点。|

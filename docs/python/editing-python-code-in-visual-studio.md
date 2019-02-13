@@ -2,7 +2,6 @@
 title: 编辑 Python 代码
 description: 对于 Python，Visual Studio 提供丰富的 IntelliSense、代码片段和导航功能，以及格式设置、linting 和重构。
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,22 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81430d156330f067f84cdf7fbba1238c098ae406
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036051"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155391"
 ---
 # <a name="edit-python-code"></a>编辑 Python 代码
 
 由于将大量开发时间都用在了代码编辑器中，因此可借助 [Visual Studio 中的 Python 的支持](installing-python-support-in-visual-studio.md)中的功能来提高工作效率。 这些功能包括 IntelliSense 语法突出显示、自动完成、签名帮助、方法重写、搜索和导航。
 
 编辑器还集成了 Visual Studio 中的交互式窗口，便于在两者之间交换代码。 请参阅[教程步骤 3：使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)和[使用交互窗口：Send to Interactive 命令](python-interactive-repl-in-visual-studio.md#send-to-interactive-command)了解详细信息。
-
-|   |   |
-|---|---|
-| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关编辑 Python 代码的演示，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567)（2 分 30 秒）。|
 
 有关在 Visual Studio 中编辑代码的常规文档，请参阅[代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)。 另请参阅[大纲显示](../ide/outlining.md)，有助于将重点放在代码的特定部分。
 

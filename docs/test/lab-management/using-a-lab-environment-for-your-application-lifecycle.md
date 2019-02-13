@@ -1,7 +1,6 @@
 ---
 title: 使用实验室环境进行开发
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
@@ -10,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6bf618f8d7f93ca19e788fe8e6e9e1486548fa06
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35bc798052bac30f76e76983d0a5dc0bdf4f1fa6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000209"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956121"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用实验室环境进行开发
 
@@ -29,7 +28,7 @@ ms.locfileid: "55000209"
 
 以下是常见的实验室环境拓扑示例：
 
-| 拓扑 | 说明 |
+| 拓扑 | 说明​​ |
 |---|---|
 |![仅包含服务器的拓扑](../media/topology_backend.png)| 此实验室环境具有服务器拓扑，此拓扑常用于在服务器应用程序上运行手动测试，并且允许测试人员使用他们自己的客户端计算机验证环境中的 bug。 在后端拓扑中，你的实验室环境仅包含服务器。 当你使用此类型的拓扑时，通常使用不属于该环境一部分的客户端计算机连接实验室环境中的服务器。|
 |![云实验室环境](../media/topology_cloud.png)| 此实验室环境提供的功能与服务器拓扑类似，但无需在本地环境运行物理计算机或虚拟机，这样可以缩短安装时间、简化维护过程并降低成本。 在 Microsoft Azure 等云环境中可以快速方便地设置多个网站、虚拟机和自定义网络。|
@@ -115,7 +114,7 @@ ms.locfileid: "55000209"
 
 以下是一些你在继续之前应该熟悉的其他概念：
 
-|术语|说明|
+|术语|说明​​|
 |-|-----------------|
 |实验室中心|可在其中创建和管理实验室环境的 Microsoft 测试管理器区域。|
 |Azure DevOps 项目实验室|已设置的实验室环境的集合，以便你连接到它们并运行其虚拟机。|

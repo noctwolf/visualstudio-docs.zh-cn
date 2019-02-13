@@ -1,7 +1,6 @@
 ---
 title: 将字段重构为属性
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4b0ccda198cede5f7f4f3094605043eec4defba2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9030fd2ae85d12760d6f6a12be54492f3c14e12b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932241"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911269"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>“封装字段”重构
 
@@ -55,7 +54,7 @@ ms.locfileid: "54932241"
       - 选择“编辑 > 重构> 封装字段”。
       - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口选择任意一个“封装字段”项。
 
-   选择 | 说明
+   选择 | 说明​​
    --------- | -----------
    封装字段 (并使用属性) | 使用属性封装字段，并将此字段的所有用法更新为使用所生成的属性
    封装字段 (但仍使用字段) | 使用属性封装字段，但将此字段的所有用法保留不变

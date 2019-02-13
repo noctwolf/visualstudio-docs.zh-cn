@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87fffbc69860fe41e3497109f889dc2ae8298ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5a8736e27337aa2b2512eb96b3325489c96b0e93
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980357"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853776"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 任务
-提供自动化方式来检测、下载和安装应用程序及其必备组件。 它可以作为集成不同的安装程序的单个安装程序为组成应用程序的所有组件提供服务。  
-  
-## <a name="task-parameters"></a>任务参数  
- 下表描述了 `GenerateBootstrapper` 任务的参数。  
-  
+提供自动化方式来检测、下载和安装应用程序及其必备组件。 它可以作为集成不同的安装程序的单个安装程序为组成应用程序的所有组件提供服务。
+
+## <a name="task-parameters"></a>任务参数
+下表描述了 `GenerateBootstrapper` 任务的参数。
+
 - `ApplicationFile`  
   
    可选 `String` 参数。  
@@ -67,14 +67,14 @@ ms.locfileid: "54980357"
   
    指定要置入引导程序中的产品。 传递给此参数的项应具有以下语法：  
   
-  ```xml  
-  <BootstrapperItem  
-      Include="ProductCode">  
-      <ProductName>  
-          ProductName  
-      </ProductName>  
-  </BootstrapperItem>  
-  ```  
+  ```xml
+  <BootstrapperItem
+      Include="ProductCode">
+      <ProductName>
+          ProductName
+      </ProductName>
+  </BootstrapperItem>
+  ```
   
    `Include` 属性表示应安装的必备组件的名称。 `ProductName` 项元数据是可选的，并且在找不到包的情况下，生成引擎将其用作用户友好名称。 这些项不是必需的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 输入参数，除非没有指定任何 `ApplicationFile`。 对于必须为应用程序安装的每个必备组件，应包括一个项。  
   
@@ -146,35 +146,35 @@ ms.locfileid: "54980357"
   
    可选 `Boolean` 参数。  
   
-   如果为 `true`，则引导程序对指定输入的引导程序项执行 XSD 验证。 此参数的默认值为 `false`。  
-  
-## <a name="remarks"></a>备注  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
-  
-## <a name="example"></a>示例  
- 以下示例使用 `GenerateBootstrapper` 任务来安装将 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 作为必备组件安装的应用程序。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  
-    <ItemGroup>  
-        <BootstrapperFile Include="Microsoft.Net.Framework.2.0">  
-            <ProductName>Microsoft .NET Framework 2.0</ProductName>  
-        </BootstrapperFile>  
-    </ItemGroup>  
-  
-    <Target Name="BuildBootstrapper">  
-        <GenerateBootstrapper  
-            ApplicationFile="WindowsApplication1.application"  
-            ApplicationName="WindowsApplication1"  
-            ApplicationUrl="http://mycomputer"  
-            BootstrapperItems="@(BootstrapperFile)"  
-            OutputPath="C:\output" />  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [任务](../msbuild/msbuild-tasks.md)   
- [任务参考](../msbuild/msbuild-task-reference.md)
+   如果为 `true`，则引导程序对指定输入的引导程序项执行 XSD 验证。 此参数的默认值为 `false`。
+
+## <a name="remarks"></a>备注
+除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
+
+## <a name="example"></a>示例
+以下示例使用 `GenerateBootstrapper` 任务来安装将 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 作为必备组件安装的应用程序。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <ItemGroup>
+        <BootstrapperFile Include="Microsoft.Net.Framework.2.0">
+            <ProductName>Microsoft .NET Framework 2.0</ProductName>
+        </BootstrapperFile>
+    </ItemGroup>
+
+    <Target Name="BuildBootstrapper">
+        <GenerateBootstrapper
+            ApplicationFile="WindowsApplication1.application"
+            ApplicationName="WindowsApplication1"
+            ApplicationUrl="http://mycomputer"
+            BootstrapperItems="@(BootstrapperFile)"
+            OutputPath="C:\output" />
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>请参阅
+[任务](../msbuild/msbuild-tasks.md)  
+[任务参考](../msbuild/msbuild-task-reference.md)

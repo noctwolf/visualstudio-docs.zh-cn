@@ -1,7 +1,6 @@
 ---
 title: “选项”对话框 ->“环境”->“字体和颜色”
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.FontsAndColors
@@ -26,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 499e3c79ca7c18b4b854b38920481757dbf49d2c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20c7561bd3ec991308b2250869a6f0c6f66d117e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919793"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970824"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“字体和颜色”
 
@@ -94,7 +93,7 @@ ms.locfileid: "54919793"
 
 一些显示项包括：
 
-|显示项|说明|
+|显示项|说明​​|
 |------------------|-----------------|
 |纯文本|编辑器中的文本。|
 |选定的文本|当编辑器具有焦点时，当前选定内容中包含的文本。|

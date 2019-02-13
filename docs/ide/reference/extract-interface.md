@@ -1,7 +1,6 @@
 ---
 title: “提取接口”重构
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe61ca799b6df00acc34a0579398d612c142c2c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc10a43cc5834453e6c5e11e1c7b787903f24c06
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028448"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909175"
 ---
 # <a name="extract-an-interface-refactoring"></a>“提取接口”重构
 
@@ -60,7 +59,7 @@ ms.locfileid: "55028448"
    ![提取接口](media/extractinterface-dialog-cs.png)
 
 
-   | 字段 | 说明 |
+   | 字段 | 说明​​ |
    | - | - |
    | “新接口名称” | 要创建的接口的名称。 此处将默认为 “IClassName”，其中“ClassName”是上面所选类的名称。 |
    | “新文件名” | 将生成的包含接口的文件的名称。 与接口名称一样，此处将默认为 “IClassName”，其中“ClassName”是上面所选类的名称。 |

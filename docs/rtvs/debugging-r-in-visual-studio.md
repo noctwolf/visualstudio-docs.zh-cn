@@ -2,19 +2,18 @@
 title: 调试 R 代码
 description: Visual Studio 为 R 提供完整的调试体验，包括断点、附加、调用堆栈和检查变量。
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: da72f68d72a435ebf7fe90a7a7d5b6141e409f07
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98dcbaaeb6f330cda3a14cf8c32afe403b50aa85
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918363"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933946"
 ---
 # <a name="debug-r-in-visual-studio"></a>在 Visual Studio 中调试 R
 
@@ -54,7 +53,7 @@ add <- function(x, y) {
 
 环境浏览器支持若干特殊命令：
 
-| 命令 | 说明 |
+| 命令 | 说明​​ |
 | --- | --- |
 | n | 下一个：运行代码文件中的下一个语句（与逐步执行相同）。 |
 | 秒 | 单步执行：运行代码文件中的下一个语句，如果下个一语句是函数调用，则单步执行函数范围。 |

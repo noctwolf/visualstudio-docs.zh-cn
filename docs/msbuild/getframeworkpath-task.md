@@ -18,48 +18,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6aa429247d8f27a56d367f821888bdc8caad310
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 20178ee5b241f1748ac7d0467f10ff571db0df96
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010397"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853399"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath 任务
-检索 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 程序集的路径。  
-  
-## <a name="task-parameters"></a>任务参数  
- 下表描述了 `GetFrameworkPath` 任务的参数。  
-  
-|参数|说明|  
-|---------------|-----------------|  
-|`FrameworkVersion11Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 1.1 版程序集的路径（如存在）。 否则返回 `null`。|  
-|`FrameworkVersion20Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 2.0 版程序集的路径（如存在）。 否则返回 `null`。|  
-|`FrameworkVersion30Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 3.0 版程序集的路径（如存在）。 否则返回 `null`。|  
-|`FrameworkVersion35Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 3.5 版程序集的路径（如存在）。 否则返回 `null`。|  
-|`FrameworkVersion40Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 4.0 版程序集的路径（如存在）。 否则返回 `null`。|  
-|`Path`|可选 `String` 输出参数。<br /><br /> 包含最新 framework 程序集的路径（如存在）。 否则返回 `null`。|  
-  
-## <a name="remarks"></a>备注  
- 如果安装了多个版本的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，则此任务会返回运行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所需的版本。  
-  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
-  
-## <a name="example"></a>示例  
- 以下示例使用 `GetFrameworkPath` 任务将指向 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的路径存储在 `FrameworkPath` 属性中。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="GetPath">  
-        <GetFrameworkPath>  
-            <Output  
-                TaskParameter="Path"  
-                PropertyName="FrameworkPath" />  
-        </GetFrameworkPath>  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [任务](../msbuild/msbuild-tasks.md)   
- [任务参考](../msbuild/msbuild-task-reference.md)
+检索 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 程序集的路径。
+
+## <a name="task-parameters"></a>任务参数
+下表描述了 `GetFrameworkPath` 任务的参数。
+
+|参数|说明​​|
+|---------------|-----------------|
+|`FrameworkVersion11Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 1.1 版程序集的路径（如存在）。 否则返回 `null`。|
+|`FrameworkVersion20Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 2.0 版程序集的路径（如存在）。 否则返回 `null`。|
+|`FrameworkVersion30Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 3.0 版程序集的路径（如存在）。 否则返回 `null`。|
+|`FrameworkVersion35Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 3.5 版程序集的路径（如存在）。 否则返回 `null`。|
+|`FrameworkVersion40Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 4.0 版程序集的路径（如存在）。 否则返回 `null`。|
+|`Path`|可选 `String` 输出参数。<br /><br /> 包含最新 framework 程序集的路径（如存在）。 否则返回 `null`。|
+
+## <a name="remarks"></a>备注
+如果安装了多个版本的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，则此任务会返回运行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所需的版本。
+
+除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
+
+## <a name="example"></a>示例
+以下示例使用 `GetFrameworkPath` 任务将指向 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的路径存储在 `FrameworkPath` 属性中。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="GetPath">
+        <GetFrameworkPath>
+            <Output
+                TaskParameter="Path"
+                PropertyName="FrameworkPath" />
+        </GetFrameworkPath>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>请参阅
+[任务](../msbuild/msbuild-tasks.md)  
+[任务参考](../msbuild/msbuild-task-reference.md)
