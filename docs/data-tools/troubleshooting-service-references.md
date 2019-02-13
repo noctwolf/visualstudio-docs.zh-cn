@@ -14,15 +14,14 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 573019483f1c7c616f8bdf61286c46f76458354f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031172"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927036"
 ---
 # <a name="troubleshoot-service-references"></a>服务引用疑难解答
 
@@ -48,7 +47,7 @@ ms.locfileid: "55031172"
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>通过远程桌面访问服务时出错
 
-当用户访问通过远程桌面连接和用户的 Web 承载的 WCF 服务不具有管理权限，使用 NTLM 身份验证。 如果用户没有管理权限，用户可能会收到以下错误消息："HTTP 请求是未经授权的客户端身份验证方案 Anonymous。 从服务器收到的身份验证标头是 NTLM"。
+当用户访问通过远程桌面连接和用户的 Web 承载的 WCF 服务不具有管理权限，使用 NTLM 身份验证。 如果用户没有管理权限，用户可能会收到以下错误消息:"HTTP 请求是未经授权的客户端身份验证方案 Anonymous。 从服务器收到的身份验证标头是 NTLM"。
 
 修复此错误的方法：
 

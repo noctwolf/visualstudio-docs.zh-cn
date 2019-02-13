@@ -12,31 +12,27 @@ dev_langs:
 helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
-ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08ce571a5e41807c655e9bc9b42eb7e993a75e35
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: 8e30eafdc9a01b126f2a08bb8e4395298f446069
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231969"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155781"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序 (C#，Visual Basic、 c + +)
-Visual Studio 提供多种工具和用户界面元素，用于调试多线程应用程序。 本教程演示如何使用线程标记、“并行堆栈”窗口、“并行监视”窗口、条件断点、筛选器断点。 完成本教程只需数分钟，然后你就会熟悉用于调试多线程应用程序的功能。
 
-| | |
-|---------|---------|
-| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | [观看视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171)上显示了类似的步骤的多线程调试。 |
+Visual Studio 提供多种工具和用户界面元素，用于调试多线程应用程序。 本教程演示如何使用线程标记、“并行堆栈”窗口、“并行监视”窗口、条件断点、筛选器断点。 完成本教程只需数分钟，然后你就会熟悉用于调试多线程应用程序的功能。
 
 下面两个主题额外介绍了如何使用其他多线程调试工具：
 
-- 若要使用**调试位置**工具栏和**线程**窗口中，请参阅[演练：调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
+- 若要使用“调试位置”工具栏和“线程”窗口，请参阅[演练：调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
 
-- 有关使用的示例<xref:System.Threading.Tasks.Task>（托管代码） 和并发运行时 （c + +），请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md) 有关适用于大多数多线程应用程序类型的常规调试技巧，请阅读该主题和本主题。
+- 如需使用 <xref:System.Threading.Tasks.Task>（托管代码）和并发运行时 (C++) 的示例，请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)。 有关适用于大多数多线程应用程序类型的常规调试技巧，请阅读该主题和本主题。
   
 首先需要一个多线程应用程序项目。 示例如下。  
   
@@ -46,7 +42,7 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
   
      此时将出现“新建项目”对话框。  
   
-2.  选择语言**Visual C#** ， **Visual c + +**，或**Visual Basic**。  
+2.  选择语言：**Visual C#**、**Visual C++** 或 **Visual Basic**。  
   
 3.  在“Windows 桌面”下，选择“控制台应用”。   
   
@@ -342,8 +338,9 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
     > [!NOTE]
     > 当您推进调试器进度时，将运行所有线程。 但是，调试器不会中断到其他线程上的代码中，除非其中一个其他线程遇到断点。 
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
+
 [调试多线程应用](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
 [如何：在调试时切换到另一个线程](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[如何：使用并行堆栈窗口](../debugger/using-the-parallel-stacks-window.md)  
+[如何： 使用并行堆栈窗口](../debugger/using-the-parallel-stacks-window.md)  
 [如何：使用“并行监视”窗口](../debugger/how-to-use-the-parallel-watch-window.md)  
