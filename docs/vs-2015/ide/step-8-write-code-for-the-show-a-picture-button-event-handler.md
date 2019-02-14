@@ -1,25 +1,20 @@
 ---
 title: 步骤 8：为“显示图片”按钮事件处理程序编写代码 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6172188fb7d06122cdcc178889b2a5b37ca1bb0f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 301147bffb67aed337a416fd0be19c5b407ca085
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933542"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54771143"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步骤 8：为“显示图片”按钮事件处理程序编写代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49933542"
   
 1.  转到“Windows 窗体设计器”，并双击“显示图片”按钮。 IDE 将立即转到代码设计器，并将光标移动到您之前添加的 `showButton_Click()` 方法内。  
   
-2.  在两个大括号 { } 之间的空行上键入一个 `i`。 (在 Visual Basic 中，键入在 Private Sub 之间的空行。... 与 End Sub。）“IntelliSense”窗口随即打开，如以下图片中所示。  
+2.  在两个大括号 { } 之间的空行上键入一个 `i`。 (在 Visual Basic 中，键入在 Private Sub 之间的空行。... 与 End Sub。）**IntelliSense**窗口将打开，如下图中所示。  
   
      ![包含 Visual C&#35; 代码的 IntelliSense](../ide/media/express-ifintellisense.png "Express_IfIntellisense")  
 包含 Visual C# 代码的 IntelliSense  
@@ -109,6 +104,3 @@ Visual C# 代码
 -   若要转到下一个教程步骤，请参阅[步骤 9：评审代码、为代码添加注释和测试代码](../ide/step-9-review-comment-and-test-your-code.md)。  
   
 -   若要返回上一个教程步骤，请参阅[步骤 7：向窗体添加对话组件](../ide/step-7-add-dialog-components-to-your-form.md)。
-
-
-

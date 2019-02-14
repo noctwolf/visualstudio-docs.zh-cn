@@ -10,19 +10,19 @@ dev_langs:
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ffb41dc978598264cfff165602c9c9a8e4cce71
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 131fb1cf2db9a22bb6bc6aa4ca313481c3b399aa
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947551"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991575"
 ---
 # <a name="debug-html-and-css-sample-code"></a>调试 HTML 和 CSS 示例代码
   
- 本主题中的代码是示例文件[快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md) 此版本的代码中修复了快速入门中有意出现的错误。  
+ 本主题中的代码是示例文件[快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。 此版本的代码中修复了快速入门中有意出现的错误。  
   
 ## <a name="sample-code"></a>代码示例  
  快速入门中的 \<body> 标记中使用了以下 HTML 代码。  
