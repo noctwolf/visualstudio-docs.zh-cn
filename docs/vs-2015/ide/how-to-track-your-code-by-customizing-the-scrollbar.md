@@ -1,25 +1,20 @@
 ---
 title: 如何：通过自定义滚动条来跟踪代码 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: a9ebe7ec-4b6f-4ba2-a79e-80fab3db485b
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bcbce0884dbc5be78371b6df00b0eb482aa8c26e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 11df0e3ca4e8b9c814bf91735d48bb091c711068
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270767"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788201"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>How to: Track Your Code by Customizing the Scrollbar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "49270767"
   
 1.  可设置滚动条，以显示代码更改、断点、错误和书签。  
   
-     打开“滚动条”选项页（“工具”，“选项文本编辑器”，“所有语言”或特定语言，或在快速启动窗口中键入“滚动条”）**。  
+     打开**滚动条**选项页（**工具”，“选项文本编辑器”，“所有语言”或特定语言，或在快速启动窗口中键入“滚动条”）**。  
   
 2.  选择“在垂直滚动条上方显示注释”，然后选择要查看的注释。 （“标记”选项包括断点和书签。）  
   
@@ -59,4 +54,3 @@ ms.locfileid: "49270767"
      ![包含工具提示的滚动条](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   
      如果要保留映射模式滚动行为和预览工具提示，但不需要看到源代码概述，可将“源概述”设置为“关闭” 。
-
