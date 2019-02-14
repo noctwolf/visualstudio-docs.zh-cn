@@ -1,5 +1,5 @@
 ---
-title: IDiaReadExeAtRVACallback |Microsoft Docs
+title: IDiaReadExeAtRVACallback | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b2892513-3952-4f99-9b98-60cb9b1fdc91
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e00ce2e1286c2309a11984f9bde23aa74071a076
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c6a190cecdfbf9d7ae77543d8a955a52a3f16d15
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859287"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070625"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
 允许客户端应用程序提供的可执行文件的相对虚拟地址由指定的字节数。  
@@ -31,7 +31,7 @@ IDiaReadExeAtRVACallback : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDiaReadExeAtRVACallback`。  
   
-|方法|说明|  
+|方法|说明​​|  
 |------------|-----------------|  
 |[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|读取指定的开始的指定相对虚拟地址 (RVA) 从可执行文件的字节数。|  
   

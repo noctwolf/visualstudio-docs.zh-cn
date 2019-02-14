@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_addressoffset |Microsoft Docs'
+title: IDiaSymbol::get_addressOffset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c15639b0-7f37-46c7-891b-40273b7f6319
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78f801faae0a32bd928f6adb8062acf18bdf1332
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 529731e358c676c3bcdc56d9e2d78b4637754154
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875188"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55004989"
 ---
 # <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
 检索地址位置的偏移量的部分。 何时使用[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)设置为`LocIsStatic`。  
@@ -47,7 +47,7 @@ HRESULT get_addressOffset ( 
   
 ## <a name="requirements"></a>要求  
   
-|需求|说明|  
+|需求|说明​​|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v7.0|  

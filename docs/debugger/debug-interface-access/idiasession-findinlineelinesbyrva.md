@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLinesByRVA |Microsoft Docs
+title: IDiaSession::findInlineeLinesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 7a74d5ee-0dbf-47c0-92b4-47ec03b13ce9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f93f0031d9f81bed03713500019ca8ef031d80aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcbf6a02784273070d0e8d3ecbc961b5d546a906
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935770"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54920093"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
 检索一个枚举，它允许客户端可以循环访问的所有函数的内联，直接或间接地，由指定的父符号的行号信息且包含在指定的相对虚拟地址 (RVA)。  

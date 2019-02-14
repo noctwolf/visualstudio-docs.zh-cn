@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 850c94274f783c306fe31fde4d86c9563c928adf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ccba6de5795dd461c2a68f6aeeb593314ceede09
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894293"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54962477"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;计划&gt;元素 （引导程序）
 `Schedules`元素包含`Schedule`元素，用于定义在定义的命令的特定时间`Command`元素应运行。  
@@ -47,7 +47,7 @@ ms.locfileid: "53894293"
   
  `Schedule` 具有以下属性。  
   
-|特性|说明|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`Name`|必需。 计划项的名称。 这对应于`ScheduleName`属性的`Command`元素。 当`Command`引用指定的计划，在所指示的时间，将仅执行`Schedule`元素。 此外可能与之关联的计划`FailIf`和`BypassIf`元素，将这些条件测试限制为按指定计划执行。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|  
   

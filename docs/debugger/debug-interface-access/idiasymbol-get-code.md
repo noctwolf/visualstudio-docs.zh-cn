@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_code |Microsoft Docs'
+title: IDiaSymbol::get_code | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5f425fa3-7ba6-4979-8b3e-0fcd06cbba73
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b6b0c5940f6c32477989a4d260d57c5def8ae0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0abfdc449d85a193aef41799d77dd0739599794c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987150"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993530"
 ---
 # <a name="idiasymbolgetcode"></a>IDiaSymbol::get_code
 检索一个标志，指定是否符号是指代码地址。  
@@ -42,7 +42,7 @@ HRESULT get_code ( 
   
 ## <a name="requirements"></a>要求  
   
-|需求|说明|  
+|需求|说明​​|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v7.0|  

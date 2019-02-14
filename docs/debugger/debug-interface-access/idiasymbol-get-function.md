@@ -42,7 +42,7 @@ HRESULT get_function ( 
   
 ## <a name="requirements"></a>要求  
   
-|需求|说明|  
+|需求|说明​​|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v7.0|  

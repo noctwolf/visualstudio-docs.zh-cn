@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback |Microsoft Docs
+title: IDiaLoadCallback | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f18c64c-2cf0-43fc-a447-21e82702ca2a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bacf5c57955f018c684ffb42afb5b9195cf4543f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6a9f3609f97d74cad8a9abb8aad511345d3120c4
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924366"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54977637"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 从 DIA 符号查找过程，从而使一个用户界面来报告进度的位置尝试接收回调。  
@@ -31,7 +31,7 @@ IDiaLoadCallback : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  通过此接口公开以下方法：  
   
-|方法|说明|  
+|方法|说明​​|  
 |------------|-----------------|  
 |[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|当在.exe 文件中发现的调试目录时调用。|  
 |[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|当打开候选.dbg 文件时调用。|  

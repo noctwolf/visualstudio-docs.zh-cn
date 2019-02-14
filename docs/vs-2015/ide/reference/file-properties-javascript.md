@@ -1,14 +1,9 @@
 ---
 title: “文件属性”->“JavaScript”| Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
 - javascript.project.property.expandedsdknode.uri
@@ -30,13 +25,13 @@ ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54780364"
 ---
 # <a name="file-properties-javascript"></a>文件属性，JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ ms.locfileid: "49909726"
   
 - 内容 - 文件包含在程序包清单中。 例如，此设置为 .htm、.js、.css、图像、音频或视频文件的默认值。  
   
-- **清单**-文件未包含在包清单中。 相反，文件用于生成程序包清单时的输入。 这是 package.appxmanifest 文件的默认值。  
+- 清单 - 文件未包含在程序包清单中。 相反，文件用于生成程序包清单时的输入。 这是 package.appxmanifest 文件的默认值。  
   
 - 资源 - 文件未包含在程序包清单中。 但是，文件的内容在程序包清单的包资源索引 (PRI) 中建立了索引。 通常用于资源文件。  
   
@@ -96,13 +91,10 @@ ms.locfileid: "49909726"
  显示已引用 SDK 文件的路径。  
   
 ### <a name="uri"></a>URI  
- 显示必须包含在项目的 HTML 或 JavaScript 文件，该文件作为源文件包含在内的 URI。  
+ 显示必须包含在项目的 HTML 或 JavaScript 文件中才能将文件作为源文件包含在内的 URI。  
   
-### <a name="version"></a>版本  
+### <a name="version"></a>Version  
  显示引用的版本。  
   
 ## <a name="see-also"></a>请参阅  
- [NIB： 项目属性 (Visual Studio)](http://msdn.microsoft.com/en-us/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
-
-
-
+ [NIB： 项目属性 (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

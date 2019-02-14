@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9665da6c-4cc0-41d7-b2e2-0d9e50174cf8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2725c9311d741f50bc3055d9e82ff8c09eaf9153
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08595c6f28edc1feae8ef7313187bc3855ce20f9
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863545"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55000284"
 ---
 # <a name="idiasymbolgetinterruptreturn"></a>IDiaSymbol::get_interruptReturn
 检索一个标志，指定该函数是否包含从中断指令返回 (例如，X86 程序集代码`iret`)。  
@@ -42,7 +42,7 @@ HRESULT get_interruptReturn(
   
 ## <a name="requirements"></a>要求  
   
-|需求|说明|  
+|需求|说明​​|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

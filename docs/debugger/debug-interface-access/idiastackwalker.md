@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalker |Microsoft Docs
+title: IDiaStackWalker | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4a61a22a-9cf8-4ea1-9e6e-b42f96872d40
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc53f20ea051c995c32fa9e049af7e870564fe1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: ae33fc6c135322e6b6a0a965188848ddac363cbc
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935965"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993668"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 提供方法来执行堆栈遍历的.pdb 文件中使用的信息。  
@@ -31,7 +31,7 @@ IDiaStackWalker: IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDiaStackWalker`。  
   
-|方法|说明|  
+|方法|说明​​|  
 |------------|-----------------|  
 |[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|检索 x86 堆栈帧枚举器的平台。|  
 |[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|检索特定平台类型的堆栈帧枚举器。|  

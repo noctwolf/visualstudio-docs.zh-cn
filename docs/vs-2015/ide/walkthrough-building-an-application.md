@@ -1,25 +1,20 @@
 ---
-title: 演练：生成应用程序 | Microsoft Docs
-ms.custom: ''
+title: 演练：生成应用程序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 4842955d-8959-4e4e-98b8-2358360179b3
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e6c45a552e66c2d256c191f6bd8296f5b2ca2c61
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7f4103502b3ebd6371f0b1c0ac27c6da7c8904c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220195"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799150"
 ---
 # <a name="walkthrough-building-an-application"></a>演练：生成应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ ms.locfileid: "50220195"
 4.  选择“确定”  按钮。  
   
 ##  <a name="BKMK_CreateBuildConfig"></a> 创建自定义生成配置  
- 创建解决方案时，调试和发布生成配置，并为解决方案自动定义它们的默认平台目标。 然后，可以自定义这些配置，或创建自己的配置。 生成配置指定生成类型。 生成平台指定应用程序为该配置定向的操作系统。 有关详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)、[了解生成平台](../ide/understanding-build-platforms.md)以及[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+ 创建解决方案时，调试和发布生成配置，并为解决方案自动定义它们的默认平台目标。 然后，可以自定义这些配置，或创建自己的配置。 生成配置指定生成类型。 生成平台指定应用程序为该配置定向的操作系统。 有关详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)、[了解生成平台](../ide/understanding-build-platforms.md)以及[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  可以使用“配置管理器”对话框更改或创建配置和平台设置。 在此过程中，将创建用于测试的生成配置。  
   
@@ -98,7 +93,7 @@ ms.locfileid: "50220195"
   
 4. 在“活动解决方案平台”列表中，选择“新建”。  
   
-5. 在中**新建解决方案平台**对话框框中，选择**x64**，且不要复制设置从 x86 平台。  
+5. 5. 在“新建解决方案平台”对话框中，选择“x64”，且不要复制 x86 平台中的设置。  
   
     ![“新建解决方案平台”对话框](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
@@ -125,7 +120,7 @@ ms.locfileid: "50220195"
   
   ![“输出”窗口 Visual Basic](../ide/media/buildwalk-vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")  
   
-  图 2：Visual C# 警告  
+  图 2：VisualC#警告  
   
   ![“输出”窗口 Visual C#](../ide/media/buildwalk-csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")  
   
@@ -208,7 +203,7 @@ ms.locfileid: "50220195"
 ##  <a name="BKMK_releasebuild"></a> 创建版本生成  
  可以生成针对交付进行了优化的示例应用程序版本。 对于版本生成，需指定在启动生成前，将可执行文件复制到网络共享。  
   
- 有关详细信息，请参阅[如何：更改生成输出目录](../ide/how-to-change-the-build-output-directory.md)和[在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)。  
+ 有关详细信息，请参阅[如何：更改生成输出目录](../ide/how-to-change-the-build-output-directory.md)并[生成和清理项目和 Visual Studio 中的解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)。  
   
 #### <a name="to-specify-a-release-build-for-visual-basic"></a>指定 Visual Studio 的版本生成  
   
@@ -262,8 +257,5 @@ ms.locfileid: "50220195"
   
 ## <a name="see-also"></a>请参阅  
  [演练：生成项目(C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)   
- [ASP.NET Web 应用程序项目预编译概述](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887)   
+ [ASP.NET Web 应用程序项目预编译概述](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)   
  [演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)
-
-
-

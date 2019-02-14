@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_optimizedcodedebuginfo |Microsoft Docs'
+title: IDiaSymbol::get_optimizedCodeDebugInfo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 57ef4170-37a9-46b0-8217-c1a674725113
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15bd5eddff9eb69bf3d410121b9206c839e18487
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0699ddbb8d18249d4f909744c12aeaa42fb38697
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889587"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55036363"
 ---
 # <a name="idiasymbolgetoptimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
 检索一个标志，指示函数是否包含特定于优化的代码的调试信息。  
@@ -42,7 +42,7 @@ HRESULT get_optimizedCodeDebugInfo(
   
 ## <a name="requirements"></a>要求  
   
-|需求|说明|  
+|需求|说明​​|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
   

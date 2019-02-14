@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap |Microsoft Docs
+title: IDiaAddressMap | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e6467529-508c-4328-85d7-89444ae4d1c1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a563ee3502cc1e713946cd70575be187ecbeadbb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0880009e6ae46f0d5ae89eb4332ddba57fa26394
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824543"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55031260"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 提供了控制 DIA SDK 如何计算的调试对象的虚拟和相对虚拟地址。  
@@ -31,7 +31,7 @@ IDiaAddressMap : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDiaAddressMap`。  
   
-|方法|说明|  
+|方法|说明​​|  
 |------------|-----------------|  
 |[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|指示是否已为特定会话建立映射的地址。|  
 |[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|指定是否应使用映射地址将符号地址转换。|  

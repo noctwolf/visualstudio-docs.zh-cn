@@ -1,32 +1,27 @@
 ---
 title: 在 XAML 设计器中将对象组织到布局容器中 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c92af4e78715c608fdee860690fd58561b8bb2d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 15fca04d921fb423bafccbeef56c9f3ff499d05d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219546"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54753946"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>在 XAML 设计器中将对象组织到布局容器中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 想象你希望对象出现在页面上的哪个位置；诸如图像、按钮和视频等对象。 也许你希望它们出现在行和列中、在单个行中（垂直或水平）或在固定位置中。  
   
- 你已经有机会考虑页面如何显示之后，请选择布局面板。 所有页面都从一个布局面板开始，因为你需要某个容器来向其中添加对象。 默认情况下，它是**网格**但可以进行更改。  
+ 你已经有机会考虑页面如何显示之后，请选择布局面板。 所有页面都从一个布局面板开始，因为你需要某个容器来向其中添加对象。 默认情况下为 Grid，但可以进行更改。  
   
  布局面板可帮助你在页面上排列对象，但是它们的作用不仅于此。 它们可以帮助你针对不同屏幕大小和分辨率进行设计。 当用户运行你的应用时，布局面板中的所有对象都会调整大小以匹配用户设备的屏幕空间。 当然，如果你不希望布局这样做，则可以为布局的一部分或整个布局重写该行为。 可以使用高度和宽度属性对此进行控制。  
   
@@ -57,7 +52,7 @@ ms.locfileid: "49219546"
   
  ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")  
   
- 观看简短视频： ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用网格](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用网格](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
   
 ###  <a name="Uniform"></a> UniformGrid  
  将对象排列到相等或统一的网格区域中。 此面板非常适用于排列图像的列表。  
@@ -66,21 +61,21 @@ ms.locfileid: "49219546"
   
  （仅适用于 WPF 项目）  
   
- 观看简短视频： ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用 UniformGrid](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用 UniformGrid](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)  
   
 ###  <a name="Canvas"></a> 画布  
  按任何所需方式排列对象。 当用户运行你的应用时，这些元素将在屏幕上具有固定位置。  
   
  ![](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png "e1ae27f0-3a57-454e-b580-877dcea8836d")  
   
- 观看简短视频： ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用画布](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas)  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用画布](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas)  
   
 ###  <a name="Stack"></a>StackPanel  
  在单个行中水平或垂直排列对象。  
   
  ![](../designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png "a85a7b57-b0a8-495e-b985-f0291e41d093")  
   
- 观看简短视频： ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用 StackPanel 和 WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用 StackPanel 和 WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
 ###  <a name="Wrap"></a> WrapPanel  
  按顺序从左到右排列对象。 面板最右边空间不足时，它会将内容换行到下一行，并采用从左到右、从上到下的换行顺序。 还可以使自动换行面板的方向垂直，以便对象从上到下、从左到右排列。  
@@ -89,7 +84,7 @@ ms.locfileid: "49219546"
   
  ![](../designers/media/b1c415fb-9a32-4a18-aa0b-308fca994ac9.png "b1c415fb-9a32-4a18-aa0b-308fca994ac9")  
   
- 观看简短视频： ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用 StackPanel 和 WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用 StackPanel 和 WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
 ###  <a name="Dock"></a> DockPanel  
  排列对象，使它们停留或停靠在面板的一个边缘。  
@@ -98,7 +93,7 @@ ms.locfileid: "49219546"
   
  ![](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png "72d46b58-9a49-4dd5-8af7-6843c0440226")  
   
- **观看简短视频：** ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [WPF-DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)  
   
 ## <a name="layout-controls"></a>布局控件  
  也可以向布局控件添加对象。 它们的功能不如布局面板那么丰富，不过你可能会发现它们对于某些情况很有帮助。  
@@ -120,7 +115,7 @@ ms.locfileid: "49219546"
   
  ![](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-bbc4-57538b8289ff")  
   
- 观看简短视频： ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用边框](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders)  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [使用边框](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders)  
   
 ###  <a name="Popup"></a> 弹出项  
  在窗口中向用户显示信息或选项。 只能将一个对象添加到弹出项。 默认情况下，弹出项包含一个 Grid，但是可以更改。  
@@ -140,6 +135,3 @@ ms.locfileid: "49219546"
 ## <a name="see-also"></a>请参阅  
  [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)   
  [使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-
-
-

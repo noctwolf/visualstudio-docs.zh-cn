@@ -1,25 +1,20 @@
 ---
 title: Python 入门 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 18e55aef8d95110dc44f20084eb5e45f643bf3cf
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275283"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54833938"
 ---
 # <a name="getting-started-with-python"></a>Python 入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +27,11 @@ Python 是一个受欢迎的编程语言使用的许多大学、 科学家、 �
 
 作为一种编程语言，Python 是：
   
-- 可靠。
+- 可靠
 - 通常用于编写脚本快速程序、 应用脚本编写、 桌面应用程序、 web 服务器、 web 服务和科学计算。
-- 易于学习和具有良好的设计要鼓励良好的编码 （许多大学都将它用于编程入门课程）。
+- 易于学习，设计良好，能帮助提高编码质量（许多大学都将它用于编程入门课程）
 - 灵活，支持命令性、 正常运行，和面向对象的编程样式。
-- 免费的开放源。
+- 免费和开源
 - 在所有主要的操作系统上运行。  
 - 支持许多免费、 有用并设计良好的库。  
 - 支持由多个文档、 示例和强大的开发人员社区。  
@@ -48,10 +43,10 @@ Python 是一个受欢迎的编程语言使用的许多大学、 科学家、 �
   
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
-适用于 Visual Studio 中，你可以从安装的 Python 工具[visualstudio.com](https://www.visualstudio.com/en-us/explore/python-vs)，提供以下功能：  
+适用于 Visual Studio 中，你可以从安装的 Python 工具[visualstudio.com](https://www.visualstudio.com/explore/python-vs)，提供以下功能：  
   
 - 支持多种解释器：各种版本的 CPython、IronPython 以及 IPython  
-- 项目系统可隐式选取 Python 代码的文件夹结构，并允许显式控制，因此您可以识别出应用程序代码、 测试代码、 网页、 JavaScript、 生成脚本等。  
+- 项目系统可隐式选取 Python 代码的文件夹结构，也允许显式控制，以便于你标识应用代码、测试代码、网页、JavaScript、生成脚本等等。  
 - 用于控制台、Web、Azure、数据科学和其他类型项目的项目模板。    
 - Azure SDK for Python （见下文）    
 - 丰富的编辑和代码理解功能，包括语法着色、跨所有代码和库的自动完成功能、签名帮助、类视图、转到定义、查找所有引用、重构等等。    
@@ -99,9 +94,8 @@ Azure SDK for Python 支持 Windows、Mac 和 Linux，使得使用和管理 Micr
 ## <a name="see-also"></a>请参阅  
 
 [PTVS 入门：设置 Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[PTVS 入门：开始编码（项目）](../python/getting-started-with-ptvs-start-coding-projects.md)
+[PTVS 入门：开始编码 （项目）](../python/getting-started-with-ptvs-start-coding-projects.md)
 [PTVS 入门：编辑代码](../python/getting-started-with-ptvs-editing-code.md)
 [PTVS 入门：调试](../python/getting-started-with-ptvs-debugging.md)
 [PTVS 入门：交互式 Python](../python/getting-started-with-ptvs-interactive-python.md)
-[PTVS 入门：在 Azure 中构建网站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
-
+[PTVS 入门：构建在 Azure 网站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

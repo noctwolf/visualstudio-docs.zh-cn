@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8292bb08-4dc8-4663-beb4-258f5d5a448d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd455deb96e423c52743ada25085389b0463bc1a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b6022c24c035b59d6b73c12f7c4907bab2eb5300
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880437"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54955552"
 ---
 # <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
 检索符号位置的偏移的量。 何时使用[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)是`LocIsRegRel`或`LocIsBitField`。  
@@ -45,7 +45,7 @@ HRESULT get_offset ( 
   
 ## <a name="requirements"></a>要求  
   
-|需求|说明|  
+|需求|说明​​|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v7.0|  

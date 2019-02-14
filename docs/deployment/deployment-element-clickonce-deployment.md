@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3165337a7386d90d674b42e7fd7e6f29822b284
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 55035a214d98abd262f85c29c55bd633c0b35505
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906925"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55023715"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;部署&gt;元素 （ClickOnce 部署）
 标识用于部署更新并向系统公开的特性。  
@@ -61,13 +61,13 @@ ms.locfileid: "53906925"
  `deployment` 元素是必需的，它位于 `urn:schemas-microsoft-com:asm.v1` 命名空间中。 元素具有以下属性。  
 
 
-| 特性 | 说明 |
+| 特性 | 说明​​ |
 |--------------------------| - |
 | `install` | 必需。 指定此应用程序是否在 Windows 上定义一个快捷**启动**菜单控件面板和**添加或删除程序**应用程序。 有效值为 `true` 和 `false`。 如果`false`，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]始终会从网络运行此应用程序的最新版本并将无法识别`subscription`元素。 |
 | `minimumRequiredVersion` | 可选。 指定可在客户端运行此应用程序的最低版本。 如果应用程序的版本编号小于提供的部署清单中的版本号，不会运行该应用程序。 必须以格式指定版本号`N.N.N.N`，其中`N`是一个无符号的整数。 如果`install`属性是`false`，`minimumRequiredVersion`不能设置。 |
 | `mapFileExtensions` | 可选。 默认为 `false`。 如果`true`，部署中的所有文件必须都具有.deploy 扩展名。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 将关闭这些文件中剥离此扩展，只要它从 Web 服务器下载它们。 如果使用发布你的应用程序，则[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，它会自动将此扩展添加到的所有文件。 此参数允许内的所有文件[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，以从筛选器阻止传输的"不安全"扩展，如.exe 结尾的文件的 Web 服务器下载。 |
 | `disallowUrlActivation` | 可选。 默认为 `false`。 如果`true`，可以防止通过单击的 URL 或 Internet 资源管理器中输入 URL 来启动已安装应用程序。 如果`install`属性不存在，则忽略此属性。 |
-| `trustURLParameters` | 可选。 默认为 `false`。 如果`true`，可以包含查询字符串参数传递到应用程序的 URL，太多类似的命令行自变量传递给命令行应用程序。 有关更多信息，请参见[如何：在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。<br /><br /> 如果`disallowUrlActivation`属性是`true`，`trustUrlParameters`必须是从在清单中排除或显式设置为`false`。 |
+| `trustURLParameters` | 可选。 默认为 `false`。 如果`true`，可以包含查询字符串参数传递到应用程序的 URL，太多类似的命令行自变量传递给命令行应用程序。 有关详细信息，请参阅[如何： 在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。<br /><br /> 如果`disallowUrlActivation`属性是`true`，`trustUrlParameters`必须是从在清单中排除或显式设置为`false`。 |
 
  `deployment`元素还包含以下子元素。  
 
@@ -87,7 +87,7 @@ ms.locfileid: "53906925"
 
  `expiration`元素支持以下属性。  
 
-|特性|说明|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`maximumAge`|必需。 标识如何旧当前更新应会在之前在应用程序执行更新检查。 时间单位由`unit`属性。|  
 |`unit`|必需。 标识的时间单位`maximumAge`。 有效的单位为`hours`， `days`，和`weeks`。|  
@@ -98,7 +98,7 @@ ms.locfileid: "53906925"
  此元素是 `deployment` 元素的子元素，并且包含以下元素。  
 
 
-| 特性 | 说明 |
+| 特性 | 说明​​ |
 |------------| - |
 | `codebase` | 必需。 标识的位置，作为统一资源标识符 (URI)，用于更新部署清单的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 此元素还允许转发的基于 CD 的安装的更新位置。 必须是有效的 URI。 |
 

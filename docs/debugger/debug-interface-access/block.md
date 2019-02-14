@@ -1,5 +1,5 @@
 ---
-title: 块 |Microsoft Docs
+title: Block | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 95b7b0c1-ecc9-405f-8456-5f9cfb866498
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ec49d3c147d6666c81e5ba1ef6d092de5baf0ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 40fc3c1ecd68177fdc032f634b73e65c8b41c443
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832536"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55033825"
 ---
 # <a name="block"></a>块
 每个代码块由`SymTagBlock`符号。 块符号用于标识在函数内的嵌套作用域。  
@@ -27,7 +27,7 @@ ms.locfileid: "53832536"
 ## <a name="properties"></a>属性  
  下表显示适用于此符号类型的属性。  
   
-|Property|数据类型|说明|  
+|Property|数据类型|说明​​|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|偏移量部分的位置;有关详细信息，请参阅[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)。|  
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|位置; 部分一部分有关详细信息，请参阅[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)。|  

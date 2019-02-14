@@ -1,33 +1,28 @@
 ---
 title: 安装适用于跨平台移动开发的 Visual C++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
 caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 0c8cbe8992a1035e2fb4a26feb9a77b5546bfa56
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47285fe9fb57b9c4d5d80c60f9e626f394e11934
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786010"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54762854"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>安装用于跨平台移动开发的 Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-用于跨平台移动开发的 visual c + +] (http://go.microsoft.com/fwlink/p/?LinkId=536383)是 Visual Studio 2015 的可安装组件。 它包括跨平台 Visual Studio 模板，并安装了跨平台工具和 SDK 以快速启动，而无需自行查找、下载和配置它们。 你可以在 Visual Studio 中使用这些工具轻松创建、编辑、调试和测试跨平台项目。 本主题介绍了如何安装使用 Visual Studio 开发跨平台应用所需的工具和第三方软件。 有关组件的概述，请参阅 [Visual C++ 跨平台移动](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
+http://go.microsoft.com/fwlink/p/?LinkId=536383)用于跨平台移动开发的 Visual C++ 是 Visual Studio 2015 的可安装组件。 它包括跨平台 Visual Studio 模板，并安装了跨平台工具和 SDK 以快速启动，而无需自行查找、下载和配置它们。 你可以在 Visual Studio 中使用这些工具轻松创建、编辑、调试和测试跨平台项目。 本主题介绍了如何安装使用 Visual Studio 开发跨平台应用所需的工具和第三方软件。 有关组件的概述，请参阅 [Visual C++ 跨平台移动](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
  [要求](#Requirements)   
  [获取工具](#GetTheTools)   
@@ -44,7 +39,7 @@ ms.locfileid: "51786010"
   
   若要为特定的设备平台创建应用，还需要满足一些附加要求：  
   
-- Windows Phone 仿真程序和适用于 Android 的 Microsoft Visual Studio 仿真程序需要可以运行 Hyper-V 的计算机。 必须先启用 Windows 中的 Hyper-V 功能，然后才能安装和运行仿真程序。 有关详细信息，请参阅仿真程序的[系统要求](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)。  
+- Windows Phone 仿真程序和适用于 Android 的 Microsoft Visual Studio 仿真程序需要可以运行 Hyper-V 的计算机。 必须先启用 Windows 中的 Hyper-V 功能，然后才能安装和运行仿真程序。 有关详细信息，请参阅仿真程序的[系统要求](http://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)。  
   
 - Android SDK 附带的 x86 Android 仿真程序在可以运行 Intel HAXM 驱动程序的计算机上工作性能最好。 此驱动程序需要具有 VT-x 和执行禁用位支持的 Intel x64 处理器。 有关详细信息，请参阅 [Intel® 硬件加速执行管理器安装说明 - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385)。  
   
@@ -142,4 +137,3 @@ ms.locfileid: "51786010"
 ## <a name="see-also"></a>请参阅  
  [安装并配置使用 iOS 进行构建的工具](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
  [Visual C++ 跨平台移动](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)
-

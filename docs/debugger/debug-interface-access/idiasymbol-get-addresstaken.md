@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_addresstaken |Microsoft Docs'
+title: IDiaSymbol::get_addressTaken | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0d366188-f5e1-4226-b392-58c09539d097
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc3f3324bd101e907e3b352606b9036b74657576
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5633a735332813eb61102fb594ec179419507c2e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859511"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54938310"
 ---
 # <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
 检索一个标志，指示的另一个符号是否引用此符号的地址。  
@@ -50,7 +50,7 @@ int* B = &A;
   
 ## <a name="requirements"></a>要求  
   
-|需求|说明|  
+|需求|说明​​|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v7.0|  

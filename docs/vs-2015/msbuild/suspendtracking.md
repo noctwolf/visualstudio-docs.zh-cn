@@ -1,14 +1,9 @@
 ---
 title: SuspendTracking | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 api_name:
 - SuspendTracking
 api_location:
@@ -21,13 +16,13 @@ ms.assetid: f5e06e5a-8083-444c-99c1-07ba834226b5
 caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37f70e4776a2a93a593214c18ab07f4fcfcf0bcc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 91a72045e7e03a21bd827be1501251db823ca6ec
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299718"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782540"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +37,10 @@ HRESULT WINAPI SuspendTracking(void);
 ```  
   
 ## <a name="return-value"></a>返回值  
- [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) 与 [SUCCEEDED] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 位集，如果挂起的跟踪。  
+ 如果跟踪暂停，则返回带 SUCCEEDED 位集的 HRESULT<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  --><!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->。  
   
 ## <a name="requirements"></a>要求  
  标头：FileTracker.h  
   
 ## <a name="see-also"></a>请参阅  
  [ResumeTracking](../msbuild/resumetracking.md)
-
-
-

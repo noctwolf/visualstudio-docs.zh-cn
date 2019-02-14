@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib |Microsoft Docs
+title: IDiaSectionContrib | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 371d40f6-ca0e-4d7e-9210-64d3768996c6
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c0f82526a217325e0003bfb66c50f9df24d68bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 0c1fe16951bee79dbda033101043406491d4a56f
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918696"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54991965"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 描述了部分内容中检索数据，也就是说，连续内存块归功于图像编译单位。  
@@ -31,7 +31,7 @@ IDiaSectionContrib : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDiaSectionContrib`。  
   
-|方法|说明|  
+|方法|说明​​|  
 |------------|-----------------|  
 |[IDiaSectionContrib::get_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|检索提供本部分的编译单位符号的引用。|  
 |[IDiaSectionContrib::get_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|检索的部分一部分发布内容的地址。|  

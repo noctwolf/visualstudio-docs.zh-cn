@@ -1,14 +1,9 @@
 ---
-title: 如何：创建项模板 | Microsoft Docs
-ms.custom: ''
+title: 如何：创建项模板 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project item templates, XML reference
 - project item templates, custom template locations
@@ -18,13 +13,13 @@ ms.assetid: 77bc53d4-d607-4820-a032-7e3b365891b5
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8559fb8b32b83d352bd9ec82cf426903aff13a19
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863621"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788241"
 ---
 # <a name="how-to-create-item-templates"></a>如何：创建项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,7 +155,7 @@ ms.locfileid: "49863621"
   
 7.  在 Windows 资源管理器中，选择要包括到模板中的文件，右键单击所选内容，单击“发送到”，然后单击“压缩(zipped)文件夹”。 所选的文件被压缩到一个 .zip 文件中。  
   
-8.  复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2015 中，默认目录是...\Users\\< 用户名\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\。 有关详细信息，请参阅“如何：查找和组织项目和项模板”。  
+8.  复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2017 中，默认目录是..\Users\\<username\>\Documents\Visual Studio 2017\Templates\ItemTemplates\\。 有关详细信息，请参阅“如何：查找和组织项目和项模板”。  
   
 ## <a name="see-also"></a>请参阅  
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   

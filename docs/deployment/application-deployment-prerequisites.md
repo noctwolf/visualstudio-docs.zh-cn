@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0baff8d685a1ac5f4899edc2f1dbf6ddf9c2e5b9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3525d12bfbb745c54bb452a16d12cd65394023ad
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53941068"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995682"
 ---
 # <a name="application-deployment-prerequisites"></a>应用程序部署必备
 
@@ -45,10 +45,10 @@ ms.locfileid: "53941068"
 
 - 必须预先安装在全局程序集缓存 (GAC) 中，指定的程序集清单中的程序集依赖项声明的所有程序集的最小版本。  
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以检测到缺少的先决条件，并可以使用引导程序来安装系统必备组件。 有关更多信息，请参见[如何：将系统必备与 ClickOnce 应用程序一起安装](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以检测到缺少的先决条件，并可以使用引导程序来安装系统必备组件。 有关详细信息，请参阅[如何： 与 ClickOnce 应用程序安装的必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
 
 > [!NOTE]
->  若要更改由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MageUI.exe 之类的工具生成的清单中的默认值，需要在文本编辑器中编辑应用程序清单，然后对应用程序清单和部署清单重新签名。 有关更多信息，请参见[如何：对应用程序清单和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+>  若要更改由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MageUI.exe 之类的工具生成的清单中的默认值，需要在文本编辑器中编辑应用程序清单，然后对应用程序清单和部署清单重新签名。 有关详细信息，请参阅 [How to: Re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
 
  如果你使用 Visual Studio 和 ClickOnce 来部署应用程序，则默认选中的引导程序包取决于解决方案中的 .NET Framework 版本。 但如果更改目标 .NET Framework 版本，则必须手动在“系统必备组件”对话框中更新选项。  
 
@@ -72,13 +72,13 @@ ms.locfileid: "53941068"
  如果更改了任何引导程序选项，必须更改未签名的引导程序，然后稍后登录引导程序文件。  
 
 
-| 命令行参数 | 说明 |
+| 命令行参数 | 说明​​ |
 | - | - |
 | **-h、-?、-Help** | 显示一个“帮助”对话框。 |
-| **-url-componentsurl** | 显示用于此安装的存储 URL 和组件 URL。 |
-| **-url =** `location` | 设置 Setup.exe 将在其中查找 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的 URL。 |
-| **-componentsurl =** `location` | 设置 Setup.exe 将在其中查找依赖项（如 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]）的 URL。 |
-| **-homesite =** `true`**&#124;** `false` | 当`true`，从供应商的站点上的首选位置下载的依赖项。 此设置将替代 **-componentsurl**设置。 当`false`，从指定的 URL 下载的依赖项 **-componentsurl**。 |
+| **-url, -componentsurl** | 显示用于此安装的存储 URL 和组件 URL。 |
+| **-url=** `location` | 设置 Setup.exe 将在其中查找 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的 URL。 |
+| **-componentsurl=** `location` | 设置 Setup.exe 将在其中查找依赖项（如 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]）的 URL。 |
+| **-homesite=** `true` **&#124;** `false` | 当`true`，从供应商的站点上的首选位置下载的依赖项。 此设置将替代 **-componentsurl**设置。 当`false`，从指定的 URL 下载的依赖项 **-componentsurl**。 |
 
 ## <a name="operating-system-support"></a>操作系统支持  
  在 Windows Server 2008 Server Core 或 Windows Server 2008 R2 Server Core 上不支持 Visual Studio 引导程序，因为它们具有有限的功能提供低维护服务器环境。 例如，服务器核心安装选项仅支持.NET Framework 3.5 Server Core 配置文件，不能运行依赖于完整的.NET Framework 的 Visual Studio 功能。  

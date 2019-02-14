@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e44ba922-6cda-40c2-9b62-44e5a8628e63
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdc228f239ae8ed051c90cf8e9ee57a098e49a86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b3ef7418a232c5c6fa06062fbe6214f55e40b8e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859888"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008525"
 ---
 # <a name="idiasymbolgetnotreached"></a>IDiaSymbol::get_notReached
 检索一个标志，指定是否永远不会达到函数或标签。  
@@ -42,7 +42,7 @@ HRESULT get_notReached(
   
 ## <a name="requirements"></a>要求  
   
-|需求|说明|  
+|需求|说明​​|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

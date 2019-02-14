@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b7b6f490-1cf2-4a68-9237-b152dac84d3c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de20310d3b41bf13f8f70a90cc9c702ef327c23b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 93ace7dd54a64e6d5fbb6fb7ed830b9055f1d684
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828795"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54996241"
 ---
 # <a name="idiasymbolgetishotpatchable"></a>IDiaSymbol::get_isHotpatchable
 检索一个标志，指示是否编译该模块[/hotpatch （创建可热修补映像）](/cpp/build/reference/hotpatch-create-hotpatchable-image)编译器开关。  
@@ -45,7 +45,7 @@ HRESULT get_isHotpatchable(
   
 ## <a name="requirements"></a>要求  
   
-|需求|说明|  
+|需求|说明​​|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

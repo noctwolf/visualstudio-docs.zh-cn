@@ -1,14 +1,9 @@
 ---
 title: 如何：增量生成 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
 - incremental builds
@@ -17,13 +12,13 @@ ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844598"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803905"
 ---
 # <a name="how-to-build-incrementally"></a>如何：增量生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49844598"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>指定目标的输入和输出  
   
-- 使用 `Target` 元素的 `Inputs` 和 `Outputs` 属性。 例如：  
+- 使用 `Target` 元素的 `Inputs` 和 `Outputs` 属性。 例如:  
   
   ```  
   <Target Name="Build"  
@@ -57,7 +52,7 @@ ms.locfileid: "49844598"
 </Target>  
 ```  
   
- 当目标中指定了输入和输出时，要么每个输出只能映射到一个输入，要么在输出和输入之间不能有任何直接映射。 在前面[Csc 任务](../msbuild/csc-task.md)，示例中，输出 hello.exe 不能映射到任何单一输入 – 它依赖于所有这些。  
+ 当目标中指定了输入和输出时，要么每个输出只能映射到一个输入，要么在输出和输入之间不能有任何直接映射。 例如，在前面的 [Csc 任务](../msbuild/csc-task.md)中，输出 hello.exe 不能映射到任何单一输入，因为它依赖于所有输入。  
   
 > [!NOTE]
 >  对于输入和输出之间不存在直接映射的目标，它的生成频率总是比每个输出只能映射到一个输入的目标高，因为如果某些输入发生了更改， [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 无法确定需要重新生成哪些输出。  
@@ -116,6 +111,3 @@ ms.locfileid: "49844598"
  [转换](../msbuild/msbuild-transforms.md)   
  [Csc 任务](../msbuild/csc-task.md)   
  [Vbc 任务](../msbuild/vbc-task.md)
-
-
-

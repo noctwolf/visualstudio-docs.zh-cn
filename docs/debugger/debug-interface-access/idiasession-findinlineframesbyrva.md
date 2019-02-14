@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineFramesByRVA |Microsoft Docs
+title: IDiaSession::findInlineFramesByRVA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: ddb3ff0e-cb3d-4fa0-af56-f064b218b264
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 996c13f1b6dbf83df8ca835901673438892fe2f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07465a6a85febeb9abd65964f3d396c218ea3b4e
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828064"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984036"
 ---
 # <a name="idiasessionfindinlineframesbyrva"></a>IDiaSession::findInlineFramesByRVA
 检索一个枚举，允许客户端用于循环访问所有指定的相对虚拟地址 (RVA) 上的内联框架。  

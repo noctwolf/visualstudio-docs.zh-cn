@@ -1,5 +1,5 @@
 ---
-title: Exe |Microsoft Docs
+title: Exe | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: a781d2cf-55fe-4373-9cf1-b732864244e0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6fdec31314dcce0d5c83adee69de4e4fb2754c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 27682e09de494fedaaf446b7cd533bde0715f459
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53948337"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54939200"
 ---
 # <a name="exe"></a>Exe
 Exe 是唯一的符号不带词法或类父级，因为它表示全局范围的.exe 或.dll 文件。 没有具有只有一个符号`SymTagExe`标记每个文件。 [Idiasession:: Get_globalscope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)方法返回的符号。  
@@ -28,7 +28,7 @@ Exe 是唯一的符号不带词法或类父级，因为它表示全局范围的.
 ## <a name="properties"></a>属性  
  下表显示适用于此符号类型的属性。  
   
-|Property|数据类型|说明|  
+|Property|数据类型|说明​​|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|此可执行文件的年龄。|  
 |[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID` 此可执行文件。|  

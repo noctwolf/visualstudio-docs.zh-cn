@@ -16,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: b06b5d65-424b-490f-bf58-97583cd7006a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53106b0d933c25d69ecd0b455b89f68c09b9a169
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 2bf37bef11c4d07ac0cb2c218f03f344a02ed4e1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822931"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55005561"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>如何：调试 OnStart 方法
-通过启动 Windows 服务并将调试器附加到服务进程，可以调试 Windows 服务。 有关更多信息，请参见[如何：调试 Windows 服务应用程序](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)。 但是，若要调试 Windows 服务的 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 方法，必须从该方法内部启动调试器。  
+通过启动 Windows 服务并将调试器附加到服务进程，可以调试 Windows 服务。 有关详细信息，请参阅[如何：调试 Windows 服务应用程序](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)。 但是，若要调试 Windows 服务的 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 方法，必须从该方法内部启动调试器。  
   
 1.  将对 <xref:System.Diagnostics.Debugger.Launch%2A> 的调用添加到 `OnStart()`方法的开头。  
   

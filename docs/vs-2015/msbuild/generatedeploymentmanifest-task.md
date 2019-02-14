@@ -35,7 +35,7 @@ ms.locfileid: "54792937"
 ## <a name="parameters"></a>参数  
  下表描述了 `GenerateDeploymentManifest` 任务的参数。  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`AssemblyName`|可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Name` 字段。 如果未指定此参数，则从 `EntryPoint` 或 `InputManifest` 参数中推断名称。 如果无法推断名称，则任务将引发错误。|  
 |`AssemblyVersion`|可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Version` 字段。 如果未指定此参数，则任务使用值“1.0.0.0”。|  

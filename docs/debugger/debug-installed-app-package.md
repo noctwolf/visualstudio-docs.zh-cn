@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 313fceed4715127696d04a7dfea6990e9cf18718
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fc90c6ecb17a8c794561b975fb8e0be9f6501af
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879739"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54936211"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>在 Visual Studio 中调试已安装的 UWP 应用包
 
@@ -47,9 +47,9 @@ Visual Studio 可以调试 Windows 10 计算机以及 Xbox、HoloLens 和 IoT �
    ![DebugInstalledAppPackage](../debugger/media/debug-installed-app-pkg.png "DebugInstalledAppPackage")
    
 1. 如有必要，更改“调试此代码类型”下的代码类型，然后选择其他选项。 
-   - 选择**不启动，但在启动时调试我的代码**，当该应用程序启动时启动调试。 应用启动时开始调试是调试来自[不同启动方法](/windows/uwp/xbox-apps/automate-launching-uwp-apps)（例如使用自定义参数激活协议）的控制路径的有效方法。
+   - 选择“不启动，但在启动时调试我的代码”，在应用启动时开始调试。 应用启动时开始调试是调试来自[不同启动方法](/windows/uwp/xbox-apps/automate-launching-uwp-apps)（例如使用自定义参数激活协议）的控制路径的有效方法。
    
-1. 选择**启动**，或如果应用正在运行，选择**附加**。
+1. 选择“开始”，或如果应用正在运行，则选择“附加”。
 
 > [!NOTE]
 > 此外，还可以通过在 Visual Studio 中选择“调试” > “附加到进程”以附加到任何正在运行的 UWP 或其他应用进程。 无需原始 Visual Studio 项目也可附加到正在运行的进程中，但是在调试你没有原始代码的进程时，加载应用的符号会有很大帮助。 请参阅[在调试器中指定符号和源文件](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。

@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 865b5c220a410c9b0d744263820a50dd1bb9395a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5e5a4791b6703db72f67c9b18abcb3b0592916be
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878622"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54945055"
 ---
-# <a name="supported-code-changes-c-and-visual-basic"></a>支持代码更改 (C#和 Visual Basic)
+# <a name="supported-code-changes-c-and-visual-basic"></a>受支持的代码更改（C#和 Visual Basic）
 “编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，你必须停止调试，重新开始新版本的代码。
 
 ## <a name="supported-changes-to-code"></a>支持的代码的更改

@@ -1,24 +1,19 @@
 ---
 title: 在生成验证测试中分析代码覆盖率 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 59c07d15-511e-4fd0-b398-bde9d5ed00d9
 caps.latest.revision: 10
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b67986e42a914c73dea99f97611967aa6ee24097
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e7525fe8e01922880199275576a8b12ec29bc029
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905449"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834928"
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>在生成验证测试中分析代码覆盖率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Microsoft Visual Studio 中的代码覆盖率分析显示有多少代码正在�
   
     如果你有多个测试源定义，请对每个定义重复此步骤。  
   
-   - <em>但没有名为的字段 **类型的运行设置文件</em>*。 *  
+   - 但是，没有名为“运行设置文件的类型”的字段。  
   
       在“自动测试”下，选择“测试程序集”，然后选择行尾的省略号按钮“[...]”。 在“添加/编辑测试运行”对话框的“测试运行程序”下，选择“Visual Studio 测试运行程序”。  
   
@@ -43,6 +38,3 @@ Microsoft Visual Studio 中的代码覆盖率分析显示有多少代码正在�
   
 ## <a name="see-also"></a>请参阅  
  [使用代码覆盖率确定所测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-
-
-

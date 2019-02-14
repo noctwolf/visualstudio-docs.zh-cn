@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasseh |Microsoft Docs'
+title: IDiaSymbol::get_hasSEH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1a709ded-22c8-464c-97be-eba5e464210c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a7fdf9b0ead79e63cb9f9715a995edda9889ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ced9377d017bfbbcb4a200c004f8223a5636f39
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919000"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54925574"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 检索一个标志，指定该函数是否包含任何[结构化异常处理 （C/c + +）](/cpp/cpp/structured-exception-handling-c-cpp) (例如，__try /\__except 块)。  
@@ -42,7 +42,7 @@ HRESULT get_hasSEH(
   
 ## <a name="requirements"></a>要求  
   
-|需求|说明|  
+|需求|说明​​|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

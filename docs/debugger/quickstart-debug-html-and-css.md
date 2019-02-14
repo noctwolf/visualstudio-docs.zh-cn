@@ -13,15 +13,15 @@ helpviewer_keywords:
 - DOM Explorer [UWP apps]
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0ea34ba58ec882121b40ca7e7585fa0cb0419356
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 914c9dba1d6af4b624f43bda9a43c2b8d68aaec1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892710"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54978030"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 应用中调试 HTML 和 CSS
   
@@ -159,7 +159,7 @@ ms.locfileid: "53892710"
   
 10. 在“DOM 资源管理器”窗口中，选择 ID 为 `"fView"`的部分的 DIV 元素。 使用箭头键可以查看并选择正确的 DIV 元素。 （使用向右键可以查看元素的子元素。）  
   
-     ![DOM 资源管理器](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
+     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  也可通过在 >> 输入提示符下键入 `select(fView)`，然后按 Enter，在“JavaScript 控制台”窗口的左下角选择此 DIV 元素。  

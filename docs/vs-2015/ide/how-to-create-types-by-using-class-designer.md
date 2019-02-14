@@ -1,14 +1,9 @@
 ---
-title: 如何：使用类设计器创建类型 | Microsoft Docs
-ms.custom: ''
+title: 如何：使用类设计器创建类型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -22,13 +17,13 @@ ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8288e17ecfb4c9169b2b9b8fb7cd5a3c3788f4d9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c5e859e999d7aec8a58464f145ed7c3e9afbc788
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175020"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772149"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>如何：使用类设计器创建类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +79,7 @@ ms.locfileid: "49175020"
   
 1.  在类图上单击类型的形状。  
   
-2.  在属性窗口中下, 一步**自定义特性**属性对于类型，单击省略号 （...） 按钮。  
+2.  在“属性”窗口中，单击类型的“自定义特性”属性旁边的省略号 (...) 按钮。  
   
 3.  添加一个或多个自定义特性，一行一个。 请不要将它们放在括号内。  
   
@@ -106,6 +101,3 @@ ms.locfileid: "49175020"
  [创建和配置类型成员（类设计器）](../ide/creating-and-configuring-type-members-class-designer.md)   
  [使用类图（类设计器）](../ide/working-with-class-diagrams-class-designer.md)   
  [设计类和类型（类设计器）](../ide/designing-classes-and-types-class-designer.md)
-
-
-

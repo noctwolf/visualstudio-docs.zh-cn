@@ -1,14 +1,9 @@
 ---
 title: ResolveNativeReference 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveNativeReference
 dev_langs:
@@ -23,13 +18,13 @@ ms.assetid: 56acd101-de77-4eec-92c6-f5c6d2187579
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a874055e5af1a0aafd48296a99f12a83d56369f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 31de2c146accd71ae1606be62ab06fa368e7fb89
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281296"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54758543"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +35,9 @@ ms.locfileid: "49281296"
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `ResolveNativeReference` 任务的参数。  
   
-|参数|描述|  
+|参数|说明​​|  
 |---------------|-----------------|  
-|`AdditionalSearchPaths`|所需 [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)`[]`参数。<br /><br /> 获取或设置用于解析本机引用的程序集标识的搜索路径。|  
+|`AdditionalSearchPaths`|必需的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String`[]` 参数。<br /><br /> 获取或设置用于解析本机引用的程序集标识的搜索路径。|  
 |`ContainedComComponents`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 获取或设置本机程序集的 COM 组件。|  
 |`ContainedLooseEtcFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 获取或设置本机清单中列出的松散 Etc 文件。|  
 |`ContainedLooseTlbFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 获取或设置本机程序集的松宽松 .tlb 文件。|  
@@ -57,6 +52,3 @@ ms.locfileid: "49281296"
 ## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -1,5 +1,5 @@
 ---
-title: UDT |Microsoft Docs
+title: UDT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f12459dd-c64d-4cc9-9ee3-a56e19e9e573
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a220125b22fd60b6547418a976f00e2ddd6b49aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a7ae70fae7299bb12f5fcf401f4a9ba386fe7204
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942104"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54987539"
 ---
 # <a name="udt"></a>UDT
 每个类、 结构和联合由`SymTagUDT`符号。 每个成员、 函数、 数据或嵌套的类型和每个基类，显示为类子项的用户定义类型 (UDT)。  
@@ -29,7 +29,7 @@ ms.locfileid: "53942104"
 ## <a name="properties"></a>属性  
  下表显示此符号类型的其他有效属性。  
   
-|Property|数据类型|说明|  
+|Property|数据类型|说明​​|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|类父，如果任何符号。|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|类父符号的 ID。|  

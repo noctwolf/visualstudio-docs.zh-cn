@@ -1,21 +1,17 @@
 ---
 title: Mac 用户的设置、安装和验证 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fca4f8ef2d3fb1272dc835b4bedd7dcdcc83725f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: 52310ffb0a3c08f652f4d628db1c047a5d0417d6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772828"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54772030"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Mac 用户的设置、安装和验证
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +27,7 @@ ms.locfileid: "51772828"
   
 - 以下配置之一：  
   
-  -   **要在 Mac 上直接运行 Xamarin Studio：** Xamarin Studio 是 Xamarin 的开发环境，它支持使用 C# 生成 Android、iOS 和 Windows 应用。  若要快速了解 Xamarin Studio，请参阅 [Xamarin Studio 概述](https://xamarin.com/studio) (xamarin.com)。  
+  -   **对于 Mac 上直接运行 Xamarin Studio:** Xamarin Studio 是 Xamarin 的开发环境，支持生成 Android、 iOS 和 Windows 应用使用C#。  若要快速了解 Xamarin Studio，请参阅 [Xamarin Studio 概述](https://xamarin.com/studio) (xamarin.com)。  
   
   -   **如果已在 Mac 上配置 Parallels 或 VMWare：** 在 Parallels 或 VMWare 中使用 Visual Studio 2015 和 Xamarin 4 运行 Windows。  使用此配置，Xamarin 是与 Visual Studio 一起安装的扩展，它让你可以将 Visual Basic 用作使用 C# 生成 Android、iOS 和 WinPhone 应用的开发环境。  请注意，作为 Visual Studio Developer Essentials 计划的一部分，你可以获取 3 个月的免费 Parallels 订阅。 请参阅 [Microsoft Visual Studio Dev Essentials 将包括 Parallels Desktop Pro 和 Parallels Access](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) （Parallels 博客）。  
   
@@ -49,7 +45,7 @@ ms.locfileid: "51772828"
   
 1.  如果你尚无 Apple ID，请在 [我的 Apple ID](https://appleid.apple.com/) 处创建免费 Apple ID。 这是安装和登录 Xcode 所必需的。  
   
-2.  下载并安装从 Xcode [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/)。  
+2.  从 [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/) 处下载并安装 Xcode。  
   
 3.  按照 [安装和配置 Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com) 上的说明下载和安装 Xamarin。  
   
@@ -57,7 +53,7 @@ ms.locfileid: "51772828"
   
 ##  <a name="windows"></a>Parallels 中的 Windows 设置（Visual Studio 和 Xamarin）  
   
-1.  使用在 Parallels/VMWare 内配置的 Windows 桌面， [下载并启动 Visual Studio 2015 任何版本（Community、Professional 或 Enterprise）的安装程序](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) 。 Visual Studio 2015 Community 是免费版本；Professional 和Enterprise 可免费试用 30 天。  
+1.  使用在 Parallels/VMWare 内配置的 Windows 桌面， [下载并启动 Visual Studio 2015 任何版本（Community、Professional 或 Enterprise）的安装程序](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) 。 Visual Studio 2015 Community 是免费版本；Professional 和Enterprise 可免费试用 30 天。  
   
 2.  在安装程序中，选择“自定义”  安装：  
   
@@ -115,7 +111,7 @@ ms.locfileid: "51772828"
   
 2. 验证 Android 设计器：在“解决方案资源管理器”的 Android 项目中，打开“资源”>“布局”>“Main.axml”文件。  
   
-   -   如果你收到的错误消息"已安装的 Android SDK 太旧"，单击**打开 Android SDK**中的消息，并选择可用的最新 SDK 版本。 请注意，必须以管理员身份运行 Visual Studio 才能更新 SDK。  
+   -   如果收到错误消息称“已安装的 Android SDK 版本太旧”，请单击该消息中的“打开 Android SDK”并选择可用的最新 SDK 版本。 请注意，必须以管理员身份运行 Visual Studio 才能更新 SDK。  
   
 3. 验证你可以从 Visual Studio 连接到 Mac 上安装的仿真程序。  此操作的结果是，你将在 Visual Studio 中的可选择用于调试的仿真程序列表中看到 Xamarin Player。  要实现这一目的，请按照 [将 Visual Studio 连接到 Xamarin Android Player](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/android-player-with-visual-studio-in-vm/) (xamarin.com) 上的说明进行操作。  
   
@@ -138,4 +134,3 @@ ms.locfileid: "51772828"
    3.  如下所示，从 Visual Studio 的调试下拉菜单中选择 iPhone 目标，并按 F5 启动调试器。 这将在 Mac 上启动仿真程序，在 Visual Studio 中进行调试时，你将在该仿真程序中与应用进行交互。  
   
         ![选择 iPhone 调试目标](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
-

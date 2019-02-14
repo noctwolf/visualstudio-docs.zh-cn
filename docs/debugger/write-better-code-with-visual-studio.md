@@ -1,49 +1,176 @@
 ---
-title: 通过编写更优质的 C# 代码来修复 bug
-description: 了解如何编写更好的代码更少 bug
+title: 调试技术和工具
+description: 使用 Visual Studio 以修复异常、 修复错误，并改进您的代码编写更好的代码更少 bug
 ms.custom:
 - debug-experiment
 - seodec18
-ms.date: 11/20/2018
+ms.date: 01/24/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6be1f46c8a529eb7f2e7d21e34fb1a58458a3de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967571"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54961710"
 ---
-# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>通过编写更好地修复 bugC#使用 Visual Studio 代码
+# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>调试技术和工具可帮助你编写更好的代码
 
-调试代码可能非常耗时-，有时会令人沮丧-任务。 它需要时间来了解如何有效地调试，但功能强大的 IDE，类似于 Visual Studio 可以使您的工作变得更加轻松。 IDE 可以帮助您更快地调试代码并不只是的但它还可以帮助您编写更好的代码更少的 bug。 我们在本文中的目标是提供全面的调试过程中，以便您了解何时使用代码分析器、 何时使用调试器，以及何时使用其他工具。
+在代码中修复的 bug 和错误可能非常耗时-和有时令人沮丧-任务。 它需要时间来了解如何有效地调试，但功能强大的 IDE，类似于 Visual Studio 可以使您的工作变得更加轻松。 IDE 可帮助您修复错误并更快地调试代码并不只是的但它还可以帮助您编写更好的代码更少的 bug。 我们在本文中的目标是为您提供全面了解"错误修复"的进程，因此您将知道何时使用代码分析工具，何时使用调试器，如何修复异常，以及如何编写代码的意图。 如果您已经知道需要使用调试器，请参阅[先来看一下调试器](../debugger/debugger-feature-tour.md)。
 
-在本文中，我们介绍如何利用 IDE，以便提高工作效率调试会话。 我们提到了多项任务，例如：
+在本文中，我们介绍如何利用 IDE 进行编码会话提高工作效率。 我们提到了多项任务，例如：
 
 * 准备您的代码进行调试通过利用 IDE 的代码分析器
 
 * 如何修复异常 （运行时错误）
 
-* 如何最大程度减少编写代码的意图的 bug
+* 如何最大程度减少编写代码的意图 （使用 assert） 的 bug
 
 * 何时使用调试器
 
 为了演示这些任务，我们介绍几种最常见的错误和调试您的应用程序时，将会遇到的 bug 类型。 尽管此示例代码C#、 概念性信息是通常适用于 c + +、 Visual Basic、 JavaScript 和其他语言支持的 Visual Studio （除非另有说明）。 屏幕截图为 C#。
 
-## <a name="follow-along-using-the-sample-app"></a>跟着介绍一起操作使用示例应用
+## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>某些 bug 和错误在其中创建示例应用
 
-如果您愿意，可以创建包含的确切的 bug 的.NET Framework 或.NET Core 控制台应用和我们在此处，介绍且可以跟着介绍一起操作，并自己进行修复的错误。
+下面的代码完全可以使用 Visual Studio IDE 来修复一些 bug。 应用此处是一个简单的应用，用于模拟从某项操作，反序列化到对象，数据和使用新数据更新的简单列表获取的 JSON 数据。
 
-若要创建应用程序，打开 Visual Studio，然后选择**文件 > 新建项目**。 下**可视化C#** ，选择**Windows Desktop**或 **.NET Core**，然后在中间窗格中选择**控制台应用**。 键入一个名称，如**Console_Parse_JSON**然后单击**确定**。 Visual Studio 随即创建项目。 粘贴[示例代码](#sample-code)到项目的*Program.cs*文件。
+创建应用程序
 
-> [!NOTE]
-> 如果没有看到“控制台应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“.NET Core 桌面开发”或“.NET Core 跨平台开发”工作负载，然后选择“修改”。
+1. 打开 Visual Studio，然后选择**文件 > 新建项目**。 下**可视化C#** ，选择**Windows Desktop**或 **.NET Core**，然后在中间窗格中选择**控制台应用**。
+
+    > [!NOTE]
+    > 如果没有看到“控制台应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“.NET Core 桌面开发”或“.NET Core 跨平台开发”工作负载，然后选择“修改”。
+
+2. 在中**名称**字段中，键入**Console_Parse_JSON**然后单击**确定**。 Visual Studio 随即创建项目。
+
+3. 在项目中的默认代码替换*Program.cs*具有下面的示例代码文件。
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization.Json;
+using System.Runtime.Serialization;
+using System.IO;
+
+namespace Console_Parse_JSON
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var localDB = LoadRecords();
+            string data = GetJsonData();
+
+            User[] users = ReadToObject(data);
+
+            UpdateRecords(localDB, users);
+
+            for (int i = 0; i < users.Length; i++)
+            {
+                List<User> result = localDB.FindAll(delegate (User u) {
+                    return u.lastname == users[i].lastname;
+                    });
+                foreach (var item in result)
+                {
+                    Console.WriteLine($"Matching Record, got name={item.firstname}, lastname={item.lastname}, age={item.totalpoints}");
+                }
+            }
+
+            Console.ReadKey();
+        }
+
+        // Deserialize a JSON stream to a User object.
+        public static User[] ReadToObject(string json)
+        {
+            User deserializedUser = new User();
+            User[] users = { };
+            MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(json));
+            DataContractJsonSerializer ser = new DataContractJsonSerializer(users.GetType());
+
+            users = ser.ReadObject(ms) as User[];
+
+            ms.Close();
+            return users;
+        }
+
+        // Simulated operation that returns JSON data.
+        public static string GetJsonData()
+        {
+            string str = "[{ \"points\":4o,\"firstname\":\"Fred\",\"lastname\":\"Smith\"},{\"lastName\":\"Jackson\"}]";
+            return str;
+        }
+
+        public static List<User> LoadRecords()
+        {
+            var db = new List<User> { };
+            User user1 = new User();
+            user1.firstname = "Joe";
+            user1.lastname = "Smith";
+            user1.totalpoints = 41;
+
+            db.Add(user1);
+
+            User user2 = new User();
+            user2.firstname = "Pete";
+            user2.lastname = "Peterson";
+            user2.totalpoints = 30;
+
+            db.Add(user2);
+
+            return db;
+        }
+        public static void UpdateRecords(List<User> db, User[] users)
+        {
+            bool existingUser = false;
+
+            for (int i = 0; i < users.Length; i++)
+            {
+                foreach (var item in db)
+                {
+                    if (item.lastname == users[i].lastname && item.firstname == users[i].firstname)
+                    {
+                        existingUser = true;
+                        item.totalpoints += users[i].points;
+
+                    }
+                }
+                if (existingUser == false)
+                {
+                    User user = new User();
+                    user.firstname = users[i].firstname;
+                    user.lastname = users[i].lastname;
+                    user.totalpoints = users[i].points;
+
+                    db.Add(user);
+                }
+            }
+        }
+    }
+
+    [DataContract]
+    internal class User
+    {
+        [DataMember]
+        internal string firstname;
+
+        [DataMember]
+        internal string lastname;
+
+        [DataMember]
+        // internal double points;
+        internal string points;
+
+        [DataMember]
+        internal int totalpoints;
+    }
+}
+```
 
 ## <a name="find-the-red-and-green-squiggles"></a>查找红色和绿色波形曲线 ！
 
@@ -65,9 +192,9 @@ ms.locfileid: "53967571"
 
 单击此项，在 Visual Studio 添加`using System.Text`顶部的语句*Program.cs*文件和红色波浪线将消失。 (当不能确定建议的修复方法将执行哪些操作时，选择**预览更改**应用修补程序之前在右侧的链接。)
 
-之前的错误是一个通常添加一个新的解决问题的常见`using`到你的代码语句。 如有几个常见的、 类似错误与此```The type or namespace `Name` cannot be found.```这些类型的错误可能表示缺少的程序集引用 (右键单击该项目中，选择**添加** > **引用**)，一个拼写错误的名称或需要使用 NuGet 将添加一个缺少库 (右键单击项目，然后选择**管理 NuGet 包**)。
+之前的错误是一个通常添加一个新的解决问题的常见`using`到你的代码语句。 如有几个常见的、 类似错误与此```The type or namespace `Name` cannot be found.```这些类型的错误可能表示缺少的程序集引用 (右键单击该项目中，选择**添加** > **引用**)，一个拼写错误的名称或需要将添加一个缺少库 (为C#，右键单击项目，然后选择**管理 NuGet 包**)。
 
-## <a name="fix-the-errors-and-warnings"></a>修复的错误和警告
+## <a name="fix-the-remaining-errors-and-warnings"></a>修复的剩余错误和警告
 
 有几个更多的波形曲线，若要查看在此代码中。 这里，您会看到常见的类型转换错误。 当悬停在波形曲线上时，可以看到该代码尝试将字符串转换为 int，除非添加显式代码以使转换不受支持。
 
@@ -128,7 +255,7 @@ item.totalpoints += users[i].points;
 
 * 此异常是您的用户可能会遇到的某些内容？
 
-如果是前者，修复 bug。 （在示例应用中，这意味着修复错误数据。）如果是后者，你可能需要处理的异常在代码中`try/catch`块 （我们介绍下一节中其他可能的修复方法）。 在示例应用中，将以下代码：
+如果是前者，修复 bug。 （在示例应用中，这意味着修复错误数据。）如果是后者，你可能需要处理的异常在代码中`try/catch`块 （我们介绍下一节中的其他可能的策略）。 在示例应用中，将以下代码：
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -277,131 +404,6 @@ Debug.Assert(users[0].points > 0);
 ## <a name="fix-performance-issues"></a>修复性能问题
 
 Bug 的另一种包括导致你的应用运行缓慢或占用大量内存的代码效率低下。 通常情况下，优化性能是更高版本在你的应用开发中做的事情。 但是，您可能会遇到性能问题早期 （例如，您看到您的应用程序的某个部分运行速度缓慢），可能需要进行早期测试使用分析工具对应用程序。 有关分析 CPU 使用率工具和内存分析器等工具的详细信息，请参阅[先来看一下分析工具](../profiling/profiling-feature-tour.md)。
-
-## <a name="sample-code"></a>示例代码
-
-下面的代码完全可以使用 Visual Studio IDE 来修复一些 bug。 应用此处是一个简单的应用，用于模拟从某项操作，反序列化到对象，数据和使用新数据更新的简单列表获取的 JSON 数据。
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization.Json;
-using System.Runtime.Serialization;
-using System.IO;
-
-namespace Console_Parse_JSON_DotNetCore
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var localDB = LoadRecords();
-            string data = GetJsonData();
-
-            User[] users = ReadToObject(data);
-
-            UpdateRecords(localDB, users);
-
-            for (int i = 0; i < users.Length; i++)
-            {
-                List<User> result = localDB.FindAll(delegate (User u) {
-                    return u.lastname == users[i].lastname;
-                    });
-                foreach (var item in result)
-                {
-                    Console.WriteLine($"Matching Record, got name={item.firstname}, lastname={item.lastname}, age={item.totalpoints}");
-                }
-            }
-
-            Console.ReadKey();
-        }
-
-        // Deserialize a JSON stream to a User object.
-        public static User[] ReadToObject(string json)
-        {
-            User deserializedUser = new User();
-            User[] users = { };
-            MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(json));
-            DataContractJsonSerializer ser = new DataContractJsonSerializer(users.GetType());
-
-            users = ser.ReadObject(ms) as User[];
-
-            ms.Close();
-            return users;
-        }
-
-        // Simulated operation that returns JSON data.
-        public static string GetJsonData()
-        {
-            string str = "[{ \"points\":4o,\"firstname\":\"Fred\",\"lastname\":\"Smith\"},{\"lastName\":\"Jackson\"}]";
-            return str;
-        }
-
-        public static List<User> LoadRecords()
-        {
-            var db = new List<User> { };
-            User user1 = new User();
-            user1.firstname = "Joe";
-            user1.lastname = "Smith";
-            user1.totalpoints = 41;
-
-            db.Add(user1);
-
-            User user2 = new User();
-            user2.firstname = "Pete";
-            user2.lastname = "Peterson";
-            user2.totalpoints = 30;
-
-            db.Add(user2);
-
-            return db;
-        }
-        public static void UpdateRecords(List<User> db, User[] users)
-        {
-            bool existingUser = false;
-
-            for (int i = 0; i < users.Length; i++)
-            {
-                foreach (var item in db)
-                {
-                    if (item.lastname == users[i].lastname && item.firstname == users[i].firstname)
-                    {
-                        existingUser = true;
-                        item.totalpoints += users[i].points;
-
-                    }
-                }
-                if (existingUser == false)
-                {
-                    User user = new User();
-                    user.firstname = users[i].firstname;
-                    user.lastname = users[i].lastname;
-                    user.totalpoints = users[i].points;
-
-                    db.Add(user);
-                }
-            }
-        }
-    }
-
-    [DataContract]
-    internal class User
-    {
-        [DataMember]
-        internal string firstname;
-
-        [DataMember]
-        internal string lastname;
-
-        [DataMember]
-        // internal double points;
-        internal string points;
-
-        [DataMember]
-        internal int totalpoints;
-    }
-}
-```
 
 ## <a name="next-steps"></a>后续步骤
 

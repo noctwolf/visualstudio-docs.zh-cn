@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findInlineeLinesByLinenum |Microsoft Docs
+title: IDiaSession::findInlineeLinesByLinenum | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: cf32ae7c-a0c8-4800-bc8f-d64fdd15fb06
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2a76b80c597024ff4fd4de6b76a7f77092db3e9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 432c0859041740c74e6c3264c318d46352d262b3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966150"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54972688"
 ---
 # <a name="idiasessionfindinlineelinesbylinenum"></a>IDiaSession::findInlineeLinesByLinenum
 检索一个枚举，允许客户端进行循环访问，将内联，直接或间接指定的源文件和行号中的所有函数的行号信息。  

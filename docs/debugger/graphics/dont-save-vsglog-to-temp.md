@@ -1,19 +1,19 @@
 ---
-title: DONT_SAVE_VSGLOG_TO_TEMP |Microsoft Docs
+title: DONT_SAVE_VSGLOG_TO_TEMP | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f27ab0e6-9575-4ca0-9901-37d3e5c3a2f5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d945f3ef7fe2c5aa2abb0bd2263bae693d517f7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 967ff50991efbbd7b598605abd992b298367d01c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859147"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55006172"
 ---
 # <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 通过其存在定义图形日志文件是否保存到用户的临时文件目录。  
@@ -24,7 +24,7 @@ ms.locfileid: "53859147"
 #define DONT_SAVE_VSGLOG_TO_TEMP  
 ```  
 
-## <a name="value"></a>“值”  
+## <a name="value"></a>值  
  预处理器符号，其存在情况确定是否图形日志文件保存到用户的临时文件目录。 如果定义此符号，则由定义的文件的名称`VSG_DEFAULT_RUN_FILENAME`是捕获应用程序的当前目录的相对或绝对路径; 否则为的文件的名称定义`VSG_DEFAULT_RUN_FILENAME`是相对于用户的临时文件目录，不能为绝对路径。  
 
 ## <a name="remarks"></a>备注  

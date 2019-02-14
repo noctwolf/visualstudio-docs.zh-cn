@@ -1,14 +1,9 @@
 ---
-title: 如何：查找和组织项目模板和项模板 | Microsoft Docs
-ms.custom: ''
+title: 如何：查找和组织项目和项模板 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - custom template locations [Visual Studio]
@@ -20,13 +15,13 @@ ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830972"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778521"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：查找和组织项目模板和项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +51,7 @@ ms.locfileid: "49830972"
   
   例如，以下目录包含自定义 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 项目模板：  
   
-  C:\Documents and Settings\UserName\My 文档\\< Visual Studio 版本\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Documents and Settings\UserName\My Documents\Visual Studio \\Version\>\Templates\ProjectTemplates\Visual C#\  
   
   自定义模板不包含已本地化模板的子目录。 可在“环境\项目和解决方案”下的“选项”对话框中更改自定义模板的默认目录。  
   
@@ -122,7 +117,7 @@ ms.locfileid: "49830972"
   
 1. 在自定义项目模板目录的语言文件夹中创建一个文件夹。 例如，要为 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 模板创建 HelloWorld 类别，你将创建以下目录：  
   
-    \My documents\\< Visual Studio 版本\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My Documents\Visual Studio \\Version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. 将此类别的所有模板放入新文件夹。  
   
@@ -136,7 +131,7 @@ ms.locfileid: "49830972"
   
 1.  在自定义项模板目录的语言文件夹中创建一个文件夹。 例如，要为 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 模板创建 HelloWorld 类别，你将创建以下目录：  
   
-     \My documents\\< Visual Studio 版本\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \My Documents\Visual Studio \\Version\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
 2.  将此类别的所有模板放入新文件夹。  
   
@@ -183,6 +178,3 @@ ms.locfileid: "49830972"
  [NumberOfParentCategoriesToRollUp（Visual Studio 模板）](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [如何：创建项目模板](../ide/how-to-create-project-templates.md)   
  [如何：创建项模板](../ide/how-to-create-item-templates.md)
-
-
-

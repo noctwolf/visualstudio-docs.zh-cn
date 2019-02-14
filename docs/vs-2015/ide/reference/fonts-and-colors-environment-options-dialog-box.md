@@ -1,14 +1,9 @@
 ---
 title: “选项”对话框 ->“环境”->“字体和颜色”| Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
@@ -31,13 +26,13 @@ ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 691500690470f66bced8fdec5ff885a2d1f0d73b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54761622"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“字体和颜色”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ ms.locfileid: "50220230"
 通过“选项”对话框的“字体和颜色”页，可以为集成开发环境 (IDE) 中的各种用户界面元素建立自定义字体和配色方案。 单击“工具”/“选项”，然后选择“环境”/“字体和颜色”即可访问此对话框。 如果此页未出现在列表中，请在“选项”对话框中选择“显示所有设置”。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  配色方案的更改在进行此更改的会话期间不生效。 要计算颜色更改，可打开 Visual Studio 的另一实例并产生希望应用更改所基于的条件。  
   
@@ -100,7 +95,7 @@ ms.locfileid: "50220230"
   
  一些显示项包括：  
   
-|显示项|描述|  
+|显示项|说明​​|  
 |------------------|-----------------|  
 |纯文本|编辑器中的文本。|  
 |选定的文本|当编辑器具有焦点时，当前选定内容中包含的文本。|  
@@ -133,7 +128,7 @@ ms.locfileid: "50220230"
 |覆盖率未涉及的区域|单元测试尚未覆盖的代码。|  
 |覆盖率部分涉及的区域|单元测试已部分覆盖的代码。|  
 |覆盖率涉及的区域|已被单元测试完全覆盖的代码。|  
-|CSS 注释|级联样式表中的注释。 例如：<br /><br /> /* comment \*/|  
+|CSS 注释|级联样式表中的注释。 例如:<br /><br /> /* comment \*/|  
 |CSS 关键字|级联样式表中的关键字。|  
 |CSS 属性名|属性的名称，如 Background。|  
 |CSS 属性值|分配给属性的值，如 blue。|  
@@ -153,7 +148,7 @@ ms.locfileid: "50220230"
 |关键字|为给定语言保留的关键字。 例如：class 和 namespace。|  
 |内存地址|用于显示“内存”窗口内地址列的文本颜色。|  
 |内存已更改|用于显示“内存”窗口内已更改数据的文本颜色。|  
-|内存数据|用于显示数据内的文本的颜色**内存**窗口。|  
+|内存数据|用于显示“内存”窗口内数据的文本颜色。|  
 |内存不可读|用于显示“内存”窗口内不可读内存区域的文本颜色。|  
 |数字|代码中表示实际数值的数字。|  
 |**Operator**|运算符，如 +、- 和 !=。|  
@@ -169,7 +164,7 @@ ms.locfileid: "50220230"
 |SQL DML 标记|应用于 Transact-SQL 编辑器。 默认情况下，此编辑器中的 DML 语句以蓝色的边界框进行标记。|  
 |陈旧的代码|等待更新的取代代码。 在某些情况下，“编辑并继续”无法立即应用代码更改，而是在稍后继续调试时应用这些更改。 当编辑某个必须调用当前所执行的函数的函数，或将超过 64 个字节的新变量添加到等待调用堆栈的某个函数中时，会发生这种情况。 发生这种情况时，调试器将显示一个“陈旧代码警告”对话框，而取代代码继续执行，直到上述函数完成并被重新调用为止。 “编辑并继续”将在此时应用代码更改。|  
 |**字符串**|字符串。|  
-|字符串(C# @ 逐字字符串)|在 C# 中逐字解释的字符串。 例如：<br /><br /> @"x"|  
+|字符串(C# @ 逐字字符串)|在 C# 中逐字解释的字符串。 例如:<br /><br /> @"x"|  
 |语法错误|分析错误。|  
 |任务列表快捷方式|如果将“任务列表”快捷方式添加到某一行，并禁用指示器边距，则将突出显示该行。|  
 |跟踪点(禁用)|未使用。|  
@@ -197,7 +192,7 @@ ms.locfileid: "50220230"
 |XML 特性|特性名称。|  
 |XML 特性引号|XML 特性的引号字符。|  
 |XML 特性值|XML 特性的内容。|  
-|XML Cdata 节|内容\<！ [CDATA [...]]>。|  
+|XML Cdata 节|\<![CDATA[...]]> 的内容。|  
 |XML 注释|\<!-- --> 的内容。|  
 |XML 分隔符|XML 语法分隔符，包括 <、<?、<!、\<!--、-->、?\>、\<![、]]> 和 [、]。|  
 |XML 文档特性|xml 文档特性的值，如 \<param name="I">，其中“I”被着色。|  
@@ -242,6 +237,3 @@ ms.locfileid: "50220230"
  [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)   
  [“选项”对话框](../../ide/reference/options-dialog-box-visual-studio.md)   
  [如何：更改字体和颜色](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-
-
-

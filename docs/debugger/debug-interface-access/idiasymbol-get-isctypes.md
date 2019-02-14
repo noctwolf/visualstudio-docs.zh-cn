@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 00c73cf9-2933-472e-bc1d-d041f4d7e412
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c91c59c3253826164e3b591d9222ae9f0b2bcd58
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ccd5459b2451289133c83ddaddd2834de4c4ec23
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864590"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54922514"
 ---
 # <a name="idiasymbolgetisctypes"></a>IDiaSymbol::get_isCTypes
 检索一个标志，指示符号文件是否包含 C 类型。  
@@ -45,7 +45,7 @@ HRESULT get_isCTypes(
   
 ## <a name="requirements"></a>要求  
   
-|需求|说明|  
+|需求|说明​​|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

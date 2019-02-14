@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isAcceleratorGroupSharedLocal |Microsoft Docs
+title: IDiaSymbol::get_isAcceleratorGroupSharedLocal | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 17a20542-5b45-478f-bb80-0d56031aadb5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6bf469433a4356c86aba36478f8a07e3437c9f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10219746f46dfcd9b628d84fdd7c75c1ff93bfb3
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828285"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54950723"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
 检索一个标志，指示符号是否与组共享本地变量在编译 c + + AMP 快捷键代码相对应。  

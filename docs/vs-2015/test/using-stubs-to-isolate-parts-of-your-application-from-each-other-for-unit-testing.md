@@ -1,29 +1,24 @@
 ---
 title: 使用存根隔离应用的各个部分以供单元测试使用 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: cc12f77a8f1c3443606537dd6f818e9ee6625327
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e3b9b104fe6f246592f4716ad18ab4a9e6f122fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853176"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803240"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用存根针对单元测试隔离应用程序的各个部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-存根类型 * 是 Microsoft Fakes 框架提供让你轻松地隔离所测试的其他组件与它调用的一个组件的两种技术之一。 存根是一小段代码，用来在测试期间替代另一个组件。 使用存根的好处在于它能返回一致的结果，使测试更易于编写。 而且，即使在其他组件无法工作的情况下，你也可以运行这些测试。  
+存根类型是 Microsoft Fakes 框架提供的两种技术之一，方便你轻松地将受测组件与它调用的其他组件隔离开来。 存根是一小段代码，用来在测试期间替代另一个组件。 使用存根的好处在于它能返回一致的结果，使测试更易于编写。 而且，即使在其他组件无法工作的情况下，你也可以运行这些测试。  
   
  有关 Fakes 的概述和快速入门指南，请参阅[使用 Microsoft Fakes 隔离受测代码](../test/isolating-code-under-test-with-microsoft-fakes.md)。  
   
@@ -259,7 +254,7 @@ End Class
  另外，还会为属性的 getter 和 setter、事件和泛型方法生成存根。  
   
 ###  <a name="mocks"></a>验证参数值  
- 你可以验证，当你的组件对另一个组件进行调用时，它是否传递正确的值。 你可以在存根中放置一个断言，或者也可以存储值并在测试的主体中验证它。 例如：  
+ 你可以验证，当你的组件对另一个组件进行调用时，它是否传递正确的值。 你可以在存根中放置一个断言，或者也可以存储值并在测试的主体中验证它。 例如:  
   
 ```csharp  
 [TestClass]  
@@ -435,7 +430,7 @@ public void TestGetValue()
  如果代码是为了调用具有任何其他实例化的 `GetValue<T>`，存根将只调用行为。  
   
 ###  <a name="BKMK_Partial_stubs"></a>虚类的存根  
- 在前面的示例中，已从接口生成存根。 还可以从具有虚拟或抽象成员的类生成存根。 例如：  
+ 在前面的示例中，已从接口生成存根。 还可以从具有虚拟或抽象成员的类生成存根。 例如:  
   
 ```csharp  
 // Base class in application under test  
@@ -507,10 +502,7 @@ StubBehaviors.Current =
 ## <a name="external-resources"></a>外部资源  
   
 ### <a name="guidance"></a>指导  
- [使用 Visual Studio 2012 对连续交付进行测试 - 第 2 章：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [使用 Visual Studio 2012 – 第 2 章对连续交付进行测试：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>请参阅  
  [用 Microsoft Fakes 隔离测试代码](../test/isolating-code-under-test-with-microsoft-fakes.md)
-
-
-
