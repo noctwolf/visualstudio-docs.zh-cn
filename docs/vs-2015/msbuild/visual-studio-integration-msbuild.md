@@ -1,14 +1,9 @@
 ---
 title: Visual Studio 集成 (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -23,13 +18,13 @@ ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
 caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b9591ebff8708d0cd63825854c31cf297d32ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294848"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763305"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,14 +49,14 @@ Visual Studio 承载有 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
-Condition=" '$(Configuration)' == 'Release' "   
+Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
  为了达到这个目的，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将针对 `PropertyGroup`、`ItemGroup`、`Import`、属性和项元素检查条件。  
   
 ## <a name="additional-build-actions"></a>其他生成操作  
- 借助 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，可以使用[“文件属性”](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959)窗口的“生成操作”属性来更改项目中文件的项类型名称。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 项类型名称始终会在此菜单中列出，此菜单中同时还会列出项目中已有的任何其他项类型名称。 若要确保任何自定义的项类型名称在此菜单中始终可用，可以将这些名称添加到名为 `AvailableItemName`的项类型。 例如，如果在项目文件中添加下面的内容，就会为导入它的所有项目在此菜单中添加自定义类型 `JScript` ：  
+ 借助 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，可以使用[文件属性](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959)窗口的**生成操作**属性来更改项目中文件的项类型名称。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 项类型名称始终会在此菜单中列出，此菜单中同时还会列出项目中已有的任何其他项类型名称。 若要确保任何自定义的项类型名称在此菜单中始终可用，可以将这些名称添加到名为 `AvailableItemName`的项类型。 例如，如果在项目文件中添加下面的内容，就会为导入它的所有项目在此菜单中添加自定义类型 `JScript` ：  
   
 ```  
 <ItemGroup>  
@@ -197,6 +192,3 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [Target 元素 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Csc 任务](../msbuild/csc-task.md)   
  [Vbc 任务](../msbuild/vbc-task.md)
-
-
-
