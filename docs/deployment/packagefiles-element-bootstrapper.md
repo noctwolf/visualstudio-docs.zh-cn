@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd2436f7aa3fe24e90f380cf523b3affa6579e2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a51984484f2120bd853e90b3dabff6928c2dce1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990342"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54958741"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt;元素 （引导程序）
 `PackageFiles`元素包含`PackageFile`元素，后者定义为执行的安装包`Command`元素。  
@@ -44,7 +44,7 @@ ms.locfileid: "53990342"
 ## <a name="elements-and-attributes"></a>元素和属性  
  `PackageFiles` 元素具有以下属性。  
 
-|特性|说明|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`CopyAllPackageFiles`|可选。 如果设置为`false`，安装程序将仅下载文件从引用`Command`元素。 如果设置为`true`，将下载所有文件。<br /><br /> 如果设置为`IfNotHomesite`，安装程序的行为相同像`False`如果`ComponentsLocation`设置为`HomeSite`，并将否则具有相同行为像`True`。 此设置可用于允许包本身是引导程序，以在 HomeSite 方案中执行其自己的行为。<br /><br /> 默认值为 `true`。|  
 
@@ -54,7 +54,7 @@ ms.locfileid: "53990342"
  `PackageFile` 具有以下属性。  
 
 
-| 特性 | 说明 |
+| 特性 | 说明​​ |
 |---------------| - |
 | `Name` | 必需。 包文件的名称。 这是名称的`Command`元素将引用此项定义的包将安装在其下的条件。 此值还用作的键`Strings`表以检索这样的工具的本地化的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将用于描述包。 |
 | `HomeSite` | 可选。 在远程服务器上，如果不包括与安装程序的包的位置。 |

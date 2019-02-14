@@ -1,14 +1,9 @@
 ---
 title: 查看代码的结构 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -32,13 +27,13 @@ ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901640"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801207"
 ---
 # <a name="viewing-the-structure-of-code"></a>查看代码的结构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ ms.locfileid: "49901640"
   
  [代码定义窗口（C#、C++）](#BKMK_CodeDefinition)  
   
- 此外可以使用**解决方案资源管理器**若要浏览的类型和成员在项目中的，搜索符号、 查看方法的调用层次结构、 查找符号引用及其他信息而无需多个工具窗口之间切换前面列出。  
+ 还可以使用“解决方案资源管理器”浏览项目中的类型和成员、搜索符号、查看方法的调用层次结构、查找符号引用及其他操作，而无需在上述列出的多个工具窗口之间进行切换。  
   
  如果你安装了 Visual Studio Enterprise，则可以使用代码图来直观显示代码的结构及其在整个解决方案中的相关性，并深入查看你感兴趣的代码部分。 有关详细信息，请参阅[映射解决方案中的依赖项](../modeling/map-dependencies-across-your-solutions.md)。  
   
@@ -229,6 +224,3 @@ ms.locfileid: "49901640"
   
 ## <a name="see-also"></a>请参阅  
  [“类视图”和“对象浏览器”图标](../ide/class-view-and-object-browser-icons.md)
-
-
-

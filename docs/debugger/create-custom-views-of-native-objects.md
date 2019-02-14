@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91a62971db47b78b974cc2dede77d0a47b5c851
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca1cf68af84556a76c29417c9bd56894a70f12ca
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821187"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54997320"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>在调试器中创建本机对象的自定义视图
 
@@ -26,10 +26,6 @@ Visual Studio *Natvis* 框架可以自定义本机类型在调试器变量窗口
 
 Natvis 替换了 Visual Studio 早期版本中的 *autoexp.dat* 文件，提供了 XML 语法、更好的诊断功能、版本控制功能以及多文件支持功能。  
 
-Natvis 并不适用于：
-
-- 使用 c + + Windows 桌面项目**调试器类型**设置为**混合**下**配置属性** > **调试**. 
-- [混合模式调试](how-to-debug-in-mixed-mode.md)在托管的兼容模式下的 Windows 桌面应用程序 (**工具** > **选项** > **调试**  > **常规** > **使用托管的兼容模式**)。
 
 ## <a name="BKMK_Why_create_visualizations_"></a>Natvis 可视化效果
 
@@ -497,7 +493,7 @@ Natvis 的可视化功能使用 C++ 表达式来指定要显示的数据项。 �
 
 调试器将在 `LinkedListItems` 节点元素（而不是父列表类型）环境中计算 `NextPointer` 和 `ValueNode` 表达式。 在前面的示例中，`CAtlList` 有一个 `CNode` 类（位于 `atlcoll.h` 中），它是链接列表的节点。 `m_pNext` 和 `m_element` 是 `CNode` 类（而不是 `CAtlList` 类）的字段。  
 
-`ValueNode` 可以留空，或使用`this`来指代`LinkedListItems`节点本身。  
+`ValueNode` 可以保留为空或使用 `this` 来引用 `LinkedListItems` 节点本身。  
 
 #### <a name="customlistitems-expansion"></a>CustomListItems 展开  
 借助 `CustomListItems` 展开，你可以编写自定义逻辑，用于遍历哈希表等数据结构。 使用 `CustomListItems` 来可视化数据结构，这些数据结构可以使用 C++ 表达式进行所有运算，但不太适合 `ArrayItems`、`IndexListItems` 或 `LinkedListItems` 模式。  

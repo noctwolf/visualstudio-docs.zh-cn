@@ -1,14 +1,9 @@
 ---
 title: 'DA0017: 活动内存到磁盘的分页速率很高 | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.17
 - vs.performance.rules.DA0017
@@ -17,13 +12,13 @@ ms.assetid: 01011eec-5930-43b3-980d-2cb01e2ca7f6
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6a7fbe924ee3d0f5dbd142d8e7f7020c6eed1ee5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 136a8489ed3eac621543cb40b004052c2c9d3324
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766595"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803483"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017：以分页方式将活动内存移到磁盘的发生率高
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51766595"
 规则 Id |DA0017 |  
 |类别 |内存和分页 |  
 |分析方法 |所有 |  
-|消息 |发生高比率的分页活动内存到磁盘。 你的应用程序可能会受到内存限制。 |  
+|消息 |发生高比率的分页活动内存到磁盘。 应用程序可能受内存限制。  
 |规则类型 |信息 |  
   
  使用采样法、.NET 内存或资源争用方法进行分析时，必须收集至少 10 个样本才能触发此规则。  
@@ -54,6 +49,3 @@ ms.locfileid: "51766595"
  如果要在负载测试方案中收集 ASP.NET 应用程序的分析数据，请尝试在使用其他物理内存（或 RAM）配置的计算机上再次运行负载测试。  
   
  请考虑通过修改算法和避免使用占用大量内存的 API（如 String.Concat 和 String.Substring）来减少内存分配。
-
-
-

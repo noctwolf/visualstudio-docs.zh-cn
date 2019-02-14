@@ -1,5 +1,5 @@
 ---
-title: PointerType |Microsoft Docs
+title: PointerType | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 67228681-7345-4537-8af3-93806803ee96
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11317981fd6b9993edc06fd986df476b9e64de5f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 81eb1057ebc8ccb06b08b1dc40779699d7e75981
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906808"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55026835"
 ---
 # <a name="pointertype"></a>PointerType
 由标识每个指针`SymTagPointerType`符号。  
@@ -25,7 +25,7 @@ ms.locfileid: "53906808"
 ## <a name="properties"></a>属性  
  下表显示此符号类型的其他有效属性。  
   
-|Property|数据类型|说明|  
+|Property|数据类型|说明​​|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` 如果该指针被标记为常量。|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|以字节为单位，指针的大小。|  

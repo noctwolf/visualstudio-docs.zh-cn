@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b16629dc-8e17-476b-9c7b-58e7277c61ed
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a91a605a0f1b08ee3c8c1d005a1af21e086b88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ea9d30ff3762e8c429cdd92725ee79c6bff603db
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936251"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54924449"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 检索一个标志，指定该函数是否具有[裸](/cpp/cpp/naked-cpp)属性 （也就是说，该函数具有由编译器添加任何 prolog 或 epilog 代码）。  
@@ -42,7 +42,7 @@ HRESULT get_isNaked(
   
 ## <a name="requirements"></a>要求  
   
-|需求|说明|  
+|需求|说明​​|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

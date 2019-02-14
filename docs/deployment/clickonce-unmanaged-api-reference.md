@@ -52,7 +52,7 @@ ms.locfileid: "54986665"
   
 ### <a name="parameters"></a>参数  
   
-|参数|说明|类型|  
+|参数|说明​​|类型|  
 |---------------|-----------------|----------|  
 |`pcwzActivationUrl`|指向 `ActivationURL` 的指针。|LPCWSTR|  
 |`pcwzPathToDeploymentManifest`|指向 `PathToDeploymentManifest` 的指针。|LPCWSTR|  
@@ -80,7 +80,7 @@ ms.locfileid: "54986665"
   
 ### <a name="parameters"></a>参数  
   
-|参数|说明|类型|  
+|参数|说明​​|类型|  
 |---------------|-----------------|----------|  
 |`deploymentUrl`|指向包含部署清单的 URL 的以 NULL 结尾的字符串的指针。|LPCWSTR|  
 |`data`|留待将来使用。 必须为 NULL。|LPVOID|  

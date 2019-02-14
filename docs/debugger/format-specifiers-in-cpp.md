@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5732c7bd4f1c2fec8b7b3349d0985a2f7cbf896b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 83e1d56c14ff4659c681ae2aadd0c6f1b88bec50
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968334"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55009890"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中的 c + + 格式说明符
 你可以在其中一个值中显示的格式**监视**窗口是通过使用格式说明符。  
@@ -71,9 +71,9 @@ int main() {
 |**sb**|const char * 字符串（无引号）|\<位置 >"你好 world"|hello world|  
 |s8|UTF-8 字符串|\<位置 >"这是 utf-8 咖啡杯 â˜•"|"这是 utf-8 咖啡杯 ☕"|
 |**s8b**|UTF-8 字符串（无引号）|\<位置 >"你好 world"|hello world|  
-|su|Unicode （utf-16 编码） 字符串 （括在引号中）|\<位置 > L"你好 world"|L"hello world"<br /><br /> u"hello world"|  
-|sub|Unicode（UTF-16 编码）字符串（无引号）|\<位置 > L"你好 world"|hello world|  
-|bstr|BSTR 二进制字符串 （括在引号中）|\<位置 > L"你好 world"|L"hello world"|  
+|su|Unicode （utf-16 编码） 字符串 （括在引号中）|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|  
+|sub|Unicode（UTF-16 编码）字符串（无引号）|\<location> L"hello world"|hello world|  
+|bstr|BSTR 二进制字符串 （括在引号中）|\<location> L"hello world"|L"hello world"|  
 |env|环境块（双空终止字符串）|\<位置 > L"=:: =::\\\\"|L"=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
 |**s32**|UTF-32 的字符串 （带有引号）|\<位置 > U"你好 world"|u"hello world"|  
 |**s32b**|UTF-32 string (no quotation marks)|\<位置 > U"你好 world"|hello world|  

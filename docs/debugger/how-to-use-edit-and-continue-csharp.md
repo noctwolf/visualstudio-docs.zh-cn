@@ -12,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 40e136d8-a08c-43bd-b313-fb821c55eb3c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b694f2d3603c9b768a9a4ddbf7b2c66cf5c61b21
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca4d8efda78974be00973ef3f6c5adcc77c2465d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861963"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965271"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>如何：使用“编辑并继续”(C#)
 编辑并继续，可以建立并调试，而无需停止和重新启动调试会话时将更改应用到你的代码在中断模式下。  
 
 编辑并继续的C#当你在中断模式下进行代码更改，然后继续进行调试，通过使用自动发生**继续**，**步骤**，或**设置下一语句**，或计算在调试器窗口函数。  
 
-有关详细信息，请参阅[编辑并继续 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)。
+有关详细信息，请参阅[编辑并继续 (Visual C++)](../debugger/edit-and-continue-visual-csharp.md)。
 
 >[!NOTE]
 >编辑并继续的优化，不支持混合使用，或 SQL Server 公共语言运行时 (CLR) 集成代码。 有关其他不受支持方案的信息，请参阅[支持的代码更改 (C#和 Visual Basic)](../debugger/supported-code-changes-csharp.md)。 如果你尝试编辑并继续使用其中一种情形，出现一个消息框，指出，不支持编辑并继续。  
@@ -48,4 +48,4 @@ ms.locfileid: "53861963"
    
    调试时，将继续使用新的、 已编译代码。 
 
-编辑并继续不支持某些类型的代码更改。 有关详细信息，请参阅[支持的代码更改 (C#和 Visual Basic)](../debugger/supported-code-changes-csharp.md)。   
+编辑并继续不支持某些类型的代码更改。 有关详细信息，请参阅[受支持的代码更改（C# 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。   

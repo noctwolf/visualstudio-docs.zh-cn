@@ -1,14 +1,9 @@
 ---
-title: 如何： 在目录中查找主题 |Microsoft Docs
-ms.custom: ''
+title: 如何：目录中查找主题 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_contents
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7805113a1d35b352c048711f7ce4aa634ad4cb5e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dd53eef6cb5dc7b7144375f5d0f6b47e11913ed3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292742"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54778337"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>如何：在目录中查找主题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,13 +50,10 @@ ms.locfileid: "49292742"
   
 1.  查看主题。  
   
-2.  单击**中显示主题**按钮在工具栏中，或按 Ctrl + S。  
+2.  单击工具栏上的“在目录中显示主题”按钮，或按 Ctrl+S。  
   
      “目录”选项卡将打开并显示 TOC 中的主题位置。  
   
 ## <a name="see-also"></a>请参阅  
  [查找信息](../ide/locate-information.md)   
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
-
-
-

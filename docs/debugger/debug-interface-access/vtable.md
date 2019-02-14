@@ -1,5 +1,5 @@
 ---
-title: VTable |Microsoft Docs
+title: VTable | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: c8be6692-7d2a-4721-99d3-8e2e565bb8a1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74d5a39efe6db7cb2fa6bb3fdeb7efdfb82b6fbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8068a67671577557f3bf9ce2da4ab9426ab10d31
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880830"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54998906"
 ---
 # <a name="vtable"></a>VTable
 虚拟表由`SymTagVTable`符号。  
@@ -26,7 +26,7 @@ ms.locfileid: "53880830"
 ## <a name="properties"></a>属性  
  下表显示此符号类型的其他有效属性。  
   
-|Property|数据类型|说明|  
+|Property|数据类型|说明​​|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|拥有此 VTable 的类的符号。|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|类父符号的 ID。|  

@@ -1,14 +1,9 @@
 ---
 title: 分析应用商店应用中的能量使用 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 102302a1c14f379745007135593cc039aa9f8836
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b61f367384c8ff11de72f16586a98a5d54f0ee06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742009"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790348"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>分析应用商店应用中的能量使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +60,7 @@ Visual Studio 的 **“能耗”** 探查器可以帮助你分析低功率平板
  执行此方法时，用户标记将与消息一起添加到分析数据中。  
   
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel 实现[Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx)接口 (计划为[System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx)在 C# 和 VB 中)。若要避免操作系统资源泄露，请调用[LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)（) (C# 和 VB 中 Windows.Foundation.Diagnostics.LoggingChannel.Dispose()) 日志记录通道完成之后。  
+> - Windows.Foundation.Diagnostics LoggingChannel 实现 [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) 接口（在 C# 和 VB 中表现为 [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx)）。若要避免操作系统资源泄露，请在完成日志记录通道时调用 [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)（在 C# 和 VB 中为 Windows.Foundation.Diagnostics.LoggingChannel.Dispose）。  
 >   -   每个打开的日志记录通道都必须有唯一的名称。 尝试创建与未释放的通道同名的新日志记录通道会导致出现异常。  
   
  有关示例，请参阅 Windows SDK 示例 [LoggingSession 示例](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) 。  
@@ -153,11 +148,8 @@ if (performance && performance.mark) {
   
 ##  <a name="BKMK_Other_resources"></a> 其他资源  
   
--   Windows 开发人员中心中 [C#/VB/C++ 和 XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) 和 [JavaScript 和 HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) 的“连接状态和成本管理”  部分介绍了提供网络连接信息的 Windows API，你的应用程序可以使用这些信息最大程度降低网络通信成本。  
+-   Windows 开发人员中心中 **C#/VB/C++ 和 XAML** 和 [JavaScript 和 HTML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) 的“连接状态和成本管理” [](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) 部分介绍了提供网络连接信息的 Windows API，你的应用程序可以使用这些信息最大程度降低网络通信成本。  
   
      使用 Windows 应用商店应用程序的 Visual Studio 模拟器可以模拟网络信息 API 的数据连接属性。 请参见 [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
 -   **“JavaScript 函数计时”** 和 **“CPU 使用量”** 工具有助于降低由低效函数导致的 CPU 负载。 请参阅[分析 CPU 使用情况](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md)。
-
-
-

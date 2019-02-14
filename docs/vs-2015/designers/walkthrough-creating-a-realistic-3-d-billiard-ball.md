@@ -1,25 +1,20 @@
 ---
-title: 演练：创建真实的三维台球 | Microsoft Docs
-ms.custom: ''
+title: 演练：创建真实的三维撞球 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829581"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793299"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>演练：创建真实的三维撞球
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,7 +188,7 @@ ms.locfileid: "49829581"
   
    ![环境立方体贴图的布局](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
-   顶部图像是正 Y （+ Y） 立方体面;在中间，从左到右，为 – X、 + Z、 + X 和 – Z 立方体面;底部是 – Y 多维数据集文本。  
+   顶部的图像是正 Y(+Y) 立方体面；中间，从左到右分别是是 -X、+Z、+X 和 -Z 立方体面；底部是 -Y 立方体面。  
   
    现可修改着色器，将立方体贴图样本与着色器的其余部分混合。  
   
@@ -225,6 +220,3 @@ ms.locfileid: "49829581"
  [着色器设计器](../designers/shader-designer.md)   
  [图像编辑器](../designers/image-editor.md)   
  [着色器设计器节点](../designers/shader-designer-nodes.md)
-
-
-

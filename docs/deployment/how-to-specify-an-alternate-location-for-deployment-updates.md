@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3db855d06c71551dd6f1bb1d9e6f6ac0d34da72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5ca1f9c8879130abfd762aea4b803e7734433b8d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53957441"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54930649"
 ---
-# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何：指定部署更新的替换位置
+# <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何：指定部署更新的其他位置
 你可以安装你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]最初从 CD 或文件共享，应用程序，但应用程序必须检查在 Web 上找到的定期更新。 可以部署清单中指定更新的备用位置，以便你的应用程序在初始安装后可从 Web 自行更新。  
   
 > [!NOTE]
@@ -48,7 +48,7 @@ ms.locfileid: "53957441"
   
 2. 设置使用以下命令更新位置。 在此示例中， *HelloWorld.exe.application*是路径你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]始终具有.application 扩展名，应用程序清单和*<http://adatum.com/Update/Path>* 是该的URL[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]将检查应用程序更新。  
   
-    **Mage-更新 HelloWorld.exe.application ProviderUrl http://adatum.com/Update/Path**  
+    **Mage -Update HelloWorld.exe.application -ProviderUrl http://adatum.com/Update/Path**  
   
 3. 保存该文件。  
   

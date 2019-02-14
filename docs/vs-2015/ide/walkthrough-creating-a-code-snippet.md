@@ -1,14 +1,9 @@
 ---
-title: 演练：创建代码片段 | Microsoft Docs
-ms.custom: ''
+title: 演练：创建代码片段 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -20,18 +15,18 @@ ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f9b09a8990de97357da2703f1d08dabec50ea75e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267732"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54790108"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>演练：创建代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-只需几步操作即可创建代码片段。 你需要做的就是创建一个 XML 文件，填写适当的元素，并向其中添加代码。 此外还可以向代码中添加引用和替换参数。 通过使用代码片段管理器的导入按钮添加到你的 Visual Studio 安装该片段 (**工具/代码片段管理器**)。  
+只需几步操作即可创建代码片段。 你需要做的就是创建一个 XML 文件，填写适当的元素，并向其中添加代码。 此外还可以向代码中添加引用和替换参数。 可以在代码片段管理器中（“工具”->“代码片段管理器...”）使用“导入”按钮向 Visual Studio 的安装添加代码片段。  
   
 > [!TIP]
 >  有关如何更轻松地编写代码片段，如搜索 CodePlex 网站获取的社区工具[Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033)。  
@@ -78,7 +73,7 @@ ms.locfileid: "49267732"
   
 ### <a name="to-add-a-code-snippet-to-visual-studio"></a>将代码片段添加到 Visual Studio  
   
-1.  可以使用代码片段管理器将自己的代码片段添加到 Visual Studio 安装。 打开代码片段管理器 (**工具/代码片段管理器**)。  
+1.  可以使用代码片段管理器将自己的代码片段添加到 Visual Studio 安装。 打开代码片段管理器（“工具”->“代码片段管理器...”）。  
   
 2.  单击“导入”按钮。  
   
@@ -268,6 +263,3 @@ ms.locfileid: "49267732"
   
 ## <a name="see-also"></a>请参阅  
  [代码片段架构参考](../ide/code-snippets-schema-reference.md)
-
-
-

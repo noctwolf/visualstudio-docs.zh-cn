@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_ismsilnetmodule |Microsoft Docs'
+title: IDiaSymbol::get_isMSILNetmodule | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 593827f3-8437-4a12-ada4-ff715ec95fb2
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a66b8d64849f5c05efa8cc7922ba738ebc43097f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a04709615d14d7b5bd5d017bce378333d24b2b7d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919740"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54965154"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 检索一个标志，指示模块是否一个.netmodule （只包含元数据，并且没有本机符号是 Microsoft 中间语言 (MSIL) 模块）。  
@@ -45,7 +45,7 @@ HRESULT get_isMSILNetmodule(
   
 ## <a name="requirements"></a>要求  
   
-|需求|说明|  
+|需求|说明​​|  
 |-----------------|-----------------|  
 |标头：|dia2.h|  
 |版本:|DIA SDK v8.0|  

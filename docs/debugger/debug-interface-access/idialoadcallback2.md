@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback2 |Microsoft Docs
+title: IDiaLoadCallback2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9a44277d-cbed-4811-9bad-5a2aa0f09323
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0172d344a7379daa88b378fe4bef7be066567e83
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c3b20ade9ccb7799a764c8a43a1e1957dc91960
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843984"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54993412"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 接收来自 DIA 符号查找过程，从而限制强加于查找过程的回调。  
@@ -31,7 +31,7 @@ IDiaLoadCallback2 : IDiaLoadCallback
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  除了中的方法[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)接口，此接口公开以下方法：  
   
-|方法|说明|  
+|方法|说明​​|  
 |------------|-----------------|  
 |[IDiaLoadCallback2::RestrictOriginalPathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess.md)|确定如果查找原始的调试目录中的.pdb 文件。|  
 |[IDiaLoadCallback2::RestrictReferencePathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|确定是否在.exe 文件所在位置的路径中允许查找.pdb 文件。|  

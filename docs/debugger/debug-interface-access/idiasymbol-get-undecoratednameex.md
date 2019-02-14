@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 715ab90837441974c05176c69c53366199e3543c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1db5d9b876beecc68345075a624e0368d8115999
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932176"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54928824"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 检索部分或全部 c + + 的未修饰名称修饰 （链接） 名称。  
@@ -50,7 +50,7 @@ HRESULT get_undecoratedNameEx( 
 > [!NOTE]
 >  标记名称未定义在 DIA SDK 中，因此您需要将声明添加到你的代码，或使用原始值。  
   
-|Flag|值|说明|  
+|Flag|值|说明​​|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|启用完全 undecoration。|  
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|从删除前导下划线 Microsoft 扩展关键字。|  

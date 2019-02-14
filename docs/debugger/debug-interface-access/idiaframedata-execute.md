@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Execute |Microsoft Docs'
+title: IDiaFrameData::execute | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7a6c7d03-1ff1-4059-bd54-5f407eeebc26
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be6c631f9ea0db47829f305f90bd1c296de2f28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b8a301bd4f16cd3fb6f1b6fcec90e0f1cf3f47c
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958732"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54992017"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 执行堆栈展开并在堆栈遍历帧界面中返回结果。  
@@ -37,7 +37,7 @@ HRESULT execute ( 
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。  
   
-|“值”|说明|  
+|值|说明​​|  
 |-----------|-----------------|  
 |E_DIA_INPROLOG|无法执行序言代码中的堆栈帧。|  
 |E_DIA_SYNTAX|分析帧程序中遇到错误。|  

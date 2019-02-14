@@ -1,14 +1,9 @@
 ---
 title: DA0018：运行的 32 位应用程序达到了进程托管内存的限制 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.18
 - vs.performance.DA0018
@@ -17,13 +12,13 @@ ms.assetid: 98eb2d96-f92f-42f9-915c-e5ac2330ffbf
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: aeca49e13a2d7181d74f48522786185f4be9ed58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722261"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54773282"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：运行的 32 位应用程序达到了进程托管内存的限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51722261"
 规则 Id |DA0018 |  
 |类别 |分析工具使用情况 |  
 |分析方法 |采样 |  
-|消息 |托管内存分配接近 32 位进程的默认限制。 应用程序可能会受内存限制。 |  
+|消息 |托管内存分配接近 32 位进程的默认限制。 应用程序可能会受内存限制。  
 |规则类型 |警告 |  
   
  使用采样法、.NET 内存或资源争用方法进行分析时，必须收集至少 10 个样本才能触发此规则。  
@@ -74,6 +69,3 @@ ms.locfileid: "51722261"
   若要解除对进程地址空间的专用部分大小的虚拟内存体系结构约束，请尝试在 64 位计算机上运行此 32 位进程。  64 位计算机上的 32 位进程最多可获得 4 GB 的专用虚拟内存。  
   
   64 位计算机上运行的 64 位进程最多可获得 8 TB 的虚拟内存。 请考虑重新编译应用程序，将其作为本机 64 位应用程序执行。 此规则仅供参考，可能不需要采取纠正措施。
-
-
-

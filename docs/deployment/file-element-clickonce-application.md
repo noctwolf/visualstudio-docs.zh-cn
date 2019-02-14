@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c16c2cb00bf91d3fc0d991be71ba9b387d5a09cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2d71192b38ea14ade737ecb4b34e3cc25f8b91d
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828298"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54984712"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;文件&gt;元素 （ClickOnce 应用程序）
 标识下载和应用程序使用的所有非程序集文件。  
@@ -86,7 +86,7 @@ ms.locfileid: "53828298"
 ## <a name="elements-and-attributes"></a>元素和属性  
  `file` 元素是可选的。 元素具有以下属性。  
 
-|特性|说明|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`name`|必需。 标识文件的名称。|  
 |`size`|必需。 指定大小，以字节为单位的文件。|  
@@ -94,10 +94,10 @@ ms.locfileid: "53828298"
 |`optional`|可选。 指定此文件必须下载第一个应用程序时运行，或是否该文件之前按需的应用程序请求它应驻留只能在服务器上。 如果`false`或未定义，该文件将下载应用程序首次运行或安装时。 如果`true`、`group`必须为有效的应用程序清单中指定。 `optional` 不能为 true 如果`writeableType`的值指定`applicationData`。|  
 |`writeableType`|可选。 指定此文件是一个数据文件。 当前，唯一有效的值是：`applicationData`。|  
 
-## <a name="typelib"></a>类型库  
+## <a name="typelib"></a>typelib  
  `typelib`元素是可选元素的子文件。 元素描述为 COM 组件所属的类型库。 元素具有以下属性。  
 
-|特性|说明|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`tlbid`|必需。 分配给类型库的 GUID。|  
 |`version`|必需。 类型库的版本号。|  
@@ -108,7 +108,7 @@ ms.locfileid: "53828298"
 ## <a name="comclass"></a>comClass  
  `comClass`元素是可选的子`file`，但如果元素是必需[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序包含 COM 组件，它想要部署使用免注册 com。 元素具有以下属性。  
 
-|特性|说明|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`clsid`|必需。 以 GUID 形式表示的 COM 组件的类 ID。|  
 |`description`|可选。 类名。|  
@@ -124,7 +124,7 @@ ms.locfileid: "53828298"
 ## <a name="cominterfaceexternalproxystub"></a>comInterfaceExternalProxyStub  
  `comInterfaceExternalProxyStub`元素是可选的子`file`元素，但可能是必需的如果[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序包含 COM 组件，它想要部署使用免注册 com。 该元素包含以下属性。  
 
-|特性|说明|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`iid`|必需。 接口 ID (IID) 由该代理服务器提供服务。 IID 必须具有与之相关的大括号。|  
 |`baseInterface`|可选。 从其引用的接口的接口的 IID`iid`派生。|  
@@ -136,7 +136,7 @@ ms.locfileid: "53828298"
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub  
  `comInterfaceProxyStub`元素是可选的子`file`元素，但可能是必需的如果[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序包含 COM 组件，它想要部署使用免注册 com。 该元素包含以下属性。  
 
-|特性|说明|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`iid`|必需。 接口 ID (IID) 由该代理服务器提供服务。 IID 必须具有与之相关的大括号。|  
 |`baseInterface`|可选。 从其引用的接口的接口的 IID`iid`派生。|  
@@ -149,7 +149,7 @@ ms.locfileid: "53828298"
 ## <a name="windowclass"></a>windowClass  
  `windowClass`元素是可选的子`file`元素，但可能是必需的如果[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序包含 COM 组件，它想要部署使用免注册 com。 元素是指由 COM 组件，必须具有应用于它的版本定义的窗口类。 该元素包含以下属性。  
 
-|特性|说明|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`versioned`|可选。 控件的内部窗口类注册中使用的名称是否包含含有窗口类的程序集的版本。 此属性的值可以是`yes`或`no`。 默认值为 `yes`。 值`no`仅应在同一个窗口类由某个端组件和等效的非并行组件定义，并且你想要将它们视为相同的窗口类。 请注意，窗口类注册的常用规则用于 — 仅注册窗口类的第一个组件将能够注册它，因为它不具有应用于它的版本。|  
 
@@ -167,7 +167,7 @@ ms.locfileid: "53828298"
  `dsig:Transform`元素是必需的子`dsig:Transforms`元素。 `dsig:Transform` 元素具有以下属性。  
 
 
-| 特性 | 说明 |
+| 特性 | 说明​​ |
 |-------------| - |
 | `Algorithm` | 用于计算此文件的摘要算法。 当前使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`urn:schemas-microsoft-com:HashTransforms.Identity`。 |
 
@@ -175,7 +175,7 @@ ms.locfileid: "53828298"
  `dsig:DigestMethod`元素是必需的子`hash`元素。 `dsig:DigestMethod` 元素具有以下属性。  
 
 
-| 特性 | 说明 |
+| 特性 | 说明​​ |
 |-------------| - |
 | `Algorithm` | 用于计算此文件的摘要算法。 当前使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。 |
 

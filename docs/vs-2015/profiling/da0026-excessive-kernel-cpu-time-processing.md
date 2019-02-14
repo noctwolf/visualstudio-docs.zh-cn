@@ -1,14 +1,9 @@
 ---
 title: DA0026：处理过程的内核 CPU 时间过长 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.rules.DA0026
 - vs.performance.DA0026
@@ -17,13 +12,13 @@ ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2dbf52ab216a2272cb3b6094126a34987588704
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fef0a3c42be1057bd1217ec676ae43b220d80345
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749681"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54768966"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026：处理过程的内核 CPU 时间过长
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51749681"
 规则 Id |TODO |  
 |类别 |分析工具使用情况 |  
 |分析方法 |采样 |  
-|消息 |测量的内核模式 CPU 时间量相对较高。 请考虑调查启用 SysCall 采样的源。 |  
+|消息 |测量的内核模式 CPU 时间量相对较高。 请考虑调查启用 SysCall 采样的源。  
 |规则类型 |信息 |  
   
  使用采样法、.NET 内存或资源争用方法进行分析时，必须收集至少 10 个样本才能触发此规则。  
@@ -44,6 +39,3 @@ ms.locfileid: "51749681"
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  若要调查应用程序执行的系统调用的类型，可再次运行分析，并基于系统调用选择收集示例的选项。 如果在 IDE 内部运行分析工具，请参阅[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)了解详细信息。 如果要运行命令行中的分析工具，请参阅分析工具命令行工具引用中的 [VSPerfCmd](../profiling/vsperfcmd.md) 主题的**采样间隔选项**部分。
-
-
-

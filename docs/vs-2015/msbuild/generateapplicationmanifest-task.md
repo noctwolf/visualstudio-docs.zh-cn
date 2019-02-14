@@ -1,14 +1,9 @@
 ---
 title: GenerateApplicationManifest 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: da5c9cb78ff4d3d9542c956a377f6342945d11a0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 570f4d7ec459a961f2608557ce692029128ce4b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245558"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756579"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49245558"
 ## <a name="parameters"></a>参数  
  下表描述了 `GenerateApplicationManifest` 任务的参数。  
   
-|参数|描述|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`AssemblyName`|可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Name` 字段。 如果未指定此参数，则从 `EntryPoint` 或 `InputManifest` 参数中推断名称。 如果无法创建任何名称，该任务将引发错误。|  
 |`AssemblyVersion`|可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Version` 字段。 如果未指定此参数，请使用默认值“1.0.0.0”。|  
@@ -50,10 +45,10 @@ ms.locfileid: "49245558"
 |`Dependencies`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定为生成的清单定义依赖程序集集的项列表。 项元数据可更详细地描述每个项，指示更多部署状态和依赖项类型。 有关详细信息，请参阅下面的“项元数据”部分。|  
 |`Description`|可选 `String` 参数。<br /><br /> 指定应用程序或组件的说明。|  
 |`EntryPoint`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定一个项，用于指示生成的清单程序集的入口点。<br /><br /> 对于 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序清单，此参数指定在应用程序运行时启动的程序集。|  
-|`ErrorReportUrl`|可选 [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 指定在安装 ClickOnce 时发出错误报告期间，对话框中显示的网页的 URL。|  
+|`ErrorReportUrl`|可选 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String 参数。<br /><br /> 指定在安装 ClickOnce 时发出错误报告期间，对话框中显示的网页的 URL。|  
 |`FileAssociations`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定与 ClickOnce 部署清单关联的一个或多个文件类型的列表。<br /><br /> 文件关联只在面向 .NET Framework 3.5 或更高版本时才有效。|  
 |`Files`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 要包含在清单中的文件。 指定每个文件的完整路径。|  
-|`HostInBrowser`|可选 [布尔值] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 如果为 `true`，则应用程序托管在浏览器中（与 WPF Web 浏览器应用程序一样）。|  
+|`HostInBrowser`|可选 [Boolean](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 如果为 `true`，则应用程序托管在浏览器中（与 WPF Web 浏览器应用程序一样）。|  
 |`IconFile`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指示应用程序图标文件。 应用程序图标在生成的应用程序清单中表示，可用于“开始”菜单和“添加/删除程序”对话框。 如果未指定此输入，将使用默认图标。 如果任务正在生成本机清单，将忽略此参数。|  
 |`InputManifest`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指示输入 XML 文档，使其充当清单生成器的基础。 这使得结构数据（如应用程序安全或自定义清单定义）可反映在输出清单中。 XML 文档中的根元素必须是 asmv1 命名空间中的程序集节点。|  
 |`IsolatedComReferences`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要在生成清单中隔离的 COM 组件。 此参数支持隔离 COM 组件以实现“免注册 COM”部署。 方法是通过自动生成具有标准 COM 注册定义的清单。 但为了保证组件正常工作，必须在生成计算机上注册这些 COM 组件。|  
@@ -82,7 +77,7 @@ ms.locfileid: "49245558"
   
 ## <a name="item-metadata"></a>项元数据  
   
-|元数据名称|描述|  
+|元数据名称|说明​​|  
 |-------------------|-----------------|  
 |`DependencyType`|指示依赖项是随应用程序一起发布并安装还是一个必备组件。 此元数据对所有依赖项均有效，但不可用于文件。 可用于此元数据的值有：<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Install 是默认值。|  
 |`AssemblyType`|指示依赖项是托管程序集还是本机程序集。 此元数据对所有依赖项均有效，但不可用于文件。 可用于此元数据的值有：<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` 是默认值，指示清单生成器将自动确定程序集类型。|  
@@ -363,6 +358,3 @@ ms.locfileid: "49245558"
  [GenerateDeploymentManifest 任务](../msbuild/generatedeploymentmanifest-task.md)   
  [SignFile 任务](../msbuild/signfile-task.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)
-
-
-
