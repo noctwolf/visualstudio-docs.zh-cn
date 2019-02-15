@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a535b49722c7022a105156c625139d0b8e94a35d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969663"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768417"
 ---
 # <a name="vbc-task"></a>Vbc 任务
 包装可生成可执行文件 (.exe)、动态链接库 (.dll) 或代码模块 (.netmodule) 的 vbc.exe。 有关 vbc.exe 的详细信息，请参阅 [Visual Basic 命令行编译器](/dotnet/visual-basic/reference/command-line-compiler/index)。  
@@ -32,7 +32,7 @@ ms.locfileid: "54969663"
  下表描述了 `Vbc` 任务的参数。  
 
 
-| 参数 | 说明 |
+| 参数 | 说明​​ |
 |------------------------------| - |
 | `AdditionalLibPaths` | 可选 `String[]` 参数。<br /><br /> 指定要在其中查找 References 属性中指定的程序集的其他文件夹。 |
 | `AddModules` | 可选 `String[]` 参数。<br /><br /> 使编译器让指定文件中的所有类型信息可供当前正在编译的项目使用。 此参数对应于 vbc.exe 编译器的 [-addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) 开关。 |
@@ -51,7 +51,7 @@ ms.locfileid: "54969663"
 | `Imports` | 可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 从指定项集合导入命名空间。 此参数对应于 vbc.exe 编译器的 [-imports](/dotnet/visual-basic/reference/command-line-compiler/imports) 开关。 |
 | `KeyContainer` | 可选 `String` 参数。<br /><br /> 指定加密密钥容器的名称。 此参数对应于 vbc.exe 编译器的 [-keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) 开关。 |
 | `KeyFile` | 可选 `String` 参数。<br /><br /> 指定含有加密密钥的文件名。 有关详细信息，请参阅 [-keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile)。 |
-| `LangVersion` | 可选 <xref:System.String?displayProperty=fullName> 参数。<br /><br /> 指定语言版本，“9”或“10”。 |
+| `LangVersion` | 可选 <xref:System.String?displayProperty=fullName> 参数。<br /><br /> 指定[语言版本](/dotnet/visual-basic/language-reference/configure-language-version)，如“15.5”。 |
 | `LinkResources` | 可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 创建指向输出文件中的 .NET Framework 资源的链接；资源文件不会放入输出文件中。 此参数对应于 vbc.exe 编译器的 [-linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) 开关。 |
 | `MainEntryPoint` | 可选 `String` 参数。<br /><br /> 指定包含 `Sub Main` 过程的类或模块。 此参数对应于 vbc.exe 编译器的 [-main](/dotnet/visual-basic/reference/command-line-compiler/main) 开关。 |
 | `ModuleAssemblyName` | 可选 `String` 参数。<br /><br /> 指定此模块所属程序集。 |

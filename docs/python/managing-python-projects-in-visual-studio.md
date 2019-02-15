@@ -2,7 +2,6 @@
 title: 管理 Python 应用程序项目
 description: Visual Studio 中的项目管理文件之间的依赖项和应用程序中的关系复杂性。
 ms.date: 01/28/2019
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: baf44172cb5ac7f2b38d4c408ca76791f013c4ac
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: fc8e6b87569d6c383d0629bae8c582537a3bc948
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231930"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155859"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 项目
 
@@ -37,8 +36,7 @@ Visual Studio 提供多种 Python 项目模板用于快速设置多个应用程�
 
 |   |   |
 |---|---|
-| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关 Python 项目的介绍，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567)（2 分 17 秒）。 |
-| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 另请参阅[深入了解：将源代码管理用于 Python 项目](https://youtu.be/Aq8eqApnugM)（youtube.com，8 分 55 秒）。 |
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | [深入了解：将源代码管理用于 Python 项目](https://youtu.be/Aq8eqApnugM)（youtube.com，8 分 55 秒）。 |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>添加文件、分配启动文件和设置环境
 
@@ -65,7 +63,7 @@ Visual Studio 提供多种方法用于从零开始，或根据现有代码设置
 
 下表总结了 Visual Studio 2017 中提供的模板（并非所有以前版本都提供了这些模板）：
 
-| 模板 | 说明 |
+| 模板 | 说明​​ |
 | --- | --- |
 | [**根据现有 Python 代码**](#create-project-from-existing-files) | 从文件夹结构中的现有 Python 代码创建 Visual Studio 项目。  |
 | **Python 应用程序** | 新 Python 应用程序的基本项目结构具有一个空的源文件。 默认情况下，项目在默认全局环境的控制台解释器中运行，通过[分配其他环境](selecting-a-python-environment-for-a-project.md)可以更改环境。 |

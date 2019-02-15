@@ -3,7 +3,6 @@ title: 教程：Visual Basic 入门
 description: 了解如何在 Visual Studio 中逐步创建 Visual Basic 控制台应用。
 ms.custom: seodec18, get-started
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: vb
@@ -14,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2d5cf15b6afd1b6eed6d800a1b7ba67c1f87b8
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: 146a0cdb5e553f262bea0b5b7dd5f592592cf6ad
+ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424494"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56155690"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教程：Visual Studio 中的 Visual Basic 入门
 
@@ -142,10 +141,10 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 恭喜你完成本教程！ 若要更深入地了解，请参阅以下教程。
 
 > [!div class="nextstepaction"]
-> [视频教程：面向零基础初学者的 Visual Basic 基础知识](https://mva.microsoft.com/en-us/training-courses/visual-basic-fundamentals-for-absolute-beginners-16507)
+> [在 Visual Studio 中使用 Visual Basic 和 .NET Core SDK 生成库](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>请参阅
 
-* [Visual Basic 中的新增功能](/dotnet/visual-basic/getting-started/whats-new)
-* [Visual Basic 代码文件的 IntelliSense](../../ide/visual-basic-specific-intellisense.md)
+* [Visual Basic 语言演练](/dotnet/visual-basic/walkthroughs)
 * [Visual Basic 语言参考](/dotnet/visual-basic/language-reference/index)
+* [Visual Basic 代码文件的 IntelliSense](../../ide/visual-basic-specific-intellisense.md)
