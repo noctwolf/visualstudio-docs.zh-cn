@@ -1,16 +1,17 @@
 ---
-title: 操作说明：打开 Visual Studio for Mac 的多个解决方案
+title: 如何：打开 Visual Studio for Mac 中的多个解决方案
 description: 了解如何打开 Visual Studio for Mac 的多个解决方案，以及如何打开应用程序的多个实例。
 author: conceptdev
 ms.author: crdun
 ms.date: 07/19/2018
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
-ms.openlocfilehash: 76a536f621a3c715a62b9e132dc661a2bcf8eb07
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: cdbe02cf3d60b460252f09764521afd240551115
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294924"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55768214"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>打开 Visual Studio for Mac 的多个解决方案或实例
 
@@ -49,3 +50,7 @@ open -n "/Applications/Visual Studio.app"
     ![“最近打开的解决方案”菜单屏幕截图](media/open-multiple-solutions-image2.png)
 
 1. 按住 Ctrl 键并选择解决方案。 此组合操作会在 Solution Pad 中打开第二个解决方案。
+
+## <a name="related-video"></a>相关视频
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Work-With-Multiple-Solutions/player]

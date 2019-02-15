@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a4136a67bea3dc06378265df9f01878c1a14dc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 079cf7681f8583b500068c0ca6aea60ce0fad66b
+ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923972"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55767901"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出了由 VSInstr.exe 工具发出的警告。 可使用 NOWARN 选项及警告编号来禁止显示警告。  
   
-|警告编号|说明|  
+|警告编号|说明​​|  
 |--------------------|-----------------|  
-|**VSP1026**|不引用 MSCorLib 的库不支持覆盖率。 这通常是可移植库会遇到的情况。|  
+|**VSP1026**|不引用 MSCorLib 的库不支持覆盖率。 这通常是可移植库会遇到的情况。<br /><br />.NET Core 需要 [/EnableCodeCoverage](/visualstudio/test/vstest-console-options) 命令行选项。|  
 |**VSP2000**|内部错误。 无法获取此可执行文件的模块文件名。|  
 |**VSP2001**|\<程序集名称> 是强名称程序集。 必须先对其重新签名，然后才能执行它。<br /><br /> 当检测到签名程序集时，将发出此警告。 可使用 sn.exe 工具重新签名二进制，或暂时关闭强名称要求。 有关详细信息，请参阅 [Sn.exe （强名称工具）](/dotnet/framework/tools/sn-exe-strong-name-tool)。|  
 |**VSP2002**|未能在文件 \<文件名> 中找到函数 \<函数名><br /><br /> 如果无法在指定文件中找到某个函数，将出现此警告。|  

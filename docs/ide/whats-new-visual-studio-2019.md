@@ -2,7 +2,7 @@
 title: Visual Studio 2019 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新增功能。
-ms.date: 01/29/2019
+ms.date: 02/08/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,13 +14,12 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-monikerRange: '>= vs-2017'
-ms.openlocfilehash: 88fe1f9a4f1f3d1d21af2d7d00dee677cab11fc5
-ms.sourcegitcommit: e3d96b20381916bf4772f9db52b22275763bb603
+ms.openlocfilehash: 4667fd19f59453e9efc856aefeaaf8d43aff302d
+ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55483700"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55987413"
 ---
 # <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 预览版中的新增功能
 
@@ -90,6 +89,8 @@ Visual Studio 2019 预览版包含许多常规改进以及可优化开发者生�
 
 Visual Studio 2019 预览版中会默认安装此服务。
 
+   ![显示 Visual Studio 2019 中 Live Share 协作功能的动画 GIF 文件](media/live-share-collaboration.gif)
+
 有关详细信息，请参见博客文章 [Visual Studio Live Share for real-time code reviews and interactive education](https://blogs.msdn.microsoft.com/visualstudio/2018/12/06/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/)（用于实时代码评审和交互式教育的 Visual Studio Live Share）。
 
 ## <a name="modern-development-support"></a>新式开发支持
@@ -100,11 +101,16 @@ Visual Studio 2019 预览版中会默认安装此服务。
 
 要立即开始使用，可从 Visual Studio Marketplace 下载 [Visual Studio 的拉取请求](https://aka.ms/pr4vs)扩展。
 
-### <a name="develop-with-net-core-3-preview-1"></a>使用 .NET Core 3 预览版 1 进行开发
+### <a name="develop-with-net-core-3-preview"></a>使用 .NET Core 3 预览版进行开发
 
-Visual Studio 2019 的预览版支持构建适用于任何平台的 [.NET Core 3](http://aka.ms/netcore3preview1) 应用程序。 我们将继续支持和改进跨平台的 C++ 开发，以及 iOS 的 .NET 移动开发和 Android 的 Xamarin 开发。
+Visual Studio 2019 的预览版支持构建适用于任何平台的 [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0) 应用程序。 我们将继续支持和改进跨平台的 C++ 开发，以及 iOS 的 .NET 移动开发和 Android 的 Xamarin 开发。
 
-   ![使用 Visual Studio 2019 中的 .NET Core 3 预览版 1 开发应用](media/dot-net-core-three-dev.png)
+   ![使用 Visual Studio 2019 中的 .NET Core 3 预览版开发应用](media/dot-net-core-three-dev.png)
+
+有关详细信息，请参阅以下页面：
+
+* [.NET Core 3 预览版 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) 和 [.NET Core 3 预览版 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md)发行说明
+* [宣布发布 .NET Core 3 预览版 1](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) 和[宣布发布 .NET Core 3 预览版 2](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/) 博客文章
 
 ## <a name="continuous-innovation"></a>持续创新
 
@@ -116,6 +122,8 @@ Visual Studio 2019 的预览版支持构建适用于任何平台的 [.NET Core 3
 
    ![Visual Studio 2019 中的按监视器感知 (PMA) 呈现](media/per-monitor-aware-dpi-scaling.png)
 
+有关详细信息，请参阅[通过 Visual Studio 2019 创建更出色的多监视器体验](https://blogs.msdn.microsoft.com/visualstudio/2019/02/07/a-better-multi-monitor-experience-with-visual-studio-2019/)博客文章。
+
 ### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
 
 [Visual Studio IntelliCode](/visualstudio/intellicode/) 是一种扩展，可通过使用人工智能 (AI) 来增强软件开发工作。 IntelliCode 将在 GitHub 上训练 2,000 个开源项目（每个项目包含 100 个星级）以生成这些建议。
@@ -126,6 +134,8 @@ Visual Studio 2019 的预览版支持构建适用于任何平台的 [.NET Core 3
 * 指导开发人员遵守团队的模式和样式
 * 发现难以察觉的代码问题
 * 将关注点集中到重要领域，从而专注代码评审
+
+ ![IntelliSense 建议示例](media/intellicode-intellisense-suggestion.png)
 
 我们在适用于 Visual Studio 的 IntelliCode 扩展预览版中最初仅支持 C#。 现在，我们添加了对 Visual Studio 中 C++ 和 XAML 的支持。
 

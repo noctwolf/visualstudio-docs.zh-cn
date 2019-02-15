@@ -1,7 +1,6 @@
 ---
-title: 了解如何使用实时单元测试 2017 测试代码 | Microsoft Docs
+title: 了解如何使用实时单元测试测试代码
 ms.date: 08/31/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd4986d88654e584b3c05be2fd2b720b76be423a
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4676727f70b8065aee34578f563f286bc85bcb25
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834248"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950300"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio 中的 Live Unit Testing 入门
 
@@ -24,8 +23,11 @@ ms.locfileid: "54834248"
 Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决方案。 本教程将通过创建面向 .NET Standard 的简单类库来说明 Live Unit Testing 的用法，并创建面向 .NET Core 的 MSTest 项目来对其进行测试。
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 可从 GitHub 上的 [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) 存储库下载完整的 C# 解决方案。
+
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 可从 GitHub 上的 [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/UtilityLibraries/) 存储库下载完整的 Visual Basic 解决方案。
 
 ---
@@ -51,6 +53,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 现在已创建解决方案，接下来需要创建一个名为 `StringLibrary` 的类库，其中包含大量用于处理字符串的扩展方法。
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. 在“解决方案资源管理器”中，右键单击 `UtilityLibraries` 解决方案，然后选择“添加” > “新建项目”。
 
 1. 在“添加新项目”对话框中，选择 C# 节点，然后选择“.NET Standard”。
@@ -76,9 +79,10 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 
       - 如果字符串包含嵌入的空格字符，则 `HasEmbeddedSpaces` 返回 `true`；否则返回 `false`。
 
-1.  从顶级 Visual Studio 菜单中依次选择“生成” > “生成解决方案”。 Visual Studio 应会成功生成库。
+1. 从顶级 Visual Studio 菜单中依次选择“生成” > “生成解决方案”。 Visual Studio 应会成功生成库。
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. 在“解决方案资源管理器”中，右键单击 `UtilityLibraries` 解决方案，然后选择“添加” > “新建项目”。
 
 1. 在“添加新项目”对话框中，选择 Visual Basic 节点，然后选择“.NET Standard”。
@@ -108,7 +112,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 
    ![Visual Basic 项目的“项目属性”对话框](./media/lut-start/vb-properties.png)
 
-1.  从顶级 Visual Studio 菜单中依次选择“生成” > “生成解决方案”。 Visual Studio 应会成功生成库。
+1. 从顶级 Visual Studio 菜单中依次选择“生成” > “生成解决方案”。 Visual Studio 应会成功生成库。
 
 ---
 
@@ -117,6 +121,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 下一步是创建单元测试项目，以测试 `StringLibrary` 库。 通过执行以下步骤创建单元测试：
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. 在“解决方案资源管理器”中，右键单击 `UtilityLibraries` 解决方案，然后选择“添加” > “新建项目”。
 
 1. 在“添加新项目”对话框中，选择 C# 节点，然后选择“.NET Core”。
@@ -208,9 +213,11 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 完成运行测试后，“测试资源管理器”显示整体结果和各个测试的结果。 此外，代码窗口以图形方式显示测试代码覆盖率和测试结果。 如下图所示，三项测试均已成功执行。 它还显示测试中已覆盖 `StartsWithUpper` 方法中的所有代码路径，并已成功执行这些测试（用绿色复选标记“✓”指示）。 最后，显示 `StringLibrary` 中的其他方法都没有代码覆盖率（用蓝线“➖”指示）。
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 ![启动 Live Unit testing 后的测试资源管理器和代码窗口](media/lut-start/lut-results-cs.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 ![启动 Live Unit testing 后的测试资源管理器和代码窗口](media/lut-start/lut-results-vb.png)
 
 ---
@@ -218,6 +225,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 还可通过在代码窗口中选择一个特定的代码覆盖率图标来获得有关测试覆盖率和测试结果的更多详细信息。 若要查看此详细信息，请执行以下操作：
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. 单击 `StartsWithUpper` 方法中写着 `if (String.IsNullOrWhiteSpace(s))` 的行上的绿色复选标记。 如下图所示，Live Unit Testing 指示三个测试均覆盖该行的代码，并且都已成功执行。
 
    ![`if` 条件语句的代码覆盖率](media/lut-start/code-coverage-cs1.png)
@@ -227,6 +235,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
    ![return 语句的代码覆盖率](media/lut-start/code-coverage-cs2.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. 单击 `StartsWithUpper` 方法中写着 `If (String.IsNullOrWhiteSpace(s)) Then` 的行上的绿色复选标记。 如下图所示，Live Unit Testing 指示三个测试均覆盖该行的代码，并且都已成功执行。
 
    ![`if` 条件语句的代码覆盖率](media/lut-start/code-coverage-vb1.png)
@@ -246,6 +255,7 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
 若要将代码覆盖率扩展到 `StartsWithLower` 方法，请执行以下操作：
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. 将以下 `TestStartsWithLower` 和 `TestDoesNotStartWithLower` 添加到项目的测试源代码文件中：
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
@@ -263,6 +273,7 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
     ![StartsWithLower 方法的代码覆盖率](media/lut-start/lut-extended-cs.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. 将以下 `TestStartsWithLower` 和 `TestDoesNotStartWithLower` 添加到项目的测试源代码文件中：
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
@@ -290,6 +301,7 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
 此部分将介绍如何使用 Live Unit Testing 标识、故障排除并解决测试失败的问题。 需要将测试覆盖率扩展到 `HasEmbeddedSpaces` 方法来执行此操作。
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. 将以下方法添加到测试文件：
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
@@ -323,6 +335,7 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
 1. 请依次选择“调试” > “继续”，按 F5 或单击单击工具栏上的“继续”按钮，继续执行该测试程序。 由于出现未经处理的异常，测试终止。
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. 将以下方法添加到测试文件：
 
     [!code-vb[The TestHasEmbeddedSpaces test method](samples/snippets/visual-basic/lut-start/unittest2.vb#3)]
@@ -360,6 +373,7 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
 本文提供对 bug 进行初步调查的足够信息。 `TestHasEmbeddedSpaces`（测试例程）进行了错误的假设，或者 `HasEmbeddedSpaces` 无法正确识别所有嵌入的空格。 若要诊断并更正问题，请从 `StringLibrary.HasEmbeddedSpaces` 方法开始：
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. 查看 `HasEmbeddedSpaces` 方法中的比较。 它认为嵌入的空格是U + 0020。 但是，Unicode 标准包含许多其他空格字符。 这表明库代码对空格字符进行了错误的测试。
 
 1. 将相等比较替换为对 <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> 方法的调用：
@@ -371,6 +385,7 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
     ![成功的 HasEmbeddedSpaces 测试。](media/lut-start/test-success-cs.png)
 
 # <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. 查看 `HasEmbeddedSpaces` 方法中的比较。 它认为嵌入的空格是U + 0020。 但是，Unicode 标准包含许多其他空格字符。 这表明库代码对空格字符进行了错误的测试。
 
 1. 将相等比较替换为对 <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> 方法的调用：
@@ -384,5 +399,6 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
 ---
 
 ## <a name="see-also"></a>请参阅
+
 - [Visual Studio 中的 Live Unit Testing](live-unit-testing.md)
 - [Live Unit Testing 常见问题解答](live-unit-testing-faq.md)

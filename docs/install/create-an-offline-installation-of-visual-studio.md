@@ -1,9 +1,8 @@
 ---
 title: 创建脱机安装
 description: 了解如何在 Internet 连接不可靠或带宽较低时脱机安装 Visual Studio。
-ms.date: 01/15/2019
+ms.date: 02/06/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - offline installation [Visual Studio]
@@ -15,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf0f68f090219aea8f3ddde31e697463f8e9ee3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 71c618efc383227167b3d4ccb034e32758229294
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035518"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954018"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 脱机安装缓存
 
-Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中良好运行。 虽然我们建议你试用 [Visual Studio Web 安装程序](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)&mdash;这是一个小巧文件，可及时提供最新修补程序和功能&mdash;但我们知道对你而言这也许并不可行。
+Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中良好运行。 虽然我们建议你试用 [Visual Studio Web 安装程序](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)&mdash;这是一个小巧文件，可及时提供最新修补程序和功能&mdash;但我们知道对你而言这也许并不可行。
 
 例如，你的 Internet 连接不可靠或带宽较低。 如果是这样，可选择：在安装之前使用新的“全部下载后再安装”功能下载文件，或使用命令行创建文件的本地缓存。
 
@@ -33,10 +32,14 @@ Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中�
 
 ## <a name="use-the-download-all-then-install-feature"></a>使用“全部下载，然后安装”功能
 
-[**15.8 中的新增功能**](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
-)：下载 Web 安装程序后，从 Visual Studio 安装程序中选择新的“全部下载后再安装”选项****。 然后，继续安装。
+[**15.8 中的新增功能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：下载 Web 安装程序后，从 Visual Studio 安装程序中选择新的“全部下载后再安装”选项。 然后，继续安装。
 
    ![“全部下载后再安装”选项](media/download-all-then-install.png)
+
+我们设计了“全部下载后再安装”功能，以便为进行下载的同一台计算机下载 Visual Studio 作为一个单独安装。 这样就可以在安装 Visual Studio 之前安全断开 Web。
+
+> [!IMPORTANT]
+> 请勿使用“全部下载后再安装”功能来创建要传输到另一台计算机的脱机缓存。 这不是该功能的运作方式。 <br><br>如果要创建脱机缓存以在另一台计算机上安装 Visual Studio，请参阅本页的[使用命令行创建本地缓存](#use-the-command-line-to-create-a-local-cache)部分，了解有关如何创建本地缓存的信息，或参阅[创建 Visual Studio 2017 的网络安装](../install/create-a-network-installation-of-visual-studio.md)页，了解有关如何创建网络缓存的信息。
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>使用命令行创建本地缓存
 
