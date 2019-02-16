@@ -1,4 +1,4 @@
-# [Visual Studio for Mac](index.md)
+# [Visual Studio for Mac](index.yml)
 # [IDE 教程](/visualstudio/mac/ide-tour/)
 
 # [安装](/visualstudio/mac/installation/)
@@ -70,7 +70,7 @@
 ### [使用 Unity 工具](using-vsmac-tools-unity.md)
 ### [在 Unity 中使用 .NET 4.x](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [更改日志](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
-## [使用 Xamarin 的移动应用](/xamarin/)
+## [使用 Xamarin 的移动应用](/visualstudio/mac/xamarin)
 
 # [辅助功能](accessibility.md)
 
