@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98cde01932d2e0d73fdae1dad0ef4e5b3e659f34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce0822f5731e7c09a6f6dff9116e70b97a529206
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970369"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316751"
 ---
 # <a name="validate-your-system-during-development"></a>在开发过程中验证系统
 Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构保持一致。
@@ -35,7 +35,7 @@ Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构
 |-|-|
 |**视频**|![链接到视频](../data-tools/media/playvideo.gif)[第 9 频道：Doug Seven:代码理解和使用 Visual Studio 2010 进行系统设计](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![链接到视频](../data-tools/media/playvideo.gif)[第 9 频道：构建应用程序使用的依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![链接到视频](../data-tools/media/playvideo.gif) [MSDN 如何实现系列：如何使用依赖项关系图验证代码](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**论坛**|-   [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 可视化和建模 SDK（DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**博客**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
+|**博客**|-   [Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**技术文章和日志**|[MSDN 体系结构中心](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>请参阅

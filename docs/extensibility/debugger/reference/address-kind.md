@@ -12,87 +12,87 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 635602117eac80aacd8c78ef6a30de905877a550
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce0328e3ddae1f58717fd831f64c0131c3e6beba
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983139"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317193"
 ---
 # <a name="addresskind"></a>ADDRESS_KIND
-指定地址的类型。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-enum enum_ADDRESS_KIND {  
-   ADDRESS_KIND_NATIVE                  = 0x0001,  
-   ADDRESS_KIND_UNMANAGED_THIS_RELATIVE = 0x0002,  
-   ADDRESS_KIND_UNMANAGED_PHYSICAL      = 0x0005,  
-   ADDRESS_KIND_METADATA_METHOD         = 0x0010,  
-   ADDRESS_KIND_METADATA_FIELD          = 0x0011,  
-   ADDRESS_KIND_METADATA_LOCAL          = 0x0012,  
-   ADDRESS_KIND_METADATA_PARAM          = 0x0013,  
-   ADDRESS_KIND_METADATA_ARRAYELEM      = 0x0014,  
-   ADDRESS_KIND_METADATA_RETVAL         = 0x0015,  
-};  
-typedef DWORD ADDRESS_KIND;  
-```  
-  
-```csharp  
-public enum enum_ADDRESS_KIND {  
-   ADDRESS_KIND_NATIVE                  = 0x0001,  
-   ADDRESS_KIND_UNMANAGED_THIS_RELATIVE = 0x0002,  
-   ADDRESS_KIND_UNMANAGED_PHYSICAL      = 0x0005,  
-   ADDRESS_KIND_METADATA_METHOD         = 0x0010,  
-   ADDRESS_KIND_METADATA_FIELD          = 0x0011,  
-   ADDRESS_KIND_METADATA_LOCAL          = 0x0012,  
-   ADDRESS_KIND_METADATA_PARAM          = 0x0013,  
-   ADDRESS_KIND_METADATA_ARRAYELEM      = 0x0014,  
-   ADDRESS_KIND_METADATA_RETVAL         = 0x0015,  
-};  
-```  
-  
-## <a name="terms"></a>术语  
- ADDRESS_KIND_NATIVE  
- 表示本机地址[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)结构。  
-  
- ADDRESS_KIND_UNMANAGED_THIS_RELATIVE  
- 相对于非托管的地址`this`(`Me`在 Visual Basic 中) 指针并且由表示[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)结构。  
-  
- ADDRESS_KIND_UNMANAGED_PHYSICAL  
- 非托管的物理地址，由此[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)结构。  
-  
- ADDRESS_KIND_METHOD  
- 表示的类的方法[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)结构。  
-  
- ADDRESS_KIND_FIELD  
- 表示的类的字段[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)结构。  
-  
- ADDRESS_KIND_LOCAL  
- 地址是本地变量和为由[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)结构。  
-  
- ADDRESS_KIND_PARAM  
- 一个方法或函数的参数，表示[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)结构。  
-  
- ADDRESS_KIND_ARRAYELEM  
- 数组元素，表示[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)结构。  
-  
- ADDRESS_KIND_RETVAL  
- 返回值，表示[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)结构。  
-  
-## <a name="remarks"></a>备注  
- [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)方法将返回[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)结构，其中包含的可能结构、 联合[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)结构。 `dwKind`字段`DEBUG_ADDRESS_UNION`结构保存`ADDRESS_KIND`值并介绍了如何解释联合字段。  
-  
-## <a name="requirements"></a>要求  
- 标头： sh.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>请参阅  
- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)   
- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)   
- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+指定地址的类型。
+
+## <a name="syntax"></a>语法
+
+```cpp
+enum enum_ADDRESS_KIND {
+    ADDRESS_KIND_NATIVE                  = 0x0001,
+    ADDRESS_KIND_UNMANAGED_THIS_RELATIVE = 0x0002,
+    ADDRESS_KIND_UNMANAGED_PHYSICAL      = 0x0005,
+    ADDRESS_KIND_METADATA_METHOD         = 0x0010,
+    ADDRESS_KIND_METADATA_FIELD          = 0x0011,
+    ADDRESS_KIND_METADATA_LOCAL          = 0x0012,
+    ADDRESS_KIND_METADATA_PARAM          = 0x0013,
+    ADDRESS_KIND_METADATA_ARRAYELEM      = 0x0014,
+    ADDRESS_KIND_METADATA_RETVAL         = 0x0015,
+};
+typedef DWORD ADDRESS_KIND;
+```
+
+```csharp
+public enum enum_ADDRESS_KIND {
+    ADDRESS_KIND_NATIVE                  = 0x0001,
+    ADDRESS_KIND_UNMANAGED_THIS_RELATIVE = 0x0002,
+    ADDRESS_KIND_UNMANAGED_PHYSICAL      = 0x0005,
+    ADDRESS_KIND_METADATA_METHOD         = 0x0010,
+    ADDRESS_KIND_METADATA_FIELD          = 0x0011,
+    ADDRESS_KIND_METADATA_LOCAL          = 0x0012,
+    ADDRESS_KIND_METADATA_PARAM          = 0x0013,
+    ADDRESS_KIND_METADATA_ARRAYELEM      = 0x0014,
+    ADDRESS_KIND_METADATA_RETVAL         = 0x0015,
+};
+```
+
+## <a name="terms"></a>术语
+ADDRESS_KIND_NATIVE  
+表示本机地址[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)结构。
+
+ADDRESS_KIND_UNMANAGED_THIS_RELATIVE  
+相对于非托管的地址`this`(`Me`在 Visual Basic 中) 指针并且由表示[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)结构。
+
+ADDRESS_KIND_UNMANAGED_PHYSICAL  
+非托管的物理地址，由此[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)结构。
+
+ADDRESS_KIND_METHOD  
+表示的类的方法[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)结构。
+
+ADDRESS_KIND_FIELD  
+表示的类的字段[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)结构。
+
+ADDRESS_KIND_LOCAL  
+地址是本地变量和为由[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)结构。
+
+ADDRESS_KIND_PARAM  
+一个方法或函数的参数，表示[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)结构。
+
+ADDRESS_KIND_ARRAYELEM  
+数组元素，表示[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)结构。
+
+ADDRESS_KIND_RETVAL  
+返回值，表示[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)结构。
+
+## <a name="remarks"></a>备注
+[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)方法将返回[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)结构，其中包含的可能结构、 联合[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)结构。 `dwKind`字段`DEBUG_ADDRESS_UNION`结构保存`ADDRESS_KIND`值并介绍了如何解释联合字段。
+
+## <a name="requirements"></a>要求
+标头： sh.h
+
+命名空间:Microsoft.VisualStudio.Debugger.Interop
+
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>请参阅
+[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)  
+[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)  
+[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
