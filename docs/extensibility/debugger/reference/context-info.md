@@ -12,78 +12,78 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43f3ead0a927786a183c547e6d87d1cb71adda12
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9a162858431f319e4d56667c2c85b7b53d1d86ab
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966603"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316023"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
-此结构描述内存上下文或代码上下文。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-typedef struct _tagCONTEXT_INFO {   
-   CONTEXT_INFO_FIELDS dwFields;  
-   BSTR                bstrModuleUrl;  
-   BSTR                bstrFunction;  
-   TEXT_POSITION       posFunctionOffset;  
-   BSTR                bstrAddress;  
-   BSTR                bstrAddressOffset;  
-   BSTR                bstrAddressAbsolute;  
-} CONTEXT_INFO;  
-```  
-  
-```csharp  
-public struct CONTEXT_INFO {  
-   public uint          dwFields;  
-   public string        bstrModuleUrl;  
-   public string        bstrFunction;  
-   public TEXT_POSITION posFunctionOffset;  
-   public string        bstrAddress;  
-   public string        bstrAddressOffset;  
-   public string        bstrAddressAbsolute;  
-};  
-```  
-  
-## <a name="members"></a>成员  
- dwFields  
- 从他的标志的组合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)枚举，用于指定哪些字段填完<strong>。</strong>  
-  
- bstrModuleUrl  
- 上下文的位置的模块的名称。  
-  
- bstrFunction  
- 函数名称上下文所在的位置。  
-  
- posFunctionOffset  
- 一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)结构，它标识与代码上下文关联的函数的行和列偏移量。  
-  
- bstrAddress  
- 给定的上下文的位置的代码中的地址。  
-  
- bstrAddressOffset  
- 在代码中给定的上下文的位置的地址的偏移量。  
-  
- bstrAddressAbsolute  
- 给定的上下文的位置的内存中的绝对地址。  
-  
-## <a name="remarks"></a>备注  
- 此结构从调用返回[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)方法。  
-  
- 此结构的典型用法是支持**内存**调试窗口。  
-  
-## <a name="requirements"></a>要求  
- 标头： msdbg.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>请参阅  
- [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)   
- [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)   
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+此结构描述内存上下文或代码上下文。
+
+## <a name="syntax"></a>语法
+
+```cpp
+typedef struct _tagCONTEXT_INFO {
+    CONTEXT_INFO_FIELDS dwFields;
+    BSTR                bstrModuleUrl;
+    BSTR                bstrFunction;
+    TEXT_POSITION       posFunctionOffset;
+    BSTR                bstrAddress;
+    BSTR                bstrAddressOffset;
+    BSTR                bstrAddressAbsolute;
+} CONTEXT_INFO;
+```
+
+```csharp
+public struct CONTEXT_INFO {
+    public uint          dwFields;
+    public string        bstrModuleUrl;
+    public string        bstrFunction;
+    public TEXT_POSITION posFunctionOffset;
+    public string        bstrAddress;
+    public string        bstrAddressOffset;
+    public string        bstrAddressAbsolute;
+};
+```
+
+## <a name="members"></a>成员
+dwFields  
+从他的标志的组合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)枚举，用于指定哪些字段填完<strong>。</strong>
+
+bstrModuleUrl  
+上下文的位置的模块的名称。
+
+bstrFunction  
+函数名称上下文所在的位置。
+
+posFunctionOffset  
+一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)结构，它标识与代码上下文关联的函数的行和列偏移量。
+
+bstrAddress  
+给定的上下文的位置的代码中的地址。
+
+bstrAddressOffset  
+在代码中给定的上下文的位置的地址的偏移量。
+
+bstrAddressAbsolute  
+给定的上下文的位置的内存中的绝对地址。
+
+## <a name="remarks"></a>备注
+此结构从调用返回[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)方法。
+
+此结构的典型用法是支持**内存**调试窗口。
+
+## <a name="requirements"></a>要求
+标头： msdbg.h
+
+命名空间:Microsoft.VisualStudio.Debugger.Interop
+
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>请参阅
+[结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)  
+[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)  
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

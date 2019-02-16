@@ -8,16 +8,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a862d3da21d082c65e742bdd69851121f5b463e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012265"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318740"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 扩展中的更改
 
-使用 Visual Studio 2017，我们提供[更快、 轻量的 Visual Studio 安装体验](https://blogs.msdn.microsoft.com/visualstudio/2016/04/01/faster-leaner-visual-studio-installer)可在用户系统上的 Visual Studio 的影响减小时向用户提供更好的选择对工作负荷和功能安装。 若要支持这些改进，我们对扩展性模型，进行了更改，并对 Visual Studio 扩展性做出一些重大更改。 此文档将描述这些更改，并且可以做什么解决它们的技术详细信息。 请注意，某些信息是在时间点实现的详细信息，可能会更高版本发生更改。
+使用 Visual Studio 2017，我们提供[更快、 轻量的 Visual Studio 安装体验](https://devblogs.microsoft.com/visualstudio/faster-leaner-visual-studio-installer)可在用户系统上的 Visual Studio 的影响减小时向用户提供更好的选择对工作负荷和功能安装。 若要支持这些改进，我们对扩展性模型，进行了更改，并对 Visual Studio 扩展性做出一些重大更改。 此文档将描述这些更改，并且可以做什么解决它们的技术详细信息。 请注意，某些信息是在时间点实现的详细信息，可能会更高版本发生更改。
 
 ## <a name="changes-affecting-vsix-format-and-installation"></a>更改影响的 VSIX 格式和安装
 
@@ -28,7 +28,7 @@ ms.locfileid: "55012265"
 * 安装程序先决条件的声明。 提供了一种轻型，快速安装 Visual Studio 中，安装程序将立即向用户提供更多配置选项。 因此，若要确保安装的功能和组件所需的扩展，扩展将需要声明及其依赖项。
   * Visual Studio 2017 安装程序将自动提供的用于获取和安装用户所必需的组件的过程中安装您的扩展插件。
   * 尝试安装未生成使用新的 VSIX v3 格式，即使它们已标记为面向版本 15.0 其清单中的扩展时，还会警告用户。
-* VSIX 格式的增强的功能。 在传递[影响较小的安装](https://blogs.msdn.microsoft.com/visualstudio/2016/04/25/anatomy-of-a-low-impact-visual-studio-install)还支持通过并行安装的 Visual studio，我们不再将最多的配置数据保存到系统注册表并已从 gac 中的 Visual Studio-特定于程序集。 我们还增加了 VSIX 格式和 VSIX 安装引擎的功能，您可以使用它而不是 MSI 或 EXE 安装你对某些类型的安装的扩展。
+* VSIX 格式的增强的功能。 在传递[影响较小的安装](https://devblogs.microsoft.com/visualstudio/anatomy-of-a-low-impact-visual-studio-install)还支持通过并行安装的 Visual studio，我们不再将最多的配置数据保存到系统注册表并已从 gac 中的 Visual Studio-特定于程序集。 我们还增加了 VSIX 格式和 VSIX 安装引擎的功能，您可以使用它而不是 MSI 或 EXE 安装你对某些类型的安装的扩展。
 
   新功能包括：
 

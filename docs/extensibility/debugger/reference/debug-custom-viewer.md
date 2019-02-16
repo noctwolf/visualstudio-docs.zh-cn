@@ -12,70 +12,70 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e72aecc477901ee7e8a4658c881fb14681362e3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fe17c8747d5c678c14561a918ddd9d62bd658841
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000069"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315828"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
-标识自定义查看器的结构或类型可视化工具。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-typedef struct tagDEBUG_CUSTOM_VIEWER {  
-   DWORD dwID;  
-   BSTR  bstrMenuName;  
-   BSTR  bstrDescription;  
-   GUID  guidLang;  
-   GUID  guidVendor;  
-   BSTR  bstrMetric;  
-} DEBUG_CUSTOM_VIEWER;  
-```  
-  
-```csharp  
-public struct DEBUG_CUSTOM_VIEWER {  
-   public uint   dwID;  
-   public string bstrMenuName;  
-   public string bstrDescription;  
-   public Guid   guidLang;  
-   public Guid   guidVendor;  
-   public string bstrMetric;  
-};  
-```  
-  
-## <a name="members"></a>成员  
- dwID  
- 一个 ID 来区分多个查看器或实现一个可视化工具`GUID`。  
-  
- bstrMenuName  
- 将出现在下拉列表菜单文本。  
-  
- bstrDescription  
- 如果未使用 （必须为 null 值） 的类型可视化工具的自定义查看器的说明。  
-  
- guidLang  
- 提供的表达式计算器的语言。  
-  
- guidVendor  
- 提供的表达式计算器的供应商。  
-  
- bstrMetric  
- 指标在其下的自定义查看器或类型可视化工具`CLSID`存储。  
-  
-## <a name="remarks"></a>备注  
- 此结构的列表返回通过调用[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)方法 (以及由此而[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法)。  
-  
-## <a name="requirements"></a>要求  
- 标头： msdbg.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>请参阅  
- [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
- [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)
+标识自定义查看器的结构或类型可视化工具。
+
+## <a name="syntax"></a>语法
+
+```cpp
+typedef struct tagDEBUG_CUSTOM_VIEWER {
+    DWORD dwID;
+    BSTR  bstrMenuName;
+    BSTR  bstrDescription;
+    GUID  guidLang;
+    GUID  guidVendor;
+    BSTR  bstrMetric;
+} DEBUG_CUSTOM_VIEWER;
+```
+
+```csharp
+public struct DEBUG_CUSTOM_VIEWER {
+    public uint   dwID;
+    public string bstrMenuName;
+    public string bstrDescription;
+    public Guid   guidLang;
+    public Guid   guidVendor;
+    public string bstrMetric;
+};
+```
+
+## <a name="members"></a>成员
+dwID  
+一个 ID 来区分多个查看器或实现一个可视化工具`GUID`。
+
+bstrMenuName  
+将出现在下拉列表菜单文本。
+
+bstrDescription  
+如果未使用 （必须为 null 值） 的类型可视化工具的自定义查看器的说明。
+
+guidLang  
+提供的表达式计算器的语言。
+
+guidVendor  
+提供的表达式计算器的供应商。
+
+bstrMetric  
+指标在其下的自定义查看器或类型可视化工具`CLSID`存储。
+
+## <a name="remarks"></a>备注
+此结构的列表返回通过调用[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)方法 (以及由此而[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法)。
+
+## <a name="requirements"></a>要求
+标头： msdbg.h
+
+命名空间:Microsoft.VisualStudio.Debugger.Interop
+
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>请参阅
+[结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)  
+[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)  
+[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

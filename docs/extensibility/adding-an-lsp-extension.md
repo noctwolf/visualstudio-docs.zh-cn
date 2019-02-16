@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f54bd3bfd2fc6ce0b16ee8fbf849974d53884d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965687"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318792"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>添加语言服务器协议扩展
 
@@ -89,9 +89,9 @@ textDocument/rename | 是
 ## <a name="getting-started"></a>入门
 
 > [!NOTE]
-> 开始使用 Visual Studio 15.8 预览版 3，对通用语言服务器协议的支持已内置到 Visual Studio。  如果已生成了我们的预览的 LSP 扩展[语言服务器客户端 VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)版本，它们将停止工作后向已升级到 15.8 预览版 3 或更高版本。  你将需要执行以下操作以获取你恢复正常工作的 LSP 扩展：
+> 开始使用 Visual Studio 15.8 预览版 3，对通用语言服务器协议的支持已内置到 Visual Studio。 如果已生成了我们的预览的 LSP 扩展[语言服务器客户端 VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)版本，它们将停止工作后向已升级到 15.8 预览版 3 或更高版本。 你将需要执行以下操作以获取你恢复正常工作的 LSP 扩展：
 >
-> 1. 卸载 Microsoft Visual Studio 语言服务器协议预览版 VSIX。  从 15.8 预览版 4 开始，你执行升级在 Visual Studio 中，每次我们将自动检测并删除其预览 VSIX 为您在升级过程。
+> 1. 卸载 Microsoft Visual Studio 语言服务器协议预览版 VSIX。 从 15.8 预览版 4 开始，你执行升级在 Visual Studio 中，每次我们将自动检测并删除其预览 VSIX 为您在升级过程。
 >
 > 2. 更新到最新的非预览版本，Nuget 引用[LSP 包](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)。
 >
@@ -129,10 +129,10 @@ LSP 不包括如何提供对语言的文本着色的规范。 若要提供自定
 
 4. 创建 *.pkgdef*文件，并添加与此类似的行：
 
-   ```xml
-   [$RootKey$\TextMate\Repositories]
-   "MyLang"="$PackageFolder$\Grammars"
-   ```
+    ```xml
+    [$RootKey$\TextMate\Repositories]
+    "MyLang"="$PackageFolder$\Grammars"
+    ```
 
 5. 右键单击文件并选择**属性**。 更改**构建**操作**内容**并**包含在 VSIX**属性设为 true。
 
@@ -292,31 +292,31 @@ namespace MockLanguageExtension
 
 1. 添加 JSON 文件 (例如， *MockLanguageExtensionSettings.json*) 中的项目中包含的设置和它们的默认值。 例如：
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": -1
-   }
-   ```
+    ```json
+    {
+        "foo.maxNumberOfProblems": -1
+    }
+    ```
 2. 右键单击 JSON 文件并选择**属性**。 更改**生成**操作保存到"内容"和"包含在 VSIX 中的属性设为 true。
 
 3. 实现 ConfigurationSections 并返回 JSON 文件中定义的设置的前缀的列表 （在 Visual Studio Code 中，这将映射到在 package.json 中的配置节名称）：
 
-   ```csharp
-   public IEnumerable<string> ConfigurationSections
-   {
-      get
-      {
-          yield return "foo";
-      }
-   }
-   ```
+    ```csharp
+    public IEnumerable<string> ConfigurationSections
+    {
+        get
+        {
+            yield return "foo";
+        }
+    }
+    ```
 
 4. 将.pkgdef 文件添加到项目 （添加新的文本文件并将文件扩展名更改为.pkgdef）。 Pkgdef 文件应包含此信息：
 
-   ```xml
+    ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-   ```
+    ```
 
     示例:
     ```xml
@@ -340,13 +340,13 @@ namespace MockLanguageExtension
 2. 用户将添加的文件中 *.vs*名为的文件夹*VSWorkspaceSettings.json*。
 3. 用户添加到一个行*VSWorkspaceSettings.json*文件服务器提供的设置。 例如：
 
-   ```json
-   {
-    "foo.maxNumberOfProblems": 10
-   }
-   ```
-   ### <a name="enabling-diagnostics-tracing"></a>启用诊断跟踪
-   可以启用诊断跟踪输出之间的客户端和服务器，在调试问题时非常有用的所有消息。  若要启用诊断跟踪，请执行以下操作：
+    ```json
+    {
+        "foo.maxNumberOfProblems": 10
+    }
+    ```
+    ### <a name="enabling-diagnostics-tracing"></a>启用诊断跟踪
+    可以启用诊断跟踪输出之间的客户端和服务器，在调试问题时非常有用的所有消息。 若要启用诊断跟踪，请执行以下操作：
 
 4. 打开或创建工作区设置文件*VSWorkspaceSettings.json* （请参阅"用户编辑的工作区设置"）。
 5. 在设置 json 文件中添加以下行：
@@ -362,7 +362,7 @@ namespace MockLanguageExtension
 * "消息": 跟踪打开的跟踪，但唯一的方法名称和响应 ID。
 * "详细": 跟踪打开状态;跟踪整个 rpc 消息。
 
-当跟踪打开的内容写入到的文件中 *%temp%\VisualStudio\LSP*目录。  在日志遵循的命名格式 *[LanguageClientName]-[日期时间戳].log*。  目前，仅可以为打开文件夹方案启用跟踪。  打开单个文件以激活语言服务器没有诊断跟踪支持。
+当跟踪打开的内容写入到的文件中 *%temp%\VisualStudio\LSP*目录。 在日志遵循的命名格式 *[LanguageClientName]-[日期时间戳].log*。 目前，仅可以为打开文件夹方案启用跟踪。 打开单个文件以激活语言服务器没有诊断跟踪支持。
 
 ### <a name="custom-messages"></a>自定义消息
 
@@ -425,7 +425,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
     }
 
     public async Task SendServerCustomNotification(object arg)
-    {    
+    {
         await this.customMessageRpc.NotifyWithParameterObjectAsync("OnCustomNotification", arg);
     }
 
@@ -477,7 +477,7 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 
 **我想要构建自定义项目系统，以补充我 LSP 语言服务器，以提供更丰富的功能支持在 Visual Studio 中，要完成这么做？**
 
-依赖于对基于 LSP 的语言在 Visual Studio 中的服务器的支持[打开文件夹功能](https://blogs.msdn.microsoft.com/visualstudio/2016/04/12/open-any-folder-with-visual-studio-15-preview/)和专门设计为不需要自定义项目系统。 您可以构建按照你自己自定义项目系统[此处](https://github.com/Microsoft/VSProjectSystem)，但某些功能，例如设置，可能无法正常工作。 LSP 语言服务器的默认值初始化逻辑是文件夹的传入当前正在打开的根文件夹位置，因此，如果使用自定义项目系统，可能需要在初始化以确保语言服务器可以提供自定义逻辑正常启动。
+依赖于对基于 LSP 的语言在 Visual Studio 中的服务器的支持[打开文件夹功能](https://devblogs.microsoft.com/visualstudio/open-any-folder-with-visual-studio-15-preview/)和专门设计为不需要自定义项目系统。 您可以构建按照你自己自定义项目系统[此处](https://github.com/Microsoft/VSProjectSystem)，但某些功能，例如设置，可能无法正常工作。 LSP 语言服务器的默认值初始化逻辑是文件夹的传入当前正在打开的根文件夹位置，因此，如果使用自定义项目系统，可能需要在初始化以确保语言服务器可以提供自定义逻辑正常启动。
 
 **如何添加调试器支持？**
 
