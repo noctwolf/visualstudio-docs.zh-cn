@@ -12,73 +12,72 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1340d127d029bb1c857ae3748b529253f8bb4a85
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: afddb4f27eaae9ae9960ae07127d88d0d4588d1f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54973728"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315672"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
-获取此断点请求的断点位置类型。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetLocationType(   
-   BP_LOCATION_TYPE* pBPLocationType  
-);  
-```  
-  
-```csharp  
-int GetLocationType(   
-   out enum_BP_LOCATION_TYPE pBPLocationType  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pBPLocationType`  
- [out]返回一个值从[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)枚举，用于描述此断点请求的位置。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_FAIL`如果`bpLocation`字段中关联[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)结构无效。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于简单`CDebugBreakpointRequest`公开的对象[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)接口。  
-  
-```  
-HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)    
-{    
-   HRESULT hr;    
-  
-   if (pBPLocationType)    
-   {    
-      // Set default BP_LOCATION_TYPE.    
-      *pBPLocationType = BPLT_NONE;    
-  
-      // Check if the BPREQI_BPLOCATION flag is set in BPREQI_FIELDS.    
-      if (IsFlagSet(m_bpRequestInfo.dwFields, BPREQI_BPLOCATION))    
-      {    
-         // Get the new BP_LOCATION_TYPE.    
-         *pBPLocationType = m_bpRequestInfo.bpLocation.bpLocationType;    
-         hr = S_OK;    
-      }    
-      else    
-      {    
-         hr = E_FAIL;    
-      }    
-   }    
-   else    
-   {    
-      hr = E_INVALIDARG;    
-   }    
-  
-   return hr;    
-}    
-```  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
- [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)   
- [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+获取此断点请求的断点位置类型。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetLocationType(
+    BP_LOCATION_TYPE* pBPLocationType
+);
+```
+
+```csharp
+int GetLocationType(
+    out enum_BP_LOCATION_TYPE pBPLocationType
+);
+```
+
+#### <a name="parameters"></a>参数
+`pBPLocationType` [out]返回一个值从[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)枚举，用于描述此断点请求的位置。
+
+## <a name="return-value"></a>返回值
+如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_FAIL`如果`bpLocation`字段中关联[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)结构无效。
+
+## <a name="example"></a>示例
+下面的示例演示如何实现此方法对于简单`CDebugBreakpointRequest`公开的对象[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)接口。
+
+```
+HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)
+{
+    HRESULT hr;
+
+    if (pBPLocationType)
+    {
+        // Set default BP_LOCATION_TYPE.
+        *pBPLocationType = BPLT_NONE;
+
+        // Check if the BPREQI_BPLOCATION flag is set in BPREQI_FIELDS.
+        if (IsFlagSet(m_bpRequestInfo.dwFields, BPREQI_BPLOCATION))
+        {
+            // Get the new BP_LOCATION_TYPE.
+            *pBPLocationType = m_bpRequestInfo.bpLocation.bpLocationType;
+            hr = S_OK;
+        }
+        else
+        {
+            hr = E_FAIL;
+        }
+    }
+    else
+    {
+        hr = E_INVALIDARG;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>请参阅
+[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)  
+[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)  
+[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)  
+[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

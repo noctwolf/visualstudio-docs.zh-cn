@@ -12,55 +12,55 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d82656e50b472712d7bed39c1a1decdc84f0242
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d8ca4f551f4dd6541bad9d73b5e91c671ad80492
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025145"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318298"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
-指定断点条件的样式的挂起和绑定断点。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-enum enum_BP_COND_STYLE {   
-   BP_COND_NONE         = 0x0000,  
-   BP_COND_WHEN_TRUE    = 0x0001,  
-   BP_COND_WHEN_CHANGED = 0x0002  
-};  
-typedef DWORD BP_COND_STYLE;  
-```  
-  
-```csharp  
-public enum enum_BP_COND_STYLE {   
-   BP_COND_NONE         = 0x0000,  
-   BP_COND_WHEN_TRUE    = 0x0001,  
-   BP_COND_WHEN_CHANGED = 0x0002  
-};  
-```  
-  
-## <a name="members"></a>成员  
- BP_COND_NONE  
- 到达断点的位置时，会触发断点。 没有指定断点条件。  
-  
- BP_COND_WHEN_TRUE  
- 仅在条件表达式时与断点关联的计算结果为触发断点`true`。  
-  
- BP_COND_WHEN_CHANGED  
- 触发断点仅在与断点关联的条件表达式的值时已从其以前的评估。  
-  
-## <a name="remarks"></a>备注  
- 用于`styleCondition`的成员[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)结构。  
-  
-## <a name="requirements"></a>要求  
- 标头： msdbg.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>请参阅  
- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
+指定断点条件的样式的挂起和绑定断点。
+
+## <a name="syntax"></a>语法
+
+```cpp
+enum enum_BP_COND_STYLE {
+    BP_COND_NONE         = 0x0000,
+    BP_COND_WHEN_TRUE    = 0x0001,
+    BP_COND_WHEN_CHANGED = 0x0002
+};
+typedef DWORD BP_COND_STYLE;
+```
+
+```csharp
+public enum enum_BP_COND_STYLE {
+    BP_COND_NONE         = 0x0000,
+    BP_COND_WHEN_TRUE    = 0x0001,
+    BP_COND_WHEN_CHANGED = 0x0002
+};
+```
+
+## <a name="members"></a>成员
+BP_COND_NONE  
+到达断点的位置时，会触发断点。 没有指定断点条件。
+
+BP_COND_WHEN_TRUE  
+仅在条件表达式时与断点关联的计算结果为触发断点`true`。
+
+BP_COND_WHEN_CHANGED  
+触发断点仅在与断点关联的条件表达式的值时已从其以前的评估。
+
+## <a name="remarks"></a>备注
+用于`styleCondition`的成员[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)结构。
+
+## <a name="requirements"></a>要求
+标头： msdbg.h
+
+命名空间:Microsoft.VisualStudio.Debugger.Interop
+
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>请参阅
+[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
