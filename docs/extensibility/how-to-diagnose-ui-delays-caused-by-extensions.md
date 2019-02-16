@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: c4852e3c760f2974620f0a6c641a540b92d19bc3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01b565e6b3d39e39b84054522f3a94e6c4149de4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957437"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317115"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>如何：诊断由扩展引起的 UI 延迟
 
@@ -102,7 +102,7 @@ Perfview.exe collect C:\trace.etl /BufferSizeMB=1024 -CircularMB:2048 -Merge:tru
 然后，在左窗格中选择的跟踪文件并打开它，请选择**打开**右键菜单或上下文菜单。
 
 > [!NOTE]
-> 默认情况下 PerfView 输出 Zip 存档。 当打开*trace.zip*，它会自动解压缩存档，并打开跟踪。 您可以通过取消选中跳过此**Zip**跟踪回收期间的框。 但是，如果您计划传输，并在不同计算机之间使用跟踪，我们强烈建议不要取消选中**Zip**框。 如果不使用此选项，Ngen 程序集的所需的 Pdb 将不带跟踪并因此从 Ngen 程序集的符号将解析目标计算机上。 (请参阅[这篇博客文章](https://blogs.msdn.microsoft.com/devops/2012/12/10/creating-ngen-pdbs-for-profiling-reports/)的 Pdb Ngen 的程序集的详细信息。) 
+> 默认情况下 PerfView 输出 Zip 存档。 当打开*trace.zip*，它会自动解压缩存档，并打开跟踪。 您可以通过取消选中跳过此**Zip**跟踪回收期间的框。 但是，如果您计划传输，并在不同计算机之间使用跟踪，我们强烈建议不要取消选中**Zip**框。 如果不使用此选项，Ngen 程序集的所需的 Pdb 将不带跟踪并因此从 Ngen 程序集的符号将解析目标计算机上。 (请参阅[这篇博客文章](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/)的 Pdb Ngen 的程序集的详细信息。) 
 
 可能需要几分钟时间 PerfView 来处理和打开的跟踪。 打开跟踪后，在其下出现的各种"视图"列表。
 
