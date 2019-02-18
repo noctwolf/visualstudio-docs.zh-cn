@@ -6,15 +6,14 @@ ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f0e95466baa4e16e4620ff387a11d4e723399a38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a8df3d39e44bf1d40f3abfd4d6218d2c9a72b690
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953388"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935675"
 ---
 # <a name="data-class-inheritance-or-designer"></a>数据类继承（O/R 设计器）
 
@@ -28,7 +27,7 @@ ms.locfileid: "54953388"
 
 下表列出了这些继承属性及其说明：
 
-|Property|说明|
+|Property|说明​​|
 |--------------|-----------------|
 |**鉴别器属性**|决定当前记录所属的类的属性，该属性映射到列。|
 |**基类鉴别器值**|决定记录所属的基类的值，该值位于指定为鉴别器属性的列中。|
@@ -37,9 +36,9 @@ ms.locfileid: "54953388"
 
 创建一个使用继承并对应于关系数据的对象模型可能有些不易理解。 本主题提供了有关配置继承时所需的基本概念及各个属性的信息。 以下主题提供了更清楚的阐释如何配置与继承**O/R 设计器**。
 
-|主题|说明|
+|主题|说明​​|
 |-----------|-----------------|
-|[如何：使用 O/R 设计器配置继承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|介绍如何配置使用单表继承的使用的实体类**O/R 设计器**。|
+|[如何：通过使用 O/R 设计器配置继承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|介绍如何配置使用单表继承的使用的实体类**O/R 设计器**。|
 |[演练：使用单表继承创建 LINQ to SQL 类（O/R 设计器）](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|提供有关如何配置使用单表继承的使用的实体类的分步说明**O/R 设计器**。|
 
 ## <a name="see-also"></a>请参阅

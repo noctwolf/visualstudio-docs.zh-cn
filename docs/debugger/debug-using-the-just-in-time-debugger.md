@@ -5,18 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
-ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbdf32377db26cdb3696187248bd9b8becb8de24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a593548936b84f852015a09dd8f63f7fceb7472b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831545"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921427"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用实时调试器进行调试
 
@@ -56,7 +55,7 @@ ms.locfileid: "53831545"
 
 2.  在中**注册表编辑器**窗口中，找到并删除以下注册表项：
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\。NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -64,7 +63,7 @@ ms.locfileid: "53831545"
 
 3.  如果您的计算机正在运行 64 位操作系统，也删除以下注册表项：
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\。NETFramework\DbgManagedDebugger**
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
     -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
@@ -105,7 +104,7 @@ ms.locfileid: "53831545"
 
 本示例会在 Visual Studio 中创建 C# 控制台应用，该应用可引发 [NullReferenceException](/dotnet/api/system.nullreferenceexception)。
 
-1. 在 Visual Studio 中，创建C#控制台应用程序 (**文件** > **新建** > **项目** > **Visual C#**   > **控制台应用程序**) 名为*ThrowsNullException*。 在 Visual Studio 中创建项目的详细信息，请参阅[演练：创建简单的应用程序](/visualstudio/get-started/csharp/tutorial-wpf)
+1. 在 Visual Studio 中，创建C#控制台应用程序 (**文件** > **新建** > **项目** > **Visual C#**   > **控制台应用程序**) 名为*ThrowsNullException*。 在 Visual Studio 中创建项目的详细信息，请参阅[演练： 创建简单应用程序](/visualstudio/get-started/csharp/tutorial-wpf)。
    
 1. 在 Visual Studio 中打开项目时，请打开 *Program.cs* 文件。 将 Main() 方法替换为以下代码，该代码会在控制台中打印一行，然后引发 NullReferenceException：
    
@@ -159,7 +158,7 @@ ms.locfileid: "53831545"
 
   - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows 错误报告**
     
-  - （对于 64 位计算机）：**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows 错误报告**
+  - （适用于 64 位计算机）： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows 错误报告**
   
   有关详细信息，请参阅 [.WER 设置](https://docs.microsoft.com/windows/desktop/wer/wer-settings)。
   
@@ -170,7 +169,7 @@ ms.locfileid: "53831545"
   
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
     
-  - （对于 64 位计算机）：**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - （适用于 64 位计算机）： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 您可能会看到以下错误消息过程中实时调试：
 
@@ -193,6 +192,7 @@ ms.locfileid: "53831545"
     若要解决此问题，请使用 Visual Studio 安装程序重新安装或修复 Visual Studio 安装。
 
 ## <a name="see-also"></a>请参阅
+
 - [调试器安全](../debugger/debugger-security.md)
 - [初探调试器](../debugger/debugger-feature-tour.md)
 - [选项，调试，在实时对话框](../debugger/just-in-time-debugging-options-dialog-box.md)

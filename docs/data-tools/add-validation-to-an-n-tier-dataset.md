@@ -13,20 +13,19 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 25c80b145db83053edcbdb8f03f4eb703e201974
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: be8d02837f0abd7bfed0407ce31fe9cbeecd76a4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957502"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940316"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>向 n 层数据集添加验证
 向被分隔为 n 层解决方案的数据集添加验证基本上是将验证添加到单个文件数据集 （单个项目中的数据集） 相同。 对数据执行验证的建议的位置是期间<xref:System.Data.DataTable.ColumnChanging>和/或<xref:System.Data.DataTable.RowChanging>数据表的事件。
 
- 数据集提供了用于创建在数据集中数据表的列和行更改的事件可以向其中添加用户代码的分部类的功能。 有关将代码添加到在 n 层解决方案中的数据集的详细信息，请参阅[将代码添加到 n 层应用程序中的数据集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)，并[n 层应用程序中将代码添加到 Tableadapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)。 有关分部类的详细信息，请参阅[如何：将类拆分为分部类 （类设计器）](../ide/class-designer/how-to-split-a-class-into-partial-classes.md)或[分部类和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
+ 数据集提供了用于创建在数据集中数据表的列和行更改的事件可以向其中添加用户代码的分部类的功能。 有关将代码添加到在 n 层解决方案中的数据集的详细信息，请参阅[将代码添加到 n 层应用程序中的数据集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)，并[n 层应用程序中将代码添加到 Tableadapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)。 有关分部类的详细信息，请参阅[如何： 将类拆分为分部类 （类设计器）](../ide/class-designer/how-to-split-a-class-into-partial-classes.md)或[分部类和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
 
 > [!NOTE]
 >  当你分离数据集与 Tableadapter (通过设置**数据集项目**属性)，将不会自动移动项目中的现有数据集分部类。 向数据集项目，必须手动移动现有数据集分部类。
@@ -54,7 +53,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>若要将更改过程中的验证添加到各列的值
 
-1.  通过双击打开数据集 *.xsd*中的文件**解决方案资源管理器**。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  通过双击打开数据集 *.xsd*中的文件**解决方案资源管理器**。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  双击你想要验证的列。 此操作将创建<xref:System.Data.DataTable.ColumnChanging>事件处理程序。
 
@@ -110,7 +109,7 @@ End Sub
 
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>若要添加到整个行的过程中更改的验证
 
-1.  通过双击打开数据集 *.xsd*中的文件**解决方案资源管理器**。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1.  通过双击打开数据集 *.xsd*中的文件**解决方案资源管理器**。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
 2.  双击设计器上的数据表的标题栏。
 
