@@ -14,17 +14,16 @@ ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 74643d6511fc0eac99eff9693eac9cb9234df88f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08b55652fbadd0b27f4519b94e083409c9de3af5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966252"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951106"
 ---
-# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>演练：在 Windows 窗体中创建一个简单的 WCF 服务
+# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>演练： 在 Windows 窗体中创建一个简单的 WCF 服务
 
 本演练演示如何创建一个简单[!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]服务并进行测试，然后从 Windows 窗体应用程序访问它。
 

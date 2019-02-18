@@ -9,15 +9,14 @@ ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5d3386cd6a379a1d38c40f97f3a9c4ef93e293d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3eb9e8035dd8fa4b6a3143341e7be9959254452e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947629"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927654"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>将数据集和 TableAdapter 分离到不同的项目中
 类型化数据集已得到增强，以便[Tableadapter](create-and-configure-tableadapters.md)和可以在不同的项目生成数据集类。 这使您可以快速分离各应用程序层及生成 n 层数据应用程序。
@@ -61,7 +60,7 @@ ms.locfileid: "54947629"
 ## <a name="see-also"></a>请参阅
 
 - [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)
-- [演练：创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [分层更新](../data-tools/hierarchical-update.md)
 - [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

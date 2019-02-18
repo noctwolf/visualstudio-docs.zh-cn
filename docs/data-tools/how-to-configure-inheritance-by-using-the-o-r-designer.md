@@ -1,27 +1,26 @@
 ---
-title: 如何：使用 O-R 设计器配置继承
+title: 如何：通过 O-R 设计器配置继承
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a68101b6090a20526088309a441956a68e875e9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 6430cd3092f6edbc514c7958e07961ccd234c161
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014661"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931255"
 ---
-# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>如何：使用 O/R 设计器配置继承
+# <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>如何：通过 O/R 设计器配置继承
 **对象关系设计器**(**O/R 设计器**) 支持通常在关系系统中实现的单表继承概念。 在单表继承中，一个数据库表同时包含父信息和子信息的字段。 使用关系数据时，一个鉴别器列包含的值确定任意记录属于哪个类。
 
 例如，考虑`Persons`表，该表包含所有员工的公司。 一些人是员工，一些人是经理。 `Persons`表包含一个名为列`EmployeeType`的员工的经理和值为 2 的值为 1; 这是鉴别器列。 在此应用场景中，可以创建一个员工子类，并仅使用 `EmployeeType` 值为 2 的记录来填充该类。 还可以从每个类中移除不适用的列。
 
-创建一个使用继承（并对应于关系数据）的对象模型可能有些不易理解。 下面的过程概括说明使用 O/R 设计器配置继承所需的步骤。 按照一般步骤而不引用现有的表和列可能会非常困难，因此提供一个使用数据的演练。 有关配置继承的使用的详细分步指导**O/R 设计器**，请参阅[演练：使用单表继承创建 LINQ to SQL 类（O/R 设计器）
+创建一个使用继承（并对应于关系数据）的对象模型可能有些不易理解。 下面的过程概括说明使用 O/R 设计器配置继承所需的步骤。 按照一般步骤而不引用现有的表和列可能会非常困难，因此提供一个使用数据的演练。 有关配置继承的使用的详细分步指导**O/R 设计器**，请参阅[演练： 创建 LINQ to SQL 类通过使用单表继承 （O/R 设计器）](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)。
 
 ## <a name="to-create-inherited-data-classes"></a>创建继承的数据类
 
@@ -36,7 +35,7 @@ ms.locfileid: "55014661"
     > [!NOTE]
     >  单击“工具箱”中的“继承”项，释放鼠标按钮，单击在步骤 3 中创建的该类的第二个副本，然后单击在步骤 2 中创建的第一个类。 继承连线上的箭头指向第一个类。
 
-5.  在每个类中，删除任何不希望显示和没有用于关联的对象属性。 如果尝试删除用于关联的对象属性，收到的错误：[无法删除属性 \<属性名称>，原因它参与了关联 \<关联名称>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+5.  在每个类中，删除任何不希望显示和没有用于关联的对象属性。 如果你尝试删除用于关联的对象属性收到错误：[属性\<属性名称 > 不能删除，因为它参与了关联\<关联名称 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
     > [!NOTE]
     >  由于派生类继承其基类中定义的属性，在每个类中不能定义相同的列。 （列实现为属性。）通过设置基类属性中的继承修饰符，可以在派生类中创建列。 有关详细信息，请参阅[继承的基础知识 (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)。

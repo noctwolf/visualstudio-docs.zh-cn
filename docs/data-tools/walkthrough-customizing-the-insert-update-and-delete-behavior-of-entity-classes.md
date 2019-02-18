@@ -9,17 +9,16 @@ ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 12b09ee0e0767ad98a27387e7caf79425320598b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 27c2677b8afef1f1e2cd035acb3038b42a4ef56d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009747"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948597"
 ---
-# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>演练：自定义实体类的插入、更新和删除行为
+# <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>演练： 自定义插入、 更新和删除行为的实体类
 
 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供用于创建和编辑 LINQ to SQL 类 （实体类） 基于数据库中的对象的可视化设计图面。 通过使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，可以使用 LINQ 技术访问 SQL 数据库。 有关详细信息，请参阅 [LINQ（语言集成查询）](/dotnet/csharp/linq/)。
 
@@ -103,7 +102,7 @@ ms.locfileid: "55009747"
      将创建一个名为“Customer”的实体类。 该类具有与 Customers 表中的列相对应的属性。 由于该实体类表示 Customers 表中的单个客户，因此将该类命名为“Customer”（而不是“Customers”）。
 
     > [!NOTE]
-    > 这种重命名行为称为“复数化”。 可以通过启用或禁用[选项对话框](../ide/reference/options-dialog-box-visual-studio.md)。 有关详细信息，请参阅[如何：打开和关闭复数形式（O/R 设计器）](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。
+    > 这种重命名行为称为“复数化”。 可以通过启用或禁用[选项对话框](../ide/reference/options-dialog-box-visual-studio.md)。 有关详细信息，请参阅[如何： 打开和关闭 （O/R 设计器） 启用复数化](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。
 
 3.  在“生成”菜单上单击“生成 UpdatingwithSProcsWalkthrough”以生成该项目。
 
@@ -233,7 +232,7 @@ ms.locfileid: "55009747"
 19. 单击 **“确定”**。
 
 > [!NOTE]
-> 虽然它不是本演练的问题，值得注意是 LINQ to SQL 插入过程中处理数据库生成的值自动为标识 （自动递增） 列、 rowguidcol (数据库生成的 GUID) 和时间戳列和更新。 在其他列类型中，数据库生成的值将意外导致 Null 值。 若要返回数据库生成的值，应手动将 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 设置为 `true` 并将 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 设置为下列值之一：[AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)， [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)，或[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。
+> 虽然它不是本演练的问题，值得注意是 LINQ to SQL 插入过程中处理数据库生成的值自动为标识 （自动递增） 列、 rowguidcol (数据库生成的 GUID) 和时间戳列和更新。 在其他列类型中，数据库生成的值将意外导致 Null 值。 若要返回数据库生成的值，应手动设置<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>到`true`并<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>到以下项之一： [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)， [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)，或[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。
 
 ## <a name="test-the-application"></a>测试应用程序
 
@@ -274,6 +273,6 @@ ms.locfileid: "55009747"
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext 方法](../data-tools/datacontext-methods-o-r-designer.md)
-- [如何：分配存储过程以便执行更新、插入和删除操作](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [如何： 分配存储的过程以便执行更新、 插入和删除操作](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [LINQ to SQL 查询](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)

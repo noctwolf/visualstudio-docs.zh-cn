@@ -6,17 +6,16 @@ ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 96db9d95eeeb21ad890e12e2a05d5313cb426796
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aefe5037120636c02b8d3fa73e4ec1fc4bc02a48
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949410"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920439"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何：分配存储过程以便执行更新、插入和删除操作（O/R 设计器）
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何：分配存储流程来执行更新、插入和删除操作（O/R 设计器）
 
 可以将存储过程添加到 O/R 设计器并作为典型的 <xref:System.Data.Linq.DataContext> 方法执行。 它们还可用于重写默认的 LINQ to SQL 运行时行为执行插入、 更新和删除操作将更改从实体类保存到数据库时 (例如，当调用<xref:System.Data.Linq.DataContext.SubmitChanges%2A>方法)。
 
@@ -24,7 +23,7 @@ ms.locfileid: "54949410"
 > 如果存储过程的返回值需要发送回客户端（例如在存储过程中计算出的值），则在存储过程中创建输出参数。 如果无法使用输出参数，则编写分部方法实现，而不是依靠 O/R 设计器生成的重写。 在成功完成 INSERT 或 UPDATE 操作后，需要将映射到数据库生成的值的成员设置为相应的值。 有关详细信息，请参阅[开发人员在重写默认行为的职责](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior)。
 
 > [!NOTE]
-> LINQ to SQL 处理数据库生成的值自动为标识 （自动递增） 列、 rowguidcol (数据库生成的 GUID) 和时间戳列。 在其他列类型中，数据库生成的值将意外导致 Null 值。 若要返回数据库生成的值，应手动设置<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>到**true**和<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>到以下项之一：[AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)， [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)，或[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。
+> LINQ to SQL 处理数据库生成的值自动为标识 （自动递增） 列、 rowguidcol (数据库生成的 GUID) 和时间戳列。 在其他列类型中，数据库生成的值将意外导致 Null 值。 若要返回数据库生成的值，应手动设置<xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>到**true**并<xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>到以下项之一： [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>)， [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)，或[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。
 
 ## <a name="configure-the-update-behavior-of-an-entity-class"></a>配置实体类的更新行为
 

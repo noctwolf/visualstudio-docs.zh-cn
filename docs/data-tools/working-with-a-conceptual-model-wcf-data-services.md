@@ -10,15 +10,14 @@ ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.prod: visual-studio-dev15
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4c23097bfdf122d5b10cdf3b03cd020db5b62c0c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 135985d7e6ed13555db73f35fef31e6da4b85071
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989635"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910020"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>使用概念模型 （WCF 数据服务）
 
@@ -27,24 +26,24 @@ ms.locfileid: "54989635"
  您可以对 WCF 数据服务应用程序使用概念模型。 以下主题说明如何查询通过概念模型的数据。
 
 
-| 主题 | 说明 |
+| 主题 | 说明​​ |
 | - | - |
-| [如何：执行数据服务查询](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | 演示如何查询数据服务从[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]应用程序。 |
+| [如何：指定数据服务查询](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | 演示如何查询数据服务从[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]应用程序。 |
 | [如何：项目查询结果](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | 演示如何减少通过数据服务查询返回的数据量。 |
 
  使用概念模型时，可以定义的数据类型是有效的语言来匹配你的域。 可以在模型中，定义有效的数据或添加对实体或数据服务执行的操作的验证。
 
  以下主题演示如何向 WCF 数据服务应用程序添加验证。
 
-|主题|说明|
+|主题|说明​​|
 |-----------|-----------------|
-|[如何：截获数据服务消息](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|演示如何将验证添加到数据服务操作。|
+|[如何：截断数据服务消息](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|演示如何将验证添加到数据服务操作。|
 
  以下主题说明如何创建、 更新和删除数据，通过对实体执行操作。
 
-|主题|说明|
+|主题|说明​​|
 |-----------|-----------------|
-|[如何：添加、 修改和删除实体](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|演示如何创建、 更新和删除数据服务中的实体数据。|
+|[如何：添加、修改和删除实体](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|演示如何创建、 更新和删除数据服务中的实体数据。|
 |[如何：定义实体关系](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|演示如何创建或更改数据服务中的关系。|
 
 ## <a name="see-also"></a>请参阅
