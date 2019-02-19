@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07710ed0188baf48a567bb3c003f174814c30094
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 8158444662b7e0b2f7eb90d4ec5919314489dfc1
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53907878"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54960591"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中调试多线程应用程序
 线程是操作系统向其授予处理器时间的指令序列。 在操作系统中运行的每个进程都包含至少一个线程。 包含多个线程的进程称为多线程。  
@@ -44,9 +44,9 @@ Visual Studio 提供不同的工具用于调试多线程应用程序。
   
 - 使用的代码[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[并发运行时](/cpp/parallel/concrt/concurrency-runtime/)，用于调试的主要工具是**并行堆栈**窗口中， **并行监视**窗口中，并**任务**窗口中，它还支持 JavaScript。 若要开始，请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)和[演练：调试 c + + AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)。 
 
-- 主要工具是用于调试在 GPU 上的线程， **GPU 线程**窗口。 请参阅[如何：使用 GPU 线程窗口](../debugger/how-to-use-the-gpu-threads-window.md)。  
+- 对于调试 GPU 上的线程，主要工具是“GPU 线程”窗口。 请参阅[如何： 使用 GPU 线程窗口](../debugger/how-to-use-the-gpu-threads-window.md)。  
 
-- 主要工具是执行过程，这**附加到进程**对话框中，**进程**窗口中，并且**调试位置**工具栏。  
+- 对于进程，主要工具是“附加到进程”对话框、“进程”窗口和“调试位置”工具栏。  
   
 Visual Studio 还提供功能强大的断点和跟踪点，在调试多线程应用程序时，可以很有用。 使用断点条件和筛选器将断点置于单个线程上。 跟踪点，您可以跟踪你的程序的执行，而不会中断，研究问题，例如死锁。 有关详细信息，请参阅[断点操作和跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)。
 
