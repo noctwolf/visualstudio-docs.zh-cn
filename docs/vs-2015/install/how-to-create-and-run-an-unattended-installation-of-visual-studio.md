@@ -1,5 +1,5 @@
 ---
-title: 如何：创建并运行无人参与的安装 |Microsoft Docs
+title: 如何： 创建并运行无人参与的安装 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -13,13 +13,13 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b7fdf45fedece028a0bf5d62ccd60951754b9064
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803557"
 ---
-# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>如何：创建和运行 Visual Studio 的无人参与的安装
+# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 你可以将 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的安装应用程序作为无人参与（即自定义无提示）安装通过 Intranet 而不是从媒体（如 DVD）运行。 本主题介绍如何准备[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]从网络共享安装此类型。
@@ -59,7 +59,7 @@ ms.locfileid: "54803557"
 
  AdminDeployment 文件架构包含下列元素：
 
-|元素|特性|值|说明|
+|元素|特性|值|说明​​|
 |-------------|---------------|------------|-----------------|
 |BundleCustomizations|TargetDir|*路径*|行为与在安装应用程序的用户界面中重写路径相同。 如果已安装 Visual Studio，则忽略此元素。|
 |BundleCustomizations|NoWeb|是&#124;默认值|如果此元素的值为“yes”，则安装应用程序永远不会尝试在安装操作期间转到 Web。|
@@ -114,7 +114,7 @@ ms.locfileid: "54803557"
 
 2. 打开 **“开始”** 菜单，然后选择 **“运行”**。
 
-3. 输入以下文本：\\\\*ServerName*\IDEinstall\vs_*产品*.exe /AdminFile PathToAdmindeployment.xml 文件
+3. 输入以下文本： \\ \\ *ServerName*\IDEinstall\vs_*产品*.exe /AdminFile PathToAdmindeployment.xml 文件
 
     AdditionalParametersAsNeeded
 
@@ -173,7 +173,7 @@ ms.locfileid: "54803557"
 
 2.  输入产品密钥。
 
-     有关详细信息，请参阅[如何：查找 Visual Studio 产品密钥](../install/how-to-locate-the-visual-studio-product-key.md)和[如何：部署 Visual Studio 时自动应用产品密钥](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)主题。)
+     (有关详细信息，请参阅[如何： 查找 Visual Studio 产品密钥](../install/how-to-locate-the-visual-studio-product-key.md)并[如何： 部署 Visual Studio 时自动应用产品密钥](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)主题。)
 
 ## <a name="see-also"></a>请参阅
  [安装 Visual Studio](../install/install-visual-studio-2015.md)
