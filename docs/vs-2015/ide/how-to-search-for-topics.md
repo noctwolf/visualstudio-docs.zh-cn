@@ -1,25 +1,20 @@
 ---
-title: 如何：搜索主题 | Microsoft Docs
-ms.custom: ''
+title: 如何：搜索主题 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef0cbdff47423fe1ed580f3f51ba1e6039ee3e01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b784dc20f072a7cb8ab6ed80242c09e57ce1127a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248282"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799075"
 ---
 # <a name="how-to-search-for-topics"></a>如何：搜索主题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +38,12 @@ ms.locfileid: "49248282"
   
      默认情况下，一次搜索最多返回 200 个命中结果，并显示在搜索结果区域中。  
   
-     每个结果的其他版本信息可能会显示具体取决于内容。  
+     每个结果的附加版本信息可能会根据内容显示。  
   
 4.  若要查看主题，请从结果列表中选择其标题。  
   
 ## <a name="see-also"></a>请参阅  
  [全文搜索提示](../ide/full-text-search-tips.md)   
  [搜索表达式中的逻辑运算符](../ide/logical-operators-in-search-expressions.md)   
- [高级搜索表达式中的搜索运算符](../ide/advanced-search-operators-in-search-expressions.md)   
+ [搜索表达式中的高级搜索运算符](../ide/advanced-search-operators-in-search-expressions.md)   
  [如何：自定义搜索结果](../ide/how-to-customize-search-results.md)
-
-
-

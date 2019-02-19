@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 73d515c03b7966e3434a2fc2507d3ad5f8d13c1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782836"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>域特定语言工具用户界面的概述
@@ -43,14 +43,14 @@ ms.locfileid: "54782836"
   
  下表说明了域模型关系图中的部分元素。  
   
-|**术语**|**定义**|  
+|**条款**|**定义**|  
 |--------------|--------------------|  
 |域类|域类是模型中的元素的类型。<br /><br /> 如果域类是多个关系的目标，则可以在关系图多次出现。<br /><br /> 若要添加域类，请将域类工具从“工具箱”拖动到关系图的“类和关系”侧。|  
 |域关系|域关系是模型中的元素之间的链接类型。<br /><br /> 嵌入关系表示目标元素为源元素所有并受其限制，显示为实线。 模型中的每个元素都应是一个嵌入关系的目标，以确保该模型变为树形。 引用关系表示模型元素之间的常规链接，显示为虚线。 任何元素都可以具有任意数量的引用链接。<br /><br /> 通过依次单击“工具箱”上的工具、源域类以及目标类，创建关系。|  
 |形状和连接符|形状指定模型元素应在 DSL 关系图上的显示方式，连接符指定 DSL 关系图上用于显示关系的线。<br /><br /> 若要创建形状或连接符，请将工具拖至关系图的“关系图元素”侧。|  
 |形状映射|形状映射以线的形式在域模型关系图中显示，用于将形状链接到它显示的域类，或者将连接符链接到它显示的域关系。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [域特定语言工具的概述](../modeling/overview-of-domain-specific-language-tools.md)   
  [域特定语言工具术语表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)

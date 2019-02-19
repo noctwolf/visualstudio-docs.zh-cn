@@ -24,7 +24,7 @@ ms.locfileid: "55006172"
 #define DONT_SAVE_VSGLOG_TO_TEMP  
 ```  
 
-## <a name="value"></a>值  
+## <a name="value"></a>“值”  
  预处理器符号，其存在情况确定是否图形日志文件保存到用户的临时文件目录。 如果定义此符号，则由定义的文件的名称`VSG_DEFAULT_RUN_FILENAME`是捕获应用程序的当前目录的相对或绝对路径; 否则为的文件的名称定义`VSG_DEFAULT_RUN_FILENAME`是相对于用户的临时文件目录，不能为绝对路径。  
 
 ## <a name="remarks"></a>备注  

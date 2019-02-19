@@ -51,10 +51,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54795247"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目
@@ -96,7 +96,7 @@ ms.locfileid: "54795247"
 
 -   [管理程序集签名和清单签名](../ide/managing-assembly-and-manifest-signing.md)
 
--   [如何：指定应用程序图标 (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+-   [如何：指定应用程序图标（Visual Basic、C#）](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
 -   [面向特定的 .NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)
 

@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e983137b4d66ff568ba706353d950470787e3a2
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 2a009bb48d130f35fa9663602762d5cff9789037
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204479"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55070612"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器浏览代码
 
-Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显示其执行流。 可以使用键盘快捷方式、 调试命令、 断点以及其他功能来快速访问你想要检查的代码。 熟悉的调试器导航命令和快捷方式可以更快、 更轻松地查找和解决应用程序问题。  如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)和[编写更优质的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)。
+Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显示其执行流。 可以使用键盘快捷方式、 调试命令、 断点以及其他功能来快速访问你想要检查的代码。 熟悉的调试器导航命令和快捷方式可以更快、 更轻松地查找和解决应用程序问题。  如果这是你在尝试调试的代码的第一个时间，可能需要阅读[零基础调试](../debugger/debugging-absolute-beginners.md)并[调试技术和工具](../debugger/write-better-code-with-visual-studio.md)之前开始阅读本文。
   
 ## <a name="basic-debugging"></a>基础调试  
 
@@ -79,7 +79,7 @@ Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显
 
 您可能不关心函数同时调试，或者您知道工作方式，类似于经过全面测试的库代码。 可以使用以下命令以跳过代码。 仍可以执行函数，但调试器跳过它们。  
   
-|键盘命令|调试菜单命令|说明|  
+|键盘命令|调试菜单命令|说明​​|  
 |----------------------|------------------|-----------------|  
 |**F10**|**逐过程**|如果当前行包含函数调用中，**单步跳过**运行代码，然后在被调用的函数返回之后，在第一行代码处挂起执行。|  
 |Shift+F11|**跳出**|**单步跳出**会继续运行代码，当前函数返回时挂起执行。 通过当前函数，调试器会跳过。|  
@@ -186,5 +186,5 @@ Visual Studio 中的断点提供了一组丰富的附加功能，例如条件断
 
 ## <a name="see-also"></a>请参阅
  [什么是调试？](../debugger/what-is-debugging.md)  
- [通过编写更优质的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)  
+ [调试技术和工具](../debugger/write-better-code-with-visual-studio.md)  
  [首先看一下调试](../debugger/debugger-feature-tour.md) 

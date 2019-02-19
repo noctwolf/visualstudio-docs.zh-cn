@@ -41,7 +41,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  要使用的线程数。  
   
 ## <a name="return-value"></a>返回值  
- 线程数更新后，则返回带 SUCCEEDED 位集的 HRESULT<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  --><!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->。  
+ 线程计数更新后，返回带 [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 位集的 [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->)。  
   
 ## <a name="requirements"></a>要求  
  标头：FileTracker.h

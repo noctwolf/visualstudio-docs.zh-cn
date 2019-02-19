@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3477c7f4a9f6368ce8c2ef5a87c101e8ef66f4bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758561"
 ---
 # <a name="item-functions"></a>项函数
@@ -55,7 +55,7 @@ ms.locfileid: "54758561"
 ## <a name="intrinsic-item-functions"></a>内部项函数  
  下表列出了可用于各项的内部函数。  
   
-|函数|示例|说明|  
+|函数|示例|说明​​|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|返回项计数。|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|返回每个项的 `Path.DirectoryName` 等效项。|  

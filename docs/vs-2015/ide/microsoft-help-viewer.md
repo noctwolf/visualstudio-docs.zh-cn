@@ -1,14 +1,9 @@
 ---
 title: Microsoft Help Viewer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 f1_keywords:
 - hv_general
 helpviewer_keywords:
@@ -24,13 +19,13 @@ ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820091"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54755033"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49820091"
 你可以通过使用 Microsoft Help Viewer 在本地计算机上安装和查看各种产品和技术的相关内容。  
   
 > [!WARNING]
->  安装 Visual Studio 时，将获得帮助查看器。 若要开始阅读 Help Viewer 中，而不是 MSDN 下载站点上的帮助主题，请转到**帮助**在 Visual Studio 中，选择菜单**设置帮助首选项**，然后选择**在帮助中启动查看器**。 给定版本的 Visual Studio 的脱机帮助主题仅在发布该版本的最终版本后提供。  
+>  安装 Visual Studio 时，将获得帮助查看器。 若要开始阅读帮助查看器（而不是 MSDN 下载站点）上的帮助主题，请转到 Visual Studio 中的“帮助”菜单，选择“设置帮助首选项”，然后选择“在帮助查看器中启动”。 给定版本的 Visual Studio 的脱机帮助主题仅在发布该版本的最终版本后提供。  
   
  可以完成以下工作：  
   
@@ -84,6 +79,3 @@ ms.locfileid: "49820091"
  [安装和管理本地内容](../ide/install-and-manage-local-content.md)   
  [查找信息](../ide/locate-information.md)   
  [Help Viewer 故障排除](../ide/troubleshooting-the-help-viewer.md)
-
-
-

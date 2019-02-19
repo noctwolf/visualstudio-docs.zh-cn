@@ -28,7 +28,7 @@ ms.locfileid: "54979915"
  `filename`  
  以编程方式捕获图形信息时默认为图形日志文件指定的文件名。  
   
-## <a name="value"></a>值   
+## <a name="value"></a>值  
  表示图形日志文件的文件名的字符串。 默认情况下为 L"default.vsglog"。  
   
 ```C++  

@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 12c0992cd9d1ece4f9d3ea0d22512948fafaf5cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54791389"
 ---
 # <a name="calltarget-task"></a>CallTarget 任务
@@ -33,7 +33,7 @@ ms.locfileid: "54791389"
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `CallTarget` 任务的参数。  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`RunEachTargetSeparately`|可选 `Boolean` 输出参数。<br /><br /> 如果为 `true`，则对每个目标调用一次 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 引擎。 如果为 `false`，则调用一次 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 引擎即可生成所有目标。 默认值为 `false`。|  
 |`TargetOutputs`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包括所有生成目标的输出。|  

@@ -53,7 +53,7 @@ ms.locfileid: "54802184"
 |`Imports`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 从指定项集合导入命名空间。 此参数对应于 vbc.exe 编译器的 [/imports](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) 开关。|  
 |`KeyContainer`|可选 `String` 参数。<br /><br /> 指定加密密钥容器的名称。 此参数对应于 vbc.exe 编译器的 [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) 开关。|  
 |`KeyFile`|可选 `String` 参数。<br /><br /> 指定含有加密密钥的文件名。 有关详细信息，请参阅 [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8)。|  
-|`LangVersion`|可选 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String 参数。<br /><br /> 指定语言版本，“9”或“10”。|  
+|`LangVersion`|可选 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 指定语言版本，“9”或“10”。|  
 |`LinkResources`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 创建指向输出文件中的 .NET Framework 资源的链接；资源文件不会放入输出文件中。 此参数对应于 vbc.exe 编译器的 [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) 开关。|  
 |`MainEntryPoint`|可选 `String` 参数。<br /><br /> 指定包含 `Sub Main` 过程的类或模块。 此参数对应于 vbc.exe 编译器的 [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) 开关。|  
 |`ModuleAssemblyName`|可选 `String` 参数。<br /><br /> 指定此模块所属程序集。|  
@@ -84,7 +84,7 @@ ms.locfileid: "54802184"
 |`TreatWarningsAsErrors`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则会将所有警告视为错误。 有关详细信息，请参阅 [/warnaserror (Visual Basic)](http://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)。|  
 |`UseHostCompilerIfAvailable`|可选 `Boolean` 参数。<br /><br /> 指示该任务使用进程内编译器对象（如果可用）。 仅由 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用。|  
 |`Utf8Output`|可选 `Boolean` 参数。<br /><br /> 记录使用 UTF-8 编码的编译器输出。 此参数对应于 vbc.exe 编译器的 [/utf8output](http://msdn.microsoft.com/library/8ab36b1e-027a-49ac-85b4-f48997d9e4d6) 开关。|  
-|`Verbosity`|可选 `String` 参数。<br /><br /> 指定  编译器输出的详细级别。 详细级别可以为 `Quiet`、`Normal`（默认）或 `Verbose`。|  
+|`Verbosity`|可选 `String` 参数。<br /><br /> 指定编译器输出的详细级别。 详细级别可以为 `Quiet`、`Normal`（默认）或 `Verbose`。|  
 |`WarningsAsErrors`|可选 `String` 参数。<br /><br /> 指定将被视为错误的警告的列表。 有关详细信息，请参阅 [/warnaserror (Visual Basic)](http://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)。<br /><br /> 此参数替代 `TreatWarningsAsErrors` 参数。|  
 |`WarningsNotAsErrors`|可选 `String` 参数。<br /><br /> 指定不被视为错误的警告的列表。 有关详细信息，请参阅 [/warnaserror (Visual Basic)](http://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)。<br /><br /> 只有 `TreatWarningsAsErrors` 参数设置为 `true` 时，此参数才有用。|  
 |`Win32Icon`|可选 `String` 参数。<br /><br /> 在程序集中插入 .ico 文件，为输出文件赋予其在文件资源管理器中所需的外观。 此参数对应于 vbc.exe 编译器的 [/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) 开关。|  

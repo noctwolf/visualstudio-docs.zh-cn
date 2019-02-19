@@ -25,10 +25,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f66dae4d9e69ce1fc5d4351d72606e1fdad10725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755308"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“Web 浏览器”
@@ -54,7 +54,7 @@ ms.locfileid: "54755308"
   
 - **源编辑器** 选择此选项可在[编写代码](../../ide/writing-code-in-the-code-and-text-editor.md)中查看源。  
   
-- **HTML 编辑器** 选择此选项可在 [HTML Designer](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)（HTML 设计器）中查看源。 使用此选择以两种视图之一编辑网页：设计视图或标准的基于文本的源视图。  
+- **HTML 编辑器** 选择此选项可在 [HTML Designer](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)（HTML 设计器）中查看源。 使用此选项可在两个视图之一中编辑网页：设计视图或基于标准文本的源视图。  
   
 - **外部编辑器** 选择此选项可在其他编辑器中查看源。 指定所选任何编辑器（例如 Notepad.exe）的路径。  
   
