@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c161dcd18a46928c9e180608a122f106ecd6554e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780897"
 ---
 # <a name="assignculture-task"></a>AssignCulture 任务
@@ -35,7 +35,7 @@ ms.locfileid: "54780897"
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `AssignCulture` 任务的参数。  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`AssignedFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包含 `Files` 参数收到的项列表，同时向每个项添加 `Culture` 元数据条目。<br /><br /> 如果来自 `Files` 参数的传入项已包含 `Culture` 元数据条目，则使用原始的元数据条目。<br /><br /> 如果文件名包含有效的区域性标识符，则该任务仅分配 `Culture` 元数据条目。 区域性标识符必须位于文件名中最后两个点之间。|  
 |`AssignedFilesWithCulture`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包含 `AssignedFiles` 参数中具有 `Culture` 元数据条目的项的子集。|  

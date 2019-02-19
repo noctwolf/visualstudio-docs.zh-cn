@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 71c257dae17f6846e3e6a4490178b49f28c6dad3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767466"
 ---
 # <a name="error-task"></a>Error 任务
@@ -35,7 +35,7 @@ ms.locfileid: "54767466"
 ## <a name="parameters"></a>参数  
  下表描述了 `Error` 任务的参数。  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`Code`|可选 `String` 参数。<br /><br /> 与错误关联的错误代码。|  
 |`File`|可选 `String` 参数。<br /><br /> 包含错误的文件的名称。 如果未提供任何文件名称，将使用包含 Error 任务的文件。|  

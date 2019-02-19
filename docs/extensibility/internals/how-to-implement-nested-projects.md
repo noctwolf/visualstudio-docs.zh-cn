@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13993fca03afce3e14b5a016eba7924226c24b8d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037832"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335241"
 ---
 # <a name="how-to-implement-nested-projects"></a>如何：实现嵌套的项目
 
@@ -65,7 +65,7 @@ ms.locfileid: "55037832"
      由于以编程方式实例化父和子项目，可以在这里设置嵌套项目的属性。
 
     > [!NOTE]
-    > 不仅能执行将收到的上下文信息从嵌套的项目，但您还可以要求父项目是否为该项的任何上下文通过检查<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。 在这种方式，可以向嵌套的各个项目中添加额外动态帮助属性和特定的菜单选项。
+    > 不仅能执行将收到的上下文信息从嵌套的项目，但您还可以要求父项目是否为该项的任何上下文通过检查[__VSHPROPID。VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>)。 在这种方式，可以向嵌套的各个项目中添加额外动态帮助属性和特定的菜单选项。
 
 10. 层次结构中显示为构建**解决方案资源管理器**通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>方法。
 

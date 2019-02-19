@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775867"
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
@@ -48,7 +48,7 @@ ms.locfileid: "54775867"
 ||使用模拟器可以调试 Microsoft Azure 的云服务项目。|[在 Visual Studio 中调试云服务](http://go.microsoft.com/fwlink/?LinkId=266725)|
 ||配置远程调试的防火墙。|[在设备上安装远程工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |性能工具|分析应用程序。|[性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)|
-|部署|在本地计算机上将 Web 应用程序部署到 Internet Information Services (IIS)。|[部署到承载提供程序使用 Visual Studio 或 Visual Web Developer 将 ASP.NET Web 应用程序：作为测试环境部署到 IIS](http://go.microsoft.com/fwlink/?LinkId=266478)|
+|部署|在本地计算机上将 Web 应用程序部署到 Internet Information Services (IIS)。|[使用 Visual Studio 或 Visual Web Developer 将 ASP.NET Web 应用程序部署到承载提供程序：作为测试环境部署到 IIS](http://go.microsoft.com/fwlink/?LinkId=266478)|
 |向 Microsoft 提供反馈|更改参与 Visual Studio 客户体验计划的方式。|[如何：发送反馈](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>以管理员身份运行 Visual Studio

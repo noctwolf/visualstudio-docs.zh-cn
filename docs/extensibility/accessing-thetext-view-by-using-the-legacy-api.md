@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bee3e781e9cb504148ae46f6a9e0b37b6ae778fb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979642"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335489"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>通过使用传统的 API 访问文本视图
 文本视图是文本的一个演示文稿的文本缓冲区中存储。 通过使用传统的 API，如以下部分中所示，可以访问在文本视图。
@@ -23,7 +23,7 @@ ms.locfileid: "54979642"
 ## <a name="text-view-object"></a>文本视图对象
  每个视图程序与自己的文本缓冲区，而视图却是在缓冲区中的数据的窗口。 下图显示了文本视图对象，由表示的密钥接口<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>。
 
- ![Visual Studio 文本视图对象](../extensibility/media/vstextview.gif "vstextview")文本视图对象
+ ![Visual Studio 文本视图对象](../extensibility/media/vstextview.gif)
 
  视图是显示文本缓冲区中的一种方法。 它包括功能，如自动换行和大纲显示，以便在视图中看到的内容不是精确地表示缓冲区中的文本。
 

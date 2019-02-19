@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796872"
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
@@ -35,7 +35,7 @@ ms.locfileid: "54796872"
 ### <a name="reference"></a>参考  
  表示项目中的程序集（托管）引用。  
   
-|项名称|说明|  
+|项名称|说明​​|  
 |---------------|-----------------|  
 |HintPath|可选的字符串。 程序集的相对或绝对路径。|  
 |name|可选的字符串。 程序集的显示名称，例如“System.Windows.Forms”。|  
@@ -47,7 +47,7 @@ ms.locfileid: "54796872"
 ### <a name="comreference"></a>COMReference  
  表示项目中的 COM（非托管）组件引用。  
   
-|项名称|说明|  
+|项名称|说明​​|  
 |---------------|-----------------|  
 |name|可选的字符串。 组件的显示名称。|  
 |GUID|可选的字符串。 组件的 GUID，形式为 {12345678-1234-1234-1234-1234567891234}。|  
@@ -60,14 +60,14 @@ ms.locfileid: "54796872"
 ### <a name="comfilereference"></a>COMFileReference  
  表示馈送到 ResolvedComreference 目标中的类型库的列表。  
   
-|项名称|说明|  
+|项名称|说明​​|  
 |---------------|-----------------|  
 |WrapperTool|可选的字符串。 对组件使用的包装工具的名称，例如“tlbimp”。|  
   
 ### <a name="nativereference"></a>NativeReference  
  表示本机清单文件或对此类文件的引用。  
   
-|项名称|说明|  
+|项名称|说明​​|  
 |---------------|-----------------|  
 |name|必选字符串。 清单文件基名称。|  
 |HintPath|必选字符串。 清单文件的相对路径。|  
@@ -75,7 +75,7 @@ ms.locfileid: "54796872"
 ### <a name="projectreference"></a>ProjectReference  
  表示对另一个项目的引用。  
   
-|项名称|说明|  
+|项名称|说明​​|  
 |---------------|-----------------|  
 |name|可选的字符串。 引用的显示名称。|  
 |项目|可选的字符串。 引用的 GUID，形式为 {12345678-1234-1234-1234-1234567891234}。|  
@@ -84,7 +84,7 @@ ms.locfileid: "54796872"
 ### <a name="compile"></a>Compile  
  表示编译器的源文件。  
   
-|项名称|说明|  
+|项名称|说明​​|  
 |---------------|-----------------|  
 |DependentUpon|可选的字符串。 指定该文件正确编译所依赖的文件。|  
 |AutoGen|可选的布尔值。 指示是否已由 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 集成开发环境 (IDE) 为项目生成了文件。|  
@@ -95,7 +95,7 @@ ms.locfileid: "54796872"
 ### <a name="embeddedresource"></a>EmbeddedResource  
  表示要在生成的程序集中嵌入的资源。  
   
-|项名称|说明|  
+|项名称|说明​​|  
 |---------------|-----------------|  
 |DependentUpon|可选的字符串。 指定该文件正确编译所依赖的文件|  
 |Generator|必选字符串。 在此项上运行的任何文件生成器的名称。|  
@@ -109,7 +109,7 @@ ms.locfileid: "54796872"
 ### <a name="content"></a>内容  
  表示不会编译到项目中，但可能会嵌入到其中或随其一起发布的文件。  
   
-|项名称|说明|  
+|项名称|说明​​|  
 |---------------|-----------------|  
 |DependentUpon|可选的字符串。 指定该文件正确编译所依赖的文件。|  
 |Generator|必选字符串。 在此项上运行的任何文件生成器的名称。|  
@@ -124,7 +124,7 @@ ms.locfileid: "54796872"
 ### <a name="none"></a>无  
  表示不应在生成过程中具有角色的文件。  
   
-|项名称|说明|  
+|项名称|说明​​|  
 |---------------|-----------------|  
 |DependentUpon|可选的字符串。 指定该文件正确编译所依赖的文件。|  
 |Generator|必选字符串。 在此项上运行的任何文件生成器的名称。|  

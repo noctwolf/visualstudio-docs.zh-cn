@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd9775bf03754913aea84f41e9878e755ff15d95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54795361"
 ---
 # <a name="span-class"></a>span 类
@@ -35,7 +35,7 @@ class span;
   
 ### <a name="public-constructors"></a>公共构造函数  
   
-|name|说明|  
+|name|说明​​|  
 |----------|-----------------|  
 |[span::span 构造函数](../profiling/span-span-constructor.md)|初始化 `span` 类的新实例。|  
 |[span::~span 析构函数](../profiling/span-tilde-span-destructor.md)|销毁 `span` 对象并释放其资源。|  

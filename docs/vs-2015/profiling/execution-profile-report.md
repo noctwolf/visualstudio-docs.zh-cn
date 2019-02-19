@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a0d95d4593939b878194d2aeef79bdd0a8ad946a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756512"
 ---
 # <a name="execution-profile-report"></a>执行分析报告
@@ -31,7 +31,7 @@ ms.locfileid: "54756512"
   
   下表显示报告中的列。  
   
-|列|说明|  
+|列|说明​​|  
 |------------|-----------------|  
 |name|调用堆栈每个级别的函数的名称。|  
 |非独占样本数|为汇总到此调用堆栈树级别的所有堆栈收集的样本总数。 非独占数是此函数的独占样本数和所有子节点的非独占计数器的总和。|  

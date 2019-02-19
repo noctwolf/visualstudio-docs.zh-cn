@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 04c714576a0207d4168f20a241d6f0c7dd29298c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54784452"
 ---
 # <a name="modules-view---sampling-data"></a>“模块”视图 - 采样数据
@@ -29,7 +29,7 @@ ms.locfileid: "54784452"
   
  如果在收集样本时执行函数（即函数处于调用堆栈顶部），则执行的源行和指令地址在函数节点下列出。 因为在执行行或指令时会为源行或指令指针收集数据，所以非独占和独占值对于行数据和指令数据始终是相同的。  
   
-|列|说明|  
+|列|说明​​|  
 |------------|-----------------|  
 |**名称**|模块、函数、行号或指令指针地址的名称。|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  

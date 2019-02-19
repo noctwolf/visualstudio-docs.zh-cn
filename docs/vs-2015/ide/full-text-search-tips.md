@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54791703"
 ---
 # <a name="full-text-search-tips"></a>全文搜索提示
@@ -46,7 +46,7 @@ ms.locfileid: "54791703"
 >    2.  使用逻辑运算符指定搜索短语中各单词之间的关系。 可以使用逻辑运算符（如 AND、OR NOT 和 NEAR）进一步优化搜索。 例如，如果搜索“declaring NEAR union”，搜索结果将包括包含“declaring”和“union”单词的主题，除这两个词之外，仅有几个单词。 有关详细信息，请参阅[搜索表达式中的逻辑运算符](../ide/logical-operators-in-search-expressions.md)。  
   
 ### <a name="filters"></a>筛选器  
- 可利用高级搜索运算符进一步限制搜索结果。 “帮助”包括三个可用于筛选全文搜索结果的类别：“标题”、“代码”和“关键字”。 有关详细信息，请参阅[搜索表达式中的高级搜索运算符](../ide/advanced-search-operators-in-search-expressions.md)。  
+ 可利用高级搜索运算符进一步限制搜索结果。 “帮助”包括三类用于筛选全文搜索结果的方式：标题、代码和关键字。 有关详细信息，请参阅[搜索表达式中的高级搜索运算符](../ide/advanced-search-operators-in-search-expressions.md)。  
   
 ### <a name="ranking-of-search-results"></a>搜索结果的排名  
  搜索算法应用特定条件在结果列表中对搜索结果进行排名。 通常情况下：  

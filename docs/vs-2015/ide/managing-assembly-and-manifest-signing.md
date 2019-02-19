@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 63a2e1b98baa61ef0a83c1de65653dd2e57a8b2c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755459"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>管理程序集签名和清单签名
@@ -65,7 +65,7 @@ ms.locfileid: "54755459"
   
  如果仅对公钥具有访问权限，可以使用延迟签名来推迟分配密钥。 可通过选择“仅延迟签名”复选框来启用延迟签名。 延迟签名的项目不会运行也不能进行调试。 但是，可以使用 [Sn.exe（强名称工具）](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)及 `-Vr` 选项，在开发过程中跳过验证。  
   
- 有关对清单签名的详细信息，请参阅[如何：对应用程序和部署清单签名](../ide/how-to-sign-application-and-deployment-manifests.md)。  
+ 有关对清单进行签名的详细信息，请参阅[如何：对应用程序和部署清单进行签名](../ide/how-to-sign-application-and-deployment-manifests.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [具有强名称的程序集](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   

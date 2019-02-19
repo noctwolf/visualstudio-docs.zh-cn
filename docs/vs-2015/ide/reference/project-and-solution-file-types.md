@@ -31,10 +31,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b0c4a353923bbf5d98bd2ef4fcb3c5fe28447fe8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54773331"
 ---
 # <a name="project-and-solution-file-types"></a>项目和解决方案文件类型
@@ -46,7 +46,7 @@ ms.locfileid: "54773331"
 ## <a name="solution-files-sln-and-suo"></a>解决方案文件（.sln 和 .suo）  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 采用两种文件类型（.sln 和 .suo）来存储特定于解决方案的设置。 这些文件总称为解决方案文件，为解决方案资源管理器提供显示管理文件的图形接口所需的信息。 这使你每次继续开发任务时，都能够全身心地投入到项目和最终目标中，不会因开发环境而分散精力。  
   
-|扩展名|name|说明|  
+|扩展名|name|说明​​|  
 |---------------|----------|-----------------|  
 |.sln|[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 解决方案|将项目、项目项和解决方案项组织到解决方案中。|  
 |.suo|解决方案用户选项|跟踪你对 Visual Studio 所做的用户级自定义，如断点。|  

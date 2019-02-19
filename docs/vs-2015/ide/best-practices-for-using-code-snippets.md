@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 750d96442f59c29a8e565e6b57eda292656ad1f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54770312"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>有关使用代码段的最佳做法
@@ -25,7 +25,7 @@ ms.locfileid: "54770312"
 代码片段中的代码仅显示执行某些操作的最基本方法。 对于大多数应用程序，必须修改代码，使其适合应用程序。  
   
 ## <a name="handling-exceptions"></a>处理异常  
- 通常情况下，代码片段 Try…Catch 块可捕获和重新引发所有异常。 这可能并不适合你的项目。 对于每个异常，可通过几种方法进行响应。 相关示例，请参阅[如何：异常使用 try/catch 处理 (C#编程指南)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818)并[尝试...Catch...Finally 语句](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)。  
+ 通常情况下，代码片段 Try…Catch 块可捕获和重新引发所有异常。 这可能并不适合你的项目。 对于每个异常，可通过几种方法进行响应。 有关示例，请参阅[如何：使用 try/catch 处理异常（C# 编程指南）](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818)和 [Try...Catch...Finally 语句](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)。  
   
 ## <a name="file-locations"></a>文件位置  
  改写文件位置以使其适合应用程序时，应考虑以下事项：  

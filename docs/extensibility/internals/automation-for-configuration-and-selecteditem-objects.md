@@ -11,25 +11,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60efbb25b0b5b52e1392ce84c16710a78dde7b16
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1ee4bcddd7c23f5178984c2c76b059209a965956
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919273"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335332"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Configuration 和 SelectedItem 对象的自动化
-你可以自动生成和中的选定的项进程[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
-  
-## <a name="automation-for-builds"></a>生成自动化  
- 生成或配置已实现时提供的自动化模型<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>。 有关详细信息，请参阅[了解生成配置](../../ide/understanding-build-configurations.md)。  
-  
- 如果你创建 VSPackage，并且想要控制的配置选项，必须使用自动化模型。  
-  
-## <a name="automation-for-selecteditem"></a>SelectedItem 的自动化  
- 不需要为提供一个实现`SelectedItem`对象，因为 Visual Studio 包含的标准实现。 但是，可以实现`SelectedItem`对象如果您更喜欢。 必须实现一个对象，包含`SelectedItem`接口，并返回到调用的响应<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>方法替换`VSITEMID`设置为<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。  
-  
-## <a name="see-also"></a>请参阅  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>   
- [参与自动化模型](../../extensibility/internals/contributing-to-the-automation-model.md)   
- [了解生成配置](../../ide/understanding-build-configurations.md)
+
+可以自动生成和 Visual Studio 中的选定的项过程。
+
+## <a name="automation-for-builds"></a>生成自动化
+
+生成或配置已实现时提供的自动化模型<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider>。 有关详细信息，请参阅[了解生成配置](../../ide/understanding-build-configurations.md)。
+
+如果你创建 VSPackage，并且想要控制的配置选项，必须使用自动化模型。
+
+## <a name="automation-for-selecteditem"></a>SelectedItem 的自动化
+
+不需要为提供一个实现`SelectedItem`对象，因为 Visual Studio 包含的标准实现。 但是，可以实现`SelectedItem`对象如果您更喜欢。 必须实现一个对象，包含`SelectedItem`接口，并返回到调用的响应<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>方法替换`VSITEMID`设置为[__VSHPROPID。VSHPROPID_ExtSelectedItem](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_ExtSelectedItem>)。
+
+## <a name="see-also"></a>请参阅
+
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>
+- [参与自动化模型](../../extensibility/internals/contributing-to-the-automation-model.md)
+- [了解生成配置](../../ide/understanding-build-configurations.md)

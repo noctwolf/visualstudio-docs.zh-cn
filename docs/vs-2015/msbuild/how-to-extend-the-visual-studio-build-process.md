@@ -1,5 +1,5 @@
 ---
-title: 如何：扩展生成过程 |Microsoft Docs
+title: 如何： 扩展生成过程 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758660"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：扩展 Visual Studio 生成过程
@@ -56,10 +56,10 @@ ms.locfileid: "54758660"
 
    下表显示 Microsoft.Common.targets 中可以安全重写的所有目标。
 
-|Target Name|说明|
+|Target Name|说明​​|
 |-----------------|-----------------|
 |`BeforeCompile`， `AfterCompile`|插入到这些目标之一中的任务，在完成内核编译之前或之后运行。 大多数自定义均在这两个目标之一中完成。|
-|`BeforeBuild`， `AfterBuild`|插入到这些目标之一中的任务，在生成中所有其他任务之前或之后运行。 **注意：**`BeforeBuild`和`AfterBuild`目标已定义的大多数项目文件末尾的评论中。 以便轻松将预先生成和后期生成的事件添加到项目文件中。|
+|`BeforeBuild`， `AfterBuild`|插入到这些目标之一中的任务，在生成中所有其他任务之前或之后运行。 注意：`BeforeBuild` 和 `AfterBuild` 目标已在大多数项目文件末尾的注释中定义。 以便轻松将预先生成和后期生成的事件添加到项目文件中。|
 |`BeforeRebuild`， `AfterRebuild`|插入到这些目标之一中的任务，在调用内核重新生成功能之前或之后运行。 Microsoft.Common.targets 中的目标执行顺序是：`BeforeRebuild`、`Clean`、`Build`、`AfterRebuild`。|
 |`BeforeClean`， `AfterClean`|插入到这些目标之一中的任务，在调用内核清理功能之前或之后运行。|
 |`BeforePublish`， `AfterPublish`|插入到这些目标之一中的任务，在调用内核发布功能之前或之后运行。|
@@ -120,7 +120,7 @@ ms.locfileid: "54758660"
 
 ### <a name="commonly-overridden-dependson-properties"></a>经常重写的“DependsOn”属性
 
-|属性名|说明|
+|属性名|说明​​|
 |-------------------|-----------------|
 |`BuildDependsOn`|在要在整个生成过程之前或之后插入自定义目标的情况下，要重写的属性。|
 |`CleanDependsOn`|在要从自定义生成过程中清理输出的情况下，要重写的属性。|

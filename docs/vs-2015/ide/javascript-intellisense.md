@@ -27,10 +27,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54763279"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
@@ -157,7 +157,7 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
 </asp:ScriptManager>
 ```
 
- IntelliSense 还支持以资源形式嵌入在 ASP.NET AJAX Web 应用程序中的程序集内的脚本文件。 有关嵌入的脚本资源的详细信息，请参阅[演练：一个 JavaScript 文件作为资源嵌入程序集](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)。
+ IntelliSense 还支持以资源形式嵌入在 ASP.NET AJAX Web 应用程序中的程序集内的脚本文件。 有关嵌入的脚本资源的详细信息，请参阅[演练： JavaScript 文件作为资源嵌入程序集](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)。
 
 ####  <a name="ReferenceDirectives"></a> 引用指令
  通过使用 `reference` 指令，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 能够在当前正编辑的脚本与其他脚本之间建立关系。 通过使用 `reference` 指令，可以在当前脚本文件的脚本上下文中包括一个脚本文件。 这使 IntelliSense 能够在你进行编码时引用在外部定义的函数、类型和字段。

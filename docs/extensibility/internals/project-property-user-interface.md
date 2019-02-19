@@ -12,20 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ec1a46b619eecc08e08c74535430f9a0d7bfc3c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4f341a0825c4fcacc41fc01b29c6d65882fa500d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957049"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335293"
 ---
 # <a name="project-property-user-interface"></a>项目属性用户界面
+
 项目子类型可以在项目中使用的项**属性页**对话框中为它们提供的基础项目中，隐藏或使只读控件和的整个页面提供，或将项目子类型特定于页面添加到**属性页**对话框。
 
 ## <a name="extending-the-project-property-dialog-box"></a>扩展项目属性对话框
- 项目子类型实现自动化扩展程序和项目配置浏览对象。 这些扩展程序实现<xref:EnvDTE.IFilterProperties>接口以使特定的属性隐藏或只读的。 **属性页**对话框中的基础项目，实现基本的项目，遵循由自动化扩展程序执行的筛选。
 
- 扩展的进程**项目属性**下面列出了在对话框中：
+项目子类型实现自动化扩展程序和项目配置浏览对象。 这些扩展程序实现<xref:EnvDTE.IFilterProperties>接口以使特定的属性隐藏或只读的。 **属性页**对话框中的基础项目，实现基本的项目，遵循由自动化扩展程序执行的筛选。
+
+扩展的进程**项目属性**下面列出了在对话框中：
 
 -   基础项目可检索项目子类型通过实现扩展程序<xref:EnvDTE80.IInternalExtenderProvider>接口。 浏览、 项目自动化和所有的基础项目的项目配置浏览对象实现此接口。
 
@@ -39,11 +41,11 @@ ms.locfileid: "54957049"
 
 -   项目子类型可以通过检索以下来确定在运行时的基础项目的各种可扩展对象相应 Catid<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>值：
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
 
-    -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>
+    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
 若要确定项目范围的 Catid，项目子类型检索的上述属性[VSITEMID。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)从`VSITEMID typedef`。 项目子类型可能还想要控制哪些**属性页**对话框页面显示项目中，依赖于配置和独立的配置。 某些项目子类型可能需要删除内置页，并添加项目子类型特定页。 若要启用此选项，托管客户端项目调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>方法的以下属性：
 

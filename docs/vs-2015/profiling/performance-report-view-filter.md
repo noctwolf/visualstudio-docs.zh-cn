@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8620e5a372d764fef3a75126af52a6212ecc6cd8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54774628"
 ---
 # <a name="performance-report-view-filter"></a>性能报告视图筛选器
@@ -26,7 +26,7 @@ ms.locfileid: "54774628"
   
  可以修改每个筛选器子句以优化结果。 筛选生成器中提供了以下各列。  
   
-|筛选器项|说明|  
+|筛选器项|说明​​|  
 |-----------------|-----------------|  
 |与/或|如果此子句和下一个子句必须都为 true 才能匹配结果，则选择“与”。 如果此子句或下一个子句为 true 即可匹配结果，则选择“或”。|  
 |字段|从当前报告文件中可用的数据字段列表中选择要在筛选器子句中使用的字段。|  

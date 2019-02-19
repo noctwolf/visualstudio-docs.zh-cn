@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c09b4b917e54277ca7f9418a82bdfef9d1663be3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54790160"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 任务
@@ -30,7 +30,7 @@ ms.locfileid: "54790160"
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `AssignProjectConfiguration` 任务的参数。  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`SolutionConfigurationContents`|可选 `string` 输出参数。<br /><br /> 包含 XML 字符串，该字符串包含每个项目的项目配置。 这些配置分配给已命名的项目。|  
 |`DefaultToVcxPlatformMapping`|可选 `string` 输出参数。<br /><br /> 包含以分号分隔的映射列表，这些映射是从由大多数类型所使用的平台名称<br /><br /> 到由 .vcxproj 文件所使用的平台名称的映射。<br /><br /> 例如:<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|  

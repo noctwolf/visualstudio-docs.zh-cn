@@ -1,5 +1,5 @@
 ---
-title: 如何：查看、 保存和配置生成日志文件 |Microsoft Docs
+title: 如何：查看、保存和配置生成日志文件 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54760052"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：查看、保存和配置生成日志文件
@@ -43,7 +43,7 @@ ms.locfileid: "54760052"
   
 3.  在“MSBuild 项目生成输出详细信息”列表中，选择以下值之一，然后选择“确定”按钮。  
   
-    |详细级别|说明|  
+    |详细级别|说明​​|  
     |---------------------|-----------------|  
     |Quiet|仅显示生成总结。|  
     |最低|显示生成总结；错误、警告以及分类为极为重要的信息。|  

@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 096de590d49f5d09614bb9149ae6e5218f2ab7ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54785682"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio 的工作效率提示
@@ -115,7 +115,7 @@ ms.locfileid: "54785682"
 
 -   **查找对话框、菜单命令和选项**。 在[“快速启动”->“环境”->“选项”对话框](../ide/reference/quick-launch-environment-options-dialog-box.md)中，输入要查找的项的关键字或短语。 例如，如果输入 `new project`，则会出现以下选项：
 
-     图 3：快速启动结果列表 `new project`
+     图 3：`new project` 的快速启动结果列表
 
      ![“新建项目”的快速启动结果](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
 
@@ -155,7 +155,7 @@ ms.locfileid: "54785682"
 
      还可以通过创建“解决方案资源管理器”的另一个实例并将其移至其他监视器，以便更轻松地管理文件。 若要创建“解决方案资源管理器”的另一个实例，请打开“解决方案资源管理器”中的快捷菜单，然后选择“新建解决方案资源管理器视图”。
 
--   **自定义在 Visual Studio 中显示的字体**。 您可以更改 IDE 中文本所使用的字体、字号和颜色。 例如，你可以自定义编辑器中特定代码元素的颜色以及工具窗口或整个 IDE 中的字体。 有关详细信息，请参阅[如何：更改字体和颜色](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)以及[如何：在编辑器中更改字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
+-   **自定义在 Visual Studio 中显示的字体**。 您可以更改 IDE 中文本所使用的字体、字号和颜色。 例如，你可以自定义编辑器中特定代码元素的颜色以及工具窗口或整个 IDE 中的字体。 有关详细信息，请参阅[如何：更改字体和颜色](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)和[如何：在编辑器中更改字体和颜色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
 ## <a name="see-also"></a>请参阅
- [常用命令的默认键盘快捷方式](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)[如何：自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)[演练：创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)
+ [常用命令的默认键盘快捷方式](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)[如何： 自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)[演练： 创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)

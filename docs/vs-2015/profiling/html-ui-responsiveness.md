@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54752961"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI 响应能力
@@ -193,7 +193,7 @@ if (performance.mark && performance.measure) {
 -   导航事件，在导航到其他页面时发生。 此事件的工具提示显示目标页面 URL。  
   
 ###  <a name="CPUUtilization"></a> 查看 CPU 使用率  
- 通过“CPU 使用率”图可确定 CPU 活动过多的时间段。 该图提供一段时间内应用程序的 CPU 平均消耗量信息。 信息使用了彩色编码来表示以下特定类别：“正在加载”、“脚本”、垃圾回收 (GC)、“样式”、“渲染”和“图像解码”。 有关这些类别的详细信息，请参阅本主题后面部分的 [Profiler event reference](#ProfilerEvents) 。  
+ 通过“CPU 使用率”图可确定 CPU 活动过多的时间段。 该图提供一段时间内应用程序的 CPU 平均消耗量信息。 信息使用了彩色编码来表示以下具体类别： **“加载”**、 **“脚本”**、垃圾回收（**“GC”**）、 **“样式”**、 **“呈现”** 和 **“图像解码”**。 有关这些类别的详细信息，请参阅本主题后面部分的 [Profiler event reference](#ProfilerEvents) 。  
   
  “CPU 使用率”图显示在所有应用程序线程上花费的时间，它将一个或多个 CPU 的 CPU 使用率值合并为一个百分比值。 当多个 CPU 正在使用时，CPU 使用率值可能超过 100%。  
   

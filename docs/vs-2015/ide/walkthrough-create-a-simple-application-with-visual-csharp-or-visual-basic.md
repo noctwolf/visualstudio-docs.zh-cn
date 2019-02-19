@@ -1,5 +1,5 @@
 ---
-title: 演练：使用视觉对象创建一个简单的应用程序C#或 Visual Basic |Microsoft Docs
+title: 演练：使用 Visual C# 或 Visual Basic 创建简单应用程序 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54802611"
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>演练：使用视觉对象创建一个简单的应用程序C#或 Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>演练：使用 Visual C# 或 Visual Basic 创建简单应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 通过完成本演练，你将熟悉在使用 Visual Studio 开发应用程序时可使用的许多工具、对话框和设计器。 你将创建一个简单的“Hello, World”样式的应用程序、设计 UI、添加代码并调试错误，同时会更多地了解如何在集成开发环境 (IDE) 中工作。  
@@ -92,7 +92,7 @@ ms.locfileid: "54802611"
   
     ![创建 Visual C# WPF 项目，HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
-   Visual Studio 将创建 HelloWPFApp 项目和解决方案， **解决方案资源管理器** 将显示各种文件。 WPF 设计器在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。  您可以选择只查看可视化视图或 XAML 视图。 （有关详细信息，请参阅 [适用于 Windows 窗体开发人员的 WPF 设计器](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)）。 “解决方案资源管理器”中显示以下项：  
+   Visual Studio 将创建 HelloWPFApp 项目和解决方案， **解决方案资源管理器** 将显示各种文件。 WPF 设计器在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。  您可以选择只查看可视化视图或 XAML 视图。 （有关详细信息，请参阅 [适用于 Windows 窗体开发人员的 WPF 设计器](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)）。 **“解决方案资源管理器”** 中显示以下项：  
   
    图 5：项目项  
   
@@ -132,7 +132,7 @@ ms.locfileid: "54802611"
   
    你的窗口应与下图类似：  
   
-   图 7.具有 TextBlock 控件的 greetings 窗口  
+   图 7：具有 TextBlock 控件的 Greetings 窗口  
   
    ![Greetings 窗体上的 TextBlock 控件](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE GreetingswithTextblockonly")  
   
@@ -162,7 +162,7 @@ ms.locfileid: "54802611"
   
     你的窗口应如下所示：  
   
-    图 8- 20。Greetings 窗口中的单选按钮。  
+    图 8：Greetings 窗口中的 RadioButton。  
   
     ![包含文本块和两个单选按钮的 Greetings 窗体](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE Greetingswithradiobuttons")  
   
@@ -259,7 +259,7 @@ ms.locfileid: "54802611"
   
     ![“调试”菜单上的“启动调试”命令](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-    出现一个对话框，指示 IOException 已发生：“找不到资源 'mainwindow.xaml'”。  
+    此时将显示对话框，指示 IOException 已发生：无法定位资源“mainwindow.xaml”。  
   
 2. 选择 **“确定”** 按钮，然后停止调试器。  
   

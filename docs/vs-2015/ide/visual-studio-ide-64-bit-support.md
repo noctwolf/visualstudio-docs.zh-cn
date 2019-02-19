@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ab42cd9466561f64ecb35e65621bcbb91004f8f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775912"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64 位支持
@@ -30,12 +30,12 @@ ms.locfileid: "54775912"
 
 -   [部署 64 位应用程序的必备组件](../deployment/deploying-prerequisites-for-64-bit-applications.md)
 
--   [如何：创建在 64 位平台的 Windows 安装程序](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
+-   [如何：创建适用于 64 位平台的 Windows Installer](http://msdn.microsoft.com/232bfc64-f99a-4cc6-9806-ba70bb9a09ff)
 
 ## <a name="configuring-projects-as-64-bit-applications"></a>将项目作为 64 位应用程序进行配置
  以下主题介绍如何配置要生成为 64 位应用程序的项目。
 
--   [如何：将项目配置为面向平台](../ide/how-to-configure-projects-to-target-platforms.md)
+-   [如何：配置项目以面向平台](../ide/how-to-configure-projects-to-target-platforms.md)
 
 ## <a name="debugging-a-64-bit-application"></a>调试 64 位应用程序
  [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] 在 64 位 Windows 操作系统上运行时，无法使用“编辑并继续”。 以下主题介绍如何调试 64 位应用程序。
@@ -47,4 +47,4 @@ ms.locfileid: "54775912"
 -   [使用转储文件](../debugger/using-dump-files.md)
 
 ## <a name="see-also"></a>请参阅
- [如何：将项目配置为面向平台](../ide/how-to-configure-projects-to-target-platforms.md)
+ [如何：配置项目以面向平台](../ide/how-to-configure-projects-to-target-platforms.md)

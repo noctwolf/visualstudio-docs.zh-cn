@@ -16,10 +16,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b84cff997e24882903abae048dbdd5c3c16f7e17
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54834824"
 ---
 # <a name="uninstall-visual-studio"></a>卸载 Visual Studio
@@ -43,7 +43,7 @@ Visual Studio 2017 的最新文档，请参阅[卸载 Visual Studio 2017](https:
 1.  找到 Visual Studio.exe 文件 （例如，找到"vs_enterprise.exe"）。
 
     > [!NOTE]
-    >  该文件应为"%ProgramData%\Package Cache"的子文件夹中为例：C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
+    >  该文件应为"%ProgramData%\Package Cache"的子文件夹中为例： C:\ProgramData\Package 缓存\\{37e19555-e88d-4aed-9d42-82d0784d2b79} \vs_enterprise.exe
 
 2.  使用运行.exe 文件 /uninstall /force 命令行参数。
 
@@ -73,7 +73,7 @@ Visual Studio 2017 的最新文档，请参阅[卸载 Visual Studio 2017](https:
 
 2. 安装或重新安装你想要使用的 Visual Studio 的早期版本。
 
-   即使安装以前版本的 Visual Studio，安装程序可能仍尝试使用较新版本或发行版，如果有可用。 有关详细信息，请参阅[如何：安装特定版本的 Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)主题。
+   即使安装以前版本的 Visual Studio，安装程序可能仍尝试使用较新版本或发行版，如果有可用。 有关详细信息，请参阅[如何： 安装特定版本的 Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)主题。
 
 ## <a name="see-also"></a>请参阅
  [安装 Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

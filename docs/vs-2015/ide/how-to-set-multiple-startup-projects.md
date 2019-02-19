@@ -1,5 +1,5 @@
 ---
-title: 如何：设置多个启动项目 |Microsoft Docs
+title: 如何：设置多个启动项目 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 729388f71fcad2a9204e41dcc2bc7c3b6a657523
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54760078"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>如何：设置多个启动项目
@@ -31,7 +31,7 @@ Visual Studio 允许指定在启动调试器时如何运行多个项目。
   
 3.  展开“通用属性”节点，然后单击“启动项目”。  
   
-4.  单击**多个启动项目**并设置相应的操作。 有关详细信息，请参阅[NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)。  
+4.  单击**多个启动项目**并设置相应的操作。 有关详细信息，请参阅 [NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)。  
   
 ## <a name="see-also"></a>请参阅  
  [编译和生成](../ide/compiling-and-building-in-visual-studio.md)   
