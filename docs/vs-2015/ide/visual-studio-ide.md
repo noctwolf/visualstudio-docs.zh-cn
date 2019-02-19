@@ -78,7 +78,7 @@ Microsoft Visual Studio 2015 是一套用于创建软件的工具，包括通过
 
  下图显示了 VSTS 中托管的解决方案的“团队资源管理器”窗格：
 
- ![Visual Studio Team Explorer](../ide/media/vs2015-teamexplorer.png "VS2015_TeamExplorer")
+ ![Visual Studio 团队资源管理器](../ide/media/vs2015-teamexplorer.png "VS2015_TeamExplorer")
 
 ## <a name="creating-solutions-and-projects"></a>创建解决方案和项目
  尽管可以使用 Visual Studio 浏览单个代码文件，但更常见的是在 *项目*中进行操作。 对应用程序而言，Visual Studio 项目是一个编译为单个二进制可执行文件（例如 .exe、DLL 或 appx）的文件和资源的集合。 而对于非 ASP.NET 网站，则不生成任何可执行文件，因此项目中只包含 HTML、JavaScript 文件和图像。 因为有时可能需要创建多个二进制文件或密切相关的网站，所以 Visual Studio 提供了解决方案的概念，其中可包含多个项目和网站。 创建项目时，实际创建的是解决方案内的项目，并且以后在必要时可向此解决方案添加更多项目。 例如，如果你拥有 DLL 项目，则可以向加载和使用此 DLL 的解决方案添加 .exe 项目。
@@ -169,7 +169,7 @@ Microsoft Visual Studio 2015 是一套用于创建软件的工具，包括通过
 ## <a name="connecting-to-cloud-services-and-databases"></a>连接到云服务和数据库
  Visual Studio 中的“ [服务器资源管理器](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) ”窗口显示个性化帐户（登录时使用的帐户）下托管的所有帐户的资源，包括 SQL Server 实例、Azure、Salesforce.com、Office 365 和网站。
 
- ![Server Explorer](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
+ ![服务器资源管理器](../ide/media/vs2015-serverexplorer3.png "vs2015_ServerExplorer3")
 
  Visual Studio 包括 [Microsoft SQL Server Data Tools](https://msdn.microsoft.com/data/tools.aspx) (SSDT)，使你能够构建、调试、维护和重构数据库。 可使用数据库项目，或直接使用已连接的数据库实例（本地或非本地）。
 

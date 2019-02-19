@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15dcdbec1407dc646e26f7419e2dd80cec869725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54752257"
 ---
 # <a name="nameprofile"></a>NameProfile
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
   指示性能数据集合可应用到的分析级别。 以下 PROFILE_CONTROL_LEVEL 值可用于指示性能数据集合可应用到的三个级别之一：  
   
-|枚举器|说明|  
+|枚举器|说明​​|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|全局级别设置影响分析运行中的所有进程和线程。|  
 |PROFILE_PROCESSLEVEL|进程级别设置影响指定进程包含的所有线程。|  
@@ -65,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>属性值/返回值  
  函数通过使用 **PROFILE_COMMAND_STATUS** 枚举来指示成功或失败。 返回值可以是下列值之一：  
   
-|枚举器|说明|  
+|枚举器|说明​​|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|指定的分析元素不存在。|  
 |NAME_ERROR_INVALID_NAME|名称无效。|  

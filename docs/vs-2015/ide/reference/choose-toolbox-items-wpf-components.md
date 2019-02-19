@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 773ecc04569850546f03fd0cdb68bfe1a81a79f9
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54835021"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>选择工具箱项，WPF 组件
@@ -30,7 +30,7 @@ ms.locfileid: "54835021"
 - 选中组件旁边的复选框后，该组件的图标将显示在“工具箱”中。  
   
   > [!TIP]
-  >  若要将 WPF 控件的实例添加到打开进行编辑的项目文档，请将其“工具箱”图标拖动到“设计”视图面。 组件的默认标记和代码将插入到项目中，以便进行修改。 有关详细信息，请参阅[如何：管理工具箱窗口](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[如何：操作工具箱选项卡](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
+  >  若要将 WPF 控件的实例添加到打开进行编辑的项目文档，请将其“工具箱”图标拖动到“设计”视图面。 组件的默认标记和代码将插入到项目中，以便进行修改。 有关详细信息，请参阅[如何：管理“工具箱”窗口](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[如何：操作工具箱选项卡](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
   
 - 清除组件旁边的复选框后，将从中“工具箱”中删除相应的图标。  
   
@@ -73,7 +73,7 @@ ms.locfileid: "54835021"
   
   此外，如果将设计时元数据应用到自定义控件，而且此元数据指定将 <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> 设置为 `false`，则该控件不会出现在“工具箱”中。  
   
-  可以通过映射控件的命名空间和程序集，直接在 XAML 视图中引用控件。 有关详细信息，请参阅[如何：导入 XAML Namespace](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)。  
+  可以通过映射控件的命名空间和程序集，直接在 XAML 视图中引用控件。 有关详细信息，请参阅[如何：将命名空间导入 XAML](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)。  
   
 ## <a name="see-also"></a>请参阅  
  [“选择工具箱项”对话框 (Visual Studio)](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   

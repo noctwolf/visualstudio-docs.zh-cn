@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 79c7e4fd86223938a1d38436eb767c86b2cf583d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54760908"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷键
@@ -127,7 +127,7 @@ ms.locfileid: "54760908"
 |调试.并行监视 3|Ctrl+Shift+D、3|
 |调试.并行监视 4|Ctrl+Shift+D、4|
 |调试.进程|Ctrl+Alt+Z|
-|调试.快速监视|Shift+F9<br /><br /> 或<br /><br /> Ctrl+Alt+Q|
+|调试.快速监视|Shift+F9<br /><br /> or<br /><br /> Ctrl+Alt+Q|
 |Debug.RefreshWindowsapp|Ctrl+Shift+R|
 |调试.寄存器|Ctrl+Alt+G|
 |调试.重新启动|Ctrl+Shift+F5|
@@ -174,9 +174,9 @@ ms.locfileid: "54760908"
 
 |命令||
 |--------------|-|
-|编辑.复制|Ctrl+C<br /><br /> 或<br /><br /> Ctrl+Ins|
-|编辑.剪切|Ctrl+X<br /><br /> 或<br /><br /> Shift+Delete|
-|编辑.循环应用剪贴板中的复制项|Ctrl+Shift+V<br /><br /> 或<br /><br /> Ctrl+Shift+Ins|
+|编辑.复制|Ctrl+C<br /><br /> or<br /><br /> Ctrl+Ins|
+|编辑.剪切|Ctrl+X<br /><br /> or<br /><br /> Shift+Delete|
+|编辑.循环应用剪贴板中的复制项|Ctrl+Shift+V<br /><br /> or<br /><br /> Ctrl+Shift+Ins|
 |编辑.删除|删除|
 |编辑.查找|Ctrl+F|
 |编辑.查找所有引用|Shift+F12|
@@ -205,11 +205,11 @@ ms.locfileid: "54760908"
 |编辑.下一书签|Ctrl+K、Ctrl+N|
 |编辑.文件夹中的下一书签|Ctrl+Shift+K、Ctrl+Shift+N|
 |编辑.打开文件|Ctrl+Shift+G|
-|编辑.粘贴|Ctrl+V<br /><br /> 或<br /><br /> Shift+Ins|
+|编辑.粘贴|Ctrl+V<br /><br /> or<br /><br /> Shift+Ins|
 |编辑.上一书签|Ctrl+K、Ctrl+P|
 |编辑.文件夹中的上一书签|Ctrl+Shift+K、Ctrl+Shift+P|
 |编辑.快速查找符号|Shift+Alt+F12|
-|编辑.重做|Ctrl+Y<br /><br /> 或<br /><br /> Ctrl+Shift+Z<br /><br /> 或<br /><br /> Shift+Alt+Backspace|
+|编辑.重做|Ctrl+Y<br /><br /> or<br /><br /> Ctrl+Shift+Z<br /><br /> or<br /><br /> Shift+Alt+Backspace|
 |编辑.刷新远程引用|Ctrl+Shift+J|
 |编辑.替换|Ctrl+H|
 |编辑.在文件中替换|Ctrl+Shift+H|
@@ -227,7 +227,7 @@ ms.locfileid: "54760908"
 |编辑.将控件调大到上侧网格|Shift+向上键|
 |编辑.停止搜索|Alt+F3、S|
 |编辑.外侧代码|Ctrl+K、Ctrl+S|
-|编辑.取消|Ctrl+Z<br /><br /> 或<br /><br /> Alt+Backspace|
+|编辑.取消|Ctrl+Z<br /><br /> or<br /><br /> Alt+Backspace|
 
 ###  <a name="bkmk_editorContext"></a>编辑器上下文菜单
 
@@ -238,7 +238,7 @@ ms.locfileid: "54760908"
 |编辑器上下文菜单.代码窗口.执行|Ctrl+Alt+F5|
 |编辑器上下文菜单.代码窗口.转到视图|Ctrl+M、Ctrl+G|
 |编辑器上下文菜单.代码窗口.切换标头代码文件|Ctrl+K、Ctrl+O|
-|编辑器上下文菜单.代码窗口.查看调用层次结构|Ctrl+K、Ctrl+T<br /><br /> 或<br /><br /> Ctrl+K、T|
+|编辑器上下文菜单.代码窗口.查看调用层次结构|Ctrl+K、Ctrl+T<br /><br /> or<br /><br /> Ctrl+K、T|
 
 ###  <a name="bkmk_file"></a>文件
 
@@ -311,33 +311,33 @@ ms.locfileid: "54760908"
 
 |命令|键盘快捷键|
 |--------------|------------------------|
-|解决方案资源管理器.打开文件筛选器|Ctrl+[、O<br /><br /> 或<br /><br /> Ctrl+[、Ctrl+O|
-|解决方案资源管理器.挂起更改筛选器|Ctrl+[、P<br /><br /> 或<br /><br /> Ctrl+[、Ctrl+P|
-|解决方案资源管理器.与活动文档同步|Ctrl+[、S<br /><br /> 或<br /><br /> Ctrl+[、Ctrl+S|
+|解决方案资源管理器.打开文件筛选器|Ctrl+[、O<br /><br /> or<br /><br /> Ctrl+[、Ctrl+O|
+|解决方案资源管理器.挂起更改筛选器|Ctrl+[、P<br /><br /> or<br /><br /> Ctrl+[、Ctrl+P|
+|解决方案资源管理器.与活动文档同步|Ctrl+[、S<br /><br /> or<br /><br /> Ctrl+[、Ctrl+S|
 
 ###  <a name="bkmk_team"></a>团队
 
 |命令|键盘快捷键|
 |--------------|------------------------|
-|团队.Git.转到 Git 分支|Ctrl+0、Ctrl+N<br /><br /> 或<br /><br /> Ctrl+0、N|
-|团队.Git.转到 Git 更改|Ctrl+0、Ctrl+G<br /><br /> 或<br /><br /> Ctrl+0、G|
-|团队.Git.转到 Git 提交|Ctrl+0、Ctrl+O<br /><br /> 或<br /><br /> Ctrl+0、O|
+|团队.Git.转到 Git 分支|Ctrl+0、Ctrl+N<br /><br /> or<br /><br /> Ctrl+0、N|
+|团队.Git.转到 Git 更改|Ctrl+0、Ctrl+G<br /><br /> or<br /><br /> Ctrl+0、G|
+|团队.Git.转到 Git 提交|Ctrl+0、Ctrl+O<br /><br /> or<br /><br /> Ctrl+0、O|
 |团队.团队资源管理器搜索|Ctrl+'|
 
 ###  <a name="bkmk_TFcontext"></a>Team Foundation 上下文菜单
 
 |命令|键盘快捷键|
 |--------------|------------------------|
-|Team Foundation 上下文菜单.命令.转到生成|Ctrl+0、Ctrl+B<br /><br /> 或<br /><br /> Ctrl+0、B|
-|Team Foundation 上下文菜单.命令.转到连接|Ctrl+0、Ctrl+C<br /><br /> 或<br /><br /> Ctrl+0、C|
-|Team Foundation 上下文菜单.命令.转到文档|Ctrl+0、Ctrl+D<br /><br /> 或<br /><br /> Ctrl+0、D|
-|Team Foundation 上下文菜单.命令.转到主页|Ctrl+0、Ctrl+H<br /><br /> 或<br /><br /> Ctrl+0、H|
-|Team Foundation 上下文菜单.命令.转到我的工作|Ctrl+0、Ctrl+M<br /><br /> 或<br /><br /> Ctrl+0、M|
-|Team Foundation 上下文菜单.命令.转到挂起的更改|Ctrl+0、Ctrl+P<br /><br /> 或<br /><br /> Ctrl+0、P|
-|Team Foundation 上下文菜单.命令.转到报告|Ctrl+0、Ctrl+R<br /><br /> 或<br /><br /> Ctrl+0、R|
-|Team Foundation 上下文菜单.命令.转到设置|Ctrl+0、Ctrl+S<br /><br /> 或<br /><br /> Ctrl+0、S|
-|Team Foundation 上下文菜单.命令.转到 Web 访问|Ctrl+0、Ctrl+A<br /><br /> 或<br /><br /> Ctrl+0、A|
-|Team Foundation 上下文菜单.命令.转到工作项|Ctrl+0、Ctrl+W<br /><br /> 或<br /><br /> Ctrl+0、W|
+|Team Foundation 上下文菜单.命令.转到生成|Ctrl+0、Ctrl+B<br /><br /> or<br /><br /> Ctrl+0、B|
+|Team Foundation 上下文菜单.命令.转到连接|Ctrl+0、Ctrl+C<br /><br /> or<br /><br /> Ctrl+0、C|
+|Team Foundation 上下文菜单.命令.转到文档|Ctrl+0、Ctrl+D<br /><br /> or<br /><br /> Ctrl+0、D|
+|Team Foundation 上下文菜单.命令.转到主页|Ctrl+0、Ctrl+H<br /><br /> or<br /><br /> Ctrl+0、H|
+|Team Foundation 上下文菜单.命令.转到我的工作|Ctrl+0、Ctrl+M<br /><br /> or<br /><br /> Ctrl+0、M|
+|Team Foundation 上下文菜单.命令.转到挂起的更改|Ctrl+0、Ctrl+P<br /><br /> or<br /><br /> Ctrl+0、P|
+|Team Foundation 上下文菜单.命令.转到报告|Ctrl+0、Ctrl+R<br /><br /> or<br /><br /> Ctrl+0、R|
+|Team Foundation 上下文菜单.命令.转到设置|Ctrl+0、Ctrl+S<br /><br /> or<br /><br /> Ctrl+0、S|
+|Team Foundation 上下文菜单.命令.转到 Web 访问|Ctrl+0、Ctrl+A<br /><br /> or<br /><br /> Ctrl+0、A|
+|Team Foundation 上下文菜单.命令.转到工作项|Ctrl+0、Ctrl+W<br /><br /> or<br /><br /> Ctrl+0、W|
 
 ###  <a name="bkmk_test"></a>测试
 
@@ -378,12 +378,12 @@ ms.locfileid: "54760908"
 |视图.调用层次结构|Ctrl+Alt+K|
 |视图.类视图|Ctrl+Shift+C|
 |视图.类视图转到搜索组合框|Ctrl+K、Ctrl+V|
-|视图.代码定义窗口|Ctrl+\\、D<br /><br /> 或<br /><br /> Ctrl+\\、Ctrl+D|
+|视图.代码定义窗口|Ctrl+\\、D<br /><br /> or<br /><br /> Ctrl+\\、Ctrl+D|
 |视图.命令窗口|Ctrl+Alt+A|
 |View.DataSources|Shift+Alt+D|
 |视图.文档大纲|Ctrl+Alt+T|
 |视图.编辑标签|F2|
-|视图.错误列表|Ctrl+\\、E<br /><br /> 或<br /><br /> Ctrl+\\、Ctrl+E|
+|视图.错误列表|Ctrl+\\、E<br /><br /> or<br /><br /> Ctrl+\\、Ctrl+E|
 |视图.F# Interactive|Ctrl+Alt+F|
 |视图.查找符号结果|Ctrl+Alt+F12|
 |视图.向前|Alt + 向右键|
@@ -392,7 +392,7 @@ ms.locfileid: "54760908"
 |视图.向后定位|Ctrl+-|
 |视图.向前定位|Ctrl+Shift+-|
 |视图.下一个错误|Ctrl+Shift+F12|
-|视图.通知|Ctrl+W、N<br /><br /> 或<br /><br /> Ctrl+W、Ctrl+N|
+|视图.通知|Ctrl+W、N<br /><br /> or<br /><br /> Ctrl+W、Ctrl+N|
 |视图.对象浏览器|Ctrl+Alt+J|
 |视图.对象浏览器转到搜索组合框|Ctrl+K、Ctrl+R|
 |视图.输出|Ctrl+Alt+O|
@@ -401,10 +401,10 @@ ms.locfileid: "54760908"
 |视图.属性页|Shift+F4|
 |视图.资源视图|Ctrl+Shift+E|
 |视图.服务器资源管理器|Ctrl+Alt+S|
-|视图.显示智能标记|Shift+Alt+F10<br /><br /> 或<br /><br /> Ctrl+.|
+|视图.显示智能标记|Shift+Alt+F10<br /><br /> or<br /><br /> Ctrl+.|
 |视图.解决方案资源管理器|Ctrl+Alt+L|
 |视图.SQL Server 对象浏览器|Ctrl+\\、Ctrl+S|
-|视图.任务列表|Ctrl+\\、T<br /><br /> 或<br /><br /> Ctrl+\\、Ctrl+T|
+|视图.任务列表|Ctrl+\\、T<br /><br /> or<br /><br /> Ctrl+\\、Ctrl+T|
 |视图.Tfs 团队资源管理器|Ctrl+\\、Ctrl+M|
 |视图.工具箱|Ctrl+Alt+X|
 |视图.UML 模型资源管理器|Ctrl+\\、Ctrl+U|
@@ -428,14 +428,14 @@ ms.locfileid: "54760908"
 |窗口.下一个文档窗口导航栏|Ctrl+Tab|
 |窗口.下一窗格|Alt+F6|
 |窗口.下一个拆分窗格|F6|
-|窗口.下一选项卡|Ctrl+Alt+PgDn<br /><br /> 或<br /><br /> Ctrl+PgDn|
+|窗口.下一选项卡|Ctrl+Alt+PgDn<br /><br /> or<br /><br /> Ctrl+PgDn|
 |Window.NextTabandAddtoSelection|Ctrl+Shift+Alt+PgDn|
 |窗口.下一个工具窗口导航栏|Alt+F7|
 |窗口.上一个文档窗口|Ctrl+Shift+F6|
 |窗口.上一个文档窗口导航栏|Ctrl+Shift+Tab|
 |窗口.上一窗格|Shift+Alt+F6|
 |窗口.上一个拆分窗格|Shift+F6|
-|窗口.上一选项卡|Ctrl+Alt+PgUp<br /><br /> 或<br /><br /> Ctrl+PgUp|
+|窗口.上一选项卡|Ctrl+Alt+PgUp<br /><br /> or<br /><br /> Ctrl+PgUp|
 |Window.PreviousTabandAddtoSelection|Ctrl+Shift+Alt+PgUp|
 |窗口.上一个工具窗口导航栏|Shift+Alt+F7|
 |窗口.快速启动|Ctrl+Q|
@@ -536,7 +536,7 @@ ms.locfileid: "54760908"
 |体系结构上下文菜单.定向关系图上下文菜单.高级.选择.两个依赖项|B|
 |体系结构上下文菜单.定向关系图上下文菜单.高级.选择.传入依赖项|I|
 |体系结构上下文菜单.定向关系图上下文菜单.高级.选择.传出依赖项|O|
-|体系结构上下文菜单.定向关系图上下文菜单.新注释|Ctrl+Shift+K<br /><br /> 或<br /><br /> Ctrl+E、C|
+|体系结构上下文菜单.定向关系图上下文菜单.新注释|Ctrl+Shift+K<br /><br /> or<br /><br /> Ctrl+E、C|
 |体系结构上下文菜单.定向关系图上下文菜单.删除|删除|
 |体系结构上下文菜单.定向关系图上下文菜单.重命名|F2|
 
@@ -638,10 +638,10 @@ ms.locfileid: "54760908"
 |命令|键盘快捷键|
 |--------------|------------------------|
 |提交所有编辑|Shift+Alt+U|
-|SQL.展开通配符|Ctrl+R、E<br /><br /> 或<br /><br /> Ctrl+R、Ctrl+E|
-|SQL.完全限定名称|Ctrl+R、Q<br /><br /> 或<br /><br /> Ctrl+R、Ctrl+Q|
-|SQL.移至架构|Ctrl+R、M<br /><br /> 或<br /><br /> Ctrl+R、Ctrl+M|
-|SQL.重命名|F2<br /><br /> 或<br /><br /> Ctrl+R、R<br /><br /> 或<br /><br /> Ctrl+R、Ctrl+R|
+|SQL.展开通配符|Ctrl+R、E<br /><br /> or<br /><br /> Ctrl+R、Ctrl+E|
+|SQL.完全限定名称|Ctrl+R、Q<br /><br /> or<br /><br /> Ctrl+R、Ctrl+Q|
+|SQL.移至架构|Ctrl+R、M<br /><br /> or<br /><br /> Ctrl+R、Ctrl+M|
+|SQL.重命名|F2<br /><br /> or<br /><br /> Ctrl+R、R<br /><br /> or<br /><br /> Ctrl+R、Ctrl+R|
 |在脚本面板中查看文件|Shift+Alt+PgDn|
 
 ##  <a name="bkmk_TSQLeditor"></a>Microsoft SQL Server Data Tools，T-SQL 编辑器
@@ -650,10 +650,10 @@ ms.locfileid: "54760908"
 |--------------|------------------------|
 |提交所有编辑|Shift+Alt+U|
 |SQL.使用调试器执行|Alt+F5|
-|SQL.展开通配符|Ctrl+R、E<br /><br /> 或<br /><br /> Ctrl+R、Ctrl+E|
-|SQL.完全限定名称|Ctrl+R、Q<br /><br /> 或<br /><br /> Ctrl+R、Ctrl+Q|
-|SQL.移至架构|Ctrl+R、M<br /><br /> 或<br /><br /> Ctrl+R、Ctrl+M|
-|SQL.重命名|F2<br /><br /> 或<br /><br /> Ctrl+R、R<br /><br /> 或<br /><br /> Ctrl+R、Ctrl+R|
+|SQL.展开通配符|Ctrl+R、E<br /><br /> or<br /><br /> Ctrl+R、Ctrl+E|
+|SQL.完全限定名称|Ctrl+R、Q<br /><br /> or<br /><br /> Ctrl+R、Ctrl+Q|
+|SQL.移至架构|Ctrl+R、M<br /><br /> or<br /><br /> Ctrl+R、Ctrl+M|
+|SQL.重命名|F2<br /><br /> or<br /><br /> Ctrl+R、R<br /><br /> or<br /><br /> Ctrl+R、Ctrl+R|
 |SQL.TSql 编辑器取消查询|Alt+Break|
 |SQL.TSql 编辑器执行查询|Ctrl+Shift+E|
 |SQL.TSql 编辑器结果显示为文件|Ctrl+D、F|
@@ -796,7 +796,7 @@ ms.locfileid: "54760908"
 
 |                             命令                              |                  键盘快捷键                   |
 |-------------------------------------------------------------------|-------------------------------------------------------|
-|                          编辑.分行                           |     Enter<br /><br /> 或<br /><br /> Shift+Enter      |
+|                          编辑.分行                           |     Enter<br /><br /> or<br /><br /> Shift+Enter      |
 |                           编辑.左移字符                           |                      向左键                       |
 |                        编辑.向左扩展一个字符                        |                   Shift+向左键                    |
 |                     编辑.向左扩展一个字符列                     |                 Shift+Alt+向左键                  |
@@ -810,10 +810,10 @@ ms.locfileid: "54760908"
 |                         编辑.折叠标记                          |                    Ctrl+M、Ctrl+T                     |
 |                    编辑.折叠到定义                     |                    Ctrl+M、Ctrl+O                     |
 |                       编辑.注释选定内容                       |                    Ctrl+K、Ctrl+C                     |
-|                         编辑.完成单词                         | Ctrl+空格键<br /><br /> 或<br /><br /> Alt + 向右键 |
+|                         编辑.完成单词                         | Ctrl+空格键<br /><br /> or<br /><br /> Alt + 向右键 |
 |                       编辑.复制参数提示                       |                   Ctrl+Shift+Alt+C                    |
 |                     编辑.减少筛选器级别                      |                         Alt+,                         |
-|                       编辑.向后删除                        |   Backspace<br /><br /> 或<br /><br /> Shift+Bkspce   |
+|                       编辑.向后删除                        |   Backspace<br /><br /> or<br /><br /> Shift+Bkspce   |
 |                  编辑.删除水平空白                  |                    Ctrl+K、Ctrl+\                     |
 |                         编辑.文档结尾                          |                       Ctrl+End                        |
 |                      编辑.文档结尾扩展                       |                    Ctrl+Shift+End                     |
@@ -961,8 +961,8 @@ ms.locfileid: "54760908"
 |格式.垂直居中|Ctrl+F9|
 |格式.检查助记键|Ctrl+M|
 |格式.按内容调整大小|Shift+F7|
-|格式.横向间隔|Alt + 向右键<br /><br /> 或<br /><br /> Alt + 向左键|
-|格式.纵向间隔|Alt+向上键<br /><br /> 或<br /><br /> Alt+向下键|
+|格式.横向间隔|Alt + 向右键<br /><br /> or<br /><br /> Alt + 向左键|
+|格式.纵向间隔|Alt+向上键<br /><br /> or<br /><br /> Alt+向下键|
 |格式.Tab 键顺序|Ctrl+D|
 |格式.测试对话框|Ctrl+T|
 |格式.切换辅助线|Ctrl+G|
@@ -988,14 +988,14 @@ ms.locfileid: "54760908"
 |图像.放大工具|Ctrl+M|
 |图像.放大|Ctrl+Shift+M|
 |图像.新建图像类型|Insert|
-|图像.下一种颜色|Ctrl+]<br /><br /> 或<br /><br /> Ctrl+向右键|
-|Image.NextRightColor|Ctrl+Shift+]<br /><br /> 或<br /><br /> Ctrl+Shift+向右键|
+|图像.下一种颜色|Ctrl+]<br /><br /> or<br /><br /> Ctrl+向右键|
+|Image.NextRightColor|Ctrl+Shift+]<br /><br /> or<br /><br /> Ctrl+Shift+向右键|
 |图像.空心椭圆工具|Shift+Alt+P|
 |图像.空心矩形工具|Shift+Alt+R|
 |图像.空心圆角矩形工具|Shift+Alt+W|
 |图像.铅笔工具|Ctrl+I|
-|图像.上一种颜色|Ctrl+[<br /><br /> 或<br /><br /> Ctrl+向左键|
-|Image.PreviousRightColor|Ctrl+Shift+[<br /><br /> 或<br /><br /> Ctrl+Shift+向左键|
+|图像.上一种颜色|Ctrl+[<br /><br /> or<br /><br /> Ctrl+向左键|
+|Image.PreviousRightColor|Ctrl+Shift+[<br /><br /> or<br /><br /> Ctrl+Shift+向左键|
 |图像.矩形选择工具|Shift+Alt+S|
 |图像.矩形工具|Alt+R|
 |图像.旋转 90 度|Ctrl+Shift+H|
@@ -1006,8 +1006,8 @@ ms.locfileid: "54760908"
 |图像.较小画笔|Ctrl+-|
 |图像.文本工具|Ctrl+T|
 |图像.将所选内容用作画笔|Ctrl+U|
-|图像.放大|Ctrl+Shift+.<br /><br /> 或<br /><br /> Ctrl+向上键|
-|图像.缩小|Ctrl+Shift+,<br /><br /> 或<br /><br /> Ctrl+向下键|
+|图像.放大|Ctrl+Shift+.<br /><br /> or<br /><br /> Ctrl+向上键|
+|图像.缩小|Ctrl+Shift+,<br /><br /> or<br /><br /> Ctrl+向下键|
 
 ##  <a name="bkmk_vcstringeditor"></a>VC 字符串编辑器
 
@@ -1099,27 +1099,27 @@ ms.locfileid: "54760908"
 
 |命令|键盘快捷键|
 |--------------|------------------------|
-|编辑.完成单词|Ctrl+K、W<br /><br /> 或<br /><br /> Ctrl+K、Ctrl+W<br /><br /> 或<br /><br /> Ctrl+空格键<br /><br /> 或<br /><br /> Alt + 向右键|
+|编辑.完成单词|Ctrl+K、W<br /><br /> or<br /><br /> Ctrl+K、Ctrl+W<br /><br /> or<br /><br /> Ctrl+空格键<br /><br /> or<br /><br /> Alt + 向右键|
 |编辑.减少筛选器级别|Alt+,|
 |编辑.增加筛选器级别|Alt+.|
-|编辑.列出成员|Ctrl+K、L<br /><br /> 或<br /><br /> Ctrl+K、Ctrl+L<br /><br /> 或<br /><br /> Ctrl+J|
-|编辑.参数信息|Ctrl+K、P<br /><br /> 或<br /><br /> Ctrl+K、Ctrl+P<br /><br /> 或<br /><br /> Ctrl+Shift+空格键|
-|编辑.快速信息|Ctrl+K、I<br /><br /> 或<br /><br /> Ctrl+K、Ctrl+I|
-|工作流设计器.折叠|Ctrl+E、Ctrl+C<br /><br /> 或<br /><br /> Ctrl+E、C|
-|工作流设计器.全部折叠|或|
-|工作流设计器.连接节点|Ctrl+E、Ctrl+F<br /><br /> 或<br /><br /> Ctrl+E、F|
-|工作流设计器.创建变量|Ctrl+E、Ctrl+N<br /><br /> 或<br /><br /> Ctrl+E、N|
-|工作流设计器.全部展开|Ctrl+E、Ctrl+X<br /><br /> 或<br /><br /> Ctrl+E、X|
-|工作流设计器.就地展开|Ctrl+E、Ctrl+E<br /><br /> 或<br /><br /> Ctrl+E、E|
-|工作流设计器.转到父级|Ctrl+E、Ctrl+P<br /><br /> 或<br /><br /> Ctrl+E、P|
-|工作流设计器.移动焦点|Ctrl+E、Ctrl+M<br /><br /> 或<br /><br /> Ctrl+E、M|
+|编辑.列出成员|Ctrl+K、L<br /><br /> or<br /><br /> Ctrl+K、Ctrl+L<br /><br /> 或<br /><br /> Ctrl+J|
+|编辑.参数信息|Ctrl+K、P<br /><br /> or<br /><br /> Ctrl+K、Ctrl+P<br /><br /> or<br /><br /> Ctrl+Shift+空格键|
+|编辑.快速信息|Ctrl+K、I<br /><br /> or<br /><br /> Ctrl+K、Ctrl+I|
+|工作流设计器.折叠|Ctrl+E、Ctrl+C<br /><br /> or<br /><br /> Ctrl+E、C|
+|工作流设计器.全部折叠|or|
+|工作流设计器.连接节点|Ctrl+E、Ctrl+F<br /><br /> or<br /><br /> Ctrl+E、F|
+|工作流设计器.创建变量|Ctrl+E、Ctrl+N<br /><br /> or<br /><br /> Ctrl+E、N|
+|工作流设计器.全部展开|Ctrl+E、Ctrl+X<br /><br /> or<br /><br /> Ctrl+E、X|
+|工作流设计器.就地展开|Ctrl+E、Ctrl+E<br /><br /> or<br /><br /> Ctrl+E、E|
+|工作流设计器.转到父级|Ctrl+E、Ctrl+P<br /><br /> or<br /><br /> Ctrl+E、P|
+|工作流设计器.移动焦点|Ctrl+E、Ctrl+M<br /><br /> or<br /><br /> Ctrl+E、M|
 |工作流设计器.在设计器中导航|Ctrl+Alt+F6|
-|工作流设计器.还原|Ctrl+E、Ctrl+R<br /><br /> 或<br /><br /> Ctrl+E、R|
-|工作流设计器.显示隐藏参数设计器|Ctrl+E、Ctrl+A<br /><br /> 或<br /><br /> Ctrl+E、A|
-|工作流设计器.显示隐藏导入设计器|Ctrl+E、Ctrl+I<br /><br /> 或<br /><br /> Ctrl+E、I|
-|工作流设计器.显示隐藏摘要图|Ctrl+E、Ctrl+O<br /><br /> 或<br /><br /> Ctrl+E、O|
-|工作流设计器.显示隐藏变量设计器|Ctrl+E、Ctrl+V<br /><br /> 或<br /><br /> Ctrl+E、V|
-|工作流设计器.切换选择|Ctrl+E、Ctrl+Ｓ<br /><br /> 或<br /><br /> Ctrl+E、S|
+|工作流设计器.还原|Ctrl+E、Ctrl+R<br /><br /> or<br /><br /> Ctrl+E、R|
+|工作流设计器.显示隐藏参数设计器|Ctrl+E、Ctrl+A<br /><br /> or<br /><br /> Ctrl+E、A|
+|工作流设计器.显示隐藏导入设计器|Ctrl+E、Ctrl+I<br /><br /> or<br /><br /> Ctrl+E、I|
+|工作流设计器.显示隐藏摘要图|Ctrl+E、Ctrl+O<br /><br /> or<br /><br /> Ctrl+E、O|
+|工作流设计器.显示隐藏变量设计器|Ctrl+E、Ctrl+V<br /><br /> or<br /><br /> Ctrl+E、V|
+|工作流设计器.切换选择|Ctrl+E、Ctrl+Ｓ<br /><br /> or<br /><br /> Ctrl+E、S|
 |工作流设计器.放大|Ctrl+Num +|
 |工作流设计器.缩小|Ctrl+Num -|
 

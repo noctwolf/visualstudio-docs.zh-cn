@@ -1,5 +1,5 @@
 ---
-title: 如何：还原C#重构代码片段 |Microsoft Docs
+title: 如何：还原 C# 重构代码片段 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,13 +13,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c9ebd6b96a24b10601257d5eefc58014ef7058c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782591"
 ---
-# <a name="how-to-restore-c-refactoring-snippets"></a>如何：还原C#重构代码片段
+# <a name="how-to-restore-c-refactoring-snippets"></a>如何：还原 C# 重构代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 C# 重构操作依赖于在以下目录中找到的代码片段：  

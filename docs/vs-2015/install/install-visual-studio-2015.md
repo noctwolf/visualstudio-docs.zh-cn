@@ -3,10 +3,7 @@ title: 安装 Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -21,13 +18,13 @@ ms.assetid: da049020-cfda-40d7-8ff4-7492772b620f
 caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 55dad8adf4b3ce6e79214471c93052318f7228f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ecb6e2ef6927638aa06bbb04a09f64f8ca4c4a46
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828051"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54799172"
 ---
 # <a name="install-visual-studio-2015"></a>安装 Visual Studio 2015
 
@@ -44,9 +41,9 @@ ms.locfileid: "53828051"
 |![下载 Visual Studio](../install/media/downloads.png "下载") |**下载**若要安装 Visual Studio 2015，可以下载产品的可执行文件从[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)页 （需要订阅），或使用装箱产品中的安装媒体。 [了解有关如何下载 Visual Studio 的当前或上一个版本的详细信息](https://www.visualstudio.com/vs/older-downloads/)。|
 |![了解有关功能的详细信息](../install/media/features.png "功能") |**功能**若要了解有关 Visual Studio 2015 中的功能的详细信息，请参阅发行说明[RTM](https://www.visualstudio.com/news/vs2015-vs)， [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs)， [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs)，以及[Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs)。|
 |![了解什么是在每个 SKU](../install/media/sku.png "Sku") |**SKU**：若要查看 Visual Studio 2015 各个版本中的可用功能，请参阅我们的[比较 Visual Studio 产品](http://go.microsoft.com/fwlink/?LinkID=242142)页。|
-|![查看系统要求](../install/media/system-requirements.png "系统要求") |**系统要求**：若要查看 Visual Studio 2015 各个版本的系统要求，请参阅 [Visual Studio 2015 兼容性](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs)页。|
+|![查看系统要求](../install/media/system-requirements.png "系统要求") |**系统要求**： 若要查看每个版本的 Visual Studio 2015 的系统要求，请参阅[Visual Studio 2015 兼容性](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs)页。|
 |![查找产品密钥](../install/media/product-keys.png "产品密钥") |**产品密钥**若要查找产品密钥，请参阅[如何：查找 Visual Studio 产品密钥](../install/how-to-locate-the-visual-studio-product-key.md)主题。|
-|![了解有关许可的更多信息](../install/media/licensing.png "许可") |**授权**：若要了解个人和企业客户的授权选项，请参阅 [Visual Studio 和 MSDN 授权](https://www.microsoft.com/download/details.aspx?id=13350)白皮书。|
+|![了解有关许可的更多信息](../install/media/licensing.png "许可") |**许可**： 若要了解有关许可的个人或企业客户的选项，请参阅[Visual Studio 和 MSDN 许可](https://www.microsoft.com/download/details.aspx?id=13350)白皮书。|
 
 ##  <a name="custom"></a> 默认安装与自定义安装
  在安装 Visual Studio 2015 时，你可以包括或排除你每天都会使用的组件。 这意味着，默认安装比自定义安装所占用的空间更小，安装速度更快。 这还意味着在以前的版本中，默认安装的许多组件现在被视为必须在此版本中显式选择的自定义组件。
@@ -83,7 +80,7 @@ ms.locfileid: "53828051"
 |调试程序|SeDebugPrivilege|
 |管理审核和安全日志|Sesecurityprivilege|
 
- 有关此本地管理员帐户要求的详细信息，请参阅知识库文章： [如果安装帐户没有某些用户权限，则 SQL Server 安装失败](https://support.microsoft.com/en-us/kb/2000257)。
+ 有关此本地管理员帐户要求的详细信息，请参阅知识库文章： [如果安装帐户没有某些用户权限，则 SQL Server 安装失败](https://support.microsoft.com/kb/2000257)。
 
 ###  <a name="BKMK_Media"></a> 使用安装媒体
  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]安装媒体上的根目录中安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，请运行所需版本的安装文件：
@@ -187,7 +184,7 @@ ms.locfileid: "53828051"
 
 ##  <a name="relatedTopics"></a>相关主题
 
-|Title|说明|
+|Title|说明​​|
 |-----------|-----------------|
 |[创建 Visual Studio 的脱机安装](../install/create-an-offline-installation-of-visual-studio.md)|介绍如何安装 Visual Studio 未连接到 Internet 时。
 |[并行安装 Visual Studio 版本](../install/install-visual-studio-versions-side-by-side.md)|提供有关如何在同一台计算机上安装多个 Visual Studio 版本的信息。|

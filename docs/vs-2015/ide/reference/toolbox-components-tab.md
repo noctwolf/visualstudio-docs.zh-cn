@@ -12,17 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54775883"
 ---
 # <a name="toolbox-components-tab"></a>工具箱，“组件”选项卡
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
   
-显示可以添加到 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 和 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 设计器的组件。 除 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 附带的 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 组件（如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 组件）外，还可向此选项卡添加自己的组件或第三方组件。有关更多信息，请参见[如何：操作工具箱选项卡](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
+显示可以添加到 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 和 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 设计器的组件。 除 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 附带的 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 组件（如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 组件）外，还可向此选项卡添加自己的组件或第三方组件。有关详细信息，请参阅[如何：操作工具箱选项卡](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
   
  若要显示此选项卡，请从“视图”菜单中选择“工具箱”。 在“工具箱”中，选择“组件”选项卡。  
   

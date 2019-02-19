@@ -11,10 +11,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54764843"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>在 Visual Studio 2015 中调试入门
@@ -22,13 +22,13 @@ ms.locfileid: "54764843"
 
 Visual Studio 2015 提供一组强大的集成项目生成和调试工具。 本主题将介绍如何开始使用一组最基本的调试 UI 功能。
 
- 注意:此页底部有指向更高级功能以及特定于平台或功能的主题的链接。
+ 注意：此页底部有指向更高级功能以及特定于平台或功能的主题的链接。
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio-2015"></a>我的代码不起作用。 Visual Studio 2015，求助！
  你已经想到了编辑器并创建了一些代码。 现在，你想要开始调试该代码。 与大多数 IDE 一样，Visual Studio 2015 有两个调试阶段：生成代码以捕获并解决项目和编译器错误；在环境中运行代码以捕获并解决运行时和动态错误。
 
 ### <a name="configuring-a-build"></a>配置生成
- 生成配置有两种基本类型：“调试”和“发布”。 第一种配置生成更慢、更大的可执行文件，此可执行程序实现更丰富的交互式运行时调试体验，但应永远不会投入市场销售。 第二种配置生成更快、更优化的可执行文件，此可执行文件适合投入市场销售（至少从编译器的角度来看是这样）。
+ 生成配置有两种基本类型：**调试**和**发布**。 第一种配置生成更慢、更大的可执行文件，此可执行程序实现更丰富的交互式运行时调试体验，但应永远不会投入市场销售。 第二种配置生成更快、更优化的可执行文件，此可执行文件适合投入市场销售（至少从编译器的角度来看是这样）。
 
  默认的生成配置是**调试**。
 
@@ -44,7 +44,7 @@ Visual Studio 2015 提供一组强大的集成项目生成和调试工具。 本
 
  刚开始时，只使用**调试**和 **x86** 分别作为生成配置和平台。 完成编码和调试时，将配置更改为**发布**并指定特定的平台。 （较旧版本的 Visual Studio 为 .Net 代码项目提供了 **AnyCPU** 默认平台。）
 
- 注意:生成项目时，配置和平台值还用于确定创建哪些项目目录路径用于存储可执行文件。 通常，此路径为 **\<path-to-project>\\<project-name>\\<configuration\>\\<platform\>**。 例如，配置为 `Debug`、平台为 `x86` 的项目位于 `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` 下面。 这在你拥有自己的工具和脚本来管理这些生成可执行文件时非常有用。
+ 注意：生成项目时，配置和平台值还用于确定创建哪些项目目录路径用于存储可执行文件。 通常，此路径为 **\<path-to-project>\\<project-name>\\<configuration\>\\<platform\>**。 例如，配置为 `Debug`、平台为 `x86` 的项目位于 `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` 下面。 这在你拥有自己的工具和脚本来管理这些生成可执行文件时非常有用。
 
 ### <a name="building-your-code"></a>生成你的代码
  配置好生成后，即可实际生成项目。 最简单的方法是按 F7，但是还可以在主菜单中选择“生成”->“生成解决方案”来开始生成项目。

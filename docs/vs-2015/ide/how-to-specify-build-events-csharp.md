@@ -54,7 +54,7 @@ ms.locfileid: "54781080"
 6.  在“运行后期生成事件”框中，指定运行后期生成事件的条件。  
   
     > [!NOTE]
-    >  若要添加长语法，或从[预先生成事件/生成后事件命令行对话框](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)中选择任何生成宏，请单击省略号按钮 (…) 以显示编辑框。  
+    >  若要添加长语法，或从[预先生成事件/后期生成事件命令行对话框](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)中选择任何生成宏，请单击省略号按钮 (…) 以显示编辑框。  
   
      生成事件语法可以包含命令提示符处或 .bat 文件中有效的任何命令。 批处理文件名的前面应带有 `call`，以确保执行后面的所有命令。  
   

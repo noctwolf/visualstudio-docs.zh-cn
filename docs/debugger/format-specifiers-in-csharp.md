@@ -1,5 +1,5 @@
 ---
-title: 调试器中的格式说明符 (C++) | Microsoft Docs
+title: 调试器中的格式说明符 (C#) | Microsoft Docs
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:

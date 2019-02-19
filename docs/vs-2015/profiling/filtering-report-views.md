@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d27e104aec3719e3f88e75cb326082913068b44b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54793082"
 ---
 # <a name="filtering-report-views"></a>筛选报告视图
@@ -23,9 +23,9 @@ ms.locfileid: "54793082"
 
 可以将筛选器应用于分析数据文件，限制“性能报告”视图中显示的和导出到报告文件的分析数据。 可以将报告现定于两个时间戳值之间的数据，并可以将数据限定于特定的进程和线程。 可以将筛选器保存到文件，然后通过导入保存的筛选器，在另一分析数据文件中创建筛选器。  
   
- 通过在“摘要”视图中使用图形时间线，还可以将报告限制到某一时间段。 请参阅[如何：从摘要时间线中筛选报表视图](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
+ 通过在“摘要”视图中使用图形时间线，还可以将报告限制到某一时间段。 请参阅[如何：从摘要时间线中筛选报告视图](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
   
- 要从报告中排除系统和第三方代码，请参阅[如何：将分析工具报告视图筛选为显示仅我的代码](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
+ 若要从报告中排除系统和第三方代码，请参阅[如何：筛选分析工具报告视图以显示“仅我的代码”](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)  
   
 ## <a name="procedures"></a>过程  
   
@@ -37,7 +37,7 @@ ms.locfileid: "54793082"
   
 2.  对于要添加到筛选器的每个子句，在行的下列字段中，选择或输入值。  
   
-    |字段|说明|  
+    |字段|说明​​|  
     |-----------|-----------------|  
     |And/Or|如果此子句和下一个子句必须都为 true 才能匹配结果，则选择“与”。 如果此子句或下一个子句为 true 即可匹配结果，则选择“或”。|  
     |**字段**|从显示的数据字段列表中选择要在筛选器子句中使用的报告字段。|  

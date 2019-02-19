@@ -1,26 +1,21 @@
 ---
 title: 使用代码覆盖率确定所测试的代码量 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
 ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 46e9ad272dd7d7b6e4a1f6033f09e99cb4b289d3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834053"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782654"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用代码覆盖率确定所测试的代码量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49834053"
   
 2.  若要查看已运行的行，请选择![“显示代码覆盖率着色”图标](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**显示代码覆盖率着色**。  
   
-     若要更改颜色或使用加粗，请依次选择“工具”、“选项”、“环境”、“字体和颜色”和“显示其设置：文本编辑器”。 在“显示项”下，调整覆盖率项。  
+     若要更改颜色，或使用加粗，请选择**工具**，**选项**，**环境**，**字体和颜色**，**显示设置：** 文本编辑器”。 在“显示项”下，调整覆盖率项。  
   
 3.  如果结果显示覆盖率较低，请调查代码的哪些部分没有执行测试，并编写更多测试来覆盖它们。 开发团队通常以大约 80% 的代码覆盖率为目标。 在某些情况下，较低的覆盖率是可接受的。 例如，当某代码是从标准模板生成时，可接受较低的覆盖率。  
   
@@ -101,7 +96,7 @@ ms.locfileid: "49834053"
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>从代码覆盖率结果中排除元素  
  例如，如果代码是从文本模板生成的，则你可能希望从覆盖率分数中排除代码中的特定元素。 将特性 `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` 添加到以下任一代码元素：类、结构、方法、属性、属性 setter 或 getter、事件。 请注意，排除某个类并不会排除它的派生类。  
   
- 例如：  
+ 例如:  
   
 ```csharp  
   
@@ -261,7 +256,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
     如果你有多个测试源定义，请对每个定义重复此步骤。  
   
-   - <em>但没有名为的字段 **类型的运行设置文件</em>*。 *  
+   - 但是，没有名为“运行设置文件的类型”的字段。<em>***  
   
       在“自动测试”下，选择“测试程序集”，然后选择行尾的省略号按钮“[...]”。 在“添加/编辑测试运行”对话框的“测试运行程序”下，选择“Visual Studio 测试运行程序”。  
   
@@ -286,12 +281,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>外部资源  
   
 ### <a name="guidance"></a>指导  
- [使用 Visual Studio 2012 对连续交付进行测试 - 第 2 章：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [使用 Visual Studio 2012 – 第 2 章对连续交付进行测试：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>请参阅  
  [自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)   
  [代码覆盖率疑难解答](../test/troubleshooting-code-coverage.md)   
  [单元测试代码](../test/unit-test-your-code.md)
-
-
-

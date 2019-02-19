@@ -26,7 +26,7 @@ ms.locfileid: "54779112"
 # <a name="concurrency-visualizer"></a>并发可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-说明
+备注
 >  对于 Visual Studio，并发可视化工具是可选扩展。 从以下链接下载并发可视化工具和并发可视化工具收集工具：  
 > 
 > - 下载              [并发可视化工具](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) 扩展。  

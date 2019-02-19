@@ -1,14 +1,9 @@
 ---
-title: 如何：管理编辑器模式 | Microsoft Docs
-ms.custom: ''
+title: 如何：管理编辑器模式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
 - views, virtual space
@@ -29,13 +24,13 @@ ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8d38812007e042d014cb0090f1334bee2cce0858
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fde858615894967dea83239388925851f342c3aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229211"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54781029"
 ---
 # <a name="how-to-manage-editor-modes"></a>如何：管理编辑器模式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "49229211"
 可在各种显示模式下显示 Visual Studio 代码编辑器。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="enabling-full-screen-mode"></a>启用全屏模式  
  启用“全屏”模式后，可选择隐藏所有工具窗口并仅查看文档窗口。  
@@ -72,8 +67,5 @@ ms.locfileid: "49229211"
   
 ## <a name="see-also"></a>请参阅  
  [自定义编辑器](../ide/customizing-the-editor.md)   
- [如何： 排列和停靠 Windows](../misc/how-to-arrange-and-dock-windows.md)   
+ [如何：排列和停靠窗口](../misc/how-to-arrange-and-dock-windows.md)   
  [“选项”对话框 ->“环境”->“字体和颜色”](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
-
-
-

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782289"
 ---
 # <a name="blocking-time-profile-report"></a>阻塞时间分析报告
@@ -34,7 +34,7 @@ ms.locfileid: "54782289"
 ## <a name="blocking-time-report-columns"></a>阻塞时间报表列  
  下表显示每个阻塞时间报表的列。  
   
-|列名称|说明|  
+|列名称|说明​​|  
 |-----------------|-----------------|  
 |name|调用堆栈每个级别的函数的名称。|  
 |实例数|可见时间段内阻塞调用的实例数。|  

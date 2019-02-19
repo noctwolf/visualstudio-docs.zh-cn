@@ -1,14 +1,9 @@
 ---
 title: 使用编码的 UI 测试编辑器编辑编码的 UI 测试 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49951244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54793758"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用编码的 UI 测试编辑器编辑编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +75,7 @@ ms.locfileid: "49951244"
   
  若要修改 UI 操作的属性，在 **“UI 操作”** 窗格中，展开包含你想要为其编辑属性的 UI 操作的测试方法，选择 UI 操作，然后通过“属性”窗口修改属性。  
   
- 例如，如果服务器不可用，并且 UI 操作与指示“转到网页 '<http://Contoso1/default.aspx’>'”的 Web 浏览器关联，则可以将 URL 更改为 `‘http://Contoso2/default.aspx’`。  
+ 例如，如果服务器不可用，并且 UI 操作与指示“转到网页 <http://Contoso1/default.aspx’>”的 Web 浏览器关联，则可以将 URL 更改为 `‘http://Contoso2/default.aspx’`。  
   
  ![控件属性](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 编辑控件属性  
@@ -125,7 +120,7 @@ ms.locfileid: "49951244"
  *我应该知道哪些其他内容？*  
  **重要事项**  
   
-- ![“警告”图标](../test/media/caution.gif "caution") **警告：** 拆分方法时，如果仍希望包括这些 UI 操作，必须将调用现有方法的任意代码修改为还可以调用要创建的新方法。 拆分方法时，将显示一个 Microsoft Visual Studio 对话框。 它会警告你必须修改可调用现有方法的任何代码，使其还可以调用要创建的新方法。 选择 **“是”**。  
+- ![警告图标](../test/media/caution.gif "警告")**警告：** 如果拆分方法，则必须修改可调用现有方法的任何代码，使其在你仍然想要包括这些 UI 操作时也可以调用要创建的新方法。 拆分方法时，将显示一个 Microsoft Visual Studio 对话框。 它会警告你必须修改可调用现有方法的任何代码，使其还可以调用要创建的新方法。 选择 **“是”**。  
   
   **提示**  
   
@@ -149,7 +144,7 @@ ms.locfileid: "49951244"
  *我应该知道哪些其他内容？*  
  **重要事项**  
   
-- ![“警告”图标](../test/media/caution.gif "caution") **警告：** 一旦移动了方法，便无法再使用编码的 UI 测试编辑器对其进行编辑。 你必须使用代码编辑器添加并维护你的自定义代码。 移动方法时，将显示一个 Microsoft Visual Studio 对话框。 该对话框将警告你，该方法将从 UIMap.uitest 文件移动到 UIMap.cs 或 UIMap.vb 文件，并且你将不能再使用编码的 UI 测试编辑器来编辑该方法。 选择 **“是”**。  
+- ![警告图标](../test/media/caution.gif "警告")**警告：** 移动该方法后，就不再能使用编码的 UI 测试编辑器对其进行编辑。 你必须使用代码编辑器添加并维护你的自定义代码。 移动方法时，将显示一个 Microsoft Visual Studio 对话框。 该对话框将警告你，该方法将从 UIMap.uitest 文件移动到 UIMap.cs 或 UIMap.vb 文件，并且你将不能再使用编码的 UI 测试编辑器来编辑该方法。 选择 **“是”**。  
   
   **提示**  
   
@@ -167,7 +162,7 @@ ms.locfileid: "49951244"
  *我应该知道哪些其他内容？*  
  **重要事项**  
   
-- ![“警告”图标](../test/media/caution.gif "caution") **警告：** 查找 UI 控件之前，请务必确认与测试相关联的应用是否正在运行。  
+- ![警告图标](../test/media/caution.gif "警告")**警告：** 查找 UI 控件之前，请验证与测试关联的应用程序是否正在运行。  
   
   **提示**  
   
@@ -185,7 +180,7 @@ ms.locfileid: "49951244"
  *我应该知道哪些其他内容？*  
  **重大问题**  
   
--   ![“警告”图标](../test/media/caution.gif "caution") **警告：** 查找 UI 控件之前，请务必确认与测试相关联的应用是否正在运行。  
+-   ![警告图标](../test/media/caution.gif "警告")**警告：** 查找 UI 控件之前，请验证与测试关联的应用程序是否正在运行。  
   
 ##  <a name="CodedUITestEditor_InsertDelay"></a>在 UI 操作前插入延迟  
  有时，可能需要让测试等待某些事件发生，如某个窗口出现、进度栏消失等。 使用编码的 UI 测试编辑器，你可以通过在 UI 操作之前插入延迟完成此操作。 你可以指定希望延迟的秒数。  
@@ -210,7 +205,7 @@ ms.locfileid: "49951244"
 ## <a name="external-resources"></a>外部资源  
   
 ### <a name="guidance"></a>指导  
- [使用 Visual Studio 2012 对连续交付进行测试 - 第 2 章：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [使用 Visual Studio 2012 – 第 2 章对连续交付进行测试：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="faq"></a>FAQ  
  [编码的 UI 测试常见问题 - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -226,6 +221,3 @@ ms.locfileid: "49951244"
  [创建数据驱动的编码的 UI 测试](../test/creating-a-data-driven-coded-ui-test.md)   
  [通过现有操作录制生成编码的 UI 测试](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-
-
-

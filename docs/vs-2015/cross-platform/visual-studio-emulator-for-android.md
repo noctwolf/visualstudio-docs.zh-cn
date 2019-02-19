@@ -1,24 +1,19 @@
 ---
 title: 适用于 Android 的 Visual Studio 仿真程序 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 22126bb5a364148c7079d59d750483a7ebc47418
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.openlocfilehash: ec7e6d3ee6d27c444d0904e750293a3d82c3ab4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799589"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54789847"
 ---
 # <a name="visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 仿真程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51799589"
   
 -   [可在仿真程序中测试的功能](#FeaturesTest)  
   
--   [不能在模拟器中测试的功能](#FeaturesNonTest)  
+-   [无法在仿真器中测试的功能](#FeaturesNonTest)  
   
 -   [支持资源](#Support)  
   
@@ -98,7 +93,7 @@ ms.locfileid: "51799589"
 ##  <a name="FeaturesTest"></a> 可在仿真程序中测试的功能  
  有关可在仿真程序中测试的功能的详细信息，请参阅此[文档](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)。  
   
-##  <a name="FeaturesNonTest"></a> 不能在模拟器中测试的功能  
+##  <a name="FeaturesNonTest"></a> 无法在仿真器中测试的功能  
  下表描述无法在仿真程序中测试的 Android 平台的功能。 必须在物理设备上测试这些功能。  
   
 -   指南针  
@@ -119,4 +114,3 @@ ms.locfileid: "51799589"
 ## <a name="see-also"></a>请参阅  
  [适用于 Android 的 Visual Studio 模拟程序的系统要求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
  [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
-

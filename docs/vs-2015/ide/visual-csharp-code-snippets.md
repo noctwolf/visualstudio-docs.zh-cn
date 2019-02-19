@@ -1,14 +1,9 @@
 ---
 title: Visual C# 代码片段 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
@@ -19,13 +14,13 @@ ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 47658a8aec8b2dedd2dcdeb337bdca805e1b0bca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297409"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54787100"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# 代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "49297409"
 ## <a name="default-code-snippets"></a>默认代码片段  
  默认情况下，Visual Studio 包含以下代码片段。  
   
-|名称（或快捷方式）|描述|要插入代码片段的有效位置|  
+|名称（或快捷方式）|说明​​|要插入代码片段的有效位置|  
 |--------------------------|-----------------|---------------------------------------|  
 |#if|创建 [#if](http://msdn.microsoft.com/library/48cabbff-ca82-491f-a56a-eeccd528c7c2) 指令和 [#endif](http://msdn.microsoft.com/library/6a5fca55-5aee-441f-86f6-1c99fbe9ec05) 指令。|任何位置。|  
 |#region|创建 [#region](http://msdn.microsoft.com/library/672c87d1-9771-4f64-ab3f-0ad3d4ffb2b4) 指令和 [#endregion](http://msdn.microsoft.com/library/16099660-91b2-49e5-9646-77f9ef069526) 指令。|任何位置。|  
@@ -49,7 +44,7 @@ ms.locfileid: "49297409"
 |class|创建类声明。|在命名空间（包括全局命名空间）、类或结构中。|  
 |ctor|创建包含类的构造函数。|在类中。|  
 |cw|创建对 <xref:System.Console.WriteLine%2A> 的调用。|在方法、索引器、属性访问器或事件访问器内。|  
-|do|创建[做](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`循环。|在方法、索引器、属性访问器或事件访问器内。|  
+|do|创建 [do](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while` 循环。|在方法、索引器、属性访问器或事件访问器内。|  
 |else|创建 [else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2) 块。|在方法、索引器、属性访问器或事件访问器内。|  
 |enum|创建[枚举](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c)声明。|在命名空间（包括全局命名空间）、类或结构中。|  
 |equals|创建一个方法声明，该声明对 <xref:System.Object> 类中定义的 <xref:System.Object.Equals%2A> 方法进行重写。|在类或结构中。|  
@@ -83,10 +78,7 @@ ms.locfileid: "49297409"
 ## <a name="see-also"></a>请参阅  
  [代码片段函数](../ide/code-snippet-functions.md)   
  [代码片段](../ide/code-snippets.md)   
- [How to: Create a New Snippet with Replacements](http://msdn.microsoft.com/en-us/8d56d43c-097a-475b-aa85-cae1554b6338) （如何：通过替换创建新的代码片段）  
+ [如何：使用替换创建新的代码段](http://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [模板参数](../ide/template-parameters.md)   
- [如何： 使用外侧代码片段](../ide/how-to-use-surround-with-code-snippets.md)   
- [如何：还原 C# 重构代码片段](../ide/how-to-restore-csharp-refactoring-snippets.md)
-
-
-
+ [如何：使用外侧代码片段](../ide/how-to-use-surround-with-code-snippets.md)   
+ [如何：还原C#重构代码片段](../ide/how-to-restore-csharp-refactoring-snippets.md)
