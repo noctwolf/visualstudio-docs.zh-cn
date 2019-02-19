@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 77254bea0c4b587df8f4aef8297f17b6b4304339
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800783"
 ---
 # <a name="accessibility-tips-and-tricks"></a>辅助功能提示和技巧
@@ -33,7 +33,7 @@ ms.locfileid: "54800783"
 ## <a name="common-windows-shortcut-key-combinations"></a>常用 Windows 快捷组合键  
  在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 中，可以使用许多标准 Windows 快捷组合键来执行任务。 下面列举了其中一些快捷组合键：  
   
-|说明|组合键|  
+|说明​​|组合键|  
 |-----------------|---------------------|  
 |打开或关闭高对比度|左 **Alt + 左 Shift + PRINT SCREEN**|  
 |选中或清除对话框中的复选框选项|**空格键**|  
@@ -44,13 +44,13 @@ ms.locfileid: "54800783"
 ## <a name="hidden-visual-studio-shortcut-key-combinations"></a>隐藏的 Visual Studio 快捷组合键  
  某些功能具有可用的快捷键，但这些快捷键并未显示在“选项”对话框的“环境”\“键盘”窗格上。 这类快捷组合键包括：  
   
-|功能|说明|组合键|  
+|功能|说明​​|组合键|  
 |-------------|-----------------|---------------------|  
 |工具箱窗口|在工具箱选项卡之间移动|**Ctrl** + **向上键**<br /><br /> 和<br /><br /> **Ctrl** + **向下键**|  
 |工具箱窗口|将工具箱中的控件添加到窗体或设计器|**Enter**|  
 |“选项”对话框 ->“环境”->“键盘”|删除在“按快捷键”选项中输入的组合键|**Backspace**|  
 |所有工具窗口|选择窗口的工具栏上的第一个按钮|**Shift** + **Alt**|  
-|IDE 工具栏|选择“标准”工具栏上的第一个按钮|**ALT**， **CTRL** + **选项卡****注意：** 按**CTRL** + **选项卡**再次以选择下一步的 IDE 工具栏上的第一个按钮。|  
+|IDE 工具栏|选择“标准”工具栏上的第一个按钮|**Alt**、**Ctrl** + **Tab** **注意：** 再次按 **Ctrl** + **Tab** 可选择下一个 IDE 工具栏上的第一个按钮。|  
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 的辅助功能](../../ide/reference/accessibility-features-of-visual-studio.md)

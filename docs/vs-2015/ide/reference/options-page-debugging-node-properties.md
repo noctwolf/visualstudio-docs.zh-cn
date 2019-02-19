@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 31eff8876dd6ae1a83f74d419853846bf461e275
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782192"
 ---
 # <a name="options-page-debugging-node-properties"></a>“选项”页 ->“调试”节点属性
@@ -25,7 +25,7 @@ ms.locfileid: "54782192"
 ## <a name="general"></a>常规  
  `DTE.Properties("Debugging", "General")`  
   
-|属性项名称|值|说明|  
+|属性项名称|值|说明​​|  
 |------------------------|-----------|-----------------|  
 |PromptOnBreakpointDelete|Get/Set (Boolean)|确定调试器是否在删除项目中的所有断点之前请示授权。|  
 |BreakAllProcesses|Get/Set (Boolean)|确定调试器是否在单个进程中断时中断所有进程。|  
@@ -55,7 +55,7 @@ ms.locfileid: "54782192"
 ## <a name="edit-and-continue"></a>编辑并继续  
  `DTE.Properties("Debugging", "EditAndContinue")`  
   
-|属性项名称|值|说明|  
+|属性项名称|“值”|说明​​|  
 |------------------------|-----------|-----------------|  
 |EnableEditAndContinue|Get/Set (Boolean)|确定是否启用“编辑并继续”。 此选项适用于所有支持“编辑并继续”的语言。|  
 |InvokedByCommands|Get/Set (Boolean)|确定当用户选择调试命令（例如“单步执行”或“继续”）时，是否自动将“编辑并继续”应用代码更改。 此选项仅适用于本机代码。|  
@@ -67,7 +67,7 @@ ms.locfileid: "54782192"
 ## <a name="just-in-time"></a>实时  
  `DTE.Properties("Debugging", "JustInTime")`  
   
-|属性项名称|值|说明|  
+|属性项名称|值|说明​​|  
 |------------------------|-----------|-----------------|  
 |JitManaged|Get/Set (Boolean)|确定是否为托管代码启用实时调试。|  
 |JitNative|Get/Set (Boolean)|确定是否为本机代码启用实时调试。|  
@@ -76,7 +76,7 @@ ms.locfileid: "54782192"
 ## <a name="native"></a>Native  
  `DTE.Properties("Debugging", "Native")`  
   
-|属性项名称|值|说明|  
+|属性项名称|“值”|说明​​|  
 |------------------------|-----------|-----------------|  
 |LoadDllExports|Get/Set (Boolean)|确定调试器是否加载 DLL 导出表。|  
 |EnableRPC|Get/Set (Boolean)|确定调试器是否可以单步执行 COM 远程过程调用。|  

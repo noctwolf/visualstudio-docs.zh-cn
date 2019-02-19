@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7fbd03676d69dde5f9a6d169739a25e7b5e1b82e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54755120"
 ---
 # <a name="formatversion-task"></a>FormatVersion 任务
@@ -27,16 +27,16 @@ ms.locfileid: "54755120"
   
 将修订号追加到版本号。  
   
--   案例 #1：输入：Version=\<undefined>;  Revision=\<don't care>;   Output:OutputVersion="1.0.0.0"  
+-   案例 #1：输入：Version=\<undefined>; Revision=\<don't care>; 输出：OutputVersion ="1.0.0.0"  
   
--   案例 #2：输入：Version="1.0.0.*"  Revision="5"  Output:OutputVersion="1.0.0.5"  
+-   案例 #2：输入：Version="1.0.0.*"  Revision="5" 输出：OutputVersion="1.0.0.5"  
   
--   案例 #3：输入：Version="1.0.0.0"  Revision=\<don't care>;  Output:OutputVersion="1.0.0.0"  
+-   案例 #3：输入：Version="1.0.0.0" Revision=\<don't care>; 输出：OutputVersion ="1.0.0.0"  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `FormatVersion` 任务的参数。  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`FormatType`|可选 `String` 参数。<br /><br /> 指定格式类型。<br /><br /> -“Version”= 版本。<br />-“Path”=将“.”替换为“_”；|  
 |`OutputVersion`|可选 `String` 输出参数。<br /><br /> 指定包含修订号的输出版本。|  

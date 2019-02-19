@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 994cde18cfe304add796bffa74d2a327e1c63f45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54774722"
 ---
 # <a name="startprofile"></a>StartProfile
@@ -36,7 +36,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
   
  指示性能数据集合可应用到的分析级别。 以下 PROFILE_CONTROL_LEVEL 枚举器可用于指示性能数据集合可应用到的三个级别之一：  
   
-|枚举器|说明|  
+|枚举器|说明​​|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|全局级别设置影响分析运行中的所有进程和线程。|  
 |PROFILE_PROCESSLEVEL|进程级别设置影响指定进程中的所有线程。|  
@@ -49,7 +49,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="property-valuereturn-value"></a>属性值/返回值  
  函数通过使用 **PROFILE_COMMAND_STATUS** 枚举来指示成功或失败。 返回值可以是下列值之一：  
   
-|枚举器|说明|  
+|枚举器|说明​​|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|分析元素 ID 不存在。|  
 |PROFILE_ERROR_LEVEL_NOEXIST|指定的分析级别不存在。|  

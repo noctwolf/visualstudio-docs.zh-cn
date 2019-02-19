@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8122988e5db3ca69c4b845c54ff4de2223c4556d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767454"
 ---
 # <a name="sgen-task"></a>SGen 任务
@@ -35,7 +35,7 @@ ms.locfileid: "54767454"
 ## <a name="parameters"></a>参数  
  下表描述了 `SGen` 任务的参数。  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`BuildAssemblyName`|必选 `String` 参数。<br /><br /> 要为其生成序列化代码的程序集。|  
 |`BuildAssemblyPath`|必选 `String` 参数。<br /><br /> 要生成序列化代码的程序集的路径。|  

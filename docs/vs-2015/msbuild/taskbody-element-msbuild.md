@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6b02616b54c0697f824d53eab978142679e8a358
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54752388"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody 元素 (MSBuild)
@@ -45,19 +45,19 @@ ms.locfileid: "54752388"
   
 ### <a name="attributes"></a>特性  
   
-|特性|说明|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`Evaluate`|可选布尔属性。<br /><br /> 如果值为 `true`，任务实例化时，MSBuild 对所有内部元素求值，并在将信息传递到 `TaskFactory` 前扩展项和属性。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|说明|  
+|元素|说明​​|  
 |-------------|-----------------|  
 |数据|`TaskBody` 标记之间的文本一字不差地发送到 `TaskFactory`。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明|  
+|元素|说明​​|  
 |-------------|-----------------|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|提供在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中注册任务的方法。 项目中可能有零个或零个以上的 `UsingTask` 元素。|  
   

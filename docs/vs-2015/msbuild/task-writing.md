@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef637126c75dd05eea2e8bfca76f0fe0bd13ac75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54794277"
 ---
 # <a name="task-writing"></a>任务写入
@@ -163,7 +163,7 @@ public string RequiredProperty
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>说明​​  
  以下 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 类演示一个从 <xref:Microsoft.Build.Utilities.Task> 帮助器类派生的任务。 该任务返回 `true`，表示执行成功。  
   
 ### <a name="code"></a>代码  
@@ -187,7 +187,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>说明​​  
  以下 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 类演示一个实现 <xref:Microsoft.Build.Framework.ITask> 接口的任务。 该任务返回 `true`，表示执行成功。  
   
 ### <a name="code"></a>代码  
@@ -245,7 +245,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>说明​​  
  此 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 类演示一个从 <xref:Microsoft.Build.Utilities.Task> 帮助器类派生的任务。 它有一个必需的字符串属性，并引发一个由所有注册的记录器显示的事件。  
   
 ### <a name="code"></a>代码  
@@ -253,7 +253,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>说明​​  
  以下示例显示一个调用上一示例任务 SimpleTask3 的项目文件。  
   
 ### <a name="code"></a>代码  

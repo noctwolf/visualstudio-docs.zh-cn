@@ -12,13 +12,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e5f25f100a1d6eb31dbd03a26d927f81c4e564d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769427"
 ---
-# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>演练：从头创建 MSBuild 项目文件
+# <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>演练：从头开始创建 MSBuild 项目文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -402,7 +402,7 @@ ms.locfileid: "54769427"
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>说明​​  
  下面的示例演示一个项目文件，该项目文件编译 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 应用程序，并记录一条包含输出文件名的消息。  
   
 ### <a name="code"></a>代码  
@@ -442,7 +442,7 @@ ms.locfileid: "54769427"
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>说明​​  
  下面的示例演示一个项目文件，该项目文件编译 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 应用程序，并记录一条包含输出文件名的消息。  
   
 ### <a name="code"></a>代码  

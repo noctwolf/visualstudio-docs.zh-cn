@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758237"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 入门
@@ -148,4 +148,4 @@ ms.locfileid: "54758237"
    祝贺你完成本演练！ 如要了解更多示例，请参阅 [Visual Studio Samples](../ide/visual-studio-samples.md)。
 
 ## <a name="see-also"></a>请参阅
- [演练：创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[高效工作提示](../ide/productivity-tips-for-visual-studio.md) [Visual Studio 示例](../ide/visual-studio-samples.md)[开始使用 Visual Studio 进行开发](../ide/get-started-developing-with-visual-studio.md)
+ [演练： 创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)[高效工作提示](../ide/productivity-tips-for-visual-studio.md) [Visual Studio 示例](../ide/visual-studio-samples.md)[开始使用 Visual Studio 进行开发](../ide/get-started-developing-with-visual-studio.md)

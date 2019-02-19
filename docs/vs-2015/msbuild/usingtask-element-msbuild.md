@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: be3b993034ef9ab8d39b254cf3f4be1fdebbb106
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769121"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 元素 (MSBuild)
@@ -49,7 +49,7 @@ ms.locfileid: "54769121"
   
 ### <a name="attributes"></a>特性  
   
-|特性|说明|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`AssemblyName`|`AssemblyName` 属性或 `AssemblyFile` 属性是必需的。<br /><br /> 要加载的程序集的名称。 尽管强命名不是必需的，但是 `AssemblyName` 属性可以接受强名称程序集。 使用此属性等效于使用 .NET 中的 <xref:System.Reflection.Assembly.Load%2A> 方法加载程序集。<br /><br /> 如果使用了 `AssemblyFile` 属性，则不能使用此属性。|  
 |`AssemblyFile`|`AssemblyName` 或 `AssemblyFile` 属性是必需的。<br /><br /> 程序集的文件路径。 此属性接受完整路径或相对路径。 相对路径是相对于声明 `UsingTask` 元素的项目文件或目标文件的目录位置而言的。 使用此属性等效于使用 .NET 中的 <xref:System.Reflection.Assembly.LoadFrom%2A> 方法加载程序集。<br /><br /> 如果使用了 `AssemblyName` 属性，则不能使用此属性。|  
@@ -59,14 +59,14 @@ ms.locfileid: "54769121"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|说明|  
+|元素|说明​​|  
 |-------------|-----------------|  
 |[ParameterGroup](../msbuild/parametergroup-element.md)|参数集，在指定 `TaskFactory` 生成的任务中显示。|  
 |[Task](../msbuild/task-element-msbuild.md)|传递给 `TaskFactory` 的数据，用于生成任务的实例。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明|  
+|元素|说明​​|  
 |-------------|-----------------|  
 |[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件必需的根元素。|  
   

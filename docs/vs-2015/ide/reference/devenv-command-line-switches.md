@@ -22,10 +22,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54754966"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令行开关
@@ -69,7 +69,7 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
 ## <a name="devenv-switches"></a>Devenv 开关  
  使用下列命令行开关显示 IDE 并执行描述的任务。  
   
-|命令行开关|说明|  
+|命令行开关|说明​​|  
 |-------------------------|-----------------|  
 |[/Command (devenv.exe)](../../ide/reference/command-devenv-exe.md)|启动 IDE 并执行指定的命令。|  
 |[/DebugExe (devenv.exe)](../../ide/reference/debugexe-devenv-exe.md)|在调试器的控制下加载 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 可执行文件。 此开关对 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 或 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 可执行文件不可用。 有关详细信息，请参阅[自动启动调试器中的进程](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。|  
@@ -86,7 +86,7 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
   
  使用下列命令行开关执行描述的任务。 这些命令行开关不显示 IDE。  
   
-|命令行开关|说明|  
+|命令行开关|说明​​|  
 |-------------------------|-----------------|  
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|在“命令提示符”窗口中显示 devenv 开关的相关帮助信息。<br /><br /> **Devenv /?**|  
 |[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|根据指定解决方案的配置，生成指定的解决方案或项目。<br /><br /> **Devenv myproj.csproj /build**|  

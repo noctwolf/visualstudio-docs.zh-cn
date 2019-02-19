@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787087"
 ---
 # <a name="template-parameters"></a>模板参数
@@ -53,7 +53,7 @@ ms.locfileid: "54787087"
 > [!NOTE]
 >  模板参数区分大小写。  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`clrversion`|公共语言运行时 (CLR) 的当前版本。|  
 |`GUID [1-10]`|一个用于替换项目文件中的项目 GUID 的 GUID。 可指定最多 10 个唯一的 GUID（例如，`guid1)`。|  
@@ -74,7 +74,7 @@ ms.locfileid: "54787087"
 ## <a name="custom-template-parameters"></a>自定义模板参数  
  除了在参数替换过程中使用的默认保留的模板参数之外，还可以指定自己的模板参数和值。有关详细信息，请参阅 [CustomParameters 元素（Visual Studio 模板）](../extensibility/customparameters-element-visual-studio-templates.md)  
   
-## <a name="example-replacing-files-names"></a>示例:替换文件名  
+## <a name="example-replacing-files-names"></a>示例：替换文件名  
  可以使用属性为 `TargetFileName` 的参数为项目项指定变量文件名。 例如，可以指定 .exe 文件使用由 `$projectname$` 指定的项目名称作为文件名。  
   
 ```  
@@ -88,7 +88,7 @@ ms.locfileid: "54787087"
 </TemplateContent>  
 ```  
   
-## <a name="example-using-the-project-name-for-the-namespace-name"></a>示例:使用 Namespace 名称的项目名称  
+## <a name="example-using-the-project-name-for-the-namespace-name"></a>示例：使用项目名称作为命名空间名称  
  要将项目名称用于 Visual C# 类文件 Class1.cs 中的命名空间，请使用以下语法：  
   
 ```  

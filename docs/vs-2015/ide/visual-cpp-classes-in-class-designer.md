@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787071"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>类设计器中的 Visual C++ 类
@@ -36,7 +36,7 @@ class A {};
 class B : A {};  
 ```  
   
- 也可以只将类 B 拖到类图中，右键单击 B 的类形状，然后单击“显示基类”。 此操作将显示其基类：答：  
+ 也可以只将类 B 拖到类图中，右键单击 B 的类形状，然后单击“显示基类”。 这样可以显示它的基类 A。  
   
 ## <a name="multiple-inheritance"></a>多重继承  
  类设计器支持直观呈现多类继承关系。 当派生类有多个基类的特性时，就会用到*多重继承*。 下面的示例展示了多重继承：  

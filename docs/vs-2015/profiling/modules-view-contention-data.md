@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a2553396614cacbc22925f8f7f3a61d56c50541
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54771025"
 ---
 # <a name="modules-view---contention-data"></a>“模块”视图：争用数据
@@ -27,7 +27,7 @@ ms.locfileid: "54771025"
   
  下表介绍争用数据的“模块”视图中各列的值。  
   
-|列|说明|  
+|列|说明​​|  
 |------------|-----------------|  
 |**独占阻塞的时间**|-   对于函数，为阻塞此函数执行函数体内代码的时间。 不包含此函数调用的函数中的阻塞时间。<br />-   对于模块，为模块中各个函数独占阻塞时间之和。<br />-   对于行或指令，为阻塞此行或指令执行的时间。|  
 |**独占阻塞的时间百分比**|-   对于函数或模块，为此函数或模块的独占阻塞时间占分析运行期间所有阻塞时间的百分比。<br />-   对于行或指令，为阻塞此行或指令执行的时间占分析运行期间所有阻塞时间的百分比。|  
@@ -46,7 +46,7 @@ ms.locfileid: "54771025"
 |**源文件**|此函数的定义所在的源文件。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)   
+ [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“模块”视图](../profiling/modules-view.md)   
  [“模块”视图 - 检测](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [“模块”视图 - 采样](../profiling/modules-view-dotnet-memory-sampling-data.md)   

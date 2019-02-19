@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3f537e6f9f1712e3d103a0d425265153bf2152e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54774678"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 任务
@@ -34,7 +34,7 @@ ms.locfileid: "54774678"
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`AssemblyName`|必需的 **String** 参数。<br /><br /> 指定为项目生成的程序集的短名称，该名称同时也是临时生成的目标程序集的名称。 例如，如果项目生成一个名为 **WinExeAssembly.exe** 的 [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)] 可执行文件，则 **AssemblyName** 参数的值为 **WinExeAssembly**。|  
 |`CompileTargetName`|必需的 **String** 参数。<br /><br /> 指定用于从源代码文件生成程序集的 [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] 目标的名称。 **CompileTargetName** 的典型值为 **CoreCompile**。|  

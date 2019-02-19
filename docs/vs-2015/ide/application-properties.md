@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b159e448ae23e67cc2ed1c066cf4b7884ed83a6e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54757653"
 ---
 # <a name="application-properties"></a>Application Properties
@@ -54,7 +54,7 @@ ms.locfileid: "54757653"
   适用于应用程序的任务取决于使用的开发语言。  
   
 ## <a name="in-this-section"></a>本节内容  
- [如何：指定应用程序图标 (Visual Basic、C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
+ [如何：指定应用程序图标（Visual Basic、C#）](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  
   
 ## <a name="see-also"></a>请参阅  
  [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   

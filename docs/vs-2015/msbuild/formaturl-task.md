@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d6f3118515d023f9f57d4578d042a0fa5a702872
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803339"
 ---
 # <a name="formaturl-task"></a>FormatUrl 任务
@@ -33,7 +33,7 @@ ms.locfileid: "54803339"
 ## <a name="parameters"></a>参数  
  下表描述了 `FormatUrl` 任务的参数。  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`InputUrl`|可选 `String` 参数。<br /><br /> 指定要格式化的 URL。|  
 |`OutputUrl`|可选 `String` 输出参数。<br /><br /> 指定已格式化的 URL。|  

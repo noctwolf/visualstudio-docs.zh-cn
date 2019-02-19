@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 87c31551541bc949a98ec2dd7a15da5a86b36d21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54777087"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 任务
@@ -33,10 +33,10 @@ ms.locfileid: "54777087"
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`AlwaysCompileMarkupFilesInSeparateDomain`|可选 **Boolean** 参数。<br /><br /> 指定是否在单独的 <xref:System.AppDomain> 下运行该任务。 如果此参数返回 false，则任务将在与 [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] 相同的 <xref:System.AppDomain> 中运行，且运行速度更快。 如果该参数返回 true，则任务将在独立于 [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] 的另一个 <xref:System.AppDomain> 中运行，且运行速度更慢。|  
-|`AssembliesGeneratedDuringBuild`|可选 **String []** 参数。<br /><br /> 指定在生成过程中对更改的程序集的引用。 例如，[!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] 解决方案可能包含一个引用了另一个项目的已编译输出的项目。 在这种情况下，可以将第二个项目的已编译输出添加到 **AssembliesGeneratedDuringBuild**。<br /><br /> 注意:“AssembliesGeneratedDuringBuild”必须包含对生成解决方案所生成的一组完整程序集的引用。|  
+|`AssembliesGeneratedDuringBuild`|可选 **String []** 参数。<br /><br /> 指定在生成过程中对更改的程序集的引用。 例如，[!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] 解决方案可能包含一个引用了另一个项目的已编译输出的项目。 在这种情况下，可以将第二个项目的已编译输出添加到 **AssembliesGeneratedDuringBuild**。<br /><br /> 注意：**AssembliesGeneratedDuringBuild** 必须包含对生成解决方案所生成的一组完整程序集的引用。|  
 |`AssemblyName`|必需的 **String** 参数。<br /><br /> 指定为项目生成的程序集的简称。 例如，如果项目生成一个名为 **WinExeAssembly.exe** 的 [!INCLUDE[TLA#tla_win](../includes/tlasharptla-win-md.md)] 可执行文件，则 **AssemblyName** 参数的值为 **WinExeAssembly**。|  
 |`GeneratedBaml`|可选的 **ITaskItem[]** 输出参数。<br /><br /> 包含已生成的 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 二进制格式文件的列表。|  
 |`KnownReferencePaths`|可选 **String []** 参数。<br /><br /> 指定在生成过程中对从未更改的程序集的引用。 包括位于 [!INCLUDE[TLA#tla_gac](../includes/tlasharptla-gac-md.md)]、[!INCLUDE[TLA#tla_netframewk](../includes/tlasharptla-netframewk-md.md)] 安装目录等位置中的程序集。|  

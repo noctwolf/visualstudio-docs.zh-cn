@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 95ee6a99a069f81a2e63c5bbe11186afaf773423
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54790002"
 ---
 # <a name="code-snippet-functions"></a>代码段函数
@@ -28,7 +28,7 @@ ms.locfileid: "54790002"
 ## <a name="functions"></a>函数  
  下表介绍可与代码片段中的 `Function` 元素一起使用的函数。  
   
-|函数|说明|语言|  
+|函数|说明​​|语言|  
 |--------------|-----------------|--------------|  
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|为 `EnumerationLiteral` 参数指定的枚举成员生成一个switch 语句和一组 case 语句。 `EnumerationLiteral` 参数必须是枚举文本的引用或是枚举类型。|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  
 |`ClassName()`|返回包含插入的代码片段的类的名称。|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  

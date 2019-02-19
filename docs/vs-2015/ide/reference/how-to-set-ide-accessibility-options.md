@@ -1,5 +1,5 @@
 ---
-title: 如何：设置 IDE 辅助功能选项 |Microsoft Docs
+title: 如何：设置 IDE 辅助功能选项 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,10 +12,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b1f70f2f33b8ad0af4f0fa13489cb75be529c322
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803218"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：设置 IDE 辅助功能选项
@@ -84,7 +84,7 @@ ms.locfileid: "54803218"
   
 4.  从“显示项”中选择要更改其显示方式的项，例如“纯文本”、“指示器边距”、“可见空白”、“HTML 特性名”或“XML 特性”。  
   
-5.  从以下选项中选择显示设置：“项前景色”、“项背景色”和“粗体”。  
+5.  从下列选项中选择显示设置：“项前景”、“项背景”和“粗体”。  
   
 6.  选择 **“确定”**。  
   

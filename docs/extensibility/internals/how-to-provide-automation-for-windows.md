@@ -11,22 +11,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37cb183f8b48211da87b03128d5839cf64aca985
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4a4482069d16ef6f0f64472b838057949890a6d3
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069719"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335150"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>如何：提供适用于 windows 的自动化
+
 你可以提供文档和工具窗口的自动化。 提供自动化是建议您无论何时你想要使自动化对象在一个窗口，并在环境已不提供现成的自动化对象，方式与在任务列表。
 
 ## <a name="automation-for-tool-windows"></a>自动化的工具窗口
- 通过返回一个标准工具窗口上环境提供自动化<xref:EnvDTE.Window>对象下面的过程中所述：
 
-### <a name="to-provide-automation-for-tool-windows"></a>若要提供自动化的工具窗口
+通过返回一个标准工具窗口上环境提供自动化<xref:EnvDTE.Window>对象下面的过程中所述：
 
-1.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>方法通过使用环境<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>作为`VSFPROPID`参数，以获取`Window`对象。
+1.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>方法通过使用环境[__VSFPROPID。VSFPROPID_ExtWindowObject](<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_ExtWindowObject>)作为`VSFPROPID`参数，以获取`Window`对象。
 
 2.  当调用方请求特定于 VSPackage 的自动化对象通过工具窗口<xref:EnvDTE.Window.Object%2A>，环境调用`QueryInterface`有关`IExtensibleObject`， <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>，或`IDispatch`接口。 这两`IExtensibleObject`并`IVsExtensibleObject`提供<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject.GetAutomationObject%2A>方法。
 
@@ -35,10 +35,11 @@ ms.locfileid: "55069719"
 4.  如果调用`QueryInterface`有关`IExtensibleObject`并`IVsExtensibleObject`失败，则环境在调用`QueryInterface`为`IDispatch`。
 
 ## <a name="automation-for-document-windows"></a>文档窗口的自动化
- 一种标准<xref:EnvDTE.Document>对象也是可从环境中，虽然编辑器可以有自己的实现<xref:EnvDTE.Document>通过实现对象`IExtensibleObject`接口和响应的`GetAutomationObject`。
 
- 此外，编辑器可以提供特定于 VSPackage 的自动化对象，通过检索<xref:EnvDTE.Document.Object%2A>方法，通过实现`IVsExtensibleObject`或`IExtensibleObject`接口。 [VSSDK 示例](http://aka.ms/vs2015sdksamples)有助于 RTF 特定于文档的自动化对象。
+一种标准<xref:EnvDTE.Document>对象也是可从环境中，虽然编辑器可以有自己的实现<xref:EnvDTE.Document>通过实现对象`IExtensibleObject`接口和响应的`GetAutomationObject`。
+
+此外，编辑器可以提供特定于 VSPackage 的自动化对象，通过检索<xref:EnvDTE.Document.Object%2A>方法，通过实现`IVsExtensibleObject`或`IExtensibleObject`接口。 [VSSDK 示例](http://aka.ms/vs2015sdksamples)有助于 RTF 特定于文档的自动化对象。
 
 ## <a name="see-also"></a>请参阅
-    
-<xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>
+
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>

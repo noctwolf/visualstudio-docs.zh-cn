@@ -7,22 +7,24 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 720c27b4895abc390926813700bb906c4d0194af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 905193110d8485399b01c1e3c00791154efee637
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824283"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335345"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何：用于 Visual Studio 扩展的基于规则的 UI 上下文
+
 Visual Studio 允许加载 Vspackage 时某些已知<xref:Microsoft.VisualStudio.Shell.UIContext>s 被激活。 但是，这些 UI 上下文不是精细粒度，使扩展创建者无选择，但选择可用的 UI 上下文的点之前激活它们真正想要加载的 VSPackage。 有关的已知用户界面上下文中的列表，请参阅<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>。  
   
- 加载包可能会影响性能并不是需要更快地加载它们不是最佳做法。 Visual Studio 2015 引入了基于规则的 UI 上下文，一种机制，允许扩展创建者定义的精确条件在其下 UI 上下文被激活并加载相关联的 Vspackage 的概念。  
+加载包可能会影响性能并不是需要更快地加载它们不是最佳做法。 Visual Studio 2015 引入了基于规则的 UI 上下文，一种机制，允许扩展创建者定义的精确条件在其下 UI 上下文被激活并加载相关联的 Vspackage 的概念。  
   
 ## <a name="rule-based-ui-context"></a>基于规则的 UI 上下文  
- "规则"包括新的 UI 上下文 (GUID) 和引用一个或多个"条款"的布尔表达式结合使用逻辑"and"、"，"not"操作。 "条款"在运行时动态计算，只要任何其条款更改将被重新计算该表达式。 表达式的计算结果为 true，将激活关联的 UI 上下文。 否则，为取消激活 UI 上下文。  
+
+"规则"包括新的 UI 上下文 (GUID) 和引用一个或多个"条款"的布尔表达式结合使用逻辑"and"、"，"not"操作。 "条款"在运行时动态计算，只要任何其条款更改将被重新计算该表达式。 表达式的计算结果为 true，将激活关联的 UI 上下文。 否则，为取消激活 UI 上下文。  
   
- 可以多种方式使用基于规则的 UI 上下文：  
+可以多种方式使用基于规则的 UI 上下文：  
   
 1. 指定命令和工具窗口的可见性的限制。 满足 UI 上下文规则之前，您可以隐藏 windows 命令/工具。  
   
@@ -124,30 +126,30 @@ Visual Studio 允许加载 Vspackage 时某些已知<xref:Microsoft.VisualStudio
 ```  
   
 ## <a name="term-types"></a>字词类型  
- 下面是术语的支持各种类型:  
+
+下面是术语的支持各种类型:  
   
 |术语|描述|  
 |-|-|  
 |{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|GUID 是指 UI 上下文。 只要 UI 上下文否则处于活动状态且 false 一词将为 true。|  
 |HierSingleSelectionName:\<模式 >|活动的层次结构中的选择是单个项或所选的项的名称与"pattern"提供的.Net 正则表达式匹配时，术语将为 true。|  
-|UserSettingsStoreQuery:\<查询 >|"查询"到用户设置存储中，计算结果必须为非零值表示的完整路径。 该查询拆分为"集合"和"属性名称"处的最后一个斜杠。|  
-|ConfigSettingsStoreQuery:\<查询 >|"查询"到配置设置存储中，计算结果必须为非零值表示的完整路径。 该查询拆分为"集合"和"属性名称"处的最后一个斜杠。|  
-|ActiveProjectFlavor:\<projectTypeGuid >|术语将为 true，每当当前选定的项目风格 （聚合） 和具有风格匹配给定的项目类型 GUID。|  
-|ActiveEditorContentType:\<contentType >|当所选的文档与给定内容类型的文本编辑器时，术语将为 true。|  
-|ActiveProjectCapability:\<表达式 >|当活动项目功能与所提供的表达式匹配时，术语是，则返回 true。 表达式可以是类似于 VB 的内容&#124;CSharp。|  
-|SolutionHasProjectCapability:\<表达式 >|解决方案中包含与表达式匹配任何加载的项目时，与上述相似，但一词是如此。|  
-|SolutionHasProjectFlavor:\<projectTypeGuid >|每当解决方案风格 （聚合） 的项目，并具有匹配给定的项目类型 GUID 的风格，术语将为 true。|
+|UserSettingsStoreQuery:\<query>|"查询"到用户设置存储中，计算结果必须为非零值表示的完整路径。 该查询拆分为"集合"和"属性名称"处的最后一个斜杠。|  
+|ConfigSettingsStoreQuery:\<query>|"查询"到配置设置存储中，计算结果必须为非零值表示的完整路径。 该查询拆分为"集合"和"属性名称"处的最后一个斜杠。|  
+|ActiveProjectFlavor:\<projectTypeGuid>|术语将为 true，每当当前选定的项目风格 （聚合） 和具有风格匹配给定的项目类型 GUID。|  
+|ActiveEditorContentType:\<contentType>|当所选的文档与给定内容类型的文本编辑器时，术语将为 true。|  
+|ActiveProjectCapability:\<Expression>|当活动项目功能与所提供的表达式匹配时，术语是，则返回 true。 表达式可以是类似于 VB 的内容&#124;CSharp。|  
+|SolutionHasProjectCapability:\<Expression>|解决方案中包含与表达式匹配任何加载的项目时，与上述相似，但一词是如此。|  
+|SolutionHasProjectFlavor:\<projectTypeGuid>|每当解决方案风格 （聚合） 的项目，并具有匹配给定的项目类型 GUID 的风格，术语将为 true。|
 
-
-  
 ## <a name="compatibility-with-cross-version-extension"></a>使用跨版本扩展的兼容性  
- 基于规则的 UI 上下文是在 Visual Studio 2015 中的新功能，并将不能移植到更早版本。 不移植到更早版本创建面向多个版本的 Visual Studio/扩展包的问题。 这些版本必须进行自动加载在 Visual Studio 2013 及更早版本，但可以受益于基于规则的 UI 上下文，以防止正在自动加载 Visual Studio 2015 中。  
+
+基于规则的 UI 上下文是在 Visual Studio 2015 中的新功能，并将不能移植到更早版本。 不移植到更早版本创建面向多个版本的 Visual Studio/扩展包的问题。 这些版本必须进行自动加载在 Visual Studio 2013 及更早版本，但可以受益于基于规则的 UI 上下文，以防止正在自动加载 Visual Studio 2015 中。  
   
- 为了支持此类包，AutoLoadPackages 注册表中的项现在可以提供其值字段，用于指示该条目应跳过，在 Visual Studio 2015 及更高版本中的标志。 这可以通过添加一个标志选项，到<xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>。 现在可以添加 Vspackage **SkipWhenUIContextRulesActive**选项设为其<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>特性以指示应忽略该条目，在 Visual Studio 2015 及更高版本。  
-  
+为了支持此类包，AutoLoadPackages 注册表中的项现在可以提供其值字段，用于指示该条目应跳过，在 Visual Studio 2015 及更高版本中的标志。 这可以通过添加一个标志选项，到<xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>。 现在可以添加 Vspackage **SkipWhenUIContextRulesActive**选项设为其<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>特性以指示应忽略该条目，在 Visual Studio 2015 及更高版本。  
 ## <a name="extensible-ui-context-rules"></a>可扩展 UI 上下文规则  
- 有时，包不能使用 UI 上下文的静态规则。 例如，假设有支持可扩展性，以便命令状态基于导入 MEF 提供程序支持的编辑器类型的包。 如果没有支持当前的编辑类型扩展会启用命令。 在这种情况下，包本身不能使用静态的 UI 上下文规则，因为条款将发生更改，具体取决于哪个 MEF 提供了扩展。  
+
+有时，包不能使用 UI 上下文的静态规则。 例如，假设有支持可扩展性，以便命令状态基于导入 MEF 提供程序支持的编辑器类型的包。 如果没有支持当前的编辑类型扩展会启用命令。 在这种情况下，包本身不能使用静态的 UI 上下文规则，因为条款将发生更改，具体取决于哪个 MEF 提供了扩展。  
   
- 若要支持此类包，基于规则的 UI 上下文支持硬编码表达式"*"，该值指示所有以下条款将与联接或者。 这允许主包定义已知的基于规则的 UI 上下文并将绑定到此上下文其命令状态。 以后针对主包任何 MEF 扩展可以添加其条款它不会影响其他术语或主表达式支持的编辑器。  
+若要支持此类包，基于规则的 UI 上下文支持硬编码表达式"*"，该值指示所有以下条款将与联接或者。 这允许主包定义已知的基于规则的 UI 上下文并将绑定到此上下文其命令状态。 以后针对主包任何 MEF 扩展可以添加其条款它不会影响其他术语或主表达式支持的编辑器。  
   
- 构造函数<xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A>文档显示了可扩展 UI 上下文规则的语法。
+构造函数<xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A>文档显示了可扩展 UI 上下文规则的语法。

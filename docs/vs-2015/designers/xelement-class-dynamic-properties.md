@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1b6d4c2d7b83ede687e7335627770a5576003463
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54796150"
 ---
 # <a name="xelement-class-dynamic-properties"></a>XElement 类动态属性
@@ -23,7 +23,7 @@ ms.locfileid: "54796150"
   
 ## <a name="in-this-section"></a>本节内容  
   
-|主题|说明|  
+|主题|说明​​|  
 |-----------|-----------------|  
 |[特性](../designers/attribute-xelement-dynamic-property.md)|获取一个索引器，用于检索与指定扩展名对应的属性。|  
 |[元素](../designers/element-xelement-dynamic-property.md)|获取一个索引器，用于检索与指定扩展名对应的子元素。|  

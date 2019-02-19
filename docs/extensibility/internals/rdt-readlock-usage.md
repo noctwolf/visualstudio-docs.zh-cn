@@ -13,26 +13,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d90e2fcdd07738aaa9cdda28f8d131767bf7ffe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 04997bfed66da015c4aef82f4741218c88b9ecd1
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55011723"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335021"
 ---
 # <a name="rdtreadlock-usage"></a>RDT_ReadLock 用法
 
-<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 是标志，它提供逻辑来锁定文档中正在运行文档表 (RDT)，这 Visual Studio IDE 中当前打开的所有文档的列表。 此标志确定当文档处于打开状态，以及文档是否是在用户界面中可见或保持在内存中不可见的方式。
+[_VSRDTFLAGS。RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>)是标志，它提供逻辑来锁定文档中正在运行文档表 (RDT)，这 Visual Studio IDE 中当前打开的所有文档的列表。 此标志确定当文档处于打开状态，以及文档是否是在用户界面中可见或保持在内存中不可见的方式。
 
-通常情况下，将使用<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>下列任一条件为 true 时：
+通常情况下，使用[_VSRDTFLAGS。RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>)下列任一条件为 true 时：
 
-- 如果想要不可见的方式打开的文档和只读的但它尚未建立的<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>应拥有它。
+- 你想要不可见的方式打开的文档和只读的但它尚未建立的<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>应拥有它。
 
-- 当你希望用户系统会提示保存用户在 UI 中显示，然后尝试将其关闭之前不可见的方式打开的文档。
+- 你希望用户系统会提示保存用户在 UI 中显示，然后尝试将其关闭之前不可见的方式打开的文档。
 
 ## <a name="how-to-manage-visible-and-invisible-documents"></a>如何管理可见和不可见的文档
 
-当用户在 UI 中，打开的文档<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>必须建立文档所有者和<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>标志必须设置。 如果没有<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>可以建立所有者，则当用户单击时，将不会保存该文档**全部保存**或关闭 IDE。 这意味着如果文档处于打开状态不可见的方式在内存中，修改和系统提示您将文档保存在关闭或保存如果用户的位置**全部保存**选择，则`RDT_ReadLock`不能使用。 相反，必须使用`RDT_EditLock`并注册<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>时<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER>标志。
+当用户在 UI 中，打开的文档<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>必须建立文档所有者和[_VSRDTFLAGS。RDT_EditLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_EditLock>)标志必须设置。 如果没有<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>可以建立所有者，则当用户单击时，将不会保存该文档**全部保存**或关闭 IDE。 这意味着如果文档处于打开状态不可见的方式在内存中，修改和系统提示您将文档保存在关闭或保存如果用户的位置**全部保存**选择，则`RDT_ReadLock`不能使用。 相反，必须使用`RDT_EditLock`并注册<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>时[__VSREGDOCLOCKHOLDER。RDLH_WeakLockHolder](<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder>)标志。
 
 ## <a name="rdteditlock-and-document-modification"></a>RDT_EditLock 和文档修改
 

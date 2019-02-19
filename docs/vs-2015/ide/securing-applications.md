@@ -13,10 +13,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d5e7bba9dd9806952fc56ac62b2322f00aebc5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54800755"
 ---
 # <a name="securing-applications"></a>保证应用程序的安全
@@ -57,7 +57,7 @@ ms.locfileid: "54800755"
  [脚本的安全注意事项](http://msdn.microsoft.com/8572efc9-071a-472d-a1a4-f0a3b42644c1)  
  详细介绍 JScript 程序员可能会遇到的一些安全缺陷。  
   
- [如何：使用传输安全性](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
+ [如何：使用传输安全](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
  介绍如何在连接到 WCF 服务时使用传输安全进行身份验证。  
   
 ## <a name="securing-desktop-applications"></a>保护桌面应用程序  

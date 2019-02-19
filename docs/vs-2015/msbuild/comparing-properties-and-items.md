@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9418bd27d2f089b57cc2fb2abcf7b6610342f32d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54758442"
 ---
 # <a name="comparing-properties-and-items"></a>比较属性和项
@@ -71,7 +71,7 @@ MSBuild 属性和项都用于将信息传递给任务、评估条件，以及存
 </PropertyGroup>  
 ```  
   
- 项类型 OutputDir 具有值为“KeyFiles\\;Certificates\\”的 `Include` 属性。 MSBuild 将此字符串分析为两项：KeyFiles\ 和 Certificates\\。 当项类型 OutputDir 用作 OutputDirList 属性的值时，MSBuild 会将项类型转换或“平展”到用分号分隔的字符串“KeyFiles\\;Certificates\\”。  
+ 项类型 OutputDir 具有值为“KeyFiles\\;Certificates\\”的 `Include` 属性。 MSBuild 将此字符串分析为两个项：KeyFiles\ 和Certificates\\。 当项类型 OutputDir 用作 OutputDirList 属性的值时，MSBuild 会将项类型转换或“平展”到用分号分隔的字符串“KeyFiles\\;Certificates\\”。  
   
 ## <a name="properties-and-items-in-tasks"></a>任务中的属性和项  
  对于 MSBuild 任务，属性和项用作输入和输出。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  

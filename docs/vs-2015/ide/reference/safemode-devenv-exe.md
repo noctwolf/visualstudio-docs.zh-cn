@@ -14,10 +14,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4c1cd4b15c3ce3462d6d49eca39fedbc64c744c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54767297"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
@@ -35,7 +35,7 @@ devenv /SafeMode
 ## <a name="remarks"></a>备注  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 启动时，此开关可阻止所有第三方 VSPackages 加载，以此确保执行稳定。  
   
-## <a name="description"></a>说明  
+## <a name="description"></a>说明​​  
  以下示例在安全模式下启动 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
 ## <a name="code"></a>代码  

@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6bcc8502d5404308246ac3ece80780e6a0ccadd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54802954"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 元素 (MSBuild)
@@ -45,7 +45,7 @@ ms.locfileid: "54802954"
   
 ### <a name="attributes"></a>特性  
   
-|特性|说明|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`Condition`|可选特性。<br /><br /> 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
   
@@ -54,7 +54,7 @@ ms.locfileid: "54802954"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明|  
+|元素|说明​​|  
 |-------------|-----------------|  
 |[Item](../msbuild/item-element-msbuild.md)|为生成过程定义输入的用户定义元素。|  
   

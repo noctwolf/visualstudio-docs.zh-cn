@@ -18,10 +18,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 59605af2d0ebb7ed094602e9f300dc8dbc3b7ead
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54799824"
 ---
 # <a name="prerequisites-dialog-box"></a>“系统必备”对话框
@@ -34,7 +34,7 @@ ms.locfileid: "54799824"
   
 ## <a name="uielement-list"></a>UIElement 列表  
   
-|元素|说明|  
+|元素|说明​​|  
 |-------------|-----------------|  
 |**创建用于安装系统必备组件的安装程序**|将应用程序的系统必备组件包含到安装程序 (Setup.exe) 中，以便在安装应用程序之前按照依赖顺序安装这些组件。 默认情况下，该选项是选中的。 如果没有选择此选项，则不会创建 Setup.exe。|  
 |**选择要安装的系统必备组件**|指定是否安装组件，如 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]、Crystal Reports 等等。<br /><br /> 例如，通过选中“SQL Server 2005 Express Edition SP2”旁边的复选框，可以指定安装程序验证目标计算机上是否安装有此组件，如果没有则进行安装。<br /><br /> 有关每个系统必备包的详细信息，请参见本主题后面部分的“系统必备信息”表。|  
@@ -46,7 +46,7 @@ ms.locfileid: "54799824"
 ## <a name="prerequisites-information"></a>系统必备信息  
  出现在“系统必备”对话框中的系统必备组件可能与下面列表中的不同。 第一次打开对话框时将自动设置 **“系统必备”对话框**中所列的必备组件包。 如果随后更改项目的目标框架，则必须手动选择必备组件，以便与新目标框架相匹配。  
   
-|元素|说明|  
+|元素|说明​​|  
 |-------------|-----------------|  
 |**.NET Framework 3.5 SP1**|此程序包会安装下列系统必备组件：<br /><br /> - .NET Framework 2.0、3.0 和 3.5 版<br />- 支持 32 位 (x86) 和 64 位 (x64) 操作系统上的所有 .NET Framework 版本。<br />- 与程序包一起安装的每个 .NET Framework 版本的语言包。<br />- .NET Framework 2.0 和 3.0 服务包。<br /><br /> .NET Framework 3.0 随 Windows Vista 一起提供，.NET Framework 3.5 随 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 一起提供。 .NET Framework 3.5 是针对 32 位操作系统进行编译且目标框架设置为“.NET Framework 3.5”的所有 Visual Basic 和 Visual C# 项目的必需组件，也是针对 64 位操作系统编译的 Visual Basic 和 Visual C# 项目的必需组件。 （不支持 IA64。）注意，默认情况下 Visual Basic 和 Visual C# 项目是针对所有 CPU 体系结构编译的。 有关详细信息，请参阅 [Visual Studio 多目标概述](../../ide/visual-studio-multi-targeting-overview.md)、[再发行 .NET Framework](http://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) 和[部署 64 位应用程序的必备组件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。<br /><br /> 默认情况下，此项处于选定状态。|  
 |**.NET Framework 3.5 SP1 Client Profile**|.NET Framework Client Profile 是完整版 .NET Framework 3.5 SP1 的子集，面向客户端应用程序。 它提供 Windows Presentation Foundation (WPF)、Windows 窗体、Windows Communication Foundation (WCF) 和 ClickOnce 功能的简化子集。 这样可以实现 WPF、Windows 窗体、WCF 和面向 .NET Framework Client Profile 的控制台应用程序的快速部署。 有关详细信息，请参阅 [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。|  

@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 306762ff2f9316043782f64532b278f54fddc1d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801435"
 ---
 # <a name="build-loggers"></a>生成记录器
@@ -66,7 +66,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>说明​​  
  下面的示例包含记录器的完整代码。  
   
 ### <a name="code"></a>代码  
@@ -76,7 +76,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明  
+### <a name="description"></a>说明​​  
  以下示例演示如何实现将日志写入到文件的记录器（而非在控制台窗口中显示记录器）。  
   
 ### <a name="code"></a>代码  

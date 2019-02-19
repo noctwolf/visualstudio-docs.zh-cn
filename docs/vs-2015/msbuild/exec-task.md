@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 337dcd310efbdf0f0657b5eb44b1ed0fc8253b39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54782500"
 ---
 # <a name="exec-task"></a>Exec 任务
@@ -35,7 +35,7 @@ ms.locfileid: "54782500"
 ## <a name="parameters"></a>参数  
  下表描述了 `Exec` 任务的参数。  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`Command`|必选 `String` 参数。<br /><br /> 要运行的命令。 可以是系统命令（例如 attrib），也可以是可执行文件（例如 program.exe、runprogram.bat 或 setup.msi）。<br /><br /> 此参数可包含多行命令。 或者，可将多个命令放在批文件中，然后使用此参数运行文件。|  
 |`CustomErrorRegularExpression`|可选 `String` 参数。<br /><br /> 指定用于查找工具输入中错误行的正则表达式。 这对会生成不常见格式的输出的工具非常有用。|  

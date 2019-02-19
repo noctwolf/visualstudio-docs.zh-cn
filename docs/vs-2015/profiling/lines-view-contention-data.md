@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cb6b8191b39bfc79615bf0bbcd4fb469395f8d8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54779045"
 ---
 # <a name="lines-view---contention-data"></a>“行”视图 — 争用数据
@@ -41,7 +41,7 @@ ms.locfileid: "54779045"
   
   下表介绍“行视图”报告中的各列。  
   
-|列|说明|  
+|列|说明​​|  
 |------------|-----------------|  
 |**独占阻塞的时间**|因争用事件而阻滞此语句执行语句中代码的时间长度。 不包括语句所调用的函数中的阻塞时间。|  
 |**独占阻塞的时间百分比**|语句的独占阻塞时间占进程中所有阻塞时间的百分比。|  
@@ -66,7 +66,7 @@ ms.locfileid: "54779045"
 |**源行结束**|该语句在源文件中的结束行号。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)   
+ [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“行”视图](../profiling/lines-view.md)   
  [“行”视图 - 采样](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [“行”视图](../profiling/lines-view-sampling-data.md)

@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 68280c4da20ce063b93b7347cc2857d4a83b9a18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54769147"
 ---
 # <a name="functions-view---sampling-data"></a>“函数”视图 - 采样数据
@@ -27,7 +27,7 @@ ms.locfileid: "54769147"
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
-|列|说明|  
+|列|说明​​|  
 |------------|-----------------|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  
@@ -43,7 +43,7 @@ ms.locfileid: "54769147"
 |**独占样本数百分比**|分析运行中属于此函数的独占样本的所有样本数的百分比。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)   
+ [如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)   
  [“函数”视图 - 检测](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [“函数”视图 - 采样](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [“函数”视图](../profiling/functions-view-instrumentation-data.md)

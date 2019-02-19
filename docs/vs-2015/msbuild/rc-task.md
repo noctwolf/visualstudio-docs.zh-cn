@@ -24,10 +24,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 075b3d9201cc17537d62bbe467cc8fa6d3558c35
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54773096"
 ---
 # <a name="rc-task"></a>RC 任务
@@ -39,7 +39,7 @@ ms.locfileid: "54773096"
 ## <a name="parameters"></a>参数  
  下表描述了 RC 任务的参数。 大多数任务参数和若干组参数都对应于命令行选项。  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|可选 **String []** 参数。<br /><br /> 将目录添加到在其中搜索包含文件的目录列表中。<br /><br /> 有关详细信息，请参阅 MSDN 网站上 [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730)（使用 RC（RC 命令行））中的 /I 选项。|  
 |**AdditionalOptions**|可选 **String** 参数。<br /><br /> 命令行 optionsor 的列表示例，“/option1 /option2 /option#”。 使用此参数可指定未由任何其他 RC 任务参数表示的命令行选项。<br /><br /> 有关详细信息，请参阅 MSDN 网站上 [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730)（使用 RC（RC 命令行））中的选项。|  

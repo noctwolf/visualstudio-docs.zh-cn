@@ -10,10 +10,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: dbdeb2188580c9be67cbca992a8513c509d5514e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54778440"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>个性化 Visual Studio IDE
@@ -39,7 +39,7 @@ ms.locfileid: "54778440"
  若要在浅色、深色和蓝色之间更改颜色主题，请在“快速启动”中键入环境并选择“环境”&#124;“常规”。 若要更改编辑器中的颜色设置选项，请在“快速启动”中键入 `environment`，然后选择“环境”&#124;“字体和颜色”。 另请参阅[如何：更改字体和颜色](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)。
 
 ### <a name="menus-and-toolbars"></a>菜单和工具栏
- 若要添加或删除菜单或者工具栏项，请参阅[如何：自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
+ 若要添加或删除菜单项或工具栏项，请参阅[如何：自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
 
 ### <a name="main-menu-casing"></a>主菜单中的大小写
  鉴于普遍的需求，可以通过在“快速启动”中键入 `environment` 并选择“环境”&#124;“常规”，从而在“首字母大写”和“全部大写”之间更改主菜单中的大小写。

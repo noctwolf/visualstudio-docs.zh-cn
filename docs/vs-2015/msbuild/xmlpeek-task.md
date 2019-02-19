@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fc39cde1a332e925f998a67ed261346320f18a3c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787790"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 任务
@@ -33,7 +33,7 @@ ms.locfileid: "54787790"
 ## <a name="parameters"></a>参数  
  下表描述了 `XmlPeek` 任务的参数。  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`Namespaces`|可选 `String` 参数。<br /><br /> 指定 XPath 查询前缀的命名空间。|  
 |`Query`|可选 `String` 参数。<br /><br /> 指定 XPath 查询。|  
