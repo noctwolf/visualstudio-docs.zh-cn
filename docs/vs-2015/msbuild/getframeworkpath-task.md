@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d3820cca54cd7d5d2e93e48909627d4200f38983
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54787215"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath 任务
@@ -35,7 +35,7 @@ ms.locfileid: "54787215"
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `GetFrameworkPath` 任务的参数。  
   
-|参数|说明|  
+|参数|说明​​|  
 |---------------|-----------------|  
 |`FrameworkVersion11Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 1.1 版程序集的路径（如存在）。 否则返回 `null`。|  
 |`FrameworkVersion20Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 2.0 版程序集的路径（如存在）。 否则返回 `null`。|  

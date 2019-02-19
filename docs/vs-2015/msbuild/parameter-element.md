@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4c53528159d2950378c56e1da22d81393235f716
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54803377"
 ---
 # <a name="parameter-element"></a>Parameter 元素
@@ -48,7 +48,7 @@ ms.locfileid: "54803377"
   
 ### <a name="attributes"></a>特性  
   
-|特性|说明|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`ParameterType`|可选特性。<br /><br /> 参数的.NET 类型，例如，“System.String”。|  
 |`Output`|可选布尔属性。<br /><br /> 如果值为 `true`，该参数是任务的输出参数。 默认情况下，该值为 `false`。|  
@@ -59,7 +59,7 @@ ms.locfileid: "54803377"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明|  
+|元素|说明​​|  
 |-------------|-----------------|  
 |[ParameterGroup](../msbuild/parametergroup-element.md)|包含一系列可选参数，这些参数将显示在通过使用 `UsingTask``TaskFactory` 生成的任务上。|  
   

@@ -17,10 +17,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54801165"
 ---
 # <a name="using-the-task-list"></a>使用任务列表
@@ -47,7 +47,7 @@ ms.locfileid: "54801165"
   
 #### <a name="to-open-the-task-list"></a>打开“任务列表”  
   
--   上**视图**菜单中，选择**任务列表**(键盘：Ctrl+\\，T)。  
+-   在“视图”菜单中，选择“任务列表”（键盘：Ctrl+\\、T）。  
   
      ![“任务列表”窗口](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
@@ -86,7 +86,7 @@ ms.locfileid: "54801165"
  因为 `TODO` 是预定义令牌，该注释将在列表中显示为 `TODO` 任务。  
   
 ###  <a name="customTokens"></a> 自定义令牌  
- 默认情况下，Visual Studio 包含以下令牌：HACK、 TODO、 撤消，注意。 它们不区分大小写。  
+ 默认情况下，Visual Studio 包含以下令牌：HACK、TODO、UNDONE、NOTE。 它们不区分大小写。  
   
  你也可以创建自己的自定义令牌。  
   
@@ -122,7 +122,7 @@ ms.locfileid: "54801165"
   
 #### <a name="to-create-a-shortcut"></a>创建快捷方式  
   
--   将指针插入到代码中你想要放置快捷方式的位置。 选择**编辑&#124;书签&#124;添加任务列表快捷方式**或按 (键盘：Ctrl+K、Ctrl+H  
+-   将指针插入到代码中你想要放置快捷方式的位置。 选择“编辑”|“书签”|“添加任务列表快捷方式”或按（键盘：Ctrl+K、Ctrl+H）。  
   
      若要在代码中浏览快捷方式，在列表中选择一个快捷方式，然后从快捷菜单中选择“下一任务”  或“上一任务”  。  
   
