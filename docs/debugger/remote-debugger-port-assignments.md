@@ -19,9 +19,9 @@ ms.locfileid: "54956176"
 # <a name="remote-debugger-port-assignments"></a>远程调试器端口分配
 Visual Studio 远程调试器可作为应用程序或后台服务运行。 当它作为应用程序运行时，它将使用默认分配的端口，如下所示：  
 
-- Visual Studio 2019 –
+- Visual Studio 2019: 4024
 
-- Visual Studio 2017
+- Visual Studio 2017: 4022
 
 - Visual Studio 2015：4020  
   

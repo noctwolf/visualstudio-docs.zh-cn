@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3b213c9baf82317c390ee29512de946a220fb6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: da502b2f527f811f20bbce299107cac20517048a
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909631"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317830"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 的功能
 
@@ -99,7 +99,7 @@ Visual Studio 中的 **SQL Server 对象资源管理器**提供类似于 SQL Ser
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>管理源代码并与他人协作
 
-可以在任意提供商（包括 GitHub）托管的 Git 存储库中管理源代码。 或者，使用 [Azure DevOps Services](/azure/devops/index) 管理整个项目的代码、Bug 和工作项。 若要详细了解如何在 Visual Studio 中使用团队资源管理器管理 Git 存储库，请参阅[开始使用 Git 和 Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio)。 Visual Studio 还内置有其他源代码管理功能。 若要了解详细信息，请参阅 [Visual Studio 2017 中的新 Git 功能（博文）](https://blogs.msdn.microsoft.com/devops/2017/03/06/new-git-features-in-visual-studio-2017/)。
+可以在任意提供商（包括 GitHub）托管的 Git 存储库中管理源代码。 或者，使用 [Azure DevOps Services](/azure/devops/index) 管理整个项目的代码、Bug 和工作项。 若要详细了解如何在 Visual Studio 中使用团队资源管理器管理 Git 存储库，请参阅[开始使用 Git 和 Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio)。 Visual Studio 还内置有其他源代码管理功能。 若要了解详细信息，请参阅 [Visual Studio 2017 中的新 Git 功能（博文）](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/)。
 
 Azure DevOps Services 是基于云的服务，用于规划、托管、自动化和部署软件以及在团队中实现协作。 Azure DevOps Services 支持 Git 存储库（分布式版本控制）和 Team Foundation 版本控制（集中式版本控制）。 它们支持用于持续生成和发布 (CI/CD) 版本控制系统中存储的代码的管道。 Azure DevOps Services 还支持 Scrum、CMMI 和敏捷开发方法。
 

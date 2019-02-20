@@ -8,7 +8,7 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: c393d6f9fbd239ab38957f66161bcff7372ac45f
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: fe6a2b69cbd95ad558ed87e9afb65883b30175a3
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058658"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335566"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2019-preview"></a>Visual Studio 2019 预览版的项目迁移和升级参考
 
@@ -35,7 +35,7 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 
 本文详细介绍 Visual Studio 2019 预览版可迁移的项目类型。 它还提供 Visual Studio 2019 预览版弃用的或者即将弃用的项目类型的详细信息。 本文不包括 Visual Studio 2019 中不再支持且因此无法迁移的项目类型。 本文也不包括没有迁移问题的受支持项目类型；此列表位于[平台目标以及兼容性](/visualstudio/releases/2019/compatibility)中。
 
-> [!Important]
+> [!IMPORTANT]
 > 某些项目类型需要通过 Visual Studio 安装程序安装特定的工作负荷。 如果尚未安装工作负荷，Visual Studio 将报告未知的或不兼容的项目类型。 在这种情况下，请检查安装选项，然后重试。 有关 Visual Studio 2019 预览版中项目支持的详细信息，请参阅[平台目标以及兼容性](/visualstudio/releases/2019/compatibility)。
 
 ## <a name="project-types"></a>项目类型

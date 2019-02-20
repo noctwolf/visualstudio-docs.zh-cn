@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b4dd4e347d6a8c96cef9ce9028071214200682c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916162"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316140"
 ---
 # <a name="install-unit-test-frameworks"></a>安装单元测试框架
 
@@ -58,7 +58,7 @@ Visual Studio 测试资源管理器可以运行任何针对该资源管理器开
 
 ## <a name="update-to-the-latest-test-adapters"></a>更新到最新版本的测试适配器
 
-更新到最新版本的稳定测试适配器，以体验更好的测试发现和执行。 有关更新到 MSTest、NUnit 和 xUnit 测试适配器的详细信息，请参阅 [Visual Studio 博客](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/)。
+更新到最新版本的稳定测试适配器，以体验更好的测试发现和执行。 有关更新到 MSTest、NUnit 和 xUnit 测试适配器的详细信息，请参阅 [Visual Studio 博客](https://devblogs.microsoft.com/visualstudio/test-experience-improvements/)。
 
 ### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>更新到最新版本的稳定测试适配器
 

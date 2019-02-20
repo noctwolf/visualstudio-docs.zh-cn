@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96341ada2485654f5553b7b862c84dd03b8b4a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a6f7b61bc3dd6f11bf16808df15d9c2dad1222f6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979486"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316907"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>运行带/不带调试器的分析工具
 
@@ -63,7 +63,7 @@ Visual Studio 提供了性能测量值和分析工具选择。 某些工具（�
 
 ![诊断事件搜索](../profiling/media/diagnosticseventsearch.png "Diagnostic Event Search")  
 
-有关详细信息，请参阅 [搜索和筛选“诊断工具”窗口中的“事件”选项卡](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)。  
+有关详细信息，请参阅 [搜索和筛选“诊断工具”窗口中的“事件”选项卡](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)。  
 
 ## <a name="collect-profiling-data-without-debugging"></a>在不进行调试的情况下收集分析数据  
 
@@ -118,14 +118,14 @@ Visual Studio 提供了性能测量值和分析工具选择。 某些工具（�
   
  [MSDN 杂志：使用 IntelliTrace 更快地诊断问题](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
- [博客文章：使用 Visual Studio 2015 中的内存使用率工具诊断事件处理程序漏洞](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
+ [博客文章：使用 Visual Studio 2015 中的内存使用率工具诊断事件处理程序漏洞](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
   
  [视频：使用 Microsoft Visual Studio Ultimate 2015 中的 IntelliTrace 进行历史记录调试](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
   
  [视频：使用 Visual Studio 2015 调试性能问题](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [性能提示：使用 Visual Studio 调试时快速查看性能信息](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
+ [性能提示：使用 Visual Studio 调试时快速查看性能信息](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
   
- [Visual Studio 2015 中的“诊断工具”调试器窗口](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
+ [Visual Studio 2015 中的“诊断工具”调试器窗口](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   
- [Visual Studio Enterprise 2015 中的 IntelliTrace](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)
+ [Visual Studio Enterprise 2015 中的 IntelliTrace](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)

@@ -27,7 +27,7 @@ ms.locfileid: "54792918"
 规则 Id |DA0002 |  
 |类别 |分析工具使用情况 |  
 |分析方法 |使用 VSPerfCmd 和 VSPerfASPNETCmd 命令行工具进行分析 |  
-|消息 |它会显示不正确设置环境变量未使用 VSPerfCLREnv.cmd 收集文件时。 可能不会解析托管二进制文件的符号。  
+|消息 |它会显示不正确设置环境变量未使用 VSPerfCLREnv.cmd 收集文件时。 可能不会解析托管二进制文件的符号。|  
 |规则类型 |信息 |  
   
 ## <a name="cause"></a>原因  
