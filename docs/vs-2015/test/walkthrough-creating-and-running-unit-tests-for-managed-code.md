@@ -1,14 +1,9 @@
 ---
-title: 演练：创建并运行托管代码的单元测试 | Microsoft Docs
-ms.custom: ''
+title: 演练：创建并运行单元测试的托管代码 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9c74a4f4089fa2af5c7413f8c95076c6254ffa21
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874496"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784655"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -182,7 +177,7 @@ using BankAccountNS;
   
  通过分析所测试的方法，我们确定至少需要检查三个行为：  
   
-1. 该方法将引发 [ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) 如果借方金额大于余额。  
+1. 如果借方金额大于余额，该方法将引发 [ArgumentOutOfRangeException](<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->)。  
   
 2. 如果借方金额小于零，它还会引发 `ArgumentOutOfRangeException` 。  
   
@@ -423,6 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  在最后部分，我们为改进测试代码而做出的努力最终提高了测试方法的可靠性和信息量。 但更重要的是，额外的分析也改善了所测试项目中的代码。
-
-
-

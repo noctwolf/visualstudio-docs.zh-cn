@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1836fac34088b8cc0a144da47d011de9948d8fbb
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: 172a7d27de88e7d5d6361fdc29e4cc49a0ff3d94
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54228027"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55008707"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>使用 IntelliTrace 部署后诊断问题 (C#，Visual Basic)
 
@@ -31,7 +31,7 @@ ms.locfileid: "54228027"
 
 -   Visual Studio Enterprise（并非 Professional 或 Community 版），用于查看诊断数据并使用 IntelliTrace 调试代码的
 
-##  <a name="SetUpBuild"></a> 步骤 1：在发布中包含生成信息
+##  <a name="SetUpBuild"></a>步骤 1：在发布中包含生成信息
  设置生成过程，为 Web 项目创建生成清单（BuildInfo.config 文件）并在发布中包含此清单。 此清单包含有关项目、源代码管理和用于创建特定生成的生成系统的信息。 在你打开 IntelliTrace 日志以查看记录的事件时，此信息可帮助 Visual Studio 查找匹配的源和符号。
 
 ###  <a name="AutomatedBuild"></a> 使用 Team Foundation Server 为自动化生成创建生成清单
@@ -40,15 +40,15 @@ ms.locfileid: "54228027"
 
 ####  <a name="TFS2017"></a> Azure DevOps 和 Team Foundation Server 2017
 
-Visual Studio 2017 不包括 BuildInfo.config 文件，该文件已弃用并删除。 若要在部署后调试 ASP.NET Web 应用，请使用以下方法之一：
+Visual Studio 2017 不包括 BuildInfo.config，已弃用并删除该文件。 若要在部署后调试 ASP.NET Web 应用，请使用以下方法之一：
 
 * 对于部署到 Azure，请使用[Application Insights](https://docs.microsoft.com/azure/application-insights/)。
 
-* 如果需要使用 IntelliTrace，请在 Visual Studio 中打开项目，并从匹配的生成中加载符号文件。 可以从**模块**窗口加载符号文件，或通过在**工具** > **选项** > **调试** > **符号**中配置符号来进行加载。
+* 如果需要使用 IntelliTrace，请在 Visual Studio 中打开项目，并从匹配的生成中加载符号文件。 可以从“模块”窗口加载符号文件，或通过在“工具” > “选项” > “调试” > “符号”中配置符号来进行加载。
 
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
- 设置生成管道以将源代码、生成和符号的位置添加到生成清单（BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。
+ 设置生成管道以将源、生成和符号的位置添加到生成清单（BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。
 
 1.  [编辑生成管道或创建新的生成管道。](/azure/devops/pipelines/get-started-designer?view=vsts)
 
@@ -90,7 +90,7 @@ Visual Studio 2017 不包括 BuildInfo.config 文件，该文件已弃用并删�
 
 6.  运行新的生成。
 
-    转到步骤 1。发布你的应用](#DeployRelease)
+    转到[步骤 2。发布你的应用](#DeployRelease)
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 或 2010
  若要为项目自动创建生成清单（BuildInfo.config 文件）并将其置于你的项目的输出文件夹中，请执行以下步骤。 此文件在输出文件夹中显示为“*ProjectName*.BuildInfo.config”，但是在你发布应用后将在部署文件夹中重命名为“BuildInfo.config”。
@@ -115,7 +115,7 @@ Visual Studio 2017 不包括 BuildInfo.config 文件，该文件已弃用并删�
 
 4.  运行新的生成。
 
-    转到步骤 1。发布你的应用](#DeployRelease)
+    转到[步骤 2。发布你的应用](#DeployRelease)
 
 ###  <a name="ManualBuild"></a> 使用 Visual Studio 为手动生成创建生成清单
  若要为项目自动创建生成清单（BuildInfo.config 文件）并将其置于你的项目的输出文件夹中，请执行以下步骤。 此文件在输出文件夹中显示为“*ProjectName*.BuildInfo.config”，但是在你发布应用后将在部署文件夹中重命名为“BuildInfo.config”。
@@ -142,7 +142,7 @@ Visual Studio 2017 不包括 BuildInfo.config 文件，该文件已弃用并删�
 
 4.  运行新的生成。
 
-    转到步骤 1。发布你的应用](#DeployRelease)
+    转到[步骤 2。发布你的应用](#DeployRelease)
 
 ###  <a name="MSBuild"></a> 使用 MSBuild.exe 为手动生成创建生成清单
  运行生成时添加这些生成参数：
@@ -161,14 +161,14 @@ Visual Studio 2017 不包括 BuildInfo.config 文件，该文件已弃用并删�
 ## <a name="step-3-monitor-your-app"></a>步骤 3：监视您的应用程序
  在 Web 服务器上设置应用程序性能监视，以便可以监视应用程序中的问题、记录诊断事件并将这些事件保存到 IntelliTrace 日志文件中。 请参阅 [监视你的发布的部署问题](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
-##  <a name="InvestigateEvents">步骤 4：</a>找出问题
+##  <a name="InvestigateEvents"></a>步骤 4：查找问题
  你的开发计算机或另一台计算机上将需要 Visual Studio Enterprise，以查看记录的事件并使用 IntelliTrace 调试代码。 你还可以使用诸如 CodeLens、调试器映射和代码映射等工具帮助你诊断问题。
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>打开 IntelliTrace 日志和匹配的解决方案
 
 1.  从 Visual Studio Enterprise 中打开 IntelliTrace 日志（.iTrace 文件）。 或者，如果在同一台计算机上装有 Visual Studio Enterprise，则只需双击该文件。
 
-2.  如果该项目没有作为解决方案的一部分而生成，请选择“打开解决方案”  以让 Visual Studio 自动打开匹配的解决方案或项目。 [问：IntelliTrace 日志缺少有关部署的应用程序的信息。为何发生这种情况？我该怎么办？](#InvalidConfigFile)
+2.  如果该项目没有作为解决方案的一部分而生成，请选择“打开解决方案”  以让 Visual Studio 自动打开匹配的解决方案或项目。 [问：IntelliTrace 日志缺少有关部署的应用的信息。为何发生这种情况？我该怎么办？](#InvalidConfigFile)
 
      Visual Studio 在打开匹配的解决方案或项目时自动搁置挂起的更改。 若要获取有关搁置集的更多详细信息，请在“输出”  窗口或“团队资源管理器” 中查找。
 
@@ -248,12 +248,12 @@ Visual Studio 2017 不包括 BuildInfo.config 文件，该文件已弃用并删�
 
 ###  <a name="FAQ"></a> 问题解答
 
-####  <a name="WhyInclude"></a> 问：为何在我的发布中包含有关我的项目、源代码管理、生成和符号的信息？
+####  <a name="WhyInclude"></a>问：为何在我的发布中包含有关我的项目、源代码管理、生成和符号的信息？
  Visual Studio 使用此信息针对你尝试调试的发布查找匹配的解决方案和源。 在你打开 IntelliTrace 日志并选择要开始调试的事件后，Visual Studio 使用符号查找并向你显示发生事件的代码。 然后你可以查看记录的值，并在代码的执行中向前或向后移动。
 
  如果在使用 TFS，而且此信息不在生成清单（BuildInfo.config 文件）中，Visual Studio 将在当前连接的 TFS 上查找匹配的源和符号。 如果 Visual Studio 找不到正确的 TFS 或匹配的源，将提示你选择不同的 TFS。
 
-####  <a name="InvalidConfigFile"></a> 问：IntelliTrace 日志缺少有关部署的应用程序的信息。 为何发生这种情况？ 我该怎么办？
+####  <a name="InvalidConfigFile"></a>问：IntelliTrace 日志缺少有关部署的应用的信息。 为何发生这种情况？ 我该怎么办？
  当你从开发计算机部署或在部署期间未连接到 TFS 时，可能发生此情况。
 
 1.  转到项目的部署文件夹。
@@ -298,7 +298,7 @@ Visual Studio 2017 不包括 BuildInfo.config 文件，该文件已弃用并删�
 
     - **GitSourceControl**:位置**GitSourceControl**架构
 
-    - RepositoryUrl为 Team Foundation Server、 项目集合和 Git 存储库 URI
+    - **RepositoryUrl**：用于 Team Foundation Server、项目集合和 Git 存储库的 URI
 
     - **ProjectPath**:应用程序的项目文件 （.csproj 或.vbproj） 的路径
 
@@ -357,12 +357,12 @@ Visual Studio 2017 不包括 BuildInfo.config 文件，该文件已弃用并删�
     </Build>
     ```
 
-####  <a name="IneligibleWorkspace"></a> 问：为什么 Visual Studio 提示我选中的工作区域是不合格的？
+####  <a name="IneligibleWorkspace"></a>问：为什么 Visual Studio 提示我选中的工作区域是不合格的？
  **答：** 选中的工作区域没有源代码管理文件夹和本地文件夹之间的任何映射。 若要为此工作区创建映射，请选择“管理” 。 否则，请选择已映射的工作区或创建新的工作区。
 
  ![没有映射工作区的源代码管理中打开](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
-####  <a name="ChooseTeamProject"></a> 问：为什么在选择团队集合或不同的集合前，无法继续？
+####  <a name="ChooseTeamProject"></a>问：为什么在选择团队集合或不同的集合前，无法继续？
  **答：** 这种情况可能是由于以下原因导致的：
 
 -   Visual Studio 未连接到 TFS。
@@ -380,9 +380,9 @@ Visual Studio 2017 不包括 BuildInfo.config 文件，该文件已弃用并删�
      ![源代码管理中打开&#45;迁移](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> 问：什么是工作区？
- **答：**[工作区存储源的副本](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts)，因此在签入工作之前，可以对其进行单独开发和测试。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。
+ **答：** 你的 [工作区存储源的副本](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) ，因此在签入工作之前，你可以对其进行单独开发和测试。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。
 
-####  <a name="UntrustedSymbols"></a> 问：为什么我收到了有关不受信任的符号的消息？
+####  <a name="UntrustedSymbols"></a>问：为什么我收到了有关不受信任的符号的消息？
  ![使用不受信任的符号路径进行调试？](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
  **答：** 当受信任的符号路径列表中不包含生成清单文件 (\<ProjectName>.BuildInfo.config) 中的符号路径时，会出现此消息。 你可将路径添加到调试器选项中的符号路径列表。

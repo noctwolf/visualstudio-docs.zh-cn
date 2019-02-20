@@ -1,14 +1,9 @@
 ---
 title: 在代码和文本编辑器中编写代码 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.texteditor
 dev_langs:
@@ -64,13 +59,13 @@ ms.assetid: cb53ab9a-5b76-4759-b9e8-7bf32298ecbe
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838681"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54794236"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>在代码和文本编辑器中编写代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,17 +122,17 @@ Visual Studio 编辑器提供了许多功能，让你可以更轻松地编写和
 
  ![向前和向后导航按钮](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- 也可以在代码窗口中使用增强的滚动条来获取代码的鸟瞰视图。 在映射模式下，当光标在滚动条上上下移动时可查看代码的预览。有关详细信息，请参阅[如何：通过自定义滚动条来跟踪代码](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)。  
+ 也可以在代码窗口中使用增强的滚动条来获取代码的鸟瞰视图。 映射模式下，可向上移动光标和向下滚动条，有关详细信息，请参阅代码的预览，请参阅[如何：通过自定义滚动条来跟踪代码](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
  以下命令是特定于代码的导航方法：  
 
 |||  
 |-|-|  
-|转到 \<行号>|（“编辑/转到” 或 CTRL + G）：移动到活动文档中的特定行号。|  
-|定位到|（“编辑/定位到” 或 CTRL + ,）：在活动解决方案中查找符号或文件。 它帮助你从查询中选取一组很好的匹配结果。 可通过使用 Camel 大小写格式和下划线字符将符号分为关键字，从而搜索符号中包含的关键字。|  
+|转到 \<行号>|(**编辑/转到**或 CTRL + G):移动到活动文档中的特定行号。|  
+|定位到|(**编辑/导航到**或 CTRL +，):活动解决方案中查找符号或文件。 它帮助你从查询中选取一组很好的匹配结果。 可通过使用 Camel 大小写格式和下划线字符将符号分为关键字，从而搜索符号中包含的关键字。|  
 |查找所有引用|（上下文菜单）：在解决方案中查找对选定元素的所有引用。|  
-|转到定义|（上下文菜单或 F12）：查找选定元素的定义。|  
-|查看定义|（上下文菜单或 Alt+F12）：查找选定元素的定义，并将其显示在弹出窗口中。 有关详细信息，请参阅[如何：使用查看定义 (Alt+F12) 查看和编辑代码](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。|  
+|转到定义|（上下文菜单或 F12）：查找所选元素的定义。|  
+|查看定义|（上下文菜单或 Alt + F12）：查找所选元素的定义，并将其显示在弹出窗口。 有关详细信息，请参阅[如何：使用查看定义 (Alt+F12) 查看和编辑代码](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。|  
 |下一个方法，上一个方法|（“编辑/下一个方法，上一个方法”）在 Visual Basic 代码文件中，使用这些命令将插入点移动到不同的方法。|  
 |引用突出显示|单击源代码中的符号时，将在文档中突出显示该符号的所有实例。 突出显示的符号可能包括声明和引用，以及许多其他“查找所有引用”  将返回的符号。 其中包括类、对象、变量、方法和属性的名称。 在 Visual Basic 代码中，也将突出显示许多控件结构的关键字。 若要移至下一个或上一个突出显示的符号，请按 CTRL+SHIFT+向下键或 CTRL+SHIFT+向上键。 可以在“工具/选项/环境/字体和颜色/突出显示的引用” |  
 |查找代码相关信息|在代码编辑器中使用 CodeLens 时，可以找到有关特定代码的信息，如更改和更改者、引用、Bug、工作项、代码评审和单元测试状态。 将 Visual Studio Enterprise 与 Team Foundation Server 一起使用时，CodeLens 的工作原理类似于警告显示。 请参阅[查找代码更改和其他历史记录](../ide/find-code-changes-and-other-history-with-codelens.md)。|  
@@ -161,7 +156,7 @@ Visual Studio 编辑器提供了许多功能，让你可以更轻松地编写和
   分部类中，在当前代码文件外部定义的成员可能会显示为灰色。  
 
 ## <a name="find-code-using-navigate-to"></a>使用“导航到”查找代码
-Visual Studio 的"导航到"命令执行的代码以帮助您快速在代码文件、 文件路径和代码符号中查找指定的元素已设定焦点的搜索。 与其他文本搜索（例如“查找”或“在文件中查找”）不同的是，“导航到”会将其搜索范围限制为实际代码所在的区域，例如文件、窗体和代码模块。 例如，在 ASP.NET Web 应用程序中搜索某个字符串时，如果在整个解决方案中使用“查找”或“在文件中查找”，则有可能收到多个匹配项，包括代码注解中字符串的实例。 通过使用导航到，但是，你可能只能获取单个函数，而忽略代码注解中字符串的任何实例。
+Visual Studio 的“导航到”命令会对代码进行重点搜索，帮助用户在代码文件、文件路径和代码符号中快速找到指定的元素。 与其他文本搜索（例如“查找”或“在文件中查找”）不同的是，“导航到”会将其搜索范围限制为实际代码所在的区域，例如文件、窗体和代码模块。 例如，在 ASP.NET Web 应用程序中搜索某个字符串时，如果在整个解决方案中使用“查找”或“在文件中查找”，则有可能收到多个匹配项，包括代码注解中字符串的实例。 通过使用导航到，但是，你可能只能获取单个函数，而忽略代码注解中字符串的任何实例。
 
 ### <a name="navigate-code-using-navigate-to"></a>使用“导航到”导航代码
 
@@ -188,9 +183,9 @@ Visual Studio 的"导航到"命令执行的代码以帮助您快速在代码文�
 此功能在代码名称很长的情况下特别有用。
 
 ## <a name="customize-the-editor"></a>自定义编辑器  
- “导入和导出设置”：可以与其他开发人员共享设置，使自己的设置符合某一标准，或者通过使用“工具”  **Wizard** 菜单上的“导入和导出设置向导”  返回 Visual Studio 的默认设置。 可以更改常规设置或特定于语言和项目的设置。  
+ “导入和导出设置”：可以与其他开发人员共享设置，使自己的设置符合某一标准，或者通过使用“工具” Wizard 菜单上的“导入和导出设置向导” 返回 Visual Studio 的默认设置。 可以更改常规设置或特定于语言和项目的设置。  
 
- “键盘映射”：可在“工具/选项/环境/键盘”设置中定义新热键或重新定义现有热键。 有关热键的详细信息，请参阅[默认键盘快捷键](../ide/default-keyboard-shortcuts-in-visual-studio.md)。  
+ **键盘映射**:可以定义新热键或重新定义现有热键的工具/选项/环境/键盘设置中。 有关热键的详细信息，请参阅[默认键盘快捷键](../ide/default-keyboard-shortcuts-in-visual-studio.md)。  
 
  有关特定于语言的编辑器选项的信息，请参阅以下内容：  
 
@@ -236,5 +231,3 @@ Visual Studio 的"导航到"命令执行的代码以帮助您快速在代码文�
 
 ## <a name="see-also"></a>请参阅  
  [Visual Studio IDE](../ide/visual-studio-ide.md)
-
-
