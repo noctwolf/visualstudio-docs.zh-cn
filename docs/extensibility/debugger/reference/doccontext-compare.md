@@ -12,62 +12,62 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f9a2437609109fcdaf85ceb2cfd6fe9dcb6879
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5805f34528225849afb51ce6a854ef5028acb3a5
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990467"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413028"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
-指定用于比较两个文档上下文的条件。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-enum enum_DOCCONTEXT_COMPARE {   
-   DOCCONTEXT_EQUAL         = 0x0001,  
-   DOCCONTEXT_LESS_THAN     = 0x0002,  
-   DOCCONTEXT_GREATER_THAN  = 0x0003,  
-   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
-};  
-typedef DWORD DOCCONTEXT_COMPARE;  
-```  
-  
-```csharp  
-enum enum_DOCCONTEXT_COMPARE {   
-   DOCCONTEXT_EQUAL         = 0x0001,  
-   DOCCONTEXT_LESS_THAN     = 0x0002,  
-   DOCCONTEXT_GREATER_THAN  = 0x0003,  
-   DOCCONTEXT_SAME_DOCUMENT = 0x0004  
-};  
-```  
-  
-## <a name="members"></a>成员  
- DOCCONTEXT_EQUAL  
- 在列表中，它等于目标文档上下文中找到的第一个文档上下文。  
-  
- DOCCONTEXT_LESS_THAN  
- 小于目标文档上下文在列表中找到的第一个文档上下文。  
-  
- DOCCONTEXT_GREATER_THAN  
- 大于目标文档上下文在列表中找到的第一个文档上下文。  
-  
- DOCCONTEXT_SAME_DOCUMENT  
- 在目标文档上下文与在同一文档中的列表中找到的第一个文档上下文。  
-  
-## <a name="remarks"></a>备注  
- 作为参数传递[比较](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。  
-  
- 这些值用于指定用于在列表中查找第一个文档上下文比较条件。 文档上下文提供的文档上下文列表来比较本身对通过`IDebugDocumentContext2::Compare`方法。 为其所比较运算符列表中的第一个文档上下文`true`然后返回。  
-  
-## <a name="requirements"></a>要求  
- 标头： msdbg.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>请参阅  
- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+指定用于比较两个文档上下文的条件。
+
+## <a name="syntax"></a>语法
+
+```cpp
+enum enum_DOCCONTEXT_COMPARE {
+    DOCCONTEXT_EQUAL         = 0x0001,
+    DOCCONTEXT_LESS_THAN     = 0x0002,
+    DOCCONTEXT_GREATER_THAN  = 0x0003,
+    DOCCONTEXT_SAME_DOCUMENT = 0x0004
+};
+typedef DWORD DOCCONTEXT_COMPARE;
+```
+
+```csharp
+enum enum_DOCCONTEXT_COMPARE {
+    DOCCONTEXT_EQUAL         = 0x0001,
+    DOCCONTEXT_LESS_THAN     = 0x0002,
+    DOCCONTEXT_GREATER_THAN  = 0x0003,
+    DOCCONTEXT_SAME_DOCUMENT = 0x0004
+};
+```
+
+## <a name="members"></a>成员
+DOCCONTEXT_EQUAL  
+在列表中，它等于目标文档上下文中找到的第一个文档上下文。
+
+DOCCONTEXT_LESS_THAN  
+小于目标文档上下文在列表中找到的第一个文档上下文。
+
+DOCCONTEXT_GREATER_THAN  
+大于目标文档上下文在列表中找到的第一个文档上下文。
+
+DOCCONTEXT_SAME_DOCUMENT  
+在目标文档上下文与在同一文档中的列表中找到的第一个文档上下文。
+
+## <a name="remarks"></a>备注
+作为参数传递[比较](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。
+
+这些值用于指定用于在列表中查找第一个文档上下文比较条件。 文档上下文提供的文档上下文列表来比较本身对通过`IDebugDocumentContext2::Compare`方法。 为其所比较运算符列表中的第一个文档上下文`true`然后返回。
+
+## <a name="requirements"></a>要求
+标头： msdbg.h
+
+命名空间:Microsoft.VisualStudio.Debugger.Interop
+
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>请参阅
+[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

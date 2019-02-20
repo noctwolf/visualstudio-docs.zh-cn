@@ -12,53 +12,53 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f478af5932626a738f0212716511d9a28c1dcde3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 020d631405586227d91fd06fb1794ab5554d1075
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000247"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56226905"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
-检索用于指定函数是否是引入的虚拟函数的标志。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_intro (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回`TRUE`如果函数为简介虚拟; 否则，返回`FALSE`。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
-  
+检索用于指定函数是否是引入的虚拟函数的标志。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_intro ( 
+    BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+`pRetVal`  
+[out]返回`TRUE`如果函数为简介虚拟; 否则，返回`FALSE`。
+
+## <a name="return-value"></a>返回值
+如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
+
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。  
-  
-## <a name="example"></a>示例  
-  
-```C++  
-class A {  
-   virtual int f1();  
-}  
-class B : public A {  
-   int f1();  
-}  
-```  
-  
- 这两`A::f1`并`B::f1`是虚拟函数，但`A::f1`是虚拟的简介。  
-  
-## <a name="requirements"></a>要求  
-  
-|需求|说明​​|  
-|-----------------|-----------------|  
-|标头：|dia2.h|  
-|版本:|DIA SDK v7.0|  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> 返回值为`S_FALSE`表示该属性不是可用于符号。
+
+## <a name="example"></a>示例
+
+```C++
+class A {
+    virtual int f1();
+}
+class B : public A {
+    int f1();
+}
+```
+
+这两`A::f1`并`B::f1`是虚拟函数，但`A::f1`是虚拟的简介。
+
+## <a name="requirements"></a>要求
+
+|需求|说明​​|
+|-----------------|-----------------|
+|标头：|dia2.h|
+|版本:|DIA SDK v7.0|
+
+## <a name="see-also"></a>请参阅
+[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -11,84 +11,84 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1867b2524508a5c786cfe42bea68dc0ff5ea76d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: eb887a7d8e164616a987e475e4617e9ea88f90bf
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941335"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413418"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
-检索在给定其名称的自定义属性。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetCustomAttributeByName(  
-   LPCOLESTR pszCustomAttributeName,  
-   BYTE*     ppBlob,  
-   DWORD*    pdwLen  
-);  
-```  
-  
-```csharp  
-int GetCustomAttributeByName(  
-   string    pszCustomAttributeName,  
-   ref int[] ppBlob,  
-   out uint  pdwLen  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pszCustomAttributeName`  
- [in]自定义特性的名称。  
-  
- `ppBlob`  
- [in、 out]包含自定义特性数据的字节数组。  
-  
- `pdwLen`  
- [out]以字节为单位的长度`ppBlob`参数。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 如果自定义特性不存在，将返回`S_FALSE`。 否则，返回错误代码。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugClassFieldSymbol**对象，它公开[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)接口。  
-  
-```cpp  
-HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(  
-    LPCOLESTR pszCustomAttributeName,  
-    BYTE *pBlob,  
-    DWORD *pdwLen  
-)  
-{  
-    HRESULT hr = S_FALSE;  
-    CComPtr<IMetaDataImport> pMetadata;  
-    mdToken token = mdTokenNil;  
-    CComPtr<IDebugField> pField;  
-    CComPtr<IDebugCustomAttributeQuery> pCA;  
-  
-    ASSERT(IsValidWideStringPtr(pszCustomAttributeName));  
-    ASSERT(IsValidWritePtr(pdwLen, ULONG*));  
-  
-    METHOD_ENTRY( CDebugClassFieldSymbol::GetCustomAttributeByName );  
-  
-    IfFalseGo( pszCustomAttributeName && pdwLen, E_INVALIDARG );  
-  
-    IfFailGo( m_spSH->GetMetadata( m_spAddress->GetModule(), &pMetadata ) );  
-  
-    IfFailGo( CDebugCustomAttribute::GetTokenFromAddress( m_spAddress, &token) );  
-    IfFailGo( CDebugCustomAttribute::GetCustomAttributeByName( pMetadata,  
-              token,  
-              pszCustomAttributeName,  
-              pBlob,  
-              pdwLen ) );  
-Error:  
-  
-    METHOD_EXIT( CDebugClassFieldSymbol::GetCustomAttributeByName, hr );  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+检索在给定其名称的自定义属性。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetCustomAttributeByName(
+    LPCOLESTR pszCustomAttributeName,
+    BYTE*     ppBlob,
+    DWORD*    pdwLen
+);
+```
+
+```csharp
+int GetCustomAttributeByName(
+    string    pszCustomAttributeName,
+    ref int[] ppBlob,
+    out uint  pdwLen
+);
+```
+
+#### <a name="parameters"></a>参数
+`pszCustomAttributeName`  
+[in]自定义特性的名称。
+
+`ppBlob`  
+[in、 out]包含自定义特性数据的字节数组。
+
+`pdwLen`  
+[out]以字节为单位的长度`ppBlob`参数。
+
+## <a name="return-value"></a>返回值
+如果成功，则返回 `S_OK`。 如果自定义特性不存在，将返回`S_FALSE`。 否则，返回错误代码。
+
+## <a name="example"></a>示例
+下面的示例演示如何实现此方法对于**CDebugClassFieldSymbol**对象，它公开[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)接口。
+
+```cpp
+HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(
+    LPCOLESTR pszCustomAttributeName,
+    BYTE *pBlob,
+    DWORD *pdwLen
+)
+{
+    HRESULT hr = S_FALSE;
+    CComPtr<IMetaDataImport> pMetadata;
+    mdToken token = mdTokenNil;
+    CComPtr<IDebugField> pField;
+    CComPtr<IDebugCustomAttributeQuery> pCA;
+
+    ASSERT(IsValidWideStringPtr(pszCustomAttributeName));
+    ASSERT(IsValidWritePtr(pdwLen, ULONG*));
+
+    METHOD_ENTRY( CDebugClassFieldSymbol::GetCustomAttributeByName );
+
+    IfFalseGo( pszCustomAttributeName && pdwLen, E_INVALIDARG );
+
+    IfFailGo( m_spSH->GetMetadata( m_spAddress->GetModule(), &pMetadata ) );
+
+    IfFailGo( CDebugCustomAttribute::GetTokenFromAddress( m_spAddress, &token) );
+    IfFailGo( CDebugCustomAttribute::GetCustomAttributeByName( pMetadata,
+              token,
+              pszCustomAttributeName,
+              pBlob,
+              pdwLen ) );
+Error:
+
+    METHOD_EXIT( CDebugClassFieldSymbol::GetCustomAttributeByName, hr );
+    return hr;
+}
+```
+
+## <a name="see-also"></a>请参阅
+[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

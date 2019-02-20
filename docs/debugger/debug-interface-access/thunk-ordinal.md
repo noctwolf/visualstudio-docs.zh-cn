@@ -12,60 +12,60 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 756a1b9fde9c85ca914b00924cb13191859be78e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 482c5f7bd0565c3b6ece124c88bd5e225b4cc7dd
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952296"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318519"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
-指定转换 （thunk） 类型。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-typedef enum THUNK_ORDINAL {   
-   THUNK_ORDINAL_NOTYPE,  
-   THUNK_ORDINAL_ADJUSTOR,  
-   THUNK_ORDINAL_VCALL,  
-   THUNK_ORDINAL_PCODE,  
-   THUNK_ORDINAL_LOAD   
-  
-   // trampoline thunk ordinals - only for use in Trampoline thunk symbols  
-   THUNK_ORDINAL_TRAMP_INCREMENTAL,  
-   THUNK_ORDINAL_TRAMP_BRANCHISLAND,  
-} THUNK_ORDINAL;  
-```  
-  
-## <a name="elements"></a>元素  
- THUNK_ORDINAL_NOTYPE  
- 标准转换 （thunk)。  
-  
- THUNK_ORDINAL_ADJUSTOR  
- 一个`this`精算师转换 （thunk)。  
-  
- THUNK_ORDINAL_VCALL  
- 虚调用 thunk。  
-  
- THUNK_ORDINAL_PCODE  
- P 代码转换 （thunk)。  
-  
- THUNK_ORDINAL_LOAD  
- 延迟加载转换 （thunk)。  
-  
- THUNK_ORDINAL_TRAMP_INCREMENTAL  
- 增量 trampoline thunk （trampoline 转换 （thunk） 用于从一个内存空间之间反弹调用）。  
-  
- THUNK_ORDINAL_TRAMP_BRANCHISLAND  
- 分支点 trampoline 转换 （thunk)。  
-  
-## <a name="remarks"></a>备注  
- 此枚举中的值返回到调用[idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)方法。  
-  
-## <a name="requirements"></a>要求  
- 标头： cvconst.h  
-  
-## <a name="see-also"></a>请参阅  
- [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)
+指定转换 （thunk） 类型。
+
+## <a name="syntax"></a>语法
+
+```C++
+typedef enum THUNK_ORDINAL {
+    THUNK_ORDINAL_NOTYPE,
+    THUNK_ORDINAL_ADJUSTOR,
+    THUNK_ORDINAL_VCALL,
+    THUNK_ORDINAL_PCODE,
+    THUNK_ORDINAL_LOAD
+
+    // trampoline thunk ordinals - only for use in Trampoline thunk symbols
+    THUNK_ORDINAL_TRAMP_INCREMENTAL,
+    THUNK_ORDINAL_TRAMP_BRANCHISLAND,
+} THUNK_ORDINAL;
+```
+
+## <a name="elements"></a>元素
+THUNK_ORDINAL_NOTYPE  
+标准转换 （thunk)。
+
+THUNK_ORDINAL_ADJUSTOR  
+一个`this`精算师转换 （thunk)。
+
+THUNK_ORDINAL_VCALL  
+虚调用 thunk。
+
+THUNK_ORDINAL_PCODE  
+P 代码转换 （thunk)。
+
+THUNK_ORDINAL_LOAD  
+延迟加载转换 （thunk)。
+
+THUNK_ORDINAL_TRAMP_INCREMENTAL  
+增量 trampoline thunk （trampoline 转换 （thunk） 用于从一个内存空间之间反弹调用）。
+
+THUNK_ORDINAL_TRAMP_BRANCHISLAND  
+分支点 trampoline 转换 （thunk)。
+
+## <a name="remarks"></a>备注
+此枚举中的值返回到调用[idiasymbol:: Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)方法。
+
+## <a name="requirements"></a>要求
+标头： cvconst.h
+
+## <a name="see-also"></a>请参阅
+[枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)  
+[IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md)

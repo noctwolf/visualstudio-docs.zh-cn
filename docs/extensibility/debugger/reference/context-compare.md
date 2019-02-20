@@ -12,87 +12,87 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95706df8b9b4d366e8baf25a96e3e15bc6532be1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35c68d2be2179b3bbcb1b3c691deb42cd8e8414f
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930207"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412833"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
-指定用于比较两个内存上下文的条件。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-enum enum_CONTEXT_COMPARE {   
-   CONTEXT_EQUAL                 = 0x0001,  
-   CONTEXT_LESS_THAN             = 0x0002,  
-   CONTEXT_GREATER_THAN          = 0x0003,  
-   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
-   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
-   CONTEXT_SAME_SCOPE            = 0x0006,  
-   CONTEXT_SAME_FUNCTION         = 0x0007,  
-   CONTEXT_SAME_MODULE           = 0x0008,  
-   CONTEXT_SAME_PROCESS          = 0x0009  
-};  
-typedef DWORD CONTEXT_COMPARE;  
-```  
-  
-```csharp  
-public enum enum_CONTEXT_COMPARE {   
-   CONTEXT_EQUAL                 = 0x0001,  
-   CONTEXT_LESS_THAN             = 0x0002,  
-   CONTEXT_GREATER_THAN          = 0x0003,  
-   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
-   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
-   CONTEXT_SAME_SCOPE            = 0x0006,  
-   CONTEXT_SAME_FUNCTION         = 0x0007,  
-   CONTEXT_SAME_MODULE           = 0x0008,  
-   CONTEXT_SAME_PROCESS          = 0x0009  
-};  
-```  
-  
-## <a name="members"></a>成员  
- CONTEXT_EQUAL  
- 在列表中，它等于目标内存上下文中找到的第一个内存上下文。  
-  
- CONTEXT_LESS_THAN  
- 小于目标内存上下文在列表中找到的第一个内存上下文。  
-  
- CONTEXT_GREATER_THAN  
- 在列表的最大目标内存上下文中找到的第一个内存上下文。  
-  
- CONTEXT_LESS_THAN_OR_EQUAL  
- 小于或等于目标内存上下文在列表中找到的第一个内存上下文。  
-  
- CONTEXT_GREATER_THAN_OR_EQUAL  
- 大于或等于目标内存上下文在列表中找到的第一个内存上下文。  
-  
- CONTEXT_SAME_SCOPE  
- 目标内存上下文与同一作用域中在列表中找到的第一个内存上下文。  
-  
- CONTEXT_SAME_FUNCTION  
- 在与目标内存范围内相同的功能是在列表中找到的第一个内存上下文。  
-  
- CONTEXT_SAME_MODULE  
- 中的目标内存上下文是相同的模块列表中找到的第一个内存上下文。  
-  
- CONTEXT_SAME_PROCESS  
- 在与目标内存上下文相同的进程列表中找到的第一个内存上下文。  
-  
-## <a name="remarks"></a>备注  
- 作为参数传递[比较](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)方法。  
-  
- 这些值用于满足指定的比较条件列表中找到的第一个内存上下文。 内存上下文提供一系列内存上下文来比较本身对通过`IDebugMemoryContext2::Compare`方法。 为其所比较运算符列表中的第一个内存上下文`true`然后返回。  
-  
-## <a name="requirements"></a>要求  
- 标头： msdbg.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>请参阅  
- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+指定用于比较两个内存上下文的条件。
+
+## <a name="syntax"></a>语法
+
+```cpp
+enum enum_CONTEXT_COMPARE {
+    CONTEXT_EQUAL                 = 0x0001,
+    CONTEXT_LESS_THAN             = 0x0002,
+    CONTEXT_GREATER_THAN          = 0x0003,
+    CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,
+    CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,
+    CONTEXT_SAME_SCOPE            = 0x0006,
+    CONTEXT_SAME_FUNCTION         = 0x0007,
+    CONTEXT_SAME_MODULE           = 0x0008,
+    CONTEXT_SAME_PROCESS          = 0x0009
+};
+typedef DWORD CONTEXT_COMPARE;
+```
+
+```csharp
+public enum enum_CONTEXT_COMPARE {
+    CONTEXT_EQUAL                 = 0x0001,
+    CONTEXT_LESS_THAN             = 0x0002,
+    CONTEXT_GREATER_THAN          = 0x0003,
+    CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,
+    CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,
+    CONTEXT_SAME_SCOPE            = 0x0006,
+    CONTEXT_SAME_FUNCTION         = 0x0007,
+    CONTEXT_SAME_MODULE           = 0x0008,
+    CONTEXT_SAME_PROCESS          = 0x0009
+};
+```
+
+## <a name="members"></a>成员
+CONTEXT_EQUAL  
+在列表中，它等于目标内存上下文中找到的第一个内存上下文。
+
+CONTEXT_LESS_THAN  
+小于目标内存上下文在列表中找到的第一个内存上下文。
+
+CONTEXT_GREATER_THAN  
+在列表的最大目标内存上下文中找到的第一个内存上下文。
+
+CONTEXT_LESS_THAN_OR_EQUAL  
+小于或等于目标内存上下文在列表中找到的第一个内存上下文。
+
+CONTEXT_GREATER_THAN_OR_EQUAL  
+大于或等于目标内存上下文在列表中找到的第一个内存上下文。
+
+CONTEXT_SAME_SCOPE  
+目标内存上下文与同一作用域中在列表中找到的第一个内存上下文。
+
+CONTEXT_SAME_FUNCTION  
+在与目标内存范围内相同的功能是在列表中找到的第一个内存上下文。
+
+CONTEXT_SAME_MODULE  
+中的目标内存上下文是相同的模块列表中找到的第一个内存上下文。
+
+CONTEXT_SAME_PROCESS  
+在与目标内存上下文相同的进程列表中找到的第一个内存上下文。
+
+## <a name="remarks"></a>备注
+作为参数传递[比较](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)方法。
+
+这些值用于满足指定的比较条件列表中找到的第一个内存上下文。 内存上下文提供一系列内存上下文来比较本身对通过`IDebugMemoryContext2::Compare`方法。 为其所比较运算符列表中的第一个内存上下文`true`然后返回。
+
+## <a name="requirements"></a>要求
+标头： msdbg.h
+
+命名空间:Microsoft.VisualStudio.Debugger.Interop
+
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>请参阅
+[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
+[Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
