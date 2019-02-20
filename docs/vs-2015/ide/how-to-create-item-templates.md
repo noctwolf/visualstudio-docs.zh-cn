@@ -155,7 +155,7 @@ ms.locfileid: "54788241"
   
 7.  在 Windows 资源管理器中，选择要包括到模板中的文件，右键单击所选内容，单击“发送到”，然后单击“压缩(zipped)文件夹”。 所选的文件被压缩到一个 .zip 文件中。  
   
-8.  复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2017 中，默认目录是..\Users\\<username\>\Documents\Visual Studio 2017\Templates\ItemTemplates\\。 有关详细信息，请参阅“如何：查找和组织项目和项模板”。  
+8.  复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2015 中，默认目录是 ..\Users\\<username\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\。 有关详细信息，请参阅“如何：查找和组织项目和项模板”。  
   
 ## <a name="see-also"></a>请参阅  
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   

@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a251698b7c7a2ff1247bb03902deaa7b27f18a49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935116"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318311"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 测试资源管理器常见问题解答
 
@@ -107,7 +107,7 @@ Visual Studio 2019 中不再出现一些与测试相关的 API。进行了哪些
 
 测试项目 {} 不引用任何 .NET NuGet 适配器。测试发现或执行可能不适用于此项目。建议在解决方案的每个 .NET 测试项目中引用 NuGet 测试适配器。**
 
-项目需要使用测试适配器 NuGet 包，而不使用测试适配器扩展。 该需求极大地提高了性能，并通过持续集成减少产生的问题。 阅读[发行说明](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension)中有关 .NET 测试适配器扩展弃用的详细信息。
+项目需要使用测试适配器 NuGet 包，而不使用测试适配器扩展。 该需求极大地提高了性能，并通过持续集成减少产生的问题。 阅读[发行说明](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension)中有关 .NET 测试适配器扩展弃用的详细信息。
 
 > [!NOTE]
 > 如果使用 NUnit 2 测试适配器且无法迁移到 NUnit 3 测试适配器，则可以在 Visual Studio 15.8 版的“工具” > “选项” > “测试”中关闭这一新发现行为。

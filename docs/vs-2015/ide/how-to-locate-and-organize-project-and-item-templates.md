@@ -51,7 +51,7 @@ ms.locfileid: "54778521"
   
   例如，以下目录包含自定义 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 项目模板：  
   
-  C:\Documents and Settings\UserName\My Documents\Visual Studio \\Version\>\Templates\ProjectTemplates\Visual C#\  
+  C:\Documents and Settings\UserName\My Documents\\<Visual Studio version\>\Templates\ProjectTemplates\Visual C#\  
   
   自定义模板不包含已本地化模板的子目录。 可在“环境\项目和解决方案”下的“选项”对话框中更改自定义模板的默认目录。  
   
@@ -117,7 +117,7 @@ ms.locfileid: "54778521"
   
 1. 在自定义项目模板目录的语言文件夹中创建一个文件夹。 例如，要为 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 模板创建 HelloWorld 类别，你将创建以下目录：  
   
-    \My Documents\Visual Studio \\Version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My Documents\\<Visual Studio version\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. 将此类别的所有模板放入新文件夹。  
   
@@ -131,7 +131,7 @@ ms.locfileid: "54778521"
   
 1.  在自定义项模板目录的语言文件夹中创建一个文件夹。 例如，要为 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 模板创建 HelloWorld 类别，你将创建以下目录：  
   
-     \My Documents\Visual Studio \\Version\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \My Documents\\<Visual Studio version\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
 2.  将此类别的所有模板放入新文件夹。  
   

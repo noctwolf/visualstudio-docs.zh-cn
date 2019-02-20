@@ -93,7 +93,7 @@ ms.locfileid: "54799150"
   
 4. 在“活动解决方案平台”列表中，选择“新建”。  
   
-5. 5. 在“新建解决方案平台”对话框中，选择“x64”，且不要复制 x86 平台中的设置。  
+5. 在“新建解决方案平台”对话框中，选择“x64”，不复制 x86 平台中的设置。  
   
     ![“新建解决方案平台”对话框](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")  
   
