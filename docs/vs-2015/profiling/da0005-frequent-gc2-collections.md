@@ -25,8 +25,8 @@ ms.locfileid: "54794098"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 RuleId |DA0005 |  
-|类别 |。NET Framework 使用情况 |  
-|分析方法 |。.NET 内存 |  
+|类别 |.NET Framework 使用情况 |  
+|分析方法 |.NET 内存 |  
 |消息 |很多对象被收集在第 2 代垃圾回收。 |  
 |消息类型 |警告 |  
   

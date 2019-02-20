@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12aa697bff0a60ce6ab9a24351514c96ce107d02
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: HT
+ms.openlocfilehash: be2882cd6db93da4222f8ed12d1847aa5b39a288
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53960649"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54995214"
 ---
 # <a name="command-line-capture-tool"></a>命令行捕获工具
 DXCap.exe 是一个用于图形诊断捕获和播放的命令行工具。 它在所有功能级别支持从 Direct3D 10 到 Direct3D 12 的所有版本。  
@@ -161,17 +161,17 @@ DXCap.exe -e map
  上面的命令枚举匹配"映射"; 的 UWP 应用下面是输出：  
   
  包“Microsoft.BingMaps”：  
- **InstallDirectory：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName         ：Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID          ：S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **Name             ：Microsoft.BingMaps**  
- **Publisher        ：CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
- **Version          ：2.1.2914.1734**  
+ InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe  
+ FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe  
+ UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533  
+ Name             : Microsoft.BingMaps  
+ Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  
+ Version          : 2.1.2914.1734  
  **可启动应用程序：**  
- **Id：AppexMaps**  
- **Exe：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA：No**  
- **AppSpec （将启动）： DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**枚举的每个应用的输出的最后一行显示可用于从其捕获图形信息的命令。  
+ Id: AppexMaps  
+ Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe  
+ IsWWA: No  
+ **AppSpec（将启动）：DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**枚举的每个应用的输出的最后一行显示可用于从其捕获图形信息的命令。  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>捕获特定帧或特定时段内的帧。  
  使用`-frame`指定你想要使用逗号和范围捕获的帧：  

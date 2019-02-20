@@ -1,25 +1,20 @@
 ---
-title: 步骤 4：使用 TableLayoutPanel 控件设置窗体布局 | Microsoft Docs
-ms.custom: ''
+title: 步骤 4：使用 TableLayoutPanel 控件设置窗体布局 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4a08359c11fa45c87c787a5a3a414eb8515e7473
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210089"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763266"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步骤 4：使用 TableLayoutPanel 控件设置窗体布局
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ TableLayoutPanel 控件
      ![选定“填充”的“属性”窗口](../ide/media/express-docktable.png "Express_DockTable")  
 选定“填充”的“属性”窗口  
   
-     Visual Studio 中的停靠是指 IDE 中的一个窗口附加到另一个窗口或区域的情况。 例如，属性窗口可以取消停靠，即 Visual Studio – 中自由浮动，或者它可以停靠**解决方案资源管理器**。  
+     Visual Studio 中的停靠是指 IDE 中的一个窗口附加到另一个窗口或区域的情况。 例如，“属性”窗口可以取消停靠，即在 Visual Studio 中独立地自由浮动，也可以靠近“解决方案资源管理器”停靠。  
   
 7.  将 TableLayoutPanel 的“停靠”属性设置为“填充”后，此面板将填充整个窗体。 如果再次调整窗体的大小，则 TableLayoutPanel 将保持停靠状态，并自行调整大小以适合窗体。  
   
@@ -98,6 +93,3 @@ TableLayoutPanel 列和行样式
 -   若要转到下一个教程步骤，请参阅[步骤 5：向窗体添加控件](../ide/step-5-add-controls-to-your-form.md)。  
   
 -   若要返回上一个教程步骤，请参阅[步骤 3：设置窗体属性](../ide/step-3-set-your-form-properties.md)。
-
-
-
