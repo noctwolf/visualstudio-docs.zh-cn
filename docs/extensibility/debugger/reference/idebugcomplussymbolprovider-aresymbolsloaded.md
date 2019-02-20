@@ -11,64 +11,64 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36ee4fda07e4adfc1aa84d5fa4f639dde1378086
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 32e47f84c399f3a2119c42ee12b5384e96a92fb4
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54960953"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56412846"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
-确定是否为给定的应用程序域标识符的指定模块加载调试符号。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT AreSymbolsLoaded (  
-   ULONG32 ulAppDomainID,  
-   GUID    guidModule  
-);  
-```  
-  
-```csharp  
-int AreSymbolsLoaded (  
-   uint ulAppDomainID,  
-   Guid guidModule  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `ulAppDomainID`  
- [in]应用程序域标识符。  
-  
- `guidModule`  
- [in]该模块的唯一标识符。  
-  
-## <a name="return-value"></a>返回值  
- 如果已加载调试符号，则返回`S_OK`; 否则为返回`S_FALSE`。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::AreSymbolsLoaded(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule  
-)  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<CModule> pModule;  
-    Module_ID idModule(ulAppDomainID, guidModule);  
-  
-    METHOD_ENTRY( CDebugSymbolProvider::AreSymbolsLoaded );  
-  
-    IfFalseGo( GetModule( idModule, &pModule ) == S_OK, S_FALSE );  
-Error:  
-  
-    METHOD_EXIT( CDebugSymbolProvider::AreSymbolsLoaded, hr );  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+确定是否为给定的应用程序域标识符的指定模块加载调试符号。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT AreSymbolsLoaded (
+    ULONG32 ulAppDomainID,
+    GUID    guidModule
+);
+```
+
+```csharp
+int AreSymbolsLoaded (
+    uint ulAppDomainID,
+    Guid guidModule
+);
+```
+
+#### <a name="parameters"></a>参数
+`ulAppDomainID`  
+[in]应用程序域标识符。
+
+`guidModule`  
+[in]该模块的唯一标识符。
+
+## <a name="return-value"></a>返回值
+如果已加载调试符号，则返回`S_OK`; 否则为返回`S_FALSE`。
+
+## <a name="example"></a>示例
+下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。
+
+```cpp
+HRESULT CDebugSymbolProvider::AreSymbolsLoaded(
+    ULONG32 ulAppDomainID,
+    GUID guidModule
+)
+{
+    HRESULT hr = S_OK;
+    CComPtr<CModule> pModule;
+    Module_ID idModule(ulAppDomainID, guidModule);
+
+    METHOD_ENTRY( CDebugSymbolProvider::AreSymbolsLoaded );
+
+    IfFalseGo( GetModule( idModule, &pModule ) == S_OK, S_FALSE );
+Error:
+
+    METHOD_EXIT( CDebugSymbolProvider::AreSymbolsLoaded, hr );
+    return hr;
+}
+```
+
+## <a name="see-also"></a>请参阅
+[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

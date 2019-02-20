@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172a7d27de88e7d5d6361fdc29e4cc49a0ff3d94
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: c6f7a6053c36805ccc219319c93b4064fe45472b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008707"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316881"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>使用 IntelliTrace 部署后诊断问题 (C#，Visual Basic)
 
@@ -90,7 +90,7 @@ Visual Studio 2017 不包括 BuildInfo.config，已弃用并删除该文件。 �
 
 6.  运行新的生成。
 
-    转到[步骤 2。发布你的应用](#DeployRelease)
+    转到[步骤 2： 发布你的应用](#DeployRelease)
 
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 或 2010
  若要为项目自动创建生成清单（BuildInfo.config 文件）并将其置于你的项目的输出文件夹中，请执行以下步骤。 此文件在输出文件夹中显示为“*ProjectName*.BuildInfo.config”，但是在你发布应用后将在部署文件夹中重命名为“BuildInfo.config”。
@@ -115,7 +115,7 @@ Visual Studio 2017 不包括 BuildInfo.config，已弃用并删除该文件。 �
 
 4.  运行新的生成。
 
-    转到[步骤 2。发布你的应用](#DeployRelease)
+    转到[步骤 2： 发布你的应用](#DeployRelease)
 
 ###  <a name="ManualBuild"></a> 使用 Visual Studio 为手动生成创建生成清单
  若要为项目自动创建生成清单（BuildInfo.config 文件）并将其置于你的项目的输出文件夹中，请执行以下步骤。 此文件在输出文件夹中显示为“*ProjectName*.BuildInfo.config”，但是在你发布应用后将在部署文件夹中重命名为“BuildInfo.config”。
@@ -142,7 +142,7 @@ Visual Studio 2017 不包括 BuildInfo.config，已弃用并删除该文件。 �
 
 4.  运行新的生成。
 
-    转到[步骤 2。发布你的应用](#DeployRelease)
+    转到[步骤 2： 发布你的应用](#DeployRelease)
 
 ###  <a name="MSBuild"></a> 使用 MSBuild.exe 为手动生成创建生成清单
  运行生成时添加这些生成参数：
@@ -153,12 +153,12 @@ Visual Studio 2017 不包括 BuildInfo.config，已弃用并删除该文件。 �
 
  **/p:BuildSymbolStorePath=**\<*path to symbols*>
 
-##  <a name="DeployRelease"></a> 步骤 2：发布你的应用
+##  <a name="DeployRelease"></a>步骤 2：发布你的应用
  如果使用生成过程创建的 [Web.Deploy 包](https://msdn.microsoft.com/library/dd394698.aspx) 来部署你的应用，则生成清单从“*ProjectName*.BuildInfo.config”自动重命名为“BuildInfo.config”，并在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。
 
  如果你使用其他方法部署应用，请确保生成清单从“*ProjectName*.BuildInfo.config”重命名为“BuildInfo.config”，并且在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。
 
-## <a name="step-3-monitor-your-app"></a>步骤 3：监视您的应用程序
+## <a name="step-3-monitor-your-app"></a>步骤 3：监视你的应用
  在 Web 服务器上设置应用程序性能监视，以便可以监视应用程序中的问题、记录诊断事件并将这些事件保存到 IntelliTrace 日志文件中。 请参阅 [监视你的发布的部署问题](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
 ##  <a name="InvestigateEvents"></a>步骤 4：查找问题
@@ -216,7 +216,7 @@ Visual Studio 2017 不包括 BuildInfo.config，已弃用并删除该文件。 �
 
     - [IntelliTrace 日志中所有这些其他事件和信息是什么？](../debugger/using-saved-intellitrace-data.md)
     - [我还能在此处执行什么操作？](#WhatElse)
-    - [是否想了解有关性能事件的详细信息？](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)
+    - [是否想了解有关性能事件的详细信息？](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)
 
 ### <a name="diagnose-an-exception"></a>诊断异常
 
@@ -276,11 +276,11 @@ Visual Studio 2017 不包括 BuildInfo.config，已弃用并删除该文件。 �
 
   - **TFS**
 
-    - **ProjectCollectionUri**:Team Foundation Server 和项目集合的 URI
+    - **ProjectCollectionUri**：用于 Team Foundation Server 和项目集合的 URI
 
-    - **ProjectItemSpec**:应用程序的项目文件 （.csproj 或.vbproj） 的路径
+    - **ProjectItemSpec**：应用的项目文件（.csproj 或 .vbproj）的路径
 
-    - **ProjectVersionSpec**:你的项目的版本
+    - **ProjectVersionSpec**：项目的版本
 
       例如:
 
@@ -296,13 +296,13 @@ Visual Studio 2017 不包括 BuildInfo.config，已弃用并删除该文件。 �
 
   - **Git**
 
-    - **GitSourceControl**:位置**GitSourceControl**架构
+    - **GitSourceControl**： **GitSourceControl** 架构的位置
 
     - **RepositoryUrl**：用于 Team Foundation Server、项目集合和 Git 存储库的 URI
 
-    - **ProjectPath**:应用程序的项目文件 （.csproj 或.vbproj） 的路径
+    - **ProjectPath**：应用的项目文件（.csproj 或 .vbproj）的路径
 
-    - **CommitId**:你的提交 id
+    - **CommitId**：你的提交的 ID
 
       例如:
 
@@ -320,15 +320,15 @@ Visual Studio 2017 不包括 BuildInfo.config，已弃用并删除该文件。 �
 
    有关生成系统（ `"TeamBuild"` 或 `"MSBuild"`）以及以下所需属性的信息：
 
-  - **BuildLabel** （对于 TeamBuild):生成名称和号码。 此标签也用作部署事件的名称。 有关生成号的详细信息，请参阅 [使用生成号为已完成的生成提供有意义的名称](/azure/devops/pipelines/build/options?view=vsts)。
+  - **BuildLabel** （对于 TeamBuild）：生成名称和号码。 此标签也用作部署事件的名称。 有关生成号的详细信息，请参阅 [使用生成号为已完成的生成提供有意义的名称](/azure/devops/pipelines/build/options?view=vsts)。
 
-  - **SymbolPath** （推荐）：你用分号分隔的符号 （PDB 文件） 位置的 Uri 列表。 这些 URI 可以是 URL 或 UNC。 它使 Visual Studio 更易于查找匹配的符号以帮助你进行调试。
+  - **SymbolPath** （推荐）：你的符号（PDB 文件）位置的 URI 列表，采用分号分隔。 这些 URI 可以是 URL 或 UNC。 它使 Visual Studio 更易于查找匹配的符号以帮助你进行调试。
 
-  - **BuildReportUrl** （对于 TeamBuild):在 TFS 中生成报告的位置
+  - **BuildReportUrl** （对于 TeamBuild）：TFS 中的生成报告的位置
 
-  - **BuildId** （对于 TeamBuild):在 TFS 中生成详细信息的 URI。 此 URI 也用作部署事件的 ID。 如果不使用 TeamBuild，则它必须是唯一的 ID。
+  - **BuildId** （对于 TeamBuild）：TFS 中生成详细信息的 URI。 此 URI 也用作部署事件的 ID。 如果不使用 TeamBuild，则它必须是唯一的 ID。
 
-  - **BuiltSolution**:Visual Studio 用于查找和打开匹配的解决方案的解决方案文件路径。 这是 **SolutionPath** MsBuild 属性的内容。
+  - **BuiltSolution**：Visual Studio 用于查找和打开匹配的解决方案的解决方案文件的路径。 这是 **SolutionPath** MsBuild 属性的内容。
 
     例如:
 
@@ -379,7 +379,7 @@ Visual Studio 2017 不包括 BuildInfo.config，已弃用并删除该文件。 �
 
      ![源代码管理中打开&#45;迁移](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-####  <a name="WhatWorkspace"></a> 问：什么是工作区？
+####  <a name="WhatWorkspace"></a>问：什么是工作区？
  **答：** 你的 [工作区存储源的副本](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) ，因此在签入工作之前，你可以对其进行单独开发和测试。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。
 
 ####  <a name="UntrustedSymbols"></a>问：为什么我收到了有关不受信任的符号的消息？

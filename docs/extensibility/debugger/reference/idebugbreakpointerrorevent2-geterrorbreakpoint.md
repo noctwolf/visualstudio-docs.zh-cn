@@ -12,70 +12,70 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c32a163c3f2ee81ee31e29b236b8e4b7a333e2b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1b04af33de39f2703cea71bb907348cf18bab31b
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038612"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413327"
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
-获取[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)对象，它介绍了为什么未绑定断点的原因。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetErrorBreakpoint(   
-   IDebugErrorBreakpoint2** ppErrorBP  
-);  
-```  
-  
-```csharp  
-int GetErrorBreakpoint(   
-   out IDebugErrorBreakpoint2 ppErrorBP  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `ppErrorBP`  
- [out]返回[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)描述警告或错误的对象。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 之后`IDebugErrorBreakpoint2`获取接口，请调用[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)方法以获取[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)对象。 然后[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)方法可以用于确定了无效的位置、 无效的表达式或为何挂起断点未绑定，例如，未加载的代码的原因和其他操作。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CBreakpointSetDebugEventBase**对象，它公开[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)接口。  
-  
-```cpp  
-STDMETHODIMP CBreakpointErrorDebugEventBase::GetErrorBreakpoint(  
-    IDebugErrorBreakpoint2 **ppbp)  
-{  
-    HRESULT hRes = E_FAIL;  
-  
-    if ( ppbp )  
-    {  
-        if ( m_pError )  
-        {  
-            *ppbp = m_pError;  
-  
-            m_pError->AddRef();  
-  
-            hRes = S_OK;  
-        }  
-        else  
-            hRes = E_FAIL;  
-    }  
-    else  
-        hRes = E_INVALIDARG;  
-  
-    return ( hRes );  
-}  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)   
- [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)   
- [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)
+获取[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)对象，它介绍了为什么未绑定断点的原因。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetErrorBreakpoint( 
+    IDebugErrorBreakpoint2** ppErrorBP
+);
+```
+
+```csharp
+int GetErrorBreakpoint( 
+    out IDebugErrorBreakpoint2 ppErrorBP
+);
+```
+
+#### <a name="parameters"></a>参数
+`ppErrorBP`  
+[out]返回[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)描述警告或错误的对象。
+
+## <a name="return-value"></a>返回值
+如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="remarks"></a>备注
+之后`IDebugErrorBreakpoint2`获取接口，请调用[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)方法以获取[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)对象。 然后[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)方法可以用于确定了无效的位置、 无效的表达式或为何挂起断点未绑定，例如，未加载的代码的原因和其他操作。
+
+## <a name="example"></a>示例
+下面的示例演示如何实现此方法对于**CBreakpointSetDebugEventBase**对象，它公开[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)接口。
+
+```cpp
+STDMETHODIMP CBreakpointErrorDebugEventBase::GetErrorBreakpoint(
+    IDebugErrorBreakpoint2 **ppbp)
+{
+    HRESULT hRes = E_FAIL;
+
+    if ( ppbp )
+    {
+        if ( m_pError )
+        {
+            *ppbp = m_pError;
+
+            m_pError->AddRef();
+
+            hRes = S_OK;
+        }
+        else
+            hRes = E_FAIL;
+    }
+    else
+        hRes = E_INVALIDARG;
+
+    return ( hRes );
+}
+```
+
+## <a name="see-also"></a>请参阅
+[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)  
+[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)  
+[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)

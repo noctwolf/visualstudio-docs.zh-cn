@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96a7fe0e46420a2469271219aa44ee76c9a49774
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
+ms.openlocfilehash: 446348078f79ae49408dac9a1d00cb29f968b184
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986795"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316842"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 独立收集器 (C#，Visual Basic)
 
 **IntelliTrace 独立收集器** 可让你收集生产服务器或其他环境中应用的 IntelliTrace 诊断数据，而无需在目标计算机上安装 Visual Studio 或更改目标系统环境。 IntelliTrace 独立收集器可用于 Web、SharePoint、WPF 和 Windows 窗体应用中。 数据收集完毕后，只需删除收集器以进行卸载。
 
- 观看运行中的 IntelliTrace：[收集并分析生成的 IntelliTrace 数据以便进行调试 （第 9 频道视频）](http://go.microsoft.com/fwlink/?LinkID=251851)
+ 在操作中观察 IntelliTrace： [收集并分析生成的 IntelliTrace 数据以便进行调试（第 9 频道视频）](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
 >  通过在 **跟踪** 模式下使用 **Microsoft 监视代理** ，你还可以收集远程计算机上运行的 Web 及 SharePoint 应用的相同 IntelliTrace 数据。
@@ -379,7 +379,7 @@ ms.locfileid: "54986795"
 
 -   从 IntelliTrace 调试 Visual Studio Enterprise 中的会话，请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
--   Microsoft 测试管理器中的测试会话，请参阅[如何： 收集 IntelliTrace 数据以帮助调试难题](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。
+-   可通过 Microsoft 测试管理器中的测试会话获取，请参阅 [如何：收集 IntelliTrace 数据以帮助调试难题](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。
 
 ## <a name="where-can-i-get-more-information"></a>在何处可以获取详细信息？
  [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)
@@ -393,10 +393,10 @@ ms.locfileid: "54986795"
 
  [优化生产服务器上的 IntelliTrace 收集](http://go.microsoft.com/fwlink/?LinkId=255233)
 
- [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)
+ [Microsoft DevOps](https://devblogs.microsoft.com/devops/)
 
 ### <a name="forums"></a>论坛
  [Visual Studio 调试器](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 ### <a name="videos"></a>视频
- [第 9 频道视频：收集并分析 IntelliTrace 数据](http://go.microsoft.com/fwlink/?LinkID=251851)
+ [第 9 频道：收集和分析 IntelliTrace 数据](http://go.microsoft.com/fwlink/?LinkID=251851)

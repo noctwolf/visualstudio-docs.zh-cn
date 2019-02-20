@@ -11,85 +11,85 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be91f2e66edb1a2426fbdb37160d5ffd8a24571b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c6c3c396dbea0e005012162080590a0b84ec9f5b
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021216"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413288"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
-指定的数据流中的这些更新在内存中的调试符号。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT UpdateSymbols (  
-   ULONG32  ulAppDomainID,  
-   GUID     guidModule,  
-   IStream* pUpdateStream  
-);  
-```  
-  
-```csharp  
-int UpdateSymbols (  
-   uint    ulAppDomainID,  
-   Guid    guidModule,  
-   IStream pUpdateStream  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `ulAppDomainID`  
- [in]应用程序域的标识符。  
-  
- `guidModule`  
- [in]该模块的唯一标识符。  
-  
- `pUpdateStream`  
- [in]包含已更新的调试符号的数据流。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::UpdateSymbols(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    IStream* pUpdateStream  
-)  
-{  
-    ASSERT(!"Use UpdateSymbols2 on IDebugENCSymbolProvider2");  
-    return E_NOTIMPL;  
-}  
-  
-HRESULT CDebugSymbolProvider::UpdateSymbols2(  
-    ULONG32 ulAppDomainID,  
-    GUID guidModule,  
-    IStream* pUpdateStream,  
-    LINEDELTA* pDeltaLines,  
-    ULONG cDeltaLines  
-)  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<CModule> pModule;  
-    Module_ID idModule(ulAppDomainID, guidModule);  
-  
-    METHOD_ENTRY( CDebugSymbolProvider::UpdateSymbols );  
-  
-    IfFailGo( GetModule( idModule, &pModule ) );  
-    IfFailGo( pModule->UpdateSymbols( pUpdateStream, pDeltaLines, cDeltaLines ) );  
-  
-Error:  
-  
-    METHOD_EXIT( CDebugSymbolProvider::UpdateSymbols, hr );  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+指定的数据流中的这些更新在内存中的调试符号。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT UpdateSymbols (
+    ULONG32  ulAppDomainID,
+    GUID     guidModule,
+    IStream* pUpdateStream
+);
+```
+
+```csharp
+int UpdateSymbols (
+    uint    ulAppDomainID,
+    Guid    guidModule,
+    IStream pUpdateStream
+);
+```
+
+#### <a name="parameters"></a>参数
+`ulAppDomainID`  
+[in]应用程序域的标识符。
+
+`guidModule`  
+[in]该模块的唯一标识符。
+
+`pUpdateStream`  
+[in]包含已更新的调试符号的数据流。
+
+## <a name="example"></a>示例
+下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。
+
+```cpp
+HRESULT CDebugSymbolProvider::UpdateSymbols(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    IStream* pUpdateStream
+)
+{
+    ASSERT(!"Use UpdateSymbols2 on IDebugENCSymbolProvider2");
+    return E_NOTIMPL;
+}
+
+HRESULT CDebugSymbolProvider::UpdateSymbols2(
+    ULONG32 ulAppDomainID,
+    GUID guidModule,
+    IStream* pUpdateStream,
+    LINEDELTA* pDeltaLines,
+    ULONG cDeltaLines
+)
+{
+    HRESULT hr = S_OK;
+    CComPtr<CModule> pModule;
+    Module_ID idModule(ulAppDomainID, guidModule);
+
+    METHOD_ENTRY( CDebugSymbolProvider::UpdateSymbols );
+
+    IfFailGo( GetModule( idModule, &pModule ) );
+    IfFailGo( pModule->UpdateSymbols( pUpdateStream, pDeltaLines, cDeltaLines ) );
+
+Error:
+
+    METHOD_EXIT( CDebugSymbolProvider::UpdateSymbols, hr );
+
+    return hr;
+}
+```
+
+## <a name="return-value"></a>返回值
+如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="see-also"></a>请参阅
+[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
