@@ -1,5 +1,5 @@
 ---
-title: 如何：安装特定版本 |Microsoft Docs
+title: 如何： 安装特定版本 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -12,10 +12,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5f74512d0c035a82845d77f4b3df12633036f03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54756355"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>如何：安装特定版本的 Visual Studio
@@ -33,7 +33,7 @@ ms.locfileid: "54756355"
 
 |Visual Studio 2015 版本|运行内容|要使用的命令行|安装程序执行的操作|
 |--------------------------------|-----------------|--------------------------|---------------------|
-|Visual Studio Enterprise（最新公开发布的版本）|使用更新的 visual Studio Enterprise (可从[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015))|`vs_enterprise.exe` **注意：** 此安装的默认行为是提供最新的可选功能，因此，不需要任何命令行参数。|Visual Studio 安装程序将使用最新的 feed.xml 并安装最新的文件|
+|Visual Studio Enterprise（最新公开发布的版本）|使用更新的 visual Studio Enterprise (可从[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015))|`vs_enterprise.exe` 注意：此安装的默认行为是提供最新的可选功能，因此不需要任何命令行参数。|Visual Studio 安装程序将使用最新的 feed.xml 并安装最新的文件|
 |Visual Studio Enterprise Update 3（原始 Update 3，不包含任何 Update 3 之后的更新）|Visual Studio Enterprise RTM（可从 [MSDN 订阅下载页](https://msdn.microsoft.com/subscriptions/downloads/)获取）|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160628.2/enu/feed.xml`|Visual Studio 安装程序将使用提供的 Update 3 发布时的 feed.xml|
 |Visual Studio Enterprise Update 2 （原始 Update 2，但更新了该之前更新 3）|Visual Studio Enterprise RTM（可从 [MSDN 订阅下载页](https://msdn.microsoft.com/subscriptions/downloads/)获取）|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/6/B/B/6BBD3561-D764-4F39-AB8E-05356A122545/20160620.2/enu/feed.xml`|Visual Studio 安装程序将使用发布 Update 3 之前的最新 feed.xml|
 |Visual Studio Enterprise (不需任何进一步的更新 2 纪元更新原始 Update 2)|Visual Studio Enterprise RTM（可从 [MSDN 订阅下载页](https://msdn.microsoft.com/subscriptions/downloads/)获取）|`vs_enterprise.exe /OverrideFeedURI http://download.microsoft.com/download/0/6/B/06BB0C5C-C767-4250-91DA-AB463377597E/20160405.3/enu/feed.xml`|Visual Studio 安装程序将使用提供的 Update 2 发布时的 feed.xml|

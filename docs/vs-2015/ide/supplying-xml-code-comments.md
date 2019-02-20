@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 33c148b459e34da26f068fe041d90979c7244cde
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
+ms.lasthandoff: 02/19/2019
 ms.locfileid: "54780493"
 ---
 # <a name="supplying-xml-code-comments"></a>提供 XML 代码注释
@@ -27,7 +27,7 @@ ms.locfileid: "54780493"
 
 你可以将源代码文件中的注释作为 IntelliSense 提供。 将 /doc 开关添加到 Visual Basic、C# 或 C++ 编译器命令行时，会生成一个 .xml 文件，作为 IntelliSense 文档的基础。  
   
- 有关在 Visual Basic 中的代码文档化的详细信息，请参阅[如何：创建 XML 文档](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230)。  
+ 有关 Visual Basic 中的代码文档化的详细信息，请参阅[如何：创建 XML 文档注释](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230)。  
   
  有关 C# 中的代码文档化的详细信息，请参阅 [XML 文档注释](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)。  
   
