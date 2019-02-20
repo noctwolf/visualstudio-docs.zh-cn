@@ -10,18 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 72947a75cb782ad92444dd58658dbeebce55012a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6190f4e735b7b3f05efe80f8d8562ac03f1ee3c8
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967568"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335022"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>调试 Visual Studio 中的 Azure 服务
 
 可以使用 Visual Studio 在不同的场景中调试 Azure 服务：
 
 - 若要调试在 Azure 应用服务中托管的生产应用，请参阅[调试实时 ASP.NET 应用中使用快照调试程序](../debugger/debug-live-azure-applications.md)。
+
+- 若要调试在 Azure 虚拟机或 Azure 虚拟机规模集托管的生产应用，请参阅[调试实时 ASP.NET Azure 虚拟机和 Azure 虚拟机规模集使用 Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)。
+
+- 若要调试在 Azure Kubernetes 服务中托管的生产应用，请参阅[调试实时 ASP.NET Azure Kubernetes 服务使用 Snapshot Debugger](../debugger/debug-live-azure-kubernetes.md)。
 
 - 若要调试使用 Application Insights 的生产应用程序和托管在 Azure 应用服务或 Service Fabric 中，请参阅[调试.NET 应用中发生异常的快照](/azure/application-insights/app-insights-snapshot-debugger)。
 
