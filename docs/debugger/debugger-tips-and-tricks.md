@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2f709322c847057e31b89260a7cfae99e46f7b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8d484a343969bd6abb73a128d740e6ec57c9432e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016508"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318415"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 调试器在工作效率方面的提示和技巧
 
@@ -77,9 +77,9 @@ ms.locfileid: "55016508"
 3. 查找中的变量**局部变量**窗口 (**调试 > Windows > 局部变量**)，右键单击该变量，然后选择**创建对象 ID**。
 
     ![创建对象 ID](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
+
 4.  应该会在“局部变量” **$** 窗口中看到 **$** 窗口中设置断点来中断调用函数返回到的指令或行处的执行。 此变量是对象 id。
-  
+
 5.  右键单击对象 ID 变量，然后选择**添加监视**。
 
 有关详细信息，请参阅[创建的对象 ID](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds)。
@@ -123,11 +123,11 @@ ms.locfileid: "55016508"
 #### <a name="to-show-threads-in-your-source-code"></a>在源代码中显示线程
 
 1.  调试时，单击**源中显示线程**按钮![在源中显示线程](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")中**调试**工具栏。
-  
+
 2.  查看窗口左侧的滚动条。 在这一行，你可以看到*线程标记*图标![线程标记](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，类似于两根细线。 线程标记指示线程在此位置停止。
 
     注意，线程标记可能被断点不完全遮挡。
-  
+
 3.  将指针悬停在线程标记上。 屏幕上将显示数据提示。 数据提示将告诉你每个已停止线程的名称和线程 ID。
 
     你还可以查看中的线程的位置[并行堆栈窗口](../debugger/get-started-debugging-multithreaded-apps.md)。
@@ -162,8 +162,8 @@ ms.locfileid: "55016508"
 
 有关更多提示和技巧以及更多详细的信息，请参阅以下博客文章：
 
-- [使用 Visual Studio 调试时，7个简单的已知技巧](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [Visual Studio 中 7 个隐藏的 gem](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [使用 Visual Studio 调试时，7个简单的已知技巧](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [Visual Studio 中 7 个隐藏的 gem](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>请参阅
 [键盘快捷键](../ide/tips-and-tricks-for-visual-studio.md)

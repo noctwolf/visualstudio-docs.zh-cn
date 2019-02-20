@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b29907488ba276f3deb18e10cf47a0205501e1e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 470212f3b6dc4151b793dcd62b9ff1d39fc2e55b
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982879"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316218"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>远程调试C#或 Visual Studio 中的 Visual Basic 项目
 若要调试已部署在另一台计算机的 Visual Studio 应用程序，安装和在其中部署您的应用程序的计算机上运行远程工具、 将项目配置为从 Visual Studio 中，连接到远程计算机，然后运行应用。
@@ -98,7 +98,7 @@ ms.locfileid: "54982879"
 
      应看到远程计算机上打开了 WPF 应用程序的主窗口。
   
-14. 如果有必要，请采取措施以命中断点。 你应看到该断点处于活动状态。 如果不可用，尚未加载该应用程序的符号。 重试，并且如果这不起作用，获取有关加载符号的信息和如何解决在这些问题[了解符号文件和 Visual Studio 的符号设置](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)。
+14. 如果有必要，请采取措施以命中断点。 你应看到该断点处于活动状态。 如果不可用，尚未加载该应用程序的符号。 重试，并且如果这不起作用，获取有关加载符号的信息和如何解决在这些问题[了解符号文件和 Visual Studio 的符号设置](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)。
   
 15. 在 Visual Studio 机器上，你应看到执行在断点处停止。
   

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2191ed7d6c091b730be9204d70cec79a0c6e5e44
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035232"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317765"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 功能 (C#，Visual Basic、 c + +)
 
@@ -105,21 +105,21 @@ Visual Studio Enterprise 版中提供 IntelliTrace，但 Visual Studio Professio
 
 ## <a name="blogs"></a>博客
 
-[Visual Studio Enterprise 2015 中的 IntelliTrace](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)
+[Visual Studio Enterprise 2015 中的 IntelliTrace](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)
 
-[实时调试的演练使用 Visual Studio 2015 （文本编辑器） 中的 IntelliTrace](https://blogs.msdn.microsoft.com/devops/2015/01/16/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
+[实时调试的演练使用 Visual Studio 2015 （文本编辑器） 中的 IntelliTrace](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-text-editor/)
 
-[实时调试的演练使用 Visual Studio 2015 （社交俱乐部） 中的 IntelliTrace](https://blogs.msdn.microsoft.com/devops/2015/04/29/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
+[实时调试的演练使用 Visual Studio 2015 （社交俱乐部） 中的 IntelliTrace](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
 
-[在 Visual Studio Enterprise 2015 现在支持附加 IntelliTrace ！](https://blogs.msdn.microsoft.com/devops/2015/05/14/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
+[在 Visual Studio Enterprise 2015 现在支持附加 IntelliTrace ！](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
 
-[从使用 IntelliTrace 独立收集器的 windows 服务中收集数据](https://blogs.msdn.microsoft.com/devops/2015/05/14/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
+[从使用 IntelliTrace 独立收集器的 windows 服务中收集数据](https://devblogs.microsoft.com/devops/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
 
-[编辑 IntelliTrace 收集计划](https://blogs.msdn.microsoft.com/devops/2015/03/09/editing-the-intellitrace-collection-plan/)
+[编辑 IntelliTrace 收集计划](https://devblogs.microsoft.com/devops/editing-the-intellitrace-collection-plan)
 
-[自定义 TraceSource 和使用 IntelliTrace 进行调试](https://blogs.msdn.microsoft.com/devops/2014/12/16/custom-tracesource-and-debugging-using-intellitrace/)
+[自定义 TraceSource 和使用 IntelliTrace 进行调试](https://devblogs.microsoft.com/devops/custom-tracesource-and-debugging-using-intellitrace/)
 
-[在 Active Directory 帐户下运行的 IntelliTrace 独立收集器和应用程序池](https://blogs.msdn.microsoft.com/devops/2014/12/22/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
+[在 Active Directory 帐户下运行的 IntelliTrace 独立收集器和应用程序池](https://devblogs.microsoft.com/devops/intellitrace-standalone-collector-and-application-pools-running-under-active-directory-accounts/)
 
 ## <a name="forums"></a>论坛
 
