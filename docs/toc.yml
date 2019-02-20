@@ -322,6 +322,10 @@ items:
           items:
           - name: 更改方法签名
             href: ide/reference/change-method-signature.md
+          - name: 将匿名类型转换为类
+            href: ide/reference/convert-anonymous-type-to-class.md
+          - name: 将匿名类型转换为元组
+            href: ide/reference/convert-anonymous-type-to-tuple.md
           - name: 在 for 循环和 foreach 语句之间进行转换
             href: ide/reference/convert-for-loop-to-foreach.md
           - name: 在 Get 方法和属性之间进行转换
@@ -340,6 +344,8 @@ items:
             href: ide/reference/move-declaration-near-reference.md
           - name: 将类型移到匹配的文件
             href: ide/reference/move-type-to-matching-file.md
+          - name: 拉取成员
+            href: ide/reference/pull-members-up.md
           - name: 删除无法访问的代码
             href: ide/reference/remove-unreachable-code.md
           - name: 重命名
@@ -348,6 +354,8 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: 使用显式类型
             href: ide/reference/convert-var-to-explicit-type.md
+          - name: 自动换行、缩进和对齐参数
+            href: ide/reference/wrap-align-indent-parameters.md
         - name: 演练：基于使用情况生成代码
           href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
       - name: 工作效率提示
@@ -508,6 +516,11 @@ items:
       href: vsto/office-and-sharepoint-development-in-visual-studio.md
     - name: 使用 XML 和 XSLT 文件
       href: xml-tools/xml-tools-in-visual-studio.md
+    - name: 开发国际应用
+      href: ide/globalizing-and-localizing-applications.md
+      items:
+      - name: 双向语言
+        href: ide/creating-applications-in-bi-directional-languages.md
     - name: 其他教程
       items:
       - name: 使用 C# 或 Visual Basic 创建 WPF 应用
@@ -696,30 +709,7 @@ items:
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
     - name: 用于设计支持辅助功能的应用的资源
       href: ide/reference/resources-for-designing-accessible-applications.md
-  - name: 全球化和本地化应用
-    href: ide/globalizing-and-localizing-applications.md
-    items:
-    - name: 国际 .NET Framework 应用简介
-      href: ide/introduction-to-international-applications-based-on-the-dotnet-framework.md
-    - name: 本地化应用
-      href: ide/localizing-applications.md
-      items:
-      - name: 用于本地化的资源的分层组织
-        href: ide/hierarchical-organization-of-resources-for-localization.md
-      - name: 安全性和已本地化的附属程序集
-        href: ide/security-and-localized-satellite-assemblies.md
-      - name: 用于主程序集和已本地化的附属程序集的版本号
-        href: ide/version-numbers-for-main-and-localized-satellite-assemblies.md
-      - name: 用于本地化的非特定资源语言
-        href: ide/neutral-resources-languages-for-localization.md
-    - name: 全球化应用
-      href: ide/globalizing-applications.md
-      items:
-      - name: 全球 Windows 窗体和 Web 窗体的区域性特定类
-        href: ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md
-    - name: 创建双向语言的应用
-      href: ide/creating-applications-in-bi-directional-languages.md
-- name: 参考
+- name: 引用
   items:
   - name: 常规用户界面元素
     items:
@@ -1145,9 +1135,9 @@ items:
   - name: 与我们交流
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 69a36121297349edd6a3e79880935a9b3ed6fe75
-ms.sourcegitcommit: 9866740aec05d1a3a5dc3b4b6d2ceaeecbd3fc29
+ms.openlocfilehash: d81e33771d4e5b8333c7dddf7311e63488a55604
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55424611"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335579"
