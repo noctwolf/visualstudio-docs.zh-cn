@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e8b1f602dc791b0475b0e33aa49215aaa62860d
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 7bc7d75329e83345107cac18fa49267dc62f964d
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155300"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316699"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>通过分析 CPU 使用情况衡量应用程序性能
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程演示如何使用诊断工具的“CPU 使用率”选项卡获取应用的性能数据。 Visual Studio 中的 .NET 开发（包括 ASP.NET、和本机 /C++ 开发）支持此诊断工具。
@@ -64,7 +64,7 @@ ms.locfileid: "56155300"
 
      ![诊断工具“摘要”选项卡](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     有关事件的详细信息，请参阅[搜索和筛选“诊断工具”窗口中的“事件”选项卡](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)。
+     有关事件的详细信息，请参阅[搜索和筛选“诊断工具”窗口中的“事件”选项卡](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/)。
 
 6.  运行会触发第一个断点的方案。
 

@@ -16,17 +16,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fad50ea0a2d37d04edb12830ecb195990c508fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d03ef199e0c1c4ea3684287e1621e6d9b5fc52f8
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921414"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315529"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何：仅使用键盘进行操作
 
 > [!TIP]
-> 若要详细了解最新的辅助功能更新，请参阅博文 [Visual Studio 2017 版本 15.3 中的辅助功能改进](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)。
+> 若要详细了解最新的辅助功能更新，请参阅博文 [Visual Studio 2017 版本 15.3 中的辅助功能改进](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)。
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供了多种默认快捷键组合，方便在集成开发环境 (IDE) 中导航和编写代码。 有关 Visual Studio 中使用的完整快捷键列表，请参阅[默认键盘快捷键](../../ide/default-keyboard-shortcuts-in-visual-studio.md)。 有关其他 Microsoft 产品可用的键盘快捷方式的信息，请参阅 [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400)。
 

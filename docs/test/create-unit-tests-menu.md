@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 577cb338e7cbf20b23d2d75ad2dfded017b0aacb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955136"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315100"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用“创建单元测试”命令创建单元测试方法存根
 
@@ -60,11 +60,11 @@ Visual Studio Marketplace 中提供了测试框架扩展：
 
 ## <a name="when-should-i-use-this-feature"></a>应何时使用此功能？
 
-只要需要创建单元测试就可使用此功能，但在测试代码覆盖率很小或没有覆盖率且没有任何文档的现有代码时尤其适用。 换而言之，在代码说明有限或不存在代码说明的情况下适用。 它可有效实现类似于[智能单元测试](https://blogs.msdn.microsoft.com/devops/2014/11/19/introducing-smart-unit-tests/)的方法，确定观察到的代码行为的特征。
+只要需要创建单元测试就可使用此功能，但在测试代码覆盖率很小或没有覆盖率且没有任何文档的现有代码时尤其适用。 换而言之，在代码说明有限或不存在代码说明的情况下适用。 它可有效实现类似于[智能单元测试](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/)的方法，确定观察到的代码行为的特征。
 
 但此功能同样适用于以下情况：开发人员在开始时编写代码，然后使用该代码启动单元测试规程。 在编码流程中，开发人员可能想要为特定的一段代码快速创建一个单元测试方法存根（包含合适的测试类和合适的测试项目）。
 
 ## <a name="see-also"></a>请参阅
 
-- [使用“创建单元测试”创建单元测试方法存根](https://blogs.msdn.microsoft.com/devops/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)
-- [单元测试博客文章](https://blogs.msdn.microsoft.com/devops/?s=unit+testing)
+- [使用“创建单元测试”创建单元测试方法存根](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [单元测试博客文章](https://devblogs.microsoft.com/devops/?s=unit+testing)

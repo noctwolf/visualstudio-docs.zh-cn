@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e20303a7c552de128b348648128a4267855723e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 000921a3fb24e9e96c2324dd3224281d9b11771e
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988917"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317622"
 ---
 # <a name="perftips"></a>性能提示
 Visual Studio 调试器 *性能提示* 和调试器集成的 **“诊断工具”** 可帮助在调试时监视和分析应用的性能。  
@@ -21,7 +21,7 @@ Visual Studio 调试器 *性能提示* 和调试器集成的 **“诊断工具�
  虽然调试器集成的诊断工具是在开发时注意性能问题的极佳方式，但是调试器可能会显著影响应用的性能。 若要收集更准确的性能数据，请考虑使用也在调试器外部作为性能调查的其他部分运行的 Visual Studio 诊断工具。 请参阅[运行带/不带调试程序的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。  
   
 ## <a name="perftips"></a>性能提示  
- 调试器在断点或单步执行操作中停止执行时，中断与上一个断点之间经过的时间会显示为在编辑器窗口中的提示。 有关详细信息，请参阅 [PerfTips：使用 Visual Studio 调试时快速查看性能信息](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)。  
+ 调试器在断点或单步执行操作中停止执行时，中断与上一个断点之间经过的时间会显示为在编辑器窗口中的提示。 有关详细信息，请参阅 [PerfTips：使用 Visual Studio 调试时快速查看性能信息](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)。  
   
  ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   

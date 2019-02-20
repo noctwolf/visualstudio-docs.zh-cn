@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: 672c7547da9360ae3e278f783b160ffdaed05e03
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.custom: video
+ms.openlocfilehash: d7df01e2d2c6e4acb347b40cb82a04bee9394fe1
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296458"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335384"
 ---
 # <a name="refactoring"></a>重构
 
@@ -105,6 +106,10 @@ Visual Studio for Mac 与 Roslyn（Microsoft 的开源 .NET 编译器平台）�
 单击顶部的圆圈可循环访问每条建议，严重性最高的问题将最先显示。 将鼠标悬停在单个结果或行上时将显示该问题，可通过上下文操作对问题进行修复：
 
 ![源分析项](media/refactoring-image5.png)
+
+## <a name="related-video"></a>相关视频
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Refactoring-Code/player]
 
 ## <a name="see-also"></a>请参阅
 

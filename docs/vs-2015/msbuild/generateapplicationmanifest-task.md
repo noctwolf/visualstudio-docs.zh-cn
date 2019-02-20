@@ -45,7 +45,7 @@ ms.locfileid: "54756579"
 |`Dependencies`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定为生成的清单定义依赖程序集集的项列表。 项元数据可更详细地描述每个项，指示更多部署状态和依赖项类型。 有关详细信息，请参阅下面的“项元数据”部分。|  
 |`Description`|可选 `String` 参数。<br /><br /> 指定应用程序或组件的说明。|  
 |`EntryPoint`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定一个项，用于指示生成的清单程序集的入口点。<br /><br /> 对于 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序清单，此参数指定在应用程序运行时启动的程序集。|  
-|`ErrorReportUrl`|可选 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String 参数。<br /><br /> 指定在安装 ClickOnce 时发出错误报告期间，对话框中显示的网页的 URL。|  
+|`ErrorReportUrl`|可选 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 指定在安装 ClickOnce 时发出错误报告期间，对话框中显示的网页的 URL。|  
 |`FileAssociations`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定与 ClickOnce 部署清单关联的一个或多个文件类型的列表。<br /><br /> 文件关联只在面向 .NET Framework 3.5 或更高版本时才有效。|  
 |`Files`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 要包含在清单中的文件。 指定每个文件的完整路径。|  
 |`HostInBrowser`|可选 [Boolean](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 如果为 `true`，则应用程序托管在浏览器中（与 WPF Web 浏览器应用程序一样）。|  

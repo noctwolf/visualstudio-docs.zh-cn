@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 942007063ffa5ce6f24963067b7707495faa84b9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 767b757187e65454fb89c83613646c59d172c7e5
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935090"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318805"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
@@ -72,7 +72,7 @@ ms.locfileid: "55935090"
 
 **15.3 中的新增功能**，我们进行了超过 1,700 处目标修补，以提高 Visual Studio 与许多客户使用的辅助技术的兼容性。 在十几种情况下，我们提高了与屏幕阅读器、高对比度主题和其他辅助技术的兼容性，比以往更兼容。 同时，我们还对调试程序、编辑器和 shell 进行了重大改进。
 
-有关详细信息，请参阅博文 [Visual Studio 2017 版本 15.3 中的辅助功能改进](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)。
+有关详细信息，请参阅博文 [Visual Studio 2017 版本 15.3 中的辅助功能改进](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)。
 
 ## <a name="performance-and-productivity"></a>性能和工作效率
 
@@ -80,7 +80,7 @@ ms.locfileid: "55935090"
 
 我们在 Visual Studio 中引入了新的标识服务，用户可在团队资源管理器、Azure 工具、Microsoft Store 发布等之间共享用户帐户。
 
-你还能在更长的时间内保持登录状态。 Visual Studio 不会每隔 12 小时就要求你再次登录。 若要了解详细信息，请参阅 [Fewer Visual Studio Sign-in Prompts](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/)（更少的 Visual Studio 登录提示）博客文章。
+你还能在更长的时间内保持登录状态。 Visual Studio 不会每隔 12 小时就要求你再次登录。 若要了解详细信息，请参阅 [Fewer Visual Studio Sign-in Prompts](https://devblogs.microsoft.com/visualstudio/fewer-visual-studio-sign-in-prompts/)（更少的 Visual Studio 登录提示）博客文章。
 
 ### <a name="start-visual-studio-faster"></a>更快地启动 Visual Studio
 
@@ -131,7 +131,7 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 有关自动测试的详细信息，请参阅博文 [DevOps 中用于自动测试的 CI/CD 管道](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/)。
 
-此外，若要详细了解[用于 Visual Studio 的持续交付工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 扩展中的新增功能，请参阅博文[自信提交：提交时代码质量](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/)博客文章。
+此外，若要详细了解[用于 Visual Studio 的持续交付工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 扩展中的新增功能，请参阅博文[自信提交：提交时代码质量](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/)博客文章。
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE 增强功能
 
@@ -188,7 +188,7 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
   ![Visual Studio 2017 结构可视化工具](media/vsIDE-StructureVisualizer.png)
 
-若要深入了解新增的工作效率功能的详细信息，请参阅由 Mark Wilson-Thomas 发布的 [Productivity in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/)（使用 Visual Studio 2017 提高工作效率）博客文章。
+若要深入了解新增的工作效率功能的详细信息，请参阅由 Mark Wilson-Thomas 发布的 [Productivity in Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/)（使用 Visual Studio 2017 提高工作效率）博客文章。
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -212,7 +212,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 ![Visual Studio 中“新异常帮助程序”对话框](media/vs2017ide-ExceptionHelper.png)
 
-有关详细信息，请参阅 [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/)（使用 Visual Studio 中的新异常帮助器）博客文章。
+有关详细信息，请参阅 [Using the New Exception Helper in Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/)（使用 Visual Studio 中的新异常帮助器）博客文章。
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>快照和 IntelliTrace 后退
 
@@ -328,7 +328,7 @@ Visual Studio 2017 所有版本随附：
 
 * [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) 有助于跨多个数据库快速查找 SQL 片段和对象，从而提高工作效率。
 
-若要了解详细信息，请参阅 [Visual Studio 2017 中的 Redgate Data Tools](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) 博客文章。
+若要了解详细信息，请参阅 [Visual Studio 2017 中的 Redgate Data Tools](https://devblogs.microsoft.com/visualstudio/redgate-data-tools-in-visual-studio-2017/) 博客文章。
 
 ### <a name="net-core"></a>.NET Core
 

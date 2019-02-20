@@ -37,7 +37,7 @@ ms.locfileid: "54758543"
   
 |参数|说明​​|  
 |---------------|-----------------|  
-|`AdditionalSearchPaths`|必需的 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->String`[]` 参数。<br /><br /> 获取或设置用于解析本机引用的程序集标识的搜索路径。|  
+|`AdditionalSearchPaths`|必需的 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)`[]` 参数。<br /><br /> 获取或设置用于解析本机引用的程序集标识的搜索路径。|  
 |`ContainedComComponents`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 获取或设置本机程序集的 COM 组件。|  
 |`ContainedLooseEtcFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 获取或设置本机清单中列出的松散 Etc 文件。|  
 |`ContainedLooseTlbFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 获取或设置本机程序集的松宽松 .tlb 文件。|  

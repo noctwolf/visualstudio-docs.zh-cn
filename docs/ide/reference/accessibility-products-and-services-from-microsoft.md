@@ -19,17 +19,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a5b610a268344946390c66a5c6cc34ae0dc3c4d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 02b35ff8325c6cb155d54a2ada6bf6f7d63dc341
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932087"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318623"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的辅助功能产品和服务
 
 > [!TIP]
-> 要详细了解 Visual Studio 的最新辅助功能更新，请参阅博文[Visual Studio 2017 版本 15.3 中的辅助功能改进](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)。
+> 要详细了解 Visual Studio 的最新辅助功能更新，请参阅博文[Visual Studio 2017 版本 15.3 中的辅助功能改进](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)。
 
 Microsoft 致力于让每位用户可以更便捷地使用其产品和服务。 以下主题提供有关使得残障人士更易访问 Microsoft Windows 的功能、产品和服务的信息：
 

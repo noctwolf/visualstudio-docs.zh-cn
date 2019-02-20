@@ -14,12 +14,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f6316332ce74ddcd291612524cab2b2019606d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22dcbcbf9a3506e3cd6c962b1f31ada24d5234e5
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954473"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56315867"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>优化 Visual Studio 启动时间
 
@@ -72,4 +72,4 @@ Visual Studio 可快速高效地启动。 但是，某些 Visual Studio 扩展�
 
 - [优化 Visual Studio 性能](../ide/optimize-visual-studio-performance.md)
 - [Visual Studio 性能提示和技巧](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)（Visual Studio 博客 - 使用 Visual Studio 2017 版本 15.6 更快地加载解决方案）
+- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)（Visual Studio 博客 - 使用 Visual Studio 2017 版本 15.6 更快地加载解决方案）

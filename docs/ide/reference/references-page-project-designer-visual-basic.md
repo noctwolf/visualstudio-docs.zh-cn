@@ -9,19 +9,18 @@ f1_keywords:
 helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
-- Unused References dialog box
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afd144248ed01210c888ee516a19bf93a156b86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970746"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335125"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>项目设计器 ->“引用”页 (Visual Basic)
 
@@ -32,12 +31,6 @@ ms.locfileid: "55970746"
 ## <a name="uielement-list"></a>UIElement 列表
 
 借助以下选项，可以在项目中选择或移除引用和导入的命名空间。
-
-未使用的引用
-
-单击此按钮，访问“未使用的引用”对话框。
-
-借助“未使用的引用”对话框，可以移除包含在项目中但实际上未被代码使用的引用。 它包含一个网格，其中列出项目中的“引用名称”、“路径”，以及有关未使用命名空间引用的其他信息。 在该网格中，选择要从项目中移除的命名空间引用，然后单击“移除”。
 
 引用路径
 

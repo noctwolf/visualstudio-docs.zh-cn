@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5e7bd4fd0672e7d861a53fdeef814d092a26cadb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 18848503f80000bf81c2020797a466aa43a29c9d
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917316"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316893"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>使用动态符号执行的输入生成
 
@@ -144,7 +144,7 @@ IntelliTest 尝试最大程度地减小触发感兴趣的程序行为所需的�
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>其他阅读材料
 
-* [它如何工作？](https://blogs.msdn.microsoft.com/devops/2014/12/11/smart-unit-tests-a-mental-model/)
+* [它如何工作？](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
 
 ## <a name="got-feedback"></a>是否获得反馈？
 

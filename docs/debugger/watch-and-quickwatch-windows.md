@@ -14,23 +14,23 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a7e936b565a961bb7b32d5599c79049857328e
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 49afa8e56a45e3ebda5572afd1604cee7076578a
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204464"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55002499"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>监视使用监视窗口和快速监视的变量 
 
-当你进行调试时，可以使用**Watch** windows 和**快速监视**监视变量和表达式。 在调试会话期间，windows 才可用。
+当你进行调试时，可以使用**Watch** windows 和**快速监视**监视变量和表达式。 仅在调试会话期间，这两个窗口才可用。
 
 **观看**windows 可以在调试时一次显示多个变量。 **快速监视**对话框一次仅显示单个变量，并可以继续调试之前，必须关闭。
 
-如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)和[编写更优质的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)。
+如果这是你在尝试调试的代码的第一个时间，可能需要阅读[零基础调试](../debugger/debugging-absolute-beginners.md)并[调试技术和工具](../debugger/write-better-code-with-visual-studio.md)之前开始阅读本文。
 
 ## <a name="observe-variables-with-a-watch-window"></a>观察使用监视窗口变量
 
@@ -280,5 +280,5 @@ static void Main(string[] args)
 
 ## <a name="see-also"></a>请参阅
  [什么是调试？](../debugger/what-is-debugging.md)  
- [通过编写更优质的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)  
+ [调试技术和工具](../debugger/write-better-code-with-visual-studio.md)  
  [首先看一下调试](../debugger/debugger-feature-tour.md)[调试器窗口](../debugger/debugger-windows.md)
