@@ -25,7 +25,7 @@ ms.locfileid: "54931266"
 ## <a name="properties"></a>属性  
  下表显示此符号类型的其他有效属性。  
   
-|属性|数据类型|说明​​|  
+|Property|数据类型|说明​​|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_arrayIndexType](../../debugger/debug-interface-access/idiasymbol-get-arrayindextype.md)|`IDiaSymbol*`|数组索引类型的符号。|  
 |[IDiaSymbol::get_arrayIndexTypeId](../../debugger/debug-interface-access/idiasymbol-get-arrayindextypeid.md)|`DWORD`|数组索引类型符号的 ID。|  

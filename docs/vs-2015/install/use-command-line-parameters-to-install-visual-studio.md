@@ -37,16 +37,16 @@ Visual Studio 2017 的最新文档，请参阅[使用命令行参数安装 Visua
 |参数|说明​​|
 |---------------|-----------------|
 |**/?**<br /><br /> **/help**<br /><br /> **/h**|显示命令行参数。|
-|**/AddRemoveFeatures**|指定要在安装的产品中添加或移除的功能。|
-|**/AdminFile** *AdminDeployment.xml*|使用你为管理安装指定的数据文件安装 Visual Studio。|
-|**/ChainingPackage** *BundleName*|指定此捆绑包链接到的捆绑包。 还可用于指定客户改善体验队列。|
-|**/CreateAdminFile \<filename>**|指定用于创建可与 /AdminFile 一起使用的控制文件的位置|
-|**/CustomInstallPath** *InstallationDirectory*|在你指定的目录中安装所有可重定目标的包。|
-|**/ForceRestart**|安装完成后始终重新启动计算机。|
+|/AddRemoveFeatures|指定要在安装的产品中添加或移除的功能。|
+|/AdminFile AdminDeployment.xml|使用你为管理安装指定的数据文件安装 Visual Studio。|
+|/ ChainingPackage BundleName|指定此捆绑包链接到的捆绑包。 还可用于指定客户改善体验队列。|
+|/ CreateAdminFile\<filename>|指定用于创建可与 /AdminFile 一起使用的控制文件的位置|
+|/CustomInstallPath InstallationDirectory|在你指定的目录中安装所有可重定目标的包。|
+|/ForceRestart|安装完成后始终重新启动计算机。|
 |**/full**|安装所有产品功能。|
-|**/InstallSelectableItems \<item name 1>[;\<item name 2>]**|要在安装程序向导选择屏幕上检查的选择树项列表。|
-|**/l**<br /><br /> **/Log** *Filename*|指定日志文件的位置。|
-|**/layout** *Directory*|将安装媒体上的文件复制到你指定的目录。|
+|/InstallSelectableItems \<item name 1>[;\<item name 2>]|要在安装程序向导选择屏幕上检查的选择树项列表。|
+|**/l**<br /><br /> /Log Filename|指定日志文件的位置。|
+|/layout Directory|将安装媒体上的文件复制到你指定的目录。|
 |**/NoCacheOnlyMode**|阻止包缓存的预填充。|
 |**/NoRefresh**|禁止检查此产品的较新版本是否存在必需或推荐的更新版本。|
 |**/norestart**|在安装期间或安装完成后，阻止安装应用程序重新启动计算机。 请参阅 [Visual Studio 管理员指南](../install/visual-studio-administrator-guide.md)的返回代码部分了解查找的返回代码。|
@@ -59,7 +59,7 @@ Visual Studio 2017 的最新文档，请参阅[使用命令行参数安装 Visua
 |**/repair**|修复 Visual Studio。|
 |**/SuppressRefreshPrompt**|禁止在安装向导中显示更新可用对话框，因此安装向导将自动接受任意必需或推荐更新版本。|
 |/u<br /><br /> **/Uninstall**|卸载 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
-|**/Uninstall /Force**<br /><br /> **/u /force**|卸载 Visual Studio 以及与其他产品共享的所有功能。 **警告：** 使用此参数，如果同一台计算机安装其他产品可能会停止正常运行。|
+|**/Uninstall /Force**<br /><br /> /u /force|卸载 Visual Studio 以及与其他产品共享的所有功能。 **警告：** 使用此参数，如果同一台计算机安装其他产品可能会停止正常运行。|
 
 ## <a name="see-also"></a>请参阅
  [Visual Studio 管理员指南](../install/visual-studio-administrator-guide.md)

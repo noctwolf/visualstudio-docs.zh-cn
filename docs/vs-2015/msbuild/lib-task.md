@@ -1,14 +1,9 @@
 ---
 title: LIB 任务 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
 - VC.Project.VCLibrarianTool.TreatLibWarningsAsErrors
@@ -30,13 +25,13 @@ ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 141c153fa65d9858991061c79dc423f18227a381
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f542c50f062da66d707e92409f3856304578e676
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812590"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54763388"
 ---
 # <a name="lib-task"></a>LIB 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,11 +43,11 @@ ms.locfileid: "49812590"
  下表介绍了 **LIB** 任务的参数。 大多数任务参数都对应于命令行选项。  
 
 
-|             参数              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                  描述                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|             参数              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                  说明​​                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **AdditionalDependencies**     |                                                                                                                                                                                                                                                                                                                                                                                                                      可选 **String []** 参数。<br /><br /> 指定要添加到命令行的附加项。                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |  **AdditionalLibraryDirectories**  |                                                                                                                                                                                                                                                                                                                                         可选 **String []** 参数。<br /><br /> 重写环境库路径。 指定目录名。<br /><br /> 有关详细信息，请参阅 [/LIBPATH（附加的 Libpath）](http://msdn.microsoft.com/library/7240af0b-9a3d-4d53-8169-2a92cd6958ba)。                                                                                                                                                                                                                                                                                                                                          |
-|       **AdditionalOptions**        |                                                                                                                                                                                                                                                                        可选 **String** 参数。<br /><br /> 在命令行上指定的 lib.exe 选项列表。 例如， **"*/option1 option2 /option #*"。使用此参数可指定未由任何其他表示的 lib.exe 选项\* \*LIB**任务参数。<br /><br /> 有关详细信息，请参阅[运行 LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd)。                                                                                                                                                                                                                                                                        |
+|       **AdditionalOptions**        |                                                                                                                                                                                                                                                                        可选 **String** 参数。<br /><br /> 在命令行上指定的 lib.exe 选项列表。 例如，/option1 /option2 /option#。**\*\*** 使用此参数指定不由任何其他 LIB 任务参数表示的 lib.exe 选项。<br /><br /> 有关详细信息，请参阅[运行 LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd)。                                                                                                                                                                                                                                                                        |
 |         **DisplayLibrary**         |                                                                                                                                                                                                                                                                                                                      可选 **String** 参数。<br /><br /> 显示有关输出库的信息。 指定一个文件名，以便将信息重定向到该文件。 指定“CON”或不指定任何内容，以便将信息重定向到该控制台。<br /><br /> 此参数对应于 lib.exe 的 **/LIST** 选项。                                                                                                                                                                                                                                                                                                                      |
 |         **ErrorReporting**         |                                                                                                                                              可选 **String** 参数。<br /><br /> 指定如果 lib.exe 在运行时失败，如何向 Microsoft 发送内部错误信息。<br /><br /> 指定以下值之一，其中每个值对应于一个命令行选项。<br /><br /> -   **NoErrorReport** - **/ERRORREPORT:NONE**<br />-   **PromptImmediately** - **/ERRORREPORT:PROMPT**<br />-   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**<br />-   **SendErrorReport** - **/ERRORREPORT:SEND**<br /><br /> 有关详细信息，请参阅[运行 LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd) 中的 **/ERRORREPORT** 命令行选项。                                                                                                                                               |
 |      **ExportNamedFunctions**      |                                                                                                                                                                                                                                                                                                                                                                                     可选 **String []** 参数。<br /><br /> 指定要导出的一个或多个函数。<br /><br /> 此参数对应于 lib.exe 的 **/EXPORT:** 选项。                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -79,6 +74,3 @@ ms.locfileid: "49812590"
 
 ## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)
-
-
-

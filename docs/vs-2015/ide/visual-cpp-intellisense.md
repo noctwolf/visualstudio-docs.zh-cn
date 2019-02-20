@@ -1,25 +1,20 @@
 ---
 title: Visual C++ Intellisense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 9d7c6414-4e6c-4889-a74c-a6033795eccc
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881672"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54802624"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ Intellisense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,14 +80,14 @@ ms.locfileid: "49881672"
   
   注意下列事项：  
   
-- 第 6 行 #ifdef 分支将灰显以指示非活动区域，因为 *_ANDROID\\*  \_不针对 iOS 项目定义。  
+- 第 6 行的 #ifdef 分支呈灰色，指示非活动的区域，因为 *_ANDROID\\*\_ 不是针对 iOS 项目定义的。  
   
 - 第 11 行的问候语变量通过标识符 HELLO 进行初始化，该标识符现在具有红色波形曲线。 这是因为当前活动的 iOS 项目中没有定义任何标识符 HELLO。  
   
 - 第 12 行的标识符 BYE 上具有紫色波形曲线；当前处于非活动状态的 Android.NativeActivity 项目中未定义此标识符。  
   
 ## <a name="single-file-intellisense"></a>单个文件 IntelliSense  
- 当你在任何项目外部打开单个文件时，你仍然会得到 IntelliSense。 转到“文本编辑器、C/C++、高级”打开或关闭 IntelliSense 功能，即可启用或禁用特定功能。 若要为不属于项目的单个文件配置 IntelliSense，请在“高级”部分中查找“IntelliSense 和浏览非项目文件”。 请参阅 [Visual C++ 指导教程](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)。  
+ 当你在任何项目外部打开单个文件时，你仍然会得到 IntelliSense。 转到“文本编辑器、C/C++、高级”打开或关闭 IntelliSense 功能，即可启用或禁用特定功能。 若要为不属于项目的单个文件配置 IntelliSense，请在“高级”部分中查找“IntelliSense 和浏览非项目文件”。 请参阅 [Visual C++ 指导教程](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)。  
   
  ![Visual C++ 单个文件 intellisense](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   
@@ -102,6 +97,3 @@ ms.locfileid: "49881672"
   
 ## <a name="see-also"></a>请参阅  
  [使用 IntelliSense](../ide/using-intellisense.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 扩展 JavaScript IntelliSense |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript, intellisense object
 - extending JavaScript IntelliSense
@@ -19,13 +14,13 @@ ms.assetid: 004e1ab6-bd7a-4327-9e01-89b9be96ba2f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81aab6e0eea808c8dcb9b37d5772144a863329aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867062"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797442"
 ---
 # <a name="extending-javascript-intellisense"></a>扩展 JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,9 +93,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ##  <a name="intellisenseObject"></a> intellisense 对象  
  下表显示了可用于函数`intellisense`对象。 `intellisense`对象是只能在设计时可用。  
   
-|函数|描述|  
+|函数|说明​​|  
 |--------------|-----------------|  
-|`addEventListener(type, handler);`|添加 IntelliSense 事件的事件处理程序。<br /><br /> `type` 是一个字符串值。 有效的值包括`statementcompletion`， `signaturehelp`，和`statementcompletionhint`。<br /><br /> `handler` 是接收到以下类型之一的事件对象的事件处理程序函数：<br /><br /> -   `CompletionEvent`用于`statementcompletion`事件。<br />-   `SignatureHelpEvent`用于`signaturehelp`事件。<br />-   `CompletionHintEvent`用于`statementcompletionhint`事件。<br /><br /> 有关使用此函数的示例，请参阅[代码示例](#CodeExamples)。|  
+|`addEventListener(type, handler);`|添加 IntelliSense 事件的事件处理程序。<br /><br /> `type` 是一个字符串值。 有效值包括 `statementcompletion`、`signaturehelp` 和 `statementcompletionhint`。<br /><br /> `handler` 是接收到以下类型之一的事件对象的事件处理程序函数：<br /><br /> -   `CompletionEvent`用于`statementcompletion`事件。<br />-   `SignatureHelpEvent`用于`signaturehelp`事件。<br />-   `CompletionHintEvent`用于`statementcompletionhint`事件。<br /><br /> 有关使用此函数的示例，请参阅[代码示例](#CodeExamples)。|  
 |`annotate(obj, doc);`|通过将文档注释从一个对象复制到另一个对象中指定的对象的文档。<br /><br /> `obj` 指定要将文档复制到的对象。<br /><br /> `doc` 指定要从其中复制文档的对象。<br /><br /> 有关演示如何使用此函数的示例，请参阅[添加 IntelliSense 批注](#Annotations)。|  
 |`getFunctionComments(func);`|返回指定的函数的注释。<br /><br /> `func` 指定为其返回注释的函数。<br /><br /> 可以设置`func`参数使用`completionItem.value`。<br /><br /> 返回`functionComments`对象包含以下成员： `above`， `inside`，和`paramComment`。 有关详细信息，请参阅[functionComments 属性](#FunctionComments)属性。<br /><br /> `getFunctionComments` 可以仅从某个注册的事件处理程序内调用`addEventListener`。<br /><br /> 有关演示如何使用此函数的示例，请参阅\\ \\ *Visual Studio 安装路径*\JavaScript\References\showPlainComments.js。|  
 |`logMessage(msg);`|将诊断消息发送到输出窗口。<br /><br /> `msg` 是一个字符串，包含的消息。<br /><br /> 有关演示如何使用此函数的示例，请参阅[将消息发送到输出窗口](#Logging)。|  
@@ -491,7 +486,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
     ```  
   
-4.  在 appCode.js，键入以下代码。 键入时，您将看到的图标的命名空间已更改为"{}"，因为在 C# 中使用。  
+4.  在 appCode.js，键入以下代码。 键入时，您将看到的图标的命名空间已更改为"{}"，因为在使用C#。  
   
      ![显示标志符号属性使用示例](../ide/media/js-intellisense-glyph-namespace.png "js_intellisense_glyph_namespace")  
   
@@ -553,6 +548,3 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="see-also"></a>请参阅  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)   
  [适用于标识符的语句结束](../ide/statement-completion-for-identifiers.md)
-
-
-

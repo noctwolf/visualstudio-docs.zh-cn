@@ -1,5 +1,5 @@
 ---
-title: 编辑并继续 (Visual C#) |Microsoft Docs
+title: 编辑并继续 (Visual C#) | Microsoft Docs
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -39,5 +39,5 @@ ms.locfileid: "54976428"
  有关详细信息，请参阅[如何： 使用编辑并继续 (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 使用编辑并继续 (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
- [支持代码更改 (C#和 Visual Basic)](../debugger/supported-code-changes-csharp.md)
+ [如何：使用“编辑并继续”(C#)](../debugger/how-to-use-edit-and-continue-csharp.md)   
+ [支持的代码更改（C# 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)

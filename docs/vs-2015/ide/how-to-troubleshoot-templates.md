@@ -39,7 +39,7 @@ ms.locfileid: "54793201"
 5.  验证 .vstemplate 文件的 XML 是否遵循 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模板架构。 有关 .vstemplate 架构的详细信息，请参阅 [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)。  
   
     > [!NOTE]
-    >  要在创作 vstemplate`xmlns``VSTemplate` 文件时获得 IntelliSense 支持，请将 http://schemas.microsoft.com/developer/vstemplate/2005 属性添加到  元素，并为其赋值 。  
+    >  要在创作 .vstemplate 文件时获得 IntelliSense 支持，请将`xmlns` 属性添加到 `VSTemplate` 元素，并为其赋值 http://schemas.microsoft.com/developer/vstemplate/2005。  
   
 6.  保存并关闭 .vstemplate 文件。  
   

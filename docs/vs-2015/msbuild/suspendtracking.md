@@ -37,7 +37,7 @@ HRESULT WINAPI SuspendTracking(void);
 ```  
   
 ## <a name="return-value"></a>返回值  
- 如果跟踪暂停，则返回带 SUCCEEDED 位集的 HRESULT<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  --><!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->。  
+ 如果暂停跟踪，则返回带 [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 位集的 [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->)。  
   
 ## <a name="requirements"></a>要求  
  标头：FileTracker.h  

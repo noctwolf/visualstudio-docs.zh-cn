@@ -96,7 +96,7 @@ ms.locfileid: "54920651"
 
  `dependentOS` 支持以下属性。  
 
-|属性|说明​​|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`supportUrl`|可选。 指定依赖于平台的支持 URL。 如果找到所需的平台，将向用户显示此 URL。|  
 |`description`|可选。 介绍了用户可读的窗体中所描述的操作系统`dependentOS`元素。|  
@@ -107,7 +107,7 @@ ms.locfileid: "54920651"
 ### <a name="os"></a>操作系统  
  必需。 此元素是 `osVersionInfo` 元素的子元素。 此元素具有以下属性。  
 
-|属性|说明​​|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`majorVersion`|必需。 指定操作系统的主版本号。|  
 |`minorVersion`|必需。 指定操作系统的次版本号。|  
@@ -123,7 +123,7 @@ ms.locfileid: "54920651"
  `dependentAssembly` 具有以下属性。  
 
 
-| 属性 | 说明​​ |
+| 特性 | 说明​​ |
 |-----------------------| - |
 | `dependencyType` | 必需。 指定的依赖关系类型。 有效值为 `preprequisite` 和 `install`。 `install`的一部分安装的程序集[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 一个`prerequisite`程序集必须位于全局程序集缓存 (GAC) 之前[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]可以安装应用程序。 |
 | `allowDelayedBinding` | 必需。 指定是否可以在运行时以编程方式加载程序集。 |
@@ -134,7 +134,7 @@ ms.locfileid: "54920651"
 ### <a name="assemblyidentity"></a>assemblyIdentity  
  必需。 此元素是 `dependentAssembly` 元素的子元素，并且包含下列元素。  
 
-|属性|说明​​|  
+|特性|说明​​|  
 |---------------|-----------------|  
 |`name`|必需。 标识应用程序的名称。|  
 |`version`|必需。 采用以下格式指定该应用程序的版本号： `major.minor.build.revision`|  
@@ -154,7 +154,7 @@ ms.locfileid: "54920651"
  `dsig:Transform`元素是必需的子`dsig:Transforms`元素。 `dsig:Transform` 元素具有以下属性。  
 
 
-| 属性 | 说明​​ |
+| 特性 | 说明​​ |
 |-------------| - |
 | `Algorithm` | 用于计算此文件的摘要算法。 当前使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`urn:schemas-microsoft-com:HashTransforms.Identity`。 |
 
@@ -162,7 +162,7 @@ ms.locfileid: "54920651"
  `dsig:DigestMethod`元素是必需的子`hash`元素。 `dsig:DigestMethod` 元素具有以下属性。  
 
 
-| 属性 | 说明​​ |
+| 特性 | 说明​​ |
 |-------------| - |
 | `Algorithm` | 用于计算此文件的摘要算法。 当前使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。 |
 

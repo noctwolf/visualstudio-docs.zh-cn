@@ -32,7 +32,7 @@ ms.locfileid: "54777147"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-重要
+重要提示
 >  Visual Studio IDE 不再使用 bscmake。 自 Visual Studio 2008 起，浏览信息自动存储在解决方案文件夹的 .sdf 文件中。  
   
  包装 Microsoft 浏览信息维护实用工具 (bscmake.exe)。  Bscmake.exe 工具从在编译期间创建的源浏览器文件 (.sbr) 生成浏览信息文件 (.bsc)。 可使用**对象浏览器**查看 .bsc 文件。 有关详细信息，请参阅 [BSCMAKE 参考](http://msdn.microsoft.com/library/b97ad994-1355-4809-98db-6abc12c6fb13)。  
