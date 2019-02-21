@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/05/2019
+ms.date: 02/14/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b33b794bf790d2b68368ee4853c699f6de01300
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fceccbc77b2999124e1d2af50a53cfd044556312
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939523"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317986"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 内部版本号和发布日期
 
@@ -27,6 +27,8 @@ ms.locfileid: "55939523"
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.7 | Release | 2019 年 2 月 12 日 | 15.9.28307.423 |
+| 15.0.21 | Release | 2019 年 2 月 12 日 | 15.0.26228.73 |
 | 15.9.6 | Release | 2019 年 1 月 24 日 | 15.9.28307.344 |
 | 15.9.5 | Release | 2019 年 1 月 8 日 | 15.9.28307.280 |
 | 15.9.4 | Release | 2018 年 12 月 11 日 | 15.9.28307.222 |
@@ -175,6 +177,7 @@ ms.locfileid: "55939523"
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | 预览版 3 | 2019 年 2 月 13日 | 16.0.28608.199 |
 | 16.0.0 | 预览 2.2 | 2019 年 2 月 5 日 | 16.0.28602.52 |
 | 16.0.0 | 预览 2.1 | 2019 年 1 月 31 日 | 16.0.28529.54 |
 | 16.0.0 | 预览版 2 | 2019 年 1 月 23 日 | 16.0.28522.59 |
@@ -185,6 +188,7 @@ ms.locfileid: "55939523"
 
 ## <a name="see-also"></a>请参阅
 
+* [Visual Studio 发行节奏](/visualstudio/productinfo/release-rhythm)
 * [Visual Studio 2017 管理员指南](visual-studio-administrator-guide.md)
 * [使用命令行参数安装 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
 * [用于检测和管理 Visual Studio 实例的工具](tools-for-managing-visual-studio-instances.md)
