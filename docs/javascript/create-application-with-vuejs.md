@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 89d08619ede0269adb8cbf1df70bb423bb436bca
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: a1c9de1c65c5f3f780e6ea4374fa7d96f436f514
+ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155378"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56227756"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>使用针对 Visual Studio 的 Node.js 工具创建 Vue.js 应用程序
 
@@ -178,5 +178,5 @@ vue-cli 3.0 出现未知问题阻止自动执行生成过程。 每次尝试刷�
 ## <a name="see-also"></a>请参阅
 
 - [Vue 入门指南](https://vuejs.org/v2/guide)。
-- [Vue CLI 项目](https://github.com/vuejs/vue-cli(.
+- [Vue CLI 项目](https://github.com/vuejs/vue-cli)。
 - [Webpack 配置文档](https://webpack.js.org/configuration/)。

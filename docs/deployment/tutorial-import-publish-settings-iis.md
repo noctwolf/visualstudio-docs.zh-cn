@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f9d951be37619c84095c379879e1acd51cf7b
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 6ab41ead57671948dcc30a0d3009fad2bfabfa34
+ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690445"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56413301"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>通过在 Visual Studio 中导入发布设置将应用程序发布到 IIS
 
@@ -52,7 +52,7 @@ ms.locfileid: "55690445"
 
     如果没有看到指定的项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 安装“ASP.NET 和 Web 开发”工作负载。
 
-    选择的项目模板（ASP.NET 或 ASP.NET Core）必须对应于 
+    选择的项目模板（ASP.NET 或 ASP.NET Core）必须与安装在 Web 服务器上的 ASP.NET 版本相对应。
 
 1. 选择“MVC”(.NET Framework) 或“Web 应用程序(模型-视图-控制器)”（适用于 .NET Core），并确保已选中“无身份验证”，然后单击“确定”。
 

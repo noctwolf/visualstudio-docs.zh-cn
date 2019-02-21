@@ -24,25 +24,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ba6a9407b87640879c3d591f1a6aafad1ee42a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91ea140ffef8d564cc1380d2fe3fd30a252fef14
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918931"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318447"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
-[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 提供了功能强大、即时可用的 JavaScript 编辑体验。 借助于基于 TypeScript 的语言服务所提供的支持，Visual Studio 提供功能更丰富的 IntelliSense、现代 JavaScript 功能支持，以及改进的工作效率功能（如“转到定义”、重构等）。
+Visual Studio 2017 提供了功能强大、即时可用的 JavaScript 编辑体验。 借助于基于 TypeScript 的语言服务所提供的支持，Visual Studio 提供功能更丰富的 IntelliSense、现代 JavaScript 功能支持，以及改进的工作效率功能（如“转到定义”、重构等）。
 
 > [!NOTE]
-> [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中的 JavaScript 语言服务为语言服务使用新引擎 （名为“Salsa”）。 本主题中包含详细信息，你还可参阅此[博客文章](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc/)。 全新的编辑体验也几乎适用于 Visual Studio Code。 请参阅 [VS Code 文档](https://code.visualstudio.com/docs/languages/javascript)，了解详细信息。
+> Visual Studio 2017 中的 JavaScript 语言服务为语言服务使用新引擎（名为“Salsa”）。 本主题中包含详细信息，你还可参阅此[博客文章](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/)。 全新的编辑体验也几乎适用于 Visual Studio Code。 请参阅 [VS Code 文档](https://code.visualstudio.com/docs/languages/javascript)，了解详细信息。
 
 有关 Visual Studio 的常规 IntelliSense 功能的详细信息，请参阅[使用 IntelliSense](../ide/using-intellisense.md)。
 
-## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中 JavaScript 语言服务的新增功能
+## <a name="whats-new-in-the-javascript-language-service-in-visual-studio-2017"></a>Visual Studio 2017 中 JavaScript 语言服务的新增功能
 
-自 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 起，JavaScript IntelliSense 将显示有关参数和成员列表的详细信息。
+自 Visual Studio 2017 起，JavaScript IntelliSense 将显示更多有关参数和成员列表的信息。
 此新信息由 TypeScript 语言服务提供，该服务在后台使用静态分析来更好地了解使用者的代码。
 TypeScript 使用多个源来构建此信息：
 

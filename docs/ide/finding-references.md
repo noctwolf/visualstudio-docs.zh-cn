@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 777e8519077cebc162b1bad575a6ffcf976c4db4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908876"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335267"
 ---
 # <a name="find-references-in-your-code"></a>在代码中查找引用
 
@@ -46,6 +46,11 @@ ms.locfileid: "55908876"
 默认情况下，引用是先按项目进行分组，然后再按定义进行分组。 不过，可以更改工具栏上“分组依据:”下拉列表框中的设置，从而更改此分组顺序。 例如，可以将其从默认设置“先按项目，然后按定义”更改为“先按定义，然后按项目”，也能更改为其他设置。
 
 虽然“定义”和“项目”是默认使用的两个分组，但可以在选定项的右键单击菜单或关联菜单中选择“分组”命令，从而添加其他分组。 如果解决方案有许多文件和路径，那么添加其他分组将会很有帮助。
+
+## <a name="filter-by-reference-type-in-net"></a>在 .NET 中按引用类型进行筛选
+在 C# 或 Visual Basic 中，“查找引用”窗口有“类型”列，其中列出了找到的引用类型。 通过单击将鼠标悬停在列标题上方时显示的筛选器图标，可以使用此列按引用类型进行筛选。 可以按读取、写入、引用和 NameOnly 筛选引用。
+
+![“查找引用窗口类型”列 ](../ide/media/vside_findallreferencesKind.png)
 
 ## <a name="see-also"></a>请参阅
 

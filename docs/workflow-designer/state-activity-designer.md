@@ -19,8 +19,7 @@ ms.locfileid: "55940759"
 ---
 # <a name="state-activity-designer"></a>状态活动设计器
 
-
-  <xref:System.Activities.Statements.State> 表示状态机可具有的状态。
+<xref:System.Activities.Statements.State> 表示状态机可具有的状态。
 
 ## <a name="using-the-state-activity-designer"></a>使用 State 活动设计器
 

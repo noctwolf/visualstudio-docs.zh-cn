@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 512c62c589dcfc4276e35247d268a035b03865a9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d3ec88a8abc0a6fcac47043a1b27d27f5b3e6f4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937716"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316452"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>用 Microsoft Fakes 隔离测试代码
 
@@ -35,7 +35,8 @@ Fakes 有两种风格：
 -   .NET Framework 项目
 
 > [!NOTE]
-> 不支持 .NET Standard 项目。
+> - 不支持 .NET Standard 项目。
+> - Visual Studio 分析不能用于使用 Microsoft Fakes 的测试。
 
 ## <a name="choose-between-stub-and-shim-types"></a>在存根和填充码类型之间进行选择
 通常，你将 Visual Studio 项目视为一个组件，这是因为你同时开发和更新这些类。 对于该项目对你的解决方案中的其他项目所作的调用或对该项目引用的其他程序集所作的调用，应考虑使用存根和填充码。

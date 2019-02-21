@@ -1,7 +1,7 @@
 ---
-title: 对应用程序进行全球化和本地化
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: 本地化工具
+ms.date: 02/15/2019
+ms.topic: reference
 helpviewer_keywords:
 - globalization [Visual Studio]
 - Visual Basic code, international applications
@@ -15,30 +15,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3b8628f61c5fa2bc6eebadad23d5c9133f6fe4c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f90590c0273b886fe3f9a8e1c406ddf9aa7f11c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907343"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335254"
 ---
-# <a name="globalizing-and-localizing-applications"></a>对应用程序进行全球化和本地化
+# <a name="develop-globalized-and-localized-apps"></a>开发全球化和本地化应用
 
-如果计划向国际用户分发应用程序，则在设计和开发阶段需要牢记几个事项。 即使现在没有此类计划，如果你的计划在以后版本的应用程序中出现变动，一些预先工作也会大大简化所需操作。 利用 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 中内置的服务，可以轻松使用 Visual Studio 的托管开发来开发适应不同区域设置的单个应用程序。
+Visual Studio 利用 [.NET Framework](/dotnet/standard/globalization-localization/) 中内置的服务来简化面向国际受众的开发。
 
-## <a name="resources"></a>资源
+例如，Windows 窗体应用的项目系统可同时为回退 UI 区域性和每个附加 UI 区域性生成资源文件。 在 Visual Studio 中构建项目时，资源文件将从 Visual Studio XML 格式 (.resx) 编译为中间二进制格式 (.resources)，然后嵌入到附属程序集中。 有关详细信息，请参阅 [Visual Studio 中的资源文件](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles)和[创建桌面应用的附属程序集](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps)。
 
- 从设计之初开始，Visual Studio 的设计目的就是通过利用 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 中内置的服务来简化面向国际用户的开发工作。 以下文章将介绍 Visual Studio 中内置的国际化功能。
-
- [基于 .NET Framework 的国际应用程序简介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)：介绍有关使用 Visual Studio 和 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 面向国际市场开发软件的概念。
-
- [本地化应用程序](../ide/localizing-applications.md)：提供针对给定区域性自定义应用程序的页面链接。
-
- [全球化应用程序](../ide/globalizing-applications.md)：提供有关创建支持多种区域性的应用程序的页面链接。
+有关在 Visual Studio 中创建适用于双向语言的应用的信息，请参阅[创建适用于阿拉伯语和希伯来语的应用](creating-applications-in-bi-directional-languages.md)。
 
 ## <a name="see-also"></a>请参阅
 
-- [开发全球通用应用程序的最佳做法](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps)为国际受众提供关于编程的背景信息。
-- [类库概述](/dotnet/standard/class-library-overview)介绍可加快和优化开发过程并提供对系统功能的访问的类、接口和值类型。
-- <xref:System.Globalization> 指出该命名空间中的类，这些类定义区域性相关信息，包括语言、国家/地区、使用的日历、日期格式形式、货币、数字以及字符串排序顺序。
-- <xref:System.Resources> 指出该命名空间中的类和接口，这些类和接口使开发人员能够创建、存储和管理应用程序中所使用的、各种区域性特定的各种资源。
+- [全球化和本地化 .NET 应用](/dotnet/standard/globalization-localization/)
+- [.NET 应用中的资源](/dotnet/framework/resources/)
