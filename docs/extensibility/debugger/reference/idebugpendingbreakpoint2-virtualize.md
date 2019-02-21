@@ -13,74 +13,74 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d06c712e72af0cdab61370df8537f7c9aaeff75b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4ba9f1fd7587eb99115751790fdca2995c9ab019
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55028456"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450122"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
-切换此挂起断点的虚拟化的状态。 挂起断点虚拟化时，调试引擎将尝试将其绑定每次新代码将加载到该程序。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT Virtualize(   
-   BOOL fVirtualize  
-);  
-```  
-  
-```cpp  
-int Virtualize(   
-   int fVirtualize  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `fVirtualize`  
- [in]设置为非零值 (`TRUE`) 来虚拟化挂起断点，或为零 (`FALSE`) 若要关闭虚拟化。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_BP_DELETED`如果断点已被删除。  
-  
-## <a name="remarks"></a>备注  
- 每次加载代码时，绑定虚拟化的断点。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于简单`CPendingBreakpoint`公开的对象[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)接口。  
-  
-```cpp  
-HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)    
-{    
-   HRESULT hr;    
-  
-   // Verify that the pending breakpoint has not been deleted. If deleted,   
-   // then return hr = E_BP_DELETED.    
-   if (m_state.state != PBPS_DELETED)    
-   {    
-      if (fVirtualize)    
-      {    
-         // Set the PBPSF_VIRTUALIZED flag in the PENDING_BP_STATE_FLAGS   
-         // structure.    
-         SetFlag(m_state.flags, PBPSF_VIRTUALIZED);    
-      }    
-      else    
-      {    
-         // Clear the PBPSF_VIRTUALIZED flag in the PENDING_BP_STATE_FLAGS   
-         // structure.    
-         ClearFlag(m_state.flags, PBPSF_VIRTUALIZED);    
-      }    
-      hr = S_OK;    
-   }    
-   else    
-   {    
-      hr = E_BP_DELETED;    
-   }    
-  
-   return hr;    
-}    
-```  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+切换此挂起断点的虚拟化的状态。 挂起断点虚拟化时，调试引擎将尝试将其绑定每次新代码将加载到该程序。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT Virtualize(
+    BOOL fVirtualize
+);
+```
+
+```cpp
+int Virtualize(
+    int fVirtualize
+);
+```
+
+#### <a name="parameters"></a>参数
+`fVirtualize`  
+[in]设置为非零值 (`TRUE`) 来虚拟化挂起断点，或为零 (`FALSE`) 若要关闭虚拟化。
+
+## <a name="return-value"></a>返回值
+如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_BP_DELETED`如果断点已被删除。
+
+## <a name="remarks"></a>备注
+每次加载代码时，绑定虚拟化的断点。
+
+## <a name="example"></a>示例
+下面的示例演示如何实现此方法对于简单`CPendingBreakpoint`公开的对象[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)接口。
+
+```cpp
+HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
+{
+    HRESULT hr;
+
+    // Verify that the pending breakpoint has not been deleted. If deleted,
+    // then return hr = E_BP_DELETED.
+    if (m_state.state != PBPS_DELETED)
+    {
+        if (fVirtualize)
+        {
+            // Set the PBPSF_VIRTUALIZED flag in the PENDING_BP_STATE_FLAGS
+            // structure.
+            SetFlag(m_state.flags, PBPSF_VIRTUALIZED);
+        }
+        else
+        {
+            // Clear the PBPSF_VIRTUALIZED flag in the PENDING_BP_STATE_FLAGS
+            // structure.
+            ClearFlag(m_state.flags, PBPSF_VIRTUALIZED);
+        }
+        hr = S_OK;
+    }
+    else
+    {
+        hr = E_BP_DELETED;
+    }
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>请参阅
+[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

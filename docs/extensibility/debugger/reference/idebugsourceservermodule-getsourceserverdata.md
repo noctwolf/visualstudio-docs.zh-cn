@@ -10,66 +10,66 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72cc81a9c93e35ad972a49d7c8ed14e02c16387e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8880f00528b1c2b1f081b6c306e1f94cccc109ec
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55003335"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450277"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
-检索源服务器信息的数组。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetSourceServerData(  
-   ULONG* pDataByteCount,   
-   BYTE** ppData  
-);  
-```  
-  
-```csharp  
-public int GetSourceServerData(  
-   out uint  pDataByteCount,   
-   out int[] ppData  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pDataByteCount`  
- [out]数据数组中的字节数。  
-  
- `ppData`  
- [out]对数据数组的引用。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CModule**对象，它公开[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)接口。  
-  
-```cpp  
-HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)  
-{  
-    HRESULT hr = S_OK;  
-    CComPtr<ISymUnmanagedReader> pSymReader;  
-    CComPtr<ISymUnmanagedSourceServerModule> pSourceServerModule;  
-  
-    IfFalseGo( pDataByteCount && ppData, E_INVALIDARG );  
-    *pDataByteCount = 0;  
-    *ppData = NULL;  
-  
-    IfFailGo( this->GetUnmanagedSymReader( &pSymReader ) );  
-    IfFailGo( pSymReader->QueryInterface( &pSourceServerModule ) );  
-  
-    IfFailGo( pSourceServerModule->GetSourceServerData( pDataByteCount, ppData ) );  
-  
-Error:  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)
+检索源服务器信息的数组。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetSourceServerData(
+    ULONG* pDataByteCount,
+    BYTE** ppData
+);
+```
+
+```csharp
+public int GetSourceServerData(
+    out uint  pDataByteCount,
+    out int[] ppData
+);
+```
+
+#### <a name="parameters"></a>参数
+`pDataByteCount`  
+[out]数据数组中的字节数。
+
+`ppData`  
+[out]对数据数组的引用。
+
+## <a name="return-value"></a>返回值
+如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="example"></a>示例
+下面的示例演示如何实现此方法对于**CModule**对象，它公开[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)接口。
+
+```cpp
+HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)
+{
+    HRESULT hr = S_OK;
+    CComPtr<ISymUnmanagedReader> pSymReader;
+    CComPtr<ISymUnmanagedSourceServerModule> pSourceServerModule;
+
+    IfFalseGo( pDataByteCount && ppData, E_INVALIDARG );
+    *pDataByteCount = 0;
+    *ppData = NULL;
+
+    IfFailGo( this->GetUnmanagedSymReader( &pSymReader ) );
+    IfFailGo( pSymReader->QueryInterface( &pSourceServerModule ) );
+
+    IfFailGo( pSourceServerModule->GetSourceServerData( pDataByteCount, ppData ) );
+
+Error:
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>请参阅
+[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)

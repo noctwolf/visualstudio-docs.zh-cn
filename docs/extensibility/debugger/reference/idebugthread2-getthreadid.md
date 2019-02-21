@@ -12,49 +12,48 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74b7e0a2e2754361899a65e66ecac8a75be55722
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c77e2d5de5105b964beea0ad880358b59e10fab7
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949436"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450109"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
-获取系统线程标识符。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetThreadId (   
-   DWORD* pdwThreadId  
-);  
-```  
-  
-```csharp  
-int GetThreadId (   
-   out uint pdwThreadId  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pdwThreadId`  
- [out]返回系统线程标识符。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 线程 ID 用于标识之间的进程中的所有其他线程的线程。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于简单`CProgram`对象，它实现[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)接口。  
-  
-```cpp  
-HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {     
-   *pdwThreadId = GetCurrentThreadId();    
-   return NOERROR;    
-}    
-```  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+获取系统线程标识符。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetThreadId (
+    DWORD* pdwThreadId
+);
+```
+
+```csharp
+int GetThreadId (
+    out uint pdwThreadId
+);
+```
+
+#### <a name="parameters"></a>参数
+`pdwThreadId` [out]返回系统线程标识符。
+
+## <a name="return-value"></a>返回值
+如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="remarks"></a>备注
+线程 ID 用于标识之间的进程中的所有其他线程的线程。
+
+## <a name="example"></a>示例
+下面的示例演示如何实现此方法对于简单`CProgram`对象，它实现[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)接口。
+
+```cpp
+HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
+    *pdwThreadId = GetCurrentThreadId();
+    return NOERROR;
+}
+```
+
+## <a name="see-also"></a>请参阅
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

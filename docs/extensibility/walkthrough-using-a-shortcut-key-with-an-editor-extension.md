@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46564673417f93d139f554dbe67d1970ec7c5519
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d484ae5bffad903258b7f6f5d4561a23dcba1f5d
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988566"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450485"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>演练：使用快捷键与编辑器扩展
 您可以在编辑器扩展中响应键盘快捷方式。 下面的演练演示如何使用快捷键将视图修饰添加到文本视图。 本演练基于视区修饰编辑器模板，并且可以使用添加修饰 + 字符。  
@@ -47,12 +47,12 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 
 在 KeyBindingTestTextViewCreationListener.cs 类文件中，更改名称从 AdornmentLayer **KeyBindingTest**到**PurpleCornerBox**:
   
-    ```csharp  
-    [Export(typeof(AdornmentLayerDefinition))]  
-    [Name("PurpleCornerBox")]  
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
-    public AdornmentLayerDefinition editorAdornmentLayer;  
-    ```  
+```csharp  
+[Export(typeof(AdornmentLayerDefinition))]  
+[Name("PurpleCornerBox")]  
+[Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
+public AdornmentLayerDefinition editorAdornmentLayer;  
+```  
 
 ## <a name="handle-typechar-command"></a>句柄 TYPECHAR 命令
 在 Visual Studio 2017 版本 15.6 处理编辑器扩展中的命令的唯一方法通过实施之前<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>基于命令筛选器。 Visual Studio 2017 版本 15.6 引入了基于编辑器命令处理程序的新型的简化的方法。 接下来的两部分演示如何处理同时旧的新式方法使用的命令。
