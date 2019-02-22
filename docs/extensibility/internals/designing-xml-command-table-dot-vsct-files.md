@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68647dbcbeaedd8ce3a6a493b685142434eec2c2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923089"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641541"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>设计 XML 命令表格 (.vsct) 文件
 XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPackage。 命令项包括按钮、 组合框、 菜单、 工具栏和命令项的组。 本文介绍 XML 命令表文件、 它们如何影响命令项和菜单，以及如何创建它们。
@@ -61,7 +61,7 @@ XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPacka
 - 键绑定：不再需要指定一个仿真程序。 如果指定一个，则编译器将假定在编辑器和仿真程序是相同的。
 
 - Keychord:已删除 Keychord。 新的格式是*Key1、 Mod1、 Key2、 Mod2*。  您可以指定字符、 十六进制、 或 VK 常量。
-       
+
 新的编译器*vsct.exe*，将同时编译 *.ctc*并 *.vsct*文件。 旧*ctc.exe*编译器，但是，将不识别或编译 *.vsct*文件。
 
 可以使用*vsct.exe*编译器要转换的现有 *.cto*文件到 *.vsct*文件。 有关详细信息，请参阅[如何：从现有.cto 文件创建.vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)。
@@ -69,31 +69,31 @@ XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPacka
 ## <a name="the-vsct-file-elements"></a>.Vsct 文件元素
  命令表具有以下层次结构和元素：
 
- [CommandTable 元素](../../extensibility/commandtable-element.md):表示的所有命令、 菜单组和 VSPackage 与关联的菜单。
+- [CommandTable 元素](../../extensibility/commandtable-element.md):表示的所有命令、 菜单组和 VSPackage 与关联的菜单。
 
- [Extern 元素](../../extensibility/extern-element.md):引用你想要合并的任何外部.h 文件 *.vsct*文件。
+- [Extern 元素](../../extensibility/extern-element.md):引用你想要合并的任何外部.h 文件 *.vsct*文件。
 
- [包含元素](../../extensibility/include-element.md):引用要进行编译以及任何其他标头 (.h) 文件您 *.vsct*文件。 一个 *.vsct*文件可以包含 *.h*包含常数，用于定义命令、 菜单组和菜单在 IDE 或另一个 VSPackage 提供的文件。
+- [包含元素](../../extensibility/include-element.md):引用要进行编译以及任何其他标头 (.h) 文件您 *.vsct*文件。 一个 *.vsct*文件可以包含 *.h*包含常数，用于定义命令、 菜单组和菜单在 IDE 或另一个 VSPackage 提供的文件。
 
- [Commands 元素](../../extensibility/commands-element.md):表示所有可执行的单个命令。 每个命令具有以下四个子元素：
+- [Commands 元素](../../extensibility/commands-element.md):表示所有可执行的单个命令。 每个命令具有以下四个子元素：
 
- [Menus 元素](../../extensibility/menus-element.md):表示所有菜单和工具栏在 VSPackage 中。 菜单是组的命令的容器。
+- [Menus 元素](../../extensibility/menus-element.md):表示所有菜单和工具栏在 VSPackage 中。 菜单是组的命令的容器。
 
- [Groups 元素](../../extensibility/groups-element.md):表示所有在 VSPackage 中的组。 组是单个命令的集合。
+- [Groups 元素](../../extensibility/groups-element.md):表示所有在 VSPackage 中的组。 组是单个命令的集合。
 
- [Buttons 元素](../../extensibility/buttons-element.md):表示所有的命令按钮和菜单项在 VSPackage 中。 按钮是可以与命令相关联的可视控件。
+- [Buttons 元素](../../extensibility/buttons-element.md):表示所有的命令按钮和菜单项在 VSPackage 中。 按钮是可以与命令相关联的可视控件。
 
- [Bitmaps 元素](../../extensibility/bitmaps-element.md):表示所有按钮在 VSPackage 中的所有位图。 位图为显示下一步或上的命令按钮，具体取决于上下文的图片。
+- [Bitmaps 元素](../../extensibility/bitmaps-element.md):表示所有按钮在 VSPackage 中的所有位图。 位图为显示下一步或上的命令按钮，具体取决于上下文的图片。
 
- [CommandPlacements 元素](../../extensibility/commandplacements-element.md):指示其中的单个命令应放置在你的 VSPackage 的菜单中的其他位置。
+- [CommandPlacements 元素](../../extensibility/commandplacements-element.md):指示其中的单个命令应放置在你的 VSPackage 的菜单中的其他位置。
 
- [VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md):指定命令将显示在所有时间，或仅在某些上下文中，例如何时显示特定对话框或窗口中。 仅当指定的上下文处于活动状态时，将显示菜单和命令，并提供此元素的值。 默认行为是可在任何时候显示命令。
+- [VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md):指定命令将显示在所有时间，或仅在某些上下文中，例如何时显示特定对话框或窗口中。 仅当指定的上下文处于活动状态时，将显示菜单和命令，并提供此元素的值。 默认行为是可在任何时候显示命令。
 
- [KeyBindings 元素](../../extensibility/keybindings-element.md):指定命令的任何键绑定。 也就是说，一个或多个键组合必须按下执行命令，如**Ctrl**+**S**。
+- [KeyBindings 元素](../../extensibility/keybindings-element.md):指定命令的任何键绑定。 也就是说，一个或多个键组合必须按下执行命令，如**Ctrl**+**S**。
 
- [UsedCommands 元素](../../extensibility/usedcommands-element.md):通知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]环境当前 VSPackage 处于活动状态时，将由其他代码，实现指定的命令，尽管它提供了命令实现。
+- [UsedCommands 元素](../../extensibility/usedcommands-element.md):通知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]环境当前 VSPackage 处于活动状态时，将由其他代码，实现指定的命令，尽管它提供了命令实现。
 
- [Symbols 元素](../../extensibility/symbols-element.md):包含的符号名称和 GUID 的所有包中命令的 Id。
+- [Symbols 元素](../../extensibility/symbols-element.md):包含的符号名称和 GUID 的所有包中命令的 Id。
 
 ## <a name="vsct-file-design-guidelines"></a>.vsct 文件设计指导原则
  已成功设计 *.vsct*文件中，请遵循以下准则。
@@ -122,4 +122,4 @@ XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPacka
  使用命令来运行该工具**CreateExpInstance /Reset**。 请记住，此工具从中删除实验性配置单元通常不随一起安装的所有已注册的 Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
 
 ## <a name="see-also"></a>请参阅
- [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)
+- [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)

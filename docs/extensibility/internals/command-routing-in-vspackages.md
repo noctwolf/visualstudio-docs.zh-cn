@@ -11,29 +11,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 048ce0d88a87f42f5b98104d6ec928f5af8b40e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5749875a440a3122a06b81ae9d721e75ded6202c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023062"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641294"
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage 中的命令传送
-命令路由中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]基于在其中执行的上下文。 它从初始上下文外部路由到全局上下文。  
-  
-## <a name="in-this-section"></a>本节内容  
- [命令传送算法](../../extensibility/internals/command-routing-algorithm.md)  
- 描述命令路由解析的顺序。  
-  
- [命令可用性](../../extensibility/internals/command-availability.md)  
- 讨论命令路由。  
-  
- [使用互操作程序集的命令和菜单](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
- 讨论托管的代码和 COM 之间的路由命令中的注意事项  
-  
-## <a name="related-sections"></a>相关章节  
- [选择上下文对象](../../extensibility/internals/selection-context-objects.md)  
- 讨论如何确定用户的选定内容上下文焦点窗口上的模型。  
-  
- [命令、 菜单和工具栏](../../extensibility/internals/commands-menus-and-toolbars.md)  
+命令路由中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]基于在其中执行的上下文。 它从初始上下文外部路由到全局上下文。
+
+## <a name="in-this-section"></a>本节内容
+- [命令传送算法](../../extensibility/internals/command-routing-algorithm.md)
+
+ 描述命令路由解析的顺序。
+
+- [命令可用性](../../extensibility/internals/command-availability.md)
+
+ 讨论命令路由。
+
+- [使用互操作程序集的命令和菜单](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
+
+ 讨论托管的代码和 COM 之间的路由命令中的注意事项
+
+## <a name="related-sections"></a>相关章节
+- [选择上下文对象](../../extensibility/internals/selection-context-objects.md)
+
+ 讨论如何确定用户的选定内容上下文焦点窗口上的模型。
+
+- [命令、 菜单和工具栏](../../extensibility/internals/commands-menus-and-toolbars.md)
+
  说明如何创建包含菜单、工具栏和命令组合框的 UI。

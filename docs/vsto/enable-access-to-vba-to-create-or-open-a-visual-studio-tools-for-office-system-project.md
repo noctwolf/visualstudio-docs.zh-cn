@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 219b2e1bd3ff7690f19066f83e914e5d0b878a73
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca3810df7751245acc3f7a93372d565b88170b07
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945776"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634820"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>启用对 VBA 创建或打开 Visual Studio Tools for the Microsoft Office system 项目的访问
 
@@ -126,5 +126,4 @@ ms.locfileid: "55945776"
 5. 选择**检测并修复 Office 安装中的错误**，然后单击**安装**。
 
 ## <a name="see-also"></a>请参阅
-
- [保护 Office 解决方案](../vsto/securing-office-solutions.md)
+- [保护 Office 解决方案](../vsto/securing-office-solutions.md)

@@ -14,34 +14,34 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77f3e1c32c0c18c73823b374a09345a6a9d38170
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 62ecf97cfacd2eaa11ac740a56134dcde9d68766
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870540"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639591"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>如何：添加或删除 SharePoint 连接
-  服务器资源管理器可以浏览 SharePoint 站点，以及数据连接。 但是，您可以浏览 SharePoint 站点的内容之前，必须将其添加到**SharePoint 连接**节点。  
-  
+  服务器资源管理器可以浏览 SharePoint 站点，以及数据连接。 但是，您可以浏览 SharePoint 站点的内容之前，必须将其添加到**SharePoint 连接**节点。
+
 ### <a name="to-add-a-sharepoint-site-to-the-sharepoint-connections-node"></a>若要将 SharePoint 站点添加到 SharePoint 的连接节点
-  
-1.  在菜单栏上依次选择**视图**，**服务器资源管理器**。  
-  
-2.  在中**服务器资源管理器**，选择**SharePoint 连接**节点，然后在菜单栏上选择**工具** > **添加 SharePoint连接**。  
-  
-3.  在中**添加 SharePoint 连接**框中，输入[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]SharePoint 站点 (例如， http://testserver/sites/unittests)。  
-  
+
+1.  在菜单栏上依次选择**视图**，**服务器资源管理器**。
+
+2.  在中**服务器资源管理器**，选择**SharePoint 连接**节点，然后在菜单栏上选择**工具** > **添加 SharePoint连接**。
+
+3.  在中**添加 SharePoint 连接**框中，输入[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]SharePoint 站点 (例如， http://testserver/sites/unittests)。
+
 ### <a name="to-delete-a-sharepoint-site-from-the-sharepoint-connections-node"></a>若要从 SharePoint 连接节点中删除 SharePoint 站点
-  
-1.  在菜单栏上依次选择**视图**，**服务器资源管理器**以打开**服务器资源管理器**。  
-  
-2.  展开**SharePoint 连接**节点，以显示你想要删除从 SharePoint 站点**服务器资源管理器**。  
-  
-3.  选择的站点，然后在菜单栏上选择**编辑** > **删除**。  
-  
-    > [!NOTE]  
-    >  此步骤不会删除基础站点;删除仅从连接**服务器资源管理器**。  
-  
+
+1.  在菜单栏上依次选择**视图**，**服务器资源管理器**以打开**服务器资源管理器**。
+
+2.  展开**SharePoint 连接**节点，以显示你想要删除从 SharePoint 站点**服务器资源管理器**。
+
+3.  选择的站点，然后在菜单栏上选择**编辑** > **删除**。
+
+    > [!NOTE]
+    >  此步骤不会删除基础站点;删除仅从连接**服务器资源管理器**。
+
 ## <a name="see-also"></a>请参阅
- [浏览 SharePoint 连接使用服务器资源管理器](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)  
+- [浏览 SharePoint 连接使用服务器资源管理器](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

@@ -16,26 +16,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dcf80961fa035145aa32d32636d9645f8c61ec4
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 63f3bfc9295501d5f9b8f0267037302cdbb04a76
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876143"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615840"
 ---
 # <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel 键盘，Microsoft Office 键盘设置选项对话框
-  Microsoft Office Excel 和 Visual Studio 同时处理键盘快捷方式。 在 Excel 中，在 Visual Studio 中不同的命令可以代表相同快捷键组合。 在 Visual Studio 中的文档级项目中打开 Excel 时，一次只有一个应用程序接收的快捷键命令。 默认情况下，Visual Studio 接收所有快捷方式命令，但您可以使 Excel 文档通过选择具有焦点时接收它们**动态键盘方案**。  
-  
- 如果使用未分配给当前正在处理键盘快捷方式的应用程序中的命令的快捷键，快捷键被传递到其他应用程序。  
-  
- 您选择的选项将在日后失效的 Excel 项目之前将其更改。 所选内容不会影响 Microsoft Office Word 项目中;必须使用 Microsoft Office Word 键盘选项进行一词的任何更改。  
-  
-## <a name="uielement-list"></a>UIElement 列表  
- **Visual Studio 键盘方案**  
- Visual Studio 接收所有快捷方式命令，即使 Excel 具有焦点。 例如，如果按功能键**F5** Excel 有焦点，Visual Studio 将启动调试你的解决方案。  
-  
- **动态键盘方案**  
- 仅具有焦点时，visual Studio 将接收的快捷键命令。 当 Excel 具有焦点时，Excel 将接收所有的快捷键命令。 例如，如果按功能键**F5** Excel 有焦点，Excel 将打开**转到**对话框。 如果按下**F5**时 Visual Studio 具有焦点时，Visual Studio 将启动调试你的解决方案。  
-  
-## <a name="see-also"></a>请参阅  
- [Microsoft Office Word 键盘，Microsoft Office 键盘设置选项对话框](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
+  Microsoft Office Excel 和 Visual Studio 同时处理键盘快捷方式。 在 Excel 中，在 Visual Studio 中不同的命令可以代表相同快捷键组合。 在 Visual Studio 中的文档级项目中打开 Excel 时，一次只有一个应用程序接收的快捷键命令。 默认情况下，Visual Studio 接收所有快捷方式命令，但您可以使 Excel 文档通过选择具有焦点时接收它们**动态键盘方案**。
+
+ 如果使用未分配给当前正在处理键盘快捷方式的应用程序中的命令的快捷键，快捷键被传递到其他应用程序。
+
+ 您选择的选项将在日后失效的 Excel 项目之前将其更改。 所选内容不会影响 Microsoft Office Word 项目中;必须使用 Microsoft Office Word 键盘选项进行一词的任何更改。
+
+## <a name="uielement-list"></a>UIElement 列表
+ **Visual Studio 键盘方案**Visual Studio 接收所有快捷方式命令，即使 Excel 具有焦点。 例如，如果按功能键**F5** Excel 有焦点，Visual Studio 将启动调试你的解决方案。
+
+ **动态键盘方案**Visual Studio 仅具有焦点时接收的快捷键命令。 当 Excel 具有焦点时，Excel 将接收所有的快捷键命令。 例如，如果按功能键**F5** Excel 有焦点，Excel 将打开**转到**对话框。 如果按下**F5**时 Visual Studio 具有焦点时，Visual Studio 将启动调试你的解决方案。
+
+## <a name="see-also"></a>请参阅
+- [Microsoft Office Word 键盘，Microsoft Office 键盘设置选项对话框](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)

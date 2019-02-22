@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 930edf4483d946c92a0c3c21242bfe0bb421a229
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874170"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600293"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>演练：使用业务数据在 SharePoint 中创建外部列表
 
@@ -276,7 +276,7 @@ ms.locfileid: "54874170"
 
 ## <a name="see-also"></a>请参阅
 
-[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  
-[创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)  
-[BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)  
-[将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)
+[创建的业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)
+[BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)
+ [将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

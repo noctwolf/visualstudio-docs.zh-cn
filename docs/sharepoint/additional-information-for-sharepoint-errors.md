@@ -16,35 +16,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e459f042838fa92e9b4bbc1608bb36dfd4c8dc9
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: afbfaae56470fa9b16c99277d36b0e39a6504906
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875753"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628905"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint 错误的其他信息
-  您可以在故障排除中查找帮助[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具错误和故障排除主题和公共论坛中的警告。  
-  
+  您可以在故障排除中查找帮助[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具错误和故障排除主题和公共论坛中的警告。
+
 ## <a name="troubleshoot-errors-and-issues"></a>错误和问题进行故障排除
- 有关的一些常见错误和中的其他问题帮助[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具，请参阅以下主题：  
-  
--   [对 SharePoint 解决方案进行故障排除](../sharepoint/troubleshooting-sharepoint-solutions.md)  
-  
--   [调试 SharePoint 解决方案](../sharepoint/debugging-sharepoint-solutions.md)  
-  
--   [SharePoint 打包和部署进行故障排除](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
-  
+ 有关的一些常见错误和中的其他问题帮助[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具，请参阅以下主题：
+
+-   [对 SharePoint 解决方案进行故障排除](../sharepoint/troubleshooting-sharepoint-solutions.md)
+
+-   [调试 SharePoint 解决方案](../sharepoint/debugging-sharepoint-solutions.md)
+
+-   [SharePoint 打包和部署进行故障排除](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+
 ## <a name="other-resources"></a>其他资源
- 下表列出了[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具论坛和其他资源可用。  
-  
-|术语|定义|  
-|----------|----------------|  
-|[SharePoint 开发](http://go.microsoft.com/fwlink/?LinkId=179593)|中的 SharePoint 开发有关的问题提供了一个论坛[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。|  
-|[Visual Studio 论坛](http://go.microsoft.com/fwlink/?LinkID=150452)|提供了一个论坛问题有关[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。|  
-|[Microsoft 帮助和支持](http://go.microsoft.com/fwlink/?LinkID=108287)|提供对知识库 (KB) 文章、下载和更新、支持 Webcast 以及其他服务的访问。|  
-  
- 如果仍然找不到所需的答案，则可以访问联机支持选项，如与 Microsoft 产品支持服务联系，或搜索知识库文章的链接。 有关详细信息，请参阅[Microsoft 帮助和支持](http://go.microsoft.com/fwlink/?LinkID=155371)页。  
-  
+ 下表列出了[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具论坛和其他资源可用。
+
+|术语|定义|
+|----------|----------------|
+|[SharePoint 开发](http://go.microsoft.com/fwlink/?LinkId=179593)|中的 SharePoint 开发有关的问题提供了一个论坛[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。|
+|[Visual Studio 论坛](http://go.microsoft.com/fwlink/?LinkID=150452)|提供了一个论坛问题有关[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。|
+|[Microsoft 帮助和支持](http://go.microsoft.com/fwlink/?LinkID=108287)|提供对知识库 (KB) 文章、下载和更新、支持 Webcast 以及其他服务的访问。|
+
+ 如果仍然找不到所需的答案，则可以访问联机支持选项，如与 Microsoft 产品支持服务联系，或搜索知识库文章的链接。 有关详细信息，请参阅[Microsoft 帮助和支持](http://go.microsoft.com/fwlink/?LinkID=155371)页。
+
 ## <a name="see-also"></a>请参阅
- [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+- [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)

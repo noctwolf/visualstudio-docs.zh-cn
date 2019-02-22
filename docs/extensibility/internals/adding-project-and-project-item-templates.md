@@ -11,53 +11,66 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8315626f346a96d907686e009af006e2170e072c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ee61f388da8098c20c65be8859b336c1ab86bebd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929544"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620962"
 ---
 # <a name="add-project-and-project-item-templates"></a>添加项目和项目项模板
-创建你自己的项目类型时，你必须通过使用标准添加新项目和项目项提供支持[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE) 对话框。 以下主题讨论不同的技术来添加项目和项目项。  
-  
-## <a name="in-this-section"></a>本节内容  
- [项目上下文](../../extensibility/internals/project-context.md)  
- 介绍了该项目提供了大部分什么怎样在环境中的上下文信息。  
-  
- [项目优先级](../../extensibility/internals/project-priority.md)  
- 介绍了项目项通常是一个项目的成员，以帮助避免的多义性有关哪些项目用于打开该项目。  
-  
- [杂项文件项目](../../extensibility/internals/miscellaneous-files-project.md)  
- 提供有关两种类型的编辑器，可用于打开一个项目和角色中的文件中确定哪个编辑器打开项目项时要使用播放该项目的信息。  
-  
- [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)  
- 介绍了所发生的情况时[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]创建项目。  
-  
- [将项目添加到添加新项对话框](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)  
- 解释了将项添加到的过程**添加新项**对话框。  
-  
- [将目录添加到新项目对话框](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)  
- 提供注册包含由 VSPackage 提供的自定义模板的新目录的示例。  
-  
- [将目录添加到添加新项对话框](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)  
- 提供了一组新的目录中注册示例**添加新项**对话框。  
-  
- [IDE 定义用于扩展项目系统的命令](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)  
- 列出了不同类型的命令项用于扩展项目系统。  
-  
- [对象通常用于扩展项目的 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)  
- 列出用于扩展的对象的 Catid [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]项目系统。  
-  
-## <a name="related-sections"></a>相关章节  
- [如何：打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)  
- 提供用于打开本质上绑定到特定的编辑器项目的项的分步说明。  
-  
- [如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)  
- 提供用于打开标准编辑器的分步说明。  
-  
- [项目子类型](../../extensibility/internals/project-subtypes.md)  
- 提供指向项目子类型概念主题的链接。 项目子类型扩展现有[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]项目。  
-  
- [项目类型](../../extensibility/internals/project-types.md)  
+创建你自己的项目类型时，你必须通过使用标准添加新项目和项目项提供支持[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE) 对话框。 以下主题讨论不同的技术来添加项目和项目项。
+
+## <a name="in-this-section"></a>本节内容
+- [项目上下文](../../extensibility/internals/project-context.md)
+
+ 介绍了该项目提供了大部分什么怎样在环境中的上下文信息。
+
+- [项目优先级](../../extensibility/internals/project-priority.md)
+
+ 介绍了项目项通常是一个项目的成员，以帮助避免的多义性有关哪些项目用于打开该项目。
+
+- [杂项文件项目](../../extensibility/internals/miscellaneous-files-project.md)
+
+ 提供有关两种类型的编辑器，可用于打开一个项目和角色中的文件中确定哪个编辑器打开项目项时要使用播放该项目的信息。
+
+- [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)
+
+ 介绍了所发生的情况时[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]创建项目。
+
+- [将项目添加到添加新项对话框](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
+
+ 解释了将项添加到的过程**添加新项**对话框。
+
+- [将目录添加到新项目对话框](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
+
+ 提供注册包含由 VSPackage 提供的自定义模板的新目录的示例。
+
+- [将目录添加到添加新项对话框](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+
+ 提供了一组新的目录中注册示例**添加新项**对话框。
+
+- [IDE 定义用于扩展项目系统的命令](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+
+ 列出了不同类型的命令项用于扩展项目系统。
+
+- [对象通常用于扩展项目的 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
+
+ 列出用于扩展的对象的 Catid [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]项目系统。
+
+## <a name="related-sections"></a>相关章节
+- [如何：打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)
+
+ 提供用于打开本质上绑定到特定的编辑器项目的项的分步说明。
+
+- [如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)
+
+ 提供用于打开标准编辑器的分步说明。
+
+- [项目子类型](../../extensibility/internals/project-subtypes.md)
+
+ 提供指向项目子类型概念主题的链接。 项目子类型扩展现有[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]项目。
+
+- [项目类型](../../extensibility/internals/project-types.md)
+
  提供指向其他主题提供有关如何设计新的项目类型的信息。

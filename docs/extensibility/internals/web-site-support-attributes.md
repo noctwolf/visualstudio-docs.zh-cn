@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac58ec0d7175d2d7989ce9c4d6086b5a741e77c9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 076b7aa56ec00fda559bbdfdc8b2b9df2be38816
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927237"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603126"
 ---
 # <a name="web-site-support-attributes"></a>网站支持属性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 网站项目可以进行扩展以提供对 Web 的支持编程语言。 语言必须注册自行向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，以便项目模板可以出现在**新的 Web 站点**对话框时选择的语言。
@@ -55,4 +55,4 @@ public class PythonPackage : Package, IOleComponent
  IVsIntellisenseProject 实现处理引用，并包含代码的网页请求，但未缓存时调用的语言编译器。
 
 ## <a name="see-also"></a>请参阅
- [网站支持](../../extensibility/internals/web-site-support.md)
+- [网站支持](../../extensibility/internals/web-site-support.md)

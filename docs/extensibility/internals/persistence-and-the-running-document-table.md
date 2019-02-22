@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceb66051d3a1ab0119f4b80a68f0f2990e569fe8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: deb5472776bc9c4a4d6bb0ccd8830cba5eea3d04
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929765"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640255"
 ---
 # <a name="persistence-and-the-running-document-table"></a>持久性和正在运行的文档表
-在中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 中，项目是完全负责管理其项目项，它们为使用该服务，持久性<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>。 文档是在 Visual Studio 环境中的暂留的基本单位。 项目协调在打开、 保存和重命名的文档运行文档表 (RDT) 跟踪所有打开的文档的状态的资源。  
-  
-## <a name="managing-persistence"></a>管理持久性  
- 项目通过实现控制环境的持久性服务<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem>接口。 虽然环境永远不会直接询问要保持自身的文档，它会要求所属项目 （或层次结构） 来保存文档。 这使项目及其项目项数据保存到本地文件、 远程文件、 数据库、 一个存储库或其他媒体。  
-  
- 全局环境负责维护 RDT。 环境负责维护所有打开的窗口的条目和 RDT，这样就可以为它们到中的文档接收特殊的通知，例如，解决方案已关闭时。 此外，RDT 使得要跟踪其对应的节点中的环境**解决方案资源管理器**。 RDT 维护每个打开、 持久对象，其中包括项目文件和项目项的文档的一条记录。  
-  
-## <a name="see-also"></a>请参阅  
- [运行文档表](../../extensibility/internals/running-document-table.md)   
- [IDE 中的选择和货币](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+在中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 中，项目是完全负责管理其项目项，它们为使用该服务，持久性<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>。 文档是在 Visual Studio 环境中的暂留的基本单位。 项目协调在打开、 保存和重命名的文档运行文档表 (RDT) 跟踪所有打开的文档的状态的资源。
+
+## <a name="managing-persistence"></a>管理持久性
+ 项目通过实现控制环境的持久性服务<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem>接口。 虽然环境永远不会直接询问要保持自身的文档，它会要求所属项目 （或层次结构） 来保存文档。 这使项目及其项目项数据保存到本地文件、 远程文件、 数据库、 一个存储库或其他媒体。
+
+ 全局环境负责维护 RDT。 环境负责维护所有打开的窗口的条目和 RDT，这样就可以为它们到中的文档接收特殊的通知，例如，解决方案已关闭时。 此外，RDT 使得要跟踪其对应的节点中的环境**解决方案资源管理器**。 RDT 维护每个打开、 持久对象，其中包括项目文件和项目项的文档的一条记录。
+
+## <a name="see-also"></a>请参阅
+- [运行文档表](../../extensibility/internals/running-document-table.md)
+- [IDE 中的选择和货币](../../extensibility/internals/selection-and-currency-in-the-ide.md)

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 319cd31ccdc2c5c8cfa2b4540e5f32382008ca5a
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873739"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636510"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>如何：脱机时或者在服务器上缓存数据以供使用
   您可以将标记数据项目，在文档中，缓存，以便可脱机。 这还使得数据中的服务器上存储的文档时，其他代码要操作的文档。
@@ -60,4 +60,8 @@ ms.locfileid: "54873739"
 4.  在中**属性**窗口中，将**修饰符**属性设置为**公共**(默认情况下它是**内部**)。
 
 ## <a name="see-also"></a>请参阅
- [缓存数据](../vsto/caching-data.md)[如何：以编程方式缓存中的 Office 文档的数据源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)[如何：在受密码保护的文档中缓存数据](../vsto/how-to-cache-data-in-a-password-protected-document.md)[访问服务器上的文档中的数据](../vsto/accessing-data-in-documents-on-the-server.md)[保存数据](../data-tools/saving-data.md)
+- [缓存数据](../vsto/caching-data.md)
+- [如何：以编程方式缓存中的 Office 文档的数据源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
+- [如何：在受密码保护的文档中缓存数据](../vsto/how-to-cache-data-in-a-password-protected-document.md)
+- [访问服务器上的文档中的数据](../vsto/accessing-data-in-documents-on-the-server.md)
+- [保存数据](../data-tools/saving-data.md)

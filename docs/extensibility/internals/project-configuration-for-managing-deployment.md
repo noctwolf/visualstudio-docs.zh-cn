@@ -11,33 +11,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4165a367a029bc0d226f7fce55f3b2929d0f965
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6c9bf9dd71007e3a33a217a7ec30b357cd211b00
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936276"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629672"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>用于管理部署的项目配置
-部署是以物理方式将输出项的生成过程从移动到预期位置用于调试和安装的行为。 例如，Web 应用程序可能会在本地计算机上生成，然后放在服务器上。  
-  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持两种方法可以在部署中涉及的项目：  
-  
-- 作为部署过程的主题。  
-  
-- 作为部署过程的管理器。  
-  
-  可以部署解决方案之前，必须首先添加一个部署项目来配置部署选项。 如果尚不存在部署项目，会要求你想要选择时创建一个**部署解决方案**从**生成**菜单或右键单击该解决方案。 单击**是**会打开**添加新项目**带有对话框**远程部署向导**所选项目。  
-  
-  远程部署向导会要求你的应用程序 （Windows 或 Web） 的类型、 要包括的项目输出组、 要包括，任何其他文件和你想要将部署到远程计算机。 在向导的最后一页显示所选选项的摘要。  
-  
-  部署过程的使用者的项目生成输出项，必须将移动到备用的环境。 这些输出作为参数的说明项<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>接口，其主要用途如果以允许到组的输出的项目。 有关实现的详细信息`IVsProjectCfg2`，请参阅[用于输出的项目配置](../../extensibility/internals/project-configuration-for-output.md)。  
-  
-  部署项目，管理部署过程，启用部署命令和响应时选择此命令。 部署项目实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>界面，用于执行部署和调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback>接口的报表部署状态事件。  
-  
-  配置可指定对其生成或部署操作影响的依赖关系。 生成或部署的依赖项是必须为生成或部署之前或之后配置本身，生成或部署的项目。 描述项目之间建立依赖关系都<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>接口，并部署使用的依赖项<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>接口。 有关详细信息，请参阅[构建的项目配置](../../extensibility/internals/project-configuration-for-building.md)。  
-  
-## <a name="see-also"></a>请参阅  
- [管理配置选项](../../extensibility/internals/managing-configuration-options.md)   
- [用于构建的项目配置](../../extensibility/internals/project-configuration-for-building.md)   
- [用于输出的项目配置](../../extensibility/internals/project-configuration-for-output.md)
+部署是以物理方式将输出项的生成过程从移动到预期位置用于调试和安装的行为。 例如，Web 应用程序可能会在本地计算机上生成，然后放在服务器上。
+
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持两种方法可以在部署中涉及的项目：
+
+- 作为部署过程的主题。
+
+- 作为部署过程的管理器。
+
+  可以部署解决方案之前，必须首先添加一个部署项目来配置部署选项。 如果尚不存在部署项目，会要求你想要选择时创建一个**部署解决方案**从**生成**菜单或右键单击该解决方案。 单击**是**会打开**添加新项目**带有对话框**远程部署向导**所选项目。
+
+  远程部署向导会要求你的应用程序 （Windows 或 Web） 的类型、 要包括的项目输出组、 要包括，任何其他文件和你想要将部署到远程计算机。 在向导的最后一页显示所选选项的摘要。
+
+  部署过程的使用者的项目生成输出项，必须将移动到备用的环境。 这些输出作为参数的说明项<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>接口，其主要用途如果以允许到组的输出的项目。 有关实现的详细信息`IVsProjectCfg2`，请参阅[用于输出的项目配置](../../extensibility/internals/project-configuration-for-output.md)。
+
+  部署项目，管理部署过程，启用部署命令和响应时选择此命令。 部署项目实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>界面，用于执行部署和调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback>接口的报表部署状态事件。
+
+  配置可指定对其生成或部署操作影响的依赖关系。 生成或部署的依赖项是必须为生成或部署之前或之后配置本身，生成或部署的项目。 描述项目之间建立依赖关系都<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>接口，并部署使用的依赖项<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>接口。 有关详细信息，请参阅[构建的项目配置](../../extensibility/internals/project-configuration-for-building.md)。
+
+## <a name="see-also"></a>请参阅
+- [管理配置选项](../../extensibility/internals/managing-configuration-options.md)
+- [用于生成的项目配置](../../extensibility/internals/project-configuration-for-building.md)
+- [用于输出的项目配置](../../extensibility/internals/project-configuration-for-output.md)
