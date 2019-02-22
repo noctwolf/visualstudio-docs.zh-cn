@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e78b66e1d7e9520f4aa54d8bcee54803659f9f6f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e559ddfec8570077a78fe980632366b4a57605de
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863430"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632948"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>配置计算机以开发 Office 解决方案
 
@@ -48,9 +48,8 @@ ms.locfileid: "54863430"
 如果继续遇到问题，请参阅[Office 解决方案错误的其他支持](../vsto/additional-support-for-errors-in-office-solutions.md)。
 
 ## <a name="see-also"></a>请参阅
-
-[开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
-[如何：配置计算机以开发 Office 解决方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[如何：安装 Visual Studio Tools for Office runtime 可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[如何：安装 Office 主互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)
+- [开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [如何：配置计算机以开发 Office 解决方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
+- [如何：安装 Visual Studio Tools for Office runtime 可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)
+- [如何：安装 Office 主互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)
+- [按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)

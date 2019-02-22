@@ -12,22 +12,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9a08451b186cdc3ca1526441e906cf3c9e5d4c9
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 5ac3dbb169fee82a55cc41b773d3616c56f83534
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866839"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638005"
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>如何：以编程方式在特定文件夹内的搜索
-  此代码示例使用`Find`并`FindNext`方法中的电子邮件的主题字段中搜索文本**收件箱**。 此方法使用字符串筛选器为要检查的起始字母的字母 T`Subject`文本。  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>示例  
- [!code-csharp[Trin_OL_SearchFolder#1](../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs#1)]  
-  
-## <a name="see-also"></a>请参阅  
- [使用文件夹](../vsto/working-with-folders.md)   
- [Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)   
- [如何：以编程方式按名称检索文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)  
+  此代码示例使用`Find`并`FindNext`方法中的电子邮件的主题字段中搜索文本**收件箱**。 此方法使用字符串筛选器为要检查的起始字母的字母 T`Subject`文本。
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>示例
+ [!code-csharp[Trin_OL_SearchFolder#1](../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs#1)]
+
+## <a name="see-also"></a>请参阅
+- [使用文件夹](../vsto/working-with-folders.md)
+- [Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)
+- [如何：以编程方式按名称检索文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
