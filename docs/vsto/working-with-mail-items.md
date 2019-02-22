@@ -15,29 +15,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2cd75db70cb6b6b2afb7c4547c29ca372b4efdbe
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1a0e5007163d10aee15e39759448928e44ae5a68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871073"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629204"
 ---
 # <a name="work-with-mail-items"></a>使用邮件项
-  <xref:Microsoft.Office.Interop.Outlook.MailItem>类包含方法和用于执行任务的电子邮件消息的属性。  
-  
-|任务|过程|  
-|----------|---------------|  
-|创建一封电子邮件。|[如何：以编程方式创建电子邮件项](../vsto/how-to-programmatically-create-an-e-mail-item.md)|  
-|发送电子邮件。|[如何：以编程方式发送电子邮件](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|  
-|响应的自定义操作的新电子邮件。|[如何：以编程方式执行操作时收到一封电子邮件](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|  
-|保存附件。|[如何：以编程方式保存 Outlook 电子邮件项的附件](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|  
-|添加附件|[如何：以编程方式将文件附加到 Outlook 电子邮件项](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|  
-|循环访问所有未读邮件。|[如何：以编程方式从收件箱中检索未读的邮件](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|  
-  
- 有关 Outlook 任务和 Outlook 对象模型的详细信息，请参阅[Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)。  
-  
-## <a name="see-also"></a>请参阅  
- [使用联系人项](../vsto/working-with-contact-items.md)   
- [使用文件夹](../vsto/working-with-folders.md)   
- [使用日历项](../vsto/working-with-calendar-items.md)   
- [Outlook 解决方案](../vsto/outlook-solutions.md)  
+  <xref:Microsoft.Office.Interop.Outlook.MailItem>类包含方法和用于执行任务的电子邮件消息的属性。
+
+|任务|过程|
+|----------|---------------|
+|创建一封电子邮件。|[如何：以编程方式创建电子邮件项](../vsto/how-to-programmatically-create-an-e-mail-item.md)|
+|发送电子邮件。|[如何：以编程方式发送电子邮件](../vsto/how-to-programmatically-send-e-mail-programmatically.md)|
+|响应的自定义操作的新电子邮件。|[如何：以编程方式执行操作时收到一封电子邮件](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)|
+|保存附件。|[如何：以编程方式保存 Outlook 电子邮件项的附件](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)|
+|添加附件|[如何：以编程方式将文件附加到 Outlook 电子邮件项](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|
+|循环访问所有未读邮件。|[如何：以编程方式从收件箱中检索未读的邮件](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|
+
+ 有关 Outlook 任务和 Outlook 对象模型的详细信息，请参阅[Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)。
+
+## <a name="see-also"></a>请参阅
+- [使用联系人项](../vsto/working-with-contact-items.md)
+- [使用文件夹](../vsto/working-with-folders.md)
+- [使用日历项](../vsto/working-with-calendar-items.md)
+- [Outlook 解决方案](../vsto/outlook-solutions.md)

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 254a7ce0409ffbf254f0ec7d10ad3fa543775d61
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 96d83bbe34e0510ccf14204eb83fa1ed2da2d173
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870030"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631960"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>了解共同编写和外接程序
 
@@ -26,4 +26,4 @@ ms.locfileid: "54870030"
 注意:共同编写的 Windows 桌面 Excel 在 2017年中引入，目前适用于 office 365 订阅服务器。 购买到 Office 2016 或更早版本的永久许可证用户当前不具有访问共同编写功能。 （Excel Online，适用于 Android 的 Excel，适用于 iOS、 Excel 和 Windows 应用商店中的 Excel Mobile 还支持共同编写）。
 
 ## <a name="see-also"></a>请参阅
-[Excel 解决方案](./excel-solutions.md)
+- [Excel 解决方案](./excel-solutions.md)
