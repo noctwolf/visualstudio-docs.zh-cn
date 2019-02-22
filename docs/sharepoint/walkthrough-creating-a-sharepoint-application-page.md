@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 802c20a21b624e868cddac4badfd8827ef765506
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866186"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630894"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>演练：创建 SharePoint 应用程序页
- 
+
 应用程序页是 ASP.NET 页面的一种专用的形式。 应用程序页包含与 SharePoint 母版页合并的内容。 有关详细信息，请参阅[为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)。
 
 本演练演示如何创建应用程序页并调试使用本地 SharePoint 站点。 此页显示每个用户具有创建或修改中的所有网站服务器场中的所有项。
@@ -153,5 +153,5 @@ ms.locfileid: "54866186"
 
 ## <a name="see-also"></a>请参阅
 
-[如何：创建应用程序页](../sharepoint/how-to-create-an-application-page.md)  
-[应用程序 _layouts 页上，键入](http://go.microsoft.com/fwlink/?LinkID=169274)
+[如何：创建应用程序页](../sharepoint/how-to-create-an-application-page.md)
+[Application _layouts 的页类型](http://go.microsoft.com/fwlink/?LinkID=169274)

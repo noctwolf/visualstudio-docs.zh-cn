@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 081f48f89b533862125069f751996c72a4cf00f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 734898fdaffe067025d45a0b4905443f87450d3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025639"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629568"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>在旧版语言服务中进行语法着色
 
@@ -63,11 +63,17 @@ Visual Studio 使用着色服务识别的语言的元素并将其用在编辑器
 >  除了使用的语言服务 colorizer，VSPackage 还可以使用常规用途的 Visual Studio 文本着色机制。 有关此机制的详细信息，请参阅[使用字体和颜色](../../extensibility/using-fonts-and-colors.md)。
 
 ## <a name="in-this-section"></a>本节内容
- [实现语法着色](../../extensibility/internals/implementing-syntax-coloring.md)编辑器如何访问语言服务的语法颜色设置和语言服务必须实现以支持语法突出显示的讨论。
+- [实现语法着色](../../extensibility/internals/implementing-syntax-coloring.md)
 
- [如何：使用内置的可着色项](../../extensibility/internals/how-to-use-built-in-colorable-items.md)演示了如何使用内置的可着色项从语言服务。
+ 讨论如何编辑器访问语言服务的语法颜色设置和语言服务必须实现此方法可以支持语法着色。
 
- [自定义可着色项](../../extensibility/internals/custom-colorable-items.md)讨论如何实现自定义可着色项。
+- [如何：使用内置的可着色项](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+
+ 演示如何使用内置的可着色项从语言服务。
+
+- [自定义可着色项](../../extensibility/internals/custom-colorable-items.md)
+
+ 讨论如何实现自定义可着色项。
 
 ## <a name="see-also"></a>请参阅
 

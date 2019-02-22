@@ -15,61 +15,61 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7e9c12af1cfbcbebe080e40dc5cbf83975c15080
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: c3a2b074e512dc9522af4ee05aecbec453ce7b8e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869861"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625291"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>如何：以编程方式向文档添加页眉和页脚
-  可以通过使用 <xref:Microsoft.Office.Interop.Word.Section> 的 <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> 属性和 <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> 属性将文本添加到文档中的页眉和页脚。 文档各部分均包含三个页眉和页脚：  
-  
-- <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>  
-  
-- <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterEvenPages>  
-  
-- <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterFirstPage>  
-  
-  对于文档级自定义项和 VSTO 外接程序，此过程有所不同。  
-  
-  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
-  
-## <a name="document-level-customizations"></a>文档级自定义项  
- 若要使用以下代码示例，请从项目中的 `ThisDocument` 类运行它们。  
-  
-### <a name="to-add-text-to-footers-in-the-document"></a>将文本添加到文档的页脚  
-  
-1.  以下代码示例设置要插入到文档各部分主页脚的文本字体，然后再将文本插入页脚。  
-  
+  可以通过使用 <xref:Microsoft.Office.Interop.Word.Section> 的 <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> 属性和 <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> 属性将文本添加到文档中的页眉和页脚。 文档各部分均包含三个页眉和页脚：
+
+- <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>
+
+- <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterEvenPages>
+
+- <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterFirstPage>
+
+  对于文档级自定义项和 VSTO 外接程序，此过程有所不同。
+
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
+
+## <a name="document-level-customizations"></a>文档级自定义项
+ 若要使用以下代码示例，请从项目中的 `ThisDocument` 类运行它们。
+
+### <a name="to-add-text-to-footers-in-the-document"></a>将文本添加到文档的页脚
+
+1.  以下代码示例设置要插入到文档各部分主页脚的文本字体，然后再将文本插入页脚。
+
      [!code-vb[Trin_VstcoreWordAutomation#114](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#114)]
-     [!code-csharp[Trin_VstcoreWordAutomation#114](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#114)]  
-  
-### <a name="to-add-text-to-headers-in-the-document"></a>将文本添加到文档的页眉  
-  
-1.  以下代码示例将添加一个字段，以在文档各个页眉中显示页码，然后设置段落对齐方式，使文本对齐到页眉的右侧。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#114](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#114)]
+
+### <a name="to-add-text-to-headers-in-the-document"></a>将文本添加到文档的页眉
+
+1.  以下代码示例将添加一个字段，以在文档各个页眉中显示页码，然后设置段落对齐方式，使文本对齐到页眉的右侧。
+
      [!code-vb[Trin_VstcoreWordAutomation#116](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#116)]
-     [!code-csharp[Trin_VstcoreWordAutomation#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#116)]  
-  
-## <a name="vsto-add-ins"></a>VSTO 外接程序  
- 若要使用以下代码示例，请从项目中的 `ThisAddIn` 类运行它们。  
-  
-### <a name="to-add-text-to-footers-in-a-document"></a>将文本添加到文档的页脚  
-  
-1.  以下代码示例设置要插入到文档各部分主页脚的文本字体，然后再将文本插入页脚。 此代码示例使用活动文档。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomation#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#116)]
+
+## <a name="vsto-add-ins"></a>VSTO 外接程序
+ 若要使用以下代码示例，请从项目中的 `ThisAddIn` 类运行它们。
+
+### <a name="to-add-text-to-footers-in-a-document"></a>将文本添加到文档的页脚
+
+1.  以下代码示例设置要插入到文档各部分主页脚的文本字体，然后再将文本插入页脚。 此代码示例使用活动文档。
+
      [!code-vb[Trin_VstcoreWordAutomationAddIn#114](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#114)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#114](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#114)]  
-  
-### <a name="to-add-text-to-headers-in-the-document"></a>将文本添加到文档的页眉  
-  
-1.  以下代码示例将添加一个字段，以在文档各个页眉中显示页码，然后设置段落对齐方式，使文本对齐到页眉的右侧。 此代码示例使用活动文档。  
-  
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#114](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#114)]
+
+### <a name="to-add-text-to-headers-in-the-document"></a>将文本添加到文档的页眉
+
+1.  以下代码示例将添加一个字段，以在文档各个页眉中显示页码，然后设置段落对齐方式，使文本对齐到页眉的右侧。 此代码示例使用活动文档。
+
      [!code-vb[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#116)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]  
-  
-## <a name="see-also"></a>请参阅  
- [如何：以编程方式创建新的文档](../vsto/how-to-programmatically-create-new-documents.md)   
- [如何：以编程方式扩展文档中的范围](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [如何：以编程方式遍历在文档中找到的项](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)  
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]
+
+## <a name="see-also"></a>请参阅
+- [如何：以编程方式创建新的文档](../vsto/how-to-programmatically-create-new-documents.md)
+- [如何：以编程方式扩展文档中的范围](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [如何：以编程方式遍历在文档中找到的项](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)

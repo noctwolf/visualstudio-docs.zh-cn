@@ -12,22 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2635488c970e0f2b134bf4d54fa6a364a5b30198
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6fd9871e794c2968bab3effce0717ea1cae508eb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004755"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603958"
 ---
 # <a name="wizard-support-for-nested-projects"></a>嵌套项目的向导支持
-IDE 将运行两个向导，可以实现嵌套项目的父项目：**新的项目**向导并**添加项**向导。  
-  
- 如果用户启动**新的项目**向导通过选择**添加项目**，然后单击**新项目**文件菜单或通过选择**添加**右键单击**新的项目**在解决方案资源管理器，IDE 将运行**AddProject**命令和父项目的实施**AddProject**命令返回模板项目文件中或具有组的上下文参数的向导 (.vsz) 文件。  
-  
- 同样，父项目的实现**AddItem**向导返回具有一组不同的上下文参数的.vsz 文件。  
-  
- 有关向导的详细信息，请参阅[向导 (。在 Vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)，[上下文参数](../../extensibility/internals/context-parameters.md)并[注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)。  
-  
-## <a name="see-also"></a>请参阅  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
- [嵌套项目](../../extensibility/internals/nesting-projects.md)
+IDE 将运行两个向导，可以实现嵌套项目的父项目：**新的项目**向导并**添加项**向导。
+
+ 如果用户启动**新的项目**向导通过选择**添加项目**，然后单击**新项目**文件菜单或通过选择**添加**右键单击**新的项目**在解决方案资源管理器，IDE 将运行**AddProject**命令和父项目的实施**AddProject**命令返回模板项目文件中或具有组的上下文参数的向导 (.vsz) 文件。
+
+ 同样，父项目的实现**AddItem**向导返回具有一组不同的上下文参数的.vsz 文件。
+
+ 有关向导的详细信息，请参阅[向导 (。在 Vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)，[上下文参数](../../extensibility/internals/context-parameters.md)并[注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)。
+
+## <a name="see-also"></a>请参阅
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>
+- [嵌套项目](../../extensibility/internals/nesting-projects.md)
