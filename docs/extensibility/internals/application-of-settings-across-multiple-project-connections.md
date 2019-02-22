@@ -10,30 +10,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d6810212b10052077ab5adeddbca69dbd5fb339
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7274f0daaf809116dc502a528fce1b540c2c53b2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54976269"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620734"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多个项目连接设置的应用程序
-源代码管理插件使用源控制插件 API 版本 1.2，生成可用于批处理操作执行相同的源代码管理操作跨多个项目或多个连接上下文。 若要消除冗余，每个项目对话框从用户体验，可以使用批处理。  
-  
- 如果用户选择多个项属于使用源控制插件 API 版本 1.1 （例如，在不同的文件共享计算机上两个 web 项目） 生成的源代码管理插件中的多个连接，并检查它们，用户将看到相同对话框中重复。 即使用户单击也会出现这种情况下**应用到所有**中的复选框的对话框中，因为 IDE 将重置其状态，以便每个连接上下文。  
-  
-## <a name="new-capability-flag"></a>新的功能标志  
- `SccBeginBatch`函数集`SCC_CAP_BATCH`标志，用于指示批处理操作正在进行。  
-  
-## <a name="new-functions"></a>新的函数  
-以下新函数支持批处理操作：  
-  
--   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)  
-  
--   [SccEndBatch](../../extensibility/sccendbatch-function.md)  
+源代码管理插件使用源控制插件 API 版本 1.2，生成可用于批处理操作执行相同的源代码管理操作跨多个项目或多个连接上下文。 若要消除冗余，每个项目对话框从用户体验，可以使用批处理。
 
-  
-`SCCBeginBatch`函数启动的源代码管理操作组。 `SccEndBatch`函数将关闭的组。 不能嵌套组。  
-  
-## <a name="see-also"></a>请参阅  
- [什么是源控制插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ 如果用户选择多个项属于使用源控制插件 API 版本 1.1 （例如，在不同的文件共享计算机上两个 web 项目） 生成的源代码管理插件中的多个连接，并检查它们，用户将看到相同对话框中重复。 即使用户单击也会出现这种情况下**应用到所有**中的复选框的对话框中，因为 IDE 将重置其状态，以便每个连接上下文。
+
+## <a name="new-capability-flag"></a>新的功能标志
+ `SccBeginBatch`函数集`SCC_CAP_BATCH`标志，用于指示批处理操作正在进行。
+
+## <a name="new-functions"></a>新的函数
+以下新函数支持批处理操作：
+
+-   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
+
+-   [SccEndBatch](../../extensibility/sccendbatch-function.md)
+
+
+`SCCBeginBatch`函数启动的源代码管理操作组。 `SccEndBatch`函数将关闭的组。 不能嵌套组。
+
+## <a name="see-also"></a>请参阅
+- [什么是源控制插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

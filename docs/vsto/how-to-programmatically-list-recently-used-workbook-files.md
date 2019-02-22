@@ -15,26 +15,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6451aa5427799f0905d19b7b90e87f8cca3d0bbd
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8246f42064a668959ea180c3a97cba643afbb57c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863183"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645272"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>如何：以编程方式列出最近使用的工作簿文件
-  <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>属性返回一个集合，包含显示最近使用的文件的 Microsoft Office Excel 列表中的所有文件的名称。 该列表的长度而异，具体取决于用户选择要保留的文件数量。 在范围内，可以显示结果。  
-  
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
-  
-## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>若要列出最近使用的工作簿范围对象中  
-  
-1.  循环遍历的最近使用的文件列表，并将名称显示在单元格相对于<xref:Microsoft.Office.Interop.Excel.Range>对象。  
-  
+  <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>属性返回一个集合，包含显示最近使用的文件的 Microsoft Office Excel 列表中的所有文件的名称。 该列表的长度而异，具体取决于用户选择要保留的文件数量。 在范围内，可以显示结果。
+
+ [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
+
+## <a name="to-list-recently-used-workbooks-in-a-range-object"></a>若要列出最近使用的工作簿范围对象中
+
+1.  循环遍历的最近使用的文件列表，并将名称显示在单元格相对于<xref:Microsoft.Office.Interop.Excel.Range>对象。
+
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]  
-  
-## <a name="see-also"></a>请参阅  
- [使用工作簿](../vsto/working-with-workbooks.md)   
- [NamedRange 控件](../vsto/namedrange-control.md)   
- [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
+     [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]
+
+## <a name="see-also"></a>请参阅
+- [使用工作簿](../vsto/working-with-workbooks.md)
+- [NamedRange 控件](../vsto/namedrange-control.md)
+- [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)

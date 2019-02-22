@@ -12,29 +12,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82424a62afa474d6db4df6933071523ce61343a5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2fc538b8a13458d82d23fe6039eb9c1e9406be52
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873946"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56599059"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>SharePoint 工具扩展的编程概念和功能
-  有几个重要的编程概念和与 Visual Studio 中的 SharePoint 工具相关的功能。 这些概念和功能在大多数 SharePoint 工具扩展中发挥重要作用。  
-  
+  有几个重要的编程概念和与 Visual Studio 中的 SharePoint 工具相关的功能。 这些概念和功能在大多数 SharePoint 工具扩展中发挥重要作用。
+
 ## <a name="in-this-section"></a>本节内容
- [调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)  
- 比较使用 SharePoint 客户端和从 SharePoint 工具扩展的 SharePoint 服务器对象模型，并提供有关如何创建信息*SharePoint 命令*以调入 SharePoint 服务器对象模型。  
-  
- [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)  
- 介绍 SharePoint 项目服务提供到 SharePoint 工具扩展，并提供用于检索不同种类的扩展中的服务说明的功能。  
-  
- [将自定义数据与 SharePoint 工具扩展相关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
- 介绍如何将自定义数据与某些类型的 SharePoint 工具扩展中的对象相关联。  
-  
+ [调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)
+
+ 比较使用 SharePoint 客户端和从 SharePoint 工具扩展的 SharePoint 服务器对象模型，并提供有关如何创建信息*SharePoint 命令*以调入 SharePoint 服务器对象模型。
+
+ [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)
+
+ 介绍 SharePoint 项目服务提供到 SharePoint 工具扩展，并提供用于检索不同种类的扩展中的服务说明的功能。
+
+ [将自定义数据与 SharePoint 工具扩展相关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
+
+ 介绍如何将自定义数据与某些类型的 SharePoint 工具扩展中的对象相关联。
+
 ## <a name="see-also"></a>请参阅
- [扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
- [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   
- [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [调试 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)   
- [部署 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
+- [扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)
+- [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [调试 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [部署 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

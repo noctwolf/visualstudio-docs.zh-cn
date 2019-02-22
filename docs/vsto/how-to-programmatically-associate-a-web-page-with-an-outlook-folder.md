@@ -14,22 +14,22 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c60ac58c59adaacd66a7c56b4c394d596cfd6b24
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e83f8b7f6bcdb790b5e545aa76426bc05f0735f5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871268"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56604292"
 ---
 # <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>如何：以编程方式将网页与 Outlook 文件夹相关联
-  此示例检查名为`HtmlView`Microsoft Office Outlook 中。 如果文件夹不存在，代码会创建该文件夹，并为其分配到 Web 页。 如果该文件夹存在，代码将显示该文件夹的内容。  
-  
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
-  
-## <a name="example"></a>示例  
- [!code-csharp[Trin_OL_HTMLFolder#1](../vsto/codesnippet/CSharp/Trin_OL_HTMLFolder/thisaddin.cs#1)]  
-  
-## <a name="see-also"></a>请参阅  
- [使用文件夹](../vsto/working-with-folders.md)   
- [如何：以编程方式按名称检索文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [如何：以编程方式创建自定义文件夹项](../vsto/how-to-programmatically-create-custom-folder-items.md)  
+  此示例检查名为`HtmlView`Microsoft Office Outlook 中。 如果文件夹不存在，代码会创建该文件夹，并为其分配到 Web 页。 如果该文件夹存在，代码将显示该文件夹的内容。
+
+ [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+
+## <a name="example"></a>示例
+ [!code-csharp[Trin_OL_HTMLFolder#1](../vsto/codesnippet/CSharp/Trin_OL_HTMLFolder/thisaddin.cs#1)]
+
+## <a name="see-also"></a>请参阅
+- [使用文件夹](../vsto/working-with-folders.md)
+- [如何：以编程方式按名称检索文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
+- [如何：以编程方式创建自定义文件夹项](../vsto/how-to-programmatically-create-custom-folder-items.md)
