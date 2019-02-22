@@ -7,16 +7,10 @@ ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a940aea1260090371b24c7ccdb0975a609b3d4d
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155768"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>在 Visual Studio 中评估应用性能
 
-分析和诊断工具有助于诊断内存和 CPU 使用率以及其他应用程序级别问题。 这些工具可用于累积一段时间内在调试器中运行应用程序的数据（例如变量值、函数调用和事件）。 可以查看代码执行期间不同点的应用程序状态。 
+分析和诊断工具有助于诊断内存和 CPU 使用率以及其他应用程序级别问题。 这些工具可用于累积一段时间内在调试器中运行应用程序的数据（例如变量值、函数调用和事件）。 可以查看代码执行期间不同点的应用程序状态。
 
 <ul class="panelContent cardsFTitle">
     <li>
