@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugCustomAttributes::Skip |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumCustomAttributes::Skip
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9525a96f1d5a5d7c6c31994058dabb6c051874c5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 372a32d83f0cebf69fd5e7795e083a272bbeb588
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943950"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679822"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
-跳过枚举序列中的自定义属性的指定的数目。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-```csharp  
-int Skip(  
-   uint celt  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `celt`  
- [in]要跳过的元素数。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果`celt`大于剩余的元素数; 否则，返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 如果`celt`指定的值数比大剩余元素的枚举设置为结束和`S_FALSE`返回。  
-  
-## <a name="see-also"></a>请参阅  
- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
+跳过枚举序列中的自定义属性的指定的数目。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+```csharp
+int Skip(
+   uint celt
+);
+```
+
+#### <a name="parameters"></a>参数
+ `celt`
+
+ [in]要跳过的元素数。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果`celt`大于剩余的元素数; 否则，返回错误代码。
+
+## <a name="remarks"></a>备注
+ 如果`celt`指定的值数比大剩余元素的枚举设置为结束和`S_FALSE`返回。
+
+## <a name="see-also"></a>请参阅
+- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

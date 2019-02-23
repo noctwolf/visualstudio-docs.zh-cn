@@ -10,33 +10,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76229d86c973c9ef512ecf5039ae420085129160
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d5df6dc3147a92f14d6858a82a6d997442dec30b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029236"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702559"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger 方法
-检索的所有数组<xref:System.Threading.Tasks.TaskScheduler>当前处于活动状态的对象。  
-  
- **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **程序集：** mscorlib (在*mscorlib.dll*)  
-  
- 无法从.NET Framework 来访问此内部成员，因为以下语法提供通用中间语言 (CIL)。  
-  
-## <a name="syntax"></a>语法  
-  
-```csharp  
-.method assembly hidebysig static class System.Threading.Tasks.TaskScheduler[] GetTaskSchedulersForDebugger() cil managed  
-```  
-  
-## <a name="return-value"></a>返回值  
- 所有的数组<xref:System.Threading.Tasks.TaskScheduler>在此当前处于活动状态的对象<xref:System.AppDomain>。  
-  
-## <a name="remarks"></a>备注  
- 此方法不是线程安全且不应使用它与其他实例同时<xref:System.Threading.Tasks.TaskScheduler>。 仅当在调试器已挂起的所有其他线程时，请从调试器中调用此方法。  
-  
-## <a name="see-also"></a>请参阅  
- [TaskScheduler 类](../../extensibility/debugger/taskscheduler-class-internal-members.md)
+检索的所有数组<xref:System.Threading.Tasks.TaskScheduler>当前处于活动状态的对象。
+
+ **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **程序集：** mscorlib (在*mscorlib.dll*)
+
+ 无法从.NET Framework 来访问此内部成员，因为以下语法提供通用中间语言 (CIL)。
+
+## <a name="syntax"></a>语法
+
+```csharp
+.method assembly hidebysig static class System.Threading.Tasks.TaskScheduler[] GetTaskSchedulersForDebugger() cil managed
+```
+
+## <a name="return-value"></a>返回值
+ 所有的数组<xref:System.Threading.Tasks.TaskScheduler>在此当前处于活动状态的对象<xref:System.AppDomain>。
+
+## <a name="remarks"></a>备注
+ 此方法不是线程安全且不应使用它与其他实例同时<xref:System.Threading.Tasks.TaskScheduler>。 仅当在调试器已挂起的所有其他线程时，请从调试器中调用此方法。
+
+## <a name="see-also"></a>请参阅
+- [TaskScheduler 类](../../extensibility/debugger/taskscheduler-class-internal-members.md)

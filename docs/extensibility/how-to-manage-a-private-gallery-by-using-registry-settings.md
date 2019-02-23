@@ -11,61 +11,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d75976ba9c677bb9b8f6c32623f81834471e10a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35a5c80785aa5d7f3e38dfb52b503c42d788e557
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021515"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723144"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>如何：使用注册表设置管理专用库
-如果你是管理员或独立 Shell 扩展开发人员，您可以控制对控件、 模板和工具在 Visual Studio 库、 示例库或专用库的访问。 若要使库可用或不可用，请创建 *.pkgdef*文件，用于描述已修改的注册表项和其值。  
-  
-## <a name="manage-private-galleries"></a>管理专用库  
- 您可以创建 *.pkgdef*文件以控制对多台计算机上的库的访问。 此文件必须具有以下格式。  
-  
-```  
-[$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]  
-@={URI}  (REG_SZ)  
-Disabled=0 | 1 (DWORD)  
-Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)  
-Protocol=Atom Feed|Sharepoint (REG_SZ)  
-DisplayName={DisplayName} (REG_SZ)  
-DisplayNameResourceID={ID} (REG_SZ)  
-DisplayNamePackageGuid={GUID} (REG_SZ)  
-  
-```  
-  
- `Repositories`键是指要启用或禁用库。 Visual Studio 库和示例库使用以下存储库的 Guid:  
-  
-- Visual Studio 库：0F45E408-7995-4375-9485-86B8DB553DC9  
-  
-- 示例库：AEB9CB40-D8E6-4615-B52C-27E307F8506C  
-  
-  `Disabled`值是可选的。 默认情况下，启用了库。  
-  
-  `Priority`值确定在其中对库中列出的顺序**选项**对话框。 Visual Studio 库具有优先级为 10，示例库具有优先级 20。 专用库开始按 100 的优先级。 如果多个库具有相同的优先级值，其本地化的值确定它们的显示的顺序`DisplayName`属性。  
-  
-  `Protocol`值是必需的基于 Atom 的或基于 SharePoint 的库。  
-  
-  要么`DisplayName`，和 / 或`DisplayNameResourceID`和`DisplayNamePackageGuid`，必须指定。 如果已指定所有，则`DisplayNameResourceID`和`DisplayNamePackageGuid`对使用。  
-  
-## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>禁用 Visual Studio 库使用.pkgdef 文件  
- 您可以禁用库中的 *.pkgdef*文件。 以下条目可以禁用 Visual Studio 库：  
-  
-```  
-[$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]  
-"Disabled"=dword:00000001  
-  
-```  
-  
- 以下条目可以禁用示例库：  
-  
-```  
-[$RootKey$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]  
-"Disabled"=dword:00000001  
-  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [专用库](../extensibility/private-galleries.md)
+如果你是管理员或独立 Shell 扩展开发人员，您可以控制对控件、 模板和工具在 Visual Studio 库、 示例库或专用库的访问。 若要使库可用或不可用，请创建 *.pkgdef*文件，用于描述已修改的注册表项和其值。
+
+## <a name="manage-private-galleries"></a>管理专用库
+ 您可以创建 *.pkgdef*文件以控制对多台计算机上的库的访问。 此文件必须具有以下格式。
+
+```
+[$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
+@={URI}  (REG_SZ)
+Disabled=0 | 1 (DWORD)
+Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
+Protocol=Atom Feed|Sharepoint (REG_SZ)
+DisplayName={DisplayName} (REG_SZ)
+DisplayNameResourceID={ID} (REG_SZ)
+DisplayNamePackageGuid={GUID} (REG_SZ)
+
+```
+
+ `Repositories`键是指要启用或禁用库。 Visual Studio 库和示例库使用以下存储库的 Guid:
+
+- Visual Studio 库：0F45E408-7995-4375-9485-86B8DB553DC9
+
+- 示例库：AEB9CB40-D8E6-4615-B52C-27E307F8506C
+
+  `Disabled`值是可选的。 默认情况下，启用了库。
+
+  `Priority`值确定在其中对库中列出的顺序**选项**对话框。 Visual Studio 库具有优先级为 10，示例库具有优先级 20。 专用库开始按 100 的优先级。 如果多个库具有相同的优先级值，其本地化的值确定它们的显示的顺序`DisplayName`属性。
+
+  `Protocol`值是必需的基于 Atom 的或基于 SharePoint 的库。
+
+  要么`DisplayName`，和 / 或`DisplayNameResourceID`和`DisplayNamePackageGuid`，必须指定。 如果已指定所有，则`DisplayNameResourceID`和`DisplayNamePackageGuid`对使用。
+
+## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>禁用 Visual Studio 库使用.pkgdef 文件
+ 您可以禁用库中的 *.pkgdef*文件。 以下条目可以禁用 Visual Studio 库：
+
+```
+[$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]
+"Disabled"=dword:00000001
+
+```
+
+ 以下条目可以禁用示例库：
+
+```
+[$RootKey$\ExtensionManager\Repositories\{AEB9CB40-D8E6-4615-B52C-27E307F8506C}]
+"Disabled"=dword:00000001
+
+```
+
+## <a name="see-also"></a>请参阅
+- [专用库](../extensibility/private-galleries.md)

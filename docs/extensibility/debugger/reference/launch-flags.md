@@ -1,7 +1,7 @@
 ---
 title: LAUNCH_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - LAUNCH_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d793adfd8be2fb86f51e94cfd43e8dbcbd75036f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449991"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680174"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 指定调试启动标志。
@@ -44,17 +44,13 @@ public enum enum_LAUNCH_FLAGS {
 ```
 
 ## <a name="members"></a>成员
-LAUNCH_DEBUG  
-启动调试的过程。
+LAUNCH_DEBUG 启动调试的过程。
 
-LAUNCH_NODEBUG  
-启动而不进行调试的进程。
+LAUNCH_NODEBUG 启动而不进行调试的进程。
 
-LAUNCH_ENABLE_ENC  
-不推荐使用，不要使用。
+不推荐使用 LAUNCH_ENABLE_ENC，不要使用。
 
-LAUNCH_MERGE_ENV  
-启动进程并将合并与启动主机环境。
+LAUNCH_MERGE_ENV 启动进程，并将合并与启动主机环境。
 
 ## <a name="remarks"></a>备注
 这些值会作为参数传递[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法。
@@ -69,5 +65,5 @@ LAUNCH_MERGE_ENV
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

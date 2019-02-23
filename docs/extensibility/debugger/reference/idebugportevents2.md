@@ -1,7 +1,7 @@
 ---
 title: IDebugPortEvents2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPortEvents2
 helpviewer_keywords:
@@ -12,47 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 860b03b26c9da4975d4482412214dcc69199de47
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fb6a13b47013153de284ad1997a484efb3be1c98
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985141"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712458"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
-此接口通知的过程和程序创建和析构的特定端口上的侦听器 （通常会话调试管理器 [SDM] 或调试引擎）。 此信息可以用于显示进程和端口上运行的程序的实时视图。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-IDebugPortEvents2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>实施者的说明  
- Visual Studio 通常实现此接口以接收有关程序创建和析构的通知。 调试引擎还可以实现此接口可侦听对此类端口事件。  
-  
-## <a name="notes-for-callers"></a>调用方的说明  
- 所有[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)接口可以查询有关<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>接口。 然后<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.FindConnectionPoint%2A>方法`IDebugPortEvents2`中称为<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>接口，用于获取<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>接口。 最后，<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>中的方法<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>接口调用以通过将事件发送[事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)方法。  
-  
-## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
- 下表显示的方法`IDebugPortEvents2`。  
-  
-|方法|描述|  
-|------------|-----------------|  
-|[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|将发送描述的创建和析构的流程和端口上的计划事件。|  
-  
-## <a name="remarks"></a>备注  
- `IDebugPortEvents2` 此外可供 SDM 来调试正在调试的进程中运行的程序。  
-  
- 此接口传递给 SDM 端口事件。  
-  
-## <a name="requirements"></a>要求  
- 标头： msdbg.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>请参阅  
- [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
+此接口通知的过程和程序创建和析构的特定端口上的侦听器 （通常会话调试管理器 [SDM] 或调试引擎）。 此信息可以用于显示进程和端口上运行的程序的实时视图。
+
+## <a name="syntax"></a>语法
+
+```
+IDebugPortEvents2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>实施者的说明
+ Visual Studio 通常实现此接口以接收有关程序创建和析构的通知。 调试引擎还可以实现此接口可侦听对此类端口事件。
+
+## <a name="notes-for-callers"></a>调用方的说明
+ 所有[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)接口可以查询有关<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>接口。 然后<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.FindConnectionPoint%2A>方法`IDebugPortEvents2`中称为<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>接口，用于获取<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>接口。 最后，<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>中的方法<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>接口调用以通过将事件发送[事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)方法。
+
+## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
+ 下表显示的方法`IDebugPortEvents2`。
+
+|方法|描述|
+|------------|-----------------|
+|[Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)|将发送描述的创建和析构的流程和端口上的计划事件。|
+
+## <a name="remarks"></a>备注
+ `IDebugPortEvents2` 此外可供 SDM 来调试正在调试的进程中运行的程序。
+
+ 此接口传递给 SDM 端口事件。
+
+## <a name="requirements"></a>要求
+ 标头： msdbg.h
+
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop
+
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>请参阅
+- [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

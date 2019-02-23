@@ -1,7 +1,7 @@
 ---
 title: BP_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81fa3cf9504c4b883a075999fa1993ea0e8e8529
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fe346d708110cf16b85e84d61aeb25ee335c0e96
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315724"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688428"
 ---
 # <a name="bpflags"></a>BP_FLAGS
 提供了可用于设置一个断点时指定的附加信息的可选标志。
@@ -42,14 +42,11 @@ public enum enum_BP_FLAGS {
 ```
 
 ## <a name="members"></a>成员
-BP_FLAG_NONE  
-不指定任何断点标志。
+BP_FLAG_NONE 指定任何断点标志。
 
-BP_FLAG_MAP_DOCPOSITION  
-指定调试引擎 (DE) 应映射使用的文档位置断点。 这是仅适用于面向脚本的源代码文件，如 Active Server Pages (ASP) 中设置断点。
+BP_FLAG_MAP_DOCPOSITION 指定调试引擎 (DE) 应映射使用的文档位置断点。 这是仅适用于面向脚本的源代码文件，如 Active Server Pages (ASP) 中设置断点。
 
-BP_FLAG_DONT_STOP  
-指定调试引擎中，应处理断点，但是，调试引擎最终应接着往下看 (即[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)事件对象不应在发送)。 此标志用于主要与跟踪点一起使用。
+BP_FLAG_DONT_STOP 指定断点应处理由调试引擎中，但调试引擎最终应接着往下看 (即[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)事件对象不应在发送)。 此标志用于主要与跟踪点一起使用。
 
 ## <a name="remarks"></a>备注
 用于`dwFlags`的成员[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)并[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构。
@@ -64,7 +61,7 @@ BP_FLAG_DONT_STOP
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
-[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)  
-[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
+- [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)

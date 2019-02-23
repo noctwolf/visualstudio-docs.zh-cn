@@ -10,17 +10,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21ebfb4babc32642c37d1a8ccf469a1a5c37046e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 044bf36845be70290291b79dee255c452f56f0a0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982541"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694408"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>在编辑器中的旧接口
-可以从旧式界面访问 Visual Studio 编辑器。 Visual Studio SDK 包括适配器称为*填充程序*，它实现了这些接口，以便与新编辑器。 不过，我们建议你更新旧代码，以使用新编辑器 API。 你的代码将更好地执行，可以使用 Windows Presentation Foundation (WPF) 和 Managed Extensibility Framework (MEF) 等新技术。  
+可以从旧式界面访问 Visual Studio 编辑器。 Visual Studio SDK 包括适配器称为*填充程序*，它实现了这些接口，以便与新编辑器。 不过，我们建议你更新旧代码，以使用新编辑器 API。 你的代码将更好地执行，可以使用 Windows Presentation Foundation (WPF) 和 Managed Extensibility Framework (MEF) 等新技术。
 
-## <a name="related-topics"></a>相关主题  
+## <a name="related-topics"></a>相关主题
 
 | 标题 | 描述 |
 | - | - |

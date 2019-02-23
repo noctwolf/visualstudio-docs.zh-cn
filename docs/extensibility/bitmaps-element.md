@@ -11,57 +11,57 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c06100e666d73341753b6268180224d277e3608
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d247a0df29cb14eec6dffa5e362f23693b59cc99
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916482"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699634"
 ---
 # <a name="bitmaps-element"></a>Bitmaps 元素
-组[位图元素](../extensibility/bitmap-element.md)元素。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-<Bitmaps>  
-  <Bitmap>... </Bitmap>  
-  <Bitmap>... </Bitmap>  
-</Bitmaps>  
-```  
-  
-## <a name="attributes-and-elements"></a>特性和元素  
- 下列各节描述了特性、子元素和父元素。  
-  
-### <a name="attributes"></a>特性  
-  
-|特性|描述|  
-|---------------|-----------------|  
-|条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
-  
-### <a name="child-elements"></a>子元素  
-  
-|元素|描述|  
-|-------------|-----------------|  
-|[Bitmaps 元素](../extensibility/bitmaps-element.md)|位图元素进行分组。|  
-|[Bitmap 元素](../extensibility/bitmap-element.md)|定义位图。|  
-  
-### <a name="parent-elements"></a>父元素  
-  
-|元素|描述|  
-|-------------|-----------------|  
-|[Commands 元素](../extensibility/commands-element.md)|表示 VSPackage 工具栏上的命令的集合。|  
-  
-## <a name="example"></a>示例  
-  
-```  
-<Bitmaps>  
-  <Bitmap guid="guidWidgetIcons" href="WidgetToolbarIcons_32.bmp" />  
-  <Bitmap guid="guidWidgetIcons2" resID="IDBMP_WIDGETICONS"  
-    usedList="1, 2, 3, 4"/>  
-</Bitmaps>  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
+组[位图元素](../extensibility/bitmap-element.md)元素。
+
+## <a name="syntax"></a>语法
+
+```
+<Bitmaps>
+  <Bitmap>... </Bitmap>
+  <Bitmap>... </Bitmap>
+</Bitmaps>
+```
+
+## <a name="attributes-and-elements"></a>特性和元素
+ 下列各节描述了特性、子元素和父元素。
+
+### <a name="attributes"></a>特性
+
+|特性|描述|
+|---------------|-----------------|
+|条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+
+### <a name="child-elements"></a>子元素
+
+|元素|描述|
+|-------------|-----------------|
+|[Bitmaps 元素](../extensibility/bitmaps-element.md)|位图元素进行分组。|
+|[Bitmap 元素](../extensibility/bitmap-element.md)|定义位图。|
+
+### <a name="parent-elements"></a>父元素
+
+|元素|描述|
+|-------------|-----------------|
+|[Commands 元素](../extensibility/commands-element.md)|表示 VSPackage 工具栏上的命令的集合。|
+
+## <a name="example"></a>示例
+
+```
+<Bitmaps>
+  <Bitmap guid="guidWidgetIcons" href="WidgetToolbarIcons_32.bmp" />
+  <Bitmap guid="guidWidgetIcons2" resID="IDBMP_WIDGETICONS"
+    usedList="1, 2, 3, 4"/>
+</Bitmaps>
+```
+
+## <a name="see-also"></a>请参阅
+- [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

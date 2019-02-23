@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetArrayTypeFromAddress
 - IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0878f4224d024e353c2c7ab798450a65e9677178
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d5d6e06a30d6c76cc36bf7a7d64f97016bc60803
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413340"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712731"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 检索类型信息指定给出其调试地址的数组。
 
 ## <a name="syntax"></a>语法
 
-```
-[C++]
+```cpp
 HRESULT GetArrayTypeFromAddress(
     IDebugAddress* pAddress,
     BYTE*          pSig,
@@ -33,8 +32,7 @@ HRESULT GetArrayTypeFromAddress(
 );
 ```
 
-```
-[C#]
+```csharp
 int GetArrayTypeFromAddress(
     IDebugAddress   pAddress,
     int[]           pSig,
@@ -44,17 +42,21 @@ int GetArrayTypeFromAddress(
 ```
 
 #### <a name="parameters"></a>参数
-`pAddress`  
-[in]调试地址由[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
+`pAddress`
 
-`pSig`  
-[in]要检查的数组。
+ [in]调试地址由[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
 
-`dwSigLength`  
-[in]以字节为单位的长度`pSig`数组。
+`pSig`
 
-`ppField`  
-[out]返回数组类型，由表示[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)接口。
+ [in]要检查的数组。
+
+`dwSigLength`
+
+ [in]以字节为单位的长度`pSig`数组。
+
+`ppField`
+
+ [out]返回数组类型，由表示[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)接口。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -96,4 +98,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

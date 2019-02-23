@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetNameFromToken | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetNameFromToken
 - GetNameFromToken
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f9a07b7c6e1abcf8bf63fb8f6bd61ec82d7e9b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 6122e134fda4b7704385609fec8fa7cd25665968
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413405"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682526"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
 返回与给定其元数据对象的指定标记关联的名称。
@@ -40,14 +40,17 @@ int GetNameFromToken (
 ```
 
 #### <a name="parameters"></a>参数
-`pMetadataImport`  
-[in]包含元数据信息的对象。
+`pMetadataImport`
 
-`dwToken`  
-[in]若要将名为的标记。
+ [in]包含元数据信息的对象。
 
-`pbstrName`  
-[out]对应于令牌的名称。
+`dwToken`
+
+ [in]若要将名为的标记。
+
+`pbstrName`
+
+ [out]对应于令牌的名称。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -120,4 +123,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

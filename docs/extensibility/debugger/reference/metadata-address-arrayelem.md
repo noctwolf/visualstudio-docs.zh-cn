@@ -1,7 +1,7 @@
 ---
 title: METADATA_ADDRESS_ARRAYELEM | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - METADATA_ADDRESS_ARRAYELEM
 helpviewer_keywords:
@@ -12,14 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7cfd9204dfbcc2254da6a4539e6b18d90c156c4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2b08d3d25912123d62de9a096b810f42d1418aa6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632792"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707895"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
+
 此结构表示一个数组中的数组元素。
 
 ## <a name="syntax"></a>语法
@@ -39,12 +40,15 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 ```
 
 ## <a name="terms"></a>术语
-tokMethod  
+
+tokMethod
+
 数组的 ID 此元素是的一部分。
 
 [C + +]`_mdToken`是`typedef`适用于 32 位`int`。
 
-dwIndex  
+dwIndex
+
 此元素的数组中的索引。
 
 ## <a name="remarks"></a>备注
@@ -58,6 +62,7 @@ dwIndex
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)  
-[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+
+- [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

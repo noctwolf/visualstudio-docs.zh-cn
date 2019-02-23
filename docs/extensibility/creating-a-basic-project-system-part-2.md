@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3650f59f4ad9fe690064d9972b3280bf5bbd15d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318480"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681304"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>创建基本项目系统，第 2 部分
 在此系列中，在第一个演练[创建基本项目系统，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，演示如何创建基本项目系统。 本演练中的基础上基本项目系统添加 Visual Studio 模板、 属性页中和其他功能。 在开始此之前，必须完成第一个演练。
@@ -40,7 +40,7 @@ ms.locfileid: "56318480"
 > 在本演练中的步骤基于 C# 项目。 但是，除了如文件扩展名和代码的详细信息，可以使用相同的步骤对于 Visual Basic 项目。
 
 ## <a name="create-a-visual-studio-template"></a>创建 Visual Studio 模板
-[创建基本项目系统，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)演示如何创建基本项目模板，并将其添加到项目系统。 它还演示如何使用与 Visual Studio 中注册此模板<xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute>属性，它将写入的完整路径*\\Templates\Projects\SimpleProject\\*系统中的文件夹注册表。
+- [创建基本项目系统，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)演示如何创建基本项目模板，并将其添加到项目系统。 它还演示如何使用与 Visual Studio 中注册此模板<xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute>属性，它将写入的完整路径*\\Templates\Projects\SimpleProject\\*系统中的文件夹注册表。
 
 使用 Visual Studio 模板 (*.vstemplate*文件) 而不是基本的项目模板，您可以控制模板中的显示方式**新项目**对话框和模板参数的工作方式替换。 一个 *.vstemplate*文件是一个 XML 文件，描述源代码文件的方式使用项目系统模板创建项目时将包括在内。 通过收集生成的项目系统本身 *.vstemplate*文件和中的源文件 *.zip*文件中，并通过复制来部署 *.zip*是一个位置Visual studio 已知。 在本演练后面的更详细地说明了此过程。
 
@@ -271,7 +271,7 @@ Visual Studio 模板不包含路径信息。 因此，模板 *.zip*文件必须�
     ![简单项目控制台节点](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
 
 ## <a name="substitute-project-template-parameters"></a>替换项目的模板参数
-[创建基本项目系统，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)介绍了如何覆盖`ProjectNode.AddFileFromTemplate`方法来执行一种基本类型的模板参数替换。 本部分介绍如何使用更复杂的 Visual Studio 模板参数。
+- [创建基本项目系统，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)介绍了如何覆盖`ProjectNode.AddFileFromTemplate`方法来执行一种基本类型的模板参数替换。 本部分介绍如何使用更复杂的 Visual Studio 模板参数。
 
 当使用中的 Visual Studio 模板创建项目**新的项目**对话框中，模板参数替换为字符串以自定义项目。 模板参数是一个特殊的标记，开始和结束的美元符号，例如，$time$。 以下两个参数是用于启用基于模板的项目中的自定义特别有用：
 

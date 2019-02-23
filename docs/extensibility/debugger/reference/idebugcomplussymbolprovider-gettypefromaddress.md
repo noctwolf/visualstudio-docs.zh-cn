@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetTypeFromAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetTypeFromAddress
 - GetTypeFromAddress
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21fd08a0a7163a61eeb03d8488076475271ed2e3
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 48e1e90c69688cf1ef5388e74060e38087d50920
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413093"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691405"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 检索到给出其调试地址符号类型。
@@ -38,11 +38,13 @@ int GetTypeFromAddress(
 ```
 
 #### <a name="parameters"></a>参数
-`pAddress`  
-[in]由表示的调试地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
+`pAddress`
 
-`ppField`  
-[out]返回数组类型，它是由[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)接口。
+ [in]由表示的调试地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
+
+`ppField`
+
+ [out]返回数组类型，它是由[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)接口。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -116,4 +118,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

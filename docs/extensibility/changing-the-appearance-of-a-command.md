@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6446df8f1f3334cac9ebb6e0501a42b3da408455
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317076"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691340"
 ---
 # <a name="change-the-appearance-of-a-command"></a>更改命令的外观
 通过更改命令的外观，可以向用户提供反馈。 例如，可能想要看起来不同，它不可用时的命令。 可以使命令可用或不可用、 隐藏或显示它们，或选中或取消它们选中的菜单上。
@@ -85,7 +85,7 @@ ms.locfileid: "56317076"
 8. 上**工具**菜单现在应看到**新文本**。 单击**新文本**。 现在，该命令应灰显。
 
 ## <a name="see-also"></a>请参阅
-[命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)  
-[Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
-[扩展菜单和命令](../extensibility/extending-menus-and-commands.md)  
-[Visual Studio 命令表 (。Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
+- [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)
+- [Visual Studio 命令表 (。Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

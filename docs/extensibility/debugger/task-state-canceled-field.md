@@ -10,30 +10,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f001b62dd378fec0f869409ac62d9d591aa1366
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b022daee6e71cd0728c2c161eb3e75a865304d04
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937452"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719712"
 ---
 # <a name="taskstatecanceled-field"></a>TASK_STATE_CANCELED 字段
-任务已取消之前它已达到运行状态，或其确认其取消和完成且未出现异常。  
-  
- **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **程序集：** mscorlib （在 mscorlib.dll 中)  
-  
- 无法从.NET Framework 来访问此内部成员，因为以下语法提供通用中间语言 (CIL)。  
-  
-## <a name="syntax"></a>语法  
-  
-```csharp  
-.field static assembly literal int32 TASK_STATE_CANCELED = int32(0x00800000)  
-```  
-  
-## <a name="remarks"></a>备注  
- 如果[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)字段包含此值，<xref:System.Threading.Tasks.Task.Status%2A>属性返回<xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>。  
-  
-## <a name="see-also"></a>请参阅  
- [Task 类](../../extensibility/debugger/task-class-internal-members.md)
+任务已取消之前它已达到运行状态，或其确认其取消和完成且未出现异常。
+
+ **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **程序集：** mscorlib （在 mscorlib.dll 中)
+
+ 无法从.NET Framework 来访问此内部成员，因为以下语法提供通用中间语言 (CIL)。
+
+## <a name="syntax"></a>语法
+
+```csharp
+.field static assembly literal int32 TASK_STATE_CANCELED = int32(0x00800000)
+```
+
+## <a name="remarks"></a>备注
+ 如果[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)字段包含此值，<xref:System.Threading.Tasks.Task.Status%2A>属性返回<xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>。
+
+## <a name="see-also"></a>请参阅
+- [Task 类](../../extensibility/debugger/task-class-internal-members.md)

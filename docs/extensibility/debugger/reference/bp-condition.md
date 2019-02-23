@@ -1,7 +1,7 @@
 ---
 title: BP_CONDITION | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_CONDITION
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7cc7231e218af855d3cc24eebe694b21ba1b40a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 9c37699e965698b4f5700bc1994ba25c8c0bbbd5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315464"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722312"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
 描述触发断点的条件。
@@ -45,20 +45,15 @@ public struct BP_CONDITION {
 ```
 
 ## <a name="members"></a>成员
-`pThread`  
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示包含断点的应用程序在活动线程。
+`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示包含断点的应用程序在活动线程。
 
-`styleCondition`  
-中的值[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)描述此断点条件的样式的枚举。
+`styleCondition` 中的值[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)描述此断点条件的样式的枚举。
 
-`bstrContext`  
-断点的位置。
+`bstrContext` 断点的位置。
 
-`bstrCondition`  
-触发断点的条件。
+`bstrCondition` 触发断点的条件。
 
-`nRadix`  
-用于评估任何数字信息的基数。
+`nRadix` 用于评估任何数字信息的基数。
 
 ## <a name="remarks"></a>备注
 此结构是的成员[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)并[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构。
@@ -73,10 +68,10 @@ public struct BP_CONDITION {
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
-[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)  
-[SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)  
-[SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)  
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)  
-[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)
+- [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+- [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)
+- [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)
+- [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)

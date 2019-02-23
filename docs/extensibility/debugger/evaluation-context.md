@@ -11,34 +11,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b48d38b533fc53724ec7b9da6b7608a01f8fcd24
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 203692978afb05fcaeb3e91d557d3bf50e037d10
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038404"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695943"
 ---
 # <a name="evaluation-context"></a>评估上下文
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
-  
- 当调试引擎 (DE) 调用表达式计算器 (EE) 三个参数，传递给[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)确定用于查找和评估符号，上下文下, 表中所示。  
-  
-## <a name="arguments"></a>自变量  
-  
-|参数|描述|  
-|--------------|-----------------|  
-|`pSymbolProvider`|[IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)接口指定的符号处理程序 (SH) 要用来标识该符号。|  
-|`pAddress`|[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)指定当前执行点的接口。 此接口查找包含要执行的代码的方法。|  
-|`pBinder`|[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)查找值和类型的给定名称的符号的接口。|  
-  
- `IDebugParsedExpression::EvaluateSync` 返回[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)表示生成的值和其类型的接口。  
-  
-## <a name="see-also"></a>请参阅  
- [键表达式计算器接口](../../extensibility/debugger/key-expression-evaluator-interfaces.md)   
- [显示局部](../../extensibility/debugger/displaying-locals.md)   
- [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
- [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)   
- [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)   
- [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+
+ 当调试引擎 (DE) 调用表达式计算器 (EE) 三个参数，传递给[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)确定用于查找和评估符号，上下文下, 表中所示。
+
+## <a name="arguments"></a>自变量
+
+|参数|描述|
+|--------------|-----------------|
+|`pSymbolProvider`|[IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)接口指定的符号处理程序 (SH) 要用来标识该符号。|
+|`pAddress`|[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)指定当前执行点的接口。 此接口查找包含要执行的代码的方法。|
+|`pBinder`|[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)查找值和类型的给定名称的符号的接口。|
+
+ `IDebugParsedExpression::EvaluateSync` 返回[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)表示生成的值和其类型的接口。
+
+## <a name="see-also"></a>请参阅
+- [键表达式计算器接口](../../extensibility/debugger/key-expression-evaluator-interfaces.md)
+- [显示局部](../../extensibility/debugger/displaying-locals.md)
+- [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)
+- [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)
+- [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)
+- [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)
+- [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)

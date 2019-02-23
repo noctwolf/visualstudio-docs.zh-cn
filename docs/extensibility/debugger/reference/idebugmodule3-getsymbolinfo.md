@@ -1,7 +1,7 @@
 ---
 title: IDebugModule3::GetSymbolInfo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugModule3::GetSymbolInfo
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: adffeb018bfaa597d399042ef9651965674f92bb
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: c5fedebe6a8e411e09b527841bd0ded3854749ae
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450136"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717437"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 检索的符号，以及搜索每个路径的结果的搜索路径的列表。
@@ -40,11 +40,13 @@ int GetSymbolInfo(
 ```
 
 #### <a name="parameters"></a>参数
-`dwFields`  
-[in]中的标志的组合[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)枚举，它指定的哪些字段`pInfo`要填充的。
+`dwFields`
 
-`pInfo`  
-[out]一个[MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)其成员是否使用指定的信息填充的结构。 如果这是一个 null 值，此方法返回`E_INVALIDARG`。
+ [in]中的标志的组合[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)枚举，它指定的哪些字段`pInfo`要填充的。
+
+`pInfo`
+
+ [out]一个[MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)其成员是否使用指定的信息填充的结构。 如果这是一个 null 值，此方法返回`E_INVALIDARG`。
 
 ## <a name="return-value"></a>返回值
 如果此方法成功，它将返回`S_OK`; 否则为它将返回错误代码。
@@ -81,12 +83,12 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\symbols\user32.pdb...找不到文件。**  
-**c:\winnt\symbols\user32.pdb...版本不匹配。**  
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb...加载符号。**
+**c:\symbols\user32.pdb...找不到文件。** 
+ **c:\winnt\symbols\user32.pdb...版本不匹配。** 
+ ** \\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb...加载符号。**
 
 ## <a name="see-also"></a>请参阅
 
-[SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)  
-[MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)  
-[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)
+- [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)
+- [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)
+- [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

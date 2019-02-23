@@ -13,39 +13,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bae9005c8acc1272c8ca2142f929bffc03c54e16
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7cd18443e36a48967b4eb9fdf24f8d5e7869c323
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033475"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700141"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 元素（Visual Studio 模板）
-将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。  
-  
- \<VSTemplate>  
- \<TemplateData>  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-<TemplateData>  
-    <Name> ... </Name>  
-    <Description> ... </Description>  
-    <Icon> ... </Icon>  
-    <ProjectType> ... </ProjectType>  
-    ...  
-</TemplateData>  
-```  
-  
-## <a name="attributes-and-elements"></a>特性和元素  
- 下列各节描述了特性、子元素和父元素。  
-  
-### <a name="attributes"></a>特性  
- 无。  
-  
-### <a name="child-elements"></a>子元素  
-  
+将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。
+
+ \<VSTemplate> \<TemplateData>
+
+## <a name="syntax"></a>语法
+
+```
+<TemplateData>
+    <Name> ... </Name>
+    <Description> ... </Description>
+    <Icon> ... </Icon>
+    <ProjectType> ... </ProjectType>
+    ...
+</TemplateData>
+```
+
+## <a name="attributes-and-elements"></a>特性和元素
+ 下列各节描述了特性、子元素和父元素。
+
+### <a name="attributes"></a>特性
+ 无。
+
+### <a name="child-elements"></a>子元素
+
 | 元素 | 描述 |
 | - | - |
 | [名称](../extensibility/name-element-visual-studio-templates.md) | 必需的元素。<br /><br /> 指定的模板的名称中出现**新的项目**或**添加新项**对话框。 |
@@ -70,45 +69,45 @@ ms.locfileid: "55033475"
 | [SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定是否在模板支持单独的代码或代码隐藏页模型，用于 web 项目。 |
 | [SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定该模板是完全相同的多个语言，以及是否**语言**选项才可用**新项目**对话框。 |
 | [TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定项目模板面向的平台。 此元素指定的项目模板用于创建[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用。 |
-  
-### <a name="parent-elements"></a>父元素  
-  
-|元素|描述|  
-|-------------|-----------------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必需的元素。<br /><br /> 包含项目模板、 项模板或初学者工具包的所有元数据。|  
-  
-## <a name="remarks"></a>备注  
- `TemplateData` 是必需的元素。  
-  
- 如果不包括可选元素，使用该元素的默认值。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示用于的项目模板的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]应用程序。  
-  
-```  
-<VSTemplate Type="Project" Version="3.0.0"  
-    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    <TemplateData>  
-        <Name>My template</Name>  
-        <Description>A basic starter kit</Description>  
-        <Icon>TemplateIcon.ico</Icon>  
-        <ProjectType>CSharp</ProjectType>  
-    </TemplateData>  
-    <TemplateContent>  
-        <Project File="MyStarterKit.csproj">  
-            <ProjectItem>Form1.cs<ProjectItem>  
-            <ProjectItem>Form1.Designer.cs</ProjectItem>  
-            <ProjectItem>Program.cs</ProjectItem>  
-            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>  
-            <ProjectItem>Properties\Resources.resx</ProjectItem>  
-            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>  
-            <ProjectItem>Properties\Settings.settings</ProjectItem>  
-            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>  
-        </Project>  
-    </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+
+### <a name="parent-elements"></a>父元素
+
+|元素|描述|
+|-------------|-----------------|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必需的元素。<br /><br /> 包含项目模板、 项模板或初学者工具包的所有元数据。|
+
+## <a name="remarks"></a>备注
+ `TemplateData` 是必需的元素。
+
+ 如果不包括可选元素，使用该元素的默认值。
+
+## <a name="example"></a>示例
+ 下面的示例演示用于的项目模板的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]应用程序。
+
+```
+<VSTemplate Type="Project" Version="3.0.0"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>My template</Name>
+        <Description>A basic starter kit</Description>
+        <Icon>TemplateIcon.ico</Icon>
+        <ProjectType>CSharp</ProjectType>
+    </TemplateData>
+    <TemplateContent>
+        <Project File="MyStarterKit.csproj">
+            <ProjectItem>Form1.cs<ProjectItem>
+            <ProjectItem>Form1.Designer.cs</ProjectItem>
+            <ProjectItem>Program.cs</ProjectItem>
+            <ProjectItem>Properties\AssemblyInfo.cs</ProjectItem>
+            <ProjectItem>Properties\Resources.resx</ProjectItem>
+            <ProjectItem>Properties\Resources.Designer.cs</ProjectItem>
+            <ProjectItem>Properties\Settings.settings</ProjectItem>
+            <ProjectItem>Properties\Settings.Designer.cs</ProjectItem>
+        </Project>
+    </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>请参阅
+- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+- [创建项目和项模板](../ide/creating-project-and-item-templates.md)

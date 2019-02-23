@@ -1,7 +1,7 @@
 ---
 title: FIELD_KIND | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FIELD_KIND
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dd9bd533a8314f73c6d39c34638f018cf4dde53
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 46b965def820771b0bab883c1bdd9bf90d18414e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316296"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680369"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 指定字段中包含的种类[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象。
@@ -122,104 +122,71 @@ public enum enum_FIELD_KIND {
 ```
 
 ## <a name="members"></a>成员
-FIELD_KIND_TYPE  
-指示该字段是仅的类型。
+FIELD_KIND_TYPE 指示该字段是仅的类型。
 
-FIELD_KIND_SYMBOL  
-指示该字段是一个符号，与类型、 名称和其他信息。
+FIELD_KIND_SYMBOL 指示该字段是一个符号，与类型、 名称和其他信息。
 
-FIELD_TYPE_PRIMITIVE  
-指示该字段为基元数据类型。
+FIELD_TYPE_PRIMITIVE 指示该字段为基元数据类型。
 
-FIELD_TYPE_STRUCT  
-指示该字段是一种结构。
+FIELD_TYPE_STRUCT 指示该字段是一种结构。
 
-FIELD_TYPE_CLASS  
-指示该字段是一个类。
+FIELD_TYPE_CLASS 指示该字段是一个类。
 
-FIELD_TYPE_INTERFACE  
-指示该字段是一个接口。
+FIELD_TYPE_INTERFACE 指示该字段是一个接口。
 
-FIELD_TYPE_UNION  
-指示该字段是一个联合。
+FIELD_TYPE_UNION 指示该字段是一个联合。
 
-FIELD_TYPE_ARRAY  
-指示该字段是一个数组。
+FIELD_TYPE_ARRAY 指示该字段是一个数组。
 
-FIELD_TYPE_METHOD  
-指示该字段是一种方法。
+FIELD_TYPE_METHOD 指示该字段是一种方法。
 
-FIELD_TYPE_BLOCK  
-指示该字段是一个块。
+FIELD_TYPE_BLOCK 指示该字段是一个块。
 
-FIELD_TYPE_POINTER  
-指示该字段是一个指针。
+FIELD_TYPE_POINTER 指示该字段是一个指针。
 
-FIELD_TYPE_ENUM  
-指示该字段是枚举的数据类型。
+FIELD_TYPE_ENUM 指示该字段是枚举的数据类型。
 
-FIELD_TYPE_LABEL  
-指示该字段是一个标签。
+FIELD_TYPE_LABEL 指示该字段是一个标签。
 
-FIELD_TYPE_TYPEDEF  
-指示该字段是其 typedef。
+FIELD_TYPE_TYPEDEF 指示该字段是其 typedef。
 
-FIELD_TYPE_BITFIELD  
-指示该字段是一组标志。
+FIELD_TYPE_BITFIELD 指示该字段是一组标志。
 
-FIELD_TYPE_NAMESPACE  
-指示该字段是一个命名空间。
+FIELD_TYPE_NAMESPACE 指示该字段是一个命名空间。
 
-FIELD_TYPE_MODULE  
-指示该字段是一个模块。
+FIELD_TYPE_MODULE 指示该字段是一个模块。
 
-FIELD_TYPE_DYNAMIC  
-指示该字段是动态。
+FIELD_TYPE_DYNAMIC 指示该字段是动态的。
 
-FIELD_TYPE_PROP  
-指示该字段是一个属性。
+FIELD_TYPE_PROP 指示该字段是一个属性。
 
-FIELD_TYPE_INNERCLASS  
-指示该字段是一个内部类。
+FIELD_TYPE_INNERCLASS 指示该字段是一个内部类。
 
-FIELD_TYPE_REFERENCE  
-指示该字段是一个引用。
+FIELD_TYPE_REFERENCE 指示该字段是一个引用。
 
-FIELD_TYPE_EXTENDED  
-留待将来使用。
+FIELD_TYPE_EXTENDED 保留供将来使用。
 
-FIELD_SYM_MEMBER  
-指示该字段是成员。
+FIELD_SYM_MEMBER 指示该字段是成员。
 
-FIELD_SYM_LOCAL  
-指示该字段是本地。
+FIELD_SYM_LOCAL 指示该字段是本地。
 
-FIELD_SYM_PARAMETER  
-指示该字段是一个参数。
+FIELD_SYM_PARAMETER 指示该字段是一个参数。
 
-FIELD_SYM_THIS  
-指示该字段是"this"指针。
+FIELD_SYM_THIS 指示该字段是"this"指针。
 
-FIELD_SYM_GLOBAL  
-指示该字段是全局。
+FIELD_SYM_GLOBAL 指示该字段是全局。
 
-FIELD_SYM_PROP_GETTER  
-指示该字段检索属性。
+FIELD_SYM_PROP_GETTER 指示该字段检索属性。
 
-FIELD_SYM_PROP_SETTER  
-指示该字段将设置属性。
+FIELD_SYM_PROP_SETTER 指示该字段将设置属性。
 
-FIELD_SYM_EXTENDED  
-留待将来使用。
+FIELD_SYM_EXTENDED 保留供将来使用。
 
-FIELD_KIND_MASK  
-指示字段类型的掩码。
+FIELD_KIND_MASK 指示字段类型的掩码。
 
-FIELD_TYPE_MASK  
-指示字段类型的掩码。
+FIELD_TYPE_MASK 指示字段类型的掩码。
 
-FIELD_SYM_MASK  
-指示符号信息的掩码。
+FIELD_SYM_MASK 指示符号信息的掩码。
 
 ## <a name="remarks"></a>备注
 从调用返回[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法。
@@ -234,7 +201,7 @@ FIELD_SYM_MASK
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)  
-[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)  
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)
+- [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

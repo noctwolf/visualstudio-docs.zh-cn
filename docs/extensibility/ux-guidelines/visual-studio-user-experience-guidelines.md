@@ -8,22 +8,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b9f80ff04854371a65acd7b50f74d601c59b668
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 41f2ee9dc9c4201ba1f852c157e3b5f96907d047
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930090"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682279"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 用户体验指南
-如果针对 Visual Studio 中设计的新功能，请按照 Visual Studio 用户体验指南。 这些指南包含有关常见用户模型和交互模式的信息，以便新用户界面 (UI) 的设计人员可以创建无缝且一致的开发环境中的用户体验。  
-  
+如果针对 Visual Studio 中设计的新功能，请按照 Visual Studio 用户体验指南。 这些指南包含有关常见用户模型和交互模式的信息，以便新用户界面 (UI) 的设计人员可以创建无缝且一致的开发环境中的用户体验。
+
 如果您开发 Microsoft 产品的软件，了解如何使用这些资源：
-  
--   [Windows 用户体验交互准则](https://developer.microsoft.com/windows/desktop)是为 Windows 桌面的行为和外观的基本知识。  
-  
--   这些 Visual Studio 指南，这是特定于平台的指导原则取代常规 Windows 指导原则，在适当的到我们的环境的应用程序。  
-  
--   [模式和适用于 Windows 应用商店应用指南](https://dev.windows.com/en-us/design/interaction-ux)是新兴的模式可能在某些情况下 Visual Studio 中使用的引用。  
-  
+
+-   [Windows 用户体验交互准则](https://developer.microsoft.com/windows/desktop)是为 Windows 桌面的行为和外观的基本知识。
+
+-   这些 Visual Studio 指南，这是特定于平台的指导原则取代常规 Windows 指导原则，在适当的到我们的环境的应用程序。
+
+-   [模式和适用于 Windows 应用商店应用指南](https://dev.windows.com/en-us/design/interaction-ux)是新兴的模式可能在某些情况下 Visual Studio 中使用的引用。
+
 这些指导原则提供有关要执行的操作为 Visual Studio 中，设计时信息和在某些情况下如何执行此操作有关的信息，还包含。 有关更多详细信息并了解有关特定应用程序编程接口 (Api)，您可以编写代码的解决方案，将集成到 Visual Studio 集成的开发环境 (IDE) 的信息，请使用[Visual Studio 软件开发工具包 (SDK)](../visual-studio-sdk.md)。

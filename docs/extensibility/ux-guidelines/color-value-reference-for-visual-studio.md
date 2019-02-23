@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 9807f37925620b3672c3fcb9319913194d09d6ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016234"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722273"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的颜色值参考
 
-本主题是用于创建新的颜色标记的引用。 当你要创建新的用户界面时，可以使用现有 UI 中的相似颜色以选择为每个主要的主题颜色和高对比度主题该元素的系统颜色名称。 
+本主题是用于创建新的颜色标记的引用。 当你要创建新的用户界面时，可以使用现有 UI 中的相似颜色以选择为每个主要的主题颜色和高对比度主题该元素的系统颜色名称。
 
 有关创建新的颜色标记的实现信息，请参阅[颜色主题工具](../../extensibility/internals/color-theming-tools.md)。
 
@@ -26,11 +26,11 @@ ms.locfileid: "55016234"
 
 在使用本参考指南，请记住：
 
--   **始终将一起复制前景色和背景的色调。** 不要从一个 UI 元素，并从另一个后台选择前景色，只是因为您喜欢色调。  
+-   **始终将一起复制前景色和背景的色调。** 不要从一个 UI 元素，并从另一个后台选择前景色，只是因为您喜欢色调。
 
 -   **这些是十六进制代码，不颜色标记。** 因为您无法控制可能会在将来更改令牌的方式，不能使用这些 UI 元素的实际颜色标记名称。 相反，创建你自己的类别中的令牌，并使用表中所示的色调值。 有关可在现有 UI 颜色令牌[用于 Visual Studio 共享颜色](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md)。
 
-- **高对比度样本中显示了仅比较。** 使用高对比度用户界面的系统颜色名称并不使用这些样本的取色器或颜色选取器。 本主题中的高对比度样本反映在 Windows 中的高对比度 #1 主题。 颜色将显示在其他高对比度主题中的不同。 
+- **高对比度样本中显示了仅比较。** 使用高对比度用户界面的系统颜色名称并不使用这些样本的取色器或颜色选取器。 本主题中的高对比度样本反映在 Windows 中的高对比度 #1 主题。 颜色将显示在其他高对比度主题中的不同。
 
 -   **为获得最佳结果，对颜色设置 ui 的示例类似。**
 
@@ -39,17 +39,17 @@ ms.locfileid: "55016234"
 ![细 （左）、 深色 （中心） 和蓝色 （右） 主题中的属性窗口](../../extensibility/ux-guidelines/media/properties-window-light-dark-blue.png "在浅色、 深色和蓝色主题中的属性窗口")<br />在浅色、 深色和蓝色主题中的属性窗口
 
 > [!NOTE]
-> **高对比度样本中显示了仅比较。** 使用高对比度用户界面的系统颜色名称并不使用这些样本的取色器或颜色选取器。 本主题中的高对比度样本反映在 Windows 中的高对比度 #1 主题。 颜色将显示在其他高对比度主题中的不同。 
+> **高对比度样本中显示了仅比较。** 使用高对比度用户界面的系统颜色名称并不使用这些样本的取色器或颜色选取器。 本主题中的高对比度样本反映在 Windows 中的高对比度 #1 主题。 颜色将显示在其他高对比度主题中的不同。
 
 ### <a name="divider-lines"></a>分隔线
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 默认 | ![#FFEEEEF2 样本](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 样本")<br />`#FFEEEEF2` | ![#FF2D2D30 样本](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 样本")<br />`#FF2D2D30` | ![#FFEEEEF2 样本](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 样本")<br />`#FFEEEEF2` | ![ControlDark 样本](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 样本")<br />`ControlDark` |
 
 ### <a name="expander-glyph"></a>扩展器标志符号
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground |![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
 | 背景 | ![#Fff5f5f5 样本](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 样本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 样本")<br />`#FFF6F6F6` | ![窗口样本](../../extensibility/ux-guidelines/media/HCWindow.png "窗口样本")<br />`Window`|
@@ -60,7 +60,7 @@ ms.locfileid: "55016234"
 
 ### <a name="embedded-tab-control-body"></a>嵌入选项卡控件： 正文
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
 | 背景 | ![#FFE7E8EC 样本](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC 样本")<br />`#FFE7E8EC` | ![#FF1B1B1C 样本](../../extensibility/ux-guidelines/media/1B1B1C.png "#FF1B1B1C 样本")<br />`#FF1B1B1C` | ![#FFE7E8EC 样本](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC 样本")<br />`#FFE7E8EC` | ![控制样本](../../extensibility/ux-guidelines/media/HCControl.png "控件样本")<br />`Control` |
@@ -68,7 +68,7 @@ ms.locfileid: "55016234"
 
 ### <a name="embedded-tab-control-active-tab"></a>嵌入选项卡控件： 活动选项卡
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` |![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
 | 背景 | ![##FFE7E8EC swatch](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC swatch")<br />`#FFE7E8EC` | ![#FF1B1B1C swatch](../../extensibility/ux-guidelines/media/1B1B1C.png "##FF1B1B1C swatch")<br />`#FF1B1B1C` | ![#FFE7E8EC 样本](../../extensibility/ux-guidelines/media/E7E8EC.png "#FFE7E8EC 样本")<br />`#FFE7E8EC` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
@@ -76,7 +76,7 @@ ms.locfileid: "55016234"
 
 ### <a name="embedded-tab-control-inactive-tab"></a>嵌入选项卡控件： 非活动状态的选项卡
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
 | 背景 | ![#Fff5f5f5 样本](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 样本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 样本")<br />`#FFF6F6F6` | ![控制样本](../../extensibility/ux-guidelines/media/HCControl.png "控件样本")<br />`Control` |
@@ -85,12 +85,12 @@ ms.locfileid: "55016234"
 | 前景色： 禁用 | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![#FF656565 样本](../../extensibility/ux-guidelines/media/656565.png "#FF656565 样本")<br />`#FF656565` | ![#FFA2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#FFA2A4A5 swatch")<br />`#FFA2A4A5` | ![GrayText 样本](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText 样本")<br />`GrayText` |
 | 背景： 禁用 | ![##FFF5F5F5 swatch](../../extensibility/ux-guidelines/media/F5F5F5.png "##FFF5F5F5 swatch")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 样本")<br />`#FFF6F6F6` | ![控制样本](../../extensibility/ux-guidelines/media/HCControl.png "控件样本")<br />`Control` |
 | Border | ![#Fff5f5f5 样本](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 样本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 样本")<br />`#FFF6F6F6` | ![WindowFrame 样本](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 样本")<br />`WindowFrame` |
-| 边框： 悬停 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 样本](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 样本")<br />`#FF3E3E40` | ![#FFFEFEFE 样本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 样本")<br />`#FFFEFEFE` | ![WindowFrame 样本](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 样本")<br />`WindowFrame` | 
+| 边框： 悬停 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 样本](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 样本")<br />`#FF3E3E40` | ![#FFFEFEFE 样本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 样本")<br />`#FFFEFEFE` | ![WindowFrame 样本](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 样本")<br />`WindowFrame` |
 | 边框： 禁用 | ![#Fff5f5f5 样本](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 样本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 样本")<br />`#FFF6F6F6` | ![WindowFrame 样本](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 样本")<br />`WindowFrame` |
 
 ### <a name="section-header"></a>部分标头
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![##FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
 | 前景色： 悬停 | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
@@ -101,7 +101,7 @@ ms.locfileid: "55016234"
 
 ### <a name="category-group"></a>类别组
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 正文前景色 | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
 | 正文背景 | ![#Fff5f5f5 样本](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 样本")<br />`#FFF5F5F5` | ![FF252526 样本](../../extensibility/ux-guidelines/media/252526.png "#FF252526 样本")<br />`#FF252526` | ![#FFF6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 样本")<br />`#FFF6F6F6` | ![控制样本](../../extensibility/ux-guidelines/media/HCControl.png "控件样本")<br />`Control` |
@@ -110,7 +110,7 @@ ms.locfileid: "55016234"
 
 ### <a name="toggle-buttons"></a>切换按钮
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![WindowText 样本](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 样本")<br />`WindowText` |
 | 背景 | ![#Fff5f5f5 样本](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 样本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 样本")<br />`#FFF6F6F6` | ![窗口样本](../../extensibility/ux-guidelines/media/HCWindow.png "窗口样本")<br />`Window` |
@@ -127,7 +127,7 @@ ms.locfileid: "55016234"
 
 ### <a name="input-fields"></a>输入的字段
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
 | 背景 | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FF333337 样本](../../extensibility/ux-guidelines/media/333337.png "#FF333337 样本")<br />`#FF333337` | ![#FFFCFCFC 样本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC 样本")<br />`#FFFCFCFC` | ![控制样本](../../extensibility/ux-guidelines/media/HCControl.png "控件样本")<br />`Control` |
@@ -138,7 +138,7 @@ ms.locfileid: "55016234"
 
 ### <a name="list-items"></a>列表项
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
 | 前景色： 悬停 | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
@@ -151,7 +151,7 @@ ms.locfileid: "55016234"
 
 ### <a name="command-buttons"></a>命令按钮
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
 | 背景： 悬停 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 样本](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 样本")<br />`#FF3E3E40` | ![#FFFEFEFE 样本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 样本")<br />`#FFFEFEFE` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
@@ -172,7 +172,7 @@ ms.locfileid: "55016234"
 
 ### <a name="content"></a>内容
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#Ff000000 样本](../../extensibility/ux-guidelines/media/000000.png "#ff000000 样本")<br />`#FF000000` | ![WindowText 样本](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 样本")<br />`WindowText` |
 | 背景 | ![#Fff5f5f5 样本](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 样本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![控制样本](../../extensibility/ux-guidelines/media/HCControl.png "控件样本")<br />`Control` |
@@ -184,7 +184,7 @@ ms.locfileid: "55016234"
 
 ### <a name="header"></a>Header
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#Ff000000 样本](../../extensibility/ux-guidelines/media/000000.png "#ff000000 样本")<br />`#FF000000` | ![WindowText 样本](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 样本")<br />`WindowText` |
 | 背景 | ![#FF2D2D30 样本](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 样本")<br />`#FFEEEEF2` | ![#FF2D2D30 样本](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 样本")<br />`#FF2D2D30` | ![#FFEEEEF2 样本](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 样本")<br />`#FFEEEEF2` | ![ControlDark 样本](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 样本")<br />`ControlDark` |
@@ -193,7 +193,7 @@ ms.locfileid: "55016234"
 
 ![CodeLens UI](../../extensibility/ux-guidelines/media/codelens.png "CodeLens UI")
 
-> [!NOTE] 
+> [!NOTE]
 > CodeLens UI 颜色都相同的浅色、 深色和蓝色主题。
 
 > [!NOTE]
@@ -201,7 +201,7 @@ ms.locfileid: "55016234"
 
 ### <a name="body"></a>正文
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![WindowText 样本](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 样本")<br />`WindowText` |
 | 背景 | ![#FFFCFCFC 样本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC 样本")<br />`#FFFCFCFC` | ![#FFFCFCFC 样本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC 样本")<br />`#FFFCFCFC` | ![#FFFCFCFC 样本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FFFCFCFC 样本")<br />`#FFFCFCFC` | ![窗口样本](../../extensibility/ux-guidelines/media/HCWindow.png "窗口样本")<br />`Window` |
@@ -212,7 +212,7 @@ ms.locfileid: "55016234"
 
 ### <a name="hyperlink-and-separator"></a>超链接和分隔符
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 超链接前景色 | ![#FF0E70C0 样本](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 样本")<br />`#FF0E70C0` | ![#FF0E70C0 样本](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 样本")<br />`#FF0E70C0` | ![#FF0E70C0 样本](../../extensibility/ux-guidelines/media/0E70C0.png "#FF0E70C0 样本")<br />`#FF0E70C0` | ![HotTrack 样本](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack 样本")<br />`HotTrack` |
 | 分隔符前景色 | ![#FF9C9C9C 样本](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C 样本")<br />`#FF9C9C9C` | ![#FF9C9C9C 样本](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C 样本")<br />`#FF9C9C9C` | ![#FF9C9C9C 样本](../../extensibility/ux-guidelines/media/9C9C9C.png "#FF9C9C9C 样本")<br />`#FF9C9C9C` | ![HotTrack 样本](../../extensibility/ux-guidelines/media/HCHotTrack.png "HotTrack 样本")<br />`HotTrack` |
@@ -226,14 +226,14 @@ ms.locfileid: "55016234"
 
 ### <a name="body"></a>正文
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#Ff000000 样本](../../extensibility/ux-guidelines/media/000000.png "#ff000000 样本")<br />`#FF000000` | ![WindowText 样本](../../extensibility/ux-guidelines/media/HCWindowText.png "WindowText 样本")<br />`WindowText` |
 | 前景色： 所选 | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
 
 ### <a name="subsection-header"></a>子节标头
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF717171 样本](../../extensibility/ux-guidelines/media/717171.png "#FF717171 样本")<br />`#FF717171` | ![#FF999999 swatch](../../extensibility/ux-guidelines/media/999999.png "#FF999999 swatch")<br />`#FF999999` | ![#FF717171 样本](../../extensibility/ux-guidelines/media/717171.png "#FF717171 样本")<br />`#FF717171` | ![GrayText 样本](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText 样本")<br />`GrayText` |
 | 背景 | ![#Fff5f5f5 样本](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 样本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![窗口样本](../../extensibility/ux-guidelines/media/HCWindow.png "窗口样本")<br />`Window` |
@@ -241,7 +241,7 @@ ms.locfileid: "55016234"
 
 ### <a name="grid-lines"></a>网格线
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 项 （前景） | ![#FFF0F0F0 swatch](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 swatch")<br />`#FFF0F0F0` | ![#Ff000000 样本](../../extensibility/ux-guidelines/media/000000.png "#ff000000 样本")<br />`#FF000000` | ![#FFF0F0F0 swatch](../../extensibility/ux-guidelines/media/F0F0F0.png "#FFF0F0F0 swatch")<br />`#FFF0F0F0` | ![滚动条样本](../../extensibility/ux-guidelines/media/HCScrollBar.png "滚动条样本")<br />`ScrollBar` |
 | 标头 （前景） | ![#FFE0E3E6 swatch](../../extensibility/ux-guidelines/media/E0E3E6.png "#FFE0E3E6 swatch")<br />`#FFE0E3E6` | ![#FF333337 样本](../../extensibility/ux-guidelines/media/333337.png "#FF333337 样本")<br />`#FF333337` | ![#FFBEC3CB 样本](../../extensibility/ux-guidelines/media/BEC3CB.png "#FFBEC3CB 样本")<br />`#FFBEC3CB` | ![ControlDark 样本](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark 样本")<br />`ControlDark` |
@@ -255,21 +255,21 @@ ms.locfileid: "55016234"
 
 ### <a name="body"></a>正文
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
 | 背景 | ![#Fff5f5f5 样本](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 样本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 样本")<br />`#FFF6F6F6` | ![控制样本](../../extensibility/ux-guidelines/media/HCControl.png "控件样本")<br />`Control` |
 
 ### <a name="active-tab"></a>活动选项卡
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![ActiveCaptionText 样本](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText 样本")<br />`ActiveCaptionText` |
 | 背景 | ![#Fff5f5f5 样本](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 样本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 样本")<br />`#FFF6F6F6` |![ActiveCaption 样本](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption 样本")<br />`ActiveCaption` |
 
 ### <a name="inactive-tab"></a>非活动状态的选项卡
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![InactiveCaptionText 样本](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText 样本")<br />`InactiveCaptionText` |
 | 背景 | ![#FFFEFEFE 样本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 样本")<br />`#FFFEFEFE` | ![#FF333337 样本](../../extensibility/ux-guidelines/media/333337.png "#FF333337 样本")<br />`#FF333337` | ![#FFFEFEFE 样本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE 样本")<br />`#FFFEFEFE` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
@@ -278,14 +278,14 @@ ms.locfileid: "55016234"
 
 ### <a name="watermark-text"></a>水印文本
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF717171 样本](../../extensibility/ux-guidelines/media/717171.png "#FF717171 样本")<br />`#FF999999` | ![#FF999999 swatch](../../extensibility/ux-guidelines/media/717171.png "999999 swatch")<br />`#FF999999` | ![#FF717171 样本](../../extensibility/ux-guidelines/media/717171.png "#FF717171 样本")<br />`#FF717171` | ![GrayText 样本](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText 样本")<br />`GrayText` |
 | 背景 | ![#Fff5f5f5 样本](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 样本")<br />`#FFF5F5F5` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFF6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#FFF6F6F6 样本")<br />`#FFF6F6F6` | ![控制样本](../../extensibility/ux-guidelines/media/HCControl.png "控件样本")<br />`Control` |
 
 ### <a name="description-pane"></a>说明窗格
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | Foreground | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
 | 背景 | ![#FFEEEEF2 样本](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 样本")<br />`#FFEEEEF2` | ![#FF252526 swatch](../../extensibility/ux-guidelines/media/252526.png "#FF252526 swatch")<br />`#FF252526` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![控制样本](../../extensibility/ux-guidelines/media/HCControl.png "控件样本")<br />`Control` |
@@ -299,7 +299,7 @@ ms.locfileid: "55016234"
 
 ### <a name="tags"></a>Tags
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 前景 （文本） | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![ActiveCaptionText 样本](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText 样本")<br />`ActiveCaptionText` |
 | 背景 | ![#FFE1E6F1 样本](../../extensibility/ux-guidelines/media/E1E6F1.png "#FFE1E6F1 样本")<br />`#FFE1E6F1` | ![#FF424242 样本](../../extensibility/ux-guidelines/media/424242.png "#FF424242 样本")<br />`#FF424242` | ![#FFE9ECEE 样本](../../extensibility/ux-guidelines/media/E9ECEE.png "#FFE9ECEE 样本")<br />`#FFE9ECEE` | ![ActiveCaption 样本](../../extensibility/ux-guidelines/media/HCActiveCaption.png "ActiveCaption 样本")<br />`ActiveCaption` |
@@ -312,7 +312,7 @@ ms.locfileid: "55016234"
 
 ### <a name="glyph-on-hover"></a>悬停时的标志符号
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 标志符号 | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
 | 背景 | ![#FFF7F7F9 样本](../../extensibility/ux-guidelines/media/F7F7F9.png "#FFF7F7F9 样本")<br />`#FFF7F7F9` | ![#FF393939 样本](../../extensibility/ux-guidelines/media/393939.png "#FF393939 样本")<br />`#FF393939` | ![#FFFFFCF4 样本](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 样本")<br />`#FFFFFCF4` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
@@ -323,7 +323,7 @@ ms.locfileid: "55016234"
 
 ### <a name="selected-glyph"></a>选定标志符号
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 标志符号 | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
 | 背景 | ![#FF52B0EF swatch](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF swatch")<br />`#FF52B0EF` | ![#FF52B0EF swatch](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF swatch")<br />`#FF52B0EF` | ![#FF52B0EF swatch](../../extensibility/ux-guidelines/media/52B0EF.png "#FF52B0EF swatch")<br />`#FF52B0EF` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
@@ -339,7 +339,7 @@ ms.locfileid: "55016234"
 
 ### <a name="default"></a>默认
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的默认按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.png "浅色主题中的默认按钮") | ![深色主题中的默认按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.dark.png "深色主题中的默认按钮") | ![蓝色主题中的默认按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.blue.png "蓝色主题中的默认按钮") | ![高对比度主题中的默认按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.default.hc.png "高对比度主题中的默认按钮") |
 | Foreground | ![#1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 样本")<br />`#1E1E1E` | ![#F1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 样本")<br />`#F1F1F1` | ![#1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 样本")<br />`#1E1E1E` | ![ControlText 样本](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText 样本")<br />`ControlText` |
@@ -348,7 +348,7 @@ ms.locfileid: "55016234"
 
 ### <a name="disabled"></a>已禁用
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的禁用的按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.png "浅色主题中的已禁用按钮") | ![深色主题中的禁用的按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.dark.png "深色主题中的已禁用按钮") | ![蓝色主题中的禁用的按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.blue.png "蓝色主题中的已禁用按钮") | ![高对比度主题中的禁用的按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.disabled.hc.png "高对比度主题中的已禁用按钮") |
 | Foreground | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![#656565 样本](../../extensibility/ux-guidelines/media/656565.png "#656565 样本")<br />`#656565` | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![InactiveCaptionText 样本](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText 样本")<br />`InactiveCaptionText` |
@@ -357,7 +357,7 @@ ms.locfileid: "55016234"
 
 ### <a name="hover"></a>悬停
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的悬停状态按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.png "浅色主题中的悬停状态按钮") | ![深色主题中的悬停状态按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.dark.png "深色主题中的悬停状态按钮") | ![蓝色主题中的悬停状态按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.hover.blue.png "蓝色主题中的悬停状态按钮") | ![高对比度主题中的悬停状态按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "高对比度主题中的悬停状态按钮") |
 | Foreground | ![#1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 样本")<br />`#1E1E1E` | ![#F1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 样本")<br />`#F1F1F1` | ![#1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 样本")<br />`#1E1E1E` | ![ActiveCaptionText 样本](../../extensibility/ux-guidelines/media/HCActiveCaptionText.png "ActiveCaptionText 样本")<br />`ActiveCaptionText` |
@@ -366,7 +366,7 @@ ms.locfileid: "55016234"
 
 ### <a name="pressed"></a>已按下
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的按下的按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.png "浅色主题中的按下的按钮") | ![深色主题中的按下的按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.dark.png "深色主题中的按下的按钮") | ![蓝色主题中的按下的按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.pressed.blue.png "蓝色主题中的按下的按钮") | ![高对比度主题中的按下的按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "高对比度主题中的按下的按钮") |
 | Foreground | ![#FFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF 样本")<br />`#FFFFFF` | ![#F1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 样本")<br />`#F1F1F1` | ![#FFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF 样本")<br />`#FFFFFF` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
@@ -375,7 +375,7 @@ ms.locfileid: "55016234"
 
 ### <a name="focused"></a>已设定焦点
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的已设定焦点按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.png "浅色主题中的已设定焦点按钮") | ![深色主题中的已设定焦点按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.dark.png "深色主题中的已设定焦点按钮") | ![蓝色主题中的已设定焦点按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.focused.blue.png "蓝色主题中的已设定焦点按钮") | ![高对比度主题中的已设定焦点按钮](../../extensibility/ux-guidelines/media/03.03.Button.controls.hpf.hc.png "高对比度主题中的已设定焦点按钮") |
 | Foreground | ![#1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 样本")<br />`#1E1E1E` | ![#F1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#F1F1F1 样本")<br />`#F1F1F1` | ![#1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#1E1E1E 样本")<br />`#1E1E1E` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
@@ -389,7 +389,7 @@ ms.locfileid: "55016234"
 
 ### <a name="default"></a>默认
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的默认复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.png "浅色主题中的默认复选框") | ![深色主题中的默认复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.dark.png "深色主题中的默认复选框") | ![默认蓝色主题中的复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.blue.png "默认蓝色主题中的复选框") | ![默认高对比度主题中的复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.default.hc.png "默认高对比度主题中的复选框") |
 | 背景 | ![#FEFEFE 样本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE 样本")<br />`#FEFEFE` | ![#252526 样本](../../extensibility/ux-guidelines/media/252526.png "#252526 样本")<br />`#252526` | ![#FEFEFE 样本](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE 样本")<br />`#FEFEFE` | ![控制样本](../../extensibility/ux-guidelines/media/HCControl.png "控件样本")<br />`Control` |
@@ -399,7 +399,7 @@ ms.locfileid: "55016234"
 
 ### <a name="disabled"></a>已禁用
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的已禁用的复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.png "禁用浅色主题中的复选框") | ![深色主题中的已禁用的复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.dark.png "禁用深色主题中的复选框") | ![蓝色主题中的已禁用的复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.blue.png "禁用蓝色主题中的复选框") | ![高对比度主题中的已禁用的复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.disabled.hc.png "禁用高对比度主题中的复选框") |
 | 背景 | ![#F6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 样本")<br />`#F6F6F6` | ![#2D2D30 样本](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 样本")<br />`#2D2D30` | ![#F6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 样本")<br />`#F6F6F6` | ![InactiveCaption 样本](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption 样本")<br />`InactiveCaption` |
@@ -409,7 +409,7 @@ ms.locfileid: "55016234"
 
 ### <a name="hover"></a>悬停
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的悬停状态复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.png "浅色主题中的悬停状态复选框") | ![深色主题中的悬停状态复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.dark.png "深色主题中的悬停状态复选框") | ![蓝色主题中的悬停状态复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hover.blue.png "蓝色主题中的悬停状态复选框") | ![高对比度主题中的悬停状态复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "悬停状态的高对比度主题中的复选框") |
 | 背景 | ![#F3F9FF 样本](../../extensibility/ux-guidelines/media/F3F9FF.png "#F3F9FF 样本")<br />`#F3F9FF` | ![#1F1F20 样本](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 样本")<br />`#1F1F20` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
@@ -419,7 +419,7 @@ ms.locfileid: "55016234"
 
 ### <a name="pressed"></a>已按下
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的已按下的复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.png "浅色主题中的已按下的复选框") | ![深色主题中的已按下的复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.dark.png "深色主题中的已按下的复选框") | ![蓝色主题中的已按下的复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.pressed.blue.png "蓝色主题中的已按下的复选框") | ![高对比度主题中的已按下的复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "高对比度主题中的已按下的复选框") |
 | 背景 | ![#007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC 样本")<br />`#007ACC` | ![#007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC 样本")<br />`#007ACC` | ![#E5C365 swatch](../../extensibility/ux-guidelines/media/E5C365.png "#E5C365 swatch")<br />`#E5C365` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
@@ -429,7 +429,7 @@ ms.locfileid: "55016234"
 
 ### <a name="focused"></a>已设定焦点
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的已设定焦点复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.png "浅色主题中的已设定焦点复选框") | ![深色主题中的已设定焦点复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.dark.png "深色主题中的已设定焦点复选框") | ![蓝色主题中的已设定焦点复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.focused.blue.png "蓝色主题中的已设定焦点复选框") | ![已设定焦点的高对比度主题中的复选框](../../extensibility/ux-guidelines/media/03.03.Checkbox.controls.hpf.hc.png "已设定焦点的高对比度主题中的复选框") |
 | 背景 | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![#1F1F20 样本](../../extensibility/ux-guidelines/media/1F1F20.png "#1F1F20 样本")<br />`#1F1F20` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
@@ -446,7 +446,7 @@ ms.locfileid: "55016234"
 
 #### <a name="default"></a>默认
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的默认下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.png "默认浅色主题中的下拉/组合框") | ![深色主题中的默认下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.dark.png "默认深色主题中的下拉/组合框") | ![默认蓝色主题中的下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.blue.png "默认蓝色主题中的下拉/组合框") | ![默认高对比度主题中的下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.default.hc.png "默认高对比度主题中的下拉/组合框") |
 | 背景 | ![# # 007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "# # 007ACC 样本")<br />`##007ACC` | ![#333337 样本](../../extensibility/ux-guidelines/media/333337.png "#333337 样本")<br />`#333337` | ![#FCFCFC 样本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC 样本")<br />`#FCFCFC` | ![控制样本](../../extensibility/ux-guidelines/media/HCControl.png "控件样本")<br />`Control` |
@@ -457,19 +457,19 @@ ms.locfileid: "55016234"
 
 #### <a name="disabled"></a>已禁用
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中已禁用的下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.png "禁用浅色主题中的下拉/组合框") | ![深色主题中已禁用的下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.dark.png "禁用深色主题中的下拉/组合框") | ![蓝色主题中已禁用的下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.blue.png "禁用蓝色主题中的下拉/组合框") | ![高对比度主题中已禁用的下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.disabled.hc.png "禁用高对比度主题中的下拉/组合框") |
 | 背景 | ![#EEEEF2 样本](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 样本")<br />`#EEEEF2` | ![#2D2D30 样本](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 样本")<br />`#2D2D30` | ![#DFE7F3 样本](../../extensibility/ux-guidelines/media/DFE7F3.png "#DFE7F3 样本")<br />`#DFE7F3` | ![InactiveCaption 样本](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption 样本")<br />`InactiveCaption` |
 | Border | ![#CCCEDB 样本](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 样本")<br />`#CCCEDB` | ![#434346 样本](../../extensibility/ux-guidelines/media/434346.png "#434346 样本")<br />`#434346` | ![#A4ADBA 样本](../../extensibility/ux-guidelines/media/A4ADBA.png "#A4ADBA 样本")<br />`#A4ADBA` | ![InactiveBorder 样本](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder 样本")<br />`InactiveBorder` |
 | Text | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![# 656565swatch](../../extensibility/ux-guidelines/media/656565.png "#656565 样本")<br />`#656565` | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![InactiveCaptionText 样本](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText 样本")<br />`InactiveCaptionText` |
-| Separator | ![#EEEEF2 样本](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 样本")<br />`#EEEEF2` | ![#2D2D30 样本](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 样本")<br />`#2D2D30` | ![#D5DCE8 swatch](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 swatch")<br />`#D5DCE8` | ![InactiveBorder 样本](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder 样本")<br />`InactiveBorder` | 
+| Separator | ![#EEEEF2 样本](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 样本")<br />`#EEEEF2` | ![#2D2D30 样本](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 样本")<br />`#2D2D30` | ![#D5DCE8 swatch](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 swatch")<br />`#D5DCE8` | ![InactiveBorder 样本](../../extensibility/ux-guidelines/media/HCInactiveBorder.png "InactiveBorder 样本")<br />`InactiveBorder` |
 | 标志符号 | ![#CCCEDB 样本](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 样本")<br />`#CCCEDB` | ![#656565 样本](../../extensibility/ux-guidelines/media/656565.png "#656565 样本")<br />`#656565` | ![#A2A4A5 swatch](../../extensibility/ux-guidelines/media/A2A4A5.png "#A2A4A5 swatch")<br />`#A2A4A5` | ![InactiveCaptionText 样本](../../extensibility/ux-guidelines/media/HCInactiveCaptionText.png "InactiveCaptionText 样本")<br />`InactiveCaptionText` |
 | 标志符号背景 | ![#EEEEF2 样本](../../extensibility/ux-guidelines/media/EEEEF2.png "#EEEEF2 样本")<br />`#EEEEF2` | ![#2D2D30 样本](../../extensibility/ux-guidelines/media/2D2D30.png "#2D2D30 样本")<br />`#2D2D30` | ![#D5DCE8 swatch](../../extensibility/ux-guidelines/media/D5DCE8.png "#D5DCE8 swatch")<br />`#D5DCE8` | ![InactiveCaption 样本](../../extensibility/ux-guidelines/media/HCInactiveCaption.png "InactiveCaption 样本")<br />`InactiveCaption` |
 
 #### <a name="hover"></a>悬停
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的悬停状态下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.png "悬停状态浅色主题中的下拉/组合框") | ![深色主题中的悬停状态下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.dark.png "悬停状态深色主题中的下拉/组合框") | ![蓝色主题中的悬停状态下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.blue.png "悬停状态蓝色主题中的下拉/组合框") | ![高对比度主题中的悬停状态下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.hover.hc.png "悬停状态的高对比度主题中的下拉/组合框") |
 | 背景 | ![#007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#007ACC 样本")<br />`#007ACC` | ![#3F3F46 样本](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 样本")<br />`#3F3F46` | ![#FCFCFC 样本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC 样本")<br />`#FCFCFC` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
@@ -481,7 +481,7 @@ ms.locfileid: "55016234"
 
 #### <a name="pressed"></a>已按下
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的已按下的下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.png "浅色主题中的已按下的下拉/组合框") | ![深色主题中的已按下的下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.dark.png "深色主题中的已按下的下拉/组合框") | ![蓝色主题中的已按下的下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.blue.png "蓝色主题中的已按下的下拉/组合框") | ![高对比度主题中的已按下的下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.pressed.hc.png "高对比度主题中的已按下的下拉/组合框") |
 | 背景 | ![#FFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF 样本")<br />`#FFFFFF` | ![#3F3F46 样本](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 样本")<br />`#3F3F46` | ![#FCFCFC 样本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC 样本")<br />`#FCFCFC` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
@@ -493,7 +493,7 @@ ms.locfileid: "55016234"
 
 #### <a name="focused"></a>已设定焦点
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![浅色主题中的已设定焦点下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.png "浅色主题中的已设定焦点下拉/组合框") | ![深色主题中的已设定焦点下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.dark.png "深色主题中的已设定焦点下拉/组合框") | ![蓝色主题中的已设定焦点下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.blue.png "蓝色主题中的已设定焦点下拉/组合框") | ![已设定焦点的高对比度主题中的下拉/组合框](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.focused.hc.png "高对比度主题中的已设定焦点下拉/组合框") |
 | 背景 | ![#FFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFF 样本")<br />`#FFFFFF` | ![#3F3F46 样本](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 样本")<br />`#3F3F46` | ![#FCFCFC 样本](../../extensibility/ux-guidelines/media/FCFCFC.png "#FCFCFC 样本")<br />`#FCFCFC` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
@@ -511,7 +511,7 @@ ms.locfileid: "55016234"
 
 #### <a name="default"></a>默认
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 背景 | ![#F6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 样本")<br />`#F6F6F6` | ![#1B1B1C 样本](../../extensibility/ux-guidelines/media/1B1B1C.png "#1B1B1C 样本")<br />`#1B1B1C` | ![#EFEFEF 样本](../../extensibility/ux-guidelines/media/EFEFEF.png "#EFEFEF 样本")<br />`#EFEFEF` | ![菜单样本](../../extensibility/ux-guidelines/media/HCMenu.png "菜单样本")<br />`Menu` |
 | Border | ![#CCCEDB 样本](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 样本")<br />`#CCCEDB` | ![#3F3F46 样本](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 样本")<br />`#3F3F46` | ![#98A7B7 样本](../../extensibility/ux-guidelines/media/98A7B7.png "#98A7B7 样本")<br />`#98A7B7`| ![MenuText 样本](../../extensibility/ux-guidelines/media/HCMenuText.png "MenuText 样本")<br />`MenuText` |
@@ -520,7 +520,7 @@ ms.locfileid: "55016234"
 
 #### <a name="hover"></a>悬停
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 背景 | ![#C9DEF5 样本](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 样本")<br />`#C9DEF5` | ![#3F3F46 样本](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 样本")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
 | Border | ![#CCCEDB 样本](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 样本")<br />`#CCCEDB` |![#3F3F46 样本](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 样本")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
@@ -528,7 +528,7 @@ ms.locfileid: "55016234"
 
 #### <a name="pressed"></a>已按下
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 背景 |![#C9DEF5 样本](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 样本")<br />`#C9DEF5` |![#3F3F46 样本](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 样本")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
 | Border | ![#CCCEDB 样本](../../extensibility/ux-guidelines/media/CCCEDB.png "#CCCEDB 样本")<br />`#CCCEDB` |![#3F3F46 样本](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 样本")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
@@ -536,7 +536,7 @@ ms.locfileid: "55016234"
 
 #### <a name="focused"></a>已设定焦点
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 背景 | ![#F6F6F6 样本](../../extensibility/ux-guidelines/media/F6F6F6.png "#F6F6F6 样本")<br />`#F6F6F6` |![#3F3F46 样本](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 样本")<br />`#3F3F46` | ![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
 | Border | ![#C9DEF5 样本](../../extensibility/ux-guidelines/media/C9DEF5.png "#C9DEF5 样本")<br />`#C9DEF5` |![#3F3F46 样本](../../extensibility/ux-guidelines/media/3F3F46.png "#3F3F46 样本")<br />`#3F3F46` |![#FDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FDF4BF swatch")<br />`#FDF4BF` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
@@ -544,14 +544,14 @@ ms.locfileid: "55016234"
 
 ### <a name="text-input-selection"></a>文本输入选择
 
-| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 | 
+| | 浅色主题 | 深色主题 | 蓝色主题 | 高对比度 |
 | --- | :---: | :---: | :---: | :---: |
 | 外观 | ![下拉/组合框文本输入浅色主题中的所选内容](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.png "下拉/组合框文本输入浅色主题中的选定内容") | ![下拉/组合框文本输入深色主题中的所选内容](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.dark.png "下拉/组合框文本输入深色主题中的选定内容") | ![下拉/组合框文本输入的蓝色主题中所选内容](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.blue.png "下拉/组合框文本输入的蓝色主题中的选定内容") | ![下拉/组合框文本输入的高对比度主题中所选内容](../../extensibility/ux-guidelines/media/03.03.Dropdown.combobox.controls.input.hc.png "下拉/组合框文本输入的高对比度主题中的选定内容") |
 | 文本输入选择 | ![#66007ACC 样本](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC 样本")<br />`#66007ACC` | ![#66007ACC 样本](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC 样本")<br />`#66007ACC` | ![#66007ACC 样本](../../extensibility/ux-guidelines/media/66007ACC.png "#66007ACC 样本")<br />`#66007ACC` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
 
 ## <a name="color-swatches-by-function"></a>颜色样本函数
 
-| 浅 | 深 | 蓝色 | 用于... | 
+| 浅 | 深 | 蓝色 | 用于... |
 | :---: | :---: | :---: | --- |
 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5`   | ![#FF2D2D30 样本](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 样本")<br />`#FF2D2D30`   | ![#FFFDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF swatch")<br />`#FFFDF4BF` | 操作按钮、 组合框项、 命令栏按钮、 下拉按钮和菜单项： 背景 |
 | ![#FFCCCEDB 样本](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 样本")<br />`#FFCCCEDB` | ![#FF3F3F46 样本](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 样本")<br />`#FF3F3F46` | ![#FF465A7D 样本](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D 样本")<br />`#FF465A7D` | 自动隐藏选项卡边框 |

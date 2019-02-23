@@ -1,7 +1,7 @@
 ---
 title: IDebugMethodField::EnumAllLocals |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMethodField::EnumAllLocals
 helpviewer_keywords:
@@ -12,49 +12,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 325e2bcc339393fed21232cc907ecd5c3a830c57
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bbbc610dad6ab5915efe07718ad9a80592af4034
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954548"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708181"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
-创建方法，包括那些由编译器在内部生成的所有局部变量的枚举器。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT EnumAllLocals(   
-   IDebugAddress*     pAddress,  
-   IEnumDebugFields** ppLocals  
-);  
-```  
-  
-```csharp  
-int EnumAllLocals(  
-   IDebugAddress        pAddress,   
-   out IEnumDebugFields ppLocals  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pAddress`  
- [in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象，表示指向特定作用域或上下文的方法中的调试地址。  
-  
- `ppLocals`  
- [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，表示指定范围内的所有局部变量的列表; 否则，返回 null 值，该值指示没有局部变量。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 S_OK 或如果没有局部变量，则返回 S_FALSE。 否则，返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 将枚举中仅包含给定的调试地址块中定义的变量。 此方法包括任何编译器生成的局部变量。 如果所需的所有源，调用中显式定义的局部变量[EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)方法。  
-  
- 一种方法可以包含多个作用域的上下文或块。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
- [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)
+创建方法，包括那些由编译器在内部生成的所有局部变量的枚举器。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT EnumAllLocals( 
+   IDebugAddress*     pAddress,
+   IEnumDebugFields** ppLocals
+);
+```
+
+```csharp
+int EnumAllLocals(
+   IDebugAddress        pAddress,
+   out IEnumDebugFields ppLocals
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pAddress`
+
+ [in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象，表示指向特定作用域或上下文的方法中的调试地址。
+
+ `ppLocals`
+
+ [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，表示指定范围内的所有局部变量的列表; 否则，返回 null 值，该值指示没有局部变量。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 S_OK 或如果没有局部变量，则返回 S_FALSE。 否则，返回错误代码。
+
+## <a name="remarks"></a>备注
+ 将枚举中仅包含给定的调试地址块中定义的变量。 此方法包括任何编译器生成的局部变量。 如果所需的所有源，调用中显式定义的局部变量[EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)方法。
+
+ 一种方法可以包含多个作用域的上下文或块。
+
+## <a name="see-also"></a>请参阅
+- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
+- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+- [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)

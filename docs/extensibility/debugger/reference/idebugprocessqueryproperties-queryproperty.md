@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessQueryProperties::QueryProperty |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperty
 ms.assetid: 9a91707d-a590-44ef-b122-69d9816a7a79
@@ -10,48 +10,48 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca35e7b7e14792809c7b5765588df17a6b69c8ed
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 22cb633865a6f370c77b9ade7e9d737acdbe4c61
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037845"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701779"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
-此方法查询的调试过程的指定的属性值。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT QueryProperty(  
-   PROCESS_PROPERTY_TYPE  dwPropType,  
-   VARIANT               *pvarPropValue);  
-```  
-  
-```csharp  
-int QueryProperty(  
-   enum_PROCESS_PROPERTY_TYPE dwPropType,  
-   out object                 pvarPropValue);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `dwPropType`  
- [in]查询的属性的定义。 该属性的值有：  
-  
-- PROCESS_PROPERTY_COMMAND_LINE = 1  
-  
-- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2  
-  
-- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
-  
-  `pvarPropValue`  
-  [out]属性的值。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 很少使用此方法。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)
+此方法查询的调试过程的指定的属性值。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT QueryProperty(
+   PROCESS_PROPERTY_TYPE  dwPropType,
+   VARIANT               *pvarPropValue);
+```
+
+```csharp
+int QueryProperty(
+   enum_PROCESS_PROPERTY_TYPE dwPropType,
+   out object                 pvarPropValue);
+```
+
+#### <a name="parameters"></a>参数
+ `dwPropType`
+
+ [in]查询的属性的定义。 该属性的值有：
+
+- PROCESS_PROPERTY_COMMAND_LINE = 1
+
+- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2
+
+- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
+
+  `pvarPropValue` [out]属性的值。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="remarks"></a>备注
+ 很少使用此方法。
+
+## <a name="see-also"></a>请参阅
+- [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

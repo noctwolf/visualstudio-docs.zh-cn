@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3967dc1b324c2dd73de4797588159d745ae24756
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 25b703eafccb412c33640a9e73e72afa09c0c277
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315711"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695981"
 ---
 # <a name="get-a-port"></a>获取端口
 端口表示进程正在其运行的计算机的连接。 该计算机可以是本地计算机或远程计算机 (这可能可能运行非基于 Windows 的操作系统，请参阅[端口](../../extensibility/debugger/ports.md)有关详细信息)。
@@ -97,7 +97,7 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 ```
 
 ## <a name="see-also"></a>请参阅
-[正在注册程序](../../extensibility/debugger/registering-the-program.md)  
-[启用要进行调试的程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
-[端口提供程序](../../extensibility/debugger/port-suppliers.md)  
-[端口](../../extensibility/debugger/ports.md)
+- [正在注册程序](../../extensibility/debugger/registering-the-program.md)
+- [启用要进行调试的程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [端口提供程序](../../extensibility/debugger/port-suppliers.md)
+- [端口](../../extensibility/debugger/ports.md)
