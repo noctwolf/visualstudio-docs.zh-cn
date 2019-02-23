@@ -1,7 +1,7 @@
 ---
 title: CONTEXT_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONTEXT_COMPARE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35c68d2be2179b3bbcb1b3c691deb42cd8e8414f
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 21628bda9dc0437672b0b755bb64f1c882b0acbf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412833"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689169"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 指定用于比较两个内存上下文的条件。
@@ -54,32 +54,23 @@ public enum enum_CONTEXT_COMPARE {
 ```
 
 ## <a name="members"></a>成员
-CONTEXT_EQUAL  
-在列表中，它等于目标内存上下文中找到的第一个内存上下文。
+CONTEXT_EQUAL 等于目标内存上下文在列表中找到的第一个内存上下文。
 
-CONTEXT_LESS_THAN  
-小于目标内存上下文在列表中找到的第一个内存上下文。
+CONTEXT_LESS_THAN 小于目标内存上下文在列表中找到的第一个内存上下文。
 
-CONTEXT_GREATER_THAN  
-在列表的最大目标内存上下文中找到的第一个内存上下文。
+CONTEXT_GREATER_THAN 列表的最大目标内存上下文中找到的第一个内存上下文。
 
-CONTEXT_LESS_THAN_OR_EQUAL  
-小于或等于目标内存上下文在列表中找到的第一个内存上下文。
+CONTEXT_LESS_THAN_OR_EQUAL 小于或等于目标内存上下文在列表中找到的第一个内存上下文。
 
-CONTEXT_GREATER_THAN_OR_EQUAL  
-大于或等于目标内存上下文在列表中找到的第一个内存上下文。
+CONTEXT_GREATER_THAN_OR_EQUAL 大于或等于目标内存上下文在列表中找到的第一个内存上下文。
 
-CONTEXT_SAME_SCOPE  
-目标内存上下文与同一作用域中在列表中找到的第一个内存上下文。
+CONTEXT_SAME_SCOPE 的目标内存上下文是在同一作用域中在列表中找到的第一个内存上下文。
 
-CONTEXT_SAME_FUNCTION  
-在与目标内存范围内相同的功能是在列表中找到的第一个内存上下文。
+CONTEXT_SAME_FUNCTION 中与目标内存范围内相同的功能是在列表中找到的第一个内存上下文。
 
-CONTEXT_SAME_MODULE  
-中的目标内存上下文是相同的模块列表中找到的第一个内存上下文。
+CONTEXT_SAME_MODULE 处于相同的模块的目标内存上下文是在列表中找到的第一个内存上下文。
 
-CONTEXT_SAME_PROCESS  
-在与目标内存上下文相同的进程列表中找到的第一个内存上下文。
+CONTEXT_SAME_PROCESS 中与目标内存上下文相同的进程是在列表中找到的第一个内存上下文。
 
 ## <a name="remarks"></a>备注
 作为参数传递[比较](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)方法。
@@ -94,5 +85,5 @@ CONTEXT_SAME_PROCESS
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

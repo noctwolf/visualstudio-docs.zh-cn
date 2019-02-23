@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2::GetMemoryContext |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugReference2::GetMemoryContext
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d9a312043e9acda68cb7e5083f6fad4159e0217
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fd4494b21d4b5b3aa3f73cbabed771f2fac7280c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55041537"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705315"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
-获取引用的内存上下文。 留待将来使用。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetMemoryContext (   
-   IDebugMemoryContext2** ppMemory  
-);  
-```  
-  
-```csharp  
-int GetMemoryContext (   
-   out IDebugMemoryContext2 ppMemory  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `ppMemory`  
- [out]返回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)对象，表示与引用的值相关联的内存。  
-  
-## <a name="return-value"></a>返回值  
- 始终返回 `E_NOTIMPL`。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
- [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
+获取引用的内存上下文。 留待将来使用。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetMemoryContext ( 
+   IDebugMemoryContext2** ppMemory
+);
+```
+
+```csharp
+int GetMemoryContext ( 
+   out IDebugMemoryContext2 ppMemory
+);
+```
+
+#### <a name="parameters"></a>参数
+ `ppMemory`
+
+ [out]返回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)对象，表示与引用的值相关联的内存。
+
+## <a name="return-value"></a>返回值
+ 始终返回 `E_NOTIMPL`。
+
+## <a name="see-also"></a>请参阅
+- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
+- [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

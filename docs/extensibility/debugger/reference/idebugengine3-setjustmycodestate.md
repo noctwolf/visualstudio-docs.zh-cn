@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine3::SetJustMyCodeState | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngine3::SetJustMyCodeState
 helpviewer_keywords:
@@ -12,50 +12,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180ef79d488585aa50eb19da6924c642340d0aa7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 82c2834e7c368776f0ae91cf9106ec6331eed997
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925989"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695669"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
-此方法的 JustMyCode 状态信息中介绍的调试引擎。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT SetJustMyCodeState(  
-   BOOL           fUpdate,  
-   DWORD          dwModules,  
-   JMC_CODE_SPEC* rgJMCSpec  
-);  
-```  
-  
-```csharp  
-int SetJustMyCodeState(  
-   int             fUpdate,   
-   uint            dwModules,   
-   JMC_CODE_SPEC[] rgJMCSpec  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `fUpdate`  
- [in]非零值 (`TRUE`) 以更新当前的信息，请为零 (`FALSE`) 重置 （忽略任何内容之前设置） 的所有信息。  
-  
- `dwModules`  
- [in]中的信息结构的数目 `rgJMCSpec.`  
-  
- `rgJMCSpec`  
- [in]数组[JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)结构使用。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为将返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- JustMyCode 是调试仅属于用户的代码并忽略所有中间代码，如系统代码的概念，即使该系统代码提供了源代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   
- [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)
+此方法的 JustMyCode 状态信息中介绍的调试引擎。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT SetJustMyCodeState(
+   BOOL           fUpdate,
+   DWORD          dwModules,
+   JMC_CODE_SPEC* rgJMCSpec
+);
+```
+
+```csharp
+int SetJustMyCodeState(
+   int             fUpdate,
+   uint            dwModules,
+   JMC_CODE_SPEC[] rgJMCSpec
+);
+```
+
+#### <a name="parameters"></a>参数
+ `fUpdate`
+
+ [in]非零值 (`TRUE`) 以更新当前的信息，请为零 (`FALSE`) 重置 （忽略任何内容之前设置） 的所有信息。
+
+ `dwModules`
+
+ [in]中的信息结构的数目 `rgJMCSpec.`
+
+ `rgJMCSpec`
+
+ [in]数组[JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)结构使用。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为将返回错误代码。
+
+## <a name="remarks"></a>备注
+ JustMyCode 是调试仅属于用户的代码并忽略所有中间代码，如系统代码的概念，即使该系统代码提供了源代码。
+
+## <a name="see-also"></a>请参阅
+- [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
+- [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md)

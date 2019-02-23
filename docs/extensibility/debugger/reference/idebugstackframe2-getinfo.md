@@ -1,7 +1,7 @@
 ---
 title: IDebugStackFrame2::GetInfo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugStackFrame2::GetInfo
 helpviewer_keywords:
@@ -12,48 +12,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b16d37061375dee569be7c6b17dd943a59a85ba1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d0aeb888b2cc81dac6157ef0944703227799e61e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949640"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721012"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
-获取堆栈帧的说明。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetInfo (   
-   FRAMEINFO_FLAGS dwFieldSpec,  
-   UINT            nRadix,  
-   FRAMEINFO*      pFrameInfo  
-);  
-```  
-  
-```csharp  
-int GetInfo (   
-   enum_FRAMEINFO_FLAGS dwFieldSpec,  
-   uint                 nRadix,  
-   FRAMEINFO[]          pFrameInfo  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `dwFieldSpec`  
- [in]中的标志的组合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)枚举，用于指定的哪些字段`pFrameInfo`参数是要填充。  
-  
- `nRadix`  
- [in]用于格式化数值的任何信息的基数。  
-  
- `pFrameInfo`  
- [out]一个[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)堆栈帧的说明使用填充的结构。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
- [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)
+获取堆栈帧的说明。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetInfo ( 
+   FRAMEINFO_FLAGS dwFieldSpec,
+   UINT            nRadix,
+   FRAMEINFO*      pFrameInfo
+);
+```
+
+```csharp
+int GetInfo ( 
+   enum_FRAMEINFO_FLAGS dwFieldSpec,
+   uint                 nRadix,
+   FRAMEINFO[]          pFrameInfo
+);
+```
+
+#### <a name="parameters"></a>参数
+ `dwFieldSpec`
+
+ [in]中的标志的组合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)枚举，用于指定的哪些字段`pFrameInfo`参数是要填充。
+
+ `nRadix`
+
+ [in]用于格式化数值的任何信息的基数。
+
+ `pFrameInfo`
+
+ [out]一个[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)堆栈帧的说明使用填充的结构。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
+- [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
+- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

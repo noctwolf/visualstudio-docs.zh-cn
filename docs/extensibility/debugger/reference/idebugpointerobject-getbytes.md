@@ -1,7 +1,7 @@
 ---
 title: IDebugPointerObject::GetBytes |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPointerObject::GetBytes
 helpviewer_keywords:
@@ -12,55 +12,59 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6354b7ab1ecfc6b992c12ade73523d02567d96e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7a2c93e032175ce556d5504ed8b3f57dcf619a61
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949814"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56677625"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-获取指向作为一系列连续字节的值。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetBytes(   
-   DWORD  dwStart,  
-   DWORD  dwCount,  
-   BYTE*  pBytes,  
-   DWORD* pdwBytes  
-);  
-```  
-  
-```csharp  
-int GetBytes(  
-   uint       dwStart,   
-   uint       dwCount,   
-   out byte[] pBytes,   
-   out uint   pdwBytes  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `dwStart`  
- [in]偏移量，以字节为单位，从一开始指向的对象。  
-  
- `dwCount`  
- [in]要检索的字节数。  
-  
- `pBytes`  
- [in、 out]指向填充为值为一系列连续字节的数组，该对象从给定的偏移量开始。  
-  
- `pdwBytes`  
- [out]返回实际检索的字节的数。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 S_OK;否则，返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 如果使用此方法的指针表示由此[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)指向基元类型或基元类型 （即，可以通过简单的字节序列表示一个数组） 的简单数组。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)   
- [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)
+获取指向作为一系列连续字节的值。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetBytes( 
+   DWORD  dwStart,
+   DWORD  dwCount,
+   BYTE*  pBytes,
+   DWORD* pdwBytes
+);
+```
+
+```csharp
+int GetBytes(
+   uint       dwStart,
+   uint       dwCount,
+   out byte[] pBytes,
+   out uint   pdwBytes
+);
+```
+
+#### <a name="parameters"></a>参数
+ `dwStart`
+
+ [in]偏移量，以字节为单位，从一开始指向的对象。
+
+ `dwCount`
+
+ [in]要检索的字节数。
+
+ `pBytes`
+
+ [in、 out]指向填充为值为一系列连续字节的数组，该对象从给定的偏移量开始。
+
+ `pdwBytes`
+
+ [out]返回实际检索的字节的数。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 S_OK;否则，返回错误代码。
+
+## <a name="remarks"></a>备注
+ 如果使用此方法的指针表示由此[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)指向基元类型或基元类型 （即，可以通过简单的字节序列表示一个数组） 的简单数组。
+
+## <a name="see-also"></a>请参阅
+- [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
+- [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

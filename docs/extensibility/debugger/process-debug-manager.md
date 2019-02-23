@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 441f5c470f97012da7c63f79f06dd08f810c1d0a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f6a93cc87be2369ba3bc96bf6682caeb4a727c9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945328"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718932"
 ---
 # <a name="process-debug-manager"></a>进程调试管理器
-进程调试管理器 (PDM) 是管理程序的 Visual Studio 的一个组件，使它们可用于该会话的进程调试管理器和调试引擎。  
-  
- PDM 管理可调试的所有进程。 若要进行调试，必须向 PDM 注册程序。 在启动程序时，通过一个端口或调试引擎时完成此注册。  
-  
-## <a name="see-also"></a>请参阅  
- [进程](../../extensibility/debugger/processes.md)   
- [调试引擎](../../extensibility/debugger/debug-engine.md)   
- [端口](../../extensibility/debugger/ports.md)   
- [程序](../../extensibility/debugger/programs.md)   
- [调试器组件](../../extensibility/debugger/debugger-components.md)
+进程调试管理器 (PDM) 是管理程序的 Visual Studio 的一个组件，使它们可用于该会话的进程调试管理器和调试引擎。
+
+ PDM 管理可调试的所有进程。 若要进行调试，必须向 PDM 注册程序。 在启动程序时，通过一个端口或调试引擎时完成此注册。
+
+## <a name="see-also"></a>请参阅
+- [进程](../../extensibility/debugger/processes.md)
+- [调试引擎](../../extensibility/debugger/debug-engine.md)
+- [端口](../../extensibility/debugger/ports.md)
+- [程序](../../extensibility/debugger/programs.md)
+- [调试器组件](../../extensibility/debugger/debugger-components.md)

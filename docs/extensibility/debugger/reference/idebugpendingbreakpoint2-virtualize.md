@@ -1,7 +1,7 @@
 ---
 title: IDebugPendingBreakpoint2::Virtualize | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugPendingBreakpoint2::Virtualize
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ba9f1fd7587eb99115751790fdca2995c9ab019
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 58c2dd4ffd150caebe616e3d891f0227970826cc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450122"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689650"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 切换此挂起断点的虚拟化的状态。 挂起断点虚拟化时，调试引擎将尝试将其绑定每次新代码将加载到该程序。
@@ -38,8 +38,9 @@ int Virtualize(
 ```
 
 #### <a name="parameters"></a>参数
-`fVirtualize`  
-[in]设置为非零值 (`TRUE`) 来虚拟化挂起断点，或为零 (`FALSE`) 若要关闭虚拟化。
+`fVirtualize`
+
+ [in]设置为非零值 (`TRUE`) 来虚拟化挂起断点，或为零 (`FALSE`) 若要关闭虚拟化。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_BP_DELETED`如果断点已被删除。
@@ -83,4 +84,4 @@ HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
