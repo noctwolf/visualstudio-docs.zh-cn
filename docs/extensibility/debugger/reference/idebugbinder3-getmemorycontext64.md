@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder3::GetMemoryContext64 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetMemoryContext64
 - IDebugBinder3::GetMemoryContext64
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5be0e07721e0f38db68bae2ff8a99aaf50b649b6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 522d6cc0888f3ccbfd8c39a9ec313f7e06add25f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317843"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713862"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 将转换为内存上下文的对象位置或 64 位内存地址。
@@ -40,14 +40,17 @@ int GetMemoryContext64 (
 ```
 
 #### <a name="parameters"></a>参数
-`pField`  
-[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ，描述要查找的对象。 如果`NULL`，然后使用`dwConstant`相反。
+`pField`
 
-`uConstant`  
-[in]64 位内存地址，例如 0x50000000。
+ [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ，描述要查找的对象。 如果`NULL`，然后使用`dwConstant`相反。
 
-`ppMemCxt`  
-[out]返回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)表示的地址对象或在内存中的地址的接口。
+`uConstant`
+
+ [in]64 位内存地址，例如 0x50000000。
+
+`ppMemCxt`
+
+ [out]返回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)表示的地址对象或在内存中的地址的接口。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -127,4 +130,4 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
+- [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

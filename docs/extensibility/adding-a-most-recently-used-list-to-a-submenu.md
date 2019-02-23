@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91db654370cb9a186484c0fd61688bcb25af4ba1
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316170"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710079"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>添加最近使用过的子菜单上的列表
 本演练基于中的演示[添加到菜单的子菜单](../extensibility/adding-a-submenu-to-a-menu.md)，并演示如何将动态列表添加到子菜单。 动态列表窗体创建最近使用过的 (MRU) 列表的基础。
@@ -202,4 +202,4 @@ ms.locfileid: "56316170"
 4. 再次打开子菜单。 请注意，**项 3**现在位于列表的顶部和其他项已推送下移一个位置。 单击**3 项**再次请注意，该消息框仍显示**选定项 3**，指示文本已正确地移动到与命令标签的新位置。
 
 ## <a name="see-also"></a>请参阅
-[动态添加菜单项](../extensibility/dynamically-adding-menu-items.md)
+- [动态添加菜单项](../extensibility/dynamically-adding-menu-items.md)
