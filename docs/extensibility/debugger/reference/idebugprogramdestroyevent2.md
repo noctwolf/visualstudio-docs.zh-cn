@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramDestroyEvent2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramDestroyEvent2
 helpviewer_keywords:
@@ -12,44 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 986c434ba3797ff71cc16f524caf88b38055a503
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c0f4e3f11ad10787e8627ba0250ff1480dfb994
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985414"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697427"
 ---
 # <a name="idebugprogramdestroyevent2"></a>IDebugProgramDestroyEvent2
-当程序已完成运行时，此接口是由调试引擎 (DE) 发送到会话调试管理器 (SDM) 中。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-IDebugProgramDestroyEvent2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>实施者的说明  
- DE 或自定义端口供应商实现报告程序已终止，并且不再可用于调试此接口。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象。 使用 SDM [QueryInterface](/cpp/atl/queryinterface)访问`IDebugEvent2`接口。  
-  
-## <a name="notes-for-callers"></a>调用方的说明  
- DE 或自定义端口供应商创建并发送报告的程序终止此事件对象。 DE 发送该事件通过使用[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 它附加到正在调试的程序时提供的回调函数。 自定义端口供应商发送此事件使用[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)接口。  
-  
-## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
- 下表显示的方法`IDebugProgramDestroyEvent2`。  
-  
-|方法|描述|  
-|------------|-----------------|  
-|[GetExitCode](../../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md)|获取该程序的退出代码。|  
-  
-## <a name="requirements"></a>要求  
- 标头： msdbg.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>请参阅  
- [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+当程序已完成运行时，此接口是由调试引擎 (DE) 发送到会话调试管理器 (SDM) 中。
+
+## <a name="syntax"></a>语法
+
+```
+IDebugProgramDestroyEvent2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>实施者的说明
+ DE 或自定义端口供应商实现报告程序已终止，并且不再可用于调试此接口。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象。 使用 SDM [QueryInterface](/cpp/atl/queryinterface)访问`IDebugEvent2`接口。
+
+## <a name="notes-for-callers"></a>调用方的说明
+ DE 或自定义端口供应商创建并发送报告的程序终止此事件对象。 DE 发送该事件通过使用[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 它附加到正在调试的程序时提供的回调函数。 自定义端口供应商发送此事件使用[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)接口。
+
+## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
+ 下表显示的方法`IDebugProgramDestroyEvent2`。
+
+|方法|描述|
+|------------|-----------------|
+|[GetExitCode](../../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md)|获取该程序的退出代码。|
+
+## <a name="requirements"></a>要求
+ 标头： msdbg.h
+
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop
+
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>请参阅
+- [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

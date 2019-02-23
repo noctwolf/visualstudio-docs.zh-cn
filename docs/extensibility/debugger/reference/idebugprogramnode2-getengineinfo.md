@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::GetEngineInfo | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::GetEngineInfo
 helpviewer_keywords:
@@ -12,41 +12,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b67c6919fbdcc68b44b52ed449147ebe09085c5d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 421eea42c169f586657998e5d4cd57c4c797b71e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54971998"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693186"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
-获取名称和标识符的运行程序的调试引擎 (DE)。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetEngineInfo (   
-   BSTR* pbstrEngine,  
-   GUID* pguidEngine  
-);  
-```  
-  
-```csharp  
-int GetEngineInfo(  
-   out string pbstrEngine,   
-   out Guid pguidEngine  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pbstrEngine`  
- [out]返回的运行程序 DE 名称 (c + + 专用： 这可以是 null 指针，该值指示调用方不希望该引擎的名称)。  
-  
- `pguidEngine`  
- [out]返回运行程序 DE 的全局唯一标识符 (特定于 c + + 的： 这可以是 null 指针，该值指示调用方不感兴趣的引擎的 GUID)。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+获取名称和标识符的运行程序的调试引擎 (DE)。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetEngineInfo ( 
+   BSTR* pbstrEngine,
+   GUID* pguidEngine
+);
+```
+
+```csharp
+int GetEngineInfo(
+   out string pbstrEngine,
+   out Guid pguidEngine
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pbstrEngine`
+
+ [out]返回的运行程序 DE 名称 (c + + 专用： 这可以是 null 指针，该值指示调用方不希望该引擎的名称)。
+
+ `pguidEngine`
+
+ [out]返回运行程序 DE 的全局唯一标识符 (特定于 c + + 的： 这可以是 null 指针，该值指示调用方不感兴趣的引擎的 GUID)。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

@@ -1,7 +1,7 @@
 ---
 title: FRAMEINFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FRAMEINFO_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10641f9af57f572b660e900161a450c69886ad5e
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 54bb93fa6f88c02731691728bceacdd4a5fe2036
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316036"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694343"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
 指定要检索的堆栈帧对象有关的信息。
@@ -98,98 +98,67 @@ public enum enum_FRAMEINFO_FLAGS {
 ```
 
 ## <a name="members"></a>成员
-FIF_FUNCNAME  
-初始化/使用`m_bstrFuncName`字段。
+FIF_FUNCNAME 初始化/使用`m_bstrFuncName`字段。
 
-FIF_RETURNTYPE  
-初始化/使用`m_bstrReturnType`字段。
+FIF_RETURNTYPE 初始化/使用`m_bstrReturnType`字段。
 
-FIF_ARGS  
-初始化/使用`m_bstrArgs`字段。
+FIF_ARGS 初始化/使用`m_bstrArgs`字段。
 
-FIF_LANGUAGE  
-初始化/使用`m_bstrLanguage`字段。
+FIF_LANGUAGE 初始化/使用`m_bstrLanguage`字段。
 
-FIF_MODULE  
-初始化/使用`m_bstrModule`字段。
+FIF_MODULE 初始化/使用`m_bstrModule`字段。
 
-FIF_STACKRANGE  
-初始化/用`m_addrMin`和`m_addrMax`（堆栈范围） 字段。
+FIF_STACKRANGE 初始化/用`m_addrMin`和`m_addrMax`（堆栈范围） 字段。
 
-FIF_FRAME  
-初始化/使用`m_pFrame`字段。
+FIF_FRAME 初始化/使用`m_pFrame`字段。
 
-FIF_DEBUGINFO  
-初始化/使用`m_fHasDebugInfo`字段。
+FIF_DEBUGINFO 初始化/使用`m_fHasDebugInfo`字段。
 
-FIF_STALECODE  
-初始化/使用`m_fStaleCode`字段。
+FIF_STALECODE 初始化/使用`m_fStaleCode`字段。
 
-FIF_ANNOTATEDFRAME  
-初始化/使用`m_fAnnotatedFrame`字段。
+FIF_ANNOTATEDFRAME 初始化/使用`m_fAnnotatedFrame`字段。
 
-FIF_DEBUG_MODULEP  
-初始化/使用`m_pModule`字段。
+FIF_DEBUG_MODULEP 初始化/使用`m_pModule`字段。
 
-FIF_FUNCNAME_FORMAT  
-设置格式的函数名称。 在返回的结果`m_bstrFunName`填写字段和任何其他字段。
+FIF_FUNCNAME_FORMAT 设置格式的函数名称。 在返回的结果`m_bstrFunName`填写字段和任何其他字段。
 
-FIF_FUNCNAME_RETURNTYPE  
-将添加到的返回类型`m_bstrFuncName`字段。
+FIF_FUNCNAME_RETURNTYPE 将添加到的返回类型`m_bstrFuncName`字段。
 
-FIF_FUNCNAME_ARGS  
-将添加到参数`m_bstrFuncName`字段。
+FIF_FUNCNAME_ARGS 将添加到参数`m_bstrFuncName`字段。
 
-FIF_FUNCNAME_LANGUAGE  
-将添加到语言`m_bstrFuncName`字段。
+FIF_FUNCNAME_LANGUAGE 将添加到语言`m_bstrFuncName`字段。
 
-FIF_FUNCNAME_MODULE  
-将添加到的模块名称`m_bstrFuncName`字段。
+FIF_FUNCNAME_MODULE 将添加到的模块名称`m_bstrFuncName`字段。
 
-FIF_FUNCNAME_LINES  
-将添加到的行数`m_bstrFuncName`字段。
+FIF_FUNCNAME_LINES 将添加到的行数`m_bstrFuncName`字段。
 
-FIF_FUNCNAME_OFFSET  
-将添加到`m_bstrFuncName`字段以字节为单位从行开头的偏移量，如果`FIF_FUNCNAME_LINES`指定。 如果`FIF_FUNCNAME_LINES`未指定，或如果行号不可用，从函数开始将偏移量添加以字节为单位。
+FIF_FUNCNAME_OFFSET 将添加到`m_bstrFuncName`字段以字节为单位从行开头的偏移量，如果`FIF_FUNCNAME_LINES`指定。 如果`FIF_FUNCNAME_LINES`未指定，或如果行号不可用，从函数开始将偏移量添加以字节为单位。
 
-FIF_FUNCNAME_ARGS_TYPES  
-将添加到每个函数自变量的类型`m_bstrFuncName`字段。
+FIF_FUNCNAME_ARGS_TYPES 将添加到每个函数自变量的类型`m_bstrFuncName`字段。
 
-FIF_FUNCNAME_ARGS_NAMES  
-将添加到每个函数参数的名称`m_bstrFuncName`字段。
+添加到每个函数自变量的名称，FIF_FUNCNAME_ARGS_NAMES`m_bstrFuncName`字段。
 
-FIF_FUNCNAME_ARGS_VALUES  
-将添加到每个函数自变量的值`m_bstrFuncName`字段。
+FIF_FUNCNAME_ARGS_VALUES 将添加到每个函数自变量的值`m_bstrFuncName`字段。
 
-FIF_FUNCNAME_ARGS_ALL  
-添加类型、 名称和值的所有自变量`m_bstrFuncName`字段。
+类型、 名称和值的所有自变量，将添加 FIF_FUNCNAME_ARGS_ALL`m_bstrFuncName`字段。
 
-FIF_ARGS_TYPES  
-检索自变量类型并将其格式化。
+检索 FIF_ARGS_TYPES 自变量类型并将其格式化。
 
-FIF_ARGS_NAMES  
-参数名称检索并设置格式。
+FIF_ARGS_NAMES 参数名称检索并设置格式。
 
-FIF_ARGS_VALUES  
-检索自变量值并将其格式化。
+检索 FIF_ARGS_VALUES 参数值并将其格式化。
 
-FIF_ARGS_ALL  
-检索和格式化类型、 名称和所有参数的值。
+FIF_ARGS_ALL 检索和格式类型、 名称和所有参数的值。
 
-FIF_ARGS_NOFORMAT  
-指定不格式化参数 （例如，进行不添加开始和结束括号的参数列表也不添加参数之间的分隔符）。
+FIF_ARGS_NOFORMAT 指定的参数都不会格式化 （例如，进行不添加开始和结束括号的参数列表也不添加参数之间的分隔符）。
 
-FIF_ARGS_NO_FUNC_EVAL  
-指定检索参数值时不应使用函数 （属性） 求值。
+检索参数值时应不使用 FIF_ARGS_NO_FUNC_EVAL 指定的函数 （属性） 求值。
 
-FIF_FILTER_NON_USER_CODE  
-调试引擎是进行筛选以便不会包含这些非用户代码帧。
+FIF_FILTER_NON_USER_CODE 调试引擎是进行筛选以便不会包含这些非用户代码帧。
 
-FIF_ARGS_NO_TOSTRING  
-不允许`ToString()`函数求值或格式设置时返回函数自变量。
+FIF_ARGS_NO_TOSTRING 不允许`ToString()`函数求值或格式设置时返回函数自变量。
 
-FIF_DESIGN_TIME_EXPR_EVAL  
-应从承载的应用程序域而不是宿主进程获取帧信息。
+应从承载的应用程序域而不是宿主进程获取 FIF_DESIGN_TIME_EXPR_EVAL 帧信息。
 
 ## <a name="remarks"></a>备注
 这些标志传递给[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)并[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)方法，以指示哪些字段是在初始化[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)结构。
@@ -204,7 +173,7 @@ FIF_DESIGN_TIME_EXPR_EVAL
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)  
-[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)
+- [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)
