@@ -1,7 +1,7 @@
 ---
 title: DISASSEMBLY_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DISASSEMBLY_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ac3a43f64e4284cd14741acde390c930ffbb69
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 0c4602fa1b8d30e9119bb39e925cf7768ae1cbcf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413275"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682422"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 指定反汇编的标志。
@@ -48,23 +48,17 @@ public enum enum_DISASSEMBLY_FLAGS {
 ```
 
 ## <a name="members"></a>成员
-DF_DOCUMENTCHANGE  
-指示此指令比前一个不同的文档。
+DF_DOCUMENTCHANGE 指示比前一个不同文档中的此指令。
 
-DF_DISABLED  
-指示此指令将不会执行。
+DF_DISABLED 指示此指令将不会执行。
 
-DF_INSTRUCTION_ACTIVE  
-指示此指令是一个要执行的下一步说明 （可能有多个）。
+DF_INSTRUCTION_ACTIVE 指示此指令的其中一个要执行的下一步说明 （可能有多个）。
 
-DF_DATA  
-指示此指令实际上是数据 （而不是代码）。
+DF_DATA 指示此指令实际上是数据 （而不是代码）。
 
-DF_HASSOURCE  
-指示此指令具有源。 一些说明，如分析或进行垃圾收集代码中，有没有相应的源。
+DF_HASSOURCE 指示此指令具有源。 一些说明，如分析或进行垃圾收集代码中，有没有相应的源。
 
-DF_DOCUMENT_CHECKSUM  
-指示`bstrDocumentUrl`字段后的文档 URL 包含校验和数据。 请参阅备注部分[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)校验和数据的存储方式的结构。
+DF_DOCUMENT_CHECKSUM 指示`bstrDocumentUrl`字段后的文档 URL 包含校验和数据。 请参阅备注部分[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)校验和数据的存储方式的结构。
 
 ## <a name="remarks"></a>备注
 用作`dwFlags`的成员[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)结构。
@@ -79,5 +73,5 @@ DF_DOCUMENT_CHECKSUM
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugEngine2::DestroyProgram | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugEngine2::DestroyProgram
 helpviewer_keywords:
@@ -12,43 +12,44 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e02cd777e3ff363ef17234367be401cf39ea9952
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f626005621604d367f5878e36899aa2ff46114ee
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031703"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678444"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
-通知的调试引擎 (DE) 指定的程序已异常终止，DE 应清理对该程序的所有引用和发送程序销毁事件。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT DestroyProgram(   
-   IDebugProgram2* pProgram  
-);  
-```  
-  
-```cpp  
-int DestroyProgram(   
-   IDebugProgram2 pProgram  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pProgram`  
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)对象，表示已异常终止该程序。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 调用此方法后，随后会发送 DE [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)回会话调试管理器 (SDM) 的事件。  
-  
- 未实现此方法 (返回`E_NOTIMPL`) 如果 DE 为正在调试的程序在同一进程中运行。 仅当 DE SDM 同一个进程中运行，实现此方法。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)   
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+通知的调试引擎 (DE) 指定的程序已异常终止，DE 应清理对该程序的所有引用和发送程序销毁事件。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT DestroyProgram( 
+   IDebugProgram2* pProgram
+);
+```
+
+```cpp
+int DestroyProgram( 
+   IDebugProgram2 pProgram
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pProgram`
+
+ [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)对象，表示已异常终止该程序。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="remarks"></a>备注
+ 调用此方法后，随后会发送 DE [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)回会话调试管理器 (SDM) 的事件。
+
+ 未实现此方法 (返回`E_NOTIMPL`) 如果 DE 为正在调试的程序在同一进程中运行。 仅当 DE SDM 同一个进程中运行，实现此方法。
+
+## <a name="see-also"></a>请参阅
+- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+- [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

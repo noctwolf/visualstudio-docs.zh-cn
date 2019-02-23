@@ -11,30 +11,30 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e62eb8c220276737cfbe0cd275b0fc81afaa859c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b0da318ac0845cdfe074847eecadcfb12138e447
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55012221"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685945"
 ---
 # <a name="ports"></a>端口
-在调试器体系结构中，*端口*:  
-  
-- 服务器上运行的进程组的容器。 例如，端口可能表示连接到基于 Windows CE 的设备的串行电缆或网络的非 DCOM 计算机。 一个特殊的端口，称为本地端口，包含在本地计算机上运行的所有进程。  
-  
-- 可以将自己标识的名称或标识符。  
-  
-- 可枚举的端口上运行的所有进程和启动并终止这些进程。  
-  
-- 为由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口，通过将传递创建[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)参数[端口](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)。  
-  
-  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供了处理所有基于 Windows 的进程，本机和托管的默认端口。 自定义端口必须是连接与设置不是基于 Windows 的外部设备。 若要提供此类自定义端口，必须还设置自定义端口提供程序。  
-  
-## <a name="see-also"></a>请参阅  
- [服务器](../../extensibility/debugger/servers-visual-studio-sdk.md)   
- [进程](../../extensibility/debugger/processes.md)   
- [调试器概念](../../extensibility/debugger/debugger-concepts.md)   
- [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)   
- [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)   
- [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)
+在调试器体系结构中，*端口*:
+
+- 服务器上运行的进程组的容器。 例如，端口可能表示连接到基于 Windows CE 的设备的串行电缆或网络的非 DCOM 计算机。 一个特殊的端口，称为本地端口，包含在本地计算机上运行的所有进程。
+
+- 可以将自己标识的名称或标识符。
+
+- 可枚举的端口上运行的所有进程和启动并终止这些进程。
+
+- 为由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口，通过将传递创建[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)参数[端口](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)。
+
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供了处理所有基于 Windows 的进程，本机和托管的默认端口。 自定义端口必须是连接与设置不是基于 Windows 的外部设备。 若要提供此类自定义端口，必须还设置自定义端口提供程序。
+
+## <a name="see-also"></a>请参阅
+- [服务器](../../extensibility/debugger/servers-visual-studio-sdk.md)
+- [进程](../../extensibility/debugger/processes.md)
+- [调试器概念](../../extensibility/debugger/debugger-concepts.md)
+- [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)
+- [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)
+- [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)

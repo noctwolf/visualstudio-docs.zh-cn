@@ -9,61 +9,61 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf69c44f8bd99ddd88799c7ffbf2b31c44e791fe
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b6b657defd229d191fcb4dcd6343f3c8c64505cc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966837"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683306"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 元素（Visual Studio 模板）
-指定项目模板面向的平台。 此元素用于指定项目模板用于创建 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用。  
-  
-## <a name="syntax"></a>语法  
-  
-```xml  
-<VSTemplate>  
-    <TemplateData>   
-        <TargetPlatformName> OperatingSystem</TargetPlatformName>  
-```  
-  
-## <a name="attributes-and-elements"></a>特性和元素  
- 下列各节描述了特性、子元素和父元素。  
-  
-### <a name="attributes"></a>特性  
- 无。  
-  
-### <a name="child-elements"></a>子元素  
-  
-|元素|描述|  
-|-------------|-----------------|  
-|[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|指定项目模板面向的操作系统版本。|  
-  
-### <a name="parent-elements"></a>父元素  
-  
-|元素|描述|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。|  
-  
-## <a name="text-value"></a>文本值  
- 需要一个文本值。  
-  
-## <a name="remarks"></a>备注  
- 文本必须为 **Windows**。  
-  
-## <a name="example"></a>示例  
- 此示例指定项目模板面向 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或更高版本。  
-  
-```xml  
-<VSTemplate Type="Project" Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">   
-    <TemplateData>   
-        <TargetPlatformName>Windows</TargetPlatformName>   
-        <RequiredPlatformVersion>8</RequiredPlatformVersion>   
-    </TemplateData>   
-    <TemplateContent> </TemplateContent>  
-</VSTemplate>  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+指定项目模板面向的平台。 此元素用于指定项目模板用于创建 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用。
+
+## <a name="syntax"></a>语法
+
+```xml
+<VSTemplate>
+    <TemplateData>
+        <TargetPlatformName> OperatingSystem</TargetPlatformName>
+```
+
+## <a name="attributes-and-elements"></a>特性和元素
+ 下列各节描述了特性、子元素和父元素。
+
+### <a name="attributes"></a>特性
+ 无。
+
+### <a name="child-elements"></a>子元素
+
+|元素|描述|
+|-------------|-----------------|
+|[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|指定项目模板面向的操作系统版本。|
+
+### <a name="parent-elements"></a>父元素
+
+|元素|描述|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。|
+
+## <a name="text-value"></a>文本值
+ 需要一个文本值。
+
+## <a name="remarks"></a>备注
+ 文本必须为 **Windows**。
+
+## <a name="example"></a>示例
+ 此示例指定项目模板面向 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或更高版本。
+
+```xml
+<VSTemplate Type="Project" Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <TargetPlatformName>Windows</TargetPlatformName>
+        <RequiredPlatformVersion>8</RequiredPlatformVersion>
+    </TemplateData>
+    <TemplateContent> </TemplateContent>
+</VSTemplate>
+```
+
+## <a name="see-also"></a>请参阅
+- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

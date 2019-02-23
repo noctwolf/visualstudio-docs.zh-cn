@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef36b663a95f2c6eaca31c9091898cbe70db435
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: d758d6c34563a2915e295514380cf07c847d86c4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450381"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686790"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 使表达式计算器 (EE) 来指定调试器引擎 (DE) 将用于读取指标设置的回调接口。
@@ -36,8 +36,9 @@ int SetCallback (
 ```
 
 #### <a name="parameters"></a>参数
-`pCallback`  
-[in]要用于设置回调的接口。
+`pCallback`
+
+ [in]要用于设置回调的接口。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -74,4 +75,4 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)
+- [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

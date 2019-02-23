@@ -1,7 +1,7 @@
 ---
 title: EVENTATTRIBUTES | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - EVENTATTRIBUTES
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b0f7de41857984464afb1576448fec56bd2841d
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 58417471e37dd335c2fa751492f2db357274417a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413262"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686894"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 指定的事件属性。
@@ -50,26 +50,19 @@ public enum enum_EVENTATTRIBUTES {
 ```
 
 ## <a name="members"></a>成员
-EVENT_ASYNCHRONOUS  
-指示事件是异步的需要该事件没有收到回复。
+EVENT_ASYNCHRONOUS 指示事件是异步的需要该事件没有收到回复。
 
-EVENT_SYNCHRONOUS  
-指示事件是同步的通过答复[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)。
+EVENT_SYNCHRONOUS 指示事件是同步的通过答复[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)。
 
-EVENT_STOPPING  
-指示这是一个停止事件。 必须使用组合`EVENT_ASYNCHRONOUS`或`EVENT_SYNCHRONOUS`。
+EVENT_STOPPING 指示这是一个停止事件。 必须使用组合`EVENT_ASYNCHRONOUS`或`EVENT_SYNCHRONOUS`。
 
-EVENT_ASYNC_STOP  
-表示异步停止事件。 当前没有此类事件。 此标志只是一个占位符。
+EVENT_ASYNC_STOP 表示异步停止事件。 当前没有此类事件。 此标志只是一个占位符。
 
-EVENT_SYNC_STOP  
-指示同步停止事件 (的组合`EVENT_SYNCHRONOUS`和`EVENT_STOPPING`)。 发送 stopping 事件时，调试引擎 (DE) 使用此值。 通过调用进行答复[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)，[步骤](../../../extensibility/debugger/reference/idebugprogram2-step.md)，或[继续](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。
+EVENT_SYNC_STOP 指示同步停止事件 (的组合`EVENT_SYNCHRONOUS`和`EVENT_STOPPING`)。 发送 stopping 事件时，调试引擎 (DE) 使用此值。 通过调用进行答复[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)，[步骤](../../../extensibility/debugger/reference/idebugprogram2-step.md)，或[继续](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。
 
-EVENT_IMMEDIATE  
-指示将立即并以同步方式发送到 IDE 的事件。 此标志结合了等其他标志`EVENT_ASYNCHRONOUS`， `EVENT_SYNCHRONOUS`，或`EVENT_SYNC_STOP`来指示类型的事件，并在已知 （如果有） 的回复机制。
+EVENT_IMMEDIATE 指示将立即并以同步方式发送到 IDE 的事件。 此标志结合了等其他标志`EVENT_ASYNCHRONOUS`， `EVENT_SYNCHRONOUS`，或`EVENT_SYNC_STOP`来指示类型的事件，并在已知 （如果有） 的回复机制。
 
-EVENT_EXPRESSION_EVALUATION  
-该事件为表达式计算的结果。
+EVENT_EXPRESSION_EVALUATION 事件是表达式计算的结果。
 
 ## <a name="remarks"></a>备注
 这些值将按传递`dwAttrib`的参数[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)方法。
@@ -84,6 +77,6 @@ EVENT_EXPRESSION_EVALUATION
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)  
-[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)
+- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

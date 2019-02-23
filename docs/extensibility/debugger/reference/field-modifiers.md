@@ -1,7 +1,7 @@
 ---
 title: FIELD_MODIFIERS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FIELD_MODIFIERS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf66338474ec432f327cef3f3a0b64f718699d78
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: b22559af26a0a5f6c8af68726a5ba336e1bcfb4a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317895"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689624"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 指定字段类型修饰符。
@@ -102,83 +102,57 @@ public enum enum_FIELD_MODIFIERS {
 ```
 
 ## <a name="members"></a>成员
-FIELD_MOD_ACCESS_TYPE  
-指示不能访问该字段。
+FIELD_MOD_ACCESS_TYPE 指示不能访问该字段。
 
-FIELD_MOD_ACCESS_PUBLIC  
-指示该字段具有公共访问权限。
+FIELD_MOD_ACCESS_PUBLIC 指示该字段具有公共访问权限。
 
-FIELD_MOD_ACCESS_PROTECTED  
-指示该字段具有受保护的访问。
+FIELD_MOD_ACCESS_PROTECTED 指示该字段具有受保护的访问。
 
-FIELD_MOD_ACCESS_PRIVATE  
-指示该字段具有私有访问权限。
+FIELD_MOD_ACCESS_PRIVATE 指示该字段具有私有访问权限。
 
-FIELD_MOD_NOMODIFIERS  
-指示该字段具有没有修饰符。
+FIELD_MOD_NOMODIFIERS 指示字段没有修饰符。
 
-FIELD_MOD_STATIC  
-指示该字段是静态的。
+FIELD_MOD_STATIC 指示该字段是静态的。
 
-FIELD_MOD_CONSTANT  
-指示字段是一个常量。
+FIELD_MOD_CONSTANT 指示字段是一个常量。
 
-FIELD_MOD_TRANSIENT  
-指示该字段为暂时性。
+FIELD_MOD_TRANSIENT 指示该字段是暂时性的。
 
-FIELD_MOD_VOLATILE  
-指示该字段是易失性。
+FIELD_MOD_VOLATILE 指示该字段是易失性。
 
-FIELD_MOD_ABSTRACT  
-指示该字段为抽象。
+FIELD_MOD_ABSTRACT 指示字段为抽象。
 
-FIELD_MOD_NATIVE  
-指示该字段是本机。
+FIELD_MOD_NATIVE 指示该字段是本机。
 
-FIELD_MOD_SYNCHRONIZED  
-指示该字段保持同步。
+FIELD_MOD_SYNCHRONIZED 指示该字段保持同步。
 
-FIELD_MOD_VIRTUAL  
-指示该字段是虚拟。
+FIELD_MOD_VIRTUAL 指示该字段是虚拟的。
 
-FIELD_MOD_INTERFACE  
-指示该字段是一个接口。
+FIELD_MOD_INTERFACE 指示该字段是一个接口。
 
-FIELD_MOD_FINAL  
-指示该字段是最后一个。
+FIELD_MOD_FINAL 指示该字段是最后一个。
 
-FIELD_MOD_SENTINEL  
-指示该字段是 sentinel。
+FIELD_MOD_SENTINEL 指示该字段是 sentinel。
 
-FIELD_MOD_INNERCLASS  
-指示该字段是一个内部类。
+FIELD_MOD_INNERCLASS 指示该字段是一个内部类。
 
-FIELD_TYPE_OPTIONAL  
-指示字段是可选的。
+FIELD_TYPE_OPTIONAL 指示字段是可选的。
 
-FIELD_MOD_BYREF  
-指示该字段是引用自变量。 这是专门为方法参数。
+FIELD_MOD_BYREF 指示该字段是引用自变量。 这是专门为方法参数。
 
-FIELD_MOD_HIDDEN  
-指示字段必须是隐藏或显示在另一个上下文中;例如，[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]静态局部变量。
+FIELD_MOD_HIDDEN 指示字段必须是隐藏或显示在另一个上下文中;例如，[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]静态局部变量。
 
-FIELD_MOD_MARSHALASOBJECT  
-指示此字段表示的对象`IUnknown`接口。
+FIELD_MOD_MARSHALASOBJECT 指示此字段表示的对象`IUnknown`接口。
 
-FIELD_MOD_SPECIAL_NAME  
-指示该字段具有特殊名称，例如，`.ctor`的构造函数 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]仅)。
+FIELD_MOD_SPECIAL_NAME 指示该字段具有特殊名称，例如，`.ctor`的构造函数 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]仅)。
 
-FIELD_MOD_HIDEBYSIG  
-指示该字段具有`Overloads`关键字应用于它 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]仅)。
+FIELD_MOD_HIDEBYSIG 指示该字段具有`Overloads`关键字应用于它 ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]仅)。
 
-FIELD_MOD_WRITEONLY  
-指示该字段是只写。 此值不包括在`FIELD_MOD_ALL`，因为此类只写字段的唯一用途是函数求值。 用户必须明确地要求提供`FIELD_MOD_WRITEONLY`字段。
+FIELD_MOD_WRITEONLY 指示该字段是只写。 此值不包括在`FIELD_MOD_ALL`，因为此类只写字段的唯一用途是函数求值。 用户必须明确地要求提供`FIELD_MOD_WRITEONLY`字段。
 
-FIELD_MOD_ACCESS_MASK  
-指示字段访问掩码。
+FIELD_MOD_ACCESS_MASK 指示一个字段访问掩码。
 
-FIELD_MOD_MASK  
-指示字段修饰符的掩码。
+FIELD_MOD_MASK 指示字段修饰符的掩码。
 
 ## <a name="remarks"></a>备注
 用于`dwModifiers`的成员[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)结构。
@@ -193,6 +167,6 @@ FIELD_MOD_MASK
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)  
-[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
+- [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)

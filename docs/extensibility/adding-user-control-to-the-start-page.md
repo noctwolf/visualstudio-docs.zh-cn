@@ -12,19 +12,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf06084be7ea3d9f7dfa27a0d6dec49351ab5cd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+monikerRange: vs-2017
+ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317752"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703235"
 ---
 # <a name="add-user-control-to-the-start-page"></a>将用户控件添加到启动页
+
 本演练演示如何添加对自定义起始页的 DLL 引用。 该示例向解决方案添加一个用户控件、 生成用户控件，然后从启动页中引用生成的程序集 *.xaml*文件。 一个新选项卡承载用户控件，该函数作为基本的 Web 浏览器控件。
 
 可以使用相同的过程来添加任何程序集都可以从调用 *.xaml*文件。
 
 ## <a name="add-a-wpf-user-control-to-the-solution"></a>将 WPF 用户控件添加到解决方案
+
 首先，将 Windows Presentation Foundation (WPF) 用户控件添加到起始页解决方案。
 
 1. 我们在中创建的创建启动页上，通过使用[创建自定义起始页](../extensibility/creating-a-custom-start-page.md)。
@@ -36,6 +39,7 @@ ms.locfileid: "56317752"
 4. 将控件`WebUserControl`，然后单击**确定**。
 
 ## <a name="implement-the-user-control"></a>实现用户控件
+
 若要实现一个 WPF 用户控件，生成在 XAML 中的用户界面 (UI)，然后在 C# 或其他.NET 语言编写的代码隐藏事件。
 
 ### <a name="to-write-the-xaml-for-the-user-control"></a>若要编写用户控件的 XAML
@@ -132,7 +136,8 @@ ms.locfileid: "56317752"
 4. 生成解决方案。
 
 ## <a name="add-the-user-control-to-the-start-page"></a>将用户控件添加到启动页
- 若要使此控件可用于起始页项目起始页项目文件中，添加对新的控件库的引用。 然后可以将控件添加到启动页 XAML 标记。
+
+若要使此控件可用于起始页项目起始页项目文件中，添加对新的控件库的引用。 然后可以将控件添加到启动页 XAML 标记。
 
 1. 在中**解决方案资源管理器**，在起始页项目中，右键单击**引用**，然后单击**添加引用**。
 
@@ -185,5 +190,6 @@ ms.locfileid: "56317752"
     应显示你的自定义起始页。 如果你想要更改的任何文件，必须关闭实验实例，进行更改、 复制和粘贴已更改的文件，以及然后重新打开实验实例，以查看所做的更改。
 
 ## <a name="see-also"></a>请参阅
-[WPF 容器控件](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)  
-[演练：将自定义 XAML 添加到启动页](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+
+- [WPF 容器控件](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [演练：将自定义 XAML 添加到启动页](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

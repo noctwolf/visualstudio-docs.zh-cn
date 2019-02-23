@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bb77683187bcb50c1aa5a4f599610acdbf1ac45
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5ebb82353b3137e03e559a3b60132f4c25a306ab
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55038335"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716098"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>演练：发布 Visual Studio 扩展
 
@@ -73,33 +73,33 @@ ms.locfileid: "55038335"
 8. 在**2:提供扩展详细信息**，某些字段会自动填充从*source.extension.vsixmanifest*文件从您的扩展插件。 查找有关每个以下的更多详细信息：
 
     * **内部名称**扩展的详细信息页的 URL 中使用。 例如，发布在发布服务器名称"myname"扩展和指定的内部名称为"my 扩展"结果中的 URL"marketplace.visualstudio\.com/items?itemName=myname.myextension"扩展的详细信息页。
-    
+
     * **显示名称**您的扩展。 此名称是从自动填充*source.extension.vsixmanifest*文件。
-   
+
     * **版本**数要上传的扩展。 此版本已从自动填充*source.extension.vsixmanifest*文件。
-    
+
     * **VSIX ID**是 Visual Studio 将使用为扩展插件的唯一标识符。 如果你想要让您自动更新的扩展，则需要使用此标识符。 此标识符是从自动填充*source.extension.vsixmanifest*文件。
-    
+
    * **徽标**用于你的扩展。 此徽标是从自动填充*source.extension.vsixmanifest*文件提供。
-    
+
      * **简短说明**的扩展功能的。 此说明是从自动填充*source.extension.vsixmanifest*文件。
-    
+
      * **概述**是包括屏幕截图和有关您的扩展插件的作用的详细的信息的好时机。
-    
+
      * **支持的 Visual Studio 版本**允许您选择的 Visual Studio 版本中将处理您的扩展插件。 您的扩展插件仅安装到这些版本。
-    
+
      * * * 支持 Visual Studio 版本，可以选择您的扩展插件将适用于 Visual Studio 的版本。 您的扩展插件仅安装到这些版本。
-    
+
      * **类型**。 最常见的扩展类型是**工具**。
-    
+
      * **类别**。 选择最多三个是最佳适合您的扩展插件的。
-    
+
      * **标记**是关键字，可帮助用户找到您的扩展插件。 标记可帮助提高你的扩展在 Marketplace 中搜索相关性。
-    
+
      * **定价类别**是您的扩展插件的成本。
-    
+
      * **源代码存储库**使您可以与社区分享你的源代码的链接。
-    
+
      * **您的扩展允许问答**允许用户在你扩展条目页面留下的问题。
 
 9. 单击**保存并上传**。 此选项操作，将返回到发布服务器管理页。 您的扩展插件尚未发布。 若要发布扩展，右键单击扩展，然后选择**设为公开**。 您可以查看您的扩展插件的外观像在 Marketplace 上通过选择**查看扩展**。 获取数字，请单击**报表**。 若要更改您的扩展插件，请单击**编辑**。
@@ -121,13 +121,13 @@ Marketplace 支持授予其他用户权限来访问和管理发布者帐户。
 3. 然后可以指定你想要添加并授予适当的下的访问级别的用户的电子邮件地址**选择一个角色**。  可从以下选项中进行选择：
 
    * **创建者**:用户可以发布扩展，但不能查看或管理其他用户发布的扩展。
-  
+
    * **读取器**:用户可以查看扩展，但不能发布或管理扩展。
-  
+
    * **参与者**:用户可以发布和管理扩展，但不能编辑发布服务器设置或管理访问权限。
-  
+
    * **所有者**:用户可以发布和管理扩展，编辑发布服务器设置和管理访问权限。
-  
+
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>从 Visual Studio Marketplace 安装扩展
 
 现在，发布扩展时，在 Visual Studio 中安装它，然后对其进行测试。

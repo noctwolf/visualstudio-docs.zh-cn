@@ -11,39 +11,39 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f672a9d18e4963dba47b46a12e113e0a25a618
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 60129950c2311cc94b8573de4cd8ae3c46194e75
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001545"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704743"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties 类-内部成员
-包含的其他属性<xref:System.Threading.Tasks.Task>对象。  
-  
- **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **程序集：** mscorlib （在 mscorlib.dll 中)  
-  
- 无法从.NET Framework 来访问这些内部成员，因为以下语法提供通用中间语言 (CIL)。  
-  
-## <a name="syntax"></a>语法  
-  
-```csharp  
-.class auto ansi nested assembly beforefieldinit ContingentProperties  
-       extends System.Object  
-```  
-  
-## <a name="members"></a>成员  
-  
-### <a name="fields"></a>字段  
-  
-|name|描述|  
-|----------|-----------------|  
-|[m_children](../../extensibility/debugger/m-children-field.md)|使用此任务中注册的子任务的列表。|  
-  
-## <a name="remarks"></a>备注  
- 仅在需要时，.NET Framework 初始化此类的字段。  
-  
-## <a name="see-also"></a>请参阅  
- [.NET Framework 的并行扩展内幕](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+包含的其他属性<xref:System.Threading.Tasks.Task>对象。
+
+ **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **程序集：** mscorlib （在 mscorlib.dll 中)
+
+ 无法从.NET Framework 来访问这些内部成员，因为以下语法提供通用中间语言 (CIL)。
+
+## <a name="syntax"></a>语法
+
+```csharp
+.class auto ansi nested assembly beforefieldinit ContingentProperties
+       extends System.Object
+```
+
+## <a name="members"></a>成员
+
+### <a name="fields"></a>字段
+
+|name|描述|
+|----------|-----------------|
+|[m_children](../../extensibility/debugger/m-children-field.md)|使用此任务中注册的子任务的列表。|
+
+## <a name="remarks"></a>备注
+ 仅在需要时，.NET Framework 初始化此类的字段。
+
+## <a name="see-also"></a>请参阅
+- [.NET Framework 的并行扩展内幕](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
