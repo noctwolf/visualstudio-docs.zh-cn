@@ -10,42 +10,42 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a24c661c986116d9966d2ca5785bd51e2726c6d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 27792aa1a8ca9edf1a85f4d607bbef926fb69027
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998399"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719015"
 ---
 # <a name="call-debugger-events"></a>调用调试器事件
-调试会话中的事件将按特定顺序发生。  
-  
-## <a name="discussion"></a>讨论  
- 若要了解的调试引擎 (DE) 和会话调试管理器 (SDM) 之间的调用模式，以下内容代表典型的调试会话中发生的事件的调用顺序：  
-  
-1.  [附加和分离到程序](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
-  
-2.  [启动调试器](../../extensibility/debugger/launching-the-debugger.md)  
-  
-3.  [终止程序](../../extensibility/debugger/terminating-a-program.md)  
-  
-4.  [创建断点](../../extensibility/debugger/creating-a-breakpoint.md)  
-  
-5.  [当断点绑定或成为取消绑定](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
-  
-6.  [断点错误](../../extensibility/debugger/breakpoint-errors.md)  
-  
-7.  [命中断点](../../extensibility/debugger/hitting-a-breakpoint.md)  
-  
-8.  [删除断点](../../extensibility/debugger/deleting-a-breakpoint.md)  
-  
-9. [进入中断模式](../../extensibility/debugger/entering-break-mode.md)  
-  
-10. [在中断模式下单步执行](../../extensibility/debugger/stepping-in-break-mode.md)  
-  
-11. [在中断模式下的表达式计算](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
-  
-12. [异常处理](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)  
-  
-## <a name="see-also"></a>请参阅  
- [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+调试会话中的事件将按特定顺序发生。
+
+## <a name="discussion"></a>讨论
+ 若要了解的调试引擎 (DE) 和会话调试管理器 (SDM) 之间的调用模式，以下内容代表典型的调试会话中发生的事件的调用顺序：
+
+1.  [附加和分离到程序](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
+
+2.  [启动调试器](../../extensibility/debugger/launching-the-debugger.md)
+
+3.  [终止程序](../../extensibility/debugger/terminating-a-program.md)
+
+4.  [创建断点](../../extensibility/debugger/creating-a-breakpoint.md)
+
+5.  [当断点绑定或成为取消绑定](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)
+
+6.  [断点错误](../../extensibility/debugger/breakpoint-errors.md)
+
+7.  [命中断点](../../extensibility/debugger/hitting-a-breakpoint.md)
+
+8.  [删除断点](../../extensibility/debugger/deleting-a-breakpoint.md)
+
+9. [进入中断模式](../../extensibility/debugger/entering-break-mode.md)
+
+10. [在中断模式下单步执行](../../extensibility/debugger/stepping-in-break-mode.md)
+
+11. [在中断模式下的表达式计算](../../extensibility/debugger/expression-evaluation-in-break-mode.md)
+
+12. [异常处理](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)
+
+## <a name="see-also"></a>请参阅
+- [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)
