@@ -1,7 +1,7 @@
 ---
 title: GETHOSTNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - GETHOSTNAME_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f158cdaba17c030ce830c8adf26b6985c9b86dad
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: d8578056f907c70e3b900b1f3cdbcbeefc39688b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413431"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689231"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 指定主机名的类型。
@@ -40,11 +40,9 @@ public enum enum_GETHOSTNAME_TYPE {
 ```
 
 ## <a name="members"></a>成员
-GHN_FRIENDLY_NAME  
-指定的主机的友好名称。
+GHN_FRIENDLY_NAME 指定主机的友好名称。
 
-GHN_FILE_NAME  
-指定主机的文件名称。
+GHN_FILE_NAME 指定主机的文件名称。
 
 ## <a name="remarks"></a>备注
 这些值会作为参数传递[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)方法来检索主机名以不同的格式。
@@ -57,5 +55,5 @@ GHN_FILE_NAME
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

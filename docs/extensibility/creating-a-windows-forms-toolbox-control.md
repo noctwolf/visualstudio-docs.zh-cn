@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57b711d91e50d0aecb579f7d02afe2123e365425
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: dbac3ebe4c53ec08fd9191b861cfe1187574273c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316582"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687882"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
 Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控件项模板允许你创建的控件，将自动添加到**工具箱**时安装该扩展。 本主题演示如何使用模板创建简单的计数器控件，可以将它们分发给其他用户。
@@ -209,7 +209,7 @@ Windows 窗体工具箱控件模板创建未定义的用户控件，并提供了
 在生成**工具箱**控件，Visual Studio 将创建名为的文件*ProjectName.vsix*你的项目的 \bin\debug\ 文件夹中。 可以将该控件部署通过上传 *.vsix*文件到网络或网站。 当用户在打开 *.vsix*安装文件，该控件并将其添加到 Visual Studio**工具箱**用户的计算机上。 或者，可以上传 *.vsix*的文件[Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkID=123847) ，以便用户可以通过在浏览找到它**工具** >  **扩展和更新**对话框。
 
 ## <a name="see-also"></a>请参阅
-[扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)  
-[创建 WPF 工具箱控件](../extensibility/creating-a-wpf-toolbox-control.md)  
-[扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)  
-[Windows 窗体控件开发基础知识](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+- [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
+- [创建 WPF 工具箱控件](../extensibility/creating-a-wpf-toolbox-control.md)
+- [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
+- [Windows 窗体控件开发基础知识](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

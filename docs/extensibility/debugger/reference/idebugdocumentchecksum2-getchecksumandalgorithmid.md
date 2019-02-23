@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentChecksum2::GetChecksumAndAlgorithmI
 - GetChecksumAndAlgorithmI
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da313d42ac8e50e7f1a3788b3d40242d1ddffb0c
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 0f1a00b34aa640f9198649552ad7f1620d9b026d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412898"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704613"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 检索要使用的字节的最大数目的文档校验和算法标识符。
@@ -42,17 +42,21 @@ public int GetChecksumAndAlgorithmId(
 ```
 
 #### <a name="parameters"></a>参数
-`pRetVal`  
-[out]校验和算法的唯一标识符。
+`pRetVal`
 
-`cMaxBytes`  
-[in]要使用的校验和的字节的最大数目。
+ [out]校验和算法的唯一标识符。
 
-`pChecksum`  
-[out]校验和的值。
+`cMaxBytes`
 
-`pcNumBytes`  
-[out]实际使用的校验和的字节数。
+ [in]要使用的校验和的字节的最大数目。
+
+`pChecksum`
+
+ [out]校验和的值。
+
+`pcNumBytes`
+
+ [out]实际使用的校验和的字节数。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -124,4 +128,4 @@ HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorith
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)
+- [IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)

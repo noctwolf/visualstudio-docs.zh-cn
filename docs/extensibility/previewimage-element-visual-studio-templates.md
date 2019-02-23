@@ -12,49 +12,47 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a09d116ed59492376944612ab95eb19bbac71e40
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15e09d7837c04c276e955f88e8b1afd670d6e948
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030582"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687765"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 元素 （Visual Studio 模板）
-指定的预览图像，为的文件名称，将出现在任何一个的预览图像**新的项目**或**添加新项**对话框。  
-  
- \<VSTemplate>  
- \<TemplateData>  
- \<PreviewImage>  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-<PreviewImage>"filename"</PreviewImage>  
-```  
-  
-## <a name="attributes-and-elements"></a>特性和元素  
- 下列各节描述了特性、子元素和父元素。  
-  
-### <a name="attributes"></a>特性  
- 无。  
-  
-### <a name="child-elements"></a>子元素  
- 无。  
-  
-### <a name="parent-elements"></a>父元素  
-  
-|元素|描述|  
-|-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 此模板分类并定义如何显示在**新的项目**或**添加新项**对话框。|  
-  
-## <a name="text-value"></a>文本值  
- 需要一个文本值。  
-  
- 文本必须是一个字符串，表示文件名称。  
-  
-## <a name="remarks"></a>备注  
- `PreviewImage` 是可选元素。  
-  
-## <a name="see-also"></a>请参阅  
- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+指定的预览图像，为的文件名称，将出现在任何一个的预览图像**新的项目**或**添加新项**对话框。
+
+ \<VSTemplate> \<TemplateData> \<PreviewImage>
+
+## <a name="syntax"></a>语法
+
+```
+<PreviewImage>"filename"</PreviewImage>
+```
+
+## <a name="attributes-and-elements"></a>特性和元素
+ 下列各节描述了特性、子元素和父元素。
+
+### <a name="attributes"></a>特性
+ 无。
+
+### <a name="child-elements"></a>子元素
+ 无。
+
+### <a name="parent-elements"></a>父元素
+
+|元素|描述|
+|-------------|-----------------|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 此模板分类并定义如何显示在**新的项目**或**添加新项**对话框。|
+
+## <a name="text-value"></a>文本值
+ 需要一个文本值。
+
+ 文本必须是一个字符串，表示文件名称。
+
+## <a name="remarks"></a>备注
+ `PreviewImage` 是可选元素。
+
+## <a name="see-also"></a>请参阅
+- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+- [创建项目和项模板](../ide/creating-project-and-item-templates.md)

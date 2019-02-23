@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetOwner | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetOwner
 ms.assetid: c7f6d166-a69e-40c4-bd0b-1a1fdf9aaacf
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09e400e0b2f8da168becb5bc84ab833138c7750e
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: f31152aecb62a1491b58c33b73539426bc4e0464
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449577"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694694"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 检索此泛型参数的类型或方法的所有者。
@@ -35,8 +35,9 @@ int GetOwner(
 ```
 
 #### <a name="parameters"></a>参数
-`ppOwner`  
-[out]返回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)拥有此泛型参数的对象。
+`ppOwner`
+
+ [out]返回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)拥有此泛型参数的对象。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -93,4 +94,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

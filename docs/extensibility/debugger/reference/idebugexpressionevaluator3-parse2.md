@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator3::Parse2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba8f5f214c8100780bb703a0733854228dae097f
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 626911d4eb9f23655ad2808e1e79ec6635cb8b00
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450537"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678600"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 将一个表达式字符串转换为给定的符号提供程序和评估的帧的地址的已分析表达式。
@@ -49,29 +49,37 @@ HRESULT Parse2 (
 ```
 
 #### <a name="parameters"></a>参数
-`upstrExpression`  
-[in]要分析的表达式字符串。
+`upstrExpression`
 
-`dwFlags`  
-[in]一系列[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)确定表达式的分析方式的常量。
+ [in]要分析的表达式字符串。
 
-`nRadix`  
-[in]要用来解释任何数字信息的基数。
+`dwFlags`
 
-`pSymbolProvider`  
-[in]符号提供程序的接口。
+ [in]一系列[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)确定表达式的分析方式的常量。
 
-`pAddress`  
-[in]评估帧的地址。
+`nRadix`
 
-`pbstrError`  
-[out]以用户可读文本形式将返回错误。
+ [in]要用来解释任何数字信息的基数。
 
-`pichError`  
-[out]返回错误的起始字符的位置中的表达式字符串。
+`pSymbolProvider`
 
-`ppParsedExpression`  
-[out]返回中的已分析的表达式[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)对象。
+ [in]符号提供程序的接口。
+
+`pAddress`
+
+ [in]评估帧的地址。
+
+`pbstrError`
+
+ [out]以用户可读文本形式将返回错误。
+
+`pichError`
+
+ [out]返回错误的起始字符的位置中的表达式字符串。
+
+`ppParsedExpression`
+
+ [out]返回中的已分析的表达式[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)对象。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -135,4 +143,4 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)
+- [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

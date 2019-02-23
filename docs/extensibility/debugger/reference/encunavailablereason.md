@@ -1,7 +1,7 @@
 ---
 title: EncUnavailableReason |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - EncUnavailableReason
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ccc05c58eafe6f8902b3f8ac09b90dc771a3009
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ea1bbf8fe96abbf1e7bd9a92396d0dcfa4306445
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315682"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717034"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` 表示原因，**编辑并继续**不可用。
@@ -50,26 +50,19 @@ public enum EncUnavailableReason {
 ```
 
 #### <a name="parameters"></a>参数
-ENCUN_NONE  
-编辑并继续不可用的原因没有特定原因。
+ENCUN_NONE 否编辑并继续不可用的原因的特定原因。
 
-ENCUN_INTEROP  
-编辑并继续的互操作调用期间不可用。
+ENCUN_INTEROP 编辑并继续的互操作调用期间不可用。
 
-ENCUN_SQLCLR  
-编辑并继续在使用公共语言运行时 (CLR) 的 SQL 过程调用期间不可用。
+ENCUN_SQLCLR 编辑并继续在使用公共语言运行时 (CLR) 的 SQL 过程调用期间不可用。
 
-ENCUN_MINIDUMP  
-编辑并继续处理小型转储时不可用。
+ENCUN_MINIDUMP 编辑并继续处理小型转储时不可用。
 
-ENCUN_EMBEDDED  
-处理嵌入的代码时，编辑并继续不可用。
+处理嵌入的代码时，ENCUN_EMBEDDED 编辑并继续不可用。
 
-ENCUN_ATTACH  
-编辑并继续就不可用会话已附加到，因为不会启动的调试器。
+ENCUN_ATTACH 编辑并继续不可用会话已附加到，由于未启动的调试器。
 
-ENCUN_WIN64  
-编辑并继续处理 64 位 Windows 代码时不可用。
+ENCUN_WIN64 编辑并继续处理 64 位 Windows 代码时不可用。
 
 ## <a name="remarks"></a>备注
 此枚举仅适用于内部使用通过[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。 [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)并[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)由自定义端口提供程序实现的方法应始终返回`E_NOTIMPL`。
@@ -82,9 +75,8 @@ ENCUN_WIN64
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 
-[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
+- [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
 
-[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)
-
+- [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)

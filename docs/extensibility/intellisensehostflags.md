@@ -13,41 +13,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 408b7a8ca4ea8a85dabe63d0871f622af68e6a97
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 882410d68c671a83b13bd14026e5bea4c31cb37e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962844"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683553"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
-指定 IntelliSense 主机标志。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-enum IntellisenseHostFlags  
-{  
-    IHF_READONLYCONTEXT      = 0x00000001  
-    IHF_NOSEPARATESUBJECT    = 0x00000002  
-    IHF_SINGLELINESUBJECT    = 0x00000004  
-    IHF_FORCECOMMITTOCONTEXT = 0x00000008  
-    IHF_OVERTYPE             = 0x00000010  
-};  
-```  
-  
-### <a name="parameters"></a>参数  
-  
-|成员|描述|  
-|-------------|-----------------|  
-|`IHF_READONLYCONTEXT`|上下文缓冲区是只读的。|  
-|`IHF_NOSEPARATESUBJECT`|没有使用者的文本。 上下文缓冲区包含 IntelliSense 目标 (意味着`!IHF_READONLYCONTEXT`)。|  
-|`IHF_SINGLELINESUBJECT`|不支持多行的主题文本。|  
-|`IHF_FORCECOMMITTOCONTEXT`|与 `CanCommitIntoReadOnlyBuffer` 相同。|  
-|`IHF_OVERTYPE`|应在改写模式下编辑 （在使用者或上下文）。|  
-  
-## <a name="requirements"></a>要求  
- SingleFileeditor.idl  
-  
-## <a name="see-also"></a>请参阅  
- <xref:Microsoft.VisualStudio.TextManager.Interop>
+指定 IntelliSense 主机标志。
+
+## <a name="syntax"></a>语法
+
+```cpp
+enum IntellisenseHostFlags
+{
+    IHF_READONLYCONTEXT      = 0x00000001
+    IHF_NOSEPARATESUBJECT    = 0x00000002
+    IHF_SINGLELINESUBJECT    = 0x00000004
+    IHF_FORCECOMMITTOCONTEXT = 0x00000008
+    IHF_OVERTYPE             = 0x00000010
+};
+```
+
+### <a name="parameters"></a>参数
+
+|成员|描述|
+|-------------|-----------------|
+|`IHF_READONLYCONTEXT`|上下文缓冲区是只读的。|
+|`IHF_NOSEPARATESUBJECT`|没有使用者的文本。 上下文缓冲区包含 IntelliSense 目标 (意味着`!IHF_READONLYCONTEXT`)。|
+|`IHF_SINGLELINESUBJECT`|不支持多行的主题文本。|
+|`IHF_FORCECOMMITTOCONTEXT`|与 `CanCommitIntoReadOnlyBuffer` 相同。|
+|`IHF_OVERTYPE`|应在改写模式下编辑 （在使用者或上下文）。|
+
+## <a name="requirements"></a>要求
+ SingleFileeditor.idl
+
+## <a name="see-also"></a>请参阅
+- <xref:Microsoft.VisualStudio.TextManager.Interop>

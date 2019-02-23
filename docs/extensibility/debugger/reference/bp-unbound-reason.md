@@ -1,7 +1,7 @@
 ---
 title: BP_UNBOUND_REASON | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_UNBOUND_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab701ef9886dddc0c2e32aa79092f22ad91d4630
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 65393f6e162cb15ded7a0e598e360c7ce90bb3cd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316062"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717658"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 提供了一个断点是未绑定的原因。
@@ -44,17 +44,13 @@ public enum enum_BP_UNBOUND_REASON {
 ```
 
 ## <a name="members"></a>成员
-BPUR_UNKNOWN  
-原因是未知的。
+BPUR_UNKNOWN 原因是未知的。
 
-BPUR_CODE_UNLOADED  
-包含断点的代码已被卸载。
+BPUR_CODE_UNLOADED 包含断点的代码已被卸载。
 
-BPUR_BREAKPOINT_REBIND  
-断点已重新绑定到另一个位置。 这可以进行编辑后，断点移，或者在该断点绑定到具有将不再有效的路径的文件时继续操作。
+BPUR_BREAKPOINT_REBIND 断点重新绑定到另一个位置。 这可以进行编辑后，断点移，或者在该断点绑定到具有将不再有效的路径的文件时继续操作。
 
-BPUR_ BREAKPOINT_ERROR  
-确定断点绑定后，要错误。 其条件不再有效的托管断点发生这种情况。
+确定 BPUR_ BREAKPOINT_ERROR 断点绑定后，要错误。 其条件不再有效的托管断点发生这种情况。
 
 ## <a name="remarks"></a>备注
 返回的[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)方法。
@@ -67,5 +63,5 @@ BPUR_ BREAKPOINT_ERROR
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)

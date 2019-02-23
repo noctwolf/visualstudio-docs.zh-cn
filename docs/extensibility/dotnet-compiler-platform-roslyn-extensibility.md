@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26196b18c6e44ec8f0697fbc656f2934eff1904b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 119ccbc7a14f2879d27c9c8c8e20cf978593366a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918805"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710040"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET 编译器平台 (&quot;Roslyn&quot;) 扩展性
 .NET 编译器平台 ("Roslyn") 的核心任务是打开的 C# 和 Visual Basic 编译器，并允许工具和开发人员能够在丰富的信息的编译器中共享具有有关程序。 代码分析工具提高代码质量和代码生成器的帮助，在应用程序的构造。 随着工具更智能，他们需要访问越来越多的仅由编译器拥有极深代码知识。 而不是作为不透明转换器 （中的源代码和对象代码），Roslyn 编译器提供的 Api 可用于与代码相关工具和应用程序中的任务。
@@ -21,4 +21,4 @@ ms.locfileid: "54918805"
  最妙的是 Roslyn 编译器、 其 Api、 示例和演练和基于这些 Api 构建的真正工具是在所有完全开放源代码[github.com/dotnet/roslyn](https://github.com/dotnet/Roslyn)。 请转到要了解详细信息并开始使用 Roslyn 的 OSS 站点。 将查找链接以获取最新C#和 Visual Basic 功能，可以使用为最终用户，以及链接若要开始为利用 Roslyn Api 的工具生成器。
 
 ## <a name="see-also"></a>请参阅
- [开始使用 Roslyn 分析器](../extensibility/getting-started-with-roslyn-analyzers.md)
+- [开始使用 Roslyn 分析器](../extensibility/getting-started-with-roslyn-analyzers.md)

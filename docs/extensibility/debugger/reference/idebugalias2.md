@@ -1,7 +1,7 @@
 ---
 title: IDebugAlias2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugAlias2 interface
 ms.assetid: 5252dcbb-8bfe-4d8a-a8e5-b022b194df19
@@ -10,41 +10,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 489050b09dde0e0ca43ac4a24cc5951a89bf01e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c59d89771436db6ba1bbde4fc1a01e132e7e210
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979785"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689949"
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
-  
- 表示的数值别名的变量，并可将表达式计算器 (EE) 来获取该别名的应用程序域。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-IDebugAlias2 : IDebugAlias  
-```  
-  
-## <a name="notes-for-implementers"></a>实施者的说明  
- 托管的调试引擎 (DE) 实现此接口。  
-  
-## <a name="methods"></a>方法  
- 除了上的方法[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)接口，此接口实现了以下方法：  
-  
-|方法|描述|  
-|------------|-----------------|  
-|[GetAppDomainId](../../../extensibility/debugger/reference/idebugalias2-getappdomainid.md)|检索应用程序域标识符。|  
-  
-## <a name="remarks"></a>备注  
- 别名是以字符串形式的 # 字符，例如 1001 # 后跟一个十进制数。  
-  
-## <a name="requirements"></a>要求  
- 标头：Ee.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+
+ 表示的数值别名的变量，并可将表达式计算器 (EE) 来获取该别名的应用程序域。
+
+## <a name="syntax"></a>语法
+
+```
+IDebugAlias2 : IDebugAlias
+```
+
+## <a name="notes-for-implementers"></a>实施者的说明
+ 托管的调试引擎 (DE) 实现此接口。
+
+## <a name="methods"></a>方法
+ 除了上的方法[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)接口，此接口实现了以下方法：
+
+|方法|描述|
+|------------|-----------------|
+|[GetAppDomainId](../../../extensibility/debugger/reference/idebugalias2-getappdomainid.md)|检索应用程序域标识符。|
+
+## <a name="remarks"></a>备注
+ 别名是以字符串形式的 # 字符，例如 1001 # 后跟一个十进制数。
+
+## <a name="requirements"></a>要求
+ 标头：Ee.h
+
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop
+
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll

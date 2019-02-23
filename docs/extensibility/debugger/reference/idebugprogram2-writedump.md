@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::WriteDump | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::WriteDump
 helpviewer_keywords:
@@ -12,44 +12,46 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4fc77748e456a612130de4b8f814ea7ba491f22
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: abafa1e3673a334105e8b8ec6e7957f631f000b2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021840"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684203"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
-将转储写入到一个文件。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT WriteDump(   
-   DUMPTYPE  DumpType,  
-   LPCOLESTR pszDumpUrl  
-);  
-```  
-  
-```csharp  
-int WriteDump(   
-   enum_DUMPTYPE  DumpType,  
-   string         pszDumpUrl  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `DumpType`  
- [in]中的值[DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md)枚举，用于指定的转储，类型，例如，简单地说或长时间。  
-  
- `pszDumpUrl`  
- [in]要写入转储的 URL。 通常，这是中的窗体`file://c:\path\filename.ext`，但可能是任何有效的 URL。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 程序转储通常将包括当前堆栈帧，堆栈本身，在该程序，并且可能是任何程序拥有的内存中运行的线程的列表。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+将转储写入到一个文件。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT WriteDump( 
+   DUMPTYPE  DumpType,
+   LPCOLESTR pszDumpUrl
+);
+```
+
+```csharp
+int WriteDump( 
+   enum_DUMPTYPE  DumpType,
+   string         pszDumpUrl
+);
+```
+
+#### <a name="parameters"></a>参数
+ `DumpType`
+
+ [in]中的值[DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md)枚举，用于指定的转储，类型，例如，简单地说或长时间。
+
+ `pszDumpUrl`
+
+ [in]要写入转储的 URL。 通常，这是中的窗体`file://c:\path\filename.ext`，但可能是任何有效的 URL。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="remarks"></a>备注
+ 程序转储通常将包括当前堆栈帧，堆栈本身，在该程序，并且可能是任何程序拥有的内存中运行的线程的列表。
+
+## <a name="see-also"></a>请参阅
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

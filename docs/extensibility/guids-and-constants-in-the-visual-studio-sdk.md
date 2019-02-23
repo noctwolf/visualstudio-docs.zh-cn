@@ -11,26 +11,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f54572c7712d859925ce7a93eaa8a1f3d8c79060
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c79a22a81cd265d148987fc1660e6128ce0efceb
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955110"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714993"
 ---
 # <a name="guids-and-constants-in-the-visual-studio-sdk"></a>Guid 和常量放在 Visual Studio SDK
-<xref:Microsoft.VisualStudio.VSConstants>类提供对选定的环境 Guid 和常量的访问。  
-  
-## <a name="in-this-section"></a>本节内容  
- [IDE GUID](../extensibility/ide-guids.md)  
- 列出了由提供的 Guid <xref:Microsoft.VisualStudio.VSConstants>。  
-  
- [IDE 常量](../extensibility/ide-constants.md)  
- 列出了提供的 SDK 常量<xref:Microsoft.VisualStudio.VSConstants>。  
-  
-## <a name="related-sections"></a>相关章节  
- [在托管代码中的 COM 常量](../extensibility/com-constants-in-managed-code.md)  
- 托管代码到从托管包框架 (MPF) 列出可用的标准 COM 常量。  
-  
- [IDE 定义用于扩展项目系统的命令](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)  
- 列出了不同类型的命令项用于扩展项目系统。
+<xref:Microsoft.VisualStudio.VSConstants>类提供对选定的环境 Guid 和常量的访问。
+
+## <a name="in-this-section"></a>本节内容
+- [IDE Guid](../extensibility/ide-guids.md)列出了由提供的 Guid <xref:Microsoft.VisualStudio.VSConstants>。
+
+- [IDE 常量](../extensibility/ide-constants.md)列出了 SDK 常量提供<xref:Microsoft.VisualStudio.VSConstants>。
+
+## <a name="related-sections"></a>相关章节
+- [在托管代码中的 COM 常量](../extensibility/com-constants-in-managed-code.md)列表标准的 COM 常量可用于托管代码从托管包框架 (MPF)。
+
+- [IDE 定义的命令，用于扩展项目系统](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)列出了不同类型的命令项用于扩展项目系统。
