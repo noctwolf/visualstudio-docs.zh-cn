@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::GetPendingBreakpoint | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::GetPendingBreakpoint
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51bd7d649be51c2cc48c643cba10ef1cc90446d2
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d4f0930537612d7292ddc23509ddf6cadd5cdd6f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316970"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716332"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 获取从其创建指定的绑定的断点的挂起断点。
@@ -38,8 +38,9 @@ int GetPendingBreakpoint( 
 ```
 
 #### <a name="parameters"></a>参数
-`ppPendingBreakpoint`  
-[out]返回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)对象，表示用于创建此挂起断点绑定断点。
+`ppPendingBreakpoint`
+
+ [out]返回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)对象，表示用于创建此挂起断点绑定断点。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -82,5 +83,5 @@ HRESULT CBoundBreakpoint::GetPendingBreakpoint(
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
-[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+- [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
