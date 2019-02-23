@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::GetBreakpointResolution | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::GetBreakpointResolution
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dee855b76f214f5fe1c230464a1ab4420f46240
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f1e3e4cfe144713b7747f74e754a3a265cbbdb15
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317923"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712159"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 获取描述此断点的断点解决方法。
@@ -38,8 +38,9 @@ int GetBreakpointResolution( 
 ```
 
 #### <a name="parameters"></a>参数
-`ppBPResolution`  
-[out]返回[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)接口，表示以下值之一：
+`ppBPResolution`
+
+ [out]返回[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)接口，表示以下值之一：
 
 - 断点解析对象，描述代码中绑定一个代码断点的位置。
 
@@ -86,6 +87,6 @@ HRESULT CBoundBreakpoint::GetBreakpointResolution(
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)  
-[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)  
-[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
+- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+- [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
+- [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)
