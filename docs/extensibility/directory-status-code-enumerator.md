@@ -11,40 +11,36 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bd67ea448f7417200b0be9f2f44ca2feb4e3593
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6e62685a1a351c9a5773e18a53316106a18af66a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945029"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694655"
 ---
 # <a name="directory-status-code-enumerator"></a>目录状态代码枚举器
-`SccDirStatus`枚举数包含命名的常量值用于指定源代码管理系统中的目录的状态。 此枚举由[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)。 这是在源控件插件 API 版本 1.2 中引入的。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-enum SccDirStatus {  
-   SCC_DIRSTATUS_INVALID       = -1L,  
-   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,  
-   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,  
-   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L  
-};  
-```  
-  
-## <a name="members"></a>成员  
- SCC_DIRSTATUS_INVALID  
- 无法获取状态;不依赖于它。  
-  
- SCC_DIRSTATUS_NOTCONTROLLED  
- 目录不是源代码管理下。  
-  
- SCC_DIRSTATUS_CONTROLLED  
- 目录位于源控件下。  
-  
- SCC_DIRSTATUS_EMPTYPROJ  
- 对此目录相对应的项目为空。  
-  
-## <a name="see-also"></a>请参阅  
- [源代码管理插件](../extensibility/source-control-plug-ins.md)   
- [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)
+`SccDirStatus`枚举数包含命名的常量值用于指定源代码管理系统中的目录的状态。 此枚举由[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)。 这是在源控件插件 API 版本 1.2 中引入的。
+
+## <a name="syntax"></a>语法
+
+```
+enum SccDirStatus {
+   SCC_DIRSTATUS_INVALID       = -1L,
+   SCC_DIRSTATUS_NOTCONTROLLED = 0x0000L,
+   SCC_DIRSTATUS_CONTROLLED    = 0x0001L,
+   SCC_DIRSTATUS_EMPTYPROJ     = 0x0002L
+};
+```
+
+## <a name="members"></a>成员
+ 无法获取 SCC_DIRSTATUS_INVALID 状态;不依赖于它。
+
+ SCC_DIRSTATUS_NOTCONTROLLED 目录不是源代码管理下。
+
+ SCC_DIRSTATUS_CONTROLLED 目录位于源控件下。
+
+ SCC_DIRSTATUS_EMPTYPROJ 项目对应于此目录为空。
+
+## <a name="see-also"></a>请参阅
+- [源代码管理插件](../extensibility/source-control-plug-ins.md)
+- [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

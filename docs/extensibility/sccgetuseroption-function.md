@@ -12,52 +12,55 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15af3d1711453c17a9e88c392f451161131d5b3d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8b237ded8ac0d22500986a9d390834147f24a2c6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017001"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721260"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函数
-此函数检索各种特定于用户的选项。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-SCCRTN SccGetUserOption(  
-   LPVOID pContext,  
-   LONG nOption,  
-   LPLONG lpVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- pContext  
- [in]源控件插件上下文指针。  
-  
- nOption  
- [in]若要检索 （有关可能的选项，请参阅备注） 的选项。  
-  
- lpVal  
- [out]与选项相关联的值。  
-  
-## <a name="return-value"></a>返回值  
- 此函数的源控制插件实现应返回以下值之一：  
-  
-|值|描述|  
-|-----------|-----------------|  
-|SCC_OK|已成功检索选项。|  
-|SCC_E_OPNOTSUPPORTED|不支持选项。|  
-|SCC_E_NONSPECIFICERROR|发生了未指定的错误。|  
-  
-## <a name="remarks"></a>备注  
- 此命令支持以下选项：  
-  
-|用户选项|描述|  
-|-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|确定用户是否想要签出本地版本的文件。 `lpVal` 分配`SCC_USEROPT_COLV_YES`（用户想要签出本地文件） 或`SCC_USEROPT_COLV_NO`。|  
-  
-## <a name="see-also"></a>请参阅  
- [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
- [错误代码](../extensibility/error-codes.md)
+此函数检索各种特定于用户的选项。
+
+## <a name="syntax"></a>语法
+
+```cpp
+SCCRTN SccGetUserOption(
+   LPVOID pContext,
+   LONG nOption,
+   LPLONG lpVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ pContext
+
+[in]源控件插件上下文指针。
+
+ nOption
+
+[in]若要检索 （有关可能的选项，请参阅备注） 的选项。
+
+ lpVal
+
+[out]与选项相关联的值。
+
+## <a name="return-value"></a>返回值
+ 此函数的源控制插件实现应返回以下值之一：
+
+|值|描述|
+|-----------|-----------------|
+|SCC_OK|已成功检索选项。|
+|SCC_E_OPNOTSUPPORTED|不支持选项。|
+|SCC_E_NONSPECIFICERROR|发生了未指定的错误。|
+
+## <a name="remarks"></a>备注
+ 此命令支持以下选项：
+
+|用户选项|描述|
+|-----------------|-----------------|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|确定用户是否想要签出本地版本的文件。 `lpVal` 分配`SCC_USEROPT_COLV_YES`（用户想要签出本地文件） 或`SCC_USEROPT_COLV_NO`。|
+
+## <a name="see-also"></a>请参阅
+- [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
+- [错误代码](../extensibility/error-codes.md)

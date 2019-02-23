@@ -11,28 +11,28 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f09788cb69e90114839a66ff0652c779535b066b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ef5cc84ea1fdce8e297d8b5bff6636065b3d044
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944041"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702741"
 ---
 # <a name="register-a-tool-window"></a>注册工具窗口
-您可以注册你使用的工具窗口<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>和<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>。  
-  
-## <a name="example"></a>示例  
-  
+您可以注册你使用的工具窗口<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>和<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>。
+
+## <a name="example"></a>示例
+
 ```csharp
-  
+
 [ProvideToolWindow(typeof(PersistedWindowPane), Style = MsVsShell.VsDockStyle.Tabbed, Window = "3ae79031-e1bc-11d0-8f78-00a0c9110057")]
 [ProvideToolWindow(typeof(DynamicWindowPane), PositionX=250, PositionY=250, Width=160, Height=180, Transient=true)]
-[ProvideToolWindowVisibility(typeof(DynamicWindowPane), /*UICONTEXT_SolutionExists*/"f1536ef8-92ec-443c-9ed7-fdadf150da82")]  
-[ProvideMenuResource(1000, 1)]  
-[PackageRegistration(UseManagedResourcesOnly = true)]  
-[Guid("01069CDD-95CE-4620-AC21-DDFF6C57F012")]  
-public class PackageToolWindow : Package  
-{  
+[ProvideToolWindowVisibility(typeof(DynamicWindowPane), /*UICONTEXT_SolutionExists*/"f1536ef8-92ec-443c-9ed7-fdadf150da82")]
+[ProvideMenuResource(1000, 1)]
+[PackageRegistration(UseManagedResourcesOnly = true)]
+[Guid("01069CDD-95CE-4620-AC21-DDFF6C57F012")]
+public class PackageToolWindow : Package
+{
 ```
-  
+
  在上面的代码，<xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>注册`PersistedWindowPane`和`DynamicWindowPane`工具与 Visual Studio 窗口。 保留的工具窗口停靠，并使用选项卡式**解决方案资源管理器**，并且动态窗口中将提供默认值的起始位置和大小。 由暂时的指示在启动时不创建动态窗口中。 它将写入`DontForceCreate`中的值`ToolWindows`关键系统注册表中。 有关详细信息，请参阅[工具窗口中显示配置](../extensibility/tool-window-display-configuration.md)。

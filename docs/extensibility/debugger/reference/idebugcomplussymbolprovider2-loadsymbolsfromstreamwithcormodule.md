@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 - LoadSymbolsFromStreamWithCorModule
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b9241a93afea5d19664a74a78321d4d2857467b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412794"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722832"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 从给定的数据流加载调试符号**icor 调试模块**对象。
@@ -46,23 +46,29 @@ int LoadSymbolsFromStreamWithCorModule(
 ```
 
 #### <a name="parameters"></a>参数
-`ulAppDomainID`  
-[in]应用程序域的标识符。
+`ulAppDomainID`
 
-`guidModule`  
-[in]该模块的唯一标识符。
+ [in]应用程序域的标识符。
 
-`baseAddress`  
-[in]基本的内存地址。
+`guidModule`
 
-`pUnkMetadataImport`  
-[in]包含符号元数据的对象。
+ [in]该模块的唯一标识符。
 
-`pUnkCorDebugModule`  
-[in]对象，它实现[ICorDebugModule 接口](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
+`baseAddress`
 
-`pStream`  
-[in]包含要加载的调试符号的数据流。
+ [in]基本的内存地址。
+
+`pUnkMetadataImport`
+
+ [in]包含符号元数据的对象。
+
+`pUnkCorDebugModule`
+
+ [in]对象，它实现[ICorDebugModule 接口](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
+
+`pStream`
+
+ [in]包含要加载的调试符号的数据流。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -141,4 +147,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

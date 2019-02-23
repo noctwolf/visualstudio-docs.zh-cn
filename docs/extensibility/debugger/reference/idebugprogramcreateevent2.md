@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramCreateEvent2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramCreateEvent2
 helpviewer_keywords:
@@ -12,41 +12,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f72b2fac6e8265ffebeb751c6118003f4c75bcd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7ac5fafb3e89ed414fd64843e4f6336127d9665a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54962769"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712913"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
-程序附加到时，此接口是由调试引擎 (DE) 发送到会话调试管理器 (SDM) 中。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-IDebugProgramCreateEvent2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>实施者的说明  
- DE 或自定义端口提供程序实现此接口可报告的程序创建后，通常在程序附加到的时间。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象。 使用 SDM`QueryInterface`方法访问`IDebugEvent2`接口。  
-  
-## <a name="notes-for-callers"></a>调用方的说明  
- DE 或自定义端口供应商创建并发送此事件对象来报告创建一个计划。 DE 发送该事件通过使用[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 它附加到正在调试的程序时提供的回调函数。 自定义端口供应商发送此事件使用[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)接口。  
-  
-## <a name="remarks"></a>备注  
- DE 或自定义端口供应商发布的新[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)接口通过调用[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)。  
-  
-## <a name="requirements"></a>要求  
- 标头： msdbg.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>请参阅  
- [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
- [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)   
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+程序附加到时，此接口是由调试引擎 (DE) 发送到会话调试管理器 (SDM) 中。
+
+## <a name="syntax"></a>语法
+
+```
+IDebugProgramCreateEvent2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>实施者的说明
+ DE 或自定义端口提供程序实现此接口可报告的程序创建后，通常在程序附加到的时间。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象。 使用 SDM`QueryInterface`方法访问`IDebugEvent2`接口。
+
+## <a name="notes-for-callers"></a>调用方的说明
+ DE 或自定义端口供应商创建并发送此事件对象来报告创建一个计划。 DE 发送该事件通过使用[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 它附加到正在调试的程序时提供的回调函数。 自定义端口供应商发送此事件使用[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)接口。
+
+## <a name="remarks"></a>备注
+ DE 或自定义端口供应商发布的新[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)接口通过调用[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)。
+
+## <a name="requirements"></a>要求
+ 标头： msdbg.h
+
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop
+
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>请参阅
+- [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+- [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugPropertyInfo2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IEnumDebugPropertyInfo2
 helpviewer_keywords:
@@ -12,52 +12,52 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eecb16ce4eecf4e39163a82c3aed48d35db6af2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0fb43da8cf5d9ce361dd3eeff2a76b2ed092e67e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933966"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714928"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
-此接口枚举[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-IEnumDebugPropertyInfo2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>实施者的说明  
- 调试引擎 (DE) 实现此接口来表示特定属性的信息。  
-  
-## <a name="notes-for-callers"></a>调用方的说明  
- 调用[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)获取此接口表示特定属性的子级。 调用[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)获取此接口表示特定堆栈帧的属性。  
-  
-## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
- 下表显示的方法`IEnumDebugPropertyInfo2`。  
-  
-|方法|描述|  
-|------------|-----------------|  
-|[下一页](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|检索指定的数目的[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)枚举序列中的结构。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|跳过指定的数目的[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)枚举序列中的结构。|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|将枚举序列重置到开头。|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|创建一个包含当前枚举数形式的相同枚举状态的枚举器。|  
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|获取数[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)枚举器中的结构。|  
-  
-## <a name="remarks"></a>备注  
- 一般情况下，属性是层次结构的名称、 值、 地址和类型，可以包含的信息，以及适用于关联的属性对象或堆栈帧的任何其他信息。 请参阅[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)的更多详细信息。  
-  
-## <a name="requirements"></a>要求  
- 标头： msdbg.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>请参阅  
- [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
- [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)   
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   
- [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)
+此接口枚举[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构。
+
+## <a name="syntax"></a>语法
+
+```
+IEnumDebugPropertyInfo2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>实施者的说明
+ 调试引擎 (DE) 实现此接口来表示特定属性的信息。
+
+## <a name="notes-for-callers"></a>调用方的说明
+ 调用[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)获取此接口表示特定属性的子级。 调用[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)获取此接口表示特定堆栈帧的属性。
+
+## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
+ 下表显示的方法`IEnumDebugPropertyInfo2`。
+
+|方法|描述|
+|------------|-----------------|
+|[下一页](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|检索指定的数目的[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)枚举序列中的结构。|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|跳过指定的数目的[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)枚举序列中的结构。|
+|[Reset](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-reset.md)|将枚举序列重置到开头。|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-clone.md)|创建一个包含当前枚举数形式的相同枚举状态的枚举器。|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)|获取数[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)枚举器中的结构。|
+
+## <a name="remarks"></a>备注
+ 一般情况下，属性是层次结构的名称、 值、 地址和类型，可以包含的信息，以及适用于关联的属性对象或堆栈帧的任何其他信息。 请参阅[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)的更多详细信息。
+
+## <a name="requirements"></a>要求
+ 标头： msdbg.h
+
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop
+
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>请参阅
+- [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
+- [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+- [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)
+- [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)

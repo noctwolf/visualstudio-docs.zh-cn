@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCustomAttributeQuery2
 helpviewer_keywords:
@@ -13,53 +13,53 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71428aa43add2489ad9f0956c3ea063e97b30085
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 23f76cfc71fab73d5d31fe3f47c3f8c552271aa7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998022"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701025"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
-确定存在此字段的自定义属性，并且如果存在，将返回属性信息。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery  
-```  
-  
-## <a name="notes-for-implementers"></a>实施者的说明  
- 符号提供程序实现此接口上实现的相同对象[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)以支持自定义属性。  
-  
-## <a name="notes-for-callers"></a>调用方的说明  
- 使用[QueryInterface](/cpp/atl/queryinterface)若要获取此接口从[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)接口。  
-  
-## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
- 下表显示的方法**IDebugCustomAttributeQuery**接口。  
-  
-|方法|描述|  
-|------------|-----------------|  
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|确定名称是否存在自定义属性。|  
-|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|获取给定的自定义特性的属性信息。|  
-  
- 除了**IDebugCustomAttributeQuery**方法，`IDebugCustomAttributeQuery2`实现以下方法：  
-  
-|方法|描述|  
-|------------|-----------------|  
-|[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|获取附加到此字段的所有自定义属性的枚举器。|  
-  
-## <a name="remarks"></a>备注  
- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)方法可返回为此字段定义的所有自定义属性的枚举器。  
-  
-## <a name="requirements"></a>要求  
- 标头： sh.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>请参阅  
- [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
+确定存在此字段的自定义属性，并且如果存在，将返回属性信息。
+
+## <a name="syntax"></a>语法
+
+```
+IDebugCustomAttributeQuery2 : IDebugCustomAttributeQuery
+```
+
+## <a name="notes-for-implementers"></a>实施者的说明
+ 符号提供程序实现此接口上实现的相同对象[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)以支持自定义属性。
+
+## <a name="notes-for-callers"></a>调用方的说明
+ 使用[QueryInterface](/cpp/atl/queryinterface)若要获取此接口从[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)接口。
+
+## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
+ 下表显示的方法**IDebugCustomAttributeQuery**接口。
+
+|方法|描述|
+|------------|-----------------|
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)|确定名称是否存在自定义属性。|
+|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)|获取给定的自定义特性的属性信息。|
+
+ 除了**IDebugCustomAttributeQuery**方法，`IDebugCustomAttributeQuery2`实现以下方法：
+
+|方法|描述|
+|------------|-----------------|
+|[EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)|获取附加到此字段的所有自定义属性的枚举器。|
+
+## <a name="remarks"></a>备注
+ [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)方法可返回为此字段定义的所有自定义属性的枚举器。
+
+## <a name="requirements"></a>要求
+ 标头： sh.h
+
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop
+
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>请参阅
+- [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

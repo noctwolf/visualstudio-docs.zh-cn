@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::SetHitCount | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBoundBreakpoint2::SetHitCount
 helpviewer_keywords:
@@ -13,42 +13,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abda1b2544f93577f7355b60c07143c623da181e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ac7cbfa337bfdcf54d213b299badc9ca56d8dcba
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931578"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716306"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
-设置绑定断点的命中的计数。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT SetHitCount(   
-   DWORD dwHitCount  
-);  
-```  
-  
-```csharp  
-int SetHitCount(   
-   uint dwHitCount  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `dwHitCount`  
- [in]要设置的命中的计数。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_BP_DELETED`如果绑定的断点对象的状态设置为`BPS_DELETED`(属于[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)枚举)。  
-  
-## <a name="remarks"></a>备注  
- 命中的计数是在会话的当前运行期间已触发此断点的次数。  
-  
- 此方法通常由要更新此断点处的当前命中的计数的调试引擎调用。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+设置绑定断点的命中的计数。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT SetHitCount( 
+   DWORD dwHitCount
+);
+```
+
+```csharp
+int SetHitCount( 
+   uint dwHitCount
+);
+```
+
+#### <a name="parameters"></a>参数
+ `dwHitCount`
+
+ [in]要设置的命中的计数。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_BP_DELETED`如果绑定的断点对象的状态设置为`BPS_DELETED`(属于[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)枚举)。
+
+## <a name="remarks"></a>备注
+ 命中的计数是在会话的当前运行期间已触发此断点的次数。
+
+ 此方法通常由要更新此断点处的当前命中的计数的调试引擎调用。
+
+## <a name="see-also"></a>请参阅
+- [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

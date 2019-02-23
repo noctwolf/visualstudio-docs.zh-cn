@@ -1,7 +1,7 @@
 ---
 title: IDebugMethodField::EnumLocals |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMethodField::EnumLocals
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba6cd5e65c54355ec21d22d101d94270b95018e8
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 6e8c39adaca6c394b631542d57d74ed4818501b4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450407"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700557"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
 创建所选的方法的局部变量的枚举器。
@@ -39,11 +39,13 @@ int EnumLocals(
 ```
 
 #### <a name="parameters"></a>参数
-`pAddress`  
-[in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象，表示选择的上下文或从其获取局部变量的作用域的调试地址。
+`pAddress`
 
-`ppLocals`  
-[out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，表示局部变量的列表; 否则，返回 null 值，如果不有任何局部变量。
+ [in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象，表示选择的上下文或从其获取局部变量的作用域的调试地址。
+
+`ppLocals`
+
+ [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，表示局部变量的列表; 否则，返回 null 值，如果不有任何局部变量。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回 S_OK 或如果没有局部变量，则返回 S_FALSE。 否则，返回错误代码。
@@ -74,7 +76,7 @@ public void func(int index)
 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)对象表示`func`方法本身。 调用`EnumLocals`方法替换[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)设置为`Inner Scope 1`地址返回一个枚举，其中包含`temp1`变量，例如。
 
 ## <a name="see-also"></a>请参阅
-[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)  
-[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)  
-[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)  
-[EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)
+- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
+- [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
+- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+- [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)

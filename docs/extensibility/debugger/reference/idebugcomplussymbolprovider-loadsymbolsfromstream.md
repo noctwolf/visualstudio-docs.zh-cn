@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::LoadSymbolsFromStream | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 - LoadSymbolsFromStream
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02e88780e41b9a46163c7b66b2d83e64d190c307
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 4fb22dfdfb92b4955624a587a340d9f57eb2d59c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413379"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717944"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
 加载调试符号提供数据流。
@@ -44,20 +44,25 @@ int LoadSymbolsFromStream(
 ```
 
 #### <a name="parameters"></a>参数
-`ulAppDomainID`  
-[in]应用程序域的标识符。
+`ulAppDomainID`
 
-`guidModule`  
-[in]该模块的唯一标识符。
+ [in]应用程序域的标识符。
 
-`baseAddress`  
-[in]基本的内存地址。
+`guidModule`
 
-`pUnkMetadataImport`  
-[in]包含符号元数据的对象。
+ [in]该模块的唯一标识符。
 
-`pStream`  
-[in]包含的符号的数据流。
+`baseAddress`
+
+ [in]基本的内存地址。
+
+`pUnkMetadataImport`
+
+ [in]包含符号元数据的对象。
+
+`pStream`
+
+ [in]包含的符号的数据流。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -79,4 +84,4 @@ HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

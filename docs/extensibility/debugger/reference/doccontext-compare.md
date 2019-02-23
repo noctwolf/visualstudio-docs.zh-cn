@@ -1,7 +1,7 @@
 ---
 title: DOCCONTEXT_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DOCCONTEXT_COMPARE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5805f34528225849afb51ce6a854ef5028acb3a5
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: e36e9c3c0870cb81dd02f646636eeb758f1ddb62
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413028"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686244"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 指定用于比较两个文档上下文的条件。
@@ -44,17 +44,13 @@ enum enum_DOCCONTEXT_COMPARE {
 ```
 
 ## <a name="members"></a>成员
-DOCCONTEXT_EQUAL  
-在列表中，它等于目标文档上下文中找到的第一个文档上下文。
+DOCCONTEXT_EQUAL 等于目标文档上下文在列表中找到的第一个文档上下文。
 
-DOCCONTEXT_LESS_THAN  
-小于目标文档上下文在列表中找到的第一个文档上下文。
+DOCCONTEXT_LESS_THAN 小于目标文档上下文在列表中找到的第一个文档上下文。
 
-DOCCONTEXT_GREATER_THAN  
-大于目标文档上下文在列表中找到的第一个文档上下文。
+DOCCONTEXT_GREATER_THAN 大于目标文档上下文在列表中找到的第一个文档上下文。
 
-DOCCONTEXT_SAME_DOCUMENT  
-在目标文档上下文与在同一文档中的列表中找到的第一个文档上下文。
+DOCCONTEXT_SAME_DOCUMENT 目标文档上下文与在同一文档中的列表中找到的第一个文档上下文。
 
 ## <a name="remarks"></a>备注
 作为参数传递[比较](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。
@@ -69,5 +65,5 @@ DOCCONTEXT_SAME_DOCUMENT
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)

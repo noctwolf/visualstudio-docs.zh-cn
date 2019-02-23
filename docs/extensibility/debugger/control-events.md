@@ -10,32 +10,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4cd9fc3d55f06aa196d5b9cbe0ee7aefa8f2036
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8fbe2f3c3835c55fffefe4692c4e8779b48e9c5e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54980149"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683381"
 ---
 # <a name="control-events"></a>控件事件
-必须将事件发送程序的受控的执行过程。 使用的所有事件发送[IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md)界面，并且具有需要实现的属性[IDebugEvent2::GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md)方法。  
-  
-## <a name="additional-methods"></a>其他方法  
- 某些事件需要的其他方法的实现，如下所示：  
-  
-- 发送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)接口时初始化调试引擎 (DE) 要求您实现[IDebugEngineCreateEvent2::GetEngine](../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)方法。  
-  
-- 执行控件需要为此类控件事件的实现[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)并[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)接口。 **IDebugBreakEvent2**仅需要异步分页符。  
-  
-- 单步执行函数需要实现[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)接口和其方法。  
-  
-  派生自断点事件需要实施[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)， [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)，并[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)接口，并将[IDebugBreakpointBoundEvent2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)并[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)方法。  
-  
-  异步表达式计算要求您实现[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)接口并将其[IDebugExpressionEvaluationCompleteEvent2::GetExpression](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)[和 GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)方法。  
-  
-  同步事件需要实现[IDebugEngine2::ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)方法。  
-  
-  对于写入字符串样式输出在引擎，必须实现[IDebugOutputStringEvent2::GetString](../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)方法。  
-  
-## <a name="see-also"></a>请参阅  
- [执行控件和状态评估](../../extensibility/debugger/execution-control-and-state-evaluation.md)
+必须将事件发送程序的受控的执行过程。 使用的所有事件发送[IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md)界面，并且具有需要实现的属性[IDebugEvent2::GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md)方法。
+
+## <a name="additional-methods"></a>其他方法
+ 某些事件需要的其他方法的实现，如下所示：
+
+- 发送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)接口时初始化调试引擎 (DE) 要求您实现[IDebugEngineCreateEvent2::GetEngine](../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)方法。
+
+- 执行控件需要为此类控件事件的实现[IDebugBreakEvent2](../../extensibility/debugger/reference/idebugbreakevent2.md)并[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)接口。 **IDebugBreakEvent2**仅需要异步分页符。
+
+- 单步执行函数需要实现[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)接口和其方法。
+
+  派生自断点事件需要实施[IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)， [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)，并[IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)接口，并将[IDebugBreakpointBoundEvent2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)并[EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)方法。
+
+  异步表达式计算要求您实现[IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)接口并将其[IDebugExpressionEvaluationCompleteEvent2::GetExpression](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getexpression.md)[和 GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)方法。
+
+  同步事件需要实现[IDebugEngine2::ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)方法。
+
+  对于写入字符串样式输出在引擎，必须实现[IDebugOutputStringEvent2::GetString](../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)方法。
+
+## <a name="see-also"></a>请参阅
+- [执行控件和状态评估](../../extensibility/debugger/execution-control-and-state-evaluation.md)

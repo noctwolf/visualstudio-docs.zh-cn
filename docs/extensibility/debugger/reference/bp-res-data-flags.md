@@ -1,7 +1,7 @@
 ---
 title: BP_RES_DATA_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_RES_DATA_FLAGS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b111e98edb1d364a466157a6db4c0089617f18de
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: dfbf34af69accc3fa50e0648880b5f8633f1618a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413015"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714057"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
 指定是否模拟数据断点或中实现的硬件。
@@ -38,8 +38,7 @@ public enum enum_BP_RES_DATA_FLAGS {
 ```
 
 ## <a name="members"></a>成员
-BP_RES_DATA_EMULATED  
-指定数据断点进行模拟。
+BP_RES_DATA_EMULATED 指定数据断点进行模拟。
 
 ## <a name="remarks"></a>备注
 用于`dwFlags`的成员[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)结构。
@@ -52,5 +51,5 @@ BP_RES_DATA_EMULATED
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)

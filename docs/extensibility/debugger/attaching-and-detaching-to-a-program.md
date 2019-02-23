@@ -11,43 +11,43 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0e28a266653383621f1d49f37ea8ea4d3a8b8f8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b81ea271e1ab5d44337ce111e89d5624efd452d0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54957385"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706010"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>附加和分离到程序
-附加调试器需要发送正确的方法和使用适当的属性的事件顺序。  
-  
-## <a name="sequence-of-methods-and-events"></a>序列的方法和事件  
-  
-1. 会话调试管理器 (SDM) 调用[OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)方法。  
-  
-    基于调试引擎 (DE) 进程模型，`IDebugProgramNodeAttach2::OnAttach`方法返回确定接下来会发生的以下方法之一。  
-  
-    如果`S_FALSE`返回，调试引擎已成功附加到该程序。 否则为[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)方法调用以完成附加过程。  
-  
-    如果`S_OK`返回，DE 会加载 SDM 作为在同一进程中。 SDM 执行以下任务：  
-  
-   1.  调用[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)了解 DE 引擎。  
-  
-   2.  共同创建 DE。  
-  
-   3.  调用[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)。  
-  
-2. DE 发送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)到使用 SDM`EVENT_SYNC`属性。  
-  
-3. DE 发送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)到使用 SDM`EVENT_SYNC`属性。 
-  
-4. DE 发送[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)到使用 SDM`EVENT_SYNC_STOP`属性。  
-  
-   从程序分离很简单，分为两步过程中，如下所示：  
-  
-5. SDM 调用[分离](../../extensibility/debugger/reference/idebugprogram2-detach.md)。  
-  
-6. DE 发送[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)。  
-  
-## <a name="see-also"></a>请参阅  
- [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)
+附加调试器需要发送正确的方法和使用适当的属性的事件顺序。
+
+## <a name="sequence-of-methods-and-events"></a>序列的方法和事件
+
+1. 会话调试管理器 (SDM) 调用[OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)方法。
+
+    基于调试引擎 (DE) 进程模型，`IDebugProgramNodeAttach2::OnAttach`方法返回确定接下来会发生的以下方法之一。
+
+    如果`S_FALSE`返回，调试引擎已成功附加到该程序。 否则为[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)方法调用以完成附加过程。
+
+    如果`S_OK`返回，DE 会加载 SDM 作为在同一进程中。 SDM 执行以下任务：
+
+   1.  调用[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)了解 DE 引擎。
+
+   2.  共同创建 DE。
+
+   3.  调用[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)。
+
+2. DE 发送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)到使用 SDM`EVENT_SYNC`属性。
+
+3. DE 发送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)到使用 SDM`EVENT_SYNC`属性。
+
+4. DE 发送[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)到使用 SDM`EVENT_SYNC_STOP`属性。
+
+   从程序分离很简单，分为两步过程中，如下所示：
+
+5. SDM 调用[分离](../../extensibility/debugger/reference/idebugprogram2-detach.md)。
+
+6. DE 发送[IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)。
+
+## <a name="see-also"></a>请参阅
+- [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

@@ -1,7 +1,7 @@
 ---
 title: DEBUG_REASON | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DEBUG_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0091924c5c117eb8953b5dd3fc70b5cdf446761
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 03b2db1fd58af6a8b2f8a57846e7753cdbc82352
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318597"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707258"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 指定用于调试启动进程时为什么。
@@ -46,20 +46,15 @@ public enum enum_DEBUG_REASON {
 ```
 
 #### <a name="parameters"></a>参数
-DEBUG_REASON_ERROR  
-发生了非特定错误 （这用作默认条件时没有其他原因，调整）。
+DEBUG_REASON_ERROR 一个非特定的错误 （这用作默认条件时没有其他原因，调整）。
 
-DEBUG_REASON_USER_LAUNCHED  
-该过程是在用户的请求时启动的。
+DEBUG_REASON_USER_LAUNCHED 过程是在用户的请求时启动的。
 
-DEBUG_REASON_USER_ATTACHED  
-已在运行的进程已附加到用户。
+DEBUG_REASON_USER_ATTACHED 已经运行的进程已附加到用户。
 
-DEBUG_REASON_AUTO_ATTACHED  
-程序启动时，该过程是自动附加到。
+DEBUG_REASON_AUTO_ATTACHED 过程已自动附加到程序启动时。
 
-DEBUG_REASON_CAUSALITY  
-由于已启动进程*中实时*(JIT) 调试事件。
+由于已启动进程的 DEBUG_REASON_CAUSALITY*中实时*(JIT) 调试事件。
 
 ## <a name="remarks"></a>备注
 返回从[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)方法。
@@ -72,5 +67,5 @@ DEBUG_REASON_CAUSALITY
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

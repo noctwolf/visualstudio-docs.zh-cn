@@ -11,22 +11,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed25959cd6afa7232555757e358a99836d93924b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea31d6bcd8c055756a49c46f8fb4b3f377aaade8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981475"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714590"
 ---
 # <a name="symbol-provider"></a>符号提供程序
-表达式计算器实现必须访问才能计算变量和表达式生成由语言编译器的符号调试信息。 它是通过使用符号提供程序 (SP) 的接口也称为符号处理程序。  
-  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 为托管的代码和本机代码使用程序数据库 (PDB) 符号文件格式提供 Sp。 如果没有强需要为您的程序以使用存储在自定义格式的符号，它是建议使用提供的 SPs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
-  
-## <a name="implementation-notes"></a>实现说明  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]的调试引擎期望与使用公共语言运行时 (CLR) 接口 SPs 交谈。 因此，将使用 Visual Studio 的调试引擎 SP 必须支持 CLR。 所有 CLR 调试接口的完整列表可在 debugref.doc，它是一部分的[!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]。  
-  
- 如果你 SP 将仅使用自定义调试引擎，可以实现 SP，根据具体取决于调试引擎的需求。  
-  
-## <a name="see-also"></a>请参阅  
- [调试器组件](../../extensibility/debugger/debugger-components.md)
+表达式计算器实现必须访问才能计算变量和表达式生成由语言编译器的符号调试信息。 它是通过使用符号提供程序 (SP) 的接口也称为符号处理程序。
+
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 为托管的代码和本机代码使用程序数据库 (PDB) 符号文件格式提供 Sp。 如果没有强需要为您的程序以使用存储在自定义格式的符号，它是建议使用提供的 SPs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
+
+## <a name="implementation-notes"></a>实现说明
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]的调试引擎期望与使用公共语言运行时 (CLR) 接口 SPs 交谈。 因此，将使用 Visual Studio 的调试引擎 SP 必须支持 CLR。 所有 CLR 调试接口的完整列表可在 debugref.doc，它是一部分的[!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]。
+
+ 如果你 SP 将仅使用自定义调试引擎，可以实现 SP，根据具体取决于调试引擎的需求。
+
+## <a name="see-also"></a>请参阅
+- [调试器组件](../../extensibility/debugger/debugger-components.md)

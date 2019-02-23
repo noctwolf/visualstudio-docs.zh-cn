@@ -1,7 +1,7 @@
 ---
 title: COMPUTER_INFO |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - COMPUTER_INFO structure
 ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 183c079206dd4c16a9301e370abec2f9351b1f61
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 980527de1681d773edcf1586f209ed25e2699502
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316829"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680342"
 ---
 # <a name="computerinfo"></a>COMPUTER_INFO
 描述在其运行调试器的计算机。
@@ -41,14 +41,11 @@ public struct COMPUTER_INFO
 ```
 
 ## <a name="terms"></a>术语
-wProcessorArchitecture  
-标识微处理器体系的结构。
+wProcessorArchitecture 标识微处理器体系的结构。
 
-wSuiteMask  
-标识套件掩码。
+wSuiteMask 标识套件掩码。
 
-dwOperatingSystemVersion  
-操作系统版本号。
+dwOperatingSystemVersion 操作系统版本号。
 
 ## <a name="remarks"></a>备注
 返回此结构[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)方法。
@@ -61,5 +58,5 @@ dwOperatingSystemVersion
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)
+- [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 978e4d2717d1275c00305e2eadda289a9e257912
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fac02f024813e3ca747f498025e113ba4e7a59bd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318740"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680466"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 扩展中的更改
 
@@ -103,6 +103,6 @@ ms.locfileid: "56318740"
 ### <a name="reacting-to-this-breaking-change"></a>对此项重大更改做出反应
 
 * 外部代码应将转换为的 COM 组件以及使用免注册激活。
-* 外部组件可以找到 Visual Studio 位置[按照此处的指南](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)。
+* 外部组件可以找到 Visual Studio 位置[按照此处的指南](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup)。
 * 我们建议使用外部组件[外部设置管理器](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager)而不是直接向 Visual Studio 的注册表项读取/写入。
 * 检查是否可能已使用您的扩展插件的组件实现注册的另一种方法。 例如，可能能够利用新的调试器扩展[msvsmon JSON 文件 COM 注册](migrate-debugger-COM-registration.md)。

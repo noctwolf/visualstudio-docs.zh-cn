@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetSymUnmanagedReader | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 - GetSymUnmanagedReader
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc45a9ba956d563e40292ec9a113217c46129f5d
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 3651b48217274f1b408c10831f78daa245ff1471
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412638"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701285"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 检索要使用由非托管代码的符号读取器。
@@ -40,14 +40,17 @@ int GetSymUnmanagedReader(
 ```
 
 #### <a name="parameters"></a>参数
-`ulAppDomainID`  
-[in]应用程序域的标识符。
+`ulAppDomainID`
 
-`guidModule`  
-[in]该模块的唯一标识符。
+ [in]应用程序域的标识符。
 
-`ppSymUnmanagedReader`  
-[out]返回该对象表示的符号读取器。
+`guidModule`
+
+ [in]该模块的唯一标识符。
+
+`ppSymUnmanagedReader`
+
+ [out]返回该对象表示的符号读取器。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -79,4 +82,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

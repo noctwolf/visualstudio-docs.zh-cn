@@ -10,31 +10,31 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55ceb788807f5d4fc9de2a96b4d359f290218dda
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866317"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718352"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>演练：创建扩展包
 
 扩展包是一套可以一起安装的扩展插件。 扩展包，可以轻松地与其他用户共享你喜欢的扩展或捆绑包的一组一起使用以获得特定方案的扩展。
-  
+
 ## <a name="prerequisites"></a>系统必备
 
-从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 可从 Visual Studio 15.8 预览版 2 开始的扩展包功能。
-  
+
 ## <a name="create-an-extension-with-an-extension-pack-item-template"></a>使用的扩展包，项模板创建扩展
 
 扩展包，项模板创建具有可以一起安装的扩展插件的设置的扩展包。
-  
-1. 在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic** ，然后单击**扩展性**。 在中**模板**窗格中，选择**VSIX 项目**。 在“名称”框中键入 `Test Extension Pack`。 单击 **“确定”**。  
-  
-2. 在中**解决方案资源管理器**，右键单击项目节点并选择**添加 / 新项**。 转到 Visual C#**扩展性**节点，然后选择**扩展包**。 保留默认的文件名称 (ExtensionPack1.cs)。  
-  
+
+1. 在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic** ，然后单击**扩展性**。 在中**模板**窗格中，选择**VSIX 项目**。 在“名称”框中键入 `Test Extension Pack`。 单击 **“确定”**。
+
+2. 在中**解决方案资源管理器**，右键单击项目节点并选择**添加 / 新项**。 转到 Visual C#**扩展性**节点，然后选择**扩展包**。 保留默认的文件名称 (ExtensionPack1.cs)。
+
 3. 其中包含以下代码添加 ExtensionPack1.vsext 文件
 
    ```json
@@ -53,18 +53,18 @@ ms.locfileid: "53866317"
         "name": "CopyAsHtml"
       }
     ]
-   }  
+   }
    ```
 
 4. 在找不到要包含在扩展包中的扩展 vsixid [Visual Studio Marketplace](https://marketplace.visualstudio.com/)。 找到你想要包括，然后单击的扩展**复制 ID**。 您可以更新现有**vsixId** ，以上文件，或者将另一个扩展添加到列表。
 
     ![从 Marketplace 复制 VsixId](media/vsixid-marketplace.png)
 
-5. 生成项目，并将你的扩展上传到 Marketplace。 请参阅[发布 Visual Studio 扩展](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。 
-    
+5. 生成项目，并将你的扩展上传到 Marketplace。 请参阅[发布 Visual Studio 扩展](../extensibility/walkthrough-publishing-a-visual-studio-extension.md)。
+
 > [!NOTE]
 > 扩展包只能安装可用的扩展[Visual Studio Marketplace](https://marketplace.visualstudio.com/)或[专用库](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)。
- 
+
 ## <a name="install-the-extension-pack-from-the-visual-studio-marketplace"></a>从 Visual Studio Marketplace 安装扩展包
 
 现在，发布扩展时，在 Visual Studio 中安装它，然后对其进行测试。

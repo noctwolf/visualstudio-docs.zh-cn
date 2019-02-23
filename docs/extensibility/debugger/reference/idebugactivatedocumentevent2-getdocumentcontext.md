@@ -1,7 +1,7 @@
 ---
 title: IDebugActivateDocumentEvent2::GetDocumentContext | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugActivateDocumentEvent2::GetDocumentContext
 helpviewer_keywords:
@@ -13,40 +13,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4706a10a73e0ed62a03baaf4027906ce37006dcc
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 45923ef6d219e7f7dd79581856d0875b792130d2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920599"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720323"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
-获取用于描述要设为活动状态的调试包的文档中的位置的文档上下文。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetDocumentContext (   
-   IDebugDocumentContext2** ppDocContext  
-);  
-```  
-  
-```csharp  
-int GetDocumentContext (   
-   out IDebugDocumentContext2 ppDocContext  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `ppDocContext`  
- [out]返回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)对象，表示源文件文档中的位置。  
-  
-## <a name="remarks"></a>备注  
- 此位置可能用于显示插入符号，例如。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)   
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+获取用于描述要设为活动状态的调试包的文档中的位置的文档上下文。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetDocumentContext ( 
+   IDebugDocumentContext2** ppDocContext
+);
+```
+
+```csharp
+int GetDocumentContext ( 
+   out IDebugDocumentContext2 ppDocContext
+);
+```
+
+#### <a name="parameters"></a>参数
+ `ppDocContext`
+
+ [out]返回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)对象，表示源文件文档中的位置。
+
+## <a name="remarks"></a>备注
+ 此位置可能用于显示插入符号，例如。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)
+- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
