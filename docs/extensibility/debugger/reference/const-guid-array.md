@@ -1,7 +1,7 @@
 ---
 title: CONST_GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CONST_GUID_ARRAY
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40511cac0a6d731d451d1fb2e0e4c02d214297f7
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bca2d50cc678efe3373aace28343ac3732dd00c6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318532"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696059"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 一个包含一系列结构`GUID`s。
@@ -39,11 +39,9 @@ public struct CONST_GUID_ARRAY {
 ```
 
 ## <a name="members"></a>成员
-dwCount  
-数`GUID`中的 s`Members`数组。
+dwCount 数的`GUID`中的 s`Members`数组。
 
-成员  
-数组`GUID`s。
+成员数组`GUID`s。
 
 ## <a name="remarks"></a>备注
 此结构传递给[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)方法，并返回从[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)并[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)方法。
@@ -58,7 +56,7 @@ dwCount
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)  
-[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
-[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
+- [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
+- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)

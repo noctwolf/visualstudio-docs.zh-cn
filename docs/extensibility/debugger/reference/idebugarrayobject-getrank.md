@@ -1,7 +1,7 @@
 ---
 title: IDebugArrayObject::GetRank |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugArrayObject::GetRank
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 333dca88fae59d4407e6be813b2241d070648648
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a0391030e77e5959fdc28c94f63e099e5c505d77
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923037"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683891"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
-获取数组，也就是说，维度数的排名。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetRank(   
-   DWORD* pdwRank  
-);  
-```  
-  
-```csharp  
-int GetRank(  
-   out uint pdwRank  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pdwRank`  
- [out]返回排名。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 S_OK;否则，返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 使用[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)方法来检索每个维度的数组对象的大小。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)
+获取数组，也就是说，维度数的排名。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetRank( 
+   DWORD* pdwRank
+);
+```
+
+```csharp
+int GetRank(
+   out uint pdwRank
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pdwRank`
+
+ [out]返回排名。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 S_OK;否则，返回错误代码。
+
+## <a name="remarks"></a>备注
+ 使用[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)方法来检索每个维度的数组对象的大小。
+
+## <a name="see-also"></a>请参阅
+- [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

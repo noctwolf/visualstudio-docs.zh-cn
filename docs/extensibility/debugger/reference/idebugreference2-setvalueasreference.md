@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2::SetValueAsReference | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugReference2::SetValueAsReference
 helpviewer_keywords:
@@ -12,51 +12,55 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd192323407b7558bd05ee12ea95ab5799a35e1e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c4af17f49e95818ed664e74aab53687540f653ba
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54967529"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721155"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-设置引用的另一个引用值。 留待将来使用。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT SetValueAsReference (   
-   IDebugReference2** rgpArgs,  
-   DWORD              dwArgCount,  
-   IDebugReference2*  pValue,  
-   DWORD              dwTimeout  
-);  
-```  
-  
-```cpp  
-int SetValueAsReference (   
-   IDebugReference2[] rgpArgs,  
-   uint               dwArgCount,  
-   IDebugReference2   pValue,  
-   uint               dwTimeout  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `rgpArgs`  
- [in]一个数组[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象用于确定如何设置引用值。  
-  
- `dwArgCount`  
- [in]数组中引用的数目。  
-  
- `pValue`  
- [in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象从其设置属性值。  
-  
- `dwTimeout`  
- [in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。  
-  
-## <a name="return-value"></a>返回值  
- 始终返回 `E_NOTIMPL`。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
+设置引用的另一个引用值。 留待将来使用。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT SetValueAsReference ( 
+   IDebugReference2** rgpArgs,
+   DWORD              dwArgCount,
+   IDebugReference2*  pValue,
+   DWORD              dwTimeout
+);
+```
+
+```cpp
+int SetValueAsReference ( 
+   IDebugReference2[] rgpArgs,
+   uint               dwArgCount,
+   IDebugReference2   pValue,
+   uint               dwTimeout
+);
+```
+
+#### <a name="parameters"></a>参数
+ `rgpArgs`
+
+ [in]一个数组[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象用于确定如何设置引用值。
+
+ `dwArgCount`
+
+ [in]数组中引用的数目。
+
+ `pValue`
+
+ [in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象从其设置属性值。
+
+ `dwTimeout`
+
+ [in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。
+
+## <a name="return-value"></a>返回值
+ 始终返回 `E_NOTIMPL`。
+
+## <a name="see-also"></a>请参阅
+- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

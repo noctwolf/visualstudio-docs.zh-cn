@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2::GetThreadProperties |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugThread2::GetThreadProperties
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41164b906ba3fca25347aaa65031b4dd5befe48
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: b32ec64123ef8db4724c7646c54af790fc7500a1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449835"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714642"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 获取描述此线程的属性。
@@ -39,11 +39,13 @@ int GetThreadProperties (
 ```
 
 #### <a name="parameters"></a>参数
-`dwFields`  
-[in]中的标志的组合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)枚举，它确定的哪些字段`ptp`要填充的。
+`dwFields`
 
-`ptp`  
-[in、 out]一个[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)填充线程的属性的结构。
+ [in]中的标志的组合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)枚举，它确定的哪些字段`ptp`要填充的。
+
+`ptp`
+
+ [in、 out]一个[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)填充线程的属性的结构。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -91,6 +93,6 @@ HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)  
-[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)  
-[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)
+- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+- [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)
+- [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

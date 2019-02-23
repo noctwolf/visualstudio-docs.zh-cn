@@ -1,7 +1,7 @@
 ---
 title: BP_ERROR_TYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_ERROR_TYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a986191cb52ac76e06ab44fc9cf8faef72f0154
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2964c833abfa25b57678680f8b821f992cb31de8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317882"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689182"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 指定断点的错误类型。
@@ -58,38 +58,27 @@ public enum enum_BP_ERROR_TYPE {
 ```
 
 ## <a name="members"></a>成员
-BPET_NONE  
-不指定任何断点错误。
+BPET_NONE 指定任何断点错误。
 
-BPET_TYPE_WARNING  
-指定警告样式断点错误。
+BPET_TYPE_WARNING 指定警告样式断点错误。
 
-BPET_TYPE_ERROR  
-指定错误样式断点错误。
+BPET_TYPE_ERROR 指定错误样式断点错误。
 
-BPET_SEV_HIGH  
-指定高严重级别断点错误。
+BPET_SEV_HIGH 指定高严重级别断点错误。
 
-BPET_SEV_GENERAL  
-指定中等严重性断点错误。
+BPET_SEV_GENERAL 指定中等严重性断点错误。
 
-BPET_SEV_LOW  
-指定低严重性断点错误。
+BPET_SEV_LOW 指定低严重性断点错误。
 
-BPET_TYPE_MASK  
-指定掩码样式断点错误。
+BPET_TYPE_MASK 指定掩码样式断点错误。
 
-BPET_SEV_MASK  
-指定严重级别掩码样式断点错误。
+BPET_SEV_MASK 指定严重性掩码样式断点错误。
 
-BPET_GENERAL_WARNING  
-指定常规警告样式断点错误。
+BPET_GENERAL_WARNING 指定常规警告样式断点错误。
 
-BPET_GENERAL_ERROR  
-指定常规错误样式断点错误。
+BPET_GENERAL_ERROR 指定常规错误样式断点错误。
 
-BPET_ALL  
-指定所有断点错误类型。
+BPET_ALL 指定所有断点错误类型。
 
 ## <a name="remarks"></a>备注
 这些值可能组合的按位`OR`，用于`dwType`的成员[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)结构。 作为参数传递给[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)方法。
@@ -104,6 +93,6 @@ BPET_ALL
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
-[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+- [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

@@ -11,32 +11,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6053c01908df9f1c2884e81c8610a989ac89294
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 094bff5c761a45e936f14f79587b4846d3838610
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55030673"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722403"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何：创建 Atom 馈送专用库
-您可以创建 Atom (RSS) 源到 intranet 位置包含扩展并添加到的源**扩展和更新**作为专用库。 有关详细信息，请参阅[专用库](../extensibility/private-galleries.md)。  
-  
-## <a name="create-an-atom-feed"></a>创建 Atom 馈送  
- 若要创建 Atom 馈送作为专用库，则先收集你的扩展 (*.vsix*文件) 的文件夹。 您可以将它们组织到子文件夹的前提。 您将需要以下资源：  
-  
-- *Atom.xml*提供扩展作为专用库的文件。 有关如何连接信息*atom.xml*的文件**扩展和更新**，请参阅[专用库](../extensibility/private-galleries.md)。  
-  
-- 包含已从扩展插件 （例如，屏幕截图） 中提取任何图像文件的文件夹。 *Atom.xml*文件，使他们能够在包含这些图像的相对链接**扩展和更新**。  
-  
-  例如，假设您到文件夹收集了以下两个扩展：  
-  
-- *Template_Wizard_239.vsix*，这是一个空的 VSIX 项目模板。  
-  
-- *SelectionHighlight.vsix*，这是一个工具，可突出显示所选单词的所有实例。  
-  
-  内容*atom.xml*文件将类似于下面的示例：  
-  
-```xml  
+您可以创建 Atom (RSS) 源到 intranet 位置包含扩展并添加到的源**扩展和更新**作为专用库。 有关详细信息，请参阅[专用库](../extensibility/private-galleries.md)。
+
+## <a name="create-an-atom-feed"></a>创建 Atom 馈送
+ 若要创建 Atom 馈送作为专用库，则先收集你的扩展 (*.vsix*文件) 的文件夹。 您可以将它们组织到子文件夹的前提。 您将需要以下资源：
+
+- *Atom.xml*提供扩展作为专用库的文件。 有关如何连接信息*atom.xml*的文件**扩展和更新**，请参阅[专用库](../extensibility/private-galleries.md)。
+
+- 包含已从扩展插件 （例如，屏幕截图） 中提取任何图像文件的文件夹。 *Atom.xml*文件，使他们能够在包含这些图像的相对链接**扩展和更新**。
+
+  例如，假设您到文件夹收集了以下两个扩展：
+
+- *Template_Wizard_239.vsix*，这是一个空的 VSIX 项目模板。
+
+- *SelectionHighlight.vsix*，这是一个工具，可突出显示所选单词的所有实例。
+
+  内容*atom.xml*文件将类似于下面的示例：
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text" />
@@ -68,9 +68,9 @@ ms.locfileid: "55030673"
     ...
   </entry>
 </feed>
-```  
-  
- 请注意，这两个链接标记引用的映像的生成文件夹中的屏幕截图。  
-  
-## <a name="see-also"></a>请参阅  
- [专用库](../extensibility/private-galleries.md)
+```
+
+ 请注意，这两个链接标记引用的映像的生成文件夹中的屏幕截图。
+
+## <a name="see-also"></a>请参阅
+- [专用库](../extensibility/private-galleries.md)

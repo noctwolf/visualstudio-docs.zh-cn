@@ -1,7 +1,7 @@
 ---
 title: CANSTOP_REASON | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CANSTOP_REASON
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98621fbea4fc114616ccf23ada9b372c88461970
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: bbc4143c61a0223fe3940b4167748727d1ebd560
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413041"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711613"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 用于确定程序可以停止在到达执行的特定点后执行。
@@ -40,11 +40,9 @@ public enum enum_CANSTOP_REASON {
 ```
 
 ## <a name="members"></a>成员
-CANSTOP_ENTRYPOINT  
-指定给定的程序的入口点。
+CANSTOP_ENTRYPOINT 指定给定的程序的入口点。
 
-CANSTOP_STEPIN  
-指定单步执行函数。
+CANSTOP_STEPIN 指定单步执行函数。
 
 ## <a name="remarks"></a>备注
 作为参数传递[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)方法来确认与会话调试管理器 (SDM)，如果，则可以暂时停止或单步执行函数或方法后到达该程序的入口点。
@@ -57,5 +55,5 @@ CANSTOP_STEPIN
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)
