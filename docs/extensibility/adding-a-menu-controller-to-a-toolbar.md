@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c355ba523bd16cce9d352d483af8c142f0ee439c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2938da8f5f24c5c60cfe8d09423be886de1d0c86
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318233"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705633"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>将菜单控制器添加到工具栏
 本演练基于[将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md)演练，并演示如何将菜单控制器添加到工具窗口工具栏。 如下所示的步骤还可应用于在中创建工具栏[将工具栏添加](../extensibility/adding-a-toolbar.md)演练。
@@ -223,5 +223,5 @@ ms.locfileid: "56318233"
     与消息会出现一个对话框**选择菜单控制器项 3**。 请注意，该消息对应于菜单控制器按钮上的文本。 菜单控制器按钮现在将显示**MC 项 3**。
 
 ## <a name="see-also"></a>请参阅
-[将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md)  
-[添加工具栏](../extensibility/adding-a-toolbar.md)
+- [将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md)
+- [添加工具栏](../extensibility/adding-a-toolbar.md)

@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dcd9806459a1cdc92d3eb698fcae7b4a7e0fa6f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5f68db1a4c6fb3ea2a7f9542c1a9d2d313359554
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016448"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689208"
 ---
 # <a name="security-issues"></a>安全问题
-若要调试使用 Visual Studio 的程序，所需的唯一权限是相同的一名开发人员需要运行程序。 这包括大多数情况下的远程调试。 某些情况下，涉及其他服务，如 Internet 信息服务，可能需要更高级别的权限。  
-  
- 在 Visual Studio 运行时，进程调试管理器 (PDM) 在本地计算机上跟踪调试进程。 远程调用的程序*msvsmon.exe*由开发人员来处理远程调试，并使 PDM 可启动。 (*msvsmon.exe*不是一个服务，必须手动启动，以启用该计算机上远程调试。)当 Visual Studio (或*msvsmon.exe*) 是未运行，没有过程进行跟踪以进行调试。  
-  
- 开发人员可以调试其开始使用任何特殊权限的程序。 开发人员甚至可以调试该其他人是否相同的安全组的成员由其他人启动的进程。 而且，若要启用远程调试，有必要仅以将所需的文件复制到远程计算机并启动*msvsmon.exe*。 有关详细信息，请参阅[远程调试](../../debugger/remote-debugging.md)。  
-  
-## <a name="see-also"></a>请参阅  
- [调试任务](../../extensibility/debugger/debugging-tasks.md)   
- [进程调试管理器](../../extensibility/debugger/process-debug-manager.md)   
- [远程调试](../../debugger/remote-debugging.md)
+若要调试使用 Visual Studio 的程序，所需的唯一权限是相同的一名开发人员需要运行程序。 这包括大多数情况下的远程调试。 某些情况下，涉及其他服务，如 Internet 信息服务，可能需要更高级别的权限。
+
+ 在 Visual Studio 运行时，进程调试管理器 (PDM) 在本地计算机上跟踪调试进程。 远程调用的程序*msvsmon.exe*由开发人员来处理远程调试，并使 PDM 可启动。 (*msvsmon.exe*不是一个服务，必须手动启动，以启用该计算机上远程调试。)当 Visual Studio (或*msvsmon.exe*) 是未运行，没有过程进行跟踪以进行调试。
+
+ 开发人员可以调试其开始使用任何特殊权限的程序。 开发人员甚至可以调试该其他人是否相同的安全组的成员由其他人启动的进程。 而且，若要启用远程调试，有必要仅以将所需的文件复制到远程计算机并启动*msvsmon.exe*。 有关详细信息，请参阅[远程调试](../../debugger/remote-debugging.md)。
+
+## <a name="see-also"></a>请参阅
+- [调试任务](../../extensibility/debugger/debugging-tasks.md)
+- [进程调试管理器](../../extensibility/debugger/process-debug-manager.md)
+- [远程调试](../../debugger/remote-debugging.md)

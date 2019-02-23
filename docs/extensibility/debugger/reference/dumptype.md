@@ -1,7 +1,7 @@
 ---
 title: DUMPTYPE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - DUMPTYPE
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c81d9c9f3f5dc6b0a849e405133b7ecef1e4e59b
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 07525b118d2a9ee27c52c87e68dd078d0a67054c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412963"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697125"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 指定的程序的状态 （例如正在运行的线程、 堆栈帧和当前指令地址） 进行转储。
@@ -40,11 +40,9 @@ public enum enum_DUMPTYPE {
 ```
 
 ## <a name="members"></a>成员
-DUMP_MINIDUMP  
-指定小、 更简洁的转储。
+DUMP_MINIDUMP 指定小、 更简洁的转储。
 
-DUMP_FULLDUMP  
-指定较大的完整转储。
+DUMP_FULLDUMP 指定较大的完整转储。
 
 ## <a name="remarks"></a>备注
 作为参数传递[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)方法。
@@ -57,5 +55,5 @@ DUMP_FULLDUMP
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)

@@ -1,7 +1,7 @@
 ---
 title: BP_LOCATION | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e82c17d9a29db77a0253adb830e40ad6d461b0a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: dcae8b30a0bcd7275bc0e2bebd45f834f43269d9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318285"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679330"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 指定用于描述该断点的位置的结构的类型。
@@ -51,46 +51,57 @@ public struct BP_LOCATION {
 ```
 
 ## <a name="members"></a>成员
-`bpLocationType`  
-中的值[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)枚举，用于解释`bpLocation`union 或`unionmemberX`成员。
+`bpLocationType` 中的值[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)枚举，用于解释`bpLocation`union 或`unionmemberX`成员。
 
-`bpLocation`.`bplocCodeFileLine`  
-[C + +]包含[BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)结构，如果`bpLocationType`  =  `BPLT_CODE_FILE_LINE`。
+`bpLocation`.`bplocCodeFileLine`
 
-`bpLocation.bplocCodeFuncOffset`  
-[C + +]包含[BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)结构，如果`bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`。
+ [C + +]包含[BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)结构，如果`bpLocationType`  =  `BPLT_CODE_FILE_LINE`。
 
-`bpLocation.bplocCodeContext`  
-[C + +]包含[BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)结构，如果`bpLocationType`  =  `BPLT_CODE_CONTEXT`。
+`bpLocation.bplocCodeFuncOffset`
 
-`bpLocation.bplocCodeString`  
-[C + +]包含[BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)结构，如果`bpLocationType`  =  `BPLT_CODE_STRING`。
+ [C + +]包含[BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)结构，如果`bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`。
 
-`bpLocation.bplocCodeAddress`  
-[C + +]包含[BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)结构，如果`bpLocationType`  =  `BPLT_CODE_ADDRESS`。
+`bpLocation.bplocCodeContext`
 
-`bpLocation.bplocDataString`  
-[C + +]包含[BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)结构，如果`bpLocationType`  =  `BPLT_DATA_STRING`。
+ [C + +]包含[BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)结构，如果`bpLocationType`  =  `BPLT_CODE_CONTEXT`。
 
-`bpLocation.bplocResolution`  
-[C + +]包含[BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)结构，如果`bpLocationType`  =  `BPLT_RESOLUTION`。
+`bpLocation.bplocCodeString`
 
-`unionmember1`  
-[C#仅]请参阅关于如何解释的备注。
+ [C + +]包含[BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)结构，如果`bpLocationType`  =  `BPLT_CODE_STRING`。
 
-`unionmember2`  
-[C#仅]请参阅关于如何解释的备注。
+`bpLocation.bplocCodeAddress`
 
-`unionmember3`  
-[C#仅]请参阅关于如何解释的备注。
+ [C + +]包含[BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)结构，如果`bpLocationType`  =  `BPLT_CODE_ADDRESS`。
 
-`unionmember4`  
-[C#仅]请参阅关于如何解释的备注。
+`bpLocation.bplocDataString`
+
+ [C + +]包含[BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)结构，如果`bpLocationType`  =  `BPLT_DATA_STRING`。
+
+`bpLocation.bplocResolution`
+
+ [C + +]包含[BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)结构，如果`bpLocationType`  =  `BPLT_RESOLUTION`。
+
+`unionmember1`
+
+ [C#仅]请参阅关于如何解释的备注。
+
+`unionmember2`
+
+ [C#仅]请参阅关于如何解释的备注。
+
+`unionmember3`
+
+ [C#仅]请参阅关于如何解释的备注。
+
+`unionmember4`
+
+ [C#仅]请参阅关于如何解释的备注。
 
 ## <a name="remarks"></a>备注
 此结构是的成员[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)并[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构。
 
-[C#仅]`unionmemberX`成员根据下表解释。 查看左侧列下方`bpLocationType`值，然后查看其他列来确定每个跨`unionmemberX`成员表示和封送`unionmemberX`相应地。 请参阅解释 C# 中的此结构的一部分的方法的示例。
+
+ [C#仅]`unionmemberX`成员根据下表解释。 查看左侧列下方`bpLocationType`值，然后查看其他列来确定每个跨`unionmemberX`成员表示和封送`unionmemberX`相应地。 请参阅解释 C# 中的此结构的一部分的方法的示例。
 
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|
 |----------------------|--------------------|--------------------|--------------------|--------------------|
@@ -136,12 +147,12 @@ namespace MyPackage
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)  
-[BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)  
-[BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)  
-[BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)  
-[BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)  
-[BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)  
-[BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)  
-[BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)
+- [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+- [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)
+- [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)
+- [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)
+- [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)
+- [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)
+- [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)
+- [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)

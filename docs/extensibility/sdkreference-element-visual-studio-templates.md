@@ -9,59 +9,59 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eacc3015826400b7a5378c0bd5d28abf93c09f60
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 692b8600d1de2cbbb17841dd174c4a18010c41d6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069273"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56691158"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 元素（Visual Studio 模板）
-指定项模板使用 SDK 引用。  
-  
-## <a name="syntax"></a>语法  
-  
-```xml  
-<VSTemplate>      
-    <TemplateContent>          
-        <References>              
-            <Reference>  
-                <SDKReference>SDKname</SDKReference>  
-```  
-  
-## <a name="attributes-and-elements"></a>特性和元素  
- 下列各节描述了特性、子元素和父元素。  
-  
-### <a name="attributes"></a>特性  
- 无。  
-  
-### <a name="child-elements"></a>子元素  
- 无。  
-  
-### <a name="parent-elements"></a>父元素  
-  
-|元素|描述|  
-|-------------|-----------------|  
-|[引用](../extensibility/reference-element-visual-studio-templates.md)|指定向项目添加项时要添加的程序集引用。|  
-  
-## <a name="text-value"></a>文本值  
- 需要一个文本值。  
-  
-## <a name="remarks"></a>备注  
- 本文本指定实例化项模板时要向项目添加的 SDK 引用。  
-  
-```xml  
-<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">   
-    <TemplateData> . . . </TemplateData>   
-    <TemplateContent>   
-        <References>   
-            <Reference>   
-                <SDKReference>Microsoft Visual C++ Runtime Package, Version=11.0.0.0</SDKReference>  
-...  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [References 元素 （Visual Studio 模板）](../extensibility/references-element-visual-studio-templates.md)   
- [Reference 元素 （Visual Studio 模板）](../extensibility/reference-element-visual-studio-templates.md)   
- [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+指定项模板使用 SDK 引用。
+
+## <a name="syntax"></a>语法
+
+```xml
+<VSTemplate>
+    <TemplateContent>
+        <References>
+            <Reference>
+                <SDKReference>SDKname</SDKReference>
+```
+
+## <a name="attributes-and-elements"></a>特性和元素
+ 下列各节描述了特性、子元素和父元素。
+
+### <a name="attributes"></a>特性
+ 无。
+
+### <a name="child-elements"></a>子元素
+ 无。
+
+### <a name="parent-elements"></a>父元素
+
+|元素|描述|
+|-------------|-----------------|
+|[引用](../extensibility/reference-element-visual-studio-templates.md)|指定向项目添加项时要添加的程序集引用。|
+
+## <a name="text-value"></a>文本值
+ 需要一个文本值。
+
+## <a name="remarks"></a>备注
+ 本文本指定实例化项模板时要向项目添加的 SDK 引用。
+
+```xml
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+    <TemplateData> . . . </TemplateData>
+    <TemplateContent>
+        <References>
+            <Reference>
+                <SDKReference>Microsoft Visual C++ Runtime Package, Version=11.0.0.0</SDKReference>
+...
+```
+
+## <a name="see-also"></a>请参阅
+- [References 元素（Visual Studio 模板）](../extensibility/references-element-visual-studio-templates.md)
+- [Reference 元素（Visual Studio 模板）](../extensibility/reference-element-visual-studio-templates.md)
+- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

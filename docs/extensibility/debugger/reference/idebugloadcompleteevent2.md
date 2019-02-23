@@ -1,7 +1,7 @@
 ---
 title: IDebugLoadCompleteEvent2 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugLoadCompleteEvent2
 helpviewer_keywords:
@@ -12,36 +12,36 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0071203200cea00671743fe167ba566ece75d1b2
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 83bbeb7decda65602202813229315101843e0873
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742386"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700999"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
-加载程序，但在执行任何代码之前，此接口是由调试引擎 (DE) 发送到会话调试管理器 (SDM) 中。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-IDebugLoadCompleteEvent2 : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>实施者的说明  
- DE 实现此接口以报告已成功加载程序。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象。 使用 SDM [QueryInterface](/cpp/atl/queryinterface)访问`IDebugEvent2`接口。  
-  
-## <a name="notes-for-callers"></a>调用方的说明  
- DE 创建并发送此事件对象来报告已成功加载程序。 通过使用发送该事件[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 它附加到正在调试的程序时提供的回调函数。  
-   
-## <a name="requirements"></a>要求  
- 标头： msdbg.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>请参阅  
- [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
+加载程序，但在执行任何代码之前，此接口是由调试引擎 (DE) 发送到会话调试管理器 (SDM) 中。
+
+## <a name="syntax"></a>语法
+
+```
+IDebugLoadCompleteEvent2 : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>实施者的说明
+ DE 实现此接口以报告已成功加载程序。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象。 使用 SDM [QueryInterface](/cpp/atl/queryinterface)访问`IDebugEvent2`接口。
+
+## <a name="notes-for-callers"></a>调用方的说明
+ DE 创建并发送此事件对象来报告已成功加载程序。 通过使用发送该事件[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 它附加到正在调试的程序时提供的回调函数。
+
+## <a name="requirements"></a>要求
+ 标头： msdbg.h
+
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop
+
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>请参阅
+- [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
+- [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
+- [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

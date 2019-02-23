@@ -1,7 +1,7 @@
 ---
 title: IDebugCoreServer2::GetMachineName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCoreServer2::GetName
 helpviewer_keywords:
@@ -12,36 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 513247a948c73c8b10712336c01dc51dd2369565
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 908f234aad481b9ce6dc646e78741b26131d9c1c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983789"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717762"
 ---
 # <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
-获取核心服务器运行的计算机的名称。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetName(   
-   BSTR* pbstrName  
-);  
-```  
-  
-```csharp  
-int GetName(   
-   out string pbstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pbstrName`  
- [out]返回包含计算机的名称的字符串。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
+获取核心服务器运行的计算机的名称。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetName( 
+   BSTR* pbstrName
+);
+```
+
+```csharp
+int GetName( 
+   out string pbstrName
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pbstrName`
+
+ [out]返回包含计算机的名称的字符串。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

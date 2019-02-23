@@ -10,29 +10,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49f71edcdb2f5fb13be5465292ed7d9f7a3e1632
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6898f8ce028a270bbf9d83b073439cc4576f56f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016271"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702962"
 ---
 # <a name="objects"></a>对象
-以下参考信息介绍了用于创建核心文本编辑器的实例的对象。  
-  
-## <a name="in-this-section"></a>本节内容  
- [VSCodeWindow 对象](../extensibility/vscodewindow-object.md)  
- 介绍代码窗口对象，可以包含一个或多个文本视图的专用的文档窗口。  
-  
- [VSCodeWindowManager 对象](../extensibility/vscodewindowmanager-object.md)  
- 介绍由语言服务实现，负责管理修饰的代码窗口管理器对象。  
-  
- [VSTextBuffer 对象](../extensibility/vstextbuffer-object.md)  
- 描述表示 Unicode 文本，为文件数据的流的文本缓冲区对象。  
-  
- [VSTextView 对象](../extensibility/vstextview-object.md)  
- 描述文本视图，使用户能够查看和编辑文本缓冲区的 Unicode 文本的窗口。  
-  
-## <a name="related-sections"></a>相关章节  
- [Visual Studio SDK 引用](../extensibility/visual-studio-sdk-reference.md)  
- 显示参考主题的列表。
+以下参考信息介绍了用于创建核心文本编辑器的实例的对象。
+
+## <a name="in-this-section"></a>本节内容
+- [VSCodeWindow 对象](../extensibility/vscodewindow-object.md)介绍代码窗口对象，可以包含一个或多个文本视图的专用的文档窗口。
+
+- [VSCodeWindowManager 对象](../extensibility/vscodewindowmanager-object.md)介绍的代码窗口管理器对象，由语言服务实现，并负责管理修饰。
+
+- [VSTextBuffer 对象](../extensibility/vstextbuffer-object.md)介绍表示 Unicode 文本，为文件数据的流的文本缓冲区对象。
+
+- [VSTextView 对象](../extensibility/vstextview-object.md)描述文本视图，使用户能够查看和编辑文本缓冲区的 Unicode 文本的窗口。
+
+## <a name="related-sections"></a>相关章节
+- [Visual Studio SDK 引用](../extensibility/visual-studio-sdk-reference.md)显示参考主题的列表。

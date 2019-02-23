@@ -1,7 +1,7 @@
 ---
 title: FIELD_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - FIELD_INFO_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cab1d06c868f0236d1d24c186af705e9adab717e
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 9614d3b99df71c9bfa8328478348385472f1a8fa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317466"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710001"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 指定要检索相关信息[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象。
@@ -48,17 +48,13 @@ public enum enum_FIELD_INFO_FIELDS {
 ```
 
 ## <a name="members"></a>成员
-FIF_FULLNAME  
-初始化/用`bstrFullName`字段中[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)结构。
+FIF_FULLNAME 初始化/用`bstrFullName`字段中[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)结构。
 
-FIF_NAME  
-初始化/用`bstrName`字段中`FIELD_INFO`结构。
+FIF_NAME 初始化/用`bstrName`字段中`FIELD_INFO`结构。
 
-FIF_TYPE  
-初始化/用`bstrType`字段中`FIELD_INFO`结构。
+FIF_TYPE 初始化/用`bstrType`字段中`FIELD_INFO`结构。
 
-FIF_MODIFIERS  
-初始化/用`bstrModifiers`字段中`FIELD_INFO`结构。
+FIF_MODIFIERS 初始化/用`bstrModifiers`字段中`FIELD_INFO`结构。
 
 ## <a name="remarks"></a>备注
 这些值也会作为参数传递[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)方法，以指定的哪些字段[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)结构是进行初始化。
@@ -75,7 +71,7 @@ FIF_MODIFIERS
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)  
-[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)  
-[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+- [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)

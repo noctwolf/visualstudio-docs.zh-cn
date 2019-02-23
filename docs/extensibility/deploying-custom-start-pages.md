@@ -11,12 +11,13 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89ff96ef73070570b7295ab6256a501d5865b6e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+monikerRange: vs-2017
+ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982762"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693004"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自定义起始页
 
@@ -43,13 +44,13 @@ ms.locfileid: "54982762"
 
 - 通过手动创建 *.vsix*文件。 若要创建 *.vsix*手动文件：
 
-  1.  创建*extension.vsixmanifest*文件并 *[Content_Types].xml*的新文件夹中的文件。 有关详细信息，请参阅[VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)。
+   1. 创建*extension.vsixmanifest*文件并 *[Content_Types].xml*的新文件夹中的文件。 有关详细信息，请参阅[VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)。
 
-  2.  在 Windows 资源管理器，右键单击包含两个 XML 文件的文件夹，单击**发送到**，然后单击压缩 (zipped) 文件夹。 重命名生成 *.zip*的文件*Filename.vsix*，其中 Filename 是用于安装包的可再发行文件的名称。
+   2. 在 Windows 资源管理器，右键单击包含两个 XML 文件的文件夹，单击**发送到**，然后单击压缩 (zipped) 文件夹。 重命名生成 *.zip*的文件*Filename.vsix*，其中 Filename 是用于安装包的可再发行文件的名称。
 
-  Visual studio 能够识别启动页上，`Content Element`必须包含的 VSIX 清单`CustomExtension Element`具有`Type`属性设置为`"StartPage"`。 使用 VSIX 部署安装起始页扩展将出现在**自定义起始页**上列出**启动**选项页中以 **[安装的扩展]** *扩展插件名称*。
+Visual studio 能够识别启动页上，`Content Element`必须包含的 VSIX 清单`CustomExtension Element`具有`Type`属性设置为`"StartPage"`。 使用 VSIX 部署安装起始页扩展将出现在**自定义起始页**上列出**启动**选项页中以 **[安装的扩展]** *扩展插件名称*。
 
-  如果起始页包中包含的程序集，必须添加绑定路径注册，以便它们可用于 Visual Studio 将启动。 若要执行此操作，请确保您的包，包括 *.pkgdef*包含以下信息的文件。
+如果起始页包中包含的程序集，必须添加绑定路径注册，以便它们可用于 Visual Studio 将启动。 若要执行此操作，请确保您的包，包括 *.pkgdef*包含以下信息的文件。
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
