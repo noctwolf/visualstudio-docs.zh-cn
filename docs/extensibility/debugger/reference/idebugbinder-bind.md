@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder::Bind | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBinder::Bind
 helpviewer_keywords:
@@ -12,48 +12,51 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82455db074e23b5ea08010747c80888e4629cf18
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bcb3535a2ace5818664a34a5d7b818d7dfd8b025
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979954"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704938"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
-此方法获取的内存上下文或对象，其中包含符号的当前值。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT Bind(   
-   IDebugObject*  pContainer,  
-   IDebugField*   pField,  
-   IDebugObject** ppObject  
-);  
-```  
-  
-```csharp  
-int Bind(  
-   IDebugObject     pContainer,  
-   IDebugField      pField,  
-   out IDebugObject ppObject  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pContainer`  
- [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)包含引用子`pField`。  
-  
- `pField`  
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示该符号。  
-  
- `ppObject`  
- [out]返回`IDebugObject`表示实例的符号。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+此方法获取的内存上下文或对象，其中包含符号的当前值。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT Bind( 
+   IDebugObject*  pContainer,
+   IDebugField*   pField,
+   IDebugObject** ppObject
+);
+```
+
+```csharp
+int Bind(
+   IDebugObject     pContainer,
+   IDebugField      pField,
+   out IDebugObject ppObject
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pContainer`
+
+ [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)包含引用子`pField`。
+
+ `pField`
+
+ [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示该符号。
+
+ `ppObject`
+
+ [out]返回`IDebugObject`表示实例的符号。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

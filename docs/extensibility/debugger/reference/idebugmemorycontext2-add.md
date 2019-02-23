@@ -1,7 +1,7 @@
 ---
 title: IDebugMemoryContext2::Add | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugMemoryContext2::Add
 helpviewer_keywords:
@@ -13,46 +13,48 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9625bcdc69d4df157f4309ae24d4baafcda1264a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cf072972854d837695dcacd4f84984bf342e30e3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974339"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707180"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
-将指定的值添加到当前上下文，并返回新的上下文。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT Add(   
-   UINT64                 dwCount,  
-   IDebugMemoryContext2** ppMemCxt  
-);  
-```  
-  
-```csharp  
-int Add(  
-   ulong                    dwCount,   
-   out IDebugMemoryContext2 ppMemCxt  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `dwCount`  
- [in]要添加到当前上下文的值。  
-  
- `ppMemCxt`  
- [out]返回一个新[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)对象。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 内存上下文是一个地址，因此将值添加到地址生成需要新的上下文接口的新地址。  
-  
- 即使生成的地址是与此上下文关联的内存空间外，此方法必须始终会生成一个新的上下文。 唯一的例外是，如果可以为新的上下文不分配任何内存或`ppMemCxt`为空值 （这是错误）。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
+将指定的值添加到当前上下文，并返回新的上下文。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT Add( 
+   UINT64                 dwCount,
+   IDebugMemoryContext2** ppMemCxt
+);
+```
+
+```csharp
+int Add(
+   ulong                    dwCount,
+   out IDebugMemoryContext2 ppMemCxt
+);
+```
+
+#### <a name="parameters"></a>参数
+ `dwCount`
+
+ [in]要添加到当前上下文的值。
+
+ `ppMemCxt`
+
+ [out]返回一个新[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)对象。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="remarks"></a>备注
+ 内存上下文是一个地址，因此将值添加到地址生成需要新的上下文接口的新地址。
+
+ 即使生成的地址是与此上下文关联的内存空间外，此方法必须始终会生成一个新的上下文。 唯一的例外是，如果可以为新的上下文不分配任何内存或`ppMemCxt`为空值 （这是错误）。
+
+## <a name="see-also"></a>请参阅
+- [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

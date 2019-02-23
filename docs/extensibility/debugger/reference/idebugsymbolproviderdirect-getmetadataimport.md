@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProviderDirect::GetMetaDataImport | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetMetaDataImport
 - IDebugSymbolProviderDirect::GetMetaDataImport
@@ -11,46 +11,49 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c69a74e04e0084650e6e99a4afeb6395cffd4ca6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a68e6e0a8153aa3b1c97e4bc1f2c401e9ccbe550
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951516"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695071"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
-检索元数据导入信息。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetMetaDataImport (  
-    GUID*      guid,  
-    DWORD      appID,  
-    IUnknown** ppImport  
-);  
-```  
-  
-```csharp  
-int GetMetaDataImport (  
-    Guid       guid,  
-    uint       appID,  
-    out object ppImport  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `guid`  
- [in]该模块的唯一标识符。  
-  
- `appID`  
- [in]应用程序域标识符。  
-  
- `ppImport`  
- [out]返回一个对象，它包含的元数据导入信息。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)
+检索元数据导入信息。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetMetaDataImport (
+    GUID*      guid,
+    DWORD      appID,
+    IUnknown** ppImport
+);
+```
+
+```csharp
+int GetMetaDataImport (
+    Guid       guid,
+    uint       appID,
+    out object ppImport
+);
+```
+
+#### <a name="parameters"></a>参数
+ `guid`
+
+ [in]该模块的唯一标识符。
+
+ `appID`
+
+ [in]应用程序域标识符。
+
+ `ppImport`
+
+ [out]返回一个对象，它包含的元数据导入信息。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

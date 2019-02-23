@@ -10,41 +10,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49661e379c81bac935e2d2ae2279e32d548eb698
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 257fb9f3d044992c9199eeae68feea1c60063be2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929869"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681850"
 ---
 # <a name="how-to-update-the-status-bar"></a>如何：更新状态栏
-**状态栏**控件条位于底部的多个应用程序窗口，其中包含一个或多个状态文本行或指示器。  
-  
-## <a name="to-update-the-status-bar"></a>若要更新状态栏  
-  
-1.  实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>提供你的编辑器，例如，窗体视图和代码视图的每个单独的视图对象 (DocView)。  
-  
-2.  当调用 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>，更新中的信息**状态栏**通过调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>。  
-  
+**状态栏**控件条位于底部的多个应用程序窗口，其中包含一个或多个状态文本行或指示器。
+
+## <a name="to-update-the-status-bar"></a>若要更新状态栏
+
+1.  实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>提供你的编辑器，例如，窗体视图和代码视图的每个单独的视图对象 (DocView)。
+
+2.  当调用 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>，更新中的信息**状态栏**通过调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>。
+
     > [!NOTE]
-    >  IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>仅当文档窗口最初已激活。 文档窗口处于活动状态的时间的其余部分中，必须更新**状态栏**编辑器更改的状态信息。  
-  
-## <a name="robust-programming"></a>可靠编程  
- 一个**状态栏**包含四个单独的字段：  
-  
-- 状态文本  
-  
-- 进度栏  
-  
-- 动画的图标  
-  
-- 编辑器的信息  
-  
-  有关详细信息，请参阅[状态栏](/cpp/mfc/status-bars)。  
-  
-  IDE 将自动调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>方法在<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>文档窗口被激活时实现。  
-  
-  VSPackage 实现器负责更新状态栏中的状态文本。 IDE 重置此字符串为"就绪"，如果 status 文本字段设置为空文本 ("") 在空闲时间。  
-  
-## <a name="see-also"></a>请参阅  
- [状态栏](/cpp/mfc/status-bars)
+    >  IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>仅当文档窗口最初已激活。 文档窗口处于活动状态的时间的其余部分中，必须更新**状态栏**编辑器更改的状态信息。
+
+## <a name="robust-programming"></a>可靠编程
+ 一个**状态栏**包含四个单独的字段：
+
+- 状态文本
+
+- 进度栏
+
+- 动画的图标
+
+- 编辑器的信息
+
+  有关详细信息，请参阅[状态栏](/cpp/mfc/status-bars)。
+
+  IDE 将自动调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>方法在<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>文档窗口被激活时实现。
+
+  VSPackage 实现器负责更新状态栏中的状态文本。 IDE 重置此字符串为"就绪"，如果 status 文本字段设置为空文本 ("") 在空闲时间。
+
+## <a name="see-also"></a>请参阅
+- [状态栏](/cpp/mfc/status-bars)

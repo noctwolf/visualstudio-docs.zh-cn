@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28426c7cad7abeb159434108656b5c16d47b148e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936640"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56687076"
 ---
 # <a name="localizing-vsix-packages"></a>本地化 VSIX 包
 
@@ -27,7 +27,7 @@ ms.locfileid: "54936640"
 
 ## <a name="directory-structure"></a>目录结构
 
- 当用户安装扩展**扩展和更新**检查其名称与目标计算机的 Visual Studio 区域设置相匹配的文件夹的 VSIX 包的最高级别。 如果**扩展和更新**查找 *.vsixlangpack*文件在文件夹中，都将替换该文件中的相应值中的本地化的值 *.vsixmanifest*文件。 在安装该扩展时，会显示这些值。 下面的示例显示了已本地化为西班牙语 (ES-ES) 和法语 (FR-FR) 的 VSIX 包的目录结构。  
+ 当用户安装扩展**扩展和更新**检查其名称与目标计算机的 Visual Studio 区域设置相匹配的文件夹的 VSIX 包的最高级别。 如果**扩展和更新**查找 *.vsixlangpack*文件在文件夹中，都将替换该文件中的相应值中的本地化的值 *.vsixmanifest*文件。 在安装该扩展时，会显示这些值。 下面的示例显示了已本地化为西班牙语 (ES-ES) 和法语 (FR-FR) 的 VSIX 包的目录结构。
 
 ```text
 .
@@ -63,7 +63,7 @@ ms.locfileid: "54936640"
 
 ### <a name="code"></a>代码
 
- [*Extension.vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ ms.locfileid: "54936640"
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

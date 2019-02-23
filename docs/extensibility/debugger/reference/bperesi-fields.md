@@ -1,7 +1,7 @@
 ---
 title: BPERESI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BPERESI_FIELDS
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5877bc3fa7fb2844030a862a0a8f8244cffdbb6d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 488c2b1a96d01e0e7dfa9868d2f7e5111adc4e2d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317542"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56699426"
 ---
 # <a name="bperesifields"></a>BPERESI_FIELDS
 指定要检索有关失败的解决方法的断点的信息。
@@ -48,23 +48,17 @@ public enum enum_BPERESI_FIELDS {
 ```
 
 ## <a name="members"></a>成员
-PERESI_BPRESLOCATION  
-初始化/用`bpResLocation`（断点解析位置） 的字段[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)结构。
+PERESI_BPRESLOCATION 初始化/用`bpResLocation`（断点解析位置） 的字段[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)结构。
 
-BPERESI_PROGRAM  
-初始化/用`pProgram`字段的`BP_ERROR_RESOLUTION_INFO`结构。
+BPERESI_PROGRAM 初始化/用`pProgram`字段的`BP_ERROR_RESOLUTION_INFO`结构。
 
-BPERESI_THREAD  
-初始化/用`pThread`字段的`BP_ERROR_RESOLUTION_INFO`结构。
+BPERESI_THREAD 初始化/用`pThread`字段的`BP_ERROR_RESOLUTION_INFO`结构。
 
-BPERESI_MESSAGE  
-初始化/用`bstrMessage`字段的`BP_ERROR_RESOLUTION_INFO`结构。
+BPERESI_MESSAGE 初始化/用`bstrMessage`字段的`BP_ERROR_RESOLUTION_INFO`结构。
 
-BPERESI_TYPE  
-初始化/用`dwType`（断点类型） 字段的`BP_ERROR_RESOLUTION_INFO`结构。
+BPERESI_TYPE 初始化/用`dwType`（断点类型） 字段的`BP_ERROR_RESOLUTION_INFO`结构。
 
-BPERESI_ALLFIELDS  
-初始化/使用的所有字段`BP_ERROR_RESOLUTION_INFO`结构。
+BPERESI_ALLFIELDS 初始化/使用的所有字段`BP_ERROR_RESOLUTION_INFO`结构。
 
 ## <a name="remarks"></a>备注
 作为参数传递给[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)方法，以指示的哪些字段[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)结构是进行初始化。
@@ -81,6 +75,6 @@ BPERESI_ALLFIELDS
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)  
-[GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+- [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)

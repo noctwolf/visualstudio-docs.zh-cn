@@ -1,7 +1,7 @@
 ---
 title: IDebugField::Equal |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugField::Equal
 helpviewer_keywords:
@@ -12,36 +12,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fdfc2abd407c586c949ade4e8085e282fb465a8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ed978355aa752730cfb43390b3e4b6f80d327f83
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984348"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693940"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
-此方法将此字段与指定字段相等进行比较。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT Equal(   
-   IDebugField* pField  
-);  
-```  
-  
-```csharp  
-int Equal(  
-   IDebugField pField  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pField`  
- [in]要与此比较的字段。  
-  
-## <a name="return-value"></a>返回值  
- 如果字段是相同的则返回`S_OK`。 如果字段不同，返回`S_FALSE.`否则，返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
+此方法将此字段与指定字段相等进行比较。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT Equal( 
+   IDebugField* pField
+);
+```
+
+```csharp
+int Equal(
+   IDebugField pField
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pField`
+
+ [in]要与此比较的字段。
+
+## <a name="return-value"></a>返回值
+ 如果字段是相同的则返回`S_OK`。 如果字段不同，返回`S_FALSE.`否则，返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -13,60 +13,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 923ba2a517ae934fb83c0cb36a29dbe518a2a2a3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fcacd56700867682e10ead8e46cfdadcdc66b31d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991055"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696761"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements 元素
-CommandPlacements 元素组 CommandPlacement 元素和其他 CommandPlacements 分组。  
-  
- CommandPlacements 元素是可选的。 如果没有命令、 组或菜单必须包含在辅助位置，不需要包含在此部分你 *.vsct*文件。  
-  
-## <a name="syntax"></a>语法  
-  
-```xml  
-<CommandPlacements>  
-  <CommandPlacement>... </CommandPlacement>  
-  <CommandPlacement>... </CommandPlacement>  
-</CommandPlacements>  
-```  
-  
-## <a name="attributes-and-elements"></a>特性和元素  
- 下列各节描述了特性、子元素和父元素。  
-  
-### <a name="attributes"></a>特性  
-  
-|特性|描述|  
-|---------------|-----------------|  
-|条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
-  
-### <a name="child-elements"></a>子元素  
-  
-|元素|描述|  
-|-------------|-----------------|  
-|CommandPlacements|CommandPlacement 元素进行分组和其他 CommandPlacements 分组。|  
-|[CommandPlacement 元素](../extensibility/commandplacement-element.md)|启用要包含在多个组或菜单中的按钮、 组和菜单。|  
-  
-### <a name="parent-elements"></a>父元素  
-  
-|元素|描述|  
-|-------------|-----------------|  
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的所有元素。|  
-  
-## <a name="example"></a>示例  
-  
-```xml  
-<CommandPlacements>  
-  <CommandPlacement guid="guidWidgetPackage" id="cmdidInsertOptions"  
-    priority="0x0300">  
-    <Parent guid="cmdGuidWidgetCommands" id="menuIDEditWidget"/>  
-  </CommandPlacement>  
-</CommandPlacements>  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [CommandPlacement 元素](../extensibility/commandplacement-element.md)   
- [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+CommandPlacements 元素组 CommandPlacement 元素和其他 CommandPlacements 分组。
+
+ CommandPlacements 元素是可选的。 如果没有命令、 组或菜单必须包含在辅助位置，不需要包含在此部分你 *.vsct*文件。
+
+## <a name="syntax"></a>语法
+
+```xml
+<CommandPlacements>
+  <CommandPlacement>... </CommandPlacement>
+  <CommandPlacement>... </CommandPlacement>
+</CommandPlacements>
+```
+
+## <a name="attributes-and-elements"></a>特性和元素
+ 下列各节描述了特性、子元素和父元素。
+
+### <a name="attributes"></a>特性
+
+|特性|描述|
+|---------------|-----------------|
+|条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+
+### <a name="child-elements"></a>子元素
+
+|元素|描述|
+|-------------|-----------------|
+|CommandPlacements|CommandPlacement 元素进行分组和其他 CommandPlacements 分组。|
+|[CommandPlacement 元素](../extensibility/commandplacement-element.md)|启用要包含在多个组或菜单中的按钮、 组和菜单。|
+
+### <a name="parent-elements"></a>父元素
+
+|元素|描述|
+|-------------|-----------------|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的所有元素。|
+
+## <a name="example"></a>示例
+
+```xml
+<CommandPlacements>
+  <CommandPlacement guid="guidWidgetPackage" id="cmdidInsertOptions"
+    priority="0x0300">
+    <Parent guid="cmdGuidWidgetCommands" id="menuIDEditWidget"/>
+  </CommandPlacement>
+</CommandPlacements>
+```
+
+## <a name="see-also"></a>请参阅
+- [CommandPlacement 元素](../extensibility/commandplacement-element.md)
+- [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
