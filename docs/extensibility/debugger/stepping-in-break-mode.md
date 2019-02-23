@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aefa1c4b3767ae58cb526c6f5a663350efd3137
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 66e7e227daa0dd58bf24ae946cce667992e09f90
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54922868"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685022"
 ---
 # <a name="stepping-in-break-mode"></a>在中断模式下单步执行
-以下部分介绍调试器处于中断模式，并且必须单步执行代码时发生的过程：  
-  
-## <a name="stepping-process"></a>单步执行过程  
-  
-1.  调用[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)与[STEPKIND](../../extensibility/debugger/reference/stepkind.md)并[STEPUNIT](../../extensibility/debugger/reference/stepunit.md)自变量执行的步骤。  
-  
-2.  完成步骤后，发送[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)为停止事件。  
-  
-## <a name="see-also"></a>请参阅  
- [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)
+以下部分介绍调试器处于中断模式，并且必须单步执行代码时发生的过程：
+
+## <a name="stepping-process"></a>单步执行过程
+
+1.  调用[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)与[STEPKIND](../../extensibility/debugger/reference/stepkind.md)并[STEPUNIT](../../extensibility/debugger/reference/stepunit.md)自变量执行的步骤。
+
+2.  完成步骤后，发送[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)为停止事件。
+
+## <a name="see-also"></a>请参阅
+- [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)
