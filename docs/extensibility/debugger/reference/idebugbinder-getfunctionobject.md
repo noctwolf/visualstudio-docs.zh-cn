@@ -1,7 +1,7 @@
 ---
 title: IDebugBinder::GetFunctionObject |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBinder::GetFunctionObject
 helpviewer_keywords:
@@ -12,37 +12,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53cf5ee06a90009803d9e7c65654263a3aa5889e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b69af018a1b5b1ddf743784f4736d7c2ac24d45f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55029602"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712289"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
-此方法获取[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)对象，用于创建函数的参数。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetFunctionObject(   
-   IDebugFunctionObject **ppFunction  
-);  
-```  
-  
-```csharp  
-int GetFunctionObject(  
-   out IDebugFunctionObject ppFunction  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `ppFunction`  
- [out]返回[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)用于创建函数参数的接口。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 S_OK;否则，返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+此方法获取[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)对象，用于创建函数的参数。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetFunctionObject( 
+   IDebugFunctionObject **ppFunction
+);
+```
+
+```csharp
+int GetFunctionObject(
+   out IDebugFunctionObject ppFunction
+);
+```
+
+#### <a name="parameters"></a>参数
+ `ppFunction`
+
+ [out]返回[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)用于创建函数参数的接口。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 S_OK;否则，返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
+- [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
