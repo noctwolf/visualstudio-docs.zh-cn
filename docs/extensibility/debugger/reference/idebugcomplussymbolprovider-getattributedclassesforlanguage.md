@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetAttributedClassesForLanguage
 - IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
@@ -11,20 +11,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6b8d23db5f1be603f71794426aff8d4a8283ffb
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 10d25cb9e58ac3eb38282a3ef2a2f631b6ba0e66
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56412937"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56706231"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 检索在指定的编程语言中实现与指定的特性的类。
 
 ## <a name="syntax"></a>语法
 
-```
-[C++]
+```cpp
 HRESULT GetAttributedClassesForLanguage (
     GUID               guidLanguage,
     LPOLESTR           pstrAttribute,
@@ -32,8 +31,7 @@ HRESULT GetAttributedClassesForLanguage (
 );
 ```
 
-```
-[C#]
+```csharp
 int GetAttributedClassesForLanguage (
     Guid                 guidLanguage,
     string               pstrAttribute,
@@ -42,14 +40,17 @@ int GetAttributedClassesForLanguage (
 ```
 
 #### <a name="parameters"></a>参数
-`guidLanguage`  
-[in]语言的唯一标识符。
+`guidLanguage`
 
-`pstrAttribute`  
-[in]属性的字符串。
+ [in]语言的唯一标识符。
 
-`ppEnum`  
-[out]返回特性类的枚举。
+`pstrAttribute`
+
+ [in]属性的字符串。
+
+`ppEnum`
+
+ [out]返回特性类的枚举。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -186,4 +187,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

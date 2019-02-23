@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericParamField::GetConstraints |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField::GetConstraints
 - GetConstraints
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abed2d77156aac83b09bf5a0ba472b1887d15600
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: a98a62ca294af5f7151ca0047b966cc151970fe6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450069"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700869"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 检索与此泛型参数的约束。
@@ -40,14 +40,17 @@ int GetConstraints(
 ```
 
 #### <a name="parameters"></a>参数
-`cConstraints`  
-[in]约束的数目。
+`cConstraints`
 
-`ppConstraints`  
-[out]返回一个数组，其中包含与此字段关联的约束。
+ [in]约束的数目。
 
-`pcConstraints`  
-[in、 out]中的约束的数目`ppConstraints`数组。
+`ppConstraints`
+
+ [out]返回一个数组，其中包含与此字段关联的约束。
+
+`pcConstraints`
+
+ [in、 out]中的约束的数目`ppConstraints`数组。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
@@ -149,4 +152,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+- [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

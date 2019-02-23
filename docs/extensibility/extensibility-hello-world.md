@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c68ddea3f92c33056ba1dc98332755dfd3bb1b9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f354b31e3979aacdb55aba566a646616ddc4108e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921032"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56688337"
 ---
 # <a name="create-your-first-extension-hello-world"></a>创建第一个扩展：Hello World
 
@@ -50,7 +50,11 @@ ms.locfileid: "54921032"
 
 现在应看到的入门页和一些示例资源。
 
+::: moniker range="vs-2017"
+
 如果你需要将本教程中，再返回到它，您可以在找到新的 HelloWorld 项目**起始页**中**最近**部分。
+
+::: moniker-end
 
 ## <a name="add-a-custom-command"></a>添加自定义命令
 

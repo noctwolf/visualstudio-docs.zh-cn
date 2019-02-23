@@ -13,27 +13,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b93d09b29b961d0a7659d6be742bcf66d5560ce5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 00ccae86029e43933d5624c955ed6bfcc0a045be
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983061"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56697257"
 ---
 # <a name="extend-user-settings-and-options"></a>扩展用户设置和选项
-在 Visual Studio 中有两种主要方法来保留用户首选项。 **工具** > **选项**页允许用户将他们自己的值设置为许多不同类型的设置、 常规和特定于语言的。 用户设置允许用户指定常规 Visual Studio 配置属性。 有关选项页的详细信息，请参阅[选项和选项页](../extensibility/internals/options-and-options-pages.md)。 有关用户设置的详细信息，请参阅[支持用户设置](../extensibility/internals/support-for-user-settings.md)。  
-  
- [创建选项页](../extensibility/creating-an-options-page.md)  
- 介绍如何创建选项页。  
-  
- [创建设置类别](../extensibility/creating-a-settings-category.md)  
- 介绍如何创建设置类别。  
-  
- [使用设置存储](../extensibility/using-the-settings-store.md)  
- 说明如何使用设置存储。  
-  
- [从设置存储区获取服务信息](../extensibility/getting-service-information-from-the-settings-store.md)  
- 介绍了如何从设置存储区获取可用服务。  
-  
- [写入用户设置存储](../extensibility/writing-to-the-user-settings-store.md)  
- 介绍如何将写入到用户设置存储。
+在 Visual Studio 中有两种主要方法来保留用户首选项。 **工具** > **选项**页允许用户将他们自己的值设置为许多不同类型的设置、 常规和特定于语言的。 用户设置允许用户指定常规 Visual Studio 配置属性。 有关选项页的详细信息，请参阅[选项和选项页](../extensibility/internals/options-and-options-pages.md)。 有关用户设置的详细信息，请参阅[支持用户设置](../extensibility/internals/support-for-user-settings.md)。
+
+- [创建选项页](../extensibility/creating-an-options-page.md)介绍了如何创建选项页。
+
+- [创建设置类别](../extensibility/creating-a-settings-category.md)说明如何创建设置类别。
+
+- [使用设置存储](../extensibility/using-the-settings-store.md)说明如何使用设置存储。
+
+- [从设置存储区获取服务信息](../extensibility/getting-service-information-from-the-settings-store.md)介绍了如何从设置存储区获取可用服务。
+
+- [写入用户设置存储](../extensibility/writing-to-the-user-settings-store.md)介绍了如何写入用户设置存储。

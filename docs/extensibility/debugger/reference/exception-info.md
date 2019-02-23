@@ -1,7 +1,7 @@
 ---
 title: EXCEPTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - EXCEPTION_INFO
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ff28c46931905e3386a675711653fff99df8b08
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 4c5863c9ebb790ebcbc267f62cc2a0a1fd14603c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413574"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686257"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
 描述异常或引发由正在调试的程序的运行时错误。
@@ -47,23 +47,17 @@ public struct EXCEPTION_INFO {
 ```
 
 ## <a name="members"></a>成员
-pProgram  
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)对象，表示发生了异常的程序。
+pProgram [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)对象，表示发生了异常的程序。
 
-bstrProgramName  
-发生了异常的程序的名称。
+bstrProgramName 的程序的名称中出现异常。
 
-bstrExceptionName  
-异常的名称。
+bstrExceptionName 异常的名称。
 
-dwCode  
-异常或运行时错误标识代码。
+dwCode 异常或运行时错误的标识代码。
 
-dwState  
-中的值[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)枚举，用于定义异常的状态。
+dwState 一个取值[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)枚举，用于定义异常的状态。
 
-guidType  
-GUID 的语言标识符，即`guidLang`或`guidEng`。
+guidType GUID 语言标识符，即`guidLang`或`guidEng`。
 
 ## <a name="remarks"></a>备注
 此结构作为参数传递给[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)并[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)方法。 此结构还传递给[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)要填充的方法。
@@ -76,9 +70,9 @@ GUID 的语言标识符，即`guidLang`或`guidEng`。
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)  
-[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)  
-[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)  
-[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)  
-[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)
+- [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
+- [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)
+- [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)

@@ -1,7 +1,7 @@
 ---
 title: FIELD_KIND_EX | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28a880af0a5d691a57e32b22f9f7823cca45827d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 97a2d4e76ebe1ed206ebbc2eea09b15865b86a2b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317778"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700005"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 枚举其他类型的字段的[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象可包含。 此枚举扩展[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)枚举。
@@ -42,14 +42,11 @@ public enum enum_FIELD_KIND_EX
 ```
 
 ## <a name="members"></a>成员
-FIELD_KIND_EX_NONE  
-字段不包含扩展的类型。
+FIELD_KIND_EX_NONE 字段不包含扩展的类型。
 
-FIELD_TYPE_EX_METHODVAR  
-字段包含一个方法的变量。
+FIELD_TYPE_EX_METHODVAR 字段包含一个方法的变量。
 
-FIELD_TYPE_EX_CLASSVAR  
-字段包含一个类变量。
+FIELD_TYPE_EX_CLASSVAR 字段包含一个类变量。
 
 ## <a name="requirements"></a>要求
 标头：Sh.h
@@ -59,5 +56,5 @@ FIELD_TYPE_EX_CLASSVAR
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)

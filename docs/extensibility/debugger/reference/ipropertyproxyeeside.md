@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyEESide | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IPropertyProxyEESide
 helpviewer_keywords:
@@ -12,52 +12,52 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69f67bcba200d5b2a12544f7405fca04f5106e5f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bdd9b804556cd748c921a0c21729daee56e9499b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954067"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708454"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
-此接口提供方法以查看关联的对象上的数据。 此接口是支持的类型可视化工具的一部分。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-IPropertyProxyEESide : IUnknown  
-```  
-  
-## <a name="notes-for-implementers"></a>实施者的说明  
- 表达式计算器实现此接口以支持类型可视化工具。  
-  
-## <a name="notes-for-callers"></a>调用方的说明  
- 调用[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)若要获取此接口。 调用[QueryInterface](/cpp/atl/queryinterface)上[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口，以获得[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)接口。  
-  
-## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
- 以下方法实现此接口：  
-  
-|方法|描述|  
-|------------|-----------------|  
-|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|初始化数据源提供程序，以便可以访问该对象的数据。|  
-|[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|检索有关对象的程序集的信息。|  
-|[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|获取对象的初始数据。|  
-|[CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)|创建的现有数据存储的副本。|  
-|[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|创建到现有的数据存储的引用。|  
-|[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|检索包含此对象的程序集的上下文中的特定程序集信息。|  
-  
-## <a name="remarks"></a>备注  
- 类型可视化工具使用此接口来访问此接口的一部分的对象与关联的值。 通过访问的数据[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)接口，它提供了数据的只读视图。  
-  
-## <a name="requirements"></a>要求  
- 标头： msdbg.h  
-  
- 命名空间:Microsoft.VisualStudio.Debugger.Interop  
-  
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
-  
-## <a name="see-also"></a>请参阅  
- [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
- [类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)   
- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+此接口提供方法以查看关联的对象上的数据。 此接口是支持的类型可视化工具的一部分。
+
+## <a name="syntax"></a>语法
+
+```
+IPropertyProxyEESide : IUnknown
+```
+
+## <a name="notes-for-implementers"></a>实施者的说明
+ 表达式计算器实现此接口以支持类型可视化工具。
+
+## <a name="notes-for-callers"></a>调用方的说明
+ 调用[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)若要获取此接口。 调用[QueryInterface](/cpp/atl/queryinterface)上[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口，以获得[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)接口。
+
+## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
+ 以下方法实现此接口：
+
+|方法|描述|
+|------------|-----------------|
+|[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|初始化数据源提供程序，以便可以访问该对象的数据。|
+|[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|检索有关对象的程序集的信息。|
+|[GetInitialData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getinitialdata.md)|获取对象的初始数据。|
+|[CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)|创建的现有数据存储的副本。|
+|[InPlaceUpdateObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)|创建到现有的数据存储的引用。|
+|[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)|检索包含此对象的程序集的上下文中的特定程序集信息。|
+
+## <a name="remarks"></a>备注
+ 类型可视化工具使用此接口来访问此接口的一部分的对象与关联的值。 通过访问的数据[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)接口，它提供了数据的只读视图。
+
+## <a name="requirements"></a>要求
+ 标头： msdbg.h
+
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop
+
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+
+## <a name="see-also"></a>请参阅
+- [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
+- [类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+- [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
+- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugAddress::GetAddress | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugAddress::GetAddress
 helpviewer_keywords:
@@ -12,39 +12,40 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e91b90fd54ea70aed729707e927ad2394d756139
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1cff380759163a38129b92f07752e72904f6bbaf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917674"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56684450"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
-返回描述对象并将其作用域或容器内的其位置的结构。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-HRESULT GetAddress (  
-   DEBUG_ADDRESS * pAddress  
-);  
-```  
-  
-```csharp  
-int GetAddress(  
-   DEBUG_ADDRESS[] pAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pAddress`  
- [in、 out]一个[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)通过此方法来填充的结构。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 S_OK;否则，返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)结构传递给此方法，然后使用相应的信息对其进行填充。 如何解释此信息取决于返回的信息和符号处理程序本身的类型。 请参阅[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)的更多详细信息。  
-  
-## <a name="see-also"></a>请参阅  
- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
+返回描述对象并将其作用域或容器内的其位置的结构。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT GetAddress (
+   DEBUG_ADDRESS * pAddress
+);
+```
+
+```csharp
+int GetAddress(
+   DEBUG_ADDRESS[] pAddress
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pAddress`
+
+ [in、 out]一个[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)通过此方法来填充的结构。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 S_OK;否则，返回错误代码。
+
+## <a name="remarks"></a>备注
+ [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)结构传递给此方法，然后使用相应的信息对其进行填充。 如何解释此信息取决于返回的信息和符号处理程序本身的类型。 请参阅[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)的更多详细信息。
+
+## <a name="see-also"></a>请参阅
+- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

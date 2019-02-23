@@ -10,32 +10,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f8ea4f053d28ea14c05a50e3bc187faf6f6e207
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fefeaf07c923a5fefa282efcd96948b2d907cca1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966850"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704639"
 ---
 # <a name="mchildren-field"></a>m_children field
-使用此任务中注册的子任务的列表。  
-  
- **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **程序集：** mscorlib (在*mscorlib.dll*)  
-  
- 无法从.NET Framework 来访问此内部成员，因为以下语法提供通用中间语言 (CIL)。  
-  
-## <a name="syntax"></a>语法  
-  
-```csharp 
-.field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children  
-```  
-  
-## <a name="remarks"></a>备注  
- 运行任务时，只有执行任务的线程应访问此数组。  
-  
- 如果完成此任务，其他线程可以访问此字段，只要它们不将任何内容添加到其中或从中删除任何内容。  
-  
-## <a name="see-also"></a>请参阅  
- [ContingentProperties 类](../../extensibility/debugger/contingentproperties-class-internal-members.md)
+使用此任务中注册的子任务的列表。
+
+ **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **程序集：** mscorlib (在*mscorlib.dll*)
+
+ 无法从.NET Framework 来访问此内部成员，因为以下语法提供通用中间语言 (CIL)。
+
+## <a name="syntax"></a>语法
+
+```csharp
+.field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children
+```
+
+## <a name="remarks"></a>备注
+ 运行任务时，只有执行任务的线程应访问此数组。
+
+ 如果完成此任务，其他线程可以访问此字段，只要它们不将任何内容添加到其中或从中删除任何内容。
+
+## <a name="see-also"></a>请参阅
+- [ContingentProperties 类](../../extensibility/debugger/contingentproperties-class-internal-members.md)

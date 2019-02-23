@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery::GetCustomAttributeByName |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDebugCustomAttributeQuery::GetCustomAttributeByName
 - GetCustomAttributeByName
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb887a7d8e164616a987e475e4617e9ea88f90bf
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413418"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56725016"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 检索在给定其名称的自定义属性。
@@ -40,14 +40,17 @@ int GetCustomAttributeByName(
 ```
 
 #### <a name="parameters"></a>参数
-`pszCustomAttributeName`  
-[in]自定义特性的名称。
+`pszCustomAttributeName`
 
-`ppBlob`  
+ [in]自定义特性的名称。
+
+`ppBlob`
+
 [in、 out]包含自定义特性数据的字节数组。
 
-`pdwLen`  
-[out]以字节为单位的长度`ppBlob`参数。
+`pdwLen`
+
+ [out]以字节为单位的长度`ppBlob`参数。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回 `S_OK`。 如果自定义特性不存在，将返回`S_FALSE`。 否则，返回错误代码。
@@ -91,4 +94,4 @@ Error:
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)
+- [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

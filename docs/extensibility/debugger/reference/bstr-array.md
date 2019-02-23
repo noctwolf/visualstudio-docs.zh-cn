@@ -1,7 +1,7 @@
 ---
 title: BSTR_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - BSTR_ARRAY
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79502e4a7a42a4c83957c0ef6b470fa9753db6fd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 24222b60db1ba35da59069e58d6f1377928e7a54
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317453"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714915"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
 描述一个字符串数组的结构。
@@ -39,16 +39,15 @@ struct BSTR_ARRAY {
 ```
 
 ## <a name="terms"></a>术语
-dwCount  
-中的字符串数`Members`数组。
+dwCount 数量的字符串中`Members`数组。
 
-成员  
-字符串数组。
+成员的字符串数组。
 
 ## <a name="remarks"></a>备注
 此结构返回从[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)方法。
 
-[C + +]每个单个字符串，必须使用释放`SysFreeString`，并`Members`数组，必须释放与`CoTaskMemFree`。
+
+ [C + +]每个单个字符串，必须使用释放`SysFreeString`，并`Members`数组，必须释放与`CoTaskMemFree`。
 
 ## <a name="requirements"></a>要求
 标头： msdbg.h
@@ -58,5 +57,5 @@ dwCount
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)  
-[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)
+- [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
+- [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

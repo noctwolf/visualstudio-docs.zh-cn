@@ -1,7 +1,7 @@
 ---
 title: dwTYPE_KIND | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - dwTYPE_KIND
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5a60939b779fe7377662a267826722b4c916679
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2a33bdf1875426898a6db72831bee4d1d7ac1f9a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317375"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56689247"
 ---
 # <a name="dwtypekind"></a>dwTYPE_KIND
 指定如何解释的类型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象。
@@ -43,14 +43,11 @@ public enum enum_dwTYPE_KIND {
 ```
 
 #### <a name="parameters"></a>参数
-TYPE_KIND_METADATA  
-[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)并集应被视为[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)结构。
+TYPE_KIND_METADATA [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)并集应被视为[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)结构。
 
-TYPE_KIND_PDB  
-`TYPE_INFO`并集应被视为[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)结构。
+TYPE_KIND_PDB`TYPE_INFO`并集应被视为[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)结构。
 
-TYPE_KIND_BUILT  
-`TYPE_INFO`并集应被视为[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)结构。
+TYPE_KIND_BUILT`TYPE_INFO`并集应被视为[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)结构。
 
 ## <a name="remarks"></a>备注
 此枚举的值中出现`dwKind`字段[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)结构，用于确定如何解释`type`联合成员。 `TYPE_INFO`结构返回通过调用[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)方法。
@@ -63,9 +60,9 @@ TYPE_KIND_BUILT
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
-[枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)  
-[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)  
-[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)  
-[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)  
-[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)  
-[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)
+- [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+- [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
+- [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)
+- [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)
+- [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)
+- [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)

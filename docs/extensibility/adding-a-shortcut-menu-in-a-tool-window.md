@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bbaedce280924cbad81286992c9bdef586b4346
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316322"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681473"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>工具窗口中添加快捷菜单
 本演练将在工具窗口的快捷菜单。 快捷菜单，在用户右键单击按钮、 文本框中或窗口背景时，将显示一个菜单。 快捷菜单上的命令的行为与其他菜单或工具栏上的命令相同。 若要支持快捷方式菜单上，指定在 *.vsct*文件并将其显示在响应鼠标右键单击。
@@ -277,5 +277,5 @@ ms.locfileid: "56316322"
 4. 单击快捷菜单上的颜色。 工具窗口背景颜色应更改为所选颜色。
 
 ## <a name="see-also"></a>请参阅
-[命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)  
-[使用并提供服务](../extensibility/using-and-providing-services.md)
+- [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
+- [使用并提供服务](../extensibility/using-and-providing-services.md)
