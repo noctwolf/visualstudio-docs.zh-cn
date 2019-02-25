@@ -41,6 +41,7 @@
 # [编译和生成](compiling-and-building.md)
 ## [生成和清理项目和解决方案](building-and-cleaning-projects-and-solutions.md)
 ## [生成操作](build-actions.md)
+## [如何：设置多个启动项目](set-startup-projects.md)
 ## [自定义生成系统](customizing-build-system.md)
 ## [配置](configurations.md)
 ### [创建和编辑配置](create-and-edit-configurations.md)

@@ -673,15 +673,15 @@ items:
       href: ide/environment-settings.md
     - name: 同步设置
       href: ide/synchronized-settings-in-visual-studio.md
-    - name: 更改字体和颜色
+    - name: 字体和颜色
       href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
-    - name: 自定义菜单和工具栏
+    - name: 菜单和工具栏
       href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
-    - name: 自定义窗口布局
+    - name: 窗口布局
       href: ide/customizing-window-layouts-in-visual-studio.md
-    - name: 在解决方案资源管理器中自定义文件嵌套
+    - name: 解决方案资源管理器中的文件嵌套
       href: ide/file-nesting-solution-explorer.md
-    - name: 自定义起始页
+    - name: 启动行为
       href: ide/customizing-the-start-page-for-visual-studio.md
     - name: 查找和使用 Visual Studio 扩展
       href: ide/finding-and-using-visual-studio-extensions.md
@@ -709,7 +709,7 @@ items:
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
     - name: 用于设计支持辅助功能的应用的资源
       href: ide/reference/resources-for-designing-accessible-applications.md
-- name: 引用
+- name: 参考
   items:
   - name: 常规用户界面元素
     items:
@@ -1135,9 +1135,9 @@ items:
   - name: 与我们交流
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: f956b9a47ffe8fcf3f082711a742e36c90c95304
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 5145f3d07dc85e137bca0bbc605381d5347a624d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450602"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722572"
