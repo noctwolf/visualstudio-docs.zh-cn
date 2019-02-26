@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c386fb7f9fb57abccf7d7bc3c9cec900a65d883a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978264"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796668"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探究 Visual Studio SDK
 本部分提供有关 Visual Studio 扩展，其中包括 Visual Studio 体系结构、 组件、 服务、 架构、 实用工具和类似的内容的详细信息。
@@ -55,13 +55,13 @@ ms.locfileid: "54978264"
 
  工具窗口通常会提供用户可与之交互的各种控件。 例如，**属性**窗口让用户设置具有特殊用途的对象的属性。 **属性**窗口是这个意义上说，专用的但还常规，因为在许多不同的情况下可以使用它。 同样，**输出**窗口专用化，因为它提供了基于文本的输出，但常规，因为在 Visual Studio 中的许多子系统可以使用它来向 Visual Studio 用户提供输出。
 
- 请考虑下图的 Visual Studio 中，其中包含多个工具窗口。
+ 请考虑下图的 Visual Studio 中，其中包含多个工具窗口：
 
  ![屏幕截图](../../extensibility/internals/media/t1gui.png "T1gui")
 
  某些工具窗口一起停靠在单一的解决方案资源管理器工具窗口将显示和隐藏其他工具窗口，但使其可通过单击选项卡。 图中显示了两个其他工具窗口**错误列表**并**输出**窗口中上一个窗格, 停靠在一起。
 
- 此外显示的是主文档窗格中，其中显示了多个编辑器窗口。 尽管工具窗口通常有一个实例 (例如，可以打开一个**解决方案资源管理器**)，编辑器窗口可以具有多个实例，其中每个可用于编辑一个单独的文档，但所有这些都在停靠同一个窗格。 图显示了一个文档窗格具有两个编辑器窗口、 一个窗体设计器窗口中，以及一个显示启动页的浏览器窗口。 在文档窗格中的所有窗口都都可通过单击选项卡上，但包含 EditorPane.cs 文件的编辑器窗口是可见且处于活动状态。
+ 此外显示的是主文档窗格中，其中显示了多个编辑器窗口。 尽管工具窗口通常有一个实例 (例如，可以打开一个**解决方案资源管理器**)，编辑器窗口可以具有多个实例，其中每个可用于编辑一个单独的文档，但所有这些都在停靠同一个窗格。 图中显示一个具有两个编辑器窗口中，一个窗体设计器窗口的文档窗格。 在文档窗格中的所有窗口都都可通过单击选项卡上，但包含 EditorPane.cs 文件的编辑器窗口是可见且处于活动状态。
 
  扩展 Visual Studio 时，可以通过扩展来创建 windows，Visual Studio 用户可交互的工具。 此外可以创建自己的编辑器的让 Visual Studio 用户编辑文档。 工具窗口和编辑器将集成到 Visual Studio 中，因为没有它们以停靠或正确显示选项卡上进行编程。 时正确注册 Visual Studio 中，它们会自动具有工具窗口和文档窗口在 Visual Studio 中的典型功能。 有关详细信息，请参阅[扩展和自定义工具 Windows](../../extensibility/extending-and-customizing-tool-windows.md)。
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a002ca0696f18aa8c524b27be27047ed29b9b25
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720492"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796590"
 ---
 # <a name="shipping-visual-studio-extensions"></a>传送 Visual Studio 扩展
 完成开发您的扩展插件后，可以在其他计算机上安装、 共享与朋友和同事，或在 Visual Studio Marketplace 上发布。 在本部分中，我们介绍需要执行的操作将发布和维护您的扩展插件的所有操作： 使用.vsix 文件，发布、 本地化，和更新。
@@ -25,7 +25,7 @@ ms.locfileid: "56720492"
 ## <a name="working-with-vsix-extensions"></a>使用 VSIX 扩展
  创建一个空白的 VSIX 项目，然后将不同的项模板添加到它，可以创建 VSIX 扩展。 有关详细信息，请参阅[VSIX 项目模板](../extensibility/vsix-project-template.md)。
 
- VSIX 格式可用于包项目模板、 项模板、 Vspackage、 Managed Extensibility Framework (MEF) 组件**工具箱**控件、 组件和自定义类型 （这包括自定义起始页）。 VSIX 格式使用基于文件的部署。 有关 VSIX 包的详细信息，请参阅[VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)。
+ VSIX 格式可用于包项目模板、 项模板、 Vspackage、 Managed Extensibility Framework (MEF) 组件**工具箱**控件、 组件和自定义类型 （这包括自定义起始页的视觉对象Studio 2017)。 VSIX 格式使用基于文件的部署。 有关 VSIX 包的详细信息，请参阅[VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)。
 
  VSIX 格式不支持代码段的安装。 它还不支持某些其他方案，如写入到全局程序集缓存 (GAC) 或系统注册表。 如果需要将写入到 gac 中或在安装中的注册表，则必须使用 Windows 安装程序。 有关详细信息，请参阅[准备扩展的 Windows Installer 部署](../extensibility/preparing-extensions-for-windows-installer-deployment.md)。
 

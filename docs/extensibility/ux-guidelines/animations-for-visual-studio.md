@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 953347c79470b4a77fcd590a1107416f5fcce872
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0d132c9689348fa728fc639d2aa3c8ecd8ba9e25
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694278"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796785"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio 的动画
 ## <a name="animation-fundamentals"></a>动画基础知识
@@ -305,7 +305,7 @@ UI 元素不可见 （0%不透明） 从使用此模式时，将转换为可见 
 
 -   体系结构资源管理器面板展开和折叠
 
--   起始的页项目展开和折叠
+-   Visual Studio 2017 起始页项目展开和折叠
 
 #### <a name="x-y-position-change"></a>X，Y 位置更改
 使用此模式时，UI 元素更改和 / 或其 X 或 Y 位置。
