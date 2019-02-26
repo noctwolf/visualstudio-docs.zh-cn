@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180a162e7ff75a23ea99277f875522aac88b6c84
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe97972d882fa8806de925bac6a072cd2dde4513
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690456"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796876"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio 的应用程序模式
 ##  <a name="BKMK_WindowInteractions"></a> 窗口的交互
@@ -128,10 +128,22 @@ Visual Studio 工具窗口具有不同的状态，其中一些为激活用户 �
 
 **其他工具窗口**
 
+::: moniker range="vs-2017"
+
 | 工具窗口 | 函数 |
 | --- | --- |
 | 工具箱 | 用于存储将放置到设计图面，为所有设计器提供一致的拖动源上的元素的工具窗口。 |
-| 起始页 | 在用户门户到 Visual Studio 2017 中，有权访问的开发人员新闻、 Visual Studio 的帮助，以及最近使用的项目的源。 用户还可以通过将从 StartPage.xaml 文件复制创建自定义起始页"Common7\IDE\StartPages\"到 Visual Studio 中的 StartPages 文件夹的 Visual Studio program files 目录记录目录，然后再编辑 XAML通过手动或在 Visual Studio 或其他代码编辑器中打开它。 |
+| 起始页 | 在用户门户到 Visual Studio 中，有权访问的开发人员新闻、 Visual Studio 的帮助，以及最近使用的项目的源。 用户还可以通过将从 StartPage.xaml 文件复制创建自定义起始页"Common7\IDE\StartPages\"到 Visual Studio 中的 StartPages 文件夹的 Visual Studio program files 目录记录目录，然后再编辑 XAML通过手动或在 Visual Studio 或其他代码编辑器中打开它。 |
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+| 工具窗口 | 函数 |
+| --- | --- |
+| 工具箱 | 用于存储将放置到设计图面，为所有设计器提供一致的拖动源上的元素的工具窗口。 |
+
+::: moniker-end
 
 **调试器工具窗口**
 
