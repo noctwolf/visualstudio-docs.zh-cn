@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f4845fe01e5b197126b6da73c1439ff08be482
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853896"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621326"
 ---
 # <a name="how-to-build-incrementally"></a>如何：增量生成
 生成一个大项目时，不重新生成以前生成过但仍然为最新状态的组件十分重要。 如果每次都生成所有目标，则每次生成都需要很长时间才能完成。 为了启用增量生成（这类生成仅重新生成以前未生成过或已过期的目标）， [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 可以对输入文件的时间戳和输出文件的时间戳进行比较，并确定是跳过、生成还是部分重新生成某个目标。 但是，在输入和输出之间必须存在一对一映射。 可以使用转换来使目标能够识别此直接映射。 有关转换的详细信息，请参阅[转换](../msbuild/msbuild-transforms.md)。
@@ -38,12 +38,12 @@ ms.locfileid: "55853896"
   [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以对输入文件的时间戳和输出文件的时间戳进行比较，并确定是跳过、生成还是部分重新生成某个目标。 在下面的示例中，如果 `@(CSFile)` 项列表中有任何文件比 hello.exe 文件新，则 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 将运行该目标；否则将跳过它：
 
 ```xml
-<Target Name="Build" 
-    Inputs="@(CSFile)" 
+<Target Name="Build"
+    Inputs="@(CSFile)"
     Outputs="hello.exe">
 
     <Csc
-        Sources="@(CSFile)" 
+        Sources="@(CSFile)"
         OutputAssembly="hello.exe"/>
 </Target>
 ```
@@ -103,8 +103,8 @@ ms.locfileid: "55853896"
 ```
 
 ## <a name="see-also"></a>请参阅
-[目标](../msbuild/msbuild-targets.md)  
-[Target 元素 (MSBuild)](../msbuild/target-element-msbuild.md)  
-[转换](../msbuild/msbuild-transforms.md)  
-[Csc 任务](../msbuild/csc-task.md)  
-[Vbc 任务](../msbuild/vbc-task.md)
+- [目标](../msbuild/msbuild-targets.md)
+- [Target 元素 (MSBuild)](../msbuild/target-element-msbuild.md)
+- [转换](../msbuild/msbuild-transforms.md)
+- [Csc 任务](../msbuild/csc-task.md)
+- [Vbc 任务](../msbuild/vbc-task.md)

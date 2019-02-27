@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 6190f4e735b7b3f05efe80f8d8562ac03f1ee3c8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 67d25bcea141c15a55b5cc2950c42d9a5fb5f4f8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335022"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56654147"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>调试 Visual Studio 中的 Azure 服务
 
@@ -33,5 +33,6 @@ ms.locfileid: "56335022"
 
 - 远程调试 Azure Service Fabric 上的 ASP.NET，请参阅[调试远程 Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
-## <a name="see-also"></a>请参阅  
- [在 Visual Studio 中进行调试](../debugger/index.md)
+## <a name="see-also"></a>请参阅
+
+- [在 Visual Studio 中进行调试](../debugger/index.md)

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 596f36457627e8da435c2a8c4223487aa35c60f4
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: c2cce521a78c9e7c3c2e9ba9dd6240c5380de64a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227389"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692263"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的表达式
 Visual Studio 调试器包括表达式计算器，当您在 **“快速监视”** 对话框、 **“监视”** 窗口或 **“即时”** 窗口中输入表达式时，这些计算器可以对其进行计算。 这些表达式计算器还可以在 **“断点”** 窗口和调试器中的许多其他位置使用。
@@ -205,7 +205,7 @@ int main()
 - 命名空间或模块级的关键字，如 `End Sub` 或 `Module`。
 
 ## <a name="see-also"></a>请参阅
-[C++ 中的格式说明符](../debugger/format-specifiers-in-cpp.md)  
-[上下文运算符 (C++)](../debugger/context-operator-cpp.md)  
-[C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)  
-[伪变量](../debugger/pseudovariables.md)
+- [C++ 中的格式说明符](../debugger/format-specifiers-in-cpp.md)
+- [上下文运算符 (C++)](../debugger/context-operator-cpp.md)
+- [C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)
+- [伪变量](../debugger/pseudovariables.md)

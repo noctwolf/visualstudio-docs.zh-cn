@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e7e9e61ffd20828d73cef9c4ce3831d613d69bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89bfc33aaf4b3f80ee6b80a93ad6b71dd3786599
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922220"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627059"
 ---
 # <a name="makedir-task"></a>MakeDir 任务
 创建目录，并在必要时创建任何父目录。
@@ -31,7 +31,7 @@ ms.locfileid: "55922220"
 ## <a name="parameters"></a>参数
 下表描述了 `MakeDir` 任务的参数。
 
-|参数|说明​​|
+|参数|说明|
 |---------------|-----------------|
 |`Directories`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 要创建的目录集。|
 |`DirectoriesCreated`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 由此任务创建的目录。 如果无法创建某些目录，则其中可能不包含已传递到 `Directories` 参数的所有项。|
@@ -58,5 +58,5 @@ ms.locfileid: "55922220"
 ```
 
 ## <a name="see-also"></a>请参阅
-[任务](../msbuild/msbuild-tasks.md)  
-[任务参考](../msbuild/msbuild-task-reference.md)
+- [任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)

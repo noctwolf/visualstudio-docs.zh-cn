@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3640cebfda96b0c618352017e982c695ad908de0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 393abb3b1e1872a416865cbfee5c142bef98ce78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155586"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637069"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 将打开一个会话，用于查询符号。
@@ -31,13 +31,14 @@ HRESULT openSession ( 
 ```
 
 #### <a name="parameters"></a>参数
-ppSession  
+ppSession
+
 [out]返回[IDiaSession](../../debugger/debug-interface-access/idiasession.md)对象，表示打开会话。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。
 
-|值|说明​​|
+|值|说明|
 |-----------|-----------------|
 |E_UNEXPECTED|[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)对象之前尚未初始化了一个来源为符号。|
 |E_INVALIDARG|`ppSession` 参数无效。|
@@ -60,7 +61,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[概述](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[查询 .Pdb 文件](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [概述](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [查询 .Pdb 文件](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

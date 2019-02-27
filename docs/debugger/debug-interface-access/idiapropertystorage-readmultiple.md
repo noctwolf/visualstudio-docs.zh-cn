@@ -12,41 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3c507df19fad7dd9594aeca1a53b9cb89a2e936
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0ec66de4feea1a59ca1ef71f48bae49ed5ac2232
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035557"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708805"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
-读取指定的属性从当前的属性集。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT ReadMultiple(   
-   ULONG          cpspec,  
-   PROPSPEC const rgpspec,  
-   PROPVARIANT    rgvar  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `cpspec`  
- [in]属性中指定的计数`rgpspec`数组。 如果为零，则方法返回没有属性，但的确会返回`S_OK`作为成功代码。  
-  
- `rgpspec`  
- [in]要读取的属性数组。 属性 ID 或可选的字符串名称，可以指定属性。 不需要在数组中任何特定顺序中指定属性。 该数组可以包含重复的属性，从而导致重复的属性值返回时的简单属性。 非简单属性应返回访问被拒绝在尝试再次将其打开。 数组可以包含的属性 Id 和字符串 Id 的组合。 此数组必须至少具有`cpspec`属性值的数目。  
-  
- `rgvar`  
- [in、 out]一个数组`PROPVARIANT`结构 （Microsoft.VisualStudio.OLE.Interop 命名空间中） 若要使用的每个属性的值进行填充。 该数组必须至少是`cpspec`大小中的元素。 调用方不需要初始化数组中的值。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果未找到一个或多个属性。 否则，返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 如果未找到属性中的相应条目`rgvar`数组包含`VARIANT`类型为`VT_EMPTY`。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+读取指定的属性从当前的属性集。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT ReadMultiple( 
+   ULONG          cpspec,
+   PROPSPEC const rgpspec,
+   PROPVARIANT    rgvar
+);
+```
+
+#### <a name="parameters"></a>参数
+ `cpspec`
+
+[in]属性中指定的计数`rgpspec`数组。 如果为零，则方法返回没有属性，但的确会返回`S_OK`作为成功代码。
+
+ `rgpspec`
+
+[in]要读取的属性数组。 属性 ID 或可选的字符串名称，可以指定属性。 不需要在数组中任何特定顺序中指定属性。 该数组可以包含重复的属性，从而导致重复的属性值返回时的简单属性。 非简单属性应返回访问被拒绝在尝试再次将其打开。 数组可以包含的属性 Id 和字符串 Id 的组合。 此数组必须至少具有`cpspec`属性值的数目。
+
+ `rgvar`
+
+[in、 out]一个数组`PROPVARIANT`结构 （Microsoft.VisualStudio.OLE.Interop 命名空间中） 若要使用的每个属性的值进行填充。 该数组必须至少是`cpspec`大小中的元素。 调用方不需要初始化数组中的值。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果未找到一个或多个属性。 否则，返回错误代码。
+
+## <a name="remarks"></a>备注
+ 如果未找到属性中的相应条目`rgvar`数组包含`VARIANT`类型为`VT_EMPTY`。
+
+## <a name="see-also"></a>请参阅
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

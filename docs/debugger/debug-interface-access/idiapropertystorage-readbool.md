@@ -12,37 +12,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf0e91e2d617877596798512140195b54f4d3f8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924543"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596342"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
-读取`BOOL`属性组中的值。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT ReadBOOL (   
-   PROPID id,  
-   BOOL*  pValue  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `id`  
- [in]要读取的属性的标识符 (`PROPID`定义为 WTypes.h 中`ULONG`)。  
-  
- `pValue`  
- [out]返回属性值。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则返回错误代码。 返回`E_INVALIDARG`如果该属性的类型不是`BOOL`。  
-  
-## <a name="remarks"></a>备注  
- 一致的结果，将解释`BOOL`值，以便非零值都`TRUE`零值为`FALSE`。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+读取`BOOL`属性组中的值。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT ReadBOOL ( 
+   PROPID id,
+   BOOL*  pValue
+);
+```
+
+#### <a name="parameters"></a>参数
+ `id`
+
+[in]要读取的属性的标识符 (`PROPID`定义为 WTypes.h 中`ULONG`)。
+
+ `pValue`
+
+[out]返回属性值。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则返回错误代码。 返回`E_INVALIDARG`如果该属性的类型不是`BOOL`。
+
+## <a name="remarks"></a>备注
+ 一致的结果，将解释`BOOL`值，以便非零值都`TRUE`零值为`FALSE`。
+
+## <a name="see-also"></a>请参阅
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

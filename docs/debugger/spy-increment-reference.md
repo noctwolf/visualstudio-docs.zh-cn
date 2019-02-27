@@ -11,47 +11,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 407c161c700f4dd24eb8d123f0ef015398051caa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b28c737f0a1c17d302cc2924b5d2c3ddc9c1dbb6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925605"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686582"
 ---
 # <a name="spy-reference"></a>Spy++ 参考
-请参阅下面列出的每个 Spy + + 菜单和对话框中描述的部分：  
-  
-## <a name="in-this-section"></a>本节内容  
- [菜单命令](../debugger/menu-commands.md)  
- 介绍每个 Spy + + 菜单上可用的命令。  
-  
- [“字体”对话框](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
- 用于配置在 Spy + + 视图窗口中使用的字符字体。  
-  
- [Spy++ 视图的搜索工具](../debugger/search-tools-for-spy-increment-views.md)  
- 用于在 Spy + + 视图窗口中查找特定节点的对话框。  
-  
- [“窗口属性”对话框](../debugger/window-properties-dialog-box.md)  
- 用于显示 Windows 视图中选择窗口的属性。  
-  
- [“消息选项”对话框](../debugger/message-options-dialog-box.md)  
- 用于选择要在消息视图中列出的消息。  
-  
- [“消息属性”对话框](../debugger/message-properties-dialog-box.md)  
- 用于显示在消息视图中选择的消息的属性。  
-  
- [“进程属性”对话框](../debugger/process-properties-dialog-box.md)  
- 用于显示在进程视图中选择的进程的属性。  
-  
- [“线程属性”对话框](../debugger/thread-properties-dialog-box.md)  
- 用于显示在线程视图中选择一个线程的属性。  
-  
- [其他对话框](../debugger/other-dialog-boxes.md)  
- 用于显示有关 Spy + + 程序的信息。  
-  
-## <a name="related-sections"></a>相关章节  
- [使用 Spy++](../debugger/using-spy-increment.md)  
- 介绍 Spy + + 工具，并说明如何使用它。  
-  
- [Spy++ 视图](../debugger/spy-increment-views.md)  
- 介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。
+请参阅下面列出的每个 Spy + + 菜单和对话框中描述的部分：
+
+## <a name="in-this-section"></a>本节内容
+ [菜单命令](../debugger/menu-commands.md)介绍每个 Spy + + 菜单上可用的命令。
+
+ [字体对话框](../debugger/font-dialog-box-microsoft-spy-increment-help.md)用于配置在 Spy + + 视图窗口中使用的字符字体。
+
+ [Spy + + 视图搜索工具](../debugger/search-tools-for-spy-increment-views.md)对话框用于在 Spy + + 视图窗口中查找特定节点。
+
+ [窗口属性对话框](../debugger/window-properties-dialog-box.md)用于显示 Windows 视图中选择窗口的属性。
+
+ [消息选项对话框](../debugger/message-options-dialog-box.md)用于选择要在消息视图中列出的消息。
+
+ [消息属性对话框](../debugger/message-properties-dialog-box.md)用于显示在消息视图中选择的消息的属性。
+
+ [处理属性对话框](../debugger/process-properties-dialog-box.md)用于显示在进程视图中选择的进程的属性。
+
+ [线程属性对话框](../debugger/thread-properties-dialog-box.md)用于显示在线程视图中选择一个线程的属性。
+
+ [其他对话框](../debugger/other-dialog-boxes.md)用于显示有关 Spy + + 程序的信息。
+
+## <a name="related-sections"></a>相关章节
+ [使用 Spy + +](../debugger/using-spy-increment.md)介绍 Spy + + 工具，并说明如何使用它。
+
+ [Spy + + 视图](../debugger/spy-increment-views.md)介绍的 windows、 消息、 进程和线程的 Spy + + 树视图。

@@ -11,48 +11,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba749e75144b6b4e13f991c78ca91d787aab3a59
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3c4794a0dd50423a7a1566b20e86aaa5501c94e5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949891"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623133"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>使用探查器命令行收集独立应用程序的并发数据
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的并发方法可用于收集资源争用数据和线程活动数据，后者可显示 CPU 使用率、线程争用、线程迁移、同步延迟、重叠 IO 的区域和其他系统事件。  
-  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的并发方法可用于收集资源争用数据和线程活动数据，后者可显示 CPU 使用率、线程争用、线程迁移、同步延迟、重叠 IO 的区域和其他系统事件。
 
-## <a name="common-tasks"></a>常见任务  
-  
-|任务|相关的内容|  
-|----------|---------------------|  
-|**启动 .NET Framework 应用程序并分析并发数据**|-   [如何：启动 .NET Framework 应用程序以收集并发数据](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|  
-|**启动 C/C++ 应用程序并分析并发数据**|-   [如何：启动本机应用程序以收集并发数据](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|  
-|**将探查器附加到正在运行的 .NET Framework 应用程序**|-   [如何：将探查器附加到 .NET Framework 应用程序以收集并发数据](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|  
-|**将探查器附加到正在运行的 C/C++ 应用程序**|-   [如何：将探查器附加到本机应用程序，并收集并发数据](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|  
-  
+
+## <a name="common-tasks"></a>常见任务
+
+|任务|相关的内容|
+|----------|---------------------|
+|**启动 .NET Framework 应用程序并分析并发数据**|-   [如何：启动 .NET Framework 应用程序以收集并发数据](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|
+|**启动 C/C++ 应用程序并分析并发数据**|-   [如何：启动本机应用程序以收集并发数据](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|
+|**将探查器附加到正在运行的 .NET Framework 应用程序**|-   [如何：将探查器附加到 .NET Framework 应用程序以收集并发数据](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|
+|**将探查器附加到正在运行的 C/C++ 应用程序**|-   [如何：将探查器附加到本机应用程序，并收集并发数据](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|
+
 ## <a name="related-tasks"></a>相关任务
-  
-### <a name="profile-stand-alone-applications"></a>分析独立应用程序  
-  
-|任务|相关的内容|  
-|----------|---------------------|  
-|**使用采样方法进行分析**|-   [使用采样收集应用程序统计信息](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|  
-|**使用检测方法进行分析**|-   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|  
-|**分析 .NET 内存分配和垃圾回收**|-   [收集 .NET Framework 内存数据](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
-|**添加层交互数据**|-   [收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
-  
-### <a name="profile-concurrency-issues"></a>分析并发问题  
-  
-|任务|相关的内容|  
-|----------|---------------------|  
-|**分析 ASP.NET 应用程序**|-   [收集并发数据](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
-|**分析服务**|-   [收集并发数据](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
-  
-### <a name="analyze-concurrency-data-views-and-reports"></a>分析并发数据视图和报告  
- [资源争用数据视图](../profiling/resource-contention-data-views.md)  
-  
- [并发可视化工具](../profiling/concurrency-visualizer.md)  
-  
-## <a name="reference"></a>参考  
- [命令行分析工具参考](../profiling/command-line-profiling-tools-reference.md)
+
+### <a name="profile-stand-alone-applications"></a>分析独立应用程序
+
+|任务|相关的内容|
+|----------|---------------------|
+|**使用采样方法进行分析**|-   [使用采样收集应用程序统计信息](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
+|**使用检测方法进行分析**|-   [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
+|**分析 .NET 内存分配和垃圾回收**|-   [收集 .NET Framework 内存数据](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
+|**添加层交互数据**|-   [收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
+
+### <a name="profile-concurrency-issues"></a>分析并发问题
+
+|任务|相关的内容|
+|----------|---------------------|
+|**分析 ASP.NET 应用程序**|-   [收集并发数据](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
+|**分析服务**|-   [收集并发数据](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|
+
+### <a name="analyze-concurrency-data-views-and-reports"></a>分析并发数据视图和报告
+- [资源争用数据视图](../profiling/resource-contention-data-views.md)
+
+- [并发可视化工具](../profiling/concurrency-visualizer.md)
+
+## <a name="reference"></a>参考
+- [命令行分析工具参考](../profiling/command-line-profiling-tools-reference.md)

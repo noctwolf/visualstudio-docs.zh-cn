@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 779df14d01950b90a45764ba9d84760a1448d475
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
+ms.openlocfilehash: faff61833cb130902efbd64d60a16f74c507a3e2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318649"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627930"
 ---
 # <a name="locationtype"></a>LocationType
 指示符号中包含的位置信息的类型。
@@ -42,41 +42,29 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>元素
-`LocIsNull`  
-位置信息不可用。
+`LocIsNull` 位置信息不可用。
 
-`LocIsStatic`  
-位置是静态的。
+`LocIsStatic` 位置是静态的。
 
-`LocIsTLS`  
-位置是在线程本地存储中。
+`LocIsTLS` 位置是在线程本地存储中。
 
-`LocIsRegRel`  
-位置是寄存器相对。
+`LocIsRegRel` 位置是寄存器相对。
 
-`LocIsThisRel`  
-位置是`this`-相对。
+`LocIsThisRel` 位置是`this`-相对。
 
-`LocIsEnregistered`  
-位置是在寄存器中。
+`LocIsEnregistered` 位置是在寄存器中。
 
-`LocIsBitField`  
-位置所在的位字段。
+`LocIsBitField` 位置所在的位字段。
 
-`LocIsSlot`  
-位置是 Microsoft 中间语言 (MSIL) 槽。
+`LocIsSlot` 位置是 Microsoft 中间语言 (MSIL) 槽。
 
-`LocIsIlRel`  
-位置是 MSIL 相对。
+`LocIsIlRel` 位置是 MSIL 相对。
 
-`LocInMetaData`  
-位置是在元数据中。
+`LocInMetaData` 位置是在元数据中。
 
-`LocIsConstant`  
-位置是常量值。
+`LocIsConstant` 位置是常量值。
 
-`LocTypeMax`  
-此枚举中的位置类型的数。
+`LocTypeMax` 此枚举中的位置类型的数。
 
 ## <a name="remarks"></a>备注
 可使用的属性[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)接口取决于图像文件中的符号的位置。 有关详细信息，请参阅[符号位置](../../debugger/debug-interface-access/symbol-locations.md)。
@@ -87,7 +75,7 @@ enum LocationType {
 标头： cvconst.h
 
 ## <a name="see-also"></a>请参阅
-[枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
-[IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)  
-[符号位置](../../debugger/debug-interface-access/symbol-locations.md)
+- [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)
+- [符号位置](../../debugger/debug-interface-access/symbol-locations.md)

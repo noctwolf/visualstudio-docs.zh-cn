@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/22/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Visual Studio 订阅 - 查找主要联系人
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2a9108009e497a4685659cdc904e77352f94365a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 46f36348c9275b47b885d9a7179885b4450502bd
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637976"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843346"
 ---
 # <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>查找与 Visual Studio 订阅相关联的主要联系人
 
@@ -25,13 +23,11 @@ ms.locfileid: "39637976"
 2. 在“许可证”选项卡中，选择下拉列表中的“关系摘要”。
     > [!div class="mx-imgBorder"]
     > ![选择关系](_img/locate-primary-contact/vlsc-relationship.png)
-   
-3. 选择适用的协议编号。 
+
+3. 选择适用的协议编号。
     > [!div class="mx-imgBorder"]
     > ![选择协议](_img/locate-primary-contact/vlsc-agreement.png)
 
-4. 选择“联系人”选项卡。主要联系人将在与协议相关联的联系人列表中列出。 
+4. 选择“联系人”选项卡。主要联系人将在与协议相关联的联系人列表中列出。
     > [!div class="mx-imgBorder"]
     > ![选择联系人](_img/locate-primary-contact/vlsc-contacts.png)
-
-

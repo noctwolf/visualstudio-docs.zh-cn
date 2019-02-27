@@ -12,52 +12,56 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59d36847416801965841d79b5be9e9a654487b96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 729b3c323ce2128b18af516ecbffb7b5157f0274
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54986899"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642152"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
-检索由编译单位和名称的源文件。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT findFile (   
-   IDiaSymbol*           pCompiland,  
-   LPCOLESTR             name,  
-   DWORD                 option,  
-   IDiaEnumSourceFiles** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pCompiland`  
- [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，表示用于搜索的作为上下文将编译单位。 将此参数设置为`NULL`在所有编译单位中查找源文件。  
-  
- `name`  
- [in]指定要检索的源文件的名称。 将此参数设置为`NULL`所有源要检索的文件。  
-  
- `option`  
- [in]指定应用于名称搜索的比较选项。 中的值[NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)枚举可以单独或组合使用。  
-  
- `ppResult`  
- [out]返回[IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)检索包含源文件的列表的对象。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="example"></a>示例  
-  
-```C++  
-IDiaEnumSourceFiles* pEnum;  
-pSession->findFile( NULL, L"sourcefile.cpp", nsFNameExt, &pEnum );  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)
+检索由编译单位和名称的源文件。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT findFile ( 
+   IDiaSymbol*           pCompiland,
+   LPCOLESTR             name,
+   DWORD                 option,
+   IDiaEnumSourceFiles** ppResult
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pCompiland`
+
+[in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，表示用于搜索的作为上下文将编译单位。 将此参数设置为`NULL`在所有编译单位中查找源文件。
+
+ `name`
+
+[in]指定要检索的源文件的名称。 将此参数设置为`NULL`所有源要检索的文件。
+
+ `option`
+
+[in]指定应用于名称搜索的比较选项。 中的值[NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)枚举可以单独或组合使用。
+
+ `ppResult`
+
+[out]返回[IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)检索包含源文件的列表的对象。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="example"></a>示例
+
+```C++
+IDiaEnumSourceFiles* pEnum;
+pSession->findFile( NULL, L"sourcefile.cpp", nsFNameExt, &pEnum );
+```
+
+## <a name="see-also"></a>请参阅
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)

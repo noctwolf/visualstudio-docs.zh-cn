@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d270afeb4c0c0404ae83bbaa51938d7c741965
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ce0e95a72c6c2400f5ac245f3ac4741423194c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069858"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618232"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是一个用于生成应用程序的平台。 此引擎（也称为 MSBuild）为项目文件提供了一个 XML 架构，用于控制生成平台处理和生成软件的方式。 Visual Studio 会使用 MSBuild，但它不依赖于 Visual Studio。 通过在项目或解决方案文件中调用 msbuild.exe，可以在未安装 Visual Studio 的环境中安排和生成产品。
@@ -183,6 +183,6 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 | [其他资源](https://social.msdn.microsoft.com/forums/vstudio/home?forum=msbuild) | 列出社区和支持资源，用于了解有关 MSBuild 的更多信息。 |
 
 ## <a name="reference"></a>参考
- [MSBuild 参考](../msbuild/msbuild-reference.md) 指向包含参考信息的主题的链接。
+- [MSBuild 参考](../msbuild/msbuild-reference.md) 指向包含参考信息的主题的链接。
 
- [术语](msbuild-glossary.md) 定义常见 MSBuild 术语。
+- [术语](msbuild-glossary.md) 定义常见 MSBuild 术语。

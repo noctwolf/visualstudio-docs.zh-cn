@@ -12,59 +12,64 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3271e1e322b37e474053f22084f8040b8bdedd3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c5759d810bf9180522508a6be54e5c94ffcfadb3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930623"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643075"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
-检索指定的父标识符相匹配的名称和符号类型的所有子级。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT findChildren (   
-   IDiaSymbol*       parent,  
-   SymTagEnum        symtag,  
-   LPCOLESTR         name,  
-   DWORD             compareFlags,  
-   IDiaEnumSymbols** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `parent`  
- [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示父对象。 如果此父符号是函数、 模块或块，则返回其子词法`ppResult`。 如果父符号是一种类型，则返回其子类。 如果此参数为`NULL`，然后`symtag`必须设置为`SymTagExe`或`SymTagNull`，这会返回全局作用域 （.exe 文件）。  
-  
- `symtag`  
- [in]指定要检索的子对象的符号标记。 值取自[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举。 设置为`SymTagNull`以检索所有子级。  
-  
- `name`  
- [in]指定要检索的子对象的名称。 设置为`NULL`要检索的所有子级。  
-  
- `compareFlags`  
- [in]指定比较选项应用到匹配的名称。 中的值[NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)枚举可以单独或组合使用。  
-  
- `ppResult`  
- [out]返回[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)检索包含子符号的列表的对象。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="example"></a>示例  
- 下面的示例演示如何查找函数的局部变量`pFunc`该匹配项名称`szVarName`。  
-  
-```C++  
-IDiaEnumSymbols* pEnum;  
-pSession->findChildren( pFunc, SymTagData, szVarName, nsCaseSensitive, &pEnum );  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [概述](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)   
- [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)
+检索指定的父标识符相匹配的名称和符号类型的所有子级。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT findChildren ( 
+   IDiaSymbol*       parent,
+   SymTagEnum        symtag,
+   LPCOLESTR         name,
+   DWORD             compareFlags,
+   IDiaEnumSymbols** ppResult
+);
+```
+
+#### <a name="parameters"></a>参数
+ `parent`
+
+[in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示父对象。 如果此父符号是函数、 模块或块，则返回其子词法`ppResult`。 如果父符号是一种类型，则返回其子类。 如果此参数为`NULL`，然后`symtag`必须设置为`SymTagExe`或`SymTagNull`，这会返回全局作用域 （.exe 文件）。
+
+ `symtag`
+
+[in]指定要检索的子对象的符号标记。 值取自[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举。 设置为`SymTagNull`以检索所有子级。
+
+ `name`
+
+[in]指定要检索的子对象的名称。 设置为`NULL`要检索的所有子级。
+
+ `compareFlags`
+
+[in]指定比较选项应用到匹配的名称。 中的值[NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)枚举可以单独或组合使用。
+
+ `ppResult`
+
+[out]返回[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)检索包含子符号的列表的对象。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="example"></a>示例
+ 下面的示例演示如何查找函数的局部变量`pFunc`该匹配项名称`szVarName`。
+
+```C++
+IDiaEnumSymbols* pEnum;
+pSession->findChildren( pFunc, SymTagData, szVarName, nsCaseSensitive, &pEnum );
+```
+
+## <a name="see-also"></a>请参阅
+- [概述](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)
+- [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)

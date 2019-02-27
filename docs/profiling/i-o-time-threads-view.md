@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5743062a56dbf5afac76698d4ca9247d5652833
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d7ba29383ddddc02160967a90b56046128d2f19
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997463"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625447"
 ---
 # <a name="io-time-threads-view"></a>I/O 时间（“线程”视图）
-时间线中的这些段与归类为 I/O 的阻塞时间关联。 这意味着一个线程正在等待 I/O 操作完成。 此线程可能已在 API 中被阻止，或由将并发可视化工具视为 I/O 的 I/O 相关内核等待阻止。 此组中包括 `CreateFile()`、`ReadFile()` 和 `WSARecv()` 等 API。  
-  
-## <a name="see-also"></a>请参阅  
- [线程视图](../profiling/threads-view-parallel-performance.md)
+时间线中的这些段与归类为 I/O 的阻塞时间关联。 这意味着一个线程正在等待 I/O 操作完成。 此线程可能已在 API 中被阻止，或由将并发可视化工具视为 I/O 的 I/O 相关内核等待阻止。 此组中包括 `CreateFile()`、`ReadFile()` 和 `WSARecv()` 等 API。
+
+## <a name="see-also"></a>请参阅
+- [线程视图](../profiling/threads-view-parallel-performance.md)

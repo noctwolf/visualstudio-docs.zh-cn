@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b1fd51605e8d08d10195896f2d35a72f3dd82dd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a88679d5423fc0ed2340638e5e1634bb3c81a20c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016482"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636796"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>没有要显示的磁盘活动（线程视图）
-无法显示磁盘 I/O 通道中当前时间范围的磁盘活动。 如果缩小或滚动，可能会显示磁盘活动。 此外，请确保没有磁盘通道处于隐藏状态。  
-  
-## <a name="see-also"></a>请参阅  
- [线程视图](../profiling/threads-view-parallel-performance.md)
+无法显示磁盘 I/O 通道中当前时间范围的磁盘活动。 如果缩小或滚动，可能会显示磁盘活动。 此外，请确保没有磁盘通道处于隐藏状态。
+
+## <a name="see-also"></a>请参阅
+- [线程视图](../profiling/threads-view-parallel-performance.md)

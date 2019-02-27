@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f497c7105f0b05caf907d14b59dbbbfc1801dc9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c7f50a3117daeee0ec1727adbcdcc5ca710be36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54943323"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598656"
 ---
 # <a name="zoom-control-utilization-view"></a>缩放控件（“使用率”视图）
-缩放控件可帮助您放大 CPU 使用率图表，从而使您能够关注特定的感兴趣区域。 此控件可在视图的中心区域放大。 所以在放大之前将感兴趣的区域移到中心位置。  
-  
- 在 CPU 使用率图表或 GPU 活动图中，可以拖动鼠标指针创建一个突出显示的区域。 释放鼠标按钮后，视图会放大选定的范围。  
-  
-## <a name="see-also"></a>请参阅  
- [“使用率”视图](../profiling/utilization-view.md)
+缩放控件可帮助您放大 CPU 使用率图表，从而使您能够关注特定的感兴趣区域。 此控件可在视图的中心区域放大。 所以在放大之前将感兴趣的区域移到中心位置。
+
+ 在 CPU 使用率图表或 GPU 活动图中，可以拖动鼠标指针创建一个突出显示的区域。 释放鼠标按钮后，视图会放大选定的范围。
+
+## <a name="see-also"></a>请参阅
+- [“使用率”视图](../profiling/utilization-view.md)

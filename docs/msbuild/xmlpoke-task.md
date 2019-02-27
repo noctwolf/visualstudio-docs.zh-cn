@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 691a9ddbba4291bb6b54d15c9b60e6339b2548b3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6eb87a279da834004e599a49b33d0c1b32355269
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963773"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626682"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 任务
 
@@ -30,7 +30,7 @@ ms.locfileid: "54963773"
 ## <a name="parameters"></a>参数
 
  下表描述了 `XmlPoke` 任务的参数。
-  
+
 |参数|说明|
 |---------------|-----------------|
 |`Namespaces`|可选 `String` 参数。<br /><br /> 指定 XPath 查询前缀的命名空间。 `Namespaces` 是 XML 代码片段，由 `Namespace` 元素组成，包含 `Prefix` 和 `Uri` 属性。 属性 `Prefix` 指定与 `Uri` 属性中指定的命名空间关联的前缀。 不要使用空的 `Prefix`。|
@@ -81,5 +81,5 @@ ms.locfileid: "54963773"
 
 ## <a name="see-also"></a>请参阅
 
- [任务](../msbuild/msbuild-tasks.md)   
- [任务参考](../msbuild/msbuild-task-reference.md)
+- [任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)

@@ -16,24 +16,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4053cd105bddf94644318ff7e06811e8d8cbbaf
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fa0366fed1a405acfa600e9af594e32c1ab47346
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961892"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623744"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .targets 文件
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 包括多个 .targets 文件，文件内容包含常见方案的项、属性、目标和任务。 这些文件将自动导入到大多数 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目文件中，以便简化维护，增强可读性。  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 包括多个 .targets 文件，文件内容包含常见方案的项、属性、目标和任务。 这些文件将自动导入到大多数 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目文件中，以便简化维护，增强可读性。
 
- 项目通常会导入一个或多个 .targets 文件以定义它们的生成进程。 例如由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 创建的 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目将导入 Microsoft.CSharp.targets，它可导入 Microsoft.Common.targets。 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目本身会定义特定于该项目的项和属性，但 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目的标准生成规则在导入的 .targets 文件中进行定义。  
+ 项目通常会导入一个或多个 .targets 文件以定义它们的生成进程。 例如由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 创建的 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目将导入 Microsoft.CSharp.targets，它可导入 Microsoft.Common.targets。 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目本身会定义特定于该项目的项和属性，但 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目的标准生成规则在导入的 .targets 文件中进行定义。
 
- `$(MSBuildToolsPath)` 值指定这些公用 .targets 文件的路径。 如果 `ToolsVersion` 为 4.0，则文件位于以下位置：*\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*  
+ `$(MSBuildToolsPath)` 值指定这些公用 .targets 文件的路径。 如果 `ToolsVersion` 为 4.0，则文件位于以下位置：*\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*
 
 > [!NOTE]
->  若要了解如何创建自己的目标，请参阅[目标](../msbuild/msbuild-targets.md)。 有关如何使用 `Import` 元素将项目文件插入到其他项目文件的详细信息，请参阅 [Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md) 和[如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)。  
+>  若要了解如何创建自己的目标，请参阅[目标](../msbuild/msbuild-targets.md)。 有关如何使用 `Import` 元素将项目文件插入到其他项目文件的详细信息，请参阅 [Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md) 和[如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)。
 
-## <a name="common-targets-files"></a>公用 .targets 文件  
+## <a name="common-targets-files"></a>公用 .targets 文件
 
 | .targets 文件 | 说明 |
 |---------------------------------| - |
@@ -44,7 +44,7 @@ ms.locfileid: "54961892"
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
 Directory.Build.targets 是用户定义的对目录下的项目提供自定义选项的文件。 除非属性 ImportDirectoryBuildTargets 设为 false，否则该文件将从 Microsoft.Common.targets 自动导入。
 
-## <a name="see-also"></a>请参阅  
- [Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)   
- [MSBuild 参考](../msbuild/msbuild-reference.md)  
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>请参阅
+- [Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)
+- [MSBuild 参考](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

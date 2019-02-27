@@ -4,19 +4,19 @@ description: 介绍如何在 Visual Studio 中使用 Azure 资源组部署项目
 author: mlearned
 manager: jillfra
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
-ms.service: azure-resource-manager
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: bbe4fc4f59527b73b46d95f70541202f87ffab4e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c91b52d10e3692be600bdee3a0e2dd60182f0668
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55139294"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841787"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>使用 Azure 资源组部署项目在 Azure DevOps Services 中持续集成
+
 若要部署 Azure 模板，请执行各个阶段的任务：生成、测试、复制到 Azure（也称为“暂存”）和部署模板。 可通过两种不同的方法将模板部署到 Azure DevOps Services。 两种方法产生的结果相同，因此请选择最符合工作流的方法。
 
 1. 在运行 PowerShell 脚本的生成管道（包含在 Azure 资源组部署项目 Deploy-AzureResourceGroup.ps1 中）中添加一个步骤。 该脚本将复制项目，然后部署模板。

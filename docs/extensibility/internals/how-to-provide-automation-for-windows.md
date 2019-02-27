@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a4482069d16ef6f0f64472b838057949890a6d3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 190372e44f068296f7fea14819a3520803b89406
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335150"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843126"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>如何：提供适用于 windows 的自动化
 
@@ -38,7 +38,7 @@ ms.locfileid: "56335150"
 
 一种标准<xref:EnvDTE.Document>对象也是可从环境中，虽然编辑器可以有自己的实现<xref:EnvDTE.Document>通过实现对象`IExtensibleObject`接口和响应的`GetAutomationObject`。
 
-此外，编辑器可以提供特定于 VSPackage 的自动化对象，通过检索<xref:EnvDTE.Document.Object%2A>方法，通过实现`IVsExtensibleObject`或`IExtensibleObject`接口。 [VSSDK 示例](http://aka.ms/vs2015sdksamples)有助于 RTF 特定于文档的自动化对象。
+此外，编辑器可以提供特定于 VSPackage 的自动化对象，通过检索<xref:EnvDTE.Document.Object%2A>方法，通过实现`IVsExtensibleObject`或`IExtensibleObject`接口。 [VSSDK 示例](https://aka.ms/vs2015sdksamples)有助于 RTF 特定于文档的自动化对象。
 
 ## <a name="see-also"></a>请参阅
 

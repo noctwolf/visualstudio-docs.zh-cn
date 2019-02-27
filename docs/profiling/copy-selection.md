@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82fd0bbf4ed0e3d5b16df70dda29a215fd03535b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea96fe521afe713b1eafd59390047bfdb427f6fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035336"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622990"
 ---
 # <a name="copy-selection"></a>复制选择
-若要从“报告”选项卡复制整个调用堆栈，请单击“复制”。 然后，可以在任何支持该操作的程序中粘贴该调用堆栈。  
-  
-## <a name="see-also"></a>请参阅  
- [线程视图](../profiling/threads-view-parallel-performance.md)
+若要从“报告”选项卡复制整个调用堆栈，请单击“复制”。 然后，可以在任何支持该操作的程序中粘贴该调用堆栈。
+
+## <a name="see-also"></a>请参阅
+- [线程视图](../profiling/threads-view-parallel-performance.md)

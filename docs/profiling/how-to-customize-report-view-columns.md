@@ -13,46 +13,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5da139d9d4e1ddc797f48f55e120906f03109b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a7032f868a8012a4c52657301afdc4aa51af02f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019718"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644960"
 ---
 # <a name="how-to-customize-report-view-columns"></a>如何：自定义报表视图列
-Visual Studio Team System Development Edition 中的性能工具与集成开发环境 (IDE) 全面集成，旨在提供无缝的用户体验。 下表显示了可通过添加、删除和重新排列列自定义的视图：  
-  
--   [“模块”视图](../profiling/modules-view.md)  
-  
--   [“函数”视图](../profiling/functions-view.md)  
-  
--   [“行”视图](../profiling/lines-view.md)  
-  
--   [“指令指针”(IP) 视图](../profiling/instruction-pointers-ips-view.md)  
-  
--   [“调用方/被调用方”视图](../profiling/caller-callee-view.md)  
-  
--   [“调用关系树”视图](../profiling/call-tree-view.md)  
-  
--   [“分配”视图](../profiling/dotnet-memory-allocations-view.md)  
-  
--   [“对象生存期”视图](../profiling/object-lifetime-view.md)  
-  
--   [“标记”视图](../profiling/marks-view.md)  
-  
--   [“进程”视图](../profiling/process-view.md)  
-  
-### <a name="to-customize-a-report-view"></a>自定义报告视图  
-  
-1.  打开报告视图。  
-  
-2.  右键单击报告视图图面，然后单击“添加/删除列”。  
-  
-     随即出现“添加/删除列”对话框。  
-  
-3.  选择要添加的列。  
-  
-4.  单击箭头按钮对列重新排序。  
-  
+Visual Studio Team System Development Edition 中的性能工具与集成开发环境 (IDE) 全面集成，旨在提供无缝的用户体验。 下表显示了可通过添加、删除和重新排列列自定义的视图：
+
+-   [“模块”视图](../profiling/modules-view.md)
+
+-   [“函数”视图](../profiling/functions-view.md)
+
+-   [“行”视图](../profiling/lines-view.md)
+
+-   [“指令指针”(IP) 视图](../profiling/instruction-pointers-ips-view.md)
+
+-   [“调用方/被调用方”视图](../profiling/caller-callee-view.md)
+
+-   [“调用关系树”视图](../profiling/call-tree-view.md)
+
+-   [“分配”视图](../profiling/dotnet-memory-allocations-view.md)
+
+-   [“对象生存期”视图](../profiling/object-lifetime-view.md)
+
+-   [“标记”视图](../profiling/marks-view.md)
+
+-   [“进程”视图](../profiling/process-view.md)
+
+### <a name="to-customize-a-report-view"></a>自定义报告视图
+
+1.  打开报告视图。
+
+2.  右键单击报告视图图面，然后单击“添加/删除列”。
+
+     随即出现“添加/删除列”对话框。
+
+3.  选择要添加的列。
+
+4.  单击箭头按钮对列重新排序。
+
 5.  单击 **“确定”**。

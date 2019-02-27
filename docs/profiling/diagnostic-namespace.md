@@ -12,41 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68f365210c2ed365a7e9ce75ab3c6fbcd309e01a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 03671f314dca3c016f9524bcb246b74e0eb1f837
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54984049"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600668"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic 命名空间
-`diagnostics` 命名空间提供用于发出并行可视化工具标记的功能。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-namespace diagnostic;  
-```  
-  
-## <a name="members"></a>成员  
-  
-### <a name="classes"></a>类  
-  
-|name|说明|  
-|----------|-----------------|  
-|[marker_series 类](../profiling/marker-series-class.md)|表示由单个提供程序生成的一系列事件通道。|  
-|[span 类](../profiling/span-class.md)|定义应用程序的一个阶段。|  
-  
-### <a name="enumerations"></a>枚举  
-  
-|name|说明|  
-|----------|-----------------|  
-|[marker_importance 枚举](../profiling/marker-importance-enumeration.md)|表示并发可视化工具标记的重要性级别。|  
-  
-## <a name="requirements"></a>要求  
- **标头：** cvmarkersobj.h  
-  
- **命名空间：** 并发  
-  
-## <a name="see-also"></a>请参阅  
- [Concurrency 命名空间（并发可视化工具）](../profiling/concurrency-namespace-concurrency-visualizer.md)
+`diagnostics` 命名空间提供用于发出并行可视化工具标记的功能。
+
+## <a name="syntax"></a>语法
+
+```cpp
+namespace diagnostic;
+```
+
+## <a name="members"></a>成员
+
+### <a name="classes"></a>类
+
+|name|说明|
+|----------|-----------------|
+|[marker_series 类](../profiling/marker-series-class.md)|表示由单个提供程序生成的一系列事件通道。|
+|[span 类](../profiling/span-class.md)|定义应用程序的一个阶段。|
+
+### <a name="enumerations"></a>枚举
+
+|name|说明|
+|----------|-----------------|
+|[marker_importance 枚举](../profiling/marker-importance-enumeration.md)|表示并发可视化工具标记的重要性级别。|
+
+## <a name="requirements"></a>要求
+ **标头：** cvmarkersobj.h
+
+ **命名空间：** 并发
+
+## <a name="see-also"></a>请参阅
+- [Concurrency 命名空间（并发可视化工具）](../profiling/concurrency-namespace-concurrency-visualizer.md)

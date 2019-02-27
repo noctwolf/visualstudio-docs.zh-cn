@@ -1,5 +1,5 @@
 ---
-title: 发布到 Azure 应用服务 - Visual Studio for Mac
+title: 发布到 Azure 应用服务
 ms.date: 01/17/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -8,16 +8,16 @@ ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
 author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
-ms.prod: visual-studio-mac-dev15
+ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: ebf7f9bcc924326f1abad81dacb38cdc7256d17c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8cc0678dbb3e55d80f51e457f141c7f2dc5a12d9
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853922"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844264"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 将 Web 应用发布到 Azure 应用服务
 
@@ -45,7 +45,7 @@ ms.locfileid: "55853922"
 
     ![“发布到 Azure 应用服务”对话框](media/publish-to-app-service-dialog.png)
 
- 5. 若要创建新的应用服务，请单击“新建”按钮。 
+ 5. 若要创建新的应用服务，请单击“新建”按钮。
 
     ![“发布到应用服务”对话框](media/publish-to-app-service-dialog-new-selected.png)
 

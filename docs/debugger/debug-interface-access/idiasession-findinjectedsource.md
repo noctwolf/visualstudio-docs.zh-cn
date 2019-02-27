@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e49d7332fee2b6e5e3c919e595e891fe8511edca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4bef903304e3892284fc38d9e2b2367ebfe650f4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939265"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642204"
 ---
 # <a name="idiasessionfindinjectedsource"></a>IDiaSession::findInjectedSource
-检索已放置到符号存储区的属性提供者的源列表或在编译过程的其他组件。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT findInjectedSource (   
-   LPCOLESTR                 srcFile,  
-   IDiaEnumInjectedSources** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- srcFile  
- [in]要搜索的源文件的名称。  
-  
- ppResult  
- [out]返回[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)对象，其中包含所有的插入源的列表。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+检索已放置到符号存储区的属性提供者的源列表或在编译过程的其他组件。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT findInjectedSource ( 
+   LPCOLESTR                 srcFile,
+   IDiaEnumInjectedSources** ppResult
+);
+```
+
+#### <a name="parameters"></a>参数
+ srcFile
+
+[in]要搜索的源文件的名称。
+
+ ppResult
+
+[out]返回[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)对象，其中包含所有的插入源的列表。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

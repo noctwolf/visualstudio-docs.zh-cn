@@ -12,23 +12,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0e3c3488c54477a9517263bf363cede3198fc3f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: de7a02f7247e09876bc4598d44fc1c395161ebc2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55007628"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620091"
 ---
 # <a name="preemption-time"></a>抢占时间
-时间线中的这些段与归类为“抢占”的阻塞时间关联。 此类别表示由于以下原因之一断开线程：  
-  
-- 计划程序使用更高优先级的线程将其替换。  
-  
-- 线程的执行量程过期，且其他线程已作好执行准备。  
-  
-  在此时间内，由于并发可视化工具被视为“抢占”这一内核等待原因，已阻止线程。 当线程被排出逻辑核心时，抢占段开始；当线程继续执行时，抢占段结束。  
-  
-  抢占段的工具提示会显示导致抢占的进程或线程的名称。 然而，这并不表示接管的进程或线程在抢占期间内会实际运行。  
-  
-## <a name="see-also"></a>请参阅  
- [线程视图](../profiling/threads-view-parallel-performance.md)
+时间线中的这些段与归类为“抢占”的阻塞时间关联。 此类别表示由于以下原因之一断开线程：
+
+- 计划程序使用更高优先级的线程将其替换。
+
+- 线程的执行量程过期，且其他线程已作好执行准备。
+
+  在此时间内，由于并发可视化工具被视为“抢占”这一内核等待原因，已阻止线程。 当线程被排出逻辑核心时，抢占段开始；当线程继续执行时，抢占段结束。
+
+  抢占段的工具提示会显示导致抢占的进程或线程的名称。 然而，这并不表示接管的进程或线程在抢占期间内会实际运行。
+
+## <a name="see-also"></a>请参阅
+- [线程视图](../profiling/threads-view-parallel-performance.md)

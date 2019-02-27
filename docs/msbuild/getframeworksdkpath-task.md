@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6c092921c38153a587ee9fb4548175385507a67
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 15346bdd7c049a152a5a2d1668891f9d97da31fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853256"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56644349"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 任务
 检索 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 的路径。
@@ -31,7 +31,7 @@ ms.locfileid: "55853256"
 ## <a name="task-parameters"></a>任务参数
 下表描述了 `GetFrameworkSdkPath` 任务的参数。
 
-|参数|说明​​|
+|参数|说明|
 |---------------|-----------------|
 |`FrameworkSdkVersion20Path`|可选的 `String` 只读输出参数。<br /><br /> 如果存在，则返回 .NET SDK 2.0 版的路径。 否则返回 `String.Empty`。|
 |`FrameworkSdkVersion35Path`|可选的 `String` 只读输出参数。<br /><br /> 如果存在，则返回 .NET SDK 3.5 版的路径。 否则返回 `String.Empty`。|
@@ -58,5 +58,5 @@ ms.locfileid: "55853256"
 ```
 
 ## <a name="see-also"></a>请参阅
-[任务](../msbuild/msbuild-tasks.md)  
-[任务参考](../msbuild/msbuild-task-reference.md)
+- [任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)

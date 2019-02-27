@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b472c52934353e6324d72077f8ea878467159cbd
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
+ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318636"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637082"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 描述在映射的地址中的项。
@@ -32,11 +32,9 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>元素
-`rva`  
-A.映像中的相对虚拟地址 (RVA)
+`rva` A.映像中的相对虚拟地址 (RVA)
 
-`rvaTo`  
-相对虚拟地址`rva`映像 B.中映射到
+`rvaTo` 相对虚拟地址`rva`映像 B.中映射到
 
 ## <a name="remarks"></a>备注
 映射的地址提供了从一个图像布局 （A） 到另一个 （B） 的转换。 一个数组`DiaAddressMapEntry`结构按`rva`定义映射的地址。
@@ -55,5 +53,5 @@ A.映像中的相对虚拟地址 (RVA)
 标头： dia2.h
 
 ## <a name="see-also"></a>请参阅
-[枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)
+- [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)

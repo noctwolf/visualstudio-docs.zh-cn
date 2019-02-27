@@ -17,25 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53f27b400c96f6b4336339e8d1beeec0dd87277c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d4cc3c2366ca20328f591b0661e8c2b3e5af1e45
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944743"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717697"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>“命中断点时”对话框
-使用此对话框，您可以自定义命中断点时，会发生的操作。  
-  
-## <a name="uielement-list"></a>UIElement 列表  
- **打印消息**  
- 打印一条消息，使用 DebuggerDisplay 语法。 有关详细信息，请参阅[使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)。  
-  
- 此文本框还支持可用于单独或 DebuggerDisplay 表达式的大括号内的特殊关键字 （如 $ADDRESS)。 在对话框中列出了可用的关键字。  
-  
- **继续执行**  
- 仅在选择“打印消息”时启用此控件。 选择此控件，可以使用断点与跟踪点跟踪程序执行，而不是重大时命中位置。  
-  
-## <a name="see-also"></a>请参阅  
- [使用断点](../debugger/using-breakpoints.md)   
- [使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)
+使用此对话框，您可以自定义命中断点时，会发生的操作。
+
+## <a name="uielement-list"></a>UIElement 列表
+ **打印消息**打印一条消息，使用 DebuggerDisplay 语法。 有关详细信息，请参阅[使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)。
+
+ 此文本框还支持可用于单独或 DebuggerDisplay 表达式的大括号内的特殊关键字 （如 $ADDRESS)。 在对话框中列出了可用的关键字。
+
+ **继续执行**启用此控件时，才**打印一条消息**处于选中状态。 选择此控件，可以使用断点与跟踪点跟踪程序执行，而不是重大时命中位置。
+
+## <a name="see-also"></a>请参阅
+- [使用断点](../debugger/using-breakpoints.md)
+- [使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)

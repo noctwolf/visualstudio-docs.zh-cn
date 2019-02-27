@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8b1e43a311936a35b15cf7a73c4f00a4793268
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2684ed1389556dfb96bf8eeb113f82336eb8c6d0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947615"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605180"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 工具集 (ToolsVersion)
 MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通常，MSBuild 工具集包括 microsoft.common.tasks 文件、microsoft.common.targets 文件以及编译器（如 csc.exe 和 vbc.exe）。 大多数工具集可用于将应用程序编译为多个版本的 .NET Framework 以及多个系统平台。 但 MSBuild 2.0 工具集仅可用于面向 .NET Framework 2.0。
@@ -116,4 +116,5 @@ MSBuild 为 `ToolLocationHelper` 方法提供重载，它们可将 `VisualStudio
 在 .NET Framework 4.5 中引入了子工具集。
 
 ## <a name="see-also"></a>请参阅
- [标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)[多定向](../msbuild/msbuild-multitargeting-overview.md)
+- [标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)
+- [多定向](../msbuild/msbuild-multitargeting-overview.md)

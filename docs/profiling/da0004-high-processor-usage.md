@@ -13,30 +13,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 274027f1877c5274e0f78da7634c7ac5109380ac
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7fcc468d3820e34db24edbbf311cbae17bda0732
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990064"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626877"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004：处理器使用情况很高
 
-|||  
-|-|-|  
-|规则 ID|DA0004|  
-|类别|分析工具使用情况|  
-|分析方法|检测<br /><br /> 采样|  
-|消息|处理器使用率始终高于 75%。 请考虑对 CPU 密集型应用程序使用采样模式。|  
-|规则类型|信息|  
+|||
+|-|-|
+|规则 ID|DA0004|
+|类别|分析工具使用情况|
+|分析方法|检测<br /><br /> 采样|
+|消息|处理器使用率始终高于 75%。 请考虑对 CPU 密集型应用程序使用采样模式。|
+|规则类型|信息|
 
- 使用采样法、.NET 内存或资源争用方法进行分析时，必须收集至少 10 个样本才能触发此规则。  
+ 使用采样法、.NET 内存或资源争用方法进行分析时，必须收集至少 10 个样本才能触发此规则。
 
-## <a name="cause"></a>原因  
- 使用检测方法收集的分析数据中的处理器 (CPU) 使用率很高。 分析 CPU 密集型应用程序时，请考虑使用采样分析方法。  
+## <a name="cause"></a>原因
+ 使用检测方法收集的分析数据中的处理器 (CPU) 使用率很高。 分析 CPU 密集型应用程序时，请考虑使用采样分析方法。
 
-## <a name="rule-description"></a>规则说明  
- 在此分析运行期间，此处理器（或多个处理器）始终处于忙碌状态。 CPU 使用率高可能表示存在 CPU 密集型应用程序。 检测分析方法并不是调查 CPU 使用情况的最有效方法。 分析花费大量时间在处理器上执行指令的应用程序时，采样法更加有效。  
+## <a name="rule-description"></a>规则说明
+ 在此分析运行期间，此处理器（或多个处理器）始终处于忙碌状态。 CPU 使用率高可能表示存在 CPU 密集型应用程序。 检测分析方法并不是调查 CPU 使用情况的最有效方法。 分析花费大量时间在处理器上执行指令的应用程序时，采样法更加有效。
 
-## <a name="how-to-fix-violations"></a>如何解决冲突  
+## <a name="how-to-fix-violations"></a>如何解决冲突
  请考虑使用采样法而非检测法再次分析应用程序，除非需要使用函数计时，或者你更希望了解输入/输出而非处理器瓶颈。

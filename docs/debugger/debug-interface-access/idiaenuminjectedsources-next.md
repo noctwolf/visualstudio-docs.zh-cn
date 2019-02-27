@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba51ecbb1d47707dcfc8bd112a09deb170546d28
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: aea793f33eb78ee1637d7f22eb46ba34514e0e8f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036220"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645038"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
-检索指定的数目的枚举序列中的插入源。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT Next (   
-   ULONG                celt,   
-   IDiaInjectedSource** rgelt,  
-   ULONG*               pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- celt  
- [in]要检索的枚举器中的插入源数。  
-  
- rgelt  
- [out]返回的数组[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)对象，表示所需的插入的源。  
-  
- pceltFetched  
- [out]返回多个插入的源中提取枚举器。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果没有更多插入的源。 否则，返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+检索指定的数目的枚举序列中的插入源。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT Next ( 
+   ULONG                celt,
+   IDiaInjectedSource** rgelt,
+   ULONG*               pceltFetched
+);
+```
+
+#### <a name="parameters"></a>参数
+ celt
+
+[in]要检索的枚举器中的插入源数。
+
+ rgelt
+
+[out]返回的数组[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)对象，表示所需的插入的源。
+
+ pceltFetched
+
+[out]返回多个插入的源中提取枚举器。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果没有更多插入的源。 否则，返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

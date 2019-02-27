@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e517eac8e3649328c56b77e86288fbb9a52ba436
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 397873a65176024327f371e9727b15984cd7d03f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977429"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632103"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
-检索一个标志，指示此行信息描述了一条语句，而不是程序源中的表达式的开头。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_statement (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回`TRUE`如果此行信息描述程序源中的语句的开头。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 语句可以跨多个行。 此方法指示是否关联的行数表示的多行语句的开头。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+检索一个标志，指示此行信息描述了一条语句，而不是程序源中的表达式的开头。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_statement ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回`TRUE`如果此行信息描述程序源中的语句的开头。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。
+
+## <a name="remarks"></a>备注
+ 语句可以跨多个行。 此方法指示是否关联的行数表示的多行语句的开头。
+
+## <a name="see-also"></a>请参阅
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

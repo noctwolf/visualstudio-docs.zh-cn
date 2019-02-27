@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8e59bf79355b4e610091ac8662b8d2a01af322
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 21630bea3022769d18748190c2a2d24c0e519a3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318675"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608484"
 ---
 # <a name="datakind"></a>DataKind
 指示特定的数据值范围。
@@ -40,35 +40,25 @@ enum DataKind {
 ```
 
 ## <a name="elements"></a>元素
-DataIsUnknown  
-不能确定数据符号。
+无法确定 DataIsUnknown 数据符号。
 
-DataIsLocal  
-数据项是一个本地变量。
+DataIsLocal 数据项是一个本地变量。
 
-DataIsStaticLocal  
-数据项是一个静态本地变量。
+DataIsStaticLocal 数据项是一个静态本地变量。
 
-DataIsParam  
-数据项是正式的参数。
+DataIsParam 数据项是正式的参数。
 
-DataIsObjectPtr  
-数据项是一个对象指针 (`this`)。
+DataIsObjectPtr 数据项是一个对象指针 (`this`)。
 
-DataIsFileStatic  
-数据项是一个文件范围内的变量。
+DataIsFileStatic 数据项是一个文件范围内的变量。
 
-DataIsGlobal  
-数据项是一个全局变量。
+DataIsGlobal 数据项是一个全局变量。
 
-DataIsMember  
-数据项是一个对象成员变量。
+DataIsMember 数据项是一个对象成员变量。
 
-DataIsStaticMember  
-数据项是一个类静态变量。
+DataIsStaticMember 数据项是一个类静态变量。
 
-DataIsConstant  
-数据项是常量值。
+DataIsConstant 数据项是常量值。
 
 ## <a name="remarks"></a>备注
 返回此枚举中的值[idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)方法。
@@ -77,5 +67,5 @@ DataIsConstant
 标头： cvconst.h
 
 ## <a name="see-also"></a>请参阅
-[枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)
+- [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)

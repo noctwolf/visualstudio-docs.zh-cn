@@ -15,27 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b6ed74dab67cc2ca718ba312fb657659897c78c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56f4fb82ab0e9792cadbeeea05499744e4c8ce46
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955591"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56621300"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
-停止所有跟踪，并释放跟踪会话使用的任何内存。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp 
-HRESULT WINAPI StopTrackingAndCleanup(void);  
-```  
-  
-## <a name="return-value"></a>返回值  
- 如果跟踪停止，则返回带 SUCCEEDED 位集的 HRESULT。  
-  
-## <a name="requirements"></a>要求  
- **标头：** FileTracker.h  
-  
-## <a name="see-also"></a>请参阅  
- [StartTrackingContext](../msbuild/starttrackingcontext.md)
+停止所有跟踪，并释放跟踪会话使用的任何内存。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT WINAPI StopTrackingAndCleanup(void);
+```
+
+## <a name="return-value"></a>返回值
+ 如果跟踪停止，则返回带 SUCCEEDED 位集的 HRESULT。
+
+## <a name="requirements"></a>要求
+ **标头：** FileTracker.h
+
+## <a name="see-also"></a>请参阅
+- [StartTrackingContext](../msbuild/starttrackingcontext.md)

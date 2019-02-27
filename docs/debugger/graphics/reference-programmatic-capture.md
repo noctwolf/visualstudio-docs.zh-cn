@@ -8,33 +8,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 892831423ccc3607db1b3f162fb79f4508764afa
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a462d22df9768d2ffc8b344933e9f5c1f556575a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006731"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713589"
 ---
 # <a name="reference-programmatic-capture"></a>引用（编程捕获）
-图形诊断支持通过编程捕获 API 对其捕获功能进行编程控制。 此 API 可用于切换消息和将消息添加到图形诊断 HUD（提醒显示）、初始化和创建图形日志文件以及捕获图形信息。  
+图形诊断支持通过编程捕获 API 对其捕获功能进行编程控制。 此 API 可用于切换消息和将消息添加到图形诊断 HUD（提醒显示）、初始化和创建图形日志文件以及捕获图形信息。
 
-## <a name="programmatic-capture-apis"></a>编程捕获 API  
+## <a name="programmatic-capture-apis"></a>编程捕获 API
 
-### <a name="classes"></a>类  
+### <a name="classes"></a>类
 
-|name|说明|  
-|----------|-----------------|  
-|[VsgDbg 类](vsgdbg-class.md)|表示接口，通过该接口以编程方式控制图形诊断的应用内组件。|  
+|name|说明|
+|----------|-----------------|
+|[VsgDbg 类](vsgdbg-class.md)|表示接口，通过该接口以编程方式控制图形诊断的应用内组件。|
 
-### <a name="preprocessor-symbols"></a>预处理器符号  
+### <a name="preprocessor-symbols"></a>预处理器符号
 
-|name|说明|  
-|----------|-----------------|  
-|[DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)|通过其存在定义图形日志文件是否保存到用户的临时文件目录。|  
-|[VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)|定义图形日志文件的默认文件名。|  
-|[VSG_NODEFAULT_INSTANCE](vsg-nodefault-instance.md)|通过其存在定义是否提供了 `VsgDbg` 类的默认实例。|  
+|name|说明|
+|----------|-----------------|
+|[DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)|通过其存在定义图形日志文件是否保存到用户的临时文件目录。|
+|[VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)|定义图形日志文件的默认文件名。|
+|[VSG_NODEFAULT_INSTANCE](vsg-nodefault-instance.md)|通过其存在定义是否提供了 `VsgDbg` 类的默认实例。|
 
-## <a name="related-articles"></a>相关文章  
+## <a name="related-articles"></a>相关文章
 
 | Title | 说明 |
 | - | - |

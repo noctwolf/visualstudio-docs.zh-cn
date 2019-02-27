@@ -12,43 +12,47 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4a075369a9064425bd0cffe096dbe96ca30b402
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cf423ddc91926fb04adac849783b7c26b4c4f720
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999101"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708103"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
-读取指定的开始的指定相对虚拟地址 (RVA) 从可执行文件的字节数。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT ReadExecutableAtRVA (   
-   DWORD  relativeVirtualAddress,  
-   DWORD  cbData,  
-   DWORD* pcbData,  
-   BYTE   data[]  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `relativeVirtualAddress`  
- [in]若要开始读取的可执行文件中的 RVA。  
-  
- `cbData`  
- [in]要读取的字节数。  
-  
- `pcbData`  
- [out]返回读取的字节数。  
-  
- `data[]`  
- [in、 out]填充从文件中读取的字节数组。  
-  
-## <a name="remarks"></a>备注  
- 若要从使用的相对虚拟地址的可执行文件加载数据字节的 DIA 支持代码调用此方法。 调用此方法支持[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+读取指定的开始的指定相对虚拟地址 (RVA) 从可执行文件的字节数。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT ReadExecutableAtRVA ( 
+   DWORD  relativeVirtualAddress,
+   DWORD  cbData,
+   DWORD* pcbData,
+   BYTE   data[]
+);
+```
+
+#### <a name="parameters"></a>参数
+ `relativeVirtualAddress`
+
+[in]若要开始读取的可执行文件中的 RVA。
+
+ `cbData`
+
+[in]要读取的字节数。
+
+ `pcbData`
+
+[out]返回读取的字节数。
+
+ `data[]`
+
+[in、 out]填充从文件中读取的字节数组。
+
+## <a name="remarks"></a>备注
+ 若要从使用的相对虚拟地址的可执行文件加载数据字节的 DIA 支持代码调用此方法。 调用此方法支持[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。
+
+## <a name="see-also"></a>请参阅
+- [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)

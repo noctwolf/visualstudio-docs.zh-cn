@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6fa54b0a0931c5bbefd7efb3a86d668f6cb7c64
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853061"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600958"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>用 MSBuild 并行生成多个项目
 通过 MSBuild，可通过并行运行多个项目来更快地生成它们。 若要并行运行生成，请在一台多核或多处理器计算机上采用以下设置：
@@ -70,6 +70,6 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="see-also"></a>请参阅
-[使用多个处理器生成项目](../msbuild/using-multiple-processors-to-build-projects.md)  
-[编写可识别多处理器的记录器](../msbuild/writing-multi-processor-aware-loggers.md)  
-[“调整的 C++ 并行生成功能”博客](http://go.microsoft.com/fwlink/?LinkId=251457)
+- [使用多个处理器生成项目](../msbuild/using-multiple-processors-to-build-projects.md)
+- [编写可识别多处理器的记录器](../msbuild/writing-multi-processor-aware-loggers.md)
+- [“调整的 C++ 并行生成功能”博客](http://go.microsoft.com/fwlink/?LinkId=251457)

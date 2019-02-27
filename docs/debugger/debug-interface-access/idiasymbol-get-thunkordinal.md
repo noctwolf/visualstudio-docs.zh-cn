@@ -12,40 +12,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9edc2f6e4c8d37aa6c491fcd10e02f0ea285d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 78ce8311e9504261399f22feefebb93fb9b3c64f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55017066"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605947"
 ---
 # <a name="idiasymbolgetthunkordinal"></a>IDiaSymbol::get_thunkOrdinal
-检索一个函数的转换 （thunk） 类型。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_thunkOrdinal (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回一个值从[THUNK_ORDINAL 枚举](../../debugger/debug-interface-access/thunk-ordinal.md)枚举，用于指定函数的转换 （thunk） 类型。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
-  
+检索一个函数的转换 （thunk） 类型。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_thunkOrdinal ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回一个值从[THUNK_ORDINAL 枚举](../../debugger/debug-interface-access/thunk-ordinal.md)枚举，用于指定函数的转换 （thunk） 类型。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
+
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。  
-  
-## <a name="remarks"></a>备注  
- 此属性才有效才形式的符号[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)的值`SymTagThunk`。  
-  
- "转换 （thunk）"是代码的一种 32 位内存地址空间 （也称为平面地址空间） 和一个 16 位地址空间 （称为分段的地址空间） 之间进行转换。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [THUNK_ORDINAL 枚举](../../debugger/debug-interface-access/thunk-ordinal.md)   
- [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)
+>  返回值为`S_FALSE`表示该属性不是可用于符号。
+
+## <a name="remarks"></a>备注
+ 此属性才有效才形式的符号[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)的值`SymTagThunk`。
+
+ "转换 （thunk）"是代码的一种 32 位内存地址空间 （也称为平面地址空间） 和一个 16 位地址空间 （称为分段的地址空间） 之间进行转换。
+
+## <a name="see-also"></a>请参阅
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [THUNK_ORDINAL 枚举](../../debugger/debug-interface-access/thunk-ordinal.md)
+- [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)

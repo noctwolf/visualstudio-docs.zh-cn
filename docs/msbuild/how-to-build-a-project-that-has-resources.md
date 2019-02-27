@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e8f7f8bd6410f338fd7a40f4c9b1ee663211c8
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55852835"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610406"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>如何：生成具有资源的项目
 如果你正在构建一个项目的本地化版本，则所有用户界面元素必须都分入不同语言的资源文件。 如果该项目仅使用字符串，则资源文件使用文本文件。 或者，可以将 .resx 文件用作资源文件。
@@ -77,7 +77,7 @@ ms.locfileid: "55852835"
 ```
 
 ## <a name="see-also"></a>请参阅
-[MSBuild](../msbuild/msbuild.md)  
-[GenerateResource 任务](../msbuild/generateresource-task.md)  
-[Csc 任务](../msbuild/csc-task.md)  
-[Resgen.exe（资源文件生成器）](/dotnet/framework/tools/resgen-exe-resource-file-generator)
+- [MSBuild](../msbuild/msbuild.md)
+- [GenerateResource 任务](../msbuild/generateresource-task.md)
+- [Csc 任务](../msbuild/csc-task.md)
+- [Resgen.exe（资源文件生成器）](/dotnet/framework/tools/resgen-exe-resource-file-generator)

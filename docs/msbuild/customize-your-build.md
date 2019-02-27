@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09e5c32bd18213969481ab214fa7873f4f69c48
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc4515ad8f61d749c9fb7552911bfb15dcc3471a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982151"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610328"
 ---
 # <a name="customize-your-build-c-visual-basic"></a>自定义生成（C#，Visual Basic）
 
@@ -160,6 +160,6 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 
 ## <a name="see-also"></a>请参阅
 
-[MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)
 
-[MSBuild 参考](../msbuild/msbuild-reference.md)
+- [MSBuild 参考](../msbuild/msbuild-reference.md)
