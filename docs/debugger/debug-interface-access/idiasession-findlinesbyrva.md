@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e976fa3172b4f7d3967657b0ac8252d2db93dfb2
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4316bfa423392a98946fc0bb86af2f2e9836aba2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227178"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626058"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
 检索包含指定的相对虚拟地址 (RVA) 的行中指定的编译单位。
@@ -33,13 +33,16 @@ HRESULT findLinesByRVA ( 
 ```
 
 #### <a name="parameters"></a>参数
-`rva`  
+`rva`
+
 [in]RVA 作为指定的地址。
 
-`length`  
+`length`
+
 [in]指定要与此查询包含的地址范围的字节数。
 
-`ppResult`  
+`ppResult`
+
 [out]返回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)对象，其中包含一系列的行号，包括指定的地址范围。
 
 ## <a name="return-value"></a>返回值
@@ -65,5 +68,5 @@ IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSessio
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3489751fa959f55440de75f7d74c35cf9634cb2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 726c452abe8f435ab05e3e6a5606b21fb8d9eba1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921081"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634235"
 ---
 # <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
-检索基础可执行文件的时间戳。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_timeStamp (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回基础可执行文件的时间戳。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
-  
+检索基础可执行文件的时间戳。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_timeStamp ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回基础可执行文件的时间戳。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
+
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  返回值为`S_FALSE`表示该属性不是可用于符号。
+
+## <a name="see-also"></a>请参阅
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

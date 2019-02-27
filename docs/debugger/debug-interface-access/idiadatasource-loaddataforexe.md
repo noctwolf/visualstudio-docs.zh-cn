@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b078e918f399019b2532e7fe3adea220fc09e012
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 4f95e8a9321ff7ae518e72496289f8ad0c7b4682
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987543"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609639"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 将打开并准备与.exe/.dll 文件相关联的调试数据。
@@ -33,19 +33,22 @@ HRESULT loadDataForExe (
 ```
 
 #### <a name="parameters"></a>参数
-可执行文件  
+可执行文件
+
 [in].Exe 或.dll 文件的路径。
 
-SearchPath  
+SearchPath
+
 [in]要搜索的调试数据的备用路径。
 
-pCallback  
+pCallback
+
 [in]`IUnknown`接口的对象的支持调试回调接口，如[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)， [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)，则[IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)，和/或[IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)接口。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了一些可能的错误代码为此方法。
 
-|值|说明​​|
+|值|说明|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|无法打开该文件，或该文件具有无效的格式。|
 |E_PDB_FORMAT|尝试访问具有过时的格式的文件。|
@@ -84,12 +87,12 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)  
-[IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)  
-[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)  
-[IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)  
-[IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)  
-[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)  
-[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md)
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+- [IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)
+- [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)
+- [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
+- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
+- [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3466f211edb90783a64f8c7d02c602847e616d82
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 468e3bee84c7312def06c32cb411c00526ba3b1d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042994"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619155"
 ---
 # <a name="idiaframedatagetlengthblock"></a>IDiaFrameData::get_lengthBlock
-检索的长度，以字节为单位的所述的帧的代码块。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_lengthBlock (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]在帧中返回的代码的字节数。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 中的计划字符串解释通常使用此方法返回的值 (请参阅[idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)程序字符串的定义的方法)。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)
+检索的长度，以字节为单位的所述的帧的代码块。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_lengthBlock ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]在帧中返回的代码的字节数。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。
+
+## <a name="remarks"></a>备注
+ 中的计划字符串解释通常使用此方法返回的值 (请参阅[idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)程序字符串的定义的方法)。
+
+## <a name="see-also"></a>请参阅
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

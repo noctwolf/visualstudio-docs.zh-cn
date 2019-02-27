@@ -10,29 +10,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c680e1faf7a2a70f7763b55e5fa521d94bb819e0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a353f9fc3605d1f2d26248b3ce907fb76b947c68
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941362"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596459"
 ---
 # <a name="idiasymbolgetismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
-指定是否`this`指针指向一个具有多个继承数据成员。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_isMultipleInheritance(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]一个指向`BOOL`，它指定是否`this`指针指向一个具有多个继承数据成员。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+指定是否`this`指针指向一个具有多个继承数据成员。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_isMultipleInheritance(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]一个指向`BOOL`，它指定是否`this`指针指向一个具有多个继承数据成员。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

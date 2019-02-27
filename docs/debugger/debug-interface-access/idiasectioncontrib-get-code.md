@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1658944b8db6df25111fb8c490b6eeda9ff016ce
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8175fc05b05bfd3375fe0dcc0702741266801137
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917024"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56619168"
 ---
 # <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
-检索一个标志，指示的部分是否包含可执行代码。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_code (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回`TRUE`的部分包含可执行代码; 否则，返回`FALSE`。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+检索一个标志，指示的部分是否包含可执行代码。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_code ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回`TRUE`的部分包含可执行代码; 否则，返回`FALSE`。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

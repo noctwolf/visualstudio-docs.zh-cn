@@ -12,34 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01f8442c12cdbe31111967bd04e2af6d091e36b6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 03d24770c90ebd225fa37dd7f60d794781e79e7e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925768"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703001"
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
-检索表达式或语句的开始处的列号。  
-  
-## <a name="syntax"></a>语法  
-  
-```  
-[C++]  
-HRESULT get_columnNumber (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回表达式或语句的开始处的列号。 如果值为零，则不存在的列信息。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 此方法返回的列的值是语句的在行中的第一个字符到行的字节的偏移量。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+检索表达式或语句的开始处的列号。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT get_columnNumber ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回表达式或语句的开始处的列号。 如果值为零，则不存在的列信息。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。
+
+## <a name="remarks"></a>备注
+ 此方法返回的列的值是语句的在行中的第一个字符到行的字节的偏移量。
+
+## <a name="see-also"></a>请参阅
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10bcc9162d41fd07b85d7cb1bf87adc31367bda1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 53f50c3a107f9796e4fbb661f303bfcabf284cc6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008902"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710092"
 ---
 # <a name="debugging-f"></a>调试 F#
-调试 F# 与调试任何托管语言类似，但有以下几种例外情况：  
-  
--   “自动”窗口不显示 F# 变量。  
-  
--   F# 不支持“编辑并继续”。 可以在调试会话期间编辑 F# 代码，但应避免这样做。 因为在调试会话期间无法应用代码更改，所以在调试期间编辑 F# 代码将导致源代码和正在调试的代码出现不匹配。  
-  
--   调试器无法识别 F# 表达式。 若要在 F# 调试期间在调试器窗口或对话框中输入表达式，必须将该表达式转换为 C# 语法。 在将 F# 表达式转换为 C# 时，请务必记住 C# 使用 == 作为比较运算符中的等号，而 F# 使用单个 =。  
-  
-## <a name="see-also"></a>请参阅  
- [调试托管代码](../debugger/debugging-managed-code.md)
+调试 F# 与调试任何托管语言类似，但有以下几种例外情况：
+
+-   “自动”窗口不显示 F# 变量。
+
+-   F# 不支持“编辑并继续”。 可以在调试会话期间编辑 F# 代码，但应避免这样做。 因为在调试会话期间无法应用代码更改，所以在调试期间编辑 F# 代码将导致源代码和正在调试的代码出现不匹配。
+
+-   调试器无法识别 F# 表达式。 若要在 F# 调试期间在调试器窗口或对话框中输入表达式，必须将该表达式转换为 C# 语法。 在将 F# 表达式转换为 C# 时，请务必记住 C# 使用 == 作为比较运算符中的等号，而 F# 使用单个 =。
+
+## <a name="see-also"></a>请参阅
+- [调试托管代码](../debugger/debugging-managed-code.md)

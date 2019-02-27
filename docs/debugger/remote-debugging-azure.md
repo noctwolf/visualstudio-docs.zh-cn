@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 28f97dd46c38b356d45c4c0ded08f1c2790ab229
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981267"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710820"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 中的 Azure 中的 IIS 上的远程调试 ASP.NET Core
 
@@ -47,7 +47,7 @@ ms.locfileid: "54981267"
 
 不支持调试通过代理连接的两台计算机之间。 调试通过高延迟或低带宽连接，例如拨号 Internet，或通过 Internet 跨国家/地区不建议并可能会失败或很令人无法接受慢。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 计算机上创建 ASP.NET Core 应用程序 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 计算机上创建 ASP.NET Core 应用程序
 
 1. 创建新的 ASP.NET Core 应用程序。 (选择**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET Core Web 应用程序**)。
 
@@ -61,7 +61,7 @@ ms.locfileid: "54981267"
 
 ## <a name="remote_debug_azure_app_service"></a> Azure 应用服务上的远程调试 ASP.NET Core
 
-从 Visual Studio 中，可快速发布和调试你的应用的 IIS 完全预配实例。 但是，预设的 IIS 配置，并且不能自定义它。 有关详细说明，请参阅[将 ASP.NET Core web 应用部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果需要自定义 IIS 的功能，请尝试调试[Azure VM](#remote_debug_azure_vm)。) 
+从 Visual Studio 中，可快速发布和调试你的应用的 IIS 完全预配实例。 但是，预设的 IIS 配置，并且不能自定义它。 有关详细说明，请参阅[将 ASP.NET Core web 应用部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果需要自定义 IIS 的功能，请尝试调试[Azure VM](#remote_debug_azure_vm)。)
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>若要部署的应用程序和使用服务器资源管理器进行远程调试
 
@@ -184,7 +184,7 @@ ms.locfileid: "54981267"
 在本教程中，我们将使用 Visual Studio 2017。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ### <a name="BKMK_setup"></a> 设置 Windows Server 上的远程调试器
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -198,7 +198,7 @@ ms.locfileid: "54981267"
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 中，您可以将重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...** Shift+Alt+P 
+    > 在 Visual Studio 2017 中，您可以将重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...** Shift+Alt+P
 
 3. 将限定符字段设置为“\<remote computer name>:4022”。
 4. 单击“刷新”。
@@ -211,7 +211,7 @@ ms.locfileid: "54981267"
 5. 勾选“显示所有用户的进程”  。
 
 6. 键入进程名称，可以快速找到的第一个字母*dotnet.exe* （适用于 ASP.NET Core)。
-   
+
    ASP.NET Core 应用，以前的过程名称为*dnx.exe*。
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
@@ -219,7 +219,7 @@ ms.locfileid: "54981267"
 7. 单击 **“附加”**。
 
 8. 打开远程计算机的网站。 在浏览器中，转到 http://\<remote computer name>。
-    
+
     将显示 ASP.NET 网页。
 9. 在运行的 ASP.NET 应用程序，单击链接到**有关**页。
 
@@ -229,7 +229,7 @@ ms.locfileid: "54981267"
 
 在大多数系统中，所需的端口被打开的 ASP.NET 和远程调试器安装。 但是，如果你解决部署问题和应用程序托管在防火墙后面，你可能需要验证正确的端口打开。
 
-在 Azure VM 上，则必须打开端口通过[网络安全组](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic)。 
+在 Azure VM 上，则必须打开端口通过[网络安全组](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic)。
 
 所需的端口：
 

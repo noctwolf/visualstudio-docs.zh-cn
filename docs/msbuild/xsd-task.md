@@ -20,71 +20,71 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9996ee8c3b1cf8a6298ad21d0ae0058d90f78b64
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e83f21ab05e298635c13f8e2bddb72520459ab1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963822"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631167"
 ---
 # <a name="xsd-task"></a>XSD 任务
-包装从源生成架构或类文件的 XML 架构定义工具 (xsd.exe)。  
+包装从源生成架构或类文件的 XML 架构定义工具 (xsd.exe)。
 
 > [!NOTE]
-> Visual Studio 2017 中已弃用对 xsd.exe 的 C++ 项目支持。 仍可通过向 GAC 手动添加 CppCodeProvider.dll 来使用 Microsoft.VisualC.CppCodeProvider。 
-  
-## <a name="parameters"></a>参数  
- 下表介绍了 **XSD** 任务的参数。  
-  
--   **AdditionalOptions**  
-  
-     可选 **String** 参数。  
-  
-     在命令行上指定的选项列表。 例如，/\<option1> /\<option2> /\<option#>。 使用此参数可指定未由任何其他 **XSD** 任务参数表示的选项。  
-  
--   **GenerateFromSchema**  
-  
-     可选 **String** 参数。  
-  
-     指定从指定架构生成的类型。  
-  
-     指定以下一个值，其中每个值对应于一个 XSD 选项。  
-  
-    -   **classes** - **/classes**  
-  
-    -   **dataset** - **/dataset**  
-  
--   **语言**  
-  
-     可选 **String** 参数。  
-  
-     指定要用于生成的代码的编程语言。  
-  
-     从 **CS**（默认情况下为 C#）、**VB** (Visual Basic) 或 **JS** (JScript) 中进行选择。 也可指定实现 `System.CodeDom.Compiler.CodeDomProvider Class` 的类的完全限定名。  
-  
--   **Namespace**  
-  
-     可选 **String** 参数。  
-  
-     为生成的类型指定运行时命名空间。  
-  
--   **Sources**  
-  
-     必选 `ITaskItem[]` 参数。  
-  
-     定义可以被任务使用和发出的 MSBuild 源文件项的数组。  
-  
--   **SuppressStartupBanner**  
-  
-     可选 **Boolean** 参数。  
-  
-     如果为 `true`，则在任务开始时阻止显示版权和版本号消息。  
-  
--   **TrackerLogDirectory**  
-  
-     可选 **String** 参数。  
-  
-     指定跟踪器日志目录。  
-  
-## <a name="see-also"></a>请参阅  
- [任务参考](../msbuild/msbuild-task-reference.md)
+> Visual Studio 2017 中已弃用对 xsd.exe 的 C++ 项目支持。 仍可通过向 GAC 手动添加 CppCodeProvider.dll 来使用 Microsoft.VisualC.CppCodeProvider。
+
+## <a name="parameters"></a>参数
+ 下表介绍了 **XSD** 任务的参数。
+
+-   **AdditionalOptions**
+
+     可选 **String** 参数。
+
+     在命令行上指定的选项列表。 例如，/\<option1> /\<option2> /\<option#>。 使用此参数可指定未由任何其他 **XSD** 任务参数表示的选项。
+
+-   **GenerateFromSchema**
+
+     可选 **String** 参数。
+
+     指定从指定架构生成的类型。
+
+     指定以下一个值，其中每个值对应于一个 XSD 选项。
+
+    -   **classes** - **/classes**
+
+    -   **dataset** - **/dataset**
+
+-   **语言**
+
+     可选 **String** 参数。
+
+     指定要用于生成的代码的编程语言。
+
+     从 **CS**（默认情况下为 C#）、**VB** (Visual Basic) 或 **JS** (JScript) 中进行选择。 也可指定实现 `System.CodeDom.Compiler.CodeDomProvider Class` 的类的完全限定名。
+
+-   **Namespace**
+
+     可选 **String** 参数。
+
+     为生成的类型指定运行时命名空间。
+
+-   **Sources**
+
+     必选 `ITaskItem[]` 参数。
+
+     定义可以被任务使用和发出的 MSBuild 源文件项的数组。
+
+-   **SuppressStartupBanner**
+
+     可选 **Boolean** 参数。
+
+     如果为 `true`，则在任务开始时阻止显示版权和版本号消息。
+
+-   **TrackerLogDirectory**
+
+     可选 **String** 参数。
+
+     指定跟踪器日志目录。
+
+## <a name="see-also"></a>请参阅
+- [任务参考](../msbuild/msbuild-task-reference.md)

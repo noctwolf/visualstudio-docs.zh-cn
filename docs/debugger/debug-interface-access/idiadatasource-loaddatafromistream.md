@@ -12,48 +12,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0af18b58ed509d2fc5f0b962b9a94ce7bdc1b820
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cb9b218935085b04ae1a9931733aeca34766aa5f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55031391"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641944"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
-准备存储在内存中数据的流通过访问程序数据库 (.pdb) 文件中的调试数据。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT loadDataFromIStream (   
-   IStream* pIStream  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- pIStream  
- [in]<xref:IStream>对象，表示要使用的数据流。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。  
-  
-|“值”|说明|  
-|-----------|-----------------|  
-|E_PDB_FORMAT|尝试访问具有过时的格式的文件。|  
-|E_INVALIDARG|参数无效。|  
-|E_UNEXPECTED|已准备好数据源。|  
-  
-## <a name="remarks"></a>备注  
- 此方法允许可执行文件以获取通过内存中的调试数据<xref:IStream>对象。  
-  
- 若要加载的.pdb 文件而不进行验证，请使用[idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)方法。  
-  
- 若要验证.pdb 文件是否符合特定条件，请使用[idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)方法。  
-  
- 若要访问的数据加载过程 （通过一种回调机制），请使用[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
- [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)
+准备存储在内存中数据的流通过访问程序数据库 (.pdb) 文件中的调试数据。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT loadDataFromIStream ( 
+   IStream* pIStream
+);
+```
+
+#### <a name="parameters"></a>参数
+ pIStream
+
+[in]<xref:IStream>对象，表示要使用的数据流。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。
+
+|“值”|说明|
+|-----------|-----------------|
+|E_PDB_FORMAT|尝试访问具有过时的格式的文件。|
+|E_INVALIDARG|参数无效。|
+|E_UNEXPECTED|已准备好数据源。|
+
+## <a name="remarks"></a>备注
+ 此方法允许可执行文件以获取通过内存中的调试数据<xref:IStream>对象。
+
+ 若要加载的.pdb 文件而不进行验证，请使用[idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)方法。
+
+ 若要验证.pdb 文件是否符合特定条件，请使用[idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)方法。
+
+ 若要访问的数据加载过程 （通过一种回调机制），请使用[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。
+
+## <a name="see-also"></a>请参阅
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)
+- [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5df6e50185bf04dd1f4dbb9f1016a1d6b73b1185
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f07ecb151b6bf2cd4a9d48fbe6596bc7a533f97a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318272"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598666"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
 检索调试流通过索引或名称。
@@ -32,10 +32,12 @@ HRESULT Item (
 ```
 
 #### <a name="parameters"></a>参数
-索引  
+索引
+
 [in]要检索的索引或调试流的名称。 如果使用整数变量，则它必须是介于 0 到`count`-1，其中`count`与返回的[idiaenumdebugstreams:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)方法。
 
-流  
+流
+
 [out]返回[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)对象，表示指定的调试流。
 
 ## <a name="return-value"></a>返回值
@@ -68,5 +70,5 @@ IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)  
-[IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+- [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

@@ -12,35 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82b9162941a560237e608e14debc331da6064af4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c890ac9dbd3b542a400fc2a5b6db7ee2eb8f5db2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965609"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613851"
 ---
 # <a name="disk-operations-report-threads-view"></a>磁盘操作报告（线程视图）
-磁盘操作报告显示磁盘通道中的磁盘 I/O 操作。  
-  
- 对于代表正在当前可见时间窗口中进行分析的进程而发生的每次磁盘访问，将报告以下信息：  
-  
--   执行磁盘访问的进程的名称和 PID  
-  
--   访问磁盘的线程的 ID  
-  
--   被访问的文件的名称。  
-  
--   每个文件的读取数  
-  
--   读取的字节数  
-  
--   读取延迟时间（以毫秒为单位）  
-  
--   写入数  
-  
--   写入的字节数  
-  
--   写入延迟时间（以毫秒为单位）  
-  
-## <a name="see-also"></a>请参阅  
- [线程视图](../profiling/threads-view-parallel-performance.md)
+磁盘操作报告显示磁盘通道中的磁盘 I/O 操作。
+
+ 对于代表正在当前可见时间窗口中进行分析的进程而发生的每次磁盘访问，将报告以下信息：
+
+-   执行磁盘访问的进程的名称和 PID
+
+-   访问磁盘的线程的 ID
+
+-   被访问的文件的名称。
+
+-   每个文件的读取数
+
+-   读取的字节数
+
+-   读取延迟时间（以毫秒为单位）
+
+-   写入数
+
+-   写入的字节数
+
+-   写入延迟时间（以毫秒为单位）
+
+## <a name="see-also"></a>请参阅
+- [线程视图](../profiling/threads-view-parallel-performance.md)

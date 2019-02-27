@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9b6e655ea9c5eb6c598d7a4bdbb09ed3345903
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 2cde5e140bb9dd2019de684124f69096d2022fe0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853503"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610211"
 ---
 # <a name="downloadfile-task"></a>DownloadFile 任务
 使用超文本传输协议 (HTTP) 下载指定文件。
@@ -38,7 +38,7 @@ ms.locfileid: "55853503"
 ## <a name="parameters"></a>参数
 下表描述了 `DownloadFile` 任务的参数。
 
-|参数|说明​​|
+|参数|说明|
 |---------------|-----------------|
 |`DestinationFileName`|可选的 <xref:Microsoft.Build.Framework.ITaskItem> 参数<br /><br /> 要用于所下载文件的名称。  默认情况下，文件名派生自 `SourceUrl` 或者远程服务器。|
 |`DestinationFolder`|必选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定文件要下载到的目的文件夹。  如果不存在，则创建一个文件夹。|
@@ -73,5 +73,5 @@ ms.locfileid: "55853503"
 ```
 
 ## <a name="see-also"></a>请参阅
-[任务](../msbuild/msbuild-tasks.md)  
-[任务参考](../msbuild/msbuild-task-reference.md)
+- [任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)
