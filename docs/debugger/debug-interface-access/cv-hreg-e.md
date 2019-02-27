@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48650731d9f3493d1b399aae0345792e04e5eada
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 37786442124eafea719454ac94c704984f1703f3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316101"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623419"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 指定目标注册。
@@ -409,38 +409,27 @@ enum CV_HREG_e {
 ```
 
 ## <a name="elements"></a>元素
-CV_REG_*  
-注册由 Intel 80x86 和 ix86 处理器和 p 代码。
+CV_REG_ * 注册 Intel 80x86 和 ix86 处理器和 p 代码使用。
 
-CV_R68_*  
-68 K 处理器使用的寄存器。
+CV_R68_ * 注册 68 K 处理器使用。
 
-CV_M4_*  
-由 MIPS 4000 系列处理器的寄存器。
+CV_M4_ * 注册由 MIPS 4000 系列处理器。
 
-CV_ALPHA_*  
-使用的数字设备 Corporation Alpha AXP 系列处理器的寄存器。
+CV_ALPHA_ * 注册使用的数字设备 Corporation Alpha AXP 系列处理器。
 
-CV_PPC_*  
-/ IBM Motorola PowerPC 处理器使用的寄存器。
+CV_PPC_ * 注册/IBM Motorola PowerPC 处理器使用。
 
-CV_SH3_ * 和 CV_SH_\*  
-使用的人： Hitachi SH3 和 Hitachi SH 系列处理器的寄存器。
+CV_SH3_ * 和 CV_SH_\*由人： Hitachi SH3 和 Hitachi SH 系列处理器的寄存器。
 
-CV_ARM_*  
-使用高级 RISC 计算机 (ARM) 处理器的寄存器。
+CV_ARM_ * 注册高级 RISC 计算机 (ARM) 处理器使用。
 
-CV_IA64_*  
-由 Intel IA64 系列处理器的寄存器。
+CV_IA64_ * 注册由 Intel IA64 系列处理器。
 
-CV_TRI_*  
-Infineon 技术 TriCore 处理器使用的寄存器。
+CV_TRI_ * 注册 Infineon 技术 TriCore 处理器使用。
 
-CV_AM33_*  
-注册和使用 Matsushita/Panasonic AM33，与处理器相关。
+CV_AM33_ * 注册 Matsushita/Panasonic AM33 和使用相关的处理器。
 
-CV_M32R_*  
-Mitsubishi M32R 处理器使用的寄存器。
+CV_M32R_ * 注册 Mitsubishi M32R 处理器使用。
 
 ## <a name="remarks"></a>备注
 每个处理器类型使用其自己独特的寄存器。
@@ -461,9 +450,9 @@ Mitsubishi M32R 处理器使用的寄存器。
 标头： cvconst.h
 
 ## <a name="see-also"></a>请参阅
-[枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
-[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)  
-[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)  
-[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)  
-[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
+- [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)
+- [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)
+- [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)
+- [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)
+- [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

@@ -12,37 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d4049a3792fcc529352baef3e4649c6157aa7f0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b3f5cfb583ec4fceb9fb7428b08c00f6ca8e26b6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992147"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613890"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance 枚举
-表示并发可视化工具标记的重要性级别。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-enum marker_importance;  
-```  
-  
-## <a name="members"></a>成员  
-  
-### <a name="values"></a>值  
-  
-|name|说明|  
-|----------|-----------------|  
-|`critical_importance`|指定该标记具有关键重要性。|  
-|`high_importance`|指定该标记具有高重要性。|  
-|`low_importance`|指定该标记具有低重要性。|  
-|`normal_importance`|指定该标记具有普通重要性。|  
-  
-## <a name="requirements"></a>要求  
- **标头：** cvmarkersobj.h  
-  
- **命名空间：** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>请参阅  
- [diagnostic 命名空间](../profiling/diagnostic-namespace.md)
+表示并发可视化工具标记的重要性级别。
+
+## <a name="syntax"></a>语法
+
+```cpp
+enum marker_importance;
+```
+
+## <a name="members"></a>成员
+
+### <a name="values"></a>值
+
+|name|说明|
+|----------|-----------------|
+|`critical_importance`|指定该标记具有关键重要性。|
+|`high_importance`|指定该标记具有高重要性。|
+|`low_importance`|指定该标记具有低重要性。|
+|`normal_importance`|指定该标记具有普通重要性。|
+
+## <a name="requirements"></a>要求
+ **标头：** cvmarkersobj.h
+
+ **命名空间：** Concurrency::diagnostic
+
+## <a name="see-also"></a>请参阅
+- [diagnostic 命名空间](../profiling/diagnostic-namespace.md)

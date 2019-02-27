@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b374d897b3c2e03504a334c41d6eafc682e38f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36e5e8f59474a9a2fcbfef7a1c6b3d75febe3086
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913075"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708766"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>个性化设置 Visual Studio IDE
 
@@ -50,9 +50,13 @@ ms.locfileid: "55913075"
 
 若要添加或删除菜单或者工具栏项，请参阅[如何：自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。
 
+::: moniker range="vs-2017"
+
 ## <a name="start-page"></a>起始页
 
 若要为你和你的团队创建自定义起始页，请参阅[自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)。
+
+::: moniker-end
 
 ## <a name="window-layouts"></a>窗口布局
 

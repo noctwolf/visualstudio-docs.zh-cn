@@ -18,23 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a5a8f6cfc8c5d2db9a1947e42235b20e5754cee
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9cf25518a5511c0da629c400adfe866789929ea2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018769"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708714"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>调试 Web 应用程序：疑难解答
-本节包含可用于解决错误的公共过程。  
-  
-## <a name="in-this-section"></a>本节内容  
- [如何：验证 IIS 属性设置](../debugger/how-to-verify-iis-property-settings.md)  
- 解释如何正确设置 IIS 中的属性以启用调试。  
-  
-## <a name="related-sections"></a>相关章节  
- [调试 Web 应用程序：错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
- 解释疑难解答和错误解分析。  
-  
- [调试 Web 应用程序和脚本](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)  
- 概述如何调试 Web 应用程序，例如，[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]、XML Web services 和 ATL Server 项目。
+本节包含可用于解决错误的公共过程。
+
+## <a name="in-this-section"></a>本节内容
+ [如何： 验证 IIS 属性设置](../debugger/how-to-verify-iis-property-settings.md)介绍了如何将属性正确设置在 IIS 中启用调试。
+
+## <a name="related-sections"></a>相关章节
+ [调试 Web 应用程序： 错误和故障排除](../debugger/debugging-web-applications-errors-and-troubleshooting.md)说明进行故障排除和错误解分析。
+
+ [调试 Web 应用程序和脚本](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)如调试 Web 应用程序概述[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]，XML Web services 和 ATL server 项目。

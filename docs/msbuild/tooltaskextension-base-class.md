@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2cf9e45a07544820292482ac34c034e81a305af
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8e4cb02cdaf2827ac5c892c7565f446d8f84257c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55010345"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623003"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 基类
-很多任务继承自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类，该类继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类，后者本身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 此继承链向从它们派生的任务添加了几个参数。 本文档中列出了这些参数。  
+很多任务继承自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类，该类继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类，后者本身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 此继承链向从它们派生的任务添加了几个参数。 本文档中列出了这些参数。
 
-## <a name="parameters"></a>参数  
- 下表介绍基类的参数。  
+## <a name="parameters"></a>参数
+ 下表介绍基类的参数。
 
 
 | 参数 | 说明 |
@@ -48,6 +48,6 @@ ms.locfileid: "55010345"
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | 可选 `bool` 参数。<br /><br /> 设置为 `true` 时，此任务会为命令行创建一个批处理文件，并使用命令处理器执行它（而不是直接执行命令）。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | 可选 `bool` 参数。<br /><br /> 设置为 `true` 时，此任务会在其任务执行时生成节点。 |
 
-## <a name="see-also"></a>请参阅  
- [任务参考](../msbuild/msbuild-task-reference.md)   
- [任务](../msbuild/msbuild-tasks.md)
+## <a name="see-also"></a>请参阅
+- [任务参考](../msbuild/msbuild-task-reference.md)
+- [任务](../msbuild/msbuild-tasks.md)

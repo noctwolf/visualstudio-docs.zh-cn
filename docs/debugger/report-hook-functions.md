@@ -23,30 +23,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18485d94aaedcb1f41c0ed747dc6af0be7f7e276
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6f2723304fe22af9ae2920ff828c953de9347449
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54952868"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679978"
 ---
 # <a name="report-hook-functions"></a>报表挂钩函数
-每次 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtsetreporthook) 生成调试报告时都会调用报告挂钩函数（使用 [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) 安装）。 可以使用报告挂钩函数以及其他项筛选报告以集中于特定类型的分配。 报告挂钩函数应具有如下原型：  
-  
+每次 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtsetreporthook) 生成调试报告时都会调用报告挂钩函数（使用 [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) 安装）。 可以使用报告挂钩函数以及其他项筛选报告以集中于特定类型的分配。 报告挂钩函数应具有如下原型：
+
 ```cpp
-int YourReportHook(int nRptType, char *szMsg, int *retVal);  
-```  
-  
- 将指针传递给 **_CrtSetReportHook**属于类型 **_CRT_REPORT_HOOK**CRTDBG 中定义。H:  
-  
+int YourReportHook(int nRptType, char *szMsg, int *retVal);
+```
+
+ 将指针传递给 **_CrtSetReportHook**属于类型 **_CRT_REPORT_HOOK**CRTDBG 中定义。H:
+
 ```cpp
-typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
-```  
-  
- 当运行库调用挂钩函数时，nRptType参数包含报告类别（_CRT_WARN、_CRT_ERROR 或 _CRT_ASSERT），szMsg 包含指向完全汇编的报告消息字符串的指针，而 retVal 指定 `_CrtDbgReport` 应在生成报告以后继续正常执行还是启动调试器。 （retVal 值为零继续执行，值为 1 为启动调试器。）  
-  
- 如果挂钩完全处理了所讨论的消息，因而不需要进一步的报告，那么应返回 TRUE。 如果返回 FALSE，`_CrtDbgReport` 将以正常方式报告消息。  
-  
-## <a name="see-also"></a>请参阅  
- [编写调试挂钩函数](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 示例](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)
+typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
+```
+
+ 当运行库调用挂钩函数时，nRptType参数包含报告类别（_CRT_WARN、_CRT_ERROR 或 _CRT_ASSERT），szMsg 包含指向完全汇编的报告消息字符串的指针，而 retVal 指定 `_CrtDbgReport` 应在生成报告以后继续正常执行还是启动调试器。 （retVal 值为零继续执行，值为 1 为启动调试器。）
+
+ 如果挂钩完全处理了所讨论的消息，因而不需要进一步的报告，那么应返回 TRUE。 如果返回 FALSE，`_CrtDbgReport` 将以正常方式报告消息。
+
+## <a name="see-also"></a>请参阅
+- [编写调试挂钩函数](../debugger/debug-hook-function-writing.md)
+- [crt_dbg2 示例](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)

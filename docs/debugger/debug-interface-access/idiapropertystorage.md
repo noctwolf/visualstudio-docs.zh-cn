@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0e1bc647f8455eeaa5b31a9ddae99b2ae7d2de3
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 81d1a256b4300510ed31c163d92cea89df884aac
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227652"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610757"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 允许你读取 DIA 属性集的持久性属性。
@@ -31,7 +31,7 @@ IDiaPropertyStorage : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaPropertyStorage`。
 
-|方法|说明​​|
+|方法|说明|
 |------------|-----------------|
 |[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|获取一个指向枚举数的这组内的属性。|
 |[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|读取`BOOL`属性组中的值。|
@@ -127,13 +127,13 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>请参阅
-[接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)  
-[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
-[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)  
-[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)  
-[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)  
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
-[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)  
-[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
-[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+- [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

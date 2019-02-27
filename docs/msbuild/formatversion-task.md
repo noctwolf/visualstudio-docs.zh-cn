@@ -13,35 +13,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59dd767e36620deb30d3d5ccff361d989c9d3a4d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: cc1651ae769a9dbe8ef8fbd9b8a1a50dd83ea0f6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928771"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640709"
 ---
 # <a name="formatversion-task"></a>FormatVersion 任务
-将修订号追加到版本号。  
-  
--   案例 #1：输入：Version=\<undefined>;  Revision=\<don't care>;   Output:OutputVersion="1.0.0.0"  
-  
--   案例 #2：输入：Version="1.0.0.*"  Revision="5"  Output:OutputVersion="1.0.0.5"  
-  
--   案例 #3：输入：Version="1.0.0.0"  Revision=\<don't care>;  Output:OutputVersion="1.0.0.0"  
-  
-## <a name="parameters"></a>参数  
- 下表描述了 `FormatVersion` 任务的参数。  
-  
-|参数|说明|  
-|---------------|-----------------|  
-|`FormatType`|可选 `String` 参数。<br /><br /> 指定格式类型。<br /><br /> -“Version”= 版本。<br />-“Path”=将“.”替换为“_”；|  
-|`OutputVersion`|可选 `String` 输出参数。<br /><br /> 指定包含修订号的输出版本。|  
-|`Revision`|可选 `Int32` 参数。<br /><br /> 指定要追加到该版本的修订。|  
-|`Version`|可选 `String` 参数。<br /><br /> 指定要进行格式化的版本号字符串。|  
-  
-## <a name="remarks"></a>备注  
- 除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
-  
-## <a name="see-also"></a>请参阅  
- [任务](../msbuild/msbuild-tasks.md)   
- [任务参考](../msbuild/msbuild-task-reference.md)
+将修订号追加到版本号。
+
+-   案例 #1：输入：Version=\<undefined>;  Revision=\<don't care>;   Output:OutputVersion="1.0.0.0"
+
+-   案例 #2：输入：Version="1.0.0.*"  Revision="5"  Output:OutputVersion="1.0.0.5"
+
+-   案例 #3：输入：Version="1.0.0.0"  Revision=\<don't care>;  Output:OutputVersion="1.0.0.0"
+
+## <a name="parameters"></a>参数
+ 下表描述了 `FormatVersion` 任务的参数。
+
+|参数|说明|
+|---------------|-----------------|
+|`FormatType`|可选 `String` 参数。<br /><br /> 指定格式类型。<br /><br /> -“Version”= 版本。<br />-“Path”=将“.”替换为“_”；|
+|`OutputVersion`|可选 `String` 输出参数。<br /><br /> 指定包含修订号的输出版本。|
+|`Revision`|可选 `Int32` 参数。<br /><br /> 指定要追加到该版本的修订。|
+|`Version`|可选 `String` 参数。<br /><br /> 指定要进行格式化的版本号字符串。|
+
+## <a name="remarks"></a>备注
+ 除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
+
+## <a name="see-also"></a>请参阅
+- [任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)

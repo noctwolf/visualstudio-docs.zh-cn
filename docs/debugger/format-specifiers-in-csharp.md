@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc36b13d6b6bdc6df0b881f2b4b91c32995a08d5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227678"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698984"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>格式说明符在C#Visual Studio 调试器中
 你可以在其中一个值中显示的格式**监视**窗口是通过使用格式说明符。 此外可以使用中的格式说明符**即时**窗口中，**命令**窗口中，在[跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，并在源窗口中。 如果暂停这些窗口中的表达式，该结果将显示在[数据提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中指定的格式显示。
@@ -68,5 +68,5 @@ ms.locfileid: "56227678"
 |results|与实现 IEnumerable 或 IEnumerable 的类型的变量一起使用\<T >，通常在查询表达式的结果。 仅显示包含查询结果的成员。|显示所有成员|显示满足查询条件的成员|
 
 ## <a name="see-also"></a>请参阅
-[“监视”和“快速监视”窗口](../debugger/watch-and-quickwatch-windows.md)  
-[“自动”和“局部变量”窗口](../debugger/autos-and-locals-windows.md)
+- [“监视”和“快速监视”窗口](../debugger/watch-and-quickwatch-windows.md)
+- [“自动”和“局部变量”窗口](../debugger/autos-and-locals-windows.md)

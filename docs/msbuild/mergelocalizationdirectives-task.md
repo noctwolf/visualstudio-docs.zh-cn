@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb537f045f3ed2409dfcf0def2826057fd55687
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5814ea188de7d3c5b7aba78ab1b239d1e9fe29e1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927733"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627215"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 任务
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> 任务可将本地化属性和一个或多个 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二进制格式文件的注释合并到整个程序集的单一文件中。
 
 ## <a name="task-parameters"></a>任务参数
 
-| 参数 | 说明​​ |
+| 参数 | 说明 |
 |------------------------------| - |
 | `GeneratedLocalizationFiles` | 必需的 **ITaskItem[]** 参数。<br /><br /> 指定单个 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二进制格式文件的本地化指令文件列表。 |
 | `OutputFile` | 必需的 **String** 输出参数。<br /><br /> 指定编译的本地化指令程序集的输出路径。 |
@@ -55,8 +55,8 @@ ms.locfileid: "55927733"
 ```
 
 ## <a name="see-also"></a>请参阅
-[WPF MSBuild 参考](../msbuild/wpf-msbuild-reference.md)  
-[WPF MSBuild 任务参考](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild 参考](../msbuild/msbuild-reference.md)  
-[MSBuild 任务参考](../msbuild/msbuild-task-reference.md)  
-[生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
+- [WPF MSBuild 参考](../msbuild/wpf-msbuild-reference.md)
+- [WPF MSBuild 任务参考](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild 参考](../msbuild/msbuild-reference.md)
+- [MSBuild 任务参考](../msbuild/msbuild-task-reference.md)
+- [生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

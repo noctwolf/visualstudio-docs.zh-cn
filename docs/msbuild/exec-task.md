@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1357c598b2a30f390372ed9630b044c951172531
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: ef9759c5a422a0b67cdb9e8f7dde565b732958dd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853711"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610250"
 ---
 # <a name="exec-task"></a>Exec 任务
 通过使用指定的参数来运行指定程序或命令。
@@ -31,7 +31,7 @@ ms.locfileid: "55853711"
 ## <a name="parameters"></a>参数
 下表描述了 `Exec` 任务的参数。
 
-|参数|说明​​|
+|参数|说明|
 |---------------|-----------------|
 |`Command`|必选 `String` 参数。<br /><br /> 要运行的命令。 可以是系统命令（例如 attrib），也可以是可执行文件（例如 program.exe、runprogram.bat 或 setup.msi）。<br /><br /> 此参数可包含多行命令。 或者，可将多个命令放在批文件中，然后使用此参数运行文件。|
 |`ConsoleOutput`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 每个项输出都是工具发出的标准输出或标准错误流的一行。 仅当 `ConsoleToMsBuild` 设置为 `true`，才会捕获此信息。|
@@ -71,5 +71,5 @@ ms.locfileid: "55853711"
 ```
 
 ## <a name="see-also"></a>请参阅
-[任务](../msbuild/msbuild-tasks.md)  
-[任务参考](../msbuild/msbuild-task-reference.md)
+- [任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)

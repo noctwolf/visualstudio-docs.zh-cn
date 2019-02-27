@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc603d11a087fb413896b9ae897ee730e18aae1b
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: d3788fae176b344f99884efe7552f33762255ddc
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853373"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610302"
 ---
 # <a name="error-task"></a>Error 任务
 基于评估的条件语句，停止生成操作并记录错误。
@@ -31,7 +31,7 @@ ms.locfileid: "55853373"
 ## <a name="parameters"></a>参数
 下表描述了 `Error` 任务的参数。
 
-| 参数 | 说明​​ |
+| 参数 | 说明 |
 |---------------| - |
 | `Code` | 可选 `String` 参数。<br /><br /> 与错误关联的错误代码。 |
 | `File` | 可选 `String` 参数。<br /><br /> 包含错误的文件的名称。 如果未提供任何文件名称，将使用包含 Error 任务的文件。 |
@@ -63,5 +63,5 @@ ms.locfileid: "55853373"
 ```
 
 ## <a name="see-also"></a>请参阅
-[任务参考](../msbuild/msbuild-task-reference.md)  
-[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)
+- [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)

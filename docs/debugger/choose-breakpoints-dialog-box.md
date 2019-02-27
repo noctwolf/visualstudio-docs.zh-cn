@@ -21,24 +21,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2fe6b19312714815efc1e499bf89eacdaaff67
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 50547507bf37eb22346bcbf3f48585c9cb0b26b6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54992576"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637030"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>“选择断点”对话框
-**选择断点**对话框将打开 when you try to 二义性输入中设置断点**新断点**对话框。 不明确的一个常见示例是输入的重载的函数名称。  
-  
- **断点**  
- 可以设置的列表可能断点基于不明确的输入。 可以选择一个或多个要设置的断点。  
-  
- **All**  
- 选择中列出的所有断点**断点**框。  
-  
- **无**  
- 清除中列出的所有断点**断点**框。  
-  
-## <a name="see-also"></a>请参阅  
- [使用断点](../debugger/using-breakpoints.md)
+**选择断点**对话框将打开 when you try to 二义性输入中设置断点**新断点**对话框。 不明确的一个常见示例是输入的重载的函数名称。
+
+ **断点**列出可能可以基于设置二义性输入的断点。 可以选择一个或多个要设置的断点。
+
+ **所有**选择中列出的所有断点**断点**框。
+
+ **无**清除中列出的所有断点**断点**框。
+
+## <a name="see-also"></a>请参阅
+
+- [使用断点](../debugger/using-breakpoints.md)

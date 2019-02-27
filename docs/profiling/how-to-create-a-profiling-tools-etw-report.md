@@ -8,33 +8,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20b7c92c8cbbf500b44816fbb0f34e0df6f04720
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 310c43ea4dbdf1f50a76b574ec52baa589769034
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940929"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614462"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>如何：创建分析工具 ETW 报告
-Windows 事件跟踪 (ETW) 报告列出 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的性能会话中所记录的 ETW 事件。 ETW 数据收集在二进制 (.etl) 文件中。 有关此报告的详细信息，请参阅 [Windows 事件跟踪 (ETW) 报告](../profiling/event-tracing-for-windows-etw-report.md)。  
-  
+Windows 事件跟踪 (ETW) 报告列出 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的性能会话中所记录的 ETW 事件。 ETW 数据收集在二进制 (.etl) 文件中。 有关此报告的详细信息，请参阅 [Windows 事件跟踪 (ETW) 报告](../profiling/event-tracing-for-windows-etw-report.md)。
+
 > [!NOTE]
->  不能在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的接口中显示 ETW 报告。  
-  
-- 有关如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的接口收集 ETW 数据的详细信息，请参阅[如何：收集 Windows 事件跟踪 (ETW) 数据](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)。  
-  
-- 有关如何从命令提示符收集 ETW 数据的信息，请参阅 [VSPerfCmd](../profiling/vsperfcmd.md) 和[事件](../profiling/events-vsperfcmd.md)。  
-  
-  使用 **VSReport/summary:etw** 命令生成 ETW 报告。 包含 ETW 数据的 .etl 必须与分析数据文件（.vsp 或 .vsps）位于同一目录中。 报告默认生成为逗号分隔值文件 (.csv)。 有关详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。  
-  
-### <a name="to-generate-an-etw-report"></a>创建 ETW 报告  
-  
--   在“命令提示符”窗口中，键入以下命令行：  
-  
-     *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**  
-  
-    |||  
-    |-|-|  
-    |*ToolsPath*|分析工具实用工具的路径。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。|  
-    |*VSPFile*|分析数据文件（vsp 或 vsps）。 接受完整和部分路径。|  
+>  不能在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的接口中显示 ETW 报告。
+
+- 有关如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的接口收集 ETW 数据的详细信息，请参阅[如何：收集 Windows 事件跟踪 (ETW) 数据](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)。
+
+- 有关如何从命令提示符收集 ETW 数据的信息，请参阅 [VSPerfCmd](../profiling/vsperfcmd.md) 和[事件](../profiling/events-vsperfcmd.md)。
+
+  使用 **VSReport/summary:etw** 命令生成 ETW 报告。 包含 ETW 数据的 .etl 必须与分析数据文件（.vsp 或 .vsps）位于同一目录中。 报告默认生成为逗号分隔值文件 (.csv)。 有关详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。
+
+### <a name="to-generate-an-etw-report"></a>创建 ETW 报告
+
+-   在“命令提示符”窗口中，键入以下命令行：
+
+     *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**
+
+    |||
+    |-|-|
+    |*ToolsPath*|分析工具实用工具的路径。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。|
+    |*VSPFile*|分析数据文件（vsp 或 vsps）。 接受完整和部分路径。|
     |Xml|生成 XML 格式的报告。|

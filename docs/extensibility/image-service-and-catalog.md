@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9264d8b5129b52444cc551e3719167d04442480d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b58e9110cfe919d355e4952c0d76f7c47bcdc2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679484"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844056"
 ---
 # <a name="image-service-and-catalog"></a>映像服务和目录
 此指南包含指导和采用 Visual Studio 映像服务和 Visual Studio 2015 中引入的映像目录的最佳实践。
@@ -174,7 +174,7 @@ ms.locfileid: "56679484"
 ||||
 |-|-|-|
 |**元素**|**属性 （全部所需）**|**定义**|
-|\<Size>|值|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|
+|\<Size>|“值”|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|
 |\<SizeRange>|MinSize, MaxSize|将映像从 MinSize 到最大大小 （以设备为单位） （含限值） 使用源。 图将方形。|
 |\<维度 >|宽度、 高度|源将用于给定的宽度和高度 （以设备为单位） 的映像。|
 |\<DimensionRange>|MinWidth，MinHeight，<br /><br /> MaxWidth MaxHeight|源将用于从最小宽度/高度 （以设备为单位） 的最大宽度/高度的图像 （含）。|
@@ -651,7 +651,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  更新代码以使用图像服务请求通过所更新映射的名字对象。 (这可能意味着需要更新到**CrispImages**对于托管代码中，或从映像服务请求 HBITMAPs 或 HICONs 和对于本机代码中传递它们。)
 
 ## <a name="testing-your-images"></a>测试你的映像
- 图像库查看器工具可用于测试映像清单，以确保所有内容编写正确。 您可以发现中的工具[Visual Studio 2015 SDK](visual-studio-sdk.md)。 有关此工具和其他文档，请参阅[此处](http://aka.ms/VSImageThemeTools)。
+ 图像库查看器工具可用于测试映像清单，以确保所有内容编写正确。 您可以发现中的工具[Visual Studio 2015 SDK](visual-studio-sdk.md)。 有关此工具和其他文档，请参阅[此处](https://aka.ms/VSImageThemeTools)。
 
 ## <a name="additional-resources"></a>其他资源
 

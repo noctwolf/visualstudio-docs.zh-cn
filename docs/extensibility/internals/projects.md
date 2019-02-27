@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ae786d3fa65bdf4ce591be1c8ec677a5ac757e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 853a131ce522da156f0e59aaea99bc289cd2a452
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615528"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840898"
 ---
 # <a name="projects"></a>项目
 在 Visual Studio 中，项目是开发人员用于组织源代码文件和显示在其他资源的容器**解决方案资源管理器**。 通常情况下，项目是存储对源代码文件和资源，如位图文件的引用的文件 （例如，对于 C# 项目的.csproj 文件）。 项目的让组织、 生成、 调试和部署的源代码，请对 Web 服务和数据库，以及其他资源的引用。 Vspackage 可以扩展 Visual Studio 项目系统在三个方面：*项目类型*，*项目子类型*，并*自定义工具*。
@@ -41,7 +41,7 @@ ms.locfileid: "56615528"
 
  介绍什么实际发生的情况时创建新的项目。
 
-- [VSSDK 示例](http://aka.ms/vs2015sdksamples)包含 VSSDK 处理项目和解决方案的示例。
+- [VSSDK 示例](https://aka.ms/vs2015sdksamples)包含 VSSDK 处理项目和解决方案的示例。
 
 ## <a name="related-sections"></a>相关章节
 - [Visual Studio SDK 内](../../extensibility/internals/inside-the-visual-studio-sdk.md)

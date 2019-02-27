@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8cbcbb562267f776b04aad8387e853bd1f58b5ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aaae5621f3e371deb34506a9f0bd5cc64602c3f3
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764573"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841800"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>在 Visual Studio 中使用 Xamarin 生成具有本机 UI 的应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ ms.locfileid: "54764573"
 
 7.  在“属性”窗口中，设置这些属性（注意：它有助于使用“属性”窗口工具栏中的排序按钮对列表进行按字母顺序排序）：
 
-    |Property|“值”|
+    |Property|值|
     |--------------|-----------|
     |**text**|**根据“邮政编码”进行搜索**|
     |**id**|`@+id/ZipCodeSearchLabel`|
@@ -325,7 +325,7 @@ ms.locfileid: "54764573"
 
 11. 在“工具箱”中，将“按钮”拖动到“RelativeLayout”控件上，然后将其放置在 zipCodeEntry 控件的右侧。 然后设置这些属性：
 
-    |Property|值|
+    |属性|值|
     |--------------|-----------|
     |**id**|`@+id/weatherBtn`|
     |**文本**|**获取天气信息**|
@@ -519,7 +519,7 @@ ms.locfileid: "54764573"
 
 2.  选择合适的设备或仿真器目标，然后按 F5 键启动该应用。
 
-3.  在设备上或在模拟器中，在编辑框中键入有效的美国邮政编码 (例如：60601)，然后按**获取天气信息**。 然后，控件中将显示此区域的天气数据。
+3.  在设备上或在仿真器中，将有效的美国邮政编码键入编辑框（例如：60601），然后按“获取天气信息”。 然后，控件中将显示此区域的天气数据。
 
      ![适用于 Android 和 Windows Phone 的天气应用](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +625,7 @@ ms.locfileid: "54764573"
 
 2.  按 F5 键，启动此应用。
 
-3.  在 Windows Phone 仿真程序中，键入有效的美国邮政编码编辑框 (例如：60601)，然后按**获取天气信息**。 然后，控件中将显示此区域的天气数据。
+3.  在 Windows Phone 仿真器中，将有效的美国邮政编码键入编辑框（例如：60601），然后按“获取天气信息”。 然后，控件中将显示此区域的天气数据。
 
      ![正在运行的应用的 Windows 版本](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
@@ -644,4 +644,4 @@ ms.locfileid: "54764573"
  PCL 中的共享代码是特定于平台的，因为 PCL 只编译了一次，并且包括在每个特定于平台的应用包中。 若要编写使用条件编译的共享代码来分离特定于平台的代码，可使用共享项目。 有关详细信息，请参阅[代码共享选项](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com)。
 
 ## <a name="see-also"></a>请参阅
- [Xamarin 开发人员站点](http://developer.xamarin.com/) [Windows 开发人员中心](https://dev.windows.com/en-us) [Swift 和C#快速参考海报](http://aka.ms/scposter)
+ [Xamarin 开发人员站点](http://developer.xamarin.com/) [Windows 开发人员中心](https://dev.windows.com/en-us) [Swift 和C#快速参考海报](https://aka.ms/scposter)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 726bca63018ca2396126c487f2588da5c658a5eb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 352651be28f178272caaad9a01070dc9d7357d79
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975928"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637667"
 ---
 # <a name="visible-timeline-profile"></a>可见时间线分析
-线程阻塞视图的可见时间线分析提供统计信息和报告的链接。 当进行放大、缩小、水平滚动屏幕、隐藏色条，或显示色条时，活动图例中的数字随之更改以反映当前视图中的内容。 若要查看有关图例中某个项的报告，请单击此项。  
-  
-## <a name="see-also"></a>请参阅  
- [线程视图](../profiling/threads-view-parallel-performance.md)
+线程阻塞视图的可见时间线分析提供统计信息和报告的链接。 当进行放大、缩小、水平滚动屏幕、隐藏色条，或显示色条时，活动图例中的数字随之更改以反映当前视图中的内容。 若要查看有关图例中某个项的报告，请单击此项。
+
+## <a name="see-also"></a>请参阅
+- [线程视图](../profiling/threads-view-parallel-performance.md)

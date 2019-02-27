@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8353bc1cfd9b3b48357979345ba29532cd3102bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908486"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603256"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：扩展 Visual Studio 生成过程
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程由导入到项目文件中的一系列 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 文件定义。 可扩展其中一个导入文件 Microsoft.Common.targets，以便在生成过程中的几个点上运行自定义任务。 本文介绍两种可用于扩展 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程的方法：
@@ -35,8 +35,8 @@ Microsoft.Common.targets 文件包含一组预定义的空目标，会在生成�
 
 1. 标识 Microsoft.Common.targets 中需要重写的预定义目标。 请参阅下表，了解可安全重写的目标的完整列表。
 
-2. 在项目文件末尾（紧接在 `</Project>` 标记之前）定义一个或多个目标。 例如:  
-  
+2. 在项目文件末尾（紧接在 `</Project>` 标记之前）定义一个或多个目标。 例如:
+
     ```xml
     <Project>
         ...
@@ -48,12 +48,12 @@ Microsoft.Common.targets 文件包含一组预定义的空目标，会在生成�
         </Target>
     </Project>
     ```
-  
+
 3. 生成项目文件。
 
 下表显示 Microsoft.Common.targets 中可以安全重写的所有目标。
 
-|目标名称|说明​​|
+|目标名称|说明|
 |-----------------|-----------------|
 |`BeforeCompile`， `AfterCompile`|插入到这些目标之一中的任务，在完成内核编译之前或之后运行。 大多数自定义均在这两个目标之一中完成。|
 |`BeforeBuild`， `AfterBuild`|插入到这些目标之一中的任务，在生成中所有其他任务之前或之后运行。 **注意：**`BeforeBuild` 和 `AfterBuild` 目标已在大多数项目文件的注释末尾定义，使你能够轻松向项目文件添加预生成和生成后事件。|
@@ -117,13 +117,13 @@ Microsoft.Common.targets 文件包含一组预定义的空目标，会在生成�
 
 ### <a name="commonly-overridden-dependson-properties"></a>经常重写的 DependsOn 属性
 
-|属性名称|说明​​|
+|属性名称|说明|
 |-------------------|-----------------|
 |`BuildDependsOn`|在要在整个生成过程之前或之后插入自定义目标的情况下，要重写的属性。|
 |`CleanDependsOn`|在要从自定义生成过程中清理输出的情况下，要重写的属性。|
 |`CompileDependsOn`|在要在编译步骤之前或之后插入自定义过程的情况下，要重写的属性。|
 
 ## <a name="see-also"></a>请参阅
-[Visual Studio 集成](../msbuild/visual-studio-integration-msbuild.md)  
-[MSBuild 概念](../msbuild/msbuild-concepts.md)  
-[.targets 文件](../msbuild/msbuild-dot-targets-files.md)
+- [Visual Studio 集成](../msbuild/visual-studio-integration-msbuild.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [.targets 文件](../msbuild/msbuild-dot-targets-files.md)

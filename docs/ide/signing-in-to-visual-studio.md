@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 682461df50999f14d3f8ca1f3acbee7c69559c8d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 008d0d8d464f3f1a24d15f1cb6f299edb30776fd
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908577"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840826"
 ---
 # <a name="sign-in-to-visual-studio"></a>登录 Visual Studio
 
@@ -30,7 +30,7 @@ ms.locfileid: "55908577"
 
 以下是登录后可体验的内容及可执行的操作的完整列表：
 
-- **访问 Visual Studio Dev Essentials 程序的权限** - 此程序包括免费软件产品/服务、培训、支持等。 请参阅 [Visual Studio Dev Essential](http://aka.ms/vsdevhelp) 了解详细信息。
+- **访问 Visual Studio Dev Essentials 程序的权限** - 此程序包括免费软件产品/服务、培训、支持等。 请参阅 [Visual Studio Dev Essential](https://aka.ms/vsdevhelp) 了解详细信息。
 
 - **同步 Visual Studio 设置** - 登录到任何设备上的 Visual Studio 时，将立即应用自定义设置（例如，键绑定、窗口布局和颜色主题）。 请参阅 [Visual Studio 中的同步设置](../ide/synchronized-settings-in-visual-studio.md)。
 

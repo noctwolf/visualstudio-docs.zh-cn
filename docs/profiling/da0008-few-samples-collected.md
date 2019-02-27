@@ -13,28 +13,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baf973837a687bb102dd857adf97caf0e1b8e5ab
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6b33193f30edd19ef18ead5cf15f2e41d352f4d4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001769"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630374"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008：收集的样本过少
 
-|||  
-|-|-|  
-|规则 ID|DA0008|  
-|类别|分析工具使用情况|  
-|分析方法|采样|  
-|消息|仅收集了少量样本。 请考虑运行更长的时间或使用更快的采样率，以获取更有意义的结果。|  
-|规则类型|信息|  
+|||
+|-|-|
+|规则 ID|DA0008|
+|类别|分析工具使用情况|
+|分析方法|采样|
+|消息|仅收集了少量样本。 请考虑运行更长的时间或使用更快的采样率，以获取更有意义的结果。|
+|规则类型|信息|
 
-## <a name="cause"></a>原因  
- 分析运行期间仅收集了少量样本。  
+## <a name="cause"></a>原因
+ 分析运行期间仅收集了少量样本。
 
-## <a name="rule-description"></a>规则说明  
- 使用采样方法时，应该收集大量具有统计学意义的样本，以确保数据反映实际的程序行为。 为了尽量减少采样错误，应尝试至少收集 1000 个程序指令执行行为的样本。 如果不收集足够的样本，则分析分析数据时可能产生误导。  
+## <a name="rule-description"></a>规则说明
+ 使用采样方法时，应该收集大量具有统计学意义的样本，以确保数据反映实际的程序行为。 为了尽量减少采样错误，应尝试至少收集 1000 个程序指令执行行为的样本。 如果不收集足够的样本，则分析分析数据时可能产生误导。
 
-## <a name="how-to-fix-violations"></a>如何解决冲突  
+## <a name="how-to-fix-violations"></a>如何解决冲突
  请考虑分析运行时间较长的应用程序或使用较快的采样速率，以获得具有统计学意义的结果。 有关如何更改 Visual Studio IDE 中的采样速率的信息，请参阅[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)。 有关使用分析工具命令行时如何更改采样速率的详细信息，请参阅 [VSPerfCmd](../profiling/vsperfcmd.md) 引用中的[计时器](../profiling/timer.md)。

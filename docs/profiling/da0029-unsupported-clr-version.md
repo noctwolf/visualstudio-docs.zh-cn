@@ -15,28 +15,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16782fcf3c8f859edd8363c43741f598d5929188
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a3855b8975684b088b2838a866db36e6ec19e665
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55006995"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635535"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029：不支持的 CLR 版本
 
-|||  
-|-|-|  
-|规则 ID|DA0029|  
-|类别|分析工具使用情况|  
-|分析方法|从命令行分析|  
-|消息|在收集期间检测到不受支持的 CLR 版本。 托管符号可能无法正确解析。|  
-|规则类型|信息。|  
+|||
+|-|-|
+|规则 ID|DA0029|
+|类别|分析工具使用情况|
+|分析方法|从命令行分析|
+|消息|在收集期间检测到不受支持的 CLR 版本。 托管符号可能无法正确解析。|
+|规则类型|信息。|
 
-## <a name="cause"></a>原因  
- 尝试分析的应用程序使用的 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] 不受分析工具支持。  
+## <a name="cause"></a>原因
+ 尝试分析的应用程序使用的 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] 不受分析工具支持。
 
-## <a name="rule-description"></a>规则说明  
- 出现此警告是因为，分析工具不能解析在应用程序中运行的托管代码符号。 分析工具无法解析运行 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] 的应用程序的托管代码符号。  
+## <a name="rule-description"></a>规则说明
+ 出现此警告是因为，分析工具不能解析在应用程序中运行的托管代码符号。 分析工具无法解析运行 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] 的应用程序的托管代码符号。
 
-## <a name="how-to-fix-violations"></a>如何解决冲突  
+## <a name="how-to-fix-violations"></a>如何解决冲突
  无。

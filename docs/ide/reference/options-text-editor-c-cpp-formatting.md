@@ -16,12 +16,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae24e69ddceea88155d7185157a6ed25daab5430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922116"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645480"
 ---
 # <a name="options-text-editor-cc-formatting"></a>选项，文本编辑器，C/C++，格式
 
@@ -42,7 +42,7 @@ ms.locfileid: "55922116"
 
 ### <a name="configuring-clangformat-options"></a>配置 ClangFormat 选项
 
-在 Visual Studio 2017 版本 15.7 及更高版本中，默认启用 ClangFormat 支持。 可选择对所有项目应用下述一种常见的格式约定：LLVM、Google、Chromium、Mozilla 或 Webkit。 此外，还可创建自定义格式定义 .clang-format 或 _clang-format 文件。 如果项目文件夹中存在此类文件，Visual Studio 将使用它来设置该文件夹及其子文件夹中所有源代码文件的格式。 
+在 Visual Studio 2017 版本 15.7 及更高版本中，默认启用 ClangFormat 支持。 可选择对所有项目应用下述一种常见的格式约定：LLVM、Google、Chromium、Mozilla 或 Webkit。 此外，还可创建自定义格式定义 .clang-format 或 _clang-format 文件。 如果项目文件夹中存在此类文件，Visual Studio 将使用它来设置该文件夹及其子文件夹中所有源代码文件的格式。
 
 当你键入内容时，Visual Studio 默认在背景应用格式中运行 clangformat.exe。 此外，还可指定仅针对“设置文档格式(Ctrl+K, Ctrl+D)”或“设置选定内容格式(Ctrl+K, Ctrl+F)”这两个手动调用的格式命令运行它。
 

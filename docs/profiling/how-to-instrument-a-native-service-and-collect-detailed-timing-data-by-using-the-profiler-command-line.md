@@ -8,49 +8,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46c9061163b36b6d75bb7e6d8a9b8631ce1ea01a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b2be1ac0818f7efd31fb30981e50eff5e42df7af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55070677"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634781"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测本机服务，并收集详细计时数据
-本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测本机 (C/C++) 服务并收集详细的计时数据。  
+本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测本机 (C/C++) 服务并收集详细的计时数据。
 
 > [!NOTE]
->  如果某服务在计算机启动之后无法重启（此类服务只能在操作系统启动时启动），则无法使用检测方法分析该服务。  
-> 
+>  如果某服务在计算机启动之后无法重启（此类服务只能在操作系统启动时启动），则无法使用检测方法分析该服务。
+>
 >  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
- 
- 若要使用检测方法从本机服务收集详细计时数据，可使用 [VSInstr.exe](../profiling/vsinstr.md) 工具生成该组件的受检测版本。 然后，将该服务的非检测版本替换为检测版本，确保将该服务配置为手动启动。 然后启动探查器。  
 
- 启动该服务时，会自动将计时数据收集到数据文件中。 在分析会话过程中可以暂停和恢复数据收集。  
+ 若要使用检测方法从本机服务收集详细计时数据，可使用 [VSInstr.exe](../profiling/vsinstr.md) 工具生成该组件的受检测版本。 然后，将该服务的非检测版本替换为检测版本，确保将该服务配置为手动启动。 然后启动探查器。
 
- 若要结束分析会话，可关闭该服务，然后显式关闭探查器。  
+ 启动该服务时，会自动将计时数据收集到数据文件中。 在分析会话过程中可以暂停和恢复数据收集。
 
-## <a name="start-the-application-with-the-profiler"></a>用探查器启动应用程序  
+ 若要结束分析会话，可关闭该服务，然后显式关闭探查器。
 
-#### <a name="to-start-profiling-a-native-service"></a>开始分析本机服务  
+## <a name="start-the-application-with-the-profiler"></a>用探查器启动应用程序
 
-1. 打开命令提示符窗口。  
+#### <a name="to-start-profiling-a-native-service"></a>开始分析本机服务
 
-2. 使用 VSInstr 工具生成该服务二进制文件的检测版本。  
+1. 打开命令提示符窗口。
 
-3. 使用检测版本替换原始二进制文件。 在 Windows 服务控制管理器中，确保将该服务的“启动类型”设置为“手动”。  
+2. 使用 VSInstr 工具生成该服务二进制文件的检测版本。
 
-4. 启动探查器。 类型：  
+3. 使用检测版本替换原始二进制文件。 在 Windows 服务控制管理器中，确保将该服务的“启动类型”设置为“手动”。
 
-    **VSPerfCmd** [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+4. 启动探查器。 类型：
 
-   - **/start:trace** 选项初始化探查器。  
+    **VSPerfCmd** [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
-   - **/output:**`OutputFile` 选项需要与 **/start** 一起使用。 `OutputFile` 指定分析数据 (.vsp) 文件的名称和位置。  
+   - **/start:trace** 选项初始化探查器。
 
-     可以将以下任意选项与 **/start:trace** 选项一起使用。  
+   - **/output:**`OutputFile` 选项需要与 **/start** 一起使用。 `OutputFile` 指定分析数据 (.vsp) 文件的名称和位置。
+
+     可以将以下任意选项与 **/start:trace** 选项一起使用。
 
    > [!NOTE]
-   >  **/user** 和 **/crosssession** 选项通常为 ASP.NET 应用程序所需选项。  
+   >  **/user** 和 **/crosssession** 选项通常为 ASP.NET 应用程序所需选项。
 
    | 选项 | 说明 |
    | - | - |
@@ -64,34 +64,34 @@ ms.locfileid: "55070677"
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中。 |
 
 
-5. 从服务控制管理器启动服务。  
+5. 从服务控制管理器启动服务。
 
-## <a name="control-data-collection"></a>控制数据收集  
- 服务运行时，可使用 VSPerfCmd.exe 选项开始或停止将数据写入到探查器数据文件。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭服务）进行数据收集。  
+## <a name="control-data-collection"></a>控制数据收集
+ 服务运行时，可使用 VSPerfCmd.exe 选项开始或停止将数据写入到探查器数据文件。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭服务）进行数据收集。
 
-#### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
+#### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集
 
--   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
+-   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
 
-    |选项|说明|  
-    |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|启动 (**/threadon**) 或停止 (**/threadoff**) 由线程 ID (`TID`) 指定的线程的数据收集。|  
+    |选项|说明|
+    |------------|-----------------|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|启动 (**/threadon**) 或停止 (**/threadoff**) 由线程 ID (`TID`) 指定的线程的数据收集。|
 
-## <a name="end-the-profiling-session"></a>结束分析会话  
- 若要结束分析会话，请停止正在运行受检测组件的服务，然后调用 VSPerfCmd[/shutdown](../profiling/shutdown.md) 选项来关闭探查器和分析数据文件。  
+## <a name="end-the-profiling-session"></a>结束分析会话
+ 若要结束分析会话，请停止正在运行受检测组件的服务，然后调用 VSPerfCmd[/shutdown](../profiling/shutdown.md) 选项来关闭探查器和分析数据文件。
 
-#### <a name="to-end-a-profiling-session"></a>结束分析会话  
+#### <a name="to-end-a-profiling-session"></a>结束分析会话
 
-1.  从服务控制管理器停止服务。  
+1.  从服务控制管理器停止服务。
 
-2.  关闭探查器。 类型：  
+2.  关闭探查器。 类型：
 
-     **VSPerfCmd /shutdown**  
+     **VSPerfCmd /shutdown**
 
-3.  使用原始模块替换被检测模块。 如有必要，重新配置服务的“启动类型”。  
+3.  使用原始模块替换被检测模块。 如有必要，重新配置服务的“启动类型”。
 
-## <a name="see-also"></a>请参阅  
- [分析服务](../profiling/command-line-profiling-of-services.md)   
- [检测方法数据视图](../profiling/instrumentation-method-data-views.md)
+## <a name="see-also"></a>请参阅
+- [分析服务](../profiling/command-line-profiling-of-services.md)
+- [检测方法数据视图](../profiling/instrumentation-method-data-views.md)

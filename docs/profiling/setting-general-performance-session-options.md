@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cc99869276588da43a897e7b087f6e1251651b7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0395f58d9e4cf700784ee632dc860823cd50e11f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026770"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624953"
 ---
 # <a name="set-general-performance-session-options"></a>设置常规的性能会话选项
 
@@ -28,7 +28,7 @@ ms.locfileid: "55026770"
 |-|-|
 |**采样**。 采样方法每隔一定时间收集分析信息。 此方法对于查找处理器利用率问题很有用，并且大多数性能调查都建议以此方法开始。|- [使用采样收集性能统计信息](../profiling/collecting-performance-statistics-by-using-sampling.md)|
 |**检测**。 检测方法注入模块分析代码的副本中，这段代码记录分析运行期间模块中各个函数的每次进入、退出和函数调用。 此方法适用于收集有关代码中某个部分的详细计时信息，以及了解输入和输出操作对应用程序性能的影响。|- [使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|
-|**并发**。 并发方法收集阻止代码执行（如线程等待释放对应用程序资源的锁定访问时）的每个事件的数据。 此方法对分析多线程应用程序很有用。|- [收集线程和进程并发数据](../profiling/collecting-thread-and-process-concurrency-data.md)|
+|**并发**。 并发方法收集阻止代码执行（如线程等待释放对应用程序资源的锁定访问时）的每个事件的数据。 此方法可用于分析多线程应用程序。|- [收集线程和进程并发数据](../profiling/collecting-thread-and-process-concurrency-data.md)|
 
  可以使用采样或检测方法收集 .NET 内存数据。 在“.NET 内存分析”下选择数据的类型。
 

@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0be66a847628cc5968f4cb636066c937e3433c0e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 5734b9eb1b4307f7c32dcb8a170f7c6c571f46ca
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974862"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617556"
 ---
 # <a name="gpu-activity-graph"></a>GPU 活动关系图
-并发可视化工具中的 GPU 活动图显示系统上的 DirectX 活动级别，此活动级别通过一段时间内使用的 DirectX 引擎数来衡量。  此图不显示使用了哪些特定引擎。  如果引擎正在处理任意 GPU 工作，则将视为正在使用此引擎。  
-  
-## <a name="gpu-activity-graph-colors"></a>GPU 活动关系图颜色  
- 绿色表示当前进程使用的 DirectX 引擎数。  
-  
- 浅灰色表示系统上其他进程使用的 DirectX 引擎数。 若要减少其他进程使用的 DirectX 引擎数，请减少系统上运行的其他进程数。  
-  
- 白色表示系统上未使用的 DirectX 引擎的可用性。 如果可以找到更多利用机会，这些引擎就可以用于您的进程。 一些引擎只能用于特定种类的任务。  
-  
-## <a name="see-also"></a>请参阅  
- [使用率视图](../profiling/utilization-view.md)
+并发可视化工具中的 GPU 活动图显示系统上的 DirectX 活动级别，此活动级别通过一段时间内使用的 DirectX 引擎数来衡量。  此图不显示使用了哪些特定引擎。  如果引擎正在处理任意 GPU 工作，则将视为正在使用此引擎。
+
+## <a name="gpu-activity-graph-colors"></a>GPU 活动关系图颜色
+ 绿色表示当前进程使用的 DirectX 引擎数。
+
+ 浅灰色表示系统上其他进程使用的 DirectX 引擎数。 若要减少其他进程使用的 DirectX 引擎数，请减少系统上运行的其他进程数。
+
+ 白色表示系统上未使用的 DirectX 引擎的可用性。 如果可以找到更多利用机会，这些引擎就可以用于您的进程。 一些引擎只能用于特定种类的任务。
+
+## <a name="see-also"></a>请参阅
+- [使用率视图](../profiling/utilization-view.md)
