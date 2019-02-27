@@ -19,21 +19,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af69cd07087da19205ede3bc6576f87bd24279c9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: d3b2a3382fe9ac11f07d7fa9ebc5c1bc094cd526
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979018"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56719062"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>“停止正在进行的调试”对话框
-当调试器尝试停止调试会话，但停止会话需要一段时间时，会出现此对话框。 停止调试会话通常很快，而此对话框并不出现。 但是，有时从正在调试的所有进程中分离需要额外的时间。 如果停止会话需要的时间超过几秒钟（或者发生分离错误），则会出现此对话框。 如果此对话框经常出现，则可能是由于内部问题，您可能需要与产品支持服务联系。  
-  
- 可以等待进程分离，直到此对话框消失，或者使用“立即停止”按钮强制立即终止。  
-  
- **立即停止**  
- 单击此按钮可立即结束调试会话。 使用**立即停止**将终止，而不是分离正在调试的进程。 如果正在调试系统进程，使用“立即停止”终止这些进程可能产生不希望出现的意外结果。  
-  
-## <a name="see-also"></a>请参阅  
- [调试器安全](../debugger/debugger-security.md)   
- [分离程序](/previous-versions/visualstudio/visual-studio-2010/x1thkxez(v=vs.100))
+当调试器尝试停止调试会话，但停止会话需要一段时间时，会出现此对话框。 停止调试会话通常很快，而此对话框并不出现。 但是，有时从正在调试的所有进程中分离需要额外的时间。 如果停止会话需要的时间超过几秒钟（或者发生分离错误），则会出现此对话框。 如果此对话框经常出现，则可能是由于内部问题，您可能需要与产品支持服务联系。
+
+ 可以等待进程分离，直到此对话框消失，或者使用“立即停止”按钮强制立即终止。
+
+ **立即停止**单击此按钮可立即在调试会话结束。 使用**立即停止**将终止，而不是分离正在调试的进程。 如果正在调试系统进程，使用“立即停止”终止这些进程可能产生不希望出现的意外结果。
+
+## <a name="see-also"></a>请参阅
+- [调试器安全](../debugger/debugger-security.md)
+- [分离程序](/previous-versions/visualstudio/visual-studio-2010/x1thkxez(v=vs.100))

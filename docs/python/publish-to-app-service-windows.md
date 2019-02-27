@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d6ff3f4d13e2182c5187bc80489115b8c351c194
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5d2d878cb7f9597c0341f26fa41df8e4834a886
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935324"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713537"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>发布到 Windows 上的 Azure 应用服务
 
@@ -28,7 +28,7 @@ ms.locfileid: "55935324"
 Visual Studio 2017 与 Visual Studio 2015 的发布过程有所不同。 具体而言，Visual Studio 2015 自动执行某些步骤，包括创建 `web.config`，但这种自动化会限制长期的灵活性和控制。 Visual Studio 2017 需要更多手动步骤，但对 Python 环境提供更精确的控制。 此处对这两个选项均有介绍。
 
 > [!Note]
-> 有关 Visual Studio 2015 与 Visual Studio 2017 之间的变化的背景信息，请参阅博客文章 [Publish to Azure in Visual Studio 2017](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/)（在 Visual Studio 2017 中发布到 Azure）。
+> 有关 Visual Studio 2015 与 Visual Studio 2017 之间的变化的背景信息，请参阅博客文章 [Publish to Azure in Visual Studio 2017](https://devblogs.microsoft.com/python/publish-to-azure-in-vs-2017/)（在 Visual Studio 2017 中发布到 Azure）。
 
 ## <a name="prerequisites"></a>系统必备
 
