@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d61cfb8d61daaf570cb03865aa0568e670fb4919
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854104"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626617"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 任务
 生成 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序清单或本机清单。 本机清单通过为组件定义唯一标识，并标识组成该组件的所有程序集和文件来描述组件。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序清单通过指示应用程序的入口点并指定应用程序安全级别来扩展本机清单。
@@ -32,7 +32,7 @@ ms.locfileid: "55854104"
 ## <a name="parameters"></a>参数
 下表描述了 `GenerateApplicationManifest` 任务的参数。
 
-| 参数 | 说明​​ |
+| 参数 | 说明 |
 |---------------------------------| - |
 | `AssemblyName` | 可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Name` 字段。 如果未指定此参数，则从 `EntryPoint` 或 `InputManifest` 参数中推断名称。 如果无法创建任何名称，该任务将引发错误。 |
 | `AssemblyVersion` | 可选 `String` 参数。<br /><br /> 指定生成的清单的程序集标识的 `Version` 字段。 如果未指定此参数，请使用默认值“1.0.0.0”。 |
@@ -73,7 +73,7 @@ ms.locfileid: "55854104"
 
 ## <a name="item-metadata"></a>项元数据
 
-|元数据名称|说明​​|
+|元数据名称|说明|
 |-------------------|-----------------|
 |`DependencyType`|指示依赖项是随应用程序一起发布并安装还是一个必备组件。 此元数据对所有依赖项均有效，但不可用于文件。 可用于此元数据的值有：<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Install 是默认值。|
 |`AssemblyType`|指示依赖项是托管程序集还是本机程序集。 此元数据对所有依赖项均有效，但不可用于文件。 可用于此元数据的值有：<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` 是默认值，指示清单生成器将自动确定程序集类型。|
@@ -88,7 +88,7 @@ ms.locfileid: "55854104"
 
 > [!NOTE]
 > 在下面的示例中，为将重点放在清单生成方面上，预先生成了所有应用程序二进制文件。 此示例会生成一个完全可用的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。
-> 
+>
 > [!NOTE]
 > 有关在此示例的 `SignFile` 任务中使用的 `Thumbprint` 属性的详细信息，请参阅 [SignFile 任务](../msbuild/signfile-task.md)。
 
@@ -141,7 +141,7 @@ ms.locfileid: "55854104"
 
 > [!NOTE]
 > 在下面的示例中，为将重点放在清单生成方面上，预先生成了所有应用程序二进制文件。 此示例会生成一个完全可用的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。
-> 
+>
 > [!NOTE]
 > 有关在此示例的 `SignFile` 任务中使用的 `Thumbprint` 属性的详细信息，请参阅 [SignFile 任务](../msbuild/signfile-task.md)。
 
@@ -199,7 +199,7 @@ ms.locfileid: "55854104"
 
 > [!NOTE]
 > 在下面的示例中，为将重点放在清单生成方面上，预先生成了所有应用程序二进制文件。 此示例会生成一个完全可用的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署。
-> 
+>
 > [!NOTE]
 > 有关在此示例的 `SignFile` 任务中使用的 `Thumbprint` 属性的详细信息，请参阅 [SignFile 任务](../msbuild/signfile-task.md)。
 
@@ -350,7 +350,7 @@ ms.locfileid: "55854104"
 ```
 
 ## <a name="see-also"></a>请参阅
-[任务](../msbuild/msbuild-tasks.md)  
-[GenerateDeploymentManifest 任务](../msbuild/generatedeploymentmanifest-task.md)  
-[SignFile 任务](../msbuild/signfile-task.md)  
-[任务参考](../msbuild/msbuild-task-reference.md)
+- [任务](../msbuild/msbuild-tasks.md)
+- [GenerateDeploymentManifest 任务](../msbuild/generatedeploymentmanifest-task.md)
+- [SignFile 任务](../msbuild/signfile-task.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)

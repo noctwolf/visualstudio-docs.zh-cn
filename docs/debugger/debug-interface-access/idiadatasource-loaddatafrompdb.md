@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 021c3ec0115267f83dbc39ba9c7c34b262fa6614
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: fb34098f8d69d3c8618c406eff9666d52eace1f2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987374"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605596"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 此时将打开并准备程序数据库 (.pdb) 文件用作调试数据源。
@@ -31,13 +31,14 @@ HRESULT loadDataFromPdb (
 ```
 
 #### <a name="parameters"></a>参数
-pdbPath  
+pdbPath
+
 [in].Pdb 文件的路径。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。
 
-|值|说明​​|
+|“值”|说明|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|无法打开该文件，或确定该文件具有无效的格式。|
 |E_PDB_FORMAT|尝试访问具有过时的格式的文件。|
@@ -64,7 +65,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)  
-[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)  
-[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)
+- [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)
+- [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

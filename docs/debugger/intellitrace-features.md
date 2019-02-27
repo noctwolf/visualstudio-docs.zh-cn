@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ab4bf684fae4919869bb4c3ad170c5dee29eda9
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317765"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720180"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 功能 (C#，Visual Basic、 c + +)
 
@@ -56,7 +56,7 @@ Visual Studio Enterprise 版中提供 IntelliTrace，但 Visual Studio Professio
 
 默认情况下不启用此选项，但 IntelliTrace 可以随事件一起记录方法调用。 若要启用的方法调用转到集合**工具 > 选项 > IntelliTrace > 常规**，然后选择**IntelliTrace 事件和调用信息 （仅限托管）**。
 
-调用信息不是当前适用于.NET Core 和 ASP.NET Core 应用。 
+调用信息不是当前适用于.NET Core 和 ASP.NET Core 应用。
 
 这使你可以查看调用堆栈历史记录以及在代码中的调用间后退和前进。 IntelliTrace 记录的数据包括方法名、方法进入和退出点，以及部分参数值和返回值。
 

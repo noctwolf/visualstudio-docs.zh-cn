@@ -10,21 +10,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66264af71d93bb83c217360668a14c5cae2bf812
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9b71679e460b904138cb0bf922da9d157f0a91c9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54975941"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634339"
 ---
 # <a name="c-library-reference"></a>C++ 库参考
-此节包含并发可视化工具 SDK 的参考信息。  
-  
+
+此节包含并发可视化工具 SDK 的参考信息。
+
 > [!NOTE]
->  C++ 语言标准将保留以下划线 (`_`) 字符开头的标识符，供实现（例如库）使用。 请勿在代码中使用以下划线开头的名称。 其名称遵循此约定的代码元素的行为尚未得到保证，在将来发布的版本中可能会有更改。 出于这些原因，此文档中省略了此类代码元素。  
-  
-## <a name="in-this-section"></a>本节内容  
- [Concurrency 命名空间（并发可视化工具）](../profiling/concurrency-namespace-concurrency-visualizer.md)  
-  
-## <a name="see-also"></a>请参阅  
- [并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)
+> C++ 语言标准将保留以下划线 (`_`) 字符开头的标识符，供实现（例如库）使用。 请勿在代码中使用以下划线开头的名称。 其名称遵循此约定的代码元素的行为尚未得到保证，在将来发布的版本中可能会有更改。 出于这些原因，此文档中省略了此类代码元素。
+
+## <a name="in-this-section"></a>本节内容
+
+[Concurrency 命名空间（并发可视化工具）](../profiling/concurrency-namespace-concurrency-visualizer.md)
+
+## <a name="see-also"></a>请参阅
+
+- [并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e07ed209b0e2fee460bd43e2a588a8deb25eeb1
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 8cb678a05b9301982b4842d272c3032cafa46a87
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854065"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610120"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同选项生成相同的源文件
 在生成项目时，你经常使用不同的生成选项编译相同的组件。 例如，你可以使用符号信息创建调试版本，或者使用无符号信息但启用优化来创建发布版本。 或者，可以生成项目，在某个特定平台（例如，x86 或[!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]）上运行。 在所有这些情况下，大部分生成选项保持不变；只更改几个选项以控制生成配置。 利用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，你可以使用属性和条件来创建不同的生成配置。
@@ -58,7 +58,7 @@ ms.locfileid: "55854065"
   msbuild file.proj -property:Flavor=Debug
   ```
 
-  或
+  or
 
   ```cmd
   Msbuild file.proj -p:Flavor=Debug
@@ -72,7 +72,7 @@ ms.locfileid: "55854065"
   msbuild file.proj -p:Flavor=Debug;Platform=x86
   ```
 
-  或
+  or
 
   ```cmd
   msbuild file.proj -p:Flavor=Debug -p:Platform=x86
@@ -183,7 +183,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 ```
 
 ## <a name="see-also"></a>请参阅
-[MSBuild](../msbuild/msbuild.md)  
-[MSBuild 概念](../msbuild/msbuild-concepts.md)  
-[MSBuild 参考](../msbuild/msbuild-reference.md)  
-[Project 元素 (MSBuild)](../msbuild/project-element-msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [MSBuild 参考](../msbuild/msbuild-reference.md)
+- [Project 元素 (MSBuild)](../msbuild/project-element-msbuild.md)

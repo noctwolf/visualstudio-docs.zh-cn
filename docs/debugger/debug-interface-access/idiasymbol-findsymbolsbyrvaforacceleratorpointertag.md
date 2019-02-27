@@ -10,41 +10,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7765f4864208d4dbc494f2877efc0d87c695a9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 673ca8137244fed933df0be3fa0221115951a9c1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039952"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618102"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-提供相应的标记值，此方法返回在指定的相对虚拟地址此存根 （stub） 函数中包含的符号的枚举。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
-   DWORD             tagValue,  
-   DWORD             rva,  
-   IDiaEnumSymbols** ppResult);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `tagValue`  
- [in]为其找到 pointee 符号记录指针标记值。  
-  
- `rva`  
- [in]用于筛选的符号与 pointee 变量和指定的标记值相对应的 rva。  
-  
- `ppResult`  
- [out]一个指向`IDiaEnumSymbols`使用结果初始化接口指针。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
-  
-## <a name="remarks"></a>备注  
- 调用此方法仅对`IDiaSymbol`对应于加速器存根 （stub） 函数的接口。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+提供相应的标记值，此方法返回在指定的相对虚拟地址此存根 （stub） 函数中包含的符号的枚举。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT findSymbolsByRVAForAcceleratorPointerTag (
+   DWORD             tagValue,
+   DWORD             rva,
+   IDiaEnumSymbols** ppResult);
+```
+
+#### <a name="parameters"></a>参数
+ `tagValue`
+
+[in]为其找到 pointee 符号记录指针标记值。
+
+ `rva`
+
+[in]用于筛选的符号与 pointee 变量和指定的标记值相对应的 rva。
+
+ `ppResult`
+
+[out]一个指向`IDiaEnumSymbols`使用结果初始化接口指针。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
+
+## <a name="remarks"></a>备注
+ 调用此方法仅对`IDiaSymbol`对应于加速器存根 （stub） 函数的接口。
+
+## <a name="see-also"></a>请参阅
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

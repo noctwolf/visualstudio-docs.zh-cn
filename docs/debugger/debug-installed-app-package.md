@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 84d2296a467bb1fc2c3e1466b715578c94c7d0d8
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: b6a41ad863ee25e4294d5d0242b3113cd405fb00
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317924"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637342"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>在 Visual Studio 中调试已安装的 UWP 应用包
 
@@ -33,7 +33,7 @@ Visual Studio 可以调试 Windows 10 计算机以及 Xbox、HoloLens 和 IoT �
 
 >[!NOTE]
 >手机不支持 Visual Studio 调试已安装的 UWP 应用。
-   
+
 有关调试 UWP 应用的详细信息，请参阅博客文章上[调试已安装的应用包](https://devblogs.microsoft.com/devops/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/)并[构建通用 Windows 应用 (UWP)](https://devblogs.microsoft.com/visualstudio/universal-windows-apps-targeting-windows-10-anniversary-sdk/)。
 
 ## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>调试本地计算机上已安装的 UWP 应用

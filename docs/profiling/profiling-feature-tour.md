@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ae109558c19f408c2300830b64960d11fb57e39
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000830"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611914"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入门：首先了解分析工具
 
@@ -149,22 +149,22 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
 
 ![性能资源管理器工具](../profiling/media/prof-tour-performance-explorer.png "Performance Explorer")
 
-## <a name="which-tool-should-i-use"></a>应使用哪一种工具？  
+## <a name="which-tool-should-i-use"></a>应使用哪一种工具？
 
 下表列出了 Visual Studio 提供的不同工具以及适用的不同项目类型：
-  
-|性能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core| 
-|----------------------|---------------------|-------------|-------------|  
+
+|性能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core|
+|----------------------|---------------------|-------------|-------------|
 |[CPU 使用率](../profiling/cpu-usage.md)|是|是|是|
-|[内存使用率](../profiling/memory-usage.md)|是|是|是| 
-|[GPU 使用情况](../debugger/gpu-usage.md)|是|是|否| 
+|[内存使用率](../profiling/memory-usage.md)|是|是|是|
+|[GPU 使用情况](../debugger/gpu-usage.md)|是|是|否|
 |[应用程序时间线](../profiling/application-timeline.md)|是|是|否|
 |[性能提示](../profiling/perftips.md)|是|XAML 适用，HTML 不适用|是|
 |[性能资源管理器](../profiling/performance-explorer.md)|是|否|是|
 |[IntelliTrace](../debugger/intellitrace.md)|仅适用于带有 Visual Studio Enterprise 的 .NET|仅适用于带有 Visual Studio Enterprise 的 .NET|仅适用于带有 Visual Studio Enterprise 的 .NET|
 |[网络使用情况](../profiling/network-usage.md)|否|是|否|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|否|HTML 适用，XAML 不适用|否| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|否|HTML 适用，XAML 不适用|否|
 |[JavaScript 内存](../profiling/javascript-memory.md)|否|HTML 适用，XAML 不适用|否|
 
-## <a name="see-also"></a>请参阅  
- [在 Visual Studio 中进行调试](/visualstudio/debugger/debugger-feature-tour)
+## <a name="see-also"></a>请参阅
+- [在 Visual Studio 中进行调试](/visualstudio/debugger/debugger-feature-tour)

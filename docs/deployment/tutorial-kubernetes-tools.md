@@ -7,18 +7,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: c6a0ba1f44d9e6d9cc0dbcce03af2705e370cbb6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e819e4935a14d3902245432b5a5c843071af0fbf
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965454"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843229"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>开始使用 Visual Studio 的 Kubernetes 工具
 
 Visual Studio Kubernetes 工具可帮助简化面向 Kubernetes 的容器化应用程序的开发。 Visual Studio 可以自动创建支持 Kubernetes 部署，如 Dockerfile 和 Helm 图表所需的配置即代码文件。 可以调试实时 Azure Kubernetes 服务 (AKS) 群集使用 Azure 开发人员空间中的代码，也可以直接发布到 AKS 群集从 Visual Studio 内部。
 
-本教程介绍如何使用 Visual Studio 将 Kubernetes 支持添加到项目并将发布到 AKS。 如果您不感兴趣使用的主要[Azure 开发人员空格](http://aka.ms/get-azds)若要调试和测试项目在 AKS 中运行，可以跳转到[Azure 开发人员空格教程](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)改为。
+本教程介绍如何使用 Visual Studio 将 Kubernetes 支持添加到项目并将发布到 AKS。 如果您不感兴趣使用的主要[Azure 开发人员空格](https://aka.ms/get-azds)若要调试和测试项目在 AKS 中运行，可以跳转到[Azure 开发人员空格教程](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)改为。
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -78,7 +78,7 @@ Visual Studio Kubernetes 工具可帮助简化面向 Kubernetes 的容器化应�
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>发布到 Azure Kubernetes 服务 (AKS)
 
-与所有这些文件后，可用于 Visual Studio IDE 中编写和调试应用程序代码中，只需像往常一样。 此外可以使用[Azure 开发人员空格](http://aka.ms/get-azds)快速运行和调试你的代码在 AKS 群集中实时运行。 有关详细信息，请参阅[Azure 开发人员空格教程](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
+与所有这些文件后，可用于 Visual Studio IDE 中编写和调试应用程序代码中，只需像往常一样。 此外可以使用[Azure 开发人员空格](https://aka.ms/get-azds)快速运行和调试你的代码在 AKS 群集中实时运行。 有关详细信息，请参阅[Azure 开发人员空格教程](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
 
 一旦您具有运行所需的方式的代码可以直接从 Visual Studio 发布到 AKS 群集。
 
@@ -120,4 +120,4 @@ Visual Studio Kubernetes 工具可帮助简化面向 Kubernetes 的容器化应�
 
 通过阅读了解有关 Azure 上的 Kubernetes 开发的详细信息[AKS 文档](/azure/aks)。
 
-通过阅读了解有关 Azure 开发人员空间的详细信息[Azure 开发人员空间文档](http://aka.ms/get-azds)
+通过阅读了解有关 Azure 开发人员空间的详细信息[Azure 开发人员空间文档](https://aka.ms/get-azds)

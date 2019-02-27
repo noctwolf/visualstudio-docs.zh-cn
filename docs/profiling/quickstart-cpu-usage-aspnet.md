@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d45cf1e1ee8cbb12af9f10733db9aed06e252ece
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996202"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634053"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>快速入门：在 Visual Studio 中分析 CPU 使用率数据 (ASP.NET)
 
@@ -87,8 +87,8 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -153,8 +153,8 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>步骤 1：收集分析数据 
-  
+##  <a name="step-1-collect-profiling-data"></a>步骤 1：收集分析数据
+
 1.  首先，在应用中在 `Simple` 构造函数的该代码行处设置一个断点：
 
     `for (int i = 0; i < 200; i++)`
@@ -167,7 +167,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 
     > [!TIP]
     > 通过设置两个断点，可将数据收集限制到想要分析的代码部分。
-  
+
 1.  已显示“诊断工具”窗口，除非已将其关闭。 若要再次显示该窗口，请依次单击“调试” > “Windows” > “显示诊断工具”。
 
 1.  依次单击“调试” > “启动调试”或单击工具栏上的“启动”或按 F5。
@@ -189,7 +189,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
      现在将拥有应用程序特定于在两个断点间运行的代码区域的性能数据。
 
      探查器开始准备线程数据。 等待其完成。
-  
+
      CPU 使用率工具在“CPU 使用率”选项卡中显示报表。
 
      现在可以开始分析数据。
@@ -207,7 +207,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 
 2. 在函数列表中，双击 `MyProfilingApp_MVC.Models.ServerClass::GetNumber` 函数。
 
-    双击该函数时，将在左侧窗格中打开“调用方/被调用方”视图。 
+    双击该函数时，将在左侧窗格中打开“调用方/被调用方”视图。
 
     ![诊断工具“调用方和被调用方”视图](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
@@ -226,7 +226,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 - [分析 CPU 使用情况](../profiling/cpu-usage.md)，更深入地了解 CPU 使用率工具。
 - 在不附加调试程序的情况下，或通过将正在运行的应用作为目标来分析 CPU 使用率。有关详细信息，请参阅[在使用或不使用调试程序的情况下运行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[在不使用调试程序的情况下收集分析数据](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
 
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
 
- [使用 Visual Studio 分析](../profiling/index.md)  
- [首先了解分析工具](../profiling/profiling-feature-tour.md)
+- [使用 Visual Studio 分析](../profiling/index.md)
+- [首先了解分析工具](../profiling/profiling-feature-tour.md)

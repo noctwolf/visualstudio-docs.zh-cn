@@ -6,15 +6,13 @@ manager: jillfra
 ms.date: 06/27/2018
 ms.topic: conceptual
 description: 了解管理员如何在管理员门户中查找各个订阅者或群组。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 817ca49dc8cb1dae9f37e8f7d4267ac3a3699bb7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fe77781c67e773086f07ac39130c472f28acd71f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916959"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842307"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中搜索和筛选订阅者
 

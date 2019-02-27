@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16cf15e4c2f201c76fba72f547b939ce883ad2d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020875"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610601"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
-下表列出了在 Visual Studio 项目文件中定义的或者在 MSBuild 提供的 .targets 文件中包括的经常使用的属性。  
-  
- Visual Studio 中的项目文件（.csproj、.vbproj、vcxproj 等）包含你使用 IDE 生成项目时运行的 MSBuild XML 代码。 项目通常会导入一个或多个 .targets 文件以定义它们的生成进程。 有关详细信息，请参阅 [MSBuild .Targets 文件](../msbuild/msbuild-dot-targets-files.md)。  
-  
-## <a name="list-of-common-properties-and-parameters"></a>通用属性和参数的列表  
-  
+下表列出了在 Visual Studio 项目文件中定义的或者在 MSBuild 提供的 .targets 文件中包括的经常使用的属性。
+
+ Visual Studio 中的项目文件（.csproj、.vbproj、vcxproj 等）包含你使用 IDE 生成项目时运行的 MSBuild XML 代码。 项目通常会导入一个或多个 .targets 文件以定义它们的生成进程。 有关详细信息，请参阅 [MSBuild .Targets 文件](../msbuild/msbuild-dot-targets-files.md)。
+
+## <a name="list-of-common-properties-and-parameters"></a>通用属性和参数的列表
+
 | 属性或参数名 | 说明 |
 |------------------------------------| - |
 | AdditionalLibPaths | 指定其他文件夹，编译器将在这些文件夹中查找引用程序集。 |
@@ -50,7 +50,7 @@ ms.locfileid: "55020875"
 | CleanFile | 将用作“清理缓存”的文件的名称。 清理缓存是要在清理操作期间删除的已生成文件的列表。 该文件由生成过程放在中间输出路径中。<br /><br /> 此属性只指定没有路径信息的文件名。 |
 | CodePage | 指定要用于编译中所有源代码文件的代码页。 此属性等效于 `/codepage` 编译器开关。 |
 | CompilerResponseFile | 可以传递给编译器任务的可选响应文件。 |
-| 配置 | 正在生成的配置，为“调试”或“发布”。 |
+| Configuration | 正在生成的配置，为“调试”或“发布”。 |
 | CscToolPath | [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 编译器 csc.exe 的路径。 |
 | CustomBeforeMicrosoftCommonTargets | 要在公用目标导入前自动导入的项目文件或目标文件的名称。 |
 | DebugSymbols | 一个布尔值，指示是否由生成来生成符号。<br /><br /> 在命令行中设置 -p:DebugSymbols=false 会禁止生成程序数据库 (.pdb) 符号文件。 |
@@ -128,6 +128,6 @@ ms.locfileid: "55020875"
 | WarningsNotAsErrors | 指定不被视为错误的警告的列表。 此参数等效于 `/warnaserror` 编译器开关。 |
 | Win32Manifest | 应嵌入最终程序集中的清单文件的名称。 此参数等效于 `/win32Manifest` 编译器开关。 |
 | Win32Resource | 要嵌入最终程序集中的 Win32 资源的文件名。 此参数等效于 `/win32resource` 编译器开关。 |
-  
-## <a name="see-also"></a>请参阅  
- [常用的 MSBuild 项目项](../msbuild/common-msbuild-project-items.md)
+
+## <a name="see-also"></a>请参阅
+- [常用的 MSBuild 项目项](../msbuild/common-msbuild-project-items.md)

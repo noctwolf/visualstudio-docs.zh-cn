@@ -8,27 +8,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d93e4cee3fb4969b928caa3ae76112708469f1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ec67013b41a5ec8876866044355534c42bfe2ee0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54997229"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720726"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
-将当前帧的剩余部分捕获到图形日志文件。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-void CaptureCurrentFrame();  
-```  
-  
-## <a name="remarks"></a>备注  
- 如果另一个捕获当前正在进行中（例如，通过 `BeginCapture` 函数启动的捕获），则将完成该捕获并将其记录到图形日志以作为不同的帧。 紧跟着，图形诊断开始捕获当前帧的剩余部分，此部分也记录为不同的帧。 通过调用 present 来标记当前帧的结尾。  
-  
- 若要捕获帧，您必须准备应用以捕获并记录图形信息-也就是说，您必须具有名为[Init](init.md)的实例通过`VsgDbg`类，然后调用`CaptureCurrentFrame`。  
-  
-## <a name="see-also"></a>请参阅  
- [Init](init.md)   
- [BeginCapture](begincapture.md)
+将当前帧的剩余部分捕获到图形日志文件。
+
+## <a name="syntax"></a>语法
+
+```C++
+void CaptureCurrentFrame();
+```
+
+## <a name="remarks"></a>备注
+ 如果另一个捕获当前正在进行中（例如，通过 `BeginCapture` 函数启动的捕获），则将完成该捕获并将其记录到图形日志以作为不同的帧。 紧跟着，图形诊断开始捕获当前帧的剩余部分，此部分也记录为不同的帧。 通过调用 present 来标记当前帧的结尾。
+
+ 若要捕获帧，您必须准备应用以捕获并记录图形信息-也就是说，您必须具有名为[Init](init.md)的实例通过`VsgDbg`类，然后调用`CaptureCurrentFrame`。
+
+## <a name="see-also"></a>请参阅
+- [Init](init.md)
+- [BeginCapture](begincapture.md)

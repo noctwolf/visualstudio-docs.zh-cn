@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aea567014e32930e25960b069d2b755e2c0212b2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b3a8b210c91019b2b7285288c7826f4983dfed6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923050"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627319"
 ---
 # <a name="msbuild-task"></a>MSBuild 任务
-从另一 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目生成 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目。  
+从另一 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目生成 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目。
 
-## <a name="parameters"></a>参数  
- 下表描述了 `MSBuild` 任务的参数。  
+## <a name="parameters"></a>参数
+ 下表描述了 `MSBuild` 任务的参数。
 
 
 | 参数 | 说明 |
@@ -49,144 +49,144 @@ ms.locfileid: "54923050"
 | `UnloadProjectsOnCompletion` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则在操作完成后，将立即卸载项目。 |
 | `UseResultsCache` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则将返回缓存的结果（如果存在）。<br /><br />  如果运行 MSBuild 任务，其结果将被缓存在作用域中 <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> 作为生成项的列表 |
 
-## <a name="remarks"></a>备注  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
+## <a name="remarks"></a>备注
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 
- 与使用 [Exec 任务](../msbuild/exec-task.md)启动 MSBuild.exe 不同，此任务使用相同的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 进程来生成子项目。 可跳过的已生成目标的列表在父级版本和子级版本之间共享。 此外，此任务速度更快，因为没有创建新的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 进程。  
+ 与使用 [Exec 任务](../msbuild/exec-task.md)启动 MSBuild.exe 不同，此任务使用相同的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 进程来生成子项目。 可跳过的已生成目标的列表在父级版本和子级版本之间共享。 此外，此任务速度更快，因为没有创建新的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 进程。
 
- 此任务不仅可处理项目文件，还可处理解决方案文件。  
+ 此任务不仅可处理项目文件，还可处理解决方案文件。
 
- 必须使用配置文件使 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 使项目在同一时间生成所需的任何配置成为可配置的状态，即使配置中包含远程基础结构（例如端口、协议、超时、重试等）也是如此。 如果可能，应能够在 `MSBuild` 任务上将配置项指定为任务参数。  
+ 必须使用配置文件使 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 使项目在同一时间生成所需的任何配置成为可配置的状态，即使配置中包含远程基础结构（例如端口、协议、超时、重试等）也是如此。 如果可能，应能够在 `MSBuild` 任务上将配置项指定为任务参数。
 
- 从 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 起，解决方案项目现在展示来自其生成的所有子项目的 TargetOutputs。  
+ 从 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 起，解决方案项目现在展示来自其生成的所有子项目的 TargetOutputs。
 
-## <a name="pass-properties-to-projects"></a>将属性传递给项目  
- 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 之前的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 版本中，将不同的属性集传递到 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项中列出的不同项目具有一定的挑战性。 如果使用了 [MSBuild 任务](../msbuild/msbuild-task.md) 的属性特性，那么其设置则应用于正在生成的所有项目，除非批处理 [MSBuild 任务](../msbuild/msbuild-task.md)，并按条件为项列表中的每个项目提供不同的属性。  
+## <a name="pass-properties-to-projects"></a>将属性传递给项目
+ 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 之前的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 版本中，将不同的属性集传递到 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项中列出的不同项目具有一定的挑战性。 如果使用了 [MSBuild 任务](../msbuild/msbuild-task.md) 的属性特性，那么其设置则应用于正在生成的所有项目，除非批处理 [MSBuild 任务](../msbuild/msbuild-task.md)，并按条件为项列表中的每个项目提供不同的属性。
 
- 但是，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 提供两个新的保留元数据项，即 Properties 和 AdditionalProperties，让你能够灵活地使用 [MSBuild 任务](../msbuild/msbuild-task.md)为正在生成的不同项目传递不同的属性。  
-
-> [!NOTE]
->  这些新的元数据项仅适用于在 [MSBuild 任务](../msbuild/msbuild-task.md)的项目属性中传递的项。  
-
-## <a name="multi-processor-build-benefits"></a>多处理器生成的优点  
- 在多处理器系统上并行生成项目时，则会体验到使用此新元数据的其中一个主要的好处。 通过元数据可将所有项目合并到单个 [MSBuild 任务](../msbuild/msbuild-task.md)调用中，而无需执行任何批处理或条件性 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务。 仅调用单个 [MSBuild 任务](../msbuild/msbuild-task.md) 时，将并行生成项目属性中列出的所有项目。 （但仅适用于 `BuildInParallel=true` 属性存在于 [MSBuild 任务](../msbuild/msbuild-task.md)中时。）有关详细信息，请参阅[并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。  
-
-## <a name="properties-metadata"></a>Properties 元数据  
- 常见的方案是使用 [MSBuild 任务](../msbuild/msbuild-task.md)生成多个解决方案文件时，仅使用不同的生成配置。 你可能希望使用调试配置生成解决方案 a1，使用发布配置生成解决方案 a2。 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 中，此项目文件将如下所示：  
+ 但是，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 提供两个新的保留元数据项，即 Properties 和 AdditionalProperties，让你能够灵活地使用 [MSBuild 任务](../msbuild/msbuild-task.md)为正在生成的不同项目传递不同的属性。
 
 > [!NOTE]
->  在以下示例中，“...”表示其他解决方案文件。  
+>  这些新的元数据项仅适用于在 [MSBuild 任务](../msbuild/msbuild-task.md)的项目属性中传递的项。
 
-### <a name="aproj"></a>a.proj  
+## <a name="multi-processor-build-benefits"></a>多处理器生成的优点
+ 在多处理器系统上并行生成项目时，则会体验到使用此新元数据的其中一个主要的好处。 通过元数据可将所有项目合并到单个 [MSBuild 任务](../msbuild/msbuild-task.md)调用中，而无需执行任何批处理或条件性 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务。 仅调用单个 [MSBuild 任务](../msbuild/msbuild-task.md) 时，将并行生成项目属性中列出的所有项目。 （但仅适用于 `BuildInParallel=true` 属性存在于 [MSBuild 任务](../msbuild/msbuild-task.md)中时。）有关详细信息，请参阅[并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="Build">  
-        <MSBuild Projects="a1.sln..." Properties="Configuration=Debug"/>  
-        <MSBuild Projects="a2.sln" Properties="Configuration=Release"/>  
-    </Target>  
-</Project>  
-```  
+## <a name="properties-metadata"></a>Properties 元数据
+ 常见的方案是使用 [MSBuild 任务](../msbuild/msbuild-task.md)生成多个解决方案文件时，仅使用不同的生成配置。 你可能希望使用调试配置生成解决方案 a1，使用发布配置生成解决方案 a2。 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 中，此项目文件将如下所示：
 
- 但是，可使用属性元数据简化此操作，以使用单个 [MSBuild 任务](../msbuild/msbuild-task.md)，如下所示：  
+> [!NOTE]
+>  在以下示例中，“...”表示其他解决方案文件。
 
-### <a name="aproj"></a>a.proj  
+### <a name="aproj"></a>a.proj
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln...">  
-            <Properties>Configuration=Debug</Properties>  
-        </ProjectToBuild>  
-        <ProjectToBuild Include="a2.sln">  
-            <Properties>Configuration=Release</Properties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"/>  
-    </Target>  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="Build">
+        <MSBuild Projects="a1.sln..." Properties="Configuration=Debug"/>
+        <MSBuild Projects="a2.sln" Properties="Configuration=Release"/>
+    </Target>
+</Project>
+```
 
- \- 或 -  
+ 但是，可使用属性元数据简化此操作，以使用单个 [MSBuild 任务](../msbuild/msbuild-task.md)，如下所示：
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln..."/>  
-        <ProjectToBuild Include="a2.sln">  
-            <Properties>Configuration=Release</Properties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"   
-          Properties="Configuration=Debug"/>  
-    </Target>  
-</Project>  
-```  
+### <a name="aproj"></a>a.proj
 
-## <a name="additionalproperties-metadata"></a>AdditionalProperties 元数据  
- 请考虑以下方案：使用 [MSBuild 任务](../msbuild/msbuild-task.md)生成两个解决方案文件，二者均使用发布配置，但其中一个使用 x86 体系结构，另一个使用 ia64 体系结构。 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 中，需要创建 [MSBuild 任务](../msbuild/msbuild-task.md) 的多个实例：一个使用具有 x86 体系结构的发布配置生成项目，另一个使用具有 ia64 体系结构的发布配置。 项目文件将如下所示：  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ProjectToBuild Include="a1.sln...">
+            <Properties>Configuration=Debug</Properties>
+        </ProjectToBuild>
+        <ProjectToBuild Include="a2.sln">
+            <Properties>Configuration=Release</Properties>
+        </ProjectToBuild>
+    </ItemGroup>
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"/>
+    </Target>
+</Project>
+```
 
-### <a name="aproj"></a>a.proj  
+ \- 或 -
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="Build">  
-        <MSBuild Projects="a1.sln..." Properties="Configuration=Release;   
-          Architecture=x86"/>  
-        <MSBuild Projects="a2.sln" Properties="Configuration=Release;   
-          Architecture=ia64"/>  
-    </Target>  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ProjectToBuild Include="a1.sln..."/>
+        <ProjectToBuild Include="a2.sln">
+            <Properties>Configuration=Release</Properties>
+        </ProjectToBuild>
+    </ItemGroup>
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"
+          Properties="Configuration=Debug"/>
+    </Target>
+</Project>
+```
 
- 通过使用 AdditionalProperties 元数据简化此操作，以使用单个 [MSBuild 任务](../msbuild/msbuild-task.md)，如下所示：  
+## <a name="additionalproperties-metadata"></a>AdditionalProperties 元数据
+ 请考虑以下方案：使用 [MSBuild 任务](../msbuild/msbuild-task.md)生成两个解决方案文件，二者均使用发布配置，但其中一个使用 x86 体系结构，另一个使用 ia64 体系结构。 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 中，需要创建 [MSBuild 任务](../msbuild/msbuild-task.md) 的多个实例：一个使用具有 x86 体系结构的发布配置生成项目，另一个使用具有 ia64 体系结构的发布配置。 项目文件将如下所示：
 
-### <a name="aproj"></a>a.proj  
+### <a name="aproj"></a>a.proj
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ItemGroup>  
-        <ProjectToBuild Include="a1.sln...">  
-            <AdditionalProperties>Architecture=x86  
-              </AdditionalProperties>  
-        </ProjectToBuild>  
-        <ProjectToBuild Include="a2.sln">  
-            <AdditionalProperties>Architecture=ia64  
-              </AdditionalProperties>  
-        </ProjectToBuild>  
-    </ItemGroup>  
-    <Target Name="Build">  
-        <MSBuild Projects="@(ProjectToBuild)"   
-          Properties="Configuration=Release"/>  
-    </Target>  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="Build">
+        <MSBuild Projects="a1.sln..." Properties="Configuration=Release;
+          Architecture=x86"/>
+        <MSBuild Projects="a2.sln" Properties="Configuration=Release;
+          Architecture=ia64"/>
+    </Target>
+</Project>
+```
 
-## <a name="example"></a>示例  
- 以下示例使用 `MSBuild` 任务来生成由 `ProjectReferences` 项集合指定的项目。 生成的目标输出存储在 `AssembliesBuiltByChildProjects` 项集合中。  
+ 通过使用 AdditionalProperties 元数据简化此操作，以使用单个 [MSBuild 任务](../msbuild/msbuild-task.md)，如下所示：
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+### <a name="aproj"></a>a.proj
 
-    <ItemGroup>  
-        <ProjectReferences Include="*.*proj" />  
-    </ItemGroup>  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <ProjectToBuild Include="a1.sln...">
+            <AdditionalProperties>Architecture=x86
+              </AdditionalProperties>
+        </ProjectToBuild>
+        <ProjectToBuild Include="a2.sln">
+            <AdditionalProperties>Architecture=ia64
+              </AdditionalProperties>
+        </ProjectToBuild>
+    </ItemGroup>
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"
+          Properties="Configuration=Release"/>
+    </Target>
+</Project>
+```
 
-    <Target Name="BuildOtherProjects">  
-        <MSBuild  
-            Projects="@(ProjectReferences)"  
-            Targets="Build">  
-            <Output  
-                TaskParameter="TargetOutputs"  
-                ItemName="AssembliesBuiltByChildProjects" />  
-        </MSBuild>  
-    </Target>  
+## <a name="example"></a>示例
+ 以下示例使用 `MSBuild` 任务来生成由 `ProjectReferences` 项集合指定的项目。 生成的目标输出存储在 `AssembliesBuiltByChildProjects` 项集合中。
 
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-## <a name="see-also"></a>请参阅  
- [任务](../msbuild/msbuild-tasks.md)   
- [任务参考](../msbuild/msbuild-task-reference.md)
+    <ItemGroup>
+        <ProjectReferences Include="*.*proj" />
+    </ItemGroup>
+
+    <Target Name="BuildOtherProjects">
+        <MSBuild
+            Projects="@(ProjectReferences)"
+            Targets="Build">
+            <Output
+                TaskParameter="TargetOutputs"
+                ItemName="AssembliesBuiltByChildProjects" />
+        </MSBuild>
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>请参阅
+- [任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)

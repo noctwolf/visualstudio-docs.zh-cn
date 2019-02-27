@@ -11,44 +11,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c83c0f09fbf7e6d595cbdd3e40c6add2cf7e8ae
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 584298725f2a57962ecd52c99fd1a745610ec336
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54927549"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681252"
 ---
 # <a name="menu-commands"></a>菜单命令
-在本部分中的帮助主题列出 Spy + + 菜单上可用的命令。  
-  
-## <a name="in-this-section"></a>本节内容  
- [“监视”菜单命令](../debugger/spy-menu-commands.md)  
- 描述可从每个命令**Spy**菜单。  
-  
- [“树”菜单命令](../debugger/tree-menu-commands.md)  
- 描述可从每个命令**树**菜单。  
-  
- [“搜索”菜单命令](../debugger/search-menu-commands.md)  
- 描述可从每个命令**搜索**菜单。  
-  
- [“视图”菜单命令](../debugger/view-menu-commands.md)  
- 描述可从每个命令**视图**菜单。  
-  
- [“消息”菜单命令](../debugger/messages-menu-commands.md)  
- 描述可从每个命令**消息**菜单。  
-  
- [“窗口”菜单命令](../debugger/window-menu-commands.md)  
- 描述可从每个命令**窗口**菜单。  
-  
- [“帮助”菜单命令](../debugger/help-menu-commands.md)  
- 描述可从每个命令**帮助**菜单。  
-  
-## <a name="related-sections"></a>相关章节  
- [使用 Spy++](../debugger/using-spy-increment.md)  
- 介绍 Spy + + 工具，并说明如何使用它。  
-  
- [Spy++ 视图](../debugger/spy-increment-views.md)  
- 介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
-  
- [Spy++ 参考](../debugger/spy-increment-reference.md)  
- 包括本部分中，以及各节描述每个 Spy + + 对话框。
+在本部分中的帮助主题列出 Spy + + 菜单上可用的命令。
+
+## <a name="in-this-section"></a>本节内容
+ [监视菜单命令](../debugger/spy-menu-commands.md)描述每个命令从可用**Spy**菜单。
+
+ [树的菜单命令](../debugger/tree-menu-commands.md)描述每个命令从可用**树**菜单。
+
+ [搜索菜单命令](../debugger/search-menu-commands.md)描述每个命令从可用**搜索**菜单。
+
+ [查看菜单命令](../debugger/view-menu-commands.md)描述每个命令从可用**视图**菜单。
+
+ [消息的菜单命令](../debugger/messages-menu-commands.md)描述每个命令从可用**消息**菜单。
+
+ [窗口菜单命令](../debugger/window-menu-commands.md)描述每个命令从可用**窗口**菜单。
+
+ [帮助菜单命令](../debugger/help-menu-commands.md)描述每个命令从可用**帮助**菜单。
+
+## <a name="related-sections"></a>相关章节
+ [使用 Spy + +](../debugger/using-spy-increment.md)介绍 Spy + + 工具，并说明如何使用它。
+
+ [Spy + + 视图](../debugger/spy-increment-views.md)介绍的 windows、 消息、 进程和线程的 Spy + + 树视图。
+
+ [Spy + + 参考](../debugger/spy-increment-reference.md)包括本部分中，以及各节描述每个 Spy + + 对话框。

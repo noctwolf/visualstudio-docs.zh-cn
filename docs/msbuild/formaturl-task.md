@@ -16,27 +16,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02d7edcf74399e6d511a50008ef7ce86e822bc14
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e6c8bc23a843112a234dad0dfc718937bebfe5aa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979304"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629880"
 ---
 # <a name="formaturl-task"></a>FormatUrl 任务
-将 URL 转换为正确的 URL 格式。  
-  
-## <a name="parameters"></a>参数  
- 下表描述了 `FormatUrl` 任务的参数。  
-  
-|参数|说明|  
-|---------------|-----------------|  
-|`InputUrl`|可选 `String` 参数。<br /><br /> 指定要格式化的 URL。|  
-|`OutputUrl`|可选 `String` 输出参数。<br /><br /> 指定已格式化的 URL。|  
-  
-## <a name="remarks"></a>备注  
- 除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
-  
-## <a name="see-also"></a>请参阅  
- [任务](../msbuild/msbuild-tasks.md)   
- [任务参考](../msbuild/msbuild-task-reference.md)
+将 URL 转换为正确的 URL 格式。
+
+## <a name="parameters"></a>参数
+ 下表描述了 `FormatUrl` 任务的参数。
+
+|参数|说明|
+|---------------|-----------------|
+|`InputUrl`|可选 `String` 参数。<br /><br /> 指定要格式化的 URL。|
+|`OutputUrl`|可选 `String` 输出参数。<br /><br /> 指定已格式化的 URL。|
+
+## <a name="remarks"></a>备注
+ 除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
+
+## <a name="see-also"></a>请参阅
+- [任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)

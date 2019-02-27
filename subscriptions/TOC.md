@@ -81,7 +81,7 @@
 #### [管理 MPN 订阅](manage-mpn-subscriptions.md)
 #### [启动 Microsoft](program-startups.md)
 ## 资源
-### [Visual Studio 许可白皮书](http://aka.ms/vslicensing)
+### [Visual Studio 许可白皮书](https://aka.ms/vslicensing)
 ### [比较订阅选项和定价](https://visualstudio.microsoft.com/vs/pricing)
 ### [比较 Visual Studio IDE 功能](https://visualstudio.microsoft.com/vs/compare)
 ### [Visual Studio 管理和订阅支持](https://visualstudio.microsoft.com/support/support-overview-vs)

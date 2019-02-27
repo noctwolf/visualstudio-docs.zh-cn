@@ -12,44 +12,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bee821a1ecd0179d3ea64e3d1e1f7efca92d64f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 35e5719d285e9e99e5f7429685fa04a2c6d7f3ab
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928966"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646390"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
-检索的校验和类型。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_checksumType (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回校验和类型。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 校验和类型是可以映射到校验和算法的值。 例如，在标准的 PDB 文件格式可以通常具有下列值之一：  
-  
-|校验和类型|CryptoAPI 标签|说明​​|  
-|-------------------|---------------------|-----------------|  
-|0|\<none>|不存在的校验和。|  
-|1|`CALG_MD5`|使用 MD5 哈希算法生成的校验和。|  
-|2|`CALG_SHA1`|使用 SHA1 哈希算法生成的校验和。|  
-  
- `CryptoAPI`标签是从`ALG_ID`枚举。 哈希算法的详细信息，请查阅`CryptoAPI`部分中的 Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)]。  
-  
- 若要获取的源文件的实际校验和字节，请调用[idiasourcefile:: Get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)方法。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)
+检索的校验和类型。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_checksumType ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回校验和类型。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="remarks"></a>备注
+ 校验和类型是可以映射到校验和算法的值。 例如，在标准的 PDB 文件格式可以通常具有下列值之一：
+
+|校验和类型|CryptoAPI 标签|说明|
+|-------------------|---------------------|-----------------|
+|0|\<none>|不存在的校验和。|
+|1|`CALG_MD5`|使用 MD5 哈希算法生成的校验和。|
+|2|`CALG_SHA1`|使用 SHA1 哈希算法生成的校验和。|
+
+ `CryptoAPI`标签是从`ALG_ID`枚举。 哈希算法的详细信息，请查阅`CryptoAPI`部分中的 Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)]。
+
+ 若要获取的源文件的实际校验和字节，请调用[idiasourcefile:: Get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)方法。
+
+## <a name="see-also"></a>请参阅
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)

@@ -1,5 +1,5 @@
 ---
-title: 错误：站点使用 IP 地址 |Microsoft Docs
+title: 错误： 站点使用 IP 地址 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,25 +16,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8aa34553f4fb6d4524357f830dbbeabe3296354
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 57790fce73c96a37c678f32cb76e332c28f73673
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54981111"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696500"
 ---
 # <a name="error-site-uses-ip-address"></a>错误：站点使用 IP 地址
-调试器尝试自动附加到正在使用 IP 地址的 Web 应用程序时，会发生该错误。 如果在 IIS 中将“网站标识”更改为“使用特定 IP 地址”，会发生这种情况。  
-  
- 要使自动附加能够工作，需要创建具有特定 IP 地址而不只是计算机名称的项目。 否则，调试器会将计算机名称更改为 localhost，而这会导致无法将调试谓词发送到 IIS。  
-  
-### <a name="to-correct-this-error"></a>更正此错误  
-  
-1.  改用手动附加（从“调试”菜单中选择“附加到进程”）。  
-  
-     - 或 -  
-  
-2.  更改“IIS 网站标识”设置。  
-  
-## <a name="see-also"></a>请参阅  
- [调试 Web 应用程序：错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+调试器尝试自动附加到正在使用 IP 地址的 Web 应用程序时，会发生该错误。 如果在 IIS 中将“网站标识”更改为“使用特定 IP 地址”，会发生这种情况。
+
+ 要使自动附加能够工作，需要创建具有特定 IP 地址而不只是计算机名称的项目。 否则，调试器会将计算机名称更改为 localhost，而这会导致无法将调试谓词发送到 IIS。
+
+### <a name="to-correct-this-error"></a>更正此错误
+
+1.  改用手动附加（从“调试”菜单中选择“附加到进程”）。
+
+     - 或 -
+
+2.  更改“IIS 网站标识”设置。
+
+## <a name="see-also"></a>请参阅
+- [调试 Web 应用程序：错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

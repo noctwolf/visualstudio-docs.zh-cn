@@ -11,30 +11,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33c03a15aa0512db613b1f1a2c85696988e8ba98
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bf64c2fae940de74978fb2d6c10ce380ed3958d5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54930028"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630179"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Windows 事件跟踪 (ETW) 报告
-Windows 事件跟踪 (ETW) 报告列出 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的性能会话中所录制的 ETW 事件。 ETW 数据收集在二进制 (.etl) 文件中。  
-  
+Windows 事件跟踪 (ETW) 报告列出 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的性能会话中所录制的 ETW 事件。 ETW 数据收集在二进制 (.etl) 文件中。
+
 > [!NOTE]
->  不能在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 接口中显示 ETW 报告。  
-  
-- 要了解如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 接口中的分析工具收集 ETW，请参阅[如何：收集 Windows 事件跟踪 (ETW) 数据](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)。  
-  
-- 有关如何使用 [VSPerfCmd](../profiling/vsperfcmd.md) 命令行工具收集 ETW 数据的信息，请参阅[事件](../profiling/events-vsperfcmd.md)。  
-  
-- 使用 VSReport/Summary:ETW 命令生成 ETW 报告。 有关详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。  
-  
-|列|说明|  
-|------------|-----------------|  
-|**时间戳**|标识事件发生的时间。|  
-|**进程 ID**|标识生成事件的进程。|  
-|**线程 ID**|标识生成事件的线程。|  
-|**说明**|标识事件提供程序。|  
-|**Type**|标识事件类型。|  
+>  不能在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 接口中显示 ETW 报告。
+
+- 要了解如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 接口中的分析工具收集 ETW，请参阅[如何：收集 Windows 事件跟踪 (ETW) 数据](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)。
+
+- 有关如何使用 [VSPerfCmd](../profiling/vsperfcmd.md) 命令行工具收集 ETW 数据的信息，请参阅[事件](../profiling/events-vsperfcmd.md)。
+
+- 使用 VSReport/Summary:ETW 命令生成 ETW 报告。 有关详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。
+
+|列|说明|
+|------------|-----------------|
+|**时间戳**|标识事件发生的时间。|
+|**进程 ID**|标识生成事件的进程。|
+|**线程 ID**|标识生成事件的线程。|
+|**说明**|标识事件提供程序。|
+|**Type**|标识事件类型。|
 |**属性**|事件的属性。 每个事件都是一个括在括号内的以逗号分隔的名称/值对。|

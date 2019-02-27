@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: c9bdc4afb0d5f2b9f9f4ae0385b63372644929f8
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 011e51e126fc70f12be7dd94c05b27df17e77adf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690237"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714616"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教程：在同一个调试会话中调试 C# 和 C++
 
-Visual Studio 允许你在调试会话中启用多个调试器类型，这名为混合模式调试。 在本教程中，将了解如何在单一调试会话中调试托管代码和本机代码。 
+Visual Studio 允许你在调试会话中启用多个调试器类型，这名为混合模式调试。 在本教程中，将了解如何在单一调试会话中调试托管代码和本机代码。
 
 本教程展示如何在托管应用内调试本机代码，但你也可以[在本机应用内调试托管代码](../debugger/how-to-debug-in-mixed-mode.md)。 调试器还支持其他混合模式调试类型，如调试 [Python 和本机代码](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md)以及在应用类型（如 ASP.NET）中使用脚本调试器。
 
@@ -60,7 +60,7 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 
    Visual Studio 创建空项目并在“解决方案资源管理器”中显示该项目。
 
-1. 在“解决方案资源管理器”中选择“源文件”，然后选择“项目” > “添加新建项”。 或者，右键单击“源文件”，然后选择“添加” > “新项”。 
+1. 在“解决方案资源管理器”中选择“源文件”，然后选择“项目” > “添加新建项”。 或者，右键单击“源文件”，然后选择“添加” > “新项”。
 
 1. 在“新项”对话框中，选择“C++ 文件(.cpp)”。 在“名称”字段中键入“Mixed_Mode.cpp”，然后选择“添加”。
 
@@ -71,7 +71,7 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
     ```cpp
     #include "Mixed_Mode.h"
     ```
-1. 在“解决方案资源管理器”中选择“头文件”，然后选择“项目” > “添加新项”。 或者，右键单击“头文件”，然后选择“添加” > “新项”。 
+1. 在“解决方案资源管理器”中选择“头文件”，然后选择“项目” > “添加新项”。 或者，右键单击“头文件”，然后选择“添加” > “新项”。
 
 1. 在“新项”对话框中，选择“头文件(.h)”。 在“名称”字段中键入“Mixed_Mode.h”，然后选择“添加”。
 
@@ -100,10 +100,10 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 
 1. 在“解决方案资源管理器”中，选择“Mixed_Mode_Debugging”项目节点并选择“属性”图标，或右键单击项目节点并选择“属性”。
 
-1. 在“属性”窗格的顶部，请确保将“配置”设置为“活动(调试)”以及将“平台”设为与你在工具栏中所设置的相同：“x64”或“Win32”（适用于 x86 平台）。 
+1. 在“属性”窗格的顶部，请确保将“配置”设置为“活动(调试)”以及将“平台”设为与你在工具栏中所设置的相同：“x64”或“Win32”（适用于 x86 平台）。
 
    > [!IMPORTANT]
-   > 如果将平台从“x86”切换到“x64”，或相反，则必须为新平台重新配置属性。 
+   > 如果将平台从“x86”切换到“x64”，或相反，则必须为新平台重新配置属性。
 
 1. 在左窗格的“配置属性”下方选择“链接器” > “高级”，并在“无入口点”旁边的下拉列表中选择“否”。 如果必须将其更改为“否”，请选择“应用”。
 
@@ -125,7 +125,7 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 1. 在“新建项目”对话框中选择“Visual C#”，然后在中间窗格：
 
    - 对于 .NET Framework 应用，则选择“控制台应用(.NET Framework)”。
-   
+
    - 对于 .NET Core 应用，则选择“控制台应用(.NET Core)”。
 
 1. 在“名称”字段中键入“Mixed_Mode_Calling_App”，然后选择“确定”。
@@ -164,9 +164,9 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 
 1. 选择“文件” > “保存 Program.cs”或按 Ctrl+S 以保存文件。
 
-## <a name="configure-mixed-mode-debugging"></a>配置混合模式调试 
+## <a name="configure-mixed-mode-debugging"></a>配置混合模式调试
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>为 .NET Framework 应用配置混合模式调试 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-framework-app"></a>为 .NET Framework 应用配置混合模式调试
 
 1. 在“解决方案资源管理器”中，选择“Mixed_Mode_Calling_App”项目节点并选择“属性”图标，或右键单击项目节点并选择“属性”。
 
@@ -174,11 +174,11 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 
     ![启用混合模式调试](../debugger/media/mixed-mode-enable-native-code-debugging.png)
 
-### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>为 .NET Core 应用配置混合模式调试 
+### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>为 .NET Core 应用配置混合模式调试
 
 在 Visual Studio 2017 的大多数版本中，必须使用 launchSettings.json 文件（而非项目属性）在 .NET Core 应用中为本机代码启用混合模式调试。 要跟踪本功能的 UI 更新，请查看 [GitHub 问题](https://github.com/dotnet/project-system/issues/1125)。
 
-1. 在“解决方案资源管理器”中展开“属性”，然后打开 launchSettings.json 文件。 
+1. 在“解决方案资源管理器”中展开“属性”，然后打开 launchSettings.json 文件。
 
    >[!NOTE]
    >默认情况下，launchSettings.json 位于 C:\Users\username\source\repos\Mixed_Mode_Calling_App\Properties。 如果 launchSettings.json 不存在，请在“解决方案资源管理器”中选择“Mixed_Mode_Calling_App”项目，然后选择“属性”图标，或右键点击该项目并选择“属性”。 在“调试”选项卡进行临时更改并生成项目。 将创建 launchSettings.json 文件。 还原“调试”选项卡中所作更改。

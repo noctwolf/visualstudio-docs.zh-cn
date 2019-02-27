@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dccb229712d173e847a7205f03aad308fab224d
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 3d9dd845a69243cd8bedb095c63f75670f39afff
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853184"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640579"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 任务
 <xref:Microsoft.Build.Tasks.Windows.FileClassifier> 任务将一组源资源分类为将嵌入到程序集的源资源。 如果资源不可本地化，则将其嵌入主应用程序程序集；否则，将其嵌入附属程序集。
 
 ## <a name="task-parameters"></a>任务参数
 
-|参数|说明​​|
+|参数|说明|
 |---------------|-----------------|
 |`CLREmbeddedResource`|未使用。|
 |`CLRResourceFiles`|未使用。|
@@ -64,8 +64,8 @@ ms.locfileid: "55853184"
 ```
 
 ## <a name="see-also"></a>请参阅
-[WPF MSBuild 参考](../msbuild/wpf-msbuild-reference.md)  
-[任务参考](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild 参考](../msbuild/msbuild-reference.md)  
-[任务参考](../msbuild/msbuild-task-reference.md)  
-[生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [WPF MSBuild 参考](../msbuild/wpf-msbuild-reference.md)
+- [任务参考](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild 参考](../msbuild/msbuild-reference.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)
+- [生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

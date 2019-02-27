@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea5dc0d2516ab7cf3c4e26b5e8f39328eabe47cb
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 39b732a962f648f0c812f3f9d37df7dcf17296ce
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853438"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626604"
 ---
 # <a name="createproperty-task"></a>CreateProperty 任务
 使用传入的值填充属性。 通过该操作可以将值从一个属性或字符串复制到另一个属性或字符串。
@@ -31,7 +31,7 @@ ms.locfileid: "55853438"
 ## <a name="attributes"></a>特性
 下表描述了 `CreateProperty` 任务的参数。
 
-| 参数 | 说明​​ |
+| 参数 | 说明 |
 |------------------| - |
 | `Value` | 可选 `String` 输出参数。<br /><br /> 指定要复制到新属性的值。 |
 | `ValueSetByTask` | 可选 `String` 输出参数。<br /><br /> 包含与 `Value` 参数相同的值。 在由于输出是最新的而跳过封闭目标的情况下，仅当需要避免由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 设置输出属性时，使用此参数。 |
@@ -67,5 +67,5 @@ ms.locfileid: "55853438"
 运行项目后，`NewFile` 属性的值为 Module1.vb。
 
 ## <a name="see-also"></a>请参阅
-[任务参考](../msbuild/msbuild-task-reference.md)  
-[任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)
+- [任务](../msbuild/msbuild-tasks.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf49998d2aecdce37992cf51337a4d96201c9111
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fd695c5a33ea8ea7bb9895d34995abd37db7019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692692"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843956"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>创建基本项目系统，第 1 部分
 在 Visual Studio 中，项目是开发人员用于组织源代码文件和其他资产的容器。 项目显示为解决方案中的子级**解决方案资源管理器**。 项目可组织、 生成、 调试和部署的源代码和创建对 Web 服务、 数据库和其他资源的引用。
@@ -35,7 +35,7 @@ ms.locfileid: "56692692"
  本演练演示如何创建具有项目文件扩展名的项目类型 *.myproj*。 本演练中利用的现有的 Visual C# 项目系统。
 
 > [!NOTE]
->  扩展项目的更多示例，请参阅[VSSDK 示例](http://aka.ms/vs2015sdksamples)。
+>  扩展项目的更多示例，请参阅[VSSDK 示例](https://aka.ms/vs2015sdksamples)。
 
  本演练介绍了如何完成这些任务：
 

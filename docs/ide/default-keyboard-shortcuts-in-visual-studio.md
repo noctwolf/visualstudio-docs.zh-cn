@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9680087162cbfa89e12cb7d9b44d7079cba4ef2
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270649"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607403"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷方式
 
@@ -525,7 +525,7 @@ ms.locfileid: "56270649"
 
 |命令|键盘快捷键|
 |--------------| - |
-|调试.图形.捕获帧|无|
+|调试.图形.捕获帧|None|
 |Graphics.MovePixelSelectionDown|**Shift+Alt+向下键**|
 |Graphics.MovePixelSelectionLeft|**Shift+Alt+向左键**|
 |Graphics.MovePixelSelectionRight|**Shift+Alt+向右键**|
@@ -807,8 +807,8 @@ ms.locfileid: "56270649"
 | 编辑.隐藏选定内容 | **Ctrl+M、Ctrl+H** |
 | 编辑.增加筛选器级别 | **Alt+.** |
 | 编辑.渐进式搜索 | **Ctrl+I** |
-| 编辑.插入所有匹配的 Caretsat | **Shift+Alt+;** | 
-| 编辑.插入下一个匹配的 Caret | **Shift+Alt+.** | 
+| 编辑.插入所有匹配的 Caretsat | **Shift+Alt+;** |
+| 编辑.插入下一个匹配的 Caret | **Shift+Alt+.** |
 | 编辑.插入制表符 | Tab |
 | 编辑.剪切行 | **Ctrl+L** |
 | 编辑.删除行 | **Ctrl+Shift+L** |

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 36e5d5285f59170afaa22338829d186e7eb3e2e2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 628683ae87bc53d59a61e13d3c21d45bfa4eee79
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949790"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710534"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模拟器中运行 UWP 应用
 适用于 UWP 应用的 Visual Studio 模拟器是模拟的 UWP 应用的桌面应用程序。 通常情况下，想要在本地计算机、 连接的设备或远程计算机上进行调试。 但是，在某些情况下，你可能想要使用的 Visual Studio 模拟器来模拟不同的物理屏幕大小和分辨率。 此外可以模拟常用的触摸和旋转事件，并模拟网络连接属性。
@@ -107,7 +107,7 @@ ms.locfileid: "54949790"
      ![屏幕快照设置上下文菜单](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")
 
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> 模拟网络连接属性
- 可以通过维护感知网络连接成本或数据计划状态更改的能力并允许应用程序使用此信息避免产生额外的漫游成本或超出指定的数据传输限制，来帮助应用程序用户管理所测量网络连接的成本。 利用 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API 能够对签名的 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 和 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 事件作出响应。 （如果尚不熟悉流程，请参阅[快速入门：管理按流量计费的网络成本约束](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。
+ 可以通过维护感知网络连接成本或数据计划状态更改的能力并允许应用程序使用此信息避免产生额外的漫游成本或超出指定的数据传输限制，来帮助应用程序用户管理所测量网络连接的成本。 利用 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API 能够对签名的 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 和 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 事件作出响应。 请参见 [快速入门：管理按流量计费的网络成本约束](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。
 
  若要调试或测试网络成本感知代码，可使用模拟器模拟通过 [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) 返回的 [ConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation) 对象公开的网络的属性。
 
@@ -149,4 +149,4 @@ ms.locfileid: "54949790"
  可以通过按来关闭模拟器**CTRL + ALT + F4**。
 
 ## <a name="see-also"></a>请参阅
- [从 Visual Studio 运行应用](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [从 Visual Studio 运行应用](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

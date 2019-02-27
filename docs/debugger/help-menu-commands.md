@@ -10,21 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec2b4c518223d308f27a853c28c97b99b5ff7188
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c58bc069b3d38c4086a5642d13bb907528923bb5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917468"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680004"
 ---
 # <a name="help-menu-commands"></a>“帮助”菜单命令
-**帮助**菜单提供命令来打开帮助文件。  
-  
- **Tuple**  
- 将内容屏幕打开 Spy + + 帮助的。  
-  
- **使用帮助**  
- 打开介绍如何使用帮助的帮助文件。  
-  
- **关于 Spy++**  
- 显示 Spy + + 中的软件版本和版权信息。
+**帮助**菜单提供命令来打开帮助文件。
+
+ **索引**打开 Spy + + 帮助的内容屏幕。
+
+ **使用帮助**打开介绍如何使用帮助的帮助文件。
+
+ **关于 Spy + +** 显示 Spy + + 中的软件版本和版权信息。

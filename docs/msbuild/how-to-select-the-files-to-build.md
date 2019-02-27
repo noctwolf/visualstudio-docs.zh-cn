@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54cd1e9855bbc09a0045cd50ac26c1aef38bac2c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942800"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610536"
 ---
 # <a name="how-to-select-the-files-to-build"></a>如何：选择要生成的文件
 如果生成包含多个文件的项目，可以在项目文件中分别列出每个文件，也可以使用通配符将一个目录或一组嵌套目录中的所有文件都包括进去。
@@ -29,25 +29,25 @@ ms.locfileid: "55942800"
 
 #### <a name="to-declare-items-individually"></a>逐个声明各个项
 
-- 使用 `Include` 属性，如下所示：  
-  
-    `<CSFile Include="form1.cs"/>`  
-  
-    或  
-  
-    `<VBFile Include="form1.vb"/>`  
-  
+- 使用 `Include` 属性，如下所示：
+
+    `<CSFile Include="form1.cs"/>`
+
+    or
+
+    `<VBFile Include="form1.vb"/>`
+
     > [!NOTE]
     > 如果项集合中的项不在项目文件所在的同一目录中，则必须指定项的完整路径或相对路径。 例如：`Include="..\..\form2.cs"`。
 
 #### <a name="to-declare-multiple-items"></a>声明多个项
 
--   使用 `Include` 属性，如下所示：  
-  
-    `<CSFile Include="form1.cs;form2.cs"/>`  
-  
-    或  
-  
+-   使用 `Include` 属性，如下所示：
+
+    `<CSFile Include="form1.cs;form2.cs"/>`
+
+    or
+
     `<VBFile Include="form1.vb;form2.vb"/>`
 
 ## <a name="specify-inputs-with-wildcards"></a>使用通配符指定输入
@@ -63,24 +63,24 @@ Project\Images\ImgJpgs\Img1
 
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>包括 Images 目录和子目录中的所有 .jpg 文件
 
-- 使用下面的 `Include` 属性：  
-  
+- 使用下面的 `Include` 属性：
+
     `Include="Images\**\*.jpg"`
 
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>包括所有以“img”开头的 .jpg 文件
 
-- 使用下面的 `Include` 属性：  
-  
+- 使用下面的 `Include` 属性：
+
     `Include="Images\**\img*.jpg"`
 
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>包括目录中名称以“jpgs”结尾的所有文件
 
-- 使用以下 `Include` 属性之一：  
-  
-    `Include="Images\**\*jpgs\*.*"`  
-  
-    或  
-  
+- 使用以下 `Include` 属性之一：
+
+    `Include="Images\**\*jpgs\*.*"`
+
+    or
+
     `Include="Images\**\*jpgs\*"`
 
 ## <a name="pass-items-to-a-task"></a>将项传递给任务
@@ -88,17 +88,17 @@ Project\Images\ImgJpgs\Img1
 
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>使用所有 Visual C# 或 Visual Basic 文件作为输入
 
-- 使用 `Include` 属性，如下所示：  
-  
-    `<CSC Sources="@(CSFile)">...</CSC>`  
-  
-    或  
-  
+- 使用 `Include` 属性，如下所示：
+
+    `<CSC Sources="@(CSFile)">...</CSC>`
+
+    or
+
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
 >  必须将通配符与项配合使用来指定生成的输入，不能使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务（如 [Csc](../msbuild/csc-task.md) 或 [Vbc](../msbuild/vbc-task.md)）中的 `Sources` 属性来指定输入。 下面的示例在项目文件中无效：
-> 
+>
 > `<CSC Sources="*.cs">...</CSC>`
 
 ## <a name="example"></a>示例
@@ -170,5 +170,5 @@ Project\Images\ImgJpgs\Img1
 ```
 
 ## <a name="see-also"></a>请参阅
-[如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)  
-[项](../msbuild/msbuild-items.md)
+- [如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)
+- [项](../msbuild/msbuild-items.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76b7fa5b722851357ed7f383b3f9c8e4ad4dc95e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605986"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841732"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>演练：从现有的 SharePoint 网站导入项目
   本演练演示如何从现有的 SharePoint 网站到导入项[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。
@@ -43,7 +43,7 @@ ms.locfileid: "56605986"
 ## <a name="customize-a-sharepoint-site"></a>自定义 SharePoint 站点
  对于此示例中，将创建并自定义 SharePoint 子站点，通过向其添加一个新的站点列和通过创建另一个子网站供以后使用。 更高版本，将导出到.wsp 文件的第一个子网站，并通过使用.wsp 导入项目，然后导入第二个子站点的自定义站点列。
 
-#### <a name="to-create-and-customize-a-sharepoint-site"></a>若要创建和自定义 SharePoint 站点
+### <a name="to-create-and-customize-a-sharepoint-site"></a>若要创建和自定义 SharePoint 站点
 
 1. 打开 SharePoint 站点使用 Web 浏览器，如 http://<em>系统名称</em>/SitePages/Home.aspx。
 
@@ -77,7 +77,7 @@ ms.locfileid: "56605986"
 > [!IMPORTANT]
 >  如果收到运行时错误，执行以下过程，您必须能够访问 SharePoint 站点的系统上执行该过程。
 
-#### <a name="to-export-an-existing-sharepoint-site"></a>若要导出的现有 SharePoint 站点
+### <a name="to-export-an-existing-sharepoint-site"></a>若要导出的现有 SharePoint 站点
 
 1.  在 SharePoint 站点中，选择**站点设置**上**站点操作**选项卡以显示站点设置页。
 
@@ -100,7 +100,7 @@ ms.locfileid: "56605986"
 ## <a name="import-the-wsp-file"></a>导入.wsp 文件
  现在，你已有 *.wsp*文件，其中包含你想要重复使用 （自定义站点列测试列），导入的项 *.wsp*文件来访问它。
 
-#### <a name="to-import-a-wsp-file"></a>若要导入.wsp 文件
+### <a name="to-import-a-wsp-file"></a>若要导入.wsp 文件
 
 1. 在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在菜单栏上依次选择**文件** > **新建** > **项目**显示**新项目**对话框。 如果您的 IDE 设置为使用 Visual Basic 开发设置，请在菜单栏上，选择**文件** > **新项目**。
 
@@ -128,7 +128,7 @@ ms.locfileid: "56605986"
 ## <a name="deploy-the-project"></a>将项目部署
  最后，部署**WspImportProject1**到第二个 SharePoint 子站点之前，若要查看自定义站点列创建。
 
-#### <a name="to-deploy-the-project"></a>若要将项目部署
+### <a name="to-deploy-the-project"></a>若要将项目部署
 
 1.  在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，选择**F5**键部署并运行 *.wsp*导入项目。
 

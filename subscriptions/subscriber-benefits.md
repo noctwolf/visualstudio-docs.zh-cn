@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 02/12/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解 Visual Studio 订阅中包含的权益
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3fb7fd86a5a875c16072792d9d82737b5f19160
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282217"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56839703"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio 订阅中包含的权益
 
@@ -45,4 +43,3 @@ Visual Studio 订阅提供最全面的资源集合，便于你在首选平台和
 > 你的订阅可能还附带软件下载权限。  有关下载的详细信息，包括订阅包含哪些下载，请访问 [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)。
 
 有关在订阅中所包含权益的详细信息，请查看 [Visual Studio 定价页](https://visualstudio.microsoft.com/vs/pricing/)。  有关具体权益的信息，包括哪些订阅拥有这些权益，可参阅下方的“使用订阅者权益”主题。
-

@@ -18,46 +18,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ebb74c201a730ffe256670b936ef2a886a24e95
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b1d42f4d8a06e51c35387d07ecd21fa4970decc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941583"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643062"
 ---
 # <a name="message-task"></a>Message 任务
-在生成期间记录消息。  
-  
-## <a name="parameters"></a>参数  
- 下表描述了 `Message` 任务的参数。  
-  
-|参数|说明|  
-|---------------|-----------------|  
-|`Importance`|可选 `String` 参数。<br /><br /> 指定消息的重要性。 此参数的值可以是 `high`、`normal` 或 `low`。 默认值为 `normal`。|  
-|`Text`|可选 `String` 参数。<br /><br /> 要记录的错误文本。|  
-  
-## <a name="remarks"></a>备注  
- 通过 `Message` 任务，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目可以在生成过程中的不同阶段将消息发送到记录器中。  
-  
- 如果 `Condition` 参数的计算结果为 `true`，则将会记录 `Text` 参数值，并继续执行生成。 如果 `Condition` 参数不存在，则将记录消息文本。 有关日志记录的详细信息，请参阅[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)。  
-  
- 默认情况下，该消息将发送到 MSBuild 控制台记录器。 通过设置 <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> 参数可以对此进行更改。 记录器解释 `Importance` 参数。  
-  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
-  
-## <a name="example"></a>示例  
- 下面的代码示例将消息记录到所有已注册的记录器。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="DisplayMessages">  
-        <Message Text="Project File Name = $(MSBuildProjectFile)" />  
-        <Message Text="Project Extension = $(MSBuildProjectExtension)" />  
-    </Target>  
-    ...  
-</Project>  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [任务参考](../msbuild/msbuild-task-reference.md)   
- [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)
+在生成期间记录消息。
+
+## <a name="parameters"></a>参数
+ 下表描述了 `Message` 任务的参数。
+
+|参数|说明|
+|---------------|-----------------|
+|`Importance`|可选 `String` 参数。<br /><br /> 指定消息的重要性。 此参数的值可以是 `high`、`normal` 或 `low`。 默认值为 `normal`。|
+|`Text`|可选 `String` 参数。<br /><br /> 要记录的错误文本。|
+
+## <a name="remarks"></a>备注
+ 通过 `Message` 任务，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目可以在生成过程中的不同阶段将消息发送到记录器中。
+
+ 如果 `Condition` 参数的计算结果为 `true`，则将会记录 `Text` 参数值，并继续执行生成。 如果 `Condition` 参数不存在，则将记录消息文本。 有关日志记录的详细信息，请参阅[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)。
+
+ 默认情况下，该消息将发送到 MSBuild 控制台记录器。 通过设置 <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A> 参数可以对此进行更改。 记录器解释 `Importance` 参数。
+
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
+
+## <a name="example"></a>示例
+ 下面的代码示例将消息记录到所有已注册的记录器。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="DisplayMessages">
+        <Message Text="Project File Name = $(MSBuildProjectFile)" />
+        <Message Text="Project Extension = $(MSBuildProjectExtension)" />
+    </Target>
+    ...
+</Project>
+```
+
+## <a name="see-also"></a>请参阅
+- [任务参考](../msbuild/msbuild-task-reference.md)
+- [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)

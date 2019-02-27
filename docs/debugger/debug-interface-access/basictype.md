@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bc24a62281e754af8d97e641e8fa6e6866f7570
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318012"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626110"
 ---
 # <a name="basictype"></a>BasicType
 指定符号的基本类型。
@@ -50,59 +50,41 @@ enum BasicType {
 ```
 
 ## <a name="elements"></a>元素
-btNoType  
-不指定任何基本类型。
+btNoType 指定任何基本类型。
 
-btVoid  
-基本类型是`void`。
+btVoid 基本类型是`void`。
 
-btChar  
-基本类型是`char`（C/c + + 类型）。
+btChar 基本类型是`char`（C/c + + 类型）。
 
-btWChar  
-基本类型是宽 (Unicode) 字符 (`WCHAR`)。
+btWChar 基本类型是宽 (Unicode) 字符 (`WCHAR`)。
 
-btInt  
-基本类型是`signed int`（C/c + + 类型）。
+btInt 基本类型是`signed int`（C/c + + 类型）。
 
-btUInt  
-基本类型是`unsigned int`（C/c + + 类型）。
+btUInt 基本类型是`unsigned int`（C/c + + 类型）。
 
-btFloat  
-基本类型是一个浮点数 (`FLOAT`)。
+btFloat 基本类型是一个浮点数 (`FLOAT`)。
 
-btBCD  
-基本类型是二进制编码的十进制数字 (`BCD`)。
+btBCD 基本类型是二进制编码的十进制数字 (`BCD`)。
 
-btBool  
-基本类型是一个布尔值 (`BOOL`)。
+btBool 基本类型是一个布尔值 (`BOOL`)。
 
-btLong  
-基本类型是`long int`（C/c + + 类型）。
+btLong 基本类型是`long int`（C/c + + 类型）。
 
-btULong  
-基本类型是`unsigned long int`（C/c + + 类型）。
+btULong 基本类型是`unsigned long int`（C/c + + 类型）。
 
-btCurrency  
-基本类型是货币。
+btCurrency 基本类型是货币。
 
-btDate  
-基本类型是日期/时间 (`DATE`)。
+btDate 基本类型是日期/时间 (`DATE`)。
 
-btVariant  
-基本类型是变量类型结构 (`VARIANT`)。
+btVariant 基本类型是一种变量类型结构 (`VARIANT`)。
 
-btComplex  
-基本类型是一个复杂的数字。
+btComplex 基本类型是一个复杂的数字。
 
-btBit  
-一些基本类型。
+有些 btBit 基本类型。
 
-btBSTR  
-基本类型是一个基本或二进制字符串 (`BSTR`)。
+btBSTR 基本类型是一个基本或二进制字符串 (`BSTR`)。
 
-btHresult  
-基本类型是`HRESULT`。
+btHresult 基本类型是`HRESULT`。
 
 ## <a name="remarks"></a>备注
 返回此枚举中的值[idiasymbol:: Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)方法。
@@ -111,6 +93,6 @@ btHresult
 标头： cvconst.h
 
 ## <a name="see-also"></a>请参阅
-[枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)  
-[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)
+- [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)
+- [IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)

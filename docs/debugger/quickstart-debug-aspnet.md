@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 01c523abf6b6302831fee53e2546ba606089467c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027361"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683592"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 ASP.NET
 
 Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 本主题提供了一种快速了解部分基本功能的方法。
 
-## <a name="create-a-new-project"></a>创建新项目 
+## <a name="create-a-new-project"></a>创建新项目
 
 1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
 
@@ -110,7 +110,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
 
     ![查看数据提示](../debugger/media/dbg-qs-data-tip-aspnet.png)
 
-    数据提示显示 `c2` 变量的当前值且允许检查其属性。 调试时，如果出现意外值，则表示在前一代码行或调用的代码行上出现 bug。 
+    数据提示显示 `c2` 变量的当前值且允许检查其属性。 调试时，如果出现意外值，则表示在前一代码行或调用的代码行上出现 bug。
 
 2. 展开数据提示以查看 `c2` 对象的当前属性值。
 

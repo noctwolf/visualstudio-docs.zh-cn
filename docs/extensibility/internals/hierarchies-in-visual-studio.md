@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9466e081aad6e5e928198b4d6f43d9f68c4eee8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 437372a5b88e58c12b7a7d34102d87afce5c086b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616880"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841774"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio 中的层次结构
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 显示为一个项目*层次结构*。 在 IDE 中，层次结构是的节点，其中每个节点都有一组相关联的属性的树。 一个*项目层次结构*是保存项目的项目、 项目的关系和相关联的项目的属性和命令的容器。
@@ -35,4 +35,4 @@ ms.locfileid: "56616880"
 ## <a name="see-also"></a>请参阅
 - [项目类型](../../extensibility/internals/project-types.md)
 - [所选内容和 IDE 中的货币](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [VSSDK 示例](http://aka.ms/vs2015sdksamples)
+- [VSSDK 示例](https://aka.ms/vs2015sdksamples)

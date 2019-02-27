@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0c1ed6e2fdd461b0fdf502c01089aeafd9a87cb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54925625"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720596"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>图形 API 和内存统计信息
 <!-- VERSIONLESS --> Visual Studio 2017 和更高版本支持的图形 API 统计信息和内存统计信息的工具。  这两种工具使您可以查看有关 Direct3D API 使用情况，以及各种资源的 GPU 内存消耗的各种信息的位。
@@ -39,7 +39,7 @@ Visual Studio 图形诊断中的图形 API 统计信息，可以查看所有所�
 
 与 API 统计信息工具，可以右键单击在窗口中复制所有数据以 csv 格式，可以粘贴到类似于 Excel 的内容进行进一步分析。
 
-## <a name="see-also"></a>请参阅  
-[图形诊断（调试 DirectX 图形）](visual-studio-graphics-diagnostics.md)   
-[资源历史记录](graphics-event-list.md#resource-history)
+## <a name="see-also"></a>请参阅
+- [图形诊断（调试 DirectX 图形）](visual-studio-graphics-diagnostics.md)
+- [资源历史记录](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

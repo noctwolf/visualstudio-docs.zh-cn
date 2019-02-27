@@ -15,31 +15,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a2a7dd34e0080dbf84a1ab13cd7e8901f601b38
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c395df1e08f1b4e33e9cd34fec54bdd044f3b4c9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54955292"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690508"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
-启动跟踪上下文。  
-  
-## <a name="syntax"></a>语法  
-  
+启动跟踪上下文。
+
+## <a name="syntax"></a>语法
+
 ```cpp
-HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskName);  
-```  
-  
-#### <a name="parameters"></a>参数  
- [in] `intermediateDirectory`  
- 存储跟踪日志的目录。  
-  
- [in] `taskName`  
- 标识跟踪上下文。 此名称用于创建日志文件名。  
-  
-## <a name="return-value"></a>返回值  
- 如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT。  
-  
-## <a name="requirements"></a>要求  
+HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskName);
+```
+
+#### <a name="parameters"></a>参数
+[in] `intermediateDirectory`
+
+ 存储跟踪日志的目录。
+
+[in] `taskName`
+
+ 标识跟踪上下文。 此名称用于创建日志文件名。
+
+## <a name="return-value"></a>返回值
+ 如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT。
+
+## <a name="requirements"></a>要求
  **标头：** FileTracker.h

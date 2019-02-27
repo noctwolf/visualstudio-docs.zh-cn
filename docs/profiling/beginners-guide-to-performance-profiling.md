@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc7d75329e83345107cac18fa49267dc62f964d
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: cf5fb798bde008da1be3bc562ca0974d2ed916e0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316699"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634300"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>通过分析 CPU 使用情况衡量应用程序性能
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程演示如何使用诊断工具的“CPU 使用率”选项卡获取应用的性能数据。 Visual Studio 中的 .NET 开发（包括 ASP.NET、和本机 /C++ 开发）支持此诊断工具。
-  
+
 调试中断时，**CPU 使用率**工具收集有关应用程序中正在执行的函数的信息。 该工具将列出执行工作的函数，并提供时间线图，可专用于采样会话的特定部分。
 
 诊断中心提供了大量其他选项来运行和管理诊断会话。 如果**CPU 使用率**未提供所需数据，[其他分析工具](../profiling/profiling-feature-tour.md)可提供可能有帮助的不同种类的信息。 在许多情况下，CPU 以外的因素可能会导致应用程序性能瓶颈，例如内存、呈现 UI 或网络请求时间。 诊断中心提供大量其他选项，可用于记录和分析此种数据。
@@ -40,16 +40,16 @@ ms.locfileid: "56316699"
 > [!div class="checklist"]
 > * 收集 CPU 使用量数据
 > * 分析 CPU 使用量数据
-  
-## <a name="step-1-collect-profiling-data"></a>步骤 1：收集分析数据 
-  
+
+## <a name="step-1-collect-profiling-data"></a>步骤 1：收集分析数据
+
 1.  打开要在 Visual Studio 中调试的项目，并在应用中设置检查 CPU 使用率的断点。
 
 2.  在函数末尾或想要分析的代码区域中设置第二个断点。
 
     > [!TIP]
     > 通过设置两个断点，可将数据收集限制到想要分析的代码部分。
-  
+
 3.  将自动显示 **“诊断工具”** 窗口，除非你已将其关闭。 若要再次显示该窗口，请依次单击“调试” > “Windows” > “显示诊断工具”。
 
 4.  可以使用工具栏上的“选择工具”设置，选择是否查看 **CPU 使用率**[内存使用](../profiling/Memory-Usage.md)或同时查看两者。 如果运行的是 Visual Studio Enterprise，还可以在“工具” > “选项” > “IntelliTrace”中启用或禁用 IntelliTrace。
@@ -85,9 +85,9 @@ ms.locfileid: "56316699"
      探查器开始准备线程数据。 等待其完成。
 
      ![诊断工具准备线程](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
-  
+
      CPU 使用率工具在“CPU 使用率”选项卡中显示报表。
-  
+
      ![诊断工具“ CPU 使用率”选项卡](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
 
      现在可以开始分析数据。
@@ -105,7 +105,7 @@ ms.locfileid: "56316699"
 
 2. 在函数列表中，双击一个执行大量工作的应用函数。
 
-    双击该函数时，将在左侧窗格中打开“调用方/被调用方”视图。 
+    双击该函数时，将在左侧窗格中打开“调用方/被调用方”视图。
 
     ![诊断工具调用方和被调用方视图](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
 
@@ -118,22 +118,22 @@ ms.locfileid: "56316699"
     > **函数体**中的较高值可能指示函数自身内部的性能瓶颈。
 
 3. 如果希望按调用函数的顺序来查看较高级别的视图，请在顶部窗格的下拉列表中选择“调用关系树”。
- 
+
     图中每个带编号的区域都与过程中的一个步骤相关。
-  
+
     ![诊断工具调用关系树](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
-  
+
 |||
 |-|-|
-|![第 1 步](../profiling/media/ProcGuid_1.png "ProcGuid_1")|CPU 使用量调用关系树中的顶级节点是一个伪节点|  
-|![第 2 步](../profiling/media/ProcGuid_2.png "ProcGuid_2")|在大多数应用中，当禁用 [“显示外部代码”](#view-external-code) 选项时，二级节点是 **[外部代码]** 节点，该节点包含系统和框架代码，它可以启动和停止应用、绘制 UI、控制线程计划以及向应用提供其他低级服务。|  
+|![第 1 步](../profiling/media/ProcGuid_1.png "ProcGuid_1")|CPU 使用量调用关系树中的顶级节点是一个伪节点|
+|![第 2 步](../profiling/media/ProcGuid_2.png "ProcGuid_2")|在大多数应用中，当禁用 [“显示外部代码”](#view-external-code) 选项时，二级节点是 **[外部代码]** 节点，该节点包含系统和框架代码，它可以启动和停止应用、绘制 UI、控制线程计划以及向应用提供其他低级服务。|
 |![第 3 步](../profiling/media/ProcGuid_3.png "ProcGuid_3")|二级节点的子级为用户代码方法和异步例程，它们由二级系统和框架代码进行调用或创建。|
 |![第 4 步](../profiling/media/ProcGuid_4.png "ProcGuid_4")|方法的子节点仅包含用于父方法调用的数据。 禁用“显示外部代码”  后，应用方法只能包含 **[外部代码]** 节点。|
 
 下面是列值的详细信息：
 
 - **总 CPU** 指示函数及由它调用的任何函数完成的工作量。 较高的总 CPU 值指向总体成本最高的函数。
-  
+
 - **自 CPU**指示函数体中的代码完成的工作量，不包括由它调用的函数完成的工作。 较高的**自 CPU** 值可能指示函数自身内部的性能瓶颈。
 
 - **模块**包含函数的模块名或包含 [外部代码] 节点中的函数的模块数量。
@@ -141,13 +141,13 @@ ms.locfileid: "56316699"
 ## <a name="view-external-code"></a>查看外部代码
 
 外部代码是你编写的代码执行的系统和框架组件中的函数。 外部代码包含函数，可启动和停止应用、绘制 UI、控制线程以及向应用提供其他低级别服务。 在大多数情况下，你不会对外部代码感兴趣，因此 CPU 使用率工具可将用户方法的外部函数收集到一个 [外部代码] 节点中。
-  
-若要查看外部代码的调用路径，请从“筛选器视图”列表中选择“显示外部代码”，然后选择“应用”。  
-  
-![选择“筛选器视图”，然后选择“显示外部代码”](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
-  
+
+若要查看外部代码的调用路径，请从“筛选器视图”列表中选择“显示外部代码”，然后选择“应用”。
+
+![选择“筛选器视图”，然后选择“显示外部代码”](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")
+
 请注意，许多外部代码调用链已深度嵌套，因此函数名列的宽度可能超过所有计算机监视器（最大的计算机监视器除外）的显示宽度。 发生这种情况时，函数名将显示为 […]。
-  
+
 使用搜索框找到要查找的节点，然后滑动水平滚动条将数据带入视图中。
 
 > [!TIP]
@@ -158,4 +158,4 @@ ms.locfileid: "56316699"
 本教程中介绍了如何收集和分析 CPU 使用量数据。 完成[首先了解分析工具](../profiling/profiling-feature-tour.md)后，你可能想要快速了解如何分析应用中的内存使用情况。
 
 > [!div class="nextstepaction"]
-> [Visual Studio 中的配置文件内存使用](../profiling/memory-usage.md) 
+> [Visual Studio 中的配置文件内存使用](../profiling/memory-usage.md)

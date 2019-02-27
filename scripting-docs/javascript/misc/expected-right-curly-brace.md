@@ -1,14 +1,9 @@
 ---
 title: 预期} |Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1009
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42e0c220466291f845209f22917d728dee3e553e
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 614ee85cca7df89987c4e7c1b4ff87eeebb4678d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54350110"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844121"
 ---
 # <a name="expected-"></a>应有“}”
 未包含标记的函数体、 循环、 代码块末尾的右大括号或对象初始值设定项。 此错误的示例将**为**仅标记的循环主体的左大括号的循环。  

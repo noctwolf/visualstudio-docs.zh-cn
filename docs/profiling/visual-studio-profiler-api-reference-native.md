@@ -13,38 +13,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 062f39644ee69ac03169ab2e59b49ab446654c6f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3f0071e98c9e36f3af11d318f480b4b9c6ec4cc1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042486"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615216"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio 探查器 API 参考（本机）
-Visual Studio 探查器 API 允许你以编程方式控制收集的数据量，并在分析期间插入时间戳和分析标记。 若要使用本机 API，请包含 VSPerf.h 头文件，并在项目中添加 VSPerf.lib。  
-  
+Visual Studio 探查器 API 允许你以编程方式控制收集的数据量，并在分析期间插入时间戳和分析标记。 若要使用本机 API，请包含 VSPerf.h 头文件，并在项目中添加 VSPerf.lib。
+
 > [!NOTE]
 > 若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
-  
-## <a name="in-this-section"></a>本节内容  
- [CommentMarkAtProfile](../profiling/commentmarkatprofile.md)  
-  
- [CommentMarkProfile](../profiling/commentmarkprofile.md)  
-  
- [MarkProfile](../profiling/markprofile.md)  
-  
- [NameProfile](../profiling/nameprofile.md)  
-  
- [ResumeProfile](../profiling/resumeprofile.md)  
-  
- [StartProfile](../profiling/startprofile.md)  
-  
- [StopProfile](../profiling/stopprofile.md)  
-  
- [SuspendProfile](../profiling/suspendprofile.md)  
-  
- [PROFILE_CURRENTID](../profiling/profile-currentid.md)  
-  
-## <a name="see-also"></a>请参阅  
- [分析工具 API](../profiling/profiling-tools-apis.md)   
- [演练：使用探查器 API](../profiling/walkthrough-using-profiler-apis.md)
+
+## <a name="in-this-section"></a>本节内容
+[CommentMarkAtProfile](../profiling/commentmarkatprofile.md)
+
+[CommentMarkProfile](../profiling/commentmarkprofile.md)
+
+[MarkProfile](../profiling/markprofile.md)
+
+[NameProfile](../profiling/nameprofile.md)
+
+[ResumeProfile](../profiling/resumeprofile.md)
+
+[StartProfile](../profiling/startprofile.md)
+
+[StopProfile](../profiling/stopprofile.md)
+
+[SuspendProfile](../profiling/suspendprofile.md)
+
+[PROFILE_CURRENTID](../profiling/profile-currentid.md)
+
+## <a name="see-also"></a>请参阅
+
+- [分析工具 API](../profiling/profiling-tools-apis.md)
+- [演练：使用探查器 API](../profiling/walkthrough-using-profiler-apis.md)

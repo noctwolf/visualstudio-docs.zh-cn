@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26293210bfc0dc18ded747ef44c5cc8699b3c5c8
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: c69383eacfdb39a65cd9a791185d6793e9e6f681
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227769"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642802"
 ---
 # <a name="idiasession"></a>IDiaSession
 提供调试符号的查询上下文。
@@ -31,7 +31,7 @@ IDiaSession : IUnknown
 ## <a name="methods"></a>方法
 下表显示的方法`IDiaSession`。
 
-|方法|说明​​|
+|方法|说明|
 |------------|-----------------|
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|检索对应于此符号存储区中的符号的可执行文件的加载地址。 这是相同的值传递给`put_loadAddress`方法。|
 |[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|此符号存储区中的符号设置相对应的可执行文件的加载地址。 **注意：** 很重要时要调用此方法获取`IDiaSession`对象，并开始使用该对象之前。|
@@ -117,11 +117,11 @@ void InitializeDIA(const char *szFilename)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>请参阅
-[接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[概述](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
-[Exe](../../debugger/debug-interface-access/exe.md)  
-[IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)  
-[IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)  
-[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)  
-[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
-[查询 .Pdb 文件](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+- [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [概述](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)
+- [Exe](../../debugger/debug-interface-access/exe.md)
+- [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)
+- [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)
+- [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+- [查询 .Pdb 文件](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)

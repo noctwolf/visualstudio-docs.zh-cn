@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb4a6519410c484daecba0fbd801d4db40535445
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7c0fa8b7a61a5b74558dc16bfea4726a763bf03f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920716"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625798"
 ---
 # <a name="idiasectioncontribgetaddressoffset"></a>IDiaSectionContrib::get_addressOffset
-检索发布内容的地址的偏移量的部分。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_addressOffset (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回发布内容的地址的偏移量的部分。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+检索发布内容的地址的偏移量的部分。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_addressOffset ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回发布内容的地址的偏移量的部分。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6630f277ef24a6e84e8dc8d6b0fbfa58d720626f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: aaeaa4e27b360e10c368255367892628ed45bd5f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335514"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722481"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>调试用户代码仅使用仅我的代码
 
@@ -80,7 +80,7 @@ ms.locfileid: "56335514"
 如果异常启用了第一机会异常，调用用户代码行以在源代码中的绿色突出显示。 **调用堆栈**窗口将显示标记为在带批注的帧 **[外部代码]**。
 
 ## <a name="BKMK_C___Just_My_Code"></a>C++“仅我的代码”
-  
+
 启动 Visual Studio 2017 版本 15.8，代码仅我的代码中也支持单步执行。 此功能还需要使用[/JMC （仅我的代码的调试）](/cpp/build/reference/jmc)编译器开关。 默认情况下，在 c + + 项目中启用开关。 有关**调用堆栈**窗口和调用堆栈的支持仅我的代码，在不需要 /JMC 开关。
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> 被归类为用户代码，其中包含用户代码二进制文件的 PDB 必须加载由调试器 (使用**模块**窗口要检查此项)。
@@ -90,9 +90,9 @@ ms.locfileid: "56335514"
 - 在其符号文件中去除了源信息的函数。
 - 符号文件指示没有对应于堆栈帧的源文件的函数。
 - 中指定的函数 *\*.natjmc*中的文件 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*文件夹。
-  
+
 仅我的代码在 c + + 中为代码单步执行行为将仅为这些函数*非用户代码*:
-  
+
 - 为其相应的 PDB 文件尚未加载在调试器中的函数。
 - 中指定的函数 *\*.natjmc*中的文件 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*文件夹。
 
@@ -108,117 +108,117 @@ ms.locfileid: "56335514"
 
 如果调试器在非用户代码中中断 (例如，使用**调试** > **全部中断**和暂停在非用户代码中)，在非用户代码中继续单步执行。
 
-如果调试器遇到异常时，它将停止的异常，不管它们是在用户或非用户代码。 **用户未处理**中的选项**异常设置**对话框将被忽略。   
-  
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 自定义 c + + 调用堆栈和单步执行行为的代码  
+如果调试器遇到异常时，它将停止的异常，不管它们是在用户或非用户代码。 **用户未处理**中的选项**异常设置**对话框将被忽略。
+
+###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 自定义 c + + 调用堆栈和单步执行行为的代码
 
 对于 c + + 项目，您可以指定模块、 源文件和函数**调用堆栈**窗口将视为非用户代码通过指定其 *\*.natjmc*文件。 此自定义也适用于单步执行，如果您使用的最新编译器的代码 (请参阅[c + + ' 仅我的代码](#BKMK_CPP_User_and_non_user_code))。
-  
-- 若要指定非用户代码的 Visual Studio 计算机所有用户，请添加 *.natjmc*的文件 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*文件夹。  
-- 若要指定为单个用户的非用户代码，请添加 *.natjmc*的文件 *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*文件夹。  
 
-一个 *.natjmc*文件是 XML 文件使用以下语法：  
+- 若要指定非用户代码的 Visual Studio 计算机所有用户，请添加 *.natjmc*的文件 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*文件夹。
+- 若要指定为单个用户的非用户代码，请添加 *.natjmc*的文件 *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*文件夹。
 
-```xml  
-<?xml version="1.0" encoding="utf-8"?>  
-<NonUserCode xmlns="http://schemas.microsoft.com/vstudio/debugger/jmc/2015">  
-  
-  <!-- Modules -->  
-  <Module Name="ModuleSpec" />  
-  <Module Name="ModuleSpec" Company="CompanyName" />  
-  
-  <!-- Files -->  
-  <File Name="FileSpec"/>  
-  
-  <!-- Functions -->  
-  <Function Name="FunctionSpec" />  
-  <Function Name="FunctionSpec" Module ="ModuleSpec" />  
-  <Function Name="FunctionSpec" Module ="ModuleSpec" ExceptionImplementation="true" />  
-  
-</NonUserCode>  
-  
-```  
+一个 *.natjmc*文件是 XML 文件使用以下语法：
 
- **模块元素属性**  
-  
-|特性|说明​​|  
-|---------------|-----------------|  
-|`Name`|必需。 模块的完整路径。 可以使用 Windows 通配符`?`（零个或一个字符） 和`*`（零个或多个字符）。 例如，应用于对象的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 告知调试器中的所有模块都视为 *\3rdParty\UtilLibs* 外部代码的任何驱动器上。|  
-|`Company`|可选。 发布在可执行文件中嵌入的模块的公司的名称。 可以使用此特性消除模块歧义。|  
-  
- **文件元素属性**  
-  
-|特性|说明​​|  
-|---------------|-----------------|  
-|`Name`|必需。 要视为外部代码的源文件的完整路径。 可以在指定路径时使用 Windows 通配符 `?` 和 `*`。|  
-  
- **函数元素属性**  
-  
-|特性|说明​​|  
-|---------------|-----------------|  
-|`Name`|必需。 要视为外部代码的函数的完全限定的名称。|  
-|`Module`|可选。 包含函数的模块的名称或完整路径。 可以使用此特性区分具有相同名称的函数。|  
-|`ExceptionImplementation`|设置为 `true` 时，调用堆栈显示的是引发异常的函数，而不是此函数。|  
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<NonUserCode xmlns="http://schemas.microsoft.com/vstudio/debugger/jmc/2015">
+
+  <!-- Modules -->
+  <Module Name="ModuleSpec" />
+  <Module Name="ModuleSpec" Company="CompanyName" />
+
+  <!-- Files -->
+  <File Name="FileSpec"/>
+
+  <!-- Functions -->
+  <Function Name="FunctionSpec" />
+  <Function Name="FunctionSpec" Module ="ModuleSpec" />
+  <Function Name="FunctionSpec" Module ="ModuleSpec" ExceptionImplementation="true" />
+
+</NonUserCode>
+
+```
+
+ **模块元素属性**
+
+|特性|说明|
+|---------------|-----------------|
+|`Name`|必需。 模块的完整路径。 可以使用 Windows 通配符`?`（零个或一个字符） 和`*`（零个或多个字符）。 例如，应用于对象的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 告知调试器中的所有模块都视为 *\3rdParty\UtilLibs* 外部代码的任何驱动器上。|
+|`Company`|可选。 发布在可执行文件中嵌入的模块的公司的名称。 可以使用此特性消除模块歧义。|
+
+ **文件元素属性**
+
+|特性|说明|
+|---------------|-----------------|
+|`Name`|必需。 要视为外部代码的源文件的完整路径。 可以在指定路径时使用 Windows 通配符 `?` 和 `*`。|
+
+ **函数元素属性**
+
+|特性|说明|
+|---------------|-----------------|
+|`Name`|必需。 要视为外部代码的函数的完全限定的名称。|
+|`Module`|可选。 包含函数的模块的名称或完整路径。 可以使用此特性区分具有相同名称的函数。|
+|`ExceptionImplementation`|设置为 `true` 时，调用堆栈显示的是引发异常的函数，而不是此函数。|
 
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> 自定义 c + + 单步执行行为独立于仅我的代码设置
 
 在 c + + 项目中，可以指定要通过为非用户代码中单步函数 *\*.natstepfilter*文件。 中列出的函数 *\*.natstepfilter*文件不是依赖于仅我的代码设置。
-  
-- 若要指定非用户代码的所有本地 Visual Studio 用户，请添加 *.natstepfilter*的文件 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*文件夹。  
-- 若要指定为单个用户的非用户代码，请添加 *.natstepfilter*的文件 *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*文件夹。  
-  
-一个 *.natstepfilter*文件是 XML 文件使用以下语法：  
-  
-```xml  
-<?xml version="1.0" encoding="utf-8"?>  
-<StepFilter xmlns="http://schemas.microsoft.com/vstudio/debugger/natstepfilter/2010">  
-    <Function>  
-        <Name>FunctionSpec</Name>  
-        <Action>StepAction</Action>  
-    </Function>  
-    <Function>  
-        <Name>FunctionSpec</Name>  
-        <Module>ModuleSpec</Module>  
-        <Action>StepAction</Action>  
-    </Function>  
-</StepFilter>  
-  
-```  
-  
-|元素|说明​​|  
-|-------------|-----------------|  
-|`Function`|必需。 将一个或多个函数指定为非用户函数。|  
-|`Name`|必需。 ECMA-262 格式的正则表达式，指定要匹配的完整函数名。 例如:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知调试器将 `MyNS::MyClass` 中的所有方法都视为非用户代码。 匹配区分大小写。|  
-|`Module`|可选。 ECMA-262 格式的正则表达式，指定包含函数的模块的完整路径。 匹配不区分大小写。|  
-|`Action`|必需。 以下区分大小写的值之一：<br /><br /> `NoStepInto`  -告知调试器单步执行函数。<br /> `StepInto`  -告知调试器单步执行函数，重写任何其他`NoStepInto`为匹配的函数。| 
-  
-##  <a name="BKMK_JavaScript_Just_My_Code"></a>JavaScript“仅我的代码”  
 
-<a name="BKMK_JS_User_and_non_user_code"></a>JavaScript“仅我的代码”控件通过采用以下分类之一对代码进行分类，来控制单步执行和调用堆栈显示：  
+- 若要指定非用户代码的所有本地 Visual Studio 用户，请添加 *.natstepfilter*的文件 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*文件夹。
+- 若要指定为单个用户的非用户代码，请添加 *.natstepfilter*的文件 *%USERPROFILE%\My Documents\Visual Studio 2017\Visualizers*文件夹。
 
-|||  
-|-|-|  
-|**MyCode**|你拥有或控制的用户代码。|  
-|**LibraryCode**|定期使用的库和您的应用程序中的非用户代码依赖于能够正确 （例如 WinJS 或 jQuery）。|  
-|**UnrelatedCode**|您不拥有的应用程序和应用程序中的非用户代码不依赖才能正常工作。 例如，广告可以显示广告 SDK 可能是 UnrelatedCode。 在 UWP 项目中，加载到你的应用的 HTTP 或 HTTPS URI 的任何代码也被视为 UnrelatedCode。|  
+一个 *.natstepfilter*文件是 XML 文件使用以下语法：
 
-JavaScript 调试器将作为用户或按此顺序的非用户代码分为两类：  
-  
-1. 默认分类中。  
-   -   通过将字符串传递给主机提供执行脚本`eval`技术支持部门**MyCode**。  
-   -   通过将字符串传递到执行脚本`Function`构造函数是**LibraryCode**。  
-   -   框架引用，如 WinJS 或 Azure SDK 中的脚本已**LibraryCode**。  
-   -   通过将字符串传递到执行脚本`setTimeout`， `setImmediate`，或`setInterval`functions 是**UnrelatedCode**。  
-   
-2. 指定的所有 Visual Studio JavaScript 项目中的分类 *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json*文件。  
-   
-3. 中的分类*mycode.json*当前项目的文件。  
-  
-每个分类步骤都会重写前面的步骤。 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<StepFilter xmlns="http://schemas.microsoft.com/vstudio/debugger/natstepfilter/2010">
+    <Function>
+        <Name>FunctionSpec</Name>
+        <Action>StepAction</Action>
+    </Function>
+    <Function>
+        <Name>FunctionSpec</Name>
+        <Module>ModuleSpec</Module>
+        <Action>StepAction</Action>
+    </Function>
+</StepFilter>
 
-其他所有代码都分类为“MyCode”。  
+```
 
-您可以修改默认分类，并对其分类的特定文件和 Url 为用户或非用户代码，通过添加 *.json*名为的文件*mycode.json* JavaScript 项目的根文件夹。 请参阅[自定义 JavaScript 仅我的代码](#BKMK_JS_Customize_Just_My_Code)。 
+|元素|说明|
+|-------------|-----------------|
+|`Function`|必需。 将一个或多个函数指定为非用户函数。|
+|`Name`|必需。 ECMA-262 格式的正则表达式，指定要匹配的完整函数名。 例如:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知调试器将 `MyNS::MyClass` 中的所有方法都视为非用户代码。 匹配区分大小写。|
+|`Module`|可选。 ECMA-262 格式的正则表达式，指定包含函数的模块的完整路径。 匹配不区分大小写。|
+|`Action`|必需。 以下区分大小写的值之一：<br /><br /> `NoStepInto`  -告知调试器单步执行函数。<br /> `StepInto`  -告知调试器单步执行函数，重写任何其他`NoStepInto`为匹配的函数。|
+
+##  <a name="BKMK_JavaScript_Just_My_Code"></a>JavaScript“仅我的代码”
+
+<a name="BKMK_JS_User_and_non_user_code"></a>JavaScript“仅我的代码”控件通过采用以下分类之一对代码进行分类，来控制单步执行和调用堆栈显示：
+
+|||
+|-|-|
+|**MyCode**|你拥有或控制的用户代码。|
+|**LibraryCode**|定期使用的库和您的应用程序中的非用户代码依赖于能够正确 （例如 WinJS 或 jQuery）。|
+|**UnrelatedCode**|您不拥有的应用程序和应用程序中的非用户代码不依赖才能正常工作。 例如，广告可以显示广告 SDK 可能是 UnrelatedCode。 在 UWP 项目中，加载到你的应用的 HTTP 或 HTTPS URI 的任何代码也被视为 UnrelatedCode。|
+
+JavaScript 调试器将作为用户或按此顺序的非用户代码分为两类：
+
+1. 默认分类中。
+   -   通过将字符串传递给主机提供执行脚本`eval`技术支持部门**MyCode**。
+   -   通过将字符串传递到执行脚本`Function`构造函数是**LibraryCode**。
+   -   框架引用，如 WinJS 或 Azure SDK 中的脚本已**LibraryCode**。
+   -   通过将字符串传递到执行脚本`setTimeout`， `setImmediate`，或`setInterval`functions 是**UnrelatedCode**。
+
+2. 指定的所有 Visual Studio JavaScript 项目中的分类 *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json*文件。
+
+3. 中的分类*mycode.json*当前项目的文件。
+
+每个分类步骤都会重写前面的步骤。
+
+其他所有代码都分类为“MyCode”。
+
+您可以修改默认分类，并对其分类的特定文件和 Url 为用户或非用户代码，通过添加 *.json*名为的文件*mycode.json* JavaScript 项目的根文件夹。 请参阅[自定义 JavaScript 仅我的代码](#BKMK_JS_Customize_Just_My_Code)。
 
 <a name="BKMK_JS_Stepping_behavior"></a> 在 JavaScript 调试：
 

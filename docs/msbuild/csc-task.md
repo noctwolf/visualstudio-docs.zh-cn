@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc4dd56b3746d58d96af5790dd7719bbd435b75
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: a505194a71058d791b7d67d74cd203c43298d684
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55854117"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643933"
 ---
 # <a name="csc-task"></a>Csc 任务
 包装 csc.exe，生成可执行 (.exe) 文件、动态链接库（.dll 文件）或者代码模块（.netmodule 文件）。 有关 csc.exe 的详细信息，请参阅 [C# 编译器选项](/dotnet/csharp/language-reference/compiler-options/index)。
@@ -31,7 +31,7 @@ ms.locfileid: "55854117"
 ## <a name="parameters"></a>参数
 下表描述了 `Csc` 任务的参数。
 
-| 参数 | 说明​​ |
+| 参数 | 说明 |
 |------------------------------| - |
 | `AdditionalLibPaths` | 可选 `String[]` 参数。<br /><br /> 指定要在其中搜索引用的其他目录。 有关详细信息，请参阅 [-lib（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/lib-compiler-option)。 |
 | `AddModules` | 可选 `String` 参数。<br /><br /> 指定将构成程序集一部分的一个或多个模块。 有关详细信息，请参阅 [（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/addmodule-compiler-option)。 |
@@ -94,5 +94,5 @@ ms.locfileid: "55854117"
 ```
 
 ## <a name="see-also"></a>请参阅
-[任务参考](../msbuild/msbuild-task-reference.md)  
-[任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)
+- [任务](../msbuild/msbuild-tasks.md)

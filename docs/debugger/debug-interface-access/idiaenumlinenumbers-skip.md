@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94aadc4305fe89f0dbbfff293ede78e6d24d5c7f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e68eccfebfc5218d59649aa09162b20467ceb670
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919494"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616542"
 ---
 # <a name="idiaenumlinenumbersskip"></a>IDiaEnumLineNumbers::Skip
-将跳过指定的数目的枚举序列中的行号。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- celt  
- [in]枚举序列中的行号以跳过数。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`是否存在要跳过的多个行号。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+将跳过指定的数目的枚举序列中的行号。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>参数
+ celt
+
+[in]枚举序列中的行号以跳过数。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`是否存在要跳过的多个行号。
+
+## <a name="see-also"></a>请参阅
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

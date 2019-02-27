@@ -1,6 +1,6 @@
 ---
 title: 编码的 UI 测试的配置和平台
-ms.date: 2015-10-04
+ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 65e16a52816630242c31584731572e828fa4a346
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df0955cc86ef3b57885234fe4e7b1a52fa37f950
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922324"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796564"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>支持编码的 UI 测试和操作录制的配置和平台
 
@@ -31,7 +31,7 @@ ms.locfileid: "55922324"
 
 ## <a name="supported-configurations"></a>支持的配置
 
-| 配置 | 支持 |
+| Configuration | 支持 |
 |-| - |
 | 操作系统 | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | 32 位/64 位支持 | 运行 32 位 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 32 位 Windows 可测试 32 位应用程序。<br /><br /> 运行 32 位 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 64 位 Windows 可测试具有 UI 同步的 32 位 WOW 应用程序。<br /><br /> 运行 32 位 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 的 64 位 Windows 可测试不具有 UI 同步的 64 位 Windows 窗体和 WPF 应用程序。 |

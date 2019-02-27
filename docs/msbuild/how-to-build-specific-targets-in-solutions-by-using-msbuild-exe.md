@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dea60c8d7001b906bf9f994e2d48974fe0e2da1f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 695ca538a872677f5ed24b7fef9b7c3b8ee5641c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937361"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610445"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>如何：使用 MSBuild.exe 生成解决方案中的特定目标
-可使用 MSBuild 在解决方案中生成特定项目的特定目标。  
-  
-#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>在解决方案中生成特定项目的特定目标  
-  
-1.  在命令行中，键入 `MSBuild.exe <SolutionName>.sln`，其中 `<SolutionName>` 对应于包含要执行的目标的解决方案的文件名。  
-  
+可使用 MSBuild 在解决方案中生成特定项目的特定目标。
+
+#### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>在解决方案中生成特定项目的特定目标
+
+1.  在命令行中，键入 `MSBuild.exe <SolutionName>.sln`，其中 `<SolutionName>` 对应于包含要执行的目标的解决方案的文件名。
+
 2. 指定 \<ProjectName> 格式的 `-target:` 开关后的目标：\<TargetName>。 如果项目名称包含任何字符 `%`、`$`、`@`、`;`、`.`、`(`、`)` 或 `'`，请将其替换为指定目标名称中的 `_`。
-  
-## <a name="example"></a>示例  
- 以下示例执行 `NotInSlnFolder` 项目的 `Rebuild` 目标，然后执行位于 NewFolder 解决方案文件夹的 `InSolutionFolder` 项目的 `Clean` 目标。  
-  
+
+## <a name="example"></a>示例
+ 以下示例执行 `NotInSlnFolder` 项目的 `Rebuild` 目标，然后执行位于 NewFolder 解决方案文件夹的 `InSolutionFolder` 项目的 `Clean` 目标。
+
 ```cmd
 msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clean
 ```
@@ -41,8 +41,8 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 除非需要此内部视图，否则不要使用此环境变量集进行生成操作。 此设置可能会在解决方案中生成项目时导致问题产生。
 
-## <a name="see-also"></a>请参阅  
- [命令行参考](../msbuild/msbuild-command-line-reference.md)   
- [MSBuild 参考](../msbuild/msbuild-reference.md)   
- [MSBuild](../msbuild/msbuild.md)  
- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>请参阅
+- [命令行参考](../msbuild/msbuild-command-line-reference.md)
+- [MSBuild 参考](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)

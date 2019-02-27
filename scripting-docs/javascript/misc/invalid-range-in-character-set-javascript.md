@@ -1,14 +1,9 @@
 ---
 title: 字符范围无效设置 (JavaScript) |Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5021
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 971e9d5a-f88a-47a8-af94-f3c7c4aed5ab
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4cc8feb9a33c2995e592f8031beb2e03605891d
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 6b1e404a9df368f639530d533b8cf4bf063f8ad6
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346080"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842424"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>字符集范围无效 (JavaScript)
 你试图使用无效的字符设置范围创建正则表达式。 字符集的范围必须在单个字符，例如 a 到 z 或 0-9;中的字符，不能包含字符类，如 \w。 范围内的第一个字符还必须在范围内的第二个字符之前。 例如：  

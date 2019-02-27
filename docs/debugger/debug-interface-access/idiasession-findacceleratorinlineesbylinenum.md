@@ -10,48 +10,53 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d963763f341430c92810fe811144212d2cc522e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 12a2f23c42de99e0ea9a9d6c50e2d9aabed589d4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999712"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611147"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-返回指定的源位置相对应的内嵌帧的符号的枚举。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT findAcceleratorInlineeLinesByName (   
-   IDiaSymbol*           parent,  
-   IDiaSourceFile*       file,  
-   DWORD                 linenum,  
-   DWORD                 colnum,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `parent`  
- [in]`IDiaSymbol` ，对应于需要搜索的加速器存根 （stub） 函数。  
-  
- `file`  
- [in]`IDiaSourceFile`的源位置。  
-  
- `linenum`  
- [in]源位置的行数。  
-  
- `colnum`  
- [in]源位置的列数。  
-  
- `ppResult`  
- [out]一个指向`IDiaEnumLineNumbers`使用结果初始化的接口指针。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+返回指定的源位置相对应的内嵌帧的符号的枚举。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT findAcceleratorInlineeLinesByName ( 
+   IDiaSymbol*           parent,
+   IDiaSourceFile*       file,
+   DWORD                 linenum,
+   DWORD                 colnum,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>参数
+ `parent`
+
+[in]`IDiaSymbol` ，对应于需要搜索的加速器存根 （stub） 函数。
+
+ `file`
+
+[in]`IDiaSourceFile`的源位置。
+
+ `linenum`
+
+[in]源位置的行数。
+
+ `colnum`
+
+[in]源位置的列数。
+
+ `ppResult`
+
+[out]一个指向`IDiaEnumLineNumbers`使用结果初始化的接口指针。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

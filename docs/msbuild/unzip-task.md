@@ -22,36 +22,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 883595eb6cd7565250de216bcae23eba86bf5074
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f570009ad937e955853a616987a08583f2ba2237
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937018"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632402"
 ---
 # <a name="unzip-task"></a>Unzip 任务
 将 .zip 存档解压缩到指定位置。
 
 >[!NOTE]
 >仅在 MSBuild 15.8 及更高版本中提供 `Unzip` 任务。
-  
-## <a name="parameters"></a>参数  
- 下表描述了 `Unzip` 任务的参数。  
-  
-|参数|说明|  
-|---------------|-----------------|  
+
+## <a name="parameters"></a>参数
+ 下表描述了 `Unzip` 任务的参数。
+
+|参数|说明|
+|---------------|-----------------|
 |`DestinationFolder`|<xref:Microsoft.Build.Framework.ITaskItem> 参数（必选）<br /><br /> 指定文件要解压到的目的文件夹。|
 |`OverwriteReadOnlyFiles`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则覆盖只读文件。 默认为 `false`。|
 |`SkipUnchangedFiles`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则跳过未更改的解压缩文件。 默认为 `true`。 如果文件的大小和上次修改时间相同，则 `Unzip` 任务认为文件保持不变。|
 |`SourceFiles`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定一个或多个文件进行解压缩。 指定多个文件时，它们将按顺序解压缩到同一文件夹中。|
-  
-## <a name="remarks"></a>备注  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
-  
-## <a name="example"></a>示例  
+
+## <a name="remarks"></a>备注
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
+
+## <a name="example"></a>示例
  以下示例将解压缩存档并覆盖所有只读文件。
-  
-```xml  
+
+```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <Target Name="UnzipArchive" BeforeTargets="Build">
@@ -64,7 +64,7 @@ ms.locfileid: "54937018"
 
 </Project>
 ```
-  
-## <a name="see-also"></a>请参阅  
- [任务](../msbuild/msbuild-tasks.md)   
- [任务参考](../msbuild/msbuild-task-reference.md)
+
+## <a name="see-also"></a>请参阅
+- [任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)

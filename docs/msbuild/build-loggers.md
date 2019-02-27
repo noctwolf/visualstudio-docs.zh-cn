@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8ef9aa27638c01b0b941284b6c5a0fff442c4c
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 9c5bb6bbd3d05c22b7615a027ac3fcf6aa686156
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853516"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602476"
 ---
 # <a name="build-loggers"></a>生成记录器
 记录器提供一种方法，通过此方法可自定义生成的输出并显示消息、错误或警告以响应特定生成事件。 每个记录器作为 .NET 类实现，此类实现 Microsoft.Build.Framework.dll 程序集中定义的 <xref:Microsoft.Build.Framework.ILogger> 接口。
@@ -25,8 +25,8 @@ ms.locfileid: "55853516"
 在实现记录器时，有两种方法可供选择：
 
 - 直接实现 <xref:Microsoft.Build.Framework.ILogger> 接口。
-- 从 Microsoft.Build.Utilities.dll 程序集中定义的帮助程序类 <xref:Microsoft.Build.Utilities.Logger> 中派生类。 <xref:Microsoft.Build.Utilities.Logger> 实现 <xref:Microsoft.Build.Framework.ILogger>，并提供了一些 <xref:Microsoft.Build.Framework.ILogger> 成员的默认实现代码。  
-  
+- 从 Microsoft.Build.Utilities.dll 程序集中定义的帮助程序类 <xref:Microsoft.Build.Utilities.Logger> 中派生类。 <xref:Microsoft.Build.Utilities.Logger> 实现 <xref:Microsoft.Build.Framework.ILogger>，并提供了一些 <xref:Microsoft.Build.Framework.ILogger> 成员的默认实现代码。
+
   本主题将介绍如何编写派生自 <xref:Microsoft.Build.Utilities.Logger> 的简单记录器，并在控制台上显示用于响应特定生成事件的消息。
 
 ## <a name="register-for-events"></a>注册事件
@@ -61,7 +61,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 ## <a name="example"></a>示例
 
-### <a name="description"></a>说明​​
+### <a name="description"></a>说明
 下面的示例包含记录器的完整代码。
 
 ### <a name="code"></a>代码
@@ -69,12 +69,12 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 ## <a name="example"></a>示例
 
-### <a name="description"></a>说明​​
+### <a name="description"></a>说明
 以下示例演示如何实现将日志写入到文件的记录器（而非在控制台窗口中显示记录器）。
 
 ### <a name="code"></a>代码
 [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
 
 ## <a name="see-also"></a>请参阅
-[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)  
-[MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)

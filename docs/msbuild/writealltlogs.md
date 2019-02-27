@@ -15,34 +15,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bae108ad946485fac3a9ba555978ccc1cb308a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ee3f02be5494f85c0fa36be510f0a0c25caf53b6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919976"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704314"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
-写入所有线程和上下文的跟踪日志。  
-  
-## <a name="syntax"></a>语法  
-  
+写入所有线程和上下文的跟踪日志。
+
+## <a name="syntax"></a>语法
+
 ```cpp
-HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName);  
-```  
-  
-#### <a name="parameters"></a>参数  
- [in] `intermediateDirectory`  
- 存储跟踪日志的目录。  
-  
- [in] `tlogRootName`  
- 日志文件名的根名称。  
-  
-## <a name="return-value"></a>返回值  
- 如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT。  
-  
-## <a name="requirements"></a>要求  
- **标头：** FileTracker.h  
-  
-## <a name="see-also"></a>请参阅  
- [WriteContextTLogs](../msbuild/writecontexttlogs.md)
+HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName);
+```
+
+#### <a name="parameters"></a>参数
+[in] `intermediateDirectory`
+
+ 存储跟踪日志的目录。
+
+[in] `tlogRootName`
+
+ 日志文件名的根名称。
+
+## <a name="return-value"></a>返回值
+ 如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT。
+
+## <a name="requirements"></a>要求
+ **标头：** FileTracker.h
+
+## <a name="see-also"></a>请参阅
+- [WriteContextTLogs](../msbuild/writecontexttlogs.md)

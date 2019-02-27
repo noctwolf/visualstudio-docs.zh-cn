@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 752f4c6535f498b074d2c85b4b7cb6e9870ea862
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 983e10f26e6fd1d8b4b7ff18c73edd65cb4810f4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853935"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634625"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>如何：转义 MSBuild 中的特殊字符
 
@@ -51,6 +51,6 @@ ms.locfileid: "55853935"
 使用表示法 `%<xx>` 替换特殊字符，其中 `<xx>` 表示 ASCII 字符的十六进制值。 例如，若要将星号 (`*`) 用作文本字符，请使用值 `%2A`。
 
 ## <a name="see-also"></a>请参阅
-[MSBuild 概念](../msbuild/msbuild-concepts.md)  
-[MSBuild](../msbuild/msbuild.md)  
-[项](../msbuild/msbuild-items.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [MSBuild](../msbuild/msbuild.md)
+- [项](../msbuild/msbuild-items.md)

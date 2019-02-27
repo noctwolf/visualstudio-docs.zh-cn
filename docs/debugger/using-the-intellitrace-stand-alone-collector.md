@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 446348078f79ae49408dac9a1d00cb29f968b184
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 62fabe86798a957f148c4b497f36e9512663cd17
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316842"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710586"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 独立收集器 (C#，Visual Basic)
 
@@ -172,7 +172,7 @@ ms.locfileid: "56316842"
    > [!NOTE]
    > - 为避免应用速度变慢，请选择本地高速磁盘上不常用的位置。
    >   -   你可以将 .iTrace 文件和收集器文件放在同一位置。 但是，如果你有一个 Web 应用或 SharePoint 应用程序，务必确保该位置与托管应用程序的目录位置不同。
-   > 
+   >
    > [!IMPORTANT]
    > - .iTrace 文件目录中只可包含那些与收集器兼容的标识。 .iTrace 文件中可能包含敏感信息，如用户、数据库、其他源位置及连接字符串数据，因为 IntelliTrace 可记录进入方法参数或作为返回值的任何数据。
    >   -   确保那些可打开 .iTrace 文件的人员拥有查看敏感数据的权限。 共享 .iTrace 文件时要格外小心。 如果其他人员必须访问，请将文件复制到安全的共享位置。

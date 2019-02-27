@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 427aa1e0821d38488b626656a06e8952c381053e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 13590ffaed624a8704d74d738dab35da28b5443b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918099"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843086"
 ---
 # <a name="step-2-write-and-run-code"></a>步骤 2：编写并运行代码
 
@@ -53,7 +53,7 @@ ms.locfileid: "55918099"
 
     ![首次运行程序时的输出](media/vs-getting-started-python-07-output.png)
 
-1. 除了完成语句和函数外，IntelliSense 还提供 Python `import` 和 `from` 语句的完成。 这些完成有助于轻松发现环境中可用的模块以及这些模块的成员。 在编辑器中，删除 `print` 行，开始键入 `import `。 键入空格时会显示模块列表：
+1. 除了完成语句和函数外，IntelliSense 还提供 Python `import` 和 `from` 语句的完成。 这些完成有助于轻松发现环境中可用的模块以及这些模块的成员。 在编辑器中，删除 `print` 行，开始键入 `import`。 键入空格时会显示模块列表：
 
     ![显示 import 语句的可用模块的 IntellSense](media/vs-getting-started-python-08-import1.png)
 

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 461c2c4bc5525eee61c413cb8c25afd6090852a5
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987465"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628320"
 ---
 # <a name="cc-assertions"></a>C/C++ 断言
 断言语句指定你预期程序中的某个点为 true 的条件。 如果该条件不为 true，则断言失败，程序执行中断并显示[“断言失败”对话框](../debugger/assertion-failed-dialog-box.md)。
@@ -46,7 +46,7 @@ Visual C++ 支持基于以下构造的断言语句：
 
 - 使用 C 运行时库的程序的 CRT 断言。
 
-- 其他 C/C++ 程序的 ANSI [assert 函数](/cpp/c-runtime-library/reference/assert-macro-assert-wassert)。  
+- 其他 C/C++ 程序的 ANSI [assert 函数](/cpp/c-runtime-library/reference/assert-macro-assert-wassert)。
 
   可以使用断言来捕捉逻辑错误、 检查操作的结果和测试应处理的错误条件。
 
@@ -63,7 +63,7 @@ Visual C++ 支持基于以下构造的断言语句：
 
 - [MFC ASSERT_VALID 和 CObject::AssertValid](#BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid)
 
-- [AssertValid 的限制](#BKMK_Limitations_of_AssertValid)  
+- [AssertValid 的限制](#BKMK_Limitations_of_AssertValid)
 
   [使用断言](#BKMK_Using_assertions)
 
@@ -339,6 +339,7 @@ _ASSERT(!myErr); // Don't do this, either!
 [在本主题中](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>请参阅
-[调试器安全](../debugger/debugger-security.md)  
-[调试本机代码](../debugger/debugging-native-code.md)  
-[托管代码中的断言](../debugger/assertions-in-managed-code.md)
+
+- [调试器安全](../debugger/debugger-security.md)
+- [调试本机代码](../debugger/debugging-native-code.md)
+- [托管代码中的断言](../debugger/assertions-in-managed-code.md)

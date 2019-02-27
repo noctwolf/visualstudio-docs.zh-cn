@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34d59fbfe6213bbcec1311cf9ad6216b3d8c86c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81cf358d3dfb8fc45a4f696b0483e28673094d44
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629140"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840453"
 ---
 # <a name="automation-support-for-options-pages"></a>选项页的自动化支持
 Vspackage 可以提供自定义**选项**到对话框**工具**菜单 (**工具选项**页面) 中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，可以使它们可用于自动化模型。
@@ -34,7 +34,7 @@ Vspackage 可以提供自定义**选项**到对话框**工具**菜单 (**工具�
 
 4. VSPackage 的自动化对象然后用于提供每个<xref:EnvDTE.Property>返回的<xref:EnvDTE._DTE.Properties%2A>。
 
-   有关示例实现一个自定义**工具选项**页上，请参阅[VSSDK 示例](http://aka.ms/vs2015sdksamples)。
+   有关示例实现一个自定义**工具选项**页上，请参阅[VSSDK 示例](https://aka.ms/vs2015sdksamples)。
 
 ## <a name="see-also"></a>请参阅
 - [公开项目对象](../../extensibility/internals/exposing-project-objects.md)
