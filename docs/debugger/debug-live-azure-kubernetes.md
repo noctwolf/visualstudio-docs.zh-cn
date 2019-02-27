@@ -13,12 +13,12 @@ monikerRange: vs-2019
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: b3bbffc0ae04fa9a91739a14ce4b0b4d85215ea8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 437c9a6d75df3c063a53bda0549c22fd0cbc0876
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335969"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627943"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>调试实时 ASP.NET Azure Kubernetes 服务使用 Snapshot Debugger
 
@@ -57,7 +57,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 1. 附加 Snapshot Debugger。 可以使用多种不同的方法之一：
 
     * 选择**调试 > 附加 Snapshot Debugger...**.选择你的 web 应用部署到 AKS 资源和 Azure 存储帐户，然后依次**附加**。
-  
+
       ![启动快照调试程序从调试菜单](../debugger/media/snapshot-debug-menu-attach.png)
 
     * 右键单击项目，然后选择**发布**，然后在发布页上，单击**附加 Snapshot Debugger**。 选择你的 web 应用部署到 AKS 资源和 Azure 存储帐户，然后依次**附加**。
@@ -67,7 +67,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
     ![启动快照调试程序与 F5 下拉列表菜单](../debugger/media/snapshot-F5-dropdown-attach.png)
 
     * 使用云资源管理器 (**视图 > 云资源管理器**)，右键单击你的 web 应用部署到 AKS 资源和 Azure 存储帐户，然后单击**附加 Snapshot Debugger**。
-  
+
       ![启动快照调试程序与云资源管理器](../debugger/media/snapshot-launch.png)
 
     > [!NOTE]

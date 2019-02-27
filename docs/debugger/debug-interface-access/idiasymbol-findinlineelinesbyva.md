@@ -10,41 +10,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8ada04023c26a113afb82a8ed4f807d6cb3bc3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 81ae02877b7e81e0d2240ab2c6eea68f22f0e2d2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54917882"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622457"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
-检索一个枚举，允许客户端进行循环访问，将内联，直接或间接地，此符号中指定的虚拟地址 (VA) 中的所有函数的行号信息。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT findInlineeLinesByVA (   
-   ULONGLONG             va,  
-   DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `va`  
- [in]指定的地址作为弗吉尼亚  
-  
- `length`  
- [in]中的字节数，以覆盖与此查询指定地址范围。  
-  
- `ppResult`  
- [out]保存`IDiaEnumLineNumbers`对象，其中包含检索到的行号的列表。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)   
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+检索一个枚举，允许客户端进行循环访问，将内联，直接或间接地，此符号中指定的虚拟地址 (VA) 中的所有函数的行号信息。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT findInlineeLinesByVA ( 
+   ULONGLONG             va,
+   DWORD                 length,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>参数
+ `va`
+
+[in]指定的地址作为弗吉尼亚
+
+ `length`
+
+[in]中的字节数，以覆盖与此查询指定地址范围。
+
+ `ppResult`
+
+[out]保存`IDiaEnumLineNumbers`对象，其中包含检索到的行号的列表。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

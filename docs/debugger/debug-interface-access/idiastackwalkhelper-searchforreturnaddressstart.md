@@ -12,39 +12,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: defa8bb926c8115c2ee80fe9260728feac9799be
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a311b10f2fc5b53daff58e93feec3a9cd6077d14
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54938375"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623341"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddressstart"></a>IDiaStackWalkHelper::searchForReturnAddressStart
-搜索指定的堆栈帧的寄信人地址处或附近指定的堆栈地址。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT searchForReturnAddressStart(   
-   IDiaFrameData*  frame,  
-   ULONGLONG       startAddress,  
-   ULONGLONG*      returnAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `frame`  
- [in][IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)对象，表示当前堆栈帧。  
-  
- `startAddress`  
- [in]从此处开始搜索的虚拟内存地址。  
-  
- `ReturnAddress`  
- [out]返回最接近的函数返回地址`startAddress`。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+搜索指定的堆栈帧的寄信人地址处或附近指定的堆栈地址。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT searchForReturnAddressStart( 
+   IDiaFrameData*  frame,
+   ULONGLONG       startAddress,
+   ULONGLONG*      returnAddress
+);
+```
+
+#### <a name="parameters"></a>参数
+ `frame`
+
+[in][IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)对象，表示当前堆栈帧。
+
+ `startAddress`
+
+[in]从此处开始搜索的虚拟内存地址。
+
+ `ReturnAddress`
+
+[out]返回最接近的函数返回地址`startAddress`。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

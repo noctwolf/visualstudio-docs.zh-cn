@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e73fbc4fff9c0742d4bc89d6bc43c5b845a7e1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a2b5602219b9544f12e16c395051804c253807ae
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55039861"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626422"
 ---
 # <a name="idiasymbolgetreference"></a>IDiaSymbol::get_reference
-检索指定类型的指针是否为引用的标志。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_reference (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回`TRUE`指针类型是否为引用; 否则，返回`FALSE`。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
-  
+检索指定类型的指针是否为引用的标志。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_reference ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回`TRUE`指针类型是否为引用; 否则，返回`FALSE`。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
+
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+>  返回值为`S_FALSE`表示该属性不是可用于符号。
+
+## <a name="see-also"></a>请参阅
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

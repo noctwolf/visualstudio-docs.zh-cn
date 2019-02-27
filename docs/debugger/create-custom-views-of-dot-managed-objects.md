@@ -23,15 +23,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57480eff4e2ad6e6c33008be6f1bbc2a2f332432
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 748305683ad8f874c985e2599028152d608ccc84
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55015090"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597411"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>创建自定义视图的对象 (C#，Visual Basic、 c + +)
-可以在调试器变量窗口中自定义 Visual Studio 显示数据类型的方式。  
+可以在调试器变量窗口中自定义 Visual Studio 显示数据类型的方式。
 
 ## <a name="native-code"></a>本机代码
 
@@ -39,16 +39,17 @@ ms.locfileid: "55015090"
 
 ## <a name="attributes"></a>特性
 
-在C#，Visual Basic 和 c + + (C + + CLI 代码仅限)，可以添加自定义数据使用的扩展<xref:System.Diagnostics.DebuggerTypeProxyAttribute>， <xref:System.Diagnostics.DebuggerDisplayAttribute>，并<xref:System.Diagnostics.DebuggerBrowsableAttribute>。  
-  
-在 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 代码中，Visual Basic 不支持 DebuggerBrowsable 特性。 此项限制在 .NET Framework 较高版本中已经删除。    
+在C#，Visual Basic 和 c + + (C + + CLI 代码仅限)，可以添加自定义数据使用的扩展<xref:System.Diagnostics.DebuggerTypeProxyAttribute>， <xref:System.Diagnostics.DebuggerDisplayAttribute>，并<xref:System.Diagnostics.DebuggerBrowsableAttribute>。
+
+在 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 代码中，Visual Basic 不支持 DebuggerBrowsable 特性。 此项限制在 .NET Framework 较高版本中已经删除。
 
 ## <a name="visualizers"></a>可视化工具
 
-可以编写可视化工具来显示任何托管数据类型。 有关详细信息，请参阅[如何：编写可视化工具](/visualstudio/debugger/create-custom-visualizers-of-data)。
-  
-## <a name="see-also"></a>请参阅  
- [使用 DebuggerTypeProxy 属性](../debugger/using-debuggertypeproxy-attribute.md)   
- [使用 DebuggerDisplay 属性](../debugger/using-the-debuggerdisplay-attribute.md)   
- [“监视”和“快速监视”窗口](../debugger/watch-and-quickwatch-windows.md)   
- [使用调试器显示特性增强调试](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+可以编写可视化工具来显示任何托管数据类型。 有关详细信息，请参阅[如何： 编写可视化工具](/visualstudio/debugger/create-custom-visualizers-of-data)。
+
+## <a name="see-also"></a>请参阅
+
+- [使用 DebuggerTypeProxy 特性](../debugger/using-debuggertypeproxy-attribute.md)
+- [使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)
+- [监视和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)
+- [使用调试器显示特性增强调试](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

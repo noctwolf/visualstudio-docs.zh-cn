@@ -1,5 +1,5 @@
 ---
-title: 如何：显示窗口属性 |Microsoft Docs
+title: 如何： 显示窗口属性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8b39629e742328eb70e00d299e2d4fc9919271a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c1be02b5adb486cf101dc9b021ea70bbd72674a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54985547"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698425"
 ---
 # <a name="how-to-display-window-properties"></a>如何：显示窗口属性
-若要了解有关中列出的窗口的详细信息[Windows 视图](../debugger/windows-view.md)，使用[窗口属性对话框](../debugger/window-properties-dialog-box.md)。  
-  
-### <a name="to-open-the-window-properties-dialog-box"></a>若要打开窗口属性对话框  
-  
-1. 选择该项，然后选择**属性**从**视图**菜单。  
-  
+若要了解有关中列出的窗口的详细信息[Windows 视图](../debugger/windows-view.md)，使用[窗口属性对话框](../debugger/window-properties-dialog-box.md)。
+
+### <a name="to-open-the-window-properties-dialog-box"></a>若要打开窗口属性对话框
+
+1. 选择该项，然后选择**属性**从**视图**菜单。
+
    属性对话框都不是模式。 视图窗口中单击的项之间时，对话框的自动刷新，每个选择的项信息。

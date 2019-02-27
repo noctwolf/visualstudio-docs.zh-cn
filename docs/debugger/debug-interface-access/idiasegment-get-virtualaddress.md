@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dff89e6d2552773e78e3e3de051e68cf81de9fc7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a7daec26817638be5338eb10dce83b59a1283d15
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042083"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642165"
 ---
 # <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
-检索部分的开头的虚拟地址 (VA)。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_virtualAddress (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回部分的开头的 VA。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+检索部分的开头的虚拟地址 (VA)。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_virtualAddress ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回部分的开头的 VA。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

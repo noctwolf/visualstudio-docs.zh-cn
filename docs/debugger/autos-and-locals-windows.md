@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec262838de1a154e35a13f0a1b14e7b075f934de
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941978"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636900"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>检查自动和局部变量窗口中的变量
 
 在调试时，“自动变量”和“局部变量”窗口会显示变量值。 仅在调试会话期间，这两个窗口才可用。 “自动变量”窗口显示当前断点周围使用的变量。 “局部变量”窗口显示在局部范围内定义的变量，通常是当前函数或方法。 如果这是你在尝试调试的代码的第一个时间，可能需要阅读[零基础调试](../debugger/debugging-absolute-beginners.md)并[调试技术和工具](../debugger/write-better-code-with-visual-studio.md)之前开始阅读本文。
 
  “自动变量”窗口可用于 C#、Visual Basic、C++ 和 Python 代码，但不可用于 JavaScript 或 F#  。
-  
-若要打开“自动变量”窗口，请在调试时依次选择“调试” > “窗口” > “自动变量”，或按 Ctrl+Alt+V  >  A 调试。  
+
+若要打开“自动变量”窗口，请在调试时依次选择“调试” > “窗口” > “自动变量”，或按 Ctrl+Alt+V  >  A 调试。
 
 若要打开“局部变量”窗口，请在调试时选择“调试” > “窗口” > “局部变量”，或按 Alt+4。
 
@@ -142,13 +142,15 @@ private static int subtractVars(int i, int j)
 
 要在“自动”窗口中查看 `sumVars()` 和 `subtractVars()` 方法调用的返回值，请执行以下操作：
 
-1. 在 `int x = sumVars(a, b) + subtractVars(c, d);` 行上设置断点。  
-   
-1. 开始调试，并在断点处暂停执行，选择**单步跳过**或按**F10**。 您应看到在以下的返回值**自动**窗口：  
-   
-  ![自动返回值C# ](../debugger/media/autosreturnvaluecsharp2.png "自动返回值C#")  
-  
-## <a name="see-also"></a>请参阅  
- [什么是调试？](../debugger/what-is-debugging.md)  
- [调试技术和工具](../debugger/write-better-code-with-visual-studio.md)  
- [首先看一下调试](../debugger/debugger-feature-tour.md)[调试器窗口](../debugger/debugger-windows.md)
+1. 在 `int x = sumVars(a, b) + subtractVars(c, d);` 行上设置断点。
+
+1. 开始调试，并在断点处暂停执行，选择**单步跳过**或按**F10**。 您应看到在以下的返回值**自动**窗口：
+
+  ![自动返回值C# ](../debugger/media/autosreturnvaluecsharp2.png "自动返回值C#")
+
+## <a name="see-also"></a>请参阅
+
+- [什么是调试？](../debugger/what-is-debugging.md)
+- [调试技术和工具](../debugger/write-better-code-with-visual-studio.md)
+- [首先看一下调试](../debugger/debugger-feature-tour.md)
+- [调试器窗口](../debugger/debugger-windows.md)

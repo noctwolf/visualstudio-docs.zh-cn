@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e10252a2065e45a1b2dd14e00972415e24738601
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2b74b924d8d3e10192940686fac0ffce88e3f153
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926925"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692861"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 因为远程调试监视器未正确设置远程计算机上，或者由于网络问题或存在防火墙而无法访问远程计算机，可能会出现此消息。
-  
+
 > [!IMPORTANT]
 >  如果你认为你因产品 bug 而收到此消息，请[报告此问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)到 Visual Studio。 如果需要更多帮助，请参阅 [Talk to Us](../ide/talk-to-us.md) 了解与 Microsoft 联系的方法。
 
@@ -106,16 +106,16 @@ Visual Studio 无法连接到远程调试器。 此消息可能会发生以下�
 
 ## <a name="security_package"></a> 发生了安全包特定错误
 
-这可能是特定于 Windows XP 和 Windows 7 的旧问题。 请参阅此[信息](https://stackoverflow.com/questions/4786016/unable-to-connect-to-the-microsoft-remote-debugging-monitor-a-security-package)。 
+这可能是特定于 Windows XP 和 Windows 7 的旧问题。 请参阅此[信息](https://stackoverflow.com/questions/4786016/unable-to-connect-to-the-microsoft-remote-debugging-monitor-a-security-package)。
 
 ## <a name="causes-and-recommendations"></a>原因和建议
 
-### <a name="dns"></a> 远程计算机不可访问 
+### <a name="dns"></a> 远程计算机不可访问
 
 如果您不能使用远程计算机名称进行连接，请尝试改为使用的 IP 地址。 可以使用`ipconfig`要获取的 IPv4 地址的远程计算机上的命令行中。 如果使用的主机文件，请验证已正确配置。
 
 如果该操作失败，验证是否可通过网络访问远程计算机 ([ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10))远程计算机)。 不支持通过 Internet 进行远程调试，某些 Microsoft Azure 的方案中除外。
-  
+
 ### <a name="server_incorrect"></a> 服务器名称不正确或第三方软件正在干扰远程调试器
 
 在 Visual Studio 中，查看项目属性，并确保服务器名称正确。 请参阅主题[C#和 Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp)并[c + +](../debugger/remote-debugging-cpp.md#remote_cplusplus)。 对于 ASP.NET 中，打开**属性 / Web / 服务器**或**属性 / 调试**具体取决于您的项目类型。
@@ -125,11 +125,11 @@ Visual Studio 无法连接到远程调试器。 此消息可能会发生以下�
 
 如果服务器名称是否正确，则您的防病毒软件或第三方防火墙可能会阻止远程调试器。 本地调试时，这可能是因为 Visual Studio 是 32 位应用程序中，因此它使用 64 位版远程调试器来调试 64 位应用程序。 使用本地计算机内的本地网络进行通信的 32 位和 64 位进程。 计算机会持续进行网络通信，但第三方安全软件可能会阻止通信。
 
-### <a name="user_accounts"></a> 远程调试器使用不同的用户帐户运行 
+### <a name="user_accounts"></a> 远程调试器使用不同的用户帐户运行
 
-远程调试器将默认情况下，仅接受来自启动远程调试器和 Administrators 组的成员的用户的连接。 其他用户必须显式授予的权限。 
- 
-可通过下列方法之一解决此问题：  
+远程调试器将默认情况下，仅接受来自启动远程调试器和 Administrators 组的成员的用户的连接。 其他用户必须显式授予的权限。
+
+可通过下列方法之一解决此问题：
 
 -   将 Visual Studio 用户添加到远程调试器权限 (在远程调试器窗口中，选择**工具 > 权限**)。
 
@@ -137,33 +137,33 @@ Visual Studio 无法连接到远程调试器。 此消息可能会发生以下�
 
     > [!NOTE]
     > 如果远程服务器上运行远程调试器，右键单击远程调试器应用并选择**以管理员身份运行**（或者，可以作为服务运行远程调试器）。 如果你不远程服务器上运行它，只是它正常启动。
-  
--   可以使用“/allow \<username>”参数 `msvsmon /allow <username@computer>` 从命令行启动远程调试器。 
-  
+
+-   可以使用“/allow \<username>”参数 `msvsmon /allow <username@computer>` 从命令行启动远程调试器。
+
 -   或者，可以允许任何用户进行远程调试。 在远程调试器窗口中，转到“工具”>“选项”对话框。 选中“无身份验证”   后，可选中 “允许任何用户进行调试”。 但是，你应该尝试此选项仅当其他选项失败，则为专用网络上。
 
-### <a name="firewall"></a> 远程计算机上的防火墙不允许对远程调试器使用传入连接  
+### <a name="firewall"></a> 远程计算机上的防火墙不允许对远程调试器使用传入连接
  Visual Studio 计算机上的防火墙和远程计算机上的防火墙都必须配置为允许在 Visual Studio 和远程调试器之间进行通信。 有关远程调试器使用的端口的信息，请参阅 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。 有关配置 Windows 防火墙的信息，请参阅 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。
-  
-### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>远程调试器的版本不匹配 Visual Studio 的版本  
+
+### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>远程调试器的版本不匹配 Visual Studio 的版本
  在本地运行的 Visual Studio 的版本必须与远程计算机上运行的远程调试监视器的版本匹配。 若要解决此问题，请下载并安装匹配的远程调试监视器版本。 若要获取远程调试器的正确版本，请参阅[远程调试](../debugger/remote-debugging.md)。
-  
-### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>本地和远程计算机具有不同的身份验证模式  
+
+### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>本地和远程计算机具有不同的身份验证模式
  本地和远程计算机需要使用相同的身份验证模式。 若要解决此问题，请确保这两台计算机使用相同的身份验证模式。 您可以更改身份验证模式。 在远程调试器窗口中，转到**工具 > 选项**对话框。
-  
- 有关身份验证模式的详细信息，请参阅 [Windows 身份验证概述](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11))。   
-  
-### <a name="anti-virus-software-is-blocking-the-connections"></a>防病毒软件正在阻止连接  
- Windows 防病毒软件允许远程调试器连接，但某些第三方防病毒软件可能会阻止它们。 查看你防病毒软件的文档以了解如何允许这些连接。  
-  
-### <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>网络安全策略阻塞远程计算机和 Visual Studio 之间的通信  
- 查看网络安全以确保它没有阻止通信。 有关 Windows 网络安全策略的详细信息，请参阅[安全策略设置](/windows/device-security/security-policy-settings/security-policy-settings)。  
-  
-### <a name="the-network-is-too-busy-to-support-remote-debugging"></a>网络太忙无法支持远程调试  
- 你可能需要在另一个时间进行远程调试，或重新安排另一个时间进行网络上的工作。  
-  
-## <a name="more-help"></a>更多帮助  
+
+ 有关身份验证模式的详细信息，请参阅 [Windows 身份验证概述](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11))。
+
+### <a name="anti-virus-software-is-blocking-the-connections"></a>防病毒软件正在阻止连接
+ Windows 防病毒软件允许远程调试器连接，但某些第三方防病毒软件可能会阻止它们。 查看你防病毒软件的文档以了解如何允许这些连接。
+
+### <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>网络安全策略阻塞远程计算机和 Visual Studio 之间的通信
+ 查看网络安全以确保它没有阻止通信。 有关 Windows 网络安全策略的详细信息，请参阅[安全策略设置](/windows/device-security/security-policy-settings/security-policy-settings)。
+
+### <a name="the-network-is-too-busy-to-support-remote-debugging"></a>网络太忙无法支持远程调试
+ 你可能需要在另一个时间进行远程调试，或重新安排另一个时间进行网络上的工作。
+
+## <a name="more-help"></a>更多帮助
  若要获取更多远程调试器的帮助，请打开远程调试器的帮助页 (**帮助 > 用法**远程调试器中)。
-  
-## <a name="see-also"></a>请参阅  
- [远程调试](../debugger/remote-debugging.md)
+
+## <a name="see-also"></a>请参阅
+- [远程调试](../debugger/remote-debugging.md)

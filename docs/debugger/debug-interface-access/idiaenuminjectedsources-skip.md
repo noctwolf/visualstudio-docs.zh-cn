@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c08266ab4307b382acc5cff3210744a97e79fc02
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 807ed82a68089cb656f68c8cc1881dce683bb8a9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023469"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640137"
 ---
 # <a name="idiaenuminjectedsourcesskip"></a>IDiaEnumInjectedSources::Skip
-跳过枚举序列中的插入源的指定的数目。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- celt  
- [in]若要跳过枚举序列中的插入源数。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`如果没有更多插入的源，以跳过。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+跳过枚举序列中的插入源的指定的数目。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>参数
+ celt
+
+[in]若要跳过枚举序列中的插入源数。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`如果没有更多插入的源，以跳过。
+
+## <a name="see-also"></a>请参阅
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

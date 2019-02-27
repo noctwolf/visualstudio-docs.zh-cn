@@ -14,61 +14,61 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f7d15bca56c2ceaf4626be03edda856252e3ce4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1c636a4178cf278c2bb0ad75f4e78b94758dda30
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55033494"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605193"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;签名&gt;元素 （ClickOnce 部署）
-包含对此部署清单进行数字签名所需的信息。  
-  
-## <a name="syntax"></a>语法  
-  
-```xml  
-  
-      <Signature>   
-   XML signature information   
-</Signature>  
-```  
-  
-## <a name="remarks"></a>备注  
- 使用封装签名的部署清单签名是可选的但建议。 有关对 XML 文件进行签名的详细信息，请参阅 World Wide Web 联合会建议"Xml-signature Syntax and Processing，"中所述[ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/)。  
-  
- 如果你想要对清单签名，哈希必须提供的所有文件。 具有不哈希处理的文件的清单不能进行签名，因为用户不能验证未经哈希的文件的内容。  
-  
-## <a name="example"></a>示例  
- 下面的代码示例演示`Signature`元素中使用的部署清单中[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。  
-  
-```xml  
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
-  <SignedInfo>  
-    <CanonicalizationMethod Algorithm=  
-           "http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />  
-    <SignatureMethod Algorithm=  
-           "http://www.w3.org/2000/09/xmldsig#rsa-sha1" />  
-    <Reference URI="">  
-      <Transforms>  
-        <Transform Algorithm=  
-           "http://www.w3.org/2000/09/xmldsig#enveloped-signature" />  
-      </Transforms>  
-      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />  
-      <DigestValue>d2z5AE...</DigestValue>  
-    </Reference>  
-  </SignedInfo>  
-  <SignatureValue>  
-4PHj6SaopoLp...  
-  </SignatureValue>  
-  <KeyInfo>  
-    <X509Data>  
-      <X509Certificate>  
-MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...  
-      </X509Certificate>  
-    </X509Data>  
-  </KeyInfo>  
-</Signature>  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)
+包含对此部署清单进行数字签名所需的信息。
+
+## <a name="syntax"></a>语法
+
+```xml
+
+      <Signature> 
+   XML signature information 
+</Signature>
+```
+
+## <a name="remarks"></a>备注
+ 使用封装签名的部署清单签名是可选的但建议。 有关对 XML 文件进行签名的详细信息，请参阅 World Wide Web 联合会建议"Xml-signature Syntax and Processing，"中所述[ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/)。
+
+ 如果你想要对清单签名，哈希必须提供的所有文件。 具有不哈希处理的文件的清单不能进行签名，因为用户不能验证未经哈希的文件的内容。
+
+## <a name="example"></a>示例
+ 下面的代码示例演示`Signature`元素中使用的部署清单中[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。
+
+```xml
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+  <SignedInfo>
+    <CanonicalizationMethod Algorithm=
+           "http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+    <SignatureMethod Algorithm=
+           "http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+    <Reference URI="">
+      <Transforms>
+        <Transform Algorithm=
+           "http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+      </Transforms>
+      <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <DigestValue>d2z5AE...</DigestValue>
+    </Reference>
+  </SignedInfo>
+  <SignatureValue>
+4PHj6SaopoLp...
+  </SignatureValue>
+  <KeyInfo>
+    <X509Data>
+      <X509Certificate>
+MIIHnTCCBoWgAwIBAgIKJY9+nwAHAAB...
+      </X509Certificate>
+    </X509Data>
+  </KeyInfo>
+</Signature>
+```
+
+## <a name="see-also"></a>请参阅
+- [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)
