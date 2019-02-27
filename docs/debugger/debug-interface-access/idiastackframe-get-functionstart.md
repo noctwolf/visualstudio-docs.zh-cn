@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c5af84f7d8458855af7cef397f9e631b071c21f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 56a1c700b2a98b51f846e5f1136ef45c67fd5f99
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991367"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56627386"
 ---
 # <a name="idiastackframegetfunctionstart"></a>IDiaStackFrame::get_functionStart
-检索一个标志，指示块是否包含一个函数的入口点。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_functionStart (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回`TRUE`堆栈帧包含入口点的函数; 否则，返回`FALSE`。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果不支持的属性。 否则，返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)
+检索一个标志，指示块是否包含一个函数的入口点。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_functionStart ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回`TRUE`堆栈帧包含入口点的函数; 否则，返回`FALSE`。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果不支持的属性。 否则，返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

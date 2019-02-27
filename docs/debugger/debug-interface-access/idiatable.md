@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ca5cc1806aa1b53a3646c1b67320037ed56983
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 604c68ef82f66358238f94b43f000fae24a076f1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227285"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56616828"
 ---
 # <a name="idiatable"></a>IDiaTable
 枚举 DIA 数据源表。
@@ -31,7 +31,7 @@ IDiaTable : IEnumUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaTable`。
 
-|方法|说明​​|
+|方法|说明|
 |------------|-----------------|
 |[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|检索[IEnumVARIANT 接口](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)此枚举器的版本。|
 |[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|检索表的名称。|
@@ -138,7 +138,7 @@ void UseTable(IDiaSession *pSession)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>请参阅
-[接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)  
-[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)  
-[IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)
+- [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+- [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)
+- [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)

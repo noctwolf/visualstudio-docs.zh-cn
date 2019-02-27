@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20178ee5b241f1748ac7d0467f10ff571db0df96
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: b836a0fef26f34e83f7238ebe4f6c64731b84257
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853399"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610354"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath 任务
 检索 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 程序集的路径。
@@ -31,7 +31,7 @@ ms.locfileid: "55853399"
 ## <a name="task-parameters"></a>任务参数
 下表描述了 `GetFrameworkPath` 任务的参数。
 
-|参数|说明​​|
+|参数|说明|
 |---------------|-----------------|
 |`FrameworkVersion11Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 1.1 版程序集的路径（如存在）。 否则返回 `null`。|
 |`FrameworkVersion20Path`|可选 `String` 输出参数。<br /><br /> 包含 framework 2.0 版程序集的路径（如存在）。 否则返回 `null`。|
@@ -61,5 +61,5 @@ ms.locfileid: "55853399"
 ```
 
 ## <a name="see-also"></a>请参阅
-[任务](../msbuild/msbuild-tasks.md)  
-[任务参考](../msbuild/msbuild-task-reference.md)
+- [任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)

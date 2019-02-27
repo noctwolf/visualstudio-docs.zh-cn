@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d710699912a05839ac32c582f40571b04b2de7c2
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 4e4adb0747ce569bc372daf0d36cfe1719a2ff61
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155744"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597746"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 公开一个堆栈帧的详细信息。
@@ -31,7 +31,7 @@ IDiaFrameData : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaFrameData`。
 
-|方法|说明​​|
+|方法|说明|
 |------------|-----------------|
 |[IDiaFrameData::get_addressSection](../../debugger/debug-interface-access/idiaframedata-get-addresssection.md)|检索的部分一部分的帧的代码地址。|
 |[IDiaFrameData::get_addressOffset](../../debugger/debug-interface-access/idiaframedata-get-addressoffset.md)|检索在框架的代码地址偏移量的部分。|
@@ -120,7 +120,7 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>请参阅
-[接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
-[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)  
-[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)
+- [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
+- [IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)
+- [IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)

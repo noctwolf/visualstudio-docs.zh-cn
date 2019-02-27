@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da2f8312b67610a1f796e6bf9949d24a195428d4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 24317ff7a79815e5af2306b09cc8d2aa3bfdde0d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016484"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56595848"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
-确定从.dbg 文件是否允许查找调试信息。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT RestrictDBGAccess();  
-```  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 任何返回值而不`S_OK`以免寻找.dbg 文件中的调试信息。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)
+确定从.dbg 文件是否允许查找调试信息。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT RestrictDBGAccess();
+```
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="remarks"></a>备注
+ 任何返回值而不`S_OK`以免寻找.dbg 文件中的调试信息。
+
+## <a name="see-also"></a>请参阅
+- [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

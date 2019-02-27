@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e62482df42581b60e4e7758806efd5c7d9300c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d01de837deb5141b4b0bdbb7bebcb50412826b1f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950508"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617153"
 ---
 # <a name="item-functions"></a>项函数
 从 MSBuild 4.0 开始，任务和目标中的代码可以调用项函数来获取项目中各项的相关信息。 这些函数简化 Distinct() 项的获取过程，并且比循环遍历项的速度更快。
@@ -51,7 +51,7 @@ ms.locfileid: "55950508"
 ## <a name="intrinsic-item-functions"></a>内部项函数
 下表列出了可用于各项的内部函数。
 
-|函数|示例|说明​​|
+|函数|示例|说明|
 |--------------|-------------|-----------------|
 |`Count`|`@(MyItem->Count())`|返回项计数。|
 |`DirectoryName`|`@(MyItem->DirectoryName())`|返回每个项的 `Path.DirectoryName` 等效项。|
@@ -100,4 +100,4 @@ ms.locfileid: "55950508"
 ```
 
 ## <a name="see-also"></a>请参阅
-[项](../msbuild/msbuild-items.md)
+- [项](../msbuild/msbuild-items.md)

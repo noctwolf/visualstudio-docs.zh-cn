@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85ad6261dba80e56ab44f43b4c70df79d63bb509
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6594620051675f2c0ce6e06ca098d26e443f624b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55001626"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617231"
 ---
 # <a name="calltarget-task"></a>CallTarget 任务
-调用项目文件中的指定目标。  
+调用项目文件中的指定目标。
 
-## <a name="task-parameters"></a>任务参数  
- 下表描述了 `CallTarget` 任务的参数。  
+## <a name="task-parameters"></a>任务参数
+ 下表描述了 `CallTarget` 任务的参数。
 
 
 | 参数 | 说明 |
@@ -37,31 +37,31 @@ ms.locfileid: "55001626"
 | `Targets` | 可选 `String[]` 参数。<br /><br /> 指定要生成的一个或多个目标。 |
 | `UseResultsCache` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则返回缓存的结果（如存在）。<br /><br /> 注意：运行 MSBuild 任务时，其输出会以生成项列表的形式缓存在作用域 (ProjectFileName, GlobalProperties)[TargetNames] 中。 |
 
-## <a name="remarks"></a>备注  
- 如果 `Targets` 中指定的目标失败，`RunEachTargetSeparately` 为 `true`，则该任务会继续生成剩余目标。  
+## <a name="remarks"></a>备注
+ 如果 `Targets` 中指定的目标失败，`RunEachTargetSeparately` 为 `true`，则该任务会继续生成剩余目标。
 
- 如果要生成默认目标，请使用 [MSBuild 任务](../msbuild/msbuild-task.md)，并将 `Projects` 参数设置为等于 `$(MSBuildProjectFile)`。  
+ 如果要生成默认目标，请使用 [MSBuild 任务](../msbuild/msbuild-task.md)，并将 `Projects` 参数设置为等于 `$(MSBuildProjectFile)`。
 
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 
-## <a name="example"></a>示例  
- 以下示例从内部 `CallOtherTargets` 调用 `TargetA`。  
+## <a name="example"></a>示例
+ 以下示例从内部 `CallOtherTargets` 调用 `TargetA`。
 
-```xml  
-<Project DefaultTargets="CallOtherTargets"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+```xml
+<Project DefaultTargets="CallOtherTargets"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-    <Target Name="CallOtherTargets">  
-        <CallTarget Targets="TargetA"/>  
-    </Target>  
+    <Target Name="CallOtherTargets">
+        <CallTarget Targets="TargetA"/>
+    </Target>
 
-    <Target Name="TargetA">  
-        <Message Text="Building TargetA..." />  
-    </Target>  
+    <Target Name="TargetA">
+        <Message Text="Building TargetA..." />
+    </Target>
 
-</Project>  
-```  
+</Project>
+```
 
-## <a name="see-also"></a>请参阅  
- [任务参考](../msbuild/msbuild-task-reference.md)   
- [目标](../msbuild/msbuild-targets.md)
+## <a name="see-also"></a>请参阅
+- [任务参考](../msbuild/msbuild-task-reference.md)
+- [目标](../msbuild/msbuild-targets.md)

@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0b641c9dd1fe797fc036a6ece893ad61fc52ff87
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: d9563d45d9a09e4402f1586a18fe9e5d7d9775c1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027232"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56611069"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>更改日志（Visual Studio Tools for Unity、Mac）
 Visual Studio Tools for Unity 更改日志。
@@ -34,11 +34,11 @@ Visual Studio Tools for Unity 更改日志。
 -   **调试器：**
 
      -   修复了用于与 Unity 调试器引擎进行通信的库中的死锁，此死锁会导致 Visual Studio 或 Unity 冻结，尤其是在用户点击“附加到 Unity”或重启游戏时。
-     
+
 -   **集成：**
 
      -   修复了选中另一个默认编辑器时 Unity 插件的激活。
-     
+
      -   修复了 Unity 文件模板创建。
 
 ## <a name="1602"></a>1.6.0.2
@@ -49,7 +49,7 @@ Visual Studio Tools for Unity 更改日志。
 -   **集成：**
 
      -   回滚了针对 Unity 性能缺陷的解决方案（此缺陷已由 Unity 修复）。
-     
+
 ## <a name="1601"></a>1.6.0.1
  发布时间：2018 年 7 月 10 日
 
@@ -58,7 +58,7 @@ Visual Studio Tools for Unity 更改日志。
 -   **集成：**
 
      -   支持固定着色器代码着色。
-     
+
 ## <a name="1600"></a>1.6.0.0
  发布时间：2018 年 6 月 26 日
 
@@ -71,23 +71,23 @@ Visual Studio Tools for Unity 更改日志。
 -   **项目生成：**
 
      -   Unity 性能 Bug 的暂时解决方法：生成项目时缓存 MonoIsland。
-     
+
      -   使用新版 Unity 运行时，不要再将可移植 pdb 转换为 mdb。
-     
+
 ## <a name="1502"></a>1.5.0.2
  发布时间：2018 年 4 月 18 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **集成：**
 
     -   添加了对基本着色器代码补全的支持。
-    
+
     -   添加了对在着色器文件中切换注释的支持。
 
 ## <a name="1501"></a>1.5.0.1
  发布时间：2018 年 3 月 28 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **集成：**
@@ -96,7 +96,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="1500"></a>1.5.0.0
  发布时间：2018 年 3 月 21 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **集成：**
@@ -105,7 +105,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="1403"></a>1.4.0.3
  发布时间：2018 年 3 月 5 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **项目生成：**
@@ -118,7 +118,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="1402"></a>1.4.0.2
  发布时间：2018 年 1 月 24 日
- 
+
 ### <a name="bug-fixes"></a>Bug 修复
 
 -   **项目生成：**
@@ -133,7 +133,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="1401"></a>1.4.0.1
  发布时间：2018 年 1 月 23 日
- 
+
 ### <a name="bug-fixes"></a>Bug 修复
 
 -   **集成：**
@@ -142,7 +142,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="1400"></a>1.4.0.0
  发布时间：2017 年 12 月 13 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **项目生成：**
@@ -157,7 +157,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="1301"></a>1.3.0.1
  发布时间：2017 年 12 月 12 日
- 
+
 ### <a name="bug-fixes"></a>Bug 修复
 
 -   **集成：**
@@ -170,7 +170,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="1300"></a>1.3.0.0
  发布时间：2017 年 11 月 20 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **向导：**
@@ -181,7 +181,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="1200"></a>1.2.0.0
  发布时间：2017 年 10 月 23 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **调试器：**
@@ -198,7 +198,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="1103"></a>1.1.0.3
  发布时间：2017 年 10 月 23 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **项目生成：**
@@ -207,7 +207,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="1102"></a>1.1.0.2
  发布时间：2017 年 8 月 8 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **调试器：**
@@ -220,7 +220,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="1101"></a>1.1.0.1
  发布时间：2017 年 7 月 20 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **集成：**
@@ -229,7 +229,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="1100"></a>1.1.0.0
  发布时间：2017 年 7 月 12 日
- 
+
 ### <a name="new-features"></a>新增功能
 
 -   **集成：**
@@ -240,9 +240,9 @@ Visual Studio Tools for Unity 更改日志。
 
     -   修复了使用 mcs.rsp 文件的程序集名称引用。
 
-    -   添加了对 assembly.json 编译单元的支持。    
+    -   添加了对 assembly.json 编译单元的支持。
 
-    -   修复了通过 API 级别进行定义的问题。    
+    -   修复了通过 API 级别进行定义的问题。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -252,7 +252,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ## <a name="1001"></a>1.0.0.1
  发布时间：2017 年 5 月 4 日
- 
+
 ### <a name="bug-fixes"></a>Bug 修复
 
 -   **集成：**

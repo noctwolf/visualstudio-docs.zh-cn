@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ab41ead57671948dcc30a0d3009fad2bfabfa34
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 07666efb673702e20c3c5c4a9b279de729e4c838
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413301"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605397"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>通过在 Visual Studio 中导入发布设置将应用程序发布到 IIS
 
@@ -42,7 +42,7 @@ ms.locfileid: "56413301"
 
     如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 页免费安装。
 
-* 服务器上必须运行 Windows Server 2012 或 Windows Server 2016，并且必须正确安装 [IIS Web 服务器角色](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)（需要生成发布设置文件 (\*.publishsettings)）。 该服务器上还必须安装 ASP.NET 4.5 或 ASP.NET Core。 若要安装 ASP.NET 4.5，请参阅[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。 若要安装 ASP.NET Core，请参阅 [使用 IIS 在 Windows 上托管 ASP.NET Core](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 
+* 服务器上必须运行 Windows Server 2012 或 Windows Server 2016，并且必须正确安装 [IIS Web 服务器角色](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)（需要生成发布设置文件 (\*.publishsettings)）。 该服务器上还必须安装 ASP.NET 4.5 或 ASP.NET Core。 若要安装 ASP.NET 4.5，请参阅[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。 若要安装 ASP.NET Core，请参阅 [使用 IIS 在 Windows 上托管 ASP.NET Core](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>在 Visual Studio 中新建 ASP.NET 项目
 

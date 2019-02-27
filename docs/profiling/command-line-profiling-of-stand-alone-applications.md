@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 728fce7348b94d458a6ce58a86e27ad48726f23c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bcd48f421dcae74e82b0d9249a958f2a834f0a45
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935054"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603282"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>通过命令行分析独立应用程序
-本部分介绍从命令行使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集独立（客户端）应用程序的性能数据的步骤和选项。  
+本部分介绍从命令行使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集独立（客户端）应用程序的性能数据的步骤和选项。
 
-## <a name="common-tasks"></a>常见任务  
+## <a name="common-tasks"></a>常见任务
 
 | 任务 | 相关的内容 |
 | - | - |
@@ -32,9 +32,9 @@ ms.locfileid: "54935054"
 | **添加层交互数据：** 可以添加有关应用程序对 Microsoft [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] 数据库进行的同步 ADO.NET 调用的性能数据。 若要将层交互数据添加到分析运行，需要使用命令行分析工具执行特定的步骤。 | -   [收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md) |
 | **尝试一下：** 使用分布过程以通过采样或检测方法分析示例客户端应用程序。 | -   [演练：使用采样进行命令行分析](../profiling/walkthrough-command-line-profiling-using-sampling.md)<br />-   [演练：使用检测进行命令行分析](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications) |
 
-## <a name="related-tasks"></a>相关任务  
+## <a name="related-tasks"></a>相关任务
 
-|任务|相关内容|  
-|----------|---------------------|  
-|**分析 ASP.NET 应用程序**|-   [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)|  
+|任务|相关内容|
+|----------|---------------------|
+|**分析 ASP.NET 应用程序**|-   [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
 |**分析服务**|-   [分析服务](../profiling/command-line-profiling-of-services.md)|
