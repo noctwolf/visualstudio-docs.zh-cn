@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c483f7fb4941430355ef287bce973e1a1659e
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: f0353234e5a266ca1a344ce7bc304f27d8c3af95
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227127"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56700440"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>如何：测试和调试可视化工具
 编写完可视化工具后，需要对其进行调试和测试。
@@ -54,6 +54,6 @@ ms.locfileid: "56227127"
     有关更完整的示例，请参阅[演练： 编写可视化工具C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)。
 
 ## <a name="see-also"></a>请参阅
-[演练：用 C# 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
-[如何：安装可视化工具](../debugger/how-to-install-a-visualizer.md)  
-[创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)
+- [演练：用 C# 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [如何：安装可视化工具](../debugger/how-to-install-a-visualizer.md)
+- [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)

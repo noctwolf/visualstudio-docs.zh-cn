@@ -15,37 +15,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c81db2a67c11d702b0b35a088fe235542d99a20a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 53f2c1ebd5896eaa8a4b9d5ff4e5cb7856a1f8e2
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54946719"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690483"
 ---
 # <a name="starttrackingcontextwithroot"></a>StartTrackingContextWithRoot
-使用指定根标记的响应文件启动跟踪上下文。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp 
-HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTSTR taskName, LPCTSTR rootMarkerResponseFile);  
-```  
-  
-#### <a name="parameters"></a>参数  
- [in] `intermediateDirectory`  
- 存储跟踪日志的目录。  
-  
- [in] `taskName`  
- 标识跟踪上下文。 此名称用于创建日志文件名。  
-  
- [in] `rootMarkerResponseFile`  
- 包含根标记的响应文件的路径名称。 根名称用于将上下文的所有跟踪聚集在一起。  
-  
-## <a name="return-value"></a>返回值  
- 如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT。  
-  
-## <a name="requirements"></a>要求  
- **标头：** FileTracker.h  
-  
-## <a name="see-also"></a>请参阅  
- [StartTrackingContext](../msbuild/starttrackingcontext.md)
+使用指定根标记的响应文件启动跟踪上下文。
+
+## <a name="syntax"></a>语法
+
+```cpp
+HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTSTR taskName, LPCTSTR rootMarkerResponseFile);
+```
+
+#### <a name="parameters"></a>参数
+[in] `intermediateDirectory`
+
+ 存储跟踪日志的目录。
+
+[in] `taskName`
+
+ 标识跟踪上下文。 此名称用于创建日志文件名。
+
+[in] `rootMarkerResponseFile`
+
+ 包含根标记的响应文件的路径名称。 根名称用于将上下文的所有跟踪聚集在一起。
+
+## <a name="return-value"></a>返回值
+ 如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT。
+
+## <a name="requirements"></a>要求
+ **标头：** FileTracker.h
+
+## <a name="see-also"></a>请参阅
+- [StartTrackingContext](../msbuild/starttrackingcontext.md)

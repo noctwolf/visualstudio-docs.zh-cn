@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5285149bbefa8230940cfad19b5e0391a1e99bd
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
+ms.openlocfilehash: 118b8a6c8d857e626d39cf27d2767f75cd0550ee
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690497"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56704808"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>创建进行调试时的调用堆栈的直观映射 (C#，Visual Basic、 c + +、 JavaScript)
 
@@ -54,7 +54,7 @@ ms.locfileid: "55690497"
 ##  <a name="MapStack"></a>映射调用堆栈
 
 1. 在 Visual Studio Enterprise C#，Visual Basic、 c + + 或 JavaScript 项目中，通过选择启动调试**调试** > **开始调试**或按**F5**.
-   
+
 1. 你的应用进入中断模式或你单步执行函数后，选择**调试** > **代码图**，或按**Ctrl**+**Shift**+**`**.
 
    当前的调用堆栈在新代码图上显示为橙色：
@@ -73,19 +73,19 @@ ms.locfileid: "55690497"
 ## <a name="map-external-code"></a>映射外部代码
 
 默认情况下，只有你自己的代码会显示在图中。 若要在地图上查看外部代码：
-  
+
 - 在中右击**调用堆栈**窗口，然后选择**显示外部代码**:
-  
+
   ![显示外部代码中使用调用堆栈窗口](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
 - 或取消选中**启用 ' 仅我的代码**在 Visual Studio**工具**(或**调试**) >**选项** >  **调试**:
-  
+
   ![显示外部代码使用选项对话框](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
 ## <a name="control-the-maps-layout"></a>控制地图的布局
 
-更改代码图的布局不会影响任何方式中的代码。 
+更改代码图的布局不会影响任何方式中的代码。
 
-若要控制地图的布局，请选择**布局**图工具栏上的菜单。 
+若要控制地图的布局，请选择**布局**图工具栏上的菜单。
 
 在中**布局**菜单中，你可以：
 
@@ -95,9 +95,9 @@ ms.locfileid: "55690497"
 
 ##  <a name="MakeNotes"></a>对代码进行标注
 
-可以添加注释以跟踪代码中发生的情况。 
+可以添加注释以跟踪代码中发生的情况。
 
-若要添加注释，在代码图中右键单击并选择**编辑** > **新注释**，然后键入注释。 
+若要添加注释，在代码图中右键单击并选择**编辑** > **新注释**，然后键入注释。
 
 若要在注释中添加新行，请按**Shift**+**Enter**。
 
@@ -109,11 +109,11 @@ ms.locfileid: "55690497"
 
 ![使用下一个调用堆栈更新代码映射](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-若要停止自动添加新的调用堆栈中的映射，请选择![显示调用自动堆栈代码图上](../debugger/media/debuggermap_automaticupdateicon.gif "显示调用自动堆栈代码图上")代码图工具栏上。 该映射将继续突出显示现有调用堆栈。 若要手动添加到映射的当前调用堆栈，请按**Ctrl**+**Shift**+**`**。 
+若要停止自动添加新的调用堆栈中的映射，请选择![显示调用自动堆栈代码图上](../debugger/media/debuggermap_automaticupdateicon.gif "显示调用自动堆栈代码图上")代码图工具栏上。 该映射将继续突出显示现有调用堆栈。 若要手动添加到映射的当前调用堆栈，请按**Ctrl**+**Shift**+**`**。
 
 ##  <a name="AddRelatedCode"></a>向映射添加相关代码
 
-现在，已在生成一个图中，C#或 Visual Basic 中，可以添加字段、 属性和其他方法，来跟踪代码中发生的情况等项目。 
+现在，已在生成一个图中，C#或 Visual Basic 中，可以添加字段、 属性和其他方法，来跟踪代码中发生的情况等项目。
 
 若要转到代码中方法的定义，双击方法在映射中，或选择它并按**F12**，或右键单击它，然后选择**转到定义**。
 
@@ -151,7 +151,7 @@ ms.locfileid: "55690497"
 
 可以导出映射、 Microsoft outlook 向其他人发送它、 将其保存到您的解决方案，和签入版本控制。
 
-若要共享或保存该映射，使用**共享**代码图工具栏中。 
+若要共享或保存该映射，使用**共享**代码图工具栏中。
 
 ![与他人共享调用堆栈代码图](../debugger/media/debuggermap_sharewithothers.png "与他人共享调用堆栈代码图")
 

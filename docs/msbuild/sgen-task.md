@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1d3b504f5987eca850cb2cbd73223c5c115fcde
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 548943b9d203cf84773385f6b12d70dcb246b708
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948214"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607351"
 ---
 # <a name="sgen-task"></a>SGen 任务
-创建指定程序集中的类型的 XML 序列化程序集。 此任务将包装 XML 序列化程序生成器工具 (Sgen.exe)。 有关详细信息，请参阅 [XML 序列化程序生成器工具 (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)。  
+创建指定程序集中的类型的 XML 序列化程序集。 此任务将包装 XML 序列化程序生成器工具 (Sgen.exe)。 有关详细信息，请参阅 [XML 序列化程序生成器工具 (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)。
 
-## <a name="parameters"></a>参数  
- 下表描述了 `SGen` 任务的参数。  
+## <a name="parameters"></a>参数
+ 下表描述了 `SGen` 任务的参数。
 
 
 | 参数 | 说明 |
@@ -50,10 +50,10 @@ ms.locfileid: "54948214"
 | `Types` | 可选 `String[]` 参数。<br /><br /> 获取或设置要为其生成序列化代码的特定类型的列表。 SGen 将仅生成这些类型的序列化代码。 |
 | `UseProxyTypes` | 必选 `Boolean` 参数。<br /><br /> 如果为 `true`，则 SGen 任务仅生成 XML Web service 代理类型的序列化代码。 |
 
-## <a name="remarks"></a>备注  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类。 有关这些其他参数的列表及其说明，请参阅 [ToolTaskExtension 基类](../msbuild/tooltaskextension-base-class.md)。  
+## <a name="remarks"></a>备注
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类。 有关这些其他参数的列表及其说明，请参阅 [ToolTaskExtension 基类](../msbuild/tooltaskextension-base-class.md)。
 
-## <a name="see-also"></a>请参阅  
- [任务参考](../msbuild/msbuild-task-reference.md)   
- [任务](../msbuild/msbuild-tasks.md)   
- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+## <a name="see-also"></a>请参阅
+- [任务参考](../msbuild/msbuild-task-reference.md)
+- [任务](../msbuild/msbuild-tasks.md)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)

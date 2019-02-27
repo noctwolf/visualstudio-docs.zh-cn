@@ -8,15 +8,14 @@ manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 744b0861a1cd0f27974765822946f3c6986bdba6
-ms.sourcegitcommit: a916ce1eec19d49f060146f7dd5b65f3925158dd
+ms.openlocfilehash: c3eccdd231db075b7022548aabbd61f382a79900
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55231943"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842459"
 ---
 # <a name="installation"></a>安装
 
@@ -26,7 +25,7 @@ ms.locfileid: "55231943"
 
 此扩展适用于 Visual Studio 2015、Visual Studio 2017、社区版或更高版本。
 
-可以从 [Visual Studio Marketplace](http://aka.ms/vstoolsforai) 或 Visual Studio 中下载工具：
+可以从 [Visual Studio Marketplace](https://aka.ms/vstoolsforai) 或 Visual Studio 中下载工具：
 
 1. 依次选择“工具” > “扩展和更新”。
 

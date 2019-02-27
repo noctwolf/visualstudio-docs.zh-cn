@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf6957b0757da709a7f95ccf58b1b192e0edf098
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602034"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841712"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>演练：分析 SharePoint 应用程序
   本演练演示在 Visual Studio 中如何使用分析工具优化 SharePoint 应用程序的性能。 此示例应用程序是 SharePoint 功能事件接收器，其中包含降低功能事件接收器性能的空闲循环。 Visual Studio 探查器，可以找到和消除开销最大 （最慢执行） 项目的一部分，也称为*热路径*。
@@ -47,7 +47,7 @@ ms.locfileid: "56602034"
 ## <a name="create-a-sharepoint-project"></a>创建 SharePoint 项目
  首先，创建一个 SharePoint 项目。
 
-#### <a name="to-create-a-sharepoint-project"></a>创建 SharePoint 项目
+### <a name="to-create-a-sharepoint-project"></a>创建 SharePoint 项目
 
 1. 在菜单栏上依次选择**文件** > **新建** > **项目**显示**新建项目**对话框。
 
@@ -70,7 +70,7 @@ ms.locfileid: "56602034"
 ## <a name="add-a-feature-and-feature-event-receiver"></a>添加功能和功能事件接收器
  接下来，向项目中添加功能和该功能的事件接收器。 此事件接收器将包含要分析的代码。
 
-#### <a name="to-add-a-feature-and-feature-event-receiver"></a>添加功能和功能事件接收器。
+### <a name="to-add-a-feature-and-feature-event-receiver"></a>添加功能和功能事件接收器。
 
 1.  在中**解决方案资源管理器**，打开快捷菜单**功能**节点，选择**添加功能**，并将名称保留为默认值为**Feature1**.
 
@@ -191,7 +191,7 @@ ms.locfileid: "56602034"
 ## <a name="configure-and-deploy-the-sharepoint-application"></a>配置和部署 SharePoint 应用程序
  SharePoint 项目现已就绪，将其配置并部署到 SharePoint 服务器。
 
-#### <a name="to-configure-and-deploy-the-sharepoint-application"></a>配置和部署 SharePoint 应用程序
+### <a name="to-configure-and-deploy-the-sharepoint-application"></a>配置和部署 SharePoint 应用程序
 
 1.  上**分析**菜单中，选择**启动性能向导**。
 
@@ -214,7 +214,7 @@ ms.locfileid: "56602034"
 ## <a name="run-the-sharepoint-application"></a>运行 SharePoint 应用程序
  激活 SharePoint 中的功能，触发要运行的 `FeatureActivation` 事件代码。
 
-#### <a name="to-run-the-sharepoint-application"></a>运行 SharePoint 应用程序
+### <a name="to-run-the-sharepoint-application"></a>运行 SharePoint 应用程序
 
 1.  在 SharePoint 中，打开**站点操作**菜单，然后选择**站点设置**。
 
@@ -235,7 +235,7 @@ ms.locfileid: "56602034"
 ## <a name="view-and-interpret-the-profile-results"></a>查看和解释的配置文件结果
  现在你已运行并分析 SharePoint 应用程序，请查看测试结果。
 
-#### <a name="to-view-and-interpret-the-profile-results"></a>若要查看和解释的配置文件结果
+### <a name="to-view-and-interpret-the-profile-results"></a>若要查看和解释的配置文件结果
 
 1.  在中**执行单个工作最多的函数**部分的示例分析报告，请注意，`TimeCounter`位于列表的顶部附近。
 
@@ -256,7 +256,7 @@ ms.locfileid: "56602034"
 ## <a name="fix-the-code-and-reprofile-the-application"></a>修复代码并重新分析应用程序
  现在已找出 SharePoint 应用程序中的作用点函数，请将其修复。
 
-#### <a name="to-fix-the-code-and-reprofile-the-application"></a>修复代码并重新分析应用程序
+### <a name="to-fix-the-code-and-reprofile-the-application"></a>修复代码并重新分析应用程序
 
 1.  在功能事件接收器代码中，注释掉 `TimeCounter` 中的 `FeatureActivated` 方法调用，防止它被调用。
 

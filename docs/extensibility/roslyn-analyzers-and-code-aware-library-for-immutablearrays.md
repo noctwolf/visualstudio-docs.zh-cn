@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d6b603a59ad27052ab8eb9bbb88942584aa5293
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55000895"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843307"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 分析器和 immutablearrays 的代码识别库
 
@@ -25,7 +25,7 @@ ms.locfileid: "55000895"
 
 * Visual Studio 2015 (非 Express Edition) 或更高版本。 您可以使用免费[Visual Studio Community Edition](https://visualstudio.microsoft.com/vs/community/)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。 您还可以在安装 Visual Studio 中，检查**Visual Studio 扩展性工具**下**常用工具**同时安装 SDK。 如果已安装 Visual Studio，还可以通过转到主菜单中安装此 SDK**文件** > **新建** > **项目**，选择**C#** 中的左侧的导航窗格中，和然后选择**扩展性**。 当你选择"**安装 Visual Studio 扩展性工具**"痕迹导航项目模板，它会提示你下载并安装 SDK。
-* [.NET 编译器平台 ("Roslyn") SDK](http://aka.ms/roslynsdktemplates)。 此外可以安装此 SDK，通过转到主菜单**文件** > **新建** > **项目**、 选择**C#** 在左侧的导航窗格中，然后选择**扩展性**。 当你选择"**下载.NET Compiler Platform SDK**"痕迹导航项目模板，它会提示你下载并安装 SDK。 此 SDK 包括[Roslyn 语法可视化工具](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。 找出哪些代码模型类型此有用的工具可帮助您应查找在您的分析器。 对于特定的代码模型类型，因此你的代码仅在必要时执行，并可以专注于仅分析相关的代码在代码分析工具基础结构调用。
+* [.NET 编译器平台 ("Roslyn") SDK](https://aka.ms/roslynsdktemplates)。 此外可以安装此 SDK，通过转到主菜单**文件** > **新建** > **项目**、 选择**C#** 在左侧的导航窗格中，然后选择**扩展性**。 当你选择"**下载.NET Compiler Platform SDK**"痕迹导航项目模板，它会提示你下载并安装 SDK。 此 SDK 包括[Roslyn 语法可视化工具](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。 找出哪些代码模型类型此有用的工具可帮助您应查找在您的分析器。 对于特定的代码模型类型，因此你的代码仅在必要时执行，并可以专注于仅分析相关的代码在代码分析工具基础结构调用。
 
 ## <a name="whats-the-problem"></a>怎么了？
 

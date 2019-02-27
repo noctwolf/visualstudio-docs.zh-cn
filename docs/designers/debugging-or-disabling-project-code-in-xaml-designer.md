@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d29c23873bc22172e73c5bf8db0789177b8e9f75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919269"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596733"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>在 XAML 设计器中调试或禁用项目代码
 
@@ -88,7 +88,7 @@ ms.locfileid: "55919269"
 ## <a name="control-display-options"></a>控件显示选项
 
 > [!NOTE]
-> “控件显示选项”仅适用于定目标到 Windows 10 Fall Creators Update（生成号 16299）或更高版本的通用 Windows 平台应用程序。 Visual Studio 2017 版本 15.9 或更高版本提供“控件显示选项”功能。 
+> “控件显示选项”仅适用于定目标到 Windows 10 Fall Creators Update（生成号 16299）或更高版本的通用 Windows 平台应用程序。 Visual Studio 2017 版本 15.9 或更高版本提供“控件显示选项”功能。
 
 在 XAML 设计器中，可以将“控件显示选项”更改为，仅显示 Windows SDK 中的平台控件。 这可能会提升 XAML 设计器的可靠性。
 

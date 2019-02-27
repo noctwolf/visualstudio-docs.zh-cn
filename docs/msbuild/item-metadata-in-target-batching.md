@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe3e959f9e34dfbc757789a5461a920125eb10e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ff9aa4cdc2e3a406b21aeccf5538bcbfdd6b4249
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970317"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606311"
 ---
 # <a name="item-metadata-in-target-batching"></a>目标批处理中的项元数据
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能够对生成目标的输入和输出执行依赖项分析。 如果确定了目标的输入或输出是最新的，将跳过该目标并继续生成过程。 `Target` 元素使用 `Inputs` 和 `Outputs` 属性指定要在依赖项分析过程中检查的项。
@@ -66,7 +66,7 @@ ms.locfileid: "55970317"
 ```
 
 ## <a name="see-also"></a>请参阅
-[如何：增量生成](../msbuild/how-to-build-incrementally.md)  
-[批处理](../msbuild/msbuild-batching.md)  
-[Target 元素 (MSBuild)](../msbuild/target-element-msbuild.md)  
-[任务批处理中的项元数据](../msbuild/item-metadata-in-task-batching.md)
+- [如何：增量生成](../msbuild/how-to-build-incrementally.md)
+- [批处理](../msbuild/msbuild-batching.md)
+- [Target 元素 (MSBuild)](../msbuild/target-element-msbuild.md)
+- [任务批处理中的项元数据](../msbuild/item-metadata-in-task-batching.md)

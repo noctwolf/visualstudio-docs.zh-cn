@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4889c0d9c7342652063633e11c82e7e8eb6d2c6
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853698"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603226"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>如何：配置目标和任务
 可将所选的 MSBuild 任务设置为在其目标环境中运行，而不考虑开发计算机的环境。 例如，当使用 64 位计算机生成面向 32 位体系结构的应用程序时，将在 32 位进程中运行所选的任务。
@@ -108,4 +108,4 @@ ms.locfileid: "55853698"
 > 任务参数在父节点的上下文中，而不是在任务主机的上下文中进行计算。 运行时相关或体系结构相关的环境变量（例如程序文件位置）将计算为与该父节点匹配的值。 但是，如果同一个环境变量直接由任务读取，则它会在任务主机的上下文中正确计算。
 
 ## <a name="see-also"></a>请参阅
-[配置目标和任务](../msbuild/configuring-targets-and-tasks.md)
+- [配置目标和任务](../msbuild/configuring-targets-and-tasks.md)

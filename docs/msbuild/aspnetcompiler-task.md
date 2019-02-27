@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4ac8eef753f656e008187a23a9d9e40a0be19f16
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 90b9111d8d8ae78e5b937942df32fb84c97355fa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853594"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56602268"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 任务
 `AspNetCompiler` 任务包装 aspnet_compiler.exe，后者是用于预编译 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序的实用工具。
@@ -31,7 +31,7 @@ ms.locfileid: "55853594"
 ## <a name="task-parameters"></a>任务参数
 下表描述了 `AspNetCompiler` 任务的参数。
 
-|参数|说明​​|
+|参数|说明|
 |---------------|-----------------|
 |`AllowPartiallyTrustedCallers`|可选 `Boolean` 参数。<br /><br /> 如果此参数为 `true`，则具有强名称的程序集将允许部分信任的调用方。|
 |`Clean`|可选的 `Boolean` 参数<br /><br /> 如果此参数为 `true`，则将以全新方式生成预编译的应用程序。 将重新编译任何之前编译的组件。 默认值为 `false`。 此参数对应于 aspnet_compiler.exe 上的 -c 开关。|
@@ -69,5 +69,5 @@ ms.locfileid: "55853594"
 ```
 
 ## <a name="see-also"></a>请参阅
-* [任务](../msbuild/msbuild-tasks.md)  
+* [任务](../msbuild/msbuild-tasks.md)
 * [任务参考](../msbuild/msbuild-task-reference.md)

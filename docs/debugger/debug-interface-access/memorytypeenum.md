@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e0f0973c0491cd65c2d03be785bb03b8c2f31df
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 19776c8d4ef72149c575d6835e9265e9cdb33727
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227415"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622665"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
 指定要访问的内存的类型。
@@ -34,17 +34,13 @@ enum MemoryTypeEnum {
 ```
 
 #### <a name="parameters"></a>参数
-`MemTypeCode`  
-访问仅代码的内存。
+`MemTypeCode` 访问仅代码的内存。
 
-`MemTypeData`  
-访问数据或堆栈内存。
+`MemTypeData` 访问数据或堆栈内存。
 
-`MemTypeStack`  
-访问仅堆栈内存。
+`MemTypeStack` 访问仅堆栈内存。
 
-`MemTypeAny`  
-访问任何类型的内存。
+`MemTypeAny` 访问任何类型的内存。
 
 ## <a name="remarks"></a>备注
 此枚举中的值传递给[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)方法，以限制对不同类型的内存访问。
@@ -53,5 +49,5 @@ enum MemoryTypeEnum {
 标头： cvconst.h
 
 ## <a name="see-also"></a>请参阅
-[枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)
+- [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaStackWalkHelper::readMemory](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md)

@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 332202d5062b081227619f4007e011f611b6192e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01557fb378f03ffd033495ca42024c1143e67187
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036935"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609496"
 ---
 # <a name="average-cpu-utilization"></a>CPU 平均利用率
-显示在进程持续时间内，已分析的进程对系统逻辑核心的平均利用率。 此图形不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。  
-  
-## <a name="see-also"></a>请参阅  
- [“核心”视图](../profiling/cores-view.md)   
- [CPU 使用率图](../profiling/cpu-utilization-graph.md)
+显示在进程持续时间内，已分析的进程对系统逻辑核心的平均利用率。 此图形不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。
+
+## <a name="see-also"></a>请参阅
+- [内核视图](../profiling/cores-view.md)
+- [CPU 使用率图](../profiling/cpu-utilization-graph.md)
