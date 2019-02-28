@@ -1,5 +1,5 @@
 ---
-title: 如何：启动 Spy + + |Microsoft Docs
+title: 如何： 启动 Spy + + |Microsoft Docs
 ms.date: 12/16/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84e16c5d540aa59ae0c5d56ccb311618ab311bd9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 91eda74b4f83f38434117ab1217d0a20d66d2842
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993452"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712445"
 ---
 # <a name="how-to-start-spy"></a>如何：启动 Spy++
 
-您可以启动 Spy + + 通过 Visual Studio 或命令提示符处。  
-  
- 当你启动 Spy + +，如果显示一条消息询问权更改计算机，请选中**是**。  
-  
+您可以启动 Spy + + 通过 Visual Studio 或命令提示符处。
+
+ 当你启动 Spy + +，如果显示一条消息询问权更改计算机，请选中**是**。
+
 > [!NOTE]
 >  可以运行 Spy + + 的一个实例。 如果尝试启动第二个实例，它只会导致当前正在运行的实例，若要获取焦点。
 
@@ -34,23 +34,23 @@ Spy + + 需要以下组件。 可以从 Visual Studio 安装程序选择这些�
 * 在开发活动下选择**Visual Studio c + + 核心功能**
 
 如果所做的任何更改，请按照提示安装这些组件。
-  
+
 ## <a name="start-spy-from-visual-studio"></a>从 Visual Studio 启动 Spy + +
-  
-上**工具**菜单中，选择**Spy + +**。  
-  
-因为 Spy + + 独立地运行在启动后，你可以关闭 Visual Studio。  
-  
+
+上**工具**菜单中，选择**Spy + +**。
+
+因为 Spy + + 独立地运行在启动后，你可以关闭 Visual Studio。
+
 > [!NOTE]
->  当使用 Spy + + 中记录消息时，它可能会导致操作系统执行得更慢。  
-  
-## <a name="start-spy-at-a-command-prompt"></a>命令提示符处启动 Spy + +  
-  
-1.  在命令提示符窗口中，将目录更改到包含 spyxx.exe 的文件夹。 通常情况下，此文件夹的路径是...\\ *Visual Studio 安装文件夹*\Common7\Tools\\。  
-  
-2.  输入**spyxx.exe**。 
-  
-## <a name="see-also"></a>请参阅  
- [使用 Spy++](../debugger/using-spy-increment.md)   
- [Spy++ 视图](../debugger/spy-increment-views.md)   
- [Spy++ 参考](../debugger/spy-increment-reference.md)
+>  当使用 Spy + + 中记录消息时，它可能会导致操作系统执行得更慢。
+
+## <a name="start-spy-at-a-command-prompt"></a>命令提示符处启动 Spy + +
+
+1.  在命令提示符窗口中，将目录更改到包含 spyxx.exe 的文件夹。 通常情况下，此文件夹的路径是...\\ *Visual Studio 安装文件夹*\Common7\Tools\\。
+
+2.  输入**spyxx.exe**。
+
+## <a name="see-also"></a>请参阅
+- [使用 Spy++](../debugger/using-spy-increment.md)
+- [Spy++ 视图](../debugger/spy-increment-views.md)
+- [Spy++ 参考](../debugger/spy-increment-reference.md)

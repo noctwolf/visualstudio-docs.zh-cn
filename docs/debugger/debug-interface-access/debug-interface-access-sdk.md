@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 161934d30c7cd4ecb9d2658e7dac12e46049be1a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 915f594a984af41da167e0fd3d58beb2f6ddd978
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54932293"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608079"
 ---
 # <a name="debug-interface-access-sdk"></a>调试接口访问 SDK
 
@@ -27,17 +27,22 @@ Microsoft 调试接口访问软件开发工具包 (DIA SDK) 提供了调试信�
 
 ## <a name="in-this-section"></a>本节内容
 
-[入门](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+[入门](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)
+
 概述了 DIA SDK 功能，并指定 DIA SDK 以及必需的标头和库文件的安装。
 
-[查询 .Pdb 文件](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+[查询 .Pdb 文件](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+
 说明了如何使用 DIA API 来查询.pdb 文件。
 
-[符号和符号标记](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+[符号和符号标记](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+
 讨论如何在 DIA API 中使用符号和符号标记。
 
-[引用](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+[引用](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+
 包含接口、 方法、 枚举和结构 DIA API。
 
-[Dia2dump 示例](../../debugger/debug-interface-access/dia2dump-sample.md)  
+[Dia2dump 示例](../../debugger/debug-interface-access/dia2dump-sample.md)
+
 说明了如何使用 DIA API 来搜索和浏览的调试信息。

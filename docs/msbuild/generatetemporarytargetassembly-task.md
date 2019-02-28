@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3923cc545cc04b544db4771374fddabf2cc272fd
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 864c15203b0b9601f2c9f5bd1421acf48120bb41
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853864"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610029"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 任务
 如果项目中至少有一个 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 页引用该项目中本地声明的类型，则 <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> 任务会生成一个程序集。 在生成过程完成后或者在生成过程失败的情况下，生成的程序集会被删除。
 
 ## <a name="task-parameters"></a>任务参数
 
-| 参数 | 说明​​ |
+| 参数 | 说明 |
 |--------------------------| - |
 | `AssemblyName` | 必需的 **String** 参数。<br /><br /> 指定为项目生成的程序集的短名称，该名称同时也是临时生成的目标程序集的名称。 例如，如果项目生成一个名为 *WinExeAssembly.exe* 的 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 可执行文件，则 **AssemblyName** 参数的值为 **WinExeAssembly**。 |
 | `CompileTargetName` | 必需的 **String** 参数。<br /><br /> 指定用于从源代码文件生成程序集的 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 目标的名称。 **CompileTargetName** 的典型值为 **CoreCompile**。 |
@@ -71,9 +71,9 @@ ms.locfileid: "55853864"
 ```
 
 ## <a name="see-also"></a>请参阅
-[WPF MSBuild 参考](../msbuild/wpf-msbuild-reference.md)  
-[任务参考](../msbuild/wpf-msbuild-task-reference.md)  
-[MSBuild 参考](../msbuild/msbuild-reference.md)  
-[任务参考](../msbuild/msbuild-task-reference.md)  
-[生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[WPF XAML 浏览器应用程序概述](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [WPF MSBuild 参考](../msbuild/wpf-msbuild-reference.md)
+- [任务参考](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild 参考](../msbuild/msbuild-reference.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)
+- [生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [WPF XAML 浏览器应用程序概述](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

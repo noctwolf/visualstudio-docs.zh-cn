@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3499465c6b1027232cb42580b2e099a2f74b83ec
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 08b58dd22e47844e62c0d312efc17e332c53f2c1
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54947473"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702169"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Visual Studio 2017 中的远程 IIS 计算机上的远程调试 ASP.NET Core
 若要调试已部署到 IIS 的 ASP.NET 应用程序，安装和运行远程工具的计算机上在其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
@@ -40,7 +40,7 @@ ms.locfileid: "54947473"
 
 * 如果需要帮助，确保您的应用程序设置已完成，部署，并正确运行在 IIS 中，以便可以调试，请按照本主题中的所有步骤。
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 计算机上创建 ASP.NET Core 应用程序 
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 计算机上创建 ASP.NET Core 应用程序
 
 1. 创建新的 ASP.NET Core 应用程序。 (**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET Core Web 应用程序**)。
 
@@ -147,7 +147,7 @@ ms.locfileid: "54947473"
 在本教程中，我们将使用 Visual Studio 2017。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-  
+
 ## <a name="BKMK_setup"></a> 设置 Windows Server 上的远程调试器
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
@@ -163,7 +163,7 @@ ms.locfileid: "54947473"
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 中，您可以重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...**（shift + Alt + P）。 
+    > 在 Visual Studio 2017 中，您可以重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...**（shift + Alt + P）。
 
 3. 将限定符字段设置为“\<remote computer name>:4022”。
 4. 单击“刷新”。
@@ -181,7 +181,7 @@ ms.locfileid: "54947473"
 7. 单击 **“附加”**。
 
 8. 打开远程计算机的网站。 在浏览器中，转到 http://\<remote computer name>。
-    
+
     将显示 ASP.NET 网页。
 
 9. 在运行的 ASP.NET 应用程序，单击链接到**有关**页。

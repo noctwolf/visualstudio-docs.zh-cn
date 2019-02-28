@@ -10,24 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c05e19b3bbd5078b29628101e90ca33592cda31
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2cbfbfb5ee11711b36d20d808cef22b42bcc43b5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55014037"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720999"
 ---
 # <a name="view-menu-commands"></a>“视图”菜单命令
-**视图**菜单提供用于控制命令 Spy + + 用户界面。  
-  
- **字体**  
- 此时将打开**字体**对话框中，您可以在其中选择当前的 Spy + + 视图中存在使用的字体。  
-  
- **工具栏**  
- 隐藏或显示工具栏。  
-  
- **状态栏**  
- 隐藏或显示状态栏。  
-  
- **属性**  
- 此时将打开**属性**活动视图的对话框。
+**视图**菜单提供用于控制命令 Spy + + 用户界面。
+
+ **字体**将打开**字体**对话框中，您可以在其中选择当前的 Spy + + 视图中存在使用的字体。
+
+ **工具栏**隐藏或显示工具栏。
+
+ **状态栏**隐藏或显示状态栏。
+
+ **属性**将打开**属性**活动视图的对话框。

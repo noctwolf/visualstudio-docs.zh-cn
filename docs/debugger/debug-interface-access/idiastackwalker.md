@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67c19b37fbe6d5867e44a81233c44aceb5138b68
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 5ad74f92765ee449eab1e3089511a063e70d96a0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227220"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617062"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 提供方法来执行堆栈遍历的.pdb 文件中使用的信息。
@@ -31,7 +31,7 @@ IDiaStackWalker: IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaStackWalker`。
 
-|方法|说明​​|
+|方法|说明|
 |------------|-----------------|
 |[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|检索 x86 堆栈帧枚举器的平台。|
 |[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|检索特定平台类型的堆栈帧枚举器。|
@@ -67,5 +67,5 @@ if (FAILED(hr))
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>请参阅
-[接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

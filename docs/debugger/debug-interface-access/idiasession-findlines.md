@@ -12,41 +12,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae2278835f6de612b61e5fc0a2a1fc2689bad564
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b127cbc5c9ddc5a2aa2d293d1371bab18d191fdb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019471"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642880"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
-检索指定的编译单位和源文件标识符中的行号。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT findLines (   
-   IDiaSymbol*           compiland,  
-   IDiaSourceFile*       file,  
-   IDiaEnumLineNumbers** ppResult  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `compiland`  
- [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，表示将编译单位。 使用此接口作为要在其中搜索的行号的上下文。  
-  
- `file`  
- [in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)对象，表示要在其中搜索的行号的源文件。  
-  
- `ppResult`  
- [out]返回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)检索包含的行号列表的对象。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+检索指定的编译单位和源文件标识符中的行号。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT findLines ( 
+   IDiaSymbol*           compiland,
+   IDiaSourceFile*       file,
+   IDiaEnumLineNumbers** ppResult
+);
+```
+
+#### <a name="parameters"></a>参数
+ `compiland`
+
+[in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，表示将编译单位。 使用此接口作为要在其中搜索的行号的上下文。
+
+ `file`
+
+[in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)对象，表示要在其中搜索的行号的源文件。
+
+ `ppResult`
+
+[out]返回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)检索包含的行号列表的对象。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -10,24 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2b026da51014ec8ffb5de444b4e42978604bf7c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: bc840ac19e48f6a0a6a597ec667a4bc799070e59
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931994"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56707102"
 ---
 # <a name="tree-menu-commands"></a>“树”菜单命令
-**树**菜单提供用于展开或折叠视图命令。  
-  
- **展开一级**  
- 通过显示其下的一个级别展开系统视图中当前所选的项。  
-  
- **展开分支**  
- 展开当前选定项下的所有级别。  
-  
- **全部展开**  
- 将展开并显示在系统视图中的所有级别。  
-  
- **折叠**  
- 折叠当前选定项下的所有层。
+**树**菜单提供用于展开或折叠视图命令。
+
+ **展开一级**通过显示其下的一个级别展开系统视图中当前选定的项。
+
+ **展开分支**展开当前选定项下的所有级别。
+
+ **全部展开**展开此项，并显示系统视图中的所有级别。
+
+ **折叠**折叠当前选定项下的所有层。

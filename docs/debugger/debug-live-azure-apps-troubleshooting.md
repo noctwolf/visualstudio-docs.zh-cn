@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbdbeb10d9d5d7afb7adf17b7a27a0b8d59c9e72
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bb6e7332386e7dc22465eaffedd01a969673dc3c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335475"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607910"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中的快照调试疑难解答和已知问题
 
@@ -96,8 +96,8 @@ ms.locfileid: "56335475"
 
 ## <a name="see-also"></a>请参阅
 
-[在 Visual Studio 中进行调试](../debugger/index.md)  
-[使用快照调试器调试实时 ASP.NET 应用](../debugger/debug-live-azure-applications.md)  
-[调试实时 ASP.NET Azure 虚拟 Machines\Virtual 机规模集使用快照调试程序](../debugger/debug-live-azure-virtual-machines.md)  
-[调试实时 ASP.NET Azure Kubernetes，使用快照调试程序](../debugger/debug-live-azure-kubernetes.md)  
-[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)  
+- [在 Visual Studio 中进行调试](../debugger/index.md)
+- [使用快照调试器调试实时 ASP.NET 应用](../debugger/debug-live-azure-applications.md)
+- [调试实时 ASP.NET Azure 虚拟 Machines\Virtual 机规模集使用快照调试程序](../debugger/debug-live-azure-virtual-machines.md)
+- [调试实时 ASP.NET Azure Kubernetes，使用快照调试程序](../debugger/debug-live-azure-kubernetes.md)
+- [快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)

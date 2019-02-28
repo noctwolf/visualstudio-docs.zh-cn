@@ -22,36 +22,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d33e1ae22da7980b9f4228243e93568864535ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6346b7751ccb076298c406f3f3e583991bfadfe7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069195"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702949"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>如何查明谁在传递错误的参数值？
-## <a name="problem-description"></a>问题描述  
- 给我的某个函数传递的是错误的参数值。 很多地方都在调用该函数。 如何查明是谁在传递错误值？  
-  
-## <a name="solution"></a>解决方案  
-  
-#### <a name="to-resolve-this-problem"></a>解决此问题  
-  
-1.  在函数的开始处设置一个位置断点。  
-  
-2.  右键单击该断点并选择“条件”。  
-  
-3.  在“断点条件”对话框中，单击“条件”复选框。 请参阅[高级断点](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)。  
-  
-4.  在文本框中输入一个表达式，例如 `Var==3`，此处 `Var` 是包含错误值的参数名称，`3` 是传给此参数的错误值。  
-  
-5.  选择“为真”单选按钮，单击“确定”按钮。  
-  
-6.  现在再次运行程序。 当 `Var` 参数的值为 `3` 时，断点导致程序在函数开始处暂停。  
-  
-7.  然后可以使用“调用堆栈”窗口查找调用函数并定位到其源代码。 有关详细信息，请参阅[如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)。  
-  
-## <a name="see-also"></a>请参阅  
- [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)   
- [断点](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
- [调试本机代码](../debugger/debugging-native-code.md)
+## <a name="problem-description"></a>问题描述
+ 给我的某个函数传递的是错误的参数值。 很多地方都在调用该函数。 如何查明是谁在传递错误值？
+
+## <a name="solution"></a>解决方案
+
+#### <a name="to-resolve-this-problem"></a>解决此问题
+
+1.  在函数的开始处设置一个位置断点。
+
+2.  右键单击该断点并选择“条件”。
+
+3.  在“断点条件”对话框中，单击“条件”复选框。 请参阅[高级断点](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)。
+
+4.  在文本框中输入一个表达式，例如 `Var==3`，此处 `Var` 是包含错误值的参数名称，`3` 是传给此参数的错误值。
+
+5.  选择“为真”单选按钮，单击“确定”按钮。
+
+6.  现在再次运行程序。 当 `Var` 参数的值为 `3` 时，断点导致程序在函数开始处暂停。
+
+7.  然后可以使用“调用堆栈”窗口查找调用函数并定位到其源代码。 有关详细信息，请参阅[如何： 使用调用堆栈窗口](../debugger/how-to-use-the-call-stack-window.md)。
+
+## <a name="see-also"></a>请参阅
+- [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)
+- [断点](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
+- [调试本机代码](../debugger/debugging-native-code.md)

@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb0d0b163830b488c44f1c5e3143e1a87e69d55
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4ad241532454cf1a086f8e85c4f2e16c29c76b26
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54926042"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618648"
 ---
 # <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
-检索为非文件源的代码; 指定的名称也就是说，注入的代码。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_virtualFilename (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回提供给代码注入非文件源的名称。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+检索为非文件源的代码; 指定的名称也就是说，注入的代码。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_virtualFilename ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回提供给代码注入非文件源的名称。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

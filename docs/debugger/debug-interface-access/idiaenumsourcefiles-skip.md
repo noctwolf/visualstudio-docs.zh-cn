@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 946fd14b3be6141763ee3185eac1da153df1c82a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b80a2a0f270ccd76d052d4c7863170448648e138
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54977590"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597460"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
-跳过枚举序列中的源文件指定的数目。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- celt  
- [in]若要跳过枚举序列中的源文件数。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`如果没有更多的源代码文件，以跳过。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)
+跳过枚举序列中的源文件指定的数目。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>参数
+ celt
+
+[in]若要跳过枚举序列中的源文件数。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`如果没有更多的源代码文件，以跳过。
+
+## <a name="see-also"></a>请参阅
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

@@ -12,46 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48babdee829eec50a8b8582e5b48e78b691f1073
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54979044"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679835"
 ---
 # <a name="threads-view"></a>线程视图
-线程视图是在系统上的 windows 与关联的所有线程的平面列表。 显示线程 ID 和每个线程的模块名称。 进程不包括在内，但可以轻松地找到拥有所选的线程的进程。  
-  
-## <a name="procedures"></a>过程  
-  
-#### <a name="to-open-the-threads-view"></a>若要打开线程视图  
-  
-1. 从**Spy**菜单中，选择**线程**。  
-  
-   ![Spy&#43; &#43;线程视图](../debugger/media/spy--_threads.png "Spy + + _Threads")  
-   Spy++ 线程视图  
-  
-   上图显示了线程视图。  
-  
-## <a name="in-this-section"></a>本节内容  
- [线程视图中的线程搜索](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- 介绍如何在线程视图中查找特定线程。  
-  
- [显示线程属性](../debugger/how-to-display-thread-properties.md)  
- 说明如何显示关于线程的详细信息。  
-  
-## <a name="related-sections"></a>相关章节  
- [Spy++ 视图](../debugger/spy-increment-views.md)  
- 介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
-  
- [使用 Spy++](../debugger/using-spy-increment.md)  
- 介绍 Spy + + 工具，并说明如何使用它。  
-  
- [“线程搜索”对话框](../debugger/thread-search-dialog-box.md)  
- 用于查找特定线程在线程视图中的节点。  
-  
- [“线程属性”对话框](../debugger/message-properties-dialog-box.md)  
- 显示在线程视图或消息视图中选择一个线程的属性。  
-  
- [Spy++ 参考](../debugger/spy-increment-reference.md)  
- 包含描述每个 Spy + + 菜单和对话框中的各个部分。
+线程视图是在系统上的 windows 与关联的所有线程的平面列表。 显示线程 ID 和每个线程的模块名称。 进程不包括在内，但可以轻松地找到拥有所选的线程的进程。
+
+## <a name="procedures"></a>过程
+
+#### <a name="to-open-the-threads-view"></a>若要打开线程视图
+
+1. 从**Spy**菜单中，选择**线程**。
+
+   ![Spy&#43; &#43;线程视图](../debugger/media/spy--_threads.png "Spy + + _Threads") Spy + + 线程视图
+
+   上图显示了线程视图。
+
+## <a name="in-this-section"></a>本节内容
+ [线程视图中的线程搜索](../debugger/how-to-search-for-a-thread-in-threads-view.md)介绍了如何在线程视图中查找特定线程。
+
+ [显示线程属性](../debugger/how-to-display-thread-properties.md)介绍了如何显示关于线程的详细信息。
+
+## <a name="related-sections"></a>相关章节
+ [Spy + + 视图](../debugger/spy-increment-views.md)介绍的 windows、 消息、 进程和线程的 Spy + + 树视图。
+
+ [使用 Spy + +](../debugger/using-spy-increment.md)介绍 Spy + + 工具，并说明如何使用它。
+
+ [线程搜索对话框](../debugger/thread-search-dialog-box.md)用于查找特定线程在线程视图中的节点。
+
+ [线程属性对话框](../debugger/message-properties-dialog-box.md)显示在线程视图中选择一个线程的属性或消息视图。
+
+ [Spy + + 参考](../debugger/spy-increment-reference.md)包括描述每个 Spy + + 菜单和对话框中的部分。

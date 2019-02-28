@@ -17,19 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e5f8471a42632f9425df75a6f6b6870fd45348
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fdf515e5ca4aeb20cd9fce0b2a2ea829ad3d2e10
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54958844"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722702"
 ---
 # <a name="edit-and-continue-dialog-box"></a>“编辑并继续”对话框
-（仅限本机）当你在调试过程中编辑了代码并且**编辑并继续**识别出可以应用代码更改时，会显示该对话框。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。  
-  
- **不再显示此对话框**  
- 如果选中此复选框，则“编辑并继续”以后将在不要求权限的情况下应用代码更改。 通过转到“选项”对话框，打开“调试”文件夹、单击“编辑并继续”页，然后选择“由调试命令调用”和“首先询问”，即可重新打开此警告。  
-  
-## <a name="see-also"></a>请参阅  
- [调试器安全](../debugger/debugger-security.md)   
- [“选项”对话框 ->“调试”->“编辑并继续”](https://msdn.microsoft.com/library/bcew296c.aspx)
+（仅限本机）当你在调试过程中编辑了代码并且**编辑并继续**识别出可以应用代码更改时，会显示该对话框。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。
+
+ **永远不会显示此对话框再次**如果选择此复选框，**编辑并继续**将应用代码更改，而不要求在将来的权限。 通过转到“选项”对话框，打开“调试”文件夹、单击“编辑并继续”页，然后选择“由调试命令调用”和“首先询问”，即可重新打开此警告。
+
+## <a name="see-also"></a>请参阅
+- [调试器安全](../debugger/debugger-security.md)
+- [“选项”对话框 ->“调试”->“编辑并继续”](https://msdn.microsoft.com/library/bcew296c.aspx)

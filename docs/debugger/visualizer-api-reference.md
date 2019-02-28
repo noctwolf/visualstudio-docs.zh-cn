@@ -17,31 +17,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9665484a571150f63a4b8d2d1d952999dc9e53b1
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 79d417bcee4bb6e058ea90028a29a87a3527aa5c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945640"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717710"
 ---
 # <a name="visualizer-api-reference"></a>可视化工具 API 参考
 
-可视化工具 API 是专为希望为 Visual Studio 调试器编写可视化工具的用户而提供的。 可视化工具是一种小应用程序，它扩展了 Visual Studio 调试器用户界面的功能。 可视化工具可显示（还可以选择进行编辑）它所针对的特定类型的数据对象。  
-  
-## <a name="in-this-section"></a>本节内容  
-  
-- <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer?displayProperty=fullName>  
-  
-- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService?displayProperty=fullName>  
-  
-- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider?displayProperty=fullName>  
-  
-- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost?displayProperty=fullName>  
-  
-- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>  
-  
+可视化工具 API 是专为希望为 Visual Studio 调试器编写可视化工具的用户而提供的。 可视化工具是一种小应用程序，它扩展了 Visual Studio 调试器用户界面的功能。 可视化工具可显示（还可以选择进行编辑）它所针对的特定类型的数据对象。
+
+## <a name="in-this-section"></a>本节内容
+
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer?displayProperty=fullName>
+
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService?displayProperty=fullName>
+
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider?displayProperty=fullName>
+
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost?displayProperty=fullName>
+
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>
+
 ## <a name="see-also"></a>请参阅
 
- [演练：用 C# 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [如何：编写可视化工具](/visualstudio/debugger/create-custom-visualizers-of-data)   
- [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)
+- [演练：用 C# 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [如何：编写可视化工具](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)

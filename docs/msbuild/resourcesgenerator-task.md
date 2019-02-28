@@ -17,44 +17,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4ea1e45864918ef3b6329da04a8c6b493a50697
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 8ef54bdc3b3c692869b4883cf4f92293551a1958
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55013855"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56636315"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 任务
-<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 任务将一个或多个资源（二进制格式的 .jpg、.ico、.bmp、[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 以及其他扩展名类型）嵌入 .resources 文件中。  
-  
-## <a name="task-parameters"></a>任务参数  
-  
-|参数|说明|  
-|---------------|-----------------|  
-|`OutputPath`|必需的 **String** 参数。<br /><br /> 指定输出目录的路径。 如果路径不是绝对路径，则将它视为相对于根项目目录的路径。|  
-|`OutputResourcesFile`|必需的 **ITaskItem[]** 输出参数。<br /><br /> 指定生成的 .resources 文件的路径和名称。 如果该路径不是绝对路径，则生成根项目目录的相对 .resources 文件。|  
-|`ResourcesFiles`|必需的 **ITaskItem[]** 参数。<br /><br /> 指定一个或多个资源，以嵌入生成的 .resources 文件中。|  
-  
-## <a name="example"></a>示例  
- 以下示例使用单个 .bmp 资源生成 .resources 文件。 向项目根目录的相对目录生成 .bmp 资源。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  <UsingTask   
-    TaskName="Microsoft.Build.Tasks.Windows.ResourcesGenerator"   
-    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />  
-  <Target Name="ResourcesGeneratorTask">  
-    <ResourcesGenerator  
-      ResourceFiles="Resource1.bmp"  
-      OutputPath="myresources"  
-      OutputResourcesFile="myresources\my.resources" />  
-  </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [WPF MSBuild 参考](../msbuild/wpf-msbuild-reference.md)   
- [任务参考](../msbuild/wpf-msbuild-task-reference.md)   
- [MSBuild 参考](../msbuild/msbuild-reference.md)   
- [任务参考](../msbuild/msbuild-task-reference.md)   
- [生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 任务将一个或多个资源（二进制格式的 .jpg、.ico、.bmp、[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 以及其他扩展名类型）嵌入 .resources 文件中。
+
+## <a name="task-parameters"></a>任务参数
+
+|参数|说明|
+|---------------|-----------------|
+|`OutputPath`|必需的 **String** 参数。<br /><br /> 指定输出目录的路径。 如果路径不是绝对路径，则将它视为相对于根项目目录的路径。|
+|`OutputResourcesFile`|必需的 **ITaskItem[]** 输出参数。<br /><br /> 指定生成的 .resources 文件的路径和名称。 如果该路径不是绝对路径，则生成根项目目录的相对 .resources 文件。|
+|`ResourcesFiles`|必需的 **ITaskItem[]** 参数。<br /><br /> 指定一个或多个资源，以嵌入生成的 .resources 文件中。|
+
+## <a name="example"></a>示例
+ 以下示例使用单个 .bmp 资源生成 .resources 文件。 向项目根目录的相对目录生成 .bmp 资源。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.ResourcesGenerator"
+    AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
+  <Target Name="ResourcesGeneratorTask">
+    <ResourcesGenerator
+      ResourceFiles="Resource1.bmp"
+      OutputPath="myresources"
+      OutputResourcesFile="myresources\my.resources" />
+  </Target>
+</Project>
+```
+
+## <a name="see-also"></a>请参阅
+- [WPF MSBuild 参考](../msbuild/wpf-msbuild-reference.md)
+- [任务参考](../msbuild/wpf-msbuild-task-reference.md)
+- [MSBuild 参考](../msbuild/msbuild-reference.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)
+- [生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

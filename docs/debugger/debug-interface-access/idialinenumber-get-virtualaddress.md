@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c5b485bf0fbd06b71aa7fb3239ca2796a4512a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 98826ec691efdca70a9d0ca98b089904b2ed0c48
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54944795"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629776"
 ---
 # <a name="idialinenumbergetvirtualaddress"></a>IDiaLineNumber::get_virtualAddress
-检索块的虚拟地址 (VA)。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_virtualAddress (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回在块的虚拟地址。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+检索块的虚拟地址 (VA)。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_virtualAddress ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回在块的虚拟地址。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

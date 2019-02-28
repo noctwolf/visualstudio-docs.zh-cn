@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71072c597a445d54fc3429e949b24fde81761fc1
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 9b58fcf55741975a776e222b2845ae50774e7fc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227665"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645506"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 检索由其唯一标识符的符号。
@@ -32,10 +32,12 @@ HRESULT symbolById (
 ```
 
 #### <a name="parameters"></a>参数
-`id`  
+`id`
+
 [in]唯一标识符。
 
-`ppSymbol`  
+`ppSymbol`
+
 [out]返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)检索表示该符号的对象。
 
 ## <a name="return-value"></a>返回值
@@ -64,6 +66,6 @@ IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)
 ```
 
 ## <a name="see-also"></a>请参阅
-[IDiaSession](../../debugger/debug-interface-access/idiasession.md)  
-[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
-[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
+- [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

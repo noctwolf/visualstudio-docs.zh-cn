@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a120a1610e6ca62ba4c19bb5dd2289628e1d273
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987400"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608573"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>常量（调试接口访问 SDK）
 这些字符串常量可用于标识程序调试数据库 (PDB) 文件通过 DIA SDK 的各个部分。
@@ -26,7 +26,7 @@ ms.locfileid: "55987400"
 ## <a name="constants"></a>常量
 以下被声明为 C/c + + 宏。
 
-|宏|“值”|
+|宏|值|
 |-----------|-----------|
 |`DiaTable_Symbols`|L"符号"|
 |`DiaTable_Sections`|L"Section"|
@@ -56,7 +56,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 标头： dia2.h
 
 ## <a name="see-also"></a>请参阅
-[引用](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
-[枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)  
-[接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)
+- [引用](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+- [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)

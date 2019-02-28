@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca749d28b7931b6301d591f0bca513877f3060d9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 11bd61cda8c92721fb42c640b0b5100b8054acdf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069676"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698022"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>调试前台程序时如何使用调试器窗口？
-## <a name="problem-description"></a>问题描述  
- 我在尝试调试屏幕绘制问题。 若要观察该问题，必须将程序保持在前台，这意味着不能访问调试窗口。 我该怎么办？  
-  
-## <a name="solution"></a>解决方案  
- 如果有另一台计算机，则可以使用远程调试。 通过两台计算机的设置，当在主机上运行调试器时，可以监视远程计算机上的屏幕绘制。 有关远程调试的详细信息，请参阅[远程调试](../debugger/remote-debugging.md)。  
-  
-## <a name="see-also"></a>请参阅  
- [调试本机代码常见问题](../debugger/debugging-native-code-faqs.md)   
- [调试本机代码](../debugger/debugging-native-code.md)
+## <a name="problem-description"></a>问题描述
+ 我在尝试调试屏幕绘制问题。 若要观察该问题，必须将程序保持在前台，这意味着不能访问调试窗口。 我该怎么办？
+
+## <a name="solution"></a>解决方案
+ 如果有另一台计算机，则可以使用远程调试。 通过两台计算机的设置，当在主机上运行调试器时，可以监视远程计算机上的屏幕绘制。 有关远程调试的详细信息，请参阅[远程调试](../debugger/remote-debugging.md)。
+
+## <a name="see-also"></a>请参阅
+- [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)
+- [调试本机代码](../debugger/debugging-native-code.md)

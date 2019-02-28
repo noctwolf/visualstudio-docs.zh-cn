@@ -19,26 +19,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfa56e76c3bd31572385499dd5055fd63f359a8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 16a73ac066ff0b61570f0ed918308cf8874121d7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948227"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607793"
 ---
 # <a name="setenv-task"></a>SetEnv 任务
-设置或删除指定环境变量的值。  
-  
-## <a name="parameters"></a>参数  
- 下表描述了 SetEnv 任务的参数。  
-  
-|参数|说明|  
-|---------------|-----------------|  
-|**名称**|必需的 **String** 参数。<br /><br /> 环境变量名。|  
-|OutputEnvironmentVariable|可选的 **String** 输出参数。<br /><br /> 包含分配给 Name 参数指定的环境变量的值。|  
-|Prefix|必需的 `Boolean` 参数。<br /><br /> 如果为 `true`，则将 Value 参数的值连接到 Name 参数指定的环境变量的值之前，然后向环境变量分配结果。 如果为 `false`，则仅向环境变量分配 Value 参数的值。|  
-|**Target**|可选 **String** 参数。<br /><br /> 指定环境变量的存储位置。 指定“用户”或“计算机”。<br /><br /> 有关详细信息，请参阅 [EnvironmentVariableTarget 枚举](xref:System.EnvironmentVariableTarget)。|  
-|**值**|可选 **String** 参数。<br /><br /> 分配给 Name 参数指定的环境变量的值。 如果 Value 为空并且该变量存在，则删除该变量。 如果该变量不存在，即使无法执行该操作也不会出现任何错误。<br /><br /> 有关详细信息，请参阅 [Environment::SetEnvironmentVariable 方法](xref:System.Environment.SetEnvironmentVariable%2A)。|  
-  
-## <a name="see-also"></a>请参阅  
- [任务参考](../msbuild/msbuild-task-reference.md)
+设置或删除指定环境变量的值。
+
+## <a name="parameters"></a>参数
+ 下表描述了 SetEnv 任务的参数。
+
+|参数|说明|
+|---------------|-----------------|
+|**名称**|必需的 **String** 参数。<br /><br /> 环境变量名。|
+|OutputEnvironmentVariable|可选的 **String** 输出参数。<br /><br /> 包含分配给 Name 参数指定的环境变量的值。|
+|Prefix|必需的 `Boolean` 参数。<br /><br /> 如果为 `true`，则将 Value 参数的值连接到 Name 参数指定的环境变量的值之前，然后向环境变量分配结果。 如果为 `false`，则仅向环境变量分配 Value 参数的值。|
+|**Target**|可选 **String** 参数。<br /><br /> 指定环境变量的存储位置。 指定“用户”或“计算机”。<br /><br /> 有关详细信息，请参阅 [EnvironmentVariableTarget 枚举](xref:System.EnvironmentVariableTarget)。|
+|**值**|可选 **String** 参数。<br /><br /> 分配给 Name 参数指定的环境变量的值。 如果 Value 为空并且该变量存在，则删除该变量。 如果该变量不存在，即使无法执行该操作也不会出现任何错误。<br /><br /> 有关详细信息，请参阅 [Environment::SetEnvironmentVariable 方法](xref:System.Environment.SetEnvironmentVariable%2A)。|
+
+## <a name="see-also"></a>请参阅
+- [任务参考](../msbuild/msbuild-task-reference.md)
