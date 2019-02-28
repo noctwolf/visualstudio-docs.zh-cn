@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47a076336a9e8f97bae9fdde79a7d8b3b525963
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d7590350fdcfb74f90cd4441e97503a60b298c66
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318792"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954275"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>添加语言服务器协议扩展
 
@@ -129,7 +129,7 @@ LSP 不包括如何提供对语言的文本着色的规范。 若要提供自定
 
 4. 创建 *.pkgdef*文件，并添加与此类似的行：
 
-    ```xml
+    ```
     [$RootKey$\TextMate\Repositories]
     "MyLang"="$PackageFolder$\Grammars"
     ```
@@ -313,13 +313,13 @@ namespace MockLanguageExtension
 
 4. 将.pkgdef 文件添加到项目 （添加新的文本文件并将文件扩展名更改为.pkgdef）。 Pkgdef 文件应包含此信息：
 
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
     ```
 
     示例:
-    ```xml
+    ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"
     ```
@@ -345,8 +345,10 @@ namespace MockLanguageExtension
         "foo.maxNumberOfProblems": 10
     }
     ```
-    ### <a name="enabling-diagnostics-tracing"></a>启用诊断跟踪
-    可以启用诊断跟踪输出之间的客户端和服务器，在调试问题时非常有用的所有消息。 若要启用诊断跟踪，请执行以下操作：
+
+### <a name="enabling-diagnostics-tracing"></a>启用诊断跟踪
+
+可以启用诊断跟踪输出之间的客户端和服务器，在调试问题时非常有用的所有消息。 若要启用诊断跟踪，请执行以下操作：
 
 4. 打开或创建工作区设置文件*VSWorkspaceSettings.json* （请参阅"用户编辑的工作区设置"）。
 5. 在设置 json 文件中添加以下行：
