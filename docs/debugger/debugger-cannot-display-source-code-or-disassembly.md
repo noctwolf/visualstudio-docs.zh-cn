@@ -16,27 +16,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3d745622666bd6458d5c3de916bc7b7787292e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 466f8103b2b61d9922621ff2734dc88a20cd36bf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54916454"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683969"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>调试器不能显示源代码或反汇编
-此错误显示如下：  
-  
- 代码在当前位置停止执行，但调试器不能显示当前位置的源代码或反汇编。  
-  
- 该错误信息可能由于许多原因而发生：  
-  
--   可能在调试不支持汇编的语言时在无源代码的位置命中了某个断点。 打开**断点**窗口中，找到所需断点，并将其删除。  
-  
--   如果正在调试脚本，则可能在程序中无线程时命中了某个断点。 从“调试”菜单中选择“单步执行”或“继续”以继续进行调试。  
-  
--   出于安全考虑，可能禁止调试器从在调试的程序中读取堆栈、线程和其他上下文信息。 如果正在调试 Web 应用程序，且没有访问虚拟内存的正确权限，则这种情况最可能发生。 将虚拟目录的安全设置为 Anonymous 并再次尝试。  
-  
+此错误显示如下：
+
+ 代码在当前位置停止执行，但调试器不能显示当前位置的源代码或反汇编。
+
+ 该错误信息可能由于许多原因而发生：
+
+-   可能在调试不支持汇编的语言时在无源代码的位置命中了某个断点。 打开**断点**窗口中，找到所需断点，并将其删除。
+
+-   如果正在调试脚本，则可能在程序中无线程时命中了某个断点。 从“调试”菜单中选择“单步执行”或“继续”以继续进行调试。
+
+-   出于安全考虑，可能禁止调试器从在调试的程序中读取堆栈、线程和其他上下文信息。 如果正在调试 Web 应用程序，且没有访问虚拟内存的正确权限，则这种情况最可能发生。 将虚拟目录的安全设置为 Anonymous 并再次尝试。
+
 ## <a name="see-also"></a>请参阅
- [在 Visual Studio 中进行调试](../debugger/index.md)  
- [初探调试器](../debugger/debugger-feature-tour.md)  
- [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)
+- [在 Visual Studio 中进行调试](../debugger/index.md)
+- [初探调试器](../debugger/debugger-feature-tour.md)
+- [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)

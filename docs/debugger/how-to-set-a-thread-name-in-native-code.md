@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c547dd00f7a5a31b949d22c13f305050355207c7
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 264ac57a0d159b9cdd2627d7a62372fa070e31de
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227311"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56715175"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在本机代码中设置线程名称
 在 Visual Studio 的任何版本中都可以使用线程命名功能。 线程命名功能可用于标识的感兴趣的线程**线程**窗口调试正在运行的进程时。 具有 recognizably 名为线程也会有所帮助时执行事后调试通过崩溃转储检查和分析性能捕获使用各种工具。
@@ -109,6 +109,6 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 ```
 
 ## <a name="see-also"></a>请参阅
-[调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)  
-[如何：在托管代码中设置线程名称](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+- [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)
+- [如何：在托管代码中设置线程名称](../debugger/how-to-set-a-thread-name-in-managed-code.md)

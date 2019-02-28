@@ -11,49 +11,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 949787ae06d9599f0132c15a0205f034419a312d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 26d28825d03c6deeeaa0ee33ccf62620398e1d52
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928593"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612772"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>如何：安装独立探查器
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供了一个基于命令行的独立探查器，它可在没有安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 的情况下运行。 当计算机没有安装或无法安装开发环境时会发生这种情况。 例如，不应在生产 Web 服务器上安装开发环境。  
-  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供了一个基于命令行的独立探查器，它可在没有安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 的情况下运行。 当计算机没有安装或无法安装开发环境时会发生这种情况。 例如，不应在生产 Web 服务器上安装开发环境。
+
 > [!NOTE]
->  使用独立探查器收集 ASP.NET 网站的性能数据时，建议使用 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 命令行工具，而非 [VSPerfCmd](../profiling/vsperfcmd.md) 工具。  
-  
-### <a name="to-install-the-stand-alone-profiler"></a>安装独立探查器  
+>  使用独立探查器收集 ASP.NET 网站的性能数据时，建议使用 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 命令行工具，而非 [VSPerfCmd](../profiling/vsperfcmd.md) 工具。
+
+### <a name="to-install-the-stand-alone-profiler"></a>安装独立探查器
 
 1. 下载[用于 Visual Studio 的性能工具](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio-2017)。
 
 1. 在下载性能工具的位置，找到并运行独立配置文件安装程序(vs_standaloneprofiler.exe)。
-  
-2. 将 vsintr.exe 和 msdis150.dll 的路径添加到系统路径。  
-  
+
+2. 将 vsintr.exe 和 msdis150.dll 的路径添加到系统路径。
+
    > [!NOTE]
-   >  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 
-  
-3. 在命令提示符处，键入 VSInstr。  
-  
+   >  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
+
+3. 在命令提示符处，键入 VSInstr。
+
    > [!NOTE]
-   >  如果显示 vsinstr.exe 的用法信息，则表明安装无误。 如果看见一条错误信息，该消息指出找不到 vsinstr.exe 或它的依赖项，请确保已经按步骤 2 中的说明正确设置了路径。  
-  
-4. 通过将 _NT_SYMBOL_PATH 变量设置为 symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols 来设置符号服务器  
-  
-5. 使用系统环境变量设置符号服务器后，请在新的命令提示符处运行命令行探查器工具。 这将使新环境变量生效。 在命令提示符窗口中，键入以下命令：  
-  
-    start %COMSPEC%  
-  
+   >  如果显示 vsinstr.exe 的用法信息，则表明安装无误。 如果看见一条错误信息，该消息指出找不到 vsinstr.exe 或它的依赖项，请确保已经按步骤 2 中的说明正确设置了路径。
+
+4. 通过将 _NT_SYMBOL_PATH 变量设置为 symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols 来设置符号服务器
+
+5. 使用系统环境变量设置符号服务器后，请在新的命令提示符处运行命令行探查器工具。 这将使新环境变量生效。 在命令提示符窗口中，键入以下命令：
+
+    start %COMSPEC%
+
    > [!NOTE]
-   >  要详细了解如何设置符号服务器包，请参阅[如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)。  
-  
-6. 使用 [VSPerfReport](../profiling/vsperfreport.md) 工具将符号串行化到分析数据 (.vsp) 文件中。 使用 VSPerfReport /summary:all /packsymbols 开关。 如果数据文件中未插入符号，请确保设置了 _NT_SYMBOL_PATH 环境变量。  
-  
-## <a name="see-also"></a>请参阅  
- [通过命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [演练：使用采样进行命令行分析](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
- [演练：使用检测进行命令行分析](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications)   
- [如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)   
- [VSPerfReport](../profiling/vsperfreport.md)
+   >  要详细了解如何设置符号服务器包，请参阅[如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)。
+
+6. 使用 [VSPerfReport](../profiling/vsperfreport.md) 工具将符号串行化到分析数据 (.vsp) 文件中。 使用 VSPerfReport /summary:all /packsymbols 开关。 如果数据文件中未插入符号，请确保设置了 _NT_SYMBOL_PATH 环境变量。
+
+## <a name="see-also"></a>请参阅
+- [通过命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)
+- [演练：使用采样进行命令行分析](../profiling/walkthrough-command-line-profiling-using-sampling.md)
+- [演练：使用检测进行命令行分析](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications)
+- [如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)
+- [VSPerfReport](../profiling/vsperfreport.md)

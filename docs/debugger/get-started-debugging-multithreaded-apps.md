@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e30eafdc9a01b126f2a08bb8e4395298f446069
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 704605ed2d4eb3d69b988da59ba443790ffa138d
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155781"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56709845"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序 (C#，Visual Basic、 c + +)
 
@@ -33,25 +33,25 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 - 若要使用“调试位置”工具栏和“线程”窗口，请参阅[演练：调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
 
 - 如需使用 <xref:System.Threading.Tasks.Task>（托管代码）和并发运行时 (C++) 的示例，请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)。 有关适用于大多数多线程应用程序类型的常规调试技巧，请阅读该主题和本主题。
-  
-首先需要一个多线程应用程序项目。 示例如下。  
-  
-## <a name="create-a-multithreaded-app-project"></a>创建一个多线程应用项目  
-  
-1.  在“文件”菜单上，选择“新建” > “项目”。   
-  
-     此时将出现“新建项目”对话框。  
-  
-2.  选择语言：**Visual C#**、**Visual C++** 或 **Visual Basic**。  
-  
-3.  在“Windows 桌面”下，选择“控制台应用”。   
-  
-4.  在“名称”字段中，输入 MyThreadWalkthroughApp。   
-  
-5.  选择“确定”。  
-  
-     新的控制台项目随即显示。 创建该项目后，将显示源文件。 根据所选语言，源文件名称可能是 Program.cs、MyThreadWalkthroughApp.cpp 或 Module1.vb。  
-  
+
+首先需要一个多线程应用程序项目。 示例如下。
+
+## <a name="create-a-multithreaded-app-project"></a>创建一个多线程应用项目
+
+1.  在“文件”菜单上，选择“新建” > “项目”。 
+
+     此时将出现“新建项目”对话框。
+
+2.  选择语言：**Visual C#**、**Visual C++** 或 **Visual Basic**。
+
+3.  在“Windows 桌面”下，选择“控制台应用”。 
+
+4.  在“名称”字段中，输入 MyThreadWalkthroughApp。 
+
+5.  选择“确定”。
+
+     新的控制台项目随即显示。 创建该项目后，将显示源文件。 根据所选语言，源文件名称可能是 Program.cs、MyThreadWalkthroughApp.cpp 或 Module1.vb。
+
 6.  删除出现在源文件中的代码，将其替换为下面列出的相应示例代码。
 
     ```csharp
@@ -186,54 +186,54 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
         End Sub
     End Class
     ```
-  
-7.  在“文件”菜单上，单击“全部保存”。  
+
+7.  在“文件”菜单上，单击“全部保存”。
 
 8. (仅限 Visual Basic)在解决方案资源管理器 （右窗格），右键单击项目节点，选择**属性**。 下**应用程序**选项卡上，更改**启动对象**到**简单**。
-  
-## <a name="debug-the-multithreaded-app"></a>调试多线程应用程序  
-  
-1. 在源代码编辑器中，查找以下代码段之一： 
-  
-    ```csharp  
-    Thread.Sleep(3000);  
-    Console.WriteLine();  
-    ```  
-  
-    ```C++  
+
+## <a name="debug-the-multithreaded-app"></a>调试多线程应用程序
+
+1. 在源代码编辑器中，查找以下代码段之一：
+
+    ```csharp
+    Thread.Sleep(3000);
+    Console.WriteLine();
+    ```
+
+    ```C++
     std::this_thread::sleep_for(std::chrono::seconds(3));
-    std::cout << "The function called by the worker thread has ended." << std::endl; 
-    ```  
+    std::cout << "The function called by the worker thread has ended." << std::endl;
+    ```
 
     ```VB
     Thread.Sleep(3000)
     Console.WriteLine()
     ```
 
-1. 左键单击中的左滚动条槽`Thread.Sleep`或`std::this_thread::sleep_for`语句将新断点。  
-  
-    滚动条槽中的红色圆圈指示在此位置设置断点。 
-  
-2. 在“调试”菜单上，单击“开始调试(F5)”。   
-  
-    Visual Studio 将生成该解决方案，应用在附加了调试器的情况下开始运行，然后在断点处停止。  
-  
+1. 左键单击中的左滚动条槽`Thread.Sleep`或`std::this_thread::sleep_for`语句将新断点。
+
+    滚动条槽中的红色圆圈指示在此位置设置断点。
+
+2. 在“调试”菜单上，单击“开始调试(F5)”。 
+
+    Visual Studio 将生成该解决方案，应用在附加了调试器的情况下开始运行，然后在断点处停止。
+
 3. 在源代码编辑器中，找到包含该断点的行。
-  
+
 ### <a name="ShowThreadsInSource"></a>发现线程标记   
 
 1.  在调试工具栏中，单击“在源中显示线程”按钮![在源中显示线程](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")。
 
 2. 按一下 **F11** 使调试器前进一个代码行。
-  
+
 3.  查看窗口左侧的滚动条槽。 在此行中，会看到线程标记 图标![线程标记](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，类似于一条双绞线。 线程标记指示线程在此位置停止。
 
-    线程标记可以被断点部分隐藏。  
-  
-4.  将指针悬停在线程标记上。 此时会出现一个数据提示，告知你每个已停止线程的名称和线程 ID 号。 在这种情况下，名称可能是 `<noname>`。 
-  
+    线程标记可以被断点部分隐藏。 
+
+4.  将指针悬停在线程标记上。 此时会出现一个数据提示，告知你每个已停止线程的名称和线程 ID 号。 在这种情况下，名称可能是 `<noname>`。
+
 5.  选择线程标记，以查看快捷菜单上的可用选项。
-    
+
 ### <a name="ParallelStacks"></a>查看线程位置
 
 在“并行堆栈”窗口中，可以在“线程”视图和“任务”视图（适用于基于任务的编程）之间进行切换，并且可以查看每个线程的调用堆栈信息。 在此应用中，我们可以使用“线程”视图。
@@ -243,7 +243,7 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
     ![并行堆栈窗口](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
     在此示例中，从左到右会看到托管代码的以下信息：
-    
+
     - 主线程（左侧）已停止在 `Thread.Start` 上，由线程标记图标指示停止点![线程标记](../debugger/media/dbg-thread-marker.png "ThreadMarker")。
     - 两个线程已进入 `ServerClass.InstanceMethod`，其中一个线程是当前线程（黄色箭头），另一个线程已停止在 `Thread.Sleep` 中。
     - 新线程（右侧）也已启动，但是停止在 `ThreadHelper.ThreadStart` 上。
@@ -271,31 +271,31 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 
 4. 右键单击其中一个窗口以查看可用选项中的行。
 
-### <a name="flag-and-unflag-threads"></a>标记线程和取消标记线程  
-可以通过标记线程来追踪重要的线程，并忽略其它线程。  
-  
+### <a name="flag-and-unflag-threads"></a>标记线程和取消标记线程
+可以通过标记线程来追踪重要的线程，并忽略其它线程。
+
 1. 在中**并行监视**窗口中，按住**Shift**键并选择多个行。
 
 2. 右键单击并选择**标志**。
 
     所选的所有线程都将都标记。 现在，您可以筛选为仅显示已标记的线程。
-  
-3.  在中**并行监视**窗口中，选择**仅显示标记的线程**按钮![显示已标记线程](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker")。  
-  
+
+3.  在中**并行监视**窗口中，选择**仅显示标记的线程**按钮![显示已标记线程](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker")。
+
     标记的线程显示在列表中。
 
     > [!TIP]
     > 在标记一些线程后，可以右键单击代码编辑器中的代码行，然后选择“将标记的线程运行到光标处”。 请确保选择所有已标记的线程将达到的代码。 Visual Studio 将在选择的代码行处暂停线程，这样就可以通过[冻结和解冻线程](#bkmk_freeze)更容易地控制执行顺序。
 
 4.  选择**仅显示标记的线程**按钮将再次切换回**显示所有线程**模式。
-    
+
 5. 若要取消标记线程，请在“并行监视”窗口右键单击一个或多个已标记线程，然后选择“取消标记”。
 
-### <a name="bkmk_freeze"></a> 冻结和解冻线程执行 
+### <a name="bkmk_freeze"></a> 冻结和解冻线程执行
 
 > [!TIP]
 > 可以通过冻结和解冻（暂停和恢复）线程来控制线程执行工作的顺序。 这有助于解决并发问题，例如死锁和争用条件。
-   
+
 1.  在“并行监视”窗口中，在选中所有行的情况下，右键单击并选择“冻结”。
 
     在第二个列中，每个行出现一个暂停图标。 暂停图标指示该线程已冻结。
@@ -336,11 +336,11 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
     只要断点条件是唯一的线程，且调试器不会命中 （可能需要禁用它们） 的其他线程上的任何其他断点，可以单步执行代码并单步执行代码而无需切换到其他线程。
 
     > [!NOTE]
-    > 当您推进调试器进度时，将运行所有线程。 但是，调试器不会中断到其他线程上的代码中，除非其中一个其他线程遇到断点。 
-  
+    > 当您推进调试器进度时，将运行所有线程。 但是，调试器不会中断到其他线程上的代码中，除非其中一个其他线程遇到断点。
+
 ## <a name="see-also"></a>请参阅
 
-[调试多线程应用](../debugger/debug-multithreaded-applications-in-visual-studio.md)  
-[如何：在调试时切换到另一个线程](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
-[如何： 使用并行堆栈窗口](../debugger/using-the-parallel-stacks-window.md)  
-[如何：使用“并行监视”窗口](../debugger/how-to-use-the-parallel-watch-window.md)  
+- [调试多线程应用](../debugger/debug-multithreaded-applications-in-visual-studio.md)
+- [如何：在调试时切换到另一个线程](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+- [如何： 使用并行堆栈窗口](../debugger/using-the-parallel-stacks-window.md)
+- [如何：使用“并行监视”窗口](../debugger/how-to-use-the-parallel-watch-window.md)

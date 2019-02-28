@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 841a420a278849f1f26de6869a8b723617e7fd8b
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54939785"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703703"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>快照调试程序入门
 
@@ -27,7 +27,7 @@ Visual Studio 快照调试器现在连接到你的服务，可以开始收集快
 
 ### <a name="set-a-snappoint"></a>设置快照点
 
-1. 在代码编辑器中，单击你感兴趣设置吸附点的代码行旁边的左滚动条槽。 请确保它是您知道将运行的代码。 
+1. 在代码编辑器中，单击你感兴趣设置吸附点的代码行旁边的左滚动条槽。 请确保它是您知道将运行的代码。
 
     ![在编辑器中设置吸附点](../media/snapshot-startpage-set-snappoint.png)
 
@@ -37,7 +37,7 @@ Visual Studio 快照调试器现在连接到你的服务，可以开始收集快
 
 ### <a name="open-a-snapshot"></a>打开的快照
 
-1. 命中吸附点，请在右侧的诊断工具窗口中会出现一个快照。 如果该窗口未打开，您可以通过选择打开它**调试** > **Windows** > **显示诊断工具**。 
+1. 命中吸附点，请在右侧的诊断工具窗口中会出现一个快照。 如果该窗口未打开，您可以通过选择打开它**调试** > **Windows** > **显示诊断工具**。
 
     ![在诊断工具窗口中的快照](../media/snapshot-startpage-diagsession-window.png)
 
@@ -59,7 +59,7 @@ Visual Studio 快照调试器现在连接到你的服务，可以开始收集快
 
 3. 在中**消息**字段中，输入想要记录的日志消息。 您也可以通过将它们放在大括号内将日志消息中计算变量。
 
-    如果愿意**将发送到输出窗口**，命中记录点时，诊断工具窗口中将显示该消息。 
+    如果愿意**将发送到输出窗口**，命中记录点时，诊断工具窗口中将显示该消息。
 
     如果愿意**发送到应用程序日志**，任何位置，您可以看到消息从出现的消息`System.Diagnostics.Trace`(或`ILogger`.NET Core 中)，如 App Insights，命中记录点时。
 
@@ -69,6 +69,6 @@ Visual Studio 快照调试器现在连接到你的服务，可以开始收集快
 
 ## <a name="dont-show-me-this-again"></a>不再显示此信息
 
-若要永远不会显示快照调试程序起始页再次连接 Snapshot Debugger 时，更改**显示会话启动此入门页**选项**工具** >  **选项** > **快照调试器**。 
+若要永远不会显示快照调试程序起始页再次连接 Snapshot Debugger 时，更改**显示会话启动此入门页**选项**工具** >  **选项** > **快照调试器**。
 
 ![快照调试器工具选项页](../media/snapshot-startpage-tools-options.png)

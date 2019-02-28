@@ -16,41 +16,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fa91423a5c0ddf6b276095b53ae4461d7057c4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55005522"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56628437"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt;元素 （ClickOnce 部署）
-包含有关为此部署清单签名的发布者的信息。  
-  
-## <a name="syntax"></a>语法  
-  
-```xml  
-<publisherIdentity  
-   name  
-   issuerKeyHash  
-/>  
-```  
-  
-## <a name="elements-and-attributes"></a>元素和属性  
- `publisherIdentity`元素是必需的签名的清单。 下表显示特性的`publisherIdentity`元素支持。  
-  
-|特性|说明|  
-|---------------|-----------------|  
-|`name`|必需。 描述发布此应用程序的参与方的标识。|  
-|`issuerKeyHash`|必需。 包含证书颁发者的公钥的 sha-1 哈希。|  
-  
-#### <a name="parameters"></a>参数  
-  
-## <a name="property-valuereturn-value"></a>属性值/返回值  
-  
-## <a name="exceptions"></a>异常  
-  
-## <a name="remarks"></a>备注  
-  
-## <a name="requirements"></a>要求  
-  
+包含有关为此部署清单签名的发布者的信息。
+
+## <a name="syntax"></a>语法
+
+```xml
+<publisherIdentity
+   name
+   issuerKeyHash
+/>
+```
+
+## <a name="elements-and-attributes"></a>元素和属性
+ `publisherIdentity`元素是必需的签名的清单。 下表显示特性的`publisherIdentity`元素支持。
+
+|特性|说明|
+|---------------|-----------------|
+|`name`|必需。 描述发布此应用程序的参与方的标识。|
+|`issuerKeyHash`|必需。 包含证书颁发者的公钥的 sha-1 哈希。|
+
+#### <a name="parameters"></a>参数
+
+## <a name="property-valuereturn-value"></a>属性值/返回值
+
+## <a name="exceptions"></a>异常
+
+## <a name="remarks"></a>备注
+
+## <a name="requirements"></a>要求
+
 ## <a name="subhead"></a>副标题

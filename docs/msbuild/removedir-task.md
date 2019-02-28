@@ -18,46 +18,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1268d82325daa068ca42684b5f191c3db87d9e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3e2e3e629102b3ce1cfab1a998b18842c69666c3
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55009526"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645194"
 ---
 # <a name="removedir-task"></a>RemoveDir 任务
-删除指定的目录及其所有文件和子目录。  
-  
-## <a name="parameters"></a>参数  
- 下表描述了 `RemoveDir` 任务的参数。  
-  
-|参数|说明|  
-|---------------|-----------------|  
-|`Directories`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要删除的目录。|  
-|`RemovedDirectories`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包含已成功删除的目录。|  
-  
-## <a name="remarks"></a>备注  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
-  
-## <a name="example"></a>示例  
- 以下示例删除 `OutputDirectory` 和 `DebugDirectory` 属性指定的目录。 这些路径将视为相对于项目目录的路径。  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2005">  
-  
-    <PropertyGroup>  
-        <OutputDirectory>\Output\</OutputDirectory>  
-        <DebugDirectory>\Debug\</DebugDirectory>  
-    </PropertyGroup>  
-  
-    <Target Name="RemoveDirectories">  
-        <RemoveDir  
-            Directories="$(OutputDirectory);$(DebugDirectory)" />  
-    </Target>  
-  
-</Project>  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [任务](../msbuild/msbuild-tasks.md)   
- [任务参考](../msbuild/msbuild-task-reference.md)
+删除指定的目录及其所有文件和子目录。
+
+## <a name="parameters"></a>参数
+ 下表描述了 `RemoveDir` 任务的参数。
+
+|参数|说明|
+|---------------|-----------------|
+|`Directories`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要删除的目录。|
+|`RemovedDirectories`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包含已成功删除的目录。|
+
+## <a name="remarks"></a>备注
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
+
+## <a name="example"></a>示例
+ 以下示例删除 `OutputDirectory` 和 `DebugDirectory` 属性指定的目录。 这些路径将视为相对于项目目录的路径。
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2005">
+
+    <PropertyGroup>
+        <OutputDirectory>\Output\</OutputDirectory>
+        <DebugDirectory>\Debug\</DebugDirectory>
+    </PropertyGroup>
+
+    <Target Name="RemoveDirectories">
+        <RemoveDir
+            Directories="$(OutputDirectory);$(DebugDirectory)" />
+    </Target>
+
+</Project>
+```
+
+## <a name="see-also"></a>请参阅
+- [任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)

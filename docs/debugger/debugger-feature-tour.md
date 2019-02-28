@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638e49a2e2146503186eb26f25e67ff68bb4a354
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55042057"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696735"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>初步了解 Visual Studio 调试器
 
@@ -27,7 +27,7 @@ ms.locfileid: "55042057"
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>设置断点并启动调试器
 
-要进行调试，需要在调试器附加到应用进程的情况下启动应用。 F5（“调试”>“开始调试”）是执行该操作最常见的方法。 但是，现在你可能没有设置任何断点来检查应用代码，因此我们首先设置断点再开始调试。 断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在哪个位置挂起你的运行代码，以使你可以查看变量的值或内存的行为，或确定代码的分支是否运行。 
+要进行调试，需要在调试器附加到应用进程的情况下启动应用。 F5（“调试”>“开始调试”）是执行该操作最常见的方法。 但是，现在你可能没有设置任何断点来检查应用代码，因此我们首先设置断点再开始调试。 断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在哪个位置挂起你的运行代码，以使你可以查看变量的值或内存的行为，或确定代码的分支是否运行。
 
 若代码编辑器中打开了文件，则可通过单击代码行左侧的边缘来设置断点。
 

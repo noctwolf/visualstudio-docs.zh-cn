@@ -12,35 +12,37 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a859fc41252fc6f6d8e99ecbaa881cd07ffd6134
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 01c457947eb84859f2ce92378688dd03c624c86d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55026747"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638811"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
-检索包含指定的虚拟地址的符号。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT symbolForVA(   
-   ULONGLONG     va,  
-   IDiaSymbol**  ppSymbol  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `va`  
- [in]包含请求的符号中的虚拟地址。 该符号必须是`SymTagFunctionType`(取值[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举)。  
-  
- `ppSymbol`  
- [out][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，表示指定地址处的符号。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+检索包含指定的虚拟地址的符号。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT symbolForVA( 
+   ULONGLONG     va,
+   IDiaSymbol**  ppSymbol
+);
+```
+
+#### <a name="parameters"></a>参数
+ `va`
+
+[in]包含请求的符号中的虚拟地址。 该符号必须是`SymTagFunctionType`(取值[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举)。
+
+ `ppSymbol`
+
+[out][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，表示指定地址处的符号。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,33 +12,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4399c6f3c1bc5168f4a7bce0a82e251051432033
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c4a204e04c1c99dcbe8c6ba6d5e3457ca875dde4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964413"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56612785"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
-检索一个简单的整数密钥值，该值是唯一的此映像。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_uniqueId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回一个简单的整数密钥值，该值是唯一的此映像。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。  
-  
-## <a name="remarks"></a>备注  
- 而不是字符串可加快行编号处理键进行比较。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
+检索一个简单的整数密钥值，该值是唯一的此映像。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_uniqueId ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回一个简单的整数密钥值，该值是唯一的此映像。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。
+
+## <a name="remarks"></a>备注
+ 而不是字符串可加快行编号处理键进行比较。
+
+## <a name="see-also"></a>请参阅
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

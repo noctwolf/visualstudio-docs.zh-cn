@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cfd6153389bbfe9cbbd36f33f6a2e4384509297
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 2fc5e8a7e0bbc80fd7fa0aa2d242239a9be6a219
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227056"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56714967"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>如何：调试 OnStart 方法
 通过启动 Windows 服务并将调试器附加到服务进程，可以调试 Windows 服务。 有关详细信息，请参阅 [How to: Debug Windows Service Applications](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)。 但是，若要调试 Windows 服务的 <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> 方法，必须从该方法内部启动调试器。
@@ -53,5 +53,5 @@ ms.locfileid: "56227056"
 5. 将启动 Visual Studio 新实例，并在 `Debugger.Launch()` 方法处停止执行。
 
 ## <a name="see-also"></a>请参阅
-[调试器安全](../debugger/debugger-security.md)  
-[调试托管代码](../debugger/debugging-managed-code.md)
+- [调试器安全](../debugger/debugger-security.md)
+- [调试托管代码](../debugger/debugging-managed-code.md)

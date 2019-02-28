@@ -1,5 +1,5 @@
 ---
-title: 错误：Web 服务器未正确配置 |Microsoft Docs
+title: 错误： web 服务器配置不正确 |Microsoft Docs
 ms.date: 09/20/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd59211da9228f2940c675f889d0536fbea9045d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc0c61b766b6f93fd1321b15861000d7c628f124
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55019187"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711600"
 ---
 # <a name="error-the-web-server-is-not-configured-correctly"></a>错误：Web 服务器配置不正确
 
@@ -44,9 +44,9 @@ ms.locfileid: "55019187"
 4. (IIS)请确保在服务器上安装了正确版本的 ASP.NET。
 
     IIS 中的ASP.NET 与 Visual Studio 项目的版本不匹配可能会导致此问题。 您可能需要在 web.config 中设置的 framework 版本。若要在 IIS 上安装 ASP.NET，请使用[Web 平台安装程序 (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)。 另请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)或为 ASP.NET Core [使用 IIS 的 Windows 上的主机](https://docs.asp.net/en/latest/publishing/iis.html)。
-  
+
 4. 如果`maxConnection`在 IIS 中的上限为过低，并有过多连接，则可能需要[增加连接限制](/iis/configuration/system.applicationhost/sites/sitedefaults/limits)。
-  
-## <a name="see-also"></a>请参阅  
- [远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
- [调试 Web 应用程序：错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+
+## <a name="see-also"></a>请参阅
+- [远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)
+- [调试 Web 应用程序：错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

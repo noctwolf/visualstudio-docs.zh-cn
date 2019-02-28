@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb0b7d507453fc162c6fd748346e34c8abbdf88f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6e7183845e9c0b9b50b8feaedf9e6327b06678ad
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959117"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690014"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>“编辑并继续”对话框 (C++)
-“编辑并继续”未能应用你对本机代码所做的更改。 这可能是一种临时情况。 有时“编辑并继续”不能立即应用本机代码更改，但稍后可在调试会话期间应用本机代码更改（例如，完成调用正在执行的过程之后）。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。  
-  
- 可以在进行调试时编辑代码以修复错误、停止调试并修复代码或是忽略错误并继续调试。 如果继续操作而不进行修复，则不会立即应用代码更改。  
-  
-## <a name="see-also"></a>请参阅  
- [“选项”对话框 ->“调试”->“编辑并继续”](https://msdn.microsoft.com/library/bcew296c.aspx)
+“编辑并继续”未能应用您对本机代码所做的更改。 这可能是一种临时情况。 有时“编辑并继续”不能立即应用本机代码更改，但稍后可在调试会话期间应用本机代码更改（例如，完成调用正在执行的过程之后）。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。
+
+ 可以在进行调试时编辑代码以修复错误、停止调试并修复代码或是忽略错误并继续调试。 如果继续操作而不进行修复，则不会立即应用代码更改。
+
+## <a name="see-also"></a>请参阅
+- [“选项”对话框 ->“调试”->“编辑并继续”](https://msdn.microsoft.com/library/bcew296c.aspx)

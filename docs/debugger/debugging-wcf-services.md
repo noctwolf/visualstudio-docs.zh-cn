@@ -16,24 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb9e84de2724943511017027f51fa8e74b73091
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 02ca94704d09288d1e29f6a530ae818053a9d368
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55008694"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716839"
 ---
 # <a name="debugging-wcf-services"></a>调试 WCF 服务
-## <a name="in-this-section"></a>本节内容  
- [WCF 调试的限制](../debugger/limitations-on-wcf-debugging.md)  
- 描述调试 WCF 时的限制。  
-  
- [如何：单步执行 WCF 服务](../debugger/how-to-step-into-wcf-services.md)  
- 说明调试器对单步执行 WCF 服务的支持。  
-  
- [如何：调试自托管 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
- 描述如何调试在 IIS 或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 开发服务器之外运行的 WCF 服务。  
-  
-## <a name="see-also"></a>请参阅  
- [调试器安全](../debugger/debugger-security.md)   
- [初探调试器](../debugger/debugger-feature-tour.md)
+## <a name="in-this-section"></a>本节内容
+ [WCF 调试的限制](../debugger/limitations-on-wcf-debugging.md)描述调试 WCF 的限制。
+
+ [如何： 单步执行 WCF 服务](../debugger/how-to-step-into-wcf-services.md)解释调试器单步执行 WCF 服务的支持。
+
+ [如何： 调试自承载的 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)描述如何调试运行外部 IIS 的 WCF 服务或[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]开发服务器。
+
+## <a name="see-also"></a>请参阅
+- [调试器安全](../debugger/debugger-security.md)
+- [初探调试器](../debugger/debugger-feature-tour.md)

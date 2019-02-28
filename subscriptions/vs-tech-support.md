@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解如何激活 Visual Studio 订阅中包含的技术支持权益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de53a94bd8ab0513e27f7c62461165d9ff8e865c
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: fc1fabec9e6f220162ace335e69e63e8bc1c7286
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089219"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841695"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>激活 Visual Studio 订阅中的技术支持权益
 
@@ -22,13 +20,13 @@ ms.locfileid: "55089219"
 
 > [!NOTE]
 > 并非所有给定级别的订阅都符合接收支持事件的条件。 通过 FTE、NFR、MPN、MCT 和其他程序获得的订阅不会收到支持事件。 如果订阅不符合接收技术支持事件的条件，则可用权益中不会显示“技术支持”磁贴。
-> 
+>
 > [!div class="mx-imgBorder"]
 > ![技术支持权益磁贴](_img/vs-tech-support/vs-tech-support-tile.png)
 
 
-1. 若要开始使用技术支持权益，请转到 https://my.visualstudio.com/Benefits，向下滚动到“支持”部分，在“技术支持”磁贴上单击“聊天激活”。 
-2. 这会启动与代表的聊天会话，他们可创建并提供合约 ID 和访问 ID。 
+1. 若要开始使用技术支持权益，请转到 https://my.visualstudio.com/Benefits，向下滚动到“支持”部分，在“技术支持”磁贴上单击“聊天激活”。
+2. 这会启动与代表的聊天会话，他们可创建并提供合约 ID 和访问 ID。
 3. 若要完成该进程，需向代表提供：
    - 用于登录到订阅的电子邮件地址
    - 订阅 ID，可在“[订阅](https://my.visualstudio.com/subscriptions)”选项卡中找到。
@@ -38,7 +36,7 @@ ms.locfileid: "55089219"
 
 
 > [!NOTE]
-> 若要激活非英语的支持帐户，请从[此列表](https://support.microsoft.com/help/14084/activate-support-contract)选择所在国家/地区。   
+> 若要激活非英语的支持帐户，请从[此列表](https://support.microsoft.com/help/14084/activate-support-contract)选择所在国家/地区。
 
 
 ## <a name="how-to-submit-an-incident"></a>如何提交事件
@@ -48,12 +46,12 @@ ms.locfileid: "55089219"
 ### <a name="submit-an-incident-online"></a>联机提交事件
 
 1. 若要[联机提交事件](http://support.microsoft.com/oas/)，请指定需要帮助的产品。 可从各种列表中进行选择，也可按名称进行搜索。 例如，如果要为 Visual Studio Enterprise 2017 提交事件，可以单击“开发人员工具”组中的“Visual Studio”。
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![技术支持权益选择事件产品](_img/vs-tech-support/vs-tech-support-select-product.png)
 
 2. 选择需要获得相应支持的产品。 （例如，单击 Visual Studio 产品列表中的“Visual Studio Enterprise 2017”。）
 3. 在“创建事件”页上，从下拉列表中选择合适的问题类型。 对于本示例，我们选择“集成开发环境(IDE)”。
-   > [!div class="mx-imgBorder"]    
+   > [!div class="mx-imgBorder"]
    > ![技术支持权益创建事件](_img/vs-tech-support/vs-tech-support-create-incident.png)
 
 4. 然后选择最符合你的疑问/问题的“类别”。 对于本示例，我们选择“架构师工具”。
@@ -64,7 +62,7 @@ ms.locfileid: "55089219"
    - 输入访问 ID 和合同 ID
    - 单击“添加”
 7. 添加支持合同后，该合同将出现在专业技术支持合同列表中。 选择该合同，然后单击“继续”。
-   > [!div class="mx-imgBorder"]     
+   > [!div class="mx-imgBorder"]
    > ![技术支持权益支付](_img/vs-tech-support/vs-tech-support-payment.png)
 
 8. 提供联系信息和首选联系方式，然后单击“继续”。
@@ -99,9 +97,9 @@ ms.locfileid: "55089219"
 | Visual Studio Dev Essentials | NA | 不可用 |NA|
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup> 包括：Imagine 高级版。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine Standard、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务。
+<sup>1</sup> 包括：Imagine 高级版。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine Standard、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务。*
 
-<sup>2</sup> 包括：Imagine 标准版。
+<sup>2</sup> 包括：Imagine 标准版*。
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。

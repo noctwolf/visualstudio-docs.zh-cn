@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d643a3ad43c41b90cdb2c331ff0222f1dc8a75f
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: ebfe3efdb567930d931ab43d5cf2ce33713247f8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155469"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679116"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C++ 代码
 
@@ -183,7 +183,7 @@ ms.locfileid: "56155469"
 
     设置断点的位置会出现一个红色圆圈。
 
-    断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在哪个位置挂起你的运行代码，以使你可以查看变量的值或内存的行为，或确定代码的分支是否运行。 
+    断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在哪个位置挂起你的运行代码，以使你可以查看变量的值或内存的行为，或确定代码的分支是否运行。
 
 2. 按 F5 或“启动调试”按钮 ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Start Debugging")，应用随即启动，并且调试器将运行到你设置断点的代码行。
 

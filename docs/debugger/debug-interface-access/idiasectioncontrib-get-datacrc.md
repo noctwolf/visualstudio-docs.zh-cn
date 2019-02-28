@@ -12,30 +12,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3688b6074422fc8af0cde6cdfa9299b9c3af556d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 6c652460e401396a8f7316b5ef300b3c2915f2e4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956202"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642113"
 ---
 # <a name="idiasectioncontribgetdatacrc"></a>IDiaSectionContrib::get_dataCrc
-检索的部分中的数据的循环冗余检查 (CRC)。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-HRESULT get_dataCrc (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pRetVal`  
- [out]返回的部分中的数据的 CRC。  
-  
-## <a name="return-value"></a>返回值  
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
-  
-## <a name="see-also"></a>请参阅  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+检索的部分中的数据的循环冗余检查 (CRC)。
+
+## <a name="syntax"></a>语法
+
+```C++
+HRESULT get_dataCrc ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pRetVal`
+
+[out]返回的部分中的数据的 CRC。
+
+## <a name="return-value"></a>返回值
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。
+
+## <a name="see-also"></a>请参阅
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

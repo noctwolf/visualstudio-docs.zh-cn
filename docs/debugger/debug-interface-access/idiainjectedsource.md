@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a2978d9248193cf554f23701c1d04a33459091a
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: HT
+ms.openlocfilehash: 2e8956fb7da61519ed9d0939da087ce8a4181ac1
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226604"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643803"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 访问注入 DIA 数据源中存储的源代码。
@@ -31,7 +31,7 @@ IDiaInjectedSource : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaInjectedSource`。
 
-|方法|说明​​|
+|方法|说明|
 |------------|-----------------|
 |[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|检索从源代码的字节计算的循环冗余检查 (CRC)。|
 |[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|检索的代码的字节数。|
@@ -120,7 +120,7 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
 DLL: msdia80.dll
 
 ## <a name="see-also"></a>请参阅
-[接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
-[IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)  
-[IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)  
-[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+- [接口（调试接口访问 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
+- [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)
+- [IDiaEnumInjectedSources::Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
