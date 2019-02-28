@@ -5,12 +5,6 @@ title: Visual Studio 文档| Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来开发适用于你的平台和设备的应用程序、服务和工具。
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
-ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821352"
 ---
 <div id="main" class="v2">
     <div class="container">
