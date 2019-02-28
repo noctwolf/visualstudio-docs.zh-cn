@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c023e6200f9e0b0efaf730fdca3a068f73c29262
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89406cfa114d91cc6e6a33064bf073cc35181cdf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957934"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954301"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ 核心准则检查程序
 
@@ -161,27 +161,28 @@ Microsoft Visual c + + 编译器提供有限的支持，为 GSL 禁止显示属�
 
 有时可能会对进行专注于代码分析和利用 Visual Studio IDE 仍然有用。 下面是一个示例方案以保存生成时，使其能够更轻松地筛选结果，可以对大型项目使用它。
 
-1.  在命令行界面中设置`esp.extension`和`esp.annotationbuildlevel`环境变量。
-2.  从命令行界面，继承这些变量启动 Visual Studio。
-3.  加载你的项目并打开其属性。
-4.  启用代码分析，选取合适的规则集，但不是启用代码分析扩展。
-5.  转到你想要使用 c + + 核心准则检查程序进行分析并打开其属性的文件。
-6.  选择**C / C + + \Command 行选项**并添加 `/analyze:plugin EspXEngine.dll`
-7.  禁用使用预编译标头 (**C / C + + 标头 \Precompiled**)。 这是必需的因为扩展引擎可能会尝试从预编译标头中读取其内部信息，并且如果后者编译使用默认项目选项，它将不兼容。
-8.  重新生成项目。 常见 PREFast 检查应运行的所有文件。 因为默认情况下不启用 c + + 核心准则检查程序，它只应在其配置为使用该文件上运行。
+1. 在命令行界面中设置`esp.extension`和`esp.annotationbuildlevel`环境变量。
+2. 从命令行界面，继承这些变量启动 Visual Studio。
+3. 加载你的项目并打开其属性。
+4. 启用代码分析，选取合适的规则集，但不是启用代码分析扩展。
+5. 转到你想要使用 c + + 核心准则检查程序进行分析并打开其属性的文件。
+6. 选择**C / C + + \Command 行选项**并添加 `/analyze:plugin EspXEngine.dll`
+7. 禁用使用预编译标头 (**C / C + + 标头 \Precompiled**)。 这是必需的因为扩展引擎可能会尝试从预编译标头中读取其内部信息，并且如果后者编译使用默认项目选项，它将不兼容。
+8. 重新生成项目。 常见 PREFast 检查应运行的所有文件。 因为默认情况下不启用 c + + 核心准则检查程序，它只应在其配置为使用该文件上运行。
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>如何使用 Visual Studio 外部的 c + + 核心准则检查器
 可以在自动生成中使用 c + + Core Guidelines 检查。
 
 ### <a name="msbuild"></a>MSBuild
- 本机代码分析检查器 (PREfast) 已集成到 MSBuild 环境由自定义目标文件。 可以使用项目属性来启用它，并添加 c + + 核心准则检查器 （这基于 PREfast）：
 
- ```xml
-  <PropertyGroup>
-    <EnableCppCoreCheck>true</EnableCppCoreCheck>
-    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-  </PropertyGroup>
+本机代码分析检查器 (PREfast) 已集成到 MSBuild 环境由自定义目标文件。 可以使用项目属性来启用它，并添加 c + + 核心准则检查器 （这基于 PREfast）：
+
+```xml
+<PropertyGroup>
+  <EnableCppCoreCheck>true</EnableCppCoreCheck>
+  <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
+  <RunCodeAnalysis>true</RunCodeAnalysis>
+</PropertyGroup>
 ```
 
 请确保添加这些属性，然后才能 Microsoft.Cpp.targets 文件导入。 可以选择特定的规则集或创建自定义规则集或使用默认规则集包含其他 PREfast 检查。
@@ -221,14 +222,16 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
    - `/analyze:plugin EspXEngine.dll` 此选项将代码分析扩展引擎加载到 PREfast。 此引擎加载 c + + 核心准则检查程序。
 
 ## <a name="use-the-guideline-support-library"></a>使用准则支持库
- 准则支持库旨在帮助你遵循核心指导原则。 GSL 包括使您易出错的构造替换为更安全的替代方法的定义。 例如，您可以替换`T*, length`对参数使用`span<T>`类型。 GSL 位于[ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl)。 库是开源的因此可以查看的源、 进行注释，或者提供。 可以在找到的项目[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
 
- ## <a name="vs2015_corecheck"></a> 在 Visual Studio 2015 项目中使用 c + + Core Check 准则
-  如果使用 Visual Studio 2015，默认情况下未安装 c + + Core Check 代码分析规则集。 可以让 Visual Studio 2015 中的 c + + Core Check 代码分析工具之前，必须执行一些附加步骤。 Microsoft 提供支持的 Visual Studio 2015 项目使用的 Nuget 包。 应用程序包名为 Microsoft.CppCoreCheck，并可通过[ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck)。 此软件包要求必须至少安装 Visual Studio 2015 Update 1。
+准则支持库旨在帮助你遵循核心指导原则。 GSL 包括使您易出错的构造替换为更安全的替代方法的定义。 例如，您可以替换`T*, length`对参数使用`span<T>`类型。 GSL 位于[ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl)。 库是开源的因此可以查看的源、 进行注释，或者提供。 可以在找到的项目[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
 
- 包还将作为依赖项，仅限标头的准则支持库 (GSL) 安装另一个包。 GSL，还可以在 GitHub 上[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
+## <a name="vs2015_corecheck"></a> 在 Visual Studio 2015 项目中使用 c + + Core Check 准则
 
- 由于加载代码分析规则的方式，必须 Microsoft.CppCoreCheck NuGet 包安装到你想要在 Visual Studio 2015 中检查每个 c + + 项目。
+如果使用 Visual Studio 2015，默认情况下未安装 c + + Core Check 代码分析规则集。 可以让 Visual Studio 2015 中的 c + + Core Check 代码分析工具之前，必须执行一些附加步骤。 Microsoft 提供支持的 Visual Studio 2015 项目使用的 Nuget 包。 应用程序包名为 Microsoft.CppCoreCheck，并可通过[ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck)。 此软件包要求必须至少安装 Visual Studio 2015 Update 1。
+
+包还将作为依赖项，仅限标头的准则支持库 (GSL) 安装另一个包。 GSL，还可以在 GitHub 上[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
+
+由于加载代码分析规则的方式，必须 Microsoft.CppCoreCheck NuGet 包安装到你想要在 Visual Studio 2015 中检查每个 c + + 项目。
 
 ### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>若要将 Microsoft.CppCoreCheck 包添加到 Visual Studio 2015 中的项目
 

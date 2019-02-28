@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27624f4b5336d91b30410303c9fd3823cc00fb88
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 442d78f494381021bd480f5649dbb6957bec5ae1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620910"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954045"
 ---
 # <a name="author-vsct-files"></a>创作.vsct 文件
 本文档演示如何创作 *.vsct*文件以将菜单项、 工具栏和其他用户界面 (UI) 元素添加到 Visual Studio 集成的开发环境 (IDE)。 请执行以下步骤将 UI 元素添加到 Visual Studio 程序包 (VSPackage)，还没有 *.vsct*文件。

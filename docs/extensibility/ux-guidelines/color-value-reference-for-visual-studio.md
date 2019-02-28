@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 40d5e730bef85fe047923cd85aaa7ee3fa8f5d49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cb345d756e748703f407b0601a4ac321452af6a6
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722273"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954424"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的颜色值参考
 
@@ -553,7 +553,7 @@ ms.locfileid: "56722273"
 
 | 浅 | 深 | 蓝色 | 用于... |
 | :---: | :---: | :---: | --- |
-| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5`   | ![#FF2D2D30 样本](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 样本")<br />`#FF2D2D30`   | ![#FFFDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF swatch")<br />`#FFFDF4BF` | 操作按钮、 组合框项、 命令栏按钮、 下拉按钮和菜单项： 背景 |
+| ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF2D2D30 样本](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 样本")<br />`#FF2D2D30` | ![#FFFDF4BF swatch](../../extensibility/ux-guidelines/media/FDF4BF.png "#FFFDF4BF swatch")<br />`#FFFDF4BF` | 操作按钮、 组合框项、 命令栏按钮、 下拉按钮和菜单项： 背景 |
 | ![#FFCCCEDB 样本](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 样本")<br />`#FFCCCEDB` | ![#FF3F3F46 样本](../../extensibility/ux-guidelines/media/3F3F46.png "#FF3F3F46 样本")<br />`#FF3F3F46` | ![#FF465A7D 样本](../../extensibility/ux-guidelines/media/465A7D.png "#FF465A7D 样本")<br />`#FF465A7D` | 自动隐藏选项卡边框 |
 | ![#FFEEEEF2 样本](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 样本")<br />`#FFEEEEF2` | ![#FF2D2D30 样本](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 样本")<br />`#FF2D2D30` | ![#FF293955 swatch](../../extensibility/ux-guidelines/media/293955.png "#FF293955 swatch")<br />`#FF293955` | 自动隐藏选项卡上的默认值并将鼠标悬停背景 |
 | ![#FF444444 样本](../../extensibility/ux-guidelines/media/444444.png "#FF444444 样本")<br />`#FF444444` | ![#FFD0D0D0 swatch](../../extensibility/ux-guidelines/media/D0D0D0.png "#FFD0D0D0 swatch")<br />`#FFD0D0D0` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | 自动隐藏选项卡文本、 失去焦点的工具窗口标题栏文本和工具窗口选项卡文本 |
@@ -570,7 +570,7 @@ ms.locfileid: "56722273"
 | ![#FF007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 样本")<br />`#FF007ACC` | ![#FF007ACC 样本](../../extensibility/ux-guidelines/media/007ACC.png "#FF007ACC 样本")<br />`#FF007ACC` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | 命令栏选项： 将鼠标指针悬停标志符号 |
 | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FFFFFFFF 样本](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF 样本")<br />`#FFFFFFFF` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | 命令栏选项： 鼠标按下标志符号 |
 | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1B293E swatch](../../extensibility/ux-guidelines/media/1B293E.png "#FF1B293E swatch")<br />`#FF1B293E` | 命令栏文本、 下拉列表中，组合框的菜单项文本 |
-| ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF000000   swatch](../../extensibility/ux-guidelines/media/000000.png "#FF000000 swatch")<br />`#FF000000` | 命令栏： 将鼠标悬停在鼠标向下和选定的文本 |
+| ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#Ff000000 样本](../../extensibility/ux-guidelines/media/000000.png "#ff000000 样本")<br />`#FF000000` | 命令栏： 将鼠标悬停在鼠标向下和选定的文本 |
 | ![#FFCCCEDB 样本](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB 样本")<br />`#FFCCCEDB` | ![#FF222222 样本](../../extensibility/ux-guidelines/media/222222.png "#FF222222 样本")<br />`#FF222222` | ![#FF8591A2 swatch](../../extensibility/ux-guidelines/media/8591A2.png "#FF8591A2 swatch")<br />`#FF8591A2` | 命令栏： 工具栏分隔符 |
 | ![#Fff5f5f5 样本](../../extensibility/ux-guidelines/media/F5F5F5.png "#fff5f5f5 样本")<br />`#FFF5F5F5` | ![#FF46464A swatch](../../extensibility/ux-guidelines/media/46464A.png "#FF46464A swatch")<br />`#FF46464A` | ![#FFD6DBE9 swatch](../../extensibility/ux-guidelines/media/D6DBE9.png "#FFD6DBE9 swatch")<br />`#FFD6DBE9` | 命令栏： 分隔符突出显示的工具栏 |
 | ![#FFEEEEF2 样本](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 样本")<br />`#FFEEEEF2` | ![#FF2D2D30 样本](../../extensibility/ux-guidelines/media/2D2D30.png "#FF2D2D30 样本")<br />`#FF2D2D30` | ![#FFD6DBE9 swatch](../../extensibility/ux-guidelines/media/D6DBE9.png "#FFD6DBE9 swatch")<br />`#FFD6DBE9` | 命令架背景 |
