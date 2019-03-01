@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 02203ba84ee2d394ca9b714d74f607480ba68460
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: e1f430268549da74c1039899e828d37a21ac336c
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227808"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721051"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 应用中调试 HTML 和 CSS
 
@@ -254,10 +254,10 @@ DOM 资源管理器展示所呈现的页面的视图，还可使用 DOM 资源�
 > 指针悬停在元素上方时突出显示的元素在 Windows Phone 模拟器中仅部分受支持。
 
 ## <a name="see-also"></a>请参阅
-[在 Visual Studio 中调试应用](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)  
-[刷新应用 (JavaScript)](../debugger/refresh-an-app-javascript.md)  
-[调试 WebView 控件](../debugger/debug-a-webview-control.md)  
-[键盘快捷键](../debugger/keyboard-shortcuts-html-and-javascript.md)  
-[JavaScript Console commands](../debugger/javascript-console-commands.md)  
-[调试 HTML、CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)  
-[产品支持和辅助功能](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [在 Visual Studio 中调试应用](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [刷新应用 (JavaScript)](../debugger/refresh-an-app-javascript.md)
+- [调试 WebView 控件](../debugger/debug-a-webview-control.md)
+- [键盘快捷键](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [JavaScript Console commands](../debugger/javascript-console-commands.md)
+- [调试 HTML、CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)
+- [产品支持和辅助功能](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

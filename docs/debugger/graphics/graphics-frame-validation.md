@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b353954f56cc71922d1ec5e7aef483c7bad2f47f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54991523"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694811"
 ---
 # <a name="graphics-frame-validation"></a>图形帧验证
 <!-- VERSIONLESS --> Visual Studio 2017 和更好的支持**帧验证**工具。  帧验证窗口中显示错误和警告事件列表与相关联。  若要查看此窗口，请选择**视图 > 帧验证**菜单。
@@ -33,6 +33,6 @@ ms.locfileid: "54991523"
 | 消息 | 与事件关联的消息。 |
 | 事件 | 与错误或警告关联的事件。 |
 
-## <a name="see-also"></a>请参阅  
-[图形诊断（调试 DirectX 图形）](visual-studio-graphics-diagnostics.md)   
+## <a name="see-also"></a>请参阅
+[图形诊断（调试 DirectX 图形）](visual-studio-graphics-diagnostics.md)
 <!-- /VERSIONLESS -->

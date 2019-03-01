@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5304da009aa35eefb91f064929a58444f139f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316998"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56680178"
 ---
 # <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 特性 (C#，Visual Basic 中， F#、 C + + CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> 控制对象、属性或字段在调试器变量窗口中的显示方式。 此特性可应用于类型、委托、属性、字段和程序集。
@@ -62,7 +62,7 @@ csc /t:library autoexp.cs
 ## <a name="using-expressions-in-debuggerdisplay"></a>在 DebuggerDisplay 中使用表达式
 虽然您可以在 DebuggerDisplay 特性中的大括号之间使用常规表达式，但建议不要这样做。
 
-DebuggerDisplay 中的常规表达式只能隐式访问目标类型的当前实例的 `this` 指针。 该表达式不能访问别名、局部变量或指针。 如果表达式引用属性，则不处理这些属性上的特性。 例如，如果字段 `[DebuggerDisplay("Object {count - 2}")]` 是 8，则 C# 代码 `Object 6` 将显示 `count`。
+DebuggerDisplay 中的常规表达式只能隐式访问目标类型的当前实例的 `this` 指针。 该表达式不能访问别名、局部变量或指针。 如果表达式引用属性，则不处理这些属性上的特性。 例如，如果字段 `count` 是 8，则 C# 代码 `[DebuggerDisplay("Object {count - 2}")]` 将显示 `Object 6`。
 
 在 DebuggerDisplay 中使用表达式可能导致以下问题：
 
@@ -97,7 +97,7 @@ public sealed class MyClass
 |**名称**|**“值”**|**Type**|
 |--------------|---------------|--------------|
 |键|"three"|object {string}|
-|“值”|3|object {int}|
+|值|3|object {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
@@ -178,7 +178,8 @@ class MyHashtable
 ```
 
 ## <a name="see-also"></a>请参阅
-[使用 DebuggerTypeProxy 特性](../debugger/using-debuggertypeproxy-attribute.md)  
-[创建托管对象的自定义视图](../debugger/create-custom-views-of-dot-managed-objects.md)  
-[C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)  
-[使用调试器显示特性增强调试](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+
+- [使用 DebuggerTypeProxy 特性](../debugger/using-debuggertypeproxy-attribute.md)
+- [创建托管对象的自定义视图](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)
+- [使用调试器显示特性增强调试](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
