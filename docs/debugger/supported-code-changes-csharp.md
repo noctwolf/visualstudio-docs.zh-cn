@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5e5a4791b6703db72f67c9b18abcb3b0592916be
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 753a3816b6432a58c5f79077c4e438db753297b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945055"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56692219"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>支持的代码更改（C# 和 Visual Basic）
-“编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，你必须停止调试，重新开始新版本的代码。
+“编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，您必须停止调试，重新开始新版本的代码。
 
 ## <a name="supported-changes-to-code"></a>支持的代码的更改
 
@@ -43,12 +43,12 @@ ms.locfileid: "54945055"
 > 编辑并继续通常支持较新的语言功能，例如字符串插值和 null 条件运算符。 有关最新信息，请参阅[Enc 支持编辑](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)页。
 
 ## <a name="unsupported-changes-to-code"></a>不支持的更改代码
- 以下更改无法应用于C#和在调试会话过程中的 Visual Basic 代码：  
-  
--   对当前语句或任何其他活动语句的更改。  
-  
-     活动语句包括为转至当前语句而调用过的任何语句（位于调用堆栈的函数中）。  
-  
+ 以下更改无法应用于C#和在调试会话过程中的 Visual Basic 代码：
+
+-   对当前语句或任何其他活动语句的更改。
+
+     活动语句包括为转至当前语句而调用过的任何语句（位于调用堆栈的函数中）。
+
      当前语句在源窗口中以黄色背景标记。 其他活动语句以阴影背景标记，并且是只读的。 可在“选项”对话框中更改这些默认颜色。
 
 - 下表显示对代码的更改不受支持的语言元素。
@@ -76,9 +76,9 @@ ms.locfileid: "54945055"
 |using 语句|添加|
 |异步方法/lambda|修改异步方法/lambda 面向.NET Framework 4 的项目中，并减少 (请参阅[详细信息](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 |Iterators|修改面向.NET Framework 4 的项目中的迭代器，并减少 (请参阅[详细信息](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-  
-## <a name="unsafe-code"></a>不安全代码  
- 对不安全代码的更改与对安全代码的更改有相同的限制，但它还包含一条附加限制：编辑并继续不支持对包含的方法内退出的不安全代码的更改`stackalloc`运算符。  
+
+## <a name="unsafe-code"></a>不安全代码
+ 对不安全代码的更改具有与对安全代码的更改相同的限制，但它还包含一条附加限制：“编辑并继续”不支持对包含 `stackalloc` 运算符的方法内退出的不安全代码所作的更改。
 
 ## <a name="unsupported-app-scenarios"></a>不受支持的应用方案
 
@@ -86,24 +86,24 @@ ms.locfileid: "54945055"
 
 > [!NOTE]
 > 支持的应用包括在 Windows 10 和 x86 和 x64 应用程序面向.NET Framework 4.6 的 UWP 桌面或更高版本 （.NET Framework 是桌面版）。
-  
-## <a name="unsupported-scenarios"></a>不支持的方案  
- 在以下调试方案中，“编辑并继续”不可用：  
-  
--   混合模式（本机/托管）调试。  
-  
--   SQL 调试。  
-  
--   调试 Dr.Watson 转储。  
-  
--   调试嵌入式运行时应用程序。  
-  
--   调试应用程序中使用附加到进程 (**调试 > 附加到进程**) 而不是通过选择运行该应用程序**启动**从**调试**菜单。  
-  
--   调试优化后的代码。  
-  
+
+## <a name="unsupported-scenarios"></a>不支持的方案
+ 在以下调试方案中，“编辑并继续”不可用：
+
+-   混合模式（本机/托管）调试。
+
+-   SQL 调试。
+
+-   调试 Dr.Watson 转储。
+
+-   调试嵌入式运行时应用程序。
+
+-   调试应用程序中使用附加到进程 (**调试 > 附加到进程**) 而不是通过选择运行该应用程序**启动**从**调试**菜单。
+
+-   调试优化后的代码。
+
 -   如果由于生成错误无法生成新版本的代码，则对旧版本的代码进行调试。
-  
-## <a name="see-also"></a>请参阅  
- [编辑并继续 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [如何：使用“编辑并继续”(C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+
+## <a name="see-also"></a>请参阅
+- [编辑并继续 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
+- [如何：使用“编辑并继续”(C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

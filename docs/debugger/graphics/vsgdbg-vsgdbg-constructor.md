@@ -8,35 +8,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c4c987bd0f44f6b8a4bad945d249aaf832fc57
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: db51226c4d980359fd36ee5196e48d7fa4577a37
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035271"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723196"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg（构造函数）
-构造 `VsgDbg` 类的实例（准备或不准备图形诊断的应用内组件）来根据指定的布尔型参数主动捕获并记录图形信息（默认情况下）。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-VsgDbg(  
-  bDefaultInit  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `bDefaultInit`  
- 如果指定图形诊断的应用内组件准备主动捕获并记录图形信息，则为 `true`；如果指定应用此时不应准备主动捕获并记录图形信息，则为 `false`。  
-  
-## <a name="remarks"></a>备注  
- 当与调用的构造函数`bDefaultInit`设置为`true`，图形日志文件的文件名由如何`DONT_SAVE_VSGLOG_TO_TEMP`和`VSG_DEFAULT_RUN_FILENAME`预处理器符号定义之前`vsgcapture.h`包含应用程序中。  
-  
- 如果在 `bDefaultInit` 设置为 `false` 的情况下调用构造函数，则图形诊断的应用内组件可准备以通过调用 `Init` 函数主动捕获图形信息并在稍后记录该信息。  
-  
-## <a name="see-also"></a>请参阅  
- [VsgDbg::~VsgDbg（析构函数）](vsgdbg-tilde-vsgdbg-destructor.md)   
- [Init](init.md)   
- [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)   
- [VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)
+构造 `VsgDbg` 类的实例（准备或不准备图形诊断的应用内组件）来根据指定的布尔型参数主动捕获并记录图形信息（默认情况下）。
+
+## <a name="syntax"></a>语法
+
+```C++
+VsgDbg(
+  bDefaultInit
+);
+```
+
+#### <a name="parameters"></a>参数
+ `bDefaultInit` 如果指定图形诊断的应用内组件准备主动捕获并记录图形信息，则为 `true`；如果指定应用此时不应准备主动捕获并记录图形信息，则为 `false`。
+
+## <a name="remarks"></a>备注
+ 当与调用的构造函数`bDefaultInit`设置为`true`，图形日志文件的文件名由如何`DONT_SAVE_VSGLOG_TO_TEMP`和`VSG_DEFAULT_RUN_FILENAME`预处理器符号定义之前`vsgcapture.h`包含应用程序中。
+
+ 如果在 `bDefaultInit` 设置为 `false` 的情况下调用构造函数，则图形诊断的应用内组件可准备以通过调用 `Init` 函数主动捕获图形信息并在稍后记录该信息。
+
+## <a name="see-also"></a>请参阅
+- [VsgDbg::~VsgDbg（析构函数）](vsgdbg-tilde-vsgdbg-destructor.md)
+- [Init](init.md)
+- [DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)
+- [VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b3554373d4447aa3bd503668328424b25c43348
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790728"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844134"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 中的新增功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "54790728"
  适用于 Apache Cordova 的 Visual Studio 工具是 Microsoft 和开放源 Apache Cordova 社区紧密合作的成果。 通过这些工具，可使用 HTML、CSS 和 JavaScript（或 Typescript）进行跨平台移动开发。 你可将单一基本代码面向 Android、iOS 和 Windows，并且享受 Visual Studio IDE 的丰富功能，包括 JavaScript IntelliSense、DOM 资源管理器、JavaScript 控制台、断点、监视、局部变量、仅我的代码等等。  凭借适用于 Apache Cordova 的 Visual Studio 工具，你的应用可通过提供通用 JavaScript API 的插件使用所有平台上的原生设备功能。 若要开始，请参阅[开始使用 Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)。
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>通过 Unity 在 C# 中编写的跨平台移动游戏
- Unity 是用于开发多平台 2D 和 3D 游戏的使用广泛的平台。 可以使用 C# 编写你的游戏，并在 Android、iOS、Windows Phone 和许多其他平台上本机运行该游戏。 适用于 Unity 的 Visual Studio 工具是集成了 Unity 和 Visual Studio IDE 的扩展。 通过此扩展，你除了获得为 Unity 开发人员所设计的工作效率功能外，还可获得 Visual Studio IDE 和调试器的所有功能。 Visual Studio Tools for Unity 2.0 Preview 2 添加了对 Visual Studio 2015 的支持以及一些新功能，例如为“局部变量”和“监视”窗口中的对象提供更好的可视化效果。 Microsoft 最近收购了 SyntaxTree，这家公司是适用于 Unity 的 Visual Studio 工具的创建者。 要下载 Visual Studio Tools for Unity 2.0 Preview 2，以及获取有关 Visual Studio Tools for Unity 的详细信息，请参阅 [Visual Studio Tools for Unity 2.0](http://Aka.ms/vstu)。
+ Unity 是用于开发多平台 2D 和 3D 游戏的使用广泛的平台。 可以使用 C# 编写你的游戏，并在 Android、iOS、Windows Phone 和许多其他平台上本机运行该游戏。 适用于 Unity 的 Visual Studio 工具是集成了 Unity 和 Visual Studio IDE 的扩展。 通过此扩展，你除了获得为 Unity 开发人员所设计的工作效率功能外，还可获得 Visual Studio IDE 和调试器的所有功能。 Visual Studio Tools for Unity 2.0 Preview 2 添加了对 Visual Studio 2015 的支持以及一些新功能，例如为“局部变量”和“监视”窗口中的对象提供更好的可视化效果。 Microsoft 最近收购了 SyntaxTree，这家公司是适用于 Unity 的 Visual Studio 工具的创建者。 要下载 Visual Studio Tools for Unity 2.0 Preview 2，以及获取有关 Visual Studio Tools for Unity 的详细信息，请参阅 [Visual Studio Tools for Unity 2.0](https://aka.ms/vstu)。
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>针对本机 C++ 的跨平台应用程序和库
  C++ 是跨大部分移动设备本机可用的语言。 它可用于编写跨平台共享代码库，这些代码库可以针对多个移动平台目标进行生成。 甚至可以使用 C++ 创建完整的移动应用。 Visual C++ 为你提供编辑、生成、部署和调试跨平台代码的工具。 除适用于 Windows 应用的模板外，还可以根据适用于 Android Native Activity 应用和 iOS 应用的模板创建项目，或创建适用于多个平台的共享代码库项目，包括 Xamarin 混合应用。 借助特定于平台的 IntelliSense，可以浏览 API 以及生成针对 Android、iOS 或 Windows 目标的正确代码。 可以针对 x86 或 ARM 本机平台配置生成，并将代码部署到 iOS 模拟器、联网 Mac 上 iOS 设备或直接附加的 Android 设备，或使用高性能的 Microsoft Visual Studio Emulator for Android 进行测试。 可以在 Visual Studio 调试程序中设置断点、监视变量、查看堆栈和逐句通过 C++ 代码。 可以跨多个应用平台共享除最具有平台特定性的代码之外的所有代码，并在 Visual Studio 中用一个解决方案生成所有这些代码。

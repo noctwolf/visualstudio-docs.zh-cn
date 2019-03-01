@@ -8,29 +8,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aa23265c2f0d8d006d53faf575e2ea608c071d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 41a71a69c916bf2fff30b2dee8784d5d9997436b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027524"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705565"
 ---
 # <a name="addmessage"></a>AddMessage
-将自定义消息添加到图形诊断 HUD（提醒显示）。  
-  
-## <a name="syntax"></a>语法  
-  
-```C++  
-void AddMessage(  
-  wchar_t const * szMessage  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `szMessage`  
- 要添加到 HUD 的消息。  
-  
-## <a name="remarks"></a>备注  
- 图像诊断 HUD 显示在正在图形诊断下运行的应用的左上角。 它显示有关此应用和图形信息捕获的信息以及通过调用此函数添加的消息。  
-  
+将自定义消息添加到图形诊断 HUD（提醒显示）。
+
+## <a name="syntax"></a>语法
+
+```C++
+void AddMessage(
+  wchar_t const * szMessage
+);
+```
+
+#### <a name="parameters"></a>参数
+ `szMessage` 要添加到 HUD 的消息。
+
+## <a name="remarks"></a>备注
+ 图像诊断 HUD 显示在正在图形诊断下运行的应用的左上角。 它显示有关此应用和图形信息捕获的信息以及通过调用此函数添加的消息。
+
  若要将消息添加到 HUD，不必主动捕获图形信息 - 也就是说，消息可通过 `VsgDbg` 类的实例添加，但首先不要调用 [Init](init.md) 成员函数。 消息只显示在 HUD 中，而不会记录在图形日志文件中。

@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aab5fb7487cc2e79bc2e0e1a7a5dffce96447f9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f481d944baf60120bf691313400489c876ecf5c2
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55024547"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606246"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>部署 64 位应用程序的系统必备
-ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台为“x86”（32 位平台）、“x64”（支持 AMD64 和 EM64T 指令集的计算机）以及“Itanium”（64 位 Itanium 处理器）。  
+ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台为“x86”（32 位平台）、“x64”（支持 AMD64 和 EM64T 指令集的计算机）以及“Itanium”（64 位 Itanium 处理器）。
 
-## <a name="prerequisites"></a>系统必备  
- 下表列出了可用作 64 位应用程序安装的系统必备组件的可再发行组件。  
+## <a name="prerequisites"></a>系统必备
+ 下表列出了可用作 64 位应用程序安装的系统必备组件的可再发行组件。
 
- 如果选择不具有 64 位组件的系统必备组件，则可能会看到一条警告，该警告声明选择的程序包不能用于 64 位平台。  
+ 如果选择不具有 64 位组件的系统必备组件，则可能会看到一条警告，该警告声明选择的程序包不能用于 64 位平台。
 
 
 | 可再发行组件 | x64 支持 | IA64 支持 |
@@ -42,7 +42,7 @@ ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台为�
 | Microsoft .NET Framework 4（x86 和 x64） | 是 | |
 | Microsoft .NET Framework 4 Client Profil（x86 和 x64） | 是 | |
 
-## <a name="see-also"></a>请参阅  
- [部署应用程序、 服务和组件](../deployment/deploying-applications-services-and-components.md)   
- [如何：将系统必备与 ClickOnce 应用程序一起安装](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [64 位应用程序](/dotnet/framework/64-bit-apps)
+## <a name="see-also"></a>请参阅
+- [部署应用程序、 服务和组件](../deployment/deploying-applications-services-and-components.md)
+- [如何：与 ClickOnce 应用程序一起安装系统必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [64 位应用程序](/dotnet/framework/64-bit-apps)
