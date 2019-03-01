@@ -1092,7 +1092,7 @@ items:
   items:
   - name: Visual Studio 2017 中的新增功能
     href: ide/whats-new-visual-studio-2017.md
-  - name: Visual Studio 2019 预览版中的新增功能
+  - name: Visual Studio 2019 RC 的新增功能
     href: ide/whats-new-visual-studio-2019.md
   - name: 发行说明和系统要求
     items:
@@ -1135,9 +1135,9 @@ items:
   - name: 与我们交流
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 9d2edce3ea128754c4820736f90e26be9af4c479
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: d741f539d2db3e4e9df2c686adeea494cfe71a2e
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954514"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007379"
