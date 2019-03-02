@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8f4a09950de9480604d922b0d3dd5cefda17256
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908771"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223814"
 ---
 # <a name="dependency-diagrams-guidelines"></a>依赖项关系图： 准则
 
@@ -26,7 +26,7 @@ ms.locfileid: "55908771"
 若要查看哪些版本的 Visual Studio 支持此功能，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 > [!NOTE]
-> 不支持 Visual Studio 2017 中的.NET Core 项目的依赖项关系图。
+> 不支持在 Visual Studio 中的.NET Core 项目的依赖项关系图。
 
 ## <a name="what-is-a-dependency-diagram"></a>什么是依赖项关系图？
 
@@ -37,7 +37,7 @@ ms.locfileid: "55908771"
 以下步骤概述了如何使用在开发过程中的依赖项关系图。 本主题中的后面几节描述了有关每个步骤的更多详细信息。 如果您正在开发新的设计，请忽略引用现有代码的步骤。
 
 > [!NOTE]
-> 这些步骤按大致顺序显示。 你可能需要重叠任务、重新排序它们以符合你自己的具体情况，并在项目中的每个迭代开始时重新访问它们。
+> 这些步骤按大致顺序显示。 您可能需要重叠任务、重新排序它们以符合您自己的具体情况，并在项目中的每个迭代开始时重新访问它们。
 
 1.  [创建依赖项关系图](#Create)整个应用程序，或它其中的一个层。
 

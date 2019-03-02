@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e43273823c3baca77bfa50206c9b2186118cca8
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007353"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223723"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>如何：生成代码度量数据
 
@@ -206,7 +206,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 ### <a name="previous-versions"></a>早期版本
 
-以前版本的 Visual Studio 中，包括 Visual Studio 2015 中，包含一个命令行代码指标工具，也称为*Metrics.exe*。 此以前版本的工具进行了二进制分析，即，基于程序集的分析。 新工具将改为分析源代码。 因为新的命令行代码指标工具是基于代码的源，则结果将不同于生成的以前版本的内容*Metrics.exe*和 Visual Studio 2017 IDE 中。
+Visual Studio 2015 包括一个命令行代码指标工具，也称为*Metrics.exe*。 此以前版本的工具进行了二进制分析，即，基于程序集的分析。 新*Metrics.exe*工具改为分析源代码。 因为新*Metrics.exe*是源基于代码的命令行代码度量值结果是不同的那些由 Visual Studio IDE 和以前版本的生成工具*Metrics.exe*。
 
 新的命令行代码指标工具计算度量值，即使出现源代码错误，只要可以加载的解决方案和项目。
 
@@ -214,7 +214,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 `LinesOfCode`度量值是更加准确，且在新的命令行代码指标工具中可靠。 它是独立于任何代码生成的差异，工具集或运行时更改时不会更改。 新工具对实际代码，包括空白的行和注释的行进行计数。
 
-其他指标，如`CyclomaticComplexity`并`MaintainabilityIndex`与以前的版本使用同一个公式*Metrics.exe*，但新的工具进行计数的`IOperations`（逻辑源指令） 而不是中间语言 (IL) 指令。 这些数字会从早期版本的略有不同*Metrics.exe*并从 Visual Studio 2017 IDE 代码度量值结果。
+其他指标，如`CyclomaticComplexity`并`MaintainabilityIndex`与以前的版本使用同一个公式*Metrics.exe*，但新的工具进行计数的`IOperations`（逻辑源指令） 而不是中间语言 (IL) 指令。 会略有不同于由 Visual Studio IDE 和以前版本的生成号*Metrics.exe*。
 
 ## <a name="see-also"></a>请参阅
 

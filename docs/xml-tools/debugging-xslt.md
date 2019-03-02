@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b7caed64a263e5f347558dcea479b2e5ee27c96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f6c72146f6e76605cc379c4db269982f6eed1c6f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913897"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221835"
 ---
 # <a name="debugging-xslt"></a>调试 XSLT
 
 您可以使用 Visual Studio 调试程序来调试 XSLT。 调试器支持设置断点、查看 XSLT 执行状态等。
 
 > [!NOTE]
-> XSLT 调试程序是仅在 Visual Studio 2017 Enterprise edition 中可用。
+> XSLT 调试程序是仅在 Visual Studio Enterprise edition 中可用。
 
 ## <a name="xslt-profiler"></a>XSLT 探查器
 

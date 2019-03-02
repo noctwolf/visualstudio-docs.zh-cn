@@ -7,18 +7,20 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: c591ecdb206d14e217fb38c01864aa2691ffe2d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914992"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223346"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ 核心准则检查程序
-C + + Core Guidelines 了一可移植的指导原则、 规则和有关在 c + + 创建的 c + + 专家和设计器中编写代码的最佳做法。 Visual Studio 当前支持 c + + 作为其代码分析工具的一部分的这些规则的子集。 核心准则检查器在 Visual Studio 2017 中，默认情况下已安装并且位于[可用作 Visual Studio 2015 的 NuGet 包](#vs2015_corecheck)。
+
+C + + Core Guidelines 了一可移植的指导原则、 规则和有关在 c + + 创建的 c + + 专家和设计器中编写代码的最佳做法。 Visual Studio 当前支持 c + + 作为其代码分析工具的一部分的这些规则的子集。 核心准则检查器在 Visual Studio 2017 和 Visual Studio 2019，默认情况下已安装并且位于[可用作 Visual Studio 2015 的 NuGet 包](#vs2015_corecheck)。
 
 ## <a name="the-c-core-guidelines-project"></a>C + + 核心准则项目
- C + + Core Guidelines 由 Bjarne Stroustrup 和其他人创建的它是如何安全有效地使用现代 c + + 的指南。 指南强调了静态类型安全性和资源安全。 他们确定消除或最小化的语言，最容易出错的各个部分的方法，并建议如何使代码更简单和更高的性能可靠的方式。 由标准 c + + 基础维护这些指导原则。 若要了解详细信息，请参阅本文档中， [c + + Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)，并在访问 c + + Core Guidelines 文档项目文件[GitHub](https://github.com/isocpp/CppCoreGuidelines)。
+
+C + + Core Guidelines 由 Bjarne Stroustrup 和其他人创建的它是如何安全有效地使用现代 c + + 的指南。 指南强调了静态类型安全性和资源安全。 他们确定消除或最小化的语言，最容易出错的各个部分的方法，并建议如何使代码更简单和更高的性能可靠的方式。 由标准 c + + 基础维护这些指导原则。 若要了解详细信息，请参阅本文档中， [c + + Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)，并在访问 c + + Core Guidelines 文档项目文件[GitHub](https://github.com/isocpp/CppCoreGuidelines)。
 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>启用代码分析中的 c + + Core Check 准则
  可以通过选择您的项目中启用代码分析**生成时启用代码分析**中的复选框**代码分析**一部分**属性页**对话框你的项目。

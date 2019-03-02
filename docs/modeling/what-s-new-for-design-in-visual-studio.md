@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 958526ccd6145813589167c639cb10550e9e8869
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7f6e43b27695e582e75b27258875f2276a558ca1
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315997"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223372"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio 中用于设计的新增功能
 
@@ -65,7 +65,7 @@ UML 设计器已从 Visual Studio Enterprise 的此版本中删除。
 
 ## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />对体系结构和建模工具的版本支持
 
-Visual Studio 2017 现已推出多个版本。 并非所有这些体系结构和建模工具提供支持。 下表显示每个工具的可用性。
+Visual Studio 有多个版本。 并非所有这些体系结构和建模工具提供支持。 下表显示每个工具的可用性。
 
 |**功能**|**企业版**|**专业版**|**社区版**|
 |-|-|-|-|

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9016ee501c0fc4064e15358c3c8e2e4e0ac11cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 44d68b83f9364885ea33af2184f2a911bf916325
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938994"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222329"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>如何：将新项添加到工作流项目
 
@@ -38,7 +38,7 @@ ms.locfileid: "55938994"
 1. 在左侧窗格中，选择**工作流**类别，并选择工作流项目模板。
 
    > [!NOTE]
-   > 如果没有看到**工作流**类别中，首次安装**Windows Workflow Foundation**组件的 Visual Studio 2017。 有关详细说明，请参阅[安装 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
+   > 如果没有看到**工作流**类别中，首次安装**Windows Workflow Foundation**组件的 Visual Studio。 有关详细说明，请参阅[安装 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
 
 1. 输入中的项的名称**名称**对话框底部的框。
 
