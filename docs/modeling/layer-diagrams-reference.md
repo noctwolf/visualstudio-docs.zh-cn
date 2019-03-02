@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: baee97f08a4e6015d6c2e1d88f83f5835431578b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957908"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223008"
 ---
 # <a name="dependency-diagrams-reference"></a>依赖项关系图： 参考
 
@@ -34,7 +34,7 @@ ms.locfileid: "55957908"
 若要查看哪些版本的 Visual Studio 支持此功能，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 > [!NOTE]
-> 不支持 Visual Studio 2017 中的.NET Core 项目的依赖项关系图。
+> 不支持在 Visual Studio 中的.NET Core 项目的依赖项关系图。
 
 你可以指定各层之间的预期或现有依赖项。 这些依赖项（表示为箭头）指示哪些层可以使用或当前正在使用由其他层表示的功能。 通过将系统组织到描述不同的角色和功能的层，依赖项关系图可以帮助使你更轻松地理解、 重用和维护你的代码。
 

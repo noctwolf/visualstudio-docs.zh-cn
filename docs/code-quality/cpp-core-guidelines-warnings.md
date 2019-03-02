@@ -8,16 +8,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89406cfa114d91cc6e6a33064bf073cc35181cdf
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954301"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223489"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ 核心准则检查程序
 
-C + + Core Guidelines 了一可移植的指导原则、 规则和有关在 c + + 创建的 c + + 专家和设计器中编写代码的最佳做法。 Visual Studio 当前支持 c + + 作为其代码分析工具的一部分的这些规则的子集。 核心准则检查器在 Visual Studio 2017 中，默认情况下已安装并且位于[可用作 Visual Studio 2015 的 NuGet 包](#vs2015_corecheck)。
+C + + Core Guidelines 了一可移植的指导原则、 规则和有关在 c + + 创建的 c + + 专家和设计器中编写代码的最佳做法。 Visual Studio 当前支持 c + + 作为其代码分析工具的一部分的这些规则的子集。 核心准则检查器在 Visual Studio 2017 和 Visual Studio 2019，默认情况下已安装并且位于[可用作 Visual Studio 2015 的 NuGet 包](#vs2015_corecheck)。
 
 ## <a name="the-c-core-guidelines-project"></a>C + + 核心准则项目
 

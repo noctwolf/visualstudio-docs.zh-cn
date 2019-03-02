@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de4818a57dc09825e6f41a635ea777a9e3f06e2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910506"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222930"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>安装.NET Compiler Platform 分析器
 
-Visual Studio 2017 包括一组核心.NET 编译器平台 (*Roslyn*) 分析器。 这些分析器将始终启用。 你可以安装其他分析器作为 NuGet 包，或在 Visual Studio 扩展*VSIX*文件。
+Visual Studio 包含一组核心.NET 编译器平台 (*Roslyn*) 分析器。 这些分析器将始终启用。 你可以安装其他分析器作为 NuGet 包，或在 Visual Studio 扩展*VSIX*文件。
 
 ## <a name="to-install-nuget-analyzer-packages"></a>若要安装 NuGet 分析器包
 
@@ -60,7 +60,7 @@ Visual Studio 2017 包括一组核心.NET 编译器平台 (*Roslyn*) 分析器�
 
 6. 选择**修改**以开始安装。
 
-7. 后一分钟或两个，安装完成。 选择**关闭**。
+7. 后一分钟或两个，安装完成。 选择“关闭”。
 
 8. Visual Studio 中再次打开。
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0450260d5d889c141607a281740bf06d255d5c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cf4013f1302ff4952fa34c689801978b9116e549
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923416"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222449"
 ---
 # <a name="workflow-project-templates"></a>工作流项目模板
 
@@ -34,7 +34,7 @@ Visual Studio 提供了四个不同的工作流项目模板：
 
 - 活动设计器库
 
-若要访问这些模板，请先安装**Windows Workflow Foundation**组件的 Visual Studio 2017。 有关详细说明，请参阅[安装 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
+若要访问这些模板，请先安装**Windows Workflow Foundation**组件的 Visual Studio。 有关详细说明，请参阅[安装 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
 
 1. 安装后**Windows Workflow Foundation**组件中，打开**新项目**对话框中的选择**文件** > **新建** > **项目**。
 

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5248609ed51f82cfbc69c883063a032ab48813f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317362"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223190"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用依赖项关系图验证代码
 
@@ -49,7 +49,7 @@ ms.locfileid: "56317362"
 - 一个具有建模项目和依赖项关系图的解决方案。 此依赖项关系图必须链接到你想要验证的 C# 或 Visual Basic 项目中的项目。 请参阅[从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)。
 
 > [!NOTE]
-> 不支持 Visual Studio 2017 中的.NET Core 项目的依赖项关系图。
+> 不支持在 Visual Studio 中的.NET Core 项目的依赖项关系图。
 
 若要查看哪些版本的 Visual Studio 支持此功能，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -107,7 +107,7 @@ ms.locfileid: "56317362"
 2.  若要查看每个错误的源，请双击中的错误**错误列表**窗口。
 
     > [!NOTE]
-    > Visual Studio 可能会显示代码图，而不是错误的源。 代码不由依赖项关系图中，指定程序集上具有依赖项或代码缺少指定的依赖项关系图的依赖项时，将发生这种情况。 评审代码图或代码，以确定此依赖关系是否应该存在。 有关代码图的详细信息，请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)。
+    > Visual Studio 可能会显示代码图，而不是错误的源。 代码不由依赖项关系图中，指定程序集上具有依赖项或代码缺少指定的依赖项关系图的依赖项时，将发生这种情况。 检查代码映射或代码，以确定此依赖关系是否应该存在。 有关代码图的详细信息，请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)。
 
 3.  若要管理错误，请参阅[管理验证错误](#ManageErrors)。
 
@@ -235,6 +235,6 @@ ms.locfileid: "56317362"
 
 ## <a name="see-also"></a>请参阅
 
-- [Visual Studio 2017 中的实时依赖项验证](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
+- [Visual Studio 中的实时依赖项验证](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [在开发过程中验证系统](../modeling/validate-your-system-during-development.md)
 - [视频：验证你在真实时间中的体系结构依赖关系](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

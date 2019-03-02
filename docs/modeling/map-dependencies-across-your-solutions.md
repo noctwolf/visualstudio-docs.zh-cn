@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30eb3183d261297295d9d6d3715f3683e4b6ee34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950222"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223697"
 ---
 # <a name="map-dependencies-with-code-maps"></a>使用代码映射来映射依赖项
 
@@ -47,7 +47,7 @@ ms.locfileid: "55950222"
 
 ## <a name="install-code-map-and-live-dependency-validation"></a>安装代码映射和实时依赖项验证
 
-若要在 Visual Studio 2017 中创建代码图，请先安装**Code Map**并**实时依赖项验证**组件：
+若要在 Visual Studio 中创建代码图，请先安装**Code Map**并**实时依赖项验证**组件：
 
 1. 打开**Visual Studio 安装程序**。 您可以通过打开它从 Windows 开始菜单中，或在 Visual Studio 中选择**工具** > **获取工具和功能**。
 
@@ -86,7 +86,7 @@ ms.locfileid: "55950222"
 
 1. 在菜单栏上依次选择**体系结构** > **生成解决方案的代码图**。 如果自上次您生成后，你的代码未发生更改，则可以选择**体系结构** > **解决方案无需构造生成代码图**相反。
 
-   ![生成代码图命令](../modeling/media/codemapsarchitecturemenu.png)
+   ![生成代码映射命令](../modeling/media/codemapsarchitecturemenu.png)
 
    生成映射显示顶级程序集和它们之间的聚合的链接。 聚合链路越广，它所代表的依赖关系就越多。
 
@@ -98,11 +98,11 @@ ms.locfileid: "55950222"
 
 3. 若要深入了解代码图中，请展开表示项目和程序集的组。 可以通过按“CTRL+A”  展开全部内容以选择所有节点，然后选择“组” ，再选择快捷菜单中的“展开”  。
 
-   ![展开代码图中的所有组](../modeling/media/codemapsexpandallgroups.png)
+   ![展开代码映射中的所有组](../modeling/media/codemapsexpandallgroups.png)
 
 4. 但是，这对大型解决方案可能并无作用。 事实上，对于复杂的解决方案，内存限制可能会阻止你展开所有组。 相反，若要在单个节点内进行查看，则将其展开。 将鼠标指针移动到节点的顶部，然后单击出现的 V 形。
 
-   ![展开代码图中的节点](../modeling/media/dependencygraph_containment.png)
+   ![展开代码映射中的节点](../modeling/media/dependencygraph_containment.png)
 
    或使用键盘选择项，然后按加号键（“+”**+**）。 若要查看更深层次的代码，请对命名空间、类型和成员执行相同操作。
 
@@ -136,7 +136,7 @@ ms.locfileid: "55950222"
 
 10. 集中精力处理复杂的解决方案代码图的另一种方式是从现有代码图生成包含选定项的新代码图。 保存**Ctrl**同时选择你想要关注的项，打开快捷菜单，然后选择**从选定内容新建图**。
 
-    ![显示新代码图上的选定项](../modeling/media/codemapsshowonnewmap.png)
+    ![显示新代码映射上的选定项](../modeling/media/codemapsshowonnewmap.png)
 
 11. 将包含上下文转入新代码图。 隐藏解决方案文件夹以及不想要查看使用的任何其他容器**筛选器**窗格。
 

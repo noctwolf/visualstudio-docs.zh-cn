@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0da99377a6e0f5405029c0ac194484de3a3a1c90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909133"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222592"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>在 Visual Studio 中的托管代码的静态代码分析的概述
 
-Visual Studio 2017 可以通过两种方式执行托管代码的代码分析： 使用*FxCop*静态分析托管程序集，并提供详细的新式*Roslyn 分析器*。 本主题介绍 FxCop 静态代码分析。 若要了解有关使用代码分析器来分析代码的详细信息，请参阅[概述的 Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
+Visual Studio 可以通过两种方式执行托管代码的代码分析： 使用*FxCop*静态分析托管程序集，并提供详细的新式*Roslyn 分析器*。 本主题介绍 FxCop 静态代码分析。 若要了解有关使用代码分析器来分析代码的详细信息，请参阅[概述的 Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
 
 针对托管代码的代码分析用于分析托管程序集并报告有关程序集的信息，例如违反 Microsoft .NET Framework 设计指南中规定的编程和设计准则。
 
@@ -59,7 +59,7 @@ Public class MyClass
 有关详细信息，请参阅[禁止显示警告](../code-quality/in-source-suppression-overview.md)。
 
 > [!NOTE]
-> 如果将项目迁移到 Visual Studio 2017，可能会突然遇到大量代码分析警告。 如果还没有准备好修复警告，并且想要立即提高工作效率，则可*重置*项目的分析状态。 从**分析**菜单中，选择**运行代码分析并取消未解决的问题**。
+> 如果将项目迁移到 Visual Studio 2017 或 Visual Studio 2019，可能会突然遇到具有大量代码分析警告。 如果还没有准备好修复警告，并且想要立即提高工作效率，则可*重置*项目的分析状态。 从**分析**菜单中，选择**运行代码分析并取消未解决的问题**。
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>作为签入策略的一部分运行代码分析
 

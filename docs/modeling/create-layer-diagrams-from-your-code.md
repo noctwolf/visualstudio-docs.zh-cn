@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52919bc65366afc3e0fef5d3dbca1e5a9e7e77e1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913010"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223229"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>从代码创建依赖项关系图
 
@@ -41,7 +41,7 @@ ms.locfileid: "55913010"
 ### <a name="add-a-new-dependency-diagram-to-a-modeling-project"></a>将新的依赖项关系图添加到建模项目
 
 > [!NOTE]
-> 不支持 Visual Studio 2017 中的.NET Core 项目的依赖项关系图。
+> 不支持在 Visual Studio 中的.NET Core 项目的依赖项关系图。
 
 1.  上**体系结构**菜单中，选择**新依赖项关系图**。
 
