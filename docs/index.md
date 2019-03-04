@@ -3,15 +3,9 @@ layout: HubPage
 hide_bc: true
 title: Visual Studio 文档| Microsoft Docs
 titleSuffix: ''
-description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来开发适用于你的平台和设备的应用程序、服务和工具。
+description: 了解如何使用 Visual Studio 并以选定语言来开发适用于你的平台和设备的应用程序、服务和工具。
 ms.topic: hub-page
 ms.custom: seodec18
-ms.openlocfilehash: 9bcd261ce7d6efbd7fac50352c9dfaa17ed6c41f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316777"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -55,7 +49,7 @@ ms.locfileid: "56316777"
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/whats-new-in-visual-studio">
+                <a href="/visualstudio/ide/whats-new-visual-studio-2017">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -65,7 +59,7 @@ ms.locfileid: "56316777"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Visual Studio 2017 中的新增功能</h3>
+                                    <h3>Visual Studio 中的新增功能</h3>
                                 </div>
                             </div>
                         </div>

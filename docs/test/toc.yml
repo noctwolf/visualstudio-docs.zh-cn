@@ -93,7 +93,7 @@ items:
       href: how-to-use-ctest-for-cpp.md
     - name: 编写 C/C++ DLL 的单元测试
       href: how-to-write-unit-tests-for-cpp-dlls.md
-    - name: 演练：编写适用于 C++ DLL 的单元测试
+    - name: 演练：编写 C++ DLL 单元测试
       href: walkthrough-writing-unit-tests-for-cpp-dlls.md
     - name: 适用于 C++ API 参考的 Microsoft 单元测试框架
       href: microsoft-visualstudio-testtools-cppunittestframework-api-reference.md
@@ -121,7 +121,7 @@ items:
     href: live-unit-testing-whats-new.md
   - name: Live Unit Testing 入门
     href: live-unit-testing-start.md
-  - name: 使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing
+  - name: 使用 Enterprise Edition 中的 Live Unit Testing
     href: live-unit-testing.md
   - name: Live Unit Testing 常见问题解答
     href: live-unit-testing-faq.md
@@ -331,7 +331,7 @@ items:
 - name: UI 测试自动化
   href: use-ui-automation-to-test-your-code.md
   items:
-  - name: 演练 创建、编辑和维护编码的 UI 测试
+  - name: 演练：创建、编辑和维护编码的 UI 测试
     href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
   - name: 使用编码的 UI 测试来测试 UWP 应用
     href: test-uwp-app-with-coded-ui-test.md
@@ -370,9 +370,9 @@ items:
     href: lab-management/use-build-or-rm-instead-of-lab-management.md
   - name: 安装测试代理和测试控制器
     href: lab-management/install-configure-test-agents.md
-ms.openlocfilehash: 3035030458d8d0a3914952d606ca775ad33a62fc
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: c361abfb14ec9c89054b08d561c11e060d05a6af
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621508"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223788"
