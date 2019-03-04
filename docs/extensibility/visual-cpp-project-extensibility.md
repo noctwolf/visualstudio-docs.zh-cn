@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d765d9d4299821b0e940311cdb9d73b96b59327b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9474bd1dc78dd9b2896749d92fa796a3febd1104
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692055"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223554"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 项目系统可扩展性和工具集集成
 
@@ -604,7 +604,7 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 ## <a name="project-cache-and-extensibility"></a>项目缓存和可扩展性
 
-若要使用在 Visual Studio 2017 中，大型 c + + 解决方案时提高性能[项目缓存](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-solution-load-with-vs-15/)引入了。 它作为一个填充了项目数据，并随后用于加载项目，而不加载到内存中的 MSBuild 或 CPS 项目的 SQLite 数据库实现。
+若要使用在 Visual Studio 2017 中，大型 c + + 解决方案时提高性能[项目缓存](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/)引入了。 它作为一个填充了项目数据，并随后用于加载项目，而不加载到内存中的 MSBuild 或 CPS 项目的 SQLite 数据库实现。
 
 由于存在可用于从缓存加载的.vcxproj 项目没有 CPS 对象，该扩展的 MEF 组件的导入`UnconfiguredProject`或`ConfiguredProject`无法创建。 若要支持可扩展性，Visual Studio 会检测是否一个项目使用 （或可能使用） MEF 扩展时，不使用项目缓存。
 
