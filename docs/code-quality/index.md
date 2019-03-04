@@ -1,18 +1,12 @@
 ---
 layout: LandingPage
 title: 代码分析
-description: 了解如何使用 Visual Studio 2017 来分析代码质量。
+description: 了解如何使用 Visual Studio 来分析代码质量。
 ms.date: 12/03/2018
 ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99d1ab0dd6eea79380b33fec76a2ba1869559f3c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949006"
 ---
 # <a name="code-analysis-in-visual-studio"></a>Visual Studio 中的代码分析
 
