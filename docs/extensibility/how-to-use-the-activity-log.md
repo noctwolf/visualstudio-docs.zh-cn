@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae4b85aa39f2323ed3e4a4353b28239a015ae7f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719270"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324008"
 ---
 # <a name="how-to-use-the-activity-log"></a>如何：使用活动日志
 Vspackage 可以将消息写入活动日志。 此功能是非常适合在零售环境中进行调试的 Vspackage。
@@ -46,7 +46,9 @@ Vspackage 可以将消息写入活动日志。 此功能是非常适合在零售
 
 1. 运行 Visual Studio 中使用[/log](../ide/reference/log-devenv-exe.md)命令行开关在会话期间将 ActivityLog.xml 写入到磁盘。
 
-2. 关闭 Visual Studio 后, 找到活动日志的子文件夹中的 Visual Studio 数据：  <em>*%appdata%</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*。
+2. 关闭 Visual Studio 后, 找到活动日志的子文件夹中的 Visual Studio 数据：
+
+   <em>*%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
 
 3. 使用任何文本编辑器打开活动日志。 以下是典型条目：
 
@@ -55,11 +57,13 @@ Vspackage 可以将消息写入活动日志。 此功能是非常适合在零售
    ```
 
 ## <a name="robust-programming"></a>可靠编程
- 活动日志是一项服务，因为活动日志是在 VSPackage 构造函数中不可用。
 
- 应写入之前先获取活动日志。 不要缓存或保存活动日志以供将来使用。
+活动日志是一项服务，因为活动日志是在 VSPackage 构造函数中不可用。
+
+应写入之前先获取活动日志。 不要缓存或保存活动日志以供将来使用。
 
 ## <a name="see-also"></a>请参阅
+
 - [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>

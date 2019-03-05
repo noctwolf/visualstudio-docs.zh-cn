@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中随附的 DataCamp 培训订阅。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: afda11bd8cbc0a8f0be1c25ab0b23d9f7b3a39b8
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380398"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841424"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 DataCamp 培训权益
 
@@ -33,7 +31,7 @@ DataCamp 权益的持续时间取决于你的 Visual Studio 订阅。
 3. 在 DataCamp 页面上，可以创建新帐户。  可以选择输入电子邮件地址和密码，或使用来自 Facebook、LinkedIn 或 Google 的现有帐户登录。  提供了登录信息之后，单击“开始”。
    > [!div class="mx-imgBorder"]
    > ![DataCamp 创建新帐户](_img/vs-datacamp/vs-datacamp-create-account.png)
-   > 
+   >
    > [!NOTE]
    > 开始创建帐户时，可能会收到以下错误消息：“抱歉！  促销代码无效或已过期。”  发生这种情况是因为促销代码创建后会在几分钟后过期。  如果收到此消息，只需返回到[“权益”](https://my.visualstudio.com/benefits)页，然后单击“DataCamp 权益”磁贴上的 **“激活”** 链接。
 
@@ -62,7 +60,7 @@ DataCamp 权益的持续时间取决于你的 Visual Studio 订阅。
 
 可以随时停止，并在下一个会话中恢复培训。  只需访问 [http://www.datacamp.com](http://www.datacamp.com)，并登录。  你会看到仪表板，可以直接从暂停的位置继续培训。 只需单击“继续路线”。
 
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![DataCamp 继续培训](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>资格
@@ -79,7 +77,7 @@ DataCamp 权益的持续时间取决于你的 Visual Studio 订阅。
 
 
 
-<sup>1</sup>  包括：不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine
+<sup>1</sup>  *包括：不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine
 
 
 > [!NOTE]

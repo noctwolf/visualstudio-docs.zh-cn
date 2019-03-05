@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753201d8f09b93186cac279d20dee2c7f3e1534d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843307"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323635"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 分析器和 immutablearrays 的代码识别库
 
@@ -298,7 +298,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 现在，可以按**F5**在 Visual Studio 的第二个实例中执行您的分析器。 打开之前使用的控制台项目。 现在，会看到灯泡图标中显示新的对象创建表达式为`ImmutableArray<int>`。 如果按下**Ctrl**+**。** （句点），则会看到解决问题，请在代码，将看到在灯泡 UI 中的自动生成的代码差异预览。 Roslyn 为你创建此操作。
 
-**Pro 提示：** 如果启动 Visual Studio 中，第二个实例，并且看不到灯泡图标中使用代码修补程序，您可能需要清除 Visual Studio 组件缓存。 清除缓存将强制 Visual Studio 以重新检查这些组件，因此 Visual Studio 应选取最新组件。 首先，关闭 Visual Studio 的第二个实例。 然后，在**Windows 资源管理器**，导航到 *%LOCALAPPDATA%\Microsoft\VisualStudio\15.0Roslyn\\*。 （"15.0"更改版本的 Visual studio）。 删除子目录*ComponentModelCache*。
+**Pro 提示：** 如果启动 Visual Studio 中，第二个实例，并且看不到灯泡图标中使用代码修补程序，您可能需要清除 Visual Studio 组件缓存。 清除缓存将强制 Visual Studio 以重新检查这些组件，因此 Visual Studio 应选取最新组件。 首先，关闭 Visual Studio 的第二个实例。 然后，在**Windows 资源管理器**，导航到 *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*。 （"16.0"更改版本的 Visual studio。）删除子目录*ComponentModelCache*。
 
 ## <a name="talk-video-and-finish-code-project"></a>视频和完成的代码项目
 

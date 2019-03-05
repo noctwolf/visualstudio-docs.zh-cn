@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf013f24f38485d0db1ec6ca9f45d26f2ede2c9f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: af4fd52b28846228f447f70320babbdd357bac89
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684736"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324125"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 扩展架构 2.0 参考
 VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的文件格式。 此架构的 2.0 版支持的自定义类型和属性添加。  清单的架构是可扩展的。 清单加载程序将忽略 XML 元素和属性并不理解。
@@ -127,11 +127,11 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
         -   单个版本 #-指定的版本。
 
         > [!IMPORTANT]
-        >  在 Visual Studio 2012 中引入的 VSIX 架构版本 2.0。 若要使用此架构你必须具有 Visual Studio 2012 或更高版本在计算机上安装并使用是该产品的一部分 VSIXInstaller.exe。 你可以面向早期版本的 Visual Studio 与 Visual Studio 2012 或更高版本 vsixinstaller 找，但只能通过使用更高版本的安装程序。
+        > 在 Visual Studio 2012 中引入的 VSIX 架构版本 2.0。 若要使用此架构你必须具有 Visual Studio 2012 或更高版本在计算机上安装并使用是该产品的一部分 VSIXInstaller.exe。 你可以面向早期版本的 Visual Studio 与 Visual Studio 2012 或更高版本 vsixinstaller 找，但只能通过使用更高版本的安装程序。
 
         请参阅 visual Studio 2017 版本号[Visual Studio 生成号和发布日期](../install/visual-studio-build-numbers-and-release-dates.md)。
 
-        当表示 Visual Studio 2017 版本的版本，应始终为次要版本**0**。 例如，Visual Studio 2017 版本 15.3.26730.0 应表示为 [15.0.26730.0,16.0)。 这只是所需的 Visual Studio 2017 版本号。
+        当表示 Visual Studio 2017 版本的版本，应始终为次要版本**0**。 例如，Visual Studio 2017 版本 15.3.26730.0 应表示为 [15.0.26730.0,16.0)。 这只是所需的 Visual Studio 2017 和更高版本的版本号。
 
     -   `AnyAttribute*` -`<InstallationTarget>`元素允许开放式集的属性公开在运行时作为名称 / 值对字典。
 
