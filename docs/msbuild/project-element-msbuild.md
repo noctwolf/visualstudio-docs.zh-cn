@@ -19,40 +19,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 598e802f9868399073bba7a6f1bc1f2278af83f6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 505a05c13add7c9e4d2ee27790ef6b971ee281f9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54921033"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635132"
 ---
 # <a name="project-element-msbuild"></a>Project 元素 (MSBuild)
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。
 
-## <a name="syntax"></a>语法  
+## <a name="syntax"></a>语法
 
-```xml  
-<Project InitialTargets="TargetA;TargetB"  
-         DefaultTargets="TargetC;TargetD"  
-         TreatAsLocalProperty="PropertyA;PropertyB"  
+```xml
+<Project InitialTargets="TargetA;TargetB"
+         DefaultTargets="TargetC;TargetD"
+         TreatAsLocalProperty="PropertyA;PropertyB"
          ToolsVersion=<version number>
          Sdk="name[/version]"
-         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <Sdk... />
-    <Choose>... </Choose>  
-    <PropertyGroup>... </PropertyGroup>  
-    <ItemGroup>... </ItemGroup>  
-    <Target>... </Target>  
-    <UsingTask.../>  
-    <ProjectExtensions>... </ProjectExtensions>  
-    <Import... />  
-</Project>  
-```  
+    <Choose>... </Choose>
+    <PropertyGroup>... </PropertyGroup>
+    <ItemGroup>... </ItemGroup>
+    <Target>... </Target>
+    <UsingTask.../>
+    <ProjectExtensions>... </ProjectExtensions>
+    <Import... />
+</Project>
+```
 
-## <a name="attributes-and-elements"></a>特性和元素  
- 下列各节描述了特性、子元素和父元素。  
+## <a name="attributes-and-elements"></a>特性和元素
+ 下列各节描述了特性、子元素和父元素。
 
-### <a name="attributes"></a>特性  
+### <a name="attributes"></a>特性
 
 | 特性 | 说明 |
 |------------------------| - |
@@ -63,7 +63,7 @@ ms.locfileid: "54921033"
 | `TreatAsLocalProperty` | 可选特性。<br /><br /> 不会被视为全局的属性名称。 此属性可防止特定命令行属性替代项目或目标文件和所有后续导入中设置的属性值。 使用分号 (;) 分隔多个属性。<br /><br /> 通常，全局属性会替代项目或文件中设置的属性值。 如果该属性在 `TreatAsLocalProperty` 值中列出，那么全局属性值不会替代在该文件或任何后续导入中设置的属性值。 有关详细信息，请参阅[如何：使用不同选项生成相同的源文件](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。 **注意：** 可使用“-property”（或“-p”）开关，在命令提示符处设置全局属性。 还可使用 MSBuild 任务的 `Properties` 属性为多项目生成中的子项目设置或修改全局属性。 有关详细信息，请参阅 [MSBuild 任务](../msbuild/msbuild-task.md)。 |
 | `Xmlns` | 可选特性。<br /><br /> 指定后，`xmlns` 属性必须具有 `http://schemas.microsoft.com/developer/msbuild/2003` 值。 |
 
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子元素
 
 | 元素 | 说明 |
 | - | - |
@@ -78,11 +78,11 @@ ms.locfileid: "54921033"
 | [Target](../msbuild/target-element-msbuild.md) | 可选元素。<br /><br /> 包含一组要连续执行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务。 使用 [Task](../msbuild/task-element-msbuild.md) 元素指定任务。 项目中可能有零个或零个以上的 `Target` 元素。 |
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | 可选元素。<br /><br /> 提供在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中注册任务的方法。 项目中可能有零个或零个以上的 `UsingTask` 元素。 |
 
-### <a name="parent-elements"></a>父元素  
- 无。  
+### <a name="parent-elements"></a>父元素
+ 无。
 
-## <a name="see-also"></a>请参阅  
- [如何：指定首先生成的目标](../msbuild/how-to-specify-which-target-to-build-first.md)   
- [命令行参考](../msbuild/msbuild-command-line-reference.md)   
- [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)   
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>请参阅
+- [如何：指定首先生成的目标](../msbuild/how-to-specify-which-target-to-build-first.md)
+- [命令行参考](../msbuild/msbuild-command-line-reference.md)
+- [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

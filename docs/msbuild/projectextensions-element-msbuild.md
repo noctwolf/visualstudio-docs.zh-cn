@@ -18,60 +18,59 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c600d7756c83fb55a63a91e81b3d826aa9f3d747
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 318ca02899632fb4499010cc348f73379a2a562d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996748"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56617127"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 元素 (MSBuild)
-允许 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件包含非 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 信息。 `ProjectExtensions` 元素中的所有内容都将被 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 忽略。  
+允许 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件包含非 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 信息。 `ProjectExtensions` 元素中的所有内容都将被 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 忽略。
 
- \<Project>  
- \<ProjectExtensions>  
+ \<Project> \<ProjectExtensions>
 
-## <a name="syntax"></a>语法  
+## <a name="syntax"></a>语法
 
-```xml  
-<ProjectExtensions>  
-    Non-MSBuild information to include in file.  
-</ProjectExtensions>  
-```  
+```xml
+<ProjectExtensions>
+    Non-MSBuild information to include in file.
+</ProjectExtensions>
+```
 
-## <a name="attributes-and-elements"></a>特性和元素  
- 下列各节描述了特性、子元素和父元素。  
+## <a name="attributes-and-elements"></a>特性和元素
+ 下列各节描述了特性、子元素和父元素。
 
-### <a name="attributes"></a>特性  
- 无  
+### <a name="attributes"></a>特性
+ None
 
-### <a name="child-elements"></a>子元素  
- 无  
+### <a name="child-elements"></a>子元素
+ None
 
-### <a name="parent-elements"></a>父元素  
+### <a name="parent-elements"></a>父元素
 
 | 元素 | 说明 |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。 |
 
-## <a name="remarks"></a>备注  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目中可能只会用到一个 `ProjectExtensions` 元素。  
+## <a name="remarks"></a>备注
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目中可能只会用到一个 `ProjectExtensions` 元素。
 
-## <a name="example"></a>示例  
- 以下示例显示了存储在 `ProjectExtensions` 元素中的集成开发环境的信息。  
+## <a name="example"></a>示例
+ 以下示例显示了存储在 `ProjectExtensions` 元素中的集成开发环境的信息。
 
-```xml  
-<ProjectExtensions>  
-    <VSIDE>  
-        <External>  
-            <!--  
-            Raw XML passed to the IDE by an external source  
-            -->  
-        </External>  
-    </VSIDE>  
-</ProjectExtensions>  
-```  
+```xml
+<ProjectExtensions>
+    <VSIDE>
+        <External>
+            <!--
+            Raw XML passed to the IDE by an external source
+            -->
+        </External>
+    </VSIDE>
+</ProjectExtensions>
+```
 
-## <a name="see-also"></a>请参阅  
- [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)  
- [MSBuild](../msbuild/msbuild.md)
+## <a name="see-also"></a>请参阅
+- [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

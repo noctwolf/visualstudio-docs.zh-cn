@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e297493226478c27f3c3eb6d22e45cb5769e42d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: b9a405b2758b40dda65f614c6231afc4251a30ac
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55023910"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323927"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -29,7 +29,8 @@ ms.locfileid: "55023910"
 
 -   其他资源
 
-### <a name="creating-a-topic-f1-support"></a>正在创建主题 （F1 支持）
+## <a name="create-a-topic-f1-support"></a>创建主题 （F1 支持）
+
 本部分概述的组件提供的主题，主题要求、 如何创建使用其呈现结果的主题 （包括 F1 支持要求） 和最后，示例主题的简短说明。
 
 **帮助查看器主题概述**
@@ -95,13 +96,13 @@ Visual Studio 品牌包支持的控件：
 
 -   在这种情况下，我们将使用我们自己的品牌包，Visual Studio 帮助查看器品牌包的一个变体。
 
--   添加 F1 元名称和值 ("Microsoft.Help.F1"内容 ="ContosoTopic4")，将匹配 IDE 属性包中提供的 F1 值。  （请参阅 F1 支持部分，了解详细信息。） 这是与 F1 匹配的值从 IDE 以在 IDE 中选择 f1 键时显示此主题中的调用。
+-   添加 F1 元名称和值 ("Microsoft.Help.F1"内容 ="ContosoTopic4")，将匹配 IDE 属性包中提供的 F1 值。 （请参阅 F1 支持部分，了解详细信息。）这是与 F1 匹配的值从 IDE 以在 IDE 中选择 f1 键时显示此主题中的调用。
 
--   添加主题 id。 这是其他主题用于链接到本主题的字符串。  它是本主题的帮助查看器 ID。
+-   添加主题 id。 这是其他主题用于链接到本主题的字符串。 它是本主题的帮助查看器 ID。
 
 -   目录中，将添加本主题的父节点，以定义此主题 TOC 节点出现的位置。
 
--   目录中，将添加本主题的节点顺序。 当父节点的子节点的 n 个时，定义按子节点的顺序本主题的位置。 例如，本主题是多 4 个 4 子主题。)
+-   目录中，将添加本主题的节点顺序。 当父节点具有`n`编号的子节点按子节点的顺序定义本主题的位置。 例如，本主题是多 4 个 4 子主题。
 
 元数据示例部分：
 
@@ -124,7 +125,6 @@ Visual Studio 品牌包支持的控件：
 
 </body>
 </html>
-
 ```
 
 **主题正文**
@@ -141,10 +141,10 @@ Visual Studio 品牌包支持的控件：
 
 5.  添加代码特定于语言的文本：`<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` 请注意，`devLangnu=`允许您输入其他语言。 例如，`devLangnu="Fortran"`显示 Fortran 时代码片段 DisplayLanguage = Fortran
 
-6.  添加页链接： `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6.  添加页链接： `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  注意： 对于不受支持新"显示语言"(示例中， F#，Cobol、 Fortran) 中的代码段的代码着色将单色。
+> 注意： 对于不受支持新"显示语言"(示例中， F#，Cobol、 Fortran) 中的代码段的代码着色将单色。
 
 **示例帮助查看器主题**该代码演示如何定义元数据、 代码段、 可折叠区域中和特定于语言的文本。
 
@@ -257,7 +257,7 @@ some F# code
 
     <div id="seeAlsoSection" class="section">
     <div class="seeAlsoStyle">
-        <a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>
+        <a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>
     </div>
  </div>
 </div>
@@ -340,9 +340,21 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 添加以下注册表项和值：
 
-HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 帮助键：在零售值中显示调试输出：是的
+::: moniker range="vs-2017"
 
-在 IDE 中下的帮助菜单项，选择"调试帮助上下文"
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
+
+::: moniker-end
+
+值：零售数据中显示调试输出：是的
+
+在 IDE 中下的帮助菜单项，选择**调试帮助上下文**。
 
 **内容元数据**
 
@@ -366,7 +378,8 @@ HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic 帮助键：在�
 | \< 元 name="Microsoft.Help.TopicVersion 内容 ="[主题版本编号]"/ > | 在目录中存在多个版本时，请指定此版本的主题。 Microsoft.Help.Id 不保证是唯一的因为多个版本的主题的目录中存在，例如，目录中包含的主题针对.NET Framework 3.5 和主题，针对.NET Framework 4 和都具有相同的 Micro 时此标记时需要软。Help.Id。 |
 | \< 元名称 ="SelfBranded"content ="[TRUE 或 FALSE]"/ > | 指定本主题使用 Help Library 管理器启动品牌包或特定于主题的品牌包。 此标记必须为 TRUE 或 FALSE。 如果其值为 TRUE，则关联的主题的品牌包重写 Help Library 管理器启动，以便运行安装程序，即使它不同于其他内容的呈现呈现主题时设置的品牌包。 如果为 FALSE，基于 Help Library 管理器启动时设置的品牌包呈现当前主题。 默认情况下，Help Library 管理器假定自品牌，除非 SelfBranded 变量声明为 TRUE; 否则为 false因此，不需要声明\<元名称 ="SelfBranded"content ="FALSE"/ >。 |
 
-### <a name="creating-a-branding-package"></a>创建品牌包
+## <a name="create-a-branding-package"></a>创建品牌包
+
 Visual Studio 版本包含许多不同 Visual Studio 产品，包括 Visual Studio 合作伙伴： 独立和集成的 shell。  每个这些产品需要某种程度的基于主题的帮助内容的品牌支持，唯一的产品。  例如，Visual Studio 主题需要具有一致的品牌的演示内容，而 SQL Studio，包装 ISO Shell，则需要其自己唯一的帮助内容的标记每个主题。  集成的 Shell 合作伙伴可以其维护其自己的主题品牌时是在父 Visual Studio 产品的帮助内容的帮助主题。
 
 安装品牌包包含帮助查看器的产品。  用于 Visual Studio 产品：
@@ -432,7 +445,6 @@ Branding.xml 文件包含用于本主题包含时一致地呈现在主题中的�
 注意： 标记"{n}"所示的变量具有代码依赖项-删除或更改这些值将导致错误和可能是应用程序崩溃。 在 Visual Studio 品牌包中包含本地化标识符 (示例 _locID="codesnippet.n")。
 
 **Branding.xml**
-
 
 | | |
 | - | - |
@@ -603,7 +615,8 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 |ccOn.png|隐藏式字幕图||
 |ImageSprite.png|用于呈现可折叠区域|展开或折叠图|
 
-### <a name="deploying-a-set-of-topics"></a>部署一的组主题
+## <a name="deploy-a-set-of-topics"></a>部署一的组主题
+
 这是用于创建帮助查看器内容部署集 MSHA 文件和 cab 数或 MSHCs 包含主题的集合组成的简单和快速教程。 MSHA 是描述一组的 cab 文件的 XML 文件或 MSHC 文件。 帮助查看器可以读取 MSHA 获取一系列内容 (。CAB 或。MSHC 文件） 可用于本地安装。
 
 这是仅用于帮助查看器 MSHA 描述非常基本的 XML 架构的入门读物。  没有此简要概述和示例 HelpContentSetup.msha 下面的示例实现。
@@ -677,14 +690,14 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 </div>
 </body>
 </html>
-
 ```
 
 **摘要**
 
 使用和扩展的上述步骤将启用 Vsp 来为 Visual Studio 帮助查看器中部署其内容集。
 
-### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>添加到 Visual Studio Shell （集成和独立） 的帮助
+### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>将帮助添加到 Visual Studio Shell （集成和独立）
+
 **介绍**
 
 本演练演示如何将帮助内容合并到 Visual Studio Shell 应用程序，然后将其部署。
@@ -722,11 +735,11 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
-   密钥：LocationPath 字符串值：C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
+   键:LocationPath 字符串值：C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15\
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-US
 
-   密钥：CatalogName 字符串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 文档
+   键:CatalogName 字符串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 文档
 
 **创建项目**
 
@@ -786,7 +799,7 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
 6. 创建 CatalogType.xml 并添加到包含的内容存储区 （上一步）：
 
-   ```
+   ```xml
    <?xml version="1.0" encoding="UTF-8"?>
    <catalogType>UserManaged</catalogType>
    ```
@@ -803,7 +816,7 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-US
 
-    密钥：CatalogName 字符串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 文档。 对于 ISO Shell 中，这是你目录的名称。
+    键:CatalogName 字符串值：[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 文档。 对于 ISO Shell 中，这是你目录的名称。
 
 8. 将你的内容 （cab 或 MSHC 和 MSHA） 复制到本地文件夹。
 
@@ -817,7 +830,7 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
 12. Contoso IDE 中，选择 F1 键来测试 F1 功能。
 
-### <a name="additional-resources"></a>其他资源
+## <a name="additional-resources"></a>其他资源
 
 运行时 API，请参阅[Windows 帮助 API](/previous-versions/windows/desktop/helpapi/helpapi-portal)。
 
