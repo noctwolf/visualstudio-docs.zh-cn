@@ -12,37 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fed378aad3a988daa532bb22c0dfd6cb3cbfd2f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: a97be63cd782397e984fd8dbce7da844efa07540
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923221"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626838"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 函数
-初始化标记提供程序。 必须在任何其他并发可视化工具 SDK 函数之前调用。  
-  
-## <a name="syntax"></a>语法  
-  
-```C  
-HRESULT CvInitProvider(  
-   _In_ const GUID* pGuid,  
-   _Out_ PCV_PROVIDER* ppProvider  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pGuid`  
- 提供程序 GUID。 不能为 NULL。  
-  
- `ppProvider`  
- 输出变量的地址，用于存储提供程序上下文。 不能为 NULL。  
-  
-## <a name="return-value"></a>返回值  
- 成功初始化提供程序时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。  
-  
-## <a name="requirements"></a>要求  
- **标头：** cvmarkers.h  
-  
-## <a name="see-also"></a>请参阅  
- [C++ 库参考](../profiling/cpp-library-reference.md)
+初始化标记提供程序。 必须在任何其他并发可视化工具 SDK 函数之前调用。
+
+## <a name="syntax"></a>语法
+
+```C
+HRESULT CvInitProvider(
+   _In_ const GUID* pGuid,
+   _Out_ PCV_PROVIDER* ppProvider
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pGuid` 提供程序 guid。 不能为 NULL。
+
+ `ppProvider` 输出变量的地址，用于存储提供程序上下文。 不能为 NULL。
+
+## <a name="return-value"></a>返回值
+ 成功初始化提供程序时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。
+
+## <a name="requirements"></a>要求
+ **标头：** cvmarkers.h
+
+## <a name="see-also"></a>请参阅
+- [C++ 库参考](../profiling/cpp-library-reference.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76e2d85cd1417d7700841b3d035255317f2581a0
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54959416"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624966"
 ---
 # <a name="performance-session-properties"></a>性能会话属性
 
@@ -38,7 +38,7 @@ ms.locfileid: "54959416"
 
 [收集 .NET 内存分配和生存期数据](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [如何：设置性能数据文件名选项](../profiling/how-to-set-performance-data-file-name-options.md)
+- [如何：设置性能数据文件名选项](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>启动
 
@@ -111,6 +111,6 @@ ms.locfileid: "54959416"
 
 ## <a name="see-also"></a>请参阅
 
-[概述](../profiling/overviews-performance-tools.md)  
-[配置性能会话](../profiling/configuring-performance-sessions.md)  
+[概述](../profiling/overviews-performance-tools.md)
+[配置性能会话](../profiling/configuring-performance-sessions.md)
 [控制数据收集](../profiling/controlling-data-collection.md)

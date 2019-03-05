@@ -12,22 +12,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f624a1130c0da261e563e755e55dc2bfcfd49151
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54966707"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630488"
 ---
 # <a name="per-thread-summary-report"></a>“每线程摘要”报告
-此条形图显示在当前可见时间范围内，各活动类别中的每个非隐藏线程所花费的时间比例。 “执行”表示线程正在执行；所有其他类别表示线程正在进行等待。  
-  
-## <a name="see-also"></a>请参阅  
- [执行时间（“线程”视图）](../profiling/execution-time-threads-view.md)   
- [I/O 时间（“线程”视图）](../profiling/i-o-time-threads-view.md)   
- [内存管理时间](../profiling/memory-management-time.md)   
- [抢占时间](../profiling/preemption-time.md)   
- [睡眠时间](../profiling/sleep-time.md)   
- [同步时间](../profiling/synchronization-time.md)   
- [UI 处理时间](../profiling/ui-processing-time.md)   
- [线程视图](../profiling/threads-view-parallel-performance.md)
+此条形图显示在当前可见时间范围内，各活动类别中的每个非隐藏线程所花费的时间比例。 “执行”表示线程正在执行；所有其他类别表示线程正在进行等待。
+
+## <a name="see-also"></a>请参阅
+- [执行时间（“线程”视图）](../profiling/execution-time-threads-view.md)
+- [I/O 时间（“线程”视图）](../profiling/i-o-time-threads-view.md)
+- [内存管理时间](../profiling/memory-management-time.md)
+- [抢占时间](../profiling/preemption-time.md)
+- [睡眠时间](../profiling/sleep-time.md)
+- [同步时间](../profiling/synchronization-time.md)
+- [UI 处理时间](../profiling/ui-processing-time.md)
+- [线程视图](../profiling/threads-view-parallel-performance.md)

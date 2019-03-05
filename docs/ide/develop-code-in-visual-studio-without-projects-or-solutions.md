@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45828cc73e679bdf177c212604b95820bc58011c
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155352"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56718542"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中开发代码而无需创建项目或解决方案
 
-在 Visual Studio 2017 中，你可以在 Visual Studio 中打开几乎任何类型的基于目录的项目的代码，而无需创建解决方案或者项目文件。 这意味着，例如，可以在 GitHub 上克隆一个存储库，然后在 Visual Studio 中直接打开并开始开发，而无需创建解决方案或项目。 如果需要，可以指定自定义生成任务并通过简单的 JSON 文件启动参数。
+你可以在 Visual Studio 中打开几乎任何类型的基于目录的项目的代码，而无需创建解决方案或者项目文件。 这意味着，例如，可以在 GitHub 上克隆一个存储库，然后在 Visual Studio 中直接打开并开始开发，而无需创建解决方案或项目。 如果需要，可以指定自定义生成任务并通过简单的 JSON 文件启动参数。
 
 在 Visual Studio 中打开代码文件之后，“解决方案资源管理器”会显示文件夹中的所有文件。 可以单击任何文件开始编辑。 在后台，Visual Studio 开始对文件编制索引，以启用 IntelliSense、导航和重构功能。 在编辑、创建、移动或删除文件时，Visual Studio 会自动跟踪更改，并不断更新其 IntelliSense 索引。 代码带有语法着色，许多情况下还含有基本的 IntelliSense 语句完成。
 
@@ -29,9 +29,19 @@ ms.locfileid: "56155352"
 可以通过以下任何方式，在 Visual Studio 中打开代码：
 
 - 在 Visual Studio 菜单栏上，依次选择“文件” > “打开” > “文件夹”，然后浏览到代码位置。
+
 - 在包含该代码的文件夹的上下文（右键单击）菜单上，选择“在 Visual Studio 中打开”命令。
+
+::: moniker range="vs-2017"
 - 选择 Visual Studio“开始”页上的“打开文件夹”链接。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- 在“开始”窗口中选择“打开文件夹”链接。
+::: moniker-end
+
 - 如果是键盘用户，则在 Visual Studio 中按 Ctrl+Shift+Alt+O。
+
 - 打开克隆的 GitHub 存储库中的代码。
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>打开克隆的 GitHub 存储库中的代码

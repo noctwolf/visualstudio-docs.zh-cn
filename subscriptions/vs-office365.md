@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解一些 Visual Studio 订阅中随附的 Office 365 权益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded8c37cfcd737e9285b6a1e2a5f9eb51ede2680
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 6d6fdcbe7ae5bb5182f7c123120d632a4221f642
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380143"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841062"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Office 365 Pro Plus
 
@@ -23,9 +21,9 @@ ms.locfileid: "54380143"
 ## <a name="getting-started-with-office-365-pro-plus"></a>开始使用 Office 365 Pro Plus
 
 请按照以下步骤下载并激活 Office 365 Pro Plus：
-1. 登录 Visual Studio Enterprise 订阅。  
+1. 登录 Visual Studio Enterprise 订阅。
 2. 单击“下载”选项卡。
-3. 此时，系统会列出特别推荐的下载内容。 在 Office 列表中，选择“Office 365”。 
+3. 此时，系统会列出特别推荐的下载内容。 在 Office 列表中，选择“Office 365”。
    > [!div class="mx-imgBorder"]
    > ![Office 365 下载](_img/vs-office365/vs-office365-downloads.png)
 0. 必须有产品密钥，才能安装 Office 365。  单击 Office 365 列表下的“获取密钥”链接。
@@ -36,7 +34,7 @@ ms.locfileid: "54380143"
    > ![Office 365：索取产品密钥](_img/vs-office365/vs-office365-claim-key.png)
 0. 记录刚刚声明的密钥。 （可随时返回到此列表，以再次查看。）
 0. 关闭弹出窗口。
-0. 单击“下载”按钮。 
+0. 单击“下载”按钮。
    > [!div class="mx-imgBorder"]
    > ![Office 365：开始下载](_img/vs-office365/vs-office365-download-button.png)
 0. 使用 Microsoft 帐户登录。 （如果已登录，请单击“下一步”。）
@@ -44,7 +42,7 @@ ms.locfileid: "54380143"
    > [!div class="mx-imgBorder"]
    > ![Office 365：输入产品密钥](_img/vs-office365/vs-office365-enter-key.png)
 0. 再次单击“下一步”。
-0. 单击“安装”，以安装 Office 应用。 
+0. 单击“安装”，以安装 Office 应用。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -63,7 +61,7 @@ ms.locfileid: "54380143"
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 | Visual Studio Dev Essentials | 不可用  | 不可用 |不可用 |
 
-<sup>1</sup>  包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络。
+<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络。
 
 
 > [!NOTE]

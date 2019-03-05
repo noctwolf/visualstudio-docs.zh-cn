@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c76be48965aa49e0bad61afd0b70a6b8413075ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a77fae7d802b0edf5fceaae8409f2e0a91f6687b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952822"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56703248"
 ---
 # <a name="environment-options-dialog-box"></a>“选项”对话框 ->“环境”
 
@@ -35,7 +35,7 @@ ms.locfileid: "55952822"
 |若要设置键盘映射选项。|[“选项”对话框 ->“环境”->“键盘”](../../ide/reference/keyboard-environment-options-dialog-box.md)|
 |若要指定是否启用通知。|[“选项”对话框 ->“环境”->“通知”](../../ide/reference/notifications-environment-options-dialog-box.md)|
 |若要指定快速启动窗口的选项。|[“选项”对话框 ->“环境”->“快速启动”](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
-|若要指定起始页选项。|[“选项”对话框 ->“环境”->“启动”](../../ide/reference/startup-environment-options-dialog-box.md)|
+|指定启动选项。|[“选项”对话框 ->“环境”->“启动”](../../ide/reference/startup-environment-options-dialog-box.md)|
 |若要指定是否在计算机之间漫游设置。|[“选项”对话框 ->“环境”->“同步设置”](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |了解如何为任务和任务列表设置选项|[“选项”对话框 ->“环境”->“任务列表”](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |更改默认的“主页”和“搜索”页，更改系统源文件编辑器并配置 Internet Explorer 选项。|[“选项”对话框 ->“环境”->“Web 浏览器”](../../ide/reference/web-browser-environment-options-dialog-box.md)|

@@ -6,15 +6,13 @@ manager: evelynp
 ms.date: 04/10/2018
 ms.topic: conceptual
 description: 如何为 Visual Studio 订阅添加用于登录 Azure DevOps 和 Azure 的备用标识
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 68ce5c2a19797b827f1ed6304107ac62ef82623f
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ee1db1fc10629c5476b9fd78b826993401aa14db
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858147"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842125"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 订阅者标识
 

@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c329755c1468d0ced5ab7f85335086a2388e21c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 57cc289b64db3cd4f22fd549ea9b28046f7f652b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54933278"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638980"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测 .NET 服务，并收集详细计时数据
 
@@ -20,7 +20,7 @@ ms.locfileid: "54933278"
 
 > [!NOTE]
 > 如果某服务在计算机启动之后无法重启（此类服务只能在操作系统启动时启动），则无法使用检测方法分析该服务。
-> 
+>
 > 若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
 >
 > 若要将层交互数据添加到分析运行，需要使用命令行分析工具执行特定的步骤。 请参阅[收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)。
@@ -108,5 +108,5 @@ ms.locfileid: "54933278"
 
 ## <a name="see-also"></a>请参阅
 
-[分析服务](../profiling/command-line-profiling-of-services.md)  
+[配置文件服务](../profiling/command-line-profiling-of-services.md)
 [检测方法数据视图](../profiling/instrumentation-method-data-views.md)

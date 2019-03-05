@@ -6,15 +6,13 @@ manager: lank
 ms.date: 10/31/2018
 ms.topic: conceptual
 description: 了解订阅访问丢失时订阅者数据的匿名方式。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4570ff43f946c25c50d298e22de3b0c8a261f870
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: a4249aa2520df6e9c1870fec121de2fdb2135308
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51811247"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842541"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Visual Studio 订阅者信息匿名化
 
@@ -37,7 +35,7 @@ ms.locfileid: "51811247"
 ## <a name="faq"></a>FAQ
 
 ### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>问：订阅者个人信息匿名化是否导致他们无法访问订阅？
-答：不会。  匿名化是针对导致订阅权限丢失但不导致缺乏访问权限的事件而进行的。
+答：不是。  匿名化是针对导致订阅权限丢失但不导致缺乏访问权限的事件而进行的。
 
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>问：我是组织的订阅的管理员。  如果某个订阅者的信息是匿名的，那么该订阅是否可以重新分配给其他用户？
 答：是的 - 只要订阅尚未过期，就可以将其重新分配给其他订阅者。

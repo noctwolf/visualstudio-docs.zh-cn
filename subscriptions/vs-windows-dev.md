@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解有关 Visual Studio 订阅中包含的 Windows 开发者帐户。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 584048c088acb7ee3a390d941dbd6c59ce2ac3a0
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 25f948a0a855655da45b8c11fd955a06d14e5cf7
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380261"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843680"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Windows 开发者帐户
 
@@ -60,7 +58,7 @@ ms.locfileid: "54380261"
 | Visual Studio Dev Essentials | NA  | 不可用                                            |  NA|
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup>  包括：限制转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员。不包括：Microsoft 合作伙伴网络 (MPN)、Imagine、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务。
+<sup>1</sup>  *包括：限制转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员。不包括：Microsoft 合作伙伴网络 (MPN)、Imagine、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务。
 
 
 > [!NOTE]

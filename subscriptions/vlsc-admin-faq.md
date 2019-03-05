@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 批量许可服务中心管理迁移常见问题解答
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4bc2902c819f4e677127d4c2c857ed1fb5dc015
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297542"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56844095"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio 订阅管理迁移
 
@@ -77,10 +75,10 @@ ms.locfileid: "36297542"
 你可以继续通过 VLSC 管理订阅，直到收到 Visual Studio 订阅的电子邮件，其中说明你的组织已迁移并且可以在新门户中进行管理。
 
 ### <a name="where-can-i-locate-my-organizations-public-customer-number-pcn-or-authorization-number"></a>我可以在哪里找到组织的公共客户编号 (PCN) 或授权编号？
-登录到 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 并按以下路径导航：“订阅” > “Visual Studio 订阅”。 PCN 位于“协议/公共客户编号结果”之下。 请参阅这篇[帮助文章](find-pcn.md)，了解查找 PCN 的相关分步指导。
+登录 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 并按以下路径导航：“订阅” > “Visual Studio 订阅”。 PCN 位于“协议/公共客户编号结果”之下。 请参阅这篇[帮助文章](find-pcn.md)，了解查找 PCN 的相关分步指导。
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>如何找出主要联系人或通知联系人是谁？
-登录到 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 并按以下路径导航：“许可证”>“关系汇总”，然后选择“许可 ID”>“联系人”。 请参阅这篇[帮助文章](find-primary-contact.md)，了解查找主要联系人或通知联系人的相关分步指导。
+登录 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 并按以下路径导航：“许可证 > 关系摘要”，选择你的“许可 ID > 联系人”。 请参阅这篇[帮助文章](find-primary-contact.md)，了解查找主要联系人或通知联系人的相关分步指导。
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>如果我的主要联系人或通知联系人已离职、不再就职于这家公司或无法完成加入，该怎么办？
 你需要[联系支持人员](https://visualstudio.microsoft.com/subscriptions/support/#talktous)并提供在 VLSC 中用于管理订阅的电子邮件。 验证后，支持人员将帮助你执行加入过程。
@@ -98,7 +96,7 @@ ms.locfileid: "36297542"
 是，你的组织仍然会迁移到新系统。 新系统中将保留过度索取能力（针对允许此操作的协议类型）。
 
 ### <a name="what-if-my-organization-has-more-than-one-subscription-assigned-to-a-single-useremail-address"></a>如果我的组织中有多个订阅分配给了一个用户/电子邮件地址会怎样？
-你的组织仍然会迁移。  但你将无法向该用户/电子邮件地址分配任何其他的同级别订阅（即企业版、专业版等）。 迁移后，任何使用相同电子邮件地址的同级别订阅仍然可见，但管理员需更改电子邮件地址，确保其具有唯一性。 新门户中，不能将同级别的多个订阅分配给一个用户/电子邮件地址。
+你的组织仍然会迁移。  但你将无法将任何其他的同级别订阅（即企业版、专业版等）分配到该用户/电子邮件地址。 迁移后，任何使用相同电子邮件地址的同级别订阅仍然可见，但管理员需更改电子邮件地址，确保其具有唯一性。 新门户中，不能将同级别的多个订阅分配给一个用户/电子邮件地址。
 
 ### <a name="where-can-i-find-the-most-up-to-date-information-about-the-migration"></a>在哪里可以找到有关迁移的最新信息？
 有关此迁移的最新信息，请访问 Visual Studio 订阅管理员[网页](https://aka.ms/vs-admin)。 如需支持，请查看 Visual Studio 订阅[支持页](http://visualstudio.microsoft.com/subscriptions/support/#!collections/962-subscriptions)，其中包含了自助信息和支持人员联系信息。 接下来几个月中，我们将继续在管理员网页上和通过电子邮件提供更新，以帮助轻松完成转换。

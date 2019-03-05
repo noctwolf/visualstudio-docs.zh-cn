@@ -8,42 +8,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 952d5c726090aabbc4fe550f64696bcce7a3f784
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 440401f8c46a3920fce6c8e0d29f630a24103f65
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54940071"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625122"
 ---
 # <a name="mark"></a>标记
-VSPerfCmd.exe 的“标记”选项可以在分析数据文件中插入指定的信息。 标记可能列在单独的 VSPerfReport 报表中或探查器 UI 的“标记报表”视图中。 标记可用于指定报表和视图筛选器中的起止点。  
-  
- “标记”选项是命令行上可指定的唯一选项。  
-  
-## <a name="syntax"></a>语法  
-  
-```cmd  
-VSPerfCmd.exe /Mark:MarkID,[MarkName]  
-```  
-  
-#### <a name="parameters"></a>参数  
- `MarkID`  
- 用户定义的整数，在探查器视图和报表中列为标记 ID。 `MarkID` 不必是唯一的值。  
-  
- `MarkName`  
- （可选）用户定义的字符串，在探查器视图和报告中作为标记名称列出。 如果未指定 `MarkName`，则标记列表中的“标记名称”字段为空。 需将包含空格或正斜杠（“/”）的字符串用引号引起来。  
-  
-## <a name="example"></a>示例  
- 此示例插入了一个 ID 为 123、名称为“TestMark”的标记。  
-  
-```cmd  
-VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
-VSPerfCmd.exe /Launch:TestApp.exe  
-VSPerfCmd.exe /Mark:123,TestMark  
-```  
-  
-## <a name="see-also"></a>请参阅  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [分析服务](../profiling/command-line-profiling-of-services.md)
+VSPerfCmd.exe 的“标记”选项可以在分析数据文件中插入指定的信息。 标记可能列在单独的 VSPerfReport 报表中或探查器 UI 的“标记报表”视图中。 标记可用于指定报表和视图筛选器中的起止点。
+
+ “标记”选项是命令行上可指定的唯一选项。
+
+## <a name="syntax"></a>语法
+
+```cmd
+VSPerfCmd.exe /Mark:MarkID,[MarkName]
+```
+
+#### <a name="parameters"></a>参数
+ `MarkID` 用户定义的整数，在探查器视图和报表中列为标记 ID。 `MarkID` 不必是唯一的值。
+
+ `MarkName` （可选）用户定义的字符串，在探查器视图和报告中作为标记名称列出。 如果未指定 `MarkName`，则标记列表中的“标记名称”字段为空。 需将包含空格或正斜杠（“/”）的字符串用引号引起来。
+
+## <a name="example"></a>示例
+ 此示例插入了一个 ID 为 123、名称为“TestMark”的标记。
+
+```cmd
+VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
+VSPerfCmd.exe /Launch:TestApp.exe
+VSPerfCmd.exe /Mark:123,TestMark
+```
+
+## <a name="see-also"></a>请参阅
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [分析服务](../profiling/command-line-profiling-of-services.md)

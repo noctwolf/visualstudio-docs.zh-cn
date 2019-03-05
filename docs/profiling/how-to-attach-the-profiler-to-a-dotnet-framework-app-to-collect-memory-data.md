@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 435141ce8b01c2c486dd9b856c173895237a4906
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 31e9aa6bcc89f0a9fb39d2a871119a0906b4243d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54954808"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637940"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>如何：将探查器附加到 .NET Framework 独立应用程序，以使用命令行收集内存数据
 
 本文介绍如何使用 Visual Studio 分析工具命令行工具将探查器附加到正在运行的 .NET Framework 独立（客户端）应用程序，并收集内存数据。
 
 > [!NOTE]
->  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。  
+>  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
 
 若要附加到 .NET Framework 应用程序并收集内存数据，必须使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化相应的环境变量，然后才能启动目标应用程序。 将探查器附加到应用程序时，可以使用 *VSPerfCmd.exe* 工具暂停和继续数据收集。
 
@@ -112,5 +112,5 @@ ms.locfileid: "54954808"
 
 ## <a name="see-also"></a>请参阅
 
-[分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)  
+[配置文件独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)
 [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)

@@ -16,62 +16,61 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97d5aeac5115dfa251b42c824b88a779e22ad6a4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3dd0b9fc5ef9441e867d5103bbb722a3628ffc78
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54978329"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610523"
 ---
 # <a name="importgroup-element"></a>ImportGroup 元素
-包含在可选条件下进行分组的 `Import` 元素的集合。 有关详细信息，请参阅 [Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)。  
+包含在可选条件下进行分组的 `Import` 元素的集合。 有关详细信息，请参阅 [Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)。
 
- \<Project>  
- \<ImportGroup>  
+ \<Project> \<ImportGroup>
 
-## <a name="syntax"></a>语法  
+## <a name="syntax"></a>语法
 
-```xml  
-<ImportGroup Condition="'String A' == 'String B'">  
-    <Import ... />  
-    <Import ... />  
-</ImportGroup>  
-```  
+```xml
+<ImportGroup Condition="'String A' == 'String B'">
+    <Import ... />
+    <Import ... />
+</ImportGroup>
+```
 
-## <a name="attributes-and-elements"></a>特性和元素  
- 下列各节描述了特性、子元素和父元素。  
+## <a name="attributes-and-elements"></a>特性和元素
+ 下列各节描述了特性、子元素和父元素。
 
-### <a name="attributes"></a>特性  
+### <a name="attributes"></a>特性
 
-|特性|说明|  
-|---------------|-----------------|  
-|`Condition`|可选特性。<br /><br /> 要评估的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
+|特性|说明|
+|---------------|-----------------|
+|`Condition`|可选特性。<br /><br /> 要评估的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|
 
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子元素
 
-|元素|说明|  
-|-------------|-----------------|  
-|[Import](../msbuild/import-element-msbuild.md)|将一个项目文件的内容导入其他项目文件中。|  
+|元素|说明|
+|-------------|-----------------|
+|[Import](../msbuild/import-element-msbuild.md)|将一个项目文件的内容导入其他项目文件中。|
 
-### <a name="parent-elements"></a>父元素  
+### <a name="parent-elements"></a>父元素
 
 | 元素 | 说明 |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。 |
 
-## <a name="example"></a>示例  
- 以下代码示例演示 `ImportGroup` 元素。  
+## <a name="example"></a>示例
+ 以下代码示例演示 `ImportGroup` 元素。
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <ImportGroup>  
-        <Import Project="$(Targets1.targets)" />  
-        <Import Project="$(Targets2.targets)" />  
-    </ImportGroup>  
-...  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ImportGroup>
+        <Import Project="$(Targets1.targets)" />
+        <Import Project="$(Targets2.targets)" />
+    </ImportGroup>
+...
+</Project>
+```
 
-## <a name="see-also"></a>请参阅  
- [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)   
- [项](../msbuild/msbuild-items.md)
+## <a name="see-also"></a>请参阅
+- [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)
+- [项](../msbuild/msbuild-items.md)

@@ -12,55 +12,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f70f6b357e8baaf721c751c57b21924afaff90e6
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f09cca9bd1e3babccb0debc369881a0efa00fa0b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069766"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625109"
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag 方法
-向并发可视化工具跟踪文件写入一个标志。  
-  
-## <a name="syntax"></a>语法  
-  
-```cpp  
-void write_flag(  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-void write_flag(  
-   marker_importance _Importance,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-void write_flag(  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-void write_flag(  
-   marker_importance _Importance,  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `_Format`  
- 一个复合格式字符串，其中包含与零个或多个格式项混合的文本，这些格式项对应于参数列表中的对象。  
-  
- `_Importance`  
- 重要性级别。  
-  
- `_Category`  
- 类别。  
-  
-## <a name="requirements"></a>要求  
- **标头：** cvmarkersobj.h  
-  
- **命名空间：** Concurrency::diagnostic  
-  
-## <a name="see-also"></a>请参阅  
- [marker_series 类](../profiling/marker-series-class.md)
+向并发可视化工具跟踪文件写入一个标志。
+
+## <a name="syntax"></a>语法
+
+```cpp
+void write_flag(
+   _In_ LPCTSTR _Format,
+   ...
+);
+void write_flag(
+   marker_importance _Importance,
+   _In_ LPCTSTR _Format,
+   ...
+);
+void write_flag(
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+void write_flag(
+   marker_importance _Importance,
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+```
+
+#### <a name="parameters"></a>参数
+ `_Format` 一个复合格式字符串，其中包含与零个或多个格式项混合的文本，这些格式项对应于参数列表中的对象。
+
+ `_Importance` 重要性级别。
+
+ `_Category` 类别。
+
+## <a name="requirements"></a>要求
+ **标头：** cvmarkersobj.h
+
+ **命名空间：** Concurrency::diagnostic
+
+## <a name="see-also"></a>请参阅
+- [marker_series 类](../profiling/marker-series-class.md)

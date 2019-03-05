@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2017 概述
 titleSuffix: ''
-ms.date: 10/26/2018
+ms.date: 2/21/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.custom: vs-get-started
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d38f102dd0a61d80c383307abdc96a03b50c0d74
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: f49d4e9c734d1a7f20a765a75c4dcb6b950b38f8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316816"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705500"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>欢迎使用 Visual Studio IDE
 
@@ -62,6 +62,8 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 - [快速启动](../ide/reference/quick-launch-environment-options-dialog-box.md)
 
    visual Studio 有时会因为有如此多的菜单、选项和属性而让人不知所措。 使用**快速启动**搜索框可以在 Visual Studio 中快速找到所需内容。 开始键入要查找内容的名称时，Visual Studio 会列出结果，这些结果可以准确地将你导向目标位置。 如果需要向 Visual Studio 添加功能，例如添加对其他编程语言的支持，“快速启动”提供了打开 Visual Studio 安装程序以安装工作负载或单个组件的结果。
+
+   可以在 IDE 的右上角找到“快速启动”搜索框。 （或者，通过按 Ctrl+Q 访问该搜索框。）
 
    ![Visual Studio 中的“快速启动”搜索框](media/quick-launch-nuget.png)
 

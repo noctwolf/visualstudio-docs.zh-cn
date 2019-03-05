@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f955642b0dd3a3784f1779ca65967f4b1e606bd7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911190"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800526"
 ---
 # <a name="overview-report-a-problem"></a>概述：报告问题
 
@@ -52,7 +52,7 @@ ms.locfileid: "55911190"
 
 ![开发人员社区问题报告的“需要更多信息”状态](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-“需要更多信息”表示需要你提供更多诊断信息，以便继续进行调查。  [了解如何对“需要更多信息”请求做出响应。](./how-to-report-a-problem-with-visual-studio-2017.md#when-further-information-is-needed-need-more-info)
+“需要更多信息”表示需要你提供更多诊断信息，以便继续进行调查。  [了解如何对“需要更多信息”请求做出响应。](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
 
 - - -
 
@@ -110,7 +110,7 @@ ms.locfileid: "55911190"
 
 建议使用搜索来确保尚未报告所要报告的问题。 如果找到与问题相符的现有项目，请关注并对该问题票证进行投票。
 
- 提供可以帮助团队重现你所遇问题的所有信息。  此信息包括必要的重现步骤、代码片段、屏幕截图、重现记录、日志文件和其他项目。  此处介绍[如何报告 Visual Studio 的问题](./how-to-report-a-problem-with-visual-studio-2017.md)。
+ 提供可以帮助团队重现你所遇问题的所有信息。  此信息包括必要的重现步骤、代码片段、屏幕截图、重现记录、日志文件和其他项目。  此处介绍[如何报告 Visual Studio 的问题](./how-to-report-a-problem-with-visual-studio.md)。
 
 ### <a name="how-is-my-feedback-prioritized"></a>我的反馈是如何设置优先级的？
 

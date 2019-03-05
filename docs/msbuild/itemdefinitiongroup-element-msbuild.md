@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d88c8197cc93a2c898ecbf19d52127061b73604
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 130683b114c4601de209ec5f86b7b6f3e8bed027
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936572"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597239"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup 元素 (MSBuild)
 使用 `ItemDefinitionGroup` 元素可定义一组项定义，这些项定义默认为应用到项目中的所有项的元数据值。 ItemDefinitionGroup 取代使用 [CreateItem 任务](../msbuild/createitem-task.md)和 [CreateProperty 任务](../msbuild/createproperty-task.md)的需要。 有关详细信息，请参阅[项定义](../msbuild/item-definitions.md)。
 
-\<Project>  
-\<ItemDefinitionGroup>
+\<Project> \<ItemDefinitionGroup>
 
 ## <a name="syntax"></a>语法
 
@@ -45,19 +44,19 @@ ms.locfileid: "55936572"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明​​|
+|特性|说明|
 |---------------|-----------------|
 |`Condition`|可选特性。 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明​​|
+|元素|说明|
 |-------------|-----------------|
 |[Item](../msbuild/item-element-msbuild.md)|定义生成过程的输入。 `ItemDefinitionGroup` 中可能没有或有一些 `Item` 元素。|
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 说明​​ |
+| 元素 | 说明 |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。 |
 
@@ -83,5 +82,5 @@ ms.locfileid: "55936572"
 ```
 
 ## <a name="see-also"></a>请参阅
-[项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)   
-[项](../msbuild/msbuild-items.md)
+- [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)
+- [项](../msbuild/msbuild-items.md)

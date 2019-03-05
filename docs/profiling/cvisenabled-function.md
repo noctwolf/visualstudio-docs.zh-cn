@@ -14,44 +14,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8af4da802ef0ad87831f2f67f47e8ffb66a969e7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 92763e352d04d5aa3e88a68bad7adfcd05897027
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54990038"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613656"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled 函数
-确定是否有任何会话启用了指定的 ETW 提供程序。  
-  
-## <a name="syntax"></a>语法  
-  
-```C  
-HRESULT CvIsEnabled(  
-   _In_ PCV_PROVIDER pProvider  
-);  
-HRESULT CvIsEnabledEx(  
-   _In_ PCV_PROVIDER pProvider,  
-   _In_ CV_IMPORTANCE level,  
-   _In_ int category  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `category`  
- 类别。  
-  
- `level`  
- 重要性级别。  
-  
- `pProvider`  
- 有效的提供程序对象。 不能为 NULL。  
-  
-## <a name="return-value"></a>返回值  
- 如果提供程序当前已启用，则返回 S_OK。 如果提供程序当前已禁用，则返回 S_FALSE。 出现任何错误时返回错误代码。 使用 FAILED 宏检查错误条件，然后检查 S_OK/S_FALSE。  
-  
-## <a name="requirements"></a>要求  
- **标头：** cvmarkers.h  
-  
-## <a name="see-also"></a>请参阅  
- [C++ 库参考](../profiling/cpp-library-reference.md)
+确定是否有任何会话启用了指定的 ETW 提供程序。
+
+## <a name="syntax"></a>语法
+
+```C
+HRESULT CvIsEnabled(
+   _In_ PCV_PROVIDER pProvider
+);
+HRESULT CvIsEnabledEx(
+   _In_ PCV_PROVIDER pProvider,
+   _In_ CV_IMPORTANCE level,
+   _In_ int category
+);
+```
+
+#### <a name="parameters"></a>参数
+ `category` 类别。
+
+ `level` 重要性级别。
+
+ `pProvider` 有效的提供程序对象。 不能为 NULL。
+
+## <a name="return-value"></a>返回值
+ 如果提供程序当前已启用，则返回 S_OK。 如果提供程序当前已禁用，则返回 S_FALSE。 出现任何错误时返回错误代码。 使用 FAILED 宏检查错误条件，然后检查 S_OK/S_FALSE。
+
+## <a name="requirements"></a>要求
+ **标头：** cvmarkers.h
+
+## <a name="see-also"></a>请参阅
+- [C++ 库参考](../profiling/cpp-library-reference.md)

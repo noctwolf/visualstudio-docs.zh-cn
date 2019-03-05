@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解有关 Visual Studio 订阅中包含的接待聊天室权益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a57a4b2460de373967d29c2e9c9667bdca8ab9ea
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: a2636f2758f189de9de9a014d67bcebb1a8248fc
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380004"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843615"
 ---
 # <a name="concierge-chat"></a>接待聊天室
 
@@ -60,12 +58,8 @@ ms.locfileid: "54380004"
 ## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>问：聊天服务是否可提供多语言支持？
-   A:针对帐户、账单、订阅问题，可提供多语言的帮助。  在查找产品信息和技术文档等方面，仅提供英语帮助。
+   答：针对帐户、账单、订阅问题，可提供多语言的帮助。  在查找产品信息和技术文档等方面，仅提供英语帮助。
 
 ## <a name="support-resources"></a>支持资源
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
 -  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
-
-
-
-

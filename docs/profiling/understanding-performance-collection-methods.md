@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb64e988f88546efafc26ffe8bcc39441e20cd4f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54918610"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635080"
 ---
 # <a name="understand-performance-collection-methods"></a>了解性能收集方法
 
@@ -131,5 +131,5 @@ Visual Studio 分析工具提供了五种可以用于收集性能数据的方法
 
 ## <a name="see-also"></a>请参阅
 
-[如何：收集网站性能数据](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
+[如何：收集网站性能数据](../profiling/how-to-collect-performance-data-for-a-web-site.md)
 [性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)

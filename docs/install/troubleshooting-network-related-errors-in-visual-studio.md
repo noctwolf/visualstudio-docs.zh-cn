@@ -1,7 +1,7 @@
 ---
 title: 网络或代理错误的疑难解答
 description: 为在防火墙或代理服务器后安装或使用 Visual Studio 时可能会遇到的网络或代理相关错误查找解决方案。
-ms.date: 02/12/2018
+ms.date: 02/23/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fe93791d60ea5cf398b71b44ec20a787455807
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f33351245d35ef025d98b3dcf1c2c325fa1ca802
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928330"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796479"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>安装或使用 Visual Studio 时与网络相关错误的疑难解答
 
@@ -48,7 +48,7 @@ ms.locfileid: "55928330"
 
 - 否则，可以从允许列表中删除 http:&#47;&#47;go.microsoft.com 地址，以便在重启 Visual Studio 时出现代理身份验证对话框，以提供 http:&#47;&#47;go.microsoft.com 地址和服务器终结点。
 
-    或
+  - 或 -
 
 - 如果你想通过代理使用默认凭据，则可以执行以下操作：
 
@@ -58,13 +58,16 @@ ms.locfileid: "55928330"
 
       ```xml
       <defaultProxy enabled="true" useDefaultCredentials="true">
-          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
       </defaultProxy>
       ```
 
       你必须在 `proxyaddress="<http://<yourproxy:port#>` 中为你的网络插入正确的代理地址。
 
-     或
+     > [!NOTE]
+     > 有关详细信息，请参阅[&lt;defaultProxy&gt; 元素（网络设置）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)和 [proxy&lt;&gt; 元素（网络设置）](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)页。
+
+  - 或 -
 
 - 此外，也可以按照[如何通过经身份验证的 Web 代理进行连接](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/)博客文章中的说明，了解如何添加允许你使用代理的代码。
 

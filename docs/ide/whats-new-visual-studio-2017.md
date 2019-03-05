@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 767b757187e65454fb89c83613646c59d172c7e5
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 5d7150ec407b2ce9c0c4c5bf22a8ae75b3ac3b93
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318805"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450589"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
@@ -364,7 +364,7 @@ Visual Studio 2017 所有版本随附：
 
 我们经常更新 Visual Studio 2017 的新功能，以使开发体验越来越好。 下面是一些最值得注意的更新（处于实验预览状态）的扼要重述：
 
-* **[实时共享](https://visualstudio.microsoft.com/services/live-share/)**，一款新工具，可让你与团队成员共享代码库及其上下文，并直接从 Visual Studio 内获得即时双向协作。 利用“实时共享”，团队成员可以无缝且安全地读取、导航、编辑和调试已与他们共享的项目。<br><br>有关详细信息，请参阅[实时共享常见问题解答](/visualstudio/liveshare/faq)。<br><br>
+* [实时共享](https://visualstudio.microsoft.com/services/live-share/)，一款新工具，可让你与团队成员共享代码库及其上下文，并直接从 Visual Studio 内获得即时双向协作。 利用“实时共享”，团队成员可以无缝且安全地读取、导航、编辑和调试已与他们共享的项目。<br><br>有关详细信息，请参阅[实时共享常见问题解答](/visualstudio/liveshare/faq)。<br><br>
 * **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**，一种使用 AI 来增强软件开发的新功能，可提供更好的上下文感知代码、指导开发人员对其团队的模式和样式进行编码、找出难以捕捉的代码问题并将代码评审重点放在真正具有影响的方面。 <br><br>有关详细信息，请参阅 [IntelliCode 常见问题解答](/visualstudio/intellicode/faq)。
 
 想要了解更多关于 Visual Studio 2017 的其他功能吗？ 请参阅 [Visual Studio 路线图](/visualstudio/productinfo/vs2018-roadmap)页。

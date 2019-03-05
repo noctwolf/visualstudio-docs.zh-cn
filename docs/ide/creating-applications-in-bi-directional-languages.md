@@ -4,7 +4,7 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Hebrew character display, creating applications
-- bi-directional language support, about bi-directional language support
+- bidirectional language support, about bidirectional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
 author: gewarren
@@ -12,25 +12,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aa75ee12e09d4aa56a112a135a2e9e913b5cd39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335228"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450316"
 ---
-# <a name="create-applications-in-bi-directional-languages"></a>以双向语言创建应用程序
+# <a name="create-applications-in-bidirectional-languages"></a>以双向语言创建应用程序
 
 通过使用 Visual Studio，可以创建能正确显示从右向左书写的语言（包括阿拉伯语和希伯来语）文本的应用程序。 对于某些功能，只需设置属性即可。 而在其他一些情况下，必须通过代码来实现功能。
 
 > [!NOTE]
-> 若要输入和显示双向语言，必须使用已配置相应语言的 Windows 版本。 可以是安装了适当语言包的英文版 Windows，或者是已相应本地化的 Windows 版本。
+> 要输入和显示双向语言，必须使用已配置相应语言的 Windows 版本。 可以是安装了适当语言包的英文版 Windows，或者是已相应本地化的 Windows 版本。
 
-## <a name="types-of-applications-that-support-bi-directional-languages"></a>支持双向语言的应用程序类型
+## <a name="types-of-applications-that-support-bidirectional-languages"></a>支持双向语言的应用程序类型
 
 -  Windows 应用
 
-   你可以创建完全双向的应用程序，包括支持双向文本、从右向左的读取顺序以及镜像（用于翻转窗口、菜单、对话框等的布局）。 除镜像外，这些功能都作为默认功能或属性设置提供。 某些功能（例如消息框）本身就支持镜像。 但在其他情况下，必须通过代码实现镜像。 有关详细信息，请参阅 [Windows 窗体应用程序的双向支持](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)。
+   你可以创建完全双向的应用程序，包括支持双向文本、从右到左的读取顺序以及镜像（用于翻转窗口、菜单、对话框等的布局）。 除镜像外，这些功能都作为默认功能或属性设置提供。 某些功能（例如消息框）本身就支持镜像。 但在其他情况下，必须通过代码实现镜像。 有关详细信息，请参阅 [Windows 窗体应用程序的双向支持](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications)。
 
 -  Web 应用
 
@@ -62,7 +62,7 @@ ms.locfileid: "56335228"
 
 - Visual Studio 对话框中的复选框、下拉列表和其他控件始终使用从左向右的读取顺序。
 
-- 代码编辑器（和文本编辑器）不支持从右到左的读取顺序。 可以用双向语言输入文本，但读取顺序总是从左向右。
+- 代码编辑器（和文本编辑器）不支持从右到左的读取顺序。 可以用双向语言输入文本，但读取顺序总是从左到右。
 
 ## <a name="arabic-or-hebrew-object-names"></a>阿拉伯语或希伯来语对象名
 

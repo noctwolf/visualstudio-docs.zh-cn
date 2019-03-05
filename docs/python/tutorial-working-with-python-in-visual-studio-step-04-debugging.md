@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e165362a73a826c608f1ce93bc4ab910050c7b8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f0496e9319db9351c6315f77886a1a22451a1d14
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948805"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56716501"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>步骤 4：在调试器中运行代码
 
@@ -47,12 +47,9 @@ ms.locfileid: "55948805"
 1. 按 F5 或选择“调试” > “开始调试”菜单命令，检查代码是否正常运行。 此命令会在调试器中运行代码，但由于在程序运行时未执行任何操作来暂停程序，因此它只针对几次迭代输出波浪图案。 按任意键关闭输出窗口。
 
     > [!Tip]
-    > 若要在程序完成时自动关闭输出窗口，请使用以下代码替换 `main()` 调用：
+    > 要在程序完成时自动关闭输出窗口，请选择“工具” > “选项”菜单命令，展开“Python”节点，选择“调试”，然后清除选项“进程正常退出时等待输入”：
     >
-    > ```python
-    > if __name__ == "__main__":
-    >     sys.exit(int(main() or 0))
-    > ```
+    > ![Python 调试选项，用于在程序正常退出时关闭输出窗口](media/vs-getting-started-python-22-debugging5.png)
 
 1. 若要在 `for` 语句上设置断点，可单击该行的灰色边距，或将插入点置于该行并使用“调试” > “切换断点”命令 (F9)。 灰色边距中显示的红点用来表示该断点（如以下箭头标记所示）：
 

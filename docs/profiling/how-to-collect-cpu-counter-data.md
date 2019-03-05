@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae991730caf5e83e9632d7b9a871a62778463098
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: c607263c6b6f6472258aaeab1c3187efaf30a120
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54928563"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642737"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 计数器数据
 
@@ -60,7 +60,7 @@ CPU 事件计数器用于收集特定于硬件的性能数据。 本文演示如
 
 ## <a name="see-also"></a>请参阅
 
-[配置性能会话](../profiling/configuring-performance-sessions.md)  
-[性能会话属性](../profiling/performance-session-properties.md)  
-[CPU 和 Windows 计数器](../profiling/cpu-and-windows-counters.md)  
+[配置性能会话](../profiling/configuring-performance-sessions.md)
+[性能会话属性](../profiling/performance-session-properties.md)
+[CPU 和 Windows 计数器](../profiling/cpu-and-windows-counters.md)
 [如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 361b64191d10056d80ab89dd6d4254ca128dcc96
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55020587"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638174"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 项目 SDK
 
@@ -94,7 +94,7 @@ ms.locfileid: "55020587"
 导入评估时，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 将基于名称和你指定的版本动态解析到项目 SDK 的路径。  此外，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 还具有已注册的 SDK 解析程序，它是在计算机上查找项目 SDK 的插件。  这些插件包括：
 
 1. 基于 NuGet 的解析程序，用于查询为 NuGet 包配置的包源是否匹配所指定 SDK 的 ID 和版本。<br/>
-   如果你指定的是可选版本，并且它可以用于任何自定义项目 SDK，该解析程序才有效。  
+   如果你指定的是可选版本，并且它可以用于任何自定义项目 SDK，该解析程序才有效。
 2. .NET CLI 解析程序，用于解析随 .NET CLI 一起安装的 SDK。<br/>
    此解析程序查找项目 SDK，如 `Microsoft.NET.Sdk` 和 `Microsoft.NET.Sdk.Web`，这些项目是该产品的一部分。
 3. 默认解析程序，用于解析随 MSBuild 一起安装的 SDK。
@@ -110,11 +110,11 @@ ms.locfileid: "55020587"
 }
 ```
 
-在生成期间，只能使用每个项目 SDK 的一个版本。  如果你正在引用同一项目 SDK 的两个不同版本，MSBuild 将发出警告。  如果在 global.json 中指定了版本，则不建议在项目中指定版本。  
+在生成期间，只能使用每个项目 SDK 的一个版本。  如果你正在引用同一项目 SDK 的两个不同版本，MSBuild 将发出警告。  如果在 global.json 中指定了版本，则不建议在项目中指定版本。
 
 ## <a name="see-also"></a>请参阅
 
- [MSBuild 概念](../msbuild/msbuild-concepts.md)   
- [自定义生成](../msbuild/customize-your-build.md)   
- [包、元数据和框架](/dotnet/core/packages)   
- [.NET Core 的 csproj 格式的新增内容](/dotnet/core/tools/csproj)
+- [MSBuild 概念](../msbuild/msbuild-concepts.md)
+- [自定义生成](../msbuild/customize-your-build.md)
+- [包、元数据和框架](/dotnet/core/packages)
+- [.NET Core 的 csproj 格式的新增内容](/dotnet/core/tools/csproj)

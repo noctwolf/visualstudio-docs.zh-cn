@@ -12,33 +12,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb47eb0bb63ca7d617e98d372f691ab4d28fec4a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0008b7476290558c098b2241fde5c9b209933a0a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969244"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56606753"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider 函数
-发布标记提供程序。 发布标记提供程序不会影响此提供程序以前创建的标记系列。 标记系列必须由 CvReleaseMarkerSeries 调用单独发布。 提供程序发布失败会导致内存泄漏。  
-  
-## <a name="syntax"></a>语法  
-  
-```C  
-HRESULT CvReleaseProvider(  
-   _In_ PCV_PROVIDER pProvider  
-);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `pProvider`  
- 提供程序上下文。 不能为 NULL。  
-  
-## <a name="return-value"></a>返回值  
- 成功发布提供程序时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。  
-  
-## <a name="requirements"></a>要求  
- **标头：** cvmarkers.h  
-  
-## <a name="see-also"></a>请参阅  
- [C++ 库参考](../profiling/cpp-library-reference.md)
+发布标记提供程序。 发布标记提供程序不会影响此提供程序以前创建的标记系列。 标记系列必须由 CvReleaseMarkerSeries 调用单独发布。 提供程序发布失败会导致内存泄漏。
+
+## <a name="syntax"></a>语法
+
+```C
+HRESULT CvReleaseProvider(
+   _In_ PCV_PROVIDER pProvider
+);
+```
+
+#### <a name="parameters"></a>参数
+ `pProvider` 提供程序上下文。 不能为 NULL。
+
+## <a name="return-value"></a>返回值
+ 成功发布提供程序时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。
+
+## <a name="requirements"></a>要求
+ **标头：** cvmarkers.h
+
+## <a name="see-also"></a>请参阅
+- [C++ 库参考](../profiling/cpp-library-reference.md)

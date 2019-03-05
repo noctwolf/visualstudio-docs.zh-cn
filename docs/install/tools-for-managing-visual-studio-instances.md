@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 591c8d37a7403aefd74a5ca0ccfeeef6dea5967c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8278448c1b10062c3e030d763d1cf4e37f9cc7e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928110"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56681746"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>用于检测和管理 Visual Studio 实例的工具
 
@@ -44,7 +44,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 ```
 
 >[!TIP]
->有关 Visual Studio 2017 安装的详细信息，请参阅 [Heath Stewart 的博文](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/)。
+>有关 Visual Studio 2017 安装的详细信息，请参阅 [Visual Studio 安装程序存档](https://devblogs.microsoft.com/setup/tag/vs2017/)。
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>编辑 Visual Studio 实例的注册表
 

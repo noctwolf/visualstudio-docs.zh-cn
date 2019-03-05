@@ -18,18 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99476f19055acf678bd9bc8662605351a1e6dfb9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924430"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629906"
 ---
 # <a name="import-element-msbuild"></a>Import 元素 (MSBuild)
 将一个项目文件的内容导入其他项目文件中。
 
-\<Project>  
-\<Import>  
+\<Project> \<Import>
 
 ## <a name="syntax"></a>语法
 
@@ -43,17 +42,17 @@ ms.locfileid: "55924430"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明​​|
+|特性|说明|
 |---------------|-----------------|
 |`Project`|必需的特性。<br /><br /> 要导入的项目文件的路径。 该路径可以包含通配符。 匹配文件按排序顺序导入。 使用此功能时，只需通过将代码文件添加到目录，即可将代码添加到项目。|
 |`Condition`|可选特性。<br /><br /> 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|
 
 ### <a name="child-elements"></a>子元素
- 无
+ None
 
 ### <a name="parent-elements"></a>父元素
 
-| 元素 | 说明​​ |
+| 元素 | 说明 |
 | - | - |
 | [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。 |
 | [ImportGroup](../msbuild/importgroup-element.md) | 包含在可选条件下进行分组的 `Import` 元素的集合。 |
@@ -108,5 +107,5 @@ ms.locfileid: "55924430"
 ```
 
 ## <a name="see-also"></a>请参阅
-[项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)  
-[如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)
+- [如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

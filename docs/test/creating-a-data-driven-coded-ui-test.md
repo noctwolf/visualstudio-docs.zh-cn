@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e387bb9af6c1fa8cf42a606087c264a7c27c3ee9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970915"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796655"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>创建数据驱动的编码的 UI 测试
 
@@ -185,7 +185,7 @@ ms.locfileid: "55970915"
 
     -   选择 UI 操作并观察相应的 UI 控件映射。 注意映射是如何响应代码的，例如，`this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`。
 
-         ![使用编码的 UI 测试编辑器以辅助代码](../test/media/cuit_datadriven_testeditor.png)
+         ![使用编码的 UI 测试编辑器以辅助编码](../test/media/cuit_datadriven_testeditor.png)
 
     -   在属性窗口中，打开“搜索属性”。 搜索属性“名称”值为使用数据源在代码中对其进行操作的值。 例如，`SearchProperties` 被分配给每个数据行第一列中的值：`UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`。 对于这三个迭代，测试会将搜索属性的“名称”值依次更改为 3、5、6。
 

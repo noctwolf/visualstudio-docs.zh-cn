@@ -1,18 +1,18 @@
 ---
 title: 工作效率提示
-ms.date: 11/04/2016
+ms.date: 2/21/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 860583dffd4076db9c4c4660928b75419bd36218
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913023"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702715"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>提高 Visual Studio 使用效率的提示
 
@@ -66,11 +66,13 @@ ms.locfileid: "55913023"
 
 - **仅显示要解决的错误**。 如果选中在“错误列表”工具栏中的“筛选器”按钮，则可减少出现在“错误列表”窗口中的错误数。 您只能显示在编辑器中打开的文件中的错误、当前文件中的错误，或者当前项目中的错误。 您还可以在“错误列表”窗口中进行搜索，以查找特定错误。
 
-- **查找对话框、菜单命令和选项**。 在[“快速启动”](../ide/reference/quick-launch-environment-options-dialog-box.md)框中，输入要查找的项的关键字或短语。 例如，如果输入 `new project`，则会出现以下选项：
+- **查找对话框、菜单命令和选项**。 在[“快速启动”](../ide/reference/quick-launch-environment-options-dialog-box.md)搜索框中，输入要查找的项的关键字或短语。 例如，如果输入 `new project`，则会出现以下选项：
 
     ![“新建项目”的快速启动结果](../ide/media/productivity_quicklaunch.png)
 
     “快速启动”显示“新项目”对话框、“添加新项”对话框、“选项”对话框中的“项目和解决方案”页的链接以及其他内容。 快速启动结果还可包括项目文件和工具窗口。
+
+  “快速启动”搜索框显示在 IDE 的右上角。 （或者，按“Ctrl”+“Q”来访问该搜索框。）
 
 ## <a name="debug-code"></a>调试代码
 

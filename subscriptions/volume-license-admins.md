@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/14/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解订阅管理员可以访问管理员门户的方式并管理通过批量许可 (VL) 获取的订阅
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: de5992adc2ada56ad213ef29e879dadf7b7daad8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 846eb6ecf69253086079cf06fe4c53a8860d996d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379535"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843127"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>访问门户和管理管理员 - 针对通过批量许可 (VL) 获取的订阅
 
@@ -22,8 +20,8 @@ ms.locfileid: "39379535"
 
 自 2017 年 3 月 1 日起，仍在完成门户加入和迁移过程的客户需在批量许可服务中心 (VLSC) 管理其订阅。
 
-有关在 VLSC 中管理订阅的详细信息，请参阅以下指南：[Understanding Visual Studio Subscriptions for VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)（了解适用于 VLSC 的 Visual Studio 订阅）
-[Managing Visual Studio Subscriptions for VLSC](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)（管理适用于 VLSC 的 Visual Studio 订阅）
+有关在 VLSC 中管理订阅的详细信息，请参阅以下指南：[了解适用于 VLSC 的 Visual Studio 订阅](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Understanding-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
+[管理适用于 VLSC 的 Visual Studio 订阅](https://visualstudio.microsoft.com/wp-content/uploads/2016/11/Managing-Visual-Studio-Subscriptions-Administration-Guide-for-VLSC.pdf)
 
 **Visual Studio 订阅管理门户** 如果组织已迁移，但你尚未在新门户中设置，则组织的批量许可联系人中的主要联系人或通知联系人需要执行几个步骤才能将组织加入并将你设置为管理员。
 

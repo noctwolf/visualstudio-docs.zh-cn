@@ -2,7 +2,7 @@
 title: 在 Azure 虚拟机上使用 Visual Studio
 titleSuffix: ''
 description: 了解如何在 Azure 虚拟机上使用 Visual Studio
-ms.date: 09/12/2018
+ms.date: 02/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1dbda84c1e8eee48c4a442e922c1852496155ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12d99cf2e15bf1d806035598f9c92b5ed3319d25
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952900"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450394"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -34,11 +34,11 @@ ms.locfileid: "55952900"
 
 | 发行版本                                              | 版本                     |     产品版本      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|    Visual Studio 2019：预览版（预览版 2）                   |           企业         | 版本 16.0.0 预览版 2 |
-| Visual Studio 2017：最新（版本 15.9）                    |    Enterprise，Community     |      版本 15.9.4      |
+|    Visual Studio 2019：预览版（预览版 3）                   |           企业         | 版本 16.0.0 预览版 3 |
+| Visual Studio 2017：最新（版本 15.9）                    |    Enterprise，Community     |      版本 15.9.7      |
 |         Visual Studio 2017：RTW                              |    Enterprise，Community     |      版本 15.0.20     |
 |   Visual Studio 2015：最新（更新 3）                      |    Enterprise，Community     |  版本 14.0.25431.01   |
-|         Visual Studio 2015：RTW                              |             无             | （已过维护期限）  |
+|         Visual Studio 2015：RTW                              |             None             | （已过维护期限）  |
 
 > [!NOTE]
 > 根据 Microsoft 服务策略，最初发布的 (RTW) Visual Studio 2015 版本已过维护期限。 Visual Studio 2015 Update 3 是 Visual Studio 2015 产品系列仅剩的版本。

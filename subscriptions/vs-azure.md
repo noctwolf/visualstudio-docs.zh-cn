@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解如何激活 Visual Studio 订阅中包含的 Azure 权益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cabfc5a539954a066847b5ed7f62bdddd81ba04c
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 5ef69bbaeeeed7de66e1cf206182bb83f4f42ff2
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380132"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843203"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 
@@ -28,7 +26,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     150 美元月信用额度     |                             是                             ||
 |               Visual Studio Enterprise 月度               |        不可用        |                                                             |
-|             Visual Studio Professional Standard              |     50 美元月信用额度      |                             是                            
+|             Visual Studio Professional Standard              |     50 美元月信用额度      |                             是
 |              Visual Studio Professional 月度              |        不可用        |                                                             |
 |                    Visual Studio Test Pro                    |     50 美元月信用额度      |                             是                             |
 |                        MSDN 平台                        |     100 美元月信用额度     |                             是                             |
@@ -77,7 +75,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 ## <a name="faq"></a>FAQ
 
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>问：如何从 Azure 门户提交技术支持事件？
-A:从 Azure 门户提交支持事件是一个三步过程。
+答：从 Azure 门户提交支持事件是一个三步过程。
 1. 激活技术支持权益，并获取合同 ID 访问 ID。
 2. 将支持合同链接到 Azure 订阅。
 3. 提交支持事件。
@@ -86,7 +84,7 @@ A:从 Azure 门户提交支持事件是一个三步过程。
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>问：我收到一条消息，指出我对 Azure 的访问即将结束。  若要继续使用 Azure，我该做什么呢？
 
-A:因为你使用的 Azure 权益是与 Visual Studio 订阅相关联的，而该订阅已过期或已删除，所以会收到此电子邮件。  要继续使用 Azure，你有多个选择：
+答：因为你使用的 Azure 权益是与 Visual Studio 订阅相关联的，而该订阅已过期或已删除，所以会收到此电子邮件。  要继续使用 Azure，你有多个选择：
 
 **建议操作：**
 

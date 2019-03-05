@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 222d96935418a46038f369c25472ed1a938215e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946067"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609431"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 产品反馈
 
@@ -38,12 +38,12 @@ Visual Studio 预发布版本有“评价此产品”菜单项，而已发布产
 
 生命周期有关 Visual Studio 支持信息，请参阅[支持生命周期和服务](/visualstudio/productinfo/vs-servicing-vs)页。
 
-有关其他 Microsoft 产品和服务，请参阅 [Microsoft 支持](http://go.microsoft.com/fwlink/?LinkID=99019)以获取联机帮助。
+有关其他 Microsoft 产品和服务，请参阅 [Microsoft 支持](https://go.microsoft.com/fwlink/?LinkID=99019)以获取联机帮助。
 
 > [!NOTE]
-> 美国和加拿大以外的支持可能会有所变化。 有关地区联系人的列表，请参阅 [Microsoft 全球站点](http://www.microsoft.com/worldwide/)。
+> 美国和加拿大以外的支持可能会有所变化。 有关地区联系人的列表，请参阅 [Microsoft 全球站点](https://www.microsoft.com/worldwide/)。
 
-针对需要 Microsoft 直接提供托管支持的大型组织，可通过各种企业支持服务提供的策划方案签订合同。 有关更多信息，请参阅 [Microsoft 企业支持解决方案](http://go.microsoft.com/fwlink/?LinkId=258223)。
+针对需要 Microsoft 直接提供托管支持的大型组织，可通过各种企业支持服务提供的策划方案签订合同。 有关更多信息，请参阅 [Microsoft 企业支持解决方案](https://go.microsoft.com/fwlink/?LinkId=258223)。
 
 如果产品预先安装在新计算机或设备上，则由硬件制造商提供此软件的技术支持和帮助。 请直接联系制造商以获得支持。
 
@@ -51,7 +51,7 @@ Microsoft 支持服务取决于当时的价格、条款和条件。 价格、条
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>我想加入开发人员社区
 
-若要与其他开发人员分享问题和答案，请使用 [Visual Studio 开发人员社区](https://developercommunity.visualstudio.com)网站、[MSDN 论坛](https://social.msdn.microsoft.com/Forums/home)或 [StackOverflow](http://stackoverflow.com/)。 还可以在[开发人员代码示例](https://code.msdn.microsoft.com/)网站上查看其他开发人员的代码并分享你自己的示例。
+要与其他开发人员分享问题和答案，请使用 [Visual Studio 开发人员社区](https://developercommunity.visualstudio.com)网站、[MSDN 论坛](https://social.msdn.microsoft.com/Forums/home)或 [Stack Overflow](https://stackoverflow.com/)。 还可以在[开发人员代码示例](https://code.msdn.microsoft.com/)网站上查看其他开发人员的代码并分享你自己的示例。
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>我希望帮助改进 Visual Studio 文档
 

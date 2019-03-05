@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的作为 LinkedIn Premium 订阅一部分的 LinkedIn Learning 权益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fc77d1ebe0fe96c55000123e4bf040a35a37b619
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 2f1e465be1d9c81235af1bad723f827a0f04147c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380228"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841544"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 LinkedIn Learning 权益
 
@@ -113,7 +111,7 @@ ms.locfileid: "54380228"
 
 ## <a name="frequently-asked-questions"></a>常见问题
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>问：如果续订我的订阅，LinkedIn Learning 权益也会续订吗？
-A:不，LinkedIn Learning 优惠仅对新订阅者可用。
+答：不，LinkedIn Learning 优惠仅对新订阅者可用。
 
 ## <a name="support-resources"></a>支持资源
 -  需要与 LinkedIn 学习有关的帮助？  请参阅下列资源：
