@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e63919a13a948f7e6be2d2789aa778bd39514e51
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54950827"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625681"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 计数器
 
@@ -129,7 +129,7 @@ Visual Studio 探查器继续支持特定平台的特定事件。 例如，Penti
 
 ## <a name="see-also"></a>请参阅
 
-[概述](../profiling/overviews-performance-tools.md)  
-[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)  
-[如何：收集 CPU 计数器数据](../profiling/how-to-collect-cpu-counter-data.md)  
+[概述](../profiling/overviews-performance-tools.md)
+[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)
+[如何：收集 CPU 计数器数据](../profiling/how-to-collect-cpu-counter-data.md)
 [如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)

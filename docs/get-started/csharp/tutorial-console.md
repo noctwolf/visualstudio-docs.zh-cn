@@ -2,7 +2,7 @@
 title: 教程：创建一个简单的 C# 控制台应用程序
 description: 了解如何在 Visual Studio 中分步创建 C# 控制台应用程序。
 ms.custom: seodec18, get-started
-ms.date: 01/25/2019
+ms.date: 02/26/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 79a29fa8b0d512049bf604668d11ea92e2511984
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156067"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841168"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教程：在 Visual Studio 中创建一个简单的 C# 控制台应用程序
 
@@ -39,7 +39,7 @@ ms.locfileid: "56156067"
 
    ![Visual Studio IDE 中“新建项目”对话框中的控制台应用 (.NET Core) 项目模板](./media/new-project-csharp-calculator-console-app.png)
 
-### <a name="add-a-workgroup-optional"></a>添加工作组（可选）
+### <a name="add-a-workload-optional"></a>添加工作负载（可选）
 
 如果未显示“控制台应用(.NET Core)”项目模板，可通过添加“.NET Core 跨平台开发”工作负载获取它。 操作方法如下。
 
@@ -80,6 +80,7 @@ ms.locfileid: "56156067"
             Console.WriteLine(c);
             Console.ReadKey();
     ```
+
 1. 选择“计算器”或按“F5”，以运行程序。
 
    ![选择工具栏中的“计算器”按钮以运行应用程序](./media/csharp-console-calculator-button.png)
@@ -151,6 +152,7 @@ ms.locfileid: "56156067"
         }
     }
     ```
+
 1. 选择“计算器”或按“F5”，以运行程序。
 
    ![选择工具栏中的“计算器”按钮以运行应用程序](./media/csharp-console-calculator-button.png)
@@ -382,6 +384,7 @@ ms.locfileid: "56156067"
         }
     }
     ```
+
 1. 选择“计算器”或按“F5”，以运行程序。
 
 1. 按照提示，用数字 42 除以数字 119。 应用应如下图所示：

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8fa5a78fbf1852e49da8a4cda59398c302029430
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8604164a329dbccd7e93a39b97fcdb674eccd83e
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909942"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796798"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>教程：使用 C# 创建简单应用
 
@@ -32,9 +32,19 @@ ms.locfileid: "55909942"
 
 ![选择设置对话框](../media/exploreide-settings.png)
 
+::: moniker range="vs-2017"
+
 启动 Visual Studio 后，将看到工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口停靠在应用程序窗口的左侧和右侧，其顶部有 **“快速启动”**、菜单栏和标准工具栏。 应用程序窗口的中心是 **“起始页”**。 当您加载解决方案或项目时，编辑器和设计器将显示在 **起始页** 的空间中。 开发应用程序时，大部分时间都将用在此中心区域。
 
-![应用了常规设置的 IDE](../media/exploreide-idewithgeneralsettings.png)
+![应用了常规设置的 Visual Studio 2017 IDE](../media/exploreide-idewithgeneralsettings.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+启动 Visual Studio 时，“启动”窗口首先打开。 选择“继续但无需代码”打开开发环境。 将看到工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口停靠在应用程序窗口的左侧和右侧，其顶部有 **“快速启动”**、菜单栏和标准工具栏。 加载解决方案或项目时，编辑器和设计器显示在应用程序窗口中间。 开发应用程序时，大部分时间都将用在此中心区域。
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>创建项目
 

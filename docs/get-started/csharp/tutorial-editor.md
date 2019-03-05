@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ebcf76f07eadaee6402facb4fa62a3ac309ebbac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 496dbfb48b8cc8052d174ba1dd69faa3b4fc9d01
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933153"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56722494"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 
@@ -109,7 +109,7 @@ Visual Studio 提供了实用的代码片段，可用于快速方便地生成常
 
 ## <a name="view-symbol-definitions"></a>查看符号定义
 
-通过 Visual Studio 编辑器可轻松查看类型、方法等的定义。一种方法是导航到包含定义的文件，例如通过选择“转到定义”，转到引用符号的任何位置。 使用“[速览定义](../../ide/go-to-and-peek-definition.md#peek-definition)”速度更快，不会干扰你处理文件。 我们来快速查看一下 `string` 类型的定义。
+通过 Visual Studio 编辑器可轻松查看类型、方法等的定义。一种方法是导航到包含定义的文件，例如通过选择“转到定义”或按“F12”，转到引用符号的任何位置。 使用“[速览定义](../../ide/go-to-and-peek-definition.md#peek-definition)”速度更快，不会干扰你处理文件。 我们来快速查看一下 `string` 类型的定义。
 
 1. 右键单击出现的任意 `string`，然后选择内容菜单上的“速览定义”。 或者，按 Alt+F12。
 

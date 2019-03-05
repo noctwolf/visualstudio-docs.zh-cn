@@ -1,7 +1,7 @@
 ---
 title: 快速入门 - 使用 Cookiecutter 创建 Python 项目
 description: 在此快速入门教程中，使用 Cookiecutter 模板创建适合 Python 的 Visual Studio 项目。
-ms.date: 12/06/2018
+ms.date: 02/25/2019
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 76aa53b88bc9c9ecd1fc95915204c070aaa7207b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c5a3170a2fa66a68fd010b616afcd24e8661776
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920153"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843099"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入门：通过 Cookiecutter 模板创建项目
 
@@ -29,13 +29,13 @@ ms.locfileid: "55920153"
 
     ![从 Cookiecutter 模板新建项目](media/projects-from-cookiecutter1.png)
 
-1. 选择“Microsoft/python-sklearn-classifier-cookiecutter”模板，然后选择“下一步”。 （第一次使用 Cookiecutter 时，该过程可能需要几分钟。）
+1. 选择“Microsoft/python-sklearn-classifier-cookiecutter”模板，然后选择“下一步”。 （首次使用特定模板时，该过程可能需要几分钟，因为 Visual Studio 将安装所需的 Python 包。）
 
-1. 接下来，在“创建到”字段中设置新项目的位置，然后选择“创建”。
+1. 接下来，在“创建到”字段中设置新项目的位置，然后选择“创建和打开项目”。
 
     ![第二步使用 Cookiecutter, 设置项目属性](media/projects-from-cookiecutter2.png)
 
-1. 该过程完成后，显示“已成功创建文件”消息。 选择“在解决方案资源管理器中打开”命令打开项目。
+1. 该过程完成后，显示“已成功使用模板创建文件...”消息。项目在解决方案资源管理器中自动打开。
 
 1. 按 Ctrl+F5 或选择“调试” > “开始执行(不调试)”运行程序。
 

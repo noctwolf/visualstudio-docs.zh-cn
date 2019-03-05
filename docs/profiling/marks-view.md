@@ -13,37 +13,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 799185aa3ea1caa84c64d2887506d666fdc68577
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: badb2266e47fcbf0bb20c5fd6fd2f7f25a167997
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54996371"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639981"
 ---
 # <a name="marks-view"></a>“标记”视图
-“标记”视图显示插入到应用程序的采样和 ETW 事件。  
-  
- 在报表中预先填充的默认标记可用来标记程序开始和程序结束。  
-  
- 来自自动生成的标记的 Windows 计数器数据也显示在此视图中。 有关详细信息，请参阅[如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)。  
-  
- 若要创建两个标记之间的筛选器，请选择标记，右键单击，然后单击“添加筛选器(按标记)”或“添加筛选器(按时间戳)”。  
-  
- 下表提供了“标记”视图中可用列的定义。  
-  
- **标记 ID**  
- 分析标记的唯一标识符。  
-  
- **标记名**  
- 事件的名称。  
-  
- **时间戳**  
- 从开始分析到记录事件的时间。  
-  
- Windows 性能计数器数据  
- 收集 Windows 性能计数器数据时，值将显示在具有该计数器名称的列中。  
-  
-## <a name="see-also"></a>请参阅  
- [性能报告概述](../profiling/performance-report-overview.md)   
- [如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)   
- [[NIB] 数据收集控件窗口](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+“标记”视图显示插入到应用程序的采样和 ETW 事件。
+
+ 在报表中预先填充的默认标记可用来标记程序开始和程序结束。
+
+ 来自自动生成的标记的 Windows 计数器数据也显示在此视图中。 有关详细信息，请参阅[如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)。
+
+ 若要创建两个标记之间的筛选器，请选择标记，右键单击，然后单击“添加筛选器(按标记)”或“添加筛选器(按时间戳)”。
+
+ 下表提供了“标记”视图中可用列的定义。
+
+ **标记 ID** 分析标记的唯一标识符。
+
+ **标记名称** 事件的名称。
+
+ **时间戳** 从开始分析到记录事件的时间。
+
+ Windows 性能计数器数据 收集 Windows 性能计数器数据时，值将显示在具有该计数器名称的列中。
+
+## <a name="see-also"></a>请参阅
+- [性能报告概述](../profiling/performance-report-overview.md)
+- [如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)
+- [[NIB] 数据收集控件窗口](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

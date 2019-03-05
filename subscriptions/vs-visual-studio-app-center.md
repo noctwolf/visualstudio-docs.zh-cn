@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解有关 Visual Studio 订阅中包含的 Visual Studio App Center 权益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fd90f301abae9f0d85509a46255317282f284b9e
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 30953834e36cb88e79a800e0356ac59189165aee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380109"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843551"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Visual Studio App Center
 
@@ -51,7 +49,7 @@ Visual Studio App Center 入门十分简单。
 | Visual Studio Dev Essentials | NA  | Included                                                            |是 |
 
 
-<sup>1</sup>  包括：不得转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、Imagine、Microsoft 合作伙伴网络 (MPN)、MCT 软件和服务、MCT 软件和服务开发人员、BizSpark、最有价值专家 (MVP)、区域总监 (RD)。
+<sup>1</sup>  *包括：不得转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、Imagine、Microsoft 合作伙伴网络 (MPN)、MCT 软件和服务、MCT 软件和服务开发人员、BizSpark、最有价值专家 (MVP)、区域总监 (RD)。
 
 
 > [!NOTE]
@@ -63,7 +61,7 @@ Visual Studio App Center 入门十分简单。
 ## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>问：收到浏览器不受支持的错误。  为什么会这样？
-A:某些较旧的浏览器可能无法提供 App Center 需要的一些新功能。  如果你的浏览器不受支持，请按照下列步骤进行操作：
+答：某些较旧的浏览器可能无法提供 App Center 需要的一些新功能。  如果你的浏览器不受支持，请按照下列步骤进行操作：
 1.  打开其他浏览器，如 Microsoft Edge 或最新版本的 Google Chrome 或 Firefox 或 Safari。
 2.  连接到 Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)并登录。
 3.  现在单击 Visual Studio App Center 磁贴上的**入门**链接。

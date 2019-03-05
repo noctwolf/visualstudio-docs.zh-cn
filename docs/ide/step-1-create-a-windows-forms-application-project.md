@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9451dea474f5d3ae460af20561e80f0660e33026
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956061"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796525"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>步骤 1：创建 Windows 窗体应用程序项目
 
@@ -37,20 +37,21 @@ ms.locfileid: "55956061"
 
      Visual Studio 将为您的程序创建解决方案。 解决方案充当程序所需全部项目和文件的容器。 本教程后面部分将详细解释这些术语。
 
-4. 下图显示了此时应在 Visual Studio 界面中看到的内容。
-
-    > [!NOTE]
-    > 您的窗口布局可能与此图不完全相同。 确切的窗口布局取决于 Visual Studio 的版本、所使用的编程语言以及一些其他因素。 但是，您应验证是否显示了全部三个窗口。
-
-     ![IDE 窗口](../ide/media/express_ideoverview_visio.png)<br/>IDE 窗口**
-
-     此界面包含三个窗口：主窗口、“解决方案资源管理器”和“属性”窗口。
+4. 开发环境包含三个窗口：主窗口、“解决方案资源管理器”和“属性”窗口。
 
      如果缺少其中任何一个窗口，请在菜单栏中选择“窗口” > “重置窗口布局”来还原默认的窗口布局。 您还可以通过使用菜单命令来显示各个窗口。 在菜单栏上，依次选择“视图” > “属性窗口”或“解决方案资源管理器”。 如果任何其他窗口处于打开状态，请选择窗口右上角的“关闭”(x) 按钮将其关闭。
 
-5. 该图显示了下列窗口（从左上角沿顺时针）：
+    ::: moniker range="vs-2017"
 
-    - **主窗口** 在此窗口中，可以完成大部分工作，如使用窗体和编辑代码。 在此图中，窗口显示了“窗体编辑器”中的一个窗体。 在窗口的顶部，显示有“起始页”选项卡和“Form1.cs [设计]”选项卡。 （在 Visual Basic 中，选项卡名称以 .vb 而非 .cs 结尾。）
+    - **主窗口** 在此窗口中，可以完成大部分工作，如使用窗体和编辑代码。 窗口显示了“表单编辑器”中的一个表单。 在窗口的顶部，显示有“起始页”选项卡和“Form1.cs [设计]”选项卡。 （在 Visual Basic 中，选项卡名称以 .vb 而非 .cs 结尾。）
+
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+
+    - **主窗口** 在此窗口中，可以完成大部分工作，如使用窗体和编辑代码。 窗口显示了“表单编辑器”中的一个表单。
+
+    ::: moniker-end
 
     - “解决方案资源管理器”窗口 在此窗口中，可以查看并导航到解决方案中的所有项。 选择某个文件时，“属性”窗口中的内容将发生更改。 如果打开某个代码文件（在 Visual C# 中以 .cs 结尾，在 Visual Basic 中以 .vb 结尾），则将显示该代码文件或用于该代码文件的设计器。 设计器是一种可视化图面，您可在上面添加按钮和列表等控件。 对于 Visual Studio 窗体，设计器称为“Windows 窗体设计器”。
 

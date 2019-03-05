@@ -4,24 +4,22 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解有关 Visual Studio 订阅中包含的企业移动性 + 安全性权益。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fe6d44b64de314153d7ba00fe4540dbecf1d6ba2
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: b1d3aa39f4d3f53d10bcc692da96bfe6c50b981d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380061"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841190"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的企业移动性 + 安全性 (EMS)
 
 Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + 安全性 (EMS)。  使用 EMS - Azure Active Directory、Microsoft Intune、Azure 信息保护、Microsoft Advanced Threat Analytics 和 Microsoft Cloud App Security 保护和管理标识、设备、应用程序和数据。
 
 > [!NOTE]
-> 如果通过批量许可购买多年订阅，EMS 权益当前仅在第一年可用。  
+> 如果通过批量许可购买多年订阅，EMS 权益当前仅在第一年可用。
 
 ## <a name="activation-steps"></a>激活步骤
 
@@ -62,7 +60,7 @@ Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + �
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 | Visual Studio Dev Essentials | 不可用  | 不可用 |不可用 |
 
-<sup>1</sup>  包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark。不包括：最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络 (Professional)。
+<sup>1</sup>  *包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark。不包括：最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络 (Professional)。
 
 <sup>2</sup> 不包括：Microsoft 合作伙伴网络 (Professional)
 

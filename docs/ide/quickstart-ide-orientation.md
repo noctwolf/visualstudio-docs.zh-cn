@@ -1,19 +1,19 @@
 ---
 title: Visual Studio IDE 教程
 titleSuffix: ''
-ms.date: 07/12/2018
+ms.date: 02/21/2019
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e847829877328cff1a244eae4cd5d29616c7a8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955825"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712523"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入门：初步了解 Visual Studio IDE
 
@@ -78,6 +78,8 @@ Visual Studio 顶部的菜单栏将命令分组成不同的类别。 例如，�
 ## <a name="quick-launch"></a>快速启动
 
 “快速启动”框是在 Visual Studio 中执行任何操作的快捷方式。 你可以输入一些与你想要执行的操作相关的文本，它会为你显示一个与文本相关的选项列表。 例如，假设要增加生成输出的详细程度，以显示有关确切生成内容的其他详细信息。 具体操作如下：
+
+1. 找到显示在 IDE 的右上角的“快速启动”框。 （或者，按 Ctrl+Q 来访问该框。）
 
 1. 在“快速启动”框中输入“详细信息”。 从显示的结果中，选择“选项”类别下的“项目和解决方案”->“生成并运行”。
 

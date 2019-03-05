@@ -6,19 +6,17 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的可用 CloudPilot 权益
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 90a71ec94e1fbd102cf731fef94394096b1e0ba7
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 5368bc386b7ee4ff1fa709fcc038ddb7a7a0c13d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380118"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842554"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CloudPilot 权益
 
-将应用移至 Microsoft Azure 只需几个简单的步骤。 在几分钟内即可标识所有必需的代码更改（细至代码行），以便成功迁移到：容器、VM、应用服务、SQL Azure 和/或 SQL MI。 然后，通过使用 ASR、DMA 和 DMS 的向导将应用迁移到 Azure。 
+将应用移至 Microsoft Azure 只需几个简单的步骤。 在几分钟内即可标识所有必需的代码更改（细至代码行），以便成功迁移到：容器、VM、应用服务、SQL Azure 和/或 SQL MI。 然后，通过使用 ASR、DMA 和 DMS 的向导将应用迁移到 Azure。
 
 由 UnifyCloud 开发的 CloudPilot 旨在帮助开发者快速、轻松地将应用程序迁移到 Azure。  只需花费手动评估时间的一小部分，CloudPilot 即可准确地确定 Azure PaaS 和 IaaS 迁移成本，并提供细至代码行有关应用程序在云中运行所需的代码更改的详细建议。 CloudPilot 通过为云提供详细的代码级更改以及针对企业技术控制和策略的最终测试，帮助初始评估云迁移工作和重构过程的开发计划。
 
@@ -30,10 +28,10 @@ ms.locfileid: "54380118"
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot 权益磁贴](_img/vs-cloudpilot/vs-cloudpilot-tile-ent.png)
-   
+
 0. 你将看到一条消息，告知你已成功检索到你的代码。  单击“激活”，此时你将被重定向到 CloudPilot 页，可在此页面继续激活过程。  （如果不选择立即激活，则可以随时返回订阅门户中的 CloudPilot 磁贴。  “获取代码”链接将更改为“激活”，单击它即可进入下一步激活过程。）
 
-0. 了解 CloudPilot 为开发工作带来的优势。  准备好后，单击“激活”按钮。 
+0. 了解 CloudPilot 为开发工作带来的优势。  准备好后，单击“激活”按钮。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot 登录页](_img/vs-cloudpilot/vs-cloudpilot-landing.png)
@@ -46,14 +44,14 @@ ms.locfileid: "54380118"
    > [!NOTE]
    > CloudPilot 权益的激活限制为每个组织 10 次，可从 Visual Studio Enterprise 或 Visual Studio Professional 订阅的任意组合中兑换。  如果组织已使用了 10 次激活，你将无法激活 CloudPilot 权益，且你将收到来自 UnifyCloud 包含更多信息的电子邮件。
 
- 0. 接下来，你将看到旨在让你熟悉 CloudPilot 的产品页。  单击右上角的“导航到 CloudPilot”，转到 CloudPilot 门户。  
+ 0. 接下来，你将看到旨在让你熟悉 CloudPilot 的产品页。  单击右上角的“导航到 CloudPilot”，转到 CloudPilot 门户。
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot 产品页](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0.  就这么简单！  你将看到 CloudPilot 门户，且你将准备好开始使用 CloudPilot 订阅将应用程序迁移到 Microsoft Azure。 
+0.  就这么简单！  你将看到 CloudPilot 门户，且你将准备好开始使用 CloudPilot 订阅将应用程序迁移到 Microsoft Azure。
 
-0.  成功创建帐户后，你将收到来自 UnifyCloud VSS 支持的电子邮件，确认已成功创建帐户。 
+0.  成功创建帐户后，你将收到来自 UnifyCloud VSS 支持的电子邮件，确认已成功创建帐户。
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot 确认电子邮件](_img/vs-cloudpilot/vs-cloudpilot-email.png)
@@ -73,7 +71,7 @@ ms.locfileid: "54380118"
 
 
 
-<sup>1</sup>  包括：不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine
+<sup>1</sup>  *包括：不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine
 
 
 > [!NOTE]
@@ -84,7 +82,7 @@ ms.locfileid: "54380118"
 
 ## <a name="support-resources"></a>支持资源
 -  需要有关使用 CloudPilot 的帮助？  请参阅下列资源：
-    - 有关 UnifyCloud 产品的咨询，[请联系 UnifyCloud](https://www.unifycloud.com/contacts/)。 
+    - 有关 UnifyCloud 产品的咨询，[请联系 UnifyCloud](https://www.unifycloud.com/contacts/)。
     - [CloudPilot 用户手册](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
     - [提交支持请求](https://support.datacamp.com/hc/requests/new)
 

@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 102b48131a705b39afb45fb59377d76114a426dd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920478"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796642"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 入门
 
@@ -30,11 +30,23 @@ ms.locfileid: "55920478"
 
 ## <a name="create-a-console-app"></a>创建控制台应用
 
-如果 Visual Studio 尚未运行，请将其启动。
+如果 Visual Studio 尚未运行，请将其打开。
+
+::: moniker range="vs-2017"
 
 ![应用了 Visual C&#43;&#43; 设置的 IDE](../ide/media/get-started-cpp-ide-layout.png)
 
 在你打开 Visual Studio 后，可查看 IDE 的三个基本部分：工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口位于应用窗口的左右两侧。 “快速启动”框、菜单栏和标准工具栏位于顶部。 窗口的中部包含“起始页”。 当你打开解决方案或项目时，将在这里显示编辑器和设计器。 开发应用时，大部分时间都花在此中心区域。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+打开 Visual Studio 后，随即显示“启动”窗口。 选择“继续但无需代码”打开开发环境。
+
+将看到 IDE 的三个基本部分：工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口位于应用窗口的左右两侧。 “快速启动”框、菜单栏和标准工具栏位于顶部。 加载解决方案或项目时，编辑器和设计器显示在应用程序窗口中间。 开发应用程序时，大部分时间都将用在此中心区域。
+
+::: moniker-end
 
 Visual Studio 使用项目来组织应用的代码，使用解决方案来组织项目。 项目包含用于生成应用的所有选项、配置和规则。 它还负责管理所有项目文件和任何外部文件间的关系。 若要创建应用，先创建一个新项目和解决方案。
 

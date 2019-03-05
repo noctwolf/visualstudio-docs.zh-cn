@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b6bc2aa2dff6a1d71428041e17bffe39c7d624e9
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 27e990c300702301fc7c701339254bbe6f385cd0
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768400"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843787"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中调试 JavaScript 或 TypeScript 应用
 
@@ -168,7 +168,7 @@ Visual Studio 仅为 Chrome 和 Internet 资源管理器提供调试支持。 �
    对于 Chrome，请转到“解决方案资源管理器”>“脚本文档”>“YourPageName”。
 
     > [!NOTE]
-    > 使用 Chrome 时，可能会收到一条消息 `no source is available between `<script>` tags.` This is OK, just continue debugging.
+    > 使用 Chrome，可能会收到一条消息：\<script> 标记之间没有可用源。 这是正常的，只需继续调试即可。
 
    对于 Internet Explorer，请转至“解决方案资源管理器”>“脚本文档”>“Windows Internet Explorer”>“YourPageName”。
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: dd467adc2ff45e38f193b1b87aea471682d40c0c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2abf307dd2205b556744c61c974e389179c465b9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920595"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56708636"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 工作效率指南
 
@@ -35,7 +35,7 @@ ms.locfileid: "55920595"
 
 Visual Studio 常用快捷方式如下：
 
-| 快捷方式（所有配置文件） | 命令 | 说明​​ |
+| 快捷方式（所有配置文件） | 命令 | 说明 |
 |-|-|-|
 | Ctrl + T | 转到全部 | 导航到任何文件/类型/成员/符号声明 |
 | F12（也可使用 Ctrl+单击） | 转到定义 | 导航到定义符号的位置 |
@@ -92,6 +92,8 @@ Visual Studio 2017 包含大量重构、代码生成操作和代码修补程序�
   - 添加 NULL 检查
   - 添加参数
   - 删除不必要的 Using
+  - *用于 LINQ 查询或 LINQ 方法的 Foreach 循环*
+  - *拉取成员，使用对话框选项进行重构*
   - 请阅读[文档](https://aka.ms/refactorings)，查看详细信息
 - 使用 [Roslyn 分析器](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix)编写自己的重构或代码修补程序。
 - 有几个社区成员写了一些免费扩展，这些扩展添加了其他的代码检查：
@@ -108,7 +110,7 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 
 | 功能 | 快捷键 | 详细信息/改进 |
 |- | - | -|
-| 查找所有引用 | Shift+F12| 结果已着色，可按项目、定义等分组。还可“锁定”结果。 |
+| 查找所有引用 | Shift+F12| 结果已着色，可按项目、定义和引用类型（例如，读取或写入）等分组。 还可“锁定”结果。 |
 | 转到实现 | Ctrl+F12 | 可以对 `override` 关键字使用转到定义来导航到重写成员 |
 | 转到定义 | F12 或 Ctrl+单击| 按住 Ctrl，同时单击以导航到定义 |
 | 查看定义 | Alt+F12 | 定义的内联视图 |

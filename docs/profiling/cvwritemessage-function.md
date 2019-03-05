@@ -26,97 +26,92 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa902b9f429f11f1f168503de55f74f112f8474f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: ea9fd21c346a61939683ee05e3cb9ef3123cc03d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948409"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56639149"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage 函数
-向并发可视化工具跟踪文件写入一条消息。  
-  
-## <a name="syntax"></a>语法  
-  
-```C  
-HRESULT CvWriteMessageW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ PCWSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteMessageA(  
-    PCV_MARKERSERIES pMarkerSeries,  
-    _In_ PCSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteMessageVW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ PCWSTR pMessage,  
-    _In_ va_list argList);  
-  
-HRESULT CvWriteMessageVA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ PCSTR pMessage,  
-    _In_ va_list argList);  
-  
-HRESULT CvWriteMessageExW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCWSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteMessageExA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteMessageExVW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCWSTR pMessage,  
-    _In_ va_list argList);  
-  
-HRESULT CvWriteMessageExVA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCSTR pMessage,  
-    _In_ va_list argList);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `argList`  
- 参数列表。  
-  
- `category`  
- 范围的类别  
-  
- `level`  
- 范围的重要性级别。  
-  
- `pMarkerSeries`  
- 有效标记系列上下文。 不能为 NULL。  
-  
- `pMessage`  
- 消息格式字符串。 不能为 NULL。  
-  
-## <a name="return-value"></a>返回值  
- 成功写入消息时返回 S_OK。 出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。  
-  
-## <a name="requirements"></a>要求  
- **标头：** cvmarkers.h  
-  
- **Unicode：** CvWriteMessageW、CvWriteMessageVW、CvWriteMessageExW、CvWriteMessageExVW  
-  
- **ANSI：** CvWriteMessageA、CvWriteMessageVA、CvWriteMessageExA、CvWriteMessageExVA  
-  
-## <a name="see-also"></a>请参阅  
- [C++ 库参考](../profiling/cpp-library-reference.md)
+向并发可视化工具跟踪文件写入一条消息。
+
+## <a name="syntax"></a>语法
+
+```C
+HRESULT CvWriteMessageW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ PCWSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteMessageA(
+    PCV_MARKERSERIES pMarkerSeries,
+    _In_ PCSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteMessageVW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ PCWSTR pMessage,
+    _In_ va_list argList);
+
+HRESULT CvWriteMessageVA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ PCSTR pMessage,
+    _In_ va_list argList);
+
+HRESULT CvWriteMessageExW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCWSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteMessageExA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteMessageExVW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCWSTR pMessage,
+    _In_ va_list argList);
+
+HRESULT CvWriteMessageExVA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCSTR pMessage,
+    _In_ va_list argList);
+```
+
+#### <a name="parameters"></a>参数
+ `argList` 参数列表。
+
+ `category` 范围的类别
+
+ `level` 范围的重要性级别。
+
+ `pMarkerSeries` 有效标记系列上下文。 不能为 NULL。
+
+ `pMessage` 消息格式字符串。 不能为 NULL。
+
+## <a name="return-value"></a>返回值
+ 成功写入消息时返回 S_OK。 出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。
+
+## <a name="requirements"></a>要求
+ **标头：** cvmarkers.h
+
+ **Unicode：** CvWriteMessageW、CvWriteMessageVW、CvWriteMessageExW、CvWriteMessageExVW
+
+ **ANSI：** CvWriteMessageA、CvWriteMessageVA、CvWriteMessageExA、CvWriteMessageExVA
+
+## <a name="see-also"></a>请参阅
+- [C++ 库参考](../profiling/cpp-library-reference.md)

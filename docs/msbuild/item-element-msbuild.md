@@ -16,19 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c872f10b9a0d092cc5dc4c3904fad6c6d5a4ea94
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36824d78b2a4da68586b4ff3b39046bff936ff7f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944762"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643764"
 ---
 # <a name="item-element-msbuild"></a>Item 元素 (MSBuild)
 包含用户定义的项和其元数据。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目中使用的每一个项都必须被指定为 `ItemGroup` 元素的子元素。
 
-\<Project>  
-\<ItemGroup>  
-\<Item>  
+\<Project> \<ItemGroup> \<Item>
 
 ## <a name="syntax"></a>语法
 
@@ -68,7 +66,7 @@ ms.locfileid: "55944762"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明​​|
+|特性|说明|
 |---------------|-----------------|
 |`Include`|可选特性。<br /><br /> 项列表中要包含的文件或通配符。|
 |`Exclude`|可选特性。<br /><br /> 项列表中要排除的文件或通配符。|
@@ -81,13 +79,13 @@ ms.locfileid: "55944762"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明​​|
+|元素|说明|
 |-------------|-----------------|
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|用户定义的包含项元数据值的项元数据键。 项中可能没有或有一些 `ItemMetadata` 元素。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明​​|
+|元素|说明|
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|为项进行元素分组。|
 
@@ -120,7 +118,7 @@ ms.locfileid: "55944762"
 ```
 
 ## <a name="see-also"></a>请参阅
-[项](../msbuild/msbuild-items.md)  
-[常用的 MSBuild 项目项](../msbuild/common-msbuild-project-items.md)  
-[MSBuild 属性](../msbuild/msbuild-properties.md)  
-[项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)
+- [项](../msbuild/msbuild-items.md)
+- [常用的 MSBuild 项目项](../msbuild/common-msbuild-project-items.md)
+- [MSBuild 属性](../msbuild/msbuild-properties.md)
+- [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)

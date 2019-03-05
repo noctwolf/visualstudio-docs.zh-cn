@@ -6,21 +6,19 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的可用 CAST Highlight 权益
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ac1d960ea16346de6d1ca12a2b0602eedf47f704
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 1858170bb57d4ea46b1aac1d08857dea9609d22d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54379806"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840891"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CAST Highlight 权益
 
-迁移到云时，开发者需要对其软件具有深入的了解。 借助 CAST Highlight，Visual Studio Enterprise 订阅者可以快速扫描其应用程序源代码，以确定其应用程序的云就绪状态，以便迁移到 Azure 并在迁移期间和迁移后监控其应用的进度。  
+迁移到云时，开发者需要对其软件具有深入的了解。 借助 CAST Highlight，Visual Studio Enterprise 订阅者可以快速扫描其应用程序源代码，以确定其应用程序的云就绪状态，以便迁移到 Azure 并在迁移期间和迁移后监控其应用的进度。
 
-Visual Studio Enterprise 订阅者可获得一个月免费的具有完整功能的 CAST Highlight 订阅，每个订阅者最多可以使用 5 个应用。 
+Visual Studio Enterprise 订阅者可获得一个月免费的具有完整功能的 CAST Highlight 订阅，每个订阅者最多可以使用 5 个应用。
 
 
 ## <a name="activation-steps"></a>激活步骤
@@ -32,7 +30,7 @@ Visual Studio Enterprise 订阅者可获得一个月免费的具有完整功能�
    > [!div class="mx-imgBorder"]
    > ![CAST Highlight 权益磁贴](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-   
+
 0. 你将看到一条消息，告知你已成功检索到你的代码。  点击“激活”，此时你将被重定向到 CAST Highlight 页，可在此页面继续激活过程。  （如果不选择立即激活，则可以随时返回订阅门户中的 CAST Highlight 磁贴。  “获取代码”链接将更改为“激活”，单击它即可继续下一步激活过程。）
 
 0. 你将被重定向到 CAST Highlight 页，可在其中浏览订阅的功能。  当准备好创建帐户时，只需在 Web 窗体中提供联系信息，然后点击“提交”。
@@ -43,16 +41,16 @@ Visual Studio Enterprise 订阅者可获得一个月免费的具有完整功能�
    > [!NOTE]
    > CAST Highlight 权益的激活限制为每个组织 10 次。  如果组织已使用了 10 次激活，你将无法激活 CAST Highlight 权益，且你将收到一封包含更多信息的电子邮件。
 
- 0. 提交信息后，将看到确认收到你的请求的页面。    
+ 0. 提交信息后，将看到确认收到你的请求的页面。
 
     > [!div class="mx-imgBorder"]
     > ![CAST Highlight 感谢页](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
-0.  CAST 团队将评估请求，并将与你联系以完成帐户的创建。  
+0.  CAST 团队将评估请求，并将与你联系以完成帐户的创建。
 
 0.  你还将收到来自 CAST 的以下电子邮件，确认收到你的请求。
 
-   感谢你激活 30 天访问 CAST Highlight 的请求 - 这是 Microsoft Visual Studio Enterprise 客户的独家优惠！  
+   感谢你激活 30 天访问 CAST Highlight 的请求 - 这是 Microsoft Visual Studio Enterprise 客户的独家优惠！
 
    我们目前正在审核你的激活和访问 CAST Highlight 的请求。你将在 48 小时内收到我的回复。
 
@@ -60,7 +58,7 @@ Visual Studio Enterprise 订阅者可获得一个月免费的具有完整功能�
    Greg
 
 
-在请求获得批准后，将收到第二封确认成功创建帐户的电子邮件，并要求你单击激活链接以完成激活过程。 
+在请求获得批准后，将收到第二封确认成功创建帐户的电子邮件，并要求你单击激活链接以完成激活过程。
 
    我们已成功验证并验证了你访问 CAST Highlight 的请求。欢迎使用体验！
 
@@ -76,7 +74,7 @@ Visual Studio Enterprise 订阅者可获得一个月免费的具有完整功能�
     -   [入门指南 (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
     -   视频教程 - [配置组合](https://www.youtube.com/watch?v=MDm8ln4vuGE)
     -   视频教程 - [载入应用](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
-    
+
    诚挚问候
    Greg
 
@@ -99,7 +97,7 @@ Visual Studio Enterprise 订阅者可获得一个月免费的具有完整功能�
 
 
 
-<sup>1</sup>  包括：不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine
+<sup>1</sup>  *包括：不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine
 
 
 > [!NOTE]
@@ -120,4 +118,4 @@ Visual Studio Enterprise 订阅者可获得一个月免费的具有完整功能�
 
 如果尚未激活订阅附带的 Azure 权益，请访问 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 并单击“工具”类别中的 Azure 磁贴以设置 Azure 订阅并兑换免费的 Azure 额度。
 
-不要忘记查看 Greg 电子邮件中提到的演示、用户指南和视频教程。 
+不要忘记查看 Greg 电子邮件中提到的演示、用户指南和视频教程。

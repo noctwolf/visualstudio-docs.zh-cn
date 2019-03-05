@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2714001cef1f9e1e39c6b5cbce50df1d2728f3e1
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 585a3d4940d11508dbe6d8874cb401cfe380a690
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768417"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56623822"
 ---
 # <a name="vbc-task"></a>Vbc 任务
-包装可生成可执行文件 (.exe)、动态链接库 (.dll) 或代码模块 (.netmodule) 的 vbc.exe。 有关 vbc.exe 的详细信息，请参阅 [Visual Basic 命令行编译器](/dotnet/visual-basic/reference/command-line-compiler/index)。  
+包装可生成可执行文件 (.exe)、动态链接库 (.dll) 或代码模块 (.netmodule) 的 vbc.exe。 有关 vbc.exe 的详细信息，请参阅 [Visual Basic 命令行编译器](/dotnet/visual-basic/reference/command-line-compiler/index)。
 
-## <a name="parameters"></a>参数  
- 下表描述了 `Vbc` 任务的参数。  
+## <a name="parameters"></a>参数
+ 下表描述了 `Vbc` 任务的参数。
 
 
-| 参数 | 说明​​ |
+| 参数 | 说明 |
 |------------------------------| - |
 | `AdditionalLibPaths` | 可选 `String[]` 参数。<br /><br /> 指定要在其中查找 References 属性中指定的程序集的其他文件夹。 |
 | `AddModules` | 可选 `String[]` 参数。<br /><br /> 使编译器让指定文件中的所有类型信息可供当前正在编译的项目使用。 此参数对应于 vbc.exe 编译器的 [-addmodule](/dotnet/visual-basic/reference/command-line-compiler/addmodule) 开关。 |
@@ -88,21 +88,21 @@ ms.locfileid: "55768417"
 | `Win32Icon` | 可选 `String` 参数。<br /><br /> 在程序集中插入 .ico 文件，为输出文件赋予其在“文件资源管理器”中所需的外观。 此参数对应于 vbc.exe 编译器的 [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) 开关。 |
 | `Win32Resources` | 可选 `String` 参数。<br /><br /> 在输出文件中插入 Win32 资源 (.res) 文件。 此参数对应于 vbc.exe 编译器的 [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) 开关。 |
 
-## <a name="remarks"></a>备注  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类。 有关这些其他参数的列表及其说明，请参阅 [ToolTaskExtension 基类](../msbuild/tooltaskextension-base-class.md)。  
+## <a name="remarks"></a>备注
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类。 有关这些其他参数的列表及其说明，请参阅 [ToolTaskExtension 基类](../msbuild/tooltaskextension-base-class.md)。
 
-## <a name="example"></a>示例  
- 以下示例编译 Visual Basic 项目。  
+## <a name="example"></a>示例
+ 以下示例编译 Visual Basic 项目。
 
-```xml  
-<VBC  
-   Sources="@(sources)"  
-   Resources="strings.resources"  
-   Optimize="true"  
-   OutputAssembly="out.exe"/>  
-```  
+```xml
+<VBC
+   Sources="@(sources)"
+   Resources="strings.resources"
+   Optimize="true"
+   OutputAssembly="out.exe"/>
+```
 
-## <a name="see-also"></a>请参阅  
- [Visual Basic 命令行编译器](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [任务](../msbuild/msbuild-tasks.md)   
- [任务参考](../msbuild/msbuild-task-reference.md)
+## <a name="see-also"></a>请参阅
+- [Visual Basic 命令行编译器](/dotnet/visual-basic/reference/command-line-compiler/index)
+- [任务](../msbuild/msbuild-tasks.md)
+- [任务参考](../msbuild/msbuild-task-reference.md)

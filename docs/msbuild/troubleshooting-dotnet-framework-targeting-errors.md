@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c779b9f51d9b73d945d10edc2d6f80999f91536
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004482"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620286"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>.NET Framework 目标错误疑难解答
 本主题介绍可能由引用问题导致的 MSBuild 错误以及解决这些错误的方法。
@@ -54,4 +54,7 @@ ms.locfileid: "55004482"
 >  关闭并重新打开项目后，还应重新生成该项目以确保所有引用正确解析。
 
 ## <a name="see-also"></a>请参阅
- [如何：面向某个版本的 .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md) [.NET Framework 客户端配置文件](/dotnet/framework/deployment/client-profile) [面向特定的 .NET Framework 版本](../ide/visual-studio-multi-targeting-overview.md)[多定向](../msbuild/msbuild-multitargeting-overview.md)
+- [如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
+- [.NET Framework 客户端配置文件](/dotnet/framework/deployment/client-profile)
+- [面向特定的 .NET Framework 版本](../ide/visual-studio-multi-targeting-overview.md)
+- [多定向](../msbuild/msbuild-multitargeting-overview.md)

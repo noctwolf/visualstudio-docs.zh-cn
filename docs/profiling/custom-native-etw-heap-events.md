@@ -10,12 +10,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aecc48392a036cb6ef17cc3b3ea58eb82a6e59aa
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089261"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56615541"
 ---
 # <a name="custom-native-etw-heap-events"></a>自定义本机 ETW 堆事件
 
@@ -34,7 +34,7 @@ public:
 
 ...
 
-// MemoryPool is a custom managed heap, which allocates 8192 bytes 
+// MemoryPool is a custom managed heap, which allocates 8192 bytes
 // on the standard Windows Heap named "Windows NT"
 MemoryPool<Foo, 8192> mPool;
 
@@ -66,7 +66,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
-   
+
    > [!NOTE]
    > 此修饰器将告知编译器该函数是对某分配器的调用。  每次调用函数都将输出调用点的地址、调用指令的大小和新的 `S_HEAPALLOCSITE` 符号的新对象的 typeId。  分配调用堆栈后，Windows 会发出具有此信息的 ETW 事件。  内存探查器工具浏览调用堆栈以查找匹配 `S_HEAPALLOCSITE` 符号的返回地址，并且符号中的 typeId 信息用于显示分配的运行时类型。
    >
@@ -79,7 +79,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    ```
 
    如果使用 C，请改用 `OpenHeapTracker` 函数。  调用其他跟踪函数时，此函数将返回你将使用的句柄：
-  
+
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
@@ -90,7 +90,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    pHeapTracker->AllocateEvent(memPtr, size);
    ```
 
-   或
+   or
 
    ```C
    VSHeapTrackerAllocateEvent(hHeapTracker, memPtr, size);
@@ -136,7 +136,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    ```
 
 ## <a name="track-memory-usage"></a>跟踪内存使用情况
-随着这些调用就位，现可使用 Visual Studio 中的标准**内存使用量**工具跟踪自定义堆使用情况。  有关如何使用此工具的详细信息，请参阅[内存使用量](../profiling/memory-usage.md)文档。 确保已通过快照启用堆分析，否则你的自定义堆使用情况将不会显示。 
+随着这些调用就位，现可使用 Visual Studio 中的标准**内存使用量**工具跟踪自定义堆使用情况。  有关如何使用此工具的详细信息，请参阅[内存使用量](../profiling/memory-usage.md)文档。 确保已通过快照启用堆分析，否则你的自定义堆使用情况将不会显示。
 
 ![启用堆分析](media/heap-enable-heap.png)
 
@@ -156,5 +156,5 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 > Visual Studio 在性能分析工具集中还包含内存使用情况工具，可在“调试” > “性能探查器”菜单选项或通过 Alt+F2 组合键启用该工具。  此功能不包含堆跟踪，并且不会按如下所述显示你的自定义堆。  只有“诊断工具”窗口包含此功能，可通过选择“调试” > “Windows” > “显示诊断工具”菜单或 Ctrl+Alt+F2 组合键来启用此窗口。
 
 ## <a name="see-also"></a>请参阅
-[首先了解分析工具](../profiling/profiling-feature-tour.md)  
-[内存使用率](../profiling/memory-usage.md)
+[首先了解分析工具](../profiling/profiling-feature-tour.md)
+[内存使用情况](../profiling/memory-usage.md)

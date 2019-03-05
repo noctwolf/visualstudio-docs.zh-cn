@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7294040f079bf6ff5961f985f82beea112d1f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970408"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56710105"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 管理员指南
 
@@ -54,7 +54,7 @@ ms.locfileid: "55970408"
 我们提供了几种工具来帮助你在客户端计算机上[检测和管理安装的 Visual Studio 实例](tools-for-managing-visual-studio-instances.md)。
 
 > [!TIP]
-> 除了管理员指南中的文档外，[Heath Stewart 的博客](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/)也是不错的 Visual Studio 2017 安装程序参考信息源。
+> 除了管理员指南中的文档外，[Visual Studio 安装程序存档](https://devblogs.microsoft.com/setup/tag/vs2017/)也是不错的 Visual Studio 2017 安装程序参考信息源。
 
 ## <a name="specify-customer-feedback-settings"></a>指定客户反馈设置
 

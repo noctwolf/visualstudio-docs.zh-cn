@@ -8,33 +8,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e1870870301b4f9812ea9a16fe6089fd72028b8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 74a5cecbdf3bba942c888a5cde3d49236047f4ee
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54987422"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607871"
 ---
 # <a name="console"></a>控制台
-VSPerfCmd.exe“Console”选项在新的命令提示符窗口中启动指定的应用程序。 “Console”只能与 VSPerfCmd“Launch”选项一起使用。 如果应用程序不是命令行应用程序，“Console”不起作用。  
-  
-## <a name="syntax"></a>语法  
-  
-```cmd  
-VSPerfCmd.exe /Launch:AppName /Console  
-```  
-  
-#### <a name="parameters"></a>参数  
- 无  
-  
-## <a name="required-options"></a>必需选项  
- 只能在同时包含“Launch”选项的命令行上指定“Console”。  
-  
- **Launch：**`AppName`  
- 启动探查器以及由 `AppName` 指定的应用程序。  
-  
-## <a name="see-also"></a>请参阅  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [分析服务](../profiling/command-line-profiling-of-services.md)
+VSPerfCmd.exe“Console”选项在新的命令提示符窗口中启动指定的应用程序。 “Console”只能与 VSPerfCmd“Launch”选项一起使用。 如果应用程序不是命令行应用程序，“Console”不起作用。
+
+## <a name="syntax"></a>语法
+
+```cmd
+VSPerfCmd.exe /Launch:AppName /Console
+```
+
+#### <a name="parameters"></a>参数
+ None
+
+## <a name="required-options"></a>必需选项
+ 只能在同时包含“Launch”选项的命令行上指定“Console”。
+
+ **Launch:**`AppName` 启动探查器以及由 `AppName` 指定的应用程序。
+
+## <a name="see-also"></a>请参阅
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)
+- [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [分析服务](../profiling/command-line-profiling-of-services.md)

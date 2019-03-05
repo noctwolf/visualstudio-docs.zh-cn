@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9554740cc576fc90ed232e64dbc4f73b619a8f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 730345edb42ff3d14608bdcce91bc7b97c4bb478
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55022464"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640930"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>如何：收集 Windows 计数器数据
 
@@ -48,6 +48,6 @@ Windows 计数器是在分析期间可按设定的时间间隔收集的系统性
 
 ## <a name="see-also"></a>请参阅
 
-[配置性能会话](../profiling/configuring-performance-sessions.md)  
-[性能会话属性](../profiling/performance-session-properties.md)  
+[配置性能会话](../profiling/configuring-performance-sessions.md)
+[性能会话属性](../profiling/performance-session-properties.md)
 [CPU 和 Windows 计数器](../profiling/cpu-and-windows-counters.md)

@@ -10,32 +10,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a654632bdd551843221e6d4777812983ad73a24
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 99bbb6ba880ace8b21ae6b6009ee84cffee79485
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54989609"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618726"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild 中的日志记录
-通过日志记录可监视生成的进度。 日志记录捕获日志文件中的生成事件、消息、警告和错误。  
-  
-## <a name="in-this-section"></a>本节内容  
- [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)  
- 描述 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中日志记录的各个方面。  
-  
- [生成记录器](../msbuild/build-loggers.md)  
- 概述创建单处理器记录器所需的步骤。  
-  
- [多处理器环境下的日志记录](../msbuild/logging-in-a-multi-processor-environment.md)  
- 介绍日志记录在多处理器环境和两个多处理器日志记录模型下的工作原理。  
-  
- [编写可识别多处理器的记录器](../msbuild/writing-multi-processor-aware-loggers.md)  
- 概述如何创建多处理器感知记录器以及如何使用可配置的转发记录器。  
-  
- [创建转发记录器](../msbuild/creating-forwarding-loggers.md)  
- 概述如何创建自定义转发记录器。  
-  
-## <a name="see-also"></a>请参阅  
- [并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
- 介绍如何通过并行运行多个项目来更快地生成它们。
+通过日志记录可监视生成的进度。 日志记录捕获日志文件中的生成事件、消息、警告和错误。
+
+## <a name="in-this-section"></a>本节内容
+- [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)
+
+ 描述 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中日志记录的各个方面。
+
+- [生成记录器](../msbuild/build-loggers.md)
+
+ 概述创建单处理器记录器所需的步骤。
+
+- [多处理器环境下的日志记录](../msbuild/logging-in-a-multi-processor-environment.md)
+
+ 介绍日志记录在多处理器环境和两个多处理器日志记录模型下的工作原理。
+
+- [编写可识别多处理器的记录器](../msbuild/writing-multi-processor-aware-loggers.md)
+
+ 概述如何创建多处理器感知记录器以及如何使用可配置的转发记录器。
+
+- [创建转发记录器](../msbuild/creating-forwarding-loggers.md)
+
+ 概述如何创建自定义转发记录器。
+
+## <a name="see-also"></a>请参阅
+- [并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) 介绍如何通过并行运行多个项目来更快地生成它们。

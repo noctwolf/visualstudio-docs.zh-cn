@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/02/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 如果别名或友好名称已被使用，登录可能会失败
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817433"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841622"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用别名登录 Visual Studio 订阅可能会失败
 
@@ -150,7 +148,7 @@ ms.locfileid: "51817433"
 
 6. 你现在应可看到你的权益
 
-注意：以后访问 https://my.visualstudio.com 时，系统可能会提示你选择想要使用的帐户（例如“工作或学校帐户”或“个人帐户”）。  执行上述步骤后，你将需要利用“个人帐户”选项。
+注意:以后访问 https://my.visualstudio.com 时，系统可能会提示你选择想要使用的帐户（例如，“工作或学校帐户”或“个人帐户”）。  执行上述步骤后，你将需要利用“个人帐户”选项。
 
 如果遇到问题，请联系支持团队 (https://visualstudio.microsoft.com/subscriptions/support/))。
 

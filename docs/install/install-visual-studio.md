@@ -2,7 +2,7 @@
 title: 安装 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步安装 Visual Studio。
-ms.date: 05/07/2018
+ms.date: 02/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,16 +18,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fab4a79bfd7a72b6b81493db241cd1ade8068158
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: e87026ab387d2a3c7d84a7c546034a7a404db5bf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156132"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607016"
 ---
 # <a name="install-visual-studio-2017"></a>安装 Visual Studio 2017
 
-欢迎以全新方式安装 Visual Studio！ 最新版本方便你更轻松地选择并仅安装所需功能。 此外，我们还减少了 Visual Studio 的最小内存需求量，使其安装速度变得更快，对系统的影响更小。
+欢迎以全新方式安装 Visual Studio！ 此版本方便你更轻松地选择并仅安装所需功能。 此外，我们还减少了 Visual Studio 的最小内存需求量，使其安装速度变得更快，对系统的影响更小。
 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[安装 Visual Studio for Mac](/visualstudio/mac/installation)。

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bf4e4b1828253d002ab15f80584d7a8c2b2894a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 67153c0acebc3b190830daa2e14ef3578ce00652
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954642"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796616"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务
 
@@ -81,10 +81,10 @@ ms.locfileid: "55954642"
 
 若要确保在防火墙或代理服务器后面使用 Visual Studio 或 Azure 服务时可访问一切所需的内容，以下是应列入白名单的URL 和你可能需要打开的端口及协议。
 
-| 服务或方案 | DNS 终结点 | 协议 | 端口 | 说明​​ |
+| 服务或方案 | DNS 终结点 | 协议 | 端口 | 说明 |
 | - | - | - | - | - |
 | URL<br>解析 | go.microsoft.com<br><br>aka.ms | | | 用于缩短 URL，然后解析为更长的 URL |
-| 起始页 | vsstartpage.blob.core.windows.net | | 443 | 用于显示在 Visual Studio 的起始页上显示的开发人员新闻 |
+| 起始页 | vsstartpage.blob.core.windows.net | | 443 | 用于显示起始页上显示的开发人员新闻（仅 Visual Studio 2017） |
 | 目标<br> 通知 <br>服务 | targetednotifications.azurewebsites.net <br><br>www.research.net | | 80<br><br>443 | 用于将全局通知列表筛选为一个仅适用于特定类型计算机/使用方案的列表 |
 | 扩展名 <br>更新检查 | marketplace.visualstudio.com<br><br>&#42;.windows.net <br>&#42;.microsoftonline.com <br>&#42;.live.com | | 443 | 用于在已安装扩展有可用更新时提供通知 <br><br> 用作登录位置 |
 | AI 项目 <br>集成 | az861674.vo.msecnd.net | | 443<br> | 用于配置新项目，以将使用情况数据发送到你注册的 Application Insights 帐户 |
@@ -119,7 +119,7 @@ ms.locfileid: "55954642"
 | 快照 <br>调试器 | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6.Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022（Visual Studio 从属版本） | 1.查询 .json 文件的应用服务 SKU 大小 <br>2.各种 Azure RM 调用 <br>3.站点预热调用渠道  <br>4.客户的目标应用服务 Kudu 终结点 <br>5.查询 nuget.org 中发布的站点扩展版本 <br>6.远程调试通道 |
 | Azure 流分析 <br><br>HDInsight | Management.azure.com | https | 443 | 用于查看、提交、运行和管理 ASA 作业 <br><br> 用于浏览 HDI 群集，以及提交、诊断和调试 HDI 作业 |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | 用于编译、提交、查看、诊断和调试作业；用于浏览 ADLS 文件；用于上传和下载文件 |
-| 打包服务 | [account].visualstudio.com <br/> [account].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 仅特定生成任务方案（例如：NuGet 工具安装程序、节点工具安装程序）或者打算将公共上游与源结合使用时才需使用 .npmjs.org、.nuget.org 和 .nodejs.org。 要使用打包服务的核心功能，还需具备其他三个域。 |
+| 打包服务 | [account].visualstudio.com <br/> [account].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 仅特定生成任务方案（例如：NuGet 工具安装程序、节点工具安装程序）或者打算将公共上游与源结合使用时才需使用 \*.npmjs.org、\*.nuget.org 和 \*.nodejs.org。 要使用打包服务的核心功能，还需具备其他三个域。 |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | 用于连接 Azure DevOps Services |
 | | | | | |
 

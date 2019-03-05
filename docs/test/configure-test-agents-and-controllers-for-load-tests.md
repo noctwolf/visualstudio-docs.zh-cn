@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08cc8426dcc82a178bbcf042c13fa51956697702
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948818"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796344"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>配置测试代理和测试控制器以运行负载测试
 
@@ -63,7 +63,7 @@ Visual Studio 可以使用物理计算机或虚拟机为应用生成模拟负载
 
 ### <a name="test-controller"></a>测试控制器
 
-测试控制器提供了运行测试的一般体系结构，并且包含运行加载测试的特殊功能。 测试控制器会将负载测试发送到所有的测试代理并等待，直到所有的测试代理都初始化该测试。 所有的测试代理准备就绪后，测试控制器会将消息发送到测试代理，以启动测试。
+测试控制器提供了运行测试的一般体系结构，并且包含运行负载测试的特殊功能。 测试控制器会将负载测试发送到所有的测试代理并等待，直到所有的测试代理都初始化该测试。 所有的测试代理准备就绪后，测试控制器会将消息发送到测试代理，以启动测试。
 
 ### <a name="test-agent"></a>测试代理
 
@@ -87,7 +87,7 @@ Visual Studio 可以使用物理计算机或虚拟机为应用生成模拟负载
 
 ## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>使用测试控制器和测试代理与单元测试
 
-安装 Test Controller 以及一个或多个代理后，可以在负载测试的测试设置中指定是否对 Test Controller 使用远程执行。 此外，你可以指定在测试设置中与代理相关联的角色一起使用的数据和诊断适配器。
+安装 Test Controller 以及一个或多个代理后，可以在负载测试的测试设置中指定是否对 Test Controller 使用远程执行。 此外，您可以指定在测试设置中与代理相关联的角色一起使用的数据和诊断适配器。
 
 ## <a name="see-also"></a>请参阅
 

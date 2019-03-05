@@ -18,75 +18,70 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1a3c1eff1775114bbeb17645ab782451ac2ae2
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3a5a388c8f838f182d2f1f3d3f56f84b8fbf10e6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923212"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596862"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag 函数
-向并发可视化工具跟踪文件写入一个标志。  
-  
-## <a name="syntax"></a>语法  
-  
-```C  
-HRESULT CvWriteFlagExW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCWSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteFlagExA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteFlagExVW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCWSTR pMessage,  
-    _In_ va_list argList);  
-  
-HRESULT CvWriteFlagExVA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCSTR pMessage,  
-    _In_ va_list argList);  
-```  
-  
-#### <a name="parameters"></a>参数  
- `argList`  
- 参数列表。  
-  
- `category`  
- 类别。  
-  
- `level`  
- 重要性级别。  
-  
- `pMarkerSeries`  
- 有效标记系列上下文。 不能为 NULL。  
-  
- `pMessage`  
- 消息格式字符串。 不能为 NULL。  
-  
-## <a name="return-value"></a>返回值  
- 成功写入消息时返回 S_OK。 出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。  
-  
-## <a name="requirements"></a>要求  
- **标头：** cvmarkers.h  
-  
- **Unicode：** CvWriteFlagExW、CvWriteFlagExVW  
-  
- <strong>ANSI：</strong>CvWriteFlagExA、CvWriteFlagExVA  
-  
-## <a name="see-also"></a>请参阅  
- [C++ 库参考](../profiling/cpp-library-reference.md)
+向并发可视化工具跟踪文件写入一个标志。
+
+## <a name="syntax"></a>语法
+
+```C
+HRESULT CvWriteFlagExW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCWSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteFlagExA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteFlagExVW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCWSTR pMessage,
+    _In_ va_list argList);
+
+HRESULT CvWriteFlagExVA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCSTR pMessage,
+    _In_ va_list argList);
+```
+
+#### <a name="parameters"></a>参数
+ `argList` 参数列表。
+
+ `category` 类别。
+
+ `level` 重要性级别。
+
+ `pMarkerSeries` 有效标记系列上下文。 不能为 NULL。
+
+ `pMessage` 消息格式字符串。 不能为 NULL。
+
+## <a name="return-value"></a>返回值
+ 成功写入消息时返回 S_OK。 出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。
+
+## <a name="requirements"></a>要求
+ **标头：** cvmarkers.h
+
+ **Unicode：** CvWriteFlagExW、CvWriteFlagExVW
+
+ <strong>ANSI：</strong>CvWriteFlagExA、CvWriteFlagExVA
+
+## <a name="see-also"></a>请参阅
+- [C++ 库参考](../profiling/cpp-library-reference.md)

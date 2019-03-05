@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43759d33c776e7ca4a6bdd8269df4bee0f882a53
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54982931"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638512"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：选择收集方法
 
@@ -91,6 +91,6 @@ Visual Studio 分析工具支持三种收集性能数据的方法：采样、检
 
 ## <a name="see-also"></a>请参阅
 
-[配置性能会话](../profiling/configuring-performance-sessions.md)  
-[了解采样数据值](../profiling/understanding-sampling-data-values.md)  
+[配置性能会话](../profiling/configuring-performance-sessions.md)
+[了解采样数据值](../profiling/understanding-sampling-data-values.md)
 [性能会话属性](../profiling/performance-session-properties.md)

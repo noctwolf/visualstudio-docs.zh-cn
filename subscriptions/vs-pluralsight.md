@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 01/25/2019
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解有关所选的 Visual Studio 订阅中随附的 Pluralsight 培训订阅。
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 197e162df314e039bbf748a7afc208c0639531d1
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 23d8b7185ebcaa982b18e9087050f9da5d7f6e7f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55089235"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841635"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Pluralsight 培训权益
 
@@ -29,29 +27,29 @@ ms.locfileid: "55089235"
 1. 要激活订阅，请连接到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，然后在“专业开发”部分中的 Pluralsight 权益磁贴上单击“获取代码”链接。
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 权益磁贴](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
-   > 
+   >
    > [!IMPORTANT]
    > 单击 Pluralsight 权益磁贴上的“获取代码”链接时，可能会收到以下消息：
-   > 
+   >
    > **“请注意： 如果此前已通过 Visual Studio 订阅激活其他 Pluralsight 套餐，使用此代码可能无法创建新的 Pluralsight 帐户。”
 
 2. 你将收到一条通知消息，指示已成功检索到优惠券代码。  单击“激活”。
    > [!div class="mx-imgBorder"]
    > ![激活 Pluralsight 权益](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. 将重定向到“Pluralsight”页，以获取 Visual Studio 订阅中包含的权益。  
+3. 将重定向到“Pluralsight”页，以获取 Visual Studio 订阅中包含的权益。
    - 在窗体上提供所需的联系人信息
    - 单击复选框接受使用和隐私策略条款
    - 单击“我同意，激活权益”。
      > [!div class="mx-imgBorder"]
-     > ![激活 Pluralsight 权益](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
+     > ![激活 Pluralsight 权益](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
      > [!div class="mx-imgBorder"]
      > ![Pluralsight 权益条款](_img/vs-pluralsight/vs-pluralsight-terms.png)
 
 5. 设置帐户可能需要一段时间。  设置完成后，会在页面上看到一条确认消息，并收到含有登录信息的电子邮件。  电子邮件将发送到创建帐户时指定的别名。  如果在查找邮件时遇到问题，请务必检查垃圾邮件文件夹。
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 权益确认](_img/vs-pluralsight/vs-pluralsight-confirmation-vse.png)
-   > 
+   >
    > [!NOTE]
    > 如果帐户不符合兑换新产品/服务的条件，则会在收到的电子邮件中说明因不符合条件以致创建帐户时出现问题。  其中还包含用于联系 Pluralsight 支持团队的信息，他们可解答有关帐户的任何问题。
 
@@ -71,8 +69,8 @@ ms.locfileid: "55089235"
 
 |                          订阅级别                          |     信道      |    好处    |   是否续订？   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
-|          Visual Studio Enterprise（标准）           | VL、Azure、零售 |   6 个月    | 是<sup>2</sup> |
-|         Visual Studio Professional（标准）          | VL、Azure、零售 |   3 个月    | 是<sup>2</sup> |
+|          Visual Studio Enterprise（标准）           | VL、Azure、零售 |   6 个月    | Yes<sup>2</sup> |
+|         Visual Studio Professional（标准）          | VL、Azure、零售 |   3 个月    | Yes<sup>2</sup> |
 |              Visual Studio Test Professional（标准）              |    VL、零售     |   3 个月    | No |
 |                      MSDN 平台（标准）                       |    VL、零售     |   3 个月    | No |
 |                     Visual Studio Dev Essentials                     |        NA         |   1 个月    |       No       |
@@ -92,10 +90,10 @@ ms.locfileid: "55089235"
 ## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>问：我拥有 Visual Studio Enterprise 订阅，但在“权益”页上看不到 Pluralsight 磁贴。 为什么会这样？
-A:并非所有 Visual Studio Enterprise 订阅都包含 Pluralsight 权益。  请检查[资格表](#eligibility)这一表格，以查看订阅是否符合条件。
+答：并非所有 Visual Studio Enterprise 订阅都包含 Pluralsight 权益。  请检查[资格表](#eligibility)这一表格，以查看订阅是否符合条件。
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>问：我是否有权访问任何自定义的学习播放列表或频道？
-A:有，你是 Visual Studio 订阅者，有权访问专家频道，这属于 Pluralsight 培训权益的一部分。 这些频道由 Microsoft 专家专门策划，旨在学习 .Net、Azure、DevOps 和移动性等领域的知识。 通过 Visual Studio 订阅门户[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 激活 Pluralsight 权益，获得在 Pluralsight 登录页上访问以下频道的权限 –
+答：有，你是 Visual Studio 订阅者，有权访问专家频道，这属于 Pluralsight 培训权益的一部分。 这些频道由 Microsoft 专家专门策划，旨在学习 .Net、Azure、DevOps 和移动性等领域的知识。 通过 Visual Studio 订阅门户[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 激活 Pluralsight 权益，获得在 Pluralsight 登录页上访问以下频道的权限 –
 
 •   Scott Hanselmann（.Net、Azure）- [http://go.pluralsight.com/scott-hanselman](http://go.pluralsight.com/scott-hanselman)
 
@@ -105,7 +103,7 @@ A:有，你是 Visual Studio 订阅者，有权访问专家频道，这属于 Pl
 
 
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>问：Pluralsight 订阅到期后，会发生什么情况？
-A:免费 Pluralsight 订阅到期后，可选择直接从 Pluralsight 购买订阅。  请联系 [Pluralsight](http://www.pluralsight.com) 获取完整详细信息。
+答：免费 Pluralsight 订阅到期后，可选择直接从 Pluralsight 购买订阅。  请联系 [Pluralsight](http://www.pluralsight.com) 获取完整详细信息。
 
 ## <a name="support-resources"></a>支持资源
 -  [Pluralsight 帮助中心](https://help.pluralsight.com/help)可以在参加 Pluralsight 课程或使用 Pluralsight 网站方面提供帮助。
@@ -113,4 +111,4 @@ A:免费 Pluralsight 订阅到期后，可选择直接从 Pluralsight 购买订�
 -  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 
 ## <a name="next-steps"></a>后续步骤
-创建帐户后，就可以开始培训了。  请访问 [https://www.pluralsight.com](http://www.pluralsight.com) 并点击页面右上角的“登录”以开始新课程，或返回正在进行的课程。 
+创建帐户后，就可以开始培训了。  请访问 [https://www.pluralsight.com](http://www.pluralsight.com) 并点击页面右上角的“登录”以开始新课程，或返回正在进行的课程。
