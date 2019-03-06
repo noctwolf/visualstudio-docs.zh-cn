@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: e17a423e9db6826c8cc693e1c75c75bb067a19e8
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e184daa5271497e158c68989cb43889a03a98802
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295288"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953481"
 ---
 # <a name="debugging-with-xamarin"></a>使用 Xamarin 进行调试
 
@@ -79,10 +79,10 @@ Visual Studio for Mac 使用 Mono 软调试器来调试所有 Xamarin 应用程�
 
 以下是四个按钮：
 
-*   播放 - 此按钮开始执行代码，直至下一个断点处。
-*   单步跳过 - 此按钮执行下一行代码。 如果下一行是函数调用，“单步跳过”将执行该函数，并在该函数后的下一行代码停止。
-*   单步执行 - 此按钮也执行下一行代码。 如果下一行是函数调用，“单步执行”将在该函数的第一行停止，允许继续进行函数的逐行调试。 如果下一行不是函数，其行为与“单步跳过”相同。
-*   跳出 - 此按钮返回到调用当前函数的代码行。
+* 播放 - 此按钮开始执行代码，直至下一个断点处。
+* 单步跳过 - 此按钮执行下一行代码。 如果下一行是函数调用，“单步跳过”将执行该函数，并在该函数后的下一行代码停止。
+* 单步执行 - 此按钮也执行下一行代码。 如果下一行是函数调用，“单步执行”将在该函数的第一行停止，允许继续进行函数的逐行调试。 如果下一行不是函数，其行为与“单步跳过”相同。
+* 跳出 - 此按钮返回到调用当前函数的代码行。
 
 ## <a name="debugging-monos-class-libraries"></a>调试 Mono 类库
 

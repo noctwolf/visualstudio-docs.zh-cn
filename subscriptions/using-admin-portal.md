@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何使用管理员门户管理组织的 Visual Studio 订阅。
 searchscope: VS Subscription
-ms.openlocfilehash: ec741707f061de7e7173da9c4a07a50469cf50da
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0c22fa379a3bca8987b50f1e8c19240e4a30fb98
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843706"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953946"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>使用 Visual Studio 订阅管理员门户
 
@@ -38,13 +38,14 @@ ms.locfileid: "56843706"
 ### <a name="onboarding"></a>加入
 
 当你的组织已准备好要加入到 Visual Studio 订阅管理门户时，将向主要联系人和通知联系人发送电子邮件，邀请他们完成加入过程。 下面的详细信息是加入到新门户需要进行的步骤。 如果想要演练该过程，请查看此[管理员加入视频](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)或此[支持文章] (https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Visual Studio 订阅：管理员迁移的过程")。
-1.  **查找 PCN 并登录：**
-    - 在电子邮件中，向“主要联系人”和“通知联系人”提供了唯一的链接及其公共客户编号 (PCN) 的最后三位数字。 *
-    - 若要获取完整的 PCN，主要联系人需要登录到 VLSC（可在此处找到如何查找 PCN 的说明）。
-    - 获得 PCN 后，他们需要选择自己的唯一链接，该链接将提示他们登录。 他们可以使用工作或学校帐户（如果组织在 AAD 中）或 Microsoft 帐户 (MSA)（如果组织不在 AAD 中）。
-    - 接下来，他们需要输入 PCN。
-2.  **设置管理员。** 输入 PCN 后，他们将在新系统中注册为超级管理员，并且可以添加其他超级管理员和管理员（以前称为“订阅管理员”）。 为避免丢失访问权限，应在组织迁移日期之前完成此操作。
-3.  **访问新的订阅管理门户。**  组织迁移后，将向新添加的超级管理员和管理员发送电子邮件，邀请他们访问新的门户并开始管理订阅。
+
+1. **查找 PCN 并登录：**
+    - 在电子邮件中，向“主要联系人”和“通知联系人”提供了唯一的链接及其公共客户编号 (PCN) 的最后三位数字。 * 
+    - 若要获取完整的 PCN，主要联系人需要登录到 VLSC（可在此处找到如何查找 PCN 的说明）。 
+    - 获得 PCN 后，他们需要选择自己的唯一链接，该链接将提示他们登录。 他们可以使用工作或学校帐户（如果组织在 AAD 中）或 Microsoft 帐户 (MSA)（如果组织不在 AAD 中）。 
+    - 接下来，他们需要输入 PCN。 
+2. **设置管理员。** 输入 PCN 后，他们将在新系统中注册为超级管理员，并且可以添加其他超级管理员和管理员（以前称为“订阅管理员”）。 为避免丢失访问权限，应在组织迁移日期之前完成此操作。 
+3. **访问新的订阅管理门户。**  组织迁移后，将向新添加的超级管理员和管理员发送电子邮件，邀请他们访问新的门户并开始管理订阅。  
 
 > [!NOTE]
 > 如果主要联系人或通知联系人收到多封电子邮件，这意味着他们具有多个 PCN。 他们需要使用每封电子邮件中引用的 PCN 的唯一链接完成该过程。*

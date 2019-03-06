@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: 批量许可服务中心管理迁移常见问题解答
 searchscope: VS Subscription
-ms.openlocfilehash: 2cf7e53e4739c22499bab6df74fcb55b5d0ad019
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 21083f50966472bb7d6d85c8ad594b586b810df9
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844095"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953938"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio 订阅管理迁移
 
@@ -44,21 +44,21 @@ ms.locfileid: "56844095"
 ### <a name="what-is-the-onboarding-process"></a>什么是加入过程？
 主要/通知联系人将收到一封邀请其完成加入过程的电子邮件。
 有关该过程的说明，请参阅下文。
-1.  **查找 PCN 并登录：**
+1. **查找 PCN 并登录：**
 
-    a.  在电子邮件中，向“主要联系人”和“通知联系人”提供了唯一的链接及其公共客户编号 (PCN) 的最后三位数字。*
+    a. 在电子邮件中，向“主要联系人”和“通知联系人”提供了唯一的链接及其公共客户编号 (PCN) 的最后三位数字。*
 
-    b.  为了获取完整的 PCN，主要联系人需要登录到 VLSC（可在下文中了解如何查找 PCN 的说明）。
+    b. 为了获取完整的 PCN，主要联系人需要登录到 VLSC（可在下文中了解如何查找 PCN 的说明）。
 
-    c.  获得 PCN 后，他们需要选择自己的唯一链接，该链接将提示他们登录。 他们可以使用工作或学校帐户（如果组织在 Azure AD 中）或 Microsoft 帐户 (MSA)（如果组织不在 Azure AD 中）。
+    c. 获得 PCN 后，他们需要选择自己的唯一链接，该链接将提示他们登录。 他们可以使用工作或学校帐户（如果组织在 Azure AD 中）或 Microsoft 帐户 (MSA)（如果组织不在 Azure AD 中）。
 
-    d.  接下来，系统将提示他们输入 PCN。
+    d. 接下来，系统将提示他们输入 PCN。
 
-2.  **设置管理员：**
+2. **设置管理员：**
 
     输入 PCN 后，他们将转到可以添加超级管理员和管理员（以前称为“订阅管理员”）的页面。 在理想情况下，此操作应在组织的迁移日期之前完成，以便订阅管理中断。
 
-3.  **访问新的订阅管理门户：** 组织迁移后，将向超级管理员和管理员发送电子邮件，邀请他们访问新的门户并开始管理订阅。
+3. **访问新的订阅管理门户：** 组织迁移后，将向超级管理员和管理员发送电子邮件，邀请他们访问新的门户并开始管理订阅。
 
 > [!NOTE]
 > 如果主要联系人或通知联系人收到多封电子邮件，这意味着他们具有多个 PCN。 他们需要使用每封电子邮件中引用的 PCN 的唯一链接完成该过程。

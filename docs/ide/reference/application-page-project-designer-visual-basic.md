@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49690730b60de6c1ec0aa2f4a0776e45cca43ccb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa0b5a95a4191a977144808bfb8888e282f7fce9
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913166"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223268"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -76,7 +76,7 @@ ms.locfileid: "55913166"
 
 ### <a name="auto-generate-binding-redirects"></a>自动生成绑定重定向
 
-如果应用或其组件引用同一程序集的多个版本，则绑定重定向将添加到项目中。 如果要在项目文件中手动定义绑定重定向，请取消选中“自动生成绑定重定向”。 Visual Studio 2017 版本 15.7 中引入了此复选框。
+如果应用或其组件引用同一程序集的多个版本，则绑定重定向将添加到项目中。 如果要在项目文件中手动定义绑定重定向，请取消选中“自动生成绑定重定向”。
 
 有关重定向的详细信息，请参阅[重定向程序集版本](/dotnet/framework/configure-apps/redirect-assembly-versions)。
 

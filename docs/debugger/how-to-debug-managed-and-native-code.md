@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 011e51e126fc70f12be7dd94c05b27df17e77adf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 055e7d106611d23254f317bdbe29a1ac1e3d9ec9
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714616"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953857"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教程：在同一个调试会话中调试 C# 和 C++
 
@@ -85,9 +85,9 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 
     extern "C"
     {
-        __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
-            return a * b;
-        }
+      __declspec(dllexport) int __stdcall mixed_mode_multiply(int a, int b) {
+        return a * b;
+      }
     }
     #endif
     ```

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: cae109ef815e837026bc12366a5902d7d151edcb
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 1a7ba3101713c4461f3d3558a97cdbea37eac604
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56319461"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428565"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 移动应用开发
 
@@ -28,7 +28,7 @@ Visual Studio for Mac 有其自己的集成 Android SDK 管理器，允许访问
 
 ## <a name="ios"></a>iOS
 
-IOS 设计器与 Visual Studio for Mac 完全集成，可进行 .xib 的可视编辑，并使 Storyboard 文件创建 iOS、tvOS 和 WatchOS UI 并转换。 使用直观方法处理事件时，可使用工具箱和 Design Surface 之间的拖放功能生成整个用户界面。 iOS Designer 还支持 [custom controls/xamarin/ios/user-interface/designer/ios-designable-controls-overview)，并提供设计时绘制的其他益处。
+IOS 设计器与 Visual Studio for Mac 完全集成，可进行 .xib 的可视编辑，并使 Storyboard 文件创建 iOS、tvOS 和 WatchOS UI 并转换。 使用直观方法处理事件时，可使用工具箱和 Design Surface 之间的拖放功能生成整个用户界面。 iOS 设计器还支持具有额外的设计时呈现优势的[自定义控件](/xamarin/ios/user-interface/designer/ios-designable-controls-overview)。
 
 ![iOS Storyboard 设计器](media/intro-image30.png)
 

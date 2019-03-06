@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00002de014e36f53976009f0904c987214f0c28b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685126"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953377"
 ---
 # <a name="customize-startup"></a>自定义启动
 
@@ -34,17 +34,17 @@ ms.locfileid: "56685126"
 
 1. 在菜单栏上，依次选择“工具” > “选项”。
 
-1. 展开“环境”，然后选择“启动”。
+2. 展开“环境”，然后选择“启动”。
 
 ::: moniker range="vs-2017"
 
-1. 在“启动时”列表中，选择在 Visual Studio 启动后要显示的项目。
+3. 在“启动时”列表中，选择在 Visual Studio 启动后要显示的项目。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 在“启动时打开”列表中，选择要在 Visual Studio 启动后执行的操作。 可以从“开始窗口”（这允许打开新的或现有项目）、“最新解决方案”或“空环境”中选择。
+3. 在“启动时打开”列表中，选择要在 Visual Studio 启动后执行的操作。 可以从“开始窗口”（这允许打开新的或现有项目）、“最新解决方案”或“空环境”中选择。
 
 ::: moniker-end
 

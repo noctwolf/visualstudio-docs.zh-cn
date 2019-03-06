@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b019081e2f81a803b745bda0991c655ef84d11c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9b7174418267a77cc668ab0a79092fc7daefbf58
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606350"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953776"
 ---
 # <a name="spanspan-destructor"></a>span::~span 析构函数
+
 销毁 `span` 对象并释放其资源。
 
 ## <a name="syntax"></a>语法
@@ -29,9 +30,11 @@ ms.locfileid: "56606350"
 ```
 
 ## <a name="requirements"></a>要求
- **标头：** cvmarkersobj.h
 
- **命名空间：** Concurrency::diagnostic
+**标头：** cvmarkersobj.h
 
- ## <a name="see-also"></a>请参阅
+**命名空间：** Concurrency::diagnostic
+
+## <a name="see-also"></a>请参阅
+
 - [span 类](../profiling/span-class.md)

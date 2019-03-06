@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 751ee5f414db3ee2ad944cd48503887bf5c65c2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 06914374169d3d6dab6dd5a489461c11ddbc66aa
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942670"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953883"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>使用 Visual Studio 配置 Azure 云服务角色
 一个 Azure 云服务可以有一个辅助角色或 Web 角色。 对于每个角色，需要定义该角色的设置方式，并配置该角色的运行方式。 若要详细了解云服务中的角色，请观看视频 [Introduction to Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)（Azure 云服务简介）。
@@ -48,8 +48,6 @@ ms.locfileid: "55942670"
 
     > [!IMPORTANT]
     > 如果要选择特定的服务配置，需禁用一些属性，因为其只能设置为所有配置。 若要编辑这些属性，必须选择“所有配置”。
-    >
-    >
 
     ![Azure 云服务的服务配置列表](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 

@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7150ec407b2ce9c0c4c5bf22a8ae75b3ac3b93
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450589"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223307"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
@@ -266,7 +266,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 **15.5 中的新增功能**：Visual Studio 2017 版本 15.5 提供对 Windows 10 Fall Creators Update SDK (10.0.16299.0) 的最佳支持。 Windows 10 Fall Creators Update 也为 UWP 开发人员推出了许多改进内容。 以下是其中最重大的一些改进： 
 
-* **支持 .NET Standard 2.0**<br/>除了简化的应用部署，Windows 10 Fall Creators Update 还是 Windows 10 第一个提供 .NET Standard 2.0 支持的版本。 实际上，[.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) 是对任何 .NET 平台均可实现的基类库的引用实现。 .NET Standard 的设计目的是让 .NET 开发人员能够尽可能轻松地在其选择使用的任何 .NET 平台上共享代码。
+* **支持 .NET Standard 2.0**<br/>除了简化的应用部署，Windows 10 Fall Creators Update 还是 Windows 10 第一个提供 .NET Standard 2.0 支持的版本。 实际上，[.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) 是对任何 .NET 平台均可实现的基类库的引用实现。 .NET Standard 的设计目的是让 .NET 开发人员能够尽可能轻松地在其选择使用的任何 .NET 平台上共享代码。
 * **最佳 UWP 和 Win32**<br/>已通过 [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) 改善 Windows 10 平台，以便 Windows 10 能为 .NET 开发人员提供更好的使用体验，无论他们当前关注的对象是 UWP、WPF、Windows Forms 还是 Xamarin。 使用 Visual Studio 2017 版本 15.5 中新的应用打包项目类型，可为 WPF 或 Windows 窗体项目创建 Windows 应用包，正如为 UWP 项目创建那样。 打包应用程序后，便获得所有 Windows 10 应用部署权益，并可选择通过 Microsoft Store（消费者应用）或商业版和教育版 Microsoft Store 进行分发。 由于打包的应用可在桌面上访问完整的 UWP API 界面和 Win32 API，因此现在可以使用 UWP API 和 Windows 10 功能逐渐实现 WPF 和 Windows 窗体应用程序的现代化。 此外，可将 Win32 组件包括在 UWP 应用程序中，凭借各种 Win32 功能，它们将在桌面上大放光彩。
 
 有关 UWP 的详细信息，请参阅[开发用于通用 Windows 平台 (UWP) 的应用](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)页。
@@ -377,7 +377,7 @@ Visual Studio 2017 所有版本随附：
 
 ### <a name="report-a-problem"></a>报告问题
 
- 有时，一条消息不足以说明所遇问题的总体影响。 如果遇到挂起、崩溃或其他性能问题，可利用“报告问题”工具与我们轻松共享重现步骤和支持文件（如屏幕截图以及跟踪和堆转储文件）。 有关如何使用此工具的详细信息，请参阅[如何报告问题](how-to-report-a-problem-with-visual-studio-2017.md)页。
+ 有时，一条消息不足以说明所遇问题的总体影响。 如果遇到挂起、崩溃或其他性能问题，可利用“报告问题”工具与我们轻松共享重现步骤和支持文件（如屏幕截图以及跟踪和堆转储文件）。 有关如何使用此工具的详细信息，请参阅[如何报告问题](how-to-report-a-problem-with-visual-studio.md)页。
 
 ## <a name="see-also"></a>请参阅
 
