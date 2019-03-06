@@ -8,16 +8,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbb34e93b4faf8df206353d2a06649f652cbcaeb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+monikerRange: vs-2017
+ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689819"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323982"
 ---
-# <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>升级 Visual Studio 2017 的自定义项目和项模板
+# <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升级自定义项目和项模板的 Visual Studio 2017
 
-从 Visual Studio 2017 开始，Visual Studio 发现由.vsix 或.msi 安装在不同的方式与以前版本的 Visual Studio 中的项目和项模板。 如果你拥有使用自定义项目或项模板的扩展，您需要更新你的扩展。 本主题介绍你必须执行的操作。
+从 Visual Studio 2017 开始，Visual Studio 发现由.vsix 或.msi 安装在不同的方式与以前版本的 Visual Studio 中的项目和项模板。 如果你拥有使用自定义项目或项模板的扩展，您需要更新你的扩展。 本文介绍了必须执行的操作。
 
 此更改会影响 Visual Studio 2017。 它不会影响 Visual Studio 的早期版本。
 
@@ -27,7 +28,7 @@ ms.locfileid: "56689819"
 
 在以前版本的 Visual Studio 中， **devenv /setup**或**devenv /installvstemplates**扫描以查找项目和项模板的本地磁盘。 从 Visual Studio 2017 中，扫描仅对于用户级别位置的执行。 默认用户级位置是 **%USERPROFILE%\Documents\\< Visual Studio 版本\>\Templates\\**。 此位置用于生成的模板**项目** > **导出模板...** 命令时，如果**会自动将模板导入 Visual Studio**在向导中选择选项。
 
-对于其他 （非用户） 的位置，您必须包含指定的位置和模板的其他特征的 manifest(.vstman) 文件。 适用于模板的.vstemplate 文件以及生成.vstman 文件。 如果您安装使用.vsix 扩展，可以通过重新编译 Visual Studio 2017 中的扩展来实现此目的。 但如果您使用一个.msi，则需要手动进行的更改。 您需要执行的操作进行这些更改的列表，请参阅**对扩展安装与升级。MSI**本主题中更高版本。
+对于其他 （非用户） 的位置，您必须包含指定的位置和模板的其他特征的 manifest(.vstman) 文件。 适用于模板的.vstemplate 文件以及生成.vstman 文件。 如果您安装使用.vsix 扩展，可以通过重新编译 Visual Studio 2017 中的扩展来实现此目的。 但如果您使用一个.msi，则需要手动进行的更改。 您需要执行的操作进行这些更改的列表，请参阅**对扩展安装与升级。MSI**稍后在此页。
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>如何使用项目或项模板更新 VSIX 扩展
 
@@ -58,9 +59,9 @@ ms.locfileid: "56689819"
 
 -   避免使用压缩的模板文件。 压缩需要不会进行压缩以便检索资源和内容文件的模板，因此它们将考虑使用。 相反，应将项目和项模板部署为单个文件，以加快模板初始化其自身目录下。 VSIX 扩展的 SDK 生成任务会自动将任何压缩的模板解压缩创建 VSIX 文件时。
 
--   避免以避免不必要的资源程序集加载模板在发现期间使用的模板名称、 说明、 图标或预览包/资源 ID 条目。 相反，本地化的清单可用于创建每个区域设置，它使用本地化的名称或属性的模板条目。
+-   避免使用包/资源 ID 条目的模板名称、 说明、 图标，或为模板在发现期间避免不必要的资源程序集加载预览。 相反，本地化的清单可用于创建每个区域设置，它使用本地化的名称或属性的模板条目。
 
--   如果要包含为文件项模板，清单生成可能无法让你预期的结果。 在这种情况下，你将需要向 VSIX 项目添加手动生成清单。
+-   如果要包含为文件项模板，清单生成可能无法让你预期的结果。 在这种情况下，必须向 VSIX 项目添加一个手动生成的清单。
 
 ## <a name="file-changes-in-project-and-item-templates"></a>项目和项模板中的文件更改
 我们显示 Visual Studio 2015 和 Visual Studio 2017 版本的模板文件之间差异的点，以便可以正确地创建新文件。
@@ -168,7 +169,6 @@ ms.locfileid: "56689819"
     </VSTemplateHeader>
   </VSTemplateContainer>
 </VSTemplateManifest>
-
 ```
 
  提供的信息 **\<TemplateData >** 元素保持不变。  **\<VSTemplateContainer >** 元素指向关联的模板的.vstemplate 文件
@@ -177,7 +177,7 @@ ms.locfileid: "56689819"
 
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>与安装扩展的升级。MSI
 
-某些基于 MSI 的扩展插件将模板部署到常用的模板位置，如下所示：
+某些基于 MSI 的扩展插件将模板部署到常见的模板位置，例如在以下目录：
 
 - **\<Visual Studio 安装目录 > \Common7\IDE\\< ProjectTemplates/项模板 >**
 
@@ -185,7 +185,7 @@ ms.locfileid: "56689819"
 
 如果你的扩展执行的基于 MSI 的部署，需要手动生成模板清单，并确保它包含在扩展安装程序中。 比较上面列出的.vstman 示例和[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
 
-应创建单独的项目和项模板清单，它们应指向根模板目录指定更高版本。 创建一个清单，每个扩展和区域设置。
+创建单独的项目和项模板清单，它们应指向根模板目录指定更高版本。 创建一个清单，每个扩展和区域设置。
 
 ## <a name="see-also"></a>请参阅
 
