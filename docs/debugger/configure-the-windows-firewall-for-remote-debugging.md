@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6daa7667c26e2394e86833f6d0ce633ea9a4a168
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637329"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428721"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以进行远程调试
 
@@ -52,11 +52,25 @@ Visual Studio 和远程调试器会尝试在安装或启动期间打开正确的
 
 对于远程调试，必须在远程计算机上打开以下端口：
 
+::: moniker range="vs-2017"
+
 |**端口**|**传入/传出**|**协议**|**说明**|
 |-|-|-|-|
 |4022|传入|TCP|用于 VS 2017。 端口号针对每个 Visual Studio 版本递增 2。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|
 |4023|传入|TCP|用于 VS 2017。 端口号针对每个 Visual Studio 版本递增 2。 此端口是仅用于远程调试从 64 位版本的远程调试器的 32 位进程。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|
 |3702|传出|UDP|（可选）进行远程调试器发现的必需项。|
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+|**端口**|**传入/传出**|**协议**|**说明**|
+|-|-|-|-|
+|4024|传入|TCP|用于 VS 2019。 端口号针对每个 Visual Studio 版本递增 2。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|
+|4025|传入|TCP|用于 VS 2019。 端口号针对每个 Visual Studio 版本递增 2。 此端口是仅用于远程调试从 64 位版本的远程调试器的 32 位进程。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|
+|3702|传出|UDP|（可选）进行远程调试器发现的必需项。|
+
+::: moniker-end
 
 如果在“工具” > ”选项” > “调试”下选择“使用托管兼容模式”，请打开这些附加远程调试器端口。 调试器托管兼容模式支持旧版 Visual Studio 2010 版本的调试器。
 

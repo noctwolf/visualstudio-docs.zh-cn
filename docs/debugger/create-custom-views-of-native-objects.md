@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 931200e6f921c26d23fddde4a8420f042240e32f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa0f457c81b39f05a18250a5c7ece7533ccc1788
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637849"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428799"
 ---
 # <a name="create-custom-views-of-native-objects-in-the-debugger"></a>在调试器中创建本机对象的自定义视图
 
@@ -99,11 +99,21 @@ Visual Studio 调试器会自动在 C++ 项目中加载 *.natvis* 文件，默�
 
 1. 所调试的 *.pdb* 文件中内嵌的所有的 *.natvis* 文件，除非加载的项目中存在同名文件。
 
-1. 加载的 C++ 项目或顶级解决方案中的所有 *.natvis* 文件。 这包括所有已加载的 C++ 项目（包括类库），但不包括其他语言的项目。
+2. 加载的 C++ 项目或顶级解决方案中的所有 *.natvis* 文件。 这包括所有已加载的 C++ 项目（包括类库），但不包括其他语言的项目。
 
-1.  特定于用户的 Natvis 目录 (例如， *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*)。
+::: moniker range="vs-2017"
 
-1.  系统级 Natvis 目录 (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 此目录中包含随 Visual Studio 一起安装的 *.natvis* 文件。 如果你具有管理员权限，可以将文件添加到此目录中。
+3.  特定于用户的 Natvis 目录 (例如， *%USERPROFILE%\Documents\Visual Studio 2017\Visualizers*)。
+
+::: moniker-end
+
+::: moniker range=">= vs-2019"
+
+3.  特定于用户的 Natvis 目录 (例如， *%USERPROFILE%\Documents\Visual Studio 2019\Visualizers*)。
+
+::: moniker-end
+
+4.  系统级 Natvis 目录 (*%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers*)。 此目录中包含随 Visual Studio 一起安装的 *.natvis* 文件。 如果你具有管理员权限，可以将文件添加到此目录中。
 
 ## <a name="modify-natvis-files-while-debugging"></a>在调试时修改.natvis 文件
 

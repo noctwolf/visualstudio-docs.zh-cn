@@ -95,25 +95,25 @@ items:
       - name: Visual Studio 工作负荷和组件 ID
         href: install/workload-and-component-ids.md
         items:
-        - name: Visual Studio Enterprise 2017
+        - name: Visual Studio Enterprise
           href: install/workload-component-id-vs-enterprise.md
-        - name: Visual Studio Professional 2017
+        - name: Visual Studio Professional
           href: install/workload-component-id-vs-professional.md
-        - name: Visual Studio Community 2017
+        - name: Visual Studio Community
           href: install/workload-component-id-vs-community.md
-        - name: Visual Studio 团队资源管理器 2017
+        - name: Visual Studio 团队资源管理器
           href: install/workload-component-id-vs-team-explorer.md
-        - name: Visual Studio Desktop Express 2017
+        - name: Visual Studio Desktop Express
           href: install/workload-component-id-vs-express.md
-        - name: Visual Studio 生成工具 2017
+        - name: Visual Studio 生成工具
           href: install/workload-component-id-vs-build-tools.md
-        - name: Visual Studio Test Agent 2017
+        - name: Visual Studio Test Agent
           href: install/workload-component-id-vs-test-agent.md
-        - name: Visual Studio Test Controller 2017
+        - name: Visual Studio Test Controller
           href: install/workload-component-id-vs-test-controller.md
-        - name: Visual Studio Test Professional 2017
+        - name: Visual Studio 专业测试工具版
           href: install/workload-component-id-vs-test-professional.md
-        - name: Visual Studio Feedback Client 2017
+        - name: Visual Studio Feedback Client
           href: install/workload-component-id-vs-feedback-client.md
       - name: Visual Studio 内部版本号和发布日期
         href: install/visual-studio-build-numbers-and-release-dates.md
@@ -305,12 +305,16 @@ items:
             href: ide/reference/generate-field-property-local.md
           - name: 生成构造函数
             href: ide/reference/generate-constructor.md
+          - name: 生成解构函数
+            href: ide/reference/generate-deconstructor.md
           - name: 将参数添加到方法
             href: ide/reference/add-parameter.md
           - name: 生成替代
             href: ide/reference/generate-override.md
           - name: 生成 Equals 和 GetHashCode 方法替代
             href: ide/reference/generate-equals-gethashcode-methods.md
+          - name: 生成的 using
+            href: ide/reference/generate-usings.md
           - name: 实现抽象类
             href: ide/reference/implement-abstract-class.md
           - name: 实现接口
@@ -330,6 +334,10 @@ items:
             href: ide/reference/convert-for-loop-to-foreach.md
           - name: 在 Get 方法和属性之间进行转换
             href: ide/reference/convert-get-method-to-property.md
+          - name: 将本地函数转换为方法
+            href: ide/reference/convert-local-function-method.md
+          - name: 将 foreach 循环转换为 LINQ
+            href: ide/reference/convert-foreach-linq.md
           - name: 将 LINQ 查询转换为 foreach 语句
             href: ide/reference/convert-linq-to-foreach.md
           - name: 封装字段
@@ -340,6 +348,10 @@ items:
             href: ide/reference/extract-method.md
           - name: 内联临时变量
             href: ide/reference/inline-temporary-variable.md
+          - name: 反转条件表达式和逻辑运算
+            href: ide/reference/invert-conditional-logical.md
+          - name: 反转 if 语句
+            href: ide/reference/invert-if-statement.md
           - name: 将声明移至引用附近
             href: ide/reference/move-declaration-near-reference.md
           - name: 将类型移到匹配的文件
@@ -354,6 +366,10 @@ items:
             href: ide/reference/sync-type-and-file.md
           - name: 使用显式类型
             href: ide/reference/convert-var-to-explicit-type.md
+          - name: 使用 lambda 表达式或程序块主体
+            href: ide/reference/use-block-body-lambda.md
+          - name: 未使用的值和参数
+            href: ide/reference/unused-values-parameters.md
           - name: 自动换行、缩进和对齐参数
             href: ide/reference/wrap-align-indent-parameters.md
         - name: 演练：基于使用情况生成代码
@@ -1135,9 +1151,9 @@ items:
   - name: 与我们交流
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 5aa0ef8e9053a4321041ff87742de7772cab95f6
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a54443258922e37da185b8abd7897a2ab6a525cb
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223567"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324255"

@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35cc3e8336dc2f4b618be10626c014692fdfa650
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3afb55c41f48c6d5e5a153c12cd364d130129d79
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694993"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222351"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 可以在 Visual C++ 项目中使用 Edit and Continue。 请参阅[支持的代码更改 (C++)](../debugger/supported-code-changes-cpp.md)，了解有关 Edit and Continue 的限制的信息。
 
-有关 Visual Studio 2015 Update 3 功能改进的详细信息，请参阅 [Visual Studio 2015 Update 3 中的 C++ Edit and Continue](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)。
+有关 Visual Studio 2015 Update 3 功能改进的详细信息，请参阅 [Visual Studio 2015 Update 3 中的 C++ Edit and Continue](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)。
 
  Visual Studio 2013 Update 3 中引入的编译器选项 [/Zo（增强优化调试）](/cpp/build/reference/zo-enhance-optimized-debugging) 向 .pdb （符号） 文件中添加了其他信息，用于未使用 [/Od（禁用（调试））](https://msdn.microsoft.com/library/aafb762y.aspx)选项编译的二进制文件。
 
@@ -37,7 +37,7 @@ ms.locfileid: "56694993"
  如果要对代码进行编辑而又不希望在当前调试会话过程中应用这些编辑，则可以禁用自动调用“编辑并继续”。 也可以重新启用“编辑并继续”的自动操作。
 
 > [!IMPORTANT]
-> 有关所需生成设置和功能兼容性的其他信息，请参阅 [Visual Studio 2015 Update 3 中的 C++“编辑并继续”] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/。
+> 有关所需生成设置和功能兼容性的其他信息，请参阅 [Visual Studio 2015 Update 3 中的 C++“编辑并继续”](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)。
 
 1. 如果您在调试会话，停止调试 (**Shift + F5**)。
 
