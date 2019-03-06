@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2693d661e7bc442f8de2ba707487e7d35068e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91d3004edc39b2fd4f9cc6be72407fd6a46274d1
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954239"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323564"
 ---
 # <a name="manage-application-settings-net"></a>管理应用程序设置 (.NET)
 
@@ -84,7 +84,9 @@ ms.locfileid: "55954239"
 
 强烈建议使用 `My.Settings` 对象和默认 .settings 文件来访问设置。 原因是可以使用“设置设计器”为设置分配属性，此外，还将在应用程序关闭之前自动保存用户设置。 但是，Visual Basic 应用程序可以直接访问设置。 在这种情况下，你必须访问 `MySettings` 类并使用项目根目录中的自定义 .settings 文件。 与处理 C# 应用程序时一样，在结束应用程序之前必须保存用户设置；下一节会对此进行说明。
 
-## <a name="access-or-change-application-settings-at-run-time-in-c"></a>在运行时访问或更改 C# 应用程序的设置 #
+<!-- markdownlint-disable MD003 -->
+## <a name="access-or-change-application-settings-at-run-time-in-c"></a>在运行时访问或更改 C# 应用程序的设置
+<!-- markdownlint-enable MD003 -->
 
 在 Visual Basic 以外的语言（如 C#）中，必须直接访问 `Settings` 类，如下面的 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 示例中所示。
 

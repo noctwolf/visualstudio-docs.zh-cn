@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c03943f4c50785f0c02be2afc0e874c94c1021b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919048"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954163"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>自定义“打开文件夹”开发的生成和调试任务
 
@@ -56,6 +56,7 @@ Visual Studio 清楚如何运行多种语言和代码库，但它并不清楚如
 
 请考虑一个由名为 hello.cs 的单个 C# 文件构成的代码库。 此类代码库的生成文件可能如下所示：
 
+<!-- markdownlint-disable MD010 -->
 ```makefile
 build: directory hello.exe
 
@@ -72,6 +73,7 @@ directory: bin
 bin:
     md bin
 ```
+<!-- markdownlint-enable MD010 -->
 
 对于此类包含生成、清除和重新生成目标的生成文件，可以定义以下 tasks.vs.json 文件。 它包含三个用于生成、重新生成和清除代码库的生成任务，使用 NMAKE 作为生成工具。
 

@@ -1,7 +1,7 @@
 ---
 title: 创建基于网络的安装
 description: 了解如何创建用于在企业中部署 Visual Studio 的网络安装点。
-ms.date: 02/12/2019
+ms.date: 02/27/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e25bdc20393c0d3faff5faa72c89bd531972e5d4
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796395"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954016"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 的网络安装
 
@@ -201,7 +201,7 @@ vs_enterprise.exe --layout c:\VS2017Layout --all
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>如何获取关于脱机安装程序的支持
 
-如果脱机安装遇到问题，请告知我们。 告知我们的最好方式是使用[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具。 使用此工具时，可发送我们诊断和修复问题所需的遥测数据和日志。
+如果脱机安装遇到问题，请告知我们。 告知我们的最好方式是使用[报告问题](../ide/how-to-report-a-problem-with-visual-studio.md)工具。 使用此工具时，可发送我们诊断和修复问题所需的遥测数据和日志。
 
 对于安装相关问题，我们还提供[实时聊天](https://visualstudio.microsoft.com/vs/support/#talktous)（仅限英语）支持选项。
 
@@ -210,6 +210,7 @@ vs_enterprise.exe --layout c:\VS2017Layout --all
 ## <a name="see-also"></a>请参阅
 
 * [更新基于网络的 Visual Studio 2017 安装](update-a-network-installation-of-visual-studio.md)
+* [控制对基于网络的 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 * [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio 工作负荷和组件 ID](workload-and-component-ids.md)

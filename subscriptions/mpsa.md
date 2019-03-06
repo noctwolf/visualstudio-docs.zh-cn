@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Microsoft 产品和服务协议 (MPSA) 中的 Visual Studio 订阅
 searchscope: VS Subscription
-ms.openlocfilehash: 59332dcc1d993df414a9c5981778767adaf155e9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841664"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953802"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Microsoft 产品和服务协议 (MPSA) 中的 Visual Studio 订阅
 
@@ -29,21 +29,22 @@ ms.locfileid: "56841664"
 完成租户关联之前，成为 Visual Studio 订阅管理员需满足以下几个要求/执行以下几个步骤。
 
 ## <a name="pre-tenant-association-managed-tenant"></a>预租户关联（托管租户）
--   必须是业务中心的已注册用户。
--   必须（至少）是所在租户中的用户管理员或全局管理员。 （如果公司已在使用云服务，这条也同样适用）。 需要具有以上任一角色才能成为 Visual Studio 订阅管理员。
--   必须是所在租户中的全局管理员才能将购买帐户关联到租户。
--   必须是业务中心的帐户管理员或帐户管理者。
--   [Azure](https://portal.azure.com/) 用户配置文件中（或任何其他用户）的“国家或地区”字段需根据所在区域（美国、加拿大等）正确填写。
+
+- 必须是业务中心的已注册用户。
+- 必须（至少）是所在租户中的用户管理员或全局管理员。 （如果公司已在使用云服务，这条也同样适用）。 需要具有以上任一角色才能成为 Visual Studio 订阅管理员。
+- 必须是所在租户中的全局管理员才能将购买帐户关联到租户。
+- 必须是业务中心的帐户管理员或帐户管理者。
+- [Azure](https://portal.azure.com/) 用户配置文件中（或任何其他用户）的“国家或地区”字段需根据所在区域（美国、加拿大等）正确填写。 
 
 > [!NOTE]
 > 你中意的 Visual Studio 订阅管理员人选不必是业务中心的用户，他们只需要满足步骤 2 和步骤 5 中的标准即可。
 
 满足上述 5 个步骤中的标准后，可按以下步骤继续将购买帐户关联到租户。
-1.  登录[业务中心](https://businessaccount.microsoft.com/)。
-2.  单击“帐户”选项卡并选择“关联域”。
-3.  选择“购买帐户”（如有多个购买帐户）。
-4.  选择“租户”（即 contoso.onmicrosoft.com）。
-5.  单击“关联域”。
+1. 登录[业务中心](https://businessaccount.microsoft.com/)。
+2. 单击“帐户”选项卡并选择“关联域”。
+3. 选择“购买帐户”（如有多个购买帐户）。
+4. 选择“租户”（即 contoso.onmicrosoft.com）。
+5. 单击“关联域”。
 
 通常情况下，关联后，系统会在几分钟内将满足所需标准的所有用户都设置为 Visual Studio 订阅管理员。 但是有时可能需要长达 24 小时。 被设置为管理员后就能访问 Visual Studio 订阅管理门户。 如果花费的时间超过 24 小时，请联系 MPSA 支持部门。
 

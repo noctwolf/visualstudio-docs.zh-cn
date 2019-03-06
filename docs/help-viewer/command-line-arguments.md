@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff769fa7625ee1798088953a04113ffb8ed74d8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944255"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323460"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令行参数
 
@@ -57,7 +57,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 |/membership|No|-   **Minimum** -- 基于使用 /skuId 开关指定的 SKU 安装最小帮助内容集。 SKU 与内容集之间的映射在服务 API 中进行公开。<br />-   **Recommended** -- 针对使用 /skuId 参数指定的 SKU 安装一组推荐书籍。 安装源是服务 API 或 .MSHA。<br />-   **Full** -- 针对使用 /skuId 参数指定的 SKU 安装整套书籍。 安装源是服务 API 或 .MSHA。|
 |/locationpath|No|指定本地帮助内容的默认文件夹。 必须仅使用此开关安装或移动内容。 如果指定此开关，则还必须指定 /silent 开关。|
 |/silent|No|安装或移除帮助内容，而不提示用户或显示任何 UI（包括状态通知区域中的图标）。 输出会记录到 %Temp% 目录中的文件。 **重要提示：** 若要以无提示方式安装内容，必须使用数字签名的 .cab 文件，而不是 .mshc 文件。|
-|/launchingApp|No|当在没有父应用程序的情况下启动帮助查看器时，定义应用程序和目录上下文。 此开关的参数是 CompanyName、ProductName 和 VersionNumber（例如 `/launchingApp Microsoft,VisualStudio,15.0`）。<br /><br /> 使用 /silent 参数安装内容时需要此开关。|
+|/launchingApp|No|当在没有父应用程序的情况下启动帮助查看器时，定义应用程序和目录上下文。 此开关的参数是 CompanyName、ProductName 和 VersionNumber（例如 `/launchingApp Microsoft,VisualStudio,16.0`）。<br /><br /> 使用 /silent 参数安装内容时需要此开关。|
 |/wait Seconds|No|暂停安装、卸载和刷新操作。 如果操作已在对目录进行，则进程会等待给定秒数，然后继续。 使用 0 表示无限期等待。|
 |/?|No|列出 Help Content Manager 的命令行工具的开关及其说明。|
 

@@ -7,22 +7,23 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: 了解订阅管理员的职责。
 searchscope: VS Subscription
-ms.openlocfilehash: ca1dc2dd7a2232a85a7e6aefece63272bb0039fc
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842346"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954475"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>管理员职责概述
 管理员能够管理组织的订阅。  管理员角色还负责确保按照许可条款管理订阅。 本文概述了管理员角色的职责、权益和限制。
 
 ## <a name="roles--responsibilities"></a>角色和职责
 Visual Studio 管理员有四大职责：
-1.  **了解 Visual Studio 订阅的权益和限制。** 通过正确了解你的权益，既可降低使用云服务带来的硬件成本，又可降低预生产环境每用户许可证产生的软件成本。
-2.  **将 Visual Studio 订阅分配给特定的指定人员并鼓励其使用。** 合同中要求将 Visual Studio 订阅分配给特定的指定人员。 跟进这些已分配人员，确保他们获取并充分利用其 Visual Studio 订阅包含的权益。
-3.  **准确清点预生产环境。** 这一点至关重要，它能确保与 Visual Studio 授权软件交互的所有用户都获得自己的 Visual Studio 订阅的适当授权。
-4.  **跟踪用户分配变更，按计划获取附加许可证。** Microsoft 批量许可 (VL) 协议和 MPSA 允许灵活使用和分配 Visual Studio 订阅。 相应地，你需要跟踪软件使用情况和用户分配的变更，并按协议规定的计划处理附加许可证订单。
+
+1. **了解 Visual Studio 订阅的权益和限制。** 通过正确了解你的权益，既可降低使用云服务带来的硬件成本，又可降低预生产环境每用户许可证产生的软件成本。 
+2. **将 Visual Studio 订阅分配给特定的指定人员并鼓励其使用。** 合同中要求将 Visual Studio 订阅分配给特定的指定人员。 跟进这些已分配人员，确保他们获取并充分利用其 Visual Studio 订阅包含的权益。
+3. **准确清点预生产环境。** 这一点至关重要，它能确保与 Visual Studio 授权软件交互的所有用户都获得自己的 Visual Studio 订阅的适当授权。 
+4. **跟踪用户分配变更，按计划获取附加许可证。** Microsoft 批量许可 (VL) 协议和 MPSA 允许灵活使用和分配 Visual Studio 订阅。 相应地，你需要跟踪软件使用情况和用户分配的变更，并按协议规定的计划处理附加许可证订单。
 
 ## <a name="benefits-and-limitations"></a>权益和限制
 利用 Visual Studio 订阅，开发团队成员可以安装并使用软件来设计、开发、测试、评估和演示其他软件。 Visual Studio 订阅软件不能用于生产环境。
@@ -70,9 +71,10 @@ Visual Studio 订阅管理员需要跟踪 Visual Studio 使用情况，并按批
 - 用户与 Visual Studio 软件交互。
 
 你的完全购买义务由**使用量高水位线**决定。 此水位线是指日常用户分配最大数量或与 Visual Studio 软件交互的用户最大数量（以两者中的较高者为准）。
-1.  Visual Studio 订阅管理员可通过将 Visual Studio 订阅分配给个人，提高使用量高水位线。
-2.  Visual Studio 订阅管理员可以自初始分配之日起的 90 天后，将一个订阅者的订阅重新分配给另一个订阅者。 为避免人为造成高水位线，在执行此操作时应始终先删除现有订阅，然后再添加新订阅。
-3.  Visual Studio 订阅管理员可以更改分配给个人的订阅级别，这会形成一个分配级别的降低，另一个分配级别的提高。 降低分配给某个订阅者的订阅级别后，该订阅者必须立即停止使用并卸载任何只存在于较高级别订阅中的内容。
+
+1. Visual Studio 订阅管理员可通过将 Visual Studio 订阅分配给个人，提高使用量高水位线。
+2. Visual Studio 订阅管理员可以自初始分配之日起的 90 天后，将一个订阅者的订阅重新分配给另一个订阅者。 为避免人为造成高水位线，在执行此操作时应始终先删除现有订阅，然后再添加新订阅。
+3. Visual Studio 订阅管理员可以更改分配给个人的订阅级别，这会形成一个分配级别的降低，另一个分配级别的提高。 降低分配给某个订阅者的订阅级别后，该订阅者必须立即停止使用并卸载任何只存在于较高级别订阅中的内容。 
 
 ### <a name="cloud-subscriptions-open-license-or-open-value"></a>云订阅、开放式许可证或开放式价值
 你可能正在通过类似于 Microsoft 云订阅、开放式许可证或开放式价值的计划分配订阅。 如果是这样，则必须在用户（员工或外部承包商）开始与 Visual Studio 授权软件交互的当月处理附加用户订单。

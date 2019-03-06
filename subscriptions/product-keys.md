@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何获取和管理 Visual Studio 订阅中的产品密钥。
 searchscope: VS Subscription
-ms.openlocfilehash: ed204bad85bcc63603aff6585adfdf30ffec4168
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843714"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953896"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 订阅中的产品密钥
 
@@ -104,10 +104,10 @@ Visual Studio 订阅者可以输入[订阅门户](https://my.visualstudio.com?wt
 每种类型的 5 个密钥都支持 Windows Server 2008 R2，每个密钥支持 20 个连接。 对于 Windows Server 2012 R2，每种类型提供 4 个密钥，每个密钥支持 50 个连接。
 
 #### <a name="to-enable-additional-connections-in-windows-server"></a>在 Windows Server 中启用其他连接：
-1.  打开服务器管理器。
-2.  打开左侧导航窗格中的“服务器”列表。
-3.  右键单击你的许可证服务器，然后选择“安装许可证”。
-4.  完成向导中的步骤。  如果选择的是协议类型，请选择“许可证包(零售购买)”，然后输入从我的门户获得的产品密钥。
+1. 打开服务器管理器。
+2. 打开左侧导航窗格中的“服务器”列表。
+3. 右键单击你的许可证服务器，然后选择“安装许可证”。
+4. 完成向导中的步骤。  如果选择的是协议类型，请选择“许可证包(零售购买)”，然后输入从我的门户获得的产品密钥。
 
 如果满足以下条件，最终用户可以通过 RDS 进行连接以访问应用程序：
 - 用户必须为匿名（处于未经身份验证状态）。

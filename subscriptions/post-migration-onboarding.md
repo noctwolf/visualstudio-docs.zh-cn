@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: 了解如何在迁移到管理门户后为 Visual Studio 订阅成功载入组织。
 searchscope: VS Subscription
-ms.openlocfilehash: 1862361ec6ce38acc3376d972c29d56c5aa7bd51
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 3916fd762e9a2feaaa4892e4233d08a345db44a1
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842151"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954223"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>迁移组织后载入到 Visual Studio 订阅管理门户
 
@@ -24,9 +24,9 @@ ms.locfileid: "56842151"
 
 可能会遇到以下几种情况之一：
 
-1. [主要联系人未完成加入流程。](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup>
-2. [主要联系人已完成加入流程，但未将你添加为管理员。你的凭据已在 VLSC 中列出。](#Primary-Contact-did-not-provide-you-administrator-access)
-3. [主要联系人已完成加入流程，但未将你添加为管理员。你的凭据未在 VLSC 中列出。](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
+1. [主要联系人未完成加入流程。](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup> 
+2. [主要联系人已完成加入流程，但未将你添加为管理员。你的凭据已在 VLSC 中列出。](#Primary-Contact-did-not-provide-you-administrator-access) 
+3. [主要联系人已完成加入流程，但未将你添加为管理员。你的凭据未在 VLSC 中列出。](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
 
 <sup>1</sup>如果你是主要联系人或通知联系人，但并未完成加入流程，必须按照第一种情况中的步骤操作来设置组织。
 

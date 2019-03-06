@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: f2b3abf20e75dcf783f03f696ec679a1ce575c56
-ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
+ms.openlocfilehash: 0c2a4590b15faa2573ccab3ff51ff5cd54e177ca
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55853633"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953831"
 ---
 # <a name="customizing-the-build-system"></a>自定义生成系统
 
@@ -66,14 +66,14 @@ MSBuild 有两种基础数据类型：“项”和“属性”，下列部分将
 
 ```xml
 <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-        <ProjectGuid>{E248730E-1393-43CC-9183-FFA42F63BE81}</ProjectGuid>
-        <OutputType>Exe</OutputType>
-        <RootNamespace>refactoring</RootNamespace>
-        <AssemblyName>refactoring</AssemblyName>
-        <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    </PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{E248730E-1393-43CC-9183-FFA42F63BE81}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>refactoring</RootNamespace>
+    <AssemblyName>refactoring</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+</PropertyGroup>
 ```
 
 可在使用 `$()` 语法的表达式中引用属性。 例如，`$(Foo)` 将被评估为 `Foo` 属性的值。 如果还未设置该属性，则其将被视为空字符串，不会出现任何错误。

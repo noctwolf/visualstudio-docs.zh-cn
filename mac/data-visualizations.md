@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 896fa055c536f9f3ee693773ad4f4ae0edd7e7fe
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349434"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953442"
 ---
 # <a name="data-visualizations"></a>数据可视化效果
 
@@ -88,18 +88,18 @@ IEnumerable 枚举所有值，可单击“显示”值按钮查看每个值。 I
 
 ![其他可视化效果](media/data-visualizations-image23.png)
 
-*   **基元**
-    *   这将显示基元类型的原始值。
-*   **Enum**
-    *   这将显示字段值，不含枚举类型限定符。
-*   **Tuple**
-    *   以 (,) 的格式显示
-*   **Null**
-    *   显示“null”值。
-*   **URL**
-    *   这将显示一个可点击的超链接。
-*   **IntPtr**
-    *   这将显示 IntPtr 的十六进制表示形式。
+* **基元**
+  * 这将显示基元类型的原始值。
+* **Enum**
+  * 这将显示字段值，不含枚举类型限定符。
+* **Tuple**
+  * 以 (,) 的格式显示
+* **Null**
+  * 显示“null”值。
+* **URL**
+  * 这将显示一个可点击的超链接。
+* **IntPtr**
+  * 这将显示 IntPtr 的十六进制表示形式。
 
 ## <a name="see-also"></a>请参阅
 

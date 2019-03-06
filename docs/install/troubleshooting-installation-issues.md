@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edb6d9133fdf3a2a7a4109b9f438f86cc0cdec61
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931567"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953964"
 ---
 # <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 安装和升级问题疑难解答
 
@@ -84,7 +84,7 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 
 ## <a name="how-to-get-visual-studio-installation-logs"></a>如何获取 Visual Studio 安装日志
 
-若要排查大部分的安装问题，需要有安装日志。 使用 Visual Studio 安装程序中的[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)提交问题时，这些日志会自动添加到报告中。
+若要排查大部分的安装问题，需要有安装日志。 使用 Visual Studio 安装程序中的[报告问题](../ide/how-to-report-a-problem-with-visual-studio.md)提交问题时，这些日志会自动添加到报告中。
 
 如果联系 Microsoft 支持部门，可能需要使用 [Microsoft Visual Studio 和 .NET Framework 日志收集工具](https://aka.ms/vscollect)来提供这些安装日志。 日志收集工具从 Visual Studio 2017 安装的所有组件（包括 .NET Framework、Windows SDK 和 SQL Server）中收集安装日志。 它还会收集计算机信息、Windows Installer 清单，以及 Visual Studio 安装程序、Windows Installer 和系统还原的 Windows 事件日志信息。
 

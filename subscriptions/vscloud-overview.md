@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 按月或按年租赁 Visual Studio Professional 或 Visual Studio Enterprise，无需任何长期协定。
 searchscope: VS Subscription
-ms.openlocfilehash: 5aee20e2c96dd79455968e8aeb87b8f17ec0cf65
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842216"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953416"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>购买 Visual Studio Professional 和 Visual Studio Enterprise 云订阅
 
@@ -26,28 +26,28 @@ ms.locfileid: "56842216"
 
 ## <a name="before-you-start"></a>准备工作
 
-*   若要为购买的订阅计费，需要有 [Azure 订阅](https://azure.microsoft.com/pricing/purchase-options/)。 可在首次购买之前或在 Visual Studio Marketplace 中首次购买时[注册](https://portal.azure.com)。
+* 若要为购买的订阅计费，需要有 [Azure 订阅](https://azure.microsoft.com/pricing/purchase-options/)。 可在首次购买之前或在 Visual Studio Marketplace 中首次购买时[注册](https://portal.azure.com)。
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>谁可以购买 Visual Studio 云订阅？
 拥有 Azure 订阅[所有者和参与者访问权限](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0)的任何人都可以购买云订阅。
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>如何购买云订阅
 
-1.  登录到[“Visual Studio Marketplace”&gt;“订阅”](https://marketplace.visualstudio.com/subscriptions)。
+1. 登录到[“Visual Studio Marketplace”&gt;“订阅”](https://marketplace.visualstudio.com/subscriptions)。
 
-2.  选择要购买的订阅，如“Visual Studio Professional - 每月订阅”。
+2. 选择要购买的订阅，如“Visual Studio Professional - 每月订阅”。
 
-3.  选择用于计费的 Azure 订阅。 如果没有 Azure 订阅，可新建一个。
+3. 选择用于计费的 Azure 订阅。 如果没有 Azure 订阅，可新建一个。
     > [!div class="mx-imgBorder"]
     > ![选择 Azure 订阅以进行结算](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
 
-4.  选择要购买的订阅数。
+4. 选择要购买的订阅数。
     > [!div class="mx-imgBorder"]
     > ![选择订阅数量](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
     如果不希望将订阅分配给自己，则清除“将此订阅分配给我”。
 
-5.  确认并完成购买。 如果为自己分配了订阅，则可访问 [Visual Studio 订阅者门户](https://my.visualstudio.com)，开始下载软件并使用其他订阅者权益。
+5. 确认并完成购买。 如果为自己分配了订阅，则可访问 [Visual Studio 订阅者门户](https://my.visualstudio.com)，开始下载软件并使用其他订阅者权益。
 
 > [!div class="mx-imgBorder"]
 > ![成功完成购买](_img/buy-vs-subscriptions/buy-vs-sub-success.png)

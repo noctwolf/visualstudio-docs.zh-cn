@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65bfd75dfaeb31ae9864824ff0ab14c874e86d36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609431"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953514"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 产品反馈
 
@@ -24,7 +24,7 @@ ms.locfileid: "56609431"
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>我想报告 Visual Studio 的问题
 
-如果无法使用 Visual Studio（如发生故障、性能缓慢或意外行为），请使用“报告问题”工具告诉我们。 在 Visual Studio 中，选择“快速启动”旁边的反馈图标，或依次选择菜单栏中的“帮助” > “发送反馈” > “报告问题”。 接下来，Visual Studio 在浏览器中打开[开发人员社区](https://developercommunity.visualstudio.com)页。在此页中，可以在登录后报告问题。 有关详细信息，请参阅[如何报告 Visual Studio 2017 的问题](how-to-report-a-problem-with-visual-studio-2017.md)。
+如果无法使用 Visual Studio（如发生故障、性能缓慢或意外行为），请使用“报告问题”工具告诉我们。 在 Visual Studio 中，选择“快速启动”旁边的反馈图标，或依次选择菜单栏中的“帮助” > “发送反馈” > “报告问题”。 接下来，Visual Studio 在浏览器中打开[开发人员社区](https://developercommunity.visualstudio.com)页。在此页中，可以在登录后报告问题。 有关详细信息，请参阅[如何报告 Visual Studio 的问题](how-to-report-a-problem-with-visual-studio.md)。
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>我想提有关 Visual Studio 功能的建议
 
@@ -59,6 +59,6 @@ Microsoft 支持服务取决于当时的价格、条款和条件。 价格、条
 
 ## <a name="see-also"></a>请参阅
 
-* [如何报告 Visual Studio 的问题](how-to-report-a-problem-with-visual-studio-2017.md)
+* [如何报告 Visual Studio 的问题](how-to-report-a-problem-with-visual-studio.md)
 * [开发人员社区](https://developercommunity.visualstudio.com)
 * [开发人员社区数据隐私](developer-community-privacy.md)
