@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53f50c3a107f9796e4fbb661f303bfcabf284cc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 11a310884f9f63264157c96bafc15e8161c0239d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710092"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323836"
 ---
-# <a name="debugging-f"></a>调试 F#
+# <a name="debugging-f"></a>调试 F\#
 调试 F# 与调试任何托管语言类似，但有以下几种例外情况：
 
 -   “自动”窗口不显示 F# 变量。

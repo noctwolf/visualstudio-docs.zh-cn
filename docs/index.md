@@ -580,7 +580,7 @@ Unity 游戏</a>
                                             <div class="cardText">
                                                 <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
-                                                    <p>可扩展的编程语言，通常用于静态计算和图形。</p>
+                                                    <p>（仅限 Visual Studio 2017）可扩展的编程语言，通常用于静态计算和图形。</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -699,7 +699,7 @@ Unity 游戏</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
+                                <a href="python/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -710,7 +710,7 @@ Unity 游戏</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>数据科学和分析应用程序</h3>
-                                            <p>用于创建数据科学应用程序的语言和工具，包括 Python、R 和 F#。</p>
+                                            <p>用于创建数据科学应用程序的语言和工具，包括 Python 和 F#（以及 Visual Studio 2017 中的 R）。</p>
                                         </div>
                                       </div>
                                     </div>

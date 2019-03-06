@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a063a42cd3597f69d0500012d74c7be700e02138
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c70782190bbfd76f5536a68eb597dbf3d122e773
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634989"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323823"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练： 下载 ClickOnce 部署 API 使用设计器中使用按需的附属程序集
 通过使用附属程序集，可以为多个区域性配置 Windows 窗体应用程序。 *附属程序集* 是一种包含除应用程序默认区域性以外区域性的应用程序资源的程序集。
@@ -53,7 +53,7 @@ ms.locfileid: "56634989"
 
 6.  关闭“应用程序文件”对话框。
 
-### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>在 C# 中按需下载附属程序集
+### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>在 C\# 中按需下载附属程序集
 
 1.  打开 *Program.cs* 文件。 如果未在解决方案资源管理器中看到此文件，则选择项目，然后在“项目”菜单上单击“显示所有文件”。
 
