@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 89c66d0ce71a77dcfcaa6364cba6d31cf5707c4a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f5f9b7e700ff21bac570cf8545207bb75fda820e
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613370"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428734"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 调试实时 ASP.NET Azure 应用
 
@@ -50,7 +50,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
     > [!IMPORTANT]
     > 对于快照调试，需要打开与已发布到 Azure 应用服务的“相同版本的源代码”。
-::: moniker range="< vs-2019"
+::: moniker range="vs-2019"
 
 2. 在云资源管理器（“视图”>“云资源管理器”）中，右键单击项目部署到的 Azure 应用服务，然后选择“附加快照调试器”。
 

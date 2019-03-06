@@ -26,18 +26,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: cd3017768bd44891a6db91020e93ffafcedf6bdc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 49ee21943f63cee3fff35d2bb92817294169c61f
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694603"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223580"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何： 启用和禁用编辑并继续 (C#，VB、 c + +)
 
 您可以禁用或启用**编辑并继续**在 Visual Studio**选项**在设计时对话框。 “编辑并继续”仅在调试版本中起作用。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。
 
-本机 c + +**编辑并继续**需要使用`/INCREMENTAL`选项。 有关 c + + 中的功能要求的详细信息，请参阅此[博客文章](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)并[编辑并继续 （Visual c + +）](../debugger/edit-and-continue-visual-cpp.md)。
+本机 c + +**编辑并继续**需要使用`/INCREMENTAL`选项。 有关 c + + 中的功能要求的详细信息，请参阅此[博客文章](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)并[编辑并继续 （Visual c + +）](../debugger/edit-and-continue-visual-cpp.md)。
 
 **若要启用或禁用编辑并继续：**
 

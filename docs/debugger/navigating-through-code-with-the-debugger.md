@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8c9a2f68427cfa7c5db69dca202a619c86444c2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706702"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428747"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器浏览代码
 
@@ -133,7 +133,7 @@ Visual Studio 中的断点提供了一组丰富的附加功能，例如条件断
 ![运行到单击处](../debugger/media/dbg-run-to-click.png "Run to Click")
 
 > [!NOTE]
-> **运行时单击**中的新[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
+> **运行时单击**是从开始，提供[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
 
 ### <a name="manually-break-into-code"></a>手动中断代码
 

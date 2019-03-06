@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb86929a050a61a50a7aa1dd41220f4e087ad767
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607039"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428539"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 示例
 
@@ -64,7 +64,7 @@ Dia2dump 示例随 Visual Studio 安装，并包含文件的解决方案和源�
 
 ## <a name="run-the-dia2dump-sample"></a>运行 Dia2Dump 示例
 
-Dia2Dump.exe 依赖 msdia*版本*.dll COM 服务器提供其服务。 在 Visual Studio 2015 和 Visual Studio 2017 中，版本为 msdia140.dll。 如果 msdia*版本*.dll COM 服务器未初始化，可以开始工作 dia2dump.exe 前必须将其注册。 DIA SDK 目录中包含的 bin 子目录包含 x86 版本的 DLL。 版本针对 x64 体系结构机处于 bin\amd64，并且 ARM 版本为 bin\arm 中。 若要注册该 dll，打开提升的开发人员命令提示符窗口，并将更改为包含您的计算机体系结构的版本的目录。 输入命令`regsvr32 msdia140.dll`注册 COM 服务器。
+Dia2Dump.exe 依赖 msdia*版本*.dll COM 服务器提供其服务。 从 Visual Studio 2015 开始，版本为 msdia140.dll。 如果 msdia*版本*.dll COM 服务器未初始化，可以开始工作 dia2dump.exe 前必须将其注册。 DIA SDK 目录中包含的 bin 子目录包含 x86 版本的 DLL。 版本针对 x64 体系结构机处于 bin\amd64，并且 ARM 版本为 bin\arm 中。 若要注册该 dll，打开提升的开发人员命令提示符窗口，并将更改为包含您的计算机体系结构的版本的目录。 输入命令`regsvr32 msdia140.dll`注册 COM 服务器。
 
 ### <a name="to-run-the-sample"></a>运行示例
 
