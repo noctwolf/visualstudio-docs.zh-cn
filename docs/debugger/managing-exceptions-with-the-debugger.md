@@ -33,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5086a59936a3fe71f9888083772ee09ab3a42d48
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700908"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428695"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>管理 Visual Studio 中调试器的异常
 
@@ -204,7 +204,7 @@ public class GenericException<T> : Exception
 使用**异常设置**窗口设置异常条件。 当前支持的条件包括模块名称要包括或排除异常。 通过设置模块名称作为条件，您可以选择仅在某些代码模块上异常中断。 此外可以选择以避免中断特定模块的问题。
 
 > [!NOTE]
-> 将条件添加到异常是中的新增功能[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
+> 将条件添加到异常从开始支持[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
 
 若要添加条件的异常：
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaeaa4e27b360e10c368255367892628ed45bd5f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2dc6aae5530d436e693c667682219e474d7a782d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722481"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223671"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>调试用户代码仅使用仅我的代码
 
@@ -97,7 +97,7 @@ ms.locfileid: "56722481"
 - 中指定的函数 *\*.natjmc*中的文件 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*文件夹。
 
 > [!NOTE]
-> 有关代码单步执行支持仅我的代码中，c + + 代码必须使用编译的 MSVC 编译器在 Visual Studio 15.8 预览版 3 或更高版本，并且必须启用 /JMC 编译器开关 （默认情况下已启用）。 有关其他详细信息，请参阅[自定义 c + + 调用堆栈和代码单步执行行为](#BKMK_CPP_Customize_call_stack_behavior))，这[博客文章](https://blogs.msdn.microsoft.com/vcblog/2018/06/29/announcing-jmc-stepping-in-visual-studio/)。 对于使用较旧的编译器编译的代码 *.natstepfilter*文件是唯一的方法自定义代码单步执行，这是独立于仅我的代码。 请参阅[自定义 c + + 单步执行行为](#BKMK_CPP_Customize_stepping_behavior)。
+> 有关代码单步执行支持仅我的代码中，c + + 代码必须使用编译的 MSVC 编译器在 Visual Studio 15.8 预览版 3 或更高版本，并且必须启用 /JMC 编译器开关 （默认情况下已启用）。 有关其他详细信息，请参阅[自定义 c + + 调用堆栈和代码单步执行行为](#BKMK_CPP_Customize_call_stack_behavior))，这[博客文章](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)。 对于使用较旧的编译器编译的代码 *.natstepfilter*文件是唯一的方法自定义代码单步执行，这是独立于仅我的代码。 请参阅[自定义 c + + 单步执行行为](#BKMK_CPP_Customize_stepping_behavior)。
 
 <a name="BKMK_CPP_Stepping_behavior"></a> 在 c + + 调试：
 

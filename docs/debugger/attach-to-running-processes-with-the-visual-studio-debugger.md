@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d114ec9b108dad33e36ba9c9bfd7726501b13c0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637498"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428760"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到正在运行的进程
 可将 Visual Studio 调试器附加到本地或远程计算机上正在运行的进程。 进程运行后，在 Visual Studio 中选择“调试” > “附加到进程”，或按 Ctrl+Alt+P，然后使用“附加到进程”对话框将调试器附加到进程。
@@ -95,9 +95,20 @@ ms.locfileid: "56637498"
 
    - 选择下拉箭头旁边的“连接目标”，并从下拉列表中选择计算机名称。
    - 在“连接目标”框中键入计算机名称。
+   
+     ::: moniker range="vs-2017"
 
      > [!NOTE]
      > 如果您不能使用远程计算机名称进行连接，请尝试使用 IP 和端口地址 (例如， `123.45.678.9:4022`)。 Visual Studio 2017 x64 远程调试器的默认端口 4022。 有关其他远程调试器端口分配，请参阅[远程调试器端口分配](remote-debugger-port-assignments.md)。
+
+     ::: moniker-end
+     
+     ::: moniker range=">= vs-2019"
+
+     > [!NOTE]
+     > 如果您不能使用远程计算机名称进行连接，请尝试使用 IP 和端口地址 (例如， `123.45.678.9:4022`)。 4024 是 Visual Studio 2019 x64 远程调试器的默认端口。 有关其他远程调试器端口分配，请参阅[远程调试器端口分配](remote-debugger-port-assignments.md)。
+
+     ::: moniker-end
 
    - 选择**查找**按钮旁边**连接目标**框，以打开**远程连接**对话框。 **远程连接**对话框会列出本地子网上，或直接连接到您的计算机的所有设备。 你可能需要[打开 UDP 端口 3702](../debugger/remote-debugger-port-assignments.md)服务器以发现远程设备上。 选择的计算机或所需的设备，然后单击**选择**。
 
@@ -142,7 +153,7 @@ ms.locfileid: "56637498"
 您可以快速重新附加到先前已通过选择附加到的进程 “调试”  >  “重新附加到进程”(**Shift**+**Alt**+**P**)。 当选择此命令时，调试器会立即尝试附加到最后连接的进程，方法是首次尝试匹配先前的进程 ID ，如果失败，将匹配先前的进程名称。 如果不找到任何匹配项，或多个进程具有相同的名称，“附加到进程” 对话框将打开，这样您就可以选择正确的进程。
 
 > [!NOTE]
-> **重新附加到进程**命令是 Visual Studio 2017 中的新增功能。
+> **重新附加到进程**命令是从 Visual Studio 2017 开始，提供。
 
 ## <a name="BKMK_Scenarios"></a> 常见的调试方案
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8403390d2cd9126ce17f97dbc87b901ca544fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703703"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428643"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>快照调试程序入门
 
@@ -69,6 +69,6 @@ Visual Studio 快照调试器现在连接到你的服务，可以开始收集快
 
 ## <a name="dont-show-me-this-again"></a>不再显示此信息
 
-若要永远不会显示快照调试程序起始页再次连接 Snapshot Debugger 时，更改**显示会话启动此入门页**选项**工具** >  **选项** > **快照调试器**。
+若要连接 Snapshot Debugger 永远不会显示快照调试程序起始页，更改**显示会话启动此入门页**选项**工具** >  **选项** > **快照调试器**。
 
 ![快照调试器工具选项页](../media/snapshot-startpage-tools-options.png)

@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: aaae5621f3e371deb34506a9f0bd5cc64602c3f3
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f9ad50aea8da784d05f3852860186bb029e67a54
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841800"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954103"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>在 Visual Studio 中使用 Xamarin 生成具有本机 UI 的应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ ms.locfileid: "56841800"
 
 7.  在“属性”窗口中，设置这些属性（注意：它有助于使用“属性”窗口工具栏中的排序按钮对列表进行按字母顺序排序）：
 
-    |Property|值|
+    |Property|“值”|
     |--------------|-----------|
     |**text**|**根据“邮政编码”进行搜索**|
     |**id**|`@+id/ZipCodeSearchLabel`|
@@ -325,7 +325,7 @@ ms.locfileid: "56841800"
 
 11. 在“工具箱”中，将“按钮”拖动到“RelativeLayout”控件上，然后将其放置在 zipCodeEntry 控件的右侧。 然后设置这些属性：
 
-    |属性|值|
+    |Property|“值”|
     |--------------|-----------|
     |**id**|`@+id/weatherBtn`|
     |**文本**|**获取天气信息**|
