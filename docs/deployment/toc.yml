@@ -40,7 +40,7 @@ items:
     - name: 使用 Git 将 ASP.NET Core 持续部署到 Azure
       href: /aspnet/core/publishing/azure-continuous-deployment
     - name: 使用 Visual Studio Kubernetes 工具发布到 Kubernetes
-      href: tutorial-kubernetes-tools.md
+      href: ../containers/tutorial-kubernetes-tools.md?toc=/visualstudio/deployment/toc.json
   - name: C++
     items:
     - name: 部署 C/C++ 应用
@@ -245,7 +245,7 @@ items:
         href: strings-element-bootstrapper.md
       - name: <Schedules> 元素（引导程序）
         href: schedules-element-bootstrapper.md
-- name: 引用
+- name: 参考
   items:
   - name: ClickOnce 参考
     href: clickonce-reference.md
@@ -290,9 +290,9 @@ items:
         href: customerrorreporting-element-clickonce-deployment.md
     - name: ClickOnce 非托管 API 参考
       href: clickonce-unmanaged-api-reference.md
-ms.openlocfilehash: a48576850789721b47c57183babcd3dd45d3e7e3
-ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
+ms.openlocfilehash: ea0d78149670c3b3d180104c25f5cffa3f3cb1fa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55571117"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526446"
