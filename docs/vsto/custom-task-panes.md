@@ -25,15 +25,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 205b4739d152186415a811b934a210d5f9a38ac4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615398"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526695"
 ---
 # <a name="custom-task-panes"></a>自定义任务窗格
-  任务窗格是一种用户界面面板，通常停靠在 Microsoft Office 应用程序中窗口的一侧。 自定义任务窗格为你提供了一钟方法，使你可以创建自己的任务窗格并为用户提供熟悉的界面来访问你的解决方案的功能。 例如，界面中可以包含运行代码以修改文档或显示来自数据源的数据的控件。
+  任务窗格是一个用户界面面板，通常停靠在 Microsoft Office 应用程序中某一窗口的一侧。 自定义任务窗格为你提供了一钟方法，使你可以创建自己的任务窗格并为用户提供熟悉的界面来访问你的解决方案的功能。 例如，界面中可以包含运行代码以修改文档或显示来自数据源的数据的控件。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "56615398"
  使用自定义任务窗格，可以将各种功能集成到一个熟悉的用户界面中。 可以使用 Visual Studio 工具快速创建自定义任务窗格。
 
 ### <a name="familiar-user-interface"></a>熟悉的用户界面
- Microsoft Office system 中的应用程序的用户已熟悉使用任务窗格，如**样式和格式**Word 中的任务窗格。 自定义任务窗格的行为方式类似于 Microsoft Office system 中的其他任务窗格。 用户可以将自定义任务窗格停靠在应用程序窗口的不同侧，或者可以将自定义任务窗格拖动到窗口中的任何位置。 可以创建一个 VSTO 外接程序，使之同时显示多个自定义任务窗格，而且用户可以分别控制每个任务窗格。
+ Microsoft Office system 中的应用程序的用户已熟悉使用任务窗格，如**样式和格式**Word 中的任务窗格。 自定义任务窗格的行为方式类似于 Microsoft Office system 中的其他任务窗格。 用户可以将自定义任务窗格停靠到应用程序窗口中的各侧，也可将自定义任务窗格拖动到窗口中的任意位置。 可以创建一个 VSTO 外接程序，使之同时显示多个自定义任务窗格，而且用户可以分别控制每个任务窗格。
 
 ### <a name="windows-forms-support"></a>Windows 窗体支持
  使用 Visual Studio 中的 Office 开发工具创建的自定义任务窗格的用户界面基于 Windows 窗体控件。 可以使用熟悉的 Windows 窗体设计器来设计自定义任务窗格的用户界面。 还可以使用 Windows 窗体中的数据绑定支持将数据源绑定到任务窗格中的控件。
@@ -136,8 +136,6 @@ ms.locfileid: "56615398"
 - [Outlook](#Outlook)
 
 - [Word、 InfoPath 和 PowerPoint](#WordAndInfoPath)
-
-  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：管理在 Word VSTO 外接程序中的任务窗格？](http://go.microsoft.com/fwlink/?LinkId=136781).
 
 ##  <a name="Outlook"></a> Outlook
  为 Outlook 创建自定义任务窗格时，自定义任务窗格与特定资源管理器或检查器窗口关联。 资源管理器是用于显示文件夹的内容和检查器是用于显示项，如电子邮件或任务。

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cad1b3087b1a7cd8b530ca659ad6c87868a3ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933569"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525786"
 ---
 # <a name="content-model-view"></a>内容模型视图
 
@@ -52,7 +52,7 @@ ms.locfileid: "55933569"
 |**生成示例 XML**|仅可用于全局元素。 生成全局元素的示例 XML 文件。|
 |**显示文档**|显示或隐藏批注/文档节点内容。|
 |**将关系图导出为图像**|将设计图面保存到 XPS 文件。|
-|**查看代码**|在 XML 编辑器中打开包含所选节点的文件。 在中选择的项**XML 架构资源管理器**则同时选择了在 XML 编辑器中。|
+|**查看代码**|将打开包含所选的节点在 XML 编辑器中的文件。 在中选择的项**XML 架构资源管理器**还选择在 XML 编辑器中。|
 |**“属性”窗口**|此时将打开**属性**窗口 （如果尚未打开）。 此窗口显示有关节点的信息。|
 
 下表描述了可用于的选项**工作区**面板。
@@ -66,7 +66,7 @@ ms.locfileid: "55933569"
 |**移除所选内容从工作区**|从工作区和设计图面中删除未选择的节点。|
 |**生成示例 XML**|仅可用于全局元素。 生成全局元素的示例 XML 文件。|
 |**选择所有**|选择中的所有节点**工作区**面板。|
-|**查看代码**|在 XML 编辑器中打开包含所选节点的文件。 在中选择的项**XML 架构资源管理器**则同时选择了在 XML 编辑器中。|
+|**查看代码**|将打开包含所选的节点在 XML 编辑器中的文件。 在中选择的项**XML 架构资源管理器**还选择在 XML 编辑器中。|
 |**“属性”窗口**|此时将打开**属性**窗口 （如果尚未打开）。 此窗口显示有关节点的信息。|
 
 ## <a name="properties-window"></a>“属性”窗口
@@ -121,7 +121,7 @@ ms.locfileid: "55933569"
 
 您可以之间来回切换**XSD 设计器**和 XML 编辑器，通过使用右键单击 （上下文） 菜单。
 
-如果对架构集在 XML 编辑器中的更改会同步在内容模型视图中进行更改。 有关详细信息，请参阅[与 XML 编辑器集成](../xml-tools/integration-with-xml-editor.md)。
+如果对架构的更改会同步在内容模型视图中的 XML 编辑器中设置进行更改。 有关详细信息，请参阅[与 XML 编辑器集成](../xml-tools/integration-with-xml-editor.md)。
 
 ## <a name="see-also"></a>请参阅
 

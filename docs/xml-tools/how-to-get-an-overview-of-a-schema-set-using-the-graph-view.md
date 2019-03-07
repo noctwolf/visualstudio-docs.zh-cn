@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603761f2886ffc64170774a2d6c460d39596454b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e6530f5f2856953041039171b2604236706bfd3
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922025"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525132"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>如何：获取架构集，使用图形视图的概述
 
@@ -27,7 +27,7 @@ ms.locfileid: "55922025"
 
 3.  中的 XML 架构示例代码复制[示例 XML 架构： 关系](../xml-tools/sample-xsd-file-relationships.md)并粘贴以替换默认情况下，已将它们添加到新 XSD 文件的代码。
 
-4.  在 XML 编辑器中的任意位置单击鼠标右键，然后选择**视图设计器**。
+4.  在 XML 编辑器中的任意位置右键单击并选择**视图设计器**。
 
 5.  选择从图表视图**XSD 工具栏**。
 

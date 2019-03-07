@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d892ba202a73560568bdb6c43427a8ee0f7c1aee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913621"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526212"
 ---
 # <a name="how-to-use-xml-snippets"></a>如何：使用 XML 代码段
 
-可以在“XML 编辑器”的快捷菜单上使用下列两个命令调用 XML 代码段。 **插入代码段**命令将在光标位置处插入 XML 代码段。 **Surround With**命令包装所选文本环绕 XML 代码段。 每个 XML 代码段具有指定的代码段类型。 代码段类型确定是否使用可用代码片段**插入代码段**命令， **Surround With**命令还是两个。
+可以通过使用 XML 编辑器快捷菜单上的以下两个命令调用 XML 代码段。 **插入代码段**命令将在光标位置处插入 XML 代码段。 **Surround With**命令包装所选文本环绕 XML 代码段。 每个 XML 代码段具有指定的代码段类型。 代码段类型确定是否使用可用代码片段**插入代码段**命令， **Surround With**命令还是两个。
 
 将 XML 代码段添加到编辑器之后，代码段中的任何可编辑字段将以黄色突出显示，光标位于第一个可编辑字段。
 
@@ -80,7 +80,7 @@ ms.locfileid: "55913621"
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>若要从上下文菜单中使用外侧代码
 
-1. 在“XML 编辑器”中选择要环绕的文本。
+1. 选择要在 XML 编辑器中环绕的文本。
 
 2. 右键单击并选择**Surround With**。
 
@@ -90,7 +90,7 @@ ms.locfileid: "55913621"
 
 ### <a name="to-use-surround-with-from-the-intellisense-menu"></a>若要从 IntelliSense 菜单上使用外侧代码
 
-1. 在“XML 编辑器”中选择要环绕的文本。
+1. 选择要在 XML 编辑器中环绕的文本。
 
 2. 从**编辑**菜单，依次指向**IntelliSense**，然后选择**Surround With**。
 
