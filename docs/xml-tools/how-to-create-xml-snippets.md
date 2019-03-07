@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a17f5699ffc5bfe33e86370a9c5ef114331e90
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907329"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526615"
 ---
 # <a name="how-to-create-xml-snippets"></a>如何：创建 XML 代码段
 
-“XML 编辑器”可以用于新建 XML 代码段。 编辑器包括名为“Snippet”的 XML 代码段，是用于新建 XML 代码段的代码段样本。
+XML 编辑器可以用于新建 XML 代码段。 编辑器包括名为“Snippet”的 XML 代码段，是用于新建 XML 代码段的代码段样本。
 
 ## <a name="to-create-a-new-xml-snippet"></a>新建 XML 代码段
 
@@ -80,7 +80,7 @@ ms.locfileid: "55907329"
 
 - $name$ 是用户定义变量。 该变量创建 `name` 元素，该元素的值可编辑，且默认值为“name”。 用户定义变量使用 `Literal` 元素定义。
 
-- $selected$ 是预定义变量。 该变量表示在调用代码段之前在“XML 编辑器”中选择的文本。 设置此变量可以确定所选文本在包围它的代码段中出现的位置。
+- $selected$ 是预定义变量。 它表示在调用代码段之前在 XML 编辑器中选定的文本。 设置此变量可以确定所选文本在包围它的代码段中出现的位置。
 
 - $end$ 是预定义变量。 当用户按**Enter**完成编辑代码段字段，此变量确定插入符号 (^) 移动到的位置。
 

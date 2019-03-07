@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ac977be83440bfd3e0b1436635bbeb9c39c0ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24dd2c13a0d2d4d2a98d11e5154b96261d19d492
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915981"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525705"
 ---
 # <a name="xml-schema-explorer"></a>XML 架构资源管理器
 
@@ -31,7 +31,7 @@ ms.locfileid: "55915981"
 
 -   按文档顺序、类型或名称对树进行排序。 有关详细信息，请参阅[排序、 筛选和分组](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)。
 
--   打开 XML 编辑器，然后跳到 XSD 文件中的代码位置。 有关详细信息，请参阅[使用 XML 编辑器集成](../xml-tools/integration-with-xml-editor.md)。
+-   XML 编辑器打开并跳转到 XSD 文件中的代码位置。 有关详细信息，请参阅[与 XML 编辑器集成](../xml-tools/integration-with-xml-editor.md)。
 
 -   为全局元素生成示例 XML。
 

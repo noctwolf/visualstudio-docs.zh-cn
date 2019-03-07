@@ -1,6 +1,6 @@
 ---
-title: 如何：计算 XPath 表达式
-ms.date: 11/04/2016
+title: 计算 XPath 表达式在调试时
+ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 author: gewarren
@@ -8,47 +8,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b43a82d476e4426b1428f072cc980dbc8631cff2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1585b54d084e3471583f9388d63f5c17e65fc3a7
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970395"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526317"
 ---
-# <a name="how-to-evaluate-an-xpath-expression"></a>如何：计算 XPath 表达式
+# <a name="evaluate-xpath-expressions"></a>计算 XPath 表达式
 
-您可以使用计算 XPath 表达式**快速监视**对话框。 XPath 表达式必须符合 W3C XPath 1.0 建议。 当前 XSLT 上下文 — 即，`self::node()`中的节点**局部变量**窗口 — 为 XPath 表达式提供计算上下文。
+可以通过使用计算 XPath 表达式**快速监视**窗口在调试过程中的。 XPath 表达式必须符合 W3C XPath 1.0 建议。 当前 XSLT 上下文 (即`self::node()`中的节点**局部变量**窗口) 为 XPath 表达式提供计算上下文。
 
- 下表说明在计算 XPath 表达式时支持的函数：
+当计算 XPath 表达式：
 
--   支持内置 XPath 函数。
+- 支持内置 XPath 函数。
 
--   不支持内置 XSLT 函数。
-
--   不支持用户定义函数。
+- 不支持内置 XSLT 函数和用户定义的函数。
 
 > [!NOTE]
-> 以下过程使用*belowAvg.xsl*并*books.xml*文件从[演练：调试 XSLT 样式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)主题。
+> XSLT 调试是仅在 Visual Studio Enterprise edition 中可用。
 
-## <a name="to-evaluate-an-xpath-expression"></a>计算 XPath 表达式
+## <a name="evaluate-an-xpath-expression"></a>计算 XPath 表达式
 
-1.  在 `xsl:if` 开始标记处插入断点。
+以下过程使用*average.xsl 下面*并*books.xml*文件从[演练：调试 XSLT 样式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files)页。
 
-2.  单击**调试 XSL** XML 编辑器工具栏上的按钮。
+1. 在 `xsl:if` 开始标记处插入断点。
 
-     调试程序在 `xsl:if` 标记处开始和中断。
+2. 若要开始调试，请选择**XML** > **启动 XSLT 调试**在菜单栏上 (或按**Alt**+**F5**).
 
-3.  右键单击并选择**快速监视**。
+   调试程序在 `xsl:if` 标记处开始和中断。
 
-     **快速监视**显示对话框。
+3. 右键单击并选择**快速监视**。
 
-4.  输入`./price/text()`中**表达式**字段**快速监视**对话框中，单击**重新评估**。
+   **快速监视**窗口随即打开。
 
-     当前 book 节点的价格将出现在**值**框。
+4. 输入`./price/text()`中**表达式**字段**快速监视**对话框框中，，然后选择**重新评估**。
 
-5.  将 XPath 表达式更改为`./price/text() < $bookAverage`然后单击**重新评估**。
+   当前 book 节点的价格将出现在**值**框。
 
-     **值**框中显示的 XPath 表达式计算结果为`true`。
+   ![计算 XPath 表达式中的快速监视窗口](media/quickwatch-price.png)
+
+5. 将 XPath 表达式更改为`./price/text() < $bookAverage`然后单击**重新评估**。
+
+   **值**框中显示的 XPath 表达式计算结果为`true`。
 
 ## <a name="see-also"></a>请参阅
 

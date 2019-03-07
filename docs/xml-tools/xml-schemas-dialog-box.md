@@ -1,19 +1,21 @@
 ---
-title: XML 架构对话框
+title: XML 架构
 ms.date: 11/04/2016
 ms.topic: reference
+f1_keywords:
+- vs.xmleditor.schemasdialog
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed45f6444eb76d89488e8d9b27d1725c217d6fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5323582bfe945bc031b9fd02fcf96bb615bcceb
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930866"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57524918"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML 架构对话框
 
@@ -22,15 +24,16 @@ ms.locfileid: "55930866"
 您可以访问**XML 架构**通过单击对话框中**架构**按钮，在文档属性窗口中，或选择**架构**从**XML**菜单。
 
 ## <a name="uielement-list"></a>UIElement 列表
- **使用**
 
- 选择如何使用“XML 架构”。
+**使用**
 
--   **自动**。 当前文档未使用此架构，但是此架构可用于自动关联。 如果 XML 文档声明一个与此架构的 `targetNamespace` 匹配的命名空间，则将自动关联此架构并将其包含在架构集中。
+选择如何使用“XML 架构”。
 
--   **使用此架构**。 当前文档正在使用此架构。 用户已显式请求通过单击此列来使用此架构，或者根据匹配的 `targetNamespace` 自动关联此架构。
+- **自动**。 当前文档未使用此架构，但是此架构可用于自动关联。 如果 XML 文档声明一个与此架构的 `targetNamespace` 匹配的命名空间，则将自动关联此架构并将其包含在架构集中。
 
--   **不使用所选的架构**。 当前文档不使用此架构，即使此架构具有匹配的 `targetNamespace`。 当架构缓存或解决方案中有同一架构的多个版本时，可以使用此设置来解决冲突。
+- **使用此架构**。 当前文档正在使用此架构。 用户已显式请求通过单击此列来使用此架构，或者根据匹配的 `targetNamespace` 自动关联此架构。
+
+- **不使用所选的架构**。 当前文档不使用此架构，即使此架构具有匹配的 `targetNamespace`。 当架构缓存或解决方案中有同一架构的多个版本时，可以使用此设置来解决冲突。
 
 **目标 Namespace**
 
@@ -50,6 +53,5 @@ ms.locfileid: "55930866"
 
 ## <a name="see-also"></a>请参阅
 
-- [XML 编辑器组件](../xml-tools/xml-editor-components.md)
 - [如何：选择要使用的 XML 架构](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [架构缓存](../xml-tools/schema-cache.md)

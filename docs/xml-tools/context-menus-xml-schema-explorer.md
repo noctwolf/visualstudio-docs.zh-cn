@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc769b27ee9dcc22cfa822eb488b0f0ea9f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4d6ab950c31bc6444eb0b8ae054d74c9a69ed466
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910542"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526485"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>上下文菜单 （XML 架构资源管理器）
 
@@ -50,7 +50,7 @@ ms.locfileid: "55910542"
 |**显示所有出站引用**|查找并突出显示下列内容：<br /><br /> -所有命名空间中的所有命名空间属性指定导入语句而没有的`schemaLocation`属性。<br />-所有文件中指定`schemaLocation`属性的所有导入和包含语句。|
 |**显示全局类型**|查找并突出显示此文件中的所有全局类型。|
 |**显示全局元素**|查找并突出显示此文件中的所有全局元素。|
-|**查看代码**|在 XML 编辑器中打开包含所选节点的文件。 在 XML 架构资源管理器中选定的项也会在 XML 编辑器中选定。|
+|**查看代码**|将打开包含所选的节点在 XML 编辑器中的文件。 此外将在 XML 编辑器中选择 XML 架构资源管理器中选择的项。|
 |**“属性”窗口**|此时将打开**属性**窗口 （如果尚未打开）。 此窗口显示有关节点的信息。|
 
 ## <a name="all-global-node-types"></a>所有全局节点类型
@@ -60,7 +60,7 @@ ms.locfileid: "55910542"
 |-|-----------------|
 |**在关系图视图中显示**|打开图形视图。 如果所选节点未在工作区中，请将其添加到工作区中并将其选定。|
 |**在内容模型视图中显示**|打开内容模型视图。 如果所选节点未在工作区中，请将其添加到工作区中并将其选定。|
-|**查看代码**|在 XML 编辑器中打开包含所选节点的文件。 在 XML 架构资源管理器中选定的项也会在 XML 编辑器中选定。|
+|**查看代码**|将打开包含所选的节点在 XML 编辑器中的文件。 此外将在 XML 编辑器中选择 XML 架构资源管理器中选择的项。|
 |**“属性”窗口**|此时将打开**属性**窗口 （如果尚未打开）。 此窗口显示有关节点的信息。|
 
 ## <a name="node-type-element"></a>节点类型：元素

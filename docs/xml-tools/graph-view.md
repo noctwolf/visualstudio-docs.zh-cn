@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ce96a699abeaf9e5fd205c1e1f53add79ab56d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952640"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526641"
 ---
 # <a name="graph-view"></a>图形视图
 
@@ -27,7 +27,7 @@ ms.locfileid: "55952640"
 
  图表视图的设计图面显示的内容[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)。 如果工作区包含来自架构集的任何全局节点，则这些节点会显示在图形视图的设计图面上，并会在具有关系的节点之间绘制箭头。
 
- 双击图形视图中的节点会打开 XML 编辑器。
+ 双击关系图视图中的节点将显示 XML 编辑器。
 
  若要从工作区中删除所选的节点，请使用 XSD 设计器工具栏或**删除**密钥。
 
@@ -55,7 +55,7 @@ ms.locfileid: "55952640"
 |**移除所选内容从工作区**|从工作区和设计图面中删除未选择的节点。|
 |**将关系图导出为图像**|将设计图面保存到 XPS 文件。|
 |**选择所有**|选择设计图面上的所有节点。|
-|**查看代码**|在 XML 编辑器中打开包含所选节点的文件。 在中选择的项**XML 架构资源管理器**则同时选择了在 XML 编辑器中。|
+|**查看代码**|将打开包含所选的节点在 XML 编辑器中的文件。 在中选择的项**XML 架构资源管理器**还选择在 XML 编辑器中。|
 |**“属性”窗口**|此时将打开**属性**窗口 （如果尚未打开）。 此窗口显示有关节点的信息。|
 
  除了上述常用选项之外，全局元素的上下文菜单还拥有以下选项：
@@ -142,7 +142,7 @@ ms.locfileid: "55952640"
 
  您可以来回切换关系图视图和 XML 编辑器之间通过单击某个节点并使用查看代码上下文 （右键单击） 菜单。
 
- 如果在 XML 编辑器中对架构集进行更改，则相应的更改会在图形视图中同步。 有关详细信息，请参阅[与 XML 编辑器集成](../xml-tools/integration-with-xml-editor.md)。
+ 如果你更改 XML 编辑器中设置的架构，则所做的更改将同步关系图视图中。 有关详细信息，请参阅[与 XML 编辑器集成](../xml-tools/integration-with-xml-editor.md)。
 
 ## <a name="see-also"></a>请参阅
 

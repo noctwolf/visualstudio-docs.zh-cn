@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de1dbc3b98850e7a4cde3f5be60ccfa09a34e11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e7da94f8fe07620a67e2df8876cf1d3adda443c5
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931749"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525448"
 ---
 # <a name="how-to-edit-xml-files"></a>如何：编辑 XML 文件
 
-“XML 编辑器”是 XML 文件的新编辑器。 该编辑器可以用于独立的 XML 文件，也可以用于与 Visual Studio 项目关联的文件。 XML 编辑器是与以下文件扩展名相关联： *.config*， *.dtd*， *.xml*， *.xsd*， *.xdr*， *.xsl*， *.xslt*，并且 *.vssettings*。 “XML 编辑器”还与任何其他没有注册特定编辑器并且包含 XML 或 DTD 内容的文件类型关联。
+XML 编辑器是 XML 文件的新编辑器。 该编辑器可以用于独立的 XML 文件，也可以用于与 Visual Studio 项目关联的文件。 XML 编辑器是与以下文件扩展名相关联： *.config*， *.dtd*， *.xml*， *.xsd*， *.xdr*， *.xsl*， *.xslt*，并且 *.vssettings*。 XML 编辑器也是与任何其他文件类型关联的具有注册任何特定编辑器并且包含 XML 或 DTD 内容。
 
 > [!NOTE]
 > XHTML 文档由“HTML 编辑器”处理。
@@ -34,7 +34,7 @@ ms.locfileid: "55931749"
 
 3.  输入中的文件名**名称**字段并按**添加**。
 
-     该 XML 文件将添加到项目中并在“XML 编辑器”中打开。 该文件包含默认的 XML 声明 `<?xml version="1.0" encoding="utf-8" ?>`。
+     XML 文件添加到项目并在 XML 编辑器中打开。 该文件包含默认的 XML 声明 `<?xml version="1.0" encoding="utf-8" ?>`。
 
 ## <a name="to-add-an-existing-xml-file-to-a-project"></a>向项目中添加现有的 XML 文件
 
@@ -64,7 +64,7 @@ ms.locfileid: "55931749"
 
 3.  将 XML 文件添加到项目中。
 
-     “XML 编辑器”找到您添加到此项目中的架构，并在此项目打开时，使用这些架构在您编辑的任何 XML、架构或 XSLT 文件中进行验证和 IntelliSense。
+     XML 编辑器找到添加到此项目的架构，并将其用于验证和任何 XML、 架构或编辑此项目处于打开状态时的 XSLT 文件中的 IntelliSense。
 
 ## <a name="see-also"></a>请参阅
 

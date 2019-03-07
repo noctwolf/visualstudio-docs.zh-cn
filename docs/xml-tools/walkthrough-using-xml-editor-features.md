@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae8a554f4ce9e5c9a38f17ee4f491d7a537b3d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954681"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525864"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>演练：使用 XML 编辑器功能
 
-此演练中的步骤说明如何新建 XML 文档。 该演练还使用“XML 编辑器”的一些功能，这些功能使其非常适合 XML 编写。
+此演练中的步骤说明如何新建 XML 文档。 该演练还使用的一些使其非常适合 XML 编写 XML 编辑器的功能。
 
 > [!NOTE]
 > 在开始本演练之前, 保存*hireDate.xsd*文件 （本主题中的下面包含） 到本地计算机。
@@ -96,9 +96,11 @@ ms.locfileid: "55954681"
 
 ## <a name="to-format-the-xml-document"></a>格式化 XML 文档
 
-- 选择**格式的文档**从 XML 编辑器工具栏按钮。
+- 选择**格式的文档**按钮在 XML 编辑器工具栏上或按**Ctrl**+**E**，**D**。
 
-    XML 文档将重新格式化。
+   ![在 Visual Studio 中的格式 XML 文档按钮](media/format-xml-document.png)
+
+   XML 文档将重新格式化。
 
 ## <a name="to-save-the-xml-document"></a>保存 XML 文档
 
@@ -109,7 +111,8 @@ ms.locfileid: "55954681"
 2.  输入的文件名称和 XML 文档的位置，然后单击**保存**。
 
 ## <a name="hiredatexsd-file"></a>hireDate.xsd 文件
- 以下架构文件供该演练使用。
+
+在本演练中使用以下架构文件：
 
 ```xml
 <?xml version="1.0"?>

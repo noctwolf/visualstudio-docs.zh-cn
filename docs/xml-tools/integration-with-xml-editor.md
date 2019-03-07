@@ -1,5 +1,5 @@
 ---
-title: XML 架构设计器集成与 XML 编辑器
+title: 与 XML 编辑器的 XML 架构设计器集成
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
@@ -8,16 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e06141eb6f6d7383a433a1f9b0ba29944e26a329
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: faad46c6ac2686de69fcb33f2fb482bdb0f4fe00
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930293"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525126"
 ---
 # <a name="integration-with-xml-editor"></a>与 XML 编辑器集成
 
-XML 编辑器中集成了 XML 架构设计器。 如果您修改 XSD 文件在 XML 编辑器中，更改将反映在[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)。 如果有[关系图视图](../xml-tools/graph-view.md)或[内容模型视图](../xml-tools/content-model-view.md)打开，更改也会反映在存在。 可通过以下方法在 XML 架构设计器和 XML 编辑器之间导航：
+XML 架构设计器与 XML 编辑器集成。 如果您修改 XSD 文件在 XML 编辑器中的，更改将反映在[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)。 如果有[关系图视图](../xml-tools/graph-view.md)或[内容模型视图](../xml-tools/content-model-view.md)打开，更改也会反映在存在。 您可以按以下方式导航 XML 架构设计器和 XML 编辑器之间：
 
 -   在 XML 编辑器中，右键单击某个节点并选择**在 XML 架构资源管理器中显示**。
 
@@ -27,7 +27,7 @@ XML 编辑器中集成了 XML 架构设计器。 如果您修改 XSD 文件在 X
 
 ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
 
-有时，在 XML 编辑器中和在图形设计器中并行查看代码是很有帮助的。 若要同时查看这两个文件，请右键单击任意位置在 XML 编辑器中，并选择**视图设计器**。 在 Visual Studio Windows 菜单中，选择**新水平 （或垂直） 选项卡组**。
+有时很有帮助，请参阅在 XML 编辑器和图形设计器并行代码。 若要同时查看这两个文件，请右键单击 XML 编辑器中的任意位置，然后选择**视图设计器**。 在 Visual Studio Windows 菜单中，选择**新水平 （或垂直） 选项卡组**。
 
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 

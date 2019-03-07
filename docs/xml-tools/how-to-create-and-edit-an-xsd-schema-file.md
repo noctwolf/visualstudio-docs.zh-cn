@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0628b4824ebb33199521b660112622b130a090b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e89b09c3f868a3a1c67a0ca1dd9a42f73639d598
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937911"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525353"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>如何：创建和编辑 XSD 架构文件
 
@@ -31,12 +31,8 @@ ms.locfileid: "55937911"
 
 1. 选择**使用 XML 编辑器查看和编辑基础 XML 架构文件**起始视图上的链接。
 
-   将显示 XML 编辑器，并打开一个新文件。
+   XML 编辑器将显示新打开的文件。
 
 2. 中的 XML 架构示例代码复制[采购订单架构](../xml-tools/sample-xsd-file-simple-schema.md)并粘贴以替换默认情况下，已将它们添加到新 XSD 文件的代码。
 
    **XML 架构资源管理器**更新与新的架构集。
-
-## <a name="see-also"></a>请参阅
-
-- [使用 XML 数据](../xml-tools/working-with-xml-data.md)

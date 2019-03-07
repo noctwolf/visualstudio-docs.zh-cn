@@ -8,28 +8,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebcf5769c9ca59a0772530e3551517d14c1ec0c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af91f02b6cc34fcc05b83bb6c09cfd37e8a18ef
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955838"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525461"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>使用 XML 数据时的安全注意事项
 
-本主题讨论在使用“XML 编辑器”或 XSLT 调试程序时需要了解的安全问题。
+本主题讨论您需要了解有关使用 XML 编辑器或 XSLT 调试程序时的安全问题。
 
 ## <a name="xml-editor"></a>XML 编辑器
 
- “XML 编辑器”基于 Visual Studio 文本编辑器。 它依靠 <xref:System.Xml> 和 <xref:System.Xml.Xsl> 类处理许多 XML 进程。
+ XML 编辑器基于在 Visual Studio 文本编辑器中。 它依靠 <xref:System.Xml> 和 <xref:System.Xml.Xsl> 类处理许多 XML 进程。
 
 -   XSLT 转换在新的应用程序域中执行。 XSLT 转换为*沙盒*; 也就是说，您的计算机的代码访问安全策略用于确定受限的权限根据 XSLT 样式表所在的位置。 例如，来自 Internet 位置的样式表的权限最受限制，而复制到硬盘驱动器上的样式表则以“完全信任”权限运行。
 
 -   <xref:System.Xml.Xsl.XslCompiledTransform> 类用于将 XSLT 编译为 Microsoft 中间语言，以便提高执行时的性能。
 
--   编录文件中指向外部位置的架构将在“XML 编辑器”初次加载时自动下载。 <xref:System.Xml.Schema.XmlSchemaSet> 类用于编译架构。 随“XML 编辑器”提供的编录文件没有与任何外部架构的链接。 用户必须显式添加对外部架构的引用，“XML 编辑器”才能下载该架构文件。 可以通过禁用 HTTP 下载**杂项工具选项**页 XML 编辑器。
+-   XML 编辑器首次加载时，会自动下载指向外部位置中的编录文件的架构。 <xref:System.Xml.Schema.XmlSchemaSet> 类用于编译架构。 随 XML 编辑器中的编录文件没有任何外部架构的链接。 用户必须先显式添加对外部架构的引用，然后 XML 编辑器中下载的架构文件。 可以通过禁用 HTTP 下载**杂项工具选项**XML 编辑器中的页。
 
--   “XML 编辑器”使用 <xref:System.Net> 类下载架构。
+-   XML 编辑器使用<xref:System.Net>类下载架构
 
 ## <a name="xslt-debugger"></a>XSLT 调试程序
 
