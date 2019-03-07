@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2848fee32094ba9c79cc3190b48b8953a5f7e942
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912880"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525113"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何：创建基于 XSD 架构的 XML 文档
 
@@ -45,7 +45,7 @@ ms.locfileid: "55912880"
 
 2.  在中[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)，右键单击`PurchaseOrder`全局元素。 选择**生成示例 XML**。
 
-     当您选择此选项，PurchaseOrder。*xml*将生成与以下示例 XML 内容的文件和 XML 编辑器中打开：
+     当您选择此选项，PurchaseOrder。*xml*将生成并在 XML 编辑器中打开文件包含以下示例 XML 内容：
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -73,7 +73,3 @@ ms.locfileid: "55912880"
       </BillTo>
     </PurchaseOrder>
     ```
-
-## <a name="see-also"></a>请参阅
-
-- [使用 XML 数据](../xml-tools/working-with-xml-data.md)
