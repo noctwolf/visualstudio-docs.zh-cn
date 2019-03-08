@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea4cd33c67cfbd2d2150fceacaf0399810db0ca4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638031"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567178"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 窗体区域中的自定义操作
   操作显示按钮，使用户能够对 Microsoft Office Outlook 项做出响应。 例如，若要对邮件项做出响应，用户单击**答复**，**全部答复**，或**向前**操作按钮。 每个操作创建新的邮件项，并通过使用原始项中的信息填充的项的字段。
@@ -28,7 +28,7 @@ ms.locfileid: "56638031"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>将自定义操作添加到窗体区域
- 若要添加到窗体区域自定义操作，请使用**自定义操作**对话框。 您可以打开**自定义操作**对话框中的**解决方案资源管理器**展开**清单**节点，选择**CustomActions**属性，然后单击省略号按钮 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器椭圆"))。
+ 若要添加到窗体区域自定义操作，请使用**自定义操作**对话框。 您可以打开**自定义操作**对话框中的选择窗体区域中**解决方案资源管理器**、 扩展**清单**中的节点**属性窗口**，选择**CustomActions**属性，并单击省略号按钮 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器椭圆"))。
 
  可以使用**自定义操作**对话框可以指定*目标窗体*。 目标窗体是用户执行自定义操作时显示的窗体。
 
