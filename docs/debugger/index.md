@@ -1,18 +1,12 @@
 ---
 layout: LandingPage
 title: 调试应用 | Microsoft Docs
-description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来调试适用于你的平台和设备的应用程序、服务和工具。
+description: 了解如何针对平台和设备使用 Visual Studio 按所选的语言来调试应用程序、服务和工具。
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: 81ecddbfdb3f1b36a28156686e5d07ff4e6ee558
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156028"
 ---
 # <a name="debugging-in-visual-studio"></a>在 Visual Studio 中进行调试
 
