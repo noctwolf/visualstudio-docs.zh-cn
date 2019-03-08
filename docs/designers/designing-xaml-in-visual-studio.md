@@ -58,7 +58,7 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
 若要提高工作效率，请考虑对以下任务使用 Blend for Visual Studio。 Blend for Visual Studio 在这些领域中可提供比单独 Visual Studio 设计器或代码更快的速度和更多的功能。
 
-|到|Visual Studio|Blend for Visual Studio|详细信息|
+|功能|Visual Studio|Blend for Visual Studio|详细信息|
 |--------|-------------------| - | - |
 |**创建动画**|没有用于动画的设计工具；必须以编程方式创建它们。 这需要对 WPF 中的动画和时间系统的了解以及丰富的编码专业知识。|可直观地创建动画，并且可以在 Blend for Visual Studio 中预览它们。 这比采用代码构建动画更快且更精确。 可以添加触发器以处理用户交互，并且可以切换到代码以添加事件处理程序和其他功能。|[动态显示对象](../designers/animate-objects-in-xaml-designer.md)|
 |**将形状和文本转换为路径以便于操作**|不支持。|可以通过将形状（如矩形和椭圆）转换为路径（这样可提供更好的编辑控制）来对形状进行细微或显著的更改。 可以重新调整路径形状或合并路径，以及从多个形状创建复合路径。<br /><br /> 还可以将文本块转换为路径以便将它们作为矢量图像进行操作。|[绘制形状和路径](../designers/draw-shapes-and-paths.md)|
