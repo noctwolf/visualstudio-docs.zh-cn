@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 362a4c000d8834ee5adc14b0620a77a51a47c0c3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702715"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223138"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>提高 Visual Studio 使用效率的提示
 
@@ -24,7 +24,7 @@ ms.locfileid: "56702715"
 
 使用以下功能快速编写代码。
 
-- **使用便捷命令**。 Visual Studio 提供各种有助于更快速完成常见编辑任务的命令。 例如，在 Visual Studio 2017 版本 15.6 及更高版本中，选择一个命令，即可轻松复制代码行，而无需复制它、重新定位光标并粘贴它。 依次选择“编辑” > “复制”，或按 Ctrl+E、V。 此外，还可以依次选择“编辑” > “高级” > “展开选定内容”或“编辑” > “高级” > “合拢选定内容”，或按 Shift+Alt+= 或 Shift+Alt+-（适用于 Visual Studio 2017 版本 15.5 及更高版本），快速展开或合拢选定文本内容。
+- **使用便捷命令**。 Visual Studio 提供各种有助于更快速完成常见编辑任务的命令。 例如，选择一个命令，即可轻松复制代码行，而无需复制它、重新定位光标并粘贴它。 依次选择“编辑” > “复制”，或按 Ctrl+E、V。 此外，还可以通过选择“编辑” > “高级” > “展开选定内容”或“编辑” > “高级” > “合拢选定内容”，或按“Shift”+“Alt”+“=”或“Shift”+“Alt”+“-”，快速展开或合拢选定文本内容 。
 
 - **使用 IntelliSense**。 在编辑器中输入代码时，将会显示 IntelliSense 信息，如列表成员、参数信息、快速信息，签名帮助和完整单词。 这些功能支持文本的模糊匹配；例如，列表成员的结果列表不仅包括以您输入的字符开头的条目，还包括在名称的任何位置包含字符组合的条目。 有关详细信息，请参阅[使用 IntelliSense](../ide/using-intellisense.md)。
 
@@ -102,9 +102,19 @@ ms.locfileid: "56702715"
 
 如果将开发人员命令提示符或其他 Visual Studio 工具固定到“开始”菜单或任务栏，可以快速访问这些对象。
 
-1. 在“Windows 资源管理器”中，转到 `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`。
+::: moniker range="vs-2017"
 
-1. 右键单击或打开“开发人员命令提示符”的关联菜单，再选择“固定到‘开始’菜单”或“固定到任务栏”。
+1. 在 Windows Explorer 中。浏览到 %ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在 Windows Explorer 中。浏览到 %ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools。
+
+::: moniker-end
+
+2. 右键单击或打开“开发人员命令提示符”的关联菜单，再选择“固定到‘开始’菜单”或“固定到任务栏”。
 
 ## <a name="manage-files-toolbars-and-windows"></a>管理文件、工具栏和窗口
 
