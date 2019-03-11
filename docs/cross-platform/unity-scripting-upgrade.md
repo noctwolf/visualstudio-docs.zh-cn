@@ -19,7 +19,7 @@ ms.locfileid: "56954031"
 
 自 2002 年 Microsoft 最初发布更新以来，C# 和 .NET（Unity 脚本的基础技术）一直在不断更新。 但 Unity 开发者可能并未意识到 C# 语言和 .NET Framework 不断在添加新功能。 那是因为在 Unity 2017.1 之前，Unity 一直在使用与 .NET 3.5 等效的脚本运行时，已多年未进行更新。
 
-随着 Unity 2017.1 的发布，Unity 引入其脚本运行时的实验版，升级到 .NET 4.6、C# 6 兼容版本。 在 Unity 2018.1 中，与 .NET 4.x 等效的运行时不再视为实验版，较旧的等效于 .NET 3.5 的运行时现被视为旧版本。 随着 Unity 2018.3 的发布，Unity 计划将已升级的脚本运行时作为默认选择，并进一步更新为 C# 7。 有关此路线图的详细信息和最新更新，请阅读 Unity 的[博客文章](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)或访问其[实验性脚本预览论坛](https://forum.unity.com/forums/experimental-scripting-previews.107/)。 与此同时，请查看以下部分，了解有关 .NET 4.x 脚本运行时现在可用的新功能的详细信息。
+随着 Unity 2017.1 的发布，Unity 引入了升级到 .NET 4.6、C# 6 兼容版本的实验版脚本运行时。 在 Unity 2018.1 中，与 .NET 4.x 等效的运行时不再视为实验版，较旧的等效于 .NET 3.5 的运行时现被视为旧版本。 随着 Unity 2018.3 的发布，Unity 计划将已升级的脚本运行时作为默认选择，并进一步更新为 C# 7。 有关此路线图的详细信息和最新更新，请阅读 Unity 的[博客文章](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)或访问其[实验性脚本预览论坛](https://forum.unity.com/forums/experimental-scripting-previews.107/)。 与此同时，请查看以下部分，了解有关 .NET 4.x 脚本运行时现在可用的新功能的详细信息。
 
 ## <a name="prerequisites"></a>系统必备
 
