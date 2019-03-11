@@ -25,7 +25,6 @@ ms.locfileid: "53684777"
 
 从 Unity 2018.1 开始，Visual Studio 是 Unity 的默认 C# 脚本编辑器，并且包含在 Unity 下载助手以及 Unity Hub 安装工具中。
 
-
 - 前往 [store.unity.com](https://store.unity.com/) 下载 Unity。
 
 在安装过程中，请确保在要与 Unity 一起安装的组件列表中选中 Visual Studio ：
