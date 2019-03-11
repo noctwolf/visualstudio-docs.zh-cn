@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebfe3efdb567930d931ab43d5cf2ce33713247f8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a9975d0c4a62b4ae4d2695a34eeab0d43ba4a424
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679116"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428773"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C++ 代码
 
@@ -35,11 +35,20 @@ ms.locfileid: "56679116"
 
 ## <a name="prerequisites"></a>系统必备
 
+::: moniker range=">=vs-2019"
+
+* 须安装 Visual Studio 2019 且具有“使用 C++ 的桌面开发”工作负载。
+
+::: moniker-end
+::: moniker range="vs-2017"
+
 * 须安装 Visual Studio 2017 且具有“C++ 桌面开发”工作负载。
 
-    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 页免费安装。
+::: moniker-end
 
-    如果需要安装工作负载，但已有 Visual Studio，则单击“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接（选择“文件” > “新建” > “项目”）。 Visual Studio 安装程序启动。 选择“使用 C++ 的桌面开发”工作负载，然后选择“修改”按钮。
+如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 页免费安装。
+
+如果需要安装工作负载，但已有 Visual Studio，则单击“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接（选择“文件” > “新建” > “项目”）。 Visual Studio 安装程序启动。 选择“使用 C++ 的桌面开发”工作负载，然后选择“修改”按钮。
 
 ## <a name="create-a-project"></a>创建项目
 
@@ -218,7 +227,7 @@ ms.locfileid: "56679116"
      ![使用“运行时单击”功能](../debugger/media/get-started-run-to-click-cpp.png "Run to Click")
 
    > [!NOTE]
-   > “运行时单击”是 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中的新增按钮。 如果未看到绿色箭头按钮，请在此示例中改为使用 F11 以使调试器前进到正确的位置。
+   > 自 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 起，可用使用“运行到单击位置”按钮。 如果未看到绿色箭头按钮，请在此示例中改为使用 F11 以使调试器前进到正确的位置。
 
 2. 单击“运行时单击”按钮（![运行时单击](../debugger/media/dbg-tour-run-to-click.png "RunToClick")）。
 

@@ -10,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8464ecd96234511017953b6bc0dce7fabdef810b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 7cdf118ef901e607d24609e521325e27b90d345b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796727"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222005"
 ---
 # <a name="introducing-live-unit-testing"></a>Live Unit Testing 简介
 
-Live Unit Testing 是 Visual Studio 2017 版本 15.3 中提供的一项技术，可在更改代码时自动执行实时的单元测试。 实时单元测试：
+Live Unit Testing 是 Visual Studio 2017 中引入的一种技术。 进行代码更改时，它会自动执行单元测试。 实时单元测试：
 
 - 让你更有信心地对代码进行重构和更改。 Live Unit Testing 在编辑代码时自动执行所有受影响的测试，确保所做更改不会中断测试。
 
@@ -31,7 +31,7 @@ Live Unit Testing 是 Visual Studio 2017 版本 15.3 中提供的一项技术，
 
 - 请尝试使用入门教程，[Visual Studio 中的 Live Unit Testing 入门](live-unit-testing-start.md)。
 
-- 阅读详细的文档：[在 Visual Studio 2017 Enterprise Edition 中使用 Live Unit Testing](live-unit-testing.md)。
+- 阅读详细的文档：[在 Visual Studio Enterprise Edition 中使用 Live Unit Testing](live-unit-testing.md)。
 
 - 阅读 [Live Unit Testing 常见问题解答](live-unit-testing-faq.md)，了解 Live Unit Testing 中的新增功能以及使用 Live Unit Testing 的提示和技巧。
 
@@ -40,5 +40,6 @@ Live Unit Testing 是 Visual Studio 2017 版本 15.3 中提供的一项技术，
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
 ## <a name="related-resources"></a>相关资源
+
 - [代码测试工具](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [单元测试代码](unit-test-your-code.md)
