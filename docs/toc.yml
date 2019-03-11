@@ -1,6 +1,7 @@
 items:
 - name: Visual Studio 文档
   href: ide/index.yml
+  pdf_name: Visual Studio documentation
 - name: 概述
   items:
   - name: 关于 Visual Studio
@@ -131,6 +132,7 @@ items:
 - name: 快速入门
   items:
   - name: Visual Studio 入门
+    displayName: Feature tour
     href: ide/quickstart-ide-orientation.md
   - name: C++：创建控制台应用
     href: ide/getting-started-with-cpp-in-visual-studio.md
@@ -236,12 +238,15 @@ items:
           href: ide/template-parameters.md
       - name: 64 位支持
         href: ide/visual-studio-ide-64-bit-support.md
-    - name: 不使用项目或解决方案而进行开发（“打开文件夹”）
+    - name: 不使用项目或解决方案进行开发
+      displayName: Open folder
       href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
       items:
       - name: 自定义生成和调试任务
+        displayName: makefile tasks.vs.json
         href: ide/customize-build-and-debug-tasks-in-visual-studio.md
     - name: 连接到项目或存储库
+      displayName: Azure DevOps VSTS GitHub
       href: ide/connect-team-project.md
     - name: 使用编辑器
       href: ide/writing-code-in-the-code-and-text-editor.md
@@ -251,6 +256,7 @@ items:
         items:
         - name: 使用正则表达式
           href: ide/using-regular-expressions-in-visual-studio.md
+          dispayName: RegEx
         - name: “查找-命令”框
           href: ide/find-command-box.md
         - name: 在文件中查找
@@ -263,6 +269,7 @@ items:
         - name: 保存和打开带有编码的文件
           href: ide/how-to-save-and-open-files-with-encoding.md
       - name: 大纲显示
+        displayName: Expand and collapse
         href: ide/outlining.md
       - name: 生成和修复代码
         href: ide/code-generation-in-visual-studio.md
@@ -389,6 +396,7 @@ items:
           - name: 所有键盘快捷方式
             href: ide/default-keyboard-shortcuts-in-visual-studio.md
         - name: 针对 .NET 开发人员的提示
+          displayName: ReSharper
           href: ide/visual-studio-2017-for-dotnet-developers.md
       - name: 使用 IntelliSense
         href: ide/using-intellisense.md
@@ -438,6 +446,7 @@ items:
         href: ide/code-styles-and-quick-actions.md
         items:
         - name: 使用 EditorConfig 文件构造代码样式
+          displayName: Configure code style analyzers
           href: ide/create-portable-custom-editor-options.md
           items:
           - name: .NET 语言和格式设置约定
@@ -535,6 +544,7 @@ items:
     - name: 使用 XML 和 XSLT 文件
       href: xml-tools/xml-tools-in-visual-studio.md
     - name: 开发国际应用
+      displayName: Globalization localization world-ready
       href: ide/globalizing-and-localizing-applications.md
       items:
       - name: 双向语言
@@ -611,8 +621,10 @@ items:
           - name: 步骤 9：尝试其他功能
             href: ide/step-9-try-other-features.md
   - name: 访问数据...
+    displayName: Data connections
     href: data-tools/accessing-data-in-visual-studio.md
   - name: 设计用户界面...
+    displayName: XAML designer
     href: designers/designing-user-interfaces.md
   - name: 编译和生成
     href: ide/compiling-and-building-in-visual-studio.md
@@ -659,6 +671,7 @@ items:
     - name: MSBuild...
       href: msbuild/msbuild.md
     - name: Azure Pipelines 和 TFS...
+      displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
       href: /azure/devops/pipelines/index?view=vsts
     - name: 指定生成事件 (Visual Basic)
       href: ide/how-to-specify-build-events-visual-basic.md
@@ -671,14 +684,18 @@ items:
   - name: 调试...
     href: debugger/index.md
   - name: 测试...
+    displayName: Unit testing
     href: test/improve-code-quality.md
   - name: 测量性能...
+    displayName: Profiling
     href: profiling/index.md
   - name: 分析代码质量...
+    displayName: Code analysis FxCop Analyzers
     href: code-quality/index.md
   - name: 部署...
     href: deployment/index.md
   - name: 扩展 Visual Studio...
+    displayName: Visual Studio SDK
     href: extensibility/visual-studio-sdk.md
   - name: 对体系结构进行分析和建模...
     href: modeling/analyze-and-model-your-architecture.md
@@ -700,6 +717,7 @@ items:
     - name: 解决方案资源管理器中的文件嵌套
       href: ide/file-nesting-solution-explorer.md
     - name: 启动行为
+      displayName: Start page window
       href: ide/customizing-the-start-page-for-visual-studio.md
     - name: 查找和使用 Visual Studio 扩展
       href: ide/finding-and-using-visual-studio-extensions.md
@@ -730,6 +748,7 @@ items:
 - name: 参考
   items:
   - name: 常规用户界面元素
+    displayName: Windows and dialogs
     items:
     - name: 调用层次结构
       href: ide/reference/call-hierarchy.md
@@ -1078,6 +1097,7 @@ items:
     href: help-viewer/overview.md
     items:
     - name: 安装和管理本地内容
+      displayName: Offline books docs
       href: help-viewer/install-manage-local-content.md
     - name: 在 Help Viewer 中查找主题
       items:
@@ -1114,28 +1134,40 @@ items:
     href: ide/whats-new-visual-studio-2019.md
   - name: 发行说明和系统要求
     items:
-    - name: 当前发行说明
-      href: /visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017
-    - name: 预览发行说明
-      href: /visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017
-    - name: 发行说明历史记录
-      href: /visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default&contextView=vs-2017
     - name: 发行节奏
-      href: /visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default&contextView=vs-2017
-    - name: Visual Studio 路线图
-      href: /visualstudio/productinfo/vs2018-roadmap?context=visualstudio/default&contextView=vs-2017
-    - name: 系统要求
-      href: /visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017
-    - name: 平台兼容性
-      href: /visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default&contextView=vs-2017
-    - name: 授权
+      href: /visualstudio/productinfo/release-rhythm/
+    - name: Visual Studio 2017
+      items:
+      - name: 当前发行说明
+        href: /visualstudio/releasenotes/vs2017-relnotes/
+      - name: 预览发行说明
+        href: /visualstudio/releasenotes/vs2017-preview-relnotes/
+      - name: 发行说明历史记录
+        href: /visualstudio/releasenotes/vs2017-relnotes-history/
+      - name: 可分发代码
+        href: /visualstudio/productinfo/2017-redistribution-vs/
+      - name: 平台兼容性
+        href: /visualstudio/productinfo/vs2017-compatibility-vs/
+      - name: 系统要求
+        href: /visualstudio/productinfo/vs2017-system-requirements-vs/
+    - name: Visual Studio 2019
+      items:
+      - name: 当前发行说明
+        href: /visualstudio/releases/2019/release-notes/
+      - name: 预览发行说明
+        href: /visualstudio/releases/2019/release-notes-preview/
+      - name: 发行说明历史记录
+        href: /visualstudio/releases/2019/release-notes-history/
+      - name: 可分发代码
+        href: /visualstudio/releases/2019/redistribution/
+      - name: 平台兼容性
+        href: /visualstudio/releases/2019/compatibility/
+      - name: 系统要求
+        href: /visualstudio/releases/2019/system-requirements/
+    - name: 许可条款
       href: https://visualstudio.microsoft.com/license-terms/
-    - name: 可分发代码
-      href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default&contextView=vs-2017
     - name: 支持生命周期和维护服务
-      href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default&contextView=vs-2017
-    - name: 开发人员社区数据隐私
-      href: ide/developer-community-privacy.md
+      href: /visualstudio/productinfo/vs-servicing-vs/
   - name: 如何报告 Visual Studio 的问题
     href: ide/how-to-report-a-problem-with-visual-studio.md
     items:
@@ -1143,6 +1175,8 @@ items:
       href: ide/report-a-problem.md
   - name: 建议 Visual Studio 功能
     href: ide/suggest-a-feature.md
+  - name: 开发人员社区数据隐私
+    href: ide/developer-community-privacy.md
   - name: 客户体验改善计划
     href: ide/visual-studio-experience-improvement-program.md
     items:
@@ -1151,11 +1185,12 @@ items:
   - name: 用于排除 IDE 错误的资源
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 与我们交流
+    displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 3ee3f3df16357d6a39090dc64504ef7f7fae6351
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: fb7a40cf8558fb5c3732fba0ec32ebbbb35fb0bb
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526550"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683393"

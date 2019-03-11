@@ -116,6 +116,8 @@ items:
       items:
       - name: 使用“编辑并继续”在中断模式下应用编辑
         href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
+    - name: 编写和调试正在运行的 XAML 代码
+      href: xaml-edit-and-continue.md
     - name: F# 不支持“编辑并继续”
       href: edit-and-continue-not-supported-for-f-hash.md
   - name: 查看调试程序数据
@@ -607,7 +609,7 @@ items:
       href: dump-file-summary-extensibility-api.md
   - name: 调试器安全
     href: debugger-security.md
-- name: 引用
+- name: 参考
   items:
   - name: 调试用户界面参考
     href: debugging-user-interface-reference.md
@@ -841,9 +843,9 @@ items:
   items:
   - name: Visual Studio 中调试器的新增功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 703836e5453534998db5090d904aae4339993c43
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 60b141b0f9a7b00dda32a68f5f33e2bc8321dad6
+ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335462"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57699650"
