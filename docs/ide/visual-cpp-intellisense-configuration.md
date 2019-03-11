@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864863"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222891"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>配置用于 IntelliSense 的 C++ 项目
 
@@ -48,7 +48,7 @@ IntelliSense 最多生成 1000 个错误。 如果源文件包含的头文件中
 
 ![生成文件项目 Include 路径](media/vcpp-intellisense-makefile-include-paths.png)
 
-有关更多信息，请参见[如何：为生成文件项目启用 IntelliSense](/cpp/ide/how-to-enable-intellisense-for-makefile-projects)。
+有关详细信息，请参阅[如何：为生成文件项目启用 IntelliSense](/cpp/ide/how-to-enable-intellisense-for-makefile-projects)。
 
 ### <a name="open-folder-projects"></a>打开文件夹项目
 
@@ -74,7 +74,7 @@ IntelliSense 最多生成 1000 个错误。 如果源文件包含的头文件中
 
 若要解决上述这几种问题，请将“cpp.hint”文件添加到解决方案根目录中。 有关详细信息，请参阅[提示文件](/cpp/ide/hint-files)。
 
-Visual Studio 2017 版本 15.7 标记分析器错误显示在“错误列表”窗口中。
+标记分析器错误显示在“错误列表”窗口中。
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>使用诊断日志记录验证项目设置
 
@@ -107,7 +107,7 @@ Visual Studio 使用专用 C++ 编译器，创建和维护为所有 IntelliSense
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>IntelliSense 生成故障疑难解答
 
-IntelliSense 生成即使不生成二进制文件，也仍可能会发生故障。 导致故障发生的一个可能原因是，自定义 .props 或 .targets 文件不正确。 在 Visual Studio 2017 版本 15.6 中，仅 IntelliSense 生成错误记录到输出窗口中。 若要查看这些错误，请将“显示的输出来自”设置为“解决方案”：
+IntelliSense 生成即使不生成二进制文件，也仍可能会发生故障。 导致故障发生的一个可能原因是，自定义 .props 或 .targets 文件不正确。 在 Visual Studio 2017 版本 15.6 及更高版本中，仅 IntelliSense 生成错误记录到输出窗口中。 若要查看这些错误，请将“显示的输出来自”设置为“解决方案”：
 
 ![解决方案错误输出窗口](media/vcpp-intellisense-output-window.png)
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe76cc490523325c8334ad7ada3273f101e0bbc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2be76e5af3dafd3eebb8649fa82db6a14d46bb0d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626123"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323531"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>如何：使用并发可视化工具标记 SDK
 本主题演示如何使用并发可视化工具 SDK 来创建范围并编写标志、消息和警报。
@@ -78,7 +78,7 @@ ms.locfileid: "56626123"
 
      ![具有 3 个自定义标记系列的并发可视化工具](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
-### <a name="to-use-visual-basic-or-c"></a>使用 Visual Basic 或 C# #
+### <a name="to-use-visual-basic-or-c"></a>使用 Visual Basic 或 C\#
 
 1.  向应用程序添加并发可视化工具 SDK 支持。 有关详细信息，请参阅[并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)。
 

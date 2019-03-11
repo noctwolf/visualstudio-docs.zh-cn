@@ -1,12 +1,12 @@
 ---
-title: Visual Studio Test Professional 2017 工作负载和组件 ID
+title: Visual Studio Test Professional 工作负载和组件 ID
 titleSuffix: ''
 description: 使用 Visual Studio 工作负载和组件 ID 为技术全面的测试人员提供集成的测试工具
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,16 +14,17 @@ helpviewer_keywords:
 - install Visual Studio, administrator guide
 ms.service: ''
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
-ms.workload:
-- multiple
-ms.openlocfilehash: d433ec3743c6b18c3241bf4b4c99c47ad620be62
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: e8235ac3d123f33add52934112f81f0be9772294
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932230"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323327"
 ---
-# <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017 组件目录
+# <a name="visual-studio-test-professional-component-directory"></a>Visual Studio Test Professional 组件目录
 
 本页的表中列出了可用于通过使用命令行安装 Visual Studio 或可指定为 VSIX 清单中的依赖项的 ID。 请注意，我们将在发布 Visual Studio 更新时添加其他组件。
 

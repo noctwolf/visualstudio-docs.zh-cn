@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6faaf37c3a1c8e67412898ca631210eb551f3331
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926042"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221874"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>跨多台计算机同步 Visual Studio 设置
 
@@ -60,20 +60,30 @@ ms.locfileid: "55926042"
 
 ## <a name="side-by-side-synchronized-settings"></a>并排同步设置
 
-在 Visual Studio 2017 版本 15.3 及更高版本中，不会在不同的 Visual Studio 2017 并行安装之间共享某些设置（如工具窗口布局）。 %userprofile%\Documents\Visual Studio 2017\Settings 中的 CurrentSettings.vssettings 文件位于特定于安装的文件夹中，该文件夹类似于 %localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings。
+::: moniker range="vs-2017"
+
+某些设置（如工具窗口布局）不会在 Visual Studio 的不同并行安装之间共享。 %userprofile%\Documents\Visual Studio 2017\Settings 中的 CurrentSettings.vssettings 文件位于特定于安装的文件夹中，该文件夹类似于 %localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings。
 
 > [!NOTE]
-> 要使用新的特定于安装的设置，请进行全新安装。 将现有 Visual Studio 2017 安装升级到最新更新时，它会使用现有共享位置。
+> 要使用新的特定于安装的设置，请进行全新安装。 升级现有 Visual Studio 安装时，它将使用现有共享位置。
 
-如果现在已拥有 Visual Studio 2017 的并行安装，并希望使用特定于安装的新设置文件位置，请执行以下步骤：
+如果现在已拥有 Visual Studio 的并行安装，并希望使用特定于安装的新设置文件位置，请执行以下步骤：
 
 1. 升级到 Visual Studio 2017 版本 15.3 或更高版本。
 
-1. 使用“导入\导出”设置向导将所有现有设置导出到“%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx”文件夹之外的某个位置。
+2. 使用“导入\导出”设置向导将所有现有设置导出到“%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx”文件夹之外的某个位置。
 
-1. 打开已安装的升级后 Visual Studio 的 VS 2017 开发者命令提示符，并运行 `devenv /resetuserdata`。
+3. 打开“VS 2017 开发人员命令提示”并运行 `devenv /resetuserdata`。
 
 1. 启动 Visual Studio，并从导出的设置文件中导入保存的设置。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+某些设置（如工具窗口布局）不会在 Visual Studio 的不同并行安装之间共享。 %userprofile%\Documents\Visual Studio 2019\Settings 中的 CurrentSettings.vssettings 文件位于特定于安装的文件夹中，该文件夹类似于 %localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings。
+
+::: moniker-end
 
 ## <a name="see-also"></a>请参阅
 

@@ -6,18 +6,18 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: fceccbc77b2999124e1d2af50a53cfd044556312
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4b251a2eb53d37260cf44613c2cc0cf279f0041a
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317986"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954129"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 内部版本号和发布日期
 
@@ -171,12 +171,14 @@ ms.locfileid: "56317986"
 | 15.1 预览版 1 | 预览 | 2017 年 3 月 7 日 | 15.0.26304.0 |
 | 15.0.0 | Release | 2017 年 3 月 7 日 | 15.0.26228.4 |
 
-## <a name="visual-studio-2019-preview"></a>Visual Studio 2019 预览版
+## <a name="visual-studio-2019"></a>Visual Studio 2019
 
-下表列出了 Visual Studio 2019 预览版的最新生成号和发布日期。
+下表列出了 Visual Studio 2019 的最新生成号和发布日期’。
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | 候选发布 (RC) | 2019 年 2 月 27日 | 16.0.28625.133 |
+| 16.0.0 | 预览版 4 | 2019 年 2 月 27日 | 16.0.28625.133 |
 | 16.0.0 | 预览版 3 | 2019 年 2 月 13日 | 16.0.28608.199 |
 | 16.0.0 | 预览 2.2 | 2019 年 2 月 5 日 | 16.0.28602.52 |
 | 16.0.0 | 预览 2.1 | 2019 年 1 月 31 日 | 16.0.28529.54 |

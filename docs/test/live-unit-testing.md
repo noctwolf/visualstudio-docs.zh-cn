@@ -9,19 +9,19 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e631c5b4d9b02b38939e6a1aba6337f633f83fa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e73e6939dd5b2cad382d56616e7cf1f2d64934e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921531"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223710"
 ---
-# <a name="live-unit-testing-with-visual-studio-2017"></a>使用 Visual Studio 2017 进行实施单元测试
+# <a name="live-unit-testing-with-visual-studio"></a>使用 Visual Studio 执行 Live Unit Testing
 
 在你开发应用程序时，Live Unit Testing 将在后台自动运行任何受影响的单元测试并在 Visual Studio IDE 中实时显示结果和代码覆盖率。 在你修改代码时，Live Unit Testing 可提供关于更改如何影响现有测试和新增代码是否会被一个或多个现存测试覆盖的反馈。 这可在你进行 bug 修复或添加新功能时，温馨地提示你编写单元测试。
 
 > [!NOTE]
-> Live Unit Testing 适用于面向企业版 Visual Studio 2017 中的 .NET Core 或 .NET Framework 的 C# 和 Visual Basic 项目。
+> Live Unit Testing 适用于面向 Visual Studio Enterprise Edition 中的 .NET Core 或 .NET Framework 的 C# 和 Visual Basic 项目。
 
 使用 Live Unit Testing 进行测试时，Live Unit Testing 会保留测试状态数据。 由于可以使用持久化数据，因此 Live Unit Testing 的性能更优异，同时还能动态运行测试，以响应代码变化。
 
@@ -51,7 +51,7 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 </tr>
 </table>
 
-如果你有正在引用 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的测试项目（该项目是基于较旧的 MSTest），并且不想移动到较新的 MSTest NuGet 包，请升级到 Visual Studio 2017 版本 15.4。
+如果你有正在引用 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的测试项目（该项目是基于较旧的 MSTest），并且不想移动到较新的 MSTest NuGet 包，请升级到 Visual Studio 2017 版本 15.4 或更高版本。
 
 在某些情况下，可能需要显式还原解决方案中项目引用的 NuGet 包，以便 Live Unit Testing 可正常运行。 可先通过显式生成解决方案（从顶级 Visual Studio 菜单中选择“生成” > “重新生成解决方案”）或通过还原解决方案中的包（右键单击解决方案并选择“还原 NuGet 包”）实现此操作，然后再启用 Living Unit Testing。
 
@@ -178,8 +178,8 @@ Live Unit Testing 自动运行、更新测试结果与通过“测试资源管�
 
 若要在单元测试中选择单个项目，请在启动 Live Unit Testing 后执行以下操作：
 
-1.  在解决方案资源管理器中右键单击解决方案并依次选择“实时测试” > “排除”以排除整个解决方案。
-1.  右键单击想要包括在测试中的每个测试项目，然后依次选择“实时测试” > “包括”。
+1. 在解决方案资源管理器中右键单击解决方案并依次选择“实时测试” > “排除”以排除整个解决方案。
+1. 右键单击想要包括在测试中的每个测试项目，然后依次选择“实时测试” > “包括”。
 
 **从代码编辑器窗口中排除个别测试**
 
@@ -200,4 +200,4 @@ Live Unit Testing 自动运行、更新测试结果与通过“测试资源管�
 - [代码测试工具](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Live Unit Testing 博客](https://go.microsoft.com/fwlink/?linkid=842514)
 - [实时单元测试常见问题解答](live-unit-testing-faq.md)
-- [第 9 频道视频：Visual Studio 2017 中的 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [第 9 频道视频：Visual Studio 中的 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

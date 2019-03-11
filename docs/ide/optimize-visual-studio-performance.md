@@ -12,22 +12,26 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 3094d6fbfa561d995c5cc72e0a6e56fbdd47ee63
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 193343c8fce810280f380b11a72b7cb6892ef18e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317674"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223750"
 ---
 # <a name="optimize-visual-studio-performance"></a>优化 Visual Studio 性能
 
 如果发现 Visual Studio 运行速度缓慢，本文提供了一些建议。 有关如何提高性能的更多建议，还可以查看 [Visual Studio 性能提示和技巧](../ide/visual-studio-performance-tips-and-tricks.md)。
 
-## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>更新到 Visual Studio 2017 版本 15.6 或更高版本
+## <a name="upgrade-visual-studio"></a>升级 Visual Studio
 
-如果当前使用 Visual Studio 2015，请免费下载 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)，以检查其改进性能。 在 Visual Studio 2017 中，解决方案加载速度要快两到三倍，其他方面的性能也有所改善。 Visual Studio 2017 与 Visual Studio 2015 并行兼容，因此不会因为尝试而丢失任何内容。
+如果当前使用 Visual Studio 2015，请免费下载 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 或 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)，以检查其改进性能。 在 Visual Studio 2015 中，解决方案的加载速度要快两到三倍，其他方面的性能也有所改善。 Visual Studio 2017 和 Visual Studio 2019 与 Visual Studio 2015 并行兼容，因此不会因为尝试而丢失任何内容。
 
-如果当前使用 Visual Studio 2017，请确保运行版本 15.6 或更高版本。 数据显示，在版本 15.6 中，解决方案的加载速度最高可提升两到三倍。 在[此处](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)下载。
+::: moniker range="vs-2017"
+
+如果已在使用 Visual Studio 2017，请确保运行版本 15.6 或更高版本。 数据显示，在版本 15.6 中，解决方案的加载速度最高可提升两到三倍。 在[此处](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)下载。
+
+::: moniker-end
 
 ## <a name="extensions-and-tool-windows"></a>扩展和工具窗口
 
@@ -45,7 +49,7 @@ ms.locfileid: "56317674"
 
 ## <a name="help-us-improve"></a>帮助我们改进
 
-你的反馈有助于我们改进。 使用“报告问题”功能来“记录”跟踪并发送给我们。 选择“快速启动”旁边的反馈图标，或从菜单栏中选择“帮助” > “发送反馈” > “报告问题”。 有关详细信息，请参阅[如何报告 Visual Studio 2017 的问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)。
+你的反馈有助于我们改进。 使用“报告问题”功能来“记录”跟踪并发送给我们。 选择“快速启动”旁边的反馈图标，或从菜单栏中选择“帮助” > “发送反馈” > “报告问题”。 有关详细信息，请参阅[如何报告 Visual Studio 的问题](../ide/how-to-report-a-problem-with-visual-studio.md)。
 
 ## <a name="see-also"></a>请参阅
 

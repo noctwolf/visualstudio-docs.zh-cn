@@ -30,16 +30,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bda0ccea91089957b9aa6bea97bb5b7b592b20
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f5fc437d1365fe58c8eb7ae725196c4ad3370836
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937443"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323729"
 ---
 # <a name="find-and-replace-text"></a>查找和替换文本
 
-可以使用[查找和替换](#find-and-replace-control)或[在文件中查找/替换](#find-in-files-and-replace-in-files)，在 Visual Studio 编辑器中查找和替换文本。 在 Visual Studio 2017 版本 15.8 中的新增功能：现可通过[多个插入点选择](#multi-caret-selection)来查找并替换模式的某些实例。
+可以使用[查找和替换](#find-and-replace-control)（Ctrl+F 或 Ctrl+H）或[在文件中查找/替换](#find-in-files-and-replace-in-files)（Ctrl+Shift+F 或 Ctrl+Shift+H），在 Visual Studio 编辑器中查找和替换文本。 也可通过使用[多个插入点选择](#multi-caret-selection)来仅查找并替换模式的一些实例。
 
 > [!TIP]
 > 如果要重命名代码符号（例如变量和方法），最好*[重构](../ide/reference/rename.md)* 它们，而不是使用查找和替换。 重构不仅智能而且知道应用范围，而查找和替换会盲目替换所有实例。
@@ -53,7 +53,10 @@ ms.locfileid: "55937443"
 
 ## <a name="find-and-replace-control"></a>“查找和替换”控件
 
-“查找和替换”控件显示在代码编辑器窗口的右上角。 “查找和替换”控件会立即突出显示给定搜索字符串在当前文档中的每个匹配项。 通过在搜索控件上选择“查找下一个”按钮或“查找上一个”按钮，可以从一个匹配项导航到另一个匹配项。
+- 按 Ctrl+F 作为查找当前文件中的字符串的快捷方式。
+- 按“Ctrl”+“H”作为快捷方式，以查找和替换当前文件中的字符串。
+
+“查找和替换”控件显示在代码编辑器窗口的右上角。 此操作会立即突出显示给定搜索字符串在当前文档中的每个匹配项。 通过在搜索控件上选择“查找下一个”按钮或“查找上一个”按钮，可以从一个匹配项导航到另一个匹配项。
 
 ![在 Visual Studio 中查找和替换](media/find-and-replace-box.png)
 
@@ -69,7 +72,10 @@ ms.locfileid: "55937443"
 
 ## <a name="find-in-files-and-replace-in-files"></a>“在文件中查找”和“在文件中替换”
 
-“在文件中查找/替换”与“查找和替换”控件类似，区别在于可以定义搜索范围。 不仅可以搜索当前在编辑器中打开的文件，还可以搜索所有打开的文档、整个解决方案、当前项目，及所选文件夹集。 还可以按文件扩展名搜索。 若要访问“在文件中查找/替换”对话框，请在“编辑”菜单上选择“查找和替换”，或按 Ctrl+Shift+F。
+- 按 Ctrl+Shift+F 作为查找多个文件中的字符串的快捷方式。
+- 按 Ctrl+Shift+H 作为查找和替换多个文件中的字符串的快捷方式。
+
+“在文件中查找/替换”与“查找和替换”控件类似，区别在于可以定义搜索范围。 不仅可以搜索当前在编辑器中打开的文件，还可以搜索所有打开的文档、整个解决方案、当前项目，及所选文件夹集。 还可以按文件扩展名搜索。 要访问“在文件中查找/替换”对话框，请在“编辑”菜单上选择“查找和替换”（或按 Ctrl+Shift+F）。
 
 ![在 Visual Studio 中的文件中查找](media/find-in-files-box.png)
 
@@ -93,7 +99,7 @@ ms.locfileid: "55937443"
 > [!NOTE]
 > 本部分适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[块选择](/visualstudio/mac/block-selection)。
 
-**Visual Studio 2017 版本 15.8 中的新增内容**
+**在 Visual Studio 2017 版本 15.8 中引入**
 
 使用“多个插入点选择”同时在两个或多个位置进行相同编辑。 例如，可同时插入相同的文本或修改多个位置的现有文本。
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Feedback Client 2017 工作负载和组件 ID
+title: Visual Studio Feedback Client 工作负载和组件 ID
 titleSuffix: ''
 description: 使用 Visual Studio 工作负载和组件 ID 提供有关 Azure DevOps Services 或 Team Foundation Server 的大量反馈
 keywords: ''
@@ -13,16 +13,17 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: 7392a100-100c-458c-9394-828695109015
-ms.workload:
-- multiple
-ms.openlocfilehash: 2181d080875843c381d7498ac52a3bb0d381459a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: f23af12a79e1b04c193e85c6fa31ac225af68a6d
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844400"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324073"
 ---
-# <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio Feedback Client 2017 组件目录
+# <a name="visual-studio-feedback-client-component-directory"></a>Visual Studio Feedback Client 组件目录
 
 本页的表中列出了可用于通过使用命令行安装 Visual Studio 或可指定为 VSIX 清单中的依赖项的 ID。 请注意，我们将在发布 Visual Studio 更新时添加其他组件。
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cda6865a4dee34976fa2885313db6aad253f32c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924443"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223593"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用“查看定义”(Alt+F12) 查看和编辑代码
 
@@ -24,7 +24,7 @@ ms.locfileid: "55924443"
 
 ### <a name="to-open-a-peek-definition-window"></a>打开“查看定义”窗口
 
-1. 若要速览定义，可以在右键单击菜单中对要浏览的类型或成员选择“速览定义”。 在 Visual Studio 2017 的 15.4 版本及更高版本中，如果该选项为启用，还可以按“Ctrl”（或另一个修饰符）并单击成员名称来使用鼠标快速查看定义。 或者在键盘上按 Alt+F12。
+1. 若要速览定义，可以在右键单击菜单中对要浏览的类型或成员选择“速览定义”。 如果启用该选项，还可以按“Ctrl”（或另一个修饰符）并单击成员名称来使用鼠标快速查看定义。 或者在键盘上按 Alt+F12。
 
      本插图显示了名为 `Print()` 的方法的“查看定义”窗口：
 

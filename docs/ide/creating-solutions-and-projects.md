@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2e4652bb6a0ea1ec138138e6966ab005362a45d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937513"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223242"
 ---
 # <a name="create-solutions-and-projects"></a>创建解决方案和项目
 
@@ -53,7 +53,7 @@ ms.locfileid: "55937513"
    ![“新建项目”对话框](./media/vside-newproject-templates-list.png)
 
    > [!NOTE]
-   > 显示的可用语言和项目模板列表取决于正在运行的 Visual Studio 版本和安装的工作负载。 若要了解如何安装附加工作负载，请参阅[通过添加或删除工作负载和组件修改 Visual Studio 2017](../install/modify-visual-studio.md)。
+   > 显示的可用语言和项目模板列表取决于正在运行的 Visual Studio 版本和安装的工作负载。 要了解如何安装附加工作负载，请参阅[通过添加或删除工作负载和组件修改 Visual Studio](../install/modify-visual-studio.md)。
 
 2. 通过选择语言名称旁边的三角形，然后选择项目类型，可显示要使用的编程语言的模板列表。
 

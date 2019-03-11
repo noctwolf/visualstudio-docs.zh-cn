@@ -14,84 +14,84 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a19a243d6bd54c62d680ff348be016c011653db7
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318311"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221887"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 测试资源管理器常见问题解答
 
 ## <a name="dynamic-test-discovery"></a>动态测试发现
 
-测试资源管理器未发现动态定义的测试。（例如，理论、自定义适配器、自定义特征和 #ifdef 等）如何发现这些测试？**
+**测试资源管理器未发现动态定义的测试。（例如，理论、自定义适配器、自定义特征和 #ifdef 等）如何发现这些测试？
 
-  请生成项目，并确保在“工具” > “选项” > “测试”中打开基于程序集的发现。
+请生成项目，并确保在“工具” > “选项” > “测试”中打开基于程序集的发现。
 
-  [实时测试发现](https://go.microsoft.com/fwlink/?linkid=862824)是一种基于源的测试发现功能。 该功能无法发现使用理论、自定义适配器、自定义特征和 `#ifdef` 语句等的测试，因为这些项是在运行时定义的。 需要进行生成才能准确发现此类测试。 在 Visual Studio 2017 版本 15.6 及更高版本中，基于程序集的发现（传统发现）仅在生成后运行。 此设置意味着实时测试发现会在编辑时找到尽可能多的测试，并且通过基于程序集的发现可在生成之后显示动态定义的测试。 “实时测试发现”改进了响应能力，但仍可让你在生成后获取完整且准确的结果。
+[实时测试发现](https://go.microsoft.com/fwlink/?linkid=862824)是一种基于源的测试发现功能。 该功能无法发现使用理论、自定义适配器、自定义特征和 `#ifdef` 语句等的测试，因为这些项是在运行时定义的。 需要进行生成才能准确发现此类测试。 在 Visual Studio 2017 版本 15.6 及更高版本中，基于程序集的发现（传统发现）仅在生成后运行。 此设置意味着实时测试发现会在编辑时找到尽可能多的测试，并且通过基于程序集的发现可在生成之后显示动态定义的测试。 “实时测试发现”改进了响应能力，但仍可让你在生成后获取完整且准确的结果。
 
 ## <a name="test-explorer--plus-symbol"></a>测试资源管理器加号 (+)
 
 测试资源管理器首行中出现的加号 (+) 是什么意思？
 
-  加号 (+) 表示，只要启用基于程序集的发现，即可在生成后发现更多测试。 如果在项目中检测到动态定义的测试，也会出现该符号。
+加号 (+) 表示，只要启用基于程序集的发现，即可在生成后发现更多测试。 如果在项目中检测到动态定义的测试，也会出现该符号。
 
-  ![加号汇总行](media/testex-plussymbol.png)
+![加号汇总行](media/testex-plussymbol.png)
 
 ## <a name="assembly-based-discovery"></a>基于程序集的发现
 
 基于程序集的发现不再对我的项目有效。如何重新启动它？
 
-  请转到“工具” > “选项” > “测试”，选中“另外，生成后从已生成的程序集中发现测试”框。
+请转到“工具” > “选项” > “测试”，选中“另外，生成后从已生成的程序集中发现测试”框。
 
-  ![基于程序集的选项](media/testex-toolsoptions.png)
+![基于程序集的选项](media/testex-toolsoptions.png)
 
 ## <a name="real-time-test-discovery"></a>实时测试发现
 
 在我键入时，测试现在会显示在测试资源管理器中，而不必生成我的项目。进行了哪些更改？
 
-  此功能称为[实时测试发现](https://go.microsoft.com/fwlink/?linkid=862824)。 它使用 Roslyn 分析器来发现测试并实时填充测试资源管理器，而无需你生成项目。 若要深入了解动态定义测试（如理论或自定义特征）的测试发现行为，请参阅常见问题解答 1。
+此功能称为[实时测试发现](https://go.microsoft.com/fwlink/?linkid=862824)。 它使用 Roslyn 分析器来发现测试并实时填充测试资源管理器，而无需你生成项目。 若要深入了解动态定义测试（如理论或自定义特征）的测试发现行为，请参阅常见问题解答 1。
 
 ## <a name="real-time-test-discovery-compatibility"></a>实时测试发现兼容性
 
 哪些语言和测试框架可以使用实时测试发现？
 
-  由于[实施测试发现](https://go.microsoft.com/fwlink/?linkid=862824)是使用 Roslyn 编译器生成的，因此仅适用于托管语言（C# 和 Visual Basic）。 目前，实时测试发现仅适用于 xUnit、NUnit 和 MSTest 框架。
+由于[实施测试发现](https://go.microsoft.com/fwlink/?linkid=862824)是使用 Roslyn 编译器生成的，因此仅适用于托管语言（C# 和 Visual Basic）。 目前，实时测试发现仅适用于 xUnit、NUnit 和 MSTest 框架。
 
 ## <a name="test-explorer-logs"></a>测试资源管理器日志
 
 如何针对测试资源管理器打开日志？
 
-  导航到“工具” > “选项” > “测试”，并在此处找到“日志记录”部分。
+导航到“工具” > “选项” > “测试”，并在此处找到“日志记录”部分。
 
 ## <a name="uwp-test-discovery"></a>UWP 测试发现
 
 为何在我部署应用之前，系统未发现 UWP 项目中的测试？
 
-  UWP 测试面向的是部署应用时的另一个运行时。 这表示，你需要生成项目，还需要进行部署，才能正确地发现用于 UWP 项目的测试。
+UWP 测试面向的是部署应用时的另一个运行时。 这表示，你需要生成项目，还需要进行部署，才能正确地发现用于 UWP 项目的测试。
 
 ## <a name="test-explorer-sorting"></a>测试资源管理器排序
 
 如何在层次结构视图中进行测试结果排序？
 
-  层次结构视图按字母顺序对测试进行排序（与按结果排序相反）。 按设置划分的另一组通常按结果对测试结果进行排序，然后按字母排序。 在下图中根据选项查看不同组以进行比较。 可通过[此 GitHub 问题](https://github.com/Microsoft/vstest/issues/1425)提供设计方面的反馈。
+层次结构视图按字母顺序对测试进行排序（与按结果排序相反）。 按设置划分的另一组通常按结果对测试结果进行排序，然后按字母排序。 在下图中根据选项查看不同组以进行比较。 可通过[此 GitHub 问题](https://github.com/Microsoft/vstest/issues/1425)提供设计方面的反馈。
 
-  ![SortingExamples](media/testex-sortingex.png)
+![SortingExamples](media/testex-sortingex.png)
 
 ## <a name="test-explorer-hierarchy-view"></a>测试资源管理器层次结构视图
 
 在层次结构视图中，“项目”、“命名空间”和“类”分组旁存在“已传递”、“失败”、“已跳过”和“不运行”图标。这些图标代表什么？
 
-  “项目”、“命名空间”和“类”分组旁的图标显示该分组中的测试状态。 请参见下表。
+“项目”、“命名空间”和“类”分组旁的图标显示该分组中的测试状态。 请参见下表。
 
-  ![测试资源管理器层次结构图标](media/testex-hierarchyicons.png)
+![测试资源管理器层次结构图标](media/testex-hierarchyicons.png)
 
 ## <a name="search-by-file-path"></a>按文件路径搜索
 
 测试资源管理器搜索框中不再有“文件路径”筛选器。
 
-Visual Studio 2017 版本 15.7 预览版 3 已删除“测试资源管理器”搜索框中的文件路径筛选器。 此功能的使用率较低，测试资源管理器省去此功能后可提升测试方法的检索速度。 如果此更改会中断你的开发流，请通过[开发人员社区](https://developercommunity.visualstudio.com/)向我们提供反馈。
+Visual Studio 2017 版本 15.7 已删除“测试资源管理器”搜索框中的文件路径筛选器。 此功能的使用率较低，测试资源管理器省去此功能后可提升测试方法的检索速度。 如果此更改会中断你的开发流，请通过[开发人员社区](https://developercommunity.visualstudio.com/)向我们提供反馈。
 
 ## <a name="remove-undocumented-interfaces"></a>删除未记录的接口
 
@@ -105,18 +105,18 @@ Visual Studio 2019 中不再出现一些与测试相关的 API。进行了哪些
 
 所有测试项目必须在其 csproj 中包含各自的 .NET 测试适配器 NuGet 引用。 如果未包含，在生成之后启动测试适配器扩展的发现或用户尝试运行所选测试时，项目中将显示以下测试输出：
 
-测试项目 {} 不引用任何 .NET NuGet 适配器。测试发现或执行可能不适用于此项目。建议在解决方案的每个 .NET 测试项目中引用 NuGet 测试适配器。**
+测试项目 {} 不引用任何 .NET NuGet 适配器。测试发现或执行可能不适用于此项目。建议在解决方案的每个 .NET 测试项目中引用 NuGet 测试适配器。
 
 项目需要使用测试适配器 NuGet 包，而不使用测试适配器扩展。 该需求极大地提高了性能，并通过持续集成减少产生的问题。 阅读[发行说明](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension)中有关 .NET 测试适配器扩展弃用的详细信息。
 
 > [!NOTE]
 > 如果使用 NUnit 2 测试适配器且无法迁移到 NUnit 3 测试适配器，则可以在 Visual Studio 15.8 版的“工具” > “选项” > “测试”中关闭这一新发现行为。
 
-  ![“工具”选项中的测试资源管理器适配器行为](media/testex-adapterbehavior.png)
+![“工具”选项中的测试资源管理器适配器行为](media/testex-adapterbehavior.png)
 
 ## <a name="uwp-testcontainer-was-not-found"></a>未找到 UWP TestContainer
 
-我的 UWP 测试不再在 Visual Studio 2017 版本 15.7 及更高版本中执行。
+**我的 UWP 测试不再在 Visual Studio 2017 版本 15.7 及更高版本中执行。**
 
 最近的 UWP 测试项目指定了一个测试平台生成属性，通过它可提供更佳的测试应用识别性能。 如果具有在低于 Visual Studio 版本 15.7 的版本上初始化的 UWP 测试项目，可能会在“输出” > “测试”中看到该错误：
 

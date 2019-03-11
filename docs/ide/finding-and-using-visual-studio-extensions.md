@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b423f666ed27df1723a30a0413d8388a6c5fa903
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1033eb38b10eaaf85a20eedf0a8260654a793962
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919737"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222748"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>查找和使用 Visual Studio 扩展
 
@@ -61,9 +61,9 @@ Visual Studio Marketplace 中有可用的新版本时，将自动更新扩展。
 
 ## <a name="extension-crash-and-unresponsiveness-notifications"></a>扩展崩溃和无响应通知
 
-在新的 Visual Studio 2017（版本 15.3）中，如果 Visual Studio 怀疑扩展已在之前的会话期间发生故障，将会就此发出通知。 Visual Studio 发生故障时，会存储异常堆栈。 下一次 Visual Studio 启动时，它会检查堆栈，同时开始处理叶和构建基础映像。 如果 Visual Studio 确定框架所属的模块属于已安装和已启用的扩展，它将显示一条通知。
+如果 Visual Studio 怀疑扩展已在之前的会话期间发生故障，将会发出通知。 Visual Studio 发生故障时，会存储异常堆栈。 下一次 Visual Studio 启动时，它会检查堆栈，同时开始处理叶和构建基础映像。 如果 Visual Studio 确定框架所属的模块属于已安装和已启用的扩展，它将显示一条通知。
 
-在新的 Visual Studio 2017 版本 15.6 中，如果 Visual Studio 怀疑某个扩展导致 UI 无响应，也会就此发出通知。
+如果 Visual Studio 怀疑某个扩展导致 UI 无响应，也会发出通知。
 
 显示这些通知时，可以忽略它们，或者可以执行以下任一操作：
 

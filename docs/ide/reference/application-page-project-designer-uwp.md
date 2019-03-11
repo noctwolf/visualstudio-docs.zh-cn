@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4d2f1dc7ba69d0c9521c5ad4a1a075b3da71e3a5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 416661a39f54429f24cca66a0ec1be7b6c87629d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911332"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222704"
 ---
 # <a name="application-property-page-uwp-projects"></a>应用程序属性页（UWP 项目）
 
@@ -44,7 +44,7 @@ ms.locfileid: "55911332"
 
 可通过本部分中的下拉列表，为应用设置目标版本和最低版本的 Windows 10。 建议将目标设定为 Windows 10 的最新版本，如果你正在开发企业应用，那么也可支持较旧的最低版本。 有关要选择的 Windows 10 版本的详细信息，请参阅[选择 UWP 版本](/windows/uwp/updates-and-versions/choose-a-uwp-version)。
 
-有关 Visual Studio 2017 中的平台目标信息，请参阅[平台目标](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting)。
+有关 Visual Studio 中的平台目标信息，请参阅[平台目标](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting)。
 
 ## <a name="see-also"></a>请参阅
 

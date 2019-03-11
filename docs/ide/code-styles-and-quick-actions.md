@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: a9571456a5c9b277b69e6045e1277f78d586f3e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923365"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223125"
 ---
 # <a name="code-style-preferences"></a>代码样式首选项
 
@@ -38,11 +38,11 @@ ms.locfileid: "55923365"
 
 ## <a name="format-document-command"></a>“设置文档格式”命令
 
-在 Visual Studio 2017 版本 15.8 及更高版本中，可配置“设置文档格式”命令（“编辑” > “高级” > “设置文档格式”），从而对文件执行其他代码清理，例如删除 Using 和对其排序，或者应用代码样式首选项。 可定义希望“设置文档格式”在[设置格式”选项页面](reference/options-text-editor-csharp-formatting.md#format-document-settings)上应用的设置。
+可配置“设置文档格式”命令（“编辑” > “高级” > “设置文档格式”），从而对文件执行其他代码清理，例如删除 Using 和对其排序，或者应用代码样式首选项。 可定义希望“设置文档格式”在[设置格式”选项页面](reference/options-text-editor-csharp-formatting.md#format-document-settings)上应用的设置。
 
 代码清理按照 .editorconfig 文件中配置的设置进行操作。如果缺少该规则或文件，则按照通过“工具” > “选项” > “文本编辑器” > “C#”>[“代码样式”或“格式”]中设定的设置进行操作。
 
-在 Visual Studio 2017 中首次触发“设置文档格式”命令时，将显示一个黄色信息栏，提示你配置代码清理设置。
+在 Visual Studio 中首次触发“设置文档格式”命令时，将显示一个黄色信息栏，提示你配置代码清理设置。
 
 > [!TIP]
 > .editorconfig 文件中配置为“无”的规则不参与代码清理，但可通过“快速操作和重构”菜单单独应用。

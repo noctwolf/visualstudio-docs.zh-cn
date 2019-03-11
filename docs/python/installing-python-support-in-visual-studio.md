@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a74c5992699fa321839c671f527c513ae2b9291
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 38cb805978396c8c1744a953a7b1ef7417f43483
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155482"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323246"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -47,7 +47,17 @@ ms.locfileid: "56155482"
 
     ![Visual Studio 安装程序中的 Python 开发工作负载](media/installation-python-workload.png)
 
-    可选：如果使用数据科学，还可考虑使用**数据科学和分析应用程序**工作负载。 此工作负载包含对 Python 以及 R 和 F# 语言的支持。 有关详细信息，请参阅[数据科学和分析应用程序工作负载](../rtvs/data-science-and-analytical-applications-workload.md)。
+   ::: moniker range="vs-2017"
+
+    可选：如果使用数据科学，还可考虑使用**数据科学和分析应用程序**工作负载。 此工作负载包含对 Python、R 和 F# 语言的支持。 有关详细信息，请参阅[数据科学和分析应用程序工作负载](data-science-and-analytical-applications-workload.md)。
+    
+    ::: moniker-end
+    
+   ::: moniker range=">=vs-2019"
+
+    可选：如果使用数据科学，还可考虑使用**数据科学和分析应用程序**工作负载。 此工作负载包含对 Python 和 F# 语言的支持。 有关详细信息，请参阅[数据科学和分析应用程序工作负载](data-science-and-analytical-applications-workload.md)。
+    
+    ::: moniker-end
 
     > [!Note]
     > Python 和数据科学工作负载仅可用于 Visual Studio 2017 版本 15.2 及更高版本。
@@ -56,7 +66,7 @@ ms.locfileid: "56155482"
 
     ![Visual Studio 安装程序中的 Python 开发选项](media/installation-python-options.png)
 
-    | 选项 | 说明​​ |
+    | 选项 | 说明 |
     | --- | --- |
     | Python 分发版本 | 选择计划使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 分发版本的 32 位和 64 位变型的任意组合。 每个组合都包含分发版本的解释器、运行时和库。 具体来说，Anaconda 是开放数据科学平台，包含各种预安装的包。 （可随时返回 Visual Studio 安装程序来添加或删除分发版本。）**说明**：如果已安装 Visual Studio 安装程序之外的分发版本，则无需检查此处的等效选项。 Visual Studio 会自动检测现有的 Python 安装。 请参阅[“Python 环境”窗口](managing-python-environments-in-visual-studio.md#the-python-environments-window)。 此外，若有比安装程序中所显示的版本更高的 Python 版本可用，可以单独安装较高版本，并且 Visual Studio 会检测到它。 |
     | **Cookiecutter 模板支持** | 安装 Cookiecutter 图形用户界面，用于发现模板、输入模板选项以及创建项目和文件。 请参阅[使用 Cookiecutter 扩展](using-python-cookiecutter-templates.md)。 |

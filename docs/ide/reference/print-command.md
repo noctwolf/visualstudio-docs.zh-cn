@@ -1,5 +1,5 @@
 ---
-title: Print 命令
+title: Debug.Print
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,46 +14,49 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a3de1fba86c78f16703efd858448bc0f25e8d0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df609011250cebc097d3d356242302dbe41f8007
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952289"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953552"
 ---
-# <a name="print-command"></a>Print 命令
+# <a name="print-command"></a>“打印”命令
+
 计算表达式或显示指定文本。
 
 ## <a name="syntax"></a>语法
 
 ```cmd
-Debug.Print text
+>Debug.Print text
 ```
 
 ## <a name="arguments"></a>自变量
- `text`
 
- 必需。 要计算的表达式或要显示的文本。
+`text`
+
+必需。 要计算的表达式或要显示的文本。
 
 ## <a name="remarks"></a>备注
- 可使用问号 (?) 作为此命令的别名。 例如，命令
+
+可使用问号 (?) 作为此命令的别名。 例如，命令
 
 ```cmd
 >Debug.Print expA
 ```
 
- 也可写作
+也可写作
 
 ```cmd
->? expA
+? expA
 ```
 
- 此命令的这两个版本都将返回表达式 `expA` 的当前值。
+此命令的这两个版本都会返回表达式 `expA` 的当前值。
 
 ## <a name="example"></a>示例
 
 ```cmd
->Debug.Print varA
+>Debug.Print DateTime.Now.Day
 ```
 
 ## <a name="see-also"></a>请参阅

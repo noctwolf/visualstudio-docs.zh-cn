@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中随附的 DataCamp 培训订阅。
 searchscope: VS Subscription
-ms.openlocfilehash: 83cbb3cb0b10faddab860caf71e11ca4a03d4e4a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841424"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428630"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 DataCamp 培训权益
 
@@ -69,8 +69,8 @@ DataCamp 权益的持续时间取决于你的 Visual Studio 订阅。
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise（标准）   | VL、Azure、零售、 | 3 个月       |  不是。  仅对新订阅者可用          |
 | Visual Studio Professional（标准） | VL、Azure、零售                                       | 3 个月                                                            |  不是。  仅对新订阅者可用           |
-| Visual Studio Test Professional（标准）                         | VL、零售                                              | 可用                                             |  不是。  仅对新订阅者可用           |
-| MSDN 平台（标准）                                          | VL、零售                                              | 可用                                              |  不是。  仅对新订阅者可用           |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 3 个月                                             |  不是。  仅对新订阅者可用           |
+| MSDN 平台（标准）                                          | VL、零售                                              | 3 个月                                              |  不是。  仅对新订阅者可用           |
 | Visual Studio Dev Essentials | 不可用  | 2 个月 | 不是。 仅对新订阅者可用 |
 | Visual Studio Enterprise（标准）  | NFR<sup>1</sup> |不可用  | 不可用 |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |

@@ -7,12 +7,12 @@ manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 561b55ee961162adb37cd393cac9ecf8b78c5ade
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926783"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223047"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 
@@ -30,11 +30,11 @@ Visual Studio 包含这些 C++ 测试框架，无需进行额外下载：
 
 除了已安装的框架，可以为要在 Visual Studio 中使用的任何框架编写自己的测试适配器。 测试适配器可以将单元测试与“测试资源管理器”窗口集成。 在 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 上提供了几个第三方适配器。 有关详细信息，请参阅[安装第三方单元测试框架](install-third-party-unit-test-frameworks.md)。
 
-**Visual Studio 2017 版本 15.7（Professional 和 Enterprise）**
+**Visual Studio 2017 版本 15.7 及更高版本（Professional 和 Enterprise）**
 
 C++ 单元测试项目支持 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)。
 
-**Visual Studio 2017 版本 15.5**
+**Visual Studio 2017 版本 15.5 及更高版本**
 
 - **Google Test 适配器**作为“使用 C++ 的桌面开发”工作负荷的默认组件包含在内。 它包含可通过“解决方案资源管理器”中解决方案节点上的“添加新项目”右键单击菜单添加到解决方案的项目模板，以及可通过“工具” > “选项”配置的选项。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 Google Test](how-to-use-google-test-for-cpp.md)。
 
@@ -117,7 +117,9 @@ TEST_METHOD(TestClassInit)
 
 ## <a name="use-codelens"></a>使用 CodeLens
 
-**Visual Studio 2017 版本 15.7（仅限 Professional 和 Enterprise 版本）**：通过 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)，无需离开代码编辑器即可快速查看单元测试的状态。 若要为 C++ 单元测试项目初始化 CodeLens，可使用下面的方法之一：
+**Visual Studio 2017 版本 15.7 及更高版本（仅 Professional 和 Enterprise 版本）**
+
+通过 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)，无需离开代码编辑器即可快速查看单元测试的状态。 若要为 C++ 单元测试项目初始化 CodeLens，可使用下面的方法之一：
 
 - 编辑和生成测试项目或解决方案。
 - 重新生成项目或解决方案。
@@ -127,10 +129,10 @@ TEST_METHOD(TestClassInit)
 
 ![C++ CodeLens 图标](media/cpp-test-codelens-icons.png)
 
- 单击图标可以查看详细信息，也可以运行或调试单元测试：
+单击图标可以查看详细信息，也可以运行或调试单元测试：
 
 ![C++ CodeLens 运行和调试](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>请参阅
 
-[单元测试代码](unit-test-your-code.md)
+- [单元测试代码](unit-test-your-code.md)

@@ -2,7 +2,7 @@
 title: Visual Studio 2019 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新增功能。
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,21 +14,21 @@ ms.prod: visual-studio-dev16
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41582f9f27b16a41c3ef10196f3cd29323579b4b
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: c4475836a9d4cdd394bff78280c5c075dd960e1d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450251"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223541"
 ---
-# <a name="whats-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 预览版中的新增功能
+# <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
-更新了[预览版 3 版本](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+[候选发布 (RC)](/visualstudio/releases/2019/release-notes/) 更新
 
 >[!div class="button"]
->[下载预览版](https://visualstudio.microsoft.com/vs/preview/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+preview)
+>[下载 RC](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
 
-Visual Studio 2019 预览版包含许多常规改进以及可优化开发者生产力和团队协作的新功能。 无论是第一次使用 Visual Studio 还是老用户 &mdash; 从简化的项目创建和代码运行状况管理，到团队和开源协作工作流程，你都将能够利用其功能来开发生命周期的所有方面。<br/><br/>
+Visual Studio 2019 包含许多常规改进以及可优化开发者生产力和团队协作的新功能。 无论是第一次使用 Visual Studio 还是老用户 &mdash; 从简化的项目创建和代码运行状况管理，到团队和开源协作工作流程，你都将能够利用其功能来开发生命周期的所有方面。<br/><br/>
 
 >[!VIDEO https://channel9.msdn.com/Events/Connect/Microsoft-Connect--2018/D190/player]
 
@@ -39,7 +39,7 @@ Visual Studio 2019 预览版包含许多常规改进以及可优化开发者生�
 * **[持续创新](#continuous-innovation)**。 智慧与智能、云支持的代码。
 
 > [!NOTE]
-> 有关 Visual Studio 2019 预览版中新增功能的完整列表，请参阅[发行说明](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)。
+> 有关 Visual Studio 2019 中新特性和新增功能的完整列表，请参阅 [RC 发行说明](/visualstudio/releases/2019/release-notes/)和[预览版 4 发行说明](/visualstudio/releases/2019/release-notes-preview/)。 有关这两个最新版本的详细信息，请参阅 [Visual Studio 2019 Release Candidate now available](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-release-candidate-rc-now-available/)（Visual Studio 2019 候选发布现已推出）博客文章。
 
 ## <a name="personal-and-team-productivity"></a>个人和团队生产力
 
@@ -75,7 +75,7 @@ Visual Studio 2019 预览版包含许多常规改进以及可优化开发者生�
 
 #### <a name="search-within-a-watch-window-and-format-watch-values"></a>在监视窗口中搜索，并设置监视值的格式
 
-你可能曾经体验过在监视窗口中查找一组值中的字符串。 在 Visual Studio 2019 预览版中，我们在监视、局部变量和自动窗口中添加了搜索，以帮助你查找要查找的对象和值。
+你可能曾经体验过在监视窗口中查找一组值中的字符串。 在 Visual Studio 2019 中，我们在监视、局部变量和自动窗口中添加了搜索，以帮助你查找要查找的对象和值。
 
 还可以格式化监视、本地和自动窗口中值的显示方式。  双击任何窗口中的一个项目并添加逗号 (",") 以访问可能的格式说明符下拉列表，每个列表都包含其预期效果的说明。
 
@@ -87,7 +87,7 @@ Visual Studio 2019 预览版包含许多常规改进以及可优化开发者生�
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 是一项开发者服务，可让你与团队成员共享代码库及其上下文，并直接从 Visual Studio 内获得即时双向协作。 利用“实时共享”，团队成员可以无缝且安全地读取、导航、编辑和调试已与他们共享的项目。
 
-Visual Studio 2019 预览版中会默认安装此服务。
+Visual Studio 2019 中会默认安装此服务。
 
 ![显示 Visual Studio 2019 中 Live Share 协作功能的动画 GIF 文件](media/live-share-collaboration.gif)
 
@@ -97,7 +97,7 @@ Visual Studio 2019 预览版中会默认安装此服务。
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>管理来自 IDE 的拉取请求 (PR)
 
-我们正在推出一个新的扩展，你可以下载该扩展与 Visual Studio 2019 预览版一起使用。 使用此新扩展，可以查看、运行甚至调试团队的拉取请求，而无需离开 Visual Studio IDE[（集成开发环境）](../get-started/visual-studio-ide.md)。 我们目前支持 Azure Repos 中的代码，但正在扩展以支持 GitHub 并改善整体体验。
+我们正在推出一个新的扩展，你可以下载该扩展与 Visual Studio 2019 一起使用。 使用此新扩展，可以查看、运行甚至调试团队的拉取请求，而无需离开 Visual Studio IDE[（集成开发环境）](../get-started/visual-studio-ide.md)。 我们目前支持 Azure Repos 中的代码，但正在扩展以支持 GitHub 并改善整体体验。
 
 要立即开始使用，可从 Visual Studio Marketplace 下载 [Visual Studio 的拉取请求](https://aka.ms/pr4vs)扩展。
 
@@ -110,7 +110,7 @@ Visual Studio 2019 的预览版支持构建适用于任何平台的 [.NET Core 3
 有关详细信息，请参阅以下页面：
 
 * [.NET Core 3 预览版 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) 和 [.NET Core 3 预览版 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md)发行说明
-* [宣布发布 .NET Core 3 预览版 1](https://blogs.msdn.microsoft.com/dotnet/2018/12/04/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) 和[宣布发布 .NET Core 3 预览版 2](https://blogs.msdn.microsoft.com/dotnet/2019/01/29/announcing-net-core-3-preview-2/) 博客文章
+* [宣布发布 .NET Core 3 预览版 1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) 和[宣布发布 .NET Core 3 预览版 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/) 博客文章
 
 ## <a name="continuous-innovation"></a>持续创新
 
@@ -118,7 +118,7 @@ Visual Studio 2019 的预览版支持构建适用于任何平台的 [.NET Core 3
 
 如果使用配置了不同显示比例因子的监视器，或远程连接到显示比例因子与主设备不同的计算机，你可能会发现 Visual Studio 看起来比较模糊或以错误的比例呈现。
 
-随着 Visual Studio 2019 预览版的发布，我们正在采取初步措施让 Visual Studio 成为一种按监视器感知 (PMA) 应用程序。 我们正在努力构建基础工作，确保无论使用何种显示比例因子，Visual Studio 都能正确呈现。
+随着 Visual Studio 2019 的发布，我们迈出了使 Visual Studio 成为按监视器感知 (PMA) 应用程序的第一步。 我们正在努力构建基础工作，确保无论使用何种显示比例因子，Visual Studio 都能正确呈现。
 
    ![Visual Studio 2019 中的按监视器感知 (PMA) 呈现](media/per-monitor-aware-dpi-scaling.png)
 
@@ -153,6 +153,7 @@ Visual Studio 2019 的预览版支持构建适用于任何平台的 [.NET Core 3
 
 ## <a name="see-also"></a>请参阅
 
-* [Visual Studio 2019 发行说明](/visualstudio/releases/2019/release-notes-preview?context=visualstudio/default&contextView=vs-2017)
+* [Visual Studio 2019 发行说明](/visualstudio/releases/2019/release-notes/)
+* [Visual Studio 2019 SDK 的新增功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Microsoft Connect()；2018 会议](https://www.microsoft.com/connectevent)
 * [Visual Studio 2017 中的新增功能](whats-new-visual-studio-2017.md)

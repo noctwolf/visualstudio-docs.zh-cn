@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6cace8f9728f71648300f3dfd9a073453e74ada7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7bcb75da8a21090450c18080240f76ae17c10281
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957164"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221575"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Visual Studio 中的测试工具
 
@@ -36,7 +36,7 @@ Visual Studio 测试工具可帮助你和你的团队达到并保持高标准的
 - [负载测试](../test/quickstart-create-a-load-test-project.md)通过运行单元测试和 Web 性能测试来模拟服务器应用程序上的负载。
 
 > [!NOTE]
-> Visual Studio 的所有版本均提供单元测试。 其他测试工具（如实时单元测试、IntelliTest 和编码的 UI 测试）仅在 Visual Studio Enterprise 版中提供。 有关版本的详细信息，请参阅[比较 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)。
+> Visual Studio 的所有版本均提供单元测试。 其他测试工具（如实时单元测试、IntelliTest 和编码的 UI 测试）仅在 Visual Studio Enterprise 版中提供。 有关版本的详细信息，请参阅[比较 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
 
 ## <a name="related-scenarios"></a>相关方案
 

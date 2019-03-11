@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4676727f70b8065aee34578f563f286bc85bcb25
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3082f2a3acaac7b874f98d675ae28d11ea0374ae
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950300"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223762"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio 中的 Live Unit Testing 入门
 
@@ -34,13 +34,13 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 
 ## <a name="prerequisites"></a>系统必备
 
-本教程需要已安装具有 .NET Core 2.0 工作负载的 Visual Studio 2017 Enterprise Edition 版本 15.3。
+本教程需要已安装具有 .NET Core 2.0 工作负载的 Visual Studio Enterprise Edition。
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>创建解决方案和类库项目
 
 首先，创建名为 `UtilityLibraries` 的 Visual Studio 解决方案，其中包含单个 .NET Standard 类库项目 `StringLibrary`。 可以使用 C# 或 Visual Basic 编写 `StringLibrary`。
 
-解决方案只是一个可以存储一个或多个项目的容器。 要创建解决方案，请打开 Visual Studio 2017 并执行以下操作：
+解决方案只是一个可以存储一个或多个项目的容器。 要创建解决方案，请打开 Visual Studio 并执行以下操作：
 
 1. 从顶级的 Visual Studio 菜单中依次选择“文件” > “新建” > “项目”。
 

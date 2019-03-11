@@ -10,16 +10,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8101697ad225becb1fcddc5ee737fc4c6195cc7
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 95cbdeb9a4e8a3f98fefa7650b36cc4dd59ed550
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796577"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221536"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing 中的新增功能
 
-本主题列出从 Visual Studio 2017 版本 15.3 开始，每个 Visual Studio 版本中的 Live Unit Testing 添加的新功能。 如需大致了解如何使用 Live Unit Testing，请参阅[使用 Visual Studio 2017 执行 Live Unit Testing](live-unit-testing.md)。
+本主题列出从 Visual Studio 2017 版本 15.3 开始，每个 Visual Studio 版本中的 Live Unit Testing 添加的新功能。 如需大致了解如何使用 Live Unit Testing，请参阅[使用 Visual Studio 执行 Live Unit Testing](live-unit-testing.md)。
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-154"></a>适用于 Visual Studio 2017 版本 15.4 的 Live Unit Testing 中的新增功能
 
@@ -45,7 +45,7 @@ ms.locfileid: "56796577"
 
 - .NET Core 和 .NET Standard 支持。 可在使用 C# 或 Visual Basic 编写的 .NET Core 和 .NET Standard 解决方案中使用 Live Unit Testing。
 
--  性能得到了改进。 可以发现，在“Live Unit Testing”下首次完整生成并运行测试后，性能大大提升。 同时还会发现，对于同一解决方案，在后续启动 Live Unit Testing 时的性能也有显著提升。 我们现在可以保留 Live Unit Testing 生成的数据，并在检查结果是最新的情况下尽可能重用这些数据。
+- 性能得到了改进。 可以发现，在“Live Unit Testing”下首次完整生成并运行测试后，性能大大提升。 同时还会发现，对于同一解决方案，在后续启动 Live Unit Testing 时的性能也有显著提升。 我们现在可以保留 Live Unit Testing 生成的数据，并在检查结果是最新的情况下尽可能重用这些数据。
 
 除这些主要解决方案外，Live Unit Testing 还包括以下增强功能：
 
@@ -58,10 +58,12 @@ ms.locfileid: "56796577"
 - “测试/Live Unit Testing”的菜单栏下额外添加了一些菜单项。 “重置清理”可以删除永久性数据，并能重新生成这些数据。 “选项”跳转到“工具/选项/Live Unit Testing/常规”。
 
 - 现在可以使用以下属性，在源代码中指定要从 Live Unit Testing 中排除的目标测试方法：
+
    - 对于 xUnit：`[Trait("Category", "SkipWhenLiveUnitTesting")]`
    - 对于 NUnit：`[Category("SkipWhenLiveUnitTesting")]`
    - 对于 MSTest：`[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>请参阅
+
 - [Live Unit Testing 简介](live-unit-testing-intro.md)
-- [使用 Visual Studio 2017 执行 Live Unit Testing](live-unit-testing.md)
+- [使用 Visual Studio 进行实时单元测试](live-unit-testing.md)

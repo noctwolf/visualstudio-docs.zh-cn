@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22d0fcfe1a048b83926cbd79e9c479e2f1ec85ab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935571"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222082"
 ---
 # <a name="how-to-create-item-templates"></a>如何：创建项模板
 
@@ -109,19 +109,29 @@ ms.locfileid: "55935571"
 
 1. 创建项目和项目项。
 
-1. 修改项目项，直到可以将它另存为一个模板。
+2. 修改项目项，直到可以将它另存为一个模板。
 
-1. 修改代码文件以指示应进行参数替换的位置。 有关参数替换的详细信息，请参阅[如何：替换模板中的参数。](../ide/how-to-substitute-parameters-in-a-template.md)
+3. 修改代码文件以指示应进行参数替换的位置。 有关参数替换的详细信息，请参阅[如何：替换模板中的参数。](../ide/how-to-substitute-parameters-in-a-template.md)
 
-1. 创建 XML 文件，并将其与 .vstemplate 文件扩展名保存在与项目文件相同的目录中。
+4. 创建 XML 文件，并将其与 .vstemplate 文件扩展名保存在与项目文件相同的目录中。
 
-1. 编辑 .vstemplate XML 文件以提供项模板元数据。 有关详细信息，请参阅[模板架构引用（扩展性）](../extensibility/visual-studio-template-schema-reference.md)以及上一节中的示例。
+5. 编辑 .vstemplate XML 文件以提供项模板元数据。 有关详细信息，请参阅[模板架构引用（扩展性）](../extensibility/visual-studio-template-schema-reference.md)以及上一节中的示例。
 
-1. 保存 .vstemplate 文件并将其关闭。
+6. 保存 .vstemplate 文件并将其关闭。
 
-1. 在**个Windows资源管理器**中，选择要包含在模板中的文件。 右键单击所选文件，然后选择“发送至” > “压缩的文件夹（zip 格式）”。 所选的文件将压缩到一个 .zip 文件中。
+7. 在**个Windows资源管理器**中，选择要包含在模板中的文件。 右键单击所选文件，然后选择“发送至” > “压缩的文件夹（zip 格式）”。 所选的文件将压缩到一个 .zip 文件中。
 
-1. 复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2017 中，默认目录是 %USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates。 有关详细信息，请参阅[如何：查找和组织项目和项模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+::: moniker range="vs-2017"
+
+8. 复制该 .zip 文件并将其粘贴到用户的项模板位置。 默认目录是 %USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates。 有关详细信息，请参阅[如何：查找和组织项目和项模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. 复制该 .zip 文件并将其粘贴到用户的项模板位置。 默认目录是 %USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates。 有关详细信息，请参阅[如何：查找和组织项目和项模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+
+::: moniker-end
 
 ## <a name="see-also"></a>请参阅
 

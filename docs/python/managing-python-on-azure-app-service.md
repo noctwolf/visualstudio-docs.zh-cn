@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f68f12578ea7b5148aa018c21e14c334c33ad9a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c0f0cdb6c1807aa8ce0a30e7371fe8ad4270ca7b
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918918"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324177"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure 应用服务 (Windows) 上设置 Python 环境
 
@@ -76,7 +76,7 @@ Azure 应用服务的可自定义 Python 支持作为一组应用服务站点扩
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>将 web.config 设置为指向 Python 解释器
 
-（通过门户或 Azure 资源管理器模板）安装站点扩展后，接下来将应用的 web.config 文件指向 Python 解释器。 web.config 文件指示在应用服务上运行的 IIS (7+) Web 服务器如何通过 FastCGI 或 HttpPlatform 处理 Python 请求。
+（通过门户或 Azure 资源管理器模板）安装站点扩展后，接下来将应用的 web.config 文件指向 Python 解释器。 web.config 文件指示在应用服务上运行的 IIS (7+) Web 服务器如何通过 HttpPlatform（推荐）或 FastCGI 处理 Python 请求。
 
 首先找到站点扩展程序 python.exe 的完整路径，然后创建并修改相应的 web.config 文件。
 
@@ -97,6 +97,33 @@ Python 站点扩展安装在 d:\home 下服务器上的文件夹中，适合 Pyt
 1. 在“应用服务”页上，选择“开发工具” > “控制台”。
 1. 输入命令 `ls ../home` 或 `dir ..\home` 查看顶级扩展文件夹，例如 Python361x64。
 1. 输入一个类似于 `ls ../home/python361x64` 或 `dir ..\home\python361x64` 的命令，确认该文件夹包含 python.exe 和其他解释器文件。
+
+### <a name="configure-the-httpplatform-handler"></a>配置 HttpPlatform 处理程序
+
+HttpPlatform 模块将套接字连接直接传递到独立的 Python 进程。 借助此传递可根据需要运行任何 Web 服务器，但需要用于运行本地 Web 服务器的启动脚本。 在 web.config 的 `<httpPlatform>` 元素中指定脚本，其中 `processPath` 属性指向站点扩展的 Python 解释器，`arguments` 属性指向脚本和希望提供的任何参数：
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <handlers>
+      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
+    </handlers>
+    <httpPlatform processPath="D:\home\Python361x64\python.exe"
+                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
+                  stdoutLogEnabled="true"
+                  stdoutLogFile="D:\home\LogFiles\python.log"
+                  startupTimeLimit="60"
+                  processesPerApplication="16">
+      <environmentVariables>
+        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
+      </environmentVariables>
+    </httpPlatform>
+  </system.webServer>
+</configuration>
+```
+
+此处显示的 `HTTP_PLATFORM_PORT` 环境变量包含端口，本地服务器使用该端口侦听来自 localhost 的连接。 此示例还演示如何根据需要创建其他环境变量，本示例中为 `SERVER_PORT`。
 
 ### <a name="configure-the-fastcgi-handler"></a>配置 FastCGI 处理程序
 
@@ -128,33 +155,6 @@ FastCGI 是在请求级别工作的接口。 IIS 接收传入的连接，并将�
 - `WSGI_LOG` 为可选，但建议在调试应用时使用。
 
 有关 Bottle、Flask 和 Django Web 应用的 web.config 内容的更多详细信息，请参阅[发布到 Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)。
-
-### <a name="configure-the-httpplatform-handler"></a>配置 HttpPlatform 处理程序
-
-HttpPlatform 模块将套接字连接直接传递到独立的 Python 进程。 借助此传递可根据需要运行任何 Web 服务器，但需要用于运行本地 Web 服务器的启动脚本。 在 web.config 的 `<httpPlatform>` 元素中指定脚本，其中 `processPath` 属性指向站点扩展的 Python 解释器，`arguments` 属性指向脚本和希望提供的任何参数：
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-  <system.webServer>
-    <handlers>
-      <add name="PythonHandler" path="*" verb="*" modules="httpPlatformHandler" resourceType="Unspecified"/>
-    </handlers>
-    <httpPlatform processPath="D:\home\Python361x64\python.exe"
-                  arguments="D:\home\site\wwwroot\runserver.py --port %HTTP_PLATFORM_PORT%"
-                  stdoutLogEnabled="true"
-                  stdoutLogFile="D:\home\LogFiles\python.log"
-                  startupTimeLimit="60"
-                  processesPerApplication="16">
-      <environmentVariables>
-        <environmentVariable name="SERVER_PORT" value="%HTTP_PLATFORM_PORT%" />
-      </environmentVariables>
-    </httpPlatform>
-  </system.webServer>
-</configuration>
-```
-
-此处显示的 `HTTP_PLATFORM_PORT` 环境变量包含端口，本地服务器使用该端口侦听来自 localhost 的连接。 此示例还演示如何根据需要创建其他环境变量，本示例中为 `SERVER_PORT`。
 
 ## <a name="install-packages"></a>安装包
 

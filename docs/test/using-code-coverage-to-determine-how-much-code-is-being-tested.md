@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba0869dcaccbd5f0b13661738a1d923758513aeb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935103"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222904"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用代码覆盖率确定所测试的代码量
 
@@ -258,7 +258,17 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 1. 启动“Visual Studio 开发人员命令提示”：
 
-   在 Windows 启动菜单中选择“Visual Studio 2017” > “VS 2017 的开发人员命令提示符”。
+   ::: moniker range="vs-2017"
+
+   在 Windows“启动”菜单中，选择“Visual Studio 2017”>“VS 2017 的开发人员命令提示”。
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   在 Windows“启动”菜单中，选择“Visual Studio 2019”>“VS 2019 的开发人员命令提示”。
+
+   ::: moniker-end
 
 2. 在命令提示符下，运行下列命令：
 

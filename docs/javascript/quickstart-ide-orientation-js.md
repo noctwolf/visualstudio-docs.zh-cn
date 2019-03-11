@@ -8,18 +8,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bac4ba3e929da9ad6f22666c6a6b3f71b288c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920032"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428656"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>初步了解 Visual Studio IDE
 
 在这个 5-10 分钟的 Visual Studio 集成开发环境 (IDE) 简介中，我们将介绍一些窗口、菜单和其他 UI 功能。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
+
+::: moniker range=">=vs-2019"
+
+## <a name="start-window"></a>启动窗口
+
+启动 Visual Studio 后，最先看到的是启动窗口。 启动窗口旨在帮助你更快地“编码”。 它具有以下选项：关闭或签出代码、打开现有项目或解决方案、创建新项目或只打开包含一些代码文件的文件夹。
+
+[![](media/vs-2019/start-window.png "Visual Studio 2019 中的启动窗口")](media/vs-2019/start-window.png)
+
+如果首次使用 Visual Studio，最近的项目列表将为空。
+
+如果使用基于非 MSBuild 的代码库，则将使用“打开本地文件夹”选项在 Visual Studio 中打开代码。 有关详细信息，请参阅[在 Visual Studio 中开发代码而无需创建项目或解决方案](develop-javascript-code-without-solutions-projects.md)。 否则，可以从源提供程序（如 GitHub 或 Azure DevOps）创建新项目或克隆项目。
+
+“无需代码，即可继续”选项仅打开 Visual Studio 开发环境，而不加载任何特定项目或代码。 可以选择此选项，加入 [Live Share](/visualstudio/liveshare/) 会话或附加到进程以进行调试。 此外可以按“Esc”关闭启动窗口，然后打开 IDE。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="start-page"></a>起始页
 
@@ -31,9 +49,27 @@ ms.locfileid: "55920032"
 
 ![Visual Studio 中的“文件”菜单](media/quickstart-IDE-file-menu-large.png)
 
+::: moniker-end
+
 ## <a name="create-a-project"></a>创建项目
 
 为继续了解 Visual Studio 的功能，我们将创建一个新项目。
+
+::: moniker range=">=vs-2019"
+
+1. 在“开始窗口”上，选择“新建项目”，然后在搜索框中键入“javascript”，以筛选项目类型列表，将项目类型列表筛选为名称或语言类型中包含“javascript”的项目类型列表。
+
+   Visual Studio 提供了各种类型的项目模板，帮助你快速开始编写代码。 （或者，如果你是 TypeScript 开发者，则可以使用该语言创建项目。 对于所有编程语言而言，我们将查看的 UI 都是相似的。）
+
+   ![在 Visual Studio 开始窗口上搜索项目模板](media/vs-2019/create-new-project.png)
+
+1. 选择“空白 Node.js Web 应用程序”项目模板并单击“下一步”。 
+
+1. 在显示的“配置新项目”对话框中，接受默认的项目名称并选择“创建”。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 1. 在“起始页”上“新建项目”下的搜索框中，键入 javascript，筛选项目类型列表，以仅显示名称或语言类型中包含“javascript”的项目类型。
 
@@ -42,6 +78,7 @@ ms.locfileid: "55920032"
    Visual Studio 提供了各种类型的项目模板，帮助你快速开始编写代码。 选择“空白 Node.js Web 应用程序”项目模板。 （或者，如果你是 TypeScript 开发者，则可以使用该语言创建项目。 对于所有编程语言而言，我们将查看的 UI 都是相似的。）
 
 1. 在显示的“新建项目”对话框中，接受默认的项目名称并选择“确定”。
+::: moniker-end
 
    创建项目，并在“编辑器”窗口中打开名为 server.cs 的文件。 编辑器可显示文件的内容，是你在 Visual Studio 中完成大部分编码工作的地方。
 

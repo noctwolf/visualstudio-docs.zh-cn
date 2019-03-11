@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a54f18e6e69fd71f1d46205903728a909c668383
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935714"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222056"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>在 Visual Studio 中识别并自定义键盘快捷方式
 
@@ -106,11 +106,21 @@ ms.locfileid: "55935714"
 
 4. 选中“键盘”复选框，然后选择“下一步”按钮。
 
-    ![仅导出自定义的键盘快捷键](../ide/media/exportshortcuts.png)
+   ![仅导出自定义的键盘快捷键](../ide/media/exportshortcuts.png)
 
-5. 在“要如何命名你的设置文件?”和“在此目录中存储我的设置文件”框中，保留默认值或指定其他值，然后选择“完成”按钮。
+5. 在“要如何命名你的设置文件”和“在此目录中存储我的设置文件”框中，保留默认值或指定其他值，然后选择“完成”按钮。
 
-    默认情况下，你的快捷方式保存在 %USERPROFILE%\Documents\Visual Studio 2017\Settings 文件夹下的文件中。 文件名称将反映你导出设置的日期，扩展名为 .vssettings。
+::: moniker range="vs-2017"
+
+默认情况下，你的快捷方式保存在 %USERPROFILE%\Documents\Visual Studio 2017\Settings 文件夹下的文件中。 文件名称将反映你导出设置的日期，扩展名为 .vssettings。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+默认情况下，你的快捷键保存在 %USERPROFILE%\Documents\Visual Studio 2019\Settings 文件夹下的文件中。 文件名称将反映你导出设置的日期，扩展名为 .vssettings。
+
+::: moniker-end
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>仅导入键盘快捷键
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11fb8fe4b30aa986a6c442278d1e8984604a6794
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927979"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223515"
 ---
 # <a name="get-started-with-unit-testing"></a>单元测试入门
 
@@ -74,7 +74,7 @@ ms.locfileid: "55927979"
 如果在 Visual Studio 2017 或更高版本中使用 MSTest、xUnit 或 NUnit 测试框架，可查看单元测试的实时结果。
 
 > [!NOTE]
-> 只有 Visual Studio 2017 Enterprise Edition 中提供实时单元测试。
+> 只有 Visual Studio Enterprise 版本中提供 Live unit testing。
 
 1. 从“测试”菜单启用 Live Unit Testing。
 

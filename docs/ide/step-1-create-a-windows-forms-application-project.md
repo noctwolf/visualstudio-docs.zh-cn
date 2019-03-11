@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8552adfd4a7f94c58bcb32a60fbe8cd4c9323b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 6ccf9ebad32a82f88740e4f7dc0c920d348b6d48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796525"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222995"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>步骤 1：创建 Windows 窗体应用程序项目
 
@@ -33,7 +33,7 @@ ms.locfileid: "56796525"
 3. 在模板列表中，选择“Windows 窗体应用(.NET Framework)”。 将新窗体命名为“PictureViewer”，然后选择“确定”按钮。
 
     >[!NOTE]
-    >如果没有看到“Windows 窗体应用(.NET Framework)”模板，请使用 Visual Studio 安装程序安装“.NET 桌面开发”工作负载。<br/><br/>![Visual Studio 安装程序中的 .NET 桌面开发工作负载](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> 有关详细信息，请参阅[安装 Visual Studio 2017](../install/install-visual-studio.md)页面。
+    >如果没有看到“Windows 窗体应用(.NET Framework)”模板，请使用 Visual Studio 安装程序安装“.NET 桌面开发”工作负载。<br/><br/>![Visual Studio 安装程序中的 .NET 桌面开发工作负载](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> 有关详细信息，请参阅[安装 Visual Studio](../install/install-visual-studio.md) 页面。
 
      Visual Studio 将为您的程序创建解决方案。 解决方案充当程序所需全部项目和文件的容器。 本教程后面部分将详细解释这些术语。
 

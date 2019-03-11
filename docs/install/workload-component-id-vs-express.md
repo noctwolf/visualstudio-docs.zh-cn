@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Desktop Express 2017 工作负载和组件 ID
+title: Visual Studio Desktop Express 工作负载和组件 ID
 titleSuffix: ''
 description: 使用工作负载和组件 ID 通过命令行安装 Visual Studio 或指定为 VSIX 清单中的依赖项
 keywords: ''
@@ -13,16 +13,17 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.workload:
-- multiple
-ms.openlocfilehash: 5f2c12201adebf148703083b825e98b35bbff7c1
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: 2447f0eab7ee3931df70f503519f3f110f4ba272
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842485"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323771"
 ---
-# <a name="visual-studio-2017-desktop-express-component-directory"></a>Visual Studio 2017 Desktop Express 组件目录
+# <a name="visual-studio-desktop-express-component-directory"></a>Visual Studio Desktop Express 组件目录
 
 本页的表中列出了可用于通过使用命令行安装 Visual Studio 或可指定为 VSIX 清单中的依赖项的 ID。 请注意，我们将在发布 Visual Studio 更新时添加其他组件。
 
