@@ -1,6 +1,6 @@
 ---
-title: “计算语句”命令
-ms.date: 11/04/2016
+title: EvaluateStatement
+ms.date: 02/25/2019
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -13,48 +13,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdaf41aa34367d656e2bfb5694f3b615dbe3b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7eff96d1b413ea10b1274eb7d7938148727acbc
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911736"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953050"
 ---
-# <a name="evaluate-statement-command"></a>“计算语句”命令
+# <a name="evaluate-statement-command"></a>Evaluate Statement 命令
+
 计算并显示给定的语句。
 
 ## <a name="syntax"></a>语法
 
 ```cmd
-Debug.EvaluateStatement text
+>Debug.EvaluateStatement text
 ```
 
 ## <a name="arguments"></a>自变量
- `text`（必需）。 要评估的语句。
 
-## <a name="remarks"></a>备注
- 用于输入 EvaluateStatement 命令的窗口确定是将等号 (=) 解释为比较运算符还是赋值运算符。
+`text`
 
- 在“命令”窗口中，将等号 (=) 解释为比较运算符。 例如，如果变量 `a` 和 `b` 的值不同，则命令
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- 将返回 `false` 的值。
-
- 与此相反，在“即时”窗口中，将等号 (=) 解释为赋值运算符。 例如，命令
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- 将为变量 `a` 赋予变量 `b` 的值。
+必需。 要评估的语句。
 
 ## <a name="example"></a>示例
 
 ```cmd
->Debug.EvaluateStatement(a+b)
+>Debug.EvaluateStatement args.Length
 ```
 
 ## <a name="see-also"></a>请参阅

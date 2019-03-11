@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e535ca76fd7b85d8267c0c002ffc8090430c5f0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926367"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323862"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>使用不同的工具窗口查看代码结构
 
@@ -126,7 +126,19 @@ ms.locfileid: "55926367"
 
 “对象浏览器”窗口显示项目中的代码说明。
 
-可以通过窗口顶部的下拉列表筛选要查看的组件。 自定义组件可以包括托管代码可执行文件、库程序集、类型库和 .ocx 文件。 不能添加 C++ 自定义组件。 自定义设置保存在 Visual Studio 用户应用程序目录 %APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat 中。
+可以通过窗口顶部的下拉列表筛选要查看的组件。 自定义组件可以包括托管代码可执行文件、库程序集、类型库和 .ocx 文件。 不能添加 C++ 自定义组件。
+
+::: moniker range="vs-2017"
+
+自定义设置保存在 Visual Studio 用户应用程序目录 %APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat 中。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+自定义设置保存在 Visual Studio 用户应用程序目录 %APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat 中。
+
+::: moniker-end
 
 “对象浏览器”的左窗格显示程序集。 可以展开程序集点以显示它们所包含的命名空间，然后展开命名空间以显示它们所包含的类型。 选择类型时，其成员（如属性和方法）在右窗格中列出。 右下窗格显示与所选项相关的详细信息。
 

@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927524"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323113"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客户体验改善计划
 
@@ -31,8 +31,7 @@ VSCEIP 默认开启。 可以按照以下步骤将其关闭或者再次打开：
 
    “Visual Studio 体验改善计划”对话框随即打开。
 
-1. 若要选择退出，请选择“否，我不想参加”，然后选择“确定”。
-   若要选择加入，请选择“是，我愿意参加”，然后选择“确定”。
+1. 若要选择退出，请选择“否，我不想参加”，然后选择“确定”。 若要选择加入，请选择“是，我愿意参加”，然后选择“确定”。
 
    ![“Visual Studio 体验改善计划”对话框](media/experience-improvement-program.png)
 
@@ -42,11 +41,26 @@ VSCEIP 默认开启。 可以按照以下步骤将其关闭或者再次打开：
 
 相关注册表项和设置如下所示：
 
-在 64 位操作系统上，Key = HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM 在 32 位操作系统上，Key = HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM 启用组策略时，Key = HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM
+::: moniker range="vs-2017"
+
+- 在 64 位操作系统上，Key = HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM
+- 在 32 位操作系统上，Key = HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM
+- 启用“组策略”时，Key = HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- 在 64 位操作系统上，Key = HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM
+- 在 32 位操作系统上，Key = HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM
+- 启用“组策略”时，Key = HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM
+
+::: moniker-end
 
 Entry = OptIn
 
 Value = (DWORD)
+
 - “0”为选择退出（关闭 VSCEIP）
 - “1”为选择加入（开启 VSCEIP）
 
@@ -59,6 +73,6 @@ Value = (DWORD)
 
 * [Visual Studio 收集的诊断信息](diagnostic-data-collection.md)
 * [与我们交流](../ide/talk-to-us.md)
-* [如何报告 Visual Studio 的问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+* [如何报告 Visual Studio 的问题](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)
 * [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)

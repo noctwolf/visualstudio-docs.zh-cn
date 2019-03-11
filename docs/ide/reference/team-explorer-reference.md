@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 56e6277b589f12563ad6dfa3912815b966db399a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946270"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222969"
 ---
 # <a name="team-explorer-reference"></a>团队资源管理器参考
 
@@ -33,7 +33,7 @@ ms.locfileid: "55946270"
 
 | Git 附带的**主页** | TFVC 附带的**主页** |
 | - | - |
-| ![Visual Studio 2019 中使用 Git 的团队资源管理器主页](media/team-explorer-reference/team-explorer-git.png) | ![Visual Studio 2017 中使用 TFVC 的团队资源管理器主页](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Visual Studio 2019 中使用 Git 的团队资源管理器主页](media/team-explorer-reference/team-explorer-git.png) | ![Visual Studio 中使用 TFVC 的团队资源管理器主页](media/team-explorer-reference/team-explorer-tfvc.png) |
 
 ## <a name="changes-page-git"></a>更改页 (Git)
 
@@ -82,7 +82,7 @@ ms.locfileid: "55946270"
 ::: moniker range=">= vs-2019"
 
 > [!NOTE]
-> Visual Studio 2019 预览版 1 中新增一个[工作项体验](/azure/devops/boards/work-items/set-work-item-experience-vs)。 有关在 Visual Studio 2019 预览版 1 中查看工作项的信息，请参阅[查看和添加工作项](/azure/devops/boards/work-items/view-add-work-items)。
+> Visual Studio 2019 中新增[工作项体验](/azure/devops/boards/work-items/set-work-item-experience-vs)。 有关在 Visual Studio 2019 中查看工作项的信息，请参阅[查看和添加工作项](/azure/devops/boards/work-items/view-add-work-items)。
 
 ::: moniker-end
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8fcde39c2e64d431848b510b5e046031b6dac2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 135e1828c72f1824833ea675fa5bd2b01c7c80af
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934063"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223034"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入门：个性化设置 Visual Studio IDE 和编辑器
 
@@ -22,7 +22,7 @@ ms.locfileid: "55934063"
 
 ## <a name="set-the-color-theme"></a>设置颜色主题
 
-Visual Studio 2017 用户界面的默认颜色主题命名为“蓝色”。 让我们将其更改为“深色”。
+Visual Studio 用户界面的默认颜色主题命名为“蓝色”。 让我们将其更改为“深色”。
 
 1. 在菜单栏上，这是“文件”和“编辑”等菜单的行，选择“工具” > “选项”。
 

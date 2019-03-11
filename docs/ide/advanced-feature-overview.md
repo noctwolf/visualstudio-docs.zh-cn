@@ -1,6 +1,5 @@
 ---
-title: Visual Studio 2017 的高级功能
-titleSuffix: ''
+title: 高级功能
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: gewarren
@@ -8,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da502b2f527f811f20bbce299107cac20517048a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: fe209a28f74866cf13b6dbd58b01eac2450557b2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317830"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221770"
 ---
-# <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 的功能
+# <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
 [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)一文提供 Visual Studio 的基本简介。 本文介绍的功能可能更适合有经验的开发人员或已熟悉 Visual Studio 的开发人员。
 
@@ -23,9 +22,19 @@ ms.locfileid: "56317830"
 
 凭借 Visual Studio 的模块化安装程序，可以选择和安装工作负载。 工作负载是你的首选编程语言或平台所需的功能组。 此策略使安装 Visual Studio 占用的空间更小，这也意味着安装和更新速度更快。
 
-如果尚未安装 Visual Studio 2017，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
+::: moniker range="vs-2017"
 
-若要了解设置系统上的 Visual Studio 的详细信息，请参阅[安装 Visual Studio 2017](../install/install-visual-studio.md)。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)页免费安装。
+
+::: moniker-end
+
+要了解设置系统上的 Visual Studio 的详细信息，请参阅[安装 Visual Studio](../install/install-visual-studio.md)。
 
 ## <a name="create-cloud-enabled-apps-for-azure"></a>创建 Azure 云启用应用
 
@@ -99,7 +108,7 @@ Visual Studio 中的 **SQL Server 对象资源管理器**提供类似于 SQL Ser
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>管理源代码并与他人协作
 
-可以在任意提供商（包括 GitHub）托管的 Git 存储库中管理源代码。 或者，使用 [Azure DevOps Services](/azure/devops/index) 管理整个项目的代码、Bug 和工作项。 若要详细了解如何在 Visual Studio 中使用团队资源管理器管理 Git 存储库，请参阅[开始使用 Git 和 Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio)。 Visual Studio 还内置有其他源代码管理功能。 若要了解详细信息，请参阅 [Visual Studio 2017 中的新 Git 功能（博文）](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/)。
+可以在任意提供商（包括 GitHub）托管的 Git 存储库中管理源代码。 或者，使用 [Azure DevOps Services](/azure/devops/index) 管理整个项目的代码、Bug 和工作项。 若要详细了解如何在 Visual Studio 中使用团队资源管理器管理 Git 存储库，请参阅[开始使用 Git 和 Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio)。 Visual Studio 还内置有其他源代码管理功能。 要了解详细信息，请参阅 [Visual Studio 中的新 Git 功能（博文）](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/)。
 
 Azure DevOps Services 是基于云的服务，用于规划、托管、自动化和部署软件以及在团队中实现协作。 Azure DevOps Services 支持 Git 存储库（分布式版本控制）和 Team Foundation 版本控制（集中式版本控制）。 它们支持用于持续生成和发布 (CI/CD) 版本控制系统中存储的代码的管道。 Azure DevOps Services 还支持 Scrum、CMMI 和敏捷开发方法。
 
@@ -127,4 +136,4 @@ Team Foundation Server (TFS) 是 Visual Studio 的应用程序生命周期管理
 
 - [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017 中的新增功能](../ide/whats-new-visual-studio-2017.md)
-- [Visual Studio 2019 预览版中的新增功能](../ide/whats-new-visual-studio-2019.md)
+- [Visual Studio 2019 中的新增功能](../ide/whats-new-visual-studio-2019.md)

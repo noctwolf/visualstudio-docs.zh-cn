@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79f51d1bcc82bda9e7c3f21548eac445f36f925
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fb70eca0ae2f2998752ccc0f096f594e6825e4e8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948272"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221939"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform 分析器概述
 
-Visual Studio 2017 包括一系列内置的 .NET Compiler Platform 分析器，这些分析器在用户键入时分析 C# 或 Visual Basic 代码。 分析器关注代码样式、代码质量和可维护性、代码设计和其他问题。 可以将其他分析器作为 Visual Studio 扩展安装，或在每个项目上作为 NuGet 包安装。
+Visual Studio 包括一系列内置的 .NET Compiler Platform 分析器，这些分析器在用户键入时分析 C# 或 Visual Basic 代码。 分析器关注代码样式、代码质量和可维护性、代码设计和其他问题。 可以将其他分析器作为 Visual Studio 扩展安装，或在每个项目上作为 NuGet 包安装。
 
 如果分析器发现规则冲突，将同时在代码编辑器（违规代码下方有波浪线）和错误列表中报告。
 

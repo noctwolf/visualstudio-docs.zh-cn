@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40abd872863231b2631830cd214fc9060da364d3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a228c882ff573b9e319d5fdbeb1ba6472cc5e3d5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952302"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221641"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：查找和组织项目和项模板
 
@@ -30,13 +30,29 @@ ms.locfileid: "55952302"
 
 如果将包含 .vstemplate 文件的压缩 (.zip) 文件添加到用户模板目录，则“新建项目”或“添加新项”对话框中将显示该模板。 默认情况下，用户模板位于：
 
-- %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ProjectTemplates
+::: moniker range="vs-2017"
 
-- %USERPROFILE%\Documents\Visual Studio \<Version\>\Templates\ItemTemplates
+- *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates*
+
+- *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*
 
 例如，以下目录包含用于 C# 的用户项目模板：
 
 - C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ProjectTemplates*
+
+- *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*
+
+例如，以下目录包含用于 C# 的用户项目模板：
+
+- *C:\Users\UserName\Documents\Visual Studio 2019\Templates\ProjectTemplates\Visual C#*
+
+::: moniker-end
 
 > [!TIP]
 > 可在“工具” > “选项” > “项目和解决方案” > “位置”中为用户模板设置位置。

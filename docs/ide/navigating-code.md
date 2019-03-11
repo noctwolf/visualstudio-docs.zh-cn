@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45d165cd25b6ef17c4603ab5c1c7c783edd85d8b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927602"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223528"
 ---
 # <a name="navigate-code"></a>导航代码
 
@@ -82,7 +82,7 @@ Visual Studio 提供了许多用于在编辑器中导航代码的方法。 本�
 
 - “转到文件”（Ctrl+1、Ctrl+F）：移到解决方案中的指定文件。
 
-- “转到最近使用的文件”（Ctrl+1、Ctr+R）：转到解决方案中最近访问过的指定文件（Visual Studio 2017 版本 15.8 中的新增内容）。
+- “转到最近使用的文件”（Ctrl+1、Ctr+R）：转到解决方案中最近访问过的指定文件。
 
 - “转到类型”（Ctrl+1、Ctrl+T）：移到解决方案中的指定类型。
 
@@ -105,7 +105,7 @@ Visual Studio 提供了许多用于在编辑器中导航代码的方法。 本�
 输入 | 函数
 ------------ | ---
 **键盘** | 将文本游标放置在类型名称内部的某个位置，然后按 **F12**
-**鼠标** | 右键单击类型名称，然后选择“转到定义”，或者按 Ctrl 并单击类型名称（这是 Visual Studio 2017 版本 15.4 的新功能）
+**鼠标** | 右键单击类型名称，然后选择“转到定义”，或者按“Ctrl”并单击类型名称
 
 ## <a name="peek-definition"></a>查看定义
 

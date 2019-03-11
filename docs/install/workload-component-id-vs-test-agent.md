@@ -1,61 +1,46 @@
 ---
-title: Visual Studio Test Agent 2017 工作负载和组件 ID
+title: Visual Studio Test Agent 工作负载和组件 ID
 titleSuffix: ''
 description: 使用 Visual Studio 工作负载和组件 ID 远程运行自动测试和负载测试
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 11/13/2018
+ms.date: 02/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
-ms.workload:
-- multiple
-ms.openlocfilehash: 95fad33bfe21546e0e5ecbbab4e1259505941eec
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: c6d7582a34b4e91607b076275c8b254591f0ab89
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841034"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323126"
 ---
-# <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 组件目录
+# <a name="visual-studio-test-agent-component-directory"></a>Visual Studio Test Agent 组件目录
 
-本页的表中列出了可用于通过使用命令行安装 Visual Studio 或可指定为 VSIX 清单中的依赖项的 ID。 请注意，我们将在发布 Visual Studio 更新时添加其他组件。
+[!INCLUDE[workloads-components-universal-header_md](includes/workloads-components-universal-header_md.md)]
 
-另请注意以下有关本页的注意事项：
+::: moniker range="vs-2017"
 
-* 每个工作负载均有其自己的部分，后跟工作负载 ID 和适用于工作负载的组件表格。
-* 默认情况下，安装工作负载时将安装**必需**组件。
-* 如果愿意，还可以安装**推荐**和**可选**组件。
-* 我们还添加了一个部分，此部分列出了不属于任何工作负载的其他组件。
+[!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
-在 VSIX 清单中设置依赖项时，必须仅指定组件 ID。 使用本页中的表格来确定最小组件依赖项。 在某些情况下，这可能意味着仅从工作负载指定一个组件。 在其他情况下，这可能意味着你从单个工作负载指定多个组件或从多个工作负载指定多个组件。 有关详细信息，请参阅[如何：将扩展性项目迁移到 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 页。
+[!include[Visual Studio Test Agent 2017](includes/vs-2017/workload-component-id-vs-test-agent.md)]
 
-有关如何使用这些 ID 的详细信息，请参阅[使用命令行参数安装 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) 页。 另外，有关其他产品的工作负载和组件 ID 的列表，请参阅 [Visual Studio 2017 工作负载和组件 ID](workload-and-component-ids.md) 页。
+::: moniker-end
 
-## <a name="test-agent"></a>测试代理
+::: moniker range=">= vs-2019"
 
-**ID：** Microsoft.VisualStudio.Workload.TestAgent
+[!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
 
-**描述：** 支持运行自动测试和远程加载测试
+[!include[Visual Studio Test Agent 2019](includes/vs-2019/workload-component-id-vs-test-agent.md)]
 
-### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
-
-组件 ID | name | Version | 依赖项类型
---- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | 测试代理核心功能 | 15.0.27019.1 | 必需
-
-## <a name="unaffiliated-components"></a>独立组件
-
-这些组件不随附于任何工作负载，但可选择作为单个组件。
-
-组件 ID | name | Version
---- | --- | ---
-n/a | 不可用 | n/a
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

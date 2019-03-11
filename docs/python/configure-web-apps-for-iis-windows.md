@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 6a6861f2f334f3a03fe133e5185c9079a54cfb34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88717998e22ffad028ce3fd7e0a2304de3e779d6
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937670"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323557"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>为 Python Web 应用配置 IIS
 
@@ -37,7 +37,7 @@ ms.locfileid: "55937670"
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>将 web.config 设置为指向 Python 解释器
 
-应用的 web.config 文件指示 Windows 上运行的 IIS (7+) Web 服务器，应如何通过 FastCGI 或 HttpPlatform 处理 Python 请求。 使用 Visual Studio 2017 时，必须手动修改 web.config。 如后续部分中所述，Visual Studio 2015 自动修改此文件
+应用的 web.config 文件指示 Windows 上运行的 IIS (7+) Web 服务器，应如何通过 HttpPlatform（推荐）或 FastCGI 处理 Python 请求。 Visual Studio 2015 及更早版本会自动进行这些修改。 使用 Visual Studio 2017 时，必须手动修改 web.config。
 
 ### <a name="configure-the-httpplatform-handler"></a>配置 HttpPlatform 处理程序
 
@@ -139,7 +139,7 @@ FastCGI 是在请求级别工作的接口。 IIS 接收传入的连接，并将�
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    未能将 URL 添加到该阵列会导致出现错误“不允许的主机 / 无效的 HTTP_HOST 标头: ‘\<站点 URL\>’。可能需要将‘\<站点 URL\>’添加到 ALLOWED_HOSTS。”**
+    未能将 URL 添加到该阵列会导致出现错误“不允许的主机 / 无效的 HTTP_HOST 标头: ‘\<站点 URL\>’。可能需要将‘\<站点 URL\>’添加到 ALLOWED_HOSTS。”
 
     请注意，当数组为空时，Django 会自动允许“localhost”和“127.0.0.1”，而添加生产 URL 则会删除这些功能。 因此，可能需要保留单独的 settings.py 开发和生产副本，或者使用环境变量来控制运行时值。
 

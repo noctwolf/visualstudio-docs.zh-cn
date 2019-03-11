@@ -10,18 +10,18 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2f7163ecda377d8fa8b7c27ed50dae4068d39600
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
+ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952913"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007171"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中筛选的解决方案
 
-**Visual Studio 2019 预览版 1 中的新增功能**
+**Visual Studio 2019 新增功能**
 
-大型开发团队通常使用包含许多项目的单个大型解决方案进行协作。 但是，个别开发人员通常只处理这些项目的一小部分。 为了在打开大型解决方案时提高性能，Visual Studio 2019 预览版 1 中引入了解决方案筛选。 通过解决方案筛选，可打开仅加载选择性项目的解决方案。 在解决方案中加载项目子集可以减少解决方案加载、构建和测试运行时间，并实现更有针对性的审查。
+大型开发团队通常使用包含许多项目的单个大型解决方案进行协作。 但是，个别开发人员通常只处理这些项目的一小部分。 为了在打开大型解决方案时提高性能，Visual Studio 2019 中引入了解决方案筛选。 通过解决方案筛选，可打开仅加载选择性项目的解决方案。 在解决方案中加载项目子集可以减少解决方案加载、构建和测试运行时间，并实现更有针对性的审查。
 
 可以使用以下功能：
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ac40b3ae84aad689df9884ad8453860f91d971
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919711"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223736"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>如何：向项目添加类图
 
@@ -26,7 +26,7 @@ ms.locfileid: "55919711"
 
 ## <a name="install-the-class-designer-component"></a>安装类设计器组件
 
-如果运行 Visual Studio 2017 且尚未安装“类设计器”组件，请按照以下步骤进行安装。
+如果尚未安装“类设计器”组件，请按照以下步骤进行安装。
 
 1. 从 Windows 开始菜单中，或通过从 Visual Studio 中的菜单栏中选择“工具” > “获取工具和功能”，打开“Visual Studio 安装程序”。
 

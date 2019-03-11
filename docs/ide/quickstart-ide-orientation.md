@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e70a28dd3bfc9511cdfec3656ff84c77802fa8f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 622887a3886eb51b148451bfaee561b7d5c7a466
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712523"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223619"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入门：初步了解 Visual Studio IDE
 
@@ -114,5 +114,5 @@ Visual Studio 顶部的菜单栏将命令分组成不同的类别。 例如，�
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)
-- [Visual Studio 2017 的更多功能](../ide/advanced-feature-overview.md)
+- [Visual Studio 的更多功能](../ide/advanced-feature-overview.md)
 - [更改主题和字体颜色](../ide/quickstart-personalize-the-ide.md)

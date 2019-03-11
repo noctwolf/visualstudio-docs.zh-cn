@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df5340d64087068f5da3b48c1057e3a6a8fb700a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919230"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223476"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 
@@ -48,7 +48,7 @@ ms.locfileid: "55919230"
 
 ## <a name="install-the-coded-ui-test-component"></a>安装编码的 UI 测试组件
 
-若要访问编码的 UI 测试工具和模板，请安装 Visual Studio 2017 的编码的 UI 测试组件。
+要访问编码的 UI 测试工具和模板，请安装 Visual Studio 的编码的 UI 测试组件。
 
 1. 选择“工具” > “获取工具和功能”，启动 Visual Studio 安装程序。
 

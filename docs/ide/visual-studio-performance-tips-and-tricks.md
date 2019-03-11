@@ -7,19 +7,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318766"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222982"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
 Visual Studio 性能建议适用于内存不足的情况，这种情况极少出现。 出现这种情况时，可优化某些未使用的 Visual Studio 功能。 以下提示不作为一般性建议。
 
 > [!NOTE]
-> 如果因为内存问题而在使用产品时遇到困难，请通过[反馈工具](../ide/how-to-report-a-problem-with-visual-studio-2017.md)告知我们。
+> 如果因为内存问题而在使用产品时遇到困难，请通过[反馈工具](../ide/how-to-report-a-problem-with-visual-studio.md)告知我们。
 
 ## <a name="use-a-64-bit-os"></a>使用 64 位操作系统
 
@@ -41,9 +41,9 @@ Visual Studio 会自动重新打开上一个会话中处于打开状态的文档
 
 - 对于常规“转到”功能，请选择“编辑” > 转到” > 转到所有”（或按 Ctrl+T）。
 
-- 在 Visual Studio 2017 版本 15.8 及更高版本中，可使用“编辑” > “转到” > “转到上次编辑位置”（或按 Ctrl+Shift+Backspace）跳转到解决方案中上次编辑的位置。
+- 可使用“编辑” > “转到” > “转到上次编辑的位置”（或按“Ctrl”+“Shift”+“Backspace”）跳转到解决方案中上次编辑的位置。
 
-- 在 Visual Studio 2017 版本 15.8 及更高版本中，使用“转到最近使用的文件”以查看解决方案中最近访问的文件的列表。 选择“编辑” > “转到” > “转到最近使用的文件”（或按 Ctrl+1、Ctrl +R）。
+- 使用“转到最近使用的文件”，查看解决方案中最近访问的文件的列表。 选择“编辑” > “转到” > “转到最近使用的文件”（或按 Ctrl+1、Ctrl +R）。
 
 ## <a name="configure-debugging-options"></a>配置调试选项
 

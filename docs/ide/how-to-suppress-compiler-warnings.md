@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e9f995c8fc1107da7bc90b230eddc265e6082b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913127"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323969"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：取消编译器警告
 
 通过筛选出一个或多个类型的编译器警告，可以整理一个生成日志。 例如，可能只想查看在将生成日志详细信息设置为“正常”、“详细信息”或“诊断”时生成的某些输出。 有关详细程度的详细信息，请参见[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>取消显示特定的 Visual C# 或 F# 警告 #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>取消显示特定的 Visual C# 或 F\# 警告
 
 使用“生成”属性页可取消显示特定的 C# 和 F# 项目警告。
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d76c5eb725545fd1fd8ab1a1ec2f4eaadcd39d3b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15a36378efe7b6e3151882d5e6927cd7fbfa4542
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927108"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428604"
 ---
 # <a name="refactor-code"></a>重构代码
 
@@ -22,7 +22,11 @@ ms.locfileid: "55927108"
 
 ## <a name="programming-languages"></a>编程语言
 
-不同的重构操作适用于 Visual Studio 中不同的编程语言。 本部分中的主题涵盖了适用于 C# 和 Visual Basic 的重构。 有关重构 C++ 代码的信息，请参阅[编写和重构代码 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)。 [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools)（第三方 Visual Studio 扩展）提供 F# 的重构支持。
+不同的重构操作适用于 Visual Studio 中不同的编程语言：
+
+- 本部分目录中的页面涵盖了适用于 C# 和 Visual Basic 的重构。 例如，[提取方法重构](reference/extract-method.md)和[将类型移到匹配文件重构](reference/move-type-to-matching-file.md)。
+- 有关重构 C++ 代码的信息，请参阅[编写和重构代码 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)。
+- [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools)（第三方 Visual Studio 扩展）提供 F# 的重构支持。
 
 ## <a name="see-also"></a>请参阅
 

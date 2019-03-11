@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 52085e5ac2471c73d512252f85bd3db3e3cc0234
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e09d1cb2e57955f3177fff4e5b54c78eadcd659e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919815"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223398"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试
 
@@ -36,7 +36,17 @@ ms.locfileid: "55919815"
 
 1. 启动 Visual Studio 开发人员命令提示符：
 
-   在 Windows 启动 菜单上选择“Visual Studio 2017” > “VS 2017 的开发人员命令提示符”。
+   ::: moniker range="vs-2017"
+
+   在 Windows“启动”菜单中，选择“Visual Studio 2017”>“VS 2017 的开发人员命令提示”。
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   在 Windows“启动”菜单中，选择“Visual Studio 2019”>“VS 2019 的开发人员命令提示”。
+
+   ::: moniker-end
 
 2. 输入类似的命令：
 
@@ -85,7 +95,7 @@ ms.locfileid: "55919815"
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
 
-    <!-- TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
+    <!-- TestSessionTimeout was introduced in Visual Studio 2017 version 15.5 -->
     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
     <TestSessionTimeout>10000</TestSessionTimeout>
   </RunConfiguration>
@@ -113,7 +123,7 @@ ms.locfileid: "55919815"
       </DataCollector>
 
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
-        <!--Video data collector is only available with Visual Studio 2017 version 15.5 and higher -->
+        <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
       </DataCollector>
 
     </DataCollectors>
@@ -238,7 +248,7 @@ public void HomePageTest()
 
 这些设置特定于运行具有 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 特性的测试方法的测试适配器。
 
-|配置|默认|值|
+|Configuration|默认|值|
 |-|-|-|
 |**ForcedLegacyMode**|False|在 Visual Studio 2012 中，对 MSTest 适配器进行了优化，使其变得更快且更具可伸缩性。 某些行为（如测试的运行顺序）可能不与 Visual Studio 早期版本中的完全一致。 将此值设置为 true 可使用旧测试适配器。<br /><br />例如，如果为单元测试指定 app.config 文件，可能会用到此设置。<br /><br />我们建议你考虑重构测试以便可以使用较新的适配器。|
 |**IgnoreTestImpact**|False|当在 MSTest 中或从 Microsoft 测试管理器运行时，测试影响功能会设置受最近更改影响的测试的优先级。 此设置会停用该功能。 有关详细信息，请参阅[自上一个生成后应运行哪些测试？](https://msdn.microsoft.com/library/dd286589)。|

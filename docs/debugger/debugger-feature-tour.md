@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696735"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428682"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>初步了解 Visual Studio 调试器
 
@@ -77,7 +77,7 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 ![运行到单击处](../debugger/media/dbg-tour-run-to-click-2.png "Run to Click")
 
 > [!NOTE]
-> “运行到单击处”（将执行运行到此处）按钮是 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中的新增功能。
+> 自 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 起，可用使用“运行到单击位置”（将执行运行到此处）按钮。
 
 单击“运行到单击处”（将执行运行到此处）按钮。 调试器将前进到单击的代码行。
 
