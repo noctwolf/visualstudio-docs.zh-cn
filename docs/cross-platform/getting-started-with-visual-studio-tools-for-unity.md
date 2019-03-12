@@ -71,7 +71,7 @@ ms.locfileid: "53684777"
 
    ![选择 Visual Studio](media/vstu_unity-external-tools.png)
 
-4. 如果已选择“Browse...”，导航到 Visual Studio 安装目录中的“Common7/IDE”目录，然后选择“devenv.exe”。 然后单击“打开”。
+4. 如果已选择“Browse...”，请导航到 Visual Studio 安装目录中的“Common7/IDE”目录，然后选择“devenv.exe”。 然后单击“Open”。
 
    ![选择“打开”](media/vstu_browse-for-application.png)
 
