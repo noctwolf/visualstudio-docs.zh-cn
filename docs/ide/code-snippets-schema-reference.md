@@ -415,7 +415,7 @@ $selected$ is a great color. I love $selected$.
 |子元素|说明|
 |-------------------|-----------------|
 |[Default 元素](../ide/code-snippets-schema-reference.md#default-element)|必需的元素。 指定插入代码段时文本的默认值。 `Default` 元素中必须有且仅有一个 `Literal` 元素。|
-|[Function 元素](../ide/code-snippets-schema-reference.md#function-element)|可选元素。 指定当文本在 Visual Studio 中获得焦点时要执行的函数。 `Function` 元素中可能有零个或一个 `Literal` 元素。|
+|[Function 元素](../ide/code-snippets-schema-reference.md#function-element)|可选元素。 指定当文本在 Visual Studio 中获得焦点时要执行的函数。 `Literal` 元素中可能有零个或一个 `Function` 元素。|
 |[ID 元素](../ide/code-snippets-schema-reference.md#id-element)|必需的元素。 指定文本的唯一标识符。 `ID` 元素中必须有且仅有一个 `Literal` 元素。|
 |[ToolTip 元素](../ide/code-snippets-schema-reference.md#tooltip-element)|可选元素。 描述文本的预期值和用法。 `Literal` 元素中可能有零个或一个 **Tooltip** 元素。|
 
@@ -463,7 +463,7 @@ $selected$ is a great color. I love $selected$.
 |子元素|说明|
 |-------------------|-----------------|
 |[Default 元素](../ide/code-snippets-schema-reference.md#default-element)|必需的元素。 指定插入代码段时文本的默认值。 `Default` 元素中必须有且仅有一个 `Literal` 元素。|
-|[Function 元素](../ide/code-snippets-schema-reference.md#function-element)|可选元素。 指定当文本在 Visual Studio 中获得焦点时要执行的函数。 `Function` 元素中可能有零个或一个 `Literal` 元素。|
+|[Function 元素](../ide/code-snippets-schema-reference.md#function-element)|可选元素。 指定当文本在 Visual Studio 中获得焦点时要执行的函数。 `Literal` 元素中可能有零个或一个 `Function` 元素。|
 |[ID 元素](../ide/code-snippets-schema-reference.md#id-element)|必需的元素。 指定文本的唯一标识符。 `ID` 元素中必须有且仅有一个 `Literal` 元素。|
 |[ToolTip 元素](../ide/code-snippets-schema-reference.md#tooltip-element)|可选元素。 描述文本的预期值和用法。 `Literal` 元素中可能有零个或一个 **Tooltip** 元素。|
 |[Type 元素](../ide/code-snippets-schema-reference.md#type-element)|必需的元素。 指定对象的类型。 `Type` 元素中必须有且仅有一个 `Object` 元素。|
