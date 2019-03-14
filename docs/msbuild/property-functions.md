@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc410e02fe43bebd4668dd78280308e38dcc857
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623055"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737029"
 ---
 # <a name="property-functions"></a>属性函数
 
@@ -166,7 +166,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |int BitwiseXor(第一个整型值, 第二个整型值)|对第一个值和第二个值执行按位 `XOR`（第一个值 ^ 第二个值）。|
 |int BitwiseNot(第一个整型值)|执行按位 `NOT`（~第一个值）。|
 |bool IsOsPlatform(string platformString)|指定当前 OS 平台是否为 `platformString`。 `platformString` 必须属于 <xref:System.Runtime.InteropServices.OSPlatform>。|
-|bool IsOSUnixLike|如果当前 OS 是 Unix 系统，则为 True。|
+|bool IsOSUnixLike()|如果当前 OS 是 Unix 系统，则为 True。|
 |string NormalizePath(params string[] path)|获取指定路径的规范化完整路径，并确保其包含当前操作系统的正确目录分隔符。|
 |string NormalizeDirectory(params string[] path)|获取指定目录的规范化完整路径，确保其包含当前操作系统的正确目录分隔符，并确保其具有尾部反斜杠。|
 |string EnsureTrailingSlash(string path)|如果给定路径没有尾部反斜杠，请添加一个。 如果路径为空字符串，请勿其进行修改。|

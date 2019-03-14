@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 139a0889c590ac07f8aba93122883e5c519ab811
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1f346e02bfc2eee1556a4f8ade3a472a36860daa
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716514"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526511"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 C++
 
@@ -94,7 +94,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
 
 ## <a name="navigate-code"></a>导航代码
 
-有不同的命令来指示调试器继续。 我们将演示 Visual Studio 2017 中新增的一个有用的代码导航命令。
+有不同的命令来指示调试器继续。 我们将演示自 Visual Studio 2017 开始新增的一个有用的代码导航命令。
 
 在断点处暂停时，将鼠标悬停在 `c1.push_back(20)` 语句上，直至绿色的“运行到单击处”按钮 ![运行到单击处](../debugger/media/dbg-tour-run-to-click.png "RunToClick") 出现，然后按“运行到单击处”按钮。
 

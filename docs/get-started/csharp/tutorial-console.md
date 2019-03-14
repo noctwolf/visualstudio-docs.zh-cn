@@ -2,7 +2,7 @@
 title: 教程：创建一个简单的 C# 控制台应用程序
 description: 了解如何在 Visual Studio 中分步创建 C# 控制台应用程序。
 ms.custom: seodec18, get-started
-ms.date: 02/26/2019
+ms.date: 03/12/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c73212ad53389b71ee2eb2a2660cd3dcbccaad8b
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841168"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736912"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教程：在 Visual Studio 中创建一个简单的 C# 控制台应用程序
 
@@ -34,8 +34,9 @@ ms.locfileid: "56841168"
 1. 打开 Visual Studio 2017。
 
 2. 在顶部菜单栏，依次选择“文件” > “新建” > “项目”。
+   （或者，按 Ctrl+Shift+N）。
 
-3. 在“新建项目”对话框的左窗格中，展开“C#”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 然后，将文件命名为“计算器”。
+3. 在“新建项目”对话框的左侧窗格中，展开“C#”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 然后，将文件命名为“计算器”。
 
    ![Visual Studio IDE 中“新建项目”对话框中的控制台应用 (.NET Core) 项目模板](./media/new-project-csharp-calculator-console-app.png)
 
@@ -61,9 +62,11 @@ ms.locfileid: "56841168"
 
 ## <a name="create-the-app"></a>创建应用
 
-首先，我们将探讨 C# 中的一些基础整数数学运算。 然后，我们将添加代码，创建基础计算器。 然后，调整代码，添加功能。 之后，调试应用，查找并修复错误。 最后，优化代码，使其更高效。
+首先，我们将探讨 C# 中的一些基础整数数学运算。 然后，我们将添加代码，创建基础计算器。 下一步， 之后，调试应用，查找并修复错误。 最后，优化代码，使其更高效。
 
-现在开始在 C# 中进行一些整数数学运算。
+### <a name="explore-integer-math"></a>探索整数数学运算
+
+现在开始在 C# 中进行一些基础整数数学运算。
 
 1. 在代码编辑器中，删除默认“Hello World”代码。
 
@@ -81,15 +84,23 @@ ms.locfileid: "56841168"
             Console.ReadKey();
     ```
 
+    请注意，执行此操作时，Visual Studio 中的 IntelliSense 功能会提供自动完成该项的选项。
+
+    ![显示 Visual Studio IDE 中 IntelliSense 自动完成功能的整数数学运算代码动画](./media/integer-math-intellisense.gif)
+
 1. 选择“计算器”或按“F5”，以运行程序。
 
    ![选择工具栏中的“计算器”按钮以运行应用程序](./media/csharp-console-calculator-button.png)
 
-   控制台窗口将打开，显示 42 + 119 之和。
+   随即会打开控制台窗口，显示 42 + 119 的总和，即 161。
 
-1. 现在请尝试使用其他运算符更改 `int c = a + b;`，例如使用 `-` 进行减法运算，使用 `*` 进行乘法运算，或使用 */* 进行除法运算。
+    ![显示整数数学运算的结果的控制台窗口](./media/csharp-console-integer-math.png)
 
-    请注意，如果更改运算符并运行程序，则结果也会随之更改。
+1. （可选）可以更改运算符来更改结果。 例如，可以将 `int c = a + b;` 代码行中的 `+` 运算符更改为 `-` 进行减法运算，更改为 `*` 进行乘法运算，或更改为 `/` 进行除法运算。 然后，运行该程序时，结果也会改变。
+
+1. 关闭控制台窗口。
+
+### <a name="add-code-to-create-a-calculator"></a>添加代码以创建计算器
 
 现在向项目添加一组更复杂的计算器代码以继续。
 
@@ -165,6 +176,10 @@ ms.locfileid: "56841168"
 
     ![显示“计算器”应用的控制台窗口，其中包括要执行的操作的相应提示](./media/csharp-console-calculator.png)
 
+### <a name="add-functionality-to-the-calculator"></a>向计算器添加功能
+
+调整代码，添加更多功能。
+
 ### <a name="add-decimals"></a>添加小数
 
 计算器应用当前接受并返回整数。 但是，如果添加接受小数位的代码，会更精确。
@@ -178,6 +193,8 @@ ms.locfileid: "56841168"
 1. 按 Ctrl + F，以打开“查找和替换”控件。
 
 1. 将 `int` 变量的每个实例更改为 `float`。
+
+   请确保在“查找和替换”控件中切换“大小写匹配”(Alt+C) 和“全字匹配”(Alt+W)。
 
     ![展示如何将 int 变量更改为 float 的“查找和替换”控件动画](./media/find-replace-control-animation.gif)
 
@@ -536,4 +553,5 @@ namespace Calculator
 
 ## <a name="see-also"></a>请参阅
 
+* [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [了解如何在 Visual Studio 中调试 C# 代码](tutorial-debugger.md)
