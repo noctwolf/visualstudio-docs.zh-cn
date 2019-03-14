@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fdfb851b2fc0fad6e6c394f30697dd39aa078d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2142b73dc44b16e8e7ac149b7377959ae3c5cfcc
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961671"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526433"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。 要进行此操作，可使用 Visual Studio 远程调试器。
@@ -57,11 +57,22 @@ ms.locfileid: "54961671"
 
 您可以找到远程调试器 (*msvsmon.exe*) 使用 Visual Studio Community、 Professional 或 Enterprise 已安装的计算机上。 在某些情况下，设置远程调试的最简单方法是从文件共享运行远程调试器 (msvsmon.exe)。 有关使用情况的限制，请参阅远程调试器的帮助页 (**帮助 > 用法**远程调试器中)。
 
-1. 查找*msvsmon.exe*匹配你的 Visual Studio 版本的目录中。 Visual Studio enterprise 2017:
+1. 查找*msvsmon.exe*匹配你的 Visual Studio 版本的目录中：
 
-      *程序文件 (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+   ::: moniker range=">=vs-2019"
 
-      *程序文件 (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+   *Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+
+   *程序文件 (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *程序文件 (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
 
 2. 共享**远程调试器**Visual Studio 计算机上的文件夹。
 
@@ -96,7 +107,7 @@ ms.locfileid: "54961671"
 
  如果你想要配置远程调试器作为服务，请按照下列步骤。
 
-1. 找到  “远程调试器配置向导”(rdbgwiz.exe)。 （这是独立于远程调试器的应用程序。）仅当安装远程工具时它才可用。 它不与 Visual Studio 一起安装。
+1. 找到  “远程调试器配置向导”(rdbgwiz.exe)。 （这是独立于远程调试器的应用程序。）仅在你安装远程工具后，它才可用。 它不与 Visual Studio 一起安装。
 
 2. 开始运行配置向导。 当第一页出现时，单击“下一步” 。
 

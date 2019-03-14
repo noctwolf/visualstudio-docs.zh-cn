@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 9d1a64da1e27f5d3504608441306e820b4547539
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 161683697ee66286e1d43e6730584f0660bd390c
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710820"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526459"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>在 Visual Studio 2017 中的 Azure 中的 IIS 上的远程调试 ASP.NET Core
 
@@ -198,7 +198,7 @@ ms.locfileid: "56710820"
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 中，您可以将重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...** Shift+Alt+P
+    > 在 Visual Studio 2017 和更高版本中，您可以将重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...** Shift+Alt+P
 
 3. 将限定符字段设置为“\<remote computer name>:4022”。
 4. 单击“刷新”。

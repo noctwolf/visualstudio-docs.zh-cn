@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3da4501d472949a89ad9120a07da99aaff3ebd1b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763645"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567210"
 ---
 # <a name="managing-references-in-a-project"></a>管理项目中的引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ ms.locfileid: "54763645"
 ## <a name="project-to-project-references"></a>项目到项目的引用  
  项目到项目的引用是对包含程序集的项目的引用；通过使用 **“项目”** 选项卡进行创建。给定项目路径后，Visual Studio 可以找到程序集。  
   
- 如果拥有生成程序集的项目，则应引用该项目并且不使用文件引用（见下文）。 项目到项目的引用的一个优点是能够在生成系统中的项目之间创建依赖关系。 如果依赖项目在上次生成引用项目之后已发生更改，则将生成该依赖项目。 文件引用不会创建生成依赖关系，因此可以在不生成依赖项目的情况下生成引用项目，并且该引用可能会过时。 （也就是说，项目可以引用以前生成的项目版本。）这可能导致 bin 目录中所需的单个 DLL 同时存在多个版本，而这种情况实际是不可能出现的。 当此冲突发生时，你将看到一条消息，例如[“警告：无法将项目 ‘project’ 中的依赖关系‘file’复制到运行目录，因为它将覆盖引用 ‘file’。”](/visualstudio/vs-2015/misc/warning-the-dependency-file-in-project-project-cannot-be-copied)。 有关详细信息，请参阅[有关损坏的引用的疑难解答](../ide/troubleshooting-broken-references.md)以及[如何：创建和删除项目依赖关系](../ide/how-to-create-and-remove-project-dependencies.md)。  
+ 如果拥有生成程序集的项目，则应引用该项目并且不使用文件引用（见下文）。 项目到项目的引用的一个优点是能够在生成系统中的项目之间创建依赖关系。 如果依赖项目在上次生成引用项目之后已发生更改，则将生成该依赖项目。 文件引用不会创建生成依赖关系，因此可以在不生成依赖项目的情况下生成引用项目，并且该引用可能会过时。 （也就是说，项目可以引用以前生成的项目版本。）这可能导致 bin 目录中所需的单个 DLL 同时存在多个版本，而这种情况实际是不可能出现的。 当此冲突发生时，你将看到一条消息，例如[“警告：无法将项目 ‘project’ 中的依赖关系‘file’复制到运行目录，因为它将覆盖引用 ‘file’。”](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md)。 有关详细信息，请参阅[有关损坏的引用的疑难解答](../ide/troubleshooting-broken-references.md)以及[如何：创建和删除项目依赖关系](../ide/how-to-create-and-remove-project-dependencies.md)。  
   
 > [!NOTE]
 >  如果一个项目的目标 .NET Framework 版本是 4.5，而另一个项目的目标版本是 2、3、3.5 或 4.0，则创建的是文件引用而非项目到项目的引用。  

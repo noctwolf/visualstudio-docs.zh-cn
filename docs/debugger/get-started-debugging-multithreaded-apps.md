@@ -1,7 +1,7 @@
 ---
 title: 了解如何调试多线程应用程序
 description: 使用 Visual Studio 中的并行堆栈和并行监视窗口进行调试
-ms.custom: H1HackMay2017
+ms.custom: ''
 ms.date: 11/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 704605ed2d4eb3d69b988da59ba443790ffa138d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 671af69cf31ad1b8b5adafa413e4f20a8761d5ce
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709845"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526033"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序 (C#，Visual Basic、 c + +)
 

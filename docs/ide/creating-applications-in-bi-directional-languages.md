@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: 21851bc26ec69207c95a41e988b20b5df3c70c39
+ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450316"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57567255"
 ---
 # <a name="create-applications-in-bidirectional-languages"></a>以双向语言创建应用程序
 
@@ -30,7 +30,7 @@ ms.locfileid: "56450316"
 
 -  Windows 应用
 
-   你可以创建完全双向的应用程序，包括支持双向文本、从右到左的读取顺序以及镜像（用于翻转窗口、菜单、对话框等的布局）。 除镜像外，这些功能都作为默认功能或属性设置提供。 某些功能（例如消息框）本身就支持镜像。 但在其他情况下，必须通过代码实现镜像。 有关详细信息，请参阅 [Windows 窗体应用程序的双向支持](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications)。
+   你可以创建完全双向的应用程序，包括支持双向文本、从右到左的读取顺序以及镜像（用于翻转窗口、菜单、对话框等的布局）。 除镜像外，这些功能都作为默认功能或属性设置提供。 某些功能（例如消息框）本身就支持镜像。 但在其他情况下，必须通过代码实现镜像。 有关详细信息，请参阅 [Windows 窗体应用程序的双向支持](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)。
 
 -  Web 应用
 

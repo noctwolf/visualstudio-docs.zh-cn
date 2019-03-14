@@ -2,7 +2,7 @@
 title: 提示和技巧在调试器中
 description: 了解有关的一些鲜为人知的功能支持的 Visual Studio 调试器
 ms.custom: seodec18
-ms.date: 06/15/2017
+ms.date: 06/15/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - stepping
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87c9bd45383cdd4e5329834e4a64b1917229e08b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717541"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526355"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 调试器在工作效率方面的提示和技巧
 

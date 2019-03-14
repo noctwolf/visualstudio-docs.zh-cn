@@ -1,6 +1,6 @@
 ---
 title: 支持代码更改 (C#和 Visual Basic) |Microsoft Docs
-ms.date: 10/11/2017
+ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 753a3816b6432a58c5f79077c4e438db753297b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692219"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526174"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>支持的代码更改（C# 和 Visual Basic）
 “编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，您必须停止调试，重新开始新版本的代码。

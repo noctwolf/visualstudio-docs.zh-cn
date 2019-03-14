@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118b8a6c8d857e626d39cf27d2767f75cd0550ee
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704808"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526085"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>创建进行调试时的调用堆栈的直观映射 (C#，Visual Basic、 c + +、 JavaScript)
 
@@ -45,7 +45,7 @@ ms.locfileid: "56704808"
 有关命令和操作可以使用代码图的详细信息，请参阅[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
 
 >[!IMPORTANT]
->您可以创建仅在代码图[Visual Studio Enterprise 版](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)。
+>您可以创建仅在代码图[Visual Studio Enterprise 版](https://visualstudio.microsoft.com/downloads/)。
 
 下面是快速看一下代码映射：
 
