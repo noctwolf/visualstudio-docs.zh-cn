@@ -12,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26635f9f6680931d02993613f96dcfcbe623af1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919672"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736926"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>演练：分析 C/C++ 代码的缺陷
 
@@ -67,7 +67,7 @@ ms.locfileid: "55919672"
 
      警告 C6230:语义不同类型之间的隐式强制转换： 在 Boolean 上下文中使用 HRESULT。
 
-     代码编辑器中显示导致警告函数中的行`bool``ProcessDomain()`。 此警告表示 HRESULT 正在使用在 if 语句中布尔值结果的地方。
+     代码编辑器中显示导致警告函数中的行`bool ProcessDomain()`。 此警告表示 HRESULT 正在使用在 if 语句中布尔值结果的地方。
 
 3. 通过使用 SUCCEEDED 宏来更正此警告。 你的代码应类似于以下代码：
 

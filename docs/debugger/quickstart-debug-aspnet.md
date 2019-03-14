@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7a17431fa2ad85c660164110ab005fa00053ff17
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683592"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525396"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 ASP.NET
 
@@ -94,7 +94,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
 
 ## <a name="navigate-code"></a>导航代码
 
-有不同的命令来指示调试器继续。 我们将演示 Visual Studio 2017 中新增的一个有用的代码导航命令。
+有不同的命令来指示调试器继续。 我们将演示自 Visual Studio 2017 开始新增的一个有用的代码导航命令。
 
 在断点处暂停时，将鼠标悬停在 `return c2` 语句上，直至绿色的“运行到单击处”按钮 ![运行到单击处](../debugger/media/dbg-tour-run-to-click.png) 出现，然后按“运行到单击处”按钮。
 

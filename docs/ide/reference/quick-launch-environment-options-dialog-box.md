@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a53d29e7d72c10b3b7b9f295cb5b7adebab45e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8f8bc5a19e3cb91634b5a61e0b3e917fb0a3f9a
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949156"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737000"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“快速启动”
 
@@ -36,9 +36,9 @@ ms.locfileid: "55949156"
 |类别|快捷键|快捷方式说明|
 |--------------|--------------| - |
 |最近使用的|@mru<br /><br /> 例如，`@mru font`|显示最多五个“最近使用的”项。|
-|菜单|@menu<br /><br /> 例如，`@menu font`|将搜索限定为菜单项。|
+|菜单|@menu<br /><br /> 例如，`@menu project`|将搜索限定为菜单项。|
 |选项|@opt<br /><br /> 例如，`@opt font`|将搜索限定为“选项”对话框中的设置。|
-|文档|@doc<br /><br /> 例如，`@doc font`|将搜索限定为打开的文档的文件名称和路径（按搜索条件），但不搜索文件内的文本。|
+|文档|@doc<br /><br /> 例如，`@doc program.cs`|将搜索限定为打开的文档的文件名称和路径（按搜索条件），但不搜索文件内的文本。|
 
 > [!NOTE]
 > 可以更改“选项”对话框中“键盘”页的“常规”上的快捷键。

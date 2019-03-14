@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 617783019a8a8b5a1ac2623ed113b78308466501
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8c8616ffc9adeebe5fd2b224366d05cbf5c66a2e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696878"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525370"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 C# 或 Visual Basic
 
@@ -142,7 +142,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
 
 ## <a name="navigate-code"></a>导航代码
 
-有不同的命令来指示调试器继续。 我们将演示 Visual Studio 2017 中新增的一个有用的代码导航命令。
+有不同的命令来指示调试器继续。 我们将演示自 Visual Studio 2017 开始新增的一个有用的代码导航命令。
 
 在断点处暂停时，将鼠标悬停在 `c1.AddLast(20)` 语句上，直至绿色的“运行到单击处”按钮 ![运行到单击处](../debugger/media/dbg-tour-run-to-click.png "RunToClick") 出现，然后按“运行到单击处”按钮。
 

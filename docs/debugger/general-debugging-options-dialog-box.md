@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347e2948538b8d4149ce6228656d190c5f972a6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e97f2f844c53a6bf26fecc4559b65ae69970c6b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689299"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526533"
 ---
 # <a name="general-debugging-options"></a>常规调试选项
 
@@ -54,7 +54,7 @@ ms.locfileid: "56689299"
 
 **启用断点筛选器**： 使您能够在断点上设置筛选器，以便他们将影响特定的进程、 线程或计算机。
 
-**使用新的异常帮助器**： 使替换异常助手异常帮助器 (Visual Studio 2017)。
+**使用新的异常帮助器**： 使替换异常助手异常帮助器。 （异常帮助器开始支持在 Visual Studio 2017）
 
 > [!NOTE]
 > 对于托管代码，此选项以前称为“启用异常助手”。
@@ -158,7 +158,7 @@ ms.locfileid: "56689299"
 
 如果你使用 Visual Studio 的较旧版本，可能会出现一些其他选项。
 
-**启用异常助手**： 对于托管代码中，会启用异常助手。 在 Visual Studio 2017 中，异常帮助器替换为异常助手。
+**启用异常助手**： 对于托管代码中，会启用异常助手。 从 Visual Studio 2017 中，异常帮助器替换为异常助手。
 
 **展开调用堆栈上未经处理的异常**： 将导致**调用堆栈**窗口调用堆栈回滚到点之前发生了未经处理的异常。
 

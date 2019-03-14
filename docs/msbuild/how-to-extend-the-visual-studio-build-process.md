@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d22bf8af86605d414d933d16cd5dd7f8d24a6154
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603256"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737063"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：扩展 Visual Studio 生成过程
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程由导入到项目文件中的一系列 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 文件定义。 可扩展其中一个导入文件 Microsoft.Common.targets，以便在生成过程中的几个点上运行自定义任务。 本文介绍两种可用于扩展 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成过程的方法：
@@ -60,7 +60,7 @@ Microsoft.Common.targets 文件包含一组预定义的空目标，会在生成�
 |`BeforeRebuild`， `AfterRebuild`|插入到这些目标之一中的任务，在调用内核重新生成功能之前或之后运行。 Microsoft.Common.targets 中的目标执行顺序是：`BeforeRebuild`、`Clean`、`Build`、`AfterRebuild`。|
 |`BeforeClean`， `AfterClean`|插入到这些目标之一中的任务，在调用内核清理功能之前或之后运行。|
 |`BeforePublish`， `AfterPublish`|插入到这些目标之一中的任务，在调用内核发布功能之前或之后运行。|
-|`BeforeResolveReference`， `AfterResolveReferences`|插入到这些目标之一中的任务，在解析程序集引用之前或之后运行。|
+|`BeforeResolveReferences`， `AfterResolveReferences`|插入到这些目标之一中的任务，在解析程序集引用之前或之后运行。|
 |`BeforeResGen`， `AfterResGen`|插入到这些目标之一中的任务，在生成资源之前或之后运行。|
 
 ## <a name="override-dependson-properties"></a>重写 DependsOn 属性

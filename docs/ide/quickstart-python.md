@@ -1,7 +1,7 @@
 ---
 title: 快速入门：使用 Visual Studio 创建 Python Web 应用
 description: 在此快速入门教程中，利用 Visual Studio 和 Flask 框架在 Python 中生成简单的 Web 应用。
-ms.date: 02/11/2019
+ms.date: 03/07/2019
 ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 826e0134d4798526a3ba3ae8055500808eb922a1
-ms.sourcegitcommit: 61dc40d6c707f8c79779ec1091b296530d5a7b81
+ms.openlocfilehash: 8c8be894bf80749260f44cf36255d78f3899bf35
+ms.sourcegitcommit: e2b1932d3d4d77dfacb5d245c8b2c7490a94a20e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55987426"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57683380"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入门：使用 Visual Studio 创建第一个 Python Web 应用
 
@@ -27,21 +27,43 @@ ms.locfileid: "55987426"
 
 以下步骤创建一个作为应用程序容器的空项目：
 
+::: moniker range="vs-2017"
 1. 打开 Visual Studio 2017。
 
-1. 从顶部菜单栏中选择“文件”>“新建”>“项目”。
+2. 从顶部菜单栏中选择“文件”>“新建”>“项目”。
 
-1. 在“新建项目”对话框右上角的搜索字段中输入“Python Web 项目”，在中间的列表中选择“Web 项目”，为项目命名（如“HelloPython”），然后选择“确定”。
+3. 在“新建项目”对话框右上角的搜索字段中输入“Python Web 项目”，在中间的列表中选择“Web 项目”，为项目命名（如“HelloPython”），然后选择“确定”。
 
     ![新建项目对话框，其中选择了 Python Web 项目](media/quickstart-python-00-web-project.png)
 
-    如果你没有看到 Python 项目模板，请取消“新建项目”对话框并从顶部菜单栏中选择“工具”>“获取工具和功能”以打开“Visual Studio 安装程序”。 选择“Python 开发”工作负载，然后选择“修改”。
+    如果找不到 Python 项目模板，请运行 Visual Studio 安装程序，选择“更多”>“修改”，选择“Python 开发”工作负载，然后选择“修改”。
 
     ![Visual Studio 安装程序中的 Python 开发工作负载](../python/media/installation-python-workload.png)
 
-1. 新项目在“解决方案资源管理器”的右窗格中打开。 项目此时已为空，因为它不含其他文件。
+4. 新项目在“解决方案资源管理器”的右窗格中打开。 项目此时已为空，因为它不含其他文件。
 
     ![显示新创建的空项目的解决方案资源管理器](media/quickstart-python-01-empty-project.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+1. 打开 Visual Studio 2019。
+2. 在开始屏幕上，选择“创建新项目”。
+3. 在“创建新项目”对话框中，在顶部的搜索字段中输入“Python web”，在中间列表中选择“Web 项目”，然后选择“下一步”：
+
+    ![创建新项目屏幕，其中选择了 Python Web 项目](media/quickstart-python-00-web-project-2019a.png)
+
+    如果找不到 Python 项目模板，请运行 Visual Studio 安装程序，选择“更多”>“修改”，选择“Python 开发”工作负载，然后选择“修改”。
+
+    ![Visual Studio 安装程序中的 Python 开发工作负载](../python/media/installation-python-workload.png)
+
+4. 在接下来的“配置新项目”对话框中，输入“HelloPython”作为项目名称，指定一个位置，然后选择“创建”。 （解决方案名称自动设置为匹配项目名称。）
+
+    ![“配置新项目”对话框](media/quickstart-python-00-web-project-2019b.png)
+
+5. 新项目在“解决方案资源管理器”的右窗格中打开。 项目此时已为空，因为它不含其他文件。
+
+    ![显示新创建的空项目的解决方案资源管理器](media/quickstart-python-01-empty-project-2019.png)
+::: moniker-end
 
 **问：在 Visual Studio 中为 Python 应用程序创建项目有何优势？**
 
@@ -57,19 +79,37 @@ Python 中的 Web 应用几乎总是使用众多可用 Python 库中的一个来
 
 在此按以下步骤将 Flask 库安装到 Visual Studio 用于此项目的默认“全局环境”。
 
+::: moniker range="vs-2017"
 1. 展开项目中的“Python 环境”节点，查看项目的默认环境。
 
     ![显示默认环境的解决方案资源管理器](media/quickstart-python-02-default-environment.png)
 
-1. 右键单击环境并选择“安装 Python 包”。 此命令将打开“包”选项卡上的“Python 环境”窗口。
+2. 右键单击环境并选择“安装 Python 包”。 此命令将打开“包”选项卡上的“Python 环境”窗口。
 
-1. 在搜索字段中输入“flask”，再选择 [PyPI 中的“pip install flask”]。 接受任何管理员权限提示，查看 Visual Studio 中的“输出”窗口了解进度。 （当全局环境的包文件夹位于类似于 C:\Program Files 这样的受保护区域时，会出现提升提示。）
+3. 在搜索字段中输入“flask”，再选择 [PyPI 中的“pip install flask”]。 接受任何管理员权限提示，查看 Visual Studio 中的“输出”窗口了解进度。 （当全局环境的包文件夹位于类似于 C:\Program Files 这样的受保护区域时，会出现提升提示。）
 
     ![使用 pip 安装，安装 Flask 库](media/quickstart-python-03-install-package.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. 展开项目中的“Python 环境”节点，查看项目的默认环境。
 
-1. 安装完成后，库显示在“解决方案资源管理器”的环境中，这意味着可以在 Python 代码中使用它。
+    ![显示默认环境的解决方案资源管理器](media/quickstart-python-02-default-environment-2019.png)
 
+2. 右键单击环境并选择“管理 Python 包...”。此命令将打开“包 (PyPI)”选项卡上的“Python 环境”窗口。
+
+3. 在搜索字段中输入"flask"。 如果 Flask 出现在搜索框下方，可跳过此步骤。 否则选择“运行命令: pip install flask”。 接受任何管理员权限提示，查看 Visual Studio 中的“输出”窗口了解进度。 （当全局环境的包文件夹位于类似于 C:\Program Files 这样的受保护区域时，会出现提升提示。）
+
+    ![使用 pip 安装，安装 Flask 库](media/quickstart-python-03-install-package-2019.png)
+::: moniker-end
+
+4. 安装完成后，库显示在“解决方案资源管理器”的环境中，这意味着可以在 Python 代码中使用它。
+
+    ::: moniker range="vs-2017"
     ![已安装 Flask 库并在解决方案资源管理器中显示](media/quickstart-python-04-package-installed.png)
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    ![已安装 Flask 库并在解决方案资源管理器中显示](media/quickstart-python-04-package-installed-2019.png)
+    ::: moniker-end
 
 > [!Note]
 > 开发人员通常会创建一个虚拟环境用于安装特定项目的库，而不是在全局环境中安装库。 Visual Studio 模板通常会提供此选项，如[快速入门 - 使用模板创建 Python 项目](../python/quickstart-02-python-in-visual-studio-project-from-template.md)中所述。
@@ -121,7 +161,14 @@ Python 中的 Web 应用几乎总是使用众多可用 Python 库中的一个来
 
 1. 在“解决方案资源管理器”中右键单击 app.py，然后选择“设置为启动文件”。 此命令可标识运行应用时要在 Python 中启动的代码文件。
 
+    ::: moniker range="vs-2017"
     ![在解决方案资源管理器中设置项目的启动文件](media/quickstart-python-05-set-as-startup-file.png)
+    ::: moniker-end
+    ::: moniker range=">=vs-2019"
+    ![在解决方案资源管理器中设置项目的启动文件](media/quickstart-python-05-set-as-startup-file-2019.png)
+    ::: moniker-end
+
+1. 在“解决方案资源管理器”中右键单击 app.py，然后选择“设置为启动文件”。 此命令可标识运行应用时要在 Python 中启动的代码文件。
 
 2. 右键单击“解决方案资源管理器”中的项目，再选择“属性”。 然后选择“调试”选项卡并将“端口号”属性设置为 `4449`。 此步骤可保证 Visual Studio 启动带 `localhost:4449` 的浏览器与代码中的 `app.run` 参数进行匹配。
 
