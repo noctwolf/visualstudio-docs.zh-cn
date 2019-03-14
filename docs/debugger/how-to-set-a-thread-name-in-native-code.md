@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 264ac57a0d159b9cdd2627d7a62372fa070e31de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715175"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526225"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在本机代码中设置线程名称
 在 Visual Studio 的任何版本中都可以使用线程命名功能。 线程命名功能可用于标识的感兴趣的线程**线程**窗口调试正在运行的进程时。 具有 recognizably 名为线程也会有所帮助时执行事后调试通过崩溃转储检查和分析性能捕获使用各种工具。
@@ -40,7 +40,7 @@ ms.locfileid: "56715175"
 * 线程名称也是可见时使用其他工具，如[WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)调试器并[Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer)性能分析器。
 
 注意：
-* 线程名称仅显示在 Visual Studio 2017 版本 15.6 及更高版本。
+* 线程名称将仅显示在 Visual Studio 2017 版本 15.6 及更高版本。
 * 事后调试崩溃转储文件，线程名称时，仅在 Windows 10 版本 1607年中，Windows Server 2016 或更高版本的 Windows 上创建在崩溃时可见。
 
 *示例：*

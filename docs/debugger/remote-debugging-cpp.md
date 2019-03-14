@@ -1,7 +1,7 @@
 ---
 title: 远程调试 Visual c + + 项目 |Microsoft Docs
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 08/14/2018
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca380bae4ae4fcca5f280eb00533ad8ed7763f9e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fbfdb246769ac55afd7f164d91673e39e293f4c4
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709286"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526057"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>远程调试 Visual Studio 中的 Visual c + + 项目
 若要调试在另一台计算机上的 Visual Studio 应用程序、 安装和将在其中部署您的应用程序的计算机上运行远程工具，将项目配置为从 Visual Studio 中，连接到远程计算机然后部署并运行你的应用。

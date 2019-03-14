@@ -1,5 +1,5 @@
 ---
-title: 如何：在混合模式调试 |Microsoft Docs
+title: 如何： 在混合模式调试 |Microsoft Docs
 ms.date: 11/05/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1da9b01c32b82948718ef5045005eb0d9beb37
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968526"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526719"
 ---
-# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>如何：在混合模式调试 (C#，c + +、 Visual Basic)
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>如何： 在混合模式调试 (C#，c + +、 Visual Basic)
 
 以下过程介绍如何为托管和本机代码组合在一起，也称为混合模式调试启用调试。 有两个混合模式调试方案：
 
@@ -34,7 +34,7 @@ ms.locfileid: "54968526"
 
 可以让调用应用程序项目中的托管和本机调试器**属性**页。 设置本机和托管应用程序之间存在差异。
 
-如果没有向调用应用程序的项目的访问权限，则可以调试 DLL 项目的 DLL。 您不需要混合的模式调试只是 DLL 项目。 有关详细信息，请参阅[如何：从 DLL 项目调试](../debugger/how-to-debug-from-a-dll-project.md)。
+如果没有向调用应用程序的项目的访问权限，则可以调试 DLL 项目的 DLL。 您不需要混合的模式调试只是 DLL 项目。 有关详细信息，请参阅[操作说明：在 DLL 项目中调试](../debugger/how-to-debug-from-a-dll-project.md)。
 
 > [!NOTE]
 > 对话框和命令可能与本文中，具体取决于您的 Visual Studio 设置或版本中的不同。 若要更改您的设置，请选择**工具** > **导入和导出设置**。 有关详细信息，请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
@@ -62,8 +62,8 @@ ms.locfileid: "54968526"
    ![启用本机代码调试](../debugger/media/dbg-mixed-mode-from-csharp.png "启用本机代码调试")
 
 > [!NOTE]
-> 在 Visual Studio 2017 的大多数版本中，必须使用 launchSettings.json 文件（而非项目属性）在 .NET Core 应用中为本机代码启用混合模式调试。 有关详细信息，请参阅[调试托管和本机代码](../debugger/how-to-debug-managed-and-native-code.md)。
+> 在大多数版本的 Visual Studio 启动 Visual Studio 2017 中，你必须使用*launchSettings.json*文件而不是项目属性以启用混合模式调试的.NET Core 应用中的本机代码。 有关详细信息，请参阅[调试托管和本机代码](../debugger/how-to-debug-managed-and-native-code.md)。
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：从 DLL 项目调试](../debugger/how-to-debug-from-a-dll-project.md)
+- [如何：从 DLL 项目进行调试](../debugger/how-to-debug-from-a-dll-project.md)
