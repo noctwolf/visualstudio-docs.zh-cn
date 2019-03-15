@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 84d83cba5afb201725354069ff1816dd8985b15c
-ms.sourcegitcommit: b623042906de4f12d68af365e36eb38b7b44aa90
+ms.openlocfilehash: a8b13e9f5ed76b61279212bfdedf33b25f694221
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56270571"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983450"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>在 Visual Studio 中安装 FxCop 分析器
 
@@ -54,12 +54,27 @@ Microsoft 创建了一组调用的分析器[Microsoft.CodeAnalysis.FxCopAnalyzer
 
 在 Visual Studio 2017 版本 15.5 及更高版本中，可以安装[Microsoft 代码分析 2017年](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)包含所有托管项目的 FxCop 分析器的扩展。
 
+::: moniker range="vs-2017"
+
 1. 在 Visual Studio 中，选择**工具** > **扩展和更新**。
 
    此时，“扩展和更新”对话框打开。
 
    > [!NOTE]
    > 或者，下载适用的扩展直接从[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在 Visual Studio 中，选择**扩展** > **管理扩展**。
+
+   **管理扩展**对话框随即打开。
+
+   > [!NOTE]
+   > 或者，下载适用的扩展直接从[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)。
+
+::: moniker-end
 
 1. 展开**联机**在左窗格中，然后选择**Visual Studio Marketplace**。
 
@@ -83,7 +98,17 @@ Microsoft 创建了一组调用的分析器[Microsoft.CodeAnalysis.FxCopAnalyzer
 
 1. Visual Studio 中再次打开。
 
+::: moniker range="vs-2017"
+
 如果你想要检查扩展是否已安装，选择**工具** > **扩展和更新**。 在**扩展和更新**对话框中，选择**已安装**左边的类别，然后按名称搜索该扩展。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+如果你想要检查扩展是否已安装，选择**扩展** > **管理扩展**。 在**管理扩展**对话框中，选择**已安装**左边的类别，然后按名称搜索该扩展。
+
+::: moniker-end
 
 ## <a name="see-also"></a>请参阅
 

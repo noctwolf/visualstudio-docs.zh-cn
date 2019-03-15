@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c595465a9791f00036fb5358c49afae808dce13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b29735eeb8b35b2d674f3574343b19665c87fa19
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932711"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983840"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>向依赖项关系图添加命令和手势
 
@@ -54,7 +54,17 @@ ms.locfileid: "55932711"
 
     [定义笔势处理程序](#gesture)
 
+::: moniker range="vs-2017"
+
 6. 若要安装该扩展的 Visual Studio 中，或在另一台计算机上的主实例中，找到 *.vsix*中的文件*bin*目录。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择**扩展和更新**上**工具**菜单。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+6. 若要安装该扩展的 Visual Studio 中，或在另一台计算机上的主实例中，找到 *.vsix*中的文件*bin*目录。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择**管理扩展**上**扩展**菜单。
+
+::: moniker-end
 
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>将命令或笔势添加到单独的 VSIX
 
@@ -104,11 +114,9 @@ ms.locfileid: "55932711"
 
      另请参阅[导航和更新层模型在程序代码中的](../modeling/navigate-and-update-layer-models-in-program-code.md)。
 
-6.  若要测试此功能，请按 CTRL+F5 或 F5。 这将打开一个 Visual Studio 实验实例。 在本例中，创建或打开依赖项关系图。
+6.  若要测试此功能，按**Ctrl**+**F5**或**F5**。 这将打开一个 Visual Studio 实验实例。 在本例中，创建或打开依赖项关系图。
 
 7.  若要安装的 Visual Studio 中，或在另一台计算机上的主实例中的 VSIX，查找 **.vsix**中的文件**bin** VSIX 项目的目录。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。
-
-     若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。
 
 ##  <a name="command"></a> 定义菜单命令
 

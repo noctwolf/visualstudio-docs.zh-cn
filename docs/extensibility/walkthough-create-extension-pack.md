@@ -10,12 +10,12 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d42e5239378886840f8943d26c5e21138907fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fa19618baba46b56337714a633a993b232f78a46
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718352"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983008"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>演练：创建扩展包
 
@@ -85,7 +85,7 @@ ms.locfileid: "56718352"
 
 若要从计算机中删除该扩展：
 
-1. 在 Visual Studio 中，在**工具**菜单上，单击**扩展和更新...**.
+1. 在 Visual Studio 中，在**工具**菜单上，单击**扩展和更新**。
 
 2. 选择`Test Extension Pack`，然后单击**卸载**。 然后将卸载计划扩展和扩展包中包括的扩展其列表。
 
