@@ -6,7 +6,7 @@ Manager: lank
 layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
-Description: Welcome to Visual Studio Subscriptions
+Description: 欢迎使用 Visual Studio 订阅
 Searchscope: VS Subscription
 ---
 
@@ -150,7 +150,7 @@ Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
-                            <li>Team Foundation Server 和 TFS CAL</li>
+                            <li>Azure DevOps Server 和 CAL</li>
                         </ul>
                     </div>
                 </div>
