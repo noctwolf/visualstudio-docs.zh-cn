@@ -1,6 +1,6 @@
 ---
 title: CA1063:正确实现 IDisposable
-ms.date: 02/12/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e4bc426162919f4112ffdfcc0fbeeb0fefd2f09e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 22ecfcdd6dc20f5837622ec2cc3469f11c7efa8c
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945750"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868309"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:正确实现 IDisposable
 
@@ -52,7 +52,9 @@ ms.locfileid: "55945750"
 
 冲突的任何一种模式触发警告 CA1063。
 
-每个非密封的类型声明并实现<xref:System.IDisposable>接口必须提供其自己受保护的虚拟 void dispose （bool） 方法。 Dispose （） 应调用 Dipose(true)，和终结器应调用 dispose （false）。 如果您创建未密封的类型的声明并实现<xref:System.IDisposable>接口，必须定义 dispose （bool），调用它。 有关详细信息，请参阅[清理非托管资源 （.NET 指南）](/dotnet/standard/garbage-collection/unmanaged)并[Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)。
+每个非密封的类型声明并实现<xref:System.IDisposable>接口必须提供其自己`protected virtual void Dispose(bool)`方法。 `Dispose()` 应调用`Dipose(true)`，并调用终结器应`Dispose(false)`。 如果您创建未密封的类型的声明并实现<xref:System.IDisposable>接口，必须定义`Dispose(bool)`，调用它。 有关详细信息，请参阅[清理非托管资源 （.NET 指南）](/dotnet/standard/garbage-collection/unmanaged)并[Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)。
+
+默认情况下，此规则只看起来在外部可见的类型，但这是[可配置](#configurability)。
 
 ## <a name="rule-description"></a>规则说明
 
@@ -83,6 +85,16 @@ ms.locfileid: "55945750"
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
 不禁止显示此规则发出的警告。
+
+## <a name="configurability"></a>可配置性
+
+如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
+
+```
+dotnet_code_quality.ca1063.api_surface = private, internal
+```
+
+此类别 （设计） 中，可以配置此选项只是此规则，所有规则，或所有规则。 有关详细信息，请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="pseudo-code-example"></a>伪代码示例
 

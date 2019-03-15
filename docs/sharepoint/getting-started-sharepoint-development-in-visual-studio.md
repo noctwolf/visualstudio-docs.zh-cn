@@ -14,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52596dcc89aa1fedadf016e69fceed8549c42e57
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54873205"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869013"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>获取已启动 （中的 SharePoint 开发 Visual Studio）
   此部分帮助你开始使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 来开发利用 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]的 SharePoint 解决方案。
 
- 有关 SharePoint 2013 和 SharePoint 外接程序的信息，请参阅 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 和 [构建 SharePoint 外接程序](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
+ 有关 SharePoint 2013 和 SharePoint 外接程序的信息，请参阅 [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) 和 [构建 SharePoint 外接程序](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
 
  SharePoint 提供基于 Web 的协作平台。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供了很多用于创建 SharePoint 网站和内容的项目模板，包括列表定义、工作流、业务数据连接模型和网站定义。 此外，可以在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中创建 SharePoint 项目和工具的扩展。
 

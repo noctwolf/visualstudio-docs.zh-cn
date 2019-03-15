@@ -15,25 +15,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ff02b666f48e959001a800cb37b5820c39a12034
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f22630a823e592e0cdc2128dfb3ab38e1b177d72
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841712"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867701"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>演练：分析 SharePoint 应用程序
   本演练演示在 Visual Studio 中如何使用分析工具优化 SharePoint 应用程序的性能。 此示例应用程序是 SharePoint 功能事件接收器，其中包含降低功能事件接收器性能的空闲循环。 Visual Studio 探查器，可以找到和消除开销最大 （最慢执行） 项目的一部分，也称为*热路径*。
 
  本演练演示了下列任务：
 
-- [添加功能和功能事件接收器](#BKMK_AddFtrandFtrEvntReceiver)。
+- [Addg 功能和功能事件接收器](#add-a-feature-and-feature-event-receiver)。
 
-- [配置和部署 SharePoint 应用程序](#BKMK_ConfigSharePointApp)。
+- [配置和部署 SharePoint 应用程序](#configure-and-deploy-the-sharepoint-application)。
 
-- [运行 SharePoint 应用程序](#BKMK_RunSPApp)。
+- [运行 SharePoint 应用程序](#run-the-sharepoint-application)。
 
-- [查看和解释分析结果](#BKMK_ViewResults)。
+- [查看和解释的配置文件结果](#view-and-interpret-the-profile-results)。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

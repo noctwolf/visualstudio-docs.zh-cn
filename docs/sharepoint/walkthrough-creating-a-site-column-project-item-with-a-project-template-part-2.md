@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e0445e66b10ca8bfa0ae4f5d2c35246d71745788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 79c27ec92d93f9f9cd88cc1155521b04ea7c2908
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604853"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868099"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>演练：使用项目模板，第 2 部分中创建站点栏项目项
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项目模板关联后，可能想要为模板提供一个向导。 该向导可用于从用户收集信息，当用户使用模板创建新的项目包含项目项。 可以使用你收集的信息来初始化项目项。
@@ -195,7 +195,7 @@ ms.locfileid: "56604853"
 
 - 项目签名管理器。
 
-  有关这些组件的详细信息，请参阅[了解向导组件](#wizardcomponents)。
+  有关这些组件的详细信息，请参阅[了解向导组件](#understand-the-wizard-components)。
 
 #### <a name="to-define-the-sharepoint-command-ids"></a>若要定义的 SharePoint 命令 Id
 

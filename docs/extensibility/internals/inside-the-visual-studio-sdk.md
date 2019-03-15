@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ec103cf9ca867582d4762e06ca59eac48da588
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796668"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870268"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探究 Visual Studio SDK
 本部分提供有关 Visual Studio 扩展，其中包括 Visual Studio 体系结构、 组件、 服务、 架构、 实用工具和类似的内容的详细信息。
@@ -90,7 +90,7 @@ ms.locfileid: "56796668"
  有关详细信息，请参阅[项目](../../extensibility/internals/projects.md)并[解决方案](../../extensibility/internals/solutions.md)。
 
 ## <a name="project-and-item-templates"></a>项目和项模板
- Visual Studio 包含预定义的项目模板和项目项模板。 可以还使您自己的模板或获取社区中的模板，然后将其集成到 Visual Studio。 [MSDN 代码库](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio)是为模板和扩展的位置。
+ Visual Studio 包含预定义的项目模板和项目项模板。 可以还使您自己的模板或获取社区中的模板，然后将其集成到 Visual Studio。 [MSDN 代码库](https://code.msdn.microsoft.com/site/search?query=visual%20studio)是为模板和扩展的位置。
 
  模板包含的项目结构和所需构建特定类型的应用程序、 控件、 库或类的基本文件。 当你想要开发软件，类似于一个模板时，创建基于模板的项目，然后修改该项目中的文件。
 

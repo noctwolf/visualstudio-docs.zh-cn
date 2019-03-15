@@ -1,6 +1,6 @@
 ---
 title: CA1008:枚举应具有零值
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1008
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8d7646ddb294cef27b58b5b5e212c33b11fb46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4bb79d2944bdb49c59fd53fb30e1497c57c5c516
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955292"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868280"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008:枚举应具有零值
 
@@ -36,7 +36,9 @@ ms.locfileid: "55955292"
 
 ## <a name="cause"></a>原因
 
-一个枚举，而无需应用<xref:System.FlagsAttribute?displayProperty=fullName>不会定义一个具有值为零; 或已应用的枚举的成员<xref:System.FlagsAttribute>定义了一个成员，其值为零，但其名称不是 'None' 或枚举定义多个零值成员。
+一个枚举，而无需应用<xref:System.FlagsAttribute?displayProperty=fullName>不会定义一个具有值为零的成员。 或者，已应用的枚举<xref:System.FlagsAttribute>定义了一个成员，其值为零，但其名称不是 'None'。 或者，枚举定义多个零值的成员。
+
+默认情况下，此规则仅查看外部可见的枚举，但这是[可配置](#configurability)。
 
 ## <a name="rule-description"></a>规则说明
 
@@ -51,6 +53,16 @@ ms.locfileid: "55955292"
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
 不要禁止显示除以前发布的特性标志化枚举此规则的警告。
+
+## <a name="configurability"></a>可配置性
+
+如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
+
+```
+dotnet_code_quality.ca1008.api_surface = private, internal
+```
+
+此类别 （设计） 中，可以配置此选项只是此规则，所有规则，或所有规则。 有关详细信息，请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="example"></a>示例
 

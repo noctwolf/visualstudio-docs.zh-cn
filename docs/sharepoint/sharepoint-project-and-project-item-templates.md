@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3a535f1b9051835f0a26ae62ca63cc30f289ddea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6250577a5a1b6793001b1d4b732c3b3101690aad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612915"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867868"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 项目和项目项模板
   以下各节描述了可用的 SharePoint 项目和项目项模板以及如何使用它们。
@@ -74,7 +74,7 @@ ms.locfileid: "56612915"
  **（仅场解决方案） 的应用程序页上**项，您可以设计[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]的 SharePoint 网站的 web 页。 可以仅在场解决方案中使用的应用程序页。 此项目项仅向场解决方案。 有关详细信息，请参阅[如何：创建应用程序页](../sharepoint/how-to-create-an-application-page.md)并[应用程序 _layouts 的页类型](http://go.microsoft.com/fwlink/?LinkId=179434)。
 
 ### <a name="business-data-connectivity-model-farm-solution-only"></a>业务数据连接模型 （仅场解决方案）
- 一个**业务数据连接模型 （仅场解决方案）** 项使你可以集成业务数据在 SharePoint 中。 业务数据可以来源于后端服务器应用程序，如[!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)]，Siebel 和服务广告协议 (SAP)。 可以仅在场解决方案中使用业务数据连接模型。 此项目项仅向场解决方案。 有关详细信息，请参阅[如何：创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)，[如何：使用资源文件指定本地化的名称、 属性和权限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)，和[新增功能：Business Connectivity Services](http://go.microsoft.com/fwlink/?LinkId=179411)。
+ 一个**业务数据连接模型 （仅场解决方案）** 项使你可以集成业务数据在 SharePoint 中。 业务数据可以来源于后端服务器应用程序，如[!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)]，Siebel 和服务广告协议 (SAP)。 可以仅在场解决方案中使用业务数据连接模型。 此项目项仅向场解决方案。 有关详细信息，请参阅[如何：创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)，[如何：使用资源文件指定本地化的名称、 属性和权限](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)，和[新增功能：Business Connectivity Services](/previous-versions/office/developer/sharepoint-2010/ee534979(v=office.14))。
 
 ### <a name="content-type"></a>内容类型
  *内容类型*项可用于创建基于现有的 （基本） 内容类型，如文档、 公告或任务的自定义内容类型。 自定义内容类型作为基内容类型以及你定义的任何站点列 （字段） 提供相同的属性和字段。 例如，可以创建基于在 SharePoint 中涉及的基本联系人内容类型的自定义联系人内容类型。 您可以通过更改现有的站点列，或将更多的站点列添加到已包含基内容类型中的自定义内容类型。
@@ -109,7 +109,7 @@ ms.locfileid: "56612915"
  *模块*(不要与混淆[!include[vbprvb](../sharepoint/includes/vbprvb-md.md)]模块) 包含你想要部署到 SharePoint 服务器，如图像或说明的任何文件。 模块项目项包含**模块**节点。 在模块节点包含两个项目项模板： XML 定义文件，它充当模块清单，和一个*sample.txt*文件，将占位符文件。 有关详细信息，请参阅[使用模块包括解决方案中的文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)并[模块](http://go.microsoft.com/fwlink/?LinkId=179425)。
 
 ### <a name="sequential-workflow-farm-solution-only"></a>顺序工作流 （仅场解决方案）
- 一个*顺序工作流*是一系列业务逻辑步骤，直到完成最后一个步骤按顺序执行。 顺序工作流用于管理涉及如列表和文档的 SharePoint 项的进程。 可以创建站点级别 （全局） 工作流或列表级别 （本地） 工作流，并可以选择是否自动或手动启动工作流。 此项目项可仅在场解决方案。 此项目项仅向场解决方案。 有关详细信息，请参阅[创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)， [SharePoint Server 2010 中的工作流](http://go.microsoft.com/fwlink/?LinkId=260555)，和[What's New:工作流改进](http://go.microsoft.com/fwlink/?LinkId=179418)。
+ 一个*顺序工作流*是一系列业务逻辑步骤，直到完成最后一个步骤按顺序执行。 顺序工作流用于管理涉及如列表和文档的 SharePoint 项的进程。 可以创建站点级别 （全局） 工作流或列表级别 （本地） 工作流，并可以选择是否自动或手动启动工作流。 此项目项可仅在场解决方案。 此项目项仅向场解决方案。 有关详细信息，请参阅[创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)， [SharePoint Server 2010 中的工作流](http://go.microsoft.com/fwlink/?LinkId=260555)，和[What's New:工作流改进](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))。
 
 ### <a name="silverlight-web-part"></a>Silverlight web 部件
  *Silverlight web 部件*项目项使你创建的 web 部件的 SharePoint 显示 Silverlight 应用程序。 当将此项目项添加到你的解决方案时，可以选择是否要添加新的 Silverlight 应用程序或更高版本引用一个现有。 有关详细信息，请参阅[为 SharePoint 创建 web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)和[演练：创建显示 SharePoint OData 的 Silverlight web 部件](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)。
@@ -129,7 +129,7 @@ ms.locfileid: "56612915"
   添加站点定义后，你添加代码和文件来引入的功能。 此项目项可仅在场解决方案。 此项目项仅向场解决方案。 有关详细信息，请参阅[创建 SharePoint 站点定义](../sharepoint/creating-site-definitions-for-sharepoint.md)并[站点定义和配置](http://go.microsoft.com/fwlink/?LinkId=260554)。
 
 ### <a name="state-machine-workflow-farm-solution-only"></a>状态机工作流 （仅场解决方案）
- 一个*状态机工作流*是一组业务逻辑状态、 转换和操作。 按顺序; 不执行状态机工作流中的步骤相反，它们触发的操作和状态。 与顺序工作流状态机工作流是与 SharePoint 项，如列表和文档相关联。 再次重申，您可以创建站点级别 （全局） 工作流或列表级别 (local) 工作流。 此外可以选择是否自动或手动启动工作流。 此项目项可仅在场解决方案。 此项目项仅向场解决方案。 有关详细信息，请参阅[创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)， [SharePoint Server 2010 中的工作流](http://go.microsoft.com/fwlink/?LinkId=260555)，和[What's New:工作流改进](http://go.microsoft.com/fwlink/?LinkId=179418)。
+ 一个*状态机工作流*是一组业务逻辑状态、 转换和操作。 按顺序; 不执行状态机工作流中的步骤相反，它们触发的操作和状态。 与顺序工作流状态机工作流是与 SharePoint 项，如列表和文档相关联。 再次重申，您可以创建站点级别 （全局） 工作流或列表级别 (local) 工作流。 此外可以选择是否自动或手动启动工作流。 此项目项可仅在场解决方案。 此项目项仅向场解决方案。 有关详细信息，请参阅[创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)， [SharePoint Server 2010 中的工作流](http://go.microsoft.com/fwlink/?LinkId=260555)，和[What's New:工作流改进](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))。
 
 ### <a name="user-control-farm-solution-only"></a>用户控件 （仅场解决方案）
  一个*用户控件*是可以向其中添加其他 ASP.NET 控件和 SharePoint 控件的自定义的可重用控件。 用户控件可以添加到应用程序页和 web 部件在 SharePoint 中运行。 此项目项可仅在场解决方案。 此项目项仅向场解决方案。 有关详细信息，请参阅[为 Web 部件或应用程序页创建可重用控件](http://go.microsoft.com/fwlink/?LinkId=226841)。

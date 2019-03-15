@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92db48197791bab4b5f364ee6d2cd0e948e2a5f7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c56f44f6898c7a99a7024906b5c38f521a169c0f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684580"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871293"
 ---
 # <a name="vsix-project-template"></a>VSIX 项目模板
-可以使用 VSIX 项目模板将一个或多个 Visual Studio 扩展包装在 VSIX 项目，然后将包发布上[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点。
+可以使用 VSIX 项目模板将一个或多个 Visual Studio 扩展包装在 VSIX 项目，然后将包发布上[Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web 站点。
 
  VSIX 部署支持 Vspackage、 程序集、 MEF 组件、 项目模板、 项模板，工具箱控件和自定义扩展插件类型。
 

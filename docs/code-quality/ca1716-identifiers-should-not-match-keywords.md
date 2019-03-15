@@ -1,6 +1,6 @@
 ---
 title: CA1716:标识符不应与关键字冲突
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotMatchKeywords
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb483206ba13f89f0a23667039bf5f1a9d740b73
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 279bcf3aecc2a637a7a36c2041ed63a72017a800
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910190"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867727"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716:标识符不应与关键字冲突
 
@@ -32,7 +32,9 @@ ms.locfileid: "55910190"
 
 ## <a name="cause"></a>原因
 
-命名空间、 类型或虚拟或接口成员的名称匹配的编程语言中的保留的关键字。
+命名空间、 类型、 名称或虚拟或接口成员匹配编程语言中的保留的关键字。
+
+默认情况下，此规则仅查看外部可见的命名空间、 类型和成员，但这是[可配置](#configurability)。
 
 ## <a name="rule-description"></a>规则说明
 
@@ -41,12 +43,10 @@ ms.locfileid: "55910190"
 此规则检查针对以下语言中的关键字：
 
 - Visual Basic
-
 - C#
-
 - C++/CLI
 
-有关使用不区分大小写比较[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]用于其他语言的关键字，并区分大小写比较。
+对于 Visual Basic 关键字，使用不区分大小写的比较，对于其他语言使用区分大小写的比较。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
@@ -54,4 +54,14 @@ ms.locfileid: "55910190"
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
-如果您确信标识符将混淆的 API，用户和库是在.NET Framework 中的所有可用语言中可用，可以禁止显示此规则的警告。
+如果您相信标识符不会混淆的 API，用户和库是在.NET 中的所有可用语言中可用，则可以禁止显示此规则的警告。
+
+## <a name="configurability"></a>可配置性
+
+如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
+
+```
+dotnet_code_quality.ca1716.api_surface = private, internal
+```
+
+此类别 （命名） 中，可以配置此选项只是此规则，所有规则，或所有规则。 有关详细信息，请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。

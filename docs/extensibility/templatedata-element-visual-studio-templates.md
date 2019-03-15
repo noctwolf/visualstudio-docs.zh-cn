@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cd18443e36a48967b4eb9fdf24f8d5e7869c323
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 94a6f4b69648c94e6530cb28180193e5a74c1265
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700141"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870575"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 元素（Visual Studio 模板）
 将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。
@@ -58,7 +58,7 @@ ms.locfileid: "56700141"
 | [CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定是否在实例化项目的创建包含文件夹。 |
 | [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) | 可选元素。<br /><br /> 在创建时指定 Visual Studio 项目系统将生成的项目或项目的名称。 |
 | [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定是否在创建时，Visual Studio 项目系统将生成项目或项的默认名称。 |
-| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定是否可以为临时项目创建项目。 |
+| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定项目是否可以创建为临时项目 (Visual Studio 2017 仅)。 |
 | [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定是否**浏览**按钮现已推出**新项目**对话框，以便用户可以轻松地修改保存新项目的默认目录。 |
 | [Hidden](../extensibility/hidden-element-visual-studio-templates.md) | 可选元素。<br /><br /> 指定模板是否出现在**新的项目**或**添加新项**对话框。 |
 | [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | 可选元素。<br /><br /> 指定将显示在此模板的父类别数**新的项目**对话框。 |

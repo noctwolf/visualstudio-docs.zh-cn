@@ -1,6 +1,6 @@
 ---
 title: CA2217:不要使用 FlagsAttribute 标记枚举
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4036ef3c0c9ea177ea4225ed10ca7cfe128697
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 94666390cc49f365b9f036b076bcd97d68d4edb9
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926809"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872283"
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217:不要使用 FlagsAttribute 标记枚举
 
@@ -36,7 +36,9 @@ ms.locfileid: "55926809"
 
 ## <a name="cause"></a>原因
 
-外部可见的枚举将标有<xref:System.FlagsAttribute>，和它与一个或多个值的两个或其他组合定义枚举值。
+枚举标记有<xref:System.FlagsAttribute>和它与一个或多个值的两个或其他组合定义枚举值。
+
+默认情况下，此规则仅查看外部可见的枚举，但这是[可配置](#configurability)。
 
 ## <a name="rule-description"></a>规则说明
 
@@ -50,17 +52,25 @@ ms.locfileid: "55926809"
 
 不禁止显示此规则发出的警告。
 
-## <a name="example-that-should-not-have-the-attribute"></a>不应具有的属性的示例
+## <a name="configurability"></a>可配置性
 
-下面的示例演示一个枚举， `Color`，包含值 3。 3 不是两个或任何定义的值的组合的强大功能。 `Color`枚举不应标记有<xref:System.FlagsAttribute>。
+如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
+
+```
+dotnet_code_quality.ca2217.api_surface = private, internal
+```
+
+此类别 （用法） 中，可以配置此选项只是此规则，所有规则，或所有规则。 有关详细信息，请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
+
+## <a name="examples"></a>示例
+
+下面的代码演示一个枚举， `Color`，包含值 3。 3 不是两个或任何定义的值的组合的强大功能。 `Color`枚举不应标记有<xref:System.FlagsAttribute>。
 
 [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
 [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
 
-## <a name="example-that-should-have-the-attribute"></a>应具有的属性的示例
-
-下面的示例演示一个枚举`Days`，满足为标有需求的<xref:System.FlagsAttribute>。
+下面的代码演示一个枚举`Days`，满足为标有需求的<xref:System.FlagsAttribute>:
 
 [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
 [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]

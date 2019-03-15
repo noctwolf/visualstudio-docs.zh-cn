@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c2c73e4c74502c047251bd64a2f6d3550cf7fe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642828"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867559"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>打包和部署 SharePoint 解决方案
   通常情况下，SharePoint 解决方案部署到 SharePoint 服务器通过使用解决方案包 (.wsp) 文件。 若要将你的 SharePoint 项目项组织到功能并创建要部署您的 SharePoint 功能的程序包，可以使用 Visual Studio。
 
  本主题提供以下信息：
 
--   [创建功能和包](#Creating)
+-   [创建功能和包](#create-features-and-packages)
 
--   [功能和打包工具支持](#Tools)
+-   [功能和打包工具支持](#feature-and-packaging-tool-support)
 
--   [部署 SharePoint 解决方案](#Deploying)
+-   [部署 SharePoint 解决方案](#deploy-sharepoint-solutions)
 
--   [部署 SharePoint 解决方案中的文件](#DeployingFiles)
+-   [部署 SharePoint 解决方案中的文件](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>创建功能和包
  可以使用 Visual Studio 到相关的 SharePoint 元素进行分组*功能*。 例如，联系人列表定义的功能可能包括列表实例和列表定义。 可以将这两个元素合并到单个功能以进行部署。 有关功能的详细信息，请参阅[构建基块：功能](http://go.microsoft.com/fwlink/?LinkID=169183)。

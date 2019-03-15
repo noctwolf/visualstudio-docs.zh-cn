@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c8555067dc86c610c370568ce9e0c7fd13cc5ca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4ab66596dd550a74a18e425769a0c7120cf3220a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709741"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873436"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>支持 Visual Studio SDK
 有关如何扩展 Visual Studio 集成的开发环境 (IDE) 的疑问的客户有多个支持选项。
@@ -36,7 +36,7 @@ ms.locfileid: "56709741"
  [MSDN 论坛](http://go.microsoft.com/fwlink/?LinkID=76632)提供另一种方法与对等方和专家聊天。 论坛图形用户界面 (UI) 设计以使其比新闻组易于使用。 [Visual Studio Extensibility Forum](http://go.microsoft.com/fwlink/?LinkID=121964)是开始搜索可扩展性问题的答案的好时机。 因为其他人已提出相同的问题可能会提出的问题之前，始终搜索。
 
 ### <a name="visual-studio-gallery"></a>Visual Studio 库
- [Visual Studio 库](https://marketplace.visualstudio.com/)是扩展和示例代码的位置。 您可以找到工具提高工作效率和用户体验与 Visual Studio 中，示例应用程序展示如何使用 Vspackage 和 Managed Extensibility Framework (MEF) 和其他类型的示例。
+ [Visual Studio Marketplace](https://marketplace.visualstudio.com/)是扩展和示例代码的位置。 您可以找到工具提高工作效率和用户体验与 Visual Studio 中，示例应用程序展示如何使用 Vspackage 和 Managed Extensibility Framework (MEF) 和其他类型的示例。
 
 ### <a name="visual-studio-sdk-samples"></a>Visual Studio SDK 示例
 
@@ -53,16 +53,18 @@ ms.locfileid: "56709741"
 ## <a name="paid-support"></a>付费的支持
 
 ### <a name="developer-tools-support"></a>开发人员工具支持
- 此外可购买的支持。 在开发人员工具类别下提供各种支持产品/服务是[Microsoft 帮助和支持中心](http://go.microsoft.com/fwlink/?LinkID=82383)。
 
- 想要使用的客户[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]开发复杂的包可以考虑购买具有 Microsoft 顶级支持协定。 有关详细信息，请参阅[Microsoft 高级支持](http://go.microsoft.com/fwlink/?LinkID=76660)。 对于小公司来说，[合作伙伴利用支持](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx)可能是传统的顶级支持产品/服务的极具吸引力替代方法。
+此外可购买的支持。 在开发人员工具类别下提供各种支持产品/服务是[Microsoft 帮助和支持中心](http://go.microsoft.com/fwlink/?LinkID=82383)。
+
+想要使用的客户[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]开发复杂的包可以考虑购买具有 Microsoft 顶级支持协定。 有关详细信息，请参阅[Microsoft 高级支持](https://support.microsoft.com/premier)。 对于小公司来说，[合作伙伴利用支持](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx)可能是传统的顶级支持产品/服务的极具吸引力替代方法。
 
 > [!NOTE]
->  不能使用标准支持，为咨询做好或者获取建议。
+> 不能使用标准支持，为咨询做好或者获取建议。
 
- VSIP 计划与结合使用的高级支持产品/服务有关的问题可以发送到[ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com)。 可以将新的合作伙伴利用程序有关的问题发送到[ advantg@microsoft.com ](mailto:advantg@microsoft.com)。
+VSIP 计划与结合使用的高级支持产品/服务有关的问题可以发送到[ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com)。 可以将新的合作伙伴利用程序有关的问题发送到[ advantg@microsoft.com ](mailto:advantg@microsoft.com)。
 
- 有关各个支持请求的信息可从[各个支持请求](http://go.microsoft.com/fwlink/?LinkID=82385)。
+有关各个支持请求的信息可从[各个支持请求](http://go.microsoft.com/fwlink/?LinkID=82385)。
 
 ## <a name="see-also"></a>请参阅
+
 - [与我们交流](../ide/talk-to-us.md)

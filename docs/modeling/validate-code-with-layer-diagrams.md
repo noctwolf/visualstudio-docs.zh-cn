@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6286c787b1f69c0e44541e156b06440c7267f79d
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223190"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870355"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用依赖项关系图验证代码
 
@@ -102,14 +102,14 @@ ms.locfileid: "57223190"
     > [!NOTE]
     > 默认情况下**生成操作**上的依赖项关系图 (.layerdiagram) 文件的属性设置为**验证**，以便在验证过程中包括关系图。
 
-     **错误列表**窗口报告出现的任何错误。 有关验证错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。
+     **错误列表**窗口报告出现的任何错误。 有关验证错误的详细信息，请参阅[层验证问题疑难解答](#troubleshoot-layer-validation-issues)。
 
 2.  若要查看每个错误的源，请双击中的错误**错误列表**窗口。
 
     > [!NOTE]
     > Visual Studio 可能会显示代码图，而不是错误的源。 代码不由依赖项关系图中，指定程序集上具有依赖项或代码缺少指定的依赖项关系图的依赖项时，将发生这种情况。 检查代码映射或代码，以确定此依赖关系是否应该存在。 有关代码图的详细信息，请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)。
 
-3.  若要管理错误，请参阅[管理验证错误](#ManageErrors)。
+3.  若要管理错误，请参阅[纠正层验证错误](#resolve-layer-validation-errors)。
 
 ### <a name="validate-code-at-the-command-prompt"></a>命令提示符处验证代码
 
@@ -147,7 +147,7 @@ ms.locfileid: "57223190"
 
      将列出发生的任何错误。 有关 MSBuild 的详细信息，请参阅[MSBuild](../msbuild/msbuild.md)并[MSBuild 任务](../msbuild/msbuild-task.md)。
 
-   有关验证错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。
+   有关验证错误的详细信息，请参阅[层验证问题疑难解答](#troubleshoot-layer-validation-issues)。
 
 ### <a name="manage-validation-errors"></a>管理验证错误
 
@@ -195,11 +195,11 @@ ms.locfileid: "57223190"
 
     这包括在验证过程中的依赖项关系图。
 
-若要管理错误列表窗口中的错误，请参阅[管理验证错误](#ManageErrors)。
+若要管理错误列表窗口中的错误，请参阅[纠正层验证错误](#resolve-layer-validation-errors)。
 
 ## <a name="troubleshoot-layer-validation-issues"></a>层验证问题疑难解答
 
-下表描述了层验证问题及其解决方法。 这些问题不同于代码与设计发生冲突而导致出现的错误。 有关这些错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。
+下表描述了层验证问题及其解决方法。 这些问题不同于代码与设计发生冲突而导致出现的错误。 有关这些错误的详细信息，请参阅[层验证问题疑难解答](#troubleshoot-layer-validation-issues)。
 
 |**问题**|**可能的原因**|**解决方法**|
 |-|-|-|

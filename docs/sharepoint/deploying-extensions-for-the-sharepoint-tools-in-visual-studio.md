@@ -12,20 +12,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cbd581da1e2a081636c4f4cf7885241c15eff97
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54876260"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868054"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>部署 Visual Studio 中的 SharePoint 工具扩展
 
 若要部署 SharePoint 工具扩展，创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 (VSIX) 包，其中包含扩展插件程序集和你想要将与该扩展一起分发的任何其他文件。 VSIX 包是一个压缩的文件，遵循开放式打包约定 (OPC) 标准。 VSIX 包具有 *.vsix*扩展。
 
-创建 VSIX 包后，其他用户可以运行要安装扩展的.vsix 文件。 当用户安装您的扩展插件时，到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions 文件夹安装的所有文件。 若要将扩展部署，可以上传到 VSIX 包[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 网站，或者可以将包分发到你的客户通过某种其他方式，包括托管的网络共享或一些其他网站上的包。
+创建 VSIX 包后，其他用户可以运行要安装扩展的.vsix 文件。 当用户安装您的扩展插件时，到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions 文件夹安装的所有文件。 若要将扩展部署，可以上传到 VSIX 包[Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web 网站，或者可以将包分发到你的客户通过某种其他方式，包括托管的网络共享或某些其他 Web 上的包站点。
 
-有关创建 VSIX 包和部署到这些详细信息[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)，请参阅[传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)。
+有关创建 VSIX 包和部署到这些详细信息[Visual Studio Marketplace](https://marketplace.visualstudio.com/)，请参阅[传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)。
 
  可以使用创建 VSIX 包**VSIX 项目**模板中 Visual Studio 中，也可以手动创建 VSIX 包。
 

@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d375386da4d62117105bc732425a2678e0a48d0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640228"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873105"
 ---
 # <a name="debug-sharepoint-solutions"></a>调试 SharePoint 解决方案
   您可以通过使用调试 SharePoint 解决方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 当开始调试，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将项目文件部署到 SharePoint 服务器，然后在 Web 浏览器中打开 SharePoint 站点的实例。 以下各节说明如何调试 SharePoint 应用程序中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
--   [启用调试](#EnableDebug)
+-   [启用调试](#enable-debugging)
 
--   [F5 调试和部署过程](#Deployment)
+-   [F5 调试和部署过程](#f5-debug-and-deployment-process)
 
--   [SharePoint 项目功能](#Features)
+-   [SharePoint 项目功能](#sharepoint-project-features)
 
--   [调试工作流](#Workflow)
+-   [调试工作流](#debug-workflows)
 
--   [调试功能事件接收器](#FeatureEvents)
+-   [调试功能事件接收器](#debug-feature-event-receivers)
 
--   [启用增强的调试信息](#EnhancedDebug)
+-   [启用 ehanced 调试信息](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>启用调试
  当你第一次调试 SharePoint 解决方案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，对话框中向你发出警报的 web.config 文件未配置为启用调试。 （在安装 SharePoint server 时，被创建 web.config 文件。 有关详细信息，请参阅[使用 Web.config 文件](http://go.microsoft.com/fwlink/?LinkID=149266)。)对话框中显示的不调试或修改 web.config 文件的情况下运行该项目启用调试的选项。 如果选择第一个选项，则项目会正常运行。 如果选择第二个选项，则 web.config 文件将配置为：
@@ -137,7 +137,7 @@ ms.locfileid: "56640228"
 
  若要禁用自动激活 SharePoint 中的功能，从而允许正确的调试功能事件接收器，项目的值设置**活动部署配置**属性设置为**无激活**之前调试。 然后，在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中开始调试 SharePoint 应用程序后，在 SharePoint 中手动激活此功能。 若要激活该功能，请打开**站点操作**在 SharePoint 中，菜单中，选择**站点设置**，选择**管理站点功能**链接，，然后选择**激活**功能，若要继续调试作为普通旁边的按钮。
 
-## <a name="enable-enhanced-debug-information"></a>启用增强的调试信息
+## <a name="enable-enhanced-debugging-information"></a>启用增强的调试信息
  由于之间有时会比较复杂的交互[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]进程 (devenv.exe) [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 宿主进程 (*vssphost4.exe*)，SharePoint，并诊断发生的错误的 WCF 层时生成、 部署和等可以是一个挑战。 若要帮助你解决此类错误，可以启用增强的调试信息。 若要执行此操作，请转到 Windows 注册表中的以下注册表项：
 
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**

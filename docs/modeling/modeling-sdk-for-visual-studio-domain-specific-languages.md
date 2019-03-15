@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df931cf5cb9034a868f412a344e26a58e6006455
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b028655c0654bc5332264c3bcc0fced01480b69f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942773"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867443"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio 的建模 SDK - 特定于域的语言
 
@@ -40,7 +40,7 @@ MSDK 允许你以域特定语言 (DSL) 的形式快速开发模型。 首先使�
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-[相关的博客文章](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+[相关的博客文章](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
 
 高级的技术和故障排除指导，请访问[Visual Studio DSL 和建模工具扩展性论坛](http://go.microsoft.com/fwlink/?LinkID=186074)。
 
@@ -73,6 +73,6 @@ MSDK 允许你以域特定语言 (DSL) 的形式快速开发模型。 首先使�
 
  [可视化和建模 SDK 支持的 Visual Studio 版本](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 
- [如何：将域特定语言迁移至新版本](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
+ [如何：将域扩展语言迁移到新版本](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
 
  [Visual Studio 的建模 SDK 的 API 参考](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

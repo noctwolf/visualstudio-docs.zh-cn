@@ -15,17 +15,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 820eee92ef81f8821a25c8e490592cd1092e9256
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6639a52eb71d7cd826a1882e6e79cf124f2045d6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618141"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870423"
 ---
 # <a name="develop-sharepoint-solutions"></a>开发 SharePoint 解决方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中可提供多种 SharePoint 项目类型模板，用于创建 SharePoint 站点和站点元素。 有关可用的项目类型的列表，请参阅[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是对 SharePoint 项目元素和属性的说明。
 
- 有关 SharePoint 2013 和 SharePoint 外接程序的信息，请参阅 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 和 [构建 SharePoint 外接程序](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
+ 有关 SharePoint 2013 和 SharePoint 外接程序的信息，请参阅 [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) 和 [构建 SharePoint 外接程序](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
 
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint 项目的元素
  SharePoint 项目中的节点被称为 *SharePoint 项*。 SharePoint 项也可能包含一个或多个称为 *SharePoint 项文件*的子文件，例如， [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 配置文件和 .aspx 窗体等等。
