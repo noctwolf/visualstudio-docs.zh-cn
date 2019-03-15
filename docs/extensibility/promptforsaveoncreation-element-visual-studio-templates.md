@@ -13,17 +13,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 309c02abb29b599a5753a39c28d9b95314088550
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+monikerRange: vs-2017
+ms.openlocfilehash: 882465acd61f3f76d358f52ae75c9041c311dcd5
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696709"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867277"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 元素 （Visual Studio 模板）
-指定是否提示用户输入保存位置通过项目**新的项目**对话框中创建项目时。 如果此元素设置为`true`，然后提示用户输入保存位置; 如果`false`，则不会提示。 （即，创建一个临时项目。）
 
- \<VSTemplate> \<TemplateData> \<PromptForSaveOnCreation>
+指定是否提示用户输入保存位置通过项目**新的项目**对话框中创建项目时。 如果此元素设置为`true`，然后提示用户输入保存位置。 如果`false`，则不会提示 （即，创建一个临时项目）。
+
+```xml
+\<VSTemplate>
+\<TemplateData>
+\<PromptForSaveOnCreation>
+```
 
 ## <a name="syntax"></a>语法
 
@@ -59,7 +65,7 @@ ms.locfileid: "56696709"
 ## <a name="example"></a>示例
  下面的示例设置的值`PromptForSaveOnCreation`等于`false`，它指定允许为创建为临时项目的项目。
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +91,6 @@ ms.locfileid: "56696709"
 ```
 
 ## <a name="see-also"></a>请参阅
+
 - [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
 - [创建项目和项模板](../ide/creating-project-and-item-templates.md)

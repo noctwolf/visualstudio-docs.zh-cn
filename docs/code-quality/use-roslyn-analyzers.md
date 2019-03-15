@@ -1,5 +1,5 @@
 ---
-title: 使用和配置 Roslyn 分析器
+title: 分析器规则严重性和禁止显示
 ms.date: 03/26/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924599"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873497"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>配置和使用 Roslyn 分析程序规则
+# <a name="use-roslyn-analyzers"></a>使用 Roslyn 分析器
 
 .NET 编译器平台 ("Roslyn") 分析程序规则，或*诊断*，键入分析 C# 或 Visual Basic 代码。 每个诊断已为你的项目时可以覆盖默认严重性和禁止显示状态。 本文介绍如何设置规则严重性，使用规则集，并禁止显示冲突。
 
@@ -91,7 +91,7 @@ ms.locfileid: "55924599"
 
 ### <a name="to-set-rule-severity-in-the-rule-set-file"></a>若要设置规则在规则中的严重性设置文件
 
-1. 打开规则集文件中双击**解决方案资源管理器**，选择**打开活动规则集**的右键单击菜单上**分析器**节点，或通过选择**开放**上**代码分析**项目属性页。
+1. 打开[规则集](analyzer-rule-sets.md)中双击文件**解决方案资源管理器**，选择**打开活动规则集**上的右键单击菜单**分析器**节点，或选择**开放**上**代码分析**项目属性页。
 
 1. 通过展开其包含程序集，浏览到该规则。
 

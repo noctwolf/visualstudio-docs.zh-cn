@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf7e7bf78baede7e964aeeed7484261fdab2ef7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924457"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873663"
 ---
 # <a name="analyze-and-model-your-architecture"></a>对体系结构进行分析和建模
 
@@ -49,7 +49,7 @@ ms.locfileid: "55924457"
 
 请参阅[方案：使用可视化和建模更改设计](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)。
 
-## <a name="to"></a>到
+## <a name="to"></a>功能
 
 |||
 |-|-|
@@ -88,7 +88,7 @@ ms.locfileid: "55924457"
 **请参阅：**
 
 -   [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)
--   [依赖项关系图：引用](../modeling/layer-diagrams-reference.md)
+-   [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)
 -   [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>域特定语言 (DSL)
@@ -109,5 +109,5 @@ DSL 是为特定目的而设计的一种表示法。 在 Visual Studio 中通常
 
 ## <a name="see-also"></a>请参阅
 
-- [新增功能](../modeling/what-s-new-for-design-in-visual-studio.md)
+- [什么是 Visual Studio 2017 中建模的新增功能](../modeling/what-s-new-for-design-in-visual-studio.md)
 - [DevOps 和应用程序生命周期管理](/azure/devops/user-guide/devops-alm-overview)

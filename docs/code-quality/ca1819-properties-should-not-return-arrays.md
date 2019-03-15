@@ -1,6 +1,6 @@
 ---
 title: CA1819:属性不应返回数组
-ms.date: 09/28/2018
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: af31c925420602329eb20b803c92879210518ebd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11209ec181e2c2b61c7767787ee99c2d69eabe8b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919204"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872738"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819:属性不应返回数组
 
@@ -35,7 +35,9 @@ ms.locfileid: "55919204"
 
 ## <a name="cause"></a>原因
 
-中的公共类型的公共或受保护属性返回一个数组。
+属性返回一个数组。
+
+默认情况下，此规则仅查看外部可见的属性和类型，但这是[可配置](#configurability)。
 
 ## <a name="rule-description"></a>规则说明
 
@@ -52,6 +54,16 @@ ms.locfileid: "55919204"
 如果该属性的一部分，可以禁止显示警告[数据传输对象 (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10))类。
 
 否则，不要禁止显示此规则的警告。
+
+## <a name="configurability"></a>可配置性
+
+如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
+
+```
+dotnet_code_quality.ca1819.api_surface = private, internal
+```
+
+此类别 （性能） 中，可以配置此选项只是此规则，所有规则，或所有规则。 有关详细信息，请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="example-violation"></a>冲突的示例
 

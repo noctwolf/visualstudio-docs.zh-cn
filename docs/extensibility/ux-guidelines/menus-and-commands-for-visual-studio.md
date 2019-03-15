@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b726d13d77c56446ff19dbb477d29ec58627341
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1b7fb3b82d56038695c728d2125658a7f51d31f6
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690625"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870473"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Visual Studio 的菜单和命令
 ## <a name="command-usage"></a>命令的用法
@@ -229,7 +229,7 @@ ms.locfileid: "56690625"
 
 #### <a name="when-naming-commands"></a>当命名命令：
 
--   构造的文本，以便更易于本地化。 有关文本本地化的详细信息，请参阅[Visual Studio 的全球通用性](http://msdn.microsoft.com/en-us/1cc35051-8126-441f-bea9-059245a47b1d)。
+-   构造的文本，以便更易于本地化。 有关文本本地化的详细信息，请参阅[本地化最佳做法](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices)。
 
 -   为简洁。 命令应使用不超过三个单词。
 

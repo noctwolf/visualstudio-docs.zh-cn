@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f53376d1cff79dd69b7fb17704c4ddae8803c46
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913179"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872383"
 ---
 # <a name="improve-performance-for-code-maps"></a>提高代码图的性能
 
 在首次生成代码图时，Visual Studio 会将其找到的所有依赖关系都编入索引中。 此过程可能需要一些时间，尤其是对于大型解决方案，但会提高之后的性能。 如果更改了代码，Visual Studio 只会将已更新的代码重新编入索引。 若要尽量减少完成呈现地图所需的时间，请考虑以下建议：
 
-- [仅映射你感兴趣的依赖关系。](#create-a-code-map-to-see-specific-dependencies)
+- 仅映射你感兴趣的依赖关系。
 
 - 在生成整个解决方案的代码图之前，缩小解决方案范围。
 

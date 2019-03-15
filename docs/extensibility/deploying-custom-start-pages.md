@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: dcc184d6aedb3e15bfddd8396c54b351ef4d3288
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed8f06513b240719364539a24295a403b83265f4
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693004"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872995"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自定义起始页
 
@@ -29,7 +29,7 @@ ms.locfileid: "56693004"
 
 -   可以将放 *.vsix*或公共网站上的网络共享文件。 在有人打开文件时，会自动安装启动页。
 
--   可以上传 *.vsix*的文件[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点，以便用户可以使用来安装它**扩展管理器**。
+-   可以上传 *.vsix*的文件[Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web 站点，以便用户可以使用来安装它**扩展管理器**。
 
 起始页项目模板创建一份默认 Visual Studio 起始页，以便您可以修改副本，并保留原始。
 

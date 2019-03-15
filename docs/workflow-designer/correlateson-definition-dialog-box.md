@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cba12e3e991282dc69ea5747d62db8761d6f8d16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d7b7336a3f3b0c2725f4e52116d0add8bf13b90e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942630"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868932"
 ---
 # <a name="correlateson-definition-dialog-box"></a>“CorrelatesOn 定义”对话框
 
@@ -38,5 +38,4 @@ ms.locfileid: "55942630"
 
 - <xref:System.ServiceModel.Activities.Receive>
 - [“添加相关初始值设定项”对话框](../workflow-designer/add-correlationinitializers-dialog-box.md)
-- [添加关联对话框](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)
 - [“初始化相关”对话框](../workflow-designer/initialize-correlation-dialog-box.md)

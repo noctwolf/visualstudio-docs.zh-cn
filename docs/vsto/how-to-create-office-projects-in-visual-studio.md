@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 617ca350f318a8617b28d4bface3d09106b3b591
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614306"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868167"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何：在 Visual Studio 中创建 Office 项目
   可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]创建 VSTO 外接程序和文档级自定义 Microsoft Office 应用程序。 有关这些类型的项目的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -85,17 +85,18 @@ ms.locfileid: "56614306"
 
 7. 选择“确定”  按钮。
 
-    > [!NOTE]
-    >  创建外接程序项目时，要始终对其进行保存。 不能将其创建为临时项目。 有关临时项目的详细信息，请参阅[临时项目](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)。
+   ::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > 创建外接程序项目时，要始终对其进行保存。 不能将其创建为临时项目。 有关临时项目的详细信息，请参阅[临时项目](../ide/creating-solutions-and-projects.md#create-a-temporary-project)。
+
+   ::: moniker-end
 
 ### <a name="to-create-a-document-level-customization-project"></a>若要创建文档级自定义项目
 
 1. 在“文件”菜单上，选择“新建” > “项目”。 如果您的 IDE 设置上使用 Visual Basic 开发设置**文件**菜单中，选择**新建** > **项目**。
 
     此时将出现“新建项目”对话框。
-
-   > [!NOTE]
-   >  默认情况下，Office 项目均面向 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]。  有关详细信息，请参阅[.NET Framework 客户端配置文件](/dotnet/framework/deployment/client-profile)。
 
 2. 在所需的语言节点下的模板窗格中，展开**Office/SharePoint**。
 
@@ -104,12 +105,12 @@ ms.locfileid: "56614306"
 4. 在项目模板列表中，选择一个文档级项目模板。 有关可用文档级项目模板的列表，请参阅[Office 项目模板概述](../vsto/office-project-templates-overview.md)。
 
    > [!NOTE]
-   >  如果项目模板不可见时选择**Office 加载项**节点，请确保 **.NET Framework 4**或更高版本选择对话框顶部组合框中。 Office 项目模板对于 .NET Framework 的两个版本均为可见。
+   > 如果项目模板不可见时选择**Office 加载项**节点，请确保 **.NET Framework 4**或更高版本。
 
 5. 在中**名称**框中，键入项目的名称。 默认情况下，此名称还用于文档。 如果 IDE 设置为使用 Visual C# 开发设置或常规开发设置，请输入位置和解决方案名称。
 
    > [!NOTE]
-   >  不能在项目位置路径或项目名称中使用代理项字符。 此外，如果计划部署脱机使用的解决方案，则该项目名称中的字符必须符合 HTTP 协议规范。
+   > 不能在项目位置路径或项目名称中使用代理项字符。 此外，如果计划部署脱机使用的解决方案，则该项目名称中的字符必须符合 HTTP 协议规范。
 
 6. 选择“确定”  按钮。
 

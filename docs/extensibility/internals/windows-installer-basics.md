@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b981824da3f5a5065cf129657158020893394749
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d2712c8d52ffd569f7d422708de612ac322045f8
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631635"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872948"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本知识
 Windows 安装程序安装和卸载应用程序或用户的计算机上的软件产品在名为 Windows 安装程序组件 （有时称为 WICs 或只是组件） 的单元中执行这些任务。 一个 GUID 标识每个 WIC，它是安装和引用计数对于使用 Windows 安装程序安装的基本单位。
 
- Windows 安装程序的综合文档，请参阅平台 SDK 主题[Windows 安装程序](http://msdn.microsoft.com/library/aa372866.aspx)。
+ Windows 安装程序的综合文档，请参阅平台 SDK 主题[Windows 安装程序](/previous-versions/2kt85ked(v=vs.120))。
 
 ## <a name="authoring-a-vspackage"></a>创作 VSPackage
  Windows 安装程序使用安装包，其中包含 Windows 安装程序需要安装、 卸载或修复产品，并且运行安装程序用户界面 (UI) 的信息。 每个安装包包括一个.msi 文件，其中包含安装数据库、 摘要信息流和数据流的各个部件的安装。 若要使用安装程序，你必须编写安装。 因为安装程序组织安装组件的概念，并将安装的相关信息存储在关系数据库，广泛地创作一个安装包的过程需要执行以下步骤：

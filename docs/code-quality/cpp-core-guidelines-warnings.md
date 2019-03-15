@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223489"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872429"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ 核心准则检查程序
 
@@ -187,7 +187,7 @@ Microsoft Visual c + + 编译器提供有限的支持，为 GSL 禁止显示属�
 
 请确保添加这些属性，然后才能 Microsoft.Cpp.targets 文件导入。 可以选择特定的规则集或创建自定义规则集或使用默认规则集包含其他 PREfast 检查。
 
-可以通过使用相同的方法仅在指定的文件上运行 c + + Core Checker[前面所述](#coreckeck_per_file)，但使用 MSBuild 文件。 可以使用设置环境变量`BuildMacro`项：
+可以通过使用相同的方法仅在指定的文件上运行 c + + Core Checker[前面所述](#corecheck_per_file)，但使用 MSBuild 文件。 可以使用设置环境变量`BuildMacro`项：
 
 ```xml
 <ItemGroup>

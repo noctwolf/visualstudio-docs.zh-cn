@@ -1,6 +1,6 @@
 ---
 title: CA1710:标识符应具有正确的后缀
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a3c602c249c7507d516e74c32f2d4db8447b645
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65ac417476752da832e5e9ebe693f6c83a5c1cfe
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944450"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868070"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710:标识符应具有正确的后缀
 
@@ -33,6 +33,8 @@ ms.locfileid: "55944450"
 ## <a name="cause"></a>原因
 
 标识符不具有正确的后缀。
+
+默认情况下，此规则仅查看外部可见标识符，但这是[可配置](#configurability)。
 
 ## <a name="rule-description"></a>规则说明
 
@@ -90,6 +92,16 @@ foreach(SomeType x in SomeDictionary.Values) { }
 它是安全地禁止显示一个警告，如果类型是一种通用的数据结构可能会扩展，或将包含一组任意的各种项，请使用后缀 Collection。 在这种情况下，提供了有关实现、 性能或数据结构的其他特征有意义的信息的名称 binarytree (例如，)。 在某些情况下，该类型的特定类型 (例如，StringCollection) 集合，不要禁止显示此规则的警告因为后缀指示后，可以使用枚举类型`foreach`语句。
 
 对于其他后缀，不要禁止显示此规则的警告。 该后缀，可为表露类型名称的预期的用法。
+
+## <a name="configurability"></a>可配置性
+
+如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
+
+```
+dotnet_code_quality.ca1710.api_surface = private, internal
+```
+
+此类别 （命名） 中，可以配置此选项只是此规则，所有规则，或所有规则。 有关详细信息，请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="related-rules"></a>相关的规则
 

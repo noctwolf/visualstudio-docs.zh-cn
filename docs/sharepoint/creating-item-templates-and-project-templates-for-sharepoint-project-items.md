@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de1843891779c3663d11910c3ae87720d7196e17
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: a7bc365df9ef84b5ef8e501bcbbfd48865bb865e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869888"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868029"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>创建项模板和用于 SharePoint 项目项的项目模板
   在定义的自定义 SharePoint 项目项类型时，可以将其与项模板或项目模板。 这种关联允许其他开发人员使用 Visual Studio 中的项目项。 此外可以创建模板向导。
@@ -72,7 +72,7 @@ ms.locfileid: "54869888"
 
 |可选文件|描述|
 |-------------------|-----------------|
-|SharePoint 项目项|可以包含一个或多个.spdata 文件，用于定义 SharePoint 项目项类型。 每个 *.spdata*文件必须具有匹配<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>VSIX 包项目模板中包括的扩展程序集中实现。 有关详细信息，请参阅[创建项模板](#creatingitemtemplates)。<br /><br /> 通常情况下，SharePoint 项目包含至少一个 SharePoint 项目项。 但是，这不是必需的。|
+|SharePoint 项目项|可以包含一个或多个.spdata 文件，用于定义 SharePoint 项目项类型。 每个 *.spdata*文件必须具有匹配<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>VSIX 包项目模板中包括的扩展程序集中实现。 有关详细信息，请参阅[创建项模板](#createitemtemplates)。<br /><br /> 通常情况下，SharePoint 项目包含至少一个 SharePoint 项目项。 但是，这不是必需的。|
 |*\<featureName>.feature*|此文件定义了一项 SharePoint 功能，用于部署的多个项目项进行分组。 当功能设计器用于在项目中自定义功能时，Visual Studio 将在此文件中存储有关功能的数据。 如果你想要将项目项分组为不同的功能，可以包括多个 *.feature*文件。<br /><br /> 创建自定义 SharePoint 项目模板时，我们建议在每个包含的最小所需的内容 *.feature*文件，并使用中的 Api 配置功能<xref:Microsoft.VisualStudio.SharePoint.Features>中的命名空间与项目模板关联的扩展。 如果这样做，你的项目模板防止将来的更改的结构 *.feature*文件。 有关示例，演示如何创建 *.feature*文件具有的最低要求的内容，请参阅[演练：使用项目模板，第 1 部分创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。<br /><br /> 如果你想要修改 *.feature*直接文件中，您可以通过使用中的架构来验证内容 *%Program Files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd*。|
 |*\<featureName>.Template.xml*|此文件提供了基础功能清单文件 (*Feature.xml*) 从项目生成的每项功能。 如果你想要指定不应由您的项目类型的用户更改某些行为，可以添加到此文件的内容。 有关详细信息，请参阅[构建基块：功能](http://go.microsoft.com/fwlink/?LinkId=169183)并[Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795)文件。<br /><br /> Visual Studio 生成时从项目的解决方案包，将每个对的内容合并 *\<featureName >.feature*文件并*\<功能名 >。Template.xml*文件到一项功能清单文件。 有关生成解决方案包的详细信息，请参阅[如何：使用 MSBuild 任务创建 SharePoint 解决方案包](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)。|
 

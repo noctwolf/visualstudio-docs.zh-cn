@@ -1,5 +1,5 @@
 ---
-title: CA2007:不直接等待任务
+title: CA2007：不直接等待任务
 ms.date: 03/08/2019
 ms.topic: reference
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 8e94b67d1924e2144f658cd6bcd5989751efdb85
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
+ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699676"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869284"
 ---
-# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007:不直接等待任务
+# <a name="ca2007-do-not-directly-await-a-task"></a>CA2007：不直接等待任务
 
 |||
 |-|-|
@@ -71,6 +71,26 @@ public async Task Execute()
     await task.ConfigureAwait(false);
 }
 ```
+
+## <a name="configurability"></a>可配置性
+
+你可以配置你想要排除不与该规则返回值的异步方法。 若要排除这些类型的方法，请将以下键-值对添加到你的项目中的.editorconfig 文件：
+
+```
+# Package version 2.9.0 and later
+dotnet_code_quality.CA2007.exclude_async_void_methods = true
+
+# Package version 2.6.3 and earlier
+dotnet_code_quality.CA2007.skip_async_void_methods = true
+```
+
+此外可以配置哪个输出程序集类型应用此规则。 例如，若要仅将此规则应用于生成控制台应用程序或动态链接的库 （即，不 UI 应用） 的代码，到你的项目中的.editorconfig 文件添加以下键-值对：
+
+```
+dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
+```
+
+有关详细信息，请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="see-also"></a>请参阅
 

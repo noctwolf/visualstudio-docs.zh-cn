@@ -1,6 +1,6 @@
 ---
 title: CA1711:标识符应采用正确的后缀
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1711
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9773dc808d6fbbc7161053dcd4d7a1d7d4e6f13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 83eff2b91a62d389f2273ff600e077eaea379d88
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970226"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57871884"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711:标识符应采用正确的后缀
 
@@ -33,6 +33,8 @@ ms.locfileid: "55970226"
 ## <a name="cause"></a>原因
 
 标识符具有正确的后缀。
+
+默认情况下，此规则仅查看外部可见标识符，但这是[可配置](#configurability)。
 
 ## <a name="rule-description"></a>规则说明
 
@@ -72,6 +74,16 @@ ms.locfileid: "55970226"
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
 除非后缀在应用程序域中具有明确的含义，否则不要禁止显示来自此规则的警告。
+
+## <a name="configurability"></a>可配置性
+
+如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
+
+```
+dotnet_code_quality.ca1711.api_surface = private, internal
+```
+
+此类别 （命名） 中，可以配置此选项只是此规则，所有规则，或所有规则。 有关详细信息，请参阅[配置 FxCop 分析器](configure-fxcop-analyzers.md)。
 
 ## <a name="related-rules"></a>相关的规则
 
