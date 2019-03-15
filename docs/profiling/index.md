@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: 通过分析来评估应用性能 | Microsoft Docs
-description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来分析应用程序、服务和工具的性能。
+description: 了解如何使用 Visual Studio 并以你喜欢的语言来分析应用程序、服务和工具的性能。
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000

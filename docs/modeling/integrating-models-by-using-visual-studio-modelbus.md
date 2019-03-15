@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fceccf63c4b28b8181bc3d652067ac6bdef1020f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 05164cf426c8156000377d980a40ae9f54d13c4b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946882"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57873510"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 集成模型
 
@@ -25,9 +25,9 @@ ModelBus 允许你创建对模型或模型中特定元素的唯一引用。 此�
 
 有关其他信息和示例代码，请参阅：
 
--   [如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)
+-   [如何：添加拖放句柄](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Visual Studio 的建模 SDK](http://www.microsoft.com/download/details.aspx?id=40754)
+-   [Visual Studio 的建模 SDK](https://www.microsoft.com/download/details.aspx?id=48148)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -518,6 +518,6 @@ ModelBus 扩展将在 DSL 解决方案中进行以下更改。
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
-- [如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [如何：在程序代码中从文件中打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [如何：添加拖放句柄](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [在文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
