@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594f4118f8c6876857b862d6423180403f4f96c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8fe915f31181af4158bdfe7e292313886ed7d4c
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915616"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983099"
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署层模型扩展
 
@@ -37,9 +37,19 @@ ms.locfileid: "55915616"
 
 ### <a name="to-uninstall-the-extension"></a>卸载扩展
 
-1.  在 Visual Studio 中，在**工具**菜单上，单击**扩展和更新**。
+::: moniker range="vs-2017"
 
-2.  单击扩展的名称，然后单击**卸载**。
+1. 在 Visual Studio 中，选择**工具** > **扩展和更新**。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在 Visual Studio 中，选择**扩展** > **管理扩展**。
+
+::: moniker-end
+
+2. 单击扩展的名称，然后单击**卸载**。
 
 ## <a name="install-an-extension-on-team-foundation-server"></a>Team Foundation Server 上安装扩展
 

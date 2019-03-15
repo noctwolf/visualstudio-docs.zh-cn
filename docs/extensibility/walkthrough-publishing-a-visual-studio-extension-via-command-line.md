@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aebd1cbd46eeaf80d165140dc58c5e81a0e02b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695367"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983372"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>演练：发布 Visual Studio 扩展中的通过命令行
 
@@ -290,7 +290,7 @@ This is test extension.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>若要从您的计算机中删除扩展
 
-1. 在 Visual Studio 中，在**工具**菜单上，单击**扩展和更新...**.
+1. 在 Visual Studio 中，在**工具**菜单上，单击**扩展和更新**。
 
 2. 选择"MyVsixExtension"，然后单击**卸载**。 然后将卸载计划扩展。
 

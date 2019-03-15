@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222930"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982930"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>安装.NET Compiler Platform 分析器
 
@@ -37,12 +37,27 @@ Visual Studio 包含一组核心.NET 编译器平台 (*Roslyn*) 分析器。 这
 
 ## <a name="to-install-vsix-analyzers"></a>若要安装 VSIX 分析器
 
+::: moniker range="vs-2017"
+
 1. 在 Visual Studio 中，选择**工具** > **扩展和更新**。
 
    此时，“扩展和更新”对话框打开。
 
    > [!NOTE]
    > 或者，可以查找并下载分析器扩展直接从[Visual Studio Marketplace](https://marketplace.visualstudio.com)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在 Visual Studio 中，选择**扩展** > **管理扩展**。
+
+   **管理扩展**对话框随即打开。
+
+   > [!NOTE]
+   > 或者，可以查找并下载分析器扩展直接从[Visual Studio Marketplace](https://marketplace.visualstudio.com)。
+
+::: moniker-end
 
 2. 展开**联机**在左窗格中，然后选择**Visual Studio Marketplace**。
 
@@ -64,7 +79,17 @@ Visual Studio 包含一组核心.NET 编译器平台 (*Roslyn*) 分析器。 这
 
 8. Visual Studio 中再次打开。
 
+::: moniker range="vs-2017"
+
 如果你想要检查扩展是否已安装，选择**工具** > **扩展和更新**。 在**扩展和更新**对话框中，选择**已安装**左边的类别，然后按名称搜索该扩展。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+如果你想要检查扩展是否已安装，选择**扩展** > **管理扩展**。 在**管理扩展**对话框中，选择**已安装**左边的类别，然后按名称搜索该扩展。
+
+::: moniker-end
 
 ## <a name="next-steps"></a>后续步骤
 
