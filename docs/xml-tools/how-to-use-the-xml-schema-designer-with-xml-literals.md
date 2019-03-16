@@ -10,26 +10,26 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cc4da90db115e001f7f06ec2e7dd33d64ef20048
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bb3daab1196e151a4fea57ae120b2ec280e2e23a
+ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927277"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "58070212"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>如何：使用 XML 文本中使用 XML 架构设计器
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>如何：结合使用 XML 架构设计器和 XML 文本
 
 本主题描述如何查看与 Visual Basic 项目中的 XML 文本关联的架构。
 
-## <a name="to-create-a-new-visual-basic-console-application-project"></a>创建新的 Visual Basic 控制台应用程序项目
+## <a name="create-a-new-visual-basic-project"></a>创建新的 Visual Basic 项目
 
-1.  启动 Visual Studio。
+1.  打开 Visual Studio。
 
-2.  从**文件**菜单中，选择**新建**，然后选择**项目**。 此时将出现“新建项目”对话框。 有关**项目类型**，选择**其他语言**，然后选择**Visual Basic**。 有关**模板**，选择控制台应用程序。 然后键入`XMLLiterals`中**名称**字段和中的项目位置**位置**字段。 单击 **“确定”**。
+2. 创建一个新的 Visual Basic**控制台应用程序**名为项目**XMLLiterals**。
 
-     新项目创建完成。 XMLLiterals 项目包含一个 Visual Basic 源文件*Module1.vb*。
+     新项目包含一个 Visual Basic 源文件*Module1.vb*。
 
-## <a name="to-add-an-existing-xsd-file-to-the-project"></a>向项目中添加现有的 XSD 文件
+## <a name="add-an-existing-xsd-file"></a>添加现有的 XSD 文件
 
 1.  在记事本中打开新的文本文件。 中的 XML 架构示例代码复制[采购订单架构](../xml-tools/sample-xsd-file-simple-schema.md)并将其粘贴到该文件。
 
@@ -39,7 +39,9 @@ ms.locfileid: "55927277"
 
      XMLLiterals 项目现在包含两个文件：*Module1.vb*并*PurchaseOrderSchema.xsd*。
 
-## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>基于项目中包含的 XSD 文件添加带 XML 文本的 Visual Basic 代码
+## <a name="add-code"></a>添加代码
+
+若要添加 Visual Basic 代码与 XML 文本，基于项目中包含的 XSD 文件：
 
 1. 中的代码替换*Module1.vb*文件使用以下代码：
 
@@ -72,4 +74,4 @@ ms.locfileid: "55927277"
 
 2. 右键单击 XML 文本或导入的 XML 命名空间中的任何 XML 节点并选择**在架构资源管理器中显示**。
 
-    **XML 架构资源管理器**具有 XML 文本与 XML 架构集相关联的 Visual Basic 文件将并排显示。
+   **XML 架构资源管理器**具有 XML 文本与 XML 架构集相关联的 Visual Basic 文件将并排显示。
