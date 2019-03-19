@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f529a3861ed6061b428818140ad90d6ca79991af
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fab823a9057c44eca9928b1b1f97ec446fb251c4
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600862"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145078"
 ---
 # <a name="solution-user-options-suo-file"></a>解决方案用户选项 (.Suo) 文件
 解决方案用户选项 (.suo) 文件包含每个用户解决方案选项。 此文件应不会签入到源代码管理。
@@ -38,4 +38,4 @@ ms.locfileid: "56600862"
 
 ## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
-- [解决方案](../../extensibility/internals/solutions.md)
+- [解决方案](../../extensibility/internals/solutions-overview.md)
