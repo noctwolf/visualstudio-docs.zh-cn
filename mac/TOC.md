@@ -33,7 +33,7 @@
 ## [块选择](block-selection.md)
 ## [编辑器主题](editor-themes.md)
 ## [配置](editorconfig.md)
-## [注释键盘快捷方式](keyboard-shortcuts.md)
+## [默认键盘快捷方式](keyboard-shortcuts.md)
 
 # [调试](debugging.md)
 ## [数据可视化效果](data-visualizations.md)
