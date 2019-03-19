@@ -1,8 +1,7 @@
 ---
-title: IEnumDebugStackFrames::Reset |Microsoft Docs
+title: IEnumDebugStackFrames::Reset | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 486700c387fea139ab4c354dee580652717ff08e
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 76cb09ef9456f0dccf3bd034914c9988dd0ff187
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096988"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58144454"
 ---
 # <a name="ienumdebugstackframesreset"></a>IEnumDebugStackFrames::Reset
 将枚举序列重置到开头。  
@@ -40,7 +39,7 @@ HRESULT Reset();
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

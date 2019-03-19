@@ -1,8 +1,7 @@
 ---
-title: 'Iactivescriptsite:: Getiteminfo |Microsoft Docs'
+title: IActiveScriptSite::GetItemInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4dc6515d64406870ca10f003d7cea515c49b7d8
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 997245f8e4fd43ac2162587f07e4c8711af7caac
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095883"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58148680"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
 允许脚本引擎来获取有关与添加的项的信息[iactivescript:: Addnameditem](../../winscript/reference/iactivescript-addnameditem.md)方法。  
@@ -46,7 +45,7 @@ HRESULT GetItemInfo(
  `dwReturnMask`  
  [in]一个位掩码，指定应返回有关项目的哪些信息。 脚本引擎应请求可能的最小信息量，因为一些返回参数 (例如， `ITypeInfo`) 可能需要相当长的时间才能加载或生成。 可以是以下值的组合：  
   
-|“值”|含义|  
+|值|含义|  
 |-----------|-------------|  
 |SCRIPTINFO_IUNKNOWN|返回`IUnknown`此项的接口。|  
 |SCRIPTINFO_ITYPEINFO|返回`ITypeInfo`此项的接口。|  
