@@ -1,8 +1,7 @@
 ---
-title: 'Iactivescriptparse:: Parsescripttext |Microsoft Docs'
+title: IActiveScriptParse::ParseScriptText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d88258a1bd16dba1de8d6ffa282f0f8ba409e2d
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 3396aee8c044ee9b84d7d6256c6ad69a99965170
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088967"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58158862"
 ---
 # <a name="iactivescriptparseparsescripttext"></a>IActiveScriptParse::ParseScriptText
 分析给定的代码 scriptlet，添加声明到命名空间和评估与相应的代码。  
@@ -56,7 +55,7 @@ HRESULT ParseScriptText(
 |`ulStartingLineNumber`|[in]指定分析开始的行的从零开始值。|  
 |`dwFlags`|[in]与 scriptlet 相关联的标志。 可以是这些值的组合：|  
   
-|“值”|含义|  
+|值|含义|  
 |-----------|-------------|  
 |SCRIPTTEXT_ISEXPRESSION|如果计算表达式和语句之间的差异非常重要，但在脚本语言的语法模糊，此标志指定 scriptlet 会被解释为表达式，而不是语句或语句的列表。 默认情况下，除非可以从 scriptlet 文本的语法确定正确的选择，否则要假定语句。|  
 |SCRIPTTEXT_ISPERSISTENT|指示是否保存脚本引擎应保存在此调用过程中添加的代码 (例如，通过调用`IPersist*::Save`)，或如果脚本引擎通过转换为初始化状态重置。|  
