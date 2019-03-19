@@ -1,8 +1,7 @@
 ---
-title: ICanHandleException::CanHandleException |Microsoft Docs
+title: ICanHandleException::CanHandleException | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 784463f9e465aac005f5454be28a0043069dcb69
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 406787d5ee6811b80f9e6831e5a67cab8367e7d0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089994"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146482"
 ---
 # <a name="icanhandleexceptioncanhandleexception"></a>ICanHandleException::CanHandleException
 确定是否脚本引擎的调用方可以处理指定的异常。  
@@ -47,7 +46,7 @@ HRESULT CanHandleException(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|调用方可以处理异常|  
 |`E_FAIL`|调用方无法处理该异常。|  

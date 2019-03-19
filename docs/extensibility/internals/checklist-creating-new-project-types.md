@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c7a98a3c03f63b74cefa3ab3a4586408cfccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4fdbb093abdf0d99f17c9bd27af3623d529a31ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621001"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146339"
 ---
 # <a name="checklist-create-new-project-types"></a>清单：创建新的项目类型
 必须完成多个任务以创建新的项目类型。 下列清单提供了这些任务的指南：
@@ -37,7 +37,7 @@ ms.locfileid: "56621001"
 
     -   项目项管理，包括添加到项目**新的项目**对话框。 有关详细信息，请参阅[添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)并[注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)。
 
-    -   暂留的项目状态和各个项。 有关详细信息，请参阅[打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。 有关持久性的解决方案的信息，请参阅[解决方案](../../extensibility/internals/solutions.md)。
+    -   暂留的项目状态和各个项。 有关详细信息，请参阅[打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。 有关持久性的解决方案的信息，请参阅[解决方案](../../extensibility/internals/solutions-overview.md)。
 
     -   若要在属性窗口中显示的独立于配置的属性。 有关详细信息，请参阅[扩展属性](../../extensibility/internals/extending-properties.md)。
 

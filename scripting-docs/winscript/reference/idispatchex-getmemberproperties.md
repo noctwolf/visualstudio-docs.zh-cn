@@ -2,7 +2,6 @@
 title: IDispatchEx::GetMemberProperties |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51e01ef3fa6d5e0611875f6402b79e53f8c83cac
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: f607e06fe3c898a6839c0bbd2d51edee1f0ffb2c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088187"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160727"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 检索成员的属性。  
@@ -55,7 +54,7 @@ HRESULT GetMemberProperties(
  `pgrfdex`  
  地址`DWORD`用于接收请求的属性。 这可以是以下值的组合：  
   
-|值|含义|  
+|“值”|含义|  
 |-----------|-------------|  
 |fdexPropCanGet|可以使用 DISPATCH_PROPERTYGET 获取该成员。|  
 |fdexPropCannotGet|不能使用 DISPATCH_PROPERTYGET 获取该成员。|  

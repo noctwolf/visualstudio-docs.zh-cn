@@ -2,7 +2,6 @@
 title: SOURCE_TEXT_ATTR 枚举 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc5e7a7bb6c91bd852a8fd2024b708166c085209
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 05faeddf43c91ce0f45d54d2f6b6ed46cf8d2a4f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349772"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157982"
 ---
 # <a name="sourcetextattr-enumeration"></a>SOURCE_TEXT_ATTR 枚举
 描述单个源文本字符的特性。  
@@ -32,7 +31,7 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
   
 ## <a name="members"></a>成员  
   
-|成员|“值”|描述|  
+|成员|值|描述|  
 |------------|-----------|-----------------|  
 |SOURCETEXT_ATTR_KEYWORD|0x0001|字符是一个语言关键字，例如，VBScript 关键字的一部分`While`。|  
 |SOURCETEXT_ATTR_COMMENT|0x0002|字符是注释块的一部分。|  
