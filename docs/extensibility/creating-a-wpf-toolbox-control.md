@@ -1,6 +1,6 @@
 ---
 title: 创建 WPF 工具箱控件 |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - toolbox control
@@ -12,23 +12,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c97e7a32d0229f5a2adcd90a42490e568344acf6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867976"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194822"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>创建 WPF 工具箱控件
-WPF (Windows Presentation Framework) 工具箱控件模板允许你创建的自动添加到 WPF 控件**工具箱**时安装该扩展。 本主题演示如何使用模板创建**工具箱**可以分发给其他用户的控件。
+
+WPF (Windows Presentation Framework) 工具箱控件模板允许你创建的自动添加到 WPF 控件**工具箱**时安装该扩展。 本演练演示如何使用模板创建**工具箱**可以分发给其他用户的控件。
 
 从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
-## <a name="create-a-wpf-toolbox-control"></a>创建 WPF 工具箱控件
+## <a name="create-the-toolbox-control"></a>创建工具箱控件
 
 ### <a name="create-an-extension-with-a-wpf-toolbox-control"></a>使用 WPF 工具箱控件创建的扩展
 
-1. 创建一个名为的 VSIX 项目`MyToolboxControl`。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C#** > **扩展性**。
+1. 创建一个名为的 VSIX 项目`MyToolboxControl`。 您可以发现中的 VSIX 项目模板**新的项目**通过搜索"vsix"对话框。
 
 2. 项目打开后，添加**WPF 工具箱控件**项模板名为`MyToolboxControl`。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项**对话框中，转到**Visual C#** > **扩展性**，然后选择**WPF 工具箱控件**。 在中**名称**在窗口底部字段中，将命令文件名称更改为*MyToolboxControl.cs*。
 
@@ -53,6 +54,7 @@ WPF (Windows Presentation Framework) 工具箱控件模板允许你创建的自�
     ```
 
 ## <a name="renaming-the-control"></a>重命名控件
+
  默认情况下，您的控件将出现在**工具箱**作为**MyToolboxControl**中名为的组**MyToolboxControl.MyToolboxControl**。 您可以更改这些名称在*MyToolboxControl.xaml.cs*文件。
 
 1. 打开*MyToolboxControl.xaml.cs*在代码视图中。
@@ -75,6 +77,7 @@ WPF (Windows Presentation Framework) 工具箱控件模板允许你创建的自�
     ```
 
 ## <a name="build-test-and-deployment"></a>生成、 测试和部署
+
  当调试项目时，您应发现中安装此控件**工具箱**的 Visual Studio 的实验实例。
 
 ### <a name="to-build-and-test-the-control"></a>生成并测试控件

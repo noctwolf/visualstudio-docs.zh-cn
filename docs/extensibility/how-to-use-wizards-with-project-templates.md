@@ -1,6 +1,6 @@
 ---
 title: 如何：使用向导来处理项目模板
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ad50d22641d6b52d688c685fbf0f50fd0c54b31
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 140c72e124143860fee80054ab3fe7e6e921b918
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723703"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194666"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>如何：使用向导来处理项目模板
 
@@ -31,14 +31,14 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
 
 ## <a name="create-a-project-template-project-with-a-vsix-project"></a>使用 VSIX 项目创建项目模板项目
 
-在开始创建自定义模板项目模板项目时，它是 Visual Studio SDK 的一部分。 在此过程中我们将使用C#项目模板项目中，但还没有 Visual Basic 项目模板项目。 然后将 VSIX 项目添加到包含项目模板项目的解决方案。
+在开始创建自定义模板项目模板项目时，它是 Visual Studio SDK 的一部分。 在此过程中，我们将使用C#项目模板项目中，但还没有 Visual Basic 项目模板项目。 然后将 VSIX 项目添加到包含项目模板项目的解决方案。
 
-1. 创建一个 C# 项目模板项目 (在 Visual Studio 中，**文件** > **新建** > **项目** > **Visual C#**  > **扩展性** > **C# 项目模板**)。 其命名为**MyProjectTemplate**。
+1. 创建C#项目模板项目 (在 Visual Studio 中，选择**文件** > **新建** > **项目**并搜索"项目模板"). 其命名为**MyProjectTemplate**。
 
    > [!NOTE]
    > 您可能需要安装 Visual Studio SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
-2. 添加新的 VSIX 项目 (**文件** > **新建** > **项目** > **Visual C#**  > **扩展性** > **VSIX 项目**) 中与项目模板项目相同的解决方案 (在**解决方案资源管理器**，选择解决方案节点，右键单击，并选择**外** > **新项目**)。 其命名为**MyProjectWizard。**
+2. 在与项目模板项目相同的解决方案中添加新的 VSIX 项目 (在**解决方案资源管理器**，选择解决方案节点，右键单击，并选择**添加** > **新项目**并搜索"vsix")。 其命名为**MyProjectWizard。**
 
 3. 将 VSIX 项目设置为启动项目。 在中**解决方案资源管理器**，选择 VSIX 项目节点，右键单击，并选择**设为启动项目**。
 
@@ -50,7 +50,7 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
 
 7. 生成解决方案并启动调试。 将出现 Visual Studio 的第二个实例。 （这可能需要几分钟时间）。
 
-8. 在 Visual Studio 的第二个实例中，尝试使用你的新模板创建一个新的项目 (**文件** > **新建** > **项目 > Visual C#**  > **我的项目模板**)。 新项目应该显示与名为的类**Class1**。 现在已创建自定义项目模板 ！ 立即停止调试。
+8. 在 Visual Studio 的第二个实例中，尝试使用你的新模板创建一个新的项目 (**文件** > **新建** > **项目**，搜索"我的项目"）。 新项目应该显示与名为的类**Class1**。 现在已创建自定义项目模板 ！ 立即停止调试。
 
 ## <a name="create-a-custom-template-wizard"></a>创建自定义模板向导
 
@@ -60,11 +60,11 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
 
 2. 在中**解决方案资源管理器**，选择 VSIX 项目节点。 下面**解决方案资源管理器**，你应看到**属性**窗口。 如果不这样做，请选择**视图** > **属性窗口**，或按**F4**。 在中**属性**窗口中，选择以下字段设置为`true`:
 
-   -   **IncludeAssemblyInVSIXContainer**
+   - **IncludeAssemblyInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInVSIXContainer**
+   - **IncludeDebugSymbolsInVSIXContainer**
 
-   -   **IncludeDebugSymbolsInLocalVSIXDeployment**
+   - **IncludeDebugSymbolsInLocalVSIXDeployment**
 
 3. 将程序集作为资产添加到 VSIX 项目。 打开*source.extension.vsixmanifest*文件，然后选择**资产**选项卡。在**添加新资产**窗口中，对于**类型**选择**Microsoft.VisualStudio.Assembly**，为**源**选择**A当前解决方案中的项目**，并为**项目**选择**MyProjectWizard**。
 
@@ -157,7 +157,7 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
 
    - <xref:System.Object>数组，其中包含一组参数传递给向导由 Visual Studio。
 
-     此示例将参数值添加到窗体用户输入从<xref:System.Collections.Generic.Dictionary%602>参数。 每个实例`$custommessage$`项目中的参数将替换为用户输入的文本。 您必须将以下程序集添加到您的项目中：**系统**并**System.Drawing**。
+     此示例将参数值添加到窗体用户输入从<xref:System.Collections.Generic.Dictionary%602>参数。 每个实例`$custommessage$`项目中的参数将替换为用户输入的文本。 将以下程序集添加到你的项目：**系统**并**System.Drawing**。
 
 7. 现在，创建**UserInputForm**。 在中*WizardImplementation.cs*文件中，添加以下代码的结尾后`WizardImplementation`类。
 
@@ -228,7 +228,7 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
 
      *C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools*
 
-     如果找不到工具，请尝试运行**其中 /R。 sn.exe**命令窗口中。 记下的路径。
+     如果找不到工具，请尝试在运行**其中 /R。 sn.exe**命令窗口中。 记下的路径。
 
 10. 提取从公钥*key.snk*文件。 在命令窗口中，键入
 
@@ -297,19 +297,19 @@ namespace $safeprojectname$
 
 现在可以从模板创建项目，并使用自定义向导。
 
-1.  重新生成解决方案并启动调试。 将显示 Visual Studio 的第二个实例。
+1. 重新生成解决方案并启动调试。 将显示 Visual Studio 的第二个实例。
 
-2.  创建新的 MyProjectTemplate 项目。 (**文件** > **新** > **项目** > **Visual C#**  >  **MyProjectTemplate**)
+2. 创建新的 MyProjectTemplate 项目。 (**文件** > **新** > **项目**)。
 
-3.  在中**新的项目**对话框中，找到您的模板中，键入一个名称，并单击**确定**。
+3. 在中**新的项目**对话框中，搜索"myproject"来找到你的模板，键入一个名称，然后单击**确定**。
 
      此时将打开向导的用户输入窗体。
 
-4.  键入自定义参数的值，然后单击该按钮。
+4. 键入自定义参数的值，然后单击该按钮。
 
      在向导用户输入窗体关闭，并从模板创建的项目。
 
-5.  在中**解决方案资源管理器**，右键单击源代码文件，然后单击**查看代码**。
+5. 在中**解决方案资源管理器**，右键单击源代码文件，然后单击**查看代码**。
 
      请注意，`$custommessage$`已替换为向导用户输入窗体中输入的文本。
 

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ab66596dd550a74a18e425769a0c7120cf3220a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873436"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193891"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>支持 Visual Studio SDK
 有关如何扩展 Visual Studio 集成的开发环境 (IDE) 的疑问的客户有多个支持选项。
@@ -54,9 +54,9 @@ ms.locfileid: "57873436"
 
 ### <a name="developer-tools-support"></a>开发人员工具支持
 
-此外可购买的支持。 在开发人员工具类别下提供各种支持产品/服务是[Microsoft 帮助和支持中心](http://go.microsoft.com/fwlink/?LinkID=82383)。
+此外可购买的支持。 在开发人员工具类别下提供各种支持产品/服务是[Microsoft 帮助和支持中心](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8)。
 
-想要使用的客户[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]开发复杂的包可以考虑购买具有 Microsoft 顶级支持协定。 有关详细信息，请参阅[Microsoft 高级支持](https://support.microsoft.com/premier)。 对于小公司来说，[合作伙伴利用支持](http://www.microsoft.com/services/microsoftservices/srv_mspa.mspx)可能是传统的顶级支持产品/服务的极具吸引力替代方法。
+想要使用的客户[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]开发复杂的包可以考虑购买具有 Microsoft 顶级支持协定。 有关详细信息，请参阅[Microsoft 高级支持](https://support.microsoft.com/premier)。 对于小公司来说，[面向合作伙伴的高级支持](https://partner.microsoft.com/support/advanced-cloud-support)可能是传统的顶级支持产品/服务的极具吸引力替代方法。
 
 > [!NOTE]
 > 不能使用标准支持，为咨询做好或者获取建议。

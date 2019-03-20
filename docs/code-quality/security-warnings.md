@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8abfceedb112bb638dde2ff826182ad044573c74
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955370"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195081"
 ---
 # <a name="security-warnings"></a>安全警告
 
@@ -77,5 +77,5 @@ ms.locfileid: "55955370"
 |[CA2153:避免处理损坏状态异常](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[损坏状态异常 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) 指示进程中存在内存损坏。 如果攻击者可以将攻击放置到损坏的内存区域，则捕获它们（而非允许进程崩溃）可能导致安全漏洞。|
 |[CA3075:不安全的 DTD 处理](../code-quality/ca3075-insecure-dtd-processing.md)|如果使用不安全的 DTDProcessing 实例或引用外部实体源，分析器可能会接受不受信任的输入并将敏感信息泄露给攻击者。|
 |[CA3076:不安全的 XSLT 脚本执行](../code-quality/ca3076-insecure-xslt-script-execution.md)|如果在 .NET 应用程序中不安全地执行可扩展样式表语言转换 (XSLT)，处理器可能会解析不受信任的 URI 引用，这种引用会把敏感信息泄露给攻击者，从而导致拒绝服务和跨站点攻击。|
-|[CA3077:API 设计、 XML 文档和 XML 文本读取器中的不安全处理](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|当设计派生自 XMLDocument 和 XMLTextReader 的 API 时，请注意 DtdProcessing。  当引用或解析外部实体源或设置 XML 中的不安全值时，使用不安全的 DTDProcessing 实例可能会导致信息泄露。|
+|[CA3077:API 设计、 XML 文档和 XML 文本读取器中的不安全处理](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|当设计派生自 XMLDocument 和 XMLTextReader 的 API 时，请注意 DtdProcessing。 当引用或解析外部实体源或设置 XML 中的不安全值时，使用不安全的 DTDProcessing 实例可能会导致信息泄露。|
 |[CA3147:将标记与 ValidateAntiForgeryToken 谓词处理程序](../code-quality/ca3147-mark-verb-handlers-with-validateantiforgerytoken.md)|在设计时的 ASP.NET MVC 控制器，留意跨站点请求伪造攻击。 跨站点请求伪造攻击可以将恶意请求从身份验证的用户发送到 ASP.NET MVC 控制器。|

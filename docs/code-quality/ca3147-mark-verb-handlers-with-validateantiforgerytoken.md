@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c8c43ceb19aa6b4407fd4639f952ced859390b1
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: 0cd54f932a99ea79bf792ebe4175ddc6a031ddcb
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567323"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194439"
 ---
 # <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147:使用 ValidateAntiForgeryToken 标记谓词处理程序
 
@@ -45,7 +45,7 @@ ASP.NET MVC 控制器操作方法不标记有[ValidateAntiForgeryTokenAttribute]
 
    如果具有 ASP.NET MVC 控制器操作处理 HTTP GET 请求，并具有潜在的有害副作用，如修改敏感数据，你的应用程序是易受到跨站点请求伪造攻击。  你将需要重新设计应用程序，以便只有 HTTP POST、 PUT 或 DELETE 请求执行敏感操作。
 
-- 处理 HTTP POST 的 ASP.NET MVC 控制器操作，PUT 或 DELETE 请求时，添加[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))和指定允许的 HTTP 谓词的属性 ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)[HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29)， [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)，或[HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29))。 此外，您需要调用[HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29)从你的 MVC 视图或 Razor web 页面的方法。 有关示例，请参阅[检查 edit 方法和编辑视图](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)。
+- 处理 HTTP POST 的 ASP.NET MVC 控制器操作，PUT 或 DELETE 请求时，添加[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/dd492108(v=vs.118))和指定允许的 HTTP 谓词的属性 ([AcceptVerbsAttribute](/previous-versions/aspnet/dd470553%28v%3dvs.118%29)[HttpPostAttribute](/previous-versions/aspnet/ee264023%28v%3dvs.118%29)， [HttpPutAttribute](/previous-versions/aspnet/ee470909%28v%3dvs.118%29)，或[HttpDeleteAttribute](/previous-versions/aspnet/ee470917%28v%3dvs.118%29))。 此外，您需要调用[HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/dd504812%28v%3dvs.118%29)从你的 MVC 视图或 Razor web 页面的方法。 有关示例，请参阅[检查 edit 方法和编辑视图](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
