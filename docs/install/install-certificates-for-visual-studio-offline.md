@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e670e90f29e0ceb33fb52b4e29bf1bb917df1a8e
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: 9e0c9d47968d6e120beb8815a900ff8cc0b82603
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737047"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982995"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安装 Visual Studio 脱机安装所需的证书
 
@@ -113,6 +113,7 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 ## <a name="checking-if-certificates-are-already-installed"></a>检查是否已安装证书
 
 检查安装系统的一种方法是按以下步骤操作：
+
 1. 运行 **mmc.exe**。<br/>
   a. 单击“文件”，然后选择“添加/删除管理单元”。<br/>
   b. 双击“证书”，选择“计算机帐户”，然后单击“下一步”。<br/>

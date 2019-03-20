@@ -1,7 +1,7 @@
 ---
 title: JavaScript
 ms.date: 01/15/2019
-ms.technology: vs-nodejs
+ms.technology: vs-javascript
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -12,12 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
-ms.openlocfilehash: faee8d414f324adce2a3e732ace301d45b13f3df
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c0eabc286cbeafc3d9b2651e5f6f2ec6c61d7e04
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844082"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870300"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -32,7 +32,7 @@ Visual Studio 现在支持 ECMAScript 语言更新（例如 ECMAScript 2015/2016
 
 ### <a name="what-is-ecmascript-2015"></a>什么是 ECMAScript 2015？
 
-JavaScript 作为一种编程语言仍在不断更新，而 [TC39](http://www.ecma-international.org/memento/TC39.htm) 是负责进行更新的委员会。
+JavaScript 作为一种编程语言仍在不断更新，而 [TC39](https://www.ecma-international.org/memento/tc39-m.htm) 是负责进行更新的委员会。
 ECMAScript 2015 是对 JavaScript 语言的更新，提供了有帮助的新语法和功能。 要深入了解 ES6 的功能，请查看[此](http://es6-features.org)引用站点。
 
 除了支持 ECMAScript 2015，Visual Studio 还支持 ECMAScript 2016，并会在发布 ECMAScript 的将来版本后提供对这些版本的支持。 要与 TC39 和 ECMAScript 中的最新更改保持同步，请关注它们在 [github](https://github.com/tc39) 上的文章。

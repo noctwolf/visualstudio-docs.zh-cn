@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18b62be13af1b057a9bbfaeb73e390abb0bf62ea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222891"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194053"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>配置用于 IntelliSense 的 C++ 项目
 
@@ -52,7 +52,7 @@ IntelliSense 最多生成 1000 个错误。 如果源文件包含的头文件中
 
 ### <a name="open-folder-projects"></a>打开文件夹项目
 
-对于 CMake 项目，请确保已为 CMakeLists.txt 中的所有配置指定正确的 #include 路径。 其他项目类型可能需要用到 CppProperties.json 文件。 有关详细信息，请参阅[使用 CppProperties.json 配置 IntelliSense](/cpp/ide/non-msbuild-projects#cppproperties)。 请确保路径对此文件中定义的每个配置都正确无误。
+对于 CMake 项目，请确保已为 CMakeLists.txt 中的所有配置指定正确的 #include 路径。 其他项目类型可能需要用到 CppProperties.json 文件。 有关详细信息，请参阅[使用 CppProperties.json 配置 IntelliSense](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson)。 请确保路径对此文件中定义的每个配置都正确无误。
 
 如果 CppProperties.json 文件中有语法错误，那么受影响文件中的 IntelliSense 也会不正确。 Visual Studio 在输出窗口中显示错误。
 
@@ -72,7 +72,7 @@ IntelliSense 最多生成 1000 个错误。 如果源文件包含的头文件中
 
    ![标记分析器提议定义现有函数](media/vcpp-intellisense-tag-parser-function.png)
 
-若要解决上述这几种问题，请将“cpp.hint”文件添加到解决方案根目录中。 有关详细信息，请参阅[提示文件](/cpp/ide/hint-files)。
+若要解决上述这几种问题，请将“cpp.hint”文件添加到解决方案根目录中。 有关详细信息，请参阅[提示文件](/cpp/build/reference/hint-files)。
 
 标记分析器错误显示在“错误列表”窗口中。
 

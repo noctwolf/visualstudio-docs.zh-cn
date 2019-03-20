@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab3cf50dfc860a857b3e9875ae6c71aff79014e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223476"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58145221"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 
@@ -140,7 +140,7 @@ ms.locfileid: "57223476"
 
 8. 运行测试。
 
-   使用测试资源管理器，或打开测试方法中的快捷菜单，然后选择“运行测试”。 有关如何运行测试的详细信息，请参见本主题结尾处[后续步骤](#what's-next?)部分中的[用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)和“运行编码的 UI 测试的其他选项”。
+   使用测试资源管理器，或打开测试方法中的快捷菜单，然后选择“运行测试”。 有关如何运行测试的详细信息，请参见本主题结尾处[后续步骤](#whats-next?)部分中的[用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)和“运行编码的 UI 测试的其他选项”。
 
 本主题中的剩余部分提供了有关此过程中步骤的更多详细信息。
 

@@ -1,7 +1,7 @@
 ---
 title: 如何应用 Python 搜索路径
 description: Visual Studio 提供了一种更具体的方法来指定环境和项目的搜索路径，以避免使用系统范围的变量。
-ms.date: 11/12/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4befbce86d05fc9e3c52247ed71abc8c5ca5e6a6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 55995d53f763bcc3f13338e52b255135bbefa15b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929903"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58147730"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜索路径
 
@@ -31,7 +31,12 @@ ms.locfileid: "55929903"
 
 若要添加搜索路径，请转到“解决方案资源管理器”，展开项目节点，右键单击搜索路径，选择“将文件夹添加到搜索路径”：
 
+::: moniker range="vs-2017"
 ![解决方案资源管理器中搜索路径上的“将文件夹添加到搜索路径”命令](media/search-paths-command.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![解决方案资源管理器中搜索路径上的“将文件夹添加到搜索路径”命令](media/search-paths-command-2019.png)
+::: moniker-end
 
 该命令显示你之后在其中选择要包含的文件夹的浏览器。
 

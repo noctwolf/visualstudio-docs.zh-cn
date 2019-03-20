@@ -16,14 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 91a2bda02f62391c84ff5b39a934192eccbd6bb8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910813"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984133"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>为 Visual Studio 2017 企业部署设置默认值
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>为 Visual Studio 企业部署设置默认值
 
 可以设置影响 Visual Studio 部署的注册表策略。 这些策略对新安装程序全局适用，并将影响：
 
@@ -62,6 +62,6 @@ ms.locfileid: "55910813"
 
 ## <a name="see-also"></a>请参阅
 
- * [安装 Visual Studio](install-visual-studio.md)
- * [禁用或移动包缓存](disable-or-move-the-package-cache.md)
- * [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [安装 Visual Studio](install-visual-studio.md)
+- [禁用或移动包缓存](disable-or-move-the-package-cache.md)
+- [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
