@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca9786183f2d814459e650c6018a99d7ee37f6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601018"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146521"
 ---
 # <a name="project-persistence"></a>项目持久性
 持久性是你的项目的关键设计注意事项。 大多数项目使用项目项代表文件;[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]还支持其数据是不基于文件的项目。 必须保留这两个拥有的项目和项目文件的文件。 IDE 指示要保存本身或项目项的项目。
 
- 项目的模板将传递给项目工厂。 模板应支持根据特定项目类型的要求的所有项目项的初始化。 这些模板稍后可以另存为项目文件，由该解决方案通过 IDE 管理。 有关详细信息，请参阅[创建项目实例通过使用项目工厂](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)并[解决方案](../../extensibility/internals/solutions.md)。
+ 项目的模板将传递给项目工厂。 模板应支持根据特定项目类型的要求的所有项目项的初始化。 这些模板稍后可以另存为项目文件，由该解决方案通过 IDE 管理。 有关详细信息，请参阅[创建项目实例通过使用项目工厂](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)并[解决方案](../../extensibility/internals/solutions-overview.md)。
 
  项目项可以是基于文件的或非基于文件的：
 
