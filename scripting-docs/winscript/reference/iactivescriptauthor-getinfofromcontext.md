@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptAuthor::GetInfoFromContext |Microsoft Docs
+title: IActiveScriptAuthor::GetInfoFromContext | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d32e2864f42fa9a2bfc30cfe83da7d4e021dfd0
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: e4fe885e116019608dd8d748c3cbdaff5d31dd2a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088863"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154408"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 返回类型的代码块中的信息和给定的字符的定位点位置。 IntelliSense、 全局列表和参数的提示，这提供有关成员的信息。  
@@ -97,7 +96,7 @@ HRESULT GetInfoFromContext(
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

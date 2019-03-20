@@ -1,8 +1,7 @@
 ---
-title: IActiveScriptAuthor::RemoveTypeLib |Microsoft Docs
+title: IActiveScriptAuthor::RemoveTypeLib | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36aac4ef2631dbc82dc64e61021ef6bb3f2ac153
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: f8dd75bfa5474eb93a51af790f7efd6431a9aaa0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096182"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149177"
 ---
 # <a name="iactivescriptauthorremovetypelib"></a>IActiveScriptAuthor::RemoveTypeLib
 从创作引擎命名空间的脚本中删除类型库。  
@@ -51,7 +50,7 @@ HRESULT RemoveTypeLib(
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

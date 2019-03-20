@@ -1,21 +1,20 @@
 ---
-title: Visual Studio 的 visual 语言字典 |Microsoft Docs
+title: Visual 语言参考
 ms.date: 08/04/2017
 ms.reviewer: Jamie.Young
 ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
-ms.author: v-brickg
+ms.author: brgeorge
 manager: jillfra
-ms.workload:
-- v-brickg
-ms.openlocfilehash: a17361536437e6ba4811a687fdc75a9b47d4c0e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b550f75731874da5581c967034cd91260674f974
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698477"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58158076"
 ---
-# <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio 的 visual 语言字典
+# <a name="visual-language-dictionary"></a>可视语言字典
+
 Visual Studio 将使用常见的 visual 语言来阐明这些概念，是其图标和其他图像的构建基块。 在设计新图标，使用此字典来标识你想要传达你自己的映像中的概念。
 
 ## <a name="general-guidelines"></a>通用准则

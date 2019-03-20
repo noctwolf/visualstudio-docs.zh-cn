@@ -1,8 +1,7 @@
 ---
-title: IScriptEntry::SetItemName |Microsoft Docs
+title: IScriptEntry::SetItemName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20af0975a4175d10b110ac5e3cef9e0055f4ce1b
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: d25ac4977f1fca44d63767c372db169f8cb61ea6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097755"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160545"
 ---
 # <a name="iscriptentrysetitemname"></a>IScriptEntry::SetItemName
 设置标识的项名称`IScriptEntry`对象。  
@@ -43,7 +42,7 @@ HRESULT SetItemName(
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
 |`E_FAIL`|该方法未成功。|  
