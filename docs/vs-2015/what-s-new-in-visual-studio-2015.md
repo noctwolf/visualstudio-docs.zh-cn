@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844134"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195159"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 中的新增功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -131,14 +131,13 @@ ms.locfileid: "56844134"
 
      [Xamarin 开发人员指南](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) 中的 [调试](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) (iOS) 和 [在设备上进行调试](http://developer.xamarin.com/guides) 介绍了调试体验。
 
--   **C++/Android**。 配合使用 [用于跨平台移动开发的 Visual C++](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) 模板和 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) 等第三方工具，创建适用于 Windows 和 Android 的本机应用。
+-   **C++/Android**。 配合使用 [用于跨平台移动开发的 Visual C++](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) 模板和 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) 等第三方工具，创建适用于 Windows 和 Android 的本机应用。
 
 ## <a name="debugging-and-diagnostics"></a>调试和诊断
- 有关新增调试功能的信息，请参阅 [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015)。
 
- 有关新增诊断中的新增功能的信息，请参阅[What's New in 分析工具](./profiling/what-s-new-in-profiling-tools.md)。
+有关新增诊断中的新增功能的信息，请参阅[What's New in 分析工具](./profiling/what-s-new-in-profiling-tools.md)。
 
- 下面是对代码执行不同类型的诊断和分析的新功能和改进的工具：
+下面是对代码执行不同类型的诊断和分析的新功能和改进的工具：
 
 ### <a name="perftips"></a>性能提示
  性能提示显示调试过程中方法的执行时间，可使你快速确认瓶颈，而无需调用探查器。 若要开始使用，请参阅 [性能提示：使用 Visual Studio 调试时的性能信息一览](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)

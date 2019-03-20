@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 3b76154db0d85cba745ffe1c694b18a1fb9dde26
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805548"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194919"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Porting, Migrating, and Upgrading Visual Studio Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Visual Studio 2017 的最新文档，请参阅[端口、 迁移和升级 Visual 
 |Office 2007 VSTO|如果你升级项目以面向 Office 2013 和 .NET Framework 4，则可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]或 Visual Studio 2010 SP1 中打开此项目。|
 |Office 2010 VSTO|如果项目面向 .NET Framework 4，则可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开此项目。 所有其他项目需要单向升级。|
 |丰富的 Internet 应用程序|在升级项目时，你只能在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开它。|
-|SharePoint 2007|此项目不能在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中打开。 但是，如果你将项目手动升级到 SharePoint 2010，则可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开它。 有关如何升级 SharePoint 2007 的详细信息，请参阅[从 SharePoint 2007 迁移到 SharePoint 2010（针对 IT 专业人员）](http://go.microsoft.com/fwlink/?LinkId=238224)、[从 2007 工作流迁移到 Visual Studio & SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=238225) 和 [SharePoint Server 2010 的 SharePoint 企业搜索迁移工具](http://go.microsoft.com/fwlink/?LinkId=238226)。|
+|SharePoint 2007|此项目不能在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中打开。 但是，如果你将项目手动升级到 SharePoint 2010，则可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开它。 有关如何升级 SharePoint 2007 的详细信息，请参阅[从 SharePoint 2007 迁移到 SharePoint 2010 为 IT 专业人员](http://go.microsoft.com/fwlink/?LinkId=238224)和[SharePoint 企业搜索迁移工具，SharePoint Server 2010](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
 |SharePoint 2010|可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开项目。|
 |SketchFlow|如果允许 Visual Studio 将项目升级到 WPF 4.5/Silverlight 5，则可以在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 和 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中打开它。|
 |[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 数据库|可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开项目。 如果你有使用早期版本的 SQL Server 创建的数据库文件 (.mdf)，则必须将它升级为 [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] ，然后才能将它与 SQL Server Express LocalDB 一起使用，但该数据库不再与早期版本的 SQL Server 相兼容。 如果不升级，则可通过在同一计算机上安装和使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 来继续在 [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 中使用该数据库。 有关详细信息，请参阅[升级.mdf 文件](../data-tools/upgrade-dot-mdf-files.md)。|
@@ -91,7 +91,7 @@ Visual Studio 2017 的最新文档，请参阅[端口、 迁移和升级 Visual 
 
 - 如果你尝试在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]中打开桌面应用项目，则会发生错误，并且会显示以下消息之一：“此版本的 Visual Studio 仅支持 [!INCLUDE[win81](../includes/win81-md.md)] 应用”或“此项目与当前版本的 Visual Studio 不兼容”。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 仅限于为 Windows 8.1 设计的 Windows 应用商店应用的开发、测试和部署。 若要打开桌面应用程序项目，必须使用支持该项目类型的 Visual Studio 版本。
 
-   有关 Visual Studio 版本的详细信息，请参阅 [Microsoft Visual Studio 产品](http://go.microsoft.com/fwlink/?LinkId=254332)
+   有关 Visual Studio 版本的详细信息，请参阅 [Microsoft Visual Studio 产品](https://visualstudio.microsoft.com/products/)
 
 - 如果你尝试在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 桌面中打开 Windows 应用商店应用项目，则会发生错误。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 桌面无法用于生成 Windows 应用商店应用。 如果要生成 Windows 应用商店应用，则还可以安装 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]。 或者，若要为所有 Microsoft 平台和网站开发应用，请尝试 Visual Studio Professional 2013。
 

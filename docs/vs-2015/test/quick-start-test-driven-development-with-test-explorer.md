@@ -1,5 +1,5 @@
 ---
-title: 快速入门：测试驱动的开发与测试资源管理器 |Microsoft Docs
+title: 快速入门：通过测试资源管理器进行测试驱动开发 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9429bf3f77ec015c245eb29e6354aaf810bb895a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: af763149df8997e711677d978468a57d276cb636
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797960"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868919"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>快速入门：通过测试资源管理器进行测试驱动开发
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,10 +65,10 @@ ms.locfileid: "54797960"
 >  显示的结果是最近运行的测试结果。 彩色的结果栏仅显示曾经运行的测试的结果。 例如，你运行过多个测试，其中部分失败，然后仅运行了成功的测试，则结果栏将完全显示绿色。  
   
 > [!NOTE]
->  如果未显示任何测试，请确保已安装适配器，将“测试资源管理器”与你使用的测试框架连接起来。 有关更多信息，请参见 [将不同测试框架与“测试资源管理器”配合使用](#frameworks)。  
+>  如果未显示任何测试，请确保已安装适配器，将“测试资源管理器”与你使用的测试框架连接起来。 有关详细信息，请参阅[使用不同的测试框架](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)。  
   
 ##  <a name="walkthrough"></a> 演练：使用单元测试开发方法  
- 本演练演示如何使用 Microsoft 单元测试框架开发 C# 语言的受测试方法。 你可以将其轻松改写为其他语言，也可加以调整以使用其他测试框架，例如 NUnit。 有关更多信息，请参见 [使用不同的测试框架](#frameworks)。  
+ 本演练演示如何使用 Microsoft 单元测试框架开发 C# 语言的受测试方法。 你可以将其轻松改写为其他语言，也可加以调整以使用其他测试框架，例如 NUnit。 有关详细信息，请参阅[Usa 不同测试框架](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)。  
   
 #### <a name="creating-the-test-and-method"></a>创建测试和方法  
   

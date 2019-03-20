@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: deeddf541b2f0878ce2fdc20713b6d9e472b0540
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9194da6803f04f3bf4cc56696d01a68a3e27d67d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805561"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873238"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 静态代码分析来分析应用商店应用的 C++ 代码质量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,13 +128,12 @@ ms.locfileid: "54805561"
 |                       [C6516](../code-quality/c6516.md)                        |                                          在特性上无属性                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       有效的不可读缓冲区的大小                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     不可写的缓冲区的可写入大小                                      |
-| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  无效的批注：“NeedsRelease”属性的值必须为 Yes 或 No                   |
 | [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        取消引用无效大小的字符串                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           无效大小的字符串类型                                            |
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         无效大小的字符串参数                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   无效大小字符串的不可访问的位置                                    |
 | [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        无效大小的字符串缓冲区类型                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              无效的批注：无法对 void 类型的值使用“NeedsRelease”属性               |
+|                       [C6527](../code-quality/c6527.md)                        |              无效的批注：“NeedsRelease”属性可能不可用于 void 类型的值               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       无法识别的格式字符串样式                                        |
 |                       [C6540](../code-quality/c6540.md)                        | 对该函数使用属性批注将使其现有的所有 __declspec 批注无效  |
 |                       [C6551](../code-quality/c6551.md)                        |                              大小规范无效：表达式不可分析                              |
@@ -194,7 +193,6 @@ ms.locfileid: "54805561"
 |                      [C28254](../code-quality/c28254.md)                       |                               批注中不支持 dynamic_cast<>()                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    对于批注，在函数中找到了批注的语法错误                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 在条件批注中找到内部批注的语法错误                 |
-| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    结果列出了必须为常量的值。                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    在函数中找到了批注的语法错误。                    |
 |                      [C28272](../code-quality/c28272.md)                       |      在检查参数时，函数的批注与函数声明不一致      |
 |                      [C28273](../code-quality/c28273.md)                       |                    对于函数，线索与函数声明不一致                     |
@@ -206,7 +204,7 @@ ms.locfileid: "54805561"
 |                      [C28286](../code-quality/c28286.md)                       |                                    对于函数，在其结尾附近出现语法错误                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                对于函数，在 \_At\_() 批注中出现语法错误（无法识别的参数名）                |
 |                      [C28288](../code-quality/c28288.md)                       |                  对于函数，在 \_At\_() 批注中出现语法错误（无效的参数名）                   |
-|                      [C28289](../code-quality/c28289.md)                       |                对于函数：ReadableTo 或 WritableTo 没有限制规范作为参数                |
+|                      [C28289](../code-quality/c28289.md)                       |                对于函数：ReadableTo 或 WritableTo 没有用作参数的限制规范                |
 |                      [C28290](../code-quality/c28290.md)                       |           函数的批注包含的外部对象数量多于实际的参数数量            |
 |                      [C28291](../code-quality/c28291.md)                       |                        deref 级别 0 处的 post null/notnull 对于函数无意义。                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            运算符的不可兼容类型的表达式操作数                             |

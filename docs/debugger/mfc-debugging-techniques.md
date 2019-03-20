@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff3fbd9332c2d402e2b1f72880595bd649cf01c3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316868"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58154801"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 调试方法
 如果要调试 MFC 程序，这些调试技术可能会有用。
@@ -140,7 +140,7 @@ MFC 框架的“Debug”版本自动使用 `DEBUG_NEW` ，但代码不自动使�
 
 - 如果希望对内存诊断功能进行更精确的控制，可以通过设置 MFC 全局变量 [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)的值，来有选择地打开和关闭单个内存诊断功能。 该变量可以具有下列值（由枚举类型 **afxMemDF**所指定）。
 
-  |值|说明​​|
+  |“值”|说明|
   |-----------|-----------------|
   |**allocMemDF**|打开诊断内存分配器（默认）。|
   |**delayFreeMemDF**|在调用 `delete` 或 `free` 时延迟释放内存，直到程序退出。 这将使你的程序分配可能的最大内存量。|
@@ -230,7 +230,7 @@ Total allocations: 67 bytes
 在 MFC 程序中，可以使用[cmemorystate:: Dumpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince)来转储堆上尚未释放的所有对象的说明。 `DumpAllObjectsSince` 转储从最后一个 [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)。 如果未发生 `Checkpoint` 调用，则 `DumpAllObjectsSince` 将转储当前在内存中的所有对象和非对象。
 
 > [!NOTE]
-> 必须先 [启用诊断跟踪](#BKMK_Enabling_Memory_Diagnostics)，然后才能使用 MFC 对象转储。
+> 必须先 [启用诊断跟踪](#BKMK_Enabling_memory_diagnostics)，然后才能使用 MFC 对象转储。
 
 > [!NOTE]
 > 程序退出时 MFC 将自动转储所有泄漏的对象，因此不必创建代码在该点转储对象。

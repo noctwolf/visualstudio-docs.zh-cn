@@ -8,12 +8,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0901c16d4e467869768b3863a194ea524b5f9472
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787876"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868700"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安装第三方单元测试框架
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Visual Studio 测试资源管理器可以运行任何针对该资源管理器开
 ### <a name="installing-from-the-web"></a>从 Web 安装  
  如果你了解所需框架：  
   
-1. 打开 MSDN 网站上的 [Visual Studio 库](http://go.microsoft.com/fwlink/?LinkId=236267)。  
+1. 打开 [Visual Studio Marketplace](https://marketplace.visualstudio.com)。  
   
 2. 在“查找”框中键入框架名称。  
   
@@ -50,7 +50,7 @@ Visual Studio 测试资源管理器可以运行任何针对该资源管理器开
   
    浏览框架以及其他测试工具的列表：  
   
-4. 打开 MSDN 网站上的 [Visual Studio 库](http://go.microsoft.com/fwlink/?LinkId=236267)。  
+4. 打开 [Visual Studio Marketplace](https://marketplace.visualstudio.com)。  
   
 5. 选择“浏览”。  
   

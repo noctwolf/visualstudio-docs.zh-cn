@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 0b97808da917fcbeefcd849dae601fe7410d84b7
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: f84b7c461154443adcd099fa1d92c0b8fd6e9987
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526590"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194854"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Visual Studio 2017 中的远程 IIS 计算机上的远程调试 ASP.NET Core
 若要调试已部署到 IIS 的 ASP.NET 应用程序，安装和运行远程工具的计算机上在其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
@@ -193,7 +193,7 @@ ms.locfileid: "57526590"
 在大多数系统中，所需的端口被打开的 ASP.NET 和远程调试器安装。 但是，您可能需要验证端口打开。
 
 > [!NOTE]
-> 在 Azure VM 上，则必须打开端口通过[网络安全组](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80-for-web-traffic)。
+> 在 Azure VM 上，则必须打开端口通过[网络安全组](/azure/virtual-machines/windows/nsg-quickstart-portal)。
 
 所需的端口：
 

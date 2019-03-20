@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dee4518b6bc0015ec67978637d5696a25c4e04e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92d59e722b78e389bf355eeac8a1aa267979fc5b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767950"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873853"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "54767950"
 
  创建编码的 UI 测试很容易。 当 CUIT 测试生成器在后台运行时，你只需手动执行该测试。 你还可以指定在特定字段中应显示哪些值。 CUIT 测试生成器录制操作并且从中生成代码。 在创建测试后，你可以在专用编辑器中对其进行编辑，该编辑器使你能够修改操作的序列。
 
- 或者，如果你具有在 Microsoft 测试管理器中录制的测试用例，你可以从中生成代码。 有关详细信息，请参阅[录制和播放手动测试](http://msdn.microsoft.com/library/9792e72f-600e-441f-9d4e-6510e5965665)。
+ 或者，如果你具有在 Microsoft 测试管理器中录制的测试用例，你可以从中生成代码。 有关详细信息，请参阅[录制和播放手动测试](/azure/devops/test/mtm/record-play-back-manual-tests)。
 
  专用的 CUIT 测试生成器和编辑器可以方便地创建和编辑编码的 UI 测试，即使你的主要技能都集中于测试而不是编码。 但如果你是一位开发人员，想要以更先进的方式扩展测试，则结构化代码，以便于更简单地复制和改写。 例如，你可以录制在网站购物的测试，然后编辑生成的代码以添加购买许多商品的循环。
 
@@ -297,7 +297,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 -   **代码编辑器：**
 
-    -   按照本主题中的[编码 UI 控件操作和属性](#VerifyingCodeCUITActionsandProperties)部分的描述，为测试中的控件手动添加代码。
+    -   按照本主题中的[编码 UI 控件操作和属性](#actions)部分的描述，为测试中的控件手动添加代码。
 
     -   在创建编码的 UI 测试以后，你可以将其修改为数据驱动。 有关详细信息，请参阅[创建数据驱动的编码的 UI 测试](../test/creating-a-data-driven-coded-ui-test.md)。
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MTE95
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57874485"
+---
 
 1. 关闭并重新打开 IIS 管理控制台以在 UI 中显示更新的配置选项。
 
@@ -34,6 +42,6 @@
    * 如果使用主机名无法在 Visual Studio 中连接到远程主机（在后续步骤中），请测试 IP 地址以代替主机名。
 
      > [!NOTE]
-     > 如果要发布到在 Azure VM 上运行的 IIS，则必须在网络安全组中打开 Web 部署和 IIS 端口。 有关详细信息，请参阅[安装和运行 IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic)。
+     > 如果要发布到在 Azure VM 上运行的 IIS，则必须在网络安全组中打开 Web 部署和 IIS 端口。 有关详细信息，请参阅[安装和运行 IIS](/azure/virtual-machines/windows/quick-create-portal#install-web-server)。
 
 5. 将此文件复制到运行 Visual Studio 的计算机上。

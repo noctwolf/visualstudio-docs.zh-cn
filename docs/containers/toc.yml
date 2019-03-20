@@ -12,16 +12,16 @@ items:
     href: tutorial-kubernetes-tools.md
   - name: 在本地 Docker 容器中调试应用
     href: vs-azure-tools-docker-edit-and-refresh.md
-  - name: 使用 Visual Studio 将 ASP.NET 容器部署到容器注册表
+  - name: 部署到容器注册表
     href: vs-azure-tools-docker-hosting-web-apps-in-docker.md
-  - name: 使用 VirtualBox 配置 Docker 主机
-    href: vs-azure-tools-docker-setup.md
-  - name: 排查使用 Docker 进行 Visual Studio 2017 开发的问题
+  - name: 部署到 Azure App Service
+    href: docker-deploy-app-service.md
+  - name: 使用 Docker 排查 Visual Studio 开发方面的问题
     href: vs-azure-tools-docker-troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: 9269e4b0f090b170f234433ff802f41d0dd8790a
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: af94841d54c8c045af72dfc4597bae047778a5a3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525899"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160022"
