@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d4d81667bed3df6f970cd59c21286b7ef9a6a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223437"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867808"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”页
 
@@ -49,9 +49,13 @@ ms.locfileid: "57223437"
 
 如果选中，该解决方案和解决方案中执行的所有命令将始终显示在 IDE 中。 未选中时，如果该解决方案只包含一个项目，所有项目将作为独立项目创建，您不会看到在解决方案资源管理器中的解决方案或 IDE 中解决方案的执行命令。
 
+::: moniker range="vs-2017"
+
 ### <a name="save-new-projects-when-created"></a>创建时保存新项目
 
 当选中时，你可以在“新建项目”对话框中为你的项目指定位置。 如果未选中，所有新项目将创建为临时项目。 当您正在使用临时项目时，您可以创建和试验项目，无需指定磁盘位置。
+
+::: moniker-end
 
 ### <a name="warn-user-when-the-project-location-is-not-trusted"></a>当项目位置不受信任时警告用户
 

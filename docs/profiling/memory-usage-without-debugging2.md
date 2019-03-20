@@ -1,6 +1,6 @@
 ---
 title: 分析不调试的内存使用情况 | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+ms.custom: ''
 ms.date: 11/15/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a51f86da8eac527ed7744e345ff811797afcd36d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615907"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873449"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>分析不调试的内存使用情况
 
@@ -72,7 +72,7 @@ ms.locfileid: "56615907"
 
 “快照”窗格中的数字显示每个快照拍摄时内存中的字节和对象，以及快照和上一个快照之间的差异。
 
-这些数字是打开新 Visual Studio 窗口中详细的“内存使用情况”报表视图的链接。 [快照详细报表](#snapshot-details-report)显示了某个快照中的类型和实例。 [快照差异报表](#snapshot-difference-diff-reports)会比较两个快照中的类型和实例。
+这些数字是打开新 Visual Studio 窗口中详细的“内存使用情况”报表视图的链接。 [快照详细报表](#snapshot-details-reports)显示了某个快照中的类型和实例。 [快照差异报表](#snapshot-difference-diff-reports)会比较两个快照中的类型和实例。
 
   ![快照视图链接](../profiling/media/memuse__snapshotview_numbered.png "Snapshot view links")
 

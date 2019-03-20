@@ -2,7 +2,7 @@
 title: 使用分析工具衡量性能
 description: 简要了解 Visual Studio 中提供的各种诊断工具。
 ms.custom: mvc
-ms.date: 05/18/2017
+ms.date: 05/18/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c05d598d0eee46ec2d84b7d2bbf859dd455473a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611914"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873173"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入门：首先了解分析工具
 

@@ -20,14 +20,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f996e5b284393be91d4e83e3e403bdbb1073e6ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: de7e8468041e000f245bbc6678c67e4e6e825610
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909644"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982865"
 ---
-# <a name="remove-visual-studio-2017"></a>删除 Visual Studio 2017
+# <a name="remove-visual-studio"></a>删除 Visual Studio
 
 如果遇到灾难性错误，并且无法修复或卸载 Visual Studio，可运行 `InstallCleanup.exe` 工具，以删除 Visual Studio 2017 及更高版本的所有已安装实例的安装文件和产品信息。 如果修复或卸载失败，运行此工具将作为最后的解决措施，并且可能从其他 Visual Studio 安装或其他需要修复的产品中卸载功能。
 
@@ -54,7 +54,7 @@ ms.locfileid: "55909644"
 
 ## <a name="see-also"></a>请参阅
 
-* [安装 Visual Studio 2017](install-visual-studio.md)
-* [更新 Visual Studio 2017](update-visual-studio.md)
-* [修改 Visual Studio 2017](modify-visual-studio.md)
-* [卸载 Visual Studio 2017](uninstall-visual-studio.md)
+* [安装 Visual Studio](install-visual-studio.md)
+* [更新 Visual Studio](update-visual-studio.md)
+* [修改 Visual Studio](modify-visual-studio.md)
+* [卸载 Visual Studio](uninstall-visual-studio.md)

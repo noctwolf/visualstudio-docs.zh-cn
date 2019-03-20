@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 60e2fccf4b26516e88b05b5fb8fc0f8d0eb20f85
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54983724"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069692"
 ---
 # <a name="create-an-android-native-activity-app"></a>创建 Android 本机活动应用
 
@@ -31,9 +31,7 @@ ms.locfileid: "54983724"
 
 在本教程中，首先将创建一个新的 Android 本机活动项目，然后在适用于 Android 的 Visual Studio 仿真程序中生成并运行默认应用。
 
-### <a name="to-create-a-new-project"></a>创建新项目
-
-1. 打开 Visual Studio。 在菜单栏上，依次选择“文件” > “新建” > “项目”。
+1. 在 Visual Studio 中，选择“文件” > “新建” > “项目”。
 
 2. 在“新建项目”对话框中，在“模板”下，选择“Visual C++” > “跨平台”，然后选择“本机活动应用程序 (Android)”模板。
 

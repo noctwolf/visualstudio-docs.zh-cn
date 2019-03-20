@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c2294ee956595eea051b9b04906c446a82b58cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628983"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870287"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio 中的部署概述
 
@@ -35,7 +35,7 @@ ms.locfileid: "56628983"
 - [Azure 应用服务](#azure-app-service)
 - [Azure 虚拟机](#azure-virtual-machines)
 - [文件系统](#file-system)
-- [自定义目标（如 IIS、FTP 等）](#custom-targets)，包括所有任意的 Web 服务器。
+- [自定义目标（如 IIS、FTP 等）](#custom-targets-iis-ftp)，包括所有任意的 Web 服务器。
 
 在“发布”选项卡上，可以选择现有发布配置文件、导入现有发布配置文件或使用此处所述的选项新建发布配置文件。 若要查看教程了解 IDE 中针对不同应用类型的发布选项，请参阅[初探部署](../deployment/deploying-applications-services-and-components.md)。
 

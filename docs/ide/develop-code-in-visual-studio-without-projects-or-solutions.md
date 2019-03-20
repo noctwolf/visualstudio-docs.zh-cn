@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ed08d8d94fbf94b8be3d1bf4b11eb116ceb6d4d1
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718542"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194945"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中开发代码而无需创建项目或解决方案
 
@@ -103,7 +103,7 @@ ms.locfileid: "56718542"
 
 ### <a name="codebases-that-contain-c-code"></a>包含 C++ 代码的代码库
 
-有关在 Visual Studio 中打开 C++ 代码而无需创建解决方案或项目的信息，请参阅 [C++ 的打开文件夹项目](/cpp/ide/non-msbuild-projects)。
+有关在 Visual Studio 中打开 C++ 代码而无需创建解决方案或项目的信息，请参阅 [C++ 的打开文件夹项目](/cpp/build/open-folder-projects-cpp)。
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>包含 Visual Studio 项目的代码库
 
@@ -118,6 +118,6 @@ ms.locfileid: "56718542"
 ## <a name="see-also"></a>请参阅
 
 - [自定义生成和调试任务](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [C++ 的打开文件夹项目](/cpp/ide/non-msbuild-projects)
-- [C++ 中的 CMake 项目](/cpp/ide/cmake-tools-for-visual-cpp)
+- [C++ 的打开文件夹项目](/cpp/build/open-folder-projects-cpp)
+- [C++ 中的 CMake 项目](/cpp/build/cmake-projects-in-visual-studio)
 - [在代码和文本编辑器中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)

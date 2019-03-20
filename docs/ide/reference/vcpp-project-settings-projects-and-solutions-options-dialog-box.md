@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f35f9dfddeb905277084de9f20d46daf43d69f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dd44ef0a239f85078856c785ea4b5e2e6050b46e
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913858"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194880"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”->“VC++ 项目设置”
 使用此对话框，可以定义与记录、性能和支持文件类型相关的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 生成和项目设置。
@@ -93,5 +93,5 @@ ms.locfileid: "55913858"
 
 ## <a name="see-also"></a>请参阅
 
-- [生成 C/C++ 程序](/cpp/build/building-c-cpp-programs)
+- [生成 C/C++ 程序](/cpp/build/projects-and-build-systems-cpp)
 - [C/C++ 生成参考](/cpp/build/reference/c-cpp-building-reference)

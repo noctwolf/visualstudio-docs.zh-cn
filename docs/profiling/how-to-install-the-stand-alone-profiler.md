@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d28825d03c6deeeaa0ee33ccf62620398e1d52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1f69e73274429a0da032760ab563d5aadf71a655
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612772"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867251"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>如何：安装独立探查器
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供了一个基于命令行的独立探查器，它可在没有安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 的情况下运行。 当计算机没有安装或无法安装开发环境时会发生这种情况。 例如，不应在生产 Web 服务器上安装开发环境。
@@ -26,7 +26,7 @@ ms.locfileid: "56612772"
 
 ### <a name="to-install-the-stand-alone-profiler"></a>安装独立探查器
 
-1. 下载[用于 Visual Studio 的性能工具](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio-2017)。
+1. 下载[用于 Visual Studio 的性能工具](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio)。
 
 1. 在下载性能工具的位置，找到并运行独立配置文件安装程序(vs_standaloneprofiler.exe)。
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: e5ca90c5b4cf6922b917a6255ba69395abac724d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f2d055cf7bb5294095baeef6591ac88389a2fe2b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953008"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869923"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>使用 Emulator Express 在本地计算机上运行和调试 Azure 云服务
 通过使用 Emulator Express，可以测试和调试云服务，而不需要以管理员身份运行 Visual Studio。 可以将项目设置指定为根据云服务的要求使用 Emulator Express 或完整版模拟器。 有关完整模拟器的详细信息，请参阅 [Run an Azure Application in the Compute Emulator](/azure/storage/common/storage-use-emulator)（在计算模拟器中运行 Azure 应用程序）。
@@ -48,4 +48,4 @@ ms.locfileid: "56953008"
 - 适用于 Azure 计算模拟器的任何限制也适用于 Emulator Express。 例如，每个部署的角色实例数不能超过 50 个。 有关 Azure 计算模拟器的详细信息，请参阅[在计算模拟器中运行 Azure 应用程序](http://go.microsoft.com/fwlink/p/?LinkId=623050)。
 
 ## <a name="next-steps"></a>后续步骤
-[调试 Azure 云服务](https://msdn.microsoft.com/library/azure/ee405479.aspx)
+[调试 Azure 云服务](vs-azure-tools-debugging-cloud-services-overview.md)
