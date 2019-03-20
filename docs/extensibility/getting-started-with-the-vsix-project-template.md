@@ -1,6 +1,6 @@
 ---
 title: VSIX 项目模板入门 |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, VSIX project template
@@ -10,14 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3de9dfd81b5b694e7163ea8e1a4e52240028e94
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b6176fda41b16a092b52e83e0ce894e1d1898e0a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704184"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194316"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>开始使用 VSIX 项目模板
+
 若要创建扩展或包部署的现有扩展，可以使用 VSIX 项目模板。 VSIX 项目模板具有 Visual Basic 和 Visual C# 版本中，并在 Visual Studio SDK 的一部分安装。
 
  VSIX 项目模板中只包含的*source.extension.vsixmanifest*文件，其中包含有关扩展和资产发布时附带的信息。
@@ -25,51 +26,62 @@ ms.locfileid: "56704184"
  若要查找 VSIX 项目模板，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
 ## <a name="deploy-a-custom-project-template-using-the-vsix-project-template"></a>部署自定义项目模板使用 VSIX 项目模板
+
  以下步骤演示如何使用 VSIX 项目打包可以与其他开发人员共享，也可以将上传到 Visual Studio 库的项目模板。
 
-1.  创建项目模板。
+1. 创建项目模板。
 
-    1.  打开从其创建模板的项目。 此项目可以是任何项目类型。
+    1. 打开从其创建模板的项目。 此项目可以是任何项目类型。
 
-    2.  在“项目”菜单上，单击“导出模板”。 完成该向导的步骤。
+    2. 在“项目”菜单上，单击“导出模板”。 完成该向导的步骤。
 
-         一个 *.zip*中创建文件 *%USERPROFILE%\My Documents\Visual Studio\<版本 > \My Exported Templates\\*。
+         一个 *.zip*中创建文件 *%USERPROFILE%\My Documents\Visual Studio {version} \My 导出模板\\*。
 
-2.  创建一个空的 VSIX 项目。
+2. 创建一个空的 VSIX 项目。
 
-     在 **文件** 菜单上，单击 **新建** ，然后单击 **项目**。 选择任一**Visual Basic**或**Visual C#**。 在所选节点下，选择**扩展性**，然后选择**VSIX 项目**。
+     选择“文件” > “新建” > “项目”。 在搜索框中，键入"vsix"并选择**C#** 或**Visual Basic**版本**VSIX 项目**。
 
-3.  添加 *.zip*到项目文件。 设置其**复制到输出目录**属性设置为`Copy Always`。
+3. 添加 *.zip*到项目文件。 设置其**复制到输出目录**属性设置为`Copy Always`。
 
-4.  在中**解决方案资源管理器**，双击*source.extension.vsixmanifest*文件中打开**VSIX 清单设计器**，然后进行以下更改：
+4. 在中**解决方案资源管理器**，双击*source.extension.vsixmanifest*文件中打开**VSIX 清单设计器**，然后进行以下更改：
 
-    -   设置**产品名称**字段**我的项目模板**。
+    - 设置**产品名称**字段**我的项目模板**。
 
-    -   设置**产品 ID**字段**MyProjectTemplate-1**。
+    - 设置**产品 ID**字段**MyProjectTemplate-1**。
 
-    -   设置**作者**字段**Fabrikam**。
+    - 设置**作者**字段**Fabrikam**。
 
-    -   设置**描述**字段**我的项目模板**。
+    - 设置**描述**字段**我的项目模板**。
 
-    -   在中**资产**部分中，添加**Microsoft.VisualStudio.ProjectTemplate**类型，并将其路径设置为的名称 *.zip*文件。
+    - 在中**资产**部分中，添加**Microsoft.VisualStudio.ProjectTemplate**类型，并将其路径设置为的名称 *.zip*文件。
 
-5.  保存并关闭*source.extension.vsixmanifest*文件。
+5. 保存并关闭*source.extension.vsixmanifest*文件。
 
-6.  生成项目。
+6. 生成项目。
 
-7.  在输出目录中，双击 *.vsix*文件。
+7. 在输出目录中，双击 *.vsix*文件。
 
-8.  一个**VSIX 安装程序**会显示消息框。 按照说明安装扩展。
+8. 一个**VSIX 安装程序**会显示消息框。 按照说明安装扩展。
 
 9. 关闭 Visual Studio，然后重新打开它。
 
+::: moniker range="vs-2017"
+
 10. 选择**扩展和更新**(在**工具**菜单)，然后选择**模板**类别。 其中一个可用的扩展应为**我的项目模板**。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+10. 选择**管理扩展**(在**扩展**菜单)，然后选择**模板**类别。 其中一个可用的扩展应为**我的项目模板**。
+
+::: moniker-end
 
 11. 新的项目模板中显示**新的项目**原始项目模板的同一位置中的对话框。 例如，如果创建一个名为模板**VB 控制台**从 Visual Basic 控制台应用程序**VB 控制台**将显示在 Visual Basic 中为同一窗格**控制台应用程序**模板。
 
 ### <a name="to-specify-the-location-of-the-template-in-the-new-project-dialog-box"></a>若要在新建项目对话框框中指定模板的位置
 
-1. 模板文件夹位于 *{Visual Studio 安装路径} \Common7\IDE\ProjectTemplates*和<em>{Visual Studio 安装路径} \Common7\IDE\ItemTemplates} 目录。顶部的名称级别中的部分 **新的项目</em>* 对话框不完全匹配的模板文件夹的名称。 如果它们不同，使用模板文件夹的名称。
+1. 模板文件夹位于 *{Visual Studio 安装路径} \Common7\IDE\ProjectTemplates*并 *{Visual Studio 安装路径} \Common7\IDE\ItemTemplates*目录。 中的顶级部分的名称**新的项目**对话框不完全匹配的模板文件夹的名称。 如果它们不同，使用模板文件夹的名称。
 
     更改 *.vsix*文件扩展名为 *.zip*，然后打开该文件。
 

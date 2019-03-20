@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910e1890fd07c0888c47735451cba29aa08ec916
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160701"
+ms.locfileid: "58194731"
 ---
 # <a name="create-your-first-extension-hello-world"></a>创建第一个扩展：Hello World
 
@@ -44,7 +44,7 @@ ms.locfileid: "58160701"
 
 ::: moniker range="vs-2017"
 
-步骤 1。 从**文件**菜单中，选择**新项目**。
+步骤 1。 从“文件”菜单中选择“新建” > “项目”。
 
 步骤 2。 在右上角的搜索框中，键入"vsix"并选择视觉对象C# **VSIX 项目**。 输入"HelloWorld"**名称**对话框并选择底部**确定**。
 
@@ -58,7 +58,7 @@ ms.locfileid: "58160701"
 
 ::: moniker range=">=vs-2019"
 
-步骤 1。 从**文件**菜单中，选择**新项目**。 搜索"vsix"并选择视觉对象C# **VSIX 项目**，然后**下一步**。
+步骤 1。 从“文件”菜单中选择“新建” > “项目”。 搜索"vsix"并选择视觉对象C# **VSIX 项目**，然后**下一步**。
 
 步骤 2。 输入"HelloWorld"**项目名称**，然后选择**创建**。
 
@@ -84,7 +84,7 @@ ms.locfileid: "58160701"
 
 ## <a name="modify-the-source-code"></a>修改源代码
 
-在此点、 命令和按钮文本是自动生成的不是十分有趣。 如果你想要进行更改，可以修改的 VSCT 文件和 CS 文件。
+此时，命令和按钮文本是自动生成并不是十分有趣。 如果你想要进行更改，可以修改的 VSCT 文件和 CS 文件。
 
 * VSCT 文件是在其中您可以重命名你的命令，以及定义何处 Visual Studio 命令系统中。 在探索 VSCT 文件，您会注意到其中的注释解释 VSCT 代码控件的哪个每个部分。
 

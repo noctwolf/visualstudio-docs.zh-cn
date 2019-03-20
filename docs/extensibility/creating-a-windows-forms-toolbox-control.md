@@ -1,6 +1,6 @@
 ---
 title: 创建 Windows 窗体工具箱控件 |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - winforms
@@ -12,31 +12,35 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 725d35d957e1b7aef285e0d666dc4ea15e5ceefd
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: a3c423361b860c5769d9555409b44973fdc25896
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872996"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194572"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
-Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控件项模板允许你创建的控件，将自动添加到**工具箱**时安装该扩展。 本主题演示如何使用模板创建简单的计数器控件，可以将它们分发给其他用户。
+
+Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控件项目模板允许你创建**工具箱**时安装该扩展会自动添加的控件。 本演练演示如何使用模板来创建可以分发给其他用户的简单计数器控件。
 
 ## <a name="prerequisites"></a>系统必备
+
 从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
-## <a name="create-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
+## <a name="create-the-toolbox-control"></a>创建工具箱控件
+
 Windows 窗体工具箱控件模板创建未定义的用户控件，并提供了将控件添加到所需的功能的所有**工具箱**。
 
 ### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>使用 Windows 窗体工具箱控件创建的扩展
 
-1. 创建一个名为的 VSIX 项目`MyWinFormsControl`。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C#** > **扩展性**。
+1. 创建一个名为的 VSIX 项目`MyWinFormsControl`。 您可以发现中的 VSIX 项目模板**新的项目**对话框中的，通过搜索"vsix"。
 
 2. 项目打开后，添加**Windows 窗体工具箱控件**项模板名为`Counter`。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项**对话框中，转到**Visual C#** > **扩展性**，然后选择**Windows 窗体工具箱控件**
 
 3. 这将添加一个用户控件， `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>放置在控件**工具箱**，和一个**Microsoft.VisualStudio.ToolboxControl**资产部署的 VSIX 清单中的项。
 
 ### <a name="build-a-user-interface-for-the-control"></a>构建用户界面控件
+
 `Counter`控件需要两个子控件：<xref:System.Windows.Forms.Label>若要显示的当前计数，和一个<xref:System.Windows.Forms.Button>将计数重置为 0。 需要没有其他子控件，因为调用方将以编程方式递增计数器。
 
 #### <a name="to-build-the-user-interface"></a>构建用户界面
@@ -58,6 +62,7 @@ Windows 窗体工具箱控件模板创建未定义的用户控件，并提供了
     |`Button1`|**文本**|重置|
 
 ### <a name="code-the-user-control"></a>代码的用户控件
+
 `Counter`控件将公开一个方法，用于递增计数器，每当增加计数器的数值，将引发一个事件**重置**按钮和用于存储当前计数、 显示文本，以及是否要显示的三个属性或隐藏**重置**按钮。 `ProvideToolboxControl` 特性确定 **控件会出现在“工具箱”**`Counter` 的什么位置。
 
 #### <a name="to-code-the-user-control"></a>编写用户控件的代码
@@ -146,13 +151,14 @@ Windows 窗体工具箱控件模板创建未定义的用户控件，并提供了
     ```
 
 ### <a name="test-the-control"></a>测试控件
+
  若要测试**工具箱**控制、 首次在开发环境中进行测试，然后编译的应用程序进行测试。
 
 #### <a name="to-test-the-control"></a>测试控件
 
-1. 按 F5 。
+1. 按**F5**到**开始调试**。
 
-    这将生成项目并打开 Visual Studio 的安装有控件的第二个实验实例。
+    此命令生成项目并打开 Visual Studio 的安装有控件的第二个实验实例。
 
 2. 在 Visual Studio 的实验实例中，创建**Windows 窗体应用程序**项目。
 
@@ -199,16 +205,18 @@ Windows 窗体工具箱控件模板创建未定义的用户控件，并提供了
 
 16. 单击**测试**直到计数器达到**5**关闭消息框每次。
 
-    **重置**按钮再次出现。
+    **重置**按钮随即再次显示。
 
 17. 单击“重置” 。
 
     该计数器将重置为**0**。
 
 ## <a name="next-steps"></a>后续步骤
+
 在生成**工具箱**控件，Visual Studio 将创建名为的文件*ProjectName.vsix*你的项目的 \bin\debug\ 文件夹中。 可以将该控件部署通过上传 *.vsix*文件到网络或网站。 当用户在打开 *.vsix*安装文件，该控件并将其添加到 Visual Studio**工具箱**用户的计算机上。 或者，可以上传 *.vsix*的文件[Visual Studio Marketplace](https://marketplace.visualstudio.com/) ，以便用户可以通过在浏览找到它**工具** >  **扩展和更新**对话框。
 
 ## <a name="see-also"></a>请参阅
+
 - [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
 - [创建 WPF 工具箱控件](../extensibility/creating-a-wpf-toolbox-control.md)
 - [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)

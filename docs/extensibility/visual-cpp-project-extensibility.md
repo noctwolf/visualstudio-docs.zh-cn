@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d4a4c4038c34f2cfa1dc2b4fcc022b24c135aef
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868138"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195172"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 项目系统可扩展性和工具集集成
 
@@ -418,7 +418,7 @@ Visual c + + 项目系统基于[VS 项目系统](https://github.com/Microsoft/VS
 
 常规设计信息，请参阅[平台扩展性 – 第 1 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/)并[平台扩展性 – 第 2 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/)。
 
-简单来说，属性页中看到**项目属性**由定义 c + + 项目对话框*规则*文件。 规则文件指定要显示在属性页上，以及如何在项目中保存的位置和文件属性的集。 规则文件是使用 Xaml 格式的.xml 文件。 使用其进行序列化的类型所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 有关使用项目中的规则文件的详细信息，请参阅[属性页 XML 规则文件](/cpp/ide/property-page-xml-files)。
+简单来说，属性页中看到**项目属性**由定义 c + + 项目对话框*规则*文件。 规则文件指定要显示在属性页上，以及如何在项目中保存的位置和文件属性的集。 规则文件是使用 Xaml 格式的.xml 文件。 使用其进行序列化的类型所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 有关使用项目中的规则文件的详细信息，请参阅[属性页 XML 规则文件](/cpp/build/reference/property-page-xml-files)。
 
 必须将规则文件添加到`PropertyPageSchema`项组：
 
@@ -636,8 +636,8 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 ## <a name="additional-resources"></a>其他资源
 
-Microsoft 生成系统 ([MSBuild](../msbuild/msbuild.md)) 为项目文件中提供的生成引擎和可扩展的基于 XML 的格式。 您应了解使用 basic [MSBuild 概念](../msbuild/msbuild-concepts.md)和如何[Visual c + + 的 MSBuild](/cpp/build/msbuild-visual-cpp-overview)工作原理，若要将 Visual c + + 扩展项目系统。
+Microsoft 生成系统 ([MSBuild](../msbuild/msbuild.md)) 为项目文件中提供的生成引擎和可扩展的基于 XML 的格式。 您应了解使用 basic [MSBuild 概念](../msbuild/msbuild-concepts.md)和如何[Visual c + + 的 MSBuild](/cpp/build/reference/msbuild-visual-cpp-overview)工作原理，若要将 Visual c + + 扩展项目系统。
 
 Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供了扩展 CPS 和 Visual c + + 项目系统使用的 Api。 CPS 如何使用 MEF 的概述，请参阅[CPS，MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)中[VSProjectSystem 概述 MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)。
 
-您可以自定义现有的生成系统，以添加生成步骤或新的文件类型。 有关详细信息，请参阅[MSBuild （Visual c + +） 概述](/cpp/build/msbuild-visual-cpp-overview)并[使用项目属性](/cpp/ide/working-with-project-properties)。
+您可以自定义现有的生成系统，以添加生成步骤或新的文件类型。 有关详细信息，请参阅[MSBuild （Visual c + +） 概述](/cpp/build/reference/msbuild-visual-cpp-overview)并[使用项目属性](/cpp/build/working-with-project-properties)。

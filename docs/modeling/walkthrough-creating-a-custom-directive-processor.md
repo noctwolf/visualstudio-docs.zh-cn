@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4b46937e8b30dec1f9e2a78d181cd53692b7d1b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910423"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195120"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>演练：创建自定义指令处理器
 
@@ -42,7 +42,7 @@ ms.locfileid: "55910423"
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-自定义指令处理器将变量和属性添加到生成转换类。 你编写的指令使用 <xref:System.CodeDom> 类创建引擎添加到生成转换类的代码。 <xref:System.CodeDom>类中 Visual C# 或 Visual Basic 中，具体取决于中指定的语言创建代码`language`参数的`template`指令。 指令处理器的语言和访问指令处理器的文本模板的语言不必一致。
+自定义指令处理器将变量和属性添加到生成转换类。 您编写的指令使用 <xref:System.CodeDom> 类创建引擎添加到生成转换类的代码。 <xref:System.CodeDom>类中 Visual C# 或 Visual Basic 中，具体取决于中指定的语言创建代码`language`参数的`template`指令。 指令处理器的语言和访问指令处理器的文本模板的语言不必一致。
 
 指令创建的代码如下所示：
 
@@ -331,7 +331,7 @@ End Property
             {
                 XmlDocument d = new XmlDocument();
 
-                using (XmlTextReader reader = new XmlTextReader(fileName))
+                using (XmlReader reader = XmlReader.Create(fileName))
                 {
                     try
                     {
@@ -581,7 +581,7 @@ End Property
 
                 Dim d As XmlDocument = New XmlDocument()
 
-                Using reader As XmlTextReader = New XmlTextReader(fileName)
+                Using reader As XmlReader = XmlReader.Create(fileName)
 
                     Try
                         d.Load(reader)
