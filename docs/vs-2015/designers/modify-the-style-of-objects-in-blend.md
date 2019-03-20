@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9d010b8218dca94e4d9bcbf1e7d48088758f5ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d488149302e21f6e46f1c20a32fb7aecefe8337
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781370"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869297"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>修改 Blend 中对象的样式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54781370"
 ##  <a name="Brushes"></a>画笔：修改对象的外观  
  如果要更改对象外观，请向它应用画笔。  
   
- **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [画笔编辑器](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor)。  
+ 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [画笔工具栏](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor)。  
   
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>在对象上绘制重复图像或图案  
  可使用平铺画笔在对象上绘制重复图像或图案。  
@@ -55,7 +55,7 @@ ms.locfileid: "54781370"
   
  ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
- **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [平铺画笔](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes)。  
+ 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [平铺画笔](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes)。  
   
 ##  <a name="Styles"></a>样式和模板：在控件之间创建一致的外观  
  可以一次性设计控件的外观和行为，然后将该设计应用于其他控件，以便不必分别进行维护。  
@@ -92,9 +92,7 @@ ms.locfileid: "54781370"
 >   
 >  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [创建样式](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95)。  
-  
- **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Expression Blend 中创建控件模板](http://msdn.microsoft.com/expression/cc263912.aspx)。  
+ 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [创建样式](https://www.youtube.com/watch?v=W8YdXDPeKdc)。  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>将样式或模板应用于控件  
  在[对象和时间线](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57)面板中右键单击某个对象，选择“编辑模板”，然后选择“应用资源”。  
@@ -109,14 +107,14 @@ ms.locfileid: "54781370"
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
- **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [管理 WPF 控件的状态](https://www.youtube.com/watch?v=m0PlkF5i6uw)。  
+ 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [管理 WPF 控件的状态](https://www.youtube.com/watch?v=m0PlkF5i6uw)。  
   
 ##  <a name="Resources"></a>资源：创建颜色、样式和模板，并在以后重复使用它们  
  可以将项目中的几乎所有对象转换为资源。 资源只是可以在应用程序中的不同位置重复使用的对象。 例如，可以一次性创建一种颜色，使它成为资源，然后在多个对象上使用该颜色。 若要更改所有这些对象的颜色，只需更改该颜色资源。  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
- **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [简要了解资源](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources)。  
+ 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [简要了解资源](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources)。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Blend for Visual Studio 创建 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

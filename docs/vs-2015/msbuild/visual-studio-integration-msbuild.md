@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83f9bf8b0e427fd3e0357a5cf9e69d797dfc4782
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763305"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194504"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio 承载有 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]
   
  自定义希望在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中加载和生成的项目和 .targets 文件时，应当考虑 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 承载的特定方面，本主题对此进行了描述。 这些内容将帮助你确保 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中诸如 IntelliSense 和调试这样的功能对你的自定义项目有效。  
   
- 有关 C++ 项目的信息，请参阅[项目文件](http://msdn.microsoft.com/library/5261cf45-3136-40a6-899e-dc1339551401)。  
+ 有关 C++ 项目的信息，请参阅[项目文件](/cpp/build/reference/project-files)。  
   
 ## <a name="project-file-name-extensions"></a>项目文件扩展名  
  MSBuild.exe 可识别与 .*proj 模式匹配的任何项目文件扩展名。 但是，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 只识别其中一部分项目文件扩展名，这些扩展名决定了将会加载项目的特定于语言的项目系统。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 没有基于非特定语言 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 的项目系统。  

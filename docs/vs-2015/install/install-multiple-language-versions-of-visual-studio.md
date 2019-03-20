@@ -12,17 +12,17 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a0f6cd1d963427730ddda62628c3f1d064ed3541
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 189430a1ff22450f887cc8e6903db5537b137f17
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761480"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872077"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>安装 Visual Studio 的多个语言版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 的最新文档，请参阅[在 Visual Studio 2017 中安装语言包](https://docs.microsoft.com/visualstudio/install/install-visual-studio#install-language-packs)。
+Visual Studio 2017 的最新文档，请参阅[在 Visual Studio 2017 中安装语言包](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-6---install-language-packs-optional)。
 
 通过安装一个或多个语言包，可以在其他语言中运行 Visual Studio 2015，同一台计算机上。 你必须获取用于你想要安装的每种语言的单独语言包。
 

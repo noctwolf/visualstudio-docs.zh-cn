@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3e5a1ce334f0d5cb567eb8c4cefd27f1bca408b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9b12906c5a1a2f8e2473d2b0088600830a291744
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752961"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151175"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI 响应能力
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,7 +106,7 @@ ms.locfileid: "54752961"
   
     -   使用 [查看诊断会话时间线](#Ruler) 查看 [标记要分析的代码](#ProfileMark)、应用生命周期事件和这些事件的关联时间线以及其他图中数据的时间线。  
   
-    -   使用 [CPU utilization graph](#CPUutilization) 查看关于特定时间段内 CPU 活动及其处理的工作类型的一般信息。 CPU 活动过多的时间段更有可能导致响应能力问题和丢弃的帧。  
+    -   使用 [CPU utilization graph](#CPUUtilization) 查看关于特定时间段内 CPU 活动及其处理的工作类型的一般信息。 CPU 活动过多的时间段更有可能导致响应能力问题和丢弃的帧。  
   
     -   如果你正在开发游戏或富媒体应用，请使用 [查看可视吞吐量 (FPS)](#VisualThroughput) 确定帧速率下降的时间段。  
   

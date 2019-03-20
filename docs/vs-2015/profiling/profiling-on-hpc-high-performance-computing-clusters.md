@@ -21,17 +21,17 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e952f9611b7bdb4d96e8a50b502ae15e1e6ce528
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802308"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867911"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>针对 HPC（高性能计算）群集进行分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-可以使用 [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] 或 [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] 分析工具的采样方法对 Microsoft Windows HPC 群集的计算节点进行分析。 有关 HPC 的详细信息，请参阅 Microsoft 网站上的 [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393)。  
+可以使用 [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] 或 [!INCLUDE[vsUltExt](../includes/vsultext-md.md)] 分析工具的采样方法对 Microsoft Windows HPC 群集的计算节点进行分析。 有关 HPC 的详细信息请参阅[大型计算： HPC 和批处理](https://azure.microsoft.com/solutions/big-compute/)Microsoft Web 站点上。  
   
 ## <a name="prerequisites"></a>系统必备  
  若要对 HPC 计算节点进行分析，必须执行以下操作：  
@@ -55,8 +55,8 @@ ms.locfileid: "54802308"
 |||  
 |-|-|  
 |*%HeadNode%*|群集的头节点的名称。|  
-|*%FxPath%*|[!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 安装程序的路径。 在[!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]安装介质的路径是：WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|分析工具安装程序的独立版本的路径。 在[!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]安装介质的路径是：Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|[!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 安装程序的路径。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 安装媒体上，路径是：WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|分析工具安装程序的独立版本的路径。 在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 安装媒体上，路径是：Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>对 HPC 计算节点进行分析  
  可通过使用 HPC 性能向导指定 HPC 群集和目标信息，来配置分析会话。 可以在性能会话属性页中设置其他选项。 分析工具会自动部署所需目标二进制文件并启动探查器和 HPC 应用程序。  
@@ -137,7 +137,7 @@ ms.locfileid: "54802308"
   
 ### <a name="advanced-properties"></a>高级属性  
   
-|Property|说明|  
+|属性|说明|  
 |--------------|-----------------|  
 |**项目名称**|当前 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 项目或解决方案的名称。|  
 |**探查器停止时进行清理**|为 true 时，删除已部署到执行目录的二进制文件。 在此步骤中不会删除用户程序创建的文件和目录。 如果执行目录和部署目录是由 IDE 创建的，则 IDE 会尝试删除它们，但是如果它们包含不是由 IDE 部署的文件，则 IDE 不会执行此操作。|  

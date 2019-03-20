@@ -1,5 +1,5 @@
 ---
-title: 如何：创建项模板 |Microsoft Docs
+title: 如何：创建项模板 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,21 +14,21 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09d81f82584e7ab2002d9338999927e1ac3e09bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788241"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867914"
 ---
 # <a name="how-to-create-item-templates"></a>如何：创建项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题[第一个过程](../ide/how-to-create-item-templates.md#export_template)中的步骤演示如何使用“导出模板”向导创建项模板。 如果模板将由多个文件组成，请参阅[如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)。  
+本主题[第一个过程](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box)中的步骤演示如何使用“导出模板”向导创建项模板。 如果模板将由多个文件组成，请参阅[如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)。  
   
- 向导执行大量工作为你创建基本模板，但在许多情况下，你将需要在导出模板后手动修改 .vstemplate 文件。 例如，如果希望该项显示在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用项目的“添加新项”对话框中，则需要执行一些额外步骤。 本主题中的[第二个过程](../ide/how-to-create-item-templates.md#modify_template)有助于完成该任务。  
+ 向导执行大量工作为你创建基本模板，但在许多情况下，你将需要在导出模板后手动修改 .vstemplate 文件。 例如，如果希望该项显示在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用项目的“添加新项”对话框中，则需要执行一些额外步骤。 本主题中的[第二个过程](#to-enable-the-item-template-to-be-used-in-a-store-project)有助于完成该任务。  
  
- 在某些情况下，你可能希望或需要从头开始手动创建项模板。 [第三个过程](../ide/how-to-create-item-templates.md#create_template)演示如何做到这一点。  
+ 在某些情况下，你可能希望或需要从头开始手动创建项模板。 [第三个过程](#to-enable-templates-for-specific-project-sub-types)演示如何做到这一点。  
   
  若要了解可以在 .vstemplate 文件中使用的元素，请参阅 [Visual Studio 模板架构引用](../extensibility/visual-studio-template-schema-reference.md)。  
   

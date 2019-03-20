@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a0964e390455b2225ec35debe79cdc79c38ed931
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768875"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194556"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目标概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "54768875"
 >  在 Visual Studio Express 版中，不能通过“新建项目”对话框设置目标框架。
 
 ## <a name="resolving-system-and-user-assembly-references"></a>解析系统和用户程序集引用
- 若要以 .NET Framework 版本为目标，必须先安装相应的程序集引用。 .NET Framework 2.0 版、3.0 版和 3.5 版的程序集引用包含在 .NET Framework 3.5 SP1 中，可从 [Microsoft 下载中心、Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=227602) 网站进行下载。 也可在 [Visual Studio 下载](http://go.microsoft.com/fwlink/?LinkId=179687)网站下载 .NET Framework 3.5 Client Profile、.NET Framework 4、.NET Framework 4 Client Profile 和 Silverlight 的程序集引用。
+ 若要以 .NET Framework 版本为目标，必须先安装相应的程序集引用。 .NET Framework 2.0 版、3.0 版和 3.5 版的程序集引用包含在 .NET Framework 3.5 SP1 中，可从 [Microsoft 下载中心、Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) 网站进行下载。 也可在 [Visual Studio 下载](http://go.microsoft.com/fwlink/?LinkId=179687)网站下载 .NET Framework 3.5 Client Profile、.NET Framework 4、.NET Framework 4 Client Profile 和 Silverlight 的程序集引用。
 
 > [!NOTE]
 >  .NET Framework 客户端配置文件是 .NET Framework 的子集，可提供一组有限的库和功能。 有关客户端配置文件的详细信息，请参阅 [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。
@@ -79,4 +79,6 @@ ms.locfileid: "54768875"
  当面向 .NET Framework 3.5 或更高版本时，会自动添加对 System.Core 的引用和 System.Linq 的项目级导入（仅 Visual Basic 中）。 若要使用 LINQ 功能，还必须打开 Option Infer（仅 Visual Basic 中）。 如果将目标更改为早期的 .NET Framework 版本，将自动删除相关引用和导入。 有关详细信息，请参阅[如何：创建 LINQ 项目](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2)。
 
 ## <a name="see-also"></a>请参阅
- [多目标](../msbuild/msbuild-multitargeting-overview.md) [ASP.NET Web 项目的.NET Framework 多目标](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)[平台兼容性和系统要求](http://www.microsoft.com/visualstudio/eng/products/compatibility)
+[多目标](../msbuild/msbuild-multitargeting-overview.md)
+[ASP.NET Web 项目的.NET Framework 多目标](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
+[平台兼容性和系统要求](/visualstudio/productinfo/vs2015-compatibility-vs)
