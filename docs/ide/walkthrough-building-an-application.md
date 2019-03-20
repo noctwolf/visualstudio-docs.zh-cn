@@ -169,7 +169,7 @@ ms.locfileid: "57323940"
 
 有关详细信息，请参阅[如何：更改生成输出目录](../ide/how-to-change-the-build-output-directory.md)和[在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)。
 
-### <a name="specify-a-release-build-for-visual-basic"></a>指定 Visual Studio 的版本生成
+### <a name="specify-a-release-build-for-visual-basic"></a>指定 Visual Basic 的版本生成
 
 1. 打开“项目设计器”。
 
