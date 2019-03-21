@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ba14e170a07b3ac1378087f1cebd31ab7c7df8a
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195172"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268733"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 项目系统可扩展性和工具集集成
 
@@ -416,7 +416,7 @@ Visual c + + 项目系统基于[VS 项目系统](https://github.com/Microsoft/VS
 
 ### <a name="project-property-pages"></a>项目属性页
 
-常规设计信息，请参阅[平台扩展性 – 第 1 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/)并[平台扩展性 – 第 2 部分](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/)。
+常规设计信息，请参阅[Framework 多目标的 VC + + 项目](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/)。
 
 简单来说，属性页中看到**项目属性**由定义 c + + 项目对话框*规则*文件。 规则文件指定要显示在属性页上，以及如何在项目中保存的位置和文件属性的集。 规则文件是使用 Xaml 格式的.xml 文件。 使用其进行序列化的类型所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 有关使用项目中的规则文件的详细信息，请参阅[属性页 XML 规则文件](/cpp/build/reference/property-page-xml-files)。
 
