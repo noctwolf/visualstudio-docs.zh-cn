@@ -1,5 +1,5 @@
 ---
-title: 演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序 |Microsoft Docs
+title: 演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a1b6b456ead22ce68cd336f7278fa0f81d32d81
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803726"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195068"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>演练：创建一个 WPF 桌面应用程序连接到 Azure 移动服务
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程序，该程序使用 Azure 移动服务来存储和提供数据。  
@@ -484,7 +484,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
     > [!NOTE]
     >  你可能需要更改该 URL 的数字部分。 Microsoft Azure 要求每个移动服务的 URL 均唯一。  
   
-     这将设置到服务的 URL *https://wpfquickstart01.azure-mobile.net/*。  
+     这将设置到服务的 URL `https://wpfquickstart01.azure-mobile.net/`。  
   
 4.  在“数据库”  列表中，选择一个数据库。 由于它可能是不常使用的应用程序，因此建议选择“创建免费的 20MB SQL 数据库”  选项，或选择已与你的订阅关联的免费数据库。  
   
