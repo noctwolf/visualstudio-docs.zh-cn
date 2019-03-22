@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 969c82152c1e781da83fe4da20e49fdcf8dda375
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 658fb63227f4c4532038d537bde7cc10ca2c4f5e
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617049"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322606"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 元素
   自定义数据项中键/值格式的 SharePoint 项目项与相关联。 键和值必须为字符串。
@@ -55,10 +55,10 @@ ms.locfileid: "56617049"
 
 |||
 |-|-|
-|**命名空间**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**命名空间**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**架构名称**|SharePoint 项目项架构|
 |**验证文件**|ProjectItemModelSchema.xsd|
-|**可以为空**|否|
+|**可以为空**|No|
 
 ## <a name="see-also"></a>请参阅
 - [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)

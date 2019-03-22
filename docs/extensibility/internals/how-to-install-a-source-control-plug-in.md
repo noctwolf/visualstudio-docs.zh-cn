@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cedadf6cc19794c8e1251aef0b9f24c8a54fa788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635184"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323381"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何：安装源代码管理插件
 创建源代码管理插件过程包括三个步骤：
@@ -78,7 +78,7 @@ ms.locfileid: "56635184"
 
 4. 创建名为子项**InstalledSCCProviders**下**SourceCodeControlProvider**子项，并且然后放入该子项下的一个条目。
 
-    此项的名称为提供程序 （与相同 SCCServerName 条目为指定的值），用户可读名称，值为再次重申，步骤 1 中创建的子项。 模式是**HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\<display name>** = *软件\\< 公司名称\> \\< 产品名称\>*。
+    此项的名称为提供程序 （与相同 SCCServerName 条目为指定的值），用户可读名称，值为再次重申，步骤 1 中创建的子项。 模式是**HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< 显示名称\>** = *软件\\< 公司名称\>\\< 产品名称\>*。
 
     例如：
 

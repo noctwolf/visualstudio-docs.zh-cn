@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bf3cbb84c32fdb3f5eba7ba8706c1035b1d9019
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 20d24192d8613a4f41d9cdfc04371fb9c9d02076
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633468"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322765"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty 元素
   表示部署到 SharePoint 时，将包括与某个功能的自定义属性。 将功能部署后，您可以在代码中访问属性。
@@ -55,7 +55,7 @@ ms.locfileid: "56633468"
 
 |||
 |-|-|
-|**命名空间**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**命名空间**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**架构名称**|SharePoint 项目项架构|
 |**验证文件**|ProjectItemModelSchema.xsd|
 |**可以为空**|否|

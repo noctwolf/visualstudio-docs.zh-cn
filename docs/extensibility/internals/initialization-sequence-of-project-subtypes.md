@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18a60e5589671101471bbb5f82877ce5234215d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 15fc8d330de6b707d4747b9c297dffcbc78d5fec
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54920184"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323702"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>项目子类型的初始化序列
 在环境构造一个项目，通过调用基础项目工厂实现的<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>。 项目子类型的构造启动时环境确定项目文件的扩展名的项目类型 GUID 列表不为空。 项目文件扩展名和项目 GUID 指定项目是否是[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]项目类型。 例如，.vbproj 扩展名和 {F184B08F-C81C-45F6-A57F-5ABD9991F28F} 识别[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]项目。
@@ -31,7 +31,7 @@ ms.locfileid: "54920184"
 
     1.  环境的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A>方法调用`HrCreateInnerProj`与以下函数声明的方法：
 
-         <CodeContentPlaceHolder>0</CodeContentPlaceHolder>
+         \<CodeContentPlaceHolder>0</CodeContentPlaceHolder>
 
          当调用此函数是第一次，即最外面的项目子类型，参数`pOuter`并`pOwner`作为传入`null`和该函数将设置最外层项目子类型`IUnknown`到`pOuter`。
 

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fc30ff87d02013a95ea7950841e3185b2bdc69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2768a2e55b3e38158f2ef6b856a653a1a2c12dfa
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643660"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322988"
 ---
 # <a name="projectitem-element"></a>ProjectItem 元素
   表示 SharePoint 项目项。 此元素的必需的根元素的 *.spdata*文件。
@@ -70,7 +70,7 @@ ms.locfileid: "56643660"
 
 |||
 |-|-|
-|**命名空间**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**命名空间**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**架构名称**|SharePoint 项目项架构|
 |**验证文件**|ProjectItemModelSchema.xsd|
 |**可以为空**|否|

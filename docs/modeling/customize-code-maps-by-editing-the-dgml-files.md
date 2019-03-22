@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31f26acadcbeac4aa042f7372fd4c80a9e385c54
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5394e7918c623fee3c1fed4008a952ca7a9e0f22
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937937"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323144"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>通过编辑 DGML 文件自定义代码图
 
@@ -286,29 +286,29 @@ ms.locfileid: "55937937"
 
     此表达式使用以下 Backus-Naur 形式 (BNF) 语法：
 
-    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>
+    \<Expression> ::= \<BinaryExpression> &#124; \<UnaryExpression> &#124; "("\<Expression>")" &#124; \<MemberBindings> &#124; \<Literal> &#124; \<Number>
 
-    <BinaryExpression> ::= <Expression> <Operator> <Expression>
+    \<BinaryExpression> ::= \<Expression> \<Operator> \<Expression>
 
-    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
+    \<UnaryExpression> ::= "!"\<表达式 > &#124; "+"\<表达式 > &#124; "-"\<表达式 >
 
-    <Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
+    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding >"。"\<MemberBinding>
 
-    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>
+    \<MemberBinding> ::= \<MethodCall> &#124; \<PropertyGet>
 
-    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
+    \<MethodCall> ::= \<Identifier> "(" \<MethodArgs> ")"
 
-    <PropertyGet> :: = 标识符
+    \<PropertyGet >:: = 标识符
 
-    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
+    \<MethodArgs> ::= \<Expression> &#124; \<Expression> "," \<MethodArgs> &#124; \<empty>
 
-    <Identifier> ::= [^. ]*
+    \<标识符 >:: = [^。 ]*
 
-    <Literal> :: = 单引号或双引号中的字符串文本
+    \<文本 >:: = 单引号或双引号中的字符串文本
 
-    <Number> :: = 带有可选小数点的数字的字符串
+    \<号 >:: = 带有可选小数点的数字的字符串
 
     可以指定多个`<Condition/>`必须均为 true 才能应用样式的元素。
 
@@ -373,9 +373,9 @@ ms.locfileid: "55937937"
 
  在此示例中：
 
-1.  如果 `Coverage` 大于 80，则将 `Background` 属性设置为绿色。
+1.  如果`Coverage`> 80，然后设置`Background`属性设置为绿色。
 
-2.  如果 `Coverage` 大于 50，则基于 `Background` 属性的值将 `Coverage` 属性设置为橙色阴影。
+2.  Else if`Coverage`为 > 50，然后设置`Background`为橙色阴影属性值的基础`Coverage`属性。
 
 3.  否则基于 `Background` 属性的值将 `Coverage` 属性设置为红色阴影。
 

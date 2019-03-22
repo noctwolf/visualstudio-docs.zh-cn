@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f57356cfe2d382ec0f4199555515e08e765e9486
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ee1dcd72e80b38eb4dd31603b0133b7ee7f7636b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634924"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324677"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的功能区自定义
   如果您的项目包含已通过使用功能区自定义**功能区 （可视化设计器）** 项目项，必须对你的项目代码进行以下更改，如果目标框架更改为[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本。
@@ -103,9 +103,9 @@ ms.locfileid: "56634924"
 
      例如，假设文件包含以下代码行，该代码行可处理面向 .NET Framework 3.5 的项目中的 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> 事件。
 
-    <CodeContentPlaceHolder>8</CodeContentPlaceHolder>中的项目是面向[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本，必须改为使用下面的代码。
+    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder>中的项目是面向[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本，必须改为使用下面的代码。
 
-    <CodeContentPlaceHolder>9</CodeContentPlaceHolder>功能区委托的完整列表，请参阅[处理功能区事件](#ribbonevents)。
+    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder>功能区委托的完整列表，请参阅[处理功能区事件](#ribbonevents)。
 
 5.  在 Visual Basic 项目中，找到文件末尾的 `ThisRibbonCollection` 类。 修改此类的声明，以便它不再继承自 `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`。
 
@@ -120,8 +120,7 @@ ms.locfileid: "56634924"
 
   下面的代码示例演示了如何在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中的 Ribbon 类中创建 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton>。
 
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder>下表列出了可以以编程方式创建的控件和要使用该目标项目中创建控件的方法[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本。
+\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder>下表列出了可以以编程方式创建的控件和要用于创建面向的项目中的控件的方法[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本。
 
 |控件|在 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 和更高版本的项目中使用的 RibbonFactory 方法|
 |-------------| - |
