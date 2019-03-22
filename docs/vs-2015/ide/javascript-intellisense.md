@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64da24c21ef40bd850e7fb91ed530df67bfe66b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b96ceed46b9411e128a34861fbd06fd53817a18a
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763279"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194452"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
 
 -   在活动文档的所有脚本块中定义的函数。 在具有以下文件扩展名的文件中支持内联脚本块：.aspx、.ascx、.master、.html 和 .htm。
 
--   具有指向其他脚本文件的 `script` 特性的 `src` 元素。 目标脚本文件必须具有文件扩展名 .js。
+-   具有指向其他脚本文件的 `src` 属性的 `script` 元素。 目标脚本文件必须具有文件扩展名 .js。
 
 -   通过使用 `reference` 指令引用其他 JavaScript 文件的 JavaScript 文件。
 
@@ -91,7 +91,7 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
 
 -   遍历此列表并从每个文件中收集类型信息和其他相关数据。
 
--   聚合数据并将其传递给 JavaScript 语言服务，该服务可向 IntelliSense 提供类型信息和数据。
+-   聚合数据并将其传递给 JavaScript Language Service，该服务可向 IntelliSense 提供类型信息和数据。
 
 -   监视文件是否发生了可能影响 IntelliSense 列表的变化，并根据需要更新列表。 关于远程存储（例如使用 HTTP 引用的存储）的脚本不接受监视。
 
@@ -122,7 +122,7 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
  JavaScript IntelliSense 为诸如 `body`、`form` 和 `div` 之类的动态 HTML (DHTML) DOM 元素提供编程引用。 IntelliSense 只显示包括在当前文档和母版页中的元素。 JavaScript IntelliSense 还支持 `window` 和 `document` 对象及其成员。
 
 ###  <a name="IntrinsicObjects"></a>内部对象
- JavaScript IntelliSense 为 `Array`、`String`、`Math`、`Date` 和 `Number` 等内部对象提供编程引用。 有关内部对象的详细信息，请参阅[内部对象](/visualstudio/scripting-docs/javascript/intrinsic-objects-javascript)。
+ JavaScript IntelliSense 为 `Array`、`String`、`Math`、`Date` 和 `Number` 等内部对象提供编程引用。 有关内部对象的详细信息，请参阅[标准内置对象](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects)。
 
 ###  <a name="UserDefined"></a> 用户定义的变量、函数和对象
  更改 JavaScript 文件时，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 将扫描打开和引用的文档，以确定所有可用的代码资源。 这包括已创建的变量、函数和对象。 然后 JavaScript IntelliSense 便可使用这些资源。
@@ -137,7 +137,7 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
 
  如果不处理支持 ASP.NET AJAX 的网页，则可以通过在 `src` 元素开始标记中使用 `script` 特性来引用外部脚本文件。 `src` 特性指定包含源代码或数据的外部文件的 URL。
 
- 以下示例显示在 <`script`> 标志中使用 `src` 特性引用脚本文件的标记。
+ 下面的示例演示使用标记`src`属性中 <`script`> 引用脚本文件的标记。
 
 ```html
 <script type="text/javascript" src="~/Scripts/JavaScript.js">
