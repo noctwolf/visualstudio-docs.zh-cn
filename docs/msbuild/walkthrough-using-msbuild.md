@@ -125,7 +125,7 @@ Message 任务将文本属性的字符串值作为输入并显示在输出设备
 
    (Windows 10) 在任务栏的搜索框中，开始键入工具的名称，例如 `dev` 或 `developer command prompt`。 然后显示一个列表，其中包含与搜索模式匹配的已安装应用。
 
-   如需手动查找，可在“<visualstudio installation folder>\<>\Common7\Tools”文件夹中查找 LaunchDevCmd.bat 文件。
+   如需手动查找，可在“<visualstudio installation folder\>\<version>\Common7\Tools”文件夹中查找 LaunchDevCmd.bat 文件。
 
 2. 从命令窗口导航到包含项目文件的文件夹，此例中为 D:\BuildApp\BuildApp。
 
