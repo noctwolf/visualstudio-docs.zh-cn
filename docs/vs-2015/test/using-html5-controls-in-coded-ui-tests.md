@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6002c3636030b67e9dca5e76c7ef57fbd93b6e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b13b8af221e317461f68a793e9b84420cd5dab48
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805071"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867895"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在编码的 UI 测试中使用 HTML5 控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,18 +33,18 @@ ms.locfileid: "54805071"
 ## <a name="supported-html5-controls"></a>支持的 HTML5 控件  
  编码的 UI 测试包括对以下 HTML5 控件的录制、播放和验证支持：  
   
--   [音频控件](#UsingHTML5ControlsCodedUITestsAudio)  
+-   [音频控件](#audio-control)  
   
--   [视频控件](#UsingHTML5ControlsCodedUITestsVideo)  
+-   [视频控件](#video-control)  
   
--   [滑块](#UsingHTML5ControlsCodedUITestsSlider)  
+-   [滑块](#slider)  
   
--   [进度栏](#UsingHTML5ControlsCodedUITestsProgressBar)  
+-   [进度栏](#progressbar)  
   
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a>音频控件  
+### <a name="audio-control"></a>音频控件  
  **音频控件：** 正确录制和播放 HTML5 音频控件上的操作。  
   
- ![HTML5 音频控件](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
+ ![HTML5 音频控件](../test/media/codedui-html5-audio.png)  
   
 |操作|录制|生成的代码|  
 |------------|---------------|--------------------|  
@@ -74,7 +74,6 @@ string ReadyState
 string Seeking  
 string Src  
 string Volume  
-  
 ```  
   
  **搜索属性：**`HtmlAudio` 的搜索属性为 `Id`、`Name` 和 `Title`。  
@@ -84,10 +83,10 @@ string Volume
 > [!NOTE]
 >  定位和暂停的时间可以很长。 在播放期间，编码的 UI 测试将一直等到 `(TimeSpan)` 中指定的时间再暂停音频。 如果由于某种特殊情况，过了指定的时间才命中暂停命令，将引发异常。  
   
-###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a>视频控件  
+### <a name="video-control"></a>视频控件  
  **视频控件：** 正确录制和播放 HTML5 视频控件上的操作。  
   
- ![HTML5 视频控件](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
+ ![HTML5 视频控件](../test/media/codedui-html5-video.png)  
   
 |操作|录制|生成的代码|  
 |------------|---------------|--------------------|  
@@ -114,10 +113,10 @@ string VideoWidth
 > [!NOTE]
 >  如果使用 -30s 或 +30s 标签对视频后退或快进，将聚合标签以定位到相应的时间。  
   
-###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a>滑块  
+### <a name="slider"></a>Slider  
  **滑块控件：** 正确录制和播放 HTML5 滑块控件上的操作。  
   
- ![HTML5 滑块控件](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
+ ![HTML5 滑块控件](../test/media/codedui-html5-slider.png)  
   
 |操作|录制|生成的代码|  
 |------------|---------------|--------------------|  
@@ -134,14 +133,15 @@ string Step
 string ValueAsNumber  
 ```  
   
-###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a>进度栏  
- **进度栏控件：** 进度栏是一种不可交互的控件。 你可以对此控件的 `Value` 和 `Max` 属性添加断言。  
+### <a name="progressbar"></a>ProgressBar  
+ **进度条控件：** 进度条是一种不可交互的控件。 你可以对此控件的 `Value` 和 `Max` 属性添加断言。  
   
- ![HTML5 进度栏控件](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![HTML5 进度条控件](../test/media/codedui-html5-progressbar.png)  
   
-## <a name="see-also"></a>请参阅  
- [HTML 元素](http://go.microsoft.com/fwlink/?LinkID=232441)   
- [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
- [创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [自定义编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>请参阅
+
+- [HTML 元素](https://www.w3schools.com/HTML/html_elements.asp)   
+- [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
+- [创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
+- [自定义编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
+- [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

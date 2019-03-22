@@ -27,12 +27,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5db2476f16010f61af23c460fdd2bc78066c0e4a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752285"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868115"
 ---
 # <a name="general-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“常规”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "54752285"
  颜色主题  
  为 IDE 选择“蓝色”、“浅色”或“深色”颜色主题。  
   
- 可以通过从 [Visual Studio 库](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools)中下载并安装“Visual Studio 2015 颜色主题编辑器”来安装其他预定义的主题并创建自定义主题。 安装此工具后，其他颜色主题将显示在“颜色主题”列表框中。  
+ 可以从 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 下载并安装“Visual Studio 2015 颜色主题编辑器”，从而安装其他预定义的主题并创建自定义主题。 安装此工具后，其他颜色主题将显示在“颜色主题”列表框中。  
   
  在菜单栏中应用标题大小写  
  在 Visual Studio 2015 中，菜单默认位于“标题大小写”中。 取消选中此选项，将其设置为“全部大写”。  

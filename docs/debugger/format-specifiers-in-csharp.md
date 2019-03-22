@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4091aa8c312938a725a89e5ef131923671af3169
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698984"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870515"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>格式说明符在C#Visual Studio 调试器中
 你可以在其中一个值中显示的格式**监视**窗口是通过使用格式说明符。 此外可以使用中的格式说明符**即时**窗口中，**命令**窗口中，在[跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，并在源窗口中。 如果暂停这些窗口中的表达式，该结果将显示在[数据提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中指定的格式显示。
@@ -51,6 +51,14 @@ ms.locfileid: "56698984"
 添加`my_var1`变量**观看**调试时，窗口**调试** > **Windows** > **观看** > **观看 1**。 接下来，右键单击该变量，并选择**十六进制显示**。 现在**监视**窗口将显示值 0x0065。 若要查看此值为十进制整数而不是十六进制整数，添加十进制格式说明符 **、 d**中**名称**变量名之后的列。 **值**列现在显示**101**。
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
+
+::: moniker range=">= vs-2019" 
+
+可以查看并通过将逗号 （，） 追加到中的值从可用的格式说明符的列表中选择**监视**窗口。 
+
+![FormatSpecCSharp](../debugger/media/vs-2019/format-specs-csharp.png "FormatSpecCSharp")
+
+::: moniker-end
 
 ## <a name="format-specifiers"></a>格式说明符
 下表描述了C#设置 Visual Studio 调试器的说明符的格式。

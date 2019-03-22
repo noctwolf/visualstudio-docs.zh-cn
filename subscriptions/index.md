@@ -19,6 +19,7 @@ Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设
 管理员登录到 [https://manage.visualstudio.com](https://manage.visualstudio.com)，将订阅分配给团队。<br>
 订阅者登录到 [https://my.visualstudio.com](https://my.visualstudio.com)，访问订阅权益。
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">

@@ -7,17 +7,13 @@ author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
 ms.workload:
-- data-storage
-ms.openlocfilehash: 4d92ea058830d5da769ad54ceb88e51aefa6112d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924729"
+  - data-storage
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>在 Visual Studio 中使用数据工具开发数据解决方案
 
 了解如何在 Visual Studio 中借助数据工具并通过 SQL Server、Azure Data Lake 或 Hadoop 开发和测试数据解决方案。
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -123,7 +119,7 @@ ms.locfileid: "55924729"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Access data in Visual Studio></p>
+                        <p>在 Visual Studio 中访问数据</p>
                     </div>
                 </div>
             </div>

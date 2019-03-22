@@ -13,6 +13,8 @@ ms.workload:
 
 Visual Studio 提供了大量的扩展性选项。 可以扩展 Visual Studio 本身、为“Roslyn”编译器添加源代码分析器，甚至可以创建你自己的 SDK。
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/visualstudio/extensibility/visual-studio-sdk">

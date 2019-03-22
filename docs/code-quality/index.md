@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio 提供众多不同的工具用于分析和提升代码质量。
 
+<!-- markdownlint-disable MD033 -->
+
 <br />
 
 <ul class="panelContent cardsFTitle">
