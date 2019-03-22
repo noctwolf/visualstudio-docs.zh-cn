@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b8f5f701299d08d79147a4d2d1932f3f23c011b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939159"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069861"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>将 WPF 控件绑定到数据集
 
@@ -56,15 +56,29 @@ ms.locfileid: "55939159"
 
 创建新的 WPF 项目以显示产品记录。
 
-1. 启动 Visual Studio。
+::: moniker range="vs-2017"
 
-2. 在“文件”菜单上，选择“新建” > “项目”。 
+1. 打开 Visual Studio。
+
+2. 在“文件”菜单上，依次选择“新建”>“项目”。
 
 3. 展开“Visual Basic”或“Visual C#”，然后选择“Windows”。
 
-4. 选择“WPF 应用程序”项目模板。
+4. 选择**WPF 应用**项目模板。
 
 5. 在中**名称**框中，输入**AdventureWorksProductsEditor** ，然后选择**确定**。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 打开 Visual Studio。
+
+2. 在开始窗口中，选择**创建一个新项目**。
+
+3. 搜索C# **WPF 应用**项目模板，然后按照步骤创建该项目，命名项目**AdventureWorksProductsEditor**。
+
+::: moniker-end
 
    Visual Studio 创建 AdventureWorksProductsEditor 项目。
 
