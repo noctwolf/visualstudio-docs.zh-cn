@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cbe2e3318d01d7b50767c13d09687526c00b49f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722260"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324063"
 ---
 # <a name="create-a-software-development-kit"></a>创建软件开发工具包
 软件开发工具包 (SDK) 是一系列 Api，您可以参考作为 Visual Studio 中的单个项。 **引用管理器**对话框会列出与项目相关的所有 Sdk。 向项目添加 SDK，Api 时，Visual Studio 中提供。
@@ -65,17 +65,17 @@ ms.locfileid: "56722260"
 ### <a name="installation"></a>安装
  扩展 Sdk 可以无需指定注册表项为特定用户还是为所有用户安装。 若要安装适用于所有用户的 SDK，请使用以下路径：
 
- *%Program Files%\Microsoft Sdk\<目标平台 > \v<platform version number>\ExtensionSDKs*
+ *%Program Files%\Microsoft Sdk\<目标平台\>\v < 平台版本号\>\ExtensionSDKs*
 
  对于特定于用户的安装，使用以下路径：
 
- *Sdk %USERPROFILE%\AppData\Local\Microsoft\<目标平台 > \v<platform version number>\ExtensionSDKs*
+ *Sdk %USERPROFILE%\AppData\Local\Microsoft\<目标平台\>\v < 平台版本号\>\ExtensionSDKs*
 
  如果你想要使用不同的位置，必须执行两项操作之一：
 
 1.  注册表项中指定它：
 
-     **HKLM\Software\Microsoft\Microsoft SDKs\<target platform>\v<platform version number>\ExtensionSDKs\<SDKName>\<SDKVersion>**\
+     **HKLM\Software\Microsoft\Microsoft Sdk\<目标平台 > \v < 平台版本号\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
 
      并添加具有值 （默认值） 子项`<path to SDK><SDKName><SDKVersion>`。
 

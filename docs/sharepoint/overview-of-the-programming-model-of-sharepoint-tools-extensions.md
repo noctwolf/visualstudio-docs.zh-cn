@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bec1627af7bbef1c3fcd264f2d74aca86d1cfad4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d4cac8341adb61a6644e7e331f00584c5c341471
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639331"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325231"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>工具扩展的 SharePoint 的编程模型概述
   在 Visual Studio 中创建 SharePoint 工具扩展时，首先将实现由 SharePoint 工具公开的一个或多个扩展性接口。 在大多数情况下，你还将使用 SharePoint 工具提供的其他类型来实现扩展中的功能。 在某些方案中，你还可以使用 Visual Studio 和 SharePoint 提供的其他对象模型中的类型。 必须了解每个这些对象模型的用途，并知道如何使用它们彼此创建 SharePoint 工具扩展。
@@ -83,7 +83,7 @@ ms.locfileid: "56639331"
 ### <a name="visual-studio-automation-object-model"></a>Visual Studio 自动化对象模型
  Visual Studio 自动化对象模型提供可用于自动化 Visual Studio 项目和 IDE 的 API。 使用 Visual Studio 对象模型可执行与项目相关的任务（非 SharePoint 项目专用任务），或执行 Visual Studio 中的其他常规自动化任务。 虽然从传统上说，此对象模型通常在 Visual Studio 外接程序和宏中使用，但你也可以在 SharePoint 工具扩展中使用它。
 
- Visual Studio 自动化对象模型的主要部分中定义*EnvDTE.dll*程序集。 *EnvDTE\\<version>.dll*程序集提供的特定版本的 Visual Studio 中引入了附加功能。 这些程序集包含在 Visual Studio 中。
+ Visual Studio 自动化对象模型的主要部分中定义*EnvDTE.dll*程序集。 *EnvDTE\\\<版本 >.dll*程序集提供的特定版本的 Visual Studio 中引入了附加功能。 这些程序集包含在 Visual Studio 中。
 
  有关自动化对象模型的详细信息，请参阅[Visual Studio SDK 引用](../extensibility/visual-studio-sdk-reference.md)。
 

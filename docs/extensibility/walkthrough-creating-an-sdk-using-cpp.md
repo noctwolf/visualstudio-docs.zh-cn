@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18627c629e428e00c719459f7a243b74b7c4f26a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: da9be257587936088ee5f91c5e1723d71be11965
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689676"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325063"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>演练：创建使用 c + + SDK
 本演练演示如何创建一个本机 c + + 的数学库 SDK，包 SDK 作为 Visual Studio 扩展 (VSIX)，并使用它创建的应用程序。 本演练分为以下步骤：
@@ -135,7 +135,7 @@ ms.locfileid: "56689676"
 
 17. 在中**文件资源管理器**，导航到 *$SolutionRoot$ \NativeMathVSIX\bin\Debug*文件夹，然后运行*NativeMathVSIX.vsix*以开始安装。
 
-18. 选择**安装**按钮，等待安装完成，然后启动 Visual Studio。
+18. 选择**安装**按钮，等待安装完成，并打开 Visual Studio。
 
 ##  <a name="createSample"></a> 创建示例应用程序使用类库
 

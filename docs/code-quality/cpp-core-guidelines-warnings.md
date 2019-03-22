@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39bdcc15bece0fff3547738bbdcaf898496379ad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: f57fc0ff69e732e105ce6e9f3202f356633ff176
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872429"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323446"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ 核心准则检查程序
 
@@ -84,7 +84,7 @@ C + + Core Guidelines 是为了帮助您编写更好、 更安全代码。 但�
 
 新规则添加到 c + + 核心准则检查程序，可能会增加为预先存在的代码生成的警告数。 预定义的规则集可用于筛选哪些类型的规则来启用。 截至 Visual Studio 2017 版本 15.3 中，支持的规则集是：
 
-  - **所有者指针规则**强制实施[资源管理检查与所有者相关<T>c + + Core Guidelines 中](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
+  - **所有者指针规则**强制实施[资源管理检查与所有者相关\<T > c + + Core Guidelines 中](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
   - **常量规则**强制实施[c + + Core Guidelines 中常量相关的检查](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。
 
@@ -162,7 +162,7 @@ Microsoft Visual c + + 编译器提供有限的支持，为 GSL 禁止显示属�
 有时可能会对进行专注于代码分析和利用 Visual Studio IDE 仍然有用。 下面是一个示例方案以保存生成时，使其能够更轻松地筛选结果，可以对大型项目使用它。
 
 1. 在命令行界面中设置`esp.extension`和`esp.annotationbuildlevel`环境变量。
-2. 从命令行界面，继承这些变量启动 Visual Studio。
+2. 从命令行界面，继承这些变量打开 Visual Studio。
 3. 加载你的项目并打开其属性。
 4. 启用代码分析，选取合适的规则集，但不是启用代码分析扩展。
 5. 转到你想要使用 c + + 核心准则检查程序进行分析并打开其属性的文件。

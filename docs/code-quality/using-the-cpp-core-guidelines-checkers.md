@@ -7,14 +7,14 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d888204de33ba870111be08ae91bb09d09416d4
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223346"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323693"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ 核心准则检查程序
+# <a name="use-the-c-core-guidelines-checkers"></a>使用 C++ Core Guidelines 检查器
 
 C + + Core Guidelines 了一可移植的指导原则、 规则和有关在 c + + 创建的 c + + 专家和设计器中编写代码的最佳做法。 Visual Studio 当前支持 c + + 作为其代码分析工具的一部分的这些规则的子集。 核心准则检查器在 Visual Studio 2017 和 Visual Studio 2019，默认情况下已安装并且位于[可用作 Visual Studio 2015 的 NuGet 包](#vs2015_corecheck)。
 
@@ -80,7 +80,7 @@ C + + Core Guidelines 是为了帮助您编写更好、 更安全代码。 但�
 参考主题的最多的规则正在[Visual Studio c + + Core 检查引用](code-analysis-for-cpp-corecheck.md)。
 
 截至 Visual Studio 2017 版本 15.3 中，支持的规则集是：
-- **所有者指针规则**强制实施[资源管理检查与所有者相关<T>c + + Core Guidelines 中](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
+- **所有者指针规则**强制实施[资源管理检查与所有者相关\<T > c + + Core Guidelines 中](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
 - **常量规则**强制实施[c + + Core Guidelines 中常量相关的检查](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。
 
@@ -153,7 +153,7 @@ Microsoft Visual c + + 编译器提供有限的支持，为 GSL 禁止显示属�
 }
 ```
 
-## <a name="suppressing-analysis-by-using-command-line-options"></a>使用命令行选项取消分析
+## <a name="suppress-analysis-by-using-command-line-options"></a>通过使用命令行选项来禁止显示分析
 
 而不是 #pragmas，您可以使用命令行选项在该文件的属性页中禁止显示警告的一个项目或单个文件。 例如，若要禁用警告 26400 文件：
 
@@ -170,7 +170,7 @@ Microsoft Visual c + + 编译器提供有限的支持，为 GSL 禁止显示属�
 有时可能会对进行专注于代码分析和使用 Visual Studio IDE 仍然有用。 下面的示例方案可用于大型项目，以保存生成时，使其能够更轻松地筛选结果：
 
 1. 在命令行界面中设置`esp.extension`和`esp.annotationbuildlevel`环境变量。
-2. 若要继承这些变量，请从命令行界面启动 Visual Studio。
+2. 若要继承这些变量，请从命令行界面打开 Visual Studio。
 3. 加载你的项目并打开其属性。
 4. 启用代码分析，选取合适的规则集，但不是启用代码分析扩展。
 5. 转到你想要使用 c + + 核心准则检查程序进行分析并打开其属性的文件。

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528665cc54c78a6d5d053cc80522f53385e85daf
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: d28836e1213e65fa7537937b9b6ce27b87f1c3ba
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875714"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324495"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>调试 Visual Studio 中的 SharePoint 工具扩展
   您可以调试实验实例或 Visual Studio 常规实例中的 SharePoint 工具扩展。 如果需要进行故障排除的行为扩展，还可以修改注册表值以显示其他错误信息并配置 Visual Studio 执行 SharePoint 命令的方式。
@@ -56,7 +56,7 @@ ms.locfileid: "54875714"
 
 #### <a name="to-debug-the-extension"></a>若要调试扩展
 
-1.  使用管理员权限启动 Visual Studio 并打开扩展项目。 以下步骤，请参阅 Visual Studio 的此实例*首次实例*。
+1.  使用管理员特权打开 Visual Studio 并打开扩展项目。 以下步骤，请参阅 Visual Studio 的此实例*首次实例*。
 
 2.  使用管理员权限启动 Visual Studio 的另一个实例。 以下步骤，请参阅 Visual Studio 的此实例*第二个实例*。
 

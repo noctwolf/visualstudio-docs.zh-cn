@@ -6,12 +6,12 @@ author: PooyaZv
 ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: ac3d44734c868bdf57f76aec0572e6b7d3ea9f03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719478"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324339"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>如何：诊断由扩展引起的 UI 延迟
 
@@ -43,7 +43,7 @@ ms.locfileid: "56719478"
 
 ## <a name="restart-vs-with-activity-logging-on"></a>使用活动日志记录重启 VS
 
-Visual Studio 可以生成"活动日志"时调试问题提供有帮助的信息。 若要打开 Visual Studio 中的日志记录的活动，启动 Visual Studio 中使用`/log`命令行选项。 Visual Studio 启动后，活动日志存储在以下位置：
+Visual Studio 可以生成"活动日志"时调试问题提供有帮助的信息。 若要打开 Visual Studio 中的日志记录的活动，请打开 Visual Studio 中使用`/log`命令行选项。 Visual Studio 启动后，活动日志存储在以下位置：
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml

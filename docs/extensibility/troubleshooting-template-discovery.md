@@ -7,12 +7,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: c98c13528facb08f475614a6cbca9cee3c426ef9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323995"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323102"
 ---
 # <a name="troubleshooting-template-installation"></a>模板安装故障排除
 
@@ -41,7 +41,7 @@ ms.locfileid: "57323995"
 
 ::: moniker range="vs-2017"
 
-4. 启动 Visual Studio，并启动新项目和新项对话框，以便初始化两个模板树。
+4. 打开 Visual Studio，并启动的新项目和新项对话框来初始化两个模板树。
 
    模板日志现在显示在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** （对应于您的 Visual Studio 实例的安装 ID 的实例 id）。 每个模板树初始化附加到此日志条目。
 
@@ -49,7 +49,7 @@ ms.locfileid: "57323995"
 
 ::: moniker range=">=vs-2019"
 
-4. 启动 Visual Studio，并启动新项目和新项对话框，以便初始化两个模板树。
+4. 打开 Visual Studio，并启动的新项目和新项对话框来初始化两个模板树。
 
    模板日志现在显示在 **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** （对应于您的 Visual Studio 实例的安装 ID 的实例 id）。 每个模板树初始化附加到此日志条目。
 
