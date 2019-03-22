@@ -68,7 +68,7 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
 
 生成应用程序的工作由 [Target](../msbuild/target-element-msbuild.md) 和 [Task](../msbuild/task-element-msbuild.md) 元素完成。
 
--   任务是工作的最小单位，换言之，它是生成的“原子”。 任务是可单独执行的组件，具有输入和输出。 目前尚没有在项目文件中引用或定义的任务。 以下各部分介绍如何将项目添加到项目文件。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)主题。
+-   任务是工作的最小单位，换言之，它是生成的“原子”。 任务是可单独执行的组件，具有输入和输出。 目前尚没有在项目文件中引用或定义的任务。 以下各部分介绍如何将任务添加到项目文件。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)主题。
 
 -   目标是任务的已命名序列。 有关详细信息，请参阅[目标](../msbuild/msbuild-targets.md)主题。
 
