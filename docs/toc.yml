@@ -172,6 +172,8 @@ items:
     - name: 使用解决方案和项目
       href: ide/solutions-and-projects-in-visual-studio.md
       items:
+      - name: 创建新项目
+        href: ide/create-new-project.md
       - name: 创建解决方案和项目
         href: ide/creating-solutions-and-projects.md
       - name: 移植、迁移和升级项目
@@ -302,6 +304,7 @@ items:
             - name: 代码片段疑难解答
               href: ide/troubleshooting-snippets.md
         - name: 快速操作
+          displayName: light bulb screwdriver suggestions
           href: ide/quick-actions.md
           items:
           - name: 常见快速操作
@@ -784,7 +787,7 @@ items:
           href: ide/reference/autorecover-environment-options-dialog-box.md
         - name: 环境 - 文档
           href: ide/reference/documents-environment-options-dialog-box.md
-        - name: 环境 - 扩展和更新
+        - name: 环境 - 扩展
           href: ide/reference/extensions-and-updates-environment-options-dialog-box.md
         - name: 环境 - 查找和替换
           href: ide/reference/find-and-replace-environment-options-dialog-box.md
@@ -1190,9 +1193,9 @@ items:
     displayName: Feedback
     href: ide/talk-to-us.md
   expanded: true
-ms.openlocfilehash: 6b2aef6cb17789a665cb4a7a0360b2bc7dd396ab
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c230bbe05320a57aecf0b7141f44f069eadd2a8d
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873769"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268739"
