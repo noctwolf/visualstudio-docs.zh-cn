@@ -6,6 +6,7 @@ description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来�
 ms.topic: landing-page
 searchScope: []
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <h1>有关 Visual Studio 产品的文档</h1>

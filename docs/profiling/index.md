@@ -12,6 +12,8 @@ manager: jillfra
 
 分析和诊断工具有助于诊断内存和 CPU 使用率以及其他应用程序级别问题。 这些工具可用于累积一段时间内在调试器中运行应用程序的数据（例如变量值、函数调用和事件）。 可以查看代码执行期间不同点的应用程序状态。
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour">

@@ -1,13 +1,10 @@
 ---
 title: 调试器中的格式说明符 (C++) | Microsoft Docs
-ms.date: 11/20/2018
+ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - QuickWatch dialog box, format specifiers in C++
@@ -27,15 +24,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ad821c15ee8b405982d36c6b1c62d038bb11633
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227717"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870588"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中的 c + + 格式说明符
-你可以在其中一个值中显示的格式**监视**窗口是通过使用格式说明符。
+你可以在其中一个值中显示的格式**Watch**，**自动**，并**局部变量**窗口中的，使用格式说明符。
 
 此外可以使用中的格式说明符**即时**窗口中，**命令**窗口中，在[跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，并且即使在源窗口中。 如果暂停这些窗口中的表达式时，结果将出现在[数据提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)。 “数据提示”显示格式说明符。
 
@@ -57,8 +54,55 @@ int main() {
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 
+::: moniker range=">= vs-2019" 
+可以查看并通过将逗号 （，） 追加到中的值从可用的格式说明符的列表中选择**监视**窗口。 
+
+![WatchFormatSpecDropdown](../debugger/media/vs-2019/format-specs-cpp.png "FormatSpecCpp")
+
+::: moniker-end
+
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a>格式说明符
 下表描述了可以使用 Visual Studio 中的格式说明符。 加粗的说明符仅支持为新的调试器，而不是针对互操作调试使用 C + + /cli CLI。
+
+::: moniker range=">= vs-2019" 
+
+|说明符|格式|原始监视值|显示的值|
+|---------------|------------|--------------------------|---------------------|
+|d|十进制整数|0x00000066|102|
+|o|无符号的八进制整数|0x00000066|000000000146|
+|x<br /><br /> **h**|十六进制整数|102|0xcccccccc|
+|X<br /><br /> **H**|十六进制整数|102|0xcccccccc|
+|xb<br /><br /> **hb**|十六进制整数（没有前导 0x）|102|cccccccc|
+|Xb<br /><br /> **Hb**|十六进制整数（没有前导 0x）|102|CCCCCCCC|
+|b|无符号二进制整数|25|0b00000000000000000000000000011001|
+|bb|无符号二进制整数（没有前导 0b）|25|00000000000000000000000000011001|
+|E|科学记数法|25000000|2.500000e+07|
+|g|科学记数或浮点（以较短者为准）|25000000|2.5e+07|
+|c|单个字符|0x0065, c|101 'e'|
+|秒|const char * 字符串 （括在引号中）|\<位置 >"你好 world"|"hello world"|
+|**sb**|const char * 字符串（无引号）|\<位置 >"你好 world"|hello world|
+|s8|UTF-8 字符串|\<位置 >"这是 utf-8 咖啡杯 â˜•"|"这是 utf-8 咖啡杯 ☕"|
+|**s8b**|UTF-8 字符串（无引号）|\<位置 >"你好 world"|hello world|
+|su|Unicode （utf-16 编码） 字符串 （括在引号中）|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|
+|sub|Unicode（UTF-16 编码）字符串（无引号）|\<location> L"hello world"|hello world|
+|bstr|BSTR 二进制字符串 （括在引号中）|\<location> L"hello world"|L"hello world"|
+|env|环境块（双空终止字符串）|\<位置 > L"=:: =::\\\\"|L"=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|**s32**|UTF-32 的字符串 （带有引号）|\<位置 > U"你好 world"|u"hello world"|
+|**s32b**|UTF-32 string (no quotation marks)|\<位置 > U"你好 world"|hello world|
+|**en**|enum|Saturday(6)|星期六|
+|**hv**|指针类型 - 指示被检查的指针值是数组的堆分配的结果，如 `new int[3]`。|\<location>{\<first member>}|\<位置 > {\<第一个成员 >，\<第二个成员 >，...}|
+|**na**|取消指向对象的指针的内存地址。|\<location>, {member=value...}|{member=value...}|
+|**nd**|仅显示基类信息，忽略派生的类|`(Shape*) square` 包括基类和派生类信息|仅显示基类信息|
+|hr|HRESULT 或 Win32 错误代码。 Hresult 为不再需要此说明符，因为调试器自动将它们进行解码。|S_OK|S_OK|
+|wc|窗口类标志|0x0010|WC_DEFAULTCHAR|
+|wm|Windows 消息数字|16|WM_CLOSE|
+|nr|取消“原始视图”项|
+|nvo|显示数值的"原始视图"项|
+|!|原始格式，忽略任何数据类型视图自定义项|\<customized representation>|4|
+
+::: moniker-end
+
+::: moniker range="vs-2017" 
 
 |说明符|格式|原始监视值|显示的值|
 |---------------|------------|--------------------------|---------------------|
@@ -86,8 +130,10 @@ int main() {
 |wm|Windows 消息数字|16|WM_CLOSE|
 |!|原始格式，忽略任何数据类型视图自定义项|\<customized representation>|4|
 
+::: moniker-end
+
 > [!NOTE]
-> 当**hv**格式说明符，调试器会尝试确定缓冲区的长度并显示该数目的元素。 由于调试器并非总是可以查找确切的数组缓冲区大小，只要可能时，就应该使用大小说明符 `(pBuffer,[bufferSize])` 。 **Hv**格式说明符时，缓冲区大小尚不可用
+> 当**hv**格式说明符，调试器会尝试确定缓冲区的长度并显示该数目的元素。 由于调试器并非总是可以查找确切的数组缓冲区大小，只要可能时，就应该使用大小说明符 `(pBuffer,[bufferSize])` 。 **Hv**格式说明符时，缓冲区大小尚不可用。
 
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 指针的大小说明符作为数组
 如果有一个指针指向要看做数组形式的对象，则可以使用一个整数或表达式来指定数组中元素的数量。

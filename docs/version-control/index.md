@@ -2,7 +2,7 @@
 layout: LandingPage
 title: 版本控制
 description: Visual Studio 中的版本控制入门指南
-keywords: VSTS, TFS, 版本控制
+keywords: 'VSTS, TFS, 版本控制'
 author: steved0x
 ms.manager: jillfra
 ms.author: sdanie
@@ -11,13 +11,7 @@ ms.topic: landing-page
 ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
-- multiple
-ms.openlocfilehash: edcf47601007e3249c58dd8ad215c5ba1fd3bf83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998919"
+  - multiple
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio 中的版本控制
 
@@ -27,6 +21,7 @@ ms.locfileid: "54998919"
 
 Git 是现今最常用的版本控制系统，并迅速成为版本控制标准。 Git 是分布式版本控制系统。也就是说，代码的本地副本就是一个完整的版本控制存储库。 使用这些功能齐全的本地存储库，可以轻松开展脱机或远程工作。 先在本地提交工作，再将存储库的副本与服务器上的副本进行同步。 这种范例不同于集中式版本控制，后者要求客户端必须先与服务器同步代码，然后才能创建新版代码。
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/devops/git/what-is-git">

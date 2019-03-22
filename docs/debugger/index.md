@@ -12,6 +12,8 @@ manager: jillfra
 
 Visual Studio 调试程序有助于你观察程序的运行时行为并发现问题。 该调试器可用于所有 Visual Studio 编程语言及其关联的库。 使用调试程序时，可以中断程序的执行以检查代码、检查和编辑变量、查看寄存器、查看从源代码创建的指令，以及查看应用程序占用的内存空间。
 
+<!-- markdownlint-disable MD033 -->
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://docs.microsoft.com/visualstudio/debugger/what-is-debugging">

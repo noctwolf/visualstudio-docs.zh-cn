@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d662ef0e0b838b324250da8dca4255a6237bccb
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 39a31a7eca86daa390ed1bb4ad32ab5e8859b2d7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969715"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873471"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用保存的 IntelliTrace 数据 (C#，Visual Basic、 c + +)
 
@@ -38,7 +38,7 @@ ms.locfileid: "54969715"
     |----------------|-------------|
     |Visual Studio Enterprise（但不是 Professional 或 Community 版）中的 IntelliTrace 会话|[IntelliTrace 功能](../debugger/intellitrace-features.md)|
     |Microsoft 测试管理器中的测试会话。 这会将 .iTrace 文件附加到 Team Foundation Server 工作项。|[在手动测试中收集更多诊断数据](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
-    |Microsoft Monitoring Agent（单独使用或与 System Center 2012 R2 Operations Manager 一起使用），用于监视部署中运行的 ASP.NET Web 应用和 SharePoint 应用程序|-   [诊断部署后出现的问题](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新增功能](http://technet.microsoft.com/library/dn249700.aspx)|
+    |Microsoft Monitoring Agent（单独使用或与 System Center 2012 R2 Operations Manager 一起使用），用于监视部署中运行的 ASP.NET Web 应用和 SharePoint 应用程序|-   [诊断部署后出现的问题](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新增功能](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ##  <a name="GetStarted"></a> 你希望做什么？
 
@@ -109,7 +109,7 @@ ms.locfileid: "54969715"
 
 3.  展开调用以查看在该时间点记录的所有嵌套调用和参数值。
 
-     （键盘：若要显示或隐藏嵌套的调用，请按**向右箭头**或**向左键**分别。 若要显示和隐藏嵌套调用的参数值，请按“空格”  键。）
+     （键盘：若要显示或隐藏嵌套调用，请分别按“向右键”  或“向左键”  。 若要显示和隐藏嵌套调用的参数值，请按“空格”  键。）
 
      从调用开始调试。
 
@@ -206,7 +206,7 @@ ms.locfileid: "54969715"
 
     ![IntelliTrace 日志&#45;SharePoint 未经处理的异常](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
-   有关演练，请参阅[演练：使用 IntelliTrace 调试 SharePoint 应用程序](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 有关代理记录，请参阅的数据的种类[IntelliTrace 功能](../debugger/intellitrace-features.md)。
+   有关演练，请参阅[演练： 调试 SharePoint 应用程序通过使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 有关代理记录，请参阅的数据的种类[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
 ###  <a name="ThreadsList"></a> 线程列表
  检查目标进程中运行的记录线程。 你可以从选定线程的第一个有效 IntelliTrace 事件开始调试。
@@ -272,4 +272,4 @@ ms.locfileid: "54969715"
  [Visual Studio 调试器](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 #### <a name="guidance"></a>指导
- [使用 Visual Studio 2012-第 6 章对连续交付进行测试：测试工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [使用 Visual Studio 2012 对持续交付进行测试 - 第 6 章：测试工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)
