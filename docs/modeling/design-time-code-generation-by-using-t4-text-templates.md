@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6b8a01151e192c4c92f8e8264d45b70d1fba85
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323418"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355784"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 设计时 T4 文本模板，您在 Visual Studio 项目中生成程序代码和其他文件。 通常情况下，你编写一些模板，以便它们改变它们根据中的数据生成的代码*模型*。 模型是文件或数据库，其中包含有关应用程序的要求的关键信息。
@@ -32,7 +32,7 @@ ms.locfileid: "57323418"
 
  你可能已熟悉代码生成。 在定义中的资源 **.resx**自动生成 Visual Studio 解决方案、 类和方法的一组中的文件。 通过资源文件编辑资源比必须编辑类和方法要更加容易和可靠。 通过文本模板，可以使用相同的方式从自己设计的源中生成代码。
 
- 文本模板包含你要生成的文本以及用于生成文本的变量部分的程序代码。 程序代码允许你重复或有条件地省略部分已生成的文本。 生成的文本本身可以是将组成应用程序一部分的程序代码。
+ 文本模板包含你要生成的文本以及用于生成文本的变量部分的程序代码。 程序代码，可重复或有条件地省略部分已生成的文本。 生成的文本本身可以是将组成应用程序一部分的程序代码。
 
 ## <a name="creating-a-design-time-t4-text-template"></a>创建设计时 T4 文本模板
 
@@ -120,7 +120,7 @@ ms.locfileid: "57323418"
 
    请注意，语句括在 `<#...#>` 内，单个表达式括在 `<#=...#>` 内。 有关详细信息，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。
 
-   如果在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中编写生成代码，则 `template` 指令应包含 `language="VB"`。 默认为 `"C#"`。
+   如果在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中编写生成代码，则 `template` 指令应包含 `language="VB"`。 `"C#"` 默认值。
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>调试设计时 T4 文本模板
  创建文本模板：
@@ -136,7 +136,7 @@ ms.locfileid: "57323418"
   该模板将运行并在断点处停止。 你可以以常用方式检查变量并逐步执行代码。
 
 > [!TIP]
->  `debug="true"` 使生成的代码更精确地映射到文本模板，方法是在生成的代码中插入更多行号指令。 如果不使用它，断点可能在错误状态下停止运行。
+>  `debug="true"` 使生成的代码图更精确地映射到文本模板，方法是在生成的代码中插入更多行号指令。 如果不使用它，断点可能在错误状态下停止运行。
 >
 >  但是，即使不在进行调试，你仍可将该子句留在模板指令中。 这仅会使性能下降一点点。
 
@@ -376,7 +376,7 @@ Warning("A warning message");
 
 ## <a name="next-steps"></a>后续步骤
 
-|后续步骤|主题|
+|下一步|主题|
 |-|-|
 |编写并调试更高级的文本模板，其中的代码使用辅助函数、包含的文件和外部数据。|[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)|
 |在运行时从模板生成文档。|[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)|
