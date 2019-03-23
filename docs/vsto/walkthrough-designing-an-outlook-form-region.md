@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4b7ba2b707ea6a9d79e15891e85b66a82d3a832
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633858"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355573"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>演练：设计 Outlook 窗体区域
   自定义窗体区域扩展标准或自定义 Microsoft Office Outlook 窗体。 在本演练中，你将设计作为新页出现在联系人项目的检查器窗口中的自定义窗体区域。 通过将地址信息发送到 Windows Live 本地搜索网站，此窗体区域将显示为联系人列出的每个地址的映射。 有关窗体区域的信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
@@ -44,7 +44,7 @@ ms.locfileid: "56633858"
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
-- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 或 [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]。
+- [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] 或更高版本。
 
   ![视频链接](../vsto/media/playvideo.gif "链接至视频")本主题的视频版本，请参阅[视频如何：设计 Outlook 窗体区域](http://go.microsoft.com/fwlink/?LinkID=140824)。
 
@@ -160,6 +160,8 @@ ms.locfileid: "56633858"
 4.  保存并关闭联系人项目。
 
 5.  重新打开**Ann Beebe**联系人项目。
+
+    在 Outlook 中，可以进行这**查找**组通过打开联系人的通讯或键入到 Ann Beebe**搜索人员**。
 
 6.  在中**显示**组的项的功能区中，单击**Map It**以打开 Map It 窗体区域。
 
