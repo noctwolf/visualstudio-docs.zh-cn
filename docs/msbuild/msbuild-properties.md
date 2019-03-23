@@ -65,7 +65,7 @@ ms.locfileid: "56631128"
 $(registry:Hive\MyKey\MySubKey@Value)
 ```
 
- 若要获取默认的子密钥值，请省略 `Value`。
+ 若要获取默认的子键值，请省略 `Value`。
 
 ```xml
 $(registry:Hive\MyKey\MySubKey)

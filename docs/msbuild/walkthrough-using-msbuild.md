@@ -222,7 +222,7 @@ $(PropertyName)
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
 ```
 
- 表示“如果尚未定义配置属性，请定义该属性并为其指定‘调试’值”。
+ 表示“如果尚未定义配置属性，请定义该属性并为其指定‘Debug’值”。
 
  几乎所有 MSBuild 元素都可以具有条件属性。 有关使用条件属性的详细讨论，请参阅[条件](../msbuild/msbuild-conditions.md)。
 

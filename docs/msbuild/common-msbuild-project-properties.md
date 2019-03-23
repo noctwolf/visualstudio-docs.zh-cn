@@ -59,7 +59,7 @@ ms.locfileid: "56610601"
 | DefineDebug | 一个布尔值，指示是否定义 DEBUG 常量。 |
 | DefineTrace | 一个布尔值，指示是否定义 TRACE 常量。 |
 | DelaySign | 一个布尔值，指示是否对程序集进行延迟签名，而不对其进行完整签名。 |
-| 是确定的 | 一个布尔值，指示编译器是否为相同的输入生成相同的程序集。 此参数对应于 vbc.exe 和 csc.exe 编译器的 `/deterministic` 开关。 |
+| Deterministic | 一个布尔值，指示编译器是否为相同的输入生成相同的程序集。 此参数对应于 vbc.exe 和 csc.exe 编译器的 `/deterministic` 开关。 |
 | DisabledWarnings | 禁止显示指定的警告。 只有警告标识符的数值部分是必须指定的。 多个警告之间用分号分隔。 此参数对应于 vbc.exe 编译器的 `/nowarn` 开关。 |
 | DisableFastUpToDateCheck | 一个只适用于 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的布尔值。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成管理器使用名为 FastUpToDateCheck 的进程来确定项目是否必须重新生成才能保持最新。 此进程比使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 来确定这一点更快。 通过将 DisableFastUpToDateCheck 属性设置为 `true`，可以跳过 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成管理器，并强制生成管理器使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 来确定项目是否为最新版本。 |
 | DocumentationFile | 作为 XML 文档文件生成的文件的名称。 此名称只包含文件名，不包含路径信息。 |
@@ -77,7 +77,7 @@ ms.locfileid: "56610601"
 | NoStdLib | 一个指示是否避免引用标准库 (mscorlib.dll) 的布尔值。 默认值为 `false`。 |
 | NoVBRuntimeReference | 一个布尔值，指示是否应将 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 运行时 (Microsoft.VisualBasic.dll) 包括为项目中的引用。 |
 | NoWin32Manifest | 一个布尔值，指示是否将用户帐户控制 (UAC) 清单信息嵌入在应用程序的可执行文件中。 它仅适用于面向 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] 的 Visual Studio 项目。 在使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 和免注册的 COM 部署的项目中，将忽略此元素。 `False`（默认值）指示是否将用户帐户控制 (UAC) 清单信息嵌入在应用程序的可执行文件中。 `True` 指定不嵌入 UAC 清单信息。<br /><br /> 此属性仅适用于针对 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] 项目。 在使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 和免注册的 COM 部署的项目中，将忽略此属性。<br /><br /> 只有在不希望 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 在应用程序的可执行文件中嵌入任何清单信息时，才应该添加 NoWin32Manifest；此过程称为“虚拟化”。 若要使用虚拟化，请按照下列方式设置 `<ApplicationManifest>` 和 `<NoWin32Manifest>`：<br /><br /> -   对于 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目，请删除 `<ApplicationManifest>` 节点。 （在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目中，如果存在 `<ApplicationManifest>` 节点，将忽略 `<NoWin32Manifest>`）。<br />-   对于 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目，请将 `<ApplicationManifest>` 设置为 `False`，并将 `<NoWin32Manifest>` 设置为 `True`。 （在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目中，`<ApplicationManifest>` 会重写 `<NoWin32Manifest>`）。<br /> 此属性等效于 vbc.exe 的 `/nowin32manifest` 编译器开关。 |
-| 优化 | 一个布尔值，在设置为 `true` 时，允许进行编译器优化。 此属性等效于 `/optimize` 编译器开关。 |
+| Optimize | 一个布尔值，在设置为 `true` 时，允许进行编译器优化。 此属性等效于 `/optimize` 编译器开关。 |
 | OptionCompare | 指定如何进行字符串比较。 有效值为“binary”或“text”。 此属性等效于 vbc.exe 的 `/optioncompare` 编译器开关。 |
 | OptionExplicit | 一个布尔值，设置为 `true` 时，要求在源代码中显式声明变量。 此属性等效于 `/optionexplicit` 编译器开关。 |
 | OptionInfer | 一个布尔值，设置为 `true` 时，允许进行变量的类型推理。 此属性等效于 `/optioninfer` 编译器开关。 |
@@ -87,7 +87,7 @@ ms.locfileid: "56610601"
 | OverwriteReadOnlyFiles | 一个布尔值，指示要让生成覆盖只读文件还是触发错误。 |
 | PathMap | 指定如何将物理路径映射到编译器输出的源路径名称。 此属性等效于 csc.exe 编译器的 `/pathmap` 开关。 |
 | PdbFile | 正在发出的 .pdb 文件的文件名。 此属性等效于 csc.exe 编译器的 `/pdb` 开关。 |
-| 平台 | 生成所面向的操作系统。 有效值是“Any CPU”、“x86”和“x64”。 |
+| Platform | 生成所面向的操作系统。 有效值是“Any CPU”、“x86”和“x64”。 |
 | ProduceReferenceAssembly | 一个布尔值，设置为 `true` 时，可为当前程序集生成[引用程序集](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md)。 使用此功能时，`Deterministic` 应为 `true`。 此属性对应于 vbc.exe 和 csc.exe 编译器的 `/refout` 开关。 |
 | ProduceOnlyReferenceAssembly | 布尔值，指示编译器仅发出引用程序集，而不是已编译代码。 无法与 `ProduceReferenceAssembly` 一起使用。  此属性对应于 vbc.exe 和 csc.exe 编译器的 `/refonly` 开关。 |
 | RemoveIntegerChecks | 一个布尔值，指示是否禁用整数溢出错误检查。 默认值为 `false`。 此属性等效于 vbc.exe 编译器的 `/removeintchecks` 开关。 |
