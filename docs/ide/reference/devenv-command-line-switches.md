@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7538342cad63d820992fe699e65386f4f3c8e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908460"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868903"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令行开关
 
@@ -62,11 +62,12 @@ ms.locfileid: "55908460"
 
 下面各个命令行开关显示 IDE，并执行所描述的任务。
 
-|命令行开关|说明​​|
+|命令行开关|说明|
 | - |-----------------|
 |[/Command](command-devenv-exe.md)|启动 IDE 并执行指定的命令。<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|在调试器的控制下加载 C++ 可执行文件。 此开关不适用于 Visual Basic 或 C# 可执行文件。 有关详细信息，请参阅[自动启动调试器中的进程](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。<br /><br /> `devenv /debugexe mysln.exe`|
 |[/Diff](diff.md)|比较两个文件。 采用四个参数：SourceFile、TargetFile、SourceDisplayName（可选）和 TargetDisplayName（可选）。<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
+|[/DoNotLoadProjects](donotloadprojects-devenv-exe.md)|打开指定的解决方案，而不加载任何项目。<br /><br /> `devenv /donotloadprojects mysln.sln`|
 |[/Edit](edit-devenv-exe.md)|在此应用程序的运行实例中打开指定的文件。 如果没有正在运行的实例，它启动具有简化的窗口布局的新实例。<br /><br /> `devenv /edit File1 File2`|
 |[/LCID 或 /L](lcid-devenv-exe.md)|为 IDE 设置默认语言。 如果 Visual Studio 安装中不包括指定语言，此设置遭忽略。<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|启动 Visual Studio 并将所有活动记录到日志文件中。<br /><br /> `devenv /log mylogfile.xml`|
@@ -78,7 +79,7 @@ ms.locfileid: "55908460"
 
 下面各个命令行开关不显示 IDE。
 
-|命令行开关|说明​​|
+|命令行开关|说明|
 | - |-----------------|
 |[/?](q-devenv-exe.md)|在“命令提示符”窗口中显示 `devenv` 开关的相关帮助信息。<br /><br /> 此开关不带参数。|
 |[build](build-devenv-exe.md)|根据指定解决方案的配置，生成指定的解决方案或项目。<br /><br /> `devenv mysln.sln /build`|

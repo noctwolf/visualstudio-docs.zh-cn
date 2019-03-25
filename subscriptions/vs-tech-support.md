@@ -4,19 +4,19 @@ author: evanwindom
 ms.author: jaunger
 manager: lank
 ms.date: 2/13/2019
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: 了解如何激活 Visual Studio 订阅中包含的技术支持权益。
 searchscope: VS Subscription
-ms.openlocfilehash: 7b0968532a1feffb667bb0cd2f3e04f1deb02bb5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: ab56754f6ef707eb619d7473cb391d415506a396
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323473"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867098"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>激活并使用 Visual Studio 订阅中的技术支持权益
 
-Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命周期](https://support.microsoft.com/lifecycle/search)的主流支持阶段产品的“非生产环境”中的中断修复问题。 Visual Studio Enterprise 标准版和年度云订阅接收四个事件，但 Visual Studio Professional 标准版和年度云订阅接收两个事件，从权益激活开始最多一年。 权益激活必须在订阅为最新状态时进行。 
+Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命周期](https://support.microsoft.com/lifecycle/search)的主流支持阶段产品的“非生产环境”中的中断修复问题。 Visual Studio Enterprise 标准版和年度云订阅接收四个事件，但 Visual Studio Professional 标准版和年度云订阅接收两个事件，从权益激活开始最多一年。 权益激活必须在订阅为最新状态时进行。
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 https://visualstudio.microsoft.com/vs/pricing/，查看各 Visual Studio 订阅购买选项。
@@ -27,14 +27,15 @@ Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命�
 要使用权益提交支持请求，必须先激活该权益 **。** 按照下一节中的步骤完成激活操作。
 
 ## <a name="how-to-activate-the-benefit"></a>如何激活权益
-1. 请转到 https://my.visualstudio.com/Benefits，向下滚动到“支持”部分，在“技术支持”磁贴上单击“聊天激活”。 
+
+1. 请转到 https://my.visualstudio.com/Benefits，向下滚动到“支持”部分，在“技术支持”磁贴上单击“聊天激活”。
     > [!div class="mx-imgBorder"]
     > ![技术支持权益磁贴](_img/vs-tech-support/vs-tech-support-tile.png)
-2. 此操作将启动与可以创建“合同ID”和“访问ID”的代表的聊天会话，并通过电子邮件将这些内容提供给你，以便将其用于记录。 
+2. 此操作将启动与可以创建“合同ID”和“访问ID”的代表的聊天会话，并通过电子邮件将这些内容提供给你，以便将其用于记录。
 
 3. 若要完成该进程，需向代表提供：
    - 所在国家/地区
-   - 公司名称 
+   - 公司名称
    - 全名
    - 用于登录到订阅的电子邮件地址
    - 电话号码
@@ -43,19 +44,18 @@ Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命�
    > [!div class="mx-imgBorder"]
    > ![技术支持权益查找订阅 ID](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
 
-4. 完成此过程后，你将收到一封电子邮件，其中包含在创建支持事件时将使用的“合同 ID”和“访问 ID”。 
+4. 完成此过程后，你将收到一封电子邮件，其中包含在创建支持事件时将使用的“合同 ID”和“访问 ID”。
 
 > [!NOTE]
 > 若要激活非英语的支持帐户，请从[此列表](https://support.microsoft.com/help/14084/activate-support-contract)选择所在国家/地区。
-
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>如何使用权益提交事件
 
 设置“合同 ID”和“访问 ID”后，可以使用它[联机](http://support.microsoft.com/oas/)提交技术支持事件（需要登录），或通过 [Azure 门户](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)提交技术支持事件，或拨打所在国家/地区的技术支持电话提交技术支持事件。 如果联机提交事件，可以选择让 Microsoft 支持部门专业人员回电。
 
-### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>合同 ID 和访问 ID 是否已与用于登录以联机提交技术支持事件的帐户相关联？  
+### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>合同 ID 和访问 ID 是否已与用于登录以联机提交技术支持事件的帐户相关联？
 
-联机提交事件时，系统会首先提示你进行登录。 使用已与合同 ID 和访问 ID 关联的帐户登录。 支持工作流的步骤 3 将显示与帐户关联的现有支持计划权益。 只需选择该计划并继续提交事例。 可以提交事件，直至计划中指示的限制或计划的到期日期（以先到者为准）。 剩余的事件显示为“0”或者计划到期后，它就不再处于活跃状态。  
+联机提交事件时，系统会首先提示你进行登录。 使用已与合同 ID 和访问 ID 关联的帐户登录。 支持工作流的步骤 3 将显示与帐户关联的现有支持计划权益。 只需选择该计划并继续提交事例。 可以提交事件，直至计划中指示的限制或计划的到期日期（以先到者为准）。 剩余的事件显示为“0”或者计划到期后，它就不再处于活跃状态。
 
    > [!div class="mx-imgBorder"]
    > ![技术支持权益事件提交步骤 3](_img/vs-tech-support/vs-tech-support-step3.png)
@@ -87,17 +87,16 @@ Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命�
    > [!div class="mx-imgBorder"]
    > ![技术支持权益事件提交 - 添加合同 ID](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
 
-5. 添加合同后，该合同将显示在顶部的“选择支持计划”下。 计划将在标题中包含术语“MSDN”。 选择它，向下滚动，然后单击“下一步”。 
+5. 添加合同后，该合同将显示在顶部的“选择支持计划”下。 计划将在标题中包含术语“MSDN”。 选择它，向下滚动，然后单击“下一步”。
 
    > [!div class="mx-imgBorder"]
    > ![技术支持权益事件提交 - 选择计划](_img/vs-tech-support/vs-tech-support-choose-plan.png)
 
-6. 请完成其余步骤（严重性、联系信息、评审）。   提交事件后，会看到确认消息显示事件已成功提交，并且可以将文件上传到事例。 我们将为事件分配支持部门专业人员，并使用你选择的联系方式与你联系以解决问题。 
+6. 请完成其余步骤（严重性、联系信息、评审）。   提交事件后，会看到确认消息显示事件已成功提交，并且可以将文件上传到事例。 我们将为事件分配支持部门专业人员，并使用你选择的联系方式与你联系以解决问题。
 
 #### <a name="submit-an-incident-by-phone"></a>通过电话提交事件
 
 如果希望通过电话创建支持事件，请找到所在国家/地区的[客户服务](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers)电话号码。 呼叫时请确保具有可用的合约 ID 和访问 ID。
-
 
 #### <a name="submit-an-incident-within-the-azure-portal"></a>在 Azure 门户中提交事件
 
@@ -118,9 +117,8 @@ Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命�
 | Visual Studio Dev Essentials | NA | 不可用 |NA|
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup> 包括：Imagine 高级版。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine Standard、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务。
+<sup>1</sup>  *包括：Imagine Premium、BizSpark。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、Imagine Standard、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务。*
 
 <sup>2</sup> 包括：Imagine 标准版。
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
-

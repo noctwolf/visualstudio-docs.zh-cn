@@ -7,18 +7,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39a6316265b6b3747f247890d45a769ef9240387
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 03353225507dca8700daa71b5dd0331c782e78ae
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596020"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984035"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>将现有的应用程序更新到 MSBuild 15
 
 在 15.0 之前的 MSBuild 版本中，是从全局程序集缓存 (GAC) 加载 MSBuild ，并在注册表中安装 MSBuild 扩展的。 这样确保了所有应用程序使用相同版本的 MSBuild 和访问相同的工具集，但阻止了 Visual Studio 不同版本的并行安装。
 
-为支持更快、更小的并行安装，Visual Studio 2017 不再将 MSBuild 放置在 GAC 中或修改注册表。 遗憾的是，这意味着希望使用 MSBuild API 评估或生成项目的应用程序不能隐式依赖于 Visual Studio 安装。
+为支持更快、更小的并行安装，Visual Studio 2017 及更高版本不再将 MSBuild 放置在 GAC 中或修改注册表。 遗憾的是，这意味着希望使用 MSBuild API 评估或生成项目的应用程序不能隐式依赖于 Visual Studio 安装。
 
 ## <a name="use-msbuild-from-visual-studio"></a>从 Visual Studio 使用 MSBuild
 
@@ -42,7 +42,7 @@ ms.locfileid: "56596020"
 
 将项目文件更改为从 NuGet 包中引用 MSBuild 程序集。 指定 `ExcludeAssets=runtime` 以告知 NuGet 仅在生成期间需要程序集，不应将其复制到输出目录。
 
-MSBuild 包的主要版本和次要版本须低于或等于希望支持的 Visual Studio 的最低版本。 如果希望支持 Visual Studio 2017 的任意版本，请引用 `15.1.548` 版本的包。
+MSBuild 包的主要版本和次要版本须低于或等于希望支持的 Visual Studio 的最低版本。 例如，如果想要支持 Visual Studio 2017 和更高版本，请引用包版本 `15.1.548`。
 
 例如，可以使用此 XML：
 

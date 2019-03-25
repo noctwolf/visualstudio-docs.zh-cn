@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3af730ae4d5b358eab223e2a5a8288daaf632071
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939471"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069627"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 
@@ -35,9 +35,21 @@ ms.locfileid: "55939471"
 
 先创建一个新文件并向其添加一些代码。
 
-1. 打开 Visual Studio，在菜单栏上的“文件”菜单中，选择“新建文件”。
+::: moniker range="vs-2017"
 
-1. 在“新建文件”对话框的“常规”类别中，选择“Visual Basic 类”，然后选择“打开”。
+1. 打开 Visual Studio。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 打开 Visual Studio。 按 Esc  或单击“开始”窗口中的“继续但无需代码”以打开开发环境。
+
+::: moniker-end
+
+2. 在菜单栏上的“文件”菜单中，选择“新建文件”。
+
+3. 在“新建文件”对话框的“常规”类别中，选择“Visual Basic 类”，然后选择“打开”。
 
    编辑器中将打开主干为 Visual Basic 类的新文件。 （你可能已经注意到，无需创建完整的 Visual Studio 项目来获取代码编辑器提供的某些权益，例如语法高亮。 仅需一个代码文件即可！）
 

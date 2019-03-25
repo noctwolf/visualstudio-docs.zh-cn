@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: af10b4d83cd39c388c5343501f4d6281c0b7a960
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316140"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982917"
 ---
 # <a name="install-unit-test-frameworks"></a>安装单元测试框架
 
@@ -26,9 +26,19 @@ Visual Studio 测试资源管理器可以运行任何针对该资源管理器开
 
 ### <a name="install-from-visual-studio"></a>通过 Visual Studio 安装
 
-1. 在标准菜单上，依次选择“工具”和“扩展和更新”。
+::: moniker range="vs-2017"
 
-2. 依次展开“联机” > “Visual Studio Marketplace” > “工具”。 选择“测试”。
+1. 选择“工具”>“扩展和更新”。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 选择“扩展”>“管理扩展”。
+
+::: moniker-end
+
+2. 展开“联机” > “Visual Studio Marketplace” > “工具”，然后选择“测试”。
 
 3. 浏览列表以查找框架。
 

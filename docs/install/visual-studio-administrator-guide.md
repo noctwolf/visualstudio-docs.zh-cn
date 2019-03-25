@@ -15,20 +15,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b30a104afcbadc9397cc5c7bd79fa746b0e69a9f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710105"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983814"
 ---
-# <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 管理员指南
+# <a name="visual-studio-administrator-guide"></a>Visual Studio 管理员指南
 
 在企业环境中，系统管理员通常会从网络共享或通过使用系统管理软件向最终用户部署安装。 为了支持企业部署，我们精心设计了 Visual Studio 安装程序引擎，以便系统管理员可以创建网络安装位置、预配置安装默认值、在安装过程中部署产品密钥以及管理成功推出的产品更新。 本管理员指南通过各种情境，提供有关在网络环境中进行企业部署的指导。
 
-## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>在企业环境中部署 Visual Studio 2017
+## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>在企业环境中部署 Visual Studio
 
-只要每台目标计算机满足[最低安装要求](/visualstudio/productinfo/vs2017-system-requirements-vs)，就可以将 Visual Studio 2017 部署到客户端工作站。 无论是通过 System Center 等软件还是通过批处理文件进行部署，通常都需要完成以下步骤：
+只要每台目标计算机满足[最低安装要求](/visualstudio/productinfo/vs2017-system-requirements-vs)，就可以将 Visual Studio 部署到客户端工作站。 无论是通过 System Center 等软件还是通过批处理文件进行部署，通常都需要完成以下步骤：
 
 1. 在网络位置上[创建包含 Visual Studio 产品文件的网络共享](create-a-network-installation-of-visual-studio.md)。
 
@@ -47,14 +47,14 @@ ms.locfileid: "56710105"
 8. 定期运行第 1 步中的命令来添加更新后的组件，使用 Visual Studio [最新更新刷新网络位置](update-a-network-installation-of-visual-studio.md)。
 
 > [!IMPORTANT]
-> 请注意，从网络共享进行安装会“记住”它们的源位置。 这意味着客户端计算机的修复可能需要返回最初从中安装客户端的网络共享。 请仔细选择网络位置，使其符合在组织中运行的 Visual Studio 2017 客户端的预期生存期。
+> 请注意，从网络共享进行安装会“记住”它们的源位置。 这意味着客户端计算机的修复可能需要返回最初从中安装客户端的网络共享。 请谨慎选择网络位置，使其符合在组织中运行的 Visual Studio 客户端的预期生存期。
 
 ## <a name="use-visual-studio-tools"></a>使用 Visual Studio 工具
 
 我们提供了几种工具来帮助你在客户端计算机上[检测和管理安装的 Visual Studio 实例](tools-for-managing-visual-studio-instances.md)。
 
 > [!TIP]
-> 除了管理员指南中的文档外，[Visual Studio 安装程序存档](https://devblogs.microsoft.com/setup/tag/vs2017/)也是不错的 Visual Studio 2017 安装程序参考信息源。
+> 除了管理员指南中的文档外，[Visual Studio 安装程序存档](https://devblogs.microsoft.com/setup/tag/vs2017/)也是不错的 Visual Studio 安装程序参考信息源。
 
 ## <a name="specify-customer-feedback-settings"></a>指定客户反馈设置
 
@@ -74,8 +74,8 @@ Value = (DWORD)
 
 ## <a name="see-also"></a>请参阅
 
-* [安装 Visual Studio 2017](install-visual-studio.md)
-* [使用命令行参数安装 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [安装 Visual Studio](install-visual-studio.md)
+* [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [命令行参数示例](command-line-parameter-examples.md)
   * [工作负载和组件 ID 参考](workload-and-component-ids.md)
 * [创建基于网络的 Visual Studio 安装](create-a-network-installation-of-visual-studio.md)

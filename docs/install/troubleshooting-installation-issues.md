@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 73e1616af5665fc7ae89a3aa1019f2600afc24fd
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953964"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984126"
 ---
-# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 安装和升级问题疑难解答
+# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio 安装和升级问题疑难解答
 
 > [!IMPORTANT]
 > 安装时遇到问题？ 我们可以为你提供帮助。 我们提供[**实时聊天**](https://visualstudio.microsoft.com/vs/support/#talktous)（仅英语）支持选项。
@@ -86,7 +86,7 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 
 若要排查大部分的安装问题，需要有安装日志。 使用 Visual Studio 安装程序中的[报告问题](../ide/how-to-report-a-problem-with-visual-studio.md)提交问题时，这些日志会自动添加到报告中。
 
-如果联系 Microsoft 支持部门，可能需要使用 [Microsoft Visual Studio 和 .NET Framework 日志收集工具](https://aka.ms/vscollect)来提供这些安装日志。 日志收集工具从 Visual Studio 2017 安装的所有组件（包括 .NET Framework、Windows SDK 和 SQL Server）中收集安装日志。 它还会收集计算机信息、Windows Installer 清单，以及 Visual Studio 安装程序、Windows Installer 和系统还原的 Windows 事件日志信息。
+如果联系 Microsoft 支持部门，可能需要使用 [Microsoft Visual Studio 和 .NET Framework 日志收集工具](https://aka.ms/vscollect)来提供这些安装日志。 日志收集工具从 Visual Studio 安装的所有组件（包括 .NET Framework、Windows SDK 和 SQL Server）收集安装日志。 它还会收集计算机信息、Windows Installer 清单，以及 Visual Studio 安装程序、Windows Installer 和系统还原的 Windows 事件日志信息。
 
 收集日志的具体步骤：
 
@@ -104,7 +104,7 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 
 ## <a name="see-also"></a>请参阅
 
-* [删除 Visual Studio 2017](remove-visual-studio.md)
+* [删除 Visual Studio](remove-visual-studio.md)
 * [在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [用于检测和管理 Visual Studio 实例的工具](tools-for-managing-visual-studio-instances.md)
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)

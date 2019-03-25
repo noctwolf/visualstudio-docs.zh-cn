@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ef81aba75e42e7d3d713d5f6efb7129b55b2d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eefff14fd2277f791b61677fb9a23894c974c353
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632389"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070134"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild 保留属性和已知属性
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供了一组预定义的属性，这些属性存储有关项目文件和 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 二进制文件的信息。 这些属性的计算方式与其他 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 属性相同。 例如，要使用 `MSBuildProjectFile` 属性，应键入 `$(MSBuildProjectFile)`。
@@ -57,6 +57,7 @@ ms.locfileid: "56632389"
 | `MSBuildThisFileName` | 保留 | `MSBuildThisFileFullPath` 的文件名部分，不包含文件扩展名。 |
 | `MSBuildToolsPath` | 保留 | 与 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]的值相关联的 `MSBuildToolsVersion` 版本的安装路径。<br /><br /> 不要将最终的反斜杠包含在路径中。<br /><br /> 不能重写此属性。 |
 | `MSBuildToolsVersion` | 保留 | 用于生成项目的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工具集版本。<br /><br /> 注意:包含用于生成应用程序的任务、目标和工具的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工具集。 工具包括编译器，例如 csc.exe 和 vbc.exe。 有关详细信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 和[标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)。 |
+| `MSBuildVersion` | 保留 | 用于生成项目的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 版本。 <br /><br/> 此属性不能重写，否则将返回 `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` 错误消息。 |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>与 MSBuild 元素冲突的名称
 

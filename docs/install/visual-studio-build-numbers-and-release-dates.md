@@ -6,20 +6,22 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/07/2019
+ms.date: 03/13/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
 ms.workload:
 - multiple
-ms.openlocfilehash: ddba89da33d06b740978fe2972863a2c3177496f
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: d5c5a21c83329d8c528421c2336755a5d0621be9
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567404"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194974"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 内部版本号和发布日期
+
+::: moniker range="vs-2017"
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
@@ -27,6 +29,8 @@ ms.locfileid: "57567404"
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.9 | Release | 2019 年 3 月 12 日 | 15.9.28307.518 |
+| 15.0.21 | Release | 2019 年 3 月 12 日 | 15.0.26228.76 |
 | 15.9.8 | Release | 2019 年 3 月 5 日 | 15.9.28307.481 |
 | 15.9.7 | Release | 2019 年 2 月 12 日 | 15.9.28307.423 |
 | 15.0.21 | Release | 2019 年 2 月 12 日 | 15.0.26228.73 |
@@ -172,12 +176,21 @@ ms.locfileid: "57567404"
 | 15.1 预览版 1 | 预览 | 2017 年 3 月 7 日 | 15.0.26304.0 |
 | 15.0.0 | Release | 2017 年 3 月 7 日 | 15.0.26228.4 |
 
+> [!NOTE]
+> 有关下一版本 Visual Studio 的生成号和发布日期的详细信息，请参阅 [Visual Studio 2019 生成号和发布日期](/visualstudio/install/visual-studio-build-numbers-and-release-dates?view=vs-2019)页。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
 ## <a name="visual-studio-2019"></a>Visual Studio 2019
 
 下表列出了 Visual Studio 2019 的最新生成号和发布日期’。
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | 候选发布 2 (RC.2) | 2019 年 3 月 12 日 | 16.0.28711.60 |
+| 16.0.0 | 预览版 4.2 | 2019 年 3 月 12 日 | 16.0.28711.60 |
 | 16.0.0 | 候选发布 1 Svc1 (RC.1 Svc1) | 2019 年 3 月 6 日 | 16.0.28705.295 |
 | 16.0.0 | Preview 4.1 Svc1 | 2019 年 3 月 6 日 | 16.0.28705.295 |
 | 16.0.0 | 候选发布 1 (RC.1) | 2019 年 3 月 5 日 | 16.0.28701.123 |
@@ -191,11 +204,13 @@ ms.locfileid: "57567404"
 | 16.0.0 | 预览版 1.1 | 2018 年 12 月 10 日 | 16.0.28408.50 |
 | 16.0.0 | 预览版 1 | 2018 年 12 月 4 日 | 16.0.28329.73 |
 
+::: moniker-end
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>请参阅
 
-* [Visual Studio 发行节奏](/visualstudio/productinfo/release-rhythm)
-* [Visual Studio 2017 管理员指南](visual-studio-administrator-guide.md)
-* [使用命令行参数安装 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio 发行节奏](/visualstudio/productinfo/release-rhythm/)
+* [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
+* [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [用于检测和管理 Visual Studio 实例的工具](tools-for-managing-visual-studio-instances.md)

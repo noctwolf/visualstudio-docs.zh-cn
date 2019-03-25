@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd95c248ecec057cfb602b7f2324d680f715ed68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a41b9286ba35351a0dea91d87a4852319a94e93
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946533"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983060"
 ---
 # <a name="options-page-debugging-node-properties"></a>“选项”页 ->“调试”节点属性
 下表描述了与“选项”对话框的“调试”类别 `DTE.Properties("Debugging", <Property Page>)` 关联的页面（或属性集合）。
@@ -21,7 +21,7 @@ ms.locfileid: "55946533"
 ## <a name="general"></a>常规
  `DTE.Properties("Debugging", "General")`
 
-|属性项名称|值|说明​​|
+|属性项名称|值|说明|
 | - |-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (Boolean)|确定调试器是否在删除项目中的所有断点之前请示授权。|
 |BreakAllProcesses|Get/Set (Boolean)|确定调试器是否在单个进程中断时中断所有进程。|
@@ -51,7 +51,7 @@ ms.locfileid: "55946533"
 ## <a name="edit-and-continue"></a>编辑并继续
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|属性项名称|值|说明​​|
+|属性项名称|值|说明|
 | - |-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Boolean)|确定是否启用“编辑并继续”。 此选项适用于所有支持“编辑并继续”的语言。|
 |InvokedByCommands|Get/Set (Boolean)|确定当用户选择调试命令（例如“单步执行”或“继续”）时，是否自动将“编辑并继续”应用代码更改。 此选项仅适用于本机代码。|
@@ -63,7 +63,7 @@ ms.locfileid: "55946533"
 ## <a name="just-in-time"></a>实时
  `DTE.Properties("Debugging", "JustInTime")`
 
-|属性项名称|值|说明​​|
+|属性项名称|值|说明|
 | - |-----------|-----------------|
 |JitManaged|Get/Set (Boolean)|确定是否为托管代码启用实时调试。|
 |JitNative|Get/Set (Boolean)|确定是否为本机代码启用实时调试。|
@@ -72,7 +72,7 @@ ms.locfileid: "55946533"
 ## <a name="native"></a>Native
  `DTE.Properties("Debugging", "Native")`
 
-|属性项名称|值|说明​​|
+|属性项名称|值|说明|
 | - |-----------|-----------------|
 |LoadDllExports|Get/Set (Boolean)|确定调试器是否加载 DLL 导出表。|
 |EnableRPC|Get/Set (Boolean)|确定调试器是否可以单步执行 COM 远程过程调用。|
@@ -84,5 +84,5 @@ ms.locfileid: "55946533"
 - [“选项”页 ->“字体和颜色”节点属性](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [“选项”页 ->“文本编辑器”节点属性](../../ide/reference/options-page-text-editor-node-properties.md)
 - [“选项”对话框 ->“调试”->“常规”](../../debugger/general-debugging-options-dialog-box.md)
-- [“选项”对话框 ->“调试”->“编辑并继续”](../../debugger/edit-and-continue.md?view=vs-2015)
+- [编辑并继续调试](../../debugger/edit-and-continue.md)
 - [“选项”对话框 ->“调试”->“实时”](../../debugger/just-in-time-debugging-options-dialog-box.md)

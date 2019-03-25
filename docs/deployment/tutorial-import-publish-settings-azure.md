@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be70da79b1edc6142be1c45464097a027f859979
-ms.sourcegitcommit: 7153e2fc717d32e0e9c8a9b8c406dc4053c9fd53
+ms.openlocfilehash: 38601f8d88b56c3957943b28be298ac24eb12c91
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56413561"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983918"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>通过在 Visual Studio 中导入发布设置将应用程序发布到 Azure 应用服务
 
 可使用“发布”工具导入发布设置，然后部署应用。 在本文中，我们使用 Azure 应用服务的发布设置，但你可以使用类似的步骤从 [IIS](../deployment/tutorial-import-publish-settings-iis.md) 导入发布设置。 在某些情况下，对于每个 Visual Studio 安装，使用发布设置配置文件比为服务手动配置部署要快。
 
-这些步骤适用于 Visual Studio 中的 ASP.NET、ASP.NET Core 和 .NET Core 应用。 也可以为 [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 应用导入发布设置。 这些步骤对应于 Visual Studio 2017 版本 15.6。
+这些步骤适用于 Visual Studio 中的 ASP.NET、ASP.NET Core 和 .NET Core 应用。 也可以为 [Python](../python/publishing-python-web-applications-to-azure-from-visual-studio.md) 应用导入发布设置。
 
 在本教程中，你将：
 
@@ -37,9 +37,19 @@ ms.locfileid: "56413561"
 
 ## <a name="prerequisites"></a>系统必备
 
+::: moniker range=">=vs-2019"
+
+* 必须安装 Visual Studio 2019 且具有 ASP.NET 和 web 开发工作负载。
+
+    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 * 须安装 Visual Studio 2017 且具有 ASP.NET 和 web 开发工作负载。
 
-    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 页免费安装。
+    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
+::: moniker-end
 
 * 创建 Azure 应用服务。 有关详细说明，请参阅[使用 Visual Studio 将 ASP.NET Core Web 应用部署到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 

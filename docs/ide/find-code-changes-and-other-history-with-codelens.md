@@ -9,19 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d495f4f64e56981637680f8333936647fe70c68
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941044"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867850"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
 
 通过 CodeLens，你可以在专注于工作的同时了解代码所发生的情况 &ndash; 而无需离开编辑器。 可以查找代码引用、代码更改、关联的 Bug、工作项、代码评审和单元测试。
 
+::: moniker range="vs-2017"
+
 > [!NOTE]
 > CodeLens 仅在 Visual Studio Enterprise 和 Visual Studio Professional 版中可用。 在 Visual Studio Community 版中不可用。
+
+::: moniker-end
 
 了解各个部分的代码在解决方案中的使用位置和使用方式：
 
@@ -54,7 +58,7 @@ ms.locfileid: "55941044"
 
 若要查看该代码与其引用之间的关系，[创建代码图](../modeling/map-dependencies-across-your-solutions.md)。 在代码图快捷菜单中，选择“显示所有引用”。
 
-![CodeLens - 代码图上的引用](../ide/media/codelensmappedreferences.png)
+![CodeLens - 代码映射上的引用](../ide/media/codelensmappedreferences.png)
 
 ## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>查找代码中的更改
 
@@ -62,7 +66,7 @@ ms.locfileid: "55941044"
 
 需要：
 
-- Visual Studio Enterprise 或 Visual Studio Professional
+- Visual Studio 2019（或 Visual Studio 2017 Enterprise 或 Professional 版本）
 
 - Team Foundation Server 2013 或更高版本、Azure DevOps Services 或 Git
 
@@ -182,7 +186,7 @@ ms.locfileid: "55941044"
 
 选择“评审”指示器，查找关联的代码评审。 若要使用键盘，按住 Alt，然后按“向左键”或“向右键”来导航指示器选项。
 
-![CodeLens - 查看代码评审请求](../ide/media/codelens-code-reviews.png)
+![CodeLens - 查看代码审阅请求](../ide/media/codelens-code-reviews.png)
 
 ## <a name="linked-bugs"></a>关联的 bug
 

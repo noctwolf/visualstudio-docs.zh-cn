@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8c8616ffc9adeebe5fd2b224366d05cbf5c66a2e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 8dc08ce4ef3f4afd8cd7630848ef1ee67e1f2970
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525370"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152923"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 C# 或 Visual Basic
 
@@ -25,17 +25,20 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
 
 ## <a name="create-a-new-project"></a>创建新项目
 
-1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
+1. 在 Visual Studio 中，依次选择“文件”>“新建”>“项目”。
 
-2. 在“Visual C#”或“Visual Basic”下选择“.NET Core”，然后在中间窗格中选择“控制台应用(.NET Core)”。
+    ::: moniker range=">=vs-2019"
+    “创建新项目”对话框随即打开。 在搜索框中键入“.net”以搜索结果，选择“控制台应用 (.NET Core)”，然后单击“下一步”。 然后，输入名称（如“MyDbgApp”），然后选择“创建”。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    “新建项目”对话框随即打开。 在“Visual C#”下选择“.NET Core”，然后在中间窗格中选择“控制台应用 (.NET Core)”。 然后，键入名称（如 MyDbgApp），然后单击“确定”。
+    ::: moniker-end
 
-     如果没有看到“控制台应用(.NET Core)”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“.NET 桌面开发”和“.NET Core”工作负载，然后选择“修改”。
-
-3. 键入名称（例如“MyDbgApp”），单击“确定”。
+     如果没有看到“控制台应用 (.NET Core)”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“.NET 桌面开发”和“.NET Core”工作负载，然后选择“修改”。
 
     Visual Studio 随即创建项目。
 
-4. 在“Program.cs”或“Module1.vb”中，替换以下代码
+1. 在“Program.cs”或“Module1.vb”中，替换以下代码
 
     ```csharp
     class Program

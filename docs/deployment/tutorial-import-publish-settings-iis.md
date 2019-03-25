@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07666efb673702e20c3c5c4a9b279de729e4c838
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cad2d1a83ed60cde4f3a410f8183e5ee6074321c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605397"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983905"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>通过在 Visual Studio 中导入发布设置将应用程序发布到 IIS
 
 可使用“发布”工具导入发布设置，然后部署应用。 在本文中，我们使用 IIS 的发布设置，但你可以使用类似的步骤导入 [Azure 应用服务](../deployment/tutorial-import-publish-settings-azure.md)的发布设置。 在某些情况下，对于每个 Visual Studio 安装，使用发布设置配置文件比为 IIS 手动配置部署要快。
 
-这些步骤适用于 Visual Studio 中的 ASP.NET、ASP.NET Core 和 .NET Core 应用。 这些步骤对应于 Visual Studio 2017 版本 15.6。
+这些步骤适用于 Visual Studio 中的 ASP.NET、ASP.NET Core 和 .NET Core 应用。
 
 在本教程中，你将：
 
@@ -38,9 +38,19 @@ ms.locfileid: "56605397"
 
 ## <a name="prerequisites"></a>系统必备
 
-* 开发计算机上必须安装 Visual Studio 2017 且具有 ASP.NET 和 web 开发工作负载。
+::: moniker range=">=vs-2019"
 
-    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 页免费安装。
+* 必须安装 Visual Studio 2019 且具有 ASP.NET 和 Web 开发工作负载。
+
+    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+* 须安装 Visual Studio 2017 且具有 ASP.NET 和 web 开发工作负载。
+
+    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
+::: moniker-end
 
 * 服务器上必须运行 Windows Server 2012 或 Windows Server 2016，并且必须正确安装 [IIS Web 服务器角色](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)（需要生成发布设置文件 (\*.publishsettings)）。 该服务器上还必须安装 ASP.NET 4.5 或 ASP.NET Core。 若要安装 ASP.NET 4.5，请参阅[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。 若要安装 ASP.NET Core，请参阅 [使用 IIS 在 Windows 上托管 ASP.NET Core](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 

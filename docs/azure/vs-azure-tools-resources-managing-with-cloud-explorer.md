@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: fc72fdc63fefd5b60ecfc8ab001b94b87b69e481
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 922e13e77713e7f4ba5bd18af93507855d292537
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323797"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194688"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>在 Visual Studio Cloud Explorer 中管理与 Azure 帐户关联的资源
 
@@ -24,17 +24,17 @@ ms.locfileid: "57323797"
 
 ## <a name="prerequisites"></a>系统必备
 
-* 已选择 **Azure 工作负载**的 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)，或者包含[适用于 .NET 2.9 的 Microsoft Azure SDK](https://www.microsoft.com/download/details.aspx?id=51657) 的 Visual Studio 的早期版本。
+* Visual Studio 2017 或更高版本（请参阅[Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)），已选择“Azure 工作负载”。 还可以使用带有 [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) 的 Visual Studio 早期版本。
 * Microsoft Azure 帐户 - 如果没有帐户，可以[注册免费试用帐户](http://go.microsoft.com/fwlink/?LinkId=623901)，或者[激活 Visual Studio 订户权益](http://go.microsoft.com/fwlink/?LinkId=623901)。
 
 > [!NOTE]
-> 若要查看 Cloud Explorer，请选择菜单栏上的“视图” > “Cloud Explorer”。
+> 若要查看 Cloud Explorer，请按 Ctrl+Q**以调用“快速启动”**，然后输入“Cloud Explorer”。
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>将 Azure 帐户添加到 Cloud Explorer
 
-要查看与 Azure 帐户关联的资源，必须先将帐户添加到 Cloud Explorer。
+若要查看与 Azure 帐户关联的资源，必须先将帐户添加到 Cloud Explorer 中。
 
-1. 在 **Cloud Explorer** 中，选择“Azure 帐户设置”。
+1. 在 Cloud Explorer 中，选择“帐户管理”按钮。
 
    ![Cloud Explorer Azure 帐户设置图标](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 

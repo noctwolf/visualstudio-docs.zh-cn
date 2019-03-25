@@ -6,17 +6,17 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 4f3c868edb19cc45e25d73a11e7a65ead37c0b11
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 238370c5f8de5efdb37a29fea9d3e91763a0aa18
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316725"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070030"
 ---
-# <a name="visual-studio-2017-for-mac-preview-tour"></a>Visual Studio 2017 for Mac 预览版导览
+# <a name="visual-studio-2017-for-mac-tour"></a>Visual Studio 2017 for Mac 导览
 
 > [!NOTE]
-> Visual Studio 2019 for Mac [现已推出](installation.md)预览版，可供测试。
+> Visual Studio 2019 for Mac [现已推出](installation.md?view=vsmac-2019)预览版，可供测试。
 
 Visual Studio for Mac 是 Mac 上的 .NET 集成开发环境，可用于编辑、调试和生成代码，然后发布应用。 除了预期的功能（例如，标准编辑器和调试程序）外，Visual Studio for Mac 还包括编译器、代码完成工具、图形设计器和源代码管理，以简化软件开发过程。
 

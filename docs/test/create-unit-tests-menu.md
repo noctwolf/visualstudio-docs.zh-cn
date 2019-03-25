@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a8a8ae7f3a256665697615c3c239a88f2b0d87
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: e8ddc4e7a44aa0d5d42a64556092874413e3a3b2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315100"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982761"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用“创建单元测试”命令创建单元测试方法存根
 
@@ -38,17 +38,28 @@ Visual Studio 中的“创建单元测试”命令能够创建单元测试方法
 
 ![使用“创建单元测试”命令](media/createunittestcommand.png)
 
-## <a name="setting-unit-test-traits"></a>设置单元测试特征
+## <a name="set-unit-test-traits"></a>设置单元测试特征
 
 如果计划在测试自动化进程中运行这些测试，可以考虑在另一个测试项目中创建测试（上述对话框中的第二个选项），并为单元测试设置单元测试特征。 这样便可更轻松地在持续集成或持续部署管道中加入或排除这些特定的测试。 如下所示，通过直接向单元测试添加元数据来设置特征。
 
 ![设置单元测试特征](media/createunittest.png)
 
-## <a name="using-third-party-unit-test-frameworks"></a>使用第三方单元测试框架
+## <a name="use-third-party-unit-test-frameworks"></a>使用第三方单元测试框架
 
 通过 Visual Studio，可轻松使用任何测试框架来创建单元测试。 安装其他测试框架：
 
-1. 选择“工具” > “扩展和更新”。
+::: moniker range="vs-2017"
+
+1. 选择“工具”>“扩展和更新”。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 选择“扩展”>“管理扩展”。
+
+::: moniker-end
+
 2. 展开“联机” > “Visual Studio Marketplace” > “工具”，然后选择“测试”。
 
 ![使用第三方测试框架](media/createunittestfx.png)

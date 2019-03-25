@@ -1,6 +1,6 @@
 ---
 title: 代码样式首选项
-ms.date: 03/10/2017
+ms.date: 03/12/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -10,31 +10,31 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f5ad2f5860c148d4bb9d0ee026eee9b1e83c74c
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a7a478e8d3575e70a11ec776d59337ae93e7a677
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223125"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873355"
 ---
 # <a name="code-style-preferences"></a>代码样式首选项
 
-打开“工具”菜单中的“选项”对话框，即可设置 C# 和 Visual Basic 项目的代码样式首选项。 在“选项”对话框中，选择“文本编辑器”>“[C# 或 Basic]”>“代码样式” > “常规”。 此窗口中设置的选项仅适用于本地计算机。
-
-列表中的每一项都会显示所选首选项的预览：
+打开“工具”菜单中的“选项”对话框，即可设置 C# 和 Visual Basic 项目的代码样式首选项。 在“选项”对话框中，选择“文本编辑器”>“[C# 或 Basic]”>“代码样式” > “常规”。 列表中的每一项都会显示所选首选项的预览：
 
 ![代码样式选项](media/code-style-quick-actions-dialog.png)
+
+在此窗口中设置的选项适用于 Visual Studio 个性化帐户，并且不与特定项目或基本代码相关联。 此外，它们不会在生成时（包括在持续集成 (CI) 生成中）强制执行。 如果要将代码样式首选项与项目相关联，并在生成期间强制执行样式，请在 [.editorconfig 文件](#editorconfig-files) 中指定首选项。
 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中的编辑器行为](/visualstudio/mac/editor-behavior)。
 
 ## <a name="preference-and-severity"></a>首选项和严重级别
 
-对于每个项，可使用每行相应的下拉列表设置“首选项”和“严重性”值。 严重性可设置为“无”、“建议”、“警告”或“错误”。 如果想要为某个代码样式启用[快速操作](../ide/quick-actions.md)，请确保“严重性”设置为“无”以外的其他项。 “快速操作”灯泡![灯泡](media/vs2015_lightbulbsmall.png)、错误灯泡![错误灯泡](media/error-bulb.png)或螺丝刀![螺丝刀](media/screwdriver.png)图标将在使用了非首选样式时出现，你可选择“快速操作”列表上的选项将代码自动重写为首选样式。
+对于每个项，可使用每行相应的下拉列表设置“首选项”和“严重性”值。 严重性可设置为“无”、“建议”、“警告”或“错误”。 如果想要为某个代码样式启用[快速操作](../ide/quick-actions.md)，请确保“严重性”设置为“无”以外的其他项。 “快速操作”灯泡![灯泡](media/light-bulb-dropdown.png)、错误灯泡![错误灯泡](media/error-bulb.png)或螺丝刀![螺丝刀](media/screwdriver.png)图标将在使用了非首选样式时出现，你可选择“快速操作”列表上的选项将代码自动重写为首选样式。
 
 ## <a name="editorconfig-files"></a>EditorConfig 文件
 
-也可以通过 [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) 文件管理 .NET 的代码样式设置。 EditorConfig 文件中的设置优先于“选项”对话框所选选项。 可使用 EditorConfig 文件为整个存储库或项目强制执行和配置代码样式。
+另外，还可以通过将 [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) 文件添加到项目来指定 .NET 的代码样式设置。 这些文件与基本代码（而不是 Visual Studio 个性化帐户）相关联。 EditorConfig 文件中的设置优先于“选项”对话框所选选项。 如果想要将所有参与者的编码样式强制执行到存储库或项目，请使用 EditorConfig 文件。
 
 ## <a name="format-document-command"></a>“设置文档格式”命令
 
@@ -45,7 +45,7 @@ ms.locfileid: "57223125"
 在 Visual Studio 中首次触发“设置文档格式”命令时，将显示一个黄色信息栏，提示你配置代码清理设置。
 
 > [!TIP]
-> .editorconfig 文件中配置为“无”的规则不参与代码清理，但可通过“快速操作和重构”菜单单独应用。
+> 严重性配置为“无”的规则不参与代码清理，但可通过“快速操作和重构”菜单单独应用。
 
 ## <a name="see-also"></a>请参阅
 

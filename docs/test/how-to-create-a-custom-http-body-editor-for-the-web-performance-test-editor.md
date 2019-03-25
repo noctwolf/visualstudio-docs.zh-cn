@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbcf0ec7aa9e7d0b22458006da6f18aba4de8162
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed23869b999f3ced51377dd8d648280fcce7ee7e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936195"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069887"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：为 Web 性能测试编辑器创建自定义 HTTP 正文编辑器
 
@@ -31,9 +31,7 @@ ms.locfileid: "55936195"
 
 ## <a name="create-a-windows-control-library-project"></a>创建 Windows 控件库项目
 
-### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>使用 Windows 控件库项目创建用户控件
-
-1. 在 Visual Studio 中的“文件”菜单上，选择“新建”，然后选择“项目”。
+1. 在 Visual Studio 中的“文件”菜单上，选择“新建” > “项目”。
 
     随即显示“新建项目”对话框。
 
@@ -137,27 +135,27 @@ private MessageEditorControl messageEditorControl
 
  当完成字符串主体的编辑并且用户在插件对话框中单击“确定”时，将调用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> 以获取字符串形式的已编辑文本，并在 Web 测试性能编辑器的请求中更新“字符串主体”。
 
-### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>创建类并实现 IStringHttpBodyEditorPlugin 接口代码
+### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>创建类并实现 IStringHttpBodyEditorPlugin 接口
 
-1.  在解决方案资源管理器中，右键单击 Windows 窗体控件库项目并选择“添加新项”。
+1. 在解决方案资源管理器中，右键单击 Windows 窗体控件库项目并选择“添加新项”。
 
-2.  随即出现“添加新项”对话框。
+   随即出现“添加新项”对话框。
 
-3.  选择“类”。
+2. 选择“类”。
 
-4.  在“名称”文本框中，为类键入有意义的名称，例如 `MessageEditorPlugins`。
+3. 在“名称”文本框中，为类键入有意义的名称，例如 `MessageEditorPlugins`。
 
-5.  选择“添加”。
+4. 选择“添加”。
 
-     Class1 将添加到该项目中，并在代码编辑器中显示。
+   Class1 将添加到该项目中，并在代码编辑器中显示。
 
-6.  在代码编辑器中，添加以下 using 语句：
+5. 在代码编辑器中，添加以下 `using` 语句：
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     ```
 
-7.  编写或复制以下代码以从 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 接口实例化 XmlMessageEditor 类并实现所需方法：
+6. 粘贴到以下代码以实现该接口：
 
     ```csharp
     /// <summary>
@@ -185,7 +183,7 @@ private MessageEditorControl messageEditorControl
         /// plugin dialog which provides OK and Cancel buttons.
         /// </summary>
         /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-        /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+        /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
         /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
         public object CreateEditor(string contentType, string initialValue)
         {
@@ -252,11 +250,11 @@ messageEditorControl 实例承载在 <xref:Microsoft.VisualStudio.TestTools.WebT
             }
 
             /// <summary>
-            /// Create a UserControl to edit the specified bytes.  This control will be hosted in the
+            /// Create a UserControl to edit the specified bytes. This control will be hosted in the
             /// plugin dialog which provides OK and Cancel buttons.
             /// </summary>
             /// <param name="contentType">The content type of the BinaryHttpBody.</param>
-            /// <param name="initialValue">The bytes to edit.  The bytes are the payload of a BinaryHttpBody.</param>
+            /// <param name="initialValue">The bytes to edit. The bytes are the payload of a BinaryHttpBody.</param>
             /// <returns>A UserControl capable of displaying and editing the byte array value of the specified content type.</returns>
             public object CreateEditor(string contentType, byte[] initialValue)
             {
@@ -280,36 +278,32 @@ messageEditorControl 实例承载在 <xref:Microsoft.VisualStudio.TestTools.WebT
 
 ## <a name="build-and-deploy-the-plug-ins"></a>生成和部署插件
 
-### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>为 IStringHttpBodyEditorPlugin 和 IBinaryHttpBodyEditorPlugin 生成和部署产生的 dll
+1. 在“生成”菜单上，选择“生成 \<Windows 窗体控件库项目名称>”。
 
-1.  在“生成”菜单上，选择“生成 \<Windows 窗体控件库项目名称>”。
+2. 关闭 Visual Studio 的所有实例。
 
-2.  关闭 Visual Studio 的所有实例。
+   > [!NOTE]
+   > 关闭 Visual Studio，确保在尝试复制 .dll 文件前不会锁定它。
 
-    > [!NOTE]
-    > 关闭 Visual Studio，确保在尝试复制 .dll 文件前不会锁定它。
+3. 将生成的 .dll 文件（如，MessageEditors.dll）从项目 bin\debug 文件夹复制到 %ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins。
 
-3.  将产生的 .dll 文件（例如，MessageEditors.dll）从项目 bin\debug 文件夹复制到 %ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins。
+4. 打开 Visual Studio。
 
-4.  打开 Visual Studio。
-
-     .dll 现已在 Visual Studio 中注册。
+   .dll 现已在 Visual Studio 中注册。
 
 ## <a name="verify-the-plug-ins-using-a-web-performance-test"></a>使用 Web 性能测试验证插件
 
-### <a name="to-test-your-plug-ins"></a>测试插件
+1. 创建测试项目。
 
-1.  创建测试项目。
+2. 创建 Web 性能测试，然后在浏览器中输入指向 Web 服务的 URL。
 
-2.  创建 Web 性能测试，然后在浏览器中输入指向 Web 服务的 URL。
+3. 记录完成后，在 Web 性能测试编辑器中展开对 Web 服务的请求，然后选择“字符串主体”或“二进制主体”。
 
-3.  记录完成后，在 Web 性能测试编辑器中展开对 Web 服务的请求，然后选择“字符串主体”或“二进制主体”。
+4. 在“属性”窗口中，选择“字符串主体”或“二进制主体”，然后选择省略号 (…)。
 
-4.  在“属性”窗口中，选择“字符串主体”或“二进制主体”，然后选择省略号 (…)。
+   “编辑 HTTP 主体数据”对话框随即显示。
 
-     “编辑 HTTP 主体数据”对话框随即显示。
-
-5.  现在即可编辑数据，然后选择“确定”。 此操作会调用适用的 GetNewValue 方法以更新 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 中的内容。
+5. 现在即可编辑数据，然后选择“确定”。 此操作会调用适用的 GetNewValue 方法以更新 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 中的内容。
 
 ## <a name="compile-the-code"></a>编译代码
 

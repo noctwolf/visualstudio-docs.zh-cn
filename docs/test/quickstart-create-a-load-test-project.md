@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c53d458a3ca80492abd83f5081be220835a613b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948467"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069965"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入门：创建负载测试项目
 
@@ -42,17 +42,35 @@ Web 性能和负载测试项目仅在 Visual Studio Enterprise 中可用。
 
 本节将创建一个 C# 负载测试项目。 如果愿意，还可创建 Visual Basic 负载测试项目。
 
-1. 打开 Visual Studio，然后在菜单栏中，选择“文件” > “新建” > “项目”。
+::: moniker range="vs-2017"
+
+1. 打开 Visual Studio。
+
+2. 从菜单栏中选择“文件”>“新建”>“项目”。
 
    **“新建项目”** 对话框随即打开。
 
-1. 在“新建项目”对话框中，依次展开“已安装”、“Visual C#”，然后选择“测试”类别。 选择“Web 性能和负载测试项目”模板。
+3. 在“新建项目”对话框中，依次展开“已安装”、“Visual C#”，然后选择“测试”类别。 选择“Web 性能和负载测试项目”模板。
 
    ![Web 性能和负载测试项目模板](media/web-perf-load-test-project-template.png)
 
-1. 如果不想使用默认名称，请输入项目名，然后选择“确定”。
+4. 如果不想使用默认名称，请输入项目名，然后选择“确定”。
 
-   Visual Studio 即会创建项目并在“解决方案资源管理器”中显示这些文件。 该项目最初包含一个名为 WebTest1.webtest 的 Web 测试文件。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 打开 Visual Studio。
+
+2. 在“开始”窗口上，选择“创建新项目”。
+
+3. 在“创建新项目”对话框中，在搜索框中键入“web test”，然后选择适用于 C# 的“Web 性能和负载测试项目\[已弃用]”模板。 选择“下一步”。
+
+4. 如果不想使用默认名称，请输入项目名，然后选择“创建”。
+
+::: moniker-end
+
+   Visual Studio 将创建项目并在“解决方案资源管理器”中显示文件。 该项目最初包含一个名为 WebTest1.webtest 的 Web 测试文件。
 
 ## <a name="add-a-load-test-to-the-project"></a>向项目添加一个负载测试
 

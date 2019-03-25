@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0808708360db6aa35cb20ce42c75fea04f5131b
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737008"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983970"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>请将 Visual Studio 更新到最新版本
 
@@ -82,7 +82,7 @@ ms.locfileid: "57737008"
 
 ### <a name="use-the-visual-studio-installer"></a>使用 Visual Studio 安装程序
 
-和 Visual Studio 2017 的早期版本一样，可以使用 Visual Studio 安装程序来安装更新。
+和 Visual Studio 的早期版本一样，可以使用 Visual Studio 安装程序来安装更新。
 
 1. 保存所有内容。
 
@@ -150,14 +150,14 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
    选择“更新”按钮来安装更新。
 
-     ![使用 Visual Studio 安装程序更新 Visual Studio 2017](media/update-visual-studio.png "使用 Visual Studio 安装程序更新 Visual Studio 2017")
+     ![使用 Visual Studio 安装程序更新 Visual Studio 2017](media/update-visual-studio.png "使用 Visual Studio 安装程序更新 Visual Studio")
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>请参阅
 
-* [修改 Visual Studio 2017](modify-visual-studio.md)
-* [卸载 Visual Studio 2017](uninstall-visual-studio.md)
+* [修改 Visual Studio](modify-visual-studio.md)
+* [卸载 Visual Studio](uninstall-visual-studio.md)
 * [更新 Visual Studio for Mac](/visualstudio/mac/update)
 
 ::: moniker-end

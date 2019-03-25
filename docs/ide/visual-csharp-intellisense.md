@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d6bf678e40c999442d35caba53bcaabb8f9ba48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936858"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194598"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -94,7 +94,7 @@ IntelliSense 会记住最近在自动完成对象名称的[列表成员](../ide/
 
 “添加 using”IntelliSense 操作会自动向代码文件中添加所需 `using` 指令。 此功能能够使你专注于编写的代码上，而无需将注意力转换到代码的另一部分。
 
-若要启动“添加 using”操作，请将光标放在无法解析的类型引用上。 例如，创建控制台应用程序并将 `XmlTextReader` 添加到 `Main` 方法主体时，该代码行上将出现一条红色波浪线，因为无法解析该类型引用。 然后可以通过“快速操作”调用“添加 using”。 只有当光标位于未绑定的类型上时，才可看见“快速操作”。
+若要启动“添加 using”操作，请将光标放在无法解析的类型引用上。 例如，创建控制台应用程序并将 `XmlReader` 添加到 `Main` 方法主体时，该代码行上将出现一条红色波浪线，因为无法解析该类型引用。 然后可以通过“快速操作”调用“添加 using”。 只有当光标位于未绑定类型上时，才可看见“快速操作”。
 
 ![添加 using、快速操作展开图像](../ide/media/addusing-quickaction.png)
 

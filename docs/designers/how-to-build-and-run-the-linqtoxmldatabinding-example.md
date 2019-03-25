@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88b705a7dc64f46ba750feed1e5259f2b74c555
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951899"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069913"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>如何：生成并运行 LinqToXmlDataBinding 示例
 
@@ -20,11 +20,9 @@ ms.locfileid: "55951899"
 
 有关 Visual Studio 的详细信息，请参阅 [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)。
 
-## <a name="create-and-populate-the-project"></a>创建和填充项目
+## <a name="create-the-project"></a>创建项目
 
-### <a name="to-create-the-starting-project"></a>创建起始项目
-
-1. 启动 Visual Studio 并创建一个名为 LinqToXmlDataBinding 的 C# WPF 应用程序。 该项目必须使用 .NET Framework 3.5（或更高版本）。
+1. 打开 Visual Studio 并创建一个名为 LinqToXmlDataBinding 的 C# WPF 应用。 该项目应面向 .NET Framework 3.5（或更高版本）。
 
 1. 为以下 .NET 程序集添加项目引用（如果尚不存在）：
 
@@ -38,9 +36,9 @@ ms.locfileid: "55951899"
 
 1. 按 Ctrl+Shift+B 生成解决方案，然后按 F5 运行该解决方案。 该项目应正确编译而不出错，并作为一般 WPF 应用程序运行。
 
-### <a name="to-add-custom-code-to-the-project"></a>对项目添加自定义代码
+## <a name="add-code-to-the-project"></a>将代码添加到项目
 
-1. 在解决方案资源管理器中，将源文件 Window1.xaml 重命名为 L2XDBForm.xaml。 依赖源文件 Window1.xaml.cs 应该会自动重命名为 L2XDBForm.xaml.cs。
+1. 在解决方案资源管理器中，将源文件 Window1.xaml 重命名为“L2XDBForm.xaml。 依赖源文件 Window1.xaml.cs 应该会自动重命名为 L2XDBForm.xaml.cs。
 
 1. 用 [L2DBForm.xaml 源代码](../designers/l2dbform-xaml-source-code.md)主题中的代码节替换 L2XDBForm.xaml 文件中的源代码。 使用 XAML 源视图来处理此文件。
 
@@ -56,9 +54,7 @@ LinqToXmlDataBinding 程序可以让用户查看和操作以嵌入式 XML 元素
 
 ### <a name="to-run-the-program-and-view-the-book-list"></a>运行程序并查看书籍列表
 
-- 按 F5（开始调试）或 Ctrl+F5（启动而不调试）运行 LinqToXmlDataBinding。
-
-   显示标题为“使用 LINQ to XML 的 WPF 数据绑定”的程序窗口。
+按 F5（开始调试）或 Ctrl+F5（启动而不调试）运行 LinqToXmlDataBinding。 显示标题为“使用 LINQ to XML 的 WPF 数据绑定”的程序窗口。
 
 - 请注意，UI 的顶部区域将显示表示书籍列表的原始 **XML**。 它使用 WPF <xref:System.Windows.Controls.TextBlock> 控件来显示，该控件不启用通过鼠标或键盘交互。
 

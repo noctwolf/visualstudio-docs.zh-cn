@@ -10,12 +10,12 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: cfa95c68d3b7ebe681e40d23a5424a3356a61ab6
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007171"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983879"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中筛选的解决方案
 
@@ -37,7 +37,7 @@ ms.locfileid: "57007171"
 
 1. 在菜单栏上，依次选择“文件” > “打开” > “项目/解决方案”。
 
-2. 在“新建项目”对话框中，选择解决方案，然后选择“不加载项目”。
+2. 在“打开项目”对话框中，选择解决方案，然后选择“不加载项目”。
 
    ![Visual Studio 的“打开项目”对话框，其中已选中“不加载项目”](media/filtered-solutions/do-not-load-projects.png)
 

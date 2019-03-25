@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aa223bc4e63d5672feb6d518bc8df534f3162da0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: f7d4b36003d097fc4750b80f62fc1267908b8c0b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155651"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151136"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 交互窗口
 
@@ -25,7 +25,7 @@ Visual Studio 为每个 Python 环境提供交互读取-评估-打印-循环 (RE
 
 Visual Studio 有大量 Python REPL 模式可供选择：
 
-| REPL | 说明​​ | 编辑 | 调试 | 图像 |
+| REPL | 说明 | 编辑 | 调试 | 图像 |
 | --- | --- | --- | --- | --- |
 | 标准 | 默认 REPL，直接与 Python 通信 | 标准编辑（多行等）。 | 是，通过 `$attach` | No |
 | 调试 | 默认 REPL，与已调试的 Python 进程通信 | 标准编辑 | 仅调试 | No |
@@ -56,7 +56,7 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 
 ## <a name="interactive-window-options"></a>交互窗口选项
 
-可以通过“工具” > “选项” > “Python 工具” > “交互窗口”，控制交互窗口的各个方面（请参阅[选项](python-support-options-and-settings-in-visual-studio.md)）：
+可以通过“工具” > “选项” > “Python” > “交互窗口”控制“交互”窗口的各个方面（请参阅[选项](python-support-options-and-settings-in-visual-studio.md)）：
 
 ![Python 交互窗口选项](media/options-interactive-windows.png)
 
@@ -73,7 +73,7 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 
 <a name="meta-commands"></a>交互窗口还支持多个元命令。 所有元命令都以 `$` 开头，你可以键入 `$help` 获得元命令和 `$help <command>` 的列表，以获取特定命令的使用情况详细信息。
 
-| 元命令 | 说明​​ |
+| 元命令 | 说明 |
 | --- | --- |
 | `$$` | 插入注释，用于注释会话中的代码。 |
 | `$attach` | 将 Visual Studio 调试器附加到 REPL 窗口进程以启用调试。 |
@@ -121,4 +121,4 @@ Visual Studio 还会检测以 `# In[1]:` 等注释开头的代码单元，将 Ju
 
 与代码编辑器中 IntelliSense 仅基于源代码分析不同，交互窗口中，IntelliSense 基于活动的对象。 这些建议在交互窗口中更为正确，尤其是在使用动态生成代码的情况下。 缺点是具有副作用（如记录消息）的函数可能会影响开发体验。
 
-如果此行为造成了困扰，请在“完成模式”组的“工具” > “选项” > “Python 工具” > “交互窗口”下更改设置，如[选项 - 交互窗口选项](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)所述。
+如果此行为造成了困扰，请在“完成模式”组的“工具” > “选项” > “Python” > “交互窗口”下更改设置，如[选项 - 交互窗口选项](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)所述。

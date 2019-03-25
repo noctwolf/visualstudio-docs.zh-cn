@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cae8ce7856249bafced5577030150c6910a86c34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8ebece0823c42c4dd1f2faaeb894e88c06ed0bef
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911489"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983437"
 ---
 # <a name="install-build-tools-into-a-container"></a>将生成工具安装到容器
 
@@ -199,4 +199,4 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
 
 * [容器的高级示例](advanced-build-tools-container.md)
 * [容器的已知问题](build-tools-container-issues.md)
-* [Visual Studio 生成工具 2017 工作负载和组件 ID](workload-component-id-vs-build-tools.md)
+* [Visual Studio 生成工具工作负载和组件 ID](workload-component-id-vs-build-tools.md)

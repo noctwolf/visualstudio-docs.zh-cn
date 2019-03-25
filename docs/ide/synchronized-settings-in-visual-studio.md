@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b5f3eec072988c7ab093f305cf2903ae1079cc2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221874"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869039"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>跨多台计算机同步 Visual Studio 设置
 
@@ -41,7 +41,7 @@ ms.locfileid: "57221874"
 
    - “环境” > “启动”选项页上的所有设置。
 
-   - “文本编辑器”选项页上的所有设置。
+   - “文本编辑器”选项页上的所有设置，例如，[代码样式首选项](code-styles-and-quick-actions.md)。
 
    - “XAML 设计器”选项页上的所有设置。
 
@@ -75,7 +75,7 @@ ms.locfileid: "57221874"
 
 3. 打开“VS 2017 开发人员命令提示”并运行 `devenv /resetuserdata`。
 
-1. 启动 Visual Studio，并从导出的设置文件中导入保存的设置。
+1. 打开 Visual Studio，并从导出的设置文件中导入已保存的设置。
 
 ::: moniker-end
 

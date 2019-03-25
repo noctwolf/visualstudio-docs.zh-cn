@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce001f4ec7b036581a99e4feb8693b7220470d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487597c160a294c935f3f7670410e82927a86210
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911892"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194640"
 ---
 # <a name="learn-about-projects-and-solutions"></a>了解项目和解决方案
 
@@ -35,9 +35,11 @@ ms.locfileid: "55911892"
 
 我们先创建一个空的解决方案。 对 Visual Studio 有一定了解后，可能就不会经常创建空的解决方案。 在 Visual Studio 中创建新项目时，如果没有打开的解决方案，它会自动创建一个解决方案来存放项目。
 
+::: moniker range="vs-2017"
+
 1. 打开 Visual Studio。
 
-1. 在菜单栏上，这是“文件”和“编辑”等菜单的行，选择“文件” > “新建” > “项目”。
+1. 在菜单栏上选择“文件”>“新建”>“项目”。
 
    **“新建项目”** 对话框随即打开。
 
@@ -46,6 +48,22 @@ ms.locfileid: "55911892"
    ![Visual Studio 中的空白解决方案模板](media/tutorial-projects-new-solution.png)
 
    此时“起始页”关闭，Visual Studio 窗口右侧的“解决方案资源管理器”中出现解决方案。 你可能会经常使用“解决方案资源管理器”来浏览项目的内容。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 打开 Visual Studio。
+
+2. 在“开始”窗口上，选择“创建新项目”。
+
+3. 在“创建新项目”页上，在搜索框中输入“空白解决方案”，选择“空白解决方案”模板，然后选择“下一步”。
+
+4. 将解决方案命名为“QuickSolution”，然后选择“创建”。
+
+   解决方案将显示在 Visual Studio 窗口右侧的解决方案资源管理器中。 你可能会经常使用“解决方案资源管理器”来浏览项目的内容。
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>添加项目
 
@@ -146,7 +164,7 @@ ms.locfileid: "55911892"
    End Class
    ```
 
-   你会看到某些代码下出现红色“波浪线”。 将测试项目设为“QuickDate”项目的[友元程序集](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies)来解决此错误。
+   你会看到某些代码下出现红色“波浪线”。 将测试项目设为“QuickDate”项目的[友元程序集](/dotnet/standard/assembly/friend-assemblies)来解决此错误。
 
 1. 返回“QuickDate”项目，如果 Calendar.cs 文件尚未打开，则打开该文件，然后将以下 [using 语句](/dotnet/csharp/language-reference/keywords/using-statement)和 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性添加到文件顶部，以解决测试项目中的错误。
 

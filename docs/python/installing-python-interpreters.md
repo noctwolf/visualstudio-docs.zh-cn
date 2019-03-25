@@ -1,7 +1,7 @@
 ---
 title: 选择并安装 Python 解释器
 description: Visual Studio 中支持的 Python 解释器的完整列表，并简要说明了可以在哪里找到它们的安装程序。
-ms.date: 12/06/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,16 +10,20 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cafa97873c168102dff66f602d4d117269718810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8c2d96aeb24b9311998528d0360b1c3eac38e5f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920998"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194173"
 ---
 # <a name="install-python-interpreters"></a>安装 Python 解释器
 
-默认情况下，在 Visual Studio 2017 中安装 Python 开发工作负载也会安装 Python 3（64 位）。 可以选择安装 32 位和 64 位版本的 Python 2、Python 3、Anaconda 2 和 Anaconda 3，如[安装](installing-python-support-in-visual-studio.md)中所述。
+默认情况下，在 Visual Studio 2017 和更高版本中安装 Python 开发工作负载也会同时安装 Python 3（64 位）。 可以根据需要选择安装 32 位和 64 位版本的 Python 2 和 Python 3，并安装 Miniconda (Visual Studio 2019) 或者 Anaconda 2/Anaconda 3 (Visual Studio 2017)，如[安装](installing-python-support-in-visual-studio.md)中所述。
+
+::: moniker range=">=vs-2019"
+或者，也可以从“添加环境”对话框中安装标准 Python 解释器。 在“Python 环境”窗口或 Python 工具栏中选择“添加环境”命令，选择“Python 安装”选项卡，指示安装哪个解释器，并选择“安装”。
+::: moniker-end
 
 除了 Visual Studio 安装程序，还可以手动安装下表列出的任何解释器。 例如，如果在安装 Visual Studio 之前安装了 Anaconda 3，则不需要通过 Visual Studio 安装程序再次进行安装。 例如，如果在 Visual Studio 安装程序中尚无可安装的更高版本，也可以手动安装解释器。
 
@@ -31,7 +35,7 @@ Visual Studio（所有版本）通过检查注册表（根据 [PEP 514 - Windows
 
 Visual Studio 在[Python 环境”](managing-python-environments-in-visual-studio.md#the-python-environments-window)窗口中显示所有已知环境，并自动检测现有解释器的更新。
 
-| 解释器 | 说明​​ |
+| 解释器 | 说明 |
 | --- | --- |
 | [CPython](https://www.python.org/) | 最常用的“本机”解释器，32 位和 64 位版本可用（建议使用 32 位）。 包括最新的语言功能、最大的 Python 包兼容性、完整的调试支持以及与 [IPython](https://ipython.org/) 的互操作。 另请参阅：[Should I use Python 2 or Python 3?](https://wiki,python.org/moin/Python2orPython3)（应使用 Python 2 还是 Python 3？） 请注意，Visual Studio 2015 及更早版本不支持 Python 3.6+，并且会生成“不支持 Python 版本 3.6”之类的错误。 请改用 Python 3.5 或更早版本。 |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Python 的 .NET 实现，32 位和 64 位版本可用，提供 C#/F#/Visual Basic 互操作、对 .NET API 的访问、标准 Python 调试（但不是 C++ 混合模式调试）和混合 IronPython/C# 调试。 但 IronPython 不支持虚拟环境。 |

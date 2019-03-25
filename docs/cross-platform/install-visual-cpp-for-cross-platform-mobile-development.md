@@ -12,16 +12,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: c46644b18188475bd6389a795625209f74a7d9b5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: f24e3460cb1298a36d0365781aa82cf55d8478d3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021983"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983320"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>使用 C++ 安装跨平台移动开发
 
-可以在 Visual Studio 中使用 C++ 生成 Windows 桌面应用、通用 Windows 平台 (UWP) 应用、Linux 应用以及现在可生成的适用于 Android 和 iOS 的应用。 使用 C++ 的移动开发工作负载是 Visual Studio 中的一组可安装组件，其中包括跨平台的 iOS、Android 和 UWP Visual Studio 模板。 它安装了所需的跨平台工具和 SDK 以快速启动，而无需自行查找、下载和配置它们。 可以在 Visual Studio 中使用这些工具轻松创建、编辑、调试和测试跨平台项目。 本主题介绍了如何使用 Visual Studio 安装在 C++ 内开发跨平台应用所需的工具和第三方软件。 有关概述，请参阅 [Visual C++ 跨平台移动](https://go.microsoft.com/fwlink/p/?LinkId=536383)
+可以在 Visual Studio 中使用 C++ 生成 Windows 桌面应用、通用 Windows 平台 (UWP) 应用、Linux 应用以及现在可生成的适用于 Android 和 iOS 的应用。 使用 C++ 的移动开发工作负载是 Visual Studio 中的一组可安装组件，其中包括跨平台的 iOS、Android 和 UWP Visual Studio 模板。 它安装了所需的跨平台工具和 SDK 以快速启动，而无需自行查找、下载和配置它们。 可以在 Visual Studio 中使用这些工具轻松创建、编辑、调试和测试跨平台项目。 本主题介绍了如何使用 Visual Studio 安装在 C++ 内开发跨平台应用所需的工具和第三方软件。 有关概述，请参阅 [Visual C++ 跨平台移动](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)
 
 ## <a name="requirements"></a>要求
 
@@ -40,7 +40,7 @@ ms.locfileid: "55021983"
 
 ## <a name="get-the-tools"></a>获取工具
 
-在 Visual Studio Community、Visual Studio Professional 和 Visual Studio Enterprise 版本中提供使用 C++ 的移动开发。 要获得 Visual Studio，可转到 [Visual Studio 下载](https://go.microsoft.com/fwlink/p/?linkid=517106)页进行下载。 从 Visual Studio 2015 Update 2 或更高版本开始提供跨平台移动开发工具。
+在 Visual Studio Community、Visual Studio Professional 和 Visual Studio Enterprise 版本中提供使用 C++ 的移动开发。 要获得 Visual Studio，可转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页进行下载。 从 Visual Studio 2015 开始提供跨平台移动开发工具。
 
 ## <a name="install-the-tools"></a>安装工具
 
@@ -52,7 +52,7 @@ ms.locfileid: "55021983"
 
 - Google Android 模拟器和 Intel 硬件加速执行管理器是可选组件，但推荐使用。 可以直接在 Android 设备上开发和调试，但在桌面上使用模拟器进行调试通常更为容易。 Microsoft 还提供一个可单独安装的适用于 Android 的 Visual Studio 模拟器。
 
-#### <a name="to-install-the-mobile-development-with-c-workload-in-visual-studio-2017"></a>在 Visual Studio 2017 中安装使用 C++ 的移动开发工作负载
+### <a name="install-the-mobile-development-with-c-workload"></a>安装使用 C++ 的移动开发工作负载
 
 1. 从“开始”菜单运行“Visual Studio 安装程序”。
 
@@ -71,37 +71,10 @@ ms.locfileid: "55021983"
    > [!IMPORTANT]
    > 你必须重新启动以确保所有软件都得到了正确安装。
 
-1. 打开 Visual Studio。 如果这是你第一次运行 Visual Studio，则可能需要一些时间来配置和登录。 当 Visual Studio 准备就绪时，检查是否有更新并安装它们。
+1. 打开 Visual Studio。
 
-#### <a name="to-install-the-mobile-development-component-and-third-party-tools-in-visual-studio-2015"></a>在 Visual Studio 2015 中安装移动开发组件和第三方工具
-
-如果使用的是 Visual Studio 2015，则其安装程序包括安装“适用于跨平台移动开发的 Visual C++”的选项，该选项用于安装 Visual Studio 2015 中所需的 C++ 语言工具、模板和组件。
-
-1. 运行 Visual Studio 2015 安装程序。 若要安装可选组件，请选择“自定义”  作为安装类型。 选择“下一步”  以选择要安装的可选组件。
-
-1. 在“选择功能”中，展开“跨平台移动开发”，然后选中“Visual C++ 移动开发”。
-
-   ![选择 Visual C++ 移动开发](../cross-platform/media/cppmdd_install_vcmdd.png "CPPMDD_Install_VCMDD")
-
-   默认情况下，在选择“Visual C++ 移动开发”时，“编程语言”选项将设置为安装 **Visual C++**，且“常用的工具和软件开发工具包”选项将设置为安装所需的第三方组件。 必要时可选择其他组件。 **适用于 Android 的 Microsoft Visual Studio 模拟器**也默认处于选中状态。 已安装的组件在列表中显示为非活动状态。
-
-   若要在它们与 Android 和 iOS项目之间构建通用 Windows 应用并共享代码，请在“选择功能”中展开“Windows 和 Web 开发”，然后勾选“通用 Windows 应用开发工具”。 如果不打算构建通用 Windows 应用，则以跳过此选项。
-
-   选择“下一步”  继续。
-
-1. 第三方组件都具有其自己的许可条款。 可以通过选择各个组件旁边的“许可条款”  链接查看许可条款。 选择“安装”，以添加组件并安装 Visual Studio 和适用于跨平台移动开发的 Visual C++。
-
-1. 安装完成后，关闭该安装程序，然后重启计算机。 第三方组件的某些设置操作在计算机重启后才生效。
-
-   > [!IMPORTANT]
-   > 你必须重新启动以确保所有软件都得到了正确安装。
-
-   如果未能安装适用于 Android 组件的 Microsoft Visual Studio 模拟器，表示你的计算机可能未启用 Hyper-V。 使用“打开或关闭 Windows 功能”控制面板应用来启用 Hyper-V，然后重新运行 Visual Studio 安装程序。
-
-   > [!NOTE]
-   > 如果你的计算机或 Windows 版本不支持 Hyper-V，则不能使用适用于 Android 组件的 Microsoft Visual Studio 模拟器。 Windows 家庭版不包括 Hyper-V 支持。
-
-1. 打开 Visual Studio。 如果这是你第一次运行 Visual Studio，则可能需要一些时间来配置和登录。 Visual Studio 准备就绪后，在“工具”  菜单上选择“扩展和更新” 、“更新” 。 如果有用于跨平台移动开发的 Visual C++ 或适用于 Android 的 Microsoft Visual Studio 仿真程序的 Visual Studio 可用更新，则安装它们。
+> [!NOTE]
+> 如果使用的是 Visual Studio 2015，请参阅[安装适用于跨平台移动开发的 Visual C++ (Visual Studio 2015)](/cross-platform/install-visual-cpp-for-cross-platform-mobile-development?view=vs-2015)
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 

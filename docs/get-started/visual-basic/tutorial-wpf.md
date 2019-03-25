@@ -2,7 +2,7 @@
 title: 教程：在 Visual Basic 中通过 Windows Presentation Foundation (WPF) 创建 Hello World 应用
 description: 使用 Visual Basic 在 Visual Studio 中通过 Windows Presentation Foundation (WPF) UI 框架创建简单的 Windows Desktop .NET 应用。
 ms.custom: seodec18, get-started
-ms.date: 10/03/2017
+ms.date: 03/14/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -13,36 +13,41 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6dc096eebde5c47bfa74214b24b91a05511894d
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: ecfb6f144b632f2c332d73e90a8deca08e8c03c6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56800553"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155532"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教程：使用 Visual Basic 创建简单应用
 
-通过完成本演练，你将熟悉在使用 Visual Studio 开发应用程序时可使用的许多工具、对话框和设计器。 你将创建“Hello, World”应用程序、设计 UI、添加代码并调试错误。在此期间，你将了解如何使用集成开发环境 ([IDE](visual-studio-ide.md))。
+通过完成本教程，你将熟悉在使用 Visual Studio 开发应用程序时可使用的许多工具、对话框和设计器。 你将创建“Hello, World”应用程序、设计 UI、添加代码并调试错误。在此期间，你将了解如何使用集成开发环境 ([IDE](visual-studio-ide.md))。
 
+::: moniker range="vs-2017"
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
+::: moniker-end
+::: moniker range=">=vs-2019"
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)页免费安装。
+::: moniker-end
 
 ## <a name="configure-the-ide"></a>配置 IDE
 
-首次启动 Visual Studio 时，系统会提示你进行登录。 在本演练中，此步骤为可选步骤。 接下来可能会显示一个对话框，让你选择开发设置和颜色主题。 保留默认值，然后选择“启动 Visual Studio”。
+::: moniker range="vs-2017"
+
+首次启动 Visual Studio 时，系统会提示你进行登录。 在本教程中，此步骤为可选步骤。 接下来可能会显示一个对话框，让你选择开发设置和颜色主题。 保留默认值，然后选择“启动 Visual Studio”。
 
 ![选择设置对话框](../media/exploreide-settings.png)
 
-::: moniker range="vs-2017"
-
 启动 Visual Studio 后，将看到工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口停靠在应用程序窗口的左侧和右侧，其顶部有 **“快速启动”**、菜单栏和标准工具栏。 应用程序窗口的中心是 **“起始页”**。 当您加载解决方案或项目时，编辑器和设计器将显示在 **起始页** 的空间中。 开发应用程序时，大部分时间都将用在此中心区域。
 
-![Visual Studio 2017 IDE 应用了常规设置](../media/exploreide-idewithgeneralsettings.png)
+![应用了常规设置的 Visual Studio 2017 IDE](../media/exploreide-idewithgeneralsettings.png)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-启动 Visual Studio 时，“启动”窗口首先打开。 选择“无需代码，继续操作”以打开开发环境。 将看到工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口停靠在应用程序窗口的左侧和右侧，其顶部有 **“快速启动”**、菜单栏和标准工具栏。 加载解决方案或项目时，编辑器和设计器将显示在应用程序窗口的中央空间中。 开发应用程序时，大部分时间都将用在此中心区域。
+启动 Visual Studio 时，“启动”窗口首先打开。 选择“继续但无需代码”打开开发环境。 将看到工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口停靠在应用程序窗口的左侧和右侧，其顶部有 **“快速启动”**、菜单栏和标准工具栏。 加载解决方案或项目时，编辑器和设计器显示在应用程序窗口中间。 开发应用程序时，大部分时间都将用在此中心区域。
 
 ::: moniker-end
 
@@ -52,20 +57,37 @@ ms.locfileid: "56800553"
 
 1. 创建新项目。 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
+     ::: moniker range="vs-2017"
      ![在菜单栏上，依次选择“文件”、“新建”和“项目”](../media/exploreide-filenewproject.png)
+     ::: moniker-end
+     ::: moniker range=">=vs-2019"
+     ![在菜单栏上，依次选择“文件”、“新建”和“项目”](../media/vs-2019/exploreide-filenewproject-vs2019.png)
+     ::: moniker-end
 
-1. 在“新项目”对话框中，依次选择“已安装” > “Visual Basic” > “Windows 桌面”类别和“WPF 应用(.NET Framework)”模板。 将项目命名为“HelloWPFApp”。
+::: moniker range="vs-2017"
+2. 在“新项目”对话框中，依次选择“已安装” > “Visual Basic” > “Windows 桌面”类别和“WPF 应用(.NET Framework)”模板。 将项目命名为“HelloWPFApp”并选择“确定”。
 
      ![Visual Studio“新建项目”对话框中的 WPF 应用模板](media/exploreide-newproject-vb.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+2. 在“创建新项目”屏幕上，搜索“WPF”，选择“WPF App (.NET Framework)”，然后选择“下一步”。
 
-1. 选择“确定”。
+   ![Visual Studio“新建项目”对话框中的 WPF 应用模板](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
-   Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资源管理器”将显示各种文件。 “WPF 设计器”在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。 您可以选择只查看可视化视图或 XAML 视图。 “解决方案资源管理器”中显示以下项：
+3. 在下一个屏幕中，为项目指定名称“HelloWPFApp”，然后选择“创建”。
+::: moniker-end
 
-   ![已加载 HelloWPFApp 文件的解决方案资源管理器](../media/exploreide-hellowpfappfiles.png)
+Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资源管理器”将显示各种文件。 “WPF 设计器”在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。 您可以选择只查看可视化视图或 XAML 视图。 “解决方案资源管理器”中显示以下项：
 
-   > [!NOTE]
-   > 若要详细了解 XAML (eXtensible Application Markup Language)，请参阅 [WPF 的 XAML 概述](/dotnet/framework/wpf/advanced/xaml-overview-wpf)页。
+::: moniker range="vs-2017"
+![已加载 HelloWPFApp 文件的解决方案资源管理器](../media/exploreide-hellowpfappfiles.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![已加载 HelloWPFApp 文件的解决方案资源管理器](../media/vs-2019/exploreide-hellowpfappfiles.png)
+::: moniker-end
+
+> [!NOTE]
+> 若要详细了解 XAML (eXtensible Application Markup Language)，请参阅 [WPF 的 XAML 概述](/dotnet/framework/wpf/advanced/xaml-overview-wpf)页。
 
 你可以在创建项目后进行自定义。 通过使用 **属性** 窗口（ **视图** 菜单上），您可以显示和更改应用程序中的项目项、控件和其他项的选项。
 
@@ -87,7 +109,7 @@ ms.locfileid: "56800553"
 
 ### <a name="add-a-textblock-control"></a>添加 TextBlock 控件
 
-1. 通过选择 **视图** 菜单和 **工具箱** 项打开 **工具箱** 窗口。
+1.  输入 Ctrl+Q 以调用“快速启动”，并键入“工具箱”。 从结果列表中选择“查看”>“工具箱”。
 
 2. 在“工具箱”中，展开“公共 WPF 控件”节点以查看 TextBlock 控件。
 
@@ -113,7 +135,7 @@ XAML 标记应如下面的示例所示：
    Text="Select a message option and then choose the Display button."
    ```
 
-2. 视需要再次居中 TextBlock，并通过按 Ctrl+S 或使用“文件”菜单项保存更改。
+2. 视需要再次使 TextBlock 居中，并通过按 Ctrl+S 或使用“文件”菜单项保存更改。
 
 接下来，向窗体添加两个 [RadioButton](/dotnet/framework/wpf/controls/radiobutton) 控件。
 
@@ -127,7 +149,7 @@ XAML 标记应如下面的示例所示：
 
      你的窗口应如下所示：
 
-     ![包含文本块和两个单选按钮的 Greetings 窗体](../media/exploreide-greetingswithradiobuttons.png)
+     ![包含 TextBlock 控件和两个单选按钮的 Greetings 窗体](../media/exploreide-greetingswithradiobuttons.png)
 
 3. 在左侧 RadioButton 控件的 **“属性”** 窗口中，将 **“名称”** 属性（位于 **“属性”** 窗口顶部）更改为 `HelloButton`。
 
@@ -203,17 +225,15 @@ IsChecked="True"
 
 #### <a name="start-debugging-and-find-the-error"></a>开始调试和查找错误
 
-1. 选择 **“调试”**-&gt; **“启动调试”**，启动调试器。
+1. 通过按 F5或选择“调试”，然后选择“启动调试”，启动调试程序。
 
-     ![“调试”菜单上的“启动调试”命令](../media/exploreide-startdebugging.png)
+   将出现“中断模式”窗口，“输出”窗口指示发生 IOException:“找不到资源 'mainwindow.xaml'”。
 
-     将出现“中断模式”窗口，“输出”窗口指示发生 IOException:“找不到资源 'mainwindow.xaml'”。
+   ![IOException 消息屏幕截图](../media/exploreide-ioexception.png)
 
 2. 依次选择“调试” > “停止调试”，停止调试程序。
 
-     ![“调试”菜单上的“停止调试”命令](../media/exploreide-stopdebugging.png)
-
-开始进行本演练时，我们将 MainWindow.xaml 重命名为 Greetings.xaml，但是该代码仍然引用 MainWindow.xaml 作为应用程序的启动 URI，因此该项目无法启动。
+开始学习本教程时，我们将 MainWindow.xaml 重命名为 Greetings.xaml，但是该代码仍然引用 MainWindow.xaml 作为应用程序的启动 URI，因此该项目无法启动。
 
 #### <a name="specify-greetingsxaml-as-the-startup-uri"></a>将 Greetings.xaml 指定为启动 URI
 
@@ -231,11 +251,9 @@ IsChecked="True"
 
 1. 打开“Greetings.xaml.vb”，并选择以下行：`MessageBox.Show("Hello.")`
 
-2. 通过选择 **“调试”**-&gt; **“切换断点”**，从菜单中添加断点。
+2. 通过按 F9 或从菜单选择“调试”，然后选择“切换断点”添加断点。
 
-     ![“调试”菜单上的“切换断点”命令](../media/exploreide-togglebreakpoint.png)
-
-     编辑器窗口最左侧边距中该代码行附近将显示一个红圈。
+   编辑器窗口最左侧边距中该代码行附近将显示一个红圈。
 
 3. 选择以下行： `MessageBox.Show("Goodbye.")`。
 
@@ -243,7 +261,9 @@ IsChecked="True"
 
 5. 在 **“Greetings”** 窗口中，选择 **“Hello”** 单选按钮，然后选择 **“显示”** 按钮。
 
-     行 `MessageBox.Show("Hello.")` 将用黄色突出显示。 在 IDE 底部，“自动”、“本地”和“监视”窗口一起停靠在左侧，而“调用堆栈”、“断点”、“命令”、“即时”和“输出”窗口一起停靠在右侧。
+   行 `MessageBox.Show("Hello.")` 将用黄色突出显示。 在 IDE 底部，“自动”、“本地”和“监视”窗口一起停靠在左侧，而“调用堆栈”、“断点”、“异常设置”、“命令”、“即时”和“输出”窗口一起停靠在右侧。
+
+   ![调试程序中断点的屏幕截图](media/exploreide-debugbreakpoint.png)
 
 6. 在菜单栏上，选择“调试” > “跳出”。
 
@@ -267,17 +287,11 @@ IsChecked="True"
 
 1. 在主菜单中，依次选择“生成” > “清理解决方案”，删除上一生成过程中创建的中间文件和输出文件。 这不是必需的，但它会清理调试生成输出。
 
-     ![“生成”菜单上的“清理解决方案”命令](../media/exploreide-cleansolution.png)
-
 2. 使用工具栏（当前显示“调试”）上的下拉列表控件把 HelloWPFApp 的生成配置从“调试”更改为“发布”。
-
-     ![选定了“发布”的标准工具栏](../media/exploreide-releaseversion.png)
 
 3. 选择“生成” > “生成解决方案”来生成解决方案。
 
-     ![“生成”菜单上的“生成解决方案”命令](../media/exploreide-buildsolution.png)
-
-祝贺你完成本演练！ 可在解决方案和项目目录 (...\HelloWPFApp\HelloWPFApp\bin\Release) 下找到生成的 .exe 文件。
+恭喜你完成本教程！ 可在解决方案和项目目录 (...\HelloWPFApp\HelloWPFApp\bin\Release) 下找到生成的 .exe 文件。
 
 ## <a name="see-also"></a>请参阅
 

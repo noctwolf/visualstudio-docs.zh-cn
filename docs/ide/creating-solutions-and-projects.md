@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7faad2a4d10b304cd273f51559fb67dbd0f876a2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e7a4304fbda284a78350b83447753533983e65d1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223242"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867882"
 ---
 # <a name="create-solutions-and-projects"></a>创建解决方案和项目
 
@@ -113,11 +113,17 @@ ms.locfileid: "57223242"
 
 如前文所述，还可以打开代码文件而无需创建项目或解决方案。 若要了解如何按照此方法开发代码，请参阅[在 Visual Studio 中开发代码而无需创建项目或解决方案](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
 
-## <a name="create-a-temporary-project-c-and-visual-basic"></a>创建临时项目（C# 和 Visual Basic）
+::: moniker range="vs-2017"
+
+## <a name="create-a-temporary-project"></a>创建临时项目
+
+（仅限 C# 和 Visual Basic）
 
 如果创建基于 .NET 的项目时不指定磁盘位置，它就是一个临时项目。 临时项目可用于试验 .NET 项目。 使用临时项目时，可以随时选择保存或放弃它。
 
 若要创建临时项目，请先转到“工具” > “选项” > “项目和解决方案” > “常规”，取消选中“创建时保存新项目”复选框。 然后照常打开“新建项目”对话框。
+
+::: moniker-end
 
 ## <a name="delete-a-solution-project-or-item"></a>删除解决方案、项目或项
 

@@ -13,27 +13,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2684ed1389556dfb96bf8eeb113f82336eb8c6d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5a2c05d029e2a46aba736288fd794af12206c80e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605180"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983866"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 工具集 (ToolsVersion)
+
 MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通常，MSBuild 工具集包括 microsoft.common.tasks 文件、microsoft.common.targets 文件以及编译器（如 csc.exe 和 vbc.exe）。 大多数工具集可用于将应用程序编译为多个版本的 .NET Framework 以及多个系统平台。 但 MSBuild 2.0 工具集仅可用于面向 .NET Framework 2.0。
 
 ## <a name="toolsversion-attribute"></a>ToolsVersion 特性
+::: moniker range=">=vs-2019"
+ 在项目文件中 [Project](../msbuild/project-element-msbuild.md) 元素的 `ToolsVersion` 属性中指定工具集。 下面的示例指定应使用 MSBuild“Current”工具集来生成项目。
+
+```xml
+<Project ToolsVersion="Current" ... </Project>
+```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
  在项目文件中 [Project](../msbuild/project-element-msbuild.md) 元素的 `ToolsVersion` 属性中指定工具集。 下面的示例指定应使用 MSBuild 15.0 工具集来生成项目。
 
 ```xml
 <Project ToolsVersion="15.0" ... </Project>
 ```
 
+::: moniker-end
+
 > [!NOTE]
 > 一些项目类型使用 `sdk` 属性，而不是 `ToolsVersion`。 详情请参阅[包、元数据和框架](/dotnet/core/packages)和 [.NET Core 的 csproj 格式的新增内容](/dotnet/core/tools/csproj)。
 
 ## <a name="how-the-toolsversion-attribute-works"></a>ToolsVersion 特性的工作原理
+
  在 Visual Studio 中创建项目或更新现有项目时，名为 `ToolsVersion` 的属性将自动包括在项目文件中，并且其值对应于包括在 Visual Studio 版本中的 MSBuild 版本。 有关详细信息，请参阅[面向特定的 .NET Framework 版本](../ide/visual-studio-multi-targeting-overview.md)。
 
  当 `ToolsVersion` 值在项目文件中定义时，MSBuild 将使用该值来确定在该项目中可用的工具集属性的值。 其中一个工具集属性为 `$(MSBuildToolsPath)`，该属性指定 .NET Framework 工具的路径。 仅该工具集属性（或 `$(MSBuildBinPath)`）是必需的。
@@ -57,6 +71,7 @@ MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通�
  子工具集（将在本主题后面部分介绍）允许 MSBuild 根据运行生成所在的上下文自动切换要使用的工具集。 例如，当 MSBuild 在 Visual Studio 2012 中运行时，它将使用比在 Visual Studio 2010 中运行时更新的工具集，而且你无需显式更改项目文件。
 
 ## <a name="toolset-implementation"></a>工具集实现
+
  通过选择组成某个工具集的各种工具、目标以及任务的路径来实现该工具集。 MSBuild 定义的工具集中的工具来自以下源：
 
 - .NET Framework 文件夹。
@@ -94,6 +109,7 @@ MSBuild 提供了两种方式来访问工具集：
 -   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> 返回生成工具的路径。
 
 ### <a name="sub-toolsets"></a>子工具集
+
  对于早于 15.0 的 MSBuild 版本，MSBuild 使用注册表项来指定基本工具的路径。 如果该注册表项具有一个子项，则 MSBuild 将使用它来指定包含其他工具的子工具集的路径。 在这种情况下，通过合并在这两个项中定义的属性定义对工具集进行定义。
 
 > [!NOTE]
@@ -116,5 +132,6 @@ MSBuild 为 `ToolLocationHelper` 方法提供重载，它们可将 `VisualStudio
 在 .NET Framework 4.5 中引入了子工具集。
 
 ## <a name="see-also"></a>请参阅
+
 - [标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)
 - [多定向](../msbuild/msbuild-multitargeting-overview.md)

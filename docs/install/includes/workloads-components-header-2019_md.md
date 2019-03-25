@@ -5,13 +5,13 @@ ms.date: 03/02/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 0d6174fef8a924e469a283f66bf266b52149903a
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: ad7ed11ec45bc8e8ab1bc6ce1eeda624cf2f2639
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324352"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58051653"
 ---
 在 VSIX 清单中设置依赖项时，必须仅指定组件 ID。 使用本页中的表格来确定最小组件依赖项。 在某些情况下，这可能意味着仅从工作负载指定一个组件。 在其他情况下，这可能意味着你从单个工作负载指定多个组件或从多个工作负载指定多个组件。 有关详细信息，请参阅[如何：将扩展性项目迁移到 Visual Studio](../../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 页面。
 
-有关如何使用这些 ID 的详细信息，请参阅[使用命令行参数安装 Visual Studio](../use-command-line-parameters-to-install-visual-studio.md) 页。 另外，有关其他产品的工作负载和组件 ID 的列表，请参阅 [Visual Studio 2017 工作负载和组件 ID](../workload-and-component-ids.md?view=vs-2019) 页。
+有关如何使用这些 ID 的详细信息，请参阅[使用命令行参数安装 Visual Studio](../use-command-line-parameters-to-install-visual-studio.md) 页。 另外，有关其他产品的工作负载和组件 ID 的列表，请参阅 [Visual Studio 工作负载和组件 ID](../workload-and-component-ids.md?) 页。

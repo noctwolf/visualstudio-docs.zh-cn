@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fb70eca0ae2f2998752ccc0f096f594e6825e4e8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 36985ab7a0ee94cb735b1954a9e5ea9c2e0d2bbf
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221939"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869091"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform 分析器概述
 
-Visual Studio 包括一系列内置的 .NET Compiler Platform 分析器，这些分析器在用户键入时分析 C# 或 Visual Basic 代码。 分析器关注代码样式、代码质量和可维护性、代码设计和其他问题。 可以将其他分析器作为 Visual Studio 扩展安装，或在每个项目上作为 NuGet 包安装。
+.NET 编译器平台 ("Roslyn") 分析器分析代码的样式、质量和可维护性、设计和其他问题。 Visual Studio 包括一系列内置的分析器，这些分析器在用户键入时分析 C# 或 Visual Basic 代码。 在[文本编辑器选项](../ide/code-styles-and-quick-actions.md)页上或在 [.editorconfig 文件](../ide/editorconfig-code-style-settings-reference.md)中配置这些内置分析器的首选项。 可以将其他分析器作为 Visual Studio 扩展或 NuGet 包安装。
 
-如果分析器发现规则冲突，将同时在代码编辑器（违规代码下方有波浪线）和错误列表中报告。
+如果分析器发现规则冲突，将在代码编辑器（违规代码下方有波浪线）和“错误列表”窗口中报告。
 
-许多分析器规则或诊断都有一个或多个相关的代码修复程序，可以应用它们来纠正问题。 Visual Studio 中内置的每个分析器诊断都有关联的代码修复。 代码修复以及其他类型的快速操作显示在灯泡图标菜单中。 有关这些代码修复的信息，请参阅[常见快速操作](../ide/common-quick-actions.md)。
+许多分析器规则或诊断都有一个或多个相关的代码修复程序，可以应用它们来纠正问题。 Visual Studio 中内置的每个分析器诊断都有关联的代码修复。 代码修复以及其他类型的[快速操作](../ide/quick-actions.md)显示在灯泡图标菜单中。 有关这些代码修复的信息，请参阅[常见快速操作](../ide/common-quick-actions.md)。
 
 ![分析器冲突和快速操作代码修复](../code-quality/media/built-in-analyzer-code-fix.png)
 
@@ -36,7 +36,7 @@ Visual Studio 包括一系列内置的 .NET Compiler Platform 分析器，这些
 
 ![代码编辑器中的波浪线](media/diagnostics-severity-colors.png)
 
-Roslyn 分析器在生成时分析代码，比如静态代码分析（如果启用），但还可随你键入保持运行！ 如果启用[完整解决方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis)，Roslyn 分析器还可以提供编辑器中未打开的代码文件的设计时分析。
+Roslyn 分析器在生成时分析代码，比如静态代码分析（如果启用），但还可在你键入时保持运行状态。 如果启用[完整解决方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis)，Roslyn 分析器还会提供编辑器中未打开的代码文件的设计时分析。
 
 > [!NOTE]
 > 仅当分析仪作为 NuGet 软件包安装时，才会显示 Roslyn 分析器的生成时错误和警告。
@@ -80,6 +80,6 @@ Roslyn 分析器不仅会报告静态代码分析也会报告的相同类型的�
 
 ## <a name="see-also"></a>请参阅
 
-- [Visual Studio 中的快速操作](../ide/quick-actions.md)
+- [分析器常见问题解答](analyzers-faq.md)
 - [编写 Roslyn 分析器](../extensibility/getting-started-with-roslyn-analyzers.md)
 - [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)
