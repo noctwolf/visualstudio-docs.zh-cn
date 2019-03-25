@@ -1,8 +1,8 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Visual Studio 文档| Microsoft Docs
-description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来开发适用于你的平台和设备的应用程序、服务和工具。
+title: Visual Studio 产品| Microsoft Docs
+description: 了解 Visual Studio 产品系列。
 ms.topic: landing-page
 searchScope: []
 ---
