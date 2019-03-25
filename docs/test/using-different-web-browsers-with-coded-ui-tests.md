@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0a5cf418b04f43be9d10b39b9ffc518255092a8a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318428"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983022"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>对编码的 UI 测试使用不同的 Web 浏览器
 
@@ -51,11 +51,23 @@ ms.locfileid: "56318428"
 
 ### <a name="install-selenium-components"></a>安装 Selenium 组件
 
-1.  在“工具”  菜单上，选择“扩展和更新” 。
+::: moniker range="vs-2017"
 
-2.  在“扩展和更新”对话框中，搜索“`Selenium components for Cross Browser Testing`”。
+1. 在“工具”  菜单上，选择“扩展和更新” 。
 
-3.  依次选择扩展和“下载”。
+2. 在“扩展和更新”对话框中，搜索“`Selenium components for Cross Browser Testing`”。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在“扩展”菜单中，选择“管理扩展”。
+
+2. 在“管理扩展”对话框中，搜索“`Selenium components for Cross Browser Testing`”。
+
+::: moniker-end
+
+3. 依次选择扩展和“下载”。
 
     > [!TIP]
     > 还可以从[此处](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)下载用于编码的 UI 跨浏览器测试的 Selenium 组件。

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c15824ec28547cbdb18fdfebc4ebcee1bdd1d387
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c8b31f033b9c04871e57836dd263071d87a24fda
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953377"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070108"
 ---
 # <a name="customize-startup"></a>自定义启动
 
@@ -65,7 +65,7 @@ ms.locfileid: "56953377"
 1. 在“自定义起始页”列表中，选择所需的页。
 
 > [!TIP]
-> 如果自定义起始页中的错误导致 Visual Studio 崩溃，则可以使用安全模式下启动 Visual Studio，然后将其设置为使用默认起始页。 请参阅 [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)。
+> 如果自定义起始页中的错误导致 Visual Studio 崩溃，则可以在安全模式下打开 Visual Studio，然后将其设置为使用默认起始页。 请参阅 [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)。
 
 ## <a name="see-also"></a>请参阅
 

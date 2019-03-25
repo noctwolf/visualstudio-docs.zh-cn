@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de2d4832a1c45cbfd2b6f3893dd2b011151d9e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951336"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869358"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>安装用于 Python 解释器的调试符号
 
@@ -54,7 +54,7 @@ Visual Studio 可能会在需要符号的时候（通常是在启动混合模式
 
     ![混合模式调试器符号选项](media/mixed-mode-debugging-symbols.png)
 
-1. 在调试会话期间，Visual Studio 可能还会提示你输入 Python 解释器的源文件位置。 如果已下载源文件（例如从 [python.org/downloads](https://www.python.org/downloads)，当然也可以指向它们。
+1. 在调试会话期间，Visual Studio 可能还会提示你输入 Python 解释器的源文件位置。 如果已下载源文件（例如从 [python.org/downloads/](https://www.python.org/downloads/)），当然也可以指向它们。
 
 > [!Note]
 > 对话框中显示的符号缓存功能用于创建从联机源获取的符号的本地缓存。 Python 解释器符号不需要这些功能，因为符号已存在于本地。 有关任何情况的详细信息，请参阅[在 Visual Studio 调试器中指定符号和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。

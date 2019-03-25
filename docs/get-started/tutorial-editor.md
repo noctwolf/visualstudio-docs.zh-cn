@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c17fc93602f3d6f80941ca84f372d57c0cde43
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3aacddcd5cd27435b92b4689999e6d9dc5ca190b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950482"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069809"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 
@@ -31,9 +31,21 @@ ms.locfileid: "55950482"
 
 先创建一个新文件并向其添加一些代码。
 
-1. 打开 Visual Studio，在菜单栏上的“文件”菜单中，选择“新建” > “文件”。
+::: moniker range="vs-2017"
 
-1. 在“新建文件”对话框的“常规”类别中，选择“Visual C# 类”，然后选择“打开”。
+1. 打开 Visual Studio。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 打开 Visual Studio。 按 Esc  或单击“开始”窗口中的“继续但无需代码”以打开开发环境。
+
+::: moniker-end
+
+2. 在菜单栏上的“文件”菜单中，选择“新建” > “文件”。
+
+3. 在“新建文件”对话框的“常规”类别中，选择“Visual C# 类”，然后选择“打开”。
 
    编辑器中将打开主干为 C# 类的新文件。 （请注意，我们无需创建完整的 Visual Studio 项目来获取代码编辑器提供的某些益处，仅需一个代码文件即可！）
 

@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d64f104cd7d893b48fca5fdbd454fb380dafc6ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d8971546c0f51dc759731a90569d3f7dc3f0e142
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947284"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069939"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>演练：使用虚拟用户活动图隔离问题
 
@@ -36,7 +36,7 @@ ms.locfileid: "55947284"
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>打开在前面演练中创建的 ColorWebApp 解决方案
 
-1.  启动 Visual Studio。
+1.  打开 Visual Studio。
 
 2.  打开包含 LoadTest1.loadtest 的 ColorWebApp 解决方案。 此负载测试结果是通过执行本主题开头先决条件部分列出的三个演练中的步骤得到的。
 

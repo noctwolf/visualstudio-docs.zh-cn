@@ -1,7 +1,7 @@
 ---
 title: 编辑 Python 代码
 description: 对于 Python，Visual Studio 提供丰富的 IntelliSense、代码片段和导航功能，以及格式设置、linting 和重构。
-ms.date: 11/19/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155391"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58155519"
 ---
 # <a name="edit-python-code"></a>编辑 Python 代码
 
@@ -109,10 +109,20 @@ commas_to_colons(1)
 
 ![验证类型提示的 mypy 的示例结果](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> 对于 Python 3.5 之前的版本，Visual Studio 也显示用户通过存根文件 (.pyi) 提供的类型提示。 如果不希望直接在代码中添加类型提示，或希望创建不直接使用它们的库的类型提示，可以使用存根文件。 有关详细信息，请参阅 mypy 项目 wiki 中的[为 Python 模块创建存根](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)。
+> 对于 Python 3.5 之前的版本，Visual Studio 也显示用户通过 Typeshed 存根文件 (.pyi) 提供的类型提示。 如果不希望直接在代码中添加类型提示，或希望创建不直接使用它们的库的类型提示，可以使用存根文件。 有关详细信息，请参阅 mypy 项目 wiki 中的[为 Python 模块创建存根](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)。
 >
 > 目前，Visual Studio 不支持注释中的类型提示。
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> 对于 Python 3.5 之前的版本，Visual Studio 也显示用户通过 Typeshed 存根文件 (.pyi) 提供的类型提示。 如果不希望直接在代码中添加类型提示，或希望创建不直接使用它们的库的类型提示，可以使用存根文件。 有关详细信息，请参阅 mypy 项目 wiki 中的[为 Python 模块创建存根](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)。
+>
+> Visual Studio 包括适用于 Python 2 和 3 的一组 Typeshed 文件，这样就不再需要其他下载。 但是，如果想要使用一组不同的文件，可以在“工具” > “选项” > “Python” > “语言服务器”选项中指定路径。 请参阅[选项 - 语言服务器](python-support-options-and-settings-in-visual-studio.md#language-server-options)。
+>
+> 目前，Visual Studio 不支持注释中的类型提示。
+::: moniker-end
 
 ### <a name="signature-help"></a>签名帮助
 

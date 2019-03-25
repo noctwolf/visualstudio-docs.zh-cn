@@ -7,12 +7,12 @@ ms.date: 01/04/2018
 ms.topic: conceptual
 description: 了解 Visual Studio 订阅门户为你提供的所有权益
 searchscope: VS Subscription
-ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ba353c6c13d0a538e0030b10c95d054805d0ec39
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843793"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867585"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>使用订阅者门户 - my.<span></span>visualstudio<span></span>.com
 
@@ -51,4 +51,4 @@ Visual Studio 订阅门户 [https://my.visualstudio.com](https://my.visualstudio
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[市场](https://marketplace.visualstudio.com/)
 
-需要续订 Visual Studio 云订阅？  想要下载 Visual Studio 系列产品的最新扩展？  市场有助于用户查找增强 Azure DevOps、Team Foundation Server 和 Visual Studio Code 的扩展、工具和服务。 甚至可以成为发布者，在市场上发布你自己的扩展。
+需要续订 Visual Studio 云订阅？  想要下载 Visual Studio 系列产品的最新扩展？  市场有助于用户查找增强 Azure DevOps、Azure DevOps Server 和 Visual Studio Code 的扩展、工具和服务。 甚至可以成为发布者，在市场上发布你自己的扩展。

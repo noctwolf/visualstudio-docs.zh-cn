@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c87bba495353bec059c6edc7a394f991e81b39bc
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223307"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58195055"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
@@ -131,7 +131,7 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 有关自动测试的详细信息，请参阅博文 [DevOps 中用于自动测试的 CI/CD 管道](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/)。
 
-此外，若要详细了解[用于 Visual Studio 的持续交付工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 扩展中的新增功能，请参阅博文[自信提交：提交时代码质量](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/)博客文章。
+此外，若要详细了解[用于 Visual Studio 的持续交付工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 扩展中的新增功能，请参阅博文[自信提交：提交时代码质量](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/)博客文章。
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE 增强功能
 
@@ -188,7 +188,7 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
   ![Visual Studio 2017 结构可视化工具](media/vsIDE-StructureVisualizer.png)
 
-若要深入了解新增的工作效率功能的详细信息，请参阅由 Mark Wilson-Thomas 发布的 [Productivity in Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/)（使用 Visual Studio 2017 提高工作效率）博客文章。
+有关新的生产高效的功能的详细信息，请参阅 [Visual Studio 2017：工作效率、性能和合作伙伴](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/)博客文章。
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -381,8 +381,8 @@ Visual Studio 2017 所有版本随附：
 
 ## <a name="see-also"></a>请参阅
 
-* [Visual Studio 2017 发行说明](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
-* [Visual Studio 2017 SDK 的新增功能](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk?view=vs-2017)
+* [Visual Studio 2017 发行说明](/visualstudio/releasenotes/vs2017-relnotes)
+* [Visual Studio 2017 SDK 的新增功能](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 * [Visual C++ 中的新增功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# 中的新增功能](/dotnet/csharp/whats-new)
 * [Team Foundation Server 中的新增功能](/tfs/server/whats-new?view=vsts)

@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e08e8aa639540461216b057ae80d1eb7701f6
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 78feb97dc2d738636667df21db1327f968ae6f69
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796538"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983047"
 ---
-# <a name="create-an-offline-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 脱机安装缓存
+# <a name="create-an-offline-installation-of-visual-studio"></a>创建 Visual Studio 的脱机安装
 
 Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中良好运行。 虽然我们建议你试用 [Visual Studio Web 安装程序](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)&mdash;这是一个小巧文件，可及时提供最新修补程序和功能&mdash;但我们知道对你而言这也许并不可行。
 
@@ -32,7 +32,7 @@ Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中�
 
 ## <a name="use-the-download-all-then-install-feature"></a>使用“全部下载，然后安装”功能
 
-[**15.8 中的新增功能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：下载 Web 安装程序后，从 Visual Studio 安装程序中选择新的“全部下载后再安装”选项。 然后，继续安装。
+[**15.8 版的新增功能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install)：下载 Web 安装程序后，从 Visual Studio 安装程序中选择新的“全部下载后再安装”选项。 然后，继续安装。
 
    ![“全部下载后再安装”选项](media/download-all-then-install.png)
 
@@ -143,7 +143,7 @@ c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDe
 
 ## <a name="see-also"></a>请参阅
 
-- [创建 Visual Studio 2017 的网络安装](../install/create-a-network-installation-of-visual-studio.md)
+- [创建 Visual Studio 的网络安装](../install/create-a-network-installation-of-visual-studio.md)
 - [安装 Visual Studio 脱机安装所需的证书](../install/install-certificates-for-visual-studio-offline.md)
 - [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-- [Visual Studio 2017 工作负载和组件 ID](workload-and-component-ids.md)
+- [Visual Studio 工作负荷和组件 ID](workload-and-component-ids.md)

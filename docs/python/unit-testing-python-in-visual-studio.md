@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3290c091cd406bdf21aa841fc6148c9c2f6cd5b0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d4cab82a8fc7d3aec512ead169ff2be4b528eda6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155976"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983801"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>为 Python 代码设置单元测试
 
@@ -86,7 +86,7 @@ Python 单元测试广泛应用于在程序设计期间验证方案。 针对 Vi
 
 ![调试测试](media/unit-test-debugging.png)
 
-还可使用“分析所选测试的代码覆盖率”和“配置文件测试”命令，具体取决于 Visual Studio 版本（请参阅[功能矩阵](overview-of-python-tools-for-visual-studio.md#features-matrix)）。
+还可以使用“分析所选测试的代码覆盖率”和“配置文件测试”命令。
 
 ### <a name="known-issues"></a>已知问题
 

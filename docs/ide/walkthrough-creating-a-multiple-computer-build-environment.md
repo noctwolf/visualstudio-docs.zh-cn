@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c4514ddcc312a6d3ae72f1fc9b5f573ac562b5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324216"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57870500"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>演练：创建多计算机生成环境
 
@@ -264,7 +264,7 @@ ms.locfileid: "57324216"
 |x86_amd64|x64 兼容|x86、x64|X64|
 |amd64|x64 本机|X64|X64|
 
-如果 vcvarsall.bat 运行成功（即，不显示任何错误消息），可以跳过下一步，继续执行本文的[将 MSBuild 程序集安装到生成计算机上的全局程序集缓存 (GAC)](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) 部分中的步骤。
+如果 vcvarsall.bat 运行成功（即，不显示任何错误消息），可以跳过下一步，继续执行本文的[将 MSBuild 程序集安装到生成计算机上的全局程序集缓存 (GAC)](#install-msbuild-to-gac) 部分中的步骤。
 
 ### <a name="manually-set-environment-variables"></a>手动设置环境变量
 
@@ -286,7 +286,7 @@ ms.locfileid: "57324216"
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>将 MSBuild 程序集安装到生成计算机上的全局程序集缓存 (GAC)
+## <a name="a-nameinstall-msbuild-to-gac--install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="install-msbuild-to-gac" /> 将 MSBuild 程序集安装到生成计算机上的全局程序集缓存 (GAC)
 
 MSBuild 需要在生成计算机的 GAC 上安装一些附加程序集。
 
@@ -298,7 +298,7 @@ MSBuild 需要在生成计算机的 GAC 上安装一些附加程序集。
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. 若要将程序集安装到 GAC 中，请在生成计算机上查找 gacutil.exe（一般位于 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ 中）。 如果找不到此文件夹，请重复执行本演练的[将文件从主计算机复制到生成计算机](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)部分中的步骤。
+2. 若要将程序集安装到 GAC 中，请在生成计算机上查找 gacutil.exe（一般位于 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ 中）。 如果找不到此文件夹，请重复执行本演练的[将文件从主计算机复制到生成计算机](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)部分中的步骤。
 
      打开具有管理权限的“命令提示符”窗口，针对每个文件运行以下命令：
 
@@ -330,7 +330,7 @@ MSBuild 需要在生成计算机的 GAC 上安装一些附加程序集。
 
      此目录在这些步骤中指的是 %Depot%。
 
-2. 复制目录和文件，大致就像本演练的[将文件从主计算机复制到生成计算机](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)部分所述，不同之处在于要将它们粘贴到刚刚创建的 %Depot% 目录下。 例如，从 %ProgramFiles%\Windows Kits\8.0\bin 复制到 %Depot%\Windows Kits\8.0\bin。
+2. 复制目录和文件，大致就像本演练的[将文件从主计算机复制到生成计算机](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)部分所述，不同之处在于要将它们粘贴到刚刚创建的 %Depot% 目录下。 例如，从 %ProgramFiles%\Windows Kits\8.0\bin 复制到 %Depot%\Windows Kits\8.0\bin。
 
 3. 如果在 %Depot% 中粘贴文件，则请进行下列更改：
 

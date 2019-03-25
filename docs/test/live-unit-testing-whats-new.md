@@ -1,27 +1,28 @@
 ---
-title: Live Unit Testing 中的新增功能
+title: Visual Studio 2017 中 Live Unit Testing 的新增功能
+titleSuffix: ''
 ms.date: 10/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing
 - Live Unit Testing What's New
 author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95cbdeb9a4e8a3f98fefa7650b36cc4dd59ed550
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+monikerRange: vs-2017
+ms.openlocfilehash: 96ac53900806cc37e215342573f998be995289f8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221536"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872413"
 ---
-# <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing 中的新增功能
+# <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Visual Studio 2017 的 Live Unit Testing 的新增功能
 
 本主题列出从 Visual Studio 2017 版本 15.3 开始，每个 Visual Studio 版本中的 Live Unit Testing 添加的新功能。 如需大致了解如何使用 Live Unit Testing，请参阅[使用 Visual Studio 执行 Live Unit Testing](live-unit-testing.md)。
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-154"></a>适用于 Visual Studio 2017 版本 15.4 的 Live Unit Testing 中的新增功能
+## <a name="version-154"></a>版本 15.4
 
 从 Visual Studio 2017 版本 15.4 开始，Live Unit Testing 包含以下领域的改进和增强功能：
 
@@ -39,7 +40,7 @@ ms.locfileid: "57221536"
 
 - **其他用户界面改进**：右键单击手势中令人费解的“实时测试集 - 包括/排除”选项已更名为“Live Unit Testing 包括/排除”。 “测试” > “Live Unit Testing”菜单的“重置清理”选项已被删除。 现可通过依次选择“工具” > “选项” > “Live Unit Testing”，然后选择“删除持久化数据”访问该选项。
 
-## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>适用于 Visual Studio 2017 版本 15.3 的 Live Unit Testing 中的新增功能
+## <a name="version-153"></a>版本 15.3
 
 从 Visual Studio 2017 版本 15.3 开始，Live Unit Testing 在两大领域推出了改进和增强功能：
 

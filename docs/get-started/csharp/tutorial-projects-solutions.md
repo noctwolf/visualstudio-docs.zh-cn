@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc927a9d3f4414d8bdf769ad697e9e209ae8f5c5
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: b23b67ea2fe48bb3ba1bcf174d28938379fc1ad9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323191"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070082"
 ---
 # <a name="learn-about-projects-and-solutions-using-c"></a>通过 C\# 了解项目和解决方案
 
@@ -38,9 +38,11 @@ ms.locfileid: "57323191"
 
 我们先创建一个空的解决方案。 对 Visual Studio 有一定了解后，可能就不会经常创建空的解决方案。 在 Visual Studio 中创建新项目时，如果没有打开的解决方案，它会自动创建一个解决方案来存放项目。
 
+::: moniker range="vs-2017"
+
 1. 打开 Visual Studio。
 
-1. 在菜单栏上，这是“文件”和“编辑”等菜单的行，选择“文件” > “新建” > “项目”。
+1. 在顶部菜单栏上，依次选择“文件”>“新建”>“项目”。
 
    **“新建项目”** 对话框随即打开。
 
@@ -49,6 +51,22 @@ ms.locfileid: "57323191"
    ![Visual Studio 中的空白解决方案模板](../media/tutorial-projects-new-solution.png)
 
    此时“起始页”关闭，Visual Studio 窗口右侧的“解决方案资源管理器”中出现解决方案。 你可能会经常使用“解决方案资源管理器”来浏览项目的内容。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 打开 Visual Studio。
+
+2. 在“开始”窗口上，选择“创建新项目”。
+
+3. 在“创建新项目”页上，在搜索框中输入“空白解决方案”，选择“空白解决方案”模板，然后选择“下一步”。
+
+4. 将解决方案命名为“QuickSolution”，然后选择“创建”。
+
+   解决方案将显示在 Visual Studio 窗口右侧的解决方案资源管理器中。 你可能会经常使用“解决方案资源管理器”来浏览项目的内容。
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>添加项目
 

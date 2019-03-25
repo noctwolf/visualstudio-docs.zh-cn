@@ -1,8 +1,24 @@
+---
+ms.openlocfilehash: 4b5b629ecf67ebd88be2eb1bf9172fec001fb475
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58051684"
+---
 ## <a name="prerequisites"></a>系统必备
 
-* 安装有 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)并具有所选语言相应的工作负荷：
+::: moniker range=">=vs-2019"
+
+* 安装有 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 并具有所选语言相应的工作负载：
   * ASP.NET：**ASP.NET 和 Web 开发**
   * Node.js：Node.js 开发
+::: moniker-end
+::: moniker range="vs-2017"
+* 安装有 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)并具有所选语言相应的工作负荷：
+  * ASP.NET：**ASP.NET 和 Web 开发**
+  * Node.js：Node.js 开发
+::: moniker-end
 
 * Azure 订阅。 如果还没有订阅，请[免费注册](https://azure.microsoft.com/free/dotnet/)，其中包括为期 30 天的 $200 额度和为期 12 个月的热门免费服务。
 

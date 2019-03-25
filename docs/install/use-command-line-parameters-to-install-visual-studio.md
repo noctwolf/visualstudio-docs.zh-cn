@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c328b8ed549dc4afd90ccc1e02353f292f0dfc
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 371574ad6c49d4601b571c2378c57fd399e6e715
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796837"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983070"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令行参数安装 Visual Studio 2017
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令行参数安装 Visual Studio
 
-通过命令提示符安装 Visual Studio 2017 时，可以使用各种命令行参数来控制或自定义安装。 通过命令行，可以执行下列操作：
+通过命令提示符安装 Visual Studio 时，可以使用各种命令行参数来控制或自定义安装。 通过命令行，可以执行下列操作：
 
 - 启动预先选定了特定选项的安装。
 - 自动执行安装过程。
@@ -45,7 +45,7 @@ ms.locfileid: "56796837"
 （将 `vs_enterprise.exe` 替换为要安装的相应产品版本。）
 
 >[!TIP]
-> 有关如何使用命令行安装 Visual Studio 2017 的更多示例，请参阅[命令行参数示例](command-line-parameter-examples.md)页。
+> 有关如何使用命令行安装 Visual Studio 的更多示例，请参阅[命令行参数示例](command-line-parameter-examples.md)页。
 
 | **命令** | **说明** |
 | ----------------------- | --------------- |
@@ -54,7 +54,7 @@ ms.locfileid: "56796837"
 | `update` | 更新已安装的产品。 |
 | `repair` | 修复已安装的产品。 |
 | `uninstall` | 卸载已安装的产品。 |
-| `export` | **15.9 版中的新增功能**：将安装所选内容导出到安装配置文件。 **说明**：仅能与 vs_installer.exe 一起使用。 |
+| `export` | **15.9 版的新增功能**：将安装所选内容导出到安装配置文件。 **说明**：仅能与 vs_installer.exe 一起使用。 |
 
 ## <a name="install-options"></a>安装选项
 
@@ -115,7 +115,7 @@ ms.locfileid: "56796837"
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>工作负荷 ID 和组件 ID 列表
 
-有关按 Visual Studio 产品排序的工作负载和组件 ID 的列表，请参阅 [Visual Studio 2017 工作负载和组件 ID](workload-and-component-ids.md) 页面。
+有关按 Visual Studio 产品排序的工作负载和组件 ID 的列表，请参阅 [Visual Studio 工作负载和组件 ID](workload-and-component-ids.md) 页。
 
 ## <a name="list-of-language-locales"></a>语言区域设置列表
 
@@ -155,7 +155,7 @@ ms.locfileid: "56796837"
 
 ## <a name="see-also"></a>请参阅
 
-- [Visual Studio 2017 安装的命令行参数示例](command-line-parameter-examples.md)
-- [创建 Visual Studio 2017 的脱机安装](create-an-offline-installation-of-visual-studio.md)
+- [Visual Studio 安装命令行参数示例](command-line-parameter-examples.md)
+- [创建 Visual Studio 的脱机安装](create-an-offline-installation-of-visual-studio.md)
 - [通过响应文件自动执行 Visual Studio 安装](automated-installation-with-response-file.md)
-- [Visual Studio 2017 工作负载和组件 ID](workload-and-component-ids.md)
+- [Visual Studio 工作负荷和组件 ID](workload-and-component-ids.md)

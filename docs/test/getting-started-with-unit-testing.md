@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df48a659d7718691d86909458a4a1a150d2d64dd
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 52a3d63bb7f632f1eacea603c96787dbb36d90fa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223515"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57984113"
 ---
 # <a name="get-started-with-unit-testing"></a>单元测试入门
 
@@ -112,25 +112,39 @@ ms.locfileid: "57223515"
 
 下面是启用第三方测试框架的操作步骤：
 
-1. 从菜单栏选择“工具” > “扩展和更新”。
+::: moniker range="vs-2017"
 
-1. 在“扩展和更新”对话框中，展开“联机”类别，然后选择“Visual Studio Marketplace”。 然后选择“工具” > “测试”。
+1. 从菜单栏选择“工具”>“扩展和更新”。
+
+2. 在“扩展和更新”对话框中，展开“联机”类别，然后选择“Visual Studio Marketplace”。 然后选择“工具” > “测试”。
 
    ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
 
-1. 选择想要安装的框架或适配器，然后选择“下载”。
+::: moniker-end
 
-1. 创建一个类库项目，并将其添加到解决方案中。
+::: moniker range=">=vs-2019"
+
+1. 从菜单栏选择“扩展”>“管理扩展”。
+
+2. 在“管理扩展”对话框中，展开“联机”类别，然后选择“Visual Studio Marketplace”。 然后选择“工具” > “测试”。
+
+   ![Visual Studio Marketplace](media/extensions-and-updates-testing.png)
+
+::: moniker-end
+
+3. 选择想要安装的框架或适配器，然后选择“下载”。
+
+4. 创建一个类库项目，并将其添加到解决方案中。
 
    ![命名类库项目命名并添加它](media/create3rdpartyunittest3.png)
 
-1. 安装插件。 在“解决方案资源管理器”中，选择类库项目，然后通过右键单击或从上下文菜单中选择“管理 NuGet 包”。
+5. 安装插件。 在“解决方案资源管理器”中，选择类库项目，然后通过右键单击或从上下文菜单中选择“管理 NuGet 包”。
 
    ![管理 NuGet 程序包以安装插件](media/create3rdpartyunittest3a.png)
 
    [NuGet](https://www.nuget.org/) 是 Visual Studio 的扩展，可用来添加和更新项目使用的库和工具。
 
-1. 在“NuGet 包管理器”窗口中，搜索和选择插件，然后选择“安装”。
+6. 在“NuGet 包管理器”窗口中，搜索和选择插件，然后选择“安装”。
 
    ![安装第三方框架](media/create3rdpartyunittest4.png)
 
@@ -138,15 +152,15 @@ ms.locfileid: "57223515"
 
    ![将第三方单元测试框架的引用添加到解决方案中](media/create3rdpartyunittest6.png)
 
-1. 从类库项目的“引用”节点，选择“添加引用”。
+7. 从类库项目的“引用”节点，选择“添加引用”。
 
    ![添加对项目的引用](media/createunittest6.png)
 
-1. 在“引用管理器”对话框中，选择包含待测试代码的项目。
+8. 在“引用管理器”对话框中，选择包含待测试代码的项目。
 
    ![选择要测试的代码项目](media/createunittest7.png)
 
-1. 对单元测试进行编码。
+9. 对单元测试进行编码。
 
    ![将代码添加到单元测试代码文件](media/create3rdpartyunittest7.png)
 

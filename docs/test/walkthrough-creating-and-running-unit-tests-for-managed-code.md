@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 26988b2fd74ae66bd1ef2724c55248371a81adf1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1b40fe963b6a48a6fa9848c4d9e205bae5503e9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922285"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069653"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -35,28 +35,38 @@ ms.locfileid: "55922285"
 
 ## <a name="create-a-project-to-test"></a>创建一个项目进行测试
 
+::: moniker range="vs-2017"
+
 1. 打开 Visual Studio。
 
-2. 在“文件”菜单上，选择“新建” > “项目”。 
+2. 在“文件”菜单上，依次选择“新建”>“项目”。
 
    此时将出现“新建项目”对话框。
 
-3. 在 **“已安装的模板”** 下单击 **“Visual C#”**。
+::: moniker-end
 
-4. 在应用程序类型的列表中单击 **“类库”**。
+::: moniker range=">=vs-2019"
 
-5. 在“名称”框中键入 Bank，然后单击“确定”。
+1. 打开 Visual Studio。
 
-   将创建新的 Bank 项目并将其显示在“解决方案资源管理器”中，而且将在代码编辑器中打开 Class1.cs 文件。
+2. 在“开始”窗口上，选择“创建新项目”。
+
+::: moniker-end
+
+3. 选择 C# 类库项目模板。
+
+4. 将项目命名为“Bank”，然后单击“确定”或“创建”。
+
+   将创建 Bank 项目并将其显示在“解决方案资源管理器”中，而且将在代码编辑器中打开 Class1.cs 文件。
 
    > [!NOTE]
    > 如果代码编辑器中未打开 Class1.cs，请在“解决方案资源管理器”中双击文件 Class1.cs 将其打开。
 
-6. 从[用于创建单元测试的示例项目](../test/sample-project-for-creating-unit-tests.md)中复制源代码，并将 Class1.cs 的原始内容替换为复制的代码。
+5. 从[用于创建单元测试的示例项目](../test/sample-project-for-creating-unit-tests.md)中复制源代码，并将 Class1.cs 的原始内容替换为复制的代码。
 
-7. 将文件保存为 BankAccount.cs。
+6. 将文件保存为 BankAccount.cs。
 
-8. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。
+7. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。
 
 现在你有一个名为“Bank”的项目。 它包含要测试的源代码和用于对该源代码进行测试的工具。 Bank 的命名空间“BankAccountNS”包含公共类“BankAccount”，在以下过程中将对该类的方法进行测试。
 

@@ -1,7 +1,7 @@
 ---
 title: 面向 Python 开发人员的 Visual Studio 概述
 titleSuffix: ''
-ms.date: 12/14/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 094a768f0b1b50e03bb445becb956e8e91a862da
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316608"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983502"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>欢迎使用 Visual Studio IDE | Python
 
@@ -28,6 +28,10 @@ Visual Studio“集成开发环境”是面向 Python （和其他语言）的�
 
 - 可通过[解决方案资源管理器](../ide/solutions-and-projects-in-visual-studio.md)（右上方）查看、导航和管理代码文件。 解决方案资源管理器可将代码文件分组为[解决方案和项目](/visualstudio/get-started/tutorial-projects-solutions)，从而帮助整理代码。
     - 除“解决方案资源管理器”外，还有[“Python 环境”](managing-python-environments-in-visual-studio.md)，可在其中管理计算机上安装的不同 Python 解释器。
+
+    ::: moniker range=">=vs-2019"
+    - 还可以打开并运行文件夹中的 Python 代码，而无需创建 Visual Studio 项目和解决方案文件。 有关详细信息，请参阅[快速入门：打开并运行文件夹中的 Python 代码](quickstart-05-python-visual-studio-open-folder.md)。
+    ::: moniker-end
 
 - [编辑器窗口](../ide/writing-code-in-the-code-and-text-editor.md)（中心）用于显示文件内容，你可能会在该窗口花费大部分时间。 这是[编辑 Python 代码](editing-python-code-in-visual-studio.md)、在代码结构中导航以及在调试会话期间设置断点的地方。 使用 Python，还可以选择代码并通过按 Ctrl+Enter 在[交互式 REPL 窗口](python-interactive-repl-in-visual-studio.md)中运行该代码。
 
@@ -83,6 +87,12 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
    ![代码导航命令](media/tour-ide-navigation-commands.png)
 
 ## <a name="powerful-features-for-python"></a>面向 Python 的强大功能
+
+::: moniker range=">=vs-2019"
+- [无项目运行代码](quickstart-05-python-visual-studio-open-folder.md)
+
+    自 Visual Studio 2019 起，可以打开包含 Python 代码的文件夹，以使用 IntelliSense 和调试等功能，而无需为代码创建 Visual Studio 项目。
+::: moniker-end
 
 - [Python 交互式 REPL](python-interactive-repl-in-visual-studio.md)
 

@@ -3,19 +3,19 @@ title: 将本地函数转换为方法
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55c82aa896de5c3f3bf18468a1da98253a3def74
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 96064b16e53081e0456ed43275acd5edf7ead468
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324672"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152949"
 ---
 # <a name="convert-local-function-to-method"></a>将本地函数转换为方法
 
@@ -38,7 +38,7 @@ ms.locfileid: "57324672"
 
 2. 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
 
-    ![将本地函数转换为方法 codefix](media/convert-local-function-to-method-codefix.png)
+    ![将本地函数转换为方法代码修补程序](media/convert-local-function-to-method-codefix.png)
 
 2. 按 Enter 接受重构。
 

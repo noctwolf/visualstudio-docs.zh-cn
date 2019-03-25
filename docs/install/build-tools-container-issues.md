@@ -1,6 +1,6 @@
 ---
 title: 容器的已知问题
-description: 详细了解将 Visual Studio 生成工具 2017 安装到 Windows 容器时可能会出现的已知问题。
+description: 详细了解将 Visual Studio 生成工具安装到 Windows 容器时可能会出现的已知问题。
 ms.date: 04/18/2018
 ms.custom: seodec18
 ms.topic: conceptual
@@ -10,16 +10,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1fdfcc71f2bd17bf8ab4be0796350799af2c35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 52e3ab107aac36f50307db910c71e03b5a8b439b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935012"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983697"
 ---
 # <a name="known-issues-for-containers"></a>容器的已知问题
 
 向 Docker 容器中安装 Visual Studio 时存在几个问题。
+
+::: moniker range="vs-2017"
 
 ## <a name="windows-container"></a>Windows 容器
 
@@ -36,6 +38,8 @@ ms.locfileid: "55935012"
 
 * 无法在 mcr<span></span>.microsoft.com/windows/servercore:1809 或更高版本上安装 VisualStudio2017 版本 15.8 或更早版本（任何产品）。 有关更多信息，请参见 https://aka.ms/setup/containers/servercore1809。
 
+::: moniker-end
+
 ## <a name="build-tools-container"></a>生成工具容器
 
 使用生成工具容器时可能会出现以下已知问题。 要查看问题是否已修复，或者是否有其他已知问题，请访问 [https://developercommunity.visualstudio.com](https://developercommunity.visualstudio.com)。
@@ -48,4 +52,4 @@ ms.locfileid: "55935012"
 
 * [将生成工具安装到容器](build-tools-container.md)
 * [容器的高级示例](advanced-build-tools-container.md)
-* [Visual Studio 生成工具 2017 工作负载和组件 ID](workload-component-id-vs-build-tools.md)
+* [Visual Studio 生成工具工作负载和组件 ID](workload-component-id-vs-build-tools.md)

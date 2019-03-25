@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6844c20a5be1a963b37aa1e24536d4d33565405
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908187"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983269"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 适用的 .NET 命名约定
 
@@ -73,18 +73,19 @@ ms.locfileid: "55908187"
 - private
 - protected
 - protected\_internal 或 protected_friend
+- private\_protected
 - 本地
 
 > [!NOTE]
 > 如果可访问性不适用于目标符号种类，请勿在命名约定中指定可访问性级别。 例如，参数就没有可访问性级别。 如果为参数命名约定指定可访问性级别，那么命名规则将无法正常运行。
 
-### <a name="symbol-modifiers"></a>符号修饰符
+### <a name="symbol-modifiers-optional"></a>符号修饰符（可选）
 
 要描述应用命名规则的符号的修饰符，请按照以下格式指定一个属性名称：
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-以下列表显示了允许的值，可通过以逗号分隔值来指定多个值。 命名规则仅匹配具有 `required_modifiers` 中指定的所有修饰符的签名。 如果忽略此属性，则使用一个空列表的默认值，即无需特定修饰符即可匹配。 这意味着符号的修饰符不会影响是否应用此规则。
+以下列表显示了允许的值（以逗号分隔多个值）：
 
 - `abstract` 或 `must_inherit`
 - `async`
@@ -95,7 +96,10 @@ ms.locfileid: "55908187"
    > [!NOTE]
    > 如果 `static` 或 `shared` 符号有命名规则，此规则也适用于 `const` 符号，因为它们是隐式静态的。 如果不希望将 `static` 命名规则应用于 `const` 符号，请为 `const` 符号单独创建命名规则。
 
-`required_modifiers` 为可选属性。 如果忽略此属性，则命名规则应用于所有修饰符。
+命名规则与具有 `required_modifiers` 中指定的所有修饰符的签名匹配。 如果忽略此属性，则使用一个空列表的默认值，即无需特定修饰符即可匹配。 这意味着符号的修饰符不会影响是否应用此规则。
+
+> [!TIP]
+> 请勿为 `required_modifiers` 指定 `*` 值。 相反，只需省略 `required_modifiers` 属性，命名规则将适用于任何类型的修饰符。
 
 ## <a name="style"></a>样式
 

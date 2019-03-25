@@ -11,18 +11,28 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cd9bf3cd624439e2f4846043822305743520931
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: c1273c5475fe6090648b61ca351ae3b507702708
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318662"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57873254"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>欢迎使用 Visual Studio IDE | Visual Basic
 
 Visual Studio 集成开发环境是一种创新启动板，可用于编辑、调试并生成代码，然后发布应用。 集成开发环境 (IDE) 是一个功能丰富的程序，可用于软件开发的许多方面。 除了大多数 IDE 提供的标准编辑器和调试器之外，Visual Studio 还包括编译器、代码完成工具、图形设计器和许多其他功能，以简化软件开发过程。
 
+::: moniker range="vs-2017"
+
 ![Visual Studio IDE](../media/visual-studio-ide.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+[![](media/vs-2019/ide-overview.png "Visual Studio IDE")](media/vs-2019/ide-overview.png#lightbox)
+
+::: moniker-end
 
 此图像显示 Visual Studio 具有一个打开的项目和若干可能会使用的关键工具窗口：
 
@@ -44,66 +54,160 @@ Visual Studio 2017 有三个版本：社区版、专业版和企业版。 请参
 
 Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作效率，这些功能包括：
 
+- 波形曲线和[快速操作](../../ide/quick-actions.md)
+
+   波形曲线是波浪形下划线，它可以在键入时对代码中的错误或潜在问题发出警报。 这些可视线索使你能立即修复问题，而无需等待在生成期间或运行程序时发现错误。 如果将鼠标悬停在波形曲线上，将看到关于此错误的其他信息。 左边距中也可能会出现一个灯泡，提供修复此错误的“快速操作”建议。
+
+   ::: moniker range="vs-2017"
+
+   ![Visual Studio 中的波形曲线](media/squiggles-error.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio 中的波形曲线](media/vs-2019/squiggles-error.png)
+
+   ::: moniker-end
+
 - [重构](../../ide/refactoring-in-visual-studio.md)
 
    重构包括智能重命名变量、将一个或多个代码行提取到新方法中、更改方法参数的顺序等操作。
 
-   ![在 Visual Studio 中重构](media/refactoring-menu.png)
+   ::: moniker range="vs-2017"
+
+   ![在 Visual Studio 中重构菜单](media/refactoring-menu.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![在 Visual Studio 中重构菜单](media/vs-2019/refactorings-menu.png)
+
+   ::: moniker-end
 
 - [IntelliSense](../../ide/using-intellisense.md)
 
    IntelliSense 由一组功能构成，它可用于在编辑器中直接显示代码相关信息，还能在某些情况下编写小段代码。 如同在编辑器中拥有了基本文档内联，从而节省了在其他位置查看类型信息的时间。 IntelliSense 功能因语言而异。 有关详细信息，请参阅 [C# IntelliSense](../../ide/visual-csharp-intellisense.md)、[Visual C++ IntelliSense](../../ide/visual-cpp-intellisense.md)、[JavaScript IntelliSense](../../ide/javascript-intellisense.md) 和 [Visual Basic IntelliSense](../../ide/visual-basic-specific-intellisense.md)。 下图显示了 IntelliSense 如何显示类型的成员列表：
 
+   ::: moniker range="vs-2017"
+
    ![Visual Studio 成员列表](media/intellisense-list-members.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio 成员列表](media/vs-2019/intellisense-list-members.png)
+
+   ::: moniker-end
 
 - [快速启动](../../ide/reference/quick-launch-environment-options-dialog-box.md)
 
    visual Studio 有时会因为有如此多的菜单、选项和属性而让人不知所措。 使用**快速启动**搜索框可以在 Visual Studio 中快速找到所需内容。 开始键入要查找内容的名称时，Visual Studio 会列出结果，这些结果可以准确地将你导向目标位置。 如果需要向 Visual Studio 添加功能，例如添加对其他编程语言的支持，“快速启动”提供了打开 Visual Studio 安装程序以安装工作负载或单个组件的结果。
 
-   ![Visual Studio 中的“快速启动”搜索框](../media/quick-launch-nuget.png)
+   > [!TIP]
+   > 按 Ctrl+Q 作为“快速启动”搜索框的快捷方式。
 
-- 波形曲线和[快速操作](../../ide/quick-actions.md)
+   ::: moniker range="vs-2017"
 
-   波形曲线是波浪形下划线，它可以在键入时对代码中的错误或潜在问题发出警报。 这些可视线索使你能立即修复问题，而无需等待在生成期间或运行程序时发现错误。 如果将鼠标悬停在波形曲线上，将看到关于此错误的其他信息。 左边距中也可能会出现一个灯泡，提供修复此错误的“快速操作”建议。
+   ![Visual Studio 2017 中的“快速启动”搜索框](../media/quick-launch-nuget.png)
 
-   ![Visual Studio 中的波形曲线](media/squiggles-error.png)
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio 2019 中的“快速启动”搜索框](media/vs-2019/quick-launch.png)
+
+   ::: moniker-end
+
+- [Live Share](/visualstudio/liveshare/)
+
+   与他人实时协作编辑和调试，无需考虑应用类型或编程语言。 可以即时且安全地共享项目，并根据需要调试会话、终端实例、localhost Web 应用和语音呼叫等。
 
 - [调用层次结构](../../ide/reference/call-hierarchy.md)
 
    “调用层次结构”窗口显示调用所选方法的方法。 考虑更改或删除方法时，或者尝试追踪 bug 时，这可能是有用的信息。
 
+   ::: moniker range="vs-2017"
+
    ![Visual Studio 中的“调用层次结构”窗口](media/call-hierarchy.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio 中的“调用层次结构”窗口](media/vs-2019/call-hierarchy.png)
+
+   ::: moniker-end
 
 - [CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)
 
    CodeLens 可帮助查找代码引用、代码更改、链接错误、工作项、代码评审和单元测试，所有操作都在编辑器上进行。
 
+   ::: moniker range="vs-2017"
+
    ![Visual Studio 中的 CodeLens](media/codelens.png)
 
-   > [!NOTE]
-   > CodeLens 不适用于 Visual Studio 2017 Community 版本。
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio 中的 CodeLens](media/vs-2019/codelens.png)
+
+   ::: moniker-end
 
 - [转到定义](../../ide/go-to-and-peek-definition.md)
 
    “转到定义”功能可将你直接带到定义函数或类型的位置。
 
-   ![Visual Studio 中的“转到定义”](media/go-to-definition-menu.png)
+   ::: moniker range="vs-2017"
+
+   ![Visual Studio 2017 中的“转到定义”](media/go-to-definition-menu.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio 2019 中的“转到定义”](media/vs-2019/go-to-definition-menu.png)
+
+   ::: moniker-end
 
 - [查看定义](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
    “速览定义”窗口显示方法或类型的定义，而无需实际打开一个单独的文件。
 
+   ::: moniker range="vs-2017"
+
    ![Visual Studio 中的“速览定义”](media/peek-definition.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Visual Studio 中的“速览定义”](media/vs-2019/peek-definition.png)
+
+   ::: moniker-end
 
 ## <a name="install-the-visual-studio-ide"></a>安装 Visual Studio IDE
 
-这篇概述性文章将演示创建一个简单项目以及尝试使用 Visual Studio 执行的一些操作，例如更改颜色主题、使用 [IntelliSense](../../ide/using-intellisense.md) 辅助编码以及调试应用，以便在程序执行过程中查看变量的值。 首先，请[下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 并将其安装到系统上。
+在本部分中，你将创建一个简单的项目来尝试可在 Visual Studio 中执行的一些操作。 你将更改颜色主题，使用 [IntelliSense](../../ide/using-intellisense.md) 作为编码辅助，并调试应用，以便在程序执行期间查看变量的值。
 
-通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
+::: moniker range="vs-2017"
+
+首先，请[下载 Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 并将其安装到你的系统上。 通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+首先，请[下载 Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 并将其安装到你的系统上。 通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
+
+::: moniker-end
 
 ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负载](../media/dotnet-core-cross-platform-workload.png)
 
-首次启动 Visual Studio 时，可选择使用 Microsoft 帐户或者工作或学校帐户[登录](../../ide/signing-in-to-visual-studio.md)。
+首次打开 Visual Studio 时，可选择使用 Microsoft 帐户或者工作或学校帐户[登录](../../ide/signing-in-to-visual-studio.md)。
 
 ## <a name="customize-visual-studio"></a>自定义 Visual Studio
 
@@ -113,15 +217,41 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 更改为“深色”主题：
 
-1. 在菜单栏中，选择“工具” > “选项”，打开“选项”对话框。
+::: moniker range="vs-2017"
 
-2. 在“环境” > “常规”选项页上，将选择的“颜色主题”更改为“深色”，然后选择“确定”。
+1. 打开 Visual Studio。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 打开 Visual Studio。 在“启动”窗口中，选择“继续但无需代码”。
+
+   ![Visual Studio 2019 中的“启动”窗口](media/vs-2019/continue-without-code.png)
+
+   IDE 将随即打开。
+
+::: moniker-end
+
+2. 在菜单栏中，选择“工具” > “选项”，打开“选项”对话框。
+
+3. 在“环境” > “常规”选项页上，将选择的“颜色主题”更改为“深色”，然后选择“确定”。
 
    ![将 Visual Studio 中的“颜色主题”更改为“深色”](media/change-color-theme.png)
 
    此时，整个 IDE 的颜色主题更改为“深色”。
 
+   ::: moniker range="vs-2017"
+
    ![深色主题中的 Visual Studio](../../ide/media/quickstart-personalize-dark-theme.png)
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![深色主题中的 Visual Studio](media/vs-2019/dark-theme.png)
+
+   ::: moniker-end
 
 ### <a name="select-environment-settings"></a>选择环境设置
 
@@ -143,11 +273,15 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 现在我们来深入了解并创建一个简单的程序。
 
-1. 打开 Visual Studio。 在菜单栏上，依次选择“文件” > “新项目”。
+::: moniker range="vs-2017"
+
+1. 在 Visual Studio 菜单栏上，依次选择 **“文件”**>“新建项目”。
 
    ![菜单栏上的“文件”>“新建项目”](media/file-new-project-menu.png)
 
-2. “新建项目”对话框中会显示几个项目模板。 模板包含给定项目类型所需的基本文件和设置。 依次选择“Visual Basic”下的“.NET Core”类别和“控制台应用(.NET Core)”模板。 在“名称”文本框中，键入“HelloWorld”，然后选择“确定”按钮。
+   “新建项目”对话框中会显示几个项目模板。 模板包含给定项目类型所需的基本文件和设置。
+
+1. 依次选择“Visual Basic”下的“.NET Core”类别和“控制台应用(.NET Core)”模板。 在“名称”文本框中，键入“HelloWorld”，然后选择“确定”按钮。
 
    ![.NET Core 应用模板](media/overview-npd.png)
 
@@ -166,15 +300,17 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
    还提供了一些其他的菜单和工具窗口，但是现在我们继续下一步操作。
 
-3. 现在，按“Ctrl+F5”，以启动应用。
+1. 现在启动该应用。 可从菜单栏的“调试”菜单中选择“开始执行(不调试)”，以执行此操作。 还可按 Ctrl+F5。
+
+   ![“调试”>“开始执行(不调试)”菜单](../media/overview-start-without-debugging.png)
 
    Visual Studio 生成应用，控制台窗口随即打开并显示消息“Hello World!”。 现在你拥有了一个正在运行的应用！
 
    ![控制台窗口](../media/overview-console-window.png)
 
-4. 要关闭控制台窗口，请在键盘上按任意键。
+1. 要关闭控制台窗口，请在键盘上按任意键。
 
-5. 接下来，向应用添加一些附加代码。 在 `Console.WriteLine("Hello World!")` 行前面添加以下 Visual Basic 代码：
+1. 接下来，向应用添加一些附加代码。 在 `Console.WriteLine("Hello World!")` 行前面添加以下 Visual Basic 代码：
 
    ```vb
    Console.WriteLine("What is your name?")
@@ -183,23 +319,90 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
    此代码在控制台窗口中显示“What is your name?”，然后等待用户输入文本并按 Enter 键。
 
-6. 将显示 `Console.WriteLine("Hello World!")` 的行更改为以下代码：
+1. 将显示 `Console.WriteLine("Hello World!")` 的行更改为以下代码：
 
    ```vb
    Console.WriteLine("Hello " + name + "!")
    ```
 
-7. 按“Ctrl+F5”，以重新运行应用。
+1. 按“Ctrl+F5”，以重新运行应用。
 
    Visual Studio 重新生成应用，控制台窗口随即打开，并提示输入姓名。
 
-8. 在控制台窗口中输入姓名，并按 Enter。
+1. 在控制台窗口中输入姓名，并按 Enter。
 
-   此时，程序问候你并显示你的姓名。
+   ![控制台窗口输入](../media/overview-console-input.png)
 
-   ![控制台窗口输入](media/overview-console-input.png)
+1. 按任意键关闭控制台窗口，并停止正在运行的程序。
 
-9. 按任意键关闭控制台窗口，并停止正在运行的程序。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在 Visual Studio 菜单栏上，依次选择 **“文件”**>“新建项目”。
+
+   ![菜单栏上的“文件”>“新建项目”](media/vs-2019/file-new-project.png)
+
+   随即打开“创建新项目”窗口，并显示几个项目模板。 模板包含给定项目类型所需的基本文件和设置。
+
+1. 若要查找所需的模板，请在搜索框中键入或输入“.Net Core 控制台”。 系统会自动根据输入的关键字筛选可用模板列表。 可以通过从“语言”下拉列表选择“Visual Basic”进一步筛选模板结果。
+
+1. 选择“控制台应用 (.NET Core)”模板，然后选择“下一步”。
+
+   ![在 Visual Studio 中创建新项目](media/vs-2019/create-new-project.png)
+
+1. 在“配置新项目”窗口中，在“项目名称”框中输入“HelloWorld”，根据需要更改项目文件的目录位置，然后选择“创建”。
+
+   ![在 Visual Studio 中配置新项目](media/vs-2019/configure-new-project.png)
+
+   Visual Studio 随即创建项目。 它是简单的“Hello World”应用程序，可调用 <xref:System.Console.WriteLine?displayProperty=nameWithType> 方法在控制台窗口中 显示文本字符串“Hello World!”。
+
+   稍后，将看到类似于以下的内容：
+
+   ![Visual Studio IDE](media/overview-ide-console-app.png)
+
+   应用的 Visual Basic 代码会显示在编辑窗口中，占据大部分空间。 请注意，文本已自动着色，用于指示代码的不同方面，如关键字或类型。 此外，代码中的垂直短虚线指示哪两个大括号相匹配，行号能够帮助你在以后查找代码。 可以通过选择带减号的小方形来折叠或展开代码块。 此代码大纲功能可以隐藏不需要的代码，最大程度地减少屏幕混乱。 右侧名为“解决方案资源管理器”的窗口中列出了项目文件。
+
+   ![具有红色框的 Visual Studio IDE](media/overview-ide-console-app-red-boxes.png)
+
+   还提供了一些其他的菜单和工具窗口，但是现在我们继续下一步操作。
+
+1. 现在启动该应用。 可从菜单栏的“调试”菜单中选择“开始执行(不调试)”，以执行此操作。 还可按 Ctrl+F5。
+
+   ![“调试”>“开始执行(不调试)”菜单](media/vs-2019/start-without-debugging.png)
+
+   Visual Studio 生成应用，控制台窗口随即打开并显示消息“Hello World!”。 现在你拥有了一个正在运行的应用！
+
+   ![控制台窗口](../media/vs-2019/overview-console-window.png)
+
+1. 要关闭控制台窗口，请在键盘上按任意键。
+
+1. 接下来，向应用添加一些附加代码。 在 `Console.WriteLine("Hello World!")` 行前面添加以下 Visual Basic 代码：
+
+   ```vb
+   Console.WriteLine("What is your name?")
+   Dim name = Console.ReadLine()
+   ```
+
+   此代码在控制台窗口中显示“What is your name?”，然后等待用户输入文本并按 Enter 键。
+
+1. 将显示 `Console.WriteLine("Hello World!")` 的行更改为以下代码：
+
+   ```vb
+   Console.WriteLine("Hello " + name + "!")
+   ```
+
+1. 按“Ctrl+F5”，以重新运行应用。
+
+   Visual Studio 重新生成应用，控制台窗口随即打开，并提示输入姓名。
+
+1. 在控制台窗口中输入姓名，并按 Enter。
+
+   ![控制台窗口](../media/vs-2019/overview-console-input.png)
+
+1. 按任意键关闭控制台窗口，并停止正在运行的程序。
+
+::: moniker-end
 
 ## <a name="use-refactoring-and-intellisense"></a>使用重构和 IntelliSense
 
@@ -252,9 +455,21 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 9. 单击“内联临时变量”，重构代码。
 
+::: moniker range="vs-2017"
+
 10. 按 Ctrl+F5 重新运行程序。 输出的内容与以下类似：
 
-    ![显示程序输出的控制台窗口](media/overview-console-final.png)
+    ![显示程序输出的控制台窗口](../media/overview-console-final.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+10. 按 Ctrl+F5 重新运行程序。 输出的内容与以下类似：
+
+    ![显示程序输出的控制台窗口](../media/vs-2019/overview-console-final.png)
+
+::: moniker-end
 
 ## <a name="debug-code"></a>调试代码
 

@@ -13,14 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 076782f8f6e5d654c66e6a39f3ffe0342a74c560
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: bf78bc26a2eb0c0a217a48b7c663851447aa4f7f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954016"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57871322"
 ---
-# <a name="create-a-network-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 的网络安装
+# <a name="create-a-network-installation-of-visual-studio"></a>创建 Visual Studio 的网络安装
 
 通常情况下，企业管理员会创建网络安装点，以便部署到客户端工作站。 我们精心设计了 Visual Studio 2017，可将初始安装的相关文件以及所有产品更新缓存到一个文件夹中。 （此过程也称为_创建布局_。） 
 
@@ -48,7 +48,7 @@ ms.locfileid: "56954016"
 必须具有 Internet 连接才能完成此步骤。 若要创建含所有语言和所有功能的脱机安装，请使用下面示例中的命令之一。
 
    > [!IMPORTANT]
-   > 完整的 Visual Studio 2017 布局至少需要 35 GB 磁盘空间，可能需要一段时间才能下载完成。  若要详细了解如何创建仅包含要安装的组件的布局，请参阅[自定义网络布局](#customizing-the-network-layout)部分。
+   > 完整的 Visual Studio 2017 布局至少需要 35 GB 磁盘空间，可能需要一段时间才能下载完成。  若要详细了解如何创建仅包含要安装的组件的布局，请参阅[自定义网络布局](#customize-the-network-layout)部分。
    >
    > [!TIP]
    > 请确保从下载目录运行该命令。 通常，在运行 Windows 10 的计算机上为：`C:\Users\<username>\Downloads`。
@@ -127,7 +127,7 @@ xcopy /e c:\vs2017offline \\server\products\VS2017
     vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
 
-### <a name="new-in-153"></a>15.3 中的新增功能
+### <a name="new-in-version-153"></a>15.3 版中的新增功能
 
 运行布局命令时，指定的选项（例如工作负载和语言）将被保存。 后续的布局命令将包括先前的所有选项。  以下示例说明如何使用一个工作负载来创建布局（仅限英语）：
 
@@ -209,7 +209,7 @@ vs_enterprise.exe --layout c:\VS2017Layout --all
 
 ## <a name="see-also"></a>请参阅
 
-* [更新基于网络的 Visual Studio 2017 安装](update-a-network-installation-of-visual-studio.md)
+* [更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)
 * [控制对基于网络的 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 * [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

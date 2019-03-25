@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d376308c9647895f814dbf6d3d438a98d75e2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843802"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069679"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 
@@ -96,7 +96,7 @@ ms.locfileid: "56843802"
 
  ![使用 Javascript 的多设备混合应用](../cross-platform/media/multidevicehybridapps.png "使用 Javascript 的多设备混合应用")
 
- 首先，请安装 Visual Studio 2017，并在安装过程中选择“使用 Javascript 的移动开发”。 Cordova 工具都会自动安装构建多平台应用所需的所有第三方软件。
+ 首先，请安装 Visual Studio，并在安装过程中选择“使用 Javascript 的移动开发”功能。 Cordova 工具都会自动安装构建多平台应用所需的所有第三方软件。
 
  安装扩展后，打开 Visual Studio 并创建空白应用 (Apache Cordova)项目。 然后，便可使用 JavaScript 或 TypeScript 来开发应用了。 也可以添加插件来扩展应用的功能，编写代码时插件的 API 会出现在 IntelliSense 中。
 

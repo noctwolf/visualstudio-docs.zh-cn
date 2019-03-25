@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f64655dd1afca25ca0c216fa93cb9f85fb4a5b41
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323113"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070017"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客户体验改善计划
 
@@ -25,9 +25,7 @@ Visual Studio 客户体验改善计划 (VSCEIP) 旨在随着时间推移帮助 M
 
 VSCEIP 默认开启。 可以按照以下步骤将其关闭或者再次打开：
 
-1. 启动 Visual Studio。
-
-1. 从“帮助”菜单，指向“发送反馈”，然后选择“设置”。
+1. 在 Visual Studio 中，选择“帮助” > “发送反馈”，然后选择“设置”。
 
    “Visual Studio 体验改善计划”对话框随即打开。
 

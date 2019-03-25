@@ -2,7 +2,7 @@
 title: 快速入门：使用 Visual Studio 创建你的第一个 Node.js 应用
 description: 本快速入门中，将在 Visual Studio 中创建 Node.js 应用
 ms.date: 06/27/2018
-ms.technology: vs-nodejs
+ms.technology: vs-javascript
 ms.topic: quickstart
 ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
@@ -13,16 +13,35 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 144e06450b4419b28e1ec2ad2684fd730164df48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17bd74a9c5a484d7e3539e787f4ae05d078aa80b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952367"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867007"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>快速入门：使用 Visual Studio 创建你的第一个 Node.js 应用
 
-在这个对 Visual Studio 集成开发环境 (IDE) 的 5-10 分钟简介中，可以创建简单的 Node.js Web 应用程序。 如果尚未安装 Visual Studio 2017，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
+在这个对 Visual Studio 集成开发环境 (IDE) 的 5-10 分钟简介中，可以创建简单的 Node.js Web 应用程序。
+
+## <a name="prerequisites"></a>系统必备
+
+* 须安装 Visual Studio 且具有 Node.js 开发工作负载。
+
+    ::: moniker range=">=vs-2019"
+    如果尚未安装 Visual Studio 2019，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    如果尚未安装 Visual Studio 2017，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
+    ::: moniker-end
+
+    如果需要安装工作负载但已有 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“Node.js 开发”工作负载，然后选择“修改”。
+
+    ![VS 安装程序中的 Node.js 工作负载](../ide/media/quickstart-nodejs-workload.png)
+
+* 须安装 Node.js 运行时。
+
+    如果未安装，请从 [Node.js](https://nodejs.org/en/download/) 网站安装 LTS 版本。 一般情况下，Visual Studio 会自动检测已安装的 Node.js 运行时。 如果系统未检测到已安装运行时，则可以将项目配置为引用属性页中已安装的运行时（创建项目后，右键单击项目节点并选择“属性”）。
 
 ## <a name="create-a-project"></a>创建项目
 
@@ -32,17 +51,21 @@ ms.locfileid: "55952367"
 
     一般情况下，Visual Studio 会自动检测已安装的 Node.js 运行时。 如果系统未检测到已安装运行时，则可以将项目配置为引用属性页中已安装的运行时（创建项目后，右键单击项目节点并选择“属性”）。
 
-1. 打开 Visual Studio 2017。
+1. 打开 Visual Studio。
 
 1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目”。
 
-1. 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“空 Node.js Web 应用程序”，然后选择“确定”。
+1. 创建新项目。
 
-     如果没有看到“空白 Node.js Web 应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“Node.js 开发”工作负载，然后选择“修改”。
+    ::: moniker range=">=vs-2019"
+    在“创建新项目”对话框中，在搜索框中键入“javascript”以筛选结果，然后选择“空白 Node.js Web 应用程序”，再选择“下一步”。 然后，选择“创建”。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“空 Node.js Web 应用程序”，然后选择“确定”。
+    ::: moniker-end
+    如果没有看到“空白 Node.js Web 应用程序”项目模板，必须添加 Node.js 开发工作负载。 有关详细说明，请参阅[先决条件](#prerequisites)。
 
-     ![VS 安装程序中的 Node.js 工作负载](../ide/media/quickstart-nodejs-workload.png)
-
-    选择“空白 Node.js Web 应用程序”模板并单击“确定”后，Visual Studio 将创建新解决方案并打开项目。 server.js 在位于左侧窗格的编辑器中打开。
+    Visual Studio 创建新的解决方案并打开项目。 server.js 在位于左侧窗格的编辑器中打开。
 
 ## <a name="explore-the-ide"></a>探索 IDE
 

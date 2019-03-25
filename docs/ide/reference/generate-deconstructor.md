@@ -3,18 +3,18 @@ title: 生成解构函数快速操作
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
-ms.author: kendrahavens
+ms.author: kehavens
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a609b16e0d1bc7e30dc26ef047228a6cacdb46b2
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 8887f4cd6b4dcd7f08e808f1271f5d546d6a224c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324732"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159174"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>在 Visual Studio 中生成解构函数
 
@@ -42,7 +42,7 @@ ms.locfileid: "57324732"
       - 右键单击并选择“快速操作和重构”菜单。
       - 单击 ![左边缘中](media/screwdriver.png) 图标（如果文本光标已在此类中的空行上，它会出现在左边缘）。
 
-      ![生成解构 codefix](media/deconstruct-codefix.png)
+      ![生成解构代码修补程序](media/deconstruct-codefix.png)
 
 3. 选择“生成方法 'MyInternalClass.Deconstruct'”以生成解构函数。
 

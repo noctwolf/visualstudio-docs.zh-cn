@@ -14,14 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe26bb7e0139c1521de17dab7cd7e8146aa780a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5188a46807eef84b942c3d551c938d97f372413e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907826"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57982878"
 ---
-# <a name="uninstall-visual-studio-2017"></a>卸载 Visual Studio 2017
+# <a name="uninstall-visual-studio"></a>卸载 Visual Studio
 
 此页面介绍如何卸载 Visual Studio（一个面向开发人员的工作效率工具集成套件）。
 
@@ -39,7 +39,7 @@ ms.locfileid: "55907826"
 
 2. 单击以启动安装程序，单击![“详细信息”图标](media/vs2017uninstall-UninstallIcon.png "“选择选项”图标")，然后单击“卸载”。
 
-     ![修改 Visual Studio 2017；修改、启动、修复或卸载](media/vs2017-uninstall.PNG "修复或卸载 Visual Studio 2017")
+     ![修改 Visual Studio；修改、启动、修复或卸载](media/vs2017-uninstall.PNG "修复或卸载 Visual Studio 2017")
 
 3. 单击“确定”确认所做选择。
 
@@ -59,6 +59,6 @@ ms.locfileid: "55907826"
 
 ## <a name="see-also"></a>请参阅
 
-* [修改 Visual Studio 2017](modify-visual-studio.md)
+* [修改 Visual Studio](modify-visual-studio.md)
 * [更新 Visual Studio](update-visual-studio.md)
 * [卸载 Visual Studio for Mac](/visualstudio/mac/uninstall)

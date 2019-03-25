@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2662f51baa38b2b2cf65af9654ed76ae63698e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222982"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868225"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
@@ -25,7 +25,7 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
 如果将系统从 Windows 32 位版本升级到 64 位版本，那么 Visual Studio 的可用虚拟内存量会从 2 GB 扩展到 4 GB。 这样，即使 Visual Studio 是 32 位进程，也可以处理更大的工作负荷。
 
-有关详细信息，请参阅[内存限制](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits)和[在 64 位 Windows 上使用 /LARGEADDRESSAWARE](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)。
+有关详细信息，请参阅[内存限制](/windows/desktop/Memory/memory-limits-for-windows-releases)和[在 64 位 Windows 上使用 /LARGEADDRESSAWARE](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)。
 
 ## <a name="disable-automatic-file-restore"></a>禁用自动文件还原
 
@@ -105,7 +105,17 @@ Visual Studio 会自动重新打开上一个会话中处于打开状态的文档
 
     扩展是添加到 Visual Studio 的附加软件组件，用于提供新功能或扩展现有功能。 扩展通常可能导致内存资源问题。 如果遇到内存资源问题，请尝试一次禁用一个扩展，并查看这将如何影响方案或工作流。
 
-    要禁用扩展，请转到“工具” > “扩展和更新”，然后禁用特定扩展。
+   ::: moniker range="vs-2017"
+
+    若要禁用扩展，请转到“工具”>“扩展和更新”，然后禁用特定扩展。
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    若要禁用扩展，请转到“扩展”>“管理扩展”，然后禁用特定扩展。
+
+   ::: moniker-end
 
 - **禁用 XAML 设计器**
 

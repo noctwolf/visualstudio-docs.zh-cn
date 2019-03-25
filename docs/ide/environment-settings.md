@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c49cbb49b6ee28e7bb184c22052a7bc4bee57d13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c799d903c29d745d97a407c4c25f1285a5f35151
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913270"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069822"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio 的环境设置
 
-首次启动 Visual Studio 时，可通过选择一个设置集合根据最有利于你的开发类型优化开发环境。 每个集合都优化了一些元素（例如键盘快捷键、窗口布局、项目和项模板）以及命令可见性。
+首次打开 Visual Studio 时，可通过选择一个设置集合根据最有利于你的开发类型优化开发环境。 每个集合都优化了一些元素（例如键盘快捷键、窗口布局、项目和项模板）以及命令可见性。
 
 提供了以下设置集合：
 
@@ -30,7 +30,7 @@ ms.locfileid: "55913270"
 
 ## <a name="reset-settings"></a>重置设置
 
-要在首次启动 Visual Studio 后更改开发设置，请按照下列步骤操作：
+要在首次打开 Visual Studio 后更改开发设置，请按照下列步骤操作：
 
 1. 选择菜单栏中的“工具” > “导入和导出设置”，打开“导入和导出设置向导”。
 

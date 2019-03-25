@@ -14,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8e69c42cc0d726eba7e2c3c7f9a2decc9dd89e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b7e026b85a990e0186decc9c67ebecb169c0fa98
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947817"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983892"
 ---
-# <a name="select-the-installation-locations-in-visual-studio-2017"></a>在 Visual Studio 2017 中选择安装位置
+# <a name="select-the-installation-locations-in-visual-studio"></a>在 Visual Studio 中选择安装位置
 
-**15.7 中的新增功能**：通过更改 Visual Studio 某些文件的位置，可以减少其在系统驱动器上的安装占用。 具体来说，下载缓存、共享组件、SDK 和工具文件可使用不同位置。
+**15.7 版的新增功能：** 通过更改 Visual Studio 某些文件的位置，可以减少其在系统驱动器上的安装占用。 具体来说，下载缓存、共享组件、SDK 和工具文件可使用不同位置。
 
    > [!NOTE]
    > 某些工具和 SDK 对于安装位置有不同规则。 即使选择另一位置，这些工具和 SDK 也会安装在系统驱动器上。
@@ -64,7 +64,7 @@ ms.locfileid: "55947817"
 
 ## <a name="see-also"></a>请参阅
 
-* [安装 Visual Studio 2017](install-visual-studio.md)
-* [更新 Visual Studio 2017](update-visual-studio.md)
-* [修改 Visual Studio 2017](update-visual-studio.md)
-* [卸载 Visual Studio 2017](uninstall-visual-studio.md)
+* [安装 Visual Studio](install-visual-studio.md)
+* [更新 Visual Studio](update-visual-studio.md)
+* [修改 Visual Studio](update-visual-studio.md)
+* [卸载 Visual Studio](uninstall-visual-studio.md)

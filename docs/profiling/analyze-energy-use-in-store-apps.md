@@ -13,25 +13,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8ecd06b2c340640db082c5d0a6bbdb6a30596748
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624407"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872041"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP 应用中的能量使用
+
 Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备上的 UWP 应用的功率和能耗情况，这些低功率平板设备在所有时间或部分时间内靠自有电池运行。 在电池供电的设备上，如果应用程序使用过多的能量，可能导致客户非常不满，最终客户甚至可能将其卸载。 能量利用的优化可使更多的客户选择并使用你的应用程序。
 
 ## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a>“能量消耗”探查器的定义、工作机制和测量内容
- “能耗”探查器在分析会话期间捕获设备的显示器、CPU 和网络连接的活动。 然后生成这些活动所使用功率的估计值和分析会话使用的总能量。
+
+“能耗”探查器在分析会话期间捕获设备的显示器、CPU 和网络连接的活动。 然后生成这些活动所使用功率的估计值和分析会话使用的总能量。
 
 > [!NOTE]
 > 能耗探查器使用标准参考设备硬件（具有可能运行你的应用程序的低功率平板电脑设备的代表性）的软件模型来估计功率和能量使用情况。 若要提供最佳估计值，我们建议你收集低功率平板电脑设备上的分布曲线数据。
 >
 > 虽然该模型可提供多种低功率设备的合理估计值，但你分析的设备的实际值可能不同。 使用这些值来查找相对于其他资源使用消耗能量多的显示器、CPU 和网络活动，因此这些活动可能是最适合优化的部分。
 
- “能量消耗”探查器使用下面 *功率* 和 *能量*的定义：
+“能量消耗”探查器使用下面 *功率* 和 *能量*的定义：
 
 - 功率 用于衡量一段时间内做功而用力的速率。 在电力学中，功率的标准单位是瓦特 ，其定义为一安培电流流经一伏特的电位差时做功的速率。 在“电源使用”  关系图中，单位显示为毫瓦“mW”  ，这是一瓦的千分之一。
 
@@ -39,9 +41,9 @@ Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备
 
 - 能量 以电容或电势的形式衡量总功率数，如电池的功率容量或在一段时间内消耗的总功率。 能量单位为瓦时，即一瓦持续作用一小时所产生的功率数量。 在 **“能量摘要”** 中，单位显示为毫瓦时 **“mW-h”**。
 
-  ![能量容量、已用电量和已用总能量](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")
+![能量容量、已用功率和已用总能量](../profiling/media/energyprof_capcitypowerused.png)
 
-  例如，平板电脑中充满电的电池存储了一定数量的能量。 当能量用于执行网络通信、计算值或显示图像等任务时，电池的功率以不同的速率消耗。 对于任意一段时间，消耗的功率的总和还可按能量进行衡量。
+例如，平板电脑中充满电的电池存储了一定数量的能量。 当能量用于执行网络通信、计算值或显示图像等任务时，电池的功率以不同的速率消耗。 对于任意一段时间，消耗的功率的总和还可按能量进行衡量。
 
 ## <a name="identify-scenarios-with-user-marks"></a>用用户标记标识方案
  可以向分析数据添加“用户标记”  以帮助标识时间线标尺中的区域。
@@ -57,14 +59,14 @@ Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备
  执行此方法时，用户标记将与消息一起添加到分析数据中。
 
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel 实现 [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) 接口（在 C# 和 VB 中表现为 [System.IDisposable](/dotnet/api/system.idisposable)）。若要避免操作系统资源泄露，请在完成日志记录通道时调用 [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel)（在 C# 和 VB 中为 [Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel)）。
->  - 每个打开的日志记录通道都必须有唯一的名称。 尝试创建与未释放的通道同名的新日志记录通道会导致出现异常。
+> - <xref:Windows.Foundation.Diagnostics.LoggingChannel?displayProperty=nameWithType> 将实现 <xref:Windows.Foundation.IClosable?displayProperty=nameWithType> 接口（在 C#和 VB 中相应地为 <xref:System.IDisposable?displayProperty=nameWithType>）。 若要避免操作系统资源泄漏，请在完成日志记录通道时调用 <xref:Windows.Foundation.Diagnostics.LoggingChannel.Close%2A?displayProperty=nameWithType>（C# 和 VB 中为 <xref:Windows.Foundation.Diagnostics.LoggingChannel.Dispose%2A?displayProperty=nameWithType>）。
+> - 每个打开的日志记录通道都必须有唯一的名称。 如果尝试创建与未释放的通道同名的新日志记录通道，会引发异常。
 
- 有关示例，请参阅 Windows SDK 示例 [LoggingSession 示例](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)。
+有关示例代码，请参阅 Windows SDK 示例 [LoggingSession 示例](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)。
 
- **向 JavaScript 代码添加标记**
+**向 JavaScript 代码添加标记**
 
- 若要添加用户标记，请在代码中要标记的位置添加以下代码：
+若要添加用户标记，请在代码中要标记的位置添加以下代码：
 
 ```JavaScript
 if (performance && performance.mark) {
@@ -72,15 +74,15 @@ if (performance && performance.mark) {
 }
 ```
 
- *markDescription* 是包含要在用户标记工具提示中显示的消息的字符串。
+*markDescription* 是包含要在用户标记工具提示中显示的消息的字符串。
 
 ## <a name="configure-your-environment-for-profiling"></a>配置要分析的环境
  若要获取合理估计值，你需要分析由电池供电的低功率设备上的应用程序的能量使用情况。 由于 Visual Studio 不能在大多数的此类设备上运行，因此你需要使用 Visual Studio 远程工具将 Visual Studio 计算机连接到此类设备。 若要连接到远程设备，需要配置 Visual Studio 项目和此远程设备。 有关详细信息，请参阅[在远程计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。
 
 > [!TIP]
 > - 我们建议不要在 UWP 模拟器或 Visual Studio 计算机上进行能量分析。 在实际的设备上进行分析可获得更加真实的数据。
->   -   在由电池供电的目标设备上进行分析。
->   -   关闭可能使用相同资源（网络、CPU 或显示屏）的其他应用程序。
+> - 在由电池供电的目标设备上进行分析。
+> - 关闭可能使用相同资源（网络、CPU 或显示屏）的其他应用程序。
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>收集应用的能量分布曲线数据
 
@@ -91,7 +93,7 @@ if (performance && performance.mark) {
 2.  选择 **“能耗”** ，然后选择 **“启动”**。
 
     > [!NOTE]
-    >  启动“能耗”探查器时，可能会看到“用户帐户控制”窗口，要求你提供运行 VsEtwCollector.exe 的权限。 选择 **“是”**。
+    > 启动“能耗”探查器时，可能会看到“用户帐户控制”窗口，要求你提供运行 VsEtwCollector.exe 的权限。 选择 **“是”**。
 
 3.  执行你的应用程序以收集数据。
 
@@ -145,11 +147,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>其他资源
 
--   Windows 开发人员中心中 [C#/VB/C++ 和 XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) 和 [JavaScript 和 HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) 的“连接状态和成本管理” 部分介绍了提供网络连接信息的 Windows API，你的应用程序可以使用这些信息最大程度降低网络通信成本。
+- [C#/VB/C++ 和 XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) 以及 [JavaScript 和 HTML](/previous-versions/windows/apps/hh452983(v=win.10)) 的“连接状态和成本管理”部分介绍了提供网络连接信息的 Windows API，你的应用程序可以使用这些信息最大程度降低网络通信成本。
 
-     使用 UWP 应用的 Visual Studio 模拟器可以模拟网络信息 API 的数据连接属性。 请参阅[在模拟器中运行 UWP 应用](../debugger/run-windows-store-apps-in-the-simulator.md)
+   使用 UWP 应用的 Visual Studio 模拟器可以模拟网络信息 API 的数据连接属性。 请参阅[在模拟器中运行 UWP 应用](../debugger/run-windows-store-apps-in-the-simulator.md)
 
--   **“JavaScript 函数计时”** 和 **“CPU 使用量”** 工具有助于降低由低效函数导致的 CPU 负载。 请参阅[分析 CPU 使用情况](/visualstudio/profiling/beginners-guide-to-performance-profiling)。
+- **“JavaScript 函数计时”** 和 **“CPU 使用量”** 工具有助于降低由低效函数导致的 CPU 负载。 请参阅[分析 CPU 使用情况](../profiling/beginners-guide-to-performance-profiling.md)。
 
 ## <a name="see-also"></a>请参阅
 
