@@ -59,7 +59,7 @@ ms.locfileid: "56631128"
  有关详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。
 
 ## <a name="registry-properties"></a>注册表属性
- 可使用以下语法读取系统注册表值，其中 `Hive` 是注册表配置单元（例如 HKEY_LOCAL_MACHINE），`Key` 是密钥名称，`SubKey` 是子密钥名称，`Value` 是子密钥的值。
+ 可使用以下语法读取系统注册表值，其中 `Hive` 是注册表配置单元（例如 HKEY_LOCAL_MACHINE），`Key` 是键名称，`SubKey` 是子键名称，`Value` 是子键的值。
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
