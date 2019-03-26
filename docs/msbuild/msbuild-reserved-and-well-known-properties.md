@@ -64,15 +64,15 @@ ms.locfileid: "58070134"
 除上述名称外，对应于 MSBuild 语言元素的名称也不能用于用户定义的属性、项或项元数据：
 
 * VisualStudioProject
-* 目标
+* Target
 * PropertyGroup
-* 输出
+* Output
 * ItemGroup
 * UsingTask
 * ProjectExtensions
 * OnError
 * ImportGroup
-* 选择
+* Choose
 * When
 * Otherwise
 

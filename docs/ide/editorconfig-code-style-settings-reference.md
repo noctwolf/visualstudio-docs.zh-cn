@@ -16,18 +16,22 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 52848599e05f5b7e5050e408f98d9ff4d670ca72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 443e181edfb0fc60c73d528063a6e6a2be5ab62a
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911866"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868373"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 编码约定设置
 
-在 Visual Studio 2017 中，通过使用 [EditorConfig](../ide/create-portable-custom-editor-options.md) 文件，可在基本代码中定义和维护一致的代码样式。 EditorConfig 包括多个核心格式设置属性，如 `indent_style` 和 `indent_size`。 在 Visual Studio 中，还可使用 EditorConfig 文件配置 .NET 编码约定设置。 通过 EditorConfig 文件，可以启用或禁用单个 .NET 编码约定，并可通过严重级别配置强制实施约定的程度。 若要深入了解如何使用 EditorConfig 强制实施基本代码一致性，请参阅[创建可移植的自定义编辑器设置](../ide/create-portable-custom-editor-options.md)。
+通过使用 [EditorConfig](../ide/create-portable-custom-editor-options.md) 文件，可在基本代码中定义和维护一致的代码样式。 EditorConfig 包括多个核心格式设置属性，如 `indent_style` 和 `indent_size`。 在 Visual Studio 中，还可使用 EditorConfig 文件配置 .NET 编码约定设置。 可以启用或禁用单个 .NET 编码约定，并可通过严重级别配置强制实施每个规则的程度。
 
-请参阅本文结尾，以获取[示例 .editorconfig 文件](#example-editorconfig-file)。
+> [!TIP]
+> - 在 .editorconfig 文件中定义编码约定时，可配置内置到 Visual Studio 中的[代码样式分析器](../code-quality/roslyn-analyzers-overview.md)如何分析你的代码。 .editorconfig 文件是适用于这些分析器的配置文件。
+> - Visual Studio 的代码样式首选项还可以在[文本编辑器选项](code-styles-and-quick-actions.md)对话框中进行设置。 但是，.editorconfig 设置优先使用，在“选项”中设置的首选项不与特定项目相关联。
+
+本文的末尾包含一个[示例 .editorconfig 文件](#example-editorconfig-file)。
 
 ## <a name="convention-categories"></a>约定类别
 
@@ -327,7 +331,7 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 此规则不接受“true”或“false”值；此规则接受下表中的值：
 
-| 值 | 说明​​ |
+| 值 | 说明 |
 | ----- |:----------- |
 | always | 优先指定可访问性修饰符 |
 | for\_non\_interface_members | 优先声明可访问性修饰符，公共接口成员除外。 这与往常相同，并且已添加以用于未来验证（如果 C# 添加默认接口方法）。 |
@@ -992,7 +996,7 @@ csharp_style_var_elsewhere = true:suggestion
 
 此规则接受下表中的值：
 
-| 值 | 说明​​ |
+| 值 | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用方法的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，优先使用方法的 expression-bodied 成员 |
@@ -1012,7 +1016,7 @@ public int GetAge() { return this.Age; }
 
 此规则接受下表中的值：
 
-| “值” | 说明​​ |
+| 值 | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用构造函数的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用构造函数的 expression-bodied 成员 |
@@ -1032,7 +1036,7 @@ public Customer(int age) { Age = age; }
 
 此规则接受下表中的值：
 
-| 值 | 说明​​ |
+| 值 | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用运算符的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用运算符的 expression-bodied 成员 |
@@ -1054,7 +1058,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 
 此规则接受下表中的值：
 
-| “值” | 说明​​ |
+| “值” | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用属性的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用属性的 expression-bodied 成员 |
@@ -1074,7 +1078,7 @@ public int Age { get { return _age; }}
 
 此规则接受下表中的值：
 
-| 值 | 说明​​ |
+| “值” | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用索引器的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用索引器的 expression-bodied 成员 |
@@ -1094,7 +1098,7 @@ public T this[int i] { get { return _values[i]; } }
 
 此规则接受下表中的值：
 
-| 值 | 说明​​ |
+| “值” | 说明 |
 | ----- |:----------- |
 | true | 倾向于使用访问器的 expression-bodied 成员 |
 | when_on_single_line | 当其将为单行时，倾向于使用访问器的 expression-bodied 成员 |
@@ -1513,7 +1517,7 @@ dotnet_separate_import_directive_groups = true
 
 此规则与左大括号 `{` 应放在前面代码的同一行还是新行上有关。 对于此规则，无需指定“true”或“false”。 改为指定“全部”、“无”或一个或多个码位元素，如方法或属性，从而定义此规则的应用时间。 下表列出了允许值的完整列表：
 
-| “值” | 说明​​
+| 值 | 说明
 | ------------- |:-------------|
 | accessors, anonymous_methods, anonymous_types, control_blocks, events, indexers, lambdas, local_functions, methods, object_collection_array_initializers, properties, types.<br>（对于多种值，请使用“,”分隔）。 | 需要将大括号置于指定码位元素的新行中（也称为“Allman”样式） |
 | 全部 | 对于所有表达式，需要将大括号置于新行（“Allman”样式） |
@@ -1778,7 +1782,7 @@ default:
 
 此规则不接受“true”或“false”值；此规则接受下表中的值：
 
-| 值 | 说明​​ |
+| “值” | 说明 |
 | ----- |:----------- |
 | flush_left | 标签置于最左侧的列 |
 | one_less_than_current | 将标签置于比当前上下文少一个缩进的位置 |
@@ -1921,7 +1925,7 @@ MyMethod(argument);
 
 此规则接受下表中的一个或多个值：
 
-| 值 | 说明​​ |
+| 值 | 说明 |
 | ----- |:------------|
 | control_flow_statements | 在控制流语句的括号之间放置空格 |
 | 表达式 | 在表达式的括号之间放置空格 |
@@ -2008,7 +2012,7 @@ class C :I
 
 此规则接受下表中的一个值：
 
-| 值 | 说明​​ |
+| “值” | 说明 |
 | ----- |:------------|
 | before_and_after | 在二元运算符前后插入空格 |
 | 无 | 删除二元运算符前后的空格 |
