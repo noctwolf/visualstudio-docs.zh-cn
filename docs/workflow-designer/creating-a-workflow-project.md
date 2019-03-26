@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4013f1302ff4952fa34c689801978b9116e549
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 15c02312d5c257f13b9c0394790bc8a2611d7972
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222449"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414753"
 ---
 # <a name="workflow-project-templates"></a>工作流项目模板
 
@@ -36,20 +36,14 @@ Visual Studio 提供了四个不同的工作流项目模板：
 
 若要访问这些模板，请先安装**Windows Workflow Foundation**组件的 Visual Studio。 有关详细说明，请参阅[安装 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
 
-1. 安装后**Windows Workflow Foundation**组件中，打开**新项目**对话框中的选择**文件** > **新建** > **项目**。
+1. 安装后**Windows Workflow Foundation**组件，选择**文件** > **新建** > **项目**.
 
-1. 在左侧窗格中，选择**Visual C#** > **工作流**类别 (或**Visual Basic** > **工作流**如果您愿意 Visual Basic)。
+1. 搜索并选择工作流项目模板，例如，则**工作流控制台应用程序**模板。
 
-1. 在中间窗格中，选择项目模板，如**工作流控制台应用程序**。
-
-1. 在中**名称**框中，输入您的项目以使其容易识别的描述性名称。
-
-1. 在中**位置**框中，输入想要保存你的项目，或选择的目录**浏览**以导航到它。
-
-1. 在中**解决方案**框中，输入新解决方案的名称。 选择**确定**创建应用程序。
+1. 继续完成创建项目。
 
    > [!NOTE]
-   > 如果你想要将新项目添加到现有解决方案，在 Visual Studio 中打开该解决方案中，右键单击该解决方案中的**解决方案资源管理器**，然后选择**添加** > **新建项目**以打开**新建项目**对话框。
+   > 如果你想要将新项目添加到现有解决方案，在 Visual Studio 中打开该解决方案中，右键单击该解决方案中的**解决方案资源管理器**，然后选择**添加** > **新建项目**。
 
 ## <a name="workflow-console-app"></a>工作流控制台应用程序
 

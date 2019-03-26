@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00796a43326d26fa7f25d6cb925851f411f916e3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355784"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415691"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 设计时 T4 文本模板，您在 Visual Studio 项目中生成程序代码和其他文件。 通常情况下，你编写一些模板，以便它们改变它们根据中的数据生成的代码*模型*。 模型是文件或数据库，其中包含有关应用程序的要求的关键信息。
@@ -34,13 +34,9 @@ ms.locfileid: "58355784"
 
  文本模板包含你要生成的文本以及用于生成文本的变量部分的程序代码。 程序代码，可重复或有条件地省略部分已生成的文本。 生成的文本本身可以是将组成应用程序一部分的程序代码。
 
-## <a name="creating-a-design-time-t4-text-template"></a>创建设计时 T4 文本模板
+## <a name="create-a-design-time-t4-text-template"></a>创建设计时 T4 文本模板
 
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>在 Visual Studio 中创建设计时 T4 模板
-
-1. 创建 Visual Studio 项目，或打开现有实验。
-
-    例如，在**文件**菜单中，选择**新建** > **项目**。
+1. 创建新的 Visual Studio 项目，或打开现有实验。
 
 2. 将文本模板文件添加到你的项目，并为其提供具有扩展名的名称 **.tt**。
 
@@ -70,10 +66,11 @@ ms.locfileid: "58355784"
 6. 在中**解决方案资源管理器**，展开模板文件节点，你将找到具有扩展名的文件 **.txt**。 该文件包含从该模板生成的文本。
 
    > [!NOTE]
-   >  如果你的项目是 Visual Basic 项目，则必须单击**显示所有文件**才能看到输出文件。
+   > 如果你的项目是 Visual Basic 项目，则必须单击**显示所有文件**才能看到输出文件。
 
-### <a name="regenerating-the-code"></a>重新生成代码
- 在下列任何一种情况下，将执行模板，同时生成附属文件：
+### <a name="regenerate-the-code"></a>重新生成代码
+
+在下列任何一种情况下，将执行模板，同时生成附属文件：
 
 - 编辑该模板，然后将焦点更改为不同的 Visual Studio 窗口。
 
@@ -83,12 +80,11 @@ ms.locfileid: "58355784"
 
 - 在中**解决方案资源管理器**文件，任何的快捷菜单上，选择**运行自定义工具**。 使用此方法可以转换选定的模板子集。
 
-  此外可以设置 Visual Studio 项目，以便执行模板时，会读取数据文件已更改。 有关详细信息，请参阅[自动重新生成代码](#Regenerating)。
+此外可以设置 Visual Studio 项目，以便执行模板时，会读取数据文件已更改。 有关详细信息，请参阅[自动重新生成代码](#Regenerating)。
 
-## <a name="generating-variable-text"></a>生成可变文本
- 通过文本模板，可以使用程序代码更改已生成文件的内容。
+## <a name="generate-variable-text"></a>生成可变文本
 
-#### <a name="to-generate-text-by-using-program-code"></a>使用程序代码生成文本
+通过文本模板，可以使用程序代码更改已生成文件的内容。
 
 1. 更改 `.tt` 文件的内容：
 

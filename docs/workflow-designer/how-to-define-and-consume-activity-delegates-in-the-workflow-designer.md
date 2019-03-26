@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222878"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415806"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>如何：在工作流设计器中定义和使用活动委托
 
@@ -21,12 +21,10 @@ ms.locfileid: "57222878"
 
 ## <a name="define-an-activity-delegate"></a>定义活动委托
 
-1. 在 Visual Studio 中，选择“文件” > “新建” > “项目”。
-
-2. 在**新的项目**对话框中，选择**工作流**左边的类别，然后选择**工作流控制台应用程序**项目模板。 命名项目 （如果需要），然后单击**确定**。
+1. 创建一个新**工作流控制台应用程序**项目。
 
    > [!NOTE]
-   > 如果没有看到**工作流**类别中，首次安装**Windows Workflow Foundation**组件的 Visual Studio。 有关详细说明，请参阅[安装 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
+   > 如果没有看到**工作流**项目模板，请首先安装**Windows Workflow Foundation**组件的 Visual Studio。 有关详细说明，请参阅[安装 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
 
 3. 右键单击该项目中**解决方案资源管理器**，然后选择**添加** > **新项**。 选择**工作流**类别中，并选择**活动**项模板。 新活动命名**MyForEach.xaml** ，然后选择**确定**。
 

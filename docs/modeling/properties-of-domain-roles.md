@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dcad8664fd0759a81e7c676c2d266475a3db9fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 048116c07f30267c6beb2703c3eaa6fb4d3655f0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923273"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415520"
 ---
 # <a name="properties-of-domain-roles"></a>域角色的属性
 下表中的属性是与域角色相关联。 域角色的信息，请参阅[了解模型、 类和关系](../modeling/understanding-models-classes-and-relationships.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -26,9 +26,9 @@ ms.locfileid: "55923273"
 |属性 Getter 访问修饰符|生成的属性的 getter 访问修饰符 (`public`， `internal`， `private`， `protected`，或`protected internal`)。|`public`|
 |属性 Setter 访问修饰符|生成的属性的 setter 访问修饰符 (`public`， `internal`， `private`， `protected`，或`protected internal`)。|`public`|
 |重数|这可以播放的对方角色的模型元素的数量 (`0..1`， `1..1`， `0..*`，或`1..*`)。 如果重数`0..*`或`1..*`，则生成的属性表示的集合; 否则，生成的属性表示单个模型元素。|依赖关系类型以及是否这是关系中的源或目标角色。|
-|name|域角色的名称。 此属性不能包含空格。|此角色的角色扮演者的域类的名称。|
+|名称|域角色的名称。 此属性不能包含空格。|此角色的角色扮演者的域类的名称。|
 |将复制传播|`DoNotPropagateCopy` -复制的角色扮演者将拥有此链接的任何副本。<br /><br /> `PropagateCopyToLinkOnly` -复制的链接将指向现有相反角色扮演者。<br /><br /> `PropagateCopyToLinkAndOppositeRolePlayer` -将复制的链接指向一份相反角色扮演者。|`PropagateCopyToLinkAndOppositeRolePlayer` 嵌入的源角色。<br /><br /> `DoNotPropagateCopy` 对于其他角色。<br /><br /> 有关详细信息，请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)|
-|将删除传播|`True` 若要删除的关联的链接，删除时播放此角色的元素。|`True` 有关嵌入角色的目标。<br /><br /> `False` 对于其他角色。<br /><br /> 有关详细信息，请参阅[自定义删除行为](../modeling/customizing-deletion-behavior.md)。|
+|将删除传播|`True` 若要删除的关联的链接，删除时播放此角色的元素。|`True` 有关嵌入角色的目标。<br /><br /> `False` 对于其他角色。|
 |属性名|角色扮演者的代码中生成的属性的名称。 此名称不能包含空格。|如果此角色具有零对一的对方角色的名称或一对一的重数;否则为对方角色的复数的名称。|
 |角色扮演者|可以在关系中扮演此角色的元素的域类。 此属性是只读的。|此角色的角色扮演者的域类。|
 |说明|域角色相关联的非正式说明。|< 无\>|

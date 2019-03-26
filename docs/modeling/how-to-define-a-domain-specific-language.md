@@ -16,40 +16,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46dc8def91a15b8534d597f8cc0d14eb99f9002
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5ed2b15c59ca4b9955a2f28985325a2d5e244ee
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927875"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416417"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定义域特定语言
 若要定义特定于域的语言 (DSL)，请从模板创建 Visual Studio 解决方案。 解决方案的重要组成部分是 DSL 定义关系图，它存储在 DslDefinition.dsl 中。 DSL 定义将定义 DSL 的类和形状。 在进行修改并将所做修改添加到这些元素后，可以添加程序代码以更详细地自定义 DSL。
 
-如果你是 Dsl，我们建议您通过**DSL 工具实验室**，可以在此站点中找到：[初学者和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+如果你是 Dsl，我们建议您通过**DSL 工具实验室**，可以在此站点中找到：[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="templates"></a> 选择模板解决方案
- 若要定义 DSL，必须安装以下组件：
 
+若要定义 DSL，必须安装以下组件：
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
-| Visual Studio 可视化和建模 SDK | |
+- Visual Studio
+- （包括 Visual Studio SDK） 的 visual Studio 扩展开发工作负荷
+- 建模 SDK （将它安装为 Visual Studio 中的单个组件）
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
+若要创建新的域特定语言，您可以创建新的 Visual Studio 解决方案使用域特定语言项目模板。
 
- 若要创建新的域特定语言，您可以创建新的 Visual Studio 解决方案使用域特定语言项目模板。
+### <a name="to-create-a-dsl-solution"></a>创建 DSL 解决方案
 
-#### <a name="to-create-a-dsl-solution"></a>创建 DSL 解决方案
+1. 创建一个新**域特定语言**项目。
 
-1. 创建使用的解决方案**特定于域的语言**模板，可在下找到**其他项目类型/扩展性**中**新项目**对话框。
+   ::: moniker range="vs-2017"
 
     ![“创建 DSL”对话框](../modeling/media/create_dsldialog.png)
 
-    当您单击**确定**，则**域特定语言向导**将打开并显示模板 DSL 解决方案的列表。
+   ::: moniker-end
+
+    **域特定语言向导**将打开并显示模板 DSL 解决方案的列表。
 
 2. 单击每个模板以查看说明。 选择最近似你想要创建的解决方案。
 
@@ -594,7 +595,7 @@ ms.locfileid: "55927875"
 
      有关详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
-2.  通过使用程序代码扩展模型工具以实现更高级的效果。 例如，你可以创建可更改模型的菜单命令，也可以创建集成两个或多个 DSL 的工具。 VMSDK 专门用于轻松将扩展和从 DSL 定义生成的代码相集成。  有关详细信息，请参阅[编写代码以自定义域特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
+2.  通过使用程序代码扩展模型工具以实现更高级的效果。 例如，你可以创建可更改模型的菜单命令，也可以创建集成两个或多个 DSL 的工具。 VMSDK 专门用于轻松将扩展和从 DSL 定义生成的代码相集成。  有关详细信息，请参阅[编写代码以自定义特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
 
 ### <a name="changing-the-dsl-definition"></a>更改 DSL 定义
  当在 DSL 定义中创建任何项时，将自动设置许多默认值。 设置完这些值后，你可以更改它们。 这将简化 DSL 的开发，同时仍允许强大的自定义。

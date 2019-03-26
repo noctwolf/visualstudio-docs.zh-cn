@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad29fbc042e9f6397dc1f09fe3fce81f20403aa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c139e2a9675bdbe204b54220709ac8cdc794e5b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932048"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416053"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自定义指令处理器
 
@@ -46,9 +46,7 @@ ms.locfileid: "55932048"
 
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>在 VSIX 项目中开发自定义指令处理器
 
-1.  在 Visual Studio 中创建一个 VSIX 项目。
-
-    -   在中**新的项目**对话框框中，展开**Visual Basic**或**Visual C#**，然后展开**扩展性**。 单击**VSIX 项目**。
+1.  创建一个新**VSIX 项目**项目。
 
 2.  在中**source.extension.vsixmanifest**、 设置内容类型和支持的版本。
 
@@ -184,7 +182,7 @@ ms.locfileid: "55932048"
 
    如果自定义指令处理器不在 GAC 中，则注册表子项应如下表所示：
 
-|name|类型|数据|
+|名称|类型|数据|
 |-|-|-|
 |(默认)|REG_SZ|(未设置值)|
 |类|REG_SZ|**\<Namespace 名称 >。\<类名 >**|
@@ -192,7 +190,7 @@ ms.locfileid: "55932048"
 
  如果程序集在 GAC 中，则注册表子项应如下表所示：
 
-|name|类型|数据|
+|名称|类型|数据|
 |-|-|-|
 |(默认)|REG_SZ|(未设置值)|
 |类|REG_SZ|\<**完全限定的类名**>|

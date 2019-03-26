@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b727f1e4de34a0bde6b4caba570840cea6e1a201
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950144"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416231"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>在程序代码中导航和更新模型
 
@@ -42,7 +42,7 @@ ms.locfileid: "55950144"
 
 ##  <a name="navigation"></a> 导航模型
 
-### <a name="properties"></a>Properties
+### <a name="properties"></a>属性
  在 DSL 定义中定义的域属性将成为可以访问程序代码中的属性：
 
  `Person henry = ...;`
@@ -226,27 +226,28 @@ using (Transaction t =
   以这种方式创建元素时，自动创建关系图上的连接器，但它具有默认形状、 颜色和其他功能。 若要控制如何创建关联的连接器，请参阅[创建元素和其形状](#merge)。
 
 ##  <a name="deleteelements"></a> 删除元素
- 通过调用中删除元素`Delete()`:
 
- `henry.Delete();`
+通过调用中删除元素`Delete()`:
 
- 此操作还将删除：
+`henry.Delete();`
+
+此操作还将删除：
 
 - 关系链接到和从元素。 例如，`edward.Parents`将不再包含`henry`。
 
 - 在为其角色的元素`PropagatesDelete`标志为 true。 例如，将删除显示的元素的形状。
 
-  默认情况下，每个嵌入关系具有`PropagatesDelete`在目标角色，则返回 true。 正在删除`henry`不会删除`familyTree`，但`familyTree.Delete()`将删除所有`Persons`。 有关详细信息，请参阅[自定义删除行为](../modeling/customizing-deletion-behavior.md)。
+默认情况下，每个嵌入关系具有`PropagatesDelete`在目标角色，则返回 true。 正在删除`henry`不会删除`familyTree`，但`familyTree.Delete()`将删除所有`Persons`。
 
-  默认情况下，`PropagatesDelete`不是引用关系的角色，则返回 true。
+默认情况下，`PropagatesDelete`不是引用关系的角色，则返回 true。
 
-  您可能会导致删除规则，以忽略特定传播时删除的对象。 这是会将一个元素替换为另一个的情况下很有用。 提供为其不应传播删除的一个或多个角色的 GUID。 GUID 可以从关系类：
+您可能会导致删除规则，以忽略特定传播时删除的对象。 这是会将一个元素替换为另一个的情况下很有用。 提供为其不应传播删除的一个或多个角色的 GUID。 GUID 可以从关系类：
 
-  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
+`henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`
 
-  (此特定示例中没有任何作用，因为`PropagatesDelete`是`false`的角色`ParentsHaveChildren`关系。)
+(此特定示例中没有任何作用，因为`PropagatesDelete`是`false`的角色`ParentsHaveChildren`关系。)
 
-  在某些情况下，删除被禁止的锁，在元素上或将删除传播的元素上存在。 可以使用`element.CanDelete()`来检查是否可以删除该元素。
+在某些情况下，删除被禁止的锁，在元素上或将删除传播的元素上存在。 可以使用`element.CanDelete()`来检查是否可以删除该元素。
 
 ##  <a name="deletelinks"></a> 删除关系链接
  可以通过从角色属性中移除元素删除关系链接：
@@ -486,6 +487,6 @@ partial class MyDiagram
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [域特定语言中的验证](../modeling/validation-in-a-domain-specific-language.md)
 - [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)
-- [如何：使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)
+- [如何：使用事务来更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)
 - [使用 Visual Studio Modelbus 集成模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 - [响应并传播更改](../modeling/responding-to-and-propagating-changes.md)

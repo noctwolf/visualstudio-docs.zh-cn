@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9f4f3a7f6c3ab8d01b50a614fb006305d25eee
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983359"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415039"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>向依赖项关系图添加自定义体系结构验证
 
@@ -40,9 +40,7 @@ ms.locfileid: "57983359"
 
 ### <a name="to-define-an-extension-by-using-a-project-template"></a>若要使用项目模板定义扩展
 
-1. 使用“文件”  菜单上的“新建项目”  命令，在新的解决方案中创建项目。
-
-2. 在“新建项目”  对话框中的“项目建模” 下，选择“层设计器验证扩展” 。
+1. 创建一个新**层设计器验证扩展**项目。
 
     该模板将创建包含一个小型示例的项目。
 
@@ -52,22 +50,22 @@ ms.locfileid: "57983359"
    > - 编辑对 `LogValidationError` 的调用，以删除可选参数 `errorSourceNodes` 和 `errorTargetNodes`。
    > - 如果使用自定义属性，应用更新中所述[将自定义属性添加到依赖项关系图](../modeling/add-custom-properties-to-layer-diagrams.md)。
 
-3. 编辑代码以定义验证。 有关详细信息，请参阅 [验证编程](#programming)。
+2. 编辑代码以定义验证。 有关详细信息，请参阅 [验证编程](#programming)。
 
-4. 若要测试此扩展，请参阅 [调试层验证](#debugging)。
+3. 若要测试此扩展，请参阅 [调试层验证](#debugging)。
 
    > [!NOTE]
    > 将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。
 
 ::: moniker range="vs-2017"
 
-5. 若要安装该扩展的 Visual Studio 中，或在另一台计算机上的主实例中，找到 *.vsix*中的文件*bin*目录。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择**扩展和更新**上**工具**菜单。
+4. 若要安装该扩展的 Visual Studio 中，或在另一台计算机上的主实例中，找到 *.vsix*中的文件*bin*目录。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择**扩展和更新**上**工具**菜单。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. 若要安装该扩展的 Visual Studio 中，或在另一台计算机上的主实例中，找到 *.vsix*中的文件*bin*目录。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择**管理扩展**上**扩展**菜单。
+4. 若要安装该扩展的 Visual Studio 中，或在另一台计算机上的主实例中，找到 *.vsix*中的文件*bin*目录。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择**管理扩展**上**扩展**菜单。
 
 ::: moniker-end
 
@@ -77,15 +75,13 @@ ms.locfileid: "57983359"
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>向单独的 VSIX 添加层验证
 
-1.  在新的或现有 Visual Studio 解决方案中创建类库项目。 在“新建项目”  对话框中，单击“Visual C#”  ，然后单击“类库” 。 此项目将包含层验证类。
+1. 创建一个新**类库**项目。 此项目将包含层验证类。
 
-2.  在解决方案中标识或创建 VSIX 项目。 VSIX 项目包含名为 **source.extension.vsixmanifest**的文件。 如果必须添加一个 VSIX 项目，请遵循下列步骤：
+2. 查找或创建**VSIX 项目**解决方案中。 VSIX 项目包含名为 **source.extension.vsixmanifest**的文件。
 
-    1.  在“新建项目”  对话框中，依次选择“Visual C#” 、“扩展性” 、“VSIX 项目” 。
+3. 在中**解决方案资源管理器**，在 VSIX 项目的右键单击菜单，选择**设为启动项目**。
 
-    2.  在“解决方案资源管理器” 中，在 VSIX 项目的快捷菜单上，选择“设为启动项目” 。
-
-3.  在 **source.extension.vsixmanifest**中的“资产” 下，将层验证项目添加为 MEF 组件：
+4. 在 **source.extension.vsixmanifest**中的“资产” 下，将层验证项目添加为 MEF 组件：
 
     1.  选择 **“新建”**。
 
@@ -97,7 +93,7 @@ ms.locfileid: "57983359"
 
          **项目** = *你的验证程序项目*
 
-4.  还必须将其添加为层验证：
+5. 还必须将其添加为层验证：
 
     1.  选择 **“新建”**。
 
@@ -109,7 +105,7 @@ ms.locfileid: "57983359"
 
          **项目** = *你的验证程序项目*
 
-5.  返回层验证项目，并添加以下项目引用：
+6. 返回层验证项目，并添加以下项目引用：
 
     |**引用**|**允许执行的操作**|
     |-|-|
@@ -120,14 +116,14 @@ ms.locfileid: "57983359"
     |System.ComponentModel.Composition|使用 Managed Extensibility Framework (MEF) 定义验证组件|
     |Microsoft.VisualStudio.Modeling.Sdk.[版本号]|定义建模扩展|
 
-6.  将本主题末的示例代码复制到验证程序库项目中的类文件中，以包含验证的代码。 有关详细信息，请参阅 [验证编程](#programming)。
+7. 将本主题末的示例代码复制到验证程序库项目中的类文件中，以包含验证的代码。 有关详细信息，请参阅 [验证编程](#programming)。
 
-7.  若要测试此扩展，请参阅 [调试层验证](#debugging)。
+8. 若要测试此扩展，请参阅 [调试层验证](#debugging)。
 
     > [!NOTE]
     > 将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。
 
-8.  若要安装的 Visual Studio 中，或在另一台计算机上的主实例中的 VSIX，查找 **.vsix**中的文件**bin** VSIX 项目的目录。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。
+9. 若要安装的 Visual Studio 中，或在另一台计算机上的主实例中的 VSIX，查找 **.vsix**中的文件**bin** VSIX 项目的目录。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。
 
 ##  <a name="programming"></a> 验证编程
 

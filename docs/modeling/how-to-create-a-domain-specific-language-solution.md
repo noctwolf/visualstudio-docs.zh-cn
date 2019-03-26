@@ -13,51 +13,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab7e6717ee3216e513fed9bbe3b8c5f6295667
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936936"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416183"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：创建域特定语言解决方案
 使用专用的 Visual Studio 解决方案，可创建域特定语言 (DSL)。
 
 ## <a name="prerequisites"></a>系统必备
- 在开始此过程之前，必须首先安装这些组件：
 
+在开始此过程之前，安装这些组件：
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
-| Visual Studio 可视化和建模 SDK | |
+- Visual Studio
+- Visual Studio SDK (作为的一部分安装**Visual Studio 扩展开发**工作负荷)
+- 建模 SDK （作为 Visual Studio 组件安装）
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-
 ## <a name="creating-a-domain-specific-language-solution"></a>创建域特定语言解决方案
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>若要创建域特定语言解决方案
+1. 首先创建一个新 DSL 向导**域特定语言设计器**项目。
 
-1. 启动 DSL 向导。
+   > [!NOTE]
+   > 最好是选择项目的名称应为有效的视觉对象C#标识符因为它可能用于生成代码。
 
-   1. 在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。
+   ::: moniker range="vs-2017"
 
-   2. 此时将出现“新建项目”对话框。
+   ![“创建 DSL”对话框](../modeling/media/create_dsldialog.png)
 
-   3. 下**项目类型**，展开**其他项目类型**节点，然后单击**扩展性**。
-
-   4. 单击**域特定语言设计器**。
-
-   5. 在中**名称**框中，键入解决方案的名称。 单击 **“确定”**。
-
-       **域特定语言设计器向导**出现。
-
-      > [!NOTE]
-      >  最好是您键入的名称应是有效的 Visual C# 标识符，因为它可能用于生成代码。
-
-      ![“创建 DSL”对话框](../modeling/media/create_dsldialog.png)
+   ::: moniker-end
 
 2. 选择一个 DSL 模板。
 

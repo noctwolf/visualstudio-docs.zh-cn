@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b151358df90be3db423bbf3db8b5123d1069f3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e7241e6f74d3ac034d52636b1bba1ee73b92c6
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949416"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415676"
 ---
 # <a name="writing-user-commands-and-actions"></a>编写用户命令和操作
 通过将命令添加到关系图，以及通过响应笔势（例如拖放、单击和双击事件），可自定义域特定语言。
@@ -27,9 +27,7 @@ ms.locfileid: "55949416"
 
 -   [如何：截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)-允许用户通过单击从注册表项，它引用的另一个项。
 
--   [如何：访问和约束当前所选内容](../modeling/how-to-access-and-constrain-the-current-selection.md)
-
--   [自定义元素工具](../modeling/customizing-element-tools.md)
+-   [如何：访问和约束当前选定内容](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
 ## <a name="see-also"></a>请参阅
 

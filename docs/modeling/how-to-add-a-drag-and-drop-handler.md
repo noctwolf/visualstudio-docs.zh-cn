@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a147db40ef8e604a3ae7fd8a72f9eb6a704e63
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 49eed907e38c79a98e5604a96380efa5d7281c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867743"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415663"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：添加拖放处理程序
 
@@ -158,13 +158,13 @@ MEF (Managed Extensibility Framework) 允许定义可使用最小配置安装的
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>准备用于模型总线的 DSL 项目
 
-1.  确保源 DSL 可由 Visual Studio 模型总线访问：
+确保源 DSL 可由 Visual Studio 模型总线访问：
 
-    1.  如果未安装 Visual Studio 模型总线扩展，请下载并安装它。 有关详细信息，请参阅[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+1. 如果未安装 Visual Studio 模型总线扩展，请下载并安装它。 有关详细信息，请参阅[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
-    2.  在 DSL 设计器中打开源 DSL 的 DSL 定义文件。 右键单击设计图面，然后单击**启用 Modelbus**。 在该对话框中，选择一个或两个选项。  单击 **“确定”**。 新项目“ModelBus”随即添加到 DSL 解决方案中。
+2. 在 DSL 设计器中打开源 DSL 的 DSL 定义文件。 右键单击设计图面，然后单击**启用 Modelbus**。 在该对话框中，选择一个或两个选项。  单击 **“确定”**。 新项目“ModelBus”随即添加到 DSL 解决方案中。
 
-    3.  单击**转换所有模板**重新生成解决方案。
+3. 单击**转换所有模板**重新生成解决方案。
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>从源 DSL 发送对象
 
