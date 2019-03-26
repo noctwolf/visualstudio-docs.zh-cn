@@ -9,25 +9,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928278"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416014"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
+
 域特定语言 (DSL) 解决方案将生成一个 API，可用于读取和更新 Visual Studio 中的 dsl 的实例。 此 API 将定义在从 DSL 定义生成的代码中。 本主题介绍了生成的 API。
 
 ## <a name="the-example-solution-component-diagrams"></a>示例解决方案中：组件图
- 若要创建解决方案的大部分本主题中示例的源，创建从 DSL**组件模型**解决方案模板。 这是在创建新 DSL 解决方案时显示的标准模板之一。
+
+若要创建解决方案的大部分本主题中示例的源，创建从 DSL**组件模型**解决方案模板。 这是在创建新 DSL 解决方案时显示的标准模板之一。
 
 > [!NOTE]
->  组件图 DSL 模板与可以在 Visual Studio 中使用的体系结构菜单创建的 UML 组件图无关。 在中**新的项目**对话框框中，展开**其他项目类型 \ 扩展性**，然后单击**域特定语言设计器**。
+> 组件图 DSL 模板被称为**域特定语言设计器**。
 
- 如果你不熟悉此解决方案模板，请按 F5 并进行试验。 特别注意，可通过将端口工具拖动到组件上来创建端口，并可连接端口。
+按**F5**和试验如果您不熟悉此解决方案模板。 特别注意，可通过将端口工具拖动到组件上来创建端口，并可连接端口。
 
- ![组件及相互连接的端口](../modeling/media/componentsample.png)
+![组件及相互连接的端口](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>DSL 解决方案的结构
  **Dsl**项目定义用于 DSL 的 API。 **DslPackage**项目定义与 Visual Studio 的集成。 还可添加你自己的项目，这些项目还可包含从模型生成的代码。
@@ -120,7 +122,7 @@ ms.locfileid: "55928278"
 
 - 元素组原型 (EGP) 处理程序方法。 这些是必需的如果用户可以*合并*（添加） 到此类的实例上的另一个元素。 通常用户通过从元素工具或另一个形状进行拖动或通过粘贴来执行此操作。
 
-   在示例 DSL 中，“输入端口”或“输出端口”可以合并到“组件”上。 此外，“组件”和“注释”可以合并到模型上。 此
+   在示例 DSL 中，“输入端口”或“输出端口”可以合并到“组件”上。 此外，“组件”和“注释”可以合并到模型上。 必须向
 
    “组件”类中的 EGP 处理程序方法允许“组件”接受“端口”，但不接受“注释”。 根模型类中的 EGP 处理程序可接受“注释”和“组件”，但不接受“端口”。
 
@@ -347,4 +349,4 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 - [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)
 - [了解模型、类和关系](../modeling/understanding-models-classes-and-relationships.md)
 - [自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [编写代码以自定义特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

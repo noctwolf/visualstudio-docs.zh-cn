@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b08dab6be6a959b6a7ac37b243ff1bb94fbb4b1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939614"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415572"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 
@@ -117,15 +117,15 @@ ms.locfileid: "55939614"
 
 你的 DSL 现已启用 MEF 的。 您可以编写作为 MEF 扩展的菜单命令、 笔势处理程序和验证约束。 您可以在 DSL 解决方案以及其他自定义代码中编写这些扩展。 此外，您或其他开发人员可以编写扩展 DSL 的单独 Visual Studio 扩展。
 
-## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>创建适用于启用了 MEF 的 DSL 扩展
+## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>为启用 MEF 的 DSL 创建扩展
 
 如果你有权访问由自己或其他人创建的启用 MEF 的 DSL，你可以为其编写扩展。 扩展可用于添加菜单命令、 笔势处理程序或验证约束。 若要创作这些扩展，您可以使用 Visual Studio 扩展 (VSIX) 解决方案。 该解决方案由两部分组成： 一个类库项目的生成代码的程序集，并打包程序集的 VSIX 项目。
 
-#### <a name="to-create-a-dsl-extension-vsix"></a>若要创建 DSL 扩展 VSIX
+### <a name="to-create-a-dsl-extension-vsix"></a>若要创建 DSL 扩展 VSIX
 
-1. 创建一个新类库项目。 若要执行此操作，在**新的项目**对话框中，选择**Visual Basic**或**Visual C#** ，然后选择**类库**。
+1. 创建一个新**类库**项目。
 
-2. 新类库项目中，将添加到 DSL 的程序集的引用。
+2. 在新的项目中，将添加到 DSL 的程序集的引用。
 
    - 此程序集通常具有文件名结尾"。Dsl.dll"。
 
@@ -145,9 +145,9 @@ ms.locfileid: "55939614"
 
    -   System.Windows.Forms.dll
 
-4. 在同一解决方案中创建一个 VSIX 项目。 若要执行此操作，在**新的项目**对话框框中，展开**Visual Basic**或**Visual C#**，单击**扩展性**，然后选择**VSIX 项目**。
+4. 创建一个新**VSIX 项目**项目。
 
-5. 在解决方案资源管理器，右键单击 VSIX 项目，然后单击**设为启动项目**。
+5. 在中**解决方案资源管理器**，右键单击 VSIX 项目并选择**设为启动项目**。
 
 6. 在新的项目中，打开**source.extension.vsixmanifest**。
 
@@ -376,5 +376,5 @@ namespace MefExtension
 
 - [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)
-- [如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [如何：添加拖放句柄](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [域特定语言中的验证](../modeling/validation-in-a-domain-specific-language.md)

@@ -9,20 +9,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ba8f58d13d3e0c9e360796092a8d522f54d0384
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 76bfa81f1285dce000f79c356a604bab1d53cc55
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939536"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415819"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>向依赖项关系图添加自定义属性
 
-编写时依赖项关系图的扩展插件代码，可以依赖项关系图上存储的任何元素的值。 保存并重新打开关系图时，值将保留。 此外可以让这些属性显示在**属性**窗口，以便用户可以查看和编辑它们。 例如，你可以让用户为每一层指定正则表达式，并编写验证代码来确认每层中的类名称符合用户指定的模式。
+编写时依赖项关系图的扩展插件代码，可以依赖项关系图上存储的任何元素的值。 保存并重新打开关系图时，值将保留。 此外可以让这些属性显示在**属性**窗口，以便用户可以查看和编辑它们。 例如，您可以让用户为每一层指定正则表达式，并编写验证代码来确认每层中的类名称符合用户指定的模式。
 
 ## <a name="non-visible-properties"></a>非可见属性
 
-如果只是想您的代码以将值附加到依赖项关系图中的任何元素，不需要定义 MEF 组件。 在 `Properties` 中有一个名为 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 的字典。 只需将可封送的值添加到任何层元素的字典。 它们将作为依赖项关系图的一部分保存。 有关详细信息，请参阅[导航和更新层模型在程序代码中的](../modeling/navigate-and-update-layer-models-in-program-code.md)。
+如果只是想您的代码以将值附加到依赖项关系图中的任何元素，不需要定义 MEF 组件。 在 `Properties` 中有一个名为 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 的字典。 只需将可封送的值添加到任何层元素的字典。 它们将作为依赖项关系图的一部分保存。
 
 ## <a name="editable-properties"></a>可编辑的属性
 

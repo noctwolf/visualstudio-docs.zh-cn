@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fad34e853aee65f32d87145d1d0300495e07b9c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953992"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415962"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：扩展特定于域的语言设计器
 
@@ -26,15 +26,13 @@ ms.locfileid: "55953992"
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>若要创建 DSL 设计器扩展解决方案
 
-1.  创建新项目使用类库项目模板。 在中**新的项目**对话框中，单击**Visual C#** ，然后在中间的窗口中单击**类库**。
+1.  创建新项目使用**类库**项目模板。 此项目将包含你的扩展的代码。
 
-     此项目将包含你的扩展的代码。
-
-2.  创建新项目使用 VSIX 项目模板。 在中**新的项目**对话框框中，展开**Visual C#**，单击**扩展性**，然后在中间的窗口中选择**VSIX 项目**。
+2.  创建一个新**VSIX 项目**项目。
 
      选择**将添加到解决方案**。
 
-     在 VSIX 清单编辑器中打开 Source.extension.vsixmanifest。
+     *Source.extension.vsixmanifest* VSIX 清单编辑器中打开。
 
 3.  以上内容的字段中，单击**添加内容**。
 
