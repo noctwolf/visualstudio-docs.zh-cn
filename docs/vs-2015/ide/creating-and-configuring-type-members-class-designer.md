@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51e9f831941fff79c42c8e7fc529db3df0d46b0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c036680d540854eb3143875663aeac35a466884
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795298"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323602"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>创建和配置类型成员（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -209,7 +209,7 @@ ms.locfileid: "54795298"
   
 - **\<添加参数>**  
   
-   成员的最后一个参数行的“名称”单元格中包含文本“<add parameter>”。 单击此单元格可创建新的参数。 有关详细信息，请参阅[向方法中添加参数](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod)。  
+   成员的最后一个参数行的 **“名称”** 单元格中包含文本 **“<添加参数\>”**。 单击此单元格可创建新的参数。 有关详细信息，请参阅[向方法中添加参数](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod)。  
   
   **“属性”窗口中的参数属性**  
   
@@ -322,7 +322,7 @@ ms.locfileid: "54795298"
   
 ## <a name="related-topics"></a>相关主题  
   
-|Title|说明​​|  
+|Title|说明|  
 |-----------|-----------------|  
 |[查看类型和关系（类设计器）](../ide/viewing-types-and-relationships-class-designer.md)|你可以在类图中查看你的现有类型、成员和关系。|  
 |[重构类和类型（类设计器）](../ide/refactoring-classes-and-types-class-designer.md)|通过使用重构，你可以轻松地重命名类型和类型成员。 你也可以在类之间移动成员，将一个类拆分为多个分部类，并实现接口。|
