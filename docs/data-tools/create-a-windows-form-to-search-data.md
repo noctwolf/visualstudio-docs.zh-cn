@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c73ab24cd2b50efd26f9a5b3ac1105325345033
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa8b91ccdf4aaa5b46f167673007723938fc62ef
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945062"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268774"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>创建用于搜索数据的 Windows 窗体
 
@@ -31,27 +31,25 @@ ms.locfileid: "55945062"
 
 本演练涉及以下任务：
 
--   创建一个新**Windows 窗体应用程序**项目。
+- 创建和使用应用程序中配置数据源**数据源配置**向导。
 
--   创建和使用应用程序中配置数据源**数据源配置**向导。
+- 设置中的项的拖放类型**数据源**窗口。
 
--   设置中的项的拖放类型**数据源**窗口。
+- 通过将项从“数据源”窗口拖动到窗体上来创建显示数据的控件。
 
--   通过将项从“数据源”窗口拖动到窗体上来创建显示数据的控件。
+- 添加用于在窗体上显示数据的控件。
 
--   添加用于在窗体上显示数据的控件。
+- 完成**搜索标准生成器**对话框。
 
--   完成**搜索标准生成器**对话框。
-
--   在窗体中输入参数和执行参数化的查询。
+- 在窗体中输入参数和执行参数化的查询。
 
 ## <a name="prerequisites"></a>系统必备
 
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
-1.  如果您没有 SQL Server Express LocalDB，安装它从[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio 安装程序**。 在中**Visual Studio 安装程序**，可以作为的一部分安装 SQL Server Express LocalDB**数据存储和处理**工作负荷，或作为单个组件。
+1. 如果您没有 SQL Server Express LocalDB，安装它从[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio 安装程序**。 在中**Visual Studio 安装程序**，可以作为的一部分安装 SQL Server Express LocalDB**数据存储和处理**工作负荷，或作为单个组件。
 
-2.  通过执行以下步骤安装 Northwind 示例数据库：
+2. 通过执行以下步骤安装 Northwind 示例数据库：
 
     1. 在 Visual Studio 中打开**SQL Server 对象资源管理器**窗口。 (SQL Server 对象资源管理器安装的一部分**数据存储和处理**中的工作负荷**Visual Studio 安装程序**。)展开**SQL Server**节点。 LocalDB 实例上右键单击并选择**新查询**。
 
@@ -65,17 +63,7 @@ ms.locfileid: "55945062"
 
 ## <a name="create-the-windows-forms-application"></a>创建 Windows 窗体应用程序
 
-第一步是创建 Windows 窗体应用。 向项目分配名称是可选的在此步骤中，但您将为其命名此处因为会将项目保存更高版本：
-
-1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
-
-2. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
-
-3. 在中间窗格中，选择**Windows 窗体应用**项目类型。
-
-4. 将项目命名**WindowsSearchForm**，然后选择**确定**。
-
-     “WindowsSearchForm”项目随即创建并添加到“解决方案资源管理器”中。
+创建一个新**Windows 窗体应用程序**任意一个项目C#或 Visual Basic。 将该项目命名为 **WindowsSearchForm**。
 
 ## <a name="create-the-data-source"></a>创建数据源
 
@@ -89,9 +77,9 @@ ms.locfileid: "55945062"
 
 4.  在“选择数据连接”页面上，执行以下操作之一：
 
-    -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
+    - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-    -   选择“新建连接”以启动“添加/修改连接”对话框。
+    - 选择“新建连接”以启动“添加/修改连接”对话框。
 
 5.  如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”。
 
@@ -111,7 +99,7 @@ ms.locfileid: "55945062"
 
 2.  将“Customers”节点从“数据源”窗口中拖到窗体上。
 
-     窗体上出现用于导航记录的 <xref:System.Windows.Forms.DataGridView> 和工具栏 (<xref:System.Windows.Forms.BindingNavigator>)。 组件栏中显示[“NorthwindDataSet”](../data-tools/dataset-tools-in-visual-studio.md)、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator>。
+     窗体上出现用于导航记录的 <xref:System.Windows.Forms.DataGridView> 和工具栏 (<xref:System.Windows.Forms.BindingNavigator>)。 组件栏中显示“[NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)”、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator>。
 
 ## <a name="add-parameterization-search-functionality-to-the-query"></a>向查询添加参数化 （搜索功能）
 
@@ -153,9 +141,9 @@ ms.locfileid: "55945062"
 
 根据应用程序的需求，在创建参数化窗体后可能还需要执行一些步骤。 你可以通过以下操作来增强此演练的效果：
 
--   添加显示相关数据的控件。 有关详细信息，请参阅[中的数据集的关系](relationships-in-datasets.md)。
+- 添加显示相关数据的控件。 有关详细信息，请参阅[中的数据集的关系](relationships-in-datasets.md)。
 
--   编辑数据集来添加或移除数据库对象。 有关详细信息，请参阅[创建和配置数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
+- 编辑数据集来添加或移除数据库对象。 有关详细信息，请参阅[创建和配置数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
 
 ## <a name="see-also"></a>请参阅
 

@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fecc637a62e96381362d79f66eb5a3cd4d8fa1d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54764843"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324768"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>在 Visual Studio 2015 中调试入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015 提供一组强大的集成项目生成和调试工具。 本
 
  刚开始时，只使用**调试**和 **x86** 分别作为生成配置和平台。 完成编码和调试时，将配置更改为**发布**并指定特定的平台。 （较旧版本的 Visual Studio 为 .Net 代码项目提供了 **AnyCPU** 默认平台。）
 
- 注意：生成项目时，配置和平台值还用于确定创建哪些项目目录路径用于存储可执行文件。 通常，此路径为 **\<path-to-project>\\<project-name>\\<configuration\>\\<platform\>**。 例如，配置为 `Debug`、平台为 `x86` 的项目位于 `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` 下面。 这在你拥有自己的工具和脚本来管理这些生成可执行文件时非常有用。
+ 注意：生成项目时，配置和平台值还用于确定创建哪些项目目录路径用于存储可执行文件。 通常，此路径为 **\<path-to-project>\\<project-name>\><configuration\\\><platform\\\>**。 例如，配置为 `Debug`、平台为 `x86` 的项目位于 `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86` 下面。 这在你拥有自己的工具和脚本来管理这些生成可执行文件时非常有用。
 
 ### <a name="building-your-code"></a>生成你的代码
  配置好生成后，即可实际生成项目。 最简单的方法是按 F7，但是还可以在主菜单中选择“生成”->“生成解决方案”来开始生成项目。
