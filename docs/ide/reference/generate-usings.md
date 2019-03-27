@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f59dceabb076ebce36755c41caa6de00258be883
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160636"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355176"
 ---
 # <a name="generate-usings-in-visual-studio"></a>在 Visual Studio 中生成 using
 
@@ -22,7 +22,7 @@ ms.locfileid: "58160636"
 
 - C#
 
-**功能：****功能：** 可以立即添加复制和粘贴代码的必要导入或 [using 语句](/dotnet/csharp/language-reference/keywords/using-statement)。
+**功能：** 可以立即添加复制和粘贴代码的必要导入或 [using 语句](/dotnet/csharp/language-reference/keywords/using-statement)。
 
 **使用时机：** 通常的做法是从项目或其他代码源中的不同位置复制和粘贴代码。 此快速操作分析复制粘贴代码的缺少导入，然后提示添加它们。
 

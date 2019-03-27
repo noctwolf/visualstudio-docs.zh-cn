@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55265b24a60697b7d84940968c192b7e6a38a2f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526732"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355158"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>远程调试C#或 Visual Studio 中的 Visual Basic 项目
 若要调试已部署在另一台计算机的 Visual Studio 应用程序，安装和在其中部署您的应用程序的计算机上运行远程工具、 将项目配置为从 Visual Studio 中，连接到远程计算机，然后运行应用。
@@ -71,7 +71,15 @@ ms.locfileid: "57526732"
 
 5. 请确保“工作目录”文本框为空。
 
-6. 选择**使用远程计算机**，然后键入**MJO-DL:4022**在文本框中。 （4022 是远程调试器窗口中显示的端口号。 端口号递增每个版本的 Visual Studio 中的 2）。
+6. 选择**使用远程计算机**，然后键入**yourmachinename:port**在文本框中。 （远程调试器窗口中显示的端口号。 端口号递增每个版本的 Visual Studio 中的 2）。
+
+    在此示例中，使用：
+    ::: moniker range=">=vs-2019"
+    **MJO-DL:4024**于 Visual Studio 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **MJO-DL:4022** Visual Studio 2017
+    ::: moniker-end
 
 7. 请确保未选中“启用本机代码调试”。
 

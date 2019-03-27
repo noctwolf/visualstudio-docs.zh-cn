@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe209a28f74866cf13b6dbd58b01eac2450557b2
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221770"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268606"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -42,9 +42,13 @@ ms.locfileid: "57221770"
 
 ![Azure 开发工作负载](../data-tools/media/azure-development-workload.png)
 
+::: moniker range="vs-2017"
+
 安装“Azure 开发”工作负载后，“新建项目”对话框中将提供以下适用于 C# 的“云”模板：
 
 ![Visual Studio 云项目模板](media/cloud-project-templates.png)
+
+::: moniker-end
 
 通过 Visual Studio 的 [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer)，可以查看和管理 Visual Studio 中基于 Azure 的云资源。 这些资源可能包括虚拟机、表、SQL 数据库等。 Cloud Explorer 可以显示登录的 Azure 订阅下托管的所有帐户中的 Azure 资源。 如果某一特定操作需要 Azure 门户，Cloud Explorer 将提供相应链接，转到 门户中的所需位置。
 

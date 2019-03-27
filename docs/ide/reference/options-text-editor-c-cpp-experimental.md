@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee70d3cf580caaea4207f1d830ef1500f18942ff
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221390"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325209"
 ---
 # <a name="options-text-editor-cc-experimental"></a>选项, 文本编辑器, C/C++, 实验
 
@@ -37,7 +37,7 @@ ms.locfileid: "57221390"
 
 ## <a name="enable-predictive-intellisense"></a>启用预测 IntelliSense
 
-预测 IntelliSense 限制 IntelliSense 下拉列表中显示的结果数，以便你仅看到与上下文相关的结果。 例如，如果键入 <code>int x =</code> 并调用 IntelliSense 下拉列表，只会看到整数或返回整数的函数。 预测 IntelliSense 在默认情况下是关闭的。
+预测 IntelliSense 限制 IntelliSense 下拉列表中显示的结果数，以便你仅看到与上下文相关的结果。 例如，如果键入 `int x =` 并调用 IntelliSense 下拉列表，只会看到整数或返回整数的函数。 预测 IntelliSense 在默认情况下是关闭的。
 
 ::: moniker range="vs-2017"
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 619814a77b0bfaddc1c8c68213d050646a07e7e0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d106260aab40707aeb04f37df05a9d1ffb26a1b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721980"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324411"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>如何： 标记线程和取消标记线程 (C#，Visual Basic、 c + +)
 
@@ -31,7 +31,7 @@ ms.locfileid: "56721980"
 ### <a name="to-flag-or-unflag-a-thread"></a>标记或取消标记线程
 
 - 在中**线程**或**并行监视**窗口中，找到您感兴趣的线程，然后单击标志图标可选择或清除标志。
-- 在中**并行堆栈**窗口中，右击线程或组的线程，然后选择**标志 / <thread>** 或**取消标记 / <thread>** 。
+- 在中**并行堆栈**窗口中，右击线程或组的线程，然后选择**标志 /\<线程 >** 或**取消标记 /\<线程 >**.
 
 ### <a name="to-unflag-all-threads"></a>取消标记所有线程
 

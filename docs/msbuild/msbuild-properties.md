@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a42396236c88bdc574a10a7557963dfc39922a1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fed1fff9e776521581455a89db48897f22de7bf5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631128"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355612"
 ---
 # <a name="msbuild-properties"></a>MSBuild 属性
 属性是可用于配置生成的名称/值对。 属性可用于将值传递给任务，评估条件和存储将在整个项目文件中引用的值。
@@ -118,7 +118,6 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
  属性可包含任意 XML，这有助于将值传递给任务或显示日志记录信息。 以下示例介绍了 `ConfigTemplate` 属性，它具有一个包含 XML 和其他属性引用的值。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 使用其相应属性值来替换属性引用。 属性值按其显示顺序进行分配。 因此，在此示例中，`$(MySupportedVersion)`、`$(MyRequiredVersion)` 和 `$(MySafeMode)` 应已定义。
 
 ```xml
-
 <PropertyGroup>
     <ConfigTemplate>
         <Configuration>

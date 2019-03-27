@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607a3d9ac015232e882d20e8514b3143b411df20
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526771"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325326"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>调试用户代码仅使用仅我的代码
 
@@ -115,7 +115,7 @@ ms.locfileid: "57526771"
 对于 c + + 项目，您可以指定模块、 源文件和函数**调用堆栈**窗口将视为非用户代码通过指定其 *\*.natjmc*文件。 此自定义也适用于单步执行，如果您使用的最新编译器的代码 (请参阅[c + + ' 仅我的代码](#BKMK_CPP_User_and_non_user_code))。
 
 - 若要指定非用户代码的 Visual Studio 计算机所有用户，请添加 *.natjmc*的文件 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*文件夹。
-- 若要指定为单个用户的非用户代码，请添加 *.natjmc*的文件 *%USERPROFILE%\My Documents\\<Visual Studio version>\Visualizers*文件夹。
+- 若要指定为单个用户的非用户代码，请添加 *.natjmc*的文件 *%USERPROFILE%\My Documents\\< Visual Studio 版本\>\Visualizers*文件夹。
 
 一个 *.natjmc*文件是 XML 文件使用以下语法：
 
@@ -165,7 +165,7 @@ ms.locfileid: "57526771"
 在 c + + 项目中，可以指定要通过为非用户代码中单步函数 *\*.natstepfilter*文件。 中列出的函数 *\*.natstepfilter*文件不是依赖于仅我的代码设置。
 
 - 若要指定非用户代码的所有本地 Visual Studio 用户，请添加 *.natstepfilter*的文件 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*文件夹。
-- 若要指定为单个用户的非用户代码，请添加 *.natstepfilter*的文件 *%USERPROFILE%\My Documents\\<Visual Studio version>\Visualizers*文件夹。
+- 若要指定为单个用户的非用户代码，请添加 *.natstepfilter*的文件 *%USERPROFILE%\My Documents\\< Visual Studio 版本\>\Visualizers*文件夹。
 
 一个 *.natstepfilter*文件是 XML 文件使用以下语法：
 

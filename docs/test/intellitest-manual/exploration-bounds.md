@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e5ee5d3e05af407f3011111e1dcad84487dd81fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952354"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325274"
 ---
 # <a name="exploration-bounds"></a>浏览边界
 
@@ -29,17 +29,17 @@ public partial class FooTest {...}
 
 * **约束求解边界**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime) - [约束求解器](input-generation.md#constraint-solver)必须发现将导致后跟一个新的其他执行路径的输入所需的秒数。
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) - [约束求解器](input-generation.md#constraint-solver)可能用于发现输入的大小 (MB)。<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) - [约束求解器](input-generation.md#constraint-solver)可能用于发现输入的大小 (MB)。
 * **浏览路径边界**
   * [MaxBranches](#maxbranches) - 可能沿单个执行路径使用的最大分支数。
   * [MaxCalls](#maxcalls) - 可能在单个执行路径期间执行的最大调用数。
   * [MaxStack](#maxstack) - 单个执行路径期间任何时候的堆栈最大大小，以活动调用的帧数来衡量。
-  * [MaxConditions](#maxconditions) - 可能在单个执行路径期间检查的最大输入条件数。<p />
+  * [MaxConditions](#maxconditions) - 可能在单个执行路径期间检查的最大输入条件数。
 * **浏览边界**
   * [MaxRuns](#maxruns) - 浏览期间将尝试运行的最大次数。
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) - 不发出新测试情况下连续运行的最大数目。
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) - 浏览期间，将尝试使用唯一执行路径运行的最大次数。
-  * [MaxExceptions](#maxexceptions) - 在所有发现的执行路径组合中可能找到的最大异常数。<p />
+  * [MaxExceptions](#maxexceptions) - 在所有发现的执行路径组合中可能找到的最大异常数。
 * **测试套件代码生成设置**
   * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded) - 为 true 时，将忽略超过任何路径边界的执行路径（[MaxCalls](#maxcalls)、[MaxBranches](#maxbranches)、[MaxStack](#maxstack)、[MaxConditions](#maxconditions)）。
   * [TestEmissionFilter](#testemissionfilter) - 指示 IntelliTest 应在哪些情况下发出测试。

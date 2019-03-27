@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c427a16964bbccfc77139c17659a4fd98d490253
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: HT
+ms.openlocfilehash: b85999a22bf49923630a0abe2f9ef33950edd8fe
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069861"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325076"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>将 WPF 控件绑定到数据集
 
@@ -74,7 +74,7 @@ ms.locfileid: "58069861"
 
 1. 打开 Visual Studio。
 
-2. 在开始窗口中，选择**创建一个新项目**。
+2. 在“开始”窗口上，选择“创建新项目”。
 
 3. 搜索C# **WPF 应用**项目模板，然后按照步骤创建该项目，命名项目**AdventureWorksProductsEditor**。
 

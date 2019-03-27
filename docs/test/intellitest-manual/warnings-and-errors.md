@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 27a35850b97a73252562ebb7dbb959bdaabf3abd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 85957c18abff9d49e62570375177aa262b08739b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925397"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324729"
 ---
 # <a name="warnings-and-errors"></a>警告和错误
 
@@ -27,26 +27,26 @@ ms.locfileid: "55925397"
   * [已超出 MaxCalls](#maxcalls-exceeded)
   * [已超出 MaxStack](#maxstack-exceeded)
   * [已超出 MaxRuns](#maxruns-exceeded)
-  * [已超出 MaxRunsWithoutNewTests](#maxrunswithoutnewtests-exceeded)<p />
+  * [已超出 MaxRunsWithoutNewTests](#maxrunswithoutnewtests-exceeded)
 
 * **约束求解**
-  * [无法具体化解决方案](#cannot-concretize-solution)<p />
+  * [无法具体化解决方案](#cannot-concretize-solution)
 
 * **域**
   * [需要帮助来构造对象](#help-construct)
   * [需要帮助来查找类型](#help-types)
-  * [猜测的可用类型](#usable-type-guessed)<p />
+  * [猜测的可用类型](#usable-type-guessed)
 
 * **执行**
   * [浏览期间的意外故障](#unexpected-exploration)
-  * [TargetInvocationException](#targetinvocationexception)<p />
+  * [TargetInvocationException](#targetinvocationexception)
 
 * **检测**
   * [已调用未检测的方法](#uninstrumented-method-called)
   * [已调用外部方法](#external-method-called)
   * [已调用无法检测的方法](#uninstrumentable-method-called)
   * [可测试性问题](#testability-issue)
-  * [限制](#limitation)<p />
+  * [限制](#limitation)
 
 * **解释器**
   * [观察到调用不匹配](#observed-call-mismatch)
