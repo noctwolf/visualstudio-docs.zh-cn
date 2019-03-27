@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 671af69cf31ad1b8b5adafa413e4f20a8761d5ce
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: e6d72edaf889aaf682f40a36278ea1fdf05ff989
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526033"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475989"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序 (C#，Visual Basic、 c + +)
 
@@ -38,21 +38,33 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 
 ## <a name="create-a-multithreaded-app-project"></a>创建一个多线程应用项目
 
-1.  在“文件”菜单上，选择“新建” > “项目”。 
+1. 打开 Visual Studio 并创建一个新项目。
 
-     此时将出现“新建项目”对话框。
+    ::: moniker range=">=vs-2019"
+    类型**Ctrl + Q**若要打开搜索框中，键入**控制台**(或**c + +**)，选择**模板**，，然后：
+    
+    - 有关C#或 Visual Basic 中，选择**创建新的控制台应用 (.NET Framework) 项目**为C#或 Visual Basic。 在出现的对话框中，选择**创建**。
+    - 对于 c + +，请选择**创建新的控制台应用项目**c + +。 在出现的对话框中，选择**创建**。
 
-2.  选择语言：**Visual C#**、**Visual C++** 或 **Visual Basic**。
+    然后，键入一个名称，如**MyThreadWalkthroughApp**然后单击**创建**。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在左窗格中**新的项目**对话框框中，选择以下：
 
-3.  在“Windows 桌面”下，选择“控制台应用”。 
+    - 有关C#应用程序下**可视化C#** ，选择**Windows 桌面**，然后在中间窗格中选择**控制台应用 (.NET Framework)**。
+    - 对于 Visual Basic 应用，在**Visual Basic**，选择**Windows Desktop**，然后在中间窗格中选择**控制台应用 (.NET Framework)**。
+    - 对于 c + + 应用，在**Visual c + +**，选择**Windows Desktop**、，然后选择**Windows 控制台应用程序**。
 
-4.  在“名称”字段中，输入 MyThreadWalkthroughApp。 
+    然后，键入一个名称，如**MyThreadWalkthroughApp**然后单击**确定**。
+    ::: moniker-end
 
-5.  选择“确定”。
+    如果没有看到**控制台应用程序**项目模板，请转到**工具** > **获取工具和功能...**，这会打开 Visual Studio 安装程序。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”。
 
-     新的控制台项目随即显示。 创建该项目后，将显示源文件。 根据所选语言，源文件名称可能是 Program.cs、MyThreadWalkthroughApp.cpp 或 Module1.vb。
+1. 选择“确定”。
 
-6.  删除出现在源文件中的代码，将其替换为下面列出的相应示例代码。
+    新的控制台项目随即显示。 创建该项目后，将显示源文件。 根据所选语言，源文件名称可能是 Program.cs、MyThreadWalkthroughApp.cpp 或 Module1.vb。
+
+1. 删除出现在源文件中的代码，将其替换为下面列出的相应示例代码。
 
     ```csharp
     using System;
@@ -187,9 +199,9 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
     End Class
     ```
 
-7.  在“文件”菜单上，单击“全部保存”。
+1. 在“文件”菜单上，单击“全部保存”。
 
-8. (仅限 Visual Basic)在解决方案资源管理器 （右窗格），右键单击项目节点，选择**属性**。 下**应用程序**选项卡上，更改**启动对象**到**简单**。
+1. (仅限 Visual Basic)在解决方案资源管理器 （右窗格），右键单击项目节点，选择**属性**。 下**应用程序**选项卡上，更改**启动对象**到**简单**。
 
 ## <a name="debug-the-multithreaded-app"></a>调试多线程应用程序
 

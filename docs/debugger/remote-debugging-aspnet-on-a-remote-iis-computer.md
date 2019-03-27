@@ -10,25 +10,34 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f84b7c461154443adcd099fa1d92c0b8fd6e9987
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 9d92ebc40fb61be5ddb6125799c07eee3d148551
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194854"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355495"
 ---
-# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Visual Studio 2017 中的远程 IIS 计算机上的远程调试 ASP.NET Core
+# <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>在 Visual Studio 中的远程 IIS 计算机上的远程调试 ASP.NET Core
 若要调试已部署到 IIS 的 ASP.NET 应用程序，安装和运行远程工具的计算机上在其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
 
 ![远程调试器组件](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-本指南介绍如何设置和配置 Visual Studio 2017 ASP.NET Core 中，将其部署到 IIS，并从 Visual Studio 附加远程调试器。 远程调试 ASP.NET 4.5.2，请参阅[IIS 计算机上的远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 您还可以部署和使用 Azure 在 IIS 上调试。 可以轻松地部署和调试预配置 IIS 和远程调试器使用的实例上的 Azure 应用服务[快照调试器](../debugger/debug-live-azure-applications.md)或通过[将调试器附加服务器资源管理器](../debugger/remote-debugging-azure.md)。
+本指南介绍如何设置和配置 Visual Studio ASP.NET Core 中，将其部署到 IIS，并从 Visual Studio 附加远程调试器。 远程调试 ASP.NET 4.5.2，请参阅[IIS 计算机上的远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 您还可以部署和使用 Azure 在 IIS 上调试。 可以轻松地部署和调试预配置 IIS 和远程调试器使用的实例上的 Azure 应用服务[快照调试器](../debugger/debug-live-azure-applications.md)或通过[将调试器附加服务器资源管理器](../debugger/remote-debugging-azure.md)。
+
+## <a name="prerequisites"></a>系统必备
+
+::: moniker range=">=vs-2019"
+Visual Studio 2019 需按照本文中所示的步骤。
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio 2017 需要按照本文中所示的步骤。
+::: moniker-end
 
 这些服务器配置上进行了测试这些过程：
 * Windows Server 2012 R2 和 IIS 8
 * Windows Server 2016 和 IIS 10
 
-## <a name="requirements"></a>要求
+## <a name="network-requirements"></a>网络要求
 
 不支持调试通过代理连接的两台计算机之间。 调试通过高延迟或低带宽连接，例如拨号 Internet，或通过 Internet 跨国家/地区不建议并可能会失败或很令人无法接受慢。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
@@ -40,15 +49,16 @@ ms.locfileid: "58194854"
 
 * 如果需要帮助，确保您的应用程序设置已完成，部署，并正确运行在 IIS 中，以便可以调试，请按照本主题中的所有步骤。
 
-## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 计算机上创建 ASP.NET Core 应用程序
+## <a name="create-the-aspnet-core-application-on-the-visual-studio-computer"></a>在 Visual Studio 计算机上创建 ASP.NET Core 应用程序
 
-1. 创建新的 ASP.NET Core 应用程序。 (**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET Core Web 应用程序**)。
+1. 创建新的 ASP.NET Core Web 应用呈现。 
 
-    在中**ASP.NET Core**模板部分中，选择**Web 应用程序**。
-
-2. 请确保**ASP.NET Core 2.0**已选中的**启用 Docker 支持**是**不**所选并且**身份验证**设置为**无身份验证**。
-
-3. 将项目命名**MyASPApp**然后单击**确定**以创建新的解决方案。
+    ::: moniker range=">=vs-2019"
+    在 Visual Studio 2019，键入**Ctrl + Q**若要打开搜索框中，键入**asp.net**，选择**模板**，然后选择**创建新的 ASP.NET Core Web 应用程序**. 在显示对话框中，该项目命名**MyASPApp**，然后选择**创建**。 接下来，选择**Web 应用程序 （模型-视图-控制器）**，然后选择**创建**。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在 Visual Studio 2017 中，选择**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET Core Web 应用程序**。 在 ASP.NET Core 模板部分中，选择**Web 应用程序 （模型-视图-控制器）**。 请确保选择了 ASP.NET Core 2.1，该**启用 Docker 支持**未选中并且**身份验证**设置为**无身份验证**。 将项目命名**MyASPApp**。
+    ::: moniker-end
 
 4. 打开 About.cshtml.cs 文件，并在中设置断点`OnGet`方法 (在较旧模板中，打开 HomeController.cs 而是和中设置断点`About()`方法)。
 
@@ -144,7 +154,7 @@ ms.locfileid: "58194854"
 
 ## <a name="BKMK_msvsmon"></a> 下载并安装 Windows Server 上的远程工具
 
-在本教程中，我们将使用 Visual Studio 2017。
+下载与你的 Visual Studio 版本匹配远程工具的版本。
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
@@ -165,7 +175,14 @@ ms.locfileid: "58194854"
     > [!TIP]
     > 在 Visual Studio 2017 和更高版本中，您可以重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...**（shift + Alt + P）。
 
-3. 将限定符字段设置为“\<remote computer name>:4022”。
+3. 将限定符字段设置为**\<远程计算机名称 >： 端口**。
+
+    ::: moniker range=">=vs-2019"
+    **\<远程计算机名称 >: 4024**于 Visual Studio 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **\<远程计算机名称 >: 4022**上 Visual Studio 2017
+    ::: moniker-end
 4. 单击“刷新”。
     “可用进程”  窗口中将显示某些进程。
 
@@ -197,10 +214,14 @@ ms.locfileid: "58194854"
 
 所需的端口：
 
-- 80-所需的 IIS
-- 4022 的所需的从 Visual Studio 2017 远程调试 (请参阅[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)的详细信息。
-- 8172-（可选） 所需的 Web 部署来部署该应用程序从 Visual Studio。
-- UDP 3702-（可选） 发现端口使你能够**查找**按钮时将附加到 Visual Studio 中的远程调试器。
+* 80-所需的 IIS
+::: moniker range=">=vs-2019"
+* 4024-所需的 Visual Studio 2019 从远程调试 (请参阅[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)有关详细信息)。
+::: moniker-end
+::: moniker range="vs-2017"
+* 4022 的所需的从 Visual Studio 2017 远程调试 (请参阅[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)有关详细信息)。
+::: moniker-end
+* UDP 3702-（可选） 发现端口使你能够**查找**按钮时将附加到 Visual Studio 中的远程调试器。
 
 1. 若要打开 Windows 服务器上的端口，请打开**启动**菜单中，搜索**高级安全 Windows 防火墙**。
 

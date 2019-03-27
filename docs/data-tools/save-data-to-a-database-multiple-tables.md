@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 945a04213ab902c17459eba6e418aeebea78f6d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936611"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268561"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库（多个表）
 
@@ -31,17 +31,15 @@ ms.locfileid: "55936611"
 
 本演练涉及以下任务：
 
--   创建一个新**Windows 窗体应用程序**项目。
+-  创建和使用应用程序中配置数据源[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)。
 
--   创建和使用应用程序中配置数据源[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)。
+-  设置控件中的项[数据源窗口](add-new-data-sources.md#data-sources-window)。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
--   设置控件中的项[数据源窗口](add-new-data-sources.md#data-sources-window)。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
+-  通过将某些项从“数据源”窗口拖动到窗体上来创建数据绑定控件。
 
--   通过将某些项从“数据源”窗口拖动到窗体上来创建数据绑定控件。
+-  修改数据集中每个表中的几个记录。
 
--   修改数据集中每个表中的几个记录。
-
--   修改用于将数据集中的更新后的数据发回数据库的代码。
+-  修改用于将数据集中的更新后的数据发回数据库的代码。
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -63,17 +61,7 @@ ms.locfileid: "55936611"
 
 ## <a name="create-the-windows-forms-application"></a>创建 Windows 窗体应用程序
 
-第一步是创建**Windows 窗体应用程序**。 在此步骤中，向项目分配名称是可选的但我们将在您因为我们将稍后保存该项目为它提供一个名称。
-
-1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
-
-2. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
-
-3. 在中间窗格中，选择**Windows 窗体应用**项目类型。
-
-4. 将项目命名**UpdateMultipleTablesWalkthrough**，然后选择**确定**。
-
-     创建“UpdateMultipleTablesWalkthrough”项目并将其添加到“解决方案资源管理器”中。
+创建一个新**Windows 窗体应用程序**任意一个项目C#或 Visual Basic。 将项目命名为 **UpdateMultipleTablesWalkthrough**。
 
 ## <a name="create-the-data-source"></a>创建数据源
 
@@ -89,11 +77,11 @@ ms.locfileid: "55936611"
 
 4. 上**选择您的数据连接**屏幕上，执行下列操作之一：
 
-    -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
+    - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
          或
 
-    -   选择“新建连接”，打开“添加/修改连接”对话框。
+    - 选择“新建连接”，打开“添加/修改连接”对话框。
 
 5. 如果你的数据库需要密码，选择选项以包括敏感数据，然后选择**下一步**。
 

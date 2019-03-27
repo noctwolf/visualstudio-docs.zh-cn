@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ecb3d7658cc89207551af7df875eba0b2c1e4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0c6a8c564e6786c2919bcf61ae8f23c990e9abc1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709403"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476054"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>演练： 调试并行应用程序在 Visual Studio 中的 (C#，Visual Basic、 c + +)
 
@@ -62,23 +62,39 @@ ms.locfileid: "56709403"
 
 #### <a name="to-create-the-sample-project"></a>创建示例项目
 
-1. 在 Visual Studio 中的“文件”菜单上，指向“新建”，然后单击“项目”。
+1. 打开 Visual Studio 并创建一个新项目。
 
-2. 选择任一**可视化C#** ， **Visual Basic**，或**Visual c + +**。 对于托管语言，请确保 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 显示在框架框中。
+    ::: moniker range=">=vs-2019"
+    类型**Ctrl + Q**若要打开搜索框中，键入**控制台**(或**c + +**)，选择**模板**，，然后：
+    
+    - 有关C#或 Visual Basic 中，选择**创建新的控制台应用 (.NET Framework) 项目**为C#或 Visual Basic。 在出现的对话框中，选择**创建**。
+    - 对于 c + +，请选择**创建新的控制台应用项目**c + +。 在出现的对话框中，选择**创建**。
 
-3. 下**Windows 桌面**，选择**控制台应用程序**，然后单击**确定**。 保留默认的调试配置。
+    然后，键入一个名称或使用默认名称并单击**创建**。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在左窗格中**新的项目**对话框框中，选择以下：
 
-4. 在项目中打开 .cpp、.cs 或 .vb 代码文件。 删除其内容以创建一个空代码文件。
+    - 有关C#应用程序下**可视化C#** ，选择**Windows 桌面**，然后在中间窗格中选择**控制台应用 (.NET Framework)**。
+    - 对于 Visual Basic 应用，在**Visual Basic**，选择**Windows Desktop**，然后在中间窗格中选择**控制台应用 (.NET Framework)**。
+    - 对于 c + + 应用，在**Visual c + +**，选择**Windows Desktop**、，然后选择**Windows 控制台应用程序**。
 
-5. 将所选语言的以下代码粘贴到上述空代码文件中。
+    然后，键入一个名称或使用默认名称并单击**确定**。
+    ::: moniker-end
+
+    如果没有看到**控制台应用程序**项目模板，请转到**工具** > **获取工具和功能...**，这会打开 Visual Studio 安装程序。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”。
+
+1. 在项目中打开 .cpp、.cs 或 .vb 代码文件。 删除其内容以创建一个空代码文件。
+
+1. 将所选语言的以下代码粘贴到上述空代码文件中。
 
    [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-6. 在“文件”菜单上，单击“全部保存”。
+1. 在“文件”菜单上，单击“全部保存”。
 
-7. 在“生成”菜单上，单击“重新生成解决方案”。
+1. 在“生成”菜单上，单击“重新生成解决方案”。
 
     请注意，有四个对 `Debugger.Break`（在 C++ 示例中为 `DebugBreak`）的调用。因此，您无需插入断点；您只需运行应用程序即可使其四次中断调试器。
 

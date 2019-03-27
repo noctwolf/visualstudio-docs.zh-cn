@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9e36363743ac1509fb37c9070085656c34b91f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9e9f80f55aa3059cbe5c9af3b5510915f768ea20
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936658"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268763"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>创建支持复杂数据绑定的 Windows 窗体用户控件
 
-在 Windows 应用程序的窗体上显示数据时，可以从“工具箱”中选择现有的控件，而当标准控件无法提供应用程序所要求的功能时，还可以创作自定义控件。 本演练显示了如何创建实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件。 实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件包含可以绑定到数据的 `DataSource` 和 `DataMember` 属性。 此类控件类似于 <xref:System.Windows.Forms.DataGridView> 或 <xref:System.Windows.Forms.ListBox>。
+在 Windows 应用程序中的窗体上显示数据，可以选择从现有控件**工具箱**。 或者，如果你的应用程序需要标准控件中不可用的功能，可以创作自定义控件。 本演练显示了如何创建实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件。 实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件包含可以绑定到数据的 `DataSource` 和 `DataMember` 属性。 此类控件类似于 <xref:System.Windows.Forms.DataGridView> 或 <xref:System.Windows.Forms.ListBox>。
 
 控件创作的详细信息，请参阅[开发 Windows 窗体控件在设计时](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)。
 
@@ -37,9 +37,7 @@ ms.locfileid: "55936658"
 
 本演练创建显示表中多行数据的复杂控件。 本示例使用源自 Northwind 示例数据库的 `Customers` 表。 复杂用户控件将会在自定义控件中的 <xref:System.Windows.Forms.DataGridView> 中显示 Customers 表。
 
-在本演练中，你将学会如何执行以下任务：
-
-- 创建新的“Windows 窗体应用程序”。
+在本演练中，您将学习如何：
 
 - 将新的“用户控件”添加到项目中。
 
@@ -71,19 +69,9 @@ ms.locfileid: "55936658"
 
        后不久，查询完成运行并创建 Northwind 数据库。
 
-## <a name="create-a-windows-forms-application"></a>创建 Windows 窗体应用程序
+## <a name="create-a-windows-forms-app-project"></a>创建一个 Windows 窗体应用程序项目
 
-第一步是创建**Windows 窗体应用程序**:
-
-1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
-
-1. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
-
-1. 在中间窗格中，选择**Windows 窗体应用**项目类型。
-
-1. 将项目命名**ComplexControlWalkthrough**，然后选择**确定**。
-
-    “ComplexControlWalkthrough”项目即被创建并添加到“解决方案资源管理器”中。
+第一步是创建**Windows 窗体应用程序**任意一个项目C#或 Visual Basic。 将项目命名为 **ComplexControlWalkthrough**。
 
 ## <a name="add-a-user-control-to-the-project"></a>将用户控件添加到项目中
 
@@ -116,27 +104,27 @@ ms.locfileid: "55936658"
 
 使用**数据源配置**向导创建数据源基于`Customers`Northwind 示例数据库中的表：
 
-1.  若要打开**数据源**窗口，然后在**数据**菜单中，单击**显示数据源**。
+1. 若要打开**数据源**窗口，然后在**数据**菜单中，单击**显示数据源**。
 
-2.  在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。
+2. 在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。
 
-3.  在 **“选择数据源类型”** 页上选择 **“数据库”** ，然后单击 **“下一步”**。
+3. 在 **“选择数据源类型”** 页上选择 **“数据库”** ，然后单击 **“下一步”**。
 
-4.  在“选择数据连接”页面上，执行以下操作之一：
+4. 在“选择数据连接”页面上，执行以下操作之一：
 
-    - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
+   - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-    - 选择“新建连接”以启动“添加/修改连接”对话框。
+   - 选择“新建连接”以启动“添加/修改连接”对话框。
 
-5.  如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”。
+5. 如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”。
 
-6.  上**将连接字符串保存到应用程序配置文件**页上，单击**下一步**。
+6. 上**将连接字符串保存到应用程序配置文件**页上，单击**下一步**。
 
-7.  在“选择数据库对象”页上，展开“表”节点。
+7. 在“选择数据库对象”页上，展开“表”节点。
 
-8.  选择 `Customers` 表，然后单击“完成”。
+8. 选择 `Customers` 表，然后单击“完成”。
 
-    将“NorthwindDataSet”添加到项目中，并且“数据源”窗口中将显示 `Customers` 表。
+   将“NorthwindDataSet”添加到项目中，并且“数据源”窗口中将显示 `Customers` 表。
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>设置 Customers 表以使用 ComplexDataGridView 控件
 
