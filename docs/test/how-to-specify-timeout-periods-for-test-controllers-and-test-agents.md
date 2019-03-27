@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d05ed422f5d08a1a8c7d4f1b2444d9b751aafaf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b0e71e499eb1920dd59ee47533855cf9f86cbbd0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929227"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416092"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>如何：为测试控制器和测试代理指定超时周期
 
@@ -28,7 +28,7 @@ ms.locfileid: "55929227"
 
 -   测试控制器：*QTController.exe.config*
 
-    |项名称|说明​​|“值”|
+    |项名称|说明|值|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|认为连接丢失前等待代理 ping 请求的秒数。|“n”秒。|
     |AgentSyncTimeoutInSeconds|开始同步测试运行时，中止运行前等待所有代理同步的秒数。|“n”秒。|
@@ -37,7 +37,7 @@ ms.locfileid: "55929227"
 
 -   测试代理：*QTAgentService.exe.config*
 
-    |项名称|说明​​|“值”|
+    |项名称|说明|值|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|连接控制器尝试之间的秒数。|“n”秒。 默认：“30”（三十秒）。|
     |RemotingTimeoutSeconds|远程处理调用可以持续的最长时间（以秒为单位）。|“n”秒。 默认：“600”（10 分钟）。|
@@ -117,5 +117,4 @@ ms.locfileid: "55929227"
 - [安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)
 - [修改负载测试记录设置](../test/modify-load-test-logging-settings.md)
 - [为测试控制器和测试代理配置端口](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [如何：为日志文件指定最大文件大小](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [如何：将测试控制器或测试代理绑定到网络适配器](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

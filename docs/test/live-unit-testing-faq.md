@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7ac13299a8b727a3ef8e717e3d0a4c2c9f3738cf
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: aafe875ee8fe759d80f8db866a565a40ce16a054
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223055"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325261"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常见问题解答
 
@@ -30,28 +30,11 @@ Live Unit Testing 支持哪些测试框架和最低版本？
 
 Live Unit Testing 适用于下表中列出的三个常用的单元测试框架。 表中还列出了其适配器和框架支持的最低版本。 单元测试框架都可从 NuGet.org 获得。
 
-<table>
-<tr>
-   <th>测试框架</th>
-   <th>Visual Studio 适配器最低版本</th>
-   <th>Framework 最低版本</th>
-</tr>
-<tr>
-   <td>xUnit.net</td>
-   <td> xunit.runner.visualstudio 版本 2.2.0-beta3-build1187</td>
-   <td>xunit 1.9.2</td>
-</tr>
-<tr>
-   <td>NUnit</td>
-   <td>NUnit3TestAdapter 版本 3.5.1</td>
-   <td>NUnit 版本 3.5.0</td>
-</tr>
-<tr>
-   <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-预览版</td>
-   <td>MSTest.TestFramework 1.0.5-预览版</td>
-</tr>
-</table>
+|测试框架  |Visual Studio 适配器最低版本  |Framework 最低版本  |
+|---------|---------|---------|
+|xUnit.net |xunit.runner.visualstudio 版本 2.2.0-beta3-build1187 |xunit 1.9.2 |
+|NUnit |NUnit3TestAdapter 版本 3.5.1 |NUnit 版本 3.5.0 |
+|MSTest |MSTest.TestAdapter 1.1.4-预览版 |MSTest.TestFramework 1.0.5-预览版 |
 
 如果你有引用 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的测试项目（该项目是基于较旧的 MSTest），并且不想移动到较新的 MSTest NuGet 包，请升级到 Visual Studio 2017 版本 15.4 或更高版本。
 

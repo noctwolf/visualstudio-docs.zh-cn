@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ceed13cc320e2c98d413e6694acb2b473ad72eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 98d54f1e43090e8e1cacf8aecac9eebd18ffcbd7
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780270"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355365"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>优化 Visual Studio 启动时间
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54780270"
 
 ## <a name="control-startup-behavior"></a>控制启动行为
 
-为了避免延长启动时间，Visual Studio 2017 使用按需加载方法以避免在启动时加载扩展。 这意味着不会在 Visual Studio 启动后立即打开扩展，而是在启动后根据需要以异步方式打开。 此外，由于在之前的 Visual Studio 会话中保持工具窗口的打开状态会使启动时间变慢，因此 Visual Studio 以更智能的方式打开工具窗口，从而避免影响启动时间。
+若要避免延长启动时间，Visual Studio 2017 和更高版本避免在启动期间，使用按需加载方法加载扩展。 这意味着不会在 Visual Studio 启动后立即打开扩展，而是在启动后根据需要以异步方式打开。 此外，由于在之前的 Visual Studio 会话中保持工具窗口的打开状态会使启动时间变慢，因此 Visual Studio 以更智能的方式打开工具窗口，从而避免影响启动时间。
 
 如果 Visual Studio 检测到启动速度较慢，则会弹出一条消息，提示你导致速度变慢的扩展或工具窗口。 此消息还提供了**管理 Visual Studio 性能**对话框的链接，此对话框中列出了影响启动性能的扩展和工具窗口。 通过此对话框可以更改扩展和工具窗口的设置以提高启动性能。
 

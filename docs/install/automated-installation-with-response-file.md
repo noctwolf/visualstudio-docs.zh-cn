@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7547a6bb4670640733a64e7a60bfc92076df1460
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 0fdd1560f4b32f6c0b555e1786a766d034184f91
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982969"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415633"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>如何在响应文件中定义设置
 
@@ -48,6 +50,8 @@ vs_enterprise.exe --in customInstall.json
 
 布局中的基 `response.json` 文件应与以下示例类似，除非它具有用户想安装的产品和通道的值：
 
+::: moniker range="vs-2017"
+
 ```json
 {
   "installChannelUri": ".\\ChannelManifest.json",
@@ -58,11 +62,29 @@ vs_enterprise.exe --in customInstall.json
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise"
+}
+```
+
+::: moniker-end
+
 创建或更新布局时，会同时创建一个 response.template.json 文件。  此文件包含所有可用的工作负载、组件和语言 ID。  此文件以模板形式提供，可包含自定义安装中的所有内容。  管理员可使用此文件作为自定义响应文件的起点。  仅需删除不需要安装的内容的 ID，并将其保存在自己的响应文件中。  请勿自定义 response.template.json 文件，否则一旦布局更新，所做更改就会丢失。
 
 ## <a name="example-layout-response-file-content"></a>布局响应文件内容示例
 
 下列示例将安装包含六个常见工作负载和组件且 UI 语言为英语和法语的 Visual Studio Enterprise。 可以将此示例用作模板，只需将工作负载和组件更改为你要安装的内容即可：
+
+::: moniker range="vs-2017"
 
 ```json
 {
@@ -94,6 +116,43 @@ vs_enterprise.exe --in customInstall.json
     ]
 }
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise",
+
+  "installPath": "C:\\VS2019",
+  "quiet": false,
+  "passive": false,
+  "includeRecommended": true,
+  "norestart": false,
+
+  "addProductLang": [
+    "en-US",
+    "fr-FR"
+    ],
+
+    "add": [
+        "Microsoft.VisualStudio.Workload.ManagedDesktop",
+        "Microsoft.VisualStudio.Workload.Data",
+        "Microsoft.VisualStudio.Workload.NativeDesktop",
+        "Microsoft.VisualStudio.Workload.NetWeb",
+        "Microsoft.VisualStudio.Workload.Office",
+        "Microsoft.VisualStudio.Workload.Universal",
+        "Component.GitHub.VisualStudio"
+    ]
+}
+```
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

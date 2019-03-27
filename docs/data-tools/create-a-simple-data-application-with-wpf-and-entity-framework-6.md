@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e93500195ec98cf7df84a45ae52abc75ad91c59d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606855"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268796"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 创建简单的数据应用程序
 
@@ -26,9 +26,9 @@ ms.locfileid: "56606855"
 
 此示例使用 SQL Server Express LocalDB 和 Northwind 示例数据库。 如果该产品的 ADO.NET 数据提供程序支持实体框架，它应同样适用于其他 SQL 数据库产品。
 
-1.  如果您没有 SQL Server Express LocalDB，安装它从[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio 安装程序**。 在中**Visual Studio 安装程序**，可以作为的一部分安装 SQL Server Express LocalDB **.NET 桌面开发**工作负荷或作为单个组件。
+1. 如果您没有 SQL Server Express LocalDB，安装它从[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio 安装程序**。 在中**Visual Studio 安装程序**，可以作为的一部分安装 SQL Server Express LocalDB **.NET 桌面开发**工作负荷或作为单个组件。
 
-2.  通过执行以下步骤安装 Northwind 示例数据库：
+2. 通过执行以下步骤安装 Northwind 示例数据库：
 
     1. 在 Visual Studio 中打开**SQL Server 对象资源管理器**窗口。 (**SQL Server 对象资源管理器**的一部分安装**数据存储和处理**中的工作负荷**Visual Studio 安装程序**。)展开**SQL Server**节点。 LocalDB 实例上右键单击并选择**新查询**。
 
@@ -40,27 +40,27 @@ ms.locfileid: "56606855"
 
        后不久，查询完成运行并创建 Northwind 数据库。
 
-3.  [添加新连接](../data-tools/add-new-connections.md)northwind。
+3. [添加新连接](../data-tools/add-new-connections.md)northwind。
 
 ## <a name="configure-the-project"></a>配置项目
 
-1.  在 Visual Studio 中，选择**文件** > **新建** > **项目**，然后创建一个新C#WPF 应用程序。
+1. 在 Visual Studio 中，创建一个新C# **WPF 应用**项目。
 
-2.  接下来，为 Entity Framework 6 中添加 NuGet 包。 在中**解决方案资源管理器**，选择项目节点。 在主菜单中，选择**项目** > **管理 NuGet 包**。
+2. 为 Entity Framework 6 中添加 NuGet 包。 在中**解决方案资源管理器**，选择项目节点。 在主菜单中，选择**项目** > **管理 NuGet 包**。
 
      ![管理 NuGet 包的菜单项](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
-3.  在中**NuGet 包管理器**，单击**浏览**链接。 实体框架可能是在列表中的顶层包。 单击**安装**右窗格中，按照提示进行操作。 输出窗口会告诉您何时完成安装。
+3. 在中**NuGet 包管理器**，单击**浏览**链接。 实体框架可能是在列表中的顶层包。 单击**安装**右窗格中，按照提示进行操作。 输出窗口会告诉您何时完成安装。
 
      ![实体框架 NuGet 包](../data-tools/media/raddata_vs2015_nuget_ef.png)
 
-4.  现在可以使用 Visual Studio 来创建基于 Northwind 数据库的模型。
+4. 现在可以使用 Visual Studio 来创建基于 Northwind 数据库的模型。
 
 ## <a name="create-the-model"></a>创建模型
 
 1. 右键单击项目节点中**解决方案资源管理器**，然后选择**添加** > **新项**。 在左窗格中，在C#节点，选择**数据**，然后在中间窗格中，选择**ADO.NET 实体数据模型**。
 
-   ![实体框架模型新项目项](../data-tools/media/raddata-ef-new-project-item.png)
+   ![实体框架模型的新项](../data-tools/media/raddata-ef-new-project-item.png)
 
 2. 调用该模型`Northwind_model`，然后选择**确定**。 “实体数据模型”向导随即打开。 选择**EF 设计器从数据库**，然后单击**下一步**。
 
@@ -80,11 +80,11 @@ ms.locfileid: "56606855"
 
 6. *.Tt*文件是常规用途和需要调整它们以使用 WPF 数据绑定，这要求 ObservableCollections 之一。 在中**解决方案资源管理器**，展开 Northwind_model 节点，直到找到*Northwind_model.tt*。 (请确保不在 *。Context.tt*文件，它是正下方 *.edmx*文件。)
 
-   -   替换的两个匹配项<xref:System.Collections.ICollection>与<xref:System.Collections.ObjectModel.ObservableCollection%601>。
+   - 替换的两个匹配项<xref:System.Collections.ICollection>与<xref:System.Collections.ObjectModel.ObservableCollection%601>。
 
-   -   替换为第一个匹配项<xref:System.Collections.Generic.HashSet%601>与<xref:System.Collections.ObjectModel.ObservableCollection%601>在第 51 行。 不会替代 HashSet 的第二个匹配项。
+   - 替换为第一个匹配项<xref:System.Collections.Generic.HashSet%601>与<xref:System.Collections.ObjectModel.ObservableCollection%601>在第 51 行。 不会替代 HashSet 的第二个匹配项。
 
-   -   替换的唯一匹配项<xref:System.Collections.Generic>（在第 431 行） 与<xref:System.Collections.ObjectModel>。
+   - 替换的唯一匹配项<xref:System.Collections.Generic>（在第 431 行） 与<xref:System.Collections.ObjectModel>。
 
 7. 按**Ctrl**+**Shift**+**B**以生成项目。 如果生成完成后，在 model 类将显示到数据源向导。
 
@@ -94,17 +94,17 @@ ms.locfileid: "56606855"
 
 可以编写自己的数据绑定代码，但可让 Visual Studio 为您做容易得多。
 
-1.  从主菜单中，选择**项目** > **添加新数据源**以打开**数据源配置向导**。 选择**对象**因为要绑定到模型类不到数据库：
+1. 从主菜单中，选择**项目** > **添加新数据源**以打开**数据源配置向导**。 选择**对象**因为要绑定到模型类不到数据库：
 
      ![与对象源的数据源配置向导](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
-2.  选择**客户**。 （订单的源会自动从生成中客户的订单导航属性。）
+2. 选择**客户**。 （订单的源会自动从生成中客户的订单导航属性。）
 
      ![将实体类添加为数据源](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3.  单击 **“完成”**。
+3. 单击 **“完成”**。
 
-4.  导航到*MainWindow.xaml*在代码视图中。 我们将为此示例的目的来保持 XAML 简单。 主窗口的标题更改为更具描述性和现在为 600 x 800 增加其高度和宽度。 稍后可以随时更改它。 现在将这些包含三行定义添加到主网格中，导航按钮，以多客户的详细信息，一个用于显示其订单的网格的一行：
+4. 导航到*MainWindow.xaml*在代码视图中。 我们将为此示例的目的来保持 XAML 简单。 主窗口的标题更改为更具描述性和现在为 600 x 800 增加其高度和宽度。 稍后可以随时更改它。 现在将这些包含三行定义添加到主网格中，导航按钮，以多客户的详细信息，一个用于显示其订单的网格的一行：
 
     ```xaml
     <Grid.RowDefinitions>
@@ -114,7 +114,7 @@ ms.locfileid: "56606855"
         </Grid.RowDefinitions>
     ```
 
-5.  现在，打开*MainWindow.xaml* ，以便你正在设计器中查看它。 这将导致**数据源**窗口中显示为 Visual Studio 窗口边距中的一个选项旁边**工具箱**。 单击选项卡以打开窗口，或其他按**Shift**+**Alt**+**D**或选择**视图** > **其他 Windows** > **数据源**。 我们要在自己单独的文本的框中的客户类中显示每个属性。 首先，请单击中箭头**客户**组合框，然后选择**详细信息**。 以便在设计器知道你希望它转中间行中，然后，将节点拖到设计图面上的中间部分上。 如果您忘记放置位置，您可以以后手动在 XAML 中指定的一行。 默认情况下，控件垂直放置在网格元素中，但此时，您可以排列它们想在窗体上。 例如，可能会有用放**名称**在最前面，上面地址文本框。 这篇文章的示例应用程序对字段重新排序，并为两列中重新排列它们。
+5. 现在，打开*MainWindow.xaml* ，以便你正在设计器中查看它。 这将导致**数据源**窗口中显示为 Visual Studio 窗口边距中的一个选项旁边**工具箱**。 单击选项卡以打开窗口，或其他按**Shift**+**Alt**+**D**或选择**视图** > **其他 Windows** > **数据源**。 我们要在自己单独的文本的框中的客户类中显示每个属性。 首先，请单击中箭头**客户**组合框，然后选择**详细信息**。 以便在设计器知道你希望它转中间行中，然后，将节点拖到设计图面上的中间部分上。 如果您忘记放置位置，您可以以后手动在 XAML 中指定的一行。 默认情况下，控件垂直放置在网格元素中，但此时，您可以排列它们想在窗体上。 例如，可能会有用放**名称**在最前面，上面地址文本框。 这篇文章的示例应用程序对字段重新排序，并为两列中重新排列它们。
 
      ![为单个控件的客户数据源绑定](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
@@ -124,11 +124,11 @@ ms.locfileid: "56606855"
     <Grid DataContext="{StaticResource customerViewSource}">
     ```
 
-6.  客户在窗口的上半部分中可见时，想要查看其底部中的订单半双工。 在单个网格视图控件中显示的订单。 按预期方式工作的大纲-细节数据绑定，务必绑定到客户类，不到单独的订单节点中的 Orders 属性。 将客户类的 Orders 属性拖动到窗体的下半部分，以便在设计器将其放入第 2 行：
+6. 客户在窗口的上半部分中可见时，想要查看其底部中的订单半双工。 在单个网格视图控件中显示的订单。 按预期方式工作的大纲-细节数据绑定，务必绑定到客户类，不到单独的订单节点中的 Orders 属性。 将客户类的 Orders 属性拖动到窗体的下半部分，以便在设计器将其放入第 2 行：
 
      ![为网格拖动订单类](../data-tools/media/raddata-drag-orders-classes-as-grid.png)
 
-7.  Visual Studio 已生成连接到模型中的事件的 UI 控件的所有绑定代码。 您需要执行的操作，请参阅一些数据，只需编写一些代码来填充模型。 首先，导航到*MainWindow.xaml.cs*并将数据成员添加到 MainWindow 类中的数据上下文。 已为你生成，此对象的作用类似于跟踪的更改，并在模型中的事件的控件的内容。 此外将添加构造函数初始化逻辑。 类的顶部应如下所示：
+7. Visual Studio 已生成连接到模型中的事件的 UI 控件的所有绑定代码。 您需要执行的操作，请参阅一些数据，只需编写一些代码来填充模型。 首先，导航到*MainWindow.xaml.cs*并将数据成员添加到 MainWindow 类中的数据上下文。 已为你生成，此对象的作用类似于跟踪的更改，并在模型中的事件的控件的内容。 此外将添加构造函数初始化逻辑。 类的顶部应如下所示：
 
      [!code-csharp[MainWindow#1](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#1)]
 
@@ -142,7 +142,7 @@ ms.locfileid: "56606855"
 
      [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
 
-8.  按 F5 。 你应该看到已检索到 CollectionViewSource 的第一个客户的详细信息。 您还应该看到他们在数据网格中的订单。 格式设置不是太好了，因此让我们来修复的。 此外可以创建一种方法，以查看其他记录并执行基本的 CRUD 操作。
+8. 按 F5 。 你应该看到已检索到 CollectionViewSource 的第一个客户的详细信息。 您还应该看到他们在数据网格中的订单。 格式设置不是太好了，因此让我们来修复的。 此外可以创建一种方法，以查看其他记录并执行基本的 CRUD 操作。
 
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>调整页面设计并添加新客户和订单的网格
 
@@ -357,7 +357,7 @@ Visual Studio 生成的默认排列方式是不适合您的应用程序，因此
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>在 XAML 中添加命令、 绑定和按钮
 
-1.  首先，添加中的命令*MainWindow.xaml*文件内`Windows.Resources`元素：
+1. 首先，添加中的命令*MainWindow.xaml*文件内`Windows.Resources`元素：
 
     ```xaml
     <RoutedUICommand x:Key="FirstCommand" Text="First"/>
@@ -371,7 +371,7 @@ Visual Studio 生成的默认排列方式是不适合您的应用程序，因此
     <RoutedUICommand x:Key="CancelCommand" Text="Cancel"/>
     ```
 
-2.  CommandBinding 映射`RoutedUICommand`背后的代码中的方法的事件。 添加以下`CommandBindings`元素后的`Windows.Resources`结束标记：
+2. CommandBinding 映射`RoutedUICommand`背后的代码中的方法的事件。 添加以下`CommandBindings`元素后的`Windows.Resources`结束标记：
 
     ```xaml
     <Window.CommandBindings>
@@ -387,7 +387,7 @@ Visual Studio 生成的默认排列方式是不适合您的应用程序，因此
     </Window.CommandBindings>
     ```
 
-3.  现在，添加`StackPanel`与导航窗格中，添加、 删除和更新按钮。 首先，将添加到此样式`Windows.Resources`:
+3. 现在，添加`StackPanel`与导航窗格中，添加、 删除和更新按钮。 首先，将添加到此样式`Windows.Resources`:
 
     ```xaml
     <Style x:Key="NavButton" TargetType="{x:Type Button}" BasedOn="{x:Null}">

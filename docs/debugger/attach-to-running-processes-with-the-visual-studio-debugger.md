@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b8b0d507328022746682142c8d0720ba0de3fe0
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 439562a7882fb1acc89e11f53f1586493046aad6
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428760"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323089"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到正在运行的进程
 可将 Visual Studio 调试器附加到本地或远程计算机上正在运行的进程。 进程运行后，在 Visual Studio 中选择“调试” > “附加到进程”，或按 Ctrl+Alt+P，然后使用“附加到进程”对话框将调试器附加到进程。
@@ -102,7 +102,7 @@ ms.locfileid: "57428760"
      > 如果您不能使用远程计算机名称进行连接，请尝试使用 IP 和端口地址 (例如， `123.45.678.9:4022`)。 Visual Studio 2017 x64 远程调试器的默认端口 4022。 有关其他远程调试器端口分配，请参阅[远程调试器端口分配](remote-debugger-port-assignments.md)。
 
      ::: moniker-end
-     
+
      ::: moniker range=">= vs-2019"
 
      > [!NOTE]

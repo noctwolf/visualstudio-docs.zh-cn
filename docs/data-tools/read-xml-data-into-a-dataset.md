@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b603979424c3593a673cf11db81ca2fc1c6a03bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58058bf189cf65214ed7d3fe6083ef418107db4f
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934141"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268533"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>将 XML 数据读入到数据集中
 
@@ -33,17 +33,7 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 
 ## <a name="create-a-new-project"></a>创建新项目
 
-在此步骤中，创建一个 Visual Basic 或 VisualC#项目。
-
-1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
-
-2. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
-
-3. 在中间窗格中，选择**Windows 窗体应用**项目类型。
-
-4. 将项目命名**ReadingXML**，然后选择**确定**。
-
-   **ReadingXML**创建项目并将其添加到**解决方案资源管理器**。
+创建一个新**Windows 窗体应用程序**任意一个项目C#或 Visual Basic。 将项目命名**ReadingXML**。
 
 ## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>生成要读取到数据集的 XML 文件
 
@@ -123,15 +113,15 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 
 此应用程序的用户界面由以下内容组成：
 
--   一个<xref:System.Windows.Forms.DataGridView>XML 文件的内容显示为数据的控件。
+- 一个<xref:System.Windows.Forms.DataGridView>XML 文件的内容显示为数据的控件。
 
--   一个<xref:System.Windows.Forms.TextBox>控件显示 XML 文件的 XML 架构。
+- 一个<xref:System.Windows.Forms.TextBox>控件显示 XML 文件的 XML 架构。
 
--   两个<xref:System.Windows.Forms.Button>控件。
+- 两个<xref:System.Windows.Forms.Button>控件。
 
-    -   一个按钮将 XML 文件读取到数据集并将其显示<xref:System.Windows.Forms.DataGridView>控件。
+    - 一个按钮将 XML 文件读取到数据集并将其显示<xref:System.Windows.Forms.DataGridView>控件。
 
-    -   第二个按钮提取架构集中的数据，并通过<xref:System.IO.StringWriter>将其显示在<xref:System.Windows.Forms.TextBox>控件。
+    - 第二个按钮提取架构集中的数据，并通过<xref:System.IO.StringWriter>将其显示在<xref:System.Windows.Forms.TextBox>控件。
 
 ### <a name="to-add-controls-to-the-form"></a>向窗体添加控件
 
@@ -139,11 +129,11 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 
 2.  从**工具箱**，将以下控件拖到窗体：
 
-    -   一个<xref:System.Windows.Forms.DataGridView>控件
+    - 一个<xref:System.Windows.Forms.DataGridView>控件
 
-    -   一个<xref:System.Windows.Forms.TextBox>控件
+    - 一个<xref:System.Windows.Forms.TextBox>控件
 
-    -   两个<xref:System.Windows.Forms.Button>控件
+    - 两个<xref:System.Windows.Forms.Button>控件
 
 3.  设置以下属性：
 
@@ -220,9 +210,9 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 
 本演练介绍了 XML 文件读取到数据集，以及创建基于 XML 文件的内容架构的基础知识。 下面是一些你可能会在接下来执行的任务：
 
--   编辑数据集，将它写回以 XML 形式的数据。 有关更多信息，请参见<xref:System.Data.DataSet.WriteXml%2A>。
+- 编辑数据集，将它写回以 XML 形式的数据。 有关更多信息，请参见<xref:System.Data.DataSet.WriteXml%2A>。
 
--   编辑数据集中的数据并将其写出到数据库。
+- 编辑数据集中的数据并将其写出到数据库。
 
 ## <a name="see-also"></a>请参阅
 

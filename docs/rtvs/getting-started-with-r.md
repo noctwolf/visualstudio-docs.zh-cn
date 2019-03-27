@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: d3ef293b4e25f85cd901c42382158bdd75742e26
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: df46a2731f9923d85a16082f96c44947099db592
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936416"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324198"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio 中的 R 工具入门
 
@@ -21,7 +21,7 @@ ms.locfileid: "55936416"
 
 ## <a name="create-an-r-project"></a>创建 R 项目
 
-1. 启动 Visual Studio。
+1. 打开 Visual Studio。
 1. 依次选择“文件” > “新建” > “项目” (Ctrl+Shift+N)
 1. 选择“模板” > “R”下的“R 项目”，指定项目的名称和位置，然后选择“确定”：
 

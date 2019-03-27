@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c120e94943d9e75c968ecf13fbdb1ec6d883eff2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f7ec6628c6cfd12a35de151689196dadd4868f83
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867914"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324755"
 ---
 # <a name="how-to-create-item-templates"></a>如何：创建项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "57867914"
   
     C++ Windows 8.1 应用商店项目使用的值为 `WinRT-Native-6.3`。 有关 Windows 10 及其他项目类型，请参阅 [TemplateGroupID 元素（Visual Studio 模板）](../extensibility/templategroupid-element-visual-studio-templates.md)。  
   
-    下面的示例显示添加 XML 行 `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` 之后，.vstemplate 文件的全部内容。 此示例特定于 C# 项目。 可以修改 <ProjectTpe> 和 \<[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> 元素，从而指定其他语言和项目类型。  
+    下面的示例显示添加 XML 行 `<TemplateGroupID>WinRT-Managed</TemplateGroupID>` 之后，.vstemplate 文件的全部内容。 此示例特定于 C# 项目。 您可以修改\<ProjectType > 和\< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> 元素，以指定其他语言和项目类型。  
   
    ```xml  
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
