@@ -1,6 +1,6 @@
 ---
 title: 分析器规则严重性和禁止显示
-ms.date: 03/26/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2b874a3bddfbfb7831b286cec0887f24ce6bcb8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873497"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515332"
 ---
 # <a name="use-roslyn-analyzers"></a>使用 Roslyn 分析器
 
@@ -46,12 +46,17 @@ ms.locfileid: "57873497"
 
 ## <a name="rule-sets"></a>规则集
 
-一个[规则集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是存储为单个诊断的严重性和禁止显示状态的 XML 文件。 规则集适用于单个项目，并且项目可以具有多个规则集。 若要查看活动规则集编辑器中，右键单击**分析器**中的节点**解决方案资源管理器**，然后选择**打开活动规则集**。 如果这是首次访问该规则集，名为的文件*\<项目名称 >.ruleset*添加到项目并显示在**解决方案资源管理器**。
+一个[规则集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)是存储为单个诊断的严重性和禁止显示状态的 XML 文件。
 
 > [!NOTE]
-> 规则集包括 （二进制） 的静态代码分析和 Roslyn 分析器规则。
+> 规则集可以包括 （二进制） 的静态代码分析和 Roslyn 分析器中的规则。
 
-您可以更改活动的规则为一个项目中的设置**代码分析**项目的属性选项卡。 选择中的规则集**运行此规则集**下拉列表。 您还可以打开规则集从**代码分析**属性页上，通过选择**打开**。
+若要编辑的规则集编辑器中设置活动规则，请右键单击**引用** > **分析器**中的节点**解决方案资源管理器**，然后选择**打开活动规则集**。 如果是第一次你正在编辑的规则集，Visual Studio 创建设置文件的默认规则的副本，其*\<项目名称 >.ruleset*，并将其添加到你的项目。 此自定义规则集也将成为活动的规则设置为你的项目。
+
+若要更改活动规则集的项目，请导航到**代码分析**项目的属性选项卡。 选择规则集从下的列表**运行此规则集**。 若要打开规则集，请选择**打开**。
+
+> [!NOTE]
+> .NET core 和.NET Standard 项目的规则设置中不支持的菜单命令**解决方案资源管理器**，例如**打开活动规则集**。 若要指定非默认规则设置对于.NET Core 或.NET Standard 项目中，手动[添加**CodeAnalysisRuleSet**属性设置为项目文件](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project)。 可以配置规则在 Visual Studio 中设置规则集编辑器 UI 中的规则。
 
 ## <a name="rule-severity"></a>规则严重性
 
@@ -63,7 +68,7 @@ ms.locfileid: "57873497"
 |警告|会显示冲突了作为*警告*中**错误列表**和在命令行生成输出，但不是会导致生成失败。|有问题的代码与绿色波浪线，并通过滚动条中的小绿色框标记为带有下划线。|
 |T:System.Diagnostics.Switch|会显示冲突了作为*消息*中**错误列表**，根本不在命令行生成输出。|有问题的代码带有下划线用波浪线，并通过滚动条中的小灰色框标记为灰色。|
 |Hidden|非-对用户可见。|非-对用户可见。 诊断报告到 IDE 诊断引擎，但是。|
-|无|完全禁止显示。|完全禁止显示。|
+|None|完全禁止显示。|完全禁止显示。|
 
 此外，你可以"重置"规则的严重性设置为**默认**。 每个诊断具有所示的默认严重性**属性**窗口。
 
@@ -79,7 +84,7 @@ ms.locfileid: "57873497"
 
 ![在解决方案资源管理器中的规则集文件](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>若要从解决方案资源管理器中设置规则严重性
+### <a name="set-rule-severity-from-solution-explorer"></a>从解决方案资源管理器中设置规则严重性
 
 1. 在**解决方案资源管理器**，展开**引用** > **分析器**(**依赖关系** >  **分析器**有关.NET Core 项目)。
 
@@ -89,7 +94,7 @@ ms.locfileid: "57873497"
 
    规则严重性被保存在活动规则集文件中。
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>若要设置规则在规则中的严重性设置文件
+### <a name="set-rule-severity-in-the-rule-set-file"></a>在规则集文件中设置规则严重性
 
 1. 打开[规则集](analyzer-rule-sets.md)中双击文件**解决方案资源管理器**，选择**打开活动规则集**上的右键单击菜单**分析器**节点，或选择**开放**上**代码分析**项目属性页。
 
