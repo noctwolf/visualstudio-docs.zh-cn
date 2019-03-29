@@ -68,6 +68,7 @@
 #### [搜索订阅](search-license.md)
 #### [导出订阅](exporting-subscriptions.md)
 #### [过度分配](handle-overclaimed-license.md)
+#### [最大用量](maximum-usage.md)
 #### [过期订阅](handle-expired-license.md)
 #### [使用个人电子邮件登录的订阅者](personal-email-sign-ins.md)
 ## 获取 Visual Studio 订阅
