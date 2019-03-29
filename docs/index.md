@@ -864,7 +864,7 @@ Unity 游戏</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>使用 JavaScript 的移动开发</h3>
-                                                    <p>使用 Apache Cordova 框架生成适用于 iOS、Android 或 Windows 的跨平台应用程序。</p>
+                                                    <p>（仅限 Visual Studio 2017 和 Visual Studio 2015）使用 Apache Cordova 框架构建面向 iOS、Android 或 Windows 的跨平台应用程序。</p>
                                                 </div>
                                             </div>
                                         </div>
