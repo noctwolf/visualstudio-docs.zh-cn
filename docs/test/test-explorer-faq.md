@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a19a243d6bd54c62d680ff348be016c011653db7
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57221887"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323563"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 测试资源管理器常见问题解答
 
@@ -120,7 +120,7 @@ Visual Studio 2019 中不再出现一些与测试相关的 API。进行了哪些
 
 最近的 UWP 测试项目指定了一个测试平台生成属性，通过它可提供更佳的测试应用识别性能。 如果具有在低于 Visual Studio 版本 15.7 的版本上初始化的 UWP 测试项目，可能会在“输出” > “测试”中看到该错误：
 
-**System.AggregateException：出现一个或多个错误。---> System.InvalidOperationException：在 Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()** 处找不到以下 TestContainer {}
+**System.AggregateException：出现一个或多个错误。---> System.InvalidOperationException：在 Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext() 处找不到以下 TestContainer {}**
 
 修复此错误的方法：
 

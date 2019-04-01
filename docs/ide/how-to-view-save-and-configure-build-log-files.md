@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f50117a4101fd3c76e431891ca9a9fe20fa3959
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3517f697425b40e1d9c26b2a16e3d50ed9b8b251
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925223"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323865"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：查看、保存和配置生成日志文件
 
@@ -42,7 +42,7 @@ ms.locfileid: "55925223"
 
 3.  在“MSBuild 项目生成输出详细信息”列表中，选择以下值之一，然后选择“确定”按钮。
 
-    |详细级别|说明​​|
+    |详细级别|说明|
     | - |-----------------|
     |**安静**|仅显示生成总结。|
     |**最低**|显示生成总结；错误、警告以及分类为极为重要的信息。|
@@ -53,7 +53,7 @@ ms.locfileid: "55925223"
      有关详细信息，请参阅[“选项”对话框->“项目和解决方案”->“生成和运行”](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)和 <xref:Microsoft.Build.Framework.LoggerVerbosity>。
 
     > [!IMPORTANT]
-    > 要使更改在“输出”窗口（所有项目）和 <ProjectName>.txt 文件（仅限 C++ 项目）中生效，必须重新生成该项目。
+    > 更改要在“输出”窗口（所有项目）和 \<ProjectName>.txt 文件（仅限 C++ 项目）中生效，必须重新生成该项目。
 
 ## <a name="see-also"></a>请参阅
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cad792adaaebb6c446d071aca0edd57932605375
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 137ffe6cc89c439de2fded337349310da865e3be
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920098"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355693"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Flask Web 框架
 
@@ -40,7 +40,7 @@ Flask 被称为“微”框架，因为它不直接提供窗体验证、数据�
 
 ## <a name="prerequisites"></a>系统必备
 
-- Windows 上的 Visual Studio 2017 有以下选项：
+- Windows 版 Visual Studio 2017 及以上版本，且具有以下选项：
   - “Python 开发”工作负载（安装程序中的“工作负载”选项卡）。 有关说明，请参阅[在 Visual Studio 中安装 Python 支持](installing-python-support-in-visual-studio.md)。
   - “代码工具”下“单个组件”选项卡上的“适用于 Windows 的 Git”和“适用于 Visual Studio 的 GitHub 扩展”。
 
@@ -60,7 +60,7 @@ Visual Studio for Mac 当前不支持 Python 开发。 在 Mac 和 Linux 上，�
     - 位置：指定要在其中创建 Visual Studio 解决方案和项目的位置。
     - **解决方案名称**：设置为“LearningFlask”，适用于本教程中作为多个项目的容器的解决方案。
     - **创建解决方案的目录**：保留设置（默认值）。
-    - **新建 Git 存储库**：选择此选项（默认情况下会清除该选项），以便在 Visual Studio 创建解决方案时创建本地 Git 存储库。 如果未看到此选项，请运行 Visual Studio 2017 安装程序并在“代码工具”下的“单个组件”选项卡上添加“适用于 Windows 的 Git”和“适用于 Visual Studio 的 GitHub 扩展”。
+    - **新建 Git 存储库**：选择此选项（默认情况下会清除该选项），以便在 Visual Studio 创建解决方案时创建本地 Git 存储库。 如果未看到此选项，请运行 Visual Studio 安装程序并在“代码工具”下的“单个组件”选项卡上添加“适用于 Windows 的 Git”和“适用于 Visual Studio 的 GitHub 扩展”。
 
 1. 稍后 Visual Studio 会显示一个对话框，提示“此项目需要外部包”（如下所示）。 显示此对话框是因为该模板包含引用最新 Flask 1.x 包的 requirements.txt 文件。 （选择“显示所需包”查看确切的依赖项。）
 

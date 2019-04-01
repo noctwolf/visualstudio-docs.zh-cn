@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed08d8d94fbf94b8be3d1bf4b11eb116ceb6d4d1
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194945"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323646"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中开发代码而无需创建项目或解决方案
 
@@ -37,7 +37,7 @@ ms.locfileid: "58194945"
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-- 在“开始”窗口中选择“打开文件夹”链接。
+- 在“启动”窗口中选择“打开文件夹”链接。
 ::: moniker-end
 
 - 如果是键盘用户，则在 Visual Studio 中按 Ctrl+Shift+Alt+O。

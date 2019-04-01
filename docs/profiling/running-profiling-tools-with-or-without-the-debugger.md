@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4cf1cce3ba677b5232c86b7abb1386d4d1dc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597525"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323719"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>运行带/不带调试器的分析工具
 
@@ -67,7 +67,7 @@ Visual Studio 提供了性能测量值和分析工具选择。 某些工具（�
 
 ## <a name="collect-profiling-data-without-debugging"></a>在不进行调试的情况下收集分析数据
 
-要在不进行调试的情况下收集性能数据，可以运行“性能探查器”工具。 某些分析工具需要管理员权限才能运行。 启动诊断会话时，你可以以管理员身份启动 Visual Studio，也可以以管理员身份运行工具。
+要在不进行调试的情况下收集性能数据，可以运行“性能探查器”工具。 某些分析工具需要管理员权限才能运行。 启动诊断会话时，你可以以管理员身份打开 Visual Studio，也可以以管理员身份运行工具。
 
 1. 在 Visual Studio 中打开项目后，选择“调试” > “性能探查器”，或按 Alt+F2。
 

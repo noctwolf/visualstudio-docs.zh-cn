@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f7a4810cd6b45df7b305ebc4c086d60d500ed83
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943462"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322319"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
 
@@ -46,9 +46,7 @@ ms.locfileid: "55943462"
 
 - **浏览**，包含“最近”子组。
 
-## <a name="add-and-remove-a-reference"></a>添加和删除引用
-
-### <a name="to-add-a-reference"></a>添加引用
+## <a name="add-a-reference"></a>添加引用
 
 1. 在“解决方案资源管理器”中，右键单击“引用”或“依赖项”节点，然后选择“添加引用”。 还可以右键单击项目节点，然后选择“添加” > “引用”。
 
@@ -147,42 +145,25 @@ ms.locfileid: "55943462"
 
 以 [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] 为目标的项目不能添加对以 .NET Framework 为目标的项目的项目引用，反之亦然。
 
-## <a name="windows-tab"></a>“Windows”选项卡
+## <a name="universal-windows-tab"></a>通用 Windows 选项卡
 
-“Windows”选项卡列出特定于运行 Windows 操作系统的平台的所有 SDK。
-
-可以通过两种方式在 Visual Studio 中生成 WinMD 文件：
-
-- **Windows 8.x Store 应用托管项目**：Windows 8.x Store 应用项目可以通过设置“项目属性” > “输出类型 = WinMD 文件”输出 WinMD 二进制文件。 WinMD 文件名必须是其中包含的所有命名空间的超集命名空间。 例如，如果项目包含 `A.B` 和 `A.B.C` 命名空间，则该项目输出的 WinMD 的名称可能是 A.winmd 和 A.B.winmd。 如果用户输入与项目中的命名空间集不相交的“项目属性” > “程序集名称”或输入“项目属性” > “命名空间”值，或者项目中没有超集命名空间，则将生成一个生成警告：“’A.winmd’ 不是此程序集的有效 .winmd 文件名”。 Windows 元数据文件中的所有类型必须存在于文件名的子命名空间中。 无法在运行时查找文件名子命名空间中不存在的类型。 在此程序集中，最小的公共命名空间为 `CSWSClassLibrary1`。 桌面 Visual Basic 或 C# 项目只能使用通过 Windows 8 SDK 生成的 WinMD（也称为第一方 WinMD），无法生成 WinMD。
-
-- **Windows 8.x Store 应用本机项目**：本机 WinMD 文件仅包含元数据。 它的实现存在于单独 DLL 文件中。 若要生成本机二进制文件，可在“新建项目”对话框中选择“Windows 运行时组件”项目模板，或者从空项目开始并修改项目属性以生成 WinMD 文件。 如果项目中包含不相交的命名空间，则将出现生成错误，告知用户合并命名空间或运行 MSMerge 工具。
-
-“Windows”选项卡包括两个子组。
+“通用 Windows”选项卡列出特定于运行 Windows 操作系统的平台的所有 SDK。
+此选项卡具有两个子组：“核心”与“扩展”。
 
 ### <a name="core-subgroup"></a>“核心”子组
 
-“核心”子组列出目标 Windows 版本的 SDK 中的所有 WinMD（对于 Windows 运行时元素）。
-
-默认情况下，Windows 8.x Store 应用项目在项目创建时包含对 Windows 8 SDK 中所有 WinMD 的引用。 在托管项目中，“解决方案资源管理器”中“引用”文件夹下的只读节点指示对整个 Windows 8 SDK 的引用。 因此，引用管理器中的“核心”子组不从 Windows 8 SDK 枚举任何程序集，而是显示消息：“已引用 Windows SDK。 请使用对象浏览器浏览 Windows SDK 中的引用”。
-
-在桌面项目中，默认情况下不显示“核心”子组。 若要添加 Windows 运行时，可打开项目节点的快捷菜单，选择“卸载项目”，添加以下代码片段，然后重新打开项目（在项目节点上选择“重新加载项目”）。 调用“引用管理器”对话框时，将显示“核心”子组。
-
-```xml
-<PropertyGroup>
-  <TargetPlatformVersion>8.0</TargetPlatformVersion>
-</PropertyGroup>
-```
-
-请确保选中此子组上的“Windows”复选框。 随后应能使用 Windows 运行时元素。 但是，还需要添加 <xref:System.Runtime>，Windows 运行时从中定义在整个 Windows 运行库中使用的一些标准类和接口（例如 <xref:System.Collections.IEnumerable>）。 若要了解如何添加 <xref:System.Runtime>，请参阅[托管的桌面应用和 Windows 运行时](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types)。
+默认情况下，通用 Windows 应用项目具有对通用 Windows SDK 的引用。 因此，“引用管理器”中的“核心”子组不枚举通用 Windows SDK 的任何程序集。
 
 ### <a name="extensions-subgroup"></a>“扩展”子组
 
-“扩展”列出用于扩展目标 Windows 平台的用户 SDK。 此选项卡仅针对 Windows 8.x Store 应用项目显示。 桌面项目不显示此选项卡，因为这些项目仅使用第一方 .winmd 文件。
+“扩展”列出用于扩展目标 Windows 平台的用户 SDK。
 
-SDK 是文件集合，Visual Studio 将其视为单个组件。 在“扩展”选项卡中，应用于调用了“引用管理器”对话框的项目的 SDK 将作为单个项列出。 添加到项目时，所有 SDK 内容将由 Visual Studio 使用，这样，用户无需采取任何额外操作即可使用 IntelliSense、工具箱、设计器、对象浏览器、生成、部署、调试和打包中的 SDK 内容。 若要了解如何在“扩展”选项卡中显示 SDK，请参阅[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)。
+SDK 是文件集合，Visual Studio 将其视为单个组件。 在“扩展”选项卡中，应用于调用了“引用管理器”对话框的项目的 SDK 将作为单个项列出。 添加到项目时，所有 SDK 内容将由 Visual Studio 使用，这样，用户无需采取任何额外操作即可使用 IntelliSense、工具箱、设计器、对象浏览器、生成、部署、调试和打包中的 SDK 内容。
+
+若要了解如何在“扩展”选项卡中显示 SDK，请参阅[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)。
 
 > [!NOTE]
-> 如果项目引用的 SDK 依赖于另一 SDK，则只有在用户手动添加对另一 SDK 的引用后，Visual Studio 才会使用另一 SDK。 用户在“扩展”选项卡上选择 SDK 时，“引用管理器”对话框不仅会列出此 SDK 的名称和版本，还会在详细信息窗格中列出所有 SDK 依赖项的名称，从而帮助用户确定 SDK 依赖项。 如果用户未注意到依赖项，仅添加此 SDK，MSBuild 将提示用户添加依赖项。
+> 如果项目引用的 SDK 依赖于另一 SDK，则只有在用户手动添加对另一 SDK 的引用后，Visual Studio 才会使用另一 SDK。 当用户在“扩展”选项卡上选择 SDK 时，“引用管理器”对话框会在结果窗格中列出所有依赖项，从而帮助你找出 SDK 依赖项。
 
 如果项目类型不支持扩展，则此选项卡不会显示在“引用管理器”对话框中。
 
@@ -202,11 +183,11 @@ SDK 是文件集合，Visual Studio 将其视为单个组件。 在“扩展”�
 
 无法浏览到 SDK 并将其添加到项目。 只能浏览到文件（例如程序集或 .winmd）并将其添加到项目。
 
-执行对 WinMD 的文件引用时，预期布局为 <FileName>.winmd、<FileName>.dll 和 <FileName>.pri 文件全部并排放置。 如果在以下情况下引用 WinMD，一组不完整的文件将复制到项目输出目录中，从而导致生成和运行时失败。
+执行对 WinMD 的文件引用时，预期布局为 \<FileName>.winmd、\<FileName>.dll 和 \<FileName>.pri 文件全部并排放置。 如果在以下情况下引用 WinMD，一组不完整的文件将复制到项目输出目录中，从而导致生成和运行时失败。
 
-- **本机组件**：本机项目将为每个不相交的命名空间集创建一个 WinMD 以及一个包含实现的 DLL。 WinMD 将具有不同的名称。 引用此本机组件文件时，MSBuild 不会将名称不同的 WinMD 视为一个组件。 因此，将仅复制名称相同的 <FileName>.dll 和 <FileName>.winmd，导致运行时错误。 若要解决此问题，请创建扩展 SDK。 有关详细信息，请参阅[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)。
+- **本机组件**：本机项目将为每个不相交的命名空间集创建一个 WinMD 以及一个包含实现的 DLL。 WinMD 将具有不同的名称。 引用此本机组件文件时，MSBuild 不会将名称不同的 WinMD 视为一个组件。 因此，将仅复制名称相同的 \<FileName>.dll 和 \<FileName>.winmd，并且将发生运行时错误。 若要解决此问题，请创建扩展 SDK。 有关详细信息，请参阅[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)。
 
-- **使用控件**：一个 XAML 控件至少包含一个 <FileName>.winmd、一个 <FileName>.dll、一个 <FileName>.pri、一个 <XamlName>.xaml 和一个 <ImageName>.jpg。 生成项目时，与文件引用关联的资源文件不会复制到项目的输出目录中，将仅复制 <FileName>.winmd、<FileName>.dll 和 <FileName>.pri。 将记录一个生成错误以通知用户缺少资源 <XamlName>.xaml 和 <ImageName>.jpg。 若要成功，用户必须将这些资源文件手动复制到项目输出目录以用于生成和调试/运行时。 若要解决此问题，请按照[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)中的步骤创建扩展 SDK，或编辑项目文件，添加以下属性：
+- 使用控件：XAML 控件至少包含一个 \<FileName>.winmd、一个 \<FileName>.dll、一个 \<FileName>.pri、一个 \<XamlName>.xaml 和一个 \<ImageName>.jpg。 生成项目时，与文件引用关联的资源文件不会复制到项目的输出目录中，将仅复制 \<FileName>.winmd、\<FileName>.dll 和 \<FileName>.pri。 将记录一个生成错误，通知用户缺少 \<XamlName>.xaml 和 \<ImageName>.jpg 资源。 若要成功，用户必须将这些资源文件手动复制到项目输出目录以用于生成和调试/运行时。 若要解决此问题，请按照[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)中的步骤创建扩展 SDK，或编辑项目文件，添加以下属性：
 
     ```xml
     <PropertyGroup>

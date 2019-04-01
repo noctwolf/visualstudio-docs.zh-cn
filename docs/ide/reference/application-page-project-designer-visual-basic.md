@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0b5a95a4191a977144808bfb8888e282f7fce9
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 84874328c2f7a20a79370ff210eb51d966ec4648
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223268"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355197"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -59,7 +59,7 @@ ms.locfileid: "57223268"
 
 指定应用程序面向的 .NET Framework 版本。 此选项可以有不同的值，具体取决于计算机上安装的 .NET Framework 版本。
 
-默认值与“新建项目”对话框中指定的目标框架相匹配。
+默认值与创建项目时指定的目标框架相匹配。
 
 > [!NOTE]
 > 第一次打开对话框时将自动设置[“系统必备”对话框](../../ide/reference/prerequisites-dialog-box.md)中所列的必备组件包。 如果随后更改项目的目标框架，则必须手动指定必备组件，以便与新目标框架相匹配。

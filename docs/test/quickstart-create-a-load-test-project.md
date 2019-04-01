@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac5e6b8cdce628fb37aea79d965a4721fe5560e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069965"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415481"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入门：创建负载测试项目
 
@@ -22,13 +22,13 @@ ms.locfileid: "58069965"
 
 ## <a name="software-requirements"></a>软件要求
 
-Web 性能和负载测试项目仅在 Visual Studio Enterprise 中可用。
+Web 性能和负载测试项目仅在 Visual Studio Enterprise Edition 中可用。
 
 ## <a name="install-the-load-testing-component"></a>安装负载测试组件
 
 如果尚未安装 Web 性能和负载测试工具组件，则需通过 Visual Studio 安装程序进行安装。
 
-1. 从 Windows 的“开始”菜单打开“Visual Studio 安装程序”。 也可在 Visual Studio 中从“新建项目”对话框访问它，或从菜单栏中选择“工具” > “获取工具和功能”。
+1. 从 Windows 的“开始”菜单打开“Visual Studio 安装程序”。 在 Visual Studio 中，也可从“新建项目”对话框访问它，或从菜单栏中选择“工具” > “获取工具和功能”访问。
 
 1. 在“Visual Studio 安装程序”中，选择“单个组件”选项卡，然后向下滚动到“调试和测试”部分。 选择“Web 性能和负载测试工具”。
 
@@ -64,7 +64,7 @@ Web 性能和负载测试项目仅在 Visual Studio Enterprise 中可用。
 
 2. 在“开始”窗口上，选择“创建新项目”。
 
-3. 在“创建新项目”对话框中，在搜索框中键入“web test”，然后选择适用于 C# 的“Web 性能和负载测试项目\[已弃用]”模板。 选择“下一步”。
+3. 在“创建新项目”页中，在搜索框中键入“web test”，然后选择适用于 C# 的“Web 性能和负载测试项目\[已弃用]”模板。 选择“下一步”。
 
 4. 如果不想使用默认名称，请输入项目名，然后选择“创建”。
 

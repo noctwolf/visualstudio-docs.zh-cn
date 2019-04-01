@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 80507633538e28650ed53e74794ddda173382878
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 496ca9b5a0c7501cd9493e06233b1473e8526ed6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195133"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355680"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 
@@ -123,7 +123,7 @@ Visual Studio 还提供可从虚拟环境生成 requirements.txt 文件的命令
 
 #### <a name="conda-environments"></a>Conda 环境
 
-Conda 环境是使用 `conda` 工具或通过 Visual Studio 2017 版本 15.7 及更高版本中的集成式 Conda 管理创建的环境。 （需要 Anaconda 或 Miniconda；Anaconda 可通过 Visual Studio 安装程序使用，请参阅[安装](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017)。）
+Conda 环境是使用 `conda` 工具或通过 Visual Studio 2017 版本 15.7 及更高版本中的集成式 Conda 管理创建的环境。 （需要 Anaconda 或 Miniconda；它们可通过 Visual Studio 安装程序获得，请参阅[安装](installing-python-support-in-visual-studio.md#visual-studio-2019-and-visual-studio-2017)。）
 
 ::: moniker range="vs-2017"
 

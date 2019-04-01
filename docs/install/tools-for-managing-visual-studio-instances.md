@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8278448c1b10062c3e030d763d1cf4e37f9cc7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681746"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415209"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>用于检测和管理 Visual Studio 实例的工具
 
@@ -37,25 +39,31 @@ ms.locfileid: "56681746"
 
 ## <a name="using-vswhereexe"></a>使用 vswhere.exe
 
-`vswhere.exe` 自动包含在 Visual Studio 2017 15.2 或更高版本中，也可以从[发布页](https://github.com/Microsoft/vswhere/releases)中下载。 使用 `vswhere -?` 获取有关该工具的帮助信息。 作为示例，此命令显示了 Visual Studio 的所有版本（包括产品和预发行版本的旧版本），并输出 JSON 格式的结果：
+`vswhere.exe` 自动包含在 Visual Studio 中（从 Visual Studio 2017 15.2 及更高版本开始），你也可以从 [VSWhere 版本页面](https://github.com/Microsoft/vswhere/releases)下载它。 使用 `vswhere -?` 获取有关该工具的帮助信息。 作为示例，此命令显示了 Visual Studio 的所有版本（包括产品的早期版本和预发行版本），并输出 JSON 格式的结果：
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+::: moniker range="vs-2017"
 
->[!TIP]
->有关 Visual Studio 2017 安装的详细信息，请参阅 [Visual Studio 安装程序存档](https://devblogs.microsoft.com/setup/tag/vs2017/)。
+> [!TIP]
+> 有关 Visual Studio 2017 安装的详细信息，请参阅 [Visual Studio 安装程序存档](https://devblogs.microsoft.com/setup/tag/vs2017/)。
+
+::: moniker-end
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>编辑 Visual Studio 实例的注册表
 
-在 Visual Studio 2017 中，注册表设置存储在专用位置中，以便于可以在同一计算机上安装相同版本 Visual Studio 的多个并行实例。
+在 Visual Studio 中，注册表设置存储在专用位置中，这样可以在同一计算机上安装相同版本 Visual Studio 的多个并行实例。
 
 由于这些条目并非存储在全局注册表中，因此需要遵循有关使用注册表编辑器更改注册表设置的特殊说明：
 
-1. 如果有打开的 Visual Studio 2017 实例，请予以关闭。
-2. 启动 `regedit.exe`。
-3. 选择“`HKEY_LOCAL_MACHINE`”节点。
-4. 在 Regedit 主菜单中，依次选择“文件 -> 加载配置单元...”，然后选择专用注册表文件（存储在“AppData\Local”文件夹中）。 例如:
+1. 如果有打开的 Visual Studio 实例，请将其关闭。
+
+1. 启动 `regedit.exe`。
+
+1. 选择“`HKEY_LOCAL_MACHINE`”节点。
+
+1. 在 Regedit 主菜单中，依次选择“文件” > “加载配置单元...”，然后选择专用注册表文件（存储在“AppData\Local”文件夹中）。 例如:
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
@@ -66,7 +74,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 系统会提示你输入配置单元名称，这将成为你的独立配置单元的名称。 执行此操作后，应该能够在所创建的独立配置单元下浏览注册表。
 
 > [!IMPORTANT]
-> 必须先卸载已创建的独立配置单元，然后才能再次启动 Visual Studio。 为此，请依次选择 Regedit 主菜单中的“文件 -> 卸载配置单元”。 （如果不这样做，文件会一直处于锁定状态，且 Visual Studio 无法启动。）
+> 必须先卸载已创建的独立配置单元，然后才能再次启动 Visual Studio。 为此，请在 Regedit 主菜单中，依次选择“文件” > “卸载配置单元”。 （如果不这样做，文件会一直处于锁定状态，且 Visual Studio 无法启动。）
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
