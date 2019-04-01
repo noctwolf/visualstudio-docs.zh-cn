@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76739803cad3e822a45bae9d28a86e278d6a970d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0e7b4041097fe0170d51692369c0d7f70783cca0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145221"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416261"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 
@@ -62,9 +62,13 @@ ms.locfileid: "58145221"
 
 1. 创建编码的 UI 测试项目。
 
-   编码的 UI 测试必须包含在编码的 UI 测试项目中。 如果还没有编码的 UI 测试项目，请创建一个。 选择“文件” > “新建” > “项目”，打开“新建项目”对话框。 在左侧的类别窗格中，展开“已安装” > “Visual Basic”或“Visual C#” > “测试”。 选择“编码的 UI 测试项目”模板，然后选择“确定”。
+   编码的 UI 测试必须包含在编码的 UI 测试项目中。 如果还没有编码的 UI 测试项目，请创建一个。 依次选择“文件” > “新建” > “项目”。 搜索并选择“编码的 UI 测试项目”项目模板。
+
+   ::: moniker range="vs-2017"
 
    ![“新建项目”对话框中的编码的 UI 测试项目模板](media/coded-ui-test-project-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > 如未看到“编码的 UI 测试项目”模板，则需要安装[编码的 UI 测试组件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4d194ab0b308f436692be5dd0e7d1bc3315725
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8cb1b18488eaf9ddf3308e74d583fd1b92fc2563
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867821"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354720"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入门：初步了解 Visual Studio IDE
 
@@ -39,9 +39,9 @@ ms.locfileid: "57867821"
 
 ## <a name="start-window"></a>启动窗口
 
-打开 Visual Studio 之后你最先看到的是启动窗口。 启动窗口旨在帮助你更快地“编码”。 它具有以下选项：克隆或签出代码、打开现有项目或解决方案、创建新项目或只打开包含一些代码文件的文件夹。
+打开 Visual Studio 之后你最先看到的是“启动”窗口。 启动窗口旨在帮助你更快地“编码”。 它具有以下选项：克隆或签出代码、打开现有项目或解决方案、创建新项目或只打开包含一些代码文件的文件夹。
 
-[![](media/vs-2019/start-window-labeled.png "Visual Studio 2019 中的启动窗口")](media/vs-2019/start-window-labeled.png#lightbox)
+[![](media/vs-2019/start-window-labeled.png "Visual Studio 2019 中的“启动”窗口")](media/vs-2019/start-window-labeled.png#lightbox)
 
 如果首次使用 Visual Studio，最近的项目列表将为空。
 
@@ -71,7 +71,7 @@ ms.locfileid: "57867821"
 
 1. 在“开始”窗口上，选择“创建新项目”。
 
-   随即打开显示“创建新项目”的窗口。 此窗口有时称为“新建项目”对话框，可以在其中浏览并选择项目模板。 该窗口还保留最近使用的项目模板的列表。
+   随即打开显示“创建新项目”的对话框。 通过此对话框，可搜索、筛选和选择项目模板。 它还会显示最近使用的项目模板的列表。
 
 1. 在顶部的搜索框中，键入“console”，以筛选项目类型列表，仅显示名称中包含“console”的项目类型。 通过从语言选取器中选择 C#（或你选择的其他语言）来进一步细化搜索结果。
 

@@ -10,16 +10,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e80c09978aa313aa3392ef8221d0e58bda26e385
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b6b0a5525bfb80b5b9af2fe23e7a4b02cb542fd3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928447"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355281"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入门：在 Visual Studio 中克隆 Python 代码存储库
 
-[在 Visual Studio 2017 中安装 Python 支持](installing-python-support-in-visual-studio.md)后，可以添加适用于 Visual Studio 的 GitHub 扩展。 利用此扩展可轻松克隆 Python 代码的存储库，并在 IDE 中通过该存储库创建一个项目。 此外，始终可在命令行上克隆存储库，然后在 Visual Studio 中使用。
+[在 Visual Studio 中安装 Python 支持](installing-python-support-in-visual-studio.md)后，可以添加适用于 Visual Studio 的 GitHub 扩展。 利用此扩展可轻松克隆 Python 代码的存储库，并在 IDE 中通过该存储库创建一个项目。 此外，始终可在命令行上克隆存储库，然后在 Visual Studio 中使用。
 
 ## <a name="install-the-github-extension-for-visual-studio"></a>安装 Visual Studio 的 GitHub扩展
 

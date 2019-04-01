@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07081d8b02e4f884ae7ec983e4c97dcb8bfe672
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938730"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324716"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定生成事件 (Visual Basic)
 
@@ -115,7 +115,7 @@ Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译�
    End Sub
    ```
 
-   此命令采用两个参数。 第一个参数是应用程序清单的路径（即生成进程在其中创建清单的文件夹，通常为 <Projectname>.publish）。 第二个参数是新的操作系统版本。
+   此命令采用两个参数。 第一个参数是应用程序清单的路径（即生成进程在其中创建清单的文件夹，通常为 \<ProjectName>.publish）。 第二个参数是新的操作系统版本。
 
 5. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。
 

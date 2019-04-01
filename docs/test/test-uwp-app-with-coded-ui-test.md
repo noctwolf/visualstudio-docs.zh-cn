@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 1b07aa8559f331dd9416448f4a6b55aa8bdddb49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11fc95978690e98d496f539d4e98acf58104be3b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942253"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416118"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>创建编码的 UI 测试来测试 UWP 应用
 
@@ -29,7 +29,11 @@ ms.locfileid: "55942253"
 
 1. 在 Visual Studio 中，使用针对 Visual C# 或 Visual Basic 的“空白应用(通用 Windows)”模板创建新项目。
 
-     ![空白应用通用 Windows 模板](../test/media/blank-uwp-app-template.png)
+   ::: moniker range="vs-2017"
+
+   ![空白应用通用 Windows 模板](../test/media/blank-uwp-app-template.png)
+
+   ::: moniker-end
 
 1. 在“新建通用 Windows 平台项目”对话框中，选择“确定”接受默认平台版本。
 
@@ -61,16 +65,20 @@ ms.locfileid: "55942253"
 
 1. 若要向解决方案添加测试项目，请右键单击“解决方案资源管理器”中的解决方案，然后选择“添加” > “新项目”。
 
-1. 在“新项目”对话框中，选择“编码的 UI 测试项目(通用 Windows)”模板。 此模板位于“Visual C#”或“Visual Basic”下的“Windows 通用”类别中。
+1. 搜索并选择“编码的 UI 测试项目(通用 Windows)”模板。
 
-     ![新编码的 UI 测试项目](../test/media/coded-ui-test-project-uwp-template.png)
+   ::: moniker range="vs-2017"
+
+   ![新编码的 UI 测试项目](../test/media/coded-ui-test-project-uwp-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > 如果未看到“编码的 UI 测试项目(通用 Windows)”模板，则需要[安装编码的 UI 测试组件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
 
 1. 在“为编码的 UI 测试生成代码”对话框中，选择“手动编辑测试”。
 
-     ![“为编码的 UI 测试生成代码”对话框](../test/media/manually-edit-the-test.png)
+   ![“为编码的 UI 测试生成代码”对话框](../test/media/manually-edit-the-test.png)
 
 1. 如果尚未运行 UWP 应用，请按 Ctrl+F5 启动应用。
 

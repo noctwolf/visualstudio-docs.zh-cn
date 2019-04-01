@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: c411df964d0f0ffb6a96484f6ad4d245d561410c
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070329"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58342489"
 ---
 Visual Studio 集成开发环境是一种创新启动板，可用于编辑、调试并生成代码，然后发布应用。 集成开发环境 (IDE) 是一个功能丰富的程序，可用于软件开发的许多方面。 除了大多数 IDE 提供的标准编辑器和调试器之外，Visual Studio 还包括编译器、代码完成工具、图形设计器和许多其他功能，以简化软件开发过程。
 
@@ -232,7 +232,7 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 1. 打开 Visual Studio。
 
-   “启动”窗口中会显示有关克隆存储库、打开最近的项目，或创建新项目的各种选项。
+   “启动”窗口中会显示有关克隆存储库、打开最近的项目或创建全新项目的各种选项。
 
 1. 选择“创建新项目”。
 

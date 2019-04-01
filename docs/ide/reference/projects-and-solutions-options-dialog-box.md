@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad43a125074240cb6dfb3c8f2c40750b803ac322
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867808"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355469"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”页
 
@@ -91,11 +91,11 @@ ms.locfileid: "57867808"
 
 ### <a name="user-project-templates-location"></a>用户项目模板位置
 
-指定“新建项目”对话框中使用的默认位置来创建“我的模板”的列表。 有关详细信息，请参阅[如何：查找和组织模板](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+指定用于搜索用户创建的项目模板的默认位置。 有关详细信息，请参阅[如何：查找和组织模板](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ### <a name="user-item-templates-location"></a>用户项模板位置
 
-指定“添加新项”对话框中使用的默认位置来创建“我的模板”的列表。 有关详细信息，请参阅[如何：查找和组织模板](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
+指定用于搜索用户创建的项模板的默认位置。 有关详细信息，请参阅[如何：查找和组织模板](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 
 ## <a name="see-also"></a>请参阅
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a546f1e0d40e810d696fb37bbee29d98ab8861fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949637"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355268"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目标概述
 
@@ -35,13 +35,13 @@ ms.locfileid: "55949637"
 
 - 打开针对 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 早期版本的项目时，Visual Studio 可自动升级项目或者保持目标不变。
 
-- 创建项目时，可指定要面向的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。
+- 创建项目时，可指定要面向的 .NET Framework 版本。
 
-- 可更改被现有项目视为目标的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的版本。
+- 可更改被现有项目面向的 .NET Framework 的版本。
 
-- 可在同一解决方案的各项目中将不同的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本视为目标。
+- 在同一解决方案的各项目中可以面向不同的 .NET Framework 版本。
 
-- 更改项目所面向的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本时，[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 会对引用和配置文件进行任何所需更改。
+- 更改项目面向的 .NET Framework 版本时，[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 会对引用和配置文件进行任何所需的更改。
 
 处理针对 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 早期版本的项目时，Visual Studio 会对开发环境进行如下动态更改：
 
@@ -62,17 +62,27 @@ ms.locfileid: "55949637"
 
 ## <a name="select-a-target-framework-version"></a>选择目标框架版本
 
-创建项目时，请在“新建项目”对话框中选择目标 .NET Framework 版本。 可用框架的列表包含适用于所选模板类型的已安装框架版本。 对于不需要使用 .NET Framework 的模板类型（例如，.NET Core 模板），“框架”下拉列表将隐藏。
+创建项目时，请在选择项目模板后，选择目标 .NET Framework 版本。 可用框架的列表包含适用于所选模板类型的已安装框架版本。 对于不需要使用 .NET Framework 的模板类型（例如，.NET Core 模板），“框架”下拉列表将隐藏。
 
-![“新建项目”对话框中的“框架”下拉列表](media/vside-newproject-framework.png)
+::: moniker range="vs-2017"
 
-对于现有项目，可在项目属性对话框中更改目标 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+![VS 2017 中的“框架”下拉列表](media/vside-newproject-framework.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+![VS 2019 中的“框架”下拉列表](media/vs-2019/configure-new-project-framework.png)
+
+::: moniker-end
+
+对于现有项目，可在项目属性对话框中更改目标 .NET Framework 版本。 有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 ## <a name="resolve-system-and-user-assembly-references"></a>解析系统和用户程序集引用
 
 若要以 .NET Framework 版本为目标，必须先安装相应的程序集引用。 可以在 [.NET 下载](https://www.microsoft.com/net/download/windows)页下载针对不同版本 .NET Framework 的开发人员包。
 
-“添加引用”对话框禁用不适合目标 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本的系统程序集，以便不会无意中将它们添加到项目中。 （系统程序集是包括在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本内的 .dll 文件。）若引用所属的框架版本低于目标版本，则无法解析引用，并且无法添加基于此类引用的控件。 若要启用此类引用，请将项目的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 目标重新设置为包括此引用。  有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+“添加引用”对话框禁用了不适合目标 .NET Framework 版本的系统程序集，以免无意中将它们添加到项目。 （系统程序集是包含在 .NET Framework 版本内的 .dll 文件。）若引用所属的框架版本低于目标版本，则无法解析引用，并且无法添加基于此类引用的控件。 若要启用此类引用，请将项目的 .NET Framework 目标重新设置为包含此引用。  有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
 有关程序集引用的详细信息，请参阅[在设计时解析程序集](../msbuild/resolving-assemblies-at-design-time.md)。
 

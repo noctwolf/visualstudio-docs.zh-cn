@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3db5b22e2248c7ae79ec5300823f6ee7d4f415c7
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428656"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325287"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>初步了解 Visual Studio IDE
 
@@ -27,7 +27,7 @@ ms.locfileid: "57428656"
 
 启动 Visual Studio 后，最先看到的是启动窗口。 启动窗口旨在帮助你更快地“编码”。 它具有以下选项：关闭或签出代码、打开现有项目或解决方案、创建新项目或只打开包含一些代码文件的文件夹。
 
-[![](media/vs-2019/start-window.png "Visual Studio 2019 中的启动窗口")](media/vs-2019/start-window.png)
+[![](media/vs-2019/start-window.png "Visual Studio 2019 中的“启动”窗口")](media/vs-2019/start-window.png)
 
 如果首次使用 Visual Studio，最近的项目列表将为空。
 
@@ -57,13 +57,13 @@ ms.locfileid: "57428656"
 
 ::: moniker range=">=vs-2019"
 
-1. 在“开始窗口”上，选择“新建项目”，然后在搜索框中键入“javascript”，以筛选项目类型列表，将项目类型列表筛选为名称或语言类型中包含“javascript”的项目类型列表。
+1. 在“启动”窗口中，选择“创建新项目”，然后在搜索框中键入“javascript”，筛选项目类型列表，以仅显示名称或语言类型中包含“javascript”的项目类型。
 
    Visual Studio 提供了各种类型的项目模板，帮助你快速开始编写代码。 （或者，如果你是 TypeScript 开发者，则可以使用该语言创建项目。 对于所有编程语言而言，我们将查看的 UI 都是相似的。）
 
    ![在 Visual Studio 开始窗口上搜索项目模板](media/vs-2019/create-new-project.png)
 
-1. 选择“空白 Node.js Web 应用程序”项目模板并单击“下一步”。 
+1. 选择“空白 Node.js Web 应用程序”项目模板并单击“下一步”。
 
 1. 在显示的“配置新项目”对话框中，接受默认的项目名称并选择“创建”。
 

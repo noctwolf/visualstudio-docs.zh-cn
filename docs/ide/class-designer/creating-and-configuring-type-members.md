@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97a7886ba57c9e4076121ec8071e52f29af784f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956852"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324235"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在类设计器中创建和配置类型成员
 
@@ -205,7 +205,7 @@ ms.locfileid: "55956852"
 
 - **\<添加参数>**
 
-     成员的最后一个参数行的“名称”单元格中包含文本“<add parameter>”。 单击此单元格可创建新的参数。 有关详细信息，请参阅[向方法中添加参数](creating-and-configuring-type-members.md#add-parameters-to-methods)。
+     成员的最后一个参数行的“名称”单元格中包含文本“<添加参数\>”。 单击此单元格可创建新的参数。 有关详细信息，请参阅[向方法中添加参数](creating-and-configuring-type-members.md#add-parameters-to-methods)。
 
 “属性”窗口显示的参数属性与“类详细信息”窗口中显示的相同：“名称”、“类型”、“修饰符”、“摘要”以及“可选默认值”属性。 在一个位置更改某个属性将使该属性的值在全局范围内得到更新，包括这个属性值在其他位置的显示。
 

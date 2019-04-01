@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 88717998e22ffad028ce3fd7e0a2304de3e779d6
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 547c92cdb892c3a087301fb527d069dacfaccd8e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323557"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355446"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>为 Python Web 应用配置 IIS
 
@@ -37,7 +37,7 @@ ms.locfileid: "57323557"
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>将 web.config 设置为指向 Python 解释器
 
-应用的 web.config 文件指示 Windows 上运行的 IIS (7+) Web 服务器，应如何通过 HttpPlatform（推荐）或 FastCGI 处理 Python 请求。 Visual Studio 2015 及更早版本会自动进行这些修改。 使用 Visual Studio 2017 时，必须手动修改 web.config。
+应用的 web.config 文件指示 Windows 上运行的 IIS (7+) Web 服务器，应如何通过 HttpPlatform（推荐）或 FastCGI 处理 Python 请求。 Visual Studio 2015 及更早版本会自动进行这些修改。 使用 Visual Studio 2017 及更高版本时，必须手动修改 web.config。
 
 ### <a name="configure-the-httpplatform-handler"></a>配置 HttpPlatform 处理程序
 

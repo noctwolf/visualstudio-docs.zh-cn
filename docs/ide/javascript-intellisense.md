@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cb8540fd53a66d67907de47f6332a05c6240f09
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868893"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324391"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -53,6 +53,7 @@ TypeScript 使用多个源来构建此信息：
 - [自动获取类型定义](#Auto)
 
 <a name="TypeInference"></a>
+
 ### <a name="intellisense-based-on-type-inference"></a>基于类型推理的 IntelliSense
 
 在 JavaScript 中，通常没有可用的显式类型信息。 好在一般情况下可根据周围的代码上下文，轻松推导出类型。
@@ -90,6 +91,7 @@ exports.Foo = Foo;
 ```
 
 <a name="JsDoc"></a>
+
 ### <a name="intellisense-based-on-jsdoc"></a>基于 JSDoc 的 IntelliSense
 
 在类型推理不提供所需类型信息（或支持文档）的情况下，可通过 JSDoc 注释显式提供类型信息。  例如，若要为部分声明的对象提供特定类型，可使用 `@type` 标记，如下所示：
@@ -123,7 +125,7 @@ function Foo(param1) {
 
 下面是一个简单的示例，其中演示 TypeScript 定义文件通过接口向同一项目的 JavaScript 文件提供此类类型信息（使用 `JsDoc` 标记）。
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
+![TypeScript 定义文件](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png)
 
 <a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>自动获取类型定义

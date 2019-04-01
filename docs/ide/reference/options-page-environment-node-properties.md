@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ddd62df2afd5052d3ef1ecc0753d3f8ba6cf3a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ee14cddc6a3eb4b0348b88be1d7c2b0a48b44c01
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708324"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355599"
 ---
 # <a name="options-page-environment-node-properties"></a>“选项”页 ->“环境”节点属性
 
@@ -120,7 +120,7 @@ ms.locfileid: "56708324"
 |属性项名称|值|说明|
 | - |-----------|-----------------|
 |OnRunOrPreview|Get/Set (String)|确定在预览或运行生成的项目之前 IDE 是否保存所有内容。|
-|ProjectsLocation|Get/Set (String)|确定默认目录，其中“添加项目”对话框将保存新的项目。|
+|ProjectsLocation|Get/Set (String)|确定保存新项目的默认目录。|
 |ShowOutputWindowBeforeBuild|Get/Set (Boolean)|决定开始生成是否显示“输出”窗口。|
 |ShowTaskListAfterBuild|Get/Set (Boolean)|确定不成功的生成操作在生成完成时是否显示“任务列表”。|
 |TrackFileSelectionInExplorer|Get/Set (Boolean)|确定是否在“解决方案资源管理器”中跟踪当前项。|
@@ -164,7 +164,7 @@ ms.locfileid: "56708324"
 
 `DTE.Properties("Environment", "TaskList")`
 
-|属性项名称|“值”|说明|
+|属性项名称|值|说明|
 | - |-----------|-----------------|
 |ConfirmTaskDeletion|Get/Set (Boolean)|指定从“任务列表”删除任务时是否显示确认框。|
 |WarnOnAddingHiddenItem|Get/Set (Boolean)|指定在添加不会显示的用户任务时是否收到警告。|

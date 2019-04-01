@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 790d6d866619b19a81bd0e92ecb043385736eaac
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e7cc22e4fbba012d0774a3a1e84adc0cf02e8dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983299"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355534"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -49,15 +49,15 @@ ms.locfileid: "57983299"
     ![Visual Studio 安装程序中的 Python 开发工作负载](media/installation-python-workload.png)
 
     ::: moniker range="vs-2017"
-    可选：如果使用数据科学，还可考虑使用**数据科学和分析应用程序**工作负载。 此工作负载包含对 Python、R 和 F# 语言的支持。 有关详细信息，请参阅[数据科学和分析应用程序工作负载](data-science-and-analytical-applications-workload.md)。
+    可选：如果使用数据科学，还可考虑使用**数据科学和分析应用程序**工作负载。 此工作负载包含 Python、R 和 F# 语言支持。 有关详细信息，请参阅[数据科学和分析应用程序工作负载](data-science-and-analytical-applications-workload.md)。
+
+    > [!Note]
+    > Python 和数据科学工作负载仅可用于 Visual Studio 2017 版本 15.2 及更高版本。
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
     可选：如果使用数据科学，还可考虑使用**数据科学和分析应用程序**工作负载。 此工作负载包含对 Python 和 F# 语言的支持。 有关详细信息，请参阅[数据科学和分析应用程序工作负载](data-science-and-analytical-applications-workload.md)。
     ::: moniker-end
-
-    > [!Note]
-    > Python 和数据科学工作负载仅可用于 Visual Studio 2017 版本 15.2 及更高版本。
 
 1. 如果需要，选择安装程序右侧的其他选项。 跳过此步骤，接受默认选项。
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1871b7270c462ea599450e48f0a86a4887ebc5ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970512"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416339"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：创建多文件项模板
 
@@ -28,11 +28,11 @@ ms.locfileid: "55970512"
 
 多文件项模板需要参数，确保创建该项时使用正确的文件扩展名。 如果使用“导出模板向导”创建多文件项模板，会自动生成这些参数，无需进一步编辑。
 
-## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>使用“导出模板向导”创建多文件项模板
+## <a name="use-the-export-template-wizard"></a>使用“导出模板向导”
 
 可按创建单文件项模板的方式创建多文件项模板。 请参阅[如何：创建项模板](../ide/how-to-create-item-templates.md)。 在向导的“选择要导出的项”页面中，选择具有相关文件（例如，“Windows 窗体”窗体文件）的文件。 向导会自动在模板中含入任何相关文件，例如设计器和资源文件。
 
-## <a name="to-manually-create-a-multi-file-item-template"></a>手动创建多文件项模板
+## <a name="manually-create-a-multi-file-item-template"></a>手动创建多文件项模板
 
 1. 创建项模板与手动创建单文件项模板一样，但包括每个构成多文件项的文件。
 

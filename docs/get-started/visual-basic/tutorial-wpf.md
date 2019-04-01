@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ecfb6f144b632f2c332d73e90a8deca08e8c03c6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c80c5ec1af0129486c465075209cfb39dbe2476a
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155532"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324248"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教程：使用 Visual Basic 创建简单应用
 
@@ -35,7 +35,7 @@ ms.locfileid: "58155532"
 
 ::: moniker range="vs-2017"
 
-首次启动 Visual Studio 时，系统会提示你进行登录。 在本教程中，此步骤为可选步骤。 接下来可能会显示一个对话框，让你选择开发设置和颜色主题。 保留默认值，然后选择“启动 Visual Studio”。
+首次打开 Visual Studio 时，系统会提示你登录。 在本教程中，此步骤为可选步骤。 接下来可能会显示一个对话框，让你选择开发设置和颜色主题。 保留默认值，然后选择“启动 Visual Studio”。
 
 ![选择设置对话框](../media/exploreide-settings.png)
 

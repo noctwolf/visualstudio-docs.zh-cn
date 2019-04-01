@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d2cb1e2a05499c01cc1441db0a289cfc95b8e243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cae9138c881115651ebd9e862e912ff10da20d2f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955058"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416396"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>演练：创建、编辑和维护编码的 UI 测试
 
@@ -22,41 +22,27 @@ ms.locfileid: "55955058"
 
 ## <a name="create-a-wpf-app"></a>创建 WPF 应用
 
-1.  在“文件”菜单上，指向“新建”，然后选择“项目”。
+1. 创建新的“WPF 应用(.NET Framework)”项目，并将其命名为 SimpleWPFApp。
 
-     此时将出现“新建项目”对话框。
+     “WPF 设计器”随即打开并显示项目的 MainWindow。
 
-2.  在“已安装”窗格中，展开 **Visual C#**，然后选择“Windows 桌面”。
+2. 如果当前未打开工具箱，请将其打开。 选择“视图”菜单，然后选择“工具箱”。
 
-3.  在中间窗格之上，验证是否将目标框架下拉列表设置为“.NET Framework 4.5”。
+3. 在“所有 WPF 控件”部分，将一个“Button”、“CheckBox”和“ProgressBar”控件拖动到设计图面的主窗口中。
 
-4.  在中间窗格中，选择“WPF 应用程序”模板。
+4. 选择“Button”控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 button1。 然后将“内容”属性的值从 Button 更改为 Start。
 
-5.  在“名称”文本框中，键入 **SimpleWPFApp**。
+5. 选择“ProgressBar”控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 progressBar1。 然后将“最大值”属性的值从“100”更改为“10000”。
 
-6.  选择要用于保存项目的文件夹。 在“位置”文本框中，键入文件夹的名称。
-
-7.  选择 **“确定”**。
-
-     “适用于 Visual Studio 的 WPF 设计器”将打开，并显示项目的主窗口。
-
-8.  如果当前未打开工具箱，请将其打开。 选择“视图”菜单，然后选择“工具箱”。
-
-9. 在“所有 WPF 控件”部分，将一个“Button”、“CheckBox”和“ProgressBar”控件拖动到设计图面的主窗口中。
-
-10. 选择“Button”控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 button1。 然后将“内容”属性的值从 Button 更改为 Start。
-
-11. 选择“ProgressBar”控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 progressBar1。 然后将“最大值”属性的值从“100”更改为“10000”。
-
-12. 选择“Checkbox”控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 checkBox1，然后清除“IsEnabled”属性。
+6. 选择“Checkbox”控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 checkBox1，然后清除“IsEnabled”属性。
 
      ![简单 WPF 应用程序](../test/media/codedui_wpfapp.png)
 
-13. 双击按钮控件，以添加单击事件处理程序。
+7. 双击按钮控件，以添加单击事件处理程序。
 
      将在代码编辑器中显示 MainWindow.xmal.cs，并且游标位于新的 button1_Click 方法中。
 
-14. 在 MainWindow 类的顶部，添加一个委托。 该委托将用于进度栏。 若要添加委托，请添加以下代码：
+8. 在 MainWindow 类的顶部，添加一个委托。 该委托将用于进度栏。 若要添加委托，请添加以下代码：
 
     ```csharp
     public partial class MainWindow : Window
@@ -70,7 +56,7 @@ ms.locfileid: "55955058"
         }
     ```
 
-15. 在 button1_Click 方法中，添加以下代码：
+9. 在 button1_Click 方法中，添加以下代码：
 
     ```csharp
     private void button1_Click(object sender, RoutedEventArgs e)
@@ -95,7 +81,7 @@ ms.locfileid: "55955058"
     }
     ```
 
-16. 保存该文件。
+10. 保存该文件。
 
 ### <a name="run-the-wpf-app"></a>运行 WPF 应用
 
@@ -120,22 +106,14 @@ ms.locfileid: "55955058"
 
 ## <a name="create-a-coded-ui-test-for-simplewpfapp"></a>为 SimpleWPFApp 创建编码的 UI 测试
 
-1. 在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新项目”。
+1. 在“解决方案资源管理器”中，右键单击解决方案，然后依次选择“添加” > “新建项目”。
 
-     此时，将显示 **“添加新项目”** 对话框。
-
-1. 在“已安装”窗格中，展开 **Visual C#**，然后选择“测试”。
-
-1. 在中间窗格中，选择“编码的 UI 测试项目”模板。
+2. 搜索并选择“编码的 UI 测试项目”项目模板，并继续执行这些步骤，直到完成项目的创建。
 
    > [!NOTE]
    > 如未看到“编码的 UI 测试项目”模板，则需要安装[编码的 UI 测试组件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
 
-1. 选择 **“确定”**。
-
-     即可将名为 CodedUITestProject1 的新编码的 UI 测试项目添加到你的解决方案中。
-
-     此时将显示“为编码的 UI 测试生成代码”对话框。
+     新的编码的 UI 测试项目（名为 CodedUITestProject1）将添加到解决方案中，并且系统随即显示“为编码的 UI 测试生成代码”对话框。
 
 1. 选择“录制操作、编辑 UI 映射或添加断言”选项，然后选择“确定”。
 

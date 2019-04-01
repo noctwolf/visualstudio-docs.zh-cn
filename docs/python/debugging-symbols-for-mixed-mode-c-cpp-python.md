@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66320e95664b86e56fc3c328c36360e4df4352b9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 472cd590627a84ea0a11b9de8b533bba3a88a253
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869358"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355430"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>安装用于 Python 解释器的调试符号
 
 为了提供完整的调试体验，Visual Studio 中的 [Python 混合模式调试器](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)需要 Python 解释器（正在用于分析大量内部数据结构）的调试符号。 例如，对于 python27.dll，相应的符号文件是 python27.pdb；对于 python36.dll，符号文件是 python36.pdb。 解释器的每个版本都提供了各种模块的符号文件。
 
-对于 Visual Studio 2017，Python 3 和 Anaconda 3 解释器会自动安装其各自的符号，Visual Studio 会自动找到这些符号。 对于 Visual Studio 2015 及更早版本，或使用其他解释器时，需要单独下载符号，然后通过“调试” > “符号”选项卡中的“工具” > “选项”对话框，将 Visual Studio 指向它们。以下各节将详细介绍这些步骤。
+对于 Visual Studio 2017 及更高版本，Python 3 和 Anaconda 3 解释器会自动安装各自的符号，Visual Studio 会自动找到这些符号。 对于 Visual Studio 2015 及更早版本，或使用其他解释器时，需要单独下载符号，然后通过“调试” > “符号”选项卡中的“工具” > “选项”对话框，将 Visual Studio 指向它们。以下各节将详细介绍这些步骤。
 
 Visual Studio 可能会在需要符号的时候（通常是在启动混合模式的调试会话时）提示你。 在这种情况下，将显示一个对话框，其中包含两个选项：
 
