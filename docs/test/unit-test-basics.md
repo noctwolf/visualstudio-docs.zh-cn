@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc001765beb01c7767ec9143cecf8462793dcaa8
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796824"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416365"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -38,7 +38,7 @@ ms.locfileid: "56796824"
 
 ## <a name="the-mybank-solution-example"></a>MyBank 解决方案示例
 
-在本主题中，我们使用称为 `MyBank` 的虚构应用程序的开发作为示例。 无需使用实际代码按照本主题中的说明操作。 测试方法用 C# 编写，并通过用于托管代码的 Microsoft 单元测试框架进行呈现。 但是，这些概念很容易转移到其他语言和框架。
+在本文中，我们使用称为 `MyBank` 的虚构应用程序的开发作为示例。 无需使用实际代码按照本主题中的说明操作。 测试方法用 C# 编写，并通过用于托管代码的 Microsoft 单元测试框架进行呈现。 但是，这些概念很容易转移到其他语言和框架。
 
 ![MyBank 解决方案](../test/media/ute_mybanksolution.png)
 
@@ -102,14 +102,26 @@ public void Withdraw(double amount)
 
 **若要向解决方案中添加单元测试项目：**
 
-1. 在“文件”菜单上，选择“新建”，然后选择“项目”（快捷键：Ctrl+Shift+N）。
+1. 在“解决方案资源管理器”中，右键单击解决方案，然后依次选择“添加” > “新建项目”。
 
-2. 在“新建项目”对话框中，展开“已安装”节点，选择你想要用于测试项目的语言，然后选择“测试”。
+::: moniker range="vs-2017"
+
+2. 在“新建项目”对话框中，展开“已安装”节点，选择要用于测试项目的语言，然后选择“测试”。
 
 3. 若要使用 Microsoft 单元测试框架之一，请从项目模板的列表中选择“单元测试项目”  。 否则，请选择你想要使用的单元测试框架的项目模板。 若要测试我们的示例中的 `Accounts` 项目，你需要将该项目命名为 `AccountsTests`。
 
-   > [!WARNING]
+   > [!NOTE]
    > 并非所有第三方和开放源代码单元测试框架都提供 Visual Studio 项目模板。 有关创建项目的信息，请参阅框架文档。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. 使用项目模板搜索框查找要使用的测试框架的单元测试项目模板。
+
+3. 在下一页上，为项目命名。 若要测试示例中的 `Accounts` 项目，则需要将该项目命名为 `AccountsTests`。
+
+::: moniker-end
 
 4. 在你的单元测试项目中，将引用添加到所测试项目的代码中，在我们的示例中应添加到帐户项目中。
 
