@@ -10,26 +10,26 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf40216393e32602139e62378f6874ff362d5ee0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952146"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355378"
 ---
 # <a name="how-to-update-existing-templates"></a>如何：更新现有模板
 
-创建模板并将文件压缩为一个 .zip 文件后，可能想要修改该模板。 可以通过以下两种方式完成此操作，即手动更改模板中的文件，或者从基于该模板的项目中导出新模板。
+创建模板并将文件压缩为一个 .zip 文件后，可能想要修改该模板。 为此，可手动更改模板中的文件，也可从基于该模板的项目中导出新模板。
 
-## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>使用“导出模板向导”更新现有项目模板
+## <a name="use-the-export-template-wizard"></a>使用“导出模板向导”
 
 Visual Studio 提供了“导出模板向导”，该向导可用于更新现有模板：
 
-1. 通过选择“文件” > “新建” > “项目”来打开“新建项目”对话框。
+1. 从菜单栏中选择“文件” > “新建” > ’“项目”。
 
-1. 选择要更新的模板，输入项目的名称和位置，然后选择“确定”。
+1. 选择要更新的模板，然后继续完成新项目的创建步骤。
 
-1. 修改 Visual Studio 中的项目。
+1. 修改 Visual Studio 中的项目。 例如，更改输出类型或将新文件添加到项目中。
 
 1. 在“项目”菜单上，选择“导出模板”。
 
@@ -37,7 +37,7 @@ Visual Studio 提供了“导出模板向导”，该向导可用于更新现有
 
 1. 按照向导中的提示将模板以 .zip 文件导出。
 
-1. （可选）要将模板添加到“新建项目”对话框，请将 .zip 文件放在以下目录中：%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates。 如果未在“导出模板向导”中选择“自动将模板导入 Visual Studio”选项，则需执行此步骤。
+1. （可选）请将 .zip 文件放在以下目录中以供选择：%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates。 如果未在“导出模板向导”中选择“自动将模板导入 Visual Studio”选项，则需执行此步骤。
 
 1. 删除旧的模板 .zip 文件。
 

@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6cf4e15ec464b1d438245cd7bfe254d9464ad2a6
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57987026"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354903"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>快速入门：打开并运行文件夹中的 Python 代码
 
@@ -27,7 +27,7 @@ ms.locfileid: "57987026"
 
 1. 在本演练中，可以将任何文件夹与你喜欢的 Python 代码搭配使用。 若要按照如下所示的示例操作，请在相应文件夹中使用命令 `git clone https://github.com/gregmalcolm/python_koans` 将 gregmalcolm/python_koans GitHub 存储库克隆到你的计算机。
 
-1. 启动 Visual Studio 2019，并在开始屏幕上选择“开始”栏底部的“打开”。 或者，如果已在运行 Visual Studio，请改为选择“文件” > “打开” > “文件夹”命令。
+1. 在“启动”窗口中启动 Visual Studio 2019，然后在“开始”栏底部选择“打开”。 或者，如果已在运行 Visual Studio，请改为选择“文件” > “打开” > “文件夹”命令。
 
     ![Visual Studio 启动屏幕](media/quickstart-open-folder/01-open-local-folder.png)
 

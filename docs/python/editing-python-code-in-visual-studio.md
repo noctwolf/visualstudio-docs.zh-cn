@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0c7091a55487f83c88323d68ae8075630d39d471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: aec55c4eb6bfd5aacd8368db7d7fcfdb6574b982
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155519"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355547"
 ---
 # <a name="edit-python-code"></a>编辑 Python 代码
 
@@ -31,9 +31,9 @@ ms.locfileid: "58155519"
 
 IntelliSense 可提供[完成](#completions)、[签名帮助](#signature-help)、[快速信息](#quick-info)和[代码着色](#code-coloring)等功能。 Visual Studio 2017 版本 15.7 及更高版本还支持[类型提示](#type-hints)。
 
-为了提高性能，**Visual Studio 2017 版本 15.5** 和更早版本中的 IntelliSense 将取决于为项目中的每个 Python 环境生成的完成数据库。 添加、删除或更新包后可能需要刷新数据库。 数据库状态将显示在“IntelliSense”选项卡上的“Python 环境”窗口（解决方案资源管理器的同级）中（请参阅[环境窗口引用](python-environments-window-tab-reference.md#intellisense-tab)）。
+为了提高性能，Visual Studio 2017 15.5 及更早版本中的 IntelliSense 将依赖于为项目中的每个 Python 环境生成的完成数据库。 添加、删除或更新包后可能需要刷新数据库。 数据库状态将显示在“IntelliSense”选项卡上的“Python 环境”窗口（解决方案资源管理器的同级）中（请参阅[环境窗口引用](python-environments-window-tab-reference.md#intellisense-tab)）。
 
-**Visual Studio 2017 版本 15.6**和更高版本使用不同的方法提供不依赖于数据库的 IntelliSense 完成。
+Visual Studio 2017 版本 15.6 及更高版本使用另外一种方法提供不依赖于数据库的 IntelliSense 完成。
 
 ### <a name="completions"></a>完成
 

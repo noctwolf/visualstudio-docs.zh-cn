@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4868da71193519ceeb236349b8953a14189abaa7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983502"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58354734"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>欢迎使用 Visual Studio IDE | Python
 
@@ -44,7 +44,7 @@ Visual Studio“集成开发环境”是面向 Python （和其他语言）的�
 
 Visual Studio 适用于 Windows 和 Mac；但仅对用于 Windows 的 Visual Studio 提供 Python 支持。
 
-Windows 上有三个版本的 Visual Studio 2017：社区版、专业版和企业版。 请参阅[比较 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)，了解各个版本支持哪些功能。
+Windows 上有三个版本的 Visual Studio：社区版、专业版和企业版。 请参阅[比较 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)，了解各个版本支持哪些功能。
 
 ## <a name="popular-productivity-features"></a>高效性方面的常用功能
 

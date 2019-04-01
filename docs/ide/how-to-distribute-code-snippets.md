@@ -1,6 +1,6 @@
 ---
-title: 如何：分发代码片段
-ms.date: 11/04/2016
+title: 将代码片段作为扩展分发
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
@@ -12,24 +12,28 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dde020192e4b301083c69963720f6222639f7b1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323048"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355417"
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：分发代码片段
 
-可以向朋友提供代码片段，然后让他们使用代码片段管理器在自己的计算机上安装代码片段。 但是，如果你有若干代码片段要分发或者希望进行范围更广泛的分发，则可以将代码片段文件包含到 Visual Studio 扩展中。 然后，Visual Studio 用户可安装扩展。
+可以向朋友提供代码片段，然后让他们使用代码片段管理器在自己的计算机上安装代码片段。 但是，如果你有若干代码片段要分发或者希望进行范围更广泛的分发，则可以将代码片段文件包含到 Visual Studio 扩展中。 然后，Visual Studio 用户可安装扩展，以获得这些片段。
 
-要创建 Visual Studio 扩展，你必须安装 Visual Studio SDK。 可在 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页面查找与 Visual Studio 安装匹配的 VSSDK 版本。
+## <a name="prerequisites"></a>系统必备
+
+安装“Visual Studio 扩展开发”工作负载，以访问“VSIX 项目”项目模板。
+
+![“Visual Studio 扩展开发”工作负载](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>设置扩展
 
-在此过程中，将使用相同的 Hello World 代码片段，该代码片段创建自[演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)。 我们提供 .snippet 文本，因此无需返回该演练并获取相关代码片段。
+在此过程中，将使用相同的 Hello World 代码片段，该代码片段创建自[演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)。 本文提供了片段 XML，因此无需返回创建片段。
 
-1. 创建名为 **TestSnippet** 的新 VSIX 项目。 （“文件” > “新建” > “项目” > “Visual C#”（或“Visual Basic”） > “扩展性”。）
+1. 根据“空 VSIX 项目”模板创建一个新项目，并将该项目命名为 TestSnippet。
 
 2. 在 **TestSnippet** 项目中，添加一个新的 XML 文件，并将其命名为 *VBCodeSnippet.snippet*。 将内容替换为以下 XML：
 
@@ -111,7 +115,9 @@ ms.locfileid: "57323048"
 
 4. 测试代码片段。 在实验实例中，打开 Visual Basic 项目，并打开一个代码文件。 将光标置于代码中的某处，右键单击，然后在上下文菜单中选择“插入片段”。
 
-5. 将看到 HelloWorldVB 显示为一个文件夹。 双击该选项。 应会看到弹出窗口插入代码段：HelloWorldVB >，其包含“HelloWorldVB”下拉列表。 单击 HelloWorldVB 下拉列表。 将看到添加到文件的以下行：
+5. 将看到 HelloWorldVB 显示为一个文件夹。 双击该选项。 应会看到弹出窗口插入代码段：HelloWorldVB >，其包含“HelloWorldVB”下拉列表。 单击 HelloWorldVB 下拉列表。
+
+   代码文件中添加了以下行：
 
     ```vb
     Console.WriteLine("Hello, World!")

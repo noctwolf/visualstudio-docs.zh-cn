@@ -13,12 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731c2ca6993ed4d71238a290f782bdd079271039
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983827"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58475976"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新基于网络的 Visual Studio 安装
 
@@ -100,6 +102,9 @@ vs_enterprise.exe --layout <layoutDir> --verify
 > `--verify` 选项所需的某些重要元数据文件必须位于布局脱机缓存内部。 如果缺少这些元数据文件，则无法运行“--verify”，且安装程序会出错。 如果遇到此错误，请重新创建新脱机布局到其他文件夹（或到相同的脱机缓存文件夹）。 要执行此操作，请运行与创建初始脱机布局相同的布局命令。 例如 `Vs_enterprise.exe --layout <layoutDir>`。
 
 由于 Microsoft 定期为 Visual Studio 提供更新，因此新创建的布局与初始布局的版本可能不同。
+
+> [!NOTE]
+> 验证仅适用于 Visual Studio 的特定次要版本的最新版本。 发布新版本后，验证将不适用于同一次要版本的早期修补级别版本。
 
 ## <a name="how-to-fix-a-layout"></a>如何修复布局
 

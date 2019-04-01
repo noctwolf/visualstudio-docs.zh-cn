@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3878c3817ef7df66f4e8d31562598389fd07bc29
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b1a26f3bc5e47f0aac7385bb9b1197da0a72396d
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927017"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355404"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入门：从 Visual Studio 中的模板创建 Python 项目
 
-[在 Visual Studio 2017 中安装 Python 支持](installing-python-support-in-visual-studio.md)后，就可以使用各种模板轻松创建新的 Python 项目。 在此快速入门教程中，使用模板创建简单的 Flask 应用。 生成的项目与按照[快速入门 - 通过 Flask 创建 Web 应用](../ide/quickstart-python.md)手动创建的项目相似。
+[在 Visual Studio 中安装 Python 支持](installing-python-support-in-visual-studio.md)后，就可以使用各种模板轻松创建新的 Python 项目。 在此快速入门教程中，使用模板创建简单的 Flask 应用。 生成的项目与按照[快速入门 - 通过 Flask 创建 Web 应用](../ide/quickstart-python.md)手动创建的项目相似。
 
-1. 启动 Visual Studio 2017。
+1. 启动 Visual Studio。
 
 1. 在顶部菜单栏中，选择“文件” > “新建” > “项目”，然后在“新建项目”对话框中搜索“空白 Flask”，在中间列表中选择“空白 Flask Web 项目”模板，指定项目的名称，最后选择“确定”：
 

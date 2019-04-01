@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a48fe46b8f46c9ea3f6c14ebe44315eafa1c56d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 154ae0a55b3d85136209131e644cda9f696ef59a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070316"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355560"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 Express 应用
 
@@ -75,15 +75,13 @@ Visual Studio 管理项目中的单个应用程序的文件。 该项目包括�
 
 1. 打开 Visual Studio。
 
-1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目”。
-
 1. 创建新项目。
 
     ::: moniker range=">=vs-2019"
-    在“创建新项目”对话框中，在搜索框中键入“javascript”以筛选结果，然后选择“基本 Azure Node.js Express 4 应用程序”，再选择“下一步”。 然后，选择“创建”。
+    键入 Ctrl+Q 以打开搜索框，键入“Node.js”，然后选择“创建新的基本 Azure Node.js Express 4 应用程序”(JavaScript)。 在出现的对话框中，选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“基本 Azure Node.js Express 4 应用程序”，然后选择“确定”。
+    在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“基本 Azure Node.js Express 4 应用程序”，然后选择“确定”。
     ::: moniker-end
     如果未看到“基本 Azure Node.js Express 4 应用程序”项目模板，必须添加 Node.js 开发工作负载。 有关详细说明，请参阅[先决条件](#prerequisites)。
 

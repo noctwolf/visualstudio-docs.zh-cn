@@ -23,19 +23,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8302c517f28e32c154f688bd9f282070013f812
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957824"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355139"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目
 
 本文介绍了 Visual Studio 中的项目和解决方案的概念。 它还简要介绍了如何创建新项目以及“解决方案资源管理器”工具窗口。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中的项目和解决方案](/visualstudio/mac/projects-and-solutions)。
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中的项目和解决方案](/visualstudio/mac/projects-and-solutions)。
 
 ## <a name="projects"></a>项目
 
@@ -57,14 +57,14 @@ ms.locfileid: "55957824"
 
 Visual Studio 采用两种文件类型（.sln 和 .suo）来存储解决方案设置：
 
-|扩展名|name|说明​​|
+|扩展名|name|说明|
 |---------------|----------|-----------------|
 |.sln|Visual Studio 解决方案|将项目、项目项和解决方案项组织到解决方案中。|
 |.suo|解决方案用户选项|存储用户级别设置和自定义项，如断点。|
 
 ## <a name="create-new-projects"></a>创建新项目
 
-创建新项目最简单的方法是从特定类型的应用程序或网站的项目模板开始。 项目模板包含一组基本的预生成代码文件、配置文件、资产和设置。 依次选择“文件” > “新建” > “项目”后，“新建项目”对话框会显示这些模板。 有关详细信息，请参阅[创建解决方案和项目](../ide/creating-solutions-and-projects.md)。
+创建新项目最简单的方法是从特定类型的应用程序或网站的项目模板开始。 项目模板包含一组基本的预生成代码文件、配置文件、资产和设置。 可以在创建新项目的对话框中（“文件” > “新建” > “项目”）使用这些模板。 有关详细信息，请参阅[创建解决方案和项目](../ide/creating-solutions-and-projects.md)。
 
 还可以创建自定义项目和项模板。 有关详细信息，请参阅[创建项目和项模板](../ide/creating-project-and-item-templates.md)。
 

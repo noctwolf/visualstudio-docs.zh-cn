@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 603920aac4a7ba6d91996f3717927112ec8e5ec5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933855"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415949"
 ---
 # <a name="project-and-item-templates"></a>项目和项模板
 
@@ -23,11 +23,11 @@ ms.locfileid: "55933855"
 
 ## <a name="visual-studio-templates"></a>Visual Studio 模板
 
-一系列预定义的项目和项模板会随 Visual Studio 一并安装。 例如，“新建项目”对话框中显示的 Visual Basic 和 C#“Windows 窗体应用”和“类库”模板是项目模板。 项模板显示在“添加新项”对话框中，并包含代码文件、XML 文件、HTML 页和样式表等项。
+一系列预定义的项目和项模板会随 Visual Studio 一并安装。 创建新项目时，如 ASP.NET Web 应用程序模板和类库模板等这些模板可供选择。 代码文件、XML 文件、HTML 页和样式表等项模板显示在“添加新项”窗口中。
 
 这些模板为用户提供一个开始创建项目或扩展现有项目的起点。 项目模板提供特定项目类型所需的文件，包括标准程序集引用，并设置默认项目属性和编译器选项。 项模板的复杂程度不一，从具有某个文件扩展名的单个空文件到多个具有存根代码的源代码文件、设计器信息文件和嵌入资源等。
 
-可以使用“新建项目”和“添加新项”对话框中的已安装模板，创作自己的模板或下载并使用社区创建的模板。 有关详细信息，请参阅[如何：创建项目模板](../ide/how-to-create-project-templates.md)和[如何：创建项模板](../ide/how-to-create-item-templates.md)。
+可以使用已安装的模板、创作自定义模板，也可以下载和使用社区创建的模板。 有关详细信息，请参阅[如何：创建项目模板](../ide/how-to-create-project-templates.md)和[如何：创建项模板](../ide/how-to-create-item-templates.md)。
 
 ## <a name="contents-of-a-template"></a>模板的内容
 
@@ -35,13 +35,35 @@ ms.locfileid: "55933855"
 
 - 使用模板时要创建的文件。 这些文件包括源代码文件、嵌入资源、项目文件等。
 
-- 一个 .vstemplate 文件包含需要在“新建项目”和“添加新项”对话框中显示模板以及从模板创建项目或项的元数据。 有关 .vstemplate 文件的详细信息，请参阅[模板参数](../ide/template-parameters.md)。
+::: moniker range="vs-2017"
+
+- 一个 .vstemplate 文件，其中包含根据模板创建项目或项以及在“新建项目”和“添加新项”窗口中显示模板所需的元数据。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- 一个 .vstemplate 文件，其中包含根据模板创建项目或项以及在“创建新项目”页面或“添加新项”对话框中显示模板所需的元数据。
+
+::: moniker-end
+
+   有关 .vstemplate 文件的详细信息，请参阅[模板参数](../ide/template-parameters.md)。
 
 当这些文件压缩成 .zip 文件并放在正确的文件夹时，Visual Studio 将自动在以下位置显示这些文件：
 
-- “新建项目”对话框中显示项目模板。
+::: moniker range="vs-2017"
 
-- “添加新项”对话框中显示项模板。
+- 在“新建项目”窗口中显示项目模板。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- 在“创建新项目”页面中显示项目模板。
+
+::: moniker-end
+
+- 在“添加新项”窗口中显示项模板。
 
 有关模板文件夹的详细信息，请参阅[如何：查找和组织模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。
 

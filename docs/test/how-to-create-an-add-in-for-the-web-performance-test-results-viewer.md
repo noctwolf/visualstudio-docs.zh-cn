@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9434ac138f848442a32986d85ae816bb8d78e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946935"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416352"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>如何：为 Web 性能测试结果查看器创建 Visual Studio 外接程序
 
@@ -24,7 +24,7 @@ ms.locfileid: "55946935"
 
 -   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
-此外，还需要添加对位于 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies 文件夹中的 LoadTestPackage DLL 的引用。
+此外，还需要添加对位于 %ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\Enterprise\Common7\IDE\PrivateAssemblies 文件夹中的 LoadTestPackage DLL 的引用。
 
 若要扩展“Web 性能测试结果查看器”的 UI，必须创建 Visual Studio 加载项和用户控件。 下面的过程说明如何创建加载项、用户控件以及如何实现扩展“Web 性能测试结果查看器”的 UI 所需的类。
 
@@ -51,46 +51,38 @@ ms.locfileid: "55946935"
 
 1. 在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新项目”。
 
-    随即显示“新建项目”对话框。
-
-2. 在“已安装的模板”下，展开“其他项目类型”并选择“扩展性”。
-
-3. 在模板列表中，选择“Visual Studio 外接程序”。
-
-4. 在“名称”下，键入外接程序的名称。 例如“WebPerfTestResultsViewerAddin”。
-
-5. 选择 **“确定”**。
+2. 创建新的“Visual Studio 加载项”项目。
 
     此时 Visual Studio“外接程序向导”将启动。
 
-6. 选择“下一步”。
+3. 选择“下一步”。
 
-7. 在“选择编程语言”页上，选择要用于编写外接程序的编程语言。
+4. 在“选择编程语言”页上，选择要用于编写外接程序的编程语言。
 
    > [!NOTE]
    > 本主题使用 Visual C# 编写代码示例。
 
-8. 在“选择应用程序主机”页上，选择“Visual Studio”并清除“Visual Studio 宏”。
+5. 在“选择应用程序主机”页上，选择“Visual Studio”并清除“Visual Studio 宏”。
 
-9. 选择“下一步”。
+6. 选择“下一步”。
 
-10. 在“输入名称和说明”页中键入外接程序的名称和说明。
+7. 在“输入名称和说明”页中键入外接程序的名称和说明。
 
      创建了外接程序后，其名称和说明将显示在“外接程序管理器”的“可用外接程序”列表中。 向外接程序的说明中添加足够的详细信息，以便用户能够了解外接程序的功能、工作方式等信息。
 
-11. 选择“下一步”。
+8. 选择“下一步”。
 
-12. 在“选择外接程序选项”页上，选择“我希望我的外接程序在主机应用程序启动时加载”。
+9. 在“选择外接程序选项”页上，选择“我希望我的外接程序在主机应用程序启动时加载”。
 
-13. 清除其余复选框。
+10. 清除其余复选框。
 
-14. 在“选择‘帮助’中的‘关于’信息”页上，可指定是否将有关外接程序的信息显示在“关于”对话框中。 如果确实希望显示此信息，则选中“是的，我希望我的外接程序提供‘关于’对话框信息”复选框。
+11. 在“选择‘帮助’中的‘关于’信息”页上，可指定是否将有关外接程序的信息显示在“关于”对话框中。 如果确实希望显示此信息，则选中“是的，我希望我的外接程序提供‘关于’对话框信息”复选框。
 
      可以添加到 Visual Studio 的“关于”对话框中的信息包括版本号、支持详细信息和授权数据等信息。
 
-15. 选择“下一步”。
+12. 选择“下一步”。
 
-16. 所选的选项将显示在“摘要”页上以供检查。 如果满意，请选择“完成”以创建外接程序。 若要更改某些内容，请选择“返回”按钮。
+13. 所选的选项将显示在“摘要”页上以供检查。 如果满意，请选择“完成”以创建外接程序。 若要更改某些内容，请选择“返回”按钮。
 
      此时将创建新的解决方案和项目，并且新外接程序的 Connect.cs 文件将显示在代码编辑器中。
 
@@ -119,24 +111,11 @@ ms.locfileid: "55946935"
 
 1.  在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新项目”。
 
-     随即显示“新建项目”对话框。
+2. 创建新的“Windows 窗体控件库”项目。
 
-2.  在“已安装的模板”下，展开“Visual Basic”或“Visual C#”，然后选择“Windows”。
+3.  从“工具箱”中将 <xref:System.Windows.Forms.DataGridView> 拖动到 userControl1 的图面上。
 
-    > [!NOTE]
-    > 本主题使用 Visual C# 编写代码示例。
-
-3.  在模板列表中，选择“Windows 窗体控件库”。
-
-4.  在“名称”下，键入外接程序的名称。 例如，WebPerfTestResultsViewerControl。
-
-5.  选择 **“确定”**。
-
-     将在解决方案资源管理器中添加 Windows 窗体控件库项目 WebPerfTestResultsViewerControl，并在设计模式下显示 UserControl1.cs。
-
-6.  从“工具箱”中将 <xref:System.Windows.Forms.DataGridView> 拖动到 userControl1 的图面上。
-
-7.  单击 <xref:System.Windows.Forms.DataGridView> 的右上角的操作标记字形（![智能标记字形](../test/media/vs_winformsmttagglyph.gif)），并按照以下步骤操作：
+4. 单击 <xref:System.Windows.Forms.DataGridView> 的右上角的操作标记字形（![智能标记字形](../test/media/vs_winformsmttagglyph.gif)），并按照以下步骤操作：
 
     1.  选择“在父容器中停靠”。
 
@@ -154,13 +133,13 @@ ms.locfileid: "55946935"
 
     7.  选择“关闭”。
 
-8.  在“属性”窗口中，将 <xref:System.Windows.Forms.DataGridView> 的“(Name)”属性更改为“resultControlDataGridView”。
+5.  在“属性”窗口中，将 <xref:System.Windows.Forms.DataGridView> 的“(Name)”属性更改为“resultControlDataGridView”。
 
-9. 右键单击设计图面并选择“查看代码”。
+6. 右键单击设计图面并选择“查看代码”。
 
      UserControl1.cs 文件将显示在代码编辑器中。
 
-10. 将实例化的 <xref:System.Windows.Forms.UserControl> 类的名称从 UserContro1 更改为 resultControl：
+7. 将实例化的 <xref:System.Windows.Forms.UserControl> 类的名称从 UserContro1 更改为 resultControl：
 
     ```csharp
     namespace WebPerfTestResultsViewerControl
@@ -178,8 +157,6 @@ ms.locfileid: "55946935"
      稍后将向 Connect.cs 文件添加一些附加代码。
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>向 WebPerfTestResultsViewerAddin 添加代码
-
-### <a name="to-add-code-to-the-visual-studio-add-in-to-extend-the-web-test-results-viewer"></a>向 Visual Studio 外接程序添加代码来扩展 Web 测试结果查看器
 
 1.  在解决方案资源管理器中，右键单击 WebPerfTestResultsViewerAddin 项目中的“引用”节点，然后选择“添加引用”。
 
@@ -216,7 +193,7 @@ ms.locfileid: "55946935"
     using WebPerfTestResultsViewerControl;
     ```
 
-14. 向下滚动到 Connect.cs 文件的底端。 如果打开“Web 性能测试结果查看器”的多个实例，则需要为 <xref:System.Windows.Forms.UserControl> 添加 GUID 列表。 稍后你将添加使用此列表的代码。
+14. 向下滚动到 Connect.cs 文件的底端。 如果打开“Web 性能测试结果查看器”的多个实例，则需要为 <xref:System.Windows.Forms.UserControl> 添加 GUID 列表。 稍后您将添加使用此列表的代码。
 
      稍后在将编码的 OnDiscconection 方法中使用另一个字符串列表。
 
@@ -276,8 +253,6 @@ ms.locfileid: "55946935"
      现在 Visual Studio 外接程序的代码已完成，你需要向 WebPerfTestResultsViewerControl 项目中的 resultControl 添加 Update 方法。
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>向 WebPerfTestResultsViewerControl 添加代码
-
-### <a name="to-add-code-to-the-user-control"></a>向用户控件添加代码
 
 1.  在解决方案资源管理器中右键单击 WebPerfTestResultsViewerControl 项目节点，然后选择“属性”。
 

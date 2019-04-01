@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc450217dc6b0055a14cccd02c471329870a74ac
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: 9c1c05fa3d424d90bedbbd52ac66636dc1fc1dcb
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155523"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355508"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>教程：学习使用 Visual Studio 调试 Visual Basic 代码
 
@@ -36,25 +36,37 @@ ms.locfileid: "56155523"
 
 ## <a name="prerequisites"></a>系统必备
 
-* 须安装 Visual Studio 2017 且具有“.NET 桌面开发”工作负载。
+::: moniker range=">=vs-2019"
 
-    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 页免费安装。
+须安装 Visual Studio 2019 且具有“.NET 桌面开发”工作负载。
 
-    如果需要安装工作负载，但已有 Visual Studio，则单击“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接（选择“文件” > “新建” > “项目”）。 Visual Studio 安装程序启动。 选择“.NET 桌面开发”工作负载，然后选择“修改”。
+::: moniker-end
+::: moniker range="vs-2017"
+
+须安装 Visual Studio 2017 且具有“.NET 桌面开发”工作负载。
+
+::: moniker-end
+
+如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
+
+如果需要安装工作负载但已有 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 Visual Studio 安装程序启动。 选择“.NET 桌面开发”工作负载，然后选择“修改”。
 
 ## <a name="create-a-project"></a>创建项目
 
-1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
+1. 打开 Visual Studio。
 
-2. 在“Visual Basic”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用”。
+    ::: moniker range=">=vs-2019"
+    键入 Ctrl+Q 以打开搜索框，键入“visual basic”，选择“模板”，然后选择“创建新的控制台应用(.NET Framework)项目”。 在出现的对话框中，键入名称（如 get-started-debugging），然后选择“创建”。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual Basic”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”。 然后，键入名称（如“get-started-debugging”）并单击“确定”。
+    ::: moniker-end
 
-    如果没有看到“控制台应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“.NET 桌面开发”工作负载，然后选择“修改”。
-
-3. 键入名称（如“get-started-debugging”），然后单击“确定”。
+    如果没有看到“控制台应用(.NET Framework)”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“.NET 桌面开发”工作负载，然后选择“修改”。
 
     Visual Studio 随即创建项目。
 
-4. 在 Program.cs 中，将以下代码
+1. 在 Module1.vb 中，替换以下代码
 
     ```vb
     Module Module1

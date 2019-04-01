@@ -7,18 +7,18 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 88f6061d959167163c8502899813dc4c6db88f10
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222082"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416380"
 ---
 # <a name="how-to-create-item-templates"></a>如何：创建项模板
 
 本文介绍如何使用“导出模板向导”创建项模板。 如果模板将由多个文件组成，请参阅[如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)。
 
-## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>将用户项模板添加到“添加新项”对话框中
+## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>将项模板添加到“添加新项”对话框中
 
 1. 在 Visual Studio 中创建或打开一个项目。
 
@@ -46,7 +46,7 @@ ms.locfileid: "57222082"
 
    项模板显示在“添加新项”对话框中。 如果在“导出模板向导”中添加了说明，则说明会显示在对话框的右侧。
 
-## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>启用在通用 Windows 应用项目中使用的项模板
+## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>启用在“通用 Windows 应用”项目中使用的项模板
 
 向导会完成创建基本模板时的大部分工作，但在许多情况下，需要在导出模板后手动修改 .vstemplate 文件。 例如，如果希望该项显示在通用 Windows 应用项目的“添加新项”对话框中，则需执行一些其他步骤。
 
@@ -68,7 +68,7 @@ ms.locfileid: "57222082"
 
 现在，可从“添加新项”对话框将基于此模板的项添加到通用 Windows 项目。
 
-## <a name="to-enable-templates-for-specific-project-subtypes"></a>启用特定项目子类型的模板
+## <a name="enable-templates-for-specific-project-subtypes"></a>启用特定项目子类型的模板
 
 可指定应仅对某些项目子类型（如 Windows、Office、数据库或 Web）显示模板。
 
@@ -103,7 +103,7 @@ ms.locfileid: "57222082"
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>在不使用“导出模板”向导的情况下手动创建项模板
+## <a name="manually-create-an-item-template"></a>手动创建项模板
 
 某些情况下，可能希望从头开始手动创建项模板。
 

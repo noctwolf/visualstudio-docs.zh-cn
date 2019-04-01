@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c92ae058caa140f036ac8828899620bcc8d426ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943033"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355625"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>演练：带有“使用时生成”功能的测试先行开发
 
@@ -34,15 +34,19 @@ ms.locfileid: "55943033"
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>创建 Windows 类库项目和测试项目
 
-1. 在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中新建一个“Windows 类库”项目。 将其命名为 `GFUDemo_VB` 或 `GFUDemo_CS`，具体取决于所使用的语言。
+1. 在 C# 或 Visual Basic 中创建新的“Windows 类库”项目。 将其命名为 `GFUDemo_VB` 或 `GFUDemo_CS`，具体取决于所使用的语言。
 
-2. 在“解决方案资源管理器”中，右键单击顶部的解决方案图标，选择“添加”，然后选择“新建项目”。 在“新建项目”对话框的左窗格中，选择“测试”。
+2. 在“解决方案资源管理器”中，右键单击顶部的解决方案图标，选择“添加” > “新建项目”。
 
-3. 在中间窗格中，选择“单元测试项目”并接受 `UnitTestProject1` 的默认名称。 下图显示了出现在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]中的对话框。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，对话框看起来与此类似。
+3. 创建新的“单元测试项目(.NET Framework)”项目。
 
-    ![“新建测试项目”对话框](../ide/media/newproject_test.png)
+   ::: moniker range="vs-2017"
 
-4. 选择“确定”，关闭“新建项目”对话框。
+   下图显示了 C# 模板的“新建项目”对话框。
+
+   ![单元测试项目模板](../ide/media/newproject_test.png)
+
+   ::: moniker-end
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>向类库项目添加引用
 

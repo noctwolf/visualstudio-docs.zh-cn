@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914014"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416316"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：创建诊断数据适配器
 
@@ -32,7 +32,7 @@ ms.locfileid: "55914014"
 
 下面是创建诊断数据适配器时可以使用的关键事件的部分列表。 有关诊断数据适配器事件的完整列表，请参见 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 抽象类。
 
-|事件|说明​​|
+|事件|说明|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|开始测试运行|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|结束测试运行|
@@ -42,27 +42,15 @@ ms.locfileid: "55914014"
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestStepEnd>|结束测试中的每个测试步骤|
 
 > [!NOTE]
-> 完成手动测试时，不再将数据集合事件发送到诊断数据适配器。 测试重新运行时，将具有新的测试用例标识符。 如果用户在测试期间重置测试（这会引发 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> 事件）或更改测试步骤结果，将不会向诊断数据适配器发送任何数据集合事件，但测试用例标识符保持不变。 若要确定是否重置了测试用例，必须跟踪诊断数据适配器中的测试用例标识符。
+> 完成手动测试时，不再将数据集合事件发送到诊断数据适配器。 测试重新运行时，将具有新的测试用例标识符。 如果用户在测试期间重置测试（这会引发 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> 事件）或更改测试步骤结果，将不会向诊断数据适配器发送任何数据收集事件，但测试用例标识符保持不变。 若要确定是否重置了测试用例，必须跟踪诊断数据适配器中的测试用例标识符。
 
 使用下面的过程可创建诊断数据适配器，以收集基于在创建测试设置时所配置的信息的数据文件。
 
 有关诊断数据适配器项目（包括自定义配置编辑器）的完整示例，请参阅[用于创建诊断数据适配器的示例项目](../test/quickstart-create-a-load-test-project.md)。
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>创建并安装诊断数据适配器
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>创建并安装诊断数据适配器
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>创建并安装诊断数据适配器
-
-1. 创建一个新的类库。
-
-   1.  在“文件”菜单上，选择“新建”，然后指向“新建项目”。
-
-   2.  从“项目类型”中选择要使用的语言。
-
-   3.  从“Visual Studio 已安装的模板”中选择“类库”。
-
-   4.  为诊断数据适配器键入名称。
-
-   5.  选择 **“确定”**。
+1. 创建新的“类库”项目。
 
 2. 添加程序集“Microsoft.VisualStudio.QualityTools.ExecutionCommon”。
 
@@ -273,7 +261,7 @@ ms.locfileid: "55914014"
 
 17. 使用选择了你的诊断数据适配器的测试设置运行测试。
 
-    你指定的数据文件将被附加到测试结果中。
+    您指定的数据文件将被附加到测试结果中。
 
 ## <a name="see-also"></a>请参阅
 
