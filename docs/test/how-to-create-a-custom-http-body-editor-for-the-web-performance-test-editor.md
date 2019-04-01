@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed23869b999f3ced51377dd8d648280fcce7ee7e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8eef7dd68ba29f4a0100dfe5207c0b6179a76410
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069887"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415065"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：为 Web 性能测试编辑器创建自定义 HTTP 正文编辑器
 
@@ -31,49 +31,35 @@ ms.locfileid: "58069887"
 
 ## <a name="create-a-windows-control-library-project"></a>创建 Windows 控件库项目
 
-1. 在 Visual Studio 中的“文件”菜单上，选择“新建” > “项目”。
+1. 在 Visual Studio 中，创建新的“Windows 窗体控件库”项目。 将项目命名为 MessageEditors。
 
-    随即显示“新建项目”对话框。
+   项目将添加到新解决方案中，设计器中将显示一个名为 UserControl1.cs 的 <xref:System.Windows.Forms.UserControl>。
 
-2. 在“已安装的模板”下，根据编程喜好选择“Visual Basic”或“Visual C#”，然后选择“Windows”。
+1. 从“工具箱”的“公共控件”类别下，将 <xref:System.Windows.Forms.RichTextBox> 拖动到 UserControl1 的曲面上。
 
-   > [!NOTE]
-   > 此示例使用 Visual C#。
+1. 选择 <xref:System.Windows.Forms.RichTextBox> 控件右上角的操作标记标志符号（![智能标记字形](../test/media/vs_winformsmttagglyph.gif)），然后选择“在父容器中停靠”。
 
-3. 在模板列表中，选择“Windows 窗体控件库”。
+1. 在解决方案资源管理器中，右键单击“Windows 窗体库”项目，然后选择“属性”。
 
-4. 在“名称”文本框中，键入名称（例如 `MessageEditors`），并选择“确定”。
+1. 在“属性”中，选择“应用程序”选项卡。
 
-   > [!NOTE]
-   > 此示例使用 MessageEditors。
+1. 在“目标框架”下拉列表中，选择“.NET Framework 4”。
 
-    项目将添加到新解决方案中，设计器中将显示一个名为 UserControl1.cs 的 <xref:System.Windows.Forms.UserControl>。
+1. 随即显示“目标框架更改”对话框。
 
-5. 从“工具箱”的“公共控件”类别下，将 <xref:System.Windows.Forms.RichTextBox> 拖动到 UserControl1 的曲面上。
+1. 选择 **“是”**。
 
-6. 选择 <xref:System.Windows.Forms.RichTextBox> 控件右上角的操作标记标志符号（![智能标记字形](../test/media/vs_winformsmttagglyph.gif)），然后选择“在父容器中停靠”。
+1. 在解决方案资源管理器中，右键单击“引用”节点并选择“添加引用”。
 
-7. 在解决方案资源管理器中，右键单击“Windows 窗体库”项目，然后选择“属性”。
+1. 将显示“添加引用”对话框。
 
-8. 在“属性”中，选择“应用程序”选项卡。
+1. 选择“.NET”选项卡，向下滚动并选择“Microsoft.VisualStudio.QualityTools.WebTestFramework”，然后选择“确定”。
 
-9. 在“目标框架”下拉列表中，选择“.NET Framework 4”。
+1. 如果视图设计器仍未打开，请在解决方案资源管理器中右键单击“UserControl1.cs”，然后选择“视图设计器”。
 
-10. 随即显示“目标框架更改”对话框。
+1. 在设计曲面上，右键单击并选择“查看代码”。
 
-11. 选择 **“是”**。
-
-12. 在解决方案资源管理器中，右键单击“引用”节点并选择“添加引用”。
-
-13. 将显示“添加引用”对话框。
-
-14. 选择“.NET”选项卡，向下滚动并选择“Microsoft.VisualStudio.QualityTools.WebTestFramework”，然后选择“确定”。
-
-15. 如果视图设计器仍未打开，请在解决方案资源管理器中右键单击“UserControl1.cs”，然后选择“视图设计器”。
-
-16. 在设计曲面上，右键单击并选择“查看代码”。
-
-17. （可选）将类和构造函数的名称从 UserControl1 更改为有意义的名称，例如 MessageEditorControl：
+1. （可选）将类和构造函数的名称从 UserControl1 更改为有意义的名称，例如 MessageEditorControl：
 
     > [!NOTE]
     > 此示例使用 MessageEditorControl。
@@ -91,7 +77,7 @@ ms.locfileid: "58069887"
     }
     ```
 
-18. 添加以下属性，以允许在 RichTextBox1 中获取和设置文本。 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 接口将使用 EditString，<xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 将使用 EditByteArray：
+1. 添加以下属性，以允许在 RichTextBox1 中获取和设置文本。 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 接口将使用 EditString，<xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 将使用 EditByteArray：
 
     ```csharp
     public String EditString
@@ -285,7 +271,7 @@ messageEditorControl 实例承载在 <xref:Microsoft.VisualStudio.TestTools.WebT
    > [!NOTE]
    > 关闭 Visual Studio，确保在尝试复制 .dll 文件前不会锁定它。
 
-3. 将生成的 .dll 文件（如，MessageEditors.dll）从项目 bin\debug 文件夹复制到 %ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins。
+3. 将生成的 .dll 文件（如 MessageEditors.dll）从项目的 bin\debug 文件夹复制到 %ProgramFiles%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins。
 
 4. 打开 Visual Studio。
 

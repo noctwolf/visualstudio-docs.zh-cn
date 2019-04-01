@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 055e7d106611d23254f317bdbe29a1ac1e3d9ec9
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
+ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953857"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476002"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教程：在同一个调试会话中调试 C# 和 C++
 
@@ -52,7 +52,18 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 
 **创建 DLL 项目的文件：**
 
-1. 在 Visual Studio 中，选择“文件” > “新建” > “项目”。
+1. 打开 Visual Studio 并创建一个项目。
+
+    ::: moniker range=">=vs-2019"
+    键入 Ctrl+Q 以打开搜索框，键入“空项目”，选择“模板”，然后选择“创建新的空项目项目”(C++)。 在出现的对话框中，选择“创建”。 然后，键入名称（如“Mixed_Mode_Debugging”）并单击“创建”。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual C++”下，选择“其他”，然后在中间窗格中选择“空项目”。 然后，键入名称（如“Mixed_Mode_Debugging”）并单击“确定”。
+    ::: moniker-end
+
+    如果没有看到“空项目”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 Visual Studio 安装程序启动。 选择“使用 C++ 的桌面开发”工作负载，然后选择“修改”按钮。
+
+    Visual Studio 随即创建项目。
 
 1. 在“新建项目”对话框的“Visual C++”下选择“其他”，然后选择中间窗格中的“空项目”。
 
@@ -71,6 +82,7 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
     ```cpp
     #include "Mixed_Mode.h"
     ```
+
 1. 在“解决方案资源管理器”中选择“头文件”，然后选择“项目” > “添加新项”。 或者，右键单击“头文件”，然后选择“添加” > “新项”。
 
 1. 在“新项”对话框中，选择“头文件(.h)”。 在“名称”字段中键入“Mixed_Mode.h”，然后选择“添加”。
@@ -117,18 +129,23 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 
 ## <a name="create-a-simple-managed-app-to-call-the-dll"></a>创建简单的托管应用以调用 DLL
 
-1. 在 Visual Studio 中，选择“文件” > “新建” > “项目”。
+1. 打开 Visual Studio 并创建一个新项目。
 
-   > [!NOTE]
-   > 尽管还可以将新的托管项目添加到现有的 C++ 解决方案中，但创建新解决方案支持更多调试场景。
+    ::: moniker range=">=vs-2019"
+    键入 Ctrl+Q 以打开搜索框，键入“控制台”，选择“模板”，然后选择“创建新的控制台应用(.NET Framework)项目”(C#)。 在出现的对话框中，选择“创建”。
 
-1. 在“新建项目”对话框中选择“Visual C#”，然后在中间窗格：
+    然后，键入名称（如“Mixed_Mode_Calling_App”）并单击“创建”。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual C#”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”或“控制台应用(.NET Core)”。
 
-   - 对于 .NET Framework 应用，则选择“控制台应用(.NET Framework)”。
+    然后，键入名称（如“Mixed_Mode_Calling_App”）并单击“确定”。
+    ::: moniker-end
 
-   - 对于 .NET Core 应用，则选择“控制台应用(.NET Core)”。
+    如果没有看到“控制台应用”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“.NET 桌面开发”工作负载，然后选择“修改”。
 
-1. 在“名称”字段中键入“Mixed_Mode_Calling_App”，然后选择“确定”。
+    > [!NOTE]
+    > 尽管还可以将新的托管项目添加到现有的 C++ 解决方案中，但创建新解决方案支持更多调试场景。
 
    Visual Studio 创建空项目并在“解决方案资源管理器”中显示该项目。
 

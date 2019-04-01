@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c910ab867be379264464650cef6bec00fc9d82f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933387"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355323"
 ---
 # <a name="work-with-multiple-user-accounts"></a>使用多个用户帐户
 
@@ -55,7 +55,7 @@ ms.locfileid: "55933387"
 
 Azure Active Directory (AAD) 支持 ASP.NET MVC web 应用中的最终用户单一登录或 Web API 服务中的 AD 身份验证。 域身份验证与单个用户帐户身份验证不同。 有权访问 Active Directory 域的用户可以使用其现有的 AAD 帐户连接到 web 应用程序。 Office 365 应用还可以使用域身份验证。
 
-为此，请创建一个 Web 应用程序（“文件” > “新建项目” > “C#” > ->“云” > ->“ASP.NET Web 应用程序”）。 在“新的 ASP.NET 项目”对话框中，选择“更改身份验证”。 身份验证向导随即显示，你能够选择要在你的应用程序中使用的身份验证类型。
+若要了解此操作，请创建新的 ASP.NET Web 应用程序项目。 在“新的 ASP.NET 项目”对话框中，选择“更改身份验证”。 身份验证向导随即显示，你能够选择要在你的应用程序中使用的身份验证类型。
 
 ![适用于 ASP.NET 的更改身份验证对话框](../ide/media/vs2015_change_authentication.png)
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8bba4541f27a64f553c985f50dbe535b82440cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc7148e9ba2ad9882f42d3c2acdb067329ec4ee5
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916825"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355229"
 ---
 # <a name="debug-python-and-c-together"></a>一起调试 Python 和 C++
 
@@ -57,13 +57,13 @@ Visual Studio 为 Python 和本机 C/C++ 提供集成的同步混合模式调试
 
     除“本机”代码类型外还可以选择其他代码类型。 例如，如果托管应用程序承载 CPython，后者又使用本机扩展模块，并且你想要调试所有三种类型，则可以一起勾选“Python”、“本机”和“托管”，以获得统一调试体验，其中包括合并调用堆栈以及在所有三个运行时之间进行单步执行。
 
-1. 首次在混合模式下开始调试时，可能会看到“需要 Python 符号”对话框（请参阅[混合模式调试的符号](debugging-symbols-for-mixed-mode-c-cpp-python.md)）。 你只需为任何给定的 Python 环境安装一次符号。 如果通过 Visual Studio 2017 安装程序安装 Python 支持，则符号会自动包含在内。
+1. 首次在混合模式下开始调试时，可能会看到“需要 Python 符号”对话框（请参阅[混合模式调试的符号](debugging-symbols-for-mixed-mode-c-cpp-python.md)）。 你只需为任何给定的 Python 环境安装一次符号。 如果通过 Visual Studio 安装程序（Visual Studio 2017 及更高版本）安装 Python 支持，则符号会自动包含在内。
 
 1. 为了能够在调试时使用标准 Python 自身的源代码，请访问 [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/)，下载适合你的版本的存档，并将其解压缩到文件夹。 无论系统何时发出提示，都需将 Visual Studio 指向该文件夹中的特定文件。
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>在 C/C++ 项目中启用混合模式调试
 
-Visual Studio 2017（版本 15.5 及更高版本）支持通过 C/C++ 项目进行混合模式调试（例如，python.org 中所述的[在其他应用程序中嵌入 Python](https://docs.python.org/3/extending/embedding.html)）。 要启用混合模式调试，请配置 C/C++ 项目以启动“Python/本机调试”：
+Visual Studio（2017 版本 15.5 及更高版本）支持通过 C/C++ 项目进行混合模式调试（例如，当[按照 python.org 中所述在其他应用程序中嵌入 Python](https://docs.python.org/3/extending/embedding.html) 时）。 要启用混合模式调试，请配置 C/C++ 项目以启动“Python/本机调试”：
 
 1. 右键单击解决方案资源管理器中的 C/C++ 项目，然后选择“属性”。
 1. 选择“调试”选项卡，从“要启动的调试器”中选择“Python/本机调试”，然后选择“确定”。

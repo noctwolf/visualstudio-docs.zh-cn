@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 12fcc2813b36968270e0eeba968a5572f904fc1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd436a6b7e38c8f76de5d113c326e194e4011155
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946934"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323196"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>测试云服务的性能
 ## <a name="overview"></a>概述
@@ -101,7 +101,7 @@ ms.locfileid: "55946934"
 2. 选择“Azure 计算”节点，并针对从 Visual Studio 发布时所选的要进行分析的云服务，选择相应 Azure 部署节点。
 3. 要查看实例的分析报告，请选择服务中的角色，打开特定实例的快捷菜单，并选择“查看分析报告”。
 
-    报告是一个 .vsp 文件，它现在已从 Azure 下载，且下载状态显示在 Azure 活动日志中。 下载完成后，分析报告会显示在名为 <Role name>*<Instance Number>*<identifier>.vsp 的 Visual Studio 编辑器选项卡中。 随即会显示报告的汇总数据。
+    报告是一个 .vsp 文件，它现在已从 Azure 下载，且下载状态显示在 Azure 活动日志中。 下载完成后，分析报告会显示在名为 <Role name\><Instance Number\><identifier\>.vsp 的 Visual Studio 编辑器选项卡中。 随即会显示报告的汇总数据。
 4. 若要显示报告的其他视图，请在“当前视图”列表中，选择所需视图类型。 有关详细信息，请参阅[分析工具报告视图](https://msdn.microsoft.com/library/azure/bb385755.aspx)。
 
 ## <a name="next-steps"></a>后续步骤

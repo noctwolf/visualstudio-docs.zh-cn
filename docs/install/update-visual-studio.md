@@ -2,7 +2,7 @@
 title: 更新 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步将 Visual Studio 更新到最新版本。
-ms.date: 03/09/2019
+ms.date: 03/21/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e58927f434b5ad5b8d8fe34c29d034cfc4dd57dc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 945250660e80353ea536986e5149f8814d1fe563
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983970"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323589"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>请将 Visual Studio 更新到最新版本
 
@@ -172,9 +172,9 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[更新 Visual Studio for Mac](/visualstudio/mac/update)。
 
-## <a name="update-visual-studio-2019"></a>更新 Visual Studio 2019
+下面介绍如何更新 Visual&nbsp;Studio&nbsp;2019&nbsp;预览版或 Visual&nbsp;Studio&nbsp;2019&nbsp;RC。
 
-下面介绍如何使用 Visual Studio 安装程序更新 Visual&nbsp;Studio&nbsp;2019&nbsp;Preview 或 Visual&nbsp;Studio&nbsp;2019&nbsp;RC。
+## <a name="use-the-visual-studio-installer"></a>使用 Visual Studio 安装程序
 
 1. 打开安装程序。
 
@@ -188,13 +188,37 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
      ![选择希望更新的 Visual Studio 2019 版本](media/vs2019-update-visual-studio-community-rc.png "Select the edition of Visual Studio 2019 that you want to update")
 
-1. 选择“更新”按钮来安装更新。
+1. 选择“更新”，以安装更新。
 
     ![选择“更新”按钮以安装更新](media/vs2019-choose-update-visual-studio-community-rc.png "Select the Update button to install the updates")
 
 1. 完成更新后，选择“启动”，启动 Visual Studio。
 
     ![选择“启动”按钮以启动 Visual Studio 2017](media/vs2019-choose-launch-visual-studio-community-rc.png "Select the Launch button to start Visual Studio")
+
+## <a name="use-the-ide"></a>使用 IDE
+
+1. 打开 Visual Studio。 
+ 
+    ![打开 Visual Studio 2019 RC](media/vs2019-visual-studio-rc.png "Open Visual Studio 2019 from Windows")
+
+1. 在“开始使用”下，选择任意选项以打开 IDE。
+
+    ![打开 Visual Studio 安装程序](media/vs2019-choose-option-from-get-started.png "Open the Visual Studio Installer")
+
+    Visual Studio 随即打开。 在 IDE 中，将显示“Visual Studio 2019 更新”消息。
+
+    ![IDE 中的“Visual Studio 2019 更新”消息](media/vs2019-update-visual-studio-ide-message.png "The 'Visual Studio 2019 update' message in the IDE")
+ 
+1. 在“Visual Studio 2019 更新”消息中，选择“查看详细信息”。
+
+   ![在 Visual Studio 2019 IDE 更新消息中选择“查看详细信息”按钮](media/vs2019-update-visual-studio-ide-view-details.png "Choose the View Details button in the Visual Studio 2019 update message")
+
+1. 在“已下载更新并准备安装”对话框中，选择“更新”。
+
+     ![在“已下载更新并准备安装”对话框中选择“更新”按钮](media/vs2019-update-visual-studio-community-rc-from-ide.png "Choose the Update button in the 'Update downloaded and ready to install' dialog box")
+
+   Visual Studio 将关闭然后重新打开。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 381f04b78e5cfc9ed61187e62e310a2d927eb0ce
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949429"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416131"
 ---
 # <a name="create-a-unit-test-project"></a>创建单元测试项目
 
@@ -23,11 +23,23 @@ ms.locfileid: "55949429"
 
 ## <a name="to-create-a-unit-test-project"></a>创建单元测试项目
 
-1. 在“文件”菜单上选择“新建”，再选择“项目”。 或按 Ctrl+Shift+N。
+1. 在“文件”菜单上，选择“新建” > “项目”，或按 Ctrl+Shift+N。
+
+::: moniker range="vs-2017"
 
 2. 在“新建项目”对话框中，展开“已安装”节点，选择要用于测试项目的语言，然后选择“测试”。
 
 3. 若要使用 Microsoft 单元测试框架之一，请从项目模板的列表中选择“单元测试项目”  。 否则，请选择你想要使用的单元测试框架的项目模板。 为项目命名，然后选择“确定”。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. 在“创建新项目”页上，在搜索框中键入“单元测试”。 选择“单元测试项目(.NET Framework)”项目模板，然后单击“下一步”。
+
+3. 在“配置新项目”页上，输入项目名称，然后单击“创建”。
+
+::: moniker-end
 
 4. 在单元测试项目中，添加对被测代码的引用。 要添加对相同解决方案中代码项目的引用，请执行以下操作：
 

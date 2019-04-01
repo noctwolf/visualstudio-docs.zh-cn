@@ -7,41 +7,36 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8c7a92820d52dbade817ead287541470cc2b2b1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925236"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415598"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>快速入门：通过测试资源管理器进行测试驱动开发
 
 我们建议你创建单元测试来帮助保持你的代码在众多递进式开发步骤中正确运行。 你可以使用几个框架来编写单元测试，包括第三方开发的一些框架。 某些测试框架专用于不同语言或平台中的测试。 “测试资源管理器”为其中任意框架中的单元测试提供了一个接口。 大多数常用框架都有适配器，你可以为其他框架编写自己的适配器。
 
- “测试资源管理器”将取代 Visual Studio 早期版本中的单元测试窗口。 其优点包括：
+“测试资源管理器”将取代 Visual Studio 早期版本中的单元测试窗口。 其优点包括：
 
--   使用一个接口运行 .NET 未托管的数据库和其他类型的测试。
+- 使用一个接口运行 .NET 未托管的数据库和其他类型的测试。
 
--   使用选定的单元测试框架，如 NUnit 或 MSTest 框架。
+- 使用选定的单元测试框架，如 NUnit 或 MSTest 框架。
 
--   在一个窗口中查看你需要的所有信息。
+- 在一个窗口中查看你需要的所有信息。
 
 ## <a name="use-test-explorer"></a>测试资源管理器
- ![显示“全部运行”按钮的单元测试资源管理器](../test/media/unittestexplorer-beta-.png)
+
+![显示“全部运行”按钮的测试资源管理器](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>使用测试资源管理器运行单元测试
 
-1. 使用你选择的测试框架创建单元测试。
+1. 使用你选择的测试框架创建单元测试。 例如，创建使用 MSTest 框架的测试：
 
-    例如，创建使用 MSTest 框架的测试：
+   1. 创建 C#、Visual Basic 或 C++ 的“单元测试项目”项目。
 
-   1.  创建测试项目。
-
-        在“新建项目”对话框中，展开“Visual Basic”、“Visual C#”或“Visual C++”，再选择“测试”。
-
-        选择 **“单元测试项目”**。
-
-   2.  将每个单元测试编写为一个方法。 为每个测试方法添加 `[TestMethod]` 特性为前缀。
+   2. 将每个单元测试编写为一个方法。 为每个测试方法添加 `[TestMethod]` 特性为前缀。
 
 2. 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
@@ -66,19 +61,17 @@ ms.locfileid: "55925236"
 > [!NOTE]
 > 如果未显示任何测试，请确保已安装适配器，将“测试资源管理器”与你使用的测试框架连接起来。 有关详细信息，请参阅[安装第三方单元测试框架](install-third-party-unit-test-frameworks.md)。
 
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>演练：使用单元测试开发方法
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>演练：使用单元测试开发方法
- 本演练演示如何使用 Microsoft 单元测试框架开发 C# 语言的受测试方法。 你可以将其轻松改写为其他语言，也可加以调整以使用其他测试框架，例如 NUnit。 有关详细信息，请参阅[安装第三方单元测试框架](install-third-party-unit-test-frameworks.md)。
+本演练演示如何使用 Microsoft 单元测试框架开发 C# 语言的受测试方法。 你可以将其轻松改写为其他语言，也可加以调整以使用其他测试框架，例如 NUnit。 有关详细信息，请参阅[安装第三方单元测试框架](install-third-party-unit-test-frameworks.md)。
 
 ### <a name="create-the-test-and-method"></a>创建测试和方法
 
-1. 创建 Visual C# 类库项目。 此项目将包含我们希望提供的代码。 在此示例中，该类名为 `MyMath`。
+1. 创建 C#“类库”项目。 此项目将包含我们希望提供的代码。 在此示例中，命名为 `MyMath`。
 
-2. 创建测试项目。
+2. 创建新的“单元测试项目”项目。
 
-   -   在“新建项目”对话框中，依次选择“Visual C#” > “测试”，然后选择“单元测试项目”。
-
-        ![新建代码和测试项目](../test/media/unittestexplorerwalk1.png)
+   ![新建代码和测试项目](../test/media/unittestexplorerwalk1.png)
 
 3. 编写基本测试方法。 根据特定输入验证获取的结果：
 

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a54909ad928cd923d7ab0d9df4cfcfdb400029
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928421"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268632"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：创建和编辑配置
 
@@ -46,17 +46,13 @@ ms.locfileid: "55928421"
 
  设置所需配置后，可以设置适用于这些配置的项目属性。
 
-### <a name="to-set-properties-based-on-configurations"></a>根据配置来设置属性
+### <a name="set-properties-based-on-configurations"></a>根据配置设置属性
 
--   在“解决方案资源管理器” 中，打开某项目的快捷菜单，然后选择“属性”。
+要根据配置设置属性，请在“解决方案资源管理器”中打开项目的快捷菜单，然后选择“属性”。 可以针对配置设置属性。 例如，针对发布配置，可以指定生成解决方案时优化代码，对于调试配置，可以指定包含 `DEBUG` 条件编译符号。
 
-     “属性页”窗口随即打开。
+有关属性页设置的详细信息，请参阅[管理项目和解决方案属性](../ide/managing-project-and-solution-properties.md)。
 
-     可以针对配置设置属性。 例如，针对发布配置，可以指定生成解决方案时优化代码，对于调试配置，可以指定包含 `DEBUG` 条件编译符号。 有关属性页设置的详细信息，请参阅[管理项目和解决方案属性](../ide/managing-project-and-solution-properties.md)。
-
-## <a name="create-and-modify-project-configurations"></a>创建和修改项目配置
-
-### <a name="to-create-a-project-configuration"></a>创建项目配置
+## <a name="create-a-project-configuration"></a>创建项目配置
 
 1.  打开“配置管理器”对话框。
 
@@ -72,7 +68,7 @@ ms.locfileid: "55928421"
 
 6.  若要同时创建解决方案级配置，勾选“创建新的解决方案配置”复选框。
 
-### <a name="to-rename-a-project-configuration"></a>重命名项目配置
+## <a name="rename-a-project-configuration"></a>重命名项目配置
 
 1.  打开“配置管理器”对话框。
 

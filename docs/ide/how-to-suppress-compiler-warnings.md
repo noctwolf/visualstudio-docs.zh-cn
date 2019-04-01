@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b228bbacb69449803847847932163a05f3cf5310
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323969"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323459"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：取消编译器警告
 
@@ -63,7 +63,7 @@ ms.locfileid: "57323969"
 
 1. 在菜单栏上，依次选择“项目” > “卸载项目”。
 
-1. 在“解决方案资源管理器”中，打开项目的右键菜单或快捷菜单，然后选择“编辑 <ProjectName>.vbproj”。
+1. 在“解决方案资源管理器”中，打开项目的右键单击菜单或快捷菜单，然后选择“编辑 \<ProjectName>.vbproj”。
 
     该 XML 项目文件将在代码编辑器中打开。
 

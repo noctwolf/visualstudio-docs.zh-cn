@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14a365a85a446737982a6ec608c5935fc17ee408
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5a15b845db2733b208a765caf1a1307abeb19a49
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955253"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355732"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教程：Visual Studio 中的 Django Web 框架入门
 
@@ -34,7 +34,7 @@ ms.locfileid: "55955253"
 
 ## <a name="prerequisites"></a>系统必备
 
-- Windows 上的 Visual Studio 2017 有以下选项：
+- Windows 版 Visual Studio 2017 及以上版本，且具有以下选项：
   - “Python 开发”工作负载（安装程序中的“工作负载”选项卡）。 有关说明，请参阅[在 Visual Studio 中安装 Python 支持](installing-python-support-in-visual-studio.md)。
   - “代码工具”下“单个组件”选项卡上的“适用于 Windows 的 Git”和“适用于 Visual Studio 的 GitHub 扩展”。
 
@@ -65,7 +65,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
     - **解决方案**：将此控件设置保留为默认“创建新解决方案”选项。
     - **解决方案名称**：设置为“LearningDjango”，适用于本教程中作为多个项目的容器的解决方案。
     - **创建解决方案的目录**：保留设置（默认值）。
-    - **新建 Git 存储库**：选择此选项（默认情况下会清除该选项），以便在 Visual Studio 创建解决方案时创建本地 Git 存储库。 如果未看到此选项，请运行 Visual Studio 2017 安装程序并在“代码工具”下的“单个组件”选项卡上添加“适用于 Windows 的 Git”和“适用于 Visual Studio 的 GitHub 扩展”。
+    - **新建 Git 存储库**：选择此选项（默认情况下会清除该选项），以便在 Visual Studio 创建解决方案时创建本地 Git 存储库。 如果未看到此选项，请运行 Visual Studio 安装程序并在“代码工具”下的“单个组件”选项卡上添加“适用于 Windows 的 Git”和“适用于 Visual Studio 的 GitHub 扩展”。
 
 1. 稍后 Visual Studio 会显示一个对话框，提示“此项目需要外部包”（如下所示）。 显示此对话框是因为该模板包含引用最新 Django 1.x 包的 requirements.txt 文件。 （选择“显示所需包”查看确切的依赖项。）
 

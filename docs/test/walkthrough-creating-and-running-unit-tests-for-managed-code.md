@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: b1b40fe963b6a48a6fa9848c4d9e205bae5503e9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d951c6171abd0e8cad42554c49a40cb42542fb62
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069653"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415533"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -43,6 +43,15 @@ ms.locfileid: "58069653"
 
    此时将出现“新建项目”对话框。
 
+3. 选择 C#“类库”项目模板。
+
+4. 将项目命名为“Bank”，然后单击“确定”。
+
+   将创建 Bank 项目并将其显示在“解决方案资源管理器”中，而且将在代码编辑器中打开 Class1.cs 文件。
+
+   > [!NOTE]
+   > 如果代码编辑器中未打开 Class1.cs，请在“解决方案资源管理器”中双击文件 Class1.cs 将其打开。
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -51,16 +60,16 @@ ms.locfileid: "58069653"
 
 2. 在“开始”窗口上，选择“创建新项目”。
 
-::: moniker-end
+3. 搜索并选择 C#“类库”项目模板，然后单击“下一步”。
 
-3. 选择 C# 类库项目模板。
-
-4. 将项目命名为“Bank”，然后单击“确定”或“创建”。
+4. 将项目命名为“Bank”，然后单击“创建”。
 
    将创建 Bank 项目并将其显示在“解决方案资源管理器”中，而且将在代码编辑器中打开 Class1.cs 文件。
 
    > [!NOTE]
    > 如果代码编辑器中未打开 Class1.cs，请在“解决方案资源管理器”中双击文件 Class1.cs 将其打开。
+
+::: moniker-end
 
 5. 从[用于创建单元测试的示例项目](../test/sample-project-for-creating-unit-tests.md)中复制源代码，并将 Class1.cs 的原始内容替换为复制的代码。
 
@@ -93,9 +102,9 @@ public void Debit(double amount)
 1. 在“文件”菜单上，选择“添加” > “新建项目”。
 
    > [!TIP]
-   > 还有其他几种方法可以将其他项目添加到现有解决方案中。 可以右键单击“解决方案资源管理器”中的解决方案，然后依次选择“添加” > “新建项目”。 或者，可以依次选择“文件” > “新建” > “项目”，然后在“新建项目”对话框中选择“添加到解决方案”选项：
-   >
-   > ![“新建项目”对话框中的“添加到解决方案”选项](media/add-to-solution.png)
+   > 也可以右键单击“解决方案资源管理器”中的解决方案，然后依次选择“添加” > “新建项目”。
+
+::: moniker range="vs-2017"
 
 2. 在“新建项目”对话框中，依次展开“已安装”、“Visual C#”，然后选择“测试”。
 
@@ -104,6 +113,20 @@ public void Debit(double amount)
 4. 在“名称”框中，输入 `BankTests`，然后选择“确定”。
 
    将“BankTests”项目添加到“Bank”解决方案。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. 搜索并选择 C#“单元测试项目”项目模板，然后单击“下一步”。
+
+3. 将项目命名为 `BankTests`。
+
+4. 单击 **“创建”**。
+
+   将“BankTests”项目添加到“Bank”解决方案。
+
+::: moniker-end
 
 5. 在“BankTests”项目中，添加对“Bank”项目的引用。
 
