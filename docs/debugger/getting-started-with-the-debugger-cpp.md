@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9975d0c4a62b4ae4d2695a34eeab0d43ba4a424
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 86900b525489c5f1ae487e89fdb6d848c4fc425a
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428773"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355586"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C++ 代码
 
@@ -37,32 +37,35 @@ ms.locfileid: "57428773"
 
 ::: moniker range=">=vs-2019"
 
-* 须安装 Visual Studio 2019 且具有“使用 C++ 的桌面开发”工作负载。
+须安装 Visual Studio 2019 且具有“使用 C++ 的桌面开发”工作负载。
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-* 须安装 Visual Studio 2017 且具有“C++ 桌面开发”工作负载。
+须安装 Visual Studio 2017 且具有“C++ 桌面开发”工作负载。
 
 ::: moniker-end
 
-如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 页免费安装。
+如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
 
-如果需要安装工作负载，但已有 Visual Studio，则单击“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接（选择“文件” > “新建” > “项目”）。 Visual Studio 安装程序启动。 选择“使用 C++ 的桌面开发”工作负载，然后选择“修改”按钮。
+如果需要安装工作负载但已有 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 Visual Studio 安装程序启动。 选择“使用 C++ 的桌面开发”工作负载，然后选择“修改”按钮。
 
 ## <a name="create-a-project"></a>创建项目
 
-1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
+1. 打开 Visual Studio。
 
-2. 在“Visual C++”下，选择“Windows 桌面”，然后在中间窗格中选择“Windows 控制台应用程序”。
+    ::: moniker range=">=vs-2019"
+    键入 Ctrl+Q 以打开搜索框，键入“c++”，选择“模板”，然后选择“创建新的控制台应用项目”。 在出现的对话框中，键入名称（如 get-started-debugging），然后选择“创建”。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual C++”下，选择“Windows 桌面”，然后在中间窗格中选择“Windows 控制台应用程序”。 然后，键入名称（如 MyDbgApp），然后单击“确定”。
+    ::: moniker-end
 
-    如果没有看到“Windows 控制台应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“使用 C++ 的桌面开发”工作负载，然后选择“修改”按钮。
-
-3. 键入名称（如“get-started-debugging”），然后单击“确定”。
+    如果没有看到“Windows 控制台应用程序”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 Visual Studio 安装程序启动。 选择“使用 C++ 的桌面开发”工作负载，然后选择“修改”按钮。
 
     Visual Studio 随即创建项目。
 
-4. 在“get-started-debugging.cpp”中，将以下代码
+1. 在“get-started-debugging.cpp”中，将以下代码
 
     ```c++
     int main()
