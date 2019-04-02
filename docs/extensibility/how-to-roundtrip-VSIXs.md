@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 0b70d8f1692eed8dcd1ba339dc9bcbb361e60db0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323810"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790415"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>如何：使扩展与 Visual Studio 2017 和 Visual Studio 2015 兼容
 
@@ -69,7 +69,7 @@ ms.locfileid: "57323810"
 
 若要生成并部署在 Visual Studio 2015 和 2017 VSIXv3，将需要以下 NuGet 包：
 
-版本 | 生成的工具
+Version | 生成的工具
 --- | ---
 Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
 Visual Studio 2017 | Microsoft.VSSDK.BuildTool
@@ -95,7 +95,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 ### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2.添加到的先决条件*extension.vsixmanifest*文件
 
-先决条件是具有 Visual Studio 2017 的新功能。 在这种情况下，我们需要 Visual Studio 核心编辑器作为必备组件。 由于 Visual Studio 2015 VSIX 设计器不处理新`Prerequisites`部分中，你将需要编辑此部分，手动在 XML 代码。 或者，您可以打开 Visual Studio 2017 并更新清单设计器用于插入了系统必备组件。
+作为先决条件，我们需要 Visual Studio 核心编辑器。 打开 Visual Studio 并更新清单设计器用于插入了系统必备组件。
 
 若要手动此操作：
 
@@ -112,7 +112,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 * 保存并关闭文件。
 
 > [!NOTE]
-> 如果您选择要完成此操作与在 Visual Studio 2017 的 VSIX 设计器，将需要手动编辑系统必备组件的版本，以确保它是与所有版本的 Visual Studio 2017 兼容。 这是因为在设计器将插入的最低版本为当前版本的 Visual Studio (例如，15.0.26208.0)。 但是，由于其他用户可能具有较早版本，因此将需要手动编辑此字段为 15.0。
+> 您可能需要手动编辑系统必备组件的版本，以确保它是与所有版本的 Visual Studio 2017 兼容。 这是因为在设计器将插入的最低版本为当前版本的 Visual Studio (例如，15.0.26208.0)。 但是，由于其他用户可能具有较早版本，因此将需要手动编辑此字段为 15.0。
 
 此时，你的清单文件应如下所示：
 
