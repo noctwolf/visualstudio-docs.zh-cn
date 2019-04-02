@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9830178d936e912caf6ab21761f7a072c29a4d4
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194413"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790155"
 ---
 # <a name="create-an-options-page"></a>创建选项页
 
@@ -101,7 +101,7 @@ ms.locfileid: "58194413"
 
      在左窗格中，应会看到**My Category**。 （选项类别是按字母顺序列出，因此它应显示有关一半列表中向下。）打开**My Category** ，然后单击**我的网格页**。 选项网格将显示在右窗格中。 属性类别**我的选项**，，属性名为**我整数选项**。 属性说明**我整数选项**，将显示在窗格的底部。 将值从 256 其初始值更改为其他内容。 单击**确定**，然后重新打开**我的网格页**。 您可以看到新值仍然存在。
 
-     选项页也是可通过 Visual Studio 的快速启动。 在 IDE 的右上角中的快速启动窗口中，键入**My Category** ，你将看到**My Category-> 我的网格页**下拉列表中列出。
+     选项页也是可通过 Visual Studio 的搜索框中。 在 IDE 顶部附近的搜索框中，键入**My Category** ，您将看到**My Category-> 我的网格页**结果中列出。
 
 ## <a name="create-a-tools-options-custom-page"></a>创建自定义工具选项页
 
