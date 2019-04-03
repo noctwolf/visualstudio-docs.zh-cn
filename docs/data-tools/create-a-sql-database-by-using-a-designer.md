@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cd7ea5df54d1ef740feddaeb5fbedbc9b9a42fd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943111"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647240"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>创建数据库并在 Visual Studio 中添加表
 
@@ -26,11 +26,11 @@ ms.locfileid: "55943111"
 
 ## <a name="prerequisites"></a>系统必备
 
-若要完成本演练，您必须具有可选**数据存储和处理**在 Visual Studio 中安装的工作负荷。 若要安装它，打开**Visual Studio 安装程序**，然后选择**工作负荷**选项卡。下**Web 和云**，选择**数据存储和处理**。 选择**修改**按钮将工作负荷添加到 Visual Studio。
+若要完成本演练，您必须具有可选**数据存储和处理**在 Visual Studio 中安装的工作负荷。 若要安装它，打开**Visual Studio 安装程序**，然后选择**详细** > **修改**旁边的 Visual Studio 你想要修改的版本 (如果有多个已安装版本）。 上**工作负荷**选项卡上，在**Web 和云**，选择**数据存储和处理**，然后单击**修改**若要添加到工作负荷Visual Studio。
 
 ## <a name="create-a-project-and-a-local-database-file"></a>创建一个项目及本地数据库文件
 
-1. 创建名为“SampleDatabaseWalkthrough”的 Windows 窗体项目。
+1. 创建一个新**Windows 窗体应用程序**项目，并命名**SampleDatabaseWalkthrough**。
 
 2. 在菜单栏上，选择**项目** > **添加新项**。
 
@@ -38,7 +38,7 @@ ms.locfileid: "55943111"
 
      ![“项模板”对话框](../data-tools/media/raddata-vsitemtemplates.png)
 
-4. 命名数据库**SampleDatabase**，然后选择**添加**按钮。
+4. 命名数据库**SampleDatabase**，然后单击**添加**。
 
 ### <a name="add-a-data-source"></a>添加数据源
 
@@ -62,9 +62,9 @@ ms.locfileid: "55943111"
 
 您可以查看的连接字符串*SampleDatabase.mdf*通过打开属性窗口中的数据连接文件：
 
-- 在 Visual Studio 中，选择**视图** > **SQL Server 对象资源管理器**如果该窗口尚未打开。 打开属性窗口，展开**数据连接**节点，打开快捷菜单*SampleDatabase.mdf*，然后选择**属性**。
+- 选择**视图** > **SQL Server 对象资源管理器**以打开**SQL Server 对象资源管理器**窗口。 展开 **(localdb) \MSSQLLocalDB** > **数据库**，然后右键单击*SampleDatabase.mdf* ，然后选择**属性**.
 
-- 或者，可以选择**视图** > **服务器资源管理器**，如果该窗口尚未打开。 打开属性窗口，展开**数据连接**节点。 打开快捷菜单*SampleDatabase.mdf*，然后选择**属性**。
+- 或者，可以选择**视图** > **服务器资源管理器**，如果该窗口尚未打开。 打开属性窗口，展开**数据连接**节点，打开快捷菜单*SampleDatabase.mdf*，然后选择**属性**。
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>使用表设计器创建表和键
 
@@ -72,7 +72,7 @@ ms.locfileid: "55943111"
 
 ### <a name="create-the-customers-table"></a>创建客户表
 
-1. 在中**服务器资源管理器**或**SQL Server 对象资源管理器**，展开**数据连接**节点，然后展开**SampleDatabase.mdf**节点。
+1. 在中**服务器资源管理器**，展开**数据连接**节点，然后展开**SampleDatabase.mdf**节点。
 
 2. 打开快捷菜单**表**，然后选择**添加新表**。
 
@@ -101,9 +101,9 @@ ms.locfileid: "55943111"
 
     ![表设计器](../data-tools/media/raddata-table-designer.png)
 
-7. 在的左上角**表设计器**，选择**更新**按钮。
+7. 在的左上角**表设计器**，选择**更新**。
 
-8. 在中**预览数据库更新**对话框中，选择**更新数据库**按钮。
+8. 在中**预览数据库更新**对话框中，选择**更新数据库**。
 
     你所做的更改将保存到本地数据库文件中。
 

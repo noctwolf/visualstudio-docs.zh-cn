@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0fa9749a06c568f7fab55cd6c7a862fa616ecf6d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d0ff9d8f3113b1df1e10891a3bd2197dd92482d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708690"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789895"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>调试从 Visual Studio 的远程计算机上的 UWP 应用
 
@@ -55,9 +55,9 @@ Visual Studio 可用于运行、 调试、 分析和测试另一台计算机或�
 
     ![管理项目属性以便进行远程调试](../debugger/media/vsrun_managed_projprop_remote.png "托管调试项目属性")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 配置用于远程调试的 JavaScript 或 c + + 项目
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 配置用于远程调试的 c + + 项目
 
-1.  在 Visual Studio 中选择 c + + 或 JavaScript 项目**解决方案资源管理器**，然后选择**属性**图标中，按**Alt**+**Enter**，或右键单击，然后选择**属性**。
+1.  在 Visual Studio 中选择 c + + 项目**解决方案资源管理器**，然后选择**属性**图标中，按**Alt**+**Enter**，或右键单击，然后选择**属性**。
 
 1.  选择**调试**选项卡。
 

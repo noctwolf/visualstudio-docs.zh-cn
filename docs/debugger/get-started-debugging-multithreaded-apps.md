@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d72edaf889aaf682f40a36278ea1fdf05ff989
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475989"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790246"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序 (C#，Visual Basic、 c + +)
 
@@ -41,10 +41,10 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 1. 打开 Visual Studio 并创建一个新项目。
 
     ::: moniker range=">=vs-2019"
-    类型**Ctrl + Q**若要打开搜索框中，键入**控制台**(或**c + +**)，选择**模板**，，然后：
-    
-    - 有关C#或 Visual Basic 中，选择**创建新的控制台应用 (.NET Framework) 项目**为C#或 Visual Basic。 在出现的对话框中，选择**创建**。
-    - 对于 c + +，请选择**创建新的控制台应用项目**c + +。 在出现的对话框中，选择**创建**。
+    按**Esc**以关闭启动窗口。 类型**Ctrl + Q**若要打开搜索框中，键入**控制台**(或**c + +**)，选择**模板**，，然后：
+
+    - 有关C#或 Visual Basic 中，选择**创建新的控制台应用 (.NET Framework) 项目**为C#或 Visual Basic。 在出现的对话框中，选择“创建”。
+    - 对于 c + +，请选择**创建新的控制台应用项目**c + +。 在出现的对话框中，选择“创建”。
 
     然后，键入一个名称，如**MyThreadWalkthroughApp**然后单击**创建**。
     ::: moniker-end
@@ -58,7 +58,7 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
     然后，键入一个名称，如**MyThreadWalkthroughApp**然后单击**确定**。
     ::: moniker-end
 
-    如果没有看到**控制台应用程序**项目模板，请转到**工具** > **获取工具和功能...**，这会打开 Visual Studio 安装程序。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”。
+    如果没有看到“控制台应用”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”。
 
 1. 选择“确定”。
 
