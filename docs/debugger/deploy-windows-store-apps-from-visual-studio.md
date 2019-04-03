@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043760"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790376"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>从 Visual Studio 部署 UWP 应用
 
@@ -76,7 +76,7 @@ Visual Studio 部署功能在目标设备上构建并注册使用 Visual Studio 
 
     **远程连接**对话框中显示本地网络子网上的设备，和通过以太网电缆直接连接到 Visual Studio 计算机的任何设备。
 
-   **在 JavaScript 或 Visual C++ 项目页中指定远程设备**
+   **在 Visual c + + 项目页中指定远程设备**
 
    ![C&#43; &#43;项目属性以便进行远程调试](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -104,15 +104,15 @@ Visual Studio 部署功能在目标设备上构建并注册使用 Visual Studio 
 
 - 在C#和 Visual Basic 调试属性页上，清除**允许网络 Loopback**复选框。
 
-- 在 JavaScript 和调试属性页上，将 **“允许网络环回”** 值设置为 **“否”**。
+- 在 c + + 调试属性页中，将**允许网络 Loopback**值设置为**否**。
 
-**不启动，但在启动时调试我的代码 (C#和 Visual Basic) / 启动应用程序 （JavaScript 和 c + +）**
+**不启动，但在启动时调试我的代码 (C#和 Visual Basic) / 启动应用程序 （c + +）**
 
 将部署配置为在应用程序启动时，自动启动调试会话：
 
 - 在C#和 Visual Basic 调试属性页中，检查**不启动，但在启动时调试我的代码**复选框。
 
-- 在 JavaScript 和调试属性页上，将 **“启动应用程序”** 值设置为 **“是”**。
+- 在 c + + 调试属性页中，将**启动应用程序**值设置为**是**。
 
 ## <a name="see-also"></a>请参阅
 

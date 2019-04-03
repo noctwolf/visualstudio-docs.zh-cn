@@ -1,6 +1,6 @@
 ---
 title: 键盘快捷键 （HTML 和 JavaScript） |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,18 +13,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe25da9dd687eba011bd8e3cc2701cf154e0358
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f85eee14ef026787c9b929a64e14b462397338d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697256"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789803"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>键盘快捷键（HTML 和 JavaScript）
 
+::: moniker range=">=vs-2019"
+ 调试 Node.js 应用在 Visual Studio 中使用的键盘快捷方式在 Visual Studio **Node.js 开发**安装工作负载。
+::: moniker-end
+::: moniker range="vs-2017"
  键盘快捷方式在 Visual Studio 中调试使用 HTML 和 JavaScript 的 UWP 应用。
+::: moniker-end
+
 
 ## <a name="general-shortcuts"></a>常规快捷方式
+
  这些快捷方式适用于使用 HTML 和 JavaScript 的 UWP 应用的所有工具。
 
 |操作|快捷键|
@@ -35,6 +42,7 @@ ms.locfileid: "56697256"
 |打开性能和诊断中心|Alt+F2|
 
 ## <a name="javascript-console-shortcuts"></a>JavaScript 控制台快捷方式
+
  在“JavaScript 控制台”窗口中使用这些快捷方式。
 
 |操作|快捷键|
@@ -44,6 +52,7 @@ ms.locfileid: "56697256"
 |在单行模式和多行模式之间进行切换|Ctrl+Alt+M|
 
 ## <a name="dom-explorer-shortcuts"></a>DOM 资源管理器快捷方式
+
  在 DOM 资源管理器中使用这些快捷方式。
 
 |操作|快捷键|
@@ -56,5 +65,6 @@ ms.locfileid: "56697256"
 |使选定的 CSS 值减少 1|向下键|
 
 ## <a name="see-also"></a>请参阅
-- [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)
-- [快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [JavaScript Console commands](../debugger/javascript-console-commands.md)
+- [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

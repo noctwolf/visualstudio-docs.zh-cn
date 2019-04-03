@@ -76,7 +76,7 @@ ms.locfileid: "56625473"
    </compatibleFrameworks>
    ```
 
-7. 手动修改应用程序清单，必须使用数字证书，请对应用程序清单重新签名，然后更新和对的部署清单重新签名。 使用*Mage.exe*或*MageUI.exe* SDK 工具来完成此任务中的，重新生成使用这些文件作为[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]会删除手动更改。 有关使用 Mage.exe 清单进行重新签名的详细信息，请参阅[How to: re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
+7. 手动修改应用程序清单，必须使用数字证书，请对应用程序清单重新签名，然后更新和对的部署清单重新签名。 使用*Mage.exe*或*MageUI.exe* SDK 工具来完成此任务中的，重新生成使用这些文件作为[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]会删除手动更改。 有关使用 Mage.exe 清单进行重新签名的详细信息，请参阅[如何：为应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
 
 ## <a name="net-framework-security"></a>.NET Framework 安全性
  如果应用程序被标记为在部分信任环境中运行时，支持 URL 不被显示在对话框中。

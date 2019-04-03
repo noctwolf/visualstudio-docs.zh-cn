@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 293df62cc82295a9d2eea577df4e3f46dd14cef6
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227639"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647344"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>连接到 Access 数据库中的数据（Windows 窗体）
 
@@ -95,7 +95,7 @@ ms.locfileid: "56227639"
 
 8. 在中**数据库文件的名称**，指定的路径和名称 *.mdb*文件你想要连接的对象，然后选择**确定**。
 
-   ![添加连接访问数据库文件](../data-tools/media/dataaddconnectionaccessmdb.png)
+   ![添加连接访问数据库文件](../data-tools/media/add-connection-access-db.png)
 
 9. 选择**下一步**上**选择您的数据连接**页。
 

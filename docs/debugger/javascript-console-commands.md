@@ -1,7 +1,7 @@
 ---
 title: JavaScript 控制台命令 |Microsoft Docs
-ms.custom: seodec18
-ms.date: 07/17/2017
+ms.custom: ''
+ms.date: 03/28/2019
 ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
@@ -13,21 +13,28 @@ manager: jillfra
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c6595b2e76813607a6582434b5c31f4d07d5f4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701948"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790766"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 控制台命令
 
-你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 有关演示如何使用该窗口的示例，请参阅[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主题中的信息适用于 UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用。 有关 Cordova 应用中受支持控制台命令的信息，请参阅 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 有关在 Internet Explorer F12 工具中使用控制台的信息，请参阅 [本主题](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))。
+::: moniker range=">=vs-2019"
+你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 本主题中的信息适用于使用 Visual Studio 中使用创建的 Node.js 应用**Node.js 开发**安装工作负载。
+::: moniker-end
+::: moniker range="vs-2017"
+你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 有关演示如何使用此窗口的示例，请参阅[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)。 本主题中的信息适用于 Node.js 应用，UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用。 有关 Cordova 应用中受支持控制台命令的信息，请参阅 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。
+::: moniker-end
 
 如果 JavaScript 控制台窗口已关闭，则可以打开它通过选择 Visual Studio 中调试时，**调试** > **Windows** > **JavaScript控制台**。
 
 > [!NOTE]
 > 如果该窗口在调试会话期间不可用，请确保在项目的“调试”属性中将调试器类型设置为 **“脚本”** 。
+
+在 Microsoft Edge 开发人员工具中使用控制台的信息，请参阅[本主题](/microsoft-edge/devtools-guide)。
 
 ## <a name="console-object-commands"></a>控制台对象命令
 下表显示 `console` 对象命令的语法，这些命令可用在“JavaScript 控制台”窗口中或者可用于从代码中向控制台发送消息。 此对象提供多种形式，以使你可区分信息性消息和错误消息（如果要区分）。
@@ -123,5 +130,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>请参阅
-- [快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
-- [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)
+- [快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)

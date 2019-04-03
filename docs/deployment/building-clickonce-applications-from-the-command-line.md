@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576a6d219a27ad51c096ee3ddb177b656b0552e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636952"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567836"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>从命令行生成 ClickOnce 应用程序
 在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，可以生成命令行中的项目，即使它们在集成的开发环境 (IDE) 中创建。 事实上，您可以重新生成与创建的项目[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]仅有的另一台计算机上[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安装。 这允许你在重现生成使用自动化的过程，例如，在中心生成实验室或使用高级脚本编写技术生成项目本身的范围之外。
@@ -41,21 +41,21 @@ ms.locfileid: "56636952"
 
 #### <a name="to-create-and-publish-a-clickonce-project"></a>若要创建和发布一个 ClickOnce 项目
 
-1. 单击**新的项目**从**文件**菜单。 此时将出现“新建项目”对话框。
+1. 打开 Visual Studio 并创建一个新项目。
 
-2. 选择**Windows 应用程序**并将其命名`CmdLineDemo`。
+    选择**Windows 桌面应用程序**项目模板并将项目命名`CmdLineDemo`。
 
-3. 从**构建**菜单上，单击**发布**命令。
+1. 从**构建**菜单上，单击**发布**命令。
 
     此步骤可确保该项目是否已正确配置以生成[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序部署。
 
     出现“发布向导”。
 
-4. 在发布向导中，单击**完成**。
+1. 在发布向导中，单击**完成**。
 
     Visual Studio 生成并显示名为的默认 Web 页*Publish.htm*。
 
-5. 保存你的项目，并记下在其中存储的文件夹位置。
+1. 保存你的项目，并记下在其中存储的文件夹位置。
 
    上述步骤创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]首次发布的项目。 现在可以再现在 IDE 之外生成。
 

@@ -35,16 +35,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 28a35f37e298533fe3181f9325241bbef116f2d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699465"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790506"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>启动 UWP 应用的调试会话
 
-本文介绍如何启动的通用 Windows 平台 (UWP) 应用的 Visual Studio 调试会话。 可以在 XAML 和 c + + 中，XAML 编写的 UWP 应用和C#/Visual Basic，或 HTML 和 JavaScript。 若要开始调试 UWP 应用，请配置调试会话，并选择启动应用程序的方式。
+本文介绍如何启动的通用 Windows 平台 (UWP) 应用的 Visual Studio 调试会话。 可以在 XAML 和 c + + 中，XAML 编写的 UWP 应用和C#/Visual Basic。 若要开始调试 UWP 应用，请配置调试会话，并选择启动应用程序的方式。
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> 从 Visual Studio 2019 开始，不再支持适用于 HTML 和 JavaScript 的 UWP 应用。
+::: moniker-end
+::: moniker range="vs-2017"
+在 Visual Studio 2017 中，大部分命令和本文中所示的选项也适用于 UWP 应用的 HTML 和 JavaScript。 其中不同的命令之间管理和 c + + 应用程序，JavaScript 应用程序通常是与 c + + UWP 应用的命令相同。
+::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>从 Visual Studio 工具栏中开始调试
 
@@ -90,7 +98,7 @@ ms.locfileid: "56699465"
 
      ![C#和 Visual Basic 项目调试属性页](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - 对于 c + + 和 JavaScript 应用，选择**配置属性** > **调试**。
+   - 对于 c + + 应用程序中，选择**配置属性** > **调试**。
 
      ![C + + UWP 应用调试属性页](../debugger/media/dbg_cpp_debugpropertypage.png)
 
@@ -98,13 +106,13 @@ ms.locfileid: "56699465"
 
 有关C#和 Visual Basic 应用程序，Visual Studio 调试托管代码默认情况下。 您可以选择调试其他或其他代码类型。 您还可以设置**调试器类型**是项目的一部分的任何后台任务的值。
 
-在 c + + 应用中，Visual Studio 默认情况下调试本机代码。 在 JavaScript 应用中，Visual Studio 默认情况下调试脚本。 您可以选择调试特定类型的代码而不是，或调试本机代码。
+在 c + + 应用中，Visual Studio 默认情况下调试本机代码。 您可以选择调试特定类型的代码而不是，或调试本机代码。
 
 **若要指定要调试的代码类型：**
 
 - 有关C#和 Visual Basic 应用程序中，选择一个从以下调试器**应用程序类型**并**后台进程类型**下的下拉列表**调试器类型**上**调试**属性页。
 
-- 对于 C + + /cli JavaScript 应用程序，选择一个从以下调试器**调试器类型**上的下拉列表中**调试**属性页。
+- 对于 c + + 应用中，选择从以下调试器**调试器类型**上的下拉列表中**调试**属性页。
 
 |||
 |-|-|
@@ -124,10 +132,10 @@ ms.locfileid: "56699465"
 
 -   有关C#和 Visual Basic 应用程序，请取消选中**允许本地网络环回**下的复选框**启动选项**上**调试**属性页。
 
--   对于 Visual c + + 和 JavaScript 应用，选择**否**从**允许本地网络 Loopback**上的下拉列表中**调试**属性页。
+-   对于 Visual c + + 应用程序中，选择**否**从**允许本地网络 Loopback**上的下拉列表中**调试**属性页。
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> 重新安装该应用，在开始调试时 （可选）
- 若要诊断安装问题C#或 Visual Basic 应用程序，选择**卸载并重新安装我的程序包**上**调试**属性页。 在开始调试时，此选项将重新创建原始安装。 此选项不可用于 c + + 和 JavaScript 项目。
+ 若要诊断安装问题C#或 Visual Basic 应用程序，选择**卸载并重新安装我的程序包**上**调试**属性页。 在开始调试时，此选项将重新创建原始安装。 此选项不可用 c + + 项目。
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> 设置远程调试的身份验证选项
 
@@ -139,7 +147,7 @@ ms.locfileid: "56699465"
 
 - 有关C#和 Visual Basic 应用程序上**调试**属性页上，选择**远程计算机**作为**目标设备**。 然后，选择**无**或**通用 （未加密的协议）** 有关**身份验证模式**。
 
-- 对于 c + + 和 JavaScript 应用，选择**远程计算机**下**要启动的调试器**上**调试**属性页。 然后，选择**无身份验证**或**通用 （未加密的协议）** 有关**身份验证类型**。
+- 对于 c + + 应用程序中，选择**远程计算机**下**要启动的调试器**上**调试**属性页。 然后，选择**无身份验证**或**通用 （未加密的协议）** 有关**身份验证类型**。
 
 > [!CAUTION]
 > 没有任何网络安全中运行远程调试器时**无**或**通用 （未加密的协议）** 模式。 选择仅在你的受信任的网络上的以下模式确保不在会受到恶意代码或恶意流量。
@@ -156,7 +164,7 @@ ms.locfileid: "56699465"
 
 - 有关C#和 Visual Basic 应用程序，选择**不启动，但在启动时调试我的代码**下**启动选项**上**调试**属性页。
 
-- 对于 c + + 和 JavaScript 应用，选择**否**从**启动应用程序**上的下拉列表中**调试**属性页。
+- 对于 c + + 应用程序中，选择**否**从**启动应用程序**上的下拉列表中**调试**属性页。
 
 有关调试后台任务的详细信息，请参阅[触发器挂起、 继续和后台事件适用于 UWP 应用](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。
 
@@ -202,10 +210,12 @@ ms.locfileid: "56699465"
 
  Visual Studio 将调试器附加到该进程。 持续执行至抵达某个断点、手动暂停执行、发生无法处理的异常或应用程序结束为止。
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > JavaScript 应用使用“wwahost.exe”进程的实例运行。 如果多个 JavaScript 应用正在运行，您需要知道您的应用程序的数字进程 id (PID) *wwahost.exe*要附加到该进程。
 >
 > 若要将附加到 JavaScript 应用程序的最简单方法是关闭所有其他 JavaScript 应用。 或者，可以记下运行的 Pid *wwahost.exe*进程在 Windows 任务管理器之前启动应用。 当启动应用，其*wwahost.exe* PID 将不同于先前记下的一个。
+::: moniker-end
 
 ## <a name="see-also"></a>请参阅
 - [在 Visual Studio 中调试应用](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
