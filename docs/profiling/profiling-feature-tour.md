@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c05d598d0eee46ec2d84b7d2bbf859dd455473a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873173"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790805"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入门：首先了解分析工具
 
@@ -119,6 +119,7 @@ CPU 使用率和内存使用量等分析工具可与调试器配合使用（见�
 
 关系图还可用于确定是否存在与 CPU 或 GPU 绑定的性能瓶颈。
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>分析性能 (JavaScript UWP)
 
 对于 UWP 应用，可以使用“JavaScript 内存”工具和“HTML UI 响应能力”工具。
@@ -130,6 +131,7 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
 若要对 UWP 应用执行 UI 响应能力、长时间加载和缓慢视觉对象更新诊断，请使用“HTML UI 响应能力”工具。 使用情况类似于适用于其他应用类型的应用程序时间线工具。 有关更多信息，请参阅 [HTML UI 响应能力](../profiling/html-ui-responsiveness.md)。
 
 ![HTML UI 响应能力分析工具](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>分析网络使用情况 (UWP)
 

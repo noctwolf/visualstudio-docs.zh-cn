@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fed1fff9e776521581455a89db48897f22de7bf5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355612"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515202"
 ---
 # <a name="msbuild-properties"></a>MSBuild 属性
 属性是可用于配置生成的名称/值对。 属性可用于将值传递给任务，评估条件和存储将在整个项目文件中引用的值。
@@ -59,7 +59,7 @@ ms.locfileid: "58355612"
  有关详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。
 
 ## <a name="registry-properties"></a>注册表属性
- 可使用以下语法读取系统注册表值，其中 `Hive` 是注册表配置单元（例如 HKEY_LOCAL_MACHINE），`Key` 是键名称，`SubKey` 是子键名称，`Value` 是子键的值。
+ 可使用以下语法读取系统注册表值，其中 `Hive` 是注册表配置单元（例如 HKEY_LOCAL_MACHINE），`MyKey` 是键名称，`MySubKey` 是子键名称，`Value` 是子键的值。
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
