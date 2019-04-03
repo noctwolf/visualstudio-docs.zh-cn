@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Visual Studio IDE。
 searchscope: VS Subscription
-ms.openlocfilehash: cb959ebdfcdce74ebcd024529fd5fcf012a51ca8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844069"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789882"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>使用 Visual Studio 2017 权益
 
@@ -53,9 +53,12 @@ ms.locfileid: "56844069"
 
 13. 选择喜欢的主题，然后单击“启动 Visual Studio”。
 
-14. 此时将显示“开始”页。  现在就可以使用 Visual Studio 了！
+14. Visual Studio 随即打开。 现在就可以使用 Visual Studio 了！
+
+    ::: moniker range="vs-2017"
     > [!div class="mx-imgBorder"]
     > ![开始使用 Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+    ::: moniker-end
 
 ## <a name="eligibility"></a>资格
 
@@ -67,7 +70,7 @@ ms.locfileid: "56844069"
 | MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不可用          |
 | Visual Studio Dev Essentials | 不可用  | Visual Studio Community |是 |
 
-<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。不包括：MCT 软件和服务。
+<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。不包括：MCT 软件和服务*。
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。

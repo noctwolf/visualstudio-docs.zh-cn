@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e33aaded85c7931dfc3a95d653ff35f257c9137b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070251"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647461"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“字体和颜色”
 
-通过“选项”对话框的“字体和颜色”页，可以为集成开发环境 (IDE) 中的各种用户界面元素建立自定义字体和配色方案。 单击“工具” > “选项”，然后选择“环境” > “字体和颜色”即可访问此对话框。 如果此页未出现在列表中，请在“选项”对话框中选择“显示所有设置”。
+通过“选项”对话框的“字体和颜色”页，可以为集成开发环境 (IDE) 中的各种用户界面元素建立自定义字体和配色方案。 单击“工具” > “选项”，然后选择“环境” > “字体和颜色”即可访问此对话框。
 
 配色方案的更改在进行此更改的会话期间不生效。 要计算颜色更改，可打开 Visual Studio 的另一实例并产生希望应用更改所基于的条件。
 
