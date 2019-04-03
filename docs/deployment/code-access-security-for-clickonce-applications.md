@@ -67,7 +67,7 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
 
  此外，在编写代码时，代码编辑器中的 IntelliSense 功能将禁用未包含在已配置安全权限中的任意成员。
 
- 有关更多信息，请参见 [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。
+ 有关更多信息，请参见 [如何：使用受限权限对 ClickOnce 应用程序进行调试](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。
 
 ## <a name="security-permissions-for-browser-hosted-applications"></a>浏览器托管的应用程序的安全权限
  Visual Studio 为 Windows Presentation Foundation (WPF) 应用程序提供了以下项目类型：
