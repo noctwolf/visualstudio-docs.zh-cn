@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 10557e8ce959be2d1170044e20fd0ad99c76fa86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957834"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856627"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 
 这一简短的 Visual Studio 代码编辑器简介演示了如何使用 Visual Studio 更轻松地编写、导航和理解 C# 代码。
 
 > [!TIP]
-> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。 根据所展开的应用开发的类型，可能需要使用 Visual Studio 安装 Node.js 开发工作负荷。
+> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页免费安装。 根据所展开的应用开发的类型，可能需要使用 Visual Studio 安装 Node.js 开发工作负荷。
 
 本文假定你已熟悉 JavaScript 开发。 如果不熟悉，建议先浏览教程（如[创建 Node.js 和 Express 应用](../javascript/tutorial-nodejs.md)）。
 
@@ -70,7 +70,7 @@ ms.locfileid: "55957834"
 
 工具栏是 Visual Studio 菜单栏下的一行按钮，有助于提高编码效率。 例如，可以切换 IntelliSense 完成模式（[IntelliSense](../ide/using-intellisense.md) 是一种编码辅助工具，可显示匹配方法列表以及其他内容），增加或减少行缩进，或标注出不想编译的代码。 在本部分中，我们将标注出部分代码。
 
-在编辑器中选择一行或多行代码，然后在工具栏上选择“注释掉所选行”按钮![“注释掉”按钮](../javascript/media/write-code-comment-out.png)。 如果想要使用键盘，请按 Ctrl+K、Ctrl+C。
+在编辑器中选择一行或多行代码，然后在工具栏上选择“注释掉所选行”按钮![“注释掉”按钮](../javascript/media/write-code-comment-out.png)。 如果想要使用键盘，请按 Ctrl+K, Ctrl+C。
 
 JavaScript 注释字符 `//` 添加到了每个所选行的开始处，从而为代码添加注释。
 
