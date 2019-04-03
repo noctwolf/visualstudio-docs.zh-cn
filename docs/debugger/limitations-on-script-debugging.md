@@ -32,7 +32,7 @@ ms.locfileid: "56687557"
 
 -   必须在 `<script>` 块的内部设置断点。 如果断点位于内联脚本或 `<% %>` 块中，则无法进行映射。
 
--   页的浏览器 URL 必须包含页名称。 例如 http://microsoft.com/default.apsx。 断点映射不能识别从地址的重定向如 http://microsoft.com为默认页。
+-   页的浏览器 URL 必须包含页名称。 例如 http://microsoft.com/default.apsx。 断点映射不能识别从地址的重定向如 [http://microsoft.com](http://microsoft.com) 为默认页。
 
 -   断点必须设置在由浏览器 URL 指定的页内，而不能设置在该页包括的 ASPX 控件 (ascx) 文件、母版页或其他文件中。 无法映射包含的页中设置的断点。
 
