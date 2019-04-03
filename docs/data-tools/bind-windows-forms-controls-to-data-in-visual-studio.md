@@ -39,8 +39,7 @@ ms.locfileid: "55951665"
 
 ## <a name="bindingsource-and-bindingnavigator-controls"></a>BindingSource 和 BindingNavigator 控件
 
-
-  <xref:System.Windows.Forms.BindingSource> 组件有两个用途。 首先，当控件绑定到数据时提供一个抽象层。 窗体控件绑定到<xref:System.Windows.Forms.BindingSource>组件而不是直接与数据源。 其次，它可以管理的对象的集合。 添加到类型<xref:System.Windows.Forms.BindingSource>创建该类型的列表。
+<xref:System.Windows.Forms.BindingSource> 组件有两个用途。 首先，当控件绑定到数据时提供一个抽象层。 窗体控件绑定到<xref:System.Windows.Forms.BindingSource>组件而不是直接与数据源。 其次，它可以管理的对象的集合。 添加到类型<xref:System.Windows.Forms.BindingSource>创建该类型的列表。
 
 有关详细信息<xref:System.Windows.Forms.BindingSource>组件，请参阅：
 
