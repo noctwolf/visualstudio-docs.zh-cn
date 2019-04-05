@@ -1,14 +1,9 @@
 ---
 title: 创建基本项目系统，第 2 部分 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98cdcf426f2aeeb794e9e33754108c792f9725e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753969"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930668"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>创建基本项目系统，第 2 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -191,9 +186,9 @@ ZipProjects:
   
 1. 重置 Visual Studio SDK 实验实例。  
   
-    上[!INCLUDE[win7](../includes/win7-md.md)]： 在开始菜单中，找到**Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools**文件夹，，然后选择**重置 Microsoft Visual Studio 实验实例**。  
+    在[!INCLUDE[win7](../includes/win7-md.md)]:在开始菜单中，找到**Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools**文件夹，，然后选择**重置 Microsoft Visual Studio 实验实例**。  
   
-    在更高版本的 Windows 上: 开始屏幕中，键入**重置 Microsoft Visual Studio\<版本 > 实验实例**。  
+    更高版本的 Windows:在开始屏幕上键入**重置 Microsoft Visual Studio\<版本 > 实验实例**。  
   
 2. 显示命令提示符窗口。 当看到单词`Press any key to continue`，单击 ENTER。 在窗口关闭后，打开 Visual Studio。  
   
@@ -286,7 +281,7 @@ ZipProjects:
   
 - $safeprojectname$ 是中的用户提供的名称**新的项目**对话框中，修改以删除所有不安全字符和空格。  
   
-  有关模板参数的完整列表，请参阅[模板参数](../ide/template-parameters.md)。  如果你想要创建你自己的自定义模板参数，请参阅[NIB： 如何： 将自定义参数传递给模板](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)。  
+  有关模板参数的完整列表，请参阅[模板参数](../ide/template-parameters.md)。  如果你想要创建你自己的自定义模板参数，请参阅[NIB:如何：将自定义参数传递给模板](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb)。  
   
 #### <a name="to-substitute-project-template-parameters"></a>若要替换项目的模板参数  
   
@@ -500,4 +495,3 @@ ZipProjects:
 8. 关闭 Visual Studio 的实验实例。  
   
    ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
-

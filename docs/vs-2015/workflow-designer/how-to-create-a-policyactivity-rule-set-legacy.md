@@ -1,11 +1,8 @@
 ---
-title: 如何： 创建 PolicyActivity 规则集 （旧版） |Microsoft Docs
-ms.custom: ''
+title: 如何：创建 PolicyActivity 规则集 （旧版） |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - PolicyActivity activity, creating rule sets
@@ -17,13 +14,13 @@ ms.assetid: f272489d-3342-4511-8b59-6a0fd7a42d70
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7ab49957d830bf558a9dddf55cdc5e8c2f3f75d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5e7528e8a589cb64e4debc8c1e119f8f59a6244c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194618"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932490"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>如何：创建 PolicyActivity 规则集（旧版）
 本主题介绍如何使用面向 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 的旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 来创建策略活动规则集。  
@@ -43,7 +40,7 @@ ms.locfileid: "49194618"
   
     -   单击**RuleSetReference**省略号 **[...]**，然后选择现有规则中设置[选择设置规则对话框 （旧版）](../workflow-designer/select-rule-set-dialog-box-legacy.md)。 然后转到步骤 10。  
   
-         - 或 -  
+         或  
   
     -   键入规则集的名称。 单击**RuleSetReference**省略号 **[...]**，然后选择**编辑**中[选择设置规则对话框 （旧版）](../workflow-designer/select-rule-set-dialog-box-legacy.md)。  
   

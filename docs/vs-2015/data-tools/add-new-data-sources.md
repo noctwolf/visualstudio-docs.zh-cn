@@ -1,12 +1,9 @@
 ---
 title: 添加新数据源 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
 dev_langs:
@@ -21,13 +18,13 @@ ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279142"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931776"
 ---
 # <a name="add-new-data-sources"></a>添加新数据源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +85,7 @@ ms.locfileid: "49279142"
 -   Web 服务。  
   
     > [!NOTE]
-    >  在显示的项**数据源**窗口都依赖于该服务返回的数据。 某些服务可能没有提供足够的信息供**数据源配置向导**创建可绑定的对象。 例如，如果该服务返回的非类型化数据集，会显示任何项中**数据源**窗口时完成该向导。 这是因为非类型化数据集不提供架构，因此该向导没有足够的信息来创建数据源。  
+    >  在显示的项**数据源**窗口都依赖于该服务返回的数据。 某些服务可能没有为“数据源配置”向导创建可绑定的对象提供足够的信息。 例如，如果该服务返回的非类型化数据集，会显示任何项中**数据源**窗口时完成该向导。 这是因为非类型化数据集不提供架构，因此该向导没有足够的信息来创建数据源。  
   
 ## <a name="data-source-for-an-object"></a>一个对象的数据源  
  可以从任何通过运行公开一个或多个公共属性的对象创建数据源**数据源配置向导**，然后选择**对象**数据源类型。 一个对象的所有公共属性显示在**数据源**窗口。   如果在使用实体框架，并且已生成一个模型，这是在哪里找到将为你的应用程序的数据源的实体类。  
@@ -108,4 +105,3 @@ ms.locfileid: "49279142"
   
 ## <a name="see-also"></a>请参阅  
  [适用于 NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

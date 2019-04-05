@@ -1,25 +1,20 @@
 ---
 title: 上下文菜单 （XML 架构资源管理器） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 854ea473f2f606b28052b093978253372b4fec59
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5398cea07863e17a8e430e7f827aac0b4e217355
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294603"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931008"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>上下文菜单（XML 架构资源管理器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "49294603"
 ## <a name="node-type-schema-set"></a>节点类型：架构集  
  下表介绍了可用于架构集节点的选项。  
   
-|选项|描述|  
+|Option|描述|  
 |------------|-----------------|  
 |**显示最可能的根元素**|查找并突出显示并非从其他全局元素引用的所有全局元素。|  
 |**显示全局类型**|查找并突出显示架构集中的所有全局类型。|  
@@ -40,7 +35,7 @@ ms.locfileid: "49294603"
 ## <a name="node-type-namespace"></a>节点类型：命名空间  
  下表介绍了可用于命名空间节点的选项。  
   
-|选项|描述|  
+|Option|描述|  
 |------------|-----------------|  
 |**显示所有入站的引用**|查找并突出显示导入所选命名空间的文件。|  
 |**显示所有出站引用**|对于所选命名空间中的每个文件，查找并突出显示下列内容：<br /><br /> 的在中引用所有命名空间导入语句，而无需`schemaLocation`属性。<br />的而不是所选中指定的命名空间中所有文件`schemaLocation`中导入的属性和 include 语句。|  
@@ -51,7 +46,7 @@ ms.locfileid: "49294603"
 ## <a name="node-type-file"></a>节点类型：文件  
  下表介绍了可用于文件节点的选项。  
   
-|选项|描述|  
+|Option|描述|  
 |------------|-----------------|  
 |**显示所有入站的引用**|查找并突出显示在其包含和导入语句的 `schemaLocation` 属性中指定了所选文件的所有文件。|  
 |**显示所有出站引用**|查找并突出显示下列内容：<br /><br /> -所有命名空间中的所有命名空间属性指定导入语句而没有的`schemaLocation`属性。<br />-所有文件中指定`schemaLocation`属性的所有导入和包含语句。|  
@@ -63,7 +58,7 @@ ms.locfileid: "49294603"
 ## <a name="all-global-node-types"></a>所有全局节点类型  
  下表介绍了可用于所有全局节点的选项。  
   
-|选项|描述|  
+|Option|描述|  
 |------------|-----------------|  
 |**在关系图视图中显示**|打开图形视图。 如果所选节点未在工作区中，请将其添加到工作区中并将其选定。|  
 |**在内容模型视图中显示**|打开内容模型视图。 如果所选节点未在工作区中，请将其添加到工作区中并将其选定。|  
@@ -73,7 +68,7 @@ ms.locfileid: "49294603"
 ## <a name="node-type-element"></a>节点类型：元素  
  除了上述全局节点选项之外，元素节点的上下文菜单还拥有以下选项：  
   
-|选项|描述|  
+|Option|描述|  
 |------------|-----------------|  
 |**转到类型定义**|导航至所选元素的类型定义。 只有当用于元素的类型为全局类型时，此选项才适用。|  
 |**转到原始元素**|对于元素引用，导航至元素的实际定义。|  
@@ -85,35 +80,35 @@ ms.locfileid: "49294603"
 ## <a name="node-type-global-types"></a>节点类型：全局类型  
  除了上述全局节点选项之外，全局类型节点的上下文菜单还拥有以下选项：  
   
-|选项|描述|  
+|Option|描述|  
 |------------|-----------------|  
 |**显示基类型**|如果所选类型是从全局类型派生的，则导航至所选类型的基类型。|  
 |**显示所有引用**|查找并突出显示对所选类型的所有引用， 其中包括所选类型和从所选类型派生的各种类型的元素和特性。|  
 |**显示所有派生类型**|查找并突出显示从所选类型直接和间接派生的所有类型。|  
 |**显示所有上级**|显示所有父（基）类型。|  
   
-## <a name="node-type-attribute"></a>节点类型：属性  
+## <a name="node-type-attribute"></a>节点类型：特性  
  除了上述全局节点选项之外，特性节点的上下文菜单还拥有以下选项：  
   
-|选项|描述|  
+|Option|描述|  
 |------------|-----------------|  
 |**转到类型定义**|如果用于属性的类型为全局类型，则导航至所选属性的类型定义。|  
 |**转到原始特性**|对于属性引用，导航至特性的实际定义。|  
 |**显示所有引用**|对于全局特性，查找并突出显示对所选特性的所有引用（具有 `ref="selectedAttribute"` 的其他特性）。|  
   
-## <a name="node-type-attribute-group"></a>节点类型：属性组  
+## <a name="node-type-attribute-group"></a>节点类型：特性组  
  除了上述全局节点选项之外，特性组节点的上下文菜单还拥有以下选项：  
   
-|选项|描述|  
+|Option|描述|  
 |------------|-----------------|  
 |**转到定义**|对于引用，导航至属性的实际定义。|  
 |**显示所有成员**|查找并突出显示特性组的所有成员。|  
 |**显示所有引用**|查找并突出显示对所选特性组的所有引用（具有 `ref="selectedAttributeGroup"` 的特性组）。|  
   
-## <a name="node-type-named-group"></a>节点类型：命名组  
+## <a name="node-type-named-group"></a>节点类型：命名的组  
  除了上述全局节点选项之外，命名组节点的上下文菜单还拥有以下选项：  
   
-|选项|描述|  
+|Option|描述|  
 |------------|-----------------|  
 |**转到定义**|对于引用，导航至属性的实际定义。|  
 |**显示所有成员**|查找并突出显示命名组的所有成员。|  
@@ -122,6 +117,3 @@ ms.locfileid: "49294603"
 ## <a name="see-also"></a>请参阅  
  [XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)   
  [搜索架构集](../xml-tools/searching-the-schema-set.md)
-
-
-

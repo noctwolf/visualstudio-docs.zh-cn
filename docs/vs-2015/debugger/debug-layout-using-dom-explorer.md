@@ -1,14 +1,9 @@
 ---
 title: 使用 DOM 资源管理器调试布局 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: ded6566d-fc29-49a7-8029-dee8e50fe733
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba06e6a8ba95887c0cc6b6acfd14cef10ff03798
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787740"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931985"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>使用 DOM 资源管理器调试布局
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "51787740"
 > [!TIP]
 >  你在“布局”  选项卡中所作的更改不是永久性的。 你可以永久更改源代码，然后使用“调试”工具栏上的“刷新 Windows 应用”  （仅限 Windows 应用商店和 Windows Phone 应用商店）按钮刷新应用。 这样一来，便可避免重新启动调试器。  
   
- 若要使用 DOM 资源管理器修改不会显示在方框模型中的布局的各个方面，请参阅[快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)并[使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)。  
+ 若要使用 DOM 资源管理器修改不会显示在方框模型中的布局的各个方面，请参阅[快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)并[使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)。  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>修复布局问题的示例  
  此示例演示了如何选择“中心/枢轴”模板中的一个列表元素、解释了  “布局”选项卡上的方框模型值，然后更改某个属性值来修复布局问题。  
@@ -88,7 +83,7 @@ ms.locfileid: "51787740"
 8.  切换到 Visual Studio，然后在 DOM 资源管理器中选择“选择元素”  （或按 Ctrl+B）。 这将更改选择模式以使你可通过单击某项来选择该项，然后将应用程序置于前台。 单击后模式即恢复原样。  
   
     > [!TIP]
-    >  你也可以使用箭头键或其他方法直接在 DOM 资源管理器中选择 HTML 元素。 有关选择元素的详细信息，请参阅[快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。  
+    >  你也可以使用箭头键或其他方法直接在 DOM 资源管理器中选择 HTML 元素。 有关选择元素的详细信息，请参阅[快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。  
   
 9. 在 Phone 仿真程序或模拟器中，在已分为两半的图像中选择右半边的灰色图像。 选定元素的周围将突出显示，如下面的 Windows Phone 仿真程序中所示：  
   
@@ -132,9 +127,6 @@ ms.locfileid: "51787740"
 15. 切换至 Phone 仿真程序或模拟器。 更新后的 margin-left 值已应用到第 4 部分的图像。 这些值还会在 margin-left 规则下的“已计算”  选项卡中更新。  
   
 ## <a name="see-also"></a>请参阅  
- [快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
  [使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)   
  [查看 DOM 事件侦听器](../debugger/view-dom-event-listeners.md)
-
-
-

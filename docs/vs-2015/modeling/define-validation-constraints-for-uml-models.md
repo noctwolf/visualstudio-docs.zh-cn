@@ -1,25 +1,22 @@
 ---
 title: 为 UML 模型定义验证约束 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, validation constraints
 ms.assetid: 87b3b0da-122d-4121-9318-200c38ff49d0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6647d37636ed0e79d817113e388ae5df23a88a29
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782409"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934657"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>为 UML 模型定义验证约束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -190,7 +187,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。  
   
-     **疑难解答**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未启动：  
+     **故障排除**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不会启动：  
   
     -   如果你有多个项目，请确保将 VSIX 项目设置为解决方案的启动项目。  
   
@@ -212,7 +209,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 6.  双击错误报告。 如果报告中提及的元素在屏幕上可见，则将突出显示这些元素。  
   
-     **故障排除**：如果菜单上没有“验证”  命令，请确保：  
+     **故障排除**:如果**验证**未显示命令的菜单上，请确保：  
   
     -   验证项目作为一个 MEF 组件列在 VSIX 项目的 **source.extensions.manifest** 中的在“资产”  选项卡中列出。  
   
@@ -262,13 +259,13 @@ public void ValidateSomething
 |||  
 |-|-|  
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|使用 Managed Extensibility Framework (MEF) 将方法定义为验证约束。|  
-|`[ValidationMethod (ValidationCategories.Menu)]`|指定将执行验证的时间。 使用按位 OR (&#124;) 如果想要合并多个选项。<br /><br /> `Menu` = 由“验证”菜单调用。<br /><br /> `Save` = 在保存模型时调用。<br /><br /> `Open` = 在打开模型时调用。 `Load` = 在保存模型时调用，但如果违背规则，则警告用户此操作可能重新打开模型。 也可以在加载时（解析模型前）调用。|  
+|`[ValidationMethod (ValidationCategories.Menu)]`|指定将执行验证的时间。 使用按位 OR (&#124;) 如果想要合并多个选项。<br /><br /> `Menu` = 由“验证”菜单调用。<br /><br /> `Save` = 在保存模型时调用。<br /><br /> `Open` = 在打开模型时调用。 `Load` = 在保存模型时调用，但如果违背规则，则警告用户此操作可能不会重新打开模型。 也可以在加载时（解析模型前）调用。|  
 |`public void ValidateSomething`<br /><br /> `(ValidationContext context,`<br /><br /> `IElement element)`|将第二个参数 `IElement` 替换为你希望向其应用约束的元素类型。 这将对指定类型的所有元素调用该约束方法。<br /><br /> 方法的名称并不重要。|  
   
  你可以使用第二个参数中的其他类型定义所需的尽可能多的验证方法。 调用验证时，将对符合该参数类型的每个模型元素调用每个验证方法。  
   
 ### <a name="reporting-validation-errors"></a>报告验证错误  
- 若要创建错误报告，请使用 `ValidationContext` 提供的方法：  
+ 若要创建错误报告，请使用 `ValidationContext`提供的方法：  
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
@@ -278,7 +275,7 @@ public void ValidateSomething
   
 - `elementsWithError` 标识模型中的元素。 当用户双击错误报告时，将选择代表此元素的形状。  
   
-  `LogError(),` `LogWarning()` 和 `LogMessage()` 分别将消息放入错误列表的不同部分。  
+  `LogError(),` `LogWarning()` 和`LogMessage()`消息放入错误列表的不同部分。  
   
 ## <a name="how-validation-methods-are-applied"></a>如何应用验证方法  
  验证应用于模型中的每个元素，其中包括关系和部分较大元素，例如类的特性和操作的参数。  
@@ -397,7 +394,7 @@ context.LogError(... , usecase);
   
    在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，您可以通过从以下位置删除文件来删除扩展其中 *%localappdata%* 通常*DriveName*: \Users\\*用户名*\AppData\Local:  
   
-   *%Localappdata%* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="Example"></a> 示例  
  本示例查找元素间依赖关系中的循环。  
@@ -479,6 +476,3 @@ private bool NoDependencyLoops(ValidationContext context,
 ## <a name="see-also"></a>请参阅  
  [定义和安装建模扩展](../modeling/define-and-install-a-modeling-extension.md)   
  [使用 UML API 编程](../modeling/programming-with-the-uml-api.md)
-
-
-

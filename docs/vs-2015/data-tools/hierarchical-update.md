@@ -1,12 +1,9 @@
 ---
 title: 分层更新 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,13 +23,13 @@ ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d0176f203f7decb701d678a110856acdad36750b
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220168"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934454"
 ---
 # <a name="hierarchical-update"></a>分层更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +42,7 @@ ms.locfileid: "50220168"
  默认情况下，数据集视为相关的表"，关系"这意味着它不会强制外键约束。 可以通过使用数据集设计器来修改在设计时进行该设置。 选择要显示的两个表之间的关系线**关系**对话框。 您在此处进行的更改将确定 TableAdapterManager 的行为方式时它将所做的更改在相关表中发送回数据库。  
   
 ## <a name="enablehierarchical-update-in-a-dataset"></a>在数据集中的 Enablehierarchical 更新  
- 默认情况下，加上或在项目中创建所有新数据集启用分层更新。 通过设置打开或关闭分层更新**分层更新**属性中的类型化数据集[创建和编辑类型化数据集](../data-tools/creating-and-editing-typed-datasets.md)到**True**或**False**:  
+ 默认情况下，加上或在项目中创建所有新数据集启用分层更新。 通过设置打开或关闭分层更新**分层更新**属性中为数据集设计器的类型化数据集**True**或**False**:  
   
  ![分层更新设置](../data-tools/media/hierarchical-update-setting.png "分层更新设置")  
   
@@ -59,7 +56,7 @@ ms.locfileid: "50220168"
   
  默认情况下，在数据集中数据表生成关系 (<xref:System.Data.DataRelation>) 匹配的关系数据库中。 但是，在数据集中的关系不会生成作为外键约束。 <xref:System.Data.DataRelation>配置为**关系仅**而无需<xref:System.Data.ForeignKeyConstraint.UpdateRule%2A>或<xref:System.Data.ForeignKeyConstraint.DeleteRule%2A>生效。  
   
- 默认情况下，级联更新和级联删除操作会关闭即使数据库关系设置级联更新和/或级联删除开启。 例如，创建新客户和新的订单，并尝试将数据保存可以导致冲突的数据库中定义 foreign key 约束。 有关详细信息，请参阅[如何： 在数据集中配置外键约束](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e)。  
+ 默认情况下，级联更新和级联删除操作会关闭即使数据库关系设置级联更新和/或级联删除开启。 例如，创建新客户和新的订单，并尝试将数据保存可以导致冲突的数据库中定义 foreign key 约束。 有关详细信息，请参阅[如何：在数据集中配置外键约束](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e)。  
   
 ## <a name="set-the-order-to-perform-updates"></a>设置以执行更新的顺序  
  设置的顺序来执行更新集个人的顺序插入、 更新和删除，需要将所有修改后的数据保存在数据集的所有表。 启用分层更新后，插入第一次，执行，然后更新，，然后删除。 `TableAdapterManager`提供了`UpdateOrder`可以是组以执行更新第一次，然后插入和删除操作的属性。  
@@ -67,7 +64,7 @@ ms.locfileid: "50220168"
 > [!NOTE]
 >  请务必了解，更新顺序是全包含所有权限。 也就是说时不会进行更新，, 插入和删除执行在数据集中的所有表。  
   
- 若要设置`UpdateOrder`属性，则请将某些项从[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)拖到窗体中，选择`TableAdapterManager`在组件栏，然后将设置`UpdateOrder`中的属性**属性**窗口。 有关详细信息，请参阅[如何： 设置顺序时执行分层更新](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)。  
+ 若要设置`UpdateOrder`属性，则请将某些项从[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)拖到窗体中，选择`TableAdapterManager`在组件栏，然后将设置`UpdateOrder`中的属性**属性**窗口。 有关详细信息，请参阅[如何：执行分层更新时设置的顺序](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)。  
   
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>执行分层更新前创建一个数据集的备份副本  
  在您保存数据 (通过调用`TableAdapterManager.UpdateAll()`方法)，则`TableAdapterManager`尝试更新每个表在单个事务中的数据。 如果任何表的更新的任何部分失败，将回滚整个事务。 在大多数情况下，回滚返回到其原始状态的应用程序。  
@@ -80,18 +77,18 @@ ms.locfileid: "50220168"
 ## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>修改生成保存代码以执行分层更新  
  通过调用 `TableAdapterManager.UpdateAll` 方法并传入包含相关表的数据集的名称，可将数据集中相关数据表的更改保存到数据库。 例如，运行 `TableAdapterManager.UpdateAll(NorthwindDataset)` 方法将 NorthwindDataset 中所有表的更新发送到后端数据库。  
   
- 拖放项从后**数据源**窗口中，代码会自动添加到`Form_Load`事件以填充每个表 (`TableAdapter.Fill`方法)。 代码还将添加到**保存**按钮单击事件<xref:System.Windows.Forms.BindingNavigator>若要将数据从数据集保存回数据库 (`TableAdapterManager.UpdateAll`方法)。  
+ 从“数据源”窗口放置项后，代码会自动添加到 `Form_Load` 事件以填充每个表（`TableAdapter.Fill` 方法）。 代码还将添加到 <xref:System.Windows.Forms.BindingNavigator> 的“保存”按钮 click 事件中，以将数据集中的数据存回数据库中（`TableAdapterManager.UpdateAll` 方法）。  
   
- 生成的保存代码还包含调用 `CustomersBindingSource.EndEdit` 方法的一行代码。 更具体地说，它将调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法的第一个<xref:System.Windows.Forms.BindingSource>，添加到窗体。 换而言之，此代码只为生成第一个表中拖动**数据源**拖到窗体的窗口。 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 调用将提交当前正在编辑的任何数据绑定控件中的所有更改。 因此，如果数据绑定控件仍然具有焦点并且单击**保存**按钮，所有挂起的编辑，控制事务之前提交的实际保存 (`TableAdapterManager.UpdateAll`方法)。  
+ 生成的保存代码还包含调用 `CustomersBindingSource.EndEdit` 方法的一行代码。 更具体地说，它将调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法的第一个<xref:System.Windows.Forms.BindingSource>，添加到窗体。 换而言之，此代码只为生成第一个表中拖动**数据源**拖到窗体的窗口。 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 调用将提交当前正在编辑的任何数据绑定控件中的所有更改。 因此，如果数据绑定控件仍具有焦点，则单击“保存”按钮后，会先提交该控件中所有挂起的编辑，然后再执行真正的保存（`TableAdapterManager.UpdateAll` 方法）。  
   
 > [!NOTE]
 >  数据集设计器仅添加`BindingSource.EndEdit`放到窗体的第一个表的代码。 因此，必须对窗体上的每个相关表添加一行调用 `BindingSource.EndEdit` 方法的代码。 对于本演练，这意味着你必须添加一个对 `OrdersBindingSource.EndEdit` 方法的调用。  
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>更新代码以在保存前提交对相关表的更改  
   
-1. 双击**保存**按钮<xref:System.Windows.Forms.BindingNavigator>以打开**Form1**代码编辑器中。  
+1. 双击 <xref:System.Windows.Forms.BindingNavigator> 上的“保存”按钮以在代码编辑器中打开“Form1”。  
   
-2. 在调用 `OrdersBindingSource.EndEdit` 方法的代码行后添加一行调用 `CustomersBindingSource.EndEdit` 方法的代码。 中的代码**保存**按钮单击事件应如下所示：  
+2. 在调用 `OrdersBindingSource.EndEdit` 方法的代码行后添加一行调用 `CustomersBindingSource.EndEdit` 方法的代码。 “保存”按钮 click 事件中的代码应如下所示：  
   
     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
@@ -124,8 +121,7 @@ ms.locfileid: "50220168"
 |`UpdateAll` 方法|将保存数据的所有表中的所有数据。|  
 |`BackUpDataSetBeforeUpdate` 属性|确定是否在执行前创建数据集的备份副本`TableAdapterManager.UpdateAll`方法。一个布尔值。|  
 |*tableName* `TableAdapter`属性|表示`TableAdapter`。 生成`TableAdapterManager`包含每个属性`TableAdapter`它所管理。 例如，Customers 和 Orders 表具有的数据集生成具有`TableAdapterManager`，其中包含`CustomersTableAdapter`和`OrdersTableAdapter`属性。|  
-|`UpdateOrder` 属性|控制各个 insert、 update 和 delete 命令的顺序。 将此项设置中的值之一`TableAdapterManager.UpdateOrderOption`枚举。<br /><br /> 默认情况下`UpdateOrder`设置为**InsertUpdateDelete**。 这意味着，它将插入，然后更新，然后删除会对在数据集中的所有表执行。 有关详细信息，请参阅[如何： 设置顺序时执行分层更新](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)。|  
+|`UpdateOrder` 属性|控制各个 insert、 update 和 delete 命令的顺序。 将此项设置中的值之一`TableAdapterManager.UpdateOrderOption`枚举。<br /><br /> 默认情况下`UpdateOrder`设置为**InsertUpdateDelete**。 这意味着，它将插入，然后更新，然后删除会对在数据集中的所有表执行。 有关详细信息，请参阅[如何：执行分层更新时设置的顺序](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)。|  
   
 ## <a name="see-also"></a>请参阅  
  [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
-

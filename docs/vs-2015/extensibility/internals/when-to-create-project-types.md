@@ -1,26 +1,21 @@
 ---
 title: 何时创建项目类型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 021a4d5e527ca7a22ecd984805b9fbec547531ee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 682fc88fb616fbe2617fe6d336a35bf6fbc30e9f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801662"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930759"
 ---
 # <a name="when-to-create-project-types"></a>何时创建项目类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ ms.locfileid: "51801662"
 |任务|描述|  
 |----------|-----------------|  
 |处理命令|任何 VSPackage 可以处理命令。|  
-|生成编辑器|可以注册自定义编辑器。 有关详细信息，请参阅[文档 Windows 和编辑器](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)。|  
+|生成编辑器|可以注册自定义编辑器。 有关详细信息，请参阅[文档 Windows 和编辑器](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)。|  
 |拥有 windows|可以创建工具和文档窗口，而不添加新的项目类型。|  
 |在属性窗口中公开属性|所有对象可以都公开属性。|  
   
@@ -65,7 +60,6 @@ ms.locfileid: "51801662"
  项目子类型可用于扩展托管的项目类型，而无需创建新的项目类型。 项目子类型使用 COM 聚合来扩展托管的项目中编写的 Microsoft[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../../includes/csprcs-md.md)]。 使用 COM 聚合，可以重复使用的托管的项目系统实现大部分并仍然通过聚合和使用支持接口为特定方案自定义。 有关项目子类型的详细信息，请参阅[项目子类型](../../extensibility/internals/project-subtypes.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [文档 Windows 和编辑器](http://msdn.microsoft.com/en-us/603625e1-62b6-413a-bc44-089346e166bc)   
- [清单： 创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [文档 Windows 和编辑器](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)
-

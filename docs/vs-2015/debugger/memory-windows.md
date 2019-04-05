@@ -1,14 +1,9 @@
 ---
 title: 内存 Windows |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
 dev_langs:
@@ -31,13 +26,13 @@ ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 704c0ff20dbd11b4640b2d81670a4cdeaf3f1ea0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5a9c68709c1a06a84fe624bee726da5a12920dbd
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724241"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58937191"
 ---
 # <a name="memory-windows"></a>“内存”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ ms.locfileid: "51724241"
 2.  键入或粘贴你想要看到的然后按的地址**ENTER**。  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>更改“内存”窗口显示信息的方式  
- 可以自定义的方式**内存**窗口显示内存内容。 默认情况下，内存内容以十六进制格式显示为一个字节的整数，列数由当前的窗口宽度自动确定。  
+ 可以自定义“内存”窗口显示内存内容的方式。 默认情况下，内存内容以十六进制格式显示为一个字节的整数，列数由当前的窗口宽度自动确定。  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>更改内存内容的格式  
   
@@ -105,7 +100,7 @@ ms.locfileid: "51724241"
   
     如果打开活动计算，则该选项处于选中状态，单击该选项将关闭活动计算。 如果关闭活动计算，则该选项未处于选中状态，单击该选项将打开活动计算。  
   
-   可以隐藏或显示在顶部工具栏**内存**窗口。 当工具栏隐藏时，无法访问“地址”框或其他工具。  
+   可以隐藏或显示“内存”窗口顶部的工具栏。 当工具栏隐藏时，无法访问“地址”框或其他工具。  
   
 #### <a name="to-toggle-the-toolbar"></a>切换工具栏  
   
@@ -128,8 +123,3 @@ ms.locfileid: "51724241"
   
 ## <a name="see-also"></a>请参阅  
  [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)
-
-
-
-
-

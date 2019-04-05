@@ -1,28 +1,23 @@
 ---
-title: 演练： 使用快捷键与编辑器扩展 |Microsoft Docs
-ms.custom: ''
+title: 演练：编辑器扩展中使用的快捷键 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1e68cf9d3e33ad07ab092de680078972dfaf2d70
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b40c0590b19b555f757af1e0a38481b0b245c07d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797450"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931785"
 ---
-# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>演练：在编辑器扩展中使用快捷键
+# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>演练：将快捷键与编辑器扩展结合使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在编辑器扩展中响应键盘快捷方式。 下面的演练演示如何使用快捷键将视图修饰添加到文本视图。 本演练基于视区修饰编辑器模板，并且可以使用添加修饰 + 字符。  
@@ -42,7 +37,7 @@ ms.locfileid: "51797450"
   
     Microsoft.VisualStudio.OLE.Interop  
   
-    Microsoft.visualstudio.shell.14.0 的引用  
+    Microsoft.VisualStudio.Shell.14.0  
   
     Microsoft.VisualStudio.TextManager.Interop  
   
@@ -248,4 +243,3 @@ private void CreateVisuals(ITextViewLine line)
 2.  创建或打开一个文本文件。 键入包含字符某些字词 a，然后键入 + 文本视图中的任意位置。  
   
      紫色正方形应当出现在文件中的每个 a 字符。
-

@@ -1,21 +1,17 @@
 ---
 title: 解决 DPI 问题 2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 542676de0efabcfa58945fc1572fc5539f52c209
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931340"
 ---
 # <a name="addressing-dpi-issues"></a>解决 DPI 问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,9 +94,9 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
 - LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (函数允许扩展在 X / Y 轴)  
   
-- int 空间 = DpiHelper.LogicalToDeviceUnitsX (10);  
+- int space = DpiHelper.LogicalToDeviceUnitsX (10);  
   
-- int 高度 = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
+- int height = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
   有 LogicalToDeviceUnits 重载以允许缩放对象，如 Rect、 点和大小。  
   
@@ -151,7 +147,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
 - 为菜单项和插图图像<xref:System.Windows.Media.BitmapScalingMode>但不会导致其他失真项目以消除颜色容差 （在 200%和 300%） 时，应使用。  
   
-- • 对于较大的缩放级别不倍数 （例如，250%或 350%），100%缩放与双三次结果的插图图像模糊、 冲蚀 UI 中。 更好的效果被获取的第一个缩放到 100%（例如，200%或 300%） 的最大的多个与 NearestNeighbor 图像和使用双三次从该处进行缩放。 请参阅特殊情况： 对于大型 DPI prescaling WPF 图像级别的详细信息。  
+- • 对于较大的缩放级别不倍数 （例如，250%或 350%），100%缩放与双三次结果的插图图像模糊、 冲蚀 UI 中。 更好的结果被通过第一个缩放到 100%（例如，200%或 300%） 的最大的多个与 NearestNeighbor 图像并使用双三次从该处进行缩放。 请参阅特殊情况： 对于大型 DPI prescaling WPF 图像级别的详细信息。  
   
   Microsoft.VisualStudio.PlatformUI 命名空间中的 DpiHelper 类提供成员<xref:System.Windows.Media.BitmapScalingMode>，可以用于绑定。 它将允许 Visual Studio shell 来控制均匀，具体取决于 DPI 比例因子缩放模式下跨产品的位图。  
   
@@ -169,7 +165,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
  一些 UI 可以独立于系统设置 DPI 缩放级别，如 Visual Studio 文本编辑器和基于 WPF 的设计器 （WPF 桌面和 Windows 应用商店） 进行缩放。 在这些情况下，不应使用 DpiHelper.BitmapScalingMode。 若要解决此问题在编辑器中，IDE 团队创建自定义属性的标题为 RenderOptions.BitmapScalingMode。 将该属性值设置为 HighQuality 或 NearestNeighbor 中，具体取决于系统和 UI 的组合的缩放级别。  
   
 ## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>特殊情况： prescaling 大 DPI 级别的 WPF 图像  
- 对于不是 100%（例如，250%、 350%等） 的倍数的非常大的缩放级别，缩放与模糊、 冲蚀 UI 中的双三次结果的插图图像。 这些映像清晰的文本旁边的印象几乎就像的光学视觉效果。 图像显示为更接近眼看并且失去与文本相关的焦点。 通过第一个缩放到 100%（例如，200%或 300%） 的最大的多个与 NearestNeighbor 映像并使用双三次到 （更多的 50%) 的其余部分进行缩放，将改进此放大大小缩放结果。  
+ 对于不是 100%（例如，250%、 350%等） 的倍数的非常大的缩放级别，缩放与模糊、 冲蚀 UI 中的双三次结果的插图图像。 这些映像清晰的文本旁边的印象几乎就像的光学视觉效果。 图像显示为更接近眼看并且失去与文本相关的焦点。 通过第一个缩放到 100%（例如，200%或 300%） 的最大的多个与 NearestNeighbor 映像，可以提高此放大大小缩放结果使用和缩放到其余部分 （更多的 50%) 的双三次。  
   
  以下是在结果中，差异的示例的第一个图像进行缩放，具有 100%-> 的改进了双缩放的算法 200%-> 250%和第二个只需使用双三次 100%-> 250%。  
   
@@ -177,7 +173,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  为了启用要用于此双缩放、 XAML 标记显示每个 Image 元素的 UI 将需要进行修改。 以下示例演示如何在 Visual Studio 中使用的 DpiHelper 库和 Shell.12/14 中使用双缩放在 WPF 中。  
   
- 步骤 1: Prescale 300%的图像为 200%，依此类推使用 NearestNeighbor。  
+ 步骤 1：Prescale 到 200%、 300%等使用 NearestNeighbor 映像。  
   
  Prescale 使用任一转换器应用上一个绑定，或使用 XAML 标记扩展的映像。 例如：  
   
@@ -207,7 +203,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- 步骤 2： 确保最终的大小适合于当前的 DPI。  
+ 步骤 2：请确保最终的大小适合于当前的 DPI。  
   
  由于 WPF 针对使用 BitmapScalingMode 属性 UIElement 上设置的当前 DPI 缩放用户界面，应使用 prescaled 的映像，因为其源将查找两个或三个时间比它更大的图像控件。 以下是几种方法，若要避免这种效果：  
   
@@ -366,4 +362,3 @@ public int GetHostInfo(DOCHOSTUIINFO info)
                        ref commandOutput);  
     }  
     ```
-

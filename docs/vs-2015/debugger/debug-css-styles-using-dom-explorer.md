@@ -1,14 +1,9 @@
 ---
 title: 使用 DOM 资源管理器调试 CSS 样式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 2dfef7c6-7db2-4550-b694-783b0e535cea
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1f5a2c8ef6792403628430cb9881b24e6e279f02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2467bce94a9f9de3df87ab1c05fd4b84a7e68ee4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750152"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934612"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>使用 DOM 资源管理器调试 CSS 样式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +95,7 @@ ms.locfileid: "51750152"
   
 5.  按 F5 以在调试模式下运行应用程序。  
   
-     在应用程序加载完后，查看列表项的标题，如 **“Group Title: 1”**。 颜色未发生更改，这表示尝试对标题应用橙色失败。 我们将使用 DOM 资源管理器中的 CSS 选项卡找出问题并进行修复。  
+     当应用程序加载完后，查看列表项的标题如**Group Title:1**. 颜色未发生更改，这表示尝试对标题应用橙色失败。 我们将使用 DOM 资源管理器中的 CSS 选项卡找出问题并进行修复。  
   
     > [!TIP]
     >  在模拟器中显示应用程序后，请将模拟器放置在 Visual Studio 窗口的旁边，以便你能够立即看到选择的结果以及对 CSS 样式所做的更改。  
@@ -108,9 +103,9 @@ ms.locfileid: "51750152"
 6.  切换到 Visual Studio，然后在 DOM 资源管理器中单击 **“选择元素”** （或按 Ctrl+B）。 这将更改选择模式以使你可通过单击某项来选择该项，然后将应用程序置于前台。 单击后模式即恢复原样。 下面是 **“选择元素”** 按钮。 ![在 DOM 资源管理器中选择元素按钮](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
-    >  也可直接在 DOM 资源管理器中选择 HTML 元素。 有关选择元素的详细信息，请参阅[快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。  
+    >  也可直接在 DOM 资源管理器中选择 HTML 元素。 有关选择元素的详细信息，请参阅[快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。  
   
-7.  在模拟器主页的左面板中，将鼠标悬停在列表中第一项的标题 **“Group Title: 1”** 上。 标题将会突出显示，如下所示：  
+7.  在模拟器中，悬停在列表中，第一个项的标题**Group Title:1**，在左面板中的主页页面。 标题将会突出显示，如下所示：  
   
      ![使用选择元素按钮](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
@@ -162,10 +157,7 @@ ms.locfileid: "51750152"
 16. 若要更改源 CSS 文件，请单击 **“样式”** 选项卡上的 **“items.css”** 链接。这将打开 items.css，你可以在其中更改应用程序代码中 `color` 样式的值。 若要刷新应用程序而无需停止和重新启动调试器，请单击![刷新 Windows 应用程序按钮](../debugger/media/js-refresh.png "JS_Refresh") (**刷新 Windows 应用**) 按钮在**调试**工具栏。  
   
 ## <a name="see-also"></a>请参阅  
- [快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
  [使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)   
  [查看 DOM 事件侦听器](../debugger/view-dom-event-listeners.md)   
  [产品支持和辅助功能](http://go.microsoft.com/fwlink/?LinkId=253502)
-
-
-

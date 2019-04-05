@@ -1,14 +1,9 @@
 ---
 title: 使用并提供服务 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - examples [Visual Studio SDK], services
 - Visual Studio, services
@@ -16,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: c0b415ba-b825-4da0-9faf-8a60a663e302
 caps.latest.revision: 42
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 189ff14c566c3007810ef35cd63ec03a5958e07c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7f58e29797e9a7760aa0f48c68868199f51b3c92
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779705"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931857"
 ---
 # <a name="using-and-providing-services"></a>使用并提供服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供了一组特定的另一个 VSPackage 来使用的接口。 例如，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]提供了<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>服务到任何 VSPackage 它加载。 此服务提供<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口，可用于写入活动日志。 有关详细信息，请参阅[如何： 使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
+服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供了一组特定的另一个 VSPackage 来使用的接口。 例如，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]提供了<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>服务到任何 VSPackage 它加载。 此服务提供<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口，可用于写入活动日志。 有关详细信息，请参阅[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
   
  Vspackage 可以提供其自己的使用的服务<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService>接口...  
   
@@ -46,15 +41,14 @@ ms.locfileid: "51779705"
  [如何：获取服务](../extensibility/how-to-get-a-service.md)  
  介绍如何请求 （使用） 服务。  
   
- [如何：提供服务](../extensibility/how-to-provide-a-service.md)  
+ [如何：提供的服务](../extensibility/how-to-provide-a-service.md)  
  讨论如何提供服务。  
   
  [如何：提供异步 Visual Studio 服务](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
  讨论如何提供异步服务。  
   
- [如何：进行服务的故障排除](../extensibility/how-to-troubleshoot-services.md)  
+ [如何：排查服务问题](../extensibility/how-to-troubleshoot-services.md)  
  讨论常见的问题并提供了这些解决方案。  
   
 ## <a name="related-sections"></a>相关章节  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
-

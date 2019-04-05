@@ -1,27 +1,22 @@
 ---
-title: 清单： 创建旧版语言服务 |Microsoft Docs
-ms.custom: ''
+title: 清单：创建旧版语言服务 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 23dc268aad528e7a628b384f8931ccfcec2674fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782981"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931056"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>清单：创建旧版语言服务
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -116,7 +111,7 @@ ms.locfileid: "51782981"
   
 - 大纲显示  
   
-   有几个选项用于支持大纲显示。 例如，可以支持**折叠到定义**命令，提供控制编辑器的大纲区域，或支持客户端控制区域。 有关详细信息，请参阅[如何： 提供扩展的大纲显示支持旧版语言服务中](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)。  
+   有几个选项用于支持大纲显示。 例如，可以支持**折叠到定义**命令，提供控制编辑器的大纲区域，或支持客户端控制区域。 有关详细信息，请参阅[如何：提供旧版语言服务中的展开大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)。  
   
 - 语言服务注册  
   
@@ -133,4 +128,3 @@ ms.locfileid: "51782981"
 ## <a name="see-also"></a>请参阅  
  [开发旧版语言服务](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-
