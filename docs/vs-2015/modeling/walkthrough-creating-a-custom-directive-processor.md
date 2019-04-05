@@ -1,12 +1,9 @@
 ---
-title: 演练： 创建自定义指令处理器 |Microsoft Docs
-ms.custom: ''
+title: 演练：创建自定义指令处理器 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
@@ -14,13 +11,13 @@ ms.assetid: b8f35a36-14e1-4467-8f5f-e01402af14d5
 caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 321dd514e0690997cd0aab4ba2b05a7fe0898b6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e10c489ee8bd14599220429c9d74821986f8b915
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833416"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937351"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>演练：创建自定义指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +48,7 @@ ms.locfileid: "49833416"
 
  `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`  
 
- 自定义指令处理器将变量和属性添加到生成转换类。 你编写的指令使用 <xref:System.CodeDom> 类创建引擎添加到生成转换类的代码。 <xref:System.CodeDom> 类使用 Visual C# 或 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 创建代码，具体取决于在 `language` 指令的 `template` 参数中指定的语言。 指令处理器的语言和访问指令处理器的文本模板的语言不必一致。  
+ 自定义指令处理器将变量和属性添加到生成转换类。 您编写的指令使用 <xref:System.CodeDom> 类创建引擎添加到生成转换类的代码。 <xref:System.CodeDom> 类使用 Visual C# 或 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 创建代码，具体取决于在 `language` 指令的 `template` 参数中指定的语言。 指令处理器的语言和访问指令处理器的文本模板的语言不必一致。  
 
  指令创建的代码如下所示：  
 
@@ -611,7 +608,7 @@ End Property
 
 4.  有关[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]仅，打开**项目**菜单，然后单击**CustomDP 属性**。 上**应用程序**选项卡上，在**根命名空间**，删除默认值为`CustomDP`。  
 
-5.  在“文件”  菜单上，单击“全部保存” 。  
+5.  在“文件”菜单上，单击“全部保存”。  
 
 6.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
 
@@ -663,7 +660,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     注册表项应具有以下值：  
 
 
-   |   name    |  类型  |                                   数据                                   |
+   |   名称    |  类型  |                                   数据                                   |
    |-----------|--------|--------------------------------------------------------------------------|
    | (默认) | REG_SZ |                             (未设置值)                              |
    |   类   | REG_SZ |                    CustomDP.CustomDirectiveProcessor                     |
@@ -672,7 +669,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     如果已将程序集放置在 GAC 中，则值应如下所示：  
 
 
-   |   name    |  类型  |               数据                |
+   |   名称    |  类型  |               数据                |
    |-----------|--------|-----------------------------------|
    | (默认) | REG_SZ |          (未设置值)          |
    |   类   | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -838,7 +835,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  在本示例中，`Processor` 参数的值为 `CustomDirectiveProcessor`。 `Processor` 参数的值必须与处理器的注册表项的名称一致。  
 
-5.  在“文件”  菜单上，单击“全部保存” 。  
+5.  在“文件”菜单上，单击“全部保存”。  
 
 #### <a name="to-test-the-directive-processor"></a>测试指令处理器  
 
@@ -975,6 +972,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3.  若要在中查看在浏览器中，输出**解决方案资源管理器**中，右击 TestDP.htm，再单击**视图中浏览器**。  
 
      输出应与原始文本相同，只是应用了 HTML 格式。 每个项名称都应显示为粗体。
-
-
-
