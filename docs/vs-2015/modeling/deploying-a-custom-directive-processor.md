@@ -1,25 +1,22 @@
 ---
 title: 部署自定义指令处理器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 93165a1534ed01dca057fc13059858c4c3e7a81c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836393"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936832"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自定义指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ ms.locfileid: "49836393"
   
  可用的方法包括：  
   
-- [Visual Studio 扩展 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。 通过这种方法，可以在自己或他人的计算机上安装和卸载指令处理器。 通常，可能会在同一 VSIX 中包含其他功能。  
+- [Visual Studio 扩展 (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832)。 通过这种方法，可以在自己或他人的计算机上安装和卸载指令处理器。 通常，可能会在同一 VSIX 中包含其他功能。  
   
 - [VSPackage](../extensibility/internals/vspackages.md)。 如果要定义一个包含指令处理器和其他功能的 VSPackage，有一种方便的方法可以注册指令处理器。  
   
@@ -37,7 +34,7 @@ ms.locfileid: "49836393"
   仅当要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 或 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中转换文本模板时，才需要从上述方法中选用一种。 如果在自己的应用程序中使用自定义宿主，则由自定义宿主负责查找每条指令的指令处理器。  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>在 VSIX 中部署指令处理器  
- 您可以添加到自定义指令处理器[Visual Studio 扩展 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。  
+ 您可以添加到自定义指令处理器[Visual Studio 扩展 (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832)。  
   
  需要确保 .vsix 文件包含以下两项：  
   
@@ -163,7 +160,7 @@ ms.locfileid: "49836393"
  这种自定义指令处理器的安装方法是最不方便的一种方法。 这种方法不能方便地启用和禁用指令处理器，也不能方便地向其他用户分发指令处理器。  
   
 > [!CAUTION]
->  错误编辑注册表会严重损坏系统。 更改注册表之前，请务必备份计算机中的所有重要数据。  
+>  注册表编辑不当可能会严重损坏系统。 更改注册表之前，请务必备份计算机中的所有重要数据。  
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>通过设置注册表项注册指令处理器  
   
@@ -189,7 +186,7 @@ ms.locfileid: "49836393"
   
    如果自定义指令处理器不在 GAC 中，则注册表子项应如下表所示：  
   
-|name|类型|数据|  
+|名称|类型|数据|  
 |----------|----------|----------|  
 |(默认)|REG_SZ|(未设置值)|  
 |类|REG_SZ|**\<Namespace 名称 >。\<类名 >**|  
@@ -197,7 +194,7 @@ ms.locfileid: "49836393"
   
  如果程序集在 GAC 中，则注册表子项应如下表所示：  
   
-|name|类型|数据|  
+|名称|类型|数据|  
 |----------|----------|----------|  
 |(默认)|REG_SZ|(未设置值)|  
 |类|REG_SZ|\<**完全限定的类名**>|  
@@ -205,6 +202,3 @@ ms.locfileid: "49836393"
   
 ## <a name="see-also"></a>请参阅  
  [创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)
-
-
-

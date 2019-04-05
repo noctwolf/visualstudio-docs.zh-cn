@@ -1,14 +1,9 @@
 ---
 title: IDebugProgram2::Execute |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::Execute
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2ddbab3802a983bdd802379389c4ebf8bd171d58
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 00dac8c76a290adf877640a5fe3465d24826ec2e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756873"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936190"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51756873"
 将继续运行此程序从已停止状态。 清除任何以前的执行状态 （如步骤），然后再次执行该程序开始。  
   
 > [!NOTE]
->  此方法已弃用。 使用[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)方法相反。  
+>  已弃用此方法。 使用[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)方法相反。  
   
 ## <a name="syntax"></a>语法  
   
@@ -57,4 +52,3 @@ int Execute();
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
-

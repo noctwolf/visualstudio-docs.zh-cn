@@ -1,12 +1,9 @@
 ---
 title: 在 WPF 应用程序中创建查找表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +21,13 @@ ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303337"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58937183"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 应用程序中创建查找表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +41,11 @@ ms.locfileid: "49303337"
   
 1.  向项目中添加具有相关数据的数据源的以下类型之一：  
   
-    -   数据集或实体数据模型。 有关详细信息，请参阅 [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md)。  
+    -   数据集或实体数据模型。
+
+    -   WCF 数据服务，WCF 服务或 Web 服务。 有关详细信息，请参阅[如何：连接到服务中的数据](../data-tools/how-to-connect-to-data-in-a-service.md)。  
   
-    -   WCF 数据服务，WCF 服务或 Web 服务。 有关详细信息，请参阅[如何： 连接到服务中的数据](../data-tools/how-to-connect-to-data-in-a-service.md)。  
-  
-    -   对象。 有关详细信息，请参阅[如何： 连接到对象中的数据](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)。  
+    -   对象。 有关详细信息，请参阅[如何：连接到对象中的数据](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)。  
   
     > [!NOTE]
     >  创建查找表之前，必须存在两个相关的表或对象作为项目的数据源。  
@@ -57,7 +54,7 @@ ms.locfileid: "49303337"
   
      有关有效放置目标的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
   
-3.  上**数据**菜单上，单击**显示数据源**以打开**数据源**窗口。  
+3.  在“数据”菜单上单击“显示数据源”，打开“数据源”窗口。  
   
 4.  展开中的节点**数据源**窗口中，直至你可看到父表或对象和相关的子表或对象。  
   
@@ -103,5 +100,4 @@ ms.locfileid: "49303337"
  [将 WPF 控件绑定到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [将 WPF 控件绑定到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [在 WPF 应用程序中显示相关的数据](../data-tools/display-related-data-in-wpf-applications.md)   
- [演练：在 WPF 应用程序中显示相关数据](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [演练：在 WPF 应用程序中显示相关的数据](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

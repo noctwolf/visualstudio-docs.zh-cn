@@ -1,14 +1,9 @@
 ---
 title: 旧版语言服务中的快速信息 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Quick Info, supporting in language services [managed package framework]
 - IntelliSense, Quick Info
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6ff6f4a29d194aaa5c9b868fffa19947a7321c77
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5f27b58b4ef94f4b859b43c2321ddbd9b67327fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797203"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936988"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>旧版语言服务中的快速信息
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 IntelliSense 快速信息显示有关标识符的信息源中，当用户将插入符号放置在标识符中并选择**快速信息**从**IntelliSense**菜单或保存鼠标标识符上方的光标。 这会导致工具提示，显示有关标识符的信息。 此信息通常包括标识符类型。 当调试引擎处于活动状态时，此信息可能包括的当前值。 调试引擎提供表达式的值，而该语言服务处理仅标识符。  
   
- 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[演练： 显示 QuickInfo 工具提示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)。  
+ 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[演练：显示快速信息工具提示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)。  
   
 > [!NOTE]
 >  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
@@ -49,4 +44,3 @@ IntelliSense 快速信息显示有关标识符的信息源中，当用户将插�
  大多数分析器执行整个源代码文件的初始分析，并将结果存储在分析树。 当执行完整的分析<xref:Microsoft.VisualStudio.Package.ParseReason>传递给<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法。 然后，其他类型的分析可用的分析树来获取所需的信息。  
   
  例如，分析原因的值<xref:Microsoft.VisualStudio.Package.ParseReason>可以查找在源位置的标识符和要获取类型信息的分析树中查找它。 此类型信息然后传递给<xref:Microsoft.VisualStudio.Package.AuthoringScope>类，并返回<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A>方法。
-

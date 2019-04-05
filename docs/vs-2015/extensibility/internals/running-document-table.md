@@ -1,14 +1,9 @@
 ---
 title: 运行文档表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bd7b8cd44c72ea058f71575bdd1774efafa86731
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2bee266cb917f1e16bdebbdad52f2cc30055835e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746299"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937330"
 ---
 # <a name="running-document-table"></a>运行文档表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,4 +61,3 @@ IDE 维护名为运行文档表 (RDT) 的内部结构中的所有当前打开的
 ## <a name="see-also"></a>请参阅  
  [RDT_ReadLock 用法](../../extensibility/internals/rdt-readlock-usage.md)   
  [持久性和正在运行的文档表](../../extensibility/internals/persistence-and-the-running-document-table.md)
-

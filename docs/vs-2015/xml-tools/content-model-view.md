@@ -1,25 +1,20 @@
 ---
 title: 内容模型视图 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860300"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936136"
 ---
 # <a name="content-model-view"></a>内容模型视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "49860300"
   
  节点的内容模型由一个可展开的图形树表示，其中元素和特性显示为树节点。 默认情况下，仅一个级别处于展开状态。 其他信息（如排序器、类型名称、组和其他容器）与其包含的元素和特性一起放置在垂直条（当展开时）中。 双击垂直条时，该垂直条会变为水平且树会折叠。 双击水平条时，该水平条会变为垂直且树会展开。 选择垂直条将会选定容器中的所有节点。 如果元素是可展开或可折叠的，则节点的右侧会显示 Expander。  
   
- 如果设计图面为空，则会显示 XML 编辑器、XML 架构资源管理器和水印。 *水印*是指向所有 XSD 设计器视图的列表。 如果架构集有错误，则列表的末尾会显示以下文本：“请使用‘错误列表’查看和修复架构集中的错误”[Use the Error List to view and fix the errors in the set]。  
+ 如果设计图面为空，则会显示 XML 编辑器、XML 架构资源管理器和水印。 *水印*是指向所有 XSD 设计器视图的列表。 如果架构集有错误，在列表末尾显示以下文本："使用错误列表以查看并集中解决错误。"  
   
 ## <a name="breadcrumb-bar"></a>痕迹栏  
  内容模型视图底部的痕迹栏显示所选节点在架构集中所处的位置。  
@@ -49,7 +44,7 @@ ms.locfileid: "49860300"
 ## <a name="context-menus"></a>上下文菜单  
  在设计图面或“工作区”面板上右键单击某一项时，会出现一个上下文菜单。 下表介绍了可用于内容模型视图的设计图面的选项。  
   
-|选项|描述|  
+|Option|描述|  
 |------------|-----------------|  
 |**在 XML 架构资源管理器中显示**|将焦点置于架构资源管理器上，并突出显示架构集节点。|  
 |**在关系图视图中显示**|切换到图形视图。|  
@@ -61,7 +56,7 @@ ms.locfileid: "49860300"
   
  下表介绍了可用于“工作区”面板的选项。  
   
-|选项|描述|  
+|Option|描述|  
 |------------|-----------------|  
 |**在 XML 架构资源管理器中显示**|将焦点置于架构资源管理器上，并突出显示架构集节点。|  
 |**在关系图视图中显示**|切换到图形视图。|  
@@ -81,11 +76,11 @@ ms.locfileid: "49860300"
   
  ![XML 架构设计器工具栏](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")  
   
-|选项|描述|  
+|Option|描述|  
 |------------|-----------------|  
-|**显示起始视图**|切换到[启动视图](../xml-tools/start-view.md)。 可以使用键盘快捷方式访问此视图： **CTRL + 1**。|  
-|**显示内容模型视图**|切换到[内容模型视图](../xml-tools/content-model-view.md)。 可以使用键盘快捷方式访问此视图： **CTRL + 2**。|  
-|**显示图形视图**|切换到[图形视图](../xml-tools/graph-view.md)。 可以使用键盘快捷方式访问此视图： **CTRL + 3**。|  
+|**显示起始视图**|切换到[启动视图](../xml-tools/start-view.md)。 可以使用键盘快捷方式访问此视图：**CTRL + 1**。|  
+|**显示内容模型视图**|切换到[内容模型视图](../xml-tools/content-model-view.md)。 可以使用键盘快捷方式访问此视图：**CTRL + 2**。|  
+|**显示图形视图**|切换到[图形视图](../xml-tools/graph-view.md)。 可以使用键盘快捷方式访问此视图：**CTRL + 3**。|  
 |**清空工作区**|清空工作区和设计图面。|  
 |**从工作区中删除**|从工作区和设计图面中删除所选节点。|  
 |**移除所选内容从工作区**|从工作区和设计图面中删除未选择的节点。|  
@@ -123,6 +118,3 @@ ms.locfileid: "49860300"
   
 ## <a name="see-also"></a>请参阅  
  [XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
 title: 语言服务和编辑器扩展入门 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f09056d184256e2d62387af08c61186c6ff57c02
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e247192b19e8ae2e2037281f4f89631d2ea78605
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735211"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936887"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>语言服务和编辑器扩展入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ ms.locfileid: "51735211"
 ## <a name="running-extensions-in-the-experimental-instance"></a>在实验实例中运行扩展  
  通过将其部署在以下实验性文件夹 （在 Windows Vista 和 Windows 7） 中开发扩展时，可以使你的 Visual Studio 的工作版本：  
   
- *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*公司*\\*扩展 Id*  
+ *%LOCALAPPDATA%* \VisualStudio\10.0Exp\Extensions\\*Company*\\*ExtensionID*  
   
  其中 *%LOCALAPPDATA%* 是登录的用户的名称*公司*是拥有该扩展，该公司的名称并*ExtensionID*是扩展的 ID。  
   
@@ -89,10 +84,9 @@ ms.locfileid: "51735211"
   
  您还可以创建编辑器的 MEF 组件从 Visual Studio 包扩展。 请参阅下面的演练，有关详细信息：  
   
--   [演练：在编辑器扩展中使用 Shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+-   [演练：编辑器扩展中使用 Shell 命令](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [演练：在编辑器扩展中使用快捷键](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+-   [演练：编辑器扩展中使用的快捷键](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)
-
