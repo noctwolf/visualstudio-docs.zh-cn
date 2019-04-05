@@ -1,14 +1,9 @@
 ---
 title: C + + 断言 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -33,28 +28,28 @@ ms.assetid: 2d7b0121-71aa-414b-bbb6-ede1093d0bfc
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3dc4c2a6c4f5b9d4a0e4e1cf0fd0a4a6c9928de6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e130bac0a20d2f1e4421b6c8bd34ac2b211c55f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799751"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934778"
 ---
 # <a name="cc-assertions"></a>C/C++ 断言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-断言语句指定您希望在您的程序中的点，则返回 true 的条件。 如果该条件不为 true，则断言失败，程序的执行被中断，并[断言失败对话框](../debugger/assertion-failed-dialog-box.md)出现。  
+断言语句指定你预期程序中的某个点为 true 的条件。 如果该条件不为 true，则断言失败，程序执行中断并显示[“断言失败”对话框](../debugger/assertion-failed-dialog-box.md)。  
 
- Visual c + + 支持基于以下构造的断言语句：  
+ Visual C++ 支持基于以下构造的断言语句：  
 
 - MFC 程序的 MFC 断言。  
 
-- [ATLASSERT](http://msdn.microsoft.com/library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3)的程序的使用 atl。  
+- 使用 ATL 的程序的 [ATLASSERT](http://msdn.microsoft.com/library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3)。  
 
 - 使用 C 运行时库的程序的 CRT 断言。  
 
-- ANSI [assert 函数](http://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40)其他 C/c + + 程序。  
+- 其他 C/C++ 程序的 ANSI [assert 函数](http://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40)。  
 
   可以使用断言来捕捉逻辑错误、 检查操作的结果和测试应处理的错误条件。  
 
@@ -82,7 +77,7 @@ ms.locfileid: "51799751"
 - [查找未处理的错误](#BKMK_Testing_error_conditions_)  
 
 ##  <a name="BKMK_How_assertions_work"></a> 断言的工作原理  
- 当由于 MFC 或 C 运行时库断言就会停止调试器时，然后如果源不可用，调试器导航至断言的发生位置的源文件中的点。 断言消息显示在这种[输出窗口](../ide/reference/output-window.md)并**断言失败**对话框。 可以将复制从断言消息**输出**窗口到文本窗口中，如果你想要将其保存以供将来参考。 **输出**窗口可能包含其他错误信息。 这些消息仔细检查，因为它们提供了断言失败的原因的线索。  
+ 当调试器由于 MFC 或 C 运行时库断言而停止时，如果源文件可用，则调试器将导航至源文件中的断言发生点。 断言消息显示在[输出窗口](../ide/reference/output-window.md) 和 **断言失败** 对话框中。 如果要保存断言消息以供将来参考，可以将断言消息从**输出**窗口复制到某个文本窗口。 **输出** 窗口可能还包含其他错误信息。 请仔细检查这些消息，因为它们提供了断言失败原因的线索。  
 
  使用断言来在开发过程中检测错误。 通常，对于每个假设使用一个断言。 例如，如果假定参数不是 NULL，请使用断言测试这种假设。  
 
@@ -356,6 +351,3 @@ _ASSERT(!myErr); // Don't do this, either!
  [调试器安全](../debugger/debugger-security.md)   
  [调试本机代码](../debugger/debugging-native-code.md)   
  [托管代码中的断言](../debugger/assertions-in-managed-code.md)
-
-
-
