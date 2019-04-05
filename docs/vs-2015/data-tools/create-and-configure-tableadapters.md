@@ -1,12 +1,9 @@
 ---
 title: 创建和配置 Tableadapter |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +19,13 @@ ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 24f53af16bcab0e3ff631a7c264f139f94d92232
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49917643"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930580"
 ---
 # <a name="create-and-configure-tableadapters"></a>创建和配置 TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ Tableadapter 提供你的应用程序和数据库之间的通信。 在连接到
   
  如果从工具箱拖动新的 TableAdapter 时**数据集设计器**在具有焦点，向导提示操作，您可以指定 TableAdapter 应连接到的数据源，以及哪些类型的命令应该用于与通信数据库、 SQL 语句或存储的过程。 如果要配置已与数据源相关联的 TableAdapter 中看不到此名称。  
   
--   使用**创建方法以将更新发送到数据库直接**选项等同于设置`GenerateDBDirectMethods`属性设为 true。 原始的 SQL 语句不会提供足够的信息或查询不是可更新的查询时，选项将不可用。 发生此情况，例如，在**加入**查询和返回单个 （标量） 值的查询。  
+-   使用**创建方法以将更新发送到数据库直接**选项等同于设置`GenerateDBDirectMethods`属性设为 true。 当原始 SQL 语句未提供足够的信息或查询不是可更新的查询时，此选项不可用。 发生此情况，例如，在**加入**查询和返回单个 （标量） 值的查询。  
   
 -   您可以选择基础数据库中创建新的存储的过程，如果您具有正确的权限的数据库。 如果没有这些权限，这不会作为一个选项。  
   
@@ -79,7 +76,7 @@ Tableadapter 提供你的应用程序和数据库之间的通信。 在连接到
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>若要开始使用新查询的 TableAdapter 查询配置向导  
   
-1.  打开中的数据集**数据集设计器**。  
+1.  在“数据集设计器”中打开数据集。  
   
 2.  如果要创建一个新的查询，请拖动**查询**对象从**数据集**选项卡**工具箱**拖到<xref:System.Data.DataTable>，或选择**添加查询**TableAdapter 的快捷菜单中。 您还可以拖动**查询**对象拖放到的空白区域**数据集设计器**，这将创建没有关联的 TableAdapter <xref:System.Data.DataTable>。 这些查询可以只返回单个 （标量） 值或运行的 UPDATE、 INSERT 或删除对数据库的命令。  
   
@@ -116,4 +113,3 @@ Tableadapter 提供你的应用程序和数据库之间的通信。 在连接到
   
 ## <a name="see-also"></a>请参阅  
  [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)
-

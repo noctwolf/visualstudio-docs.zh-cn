@@ -1,25 +1,22 @@
 ---
 title: 向层关系图添加自定义体系结构验证 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom validation
 ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9748f2f7b43426f7f981d027400f097b260bf23d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 6cf1dad590a8d7632e9077764e85f432373cc54b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817511"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937025"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>向层关系图添加自定义体系结构验证
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +164,7 @@ ms.locfileid: "51817511"
 > [!NOTE]
 >  这与应用到 UML 关系图的验证过程不同，也与在域特定语言中可使用的验证过程不同。  
   
- 验证方法不应更改正在被验证的层模型或代码。  
+ 验证方法不应更改正在验证的层模型或代码。  
   
  在 <xref:Microsoft.VisualStudio.GraphModel>中定义了图形模型。 其主体类为 <xref:Microsoft.VisualStudio.GraphModel.GraphNode> 和 <xref:Microsoft.VisualStudio.GraphModel.GraphLink>。  
   
@@ -203,7 +200,7 @@ ms.locfileid: "51817511"
   
 - 模型中存在于代码元素相关联的层。  
   
-  第一次启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例来测试验证扩展时，请打开或创建具有这些特征的解决方案。  
+  首次启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例来测试验证扩展时，请打开或创建具有这些特征的解决方案。  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>在验证体系结构之前运行清理解决方案  
  每当你更新验证代码时，请先在实验解决方案中的“生成”  菜单上使用“清理解决方案”  命令，然后再测试“验证”命令。 这是必要的，因为将缓存验证的结果。 如果还未更新测试层关系图或其代码，则不会执行验证方法。  
@@ -211,7 +208,7 @@ ms.locfileid: "51817511"
 ### <a name="launch-the-debugger-explicitly"></a>显式启动调试器  
  验证在单独的进程中运行。 因此，不会触发验证方法中的断点。 验证开始后，必须将调试器显式附加到进程。  
   
- 若要将调试器附加到验证进程，请在验证方法的开头插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。 出现调试对话框时，选择 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的主实例。  
+ 若要将调试器附加到验证进程，请在验证方法的开头插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。 出现调试对话框时，选择 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主实例。  
   
  或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 出现消息框时，转到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的主实例，并在“调试”  菜单上单击“附加到进程” 。 选择名为 **Graphcmd.exe**的进程。  
   
@@ -283,6 +280,3 @@ namespace Validator3
   
 ## <a name="see-also"></a>请参阅  
  [扩展层关系图](../modeling/extend-layer-diagrams.md)
-
-
-

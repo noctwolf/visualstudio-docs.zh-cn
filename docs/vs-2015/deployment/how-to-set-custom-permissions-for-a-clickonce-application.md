@@ -1,14 +1,9 @@
 ---
-title: 如何： 设置 ClickOnce 应用程序的自定义权限 |Microsoft Docs
-ms.custom: ''
+title: 如何：设置 ClickOnce 应用程序的自定义权限 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 660459ca-ef73-44a8-b323-610001f63b93
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 27302c3b2b925e66ca4b30f858fc8a54362451a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 279dd66ca1f814dbd52593d52040818edf8f408b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935518"
 ---
-# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>如何：设置 ClickOnce 应用程序的自定义权限
+# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>如何：为 ClickOnce 应用程序设置自定义权限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可以部署对 Internet 或本地 Intranet 区域使用默认权限的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序。 或者，可以为应用程序所需的特定权限创建自定义区域。 可以通过在“项目设计器”  的“安全” 页上自定义安全权限来执行此操作。  
@@ -54,12 +49,9 @@ ms.locfileid: "49219253"
 7.  在 `</applicationRequestMinimum>` 元素之前，为应用程序所需的权限添加 XML 代码。  
   
     > [!NOTE]
-    >  可以使用权限集的 `ToXml` 方法为应用程序清单生成 XML 代码。 例如，若要为 <xref:System.Security.Permissions.EnvironmentPermission> 权限集生成 XML，请调用 <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> 方法。 有关权限集 XML 的结构的详细信息，请参阅 [NIB：如何：使用 XML 文件导入权限集](http://msdn.microsoft.com/en-us/dea16b54-c108-408a-ac36-cdc05f746236)。  
+    >  可以使用权限集的 `ToXml` 方法为应用程序清单生成 XML 代码。 例如，若要为 <xref:System.Security.Permissions.EnvironmentPermission> 权限集生成 XML，请调用 <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> 方法。 有关详细信息的结构的权限集 XML，请参阅[NIB:如何：通过使用 XML 文件的权限集的导入](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236)。  
   
 ## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
  [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
-
-
-

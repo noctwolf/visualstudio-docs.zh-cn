@@ -1,14 +1,9 @@
 ---
-title: 如何： 运行辅助进程的用户帐户下 |Microsoft Docs
-ms.custom: ''
+title: 如何：辅助角色下运行进程的用户帐户 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
 caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5d9e9cbadd2b7154eeb84bad99239e0b026eecd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da7f0374c8185ef091b89dde99f3c6e053458480
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734461"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58931736"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在用户帐户下运行辅助进程
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在用户帐户下运行工作进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要设置计算机以便在某个用户帐户下运行 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 辅助进程（aspnet_wp.exe 或 w3wp.exe），请执行下列步骤。  
@@ -43,7 +38,7 @@ ms.locfileid: "51734461"
   
 1.  打开 machine.config 文件，此文件位于计算机上运行时安装路径下的 CONFIG 文件夹中。  
   
-2.  查找&lt;processModel&gt;部分，并将用户和密码属性更改为的名称和要用于运行 aspnet_wp.exe 的用户帐户的密码。  
+2.  找到 &lt;processModel&gt; 节，将用户和密码属性更改为希望用于运行 aspnet_wp.exe 的用户帐户的名称和密码。  
   
 3.  保存 machine.config 文件。  
   
@@ -81,7 +76,7 @@ ms.locfileid: "51734461"
   
     将出现 **“选择用户、计算机或组”** 对话框。  
   
-10. 在 **“输入要选择的对象名称”** 框中键入用户名，然后单击 **“确定”**。 用户名必须遵循以下格式：域名\用户名。  
+10. 在 **“输入要选择的对象名称”** 框中键入用户名，然后单击 **“确定”**。 用户名称必须遵循以下格式：域名 \ 用户名。  
   
 11. 在 **“临时 ASP.Net 文件的权限项”** 对话框中，授予用户 **“完全控制”**，然后单击 **“确定”** 以关闭 **“临时 ASP.Net 文件项”** 对话框。  
   
@@ -91,8 +86,3 @@ ms.locfileid: "51734461"
   
 ## <a name="see-also"></a>请参阅  
 [ASP.NET 调试：系统要求](../debugger/aspnet-debugging-system-requirements.md)  
-  
-
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 演练： 创建自定义的引导程序，以显示隐私提示 |Microsoft Docs
-ms.custom: ''
+title: 演练：创建自定义引导程序以显示隐私提示 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c71a23fc79b0d80c55418a9c7d78a48ebc76000e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893385"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934690"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>演练：创建自定义引导程序以显示隐私提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -154,7 +149,7 @@ ms.locfileid: "49893385"
   
 -   面向软件许可条款的文档。  
   
-#### <a name="step-1-to-create-the-bootstrapper-directory"></a>步骤 1： 若要创建引导程序目录  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>步骤 1：若要创建引导程序目录  
   
 1.  创建一个名为**UpdateConsentDialog** %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 中。  
   
@@ -166,7 +161,7 @@ ms.locfileid: "49893385"
     > [!NOTE]
     >  创建每个区域设置的新目录。 例如，可以添加 fr 和 de 区域设置的子目录。 如有必要，这些目录将包含法语和德语字符串和语言包。  
   
-#### <a name="step-2-to-create-the-productxml-manifest-file"></a>步骤 2： 创建 product.xml 清单文件  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>步骤 2：若要创建 product.xml 清单文件  
   
 1.  创建名为文本文件`product.xml`。  
   
@@ -198,7 +193,7 @@ ms.locfileid: "49893385"
   
 3.  将文件保存到 UpdateConsentDialog 引导程序目录。  
   
-#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>步骤 3： 创建 package.xml 清单文件和软件许可条款  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>步骤 3：若要创建 package.xml 清单文件和软件许可条款  
   
 1.  创建名为文本文件`package.xml`。  
   
@@ -242,7 +237,7 @@ ms.locfileid: "49893385"
   
 1.  在中**解决方案资源管理器**，单击你想要部署应用程序的名称。  
   
-2.  上**项目**菜单上，单击*ProjectName* **属性**。  
+2.  在“项目”菜单上，单击“ProjectName”属性。  
   
 3.  单击**发布**页上，然后依次**先决条件**。  
   
@@ -260,7 +255,7 @@ ms.locfileid: "49893385"
   
 1.  在中**解决方案资源管理器**，单击你想要部署应用程序的名称。  
   
-2.  上**项目**菜单上，单击*ProjectName* **属性**。  
+2.  在“项目”菜单上，单击“ProjectName”属性。  
   
 3.  单击**发布**页上，然后依次**立即发布**。  
   
@@ -272,13 +267,13 @@ ms.locfileid: "49893385"
   
 6.  阅读软件许可协议，然后依次**接受**。  
   
-     同意对话框中更新应用程序将出现并显示以下文本： 在 Web 上找到最新的更新检查要安装的应用程序。 通过单击我同意，您授权检查在 Internet 上的自动更新应用程序。  
+     同意对话框中更新应用程序将出现并显示以下文本：在 Web 上找到最新的更新检查要安装的应用程序。 通过单击我同意，您授权检查在 Internet 上的自动更新应用程序。  
   
 7.  关闭应用程序，或单击取消。  
   
-     应用程序将显示错误： 安装的系统组件时出错*ApplicationName*。 已成功安装所有系统组件之前，安装程序无法继续。  
+     应用程序将显示错误：安装的系统组件时出错*ApplicationName*。 已成功安装所有系统组件之前，安装程序无法继续。  
   
-8.  单击以显示以下错误消息的详细信息： 组件更新同意对话框无法安装具有以下错误消息:"自动更新协议不被接受。" 无法安装以下组件:-更新同意对话框  
+8.  单击以显示以下错误消息的详细信息：组件更新同意对话框无法安装具有以下错误消息："自动更新协议是不被接受。" 无法安装以下组件:-更新同意对话框  
   
 9. 单击 **“关闭”**。  
   
@@ -286,7 +281,7 @@ ms.locfileid: "49893385"
   
 1.  在中**解决方案资源管理器**，单击你想要部署应用程序的名称。  
   
-2.  上**项目**菜单上，单击*ProjectName* **属性**。  
+2.  在“项目”菜单上，单击“ProjectName”属性。  
   
 3.  单击**发布**页上，然后依次**立即发布**。  
   
@@ -298,7 +293,7 @@ ms.locfileid: "49893385"
   
 6.  阅读软件许可协议，然后依次**接受**。  
   
-     同意对话框中更新应用程序将出现并显示以下文本： 在 Web 上找到最新的更新检查要安装的应用程序。 通过单击我同意，您授权检查在 Internet 上的自动更新应用程序。  
+     同意对话框中更新应用程序将出现并显示以下文本：在 Web 上找到最新的更新检查要安装的应用程序。 通过单击我同意，您授权检查在 Internet 上的自动更新应用程序。  
   
 7.  单击**我同意**，然后单击**继续**。  
   
@@ -309,9 +304,6 @@ ms.locfileid: "49893385"
 ## <a name="see-also"></a>请参阅  
  [应用程序部署必备](../deployment/application-deployment-prerequisites.md)   
  [创建引导程序包](../deployment/creating-bootstrapper-packages.md)   
- [如何： 创建产品清单](../deployment/how-to-create-a-product-manifest.md)   
- [如何： 创建程序包清单](../deployment/how-to-create-a-package-manifest.md)   
+ [如何：创建产品清单](../deployment/how-to-create-a-product-manifest.md)   
+ [如何：创建程序包清单](../deployment/how-to-create-a-package-manifest.md)   
  [产品和包架构引用](../deployment/product-and-package-schema-reference.md)
-
-
-

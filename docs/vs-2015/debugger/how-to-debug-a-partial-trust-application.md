@@ -1,14 +1,9 @@
 ---
-title: 如何： 调试部分信任应用程序 |Microsoft Docs
-ms.custom: ''
+title: 如何：调试部分信任应用程序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,15 +17,15 @@ ms.assetid: 9d30ad92-28ce-4b21-91d8-698474cddf64
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 76cce8cfcf57f956b5de16b72f7a275e1d629630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7864728237e1fc84958d3edea6806508f1339902
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782045"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931603"
 ---
-# <a name="how-to-debug-a-partial-trust-application"></a>How to: Debug a Partial Trust Application
+# <a name="how-to-debug-a-partial-trust-application"></a>如何：调试部分信任应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 适用于 Windows 应用程序和控制台应用程序。  
@@ -43,7 +38,7 @@ ms.locfileid: "51782045"
   
  如果应用程序尝试执行它无权执行的操作，则会发生异常。 此时，异常助手可以为您提供添加额外权限的机会，这样，您就可以具有足够的权限重新启动调试会话，以避免出现问题。  
   
- 您可以在以后返回并查看自己在调试期间添加了哪些权限。 如果您在调试期间必须添加权限，则可能表示您需要在代码中相应的点添加“用户同意提示”。  
+ 您可以在以后返回并查看自己在调试期间添加了哪些权限。 如果你在调试期间必须添加权限，则可能表示你需要在代码中相应的点添加“用户同意提示”。  
   
 > [!NOTE]
 >  调试器可视化工具要求比部分信任的应用程序允许的特权更大的特权。 在部分信任的代码中停止时，可视化工具不会加载。 若要使用可视化工具进行调试，必须运行完全信任的代码。  
@@ -66,7 +61,7 @@ ms.locfileid: "51782045"
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>当发生安全异常时添加额外权限  
   
-1.  **异常助手**对话框中会显示消息： **SecurityException 未处理。**  
+1.  **异常助手**对话框中会显示消息：**SecurityException 未处理。**  
   
 2.  在中**异常助手**对话框中的**操作**，单击**添加到项目的权限**。  
   
@@ -89,6 +84,3 @@ ms.locfileid: "51782045"
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
  [调试器安全](../debugger/debugger-security.md)
-
-
-

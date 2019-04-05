@@ -1,25 +1,20 @@
 ---
 title: 命令行捕获工具 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d4cafc8c066025f87d233d8b6db8a97be1aa16f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: be0b661c85165ff348eccf7d55507ce228100091
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936390"
 ---
 # <a name="command-line-capture-tool"></a>命令行捕获工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,10 +137,10 @@ DXCap.exe –file regression_test_12.vsglog –c BasicHLSL11.exe
 DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- 在上面的示例命令捕获图形信息从桌面版本的 Internet Explorer 查看位于使用 WebGL API 来呈现三维内容的 www.fishgl.com 的网页时。  
+ 查看位于使用 WebGL API 来呈现三维内容的 www.fishgl.com 中的网页时，上述示例中的命令将从桌面版本的 Internet Explorer 中捕获图形信息。  
   
 > [!NOTE]
->  由于出现在应用之后的命令行参数传递给它，您必须指定在使用之前用于 DXCap.exe 的自变量`–c`选项。  
+>  由于出现在应用之后的命令行参数会被传递给它，因此必须在使用 `–c` 选项前指定要用于 DXCap.exe 的参数。  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>从 Windows 应用商店应用捕获图形信息。  
  你可以从 Windows 应用商店应用捕获图形信息。  
@@ -168,18 +163,18 @@ DXCap.exe –e map
   
  上面的命令枚举了与 "map" 匹配的 Windows 应用商店应用；以下是输出：  
   
- **包"Microsoft.BingMaps":**  
- **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
- **名称： Microsoft.BingMaps**  
- **发布者： CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond，S = Washington，C = US**  
- **版本： 2.1.2914.1734**  
+ 包“Microsoft.BingMaps”：  
+ **InstallDirectory：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName         ：Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID          ：S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **Name             ：Microsoft.BingMaps**  
+ **Publisher        ：CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
+ **Version          ：2.1.2914.1734**  
  **可启动应用程序：**  
- **Id: AppexMaps**  
- **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA： 否**  
- **AppSpec （将启动）： DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**枚举的每个应用的输出的最后一行显示可用于从其捕获图形信息的命令。  
+ **Id:AppexMaps**  
+ **Exe:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **IsWWA：No**  
+ **AppSpec （将启动）：DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**枚举的每个应用的输出的最后一行显示可用于从其捕获图形信息的命令。  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>捕获特定帧或特定时段内的帧。  
  使用`–frame`指定你想要使用逗号和范围捕获的帧：  
@@ -302,6 +297,3 @@ DXCap.exe –p regression_test_12.vsglog –toXML temp.xml
 ```  
   
 ## <a name="requirements"></a>要求
-
-
-
