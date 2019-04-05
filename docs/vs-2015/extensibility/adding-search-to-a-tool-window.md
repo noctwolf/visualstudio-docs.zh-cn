@@ -1,26 +1,21 @@
 ---
 title: 将搜索添加到工具窗口 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, adding search
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cd5331e433c4790a51dfb7c42b5b0b50eb26c1a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cee22438dfd33f25e154b6584ddc768989a92cd3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794148"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933906"
 ---
 # <a name="adding-search-to-a-tool-window"></a>将搜索添加到工具窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -558,4 +553,3 @@ ms.locfileid: "51794148"
 8.  选择搜索框右侧的 X。  
   
      清除搜索，并显示原始内容。 但是，**区分大小写**复选框仍处于选中状态。
-

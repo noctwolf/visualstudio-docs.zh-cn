@@ -1,14 +1,9 @@
 ---
 title: 尝试联系远程计算机时出现 DCOM 错误。 拒绝访问。 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.dcom_access_denied
 dev_langs:
@@ -25,18 +20,18 @@ ms.assetid: 9d7dfc1b-9fe0-4f54-9c50-9c0e0f8358c5
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ec23d23934268ebb50699bc1de3d17b75d357d3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0157b1ade2c38a2c10920b9674d7c9a58ac036b2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770286"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936940"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>尝试联系远程计算机时出现 DCOM 错误。 拒绝访问。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-远程调试使用 DCOM 在以下情况下进行本地和远程计算机之间的通信：  
+在以下情况下，远程调试使用 DCOM 在本地和远程计算机之间进行通信：  
   
 - 调试器设置为了“本机兼容性模式”  ，或在“工具/选项/调试”  页内选中了“托管兼容模式”    
   
@@ -57,8 +52,5 @@ ms.locfileid: "51770286"
 - 如果远程调试要求输入凭据，则选中该选项以保存凭据。  
   
 ## <a name="see-also"></a>请参阅  
- [远程调试错误和故障排除](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
-
-
-
+ [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [远程调试](../debugger/remote-debugging.md)

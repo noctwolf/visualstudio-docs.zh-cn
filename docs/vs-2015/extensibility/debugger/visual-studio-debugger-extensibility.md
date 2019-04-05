@@ -1,27 +1,22 @@
 ---
 title: Visual Studio 调试器可扩展性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Debugging SDK
 - Debugging SDK
 ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b5e9e7a3db38b5138f6392ff89f3a3bb4a13303
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 528716c4ea354ab63dc7fcab2b3f90fe2860b655
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743497"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933316"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio 调试器可扩展性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Visual Studio 提供了完全交互式源代码调试器，跟踪的错误在程
   
  [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]包括所有的完整参考资料[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]创建新部署所需的元素。 此外，还有示例和教程，可帮助您入门。  
   
- 具有调试支持的语言项目系统的端到端示例，请参阅[IronPython 示例](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089)。  
+ 具有调试支持的语言项目系统的端到端示例，请参阅[IronPython 示例](http://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089)。  
   
  以下部分介绍如何使用扩展调试器[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]。  
   
@@ -54,4 +49,3 @@ Visual Studio 提供了完全交互式源代码调试器，跟踪的错误在程
   
  [示例](../../extensibility/debugger/visual-studio-debugging-samples.md)  
  包含公共语言运行时表达式计算器示例和调试引擎示例的链接。
-

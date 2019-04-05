@@ -1,12 +1,9 @@
 ---
-title: UML 序列图： 准则 |Microsoft Docs
-ms.custom: ''
+title: UML 序列图：指导原则 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.linktosequencediagram
 - vs.teamarch.logicalclassdiagram.createlifeline
@@ -25,15 +22,15 @@ ms.assetid: 5990ef7c-ba60-4e20-a36d-e29c1fa6c8bb
 caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56ecc5c54611f94cdbfb0f08ec54a4e0722f0cbd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: efdb6b30785820ae7bef852988628efde5b517b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803625"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933784"
 ---
-# <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
+# <a name="uml-sequence-diagrams-guidelines"></a>UML 序列图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 中，您可以绘制*序列图*以显示交互。 交互是类、组件、子系统或参与者的典型实例之间的消息序列。  
@@ -60,9 +57,9 @@ ms.locfileid: "51803625"
 ##  <a name="Using"></a> 使用 UML 序列图  
  序列图可在不同的程序详细信息级别用于实现各种用途。 需要绘制序列图的典型情况如下所示：  
   
-- 如果拥有汇总了系统用户及其目标的用例图，则可以绘制序列图，用于描述系统的主要组件如何交互以实现每个用例的目标。 有关详细信息，请参阅[UML 用例图： 准则](../modeling/uml-use-case-diagrams-guidelines.md)。  
+- 如果拥有汇总了系统用户及其目标的用例图，则可以绘制序列图，用于描述系统的主要组件如何交互以实现每个用例的目标。 有关详细信息，请参阅[UML 用例图：指导原则](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
-- 如果已标识到达组件接口的消息，则可以绘制序列图，用于描述组件的内部部件如何交互以实现每个传入消息所需的结果。 有关详细信息，请参阅[UML 组件图： 准则](../modeling/uml-component-diagrams-guidelines.md)。  
+- 如果已标识到达组件接口的消息，则可以绘制序列图，用于描述组件的内部部件如何交互以实现每个传入消息所需的结果。 有关详细信息，请参阅[UML 组件图：指导原则](../modeling/uml-component-diagrams-guidelines.md)。  
   
   绘制序列图有以下几个好处：  
   
@@ -80,10 +77,10 @@ ms.locfileid: "51803625"
  对于在生命线之间发送的消息中使用的参数类型和返回值，也可以在 UML 类图中进行描述。  
   
 #### <a name="use-case-details"></a>用例详细信息  
- 用例表示用户的目标以及实现该目标的步骤序列。 可以通过多种方法描述步骤序列。 一种方法是绘制显示用户与系统主要组件之间的交互的序列图。 有关详细信息，请参阅[UML 用例图： 准则](../modeling/uml-use-case-diagrams-guidelines.md)。  
+ 用例表示用户的目标以及实现该目标的步骤序列。 可以通过多种方法描述步骤序列。 一种方法是绘制显示用户与系统主要组件之间的交互的序列图。 有关详细信息，请参阅[UML 用例图：指导原则](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
 ##  <a name="BasicSteps"></a> 绘制序列图的基本步骤  
- 序列图上元素的完整列表，请参阅[UML 序列图： 参考](../modeling/uml-sequence-diagrams-reference.md)。  
+ 序列图上元素的完整列表，请参阅[UML 序列图：参考](../modeling/uml-sequence-diagrams-reference.md)。  
   
 > [!NOTE]
 >  有关如何创建任何建模图的详细的步骤所述[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
@@ -118,7 +115,7 @@ ms.locfileid: "51803625"
 3.  要显示来自未知事件源 (9) 或传播给未知接收方 (10) 的消息，请绘制一个起始于或终止于关系图上的空白区域的异步消息。 这些消息称为*找到的消息*(9) 和*丢失消息*(10)。  
   
     > [!NOTE]
-    >  若要移动具有丢失的消息或找到的消息的生命线的一组，请执行以下步骤选择生命线，然后将它们移： 这些生命线，或按下并保持周围绘制一个矩形**CTRL**键的同时单击每个生命线。 如果您使用**全**或**CTRL**+**A**选择所有生命线，然后将它们移动，任何丢失的消息或找到的附加到这些生命线的消息不会移动。 如果出现这种情况，你可以单独移动这些消息。  
+    >  若要移动具有丢失的消息或找到的消息的一组生命线，请先按照以下步骤选择生命线，然后再进行移动：这些生命线，或按下并保持周围绘制一个矩形**CTRL**键的同时单击每个生命线。 如果您使用**全**或**CTRL**+**A**选择所有生命线，然后将它们移动，任何丢失的消息或找到的附加到这些生命线的消息不会移动。 如果出现这种情况，你可以单独移动这些消息。  
   
 4.  为相同组件或系统的每个主要消息绘制序列图。  
   
@@ -446,13 +443,10 @@ ms.locfileid: "51803625"
 5.  要将新消息添加到片段中，请使用消息工具，或者使用复制和粘贴。  
   
 ## <a name="see-also"></a>请参阅  
- [UML 序列图： 参考](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML 序列关系图：引用](../modeling/uml-sequence-diagrams-reference.md)   
  [编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)   
- [UML 用例图： 参考](../modeling/uml-use-case-diagrams-reference.md)   
- [UML 类图： 参考](../modeling/uml-class-diagrams-reference.md)   
- [UML 组件图： 参考](../modeling/uml-component-diagrams-reference.md)   
- [UML 组件图： 参考](../modeling/uml-component-diagrams-reference.md)   
- [视频： 使用序列图素描交互](http://go.microsoft.com/fwlink/?LinkId=201113)
-
-
-
+ [UML 用例关系图：引用](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML 类关系图：引用](../modeling/uml-class-diagrams-reference.md)   
+ [UML 组件关系图：引用](../modeling/uml-component-diagrams-reference.md)   
+ [UML 组件关系图：引用](../modeling/uml-component-diagrams-reference.md)   
+ [视频：使用序列图素描交互](http://go.microsoft.com/fwlink/?LinkId=201113)

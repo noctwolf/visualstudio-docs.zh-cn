@@ -1,12 +1,9 @@
 ---
-title: 演练： 创建自定义文本模板宿主 |Microsoft Docs
-ms.custom: ''
+title: 演练：创建自定义文本模板宿主 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
@@ -14,13 +11,13 @@ ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3120cee504de8565f5caf80034678e9788da70ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817270"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935017"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>演练：创建自定义文本模板宿主
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +43,7 @@ ms.locfileid: "49817270"
 -   Visual Studio SDK  
   
 ## <a name="creating-a-custom-text-template-host"></a>创建自定义文本模板宿主  
- 在本演练中，您将在可从命令行调用的可执行应用程序中创建自定义宿主。 该应用程序接受文本模板文件作为自变量，读取该模板，调用引擎转换模板，并在命令提示符窗口中显示发生的所有错误。  
+ 在本演练中，您将在可从命令行调用的可执行应用程序中创建自定义宿主。 该应用程序接受文本模板文件作为参数，读取该模板，调用引擎转换模板，并在命令提示符窗口中显示发生的所有错误。  
   
 #### <a name="to-create-a-custom-host"></a>创建自定义宿主  
   
@@ -719,11 +716,11 @@ ms.locfileid: "49817270"
   
 4.  有关[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]仅，打开**项目**菜单，然后单击**CustomHost 属性**。 在中**启动对象**列表中，单击**customhost.program**。  
   
-5.  在“文件”  菜单上，单击“全部保存” 。  
+5.  在“文件”菜单上，单击“全部保存”。  
   
 6.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
-## <a name="testing-the-custom-host"></a>测试自定义主机  
+## <a name="testing-the-custom-host"></a>测试自定义宿主  
  若要测试自定义主机，你需要编写一个文本模板，然后运行自定义主机，将文本模板的名称传递给它并验证模板转换。  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>创建文本模板测试自定义主机  
@@ -777,7 +774,7 @@ ms.locfileid: "49817270"
   
 3.  保存并关闭文件。  
   
-#### <a name="to-test-the-custom-host"></a>测试自定义宿主  
+#### <a name="to-test-the-custom-host"></a>测试自定义主机  
   
 1.  打开“命令提示符”窗口。  
   
@@ -801,7 +798,7 @@ ms.locfileid: "49817270"
     > [!NOTE]
     >  而不是键入地址，则可以浏览到文件 TestTemplate.tt 中**Windows 资源管理器**然后将文件拖入命令提示符窗口。  
   
-     自定义主机应用程序运行并完成文本模板转换过程。  
+     自定义宿主应用程序运行并完成文本模板转换过程。  
   
 5.  在中**Windows 资源管理器**，浏览到包含文件 TestTemplate.tt 的文件夹。  
   
@@ -820,10 +817,7 @@ ms.locfileid: "49817270"
     ```  
   
 ## <a name="next-steps"></a>后续步骤  
- 在本演练中，你创建了一个支持基本转换功能的文本模板转换主机。 您可以对该宿主进行扩展，以支持可调用自定义或生成的指令处理器的文本模板。 有关详细信息，请参阅[演练： 连接到生成的指令处理器的主机](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。  
+ 在本演练中，你创建了一个支持基本转换功能的文本模板转换主机。 您可以对该宿主进行扩展，以支持可调用自定义或生成的指令处理器的文本模板。 有关详细信息，请参见[演练：将主机连接到生成的指令处理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
-
-
-

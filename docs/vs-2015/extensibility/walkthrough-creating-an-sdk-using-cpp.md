@@ -1,24 +1,19 @@
 ---
-title: 演练： 创建使用 c + + SDK |Microsoft Docs
-ms.custom: ''
+title: 演练：使用 c + + 创建 SDK |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0932759213d064c3df717b7b6735c1201e62ce14
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 85af1b15fe6f2b87fbe1f7668fd1610c8595b90c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773465"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936636"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>演练：使用 C++ 创建 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +115,7 @@ ms.locfileid: "51773465"
   
     [!code-xml[CreatingAnSDKUsingCpp#7](../../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]  
   
-13. 在菜单栏上依次选择**视图**，**其他 Windows**，**属性窗口**(键盘： 选择 F4 键)。  
+13. 在菜单栏上依次选择**视图**，**其他 Windows**，**属性窗口**(键盘：选择 F4 键）。  
   
 14. 在中**解决方案资源管理器**，选择**NativeMathWRT.winmd**文件。 在**属性**窗口中，更改**生成操作**属性设置为**内容**，然后将更改**包含在 VSIX** 属性**True**。  
   
@@ -185,6 +180,5 @@ ms.locfileid: "51773465"
 ## <a name="next-steps"></a>后续步骤  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 创建使用 C# 或 Visual Basic 的 SDK](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+ [演练：创建 SDK 使用C#或 Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [获取软件开发工具包](../extensibility/creating-a-software-development-kit.md)
-

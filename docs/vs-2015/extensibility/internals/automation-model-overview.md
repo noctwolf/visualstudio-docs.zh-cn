@@ -1,27 +1,22 @@
 ---
 title: 自动化模型概述 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], about automation
 - extensibility
 ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bd1e8ced29b1b1b090fd0feabca93f23dcb67a15
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0eb1d870b3858255fe6b4a0cf9a255d9d1df8c59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809670"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933028"
 ---
 # <a name="automation-model-overview"></a>自动化模型概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,10 +41,9 @@ Visual Studio 自动化对象
   
 - 代码  
   
-- 生成  
+- Build  
   
   自动化的详细信息，请参阅[的 Visual Studio 自动化和扩展性](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6)。 本文档和文档，它提供了链接，帮助你做出决定，你应如何提供你的 VSPackage 的自动化。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 创建的外接程序](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
-
+ [如何：创建的外接程序](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

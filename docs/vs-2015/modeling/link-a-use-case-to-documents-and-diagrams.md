@@ -1,12 +1,9 @@
 ---
 title: 用例链接到文档和关系图 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.usecasediagram.artifact.properties.artifactlink
 - vs.teamarch.usecasediagram.artifact
@@ -16,13 +13,13 @@ ms.assetid: 4c9ed205-9197-4ed5-b39d-ddfa24a0a421
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5b4ef580825115a1d44c3abb39404332a4277ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7e6e6bc1cd9794534f13915ffb41956e423e94c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787908"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936829"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>将用例链接到文档和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,10 +84,7 @@ ms.locfileid: "51787908"
     >  如果你想要提供的文件路径，则最好在常见的工作区中选择一个文件 (从开始\\\\)，或在 Visual Studio 解决方案中的文件。 这可以确保文件路径在其他团队成员的计算机上或该解决方案被移动后仍将有效。 若要将文档如 Word 文档添加到你的解决方案，右键单击解决方案资源管理器中的解决方案，指向**外**，然后单击**现有项**。  
   
 ## <a name="see-also"></a>请参阅  
- [UML 用例图： 参考](../modeling/uml-use-case-diagrams-reference.md)   
- [UML 用例图： 准则](../modeling/uml-use-case-diagrams-guidelines.md)   
+ [UML 用例关系图：引用](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML 用例关系图：指导原则](../modeling/uml-use-case-diagrams-guidelines.md)   
  [编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)   
  [为应用程序创建模型](../modeling/create-models-for-your-app.md)
-
-
-

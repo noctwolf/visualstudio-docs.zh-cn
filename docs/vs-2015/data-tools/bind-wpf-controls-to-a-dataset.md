@@ -1,12 +1,9 @@
 ---
 title: 将 WPF 控件绑定到数据集 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +17,13 @@ ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9b77e8211d8f76627f16f96abed8a61e6dae03d7
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 94b6c5d7e1695b4b9ef2d1b383575a8806b112db
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219791"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935170"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>将 WPF 控件绑定到数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +35,7 @@ ms.locfileid: "50219791"
   
 - 创建一个 WPF 应用程序和一个利用 AdventureWorksLT 示例数据库中的数据生成的数据集。  
   
-- 通过将数据从表创建数据绑定控件的一组**数据源**到 WPF 设计器中的窗口的窗口。  
+- 通过将数据表从“数据源”窗口拖到 WPF 设计器的窗口中，创建一组数据绑定控件。  
   
 - 创建用于向前/向后导航产品记录的按钮。  
   
@@ -55,55 +52,55 @@ ms.locfileid: "50219791"
   
   事先了解以下概念也很有用，但对于完成本演练并不是必需的：  
   
-- 数据集和 TableAdapter。 有关详细信息，请参阅[Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)并[TableAdapter 概述](../data-tools/tableadapter-overview.md)。  
+- 数据集和 TableAdapter。 有关详细信息，请参阅[Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)。  
   
-- 使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
+- 使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
   
-- WPF 数据绑定。 有关详细信息，请参阅 [数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
+- WPF 数据绑定。 有关详细信息，请参阅[数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
   
 ## <a name="create-the-project"></a>创建项目  
  创建一个新的 WPF 项目。 该项目将显示产品记录。  
   
-#### <a name="to-create-the-project"></a>创建项目  
+#### <a name="to-create-the-project"></a>要创建项目  
   
 1.  启动 Visual Studio。  
   
 2.  在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。  
   
-3.  展开**Visual Basic**或**Visual C#**，然后选择**Windows**。  
+3.  展开“Visual Basic”或“Visual C#”，然后选择“Windows”。  
   
-4.  选择**WPF 应用程序**项目模板。  
+4.  选择“WPF 应用程序”项目模板。  
   
 5.  在中**名称**框中，键入`AdventureWorksProductsEditor`然后单击**确定**。  
   
      Visual Studio 将创建`AdventureWorksProductsEditor`项目。  
   
 ## <a name="create-a-dataset-for-the-application"></a>创建应用程序的数据集  
- 您可以创建数据绑定控件之前，必须为应用程序定义数据模型并将其添加到**数据源**窗口。 在本演练中，你将创建要用作数据模型的数据集。  
+ 必须先为应用程序定义数据模型并将此模型添加到“数据源”窗口中，然后才能创建数据绑定控件。 在本演练中，你将创建要用作数据模型的数据集。  
   
 #### <a name="to-create-a-dataset"></a>创建数据集  
   
 1.  在 **“数据”** 菜单上，单击 **“显示数据源”**。  
   
-     **数据源**窗口随即打开。  
+     “数据源”窗口随即打开。  
   
 2.  在 **“数据源”** 窗口中，单击 **“添加新数据源”**。  
   
-     **数据源配置**向导随即打开。  
+     “数据源配置”向导随即打开。  
   
-3.  上**选择数据源类型**页上，选择**数据库**，然后单击**下一步**。  
+3.  在“选择数据源类型”页上，选择“数据库”，然后单击“下一步”。  
   
-4.  上**选择数据库模型**页上，选择**数据集**，然后单击**下一步**。  
+4.  在“选择数据库模型”页上，选择“数据集”，然后单击“下一步”。  
   
-5.  上**选择数据连接**页上，选择以下选项之一：  
+5.  在“选择你的数据连接”页面上，选择以下选项之一：  
   
-    -   如果下拉列表中有到 AdventureWorksLT 示例数据库的数据连接，则选择它，然后单击**下一步**。  
+    -   如果下拉列表中包含到 AdventureWorksLT 示例数据库的数据连接，请选择该连接，然后单击“下一步”。  
   
-    -   单击**新的连接**，并创建与 AdventureWorksLT 数据库的连接。  
+    -   单击“新建连接”，然后创建到 AdventureWorksLT 数据库的连接。  
   
-6.  上**将连接字符串保存到应用程序配置文件**页上，选择**是，保存所用连接**复选框，然后依次**下一步**。  
+6.  在“将连接字符串保存到应用程序配置文件中”页面上，选中“是，将连接另存为”复选框，然后单击“下一步”。  
   
-7.  上**选择数据库对象**页上，展开**表**，然后选择**Product (SalesLT)** 表。  
+7.  在“选择数据库对象”页面上，展开“表”，然后选择“Product (SalesLT)”表。  
   
 8.  单击 **“完成”**。  
   
@@ -122,9 +119,9 @@ ms.locfileid: "50219791"
   
 2.  在设计器中，右键单击**Fill,GetData()** 查询，然后选择**配置**。  
   
-     **TableAdapter 配置**向导随即打开。  
+     “TableAdapter 配置”向导随即打开。  
   
-3.  在中**输入 SQL 语句**页上，添加以下 WHERE 子句之后`SELECT`在文本框中的语句。  
+3.  在“输入 SQL 语句”页面上，在文本框中的 `SELECT` 语句后添加以下 WHERE 子句。  
   
     ```  
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'  
@@ -160,11 +157,11 @@ ms.locfileid: "50219791"
   
 #### <a name="to-create-data-bound-controls"></a>创建数据绑定控件  
   
-1.  在中**数据源**窗口中，单击下拉列表菜单**产品**节点，然后选择**详细信息**。  
+1.  在“数据源”窗口中，单击“Product”节点的下拉菜单，然后选择“详细信息”。  
   
-2.  展开**产品**节点。  
+2.  展开“Product”节点。  
   
-3.  对于此示例中，某些字段将不会显示，因此单击以下节点旁边的下拉列表菜单并选择**None**:  
+3.  在本示例中，某些字段不会显示，因此只需单击下列节点旁边的下拉菜单，然后选择“无”：  
   
     -   ProductCategoryID  
   
@@ -176,29 +173,29 @@ ms.locfileid: "50219791"
   
     -   ModifiedDate  
   
-4.  单击下拉列表菜单旁边**ThumbNailPhoto**节点，然后选择**映像**。  
+4.  单击“ThumbNailPhoto”节点旁边的下拉菜单，然后选择“图像”。  
   
     > [!NOTE]
-    >  默认情况下中的项**数据源**表示图片的窗口已设置为其默认控件**None**。 这是因为，图片是作为字节数组存储在数据库中的，并且从简单的字节数组到大型应用程序的可执行文件都可以包含在字节数组中。  
+    >  默认情况下，已将“数据源”窗口中表示图片的项的默认控件设置为“无”。 这是因为，图片是作为字节数组存储在数据库中的，并且从简单的字节数组到大型应用程序的可执行文件都可以包含在字节数组中。  
   
-5.  从**数据源**窗口中，拖动**产品**到位于包含按钮的行下方的网格行的节点。  
+5.  从“数据源”窗口，将“Product”节点拖到包含按钮的行下方的网格行。  
   
-     Visual Studio 将生成定义一组中的数据绑定的控件的 XAML**产品**表。 它还会生成用于加载数据的代码。 有关生成的 XAML 和代码的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
+     Visual Studio 生成 XAML，它定义了一组绑定到“Products”表中的数据的控件。 它还会生成用于加载数据的代码。 有关生成的 XAML 和代码的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
   
-6.  在设计器中，单击文本框旁边**产品 ID**标签。  
+6.  在设计器中，单击“Product ID”标签旁边的文本框。  
   
-7.  在中**属性**窗口中，选择旁边的复选框**IsReadOnly**属性。  
+7.  在“属性”窗口，选中“IsReadOnly”属性旁边的复选框。  
   
 ## <a name="navigating-product-records"></a>导航产品记录  
- 添加代码，使用户能够滚动产品记录通过使用**\<** 并**>** 按钮。  
+ 添加可让用户通过“\<”和“>”按钮来浏览产品记录的代码。  
   
 #### <a name="to-enable-users-to-navigate-product-records"></a>使用户能够导航产品记录  
   
-1.  在设计器中，双击**<** 窗口图面上的按钮。  
+1.  在设计器中，双击窗口窗面上的“<”按钮。  
   
-     Visual Studio 将打开代码隐藏文件，并创建一个新`backButton_Click`事件处理程序<xref:System.Windows.Controls.Primitives.ButtonBase.Click>事件。  
+     Visual Studio 打开代码隐藏文件，并为 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件创建新的 `backButton_Click` 事件处理程序。  
   
-2.  修改`Window_Loaded`事件处理程序，因此`ProductViewSource`， `AdventureWorksLTDataSet`，和`AdventureWorksLTDataSetProductTableAdapter`是外部方法和可以访问整个窗体。 声明仅这些测试是全局的窗体，并将其内分配`Window_Loaded`事件处理程序如下所示：  
+2.  修改 `Window_Loaded` 事件处理程序，使 `ProductViewSource`、`AdventureWorksLTDataSet` 和 `AdventureWorksLTDataSetProductTableAdapter` 位于该方法的外部，并使它们在整个窗体中可访问。 声明仅这些测试是全局的窗体，并将其内分配`Window_Loaded`事件处理程序如下所示：  
   
      [!code-csharp[Data_WPFDATASET#1](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#1)]
      [!code-vb[Data_WPFDATASET#1](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#1)]  
@@ -208,7 +205,7 @@ ms.locfileid: "50219791"
      [!code-csharp[Data_WPFDATASET#2](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#2)]
      [!code-vb[Data_WPFDATASET#2](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#2)]  
   
-4.  返回到设计器，然后双击**>** 按钮。  
+4.  返回到设计器，然后双击“>”按钮。  
   
 5.  将以下代码添加到 `nextButton_Click` 事件处理程序中：  
   
@@ -216,13 +213,13 @@ ms.locfileid: "50219791"
      [!code-vb[Data_WPFDATASET#3](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#3)]  
   
 ## <a name="savechanges-to-product-records"></a>对产品记录的 Savechanges  
- 添加代码，使用户能够保存的更改对产品记录通过使用**保存更改**按钮。  
+ 添加代码，该代码可让用户通过使用“保存更改”按钮来保存对产品记录所做的更改。  
   
 #### <a name="to-add-the-ability-to-save-changes-to-product-records"></a>添加保存对产品记录所做更改的功能  
   
-1.  在设计器中，双击**保存更改**按钮。  
+1.  在设计器中，双击“保存更改”按钮。  
   
-     Visual Studio 将打开代码隐藏文件，并创建一个新`saveButton_Click`事件处理程序<xref:System.Windows.Controls.Primitives.ButtonBase.Click>事件。  
+     Visual Studio 打开代码隐藏文件，并为 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件创建新的 `saveButton_Click` 事件处理程序。  
   
 2.  将以下代码添加到 `saveButton_Click` 事件处理程序中：  
   
@@ -241,13 +238,13 @@ ms.locfileid: "50219791"
   
      这将生成并运行应用程序。 验证以下内容：  
   
-    -   文本框显示具有图片的第一条产品记录的数据。 此产品，并且在产品 ID 为 713，名称**Long-sleeve Logo Jersey，S**。  
+    -   文本框显示具有图片的第一条产品记录的数据。 此产品的产品 ID 为 713，名称为“Long-Sleeve Logo Jersey, S”。  
   
-    -   可以单击**>** 或**<** 按钮来导航其他产品记录。  
+    -   可以单击“>”或“<”按钮来导航其他产品记录。  
   
-2.  在其中一个产品记录，更改**大小**值，然后依次**保存更改**。  
+2.  在某一产品记录中，更改“大小”值，然后依次“保存更改”。  
   
-3.  关闭该应用程序，并按下然后重新启动该应用程序**F5** Visual Studio 中。  
+3.  关闭该应用程序，然后在 Visual Studio 中按 F5 重启该应用程序。  
   
 4.  导航到已更改的产品记录，然后验证是否已保存更改。  
   
@@ -256,14 +253,13 @@ ms.locfileid: "50219791"
 ## <a name="next-steps"></a>后续步骤  
  完成本演练后，你可以执行以下相关任务：  
   
--   了解如何使用**数据源**窗口在 Visual Studio 中将 WPF 控件添加到其他类型的数据源。 有关详细信息，请参阅[绑定 WPF 控件添加到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)。  
+-   了解如何使用 Visual Studio 中的“数据源”窗口将 WPF 控件绑定到其他类型的数据源上。 有关详细信息，请参阅[绑定 WPF 控件添加到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)。  
   
--   了解如何使用**数据源**在 WPF 控件中显示相关的数据 （即，在父-子关系中的数据） 的 Visual Studio 窗口中。 有关详细信息，请参阅[演练： 在 WPF 应用程序中显示相关数据](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)。  
+-   了解如何使用 Visual Studio 中的“数据源”窗口在 WPF 控件中显示相关数据（即父-子关系中的数据）。 有关详细信息，请参见[演练：在 WPF 应用程序中显示相关的数据](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [将 WPF 控件绑定到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [将 WPF 控件绑定到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)   
- [WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
  [数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
-

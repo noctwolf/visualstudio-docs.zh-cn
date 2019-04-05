@@ -1,12 +1,9 @@
 ---
 title: 定义和安装建模扩展 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: 82a58dc5-c7cf-4521-a6da-7ff09cd0de9d
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f7895916cc4ee877c53b056f703d8e46b64b409
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 415d63717e5702b0faa1b49d1d0d18ebbf773b8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805562"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933106"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>定义和安装建模扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,8 +76,8 @@ ms.locfileid: "51805562"
         |-|-|  
         |**类型** =|**Microsoft.VisualStudio.MefComponent**|  
         |**源** =|**当前解决方案中的项目**|  
-        |**项目** =|*你的类库项目*|  
-        |**在此文件夹中嵌入** =|*（空）*|  
+        |**Project** =|*你的类库项目*|  
+        |**在此文件夹中嵌入** =|*(empty)*|  
   
          有关其他组件类型，请参阅下一部分中的链接。  
   
@@ -141,13 +138,10 @@ ms.locfileid: "51805562"
   
    在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，您可以通过从以下位置删除文件来删除扩展其中 *%localappdata%* 通常*DriveName*: \Users\\*用户名*\AppData\Local:  
   
-   *%Localappdata%* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ## <a name="see-also"></a>请参阅  
  [定义用于扩展 UML 的配置文件](../modeling/define-a-profile-to-extend-uml.md)   
  [定义一个自定义建模工具箱项](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [为 UML 模型定义验证约束](../modeling/define-validation-constraints-for-uml-models.md)   
  [在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

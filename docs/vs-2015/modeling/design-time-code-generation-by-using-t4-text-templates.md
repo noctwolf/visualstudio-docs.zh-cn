@@ -1,12 +1,9 @@
 ---
 title: 使用 T4 文本模板生成设计时代码 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -19,20 +16,20 @@ ms.assetid: 2774b83d-1adb-4c66-a607-746e019b80c0
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859273"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934238"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 使用设计时 T4 文本模板，你可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目中生成程序代码和其他文件。 通常情况下，你编写一些模板，以便它们改变它们根据中的数据生成的代码*模型*。 模型是包含有关应用程序需求的关键信息的文件或数据库。  
   
- 例如，你可能具有一个将工作流定义为表或关系图的模型。 可以从该模型生成执行工作流的软件。 当用户的要求变化时，可以很容易地与用户讨论新的工作流。 从工作流重新生成代码比手动更新代码更可靠。  
+ 例如，你可能具有一个将工作流定义为表或关系图的模型。 可以从该模型生成执行工作流的软件。 当用户的需求变化时，可以很容易地与用户讨论新的工作流。 从工作流重新生成代码比手动更新代码更可靠。  
   
 > [!NOTE]
 >  一个*模型*是描述应用程序的特定方面的数据源。 它可以是任何形式、任何类型的文件或数据库。 它不必是任何特定形式，例如 UML 模型或域特定语言模型。 典型的模型是表或 XML 文件形式。  
@@ -128,7 +125,7 @@ ms.locfileid: "49859273"
   
    请注意，语句括在 `<#...#>` 内，单个表达式括在 `<#=...#>` 内。 有关详细信息，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。  
   
-   如果在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中编写生成代码，则 `template` 指令应包含 `language="VB"`。 默认为 `"C#"`。  
+   如果在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中编写生成代码，则 `template` 指令应包含 `language="VB"`。 `"C#"` 默认值。  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>调试设计时 T4 文本模板  
  创建文本模板：  
@@ -144,7 +141,7 @@ ms.locfileid: "49859273"
   该模板将运行并在断点处停止。 你可以以常用方式检查变量并逐步执行代码。  
   
 > [!TIP]
->  `debug="true"` 使生成的代码更精确地映射到文本模板，方法是在生成的代码中插入更多行号指令。 如果不使用它，断点可能在错误状态下停止运行。  
+>  `debug="true"` 使生成的代码图更精确地映射到文本模板，方法是在生成的代码中插入更多行号指令。 如果不使用它，断点可能在错误状态下停止运行。  
 >   
 >  但是，即使不在进行调试，你仍可将该子句留在模板指令中。 这仅会使性能下降一点点。  
   
@@ -365,7 +362,7 @@ Warning("A warning message");
   
 ## <a name="next-steps"></a>后续步骤  
   
-|后续步骤|主题|  
+|下一步|主题|  
 |---------------|-----------|  
 |编写并调试更高级的文本模板，其中的代码使用辅助函数、包含的文件和外部数据。|[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)|  
 |在运行时从模板生成文档。|[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)|  
@@ -375,6 +372,3 @@ Warning("A warning message");
   
 ## <a name="see-also"></a>请参阅  
  [T4 文本模板编写准则](../modeling/guidelines-for-writing-t4-text-templates.md)
-
-
-

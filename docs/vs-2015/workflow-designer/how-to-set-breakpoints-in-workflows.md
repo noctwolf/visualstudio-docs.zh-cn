@@ -1,28 +1,25 @@
 ---
-title: 如何： 在工作流中设置断点 |Microsoft Docs
-ms.custom: ''
+title: 如何：在工作流中设置断点 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b3dedba320ce8a783b7d54df54a30b0759a6bd00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2aaf61ada4167f29f1c6d4754ced7c9757054a88
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49896219"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937742"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>如何：在工作流中设置断点
 使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 时，可以在图形工作流上设置断点，就像在 Visual Basic 或 C# 代码中设置断点一样。 正如所料，工作流执行将在设置的每个断点处停止。  
   
- 断点具有三种状态：*挂起*，*绑定*，并*错误*。 当您设置断点时，断点处于“挂起”状态，并且由一个实心的红色图标表示。 当运行时加载了工作流类型后，断点将成为“绑定”状态。 如果为断点指定了不正确的格式（例如无效的活动名称），则会显示一个错误窗口。 断点仍然会添加到断点窗口，但标有一个小“x”。  
+ 断点具有三种状态：*挂起*，*绑定*，和*错误*。 当您设置断点时，断点处于“挂起”状态，并且由一个实心的红色图标表示。 当运行时加载了工作流类型后，断点将成为“绑定”状态。 如果为断点指定了不正确的格式（例如无效的活动名称），则会显示一个错误窗口。 断点仍然会添加到断点窗口，但标有一个小“x”。  
   
 > [!NOTE]
 >  不支持在调用的工作流上设置断点。  
@@ -42,6 +39,6 @@ ms.locfileid: "49896219"
      此外，还可以按该快捷方式**F9**后选择该活动也可以右键单击该活动并选择**断点**然后**插入断点**从上下文菜单。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 调用工作流调试器](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
+ [如何：调用工作流调试器](../workflow-designer/how-to-invoke-the-workflow-debugger.md)   
  [使用工作流设计器调试工作流](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)   
  [如何：使用工作流设计器调试 XAML](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

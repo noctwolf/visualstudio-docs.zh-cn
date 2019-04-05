@@ -1,25 +1,22 @@
 ---
-title: 如何： 分配存储的过程以便执行更新、 插入和删除操作 （O-R 设计器） |Microsoft Docs
-ms.custom: ''
+title: 如何：分配存储的过程以便执行更新、 插入和删除操作 （O-R 设计器） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f65af06a275dc50afafc70fd95c9b93d9bba458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 957c1fe49d222a691160eadc4b2cf08f8a20a65a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232708"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934836"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何： 分配存储的过程以便执行更新、 插入和删除操作 （O/R 设计器）
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何：分配存储过程以便执行更新、插入和删除操作（O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -38,7 +35,7 @@ ms.locfileid: "49232708"
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>指定存储过程以重写实体类的默认行为  
   
-1.  打开**LINQ to SQL**在设计器中的文件。 (双击.dbml 文件中的**解决方案资源管理器**。)  
+1.  在设计器中打开“LINQ to SQL”文件。 (双击.dbml 文件中的**解决方案资源管理器**。)  
   
 2.  在中**服务器资源管理器**/**数据库资源管理器**，展开**存储过程**并找到想要用于插入、 更新、 存储的过程和/或删除的实体类的命令。  
   
@@ -48,31 +45,29 @@ ms.locfileid: "49232708"
   
 4.  选择要使用存储过程对其执行更新的实体类。  
   
-5.  在中**属性**窗口中，选择要重写的命令 (**插入**，**更新**，或者**删除**)。  
+5.  在“属性”窗口中选择要替代的命令（“插入”、“更新”或“删除”）。  
   
-6.  单击旁边的省略号 （...）**使用运行时**以打开**配置行为**对话框。  
+6.  单击“使用运行时”旁边的省略号 (...) 以打开“配置行为”对话框。  
   
-7.  选择**自定义**。  
+7.  选择“自定义”。  
   
-8.  选择所需的存储的过程中**自定义**列表。  
+8.  在“自定义”列表中选择所需的存储过程。  
   
-9. 检查的列表**方法自变量**并**类属性**若要验证**方法自变量**映射到相应**类属性**. 映射原始方法自变量 (Original_*ArgumentName*) 到原始属性 (*PropertyName* （原始）) 的 Update 和 Delete 命令。  
+9. 检查“方法自变量”和“类属性”列表以验证“方法自变量”是否映射到相应的“类属性”。 映射原始方法自变量 (Original_*ArgumentName*) 到原始属性 (*PropertyName* （原始）) 的 Update 和 Delete 命令。  
   
     > [!NOTE]
     >  默认情况下，名称匹配时方法自变量映射到类属性。 如果更改的属性名称在表和实体类之间不再匹配，而设计器无法确定正确的映射，您可能需要选择等效的类属性进行映射。  
   
-10. 单击**确定**或**应用**。  
+10. 单击“确定”或“应用”。  
   
     > [!NOTE]
-    >  你可以继续配置，只要你单击每个类/行为组合的行为**应用**每次更改后。 如果您更改的类或行为之前单击**应用**、 提供商机应用任何更改将出现一个警告对话框。  
+    >  只要在每次更改后单击“应用”，就可以继续为每个类/行为组合配置行为。 如果您更改的类或行为之前单击**应用**、 提供商机应用任何更改将出现一个警告对话框。  
   
      若要恢复为使用默认运行时逻辑进行更新，请单击 Insert、 Update、 旁边的省略号或 Delete 中的命令**属性**窗口，然后选择**使用运行时**中**配置行为**对话框。  
   
 ## <a name="see-also"></a>请参阅  
  [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [DataContext 方法 （O/R 设计器）](../data-tools/datacontext-methods-o-r-designer.md)   
- [演练： 创建 LINQ to SQL 类 （O-R 设计器）](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [演练： 为 Northwind Customers 表创建更新存储过程](../data-tools/walkthrough-creating-update-stored-procedures-for-the-northwind-customers-table.md)   
+ [演练：创建 LINQ to SQL 类 （O-R 设计器）](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
  [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [插入、更新和删除操作](http://msdn.microsoft.com/library/26a43a4f-83c9-4732-806d-bb23aad0ff6b)
-
