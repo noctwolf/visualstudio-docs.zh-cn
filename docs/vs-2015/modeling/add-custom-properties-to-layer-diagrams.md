@@ -1,33 +1,30 @@
 ---
 title: 向层关系图添加自定义属性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9024ccda38e6b261b29d808e6fafb7837776fc8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 511f19e48f91c6719c8b0021ff7eae4071ce89b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789273"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934468"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>向层关系图添加自定义属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-为层关系图编写扩展代码时，可以存储具有层关系图上任何元素的值。 保存并重新打开关系图时，值将保留。 此外可以让这些属性显示在**属性**窗口，以便用户可以查看和编辑它们。 例如，你可以让用户为每一层指定正则表达式，并编写验证代码来确认每层中的类名称符合用户指定的模式。  
+为层关系图编写扩展代码时，可以存储具有层关系图上任何元素的值。 保存并重新打开关系图时，值将保留。 此外可以让这些属性显示在**属性**窗口，以便用户可以查看和编辑它们。 例如，您可以让用户为每一层指定正则表达式，并编写验证代码来确认每层中的类名称符合用户指定的模式。  
   
 ## <a name="properties-not-visible-to-the-user"></a>不向用户显示的属性  
- 如果仅希望您的代码将值附加到层关系图中的任何元素，则无需定义 MEF 组件。 在 `Properties` 中有一个名为 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 的字典。 只需将可封送的值添加到任何层元素的字典。 这些值将保存为层关系图的一部分。 有关详细信息，请参阅[导航和更新层模型在程序代码中的](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
+ 如果仅希望你的代码将值附加到层关系图中的任何元素，则无需定义 MEF 组件。 在 `Properties` 中有一个名为 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 的字典。 只需将可封送的值添加到任何层元素的字典。 这些值将保存为层关系图的一部分。 有关详细信息，请参阅[导航和更新层模型在程序代码中的](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
 ## <a name="properties-that-the-user-can-edit"></a>用户可以编辑的属性  
  **初始准备**  
@@ -167,6 +164,3 @@ namespace MyNamespace
   
 ## <a name="see-also"></a>请参阅  
  [扩展层关系图](../modeling/extend-layer-diagrams.md)
-
-
-

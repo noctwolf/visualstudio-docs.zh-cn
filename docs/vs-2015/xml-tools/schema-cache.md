@@ -1,25 +1,20 @@
 ---
 title: 架构缓存 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 071ae9f75ab48a2fbabba7c272ad542f59e9e8be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833143"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936848"
 ---
 # <a name="schema-cache"></a>架构缓存
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +81,7 @@ ms.locfileid: "49833143"
 
 - LCID  
 
-  编录文档可以包含 `Catalog` 元素，该元素指向其他编录。 可以使用 `Catalog` 元素指向您的团队或公司共享的中心编录或与业务伙伴共享的联机编录。 `href` 属性是其他编录的文件路径或 http URL。 以下是 `Catalog` 元素的示例：  
+  编录文档可以包含 `Catalog` 元素，该元素指向其他编录。 可以使用 `Catalog` 元素指向你的团队或公司共享的中心编录或与业务伙伴共享的联机编录。 `href` 属性是其他编录的文件路径或 http URL。 以下是 `Catalog` 元素的示例：  
 
 ```  
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>  
@@ -136,6 +131,3 @@ ms.locfileid: "49833143"
 
 ## <a name="see-also"></a>请参阅  
  [XML 编辑器](../xml-tools/xml-editor.md)
-
-
-

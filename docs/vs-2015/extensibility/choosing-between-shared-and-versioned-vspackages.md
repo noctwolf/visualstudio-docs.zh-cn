@@ -1,14 +1,9 @@
 ---
 title: 共享和版本控制的 Vspackage 之间进行选择 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - SxS
 - side-by-side installation
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9fcae5b736310424f220d08aefa4e061e1f6c860
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 49b5e5b7c36b09e08932fcb414478849a12a7c7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51756830"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926160"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>选择共享的 VSPackage 和带有版本的 VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51756830"
   
     -   程序 VSPackage 以适应的版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]正在其中运行。 然后，如果较新的服务的查询失败，你的 VSPackage 可以提供的较旧版本中支持的其他服务[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
--   适当地注册你的 VSPackage。 有关详细信息，请参阅[VSPackage 注册](../extensibility/internals/vspackage-registration.md)并[托管 VSPackage 注册](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)。  
+-   适当地注册你的 VSPackage。 有关详细信息，请参阅[VSPackage 注册](../extensibility/internals/vspackage-registration.md)并[托管 VSPackage 注册](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)。  
   
 -   适当地注册文件扩展名。 有关详细信息，请参阅[注册的文件扩展名的并行部署](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)。  
   
@@ -71,4 +66,3 @@ ms.locfileid: "51756830"
 ## <a name="see-also"></a>请参阅  
  [使用 Windows Installer 安装 Vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)   
  [组件管理](../extensibility/internals/component-management.md)
-

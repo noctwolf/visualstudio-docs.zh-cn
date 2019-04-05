@@ -1,14 +1,9 @@
 ---
-title: IEnumDebugObjects |Microsoft Docs
-ms.custom: ''
+title: IEnumDebugObjects | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IEnumDebugObjects
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0950364c-6c8a-4b6c-ba37-c6aa359fa72c
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2a169b5d64985fdd83e63e2e19cc21a364ddd472
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c6956135476798445fed8352e8d6ca0677949a36
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776000"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937802"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ IEnumDebugObjects : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[下一篇](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|检索下一套[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)枚举中的对象。|  
+|[下一页](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|检索下一套[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)枚举中的对象。|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|将跳过指定的数目的条目。|  
 |[Reset](../../../extensibility/debugger/reference/ienumdebugobjects-reset.md)|将枚举重置为第一个条目。|  
 |[Clone](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|检索当前枚举的副本。|  
@@ -61,11 +56,10 @@ IEnumDebugObjects : IUnknown
 ## <a name="requirements"></a>要求  
  标头： ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>请参阅  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)
-

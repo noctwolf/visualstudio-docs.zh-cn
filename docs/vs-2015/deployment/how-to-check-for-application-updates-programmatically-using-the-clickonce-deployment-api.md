@@ -1,14 +1,9 @@
 ---
-title: 如何： 检查应用程序更新使用 ClickOnce 部署 API 以编程方式 |Microsoft Docs
-ms.custom: ''
+title: 如何：检查应用程序更新使用 ClickOnce 部署 API 以编程方式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1a380d549fa10c3229601a1a9541679c7e3ac1e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ac7a5665b287f51e59d99d21802acc252a55a99a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282186"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936494"
 ---
-# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>如何：使用 ClickOnce 部署 API 以编程方式检查应用程序更新
+# <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>如何：检查使用 ClickOnce 部署 API 以编程方式的应用程序更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ClickOnce 提供两种方法在部署之后更新的应用程序。 在第一种方法，可以配置 ClickOnce 部署自动检查更新在一定时间间隔。 在第二个方法中，可以编写使用的代码<xref:System.Deployment.Application.ApplicationDeployment>类，以检查更新的基于事件，如用户请求。  
@@ -38,7 +33,7 @@ ClickOnce 提供两种方法在部署之后更新的应用程序。 在第一种
  若要以编程方式更新 ClickOnce 应用程序，必须指定更新的位置。 这有时称为部署提供程序。 有关设置此属性的详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
   
 > [!NOTE]
->  此外可以使用如下所述来部署你的应用程序从一个位置，但从另一个更新的技术。 有关详细信息，请参阅[如何： 指定部署更新的备用位置](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)。  
+>  此外可以使用如下所述来部署你的应用程序从一个位置，但从另一个更新的技术。 有关详细信息，请参阅[如何：指定部署更新的备用位置](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)。  
   
 ### <a name="to-check-for-updates-programmatically"></a>若要以编程方式检查更新  
   
@@ -54,7 +49,7 @@ ClickOnce 提供两种方法在部署之后更新的应用程序。 在第一种
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>使用 Mage.exe 部署以编程方式检查更新的应用程序  
   
--   按照说明部署你的应用程序中所述使用 Mage.exe[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 在调用 Mage.exe 生成部署清单，请确保使用命令行开关`providerUrl`，并指定 ClickOnce 检查更新的位置的 URL。 如果你的应用程序将更新从[ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp)，例如，若要生成的部署清单的调用可能如下所示：  
+-   按照说明部署你的应用程序中所述使用 Mage.exe[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 在调用 Mage.exe 生成部署清单，请确保使用命令行开关`providerUrl`，并指定 ClickOnce 检查更新的位置的 URL。 如果你的应用程序将更新从[ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp)，例如，若要生成的部署清单的调用可能如下所示：  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  
@@ -62,15 +57,12 @@ ClickOnce 提供两种方法在部署之后更新的应用程序。 在第一种
   
 ### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>使用 MageUI.exe 部署以编程方式检查更新的应用程序  
   
--   按照说明部署你的应用程序中所述使用 Mage.exe[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 上**部署选项**选项卡上，设置**开始位置**字段检查更新的 ClickOnce 应用程序清单。 上**更新选项**选项卡上，清除**此应用程序应检查更新**复选框。  
+-   按照说明部署你的应用程序中所述使用 Mage.exe[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 上**部署选项**选项卡上，设置**开始位置**字段检查更新的 ClickOnce 应用程序清单。 上**更新选项**选项卡上，清除**此应用程序应检查更新**复选框。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  你的应用程序必须具有完全信任权限，用于以编程方式更新。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 指定部署更新的备用位置](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
+ [如何：指定部署更新的备用位置](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)   
  [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)
-
-
-

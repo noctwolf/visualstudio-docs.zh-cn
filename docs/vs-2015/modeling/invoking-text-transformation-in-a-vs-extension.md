@@ -1,23 +1,20 @@
 ---
 title: 在 VS 扩展中调用文本转换 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 64674976-841f-43cb-8e61-0645c8a89eec
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0751229e778e13375698f591d789edfd318b3ffc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6d2a2311d0a8c1e9470b5053ac4f5f309a1a4d0c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298618"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935708"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>在 VS 扩展中调用文本转换
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +147,4 @@ Sample text.
  定义一个自定义宿主。 有关详细信息，请参阅[通过使用自定义宿主处理文本模板](../modeling/processing-text-templates-by-using-a-custom-host.md)。  
   
  若要生成可以稍后编译并执行的源代码，请执行以下操作：  
- 调用 `t4.PreprocessTemplate()` 的 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> 方法。
-
-
-
+ 调用 `t4.PreprocessTemplate()` 的 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>方法。

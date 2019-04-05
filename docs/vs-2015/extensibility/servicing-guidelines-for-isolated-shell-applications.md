@@ -1,27 +1,22 @@
 ---
 title: 服务的准则独立 Shell 应用程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Shell integrated mode, serviceability
 - Shell integrated mode [Visual Studio], serviceability
 ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a795e5dc71183550e660f8ce7d67f1a41bddbcf4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13ec970b309c09bdbd0bffbc0a10c42b862ebe9b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726776"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935082"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>独立的 Shell 应用程序的服务指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +42,3 @@ ms.locfileid: "51726776"
 -   更新共享的文件可能导致应用程序兼容性问题，因为对一个应用程序的更新可能会更改使用的第二个应用程序尚未更新的文件的版本。 安装程序的共享文件的产品计数对共享文件的引用。 因此，卸载产品不会影响共享的文件超出递减的已安装的实例计数。  
   
 -   快速修复工程 (QFE) 安装程序将恢复到的 QFE 安装程序提供服务的产品版本的文件的版本。 此过程可能会中断的应用程序必须提供更新的共享的文件。
-

@@ -1,14 +1,9 @@
 ---
-title: 如何： 打开项目特定的编辑器 |Microsoft Docs
-ms.custom: ''
+title: 如何：打开项目特定的编辑器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, opening a project-specific editor
 - editors [Visual Studio SDK], opening project-specific editors
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 52d1fda1c3a1c2e8aac116c52afc8bf6738e23ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbafb5938f26b4cdb702168ee2f3500def7ac9c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817667"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936170"
 ---
-# <a name="how-to-open-project-specific-editors"></a>如何： 打开项目特定的编辑器
+# <a name="how-to-open-project-specific-editors"></a>如何：打开项目特定的编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果要打开的项目项文件本质上绑定到该项目的特定编辑器中，项目必须使用特定于项目的编辑器打开文件。 该文件不能被委派到 IDE 的机制，用于选择一个编辑器。 例如，而不是使用标准的位图编辑器，您可以使用此项目特定的编辑器选项来指定一个特定的位图编辑器，识别仅适用于你的项目文件中的信息。  
@@ -60,6 +55,5 @@ ms.locfileid: "51817667"
   
 ## <a name="see-also"></a>请参阅  
  [打开和保存项目项](../extensibility/internals/opening-and-saving-project-items.md)   
- [如何： 打开标准编辑器](../extensibility/how-to-open-standard-editors.md)   
- [如何：打开开放文档的编辑器](../extensibility/how-to-open-editors-for-open-documents.md)
-
+ [如何：打开标准编辑器](../extensibility/how-to-open-standard-editors.md)   
+ [如何：打开编辑器的打开的文档](../extensibility/how-to-open-editors-for-open-documents.md)

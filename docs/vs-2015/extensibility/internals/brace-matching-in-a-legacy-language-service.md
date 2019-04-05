@@ -1,27 +1,22 @@
 ---
 title: 旧版语言服务中的括号匹配 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - brace matching
 - language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 70ad3062a4cbbce8ef46c3afe8851382949fe3f3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03420aa0638fcf12fa36fb871b4a14d2695f0377
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753217"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936522"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>旧版语言服务中的大括号匹配
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ ms.locfileid: "51753217"
   
  你可以匹配两个或三个一起出现的元素，调用对和三元组。 三元组是三个一起出现的元素的集合。 例如，在 C#`foreach`语句构成三元组:"`foreach()`"，"`{`"，并"`}`"。 键入右大括号时，将突出显示所有三个元素。  
   
- 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现的大括号匹配的新方法的详细信息，请参阅[演练： 显示匹配大括号](../../extensibility/walkthrough-displaying-matching-braces.md)。  
+ 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现的大括号匹配的新方法的详细信息，请参阅[演练：显示匹配的括号](../../extensibility/walkthrough-displaying-matching-braces.md)。  
   
 > [!NOTE]
 >  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
@@ -145,4 +140,3 @@ namespace TestLanguagePackage
 ## <a name="see-also"></a>请参阅  
  [旧版语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [旧版语言服务分析器和扫描程序](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
-

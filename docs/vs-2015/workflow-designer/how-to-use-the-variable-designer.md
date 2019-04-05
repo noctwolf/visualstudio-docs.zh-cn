@@ -1,11 +1,8 @@
 ---
-title: 如何： 使用变量设计器 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用变量设计器 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
@@ -13,13 +10,13 @@ ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 2348fbe0ed51f72ee1218f7ed1ed2006a48a124d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ba555be7b5de38fa0fba5bc7cc899661e47333cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265122"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937544"
 ---
 # <a name="how-to-use-the-variable-designer"></a>如何：使用变量设计器
 变量设计器用于创建在数据绑定方案和条件语句中使用的变量。 通过单击来访问在设计器**变量**设计画布左下角的按钮。 该设计器包含一组这些变量显示在表格窗体中并可以按每一列标题排序除外**默认**列。 每个变量都包含名称、变量类型、作用域和默认值（如果有）。 名称和默认值是可编辑的文本字段，而类型和作用域是下拉项。 作用域是调用变量设计器时选择的活动。 如果无法在选定的范围内创建某个变量，则范围将默认为允许变量在其范围内创建的最靠近选定内容的上级活动。 [!INCLUDE[crabout](../includes/crabout-md.md)] 变量，请参阅[变量和自变量](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)。  

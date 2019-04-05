@@ -1,25 +1,22 @@
 ---
 title: 从文本模板访问模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
 ms.assetid: cf65395a-0ca3-4826-89c7-b1869562685c
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919853"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937023"
 ---
 # <a name="accessing-models-from-text-templates"></a>从文本模板访问模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +147,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
  若要加载该文件，最有效方法是使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ModelBus。 在典型方案中，文本模板将使用特定于 DSL 的指令以常规方式加载的第一个模型。 该模型将包含到另一个模型的 ModelBus 引用。 可以使用 ModelBus 打开被引用的模型和访问特定元素。 有关详细信息，请参阅[文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。  
   
- 在不太常用的方案中，你可能想要打开模型文件必须仅文件名，这可能不会在当前和[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]项目。 在这种情况下，可以打开该文件使用的方法中所述[如何： 从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。  
+ 在不太常用的方案中，你可能想要打开模型文件必须仅文件名，这可能不会在当前和[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]项目。 在这种情况下，可以打开该文件使用的方法中所述[如何：从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。  
   
 ## <a name="generating-multiple-files-from-a-template"></a>从模板生成多个文件  
  如果你想要生成多个文件-例如，若要在模型中，生成一个单独的文件的每个元素有几个可能的实现方式。 默认情况下，只有一个文件生成从每个模板文件。  
@@ -222,6 +219,3 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>  
   
 ```
-
-
-
