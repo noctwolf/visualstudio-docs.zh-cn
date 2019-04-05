@@ -1,12 +1,9 @@
 ---
 title: 从代码创建层关系图 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,13 +13,13 @@ ms.assetid: 58c3ea71-2dbc-4963-bf82-40f1924cf973
 caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0a1c5af9394f36f7f89a20b711657a3ca76e8d1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1597d71ac0eef5d044e0378cc71a9f109b2fc99e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727289"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931835"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>从你的代码创建层关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +66,7 @@ ms.locfileid: "51727289"
   
 |**若要**|**请执行以下步骤**|  
 |------------|----------------------------|  
-|为单个项目创建一个层|<ol><li>将项从以下来源拖到层关系图上：<br /><br /> <ul><li>**解决方案资源管理器**<br /><br />         例如，您可以拖动文件或项目。</li><li>代码图<br /><br />         请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)并[使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**类视图**或**对象浏览器**</li></ul><br />     层显示在关系图上，并链接到项目。</li><li>重命名层以反映关联代码或项目的作用。</li></ol> **重要说明：** 将二进制文件拖动到层关系图不会自动添加到建模项目及其引用。 你必须将要验证的二进制文件手动添加到建模项目中。 **若要将二进制文件添加到建模项目** <ol><li>在中**解决方案资源管理器**，打开建模项目的快捷菜单，然后选择**添加现有项**。</li><li>在中**添加现有项**对话框中，浏览到二进制文件、 选择它们，，然后选择**确定**。     二进制文件将显示在建模项目中。</li><li>在中**解决方案资源管理器**，选择的二进制文件，您添加，，然后按**F4**以打开**属性**窗口。</li><li>在每个二进制文件上设置**生成操作**属性设置为**验证**。</li></ol>|  
+|为单个项目创建一个层|<ol><li>将项从以下来源拖到层关系图上：<br /><br /> <ul><li>**解决方案资源管理器**<br /><br />         例如，您可以拖动文件或项目。</li><li>代码图<br /><br />         请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)并[使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**类视图**或**对象浏览器**</li></ul><br />     层显示在关系图上，并链接到项目。</li><li>重命名层以反映关联代码或项目的作用。</li></ol> **重要提示：** 将二进制文件拖动到层关系图中不会自动将其引用添加到建模项目中。 你必须将要验证的二进制文件手动添加到建模项目中。 **若要将二进制文件添加到建模项目** <ol><li>在中**解决方案资源管理器**，打开建模项目的快捷菜单，然后选择**添加现有项**。</li><li>在中**添加现有项**对话框中，浏览到二进制文件、 选择它们，，然后选择**确定**。     二进制文件将显示在建模项目中。</li><li>在中**解决方案资源管理器**，选择的二进制文件，您添加，，然后按**F4**以打开**属性**窗口。</li><li>在每个二进制文件上设置**生成操作**属性设置为**验证**。</li></ol>|  
 |为所有选择的项目创建单个层|同时将所有项目拖到层关系图上。<br /><br /> 一个层将出现在关系图上，并链接到所有这些项目。|  
 |为每个所选的项目创建一个层|按下并保持**SHIFT**键的同时拖动的所有项目到层关系图在同一时间。 **注意：** 如果您使用**SHIFT**键选择的项的范围，在选择了项目之后松开该键。 将这些项目拖到关系图上时再次按住该键。 <br /><br /> 每个项目的层将出现在关系图上，并链接到该项目。|  
 |向层中添加项目|将项目拖到层上。|  
@@ -106,7 +103,7 @@ ms.locfileid: "51727289"
 |验证链接的项目是否支持对照层关系图的验证。|看看**支持验证**项目链接的列。|  
   
 ##  <a name="Discovering"></a> 现有依赖关系进行反向工程处理  
- 只要与一个层关联的项目引用与另一个层关联的项目，就存在依赖关系。 例如，一个层中的某个类声明了一个拥有其他层中的某个类的变量。 您可以对关系图上链接到层的项目的现有依赖关系进行反向工程处理。  
+ 只要与一个层关联的项目引用与另一个层关联的项目，就存在依赖关系。 例如，一个层中的某个类声明了一个拥有其他层中的某个类的变量。 你可以对关系图上链接到层的项目的现有依赖关系进行反向工程处理。  
   
 > [!NOTE]
 >  无法为某些种类的项目对依赖关系进行反向工程处理。 例如，对于链接到文本文件的层，将不会对源自或指向该层的依赖关系进行反向工程处理。 若要查看哪些项目具有可进行反向工程处理的依赖项，打开一个或多个层的快捷菜单，然后选择**查看链接**。 在中**层资源管理器**，检查**支持验证**列。 依赖项不会为其此列显示的项目实施反向工程**False**。  
@@ -139,8 +136,8 @@ ms.locfileid: "51727289"
 -   [使用代码图分析查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
 ## <a name="see-also"></a>请参阅  
- [第 9 频道视频： 设计和验证体系结构使用层关系图](http://go.microsoft.com/fwlink/?LinkID=252073)   
- [层关系图： 参考](../modeling/layer-diagrams-reference.md)   
- [层关系图： 准则](../modeling/layer-diagrams-guidelines.md)   
+ [第 9 频道视频：设计和验证体系结构使用层关系图](http://go.microsoft.com/fwlink/?LinkID=252073)   
+ [层关系图：引用](../modeling/layer-diagrams-reference.md)   
+ [层关系图：指导原则](../modeling/layer-diagrams-guidelines.md)   
  [使用层关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)   
  [代码可视化](../modeling/visualize-code.md)

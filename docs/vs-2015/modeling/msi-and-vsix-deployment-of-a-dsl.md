@@ -1,23 +1,20 @@
 ---
 title: MSI 和 VSIX 部署 DSL 的 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 6ce16f06-1978-4e19-8cdc-441ee65a3fb2
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 81b027e9834fccadcc572cad8fae4d721be9dd56
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bf826a45fbb7f5fc23ffad36dc2adba0442cd3a1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922037"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933774"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +26,7 @@ ms.locfileid: "49922037"
   
 |方法|优点|  
 |------------|--------------|  
-|VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展)|非常易于部署： 副本和执行 **.vsix** DslPackage 项目中的文件。<br /><br /> 有关详细信息请参阅[安装和卸载 DSL 使用 VSX](#Installing)。|  
+|VSX ([!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展)|非常易于部署：复制并执行 **.vsix** DslPackage 项目中的文件。<br /><br /> 有关详细信息请参阅[安装和卸载 DSL 使用 VSX](#Installing)。|  
 |MSI （安装程序文件）|-允许用户打开[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]通过双击 DSL 文件。<br />-将图标与目标计算机中的 DSL 文件类型关联。<br />-将与 DSL 的文件类型关联的 XSD （XML 架构）。 这可以避免警告，当文件被加载到[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。<br /><br /> 必须将安装项目添加到解决方案以创建 MSI。<br /><br /> 有关详细信息，请参阅[使用 MSI 文件部署 DSL](#msi)。|  
   
 ##  <a name="Installing"></a> 安装和使用 VSX 卸载 DSL  
@@ -96,7 +93,7 @@ ms.locfileid: "49922037"
   
        -   描述  
   
-       -   版本  
+       -   Version  
   
    -   单击**编辑器**节点，在属性窗口中，单击**图标**。 设置要引用的图标文件中的值**DslPackage\Resources**，如**File.ico**  
   
@@ -141,6 +138,3 @@ ms.locfileid: "49922037"
 2.  卸载 DSL。  
   
 3.  重新启动 Visual Studio。
-
-
-

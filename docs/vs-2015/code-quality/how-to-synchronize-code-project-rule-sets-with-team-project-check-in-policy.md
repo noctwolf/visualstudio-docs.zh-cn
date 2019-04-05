@@ -1,14 +1,9 @@
 ---
-title: 如何： 将代码项目规则集与团队项目签入策略同步 |Microsoft Docs
-ms.custom: ''
+title: 如何：将代码项目规则集与团队项目签入策略同步 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
@@ -16,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f79b8baf3740fdbd57828552a192746e839578c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263115"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933322"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>如何：将代码项目规则集与团队项目签入策略同步
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +55,7 @@ ms.locfileid: "49263115"
   
 1.  请单击以选择项目设置对话框的代码分析页上的团队项目的签入策略本主题前面的过程之一。  
   
-2.  单击**打开**。  
+2.  单击“打开”。  
   
 3.  添加或删除使用规则集编辑器的规则。  
   
@@ -73,6 +68,3 @@ ms.locfileid: "49263115"
 6.  在中**运行此规则集**列表中，单击**\<浏览...>**。  
   
 7.  在中**打开**对话框框中，指定的规则集文件。
-
-
-

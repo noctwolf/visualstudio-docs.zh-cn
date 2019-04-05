@@ -1,12 +1,9 @@
 ---
 title: 自定义删除行为 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 252892286cf181c9d91e3bec842aa1e90d483b22
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837551"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932738"
 ---
 # <a name="customizing-deletion-behavior"></a>自定义删除行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +143,7 @@ partial class MusicLibDeleteClosure
   
 2. 已删除该元素后，调用 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>。 它将保留在 CLR 堆中，以便在需要时可执行“撤消”，但它已与其他元素取消链接并已从 `store.ElementDirectory` 中删除。 对于关系，角色仍将引用旧角色扮演者。`IsDeleted` 为 true。  
   
-3. 当用户在创建元素后调用“撤消”时，以及在“重做”中重复以前的删除时，将调用 OnDeleting 和 OnDeleted。 使用 `this.Store.InUndoRedoOrRollback` 来避免在这些情况下更新存储元素。 有关详细信息，请参阅[如何： 使用事务的事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
+3. 当用户在创建元素后调用“撤消”时，以及在“重做”中重复以前的删除时，将调用 OnDeleting 和 OnDeleted。 使用 `this.Store.InUndoRedoOrRollback` 来避免在这些情况下更新存储元素。 有关详细信息，请参阅[如何：使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
   
    例如，以下代码将在删除 Album 的最后一个子级 Song 时删除该 Album：  
   
@@ -303,6 +300,3 @@ partial class NestedShapesSampleDocData
  [自定义复制行为](../modeling/customizing-copy-behavior.md)   
  [自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)   
  [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
-title: 演练： 显示语句完成 |Microsoft Docs
-ms.custom: ''
+title: 演练：显示语句完成 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097cb671e15b75edd7e61f7860cf3a0c03123c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 06377a3bc8bd192a7c3f66d359350148fe912239
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733034"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933792"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>演练：显示语句完成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "51733034"
   
      Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.visualstudio.shell.14.0 的引用  
+     Microsoft.VisualStudio.Shell.14.0  
   
      Microsoft.VisualStudio.Shell.Immutable.10.0  
   
@@ -209,5 +204,4 @@ ms.locfileid: "51733034"
 4.  当您第一次键入"a"，然后"d"时，应显示一个列表，其中包含"加法"和"改写"。 请注意，选择添加。 当你键入另一个"d"时，列表应包含仅"加法"，现在处于选中状态。 可以通过按空格键、 Tab 或 Enter 键，提交"添加"，也可以通过键入 Esc 或按任意键关闭该列表。  
   
 ## <a name="see-also"></a>请参阅  
- [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

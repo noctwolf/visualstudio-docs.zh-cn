@@ -1,14 +1,9 @@
 ---
 title: SccPopulateList 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccPopulateList
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fccf5ba354a99eaef6968c5d5027e8540762af75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 18c46432cac2496a7b067d23b313e5d67b059bb3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798893"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933474"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +67,7 @@ SCCRTN SccPopulateList (
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|成功。|  
 |SCC_E_NONSPECIFICERROR|非特定故障。|  
@@ -94,4 +89,3 @@ SCCRTN SccPopulateList (
  [POPLISTFUNC](../extensibility/poplistfunc.md)   
  [使用特定命令的位标志](../extensibility/bitflags-used-by-specific-commands.md)   
  [命令代码](../extensibility/command-code-enumerator.md)
-

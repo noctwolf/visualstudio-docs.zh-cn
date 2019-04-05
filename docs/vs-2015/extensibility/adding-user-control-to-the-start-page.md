@@ -1,14 +1,9 @@
 ---
 title: 将用户控件添加到开始页 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - start page dll
 - custom start page
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 01510eabcb4d2d3605f38b8bb574ed3e21efebac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ccef9678cbdec3ea048c556434d80ef9b0196e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736720"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931514"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>将用户控件添加到起始页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -192,6 +187,5 @@ ms.locfileid: "51736720"
      应显示你的自定义起始页。 如果你想要更改的任何文件，必须关闭实验实例，进行更改、 复制和粘贴已更改的文件，以及然后重新打开实验实例，以查看所做的更改。  
   
 ## <a name="see-also"></a>请参阅  
- [WPF 容器控件](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)   
+ [WPF 容器控件](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
  [演练：将自定义 XAML 添加到起始页](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
-

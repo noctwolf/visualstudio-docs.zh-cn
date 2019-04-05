@@ -1,25 +1,22 @@
 ---
 title: 定义一个自定义建模工具箱项 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, customizing the toolbox
 ms.assetid: a2463606-1100-40ac-97f3-5ba22ca47b7c
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcb562eb76e13b5dcb16532ed808b2447de0d6c8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778405"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933110"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>定义自定义建模工具箱项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +161,7 @@ ms.locfileid: "51778405"
   
 4.  将工具箱定义添加到项目。 包括 **.tbxinfo**文件中，关系图文件、 位图文件和所有资源文件，并确保它们都包括在 VSIX 中。  
   
-    -   在解决方案资源管理器，在该 VSIX 项目的快捷菜单上选择**外**，**现有项**。 在对话框中，将**对象的类型： 所有文件**。 找到的文件，它们全部选中，并选择**添加**。  
+    -   在解决方案资源管理器，在该 VSIX 项目的快捷菜单上选择**外**，**现有项**。 在对话框中，将**对象的类型：所有文件**。 找到的文件，它们全部选中，并选择**添加**。  
   
         > [!NOTE]
         >  在此项目中，你不能在模型编辑器中打开关系图文件。  
@@ -241,6 +238,3 @@ ms.locfileid: "51778405"
  [定义用于扩展 UML 的配置文件](../modeling/define-a-profile-to-extend-uml.md)   
  [在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [为 UML 模型定义验证约束](../modeling/define-validation-constraints-for-uml-models.md)
-
-
-

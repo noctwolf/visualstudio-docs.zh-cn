@@ -1,25 +1,20 @@
 ---
-title: 如何： 获取架构集使用图形视图的概述 |Microsoft Docs
-ms.custom: ''
+title: 如何：获取架构集使用图形视图的概述 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3722af4aef2f56d6da1c2a79840c05edd2a87b65
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 61284d0b94d621c788a4d39fc2672d0778dd5c0f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181358"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932893"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>如何：使用图形视图获取架构集的概览
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49181358"
   
 2.  单击**使用 XML 编辑器查看和编辑基础 XML 架构文件**起始视图上的链接。  
   
-3.  中的 XML 架构示例代码复制[示例 XML 架构： 关系](../xml-tools/sample-xsd-file-relationships.md)并粘贴以替换默认情况下，已将它们添加到新 XSD 文件的代码。  
+3.  中的 XML 架构示例代码复制[示例 XML 架构：关系](../xml-tools/sample-xsd-file-relationships.md)并粘贴以替换默认情况下，已将它们添加到新 XSD 文件的代码。  
   
 4.  在 XML 编辑器中的任意位置单击鼠标右键，然后选择**视图设计器**。  
   
@@ -46,6 +41,3 @@ ms.locfileid: "49181358"
 7.  单击设计图面上的任何节点并查看痕迹栏，以了解所选节点在架构集中的位置。  
   
 8.  在设计图面，然后选择任何元素节点上右击**生成示例 XML**若要查看 XML 实例文档。
-
-
-

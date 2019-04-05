@@ -1,27 +1,22 @@
 ---
 title: 相关的服务和界面 (源代码管理 VSPackage) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f308c0d8669bc8950578ffc615ebe64b91a4ea7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5497c74c75c9c5a97672152ab521e1ccf141b540
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764318"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932737"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>相关服务和界面（源代码管理 VSPackage）
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,13 +32,13 @@ ms.locfileid: "51764318"
   
  接口是：  
   
--   所需的： 相应的实体 （源代码管理 VSPackage，源存根 （stub） 项目） 必须实现接口。  
+-   必需：相应的实体 （源代码管理 VSPackage，源存根 （stub） 项目） 必须实现接口。  
   
--   建议： 实体应实现此接口;否则，源代码管理功能，可能会受到限制。  
+-   建议：实体应实现此接口;否则，源代码管理功能，可能会受到限制。  
   
 -   可选： 实体可以实现此接口可提供更丰富的功能集。  
   
-|接口|目标|由实现|实现？|  
+|接口|用途|由实现|实现？|  
 |---------------|-------------|--------------------|----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|编辑器调用此接口，然后再修改或保存文件。 源代码管理 VSPackage 可以签出该文件或拒绝该操作，如果签出失败。|源代码管理 VSPackage|建议|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|此接口提供基本源代码管理功能，对于项目，如注册和取消注册与源代码管理项目和基本源控件中绘制标志符号提供支持。|源代码管理 VSPackage|必需|  
@@ -70,4 +65,3 @@ ms.locfileid: "51764318"
   
 ## <a name="see-also"></a>请参阅  
  [设计元素](../../extensibility/internals/source-control-vspackage-design-elements.md)
-
