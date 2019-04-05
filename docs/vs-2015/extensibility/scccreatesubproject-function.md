@@ -1,14 +1,9 @@
 ---
 title: SccCreateSubProject 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccCreateSubProject
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 905a3319627a54ef84b5d473d3725069a9f1eecb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c2f28d8bb9ebc440db69085324becb6a96c19afe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766437"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925914"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功创建子项目。|  
 |SCC_E_INITIALIZEFAILED|无法初始化父项目。|  
@@ -92,7 +87,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreateSubProject 和 SccGetParentProjectPath 的技术说明  
  将解决方案和项目添加到源代码管理中简化了 Visual Studio 以最大程度减少系统会提示用户选择源代码管理系统中的位置的次数。 如果源代码管理插件支持两个新函数，这些更改激活由 Visual Studio`SccCreateSubProject`和`SccGetParentProjectPath`。 但是，可以使用以下注册表项来禁用这些更改并还原到以前的 Visual Studio (源控制插件 API 版本 1.1) 行为：  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateSolutionRootFolderInSourceControl"= dword: 00000001  
+ [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001  
   
  如果此注册表项不存在，或设置为 dword:00000000，Visual Studio 将尝试使用新函数`SccCreateSubProject`和`SccGetParentProjectPath`。  
   
@@ -102,4 +97,3 @@ SCCRTN SccCreateSubProject(
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)
-

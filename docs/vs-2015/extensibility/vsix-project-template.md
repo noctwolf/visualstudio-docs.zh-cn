@@ -1,32 +1,27 @@
 ---
 title: VSIX 项目模板 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - deploy packages
 - publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c2b06582e1de7939e34f8fa49aa1cc9435010789
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733862"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000705"
 ---
 # <a name="vsix-project-template"></a>VSIX 项目模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-可以使用 VSIX 项目模板将一个或多个 Visual Studio 扩展包装在 VSIX 项目，然后将包发布上[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点。  
+可以使用 VSIX 项目模板将一个或多个 Visual Studio 扩展包装在 VSIX 项目，然后将包发布上[Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web 站点。  
   
  VSIX 部署支持 Vspackage、 程序集、 MEF 组件、 项目模板、 项模板，工具箱控件和自定义扩展插件类型。  
   
@@ -90,4 +85,3 @@ ms.locfileid: "51733862"
 ## <a name="see-also"></a>请参阅  
  [VSIX 扩展架构 2.0 参考](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [查找和使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)
-
