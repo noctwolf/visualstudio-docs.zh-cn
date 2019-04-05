@@ -1,12 +1,9 @@
 ---
 title: 自定义文件存储和 XML 序列化 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 76c53ef1-e3b9-45da-b425-1bddb3c01395
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7aae4ee1006a7a329bc8ad5ca9f93b756e309458
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49867438"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931498"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自定义文件存储和 XML 序列化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -313,6 +310,3 @@ ms.locfileid: "49867438"
 ## <a name="see-also"></a>请参阅  
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

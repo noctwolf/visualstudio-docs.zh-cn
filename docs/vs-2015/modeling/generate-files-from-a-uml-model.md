@@ -1,25 +1,22 @@
 ---
 title: 从 UML 模型生成文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, generating files
 ms.assetid: 4e28b0e6-ce8f-45ee-9e3a-e4d600a0ad81
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: afbb81a67d8d5f8f587979ab8adca4251562072a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03b2cf5b03ea7f2cfc2d8fa90346ac47c1e4ae84
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930616"
 ---
 # <a name="generate-files-from-a-uml-model"></a>从 UML 模型生成文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -336,6 +333,3 @@ namespace Test{
 -   **将代码移动到单独的程序集中**。 我们建议不要在模板中编写太多代码。 最好将生成的内容与计算保持分离，文本模板对编辑代码的支持也不是太好。  
   
      不过，如果你必须执行大量计算来生成文本，请在一个单独的程序集中生成这些函数，并从模板中调用其方法。
-
-
-

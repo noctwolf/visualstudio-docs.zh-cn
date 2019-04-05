@@ -1,23 +1,18 @@
 ---
 title: 使自定义项目版本可区别 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5b2cfb51ad13ed28e1f021b19b52153bf4c09f62
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833000"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932739"
 ---
 # <a name="making-custom-projects-version-aware"></a>使自定义项目版本可区别
 在自定义项目系统中，你可以允许在多个版本的 Visual Studio 中加载该类型的项目。 也可以阻止在早期版本的 Visual Studio 中加载该类型的项目。 还可以使该项目将其自身标识为较新版本，以防该项目需要修复、转换或弃用。  
@@ -27,19 +22,19 @@ ms.locfileid: "49833000"
   
  加载项目之前，Visual Studio 将调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A> 方法以确定是否可以随该项目进行升级。 如果可以对该项目进行升级，`UpgradeProject_CheckOnly` 方法将设置一个标志，该标志将引起稍后调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> 方法以升级该项目。 由于不能对不兼容项目进行升级，因此 `UpgradeProject_CheckOnly` 必须首先检查项目兼容性，如上一部分中所述。  
   
- 你作为项目系统的作者（从 `UpgradeProject_CheckOnly` 接口）实现 `IVsProjectUpgradeViaFactory4` ，以向该项目系统的用户提供升级检查。 当用户打开项目时，将调用此方法以确定是否必须在加载项目前修复该项目。 在 `VSPUVF_REPAIRFLAGS` 中枚举了可能的升级需求，包括以下可能性：  
+ 你作为项目系统的作者（从 `UpgradeProject_CheckOnly` 接口）实现 `IVsProjectUpgradeViaFactory4` ，以向该项目系统的用户提供升级检查。 当用户打开项目时，将调用此方法以确定是否必须在加载项目前修复该项目。 在 `VSPUVF_REPAIRFLAGS`中枚举了可能的升级需求，包括以下可能性：  
   
 1.  `SPUVF_PROJECT_NOREPAIR`：不需要修复。  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`：使该项目与早期版本兼容，并消除使用该产品早期版本时可能遇到的问题。  
+2.  `VSPUVF_PROJECT_SAFEREPAIR`：使该项目与早期版本兼容，消除与以前版本的产品遇到可能具有的问题。  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`：使该项目向后兼容，并可能遇到使用该产品早期版本时可能遇到的问题。 例如，如果项目依赖于不同的 SDK 版本，则该项目不兼容。  
+3.  `VSPUVF_PROJECT_UNSAFEREPAIR`：向后兼容，但你可能遇到的问题与以前版本的产品时可能遇到与使该项目。 例如，如果项目依赖于不同的 SDK 版本，则该项目不兼容。  
   
 4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`：使该项目与早期版本不兼容。  
   
 5.  `VSPUVF_PROJECT_INCOMPATIBLE`：表示当前版本不支持此项目。  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`：表示不再支持此项目。  
+6.  `VSPUVF_PROJECT_DEPRECATED`：指示此项目不再受支持。  
   
 > [!NOTE]
 >  为避免混淆，设置升级标志时请勿将其合并。 例如，请勿创建 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`等不明确的升级状态。  
@@ -63,7 +58,7 @@ ms.locfileid: "49833000"
   
 1.  在该组件中，从全局服务 SVsSolution 获取 `IVsAppCompat` 接口。  
   
-     有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> 。  
+     有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>。  
   
 2.  在该组件中，调用 `IVsAppCompat.AskForUserConsentToBreakAssetCompat`，并向其传递一个表示相关项目的 `IVsHierarchy` 接口的数组。  
   
@@ -100,7 +95,7 @@ ms.locfileid: "49833000"
   
      BreakAssetCompatibility 方法随后调用 `IVsHierarchy.SetProperty` 方法，将根 `VSHPROPID_MinimumDesignTimeCompatVersion` 属性设置为你在上一步中获得的版本字符串的值。  
   
-     有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A> 。  
+     有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>。  
   
 > [!IMPORTANT]
 >  必须实现 `VSHPROPID_MinimumDesignTimeCompatVersion` 属性以将项目标记为兼容或不兼容。 例如，如果项目系统使用 MSBuild 项目文件，请向项目文件添加一个具有与相应 `<MinimumVisualStudioVersion>` 属性值的相等的值的生成属性 `VSHPROPID_MinimumDesignTimeCompatVersion` 。  
@@ -125,11 +120,11 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  如果此方法可将 `pUpgradeRequired` 设置为 TRUE 并返回 `S_OK`，则该结果将被视为“升级”，就像该方法向值 `VSPUVF_PROJECT_ONEWAYUPGRADE`设置了升级标志一样，本主题后面对此进行了描述。 使用此较旧方法支持下列返回值，但仅当 `pUpgradeRequired` 设置为 TRUE 时有效：  
   
-1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`。 此返回值等效于 `VSPUVF_PROJECT_SAFEREPAIR`（本主题后面对其进行了描述），会将 `pUpgradeRequired` 值转换为 TRUE。  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`。 此返回值等效于 `pUpgradeRequired` （本主题后面对其进行了描述），会将 `VSPUVF_PROJECT_SAFEREPAIR`值转换为 TRUE。  
   
-2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`。 此返回值等效于 `VSPUVF_PROJECT_UNSAFEREPAIR`（本主题后面对此进行了描述），会将 `pUpgradeRequired` 值转换为 TRUE  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`。 此返回值等效于 `pUpgradeRequired` （本主题后面对此进行了描述），会将 `VSPUVF_PROJECT_UNSAFEREPAIR`值转换为 TRUE  
   
-3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`。 此返回值等效于 `VSPUVF_PROJECT_ONEWAYUPGRADE`（本主题后面对其进行了描述），会将 `pUpgradeRequired` 值转换为 TRUE。  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`。 此返回值等效于 `pUpgradeRequired` （本主题后面对其进行了描述），会将 `VSPUVF_PROJECT_ONEWAYUPGRADE`值转换为 TRUE。  
   
    `IVsProjectUpgradeViaFactory4` 和 `IVsProjectFlavorUpgradeViaFactory2` 中的新实现让你可以更精确地指定迁移类型。  
   

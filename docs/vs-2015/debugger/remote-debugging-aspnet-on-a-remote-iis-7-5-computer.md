@@ -1,25 +1,20 @@
 ---
 title: 远程调试远程 IIS 7.5 上的 ASP.NET 计算机 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 71d249571830ac608bef12c4a47d0243de1859a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764071"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932478"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ ms.locfileid: "51764071"
 
     ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg-iis-aspnet-45.png "RemoteDBG_IIS_AspNet_45")
 
-    在 Windows Server 2008 R2 上安装 ASP.NET 4 改为使用此命令： **C:\Windows\Microsoft.NET\Framework (64) \v4.0.30319\aspnet_regiis.exe ir**
+    在 Windows Server 2008 R2 上安装 ASP.NET 4 改为使用此命令： **C:\Windows\Microsoft.NET\Framework(64)\v4.0.30319\aspnet_regiis.exe -ir**
 1. 将 ASP.NET 项目目录从 Visual Studio 计算机复制到 Windows Server 计算机上的本地目录（我们命名为 **C:\Publish**）。 可以手动复制该项目，使用 Xcopy、 Web 部署、 Robocopy、 Powershell 或其他选项。
 
     > [!CAUTION]
@@ -93,7 +88,7 @@ ms.locfileid: "51764071"
 1. 在 Visual Studio 计算机上打开 **MyMVC** 解决方案。
 1. 在 Visual Studio 中，单击**调试 / 附加到进程**(**Ctrl + Alt + P**)。
 1. 将限定符字段设置为**\<远程计算机名称 >: 4020**。
-1. 单击**刷新**。
+1. 单击“刷新”。
     “可用进程”  窗口中将显示某些进程。
 
     如果看不到任何进程，请尝试使用的 IP 地址而不远程计算机名称 （端口是必需的）。 使用`ipconfig`获取 IPv4 地址的命令行中。
@@ -107,12 +102,9 @@ ms.locfileid: "51764071"
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. 打开远程计算机的网站。 在浏览器中，转到**http://\<远程计算机名称 >**。
+1. 打开远程计算机的网站。 在浏览器中，转到 http://\<remote computer name>。
     
     将显示 ASP.NET 网页。
 1. 在 ASP.NET web 页中，单击指向**有关**页。
 
     应在 Visual Studio 中命中断点。
-
-
-

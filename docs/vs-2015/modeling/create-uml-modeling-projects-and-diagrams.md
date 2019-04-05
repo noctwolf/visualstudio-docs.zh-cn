@@ -1,12 +1,9 @@
 ---
 title: 创建 UML 建模项目和关系图 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.addnewdiagramdialog
 - vs.teamarch.createnewmodelingprojectdialog
@@ -27,13 +24,13 @@ ms.assetid: c178b04b-4fd2-4bed-97e3-d793dae8649c
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5d841c9fde677eb4a8fb17e952a817364dab277e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738399"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932180"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>创建 UML 建模项目和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -155,12 +152,9 @@ UML 模型的有助于你了解、讨论和设计软件系统。 Visual Studio �
   
 |**问题**|**原因**|**解决方法**|  
 |---------------|----------------|--------------------|  
-|建模项目无法打开或加载到解决方案中。<br /><br /> 显示以下消息：<br /><br /> “解决方案中的一个或多个项目未能正确加载。 请参阅输出窗口获取有关的详细信息。”<br /><br /> 输出窗口将显示以下消息：<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj： 错误： 无法识别的 Guid 格式。"|建模项目引用的项目名称相同，而且在相同的解决方案中。<br /><br /> 例如，一个层链接到名称相同的项目中，而且它们在相同的解决方案中。|使用文本编辑器打开建模项目文件并删除引用，然后尝试再次打开该建模项目。<br /><br /> 若要避免此问题，不要添加对具有相同名称的项目的引用。 请确保项目具有唯一的名称。|  
+|建模项目无法打开或加载到解决方案中。<br /><br /> 显示以下消息：<br /><br /> “解决方案中的一个或多个项目未能正确加载。 请参阅输出窗口获取有关的详细信息。”<br /><br /> 输出窗口将显示以下消息：<br /><br /> "*ModelingProjectFilenameAndPath*.modelproj： 错误：无法识别的 GUID 格式。”|建模项目引用的项目名称相同，而且在相同的解决方案中。<br /><br /> 例如，一个层链接到名称相同的项目中，而且它们在相同的解决方案中。|使用文本编辑器打开建模项目文件并删除引用，然后尝试再次打开该建模项目。<br /><br /> 若要避免此问题，不要添加对具有相同名称的项目的引用。 请确保项目具有唯一的名称。|  
 |元素从添加、复制或拖放到其他建模项目或解决方案中其他位置的关系图中丢失。<br /><br /> - 或 -<br /><br /> 当你尝试打开关系图时，将显示以下消息：<br /><br /> -"的某些形状或关系图上的连接器的丢失是因为它们的定义不存在此项目中。 关系图关闭时定义已从模型中删除，或关系图被复制到另一个不包含这些定义的项目中。”<br /><br /> - 或 -<br /><br /> -"此文档打开另一个项目中"。|关系图文件或从建模项目添加、拖动或复制到另一个建模项目或解决方案中的另一个位置。|若要复制一个关系图文件，请创建一个新的关系图，然后将源关系图中的元素复制到新关系图中。|  
   
 ## <a name="see-also"></a>请参阅  
  [编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)   
  [安排建模解决方案](../modeling/structure-your-modeling-solution.md)
-
-
-

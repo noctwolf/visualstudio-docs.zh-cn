@@ -1,24 +1,19 @@
 ---
-title: 演练： 实现代码片段 |Microsoft Docs
-ms.custom: ''
+title: 演练：实现代码片段 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6fe91fd4e80c14e9b4cf59136fa6d3e0e003f554
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 84ac1787e4905859eb3539c04dee3125a14e0617
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752061"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931883"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>演练：实现代码片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "51752061"
   
 3. 实现展开代码片段。  
   
-   此演练基于[演练： 显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
+   此演练基于[演练：显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
   
 ## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
@@ -116,7 +111,7 @@ ms.locfileid: "51752061"
   
 #### <a name="to-register-code-snippets-for-a-specific-guid"></a>若要为特定 GUID 注册代码片段  
   
-1.  打开**CompletionTest**项目。 有关如何创建此项目的信息，请参阅[演练： 显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
+1.  打开**CompletionTest**项目。 有关如何创建此项目的信息，请参阅[演练：显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
   
 2.  在项目中，添加对以下程序集的引用：  
   
@@ -124,7 +119,7 @@ ms.locfileid: "51752061"
   
     -   Microsoft.VisualStudio.TextManager.Interop.8.0  
   
-    -   microsoft.msxml 进行比较  
+    -   microsoft.msxml  
   
 3.  在项目中，打开 source.extension.vsixmanifest 文件中。  
   
@@ -254,4 +249,3 @@ ms.locfileid: "51752061"
 7.  在文本的不同部分中，键入"test"，然后按选项卡。 由于"test"的代码片段快捷方式，应再次插入代码段。  
   
 ## <a name="next-steps"></a>后续步骤
-

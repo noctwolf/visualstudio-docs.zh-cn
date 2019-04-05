@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用线程窗口 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用线程窗口 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.threads
 dev_langs:
@@ -28,22 +23,22 @@ ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 925e5ec609c07fa1ca6d703943cf3437f0f9bf84
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cc137465e89dd283cb4536965faf54aee44b2e00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791691"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931073"
 ---
-# <a name="how-to-use-the-threads-window"></a>如何：使用“线程”窗口
+# <a name="how-to-use-the-threads-window"></a>如何：使用线程窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在中**线程**窗口中，您可以检查和使用的线程正在调试的应用程序中。  
   
  **线程**窗口包含其中每个行表示在应用程序中的线程的表。 默认情况下，该表列出应用程序中的所有线程，但您可以筛选列表以仅显示您感兴趣的线程。 每列都包含不同类型的信息。 您还可以隐藏某些列。 如果显示所有列，将从左到右显示以下信息：  
   
--   标志列，您可以在此处标记要格外关注的线程。 有关如何标记一个线程的信息，请参阅[如何： 标志和取消标记线程](../debugger/how-to-flag-and-unflag-threads.md)。  
+-   标志列，您可以在此处标记要格外关注的线程。 有关如何标记一个线程的信息，请参阅[如何：标记线程和取消标记线程](../debugger/how-to-flag-and-unflag-threads.md)。  
   
 -   活动线程列，此处黄色箭头指示一个活动线程。 箭头的轮廓指示执行在调试器中分解的线程。  
   
@@ -119,7 +114,7 @@ ms.locfileid: "51791691"
   
 #### <a name="to-search-for-specific-threads"></a>搜索特定线程  
   
--   在顶部的工具栏**线程**窗口中，转到**搜索**的框，：  
+-   在“线程”窗口顶部的工具栏中，转到“搜索”框，执行下列操作之一：  
   
     -   键入搜索字符串然后按 Enter。  
   
@@ -127,7 +122,7 @@ ms.locfileid: "51791691"
   
     -   单击下拉列表旁边**搜索**框并选择上一次搜索的搜索字符串。  
   
--   （可选）若要在搜索中包括完整的调用堆栈，请选择**搜索调用堆栈**。  
+-   （可选）若要在搜索中包括整个调用堆栈，请选择“搜索调用堆栈”。  
   
 ## <a name="freezing-and-thawing-threads"></a>冻结和解冻线程  
  当冻结线程时，即便资源可用，系统也不会开始执行该线程。  
@@ -143,17 +138,17 @@ ms.locfileid: "51791691"
   
 -   在顶部的工具栏**线程**窗口中，单击**冻结线程**或**解冻线程**。  
   
-     此操作会影响处于选中状态的线程**线程**窗口。  
+     此操作仅影响在“线程”窗口中选中的线程。  
   
 ## <a name="displaying-flagged-threads"></a>显示标记的线程  
- 可以标记要特别注意通过将其标记为一个图标中为提供一个线程**线程**窗口。 有关详细信息，请参阅[如何： 标志和取消标记线程](../debugger/how-to-flag-and-unflag-threads.md)。 在“线程”窗口中，您可以选择显示所有线程或仅显示标记的线程。  
+ 在“线程”窗口中，可以用图标标记来标记要格外关注的线程。 有关详细信息，请参阅[如何：标记线程和取消标记线程](../debugger/how-to-flag-and-unflag-threads.md)。 在“线程”窗口中，您可以选择显示所有线程或仅显示标记的线程。  
   
 #### <a name="to-display-only-flagged-threads"></a>仅显示标记的线程  
   
 -   选择标记按钮的左上角**线程**窗口。  
   
 ## <a name="displaying-thread-call-stacks-and-switching-between-frames"></a>显示线程调用堆栈并在帧之间切换  
- 在多线程程序中，每个线程都有自己的调用堆栈。 **线程**窗口提供了查看这些堆栈的简便方法。  
+ 在多线程程序中，每个线程都有自己的调用堆栈。 “线程”窗口提供了一种查看这些堆栈的简便方法。  
   
 #### <a name="to-view-the-call-stack-of-a-thread"></a>查看线程的调用堆栈  
   
@@ -168,6 +163,3 @@ ms.locfileid: "51791691"
 ## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [演练：调试多线程应用程序](../debugger/walkthrough-debugging-a-multithreaded-application.md)
-
-
-

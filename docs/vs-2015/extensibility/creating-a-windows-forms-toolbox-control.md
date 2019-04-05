@@ -1,14 +1,9 @@
 ---
 title: 创建 Windows 窗体工具箱控件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - winforms
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4cdb411abc52cd6a23b9401166fde1de98231ece
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781707"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000265"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +53,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
   
 5.  在中**属性**窗口中，设置以下值： 在设计图面上的控件。  
   
-    |控件|属性|“值”|  
+    |控件|属性|值|  
     |-------------|--------------|-----------|  
     |`Label1`|**文本**|""|  
     |`Button1`|**名称**|btnReset|  
@@ -194,7 +189,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
   
      此时将打开窗体。 `Counter`控件将显示以下文本。  
   
-     **计数： 0**  
+     **计数：0**  
   
 14. 单击“测试” 。  
   
@@ -213,11 +208,10 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
      该计数器将重置为**0**。  
   
 ## <a name="next-steps"></a>后续步骤  
- 生成“工具箱”  控件时，Visual Studio 将在项目的 \bin\debug\ 文件夹中创建一个名为 *项目名称*.vsix 的文件。 你可以通过将 .vsix 文件上载到网络或网站来部署此控件。 当用户打开.vsix 文件时，该控件是安装并添加到 Visual Studio**工具箱**用户的计算机上。 或者，可以上传到.vsix 文件[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点，以便用户可以通过在浏览找到它**工具 / 扩展和更新**对话框。  
+ 生成“工具箱”  控件时，Visual Studio 将在项目的 \bin\debug\ 文件夹中创建一个名为 *项目名称*.vsix 的文件。 你可以通过将 .vsix 文件上载到网络或网站来部署此控件。 当用户打开.vsix 文件时，该控件是安装并添加到 Visual Studio**工具箱**用户的计算机上。 或者，可以上传到.vsix 文件[Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web 站点，以便用户可以通过在浏览找到它**工具 / 扩展和更新**对话框。  
   
 ## <a name="see-also"></a>请参阅  
  [扩展工具箱](../misc/extending-the-toolbox.md)   
  [创建 WPF 工具箱控件](../extensibility/creating-a-wpf-toolbox-control.md)   
  [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Windows 窗体控件开发基础知识](http://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)
-

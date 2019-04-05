@@ -1,14 +1,9 @@
 ---
-title: 演练： 下载附属程序集使用 ClickOnce 部署 API 按需 |Microsoft Docs
-ms.custom: ''
+title: 演练：下载使用 ClickOnce 部署 API 按需的附属程序集 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,13 +21,13 @@ ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e6de316fd0ff66e0815da7fa935d21e23a8285e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 77795c93679bddb21a56b8c7a64a11ceb6aa1e6c
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306327"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58931698"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：使用 ClickOnce 部署 API 按需下载附属程序集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +36,13 @@ ms.locfileid: "49306327"
   
  如中所述[本地化 ClickOnce 应用程序](../deployment/localizing-clickonce-applications.md)，可以包括适用于多个区域性相同的多个附属程序集[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署。 默认情况下，即使单个客户端可能只需要一个附属程序集， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 也会将部署中的所有附属程序集下载到客户端计算机中。  
   
- 本演练演示如何将附属程序集标记为可选，并且只下载客户端计算机的当前区域性设置需要的程序集。 下面的过程使用 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] 中可用的工具。 还可在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中执行此任务。  另请参阅 [演练：在设计器中使用 ClickOnce 部署 API 按需下载附属程序集](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) 或 [演练：在设计器中使用 ClickOnce 部署 API 按需下载附属程序集](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))。  
+ 本演练演示如何将附属程序集标记为可选，并且只下载客户端计算机的当前区域性设置需要的程序集。 下面的过程使用 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]中可用的工具。 还可在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中执行此任务。  另请参阅[演练：下载按需使用 ClickOnce 部署 API 使用设计器的附属程序集](http://msdn.microsoft.com/library/ms366788\(v=vs.110\))或[演练：下载附属程序集使用 ClickOnce 部署使用设计器的 API 按需](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))。  
   
 > [!NOTE]
 >  出于测试目的，下面的代码示例以编程方式将区域性设置为 `ja-JP`。 有关如何为生产环境调整此代码的信息，请参阅本主题中后面的“后续步骤”部分。  
   
 ## <a name="prerequisites"></a>系统必备  
- 本主题假定你知道如何使用 Visual Studio 将本地化的资源添加到应用程序。 有关详细说明，请参阅 [演练：本地化 Windows 窗体](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx)。  
+ 本主题假定你知道如何使用 Visual Studio 将本地化的资源添加到应用程序。 有关详细说明，请参阅[演练：本地化 Windows 窗体](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx)。  
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>按需下载附属程序集  
   
@@ -58,7 +53,7 @@ ms.locfileid: "49306327"
   
 2.  使用生成你的应用程序的附属程序集[Resgen.exe （资源文件生成器）](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-3.  使用 MageUI.exe 生成应用程序清单，或打开现有的应用程序清单。 有关此工具的详细信息，请参阅[MageUI.exe (Manifest Generation and Editing Tool，Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
+3.  使用 MageUI.exe 生成应用程序清单，或打开现有的应用程序清单。 有关此工具的详细信息，请参阅[MageUI.exe（图形化客户端中的清单生成和编辑工具）](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
   
 4.  单击“文件”  选项卡。  
   
@@ -75,6 +70,3 @@ ms.locfileid: "49306327"
   
 ## <a name="see-also"></a>请参阅  
  [本地化 ClickOnce 应用程序](../deployment/localizing-clickonce-applications.md)
-
-
-

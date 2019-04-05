@@ -1,12 +1,9 @@
 ---
 title: 属性的属性在 UML 类图 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.attribute.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: ba01e064-7424-4e72-98fa-42fa1c30e153
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0129242593596ea7e3875db2a748045c50863c4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27affdb42f6f5ad1dd4c880b87e3cbf737d52921
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817355"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931876"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>UML 类图上特性的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +69,8 @@ ms.locfileid: "51817355"
 |   **是唯一的**   |    False     |                                                                                                                                                                如果为 True，则集合中没有重复值。 用于“重数”大于 1 的情况  。                                                                                                                                                                |
 
 ## <a name="see-also"></a>请参阅  
- [UML 类图： 参考](../modeling/uml-class-diagrams-reference.md)   
+ [UML 类关系图：引用](../modeling/uml-class-diagrams-reference.md)   
  [UML 类图上类型的属性](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [UML 类图上的操作的属性](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [UML 类图： 准则](../modeling/uml-class-diagrams-guidelines.md)   
- [UML 类图：准则](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [UML 类关系图：指导原则](../modeling/uml-class-diagrams-guidelines.md)   
+ [UML 类关系图：指南](../modeling/uml-class-diagrams-guidelines.md)

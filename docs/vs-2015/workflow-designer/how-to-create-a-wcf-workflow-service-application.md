@@ -1,23 +1,20 @@
 ---
-title: 如何： 创建 WCF 工作流服务应用程序 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建 WCF 工作流服务应用程序 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 12d675ac-27d8-4d86-ba16-6f7688f8c841
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 8632d8cf942fe4a06f12d324fea1f6f567080981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0e7bf54f527a82bb59a8dc9248d3d9294a07aa59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228431"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931003"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>如何：创建 WCF 工作流服务应用程序
 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 工作流服务应用程序是在它们自身与客户端之间跨进程边界传递消息的分布式通信服务。 服务端服务协定的实现是通过 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 中的工作流活动，以类似于 .NET Framework 3.5 中的旧工作流服务的方式基于声明完成的。  
@@ -46,5 +43,5 @@ ms.locfileid: "49228431"
 8.  该项目模板将创建一个 XAML 格式的服务定义。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 打开设计视图，其中显示一个 <xref:System.Activities.Statements.Sequence> 活动，该活动包含一组 <xref:System.ServiceModel.Activities.Receive> 和 <xref:System.ServiceModel.Activities.SendReply> 活动。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 创建活动](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [如何：创建活动](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [创建工作流项目](../workflow-designer/creating-a-workflow-project.md)

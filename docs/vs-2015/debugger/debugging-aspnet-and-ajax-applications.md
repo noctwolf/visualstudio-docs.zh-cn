@@ -1,14 +1,9 @@
 ---
 title: 调试 ASP.NET 和 AJAX 应用程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 9d531913-541b-47b8-864d-138021fca0c6
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d3a600059f29d7e0034e4e64239798c32d721a1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785919"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932209"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>调试 ASP.NET 和 AJAX 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,8 +46,8 @@ ms.locfileid: "51785919"
  [管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)  
  说明调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 异常时必须启用“仅我的代码”的原因。  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
- 讨论可帮助你调试 AJAX 代码的一些方法和工具。  
+ [调试和跟踪 Ajax 应用程序概述](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ 讨论可帮助您调试 AJAX 代码的一些方法和工具。  
   
  [IntelliTrace](../debugger/intellitrace.md)  
  使用 IntelliTrace 可记录和评审应用程序的状态的历史记录而不用经常重新启动应用程序，从而加快了代码的调试速度。 您可以查看有关在运行应用程序期间发生的事件和调用的信息，然后在这些时间点上开始调试。 需要 Visual Studio Ultimate。  
@@ -62,6 +57,3 @@ ms.locfileid: "51785919"
  [Debugging Web Applications and Script](../debugger/debugging-web-applications-and-script.md) （调试 Web 应用程序和脚本）  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
  [调试器基础知识](../debugger/debugger-basics.md)
-
-
-

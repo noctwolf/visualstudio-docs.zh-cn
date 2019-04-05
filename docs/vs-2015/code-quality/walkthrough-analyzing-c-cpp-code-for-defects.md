@@ -1,14 +1,9 @@
 ---
-title: 演练： 对 C + + 代码进行缺陷分析 |Microsoft Docs
-ms.custom: ''
+title: 演练：对 C + + 代码进行缺陷分析 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
 - code analysis, walkthroughs
@@ -18,15 +13,15 @@ ms.assetid: eaee55b8-85fe-47c7-a489-9be0c46ae8af
 caps.latest.revision: 37
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 6a5e98ee673d232065dd522b0b81a21760306979
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e82444513c4e8e766cb7c3201f54089aee3c817
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782305"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930551"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>演练：对 C/C++ 代码进行缺陷分析
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>演练：分析 C/C++ 代码的缺陷
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本演练演示如何使用 C/c + + 代码的代码分析工具分析 C/c + + 代码以查找潜在的代码缺陷。  
@@ -57,7 +52,7 @@ ms.locfileid: "51782305"
   
      演示解决方案现在将出现**解决方案资源管理器**。  
   
-2.  上**构建**菜单上，单击**重新生成解决方案**。  
+2.  在“生成”菜单上，单击“重新生成解决方案”。  
   
      该解决方案版本，无任何错误或警告。  
   
@@ -83,7 +78,7 @@ ms.locfileid: "51782305"
   
 2.  在中**错误列表**，双击以下警告：  
   
-     警告 C6230： 语义不同类型之间的隐式强制转换： 在 Boolean 上下文中使用 HRESULT。  
+     警告 C6230:语义不同类型之间的隐式强制转换： 在 Boolean 上下文中使用 HRESULT。  
   
      代码编辑器中显示导致警告函数中的行`bool``ProcessDomain()`。 此警告表示 HRESULT 正在使用在 if 语句中布尔值结果的地方。  
   
@@ -95,7 +90,7 @@ ms.locfileid: "51782305"
   
 4.  在中**错误列表**，双击以下警告：  
   
-     警告 C6282： 运算符不正确： 分配到测试上下文中的常量。 已 = = 预期？  
+     警告 C6282:运算符不正确： 分配到测试上下文中的常量。 已 = = 预期？  
   
 5.  通过测试的相等性来更正此警告。 你的代码应类似于下面的代码：  
   
@@ -137,7 +132,7 @@ ms.locfileid: "51782305"
   
 6.  在中**错误列表**，双击以下警告：  
   
-     警告 C6011： 取消引用 NULL 指针 newNode。  
+     警告 C6011:取消引用 NULL 指针 newNode。  
   
      此警告意味着调用方未能检查返回值。 在这种情况下，调用**AllocateNode**可能返回 NULL 值 （请参阅 AllocateNode 的函数声明的 annotations.h 标头文件）。  
   
@@ -179,7 +174,7 @@ ms.locfileid: "51782305"
   
 3.  在中**错误列表**，双击以下警告：  
   
-     警告 C6011： 取消引用 NULL 指针 node。  
+     警告 C6011:取消引用 NULL 指针 node。  
   
      此警告指示传递到函数的节点可能为 null，并指示产生该警告的行号。  
   
@@ -200,7 +195,4 @@ ms.locfileid: "51782305"
      项目版本，无任何警告或错误。  
   
 ## <a name="see-also"></a>请参阅  
- [演练：对托管代码进行代码缺陷分析](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-
+ [演练：分析托管代码的代码缺陷](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

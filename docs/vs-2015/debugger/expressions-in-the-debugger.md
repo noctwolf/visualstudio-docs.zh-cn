@@ -1,13 +1,8 @@
 ---
 title: 调试器中的表达式 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -31,13 +26,13 @@ ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf75965a9be7c8e2a9a09cc43fa6eec632d6bf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a284fc35a5a792171e5102518bcfa553337dd15
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722235"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931601"
 ---
 # <a name="expressions-in-the-debugger"></a>调试器中的表达式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ Visual Studio 调试器包括表达式计算器，当您在 **“快速监视”
  无法识别 F# 表达式。 如果正在调试 F# 代码，你需要在向调试器窗口或对话框中输入表达式之前，将表达式转换为 C# 语法。 当把表达式从 F # 转换到 C# 时，请务必记住 C# 使用 `==` 运算符来测试相等性，而 F # 使用单个 `=`。  
   
 ## <a name="c-expressions"></a>C++ 表达式  
- 有关将上下文运算符用于 C++ 中的表达式的信息，请参阅 [Context Operator (C++)](../debugger/context-operator-cpp.md)。  
+ 有关将上下文运算符用于 C++ 中的表达式的信息，请参阅 [上下文运算符 (C++)](../debugger/context-operator-cpp.md)。  
   
 ### <a name="unsupported-expressions-in-c"></a>不支持的 C++ 表达式  
   
@@ -74,7 +69,7 @@ new Date(2,3,1985)
 ```  
   
 #### <a name="preprocessor-macros"></a>预处理器宏  
- 调试器中不支持预处理器宏。 例如，如果常量 `VALUE` 被声明为： `#define VALUE 3`，则不能使用“监视” `VALUE`**窗口中的** 。 若要避免此限制，只要有可能就应将 `#define`替换为枚举和函数。  
+ 调试器中不支持预处理器宏。 例如，如果常量 `VALUE` 被声明为： `#define VALUE 3`，则不能使用 **监视** 窗口中的 `VALUE` 。 若要避免此限制，只要有可能就应将 `#define`替换为枚举和函数。  
   
 ### <a name="using-namespace-declarations"></a>使用命名空间声明  
  不能使用 `using namespace` 声明。  若要访问一个类型名称或当前命名空间之外的变量，必须使用完全限定的名称。  
@@ -220,12 +215,7 @@ int main()
 -   命名空间或模块级的关键字，如 `End Sub` 或 `Module`。  
   
 ## <a name="see-also"></a>请参阅  
- [C + + 中的格式说明符](../debugger/format-specifiers-in-cpp.md)   
+ [C++ 中的格式说明符](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)   
  [伪变量](../debugger/pseudovariables.md)
-
-
-
-
-

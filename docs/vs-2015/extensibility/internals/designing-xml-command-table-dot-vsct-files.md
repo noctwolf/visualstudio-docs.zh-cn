@@ -1,26 +1,21 @@
 ---
 title: 设计 XML 命令表 (。Vsct) 文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c7a4e07c45c5d651af057e1eb33c23d37601cb3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762809"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932019"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>设计 XML 命令表 (。Vsct) 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ XML 命令表格 (.vsct) 文件描述的布局和外观的命令项对为 VSPack
   
  通过运行时创建新的 VSPackage[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]包模板，模板生成所需的元素具有菜单命令、 工具窗口中，或自定义编辑器中的，具体取决于你选择的.vsct 文件。 然后可以修改此.vsct 文件以满足特定的 VSPackage 的要求。 有关如何修改.vsct 文件的示例，请参阅中的示例[扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)。  
   
- 若要创建新的、 空白.vsct 文件，请参阅[如何： 创建。Vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。 创建后，您将添加 XML 元素、 属性和值到描述命令项布局的文件。 有关详细的 XML 架构，请参阅[VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)。  
+ 若要创建新的、 空白.vsct 文件，请参阅[如何：创建。Vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。 创建后，您将添加 XML 元素、 属性和值到描述命令项布局的文件。 有关详细的 XML 架构，请参阅[VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md)。  
   
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc 和.vsct 文件之间的差异  
  虽然.vsct 文件中的 XML 标记背后的含义是相同的为中现已弃用.ctc 文件格式，其实现是稍有不同。  
@@ -71,7 +66,7 @@ XML 命令表格 (.vsct) 文件描述的布局和外观的命令项对为 VSPack
   
   新的编译器、 vsct.exe，编译.ctc 和.vsct 文件。 旧 ctc.exe 编译器，但是，将不识别也不编译.vsct 文件。  
   
-  Vsct.exe 编译器可用于将现有.cto 文件转换成一个.vsct 文件。 有关详细信息，请参阅[如何： 创建。从现有的 Vsct 文件。首席技术官文件](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)。  
+  Vsct.exe 编译器可用于将现有.cto 文件转换成一个.vsct 文件。 有关详细信息，请参阅[如何：创建。从现有的 Vsct 文件。首席技术官文件](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)。  
   
 ## <a name="the-vsct-file-elements"></a>.Vsct 文件元素  
  命令表具有以下层次结构和元素：  
@@ -130,4 +125,3 @@ XML 命令表格 (.vsct) 文件描述的布局和外观的命令项对为 VSPack
   
 ## <a name="see-also"></a>请参阅  
  [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)
-

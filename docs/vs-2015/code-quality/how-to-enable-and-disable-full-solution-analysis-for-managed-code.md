@@ -1,12 +1,9 @@
 ---
-title: 如何： 启用和禁用托管代码的完整解决方案分析 |Microsoft Docs
-ms.custom: ''
+title: 如何：启用和禁用托管代码的完整解决方案分析 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 ms.assetid: 04315147-5792-47f0-8b5f-9ac8413c6a57
@@ -14,17 +11,17 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af0aae4020182f6414d44a2004f98a6fc0df23ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221866"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930812"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>如何： 启用和禁用托管代码的完整解决方案分析
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>如何：启用和禁用托管代码的完整解决方案分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-请注意]
+备注
 >  本主题仅适用于 Visual Studio 2015 Update 3 RC 和更高版本。  
   
  *完整解决方案分析*是 Visual Studio 功能，使你可以选择是否查看仅在打开 Visual C# 或 Visual Basic 文件在你的解决方案，或在解决方案中的打开和关闭 Visual C# 或 Visual Basic 文件中的代码分析问题。  
@@ -59,6 +56,3 @@ ms.locfileid: "49221866"
  默认情况下，完整解决方案分析适用于 Visual Basic 启用和禁用对于 Visual C#。  
   
  Visual Studio Update 3 RC 包括增强的代码分析工具诊断 v2 引擎，大大减少内存使用情况和减少 CPU 时间空闲，即使启用完整解决方案分析。
-
-
-

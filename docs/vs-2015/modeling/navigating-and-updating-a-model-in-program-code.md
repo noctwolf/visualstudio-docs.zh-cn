@@ -1,25 +1,22 @@
 ---
 title: 导航和更新中的模型程序代码 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: 1427ae91-be8a-4ce7-85df-00038faa2cbb
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1b9f53f1c2e28ce84cc59afa1d1db205da61e735
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863160"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930973"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>在程序代码中导航和更新模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +54,7 @@ ms.locfileid: "49863160"
   
  [DocView 和 DocData](#docdata)  
   
- 形状、 连接符和关系图和到模型元素及其关系是在单独主题中所述。 有关详细信息，请参阅[如何： 导航和更新图表](../misc/how-to-navigate-and-update-a-diagram.md)。  
+ 形状、 连接符和关系图和到模型元素及其关系是在单独主题中所述。 有关详细信息，请参阅[如何：导航和更新图表](../misc/how-to-navigate-and-update-a-diagram.md)。  
   
 ##  <a name="example"></a> 示例 DSL 定义  
  这是 DslDefinition.dsl 有关本主题中示例的主要部分：  
@@ -168,7 +165,7 @@ ms.locfileid: "49863160"
 -   ElementLink-所有关系都是 ElementLinks  
   
 ##  <a name="transaction"></a> 执行在事务内的更改  
- 每当你的程序代码更改存储区中的任何内容时，它必须在事务内执行。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Modeling.Transaction> 。  
+ 每当你的程序代码更改存储区中的任何内容时，它必须在事务内执行。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Modeling.Transaction>。  
   
  管理事务的最简便的方法是使用`using`语句括在`try...catch`语句：  
   
@@ -229,7 +226,7 @@ using (Transaction t =
   
 - 设置新元素，尤其是为其属性的属性`IsName`在 DslDefinition 是如此。 此标志将标记来标识其所有者中唯一的元素的属性。 在这种情况下，Name 属性具有该标志。  
   
-- 到存储区中，必须已加载此 DSL 的 DSL 定义。 如果你正在编写如菜单命令扩展，这通常是已，则返回 true。 在其他情况下，你可以显式将模型加载到存储中，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>加载它。 有关详细信息，请参阅[如何： 从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。  
+- 到存储区中，必须已加载此 DSL 的 DSL 定义。 如果你正在编写如菜单命令扩展，这通常是已，则返回 true。 在其他情况下，你可以显式将模型加载到存储中，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>加载它。 有关详细信息，请参阅[如何：从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。  
   
   当以这种方式创建一个元素时，形状将自动创建 （如果 DSL 具有关系图）。 它显示在自动分配的位置中，使用默认形状、 颜色和其他功能。 如果你想要控制在何处以及如何显示的相关联的形状，请参阅[创建元素和其形状](#merge)。  
   
@@ -513,7 +510,7 @@ partial class MyDiagram
  您还可以设置颜色和其他公开的属性的连接器使用此方法。  
   
 ### <a name="use-transactions"></a>使用事务的事务  
- 形状、 连接符和关系图是子类型的<xref:Microsoft.VisualStudio.Modeling.ModelElement>和实时存储区中。 仅在事务内，因此必须对其进行更改。 有关详细信息，请参阅[如何： 使用事务的事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
+ 形状、 连接符和关系图是子类型的<xref:Microsoft.VisualStudio.Modeling.ModelElement>和实时存储区中。 仅在事务内，因此必须对其进行更改。 有关详细信息，请参阅[如何：使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
   
 ##  <a name="docdata"></a> 文档视图和文档数据  
  ![标准关系图类型的类图](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
@@ -525,9 +522,6 @@ partial class MyDiagram
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>   
  [域特定语言中的验证](../modeling/validation-in-a-domain-specific-language.md)   
  [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)   
- [如何： 使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)   
+ [如何：使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)   
  [使用 Visual Studio Modelbus 集成模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [响应并传播更改](../modeling/responding-to-and-propagating-changes.md)
-
-
-

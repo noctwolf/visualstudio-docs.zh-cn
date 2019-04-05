@@ -1,14 +1,9 @@
 ---
-title: 如何： 设置调试和发布配置 |Microsoft Docs
-ms.custom: ''
+title: 如何：设置调试和发布配置 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.builds
 dev_langs:
@@ -39,13 +34,13 @@ ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
 caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba827fda69b1dc455df4efe9c9f6eb83687780f3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 93aa6d9f6e821dba012009e90ba6f9be51641703
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758500"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931011"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>如何：设置调试和发布配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +67,8 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
   
 ## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
- [C + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [C++ 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)   
- [调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)
-
-
-
+ [调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)

@@ -1,25 +1,22 @@
 ---
 title: 读取模型和其他 Visual Studio 版本中的关系图 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757357"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932450"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中读取模型和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,19 +55,16 @@ ms.locfileid: "51757357"
   
   你可以保存这些更改。 如果你想要使所做的更改对其他用户可见，则必须至少发送已更新 **.layout**文件。  
   
-##  <a name="RelatedTopics"></a> 相关的主题  
+##  <a name="RelatedTopics"></a>相关主题  
   
 |标题|描述|  
 |-----------|-----------------|  
 |[层关系图：参考](../modeling/layer-diagrams-reference.md)|层关系图显示现有或建议的体系结构的结构。 写入代码后，可以自动依照层关系图对代码进行验证。|  
-|[UML 活动图：参考](../modeling/uml-activity-diagrams-reference.md)|活动图显示业务流程或软件中的工作流。|  
-|[UML 类图：参考](../modeling/uml-class-diagrams-reference.md)|类图显示许多上下文中（如代码、数据库架构、通讯协议或用于描述业务域的术语的词汇表）使用的类型和关系。|  
-|[UML 组件图：参考](../modeling/uml-component-diagrams-reference.md)|组件图显示软件设计中可分离的部分及其接口。|  
-|[UML 序列图：参考](../modeling/uml-sequence-diagrams-reference.md)|序列图显示软件设计中元素之间的交互。|  
-|[UML 用例图：参考](../modeling/uml-use-case-diagrams-reference.md)|用例图显示系统用户以及他们为实现特定目标可以执行的活动。|  
+|[UML 活动关系图：参考](../modeling/uml-activity-diagrams-reference.md)|活动图显示业务流程或软件中的工作流。|  
+|[UML 类关系图：参考](../modeling/uml-class-diagrams-reference.md)|类图显示许多上下文中（如代码、数据库架构、通讯协议或用于描述业务域的术语的词汇表）使用的类型和关系。|  
+|[UML 组件关系图：参考](../modeling/uml-component-diagrams-reference.md)|组件图显示软件设计中可分离的部分及其接口。|  
+|[UML 序列关系图：参考](../modeling/uml-sequence-diagrams-reference.md)|序列图显示软件设计中元素之间的交互。|  
+|[UML 用例关系图：参考](../modeling/uml-use-case-diagrams-reference.md)|用例图显示系统用户以及他们为实现特定目标可以执行的活动。|  
   
 ## <a name="see-also"></a>请参阅  
  [为应用程序创建模型](../modeling/create-models-for-your-app.md)
-
-
-

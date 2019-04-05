@@ -1,12 +1,9 @@
 ---
 title: 使用 UML API 编程 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, API
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: c5937139-49d0-4439-8a9f-89f5e0474618
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d5670b0c0806d59119e1a1af87bae5642255c5a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24f4f21c984f70ca10236de7bf15d0187fd12d71
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793173"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931190"
 ---
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +28,7 @@ UML API 的 Visual Studio，您可以编写代码来创建、 读取和更新 UM
   
 |主题|描述的示例类型和方法|描述的功能|  
 |-----------|-----------------------------------------|------------------------|  
-|[使用 UML API 导航关系](../modeling/navigate-relationships-with-the-uml-api.md)|UML 元素及其属性和关联。 例如，IElement 及其后代，其中包括：IClass、IActivity、IUseCase、IComponent、IInteraction、IModel 和 IPackage|在 Visual Studio 中，UML 模型符合 UML 规范版本 2.1.2，可以获得[UML 资源页](http://go.microsoft.com/fwlink/?LinkId=160796)。 每种类型都是一个接口，与 UML 类型具有相同的名称，带有前缀“I”。|  
+|[使用 UML API 导航关系](../modeling/navigate-relationships-with-the-uml-api.md)|UML 元素及其属性和关联。 例如，IElement 及其后代，其中包括：IClass、 IActivity、 IUseCase、 IComponent、 IInteraction、 IModel、 其 IPackage|在 Visual Studio 中，UML 模型符合 UML 规范版本 2.1.2，可以获得[UML 资源页](http://go.microsoft.com/fwlink/?LinkId=160796)。 每种类型都是一个接口，与 UML 类型具有相同的名称，带有前缀“I”。|  
 |[在 UML 模型中创建元素和关系](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|每个元素类型都具有创建其子级的方法。|  
 |[在关系图上显示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)|IShape、IDiagram<br /><br /> IShape.Move()|模型中的每个元素都可以表示为关系图中的形状。 在某些情况下，可为每个对象创建新形状。 可以对这些形状进行移动、调整大小、着色和折叠或展开。|  
 |[导航 UML 模型](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|模型存储区用于存储模型。<br /><br /> 通过关系图上下文，可以访问当前关系图和存储。|  
@@ -54,7 +51,7 @@ UML API 的 Visual Studio，您可以编写代码来创建、 读取和更新 UM
 ## <a name="the-api-assemblies"></a>API 程序集  
  此表总结了为 UML 工具提供扩展性的程序集以及建议使用的命名空间。  
   
-|程序集|命名空间|提供对以下内容的访问：|  
+|Assembly|命名空间|提供对以下内容的访问：|  
 |--------------|----------------|-------------------------|  
 |Microsoft.VisualStudio.Uml.Interfaces|(全部)|UML 类型。|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml>|[创建方法](../modeling/create-elements-and-relationships-in-uml-models.md)|  
@@ -74,6 +71,3 @@ UML API 的 Visual Studio，您可以编写代码来创建、 读取和更新 UM
 ## <a name="see-also"></a>请参阅  
  [扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)   
  [UML 建模扩展性的 API 参考](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

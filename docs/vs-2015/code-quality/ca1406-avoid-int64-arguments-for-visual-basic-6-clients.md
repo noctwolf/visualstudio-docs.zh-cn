@@ -1,14 +1,9 @@
 ---
-title: CA1406： 避免使用 Int64 参数对 Visual Basic 6 客户端 |Microsoft Docs
-ms.custom: ''
+title: CA1406:避免使用 Int64 参数对 Visual Basic 6 客户端 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidInt64ArgumentsForVB6Clients
 - CA1406
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 81217588ab2f633ee7fc25d8036e7506a7de0364
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a024f2a695729dcc5c06ff6c5d6ac9c189fee762
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878331"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930539"
 ---
-# <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406：避免对 Visual Basic 6 客户端使用 Int64 参数
+# <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406:避免对 Visual Basic 6 客户端使用 Int64 参数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -58,14 +53,11 @@ ms.locfileid: "49878331"
  [!code-vb[FxCop.Interoperability.LongArgument#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.LongArgument/vb/FxCop.Interoperability.LongArgument.vb#1)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA1413：避免在 COM 可见值类型中使用非公共字段](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+ [CA1413:避免在 COM 可见值类型中的非公共字段](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
- [CA1407：避免在 COM 可见类型中使用静态成员](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
+ [CA1407:避免在 COM 可见类型中的静态成员](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017：用 ComVisibleAttribute 标记程序集](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+ [CA1017:用 ComVisibleAttribute 标记程序集](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>请参阅
  [与进行互操作非托管代码](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [Long 数据类型](http://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)
-
-
-

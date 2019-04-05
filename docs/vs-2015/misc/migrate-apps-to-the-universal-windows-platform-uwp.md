@@ -1,25 +1,20 @@
 ---
 title: 将应用迁移到通用 Windows 平台 (UWP) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932469"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>将应用迁移到通用 Windows 平台 (UWP)
 对使用 Visual Studio 2015 RC 创建的 Windows Store 8.1 应用、Windows Phone 8.1 应用或通用 Windows 应用的现有项目文件进行必要的手动更改，以便它们能与 Visual Studio 2015 RTM 一起使用。 （如果你的 Windows 8.1 通用应用同时具有 Windows 应用项目和 Windows Phone 项目，则需要按照以下步骤迁移每个项目。）  
@@ -93,11 +88,11 @@ ms.locfileid: "51791743"
   
     1.  设置的值\<平台 > 元素： **x86**。  
   
-    2.  添加\<TargetPlatformIdentifier > 元素并将其值设置为： **UAP**。  
+    2.  添加\<TargetPlatformIdentifier > 元素并将其值设置为：**UAP**。  
   
     3.  更改的现有值\<TargetPlatformVersion > 元素为你安装的通用 Windows 平台版本的值。 此外将添加\<TargetPlatformMinVersion > 元素并为其提供相同的值。  
   
-    4.  更改的值\<MinimumVisualStudioVersion > 元素： **14**。  
+    4.  值更改\<MinimumVisualStudioVersion > 元素：**14**.  
   
     5.  替换为\<ProjectTypeGuids > 元素，如下所示：  
   
@@ -273,7 +268,7 @@ ms.locfileid: "51791743"
   
     2.  将 ApplicationTypeRevision 元素的值从 8.1 更新为 10.0。  
   
-    3.  值更改\<MinimumVisualStudioVersion > 元素： 14。  
+    3.  值更改\<MinimumVisualStudioVersion > 元素：14.  
   
     4.  添加\<EnableDotNetNativeCompatibleProfile > 元素并将其值设置为： true。  
   
@@ -346,7 +341,7 @@ ms.locfileid: "51791743"
   
    ```  
   
-    **旧的 Windows Phone 项目：** 你\<包 > 元素应类似于此。  
+    **Windows Phone 项目的旧：** 你\<包 > 元素应类似于此。  
   
    ```xml  
    <Package  
@@ -356,7 +351,7 @@ ms.locfileid: "51791743"
    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">  
    ```  
   
-    **通用 Windows 平台的新增功能：** 添加到以下架构在\<包 > 元素。 从刚才删除的架构的元素中删除任何关联的命名空间标识符前缀。 将 IgnorableNamespaces 属性更新为：uap mp。 新\<包 > 元素应类似于此。  
+    **新的通用 Windows 平台：** 添加到以下架构在\<包 > 元素。 从刚才删除的架构的元素中删除任何关联的命名空间标识符前缀。 将 IgnorableNamespaces 属性更新为：uap mp。 新\<包 > 元素应类似于此。  
   
    ```xml  
    <Package  
@@ -367,7 +362,7 @@ ms.locfileid: "51791743"
   
    ```  
   
-3. 添加\<依赖项 > 子元素\<包 > 元素。 然后添加\<TargetDeviceFamily > 子元素与此\<依赖项 > 具有 Name、 MinVersion 和 MaxVersionTested 属性元素。 为 Name 属性赋予值：Windows.Universal。 为 MinVersion 和 MaxVersionTested 赋予已安装通用 Windows 平台版本的值。 此元素应类似于：  
+3. 添加\<依赖项 > 子元素\<包 > 元素。 然后添加\<TargetDeviceFamily > 子元素与此\<依赖项 > 具有 Name、 MinVersion 和 MaxVersionTested 属性元素。 为名称属性提供值：Windows.Universal。 为 MinVersion 和 MaxVersionTested 赋予已安装通用 Windows 平台版本的值。 此元素应类似于：  
   
    ```xml  
    <Dependencies>  
@@ -375,7 +370,7 @@ ms.locfileid: "51791743"
    </Dependencies>  
    ```  
   
-4. **有关 Windows 应用商店：** 需要添加\<mp:PhoneIdentity > 子元素\<包 > 元素。 添加 PhoneProductId 属性和 PhonePublisherId 属性。 设置具有相同的值中的 Name 属性 PhoneProductId\<标识 > 元素。 将 PhonePublishedId 值设置为：00000000-0000-0000-0000-000000000000。 如：  
+4. **对于 Windows 商店：** 您需要添加\<mp:PhoneIdentity > 子元素\<包 > 元素。 添加 PhoneProductId 属性和 PhonePublisherId 属性。 设置具有相同的值中的 Name 属性 PhoneProductId\<标识 > 元素。 PhonePublishedId 值设置为：00000000-0000-0000-0000-000000000000. 如：  
   
    ```xml  
    <Identity Name="aa3815a1-2d97-4c71-8c99-578135b28cd8" Publisher="CN=xxxxxxxx" Version="1.0.0.0" />   
@@ -384,7 +379,7 @@ ms.locfileid: "51791743"
   
 5. 查找\<先决条件 > 元素和删除此元素与它具有任何子元素。  
   
-6. 添加**uap**所示的命名空间\<资源 > 元素： Scale、 DXFeatureLevel。 例如：  
+6. 添加**uap**所示的命名空间\<资源 > 元素：Scale、 DXFeatureLevel。 例如：  
   
    ```xml  
    <Resources>  
@@ -487,7 +482,7 @@ ms.locfileid: "51791743"
   
 12. 更改框架依赖项。 将发布服务器的名称添加到所有\<PackageDependency > 元素，并指定 MinVersion，如果尚未指定。  
   
-     **旧：** \<PackageDependency > 元素  
+     **旧：**\<PackageDependency > 元素  
   
     ```xml  
     <Dependencies>  
@@ -496,7 +491,7 @@ ms.locfileid: "51791743"
   
     ```  
   
-     **新增功能：** \<PackageDependency > 元素  
+     **新增功能：**\<PackageDependency > 元素  
   
     ```xml  
     <Dependencies>  
@@ -523,7 +518,7 @@ ms.locfileid: "51791743"
     </Extension>  
     ```  
   
-     **新：** 使用蓝牙类型任务。  
+     **新增功能：** 使用蓝牙类型任务。  
   
     ```xml  
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">  
@@ -552,7 +547,7 @@ ms.locfileid: "51791743"
     </Capabilities>  
     ```  
   
-     **新：** 已替换为泛型蓝牙功能。  
+     **新增功能：** 替换为泛型蓝牙功能。  
   
     ```xml  
     <Capabilities>  
@@ -565,7 +560,7 @@ ms.locfileid: "51791743"
   
     1. 有关这些属性\<VisualElements > 已弃用，应删除：  
   
-       - \<VisualElements > 属性： ForegroundText、 ToastCapable  
+       - \<VisualElements > 属性：ForegroundText、 ToastCapable  
   
        - \<DefaultTile > 属性 DefaultSize  
   
@@ -676,7 +671,7 @@ ms.locfileid: "51791743"
   
    ```  
   
-6. 查找\<目标 > 元素的值的名称特性： 为 EnsureNuGetPackageBuildImports。 删除此元素及其所有子级。  
+6. 查找\<目标 > 其 name 属性具有值的元素：EnsureNuGetPackageBuildImports. 删除此元素及其所有子级。  
   
    ```xml  
    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">  
@@ -826,7 +821,7 @@ ms.locfileid: "51791743"
   
 ###  <a name="UnitTestRCUpdate10CSharp"></a> 更新 C# /VB 单元测试项目  
   
-1. 使用 Visual Studio，打开包含 C#/VB 单元测试项目的解决方案。 值更改\<OuttputType > 元素： AppContainerExe。  
+1. 使用 Visual Studio，打开包含 C#/VB 单元测试项目的解决方案。 值更改\<OuttputType > 元素：AppContainerExe.  
   
    ```xml  
   

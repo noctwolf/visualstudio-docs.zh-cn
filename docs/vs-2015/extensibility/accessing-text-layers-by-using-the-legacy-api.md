@@ -1,26 +1,21 @@
 ---
 title: 使用旧版 API 访问文本层 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text layers
 ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a5eb9d92e3604224f3806cf64f2dd8d4529e8d01
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6ae3c134fb97b7ec899dc63c2f0d23420390302d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729087"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931111"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>使用旧版 API 访问文本层
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,4 +51,3 @@ ms.locfileid: "51729087"
  [自定义编辑器中的语法着色](../extensibility/syntax-coloring-in-custom-editors.md)   
  [旧版 API 中使用文本标记](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [使用旧版 API 自定义编辑器控件和菜单](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)
-

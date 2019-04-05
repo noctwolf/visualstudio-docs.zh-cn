@@ -1,12 +1,9 @@
 ---
-title: UML 类图： 准则 |Microsoft Docs
-ms.custom: ''
+title: UML 类图：指导原则 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.overrideoperationsdialog
 helpviewer_keywords:
@@ -19,13 +16,13 @@ ms.assetid: 94dbfd55-b300-4b49-9049-0831ed849486
 caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bfd0b13942f5faee82e284c435b7f937d3ae5094
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 608b5c37975c49e4e90cdf9edd923121350735e5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726510"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933543"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML 类图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +56,7 @@ ms.locfileid: "51726510"
   
  输入和输出插针的类型以及活动参数节点的类型。  
   
- 请参阅[UML 活动图： 准则](../modeling/uml-activity-diagrams-guidelines.md)。  
+ 请参阅[UML 活动图：指导原则](../modeling/uml-activity-diagrams-guidelines.md)。  
   
  序列图  
   
@@ -67,22 +64,22 @@ ms.locfileid: "51726510"
   
  生命线的类型。 生命线的类应包含它可接收的所有消息的操作。  
   
- 请参阅[UML 序列图： 准则](../modeling/uml-sequence-diagrams-guidelines.md)。  
+ 请参阅[UML 序列图：指导原则](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
  组件图  
   
  组件接口，列出它们的操作。  
   
- 请参阅[UML 组件图： 准则](../modeling/uml-component-diagrams-guidelines.md)。  
+ 请参阅[UML 组件图：指导原则](../modeling/uml-component-diagrams-guidelines.md)。  
   
  用例图  
   
  用例的目标和步骤说明中提到的类型。  
   
- 请参阅[UML 用例图： 准则](../modeling/uml-use-case-diagrams-guidelines.md)。  
+ 请参阅[UML 用例图：指导原则](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
 ##  <a name="BasicSteps"></a> 绘制类图的基本步骤  
- 有关参考信息的元素的 UML 类图，请参阅[UML 类图： 参考](../modeling/uml-class-diagrams-reference.md)。  
+ 有关参考信息的元素的 UML 类图，请参阅[UML 类图：参考](../modeling/uml-class-diagrams-reference.md)。  
   
 > [!NOTE]
 >  创建任何建模图的详细的步骤所述[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
@@ -149,13 +146,13 @@ ms.locfileid: "51726510"
   
  如果已在组件图中的组件上定义接口，可以将接口从**UML 模型资源管理器**拖动到类图上。 在类图中，你可以定义接口包含的方法。  
   
- 请参阅[UML 组件图： 准则](../modeling/uml-component-diagrams-guidelines.md)。  
+ 请参阅[UML 组件图：指导原则](../modeling/uml-component-diagrams-guidelines.md)。  
   
  UML 序列图  
   
  您可以从序列图中的生命线创建类和接口，然后将类从**UML 模型资源管理器**到 UML 类图。 序列图中的每个生命线表示对象、组件或参与者的一个实例。  
   
- 若要根据生命线创建类，请打开生命线的快捷菜单，然后选择**创建类**或**创建接口**。 请参阅[UML 序列图： 准则](../modeling/uml-sequence-diagrams-guidelines.md)。  
+ 若要根据生命线创建类，请打开生命线的快捷菜单，然后选择**创建类**或**创建接口**。 请参阅[UML 序列图：指导原则](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
 ##  <a name="AttributesAndOperations"></a> 特性和操作  
  特性 (4) 是类型的每个实例可具有的命名值。 访问特性不会更改实例的状态。  
@@ -341,7 +338,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  除了作为一个整体，关联的属性每个*角色*，也就是说，每个关联端的具有其自己的某些属性。 若要查看它们，请展开**第一个角色**并**第二个角色**属性。  
   
- 每个角色的某些属性会直接显示在关系图上。 具体如下：  
+ 每个角色的某些属性会直接显示在关系图上。 它们是：  
   
 - 角色名称。 它显示在关系图中相应的关联端处。 可以在关系图上或在设置**属性**窗口。  
   
@@ -477,12 +474,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 ## <a name="see-also"></a>请参阅  
  [编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)   
- [UML 类图： 参考](../modeling/uml-class-diagrams-reference.md)   
+ [UML 类关系图：引用](../modeling/uml-class-diagrams-reference.md)   
  [建立用户需求模型](../modeling/model-user-requirements.md)   
- [UML 组件图： 参考](../modeling/uml-component-diagrams-reference.md)   
- [UML 序列图： 参考](../modeling/uml-sequence-diagrams-reference.md)   
- [UML 用例图： 参考](../modeling/uml-use-case-diagrams-reference.md)   
- [UML 组件图：参考](../modeling/uml-component-diagrams-reference.md)
-
-
-
+ [UML 组件关系图：引用](../modeling/uml-component-diagrams-reference.md)   
+ [UML 序列关系图：引用](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML 用例关系图：引用](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML 组件关系图：参考](../modeling/uml-component-diagrams-reference.md)

@@ -1,25 +1,22 @@
 ---
 title: 在建模图上定义菜单命令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, menu commands
 ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c211c37817ba996105d7496dc49e91db9fa9298e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809098"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926080"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>在建模图上定义菜单命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +66,7 @@ ms.locfileid: "51809098"
 2. 将下列引用添加到项目中。  
 
 
-   |                                                                                                    参考                                                                                                    |                                                                                                  由此可执行的操作                                                                                                  |
+   |                                                                                                    参考                                                                                                    |                                                                                                  允许执行的操作                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         通过使用 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)定义组件。                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        读取并更改模型元素的属性。                                                                                         |
@@ -223,7 +220,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
      此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。  
 
-     **疑难解答**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未启动：  
+     **故障排除**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不会启动：  
 
     -   如果你有多个项目，请确保将 VSIX 项目设置为解决方案的启动项目。  
 
@@ -235,7 +232,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3.  在关系图上的任意位置打开快捷菜单。 你的命令应出现在菜单中。  
 
-     **故障排除**：如果菜单上没有该命令，请确保：  
+     **故障排除**:如果命令不会出现在菜单上，请确保：  
 
     -   该菜单命令项目作为一个 MEF 组件在  “资产”选项卡中列出，该选项卡位于 VSIX 项目的 **source.extensions.manifest** 中。  
 
@@ -276,7 +273,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，可以通过从以下位置删除文件来删除扩展：  
 
-   *%Localappdata%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
 
 ##  <a name="MenuExample"></a> 示例  
  下面的示例演示一个菜单命令的代码，该命令用于交换类图中两个元素的名称。 此代码必须在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展项目中生成，并按前面几节所述进行安装。  
@@ -375,7 +372,4 @@ namespace SwapClassNames
  [为 UML 模型定义验证约束](../modeling/define-validation-constraints-for-uml-models.md)   
  [使用 UML API 编辑 UML 序列图](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)   
  [使用 UML API 编程](../modeling/programming-with-the-uml-api.md)   
- [示例： 对齐 UML 关系图上的形状的命令](http://go.microsoft.com/fwlink/?LinkID=213809)
-
-
-
+ [示例：若要对齐 UML 关系图上的形状的命令](http://go.microsoft.com/fwlink/?LinkID=213809)

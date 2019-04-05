@@ -1,14 +1,9 @@
 ---
-title: 演练： 手动部署 ClickOnce 应用程序 |Microsoft Docs
-ms.custom: ''
+title: 演练：手动部署 ClickOnce 应用程序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +20,13 @@ ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
 caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 4e8874324c5e5cbfb5bc42e5c6c23666b5e14b67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b9086edb3dd70946bb988bda7b933b010c045da3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236166"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932042"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>演练：手动部署 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "49236166"
   
 -   确定如何将分布式部署。  
   
-     分布选项包括： Web、 文件共享或 CD。 有关详细信息，请参阅 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。  
+     分布选项包括：Web、 文件共享或 CD。 有关详细信息，请参阅 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。  
   
 -   确定应用程序是否需要提升的信任级别。  
   
@@ -216,6 +211,3 @@ ms.locfileid: "49236166"
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)   
  [ndptecclick](../deployment/clickonce-application-manifest.md)
-
-
-

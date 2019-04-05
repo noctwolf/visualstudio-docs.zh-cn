@@ -1,14 +1,9 @@
 ---
 title: 在远程计算机上的运行 Windows 应用商店应用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a3be715f58d3ed80122dfdd3aaf879c7db8aebd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 262391145b5cfc3889b2eea32df4e0955ed71b1a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784541"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931019"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>在远程计算机上运行 Windows 应用商店应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +88,7 @@ ms.locfileid: "51784541"
   
  若要运行或保存远程工具的安装程序，请与你的 Visual Studio 版本匹配下表中选择的链接之一：  
   
-|版本|链接|说明|
+|Version|链接|说明|
 |-|-|-|
 |Visual Studio 2015 Update 3|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果系统提示，请加入免费的 Visual Studio Dev Essentials 组，或只是可以使用有效的 Visual Studio 订阅登录。 如有必要然后重新打开该链接。 请务必下载匹配您设备的操作系统 (x 86、 x64 或 ARM 版本） 的版本|
 |Visual Studio 2015 （较旧）|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果系统提示，请加入免费的 Visual Studio Dev Essentials 组，或只是可以使用有效的 Visual Studio 订阅登录。 如有必要然后重新打开该链接。请务必下载匹配您设备的操作系统 (x 86、 x64 或 ARM 版本） 的版本|
@@ -155,7 +150,7 @@ ms.locfileid: "51784541"
   
 2.  选择 **“调试”**。  
   
-3.  从 **“目标设备”** 列表中选择 **“远程计算机”** 。  
+3.  对于**目标设备**，选择**远程计算机**。  
   
 4.  在 **“远程计算机”** 框中输入远程设备的网络名称，或选择 **“查找”** ，从 **“选择远程调试器连接”** 对话框中选择该设备。  
   
@@ -166,18 +161,15 @@ ms.locfileid: "51784541"
   
 2.  展开 **“配置属性”** 节点，然后选择 **“调试”**。  
   
-3.  从 **“要启动的调试器”** 列表中选择 **“远程调试器”** 。  
+3.  从 **要启动的调试器** 列表中选择 **远程调试器** 。  
   
 4.  在 **“计算机名称”** 框中输入远程设备的网络名称，或选择该框中的下箭头，从 **“选择远程调试器连接”** 对话框中选择该设备。  
   
 ##  <a name="BKMK_RunRemoteDebug"></a> 运行远程调试会话  
  开始、停止和导航远程调试会话的方法与进行本地会话相同。 在开始调试之前，请确保远程调试监视器在远程设备上运行。  
   
- 然后在 **“调试”** 菜单上，选择 **“启动调试”** （键盘：F5）。 项目会重新编译，然后部署到远程设备上并启动。 调试器在断点暂停执行，以使您可进入逐语句执行、逐过程执行和跳出代码。 选择 **“停止调试”** 以结束调试会话并关闭远程应用程序。 有关详细信息，请参阅[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)。  
+ 然后选择**开始调试**上**调试**菜单 (键盘：F5）。 项目会重新编译，然后部署到远程设备上并启动。 调试器在断点暂停执行，以使您可进入逐语句执行、逐过程执行和跳出代码。 选择 **“停止调试”** 以结束调试会话并关闭远程应用程序。 有关详细信息，请参阅[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Visual Studio 测试应用商店应用](../test/testing-store-apps-with-visual-studio.md)   
  [在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)
-
-
-

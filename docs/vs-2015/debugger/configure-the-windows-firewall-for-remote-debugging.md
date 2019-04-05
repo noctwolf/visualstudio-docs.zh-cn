@@ -1,25 +1,20 @@
 ---
 title: 配置 Windows 防火墙以允许远程调试 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 39854b47bd31660fdc523bfd122363d5958df8e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a4f123c6dfbe7d3f194c3f07c5ed685cf5cc862c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734588"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926018"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以便进行远程调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ ms.locfileid: "51734588"
   
 5.  在“允许的应用”  列表中，选择“Visual Studio 远程调试监视器” 。 检查你希望远程调试监视器与之进行通信的一个或多个网络类型（“域”、“家庭/工作”（专用）、“公用”）。 类型必须包括 Visual Studio 计算机连接到的网络。  
   
-## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>启用远程调试的远程计算机上的端口  
+## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>远程计算机上支持远程调试的端口  
   
 |||||  
 |-|-|-|-|  
@@ -93,8 +88,8 @@ ms.locfileid: "51734588"
 |||||  
 |-|-|-|-|  
 |**端口**|**传入/传出**|**协议**|**说明**|  
-|135, 139, 445|传出|TCP|必须的。|  
-|137, 138|传出|UDP|必须的。|  
+|135, 139, 445|传出|TCP|必需。|  
+|137, 138|传出|UDP|必需。|  
 |500, 4500|传出|UDP|如果你的域策略需要通过 IPSec 进行网络通信，则需要。|  
 |80|传出|TCP|Web 服务器调试所必需。|  
   
@@ -117,7 +112,4 @@ ms.locfileid: "51734588"
 8.  你应该会在“入站规则”  或“出站规则”  列表中看到你的新规则。  
   
 ## <a name="see-also"></a>请参阅  
- [Remote Debugging](../debugger/remote-debugging.md)
-
-
-
+ [远程调试](../debugger/remote-debugging.md)

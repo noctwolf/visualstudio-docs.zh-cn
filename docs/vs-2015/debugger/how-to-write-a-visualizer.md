@@ -1,14 +1,9 @@
 ---
-title: 如何： 编写可视化工具 |Microsoft Docs
-ms.custom: ''
+title: 如何：编写可视化工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: 625a0d4f-abcc-43f2-9f8c-31c131a4378e
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2c7f1fa96bba40e5e56ca7f054b683b3243de65b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2421121e343fabbe3f2ec7d88ec087c6b84c8709
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724894"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932474"
 ---
 # <a name="how-to-write-a-visualizer"></a>如何：编写可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +38,9 @@ ms.locfileid: "51724894"
   
  调试器可视化工具的结构由两部分组成：  
   
-- *调试器端*程序在 Visual Studio 调试器中运行。 调试器端代码创建并显示可视化工具的用户界面。  
+- “调试器端”在 Visual Studio 调试器中运行。 调试器端代码创建并显示可视化工具的用户界面。  
   
-- *调试对象端*在 Visual Studio 正在调试的进程中运行 (*调试对象*)。  
+- “调试对象端”在 Visual Studio 正在调试的进程（“调试对象”）中运行。  
   
   要可视化的数据对象（如 String 对象）存在于调试对象进程中。 因此，调试器端必须将数据对象发送到调试对象端，然后调试器端可以使用您创建的用户界面进行显示。  
   
@@ -63,7 +58,7 @@ ms.locfileid: "51724894"
   
   自定义可视化工具可能有安全性问题。 请参阅[可视化工具安全注意事项](../debugger/visualizer-security-considerations.md)。  
   
-  下面的过程高度概括了创建可视化工具时所需完成的操作。 有关更详细的说明，请参阅[演练： 用 C# 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)。  
+  下面的过程高度概括了创建可视化工具时所需完成的操作。 有关更详细的说明，请参阅[演练：编写可视化工具C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)。  
   
 ### <a name="to-create-the-debugger-side"></a>创建调试器端  
   
@@ -83,9 +78,6 @@ ms.locfileid: "51724894"
   
 ## <a name="see-also"></a>请参阅  
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)   
- [如何： 安装可视化工具](../debugger/how-to-install-a-visualizer.md)   
- [如何： 测试和调试可视化工具](../debugger/how-to-test-and-debug-a-visualizer.md)   
+ [如何：安装可视化工具](../debugger/how-to-install-a-visualizer.md)   
+ [如何：测试和调试可视化工具](../debugger/how-to-test-and-debug-a-visualizer.md)   
  [可视化工具安全注意事项](../debugger/visualizer-security-considerations.md)
-
-
-
