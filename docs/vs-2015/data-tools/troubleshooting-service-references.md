@@ -1,12 +1,9 @@
 ---
 title: 服务引用疑难解答 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
 - msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
@@ -19,13 +16,13 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223952"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937857"
 ---
 # <a name="troubleshooting-service-references"></a>服务引用疑难解答
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ ms.locfileid: "49223952"
 -   在中**解决方案资源管理器**，右键单击 WCF 服务库项目，然后单击**生成**。
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>通过远程桌面访问服务时出错
- 当用户访问通过远程桌面连接和用户的 Web 承载的 WCF 服务不具有管理权限，使用 NTLM 身份验证。 如果用户没有管理权限，用户可能会收到以下错误消息:"HTTP 请求是未经授权的客户端身份验证方案 Anonymous。 从服务器收到的身份验证标头是 NTLM"。
+ 当用户访问通过远程桌面连接和用户的 Web 承载的 WCF 服务不具有管理权限，使用 NTLM 身份验证。 如果用户没有管理权限，用户可能会收到以下错误消息："HTTP 请求是未经授权的客户端身份验证方案 Anonymous。 从服务器收到的身份验证标头是 NTLM"。
 
  修复此错误的方法：
 
@@ -79,7 +76,7 @@ ms.locfileid: "49223952"
 
 3.  请确保**显示高级生成配置**复选框已选中，然后依次**确定**。
 
-4.  加载该 WCF 服务项目。 有关详细信息，请参阅[NIB 如何： 创建多项目解决方案](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)。
+4.  加载该 WCF 服务项目。 有关详细信息，请参阅[NIB 如何：创建多项目解决方案](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)。
 
 5.  在中**Configuration Manager**对话框中，将**活动解决方案配置**到**调试**。 有关详细信息，请参阅[如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)。
 
@@ -92,7 +89,7 @@ ms.locfileid: "49223952"
 
  若要解决此错误，请禁用 RSS 源：
 
-1.  在 Internet Explorer 中，在**工具**菜单上，单击**Internet 选项**。
+1.  在 Internet Explorer 中，单击“工具”菜单中的“Internet 选项”。
 
 2.  上**内容**选项卡上，在**馈送**部分中，单击**设置**。
 
