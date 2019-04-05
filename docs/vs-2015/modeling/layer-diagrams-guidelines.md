@@ -1,12 +1,9 @@
 ---
-title: 层关系图： 准则 |Microsoft Docs
-ms.custom: ''
+title: 层关系图：指导原则 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, layer diagrams
 - layer diagrams
@@ -16,29 +13,29 @@ ms.assetid: 2903bec7-a93b-46a6-aac6-994ac4f3f1a7
 caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fa7483a000b5abd59b846edceead3af93f41dbc4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ad85ccb9e58b45b1e6354c7abf0cb5651aa6d92e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734455"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937780"
 ---
-# <a name="layer-diagrams-guidelines"></a>层关系图：指南
+# <a name="layer-diagrams-guidelines"></a>层关系图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-通过创建描述在高级别的应用程序的体系结构*层关系图*Visual Studio 中。 若要确保你的代码与此设计保持一致，请使用层关系图验证代码。 还可以在生成过程中包括层验证。 请参阅[第 9 频道视频： 设计和验证体系结构使用层关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。  
+通过创建描述在高级别的应用程序的体系结构*层关系图*Visual Studio 中。 若要确保你的代码与此设计保持一致，请使用层关系图验证代码。 还可以在生成过程中包括层验证。 请参阅[第 9 频道视频：设计和验证体系结构使用层关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="what-is-a-layer-diagram"></a>什么是层关系图?  
- 类似于传统的体系结构示意图，层关系图标识设计的主要组件或功能单元及其相互依赖关系。 在关系图中，每个节点称为*层*，表示命名空间、 项目或其他项目的逻辑组。 您可以绘制出您的设计中存在的依赖关系。 与传统的体系结构关系图不同的是，您可以验证源代码中的实际依赖关系符合您指定的预期依赖关系。 通过在[!INCLUDE[esprtfs](../includes/esprtfs-md.md)]上验证常规生成的一部分，您可以确保程序代码继续符合系统的体系结构将来的更改。 请参阅[层关系图： 参考](../modeling/layer-diagrams-reference.md)。  
+ 类似于传统的体系结构示意图，层关系图标识设计的主要组件或功能单元及其相互依赖关系。 在关系图中，每个节点称为*层*，表示命名空间、 项目或其他项目的逻辑组。 您可以绘制出您的设计中存在的依赖关系。 与传统的体系结构关系图不同的是，您可以验证源代码中的实际依赖关系符合您指定的预期依赖关系。 通过在[!INCLUDE[esprtfs](../includes/esprtfs-md.md)]上验证常规生成的一部分，您可以确保程序代码继续符合系统的体系结构将来的更改。 请参阅[层关系图：参考](../modeling/layer-diagrams-reference.md)。  
   
 ##  <a name="Update"></a> 如何设计或更新您的应用程序用层关系图  
- 以下步骤概述了如何使用开发过程中的层关系图。 本主题中的后面几节描述了有关每个步骤的更多详细信息。 如果您正在开发新的设计，请忽略引用现有代码的步骤。  
+ 以下步骤概述了如何使用开发过程中的层关系图。 本主题中的后面几节描述了有关每个步骤的更多详细信息。 如果你正在开发新的设计，请忽略引用现有代码的步骤。  
   
 > [!NOTE]
->  这些步骤按大致顺序显示。 你可能需要重叠任务、重新排序它们以符合你自己的具体情况，并在项目中的每个迭代开始时重新访问它们。  
+>  这些步骤按大致顺序显示。 您可能需要重叠任务、重新排序它们以符合您自己的具体情况，并在项目中的每个迭代开始时重新访问它们。  
   
 1.  [创建层关系图](#Create)整个应用程序，或它其中的一个层。  
   
@@ -111,14 +108,14 @@ ms.locfileid: "51734455"
 ###  <a name="Improving"></a> 提高代码的结构  
  重构更改的改进不会影响应用程序的行为，但有助于使代码在将来更易于更改和扩展。 结构良好的代码的设计容易抽象化为层关系图。  
   
- 例如，如果您为代码中的每个命名空间创建图层，然后进行反向工程处理依赖关系，各层之间应该有单向依赖项的最小集。 如果您使用类或方法创建更详细的关系图作为您的层，则结果也将具有相同的特征。  
+ 例如，如果你为代码中的每个命名空间创建图层，然后进行反向工程处理依赖关系，各层之间应该有单向依赖项的最小集。 如果您使用类或方法创建更详细的关系图作为您的层，则结果也将具有相同的特征。  
   
  如果不是这样，代码将会更加难以在其生命周期中更改，并且将不太适用于使用层关系图进行验证。  
   
 ##  <a name="NewAreas"></a> 设计你的应用程序的新区域  
  当你启动开发新项目或新项目中的新区域时，你可以绘制层和依赖项，以帮助你在开始开发代码之前标识主要组件。  
   
--   **显示可识别的体系结构模式**在层关系图中，在可能的情况。 例如，描述桌面应用程序的层关系图可能包括演示文稿、域逻辑和数据存储等层。 涵盖应用程序的单个功能的层关系图，可能有模型、视图和控制器等一些层。 有关此类模式的详细信息，请参阅[模式和实践： 应用程序体系结构](http://go.microsoft.com/fwlink/?LinkId=145794)。  
+-   **显示可识别的体系结构模式**在层关系图中，在可能的情况。 例如，描述桌面应用程序的层关系图可能包括演示文稿、域逻辑和数据存储等层。 涵盖应用程序的单个功能的层关系图，可能有模型、视图和控制器等一些层。 有关此类模式的详细信息，请参阅[模式和实施方案：应用程序体系结构](http://go.microsoft.com/fwlink/?LinkId=145794)。  
   
      如果您要频繁创建相似的模式，请创建一个自定义工具。 请参阅[定义一个自定义建模工具箱项](../modeling/define-a-custom-modeling-toolbox-item.md)。  
   
@@ -126,7 +123,7 @@ ms.locfileid: "51734455"
   
 -   **无需将大多数类和其他项目链接到层**因为它们归属于较大的项目，例如已具有链接到层的命名空间。  
   
--   **创建一项新功能的新关系图**。 通常情况下，将有一个或多个层关系图来描述整个应用程序。 如果您正在设计应用程序的新功能，请勿添加或更改现有的关系图。 相反，创建您自己的关系图来反映代码的新部分。 新关系图中的图层可能包括演示文稿、域逻辑和新功能的数据库层。  
+-   **创建一项新功能的新关系图**。 通常情况下，将有一个或多个层关系图来描述整个应用程序。 如果您正在设计应用程序的新功能，请勿添加或更改现有的关系图。 相反，创建你自己的关系图来反映代码的新部分。 新关系图中的图层可能包括演示文稿、域逻辑和新功能的数据库层。  
   
      在生成应用程序时，将同时对整体的关系图和更详细的功能关系图验证你的代码。  
   
@@ -158,7 +155,7 @@ ms.locfileid: "51734455"
   若要解决这些错误，请更新代码，直至验证过程中不出现其他错误为止。 这通常是一个迭代过程。 有关这些错误的详细信息，请参阅[用层关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)。  
   
 > [!NOTE]
->  在你开发或重构代码时，你可能有新项目要链接到层关系图。 但是，这可能不是必要的，例如，当您的层表示现有命名空间时，而且新代码只是向这些命名空间中添加更多的材料。  
+>  在您开发或重构代码时，您可能有新项目要链接到层关系图。 但是，这可能不是必要的，例如，当你的层表示现有命名空间时，而且新代码只是向这些命名空间中添加更多的材料。  
   
  在开发过程中，你可能需要在验证期间禁止显示报告的某些冲突。 例如，你可能希望禁止显示你已解决或与特定情形不相关的错误。 禁止显示错误时，最好在 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中记录工作项。 若要执行此任务，请参阅[用层关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)。  
   
@@ -166,8 +163,5 @@ ms.locfileid: "51734455"
  若要确保将来更改的代码符合层关系图，请把层验证包含到你的解决方案的标准生成过程中。 在其他团队成员生成解决方案时，代码的依赖关系和层关系图之间的差异将作为生成错误进行报告。 有关生成过程中包括层验证的详细信息，请参阅[用层关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [层关系图： 参考](../modeling/layer-diagrams-reference.md)   
+ [层关系图：引用](../modeling/layer-diagrams-reference.md)   
  [从代码创建层关系图](../modeling/create-layer-diagrams-from-your-code.md)
-
-
-

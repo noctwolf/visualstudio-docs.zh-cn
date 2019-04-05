@@ -1,12 +1,9 @@
 ---
 title: 向 n 层数据集添加验证 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,21 +17,20 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a0f7c21dcffb7c17f859d79d3aed5522beb14acf
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 94a8f4f8fe0d1f93ce3467291a20377234db29f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220529"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936285"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>向 n 层数据集添加验证
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 向被分隔为 n 层解决方案的数据集添加验证基本上是将验证添加到单个文件数据集 （单个项目中的数据集） 相同。 对数据执行验证的建议的位置是期间<xref:System.Data.DataTable.ColumnChanging>和/或<xref:System.Data.DataTable.RowChanging>数据表的事件。  
   
- [创建和编辑类型化数据集](../data-tools/creating-and-editing-typed-datasets.md)提供用于创建分部类可向其中添加功能到列的用户代码和行-更改在数据集中数据表的事件。 有关将代码添加到在 n 层解决方案中的数据集的详细信息，请参阅[将代码添加到 n 层应用程序中的数据集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)，并[n 层应用程序中将代码添加到 Tableadapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)。 有关分部类的详细信息，请参阅[如何： 将类拆分为分部类 （类设计器）](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)或[分部类和方法](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)。  
+数据集设计器提供用于创建分部类可向其中添加功能到列和行的用户代码更改在数据集中数据表的事件。 有关将代码添加到在 n 层解决方案中的数据集的详细信息，请参阅[将代码添加到 n 层应用程序中的数据集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)，并[n 层应用程序中将代码添加到 Tableadapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)。 有关分部类的详细信息，请参阅[如何：将类拆分为分部类 （类设计器）](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)或[分部类和方法](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)。  
   
 > [!NOTE]
 >  当你分离数据集与 Tableadapter (通过设置**数据集项目**属性)，将不会自动移动项目中的现有数据集分部类。 向数据集项目，必须手动移动现有数据集分部类。  
@@ -43,7 +39,7 @@ ms.locfileid: "50220529"
 >  数据集设计器不会自动创建事件处理程序在 C# 中为<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.RowChanging>事件。 您必须手动创建事件处理程序，并挂接到基础事件的事件处理程序。 以下过程介绍如何在 Visual Basic 和 C# 中创建必需的事件处理程序。  
   
 ## <a name="validatechanges-to-individual-columns"></a>Validatechanges 到各个列  
- 通过处理验证中的单个列的值<xref:System.Data.DataTable.ColumnChanging>事件。 <xref:System.Data.DataTable.ColumnChanging>修改列中的值时引发事件。 创建事件处理程序<xref:System.Data.DataTable.ColumnChanging>通过双击所需的列的事件[创建和编辑类型化数据集](../data-tools/creating-and-editing-typed-datasets.md)。  
+ 通过处理验证中的单个列的值<xref:System.Data.DataTable.ColumnChanging>事件。 <xref:System.Data.DataTable.ColumnChanging>修改列中的值时引发事件。 创建事件处理程序<xref:System.Data.DataTable.ColumnChanging>通过双击所需的列的数据集上的事件。  
   
  第一次双击某一列，该设计器生成的事件处理程序<xref:System.Data.DataTable.ColumnChanging>事件。 `If…Then`语句还会创建一个测试的特定列。 例如，双击 Northwind 订单表上的 RequiredDate 列时，则会生成以下代码：  
   
@@ -62,7 +58,7 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>若要将更改过程中的验证添加到各列的值  
   
-1.  打开中的数据集[创建和编辑类型化数据集](../data-tools/creating-and-editing-typed-datasets.md)通过双击 **.xsd**文件中**解决方案资源管理器**。 有关详细信息，请参阅[如何： 在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1.  在设计器中打开数据集，通过双击 **.xsd**中的文件**解决方案资源管理器**。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
 2.  双击你想要验证的列。 此操作将创建<xref:System.Data.DataTable.ColumnChanging>事件处理程序。  
   
@@ -117,11 +113,11 @@ End Sub
   
  当输入订单时，验证可确保不使用位于或早于订购日期 RequiredDate 输入订单。 在此示例中，要求日期和订购日期列的值需要进行比较，以便验证单个列更改是没有意义。  
   
- 创建事件处理程序<xref:System.Data.DataTable.RowChanging>通过双击表名的表的标题栏中的事件[创建和编辑类型化数据集](../data-tools/creating-and-editing-typed-datasets.md)。  
+ 创建事件处理程序<xref:System.Data.DataTable.RowChanging>通过双击表名的表的标题栏中的事件。  
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>若要添加到整个行的过程中更改的验证  
   
-1.  打开中的数据集[创建和编辑类型化数据集](../data-tools/creating-and-editing-typed-datasets.md)通过双击 **.xsd**文件中**解决方案资源管理器**。 有关详细信息，请参阅[如何： 在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1.  在设计器中打开数据集，通过双击 **.xsd**中的文件**解决方案资源管理器**。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
 2.  双击设计器上的数据表的标题栏。  
   
@@ -181,6 +177,5 @@ End Sub
   
 ## <a name="see-also"></a>请参阅  
  [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)   
- [演练： 创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
+ [演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [验证数据集中的数据](../data-tools/validate-data-in-datasets.md)
-

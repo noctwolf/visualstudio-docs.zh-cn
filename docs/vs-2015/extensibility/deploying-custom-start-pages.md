@@ -1,27 +1,22 @@
 ---
 title: 部署自定义起始页 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5e788f9bb1ca0333fd20237103cf6bce136af2e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795104"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000257"
 ---
 # <a name="deploying-custom-start-pages"></a>部署自定义起始页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "51795104"
   
 - 在网络共享上或在公共网站上，可以将.vsix 文件。 在有人打开文件时，会自动安装启动页。  
   
-- 可以上传到.vsix 文件[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点，以便用户可以使用来安装它**扩展管理器**。  
+- 可以上传到.vsix 文件[Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web 站点，以便用户可以使用来安装它**扩展管理器**。  
   
   起始页项目模板创建一份默认 Visual Studio 起始页，以便您可以修改副本，并保留原始。  
   
@@ -46,9 +41,9 @@ ms.locfileid: "51795104"
   
 - 通过将自定义起始页文件添加到一个空的 VSIX 项目。 有关详细信息，请参阅[VSIX 项目模板](../extensibility/vsix-project-template.md)。  
   
-- 通过手动创建.vsix 文件。 有关详细信息，请参阅[如何： 手动将扩展打包 （VSIX 部署）](../misc/how-to-manually-package-an-extension-vsix-deployment.md)。  
+- 通过手动创建.vsix 文件。 有关详细信息，请参阅[如何：手动将扩展打包 （VSIX 部署）](../misc/how-to-manually-package-an-extension-vsix-deployment.md)。  
   
-  Visual studio 能够识别启动页上，`Content Element`必须包含的 VSIX 清单`CustomExtension Element`具有`Type`属性设置为`"StartPage"`。 使用 VSIX 部署安装起始页扩展将出现在**自定义起始页**上列出**启动**选项页中以 **[安装的扩展]***扩展插件名称*。  
+  Visual studio 能够识别启动页上，`Content Element`必须包含的 VSIX 清单`CustomExtension Element`具有`Type`属性设置为`"StartPage"`。 使用 VSIX 部署安装起始页扩展将出现在**自定义起始页**上列出**启动**选项页中以 **[安装的扩展]** *扩展插件名称*。  
   
   如果起始页包中包含的程序集，必须添加绑定路径注册，以便它们可用于 Visual Studio 将启动。 若要执行此操作，请确保您的包，包括具有以下信息的.pkgdef 文件。  
   
@@ -76,7 +71,7 @@ ms.locfileid: "51795104"
   
 4.  修改.pkgdef 设置默认起始页在 HKLM 下的添加以下内容，其中*MyStartPage.xaml*是包含你的起始页.xaml 文件的名称。  
   
-     [$RootKey$ \StartPage\Default]  
+     [$RootKey$\StartPage\Default]  
   
      "Uri"="$PackageFolder$\\*MyStartPage.xaml*"  
   
@@ -98,4 +93,3 @@ ms.locfileid: "51795104"
 ## <a name="see-also"></a>请参阅  
  [自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)   
  [将用户控件添加到起始页](../extensibility/adding-user-control-to-the-start-page.md)
-

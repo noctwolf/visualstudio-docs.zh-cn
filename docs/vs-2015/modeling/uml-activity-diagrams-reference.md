@@ -1,12 +1,9 @@
 ---
-title: UML 活动图： 参考 |Microsoft Docs
-ms.custom: ''
+title: UML 活动图：引用 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.activitydiagram.diagram
 - vs.teamarch.activitydiagram.toolbox
@@ -22,13 +19,13 @@ ms.assetid: 07efcd17-2a96-4052-9957-6dcccbb725ee
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2dcfa13a7ac97a5afd3e315fcef13a706c5f4bce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937769"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML 活动图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +36,13 @@ ms.locfileid: "51810463"
   
 - 用户和你的系统间的业务流程或工作流。 有关详细信息，请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。  
   
-- 用例中所执行的步骤。 有关详细信息，请参阅[UML 用例图： 准则](../modeling/uml-use-case-diagrams-guidelines.md)。  
+- 用例中所执行的步骤。 有关详细信息，请参阅[UML 用例图：指导原则](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
 - 软件协议，即得到允许的组件间的交互序列。  
   
 - 软件算法。  
   
-  本主题介绍了可以在活动图中使用的元素。 有关更详细的信息有关绘制活动图请参阅[UML 活动图： 准则](../modeling/uml-activity-diagrams-guidelines.md)。 若要创建 UML 活动图中，在**体系结构**菜单上，单击**新建 UML 或层关系图**。 有关如何在一般情况下绘制建模图的详细信息，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
+  本主题介绍了可以在活动图中使用的元素。 有关更详细的信息有关绘制活动图请参阅[UML 活动图：指导原则](../modeling/uml-activity-diagrams-guidelines.md)。 若要创建 UML 活动图中，在**体系结构**菜单上，单击**新建 UML 或层关系图**。 有关如何在一般情况下绘制建模图的详细信息，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
   
 ## <a name="reading-activity-diagrams"></a>读取活动图  
  以下各节中的表介绍了可以在活动图上使用的元素以及它们的主要属性。 元素的属性的完整列表，请参阅[UML 活动图上元素的属性](../modeling/properties-of-elements-on-uml-activity-diagrams.md)。  
@@ -55,13 +52,13 @@ ms.locfileid: "51810463"
  读取关系图时，假设有一个令牌或控制线程将连接线从一个操作传递给下一个操作。  
   
 ### <a name="simple-control-flows"></a>简单的控制流  
- 可以用分支和循环显示一系列操作。 有关如何使用此处描述的元素的详细信息，请参阅本主题的描述控制流部分[UML 活动图： 准则](../modeling/uml-activity-diagrams-guidelines.md)。  
+ 可以用分支和循环显示一系列操作。 有关如何使用此处描述的元素的详细信息，请参阅本主题的描述控制流部分[UML 活动图：指导原则](../modeling/uml-activity-diagrams-guidelines.md)。  
   
  ![简单的控制流](../modeling/media/uml-actovsimple.png "UML_ActOvSimple")  
   
 ||||  
 |-|-|-|  
-|**形状**|**元素**|**描述和主要属性**|  
+|**Shape**|**元素**|**描述和主要属性**|  
 |1|**操作**|活动中的一个步骤，用户或软件可以在其中执行某些任务。<br /><br /> 操作可以在令牌到达其所有传入流时开始。 操作结束后，令牌会在所有传出流上进行发送。<br /><br /> -   **正文**-详细信息中指定的操作。<br />-   **语言**-正文中的表达式的语言。<br />-   **本地后置条件**-执行结束时必须满足的约束。 操作实现的目标。<br />-   **本地前置条件**-执行开始之前必须满足的约束。|  
 |2|**控制流**|显示操作之间的控制流的连接线。 为了解释关系图，假设有一个令牌从一个操作流向下一个操作。<br /><br /> 若要创建控制流，请使用**连接器**工具。|  
 |3|**初始节点**|指示活动中的第一个操作或第一批操作。 活动开始时，令牌从初始节点流出。|  
@@ -73,7 +70,7 @@ ms.locfileid: "51810463"
 |9|**调用行为的操作**|一种在另一个活动图中进行了更加详细定义的操作。<br /><br /> -   **IsSynchronous** -如果为 true，该操作等待，直到活动终止。<br />-   **行为**-调用的活动。|  
 |（不显示）|**调用操作的操作**|一种可以在类的实例上调用操作的操作。|  
 ||**活动**|活动图所描绘的工作流。 若要查看活动的属性，必须选择在其**UML 模型资源管理器**。<br /><br /> -   **是只读的**-如果为 true，该活动不应更改任何对象的状态。<br />-   **为单词执行**-如果为 true，则最多只能执行一次此关系图。|  
-||**UML 活动图**|显示活动的关系图。 若要查看其属性，请单击该关系图的空白部分。 **注意：** 活动关系图的名称，包含关系图中，并由关系图显示的活动的文件可以各不相同。|  
+||**UML 活动图**|显示活动的关系图。 若要查看其属性，请单击该关系图的空白部分。 **注意：** 活动图的名称、包含该活动图的文件的名称以及图中所示活动的名称可以各不相同。|  
   
 ### <a name="concurrent-flows"></a>并发流  
  可以描述同时执行的一系列操作。 有关相关信息，请参阅“绘制并发流”。  
@@ -82,7 +79,7 @@ ms.locfileid: "51810463"
   
 ||||  
 |-|-|-|  
-|**形状**|**元素**|**说明**|  
+|**Shape**|**元素**|**说明**|  
 |11|**分叉节点**|将单个流划分为并发流。 每个传入令牌会在每个传出连接线上生成一个令牌。|  
 |12|**将节点加入**|将并发流合并为单个流。 当每个传入流有等待的令牌时，输出上就会生成一个令牌。|  
 |13|**发送信号的操作**|一种可以将消息或信号发送给另一个活动，或同一活动中的并发线程的操作。 操作的标题或其他注释中指定的信息包含了消息的类型和内容。<br /><br /> 此操作能够以信号形式发送数据，信号可以传递给对象流或输入插针 (16) 中的操作。|  
@@ -95,7 +92,7 @@ ms.locfileid: "51810463"
   
 ||||  
 |-|-|-|  
-|**形状**|**元素**|**说明**|  
+|**Shape**|**元素**|**说明**|  
 |15|**对象节点**|表示通过流传递的数据。<br /><br /> -   **排序**-如何存储多个令牌。<br />-   **选择**-调用进程，进程可以在另一个关系图，用于筛选的数据中定义。<br />-   **上限**-0 指示数据必须直接沿流; 传递\*指示数据可以存储在流中。<br />-   **类型**-对象的类型存储和传输。|  
 |16|**输入插针**|表示操作执行时可以接收的数据。<br /><br /> -   **类型**-传输的对象类型。|  
 |17|**输出插针**|表示操作执行时生成的数据。<br /><br /> -   **类型**-传输的对象类型。|  
@@ -104,7 +101,4 @@ ms.locfileid: "51810463"
   
 ## <a name="see-also"></a>请参阅  
  [编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)   
- [UML 活动图：准则](../modeling/uml-activity-diagrams-guidelines.md)
-
-
-
+ [UML 活动关系图：指南](../modeling/uml-activity-diagrams-guidelines.md)

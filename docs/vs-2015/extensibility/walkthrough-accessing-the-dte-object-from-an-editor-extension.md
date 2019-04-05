@@ -1,26 +1,21 @@
 ---
-title: 演练： 通过编辑器扩展访问 DTE 对象 |Microsoft Docs
-ms.custom: ''
+title: 演练：从编辑器扩展访问 DTE 对象 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - getting the DTE object
 ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b86f33390068b04d9e54c0022e8adeb77ed4700f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 656ca1e4bfaa37afa3a8da8516e67c33bf315dc9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720765"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934083"
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>演练：通过编辑器扩展访问 DTE 对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,4 +67,3 @@ ms.locfileid: "51720765"
   
 ## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)
-

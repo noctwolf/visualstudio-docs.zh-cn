@@ -1,21 +1,17 @@
 ---
 title: 代码清单 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e07700b73c4f419e5dd0fa31c5e2aad9f3d6693d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758223"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935788"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,22 +29,22 @@ ms.locfileid: "51758223"
 |-|-|-|  
 |**交换机名称**|**备注**|**必需或可选**|  
 |/ 清单|图像清单用于创建或更新代码包装程序的路径。|必需|  
-|/language|要在其中生成代码包装程序语言。<br /><br /> 有效值： CPP、 c + +、 CS、 CSharp、 C#、 VB 或 VSCT 的值是不区分大小写。<br /><br /> VSCT 语言选项、 /monikerClass、 /classAccess 和 /namespace 选项被忽略。|必需|  
-|/imageIdClass|ImageIdClass 和工具创建的关联的文件的名称。 C + + 语言选项时，会生成仅.h 文件。<br /><br /> 默认值：\<清单路径 > \MyImageIds。\<Lang Ext >|Optional|  
-|/monikerClass|MonikerClass 和工具创建的关联的文件的名称。 C + + 语言选项时，会生成仅.h 文件。 这被忽略 VSCT 语言。<br /><br /> 默认值：\<清单路径 > \MyMonikers。\<Lang Ext >|Optional|  
-|/classAccess|ImageIdClass 和 monikerClass 的访问修饰符。 请确保访问修饰符为给定语言有效。 这是已忽略 VSCT 语言选项。<br /><br /> 默认： 公共|Optional|  
-|/namespace|在代码包装程序中定义的命名空间。 这是已忽略 VSCT 语言选项。 任一 '。 或:: 是有效的命名空间分隔符，而不考虑所选的语言选项。<br /><br /> 默认： MyImages|Optional|  
+|/language|要在其中生成代码包装程序语言。<br /><br /> 有效值：CPP、 c + +、 CS、 CSharp、 C#，VB 或 VSCT 值不区分大小写。<br /><br /> VSCT 语言选项、 /monikerClass、 /classAccess 和 /namespace 选项被忽略。|必需|  
+|/imageIdClass|ImageIdClass 和工具创建的关联的文件的名称。 C + + 语言选项时，会生成仅.h 文件。<br /><br /> 默认：\<清单路径 > \MyImageIds。\<Lang Ext >|Optional|  
+|/monikerClass|MonikerClass 和工具创建的关联的文件的名称。 C + + 语言选项时，会生成仅.h 文件。 这被忽略 VSCT 语言。<br /><br /> 默认：\<清单路径 > \MyMonikers。\<Lang Ext >|Optional|  
+|/classAccess|ImageIdClass 和 monikerClass 的访问修饰符。 请确保访问修饰符为给定语言有效。 这是已忽略 VSCT 语言选项。<br /><br /> 默认：Public|Optional|  
+|/namespace|在代码包装程序中定义的命名空间。 这是已忽略 VSCT 语言选项。 任一 '。 或:: 是有效的命名空间分隔符，而不考虑所选的语言选项。<br /><br /> 默认：MyImages|Optional|  
 |/noLogo|设置此标志会停止打印的产品和版权信息。|Optional|  
 |/?|打印帮助信息。|Optional|  
 |/help|打印帮助信息。|Optional|  
   
  **示例**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest 命令  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
 -   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace： 我:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:VSCT /imageIdClass:MyImageIds  
+-   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>说明  
   
@@ -236,4 +232,3 @@ End Namespace
   </Symbols>  
 </CommandTable>  
 ```
-

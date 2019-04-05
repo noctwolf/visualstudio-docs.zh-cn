@@ -1,14 +1,9 @@
 ---
-title: 如何： 调试可执行文件不属于 Visual Studio 解决方案 |Microsoft Docs
-ms.custom: ''
+title: 如何：调试可执行文件不属于 Visual Studio 解决方案 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,15 +21,15 @@ ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a7fb9b0a31f078ce197851bccb1f4c85f24408a0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798659"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934102"
 ---
-# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>如何：调试不属于 Visual Studio 解决方案的可执行文件
+# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>如何：调试可执行文件不属于 Visual Studio 解决方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 有时可能需要调试不属于 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目的可执行文件。 它可能是在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 外部创建的可执行文件，也可能是从其他用户处接收到的可执行文件。  
@@ -73,7 +68,4 @@ ms.locfileid: "51798659"
 ## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
  [调试器安全](../debugger/debugger-security.md)   
- [DBG 文件](http://msdn.microsoft.com/en-us/91e449e9-8b65-4123-960f-2107cd1f1cfd)
-
-
-
+ [DBG 文件](http://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)

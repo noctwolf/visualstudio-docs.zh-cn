@@ -1,25 +1,20 @@
 ---
-title: 如何： 检查节点上使用内容模型视图的内容模型 |Microsoft Docs
-ms.custom: ''
+title: 如何：检查节点上使用内容模型视图的内容模型 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ca6c86772cc3ad27b537052961afea50fad7b876
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 283378be55db059983d92f3581f6186f59102cb1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245942"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937497"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>如何：使用内容模型视图检查节点的内容模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49245942"
   
 2.  单击**使用 XML 编辑器查看和编辑基础 XML 架构文件**起始视图上。  
   
-3.  中的 XML 架构示例代码复制[示例 XML 架构： 订单架构](../xml-tools/sample-xsd-file-purchase-order-schema.md)并粘贴以替换默认情况下，已将它们添加到新 XSD 文件的代码。  
+3.  中的 XML 架构示例代码复制[示例 XML 架构：采购订单架构](../xml-tools/sample-xsd-file-purchase-order-schema.md)并粘贴以替换默认情况下，已将它们添加到新 XSD 文件的代码。  
   
 4.  选择`purchaseOrder`通过右键单击架构资源管理器中的元素`purchaseOrder`元素在 XML 编辑器中，然后选择**XML 资源管理器中显示**。  
   
@@ -50,6 +45,3 @@ ms.locfileid: "49245942"
 8.  单击**显示文档**XSD 工具栏切换文档中的按钮。 还可以右击设计图面来切换文档。  
   
 9. 右击`purchaseOrder`节点，然后选择**生成示例 XML**若要查看 XML 实例文档。
-
-
-

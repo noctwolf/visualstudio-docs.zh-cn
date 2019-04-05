@@ -6,6 +6,12 @@ titleSuffix: ''
 description: 了解如何使用 Visual Studio 并以选定语言来开发适用于你的平台和设备的应用程序、服务和工具。
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: f63b848481a43a9684424b31fe36c3436faff021
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515319"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">

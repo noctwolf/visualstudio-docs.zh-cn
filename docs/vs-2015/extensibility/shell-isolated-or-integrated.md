@@ -1,14 +1,9 @@
 ---
 title: Shell （独立或集成） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell
 - Visual Studio, Shell
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 856e32d4569e5dcb73e783d0a6b66e186fbb1848
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936433"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell （独立或集成）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ ms.locfileid: "51755884"
  若要分发集成或独立 shell 应用程序，您需要以包括你的应用程序、 可再发行组件，一个特殊集成或独立 shell 和安装程序。 有关分发和安装的详细信息，请参阅[分发独立 Shell 应用程序](../extensibility/distributing-isolated-shell-applications.md)。  
   
 > [!IMPORTANT]
->  [最终用户许可协议 (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552)为 Visual Studio 集成和独立 shell 包括一节介绍了数据收集 (**第 3 部分。数据**)。  它介绍了从构建到你的应用程序的任一集成或独立 shell 软件的用户可能由 Microsoft 收集的客户使用情况数据。 有关详细信息，请参阅[Microsoft Visual Studio 产品系列隐私声明](https://www.visualstudio.com/en-us/dn948229)。  
+>  [最终用户许可协议 (EULA)](https://www.visualstudio.com/support/legal/mt171552)为 Visual Studio 集成和独立 shell 包括一节介绍了数据收集 (**第 3 部分。数据**)。  它介绍了从构建到你的应用程序的任一集成或独立 shell 软件的用户可能由 Microsoft 收集的客户使用情况数据。 有关详细信息，请参阅[Microsoft Visual Studio 产品系列隐私声明](https://www.visualstudio.com/dn948229)。  
 > 
 >  如果从客户收集单独使用情况数据，通过你的应用程序，您必须向您收集的应用程序的用户提供相应通知。  将独立或集成 shell 软件分发的应用程序中，根据 Visual Studio 软件开发工具包许可证，一部分时必须包括以下项之一：  
 > 
@@ -64,4 +59,3 @@ ms.locfileid: "51755884"
   
 ## <a name="see-also"></a>请参阅  
  [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)
-

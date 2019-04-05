@@ -1,26 +1,21 @@
 ---
 title: 在托管代码中的 HRESULT 信息 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, HRESULT information
 - HRESULT, managed VSPackages
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
-manager: douge
-ms.openlocfilehash: 08d14f1155838e53321224280a69e7a76bf07b52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2cbb93c5ecb3caf38b686a958d6daed845bdaec7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911845"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936486"
 ---
 # <a name="hresult-information-in-managed-code"></a>在托管代码中的 HRESULT 信息
 当遇到 HRESULT 返回值时，托管代码和 COM 之间的交互可能会导致一些问题。  
@@ -70,6 +65,6 @@ ms.locfileid: "49911845"
 ## <a name="see-also"></a>请参阅  
  [托管的 Vspackage](../misc/managed-vspackages.md)   
  [与非托管代码交互操作](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)   
- [如何： 映射 Hresult 和异常](http://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9)   
- [生成 COM 组件的互操作](http://msdn.microsoft.com/en-us/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf)   
+ [如何：映射 Hresult 和异常](http://msdn.microsoft.com/library/610b364b-2761-429d-9c4a-afbc3e66f1b9)   
+ [生成 COM 组件的互操作](http://msdn.microsoft.com/7a2c657a-cfef-40f0-bed3-7c2c0ac4abdf)   
  [托管的 VSPackage](../misc/managed-vspackages.md)

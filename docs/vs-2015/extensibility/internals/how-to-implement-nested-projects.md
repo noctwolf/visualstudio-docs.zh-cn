@@ -1,29 +1,24 @@
 ---
-title: 如何： 实现嵌套的项目 |Microsoft Docs
-ms.custom: ''
+title: 如何：实现嵌套的项目 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8a392b8b336c57c47055357147075f29ba173d8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810125"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936388"
 ---
-# <a name="how-to-implement-nested-projects"></a>如何： 实现嵌套的项目
+# <a name="how-to-implement-nested-projects"></a>如何：实现嵌套项目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 您创建的嵌套的项目类型时，必须实现几个附加步骤。 父项目需要某些解决方案包含它的嵌套 （子） 项目相同的职责。 父项目是类似于一种解决方案的项目的容器。 具体而言，有几个必须由该解决方案和要生成嵌套项目的层次结构的父项目引发的事件。 创建嵌套的项目的以下过程描述了这些事件。  
@@ -96,7 +91,6 @@ ms.locfileid: "51810125"
 ## <a name="see-also"></a>请参阅  
  [将项添加到添加新项对话框](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)   
- [清单： 创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [上下文参数](../../extensibility/internals/context-parameters.md)   
  [向导 (.Vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)
-
