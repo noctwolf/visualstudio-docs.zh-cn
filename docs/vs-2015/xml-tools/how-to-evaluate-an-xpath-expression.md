@@ -1,25 +1,20 @@
 ---
-title: 如何： 计算 XPath 表达式 |Microsoft Docs
-ms.custom: ''
+title: 如何：计算 XPath 表达式 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 159ba4ef-75e4-4ac8-80dc-e064e0bec345
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 05758034c0228f0efd7fb3ae63bd3b7e0d5e3095
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210426"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937829"
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>如何：计算 XPath 表达式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "49210426"
 -   不支持用户定义函数。  
   
 > [!NOTE]
->  以下过程使用的 belowAvg.xsl 和 books.xml 文件[演练： 调试 XSLT 样式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)主题。  
+>  以下过程使用的 belowAvg.xsl 和 books.xml 文件[演练：调试 XSLT 样式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)主题。  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>计算 XPath 表达式  
   
@@ -59,4 +54,3 @@ ms.locfileid: "49210426"
   
 ## <a name="see-also"></a>请参阅  
  [调试 XSLT](../xml-tools/debugging-xslt.md)
-

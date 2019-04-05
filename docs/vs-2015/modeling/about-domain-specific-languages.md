@@ -1,25 +1,22 @@
 ---
 title: 关于域特定语言 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 29e5b6f2-ece4-4f3b-ab08-5f957418702f
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: afa0cc3144840d547ea41cab21551fdcaae69980
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894516"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937024"
 ---
 # <a name="about-domain-specific-languages"></a>关于域特定语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,6 +116,3 @@ ms.locfileid: "49894516"
 -   首席软件开发人员或架构师团队生成的各种应用程序的开发人员到部署域特定语言。  
   
 -   每个开发人员创建适用于特定应用程序的模型。
-
-
-

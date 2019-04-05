@@ -1,26 +1,21 @@
 ---
-title: 演练： 将功能添加到自定义编辑器 |Microsoft Docs
-ms.custom: ''
+title: 演练：将功能添加到自定义编辑器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2379a488d042ab8905844c9c536f79ecb4b03268
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8e6395f279af8b48d9f74981f61cceb431a1d00a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737045"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937936"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>演练：在自定义编辑器中添加功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51737045"
   
 1.  使用 Visual Studio 包项目模板创建自定义编辑器。  
   
-     有关详细信息，请参阅[演练： 创建自定义编辑器](../extensibility/walkthrough-creating-a-custom-editor.md)。  
+     有关详细信息，请参见[演练：创建自定义编辑器](../extensibility/walkthrough-creating-a-custom-editor.md)。  
   
 2.  决定您编辑器来支持单个视图或多个视图。  
   
@@ -122,7 +117,7 @@ ms.locfileid: "51737045"
   
 12. 实现上下文相关帮助支持。  
   
-     这使您可以提供 F1 帮助和动态帮助窗口支持在编辑器中的项。 有关这方面的详细信息，请参阅[如何： 为编辑器提供上下文](../extensibility/how-to-provide-context-for-editors.md)。  
+     这使您可以提供 F1 帮助和动态帮助窗口支持在编辑器中的项。 有关这方面的详细信息，请参阅[如何：为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)。  
   
 13. 通过实现公开自动化对象模型从你的编辑器`IDispatch`接口。  
   
@@ -161,5 +156,4 @@ ms.locfileid: "51737045"
   
 ## <a name="see-also"></a>请参阅  
  [参与自动化模型](../extensibility/internals/contributing-to-the-automation-model.md)   
- [如何：为编辑器提供上下文](../extensibility/how-to-provide-context-for-editors.md)
-
+ [如何：为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)

@@ -1,26 +1,21 @@
 ---
 title: 编辑器导入 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934587"
 ---
 # <a name="editor-imports"></a>编辑器导入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +44,13 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  使用导入更多示例，请参阅以下演练：  
   
- [演练：创建边距字形](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [演练：创建边缘字形](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
  [演练：自定义文本视图](../extensibility/walkthrough-customizing-the-text-view.md)  
   
  [演练：突出显示文本](../extensibility/walkthrough-highlighting-text.md)  
   
- [演练：显示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [演练：显示快速信息工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [演练：显示签名帮助](../extensibility/walkthrough-displaying-signature-help.md)  
   
@@ -71,9 +66,9 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- 请参阅[演练： 通过编辑器扩展访问 DTE 对象](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md)有关详细信息。  
+ 请参阅[演练：从编辑器扩展访问 DTE 对象](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md)有关详细信息。  
   
-## <a name="services"></a>服务  
+## <a name="services"></a>Services  
  编辑器服务是通常单一实体提供服务并在多个组件之间共享。  
   
 |导入|提供了|  
@@ -129,4 +124,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)
-

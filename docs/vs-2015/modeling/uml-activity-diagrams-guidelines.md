@@ -1,12 +1,9 @@
 ---
-title: UML 活动图： 准则 |Microsoft Docs
-ms.custom: ''
+title: UML 活动图：指导原则 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, activity
 - diagrams - modeling, activity
@@ -17,13 +14,13 @@ ms.assetid: fe5dbe96-79ab-483a-b9bc-44d0d1d3efc2
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a13db375305e96c4657e007f9cd8bfffbf34f990
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66ca625d0c9c6f2442576e997928b7b42760936a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722681"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935221"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML 活动图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +35,13 @@ ms.locfileid: "51722681"
   
 - 描述用户与你的系统之间的业务流程或工作流。 有关详细信息，请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。  
   
-- 描述某一用例中执行的步骤。 有关详细信息，请参阅[UML 用例图： 准则](../modeling/uml-use-case-diagrams-guidelines.md)。  
+- 描述某一用例中执行的步骤。 有关详细信息，请参阅[UML 用例图：指导原则](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
 - 描述软件中的方法、函数或操作。 有关详细信息，请参阅[应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)。  
   
   绘制活动图可以帮助你改进流程。 如果现有流程图经证实是非常复杂的，可以考虑如何简化这一流程。  
   
-  活动图上元素有关参考信息，请参阅[UML 活动图： 参考](../modeling/uml-activity-diagrams-reference.md)。  
+  活动图上元素有关参考信息，请参阅[UML 活动图：参考](../modeling/uml-activity-diagrams-reference.md)。  
   
 ##  <a name="Relationships"></a> 与其他关系图的关系  
  如果绘制活动图来描述业务流程或用户使用系统的方式，则可以绘制用例图来显示相同信息的不同视图。 在用例图中，将操作绘制为用例。 为用例指定与对应的操作相同的名称。 用例视图可以为你带来以下好处：  
@@ -57,7 +54,7 @@ ms.locfileid: "51722681"
   
   还可以绘制活动图来描述软件操作的详细设计。  
   
-  在活动图中，可以显示操作之间传递的数据流。 请参阅章节[描述数据流](#DataFlows)。 但是，活动图不描述数据的结构。 为实现此目的，你可以绘制一个 UML 类图。 有关信息请参阅[UML 类图： 准则](../modeling/uml-class-diagrams-guidelines.md)。  
+  在活动图中，可以显示操作之间传递的数据流。 请参阅章节[描述数据流](#DataFlows)。 但是，活动图不描述数据的结构。 为实现此目的，你可以绘制一个 UML 类图。 有关信息请参阅[UML 类图：指导原则](../modeling/uml-class-diagrams-guidelines.md)。  
   
 ##  <a name="BasicSteps"></a> 绘制活动图的基本步骤  
  创建任何建模图的详细的步骤所述[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
@@ -185,7 +182,7 @@ ms.locfileid: "51722681"
 -   使用**输出插针**和一个**输入插针**。 利用此方法，可以分别描述来自一个操作的输出和到另一个操作的输入。 插针类似于程序中的参数。 插针表示对象可通过其进入和离开一个操作的端口。  
   
     > [!NOTE]
-    >  在本部分中使用的元素的概述，请参阅数据流部分的主题的请参阅[UML 活动图： 参考](../modeling/uml-activity-diagrams-reference.md)。  
+    >  在本部分中使用的元素的概述，请参阅数据流动主题的部分看到[UML 活动图：参考](../modeling/uml-activity-diagrams-reference.md)。  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>使用对象节点描述数据流  
  大多数控制流都会传输数据。 例如，来自“客户提供详细信息”操作的输出流会传输对送货地址的引用。  
@@ -198,7 +195,7 @@ ms.locfileid: "51722681"
   
  为对象节点指定一个名称，此名称反映作为在操作之间流动的对象的管道或缓冲区的节点角色。  
   
- 可以设置**类型**的属性窗口中的对象节点。 类型可以是基元类型（如整型）或已在类图中定义的类、接口或枚举。 例如，你可以创建一个 Shipment Address 类，该类具有 Street Address、City 等特性以及与另一个名为 Customer 的类的关联。 有关详细信息，请参阅[UML 类图： 准则](../modeling/uml-class-diagrams-guidelines.md)。  
+ 可以设置**类型**的属性窗口中的对象节点。 类型可以是基元类型（如整型）或已在类图中定义的类、接口或枚举。 例如，你可以创建一个 Shipment Address 类，该类具有 Street Address、City 等特性以及与另一个名为 Customer 的类的关联。 有关详细信息，请参阅 [UML 类图：指导原则](../modeling/uml-class-diagrams-guidelines.md)。  
   
 > [!NOTE]
 >  如果键入尚未定义类型的名称，则下添加一个项**未指定的类型**UML 模型资源管理器中。 如果随后在类图中定义该名称的类型，则应重置对象节点的类型，以使其引用新的类型。  
@@ -363,7 +360,7 @@ ms.locfileid: "51722681"
   
  ![并行对象流](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")  
   
- 当“客户提供详细信息”操作完成时，将会产生两个对象，即“送货地址”和“信用卡详细信息”。 将通过不同的操作来处理这两个对象。  
+ 在"客户提供详细信息"操作完成后，它将生成两个对象："送货地址"和"信用卡详细信息。" 将通过不同的操作来处理这两个对象。  
   
  由于操作需要在其所有输入都可用后才能开始，因此最后一个操作在通向它的所有操作完成前不会开始。  
   
@@ -431,12 +428,9 @@ ms.locfileid: "51722681"
   
 ## <a name="see-also"></a>请参阅  
  [编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)   
- [UML 序列图： 参考](../modeling/uml-sequence-diagrams-reference.md)   
- [UML 组件图： 参考](../modeling/uml-component-diagrams-reference.md)   
- [UML 用例图： 参考](../modeling/uml-use-case-diagrams-reference.md)   
- [UML 类图： 参考](../modeling/uml-class-diagrams-reference.md)   
- [UML 组件图： 参考](../modeling/uml-component-diagrams-reference.md)   
- [视频： 通过使用活动图捕获业务工作流](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
-
-
-
+ [UML 序列关系图：引用](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML 组件关系图：引用](../modeling/uml-component-diagrams-reference.md)   
+ [UML 用例关系图：引用](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML 类关系图：引用](../modeling/uml-class-diagrams-reference.md)   
+ [UML 组件关系图：引用](../modeling/uml-component-diagrams-reference.md)   
+ [视频：通过使用活动图捕获业务工作流](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)

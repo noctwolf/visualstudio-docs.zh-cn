@@ -1,27 +1,22 @@
 ---
 title: 检测系统要求 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ba755fc43fa3db634209b5c3e405dc6794c26ded
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cdc69441de852e16adc047465aeec30003fe5170
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51763411"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937327"
 ---
 # <a name="detecting-system-requirements"></a>检测系统要求
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,8 +45,7 @@ VSPackage 不能作用，除非安装了 Visual Studio。 当您使用 Microsoft
 |Visual Studio 2015 Shell （集成和独立）|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
 ## <a name="detecting-when-visual-studio-is-running"></a>Visual Studio 运行时检测  
- 如果 Visual Studio 正在安装 VSPackage 时，不能正确注册你的 VSPackage。 安装程序必须检测到 Visual Studio 运行，且然后拒绝安装程序。 Windows 安装程序不允许您使用表条目来启用此类检测。 相反，必须按如下所示创建自定义操作： 使用`EnumProcesses`函数来检测 devenv.exe 进程，然后可以设置或有条件地启动条件中使用的安装程序属性显示一个对话框，提示用户关闭Visual Studio。  
+ 如果 Visual Studio 正在安装 VSPackage 时，不能正确注册你的 VSPackage。 安装程序必须检测到 Visual Studio 运行，且然后拒绝安装程序。 Windows 安装程序不允许您使用表条目来启用此类检测。 相反，必须按如下所示创建自定义操作：使用`EnumProcesses`函数来检测 devenv.exe 进程，然后可以设置或有条件地启动条件中使用的安装程序属性显示一个对话框，提示用户关闭 Visual Studio。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Windows Installer 安装 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

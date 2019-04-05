@@ -1,12 +1,9 @@
 ---
 title: 规则在模型内部传播更改 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
@@ -14,13 +11,13 @@ ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 265d04306b4747a4e5bc04b879b9635e81ed8102
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e7c7d3eec918895632d07be8c4a015e228743945
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831193"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937538"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>规则在模型内部传播更改
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +137,7 @@ namespace ExampleNamespace
   |                             基类                              |                                                                                                                                                                                                                                                                                                                                                                              触发器                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        添加元素、 链接或形状。<br /><br /> 用于检测新关系，除了新元素。                                                                                                                                                                                                                                                                                                                        |
-  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | 更改域属性值。 该方法的参数提供的旧的和新值。<br /><br /> 对于形状，触发此规则时内置`AbsoluteBounds`属性更改，如果移动形状。<br /><br /> 在许多情况下，它是更方便地重写`OnValueChanged`或`OnValueChanging`属性处理程序中。 更改立即之前和之后调用这些方法。 与此相反，该规则通常在事务结束时运行。 有关详细信息，请参阅[域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。 **注意：** 创建或删除链接时，将不会触发此规则。 相反，编写`AddRule`和一个`DeleteRule`域关系。 |
+  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | 更改域属性值。 该方法的参数提供的旧的和新值。<br /><br /> 对于形状，触发此规则时内置`AbsoluteBounds`属性更改，如果移动形状。<br /><br /> 在许多情况下，它是更方便地重写`OnValueChanged`或`OnValueChanging`属性处理程序中。 更改立即之前和之后调用这些方法。 与此相反，该规则通常在事务结束时运行。 有关详细信息，请参阅[域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。 **注意：** 创建或删除链接时，则不会触发此规则。 相反，编写`AddRule`和一个`DeleteRule`域关系。 |
   |         <xref:Microsoft.VisualStudio.Modeling.DeletingRule>         |                                                                                                                                                                                                                                                                                                             当某个元素或链接是即将被删除时触发。 该属性 ModelElement.IsDeleting 事务结束时才为 true。                                                                                                                                                                                                                                                                                                              |
   |          <xref:Microsoft.VisualStudio.Modeling.DeleteRule>          |                                                                                                                                                                                                       已删除的元素或链接时执行。 已执行的所有其他规则，包括 DeletingRules 后执行规则。 ModelElement.IsDeleting 为 false，并且 ModelElement.IsDeleted 为 true。 若要允许后续撤销，该元素并不实际删除从内存中，但从 Store.ElementDirectory 中删除。                                                                                                                                                                                                       |
   |           <xref:Microsoft.VisualStudio.Modeling.MoveRule>           |                                                                                                                                                                                                                                                                                                           元素是从一个存储分区移动到另一个。<br /><br /> （请注意这不相关的图形形状的位置。）                                                                                                                                                                                                                                                                                                            |
@@ -221,6 +218,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>请参阅  
  [事件处理程序模型外部传播更改](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
  [BoundsRules 约束形状位置和大小](../modeling/boundsrules-constrain-shape-location-and-size.md)
-
-
-

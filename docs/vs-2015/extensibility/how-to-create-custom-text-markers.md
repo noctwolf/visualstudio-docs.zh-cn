@@ -1,28 +1,23 @@
 ---
-title: 如何： 创建自定义文本标记 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建自定义文本标记 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - custom text markers
 ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3b0a280b44ad468ba44baf81efcc4e4569638e8b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: bd79d91dbf9705bf0faf743e66b4da40008307ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783079"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937396"
 ---
-# <a name="how-to-create-custom-text-markers"></a>如何： 创建自定义文本标记
+# <a name="how-to-create-custom-text-markers"></a>如何：创建自定义文本标记
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果你想要创建自定义文本标记，以强调或组织代码，必须执行以下步骤：  
@@ -33,13 +28,13 @@ ms.locfileid: "51783079"
   
 - 创建一个服务用于其他进程可用于使文本标记的使用  
   
-  有关如何将文本标记应用到某个区域的代码的详细信息，请参阅[如何： 使用文本标记](../extensibility/how-to-use-text-markers.md)。  
+  有关如何将文本标记应用到某个区域的代码的详细信息，请参阅[如何：使用文本标记](../extensibility/how-to-use-text-markers.md)。  
   
 ### <a name="to-register-a-custom-marker"></a>若要注册自定义标记  
   
 1. 创建一个注册表项，如下所示：  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* \Text Editor\External 标记\\*\<MarkerGUID >*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* \Text Editor\External Markers\\*\<MarkerGUID>*  
   
     <em>\<MarkerGUID ></em>是`GUID`用于标识要添加的标记  
   
@@ -58,7 +53,7 @@ ms.locfileid: "51783079"
   
    -   DisplayName  
   
-   -   Package  
+   -   package  
   
    -   `Default` 是 REG_SZ 类型的可选项。 设置时，该条目的值是包含一些有用的标识信息，例如"自定义文本标记"的字符串。  
   
@@ -96,7 +91,6 @@ ms.locfileid: "51783079"
   
 ## <a name="see-also"></a>请参阅  
  [旧版 API 中使用文本标记](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
- [如何： 实现错误标记](../extensibility/how-to-implement-error-markers.md)   
+ [如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
+ [如何：实现错误标记](../extensibility/how-to-implement-error-markers.md)   
  [如何：使用文本标记](../extensibility/how-to-use-text-markers.md)
-
