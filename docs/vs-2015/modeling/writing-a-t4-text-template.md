@@ -1,12 +1,9 @@
 ---
 title: 编写 T4 文本模板 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
@@ -15,13 +12,13 @@ ms.assetid: 94328da7-953b-4e92-9587-648543d1f732
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 20974c9ebeaaa452be7078db51cb633be498b24c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897792"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933985"
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +113,7 @@ Hello!
 <#= 2 + 3 #>  
 ```  
   
- 请注意，开始符号有三个字符“<#=”。  
+ 请注意，开始符号有三个字符"< #="。  
   
  表达式可以包含作用域中的任何变量。 例如，下面的块输出数字行：  
   
@@ -267,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- 还可以获取主机提供的其他服务。 有关详细信息，请参阅[访问 Visual Studio 或从模板的其他主机](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
+ 还可以获取主机提供的其他服务。 有关详细信息，请参阅[访问 Visual Studio 或从模板的其他主机](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>设计时文本模板在单独的 AppDomain 中运行  
  请注意，[设计时文本模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)独立于主应用程序的 AppDomain 中运行。 在大多数情况下这并不重要，但在某些复杂的情况下你可能会发现一些限制。 例如，如果要从单独的服务将数据传入模板或从中传出数据，则该服务必须提供可序列化的 API。  
@@ -287,6 +284,3 @@ Content of MyFile.txt is:
 |在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 外运行文本生成。|[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)|  
 |以域特定语言的形式转换数据。|[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |编写指令处理器转换自己的数据源。|[自定义 T4 文本转换](../modeling/customizing-t4-text-transformation.md)|
-
-
-
