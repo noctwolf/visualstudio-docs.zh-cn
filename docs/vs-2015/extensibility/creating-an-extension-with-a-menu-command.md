@@ -1,14 +1,9 @@
 ---
 title: 使用菜单命令创建扩展 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - write a vspackage
 - vspackage
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fb99149a7b617d8e48e036d9e706e5e1c0a6169b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779302"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933713"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>使用菜单命令创建扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +108,7 @@ ms.locfileid: "51779302"
   
  FirstMenuCommand bin 目录中，可以找到此扩展的.vsix 文件。 具体而言，假定您已生成的发布配置，则将为：  
   
- **\<代码目录 > \FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix**  
+ **\<code directory>\FirstMenuCommand\FirstMenuCommand\bin\Release\ FirstMenuCommand.vsix**  
   
  若要安装扩展，您的朋友需要关闭所有打开的 Visual Studio 实例，然后双击.vsix 文件，随后会显示**VSIX 安装程序**。 将文件复制到 **%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions**目录。  
   
@@ -128,15 +123,14 @@ ms.locfileid: "51779302"
   
    2.  更改菜单命令的文本：[更改菜单命令的文本](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  将菜单快捷方式添加到命令：[绑定键盘快捷方式菜单项](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  将菜单快捷方式添加到命令：[将键盘快捷方式绑定到菜单项](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
 2. 添加不同类型的命令、 菜单和工具栏：[扩展菜单和命令](../extensibility/extending-menus-and-commands.md)  
   
-3. 添加工具窗口和扩展内置的 Visual Studio 工具窗口：[扩展和自定义工具 Windows](../extensibility/extending-and-customizing-tool-windows.md)  
+3. 添加工具窗口和扩展内置的 Visual Studio 工具窗口：[扩展和自定义工具窗口](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4. 添加 IntelliSense、 代码建议和其他功能到现有代码编辑器：[扩展编辑器和语言服务](../extensibility/extending-the-editor-and-language-services.md)  
+4. 将 IntelliSense、 代码建议和其他功能添加到现有的代码编辑器：[扩展编辑器和语言服务](../extensibility/extending-the-editor-and-language-services.md)  
   
-5. 将选项和属性页和用户设置添加到你的扩展：[扩展属性和属性窗口](../extensibility/extending-properties-and-the-property-window.md)和[扩展用户设置和选项](../extensibility/extending-user-settings-and-options.md)  
+5. 将选项和属性页和用户设置添加到您的扩展插件：[扩展属性和属性窗口](../extensibility/extending-properties-and-the-property-window.md)和[扩展用户设置和选项](../extensibility/extending-user-settings-and-options.md)  
   
-   其他类型的扩展需要更多工作，如创建新的项目类型 ([扩展项目](../extensibility/extending-projects.md))，创建新的编辑器类型 ([创建自定义编辑器和设计器](../extensibility/creating-custom-editors-and-designers.md))，或在独立 shell 中实现您的扩展插件： [Visual Studio 独立 Shell](../extensibility/visual-studio-isolated-shell.md)
-
+   其他类型的扩展需要更多工作，如创建新的项目类型 ([扩展项目](../extensibility/extending-projects.md))，创建新的编辑器类型 ([创建自定义编辑器和设计器](../extensibility/creating-custom-editors-and-designers.md))，或在独立 shell 中实现您的扩展插件：[Visual Studio 独立 Shell](../extensibility/visual-studio-isolated-shell.md)

@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用编辑并继续 (C#) |Microsoft Docs
-ms.custom: ''
+title: 如何：使用编辑并继续 (C#) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: 40e136d8-a08c-43bd-b313-fb821c55eb3c
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4106a8bcaec8890192fdc33b9db0d66c12d8b07d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c52540c8e639adcd8ceec6b4da79fb87cff18386
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789156"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933815"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>如何：使用“编辑并继续”(C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,6 +55,3 @@ ms.locfileid: "51789156"
  [编辑并继续 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [受支持的代码更改 (C#)](../debugger/supported-code-changes-csharp.md)   
  [“编辑并继续”错误和警告 (C#)](../misc/edit-and-continue-errors-and-warnings-csharp.md)
-
-
-

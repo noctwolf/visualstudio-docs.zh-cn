@@ -1,26 +1,21 @@
 ---
 title: 语言服务和编辑器扩展点 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0bcbef5094bd12392b7ea79865e1d28e2934a11e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 80aed463b2d8ef9d083940a8966574e778623ddd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743586"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934676"
 ---
 # <a name="language-service-and-editor-extension-points"></a>语言服务和编辑器扩展点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +93,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
   
 - ENC  
   
-- 中文本  
+- FindResults  
   
 - F#  
   
@@ -183,7 +178,7 @@ internal static ClassificationTypeDefinition CSharpTestDefinition;
   
 - "其他错误"  
   
-- "警告"  
+- "warning"  
   
   若要发现可用分类类型的列表，请导入<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>，可以维护编辑器分类类型的集合。 下面的代码将此服务作为属性导入。  
   
@@ -283,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>： 使用修饰与相关联。  
   
   > [!NOTE]
-  >  有关的示例<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，请参阅中的 HighlightWordTag 定义[演练： 突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
+  >  有关的示例<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，请参阅中的 HighlightWordTag 定义[演练：突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>： 与可展开或折叠大纲显示中的区域相关联。  
   
@@ -329,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  若要将此格式定义应用于一个标记，引用类 （而不是显示名称） 的名称属性中设置的名称。  
   
 > [!NOTE]
->  有关的示例<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，请参阅中的 HighlightWordFormatDefinition 类[演练： 突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
+>  有关的示例<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，请参阅中的 HighlightWordFormatDefinition 类[演练：突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
   
 ## <a name="extending-adornments"></a>扩展修饰  
  修饰定义可添加到文本视图中显示的文本或文本视图自身中的视觉效果。 可以为任何类型的定义您自己修饰<xref:System.Windows.UIElement>。  
@@ -338,7 +333,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 修饰的名称。  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 相对于其他修饰层修饰的顺序。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers>定义默认的四个层： 选择、 大纲显示、 插入符号和文本。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 相对于其他修饰层修饰的顺序。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers>定义默认的四个层：选择、 大纲显示、 插入符号和文本。  
   
   下面的示例演示在修饰层定义导出特性。  
   
@@ -556,7 +551,7 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  有关实现 IntelliSense 源的详细信息，请参阅以下演练：  
   
- [演练：显示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [演练：显示快速信息工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [演练：显示签名帮助](../extensibility/walkthrough-displaying-signature-help.md)  
   
@@ -583,5 +578,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  有关使用 IntelliSense 控制器的详细信息，请参阅以下演练：  
   
- [演练：显示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
-
+ [演练：显示快速信息工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

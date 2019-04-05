@@ -1,33 +1,28 @@
 ---
 title: 服务 Essentials |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 90cec13c403194c70b9d44cff349b53495a0e160
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 90b16c9d7e7a762b6c1dac322ae9467b835476fd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776455"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932017"
 ---
 # <a name="service-essentials"></a>服务基础知识
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供一组特定的另一个 VSPackage 来使用的接口。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 本身就是向其他 Vspackage 提供服务的 Vspackage 的集合。  
   
- 例如，SVsActivityLog 服务可用于获取 IVsActivityLog 接口，它可用于写入活动日志。 有关详细信息，请参阅[如何： 使用活动日志](../../extensibility/how-to-use-the-activity-log.md)。  
+ 例如，SVsActivityLog 服务可用于获取 IVsActivityLog 接口，它可用于写入活动日志。 有关详细信息，请参阅[如何：使用活动日志](../../extensibility/how-to-use-the-activity-log.md)。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 此外提供了一些内置的服务未注册。 Vspackage 可以通过提供服务重写替换内置或其他服务。 只有一个服务重写被允许的任何服务。  
   
@@ -62,11 +57,10 @@ ms.locfileid: "51776455"
   
 -   Vspackage 可以是服务提供商为他们创建的对象。 例如，窗体可能会将颜色服务的请求发送到其帧中，可能会向其传递请求[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
--   深度嵌套，或根本没有就位的托管的对象可以调用<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>直接访问全球服务。 有关详细信息，请参阅[如何： 使用 GetGlobalService](../../misc/how-to-use-getglobalservice.md)。  
+-   深度嵌套，或根本没有就位的托管的对象可以调用<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>直接访问全球服务。 有关详细信息，请参阅[如何：使用 GetGlobalService](../../misc/how-to-use-getglobalservice.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [可用服务列表](../../extensibility/internals/list-of-available-services.md)   
  [使用并提供服务](../../extensibility/using-and-providing-services.md)   
  [强制转换和类型转换](http://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
  [强制转换](http://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)
-

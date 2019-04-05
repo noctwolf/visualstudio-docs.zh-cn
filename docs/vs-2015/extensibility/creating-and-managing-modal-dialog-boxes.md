@@ -1,31 +1,26 @@
 ---
 title: 创建和管理模式对话框 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4ef32fa43a1242ce8220f9e6454dbac03f0f5ad7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 20710f60a06c02391d467981b01627085c04a336
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736629"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933830"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>创建和管理模式对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在创建模式对话框在 Visual Studio 中的，必须确保父窗口的对话框的已禁用时显示的对话框，然后在对话框关闭后重新启用父窗口。 如果不这样做，可能会收到错误:"Microsoft Visual Studio 不能关闭，因为模式对话框处于活动状态。 关闭活动对话框，然后重试。"  
+在创建模式对话框在 Visual Studio 中的，必须确保父窗口的对话框的已禁用时显示的对话框，然后在对话框关闭后重新启用父窗口。 如果不这样做，可能会收到错误："Microsoft Visual Studio 不能关闭，因为模式对话框处于活动状态。 关闭活动对话框，然后重试。"  
   
  有两种方法执行此操作。 建议的方法，WPF 对话框中，如果是从它派生<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>，然后调用<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A>以显示对话框。 如果这样做，您不需要管理模式的父窗口的状态。  
   
@@ -133,4 +128,3 @@ ms.locfileid: "51736629"
     ```  
   
 7.  生成并运行应用程序。 上**工具**看到名为的命令菜单**调用 OpenDialog**。 当单击此命令时，你应看到对话框窗口。
-

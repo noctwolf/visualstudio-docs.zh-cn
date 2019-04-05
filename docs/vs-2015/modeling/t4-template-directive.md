@@ -1,23 +1,20 @@
 ---
 title: T4 模板指令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcd11416bc067acaab8855b51969c7e1068e2c97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 608ba29c9f2068ce053fd6b92ba053eb45869ddd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248217"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934233"
 ---
 # <a name="t4-template-directive"></a>T4 模板指令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +49,7 @@ ms.locfileid: "49248217"
  有效值：  
  ""，不变的区域性，它是默认值。  
   
- 表示为 xx-XX 形式字符串的区域性。 例如：en-US、ja-JP、de-CH、de-DE。 有关详细信息，请参阅 <xref:System.Globalization.CultureInfo?displayProperty=fullName> 。  
+ 表示为 xx-XX 形式字符串的区域性。 例如：en-US、ja-JP、de-CH、de-DE。 有关详细信息，请参阅 <xref:System.Globalization.CultureInfo?displayProperty=fullName>。  
   
  Culture 特性指定将表达式块转换为文本时要使用的区域性。  
   
@@ -80,7 +77,7 @@ hostspecific="true"
  有效值：  
  `true, false, trueFromBase`。 默认值是 False。  
   
- 如果将此特性的值设置为 `true`，则会将名为 `Host` 的属性添加到由文本模板生成的类中。 该属性是对转换引擎的宿主的引用，并声明为 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。 如果已经定义了自定义宿主，则可以将其转换为自定义主机类型。  
+ 如果将此特性的值设置为 `true`，则会将名为 `Host` 的属性添加到由文本模板生成的类中。 该属性是对转换引擎的宿主的引用，并声明为 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。 如果已经定义了自定义宿主，则可以将其转换为自定义宿主类型。  
   
  因为此属性的类型取决于宿主的类型，所以仅当编写只适用于特定宿主的文本模板时才有用。 它也适用于[设计时模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不是[运行时模板](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
@@ -241,6 +238,3 @@ This is the common footer.
  `internal`  
   
  在运行时文本模板中，这将设置生成类的可见性特性。 默认情况下，此类是你代码的公共 API 的一部分，但通过设置 `visibility="internal"`，你可以确保仅你的代码可使用文本生成类。
-
-
-

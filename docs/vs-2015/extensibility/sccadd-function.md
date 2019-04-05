@@ -1,14 +1,9 @@
 ---
 title: SccAdd 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAdd
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 29703be15369649df2208c1521a6636e5ccbefb9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6bcf8979f0240f60de1a6af9d7f6f4163ecf0af9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765835"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932467"
 ---
 # <a name="sccadd-function"></a>SccAdd 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|添加操作已成功。|  
 |SCC_E_FILEALREADYEXISTS|所选的文件已在源代码管理下。|  
@@ -89,7 +84,7 @@ SCCRTN SccAdd(
   
  下面是列表中使用标志`pfOptions`数组：  
   
-|选项|“值”|含义|  
+|Option|值|含义|  
 |------------|-----------|-------------|  
 |SCC_FILETYPE_AUTO|0x00|源代码管理插件应检测到的文件类型。|  
 |SCC_FILETYPE_TEXT|0x01|指示一个 ASCII 文本文件。|  
@@ -102,4 +97,3 @@ SCCRTN SccAdd(
   
 ## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
-

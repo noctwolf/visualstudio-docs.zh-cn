@@ -1,26 +1,21 @@
 ---
 title: 属性窗口概述 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b733a6845a61a71f15d8574666b345dedbf6f50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 224fb081f21701433a84121985f90351225036e5
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752102"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58931742"
 ---
 # <a name="properties-window-overview"></a>属性窗口概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ ms.locfileid: "51752102"
 |接口名称|描述|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|提供了一系列为类别**属性**窗口，并将每个属性映射到某个类别。|  
-|[IDispatch 接口](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|公开对象的方法和属性到编程的工具和其他应用程序支持自动化。|  
+|[IDispatch 接口](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|公开对象的方法和属性到编程的工具和其他应用程序支持自动化。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|提供了名为的省略号 （...） 按钮*生成器*的打开模式对话框窗口本身的对象实现。 在文本字段中用户无法轻松地键入一个值时使用。 例如，它可能会用于打开颜色选取器，用于确定为你的 RGB 值。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|提供对用于更新中显示信息的对象的访问**属性**窗口。 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 是为每个窗口，其中包含要显示相关属性与可选择对象实现的 Vspackage。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|提供有关如方法的对象类型的接口和结构的字段的信息。|  
@@ -58,4 +53,3 @@ ms.locfileid: "51752102"
 ## <a name="see-also"></a>请参阅  
  [扩展属性](../../extensibility/internals/extending-properties.md)   
  [属性窗口字段和界面](../../extensibility/internals/properties-window-fields-and-interfaces.md)
-

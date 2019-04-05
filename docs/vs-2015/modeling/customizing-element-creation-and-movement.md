@@ -1,12 +1,9 @@
 ---
 title: 自定义元素创建和移动 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 470ff89dfd864443206c1d9131fb126d58280859
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a62aacf8ad702aca19531876c57aaf45b10ce639
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853826"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932749"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自定义元素创建和移动
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +76,7 @@ ms.locfileid: "49853826"
 >   
 >  如果你想要确保新的元素或新的关系始终处理由自定义代码，请考虑定义`AddRule`上的嵌入关系和`DeleteRule`元素的域类上。 有关详细信息，请参阅[规则将传播的更改中的模式](../modeling/rules-propagate-changes-within-the-model.md)。  
   
-## <a name="example-defining-an-emd-without-custom-code"></a>示例： 定义 EMD 而无需自定义代码  
+## <a name="example-defining-an-emd-without-custom-code"></a>示例:定义 EMD 而无需自定义代码  
  以下示例允许用户通过从工具箱拖到现有的形状拖动在同一时间创建元素和连接器。 该示例将 EMD 添加到 DSL 定义中。 在这种修改之前, 用户可以在实际应用到关系图中，但不是到现有的形状上拖动工具。  
   
  用户还可以粘贴到其他元素上的元素。  
@@ -94,7 +91,7 @@ ms.locfileid: "49853826"
   
    1.  在中**DSL 资源管理器**，展开**域类**。 右键单击`ExampleElement`，然后单击**添加新元素合并指令**。  
   
-   2.  请确保**DSL 详细信息**窗口处于打开状态，以便您可以看到新 EMD 的详细信息。 (菜单：**视图**，**其他 Windows**， **DSL 详细信息**。)  
+   2.  请确保**DSL 详细信息**窗口处于打开状态，以便您可以看到新 EMD 的详细信息。 (菜单：**查看**，**其他 Windows**， **DSL 详细信息**。)  
   
 3. 设置**索引类**在 DSL 详细信息窗口中，若要定义哪一类别的元素可以合并到`ExampleElement`对象。  
   
@@ -148,7 +145,7 @@ ms.locfileid: "49853826"
   
      如果您编写自定义创建新元素的代码，可以通过使用显式调用 EMD`ElementOperations.Merge`方法。 这可确保你的代码链接到模型的新元素的其他操作的方式相同。 有关详细信息，请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)。  
   
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>示例： 将自定义接受代码添加到 EMD  
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>示例:将自定义接受代码添加到 EMD  
  通过将自定义代码添加到 EMD，您可以定义更复杂的合并行为。 这个简单的示例可防止用户将添加到关系图的多个固定数量的元素。 该示例修改默认 EMD 附带的嵌入关系。  
   
 #### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>编写自定义接受用于限制用户可添加的代码  
@@ -163,7 +160,7 @@ ms.locfileid: "49853826"
   
 4.  重新生成解决方案。 这将需要比平常长，因为生成的代码将从该模型进行更新。  
   
-     生成错误将报告，类似于:"Company.ElementMergeSample.ExampleElement 不包含一个定义为 CanMergeExampleElement..."  
+     生成错误将报告，类似于："Company.ElementMergeSample.ExampleElement 不包含一个定义为 CanMergeExampleElement..."  
   
      必须实现的方法`CanMergeExampleElement`。  
   
@@ -211,7 +208,7 @@ ms.locfileid: "49853826"
   
     3.  验证不能使用以下任一方式将四个元素添加到模型。 这是因为它们都使用元素合并指令。  
   
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>示例： 将自定义合并代码添加到 EMD  
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>示例:将合并自定义代码添加到 EMD  
  在自定义的合并代码中，可以定义在用户拖动一个工具，或粘贴到元素上时，会发生什么情况。 有两种方法来定义自定义合并：  
   
 1. 设置**使用自定义合并**并提供所需的代码。 你的代码替换生成的合并代码。 如果你想要彻底重定义合并的作用，请使用此选项。  
@@ -324,6 +321,3 @@ ms.locfileid: "49853826"
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [自定义工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)   
  [线路关系图示例 DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

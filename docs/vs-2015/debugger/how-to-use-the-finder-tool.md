@@ -1,27 +1,22 @@
 ---
-title: 如何： 使用查找程序工具 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用查找程序工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Window Finder Tool
 ms.assetid: 5841926b-08c3-4e43-88bd-4223d04f9aef
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5fe233182115c8e10e78f59870d92eed69b8c492
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 780cbcf5c6e03c5534b7f2125662696344e9cec4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747084"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933277"
 ---
 # <a name="how-to-use-the-finder-tool"></a>如何：使用查找程序工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,14 +49,11 @@ ms.locfileid: "51747084"
   
 4.  下**显示**，选择**属性**或**消息**。  
   
-5.  按**确定**。  
+5.  按“确定”。  
   
      如果所选**属性**，则[窗口属性对话框](../debugger/window-properties-dialog-box.md)随即打开。 如果所选**消息**即[消息视图](../debugger/messages-view.md)窗口随即打开。  
   
 ## <a name="see-also"></a>请参阅  
- [Spy + + 视图](../debugger/spy-increment-views.md)   
- [使用 Spy + +](../debugger/using-spy-increment.md)   
+ [Spy++ 视图](../debugger/spy-increment-views.md)   
+ [使用 Spy++](../debugger/using-spy-increment.md)   
  [Spy++ 参考](../debugger/spy-increment-reference.md)
-
-
-

@@ -1,23 +1,20 @@
 ---
 title: 创建 Windows 窗体基于特定于域的语言 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 452318ff-8ecf-46d0-8ca0-4013d0cdafaf
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a79ffda3a044424cc863472c32d62228e90cc6fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1faa3b8a7b57ddae646b55a8a17226894a5ed5d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942018"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934470"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>创建基于 Windows 窗体的域特定语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,9 +121,9 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
 
 1.  上**数据**菜单中，选择**显示数据源**。  
 
-     **数据源**窗口随即打开。  
+     “数据源”窗口随即打开。  
 
-     选择**添加新数据源**。 **数据源配置向导**随即打开。  
+     选择**添加新数据源**。 “数据源配置”向导随即打开。  
 
 2.  选择**对象**，**下一步**。  
 
@@ -336,6 +333,3 @@ private void NewSheepButton_Click(object sender, EventArgs e)
  [如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)   
  [编写代码以自定义域特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [Visual Studio 的建模 SDK - 特定于域的语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
-
-
-

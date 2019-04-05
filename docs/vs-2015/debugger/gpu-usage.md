@@ -1,25 +1,20 @@
 ---
 title: GPU 使用情况 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3068f614275c14d022ed4d74fa6a10ffe396f68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817498"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933279"
 ---
 # <a name="gpu-usage"></a>GPU 使用情况
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "51817498"
   
 #### <a name="to-start-the-gpu-usage-tool"></a>启动 GPU 使用情况工具：  
   
-1. 在主菜单上，选择“调试”，然后选择“性能和诊断”（键盘：按 Alt+F2）。  
+1. 在菜单按钮中，选择“调试”，然后选择“性能和诊断”（键盘：按 Alt+F2）。  
   
 2. 在“性能和诊断”中心，选中“GPU 使用情况”旁的复选框。 （可选）选中你希望使用的其他工具旁的复选框。 你可以同时运行几个性能和诊断工具，以便对应用的性能有一个更全面的了解。  
   
@@ -99,7 +94,7 @@ ms.locfileid: "51817498"
 |--------------------|-----------------|  
 |**Process**|你感兴趣的进程的名称。 诊断会话期间使用 GPU 的所有进程都包括在此下拉列表中。 与此下拉列表中的进程相关联的颜色是以下时间线中线程活动的颜色。|  
 |**线程**|你感兴趣的线程 ID。 在多线程应用中，这有助于隔离属于你感兴趣的进程的特定线程。 与所选线程关联的事件在每条时间线中突出显示。|  
-|**显示**|显示其刷新率的显示器编号。**注意：** 可以配置某些驱动程序，以便将多个物理显示器显示为单个较大的虚拟显示器。 即使计算机连接了多个显示器，也可能仅列出一个。|  
+|**显示**|显示其刷新率的显示器编号**注意：** 可以配置某些驱动程序，以便将多个物理显示器显示为单个较大的虚拟显示器。 即使计算机连接了多个显示器，也可能仅列出一个。|  
 |**筛选器**|你感兴趣的关键字。 报告的下半部分将仅包括与关键字完全匹配或部分匹配的事件。 你可以指定多个关键字并用分号 (;) 隔开。|  
 |**层次结构排序**|指示是保留还是忽略事件层次结构（通过用户标记定义）的复选框。|  
   
@@ -122,7 +117,7 @@ ms.locfileid: "51817498"
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>从应用的开头推迟分析：  
   
-1.  在主菜单上，选择“调试”，然后选择“性能和诊断”（键盘：按 Alt+F2）。  
+1.  在菜单按钮中，选择“调试”，然后选择“性能和诊断”（键盘：按 Alt+F2）。  
   
 2.  在“性能和诊断”中心，按照“GPU 使用情况”旁的“设置”链接进行操作。  
   
@@ -155,6 +150,3 @@ ms.locfileid: "51817498"
 -   [Visual Studio 2013 Update 4 CTP1 中的 GPU 使用情况工具（博客）](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
 -   [Visual Studio 中 DirectX 的 GPU 使用情况](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
-
-
-

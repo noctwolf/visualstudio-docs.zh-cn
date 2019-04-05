@@ -1,12 +1,9 @@
 ---
 title: 在 WPF 应用程序中显示相关的数据 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,15 +21,15 @@ ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f6c939ee1a64834bd305d0ae744d9ac02e3b4410
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174135"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931812"
 ---
-# <a name="display-related-data-in-wpf-applications"></a>在 WPF 应用程序中显示相关的数据
+# <a name="display-related-data-in-wpf-applications"></a>在 WPF 应用程序中显示相关数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -42,9 +39,9 @@ ms.locfileid: "49174135"
   
 ## <a name="to-create-controls-that-display-related-records"></a>若要创建显示相关的记录的控件  
   
-1.  上**数据**菜单上，单击**显示数据源**以打开**数据源**窗口。  
+1.  在“数据”菜单上单击“显示数据源”，打开“数据源”窗口。  
   
-2.  单击**添加新数据源**，并完成**数据源配置**向导。  
+2.  单击“添加新数据源”，然后完成“数据源配置”向导。  
   
 3.  打开 WPF 设计器中，并确保该设计器包含有效的放置目标中的项的容器**数据源**窗口。  
   
@@ -70,5 +67,4 @@ ms.locfileid: "49174135"
  [将 WPF 控件绑定到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [将 WPF 控件绑定到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [在 WPF 应用程序中创建查找表](../data-tools/create-lookup-tables-in-wpf-applications.md)   
- [演练：在 WPF 应用程序中显示相关数据](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
-
+ [演练：在 WPF 应用程序中显示相关的数据](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

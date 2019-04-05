@@ -1,25 +1,20 @@
 ---
 title: 远程调试器端口分配 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 47a2b212ce3e98588a5dcf6ee75a479b01b5b302
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c1e70ec3ba50e5be1ed532bb4a88cbdd500af09c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817844"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933004"
 ---
 # <a name="remote-debugger-port-assignments"></a>远程调试器端口分配
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +34,19 @@ Visual Studio 远程调试器可作为应用程序或后台服务运行。 当�
   
  在远程调试器窗口中，单击“工具/选项” ，并设置 TCP/IP 端口号。  
   
- 在命令行上启动的远程调试器 **/port**切换： **msvsmon /port\<端口号 >**。  
+ 在命令行中，通过 /port 开关启动远程调试器：msvsmon /port \<端口号>。  
   
  你可以在远程调试帮助（在远程调试器窗口中按 **F1** 或单击“帮助/用法”  ）中找到所有远程调试器命令行开关。  
   
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>64 位操作系统上的远程调试器端口  
  当启动 64 位版远程调试器时，它默认使用 4020 端口。  如果调试 32 位进程，则 64 位版远程调试器将在端口 4021 上启动 32 位版远程调试器。 如果运行 32 位远程调试器，它将使用 4020，而不使用 4021。  
   
- 此端口是可从命令行配置： **Msvsmon/wow64port\<端口号 >**。  
+ 此端口是可从命令行配置：**Msvsmon/wow64port\<端口号 >**。  
   
 ## <a name="the-discovery-port"></a>发现端口  
  UDP 3702 用于在网络上查找远程调试器的运行实例（例如，“附加到进程”  对话框中的“查找”  对话框）。 它仅用于发现运行远程调试器的计算机，因此如果你有某种其他方式来了解计算机名称或目标计算机的 IP 地址，它是可选的。 这是用于发现的标准端口，因此不能配置端口号。  
   
- 如果你不想启用发现，可以在禁用发现的情况下从命令行启动 msvsmon：  **Msvsmon /nodiscovery**。  
+ 如果您不想要启用发现，您可以禁用发现从命令行启动 msvsmon:**Msvsmon /nodiscovery**。  
   
 ## <a name="remote-debugger-ports-on-azure"></a>Azure 上的远程调试器端口  
  Azure 上的远程调试器使用以下端口。 云服务上的端口映射到各 VM 上的端口。 所有端口都是 TCP。  
@@ -64,7 +59,4 @@ Visual Studio 远程调试器可作为应用程序或后台服务运行。 当�
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
 ## <a name="see-also"></a>请参阅  
- [Remote Debugging](../debugger/remote-debugging.md)
-
-
-
+ [远程调试](../debugger/remote-debugging.md)

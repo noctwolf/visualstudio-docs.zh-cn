@@ -1,25 +1,20 @@
 ---
-title: 演练： XSLT Profiler |Microsoft Docs
-ms.custom: ''
+title: 演练：XSLT Profiler |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4f401d253c81385dc197e912a7f9cc7d6156e393
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229445"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931067"
 ---
 # <a name="walkthrough-xslt-profiler"></a>演练：XSLT 探查器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,11 +77,11 @@ XSLT 探查器可创建详细的 XSLT 性能报告，有助于度量、评估和
   
 2.  **调用方/被调用方**视图具有以下三个不同部分：  
   
-    -   **调用的函数**： 调用特定函数的所有函数都列在视图的上半部分。  
+    -   **调用的函数**:调用特定函数的所有函数都列在视图的上半部分。  
   
-    -   **当前函数**: 视图的中间部分中列出的特定函数调用。  
+    -   **当前函数**:视图的中间部分中列出的特定函数调用。  
   
-    -   **函数调用的**： 函数调用的特定函数的所有函数都列在视图的底部。  
+    -   **函数调用的**:函数调用的特定函数的所有函数都列在视图的底部。  
   
 3.  如果名为 `SyncToNavigator` 的函数显示在视图的中间部分，则调用 `SyncToNavigator` 函数的所有函数会显示在视图顶部，而 `SyncToNavigator` 函数调用的所有函数显示在视图底部。  
   
@@ -116,6 +111,3 @@ XSLT 探查器可创建详细的 XSLT 性能报告，有助于度量、评估和
   
 ## <a name="see-also"></a>请参阅  
  [演练：使用 XSLT 层次结构](../xml-tools/walkthrough-using-xslt-hierarchy.md)
-
-
-
