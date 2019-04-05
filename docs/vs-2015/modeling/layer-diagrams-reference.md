@@ -1,12 +1,9 @@
 ---
-title: 层关系图： 引用 |Microsoft Docs
-ms.custom: ''
+title: 层关系图：引用 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink.properties
@@ -24,13 +21,13 @@ ms.assetid: f26c986c-1e79-420e-b29a-a283e6d8a71d
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 904b92a058b8fb50f3f2e53f093f4add3730dfbf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783215"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937816"
 ---
 # <a name="layer-diagrams-reference"></a>层关系图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,14 +48,14 @@ ms.locfileid: "51783215"
   
 - 在开发和维护你的代码过程中，通过包括对签入的验证来强化预期体系结构并生成操作。  
   
-  本主题介绍了可以在层关系图中使用的元素。 有关更多详细信息，有关如何创建和绘制层关系图，请参阅[层关系图： 准则](../modeling/layer-diagrams-guidelines.md)。 有关分层模式的详细信息，请访问[模式和实践站点](http://go.microsoft.com/fwlink/?LinkId=145794)。  
+  本主题介绍了可以在层关系图中使用的元素。 有关更多详细信息，有关如何创建和绘制层关系图，请参阅[层关系图：指导原则](../modeling/layer-diagrams-guidelines.md)。 有关分层模式的详细信息，请访问[模式和实践站点](http://go.microsoft.com/fwlink/?LinkId=145794)。  
   
 ## <a name="reading-layer-diagrams"></a>读取层关系图  
  ![层关系图上的元素](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
   
  下表介绍了你可以在序列图上使用的元素。  
   
-|**形状**|**元素**|**说明**|  
+|**Shape**|**元素**|**说明**|  
 |---------------|-----------------|---------------------|  
 |1|**层**|系统中的物理项目的逻辑组。 这些项目可以是命名空间、项目、类、方法等。<br /><br /> 若要查看链接到某个层的项目，打开层的快捷菜单，然后选择**查看链接**以打开**层资源管理器**。<br /><br /> 有关详细信息，请参阅[层资源管理器](#Explorer)。<br /><br /> -   **禁止 Namespace 依赖项**-指定与此层相关联的项目不能依赖于指定的命名空间。<br />-   **禁止的命名空间**-指定与此层相关联的项目不得属于指定的命名空间。<br />-   **所需的命名空间**-指定与此层相关联的项目必须属于某个指定的命名空间。|  
 |2|**依赖关系**|指示某个层可以使用另一层的功能，但反之则不然。<br /><br /> -   **方向**-指定依赖项的方向。|  
@@ -94,11 +91,8 @@ ms.locfileid: "51783215"
     |----------------------------------|---------------------|  
     |**类别**|项目种类，例如类、命名空间、源文件等|  
     |**层**|链接到该项目的层|  
-    |**支持验证**|如果 **，则返回 True**，则层验证过程可以验证项目是否符合指向或来自此元素的依赖关系。<br /><br /> 如果**False**，则该链接不参与层验证过程。<br /><br /> 有关详细信息，请参阅[层关系图： 准则](../modeling/layer-diagrams-guidelines.md)。|  
+    |**支持验证**|如果 **，则返回 True**，则层验证过程可以验证项目是否符合指向或来自此元素的依赖关系。<br /><br /> 如果**False**，则该链接不参与层验证过程。<br /><br /> 有关详细信息，请参阅[层关系图：指导原则](../modeling/layer-diagrams-guidelines.md)。|  
     |标识符|对链接的项目的引用|  
   
 ## <a name="see-also"></a>请参阅  
  [为应用程序创建模型](../modeling/create-models-for-your-app.md)
-
-
-

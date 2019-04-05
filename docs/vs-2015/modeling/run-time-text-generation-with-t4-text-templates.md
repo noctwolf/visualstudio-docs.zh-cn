@@ -1,12 +1,9 @@
 ---
 title: 使用 T4 文本模板的运行时文本生成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920126"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000260"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>运行时文本模板之间的继承  
  可以共享运行时通过编写一个基本类模板，才能是抽象的模板之间的内容。 使用`inherits`参数的`<@#template#>`指令来引用另一个运行时模板类。  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>继承模式： 基方法中的片段  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>继承模式：基方法中的片段  
  在下面的示例中使用的模式，请注意以下几点：  
   
 - 类的基类`SharedFragments`定义类功能块中的方法`<#+ ... #>`。  
@@ -348,7 +345,7 @@ begin 1
 end 1  
 ```  
   
-#### <a name="inheritance-pattern-text-in-base-body"></a>基本的正文中的继承模式： 文本  
+#### <a name="inheritance-pattern-text-in-base-body"></a>继承模式：基本的正文中的文本  
  使用模板继承此备用方法，在基模板中定义的文本的大容量。 派生的模板提供的数据和文本片段适合基本内容。  
   
  **AbstractBaseTemplate1.tt:**  
@@ -424,14 +421,11 @@ End material for DerivedTemplate1.
 ```  
   
 ## <a name="related-topics"></a>相关主题  
- 设计时模板： 如果你想要使用模板生成代码，将成为你的应用程序的一部分，请参阅[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。  
+ 设计时模板：如果你想要使用模板生成代码，将成为你的应用程序的一部分，请参阅[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。  
   
  运行时模板可以使用任何应用程序中，在编译时确定的模板和其内容。 但是，如果您想要编写[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]通过在运行时更改，请参阅模板生成文本的扩展[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)   
  [编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)   
- [Oleg Sych 了解 T4： 预处理的文本模板](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [了解 T4:Oleg Sych 预处理的文本模板](https://github.com/olegsych/T4Toolbox)

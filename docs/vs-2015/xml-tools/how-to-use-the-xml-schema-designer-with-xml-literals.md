@@ -1,25 +1,20 @@
 ---
-title: 如何： 使用 XML 架构设计器用于 XML 文本 |Microsoft Docs
-ms.custom: ''
+title: 如何：用于 XML 文本使用 XML 架构设计器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 592886a1cfe9d0ffc9c7165729cede3340bc65c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 630505b317d5d8671a8214701cd2af13bfa40482
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218358"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936713"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>如何：将 XML 架构设计器用于 XML 文本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49218358"
   
 1.  启动 Visual Studio 2010。  
   
-2.  从**文件**菜单中，选择**新建**，然后选择**项目**。 此时将出现 “新建项目” 对话框。 有关**项目类型**，选择**其他语言**，然后选择**Visual Basic**。 有关**模板**，选择控制台应用程序。 然后键入`XMLLiterals`中**名称**字段和中的项目位置**位置**字段。 单击 **“确定”**。  
+2.  从**文件**菜单中，选择**新建**，然后选择**项目**。 此时将出现“新建项目”对话框。 有关**项目类型**，选择**其他语言**，然后选择**Visual Basic**。 有关**模板**，选择控制台应用程序。 然后键入`XMLLiterals`中**名称**字段和中的项目位置**位置**字段。 单击 **“确定”**。  
   
      新项目创建完成。 XMLLiterals 项目包含一个 Visual Basic 源文件：Module1.vb。  
   
@@ -79,6 +74,3 @@ ms.locfileid: "49218358"
 2.  右键单击 XML 文本或导入的 XML 命名空间中的任何 XML 节点并选择**在架构资源管理器中显示**。  
   
      此时将并排显示 XML 架构资源管理器和带有与 XML 架构集关联的 XML 文本的 Visual Basic 文件。
-
-
-
