@@ -1,12 +1,9 @@
 ---
 title: 将 Windows 窗体控件绑定到数据 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237466"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935035"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>将 Windows 窗体控件绑定到数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +37,7 @@ ms.locfileid: "49237466"
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="bind-to--data-in-a-datagridview-control"></a>将绑定到 DataGridView 控件中的数据  
- DataGridView，为整个表绑定到该单个控件。 将 DataGridView 拖到窗体后，一种工具条带用于导航记录 (<xref:System.Windows.Forms.BindingNavigator>) 也会出现。 一个[数据集](../data-tools/dataset-tools-in-visual-studio.md)， [TableAdapter](../data-tools/tableadapter-overview.md)， <xref:System.Windows.Forms.BindingSource>，并<xref:System.Windows.Forms.BindingNavigator>组件栏中出现。 在下图中，因为客户表具有与 Orders 表的关系也添加 TableAdapterManager。 这些变量被所有声明自动生成的代码中为窗体类中的私有成员。 用于填充 DataGridView 的自动生成的代码位于 form_load 事件处理程序。 用于保存数据，以更新数据库的代码位于 BindingNavigator 保存的事件处理程序。 您可以移动或根据需要修改此代码。  
+ DataGridView，为整个表绑定到该单个控件。 将 DataGridView 拖到窗体后，一种工具条带用于导航记录 (<xref:System.Windows.Forms.BindingNavigator>) 也会出现。 一个[数据集](../data-tools/dataset-tools-in-visual-studio.md)，TableAdapter <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>组件栏中出现。 在下图中，因为客户表具有与 Orders 表的关系也添加 TableAdapterManager。 这些变量被所有声明自动生成的代码中为窗体类中的私有成员。 用于填充 DataGridView 的自动生成的代码位于 form_load 事件处理程序。 用于保存数据，以更新数据库的代码位于 BindingNavigator 保存的事件处理程序。 您可以移动或根据需要修改此代码。  
   
  ![使用 BindingNavigator GridView](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata 使用 BindingNavigator 的 GridView")  
   
@@ -68,4 +65,3 @@ ms.locfileid: "49237466"
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

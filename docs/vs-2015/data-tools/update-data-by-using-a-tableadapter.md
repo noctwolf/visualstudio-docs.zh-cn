@@ -1,12 +1,9 @@
 ---
 title: 使用 TableAdapter 更新数据 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,19 +20,19 @@ ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 19e694e617b15b42029ff641516c59fcecdfbd69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ec53e42a5e49d48e76c6c00e2ffbd5a8a3daafa0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237271"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935381"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-在数据集中的数据已修改并验证后，可以将更新后的数据发送回 databaseby 调用`Update`方法[TableAdapter](../data-tools/tableadapter-overview.md)。 `Update`方法更新单个数据表，并运行基于的正确命令 （INSERT、 UPDATE 或 DELETE）<xref:System.Data.DataRow.RowState%2A>的表中每个数据行。 时数据集具有相关表，Visual Studio 生成一个 TableAdapterManager 类，用于执行更新操作。 TableAdapterManager 类可确保按正确的顺序基于数据库中定义的外键约束进行更新。 当您使用数据绑定控件时，数据绑定体系结构将创建调用 tableAdapterManager TableAdapterManager 类的一个成员变量。 有关详细信息，请参阅[分层更新概述](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)。  
+在数据集中的数据已修改并验证后，可以将更新后的数据发送回 databaseby 调用`Update`TableAdapter 的方法。 `Update`方法更新单个数据表，并运行基于的正确命令 （INSERT、 UPDATE 或 DELETE）<xref:System.Data.DataRow.RowState%2A>的表中每个数据行。 时数据集具有相关表，Visual Studio 生成一个 TableAdapterManager 类，用于执行更新操作。 TableAdapterManager 类可确保按正确的顺序基于数据库中定义的外键约束进行更新。 当您使用数据绑定控件时，数据绑定体系结构将创建调用 tableAdapterManager TableAdapterManager 类的一个成员变量。 有关详细信息，请参阅[分层更新概述](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)。  
   
 > [!NOTE]
 >  当您尝试使用数据集的内容更新数据源时，你会遇到错误。若要避免错误，我们建议将调用该适配器的代码放在随时`Update`方法内的`try` / `catch`块。  
@@ -44,7 +41,7 @@ ms.locfileid: "49237271"
   
 1.  调用该适配器`Update`中的方法`try` / `catch`块。  
   
-2.  如果捕获到异常，找到导致此错误的数据行。 有关详细信息，请参阅[如何： 查找具有错误的行](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c)。  
+2.  如果捕获到异常，找到导致此错误的数据行。 有关详细信息，请参阅[如何：查找具有错误的行](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c)。  
   
 3.  解决此问题在数据行 （您可以如果以编程方式或无效的行显示给用户进行修改），并再试一次更新 (<xref:System.Data.DataRow.HasErrors%2A>， <xref:System.Data.DataTable.GetErrors%2A>)。  
   
@@ -60,4 +57,3 @@ ms.locfileid: "49237271"
   
 ## <a name="see-also"></a>请参阅  
  [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
-

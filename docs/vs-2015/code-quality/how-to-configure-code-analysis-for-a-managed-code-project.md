@@ -1,14 +1,9 @@
 ---
-title: 如何： 配置托管的代码项目的代码分析 |Microsoft Docs
-ms.custom: ''
+title: 如何：配置托管的代码项目的代码分析 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
 helpviewer_keywords:
@@ -19,20 +14,20 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 98f3d14b73b0219d0fcec4312648bf613f37378e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7814bd356dfa50c121fc73c1b88c1ae12dfa3df4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239182"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936216"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：配置托管代码项目的代码分析
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：为托管代码项目配置代码分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]，[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]并[!INCLUDE[vsPro](../includes/vspro-md.md)]，可以选择从一组代码分析*规则集*要应用于托管的代码项目。 默认规则集是 Microsoft 最少量建议规则。 您可以应用其他规则设置为一个项目或解决方案中的所有项目。  
   
 > [!NOTE]
->  有关如何配置 ASP.NET Web 应用程序设置的规则的信息，请参阅[如何： 为 ASP.NET Web 应用程序配置代码分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。  
+>  有关如何配置 ASP.NET Web 应用程序设置的规则的信息，请参阅[如何：为 ASP.NET Web 应用程序配置代码分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。  
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>若要配置的规则设置为.NET Framework 项目  
   
@@ -60,7 +55,4 @@ ms.locfileid: "49239182"
          有关详细信息，请参阅[创建自定义规则集](../code-quality/creating-custom-code-analysis-rule-sets.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [演练：配置和使用自定义规则集](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
-
-
-
+ [演练：配置和使用自定义规则设置](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

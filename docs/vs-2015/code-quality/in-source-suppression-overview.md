@@ -1,14 +1,9 @@
 ---
 title: 源代码中禁止显示概述 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936574"
 ---
 # <a name="in-source-suppression-overview"></a>“源代码中禁止显示”概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ ms.locfileid: "49209035"
  不应在发布版本使用在源代码中禁止显示以防止意外地传送在源代码中禁止显示元数据。 由于在源代码中禁止显示的处理成本，还通过包括在源代码中禁止显示元数据降低应用程序的性能。  
   
 > [!NOTE]
->  您不需要亲自为手动代码这些属性。 有关详细信息，请参阅[如何： 通过使用菜单项禁止显示警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。 菜单项不可用 c + + 代码。  
+>  您不需要亲自为手动代码这些属性。 有关详细信息，请参阅[如何：使用菜单项禁止显示警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。 菜单项不可用 c + + 代码。  
   
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 特性  
  右键单击中的代码分析警告时**错误列表**，然后单击**禁止显示消息**即**SuppressMessage**在代码中或为添加属性项目的全局禁止显示文件。  
@@ -104,7 +99,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="generated-code"></a>生成的代码  
  托管的代码编译器和一些第三方工具生成代码以加快代码的开发。 在源文件中出现的编译器生成的代码通常标有**GeneratedCodeAttribute**属性。  
   
- 您可以选择是否要取消显示代码分析警告和错误生成的代码。 有关如何禁止显示此类警告和错误的信息，请参阅[如何： 生成代码的禁止显示警告](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。  
+ 您可以选择是否要取消显示代码分析警告和错误生成的代码。 有关如何禁止显示此类警告和错误的信息，请参阅[如何：禁止显示生成的代码的警告](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。  
   
  请注意，代码分析忽略了**GeneratedCodeAttribute**时应用于整个程序集或单个参数。 这种情况下很少发生。  
   
@@ -126,10 +121,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 >  目标始终包含完全限定的项名称。  
   
 ## <a name="global-suppression-file"></a>全局禁止显示文件  
- 全局禁止显示文件维护全局级禁止显示或不指定目标的禁止显示的禁止显示。 例如，禁止显示的程序集级别冲突存储在该文件中。 此外，某些 ASP.NET 禁止显示存储在此文件中，是因为项目级别设置不可用于窗体背后的代码。 全局禁止显示被创建并添加到你的项目选择第一次**在项目禁止显示文件**的选项**禁止显示消息**命令，在错误列表窗口。 有关详细信息，请参阅[如何： 通过使用菜单项禁止显示警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。  
+ 全局禁止显示文件维护全局级禁止显示或不指定目标的禁止显示的禁止显示。 例如，禁止显示的程序集级别冲突存储在该文件中。 此外，某些 ASP.NET 禁止显示存储在此文件中，是因为项目级别设置不可用于窗体背后的代码。 全局禁止显示被创建并添加到你的项目选择第一次**在项目禁止显示文件**的选项**禁止显示消息**命令，在错误列表窗口。 有关详细信息，请参阅[如何：使用菜单项禁止显示警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.Diagnostics.CodeAnalysis>
-
-
-

@@ -1,23 +1,20 @@
 ---
 title: 对 UML 扩展运行单元测试 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 745d74ae-e48c-4fd9-a755-4354b81b9f8a
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6ba485b40beb82db9ea8cfe573cb6d9e6742ecea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 493193e24fcee2b3f3290546abc656faee7d88a7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817316"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936109"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>对 UML 扩展运行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +84,7 @@ ms.locfileid: "51817316"
   
     -   **EnvDTE.dll**  
   
-    -   **Microsoft.visualstudio.architecturetools.extensibility.dll 中**  
+    -   **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
   
     -   **Microsoft.VisualStudio.ComponentModelHost.dll**  
   
@@ -385,9 +382,6 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  我们很少会建议采用此方法。 旧版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 提供了一个实用工具，可用于自动为每个私有方法创建一个访问器方法。 虽然此方法很方便，但我们的经验表明，此方法会生成与正在测试的应用程序的内部结构紧密耦合的单元测试。 当需求或体系结构发生更改时，这会产生额外的工作量，因为测试必须与实现一起更改。 此外，实现设计中的任何错误假设也会带入到测试中，使得测试无法发现错误。  
   
 ## <a name="see-also"></a>请参阅  
- [单元测试的剖析](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [单元测试的剖析](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML – 使用文本快速输入](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)
-
-
-

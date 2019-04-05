@@ -1,25 +1,22 @@
 ---
 title: 建模应用程序&#39;s 体系结构 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
 ms.assetid: aedce746-9df5-49e1-9662-67eb1b83d313
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 770f93c0ede93201ee873820d6701356837f4ea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803846"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937539"
 ---
 # <a name="model-your-app39s-architecture"></a>建模应用程序&#39;s 体系结构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +105,7 @@ ms.locfileid: "51803846"
   本节的其余部分将详述这些内容。  
   
 ### <a name="components"></a>组件数  
- 体系结构模型的中心视图是显示系统的主要部件和它们彼此之间如何依赖的组件图。 有关组件图的详细信息，请参阅[UML 组件图： 参考](../modeling/uml-component-diagrams-reference.md)。  
+ 体系结构模型的中心视图是显示系统的主要部件和它们彼此之间如何依赖的组件图。 有关组件图的详细信息，请参阅[UML 组件图：参考](../modeling/uml-component-diagrams-reference.md)。  
   
  ![显示部件的 UML 组件图](../modeling/media/uml-barecomponent.png "UML_BareComponent")  
   
@@ -137,7 +134,7 @@ ms.locfileid: "51803846"
   
   可以直接显示组件之间的依赖项，或者可以显示附加到组件的需要的和提供的接口之间的依赖项。 通过使用接口，可以定义在每个依赖项中使用哪些操作。 通常情况下，当首次绘制关系图时，将显示组件之间的依赖项，然后当添加详细信息后，它们被接口之间的依赖项替换。 两个版本都是对软件的正确描述，但带接口的版本比早期版本提供了更多详细信息。  
   
-  管理依赖项对于可维护软件的生产非常重要。 组件图应反映代码中的所有依赖项。 如果该代码已存在，请确保所有依赖项都显示在图中。 如果代码正在开发，请确保它不包含未在组件图中计划的依赖项。 为了帮助你发现代码中的依赖项，可以生成层关系图。 为了帮助你确保已满足计划的依赖项约束，可以对照层关系图验证代码。 有关详细信息，请参阅[层关系图： 参考](../modeling/layer-diagrams-reference.md)。  
+  管理依赖项对于可维护软件的生产非常重要。 组件图应反映代码中的所有依赖项。 如果该代码已存在，请确保所有依赖项都显示在图中。 如果代码正在开发，请确保它不包含未在组件图中计划的依赖项。 为了帮助你发现代码中的依赖项，可以生成层关系图。 为了帮助你确保已满足计划的依赖项约束，可以对照层关系图验证代码。 有关详细信息，请参阅[层关系图：参考](../modeling/layer-diagrams-reference.md)。  
   
 ### <a name="interfaces"></a>接口  
  通过将接口放置在组件上，可以分隔和命名由每个组件提供的操作的主要组。 例如，基于 web 的销售系统中的组件可能具有客户通过其购买商品的接口、供应商通过其更新目录的接口和通过其管理系统的第三个接口。  
@@ -161,7 +158,7 @@ ms.locfileid: "51803846"
 ### <a name="decomposing-a-component-into-parts"></a>将一个组件分解为部件  
  可以将前面章节中描述的过程应用于每个组件。  
   
- 在每个组件中，可以显示作为部件的子组件。 实际上，Part 是其父组件的属性，这是类的一种类型。 每个部件都有其自己的类型，该类型可能是组件。 可以将此组件放置在关系图上，并显示其部件。 有关详细信息，请参阅[UML 组件图： 准则](../modeling/uml-component-diagrams-guidelines.md)。  
+ 在每个组件中，可以显示作为部件的子组件。 实际上，Part 是其父组件的属性，这是类的一种类型。 每个部件都有其自己的类型，该类型可能是组件。 可以将此组件放置在关系图上，并显示其部件。 有关详细信息，请参阅[UML 组件图：指导原则](../modeling/uml-component-diagrams-guidelines.md)。  
   
  将此技术应用于整个系统是很有用的。 将它绘制为单个组件，并将其主要组件作为部件显示。 这有助于你明确标识系统与外部世界的接口。  
   
@@ -199,7 +196,7 @@ ms.locfileid: "51803846"
 ### <a name="identifying-the-initiating-events"></a>标识初始事件  
  由大多数软件系统完成的工作为不同的输入或事件提供的响应可以方便地划分这些工作。 初始事件可能是以下事件之一：  
   
--   用例中的第一个操作。 它可能在需求模型中显示为用例中的一个步骤或活动图中的一个操作。 有关详细信息[UML 用例图： 准则](../modeling/uml-use-case-diagrams-guidelines.md)并[UML 活动图： 准则](../modeling/uml-activity-diagrams-guidelines.md)。  
+-   用例中的第一个操作。 它可能在需求模型中显示为用例中的一个步骤或活动图中的一个操作。 有关详细信息， [UML 用例图：指导原则](../modeling/uml-use-case-diagrams-guidelines.md)和[UML 活动图：指导原则](../modeling/uml-activity-diagrams-guidelines.md)。  
   
 -   编程接口中的一条消息。 如果正在开发的系统是更大系统中的一个组件，它应被描述为其中一个组件接口中的操作。 请参阅[组件和及其接口](#Components)。  
   
@@ -210,9 +207,9 @@ ms.locfileid: "51803846"
   
  为每个参与典型序列的组件实例绘制生命线。 在某些情况下，每种类型可能有不止一个实例。 如果已将整个系统描述为单个组件，则它所包含的每个部件应有一个生命线。  
   
- 有关详细信息，请参阅[UML 序列图： 准则](../modeling/uml-sequence-diagrams-guidelines.md)。  
+ 有关详细信息，请参阅[UML 序列图：指导原则](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
- 活动图在某些情况下也是有用的。 例如，如果你的组件具有连续的数据流，则可将其描述为对象流。 如果你的组件具有复杂的算法，可将它描述为控制流。 请确保你清楚表明哪个组件执行每个操作，例如通过使用注释。 有关详细信息，请参阅[UML 活动图： 准则](../modeling/uml-activity-diagrams-guidelines.md)。  
+ 活动图在某些情况下也是有用的。 例如，如果你的组件具有连续的数据流，则可将其描述为对象流。 如果你的组件具有复杂的算法，可将它描述为控制流。 请确保你清楚表明哪个组件执行每个操作，例如通过使用注释。 有关详细信息，请参阅[UML 活动图：指导原则](../modeling/uml-activity-diagrams-guidelines.md)。  
   
 ### <a name="specify-the-operations"></a>指定操作  
  关系图显示了每个组件执行的操作，表示为序列图上的消息或活动图中的操作。  
@@ -247,7 +244,7 @@ ms.locfileid: "51803846"
   
 -   主要部件的模型及其关系。 这些可能是类或组件和接口，它们之间存在关联和依赖项。 元素通常分为两个类别：  
   
-    -   开发人员必须在使用该模式的代码的每个部分中复制的元素。 可使用模板类型来说明这些内容。 有关详细信息，请参阅[UML 用例图： 参考](../modeling/uml-use-case-diagrams-reference.md)。  
+    -   开发人员必须在使用该模式的代码的每个部分中复制的元素。 可使用模板类型来说明这些内容。 有关详细信息，请参阅[UML 用例图：参考](../modeling/uml-use-case-diagrams-reference.md)。  
   
     -   说明开发人员应使用的框架类的元素。  
   
@@ -265,6 +262,3 @@ ms.locfileid: "51803846"
  [建立用户需求模型](../modeling/model-user-requirements.md)   
  [基于模型开发测试](../modeling/develop-tests-from-a-model.md)   
  [在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)
-
-
-

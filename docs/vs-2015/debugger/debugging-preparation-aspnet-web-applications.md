@@ -1,14 +1,9 @@
 ---
-title: 调试准备： ASP.NET Web 应用程序 |Microsoft Docs
-ms.custom: ''
+title: 调试准备：ASP.NET Web 应用程序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: bcfb1080-98d1-42f9-96af-186fb14f232a
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 59f4f3e1db92c5f7b46a9bb9e1e164fc25b01010
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: baa5e454eec00c2530190834974cd946838a0947
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730679"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934681"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>调试准备：ASP.NET Web 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,11 +43,11 @@ ms.locfileid: "51730679"
   
 1.  在您的函数和事件处理程序中设置一个或多个断点。  
   
-     有关详细信息，请参阅 [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。  
+     有关详细信息，请参阅 [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。  
   
 2.  命中断点时，逐句通过函数内的代码。 同时观察代码的执行，直到将问题隔离出来。  
   
-     有关详细信息，请参阅[单步执行](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)并[调试 Web 应用程序和脚本](../debugger/debugging-web-applications-and-script.md)。  
+     有关详细信息，请参阅[单步执行](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)并[调试 Web 应用程序和脚本](../debugger/debugging-web-applications-and-script.md)。  
   
 ## <a name="changing-default-configurations"></a>更改默认配置  
  如果需要更改 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 创建的默认的调试和发布配置，则可以这样做。 有关详细信息，请参阅[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。  
@@ -74,6 +69,3 @@ ms.locfileid: "51730679"
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  
  [调试器安全](../debugger/debugger-security.md)   
  [调试托管代码](../debugger/debugging-managed-code.md)
-
-
-

@@ -1,26 +1,21 @@
 ---
-title: 演练： 将内容类型链接到的文件扩展名 |Microsoft Docs
-ms.custom: ''
+title: 演练：将内容类型链接到的文件扩展名 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f543992ba23e08be25d5c8206d2b5b0565d33948
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 182fc9a8ca55dfe4fc54d7e40c8c88f5b1c6c77d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739879"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935929"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>演练：将内容类型链接到文件扩展名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +92,7 @@ ms.locfileid: "51739879"
   
 ## <a name="adding-the-content-type-to-an-editor-export"></a>将内容类型添加到编辑器导出  
   
-1.  创建编辑器扩展。 例如，可以使用边距的标志符号扩展中所述[演练： 创建边距字形](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
+1.  创建编辑器扩展。 例如，可以使用中所述的边距标志符号扩展[演练：创建边缘字形](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
   
 2.  添加在此过程中定义的类。  
   
@@ -110,4 +105,3 @@ ms.locfileid: "51739879"
   
 ## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)
-

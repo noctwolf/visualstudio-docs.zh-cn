@@ -1,12 +1,9 @@
 ---
 title: N 层数据应用程序概述 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +18,13 @@ ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9c3d635750a01838cc40c9af8ec17465b25fc438
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852916"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937623"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 层数据应用程序概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +32,11 @@ ms.locfileid: "49852916"
   
 N-层 * 数据应用程序是数据应用程序，分为多个*层*。 也称为"分布式应用程序"和"多层应用程序"，n 层应用程序分离到相互独立的层的客户端和服务器之间分布处理。 当开发访问数据的应用程序时，应清楚地区分组成应用程序的各个层。  
   
- 典型的 n 层应用程序包括表示层、 中间层和数据层。 单独的 n 层应用程序中的各个层的最简单方法是创建每个层都想要包括在应用程序中的离散项目。 例如，表示层可能是 Windows 窗体应用程序，而数据访问逻辑可以是位于中间层中的类库。 此外，表示层可能与数据访问逻辑在中间层通过服务之类的服务通信。 将应用程序组件分离到不同的层可提高应用程序的可维护性和可伸缩性。 有利于采用新技术，可应用于单个层而无需重新设计整个解决方案执行此操作。 此外，n 层应用程序通常将敏感信息存储在中间层中，以便与表示层隔离。  
+ 典型的 n 层应用程序包括一个表示层、一个中间层和一个数据层。 单独的 n 层应用程序中的各个层的最简单方法是创建每个层都想要包括在应用程序中的离散项目。 例如，表示层可能是 Windows 窗体应用程序，而数据访问逻辑可以是位于中间层中的类库。 此外，表示层可能与数据访问逻辑在中间层通过服务之类的服务通信。 将应用程序组件分离到不同的层可提高应用程序的可维护性和可伸缩性。 有利于采用新技术，可应用于单个层而无需重新设计整个解决方案执行此操作。 此外，n 层应用程序通常将敏感信息存储在中间层中，以便与表示层隔离。  
   
  Visual Studio 包含多种功能，可帮助开发人员创建 n 层应用程序：  
   
--   [创建和编辑类型化数据集](../data-tools/creating-and-editing-typed-datasets.md)提供**数据集项目**属性，可用于单独的数据集 （数据实体层） 和`TableAdapter`s （数据访问层） 到离散项目。  
+-   数据集设计器提供了**数据集项目**属性，可用于单独的数据集 （数据实体层） 和`TableAdapter`s （数据访问层） 相互独立的项目。  
   
 -   [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供了单独的命名空间中生成的 DataContext 和数据类的设置。 这样，数据访问和数据实体层的逻辑分隔。  
   
@@ -91,14 +88,13 @@ N-层 * 数据应用程序是数据应用程序，分为多个*层*。 也称为
   
  [演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
- [演练： 向 N 层数据应用程序添加验证](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [演练：向 N 层数据应用程序中添加验证](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
  [使用 LINQ to SQL 的 N 层和远程应用程序](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.Data.Linq.ITable.Attach%2A>   
- [演练： 创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
+ [演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [分层更新](../data-tools/hierarchical-update.md)   
  [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)   
  [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)
-

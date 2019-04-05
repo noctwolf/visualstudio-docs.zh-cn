@@ -1,11 +1,8 @@
 ---
-title: 如何： 将注释添加到工作流设计器中的工作流 |Microsoft Docs
-ms.custom: ''
+title: 如何：将注释添加到工作流设计器中的工作流 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.Annotations.Annotation.UI
@@ -14,15 +11,15 @@ ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
 caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: c605ec087a4aa5bec3aecf91d9f0ac1c1a1fb42a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d60eaa4d86e3a0bc421b4d8c02eb61976337d553
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194605"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935055"
 ---
-# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>如何：在工作流设计器中给工作流添加备注
+# <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>如何：在工作流设计器中向工作流添加注释
 为方便创建更大、更复杂的工作流，[!INCLUDE[net_v45](../includes/net-v45-md.md)] 允许开发人员在设计器中将批注添加到以下类型的项：  
   
 -   <xref:System.Activities.Activity>  
@@ -80,11 +77,11 @@ ms.locfileid: "49194605"
   
 4.  若要同时删除所有批注，请右键单击工作流设计器，然后选择**批注**，**都删除所有批注**。  
   
-### <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>添加、编辑和删除变量或自变量的批注  
+### <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>添加、编辑和删除变量或参数的批注  
   
 1.  右键单击某个变量或参数，然后选择“添加批注”。  
   
-2.  输入批注的文本。 该变量或参数将显示一个批注图标。  
+2.  输入批注的文本。 该变量或自变量将显示一个批注图标。  
   
 3.  右键单击有批注的某个变量或参数。 选择“编辑批注”。  
   
