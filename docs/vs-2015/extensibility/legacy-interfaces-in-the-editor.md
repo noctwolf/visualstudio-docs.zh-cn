@@ -1,26 +1,21 @@
 ---
 title: 在编辑器中的旧接口 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy
 ms.assetid: 741d45f5-0ea3-4614-972a-8728fe054e07
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 45c3de943a1716877fcf33af4d16fd163721d04b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8483068ae03c9a57fc67b528393e5d6830c3ec33
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737506"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933432"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>在编辑器中的旧接口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +24,7 @@ ms.locfileid: "51737506"
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
+|Title|描述|  
 |-----------|-----------------|  
 |[根据编辑器调整旧代码](../extensibility/adapting-legacy-code-to-the-editor.md)|介绍如何适应您的代码与新编辑器。|  
 |[编辑器适配器的新增或更改行为](../extensibility/new-or-changed-behavior-with-editor-adapters.md)|介绍编辑器适配器的行为方式不同于早期版本的编辑器。|  
@@ -37,8 +32,8 @@ ms.locfileid: "51737506"
 |[使用旧 API 实例化核心编辑器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)|介绍如何使用传统的 API 来实例化核心编辑器。|  
 |[编辑器工厂](../extensibility/editor-factories.md)|介绍如何使用编辑器工厂与传统的 API。|  
 |[如何：注册编辑器文件类型](../extensibility/how-to-register-editor-file-types.md)|介绍如何将文件扩展名为链接到你的编辑器。|  
-|[演练：创建核心编辑器并注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|介绍如何创建编辑器的一个核心并链接到该文件扩展名。|  
-|[如何：为编辑器提供上下文](../extensibility/how-to-provide-context-for-editors.md)|介绍如何为你的编辑器提供的上下文。|  
+|[演练：创建核心编辑器和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|介绍如何创建编辑器的一个核心并链接到该文件扩展名。|  
+|[如何：为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)|介绍如何为你的编辑器提供的上下文。|  
 |[语言服务和核心编辑器](../extensibility/language-services-and-the-core-editor.md)|介绍了语言服务和编辑器之间的交互。|  
 |[使用旧版 API 访问文本缓冲区](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)|介绍如何使用传统的 API 访问的文本缓冲区。|  
 |[使用旧版 API 访问文本视图](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)|介绍如何使用传统的 API 访问文本视图。|  
@@ -52,4 +47,3 @@ ms.locfileid: "51737506"
 |[创建自定义编辑器和设计器](../extensibility/creating-custom-editors-and-designers.md)|说明如何创建自定义编辑器和设计器。|  
 |[开发旧版语言服务](../extensibility/internals/developing-a-legacy-language-service.md)|提供的功能提供了对自定义功能的文档的链接[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]通过添加对语言服务支持的核心编辑器。|  
 |[使用字体和颜色](../extensibility/using-fonts-and-colors.md)|介绍如何使用旧式界面字体和颜色。|
-

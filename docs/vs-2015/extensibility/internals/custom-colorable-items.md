@@ -1,27 +1,22 @@
 ---
 title: 自定义可着色项 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 272d16b9f5f8fb33b68c911c5e7bd27923f4c2db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: e210d8c03d3e99cf1e37608f5b65d5a4ab0656f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796943"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933320"
 ---
 # <a name="custom-colorable-items"></a>自定义可着色项
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ ms.locfileid: "51796943"
 > [!CAUTION]
 >  要避免与现有的可着色项名称发生冲突的可着色项名称中，应包括的语言名称。 如果在开发过程中更改了一可着色项的名称，必须重置缓存创建第一次访问了你可着色的项。 你可以重置实验性使用 CreateExpInstance 工具随 Visual Studio SDK，通常在目录中缓存  
 >   
->  **C:\Program 文件 (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+>  **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
 >  若要重置缓存，请调用`CreateExpInstance /Reset`。 CreateExpInstance 有关详细信息，请参阅[CreateExpInstance 实用工具](../../extensibility/internals/createexpinstance-utility.md)。  
   
@@ -77,4 +72,3 @@ ms.locfileid: "51796943"
  [旧版语言服务中的语法着色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [实现语法着色](../../extensibility/internals/implementing-syntax-coloring.md)   
  [如何：使用内置的可着色项](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
-

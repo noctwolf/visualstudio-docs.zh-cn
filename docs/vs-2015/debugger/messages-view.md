@@ -1,14 +1,9 @@
 ---
 title: 消息视图 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3f896650d7979365346d493c5aac06340007cbb7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14569a915dc1da4d8628283dfa1aae5338502de1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784372"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934581"
 ---
 # <a name="messages-view"></a>消息视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +71,7 @@ Spy++ 消息视图
  介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
- 引入了 Spy + + 工具，并说明如何使用它。  
+ 介绍 Spy + + 工具，并说明如何使用它。  
   
  [“消息选项”对话框](../debugger/message-options-dialog-box.md)  
  用于选择要在活动的消息视图中列出的消息。  
@@ -88,7 +83,4 @@ Spy++ 消息视图
  用于显示在消息视图中选择一条消息的属性。  
   
  [Spy++ 参考](../debugger/spy-increment-reference.md)  
- 包含描述每个 Spy + + 菜单和对话框中的各个部分。
-
-
-
+ 包含描述每个 Spy + + 菜单和对话框的章节。

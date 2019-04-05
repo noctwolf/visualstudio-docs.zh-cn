@@ -1,28 +1,23 @@
 ---
-title: 演练： 显示匹配的大括号 |Microsoft Docs
-ms.custom: ''
+title: 演练：显示匹配的括号 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9795cd3c40eeff714d55f4bb95f78cf1f7f8aea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745889"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936844"
 ---
-# <a name="walkthrough-displaying-matching-braces"></a>演练：显示匹配括号
+# <a name="walkthrough-displaying-matching-braces"></a>演练：显示匹配的括号
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以实现基于语言的功能，如大括号匹配通过定义您希望匹配，大的括号和并将文本标记标记添加到匹配大括号，当脱字号上一个大括号。 可以在上下文中的一种语言，定义大括号，或者可以定义自己的文件名称扩展和内容类型并将标记应用于只是该类型，或将标记应用到现有内容类型 （例如"text")。 下面的演练演示如何将应用标记为"text"内容类型匹配的大括号。  
@@ -130,5 +125,4 @@ ms.locfileid: "51745889"
 4.  当将左大括号之前插入符号时，该大括号和关闭的匹配大括号应突出显示。 时恰好在关闭的大括号后放置光标，该大括号和匹配的左大括号应突出显示。  
   
 ## <a name="see-also"></a>请参阅  
- [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

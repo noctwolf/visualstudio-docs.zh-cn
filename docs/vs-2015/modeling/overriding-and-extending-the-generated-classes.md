@@ -1,25 +1,22 @@
 ---
 title: 重写和扩展生成的类 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 ms.assetid: 30baa60d-a8ea-4611-96c1-8fcc3317cf21
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 34e40863883643955c4517337de5410f0745703d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933425"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931831"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>重写和扩展生成的类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +88,6 @@ DSL 定义是一个平台，你可以在其生成一组强大的基于域特定�
 ### <a name="net-events"></a>.NET 事件  
  您可以订阅某些事件在形状上。 例如，可以侦听形状上的鼠标单击。 您必须编写订阅的每个对象事件的代码。 此代码可以用 InitializeInstanceResources() 的重写。  
   
- ShapeFields，用于绘制的形状上的修饰器上生成一些事件。 有关示例，请参阅[如何： 截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
+ ShapeFields，用于绘制的形状上的修饰器上生成一些事件。 有关示例，请参见 [如何：截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
   
  这些事件通常不会发生在事务内。 如果你想要在应用商店中进行更改，应创建一个事务。
-
-
-

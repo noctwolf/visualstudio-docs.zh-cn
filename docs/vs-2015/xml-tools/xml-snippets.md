@@ -1,25 +1,20 @@
 ---
 title: XML 代码段 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bf1ebeb70931e2e12f056ecfbaa45a6833e031df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c6c3155ee65031b57ec70cc7f22ed53cdef67ebf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183958"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935503"
 ---
 # <a name="xml-snippets"></a>XML 代码片断
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,20 +41,17 @@ XML 编辑器提供一种功能，称为*XML 代码段*，这样可以更快地�
   
  可以通过两种方法插入代码段。 **插入代码段**命令将在光标位置处插入 XML 代码段。 **Surround With**命令包装所选文本环绕 XML 代码段。 这两个命令均可以从**智能感知**子菜单下的**编辑**菜单中，或从编辑器快捷菜单。  
   
- 有关详细信息，请参阅[如何： 使用 XML 代码段](../xml-tools/how-to-use-xml-snippets.md)。  
+ 有关详细信息，请参阅[如何：使用 XML 代码段](../xml-tools/how-to-use-xml-snippets.md)。  
   
 ## <a name="schema-generated-xml-snippets"></a>从架构生成的 XML 代码段  
  “XML 编辑器”还可以从 XML 架构生成 XML 代码段。 通过此功能可以使用从该元素的架构信息生成的 XML 元素来填充元素。  
   
- 有关详细信息，请参阅[如何： 生成的 XML 代码段从 XML 架构](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)。  
+ 有关详细信息，请参阅[如何：从 XML 架构生成 XML 代码段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)。  
   
 ## <a name="create-new-xml-snippets"></a>新建 XML 代码段  
  除了默认情况下随 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 提供的代码段之外，您还可以创建并使用自己的 XML 代码段。  
   
- 有关详细信息，请参阅[如何： 创建 XML 代码段](../xml-tools/how-to-create-xml-snippets.md)。  
+ 有关详细信息，请参阅[如何：创建 XML 代码段](../xml-tools/how-to-create-xml-snippets.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [XML 编辑器](../xml-tools/xml-editor.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: 导航 UML 模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f77e72c55c0984f66a6884b0582716e5529abd0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727771"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933781"
 ---
 # <a name="navigate-the-uml-model"></a>导航 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ ms.locfileid: "51727771"
   
  如果从模型中删除某个元素，则将自动删除该元素参与的任何关系，并将更新位于另一端的属性。  
   
- 如果 UML 规范为某个属性分配多重性 0..1，则该属性的值可能为 `null`。 重数的最大值大于 1 意味着.NET 属性具有类型： `IEnumerable<`*类型*`>`。  
+ 如果 UML 规范为某个属性分配多重性 0..1，则该属性的值可能为 `null`。 重数的最大值大于 1 意味着.NET 属性具有类型：`IEnumerable<`*类型*`>`。  
   
  有关遍历关系的详细信息，请参阅[使用 UML API 导航关系](../modeling/navigate-relationships-with-the-uml-api.md)。  
   
@@ -61,7 +58,7 @@ ms.locfileid: "51727771"
   
  创建的每个模型元素都有一个所有者。 有关详细信息，请参阅[UML 模型中创建元素和关系](../modeling/create-elements-and-relationships-in-uml-models.md)。  
   
- ![类图： 模型、 关系图、 形状和元素](../modeling/media/uml-mm1.png "UML_MM1")  
+ ![类图：模型、 关系图、 形状和元素](../modeling/media/uml-mm1.png "UML_MM1")  
   
 ## <a name="shapes-and-diagrams"></a>形状和关系图  
  UML 模型中的元素可以在关系图中显示。 不同类型的关系图可以显示 IElement 的不同子类型。  
@@ -75,7 +72,7 @@ ms.locfileid: "51727771"
 ## <a name="access-to-the-model-in-extensions"></a>对扩展中的模型的访问  
  在定义为 MEF 组件的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展中，可以声明用于从运行扩展的上下文中导入信息的属性。  
   
-|特性类型|由此可以访问的对象|更多信息|  
+|特性类型|由此可以访问的对象|详细信息|  
 |--------------------|----------------------------------|----------------------|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> .IDiagramContext<br /><br /> （在 Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll 中）|当前焦点关系图。|[在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
 |Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> （在 Microsoft.VisualStudio.Modeling.Sdk.[版本].dll 中）|允许你将更改组合成事务。|[使用事务链接 UML 模型更新](../modeling/link-uml-model-updates-by-using-transactions.md)|  
@@ -134,6 +131,3 @@ foreach (IShape<IInterface> in
 ## <a name="see-also"></a>请参阅  
  [扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)   
  [使用 UML API 编程](../modeling/programming-with-the-uml-api.md)
-
-
-

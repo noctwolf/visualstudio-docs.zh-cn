@@ -1,14 +1,9 @@
 ---
-title: CA2124： 包装易受攻击在外部 try 块 finally 子句 |Microsoft Docs
-ms.custom: ''
+title: CA2124:Try 包装易受攻击的 finally 子句在外部 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2124
 - WrapVulnerableFinallyClausesInOuterTry
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 77f58fbf79bb5d78b753acc3809d0d18803cf11a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1eb503e9f5a9251cb9a348d29c7cd9636389a080
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899495"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935410"
 ---
-# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124：在外部 try 块中包装易受攻击的 finally 子句
+# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124:在外部 try 块中包装易受攻击的 finally 子句
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -88,6 +83,3 @@ catch()
     throw;
 }
 ```
-
-
-

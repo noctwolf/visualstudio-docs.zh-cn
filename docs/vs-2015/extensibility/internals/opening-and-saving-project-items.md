@@ -1,14 +1,9 @@
 ---
 title: 打开和保存项目项 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], file persistence
 - files [Visual Studio], opening and saving
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 043b8545c583295fd11c04329b305e125c3efbac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726710"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932622"
 ---
 # <a name="opening-and-saving-project-items"></a>打开和保存项目项
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ ms.locfileid: "51726710"
  [如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)  
  提供用于指定如何能够在您的项目类型中打开文件的标准编辑器在 IDE 的分步说明。  
   
- [如何：打开开放文档的编辑器](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ [如何：打开编辑器的打开的文档](../../extensibility/how-to-open-editors-for-open-documents.md)  
  提供分步说明，以打开特定于项目的编辑器为打开的文件。  
   
  [保存标准文档](../../extensibility/internals/saving-a-standard-document.md)  
@@ -60,4 +55,3 @@ ms.locfileid: "51726710"
   
  [项目类型](../../extensibility/internals/project-types.md)  
  讨论项目如何控制代码的编译和生成方式、 如何编辑器处于打开状态，以及如何设置项目项的格式。
-

@@ -1,38 +1,33 @@
 ---
-title: 如何： 从 XML 架构资源管理器向工作区添加节点 |Microsoft Docs
-ms.custom: ''
+title: 如何：将节点添加到工作区中，从 XML 架构资源管理器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a6ef4e4e019406d9c317ccd90eabcb89e25a6f36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 84a99426cf32477e0661872c09f41ec50aeb2842
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220098"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925905"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>如何：从 XML 架构资源管理器向工作区添加节点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
-本主题说明如何将节点添加到[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)从 XML 架构资源管理器。 这可以通过将节点从 XML 架构资源管理器拖放到 XSD 设计器视图，或使用 XML 架构资源管理器的上下文菜单来实现。 还可以添加由于 XML 架构资源管理器执行的搜索而突出显示的节点。 有关详细信息，请参阅[如何： 添加架构集搜索结果节点到工作区](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)。  
+本主题说明如何将节点添加到[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)从 XML 架构资源管理器。 这可以通过将节点从 XML 架构资源管理器拖放到 XSD 设计器视图，或使用 XML 架构资源管理器的上下文菜单来实现。 还可以添加由于 XML 架构资源管理器执行的搜索而突出显示的节点。 有关详细信息，请参阅[如何：将架构集搜索结果节点添加到工作区](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)。  
   
 > [!NOTE]
 >  只能将全局节点可以添加到[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)。  
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>通过 XML 资源管理器上下文菜单添加节点  
   
-1.  按照中的步骤[如何： 创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。  
+1.  按照中的步骤[如何：创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。  
   
 2.  在 XSD 资源管理器中右击 `PurchaseOrderType` 节点。 选择**关系图视图中显示**。  
   
@@ -68,6 +63,3 @@ ms.locfileid: "49220098"
   
 ## <a name="see-also"></a>请参阅  
  [XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)
-
-
-

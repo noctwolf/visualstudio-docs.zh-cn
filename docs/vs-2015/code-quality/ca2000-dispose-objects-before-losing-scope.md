@@ -1,14 +1,9 @@
 ---
-title: Ca2000： 超出范围前释放对象 |Microsoft Docs
-ms.custom: ''
+title: CA2000:范围前释放对象 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2000
 - Dispose objects before losing scope
@@ -21,14 +16,14 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f3456ec773b233da3ef2be1dfa7731460bdf6b44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857856"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931849"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000：超出范围前释放对象
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000:丢失范围之前释放对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -72,7 +67,7 @@ ms.locfileid: "49857856"
 ## <a name="related-rules"></a>相关的规则  
  [CA2213：应释放可释放的字段](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2202：不要多次释放对象](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
+ [CA2202:多次未释放对象](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
   
 ## <a name="example"></a>示例  
  如果要实现返回一个可释放对象的方法，使用 try/finally 块没有 catch 块来确保释放对象。 通过使用 try/finally 块，则允许异常引发的故障点，并确保释放该对象。  
@@ -104,4 +99,4 @@ ms.locfileid: "49857856"
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.IDisposable>   
- [释放模式](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Dispose 模式](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

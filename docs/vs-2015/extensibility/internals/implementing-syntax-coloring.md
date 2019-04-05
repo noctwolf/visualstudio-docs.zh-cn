@@ -1,14 +1,9 @@
 ---
 title: 实现语法着色 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30a53b1fc04bd08835ccf0ff0b0edb2e5d117fcb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f068b0b442f6f358d71948ecc2a4d0d21870a6a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932251"
 ---
 # <a name="implementing-syntax-coloring"></a>实现语法着色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51775025"
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 不指定分析器接口，并且分析器实现完全取决于您。 但是，Visual Studio 语言包项目提供默认分析器实现。 对于托管代码，托管的包框架 (MPF) 提供用于对文本着色的完整支持。  
   
- 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现语法着色的新方法的详细信息，请参阅[演练： 突出显示文本](../../extensibility/walkthrough-highlighting-text.md)。  
+ 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现语法着色的新方法的详细信息，请参阅[演练：突出显示文本](../../extensibility/walkthrough-highlighting-text.md)。  
   
 > [!NOTE]
 >  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
@@ -70,8 +65,7 @@ ms.locfileid: "51775025"
  托管的包框架 (MPF) 提供了实现着色程序所需的所有类。 语言服务类应继承<xref:Microsoft.VisualStudio.Package.LanguageService>类，实现所需的方法。 必须通过实现提供扫描器和分析器<xref:Microsoft.VisualStudio.Package.IScanner>接口，并返回从该接口的实例<xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>方法 (必须在中实现的方法之一<xref:Microsoft.VisualStudio.Package.LanguageService>类)。 有关详细信息，请参阅[旧版语言服务中的语法着色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 使用内置的可着色项](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
+ [如何：使用内置的可着色项](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
  [自定义可着色项](../../extensibility/internals/custom-colorable-items.md)   
  [开发旧版语言服务](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [旧版语言服务中的语法着色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)
-

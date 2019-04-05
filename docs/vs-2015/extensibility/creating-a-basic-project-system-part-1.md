@@ -1,14 +1,9 @@
 ---
 title: 创建基本项目系统，第 1 部分 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9bc0be22f0a5f975f616bfcce942d59399a36ad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ed2f8975f24404c00f81d86d0d1d6a6933b3d8ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792549"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936272"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>创建基本项目系统，第 1 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ ms.locfileid: "51792549"
   
 #### <a name="to-create-a-basic-project-template"></a>若要创建基本项目模板  
   
-1. 添加到项目中，一个在其他三个文件夹： **Templates\Projects\SimpleProject**。 (在**解决方案资源管理器**，右键单击**SimpleProject**项目节点，指向**添加**，然后单击**新文件夹**。 将该文件夹命名为 `Templates`注册一个免费试用帐户。 在中**模板**文件夹中，添加名为的文件夹`Projects`。 在**项目**文件夹中，添加名为的文件夹`SimpleProject`。)  
+1. 添加到项目中，一个在其他三个文件夹：**Templates\Projects\SimpleProject**. (在**解决方案资源管理器**，右键单击**SimpleProject**项目节点，指向**添加**，然后单击**新文件夹**。 将该文件夹命名为 `Templates`注册一个免费试用帐户。 在中**模板**文件夹中，添加名为的文件夹`Projects`。 在**项目**文件夹中，添加名为的文件夹`SimpleProject`。)  
   
 2. 在中**Projects\SimpleProject**文件夹中添加一个名为的图标文件`SimpleProject.ico`。 当您单击**添加**，打开图标编辑器。  
   
@@ -477,7 +472,7 @@ ms.locfileid: "51792549"
   
 2. 在中**属性**windows，减至 16 × 16 像素的位图。 请以不同的位图。  
   
-    ![简单项目命令](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
+    ![Simple Project Comm](../extensibility/media/simpleprojprojectcomm.png "SimpleProjProjectComm")  
   
 3. 在中**属性**窗口中，更改**生成操作**的位图**嵌入的资源**。  
   
@@ -577,7 +572,7 @@ ms.locfileid: "51792549"
      请注意，模板参数 $nameSpace$ 和 $ $className$ 没有新值。 您将学习如何实现下一节中的模板参数替换。  
   
 ## <a name="substituting-template-parameters"></a>替换模板参数  
- 在前面部分中，你的项目模板与 Visual Studio 使用注册`ProvideProjectFactory`属性。 以这种方式注册的模板文件夹的路径，你可以通过重写并扩展让基本模板参数替换`ProjectNode.AddFileFromTemplate`类。 有关详细信息，请参阅[生成新项目： 揭秘，第二部分](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
+ 在前面部分中，你的项目模板与 Visual Studio 使用注册`ProvideProjectFactory`属性。 以这种方式注册的模板文件夹的路径，你可以通过重写并扩展让基本模板参数替换`ProjectNode.AddFileFromTemplate`类。 有关详细信息，请参阅[生成新项目：实质上，第二部分](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
   
  现在，添加到替代代码`AddFileFromTemplate`类。  
   
@@ -658,4 +653,3 @@ ms.locfileid: "51792549"
     ![简单项目命令](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
    祝贺你！ 您已实现的基本托管的项目系统。
-

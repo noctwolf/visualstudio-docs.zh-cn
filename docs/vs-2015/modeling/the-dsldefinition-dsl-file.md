@@ -1,25 +1,22 @@
 ---
 title: DslDefinition.dsl 文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: f3fc3ed7-2438-4e5a-b3d7-fe7e0e8a134c
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7f61ceef7248c143fd904751da58d32f75dfc0c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1c62483ad8edac88fe3d14c6590dfb7e6d17285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937640"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937543"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +62,7 @@ ms.locfileid: "49937640"
  Designer  
  本部分将定义一个设计器 （编辑器），它结合了**工具箱**，验证设置、 关系图和序列化方案。 “设计器”部分还将定义模型的根类，此根类通常也是关系图的根类。  
   
- Explorer  
+ 资源管理器  
  本部分介绍**DSL 资源管理器**行为 （在 XmlSerializationBehavior 部分中定义）。  
   
 ## <a name="monikers-in-the-dsldefinitiondsl-file"></a>DslDefinition.dsl 文件中的名字对象  
@@ -90,7 +87,7 @@ ms.locfileid: "49937640"
   
  名字对象系统要求 XML 树中的同级类具有不同的名称。 因此，如果你尝试保存某个域特定语言定义（例如，它具有两个名称相同的类），则会发生验证错误。 在保存 DslDefinition 文件前，应始终更正此类重复名称错误，以便稍后可正确地重新加载该文件。  
   
- 每个类型都有其自己的名字对象类型：DomainClassMoniker、DomainRelationshipMoniker 等等。  
+ 每个类型具有其自己的名字对象类型：DomainClassMoniker、 DomainRelationshipMoniker 等等。  
   
 ## <a name="types"></a>类型  
  “类型”部分将 DslDefinition.dsl 文件包含的所有类型都指定为属性类型。 这些类型分为两类：外部类型（如 System.String）和枚举类型。  
@@ -214,7 +211,7 @@ ms.locfileid: "49937640"
 ### <a name="source-and-target-roles"></a>源和目标角色  
  每个关系都包含具有以下特性的源和目标角色：  
   
--   `RolePlayer` 特性引用了链接实例的域类：OutPort 对应于源，InPort 对应于目标。  
+-   `RolePlayer`属性引用了链接实例的域类：Outport 对应于源，inport 对应于目标。  
   
 -   `Multiplicity` 特性具有四个可能值（ZeroMany、ZeroOne、One 和 OneMany）。 此特性是指可与一个角色扮演者关联的关系的链接数。  
   
@@ -281,7 +278,7 @@ ms.locfileid: "49937640"
  编写 C# 时对此模型，可以通过使用关系生成的属性上的每个相关类跳过一个步骤中的链接：  
   
 ```  
-     InPort port; ...  Component c = port.Component;  
+     InPort port; ...  Component c = port.Component;  
 ```  
   
  但是，必须在路径语法中显式执行这两次跳跃。 由于此要求，你可以更容易地访问中间链接。 以下代码完成了从链接到 Component 的跳跃：  
@@ -552,9 +549,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  连接符映射还可以包含修饰器映射。  
   
 ## <a name="see-also"></a>请参阅  
- [域特定语言工具术语表](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [域特定语言工具术语表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)   
  [了解模型、类和关系](../modeling/understanding-models-classes-and-relationships.md)
-
-
-

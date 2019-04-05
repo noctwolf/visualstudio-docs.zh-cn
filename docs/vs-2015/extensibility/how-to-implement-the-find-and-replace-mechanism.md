@@ -1,28 +1,23 @@
 ---
-title: 如何： 实现查找和替换机制 |Microsoft Docs
-ms.custom: ''
+title: 如何：实现查找和替换机制 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - find and replace
 ms.assetid: bbd348db-3d19-42eb-99a2-3e808528c0ca
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 34639c535be14b2bcead44631fb83cf46e4f0eb8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a42df69a7c51b7eb7ef44cf137d8449cf1421ae2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737228"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935290"
 ---
-# <a name="how-to-implement-the-find-and-replace-mechanism"></a>如何： 实现查找和替换机制
+# <a name="how-to-implement-the-find-and-replace-mechanism"></a>如何：实现查找和替换机制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 提供两种方法来实现查找/替换。 一种方法是将文本图像传递给命令行程序，使其处理，突出显示，具体方法搜索和替换文本。 这样用户就可以指定多个文本段。 或者，你的 VSPackage 可以控制此功能本身。 在这两种情况下，必须通知有关当前的目标和所有打开的文档的目标的 shell。  
@@ -46,4 +41,3 @@ Visual Studio 提供两种方法来实现查找/替换。 一种方法是将文�
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetSearchImage%2A>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>
-

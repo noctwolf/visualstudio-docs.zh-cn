@@ -1,26 +1,21 @@
 ---
 title: 旧版语言服务功能 2 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], code development aides
 ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eedd4162f45f5e1a68aea92af7c4f3cf71171cee
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: db610ea7dda113b89a83c9a5b8060fa7acf804c5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761516"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933315"
 ---
 # <a name="legacy-language-service-features"></a>旧版语言服务功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,8 +43,7 @@ ms.locfileid: "51761516"
  [旧版语言服务中的大纲显示和隐藏文本](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)  
  介绍如何实现的大纲显示或隐藏的文本。  
   
- [如何：提供旧版语言服务中扩展的大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [如何：提供旧版语言服务中的展开大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  介绍了某些实现调试器支持中的步骤...  
   
 ## <a name="related-sections"></a>相关章节
-

@@ -1,23 +1,20 @@
 ---
-title: 如何： 添加拖放处理程序 |Microsoft Docs
-ms.custom: ''
+title: 如何：添加拖放处理程序 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 39ee88a0-85c3-485e-8c0a-d9644c6b25d9
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 47a5cab022da3d6cfc048191de116af3165401cd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848970"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933983"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：添加拖放处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +23,7 @@ ms.locfileid: "49848970"
   
  本主题讨论了在其他关系图上发起的拖放笔势。 对于单个关系图内的移动和复制事件，请考虑另一种方法：定义 `ElementOperations` 的子类。 有关详细信息，请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)。 你可能还可以自定义 DSL 定义。  
   
-## <a name="in-this-topic"></a>主题内容  
+## <a name="in-this-topic"></a>在本主题中  
   
 -   前两个部分介绍了定义笔势处理程序的替代方法：  
   
@@ -38,7 +35,7 @@ ms.locfileid: "49848970"
   
 -   [如何获取原始拖动项](#getOriginal)。 如果拖动项是 DSL 元素，则可以打开源模型并访问该元素。  
   
--   [使用鼠标操作： 拖动隔离舱项](#mouseActions)。 此示例演示了在形状的字段上截获鼠标操作的低级别处理程序。 该示例允许用户通过使用鼠标拖动对隔离舱中的项进行重新排序。  
+-   [使用鼠标操作：拖动隔离舱项](#mouseActions)。 此示例演示了在形状的字段上截获鼠标操作的低级别处理程序。 该示例允许用户通过使用鼠标拖动对隔离舱中的项进行重新排序。  
   
 ##  <a name="overrideShapeElement"></a> 通过重写 ShapeElement 方法定义笔势处理程序  
  将新的代码文件添加到 DSL 项目。 对于笔势处理程序，通常必须至少具有以下 `using` 语句：  
@@ -87,7 +84,7 @@ using System.Linq;
   
 - <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – 当用户双击该形状或关系图时，将调用此方法。  
   
-   有关详细信息，请参阅[如何： 截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
+   有关详细信息，请参阅[如何：截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
   
   定义 `IsAcceptableDropItem(e)` 以确定拖动项是否是可接受的，并定义 ProcessDragDropItem(e) 以在放置该项后更新模型。 这些方法必须先从事件参数中提取项。 有关如何执行该操作的信息，请参阅[如何获取对拖动项的引用](#extracting)。  
   
@@ -339,7 +336,7 @@ using System.Linq;
   
     ```  
   
-##  <a name="mouseActions"></a> 使用鼠标操作： 拖动隔离舱项  
+##  <a name="mouseActions"></a> 使用鼠标操作：拖动隔离舱项  
  可以编写用于在形状的字段上截获鼠标操作的处理程序。 以下示例允许用户通过使用鼠标拖动对隔离舱中的项进行重新排序。  
   
  若要生成此示例中，创建解决方案，通过使用**类图**解决方案模板。 添加代码文件和以下代码。 将命名空间调整为与你自己的命名空间相同。  
@@ -593,6 +590,3 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>请参阅  
  [自定义复制行为](../modeling/customizing-copy-behavior.md)   
  [部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)
-
-
-

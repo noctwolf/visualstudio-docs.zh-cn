@@ -1,25 +1,20 @@
 ---
 title: 在就地激活 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
-manager: douge
-ms.openlocfilehash: 5d8badf198d86e9643dbc6e98683dd3437d72f64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9c673fd7eb2b51e611256efb427baa0174d29462
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232188"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932675"
 ---
 # <a name="in-place-activation"></a>在就地激活
 如果你的编辑器视图托管了 ActiveX 或其他活动控件，则必须使用就地激活模型将编辑器视图实现为 ActiveX 控件或活动文档数据对象。  

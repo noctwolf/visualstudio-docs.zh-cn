@@ -1,27 +1,22 @@
 ---
 title: UsedCommand 元素 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b34c2dbafe9126339638691bc345cab1d347924
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 91929038d77bcf14c6997f9b60551ed8c9c3b820
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742530"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934452"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +36,15 @@ ms.locfileid: "51742530"
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必须的。 标识的命令的 GUID ID 对中的 GUID。|  
-|id|必须的。 GUID ID 对，用于标识该命令的 ID。|  
+|guid|必需。 标识的命令的 GUID ID 对中的 GUID。|  
+|id|必需。 GUID ID 对，用于标识该命令的 ID。|  
 |条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
 |元素|描述|  
 |-------------|-----------------|  
-|无||  
+|None||  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -73,4 +68,3 @@ ms.locfileid: "51742530"
 ## <a name="see-also"></a>请参阅  
  [UsedCommands 元素](../extensibility/usedcommands-element.md)   
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-
