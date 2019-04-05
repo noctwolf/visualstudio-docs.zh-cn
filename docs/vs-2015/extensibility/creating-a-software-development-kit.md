@@ -1,24 +1,19 @@
 ---
 title: 创建软件开发工具包 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7c3ff7a3a8c872c4b624c8d2956a6802a0ab139
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0a03611dcf06c5ecd7c2e638bdced6551bcb3a37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723678"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937105"
 ---
 # <a name="creating-a-software-development-kit"></a>创建软件开发工具包
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,8 +57,8 @@ ms.locfileid: "51723678"
 |引用文件夹|包含包含 Api，可对编码的二进制文件。 这些可能包括 Windows 元数据 (WinMD) 文件或程序集。|  
 |DesignTime 文件夹|包含仅在预运行/调试时所需的文件。 这些可能包括 XML 文档、 库、 标头中，工具箱设计时二进制文件、 MSBuild 项目等<br /><br /> XML 文档，理想情况下，被置入 \DesignTime 文件夹中，但引用的 XML 文档将继续与 Visual Studio 中的参考文件一起放置。 例如，XML 文档中的引用 \References\\[配置]\\[arch]\sample.dll 将 \References\\[配置]\\[arch]\sample.xml 和该文档的本地化的版本将 \References\\[配置]\\[arch]\\[locale]\sample.xml。|  
 |配置文件夹|可以有只有三个文件夹： 调试、 零售和 CommonConfiguration。 如果应使用相同的 SDK 文件集，而不考虑 SDK 使用者将目标配置，SDK 作者可以放置其下 CommonConfiguration 文件。|  
-|体系结构文件夹|可以存在的任何支持的体系结构文件夹。 Visual Studio 支持以下体系结构： x86、 x64、 ARM 和非特定语言。 注意： Win32 映射为 x86，而 AnyCPU 映射到非特定语言。<br /><br /> MSBuild 仅在 \CommonConfiguration\neutral 下查找平台 Sdk。|  
-|SDKManifest.xml|此文件描述了 Visual Studio 应如何使用 SDK。 查看 SDK 清单[!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** 对象浏览器将显示在浏览列表中的值。<br /><br /> **PlatformIdentity:** 是否存在此特性告知 Visual Studio 和 MSBuild SDK 的平台 SDK，并且不应复制从它在添加引用本地。<br /><br /> **TargetFramework:** Visual Studio 使用此属性以确保，它仅投影面向此设置的值中指定的同一框架属性可以使用 SDK。<br /><br /> **MinVSVersion:** Visual Studio 使用此属性使用适用于它的 Sdk。<br /><br /> **参考：** 此属性必须指定为只有那些包含控件的引用。 有关如何指定包含控件的引用的信息，请参阅下面。|  
+|体系结构文件夹|可以存在的任何支持的体系结构文件夹。 Visual Studio 支持以下体系结构： x86、 x64、 ARM 和非特定语言。 注意:Win32 映射为 x86，而 AnyCPU 映射到非特定语言。<br /><br /> MSBuild 仅在 \CommonConfiguration\neutral 下查找平台 Sdk。|  
+|SDKManifest.xml|此文件描述了 Visual Studio 应如何使用 SDK。 查看 SDK 清单[!INCLUDE[win81](../includes/win81-md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** 对象浏览器将显示在浏览列表中的值。<br /><br /> **PlatformIdentity:** 此属性存在本地告知 Visual Studio 和 MSBuild SDK 是一个平台 SDK 并且不应复制添加从它的引用。<br /><br /> **TargetFramework:** Visual Studio 使用此属性以确保，它仅投影面向此设置的值中指定的同一框架属性可以使用 SDK。<br /><br /> **MinVSVersion:** Visual Studio 使用此属性使用适用于它的 Sdk。<br /><br /> **参考：** 此属性必须指定为只有那些包含控件的引用。 有关如何指定包含控件的引用的信息，请参阅下面。|  
   
 ##  <a name="ExtensionSDKs"></a> 扩展 Sdk  
  以下部分介绍需要执行的操作将部署扩展 SDK。  
@@ -133,7 +128,7 @@ ms.locfileid: "51723678"
   
      引用文件旁边放置 XML 参考文档。 例如，XML 参考文档**\References\\< config\>\\< a c h\>\sample.dll**程序集是**\References\\< config\>\\< a c h\>\sample.xml**，并且该文档的本地化的版本**\References\\< 配置\>\\<arch\>\\< 区域设置\>\sample.xml**。  
   
-5.  配置文件夹： 三个子文件夹： 调试、 零售版和 CommonConfiguration。 SDK 作者可以放置其下 CommonConfiguration 文件时应使用相同的 SDK 文件集，而不考虑针对 SDK 使用者的配置。  
+5.  配置文件夹： 三个子文件夹：调试、 零售版和 CommonConfiguration。 SDK 作者可以放置其下 CommonConfiguration 文件时应使用相同的 SDK 文件集，而不考虑针对 SDK 使用者的配置。  
   
 6.  体系结构文件夹： 支持以下体系结构： x86、 x64、 ARM，非特定语言。 Win32 映射为 x86，而 AnyCPU 映射到非特定语言。  
   
@@ -166,7 +161,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 1.  DisplayName： 在引用管理器、 解决方案资源管理器、 对象浏览器和 Visual Studio 的其他位置中的用户界面中显示的值。  
   
-2.  ProductFamilyName： 整体 SDK 产品名称。 例如， [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK 名为"Microsoft.WinJS.1.0"和"Microsoft.WinJS.2.0"属于相同的一系列 SDK 产品系列，"Microsoft.WinJS"。 此属性允许 Visual Studio 和 MSBuild 进行连接。 如果此属性不存在，则 SDK 名称用作产品系列名称。  
+2.  ProductFamilyName:总体 SDK 产品名称。 例如， [!INCLUDE[winjs_long](../includes/winjs-long-md.md)] SDK 名为"Microsoft.WinJS.1.0"和"Microsoft.WinJS.2.0"属于相同的一系列 SDK 产品系列，"Microsoft.WinJS"。 此属性允许 Visual Studio 和 MSBuild 进行连接。 如果此属性不存在，则 SDK 名称用作产品系列名称。  
   
 3.  FrameworkIdentity： 上一个或多个 Windows 组件库的此属性的值放到正在使用的应用程序清单中指定的依赖项。 此属性是仅适用于 Windows 组件库。  
   
@@ -174,13 +169,13 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 5.  MinVSVersion： 最小 Visual Studio 的版本。  
   
-6.  MaxPlatformVerson： 应使用的最大目标平台版本以指定的扩展 SDK 不起作用的平台版本。 例如，Microsoft Visual c + + 运行时包 v11.0 应仅由 Windows 8 项目引用。 因此，Windows 8 项目 MaxPlatformVersion 是 8.0。 也就是说，引用管理器中筛选出 Microsoft Visual c + + 运行时包对于 Windows 8.1 项目，并且 MSBuild 将引发错误时[!INCLUDE[win81](../includes/win81-md.md)]项目引用它。 注意： 此元素是从开始支持[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]。  
+6.  MaxPlatformVerson:最大目标平台版本应该用于指定在其扩展 SDK 不起作用的平台版本。 例如，Microsoft Visual c + + 运行时包 v11.0 应仅由 Windows 8 项目引用。 因此，Windows 8 项目 MaxPlatformVersion 是 8.0。 也就是说，引用管理器中筛选出 Microsoft Visual c + + 运行时包对于 Windows 8.1 项目，并且 MSBuild 将引发错误时[!INCLUDE[win81](../includes/win81-md.md)]项目引用它。 注意： 此元素是从开始支持[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]。  
   
-7.  AppliesTo： 指定可在引用管理器中通过指定适用的 Visual Studio 项目类型的 Sdk。 识别的九个值： WindowsAppContainer、 VisualC、 VB、 CSharp、 WindowsXAML、 JavaScript、 托管和本机。 可以使用 SDK 作者和 ("+)，或 ("&#124;")，而不 ("！")若要指定完全适用于 SDK 的项目类型的作用域的运算符。  
+7.  AppliesTo： 指定可在引用管理器中通过指定适用的 Visual Studio 项目类型的 Sdk。 识别的九个值：WindowsAppContainer、 VisualC、 VB、 CSharp、 WindowsXAML、 管理，JavaScript 和本机。 可以使用 SDK 作者和 ("+)，或 ("&#124;")，而不 ("！")若要指定完全适用于 SDK 的项目类型的作用域的运算符。  
   
      WindowsAppContainer 标识项目类型提供的[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用。  
   
-8.  SupportPrefer32Bit： 支持的值为"True"和"False"。 默认值为"True"。 如果值设置为"False"，MSBuild 将返回的错误[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]项目 （或警告的桌面项目） 引用 SDK 的项目是否已启用的 Prefer32Bit。 有关 Prefer32Bit 详细信息，请参阅[生成页，项目设计器 (C#)](../ide/reference/build-page-project-designer-csharp.md)或[编译页，项目设计器 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)。  
+8.  SupportPrefer32Bit:支持的值为"True"和"False"。 默认值为"True"。 如果值设置为"False"，MSBuild 将返回的错误[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]项目 （或警告的桌面项目） 引用 SDK 的项目是否已启用的 Prefer32Bit。 有关 Prefer32Bit 详细信息，请参阅[生成页，项目设计器 (C#)](../ide/reference/build-page-project-designer-csharp.md)或[编译页，项目设计器 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)。  
   
 9. SupportedArchitectures： 以分号分隔的 SDK 支持的体系结构的列表。 如果使用的项目中的目标的 SDK 体系结构不受支持，MSBuild 将显示警告。 如果未指定此特性，MSBuild 将永远不会显示此类型的警告。  
   
@@ -190,7 +185,7 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
   
 12. CopyRedistToSubDirectory： 指定应将 \redist 文件夹下的文件复制相对于应用程序包的根目录 (即**包位置**在创建应用程序包向导中选择) 和运行时布局的根元素。 默认位置为应用程序包和 F5 布局的根。  
   
-13. DependsOn： 定义此 SDK 所依赖的 Sdk 的 SDK 标识的列表。 此属性将显示在详细信息窗格中的引用管理器。  
+13. DependsOn:定义此 SDK 所依赖的 Sdk 的 SDK 标识的列表。 此属性将显示在详细信息窗格中的引用管理器。  
   
 14. MoreInfo： 指向提供帮助和的详细信息的网页的 URL。 在右窗格中的引用管理器的详细信息链接中使用此值。  
   
@@ -270,7 +265,6 @@ MoreInfo = "http://msdn.microsoft.com/MySDK">
     ```  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 创建使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [演练： 创建使用 C# 或 Visual Basic 的 SDK](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
+ [演练：使用 c + + 创建 SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [演练：创建 SDK 使用C#或 Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)   
  [管理项目中的引用](../ide/managing-references-in-a-project.md)
-

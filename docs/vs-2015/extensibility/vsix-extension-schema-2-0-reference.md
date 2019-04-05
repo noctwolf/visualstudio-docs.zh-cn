@@ -1,27 +1,22 @@
 ---
 title: VSIX 扩展架构 2.0 参考 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0121f2d9d4a29942449b180c63c450d4a49b31f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9cb9672696e0e1294fdd396b59fadd1c50fd697f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785926"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926090"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 扩展架构 2.0 参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +47,9 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
   
 -   `<Identity>` -这定义了此包的标识信息，包括以下属性：  
   
-    -   `Id` -此属性必须由其作者所选包的唯一 ID。 应的是相同的 CLR 类型是占用命名空间限定的名称： Company.Product.Feature.Name。 `Id`特性被限制为 100 个字符。  
+    -   `Id` -此属性必须由其作者所选包的唯一 ID。 应的是相同的 CLR 类型是占用命名空间限定的名称：Company.Product.Feature.Name. `Id`特性被限制为 100 个字符。  
   
-    -   `Version` – 此项定义此包及其内容的版本。 此属性遵循 CLR 程序集版本控制格式： Major.Minor.Build.Revision (1.2.40308.00)。 具有更高版本的版本号的包被视为对包的更新，可以在现有的已安装版本上安装。  
+    -   `Version` – 此项定义此包及其内容的版本。 此属性遵循 CLR 程序集版本控制格式：Major.Minor.Build.Revision (1.2.40308.00)。 具有更高版本的版本号的包被视为对包的更新，可以在现有的已安装版本上安装。  
   
     -   `Language` -此属性是包的默认语言，对应于此清单中的文本数据。 此属性遵循 CLR 的区域设置代码约定对于资源程序集，例如： en-我们，en，fr-fr 的。 您可以指定`neutral`声明将在 Visual Studio 的任何版本运行的非特定于语言的扩展。 默认值为 `neutral`。  
   
@@ -101,7 +96,7 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
   
 -   `<InstallationTarget>` – 此元素控制 VSIX 安装程序安装包的位置的位置。 如果的值`Scope`属性是"ProductExtension"包必须面向一种用于已安装的清单文件作为其内容以播发其可用性与扩展的一部分的 SKU。 `<InstallationTarget>`元素具有以下属性`Scope`属性具有显式或默认值"ProductExtension":  
   
-    -   `Id` -此属性标识的包。  该属性遵循命名空间约定： Company.Product.Feature.Name。 `Id`属性只能包含字母数字字符，并且限制为 100 个字符。 预期值：  
+    -   `Id` -此属性标识的包。  该属性如下所示的命名空间约定：Company.Product.Feature.Name. `Id`属性只能包含字母数字字符，并且限制为 100 个字符。 预期值：  
   
         -   Microsoft.VisualStudio.IntegratedShell  
   
@@ -143,7 +138,7 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
   
 -   `<Dependency>` 元素 – 此子元素具有以下属性：  
   
-    -   `Id` -此属性必须是依赖的包的唯一 ID。 此标识值必须匹配`<Metadata><Identity>Id`此包所依赖的包的属性。 `Id`属性遵循命名空间约定： Company.Product.Feature.Name。 属性只能包含字母数字字符，并且限制为 100 个字符。  
+    -   `Id` -此属性必须是依赖的包的唯一 ID。 此标识值必须匹配`<Metadata><Identity>Id`此包所依赖的包的属性。 `Id`属性遵循命名空间约定：Company.Product.Feature.Name. 属性只能包含字母数字字符，并且限制为 100 个字符。  
   
     -   `Version` -此属性指定与此 SKU 的最小值和最大受支持版本的版本范围。 包可以详细介绍它支持的 Sku 的版本。 版本范围表示法是 [12.0，13.0]，其中：  
   
@@ -222,4 +217,3 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
   
 ## <a name="see-also"></a>请参阅  
  [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)
-

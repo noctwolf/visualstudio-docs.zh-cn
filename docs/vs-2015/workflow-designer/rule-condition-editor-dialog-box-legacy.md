@@ -1,11 +1,8 @@
 ---
 title: 规则条件编辑器对话框 （旧版） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleConditionDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: c7ca8be9-de31-4a64-939c-4d53a50d5e29
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8237c8e29007d010cd99e4323bf8e88a23b7e9fb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838538"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58931693"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>“规则条件编辑器”对话框（旧版）
 本主题介绍如何使用**规则条件编辑器**对话框中，在旧[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 在需要面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -62,7 +59,7 @@ ms.locfileid: "49838538"
   
 - 算术运算符：+、-、*、/、MOD  
   
-- 逻辑运算符： 和，& &、 OR、 &#124; &#124;、 NOT、 ！  
+- 逻辑运算符：AND, &&, OR, &#124;&#124;, NOT, !  
   
 - 按位运算符： &，&#124;  
   

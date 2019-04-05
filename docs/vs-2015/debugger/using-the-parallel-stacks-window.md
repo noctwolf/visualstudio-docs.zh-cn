@@ -1,14 +1,9 @@
 ---
 title: 使用并行堆栈窗口 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelstacks
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 602fdd683ecb1b3244289c305e4fc850d337b03e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792029"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936865"
 ---
 # <a name="using-the-parallel-stacks-window"></a>使用“并行堆栈”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,13 +118,10 @@ ms.locfileid: "51792029"
  通过切换到新堆栈帧，可使该方法成为当前方法，并在窗口中显示新方法的所有调用方和被调用方。 这可能会导致某些线程显示在视图中或从视图中消失，具体取决于线程的调用堆栈上是否显示该方法。 若要返回堆栈视图，请再次单击“方法视图”工具栏按钮。  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  
- [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
+ [调试托管代码](../debugger/debugging-managed-code.md)   
  [并行编程](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [使用任务窗口](../debugger/using-the-tasks-window.md)   
- [演练： 调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)   
+ [演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Task 类](../extensibility/debugger/task-class-internal-members.md)
-
-
-

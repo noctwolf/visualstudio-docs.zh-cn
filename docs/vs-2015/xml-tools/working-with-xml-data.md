@@ -1,25 +1,20 @@
 ---
 title: 使用 XML 数据 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 465cd132-2e36-435d-920b-50b767c2217c
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6a67caa1b7c2246671d4e5a8e456a246b3662acd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233463"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935751"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,17 +59,11 @@ XML 及其相关技术对 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visua
  [调试 XSLT](../xml-tools/debugging-xslt.md)  
  讨论如何使用 Visual Studio 调试程序调试样式表。  
   
- [XML 标准参考](http://msdn.microsoft.com/en-us/79c78508-c9d0-423a-a00f-672e855de401)  
- 提供有关 XML 技术的信息，其中包括 XML、文档类型定义 (DTD)、XML 架构定义语言 (XSD) 和 XSLT。  
+ [XML 标准参考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
+ 提供有关 XML 技术的信息，其中包括 XML、文档类型定义 (DTD)、XML 架构定义语言 (XSD) 和 XSLT。
   
- [创建和编辑类型化数据集](../data-tools/creating-and-editing-typed-datasets.md)  
- 介绍用于创建数据集的设计时工具。  
-  
- [在托管代码中的 XML Web 服务](http://msdn.microsoft.com/en-us/c9a7dc25-3e68-4723-bfb7-de4320830196)  
+ [在托管代码中的 XML Web 服务](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  讨论如何创建和部署 XML Web 服务以及如何访问 XML Web 服务。  
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)
-
-
-

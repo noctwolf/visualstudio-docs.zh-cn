@@ -1,27 +1,22 @@
 ---
 title: 升级项目项 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading project items
 - projects [Visual Studio SDK], upgrading items
 - project items [Visual Studio], upgrading
 ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
-manager: douge
-ms.openlocfilehash: a9bf5307e2eabc2ba15c8e2dc8e1b1e0fadb11a0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 04cfbdc9da180dc35278e723da8ce203bdf26ac6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224089"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937705"
 ---
 # <a name="upgrading-project-items"></a>升级项目项
 如果您添加或管理不实现项目系统内的项，您可能需要参与项目升级过程。 Crystal Reports 是项的可以添加到项目系统的示例。  
@@ -43,5 +38,5 @@ ms.locfileid: "49224089"
 2.  在时您的项目项获取的项目升级时，通知**Visual Studio 转换向导**仍然会显示。 因此，应使用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger>接口，以提供对向导用户界面升级的消息。  
   
 ## <a name="see-also"></a>请参阅  
- [Visual Studio 转换向导](http://msdn.microsoft.com/en-us/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Visual Studio 转换向导](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [升级自定义项目](../misc/upgrading-custom-projects.md)

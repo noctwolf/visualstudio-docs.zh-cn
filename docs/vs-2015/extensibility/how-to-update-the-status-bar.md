@@ -1,28 +1,23 @@
 ---
-title: 如何： 更新状态栏 |Microsoft Docs
-ms.custom: ''
+title: 如何：更新状态栏 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - update status bar
 ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eb70e8799b74f470a2216a63aae4637fe1872681
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ea04eceba8d42f9be6fc1dabf91b21a21744a7ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768349"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931621"
 ---
-# <a name="how-to-update-the-status-bar"></a>如何： 更新状态栏
+# <a name="how-to-update-the-status-bar"></a>如何：更新状态栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **状态栏**控件条位于底部的多个应用程序窗口，其中包含一个或多个状态文本行或指示器。  
@@ -55,4 +50,3 @@ ms.locfileid: "51768349"
   
 ## <a name="see-also"></a>请参阅  
  [状态栏](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)
-

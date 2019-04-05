@@ -1,12 +1,9 @@
 ---
 title: T4 文本模板指令 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, import directive
 - text templates, include directive
@@ -18,13 +15,13 @@ ms.assetid: 6898ee02-ebb2-4635-a4e9-350774c13cf2
 caps.latest.revision: 83
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 00853b21ec077825337c2c360cac33775189dfdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ce0acf7c1c63f0d1c05d1e1d3b59dc7a5d28862a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933098"
 ---
 # <a name="t4-text-template-directives"></a>T4 文本模板指令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,6 +74,3 @@ ms.locfileid: "49302167"
 ```  
   
  此外，您还可以创建自己的指令。 有关详细信息，请参阅[创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。 如果使用可视化和建模 SDK 来创建域特定语言 (DSL)，将作为 DSL 的一部分生成指令处理器。
-
-
-

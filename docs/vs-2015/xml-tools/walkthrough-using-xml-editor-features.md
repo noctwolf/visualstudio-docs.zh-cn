@@ -1,25 +1,20 @@
 ---
-title: 演练： 使用 XML 编辑器功能 |Microsoft Docs
-ms.custom: ''
+title: 演练：使用 XML 编辑器功能 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b054f7bfc4a70ee19e60315e3e7bc2a790db3cba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f965bf147454d2076445170ea6fb6748782052d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252279"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934282"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>演练：使用 XML 编辑器功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +72,7 @@ ms.locfileid: "49252279"
   
 5.  键入 `>` 以结束该标记。  
   
-6.  编辑器将添加结束标记。 添加的结束标记使用波浪形下划线指示验证错误。 工具提示将显示消息：元素“employee”的内容不完整。 应包含“ID”。  
+6.  编辑器将添加结束标记。 添加的结束标记使用波浪形下划线指示验证错误。 工具提示将显示消息：元素 employee 具有不完整的内容。 应包含“ID”。  
   
 7.  类型`<`，然后选择**ID**从成员列表。 然后键入 `>`。  
   
@@ -85,7 +80,7 @@ ms.locfileid: "49252279"
   
 8.  类型**abc**。  
   
-     **Abc**文本具有波浪形下划线。 工具提示将显示消息：根据数据类型，“ID”元素的值无效。  
+     **Abc**文本具有波浪形下划线。 工具提示将显示消息：ID 元素具有根据其数据类型的无效值。  
   
 9. 右键单击 ID 元素上并选择**转到定义**。  
   
@@ -93,7 +88,7 @@ ms.locfileid: "49252279"
   
 10. 返回到 XML 文件中，并替换**abc**带有文本**123**。  
   
-     波浪形下划线和工具提示在 ID 元素值下清除。 现在，employee 结束标记的工具提示显示消息：元素“employee”的内容不完整。 应包含“hire-date”。  
+     波浪形下划线和工具提示在 ID 元素值下清除。 现在，employee 结束标记的工具提示显示消息：元素 employee 具有不完整的内容。 应包含“hire-date”。  
   
 11. 将光标置于 ID 结束标记后面，键入 `<`，再从成员列表中选择 hire-date，然后键入 `>`。  
   
@@ -136,4 +131,3 @@ ms.locfileid: "49252279"
   
 ## <a name="see-also"></a>请参阅  
  [XML 编辑器](../xml-tools/xml-editor.md)
-

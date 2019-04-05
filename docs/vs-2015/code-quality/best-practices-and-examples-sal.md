@@ -1,25 +1,20 @@
 ---
 title: 最佳做法和示例 (SAL) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 666276fb-99c2-4dc9-8bac-d74861c203ea
 caps.latest.revision: 14
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 9327ab850bb5f62158e48abc4c8445d3f9b6fe9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 56e57d182a21429d73b8eae0b79f96532732ae7b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743735"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932842"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳做法和示例 (SAL)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ ms.locfileid: "51743735"
 下面是一些关于充分利用源代码批注语言 (SAL)，并避免一些常见问题的方法。  
   
 ## <a name="in"></a>\_In\_
- 如果函数应写入元素，请使用 `_Inout_` 而不是 `_In_`。 这在从旧的宏自动转换为 SAL 的情况下尤为重要。 在 SAL 之前，许多程序员使用宏作为注释，这些宏命名为 `IN`、`OUT`、`IN_OUT`，或是这些宏的变体。 尽管建议你将这些宏转换为 SAL，但在转换时应谨慎，因为代码自写入原型以来可能已经发生改变，并且旧的宏可能已不再反映代码的作用。 请特别注意 `OPTIONAL` 注释宏，因为它经常错误放置；例如，在逗号错误的一边。  
+ 如果函数应写入元素，请使用 `_Inout_` 而不是 `_In_`。 这在从旧的宏自动转换为 SAL 的情况下尤为重要。 在 SAL 之前，许多程序员使用宏作为注释，这些宏命名为 `IN`、`OUT`、`IN_OUT`，或是这些宏的变体。 尽管建议您将这些宏转换为 SAL，但在转换时应谨慎，因为代码自写入原型以来可能已经发生改变，并且旧的宏可能已不再反映代码的作用。 请特别注意 `OPTIONAL` 注释宏，因为它经常错误放置；例如，在逗号错误的一边。  
   
 ```cpp  
   
@@ -254,6 +249,3 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
  [对锁定行为进行批注](../code-quality/annotating-locking-behavior.md)   
  [指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [内部函数](../code-quality/intrinsic-functions.md)
-
-
-
