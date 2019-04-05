@@ -1,25 +1,20 @@
 ---
-title: 如何： 选择使用的 XML 架构 |Microsoft Docs
-ms.custom: ''
+title: 如何：选择使用的 XML 架构 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863719"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933125"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>如何：选择要使用的 XML 架构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ ms.locfileid: "49863719"
   
 3.  浏览并选择要添加到架构缓存的架构。  
   
-4.  单击**打开**。  
+4.  单击“打开”。  
   
      添加到架构的架构缓存，并且**使用**列的值设置为**使用此架构**。  
   
@@ -83,6 +78,3 @@ ms.locfileid: "49863719"
  [架构缓存](../xml-tools/schema-cache.md)   
  [XML 架构对话框](../xml-tools/xml-schemas-dialog-box.md)   
  [XML 编辑器](../xml-tools/xml-editor.md)
-
-
-

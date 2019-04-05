@@ -1,23 +1,20 @@
 ---
 title: 通过使用 MEF 扩展 DSL |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 3e7be79a-53ab-4d79-863a-bef8d27839bd
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd5e4727c4352ca27d905bad608c4a1c17284f9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 87b48a1cd5dc791609a2a15d1fcb657b41e9dcc8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930632"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931185"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -250,7 +247,7 @@ namespace MyMefExtension
 ### <a name="gesture-handlers"></a>笔势处理程序  
  笔势处理程序可以处理对象拖动到关系图上从任何位置，内部或外部[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 下面的示例使用户可以将文件从 Windows 资源管理器拖动到关系图上。 它将创建包含文件名称的元素。  
   
- 可以编写处理程序来处理来自其他 DSL 模型和 UML 模型拖动的。 有关详细信息，请参阅[如何： 添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
+ 可以编写处理程序来处理来自其他 DSL 模型和 UML 模型拖动的。 有关详细信息，请参阅[如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
   
 ```  
   
@@ -380,8 +377,5 @@ namespace MefExtension
 ## <a name="see-also"></a>请参阅  
  [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)   
  [托管可扩展性框架 (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
- [如何： 添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [域特定语言中的验证](../modeling/validation-in-a-domain-specific-language.md)
-
-
-

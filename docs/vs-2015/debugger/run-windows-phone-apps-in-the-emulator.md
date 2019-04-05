@@ -1,14 +1,9 @@
 ---
 title: 在模拟器中运行 Windows Phone 应用程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,20 +13,20 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739988"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931753"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>在仿真程序中运行 Windows Phone 应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Phone 仿真程序提供了一个虚拟环境，你可以在其中调试并测试计算机上的 Windows Phone 应用，而无需使用物理设备。 你可以模拟常用的触摸和旋转事件，还可以选择要模拟的物理屏幕大小和分辨率。 还可以测试许多常用的功能，例如定位、网络、通知、传感器、加速计以及可选的 SD 卡。  
   
- 可以在模拟器中测试的功能的详细信息，请参阅[Windows Phone 仿真程序中测试应用功能](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)。  
+ 可以在模拟器中测试的功能的详细信息，请参阅[Windows Phone 仿真程序中测试应用功能](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)。  
   
  该仿真程序与 Visual Studio 相结合形成一个完整的环境，从中可设计、开发、调试和测试 Windows Phone 应用。  
   
@@ -165,10 +160,10 @@ Windows Phone 仿真程序提供了一个虚拟环境，你可以在其中调试
 |F10|VOLUME DOWN||  
 |F11|不适用。||  
 |F12|POWER|按两次 F12 键可启用锁定屏幕。<br /><br /> 长按可实现预期效果。|  
-|Esc|BACK|长按可实现预期效果。|  
+|ESC|BACK|长按可实现预期效果。|  
 |PAUSE/BREAK|切换键盘（仅适用于 windows 8/8.1 仿真程序）。|不适用于 Windows 10 仿真程序。|  
-|PAGE UP|启用硬件键盘（仅适用于 Windows 8/8.1 仿真程序）。|不适用于 Windows 10 仿真程序。|  
-|PAGE DOWN|禁用硬件键盘（仅适用于 Windows 8/8.1 仿真程序）。|不适用于 Windows 10 仿真程序。|  
+|Page Up|启用硬件键盘（仅适用于 Windows 8/8.1 仿真程序）。|不适用于 Windows 10 仿真程序。|  
+|Page Down|禁用硬件键盘（仅适用于 Windows 8/8.1 仿真程序）。|不适用于 Windows 10 仿真程序。|  
   
 ##  <a name="BKMK_checkpoints"></a> 保存和加载自定义检查点  
  通过使用保存仿真程序状态的快照**检查点**仿真程序的选项卡**其他工具**。 若经常使用相同数据和设置来测试应用，则该功能是有用的。  
@@ -225,6 +220,3 @@ Windows Phone 仿真程序提供了一个虚拟环境，你可以在其中调试
 -   在 Visual Studio 中指定发布版本。 指定发布版本之后, 启动您的应用程序通过选择**部署 _[应用名称]_** 链接**生成**菜单。  
   
 -   另外，你可以注释 app.xaml.cs 或 app.xaml.vb 文件中的代码行，以将 `EnableFrameRateCounter` 的值设置为 `true`。
-
-
-
