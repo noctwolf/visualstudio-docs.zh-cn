@@ -1,25 +1,23 @@
 ---
 title: 适用于 c + + 的 visual Studio data tools |Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3a3849d9-1bc7-47d1-805e-1755223ccba2
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 030e142911078aec36b01335c8fb3aaa4d82ac78
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0fba11063e7be570dc8ad2ce9a1b07b3ea88ffa2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849640"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937689"
 ---
-# <a name="visual-studio-data-tools-for-c"></a>适用于 c + + 的 visual Studio data tools
+# <a name="visual-studio-data-tools-for-c"></a>适用于 C++ 的 Visual Studio Data Tools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -27,7 +25,7 @@ ms.locfileid: "49849640"
   
  若要连接到 SQL 数据库，本机 c + + 应用程序可以使用 ODBC 和 OLE DB 驱动程序和 Windows 附带的 ADO 提供程序。     这些可以连接到支持这些接口的任何数据库。 ODBC 驱动程序是标准。 提供 OLE DB 是为了向后兼容。 这些数据技术的详细信息，请参阅[Windows 数据访问组件](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx)  
   
- 若要利用 SQL Server 2005 中的自定义功能和更高版本，使用[SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733)。 Native client 还包含 SQL Server ODBC 驱动程序和一个本机动态链接库 (DLL) 中的 SQL Server OLE DB 提供程序。 这些支持使用 Microsoft SQL server 的本机代码 Api （ODBC、 OLE DB 和 ADO） 的应用程序。  SQL Server Native Client 随同 SQL Server Data Tools 安装。 编程指南是此处： [SQL Server Native Client 编程](https://msdn.microsoft.com/library/ms130892.aspx)。  
+ 若要利用 SQL Server 2005 中的自定义功能和更高版本，使用[SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733)。 Native client 还包含 SQL Server ODBC 驱动程序和一个本机动态链接库 (DLL) 中的 SQL Server OLE DB 提供程序。 这些支持使用 Microsoft SQL server 的本机代码 Api （ODBC、 OLE DB 和 ADO） 的应用程序。  SQL Server Native Client 随同 SQL Server Data Tools 安装。 此处是编程指南：[SQL Server Native Client 编程](https://msdn.microsoft.com/library/ms130892.aspx)。  
   
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>若要从 c + + 应用程序连接到 localDB 通过 ODBC 和 SQL Native Client  
   
@@ -66,11 +64,9 @@ ms.locfileid: "49849640"
    DRIVER="SQL Server Native Client 11.0"  
    ```  
   
-8. 按 F5 生成并运行该应用程序。 应看到一个对话框会提示你输入的数据库驱动程序中。 输入`(localdb)\MSSQLLocalDB`，并检查**使用信任连接**。 按**确定**。 应会看到具有消息，以表明成功的连接的控制台。 此外应该看到命令提示符下可以在其中键入 SQL 语句中。 以下屏幕显示的示例查询和结果：  
+8. 按 F5 生成并运行该应用程序。 应看到一个对话框会提示你输入的数据库驱动程序中。 输入`(localdb)\MSSQLLocalDB`，并检查**使用信任连接**。 按“确定”。 应会看到具有消息，以表明成功的连接的控制台。 此外应该看到命令提示符下可以在其中键入 SQL 语句中。 以下屏幕显示的示例查询和结果：  
   
     ![ODBC 示例查询输出](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC 示例查询输出")  
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)
-
-

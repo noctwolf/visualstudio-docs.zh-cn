@@ -1,25 +1,22 @@
 ---
 title: 定义工作项链接处理程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7ce74627d1d2d48ab02e0b124fbc38949f1f76f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733069"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932734"
 ---
 # <a name="define-a-work-item-link-handler"></a>定义工作项链接处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,7 +160,7 @@ namespace WorkItems
   
      此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。  
   
-     **故障排除**： 如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]未启动，请确保将 VSIX 项目设置为启动项目的解决方案。  
+     **故障排除**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]未启动，请确保将 VSIX 项目设置为启动项目的解决方案。  
   
 2.  在实验性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，打开或创建一个建模项目，然后打开或创建一个建模图。  
   
@@ -183,7 +180,7 @@ namespace WorkItems
   
 7.  验证工作项现在是否以红色显示。 这将演示示例代码中的 `OnWorkItemLinked()`。  
   
-     **故障排除**： 如果尚未运行的处理程序方法，请验证：  
+     **故障排除**:如果尚未运行的处理程序方法，请验证：  
   
     -   类库项目作为一个 MEF 组件在列出**内容**列表中**source.extensions.manifest** VSIX 项目中。  
   
@@ -304,6 +301,3 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
  [将引用字符串附加到 UML 模型元素](../modeling/attach-reference-strings-to-uml-model-elements.md)   
  [定义和安装建模扩展](../modeling/define-and-install-a-modeling-extension.md)   
  [使用 UML API 编程](../modeling/programming-with-the-uml-api.md)
-
-
-

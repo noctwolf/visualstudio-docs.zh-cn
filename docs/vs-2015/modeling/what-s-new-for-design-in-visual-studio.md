@@ -1,31 +1,26 @@
 ---
-title: 什么&#39;在 Visual Studio 中设计的新增功能的 s |Microsoft Docs
-ms.custom: ''
+title: 什么&#39;s 设计的新增功能
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
+- what's new [VIsual Studio], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee504d0054c52649d48676451168e7dea171b6af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84b5ed45bfa7117eec4cbaa86ad9ca4533339d62
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771286"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000740"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio 中用于设计的新增功能
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>什么是 Visual Studio 2015 中的 Visual Studio 中设计的新增功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 此版本的 Visual Studio 包括以下改进以帮助你更好地理解并设计代码。
 
@@ -51,7 +46,7 @@ ms.locfileid: "51771286"
 
 - **更快速地获取反应式代码图**。 拖放操作可以生成即时结果，且节点之间的链接可以更快速地进行创建，而不会影响后续由用户启动的操作，例如展开节点或请求更多节点。 创建代码图而不生成解决方案时，所有极端案例（例如不生成程序集时）现在得到处理。
 
-- **跳过重新生成你的解决方案。** 在创建和编辑关系图时提供更好的性能。
+- **跳过重新生成解决方案。** 在创建和编辑关系图时提供更好的性能。
 
 - **筛选代码元素节点和组**。 通过根据代码元素的类别显示或隐藏代码元素，以及通过按解决方案文件夹、程序集、命名空间、项目文件夹和类型对代码元素进行组合，可以快速整理代码图。
 
@@ -61,7 +56,7 @@ ms.locfileid: "51771286"
 
   请参阅 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)。
 
-  **在此版本中其他设计和建模更改：**
+  **此版本中其他设计和建模更改：**
 
 - **层关系图**。 使用类视图和对象浏览器更新这些关系图。 为满足软件设计要求，使用层关系图来描述软件所需的依赖项。 通过查找不满足这些约束条件的代码以及使用此基线验证未来的代码，使代码与此设计保持一致。
 

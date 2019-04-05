@@ -1,14 +1,9 @@
 ---
 title: 使用转储文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crashdump
 dev_langs:
@@ -29,13 +24,13 @@ ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0c117e0aa7922c70f919a7b16fa6d40a447f2ce2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761137"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000580"
 ---
 # <a name="using-dump-files"></a>使用转储文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +66,7 @@ ms.locfileid: "51761137"
   
   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Requirements_and_limitations"></a> 要求和限制  
+##  <a name="BKMK_Requirements_and_limitations"></a>要求和限制  
   
 - 调试优化过代码的转储文件可能让人困惑。 例如，函数的编译器内联可能产生意外的调用堆栈，而其他优化可能更改变量的生存期。  
   
@@ -83,13 +78,13 @@ ms.locfileid: "51761137"
   
 - 若要调试[内核模式](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)转储文件在 Visual Studio 2013，请下载[Windows 8.1 版本的调试工具的 Windows](http://msdn.microsoft.com/windows/hardware/gg463009)。 请参阅[Visual Studio 中的内核调试](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx)。  
   
-- Visual Studio 无法调试转储文件保存在名为较旧转储格式[完整的用户模式转储](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx)。 请注意，完全用户模式转储与带有堆的转储不同。  
+- Visual Studio 无法调试转储文件保存在名为较旧转储格式[完整的用户模式转储](/windows-hardware/drivers/debugger/user-mode-dump-files#full)。 请注意，完全用户模式转储与带有堆的转储不同。  
   
-- 若要使用调试[SOS.dll （SOS 调试扩展）](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)在 Visual Studio 中，您必须安装调试工具的 Windows 的 Windows 驱动程序工具包 (WDK) 的一部分。 请参阅[Windows 8.1 预览版： 下载工具包、 组件和工具](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)。  
+- 若要使用调试[SOS.dll （SOS 调试扩展）](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)在 Visual Studio 中，您必须安装调试工具的 Windows 的 Windows 驱动程序工具包 (WDK) 的一部分。 请参阅[Windows 8.1 预览版：下载工具包、 组件和工具](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)。  
   
   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Create_a_dump_file"></a> 创建转储文件  
+##  <a name="BKMK_Create_a_dump_file"></a>创建转储文件  
  使用 Visual Studio 创建转储文件：  
   
 - 在 Visual Studio 中调试进程时，你可以在调试器已在异常或断点处停止时保存转储文件。 选择**另存为转储**，**调试**。 在中**转储另存为**对话框中**另存为类型**列表中，可以选择**小型转储**或**附带堆信息的小型转储**（默认值）。  
@@ -100,11 +95,11 @@ ms.locfileid: "51761137"
   
   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Open_a_dump_file"></a> 打开转储文件  
+##  <a name="BKMK_Open_a_dump_file"></a>打开转储文件  
   
 1.  在 Visual Studio 中，选择**文件**，**打开**，**文件**。  
   
-2.  在中**打开的文件**对话框框中，找到并选择转储文件。 它通常具有 .dmp 扩展名。 然后选择**确定**。  
+2.  在“打开文件”对话框中定位并选择转储文件。 它通常具有 .dmp 扩展名。 然后选择**确定**。  
   
 3.  **转储文件摘要**窗口会显示。 在该窗口中，你可以查看转储文件的调试摘要信息、设置符号路径、启动调试以及将摘要信息复制到剪贴板中。  
   
@@ -145,6 +140,5 @@ ms.locfileid: "51761137"
   
 ## <a name="see-also"></a>请参阅  
  [在实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [指定符号 (.pdb) 文件和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [IntelliTrace](../debugger/intellitrace.md)
-
